@@ -5,15 +5,9 @@
     "module": "ESNext",
     "types": ["node"],
     "skipLibCheck": true,
-
-    /* Bundler mode */
+    "esModuleInterop": true,
     "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "verbatimModuleSyntax": true,
-    "moduleDetection": "force",
     "noEmit": true,
-
-    /* Linting */
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,

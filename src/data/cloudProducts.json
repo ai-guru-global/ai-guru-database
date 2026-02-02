@@ -45,7 +45,7 @@
     {
       "id": "gcp",
       "name": "Google Cloud",
-      "logo": "https://www.gstatic.com/devrel-devsite/prod/vb202049041396b455b54f1428e2d3a8a7d4b4a1e06a007302399b3485604a41a/cloud/images/favicon.ico",
+      "logo": "https://www.gstatic.com/devrel-devsite/prod/vb20204904139b455b54f1428e2d3a8a7d4b4a1e06a007302399b3485604a41a/cloud/images/favicon.ico",
       "description": "Google Cloud是谷歌公司旗下的云计算服务平台，提供全球领先的云计算服务。",
       "website": "https://cloud.google.com/"
     }
@@ -150,6 +150,106 @@
           "parentId": "database"
         }
       ]
+    },
+    {
+      "id": "security",
+      "name": "安全",
+      "description": "提供各种安全服务，包括DDoS防护、WAF、身份认证等。",
+      "children": [
+        {
+          "id": "security-ddos",
+          "name": "DDoS防护",
+          "description": "抵御DDoS攻击的服务。",
+          "parentId": "security"
+        },
+        {
+          "id": "security-waf",
+          "name": "Web应用防火墙",
+          "description": "防护Web应用的安全服务。",
+          "parentId": "security"
+        },
+        {
+          "id": "security-iam",
+          "name": "身份与访问管理",
+          "description": "管理用户身份和访问权限的服务。",
+          "parentId": "security"
+        }
+      ]
+    },
+    {
+      "id": "ai",
+      "name": "人工智能",
+      "description": "提供各种AI服务，包括机器学习、深度学习、自然语言处理等。",
+      "children": [
+        {
+          "id": "ai-ml",
+          "name": "机器学习",
+          "description": "机器学习平台和服务。",
+          "parentId": "ai"
+        },
+        {
+          "id": "ai-nlp",
+          "name": "自然语言处理",
+          "description": "文本分析、翻译等自然语言处理服务。",
+          "parentId": "ai"
+        },
+        {
+          "id": "ai-vision",
+          "name": "计算机视觉",
+          "description": "图像识别、视频分析等视觉服务。",
+          "parentId": "ai"
+        }
+      ]
+    },
+    {
+      "id": "bigdata",
+      "name": "大数据",
+      "description": "提供各种大数据处理服务，包括数据仓库、数据湖、数据处理等。",
+      "children": [
+        {
+          "id": "bigdata-dw",
+          "name": "数据仓库",
+          "description": "用于数据分析的数据仓库服务。",
+          "parentId": "bigdata"
+        },
+        {
+          "id": "bigdata-dl",
+          "name": "数据湖",
+          "description": "存储和分析海量数据的数据湖服务。",
+          "parentId": "bigdata"
+        },
+        {
+          "id": "bigdata-ee",
+          "name": "数据处理",
+          "description": "大数据处理引擎和服务。",
+          "parentId": "bigdata"
+        }
+      ]
+    },
+    {
+      "id": "monitoring",
+      "name": "监控与运维",
+      "description": "提供各种监控和运维服务，包括云监控、日志服务、运维平台等。",
+      "children": [
+        {
+          "id": "monitoring-cloudwatch",
+          "name": "云监控",
+          "description": "监控云资源和应用的服务。",
+          "parentId": "monitoring"
+        },
+        {
+          "id": "monitoring-log",
+          "name": "日志服务",
+          "description": "收集、存储和分析日志的服务。",
+          "parentId": "monitoring"
+        },
+        {
+          "id": "monitoring-ops",
+          "name": "运维平台",
+          "description": "自动化运维和管理平台。",
+          "parentId": "monitoring"
+        }
+      ]
     }
   ],
   "products": [
@@ -204,6 +304,181 @@
       ]
     },
     {
+      "id": "tencent-mysql",
+      "name": "云数据库 MySQL",
+      "description": "腾讯云提供的关系型数据库服务。",
+      "categoryId": "database-relational",
+      "vendorId": "tencent",
+      "website": "https://cloud.tencent.com/product/cdb",
+      "features": ["高性能", "高可用", "自动备份"],
+      "documents": [
+        {
+          "id": "tencent-mysql-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://cloud.tencent.com/document/product/236/3128",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "tencent-mysql-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://cloud.tencent.com/document/api/236/15872",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "tencent-redis",
+      "name": "云数据库 Redis",
+      "description": "腾讯云提供的缓存服务。",
+      "categoryId": "database-cache",
+      "vendorId": "tencent",
+      "website": "https://cloud.tencent.com/product/redis",
+      "features": ["高性能", "高可用", "主从架构"],
+      "documents": [
+        {
+          "id": "tencent-redis-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://cloud.tencent.com/document/product/239/3129",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "tencent-redis-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://cloud.tencent.com/document/api/239/15875",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "tencent-clb",
+      "name": "负载均衡 CLB",
+      "description": "腾讯云提供的负载均衡服务。",
+      "categoryId": "network-slb",
+      "vendorId": "tencent",
+      "website": "https://cloud.tencent.com/product/clb",
+      "features": ["高可用", "高性能", "安全可靠"],
+      "documents": [
+        {
+          "id": "tencent-clb-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://cloud.tencent.com/document/product/214/3131",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "tencent-clb-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://cloud.tencent.com/document/api/214/30694",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "tencent-cdn",
+      "name": "内容分发网络 CDN",
+      "description": "腾讯云提供的CDN服务。",
+      "categoryId": "network-cdn",
+      "vendorId": "tencent",
+      "website": "https://cloud.tencent.com/product/cdn",
+      "features": ["全球加速", "低延迟", "高可用"],
+      "documents": [
+        {
+          "id": "tencent-cdn-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://cloud.tencent.com/document/product/228/3132",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "tencent-cdn-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://cloud.tencent.com/document/api/228/30695",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "tencent-scf",
+      "name": "云函数 SCF",
+      "description": "腾讯云提供的无服务器计算服务。",
+      "categoryId": "compute-serverless",
+      "vendorId": "tencent",
+      "website": "https://cloud.tencent.com/product/scf",
+      "features": ["按需付费", "自动扩缩容", "事件驱动"],
+      "documents": [
+        {
+          "id": "tencent-scf-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://cloud.tencent.com/document/product/583/3133",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "tencent-scf-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://cloud.tencent.com/document/api/583/17506",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "tencent-tke",
+      "name": "容器服务 TKE",
+      "description": "腾讯云提供的容器编排服务。",
+      "categoryId": "compute-container",
+      "vendorId": "tencent",
+      "website": "https://cloud.tencent.com/product/tke",
+      "features": ["弹性伸缩", "高可用", "简化运维"],
+      "documents": [
+        {
+          "id": "tencent-tke-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://cloud.tencent.com/document/product/457/3134",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "tencent-tke-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://cloud.tencent.com/document/api/457/31891",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "tencent-vpc",
+      "name": "私有网络 VPC",
+      "description": "腾讯云提供的虚拟私有云服务。",
+      "categoryId": "network-vpc",
+      "vendorId": "tencent",
+      "website": "https://cloud.tencent.com/product/vpc",
+      "features": ["安全隔离", "灵活配置", "高性能"],
+      "documents": [
+        {
+          "id": "tencent-vpc-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://cloud.tencent.com/document/product/215/3135",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "tencent-vpc-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://cloud.tencent.com/document/api/215/15766",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
       "id": "huawei-ecs",
       "name": "弹性云服务器 ECS",
       "description": "华为云提供的弹性计算服务。",
@@ -224,6 +499,206 @@
           "title": "API 文档",
           "type": "api",
           "url": "https://support.huaweicloud.com/api-ecs/index.html",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "huawei-obs",
+      "name": "对象存储服务 OBS",
+      "description": "华为云提供的对象存储服务。",
+      "categoryId": "storage-object",
+      "vendorId": "huawei",
+      "website": "https://www.huaweicloud.com/product/obs.html",
+      "features": ["海量存储", "安全可靠", "低成本"],
+      "documents": [
+        {
+          "id": "huawei-obs-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://support.huaweicloud.com/qs-obs/index.html",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "huawei-obs-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://support.huaweicloud.com/api-obs/index.html",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "huawei-rds",
+      "name": "云数据库 RDS",
+      "description": "华为云提供的关系型数据库服务。",
+      "categoryId": "database-relational",
+      "vendorId": "huawei",
+      "website": "https://www.huaweicloud.com/product/rds.html",
+      "features": ["高性能", "高可用", "自动备份"],
+      "documents": [
+        {
+          "id": "huawei-rds-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://support.huaweicloud.com/qs-rds/index.html",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "huawei-rds-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://support.huaweicloud.com/api-rds/index.html",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "huawei-dcs",
+      "name": "分布式缓存服务 DCS",
+      "description": "华为云提供的缓存服务。",
+      "categoryId": "database-cache",
+      "vendorId": "huawei",
+      "website": "https://www.huaweicloud.com/product/dcs.html",
+      "features": ["高性能", "高可用", "主从架构"],
+      "documents": [
+        {
+          "id": "huawei-dcs-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://support.huaweicloud.com/qs-dcs/index.html",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "huawei-dcs-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://support.huaweicloud.com/api-dcs/index.html",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "huawei-elb",
+      "name": "弹性负载均衡 ELB",
+      "description": "华为云提供的负载均衡服务。",
+      "categoryId": "network-slb",
+      "vendorId": "huawei",
+      "website": "https://www.huaweicloud.com/product/elb.html",
+      "features": ["高可用", "高性能", "安全可靠"],
+      "documents": [
+        {
+          "id": "huawei-elb-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://support.huaweicloud.com/qs-elb/index.html",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "huawei-elb-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://support.huaweicloud.com/api-elb/index.html",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "huawei-cdn",
+      "name": "内容分发网络 CDN",
+      "description": "华为云提供的CDN服务。",
+      "categoryId": "network-cdn",
+      "vendorId": "huawei",
+      "website": "https://www.huaweicloud.com/product/cdn.html",
+      "features": ["全球加速", "低延迟", "高可用"],
+      "documents": [
+        {
+          "id": "huawei-cdn-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://support.huaweicloud.com/qs-cdn/index.html",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "huawei-cdn-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://support.huaweicloud.com/api-cdn/index.html",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "huawei-functiongraph",
+      "name": "函数工作流 FunctionGraph",
+      "description": "华为云提供的无服务器计算服务。",
+      "categoryId": "compute-serverless",
+      "vendorId": "huawei",
+      "website": "https://www.huaweicloud.com/product/functiongraph.html",
+      "features": ["按需付费", "自动扩缩容", "事件驱动"],
+      "documents": [
+        {
+          "id": "huawei-functiongraph-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://support.huaweicloud.com/qs-functiongraph/index.html",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "huawei-functiongraph-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://support.huaweicloud.com/api-functiongraph/index.html",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "huawei-cce",
+      "name": "云容器引擎 CCE",
+      "description": "华为云提供的容器编排服务。",
+      "categoryId": "compute-container",
+      "vendorId": "huawei",
+      "website": "https://www.huaweicloud.com/product/cce.html",
+      "features": ["弹性伸缩", "高可用", "简化运维"],
+      "documents": [
+        {
+          "id": "huawei-cce-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://support.huaweicloud.com/qs-cce/index.html",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "huawei-cce-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://support.huaweicloud.com/api-cce/index.html",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "huawei-vpc",
+      "name": "虚拟私有云 VPC",
+      "description": "华为云提供的虚拟私有云服务。",
+      "categoryId": "network-vpc",
+      "vendorId": "huawei",
+      "website": "https://www.huaweicloud.com/product/vpc.html",
+      "features": ["安全隔离", "灵活配置", "高性能"],
+      "documents": [
+        {
+          "id": "huawei-vpc-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://support.huaweicloud.com/qs-vpc/index.html",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "huawei-vpc-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://support.huaweicloud.com/api-vpc/index.html",
           "lastUpdated": "2026-01-01"
         }
       ]
@@ -254,6 +729,206 @@
       ]
     },
     {
+      "id": "aliyun-oss",
+      "name": "对象存储 OSS",
+      "description": "阿里云提供的对象存储服务。",
+      "categoryId": "storage-object",
+      "vendorId": "aliyun",
+      "website": "https://www.aliyun.com/product/oss",
+      "features": ["海量存储", "安全可靠", "低成本"],
+      "documents": [
+        {
+          "id": "aliyun-oss-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://help.aliyun.com/document_detail/31827.html",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "aliyun-oss-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://help.aliyun.com/document_detail/32068.html",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "aliyun-rds",
+      "name": "云数据库 RDS",
+      "description": "阿里云提供的关系型数据库服务。",
+      "categoryId": "database-relational",
+      "vendorId": "aliyun",
+      "website": "https://www.aliyun.com/product/rds",
+      "features": ["高性能", "高可用", "自动备份"],
+      "documents": [
+        {
+          "id": "aliyun-rds-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://help.aliyun.com/document_detail/26092.html",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "aliyun-rds-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://help.aliyun.com/document_detail/26232.html",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "aliyun-redis",
+      "name": "云数据库 Redis",
+      "description": "阿里云提供的缓存服务。",
+      "categoryId": "database-cache",
+      "vendorId": "aliyun",
+      "website": "https://www.aliyun.com/product/redis",
+      "features": ["高性能", "高可用", "主从架构"],
+      "documents": [
+        {
+          "id": "aliyun-redis-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://help.aliyun.com/document_detail/26360.html",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "aliyun-redis-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://help.aliyun.com/document_detail/60883.html",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "aliyun-slb",
+      "name": "负载均衡 SLB",
+      "description": "阿里云提供的负载均衡服务。",
+      "categoryId": "network-slb",
+      "vendorId": "aliyun",
+      "website": "https://www.aliyun.com/product/slb",
+      "features": ["高可用", "高性能", "安全可靠"],
+      "documents": [
+        {
+          "id": "aliyun-slb-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://help.aliyun.com/document_detail/27539.html",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "aliyun-slb-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://help.aliyun.com/document_detail/27578.html",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "aliyun-cdn",
+      "name": "内容分发网络 CDN",
+      "description": "阿里云提供的CDN服务。",
+      "categoryId": "network-cdn",
+      "vendorId": "aliyun",
+      "website": "https://www.aliyun.com/product/cdn",
+      "features": ["全球加速", "低延迟", "高可用"],
+      "documents": [
+        {
+          "id": "aliyun-cdn-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://help.aliyun.com/document_detail/27105.html",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "aliyun-cdn-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://help.aliyun.com/document_detail/27120.html",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "aliyun-fc",
+      "name": "函数计算 FC",
+      "description": "阿里云提供的无服务器计算服务。",
+      "categoryId": "compute-serverless",
+      "vendorId": "aliyun",
+      "website": "https://www.aliyun.com/product/fc",
+      "features": ["按需付费", "自动扩缩容", "事件驱动"],
+      "documents": [
+        {
+          "id": "aliyun-fc-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://help.aliyun.com/document_detail/52874.html",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "aliyun-fc-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://help.aliyun.com/document_detail/52887.html",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "aliyun-ack",
+      "name": "容器服务 ACK",
+      "description": "阿里云提供的容器编排服务。",
+      "categoryId": "compute-container",
+      "vendorId": "aliyun",
+      "website": "https://www.aliyun.com/product/kubernetes",
+      "features": ["弹性伸缩", "高可用", "简化运维"],
+      "documents": [
+        {
+          "id": "aliyun-ack-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://help.aliyun.com/document_detail/86747.html",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "aliyun-ack-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://help.aliyun.com/document_detail/86488.html",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "aliyun-vpc",
+      "name": "专有网络 VPC",
+      "description": "阿里云提供的虚拟私有云服务。",
+      "categoryId": "network-vpc",
+      "vendorId": "aliyun",
+      "website": "https://www.aliyun.com/product/vpc",
+      "features": ["安全隔离", "灵活配置", "高性能"],
+      "documents": [
+        {
+          "id": "aliyun-vpc-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://help.aliyun.com/document_detail/65137.html",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "aliyun-vpc-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://help.aliyun.com/document_detail/35470.html",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
       "id": "aws-ec2",
       "name": "弹性计算云 EC2",
       "description": "AWS 提供的弹性计算服务。",
@@ -274,6 +949,206 @@
           "title": "API 文档",
           "type": "api",
           "url": "https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Welcome.html",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "aws-s3",
+      "name": "简单存储服务 S3",
+      "description": "AWS 提供的对象存储服务。",
+      "categoryId": "storage-object",
+      "vendorId": "aws",
+      "website": "https://aws.amazon.com/s3/",
+      "features": ["海量存储", "安全可靠", "低成本"],
+      "documents": [
+        {
+          "id": "aws-s3-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "aws-s3-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "aws-rds",
+      "name": "关系型数据库 RDS",
+      "description": "AWS 提供的关系型数据库服务。",
+      "categoryId": "database-relational",
+      "vendorId": "aws",
+      "website": "https://aws.amazon.com/rds/",
+      "features": ["高性能", "高可用", "自动备份"],
+      "documents": [
+        {
+          "id": "aws-rds-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_GettingStarted.html",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "aws-rds-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/Welcome.html",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "aws-elasticache",
+      "name": "ElastiCache",
+      "description": "AWS 提供的缓存服务。",
+      "categoryId": "database-cache",
+      "vendorId": "aws",
+      "website": "https://aws.amazon.com/elasticache/",
+      "features": ["高性能", "高可用", "主从架构"],
+      "documents": [
+        {
+          "id": "aws-elasticache-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://docs.aws.amazon.com/AmazonElastiCache/latest/GettingStarted/Welcome.html",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "aws-elasticache-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/Welcome.html",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "aws-elb",
+      "name": "弹性负载均衡 ELB",
+      "description": "AWS 提供的负载均衡服务。",
+      "categoryId": "network-slb",
+      "vendorId": "aws",
+      "website": "https://aws.amazon.com/elasticloadbalancing/",
+      "features": ["高可用", "高性能", "安全可靠"],
+      "documents": [
+        {
+          "id": "aws-elb-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/what-is-load-balancing.html",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "aws-elb-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/Welcome.html",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "aws-cloudfront",
+      "name": "CloudFront CDN",
+      "description": "AWS 提供的CDN服务。",
+      "categoryId": "network-cdn",
+      "vendorId": "aws",
+      "website": "https://aws.amazon.com/cloudfront/",
+      "features": ["全球加速", "低延迟", "高可用"],
+      "documents": [
+        {
+          "id": "aws-cloudfront-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "aws-cloudfront-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://docs.aws.amazon.com/cloudfront/latest/APIReference/Welcome.html",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "aws-lambda",
+      "name": "Lambda",
+      "description": "AWS 提供的无服务器计算服务。",
+      "categoryId": "compute-serverless",
+      "vendorId": "aws",
+      "website": "https://aws.amazon.com/lambda/",
+      "features": ["按需付费", "自动扩缩容", "事件驱动"],
+      "documents": [
+        {
+          "id": "aws-lambda-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://docs.aws.amazon.com/lambda/latest/dg/welcome.html",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "aws-lambda-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://docs.aws.amazon.com/lambda/latest/api/Welcome.html",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "aws-eks",
+      "name": "EKS",
+      "description": "AWS 提供的容器编排服务。",
+      "categoryId": "compute-container",
+      "vendorId": "aws",
+      "website": "https://aws.amazon.com/eks/",
+      "features": ["弹性伸缩", "高可用", "简化运维"],
+      "documents": [
+        {
+          "id": "aws-eks-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "aws-eks-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://docs.aws.amazon.com/eks/latest/APIReference/Welcome.html",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "aws-vpc",
+      "name": "虚拟私有云 VPC",
+      "description": "AWS 提供的虚拟私有云服务。",
+      "categoryId": "network-vpc",
+      "vendorId": "aws",
+      "website": "https://aws.amazon.com/vpc/",
+      "features": ["安全隔离", "灵活配置", "高性能"],
+      "documents": [
+        {
+          "id": "aws-vpc-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "aws-vpc-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://docs.aws.amazon.com/vpc/latest/APIReference/Welcome.html",
           "lastUpdated": "2026-01-01"
         }
       ]
@@ -304,6 +1179,206 @@
       ]
     },
     {
+      "id": "azure-blob",
+      "name": "Blob Storage",
+      "description": "Azure 提供的对象存储服务。",
+      "categoryId": "storage-object",
+      "vendorId": "azure",
+      "website": "https://azure.microsoft.com/services/storage/blobs/",
+      "features": ["海量存储", "安全可靠", "低成本"],
+      "documents": [
+        {
+          "id": "azure-blob-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://learn.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-portal",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "azure-blob-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://learn.microsoft.com/rest/api/storageservices/blobstorage",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "azure-sql",
+      "name": "SQL Database",
+      "description": "Azure 提供的关系型数据库服务。",
+      "categoryId": "database-relational",
+      "vendorId": "azure",
+      "website": "https://azure.microsoft.com/services/sql-database/",
+      "features": ["高性能", "高可用", "自动备份"],
+      "documents": [
+        {
+          "id": "azure-sql-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://learn.microsoft.com/azure/azure-sql/database/single-database-create-quickstart",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "azure-sql-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://learn.microsoft.com/rest/api/sql/",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "azure-redis",
+      "name": "Azure Cache for Redis",
+      "description": "Azure 提供的缓存服务。",
+      "categoryId": "database-cache",
+      "vendorId": "azure",
+      "website": "https://azure.microsoft.com/services/cache/",
+      "features": ["高性能", "高可用", "主从架构"],
+      "documents": [
+        {
+          "id": "azure-redis-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://learn.microsoft.com/azure/azure-cache-for-redis/cache-how-to-use",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "azure-redis-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://learn.microsoft.com/rest/api/redisenterprise/",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "azure-lb",
+      "name": "Load Balancer",
+      "description": "Azure 提供的负载均衡服务。",
+      "categoryId": "network-slb",
+      "vendorId": "azure",
+      "website": "https://azure.microsoft.com/services/load-balancer/",
+      "features": ["高可用", "高性能", "安全可靠"],
+      "documents": [
+        {
+          "id": "azure-lb-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://learn.microsoft.com/azure/load-balancer/quickstart-load-balancer-standard-public-portal",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "azure-lb-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://learn.microsoft.com/rest/api/load-balancer/",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "azure-cdn",
+      "name": "Front Door CDN",
+      "description": "Azure 提供的CDN服务。",
+      "categoryId": "network-cdn",
+      "vendorId": "azure",
+      "website": "https://azure.microsoft.com/services/frontdoor/",
+      "features": ["全球加速", "低延迟", "高可用"],
+      "documents": [
+        {
+          "id": "azure-cdn-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://learn.microsoft.com/azure/frontdoor/quickstart-create-front-door",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "azure-cdn-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://learn.microsoft.com/rest/api/frontdoor/",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "azure-functions",
+      "name": "Azure Functions",
+      "description": "Azure 提供的无服务器计算服务。",
+      "categoryId": "compute-serverless",
+      "vendorId": "azure",
+      "website": "https://azure.microsoft.com/services/functions/",
+      "features": ["按需付费", "自动扩缩容", "事件驱动"],
+      "documents": [
+        {
+          "id": "azure-functions-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://learn.microsoft.com/azure/azure-functions/functions-create-first-azure-function",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "azure-functions-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://learn.microsoft.com/rest/api/functions/",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "azure-aks",
+      "name": "Kubernetes Service AKS",
+      "description": "Azure 提供的容器编排服务。",
+      "categoryId": "compute-container",
+      "vendorId": "azure",
+      "website": "https://azure.microsoft.com/services/kubernetes-service/",
+      "features": ["弹性伸缩", "高可用", "简化运维"],
+      "documents": [
+        {
+          "id": "azure-aks-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://learn.microsoft.com/azure/aks/learn/quick-kubernetes-deploy-portal",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "azure-aks-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://learn.microsoft.com/rest/api/aks/",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "azure-vpc",
+      "name": "Virtual Network VNet",
+      "description": "Azure 提供的虚拟私有云服务。",
+      "categoryId": "network-vpc",
+      "vendorId": "azure",
+      "website": "https://azure.microsoft.com/services/virtual-network/",
+      "features": ["安全隔离", "灵活配置", "高性能"],
+      "documents": [
+        {
+          "id": "azure-vpc-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://learn.microsoft.com/azure/virtual-network/quick-create-portal",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "azure-vpc-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://learn.microsoft.com/rest/api/virtual-network/",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
       "id": "gcp-compute",
       "name": "Compute Engine",
       "description": "Google Cloud 提供的虚拟机服务。",
@@ -329,6 +1404,206 @@
       ]
     },
     {
+      "id": "gcp-storage",
+      "name": "Cloud Storage",
+      "description": "Google Cloud 提供的对象存储服务。",
+      "categoryId": "storage-object",
+      "vendorId": "gcp",
+      "website": "https://cloud.google.com/storage",
+      "features": ["海量存储", "安全可靠", "低成本"],
+      "documents": [
+        {
+          "id": "gcp-storage-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://cloud.google.com/storage/docs/quickstart",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "gcp-storage-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://cloud.google.com/storage/docs/reference/rest",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "gcp-sql",
+      "name": "Cloud SQL",
+      "description": "Google Cloud 提供的关系型数据库服务。",
+      "categoryId": "database-relational",
+      "vendorId": "gcp",
+      "website": "https://cloud.google.com/sql",
+      "features": ["高性能", "高可用", "自动备份"],
+      "documents": [
+        {
+          "id": "gcp-sql-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://cloud.google.com/sql/docs/quickstart",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "gcp-sql-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://cloud.google.com/sql/docs/reference/rest",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "gcp-memorystore",
+      "name": "Memorystore",
+      "description": "Google Cloud 提供的缓存服务。",
+      "categoryId": "database-cache",
+      "vendorId": "gcp",
+      "website": "https://cloud.google.com/memorystore",
+      "features": ["高性能", "高可用", "主从架构"],
+      "documents": [
+        {
+          "id": "gcp-memorystore-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://cloud.google.com/memorystore/docs/quickstart",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "gcp-memorystore-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://cloud.google.com/memorystore/docs/reference/rest",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "gcp-lb",
+      "name": "Cloud Load Balancing",
+      "description": "Google Cloud 提供的负载均衡服务。",
+      "categoryId": "network-slb",
+      "vendorId": "gcp",
+      "website": "https://cloud.google.com/load-balancing",
+      "features": ["高可用", "高性能", "安全可靠"],
+      "documents": [
+        {
+          "id": "gcp-lb-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://cloud.google.com/load-balancing/docs/quickstart",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "gcp-lb-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://cloud.google.com/load-balancing/docs/reference/rest",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "gcp-cdn",
+      "name": "Cloud CDN",
+      "description": "Google Cloud 提供的CDN服务。",
+      "categoryId": "network-cdn",
+      "vendorId": "gcp",
+      "website": "https://cloud.google.com/cdn",
+      "features": ["全球加速", "低延迟", "高可用"],
+      "documents": [
+        {
+          "id": "gcp-cdn-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://cloud.google.com/cdn/docs/quickstart",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "gcp-cdn-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://cloud.google.com/cdn/docs/reference/rest",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "gcp-functions",
+      "name": "Cloud Functions",
+      "description": "Google Cloud 提供的无服务器计算服务。",
+      "categoryId": "compute-serverless",
+      "vendorId": "gcp",
+      "website": "https://cloud.google.com/functions",
+      "features": ["按需付费", "自动扩缩容", "事件驱动"],
+      "documents": [
+        {
+          "id": "gcp-functions-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://cloud.google.com/functions/docs/quickstart",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "gcp-functions-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://cloud.google.com/functions/docs/reference/rest",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "gcp-gke",
+      "name": "Kubernetes Engine GKE",
+      "description": "Google Cloud 提供的容器编排服务。",
+      "categoryId": "compute-container",
+      "vendorId": "gcp",
+      "website": "https://cloud.google.com/kubernetes-engine",
+      "features": ["弹性伸缩", "高可用", "简化运维"],
+      "documents": [
+        {
+          "id": "gcp-gke-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://cloud.google.com/kubernetes-engine/docs/quickstart",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "gcp-gke-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://cloud.google.com/kubernetes-engine/docs/reference/rest",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "gcp-vpc",
+      "name": "Virtual Private Cloud VPC",
+      "description": "Google Cloud 提供的虚拟私有云服务。",
+      "categoryId": "network-vpc",
+      "vendorId": "gcp",
+      "website": "https://cloud.google.com/vpc",
+      "features": ["安全隔离", "灵活配置", "高性能"],
+      "documents": [
+        {
+          "id": "gcp-vpc-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://cloud.google.com/vpc/docs/quickstart",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "gcp-vpc-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://cloud.google.com/vpc/docs/reference/rest",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
       "id": "volcengine-ecs",
       "name": "弹性云服务器 ECS",
       "description": "火山引擎提供的弹性计算服务。",
@@ -346,6 +1621,906 @@
         },
         {
           "id": "volcengine-ecs-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://www.volcengine.com/docs/6396/69310",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "volcengine-tos",
+      "name": "对象存储 TOS",
+      "description": "火山引擎提供的对象存储服务。",
+      "categoryId": "storage-object",
+      "vendorId": "volcengine",
+      "website": "https://www.volcengine.com/product/tos",
+      "features": ["海量存储", "安全可靠", "低成本"],
+      "documents": [
+        {
+          "id": "volcengine-tos-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://www.volcengine.com/docs/6396/74968",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "volcengine-tos-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://www.volcengine.com/docs/6396/69310",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "volcengine-rds",
+      "name": "云数据库 RDS",
+      "description": "火山引擎提供的关系型数据库服务。",
+      "categoryId": "database-relational",
+      "vendorId": "volcengine",
+      "website": "https://www.volcengine.com/product/rds",
+      "features": ["高性能", "高可用", "自动备份"],
+      "documents": [
+        {
+          "id": "volcengine-rds-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://www.volcengine.com/docs/6312/74968",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "volcengine-rds-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://www.volcengine.com/docs/6312/69310",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "volcengine-redis",
+      "name": "云数据库 Redis",
+      "description": "火山引擎提供的缓存服务。",
+      "categoryId": "database-cache",
+      "vendorId": "volcengine",
+      "website": "https://www.volcengine.com/product/redis",
+      "features": ["高性能", "高可用", "主从架构"],
+      "documents": [
+        {
+          "id": "volcengine-redis-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://www.volcengine.com/docs/6312/74968",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "volcengine-redis-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://www.volcengine.com/docs/6312/69310",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "volcengine-clb",
+      "name": "负载均衡 CLB",
+      "description": "火山引擎提供的负载均衡服务。",
+      "categoryId": "network-slb",
+      "vendorId": "volcengine",
+      "website": "https://www.volcengine.com/product/clb",
+      "features": ["高可用", "高性能", "安全可靠"],
+      "documents": [
+        {
+          "id": "volcengine-clb-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://www.volcengine.com/docs/6396/74968",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "volcengine-clb-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://www.volcengine.com/docs/6396/69310",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "volcengine-cdn",
+      "name": "内容分发网络 CDN",
+      "description": "火山引擎提供的CDN服务。",
+      "categoryId": "network-cdn",
+      "vendorId": "volcengine",
+      "website": "https://www.volcengine.com/product/cdn",
+      "features": ["全球加速", "低延迟", "高可用"],
+      "documents": [
+        {
+          "id": "volcengine-cdn-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://www.volcengine.com/docs/6396/74968",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "volcengine-cdn-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://www.volcengine.com/docs/6396/69310",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "volcengine-function",
+      "name": "函数计算",
+      "description": "火山引擎提供的无服务器计算服务。",
+      "categoryId": "compute-serverless",
+      "vendorId": "volcengine",
+      "website": "https://www.volcengine.com/product/function",
+      "features": ["按需付费", "自动扩缩容", "事件驱动"],
+      "documents": [
+        {
+          "id": "volcengine-function-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://www.volcengine.com/docs/6396/74968",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "volcengine-function-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://www.volcengine.com/docs/6396/69310",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "volcengine-vke",
+      "name": "容器服务 VKE",
+      "description": "火山引擎提供的容器编排服务。",
+      "categoryId": "compute-container",
+      "vendorId": "volcengine",
+      "website": "https://www.volcengine.com/product/vke",
+      "features": ["弹性伸缩", "高可用", "简化运维"],
+      "documents": [
+        {
+          "id": "volcengine-vke-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://www.volcengine.com/docs/6396/74968",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "volcengine-vke-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://www.volcengine.com/docs/6396/69310",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "volcengine-vpc",
+      "name": "私有网络 VPC",
+      "description": "火山引擎提供的虚拟私有云服务。",
+      "categoryId": "network-vpc",
+      "vendorId": "volcengine",
+      "website": "https://www.volcengine.com/product/vpc",
+      "features": ["安全隔离", "灵活配置", "高性能"],
+      "documents": [
+        {
+          "id": "volcengine-vpc-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://www.volcengine.com/docs/6396/74968",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "volcengine-vpc-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://www.volcengine.com/docs/6396/69310",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "tencent-sg",
+      "name": "安全组",
+      "description": "腾讯云提供的网络安全隔离服务。",
+      "categoryId": "security-iam",
+      "vendorId": "tencent",
+      "website": "https://cloud.tencent.com/product/sg",
+      "features": ["安全隔离", "细粒度控制", "实时生效"],
+      "documents": [
+        {
+          "id": "tencent-sg-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://cloud.tencent.com/document/product/213/12452",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "tencent-sg-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://cloud.tencent.com/document/api/213/12450",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "tencent-ai",
+      "name": "腾讯云 AI",
+      "description": "腾讯云提供的人工智能服务。",
+      "categoryId": "ai-ml",
+      "vendorId": "tencent",
+      "website": "https://cloud.tencent.com/product/ai",
+      "features": ["丰富模型", "高性能", "易用性"],
+      "documents": [
+        {
+          "id": "tencent-ai-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://cloud.tencent.com/document/product/851/30523",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "tencent-ai-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://cloud.tencent.com/document/api/851/30628",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "tencent-bigdata",
+      "name": "腾讯云大数据",
+      "description": "腾讯云提供的大数据处理服务。",
+      "categoryId": "bigdata-ee",
+      "vendorId": "tencent",
+      "website": "https://cloud.tencent.com/product/bigdata",
+      "features": ["海量处理", "实时分析", "易用性"],
+      "documents": [
+        {
+          "id": "tencent-bigdata-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://cloud.tencent.com/document/product/849/30189",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "tencent-bigdata-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://cloud.tencent.com/document/api/849/30188",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "tencent-monitor",
+      "name": "云监控",
+      "description": "腾讯云提供的监控服务。",
+      "categoryId": "monitoring-cloudwatch",
+      "vendorId": "tencent",
+      "website": "https://cloud.tencent.com/product/monitor",
+      "features": ["实时监控", "智能告警", "可视化"],
+      "documents": [
+        {
+          "id": "tencent-monitor-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://cloud.tencent.com/document/product/248/30384",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "tencent-monitor-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://cloud.tencent.com/document/api/248/31164",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "huawei-iam",
+      "name": "统一身份认证服务 IAM",
+      "description": "华为云提供的身份与访问管理服务。",
+      "categoryId": "security-iam",
+      "vendorId": "huawei",
+      "website": "https://www.huaweicloud.com/product/iam.html",
+      "features": ["细粒度权限", "多因素认证", "安全审计"],
+      "documents": [
+        {
+          "id": "huawei-iam-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://support.huaweicloud.com/qs-iam/index.html",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "huawei-iam-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://support.huaweicloud.com/api-iam/index.html",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "huawei-modelarts",
+      "name": "ModelArts",
+      "description": "华为云提供的AI开发平台。",
+      "categoryId": "ai-ml",
+      "vendorId": "huawei",
+      "website": "https://www.huaweicloud.com/product/modelarts.html",
+      "features": ["全流程开发", "丰富模型", "弹性算力"],
+      "documents": [
+        {
+          "id": "huawei-modelarts-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://support.huaweicloud.com/qs-modelarts/index.html",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "huawei-modelarts-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://support.huaweicloud.com/api-modelarts/index.html",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "huawei-mrs",
+      "name": "MapReduce服务 MRS",
+      "description": "华为云提供的大数据处理服务。",
+      "categoryId": "bigdata-ee",
+      "vendorId": "huawei",
+      "website": "https://www.huaweicloud.com/product/mrs.html",
+      "features": ["开源生态", "高性能", "易用性"],
+      "documents": [
+        {
+          "id": "huawei-mrs-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://support.huaweicloud.com/qs-mrs/index.html",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "huawei-mrs-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://support.huaweicloud.com/api-mrs/index.html",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "huawei-cloudmonitor",
+      "name": "云监控服务",
+      "description": "华为云提供的监控服务。",
+      "categoryId": "monitoring-cloudwatch",
+      "vendorId": "huawei",
+      "website": "https://www.huaweicloud.com/product/ces.html",
+      "features": ["实时监控", "智能告警", "可视化"],
+      "documents": [
+        {
+          "id": "huawei-cloudmonitor-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://support.huaweicloud.com/qs-ces/index.html",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "huawei-cloudmonitor-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://support.huaweicloud.com/api-ces/index.html",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "aliyun-ram",
+      "name": "访问控制 RAM",
+      "description": "阿里云提供的身份与访问管理服务。",
+      "categoryId": "security-iam",
+      "vendorId": "aliyun",
+      "website": "https://www.aliyun.com/product/ram",
+      "features": ["细粒度权限", "多因素认证", "安全审计"],
+      "documents": [
+        {
+          "id": "aliyun-ram-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://help.aliyun.com/document_detail/28647.html",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "aliyun-ram-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://help.aliyun.com/document_detail/28664.html",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "aliyun-pai",
+      "name": "机器学习平台 PAI",
+      "description": "阿里云提供的AI开发平台。",
+      "categoryId": "ai-ml",
+      "vendorId": "aliyun",
+      "website": "https://www.aliyun.com/product/bigdata/product/paiforge",
+      "features": ["全流程开发", "丰富模型", "弹性算力"],
+      "documents": [
+        {
+          "id": "aliyun-pai-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://help.aliyun.com/document_detail/171966.html",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "aliyun-pai-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://help.aliyun.com/document_detail/171967.html",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "aliyun-emr",
+      "name": "云原生大数据平台 EMR",
+      "description": "阿里云提供的大数据处理服务。",
+      "categoryId": "bigdata-ee",
+      "vendorId": "aliyun",
+      "website": "https://www.aliyun.com/product/emi",
+      "features": ["开源生态", "高性能", "易用性"],
+      "documents": [
+        {
+          "id": "aliyun-emr-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://help.aliyun.com/document_detail/28078.html",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "aliyun-emr-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://help.aliyun.com/document_detail/28079.html",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "aliyun-cms",
+      "name": "云监控 CMS",
+      "description": "阿里云提供的监控服务。",
+      "categoryId": "monitoring-cloudwatch",
+      "vendorId": "aliyun",
+      "website": "https://www.aliyun.com/product/cms",
+      "features": ["实时监控", "智能告警", "可视化"],
+      "documents": [
+        {
+          "id": "aliyun-cms-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://help.aliyun.com/document_detail/28615.html",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "aliyun-cms-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://help.aliyun.com/document_detail/28616.html",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "aws-iam",
+      "name": "Identity and Access Management",
+      "description": "AWS 提供的身份与访问管理服务。",
+      "categoryId": "security-iam",
+      "vendorId": "aws",
+      "website": "https://aws.amazon.com/iam/",
+      "features": ["细粒度权限", "多因素认证", "安全审计"],
+      "documents": [
+        {
+          "id": "aws-iam-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/getting-started.html",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "aws-iam-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://docs.aws.amazon.com/IAM/latest/APIReference/Welcome.html",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "aws-sagemaker",
+      "name": "Amazon SageMaker",
+      "description": "AWS 提供的AI开发平台。",
+      "categoryId": "ai-ml",
+      "vendorId": "aws",
+      "website": "https://aws.amazon.com/sagemaker/",
+      "features": ["全流程开发", "丰富模型", "弹性算力"],
+      "documents": [
+        {
+          "id": "aws-sagemaker-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "aws-sagemaker-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://docs.aws.amazon.com/sagemaker/latest/APIReference/Welcome.html",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "aws-emr",
+      "name": "Amazon EMR",
+      "description": "AWS 提供的大数据处理服务。",
+      "categoryId": "bigdata-ee",
+      "vendorId": "aws",
+      "website": "https://aws.amazon.com/emr/",
+      "features": ["开源生态", "高性能", "易用性"],
+      "documents": [
+        {
+          "id": "aws-emr-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-what-is-emr.html",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "aws-emr-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://docs.aws.amazon.com/emr/latest/APIReference/Welcome.html",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "aws-cloudwatch",
+      "name": "Amazon CloudWatch",
+      "description": "AWS 提供的监控服务。",
+      "categoryId": "monitoring-cloudwatch",
+      "vendorId": "aws",
+      "website": "https://aws.amazon.com/cloudwatch/",
+      "features": ["实时监控", "智能告警", "可视化"],
+      "documents": [
+        {
+          "id": "aws-cloudwatch-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "aws-cloudwatch-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/Welcome.html",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "azure-ad",
+      "name": "Azure Active Directory",
+      "description": "Azure 提供的身份与访问管理服务。",
+      "categoryId": "security-iam",
+      "vendorId": "azure",
+      "website": "https://azure.microsoft.com/services/active-directory/",
+      "features": ["细粒度权限", "多因素认证", "安全审计"],
+      "documents": [
+        {
+          "id": "azure-ad-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://learn.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "azure-ad-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://learn.microsoft.com/graph/api/resources/azure-ad-overview",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "azure-ai",
+      "name": "Azure AI",
+      "description": "Azure 提供的人工智能服务。",
+      "categoryId": "ai-ml",
+      "vendorId": "azure",
+      "website": "https://azure.microsoft.com/services/cognitive-services/",
+      "features": ["丰富模型", "高性能", "易用性"],
+      "documents": [
+        {
+          "id": "azure-ai-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://learn.microsoft.com/azure/ai-services/get-started",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "azure-ai-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://learn.microsoft.com/rest/api/cognitiveservices/",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "azure-synapse",
+      "name": "Azure Synapse Analytics",
+      "description": "Azure 提供的大数据分析服务。",
+      "categoryId": "bigdata-ee",
+      "vendorId": "azure",
+      "website": "https://azure.microsoft.com/services/synapse-analytics/",
+      "features": ["海量处理", "实时分析", "易用性"],
+      "documents": [
+        {
+          "id": "azure-synapse-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://learn.microsoft.com/azure/synapse-analytics/get-started-create-workspace",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "azure-synapse-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://learn.microsoft.com/rest/api/synapse/",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "azure-monitor",
+      "name": "Azure Monitor",
+      "description": "Azure 提供的监控服务。",
+      "categoryId": "monitoring-cloudwatch",
+      "vendorId": "azure",
+      "website": "https://azure.microsoft.com/services/monitor/",
+      "features": ["实时监控", "智能告警", "可视化"],
+      "documents": [
+        {
+          "id": "azure-monitor-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://learn.microsoft.com/azure/azure-monitor/overview",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "azure-monitor-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://learn.microsoft.com/rest/api/monitor/",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "gcp-iam",
+      "name": "Identity and Access Management",
+      "description": "Google Cloud 提供的身份与访问管理服务。",
+      "categoryId": "security-iam",
+      "vendorId": "gcp",
+      "website": "https://cloud.google.com/iam",
+      "features": ["细粒度权限", "多因素认证", "安全审计"],
+      "documents": [
+        {
+          "id": "gcp-iam-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://cloud.google.com/iam/docs/quickstart",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "gcp-iam-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://cloud.google.com/iam/docs/reference/rest",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "gcp-ai-platform",
+      "name": "AI Platform",
+      "description": "Google Cloud 提供的AI开发平台。",
+      "categoryId": "ai-ml",
+      "vendorId": "gcp",
+      "website": "https://cloud.google.com/ai-platform",
+      "features": ["全流程开发", "丰富模型", "弹性算力"],
+      "documents": [
+        {
+          "id": "gcp-ai-platform-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://cloud.google.com/ai-platform/docs/quickstart",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "gcp-ai-platform-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://cloud.google.com/ai-platform/docs/reference/rest",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "gcp-bigquery",
+      "name": "BigQuery",
+      "description": "Google Cloud 提供的大数据分析服务。",
+      "categoryId": "bigdata-ee",
+      "vendorId": "gcp",
+      "website": "https://cloud.google.com/bigquery",
+      "features": ["海量处理", "实时分析", "易用性"],
+      "documents": [
+        {
+          "id": "gcp-bigquery-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://cloud.google.com/bigquery/docs/quickstarts",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "gcp-bigquery-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://cloud.google.com/bigquery/docs/reference/rest",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "gcp-monitoring",
+      "name": "Cloud Monitoring",
+      "description": "Google Cloud 提供的监控服务。",
+      "categoryId": "monitoring-cloudwatch",
+      "vendorId": "gcp",
+      "website": "https://cloud.google.com/monitoring",
+      "features": ["实时监控", "智能告警", "可视化"],
+      "documents": [
+        {
+          "id": "gcp-monitoring-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://cloud.google.com/monitoring/docs/quickstart",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "gcp-monitoring-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://cloud.google.com/monitoring/docs/reference/rest",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "volcengine-iam",
+      "name": "访问控制",
+      "description": "火山引擎提供的身份与访问管理服务。",
+      "categoryId": "security-iam",
+      "vendorId": "volcengine",
+      "website": "https://www.volcengine.com/product/iam",
+      "features": ["细粒度权限", "多因素认证", "安全审计"],
+      "documents": [
+        {
+          "id": "volcengine-iam-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://www.volcengine.com/docs/6396/74968",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "volcengine-iam-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://www.volcengine.com/docs/6396/69310",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "volcengine-ai",
+      "name": "智能语音交互",
+      "description": "火山引擎提供的AI服务。",
+      "categoryId": "ai-ml",
+      "vendorId": "volcengine",
+      "website": "https://www.volcengine.com/product/ai",
+      "features": ["丰富模型", "高性能", "易用性"],
+      "documents": [
+        {
+          "id": "volcengine-ai-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://www.volcengine.com/docs/6396/74968",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "volcengine-ai-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://www.volcengine.com/docs/6396/69310",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "volcengine-bigdata",
+      "name": "大数据平台",
+      "description": "火山引擎提供的大数据处理服务。",
+      "categoryId": "bigdata-ee",
+      "vendorId": "volcengine",
+      "website": "https://www.volcengine.com/product/bigdata",
+      "features": ["海量处理", "实时分析", "易用性"],
+      "documents": [
+        {
+          "id": "volcengine-bigdata-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://www.volcengine.com/docs/6396/74968",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "volcengine-bigdata-api",
+          "title": "API 文档",
+          "type": "api",
+          "url": "https://www.volcengine.com/docs/6396/69310",
+          "lastUpdated": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "id": "volcengine-monitor",
+      "name": "云监控",
+      "description": "火山引擎提供的监控服务。",
+      "categoryId": "monitoring-cloudwatch",
+      "vendorId": "volcengine",
+      "website": "https://www.volcengine.com/product/monitor",
+      "features": ["实时监控", "智能告警", "可视化"],
+      "documents": [
+        {
+          "id": "volcengine-monitor-guide",
+          "title": "快速入门指南",
+          "type": "guide",
+          "url": "https://www.volcengine.com/docs/6396/74968",
+          "lastUpdated": "2026-01-01"
+        },
+        {
+          "id": "volcengine-monitor-api",
           "title": "API 文档",
           "type": "api",
           "url": "https://www.volcengine.com/docs/6396/69310",

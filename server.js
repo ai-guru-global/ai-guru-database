@@ -1,28 +1,17 @@
 import express from 'express';
 import path from 'path';
-import { fileURLToPath } from 'url';
-
-// 获取当前文件的目录路径
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
 
 const app = express();
+const PORT = process.env.PORT || 3000;
 
-// 提供静态文件
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(process.cwd(), 'public')));
+app.use('/src', express.static(path.join(process.cwd(), 'src')));
+app.use('/node_modules', express.static(path.join(process.cwd(), 'node_modules')));
 
-// 提供src目录中的文件
-app.use('/src', express.static(path.join(__dirname, 'src')));
-
-// 提供node_modules中的文件
-app.use('/node_modules', express.static(path.join(__dirname, 'node_modules')));
-
-// 所有路由都返回index.html
 app.get(/.*/, (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
+  res.sendFile(path.join(process.cwd(), 'index.html'));
 });
 
-const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });

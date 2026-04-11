@@ -192,6 +192,7 @@ AI_Full_Stack
 │       ├── RAG → Vector_Database
 │       ├── Agent → Tool_Use
 │       ├── Code_Generation → Copilot/Codex
+│       ├── Vibe_Coding → DGRV/Prompt_Engineering/Rules_File
 │       └── Guardrails → Input/Output_Filtering
 │
 ├── 5. Computer_Vision
@@ -279,6 +280,8 @@ AI_Full_Stack
 │   │
 │   ├── Patterns
 │   │   ├── Coding_Agent → Devin/Cursor/Windsurf
+│   │   ├── Vibe_Coding → Natural_Language_CodeGen/Human_Review
+│   │   ├── DGRV_Loop → Describe_Generate_Review_Verify
 │   │   ├── Computer_Use → Browser/Desktop_Agent
 │   │   ├── Agentic_RAG → Retrieve_Reason_Act
 │   │   ├── Agentic_Loops → Iterative_Refinement
@@ -552,6 +555,7 @@ AI_Full_Stack
 | **SAM** | Segmentation, Foundation_Model, Zero_Shot | Mask_R-CNN |
 | **3DGS** | Gaussian_Splatting, NeRF, Real_Time | Point_Cloud |
 | **Coding_Agent** | Code_Gen, Tool_Use, IDE, SWE-bench | Copilot |
+| **Vibe_Coding** | DGRV_Loop, Prompt_Engineering, Rules_File, Human_Review | Manual_Coding |
 | **Digital_Twin** | Simulation, Sim2Real, Robotics | Physical_Model |
 | **Imitation_Learning** | Behavior_Cloning, Demo, VLA | RL |
 | **AlphaFold** | Protein, GNN, Structure, Biology | Drug_Discovery |
@@ -607,6 +611,7 @@ AI_Full_Stack
 ├── LangChain/LangGraph/CrewAI
 ├── Agent Design Patterns (ReAct, Reflexion)
 ├── Coding Agent / Computer Use
+├── Vibe Coding (DGRV Loop, Rules_File, Human_Review)
 ├── Tool Development (MCP Server)
 ├── Production Deployment & LLMOps
 └── Observability & Cost Optimization
@@ -754,6 +759,11 @@ Example 10: Coding Agent
 LLM → Code_Generation → Tool_Use → MCP →
 Sandboxing → SWE-bench → Coding_Agent → Agentic_IDE
 
+Example 10b: Vibe Coding
+LLM → Prompt_Engineering → Code_Generation →
+Human_Review → Automated_Testing → DGRV_Loop →
+Rules_File → CI/CD_Quality_Gate
+
 Example 11: AI for Science
 DL → GNN → Protein_Representation → AlphaFold →
 Drug_Discovery → Molecular_Generation → Clinical_AI
@@ -796,6 +806,7 @@ Model_Training → Evaluation → Deployment
 | **评估** | `12_Agent_Evaluation/` | `Agent_Harness_Complete_2026.md`, `Benchmarking/`, `Metrics/` |
 | **基础设施** | `07_AI_Engineering/` | `Deployment_Inference/`, `MLOps_Pipeline/`, `AI_Infrastructure_Trends_2026.md` |
 | **LLMOps** | `07_AI_Engineering/` | `Model_Evaluation/`, `AI_Coding_Assistants/` |
+| **Vibe Coding** | `07_AI_Engineering/Vibe_Coding/` | `Vibe_Coding_Methodology_2026.md`, `Vibe_Coding_Production_Practices.md`, `Vibe_Coding_for_dummy.md` |
 
 ### 4.2 快速查找
 
@@ -816,6 +827,12 @@ A: 03_Deep_Learning/World_Models/JEPA_Architecture_2026.md
 
 Q: 具身智能完整指南
 A: 06_Reinforcement_Learning/Robotics_Embodied_AI/Embodied_AI_Complete_2026.md
+
+Q: Vibe Coding 方法论
+A: 07_AI_Engineering/Vibe_Coding/Vibe_Coding_Methodology_2026.md
+
+Q: Vibe Coding 生产环境实践
+A: 07_AI_Engineering/Vibe_Coding/Vibe_Coding_Production_Practices.md
 
 Q: Agent 评估框架
 A: 12_Agent_Evaluation/Agent_Harness_Complete_2026.md

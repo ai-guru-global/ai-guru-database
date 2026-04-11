@@ -1,0 +1,99 @@
+:root {
+  --bg: #070a10;
+  --surface: #0b1220;
+  --surface-2: #0e1930;
+  --surface-3: #0b1020;
+  --text: #eaf1ff;
+  --muted: #a7b6cc;
+  --muted-2: #7f93ad;
+  --border: rgba(255, 255, 255, 0.1);
+  --ring: rgba(125, 211, 252, 0.55);
+
+  --accent: #7dd3fc;
+  --accent-2: #38bdf8;
+  --gold: #f7c843;
+  --success: #34d399;
+  --danger: #fb7185;
+  --violet: #c084fc;
+
+  --link-contains: rgba(176, 196, 222, 0.22);
+  --link-prerequisite: #f59e0b;
+  --link-application: #fb7185;
+  --link-related: #c084fc;
+  --link-learning: #34d399;
+
+  --node-root: #f7c843;
+  --node-chapter: #7dd3fc;
+  --node-topic: #a7b6cc;
+  --node-detail: #6b7f9b;
+  --node-meta: #34d399;
+}
+
+[data-theme="light"] {
+  --bg: #f6f7fb;
+  --surface: #ffffff;
+  --surface-2: #f1f4fb;
+  --surface-3: #eef2fa;
+  --text: #0b1220;
+  --muted: #3f5168;
+  --muted-2: #647892;
+  --border: rgba(16, 24, 40, 0.14);
+  --ring: rgba(14, 165, 233, 0.45);
+
+  --accent: #0ea5e9;
+  --accent-2: #0284c7;
+  --gold: #b45309;
+  --success: #059669;
+  --danger: #e11d48;
+  --violet: #7c3aed;
+
+  --link-contains: rgba(15, 23, 42, 0.14);
+  --link-prerequisite: #b45309;
+  --link-application: #e11d48;
+  --link-related: #7c3aed;
+  --link-learning: #059669;
+
+  --node-root: #b45309;
+  --node-chapter: #0ea5e9;
+  --node-topic: #334155;
+  --node-detail: #64748b;
+  --node-meta: #059669;
+}
+
+[data-theme="auto"] {
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: light) {
+  [data-theme="auto"] {
+    --bg: #f6f7fb;
+    --surface: #ffffff;
+    --surface-2: #f1f4fb;
+    --surface-3: #eef2fa;
+    --text: #0b1220;
+    --muted: #3f5168;
+    --muted-2: #647892;
+    --border: rgba(16, 24, 40, 0.14);
+    --ring: rgba(14, 165, 233, 0.45);
+
+    --accent: #0ea5e9;
+    --accent-2: #0284c7;
+    --gold: #b45309;
+    --success: #059669;
+    --danger: #e11d48;
+    --violet: #7c3aed;
+
+    --link-contains: rgba(15, 23, 42, 0.14);
+    --link-prerequisite: #b45309;
+    --link-application: #e11d48;
+    --link-related: #7c3aed;
+    --link-learning: #059669;
+
+    --node-root: #b45309;
+    --node-chapter: #0ea5e9;
+    --node-topic: #334155;
+    --node-detail: #64748b;
+    --node-meta: #059669;
+  }
+}
+

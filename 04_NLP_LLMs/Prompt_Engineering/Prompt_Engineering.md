@@ -398,5 +398,19 @@ final_prompt = ChatPromptTemplate.from_messages([
 - [DSPy](https://github.com/stanfordnlp/dspy) — 可编程的 Prompt 优化框架
 - [Guardrails AI](https://www.guardrailsai.com/) — Prompt 输出验证框架
 
+### Vibe Coding 中的提示工程
+
+提示工程在 **Vibe Coding**（自然语言驱动开发）中有了全新的应用场景——不只是和聊天机器人对话，而是直接驱动代码生成。关键差异：
+
+| 维度 | 传统提示工程 | Vibe Coding 提示工程 |
+|------|------------|---------------------|
+| **目标** | 获取好的回答 | 生成可运行的代码 |
+| **上下文** | 单次对话 | 项目级规则文件 (.cursorrules) |
+| **验证** | 人工判断 | 自动化测试 + 类型检查 |
+| **迭代** | 改写提示 | DGRV 循环 (描述→生成→审查→验证) |
+| **结构** | System + User + Examples | STAR 结构 (情境+任务+架构+要求) |
+
+详细内容请参阅 [Vibe Coding 方法论 2026](../../07_AI_Engineering/Vibe_Coding/Vibe_Coding_Methodology_2026.md) 中的"提示工程体系"章节。
+
 ---
-*Last updated: 2026-02-10*
+*Last updated: 2026-04-11*

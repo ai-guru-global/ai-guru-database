@@ -112,6 +112,19 @@ RAG 系统 📚       MLOps 流水线 🏭
 
 👉 [阅读详细版](./Model_Evaluation/Model_Evaluation_for_dummy.md)
 
+### 6️⃣ Vibe Coding - 用"说人话"的方式编程
+
+> **生活类比**: 你是导演, AI 是编剧和演员——你说想要什么, AI 帮你写代码, 你负责检查对不对
+
+**你会学到**:
+- 怎么用自然语言让 AI 帮你写代码
+- 5分钟上手的 Vibe Coding 基础
+- 怎样给 AI 说清楚需求 (BAD → GOOD → BEST)
+- 什么时候用 AI 写代码, 什么时候自己写
+- 安全使用的 4 步法
+
+👉 [阅读详细版](./Vibe_Coding/Vibe_Coding_for_dummy.md)
+
 ## 从小白到工程师的路径
 
 ### 第 1 周:理解基础概念
@@ -145,6 +158,7 @@ RAG 系统 📚       MLOps 流水线 🏭
 | **OpenClaw** | 开源 AI Agent 框架 | AI 助手的操作系统 |
 | **Skills** | AI 的技能扩展 | 手机的 App |
 | **Computer Use** | AI 操控电脑 | 远程桌面 + 智能化 |
+| **Vibe Coding** | 用自然语言让AI写代码 | 导演指挥编剧和演员 |
 
 ## 常见问题
 
@@ -168,6 +182,7 @@ A: 本地实验可以用 CPU,生产环境推荐 GPU(如 NVIDIA T4/L4)。
 - [MLOps 流水线 - 小白版](./MLOps_Pipeline/MLOps_Pipeline_for_dummy.md)
 - [模型评估 - 小白版](./Model_Evaluation/Model_Evaluation_for_dummy.md)
 - [**OpenClaw 生态 - 小白版**](./OpenClaw_Ecosystem/OpenClaw_Ecosystem_for_dummy.md) 🦞 新！
+- [**Vibe Coding 方法论 - 小白版**](./Vibe_Coding/Vibe_Coding_for_dummy.md) 🎯 新！
 
 ### 🔙 回顾前置知识
 - [深度学习基础](../03_Deep_Learning/README_for_dummy.md)

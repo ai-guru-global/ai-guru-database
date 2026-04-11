@@ -170,6 +170,7 @@ Cutting-edge content updated for 2026:
 | **[PEFT 2026](./04_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/PEFT_2026.md)** | LoRA/QLoRA/DoRA/rsLoRA, single-GPU 70B fine-tuning |
 | **[RAG Advanced 2026](./07_AI_Engineering/RAG_Advanced_2026/RAG_Advanced_2026.md)** | Hybrid retrieval + RRF, Agentic RAG, 60%→90% accuracy |
 | **[AI Coding Assistants 2026](./07_AI_Engineering/AI_Coding_Assistants/AI_Coding_Assistants_2026.md)** | Cursor (72% acc), Claude Code, Windsurf, Devin comparison |
+| **[Vibe Coding Methodology 2026](./07_AI_Engineering/Vibe_Coding/Vibe_Coding_Methodology_2026.md)** | DGRV loop, prompt engineering, quality system, production practices |
 | **[Embodied AI 2026](./06_Reinforcement_Learning/Robotics_Embodied_AI/Embodied_AI_2026.md)** | VLA models (RT-2, π0, GR00T), humanoid robotics market |
 | **[World Models 2026](./03_Deep_Learning/World_Models/World_Models_2026.md)** | JEPA/V-JEPA 2.1/LeJEPA, Yann LeCun's AGI path |
 | **[AI Video Generation 2026](./05_Computer_Vision/Video_Generation/Video_Generation_2026.md)** | Veo3, Kling 3.0, Seedance, post-Sora landscape |

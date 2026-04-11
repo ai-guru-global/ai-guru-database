@@ -74,6 +74,7 @@ flowchart LR
 | Agent 生产部署 (Agent Production) | 实战 | 企业级Agent架构、K8s部署、监控、CI/CD最佳实践 | [Agent_Production/](./Agent_Production/) |
 | RAG高级实践 2026 (RAG Advanced) | 进阶 | 混合检索、重排序、Agentic RAG、上下文压缩 | [RAG_Advanced_2026/](./RAG_Advanced_2026/) |
 | AI编程助手 2026 (AI Coding Assistants) | 实战 | Cursor/Claude Code/Windsurf/Devin对比选型 | [AI_Coding_Assistants/](./AI_Coding_Assistants/) |
+| **Vibe Coding 方法论 2026** (Vibe Coding) | 实战 | 自然语言驱动开发方法论、DGRV循环、生产环境实践、提示工程体系 | [Vibe_Coding/](./Vibe_Coding/) |
 | **AI 网关 2026** (AI Gateway) | 实战 | 企业级AI统一入口、智能路由、安全管控、成本优化、多租户支持 | [AI_Gateway_2026.md](./AI_Gateway/AI_Gateway_2026.md) |
 | **AI Ops 2026** (AI Ops) | 进阶 | 智能监控、异常检测、根因分析、自动修复、容量规划 | [AI_Ops_2026.md](./AI_Ops/AI_Ops_2026.md) |
 | **云产品运维 2026** (Cloud Product Ops) | 实战 | 云产品运维Agent架构、工具系统、安全权限管理、生产部署 | [Cloud_Product_Ops_2026.md](./Cloud_Product_Ops/Cloud_Product_Ops_2026.md) |
@@ -101,6 +102,9 @@ flowchart LR
 - **OpenClaw**: 开源 AI Agent 框架，支持多平台控制和技能扩展
 - **Skills (技能)**: AI Agent 的可扩展能力模块，通过 ClawHub 市场分发
 - **Computer Use**: AI 直接操控用户电脑的能力，包括文件管理、应用控制
+- **Vibe Coding**: 自然语言驱动AI生成代码的开发范式，开发者从"编码者"转变为"架构师+审计师"
+- **DGRV循环**: Describe(描述)→Generate(生成)→Review(审查)→Verify(验证)的迭代开发流程
+- **规则文件**: .cursorrules/AGENTS.md等配置文件，为AI提供项目级持久化上下文
 
 ---
-*Last updated: 2026-02-10*
+*Last updated: 2026-04-11*

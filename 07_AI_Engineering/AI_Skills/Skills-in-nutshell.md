@@ -855,3 +855,23 @@ flowchart TB
 - [智能体](../../06_Reinforcement_Learning/AI_Agents/Agent-in-nutshell.md) - 在智能体中使用技能
 - [工作流](../AI_Workflow/Workflow-in-nutshell.md) - 编排技能
 - [RAG](../RAG_Systems/RAG-in-nutshell.md) - 知识检索技能
+
+---
+
+## 🆕 Agent Skills 开放标准
+
+以上内容描述的是**编程实现的 Skills**（Python 代码）。2025 年起，一个名为 **Agent Skills** 的开放标准被广泛采纳（30+ 主流 Agent 产品支持），它使用 `SKILL.md` Markdown 文件定义 Skill，而非代码类。
+
+**两种方式的对比**：
+
+| 维度 | 编程实现（本文档） | Agent Skills 开放标准 |
+|------|-------------------|---------------------|
+| 定义方式 | Python 类 | SKILL.md Markdown |
+| 可移植性 | 绑定 Python | 跨所有兼容 Agent |
+| 技术门槛 | 需要编程 | Markdown 即可 |
+| 适用场景 | 自建 Agent 框架 | 通用 Agent 产品 |
+
+**深入了解 Agent Skills 开放标准**：
+- [Agent Skills 深度解析](./Agent_Skills_Deep_Dive.md) — 完整规范、最佳实践、评估体系
+- [Agent Skills 实战指南](./Agent_Skills_Practical_Guide.md) — 从零创建、测试、优化和发布
+- [官方文档](https://agentskills.io) — Agent Skills 标准文档站

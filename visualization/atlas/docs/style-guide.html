@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Guru Knowledge Atlas · 风格指南</title>
+    <style>
+      :root {
+        --bg: #0b1020;
+        --surface: #0f1730;
+        --surface-2: #101d38;
+        --text: #eaf1ff;
+        --muted: #a7b6cc;
+        --border: rgba(255, 255, 255, 0.12);
+        --accent: #7dd3fc;
+        --accent-2: #38bdf8;
+        --gold: #f7c843;
+        --success: #34d399;
+        --danger: #fb7185;
+        --violet: #c084fc;
+        --ease-out: cubic-bezier(0.4, 0, 0.2, 1);
+        --radius-2: 14px;
+        --radius-3: 18px;
+        --shadow: 0 18px 70px rgba(0, 0, 0, 0.35);
+        --font: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB",
+          "Microsoft YaHei", "Noto Sans CJK SC", "Noto Sans SC", sans-serif;
+        --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: var(--font);
+        background: radial-gradient(1100px 800px at 18% 18%, rgba(125, 211, 252, 0.16), transparent 60%),
+          radial-gradient(1050px 760px at 82% 78%, rgba(192, 132, 252, 0.14), transparent 62%), var(--bg);
+        color: var(--text);
+      }
+
+      .page {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 44px 26px 90px;
+      }
+
+      .hero {
+        padding: 28px 22px;
+        border-radius: 22px;
+        border: 1px solid var(--border);
+        background: color-mix(in srgb, var(--surface) 78%, transparent);
+        box-shadow: var(--shadow);
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 28px;
+        letter-spacing: 0.2px;
+      }
+
+      .sub {
+        margin-top: 10px;
+        color: var(--muted);
+        line-height: 1.7;
+        font-size: 13px;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+        margin-top: 18px;
+      }
+
+      .card {
+        border-radius: var(--radius-3);
+        border: 1px solid var(--border);
+        background: color-mix(in srgb, var(--surface-2) 70%, transparent);
+        padding: 16px 16px;
+      }
+
+      .kicker {
+        font-size: 11px;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+        color: color-mix(in srgb, var(--muted) 80%, transparent);
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+
+      .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 10px 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .row:first-of-type {
+        border-top: 0;
+        padding-top: 0;
+      }
+
+      .chip {
+        height: 22px;
+        padding: 0 8px;
+        border-radius: 999px;
+        border: 1px solid var(--border);
+        background: rgba(255, 255, 255, 0.05);
+        font-family: var(--mono);
+        font-size: 11px;
+        color: var(--muted);
+        display: inline-flex;
+        align-items: center;
+      }
+
+      .swatches {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+      }
+
+      .sw {
+        display: grid;
+        grid-template-columns: 42px 1fr;
+        gap: 10px;
+        align-items: center;
+      }
+
+      .dot {
+        width: 42px;
+        height: 42px;
+        border-radius: 14px;
+        border: 1px solid rgba(255, 255, 255, 0.14);
+      }
+
+      .name {
+        font-weight: 700;
+        font-size: 13px;
+      }
+
+      .note {
+        font-size: 12px;
+        color: var(--muted);
+        line-height: 1.6;
+      }
+
+      ul {
+        margin: 10px 0 0;
+        padding-left: 18px;
+        color: var(--muted);
+        line-height: 1.7;
+        font-size: 13px;
+      }
+
+      code {
+        font-family: var(--mono);
+        font-size: 12px;
+        color: color-mix(in srgb, var(--accent) 80%, var(--text) 20%);
+      }
+
+      .footer {
+        margin-top: 24px;
+        color: var(--muted);
+        font-size: 12px;
+        line-height: 1.7;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="hero">
+        <h1>AI Guru Knowledge Atlas · 视觉风格指南</h1>
+        <div class="sub">
+          主题解读：这是一个“知识宇宙的导航仪”。数据故事从“根节点 → 章节 → 主题 → 子话题”逐级展开，用户核心任务是
+          <b>快速定位</b>、<b>理解关联</b>、<b>建立学习路径</b>。因此视觉策略强调：清晰的层级、稳定的聚焦、可读的对比度与克制的动效。
+        </div>
+        <div class="grid">
+          <div class="card">
+            <div class="kicker">风格方向</div>
+            <ul>
+              <li>气质：深空/编辑感（Space editorial），以大面积暗底与高对比点亮关键节点</li>
+              <li>层级：根节点为“恒星”，章节为“行星环”，主题/子话题为“轨道粒子”</li>
+              <li>信息密度：默认简洁，交互触发时局部增密（tooltip/详情/关联列表）</li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="kicker">动效规则</div>
+            <div class="row"><span>统一 easing</span><span class="chip">cubic-bezier(0.4,0,0.2,1)</span></div>
+            <div class="row"><span>基础动效</span><span class="chip">200–320ms</span></div>
+            <div class="row"><span>关键聚焦</span><span class="chip">320–400ms</span></div>
+            <div class="row"><span>无障碍</span><span class="chip">prefers-reduced-motion</span></div>
+            <div class="note">用于节点半径、连线粗细、透明度、tooltip 出现/位移等微交互。</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid" style="margin-top: 18px">
+        <div class="card">
+          <div class="kicker">调色板（暗色）</div>
+          <div class="swatches">
+            <div class="sw">
+              <div class="dot" style="background: var(--accent)"></div>
+              <div>
+                <div class="name">Accent</div>
+                <div class="note"><code>#7dd3fc</code> 用于主行动、章节节点、聚焦环</div>
+              </div>
+            </div>
+            <div class="sw">
+              <div class="dot" style="background: var(--gold)"></div>
+              <div>
+                <div class="name">Root</div>
+                <div class="note"><code>#f7c843</code> 根节点强调</div>
+              </div>
+            </div>
+            <div class="sw">
+              <div class="dot" style="background: var(--success)"></div>
+              <div>
+                <div class="name">Learning</div>
+                <div class="note"><code>#34d399</code> 学习路径节点/连线</div>
+              </div>
+            </div>
+            <div class="sw">
+              <div class="dot" style="background: var(--violet)"></div>
+              <div>
+                <div class="name">Related</div>
+                <div class="note"><code>#c084fc</code> 关联连线</div>
+              </div>
+            </div>
+          </div>
+          <div class="note" style="margin-top: 10px">
+            WCAG 2.2 AA：文本与背景对比度目标 ≥4.5:1；交互焦点 ring 使用半透明高亮，确保在暗/亮两套主题均可辨识。
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="kicker">排版与层级</div>
+          <ul>
+            <li>字体：系统无衬线优先，保证中文渲染一致与性能</li>
+            <li>信息层级：<code>title</code>（18–28px）→ <code>kicker</code>（11px uppercase）→ 正文（13px）</li>
+            <li>数字信息：统计卡与徽章使用高权重字重，强化“可扫读”</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="grid" style="margin-top: 14px">
+        <div class="card">
+          <div class="kicker">组件状态</div>
+          <ul>
+            <li>Hover：局部高亮 + tooltip（不遮挡主体）</li>
+            <li>Selected：节点增强外发光 + 侧边栏详情锁定</li>
+            <li>Disabled：降低饱和度与 opacity，同时保留形状（避免信息丢失）</li>
+            <li>Focus：必须可见（键盘可达）；使用 <code>:focus-visible</code> 与 ring</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="kicker">布局与响应式</div>
+          <ul>
+            <li>桌面/4K：左侧信息面板固定宽度，右侧画布满屏可缩放</li>
+            <li>平板/手机：侧边栏变为抽屉（menu + backdrop），不牺牲画布空间</li>
+            <li>图谱元素：SVG 自适应容器；tooltip 自动避让边界</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer">
+        交付标准：WCAG 2.2 AA、对比度 ≥4.5:1、响应式无损、动效 200–400ms 且可被 reduced-motion 关闭；视觉回归测试覆盖核心状态。
+      </div>
+    </div>
+  </body>
+</html>
+

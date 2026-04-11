@@ -14,6 +14,7 @@
 🥇 第一梯队 (Agentic Coding):
 ├── Cursor ($20/月) - 最佳全能IDE
 ├── Claude Code ($20/月) - 最强终端代理
+├── Hermes Agent (免费/开源) - 全平台多模型代理
 ├── Windsurf ($15/月) - 最佳性价比
 └── Devin ($500/月) - 完全自主 (限量)
 
@@ -21,6 +22,10 @@
 ├── GitHub Copilot ($10/月) - 最大用户基数
 ├── Amazon CodeWhisperer - AWS生态
 └── TabNine - 隐私优先
+
+🥉 新兴力量 (开源/可扩展):
+├── Hermes Agent (MIT) - 唯一全平台开源代理
+└── Aider (Apache 2.0) - 轻量终端编码
 
 关键转变:
 2024: 代码补全 (Autocomplete)
@@ -30,18 +35,22 @@
     ├── 终端命令执行
     ├── 自我纠错循环
     └── 项目级理解
+    └── 全平台自动化 (Hermes引领)
 ```
 
 ### 核心能力对比
 
-| 能力 | Cursor | Claude Code | Windsurf | Copilot | Devin |
-|------|--------|-------------|----------|---------|-------|
-| **代码接受率** | 72% | N/A | 65% | 65% | N/A |
-| **上下文窗口** | 200K | 200K | 100K | _repo-level_ | 无限 |
-| **多文件编辑** | 优秀 | 优秀 | 良好 | 有限 | 自动 |
-| **终端集成** | 良好 | 原生 | 良好 | 无 | 完全 |
-| **自主性** | 高 | 高 | 很高 | 中 | 完全 |
-| **定价** | $20/月 | $20/月 | $15/月 | $10/月 | $500/月 |
+| 能力 | Cursor | Claude Code | Hermes Agent | Windsurf | Copilot | Devin |
+|------|--------|-------------|--------------|----------|---------|-------|
+| **代码接受率** | 72% | N/A | N/A | 65% | 65% | N/A |
+| **上下文窗口** | 200K | 200K | 模型决定 | 100K | _repo-level_ | 无限 |
+| **多文件编辑** | 优秀 | 优秀 | 良好 | 良好 | 有限 | 自动 |
+| **终端集成** | 良好 | 原生 | 6种后端 | 良好 | 无 | 完全 |
+| **自主性** | 高 | 高 | 很高 | 很高 | 中 | 完全 |
+| **开源** | 否 | 否 | MIT | 否 | 否 | 否 |
+| **模型锁定** | 多模型 | Anthropic | 17+ Provider | 多模型 | OpenAI | 自有 |
+| **消息平台** | 无 | 无 | 7个 | 无 | 无 | 无 |
+| **定价** | $20/月 | $20/月 | 免费(自带API) | $15/月 | $10/月 | $500/月 |
 
 ---
 
@@ -189,6 +198,54 @@ Copilot Workspace (预览):
 └── 不适合敏感代码
 ```
 
+### 2.6 Hermes Agent (全平台开源代理)
+
+**定位**: Nous Research推出的开源、多平台、多模型AI代理
+
+**核心特性**:
+```
+全平台覆盖:
+├── CLI (TUI完整终端界面)
+├── Telegram / Discord / Slack / WhatsApp / Signal / Email
+├── API Server (OpenAI兼容)
+└── IDE集成 (ACP: VS Code / Zed / JetBrains)
+
+多模型自由:
+├── 17+ Provider (Anthropic / OpenAI / OpenRouter / 智谱 / 月之暗面...)
+├── Provider路由优化 (成本/速度/质量)
+├── 自动Fallback备用模型
+└── 无锁定
+
+自动化能力:
+├── 定时任务 (Cron) — 自然语言设置
+├── 子代理委托 — 最多3个并行
+├── 浏览器自动化 — 4种后端
+├── 语音模式 — STT + TTS
+└── 后台会话 — 非阻塞并行任务
+
+开发者友好:
+├── Skills系统 (agentskills.io开放标准)
+├── 持久化记忆 + 外部Provider
+├── MCP集成 (stdio + HTTP)
+├── 插件系统 (Python)
+├── 容器安全 (Docker/SSH/Modal)
+└── Git Checkpoints + 回滚
+```
+
+**优势**:
+- 唯一全平台覆盖的开源编码代理
+- 模型自由切换，无供应商锁定
+- 丰富的自动化和消息平台集成
+- MIT License，可审计、可定制
+- 支持6种终端后端 (含Docker/SSH隔离)
+
+**劣势**:
+- 无IDE内置代码补全 (不如Cursor的72%接受率)
+- 需要自带API Key (不包含模型费用)
+- 相对新，社区和生态在发展中
+
+**定价**: 免费 (开源MIT)，需自行支付LLM API费用
+
 ---
 
 ## 3. 选型决策树
@@ -197,13 +254,14 @@ Copilot Workspace (预览):
 选择AI编程助手:
 
 1. 预算?
-   ├── 有限 (<$15) → Windsurf (免费 tier 友好)
+   ├── 有限 (<$15) → Windsurf (免费 tier 友好) / Hermes Agent (免费+自带API)
    ├── 中等 ($15-20) → Windsurf Pro / Copilot
    └── 充足 ($20+) → Cursor / Claude Code
 
 2. 工作方式?
    ├── IDE用户 → Cursor (VS Code fork)
-   ├── 终端用户 → Claude Code
+   ├── 终端用户 → Claude Code / Hermes Agent
+   ├── 多平台需求 → Hermes Agent (CLI+消息平台+API)
    ├── 快速原型 → Windsurf
    └── 企业环境 → Copilot
 
@@ -211,12 +269,21 @@ Copilot Workspace (预览):
    ├── 大型代码库 → Cursor / Claude Code
    ├── 全栈开发 → Cursor
    ├── 快速脚本 → Windsurf
+   ├── 自动化工作流 → Hermes Agent (Cron+子代理)
+   ├── 浏览器相关 → Hermes Agent (浏览器自动化)
    └── 学习/练习 → 任意
 
 4. 团队规模?
    ├── 个人 → 任意
-   ├── 小团队 → Cursor / Windsurf
+   ├── 小团队 → Cursor / Windsurf / Hermes Agent
+   ├── 跨平台协作 → Hermes Agent (消息平台集成)
    └── 企业 → Copilot (合规) / Cursor Teams
+
+5. 特殊需求?
+   ├── 开源必须 → Hermes Agent (MIT)
+   ├── 语音交互 → Hermes Agent
+   ├── 模型自由 → Hermes Agent (17+ Provider)
+   └── 定时自动化 → Hermes Agent
 ```
 
 ---
@@ -308,6 +375,7 @@ bad_prompt = "添加限流"
 |------|----------|----------|--------|
 | **Cursor** | ✅ 本地索引 | ⚠️ 无SOC2 | ✅ 隐私模式 |
 | **Claude Code** | ✅ 终端本地 | ⚠️ 无SOC2 | ✅ API控制 |
+| **Hermes Agent** | ✅ 开源自托管 | ⚠️ 无SOC2 | ✅ 完全控制 |
 | **Windsurf** | ✅ VPC部署 | ⚠️ 发展中 | ✅ 企业版 |
 | **Copilot** | ✅ 零数据保留 | ✅ SOC2 | ✅ IP赔偿 |
 | **Devin** | ❌ 云端 | ⚠️ 审核中 | ⚠️ 需评估 |
@@ -363,6 +431,24 @@ claude
 # 自然语言与Claude对话
 ```
 
+### Hermes Agent
+```bash
+# 1. 一行安装
+curl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.sh | bash
+
+# 2. 配置模型
+hermes model
+
+# 3. 开始使用
+hermes
+
+# 4. 高级用法
+hermes chat --toolsets "web,terminal"  # 指定工具集
+hermes -c                              # 恢复上次会话
+hermes -w                              # Git Worktree隔离
+hermes gateway setup                   # 配置消息平台
+```
+
 ### Windsurf
 ```bash
 # 1. 下载
@@ -373,18 +459,38 @@ https://codeium.com/windsurf
 
 ---
 
-## 9. 参考资源
+## 9. 从工具到方法论: Vibe Coding
+
+选好工具只是第一步，如何在生产环境中系统化地使用这些工具才是关键。
+
+> **Vibe Coding** 是由 Andrej Karpathy 于 2025 年 2 月提出的软件开发范式——用自然语言描述意图，由 AI 生成代码，开发者负责审查和验证。
+
+```
+工具 vs 方法论:
+├── 工具层:  Cursor / Claude Code / Windsurf / Devin (本篇覆盖)
+├── 方法论层: DGRV循环 / 提示工程 / 规则文件 / 质量门禁
+└── 实践层:  CI/CD集成 / 安全审查 / 成本管理 / 团队规范
+```
+
+详细的 Vibe Coding 方法论和生产环境实践，请参阅：
+- [Vibe Coding 方法论 2026](../Vibe_Coding/Vibe_Coding_Methodology_2026.md) — 完整方法论指南
+- [Vibe Coding 生产实践](../Vibe_Coding/Vibe_Coding_Production_Practices.md) — 生产环境实战
+- [Vibe Coding 傻瓜指南](../Vibe_Coding/Vibe_Coding_for_dummy.md) — 5分钟入门
+
+---
 
 ### 官方资源
 - [Cursor Documentation](https://docs.cursor.com/)
 - [Claude Code Guide](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview)
+- [Hermes Agent Docs](https://hermes-agent.nousresearch.com/docs/getting-started/quickstart)
 - [Windsurf Help](https://docs.codeium.com/getstarted/windsurf)
 - [GitHub Copilot Docs](https://docs.github.com/en/copilot)
 
 ### 社区资源
 - [Cursor Directory](https://cursor.directory/) - .cursorrules模板
 - [Awesome Cursor Rules](https://github.com/PatrickJS/awesome-cursorrules)
+- [Hermes Skills Hub](https://agentskills.io) - Skills市场
 
 ---
 
-*Last updated: 2026-04-01* (Cursor/Windsurf/Claude Code comparison)
+*Last updated: 2026-04-11* (Cursor/Windsurf/Claude Code/Hermes Agent comparison)

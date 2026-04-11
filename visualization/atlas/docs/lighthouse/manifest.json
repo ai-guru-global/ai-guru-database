@@ -1,0 +1,38 @@
+[
+  {
+    "url": "http://127.0.0.1:5174/?static=1",
+    "isRepresentativeRun": false,
+    "htmlPath": "/Users/ai-guru/Documents/GitHub/ai-guru-global/ai-guru-database/visualization/atlas/docs/lighthouse/127_0_0_1-_-2026_04_11_06_33_21.report.html",
+    "jsonPath": "/Users/ai-guru/Documents/GitHub/ai-guru-global/ai-guru-database/visualization/atlas/docs/lighthouse/127_0_0_1-_-2026_04_11_06_33_21.report.json",
+    "summary": {
+      "performance": 0.96,
+      "accessibility": 1,
+      "best-practices": 1,
+      "seo": 0.82
+    }
+  },
+  {
+    "url": "http://127.0.0.1:5174/?static=1",
+    "isRepresentativeRun": false,
+    "htmlPath": "/Users/ai-guru/Documents/GitHub/ai-guru-global/ai-guru-database/visualization/atlas/docs/lighthouse/127_0_0_1-_-2026_04_11_06_33_36.report.html",
+    "jsonPath": "/Users/ai-guru/Documents/GitHub/ai-guru-global/ai-guru-database/visualization/atlas/docs/lighthouse/127_0_0_1-_-2026_04_11_06_33_36.report.json",
+    "summary": {
+      "performance": 0.97,
+      "accessibility": 1,
+      "best-practices": 1,
+      "seo": 0.82
+    }
+  },
+  {
+    "url": "http://127.0.0.1:5174/?static=1",
+    "isRepresentativeRun": true,
+    "htmlPath": "/Users/ai-guru/Documents/GitHub/ai-guru-global/ai-guru-database/visualization/atlas/docs/lighthouse/127_0_0_1-_-2026_04_11_06_33_50.report.html",
+    "jsonPath": "/Users/ai-guru/Documents/GitHub/ai-guru-global/ai-guru-database/visualization/atlas/docs/lighthouse/127_0_0_1-_-2026_04_11_06_33_50.report.json",
+    "summary": {
+      "performance": 0.96,
+      "accessibility": 1,
+      "best-practices": 1,
+      "seo": 0.82
+    }
+  }
+]

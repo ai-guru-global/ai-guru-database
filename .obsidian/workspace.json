@@ -1,0 +1,215 @@
+{
+  "main": {
+    "id": "c0e7cecf87e4feb9",
+    "type": "split",
+    "children": [
+      {
+        "id": "7322bd66a80a892b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "975e7b8cbbdfb6ca",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f89ca66af4415cdd",
+    "type": "split",
+    "children": [
+      {
+        "id": "88057a9a862926d0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b445b87dcb107474",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "1047b50470786159",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "819214d41a38cf35",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "7620a19d8cebda1c",
+    "type": "split",
+    "children": [
+      {
+        "id": "048a3f54fba17a8b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b2b3b6bef462c884",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "反向链接"
+            }
+          },
+          {
+            "id": "dba9400d97821430",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "出链"
+            }
+          },
+          {
+            "id": "dd0ef7646d5c340c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "e1bba3559a57fc24",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "08c344ab08798de6",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false
+    }
+  },
+  "active": "975e7b8cbbdfb6ca",
+  "lastOpenFiles": [
+    "visualization/atlas/dist/assets/index-5fIk8AFw.js",
+    "visualization/atlas/dist/assets/index-BFNyDmj-.css",
+    "visualization/atlas/docs/lighthouse/manifest.json",
+    "visualization/atlas/docs/lighthouse/127_0_0_1-_-2026_04_11_06_28_46.report.json",
+    "visualization/atlas/docs/lighthouse/127_0_0_1-_-2026_04_11_06_28_46.report.html",
+    "visualization/atlas/docs/lighthouse/127_0_0_1-_-2026_04_11_06_28_27.report.json",
+    "visualization/atlas/docs/lighthouse/127_0_0_1-_-2026_04_11_06_28_27.report.html",
+    "visualization/atlas/docs/lighthouse/127_0_0_1-_-2026_04_11_06_28_13.report.json",
+    "visualization/atlas/docs/lighthouse/127_0_0_1-_-2026_04_11_06_28_13.report.html",
+    "visualization/atlas/docs/lighthouse",
+    "visualization/atlas/test-results/vrt-12-reset-view-state-chromium/trace.zip",
+    "visualization/atlas/test-results/vrt-12-reset-view-state-chromium/error-context.md",
+    "visualization/atlas/test-results/vrt-12-reset-view-state-chromium/12-reset-view-state-expected.png",
+    "visualization/atlas/test-results/vrt-12-reset-view-state-chromium/12-reset-view-state-diff.png",
+    "visualization/atlas/test-results/vrt-12-reset-view-state-chromium/12-reset-view-state-actual.png",
+    "visualization/atlas/test-results/vrt-11-keyboard-focus-ring-chromium/error-context.md",
+    "visualization/atlas/test-results/vrt-11-keyboard-focus-ring-chromium/11-keyboard-focus-ring-expected.png",
+    "visualization/atlas/test-results/vrt-11-keyboard-focus-ring-chromium/11-keyboard-focus-ring-diff.png",
+    "visualization/atlas/test-results/vrt-11-keyboard-focus-ring-chromium/11-keyboard-focus-ring-actual.png",
+    "visualization/atlas/test-results/vrt-10-tablet-light-sidebar-open-chromium/error-context.md",
+    "visualization/atlas/test-results/vrt-10-tablet-light-sidebar-open-chromium/10-tablet-light-sidebar-open-expected.png",
+    "visualization/atlas/test-results/vrt-10-tablet-light-sidebar-open-chromium/10-tablet-light-sidebar-open-actual.png",
+    "visualization/atlas/test-results/vrt-10-tablet-light-sidebar-open-chromium/10-tablet-light-sidebar-open-diff.png",
+    "visualization/atlas/test-results/vrt-09-mobile-dark-sidebar-open-chromium/error-context.md",
+    "visualization/atlas/test-results/vrt-09-mobile-dark-sidebar-open-chromium/09-mobile-dark-sidebar-open-expected.png",
+    "visualization/atlas/test-results/vrt-05-desktop-dark-filtered-links-chromium/error-context.md",
+    "visualization/atlas/test-results/vrt-04-desktop-dark-search-results-open-chromium/error-context.md",
+    "visualization/atlas/test-results/vrt-03-desktop-dark-selected-node-chromium/error-context.md",
+    "visualization/atlas/test-results/vrt-08-mobile-dark-sidebar-closed-chromium/error-context.md",
+    "visualization/atlas/test-results/vrt-06-desktop-light-default-chromium/error-context.md",
+    "visualization/atlas/test-results/vrt-01-desktop-dark-default-chromium/error-context.md",
+    "visualization/atlas/README.md",
+    "visualization/atlas/docs/performance.md"
+  ]
+}

@@ -261,6 +261,7 @@ curl -L -o ai-guru.zip https://github.com/your-org/ai-guru-knowledge-base/archiv
 - [PEFT 微调 2026](./04_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/) - LoRA/QLoRA/DoRA, 单卡微调 70B
 - [RAG 高级实践](./07_AI_Engineering/RAG_Advanced_2026/) - 混合检索、Agentic RAG
 - [AI 编程助手](./07_AI_Engineering/AI_Coding_Assistants/) - Cursor, Claude Code, Devin
+- [Vibe Coding 方法论](./07_AI_Engineering/Vibe_Coding/) - 自然语言驱动开发、DGRV循环、生产实践
 - [具身智能 2026](./06_Reinforcement_Learning/Robotics_Embodied_AI/) - VLA 模型、人形机器人
 
 </td>

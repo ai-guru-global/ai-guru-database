@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Guru 知识图谱 · Knowledge Atlas</title>
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" sizes="any" />
+  </head>
+  <body class="app" data-theme="auto">
+    <a class="u-sr-only u-sr-only--focusable" href="#main">跳到图谱</a>
+
+    <header class="app__topbar">
+      <button
+        class="icon-button app__menu"
+        type="button"
+        data-action="toggle-sidebar"
+        aria-label="打开侧边栏"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M4 7h16M4 12h16M4 17h16"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.75"
+            stroke-linecap="round"
+          />
+        </svg>
+      </button>
+
+      <div class="app__brand" aria-label="AI Guru 知识图谱">
+        <div class="app__title">AI Guru</div>
+        <div class="app__subtitle">Knowledge Atlas</div>
+      </div>
+
+      <div class="app__actions">
+        <button class="chip" type="button" data-action="reset-view" aria-label="重置视图">
+          重置视图
+        </button>
+        <button class="chip" type="button" data-action="toggle-theme" aria-label="切换主题">
+          主题
+        </button>
+      </div>
+    </header>
+
+    <div class="app__layout">
+      <aside class="sidebar" id="sidebar" aria-label="侧边栏">
+        <div class="sidebar__section sidebar__section--search">
+          <div class="sidebar__kicker">搜索</div>
+          <label class="field" aria-label="搜索节点">
+            <span class="field__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15Z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                />
+                <path
+                  d="M16.5 16.5 21 21"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </span>
+            <input
+              class="field__input"
+              id="search-input"
+              type="search"
+              autocomplete="off"
+              spellcheck="false"
+              placeholder="输入关键词搜索节点…"
+            />
+          </label>
+          <div class="sidebar__hint" id="search-hint">回车锁定聚焦，Esc 清空</div>
+          <div class="result-list" id="search-results" role="listbox" aria-label="搜索结果"></div>
+        </div>
+
+        <div class="sidebar__section" aria-label="节点详情">
+          <div class="sidebar__kicker">节点详情</div>
+          <div class="panel" id="node-panel"></div>
+          <div class="u-sr-only" aria-live="polite" id="sr-announcer"></div>
+        </div>
+
+        <div class="sidebar__section" aria-label="数据概览">
+          <div class="sidebar__kicker">数据概览</div>
+          <div class="stats">
+            <div class="stat">
+              <div class="stat__value" id="s-nodes">—</div>
+              <div class="stat__label">节点</div>
+            </div>
+            <div class="stat">
+              <div class="stat__value" id="s-links">—</div>
+              <div class="stat__label">连接</div>
+            </div>
+            <div class="stat">
+              <div class="stat__value" id="s-level1">—</div>
+              <div class="stat__label">章节</div>
+            </div>
+            <div class="stat">
+              <div class="stat__value" id="s-level2">—</div>
+              <div class="stat__label">主题</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sidebar__section" aria-label="关系筛选">
+          <div class="sidebar__kicker">关系筛选</div>
+          <div class="chips" id="filter-chips" role="group" aria-label="连接类型筛选"></div>
+        </div>
+
+        <div class="sidebar__section" aria-label="图例">
+          <div class="sidebar__kicker">图例</div>
+          <div class="legend" id="legend"></div>
+        </div>
+
+        <div class="sidebar__section sidebar__section--help" aria-label="操作提示">
+          <div class="sidebar__kicker">操作提示</div>
+          <div class="help">
+            <div class="help__row"><span class="kbd">Hover</span> 预览关联</div>
+            <div class="help__row"><span class="kbd">Click</span> 锁定聚焦</div>
+            <div class="help__row"><span class="kbd">Tab</span> 遍历节点</div>
+            <div class="help__row"><span class="kbd">Enter</span> 选中节点</div>
+            <div class="help__row"><span class="kbd">Esc</span> 回到中心/清空</div>
+            <div class="help__row"><span class="kbd">Scroll</span> 缩放 / 拖拽平移</div>
+            <div class="help__row"><span class="kbd">Drag</span> 调整位置</div>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main" id="main" aria-label="知识图谱画布">
+        <div class="main__canvas" id="canvas">
+          <svg class="graph" id="graph" role="img" aria-label="AI Guru 知识图谱"></svg>
+          <div class="tooltip" id="tooltip" role="tooltip" aria-hidden="true"></div>
+        </div>
+      </main>
+    </div>
+
+    <div class="backdrop" data-action="toggle-sidebar" aria-hidden="true"></div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
+

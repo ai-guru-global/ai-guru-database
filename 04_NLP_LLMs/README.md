@@ -58,6 +58,9 @@ flowchart LR
 | 序列模型 (Sequence Models) | 入门 | RNN、LSTM、GRU，理解序列建模的早期方法 | [Sequence_Models/](./Sequence_Models/) |
 | Transformer 革命 (Transformer Revolution) | 进阶 | Self-Attention、多头注意力、位置编码，现代 NLP 核心架构 | [Transformer_Revolution.md](./Transformer_Revolution/Transformer_Revolution.md) |
 | 大语言模型架构 (LLM Architectures) | 进阶 | GPT（Decoder-only）、BERT（Encoder-only）、MoE，预训练范式 | [LLM_Architectures.md](./LLM_Architectures/LLM_Architectures.md) |
+| **推理模型 2026 (Reasoning Models)** | **2026 新增** | **o1/o3 推理模型、思维链进化、Test-Time Compute Scaling** | **[Reasoning_Models_2026.md](./LLM_Architectures/Reasoning_Models_2026.md)** |
+| **长上下文模型 2026 (Long Context)** | **2026 新增** | **100K-1M Token处理、稀疏注意力、KV Cache优化** | **[Long_Context_Models_2026.md](./Long_Context_Models_2026.md)** |
+| **多模态模型 (Multimodal)** | 进阶 | **视觉-语言统一架构、GPT-4V/Gemini/LLaVA** | **[Multimodal_Architectures_2026.md](./Multimodal_Models/Multimodal_Architectures_2026.md)** |
 | 微调技术 (Fine-tuning Techniques) | 实战 | LoRA、QLoRA、Prefix Tuning，参数高效微调方法 | [Fine_tuning_Techniques.md](./Fine_tuning_Techniques/Fine_tuning_Techniques.md) |
 | 提示词工程 (Prompt Engineering) | 实战 | Few-shot、Chain-of-Thought、提示优化，零代码调用 LLM | [Prompt_Engineering/](./Prompt_Engineering/) |
 
@@ -81,5 +84,12 @@ flowchart LR
 - **RLHF (Reinforcement Learning from Human Feedback)**: 基于人类偏好对齐模型输出
 - **提示词工程 (Prompt Engineering)**: 设计输入文本引导模型输出，无需微调
 
+### 推理模型 (2026新增)
+- **Chain-of-Thought (CoT)**: 思维链提示，诱导模型展示推理过程
+- **Test-Time Compute Scaling**: 测试时计算扩展，动态分配推理计算资源
+- **o1/o3**: OpenAI推理模型，通过RL训练内部推理token
+- **Quiet Thinking**: 安静思考模式，推理过程不输出给用户
+- **Reasoning RL**: 推理强化学习，训练模型"如何思考"而非"思考什么"
+
 ---
-*Last updated: 2026-02-10*
+*Last updated: 2026-04-10* - 新增推理模型 2026 专题

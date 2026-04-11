@@ -257,6 +257,7 @@ Latest tech trends and industry insights:
 - [PEFT Fine-tuning 2026](./04_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/) - LoRA/QLoRA/DoRA, 70B on single GPU
 - [Advanced RAG](./07_AI_Engineering/RAG_Advanced_2026/) - Hybrid search, Agentic RAG
 - [AI Coding Assistants](./07_AI_Engineering/AI_Coding_Assistants/) - Cursor, Claude Code, Devin
+- [Vibe Coding Methodology](./07_AI_Engineering/Vibe_Coding/) - Natural language driven dev, DGRV loop, production practices
 - [Embodied AI 2026](./06_Reinforcement_Learning/Robotics_Embodied_AI/) - VLA models, humanoid robots
 - [World Models 2026](./03_Deep_Learning/World_Models/) - JEPA/V-JEPA, LeCun's AGI path
 - [AI Video Generation](./05_Computer_Vision/Video_Generation/) - Veo3, Kling 3.0, post-Sora

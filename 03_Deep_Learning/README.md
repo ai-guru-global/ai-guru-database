@@ -25,6 +25,7 @@
 |------|------|------|---------|
 | 神经网络核心 (Neural Network Core) | 入门 | 激活函数、反向传播、BatchNorm/LayerNorm，理解网络训练机制 | [Neural_Network_Core.md](./Neural_Network_Core/Neural_Network_Core.md) |
 | 优化与正则化 (Optimization) | 进阶 | AdamW、学习率调度、Dropout/Weight Decay，稳定训练与防过拟合 | [Optimization.md](./Optimization/Optimization.md) |
+| **状态空间模型 2026 (SSM)** | **2026 新增** | **Mamba/S4/RetNet、O(n)线性复杂度、Transformer挑战者** | **[State_Space_Models_2026.md](./State_Space_Models_2026.md)** |
 | 世界模型 (World Models) | 前沿 | JEPA/V-JEPA/LeJEPA，自监督世界建模，通往AGI路径 | [World_Models_2026.md](./World_Models/World_Models_2026.md) |
 
 ## 前置知识 (Prerequisites)

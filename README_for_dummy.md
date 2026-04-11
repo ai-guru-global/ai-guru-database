@@ -112,6 +112,7 @@
 | RAG 系统 | 怎么让 AI "开卷考试"，查资料再回答 | [点这里](./07_AI_Engineering/RAG_Systems/RAG_Systems_for_dummy.md) |
 | MLOps 流水线 | 怎么像工厂流水线一样管理 AI 项目 | [点这里](./07_AI_Engineering/MLOps_Pipeline/MLOps_Pipeline_for_dummy.md) |
 | 模型评估 | 怎么判断一个 AI 到底好不好用 | [点这里](./07_AI_Engineering/Model_Evaluation/Model_Evaluation_for_dummy.md) |
+| Vibe Coding | 怎么用"说人话"的方式让 AI 帮你写代码 | [点这里](./07_AI_Engineering/Vibe_Coding/Vibe_Coding_for_dummy.md) |
 
 ---
 

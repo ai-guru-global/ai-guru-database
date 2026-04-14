@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📖 查看文档
+    url: https://github.com/your-org/ai-guru-knowledge-base#readme
+    about: 查看项目文档，了解项目结构和使用方法
+  - name: 💬 讨论区
+    url: https://github.com/your-org/ai-guru-knowledge-base/discussions
+    about: 提出问题、分享想法、参与讨论

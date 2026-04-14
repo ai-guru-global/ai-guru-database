@@ -1,0 +1,337 @@
+{
+  "metadata": {
+    "category": "k8s_qa_benchmark",
+    "description": "Kubernetes 问答能力评估测试集",
+    "total": 40,
+    "dimensions": {
+      "basic_qa": "基础知识问答准确率 (30%)",
+      "config_writing": "配置编写和调试能力 (25%)",
+      "cluster_ops": "集群管理和运维场景 (25%)",
+      "multi_turn": "多轮对话上下文理解 (20%)"
+    },
+    "version": "2026 Q2",
+    "target_agents": ["qwen-agent", "kimi-agent", "minimax-agent"]
+  },
+  "questions": [
+    {
+      "id": "kq001",
+      "question": "请解释 Kubernetes 控制平面的核心组件及其各自的职责。",
+      "expected_answer": "kube-apiserver: API网关和认证授权。etcd: 分布式KV存储集群状态。kube-scheduler: Pod调度到合适节点。kube-controller-manager: 运行控制器循环(Deployment/ReplicaSet/Node等)。cloud-controller-manager: 云厂商集成。",
+      "category": "basic_qa",
+      "difficulty": "easy",
+      "keywords": ["控制平面", "apiserver", "etcd", "scheduler", "controller-manager"]
+    },
+    {
+      "id": "kq002",
+      "question": "什么是 Kubernetes Operator？请解释 Operator 的设计模式和工作原理。",
+      "expected_answer": "Operator 是 CRD + 自定义 Controller 的模式，将人工运维知识编码为自动化程序。通过 watch-reconcile 循环持续将实际状态调谐到期望状态。使用 Operator SDK/kubebuilder 开发。经典案例：etcd-operator、prometheus-operator。",
+      "category": "basic_qa",
+      "difficulty": "medium",
+      "keywords": ["Operator", "CRD", "Controller", "reconcile", "自动化运维"]
+    },
+    {
+      "id": "kq003",
+      "question": "Kubernetes 中 Pod 的 QoS 类别是如何确定的？不同 QoS 类别在节点资源不足时的行为有何不同？",
+      "expected_answer": "Guaranteed: requests=limits。Burstable: 设置了requests但不等于limits。BestEffort: 无requests/limits。资源不足时驱逐顺序: BestEffort→Burstable(按超出比例)→Guaranteed。OOM Score计算基于QoS类别和内存使用比例。",
+      "category": "basic_qa",
+      "difficulty": "medium",
+      "keywords": ["QoS", "Guaranteed", "Burstable", "BestEffort", "OOM", "驱逐"]
+    },
+    {
+      "id": "kq004",
+      "question": "请解释 Kubernetes 中的 Admission Controller 工作流程，包括 Mutating 和 Validating 的执行顺序。",
+      "expected_answer": "API请求流程: Authentication → Authorization → Mutating Admission → Object Schema Validation → Validating Admission → Persist to etcd。Mutating先执行可修改请求，Validating后执行只能拒绝。内置Admission Controller: LimitRanger、ResourceQuota、PodSecurity、DefaultStorageClass等。",
+      "category": "basic_qa",
+      "difficulty": "hard",
+      "keywords": ["Admission Controller", "Mutating", "Validating", "Webhook", "API请求流程"]
+    },
+    {
+      "id": "kq005",
+      "question": "如何理解 Kubernetes 的声明式 API 和控制器模式？与命令式管理有什么本质区别？",
+      "expected_answer": "声明式: 用户定义期望状态(YAML)，系统持续调谐实际状态到期望状态。命令式: 用户直接执行操作(kubectl run)。控制器模式核心: watch(监听变化) → diff(比较差异) → act(执行操作)。声明式优势: 幂等、可审计、GitOps友好、自愈。",
+      "category": "basic_qa",
+      "difficulty": "easy",
+      "keywords": ["声明式", "命令式", "控制器模式", "调谐", "GitOps"]
+    },
+    {
+      "id": "kq006",
+      "question": "CNI 插件在 Kubernetes 网络模型中的角色是什么？K8s 的网络模型有哪些核心要求？",
+      "expected_answer": "K8s网络模型要求: 1.每个Pod有独立IP。2.Pod间可直接通信(无NAT)。3.节点和Pod可直接通信。4.Pod看到的自身IP与其他Pod看到的一致。CNI插件负责为Pod配置网络接口和路由。主流CNI: Calico(BGP/eBPF)、Cilium(eBPF)、Flannel(overlay)。",
+      "category": "basic_qa",
+      "difficulty": "medium",
+      "keywords": ["CNI", "网络模型", "Pod IP", "Calico", "Cilium"]
+    },
+    {
+      "id": "kq007",
+      "question": "请解释 etcd 在 Kubernetes 中的角色，以及 etcd 的 Raft 一致性算法如何保证数据一致性。",
+      "expected_answer": "etcd是K8s唯一的持久化存储，保存所有集群状态。Raft算法: Leader选举(多数票)→日志复制(Leader追加→Follower确认→提交)→安全性(已提交日志不丢失)。奇数节点(3或5)容忍少数故障。性能关键: SSD磁盘、独立部署、定期压缩(compaction)。",
+      "category": "basic_qa",
+      "difficulty": "hard",
+      "keywords": ["etcd", "Raft", "一致性", "Leader选举", "日志复制"]
+    },
+    {
+      "id": "kq008",
+      "question": "请写一个 Kubernetes Deployment YAML，部署一个 Nginx 应用，要求：3副本、资源限制、健康检查、滚动更新策略。",
+      "expected_answer": "apiVersion: apps/v1\nkind: Deployment\nmetadata:\n  name: nginx-app\nspec:\n  replicas: 3\n  strategy:\n    type: RollingUpdate\n    rollingUpdate:\n      maxSurge: 1\n      maxUnavailable: 0\n  selector:\n    matchLabels:\n      app: nginx\n  template:\n    metadata:\n      labels:\n        app: nginx\n    spec:\n      containers:\n      - name: nginx\n        image: nginx:1.27\n        ports:\n        - containerPort: 80\n        resources:\n          requests:\n            cpu: 100m\n            memory: 128Mi\n          limits:\n            cpu: 500m\n            memory: 256Mi\n        livenessProbe:\n          httpGet:\n            path: /\n            port: 80\n          initialDelaySeconds: 5\n        readinessProbe:\n          httpGet:\n            path: /\n            port: 80\n          initialDelaySeconds: 3",
+      "category": "config_writing",
+      "difficulty": "easy",
+      "keywords": ["Deployment", "YAML", "replicas", "resources", "probe", "滚动更新"]
+    },
+    {
+      "id": "kq009",
+      "question": "请写一个 NetworkPolicy YAML，实现以下需求：只允许来自 namespace 'frontend' 且带有 label 'role=web' 的 Pod 访问目标 Pod 的 80 端口。",
+      "expected_answer": "apiVersion: networking.k8s.io/v1\nkind: NetworkPolicy\nmetadata:\n  name: allow-frontend-web\nspec:\n  podSelector:\n    matchLabels:\n      app: backend\n  policyTypes:\n  - Ingress\n  ingress:\n  - from:\n    - namespaceSelector:\n        matchLabels:\n          name: frontend\n      podSelector:\n        matchLabels:\n          role: web\n    ports:\n    - protocol: TCP\n      port: 80",
+      "category": "config_writing",
+      "difficulty": "hard",
+      "keywords": ["NetworkPolicy", "namespaceSelector", "podSelector", "ingress", "YAML"]
+    },
+    {
+      "id": "kq010",
+      "question": "请写一个 HPA YAML，根据 CPU 使用率（目标50%）和自定义指标（请求QPS > 1000）自动扩缩容，副本范围 2-20。",
+      "expected_answer": "apiVersion: autoscaling/v2\nkind: HorizontalPodAutoscaler\nmetadata:\n  name: app-hpa\nspec:\n  scaleTargetRef:\n    apiVersion: apps/v1\n    kind: Deployment\n    name: my-app\n  minReplicas: 2\n  maxReplicas: 20\n  metrics:\n  - type: Resource\n    resource:\n      name: cpu\n      target:\n        type: Utilization\n        averageUtilization: 50\n  - type: Pods\n    pods:\n      metric:\n        name: http_requests_per_second\n      target:\n        type: AverageValue\n        averageValue: 1000\n  behavior:\n    scaleUp:\n      stabilizationWindowSeconds: 60\n    scaleDown:\n      stabilizationWindowSeconds: 300",
+      "category": "config_writing",
+      "difficulty": "hard",
+      "keywords": ["HPA", "autoscaling/v2", "CPU", "自定义指标", "behavior"]
+    },
+    {
+      "id": "kq011",
+      "question": "以下 Pod YAML 有什么问题？请找出错误并给出修复方案：\n```yaml\napiVersion: v1\nkind: Pod\nmetadata:\n  name: test-pod\nspec:\n  container:\n    - name: app\n      image: nginx\n      port:\n        - containerPort: 80\n      resource:\n        limit:\n          cpu: 1\n          memory: 512Mi\n```",
+      "expected_answer": "错误1: 'container' 应为 'containers'(复数)。错误2: 'port' 应为 'ports'(复数)。错误3: 'resource' 应为 'resources'(复数)。错误4: 'limit' 应为 'limits'(复数)。错误5: 缺少 resources.requests 配置(最佳实践)。修复后所有字段名使用正确的复数形式。",
+      "category": "config_writing",
+      "difficulty": "medium",
+      "keywords": ["YAML调试", "错误修复", "Pod spec", "字段名"]
+    },
+    {
+      "id": "kq012",
+      "question": "请写一个 StatefulSet YAML 部署 3 节点 Redis 集群，要求持久化存储、headless Service、有序启动。",
+      "expected_answer": "需要: 1. Headless Service (clusterIP: None)。2. StatefulSet with volumeClaimTemplates。3. Pod anti-affinity分散。关键配置: serviceName 指向 headless service，volumeClaimTemplates 定义 PVC 模板(storage: 10Gi)，podManagementPolicy: OrderedReady(默认)确保有序启动。",
+      "category": "config_writing",
+      "difficulty": "hard",
+      "keywords": ["StatefulSet", "Redis", "headless Service", "volumeClaimTemplates", "持久化"]
+    },
+    {
+      "id": "kq013",
+      "question": "请写一个 Ingress YAML 实现: 域名 app.example.com 的 /api 路径转发到 backend-svc:8080，/ 路径转发到 frontend-svc:3000，并配置 TLS。",
+      "expected_answer": "apiVersion: networking.k8s.io/v1\nkind: Ingress\nmetadata:\n  name: app-ingress\n  annotations:\n    nginx.ingress.kubernetes.io/rewrite-target: /\nspec:\n  tls:\n  - hosts:\n    - app.example.com\n    secretName: app-tls-secret\n  rules:\n  - host: app.example.com\n    http:\n      paths:\n      - path: /api\n        pathType: Prefix\n        backend:\n          service:\n            name: backend-svc\n            port:\n              number: 8080\n      - path: /\n        pathType: Prefix\n        backend:\n          service:\n            name: frontend-svc\n            port:\n              number: 3000",
+      "category": "config_writing",
+      "difficulty": "medium",
+      "keywords": ["Ingress", "TLS", "路径转发", "rewrite-target", "域名"]
+    },
+    {
+      "id": "kq014",
+      "question": "请写一个 RBAC 配置，创建一个只能在 'dev' 命名空间中查看和列出 Pod、Service、Deployment 的 ServiceAccount。",
+      "expected_answer": "需要3个资源: 1. ServiceAccount(ns: dev)。2. Role(ns: dev, resources: pods/services/deployments, verbs: get/list/watch)。3. RoleBinding绑定SA和Role。注意使用 apiGroups: [''] 对应核心 API，['apps'] 对应 Deployment。",
+      "category": "config_writing",
+      "difficulty": "medium",
+      "keywords": ["RBAC", "Role", "RoleBinding", "ServiceAccount", "权限"]
+    },
+    {
+      "id": "kq015",
+      "question": "写一个 CronJob YAML，每天凌晨2点执行数据库备份脚本，保留最近7次成功记录，并发策略为 Forbid。",
+      "expected_answer": "apiVersion: batch/v1\nkind: CronJob\nmetadata:\n  name: db-backup\nspec:\n  schedule: '0 2 * * *'\n  concurrencyPolicy: Forbid\n  successfulJobsHistoryLimit: 7\n  failedJobsHistoryLimit: 3\n  jobTemplate:\n    spec:\n      backoffLimit: 3\n      template:\n        spec:\n          containers:\n          - name: backup\n            image: backup-tool:latest\n            command: ['/bin/sh', '-c', 'backup.sh']\n          restartPolicy: OnFailure",
+      "category": "config_writing",
+      "difficulty": "medium",
+      "keywords": ["CronJob", "schedule", "concurrencyPolicy", "Forbid", "备份"]
+    },
+    {
+      "id": "kq016",
+      "question": "生产环境中一个 Pod 频繁被 OOMKilled，如何排查和解决？",
+      "expected_answer": "排查: 1. kubectl describe pod 查看 Last State (OOMKilled, Exit Code 137)。2. kubectl top pod 查看实际内存使用。3. 检查 resources.limits.memory 是否过低。4. 检查应用是否有内存泄漏(Java堆/Go goroutine/Python对象)。解决: 调整 limits、优化应用内存使用、配置 JVM -Xmx、使用 VPA 自动调整。",
+      "category": "cluster_ops",
+      "difficulty": "medium",
+      "keywords": ["OOMKilled", "内存", "排查", "resources.limits", "内存泄漏"]
+    },
+    {
+      "id": "kq017",
+      "question": "如何处理 Kubernetes 集群中的证书过期问题？kubeadm 管理的集群证书轮换步骤是什么？",
+      "expected_answer": "检查: kubeadm certs check-expiration。轮换: 1. kubeadm certs renew all (续期所有证书)。2. 重启控制平面组件(apiserver/controller-manager/scheduler)。3. 更新 kubeconfig 文件。4. kubelet 证书自动轮换(--rotate-certificates)。预防: 设置监控告警提前30天通知，K8s 1.24+ kubelet 自动续期。",
+      "category": "cluster_ops",
+      "difficulty": "hard",
+      "keywords": ["证书过期", "kubeadm certs", "轮换", "kubeconfig", "自动续期"]
+    },
+    {
+      "id": "kq018",
+      "question": "如何对 Kubernetes 节点进行安全维护（如内核升级）而不影响业务？",
+      "expected_answer": "步骤: 1. kubectl cordon node (标记不可调度)。2. kubectl drain node --ignore-daemonsets --delete-emptydir-data (驱逐Pod)。3. 检查 PDB 是否满足。4. 执行维护(升级内核/补丁)。5. 重启节点。6. 验证 kubelet/containerd 正常。7. kubectl uncordon node (恢复调度)。建议逐个节点操作，保留冗余。",
+      "category": "cluster_ops",
+      "difficulty": "medium",
+      "keywords": ["cordon", "drain", "uncordon", "节点维护", "PDB"]
+    },
+    {
+      "id": "kq019",
+      "question": "Kubernetes 集群中发现 API Server 响应变慢，如何排查性能瓶颈？",
+      "expected_answer": "排查: 1. 检查 API Server metrics (apiserver_request_duration_seconds, apiserver_current_inflight_requests)。2. 检查 etcd 延迟 (etcd_request_duration_seconds)。3. 审计日志分析大量请求来源。4. 检查是否有 list-all-namespaces 操作。5. 检查 webhook 延迟。6. API Priority and Fairness 配置。优化: etcd SSD、限流、减少 watch 数量、启用 API Server 缓存。",
+      "category": "cluster_ops",
+      "difficulty": "hard",
+      "keywords": ["API Server", "性能", "etcd延迟", "限流", "审计日志"]
+    },
+    {
+      "id": "kq020",
+      "question": "如何实现 Kubernetes 集群的灾难恢复方案？",
+      "expected_answer": "方案: 1. etcd 定期备份(每小时snapshot)。2. 集群配置GitOps(ArgoCD/Flux)。3. 多可用区部署控制平面。4. Velero备份工作负载和PV。5. 文档化恢复流程。恢复步骤: 重建集群 → 恢复etcd → 验证控制平面 → 恢复工作负载 → 验证应用。RTO/RPO目标指导备份频率。",
+      "category": "cluster_ops",
+      "difficulty": "hard",
+      "keywords": ["灾难恢复", "etcd备份", "Velero", "GitOps", "RTO/RPO"]
+    },
+    {
+      "id": "kq021",
+      "question": "Service 的 Endpoints 为空导致服务不通，如何排查？",
+      "expected_answer": "排查: 1. kubectl get endpoints <svc> 确认为空。2. 对比 Service selector 和 Pod labels 是否匹配。3. kubectl get pods -l <selector> 确认Pod存在且Running。4. 检查 Pod readinessProbe 是否通过(未就绪的Pod不加入Endpoints)。5. 检查目标端口是否匹配(targetPort vs containerPort)。6. 检查是否跨namespace引用。",
+      "category": "cluster_ops",
+      "difficulty": "medium",
+      "keywords": ["Endpoints", "Service", "selector", "readinessProbe", "排查"]
+    },
+    {
+      "id": "kq022",
+      "question": "如何使用 kubectl 进行高级调试？请列出5个常用的调试命令和场景。",
+      "expected_answer": "1. kubectl debug pod/<name> -it --image=busybox --target=<container> (附加调试容器)。2. kubectl logs <pod> --previous (查看前次崩溃日志)。3. kubectl exec -it <pod> -- /bin/sh (进入容器)。4. kubectl get events --sort-by=.lastTimestamp (查看事件)。5. kubectl auth can-i create pods --as=system:serviceaccount:ns:sa (权限测试)。6. kubectl diff -f manifest.yaml (预览变更)。",
+      "category": "cluster_ops",
+      "difficulty": "easy",
+      "keywords": ["kubectl", "debug", "logs", "exec", "events", "调试"]
+    },
+    {
+      "id": "kq023",
+      "question": "如何为 Kubernetes 集群配置日志收集方案？EFK/ELK 和 Loki 方案的对比是什么？",
+      "expected_answer": "方案对比: EFK(Elasticsearch+Fluentd+Kibana)功能强大但资源消耗大。Loki(+Promtail+Grafana)轻量级只索引标签不索引日志内容，存储成本低。架构: DaemonSet收集节点日志 → 聚合/过滤 → 存储 → 可视化。推荐: 大规模用EFK/OpenSearch，中小规模或已有Grafana用Loki。",
+      "category": "cluster_ops",
+      "difficulty": "medium",
+      "keywords": ["日志收集", "EFK", "Loki", "Fluentd", "Promtail"]
+    },
+    {
+      "id": "kq024",
+      "question": "请描述从 kubectl apply 一个 Deployment 到 Pod 真正运行起来的完整流程。",
+      "expected_answer": "流程: 1. kubectl发送POST到apiserver。2. Authentication/Authorization。3. Admission Controller处理。4. 写入etcd。5. Deployment Controller检测到新Deployment，创建ReplicaSet。6. ReplicaSet Controller创建Pod对象。7. Scheduler watch到未调度Pod，选择合适节点。8. kubelet watch到新Pod，通过CRI拉取镜像、创建容器。9. CNI配置网络。10. 运行健康检查。11. readinessProbe通过后加入Service Endpoints。",
+      "category": "basic_qa",
+      "difficulty": "hard",
+      "keywords": ["完整流程", "Controller", "Scheduler", "kubelet", "CRI", "CNI"]
+    },
+    {
+      "id": "kq025",
+      "question": "[多轮对话-轮次1] 我有一个运行在 Kubernetes 上的微服务应用，最近用户反馈访问偶尔超时。应用是 3 副本的 Deployment，通过 Service 暴露。请帮我分析可能的原因。",
+      "expected_answer": "可能原因: 1.Pod资源不足(CPU throttling/OOM)。2.部分Pod不健康但readinessProbe未正确配置。3.Service负载不均(session affinity问题)。4.网络问题(CNI/kube-proxy规则)。5.后端依赖慢(DB/外部API)。6.节点资源竞争。建议先: kubectl top pods查看资源，kubectl describe svc查看endpoints，kubectl logs检查错误。",
+      "category": "multi_turn",
+      "difficulty": "medium",
+      "keywords": ["超时", "微服务", "排查", "多轮对话", "Deployment"]
+    },
+    {
+      "id": "kq026",
+      "question": "[多轮对话-轮次2] 接上一个问题，我检查了 kubectl top pods 发现 3 个 Pod 的 CPU 使用都接近 limits（设置的 500m），内存正常。Readiness Probe 配置的是 HTTP GET /health，间隔 10 秒。请问下一步怎么排查？",
+      "expected_answer": "CPU接近limits说明存在CPU throttling。下一步: 1.提高CPU limits(如1000m)或优化应用。2.检查HPA是否配置(应自动扩容)。3.kubectl describe pod查看throttling事件。4.检查/health端点在高负载下是否变慢(导致readiness失败被摘除)。5.考虑将readinessProbe的timeout和failureThreshold适当调大。6.检查是否需要增加副本数。",
+      "category": "multi_turn",
+      "difficulty": "medium",
+      "keywords": ["CPU throttling", "limits", "上下文理解", "HPA", "readinessProbe"]
+    },
+    {
+      "id": "kq027",
+      "question": "[多轮对话-轮次3] 好的，我把 CPU limits 提高到了 1000m 并配置了 HPA（目标 CPU 60%，min=3, max=10）。现在超时问题缓解了，但 HPA 经常在 3-8 之间频繁扩缩容。如何解决这个抖动问题？",
+      "expected_answer": "HPA抖动解决方案: 1.设置stabilizationWindowSeconds(scaleDown建议300-600秒，scaleUp建议60秒)。2.使用behavior配置限制缩容速率(policies: percent/pods per period)。3.考虑使用多指标(CPU+自定义指标如QPS)避免单一指标波动。4.调整目标值(如CPU 70%给更大缓冲)。5.检查指标采集间隔是否过短。YAML示例中配置behavior字段。",
+      "category": "multi_turn",
+      "difficulty": "hard",
+      "keywords": ["HPA抖动", "stabilizationWindow", "behavior", "缩容策略", "多指标"]
+    },
+    {
+      "id": "kq028",
+      "question": "[多轮对话-轮次1] 我需要在 Kubernetes 上部署一个 PostgreSQL 高可用集群，有什么推荐方案？",
+      "expected_answer": "推荐方案: 1.CloudNativePG Operator(CNCF项目，原生K8s PostgreSQL管理)。2.Zalando Postgres Operator。3.CrunchyData PGO。CloudNativePG推荐: 支持自动故障转移、备份(Barman)、连接池、监控。使用StatefulSet+PVC持久化。部署: 1.安装operator。2.创建Cluster CR。3.配置备份到S3/OSS。",
+      "category": "multi_turn",
+      "difficulty": "medium",
+      "keywords": ["PostgreSQL", "高可用", "Operator", "CloudNativePG", "StatefulSet"]
+    },
+    {
+      "id": "kq029",
+      "question": "[多轮对话-轮次2] 接上文，我选择了 CloudNativePG。现在需要配置自动备份到阿里云 OSS，以及如何实现跨可用区高可用？请给出具体配置。",
+      "expected_answer": "备份配置: 在Cluster CR中设置 backup.barmanObjectStore 指向OSS(s3Protocol, endpoint: oss-cn-hangzhou.aliyuncs.com, bucket, credentials from Secret)。跨AZ: 使用 topologySpreadConstraints 配置 maxSkew:1, topologyKey: topology.kubernetes.io/zone。或使用 affinity.podAntiAffinity 确保实例分散。配置 replication.instances 数量(建议3)。",
+      "category": "multi_turn",
+      "difficulty": "hard",
+      "keywords": ["CloudNativePG", "OSS备份", "跨可用区", "topologySpread", "上下文连贯"]
+    },
+    {
+      "id": "kq030",
+      "question": "[多轮对话-轮次1] 我们的 K8s 集群需要实现 GitOps，请对比 ArgoCD 和 Flux 的优缺点。",
+      "expected_answer": "ArgoCD: 优秀的Web UI、Application CR管理、多集群支持、SSO集成、回滚可视化。Flux: 更轻量、原生Git集成、Kustomize/Helm支持好、组件可独立使用。ArgoCD适合: 需要UI和多团队管理。Flux适合: 简洁、纯声明式、CI/CD集成。两者都支持: 自动同步、健康检查、通知。",
+      "category": "multi_turn",
+      "difficulty": "medium",
+      "keywords": ["GitOps", "ArgoCD", "Flux", "对比", "持续部署"]
+    },
+    {
+      "id": "kq031",
+      "question": "[多轮对话-轮次2] 我们选择了 ArgoCD。请帮我设计一个 ArgoCD 的多环境（dev/staging/prod）部署策略，包括目录结构和同步策略。",
+      "expected_answer": "目录结构: base/(公共配置) + overlays/dev|staging|prod(环境差异, Kustomize)。ArgoCD配置: 每个环境一个Application CR，指向对应overlay。同步策略: dev自动同步(automated.prune/selfHeal)，staging手动同步+自动diff，prod手动同步+需审批。ApplicationSet可自动生成多环境Application。通知: 配置Slack webhook通知同步状态。",
+      "category": "multi_turn",
+      "difficulty": "hard",
+      "keywords": ["ArgoCD", "多环境", "Kustomize", "ApplicationSet", "同步策略"]
+    },
+    {
+      "id": "kq032",
+      "question": "请解释 Kubernetes 中 Pod Security Standards 的三个级别及其实施方式。",
+      "expected_answer": "三个级别: 1.Privileged(无限制)。2.Baseline(防止已知提权，限制hostNetwork/hostPID/privileged等)。3.Restricted(最严格，要求non-root/只读rootfs/drop ALL capabilities/seccompProfile)。实施: Pod Security Admission(内置，K8s 1.25+ GA)，通过namespace标签配置: pod-security.kubernetes.io/enforce=restricted。三种模式: enforce(拒绝)/audit(记录)/warn(警告)。",
+      "category": "basic_qa",
+      "difficulty": "hard",
+      "keywords": ["Pod Security Standards", "Privileged", "Baseline", "Restricted", "Admission"]
+    },
+    {
+      "id": "kq033",
+      "question": "如何在不停机的情况下将 Kubernetes 应用从单副本迁移到多副本高可用架构？",
+      "expected_answer": "步骤: 1.确保应用无状态(Session外置到Redis)。2.修改Deployment replicas从1到3。3.配置Pod Anti-Affinity分散到不同节点。4.配置PDB(minAvailable:1)。5.设置合理的readinessProbe。6.配置HPA自动扩缩。7.验证Service负载均衡。8.配置Topology Spread跨AZ。注意: 如有本地存储需迁移到共享存储(PV)或对象存储。",
+      "category": "cluster_ops",
+      "difficulty": "medium",
+      "keywords": ["高可用", "多副本", "不停机", "Anti-Affinity", "PDB"]
+    },
+    {
+      "id": "kq034",
+      "question": "Kubernetes 中如何实现零信任网络安全模型？",
+      "expected_answer": "实施: 1.默认拒绝所有流量(deny-all NetworkPolicy)。2.按需开放(白名单NetworkPolicy)。3.服务网格mTLS(Istio/Linkerd)。4.Pod Security Standards Restricted。5.RBAC最小权限。6.ServiceAccount Token自动轮换。7.Cilium NetworkPolicy L7过滤。8.OPA/Kyverno策略引擎。9.镜像签名验证(Sigstore/cosign)。10.运行时安全(Falco)。",
+      "category": "cluster_ops",
+      "difficulty": "hard",
+      "keywords": ["零信任", "NetworkPolicy", "mTLS", "Istio", "最小权限"]
+    },
+    {
+      "id": "kq035",
+      "question": "请写一个完整的 Pod Security 配置（securityContext），实现最安全的 Pod 运行方式。",
+      "expected_answer": "securityContext(Pod级): runAsNonRoot:true, runAsUser:1000, fsGroup:1000, seccompProfile:type:RuntimeDefault。securityContext(容器级): allowPrivilegeEscalation:false, readOnlyRootFilesystem:true, capabilities:drop:[ALL], runAsNonRoot:true。配合: automountServiceAccountToken:false(如不需要API访问)。",
+      "category": "config_writing",
+      "difficulty": "hard",
+      "keywords": ["securityContext", "runAsNonRoot", "readOnlyRootFilesystem", "seccomp", "capabilities"]
+    },
+    {
+      "id": "kq036",
+      "question": "如何优化 Kubernetes 集群的资源利用率？请给出具体的策略和工具。",
+      "expected_answer": "策略: 1.VPA自动调整requests/limits。2.合理设置requests(基于实际使用)。3.使用Priority/Preemption(低优先级批处理任务)。4.Cluster Autoscaler节点级扩缩。5.Karpenter替代CA(更快更灵活)。工具: kubectl-resource-recommendations、Goldilocks(VPA推荐可视化)、kubecost(成本分析)。目标: requests接近实际使用，避免overcommit和undercommit。",
+      "category": "cluster_ops",
+      "difficulty": "medium",
+      "keywords": ["资源优化", "VPA", "Cluster Autoscaler", "Karpenter", "kubecost"]
+    },
+    {
+      "id": "kq037",
+      "question": "Kubernetes Service Mesh（如 Istio）的核心功能和架构是什么？何时应该使用？",
+      "expected_answer": "核心功能: 流量管理(路由/重试/超时/熔断)、安全(mTLS/授权)、可观测性(分布式追踪/指标/日志)。架构: 数据平面(Envoy sidecar)+ 控制平面(istiod)。适用场景: 微服务>10个、需要细粒度流量控制、安全零信任、灰度发布。不适用: 简单应用、延迟敏感(<1ms overhead)。替代: Cilium Service Mesh(无sidecar)、Linkerd(更轻量)。",
+      "category": "basic_qa",
+      "difficulty": "medium",
+      "keywords": ["Service Mesh", "Istio", "Envoy", "mTLS", "流量管理"]
+    },
+    {
+      "id": "kq038",
+      "question": "在 Kubernetes 中如何管理多租户隔离？",
+      "expected_answer": "隔离层次: 1.Namespace级(软隔离): ResourceQuota+LimitRange+NetworkPolicy+RBAC。2.节点级(硬隔离): Taint/Toleration+NodeAffinity专用节点。3.集群级(完全隔离): 独立集群。增强: OPA/Kyverno策略引擎、Hierarchical Namespaces(HNC)、vcluster(虚拟集群)、Capsule(多租户operator)。网络: Cilium集群网格策略。",
+      "category": "basic_qa",
+      "difficulty": "hard",
+      "keywords": ["多租户", "隔离", "Namespace", "vcluster", "Capsule"]
+    },
+    {
+      "id": "kq039",
+      "question": "Kubernetes 中 Finalizer 的机制是什么？如何利用 Finalizer 实现优雅的资源清理？",
+      "expected_answer": "Finalizer是metadata.finalizers中的字符串标记。删除流程: 1.用户发起删除。2.API Server设置deletionTimestamp(而非立即删除)。3.Controller检测到deletionTimestamp，执行清理逻辑。4.移除finalizer。5.所有finalizer移除后对象才真正删除。用途: 清理外部资源(云资源/数据库)、级联删除自定义关联、审计记录。注意: finalizer卡住会导致资源无法删除。",
+      "category": "basic_qa",
+      "difficulty": "hard",
+      "keywords": ["Finalizer", "deletionTimestamp", "资源清理", "级联删除"]
+    },
+    {
+      "id": "kq040",
+      "question": "请对比 Kubernetes 的几种部署工具: kubeadm、k3s、kind、minikube 的特点和适用场景。",
+      "expected_answer": "kubeadm: 生产级标准部署工具，适合自建集群。k3s: 轻量级K8s(单binary)，适合边缘/IoT/开发，内置SQLite替代etcd。kind: K8s in Docker，适合CI/CD和本地测试。minikube: 单节点本地开发环境，支持多种driver(Docker/VM)。选择: 生产用kubeadm/托管服务，开发用kind/minikube，边缘用k3s。",
+      "category": "basic_qa",
+      "difficulty": "easy",
+      "keywords": ["kubeadm", "k3s", "kind", "minikube", "部署工具"]
+    }
+  ]
+}

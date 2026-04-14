@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, BookOpen, Search, Zap, Shield, Globe, Code } from "lucide-react";
+import { ArrowRight, BookOpen, Search, Zap, Shield, Globe, Code, Trophy } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -66,6 +66,12 @@ export function HomePage() {
           </Button>
           <Button variant="outline" size="lg" asChild>
             <Link to="/search">Search Docs</Link>
+          </Button>
+          <Button variant="outline" size="lg" asChild>
+            <Link to="/leaderboard">
+              <Trophy className="mr-2 h-4 w-4" />
+              Agent Leaderboard
+            </Link>
           </Button>
         </div>
       </section>

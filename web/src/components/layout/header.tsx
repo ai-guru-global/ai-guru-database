@@ -8,6 +8,8 @@ import { cn } from "@/utils/cn";
 const navItems = [
   { label: "Home", href: "/" },
   { label: "Documentation", href: "/docs" },
+  { label: "K8s Eval", href: "/k8s-evaluation" },
+  { label: "K8s Live", href: "/k8s-real-evaluation" },
   { label: "Search", href: "/search" },
 ];
 

@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:eval": "node eval-server.js",
+    "dev:full": "node -e \"const{spawn}=require('child_process');spawn('npx',['vite'],{stdio:'inherit'});spawn('node',['eval-server.js'],{stdio:'inherit'});\"",
     "build": "tsc && vite build",
     "build:analyze": "tsc && vite build --mode analyze",
     "preview": "vite preview",
@@ -38,6 +40,7 @@
     "@tanstack/react-query": "^5.17.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
+    "express": "^5.2.1",
     "fuse.js": "^7.0.0",
     "i18next": "^23.7.16",
     "i18next-browser-languagedetector": "^7.2.0",

@@ -83,15 +83,16 @@ export default {
       },
       fontFamily: {
         sans: [
-          "Inter",
           "system-ui",
           "-apple-system",
           "BlinkMacSystemFont",
           "Segoe UI",
           "Roboto",
+          "Helvetica Neue",
+          "Arial",
           "sans-serif",
         ],
-        mono: ["JetBrains Mono", "Fira Code", "monospace"],
+        mono: ["SF Mono", "Menlo", "Consolas", "Liberation Mono", "monospace"],
       },
     },
   },

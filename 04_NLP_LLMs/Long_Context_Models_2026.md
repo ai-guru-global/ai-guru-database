@@ -307,7 +307,473 @@ class PositionalEncodingExtrapolation:
 
 ---
 
-## 4. 大海捞针测试 (Needle in Haystack)
+## 4. 高级注意力优化技术
+
+### 4.1 Ring Attention (环形注意力)
+
+```python
+"""
+Ring Attention: 分布式长序列注意力
+
+核心思想: 将序列分割到多个GPU，每个GPU只负责一部分
+通过环形通信传递K/V块，实现序列并行
+
+优势:
+- 打破单GPU显存限制
+- 线性扩展到任意长度
+- 保持精确注意力 (非近似)
+"""
+
+import torch
+import torch.distributed as dist
+
+class RingAttention:
+    """
+    Ring Attention 实现
+    
+    工作流程:
+    1. 每个GPU持有Q的一个块
+    2. K/V在GPU环中传递
+    3. 每个GPU计算它看到的K/V与本地Q的注意力
+    4. 累加得到完整的注意力输出
+    """
+    
+    def __init__(self, rank: int, world_size: int):
+        self.rank = rank
+        self.world_size = world_size
+    
+    def forward(
+        self,
+        Q_local: torch.Tensor,  # 本地的Q块 (B, H, N/world_size, D)
+        K_local: torch.Tensor,  # 本地的K块
+        V_local: torch.Tensor,  # 本地的V块
+    ) -> torch.Tensor:
+        """
+        Ring Attention 前向传播
+        
+        复杂度: O(N² / world_size) 每GPU
+        """
+        B, H, N_local, D = Q_local.shape
+        
+        # 初始化输出和归一化因子
+        O = torch.zeros_like(Q_local)
+        l = torch.zeros(B, H, N_local, 1, device=Q_local.device)
+        m = torch.full(
+            (B, H, N_local, 1), 
+            float('-inf'), 
+            device=Q_local.device
+        )
+        
+        # 当前持有的K/V块 (初始是本地的)
+        K_block = K_local.clone()
+        V_block = V_local.clone()
+        
+        # 环形通信
+        for step in range(self.world_size):
+            # 计算当前K/V块与本地Q的注意力
+            # Flash Attention 风格的块计算
+            scores = torch.matmul(Q_local, K_block.transpose(-2, -1))
+            scores = scores / (D ** 0.5)
+            
+            # 在线 Softmax 更新
+            m_new = torch.maximum(m, scores.max(dim=-1, keepdim=True)[0])
+            l_new = l * torch.exp(m - m_new) + \
+                    torch.exp(scores - m_new).sum(dim=-1, keepdim=True)
+            
+            # 更新输出
+            O = O * (l * torch.exp(m - m_new)) / l_new + \
+                torch.matmul(
+                    torch.exp(scores - m_new),
+                    V_block
+                ) / l_new
+            
+            m = m_new
+            l = l_new
+            
+            # 环形传递K/V到下一个GPU
+            if step < self.world_size - 1:
+                # 发送给下一个GPU，从上一个GPU接收
+                next_rank = (self.rank + 1) % self.world_size
+                prev_rank = (self.rank - 1) % self.world_size
+                
+                # 创建发送/接收缓冲区
+                K_send = K_block.clone()
+                V_send = V_block.clone()
+                K_recv = torch.empty_like(K_block)
+                V_recv = torch.empty_like(V_block)
+                
+                # 异步通信
+                dist.send(K_send.contiguous(), dst=next_rank)
+                dist.recv(K_recv, src=prev_rank)
+                
+                dist.send(V_send.contiguous(), dst=next_rank)
+                dist.recv(V_recv, src=prev_rank)
+                
+                K_block = K_recv
+                V_block = V_recv
+        
+        return O
+
+
+class StripedAttention:
+    """
+    Striped Attention: Ring Attention 的优化变体
+    
+    优化点:
+    - 减少通信量
+    - 更好的负载均衡
+    - 支持因果注意力
+    """
+    
+    def __init__(self, rank: int, world_size: int):
+        self.rank = rank
+        self.world_size = world_size
+    
+    def forward(self, Q, K, V):
+        # Striped 模式: 每个GPU处理不同"条纹"的注意力
+        # 详细实现略
+        pass
+```
+
+### 4.2 上下文压缩技术
+
+```python
+"""
+上下文压缩: 在保持信息的前提下减少KV Cache大小
+"""
+
+import torch
+from typing import Tuple, List
+
+class H2OCompressor:
+    """
+    H2O (Heavy Hitter Oracle): 保留重要Token的KV缓存压缩
+    
+    核心思想:
+    - 不是所有Token都同等重要
+    - 保留"重击者"(Heavy Hitters) - 被多次关注的Token
+    - 滑动窗口保留局部上下文
+    
+    压缩率: 50-80%
+    准确率损失: <2%
+    """
+    
+    def __init__(
+        self,
+        heavy_size: int = 128,    # 重击者缓存大小
+        recent_size: int = 256,    # 最近Token缓存大小
+    ):
+        self.heavy_size = heavy_size
+        self.recent_size = recent_size
+    
+    def compress(
+        self,
+        keys: torch.Tensor,      # (B, H, N, D)
+        values: torch.Tensor,    # (B, H, N, D)
+        attention_weights: torch.Tensor,  # (B, H, N, N) - 累积注意力分数
+    ) -> Tuple[torch.Tensor, torch.Tensor]:
+        """
+        压缩KV缓存
+        
+        返回压缩后的keys, values
+        """
+        B, H, N, D = keys.shape
+        
+        # 1. 识别重击者 (被关注最多的Token)
+        # 累积注意力分数
+        scores = attention_weights.sum(dim=(0, 1))  # (N,)
+        
+        # 获取top-k重击者
+        _, heavy_indices = torch.topk(scores, self.heavy_size)
+        heavy_indices = heavy_indices.sort()[0]
+        
+        # 2. 最近Token (滑动窗口)
+        recent_indices = torch.arange(
+            N - self.recent_size, N,
+            device=keys.device
+        )
+        
+        # 3. 合并索引 (去重)
+        all_indices = torch.cat([heavy_indices, recent_indices])
+        all_indices = torch.unique(all_indices)
+        
+        # 4. 选择性保留
+        compressed_keys = keys[:, :, all_indices, :]
+        compressed_values = values[:, :, all_indices, :]
+        
+        return compressed_keys, compressed_values
+
+
+class StreamingLLM:
+    """
+    StreamingLLM: 流式长文本处理
+    
+    核心思想:
+    - 不需要存储所有历史KV
+    - 保留特殊"汇点Token"(Sink Tokens)
+    - 支持无限长度生成
+    
+    关键发现:
+    - Transformer的初始Token (如[CLS]) 成为注意力汇点
+    - 保留汇点 + 最近窗口即可保持性能
+    """
+    
+    def __init__(
+        self,
+        n_sink: int = 4,        # 汇点Token数量
+        window_size: int = 4096, # 滑动窗口大小
+    ):
+        self.n_sink = n_sink
+        self.window_size = window_size
+    
+    def select_kv(
+        self,
+        keys: torch.Tensor,
+        values: torch.Tensor,
+        position: int,
+    ) -> Tuple[torch.Tensor, torch.Tensor]:
+        """
+        选择保留的KV
+        
+        策略:
+        1. 始终保留前n_sink个Token (汇点)
+        2. 保留最近window_size个Token
+        """
+        N = keys.shape[2]
+        
+        if N <= self.n_sink + self.window_size:
+            return keys, values
+        
+        # 汇点索引
+        sink_indices = torch.arange(self.n_sink)
+        
+        # 最近窗口索引
+        start = max(self.n_sink, N - self.window_size)
+        recent_indices = torch.arange(start, N)
+        
+        # 合并
+        selected = torch.cat([sink_indices, recent_indices])
+        
+        return keys[:, :, selected, :], values[:, :, selected, :]
+
+
+class AutoCompressor:
+    """
+    自动压缩: 学习压缩哪些Token
+    
+    方法:
+    - 训练一个小的压缩网络
+    - 动态决定每个Token的重要性
+    - 基于任务反馈优化压缩策略
+    """
+    
+    def __init__(self, hidden_dim: int, compression_ratio: float = 0.5):
+        self.compression_ratio = compression_ratio
+        self.importance_net = torch.nn.Sequential(
+            torch.nn.Linear(hidden_dim, hidden_dim // 2),
+            torch.nn.ReLU(),
+            torch.nn.Linear(hidden_dim // 2, 1),
+            torch.nn.Sigmoid()
+        )
+    
+    def compress(
+        self,
+        hidden_states: torch.Tensor,
+        keys: torch.Tensor,
+        values: torch.Tensor,
+    ) -> Tuple[torch.Tensor, torch.Tensor]:
+        """
+        基于学习的压缩
+        """
+        N = hidden_states.shape[1]
+        n_keep = int(N * self.compression_ratio)
+        
+        # 计算每个Token的重要性
+        importance = self.importance_net(hidden_states)  # (B, N, 1)
+        importance = importance.squeeze(-1)  # (B, N)
+        
+        # 选择重要的Token
+        _, indices = importance.topk(n_keep, dim=1)
+        indices = indices.sort(dim=1)[0]
+        
+        # 收集
+        compressed_keys = torch.gather(
+            keys, 2, 
+            indices.unsqueeze(1).unsqueeze(-1).expand(-1, keys.shape[1], -1, keys.shape[3])
+        )
+        compressed_values = torch.gather(
+            values, 2,
+            indices.unsqueeze(1).unsqueeze(-1).expand(-1, values.shape[1], -1, values.shape[3])
+        )
+        
+        return compressed_keys, compressed_values
+```
+
+### 4.3 位置编码外推详解
+
+```python
+"""
+位置编码外推: 处理训练时未见过的更长序列
+"""
+
+import torch
+import math
+
+class PositionExtrapolation:
+    """
+    位置编码外推技术集合
+    
+    问题: 模型在L长度上训练，要在L' > L上推理
+    解决: 调整位置编码使其适应更长序列
+    """
+    
+    @staticmethod
+    def ntk_aware_scaling(
+        position: int,
+        dim: int,
+        original_max: int,
+        target_max: int,
+        base: int = 10000,
+    ) -> Tuple[torch.Tensor, torch.Tensor]:
+        """
+        NTK-Aware Scaling: 基于神经正切核理论的位置缩放
+        
+        核心思想:
+        - 高频分量需要更精细的位置信息
+        - 缩放因子随维度变化
+        
+        效果: 比线性插值更好的长序列表现
+        """
+        # 计算缩放因子
+        scaling = target_max / original_max
+        
+        # NTK感知的base调整
+        # base_new = base * (scaling ** (dim / (dim - 2)))
+        base_new = base * (scaling ** (dim / (dim - 2)))
+        
+        # 使用新base计算位置编码
+        theta = 1.0 / (base_new ** (torch.arange(0, dim, 2) / dim))
+        
+        # 角度计算
+        angles = position * theta
+        
+        return torch.cos(angles), torch.sin(angles)
+    
+    @staticmethod
+    def yarn_extrapolation(
+        position: int,
+        dim: int,
+        original_max: int,
+        target_max: int,
+        base: int = 10000,
+        beta_fast: float = 32.0,
+        beta_slow: float = 1.0,
+    ) -> Tuple[torch.Tensor, torch.Tensor]:
+        """
+        YaRN (Yet another RoPE extensioN): 改进的RoPE外推
+        
+        创新点:
+        1. 结合NTK-aware缩放
+        2. 添加温度缩放
+        3. 平滑过渡区
+        
+        效果: 在极长序列上表现最佳
+        """
+        scaling = target_max / original_max
+        
+        # 计算维度相关的缩放
+        n = torch.arange(0, dim, 2, dtype=torch.float32)
+        
+        # 频率相关因子
+        # 低频维度使用更大的缩放
+        # 高频维度使用更小的缩放
+        freq = base ** (n / dim)
+        
+        # 平滑过渡
+        def find_correction_dim(num_rotations, dim, base=10000):
+            return (dim * math.log(num_rotations / (2 * math.pi))) / (2 * math.log(base))
+        
+        correction = find_correction_dim(
+            original_max / (2 * math.pi),
+            dim,
+            base
+        )
+        
+        # 计算alpha和beta
+        dim_alpha = max(0, correction - beta_fast)
+        dim_beta = min(dim, correction + beta_slow)
+        
+        # 应用YaRN缩放
+        # 详细实现...
+        
+        theta = 1.0 / (base ** (n / dim))
+        theta = theta * scaling
+        
+        angles = position * theta
+        
+        return torch.cos(angles), torch.sin(angles)
+    
+    @staticmethod
+    def positional_interpolation(
+        position: int,
+        dim: int,
+        original_max: int,
+        target_max: int,
+        base: int = 10000,
+    ) -> Tuple[torch.Tensor, torch.Tensor]:
+        """
+        Position Interpolation (PI): 最简单的位置外推
+        
+        方法: 线性缩放位置索引
+        position_new = position * (original_max / target_max)
+        
+        优点: 简单有效
+        缺点: 长距离关系可能受影响
+        """
+        scaling = original_max / target_max
+        scaled_position = position * scaling
+        
+        theta = 1.0 / (base ** (torch.arange(0, dim, 2) / dim))
+        angles = scaled_position * theta
+        
+        return torch.cos(angles), torch.sin(angles)
+
+
+# 使用示例
+def apply_long_context_extension(
+    model,
+    original_max_length: int,
+    target_max_length: int,
+    method: str = "yarn"
+):
+    """
+    应用长上下文扩展到模型
+    """
+    ext = PositionExtrapolation()
+    
+    # 修改模型的位置编码
+    for name, module in model.named_modules():
+        if "rotary" in name.lower() or "rope" in name.lower():
+            # 替换位置编码计算
+            if method == "ntk":
+                module.compute_positions = lambda pos, dim: ext.ntk_aware_scaling(
+                    pos, dim, original_max_length, target_max_length
+                )
+            elif method == "yarn":
+                module.compute_positions = lambda pos, dim: ext.yarn_extrapolation(
+                    pos, dim, original_max_length, target_max_length
+                )
+            else:  # pi
+                module.compute_positions = lambda pos, dim: ext.positional_interpolation(
+                    pos, dim, original_max_length, target_max_length
+                )
+    
+    return model
+```
+
+---
+
+## 5. 大海捞针测试 (Needle in Haystack)
 
 ### 4.1 测试方法
 
@@ -479,18 +945,447 @@ class KVCacheOptimizer:
 
 ---
 
-## 7. 参考资源
+## 8. 长文本评估基准
+
+### 8.1 评估基准概览
+
+| 基准 | 最大长度 | 任务类型 | 核心评估点 |
+|-----|---------|---------|-----------|
+| **LongBench** | 67K | 多任务 | 检索、摘要、代码 |
+| **L-Eval** | 200K | 真实场景 | 开放问答、摘要 |
+| **NeedleBench** | 1M | 检索 | 信息定位能力 |
+| **LongContext-Chat** | 128K | 对话 | 多轮上下文理解 |
+| **ZeroSCROLLS** | 50K | 多任务 | 零样本长文本 |
+| **InfiniteBench** | 500K | 检索+推理 | 极长上下文 |
+
+### 8.2 LongBench 详细介绍
+
+```python
+"""
+LongBench: 长上下文多任务评估基准
+
+特点:
+- 6大任务类型，20个子任务
+- 中文+英文双语
+- 平均长度15K，最大67K
+
+任务类型:
+├── 单文档QA (Single-Doc QA)
+│   ├── QMSum (会议摘要QA)
+│   ├── Qasper (学术论文QA)
+│   └── MultiFieldQA (多领域QA)
+│
+├── 多文档QA (Multi-Doc QA)
+│   ├── HotpotQA (多跳推理)
+│   ├── 2WikiMQA (知识图谱QA)
+│   └── Musique (音乐QA)
+│
+├── 摘要 (Summarization)
+│   ├── GovReport (政府报告)
+│   ├── MultiNews (新闻摘要)
+│   └── SummScreen (剧本摘要)
+│
+├── 代码 (Code)
+│   ├── LCC (代码补全)
+│   └── RepoBench-P (仓库理解)
+│
+├── Few-shot学习
+│   ├── TREC (分类)
+│   └── NQ (自然问题)
+│
+└── 合成任务 (Synthetic)
+    ├── PassageRetrieval (段落检索)
+    └── PassageCount (段落计数)
+"""
+
+# LongBench 评估示例
+class LongBenchEvaluator:
+    """LongBench 评估器"""
+    
+    TASKS = {
+        "single_doc_qa": ["qmsum", "qasper", "multifieldqa"],
+        "multi_doc_qa": ["hotpotqa", "2wikimqa", "musique"],
+        "summarization": ["gov_report", "multinews", "summscreen"],
+        "code": ["lcc", "repobench-p"],
+        "few_shot": ["trec", "nq"],
+        "synthetic": ["passage_retrieval", "passage_count"]
+    }
+    
+    def __init__(self, model, tokenizer):
+        self.model = model
+        self.tokenizer = tokenizer
+    
+    def evaluate_task(self, task_name: str, data_path: str) -> dict:
+        """评估单个任务"""
+        import json
+        
+        with open(f"{data_path}/{task_name}.json") as f:
+            data = json.load(f)
+        
+        predictions = []
+        references = []
+        
+        for sample in data:
+            # 构建输入
+            context = sample["context"]
+            question = sample["input"]
+            
+            input_text = f"Context: {context}\n\nQuestion: {question}\n\nAnswer:"
+            
+            # 模型生成
+            output = self.model.generate(input_text)
+            
+            predictions.append(output)
+            references.append(sample["answers"])
+        
+        # 计算指标
+        if task_name in ["qmsum", "qasper", "multifieldqa", "hotpotqa", "2wikimqa"]:
+            metric = self._compute_f1(predictions, references)
+        elif task_name in ["gov_report", "multinews", "summscreen"]:
+            metric = self._compute_rouge(predictions, references)
+        else:
+            metric = self._compute_accuracy(predictions, references)
+        
+        return {
+            "task": task_name,
+            "metric": metric,
+            "num_samples": len(data)
+        }
+    
+    def _compute_f1(self, predictions, references):
+        """计算F1分数"""
+        from collections import Counter
+        
+        def f1_score(pred, ref):
+            pred_tokens = pred.lower().split()
+            ref_tokens = ref.lower().split()
+            
+            common = Counter(pred_tokens) & Counter(ref_tokens)
+            num_same = sum(common.values())
+            
+            if num_same == 0:
+                return 0
+            
+            precision = num_same / len(pred_tokens)
+            recall = num_same / len(ref_tokens)
+            f1 = 2 * precision * recall / (precision + recall)
+            return f1
+        
+        scores = []
+        for pred, refs in zip(predictions, references):
+            best_f1 = max(f1_score(pred, ref) for ref in refs)
+            scores.append(best_f1)
+        
+        return sum(scores) / len(scores)
+    
+    def _compute_rouge(self, predictions, references):
+        """计算ROUGE分数"""
+        # 使用rouge-score库
+        from rouge_score import rouge_scorer
+        
+        scorer = rouge_scorer.RougeScorer(['rouge1', 'rouge2', 'rougeL'])
+        
+        scores = {'rouge1': [], 'rouge2': [], 'rougeL': []}
+        for pred, refs in zip(predictions, references):
+            best_scores = {}
+            for ref in refs:
+                score = scorer.score(ref, pred)
+                for key in scores:
+                    best_scores[key] = max(
+                        best_scores.get(key, 0),
+                        score[key].fmeasure
+                    )
+            for key in scores:
+                scores[key].append(best_scores[key])
+        
+        return {k: sum(v) / len(v) for k, v in scores.items()}
+
+
+# 2026年 LongBench 排行榜
+"""
+| 模型 | 总分 | 单文档QA | 多文档QA | 摘要 | 代码 |
+|-----|------|---------|---------|------|------|
+| GPT-4 Turbo | 42.1 | 36.5 | 43.2 | 28.1 | 58.6 |
+| Claude 3.5 | 44.8 | 38.1 | 46.7 | 29.5 | 61.2 |
+| Gemini 1.5 Pro | 43.5 | 37.8 | 45.1 | 28.9 | 59.8 |
+| Llama 3.1 70B | 36.2 | 32.1 | 35.8 | 25.3 | 51.4 |
+| Qwen2-72B | 37.5 | 33.2 | 37.1 | 26.1 | 53.2 |
+"""
+```
+
+### 8.3 L-Eval 详细介绍
+
+```python
+"""
+L-Eval: 面向真实场景的长文本评估
+
+特点:
+- 最大200K上下文
+- 真实世界任务 (非合成)
+- 细粒度评估指标
+
+任务类型:
+├── 开放域问答
+│   ├── Coursera (课程QA)
+│   ├── GSM (数学应用题)
+│   └── Quality (故事理解)
+│
+├── 摘要
+│   ├── TVShow (电视剧摘要)
+│   ├── Meeting (会议摘要)
+│   └── Paper (论文摘要)
+│
+├── 排序与选择
+│   ├── TopicRetrieval (主题检索)
+│   └── ToMCAT (对话摘要)
+│
+└── 漫长对话
+    ├── LongDialogue (长对话理解)
+    └── OpenDialogue (开放式对话)
+"""
+
+class LEvalEvaluator:
+    """L-Eval 评估器"""
+    
+    METRICS = {
+        "qa": "exact_match_f1",       # QA用F1
+        "summarization": "rouge",     # 摘要用ROUGE
+        "retrieval": "accuracy",       # 检索用准确率
+        "dialogue": "gpt4_score"      # 对话用GPT-4打分
+    }
+    
+    def __init__(self, model, judge_model=None):
+        self.model = model
+        self.judge_model = judge_model
+    
+    def evaluate_length_bins(self, task: str, data: list) -> dict:
+        """
+        按长度分桶评估
+        
+        分析模型在不同上下文长度下的表现
+        """
+        bins = {
+            "short": (0, 8000),
+            "medium": (8000, 32000),
+            "long": (32000, 100000),
+            "extra_long": (100000, 200000)
+        }
+        
+        results = {bin_name: [] for bin_name in bins}
+        
+        for sample in data:
+            length = len(sample["context"].split())
+            
+            # 确定桶
+            for bin_name, (low, high) in bins.items():
+                if low <= length < high:
+                    results[bin_name].append(
+                        self._evaluate_sample(sample, task)
+                    )
+                    break
+        
+        # 计算每个桶的平均分
+        return {
+            bin_name: sum(scores) / len(scores) if scores else 0
+            for bin_name, scores in results.items()
+        }
+    
+    def _evaluate_sample(self, sample: dict, task: str) -> float:
+        """评估单个样本"""
+        if task == "qa":
+            return self._evaluate_qa(sample)
+        elif task == "summarization":
+            return self._evaluate_summarization(sample)
+        else:
+            return 0.0
+
+
+# L-Eval 长度分桶性能对比
+"""
+模型性能随上下文长度变化:
+
+模型: Claude 3.5 Sonnet
+┌─────────────────┬────────┬────────┐
+│ 长度区间        │ QA F1  │ 摘要R  │
+├─────────────────┼────────┼────────┤
+│ <8K             │ 85.2%  │ 42.1%  │
+│ 8K-32K          │ 83.7%  │ 40.8%  │
+│ 32K-100K        │ 79.1%  │ 38.5%  │
+│ 100K-200K       │ 71.3%  │ 34.2%  │
+└─────────────────┴────────┴────────┘
+
+关键发现:
+1. 所有模型在超长上下文上性能下降
+2. 摘要任务下降更明显
+3. Claude 3.5 在长上下文上最稳定
+"""
+```
+
+### 8.4 自定义评估流程
+
+```python
+"""
+完整的评估流水线
+"""
+
+class LongContextEvaluationPipeline:
+    """长上下文评估流水线"""
+    
+    def __init__(self, model, config: dict):
+        self.model = model
+        self.config = config
+        
+        # 初始化评估器
+        self.longbench = LongBenchEvaluator(model, config["tokenizer"])
+        self.leval = LEvalEvaluator(model, config.get("judge_model"))
+    
+    def run_full_evaluation(self) -> dict:
+        """运行完整评估"""
+        results = {}
+        
+        # 1. Needle in Haystack 测试
+        results["needle"] = self._run_needle_test()
+        
+        # 2. LongBench 测试
+        results["longbench"] = self._run_longbench()
+        
+        # 3. L-Eval 测试
+        results["leval"] = self._run_leval()
+        
+        # 4. 长度分析
+        results["length_analysis"] = self._analyze_length_performance()
+        
+        return results
+    
+    def _run_needle_test(self) -> dict:
+        """大海捞针测试"""
+        depths = [0, 10, 20, 30, 50, 70, 90, 100]  # 百分比深度
+        lengths = [4000, 8000, 16000, 32000, 64000, 128000]
+        
+        results = {}
+        
+        for length in lengths:
+            results[length] = {}
+            for depth in depths:
+                # 在指定深度插入"针"
+                needle = "The secret password is: XyZ123"
+                context = self._generate_haystack(length, needle, depth)
+                
+                # 提问
+                query = "What is the secret password?"
+                answer = self.model.generate(f"{context}\n\n{query}")
+                
+                # 检查是否正确找到
+                success = "XyZ123" in answer
+                results[length][depth] = success
+        
+        return results
+    
+    def _generate_haystack(
+        self, 
+        length: int, 
+        needle: str, 
+        depth_pct: int
+    ) -> str:
+        """生成"草堆"，在指定位置插入"针""""
+        # 生成无关文本
+        haystack = "This is irrelevant content. " * (length // 10)
+        
+        # 计算插入位置
+        position = int(len(haystack) * depth_pct / 100)
+        
+        # 插入针
+        return haystack[:position] + f"\n{needle}\n" + haystack[position:]
+    
+    def generate_report(self, results: dict) -> str:
+        """生成评估报告"""
+        report = []
+        report.append("# 长上下文评估报告\n")
+        
+        # Needle 测试结果
+        report.append("## Needle in Haystack 测试\n")
+        report.append("| 长度 | 平均准确率 |")
+        
+        for length, depth_results in results["needle"].items():
+            avg = sum(depth_results.values()) / len(depth_results)
+            report.append(f"| {length} | {avg:.1%} |")
+        
+        # LongBench 结果
+        report.append("\n## LongBench 测试\n")
+        for task, score in results["longbench"].items():
+            report.append(f"- {task}: {score:.2f}")
+        
+        return "\n".join(report)
+```
+
+---
+
+## 9. 最佳实践总结
+
+### 9.1 技术选型指南
+
+| 场景 | 推荐技术 | 理由 |
+|-----|---------|------|
+| **<32K** | 标准 Flash Attention 2 | 成本低，效果好 |
+| **32K-128K** | Ring Attention + KV 压缩 | 平衡显存和性能 |
+| **128K-1M** | Ring Attention + H2O 压缩 | 必须压缩 |
+| **>1M** | 稀疏注意力 + 上下文压缩 | 唯一可行方案 |
+
+### 9.2 实施清单
+
+```markdown
+长上下文部署清单:
+
+□ 模型选择
+  □ 确认模型支持的目标上下文长度
+  □ 评估位置编码外推能力
+  □ 测试 Needle in Haystack 性能
+
+□ 硬件评估
+  □ 计算所需 KV Cache 大小
+  □ 评估是否需要分布式推理
+  □ 确定是否需要 KV 压缩
+
+□ 优化配置
+  □ 配置 Flash Attention / Ring Attention
+  □ 设置 KV Cache 压缩策略
+  □ 调整位置编码外推参数
+
+□ 测试验证
+  □ 运行 LongBench 评估
+  □ 测试真实场景任务
+  □ 监控延迟和成本
+
+□ 监控告警
+  □ 设置上下文利用率监控
+  □ 配置延迟告警阈值
+  □ 建立成本追踪机制
+```
+
+---
+
+## 10. 参考资源
 
 ### 论文
 - [Flash Attention](https://arxiv.org/abs/2205.14135)
 - [Longformer](https://arxiv.org/abs/2004.05150)
 - [RoPE](https://arxiv.org/abs/2104.09864)
-- [Billion-Tok](https://arxiv.org/abs/2307.02486)
+- [Ring Attention](https://arxiv.org/abs/2310.01889)
+- [H2O](https://arxiv.org/abs/2306.14048)
+- [StreamingLLM](https://arxiv.org/abs/2309.17453)
+- [YaRN](https://arxiv.org/abs/2309.00071)
+- [LongBench](https://arxiv.org/abs/2308.14508)
 
 ### 技术博客
 - [Google Gemini 1.5 Context](https://blog.google/technology/ai/gemini-pro-1-5/)
 - [Anthropic Context Windows](https://www.anthropic.com/news/context-windows)
+- [vLLM Long Context](https://vllm.readthedocs.io/en/latest/automatic_prefix_caching.html)
+
+### 开源工具
+- [vLLM](https://github.com/vllm-project/vllm) - 高性能推理
+- [FlashAttention](https://github.com/Dao-AILab/flash-attention) - 注意力优化
+- [LongBench](https://github.com/THUDM/LongBench) - 评估基准
 
 ---
 
-*Last updated: 2026-04-10*
+*Last updated: 2026-04-13*

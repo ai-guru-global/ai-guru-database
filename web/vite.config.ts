@@ -47,6 +47,11 @@ export default defineConfig(({ mode }) => ({
         target: "http://localhost:4567",
         rewrite: (p) => p.replace(/^\/docs-content/, "/..")
       },
+      // Proxy K8s eval API to the eval backend server
+      "/api/k8s-eval": {
+        target: "http://localhost:3100",
+        changeOrigin: true,
+      },
     },
   },
   preview: {

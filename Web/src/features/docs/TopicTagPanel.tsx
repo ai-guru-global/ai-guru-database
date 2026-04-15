@@ -124,15 +124,10 @@ export function TopicTagPanel({
   return (
     <Card className="border-border/70 bg-background/85 shadow-[0_24px_80px_-42px_rgba(15,23,42,0.35)] backdrop-blur">
       <CardContent className="p-5">
-        <div className="flex items-start justify-between gap-3">
-          <div>
-            <div className="flex items-center gap-2 text-sm font-medium">
-              <Sparkles className="h-4 w-4 text-primary" />
-              核心话题标签
-            </div>
-            <p className="mt-2 text-sm text-muted-foreground">
-              标签按文档核心话题分组，默认折叠。展开后可查看关联文档并快速跳转。
-            </p>
+        <div className="flex items-center justify-between gap-3">
+          <div className="flex items-center gap-2 text-sm font-medium">
+            <Sparkles className="h-4 w-4 text-primary" />
+            核心话题标签
           </div>
           <div className="flex shrink-0 gap-2">
             <Button

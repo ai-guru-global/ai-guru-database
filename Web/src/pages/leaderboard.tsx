@@ -1,12 +1,10 @@
 import { useState, useMemo } from "react";
-import { Link } from "react-router-dom";
-import { ArrowLeft, ArrowUpDown, ChevronDown, ChevronUp, Trophy, TrendingUp, TrendingDown, Minus } from "lucide-react";
+import { ArrowUpDown, ChevronDown, ChevronUp, TrendingUp, TrendingDown, Minus } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { RadarChart } from "@/components/leaderboard/RadarChart";
 import {
   LEADERBOARD_DATA,
-  LEADERBOARD_METADATA,
   CATEGORY_LABELS,
   DIMENSION_LABELS,
   GRADE_CONFIG,
@@ -44,7 +42,7 @@ function ScoreBar({ score, max = 100 }: { score: number; max?: number }) {
   );
 }
 
-export function LeaderboardPage() {
+export function LeaderboardContent() {
   const [category, setCategory] = useState<CategoryFilter>("all");
   const [sortKey, setSortKey] = useState<SortKey>("compositeScore");
   const [sortAsc, setSortAsc] = useState(false);
@@ -89,26 +87,9 @@ export function LeaderboardPage() {
   );
 
   return (
-    <div className="container py-8">
-      {/* Header */}
-      <div className="mb-8">
-        <div className="flex items-center gap-2 mb-4">
-          <Button variant="ghost" size="sm" asChild>
-            <Link to="/"><ArrowLeft className="mr-1 h-4 w-4" />Home</Link>
-          </Button>
-        </div>
-        <div className="flex items-center gap-3 mb-2">
-          <Trophy className="h-8 w-8 text-yellow-500" />
-          <h1 className="text-3xl font-bold tracking-tight">Cloud Agent Leaderboard</h1>
-        </div>
-        <p className="text-muted-foreground">
-          CAPER Five-Dimension Evaluation | {LEADERBOARD_METADATA.version} |{" "}
-          {LEADERBOARD_METADATA.totalAgents} Agents Evaluated
-        </p>
-      </div>
-
+    <div className="space-y-8">
       {/* Stats Cards */}
-      <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-8">
+      <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
         {(["knowledge", "taskCompletion", "costPerformance", "interaction", "safety"] as const).map((dim) => {
           const best = [...LEADERBOARD_DATA].sort(
             (a, b) => b.dimensions[dim] - a.dimensions[dim]
@@ -126,7 +107,7 @@ export function LeaderboardPage() {
       </div>
 
       {/* Category Tabs */}
-      <div className="flex flex-wrap gap-2 mb-6">
+      <div className="flex flex-wrap gap-2">
         {(Object.entries(CATEGORY_LABELS) as [CategoryFilter, string][]).map(([key, label]) => (
           <Button
             key={key}
@@ -186,7 +167,7 @@ export function LeaderboardPage() {
       </Card>
 
       {/* Methodology Note */}
-      <div className="mt-8 rounded-lg border bg-muted/30 p-6">
+      <div className="rounded-lg border bg-muted/30 p-6">
         <h3 className="font-semibold mb-2">Evaluation Methodology</h3>
         <p className="text-sm text-muted-foreground mb-3">
           Based on CAPER Five-Dimension Model: Knowledge (25%) + Task Completion (25%) + Cost-Performance (20%) + Interaction Quality (15%) + Safety Compliance (15%)
@@ -199,6 +180,10 @@ export function LeaderboardPage() {
       </div>
     </div>
   );
+}
+
+export function LeaderboardPage() {
+  return <LeaderboardContent />;
 }
 
 function AgentRow({

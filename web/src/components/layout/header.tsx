@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { Search, Menu, X, BookOpen, Settings, ChevronDown } from "lucide-react";
+import { Search, Menu, X, BookOpen, Settings } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "./theme-toggle";
@@ -8,21 +8,12 @@ import { cn } from "@/utils/cn";
 const navItems = [
   { label: "Home", href: "/" },
   { label: "Documentation", href: "/docs" },
-  { label: "K8s Eval", href: "/k8s-evaluation" },
-  { label: "K8s Live", href: "/k8s-real-evaluation" },
-  { label: "Search", href: "/search" },
-];
-
-const settingsItems = [
-  { label: "Qwen", href: "/settings/qwen" },
-  { label: "GLM", href: "/settings/glm" },
-  { label: "Minimax", href: "/settings/minimax" },
-  { label: "Kimi", href: "/settings/kimi" },
+  { label: "Agent Arena", href: "/arena" },
+  { label: "Agent Eval", href: "/agent-eval" },
 ];
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [settingsOpen, setSettingsOpen] = useState(false);
   const location = useLocation();
 
   return (
@@ -50,35 +41,18 @@ export function Header() {
                 {item.label}
               </Link>
             ))}
-            <div className="relative">
-              <button
-                onClick={() => setSettingsOpen(!settingsOpen)}
-                className={cn(
-                  "flex items-center gap-1 transition-colors hover:text-foreground/80",
-                  location.pathname.startsWith("/settings")
-                    ? "text-foreground"
-                    : "text-foreground/60"
-                )}
-              >
-                <Settings className="h-4 w-4" />
-                Settings
-                <ChevronDown className="h-3 w-3" />
-              </button>
-              {settingsOpen && (
-                <div className="absolute left-0 top-full mt-2 w-40 rounded-md border bg-background shadow-lg">
-                  {settingsItems.map((item) => (
-                    <Link
-                      key={item.href}
-                      to={item.href}
-                      className="block px-4 py-2 text-sm hover:bg-muted"
-                      onClick={() => setSettingsOpen(false)}
-                    >
-                      {item.label}
-                    </Link>
-                  ))}
-                </div>
+            <Link
+              to="/settings"
+              className={cn(
+                "flex items-center gap-1 transition-colors hover:text-foreground/80",
+                location.pathname.startsWith("/settings")
+                  ? "text-foreground"
+                  : "text-foreground/60"
               )}
-            </div>
+            >
+              <Settings className="h-4 w-4" />
+              Settings
+            </Link>
           </nav>
         </div>
         <div className="flex flex-1 items-center justify-end space-x-2">
@@ -132,19 +106,18 @@ export function Header() {
                   {item.label}
                 </Link>
               ))}
-              <div className="pt-2">
-                <p className="text-sm font-medium text-foreground/60">Settings</p>
-                {settingsItems.map((item) => (
-                  <Link
-                    key={item.href}
-                    to={item.href}
-                    className="block py-2 text-sm font-medium text-foreground/60 hover:text-foreground"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    {item.label}
-                  </Link>
-                ))}
-              </div>
+              <Link
+                to="/settings"
+                className={cn(
+                  "text-sm font-medium transition-colors",
+                  location.pathname.startsWith("/settings")
+                    ? "text-foreground"
+                    : "text-foreground/60"
+                )}
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Settings
+              </Link>
             </nav>
           </div>
         </div>

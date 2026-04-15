@@ -34,7 +34,7 @@ import {
   type DocEntry,
   type DocSection,
 } from "@/data/docMap";
-import { TopicTagPanel } from "@/features/docs/TopicTagPanel";
+
 import {
   analyzeDocumentCoreTopics,
   buildCoreTopicMap,
@@ -240,7 +240,8 @@ async function loadDocContent(filePath: string) {
     return contentRequests.get(filePath)!;
   }
 
-  const request = fetch(`/docs-content/${encodeURI(filePath)}`)
+  const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+  const request = fetch(`${base}/docs-content/${encodeURI(filePath)}`)
     .then((response) => {
       if (!response.ok) {
         throw new Error(`Failed to load document: ${response.status}`);
@@ -373,7 +374,6 @@ export function DocsPage() {
   );
   const [searchQuery, setSearchQuery] = useState("");
   const [activeCollection, setActiveCollection] = useState<CollectionFilter>("all");
-  const [activeTopicId, setActiveTopicId] = useState<string | null>(null);
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
   const [content, setContent] = useState("");
   const [loading, setLoading] = useState(false);
@@ -460,10 +460,6 @@ export function DocsPage() {
         .filter((entry): entry is IndexedDoc => Boolean(entry));
     }
 
-    if (activeTopicId) {
-      source = source.filter((entry) => entry.topicIds.includes(activeTopicId));
-    }
-
     if (!searchQuery.trim()) {
       return source;
     }
@@ -473,7 +469,7 @@ export function DocsPage() {
     );
 
     return source.filter((entry) => matched.has(entry.fullSlug));
-  }, [activeCollection, activeTopicId, docLookup, docsIndex, favorites, fuse, recents, searchQuery]);
+  }, [activeCollection, docLookup, docsIndex, favorites, fuse, recents, searchQuery]);
 
   const visibleSlugs = useMemo(
     () => new Set(filteredDocs.map((entry) => entry.fullSlug)),
@@ -495,14 +491,14 @@ export function DocsPage() {
       getExpandedPath(selectedDoc).forEach((key) => baseKeys.add(key));
     }
 
-    if (searchQuery.trim() || activeCollection !== "all" || activeTopicId) {
+    if (searchQuery.trim() || activeCollection !== "all") {
       filteredTree.forEach((node) => {
         collectExpandedKeys(node).forEach((key) => baseKeys.add(key));
       });
     }
 
     return baseKeys;
-  }, [activeCollection, activeTopicId, expandedKeys, filteredTree, searchQuery, selectedDoc]);
+  }, [activeCollection, expandedKeys, filteredTree, searchQuery, selectedDoc]);
 
   const favoritesDocs = favorites
     .map((favoriteSlug) => docLookup.get(favoriteSlug))
@@ -719,32 +715,7 @@ export function DocsPage() {
           ))}
         </div>
 
-        <div className="mt-3 rounded-2xl border border-border/70 bg-muted/20 px-3 py-3">
-          <div className="text-xs font-medium text-muted-foreground">话题筛选</div>
-          <div className="mt-2 flex flex-wrap gap-2">
-            <button
-              type="button"
-              onClick={() => setActiveTopicId(null)}
-              className={cn(
-                "rounded-full border px-3 py-1 text-xs transition-colors",
-                !activeTopicId
-                  ? "border-primary bg-primary text-primary-foreground"
-                  : "border-border/70 bg-background text-muted-foreground hover:text-foreground"
-              )}
-            >
-              全部话题
-            </button>
-            {activeTopicId && (
-              <span className="rounded-full bg-background px-3 py-1 text-xs text-foreground">
-                当前筛选：{selectedTopicMatches.find((topic) => topic.id === activeTopicId)?.label ??
-                  docsIndex
-                    .flatMap((entry) => entry.topics)
-                    .find((topic) => topic.id === activeTopicId)?.label ??
-                  activeTopicId}
-              </span>
-            )}
-          </div>
-        </div>
+
       </div>
 
       <div className="border-b border-border/60 px-4 py-3 text-sm text-muted-foreground">
@@ -864,10 +835,10 @@ export function DocsPage() {
                       Words
                     </div>
                     <div className="mt-2 text-3xl font-semibold">
-                      {wordCount > 0 ? wordCount.toLocaleString() : "383W+"}
+                      383W+
                     </div>
                     <div className="mt-1 text-xs text-muted-foreground">
-                      {wordCount > 0 ? "当前文档字数" : "沉淀系统性 AI 知识与核心语料"}
+                      沉淀系统性 AI 知识与核心语料
                     </div>
                   </div>
                   <div className="rounded-3xl border border-border/70 bg-background/80 px-4 py-4 shadow-sm flex flex-col justify-center">
@@ -875,12 +846,10 @@ export function DocsPage() {
                       Core Topics
                     </div>
                     <div className="mt-2 text-3xl font-semibold">
-                      {selectedTopicMatches.length > 0 ? selectedTopicMatches.length : allDocs.length}
+                      258+
                     </div>
                     <div className="mt-1 text-xs text-muted-foreground line-clamp-2">
-                      {selectedTopicMatches.length > 0 
-                        ? selectedTopicMatches.map(t => t.label).join(', ') 
-                        : "提炼高频领域与工程落地痛点"}
+                      提炼高频领域与工程落地痛点
                     </div>
                   </div>
                 </div>
@@ -911,18 +880,6 @@ export function DocsPage() {
               继续阅读
             </Button>
           )}
-        </div>
-
-        <div className="mb-6 xl:hidden">
-          <TopicTagPanel
-            docs={allDocs}
-            selectedSlug={selectedSlug}
-            contentBySlug={selectedSlug && content ? { [selectedSlug]: content } : undefined}
-            initialDefinitions={topicDefinitions}
-            onSelectTopic={setActiveTopicId}
-            onSelectDoc={handleSelectDoc}
-            storageKey="docs-page:core-topics:collapsed:mobile"
-          />
         </div>
 
         <div className="grid gap-6 xl:grid-cols-[320px_minmax(0,1fr)_280px]">
@@ -1208,14 +1165,7 @@ export function DocsPage() {
                 </CardContent>
               </Card>
 
-              <TopicTagPanel
-                docs={allDocs}
-                selectedSlug={selectedSlug}
-                contentBySlug={selectedSlug && content ? { [selectedSlug]: content } : undefined}
-                initialDefinitions={topicDefinitions}
-                onSelectTopic={setActiveTopicId}
-                onSelectDoc={handleSelectDoc}
-              />
+
             </div>
           </aside>
         </div>

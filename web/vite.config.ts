@@ -37,7 +37,10 @@ function serveDocsContent() {
   };
 }
 
+const isGitHubPages = process.env.GITHUB_PAGES === "true";
+
 export default defineConfig(({ mode }) => ({
+  base: isGitHubPages ? "/ai-guru-database/" : "/",
   plugins: [
     react(),
     serveDocsContent(),

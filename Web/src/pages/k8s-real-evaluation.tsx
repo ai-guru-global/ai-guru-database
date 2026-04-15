@@ -345,7 +345,7 @@ export function K8sRealEvaluationPage() {
       {/* ---- Nav ---- */}
       <div className="flex items-center gap-2">
         <Button variant="ghost" size="sm" asChild>
-          <Link to="/k8s-evaluation"><ArrowLeft className="mr-1.5 h-3.5 w-3.5" />K8s 评测</Link>
+          <Link to="/arena?tab=k8s"><ArrowLeft className="mr-1.5 h-3.5 w-3.5" />K8s 评测</Link>
         </Button>
         <span className="text-muted-foreground/30">·</span>
         <Button variant="ghost" size="sm" asChild>
@@ -845,7 +845,7 @@ export function K8sRealEvaluationPage() {
 
       {/* Footer */}
       <div className="text-center text-xs text-muted-foreground pb-4">
-        <Link to="/k8s-evaluation" className="hover:text-foreground transition-colors">
+        <Link to="/arena?tab=k8s" className="hover:text-foreground transition-colors">
           ← 返回 K8s 模拟评测结果
         </Link>
       </div>

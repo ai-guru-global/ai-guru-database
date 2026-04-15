@@ -1,11 +1,10 @@
 /**
  * K8sEvaluationPage — Dedicated K8s domain evaluation dashboard
- * Route: /k8s-evaluation
+ * Route: /arena?tab=k8s
  * Full 15-dimension analysis matching K8s Live evaluation page.
  */
 import { useState } from "react";
-import { Link } from "react-router-dom";
-import { ArrowLeft, Trophy, Database, MessageSquare, Shield, Gauge, Zap, BarChart3 } from "lucide-react";
+import { Trophy, Database, MessageSquare, Shield, Gauge, Zap, BarChart3 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { K8sCapabilityMatrix } from "@/components/k8s-eval/K8sCapabilityMatrix";
@@ -243,51 +242,20 @@ function WeightBar() {
 }
 
 /* ------------------------------------------------------------------ */
-/*  Main Page                                                          */
+/*  Main Content (used by ArenaPage as tab content)                    */
 /* ------------------------------------------------------------------ */
 
-export function K8sEvaluationPage() {
+export function K8sEvaluationContent() {
   const [selectedAgent, setSelectedAgent] = useState<string | null>(null);
 
   const sorted = [...K8S_AGENTS].sort((a, b) => b.compositeScore - a.compositeScore);
 
   return (
-    <div className="container py-8 space-y-10">
-      {/* Navigation */}
-      <div className="flex items-center gap-3">
-        <Button variant="ghost" size="sm" asChild>
-          <Link to="/leaderboard">
-            <ArrowLeft className="mr-1 h-4 w-4" />
-            排行榜
-          </Link>
-        </Button>
-        <span className="text-muted-foreground/30">|</span>
-        <Button variant="ghost" size="sm" asChild>
-          <Link to="/">首页</Link>
-        </Button>
-      </div>
-
-      {/* Hero */}
-      <div>
-        <div className="flex items-center gap-3 mb-3">
-          <div className="flex items-center justify-center w-10 h-10 rounded-xl bg-primary/10 border border-primary/20">
-            <span className="text-xl">⎈</span>
-          </div>
-          <div>
-            <h1 className="text-2xl md:text-3xl font-bold tracking-tight">
-              Kubernetes 专项评测
-            </h1>
-            <p className="text-sm text-muted-foreground mt-0.5">
-              Qwen3-Max vs Kimi K2.5 vs MiniMax M2.1 — 15 维度全面深度对比
-            </p>
-          </div>
-        </div>
-
-        {/* Weight bar */}
-        <div className="mt-6 max-w-2xl">
-          <div className="text-[10px] text-muted-foreground/60 uppercase tracking-wider mb-2">评分权重分配</div>
-          <WeightBar />
-        </div>
+    <div className="space-y-10">
+      {/* Weight bar */}
+      <div className="max-w-2xl">
+        <div className="text-[10px] text-muted-foreground/60 uppercase tracking-wider mb-2">评分权重分配</div>
+        <WeightBar />
       </div>
 
       {/* ========== Ranking Cards ========== */}
@@ -400,18 +368,15 @@ export function K8sEvaluationPage() {
             </div>
             <div>
               <div className="text-muted-foreground/60 uppercase tracking-wider text-[10px] mb-1">评分方式</div>
-              <p>MockPlugin 模拟评估 + Profile-based 差异化评分，数据周期 2026 Q2，与 K8s Live 对齐</p>
+              <p>MockPlugin 模拟评估 + Profile-based 差异化评分，数据周期 2026 Q2，与 Agent Eval 对齐</p>
             </div>
           </div>
         </CardContent>
       </Card>
-
-      {/* Footer link */}
-      <div className="text-center text-xs text-muted-foreground pb-4">
-        <Link to="/leaderboard" className="hover:text-foreground transition-colors">
-          ← 返回 Cloud Agent 总排行榜
-        </Link>
-      </div>
     </div>
   );
+}
+
+export function K8sEvaluationPage() {
+  return <K8sEvaluationContent />;
 }

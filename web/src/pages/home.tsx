@@ -68,7 +68,7 @@ export function HomePage() {
             <Link to="/search">Search Docs</Link>
           </Button>
           <Button variant="outline" size="lg" asChild>
-            <Link to="/leaderboard">
+            <Link to="/arena">
               <Trophy className="mr-2 h-4 w-4" />
               Agent Leaderboard
             </Link>

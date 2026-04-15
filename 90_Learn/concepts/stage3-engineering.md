@@ -159,7 +159,7 @@
 
 - **2026 新趋势**：Agent 评估框架（RAPS 模型：Reasoning/Accuracy/Performance/Safety）、自动化红队测试
 - **入门阅读**：[模型评估入门](../07_AI_Engineering/Model_Evaluation/Model_Evaluation_for_dummy.md)
-- **深入学习**：[Agent 评估框架](../12_Agent_Evaluation/README.md)
+- **深入学习**：[Agent 评估框架](../../13_Agent_Production/16_Agent_Evaluation/README.md)
 - **关联概念**：Benchmark、红队测试、幻觉率
 
 ### 9. AI 工作流与编排 (AI Workflow & Orchestration)

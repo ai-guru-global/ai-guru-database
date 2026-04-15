@@ -59,7 +59,7 @@
 **Ops Agent (运维智能体)**
 - AI 原生运维：自动监控、诊断、修复、扩缩容
 - 异常检测 → 根因分析 → 自动修复 → 报告的闭环
-- 参见：[Ops Agent Harness 2026](../12_Agent_Evaluation/Ops_Agent_Harness_2026.md)
+- 参见：[Ops Agent Harness 2026](../../13_Agent_Production/16_Agent_Evaluation/Ops_Agent_Harness_2026.md)
 
 - **入门阅读**：[AI Agent 入门](../06_Reinforcement_Learning/AI_Agents/AI_Agents_for_dummy.md)
 - **深入学习**：[Agent 速查](../06_Reinforcement_Learning/AI_Agents/Agent-in-nutshell.md)

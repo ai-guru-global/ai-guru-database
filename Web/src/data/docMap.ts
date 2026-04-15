@@ -23,6 +23,14 @@ export interface DocSection {
 
 export const docSections: DocSection[] = [
   {
+    id: "root",
+    title: "Overview",
+    description: "项目概览",
+    docs: [
+      { slug: "readme", title: "Project README", filePath: "README.md", category: "Overview", categoryId: "root", description: "AI Guru Database 项目介绍与导航" }
+    ]
+  },
+  {
     id: "00",
     title: "AI Introduction",
     description: "AI 全景概览、历史、未来趋势与学习资源",
@@ -114,19 +122,19 @@ export const docSections: DocSection[] = [
     title: "AI Engineering",
     description: "RAG 系统、部署推理、MLOps、LLMOps、模型评估、编码助手",
     docs: [
-      { slug: "rag-systems", title: "RAG Systems", filePath: "07_AI_Engineering/RAG_Systems/RAG_Systems.md", category: "AI Engineering", categoryId: "07", description: "Naive/Advanced/Graph/Agentic RAG" },
-      { slug: "rag-advanced", title: "RAG Advanced 2026", filePath: "07_AI_Engineering/RAG_Advanced_2026/RAG_Advanced_2026.md", category: "AI Engineering", categoryId: "07", description: "2026 RAG 高级技术与架构" },
-      { slug: "deployment-inference", title: "Deployment & Inference", filePath: "07_AI_Engineering/Deployment_Inference/Deployment_Inference.md", category: "AI Engineering", categoryId: "07", description: "vLLM、TensorRT-LLM、量化、Speculative Decoding" },
-      { slug: "mlops-pipeline", title: "MLOps Pipeline", filePath: "07_AI_Engineering/MLOps_Pipeline/MLOps_Pipeline.md", category: "AI Engineering", categoryId: "07", description: "Kubeflow、MLflow、模型注册、Drift 监控" },
-      { slug: "model-evaluation", title: "Model Evaluation", filePath: "07_AI_Engineering/Model_Evaluation/Model_Evaluation.md", category: "AI Engineering", categoryId: "07", description: "MMLU、HumanEval、MT-Bench、LLM-as-Judge" },
-      { slug: "model-training", title: "Model Training", filePath: "07_AI_Engineering/Model_Training/Model-Training-in-nutshell.md", category: "AI Engineering", categoryId: "07", description: "分布式训练、DeepSpeed、Megatron-LM" },
-      { slug: "ai-coding-assistants", title: "AI Coding Assistants", filePath: "07_AI_Engineering/AI_Coding_Assistants/AI_Coding_Assistants_2026.md", category: "AI Engineering", categoryId: "07", description: "Cursor、Windsurf、Copilot、Devin" },
-      { slug: "vibe-coding-methodology", title: "Vibe Coding Methodology 2026", filePath: "07_AI_Engineering/Vibe_Coding/Vibe_Coding_Methodology_2026.md", category: "AI Engineering", categoryId: "07", description: "自然语言驱动开发方法论: DGRV循环、提示工程、质量体系" },
-      { slug: "vibe-coding-production", title: "Vibe Coding Production Practices", filePath: "07_AI_Engineering/Vibe_Coding/Vibe_Coding_Production_Practices.md", category: "AI Engineering", categoryId: "07", description: "Vibe Coding 生产环境实战: 安全、CI/CD、案例分析" },
-      { slug: "vibe-coding-for-dummy", title: "Vibe Coding for Dummies", filePath: "07_AI_Engineering/Vibe_Coding/Vibe_Coding_for_dummy.md", category: "AI Engineering", categoryId: "07", description: "Vibe Coding 5分钟入门指南+实战练习" },
-      { slug: "ai-infrastructure", title: "AI Infrastructure 2026", filePath: "07_AI_Engineering/AI_Infrastructure_2026.md", category: "AI Engineering", categoryId: "07", description: "Flash Attention、GPU 集群、推理优化" },
-      { slug: "agent-production", title: "Agent Production", filePath: "07_AI_Engineering/Agent_Production/Agent_Production_2026.md", category: "AI Engineering", categoryId: "07", description: "Agent 生产化部署与运维" },
-      { slug: "ai-workflow", title: "AI Workflow", filePath: "07_AI_Engineering/AI_Workflow/Workflow-in-nutshell.md", category: "AI Engineering", categoryId: "07", description: "AI 工作流编排与自动化" },
+      { slug: "rag-systems", title: "RAG Systems", filePath: "11_RAG_Systems/RAG_Systems.md", category: "AI Engineering", categoryId: "07", description: "Naive/Advanced/Graph/Agentic RAG" },
+      { slug: "rag-advanced", title: "RAG Advanced 2026", filePath: "11_RAG_Systems/RAG_Advanced_2026.md", category: "AI Engineering", categoryId: "07", description: "2026 RAG 高级技术与架构" },
+      { slug: "deployment-inference", title: "Deployment & Inference", filePath: "09_Deployment_Inference/Deployment_Inference.md", category: "AI Engineering", categoryId: "07", description: "vLLM、TensorRT-LLM、量化、Speculative Decoding" },
+      { slug: "mlops-pipeline", title: "MLOps Pipeline", filePath: "10_MLOps_Pipeline/MLOps_Pipeline.md", category: "AI Engineering", categoryId: "07", description: "Kubeflow、MLflow、模型注册、Drift 监控" },
+      { slug: "model-evaluation", title: "Model Evaluation", filePath: "08_Model_Evaluation/Model_Evaluation.md", category: "AI Engineering", categoryId: "07", description: "MMLU、HumanEval、MT-Bench、LLM-as-Judge" },
+      { slug: "model-training", title: "Model Training", filePath: "07_Model_Training/Model-Training-in-nutshell.md", category: "AI Engineering", categoryId: "07", description: "分布式训练、DeepSpeed、Megatron-LM" },
+      { slug: "ai-coding-assistants", title: "AI Coding Assistants", filePath: "17_AI_Coding/AI_Coding_Assistants_2026.md", category: "AI Engineering", categoryId: "07", description: "Cursor、Windsurf、Copilot、Devin" },
+      { slug: "vibe-coding-methodology", title: "Vibe Coding Methodology 2026", filePath: "17_AI_Coding/Vibe_Coding_Methodology_2026.md", category: "AI Engineering", categoryId: "07", description: "自然语言驱动开发方法论: DGRV循环、提示工程、质量体系" },
+      { slug: "vibe-coding-production", title: "Vibe Coding Production Practices", filePath: "17_AI_Coding/Vibe_Coding_Production_Practices.md", category: "AI Engineering", categoryId: "07", description: "Vibe Coding 生产环境实战: 安全、CI/CD、案例分析" },
+      { slug: "vibe-coding-for-dummy", title: "Vibe Coding for Dummies", filePath: "17_AI_Coding/Vibe_Coding_for_dummy.md", category: "AI Engineering", categoryId: "07", description: "Vibe Coding 5分钟入门指南+实战练习" },
+      { slug: "ai-infrastructure", title: "AI Infrastructure 2026", filePath: "12_Architecture_Infrastructure/AI_Infrastructure_2026.md", category: "AI Engineering", categoryId: "07", description: "Flash Attention、GPU 集群、推理优化" },
+      { slug: "agent-production", title: "Agent Production", filePath: "13_Agent_Production/Enterprise_Agent/Agent_Production_2026.md", category: "AI Engineering", categoryId: "07", description: "Agent 生产化部署与运维" },
+      { slug: "ai-workflow", title: "AI Workflow", filePath: "13_Agent_Production/Agent_Workflow/Workflow-in-nutshell.md", category: "AI Engineering", categoryId: "07", description: "AI 工作流编排与自动化" },
     ],
   },
   {
@@ -134,9 +142,9 @@ export const docSections: DocSection[] = [
     title: "Ethics & Safety",
     description: "AI 安全、Red Teaming、可解释性、价值对齐、治理",
     docs: [
-      { slug: "ai-safety-redteaming", title: "AI Safety & Red Teaming", filePath: "08_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming.md", category: "Ethics & Safety", categoryId: "08", description: "Red Teaming、对抗攻击、安全评估" },
-      { slug: "ai-security", title: "AI Security 2026", filePath: "08_Ethics_Safety/AI_Security_2026/AI_Security_2026.md", category: "Ethics & Safety", categoryId: "08", description: "Prompt Injection、AI 水印、前沿模型风险" },
-      { slug: "value-alignment", title: "Value Alignment", filePath: "08_Ethics_Safety/Value_Alignment/Value_Alignment.md", category: "Ethics & Safety", categoryId: "08", description: "RLHF、Constitutional AI、机制可解释性" },
+      { slug: "ai-safety-redteaming", title: "AI Safety & Red Teaming", filePath: "19_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming.md", category: "Ethics & Safety", categoryId: "08", description: "Red Teaming、对抗攻击、安全评估" },
+      { slug: "ai-security", title: "AI Security 2026", filePath: "19_Ethics_Safety/AI_Security_2026/AI_Security_2026.md", category: "Ethics & Safety", categoryId: "08", description: "Prompt Injection、AI 水印、前沿模型风险" },
+      { slug: "value-alignment", title: "Value Alignment", filePath: "19_Ethics_Safety/Value_Alignment/Value_Alignment.md", category: "Ethics & Safety", categoryId: "08", description: "RLHF、Constitutional AI、机制可解释性" },
     ],
   },
   {
@@ -144,16 +152,16 @@ export const docSections: DocSection[] = [
     title: "Talks & Insights",
     description: "21 位 AI 领袖人物演讲解读",
     docs: [
-      { slug: "geoffrey-hinton", title: "Geoffrey Hinton", filePath: "09_Talks/Geoffrey_Hinton/about.md", category: "Talks", categoryId: "09", description: "深度学习之父 Hinton 演讲解读" },
-      { slug: "yann-lecun", title: "Yann LeCun", filePath: "09_Talks/Yann_LeCun/about.md", category: "Talks", categoryId: "09", description: "LeCun 关于 JEPA 与世界模型的洞察" },
-      { slug: "andrej-karpathy", title: "Andrej Karpathy", filePath: "09_Talks/Andrej_Karpathy/about.md", category: "Talks", categoryId: "09", description: "Karpathy 关于 LLM 与 AI 趋势" },
-      { slug: "sam-altman", title: "Sam Altman", filePath: "09_Talks/Sam_Altman/about.md", category: "Talks", categoryId: "09", description: "OpenAI CEO 关于 AGI 的演讲" },
-      { slug: "ilya-sutskever", title: "Ilya Sutskever", filePath: "09_Talks/Ilya_Sutskever/about.md", category: "Talks", categoryId: "09", description: "Sutskever 关于超级智能的思考" },
-      { slug: "dario-amodei", title: "Dario Amodei", filePath: "09_Talks/Dario_Amodei/about.md", category: "Talks", categoryId: "09", description: "Anthropic CEO 关于 AI 安全" },
-      { slug: "fei-fei-li", title: "Fei-Fei Li", filePath: "09_Talks/Fei_Fei_Li/about.md", category: "Talks", categoryId: "09", description: "李飞飞关于计算机视觉与空间智能" },
-      { slug: "demis-hassabis", title: "Demis Hassabis", filePath: "09_Talks/Demis_Hassabis/about.md", category: "Talks", categoryId: "09", description: "DeepMind CEO 关于 AI for Science" },
-      { slug: "andrew-ng", title: "Andrew Ng", filePath: "09_Talks/Andrew_Ng/about.md", category: "Talks", categoryId: "09", description: "吴恩达关于 AI 工程与教育" },
-      { slug: "jensen-huang", title: "Jensen Huang", filePath: "09_Talks/Jensen_Huang/about.md", category: "Talks", categoryId: "09", description: "黄仁勋关于 AI 基础设施" },
+      { slug: "geoffrey-hinton", title: "Geoffrey Hinton", filePath: "21_Talks/Geoffrey_Hinton/about.md", category: "Talks", categoryId: "09", description: "深度学习之父 Hinton 演讲解读" },
+      { slug: "yann-lecun", title: "Yann LeCun", filePath: "21_Talks/Yann_LeCun/about.md", category: "Talks", categoryId: "09", description: "LeCun 关于 JEPA 与世界模型的洞察" },
+      { slug: "andrej-karpathy", title: "Andrej Karpathy", filePath: "21_Talks/Andrej_Karpathy/about.md", category: "Talks", categoryId: "09", description: "Karpathy 关于 LLM 与 AI 趋势" },
+      { slug: "sam-altman", title: "Sam Altman", filePath: "21_Talks/Sam_Altman/about.md", category: "Talks", categoryId: "09", description: "OpenAI CEO 关于 AGI 的演讲" },
+      { slug: "ilya-sutskever", title: "Ilya Sutskever", filePath: "21_Talks/Ilya_Sutskever/about.md", category: "Talks", categoryId: "09", description: "Sutskever 关于超级智能的思考" },
+      { slug: "dario-amodei", title: "Dario Amodei", filePath: "21_Talks/Dario_Amodei/about.md", category: "Talks", categoryId: "09", description: "Anthropic CEO 关于 AI 安全" },
+      { slug: "fei-fei-li", title: "Fei-Fei Li", filePath: "21_Talks/Fei_Fei_Li/about.md", category: "Talks", categoryId: "09", description: "李飞飞关于计算机视觉与空间智能" },
+      { slug: "demis-hassabis", title: "Demis Hassabis", filePath: "21_Talks/Demis_Hassabis/about.md", category: "Talks", categoryId: "09", description: "DeepMind CEO 关于 AI for Science" },
+      { slug: "andrew-ng", title: "Andrew Ng", filePath: "21_Talks/Andrew_Ng/about.md", category: "Talks", categoryId: "09", description: "吴恩达关于 AI 工程与教育" },
+      { slug: "jensen-huang", title: "Jensen Huang", filePath: "21_Talks/Jensen_Huang/about.md", category: "Talks", categoryId: "09", description: "黄仁勋关于 AI 基础设施" },
     ],
   },
   {
@@ -161,7 +169,7 @@ export const docSections: DocSection[] = [
     title: "Papers",
     description: "AI 经典论文解读与参考",
     docs: [
-      { slug: "papers-index", title: "Papers Reading List", filePath: "10_Papers/README.md", category: "Papers", categoryId: "10", description: "AI 论文阅读清单" },
+      { slug: "papers-index", title: "Papers Reading List", filePath: "22_Papers/README.md", category: "Papers", categoryId: "10", description: "AI 论文阅读清单" },
     ],
   },
   {
@@ -169,16 +177,16 @@ export const docSections: DocSection[] = [
     title: "Interview Prep",
     description: "21 个 AI 岗位面试准备",
     docs: [
-      { slug: "machine-learning-engineer", title: "Machine Learning Engineer", filePath: "11_Interviews/Machine_Learning_Engineer/question_bank.md", category: "Interview", categoryId: "11", description: "ML 工程师面试：算法、系统设计、实战" },
-      { slug: "data-scientist", title: "Data Scientist", filePath: "11_Interviews/Data_Scientist/question_bank.md", category: "Interview", categoryId: "11", description: "数据科学家面试：统计、建模、A/B 测试" },
-      { slug: "nlp-engineer", title: "NLP Engineer", filePath: "11_Interviews/NLP_Engineer/question_bank.md", category: "Interview", categoryId: "11", description: "NLP 工程师面试准备" },
-      { slug: "computer-vision-engineer", title: "Computer Vision Engineer", filePath: "11_Interviews/Computer_Vision_Engineer/question_bank.md", category: "Interview", categoryId: "11", description: "CV 工程师面试准备" },
-      { slug: "mlops-engineer", title: "MLOps Engineer", filePath: "11_Interviews/MLOps_Engineer/question_bank.md", category: "Interview", categoryId: "11", description: "MLOps 工程师面试准备" },
-      { slug: "ai-research-scientist", title: "AI Research Scientist", filePath: "11_Interviews/AI_Research_Scientist/question_bank.md", category: "Interview", categoryId: "11", description: "AI 研究科学家面试准备" },
-      { slug: "prompt-engineer", title: "Prompt Engineer", filePath: "11_Interviews/Prompt_Engineer/question_bank.md", category: "Interview", categoryId: "11", description: "Prompt 工程师面试准备" },
-      { slug: "robotics-engineer", title: "Robotics Engineer", filePath: "11_Interviews/Robotics_Engineer/question_bank.md", category: "Interview", categoryId: "11", description: "机器人工程师面试准备" },
-      { slug: "ai-security-engineer", title: "AI Security Engineer", filePath: "11_Interviews/AI_Security_Engineer/question_bank.md", category: "Interview", categoryId: "11", description: "AI 安全工程师面试准备" },
-      { slug: "llm-platform-engineer", title: "LLM Platform Engineer", filePath: "11_Interviews/LLM_Platform_Engineer/question_bank.md", category: "Interview", categoryId: "11", description: "LLM 平台工程师面试准备" },
+      { slug: "machine-learning-engineer", title: "Machine Learning Engineer", filePath: "23_Interviews/Machine_Learning_Engineer/question_bank.md", category: "Interview", categoryId: "11", description: "ML 工程师面试：算法、系统设计、实战" },
+      { slug: "data-scientist", title: "Data Scientist", filePath: "23_Interviews/Data_Scientist/question_bank.md", category: "Interview", categoryId: "11", description: "数据科学家面试：统计、建模、A/B 测试" },
+      { slug: "nlp-engineer", title: "NLP Engineer", filePath: "23_Interviews/NLP_Engineer/question_bank.md", category: "Interview", categoryId: "11", description: "NLP 工程师面试准备" },
+      { slug: "computer-vision-engineer", title: "Computer Vision Engineer", filePath: "23_Interviews/Computer_Vision_Engineer/question_bank.md", category: "Interview", categoryId: "11", description: "CV 工程师面试准备" },
+      { slug: "mlops-engineer", title: "MLOps Engineer", filePath: "23_Interviews/MLOps_Engineer/question_bank.md", category: "Interview", categoryId: "11", description: "MLOps 工程师面试准备" },
+      { slug: "ai-research-scientist", title: "AI Research Scientist", filePath: "23_Interviews/AI_Research_Scientist/question_bank.md", category: "Interview", categoryId: "11", description: "AI 研究科学家面试准备" },
+      { slug: "prompt-engineer", title: "Prompt Engineer", filePath: "23_Interviews/Prompt_Engineer/question_bank.md", category: "Interview", categoryId: "11", description: "Prompt 工程师面试准备" },
+      { slug: "robotics-engineer", title: "Robotics Engineer", filePath: "23_Interviews/Robotics_Engineer/question_bank.md", category: "Interview", categoryId: "11", description: "机器人工程师面试准备" },
+      { slug: "ai-security-engineer", title: "AI Security Engineer", filePath: "23_Interviews/AI_Security_Engineer/question_bank.md", category: "Interview", categoryId: "11", description: "AI 安全工程师面试准备" },
+      { slug: "llm-platform-engineer", title: "LLM Platform Engineer", filePath: "23_Interviews/LLM_Platform_Engineer/question_bank.md", category: "Interview", categoryId: "11", description: "LLM 平台工程师面试准备" },
     ],
   },
   {
@@ -186,10 +194,10 @@ export const docSections: DocSection[] = [
     title: "Agent Evaluation",
     description: "Agent 评估框架、基准测试、RAPS 模型、测试方法论",
     docs: [
-      { slug: "agent-harness", title: "Agent Harness Complete 2026", filePath: "12_Agent_Evaluation/Agent_Harness_Complete_2026.md", category: "Agent Evaluation", categoryId: "12", description: "Agent 评估框架完整指南" },
-      { slug: "benchmarking", title: "Benchmarking Criteria", filePath: "12_Agent_Evaluation/Benchmarking/Benchmarking_Criteria.md", category: "Agent Evaluation", categoryId: "12", description: "RAPS 评估模型与基准测试标准" },
-      { slug: "evaluation-metrics", title: "Evaluation Metrics", filePath: "12_Agent_Evaluation/Metrics/Evaluation_Metrics.md", category: "Agent Evaluation", categoryId: "12", description: "准确率、延迟、安全性等评估指标" },
-      { slug: "testing-framework", title: "Testing Framework", filePath: "12_Agent_Evaluation/Testing_Methodologies/Testing_Framework.md", category: "Agent Evaluation", categoryId: "12", description: "Agent 测试框架与测试套件" },
+      { slug: "agent-harness", title: "Agent Harness Complete 2026", filePath: "13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026.md", category: "Agent Evaluation", categoryId: "12", description: "Agent 评估框架完整指南" },
+      { slug: "benchmarking", title: "Benchmarking Criteria", filePath: "13_Agent_Production/16_Agent_Evaluation/Benchmarking/Benchmarking_Criteria.md", category: "Agent Evaluation", categoryId: "12", description: "RAPS 评估模型与基准测试标准" },
+      { slug: "evaluation-metrics", title: "Evaluation Metrics", filePath: "13_Agent_Production/16_Agent_Evaluation/Metrics/Evaluation_Metrics.md", category: "Agent Evaluation", categoryId: "12", description: "准确率、延迟、安全性等评估指标" },
+      { slug: "testing-framework", title: "Testing Framework", filePath: "13_Agent_Production/16_Agent_Evaluation/Testing_Methodologies/Testing_Framework.md", category: "Agent Evaluation", categoryId: "12", description: "Agent 测试框架与测试套件" },
     ],
   },
   {
@@ -197,7 +205,7 @@ export const docSections: DocSection[] = [
     title: "AI Applications & Industry",
     description: "AI 行业应用：医疗、金融、制造、零售、交通、教育",
     docs: [
-      { slug: "ai-applications-industry", title: "AI Applications & Industry", filePath: "13_AI_Applications_Industry/AI_Applications_Industry.md", category: "Industry", categoryId: "13", description: "AI 行业融合：医疗 (AlphaFold)、金融、制造、零售" },
+      { slug: "ai-applications-industry", title: "AI Applications & Industry", filePath: "20_AI_Applications_Industry/AI_Applications_Industry.md", category: "Industry", categoryId: "13", description: "AI 行业融合：医疗 (AlphaFold)、金融、制造、零售" },
     ],
   },
 ];

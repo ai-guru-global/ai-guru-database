@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(chmod *)",
+      "Bash(./count_words.sh)",
+      "Bash(find *)",
+      "Bash(xargs *)",
+      "Bash(timeout *)",
+      "Bash(python3 *)"
+    ]
+  },
+  "$version": 3
+}

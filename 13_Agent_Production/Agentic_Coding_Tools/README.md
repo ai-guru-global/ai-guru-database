@@ -1,0 +1,40 @@
+# Agentic Coding 工具
+
+> 从代码补全到完全自主执行，AI Agent 编程工具正在重塑软件开发的每个环节。
+
+---
+
+## 概述
+
+本目录收录 Agentic Coding 工具的深度解析与选型对比，覆盖 CLI Agent、IDE 集成、代码审查、自主执行等多种工具形态。
+
+## 文档清单
+
+| 文档 | 内容 | 适用角色 |
+|------|------|----------|
+| [Agentic Coding Tools Overview](./Agentic_Coding_Tools_Overview.md) | AI Agent 全景图 (20+ 工具分层对比) | 全角色、入门选型 |
+| [Claude Code Deep Dive](./Claude_Code_Deep_Dive.md) | Anthropic 官方 Agent 编程 CLI 深度解析 | 开发者、评估师 |
+| [OpenCode Deep Dive](./OpenCode_Deep_Dive.md) | 自主执行式 AI 编程 Agent 架构与实践 | 开发者、评估师 |
+| [Windsurf / Cursor / Devin](./Windsurf_Cursor_Devin_Dive.md) | Agentic Coding CLI 全景对比 | 开发者、产品经理 |
+| [International Agentic Tools](./International_Agentic_Tools.md) | 国际工具 (Aider/Continue/CodeRabbit/Cody/Tabnine/Codeium) | 开发者、选型参考 |
+
+## 工具能力光谱
+
+```
+代码补全             半自主执行           完全自主
+─────────           ────────            ────────
+Copilot             Cursor              Devin
+Tabnine             Windsurf            SWE-agent
+Codeium             Claude Code
+                    OpenCode
+```
+
+## 关联目录
+
+- [Agent Harness](../Agent_Harness/) -- Harness 工程与架构
+- [Agent Frameworks](../Agent_Frameworks/) -- 多 Agent 开发框架
+- [16_Agent_Evaluation](../16_Agent_Evaluation/) -- 工具评估基准 (SWE-bench 等)
+
+---
+
+*Last updated: 2026-04-14*

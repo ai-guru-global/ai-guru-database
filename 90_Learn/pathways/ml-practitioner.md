@@ -185,7 +185,7 @@ Phase 6: 完成端到端项目
 |---------|---------|
 | 想专注 LLM 应用开发 | [LLM 工程师路径](./llm-engineer.md) |
 | 想做 AI 研究/读论文 | [AI 研究者路径](./ai-researcher.md) |
-| 想系统评估/测试 AI | [Agent 评估框架](../../12_Agent_Evaluation/README.md) |
+| 想系统评估/测试 AI | [Agent 评估框架](../../13_Agent_Production/16_Agent_Evaluation/README.md) |
 
 ---
 

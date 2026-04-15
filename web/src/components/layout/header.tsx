@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { Search, Menu, X, BookOpen } from "lucide-react";
+import { Search, Menu, X, BookOpen, Settings, ChevronDown } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "./theme-toggle";
@@ -13,8 +13,16 @@ const navItems = [
   { label: "Search", href: "/search" },
 ];
 
+const settingsItems = [
+  { label: "Qwen", href: "/settings/qwen" },
+  { label: "GLM", href: "/settings/glm" },
+  { label: "Minimax", href: "/settings/minimax" },
+  { label: "Kimi", href: "/settings/kimi" },
+];
+
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [settingsOpen, setSettingsOpen] = useState(false);
   const location = useLocation();
 
   return (
@@ -42,6 +50,35 @@ export function Header() {
                 {item.label}
               </Link>
             ))}
+            <div className="relative">
+              <button
+                onClick={() => setSettingsOpen(!settingsOpen)}
+                className={cn(
+                  "flex items-center gap-1 transition-colors hover:text-foreground/80",
+                  location.pathname.startsWith("/settings")
+                    ? "text-foreground"
+                    : "text-foreground/60"
+                )}
+              >
+                <Settings className="h-4 w-4" />
+                Settings
+                <ChevronDown className="h-3 w-3" />
+              </button>
+              {settingsOpen && (
+                <div className="absolute left-0 top-full mt-2 w-40 rounded-md border bg-background shadow-lg">
+                  {settingsItems.map((item) => (
+                    <Link
+                      key={item.href}
+                      to={item.href}
+                      className="block px-4 py-2 text-sm hover:bg-muted"
+                      onClick={() => setSettingsOpen(false)}
+                    >
+                      {item.label}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
           </nav>
         </div>
         <div className="flex flex-1 items-center justify-end space-x-2">
@@ -95,6 +132,19 @@ export function Header() {
                   {item.label}
                 </Link>
               ))}
+              <div className="pt-2">
+                <p className="text-sm font-medium text-foreground/60">Settings</p>
+                {settingsItems.map((item) => (
+                  <Link
+                    key={item.href}
+                    to={item.href}
+                    className="block py-2 text-sm font-medium text-foreground/60 hover:text-foreground"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
             </nav>
           </div>
         </div>

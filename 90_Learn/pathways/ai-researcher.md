@@ -208,7 +208,7 @@ Phase 6: 前沿专题（多模态 / Agent / 世界模型）
 - 核心论文：Mechanistic Interpretability Survey、ARC Prize
 
 **专题 D: Agent 评估**
-- [Agent 评估框架](../../12_Agent_Evaluation/README.md)
+- [Agent 评估框架](../../13_Agent_Production/16_Agent_Evaluation/README.md)
 - 核心论文：RAPS 模型、AgentBench、GAIA Benchmark
 
 **✅ 学会标志**：

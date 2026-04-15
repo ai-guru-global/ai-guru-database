@@ -783,7 +783,7 @@
 | **VLA 模型** | `06_Reinforcement_Learning/Robotics_Embodied_AI/VLA_Models_2026.md` | π0、RDT、OpenVLA 详解 |
 | **JEPA 深度解析** | `03_Deep_Learning/World_Models/JEPA_Architecture_2026.md` | LeCun 世界模型完整指南 |
 | **具身智能指南** | `06_Reinforcement_Learning/Robotics_Embodied_AI/Embodied_AI_Complete_2026.md` | 人形机器人、技术栈 |
-| **Agent Harness** | `12_Agent_Evaluation/Agent_Harness_Complete_2026.md` | Agent 评估框架详解 |
+| **Agent Harness** | `13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026.md` | Agent 评估框架详解 |
 | **Agent 未来路线图** | `06_Reinforcement_Learning/AI_Agents/Agent_Future_Roadmap_2026_2030.md` | 2026-2030 技术预测 |
 | **AI 基础设施趋势** | `07_AI_Engineering/AI_Infrastructure_Trends_2026.md` | H100/B200、SGLang、成本优化 |
 | **概念知识图谱** | `AI_Concept_Knowledge_Graph.md` | 概念依赖关系与学习路径 |

@@ -1,61 +1,83 @@
 # Agent 生产部署 (Agent Production)
 
+> **一句话理解**: 从 Agent 原型到生产级系统，需要 Harness 工程、框架选型、平台部署、记忆架构、安全合规的完整工程体系。
+
+---
+
+## 目录结构
+
+```
+13_Agent_Production/
+├── Agent_Harness/          -- Agent Harness 工程（架构、组件、多角色指南）
+├── Agentic_Coding_Tools/   -- Agentic Coding 工具（Claude Code、Cursor、Devin 等）
+├── Agent_Frameworks/       -- 多 Agent 开发框架（AutoGen、CrewAI、LangGraph、AgentScope）
+├── Agent_Platforms/        -- Agent 平台与部署（Dify、Coze、OpenRouter）
+├── Memory_Infrastructure/  -- 记忆与基础设施（MemGPT、LlamaIndex、向量库）
+├── Enterprise_Agent/       -- 企业级 Agent（生产部署、Hermes Agent）
+├── Agent_Ecosystem_CN/     -- 国内 AI Agent 生态（产品、开源项目）
+├── assets/                 -- 资源文件（图片等）
+├── config/                 -- 配置文件
+├── src/                    -- 源代码
+└── tests/                  -- 测试脚本
+```
+
+---
+
 ## 文档导航
 
-### 核心文档
+### Agent Harness 工程
 
-| 文档 | 内容 | 适用读者 |
+| 文档 | 内容 | 适用角色 |
 |------|------|----------|
-| [Agent_Production_2026.md](./docs/Agent_Production_2026.md) | Agent生产部署最佳实践 | 全面学习 |
-| [Agentic_Coding_Tools_Overview.md](./docs/Agentic_Coding_Tools_Overview.md) | AI Agent 全景图 (40+ 工具汇总) | 入门/选型 |
+| [Agent Harness README](./Agent_Harness/) | Harness 专题入口与角色指南 | 全角色 |
+| [The Anatomy of an Agent Harness](./Agent_Harness/The_Anatomy_of_an_Agent_Harness.md) | LangChain 博客：Harness 工程定义与核心组件 | 设计师、架构师 |
+| [Agent Harness 技术架构 2026](./Agent_Harness/Agent_Harness_Architecture_2026.md) | 技术架构、配置参数、性能指标、兼容性矩阵 | 全角色 |
 
-### Agentic Coding CLI 工具
+### Agentic Coding 工具
 
-| 文档 | 内容 | 适用读者 |
+| 文档 | 内容 | 适用角色 |
 |------|------|----------|
-| [Claude_Code_Deep_Dive.md](./docs/Claude_Code_Deep_Dive.md) | Anthropic 官方 Agent 编程 CLI | 开发/评测 |
-| [OpenCode_Deep_Dive.md](./docs/OpenCode_Deep_Dive.md) | OpenCode 自主执行式编程 Agent | 开发/评测 |
-| [Windsurf_Cursor_Devin_Dive.md](./docs/Windsurf_Cursor_Devin_Dive.md) | CLI 工具全景对比 (Cursor/Windsurf/Devin) | 选型参考 |
-| [International_Agentic_Tools.md](./docs/International_Agentic_Tools.md) | 国际 Agentic Coding 工具 (Aider/Continue/CodeRabbit/Cody) | 开发/选型 |
-
-### 国内 AI Agent 产品
-
-| 文档 | 内容 | 适用读者 |
-|------|------|----------|
-| [Domestic_AI_Agent_Products_CN.md](./docs/Domestic_AI_Agent_Products_CN.md) | 国内 AI Agent 产品 (通义/Kimi/智谱/豆包等) | 选型/参考 |
-
-### 国内开源 Agent 项目
-
-| 文档 | 内容 | 适用读者 |
-|------|------|----------|
-| [Chinese_OpenSource_Agent_Projects.md](./docs/Chinese_OpenSource_Agent_Projects.md) | 国内开源 Agent (ChatDev/XAgent/MetaGPT/SWE-agent) | 开发/选型 |
-| [CoPaw_Deep_Dive.md](../OpenClaw_Ecosystem/CoPaw_Deep_Dive.md) | 阿里开源个人 AI 助手 | 开发/参考 |
+| [Agentic Coding Tools Overview](./Agentic_Coding_Tools/Agentic_Coding_Tools_Overview.md) | AI Agent 全景图 (20+ 工具汇总) | 入门、选型 |
+| [Claude Code Deep Dive](./Agentic_Coding_Tools/Claude_Code_Deep_Dive.md) | Anthropic 官方 Agent 编程 CLI | 开发者、评估师 |
+| [OpenCode Deep Dive](./Agentic_Coding_Tools/OpenCode_Deep_Dive.md) | 自主执行式 AI 编程 Agent | 开发者、评估师 |
+| [Windsurf / Cursor / Devin](./Agentic_Coding_Tools/Windsurf_Cursor_Devin_Dive.md) | CLI 工具全景对比 | 选型参考 |
+| [International Agentic Tools](./Agentic_Coding_Tools/International_Agentic_Tools.md) | 国际工具 (Aider/Continue/CodeRabbit/Cody) | 开发者、选型 |
 
 ### Agent 开发框架
 
-| 文档 | 内容 | 适用读者 |
+| 文档 | 内容 | 适用角色 |
 |------|------|----------|
-| [AutoGen_CrewAI_LangGraph_Dive.md](./docs/AutoGen_CrewAI_LangGraph_Dive.md) | 多 Agent 框架对比 (AutoGen/CrewAI/LangGraph) | 开发/选型 |
-| [AgentScope_Deep_Dive.md](./docs/AgentScope_Deep_Dive.md) | 阿里巴巴多智能体开发平台 | 开发/评测 |
+| [AutoGen / CrewAI / LangGraph](./Agent_Frameworks/AutoGen_CrewAI_LangGraph_Dive.md) | 多 Agent 框架对比 | 开发者、架构师 |
+| [AgentScope Deep Dive](./Agent_Frameworks/AgentScope_Deep_Dive.md) | 阿里巴巴多智能体平台 | 开发者、架构师 |
 
 ### Agent 平台与部署
 
-| 文档 | 内容 | 适用读者 |
+| 文档 | 内容 | 适用角色 |
 |------|------|----------|
-| [OpenRouter_Deep_Dive.md](./docs/OpenRouter_Deep_Dive.md) | OpenRouter 统一模型网关与智能路由 | 架构/集成 |
-| [Dify_Coze_MLServe_Dive.md](./docs/Dify_Coze_MLServe_Dive.md) | Agent 平台对比 (Dify/Coze/LocalAI) | 选型/部署 |
+| [Dify / Coze / LocalAI](./Agent_Platforms/Dify_Coze_MLServe_Dive.md) | Agent 平台对比 | 产品经理、架构师 |
+| [OpenRouter Deep Dive](./Agent_Platforms/OpenRouter_Deep_Dive.md) | 统一模型网关与智能路由 | 架构师、开发者 |
 
-### RAG、记忆与基础设施
+### 记忆与基础设施
 
-| 文档 | 内容 | 适用读者 |
+| 文档 | 内容 | 适用角色 |
 |------|------|----------|
-| [RAG_Memory_Infrastructure_Tools.md](./docs/RAG_Memory_Infrastructure_Tools.md) | RAG/记忆/基础设施工具 (LlamaIndex/LangChain/MemGPT等) | 架构/开发 |
+| [Agent Memory Systems 2026](./Memory_Infrastructure/Agent_Memory_Systems_2026.md) | AI Agent 记忆系统架构 | 架构师、开发者 |
+| [RAG Memory Infrastructure Tools](./Memory_Infrastructure/RAG_Memory_Infrastructure_Tools.md) | RAG/记忆/基础设施全栈 | 架构师、开发者 |
 
 ### 企业级 Agent
 
-| 文档 | 内容 | 适用读者 |
+| 文档 | 内容 | 适用角色 |
 |------|------|----------|
-| [Hermes_Agent_Deep_Dive.md](./docs/Hermes_Agent_Deep_Dive.md) | Hermes 企业级 Agent 运行时 | 架构/安全 |
+| [Agent Production 2026](./Enterprise_Agent/Agent_Production_2026.md) | Agent 生产部署最佳实践 | 架构师、SRE |
+| [Hermes Agent Deep Dive](./Enterprise_Agent/Hermes_Agent_Deep_Dive.md) | 企业级 Agent 运行时 | 架构师、安全工程师 |
+
+### 国内 AI Agent 生态
+
+| 文档 | 内容 | 适用角色 |
+|------|------|----------|
+| [国内 AI Agent 产品](./Agent_Ecosystem_CN/Domestic_AI_Agent_Products_CN.md) | 通义千问/Kimi/智谱/豆包等 | 产品经理、选型 |
+| [国内开源 Agent 项目](./Agent_Ecosystem_CN/Chinese_OpenSource_Agent_Projects.md) | ChatDev/XAgent/MetaGPT/SWE-agent | 开发者、选型 |
+| [CoPaw Deep Dive](./23_OpenClaw_Ecosystem/CoPaw_Deep_Dive.md) | 阿里开源个人 AI 助手 | 开发者、参考 |
 
 ---
 
@@ -108,9 +130,13 @@ L4: 持久化知识 → SQL/NoSQL
 
 ---
 
-## 一句话总结
+## 关联目录
 
-> **生产部署 ≠ 原型上线** — 企业级Agent需要分层架构、完善监控、CI/CD流水线，以及严格的成本控制。
+- [16_Agent_Evaluation](./16_Agent_Evaluation/) -- Agent 评估体系（Harness 评估视角、基准测试、评分框架）
+- [17_AI_Coding](../17_AI_Coding/) -- AI 编程方法论（Vibe Coding、Hermes Agent）
+- [23_OpenClaw_Ecosystem](./23_OpenClaw_Ecosystem/) -- OpenClaw 生态（CoPaw、QClaw）
+- [11_RAG_Systems](../11_RAG_Systems/) -- RAG 系统专题
+- [16_AI_Ops](../16_AI_Ops/) -- AI 系统运维
 
 ---
 
@@ -122,3 +148,7 @@ L4: 持久化知识 → SQL/NoSQL
 - [LlamaIndex](https://www.llamaindex.ai)
 - [LangChain](https://www.langchain.com)
 - [Dify](https://dify.ai)
+
+---
+
+*Last updated: 2026-04-14*

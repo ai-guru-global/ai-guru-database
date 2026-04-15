@@ -256,7 +256,7 @@ Agent 框架选择：
 
 | 你的打算 | 推荐去向 |
 |---------|---------|
-| 想深入 Agent 评估 | [Agent 评估框架](../../12_Agent_Evaluation/README.md) |
+| 想深入 Agent 评估 | [Agent 评估框架](../../13_Agent_Production/16_Agent_Evaluation/README.md) |
 | 想做 AI 研究 | [AI 研究者路径](./ai-researcher.md) |
 | 想补充 CV 能力 | [ML 从业者路径](./ml-practitioner.md) 方向 B（CV） |
 | 想进入 AI 产品领域 | [AI 产品经理路径](./product-manager.md) |

@@ -4,7 +4,7 @@
 
 <p><strong>这可能是 GitHub 上最全面的 AI 学习资源</strong></p>
 
-<p>从理论到生产的完整 AI 知识体系 | 290+ 文档 | 260万+ 字 | 2026 最新</p>
+<p>从理论到生产的完整 AI 知识体系 | 258+ 文档 | 383万+ 字 | 2026 最新</p>
 
 <p>
   <a href="#-快速开始">🚀 快速开始</a> •
@@ -15,9 +15,9 @@
 </p>
 
 <p>
-  <img src="https://img.shields.io/badge/文档-290%2B-blue?style=flat-square&logo=bookstack" alt="Docs">
-  <img src="https://img.shields.io/badge/字数-260万%2B-green?style=flat-square" alt="Content">
-  <img src="https://img.shields.io/badge/章节-30-orange?style=flat-square" alt="Chapters">
+  <img src="https://img.shields.io/badge/文档-258%2B-blue?style=flat-square&logo=bookstack" alt="Docs">
+  <img src="https://img.shields.io/badge/字数-383万%2B-green?style=flat-square" alt="Content">
+  <img src="https://img.shields.io/badge/章节-20-orange?style=flat-square" alt="Chapters">
   <img src="https://img.shields.io/badge/速成指南-9-purple?style=flat-square" alt="Guides">
   <img src="https://img.shields.io/badge/更新-2026--04-red?style=flat-square" alt="Updated">
   <img src="https://img.shields.io/badge/License-MIT-yellow?style=flat-square" alt="License">
@@ -44,8 +44,8 @@
 <td width="50%">
 
 **📚 内容全面**
-- 290+ Markdown 文档
-- 260万+ 字符（约 450 页 A4）
+- 258+ Markdown 文档
+- 383万+ 字符（约 640 页 A4）
 - 涵盖 70+ 技术领域
 - 从数学基础到 AGI 前沿
 
@@ -84,12 +84,31 @@
 ### 📊 数据说话
 
 ```
-📁 290 个 Markdown 文件    📄 260 万+ 字符
-📚 30 个知识章节          ⚡ 9 个速成指南
+📁 258 个 Markdown 文件    📄 383 万+ 字符（约 640 页 A4）
+📚 20 个知识章节          ⚡ 9 个速成指南
 🎓 10 本大学教材          🔬 12 个 2026 专题
 🏢 8 大行业应用           👔 21 个岗位面试指南
 🧪 8 个动手实验           📖 6 个经典案例
 ```
+
+#### 📈 各目录详细统计
+
+| 目录名称 | 文件数 | 字符数 | 占比 |
+|---------|--------|--------|------|
+| 13_Agent_Production | 89 | 140.67 万 | 36.7% |
+| 18_Cloud_Ops_Agent | 16 | 31.43 万 | 8.2% |
+| 06_Reinforcement_Learning | 19 | 35.30 万 | 9.2% |
+| 04_NLP_LLMs | 22 | 26.95 万 | 7.0% |
+| 19_Ethics_Safety | 13 | 18.64 万 | 4.9% |
+| 12_Architecture_Infrastructure | 7 | 17.54 万 | 4.6% |
+| 16_AI_Ops | 8 | 14.96 万 | 3.9% |
+| 15_Testing | 4 | 13.84 万 | 3.6% |
+| 03_Deep_Learning | 10 | 14.94 万 | 3.9% |
+| 00_AI_Introduction | 11 | 12.72 万 | 3.3% |
+| 其他 10 个目录 | 59 | 96.15 万 | 25.1% |
+| **总计** | **258** | **383.23 万** | **100%** |
+
+> 💡 提示：运行 `python3 count_words.py` 可查看最新的实时统计
 
 ---
 
@@ -165,7 +184,7 @@ curl -L -o ai-guru.zip https://github.com/your-org/ai-guru-knowledge-base/archiv
 
 ⏱️ 8-10 小时
 
-[行业应用 →](./26_AI_Applications_Industry/)
+[行业应用 →](./20_AI_Applications_Industry/)
 
 </td>
 <td align="center" width="25%">
@@ -176,7 +195,7 @@ curl -L -o ai-guru.zip https://github.com/your-org/ai-guru-knowledge-base/archiv
 
 ⏱️ 自主学习
 
-[必读论文 →](./28_Papers/)
+[必读论文 →](./22_Papers/)
 
 </td>
 </tr>
@@ -244,24 +263,22 @@ curl -L -o ai-guru.zip https://github.com/your-org/ai-guru-knowledge-base/archiv
 | **09** [部署与推理](./09_Deployment_Inference/) | 推理优化：vLLM、量化、模型服务 | ⭐⭐⭐⭐ |
 | **10** [MLOps 流水线](./10_MLOps_Pipeline/) | 自动化：CI/CD、模型版本管理、流水线编排 | ⭐⭐⭐⭐ |
 | **11** [RAG 系统](./11_RAG_Systems/) | 检索增强：向量数据库、混合检索、Agentic RAG、多模态检索 | ⭐⭐⭐ |
-| **12** [系统架构](./12_Architecture/) | 架构设计：四层模型、多租户、全景图 | ⭐⭐⭐⭐ |
-| **13** [Agent 生产部署](./13_Agent_Production/) | Agent 工程：K8s 部署、监控、Agent 框架 | ⭐⭐⭐⭐ |
-| **14** [AI 技能](./14_Skills/) | 技能体系：技能注册、组合、生态 | ⭐⭐⭐ |
-| **15** [AI 工作流](./15_Workflow/) | 工作流：LangGraph、错误处理、编排 | ⭐⭐⭐ |
-| **16** [Agent 评估](./16_Agent_Evaluation/) | 评估体系：Benchmark、红队测试、Leaderboard | ⭐⭐⭐⭐ |
-| **17** [AI 基础设施](./17_Infrastructure/) | 基础设施：SGLang、高可用、容量规划、边缘 AI | ⭐⭐⭐⭐ |
-| **18** [AI 网关](./18_AI_Gateway/) | 网关服务：路由、限流、模型网关 | ⭐⭐⭐ |
-| **19** [AI 运维](./19_AI_Ops/) | AIOps：可观测性、故障响应、混沌工程 | ⭐⭐⭐⭐ |
-| **20** [AI 测试](./20_Testing/) | 测试工程：测试框架、契约测试、数据管理 | ⭐⭐⭐ |
-| **21** [云产品运营](./21_Cloud_Product_Ops/) | 云运营：云产品智能体、运营实践 | ⭐⭐⭐ |
-| **22** [AI 编程助手](./22_AI_Coding_Assistants/) | 编程工具：Cursor、Claude Code、Devin | ⭐⭐ |
-| **23** [Vibe Coding](./23_Vibe_Coding/) | 方法论：自然语言驱动开发、DGRV 循环 | ⭐⭐ |
-| **24** [OpenClaw 生态](./24_OpenClaw_Ecosystem/) | 平台生态：CoPaw、QClaw、无影 AgentBay | ⭐⭐⭐ |
-| **25** [伦理与安全](./25_Ethics_Safety/) | AI 安全：价值对齐、红队测试、OWASP LLM+ASI | ⭐⭐⭐ |
-| **26** [行业应用](./26_AI_Applications_Industry/) | 行业融合：医疗/金融/制造/零售核心应用 | ⭐⭐ |
-| **27** [业界观点](./27_Talks/) | 领袖洞见：21 位 AI 领袖演讲与观点 | ⭐⭐ |
-| **28** [必读论文](./28_Papers/) | 经典文献：Transformer、GPT、BERT 等里程碑 | ⭐⭐⭐⭐ |
-| **29** [面试与岗位](./29_Interviews/) | 职业发展：21 个 AI 岗位面试指南 | ⭐⭐ |
+| **12** [架构与基础设施](./12_Architecture_Infrastructure/) | 架构设计 + 基础设施：四层模型、多租户、SGLang、高可用、容量规划、边缘 AI | ⭐⭐⭐⭐ |
+| **13** [Agent 生产部署](./13_Agent_Production/) | Agent 工程：框架、平台、Harness、技能、工作流、评估、OpenClaw 生态 | ⭐⭐⭐⭐ |
+| ↳ [Agent Skills](./13_Agent_Production/Agent_Skills/) | 技能体系：技能注册、组合、生态 | ⭐⭐⭐ |
+| ↳ [Agent Workflow](./13_Agent_Production/Agent_Workflow/) | 工作流：LangGraph、错误处理、编排 | ⭐⭐⭐ |
+| ↳ [Agent 评估](./13_Agent_Production/16_Agent_Evaluation/) | 评估体系：Benchmark、红队测试、Leaderboard | ⭐⭐⭐⭐ |
+| **14** [AI 网关](./14_AI_Gateway/) | 网关服务：路由、限流、模型网关 | ⭐⭐⭐ |
+| **15** [AI 测试](./15_Testing/) | 测试工程：测试框架、契约测试、数据管理 | ⭐⭐⭐ |
+| **16** [AI 运维](./16_AI_Ops/) | AIOps：可观测性、故障响应、混沌工程 | ⭐⭐⭐⭐ |
+| **17** [AI 编程](./17_AI_Coding/) | 编程工具与方法论：Cursor、Claude Code、Vibe Coding | ⭐⭐ |
+| **18** [云产品运营](./18_Cloud_Ops_Agent/) | 云运营：云产品智能体、运营实践 | ⭐⭐⭐ |
+| ↳ [OpenClaw 生态](./13_Agent_Production/23_OpenClaw_Ecosystem/) | 平台生态：CoPaw、QClaw、无影 AgentBay | ⭐⭐⭐ |
+| **19** [伦理与安全](./19_Ethics_Safety/) | AI 安全：价值对齐、红队测试、OWASP LLM+ASI | ⭐⭐⭐ |
+| **20** [行业应用](./20_AI_Applications_Industry/) | 行业融合：医疗/金融/制造/零售核心应用 | ⭐⭐ |
+| **21** [业界观点](./21_Talks/) | 领袖洞见：21 位 AI 领袖演讲与观点 | ⭐⭐ |
+| **22** [必读论文](./22_Papers/) | 经典文献：Transformer、GPT、BERT 等里程碑 | ⭐⭐⭐⭐ |
+| **23** [面试与岗位](./23_Interviews/) | 职业发展：21 个 AI 岗位面试指南 | ⭐⭐ |
 
 </details>
 
@@ -277,8 +294,8 @@ curl -L -o ai-guru.zip https://github.com/your-org/ai-guru-knowledge-base/archiv
 - [AI 硬件 2026](./01_Fundamentals/AI_Hardware/AI_Hardware_2026.md) - H100/H200/B200, GPU 选型
 - [PEFT 微调 2026](./04_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/) - LoRA/QLoRA/DoRA, 单卡微调 70B
 - [RAG 高级实践](./11_RAG_Systems/) - 混合检索、Agentic RAG
-- [AI 编程助手](./22_AI_Coding_Assistants/) - Cursor, Claude Code, Devin
-- [Vibe Coding 方法论](./23_Vibe_Coding/) - 自然语言驱动开发、DGRV循环、生产实践
+- [AI 编程助手](./17_AI_Coding/) - Cursor, Claude Code, Devin
+- [Vibe Coding 方法论](./17_AI_Coding/) - 自然语言驱动开发、DGRV循环、生产实践
 - [具身智能 2026](./06_Reinforcement_Learning/Robotics_Embodied_AI/) - VLA 模型、人形机器人
 
 </td>
@@ -286,10 +303,10 @@ curl -L -o ai-guru.zip https://github.com/your-org/ai-guru-knowledge-base/archiv
 
 - [世界模型 2026](./03_Deep_Learning/World_Models/) - JEPA/V-JEPA, LeCun 的 AGI 路径
 - [AI 视频生成](./05_Computer_Vision/Video_Generation/) - Veo3, Kling 3.0, 后 Sora 时代
-- [AI 安全 2026](./25_Ethics_Safety/AI_Security_2026/) - OWASP LLM, ASI 框架
+- [AI 安全 2026](./19_Ethics_Safety/AI_Security_2026/) - OWASP LLM, ASI 框架
 - [Agent 生产部署](./13_Agent_Production/) - K8s, 监控, CI/CD
 - [Agent 协议 2026](./06_Reinforcement_Learning/AI_Agents/Agent_Protocols_2026.md) - MCP/A2A/UCP
-- [AI 基础设施](./17_Infrastructure/AI_Infrastructure_2026.md) - SGLang, AI Gateway
+- [AI 基础设施](./12_Architecture_Infrastructure/AI_Infrastructure_2026.md) - SGLang, AI Gateway
 
 </td>
 </tr>

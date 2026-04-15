@@ -1,0 +1,46 @@
+site_name: Cloud Ops Agent 知识库
+site_description: 基于 Agent Harness 的云产品运维智能体系统性文档
+site_author: AI Guru Global
+docs_dir: docs
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - toc:
+      permalink: true
+
+nav:
+  - 首页: index.md
+  - 架构设计 (Architecture): architecture/index.md
+  - 研发指南 (Development): development/index.md
+  - 测试指南 (Testing): testing/index.md
+  - 运维指南 (Operations): operations/index.md
+  - 语料工程 (Corpus Engineering): corpus/index.md
+  - 产品管理 (Product Management): product/index.md
+  - 集成测试 (Integration Testing): integration_testing/index.md

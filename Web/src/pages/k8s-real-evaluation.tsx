@@ -7,11 +7,17 @@ import { Link } from "react-router-dom";
 import {
   ArrowLeft, Play, Loader2, CheckCircle2, XCircle,
   RotateCcw, ChevronDown, ChevronUp, History, Zap,
-  Database, MessageSquare, Settings2,
+  Database, MessageSquare, Settings2, Activity, TrendingUp,
+  BarChart3,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { K8sCapabilityMatrix } from "@/components/k8s-eval/K8sCapabilityMatrix";
+import { ScheduleCard } from "@/components/k8s-eval/ScheduleCard";
+import { TrendChart } from "@/components/k8s-eval/TrendChart";
+import { RunHistoryTable } from "@/components/k8s-eval/RunHistoryTable";
+import { useEvaluationStream } from "@/hooks/useEvaluationStream";
+import { EvaluationVisualizer } from "@/components/k8s-eval/EvaluationVisualizer";
 import {
   K8S_TEST_QUESTIONS, DIMENSION_META,
   type K8sDimension, type K8sTestQuestion,
@@ -170,6 +176,7 @@ export function K8sRealEvaluationPage() {
   const [customQuestion, setCustomQuestion] = useState("");
   const [singleResults, setSingleResults] = useState<SingleResult[]>([]);
   const [singleLoading, setSingleLoading] = useState(false);
+  const [vizResults, setVizResults] = useState<Record<string, SingleResult[]>>({});
 
   // Batch state
   const [batchRunning, setBatchRunning] = useState(false);
@@ -187,10 +194,19 @@ export function K8sRealEvaluationPage() {
   // Ref for abort
   const abortRef = useRef(false);
 
+  // SSE streaming state
+  const [streamingRunId, setStreamingRunId] = useState<string | null>(null);
+  const { state: streamState, connect: connectStream, disconnect: disconnectStream } = useEvaluationStream(streamingRunId);
+
   // Check API health on mount
   useEffect(() => {
     apiHealth().then(setModelStatus).catch(() => {});
     apiHistoryList().then(setHistory).catch(() => {});
+  }, []);
+
+  // Cleanup SSE on unmount
+  useEffect(() => {
+    return () => disconnectStream();
   }, []);
 
   // Toggle selection helpers
@@ -251,16 +267,75 @@ export function K8sRealEvaluationPage() {
     abortRef.current = false;
     setBatchProgress({ current: 0, total: questions.length * selectedModels.length });
 
+    // Start SSE stream
+    const runId = `run-${Date.now()}`;
+    setStreamingRunId(runId);
+    connectStream(runId);
+
     try {
-      const data = await apiBatch(selectedModels, questions);
-      setBatchSummary(data.summary);
-      setBatchResults(data.results);
-      apiHistoryList().then(setHistory).catch(() => {});
+      // Trigger evaluation
+      const triggerRes = await fetch("/api/k8s-eval/run", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ models: selectedModels }),
+      });
+      const triggerData = await triggerRes.json();
+
+      // Poll for results while streaming
+      const pollInterval = setInterval(async () => {
+        if (streamState.completed && streamState.runId) {
+          clearInterval(pollInterval);
+          try {
+            const historyRes = await fetch(`/api/k8s-eval/runs?limit=1`);
+            const historyData = await historyRes.json();
+            if (historyData.runs?.[0]) {
+              const detailRes = await fetch(`/api/k8s-eval/history/${historyData.runs[0].id}`);
+              const detailData = await detailRes.json();
+              if (detailData.record) {
+                // Build summary from detail
+                const summary: Record<string, any> = {};
+                for (const [modelId, resultList] of Object.entries(detailData.record.results || {})) {
+                  const list = resultList as any[];
+                  const totalScore = list.reduce((sum: number, r: any) => sum + (r.score?.total || 0), 0);
+                  const dimScores: Record<string, { sum: number; count: number }> = {};
+                  for (const r of list) {
+                    if (!dimScores[r.dimension]) dimScores[r.dimension] = { sum: 0, count: 0 };
+                    dimScores[r.dimension].sum += r.score?.total || 0;
+                    dimScores[r.dimension].count += 1;
+                  }
+                  const dimAverages: Record<string, number> = {};
+                  for (const [dim, vals] of Object.entries(dimScores)) {
+                    dimAverages[dim] = Math.round(((vals as any).sum / (vals as any).count) * 10) / 10;
+                  }
+                  summary[modelId] = {
+                    modelName: MODELS.find(m => m.id === modelId)?.name || modelId,
+                    model: MODELS.find(m => m.id === modelId)?.model || modelId,
+                    averageScore: Math.round((totalScore / list.length) * 10) / 10,
+                    dimensionScores: dimAverages,
+                  };
+                }
+                setBatchSummary(summary);
+              }
+            }
+          } catch {}
+          setBatchRunning(false);
+          disconnectStream();
+        }
+      }, 1000);
+
+      // Timeout after 10 minutes
+      setTimeout(() => {
+        clearInterval(pollInterval);
+        setBatchRunning(false);
+        disconnectStream();
+      }, 600000);
+
     } catch (err: any) {
       console.error("Batch error:", err);
+      setBatchRunning(false);
+      disconnectStream();
     }
-    setBatchRunning(false);
-  }, [selectedModels, selectedDims]);
+  }, [selectedModels, selectedDims, connectStream, disconnectStream, streamState.completed, streamState.runId]);
 
   // Filtered questions for display
   const filteredQuestions = K8S_TEST_QUESTIONS.filter((q) => selectedDims.includes(q.dimension));
@@ -307,6 +382,34 @@ export function K8sRealEvaluationPage() {
             </div>
           ))}
         </div>
+
+        {/* Streaming progress */}
+        {batchRunning && streamState.progress && (
+          <Card className="border-primary/30 bg-primary/5">
+            <CardContent className="py-3">
+              <div className="flex items-center gap-3">
+                <Activity className="h-4 w-4 text-primary animate-pulse" />
+                <span className="text-sm">
+                  Running: <span className="font-medium">{streamState.progress.model}</span> -
+                  Question {streamState.progress.currentQuestion} ({streamState.progress.current}/{streamState.progress.total})
+                </span>
+                <div className="flex-1 h-2 bg-muted rounded-full overflow-hidden">
+                  <div
+                    className="h-full bg-primary transition-all duration-300"
+                    style={{ width: `${streamState.progress.percent}%` }}
+                  />
+                </div>
+                <span className="text-xs text-muted-foreground">{streamState.progress.percent}%</span>
+              </div>
+            </CardContent>
+          </Card>
+        )}
+      </div>
+
+      {/* ---- Schedule Card + Run History ---- */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <ScheduleCard />
+        <RunHistoryTable />
       </div>
 
       {/* ---- Control Panel ---- */}
@@ -377,6 +480,12 @@ export function K8sRealEvaluationPage() {
                 className={`px-4 py-2 text-xs font-medium transition-colors ${mode === "batch" ? "bg-accent text-foreground" : "text-muted-foreground hover:text-foreground"}`}
               >
                 批量评测
+              </button>
+              <button
+                onClick={() => setMode("visualize")}
+                className={`px-4 py-2 text-xs font-medium transition-colors ${mode === "visualize" ? "bg-accent text-foreground" : "text-muted-foreground hover:text-foreground"}`}
+              >
+                可视化
               </button>
             </div>
 
@@ -471,6 +580,58 @@ export function K8sRealEvaluationPage() {
                 })}
               </div>
             )}
+          </CardContent>
+        </Card>
+      )}
+
+      {/* ---- Visualization Panel ---- */}
+      {mode === "visualize" && (
+        <EvaluationVisualizer
+          selectedModels={selectedModels}
+          selectedDims={selectedDims}
+          onComplete={(results) => setVizResults(results)}
+        />
+      )}
+
+      {/* ---- Visualization Results Detail ---- */}
+      {mode === "visualize" && Object.keys(vizResults).length > 0 && !batchRunning && (
+        <Card>
+          <CardHeader className="pb-3">
+            <CardTitle className="text-sm flex items-center gap-2">
+              <BarChart3 className="h-4 w-4" /> 评测结果详情
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {Object.entries(vizResults).map(([modelId, results]) => {
+                const model = MODELS.find((m) => m.id === modelId);
+                const scores = results.map((r) => r.score?.total || 0).filter((s) => s > 0);
+                const avg = scores.length > 0 ? scores.reduce((a, b) => a + b, 0) / scores.length : 0;
+
+                return (
+                  <Card key={modelId} className="border-2" style={{ borderColor: model?.color || "#888" }}>
+                    <CardHeader className="pb-2">
+                      <div className="flex items-center gap-2">
+                        <span className="w-3 h-3 rounded-full" style={{ backgroundColor: model?.color }} />
+                        <CardTitle className="text-sm">{model?.name || modelId}</CardTitle>
+                        <span className="ml-auto text-lg font-bold" style={{ color: model?.color }}>
+                          {avg.toFixed(1)}
+                        </span>
+                      </div>
+                    </CardHeader>
+                    <CardContent className="space-y-2 max-h-60 overflow-y-auto">
+                      {results.map((result, i) => (
+                        <div key={i} className="flex items-center gap-2 text-xs py-1 border-b border-muted last:border-0">
+                          <span className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: result.score?.total >= 60 ? "green" : result.score?.total > 0 ? "orange" : "gray" }} />
+                          <span className="flex-1 truncate text-muted-foreground">{result.questionId}</span>
+                          <span className="font-medium tabular-nums">{result.score?.total || "-"}</span>
+                        </div>
+                      ))}
+                    </CardContent>
+                  </Card>
+                );
+              })}
+            </div>
           </CardContent>
         </Card>
       )}
@@ -652,6 +813,14 @@ export function K8sRealEvaluationPage() {
           </CardContent>
         </Card>
       )}
+
+      {/* ---- Trends Section ---- */}
+      <section>
+        <h2 className="text-xs font-semibold text-muted-foreground uppercase tracking-widest mb-4 flex items-center gap-2">
+          <TrendingUp className="h-4 w-4" /> Score Trends
+        </h2>
+        <TrendChart selectedModels={selectedModels} />
+      </section>
 
       {/* ---- Methodology ---- */}
       <Card>

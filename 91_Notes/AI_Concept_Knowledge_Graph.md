@@ -799,11 +799,11 @@ Model_Training → Evaluation → Deployment
 | **MoE/Scaling** | `04_NLP_LLMs/LLM_Architectures/` | `AI_Infrastructure_Trends_2026.md` |
 | **Reasoning** | `04_NLP_LLMs/LLM_Architectures/` | `Prompt_Engineering.md` |
 | **AI for Science** | `13_AI_Applications_Industry/` | `AI_Applications_Industry.md` |
-| **评估基准** | `07_AI_Engineering/Model_Evaluation/` | `12_Agent_Evaluation/`, `Benchmarking/` |
+| **评估基准** | `07_AI_Engineering/Model_Evaluation/` | `13_Agent_Production/16_Agent_Evaluation/`, `Benchmarking/` |
 | **特征工程** | `02_Machine_Learning/Feature_Engineering/` | `Feature_Engineering.md` |
 | **安全/可解释** | `08_Ethics_Safety/` | `AI_Safety_RedTeaming/`, `AI_Security_2026/`, `Value_Alignment/` |
 | **具身智能/VLA** | `06_Reinforcement_Learning/Robotics_Embodied_AI/` | `VLA_Models_2026.md`, `Embodied_AI_Complete_2026.md` |
-| **评估** | `12_Agent_Evaluation/` | `Agent_Harness_Complete_2026.md`, `Benchmarking/`, `Metrics/` |
+| **评估** | `13_Agent_Production/16_Agent_Evaluation/` | `Agent_Harness_Complete_2026.md`, `Benchmarking/`, `Metrics/` |
 | **基础设施** | `07_AI_Engineering/` | `Deployment_Inference/`, `MLOps_Pipeline/`, `AI_Infrastructure_Trends_2026.md` |
 | **LLMOps** | `07_AI_Engineering/` | `Model_Evaluation/`, `AI_Coding_Assistants/` |
 | **Vibe Coding** | `07_AI_Engineering/Vibe_Coding/` | `Vibe_Coding_Methodology_2026.md`, `Vibe_Coding_Production_Practices.md`, `Vibe_Coding_for_dummy.md` |
@@ -835,7 +835,7 @@ Q: Vibe Coding 生产环境实践
 A: 07_AI_Engineering/Vibe_Coding/Vibe_Coding_Production_Practices.md
 
 Q: Agent 评估框架
-A: 12_Agent_Evaluation/Agent_Harness_Complete_2026.md
+A: 13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026.md
 
 Q: Agent 未来发展
 A: 06_Reinforcement_Learning/AI_Agents/Agent_Future_Roadmap_2026_2030.md
@@ -883,7 +883,7 @@ Q: 隐私计算/联邦学习
 A: 02_Machine_Learning/ (Federated_Learning 相关)
 
 Q: Agent 评估框架 (RAPS/基准测试)
-A: 12_Agent_Evaluation/
+A: 13_Agent_Production/16_Agent_Evaluation/
 ```
 
 ---

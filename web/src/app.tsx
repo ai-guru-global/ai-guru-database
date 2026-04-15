@@ -7,6 +7,11 @@ import { SearchPage } from "@/pages/search";
 import { LeaderboardPage } from "@/pages/leaderboard";
 import { K8sEvaluationPage } from "@/pages/k8s-evaluation";
 import { K8sRealEvaluationPage } from "@/pages/k8s-real-evaluation";
+import { SettingsPage } from "@/pages/settings";
+import { QwenSettingsPage } from "@/pages/settings/qwen";
+import { GlmSettingsPage } from "@/pages/settings/glm";
+import { MinimaxSettingsPage } from "@/pages/settings/minimax";
+import { KimiSettingsPage } from "@/pages/settings/kimi";
 import { NotFoundPage } from "@/pages/not-found";
 
 export function App() {
@@ -20,6 +25,11 @@ export function App() {
         <Route path="/leaderboard" element={<LeaderboardPage />} />
         <Route path="/k8s-evaluation" element={<K8sEvaluationPage />} />
         <Route path="/k8s-real-evaluation" element={<K8sRealEvaluationPage />} />
+        <Route path="/settings" element={<SettingsPage />} />
+        <Route path="/settings/qwen" element={<QwenSettingsPage />} />
+        <Route path="/settings/glm" element={<GlmSettingsPage />} />
+        <Route path="/settings/minimax" element={<MinimaxSettingsPage />} />
+        <Route path="/settings/kimi" element={<KimiSettingsPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </MainLayout>

@@ -10,7 +10,13 @@
 - **定义**: 具备人类水平通用智能的AI系统，能够学习、理解和执行任何智力任务
 - **对比**: 与狭义AI（只能完成特定任务）相对
 - **现状**: 尚未实现，是当前AI研究的终极目标
-- **预测**: 可能于2030-2050年间实现
+- **预测**: 可能于2030-2050年间实现（2026年处于智能体普及阶段）
+
+**Agentic AI (智能体AI) - 2026年主流范式**
+- **定义**: 能够自主规划、执行多步骤任务、与环境交互的AI系统
+- **核心能力**: 推理、工具使用、记忆、自主执行
+- **协议**: MCP (Model Context Protocol), A2A (Agent-to-Agent)
+- **应用**: 自动化工作流、企业业务流程、个人助理
 
 **AI (Artificial Intelligence) - 人工智能**
 - **定义**: 使机器能够模拟人类智能行为的科学与技术
@@ -397,7 +403,8 @@
 **MoE (Mixture of Experts) - 混合专家**
 - **定义**: 将模型分为多个"专家"网络，按需激活的架构
 - **优势**: 扩大模型容量同时控制推理成本
-- **代表**: GPT-4、Switch Transformer
+- **代表**: GPT-4、Llama 4、DeepSeek V3
+- **2026**: 成为大型模型标配架构
 
 **MLOps - 机器学习运维**
 - **定义**: 将DevOps实践应用于机器学习系统的工程学科
@@ -519,6 +526,19 @@
 - **定义**: 结合信息检索和文本生成的技术
 - **流程**: 检索相关文档 → 注入上下文 → 生成回答
 - **优势**: 减少幻觉、提供可溯源信息
+- **2026**: 向多模态RAG和Agentic RAG发展
+
+**Reasoning Models (推理模型) - 2025-2026爆发**
+- **定义**: 通过延长推理时间换取更准确答案的模型
+- **技术**: Chain-of-Thought、Self-Verification、Monte Carlo Tree Search
+- **代表**: GPT-5.2、Claude 4.5、o1/o3 (OpenAI)
+- **特点**: 思考时间越长，答案越准确（类似人类慢思考）
+
+**RLHF (Reinforcement Learning from Human Feedback) - 人类反馈强化学习**
+- **定义**: 通过人类反馈训练奖励模型，再优化语言模型的方法
+- **流程**: 收集偏好数据 → 训练奖励模型 → PPO优化
+- **应用**: ChatGPT、Claude等对齐训练
+- **2026进展**: DPO成为RLHF替代方案
 
 **Random Forest - 随机森林**
 - **定义**: 由多棵决策树组成的集成学习方法
@@ -718,10 +738,14 @@
 - **训练目标**: 找到最优权重组合
 - **初始化**: 随机初始化、预训练权重
 
-**World Model - 世界模型**
+**World Model - 世界模型** - 2026年资本热点
 - **定义**: AI系统内部对世界运转规律的学习和表示
-- **目标**: 预测行动后果、支撑规划
-- **代表**: JEPA、Sora类视频模型
+- **目标**: 预测行动后果、支撑规划决策
+- **技术路线**: JEPA、视频生成模型、物理仿真
+- **代表**: JEPA (Meta)、Sora (OpenAI)、机器人世界模型
+- **应用**: 具身智能、自动驾驶、科学发现
+
+**Weak Supervision - 弱监督学习**
 
 ---
 
@@ -774,7 +798,7 @@ Transformer、CNN、RNN、LSTM、GRU、Attention、GAN、VAE、Diffusion
 Training、Fine-tuning、Backpropagation、Gradient Descent、Loss Function、Learning Rate、Epoch、Batch、Overfitting、Underfitting
 
 **大模型专项**
-LLM、GPT、BERT、LLaMA、Prompt、RLHF、DPO、LoRA、RAG、Agent、Token、Embedding
+LLM、GPT、BERT、LLaMA、Prompt、RLHF、DPO、LoRA、RAG、Agent、Token、Embedding、推理模型、Agentic AI、世界模型、MoE
 
 **评估指标**
 Accuracy、Precision、Recall、F1、IoU、BLEU、ROUGE、Perplexity

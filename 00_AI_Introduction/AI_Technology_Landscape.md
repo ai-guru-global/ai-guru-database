@@ -19,10 +19,10 @@
 │                         AI模型层                                    │
 │  ┌──────────────────────────────────────────────────────────────┐  │
 │  │  基础模型 (Foundation Models)                                 │  │
-│  │  ├── 大语言模型: GPT-4, Claude, Llama, Gemini               │  │
-│  │  ├── 视觉模型: SAM, DINO, CLIP                              │  │
-│  │  ├── 多模态: GPT-4V, Gemini Pro, Qwen-VL                    │  │
-│  │  └── 语音: Whisper, GPT-4o Audio                            │  │
+│  │  ├── 大语言模型: GPT-5.2, Claude 4.5, Llama 4, Gemini 2.0  │  │
+│  │  ├── 视觉模型: SAM 2, DINOv2, CLIP                          │  │
+│  │  ├── 多模态: GPT-4o, Gemini 2.0, Qwen-VL                    │  │
+│  │  └── 语音: Whisper 4, GPT-4o Audio                          │  │
 │  └──────────────────────────────────────────────────────────────┘  │
 │  ┌──────────────┬──────────────┬──────────────┐                    │
 │  │ 领域模型      │ 任务模型      │ 小型模型      │                    │
@@ -37,11 +37,11 @@
 ├─────────────────────────────────────────────────────────────────────┤
 │                         AI框架层                                    │
 │  ┌──────────────┬──────────────┬──────────────┬──────────────┐     │
-│  │ PyTorch      │ TensorFlow   │ JAX          │ 国产框架      │     │
-│  │ 研究首选      │ 工业部署      │ 高效计算      │ Paddle/OneFlow│     │
+│  │ PyTorch 2.x  │ TensorFlow 2.x│ JAX          │ 国产框架      │     │
+│  │ 研究首选      │ 工业部署      │ 高效计算      │ Paddle/MindSpore│   │
 │  └──────────────┴──────────────┴──────────────┴──────────────┘     │
 │  ┌────────────────────────────────────────────────────────────┐    │
-│  │ 应用框架: LangChain, LlamaIndex, Hugging Face, OpenAI API  │    │
+│  │ 应用框架: LangChain, LlamaIndex, Hugging Face, Dify, vLLM  │    │
 │  └────────────────────────────────────────────────────────────┘    │
 ├─────────────────────────────────────────────────────────────────────┤
 │                         基础设施层                                  │
@@ -393,12 +393,13 @@ AI计算基础设施:
     ├── TVM
     └── MLIR
 
-服务化框架
-├── vLLM: 高吞吐LLM服务
-├── SGLang: 结构化生成
-├── TensorRT-LLM: NVIDIA优化
-├── llama.cpp: 端侧推理
-└── Triton Inference Server
+服务化框架 (2026主流)
+├── vLLM: 高吞吐LLM服务，PagedAttention
+├── SGLang: 结构化生成，RadixAttention
+├── TensorRT-LLM: NVIDIA官方优化
+├── llama.cpp/llamafile: 端侧推理
+├── Ollama: 本地模型运行
+└── Inference Endpoints: 云端托管服务
 
 部署架构
 ├── 云端部署
@@ -419,31 +420,34 @@ AI计算基础设施:
 ### 4.1 Agentic AI (智能体AI)
 
 ```
-AI Agent技术栈:
+AI Agent技术栈 (2026):
 
 核心能力
 ├── 推理规划 (Reasoning)
-│   └── CoT (Chain of Thought)
+│   └── CoT (Chain of Thought)、推理模型
 ├── 工具使用 (Tool Use)
-│   ├── Function Calling
-│   └── API调用
+│   ├── Function Calling / MCP协议
+│   └── API调用、Web浏览、代码执行
 ├── 记忆管理 (Memory)
-│   ├── 短期记忆 (上下文)
-│   └── 长期记忆 (向量数据库)
+│   ├── 短期记忆 (上下文窗口)
+│   └── 长期记忆 (向量数据库+RAG)
 └── 自主执行 (Autonomy)
-    ├── 目标分解
-    └── 自我纠错
+    ├── 目标分解与规划
+    ├── 自我纠错与反思
+    └── 多步骤任务执行
 
 架构模式
 ├── ReAct: 推理+行动交替
 ├── Plan-and-Execute: 先规划后执行
-├── Multi-Agent: 多智能体协作
-└── Reflexion: 自我反思改进
+├── Multi-Agent: 多智能体协作 (CrewAI, AutoGen)
+├── Reflexion: 自我反思改进
+└── Supervisor: 单智能体监控多子智能体
 
 协议标准 (2026)
-├── MCP (Model Context Protocol)
-├── A2A (Agent-to-Agent)
-└── ACP (Agent Communication Protocol)
+├── MCP (Model Context Protocol) - Anthropic主导
+├── A2A (Agent-to-Agent) - Agent间通信
+├── ACP (Agent Communication Protocol) - 阿里主导
+└── 已成行业事实标准，主流厂商采用
 ```
 
 ### 4.2 多模态统一
@@ -473,30 +477,39 @@ AI Agent技术栈:
 ### 4.3 世界模型与具身智能
 
 ```
-世界模型 (World Models):
+世界模型 (World Models) - 2026年热点:
 
 概念
 ├── 学习世界的动态规律
 ├── 预测行动后果
-└── 支撑规划决策
+├── 支撑规划决策
+└── 2026年资本和研究热点
 
 技术路线
 ├── JEPA (Joint Embedding Predictive Architecture)
-│   └── Yann LeCun主推
-├── Sora类视频生成模型
+│   └── Yann LeCun主推，Meta持续投入
+├── Sora/视频生成模型
+│   └── 学习物理世界规律
 ├── 神经辐射场 (NeRF)
-└── 3D高斯溅射 (3D Gaussian Splatting)
+│   └── 3D场景重建
+├── 3D高斯溅射 (3D Gaussian Splatting)
+│   └── 实时高保真3D渲染
+└── 世界模型+强化学习
+    └── 内部仿真环境学习
 
-具身智能 (Embodied AI)
+具身智能 (Embodied AI) - 2026商业化元年:
 ├── VLA模型 (Vision-Language-Action)
 │   ├── RT-2 (Google)
 │   ├── π0 (Physical Intelligence)
-│   └── OpenVLA
+│   ├── OpenVLA (Stanford)
+│   └── 2026: 工厂/物流场景突破
 ├── Sim-to-Real迁移
+│   └── 仿真到现实趋于成熟
 └── 人形机器人
-    ├── Tesla Optimus
-    ├── Figure 01
-    └── Unitree
+    ├── Tesla Optimus (2026工厂部署)
+    ├── Figure 01 (BMW工厂测试)
+    ├── Unitree H1 (开源)
+    └── 宇树科技、傅利叶等国产
 ```
 
 ### 4.4 效率与优化
@@ -506,29 +519,38 @@ AI Agent技术栈:
 
 模型架构优化
 ├── MoE (Mixture of Experts)
-│   └── 稀疏激活，推理效率↑
+│   ├── 稀疏激活，推理效率↑
+│   └── GPT-4、Llama 4等大型模型采用
 ├── Mamba / State Space Models
-│   └── 线性复杂度序列建模
-└── 线性注意力
-    └── 降低注意力计算成本
+│   └── 线性复杂度序列建模，长上下文
+├── 线性注意力
+│   └── 降低注意力计算成本
+└── 混合模态架构
+    └── 统一处理文本、图像、视频
 
 训练效率
 ├── 混合精度训练 (FP16/BF16)
 ├── 梯度检查点
 ├── ZeRO优化 (DeepSpeed)
-└── FSDP (PyTorch)
+├── FSDP (PyTorch)
+└── 流水并行 + 张量并行
 
 推理效率
 ├── 投机解码 (Speculative Decoding)
+│   └── 小模型预测，大模型验证，2-3倍加速
 ├── 分页注意力 (PagedAttention)
+│   └── vLLM核心技术，显存利用率↑
 ├── 连续批处理 (Continuous Batching)
+│   └── GPU利用率最大化
+├── INT4/INT8 量化
+│   └── GPTQ、AWQ、GGUF格式
 └── 动态批处理
 
 端侧部署
-├── 模型压缩
-├── NPU优化
+├── 模型压缩 (剪枝、知识蒸馏)
+├── NPU优化 (Apple Neural Engine、Qualcomm Hexagon)
 ├── 联邦学习
-└── 边缘-云协同
+└── 边缘-云协同推理
 ```
 
 ---
@@ -541,24 +563,24 @@ AI Agent技术栈:
 开源大模型生态 (2026):
 
 基础模型
-├── Llama 3 (Meta)
+├── Llama 4 (Meta)
 │   ├── 8B, 70B, 405B
 │   └── 开源可商用
-├── Qwen (阿里巴巴)
+├── Qwen 3 (阿里巴巴)
 │   ├── 多尺寸、多模态
-│   └── 中文优化
-├── DeepSeek
+│   └── 中英双语优化
+├── DeepSeek V3
 │   ├── 高性价比训练
-│   └── 推理优化
+│   └── 推理优化领先
 ├── Mistral (欧洲)
-├── Gemma (Google)
-└── 其他: Yi, Baichuan, ChatGLM
+├── Gemma 3 (Google)
+└── 其他: Yi, Baichuan, ChatGLM4
 
 领域模型
-├── 代码: CodeLlama, StarCoder, DeepSeek-Coder
+├── 代码: CodeLlama 3, StarCoder 2, DeepSeek-Coder V3
 ├── 数学: DeepSeek-Math, Qwen-Math
-├── 多模态: LLaVA, Qwen-VL
-└── 医疗: Meditron, HuatuoGPT
+├── 多模态: LLaVA 2, Qwen-VL 2
+└── 医疗: Meditron 4, HuatuoGPT
 ```
 
 ### 5.2 开发工具链

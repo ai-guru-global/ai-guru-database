@@ -172,7 +172,7 @@
 
 ### 教学资源
 - [AI术语表与概念词典](./AI_Glossary.md) - 100+核心术语，完整概念体系
-- [AI经典案例分析集](./AI_Classic_Cases.md) - 6个里程碑案例深度剖析
+- [AI经典案例分析集](./AI_Classic_Cases.md) - 7个里程碑案例深度剖析 (新增AlphaFold 3)
 - [AI课堂实验与实践指导](./AI_Practical_Labs.md) - 8个实验 + 期末项目
 
 ### 教材统计

@@ -303,31 +303,37 @@
 
 | 时间 | 事件 | 意义 |
 |------|------|------|
-| **2025** | AI Agent协议标准化 | MCP/A2A/ACP协议 |
-| **2026** | GPT-5.2 / Claude 4.5 | 推理能力大幅提升 |
-| **2026** | 具身智能突破 | 人形机器人进入工厂 |
-| **2026** | EU AI Act生效 | 全球首个AI综合法规 |
+| **2025.Q1** | GPT-5发布 | 推理能力飞跃，Agent原生支持 |
+| **2025.Q2** | Claude 4.0 / Gemini 2.0 | 多模态原生，工具调用增强 |
+| **2025.Q3** | AI Agent协议标准化 | MCP/A2A/ACP成为行业标准 |
+| **2025.Q4** | 人形机器人商业化 | Tesla Optimus进工厂，Figure 01进BMW |
+| **2026.Q1** | GPT-5.2发布 | 推理模型成为主流 |
+| **2026.Q2** | Claude 4.5发布 | 200K上下文，极强代码能力 |
+| **2026** | EU AI Act正式生效 | 全球首个AI综合法规全面执行 |
 
 **2026年AI特征**:
 ```
 技术特征:
-├── 大语言模型成为基础设施
-├── Agentic AI自主执行任务
-├── 多模态原生能力
-├── 推理模型 (Reasoning Models)
-└── 世界模型 (World Models)
+├── 大语言模型成为数字基础设施
+├── Agentic AI自主执行任务成为主流
+├── 多模态原生能力标配
+├── 推理模型 (Reasoning Models) 爆发
+├── 世界模型 (World Models) 成为资本热点
+└── 效率优化技术成熟 (MoE、量化、蒸馏)
 
-应用特征:
-├── 40%企业应用嵌入AI Agent
-├── AI编程助手普及
-├── 生成式视频进入生产
-└── 自主驾驶技术成熟
+应用特征 (2026年数据):
+├── 50%+ 企业应用嵌入AI Agent
+├── AI编程助手覆盖率 > 80%
+├── 生成式视频进入商业生产
+├── 自动驾驶 L4 在限定区域商用
+└── 具身智能进入工厂 (商业化元年)
 
 社会特征:
-├── AI素养成为基本技能
-├── 就业结构持续调整
-├── 监管框架初步建立
-└── AI伦理讨论深化
+├── AI素养成为数字公民基本技能
+├── 就业结构深度调整
+├── EU AI Act 正式生效执行
+├── 全球AI治理框架初步形成
+└── AI伦理和安全成为核心议题
 ```
 
 ---
@@ -395,14 +401,15 @@ AI成功的三大支柱:
 
 | 人物 | 贡献 | 现状 (2026) |
 |------|------|-------------|
-| **Alan Turing** | 图灵测试，理论奠基 | 被誉为"AI之父" |
+| **Alan Turing** | 图灵测试，理论奠基 | 被誉为"AI之父"，1954年去世 |
 | **John McCarthy** | 创造"AI"术语 | 2011年去世 |
-| **Geoffrey Hinton** | 反向传播，深度学习 | 2024年诺贝尔奖 |
-| **Yann LeCun** | CNN，卷积神经网络 | Meta首席科学家 |
-| **Yoshua Bengio** | 深度学习理论 | 2024年诺贝尔奖 |
-| **Andrew Ng** | Coursera，AI民主化 | AI Fund创始人 |
-| **Demis Hassabis** | AlphaGo，DeepMind | 2024年诺贝尔奖 |
+| **Geoffrey Hinton** | 反向传播，深度学习 | 2024年诺贝尔物理学奖，University of Toronto |
+| **Yann LeCun** | CNN，卷积神经网络 | Meta首席科学家，AI先驱 |
+| **Yoshua Bengio** | 深度学习理论 | 2024年诺贝尔物理学奖，MILA创始人 |
+| **Andrew Ng** | Coursera，AI民主化 | AI Fund创始人，DeepLearning.AI |
+| **Demis Hassabis** | AlphaGo，DeepMind | 2024年诺贝尔物理学奖，Google DeepMind CEO |
 | **Sam Altman** | OpenAI，ChatGPT | OpenAI CEO |
+| **Daphne Koller** | 概率图模型， Coursera联合创始人 | AI学术和创业先驱 |
 
 ---
 

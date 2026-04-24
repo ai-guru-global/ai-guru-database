@@ -134,12 +134,13 @@ AI学习路径矩阵:
 | 课程 | 平台 | 难度 | 时长 | 特点 |
 |------|------|------|------|------|
 | **AI For Everyone** | Coursera (吴恩达) | ⭐ | 4周 | 无技术要求，AI商业与应用 |
-| **机器学习** | Coursera (吴恩达) | ⭐⭐ | 11周 | 经典入门，数学适中 |
+| **机器学习专项** | Coursera (吴恩达) | ⭐⭐ | 11周×5门课 | 经典入门，数学适中 |
 | **深度学习专项** | Coursera (吴恩达) | ⭐⭐⭐ | 5门课 | 全面覆盖DL基础 |
 | **Fast.ai Practical DL** | fast.ai | ⭐⭐ | 7周 | 代码优先，实用导向 |
 | **李宏毅机器学习** | B站/YouTube | ⭐⭐ | 一学期 | 中文，理论与代码结合 |
 | **MIT 6.034 AI** | MIT OCW | ⭐⭐⭐ | 一学期 | 经典AI课程，较全面 |
 | **Stanford CS229** | Stanford | ⭐⭐⭐ | 一学期 | 机器学习数学基础 |
+| **Full Stack LLM Bootcamp** | Full Stack Deep Learning | ⭐⭐⭐ | 4天密集 | LLM工程实践，2026热门 |
 
 ### 2.2 进阶课程
 
@@ -778,14 +779,16 @@ AI领域职业路径:
 ├── The Batch (DeepLearning.AI)
 ├── The Sequence
 ├── TLDR AI
-└── 机器之心日报
+├── 机器之心日报
+└── AIalyze (中文AI周报)
 
 推荐播客
 ├── Lex Fridman Podcast
 ├── The TWIML AI Podcast
 ├── Data Skeptic
 ├── AI Alignment Podcast
-└── 晚点聊 LateTalk
+├── 晚点聊 LateTalk
+└── What's AI (法语英语混合)
 ```
 
 ### 8.2 实验与实践环境

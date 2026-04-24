@@ -145,14 +145,18 @@ NLP任务类型:
 ├── 参数量: 数十亿到数万亿
 ├── 训练数据: 互联网文本
 ├── 能力: 理解上下文、生成连贯文本
-├── 代表: GPT-4、Claude、Gemini、Llama
+├── 代表: GPT-5.2、Claude 4.5、Gemini 2.0、Llama 4
 └── 应用: ChatGPT、写作助手、代码生成
 
 里程碑:
 ├── 2018: BERT理解上下文
 ├── 2019: GPT-2展示生成能力
 ├── 2020: GPT-3展现涌现能力
-└── 2022: ChatGPT引发全球热潮
+├── 2022: ChatGPT引发全球热潮
+├── 2023: GPT-4多模态突破
+├── 2024: GPT-4o原生多模态、Claude 3.5
+├── 2025: GPT-5.2推理能力飞跃、Agentic AI主流化
+└── 2026: 推理模型成为标配、多模型协作
 ```
 
 ### 3.4 计算机视觉 (CV)
@@ -186,7 +190,8 @@ NLP任务类型:
 ├── AI + 物理身体 = 与真实世界交互
 ├── 挑战: Sim-to-Real (仿真到现实)
 ├── 应用: 家庭服务、医疗护理、仓储物流
-└── 代表: Tesla Optimus、Figure 01、Unitree
+├── 2026突破: 人形机器人进入工厂、商业化元年
+└── 代表: Tesla Optimus (2026工厂部署)、Figure 01、Unitree H1、宇树科技
 ```
 
 ---
@@ -264,14 +269,14 @@ AI发展的三大支柱:
 ├── 质量 > 数量
 ├── 标注成本高昂
 ├── 数据隐私敏感
-└── 2026趋势: 合成数据、高质量对齐数据
+└── 2026趋势: 合成数据、高质量对齐数据、RLHF数据
 
 算法 (Algorithms):
 ├── AI的"引擎"
 ├── Transformer架构主导
 ├── 开源生态丰富
 ├── 预训练+微调范式
-└── 2026趋势: MoE架构、推理模型
+└── 2026趋势: MoE架构、推理模型、世界模型
 
 算力 (Compute):
 ├── AI的"马力"
@@ -292,14 +297,14 @@ AI发展的三大支柱:
 └── 行业解决方案
 
 模型层 (Models)
-├── 基础模型: GPT-4、Claude、Llama
+├── 基础模型: GPT-5.2、Claude 4.5、Llama 4
 ├── 领域模型: 医疗、法律、金融
-└── 微调模型: 企业私有模型
+└── 微调模型: 企业私有模型、LoRA微调
 
 框架层 (Frameworks)
-├── PyTorch、TensorFlow、JAX
+├── PyTorch 2.x、TensorFlow 2.x、JAX
 ├── Hugging Face Transformers
-└── LangChain、LlamaIndex
+└── LangChain、LlamaIndex、Dify
 
 基础设施层 (Infrastructure)
 ├── GPU/TPU/专用芯片

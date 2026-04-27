@@ -1906,7 +1906,7 @@ jobs:
 □ 访问控制生效
 ```
 
-**参考**: [AI Infrastructure 2026深度解析](../../07_AI_Engineering/AI_Infrastructure_2026.md)
+**参考**: [AI Infrastructure 2026深度解析](../../12_Architecture_Infrastructure/AI_Infrastructure_2026.md)
 
 ## 10. 与其他主题的关联 (Connections)
 
@@ -1922,8 +1922,8 @@ jobs:
 - **多模态**: [Multimodal Vision](../../05_Computer_Vision/Multimodal_Vision/Multimodal_Vision.md) —— 视觉感知能力
 
 ### 10.3 应用领域
-- **软件工程**: [Deployment & Inference](../../07_AI_Engineering/Deployment_Inference/Deployment_Inference.md)
-- **MLOps**: [MLOps Pipeline](../../07_AI_Engineering/MLOps_Pipeline/MLOps_Pipeline.md) —— Agent在CI/CD中的应用
+- **软件工程**: [Deployment & Inference](../../09_Deployment_Inference/Deployment_Inference.md)
+- **MLOps**: [MLOps Pipeline](../../10_MLOps_Pipeline/MLOps_Pipeline.md) —— Agent在CI/CD中的应用
 
 ## 12. 面试高频问题 (Interview FAQs)
 

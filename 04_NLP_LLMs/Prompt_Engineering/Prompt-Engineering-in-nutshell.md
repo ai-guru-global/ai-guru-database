@@ -709,6 +709,6 @@ flowchart TB
 ## 🔗 相关主题
 
 - [LLM 基础](../LLM_Architectures/LLM-Basics-in-nutshell.md) - 理解大语言模型
-- [RAG 系统](../../07_AI_Engineering/RAG_Systems/RAG-in-nutshell.md) - 结合检索的提示
+- [RAG 系统](../../11_RAG_Systems/RAG-in-nutshell.md) - 结合检索的提示
 - [AI 智能体](../../06_Reinforcement_Learning/AI_Agents/Agent-in-nutshell.md) - 智能体中的提示设计
-- [AI 测试](../../07_AI_Engineering/AI_Testing/AI-Testing-in-nutshell.md) - 测试提示词效果
+- [AI 测试](../../15_Testing/AI-Testing-in-nutshell.md) - 测试提示词效果

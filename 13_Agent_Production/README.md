@@ -49,6 +49,9 @@
 |------|------|----------|
 | [AutoGen / CrewAI / LangGraph](./Agent_Frameworks/AutoGen_CrewAI_LangGraph_Dive.md) | 多 Agent 框架对比 | 开发者、架构师 |
 | [AgentScope Deep Dive](./Agent_Frameworks/AgentScope_Deep_Dive.md) | 阿里巴巴多智能体平台 | 开发者、架构师 |
+| [AutoGPT Deep Dive](./Agent_Frameworks/AutoGPT_Deep_Dive.md) | 自主任务执行 Agent | 开发者、探索者 |
+| [SmolAgents Deep Dive](./Agent_Frameworks/SmolAgents_Deep_Dive.md) | HuggingFace 轻量级框架 | HF 生态用户 |
+| [agno Deep Dive](./Agent_Frameworks/Agno_Deep_Dive.md) | 现代化 Agent 框架：知识+记忆内置 | 快速构建生产级 Agent |
 
 ### Agent 平台与部署
 
@@ -56,6 +59,7 @@
 |------|------|----------|
 | [Dify / Coze / LocalAI](./Agent_Platforms/Dify_Coze_MLServe_Dive.md) | Agent 平台对比 | 产品经理、架构师 |
 | [OpenRouter Deep Dive](./Agent_Platforms/OpenRouter_Deep_Dive.md) | 统一模型网关与智能路由 | 架构师、开发者 |
+| [PromptFlow Deep Dive](./Agent_Platforms/PromptFlow_Deep_Dive.md) | 微软工作流编排与评估 | 开发者、企业用户 |
 
 ### 记忆与基础设施
 

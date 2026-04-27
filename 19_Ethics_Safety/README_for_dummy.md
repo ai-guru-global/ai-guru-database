@@ -265,8 +265,8 @@ AI 不是中立的,会放大训练数据中的偏见!
 - [强化学习基础](../06_Reinforcement_Learning/README_for_dummy.md)
 
 ### ⏭️ 探索相关主题
-- [AI 工程化](../07_AI_Engineering/README_for_dummy.md) - 安全部署实践
-- [RAG 系统](../07_AI_Engineering/RAG_Systems/RAG_Systems_for_dummy.md) - 间接注入攻击
+- [AI 工程化](../09_Deployment_Inference/README.md) - 安全部署实践
+- [RAG 系统](../11_RAG_Systems/RAG_Systems_for_dummy.md) - 间接注入攻击
 
 ## 学习资源推荐
 

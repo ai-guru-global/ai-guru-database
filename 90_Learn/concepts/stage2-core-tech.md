@@ -138,7 +138,7 @@
   - **RLHF / DPO**：用人类反馈信号对齐模型输出
 - **通俗类比**：预训练像一个人读完了十二年通识教育；微调像去读了职业技能培训班。
 - **入门阅读**：[微调技术](../04_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques_for_dummy.md)
-- **深入学习**：[AI 模型训练](../07_AI_Engineering/Model_Training/Model-Training-in-nutshell.md)
+- **深入学习**：[微调技术详解](../04_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques.md)
 - **关联概念**：LLM、RLHF、LoRA、指令微调 (Instruction Tuning)
 
 ### 9. 表示学习 (Representation Learning)

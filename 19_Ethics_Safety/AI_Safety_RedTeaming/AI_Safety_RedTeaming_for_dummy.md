@@ -818,7 +818,7 @@ AI 生成回答后:
 ### 📄 进阶阅读
 - [AI 安全与红队(完整版)](./AI_Safety_RedTeaming.md) - 技术细节和防御算法
 - [价值对齐 - 小白版](../Value_Alignment/Value_Alignment_for_dummy.md) - 安全的基础
-- [RAG 系统 - 小白版](../../07_AI_Engineering/RAG_Systems/RAG_Systems_for_dummy.md) - 间接注入的高发场景
+- [RAG 系统 - 小白版](../../11_RAG_Systems/RAG_Systems_for_dummy.md) - 间接注入的高发场景
 
 ### 🛠️ 动手实践
 - [Llama Guard 快速开始](https://github.com/facebookresearch/PurpleLlama/tree/main/Llama-Guard)
@@ -827,7 +827,7 @@ AI 生成回答后:
 
 ### 🎓 相关知识
 - [Prompt 工程 - 小白版](../../04_NLP_LLMs/Prompt_Engineering/Prompt_Engineering_for_dummy.md)
-- [模型部署 - 小白版](../../07_AI_Engineering/Deployment_Inference/Deployment_Inference_for_dummy.md)
+- [模型部署 - 小白版](../../09_Deployment_Inference/Deployment_Inference_for_dummy.md)
 
 ### 📚 安全资源
 - [OWASP Top 10 for LLM](https://owasp.org/www-project-top-10-for-large-language-model-applications/)

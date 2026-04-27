@@ -67,7 +67,7 @@
 | Q1 | 阅读 [监督学习](../02_Machine_Learning/Supervised_Learning/Supervised_Learning_for_dummy.md) |
 | Q2-Q3 | 阅读 [神经网络核心](../03_Deep_Learning/Neural_Network_Core/Neural_Network_Core_for_dummy.md) + [优化](../03_Deep_Learning/Optimization/Optimization_for_dummy.md) |
 | Q4-Q5 | 阅读 [监督学习](../02_Machine_Learning/Supervised_Learning/Supervised_Learning_for_dummy.md) 中的过拟合章节 |
-| Q6 | 阅读 [模型评估](../07_AI_Engineering/Model_Evaluation/Model_Evaluation_for_dummy.md) |
+| Q6 | 阅读 [模型评估](../08_Model_Evaluation/Model_Evaluation_for_dummy.md) |
 | Q7 | 阅读 [无监督学习](../02_Machine_Learning/Unsupervised_Learning/Unsupervised_learning_for_dummy.md) + [强化学习基础](../06_Reinforcement_Learning/RL_Foundations/RL_Foundations_for_dummy.md) |
 
 ---
@@ -140,12 +140,12 @@
 
 | 问题 | 补救建议 |
 |------|---------|
-| Q1-Q2 | 阅读 [RAG 系统（小白版）](../07_AI_Engineering/RAG_Systems/RAG_Systems_for_dummy.md) |
+| Q1-Q2 | 阅读 [RAG 系统（小白版）](../11_RAG_Systems/RAG_Systems_for_dummy.md) |
 | Q3 | 阅读 [提示词工程（小白版）](../04_NLP_LLMs/Prompt_Engineering/Prompt_Engineering_for_dummy.md) |
 | Q4 | 阅读 [AI Agent（小白版）](../06_Reinforcement_Learning/AI_Agents/AI_Agents_for_dummy.md) |
-| Q5 | 阅读 [MLOps 流水线（小白版）](../07_AI_Engineering/MLOps_Pipeline/MLOps_Pipeline_for_dummy.md) |
-| Q6 | 阅读 [模型评估（小白版）](../07_AI_Engineering/Model_Evaluation/Model_Evaluation_for_dummy.md) |
-| Q7 | 阅读 [AI Gateway（速查版）](../07_AI_Engineering/AI_Gateway/Gateway-in-nutshell.md) |
+| Q5 | 阅读 [MLOps 流水线（小白版）](../10_MLOps_Pipeline/MLOps_Pipeline_for_dummy.md) |
+| Q6 | 阅读 [模型评估（小白版）](../08_Model_Evaluation/Model_Evaluation_for_dummy.md) |
+| Q7 | 阅读 [AI Gateway（速查版）](../14_AI_Gateway/Gateway-in-nutshell.md) |
 
 ---
 

@@ -790,9 +790,9 @@ $$\mathbf{h}_i = \begin{cases} 0 & \text{with prob } p \\ \frac{1}{1-p} \mathbf{
 - [**Transformer**](../../04_NLP_LLMs/Transformer_Revolution/Transformer_Revolution.md): 注意力机制
 
 ### 7.3 纵向进阶
-- [**模型压缩**](../../07_AI_Engineering/): 剪枝、量化、蒸馏
-- [**迁移学习**](../../07_AI_Engineering/): 预训练 + 微调
-- [**神经架构搜索**](../../07_AI_Engineering/): AutoML
+- [**模型压缩**](../../09_Deployment_Inference/Deployment_Inference.md): 剪枝、量化、蒸馏
+- [**迁移学习**](../../04_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques.md): 预训练 + 微调
+- [**神经架构搜索**](../../10_MLOps_Pipeline/MLOps_Pipeline.md): AutoML
 
 ## 8. 面试高频问题 (Interview FAQs)
 

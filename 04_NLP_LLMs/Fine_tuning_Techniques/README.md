@@ -7,6 +7,8 @@
 | [Fine_tuning_Techniques.md](./Fine_tuning_Techniques.md) | 微调技术详解 | 进阶学习 |
 | [Fine_tuning_Techniques_for_dummy.md](./Fine_tuning_Techniques_for_dummy.md) | 微调入门 | 初学者 |
 | [PEFT_2026/](./PEFT_2026/) | PEFT 2026最佳实践 | 实战学习 |
+| [Unsloth Deep Dive](./Unsloth_Deep_Dive.md) | 高速微调框架：2x 加速、24GB 单卡 | 快速实验 |
+| [Axolotl Deep Dive](./Axolotl_Deep_Dive.md) | 开源微调工具：全参数/LoRA/QLoRA 支持 | 生产微调 |
 
 ## 内容概览
 

@@ -287,7 +287,7 @@ best_mask = masks[scores.argmax()]  # 取最高分的掩码
 ### 进阶方向
 - [生成模型](../Generative_Models/Generative_Models.md) — 分割掩码可用于引导图像生成（ControlNet）
 - [多模态视觉](../Multimodal_Vision/Multimodal_Vision.md) — 文本引导的开放词汇分割
-- [模型部署与推理](../../07_AI_Engineering/Deployment_Inference/Deployment_Inference.md) — 分割模型的实时部署优化
+- [模型部署与推理](../../09_Deployment_Inference/Deployment_Inference.md) — 分割模型的实时部署优化
 
 ---
 

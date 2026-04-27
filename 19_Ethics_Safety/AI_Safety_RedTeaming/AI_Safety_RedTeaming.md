@@ -763,11 +763,11 @@ APD = mean(||x_adv - x_orig||_p)
 
 - [价值对齐](../Value_Alignment/Value_Alignment.md) - 对齐是安全的基础
 - [Prompt 工程](../../04_NLP_LLMs/Prompt_Engineering/Prompt_Engineering.md) - 理解提示机制才能防御注入
-- [RAG 系统](../../07_AI_Engineering/RAG_Systems/RAG_Systems.md) - 间接注入攻击的高发场景
+- [RAG 系统](../../11_RAG_Systems/RAG_Systems.md) - 间接注入攻击的高发场景
 
 ### 进阶推荐
 
-- [模型部署与推理](../../07_AI_Engineering/Deployment_Inference/Deployment_Inference.md) - 生产环境安全加固
+- [模型部署与推理](../../09_Deployment_Inference/Deployment_Inference.md) - 生产环境安全加固
 - [分布式系统](../../01_Fundamentals/Distributed_Systems/Distributed_Systems.md) - 理解系统层面的攻击面
 
 ## 8. 面试高频问题 (Interview FAQs)

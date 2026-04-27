@@ -70,7 +70,7 @@
 
 - **通俗类比**：训练像医生读医学院（长期、高强度）；推理像医生给病人看病（快速、精准）。
 - **入门阅读**：[监督学习入门](../02_Machine_Learning/Supervised_Learning/Supervised_Learning_for_dummy.md)
-- **深入学习**：[部署与推理](../07_AI_Engineering/Deployment_Inference/Deployment_Inference_for_dummy.md)
+- **深入学习**：[部署与推理](../09_Deployment_Inference/Deployment_Inference_for_dummy.md)
 - **关联概念**：模型、过拟合、部署
 
 ### 5. 损失函数 (Loss Function)
@@ -154,7 +154,7 @@
 - **召回率 (Recall)**：真正的正例里，被找出来的比例 —— "真实的，我找到了多少？"
 - **F1 分数**：精确率和召回率的调和平均 —— 两者的平衡
 
-- **入门阅读**：[模型评估入门](../07_AI_Engineering/Model_Evaluation/Model_Evaluation_for_dummy.md)
+- **入门阅读**：[模型评估入门](../08_Model_Evaluation/Model_Evaluation_for_dummy.md)
 - **关联概念**：混淆矩阵 (Confusion Matrix)、ROC/AUC、PR 曲线
 
 ### 10. 三大学习范式

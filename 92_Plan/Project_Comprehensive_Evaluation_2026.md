@@ -157,7 +157,7 @@
 #### 整改方案
 
 **1. 新增系统架构全景图**
-- 文件: `07_AI_Engineering/Architecture/AI_System_Architecture_2026.md`
+- 文件: `12_Architecture_Infrastructure/AI_System_Architecture_2026.md`
 - 内容:
   ```
   ┌─────────────────────────────────────────────────────┐
@@ -184,7 +184,7 @@
   ```
 
 **2. 新增容量规划指南**
-- 文件: `07_AI_Engineering/AI_Infrastructure/Capacity_Planning_2026.md`
+- 文件: `12_Architecture_Infrastructure/Capacity_Planning_2026.md`
 - 内容:
   - QPS/并发模型计算
   - GPU 显存需求估算
@@ -192,7 +192,7 @@
   - 成本预测模型
 
 **3. 新增高可用架构**
-- 文件: `07_AI_Engineering/AI_Infrastructure/High_Availability_2026.md`
+- 文件: `12_Architecture_Infrastructure/High_Availability_2026.md`
 - 内容:
   - 多活架构设计
   - 故障转移机制
@@ -200,7 +200,7 @@
   - 灾难恢复演练
 
 **4. 新增多租户架构**
-- 文件: `07_AI_Engineering/AI_Infrastructure/Multi_Tenant_Architecture.md`
+- 文件: `12_Architecture_Infrastructure/Multi_Tenant_Architecture.md`
 - 内容:
   - 租户隔离策略 (Namespace/集群)
   - 资源配额管理
@@ -233,7 +233,7 @@
 #### 整改方案
 
 **1. 新增 AI 系统测试框架**
-- 文件: `07_AI_Engineering/AI_Testing/AI_Test_Framework_2026.md`
+- 文件: `15_Testing/AI_Test_Framework_2026.md`
 - 内容:
   - 测试金字塔 (Unit/Component/Integration/E2E)
   - 测试数据工厂 (Factory Pattern)
@@ -241,7 +241,7 @@
   - 测试覆盖率目标
 
 **2. 新增 CI/CD 流水线**
-- 文件: `07_AI_Engineering/AI_Ops/CI_CD_Pipeline_AI_2026.md`
+- 文件: `16_AI_Ops/CI_CD_Pipeline_AI_2026.md`
 - 内容:
   ```yaml
   stages:
@@ -257,7 +257,7 @@
   ```
 
 **3. 新增混沌工程实践**
-- 文件: `07_AI_Engineering/AI_Ops/Chaos_Engineering_AI.md`
+- 文件: `16_AI_Ops/Chaos_Engineering_AI.md`
 - 内容:
   - LLM 服务故障注入
   - 向量数据库延迟模拟
@@ -265,7 +265,7 @@
   - 自动恢复验证
 
 **4. 新增契约测试**
-- 文件: `07_AI_Engineering/AI_Testing/Contract_Testing.md`
+- 文件: `15_Testing/Contract_Testing.md`
 - 内容:
   - OpenAPI 契约验证
   - 消费者驱动契约 (CDC)

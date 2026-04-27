@@ -102,17 +102,17 @@
 
 ---
 
-### [第7章：AI 工程化](./07_AI_Engineering/README_for_dummy.md)
+### [第7章：AI 工程化](./09_Deployment_Inference/README.md)
 
 把实验室里的 AI 变成真正能用的产品。
 
 | 主题 | 你能学到 | 开始学习 |
 |------|---------|---------|
-| 模型部署与推理 | 怎么把训练好的 AI 放到网上让大家用 | [点这里](./07_AI_Engineering/Deployment_Inference/Deployment_Inference_for_dummy.md) |
-| RAG 系统 | 怎么让 AI "开卷考试"，查资料再回答 | [点这里](./07_AI_Engineering/RAG_Systems/RAG_Systems_for_dummy.md) |
-| MLOps 流水线 | 怎么像工厂流水线一样管理 AI 项目 | [点这里](./07_AI_Engineering/MLOps_Pipeline/MLOps_Pipeline_for_dummy.md) |
-| 模型评估 | 怎么判断一个 AI 到底好不好用 | [点这里](./07_AI_Engineering/Model_Evaluation/Model_Evaluation_for_dummy.md) |
-| Vibe Coding | 怎么用"说人话"的方式让 AI 帮你写代码 | [点这里](./07_AI_Engineering/Vibe_Coding/Vibe_Coding_for_dummy.md) |
+| 模型部署与推理 | 怎么把训练好的 AI 放到网上让大家用 | [点这里](./09_Deployment_Inference/Deployment_Inference_for_dummy.md) |
+| RAG 系统 | 怎么让 AI "开卷考试"，查资料再回答 | [点这里](./11_RAG_Systems/RAG_Systems_for_dummy.md) |
+| MLOps 流水线 | 怎么像工厂流水线一样管理 AI 项目 | [点这里](./10_MLOps_Pipeline/MLOps_Pipeline_for_dummy.md) |
+| 模型评估 | 怎么判断一个 AI 到底好不好用 | [点这里](./08_Model_Evaluation/Model_Evaluation_for_dummy.md) |
+| Vibe Coding | 怎么用"说人话"的方式让 AI 帮你写代码 | [点这里](./17_AI_Coding/03_Practice/Vibe_Coding_Getting_Started.md) |
 
 ---
 

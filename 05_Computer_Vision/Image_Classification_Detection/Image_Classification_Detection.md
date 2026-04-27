@@ -553,7 +553,7 @@ car (0.75) at [50, 300, 150, 380]
 
 ### 跨领域应用
 - [迁移学习](../../02_Machine_Learning/Transfer_Learning/Transfer_Learning.md): 预训练模型微调
-- [模型评估](../../07_AI_Engineering/Model_Evaluation/Model_Evaluation.md): 混淆矩阵、ROC 曲线
+- [模型评估](../../08_Model_Evaluation/Model_Evaluation.md): 混淆矩阵、ROC 曲线
 
 ---
 

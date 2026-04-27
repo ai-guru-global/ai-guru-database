@@ -5,6 +5,27 @@
 | 文档 | 内容 | 适用读者 |
 |------|------|----------|
 | [RAG_Advanced_2026.md](./RAG_Advanced_2026.md) | 混合检索、重排序、Agentic RAG | 进阶学习 |
+| [Haystack Deep Dive](./Haystack_Deep_Dive.md) | 模块化 RAG 框架：Pipeline 架构、80+ 组件、评估工具 | 开发者、架构师 |
+| [LlamaIndex Deep Dive](./LlamaIndex_Deep_Dive.md) | 数据连接框架：100+ 数据源、高级检索、评估工具 | 开发者、数据工程师 |
+| [Dify Deep Dive](./Dify_Deep_Dive.md) | 开源 LLM 应用平台：RAG+Agent+工作流、零代码 | 产品经理、开发者 |
+| [LangFlow Deep Dive](./LangFlow_Deep_Dive.md) | LangChain 可视化 IDE：拖拽构建 Pipeline | 快速原型、可视化 |
+| [Flowise Deep Dive](./Flowise_Deep_Dive.md) | 低代码 Chatflow 平台：极简体验 | 非技术用户、快速原型 |
+| [Chroma Deep Dive](./Chroma_Deep_Dive.md) | 轻量级向量数据库：零配置、本地优先、LLM 入门 | 原型开发、学习 |
+| [Qdrant Deep Dive](./Qdrant_Deep_Dive.md) | 高性能向量数据库：混合检索、生产级性能 | 生产环境 |
+| [Milvus Deep Dive](./Milvus_Deep_Dive.md) | 超大规模向量数据库：万亿向量、分布式、云原生 | 超大规模 |
+| [Typesense Deep Dive](./Typesense_Deep_Dive.md) | 极速矢量搜索：毫秒级响应、模糊匹配 | 搜索优先 |
+| [Weaviate Deep Dive](./Weaviate_Deep_Dive.md) | 混合检索向量数据库：GraphQL、原生多模态 | 多模态、生产级 |
+| [Sentence Transformers Deep Dive](./Sentence_Transformers_Deep_Dive.md) | 开源 Embedding 模型：多语言支持、100+ 模型 | RAG、语义搜索 |
+
+## 框架选型
+
+| 框架 | 特点 | 适用场景 |
+|------|------|----------|
+| **Dify** | 功能完整、可视化、自托管 | 企业内部平台、快速构建 |
+| **Haystack** | 模块化、Pipeline 架构、YAML 配置 | 企业级、复杂 RAG |
+| **LlamaIndex** | 数据索引优先、查询优化 | 性能优先、数据密集 |
+| **LangFlow** | LangChain 可视化、代码导出 | 学习实验、快速原型 |
+| **Flowise** | 低代码、极简体验 | 非技术用户 |
 
 ## 关键技术
 

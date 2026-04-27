@@ -17,6 +17,8 @@
 | [OpenCode Deep Dive](./OpenCode_Deep_Dive.md) | 自主执行式 AI 编程 Agent 架构与实践 | 开发者、评估师 |
 | [Windsurf / Cursor / Devin](./Windsurf_Cursor_Devin_Dive.md) | Agentic Coding CLI 全景对比 | 开发者、产品经理 |
 | [International Agentic Tools](./International_Agentic_Tools.md) | 国际工具 (Aider/Continue/CodeRabbit/Cody/Tabnine/Codeium) | 开发者、选型参考 |
+| [Aider Deep Dive](./Aider_Deep_Dive.md) | 开源 CLI 代码编辑工具：Git 集成、多文件重构 | 开发者 |
+| [Continue Deep Dive](./Continue_Deep_Dive.md) | 开源 VS Code/JetBrains 插件：多模型支持 | 开发者 |
 
 ## 工具能力光谱
 

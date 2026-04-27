@@ -489,7 +489,7 @@ $$
 - **[优化理论](../../02_Machine_Learning/Optimization_Methods/Optimization_Methods.md)**: 牛顿法、拟牛顿法依赖黑塞矩阵
 - **[神经网络核心](../../03_Deep_Learning/Neural_Network_Core/Neural_Network_Core.md)**: 理解权重矩阵的初始化策略
 - **[Transformer 架构](../../04_NLP_LLMs/Transformer/Transformer.md)**: 注意力机制的矩阵计算
-- **[模型压缩](../../07_AI_Engineering/Model_Compression/Model_Compression.md)**: SVD、低秩分解在压缩中的应用
+- **[模型压缩](../../09_Deployment_Inference/Deployment_Inference.md)**: SVD、低秩分解在压缩中的应用
 
 ---
 

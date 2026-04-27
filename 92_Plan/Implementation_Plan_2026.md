@@ -24,8 +24,8 @@
 | ID | 任务名称 | 负责角色 | 状态 | 文件路径 | 备注 |
 |----|---------|---------|------|---------|------|
 | T01 | Agent 状态管理模块 | Agent 工程师 | ✅ 已完成 | `06_Reinforcement_Learning/AI_Agents/Agent_State_Management.md` | 895行 |
-| T02 | 系统架构全景图 | 架构师 | ✅ 已完成 | `07_AI_Engineering/Architecture/AI_System_Architecture_2026.md` | 932行 |
-| T03 | AI 系统测试框架 | 集成测试 | ✅ 已完成 | `07_AI_Engineering/AI_Testing/AI_Test_Framework_2026.md` | 1376行 |
+| T02 | 系统架构全景图 | 架构师 | ✅ 已完成 | `12_Architecture_Infrastructure/AI_System_Architecture_2026.md` | 932行 |
+| T03 | AI 系统测试框架 | 集成测试 | ✅ 已完成 | `15_Testing/AI_Test_Framework_2026.md` | 1376行 |
 | T04 | 需求管理流程 | 工单管理 | ✅ 已完成 | `.github/ISSUE_TEMPLATE/` + `ROADMAP.md` | 5个模板 |
 | T05 | 长上下文技术专题 | 大模型工程师 | ✅ 已完成 | `04_NLP_LLMs/Long_Context_Models_2026.md` | 扩展900+行 |
 
@@ -36,8 +36,8 @@
 | ID | 任务名称 | 负责角色 | 状态 | 文件路径 | 依赖 |
 |----|---------|---------|------|---------|------|
 | T06 | Agent 调试工具 | Agent 工程师 | ✅ 已完成 | `06_Reinforcement_Learning/AI_Agents/Agent_Observability_2026.md` | T01 |
-| T07 | 容量规划指南 | 架构师 | ✅ 已完成 | `07_AI_Engineering/Capacity_Planning_2026.md` | T02 |
-| T08 | 测试数据管理 | 集成测试 | ✅ 已完成 | `07_AI_Engineering/AI_Testing/Test_Data_Management.md` | T03 |
+| T07 | 容量规划指南 | 架构师 | ✅ 已完成 | `12_Architecture_Infrastructure/Capacity_Planning_2026.md` | T02 |
+| T08 | 测试数据管理 | 集成测试 | ✅ 已完成 | `15_Testing/Test_Data_Management.md` | T03 |
 | T09 | 版本路线图 | 工单管理 | ✅ 已完成 | `ROADMAP.md` | T04 |
 | T10 | 测试时计算专题 | 大模型工程师 | ✅ 已完成 | `04_NLP_LLMs/Reasoning_Models/Test_Time_Compute_2026.md` | |
 
@@ -48,10 +48,10 @@
 | ID | 任务名称 | 负责角色 | 状态 | 文件路径 | 依赖 |
 |----|---------|---------|------|---------|------|
 | T11 | 多模态 LLM 专题 | 大模型工程师 | ✅ 已完成 | `04_NLP_LLMs/Multimodal_Models/Multimodal_Architectures_2026.md` | |
-| T12 | 混沌工程实践 | 集成测试 | ✅ 已完成 | `07_AI_Engineering/AI_Ops/Chaos_Engineering_AI.md` | T03 |
-| T13 | 多租户架构 | 架构师 | ✅ 已完成 | `07_AI_Engineering/Multi_Tenant_Architecture.md` | T07 |
+| T12 | 混沌工程实践 | 集成测试 | ✅ 已完成 | `16_AI_Ops/Chaos_Engineering_AI.md` | T03 |
+| T13 | 多租户架构 | 架构师 | ✅ 已完成 | `12_Architecture_Infrastructure/Multi_Tenant_Architecture.md` | T07 |
 | T14 | 问题知识库 | 工单管理 | ✅ 已完成 | `KNOWN_ISSUES.md` | T04 |
-| T15 | 契约测试框架 | 集成测试 | ✅ 已完成 | `07_AI_Engineering/AI_Testing/Contract_Testing.md` | T03 |
+| T15 | 契约测试框架 | 集成测试 | ✅ 已完成 | `15_Testing/Contract_Testing.md` | T03 |
 
 ---
 

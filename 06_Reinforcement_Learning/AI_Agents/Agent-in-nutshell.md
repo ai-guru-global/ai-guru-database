@@ -740,6 +740,6 @@ async def call_tool(name, arguments):
 
 ## 🔗 相关主题
 
-- [RAG](../../07_AI_Engineering/RAG_Systems/RAG-in-nutshell.md) - 带知识检索的智能体
-- [技能](../../07_AI_Engineering/AI_Skills/Skills-in-nutshell.md) - 构建智能体能力
-- [工作流](../../07_AI_Engineering/AI_Workflow/Workflow-in-nutshell.md) - 智能体编排
+- [RAG](../../11_RAG_Systems/RAG-in-nutshell.md) - 带知识检索的智能体
+- [技能](../../13_Agent_Production/Agent_Skills/Skills-in-nutshell.md) - 构建智能体能力
+- [工作流](../../13_Agent_Production/Agent_Workflow/Workflow-in-nutshell.md) - 智能体编排

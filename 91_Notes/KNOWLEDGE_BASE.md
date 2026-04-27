@@ -168,16 +168,16 @@ Cutting-edge content updated for 2026:
 | **[LLM Architectures 2026](./04_NLP_LLMs/LLM_Architectures/LLM_Architectures.md)** | GPT-5.2, Claude 4.5, Gemini 3, Llama 4, Reasoning models |
 | **[AI Hardware 2026](./01_Fundamentals/AI_Hardware/AI_Hardware_2026.md)** | H100 vs H200 vs B200, MI300X, GPU selection guide |
 | **[PEFT 2026](./04_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/PEFT_2026.md)** | LoRA/QLoRA/DoRA/rsLoRA, single-GPU 70B fine-tuning |
-| **[RAG Advanced 2026](./07_AI_Engineering/RAG_Advanced_2026/RAG_Advanced_2026.md)** | Hybrid retrieval + RRF, Agentic RAG, 60%→90% accuracy |
-| **[AI Coding Assistants 2026](./07_AI_Engineering/AI_Coding_Assistants/AI_Coding_Assistants_2026.md)** | Cursor (72% acc), Claude Code, Windsurf, Devin comparison |
-| **[Vibe Coding Methodology 2026](./07_AI_Engineering/Vibe_Coding/Vibe_Coding_Methodology_2026.md)** | DGRV loop, prompt engineering, quality system, production practices |
+| **[RAG Advanced 2026](./11_RAG_Systems/RAG_Advanced_2026.md)** | Hybrid retrieval + RRF, Agentic RAG, 60%→90% accuracy |
+| **[AI Coding Assistants 2026](./17_AI_Coding/02_Tools/AI_Coding_Assistants_2026.md)** | Cursor (72% acc), Claude Code, Windsurf, Devin comparison |
+| **[Vibe Coding Methodology 2026](./17_AI_Coding/04_Methodology/Vibe_Coding_Methodology.md)** | DGRV loop, prompt engineering, quality system, production practices |
 | **[Embodied AI 2026](./06_Reinforcement_Learning/Robotics_Embodied_AI/Embodied_AI_2026.md)** | VLA models (RT-2, π0, GR00T), humanoid robotics market |
 | **[World Models 2026](./03_Deep_Learning/World_Models/World_Models_2026.md)** | JEPA/V-JEPA 2.1/LeJEPA, Yann LeCun's AGI path |
 | **[AI Video Generation 2026](./05_Computer_Vision/Video_Generation/Video_Generation_2026.md)** | Veo3, Kling 3.0, Seedance, post-Sora landscape |
 | **[AI Security 2026](./08_Ethics_Safety/AI_Security_2026/AI_Security_2026.md)** | OWASP LLM Top 10 + ASI framework, Agent security |
-| **[Agent Production](./07_AI_Engineering/Agent_Production/Agent_Production_2026.md)** | K8s architecture, monitoring, CI/CD, cost control |
+| **[Agent Production](./13_Agent_Production/Agent_Production_2026.md)** | K8s architecture, monitoring, CI/CD, cost control |
 | **[Agent Protocols 2026](./06_Reinforcement_Learning/AI_Agents/Agent_Protocols_2026.md)** | MCP/A2A/UCP stack, protocol testing framework |
-| **[AI Infrastructure 2026](./07_AI_Engineering/AI_Infrastructure_2026.md)** | SGLang 16k tok/s vs vLLM, AI Gateway, LLMOps caching |
+| **[AI Infrastructure 2026](./12_Architecture_Infrastructure/AI_Infrastructure_2026.md)** | SGLang 16k tok/s vs vLLM, AI Gateway, LLMOps caching |
 
 ---
 

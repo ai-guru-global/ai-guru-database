@@ -238,7 +238,7 @@
 
 - [原版技术文档](./README.md) - 包含数学公式和代码
 - [03 深度学习](../../03_Deep_Learning/README_for_dummy.md) - 理解神经网络基础
-- [07 AI 工程](../../07_AI_Engineering/README_for_dummy.md) - 学习如何部署 AI
+- [09 部署与推理](../../09_Deployment_Inference/README.md) - 学习如何部署 AI
 
 ### 🎓 实践建议
 

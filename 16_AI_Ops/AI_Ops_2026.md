@@ -1925,6 +1925,19 @@ Phase 5: 持续优化 (持续)
 - [Thanos](https://thanos.io/) - 长存储
 - [Opentelemetry](https://opentelemetry.io/) - 可观测性
 - [Alerta](https://alerta.io/) - 告警管理
+- [MLflow](./MLflow_Deep_Dive.md) - 机器学习生命周期管理
+- [DVC](./DVC_Deep_Dive.md) - 数据版本控制
+- [PromptLayer](./PromptLayer_Deep_Dive.md) - 提示词管理与追踪
+- [Phoenix](./Phoenix_Deep_Dive.md) - LLM 可观测性
+- [LangSmith](./LangSmith_Deep_Dive.md) - LLM 应用调试与监控
+- [Kubeflow](./Kubeflow_Deep_Dive.md) - 云原生 ML 平台
+- [LakeFS](./LakeFS_Deep_Dive.md) - 数据湖版本控制
+- [Feast](./Feast_Deep_Dive.md) - 特征存储平台
+- [Guardrails](./Guardrails_Deep_Dive.md) - LLM 安全护栏
+- [Helicone](./Helicone_Deep_Dive.md) - LLM 可观测性平台
+- [Braintrust](./Braintrust_Deep_Dive.md) - LLM 评估平台
+- [Prefect](./Prefect_Deep_Dive.md) - Python 工作流编排
+- [ClearML](./ClearML_Deep_Dive.md) - 一站式 ML 平台
 
 ### 学习资源
 - [Gartner AIOps Guide](https://www.gartner.com/)

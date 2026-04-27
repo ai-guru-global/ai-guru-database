@@ -795,18 +795,18 @@ Model_Training → Evaluation → Deployment
 | **计算机视觉** | `05_Computer_Vision/` | `Image_Classification_Detection/`, `Segmentation/`, `Generative_Models/` |
 | **强化学习** | `06_Reinforcement_Learning/` | `RL_Foundations/`, `Deep_RL/` |
 | **Agent** | `06_Reinforcement_Learning/AI_Agents/` | `Agent_Protocols_Detail.md`, `Agent_Future_Roadmap_2026_2030.md` |
-| **RAG 系统** | `07_AI_Engineering/RAG_Systems/` | `RAG_Advanced_2026/` |
+| **RAG 系统** | `11_RAG_Systems/` | `RAG_Advanced_2026/`, `Chroma_Deep_Dive.md` |
 | **MoE/Scaling** | `04_NLP_LLMs/LLM_Architectures/` | `AI_Infrastructure_Trends_2026.md` |
 | **Reasoning** | `04_NLP_LLMs/LLM_Architectures/` | `Prompt_Engineering.md` |
 | **AI for Science** | `13_AI_Applications_Industry/` | `AI_Applications_Industry.md` |
-| **评估基准** | `07_AI_Engineering/Model_Evaluation/` | `13_Agent_Production/16_Agent_Evaluation/`, `Benchmarking/` |
+| **评估基准** | `08_Model_Evaluation/` | `13_Agent_Production/16_Agent_Evaluation/`, `Benchmarking/` |
 | **特征工程** | `02_Machine_Learning/Feature_Engineering/` | `Feature_Engineering.md` |
 | **安全/可解释** | `08_Ethics_Safety/` | `AI_Safety_RedTeaming/`, `AI_Security_2026/`, `Value_Alignment/` |
 | **具身智能/VLA** | `06_Reinforcement_Learning/Robotics_Embodied_AI/` | `VLA_Models_2026.md`, `Embodied_AI_Complete_2026.md` |
 | **评估** | `13_Agent_Production/16_Agent_Evaluation/` | `Agent_Harness_Complete_2026.md`, `Benchmarking/`, `Metrics/` |
-| **基础设施** | `07_AI_Engineering/` | `Deployment_Inference/`, `MLOps_Pipeline/`, `AI_Infrastructure_Trends_2026.md` |
-| **LLMOps** | `07_AI_Engineering/` | `Model_Evaluation/`, `AI_Coding_Assistants/` |
-| **Vibe Coding** | `07_AI_Engineering/Vibe_Coding/` | `Vibe_Coding_Methodology_2026.md`, `Vibe_Coding_Production_Practices.md`, `Vibe_Coding_for_dummy.md` |
+| **基础设施** | `12_Architecture_Infrastructure/` | `AI_Infrastructure_2026.md`, `AI_System_Architecture_2026.md` |
+| **LLMOps** | `16_AI_Ops/` | `AI_Ops_2026.md`, `MLflow_Deep_Dive.md` |
+| **Vibe Coding** | `17_AI_Coding/04_Methodology/` | `Vibe_Coding_Methodology.md`, `Vibe_Coding_Production_Practices.md`, `Vibe_Coding_for_dummy.md` |
 
 ### 4.2 快速查找
 
@@ -829,10 +829,10 @@ Q: 具身智能完整指南
 A: 06_Reinforcement_Learning/Robotics_Embodied_AI/Embodied_AI_Complete_2026.md
 
 Q: Vibe Coding 方法论
-A: 07_AI_Engineering/Vibe_Coding/Vibe_Coding_Methodology_2026.md
+A: 17_AI_Coding/04_Methodology/Vibe_Coding_Methodology.md
 
 Q: Vibe Coding 生产环境实践
-A: 07_AI_Engineering/Vibe_Coding/Vibe_Coding_Production_Practices.md
+A: 17_AI_Coding/04_Methodology/Vibe_Coding_Production_Practices.md
 
 Q: Agent 评估框架
 A: 13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026.md
@@ -841,10 +841,10 @@ Q: Agent 未来发展
 A: 06_Reinforcement_Learning/AI_Agents/Agent_Future_Roadmap_2026_2030.md
 
 Q: AI 基础设施趋势
-A: 07_AI_Engineering/AI_Infrastructure_Trends_2026.md
+A: 12_Architecture_Infrastructure/AI_Infrastructure_2026.md
 
 Q: RAG 系统设计
-A: 07_AI_Engineering/RAG_Systems/
+A: 11_RAG_Systems/
 
 Q: 强化学习基础
 A: 06_Reinforcement_Learning/RL_Foundations/
@@ -856,7 +856,7 @@ Q: 图像分割 (SAM)
 A: 05_Computer_Vision/Segmentation/
 
 Q: Coding Agent / AI 编码助手
-A: 07_AI_Engineering/AI_Coding_Assistants/
+A: 17_AI_Coding/02_Tools/AI_Coding_Assistants_2026.md
 
 Q: LLM 微调 (LoRA/QLoRA)
 A: 04_NLP_LLMs/Fine_tuning_Techniques/
@@ -871,7 +871,7 @@ Q: AI 对齐与价值观
 A: 08_Ethics_Safety/Value_Alignment/
 
 Q: LLM 评估基准 (MMLU/HumanEval)
-A: 07_AI_Engineering/Model_Evaluation/Model_Evaluation.md
+A: 08_Model_Evaluation/Model_Evaluation.md
 
 Q: 特征工程
 A: 02_Machine_Learning/Feature_Engineering/Feature_Engineering.md

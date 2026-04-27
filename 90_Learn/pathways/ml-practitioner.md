@@ -139,11 +139,11 @@ Phase 6: 完成端到端项目
 **📚 核心概念**：[Stage 3: 工程实践](../concepts/stage3-engineering.md)
 
 **🔗 深入阅读**：
-- [部署与推理（小白版）](../../07_AI_Engineering/Deployment_Inference/Deployment_Inference_for_dummy.md)
-- [RAG 系统（小白版）](../../07_AI_Engineering/RAG_Systems/RAG_Systems_for_dummy.md)
-- [MLOps 流水线（小白版）](../../07_AI_Engineering/MLOps_Pipeline/MLOps_Pipeline_for_dummy.md)
-- [模型评估（小白版）](../../07_AI_Engineering/Model_Evaluation/Model_Evaluation_for_dummy.md)
-- [AI 工作流（速查版）](../../07_AI_Engineering/AI_Workflow/Workflow-in-nutshell.md)
+- [部署与推理（小白版）](../../09_Deployment_Inference/Deployment_Inference_for_dummy.md)
+- [RAG 系统（小白版）](../../11_RAG_Systems/RAG_Systems_for_dummy.md)
+- [MLOps 流水线（小白版）](../../10_MLOps_Pipeline/MLOps_Pipeline_for_dummy.md)
+- [模型评估（小白版）](../../08_Model_Evaluation/Model_Evaluation_for_dummy.md)
+- [AI 工作流（速查版）](../../13_Agent_Production/Agent_Workflow/Workflow-in-nutshell.md)
 
 **💡 动手实践建议**：
 - 用 vLLM 部署一个开源 LLM（如 Qwen），测试其推理性能

@@ -14,6 +14,7 @@
 |------|------|----------|
 | [Dify / Coze / LocalAI](./Dify_Coze_MLServe_Dive.md) | Agent 平台对比：开源 vs 企业 vs 本地 | 产品经理、架构师 |
 | [OpenRouter Deep Dive](./OpenRouter_Deep_Dive.md) | 统一模型网关：智能路由、成本优化、多模型聚合 | 架构师、开发者 |
+| [PromptFlow Deep Dive](./PromptFlow_Deep_Dive.md) | 微软工作流编排：可视化流程、评估追踪 | 开发者、企业用户 |
 
 ## 平台选型速查
 

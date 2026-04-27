@@ -50,12 +50,12 @@
 ### 行业分析师路径
 1. 阅读 [AI应用与行业融合全景](./AI_Applications_Industry.md) 了解整体图景
 2. 选择感兴趣的行业深入阅读对应文件
-3. 结合 [07_AI_Engineering](../07_AI_Engineering/) 了解工程实现
+3. 结合 [09_Deployment_Inference](../09_Deployment_Inference/) 了解工程实现
 
 ### 产品经理路径
 1. 了解各行业AI应用场景和最新案例
-2. 学习 [Agent_Production](../07_AI_Engineering/Agent_Production/) 了解AI Agent产品化
-3. 研究 [AI_Coding_Assistants](../07_AI_Engineering/AI_Coding_Assistants/) 提升开发效率
+2. 学习 [Agent_Production](../13_Agent_Production/) 了解AI Agent产品化
+3. 研究 [AI_Coding_Assistants](../17_AI_Coding/02_Tools/AI_Coding_Assistants_2026.md) 提升开发效率
 
 ## 参考资源
 

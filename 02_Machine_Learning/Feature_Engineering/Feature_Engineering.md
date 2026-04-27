@@ -298,8 +298,8 @@ def create_time_features(df, date_col='date', target_col='sales'):
 ### 进阶方向
 - [监督学习](../Supervised_Learning/Supervised_Learning.md) — 特征工程的下游消费者
 - [无监督学习](../Unsupervised_Learning/Unsupervised_Learning.md) — PCA/t-SNE 作为降维特征
-- [模型评估](../../07_AI_Engineering/Model_Evaluation/Model_Evaluation.md) — 评估特征工程的效果
-- [MLOps Pipeline](../../07_AI_Engineering/MLOps_Pipeline/MLOps_Pipeline.md) — 特征存储与特征管道
+- [模型评估](../../08_Model_Evaluation/Model_Evaluation.md) — 评估特征工程的效果
+- [MLOps Pipeline](../../10_MLOps_Pipeline/MLOps_Pipeline.md) — 特征存储与特征管道
 
 ---
 

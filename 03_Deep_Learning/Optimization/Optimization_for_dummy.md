@@ -1113,7 +1113,7 @@ A100       40GB    Batch=128-256
 
 **进阶学习**:
 - [Transformer小白版](../../../04_NLP_LLMs/README_for_dummy.md) - 看大模型怎么训练的
-- [模型部署](../../../07_AI_Engineering/README_for_dummy.md) - 训练完了怎么用
+- [模型部署](../../../09_Deployment_Inference/README.md) - 训练完了怎么用
 
 ### 🎯 实战项目建议:
 

@@ -67,9 +67,9 @@ Stage 3: 工程实践（理解 AI 产品的工程边界）
 
 **🔗 深入阅读**：
 - [README_for_dummy.md](../../README_for_dummy.md) — 新手导航（快速浏览）
-- [RAG 系统（小白版）](../../07_AI_Engineering/RAG_Systems/RAG_Systems_for_dummy.md) — 理解 AI + 知识库的工程路径
-- [部署与推理（小白版）](../../07_AI_Engineering/Deployment_Inference/Deployment_Inference_for_dummy.md) — 理解 AI 的性能与成本
-- [模型评估（小白版）](../../07_AI_Engineering/Model_Evaluation/Model_Evaluation_for_dummy.md) — 理解 AI 质量评估的复杂性
+- [RAG 系统（小白版）](../../11_RAG_Systems/RAG_Systems_for_dummy.md) — 理解 AI + 知识库的工程路径
+- [部署与推理（小白版）](../../09_Deployment_Inference/Deployment_Inference_for_dummy.md) — 理解 AI 的性能与成本
+- [模型评估（小白版）](../../08_Model_Evaluation/Model_Evaluation_for_dummy.md) — 理解 AI 质量评估的复杂性
 
 **💡 产品经理必须理解的技术事实**：
 ```
@@ -104,7 +104,7 @@ AI 成本结构：
 
 **🔗 深入阅读**：
 - [AI Agent（小白版）](../../06_Reinforcement_Learning/AI_Agents/AI_Agents_for_dummy.md) — 理解 AI Agent 的能力边界
-- [AI 工作流（速查版）](../../07_AI_Engineering/AI_Workflow/Workflow-in-nutshell.md) — 理解 AI 工作流设计
+- [AI 工作流（速查版）](../../13_Agent_Production/Agent_Workflow/Workflow-in-nutshell.md) — 理解 AI 工作流设计
 - [AI 工具与实践指南](../../00_AI_Introduction/AI_Technology_Landscape.md) — 理解 AI 工具生态
 
 **💡 AI 产品设计的核心原则**：

@@ -703,7 +703,7 @@ agent.run("帮我规划明天的行程")
 **下一步阅读**:
 - 📘 [LLM架构 - 小白版](../../04_NLP_LLMs/LLM_Architectures/LLM_Architectures_for_dummy.md) - 理解Agent的"大脑"
 - 📘 [Prompt工程 - 小白版](../../04_NLP_LLMs/Prompt_Engineering/Prompt_Engineering_for_dummy.md) - 设计Agent的系统提示
-- 📘 [RAG系统 - 小白版](../../07_AI_Engineering/RAG_Systems/RAG_Systems_for_dummy.md) - Agent的记忆系统
+- 📘 [RAG系统 - 小白版](../../11_RAG_Systems/RAG_Systems_for_dummy.md) - Agent的记忆系统
 
 **查看原版文档**(需要技术基础):
 - 📄 [AI智能体(原版)](./AI_Agents.md) - 包含ReAct实现代码和架构设计
@@ -716,7 +716,7 @@ agent.run("帮我规划明天的行程")
 **相关主题**:
 - 🔙 [深度强化学习 - 小白版](../Deep_RL/Deep_RL_for_dummy.md) - Agent决策的理论基础
 - 🔙 [Transformer - 小白版](../../04_NLP_LLMs/Transformer_Revolution/Transformer_Revolution_for_dummy.md) - Agent的语言理解能力
-- 🔜 [部署与推理 - 小白版](../../07_AI_Engineering/Deployment_Inference/Deployment_Inference_for_dummy.md) - Agent的生产部署
+- 🔜 [部署与推理 - 小白版](../../09_Deployment_Inference/Deployment_Inference_for_dummy.md) - Agent的生产部署
 
 ---
 

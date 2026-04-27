@@ -355,7 +355,7 @@ final_prompt = ChatPromptTemplate.from_messages([
 
 ### 进阶方向
 - [微调技术](../Fine_tuning_Techniques/Fine_tuning_Techniques.md) — Prompt 优化不够时的下一步
-- [RAG 系统](../../07_AI_Engineering/RAG_Systems/RAG_Systems.md) — Prompt 与检索增强的结合
+- [RAG 系统](../../11_RAG_Systems/RAG_Systems.md) — Prompt 与检索增强的结合
 - [AI 智能体](../../06_Reinforcement_Learning/AI_Agents/AI_Agents.md) — Prompt 在 Agent 系统中的核心作用
 - [AI 安全与红队](../../08_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming.md) — Prompt 注入防御
 
@@ -397,6 +397,9 @@ final_prompt = ChatPromptTemplate.from_messages([
 - [LangChain](https://python.langchain.com/docs/concepts/prompt_templates/) — Prompt 模板管理
 - [DSPy](https://github.com/stanfordnlp/dspy) — 可编程的 Prompt 优化框架
 - [Guardrails AI](https://www.guardrailsai.com/) — Prompt 输出验证框架
+- [Instructor](./Instructor_Deep_Dive.md) — Python 原生结构化输出
+- [Guidance](./Guidance_Deep_Dive.md) — 微软引导式生成控制
+- [Outlines](./Outlines_Deep_Dive.md) — CFG 约束的结构化输出
 
 ### Vibe Coding 中的提示工程
 
@@ -410,7 +413,7 @@ final_prompt = ChatPromptTemplate.from_messages([
 | **迭代** | 改写提示 | DGRV 循环 (描述→生成→审查→验证) |
 | **结构** | System + User + Examples | STAR 结构 (情境+任务+架构+要求) |
 
-详细内容请参阅 [Vibe Coding 方法论 2026](../../07_AI_Engineering/Vibe_Coding/Vibe_Coding_Methodology_2026.md) 中的"提示工程体系"章节。
+详细内容请参阅 [Vibe Coding 方法论](./../../../17_AI_Coding/04_Methodology/Vibe_Coding_Methodology.md) 中的"提示工程体系"章节。
 
 ---
 *Last updated: 2026-04-11*

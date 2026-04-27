@@ -167,7 +167,7 @@
   - **推理优化**：vLLM、TensorRT-LLM、FlashAttention 让推理成本大幅下降
   - **边缘 AI**：端侧模型（Phi-4、Gemma 2B）让手机/PC 也能跑 LLM
 - **入门阅读**：[AI 硬件](../01_Fundamentals/AI_Hardware/AI_Hardware_2026.md)
-- **深入学习**：[AI 基础设施趋势 2026](../07_AI_Engineering/AI_Infrastructure_Trends_2026.md)
+- **深入学习**：[AI 基础设施趋势 2026](../12_Architecture_Infrastructure/AI_Infrastructure_2026.md)
 - **关联概念**：GPU、分布式训练、量化
 
 ---

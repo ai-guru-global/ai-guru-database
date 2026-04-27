@@ -617,8 +617,8 @@ $$
 ### 进阶推荐
 - **[神经网络核心](../../03_Deep_Learning/Neural_Network_Core/Neural_Network_Core.md)**: 计算图与反向传播
 - **[Transformer 架构](../../04_NLP_LLMs/Transformer/Transformer.md)**: 注意力机制的优化
-- **[模型压缩](../../07_AI_Engineering/Model_Compression/Model_Compression.md)**: 量化、剪枝、蒸馏
-- **[向量数据库](../../07_AI_Engineering/Vector_DB/Vector_DB.md)**: HNSW、ANN 算法实践
+- **[模型压缩](../../09_Deployment_Inference/Deployment_Inference.md)**: 量化、剪枝、蒸馏
+- **[向量数据库](../../11_RAG_Systems/RAG_Systems.md)**: HNSW、ANN 算法实践
 
 ---
 

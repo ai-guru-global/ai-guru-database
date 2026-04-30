@@ -993,7 +993,7 @@ description: Use this skill when: the user asks about PDFs
 | **Factory** | 平台 | AI 原生开发平台 |
 | **Databricks** | 数据平台 | 数据工程 Agent |
 | **Snowflake** | 数据平台 | Cortex Code Agent |
-| **Spring AI** | 框架 | Java AI 应用框架 |
+| **Spring AI** | 框架 | Java AI 应用框架 → [深度解析](./Spring_AI_Deep_Dive.md) |
 | **Goose** | CLI | Block 开源 Agent |
 | **Letta** | 平台 | 有状态记忆 Agent |
 | **Laravel Boost** | 框架 | Laravel 最佳实践 |

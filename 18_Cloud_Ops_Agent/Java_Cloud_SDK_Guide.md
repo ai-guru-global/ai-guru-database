@@ -1,8 +1,10 @@
 # Java Cloud SDK AI 集成指南
 
+> 📚 **Spring AI 基础**: 如果你还不熟悉 Spring AI 的核心概念，请先阅读 [Spring AI 深度解析](../01_Fundamentals/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md)。
+>
 > **一句话理解**: 用 Java SDK 接入 AWS Bedrock、Azure AI、Google Vertex AI、国内云平台 AI 服务 —— 在 Spring Boot 中统一管理多云 AI 调用，实现企业级多云 AI 基础设施。
 
-> **相关文档**: [Cloud Ops Agent](./Cloud_Product_Ops_2026.md) | [Spring AI 深度解析](../13_Agent_Production/Agent_Skills/Spring_AI_Deep_Dive.md) | [AI Gateway 概述](../14_AI_Gateway/AI_Gateway_2026.md) | [Java 生态 AI 概览](../01_Fundamentals/Java_Ecosystem_AI/Java_Ecosystem_AI_Overview.md)
+> **相关文档**: [Cloud Ops Agent](./Cloud_Product_Ops_2026.md) | [Spring AI 深度解析](../01_Fundamentals/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md) | [AI Gateway 概述](../14_AI_Gateway/AI_Gateway_2026.md) | [Java 生态 AI 概览](../01_Fundamentals/Java_Ecosystem_AI/Java_Ecosystem_AI_Overview.md)
 
 ---
 

@@ -284,6 +284,256 @@ my-skill/
 
 ---
 
+## 三（续）、完整案例：L1 纯文本 Skill
+
+一个最简的编码风格审查 Skill，仅用 SKILL.md 实现。
+
+### 目录结构
+
+```
+review-checklist/
+└── SKILL.md
+```
+
+### SKILL.md
+
+```markdown
+---
+name: review-checklist
+description: >
+  Check code changes against team review checklist before submitting PR.
+  Use when asked to review code, check a PR, or verify changes meet team standards.
+---
+
+# Code Review Checklist
+
+## When to use this skill
+When reviewing code changes (PR, diff, or commit) before approval.
+
+## Workflow
+
+1. Read the diff or PR description
+2. Check each item below
+3. Report findings as a checklist with ✅ or ❌
+
+## Checklist
+
+- [ ] **Naming**: Variables/functions describe their purpose
+- [ ] **Tests**: New code has unit tests (if applicable)
+- [ ] **Error handling**: Edge cases and errors are handled
+- [ ] **No secrets**: No API keys, passwords, or tokens in code
+- [ ] **Documentation**: Public APIs have doc comments
+- [ ] **Performance**: No obvious N+1 queries or heavy loops
+
+## Output format
+
+```markdown
+## Review: [PR Title]
+
+| Check | Status | Notes |
+|-------|--------|-------|
+| Naming | ✅/❌ | ... |
+| Tests | ✅/❌ | ... |
+| Error handling | ✅/❌ | ... |
+| No secrets | ✅/❌ | ... |
+| Documentation | ✅/❌ | ... |
+| Performance | ✅/❌ | ... |
+
+### Summary
+[Overall assessment: Approve / Request changes / Needs discussion]
+```
+
+## Examples
+
+### Example 1: Missing tests
+Input: PR adds a new API endpoint but no tests.
+Output: Tests = ❌, recommend adding at least one happy path test.
+
+### Example 2: Secret leaked
+Input: Diff contains `API_KEY = "sk-live-..."`.
+Output: No secrets = ❌, flag immediately and request removal.
+```
+
+### 为什么这是 L1
+
+- 无脚本、无外部依赖
+- 纯 Markdown 指令，Agent 按清单逐条检查
+- 适用于任何代码库，零配置即可使用
+
+---
+
+## 三（续）、完整案例：L4 生产级 Skill
+
+一个完整的 PDF 表单处理 Skill，包含脚本、参考文档、测试数据和评估用例。
+
+### 目录结构
+
+```
+pdf-form-processor/
+├── SKILL.md
+├── scripts/
+│   ├── analyze_form.py      # 提取表单字段
+│   ├── validate_fields.py   # 验证字段映射
+│   └── fill_form.py         # 填写并生成 PDF
+├── references/
+│   ├── pdf-form-spec.md     # PDF 表单技术规范
+│   └── common-field-types.md # 常见字段类型说明
+├── assets/
+│   └── sample-form.pdf      # 示例空白表单
+└── evals/
+    ├── evals.json           # 测试用例
+    └── files/
+        ├── tax-form-2025.pdf
+        └── field-values.json
+```
+
+### SKILL.md
+
+```markdown
+---
+name: pdf-form-processor
+description: >
+  Extract fields from PDF forms, validate field mappings, and fill PDF forms
+  with provided data. Use when working with fillable PDFs, tax forms,
+  applications, or any document that requires structured data entry.
+---
+
+# PDF Form Processing
+
+## When to use this skill
+- Filling out PDF forms (tax, application, registration)
+- Extracting field names from a PDF to prepare data
+- Validating that all required fields have values before filling
+
+## Workflow
+
+1. **Analyze**: Extract form fields
+   ```bash
+   python scripts/analyze_form.py <input.pdf> --output form_fields.json
+   ```
+
+2. **Map**: Create `field_values.json` mapping each field to its value
+
+3. **Validate**: Check mappings are correct
+   ```bash
+   python scripts/validate_fields.py form_fields.json field_values.json
+   ```
+   If validation fails, revise `field_values.json` and re-validate.
+
+4. **Fill**: Generate the completed PDF
+   ```bash
+   python scripts/fill_form.py <input.pdf> field_values.json <output.pdf>
+   ```
+
+## Tools
+- Python 3.10+ with `pypdf` and `pdfrw`
+- See [Common Field Types](references/common-field-types.md) for field naming conventions
+
+## Gotchas
+- Checkbox fields use export values like `"Yes"` / `"Off"`, not booleans
+- Multi-page forms may have duplicate field names — always use full field path
+- Some PDFs are scanned images, not fillable forms — check with `analyze_form.py` first
+
+## Output format
+For field extraction, output a Markdown table:
+
+| Field Name | Type | Page | Required |
+|-----------|------|------|----------|
+| ... | ... | ... | ... |
+
+For filled forms, return the output file path.
+
+## Examples
+
+### Example 1: Tax form
+Input: `tax-form-2025.pdf` + taxpayer data
+Output: `tax-form-2025-filled.pdf`
+
+### Example 2: Registration form with missing fields
+Input: `registration.pdf` + partial data
+Output: Validation error listing missing required fields
+```
+
+### 核心脚本示例
+
+```python
+# scripts/analyze_form.py
+# /// script
+# dependencies = ["pypdf>=4.0"]
+# ///
+
+import json
+import sys
+from pypdf import PdfReader
+
+def extract_fields(pdf_path):
+    reader = PdfReader(pdf_path)
+    fields = []
+    for page_num, page in enumerate(reader.pages, 1):
+        if "/Annots" not in page:
+            continue
+        for annot in page["/Annots"]:
+            field = annot.get_object()
+            if field.get("/Subtype") == "/Widget":
+                fields.append({
+                    "name": str(field.get("/T", "")),
+                    "type": field.get("/FT", "/Tx"),
+                    "page": page_num,
+                    "required": "/Req" in str(field.get("/Ff", 0))
+                })
+    return fields
+
+if __name__ == "__main__":
+    if len(sys.argv) < 2:
+        print("Usage: python analyze_form.py <input.pdf> [--output fields.json]")
+        sys.exit(1)
+    
+    fields = extract_fields(sys.argv[1])
+    print(json.dumps(fields, indent=2))
+```
+
+### evals/evals.json
+
+```json
+{
+  "skill_name": "pdf-form-processor",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I have a W-9 tax form (evals/files/tax-form-2025.pdf). Extract all fields and tell me which ones are required.",
+      "expected_output": "A list of all form fields with their types and required status.",
+      "files": ["evals/files/tax-form-2025.pdf"],
+      "assertions": [
+        "Output contains a table or list of fields",
+        "Required fields are clearly marked",
+        "Field names match the actual PDF form fields"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Fill the tax form with the data in evals/files/field-values.json and generate the completed PDF.",
+      "expected_output": "A filled PDF file with all provided values correctly entered.",
+      "files": ["evals/files/tax-form-2025.pdf", "evals/files/field-values.json"],
+      "assertions": [
+        "Output file is a valid PDF",
+        "Form fields contain the provided values",
+        "Required fields are not left empty"
+      ]
+    }
+  ]
+}
+```
+
+### 为什么这是 L4
+
+- 多脚本协同（分析 → 验证 → 填充）
+- 参考文档分离技术细节
+- 评估用例覆盖功能正确性
+- 测试数据包含真实 PDF 表单
+- 验证循环模式确保输出质量
+
+---
+
 ## 四、从零到发布的完整工作流
 
 ### Phase 1: 提取（Extract）

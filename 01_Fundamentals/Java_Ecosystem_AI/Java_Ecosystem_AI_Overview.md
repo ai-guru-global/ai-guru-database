@@ -136,7 +136,7 @@ RAG 模块:
 • spring-ai-elasticsearch-store Elasticsearch 向量搜索
 ```
 
-> 详见 [Spring AI 深度解析](../../13_Agent_Production/Agent_Skills/Spring_AI_Deep_Dive.md)
+> 详见 [Spring AI 深度解析](./Spring_AI_Deep_Dive.md)
 
 ### 3.2 LangChain4j
 

@@ -570,19 +570,307 @@ test_case:
 
 ---
 
+## 九、成本优化与效率
+
+Harness 设计的另一个核心维度是**成本控制**。Agent 任务往往涉及多轮 LLM 调用、大量 Token 消耗和沙箱资源占用，不做优化的 Harness 可能在几天内产生数百甚至数千美元的成本。
+
+### 9.1 成本构成分析
+
+一个典型 Agent 任务的成本构成：
+
+```
+总成本 = LLM API 成本 (70-85%) + 沙箱计算成本 (10-20%) + 存储/网络 (5-10%)
+```
+
+| 成本项 | 计费方式 | 典型单价 (2026-04) | 优化空间 |
+|--------|---------|-------------------|---------|
+| **Prompt Tokens** | 每 1M tokens | $2-15 | ⭐⭐⭐⭐⭐ |
+| **Completion Tokens** | 每 1M tokens | $5-30 | ⭐⭐⭐⭐ |
+| **沙箱 CPU** | 每核时 | $0.05-0.50 | ⭐⭐⭐ |
+| **沙箱内存** | 每 GB时 | $0.01-0.10 | ⭐⭐ |
+| **向量存储查询** | 每 1K 次 | $0.01-0.50 | ⭐⭐⭐ |
+| **观测平台** | SaaS 订阅 | $50-500/月 | ⭐⭐ |
+
+### 9.2 Prompt 层优化
+
+Prompt 层是成本的大头，优化收益最高：
+
+#### 策略一：模型路由（Model Routing）
+
+根据任务复杂度动态选择模型：
+
+```python
+class ModelRouter:
+    def route(self, task: str, context: dict) -> str:
+        complexity = self._assess_complexity(task, context)
+        
+        if complexity == "simple":
+            return "gpt-4o-mini"      # 便宜 10-20x
+        elif complexity == "medium":
+            return "claude-sonnet-4"
+        elif complexity == "complex":
+            return "gpt-4o"
+        else:
+            return "claude-opus-4"    # 仅用于高难度任务
+    
+    def _assess_complexity(self, task: str, context: dict) -> str:
+        # 启发式判断
+        if len(task) < 100 and "simple" in task.lower():
+            return "simple"
+        if context.get("file_count", 0) > 50:
+            return "complex"
+        return "medium"
+```
+
+**收益**：简单任务成本降低 80-90%。
+
+#### 策略二：Prompt 压缩
+
+减少传入上下文的 Token 数：
+
+```python
+class PromptCompressor:
+    def compress(self, messages: list, budget: int = 4000) -> list:
+        total = sum(len(m["content"]) for m in messages)
+        if total <= budget * 4:  # 粗略估计：1 token ≈ 4 chars
+            return messages
+        
+        # 保留 system + 最近 3 轮 + 摘要历史
+        system_msgs = [m for m in messages if m["role"] == "system"]
+        recent = messages[-6:]  # 最近 3 轮对话
+        older = messages[len(system_msgs):-6]
+        
+        if older:
+            summary = self._summarize(older)
+            return system_msgs + [{"role": "system", "content": summary}] + recent
+        
+        return messages
+```
+
+**收益**：长会话成本降低 40-60%。
+
+#### 策略三：结果缓存
+
+缓存确定性任务的结果：
+
+```python
+import hashlib
+from functools import lru_cache
+
+class ResultCache:
+    def __init__(self, ttl_seconds: int = 3600):
+        self.cache = {}
+        self.ttl = ttl_seconds
+    
+    def get_key(self, task: str, context: dict) -> str:
+        content = f"{task}:{json.dumps(context, sort_keys=True)}"
+        return hashlib.md5(content.encode()).hexdigest()
+    
+    def get(self, task: str, context: dict):
+        key = self.get_key(task, context)
+        entry = self.cache.get(key)
+        if entry and time.time() - entry["time"] < self.ttl:
+            return entry["result"]
+        return None
+    
+    def set(self, task: str, context: dict, result: str):
+        key = self.get_key(task, context)
+        self.cache[key] = {"result": result, "time": time.time()}
+```
+
+适用场景：Lint 检查、格式转换、重复查询。
+
+**收益**：重复任务成本降低 90%+。
+
+### 9.3 执行层优化
+
+#### 策略四：沙箱复用
+
+避免为每个任务创建新沙箱：
+
+```python
+class SandboxPool:
+    """沙箱连接池"""
+    
+    def __init__(self, max_size: int = 10):
+        self.available = []
+        self.in_use = set()
+        self.max_size = max_size
+    
+    def acquire(self):
+        if self.available:
+            sandbox = self.available.pop()
+            self.in_use.add(sandbox.id)
+            return sandbox
+        
+        if len(self.in_use) < self.max_size:
+            return self._create_new()
+        
+        raise RuntimeError("Sandbox pool exhausted")
+    
+    def release(self, sandbox):
+        self.in_use.discard(sandbox.id)
+        sandbox.reset()  # 清理状态，保留环境
+        self.available.append(sandbox)
+```
+
+**收益**：任务启动时间从 5s 降到 <100ms，沙箱成本降低 50-70%。
+
+#### 策略五：工具输出裁剪
+
+大输出是上下文杀手：
+
+```python
+def offload_large_output(output: str, threshold: int = 2000) -> str:
+    if len(output) <= threshold:
+        return output
+    
+    # 保留头部和尾部各 500 chars，中间存文件
+    head = output[:500]
+    tail = output[-500:]
+    middle = output[500:-500]
+    
+    file_path = f"/tmp/offload_{uuid4()}.txt"
+    with open(file_path, "w") as f:
+        f.write(middle)
+    
+    return f"{head}\n... [{len(middle)} chars offloaded to {file_path}] ...\n{tail}"
+```
+
+**收益**：大输出场景 Token 成本降低 60-80%。
+
+### 9.4 架构层优化
+
+#### 策略六：并发与批处理
+
+```python
+from concurrent.futures import ThreadPoolExecutor
+
+class BatchProcessor:
+    def process_batch(self, tasks: list, max_workers: int = 5):
+        with ThreadPoolExecutor(max_workers=max_workers) as executor:
+            futures = {
+                executor.submit(self.harness.run, task): task
+                for task in tasks
+            }
+            results = {}
+            for future in futures:
+                task = futures[future]
+                results[task] = future.result()
+            return results
+```
+
+**收益**：批量任务单位成本降低 30-50%。
+
+#### 策略七：智能重试与熔断
+
+避免失败任务无限重试烧钱：
+
+```python
+class CircuitBreaker:
+    def __init__(self, failure_threshold: int = 5, recovery_time: int = 60):
+        self.failure_count = 0
+        self.failure_threshold = failure_threshold
+        self.recovery_time = recovery_time
+        self.last_failure = None
+        self.state = "CLOSED"  # CLOSED, OPEN, HALF_OPEN
+    
+    def call(self, func, *args, **kwargs):
+        if self.state == "OPEN":
+            if time.time() - self.last_failure > self.recovery_time:
+                self.state = "HALF_OPEN"
+            else:
+                raise Exception("Circuit breaker is OPEN")
+        
+        try:
+            result = func(*args, **kwargs)
+            self._on_success()
+            return result
+        except Exception as e:
+            self._on_failure()
+            raise e
+    
+    def _on_failure(self):
+        self.failure_count += 1
+        self.last_failure = time.time()
+        if self.failure_count >= self.failure_threshold:
+            self.state = "OPEN"
+    
+    def _on_success(self):
+        self.failure_count = max(0, self.failure_count - 1)
+        self.state = "CLOSED"
+```
+
+### 9.5 成本监控与告警
+
+```python
+class CostMonitor:
+    def __init__(self, daily_budget: float = 100.0):
+        self.daily_budget = daily_budget
+        self.daily_spend = 0.0
+        self.task_costs = []
+    
+    def record(self, task_id: str, cost: float, tokens: int):
+        self.daily_spend += cost
+        self.task_costs.append({
+            "task_id": task_id,
+            "cost": cost,
+            "tokens": tokens,
+            "time": datetime.now()
+        })
+        
+        # 检查预算
+        if self.daily_spend > self.daily_budget * 0.8:
+            self._alert(f"Daily cost at 80%: ${self.daily_spend:.2f}")
+        
+        if self.daily_spend > self.daily_budget:
+            self._alert(f"DAILY BUDGET EXCEEDED: ${self.daily_spend:.2f}")
+            raise BudgetExceededException()
+    
+    def get_report(self) -> dict:
+        return {
+            "daily_spend": self.daily_spend,
+            "daily_budget": self.daily_budget,
+            "utilization": self.daily_spend / self.daily_budget,
+            "task_count": len(self.task_costs),
+            "avg_cost": sum(t["cost"] for t in self.task_costs) / len(self.task_costs) if self.task_costs else 0
+        }
+```
+
+### 9.6 优化效果汇总
+
+| 策略 | 适用场景 | 预期节省 |
+|------|---------|---------|
+| 模型路由 | 混合复杂度任务 | 50-70% |
+| Prompt 压缩 | 长会话任务 | 40-60% |
+| 结果缓存 | 重复/确定性任务 | 80-90% |
+| 沙箱复用 | 高频短任务 | 50-70% |
+| 输出裁剪 | 大文件/日志处理 | 60-80% |
+| 并发批处理 | 批量任务 | 30-50% |
+| 熔断保护 | 不稳定任务 | 避免失控 |
+
+**组合使用**：上述策略组合应用，整体成本可降低 **60-85%**。
+
+---
+
 ## 延伸阅读
 
 ### 本目录
 
 - [The Anatomy of an Agent Harness](./The_Anatomy_of_an_Agent_Harness.md) -- Harness 工程定义与核心组件
-- [Agent Harness README](./Agent_Harness_README.md) -- 本地笔记索引
+- [Harness-in-nutshell.md](./Harness-in-nutshell.md) -- 30 分钟速览
+- [Harness Implementation Guide](./Harness_Implementation_Guide.md) -- 从零搭建生产级 Harness
 
 ### 关联目录
 
+- [Harness-in-nutshell.md](./Harness-in-nutshell.md) -- 30 分钟速览
+- [Harness Implementation Guide](./Harness_Implementation_Guide.md) -- 从零搭建生产级 Harness
+- [Harness Security Guide](./Harness_Security_Guide.md) -- 安全深度指南
+- [Harness Deployment Guide](./Harness_Deployment_Guide.md) -- 容器化与 K8s 部署
+- [Harness Testing Guide](./Harness_Testing_Guide.md) -- 测试策略与 CI/CD
+- [Harness Ecosystem Catalog](./Harness_Ecosystem_Catalog.md) -- 平台与框架选型
+- [Multi Agent Harness Design](./Multi_Agent_Harness_Design.md) -- 多 Agent 设计模式
 - [Enterprise Agent / Agent Production 2026](../Enterprise_Agent/Agent_Production_2026.md) -- 生产部署最佳实践
-- [Enterprise Agent / Hermes Agent](../Enterprise_Agent/Hermes_Agent_Deep_Dive.md) -- 企业级 Agent 运行时
-- [Memory Infrastructure](../Memory_Infrastructure/) -- 记忆系统与 RAG 基础设施
-- [Agent Frameworks](../Agent_Frameworks/) -- 多 Agent 开发框架
 - [16_Agent_Evaluation](../16_Agent_Evaluation/) -- Agent 评估体系
 
 ---

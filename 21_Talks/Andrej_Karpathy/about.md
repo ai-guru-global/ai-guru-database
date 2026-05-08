@@ -9,3 +9,12 @@
 - **个人主页 (Official Site)**: [karpathy.ai](https://karpathy.ai/)
 - **Vibe Coding 原始推文**: [2025年2月提出 "Vibe Coding" 概念](https://x.com/karpathy/status/1886192184808213008)，引发行业对自然语言驱动开发范式的广泛讨论
 - **Vibe Coding 方法论详解**: [Vibe Coding 方法论](../../../17_AI_Coding/04_Methodology/Vibe_Coding_Methodology.md)
+---
+
+## 相关主题与延伸阅读
+
+- [Talks Synthesis 2026](../Talks_Synthesis_2026.md) — 查看 Andrej_Karpathy 在 Scaling Laws、开源 vs 闭源、AI 安全等主题中的立场
+- [AI 历史](../../00_AI_Introduction/AI_History_Timeline.md) — Andrej_Karpathy 的关键贡献时间线
+- [AI 未来趋势](../../00_AI_Introduction/AI_Future_Trends.md) — 行业前瞻判断汇总
+
+*Last updated: 2026-05-07*

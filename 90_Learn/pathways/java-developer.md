@@ -69,7 +69,7 @@ Phase 5 企业级实践（安全 + 部署 + 多云）
 **🎯 目标**：掌握 Spring AI 的 ChatClient、Prompt 模板、Function Calling、Structured Output。
 
 **📚 核心阅读**：
-- [Spring AI 深度解析](../../13_Agent_Production/Agent_Skills/Spring_AI_Deep_Dive.md)（重点精读）
+- [Spring AI 深度解析](../../01_Fundamentals/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md)（重点精读）
 
 **🔧 实践任务**：
 
@@ -149,7 +149,7 @@ public class ChatController {
 **🎯 目标**：掌握 Agent 编排、MCP 协议、多步骤工作流。
 
 **📚 核心阅读**：
-- [Spring AI 深度解析 - MCP 部分](../../13_Agent_Production/Agent_Skills/Spring_AI_Deep_Dive.md#9-mcp-协议集成)
+- [Spring AI 深度解析 - MCP 部分](../../01_Fundamentals/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md#9-mcp-协议集成)
 - [Agent Skills 深度解析](../../13_Agent_Production/Agent_Skills/Agent_Skills_Deep_Dive.md)
 
 **🔧 实践任务**：
@@ -397,7 +397,7 @@ Day 1-2: Function Calling
 □ 注册自定义 Function Bean
 □ 实现天气查询 / 数据库查询工具
 □ 理解 LLM 如何选择调用工具
-□ 阅读文档: → [Spring AI 深度指南](../../13_Agent_Production/Agent_Skills/Spring_AI_Deep_Dive.md)
+□ 阅读文档: → [Spring AI 深度指南](../../01_Fundamentals/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md)
 
 Day 3-5: 构建 Agent
 ────────────────────────────────────────────────────────────────

@@ -9,3 +9,12 @@
 ## 最新动态与权威来源 (Latest Updates & Sources)
 - **个人主页与新闻 (Official Site)**: [yoshuabengio.org](https://yoshuabengio.org/)
 - **2025 动态：Introducing LawZero**: [LawZero 发布页](https://yoshuabengio.org/2025/06/03/introducing-lawzero/)
+---
+
+## 相关主题与延伸阅读
+
+- [Talks Synthesis 2026](../Talks_Synthesis_2026.md) — 查看 Yoshua_Bengio 在 Scaling Laws、开源 vs 闭源、AI 安全等主题中的立场
+- [AI 历史](../../00_AI_Introduction/AI_History_Timeline.md) — Yoshua_Bengio 的关键贡献时间线
+- [AI 未来趋势](../../00_AI_Introduction/AI_Future_Trends.md) — 行业前瞻判断汇总
+
+*Last updated: 2026-05-07*

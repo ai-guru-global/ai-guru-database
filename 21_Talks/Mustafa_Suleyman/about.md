@@ -8,3 +8,12 @@
 - **公司入口（可能受限）**: [Inflection AI](https://inflection.ai/)
 - **公开访谈**: [Financial Times 采访](https://www.ft.com/content/1a4a1e68-2c0d-4b5d-8fd4-13e716adf8d0)
 - **备注**: 部分官网对自动访问有限制，建议浏览器直接访问。
+---
+
+## 相关主题与延伸阅读
+
+- [Talks Synthesis 2026](../Talks_Synthesis_2026.md) — 查看 Mustafa_Suleyman 在 Scaling Laws、开源 vs 闭源、AI 安全等主题中的立场
+- [AI 历史](../../00_AI_Introduction/AI_History_Timeline.md) — Mustafa_Suleyman 的关键贡献时间线
+- [AI 未来趋势](../../00_AI_Introduction/AI_Future_Trends.md) — 行业前瞻判断汇总
+
+*Last updated: 2026-05-07*

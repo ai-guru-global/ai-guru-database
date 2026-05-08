@@ -715,7 +715,7 @@ flowchart TB
 - [Agent Skills 深度解析](./Agent_Skills_Deep_Dive.md) — 完整规范、核心机制与案例分析
 - [Agent Skills 实战指南](./Agent_Skills_Practical_Guide.md) — 从零创建、测试、优化和发布
 - [Agent Skills 生态目录](./Agent_Skills_Ecosystem_Catalog.md) — 451+ Skills 按团队和领域索引
-- [AI Skills 速成](./Skills-in-nutshell.md) — 传统 Skill 编程实现与 Agent Skills 对比
+- [Agent Skills 书写速览](./Skills-in-nutshell.md) — Agent Skills 快速入门与书写精要
 - [官方文档](https://agentskills.io) — Agent Skills 标准文档站
 - [官方目录](https://officialskills.sh) — 在线浏览全部 451+ Skills
 

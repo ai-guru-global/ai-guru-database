@@ -43,9 +43,24 @@ Concretely, a harness includes:
 
 There are many messy ways to split the boundaries of an agent system between the model and the harness, but this definition forces us to think about designing systems around model intelligence.
 
-![Agent = Model + Harness](../assets/the-anatomy-of-an-agent-harness.assets/image-01.png)
+```
+┌─────────────────────────────────────────┐
+│              Agent                      │
+├─────────────────────────────────────────┤
+│  ┌─────────────┐   ┌─────────────────┐ │
+│  │   Model     │ + │    Harness      │ │
+│  │  (智能)      │   │ (工程系统)       │ │
+│  │             │   │ • System Prompt │ │
+│  │ • 推理能力   │   │ • Tools & MCPs  │ │
+│  │ • 知识理解   │   │ • 沙箱 & 文件系统│ │
+│  │ • 文本生成   │   │ • 编排逻辑      │ │
+│  │             │   │ • Hooks         │ │
+│  │             │   │ • Memory        │ │
+│  └─────────────┘   └─────────────────┘ │
+└─────────────────────────────────────────┘
+```
 
-_Figure 1. Agent = Model + Harness (original figure)._
+_Figure 1. Agent = Model + Harness_
 
 ## Why Do We Need Harnesses…From a Model's Perspective
 
@@ -68,9 +83,18 @@ The goal is to derive a set of harness features from the starting point of helpi
 
 Behavior we want (or want to fix) → Harness design to help the model achieve this
 
-![Behavior → Harness Design](../assets/the-anatomy-of-an-agent-harness.assets/image-02.png)
+```
+期望行为                          Harness 设计
+─────────────                    ─────────────
+持久存储工作 →  文件系统抽象 + Git 版本控制
+执行代码     →  Bash 工具 + 代码执行沙箱
+获取新知识   →  Web 搜索 + MCP 工具集成
+安全执行     →  Docker 沙箱 + 命令白名单
+跨会话记忆   →  AGENTS.md + 向量存储
+长程任务     →  Ralph Loop + 上下文压缩
+```
 
-_Figure 2. Behavior we want → Harness design (original figure)._
+_Figure 2. 期望行为 → Harness 设计_
 
 ## Filesystems for Durable Storage and Context Management
 
@@ -178,9 +202,27 @@ But this co-evolution has interesting side effects for generalization. It shows 
 
 But this doesn't mean that the best harness for your task is the one a model was post-trained with. [The Terminal Bench 2.0 Leaderboard](https://www.tbench.ai/leaderboard/terminal-bench/2.0?ref=blog.langchain.com) is an example: Opus 4.6 in Claude Code scores far below Opus 4.6 in other harnesses. In a previous blog, LangChain showed how they improved their coding agent from Top 30 to Top 5 on Terminal Bench 2.0 by only changing the harness, suggesting there is significant leverage in optimizing the harness for a given task.
 
-![Harness choice affects benchmark results](../assets/the-anatomy-of-an-agent-harness.assets/image-03.png)
+```
+同一模型在不同 Harness 中的表现差异
+═══════════════════════════════════════════
 
-_Figure 3. Harness choice affects benchmark results (original figure)._
+模型: Claude Opus 4.6
+
+Harness A (基础)          Harness B (优化)
+─────────────────         ─────────────────
+SWE-bench: 45%            SWE-bench: 72%
+GAIA L1:   78%            GAIA L1:   92%
+平均步数:   15             平均步数:   8
+
+优化点:
+• 更好的 System Prompt (+5-15%)
+• 文件系统访问 (+10-20%)
+• 验证回路 (+15-25%)
+• Ralph Loop 续写 (+20-30%)
+```
+
+_Figure 3. Harness 选择对基准测试结果的影响_
+> 数据来源: [Terminal Bench 2.0 Leaderboard](https://www.tbench.ai/leaderboard/terminal-bench/2.0)_
 
 ### Where Harness Engineering is Going
 
@@ -201,6 +243,38 @@ This article was an exercise in defining what a harness is and how it’s shaped
 The model contains the intelligence and the harness is the system that makes that intelligence useful.
 
 To more harness building, better systems, and better agents.
+
+---
+
+## 从概念到代码：下一步
+
+本文从理论层面定义了 Harness 的核心概念和组件推导。如果你已经理解了这些概念，下一步是：
+
+### 路径 A：快速搭建（30 分钟）
+
+阅读 [Harness-in-nutshell.md](./Harness-in-nutshell.md) → 按"快速启动"代码运行第一个最小 Harness。
+
+### 路径 B：完整实现（2-4 小时）
+
+阅读 [Harness Implementation Guide](./Harness_Implementation_Guide.md) → 从零搭建一个包含 Docker 沙箱、验证回路、记忆系统的生产级 Harness。
+
+### 路径 C：架构设计（1-2 小时）
+
+阅读 [Agent Harness 技术架构 2026](./Agent_Harness_Architecture_2026.md) → 掌握 5 层架构、配置参数、性能基线和框架选型。
+
+### 概念对照表
+
+| 本文概念 | Implementation Guide 对应实现 |
+|---------|------------------------------|
+| 文件系统 | `FilesystemHarness` 类 |
+| 沙箱 | `DockerSandbox` 类 |
+| 上下文压缩 | `_compact_context()` 方法 |
+| 工具输出裁剪 | `offload_large_output()` 函数 |
+| 验证回路 | `VerificationHook` + `python_syntax_check` |
+| Ralph Loop | `RalphLoopHarness` 类 |
+| 记忆系统 | `MemoryManager` 类 |
+
+---
 
 ## 原文链接
 

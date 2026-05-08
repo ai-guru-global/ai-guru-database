@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "7322bd66a80a892b",
+        "id": "ffcc33d5355d30f1",
         "type": "tabs",
         "children": [
           {
-            "id": "975e7b8cbbdfb6ca",
+            "id": "16dc2cffe8ad4034",
             "type": "leaf",
             "state": {
-              "type": "empty",
+              "type": "graph",
               "state": {},
-              "icon": "lucide-file",
-              "title": "新标签页"
+              "icon": "lucide-git-fork",
+              "title": "关系图谱"
             }
           }
         ]
@@ -176,8 +176,45 @@
       "bases:新建数据库": false
     }
   },
-  "active": "975e7b8cbbdfb6ca",
+  "floating": {
+    "id": "838d6aaf6640a3dc",
+    "type": "floating",
+    "children": [
+      {
+        "id": "af1721d7ca28c920",
+        "type": "window",
+        "children": [
+          {
+            "id": "f8515789b75402f6",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "8953d834071bde00",
+                "type": "leaf",
+                "state": {
+                  "type": "empty",
+                  "state": {},
+                  "icon": "lucide-file",
+                  "title": "新标签页"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 128,
+        "y": 30,
+        "width": 1024,
+        "height": 655,
+        "maximize": false,
+        "zoom": 0
+      }
+    ]
+  },
+  "active": "8953d834071bde00",
   "lastOpenFiles": [
+    "90_Learn/pathways/llm-engineer.md",
+    "未命名.base",
     "13_Agent_Production/Agent_Frameworks/AutoGPT_Deep_Dive.md",
     "07_AI_Engineering/AI_Ops/AI_Observability_Guide.md",
     "visualization/atlas/dist/data 2.json",
@@ -203,7 +240,6 @@
     "visualization/atlas/test-results/vrt-07-desktop-light-selected-node-chromium/07-desktop-light-selected-node-diff.png",
     "visualization/atlas/test-results/vrt-07-desktop-light-selected-node-chromium/07-desktop-light-selected-node-actual.png",
     "visualization/atlas/test-results/vrt-07-desktop-light-selected-node-chromium",
-    "visualization/atlas/test-results/vrt-06-desktop-light-default-chromium/trace.zip",
     "visualization/atlas/test-results/vrt-06-desktop-light-default-chromium/error-context.md",
     "visualization/atlas/test-results/vrt-06-desktop-light-default-chromium/06-desktop-light-default-expected.png",
     "visualization/atlas/test-results/vrt-06-desktop-light-default-chromium/06-desktop-light-default-diff.png",

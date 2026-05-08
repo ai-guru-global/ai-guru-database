@@ -1,5 +1,7 @@
 # JVM AI 部署与推理
 
+> 📚 **Spring AI 基础**: 如果你还不熟悉 Spring AI 的核心概念，请先阅读 [Spring AI 深度解析](../01_Fundamentals/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md)。
+>
 > **一句话理解**: JVM 平台的 AI 推理部署 —— 从 Spring Boot 容器化到 GraalVM Native Image，从本地模型推理到 Kubernetes 弹性伸缩，覆盖 Java AI 应用的完整部署生命周期。
 
 > **相关文档**: [部署与推理概述](./Deployment_Inference.md) | [Spring AI 架构设计](../12_Architecture_Infrastructure/Spring_AI_Architecture.md) | [高可用设计](../12_Architecture_Infrastructure/High_Availability_2026.md) | [Java 生态 AI 概览](../01_Fundamentals/Java_Ecosystem_AI/Java_Ecosystem_AI_Overview.md)

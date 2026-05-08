@@ -8,3 +8,12 @@
 ## 最新动态与权威来源 (Latest Updates & Sources)
 - **公司官方入口 (Meta)**: [About Meta](https://www.meta.com/about/)
 - **AI 生态与开源动态**: [Meta AI Blog](https://ai.meta.com/blog/)
+---
+
+## 相关主题与延伸阅读
+
+- [Talks Synthesis 2026](../Talks_Synthesis_2026.md) — 查看 Mark_Zuckerberg 在 Scaling Laws、开源 vs 闭源、AI 安全等主题中的立场
+- [AI 历史](../../00_AI_Introduction/AI_History_Timeline.md) — Mark_Zuckerberg 的关键贡献时间线
+- [AI 未来趋势](../../00_AI_Introduction/AI_Future_Trends.md) — 行业前瞻判断汇总
+
+*Last updated: 2026-05-07*

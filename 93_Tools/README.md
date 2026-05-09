@@ -9,6 +9,7 @@
 | 文档 | 内容 |
 |------|------|
 | [Import Guide](./IMPORT_GUIDE.md) | 知识库内容导入规范与流程 |
+| [Document Templates](./DOCUMENT_TEMPLATES.md) | **全项目文档模板规范**（README / nutshell / for_dummy / 核心内容 / 论文解读 / 行业应用） |
 
 ---
 
@@ -17,7 +18,7 @@
 - [ ] 自动化链接检查器（检测断链）
 - [ ] 内容质量评分脚本（行数、链接密度、代码覆盖率）
 - [ ] 术语一致性检查器（对照 AI Full Stack Concepts）
-- [ ] 文档模板生成器（一键生成 README / for_dummy / nutshell）
+- [x] 文档模板规范（已沉淀为 [DOCUMENT_TEMPLATES.md](./DOCUMENT_TEMPLATES.md)）
 
 ---
 

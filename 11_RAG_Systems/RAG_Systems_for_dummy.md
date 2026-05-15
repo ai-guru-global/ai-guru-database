@@ -568,8 +568,8 @@ prompt = """
 
 ### 📄 进阶阅读
 - [RAG 系统(完整版)](./RAG_Systems.md) - 技术细节和代码实现
-- [模型部署 - 小白版](../Deployment_Inference/Deployment_Inference_for_dummy.md) - RAG 的推理优化
-- [模型评估 - 小白版](../Model_Evaluation/Model_Evaluation_for_dummy.md) - RAG 效果评估
+- [模型部署 - 小白版](../09_Deployment_Inference/Deployment_Inference_for_dummy.md) - RAG 的推理优化
+- [模型评估 - 小白版](../08_Model_Evaluation/Model_Evaluation_for_dummy.md) - RAG 效果评估
 
 ### 🛠️ 动手实践
 - [LangChain RAG 教程](https://python.langchain.com/docs/tutorials/rag/)

@@ -338,4 +338,4 @@ Coze:                           Dify:                          LocalAI:
 - [Coze 官网](https://www.coze.com)
 - [LocalAI GitHub](https://github.com/mudler/LocalAI)
 - [OpenRouter](./OpenRouter_Deep_Dive.md)
-- [AgentScope](./AgentScope_Deep_Dive.md)
+- [AgentScope](../Agent_Frameworks/AgentScope_Deep_Dive.md)

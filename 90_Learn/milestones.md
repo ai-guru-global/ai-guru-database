@@ -68,7 +68,7 @@
 | Q2-Q3 | 阅读 [神经网络核心](../03_Deep_Learning/Neural_Network_Core/Neural_Network_Core_for_dummy.md) + [优化](../03_Deep_Learning/Optimization/Optimization_for_dummy.md) |
 | Q4-Q5 | 阅读 [监督学习](../02_Machine_Learning/Supervised_Learning/Supervised_Learning_for_dummy.md) 中的过拟合章节 |
 | Q6 | 阅读 [模型评估](../08_Model_Evaluation/Model_Evaluation_for_dummy.md) |
-| Q7 | 阅读 [无监督学习](../02_Machine_Learning/Unsupervised_Learning/Unsupervised_learning_for_dummy.md) + [强化学习基础](../06_Reinforcement_Learning/RL_Foundations/RL_Foundations_for_dummy.md) |
+| Q7 | 阅读 [无监督学习](../02_Machine_Learning/Unsupervised_Learning/Unsupervised_Learning_for_dummy.md) + [强化学习基础](../06_Reinforcement_Learning/RL_Foundations/RL_Foundations_for_dummy.md) |
 
 ---
 
@@ -178,9 +178,9 @@
 |------|---------|
 | Q1 | 阅读 [多模态视觉（小白版）](../05_Computer_Vision/Multimodal_Vision/Multimodal_Vision_for_dummy.md) |
 | Q2 | 阅读 [世界模型 2026](../03_Deep_Learning/World_Models/World_Models_2026.md) |
-| Q3 | 阅读 [机器人与具身智能 2026](../06_Reinforcement_Learning/Robotics_Embodied_AI/Robotics_Embodied_AI_2026.md) |
+| Q3 | 阅读 [机器人与具身智能 2026](../06_Reinforcement_Learning/Robotics_Embodied_AI/Embodied_AI_2026.md) |
 | Q4 | 阅读 [AI 未来趋势](../00_AI_Introduction/AI_Future_Trends.md) |
-| Q5 | 阅读 [AI 安全与红队（小白版）](../08_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming_for_dummy.md) |
+| Q5 | 阅读 [AI 安全与红队（小白版）](../19_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming_for_dummy.md) |
 | Q6 | 回到 [Stage 4 概念卡](./concepts/stage4-frontier.md) 的 Scaling Law 部分 |
 
 ---
@@ -233,4 +233,4 @@
 
 ---
 
-*本文档是 AI Guru 知识库概念入门路径的里程碑自测系统。每个 Stage 的问题设计参考了 [AI 概念知识图谱](../Notes/AI_Concept_Knowledge_Graph.md) 中的概念依赖关系。*
+*本文档是 AI Guru 知识库概念入门路径的里程碑自测系统。每个 Stage 的问题设计参考了 [AI 概念知识图谱](../91_Notes/AI_Concept_Knowledge_Graph.md) 中的概念依赖关系。*

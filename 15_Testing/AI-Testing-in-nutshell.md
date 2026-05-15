@@ -826,6 +826,6 @@ flowchart TB
 ## 🔗 相关主题
 
 - [Prompt Engineering](../../04_NLP_LLMs/Prompt_Engineering/Prompt-Engineering-in-nutshell.md) - 测试提示词效果
-- [RAG 系统](../RAG_Systems/RAG-in-nutshell.md) - RAG 评估方法
+- [RAG 系统](../11_RAG_Systems/RAG-in-nutshell.md) - RAG 评估方法
 - [AI 智能体](../../06_Reinforcement_Learning/AI_Agents/Agent-in-nutshell.md) - Agent 测试策略
-- [AI 工作流](../AI_Workflow/Workflow-in-nutshell.md) - 测试流水线集成
+- [AI 工作流](../13_Agent_Production/Agent_Workflow/Workflow-in-nutshell.md) - 测试流水线集成

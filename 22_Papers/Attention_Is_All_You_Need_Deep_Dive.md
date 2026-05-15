@@ -391,7 +391,7 @@ flowchart TB
 - [Transformer 革命](../04_NLP_LLMs/Transformer_Revolution/) — Transformer 变体与演进
 - [LLM 架构](../04_NLP_LLMs/LLM_Architectures/) — 现代大模型的架构选择
 - [序列模型](../04_NLP_LLMs/Sequence_Models/) — RNN/LSTM 与 Transformer 的对比
-- [注意力机制详解](../04_NLP_LLMs/Transformer_Revolution/Attention_Mechanism_Deep_Dive.md) — Attention 的数学细节
+- [Transformer 革命](../04_NLP_LLMs/Transformer_Revolution/Transformer_Revolution.md) — Attention 的数学细节
 
 ---
 

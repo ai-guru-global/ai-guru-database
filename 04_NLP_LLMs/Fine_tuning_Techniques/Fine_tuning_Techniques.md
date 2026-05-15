@@ -489,7 +489,7 @@ lora_config = LoraConfig(
 ### 前置知识
 - [Transformer 革命](../Transformer_Revolution/Transformer_Revolution.md): 理解模型架构
 - [大语言模型架构](../LLM_Architectures/LLM_Architectures.md): GPT/LLaMA 原理
-- [优化算法](../../01_Fundamentals/Optimization/Optimization.md): Adam, SGD
+- [优化算法](../../03_Deep_Learning/Optimization/Optimization.md): Adam, SGD
 
 ### 后续推荐
 - [提示工程](../Prompt_Engineering/Prompt_Engineering.md): 微调的替代方案

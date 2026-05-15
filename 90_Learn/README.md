@@ -102,7 +102,7 @@ Stage 0: AI 觉醒 ────────────────────�
 
 | 资源 | 说明 |
 |------|------|
-| [概念知识图谱](../Notes/AI_Concept_Knowledge_Graph.md) | 800+ 概念的完整依赖关系图 |
+| [概念知识图谱](../91_Notes/AI_Concept_Knowledge_Graph.md) | 800+ 概念的完整依赖关系图 |
 | [新手导航（章节版）](../README_for_dummy.md) | 按章节组织的入门指南 |
 | [里程碑自测](./milestones.md) | 每个 Stage 的自测问题与检查点 |
 

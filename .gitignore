@@ -28,3 +28,12 @@ Web/.eval-history
 *.njsproj
 *.sln
 *.sw?
+
+# Python
+.venv
+__pycache__
+*.pyc
+
+# MkDocs build output
+Web/public/mkdocs
+mkdocs-docs

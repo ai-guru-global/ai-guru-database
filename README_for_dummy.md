@@ -116,14 +116,14 @@
 
 ---
 
-### [第8章：伦理与安全](./08_Ethics_Safety/README_for_dummy.md)
+### [第8章：伦理与安全](./19_Ethics_Safety/README_for_dummy.md)
 
 让 AI 安全、公平地为人类服务。
 
 | 主题 | 你能学到 | 开始学习 |
 |------|---------|---------|
-| 价值对齐 | 怎么让 AI 的行为符合人类价值观 | [点这里](./08_Ethics_Safety/Value_Alignment/Value_Alignment_for_dummy.md) |
-| AI 安全与红队 | 怎么发现和防止 AI 被坏人利用 | [点这里](./08_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming_for_dummy.md) |
+| 价值对齐 | 怎么让 AI 的行为符合人类价值观 | [点这里](./19_Ethics_Safety/Value_Alignment/Value_Alignment_for_dummy.md) |
+| AI 安全与红队 | 怎么发现和防止 AI 被坏人利用 | [点这里](./19_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming_for_dummy.md) |
 
 ---
 

@@ -552,9 +552,9 @@ jobs:
 ## 想深入了解?
 
 ### 📄 进阶阅读
-- [模型部署 - 小白版](../Deployment_Inference/Deployment_Inference_for_dummy.md)
-- [模型评估 - 小白版](../Model_Evaluation/Model_Evaluation_for_dummy.md)
-- [RAG 系统 - 小白版](../RAG_Systems/RAG_Systems_for_dummy.md)
+- [模型部署 - 小白版](../09_Deployment_Inference/Deployment_Inference_for_dummy.md)
+- [模型评估 - 小白版](../08_Model_Evaluation/Model_Evaluation_for_dummy.md)
+- [RAG 系统 - 小白版](../11_RAG_Systems/RAG_Systems_for_dummy.md)
 
 ### 🛠️ 动手实践
 - [MLflow 快速开始](https://mlflow.org/docs/latest/quickstart.html)

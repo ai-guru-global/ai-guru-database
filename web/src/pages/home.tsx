@@ -59,10 +59,14 @@ export function HomePage() {
         </div>
         <div className="flex flex-wrap items-center justify-center gap-4">
           <Button asChild size="lg">
-            <Link to="/docs">
+            <a
+              href="/mkdocs/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Get Started
               <ArrowRight className="ml-2 h-4 w-4" />
-            </Link>
+            </a>
           </Button>
           <Button variant="outline" size="lg" asChild>
             <Link to="/search">Search Docs</Link>
@@ -123,10 +127,14 @@ export function HomePage() {
             Explore our comprehensive documentation and start your AI journey today.
           </p>
           <Button size="lg" asChild className="mt-4">
-            <Link to="/docs">
+            <a
+              href="/mkdocs/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Browse Documentation
               <ArrowRight className="ml-2 h-4 w-4" />
-            </Link>
+            </a>
           </Button>
         </div>
       </section>

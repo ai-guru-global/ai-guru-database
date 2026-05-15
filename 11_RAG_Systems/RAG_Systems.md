@@ -494,9 +494,9 @@ evaluation_prompt = f"""
 
 ### 进阶推荐
 
-- [模型部署与推理](../Deployment_Inference/Deployment_Inference.md) - RAG 系统的生产环境部署
+- [模型部署与推理](../09_Deployment_Inference/Deployment_Inference.md) - RAG 系统的生产环境部署
 - [Prompt 工程](../../04_NLP_LLMs/Prompt_Engineering/Prompt_Engineering.md) - 优化 RAG 的 Prompt 设计
-- [模型评估](../Model_Evaluation/Model_Evaluation.md) - RAG 系统的效果评估方法
+- [模型评估](../08_Model_Evaluation/Model_Evaluation.md) - RAG 系统的效果评估方法
 
 ## 8. 面试高频问题 (Interview FAQs)
 

@@ -693,7 +693,7 @@ METRICS = {
 | **观测** | LangSmith, Langfuse | Agent追踪、成本监控 |
 | **网关** | Portkey, Kong AI | 统一入口、治理 |
 
-**参考**: [AI Infrastructure 2026](../AI_Infrastructure_2026.md)
+**参考**: [AI Infrastructure 2026](../12_Architecture_Infrastructure/AI_Infrastructure_2026.md)
 
 ---
 
@@ -705,9 +705,9 @@ METRICS = {
 - [分布式系统](../../01_Fundamentals/Distributed_Systems/Distributed_Systems.md) — 分布式训练基础设施
 
 ### 进阶方向
-- [模型部署与推理](../Deployment_Inference/Deployment_Inference.md) — MLOps 的推理服务层
-- [模型评估](../Model_Evaluation/Model_Evaluation.md) — Pipeline 中的评估环节
-- [RAG 系统](../RAG_Systems/RAG_Systems.md) — LLMOps 中 RAG Pipeline 的管理
+- [模型部署与推理](../09_Deployment_Inference/Deployment_Inference.md) — MLOps 的推理服务层
+- [模型评估](../08_Model_Evaluation/Model_Evaluation.md) — Pipeline 中的评估环节
+- [RAG 系统](../11_RAG_Systems/RAG_Systems.md) — LLMOps 中 RAG Pipeline 的管理
 
 ---
 

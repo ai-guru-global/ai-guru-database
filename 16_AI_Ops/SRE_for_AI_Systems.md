@@ -579,11 +579,11 @@ request_cost_dollars = Counter(
 
 ## 🔗 相关主题
 
-- [AI Ops 2026](../AI_Ops/AI_Ops_2026.md) — 智能运维完整体系
-- [AI Ops 速成](../AI_Ops/AIOps-in-nutshell.md) — AI Ops 核心概念
+- [AI Ops 2026](AI_Ops_2026.md) — 智能运维完整体系
+- [AI Ops 速成](AIOps-in-nutshell.md) — AI Ops 核心概念
 - [Cloud Ops 2026](../18_Cloud_Ops_Agent/Cloud_Product_Ops_2026.md) — 云产品运维
-- [部署与推理](../Deployment_Inference/Inference-in-nutshell.md) — 推理优化
-- [AI 成本优化](../AI_Cost_Optimization_2026.md) — Token 经济学
-- [AI 安全](../../08_Ethics_Safety/AI_Security_2026/) — 安全红队
+- [部署与推理](../09_Deployment_Inference/Inference-in-nutshell.md) — 推理优化
+- [AI 成本优化](../12_Architecture_Infrastructure/AI_Cost_Optimization_2026.md) — Token 经济学
+- [AI 安全](../../19_Ethics_Safety/AI_Security_2026/) — 安全红队
 
 > 📅 **最后更新**：2026-04-11 | **方法论**：Google SRE Book + AI 生产实践

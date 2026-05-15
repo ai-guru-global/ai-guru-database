@@ -344,8 +344,8 @@ vLLM (PagedAttention):
 
 ### 📄 进阶阅读
 - [模型部署与推理加速(完整版)](./Deployment_Inference.md) - 技术细节和公式
-- [RAG 系统 - 小白版](../RAG_Systems/RAG_Systems_for_dummy.md) - 推理的实战应用
-- [MLOps 流水线 - 小白版](../MLOps_Pipeline/MLOps_Pipeline_for_dummy.md) - 部署自动化
+- [RAG 系统 - 小白版](../11_RAG_Systems/RAG_Systems_for_dummy.md) - 推理的实战应用
+- [MLOps 流水线 - 小白版](../10_MLOps_Pipeline/MLOps_Pipeline_for_dummy.md) - 部署自动化
 
 ### 🛠️ 动手实践
 - [vLLM 官方教程](https://docs.vllm.ai/en/latest/getting_started/quickstart.html)

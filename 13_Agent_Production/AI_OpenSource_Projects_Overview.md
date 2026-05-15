@@ -172,11 +172,11 @@ AI 开源项目分类
 
 | 工具 | 类型 | 开发商 | 文档 |
 |------|------|--------|------|
-| **Claude Code** | CLI | Anthropic | [Deep Dive](../Agentic_Coding_Tools/Claude_Code_Deep_Dive.md) |
-| **OpenCode** | CLI | OpenCode | [Deep Dive](../Agentic_Coding_Tools/OpenCode_Deep_Dive.md) |
-| **Cursor** | IDE | Cursor | [Deep Dive](../Agentic_Coding_Tools/Windsurf_Cursor_Devin_Dive.md) |
-| **Windsurf** | IDE | Codeium | [Deep Dive](../Agentic_Coding_Tools/Windsurf_Cursor_Devin_Dive.md) |
-| **Devin** | SA Agent | Cognition | [Deep Dive](../Agentic_Coding_Tools/Windsurf_Cursor_Devin_Dive.md) |
+| **Claude Code** | CLI | Anthropic | [Deep Dive](Agentic_Coding_Tools/Claude_Code_Deep_Dive.md) |
+| **OpenCode** | CLI | OpenCode | [Deep Dive](Agentic_Coding_Tools/OpenCode_Deep_Dive.md) |
+| **Cursor** | IDE | Cursor | [Deep Dive](Agentic_Coding_Tools/Windsurf_Cursor_Devin_Dive.md) |
+| **Windsurf** | IDE | Codeium | [Deep Dive](Agentic_Coding_Tools/Windsurf_Cursor_Devin_Dive.md) |
+| **Devin** | SA Agent | Cognition | [Deep Dive](Agentic_Coding_Tools/Windsurf_Cursor_Devin_Dive.md) |
 
 ### 5.2 编程辅助
 

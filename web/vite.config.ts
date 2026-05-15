@@ -37,6 +37,85 @@ function serveDocsContent() {
   };
 }
 
+function serveMkDocs() {
+  const mkdocsDir = path.resolve(__dirname, "public/mkdocs");
+
+  const contentTypes: Record<string, string> = {
+    ".html": "text/html",
+    ".js": "application/javascript",
+    ".css": "text/css",
+    ".json": "application/json",
+    ".svg": "image/svg+xml",
+    ".png": "image/png",
+    ".jpg": "image/jpeg",
+    ".jpeg": "image/jpeg",
+    ".gif": "image/gif",
+    ".woff": "font/woff",
+    ".woff2": "font/woff2",
+    ".ttf": "font/ttf",
+  };
+
+  function serveFile(filePath: string, res: any) {
+    const ext = path.extname(filePath);
+    res.setHeader("Content-Type", contentTypes[ext] || "application/octet-stream");
+    res.end(fs.readFileSync(filePath));
+  }
+
+  function resolveMkDocsPath(urlPath: string): string | null {
+    // Map root-level MkDocs paths into public/mkdocs/
+    const mkdocsPrefixes = ["/assets/", "/search/"];
+    for (const prefix of mkdocsPrefixes) {
+      if (urlPath.startsWith(prefix)) {
+        const relativePath = decodeURIComponent(urlPath.slice(1)); // remove leading /
+        return path.join(mkdocsDir, relativePath);
+      }
+    }
+    if (urlPath.startsWith("/mkdocs/")) {
+      const relativePath = decodeURIComponent(urlPath.replace("/mkdocs/", ""));
+      return path.join(mkdocsDir, relativePath);
+    }
+    return null;
+  }
+
+  return {
+    name: "serve-mkdocs",
+    configureServer(server: { middlewares: { use: Function } }) {
+      server.middlewares.use((req: any, res: any, next: Function) => {
+        // Fast-path: redirect /docs → /mkdocs/ without loading React SPA
+        if (req.url === "/docs" || req.url === "/docs/") {
+          res.statusCode = 302;
+          res.setHeader("Location", "/mkdocs/");
+          res.end();
+          return;
+        }
+        const filePath = resolveMkDocsPath(req.url || "");
+        if (!filePath) {
+          next();
+          return;
+        }
+        // Security: ensure the resolved path is within mkdocsDir
+        if (!filePath.startsWith(mkdocsDir)) {
+          res.statusCode = 403;
+          res.end("Forbidden");
+          return;
+        }
+        // If path is a directory, try index.html
+        let target = filePath;
+        if (fs.existsSync(target) && fs.statSync(target).isDirectory()) {
+          target = path.join(target, "index.html");
+        }
+        if (fs.existsSync(target) && fs.statSync(target).isFile()) {
+          serveFile(target, res);
+          return;
+        }
+        res.statusCode = 404;
+        res.end("Not found");
+        return;
+      });
+    },
+  };
+}
+
 const isGitHubPages = process.env.GITHUB_PAGES === "true";
 
 export default defineConfig(({ mode }) => ({
@@ -44,6 +123,7 @@ export default defineConfig(({ mode }) => ({
   plugins: [
     react(),
     serveDocsContent(),
+    serveMkDocs(),
     mode === "analyze" &&
       visualizer({
         open: true,

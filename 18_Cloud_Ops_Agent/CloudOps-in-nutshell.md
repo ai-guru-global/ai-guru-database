@@ -192,9 +192,9 @@ flowchart TB
 | 完整架构 | [Cloud_Product_Ops_2026.md](./Cloud_Product_Ops_2026.md) |
 | 入门指南 | [Cloud_Product_Ops_for_dummy.md](./Cloud_Product_Ops_for_dummy.md) |
 | Agent Harness | [Ops_Agent_Harness_2026.md](../13_Agent_Production/16_Agent_Evaluation/Ops_Agent_Harness_2026.md) |
-| SRE 实践 | [../AI_Ops/SRE_for_AI_Systems.md](../AI_Ops/SRE_for_AI_Systems.md) |
-| 事故响应 | [../AI_Ops/AI_Incident_Response_Playbook.md](../AI_Ops/AI_Incident_Response_Playbook.md) |
-| 可观测性 | [../AI_Ops/AI_Observability_Guide.md](../AI_Ops/AI_Observability_Guide.md) |
+| SRE 实践 | [../AI_Ops/SRE_for_AI_Systems.md](../16_AI_Ops/SRE_for_AI_Systems.md) |
+| 事故响应 | [../AI_Ops/AI_Incident_Response_Playbook.md](../16_AI_Ops/AI_Incident_Response_Playbook.md) |
+| 可观测性 | [../AI_Ops/AI_Observability_Guide.md](../16_AI_Ops/AI_Observability_Guide.md) |
 
 ---
 

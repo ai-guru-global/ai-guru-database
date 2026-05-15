@@ -162,7 +162,7 @@ AI 成本结构：
 **📚 核心概念**：综合 Stage 0-3
 
 **🔗 行业案例深入阅读**：
-- [AI 在各行业的应用概览](../../13_AI_Applications_Industry/AI_Applications_Industry.md)
+- [AI 在各行业的应用概览](../../20_AI_Applications_Industry/AI_Applications_Industry.md)
 - [金融行业 AI 应用](../../13_AI_Applications_Industry/Finance/)
 - [医疗健康 AI 应用](../../13_AI_Applications_Industry/Healthcare/)
 - [教育行业 AI 应用](../../13_AI_Applications_Industry/Education/)

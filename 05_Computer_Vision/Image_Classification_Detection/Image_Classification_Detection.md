@@ -544,7 +544,7 @@ car (0.75) at [50, 300, 150, 380]
 
 ### 前置知识
 - [卷积神经网络基础](../../01_Fundamentals/Deep_Learning_Basics/Deep_Learning_Basics.md)
-- [优化算法](../../01_Fundamentals/Optimization/Optimization.md): SGD, Adam
+- [优化算法](../../03_Deep_Learning/Optimization/Optimization.md): SGD, Adam
 
 ### 后续推荐
 - [图像分割](../Segmentation/Segmentation.md): 语义分割、实例分割

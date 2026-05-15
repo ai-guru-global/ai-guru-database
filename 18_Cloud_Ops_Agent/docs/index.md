@@ -108,9 +108,9 @@ Cloud Ops Agent 文档体系
 
 | 主题 | 文档 |
 |------|------|
-| SRE 实践 | [AI_Ops/SRE_for_AI_Systems.md](../../AI_Ops/SRE_for_AI_Systems.md) |
-| 事故响应 | [AI_Ops/AI_Incident_Response_Playbook.md](../../AI_Ops/AI_Incident_Response_Playbook.md) |
-| 可观测性 | [AI_Ops/AI_Observability_Guide.md](../../AI_Ops/AI_Observability_Guide.md) |
+| SRE 实践 | [AI_Ops/SRE_for_AI_Systems.md](../../16_AI_Ops/SRE_for_AI_Systems.md) |
+| 事故响应 | [AI_Ops/AI_Incident_Response_Playbook.md](../../16_AI_Ops/AI_Incident_Response_Playbook.md) |
+| 可观测性 | [AI_Ops/AI_Observability_Guide.md](../../16_AI_Ops/AI_Observability_Guide.md) |
 | Agent Harness | [Agent_Production/Agent_Harness_Complete_2026.md](../../13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026.md) |
 
 ---

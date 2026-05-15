@@ -711,7 +711,7 @@ MTTR_DISTRIBUTION = {
 - [SRE for AI Systems](./SRE_for_AI_Systems.md) — SLI/SLO 设计与错误预算
 - [AI Ops 2026](./AI_Ops_2026.md) — 智能运维完整体系
 - [Cloud Ops 2026](../18_Cloud_Ops_Agent/Cloud_Product_Ops_2026.md) — 云产品运维 Agent
-- [部署与推理](../Deployment_Inference/Inference-in-nutshell.md) — 推理优化
-- [AI 测试](../AI_Testing/AI-Testing-in-nutshell.md) — AI 测试体系
+- [部署与推理](../09_Deployment_Inference/Inference-in-nutshell.md) — 推理优化
+- [AI 测试](../15_Testing/AI-Testing-in-nutshell.md) — AI 测试体系
 
 > 📅 **最后更新**：2026-04-11 | **方法论**：PagerDuty Incident Response + Google SRE + AI 生产实践

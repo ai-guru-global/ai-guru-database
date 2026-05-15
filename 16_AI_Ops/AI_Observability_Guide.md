@@ -737,7 +737,7 @@ groups:
 - [SRE for AI Systems](./SRE_for_AI_Systems.md) — SLI/SLO 设计与错误预算
 - [事故响应手册](./AI_Incident_Response_Playbook.md) — Runbook 与事故处理
 - [AI Ops 2026](./AI_Ops_2026.md) — 智能运维完整体系
-- [部署与推理](../Deployment_Inference/Inference-in-nutshell.md) — 推理性能优化
-- [AI 成本优化](../AI_Cost_Optimization_2026.md) — Token 经济学与 FinOps
+- [部署与推理](../09_Deployment_Inference/Inference-in-nutshell.md) — 推理性能优化
+- [AI 成本优化](../12_Architecture_Infrastructure/AI_Cost_Optimization_2026.md) — Token 经济学与 FinOps
 
 > 📅 **最后更新**：2026-04-11 | **方法论**：OpenTelemetry + Google SRE + AI 生产实践

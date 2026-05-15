@@ -801,7 +801,7 @@ Model_Training → Evaluation → Deployment
 | **AI for Science** | `13_AI_Applications_Industry/` | `AI_Applications_Industry.md` |
 | **评估基准** | `08_Model_Evaluation/` | `13_Agent_Production/16_Agent_Evaluation/`, `Benchmarking/` |
 | **特征工程** | `02_Machine_Learning/Feature_Engineering/` | `Feature_Engineering.md` |
-| **安全/可解释** | `08_Ethics_Safety/` | `AI_Safety_RedTeaming/`, `AI_Security_2026/`, `Value_Alignment/` |
+| **安全/可解释** | `19_Ethics_Safety/` | `AI_Safety_RedTeaming/`, `AI_Security_2026/`, `Value_Alignment/` |
 | **具身智能/VLA** | `06_Reinforcement_Learning/Robotics_Embodied_AI/` | `VLA_Models_2026.md`, `Embodied_AI_Complete_2026.md` |
 | **评估** | `13_Agent_Production/16_Agent_Evaluation/` | `Agent_Harness_Complete_2026.md`, `Benchmarking/`, `Metrics/` |
 | **基础设施** | `12_Architecture_Infrastructure/` | `AI_Infrastructure_2026.md`, `AI_System_Architecture_2026.md` |
@@ -868,7 +868,7 @@ Q: 分布式训练
 A: 01_Fundamentals/Distributed_Systems/
 
 Q: AI 对齐与价值观
-A: 08_Ethics_Safety/Value_Alignment/
+A: 19_Ethics_Safety/Value_Alignment/
 
 Q: LLM 评估基准 (MMLU/HumanEval)
 A: 08_Model_Evaluation/Model_Evaluation.md

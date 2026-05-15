@@ -570,7 +570,7 @@ flowchart TB
 
 ## 🔗 相关主题
 
-- [Prompt Engineering](./Prompt-Engineering-in-nutshell.md) - 如何写好提示词
+- [Prompt Engineering](../Prompt_Engineering/Prompt-Engineering-in-nutshell.md) - 如何写好提示词
 - [模型推理](../../09_Deployment_Inference/Inference-in-nutshell.md) - 部署和优化
 - [RAG 系统](../../11_RAG_Systems/RAG-in-nutshell.md) - 让 LLM 访问你的数据
 - [AI 智能体](../../06_Reinforcement_Learning/AI_Agents/Agent-in-nutshell.md) - LLM + 工具 + 记忆

@@ -34,8 +34,8 @@
   - **层 (Layer)**：一组神经元，同一层神经元之间没有连接
   - **权重 (Weight)**：神经元之间连接的强弱，决定信息传递的重要程度
   - **激活函数 (Activation Function)**：给输出加非线性，让网络能学复杂模式（如 ReLU、Sigmoid）
-- **入门阅读**：[神经网络核心](../03_Deep_Learning/Neural_Network_Core/Neural_Network_Core_for_dummy.md)
-- **深入学习**：[线性代数基础](../01_Fundamentals/Linear_Algebra/Linear_Algebra_for_dummy.md)（理解向量/矩阵运算）
+- **入门阅读**：[神经网络核心](../../03_Deep_Learning/Neural_Network_Core/Neural_Network_Core_for_dummy.md)
+- **深入学习**：[线性代数基础](../../01_Fundamentals/Linear_Algebra/Linear_Algebra_for_dummy.md)（理解向量/矩阵运算）
 - **关联概念**：反向传播、激活函数、深度学习
 
 ### 2. 反向传播 (Backpropagation)
@@ -48,7 +48,7 @@
   3. 从输出层反向走，逐层计算每个参数对误差的"责任"
   4. 用梯度下降更新每个参数
 - **通俗类比**：反向传播像考试后老师逐题分析——哪道题错了、哪个知识点薄弱，然后把"下次要更注意"的信号传递到每个学生的学习策略中。
-- **入门阅读**：[神经网络核心](../03_Deep_Learning/Neural_Network_Core/Neural_Network_Core_for_dummy.md)
+- **入门阅读**：[神经网络核心](../../03_Deep_Learning/Neural_Network_Core/Neural_Network_Core_for_dummy.md)
 - **关联概念**：梯度下降、损失函数、链式法则 (Chain Rule)
 
 ### 3. CNN — 卷积神经网络
@@ -58,7 +58,7 @@
 - **核心机制**：卷积核（一个小矩阵）在图像上滑动，每滑动一次做一次"局部特征提取"。多个卷积层叠加，从浅层的"边缘/纹理"到深层的"物体部件/整体"。
 - **通俗类比**：CNN 像用放大镜在不同位置观察一幅画——每次只看一小块，先找线条，再找形状，最后理解画面内容。
 - **典型应用**：图像分类（ResNet）、目标检测（YOLO）、图像分割（U-Net）
-- **入门阅读**：[图像分类与检测](../05_Computer_Vision/Image_Classification_Detection/Image_Classification_Detection_for_dummy.md)
+- **入门阅读**：[图像分类与检测](../../05_Computer_Vision/Image_Classification_Detection/Image_Classification_Detection_for_dummy.md)
 - **关联概念**：图像处理、特征图 (Feature Map)、池化 (Pooling)
 
 ### 4. RNN / LSTM — 序列模型
@@ -68,7 +68,7 @@
 - **核心问题**：RNN 有"梯度消失"问题——太长的序列会让早期信息被"遗忘"。LSTM 和 GRU 通过"门控机制"解决了这个问题。
 - **通俗类比**：RNN 像读一本小说的读者——读到第10章时，读者脑子里同时记住了前面所有章节的关键情节。LSTM 更聪明，它知道哪些情节重要要记住，哪些可以忘掉。
 - **局限性**：RNN 训练慢（无法并行）、长序列仍然难以处理 → 这就是 Transformer 出现的原因。
-- **入门阅读**：[序列模型](../04_NLP_LLMs/Sequence_Models/Sequence_Models_for_dummy.md)
+- **入门阅读**：[序列模型](../../04_NLP_LLMs/Sequence_Models/Sequence_Models_for_dummy.md)
 - **关联概念**：文本处理、时间序列、梯度消失
 
 ### 5. Attention 机制
@@ -77,7 +77,7 @@
 - **为什么重要**：Attention 是 Transformer 的核心，也是现代 AI 最重要的突破之一。它解决了 RNN 的长序列依赖问题，让并行训练成为可能。
 - **直观理解**：阅读一段话时，你不会逐字记忆，而是关注关键词之间的关系。Attention 就是让 AI 做同样的事。
 - **例子**：翻译 "The cat sat on the mat" 时，"sat" 和 "cat" 关系紧密，Attention 机制让模型知道翻译 "sat" 时要特别关注 "cat"。
-- **入门阅读**：[Transformer 革命](../04_NLP_LLMs/Transformer_Revolution/Transformer_Revolution_for_dummy.md)
+- **入门阅读**：[Transformer 革命](../../04_NLP_LLMs/Transformer_Revolution/Transformer_Revolution_for_dummy.md)
 - **关联概念**：Self-Attention、Transformer、上下文向量 (Context Vector)
 
 ### 6. Transformer 架构
@@ -99,8 +99,8 @@
   3. **位置编码 (Positional Encoding)**：用数学方式给序列中的位置信息编码，让模型知道词的顺序
 
 - **通俗类比**：RNN 像接力赛跑（必须等前一个人跑完才能开始），Transformer 像拔河比赛（所有人同时用力，信息自由传递）。
-- **入门阅读**：[Transformer 革命](../04_NLP_LLMs/Transformer_Revolution/Transformer_Revolution_for_dummy.md)
-- **深入学习**：[LLM 架构基础](../04_NLP_LLMs/LLM_Architectures/LLM-Basics-in-nutshell.md)
+- **入门阅读**：[Transformer 革命](../../04_NLP_LLMs/Transformer_Revolution/Transformer_Revolution_for_dummy.md)
+- **深入学习**：[LLM 架构基础](../../04_NLP_LLMs/LLM_Architectures/LLM-Basics-in-nutshell.md)
 - **关联概念**：Attention、GPT、BERT、位置编码
 
 ### 7. 大语言模型 (LLM)
@@ -121,8 +121,8 @@
 | LLaMA 系列 | Meta | 开源，可本地部署 |
 | Qwen / DeepSeek | 中国团队 | 中文能力强，性价比高 |
 
-- **入门阅读**：[LLM 架构基础](../04_NLP_LLMs/LLM_Architectures/LLM-Basics-in-nutshell.md)
-- **深入学习**：[LLM 架构完整版](../04_NLP_LLMs/LLM_Architectures/LLM_Architectures_for_dummy.md)
+- **入门阅读**：[LLM 架构基础](../../04_NLP_LLMs/LLM_Architectures/LLM-Basics-in-nutshell.md)
+- **深入学习**：[LLM 架构完整版](../../04_NLP_LLMs/LLM_Architectures/LLM_Architectures_for_dummy.md)
 - **关联概念**：Transformer、预训练、微调、涌现能力、Token
 
 ### 8. 预训练与微调 (Pretraining & Fine-tuning)
@@ -137,8 +137,8 @@
   - **QLoRA**：在 4-bit 量化的模型上做 LoRA，效率更高
   - **RLHF / DPO**：用人类反馈信号对齐模型输出
 - **通俗类比**：预训练像一个人读完了十二年通识教育；微调像去读了职业技能培训班。
-- **入门阅读**：[微调技术](../04_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques_for_dummy.md)
-- **深入学习**：[微调技术详解](../04_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques.md)
+- **入门阅读**：[微调技术](../../04_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques_for_dummy.md)
+- **深入学习**：[微调技术详解](../../04_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques.md)
 - **关联概念**：LLM、RLHF、LoRA、指令微调 (Instruction Tuning)
 
 ### 9. 表示学习 (Representation Learning)
@@ -162,7 +162,7 @@
   1. **前向过程**：给图片逐步加噪声，直到变成纯噪声
   2. **反向过程**：训练一个神经网络，逐步去噪，最终生成清晰的图片
 - **通俗类比**：扩散模型像一位雕塑家——先把这块大理石砸成碎片（加噪声），然后凭感觉一点点拼接回去（去噪），最终雕出艺术品。
-- **入门阅读**：[生成模型](../05_Computer_Vision/Generative_Models/Generative_Models_for_dummy.md)
+- **入门阅读**：[生成模型](../../05_Computer_Vision/Generative_Models/Generative_Models_for_dummy.md)
 - **关联概念**：VAE、GAN、图像生成、视频生成
 
 ---

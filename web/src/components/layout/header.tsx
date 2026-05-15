@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { Search, Menu, X, BookOpen, Settings } from "lucide-react";
+import { Search, Menu, X, BookOpen, Settings, ExternalLink } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "./theme-toggle";
@@ -27,20 +27,38 @@ export function Header() {
             </span>
           </Link>
           <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
-            {navItems.map((item) => (
-              <Link
-                key={item.href}
-                to={item.href}
-                className={cn(
-                  "transition-colors hover:text-foreground/80",
-                  location.pathname === item.href
-                    ? "text-foreground"
-                    : "text-foreground/60"
-                )}
-              >
-                {item.label}
-              </Link>
-            ))}
+            {navItems.map((item) =>
+              item.label === "Documentation" ? (
+                <a
+                  key={item.href}
+                  href={`${window.location.origin}/mkdocs/`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={cn(
+                    "transition-colors hover:text-foreground/80 inline-flex items-center gap-1",
+                    location.pathname === item.href
+                      ? "text-foreground"
+                      : "text-foreground/60"
+                  )}
+                >
+                  {item.label}
+                  <ExternalLink className="h-3 w-3" />
+                </a>
+              ) : (
+                <Link
+                  key={item.href}
+                  to={item.href}
+                  className={cn(
+                    "transition-colors hover:text-foreground/80",
+                    location.pathname === item.href
+                      ? "text-foreground"
+                      : "text-foreground/60"
+                  )}
+                >
+                  {item.label}
+                </Link>
+              )
+            )}
             <Link
               to="/settings"
               className={cn(
@@ -91,21 +109,40 @@ export function Header() {
         <div className="md:hidden border-t">
           <div className="container py-4">
             <nav className="flex flex-col space-y-4">
-              {navItems.map((item) => (
-                <Link
-                  key={item.href}
-                  to={item.href}
-                  className={cn(
-                    "text-sm font-medium transition-colors",
-                    location.pathname === item.href
-                      ? "text-foreground"
-                      : "text-foreground/60"
-                  )}
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  {item.label}
-                </Link>
-              ))}
+              {navItems.map((item) =>
+                item.label === "Documentation" ? (
+                  <a
+                    key={item.href}
+                    href={`${window.location.origin}/mkdocs/`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={cn(
+                      "text-sm font-medium transition-colors inline-flex items-center gap-1",
+                      location.pathname === item.href
+                        ? "text-foreground"
+                        : "text-foreground/60"
+                    )}
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {item.label}
+                    <ExternalLink className="h-3 w-3" />
+                  </a>
+                ) : (
+                  <Link
+                    key={item.href}
+                    to={item.href}
+                    className={cn(
+                      "text-sm font-medium transition-colors",
+                      location.pathname === item.href
+                        ? "text-foreground"
+                        : "text-foreground/60"
+                    )}
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {item.label}
+                  </Link>
+                )
+              )}
               <Link
                 to="/settings"
                 className={cn(

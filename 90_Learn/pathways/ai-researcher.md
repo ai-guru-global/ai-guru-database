@@ -140,8 +140,8 @@ Phase 6: 前沿专题（多模态 / Agent / 世界模型）
 
 **🔗 深入阅读**：
 - [微调技术（小白版）](../../04_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques_for_dummy.md)
-- [价值对齐（小白版）](../../08_Ethics_Safety/Value_Alignment/Value_Alignment_for_dummy.md)
-- [AI 安全与红队（小白版）](../../08_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming_for_dummy.md)
+- [价值对齐（小白版）](../../19_Ethics_Safety/Value_Alignment/Value_Alignment_for_dummy.md)
+- [AI 安全与红队（小白版）](../../19_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming_for_dummy.md)
 - [Scaling Law 与后 Scaling 时代](../concepts/stage4-frontier.md)（Stage 4 中的 Scaling Law 部分）
 
 **✅ 学会标志**：
@@ -204,7 +204,7 @@ Phase 6: 前沿专题（多模态 / Agent / 世界模型）
 - 核心论文：RT-2、OpenVLA、Figure AI 相关工作
 
 **专题 C: AI Safety 与对齐**
-- [AI 安全红队（小白版）](../../08_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming_for_dummy.md)
+- [AI 安全红队（小白版）](../../19_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming_for_dummy.md)
 - 核心论文：Mechanistic Interpretability Survey、ARC Prize
 
 **专题 D: Agent 评估**
@@ -236,4 +236,4 @@ Phase 6: 前沿专题（多模态 / Agent / 世界模型）
 
 ---
 
-*本路径建议配合 [AI 概念知识图谱](../../Notes/AI_Concept_Knowledge_Graph.md) 使用，帮助理解概念间的依赖关系。*
+*本路径建议配合 [AI 概念知识图谱](../../91_Notes/AI_Concept_Knowledge_Graph.md) 使用，帮助理解概念间的依赖关系。*

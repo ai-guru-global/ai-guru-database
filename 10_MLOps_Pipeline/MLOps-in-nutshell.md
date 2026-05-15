@@ -343,10 +343,10 @@ flowchart TB
 |------|------|
 | 完整架构 | [MLOps_Pipeline.md](./MLOps_Pipeline.md) |
 | 入门指南 | [MLOps_Pipeline_for_dummy.md](./MLOps_Pipeline_for_dummy.md) |
-| 部署推理 | [../Deployment_Inference/Inference-in-nutshell.md](../Deployment_Inference/Inference-in-nutshell.md) |
-| AI Ops | [../AI_Ops/AI_Ops_2026.md](../AI_Ops/AI_Ops_2026.md) |
-| SRE 实践 | [../AI_Ops/SRE_for_AI_Systems.md](../AI_Ops/SRE_for_AI_Systems.md) |
-| 成本优化 | [../AI_Cost_Optimization_2026.md](../AI_Cost_Optimization_2026.md) |
+| 部署推理 | [../Deployment_Inference/Inference-in-nutshell.md](../09_Deployment_Inference/Inference-in-nutshell.md) |
+| AI Ops | [../AI_Ops/AI_Ops_2026.md](../16_AI_Ops/AI_Ops_2026.md) |
+| SRE 实践 | [../AI_Ops/SRE_for_AI_Systems.md](../16_AI_Ops/SRE_for_AI_Systems.md) |
+| 成本优化 | [../AI_Cost_Optimization_2026.md](../12_Architecture_Infrastructure/AI_Cost_Optimization_2026.md) |
 
 ---
 

@@ -1,0 +1,336 @@
+site_name: AI Guru Database
+site_description: CNCF-level knowledge base for AI documentation
+site_author: AI Guru Team
+
+docs_dir: mkdocs-docs
+site_dir: Web/public/mkdocs
+
+theme:
+  name: material
+  language: zh
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+
+plugins:
+  - search:
+      lang:
+        - en
+        - zh
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ai-guru-global/ai-guru-database
+
+nav:
+  - Overview:
+      - Project README: README.md
+
+  - AI Introduction:
+      - AI Fundamentals: 00_AI_Introduction/AI_Fundamentals.md
+      - Technology Landscape: 00_AI_Introduction/AI_Technology_Landscape.md
+      - History Timeline: 00_AI_Introduction/AI_History_Timeline.md
+      - Tools & Practice Guide: 00_AI_Introduction/AI_Tools_Practical_Guide.md
+      - Ethics & Society: 00_AI_Introduction/AI_Ethics_Society.md
+      - Future Trends: 00_AI_Introduction/AI_Future_Trends.md
+      - Learning Resources: 00_AI_Introduction/AI_Learning_Resources.md
+      - Classic Cases: 00_AI_Introduction/AI_Classic_Cases.md
+      - AI Glossary: 00_AI_Introduction/AI_Glossary.md
+      - Practical Labs: 00_AI_Introduction/AI_Practical_Labs.md
+
+  - Fundamentals:
+      - Linear Algebra: 01_Fundamentals/Linear_Algebra/Linear_Algebra.md
+      - Probability & Statistics: 01_Fundamentals/Probability_Statistics/Probability_Statistics.md
+      - Data Structures & Algorithms: 01_Fundamentals/Data_Structures_Algorithms/Data_Structures_Algorithms.md
+      - Distributed Systems: 01_Fundamentals/Distributed_Systems/Distributed_Systems.md
+      - AI Hardware 2026: 01_Fundamentals/AI_Hardware/AI_Hardware_2026.md
+
+  - Machine Learning:
+      - Supervised Learning: 02_Machine_Learning/Supervised_Learning/Supervised_Learning.md
+      - Unsupervised Learning: 02_Machine_Learning/Unsupervised_Learning/Unsupervised_Learning.md
+      - Feature Engineering: 02_Machine_Learning/Feature_Engineering/Feature_Engineering.md
+
+  - Deep Learning:
+      - Neural Network Core: 03_Deep_Learning/Neural_Network_Core/Neural_Network_Core.md
+      - Optimization: 03_Deep_Learning/Optimization/Optimization.md
+      - World Models 2026: 03_Deep_Learning/World_Models/World_Models_2026.md
+      - JEPA Architecture 2026: 03_Deep_Learning/World_Models/JEPA_Architecture_2026.md
+
+  - NLP & LLMs:
+      - Transformer Revolution: 04_NLP_LLMs/Transformer_Revolution/Transformer_Revolution.md
+      - LLM Architectures: 04_NLP_LLMs/LLM_Architectures/LLM_Architectures.md
+      - Sequence Models: 04_NLP_LLMs/Sequence_Models/Sequence_Models.md
+      - Fine-tuning Techniques: 04_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques.md
+      - PEFT 2026: 04_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/PEFT_2026.md
+      - Prompt Engineering: 04_NLP_LLMs/Prompt_Engineering/Prompt_Engineering.md
+      - Multimodal Architectures 2026: 04_NLP_LLMs/Multimodal_Models/Multimodal_Architectures_2026.md
+
+  - Computer Vision:
+      - Image Classification & Detection: 05_Computer_Vision/Image_Classification_Detection/Image_Classification_Detection.md
+      - Segmentation: 05_Computer_Vision/Segmentation/Segmentation.md
+      - Generative Models: 05_Computer_Vision/Generative_Models/Generative_Models.md
+      - Video Generation 2026: 05_Computer_Vision/Video_Generation/Video_Generation_2026.md
+      - Multimodal Vision: 05_Computer_Vision/Multimodal_Vision/Multimodal_Vision.md
+
+  - Reinforcement Learning & Agents:
+      - RL Foundations: 06_Reinforcement_Learning/RL_Foundations/RL_Foundations.md
+      - Deep RL: 06_Reinforcement_Learning/Deep_RL/Deep_RL.md
+      - AI Agents & Protocols: 06_Reinforcement_Learning/AI_Agents/AI_Agents.md
+      - Robotics & Embodied AI: 06_Reinforcement_Learning/Robotics_Embodied_AI/Embodied_AI_2026.md
+
+  - Model Training:
+      - Overview: 07_Model_Training/README.md
+      - Training in Nutshell: 07_Model_Training/Model-Training-in-nutshell.md
+      - Training for Dummies: 07_Model_Training/Model_Training_for_dummy.md
+      - Fine-tuning Strategies: 07_Model_Training/Fine_tuning_Strategies.md
+      - Mixed Precision Training: 07_Model_Training/Mixed_Precision_Training.md
+      - Distributed Training 2026: 07_Model_Training/Distributed_Training_2026.md
+      - Training Optimization 2026: 07_Model_Training/Training_Optimization_2026.md
+      - Training Monitoring 2026: 07_Model_Training/Training_Monitoring_2026.md
+
+  - Model Evaluation:
+      - Overview: 08_Model_Evaluation/README.md
+      - Evaluation in Nutshell: 08_Model_Evaluation/Evaluation-in-nutshell.md
+      - Evaluation for Dummies: 08_Model_Evaluation/Model_Evaluation_for_dummy.md
+      - Model Evaluation: 08_Model_Evaluation/Model_Evaluation.md
+      - Online Evaluation: 08_Model_Evaluation/Online_Evaluation.md
+      - Evaluation Automation 2026: 08_Model_Evaluation/Evaluation_Automation_2026.md
+
+  - Deployment & Inference:
+      - Overview: 09_Deployment_Inference/README.md
+      - Inference in Nutshell: 09_Deployment_Inference/Inference-in-nutshell.md
+      - Deployment for Dummies: 09_Deployment_Inference/Deployment_Inference_for_dummy.md
+      - Deployment & Inference: 09_Deployment_Inference/Deployment_Inference.md
+      - vLLM Deep Dive: 09_Deployment_Inference/vLLM_Deep_Dive.md
+      - SGLang Deep Dive: 09_Deployment_Inference/SGLang_Deep_Dive.md
+      - Ollama Deep Dive: 09_Deployment_Inference/Ollama_Deep_Dive.md
+      - LMDeploy Deep Dive: 09_Deployment_Inference/LMDeploy_Deep_Dive.md
+      - TensorRT-LLM Deep Dive: 09_Deployment_Inference/TensorRT_LLM_Deep_Dive.md
+      - llama.cpp Deep Dive: 09_Deployment_Inference/llama_cpp_Deep_Dive.md
+      - LiteRT Deep Dive: 09_Deployment_Inference/LiteRT_Deep_Dive.md
+      - BentoML Deep Dive: 09_Deployment_Inference/BentoML_Deep_Dive.md
+      - JVM AI Deployment: 09_Deployment_Inference/JVM_AI_Deployment.md
+
+  - MLOps Pipeline:
+      - Overview: 10_MLOps_Pipeline/README.md
+      - MLOps in Nutshell: 10_MLOps_Pipeline/MLOps-in-nutshell.md
+      - MLOps for Dummies: 10_MLOps_Pipeline/MLOps_Pipeline_for_dummy.md
+      - MLOps Pipeline: 10_MLOps_Pipeline/MLOps_Pipeline.md
+
+  - RAG Systems:
+      - Overview: 11_RAG_Systems/README.md
+      - RAG in Nutshell: 11_RAG_Systems/RAG-in-nutshell.md
+      - RAG Systems: 11_RAG_Systems/RAG_Systems.md
+      - RAG Advanced 2026: 11_RAG_Systems/RAG_Advanced_2026.md
+      - Chroma Deep Dive: 11_RAG_Systems/Chroma_Deep_Dive.md
+      - Milvus Deep Dive: 11_RAG_Systems/Milvus_Deep_Dive.md
+      - Qdrant Deep Dive: 11_RAG_Systems/Qdrant_Deep_Dive.md
+      - Weaviate Deep Dive: 11_RAG_Systems/Weaviate_Deep_Dive.md
+      - Haystack Deep Dive: 11_RAG_Systems/Haystack_Deep_Dive.md
+      - LlamaIndex Deep Dive: 11_RAG_Systems/LlamaIndex_Deep_Dive.md
+      - LangFlow Deep Dive: 11_RAG_Systems/LangFlow_Deep_Dive.md
+      - Flowise Deep Dive: 11_RAG_Systems/Flowise_Deep_Dive.md
+      - Dify Deep Dive: 11_RAG_Systems/Dify_Deep_Dive.md
+      - Spring AI RAG Deep Dive: 11_RAG_Systems/Spring_AI_RAG_Deep_Dive.md
+
+  - Architecture & Infrastructure:
+      - Overview: 12_Architecture_Infrastructure/README.md
+      - Architecture in Nutshell: 12_Architecture_Infrastructure/Architecture-in-nutshell.md
+      - Architecture for Dummies: 12_Architecture_Infrastructure/Architecture_Infrastructure_for_dummy.md
+      - AI System Architecture 2026: 12_Architecture_Infrastructure/AI_System_Architecture_2026.md
+      - AI Infrastructure 2026: 12_Architecture_Infrastructure/AI_Infrastructure_2026.md
+      - Multi-Tenant Architecture: 12_Architecture_Infrastructure/Multi_Tenant_Architecture.md
+      - High Availability 2026: 12_Architecture_Infrastructure/High_Availability_2026.md
+      - Capacity Planning 2026: 12_Architecture_Infrastructure/Capacity_Planning_2026.md
+      - Edge AI 2026: 12_Architecture_Infrastructure/Edge_AI_2026.md
+      - AI Cost Optimization 2026: 12_Architecture_Infrastructure/AI_Cost_Optimization_2026.md
+      - Spring AI Architecture: 12_Architecture_Infrastructure/Spring_AI_Architecture.md
+
+  - Agent Production:
+      - Overview: 13_Agent_Production/README.md
+      - Agent Production 2026: 13_Agent_Production/Enterprise_Agent/Agent_Production_2026.md
+      - Agent Frameworks: 13_Agent_Production/Agent_Frameworks/README.md
+      - Agent Platforms: 13_Agent_Production/Agent_Platforms/README.md
+      - Agent Skills: 13_Agent_Production/Agent_Skills/README.md
+      - Agent Workflow: 13_Agent_Production/Agent_Workflow/Workflow-in-nutshell.md
+      - Agent Harness: 13_Agent_Production/Agent_Harness/README.md
+      - Agent Evaluation: 13_Agent_Production/16_Agent_Evaluation/README.md
+      - Memory Infrastructure: 13_Agent_Production/Memory_Infrastructure/README.md
+      - Agentic Coding Tools: 13_Agent_Production/Agentic_Coding_Tools/README.md
+      - OpenClaw Ecosystem: 13_Agent_Production/23_OpenClaw_Ecosystem/OpenClaw_Ecosystem.md
+      - Chinese Agent Ecosystem: 13_Agent_Production/Agent_Ecosystem_CN/README.md
+
+  - AI Gateway:
+      - Overview: 14_AI_Gateway/README.md
+      - Gateway in Nutshell: 14_AI_Gateway/Gateway-in-nutshell.md
+      - AI Gateway for Dummies: 14_AI_Gateway/AI_Gateway_for_dummy.md
+      - AI Gateway 2026: 14_AI_Gateway/AI_Gateway_2026.md
+      - LiteLLM Deep Dive: 14_AI_Gateway/LiteLLM_Deep_Dive.md
+      - Portkey Deep Dive: 14_AI_Gateway/Portkey_Deep_Dive.md
+      - Cohere Deep Dive: 14_AI_Gateway/Cohere_Deep_Dive.md
+      - Spring AI Gateway Security: 14_AI_Gateway/Spring_AI_Gateway_Security.md
+
+  - AI Testing:
+      - Overview: 15_Testing/README.md
+      - Testing in Nutshell: 15_Testing/AI-Testing-in-nutshell.md
+      - AI Test Framework 2026: 15_Testing/AI_Test_Framework_2026.md
+      - DeepEval Deep Dive: 15_Testing/DeepEval_Deep_Dive.md
+      - RAGAS Deep Dive: 15_Testing/RAGAS_Deep_Dive.md
+      - Promptfoo Deep Dive: 15_Testing/Promptfoo_Deep_Dive.md
+      - Contract Testing: 15_Testing/Contract_Testing.md
+      - Java AI Testing: 15_Testing/Java_AI_Testing.md
+      - Weights & Biases Deep Dive: 15_Testing/Weights_Biases_Deep_Dive.md
+      - Test Data Management: 15_Testing/Test_Data_Management.md
+
+  - AI Ops:
+      - Overview: 16_AI_Ops/README.md
+      - AIOps in Nutshell: 16_AI_Ops/AIOps-in-nutshell.md
+      - AI Ops for Dummies: 16_AI_Ops/AI_Ops_for_dummy.md
+      - AI Ops 2026: 16_AI_Ops/AI_Ops_2026.md
+      - AI Observability Guide: 16_AI_Ops/AI_Observability_Guide.md
+      - AI Incident Response: 16_AI_Ops/AI_Incident_Response_Playbook.md
+      - CI/CD Pipeline AI 2026: 16_AI_Ops/CI_CD_Pipeline_AI_2026.md
+      - Chaos Engineering AI: 16_AI_Ops/Chaos_Engineering_AI.md
+      - SRE for AI Systems: 16_AI_Ops/SRE_for_AI_Systems.md
+      - MLflow Deep Dive: 16_AI_Ops/MLflow_Deep_Dive.md
+      - Kubeflow Deep Dive: 16_AI_Ops/Kubeflow_Deep_Dive.md
+      - ClearML Deep Dive: 16_AI_Ops/ClearML_Deep_Dive.md
+      - DVC Deep Dive: 16_AI_Ops/DVC_Deep_Dive.md
+      - Feast Deep Dive: 16_AI_Ops/Feast_Deep_Dive.md
+      - LakeFS Deep Dive: 16_AI_Ops/LakeFS_Deep_Dive.md
+      - Prefect Deep Dive: 16_AI_Ops/Prefect_Deep_Dive.md
+      - LangSmith Deep Dive: 16_AI_Ops/LangSmith_Deep_Dive.md
+      - Helicone Deep Dive: 16_AI_Ops/Helicone_Deep_Dive.md
+      - Phoenix Deep Dive: 16_AI_Ops/Phoenix_Deep_Dive.md
+      - PromptLayer Deep Dive: 16_AI_Ops/PromptLayer_Deep_Dive.md
+      - Guardrails Deep Dive: 16_AI_Ops/Guardrails_Deep_Dive.md
+      - Braintrust Deep Dive: 16_AI_Ops/Braintrust_Deep_Dive.md
+
+  - AI Coding:
+      - Overview: 17_AI_Coding/README.md
+      - AI Coding Theory: 17_AI_Coding/01_Theory/AI_Coding_Theory.md
+      - AI Coding Assistants 2026: 17_AI_Coding/02_Tools/AI_Coding_Assistants_2026.md
+      - Hermes Agent 2026: 17_AI_Coding/02_Tools/Hermes_Agent_2026.md
+      - Vibe Coding Getting Started: 17_AI_Coding/03_Practice/Vibe_Coding_Getting_Started.md
+      - Vibe Coding Prompt Templates: 17_AI_Coding/03_Practice/Vibe_Coding_Prompt_Templates.md
+      - Vibe Coding Real World Cases: 17_AI_Coding/03_Practice/Vibe_Coding_Real_World_Cases.md
+      - Vibe Coding Methodology: 17_AI_Coding/04_Methodology/Vibe_Coding_Methodology.md
+      - Agentic Coding Methodology: 17_AI_Coding/04_Methodology/Agentic_Coding_Methodology.md
+      - Vibe Coding Production Practices: 17_AI_Coding/04_Methodology/Vibe_Coding_Production_Practices.md
+
+  - Cloud Ops Agent:
+      - Overview: 18_Cloud_Ops_Agent/README.md
+      - CloudOps in Nutshell: 18_Cloud_Ops_Agent/CloudOps-in-nutshell.md
+      - Cloud Product Ops for Dummies: 18_Cloud_Ops_Agent/Cloud_Product_Ops_for_dummy.md
+      - Cloud Product Ops 2026: 18_Cloud_Ops_Agent/Cloud_Product_Ops_2026.md
+      - Java Cloud SDK Guide: 18_Cloud_Ops_Agent/Java_Cloud_SDK_Guide.md
+      - Mobile AI Ops Design: 18_Cloud_Ops_Agent/Mobile_AI_Ops_Design.md
+
+  - Ethics & Safety:
+      - Overview: 19_Ethics_Safety/README.md
+      - Ethics in Nutshell: 19_Ethics_Safety/Ethics-in-nutshell.md
+      - Ethics for Dummies: 19_Ethics_Safety/README_for_dummy.md
+      - AI Safety & Red Teaming: 19_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming.md
+      - AI Security 2026: 19_Ethics_Safety/AI_Security_2026/AI_Security_2026.md
+      - Value Alignment: 19_Ethics_Safety/Value_Alignment/Value_Alignment.md
+      - Privacy Preserving AI: 19_Ethics_Safety/Privacy_Preserving_AI/README.md
+      - Mechanistic Interpretability: 19_Ethics_Safety/Mechanistic_Interpretability/README.md
+      - Deepfake Security: 19_Ethics_Safety/Deepfake_Security/README.md
+      - AI Supply Chain Security: 19_Ethics_Safety/AI_Supply_Chain_Security/README.md
+      - AI Governance & Compliance 2026: 19_Ethics_Safety/AI_Governance_Compliance_2026.md
+
+  - AI Applications & Industry:
+      - Overview: 20_AI_Applications_Industry/README.md
+      - Industry in Nutshell: 20_AI_Applications_Industry/Industry-in-nutshell.md
+      - AI Applications for Dummies: 20_AI_Applications_Industry/AI_Applications_Industry_for_dummy.md
+      - AI Applications & Industry: 20_AI_Applications_Industry/AI_Applications_Industry.md
+      - Industry Comparison 2026: 20_AI_Applications_Industry/Industry_Comparison_2026.md
+      - Healthcare: 20_AI_Applications_Industry/Healthcare/AI_Healthcare_2026.md
+      - Finance: 20_AI_Applications_Industry/Finance/AI_Finance_2026.md
+      - Autonomous Driving: 20_AI_Applications_Industry/Autonomous_Driving/AI_Autonomous_Driving_2026.md
+      - Manufacturing: 20_AI_Applications_Industry/Manufacturing/AI_Manufacturing_2026.md
+      - Retail & E-commerce: 20_AI_Applications_Industry/Retail_Ecommerce/AI_Retail_Ecommerce_2026.md
+      - Education: 20_AI_Applications_Industry/Education/AI_Education_2026.md
+      - Content & Media: 20_AI_Applications_Industry/Content_Media/AI_Content_Media_2026.md
+      - Agriculture: 20_AI_Applications_Industry/Agriculture/AI_Agriculture_2026.md
+      - Energy & Climate: 20_AI_Applications_Industry/Energy_Climate/AI_Energy_Climate_2026.md
+      - Legal & Government: 20_AI_Applications_Industry/Legal_Government/AI_Legal_Government_2026.md
+
+  - Talks & Insights:
+      - Talks Overview: 21_Talks/README.md
+      - Talks for Dummies: 21_Talks/Talks_for_dummy.md
+      - Talks Synthesis 2026: 21_Talks/Talks_Synthesis_2026.md
+      - Geoffrey Hinton: 21_Talks/Geoffrey_Hinton/about.md
+      - Yann LeCun: 21_Talks/Yann_LeCun/about.md
+      - Yoshua Bengio: 21_Talks/Yoshua_Bengio/about.md
+      - Andrej Karpathy: 21_Talks/Andrej_Karpathy/about.md
+      - Sam Altman: 21_Talks/Sam_Altman/about.md
+      - Ilya Sutskever: 21_Talks/Ilya_Sutskever/about.md
+      - Dario Amodei: 21_Talks/Dario_Amodei/about.md
+      - Fei-Fei Li: 21_Talks/Fei_Fei_Li/about.md
+      - Demis Hassabis: 21_Talks/Demis_Hassabis/about.md
+      - Andrew Ng: 21_Talks/Andrew_Ng/about.md
+      - Jensen Huang: 21_Talks/Jensen_Huang/about.md
+      - Bill Gates: 21_Talks/Bill_Gates/about.md
+      - Elon Musk: 21_Talks/Elon_Musk/about.md
+      - Emad Mostaque: 21_Talks/Emad_Mostaque/about.md
+      - Mark Zuckerberg: 21_Talks/Mark_Zuckerberg/about.md
+      - Mira Murati: 21_Talks/Mira_Murati/about.md
+      - Mustafa Suleyman: 21_Talks/Mustafa_Suleyman/about.md
+      - Richard Socher: 21_Talks/Richard_Socher/about.md
+      - Satya Nadella: 21_Talks/Satya_Nadella/about.md
+      - Sebastian Thrun: 21_Talks/Sebastian_Thrun/about.md
+      - Sundar Pichai: 21_Talks/Sundar_Pichai/about.md
+
+  - Papers:
+      - Papers Reading List: 22_Papers/README.md
+      - Attention Is All You Need: 22_Papers/Attention_Is_All_You_Need_Deep_Dive.md
+      - GPT-3 Deep Dive: 22_Papers/GPT3_Deep_Dive.md
+      - ResNet Deep Dive: 22_Papers/ResNet_Deep_Dive.md
+
+  - Interview Prep:
+      - Interviews Overview: 23_Interviews/README.md
+      - Jobs Guide: 23_Interviews/jobs.md
+      - Interviews for Dummies: 23_Interviews/Interviews_for_dummy.md
+      - Machine Learning Engineer: 23_Interviews/Machine_Learning_Engineer/question_bank.md
+      - Data Scientist: 23_Interviews/Data_Scientist/question_bank.md
+      - Data Engineer: 23_Interviews/Data_Engineer/question_bank.md
+      - NLP Engineer: 23_Interviews/NLP_Engineer/question_bank.md
+      - Computer Vision Engineer: 23_Interviews/Computer_Vision_Engineer/question_bank.md
+      - MLOps Engineer: 23_Interviews/MLOps_Engineer/question_bank.md
+      - AI Research Scientist: 23_Interviews/AI_Research_Scientist/question_bank.md
+      - Research Scientist: 23_Interviews/Research_Scientist/question_bank.md
+      - Prompt Engineer: 23_Interviews/Prompt_Engineer/question_bank.md
+      - Robotics Engineer: 23_Interviews/Robotics_Engineer/question_bank.md
+      - AI Security Engineer: 23_Interviews/AI_Security_Engineer/question_bank.md
+      - LLM Platform Engineer: 23_Interviews/LLM_Platform_Engineer/question_bank.md
+      - AI Data Analyst: 23_Interviews/AI_Data_Analyst/question_bank.md
+      - AI Evaluation Engineer: 23_Interviews/AI_Evaluation_Engineer/question_bank.md
+      - AI Infrastructure Engineer: 23_Interviews/AI_Infrastructure_Engineer/question_bank.md
+      - AI Policy Specialist: 23_Interviews/AI_Policy_Specialist/question_bank.md
+      - AI Product Manager: 23_Interviews/AI_Product_Manager/question_bank.md
+      - AI Reliability Engineer: 23_Interviews/AI_Reliability_Engineer/question_bank.md
+      - AI Research Engineer: 23_Interviews/AI_Research_Engineer/question_bank.md
+      - AI Solutions Architect: 23_Interviews/AI_Solutions_Architect/question_bank.md
+      - Applied Scientist: 23_Interviews/Applied_Scientist/question_bank.md

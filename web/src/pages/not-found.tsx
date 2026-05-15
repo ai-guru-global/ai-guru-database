@@ -20,10 +20,14 @@ export function NotFoundPage() {
             </Link>
           </Button>
           <Button variant="outline" asChild>
-            <Link to="/docs">
+            <a
+              href="/mkdocs/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <ArrowLeft className="mr-2 h-4 w-4" />
               Browse Docs
-            </Link>
+            </a>
           </Button>
           <Button variant="outline" asChild>
             <Link to="/search">

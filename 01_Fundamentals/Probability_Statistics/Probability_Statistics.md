@@ -524,7 +524,7 @@ $$
 - **[机器学习基础](../../02_Machine_Learning/ML_Fundamentals/ML_Fundamentals.md)**: MLE/MAP 在具体算法中的应用
 - **[优化方法](../../02_Machine_Learning/Optimization_Methods/Optimization_Methods.md)**: 随机优化的概率视角
 - **[贝叶斯深度学习](../../03_Deep_Learning/Bayesian_DL/Bayesian_DL.md)**: 不确定性量化
-- **[生成模型](../../03_Deep_Learning/Generative_Models/Generative_Models.md)**: VAE、GAN 的概率基础
+- **[生成模型](../../05_Computer_Vision/Generative_Models/Generative_Models.md)**: VAE、GAN 的概率基础
 
 ---
 

@@ -787,9 +787,9 @@ L = α × L_hard(y_true, y_student) + (1-α) × L_soft(y_teacher, y_student)
 
 ### 进阶推荐
 
-- [MLOps 流水线](../MLOps_Pipeline/MLOps_Pipeline.md) - 部署自动化与监控
-- [RAG 系统](../RAG_Systems/RAG_Systems.md) - 实际应用中的推理场景
-- [AI 安全与红队](../../08_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming.md) - 生产环境的安全防护
+- [MLOps 流水线](../10_MLOps_Pipeline/MLOps_Pipeline.md) - 部署自动化与监控
+- [RAG 系统](../11_RAG_Systems/RAG_Systems.md) - 实际应用中的推理场景
+- [AI 安全与红队](../../19_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming.md) - 生产环境的安全防护
 
 ## 8. 面试高频问题 (Interview FAQs)
 

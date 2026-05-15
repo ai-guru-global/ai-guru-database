@@ -125,8 +125,8 @@ Stage 1: 基础概念（轻量浏览，重点理解概念名称）
 **🔗 深入阅读**：
 - [AI 伦理与社会影响](../../00_AI_Introduction/AI_Ethics_Society.md)
 - [AI 经典案例分析集](../../00_AI_Introduction/AI_Classic_Cases.md)
-- [价值对齐（小白版）](../../08_Ethics_Safety/Value_Alignment/Value_Alignment_for_dummy.md)
-- [AI 安全与红队（小白版）](../../08_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming_for_dummy.md)
+- [价值对齐（小白版）](../../19_Ethics_Safety/Value_Alignment/Value_Alignment_for_dummy.md)
+- [AI 安全与红队（小白版）](../../19_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming_for_dummy.md)
 
 **✅ 学会标志**：
 - 能列出至少 3 个 AI 伦理问题并说出各方观点
@@ -163,7 +163,7 @@ Stage 1: 基础概念（轻量浏览，重点理解概念名称）
 | 想学点编程，动手做 AI 项目 | [ML 从业者路径](./ml-practitioner.md) |
 | 只想深入了解大模型技术 | [LLM 工程师路径](./llm-engineer.md)（前置部分） |
 | 想把 AI 用在工作中 | [AI 产品经理路径](./product-manager.md) |
-| 还想继续通识学习 | [AI 经典案例分析集](../../00_AI_Introduction/AI_Classic_Cases.md) + [行业应用](../../13_AI_Applications_Industry/AI_Applications_Industry.md) |
+| 还想继续通识学习 | [AI 经典案例分析集](../../00_AI_Introduction/AI_Classic_Cases.md) + [行业应用](../../20_AI_Applications_Industry/AI_Applications_Industry.md) |
 
 ---
 

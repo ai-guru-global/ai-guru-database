@@ -4,7 +4,7 @@
 
 <p><strong>这可能是 GitHub 上最全面的 AI 学习资源</strong></p>
 
-<p>从理论到生产的完整 AI 知识体系 | 258+ 文档 | 383万+ 字 | 2026 最新</p>
+<p>从理论到生产的完整 AI 知识体系 | 368+ 文档 | 519万+ 字 | 2026 最新</p>
 
 <p>
   <a href="#-快速开始">🚀 快速开始</a> •
@@ -15,8 +15,8 @@
 </p>
 
 <p>
-  <img src="https://img.shields.io/badge/文档-258%2B-blue?style=flat-square&logo=bookstack" alt="Docs">
-  <img src="https://img.shields.io/badge/字数-383万%2B-green?style=flat-square" alt="Content">
+  <img src="https://img.shields.io/badge/文档-368%2B-blue?style=flat-square&logo=bookstack" alt="Docs">
+  <img src="https://img.shields.io/badge/字数-519万%2B-green?style=flat-square" alt="Content">
   <img src="https://img.shields.io/badge/章节-20-orange?style=flat-square" alt="Chapters">
   <img src="https://img.shields.io/badge/速成指南-9-purple?style=flat-square" alt="Guides">
   <img src="https://img.shields.io/badge/更新-2026--04-red?style=flat-square" alt="Updated">
@@ -44,8 +44,8 @@
 <td width="50%">
 
 **📚 内容全面**
-- 258+ Markdown 文档
-- 383万+ 字符（约 640 页 A4）
+- 368+ Markdown 文档
+- 519万+ 字符（约 865 页 A4）
 - 涵盖 70+ 技术领域
 - 从数学基础到 AGI 前沿
 
@@ -84,7 +84,7 @@
 ### 📊 数据说话
 
 ```
-📁 258 个 Markdown 文件    📄 383 万+ 字符（约 640 页 A4）
+📁 368 个 Markdown 文件    📄 519 万+ 字符（约 865 页 A4）
 📚 20 个知识章节          ⚡ 9 个速成指南
 🎓 10 本大学教材          🔬 12 个 2026 专题
 🏢 8 大行业应用           👔 21 个岗位面试指南
@@ -106,7 +106,7 @@
 | 03_Deep_Learning | 10 | 14.94 万 | 3.9% |
 | 00_AI_Introduction | 11 | 12.72 万 | 3.3% |
 | 其他 10 个目录 | 59 | 96.15 万 | 25.1% |
-| **总计** | **258** | **383.23 万** | **100%** |
+| **总计** | **368** | **519.06 万** | **100%** |
 
 > 💡 提示：运行 `python3 count_words.py` 可查看最新的实时统计
 
@@ -133,7 +133,7 @@ ls -la
 cd ai-guru-knowledge-base/Web
 npm install
 npm run dev
-# 访问 http://localhost:3055
+# 访问 http://localhost:4567
 ```
 
 ### 方式三：导入到 AI 工具
@@ -290,8 +290,8 @@ curl -L -o ai-guru.zip https://github.com/your-org/ai-guru-knowledge-base/archiv
 <tr>
 <td>
 
-- [LLM 架构 2026](./04_NLP_LLMs/LLM_Architectures/LLM_Architectures.md) - GPT-5.2, Claude 4.5, 推理模型
-- [AI 硬件 2026](./01_Fundamentals/AI_Hardware/AI_Hardware_2026.md) - H100/H200/B200, GPU 选型
+- [LLM 架构 2026](../04_NLP_LLMs/LLM_Architectures/LLM_Architectures.md) - GPT-5.2, Claude 4.5, 推理模型
+- [AI 硬件 2026](../01_Fundamentals/AI_Hardware/AI_Hardware_2026.md) - H100/H200/B200, GPU 选型
 - [PEFT 微调 2026](./04_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/) - LoRA/QLoRA/DoRA, 单卡微调 70B
 - [RAG 高级实践](./11_RAG_Systems/) - 混合检索、Agentic RAG
 - [AI 编程助手](./17_AI_Coding/) - Cursor, Claude Code, Devin
@@ -305,8 +305,8 @@ curl -L -o ai-guru.zip https://github.com/your-org/ai-guru-knowledge-base/archiv
 - [AI 视频生成](./05_Computer_Vision/Video_Generation/) - Veo3, Kling 3.0, 后 Sora 时代
 - [AI 安全 2026](./19_Ethics_Safety/AI_Security_2026/) - OWASP LLM, ASI 框架
 - [Agent 生产部署](./13_Agent_Production/) - K8s, 监控, CI/CD
-- [Agent 协议 2026](./06_Reinforcement_Learning/AI_Agents/Agent_Protocols_2026.md) - MCP/A2A/UCP
-- [AI 基础设施](./12_Architecture_Infrastructure/AI_Infrastructure_2026.md) - SGLang, AI Gateway
+- [Agent 协议 2026](../06_Reinforcement_Learning/AI_Agents/Agent_Protocols_2026.md) - MCP/A2A/UCP
+- [AI 基础设施](../12_Architecture_Infrastructure/AI_Infrastructure_2026.md) - SGLang, AI Gateway
 
 </td>
 </tr>

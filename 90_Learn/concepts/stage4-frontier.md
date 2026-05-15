@@ -36,7 +36,7 @@
 | Veo3 | 高质量视频生成，支持文本/图像到视频 | Google |
 | Kling 3.0 | 电影级视频生成，中国团队 | 快手 |
 
-- **入门阅读**：[多模态视觉](../05_Computer_Vision/Multimodal_Vision/Multimodal_Vision_for_dummy.md)
+- **入门阅读**：[多模态视觉](../../05_Computer_Vision/Multimodal_Vision/Multimodal_Vision_for_dummy.md)
 - **深入学习**：[视频生成](../05_Computer_Vision/Video_Generation/README.md)
 - **关联概念**：CLIP、扩散模型、视频生成、具身智能
 
@@ -61,8 +61,8 @@
 - 异常检测 → 根因分析 → 自动修复 → 报告的闭环
 - 参见：[Ops Agent Harness 2026](../../13_Agent_Production/16_Agent_Evaluation/Ops_Agent_Harness_2026.md)
 
-- **入门阅读**：[AI Agent 入门](../06_Reinforcement_Learning/AI_Agents/AI_Agents_for_dummy.md)
-- **深入学习**：[Agent 速查](../06_Reinforcement_Learning/AI_Agents/Agent-in-nutshell.md)
+- **入门阅读**：[AI Agent 入门](../../06_Reinforcement_Learning/AI_Agents/AI_Agents_for_dummy.md)
+- **深入学习**：[Agent 速查](../../06_Reinforcement_Learning/AI_Agents/Agent-in-nutshell.md)
 - **关联概念**：Tool Use、规划、记忆、多 Agent 协作
 
 ### 3. 世界模型与 JEPA 架构
@@ -113,7 +113,7 @@
   - 物理世界交互
   - 持续学习（不遗忘旧知识的同时学新知识）
   方面仍有显著差距
-- **入门阅读**：[AI 未来趋势](../00_AI_Introduction/AI_Future_Trends.md)
+- **入门阅读**：[AI 未来趋势](../../00_AI_Introduction/AI_Future_Trends.md)
 - **关联概念**：涌现能力、规模法则 (Scaling Law)、AI Safety
 
 ### 6. AI Safety 与对齐 (Alignment)
@@ -129,8 +129,8 @@
   - **RLHF / DPO**：用人类反馈信号对齐模型
   - **Constitutional AI (CAI)**：让 AI 根据一组"宪法"自我约束
   - **可解释性研究**：机械可解释性 (Mechanistic Interpretability) 试图理解 Transformer 内部在计算什么
-- **入门阅读**：[价值对齐](../08_Ethics_Safety/Value_Alignment/Value_Alignment_for_dummy.md)
-- **深入学习**：[AI 安全与红队](../08_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming_for_dummy.md)
+- **入门阅读**：[价值对齐](../19_Ethics_Safety/Value_Alignment/Value_Alignment_for_dummy.md)
+- **深入学习**：[AI 安全与红队](../19_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming_for_dummy.md)
 - **关联概念**：RLHF、机械可解释性、红队测试
 
 ### 7. Scaling Law 与规模法则
@@ -166,8 +166,8 @@
   - **InfiniBand vs RoCE**：GPU 间高速互联网络是训练效率的关键
   - **推理优化**：vLLM、TensorRT-LLM、FlashAttention 让推理成本大幅下降
   - **边缘 AI**：端侧模型（Phi-4、Gemma 2B）让手机/PC 也能跑 LLM
-- **入门阅读**：[AI 硬件](../01_Fundamentals/AI_Hardware/AI_Hardware_2026.md)
-- **深入学习**：[AI 基础设施趋势 2026](../12_Architecture_Infrastructure/AI_Infrastructure_2026.md)
+- **入门阅读**：[AI 硬件](../../01_Fundamentals/AI_Hardware/AI_Hardware_2026.md)
+- **深入学习**：[AI 基础设施趋势 2026](../../12_Architecture_Infrastructure/AI_Infrastructure_2026.md)
 - **关联概念**：GPU、分布式训练、量化
 
 ---

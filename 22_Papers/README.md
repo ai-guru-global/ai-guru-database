@@ -65,6 +65,11 @@ flowchart LR
 - [Attention Is All You Need 深度解读](./Attention_Is_All_You_Need_Deep_Dive.md) — Transformer 的完整技术剖析
 - [ResNet 深度解读](./ResNet_Deep_Dive.md) — 残差学习的数学直觉与工程实现
 - [GPT-3 深度解读](./GPT3_Deep_Dive.md) — 规模化、上下文学习与涌现能力
+- [BERT 深度解读](./BERT_Deep_Dive.md) — 双向编码、MLM/NSP 与预训练-微调范式
+- [LLaMA 深度解读](./LLaMA_Deep_Dive.md) — 开源 LLM 革命、RoPE/SwiGLU/RMSNorm 架构创新
+- [Diffusion Models 深度解读](./Diffusion_Models_Deep_Dive.md) — 从 DDPM 到 Stable Diffusion 再到 DiT
+- [RLHF 与 DPO 深度解读](./RLHF_DPO_Deep_Dive.md) — InstructGPT 三阶段训练、DPO 数学推导与对齐方法
+- [Mixture of Experts 深度解读](./Mixture_of_Experts_Deep_Dive.md) — Switch Transformer、Mixtral、DeepSeek MoE 架构解析
 
 ---
 

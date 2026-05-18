@@ -11,6 +11,11 @@
 | [MLOps-in-nutshell](./MLOps-in-nutshell.md) | 30 分钟速览：成熟度模型、生命周期、关键工具 | 快速入门 |
 | [MLOps Pipeline](./MLOps_Pipeline.md) | 完整流水线设计：数据版本化、特征存储、模型注册、持续部署 | 系统学习 |
 | [MLOps Pipeline for Dummy](./MLOps_Pipeline_for_dummy.md) | MLOps 概念的简化版解释 | 初学者 |
+| [Feature Store 深度解析](./Feature_Store_Deep_Dive.md) | Feast/Tecton/Hopsworks 对比，训练-服务偏差解决方案 | 进阶 |
+| [实验追踪深度解析](./Experiment_Tracking_Deep_Dive.md) | MLflow/W&B/Neptune 全面对比，实验管理与复现 | 进阶 |
+| [ML CI/CD 流水线](./ML_CI_CD.md) | 数据验证、模型测试、金丝雀部署、GitHub Actions for ML | 进阶 |
+| [数据流水线编排](./Data_Pipeline_Orchestration.md) | Airflow/Dagster/Prefect 对比，DAG 设计最佳实践 | 进阶 |
+| [MLOps 成熟度模型](./MLOps_Maturity_Model.md) | Level 0-3 成熟度评估、团队建设、工具选型、ROI 衡量 | 管理者 |
 
 ---
 

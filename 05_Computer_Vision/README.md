@@ -37,7 +37,27 @@
 | 图像分割 (Segmentation) | 进阶 | 语义分割（U-Net）、实例分割（Mask R-CNN），像素级理解 | [Segmentation/](./Segmentation/) |
 | 多模态视觉 (Multimodal Vision) | 进阶 | CLIP、ALIGN，视觉-语言联合表示学习 | [Multimodal_Vision/](./Multimodal_Vision/) |
 | 生成模型 (Generative Models) | 实战 | GAN、DDPM、Stable Diffusion，图像生成与编辑 | [Generative_Models.md](./Generative_Models/Generative_Models.md) |
-| AI视频生成 (Video Generation) | 前沿 | 2026年视频生成格局，Veo3/Kling/Seedance/Sora后时代 | [Video_Generation_2026.md](./Video_Generation/Video_Generation_2026.md) |
+| AI视频生成 (Video Generation) | 前沿 | 2026年视频生成格局，Veo3/Kling/Seedance/Sora后时代 | [Video_Generation/](./Video_Generation/) |
+| 3D 视觉 (3D Vision) | 进阶 | 深度估计、点云分割、NeRF、3D 检测 | [3D_Vision.md](./3D_Vision.md) |
+| OCR 文字识别 (OCR) | 入门 | 文本检测、文本识别、端到端 OCR | [OCR_Text_Recognition.md](./OCR_Text_Recognition.md) |
+
+### 深度解读 (Deep Dive)
+
+| 论文 | 内容 | 文档链接 |
+|------|------|---------|
+| ViT (Vision Transformer) | 将 Transformer 引入视觉，图像即 16×16 tokens | [ViT_Deep_Dive.md](./ViT_Deep_Dive.md) |
+| CLIP | 多模态学习里程碑，zero-shot 图像分类 | [CLIP_Deep_Dive.md](./Multimodal_Vision/CLIP_Deep_Dive.md) |
+
+### 小白版入门 (for_dummy)
+
+- [计算机视觉 - 小白版](./README_for_dummy.md) — 零基础入门
+- [图像分类与检测 - 小白版](./Image_Classification_Detection/Image_Classification_Detection_for_dummy.md)
+- [图像分割 - 小白版](./Segmentation/Segmentation_for_dummy.md)
+- [多模态视觉 - 小白版](./Multimodal_Vision/Multimodal_Vision_for_dummy.md)
+- [生成模型 - 小白版](./Generative_Models/Generative_Models_for_dummy.md)
+- [视频生成 - 小白版](./Video_Generation/Video_Generation_for_dummy.md)
+- [3D 视觉 - 小白版](./3D_Vision/3D_Vision_for_dummy.md)
+- [OCR - 小白版](./OCR_Text_Recognition/OCR_for_dummy.md)
 
 ## 前置知识 (Prerequisites)
 

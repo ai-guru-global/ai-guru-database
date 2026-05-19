@@ -70,6 +70,8 @@ flowchart LR
 - [Diffusion Models 深度解读](./Diffusion_Models_Deep_Dive.md) — 从 DDPM 到 Stable Diffusion 再到 DiT
 - [RLHF 与 DPO 深度解读](./RLHF_DPO_Deep_Dive.md) — InstructGPT 三阶段训练、DPO 数学推导与对齐方法
 - [Mixture of Experts 深度解读](./Mixture_of_Experts_Deep_Dive.md) — Switch Transformer、Mixtral、DeepSeek MoE 架构解析
+- [DQN 深度解读](./DQN_Deep_Dive.md) — 深度强化学习开山之作，Atari 游戏与经验回放
+- [AlphaGo 深度解读](./AlphaGo_Deep_Dive.md) — 围棋 AI 的突破，深度 RL 与蒙特卡洛树搜索
 
 ---
 

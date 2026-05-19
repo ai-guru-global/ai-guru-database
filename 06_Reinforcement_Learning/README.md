@@ -52,6 +52,20 @@
 | AI Agents (智能体) | 实战 | ReAct、长期记忆、工具使用、多智能体系统，自主决策架构 | [AI_Agents.md](./AI_Agents/AI_Agents.md) |
 | 具身智能 (Embodied AI) | 前沿 | 机器人基础模型、VLA架构、Sim-to-Real、人形机器人产业 | [Embodied_AI_2026.md](./Robotics_Embodied_AI/Embodied_AI_2026.md) |
 
+### 深度解读 (Deep Dive)
+
+| 算法 | 内容 | 文档链接 |
+|------|------|---------|
+| DQN | 深度强化学习开山之作，Atari 游戏与经验回放 | [DQN_Deep_Dive.md](./Deep_RL/DQN_Deep_Dive.md) |
+| PPO | OpenAI 默认 RL 算法，裁剪更新稳定训练 | [PPO_Deep_Dive.md](./Deep_RL/PPO_Deep_Dive.md) |
+
+### 小白版入门 (for_dummy)
+
+- [强化学习与智能体 - 小白版](./README_for_dummy.md) — 零基础入门
+- [RL 基础 - 小白版](./RL_Foundations/RL_Foundations_for_dummy.md)
+- [深度强化学习 - 小白版](./Deep_RL/Deep_RL_for_dummy.md)
+- [AI 智能体 - 小白版](./AI_Agents/AI_Agents_for_dummy.md)
+
 ## 前置知识 (Prerequisites)
 
 - **必修**: [概率统计](../01_Fundamentals/Probability_Statistics/Probability_Statistics.md)（理解 MDP 和期望计算）

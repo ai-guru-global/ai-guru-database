@@ -1,3 +1,12 @@
+---
+title: '数据结构与算法 (Data Structures & Algorithms)'
+category: '01-fundamentals-data-structures-algorithms'
+tags: ["fundamentals", "math", "algorithms", "basics"]
+summary: '> **一句话理解**: 算法是 AI 的"工具箱" —— 数据结构决定存储效率，算法决定计算速度，两者结合支撑起从训练到推理的整个流程。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # 数据结构与算法 (Data Structures & Algorithms)
 
 > **一句话理解**: 算法是 AI 的"工具箱" —— 数据结构决定存储效率，算法决定计算速度，两者结合支撑起从训练到推理的整个流程。

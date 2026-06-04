@@ -1,3 +1,12 @@
+---
+title: 'AI 系统 CI/CD 流水线 2026 (CI/CD Pipeline for AI)'
+category: '16-ai-ops'
+tags: ["ai-ops", "observability", "monitoring", "incident-response"]
+summary: '> **一句话理解**: AI 系统的 CI/CD 就像"智能工厂的生产线"——不仅自动测试和部署代码，还要自动训练模型、评估质量、监控性能，确保每次更新都是安全可靠的。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # AI 系统 CI/CD 流水线 2026 (CI/CD Pipeline for AI)
 
 > **一句话理解**: AI 系统的 CI/CD 就像"智能工厂的生产线"——不仅自动测试和部署代码，还要自动训练模型、评估质量、监控性能，确保每次更新都是安全可靠的。
@@ -363,3 +372,11 @@ git tag -a data-v2.1 -m "Training data version 2.1"
 ---
 
 *Last updated: 2026-05-07*
+
+## Related
+
+- [[16_AI_Ops/AIOps-in-nutshell.md|AIOps-in-nutshell]]
+- [[16_AI_Ops/AI_Incident_Response_Playbook.md|AI_Incident_Response_Playbook]]
+- [[16_AI_Ops/AI_Ops_for_dummy.md|AI_Ops_for_dummy]]
+- [[16_AI_Ops/README.md|16_AI_Ops README]]
+- [[16_AI_Ops/README_for_dummy.md|README_for_dummy]]

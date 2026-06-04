@@ -1,3 +1,12 @@
+---
+title: 'Mobile AI Ops: 基于 Google Edge Gallery 的手拍即运维产品设计'
+category: '18-cloud-ops-agent'
+tags: ["cloud-ops", "devops", "sre", "automation"]
+summary: '> **产品定位**: 利用 Google Edge Gallery 生态系统，在移动设备上本地运行 Gemma4 等模型，实现"拍照即运维"——拍摄错误页面/日志，本地执行 Skills 完成诊断、分析、操作。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # Mobile AI Ops: 基于 Google Edge Gallery 的手拍即运维产品设计
 
 > **产品定位**: 利用 Google Edge Gallery 生态系统，在移动设备上本地运行 Gemma4 等模型，实现"拍照即运维"——拍摄错误页面/日志，本地执行 Skills 完成诊断、分析、操作。
@@ -1100,3 +1109,11 @@ A: 通过 RAG 增强 + 本地知识库 + 持续的案例学习，持续优化模
 *最后更新: 2026-04-15*
 *版本: 1.0.0*
 *维护者: Mobile AI Ops 产品团队*
+
+## Related
+
+- [[18_Cloud_Ops_Agent/CloudOps-in-nutshell.md|CloudOps-in-nutshell]]
+- [[18_Cloud_Ops_Agent/Cloud_Product_Ops_for_dummy.md|Cloud_Product_Ops_for_dummy]]
+- [[18_Cloud_Ops_Agent/Java_Cloud_SDK_Guide.md|Java_Cloud_SDK_Guide]]
+- [[18_Cloud_Ops_Agent/docs/architecture/index.md|index]]
+- [[18_Cloud_Ops_Agent/docs/corpus/index.md|index]]

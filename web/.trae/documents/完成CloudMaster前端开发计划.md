@@ -1,3 +1,12 @@
+---
+title: 'CloudMaster前端开发完成计划'
+category: 'web-.trae-documents'
+tags: ["web", "frontend", "backend", "fullstack"]
+summary: '重新配置Vite，解决"Cannot read directory ''../../..'': Access is denied"错误'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # CloudMaster前端开发完成计划
 
 ## 1. 解决Vite构建问题
@@ -52,3 +61,11 @@
 4. 运行测试并生成报告（1-2小时）
 5. 更新文档（2-3小时）
 6. 构建和部署（1-2小时）
+
+## Related
+
+- [[Web/.trae/documents/CloudMaster应用全面修复计划.md|CloudMaster应用全面修复计划]]
+- [[Web/CHANGELOG.md|CHANGELOG]]
+- [[Web/CONTRIBUTING.md|CONTRIBUTING]]
+- [[Web/README.md|Web README]]
+- [[Web/TROUBLESHOOTING.md|TROUBLESHOOTING]]

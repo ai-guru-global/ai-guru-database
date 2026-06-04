@@ -1,3 +1,12 @@
+---
+title: 分布式训练 - 小白版
+category: 07-model-training
+tags: ["model-training", "distributed-training", "optimization", "fsdp"]
+summary: "> **一句话秒懂**: 分布式训练就像盖房子——一个工人盖太慢了，请一百个工人一起干，房子很快就盖好了。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 分布式训练 - 小白版
 
 > **一句话秒懂**: 分布式训练就像盖房子——一个工人盖太慢了，请一百个工人一起干，房子很快就盖好了。
@@ -418,3 +427,11 @@ FSDP 是 PyTorch 版本的 ZeRO-3
 ---
 
 *本文是 [分布式训练](./Distributed_Training_2026.md) 的简化版，适合零基础读者。*
+
+## Related
+
+- [[07_Model_Training/Distributed_Training_2026]] — Distributed Training 2026 (共享: distributed-training, fsdp, model-training, optimization)
+- [[07_Model_Training/Mixed_Precision_Training]] — 混合精度训练 (Mixed Precision Training) (共享: distributed-training, fsdp, model-training, optimization)
+- [[07_Model_Training/Model-Training-in-nutshell]] — 模型训练速成指南 (共享: distributed-training, fsdp, model-training, optimization)
+- [[07_Model_Training/Model_Training_for_dummy]] — 模型训练小白指南 (共享: distributed-training, fsdp, model-training, optimization)
+- [[07_Model_Training/README.md|README]]

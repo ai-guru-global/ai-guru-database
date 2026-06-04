@@ -1,3 +1,12 @@
+---
+title: "LLaVA: 开源多模态大模型"
+category: "04-nlp-llms-multimodal-models"
+tags: ["nlp", "llm", "transformer", "gpt", "bert"]
+summary: "> **一句话理解**: LLaVA 是开源多模态大模型——连接视觉编码器与 LLM 实现图文对话，在 GPT-4V 开源替代中性能领先。"
+created: "2026-05-31"
+updated: "2026-05-31"
+---
+
 # LLaVA: 开源多模态大模型
 
 > **一句话理解**: LLaVA 是开源多模态大模型——连接视觉编码器与 LLM 实现图文对话，在 GPT-4V 开源替代中性能领先。
@@ -336,3 +345,11 @@ if response.content.tool_calls:
 
 *Last updated: 2026-04-26*
 *Version: 1.0.0*
+
+## Related
+
+- [[04_NLP_LLMs/Multimodal_Models/Multimodal_Architectures_2026.md|Multimodal_Architectures_2026]]
+- [[04_NLP_LLMs/Fine_tuning_Techniques/Axolotl_Deep_Dive.md|Axolotl_Deep_Dive]]
+- [[04_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques.md|Fine_tuning_Techniques]]
+- [[04_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques_for_dummy.md|Fine_tuning_Techniques_for_dummy]]
+- [[04_NLP_LLMs/Fine_tuning_Techniques/Model_Merging_2026.md|Model_Merging_2026]]

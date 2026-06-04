@@ -1,3 +1,12 @@
+---
+title: '边缘 AI / 设备端 AI 2026'
+category: '12-architecture-infrastructure'
+tags: ["architecture", "infrastructure", "kubernetes", "high-availability"]
+summary: '> **一句话理解**: 2026年的AI正在从云端走向"最后一公里"——Apple Intelligence、高通AI Hub、专用NPU芯片让70B参数的模型能在手机本地运行，"隐私优先、离线可用、毫秒响应"不再是云端专属。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # 边缘 AI / 设备端 AI 2026
 
 > **一句话理解**: 2026年的AI正在从云端走向"最后一公里"——Apple Intelligence、高通AI Hub、专用NPU芯片让70B参数的模型能在手机本地运行，"隐私优先、离线可用、毫秒响应"不再是云端专属。
@@ -533,3 +542,11 @@ Apple Intelligence 2026:
 ---
 
 *Last updated: 2026-04-10*
+
+## Related
+
+- [[12_Architecture_Infrastructure/AI_Infrastructure_2026.md|AI_Infrastructure_2026]]
+- [[12_Architecture_Infrastructure/Architecture-in-nutshell.md|Architecture-in-nutshell]]
+- [[12_Architecture_Infrastructure/Architecture_Infrastructure_for_dummy.md|Architecture_Infrastructure_for_dummy]]
+- [[12_Architecture_Infrastructure/Spring_AI_Architecture.md|Spring_AI_Architecture]]
+- [[concepts/llm-infrastructure.md|llm-infrastructure]]

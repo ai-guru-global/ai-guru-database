@@ -1,3 +1,12 @@
+---
+title: Agent 开发框架
+category: 13-agent-production-agent-frameworks
+tags: ["ai-agents", "agent-framework", "production", "langgraph"]
+summary: "> 多 Agent 开发框架是构建协作式 Agent 系统的核心基础设施，从对话式协作到状态机编排各有特色。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # Agent 开发框架
 
 > 多 Agent 开发框架是构建协作式 Agent 系统的核心基础设施，从对话式协作到状态机编排各有特色。
@@ -47,3 +56,20 @@
 ---
 
 *Last updated: 2026-04-14*
+
+## Related
+- [[13_Agent_Production/Agent_Frameworks/AutoGPT_Deep_Dive|AutoGPT: 自主任务执行 Agent]]
+- [[13_Agent_Production/Agent_Frameworks/Transformers_Agents_Deep_Dive|Transformers Agents: HuggingFace Agent 框架]]
+- [[13_Agent_Production/Agent_Frameworks/CrewAI_Deep_Dive|CrewAI: 多 Agent 协作框架]]
+- [[13_Agent_Production/Agent_Frameworks/SmolAgents_Deep_Dive|SmolAgents: 轻量级 Agent 框架]]
+- [[13_Agent_Production/Agent_Frameworks/AutoGen_CrewAI_LangGraph_Dive|多 Agent 开发框架: AutoGen / CrewAI / LangGraph]]
+- [[13_Agent_Production/Agent_Frameworks/AutoGen_Deep_Dive|AutoGen: 微软多 Agent 框架]]
+- [[13_Agent_Production/Agent_Frameworks/Agno_Deep_Dive|agno: 现代 AI Agent 框架]]
+- [[13_Agent_Production/Agent_Frameworks/AgentScope_Deep_Dive|AgentScope: 阿里巴巴多智能体开发平台]]
+- [[13_Agent_Production/Agent_Frameworks/LangChain_Deep_Dive|LangChain: LLM 应用开发框架]]
+
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)
+

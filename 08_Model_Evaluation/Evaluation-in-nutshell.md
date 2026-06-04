@@ -1,3 +1,12 @@
+---
+title: '模型评估速成指南'
+category: '08-model-evaluation'
+tags: ["model-evaluation", "metrics", "ab-testing", "benchmark"]
+summary: '> **一句话理解**: 模型评估就像"给AI考试打分"——不仅要看总分，还要看各科目表现、答题稳定性，以及面对新题型时的真实水平。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # 模型评估速成指南
 
 > **一句话理解**: 模型评估就像"给AI考试打分"——不仅要看总分，还要看各科目表现、答题稳定性，以及面对新题型时的真实水平。
@@ -491,3 +500,11 @@ flowchart TB
 ---
 
 *Last updated: 2026-05-07*
+
+## Related
+
+- [[08_Model_Evaluation/Model_Evaluation.md|Model_Evaluation]]
+- [[08_Model_Evaluation/README.md|08_Model_Evaluation README]]
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow.md|Evaluation_Workflow]]
+- [[13_Agent_Production/16_Agent_Evaluation/Cloud_Agent_Evaluation/README.md|Cloud_Agent_Evaluation README]]
+- [[13_Agent_Production/16_Agent_Evaluation/Cloud_Agent_Evaluation_System_2026.md|Cloud_Agent_Evaluation_System_2026]]

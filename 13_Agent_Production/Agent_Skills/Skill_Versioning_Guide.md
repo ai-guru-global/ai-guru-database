@@ -1,3 +1,12 @@
+---
+title: Skill 版本管理与团队治理
+category: 13-agent-production-agent-skills
+tags: ["ai-agents", "agent-framework", "production", "langgraph"]
+summary: "> 当团队有 5 个以上的 Agent Skills 时，就需要建立版本管理、评审流程和治理规范。本文档提供一套可直接落地的团队 Skill 库治理方案。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # Skill 版本管理与团队治理
 
 > 当团队有 5 个以上的 Agent Skills 时，就需要建立版本管理、评审流程和治理规范。本文档提供一套可直接落地的团队 Skill 库治理方案。
@@ -296,3 +305,10 @@ git push origin "csv-analyzer-v1.2.0"
 ---
 
 > 📅 **最后更新**：2026-05-07
+
+## Related
+
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)

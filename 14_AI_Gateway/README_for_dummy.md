@@ -1,3 +1,12 @@
+---
+title: '14 AI Gateway — 小白版 🚪'
+category: '14-ai-gateway'
+tags: ["ai-gateway", "api-management", "routing", "litellm"]
+summary: '> **一句话秒懂**: AI Gateway 就是 AI 系统的"智能路由器"——管理 AI 请求的路由、限流、认证、监控，让多个 AI 模型和服务像一个整体一样高效运行。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # 14 AI Gateway — 小白版 🚪
 
 > **一句话秒懂**: AI Gateway 就是 AI 系统的"智能路由器"——管理 AI 请求的路由、限流、认证、监控，让多个 AI 模型和服务像一个整体一样高效运行。
@@ -156,3 +165,11 @@ Gateway 能力:
 ---
 
 *本文是 [README.md](./README.md) 的简化版，适合零基础读者。*
+
+## Related
+
+- [[14_AI_Gateway/AI_Gateway_2026.md|AI_Gateway_2026]]
+- [[14_AI_Gateway/AI_Gateway_for_dummy.md|AI_Gateway_for_dummy]]
+- [[14_AI_Gateway/Cohere_Deep_Dive.md|Cohere_Deep_Dive]]
+- [[14_AI_Gateway/Gateway-in-nutshell.md|Gateway-in-nutshell]]
+- [[14_AI_Gateway/Kong_AI_Gateway_Deep_Dive.md|Kong_AI_Gateway_Deep_Dive]]

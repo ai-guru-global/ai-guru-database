@@ -1,3 +1,12 @@
+---
+title: "llama.cpp: 纯 C/C++ 本地 LLM 推理"
+category: "09-deployment-inference"
+tags: ["deployment", "inference", "serving", "vllm", "llama", "llm"]
+summary: "> **一句话理解**: llama.cpp 是纯 C/C++ 的轻量级 LLM 推理框架——无依赖、CPU 运行、GGUF 量化，在 MacBook 乃至树莓派上跑 LLM。"
+created: "2026-05-31"
+updated: "2026-05-31"
+---
+
 # llama.cpp: 纯 C/C++ 本地 LLM 推理
 
 > **一句话理解**: llama.cpp 是纯 C/C++ 的轻量级 LLM 推理框架——无依赖、CPU 运行、GGUF 量化，在 MacBook 乃至树莓派上跑 LLM。
@@ -379,3 +388,11 @@ make
 
 *Last updated: 2026-04-26*
 *Version: 1.0.0*
+
+## Related
+
+- [[09_Deployment_Inference/Deployment_Inference.md|Deployment_Inference]]
+- [[09_Deployment_Inference/Deployment_Inference_2026.md|Deployment_Inference_2026]]
+- [[09_Deployment_Inference/Deployment_Inference_for_dummy.md|Deployment_Inference_for_dummy]]
+- [[09_Deployment_Inference/Inference-in-nutshell.md|Inference-in-nutshell]]
+- [[09_Deployment_Inference/JVM_AI_Deployment.md|JVM_AI_Deployment]]

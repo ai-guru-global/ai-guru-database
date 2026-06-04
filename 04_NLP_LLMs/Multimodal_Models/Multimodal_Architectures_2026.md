@@ -1,3 +1,12 @@
+---
+title: 多模态模型架构 2026：从 GPT-4V 到原生多模态 AGI
+category: 04-nlp-llms-multimodal-models
+tags: ["nlp", "llm", "transformer", "gpt", "bert"]
+summary: "> 全面解析 2026 年最前沿的多模态大模型架构：视觉-语言融合、原生多模态设计、视频理解与生成的技术突破"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 多模态模型架构 2026：从 GPT-4V 到原生多模态 AGI
 
 > 全面解析 2026 年最前沿的多模态大模型架构：视觉-语言融合、原生多模态设计、视频理解与生成的技术突破
@@ -892,3 +901,12 @@ image = model('audio', 'image', audio_waveform)
 ---
 
 *Last updated: 2026-04-03 | Version: 2026 Edition*
+
+## Related
+
+- [[04_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/README]] — PEFT 2026 (参数高效微调) (共享: bert, gpt, llm, nlp, transformer)
+- [[04_NLP_LLMs/Fine_tuning_Techniques/README]] — 微调技术 (Fine-tuning Techniques) (共享: bert, gpt, llm, nlp, transformer)
+- [[04_NLP_LLMs/LLM_Architectures/LLM-Basics-in-nutshell]] — 大语言模型基础速成指南 (共享: bert, gpt, llm, nlp, transformer)
+- [[04_NLP_LLMs/Prompt_Engineering/Prompt-Engineering-in-nutshell]] — Prompt Engineering 速成指南 (共享: bert, gpt, llm, nlp, transformer)
+- [[04_NLP_LLMs/Multimodal_Models/Multimodal_Models_for_dummy.md|Multimodal_Models_for_dummy]]
+- [[04_NLP_LLMs/Multimodal_Models/LLaVA_Deep_Dive.md|LLaVA_Deep_Dive]]

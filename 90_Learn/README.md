@@ -1,3 +1,12 @@
+---
+title: 'Learn — AI Guru 概念入门路径'
+category: '90-learn'
+tags: ["learning", "education", "courses", "study-path"]
+summary: '> **从"AI是什么"到"如何构建AI系统"，按概念递进，因人施教。**'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # Learn — AI Guru 概念入门路径
 
 > **从"AI是什么"到"如何构建AI系统"，按概念递进，因人施教。**
@@ -105,7 +114,26 @@ Stage 0: AI 觉醒 ────────────────────�
 | [概念知识图谱](../91_Notes/AI_Concept_Knowledge_Graph.md) | 800+ 概念的完整依赖关系图 |
 | [新手导航（章节版）](../README_for_dummy.md) | 按章节组织的入门指南 |
 | [里程碑自测](./milestones.md) | 每个 Stage 的自测问题与检查点 |
+| [AI 基础入门缺口分析](./AI_Basics_Gap_Analysis.md) | 系统性的入门内容覆盖度分析与补全追踪 |
 
 ---
 
 *本路径系统基于 AI Guru 知识库 2026 版构建 | 最后更新: 2026-04-30*
+
+## Related
+- [[90_Learn/README|Learn — AI Guru 概念入门路径]]
+- [[90_Learn/README_for_dummy|90 Learn — 小白版 🚀]]
+
+- [[90_Learn/concepts/stage3-engineering]] — stage3-engineering
+- [[90_Learn/concepts/stage2-core-tech]] — stage2-core-tech
+- [[90_Learn/concepts/stage4-frontier]] — stage4-frontier
+- [[90_Learn/concepts/stage-0-awakening]] — stage-0-awakening
+- [[90_Learn/concepts/stage1-foundation]] — stage1-foundation
+- [[90_Learn/pathways/absolute-beginner]] — 零基础通识路径
+- [[90_Learn/pathways/java-developer]] — Java 开发者 AI 路径
+- [[90_Learn/pathways/product-manager]] — AI 产品经理路径
+- [[90_Learn/pathways/ai-researcher]] — AI 研究者路径
+- [[90_Learn/pathways/llm-engineer]] — LLM 工程师路径
+- [[90_Learn/pathways/ml-practitioner]] — ML 从业者路径
+- [[90_Learn/AI_Basics_Gap_Analysis|AI 基础入门缺口分析]] — 入门内容覆盖度分析与补全追踪
+

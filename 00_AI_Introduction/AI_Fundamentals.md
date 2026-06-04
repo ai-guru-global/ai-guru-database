@@ -1,3 +1,12 @@
+---
+title: AI基础概念入门
+category: 00-ai-introduction
+tags: ["ai", "fundamentals", "introduction", "basics"]
+summary: "人工智能(AI)是让机器模拟人类智能的科学——从识别猫狗照片到理解自然语言，从推荐视频到自动驾驶，AI正在重塑我们与技术的交互方式。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # AI基础概念入门
 
 > **一句话理解**: 人工智能(AI)是让机器模拟人类智能的科学——从识别猫狗照片到理解自然语言，从推荐视频到自动驾驶，AI正在重塑我们与技术的交互方式。
@@ -507,3 +516,10 @@ AI发展的三大支柱:
 ---
 
 *Last updated: 2026-04-01* (通识课教材版)
+
+## Related
+
+- [[00_AI_Introduction/AI_Fundamentals_for_dummy]] — AI 基础入门 - 小白版 (共享: ai, basics, fundamentals, introduction)
+- [[00_AI_Introduction/README]] — 00 - AI 简介与历史 (共享: ai, introduction)
+- [[00_AI_Introduction/README_for_dummy]] — 00 AI 简介与历史 — 小白版 🚀 (共享: ai, introduction)
+- [[01_Fundamentals/AI_Hardware/README]] — AI硬件与芯片 (AI Hardware) (共享: basics, fundamentals)

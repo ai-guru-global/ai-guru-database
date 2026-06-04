@@ -1,3 +1,12 @@
+---
+title: AI Security Engineer 面试题实例答案
+category: 23-interviews-ai-security-engineer
+tags: ["interviews", "career", "experience", "practitioners"]
+summary: "**答**：构建覆盖越狱、注入、隐私泄露等风险的评测集，结合自动化评测与人工审查；定义风险等级与阈值，形成上线门禁与回归测试流程。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # AI Security Engineer 面试题实例答案
 
 ## Q1: 如何设计安全评测体系？
@@ -11,3 +20,10 @@
 
 ---
 *Last updated: 2026-02-26*
+
+## Related
+
+- [[23_Interviews/AI_Data_Analyst/company_level_question_bank]] — AI Data Analyst 按公司/级别区分的题库 (共享: career, experience, interviews, practitioners)
+- [[23_Interviews/AI_Data_Analyst/interview_answers]] — AI Data Analyst 面试题实例答案 (共享: career, experience, interviews, practitioners)
+- [[23_Interviews/AI_Data_Analyst/interview_preparing]] — AI Data Analyst 面试准备 (共享: career, experience, interviews, practitioners)
+- [[23_Interviews/AI_Data_Analyst/question_bank]] — AI Data Analyst 题库 (共享: career, experience, interviews, practitioners)

@@ -1,3 +1,12 @@
+---
+title: '07 模型训练 — 小白版 🏋️'
+category: '07-model-training'
+tags: ["model-training", "distributed-training", "optimization", "fsdp"]
+summary: '> **一句话秒懂**: 模型训练就是 AI 的"学习过程"——把海量数据喂给算法，让算法不断调整自己，直到学会做某件事，就像学生刷题一样，做错了就反思，做对了就继续！'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # 07 模型训练 — 小白版 🏋️
 
 > **一句话秒懂**: 模型训练就是 AI 的"学习过程"——把海量数据喂给算法，让算法不断调整自己，直到学会做某件事，就像学生刷题一样，做错了就反思，做对了就继续！
@@ -181,3 +190,11 @@
 ---
 
 *本文是 [README.md](./README.md) 的简化版，适合零基础读者。*
+
+## Related
+
+- [[07_Model_Training/Distributed_Training_2026.md|Distributed_Training_2026]]
+- [[07_Model_Training/Distributed_Training_for_dummy.md|Distributed_Training_for_dummy]]
+- [[07_Model_Training/Mixed_Precision_Training.md|Mixed_Precision_Training]]
+- [[07_Model_Training/Model-Training-in-nutshell.md|Model-Training-in-nutshell]]
+- [[07_Model_Training/Model_Training_for_dummy.md|Model_Training_for_dummy]]

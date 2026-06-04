@@ -1,3 +1,12 @@
+---
+title: LLaMA 深度解读 (Open and Efficient Foundation Language Models)
+category: 22-papers
+tags: ["nlp", "llama", "llm", "open-source", "meta"]
+summary: "LLaMA 就像 AI 领域的\"开源革命先锋\"——Meta 用纯公开数据训练出媲美 GPT-3 的模型并开放权重，证明了数据质量比数量更重要、小模型也能打大模型，直接引爆了开源大模型的黄金时代。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # LLaMA 深度解读 (Open and Efficient Foundation Language Models)
 
 > **一句话理解**: LLaMA 就像 AI 领域的"开源革命先锋"——Meta 用纯公开数据训练出媲美 GPT-3 的模型并开放权重，证明了数据质量比数量更重要、小模型也能打大模型，直接引爆了开源大模型的黄金时代。
@@ -854,3 +863,10 @@ flowchart TB
 ---
 
 *Last updated: 2026-05-17*
+
+## Related
+
+- [[04_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/README]] — PEFT 2026 (参数高效微调) (共享: llm, nlp)
+- [[04_NLP_LLMs/Fine_tuning_Techniques/README]] — 微调技术 (Fine-tuning Techniques) (共享: llm, nlp)
+- [[04_NLP_LLMs/LLM_Architectures/LLM-Basics-in-nutshell]] — 大语言模型基础速成指南 (共享: llm, nlp)
+- [[04_NLP_LLMs/Multimodal_Models/Multimodal_Architectures_2026]] — 多模态模型架构 2026：从 GPT-4V 到原生多模态 AGI (共享: llm, nlp)

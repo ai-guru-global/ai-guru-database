@@ -1,3 +1,12 @@
+---
+title: '笔记与知识沉淀 (Notes)'
+category: '91-notes'
+tags: ["notes", "drafts", "ideas", "observations"]
+summary: '> **一句话理解**: 本章节是 AI 全栈知识的"底层数据库"——包含概念知识图谱、全栈概念索引和知识库元数据，为整个项目提供统一的知识组织和检索基础。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # 笔记与知识沉淀 (Notes)
 
 > **一句话理解**: 本章节是 AI 全栈知识的"底层数据库"——包含概念知识图谱、全栈概念索引和知识库元数据，为整个项目提供统一的知识组织和检索基础。
@@ -45,3 +54,12 @@ flowchart LR
 ---
 
 *本章节数据量较大（~130KB），建议使用文本编辑器的搜索功能进行查询。*
+
+## Related
+- [[91_Notes/README|笔记与知识沉淀 (Notes)]]
+- [[91_Notes/README_for_dummy|91 Notes — 小白版 📚]]
+
+- [[91_Notes/AI_Concept_Knowledge_Graph.md|AI_Concept_Knowledge_Graph]]
+- [[91_Notes/AI_Full_Stack_Concepts.md|AI_Full_Stack_Concepts]]
+- [[91_Notes/KNOWLEDGE_BASE.md|KNOWLEDGE_BASE]]
+

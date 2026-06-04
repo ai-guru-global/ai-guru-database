@@ -1,3 +1,12 @@
+---
+title: 贡献指南
+category: web
+tags: ["web", "frontend", "backend", "fullstack"]
+summary: "感谢您对CloudMaster项目的兴趣和支持！为了确保项目的质量和一致性，我们制定了以下贡献指南，请在提交贡献前仔细阅读。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 贡献指南
 
 感谢您对CloudMaster项目的兴趣和支持！为了确保项目的质量和一致性，我们制定了以下贡献指南，请在提交贡献前仔细阅读。
@@ -98,3 +107,10 @@
 - 附上相关截图或日志
 
 感谢您的贡献！
+
+## Related
+
+- [[Web/.trae/documents/CloudMaster应用全面修复计划]] — CloudMaster应用全面修复计划 (共享: backend, frontend, fullstack, web)
+- [[Web/CHANGELOG]] — Changelog (共享: backend, frontend, fullstack, web)
+- [[Web/README]] — AI Guru Knowledge Base Frontend (共享: backend, frontend, fullstack, web)
+- [[Web/TROUBLESHOOTING]] — Troubleshooting Guide (共享: backend, frontend, fullstack, web)

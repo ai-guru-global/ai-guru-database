@@ -1,3 +1,12 @@
+---
+title: Multi-Agent System Evaluation Framework 2026
+category: 13-agent-production-16-agent-evaluation
+tags: ["ai-agents", "agent-framework", "production", "langgraph", "model-evaluation"]
+summary: "> **一句话理解**: Multi-Agent System (MAS) 评估框架专门针对多个 AI Agent 协作场景，评估 Agent 间的通信效率、任务协调、集体决策质量和系统整体稳定性。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # Multi-Agent System Evaluation Framework 2026
 
 > **一句话理解**: Multi-Agent System (MAS) 评估框架专门针对多个 AI Agent 协作场景，评估 Agent 间的通信效率、任务协调、集体决策质量和系统整体稳定性。
@@ -1684,3 +1693,12 @@ if __name__ == "__main__":
 
 *Last updated: 2026-04-09*
 *Version: 1.0.0*
+
+## Related
+
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
+- [[13_Agent_Production/16_Agent_Evaluation/Cloud_Agent_Evaluation/README]] — Cloud Agent Evaluation (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
+- [[13_Agent_Production/16_Agent_Evaluation/Cloud_Agent_Evaluation_System_2026]] — Cloud Agent Evaluation System 2026 (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
+- [[13_Agent_Production/16_Agent_Evaluation/Metrics/Evaluation_Metrics]] — Evaluation Metrics (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
+- [[13_Agent_Production/16_Agent_Evaluation/Cloud_Agent_Leaderboard_2026.md|Cloud_Agent_Leaderboard_2026]]
+- [[13_Agent_Production/16_Agent_Evaluation/README_for_dummy.md|README_for_dummy]]

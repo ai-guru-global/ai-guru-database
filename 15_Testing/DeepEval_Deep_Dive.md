@@ -1,3 +1,12 @@
+---
+title: "DeepEval: LLM 测试框架"
+category: "15-testing"
+tags: ["testing", "ai-testing", "prompt-testing", "evaluation", "llm"]
+summary: "> **一句话理解**: DeepEval 是一个开源的 LLM 测试框架——基于 Pytest，方便地编写单元测试来评估你的 LLM 应用，覆盖幻觉、毒性、摘要质量等场景。"
+created: "2026-05-31"
+updated: "2026-05-31"
+---
+
 # DeepEval: LLM 测试框架
 
 > **一句话理解**: DeepEval 是一个开源的 LLM 测试框架——基于 Pytest，方便地编写单元测试来评估你的 LLM 应用，覆盖幻觉、毒性、摘要质量等场景。
@@ -350,3 +359,11 @@ jobs:
 
 *Last updated: 2026-04-25*
 *Version: 1.0.0*
+
+## Related
+
+- [[15_Testing/AI-Testing-in-nutshell.md|AI-Testing-in-nutshell]]
+- [[15_Testing/AI_Testing_for_dummy.md|AI_Testing_for_dummy]]
+- [[15_Testing/Java_AI_Testing.md|Java_AI_Testing]]
+- [[15_Testing/README.md|15_Testing README]]
+- [[04_NLP_LLMs/Fine_tuning_Techniques/Axolotl_Deep_Dive.md|Axolotl_Deep_Dive]]

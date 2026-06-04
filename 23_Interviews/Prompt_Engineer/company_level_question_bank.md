@@ -1,3 +1,12 @@
+---
+title: Prompt Engineer 按公司/级别区分的题库
+category: 23-interviews-prompt-engineer
+tags: ["interviews", "career", "experience", "practitioners"]
+summary: "如何构建大规模 Prompt 资产管理体系？"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # Prompt Engineer 按公司/级别区分的题库
 
 ## 公司类型
@@ -34,3 +43,10 @@
 
 ---
 *Last updated: 2026-02-26*
+
+## Related
+
+- [[23_Interviews/AI_Data_Analyst/company_level_question_bank]] — AI Data Analyst 按公司/级别区分的题库 (共享: career, experience, interviews, practitioners)
+- [[23_Interviews/AI_Data_Analyst/interview_answers]] — AI Data Analyst 面试题实例答案 (共享: career, experience, interviews, practitioners)
+- [[23_Interviews/AI_Data_Analyst/interview_preparing]] — AI Data Analyst 面试准备 (共享: career, experience, interviews, practitioners)
+- [[23_Interviews/AI_Data_Analyst/question_bank]] — AI Data Analyst 题库 (共享: career, experience, interviews, practitioners)

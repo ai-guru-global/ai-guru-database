@@ -1,3 +1,12 @@
+---
+title: AI Infrastructure 2026 完全指南
+category: 12-architecture-infrastructure
+tags: ["architecture", "infrastructure", "kubernetes", "high-availability"]
+summary: "> **一句话理解**: 2026年的AI基础设施是围绕高效推理、智能路由和成本优化构建的——从硬件芯片革新到软件栈演进，从训练集群到推理服务，每一层都在追求极致的效率和可靠性。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # AI Infrastructure 2026 完全指南
 
 > **一句话理解**: 2026年的AI基础设施是围绕高效推理、智能路由和成本优化构建的——从硬件芯片革新到软件栈演进，从训练集群到推理服务，每一层都在追求极致的效率和可靠性。
@@ -935,3 +944,11 @@ Static Fallback
 
 *Last updated: 2026-04-14*
 *Version: 2.0.0 (Consolidated from AI_Infrastructure_2026 + AI_Infrastructure_Trends_2026)*
+
+## Related
+
+- [[12_Architecture_Infrastructure/Architecture-in-nutshell]] — AI 架构速成指南 (共享: architecture, high-availability, infrastructure, kubernetes)
+- [[12_Architecture_Infrastructure/Architecture_Infrastructure_for_dummy]] — AI 架构基础设施 - 小白版 (共享: architecture, high-availability, infrastructure, kubernetes)
+- [[12_Architecture_Infrastructure/Spring_AI_Architecture]] — Spring AI 系统架构设计 (共享: architecture, high-availability, infrastructure, kubernetes)
+- [[12_Architecture_Infrastructure/Multi_Tenant_Architecture.md|Multi_Tenant_Architecture]]
+- [[12_Architecture_Infrastructure/README_for_dummy.md|README_for_dummy]]

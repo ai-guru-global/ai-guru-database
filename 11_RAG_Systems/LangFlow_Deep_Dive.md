@@ -1,3 +1,12 @@
+---
+title: "LangFlow: 可视化 Agent/RAG 开发平台"
+category: "11-rag-systems"
+tags: ["rag", "retrieval", "vector-database", "embedding", "ai-agents"]
+summary: "> **一句话理解**: LangFlow 是 LangChain 的可视化 IDE——拖拽节点构建 Pipeline，所见即所得，让复杂的 Agent 和 RAG 开发变得直观简单。"
+created: "2026-05-31"
+updated: "2026-05-31"
+---
+
 # LangFlow: 可视化 Agent/RAG 开发平台
 
 > **一句话理解**: LangFlow 是 LangChain 的可视化 IDE——拖拽节点构建 Pipeline，所见即所得，让复杂的 Agent 和 RAG 开发变得直观简单。
@@ -403,3 +412,11 @@ langflow.register(MyCustomTool)
 
 *Last updated: 2026-04-25*
 *Version: 1.0.0*
+
+## Related
+
+- [[11_RAG_Systems/RAG-in-nutshell.md|RAG-in-nutshell]]
+- [[11_RAG_Systems/RAG_Systems.md|RAG_Systems]]
+- [[11_RAG_Systems/README_Advanced.md|README_Advanced]]
+- [[11_RAG_Systems/Spring_AI_RAG_Deep_Dive.md|Spring_AI_RAG_Deep_Dive]]
+- [[synthesis/rag-vector-database.md|rag-vector-database]]

@@ -1,3 +1,12 @@
+---
+title: 05 计算机视觉 (Computer Vision)
+category: 05-computer-vision
+tags: ["computer-vision", "cnn", "image-processing"]
+summary: "本章涵盖图像理解与生成的核心技术，从经典 CNN 架构到目标检测（YOLO）、图像分割（Semantic/Instance）、多模态视觉（CLIP）以及生成模型（GAN/Diffusion）。这是视觉 AI 应用的技术全景。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 05 计算机视觉 (Computer Vision)
 
 本章涵盖图像理解与生成的核心技术，从经典 CNN 架构到目标检测（YOLO）、图像分割（Semantic/Instance）、多模态视觉（CLIP）以及生成模型（GAN/Diffusion）。这是视觉 AI 应用的技术全景。
@@ -81,3 +90,33 @@
 
 ---
 *Last updated: 2026-02-10*
+
+## Related
+- [[05_Computer_Vision/ViT_Deep_Dive|Vision Transformer (ViT) 深度解读]]
+- [[05_Computer_Vision/README_for_dummy|05 计算机视觉 - 小白版 🖼️]]
+- [[05_Computer_Vision/CV-in-nutshell|计算机视觉速成指南 (Computer Vision in a Nutshell)]]
+
+- [[05_Computer_Vision/Segmentation/Segmentation_for_dummy]] — 图像分割 - 小白版 ✂️ (共享: cnn, computer-vision, cv, image-processing)
+- [[05_Computer_Vision/Video_Generation/README]] — AI视频生成 (Video Generation) (共享: cnn, computer-vision, cv, image-processing)
+- [[22_Papers/ResNet_Deep_Dive]] — ResNet 深度解读 (Deep Residual Learning for Image Recognition) (共享: cnn, cv)
+- [[05_Computer_Vision/3D_Vision/3D_Vision]] — 3D_Vision
+- [[05_Computer_Vision/3D_Vision/3D_Vision_for_dummy]] — 3D_Vision_for_dummy
+- [[05_Computer_Vision/Segmentation/Segmentation]] — Segmentation
+- [[05_Computer_Vision/OCR_Text_Recognition/OCR_for_dummy]] — OCR_for_dummy
+- [[05_Computer_Vision/OCR_Text_Recognition/OCR_Text_Recognition]] — OCR_Text_Recognition
+- [[05_Computer_Vision/Video_Generation/Video_Generation_for_dummy]] — Video_Generation_for_dummy
+- [[05_Computer_Vision/Video_Generation/Video_Generation_2026]] — Video_Generation_2026
+- [[05_Computer_Vision/Multimodal_Vision/CLIP_Deep_Dive]] — CLIP_Deep_Dive
+- [[05_Computer_Vision/Multimodal_Vision/Multimodal_Vision_for_dummy]] — Multimodal_Vision_for_dummy
+- [[05_Computer_Vision/Multimodal_Vision/Multimodal_Vision]] — Multimodal_Vision
+- [[05_Computer_Vision/Image_Classification_Detection/Image_Classification_Detection_for_dummy]] — Image_Classification_Detection_for_dummy
+- [[05_Computer_Vision/Image_Classification_Detection/Image_Classification_Detection]] — Image_Classification_Detection
+- [[05_Computer_Vision/Generative_Models/Generative_Models]] — Generative_Models
+- [[05_Computer_Vision/Generative_Models/Generative_Models_for_dummy]] — Generative_Models_for_dummy
+- [[05_Computer_Vision/CV-in-nutshell.md|CV-in-nutshell]]
+- [[concepts/multimodal-vision.md|multimodal-vision]]
+- [[synthesis/cv-deep-learning|Cv Deep Learning]]
+
+## 相关页面
+
+- [[concepts/image-segmentation|Image Segmentation]]

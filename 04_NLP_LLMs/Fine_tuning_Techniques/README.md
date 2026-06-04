@@ -1,3 +1,12 @@
+---
+title: 微调技术 (Fine-tuning Techniques)
+category: 04-nlp-llms-fine-tuning-techniques
+tags: ["nlp", "llm", "transformer", "gpt", "bert"]
+summary: "| 文档 | 内容 | 适用读者 |"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 微调技术 (Fine-tuning Techniques)
 
 ## 文档导航
@@ -9,6 +18,8 @@
 | [PEFT_2026/](./PEFT_2026/) | PEFT 2026最佳实践 | 实战学习 |
 | [Unsloth Deep Dive](./Unsloth_Deep_Dive.md) | 高速微调框架：2x 加速、24GB 单卡 | 快速实验 |
 | [Axolotl Deep Dive](./Axolotl_Deep_Dive.md) | 开源微调工具：全参数/LoRA/QLoRA 支持 | 生产微调 |
+| [**ms-swift Deep Dive**](../../07_Model_Training/ms_swift_Deep_Dive.md) | 魔搭全链路框架：SFT/GRPO/RLHF/Megatron/部署/评测 | 全链路实战 |
+| [**ms-swift 命令行参数**](../../07_Model_Training/ms_swift_Command_Line_Parameters.md) | 200+参数全量速查手册 | 参数手册 |
 
 ## 内容概览
 
@@ -43,3 +54,15 @@ PEFT (参数高效微调):
 ---
 
 *Last updated: 2026-04-01*
+
+## Related
+
+- [[04_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/README]] — PEFT 2026 (参数高效微调) (共享: bert, gpt, llm, nlp, transformer)
+- [[04_NLP_LLMs/LLM_Architectures/LLM-Basics-in-nutshell]] — 大语言模型基础速成指南 (共享: bert, gpt, llm, nlp, transformer)
+- [[04_NLP_LLMs/Multimodal_Models/Multimodal_Architectures_2026]] — 多模态模型架构 2026：从 GPT-4V 到原生多模态 AGI (共享: bert, gpt, llm, nlp, transformer)
+- [[04_NLP_LLMs/Prompt_Engineering/Prompt-Engineering-in-nutshell]] — Prompt Engineering 速成指南 (共享: bert, gpt, llm, nlp, transformer)
+- [[04_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/PEFT_2026]] — PEFT_2026
+- [[07_Model_Training/ms_swift_Deep_Dive|ms-swift 深度解析：魔搭大模型训练推理全链路框架]]
+- [[07_Model_Training/ms_swift_Command_Line_Parameters|ms-swift 命令行参数完全参考手册]]
+- [[04_NLP_LLMs/README_for_dummy.md|README_for_dummy]]
+- [[04_NLP_LLMs/Sequence_Models/Sequence_Models.md|Sequence_Models]]

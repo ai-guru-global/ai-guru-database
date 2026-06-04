@@ -1,3 +1,12 @@
+---
+title: Agent 未来发展路线图 2026-2030
+category: 06-reinforcement-learning-ai-agents
+tags: ["reinforcement-learning", "agent", "mdp", "ai-agents"]
+summary: "> 从当前状态到 AGI Agent：技术演进、产业变革、社会影响的全景预测"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # Agent 未来发展路线图 2026-2030
 
 > 从当前状态到 AGI Agent：技术演进、产业变革、社会影响的全景预测
@@ -555,3 +564,10 @@ class SelfImprovingAgent:
 ---
 
 *Last updated: 2026-04-03 | Disclaimer: Predictions are speculative*
+
+## Related
+
+- [[06_Reinforcement_Learning/AI_Agents/AI_Agents_for_dummy]] — AI智能体 - 小白版 🤖 (共享: agent, ai-agents, mdp, reinforcement-learning, rl)
+- [[06_Reinforcement_Learning/AI_Agents/Agent-in-nutshell]] — AI 智能体速成指南 (共享: agent, ai-agents, mdp, reinforcement-learning, rl)
+- [[06_Reinforcement_Learning/AI_Agents/Agent_Protocols_Detail]] — AI Agent 协议详解：MCP、A2A、UCP (共享: agent, ai-agents, mdp, reinforcement-learning, rl)
+- [[06_Reinforcement_Learning/README]] — 06 强化学习与智能体 (Reinforcement Learning & Agents) (共享: agent, mdp, reinforcement-learning, rl)

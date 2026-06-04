@@ -1,3 +1,12 @@
+---
+title: 具身智能 (Embodied AI) 2026 完整指南
+category: 06-reinforcement-learning-robotics-embodied-ai
+tags: ["reinforcement-learning", "agent", "mdp"]
+summary: "> 从理论到实践：具身智能的技术栈、人形机器人、VLA 应用、仿真到真实的全链路解析"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 具身智能 (Embodied AI) 2026 完整指南
 
 > 从理论到实践：具身智能的技术栈、人形机器人、VLA 应用、仿真到真实的全链路解析
@@ -469,3 +478,10 @@ class DomainRandomization:
 ---
 
 *Last updated: 2026-04-03 | Version: 2026 Edition*
+
+## Related
+
+- [[06_Reinforcement_Learning/AI_Agents/AI_Agents_for_dummy]] — AI智能体 - 小白版 🤖 (共享: agent, mdp, reinforcement-learning, rl)
+- [[06_Reinforcement_Learning/AI_Agents/Agent-in-nutshell]] — AI 智能体速成指南 (共享: agent, mdp, reinforcement-learning, rl)
+- [[06_Reinforcement_Learning/AI_Agents/Agent_Future_Roadmap_2026_2030]] — Agent 未来发展路线图 2026-2030 (共享: agent, mdp, reinforcement-learning, rl)
+- [[06_Reinforcement_Learning/AI_Agents/Agent_Protocols_Detail]] — AI Agent 协议详解：MCP、A2A、UCP (共享: agent, mdp, reinforcement-learning, rl)

@@ -1,3 +1,12 @@
+---
+title: Scoring System
+category: 13-agent-production-16-agent-evaluation-benchmarking
+tags: ["ai-agents", "agent-framework", "production", "langgraph"]
+summary: "> Comprehensive methodology for calculating and comparing agent scores"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # Scoring System
 
 > Comprehensive methodology for calculating and comparing agent scores
@@ -735,3 +744,10 @@ weight_profiles_cloud:
 - [Ranking System](../Rubrics/Ranking_System.md) - Agent ranking methodology
 - [Cloud Agent Benchmark](../Cloud_Agent_Evaluation/Cloud_Agent_Benchmark_2026.md) - CAPER 云产品评估框架
 - [Cloud Agent Leaderboard](../Cloud_Agent_Leaderboard_2026.md) - 云产品 Agent 排行榜
+
+## Related
+
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)

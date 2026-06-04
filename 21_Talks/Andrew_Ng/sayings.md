@@ -1,3 +1,12 @@
+---
+title: Andrew Ng 关于 AI 的观点与格言
+category: 21-talks-andrew-ng
+tags: ["talks", "speeches", "insights", "leaders"]
+summary: "> 说明：以下整理 Andrew Ng 在公开场合关于 AI 的代表性言论，提供中英文对照与出处链接。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # Andrew Ng 关于 AI 的观点与格言
 
 > 说明：以下整理 Andrew Ng 在公开场合关于 AI 的代表性言论，提供中英文对照与出处链接。
@@ -34,3 +43,11 @@
 
 ---
 *Last updated: 2026-02-08*
+
+## Related
+
+- [[21_Talks/Andrej_Karpathy/about]] — Andrej Karpathy 简介 (Andrej Karpathy) (共享: insights, leaders, speeches, talks)
+- [[21_Talks/Andrew_Ng/about]] — Andrew Ng 简介 (Andrew Ng) (共享: insights, leaders, speeches, talks)
+- [[21_Talks/Bill_Gates/about]] — Bill Gates 简介 (Bill Gates) (共享: insights, leaders, speeches, talks)
+- [[21_Talks/Bill_Gates/sayings]] — Bill Gates 关于 AI 的观点 (Bill Gates on AI) (共享: insights, leaders, speeches, talks)
+- [[21_Talks/Talks_Synthesis_2026.md|Talks_Synthesis_2026]]

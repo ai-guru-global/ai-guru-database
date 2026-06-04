@@ -1,3 +1,12 @@
+---
+title: 云产品运维 Agent 架构设计指南 (Architecture)
+category: 18-cloud-ops-agent-docs-architecture
+tags: ["cloud-ops", "devops", "sre", "automation", "ai-agents"]
+summary: "> 🎯 **目标**: 为架构师提供 Cloud Ops Agent 的完整架构设计视图，包括核心模块设计、数据流、扩展性设计、高可用架构、安全架构，确保系统满足企业级生产环境要求。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 云产品运维 Agent 架构设计指南 (Architecture)
 
 > 🎯 **目标**: 为架构师提供 Cloud Ops Agent 的完整架构设计视图，包括核心模块设计、数据流、扩展性设计、高可用架构、安全架构，确保系统满足企业级生产环境要求。
@@ -889,3 +898,11 @@ alerts:
 *最后更新: 2026-04-15*
 *版本: 2.0.0*
 *维护者: 架构团队*
+
+## Related
+
+- [[18_Cloud_Ops_Agent/CloudOps-in-nutshell]] — 云产品运维 Agent 速成指南 (共享: ai-agents, automation, cloud-ops, devops, sre)
+- [[18_Cloud_Ops_Agent/Cloud_Product_Ops_for_dummy]] — 云产品运维 Agent 入门指南 (for Dummies) (共享: ai-agents, automation, cloud-ops, devops, sre)
+- [[18_Cloud_Ops_Agent/docs/corpus/index]] — 云产品运维 Agent 语料工程指南 (Corpus Engineering) (共享: ai-agents, automation, cloud-ops, devops, sre)
+- [[18_Cloud_Ops_Agent/docs/development/index]] — 云产品运维 Agent 研发指南 (Development) (共享: ai-agents, automation, cloud-ops, devops, sre)
+- [[18_Cloud_Ops_Agent/Cloud_Product_Ops_2026.md|Cloud_Product_Ops_2026]]

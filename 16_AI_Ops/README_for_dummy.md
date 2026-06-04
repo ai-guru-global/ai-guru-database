@@ -1,3 +1,12 @@
+---
+title: 16 AI Ops — 小白版 📡
+category: 16-ai-ops
+tags: ["ai-ops", "observability", "monitoring", "incident-response"]
+summary: "> **一句话秒懂**: AI Ops 就是用 AI 来运维 AI 系统——智能监控、自动告警、根因分析、自动修复，让 AI 系统自己照顾自己，运维人员不用 24 小时盯着。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 16 AI Ops — 小白版 📡
 
 > **一句话秒懂**: AI Ops 就是用 AI 来运维 AI 系统——智能监控、自动告警、根因分析、自动修复，让 AI 系统自己照顾自己，运维人员不用 24 小时盯着。
@@ -154,3 +163,14 @@ AI 分析:
 ---
 
 *本文是 [README.md](./README.md) 的简化版，适合零基础读者。*
+
+## Related
+
+- [[16_AI_Ops/AIOps-in-nutshell]] — AI Ops 速成指南 (共享: ai-ops, incident-response, monitoring, observability)
+- [[16_AI_Ops/AI_Incident_Response_Playbook]] — AI 系统事故响应手册 (共享: ai-ops, incident-response, monitoring, observability)
+- [[16_AI_Ops/AI_Ops_for_dummy]] — AI Ops 入门指南 (for Dummies) (共享: ai-ops, incident-response, monitoring, observability)
+- [[16_AI_Ops/README]] — AI 运维与可观测性 (AI Ops) (共享: ai-ops, incident-response, monitoring, observability)
+- [[16_AI_Ops/Chaos_Engineering_AI.md|Chaos_Engineering_AI]]
+- [[16_AI_Ops/AI_Ops_2026.md|AI_Ops_2026]]
+- [[16_AI_Ops/Kubeflow_Deep_Dive.md|Kubeflow_Deep_Dive]]
+- [[16_AI_Ops/Guardrails_Deep_Dive.md|Guardrails_Deep_Dive]]

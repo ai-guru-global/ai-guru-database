@@ -1,3 +1,12 @@
+---
+title: 04 自然语言处理与大模型 - 小白版
+category: 04-nlp-llms
+tags: ["nlp", "llm", "transformer", "gpt", "bert"]
+summary: "> **欢迎来到 AI 最火爆的领域!** 这一章将带你了解让 ChatGPT、Sora 等神奇 AI 成为可能的核心技术。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 04 自然语言处理与大模型 - 小白版
 
 > **欢迎来到 AI 最火爆的领域!** 这一章将带你了解让 ChatGPT、Sora 等神奇 AI 成为可能的核心技术。
@@ -276,3 +285,10 @@
 **记住**: 学 AI 就像学游泳,看再多教程也不如下水试试。去用 ChatGPT,去试各种 Prompt,你会发现比想象中简单!
 
 **祝学习愉快! 🚀**
+
+## Related
+
+- [[04_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/README]] — PEFT 2026 (参数高效微调) (共享: bert, gpt, llm, nlp, transformer)
+- [[04_NLP_LLMs/Fine_tuning_Techniques/README]] — 微调技术 (Fine-tuning Techniques) (共享: bert, gpt, llm, nlp, transformer)
+- [[04_NLP_LLMs/LLM_Architectures/LLM-Basics-in-nutshell]] — 大语言模型基础速成指南 (共享: bert, gpt, llm, nlp, transformer)
+- [[04_NLP_LLMs/Multimodal_Models/Multimodal_Architectures_2026]] — 多模态模型架构 2026：从 GPT-4V 到原生多模态 AGI (共享: bert, gpt, llm, nlp, transformer)

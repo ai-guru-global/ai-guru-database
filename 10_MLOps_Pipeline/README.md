@@ -1,3 +1,12 @@
+---
+title: 'MLOps 流水线 (MLOps Pipeline)'
+category: '10-mlops-pipeline'
+tags: ["mlops", "ci-cd", "pipeline", "feature-store"]
+summary: '> **一句话理解**: MLOps 是 DevOps 的"AI 版"——如果说开发一个模型像造一辆车，MLOps 就是建造并运营整条汽车生产线，确保模型能持续、稳定、高效地在生产环境中运行。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # MLOps 流水线 (MLOps Pipeline)
 
 > **一句话理解**: MLOps 是 DevOps 的"AI 版"——如果说开发一个模型像造一辆车，MLOps 就是建造并运营整条汽车生产线，确保模型能持续、稳定、高效地在生产环境中运行。
@@ -16,6 +25,7 @@
 | [ML CI/CD 流水线](./ML_CI_CD.md) | 数据验证、模型测试、金丝雀部署、GitHub Actions for ML | 进阶 |
 | [数据流水线编排](./Data_Pipeline_Orchestration.md) | Airflow/Dagster/Prefect 对比，DAG 设计最佳实践 | 进阶 |
 | [MLOps 成熟度模型](./MLOps_Maturity_Model.md) | Level 0-3 成熟度评估、团队建设、工具选型、ROI 衡量 | 管理者 |
+| [Model Registry & Model Cards](./Model_Registry_and_Cards_Deep_Dive.md) | MLflow Registry、版本管理、阶段转换、Model Card 文档化 | 进阶 |
 
 ---
 
@@ -79,3 +89,19 @@ flowchart TB
 ---
 
 *本章内容持续完善中。*
+
+## Related
+- [[10_MLOps_Pipeline/Model_Registry_and_Cards_Deep_Dive|模型注册与模型卡片深度解析 (Model Registry & Model Cards Deep Dive)]]
+- [[10_MLOps_Pipeline/MLOps_Pipeline|MLOps 流水线 (MLOps Pipeline)]]
+- [[10_MLOps_Pipeline/README|MLOps 流水线 (MLOps Pipeline)]]
+- [[10_MLOps_Pipeline/ML_CI_CD|ML CI/CD 流水线 (ML CI/CD Pipeline)]]
+- [[10_MLOps_Pipeline/MLOps_Pipeline_for_dummy|MLOps 流水线 - 小白版]]
+- [[10_MLOps_Pipeline/README_for_dummy|10 MLOps 流水线 — 小白版 🔄]]
+- [[10_MLOps_Pipeline/Experiment_Tracking_Deep_Dive|实验追踪深度解析 (Experiment Tracking Deep Dive)]]
+- [[10_MLOps_Pipeline/MLOps_Maturity_Model|MLOps 成熟度模型与最佳实践 (MLOps Maturity Model)]]
+- [[10_MLOps_Pipeline/Feature_Store_Deep_Dive|Feature Store 深度解析 (Feature Store Deep Dive)]]
+
+- [[concepts/mlops]] — MLOps
+- [[concepts/model-deployment]] — 模型部署
+
+

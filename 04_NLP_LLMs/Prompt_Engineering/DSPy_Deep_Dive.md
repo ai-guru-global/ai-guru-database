@@ -1,3 +1,12 @@
+---
+title: "DSPy: 可编程的 Prompt 优化框架"
+category: "04-nlp-llms-prompt-engineering"
+tags: ["nlp", "llm", "transformer", "gpt", "bert"]
+summary: "> **一句话理解**: DSPy 是斯坦福的可编程 Prompt 优化框架——用 Python 代码而非字符串定义 Prompt、自动优化模块组合、学会提示而非手工撰写。"
+created: "2026-05-31"
+updated: "2026-05-31"
+---
+
 # DSPy: 可编程的 Prompt 优化框架
 
 > **一句话理解**: DSPy 是斯坦福的可编程 Prompt 优化框架——用 Python 代码而非字符串定义 Prompt、自动优化模块组合、学会提示而非手工撰写。
@@ -389,3 +398,11 @@ class CompressedRAG(dspy.Module):
 
 *Last updated: 2026-04-26*
 *Version: 1.0.0*
+
+## Related
+
+- [[04_NLP_LLMs/Prompt_Engineering/Outlines_Deep_Dive.md|Outlines_Deep_Dive]]
+- [[04_NLP_LLMs/Prompt_Engineering/Prompt-Engineering-in-nutshell.md|Prompt-Engineering-in-nutshell]]
+- [[04_NLP_LLMs/Prompt_Engineering/Prompt_Engineering.md|Prompt_Engineering]]
+- [[04_NLP_LLMs/Prompt_Engineering/Prompt_Engineering_for_dummy.md|Prompt_Engineering_for_dummy]]
+- [[04_NLP_LLMs/Fine_tuning_Techniques/Axolotl_Deep_Dive.md|Axolotl_Deep_Dive]]

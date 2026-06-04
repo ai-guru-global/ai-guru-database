@@ -1,3 +1,12 @@
+---
+title: '推荐系统 (Recommendation Systems)'
+category: '02-machine-learning-recommendation-systems'
+tags: ["machine-learning", "supervised", "unsupervised"]
+summary: '> 推荐系统是信息过滤系统的子类，旨在预测用户对物品的"评分"或"偏好"，是电商、内容平台、社交媒体的核心技术。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # 推荐系统 (Recommendation Systems)
 
 > 推荐系统是信息过滤系统的子类，旨在预测用户对物品的"评分"或"偏好"，是电商、内容平台、社交媒体的核心技术。

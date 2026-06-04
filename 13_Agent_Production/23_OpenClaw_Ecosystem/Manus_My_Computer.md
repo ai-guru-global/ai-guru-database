@@ -1,3 +1,12 @@
+---
+title: 'Manus \"My Computer\": Meta''s Desktop AI Agent Revolution'
+category: '13-agent-production-23-openclaw-ecosystem'
+tags: ["ai-agents", "agent-framework", "production", "langgraph"]
+summary: '**Manus** is a general-purpose AI agent that was acquired by Meta in December 2025, marking one of the most significant AI acquisitions of the decade. The "My Computer" feature, la'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # Manus "My Computer": Meta's Desktop AI Agent Revolution
 
 ## Overview
@@ -552,3 +561,11 @@ Email (Gmail) → File (Local) → Calendar (Google)
 ---
 
 *Last Updated: March 2026*
+
+## Related
+
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026.md|Agent_Harness_Complete_2026]]
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026.md|Agent_Red_Teaming_2026]]
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow.md|Evaluation_Workflow]]
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment.md|Production_Assessment]]
+- [[13_Agent_Production/16_Agent_Evaluation/Benchmarking/Benchmarking_Criteria.md|Benchmarking_Criteria]]

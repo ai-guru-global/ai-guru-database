@@ -1,3 +1,12 @@
+---
+title: Agent Skills 多角色全景分析
+category: 13-agent-production-agent-skills
+tags: ["ai-agents", "agent-framework", "production", "langgraph"]
+summary: "> 🎯 **目标**：从 AI Agent 研发工程师、系统架构师、集成测试工程师、评估师、产品经理五个专业角色视角，全面解析 Agent Skills 的内涵外延，覆盖完整生命周期。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # Agent Skills 多角色全景分析
 
 > 🎯 **目标**：从 AI Agent 研发工程师、系统架构师、集成测试工程师、评估师、产品经理五个专业角色视角，全面解析 Agent Skills 的内涵外延，覆盖完整生命周期。
@@ -722,3 +731,10 @@ flowchart TB
 ---
 
 > 📅 **最后更新**：2026-04-14 | **分析视角**：AI Agent 研发工程师、系统架构师、集成测试工程师、评估师、产品经理
+
+## Related
+
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)

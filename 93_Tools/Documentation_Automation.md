@@ -1,3 +1,12 @@
+---
+title: 'AI 文档自动化'
+category: '93-tools'
+tags: ["tools", "software", "utilities", "productivity"]
+summary: '> **一句话秒懂**: AI 文档自动化就是用工具链让文档"自己写自己、自己更新自己"，告别手动维护文档的噩梦。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # AI 文档自动化
 
 > **一句话秒懂**: AI 文档自动化就是用工具链让文档"自己写自己、自己更新自己"，告别手动维护文档的噩梦。
@@ -110,7 +119,7 @@ class ChatRequest(BaseModel):
     )
     messages: list[dict] = Field(
         description="对话消息列表",
-        examples=[[{"role": "user", "content": "你好"}]]
+        examples=``[ [{"role": "user", "content": "你好"}] ]``
     )
     temperature: float = Field(
         default=0.7,
@@ -1046,3 +1055,10 @@ if __name__ == "__main__":
 - [API 设计 for AI](./API_Design_for_AI.md) - API 文档的基础
 - [Prompt 管理平台](./Prompt_Management_Platform.md) - Prompt 文档管理
 - [AI Gateway 对比](../14_AI_Gateway/AI_Gateway_Comparison_2026.md) - 网关文档自动化
+
+## Related
+
+- [[93_Tools/DOCUMENT_TEMPLATES.md|DOCUMENT_TEMPLATES]]
+- [[93_Tools/IMPORT_GUIDE.md|IMPORT_GUIDE]]
+- [[93_Tools/README.md|93_Tools README]]
+- [[00_AI_Introduction/AI_Tools_Practical_Guide.md|AI_Tools_Practical_Guide]]

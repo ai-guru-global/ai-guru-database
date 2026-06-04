@@ -1,3 +1,12 @@
+---
+title: Spring AI 系统架构设计
+category: 12-architecture-infrastructure
+tags: ["architecture", "infrastructure", "kubernetes", "high-availability"]
+summary: "> 📚 **Spring AI 基础**: 如果你还不熟悉 Spring AI 的核心概念，请先阅读 [Spring AI 深度解析](../01_Fundamentals/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md)。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # Spring AI 系统架构设计
 
 > 📚 **Spring AI 基础**: 如果你还不熟悉 Spring AI 的核心概念，请先阅读 [Spring AI 深度解析](../01_Fundamentals/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md)。
@@ -1277,3 +1286,11 @@ PostgreSQL 是 AI 应用的最佳默认选择:
 ---
 
 *Last updated: 2026-04*
+
+## Related
+
+- [[12_Architecture_Infrastructure/AI_Infrastructure_2026]] — AI Infrastructure 2026 完全指南 (共享: architecture, high-availability, infrastructure, kubernetes)
+- [[12_Architecture_Infrastructure/Architecture-in-nutshell]] — AI 架构速成指南 (共享: architecture, high-availability, infrastructure, kubernetes)
+- [[12_Architecture_Infrastructure/Architecture_Infrastructure_for_dummy]] — AI 架构基础设施 - 小白版 (共享: architecture, high-availability, infrastructure, kubernetes)
+- [[12_Architecture_Infrastructure/Edge_AI_2026.md|Edge_AI_2026]]
+- [[12_Architecture_Infrastructure/Capacity_Planning_2026.md|Capacity_Planning_2026]]

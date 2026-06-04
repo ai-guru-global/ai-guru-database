@@ -1,3 +1,12 @@
+---
+title: 通用对话/知识 Agent 测评详情
+category: 13-agent-production-16-agent-evaluation-cloud-agent-evaluation
+tags: ["ai-agents", "agent-framework", "production", "langgraph"]
+summary: "> ChatGPT、Claude、Gemini、Kimi、通义千问、DeepSeek 六大通用对话 Agent 的深度测评"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 通用对话/知识 Agent 测评详情
 
 > ChatGPT、Claude、Gemini、Kimi、通义千问、DeepSeek 六大通用对话 Agent 的深度测评
@@ -286,3 +295,10 @@
 | 版本 | 日期 | 变更 |
 |------|------|------|
 | 1.0.0 | 2026-04 | 初始版本，覆盖 6 款通用对话 Agent |
+
+## Related
+
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)

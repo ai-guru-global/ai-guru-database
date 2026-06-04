@@ -1,3 +1,12 @@
+---
+title: AI 行业应用对比 2026 (Industry Comparison)
+category: 20-ai-applications-industry
+tags: ["ai-applications", "industry", "finance", "healthcare"]
+summary: "> **一句话理解**: 本章节横向对比 10 大行业的 AI 应用现状——从成熟度、数据特点、技术方案到合规要求，帮助你快速判断哪个行业的 AI 机会最适合你。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # AI 行业应用对比 2026 (Industry Comparison)
 
 > **一句话理解**: 本章节横向对比 10 大行业的 AI 应用现状——从成熟度、数据特点、技术方案到合规要求，帮助你快速判断哪个行业的 AI 机会最适合你。
@@ -194,3 +203,9 @@ quadrantChart
 ---
 
 *Last updated: 2026-05-07*
+
+## Related
+
+- [[20_AI_Applications_Industry/Energy_Climate/AI_Energy_Climate_2026]] — AI 能源与气候行业应用 (2025-2026) (共享: ai-applications, finance, healthcare, industry)
+- [[20_AI_Applications_Industry/README]] — 13 - AI应用与行业融合 (共享: ai-applications, finance, healthcare, industry)
+- [[20_AI_Applications_Industry/README_for_dummy]] — AI 行业应用 — 小白版 🏭 (共享: ai-applications, finance, healthcare, industry)

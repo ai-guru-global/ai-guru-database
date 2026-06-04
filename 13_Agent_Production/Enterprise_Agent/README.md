@@ -1,3 +1,12 @@
+---
+title: 企业级 Agent
+category: 13-agent-production-enterprise-agent
+tags: ["ai-agents", "agent-framework", "production", "langgraph"]
+summary: "> 生产部署 ≠ 原型上线 —— 企业级 Agent 需要分层架构、完善监控、CI/CD 流水线，以及严格的安全控制和成本管理。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 企业级 Agent
 
 > 生产部署 ≠ 原型上线 —— 企业级 Agent 需要分层架构、完善监控、CI/CD 流水线，以及严格的安全控制和成本管理。
@@ -42,3 +51,14 @@
 ---
 
 *Last updated: 2026-04-14*
+
+## Related
+- [[13_Agent_Production/Enterprise_Agent/Hermes_Agent_Deep_Dive|Hermes Agent: 面向企业级的 AI Agent 运行时框架]]
+- [[13_Agent_Production/Enterprise_Agent/README|企业级 Agent]]
+- [[13_Agent_Production/Enterprise_Agent/Agent_Production_2026|AI Agent 生产部署最佳实践 2026]]
+
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)
+

@@ -1,3 +1,12 @@
+---
+title: '推理模型小白指南 (Reasoning Models for Dummy)'
+category: '04-nlp-llms-reasoning-models'
+tags: ["nlp", "llm", "transformer", "gpt", "bert"]
+summary: '> **一句话理解**: 推理模型就像"会思考的 AI"——不像普通 AI 那样立刻回答，而是先在脑子里"演算草稿纸"，一步步想清楚再给你答案。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # 推理模型小白指南 (Reasoning Models for Dummy)
 
 > **一句话理解**: 推理模型就像"会思考的 AI"——不像普通 AI 那样立刻回答，而是先在脑子里"演算草稿纸"，一步步想清楚再给你答案。

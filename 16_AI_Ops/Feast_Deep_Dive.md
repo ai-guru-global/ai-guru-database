@@ -1,3 +1,12 @@
+---
+title: "Feast: 特征存储平台"
+category: "16-ai-ops"
+tags: ["ai-ops", "observability", "monitoring", "incident-response"]
+summary: "> **一句话理解**: Feast 是开源特征存储——管理 ML 特征、在线/离线一致、特征复用、团队共享，ML 平台的特征工程基础设施。"
+created: "2026-05-31"
+updated: "2026-05-31"
+---
+
 # Feast: 特征存储平台
 
 > **一句话理解**: Feast 是开源特征存储——管理 ML 特征、在线/离线一致、特征复用、团队共享，ML 平台的特征工程基础设施。
@@ -353,3 +362,11 @@ features = store.get_online_features(...)
 
 *Last updated: 2026-04-26*
 *Version: 1.0.0*
+
+## Related
+
+- [[16_AI_Ops/AIOps-in-nutshell.md|AIOps-in-nutshell]]
+- [[16_AI_Ops/AI_Incident_Response_Playbook.md|AI_Incident_Response_Playbook]]
+- [[16_AI_Ops/AI_Ops_for_dummy.md|AI_Ops_for_dummy]]
+- [[16_AI_Ops/README.md|16_AI_Ops README]]
+- [[16_AI_Ops/README_for_dummy.md|README_for_dummy]]

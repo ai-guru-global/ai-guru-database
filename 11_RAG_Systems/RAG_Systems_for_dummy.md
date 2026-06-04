@@ -1,3 +1,12 @@
+---
+title: 'RAG 系统 - 小白版'
+category: '11-rag-systems'
+tags: ["rag", "retrieval", "vector-database", "embedding"]
+summary: '> **一句话秒懂**: 就像开卷考试,AI 可以先翻书查资料再回答问题,而不是只靠记忆硬答——既准确又不会"胡说八道"!'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # RAG 系统 - 小白版
 
 > **一句话秒懂**: 就像开卷考试,AI 可以先翻书查资料再回答问题,而不是只靠记忆硬答——既准确又不会"胡说八道"!
@@ -584,3 +593,11 @@ prompt = """
 ---
 
 *本文是 [RAG_Systems.md](./RAG_Systems.md) 的简化版,适合零基础读者。完整技术细节(包括算法原理和高级技巧)请参考原文档。*
+
+## Related
+
+- [[11_RAG_Systems/RAG-in-nutshell.md|RAG-in-nutshell]]
+- [[11_RAG_Systems/RAG_Systems.md|RAG_Systems]]
+- [[11_RAG_Systems/README_Advanced.md|README_Advanced]]
+- [[11_RAG_Systems/Spring_AI_RAG_Deep_Dive.md|Spring_AI_RAG_Deep_Dive]]
+- [[synthesis/rag-vector-database.md|rag-vector-database]]

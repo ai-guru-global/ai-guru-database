@@ -1,3 +1,10 @@
+---
+title: AI Guru Knowledge Base (English)
+category: meta
+tags: [readme, en, overview]
+summary: English README for the AI Guru comprehensive AI learning resource repository.
+---
+
 <div align="center">
 
 <h1>🧠 AI Guru Knowledge Base</h1>

@@ -1,3 +1,12 @@
+---
+title: "Typesense: 快速矢量搜索"
+category: "11-rag-systems"
+tags: ["rag", "retrieval", "vector-database", "embedding"]
+summary: "> **一句话理解**: Typesense 是闪电般的矢量搜索——专为搜索设计、极低延迟、模糊匹配、开源替代 Elasticsearch 的候选。"
+created: "2026-05-31"
+updated: "2026-05-31"
+---
+
 # Typesense: 快速矢量搜索
 
 > **一句话理解**: Typesense 是闪电般的矢量搜索——专为搜索设计、极低延迟、模糊匹配、开源替代 Elasticsearch 的候选。
@@ -264,3 +273,11 @@ results = client.collections['documents'].documents.search(search_params)
 
 *Last updated: 2026-04-26*
 *Version: 1.0.0*
+
+## Related
+
+- [[11_RAG_Systems/RAG-in-nutshell.md|RAG-in-nutshell]]
+- [[11_RAG_Systems/RAG_Systems.md|RAG_Systems]]
+- [[11_RAG_Systems/README_Advanced.md|README_Advanced]]
+- [[11_RAG_Systems/Spring_AI_RAG_Deep_Dive.md|Spring_AI_RAG_Deep_Dive]]
+- [[synthesis/rag-vector-database.md|rag-vector-database]]

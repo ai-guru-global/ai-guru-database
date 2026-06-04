@@ -1,3 +1,12 @@
+---
+title: Computer Vision Engineer 题库
+category: 23-interviews-computer-vision-engineer
+tags: ["interviews", "career", "experience", "practitioners", "computer-vision"]
+summary: "CNN 与 ViT 的主要差异是什么？"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # Computer Vision Engineer 题库
 
 ## 基础
@@ -22,3 +31,10 @@
 
 ---
 *Last updated: 2026-02-26*
+
+## Related
+
+- [[23_Interviews/Computer_Vision_Engineer/company_level_question_bank]] — Computer Vision Engineer 按公司/级别区分的题库 (共享: career, computer-vision, experience, interviews, practitione)
+- [[23_Interviews/Computer_Vision_Engineer/interview_answers]] — Computer Vision Engineer 面试题实例答案 (共享: career, computer-vision, experience, interviews, practitione)
+- [[23_Interviews/Computer_Vision_Engineer/interview_preparing]] — Computer Vision Engineer 面试准备 (共享: career, computer-vision, experience, interviews, practitione)
+- [[23_Interviews/AI_Data_Analyst/company_level_question_bank]] — AI Data Analyst 按公司/级别区分的题库 (共享: career, experience, interviews, practitioners)

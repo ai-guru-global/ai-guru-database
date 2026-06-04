@@ -1,3 +1,12 @@
+---
+title: "Dify: 开源 LLM 应用开发平台"
+category: "11-rag-systems"
+tags: ["rag", "retrieval", "vector-database", "embedding", "llm"]
+summary: "> **一句话理解**: Dify 是一个开源的 LLM 应用开发平台——让 AI 应用开发变得简单，支持 RAG、Agent、工作流编排，零代码也能构建生产级 AI 应用。"
+created: "2026-05-31"
+updated: "2026-05-31"
+---
+
 # Dify: 开源 LLM 应用开发平台
 
 > **一句话理解**: Dify 是一个开源的 LLM 应用开发平台——让 AI 应用开发变得简单，支持 RAG、Agent、工作流编排，零代码也能构建生产级 AI 应用。
@@ -407,3 +416,11 @@ curl -X POST 'https://api.dify.ai/v1/chat-messages' \
 
 *Last updated: 2026-04-25*
 *Version: 1.0.0*
+
+## Related
+
+- [[11_RAG_Systems/RAG-in-nutshell.md|RAG-in-nutshell]]
+- [[11_RAG_Systems/RAG_Systems.md|RAG_Systems]]
+- [[11_RAG_Systems/README_Advanced.md|README_Advanced]]
+- [[11_RAG_Systems/Spring_AI_RAG_Deep_Dive.md|Spring_AI_RAG_Deep_Dive]]
+- [[synthesis/rag-vector-database.md|rag-vector-database]]

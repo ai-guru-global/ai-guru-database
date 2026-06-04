@@ -1,3 +1,12 @@
+---
+title: Configuration Templates
+category: 13-agent-production-16-agent-evaluation-implementation
+tags: ["ai-agents", "agent-framework", "production", "langgraph"]
+summary: "> Ready-to-use configuration templates for agent evaluation"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # Configuration Templates
 
 > Ready-to-use configuration templates for agent evaluation
@@ -1136,3 +1145,11 @@ mock_services:
 - [LLM as Judge Templates](./LLM_as_Judge_Templates.md) - LLM评估模板
 - [Cloud Agent Evaluation](../Cloud_Agent_Evaluation/README.md) - 云Agent评估框架
 - [Corpus Assessment](../Corpus_Assessment/README.md) - 语料库评估
+- [[13_Agent_Production/16_Agent_Evaluation/Cloud_Agent_Evaluation/General_Chat_Agent_Benchmark.md|General_Chat_Agent_Benchmark]]
+
+## Related
+
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)

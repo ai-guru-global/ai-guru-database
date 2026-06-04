@@ -1,3 +1,12 @@
+---
+title: 时间序列分析 (Time Series Analysis) - 完全指南
+category: 02-machine-learning-time-series
+tags: ["machine-learning", "supervised", "unsupervised"]
+summary: "[1. 时间序列概述](#1-时间序列概述)"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 时间序列分析 (Time Series Analysis) - 完全指南
 
 ## 目录
@@ -617,7 +626,7 @@ plt.savefig('prophet_components.png', dpi=150, bbox_inches='tight')
 plt.show()
 
 print("预测结果 (未来 10 天):")
-print(forecast[['ds', 'yhat', 'yhat_lower', 'yhat_upper']].tail(10))
+print(forecast``[ ['ds', 'yhat', 'yhat_lower', 'yhat_upper'] ]``.tail(10))
 ```
 
 ### 8.3 Prophet 调参指南
@@ -1137,3 +1146,10 @@ print(importance.head(10))
 | **特征工程+ML** | 多特征 | 灵活、可融入外部信息 | 需要人工设计特征 |
 
 > **选择建议**: 从 Prophet 开始（简单好用），需要更精确时尝试 SARIMA，多变量场景考虑特征工程 + XGBoost 或 TFT。
+
+## Related
+
+- [[02_Machine_Learning/Ensemble_Learning/Ensemble_Learning]] — 集成学习 (Ensemble Learning) - 完全指南 (共享: machine-learning, ml, supervised, unsupervised)
+- [[02_Machine_Learning/Feature_Engineering/Feature_Engineering]] — 特征工程 (Feature Engineering) (共享: machine-learning, ml, supervised, unsupervised)
+- [[02_Machine_Learning/Feature_Engineering/Feature_Engineering_for_dummy]] — 特征工程 - 小白版 (共享: machine-learning, ml, supervised, unsupervised)
+- [[02_Machine_Learning/ML-in-nutshell]] — 机器学习速成指南 (共享: machine-learning, ml, supervised, unsupervised)

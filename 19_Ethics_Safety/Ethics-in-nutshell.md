@@ -1,3 +1,12 @@
+---
+title: AI 伦理与安全速成指南
+category: 19-ethics-safety
+tags: ["ai-ethics", "safety", "alignment", "red-teaming"]
+summary: "> **一句话理解**: AI 伦理与安全就像给一辆超级跑车安装刹车、安全带和交通规则——不是为了限制速度，而是确保它能安全、可靠地到达正确目的地。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # AI 伦理与安全速成指南
 
 > **一句话理解**: AI 伦理与安全就像给一辆超级跑车安装刹车、安全带和交通规则——不是为了限制速度，而是确保它能安全、可靠地到达正确目的地。
@@ -466,3 +475,10 @@ flowchart TB
 ---
 
 *Last updated: 2026-05-07*
+
+## Related
+
+- [[19_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming]] — AI 安全与红队 (AI Safety & Red Teaming) (共享: ai-ethics, alignment, red-teaming, safety)
+- [[19_Ethics_Safety/AI_Security_2026/README]] — AI安全 2026 (AI Security) (共享: ai-ethics, alignment, red-teaming, safety)
+- [[19_Ethics_Safety/AI_Supply_Chain_Security/AI_Supply_Chain_Security]] — AI 供应链安全 2026 (共享: ai-ethics, alignment, red-teaming, safety)
+- [[19_Ethics_Safety/README]] — 08 AI 伦理、安全与对齐 (Ethics, Safety & Alignment) (共享: ai-ethics, alignment, red-teaming, safety)

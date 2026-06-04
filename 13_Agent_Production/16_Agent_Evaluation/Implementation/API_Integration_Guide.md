@@ -1,3 +1,12 @@
+---
+title: API 集成指南
+category: 13-agent-production-16-agent-evaluation-implementation
+tags: ["ai-agents", "agent-framework", "production", "langgraph"]
+summary: "> 各云产品智能体 API 调用方式与集成规范"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # API 集成指南
 
 > 各云产品智能体 API 调用方式与集成规范
@@ -448,3 +457,11 @@ class BenchmarkScheduler:
 | 版本 | 日期 | 变更 |
 |------|------|------|
 | 1.0.0 | 2026-04 | 初始版本，覆盖 9 个 Agent API + 批量调度器 |
+
+## Related
+
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/demo/README.md|README]]

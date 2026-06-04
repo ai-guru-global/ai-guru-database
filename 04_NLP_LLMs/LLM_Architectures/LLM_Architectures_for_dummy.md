@@ -1,3 +1,12 @@
+---
+title: '大语言模型架构 - 小白版'
+category: '04-nlp-llms-llm-architectures'
+tags: ["nlp", "llm", "transformer", "gpt", "bert"]
+summary: '> **一句话秒懂**: 大语言模型就像"超级大脑"——GPT 擅长写作(生成型),BERT 擅长理解(阅读型),它们都是基于 Transformer 这个"引擎"造出来的!'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # 大语言模型架构 - 小白版
 
 > **一句话秒懂**: 大语言模型就像"超级大脑"——GPT 擅长写作(生成型),BERT 擅长理解(阅读型),它们都是基于 Transformer 这个"引擎"造出来的!

@@ -1,3 +1,12 @@
+---
+title: AI 行业应用 — 小白版 🏭
+category: 20-ai-applications-industry
+tags: ["ai-applications", "industry", "finance", "healthcare"]
+summary: "> **一句话秒懂**: 这一章告诉你 AI 在各行各业是怎么赚钱的——不只是科技公司用 AI，医院、金融、工厂、农场都在用 AI 变革，而且比你想象的更快！"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # AI 行业应用 — 小白版 🏭
 
 > **一句话秒懂**: 这一章告诉你 AI 在各行各业是怎么赚钱的——不只是科技公司用 AI，医院、金融、工厂、农场都在用 AI 变革，而且比你想象的更快！
@@ -162,3 +171,9 @@
 ---
 
 *本文是 [README.md](./README.md) 的简化版，适合零基础读者。*
+
+## Related
+
+- [[20_AI_Applications_Industry/Energy_Climate/AI_Energy_Climate_2026]] — AI 能源与气候行业应用 (2025-2026) (共享: ai-applications, finance, healthcare, industry)
+- [[20_AI_Applications_Industry/Industry_Comparison_2026]] — AI 行业应用对比 2026 (Industry Comparison) (共享: ai-applications, finance, healthcare, industry)
+- [[20_AI_Applications_Industry/README]] — 13 - AI应用与行业融合 (共享: ai-applications, finance, healthcare, industry)

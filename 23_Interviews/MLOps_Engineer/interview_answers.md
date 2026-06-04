@@ -1,3 +1,12 @@
+---
+title: MLOps Engineer 面试题实例答案
+category: 23-interviews-mlops-engineer
+tags: ["interviews", "career", "experience", "practitioners"]
+summary: "**答**：定义模型注册、评测门禁、灰度发布、监控与回滚流程；通过 CI/CD 自动化并保留版本可追踪性；上线后持续监控性能、漂移与成本。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # MLOps Engineer 面试题实例答案
 
 ## Q1: 如何设计模型上线流程？
@@ -11,3 +20,10 @@
 
 ---
 *Last updated: 2026-02-26*
+
+## Related
+
+- [[23_Interviews/AI_Data_Analyst/company_level_question_bank]] — AI Data Analyst 按公司/级别区分的题库 (共享: career, experience, interviews, practitioners)
+- [[23_Interviews/AI_Data_Analyst/interview_answers]] — AI Data Analyst 面试题实例答案 (共享: career, experience, interviews, practitioners)
+- [[23_Interviews/AI_Data_Analyst/interview_preparing]] — AI Data Analyst 面试准备 (共享: career, experience, interviews, practitioners)
+- [[23_Interviews/AI_Data_Analyst/question_bank]] — AI Data Analyst 题库 (共享: career, experience, interviews, practitioners)

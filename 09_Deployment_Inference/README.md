@@ -1,3 +1,12 @@
+---
+title: 模型部署与推理
+category: 09-deployment-inference
+tags: ["deployment", "inference", "serving", "vllm"]
+summary: "> 从模型到生产的最后一公里——高效、可靠、可扩展的推理服务。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 模型部署与推理
 
 > 从模型到生产的最后一公里——高效、可靠、可扩展的推理服务。
@@ -45,3 +54,32 @@
 ---
 
 *Last updated: 2026-04-25*
+
+## Related
+- [[09_Deployment_Inference/BentoML_Deep_Dive|BentoML:  AI 模型服务框架]]
+- [[09_Deployment_Inference/LMDeploy_Deep_Dive|LMDeploy: InternLM 高性能推理引擎]]
+- [[09_Deployment_Inference/llama_cpp_Deep_Dive|llama.cpp: 纯 C/C++ 本地 LLM 推理]]
+- [[09_Deployment_Inference/LiteRT_Deep_Dive|LiteRT / TensorFlow Lite: 边缘 AI 推理]]
+- [[09_Deployment_Inference/TensorRT_LLM_Deep_Dive|TensorRT-LLM: NVIDIA 生产级 LLM 推理]]
+- [[09_Deployment_Inference/README|模型部署与推理]]
+- [[09_Deployment_Inference/SGLang_Deep_Dive|SGLang: 高性能 LLM 推理框架]]
+- [[09_Deployment_Inference/README_for_dummy|09 部署与推理 — 小白版 🚀]]
+- [[09_Deployment_Inference/Ollama_Deep_Dive|Ollama: 本地大模型部署平台]]
+
+- [[09_Deployment_Inference/Deployment_Inference]] — 模型部署与推理加速 (Deployment & Inference) (共享: deployment, inference, serving, vllm)
+- [[09_Deployment_Inference/Deployment_Inference_2026]] — 部署推理 2026 趋势 (共享: deployment, inference, serving, vllm)
+- [[09_Deployment_Inference/Deployment_Inference_for_dummy]] — 模型部署与推理加速 - 小白版 (共享: deployment, inference, serving, vllm)
+- [[09_Deployment_Inference/Inference-in-nutshell]] — 模型推理速成指南 (共享: deployment, inference, serving, vllm)
+- [[09_Deployment_Inference/Speculative_Decoding_Advanced_2026|Speculative_Decoding_Advanced_2026]]
+- [[09_Deployment_Inference/Prompt_Caching_and_KV_Cache_Optimization|Prompt_Caching_And_Kv_Cache_Optimization]]
+
+## 本期新增
+
+- [[09_Deployment_Inference/Speculative_Decoding_Advanced_2026|Speculative Decoding Advanced]]
+- [[09_Deployment_Inference/Prompt_Caching_and_KV_Cache_Optimization|Prompt Caching and KV Cache Optimization]]
+
+## 相关页面
+- [[09_Deployment_Inference/Quantization_Techniques_2026|Quantization Techniques 2026]]
+
+- [[concepts/model-compression|Model Compression]]
+

@@ -1,3 +1,12 @@
+---
+title: Changelog
+category: web
+tags: ["web", "frontend", "backend", "fullstack"]
+summary: "所有重要的变更都会记录在这个文件中。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # Changelog
 
 所有重要的变更都会记录在这个文件中。
@@ -34,3 +43,10 @@
 
 [Unreleased]: https://github.com/yourusername/cloudmaster/compare/v0.0.1...HEAD
 [0.0.1]: https://github.com/yourusername/cloudmaster/releases/tag/v0.0.1
+
+## Related
+
+- [[Web/.trae/documents/CloudMaster应用全面修复计划]] — CloudMaster应用全面修复计划 (共享: backend, frontend, fullstack, web)
+- [[Web/CONTRIBUTING]] — 贡献指南 (共享: backend, frontend, fullstack, web)
+- [[Web/README]] — AI Guru Knowledge Base Frontend (共享: backend, frontend, fullstack, web)
+- [[Web/TROUBLESHOOTING]] — Troubleshooting Guide (共享: backend, frontend, fullstack, web)

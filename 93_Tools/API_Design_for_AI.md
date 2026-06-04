@@ -1,3 +1,12 @@
+---
+title: 'AI API 设计指南'
+category: '93-tools'
+tags: ["tools", "software", "utilities", "productivity"]
+summary: '> **一句话秒懂**: AI API 设计就是定义"客户端如何优雅地调用 AI 服务"的接口规范，核心挑战在于处理流式响应、高延迟和成本控制。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # AI API 设计指南
 
 > **一句话秒懂**: AI API 设计就是定义"客户端如何优雅地调用 AI 服务"的接口规范，核心挑战在于处理流式响应、高延迟和成本控制。
@@ -1345,3 +1354,10 @@ async def health():
 - [Prompt 管理平台](./Prompt_Management_Platform.md)
 - [部署推理 2026](../09_Deployment_Inference/Deployment_Inference_2026.md)
 - [Kong AI Gateway 深度解析](../14_AI_Gateway/Kong_AI_Gateway_Deep_Dive.md)
+
+## Related
+
+- [[93_Tools/DOCUMENT_TEMPLATES.md|DOCUMENT_TEMPLATES]]
+- [[93_Tools/IMPORT_GUIDE.md|IMPORT_GUIDE]]
+- [[93_Tools/README.md|93_Tools README]]
+- [[00_AI_Introduction/AI_Tools_Practical_Guide.md|AI_Tools_Practical_Guide]]

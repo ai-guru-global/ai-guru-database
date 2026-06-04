@@ -1,3 +1,12 @@
+---
+title: Hermes Agent 2026年专业指南
+category: 17-ai-coding-02-tools
+tags: ["ai-coding", "code-generation", "cursor", "github-copilot", "ai-agents"]
+summary: "> **一句话理解**: Hermes Agent是Nous Research推出的开源、多平台、多模型AI代理——它不只是一个CLI编码工具，而是一个跨终端、消息平台、浏览器、语音的全能型自主助手。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # Hermes Agent 2026年专业指南
 
 > **一句话理解**: Hermes Agent是Nous Research推出的开源、多平台、多模型AI代理——它不只是一个CLI编码工具，而是一个跨终端、消息平台、浏览器、语音的全能型自主助手。
@@ -470,3 +479,10 @@ Hermes Agent 架构:
 ---
 
 *Last updated: 2026-04-11*
+
+## Related
+
+- [[17_AI_Coding/01_Theory/AI_Coding_Theory]] — AI辅助编程理论基础 (共享: ai-coding, code-generation, cursor, github-copilot)
+- [[17_AI_Coding/02_Tools/CodeBuddy_Guide]] — CodeBuddy / WorkBuddy 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
+- [[17_AI_Coding/02_Tools/Comate_Guide]] — Comate 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
+- [[17_AI_Coding/02_Tools/Coze_Guide]] — Coze 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)

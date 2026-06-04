@@ -1,3 +1,12 @@
+---
+title: "多 Agent 开发框架: AutoGen / CrewAI / LangGraph"
+category: "13-agent-production-agent-frameworks"
+tags: ["ai-agents", "agent-framework", "production", "langgraph", "autogen", "crewai"]
+summary: "> **一句话理解**: AutoGen、CrewAI 和 LangGraph 是当前最主流的多 Agent 开发框架——AutoGen 以微软研究院为背书强调对话式协作，CrewAI 以角色扮演和任务编排见长，LangGraph 则以状态机模式和可扩展性著称。"
+created: "2026-05-31"
+updated: "2026-05-31"
+---
+
 # 多 Agent 开发框架: AutoGen / CrewAI / LangGraph
 
 > **一句话理解**: AutoGen、CrewAI 和 LangGraph 是当前最主流的多 Agent 开发框架——AutoGen 以微软研究院为背书强调对话式协作，CrewAI 以角色扮演和任务编排见长，LangGraph 则以状态机模式和可扩展性著称。
@@ -414,3 +423,11 @@ app = graph.compile()
 - [LangGraph 文档](https://langchain-ai.github.io/langgraph/)
 - [AgentScope Deep Dive](./AgentScope_Deep_Dive.md)
 - [Multi-Agent Evaluation](../16_Agent_Evaluation/Multi_Agent_Evaluation_2026.md)
+
+## Related
+
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026.md|Agent_Harness_Complete_2026]]
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026.md|Agent_Red_Teaming_2026]]
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow.md|Evaluation_Workflow]]
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment.md|Production_Assessment]]
+- [[13_Agent_Production/16_Agent_Evaluation/Benchmarking/Benchmarking_Criteria.md|Benchmarking_Criteria]]

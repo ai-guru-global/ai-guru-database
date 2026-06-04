@@ -1,3 +1,12 @@
+---
+title: 'Agent Harness 技术深度解析'
+category: '13-agent-production-16-agent-evaluation'
+tags: ["ai-agents", "agent-framework", "production", "langgraph"]
+summary: '> **一句话理解**: Agent Harness 是AI Agent工业化落地的核心基础设施，它通过标准化的测试环境、多维度评估体系和完整可观测性，让Agent从"实验品"变成"可信赖的生产系统"。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # Agent Harness 技术深度解析
 
 > **一句话理解**: Agent Harness 是AI Agent工业化落地的核心基础设施，它通过标准化的测试环境、多维度评估体系和完整可观测性，让Agent从"实验品"变成"可信赖的生产系统"。
@@ -1193,3 +1202,11 @@ Agent Harness 标准化路线图
 
 *Last updated: 2026-04-01*
 *Version: 1.0.0*
+
+## Related
+
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026.md|Agent_Harness_Complete_2026]]
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026.md|Agent_Red_Teaming_2026]]
+- [[13_Agent_Production/16_Agent_Evaluation/Cloud_Agent_Evaluation_System_2026.md|Cloud_Agent_Evaluation_System_2026]]
+- [[13_Agent_Production/16_Agent_Evaluation/Multi_Agent_Evaluation_2026.md|Multi_Agent_Evaluation_2026]]
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow.md|Evaluation_Workflow]]

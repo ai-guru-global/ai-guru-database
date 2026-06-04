@@ -1,3 +1,12 @@
+---
+title: 云产品运维 Agent 研发指南 (Development)
+category: 18-cloud-ops-agent-docs-development
+tags: ["cloud-ops", "devops", "sre", "automation", "ai-agents"]
+summary: "> 🎯 **目标**: 为研发工程师提供从环境搭建、工具开发、Agent 实现、调试测试到部署上线的完整开发指南，确保代码质量与研发效率。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 云产品运维 Agent 研发指南 (Development)
 
 > 🎯 **目标**: 为研发工程师提供从环境搭建、工具开发、Agent 实现、调试测试到部署上线的完整开发指南，确保代码质量与研发效率。
@@ -1043,3 +1052,11 @@ kubectl rollout undo deployment/cloud-ops-agent --to-revision=3
 *最后更新: 2026-04-15*
 *版本: 2.0.0*
 *维护者: 研发团队*
+
+## Related
+
+- [[18_Cloud_Ops_Agent/CloudOps-in-nutshell]] — 云产品运维 Agent 速成指南 (共享: ai-agents, automation, cloud-ops, devops, sre)
+- [[18_Cloud_Ops_Agent/Cloud_Product_Ops_for_dummy]] — 云产品运维 Agent 入门指南 (for Dummies) (共享: ai-agents, automation, cloud-ops, devops, sre)
+- [[18_Cloud_Ops_Agent/docs/architecture/index]] — 云产品运维 Agent 架构设计指南 (Architecture) (共享: ai-agents, automation, cloud-ops, devops, sre)
+- [[18_Cloud_Ops_Agent/docs/corpus/index]] — 云产品运维 Agent 语料工程指南 (Corpus Engineering) (共享: ai-agents, automation, cloud-ops, devops, sre)
+- [[18_Cloud_Ops_Agent/docs/templates/dev_template.md|dev_template]]

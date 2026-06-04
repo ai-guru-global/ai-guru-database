@@ -1,3 +1,12 @@
+---
+title: "LMDeploy: InternLM 高性能推理引擎"
+category: "09-deployment-inference"
+tags: ["deployment", "inference", "serving", "vllm"]
+summary: "> **一句话理解**: LMDeploy 是上海人工智能实验室出品的高性能 LLM 推理引擎——TurboMind 加速、中文场景优化、AWQ 量化，国产推理性能标杆。"
+created: "2026-05-31"
+updated: "2026-05-31"
+---
+
 # LMDeploy: InternLM 高性能推理引擎
 
 > **一句话理解**: LMDeploy 是上海人工智能实验室出品的高性能 LLM 推理引擎——TurboMind 加速、中文场景优化、AWQ 量化，国产推理性能标杆。
@@ -337,3 +346,11 @@ for chunk in stream:
 
 *Last updated: 2026-04-26*
 *Version: 1.0.0*
+
+## Related
+
+- [[09_Deployment_Inference/Deployment_Inference.md|Deployment_Inference]]
+- [[09_Deployment_Inference/Deployment_Inference_2026.md|Deployment_Inference_2026]]
+- [[09_Deployment_Inference/Deployment_Inference_for_dummy.md|Deployment_Inference_for_dummy]]
+- [[09_Deployment_Inference/Inference-in-nutshell.md|Inference-in-nutshell]]
+- [[09_Deployment_Inference/JVM_AI_Deployment.md|JVM_AI_Deployment]]

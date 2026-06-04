@@ -1,3 +1,12 @@
+---
+title: Java AI 测试实践
+category: 15-testing
+tags: ["testing", "ai-testing", "prompt-testing", "evaluation"]
+summary: "> 📚 **Spring AI 基础**: 如果你还不熟悉 Spring AI 的核心概念，请先阅读 [Spring AI 深度解析](../01_Fundamentals/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md)。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # Java AI 测试实践
 
 > 📚 **Spring AI 基础**: 如果你还不熟悉 Spring AI 的核心概念，请先阅读 [Spring AI 深度解析](../01_Fundamentals/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md)。
@@ -1055,9 +1064,9 @@ jobs:
     steps:
       - name: Check all tests passed
         run: |
-          if [[ "${{ needs.unit-tests.result }}" == "failure" ]] || \
-             [[ "${{ needs.integration-tests.result }}" == "failure" ]] || \
-             [[ "${{ needs.security-tests.result }}" == "failure" ]]; then
+          if `````[[ "${{ needs.unit-tests.result }}" == "failure" ]]````` || \
+             `````[[ "${{ needs.integration-tests.result }}" == "failure" ]]````` || \
+             `````[[ "${{ needs.security-tests.result }}" == "failure" ]]`````; then
             echo "Quality gate failed!"
             exit 1
           fi
@@ -1414,3 +1423,11 @@ AI 服务混沌实验清单
 ---
 
 *Last updated: 2026-04*
+
+## Related
+
+- [[15_Testing/AI-Testing-in-nutshell]] — AI 测试与评估速成指南 (共享: ai-testing, evaluation, prompt-testing, testing)
+- [[15_Testing/AI_Testing_for_dummy]] — AI 测试 - 小白版 (共享: ai-testing, evaluation, prompt-testing, testing)
+- [[15_Testing/README]] — AI 测试与评估 (AI Testing) (共享: ai-testing, evaluation, prompt-testing, testing)
+- [[15_Testing/Test_Data_Management.md|Test_Data_Management]]
+- [[15_Testing/RAGAS_Deep_Dive.md|RAGAS_Deep_Dive]]

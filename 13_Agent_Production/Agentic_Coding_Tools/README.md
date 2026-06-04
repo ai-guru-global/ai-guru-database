@@ -1,3 +1,12 @@
+---
+title: Agentic Coding 工具
+category: 13-agent-production-agentic-coding-tools
+tags: ["ai-agents", "agent-framework", "production", "langgraph"]
+summary: "> 从代码补全到完全自主执行，AI Agent 编程工具正在重塑软件开发的每个环节。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # Agentic Coding 工具
 
 > 从代码补全到完全自主执行，AI Agent 编程工具正在重塑软件开发的每个环节。
@@ -40,3 +49,12 @@ Codeium             Claude Code
 ---
 
 *Last updated: 2026-04-14*
+
+## Related
+- [[13_Agent_Production/Agentic_Coding_Tools/README|Agentic Coding 工具]]
+
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)
+

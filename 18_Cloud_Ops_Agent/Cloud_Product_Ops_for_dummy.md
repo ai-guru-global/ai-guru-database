@@ -1,3 +1,12 @@
+---
+title: 云产品运维 Agent 入门指南 (for Dummies)
+category: 18-cloud-ops-agent
+tags: ["cloud-ops", "devops", "sre", "automation", "ai-agents"]
+summary: "> 用最简单的语言解释什么是云产品运维 Agent，以及它如何帮你管理云服务。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 云产品运维 Agent 入门指南 (for Dummies)
 
 > 用最简单的语言解释什么是云产品运维 Agent，以及它如何帮你管理云服务。
@@ -430,3 +439,11 @@ Agent 的权限要小心配置！
 ---
 
 *Last updated: 2026-04-09*
+
+## Related
+
+- [[18_Cloud_Ops_Agent/CloudOps-in-nutshell]] — 云产品运维 Agent 速成指南 (共享: ai-agents, automation, cloud-ops, devops, sre)
+- [[18_Cloud_Ops_Agent/docs/architecture/index]] — 云产品运维 Agent 架构设计指南 (Architecture) (共享: ai-agents, automation, cloud-ops, devops, sre)
+- [[18_Cloud_Ops_Agent/docs/corpus/index]] — 云产品运维 Agent 语料工程指南 (Corpus Engineering) (共享: ai-agents, automation, cloud-ops, devops, sre)
+- [[18_Cloud_Ops_Agent/docs/development/index]] — 云产品运维 Agent 研发指南 (Development) (共享: ai-agents, automation, cloud-ops, devops, sre)
+- [[18_Cloud_Ops_Agent/Mobile_AI_Ops_Design.md|Mobile_AI_Ops_Design]]

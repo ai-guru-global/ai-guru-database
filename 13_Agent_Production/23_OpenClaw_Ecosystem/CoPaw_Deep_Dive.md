@@ -1,3 +1,12 @@
+---
+title: 'CoPaw Deep Dive: Alibaba''s Personal AI Agent Workstation'
+category: '13-agent-production-23-openclaw-ecosystem'
+tags: ["ai-agents", "agent-framework", "production", "langgraph"]
+summary: '**CoPaw** ("Works for you, grows with you") is Alibaba''s flagship open-source AI agent implementation built on the **AgentScope** framework. It represents one of the most sophistic'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # CoPaw Deep Dive: Alibaba's Personal AI Agent Workstation
 
 ## Overview
@@ -538,3 +547,11 @@ All agent actions are logged:
 ---
 
 *Last Updated: March 2026*
+
+## Related
+
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026.md|Agent_Harness_Complete_2026]]
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026.md|Agent_Red_Teaming_2026]]
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow.md|Evaluation_Workflow]]
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment.md|Production_Assessment]]
+- [[13_Agent_Production/16_Agent_Evaluation/Benchmarking/Benchmarking_Criteria.md|Benchmarking_Criteria]]

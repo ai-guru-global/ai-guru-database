@@ -1,3 +1,12 @@
+---
+title: AI术语表与概念词典
+category: 00-ai-introduction
+tags: ["ai", "glossary", "terminology", "reference"]
+summary: "## A"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # AI术语表与概念词典
 
 > 本术语表收录人工智能领域核心概念，按字母顺序排列，提供简明定义和深度解释，适合通识课教学使用。
@@ -812,3 +821,7 @@ Bias、Fairness、Privacy、Explainable AI、Alignment、Hallucination
 ---
 
 *Last updated: 2026-04-01* (通识课教材版)
+
+## Related
+
+- [[17_AI_Coding/02_Tools/OpenRouter/05-openrouter-api-reference]] — 05-openrouter-api-reference (共享: ai, reference)

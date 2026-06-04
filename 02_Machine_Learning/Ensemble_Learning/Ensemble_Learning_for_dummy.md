@@ -1,3 +1,12 @@
+---
+title: '集成学习 - 小白版'
+category: '02-machine-learning-ensemble-learning'
+tags: ["machine-learning", "supervised", "unsupervised"]
+summary: '> **一句话秒懂**: 三个臭皮匠赛过诸葛亮 —— 让一群"普通选手"一起投票，结果比一个"天才选手"还靠谱！'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # 集成学习 - 小白版
 
 > **一句话秒懂**: 三个臭皮匠赛过诸葛亮 —— 让一群"普通选手"一起投票，结果比一个"天才选手"还靠谱！

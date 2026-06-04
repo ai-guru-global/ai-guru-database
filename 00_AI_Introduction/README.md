@@ -1,3 +1,12 @@
+---
+title: 00 - AI 简介与历史
+category: 00-ai-introduction
+tags: ["ai", "introduction"]
+summary: "本章节提供人工智能的全面入门知识，适合大专院校AI通识课教材使用。内容涵盖AI基础概念、技术全景、历史发展、工具实践、伦理影响、未来趋势和学习方法，为零基础读者建立完整的AI认知框架。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 00 - AI 简介与历史
 
 本章节提供人工智能的全面入门知识，适合大专院校AI通识课教材使用。内容涵盖AI基础概念、技术全景、历史发展、工具实践、伦理影响、未来趋势和学习方法，为零基础读者建立完整的AI认知框架。
@@ -196,3 +205,13 @@
 *文档数量: 10篇 (7核心+3教学资源)*
 *总内容量: 约260页A4纸*
 *Last updated: 2026-04-01*
+
+## Related
+- [[00_AI_Introduction/AI_Technology_Landscape|AI技术全景概览]]
+- [[00_AI_Introduction/AI_Practical_Labs|AI课堂实验与实践指导]]
+- [[00_AI_Introduction/AI_Tools_Practical_Guide|AI工具与实践指南]]
+
+- [[00_AI_Introduction/AI_Fundamentals]] — AI基础概念入门 (共享: ai, introduction)
+- [[00_AI_Introduction/AI_Fundamentals_for_dummy]] — AI 基础入门 - 小白版 (共享: ai, introduction)
+- [[00_AI_Introduction/README_for_dummy]] — 00 AI 简介与历史 — 小白版 🚀 (共享: ai, introduction)
+

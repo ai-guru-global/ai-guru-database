@@ -1,3 +1,12 @@
+---
+title: "OpenRouter: 统一 AI 模型网关与智能路由平台"
+category: "13-agent-production-agent-platforms"
+tags: ["ai-agents", "agent-framework", "production", "langgraph"]
+summary: "> **一句话理解**: OpenRouter 是一个统一的 AI 模型 API 网关，通过智能路由、成本优化、多模型聚合等能力，为 Agent 系统提供稳定、高效、低成本的模型访问层。"
+created: "2026-05-31"
+updated: "2026-05-31"
+---
+
 # OpenRouter: 统一 AI 模型网关与智能路由平台
 
 > **一句话理解**: OpenRouter 是一个统一的 AI 模型 API 网关，通过智能路由、成本优化、多模型聚合等能力，为 Agent 系统提供稳定、高效、低成本的模型访问层。

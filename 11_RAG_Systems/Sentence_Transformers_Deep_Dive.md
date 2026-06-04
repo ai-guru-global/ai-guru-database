@@ -1,3 +1,12 @@
+---
+title: "Sentence-Transformers: 嵌入模型框架"
+category: "11-rag-systems"
+tags: ["rag", "retrieval", "vector-database", "embedding", "transformer"]
+summary: "> **一句话理解**: Sentence-Transformers 让文本转向量变得简单——几行代码就能使用预训练的语义嵌入模型，支持 100+ 语言，专为语义搜索和 RAG 设计。"
+created: "2026-05-31"
+updated: "2026-05-31"
+---
+
 # Sentence-Transformers: 嵌入模型框架
 
 > **一句话理解**: Sentence-Transformers 让文本转向量变得简单——几行代码就能使用预训练的语义嵌入模型，支持 100+ 语言，专为语义搜索和 RAG 设计。
@@ -292,3 +301,11 @@ embeddings = model.encode(sentences)
 
 *Last updated: 2026-04-26*
 *Version: 1.0.0*
+
+## Related
+
+- [[11_RAG_Systems/RAG-in-nutshell.md|RAG-in-nutshell]]
+- [[11_RAG_Systems/RAG_Systems.md|RAG_Systems]]
+- [[11_RAG_Systems/README_Advanced.md|README_Advanced]]
+- [[11_RAG_Systems/Spring_AI_RAG_Deep_Dive.md|Spring_AI_RAG_Deep_Dive]]
+- [[synthesis/rag-vector-database.md|rag-vector-database]]

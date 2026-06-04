@@ -1,3 +1,12 @@
+---
+title: 云产品运维 Agent 速成指南
+category: 18-cloud-ops-agent
+tags: ["cloud-ops", "devops", "sre", "automation", "ai-agents"]
+summary: "> 🎯 **目标**：理解云产品运维 Agent 的核心概念、架构和典型应用场景。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 云产品运维 Agent 速成指南
 
 > 🎯 **目标**：理解云产品运维 Agent 的核心概念、架构和典型应用场景。
@@ -199,3 +208,11 @@ flowchart TB
 ---
 
 *Last updated: 2026-04-11*
+
+## Related
+
+- [[18_Cloud_Ops_Agent/Cloud_Product_Ops_for_dummy]] — 云产品运维 Agent 入门指南 (for Dummies) (共享: ai-agents, automation, cloud-ops, devops, sre)
+- [[18_Cloud_Ops_Agent/docs/architecture/index]] — 云产品运维 Agent 架构设计指南 (Architecture) (共享: ai-agents, automation, cloud-ops, devops, sre)
+- [[18_Cloud_Ops_Agent/docs/corpus/index]] — 云产品运维 Agent 语料工程指南 (Corpus Engineering) (共享: ai-agents, automation, cloud-ops, devops, sre)
+- [[18_Cloud_Ops_Agent/docs/development/index]] — 云产品运维 Agent 研发指南 (Development) (共享: ai-agents, automation, cloud-ops, devops, sre)
+- [[18_Cloud_Ops_Agent/README.md|README]]

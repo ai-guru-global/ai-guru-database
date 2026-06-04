@@ -1,3 +1,12 @@
+---
+title: 'AI 行业应用 - 小白版'
+category: '20-ai-applications-industry'
+tags: ["ai-applications", "industry", "finance", "healthcare"]
+summary: '> **一句话理解**: AI 在行业中就像"智能员工"——它不会取代所有人类，但会用数据分析和自动化帮助每个行业做得更好、更快、更省钱。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # AI 行业应用 - 小白版
 
 > **一句话理解**: AI 在行业中就像"智能员工"——它不会取代所有人类，但会用数据分析和自动化帮助每个行业做得更好、更快、更省钱。
@@ -343,3 +352,11 @@ flowchart LR
 ---
 
 *Last updated: 2026-05-07*
+
+## Related
+
+- [[20_AI_Applications_Industry/Industry_Comparison_2026.md|Industry_Comparison_2026]]
+- [[20_AI_Applications_Industry/README.md|20_AI_Applications_Industry README]]
+- [[20_AI_Applications_Industry/README_for_dummy.md|README_for_dummy]]
+- [[20_AI_Applications_Industry/Agriculture/AI_Agriculture_2026.md|AI_Agriculture_2026]]
+- [[20_AI_Applications_Industry/Autonomous_Driving/AI_Autonomous_Driving_2026.md|AI_Autonomous_Driving_2026]]

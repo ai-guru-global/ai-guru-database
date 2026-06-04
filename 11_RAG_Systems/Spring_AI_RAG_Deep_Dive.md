@@ -1,3 +1,12 @@
+---
+title: Spring AI RAG 深度解析
+category: 11-rag-systems
+tags: ["rag", "retrieval", "vector-database", "embedding"]
+summary: "> 📚 **Spring AI 基础**: 如果你还不熟悉 Spring AI 的核心概念，请先阅读 [Spring AI 深度解析](../01_Fundamentals/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md)。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # Spring AI RAG 深度解析
 
 > 📚 **Spring AI 基础**: 如果你还不熟悉 Spring AI 的核心概念，请先阅读 [Spring AI 深度解析](../01_Fundamentals/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md)。
@@ -1381,3 +1390,14 @@ record SelfRagResult(String answer, String strategy, List<Document> sources, dou
 ---
 
 *Last updated: 2026-04*
+
+## Related
+
+- [[11_RAG_Systems/RAG-in-nutshell]] — RAG (检索增强生成) 速成指南 (共享: embedding, rag, retrieval, vector-database)
+- [[11_RAG_Systems/RAG_Systems]] — RAG 系统 (RAG Systems) (共享: embedding, rag, retrieval, vector-database)
+- [[11_RAG_Systems/README_Advanced]] — RAG高级实践 2026 (共享: embedding, rag, retrieval, vector-database)
+- [[synthesis/rag-vector-database]] — RAG 系统 × 向量数据库 (共享: embedding, rag, retrieval, vector-database)
+- [[11_RAG_Systems/Dify_Deep_Dive.md|Dify_Deep_Dive]]
+- [[11_RAG_Systems/Weaviate_Deep_Dive.md|Weaviate_Deep_Dive]]
+- [[11_RAG_Systems/Flowise_Deep_Dive.md|Flowise_Deep_Dive]]
+- [[11_RAG_Systems/LangFlow_Deep_Dive.md|LangFlow_Deep_Dive]]

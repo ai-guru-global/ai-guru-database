@@ -1,3 +1,12 @@
+---
+title: AI 架构基础设施 - 小白版
+category: 12-architecture-infrastructure
+tags: ["architecture", "infrastructure", "kubernetes", "high-availability"]
+summary: "> **一句话理解**: AI 架构就像盖房子——地基（服务器）、水管电线（网络）、房间布局（服务层）、家具摆设（应用层），每层都要规划好，房子才能住得舒服。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # AI 架构基础设施 - 小白版
 
 > **一句话理解**: AI 架构就像盖房子——地基（服务器）、水管电线（网络）、房间布局（服务层）、家具摆设（应用层），每层都要规划好，房子才能住得舒服。
@@ -369,3 +378,11 @@ flowchart LR
 ---
 
 *Last updated: 2026-05-07*
+
+## Related
+
+- [[12_Architecture_Infrastructure/AI_Infrastructure_2026]] — AI Infrastructure 2026 完全指南 (共享: architecture, high-availability, infrastructure, kubernetes)
+- [[12_Architecture_Infrastructure/Architecture-in-nutshell]] — AI 架构速成指南 (共享: architecture, high-availability, infrastructure, kubernetes)
+- [[12_Architecture_Infrastructure/Spring_AI_Architecture]] — Spring AI 系统架构设计 (共享: architecture, high-availability, infrastructure, kubernetes)
+- [[12_Architecture_Infrastructure/AI_Cost_Optimization_2026.md|AI_Cost_Optimization_2026]]
+- [[12_Architecture_Infrastructure/High_Availability_2026.md|High_Availability_2026]]

@@ -1,3 +1,12 @@
+---
+title: 'RAG高级实践 2026年完全指南'
+category: '11-rag-systems'
+tags: ["rag", "retrieval", "vector-database", "embedding"]
+summary: '> **一句话理解**: 2026年的RAG已从"向量搜索+LLM"的简单模式进化为精密工程——混合检索、智能重排、上下文压缩让准确率从60%提升至90%+，动态RAG甚至能自主决定何时停止检索。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # RAG高级实践 2026年完全指南
 
 > **一句话理解**: 2026年的RAG已从"向量搜索+LLM"的简单模式进化为精密工程——混合检索、智能重排、上下文压缩让准确率从60%提升至90%+，动态RAG甚至能自主决定何时停止检索。
@@ -587,3 +596,12 @@ print(results)
 ---
 
 *Last updated: 2026-04-01* (Agentic RAG, Context Compression)
+
+## Related
+
+- [[11_RAG_Systems/RAG-in-nutshell.md|RAG-in-nutshell]]
+- [[11_RAG_Systems/RAG_Systems.md|RAG_Systems]]
+- [[11_RAG_Systems/README_Advanced.md|README_Advanced]]
+- [[11_RAG_Systems/Spring_AI_RAG_Deep_Dive.md|Spring_AI_RAG_Deep_Dive]]
+- [[synthesis/rag-vector-database.md|rag-vector-database]]
+- [[synthesis/multimodal-rag|多模态 × RAG]] — 图文音视频统一检索

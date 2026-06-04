@@ -1,3 +1,12 @@
+---
+title: 'LangChain: LLM 应用开发框架'
+category: '13-agent-production-agent-frameworks'
+tags: ["ai-agents", "agent-framework", "production", "langgraph", "llm", "langchain"]
+summary: '> **一句话理解**: LangChain 是 LLM 应用的"操作系统"——拼接大模型、提示词、记忆、工具、数据，构建复杂的 AI 应用。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # LangChain: LLM 应用开发框架
 
 > **一句话理解**: LangChain 是 LLM 应用的"操作系统"——拼接大模型、提示词、记忆、工具、数据，构建复杂的 AI 应用。
@@ -479,3 +488,11 @@ add_routes(app, chain, path="/chain")
 
 *Last updated: 2026-04-25*
 *Version: 1.0.0*
+
+## Related
+
+- [[13_Agent_Production/16_Agent_Evaluation/Implementation/LLM_as_Judge_Templates.md|LLM_as_Judge_Templates]]
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026.md|Agent_Harness_Complete_2026]]
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026.md|Agent_Red_Teaming_2026]]
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow.md|Evaluation_Workflow]]
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment.md|Production_Assessment]]

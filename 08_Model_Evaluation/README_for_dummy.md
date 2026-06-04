@@ -1,3 +1,12 @@
+---
+title: '08 模型评估 — 小白版 📝'
+category: '08-model-evaluation'
+tags: ["model-evaluation", "metrics", "ab-testing", "benchmark"]
+summary: '> **一句话秒懂**: 模型评估就是给 AI "打分"——用各种指标判断 AI 学得好不好，就像考试一样，有选择题、填空题、应用题，AI 成绩好才能上岗！'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # 08 模型评估 — 小白版 📝
 
 > **一句话秒懂**: 模型评估就是给 AI "打分"——用各种指标判断 AI 学得好不好，就像考试一样，有选择题、填空题、应用题，AI 成绩好才能上岗！
@@ -224,3 +233,11 @@ BIG-Bench:
 ---
 
 *本文是 [README.md](./README.md) 的简化版，适合零基础读者。*
+
+## Related
+
+- [[08_Model_Evaluation/Model_Evaluation.md|Model_Evaluation]]
+- [[08_Model_Evaluation/README.md|08_Model_Evaluation README]]
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow.md|Evaluation_Workflow]]
+- [[13_Agent_Production/16_Agent_Evaluation/Cloud_Agent_Evaluation/README.md|Cloud_Agent_Evaluation README]]
+- [[13_Agent_Production/16_Agent_Evaluation/Cloud_Agent_Evaluation_System_2026.md|Cloud_Agent_Evaluation_System_2026]]

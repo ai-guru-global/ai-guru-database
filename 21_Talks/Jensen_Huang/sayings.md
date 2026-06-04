@@ -1,3 +1,12 @@
+---
+title: Jensen Huang 关于 AI 的观点 (Jensen Huang on AI)
+category: 21-talks-jensen-huang
+tags: ["talks", "speeches", "insights", "leaders"]
+summary: "1. **“Accelerated computing and generative AI mark a new industrial revolution.” / “加速计算与生成式 AI 代表新的工业革命。”**"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # Jensen Huang 关于 AI 的观点 (Jensen Huang on AI)
 
 1. **“Accelerated computing and generative AI mark a new industrial revolution.” / “加速计算与生成式 AI 代表新的工业革命。”**  
@@ -11,3 +20,10 @@
 
 ---
 *Last updated: 2026-02-08*
+
+## Related
+
+- [[21_Talks/Andrej_Karpathy/about]] — Andrej Karpathy 简介 (Andrej Karpathy) (共享: insights, leaders, speeches, talks)
+- [[21_Talks/Andrew_Ng/about]] — Andrew Ng 简介 (Andrew Ng) (共享: insights, leaders, speeches, talks)
+- [[21_Talks/Andrew_Ng/sayings]] — Andrew Ng 关于 AI 的观点与格言 (共享: insights, leaders, speeches, talks)
+- [[21_Talks/Bill_Gates/about]] — Bill Gates 简介 (Bill Gates) (共享: insights, leaders, speeches, talks)

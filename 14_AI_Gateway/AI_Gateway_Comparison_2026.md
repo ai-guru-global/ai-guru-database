@@ -1,3 +1,12 @@
+---
+title: 'AI Gateway 对比 2026'
+category: '14-ai-gateway'
+tags: ["ai-gateway", "api-management", "routing", "litellm"]
+summary: '> **一句话秒懂**: AI Gateway 是调用大模型 API 的"中间人"，帮你统一管理多模型路由、限流、缓存、安全和成本，是 AI 工程化的基础设施。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # AI Gateway 对比 2026
 
 > **一句话秒懂**: AI Gateway 是调用大模型 API 的"中间人"，帮你统一管理多模型路由、限流、缓存、安全和成本，是 AI 工程化的基础设施。
@@ -702,3 +711,11 @@ Phase 4: 高级功能
 - [AI Gateway 2026 概述](./AI_Gateway_2026.md)
 - [API 设计 for AI](../../93_Tools/API_Design_for_AI.md)
 - [部署推理 2026](../../09_Deployment_Inference/Deployment_Inference_2026.md)
+
+## Related
+
+- [[14_AI_Gateway/AI_Gateway_2026.md|AI_Gateway_2026]]
+- [[14_AI_Gateway/AI_Gateway_for_dummy.md|AI_Gateway_for_dummy]]
+- [[14_AI_Gateway/Cohere_Deep_Dive.md|Cohere_Deep_Dive]]
+- [[14_AI_Gateway/Gateway-in-nutshell.md|Gateway-in-nutshell]]
+- [[14_AI_Gateway/Kong_AI_Gateway_Deep_Dive.md|Kong_AI_Gateway_Deep_Dive]]

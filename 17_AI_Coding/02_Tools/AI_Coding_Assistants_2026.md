@@ -1,3 +1,12 @@
+---
+title: 'AI编程助手 2026年全景报告'
+category: '17-ai-coding-02-tools'
+tags: ["ai-coding", "code-generation", "cursor", "github-copilot"]
+summary: '> **一句话理解**: AI编程已从"代码补全"进化为"结对编程伙伴"——Cursor以72%代码接受率领跑，Claude Code在复杂任务中表现卓越，而Devin代表完全自主编码的未来。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # AI编程助手 2026年全景报告
 
 > **一句话理解**: AI编程已从"代码补全"进化为"结对编程伙伴"——Cursor以72%代码接受率领跑，Claude Code在复杂任务中表现卓越，而Devin代表完全自主编码的未来。
@@ -462,3 +471,7 @@ https://codeium.com/windsurf
 ---
 
 *Last updated: 2026-04-11* (Cursor/Windsurf/Claude Code/Hermes Agent comparison)
+
+## Related
+
+- [[17_AI_Coding/README.md|README]]

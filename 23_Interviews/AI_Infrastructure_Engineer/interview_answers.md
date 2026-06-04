@@ -1,3 +1,12 @@
+---
+title: AI Infrastructure Engineer 面试题实例答案
+category: 23-interviews-ai-infrastructure-engineer
+tags: ["interviews", "career", "experience", "practitioners"]
+summary: "**答**：先从 I/O、网络与调度层定位瓶颈，再检查热点节点与资源竞争；使用 profiling 与监控指标追踪变化，并逐步回滚最近变更验证影响。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # AI Infrastructure Engineer 面试题实例答案
 
 ## Q1: 训练集群性能退化如何排查？
@@ -11,3 +20,10 @@
 
 ---
 *Last updated: 2026-02-26*
+
+## Related
+
+- [[23_Interviews/AI_Data_Analyst/company_level_question_bank]] — AI Data Analyst 按公司/级别区分的题库 (共享: career, experience, interviews, practitioners)
+- [[23_Interviews/AI_Data_Analyst/interview_answers]] — AI Data Analyst 面试题实例答案 (共享: career, experience, interviews, practitioners)
+- [[23_Interviews/AI_Data_Analyst/interview_preparing]] — AI Data Analyst 面试准备 (共享: career, experience, interviews, practitioners)
+- [[23_Interviews/AI_Data_Analyst/question_bank]] — AI Data Analyst 题库 (共享: career, experience, interviews, practitioners)

@@ -1,3 +1,12 @@
+---
+title: AI 系统的 SRE 实践指南
+category: 16-ai-ops
+tags: ["ai-ops", "observability", "monitoring", "incident-response"]
+summary: "> 🎯 **目标**：将 Google SRE 方法论应用于 AI/LLM 生产系统，建立可靠性工程体系 —— SLI/SLO 定义、错误预算、On-Call、事故响应和 Postmortem 文化。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # AI 系统的 SRE 实践指南
 
 > 🎯 **目标**：将 Google SRE 方法论应用于 AI/LLM 生产系统，建立可靠性工程体系 —— SLI/SLO 定义、错误预算、On-Call、事故响应和 Postmortem 文化。
@@ -587,3 +596,10 @@ request_cost_dollars = Counter(
 - [AI 安全](../../19_Ethics_Safety/AI_Security_2026/) — 安全红队
 
 > 📅 **最后更新**：2026-04-11 | **方法论**：Google SRE Book + AI 生产实践
+
+## Related
+
+- [[16_AI_Ops/AIOps-in-nutshell]] — AI Ops 速成指南 (共享: ai-ops, incident-response, monitoring, observability)
+- [[16_AI_Ops/AI_Incident_Response_Playbook]] — AI 系统事故响应手册 (共享: ai-ops, incident-response, monitoring, observability)
+- [[16_AI_Ops/AI_Ops_for_dummy]] — AI Ops 入门指南 (for Dummies) (共享: ai-ops, incident-response, monitoring, observability)
+- [[16_AI_Ops/README]] — AI 运维与可观测性 (AI Ops) (共享: ai-ops, incident-response, monitoring, observability)

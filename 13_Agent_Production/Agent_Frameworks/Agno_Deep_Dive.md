@@ -1,3 +1,12 @@
+---
+title: "agno: 现代 AI Agent 框架"
+category: "13-agent-production-agent-frameworks"
+tags: ["ai-agents", "agent-framework", "production", "langgraph"]
+summary: "> **一句话理解**: agno 是一个现代化的 AI Agent 框架——用极简的代码构建拥有知识、记忆和工具调用的智能 Agent。"
+created: "2026-05-31"
+updated: "2026-05-31"
+---
+
 # agno: 现代 AI Agent 框架
 
 > **一句话理解**: agno 是一个现代化的 AI Agent 框架——用极简的代码构建拥有知识、记忆和工具调用的智能 Agent。
@@ -496,3 +505,11 @@ memory = Memory(storage=Storage(
 
 *Last updated: 2026-04-24*
 *Version: 1.0.0*
+
+## Related
+
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026.md|Agent_Harness_Complete_2026]]
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026.md|Agent_Red_Teaming_2026]]
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow.md|Evaluation_Workflow]]
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment.md|Production_Assessment]]
+- [[13_Agent_Production/16_Agent_Evaluation/Benchmarking/Benchmarking_Criteria.md|Benchmarking_Criteria]]

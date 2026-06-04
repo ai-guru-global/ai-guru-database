@@ -1,3 +1,12 @@
+---
+title: 云产品智能体评估系统 - 系统架构文档
+category: 13-agent-production-16-agent-evaluation-docs-architecture
+tags: ["ai-agents", "agent-framework", "production", "langgraph"]
+summary: "> 基于 CAPER 五维模型的四层 Harness 架构"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 云产品智能体评估系统 - 系统架构文档
 
 > 基于 CAPER 五维模型的四层 Harness 架构
@@ -156,3 +165,10 @@ PluginRegistry
 | 排行榜 | leaderboard.tsx | `Web/src/pages/leaderboard.tsx` |
 | 雷达图 | RadarChart.tsx | `Web/src/components/leaderboard/RadarChart.tsx` |
 | 数据 | leaderboardData.ts | `Web/src/data/leaderboardData.ts` |
+
+## Related
+
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)

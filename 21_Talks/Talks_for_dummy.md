@@ -1,3 +1,12 @@
+---
+title: AI 名人演讲与观点 - 小白版
+category: 21-talks
+tags: ["talks", "speeches", "insights", "leaders"]
+summary: "> **一句话理解**: 读 AI 大牛的演讲就像站在巨人的肩膀上看世界——他们帮你把复杂的技术趋势浓缩成清晰的方向感。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # AI 名人演讲与观点 - 小白版
 
 > **一句话理解**: 读 AI 大牛的演讲就像站在巨人的肩膀上看世界——他们帮你把复杂的技术趋势浓缩成清晰的方向感。
@@ -269,3 +278,10 @@ flowchart LR
 ---
 
 *Last updated: 2026-05-07*
+
+## Related
+
+- [[21_Talks/Andrej_Karpathy/about]] — Andrej Karpathy 简介 (Andrej Karpathy) (共享: insights, leaders, speeches, talks)
+- [[21_Talks/Andrew_Ng/about]] — Andrew Ng 简介 (Andrew Ng) (共享: insights, leaders, speeches, talks)
+- [[21_Talks/Andrew_Ng/sayings]] — Andrew Ng 关于 AI 的观点与格言 (共享: insights, leaders, speeches, talks)
+- [[21_Talks/Bill_Gates/about]] — Bill Gates 简介 (Bill Gates) (共享: insights, leaders, speeches, talks)

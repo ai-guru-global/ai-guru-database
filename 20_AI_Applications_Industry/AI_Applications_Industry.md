@@ -1,3 +1,12 @@
+---
+title: 'AI应用与行业融合全景'
+category: '20-ai-applications-industry'
+tags: ["ai-applications", "industry", "finance", "healthcare"]
+summary: '> **一句话理解**: AI正在从"实验室技术"转变为"行业基础设施"——2026年，医疗诊断、金融风控、智能制造等核心领域都已深度嵌入AI，AI与行业的融合已进入"生产级应用"阶段。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # AI应用与行业融合全景
 
 > **一句话理解**: AI正在从"实验室技术"转变为"行业基础设施"——2026年，医疗诊断、金融风控、智能制造等核心领域都已深度嵌入AI，AI与行业的融合已进入"生产级应用"阶段。
@@ -606,3 +615,11 @@ AI平台化趋势:
 ---
 
 *Last updated: 2026-04-01* (Healthcare/Finance/Manufacturing focus)
+
+## Related
+
+- [[20_AI_Applications_Industry/Industry_Comparison_2026.md|Industry_Comparison_2026]]
+- [[20_AI_Applications_Industry/README.md|20_AI_Applications_Industry README]]
+- [[20_AI_Applications_Industry/README_for_dummy.md|README_for_dummy]]
+- [[20_AI_Applications_Industry/Agriculture/AI_Agriculture_2026.md|AI_Agriculture_2026]]
+- [[20_AI_Applications_Industry/Autonomous_Driving/AI_Autonomous_Driving_2026.md|AI_Autonomous_Driving_2026]]

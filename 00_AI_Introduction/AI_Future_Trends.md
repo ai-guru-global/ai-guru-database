@@ -1,3 +1,12 @@
+---
+title: AI未来趋势展望
+category: 00-ai-introduction
+tags: ["ai", "trends", "future", "agi"]
+summary: "我们正处于AI发展的历史转折点——从狭义AI向通用AI过渡的关键十年，技术突破、商业应用和社会适应将同步加速，塑造人类文明的下一个世纪。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # AI未来趋势展望
 
 > **一句话理解**: 我们正处于AI发展的历史转折点——从狭义AI向通用AI过渡的关键十年，技术突破、商业应用和社会适应将同步加速，塑造人类文明的下一个世纪。
@@ -999,3 +1008,9 @@ AI是人类创造的最强大工具之一，
 ---
 
 *Last updated: 2026-04-01* (通识课教材版)
+
+## Related
+
+- [[concepts/ai-future-trends]] — AI 未来趋势
+- [[concepts/ai-agents]] — AI 智能体
+- [[concepts/ai-ethics]] — AI 伦理

@@ -1,3 +1,12 @@
+---
+title: "状态空间模型 2026: Mamba 与 Transformer 后继者"
+category: "03-deep-learning"
+tags: ["deep-learning", "neural-networks", "backpropagation", "transformer"]
+summary: "> **一句话理解**: Transformer统治了AI 7年，但2026年状态空间模型(SSM)开始挑战它的霸主地位——Mamba、S4、RetNet等新架构承诺O(n)线性复杂度、超长上下文处理能力，以及在某些任务上媲美Transformer的性能，被认为是AGI之路的下一个里程碑。"
+created: "2026-05-31"
+updated: "2026-05-31"
+---
+
 # 状态空间模型 2026: Mamba 与 Transformer 后继者
 
 > **一句话理解**: Transformer统治了AI 7年，但2026年状态空间模型(SSM)开始挑战它的霸主地位——Mamba、S4、RetNet等新架构承诺O(n)线性复杂度、超长上下文处理能力，以及在某些任务上媲美Transformer的性能，被认为是AGI之路的下一个里程碑。
@@ -245,6 +254,125 @@ class MambaBlock(nn.Module):
         
         return y
 ```
+
+### 2.3 RWKV: RNN 与 Transformer 的融合
+
+```
+RWKV 架构概览:
+
+┌─────────────────────────────────────────────────────────────┐
+│                    RWKV (Receptance Weighted Key Value)       │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  核心思想: 用线性注意力替代二次方注意力                        │
+│  ├── 训练时: 保持Transformer的并行性                          │
+│  └── 推理时: 享受RNN的O(1)状态更新                           │
+│                                                              │
+│  关键组件:                                                    │
+│  ├── Receptance (R): 控制信息接收门控                        │
+│  ├── Weight (W): 位置衰减向量，替代位置编码                   │
+│  ├── Key (K): 内容键，与标准注意力相同                        │
+│  └── Value (V): 内容值，与标准注意力相同                      │
+│                                                              │
+│  时间混合机制 (Time Mixing):                                  │
+│  └── 当前token与历史状态的线性插值                            │
+│      x_t = μ · x_{t-1} + (1-μ) · x_t                        │
+│                                                              │
+│  优势:                                                        │
+│  ├── 训练并行 + 推理高效                                      │
+│  ├── 无KV Cache，内存固定                                     │
+│  └── 天然支持无限长上下文                                     │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+
+RWKV-5/6 演进:
+├── RWKV-4: 初始版本，验证线性注意力可行性
+├── RWKV-5: 引入多头机制，提升表达能力
+└── RWKV-6 (2024): 改进时间衰减，多模态扩展
+```
+
+**RWKV 与 Transformer 的核心差异:**
+
+| 特性 | RWKV | Transformer |
+|------|------|-------------|
+| 注意力复杂度 | O(L·D) | O(L²·D) |
+| 推理内存 | O(D) 固定 | O(L·D) 增长 |
+| 位置编码 | 内建衰减 | RoPE/正弦 |
+| 长上下文 | 天然支持 | 需要特殊优化 |
+| 训练稳定性 | 需要特殊初始化 | 成熟稳定 |
+
+**适用场景:**
+- 边缘设备部署（低内存需求）
+- 实时对话系统（流式生成）
+- 超长文档处理
+
+---
+
+### 2.4 RetNet: 保留并行训练 + 循环推理
+
+```
+RetNet 双模式设计:
+
+┌─────────────────────────────────────────────────────────────┐
+│                      RetNet (Retentive Network)               │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  核心创新: 单一架构同时支持两种计算模式                        │
+│                                                              │
+│  模式1: 并行训练 (Parallel)                                   │
+│  ├── 与Transformer完全相同的训练吞吐量                        │
+│  └── 使用Retention机制替代Softmax注意力                       │
+│      Retention(X) = (Q·K^T ⊙ D)·V                           │
+│      D: 因果衰减矩阵 (causal decay matrix)                    │
+│                                                              │
+│  模式2: 循环推理 (Recurrent)                                  │
+│  ├── 像RNN一样O(1)更新状态                                   │
+│  └── S_t = γ·S_{t-1} + K_t^T · V_t                          │
+│         Output_t = Q_t · S_t                                │
+│                                                              │
+│  衰减机制 (Decay):                                            │
+│  └── γ ∈ (0,1): 控制历史信息的遗忘速度                       │
+│      多头使用不同γ值，捕获多尺度依赖                          │
+│                                                              │
+│  性能对比 (1.3B参数):                                         │
+│  ├── 训练速度: ≈ Transformer                                  │
+│  ├── 推理速度: 3-4x Transformer (长序列)                      │
+│  └── 内存占用: 固定 vs 线性增长                              │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Retention vs Attention:**
+
+```python
+# 标准注意力 (Transformer)
+attn_scores = Q @ K.T  # O(L²)
+attn_weights = softmax(attn_scores / sqrt(d))
+output = attn_weights @ V
+
+# Retention (RetNet)
+# 并行模式
+decay_matrix = torch.tensor([[γ^(i-j) if i>=j else 0 for j in range(L)] for i in range(L)])
+retention = (Q @ K.T * decay_matrix) @ V  # 仍是O(L²)但可分解
+
+# 循环模式 (推理时)
+state = torch.zeros(d_k, d_v)
+for t in range(L):
+    state = γ * state + K[t].unsqueeze(-1) * V[t].unsqueeze(0)
+    output[t] = Q[t] @ state  # O(1) per step
+```
+
+**三种架构对比总结:**
+
+| 维度 | Mamba | RWKV | RetNet |
+|------|-------|------|--------|
+| 核心机制 | 选择性状态空间 | 线性注意力+时间混合 | 衰减Retention |
+| 训练并行 | ✓ | ✓ | ✓ |
+| 推理复杂度 | O(1) | O(1) | O(1) |
+| 内存占用 | 固定 | 固定 | 固定 |
+| 长序列 | 优秀 | 优秀 | 优秀 |
+| 短序列性能 | 略低于Transformer | 略低于 | 接近Transformer |
+| 主要应用 | 长文本、DNA、音频 | 边缘部署、对话 | 大规模训练、推理 |
 
 ---
 
@@ -560,3 +688,11 @@ SSM在AGI中的角色:
 ---
 
 *Last updated: 2026-04-10*
+
+## Related
+
+- [[03_Deep_Learning/DL-in-nutshell.md|DL-in-nutshell]]
+- [[03_Deep_Learning/README.md|03_Deep_Learning README]]
+- [[03_Deep_Learning/Neural_Network_Core/Neural_Network_Core.md|Neural_Network_Core]]
+- [[03_Deep_Learning/Neural_Network_Core/Neural_Network_Core_for_dummy.md|Neural_Network_Core_for_dummy]]
+- [[03_Deep_Learning/Optimization/Optimization.md|Optimization]]

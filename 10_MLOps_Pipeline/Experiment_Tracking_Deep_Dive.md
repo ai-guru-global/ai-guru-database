@@ -1,3 +1,12 @@
+---
+title: '实验追踪深度解析 (Experiment Tracking Deep Dive)'
+category: '10-mlops-pipeline'
+tags: ["mlops", "ci-cd", "pipeline", "feature-store"]
+summary: '> **一句话理解**: 实验追踪就像 AI 的"实验日记本"——自动记录每次训练的配方（参数）、结果（指标）和成品（模型），让你再也不用问"那个效果最好的模型是怎么训出来的？"'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # 实验追踪深度解析 (Experiment Tracking Deep Dive)
 
 > **一句话理解**: 实验追踪就像 AI 的"实验日记本"——自动记录每次训练的配方（参数）、结果（指标）和成品（模型），让你再也不用问"那个效果最好的模型是怎么训出来的？"
@@ -190,7 +199,7 @@ runs = mlflow.search_runs(
     max_results=10,
 )
 
-print(runs[["run_id", "metrics.f1_score", "params.n_estimators", "params.max_depth"]])
+print(runs``[ ["run_id", "metrics.f1_score", "params.n_estimators", "params.max_depth"] ]``)
 ```
 
 ---
@@ -484,3 +493,9 @@ model = RandomForestClassifier(**params)
 ---
 
 *Last updated: 2026-05-18*
+
+## Related
+
+- [[10_MLOps_Pipeline/Data_Pipeline_Orchestration.md|Data_Pipeline_Orchestration]]
+- [[10_MLOps_Pipeline/MLOps-in-nutshell.md|MLOps-in-nutshell]]
+- [[concepts/mlops.md|mlops]]

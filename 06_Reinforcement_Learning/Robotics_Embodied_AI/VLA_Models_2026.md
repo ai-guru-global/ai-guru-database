@@ -1,3 +1,12 @@
+---
+title: VLA 模型 2026：视觉-语言-动作模型的技术突破与产业应用
+category: 06-reinforcement-learning-robotics-embodied-ai
+tags: ["reinforcement-learning", "agent", "mdp"]
+summary: "> 全面解析 Vision-Language-Action (VLA) 模型：从 RT-2 到 OpenVLA、π0，端到端机器人控制的技术演进与 2026 前沿进展"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # VLA 模型 2026：视觉-语言-动作模型的技术突破与产业应用
 
 > 全面解析 Vision-Language-Action (VLA) 模型：从 RT-2 到 OpenVLA、π0，端到端机器人控制的技术演进与 2026 前沿进展
@@ -630,3 +639,10 @@ class VLSafetyChecker:
 ---
 
 *Last updated: 2026-04-03 | Version: 2026 Edition*
+
+## Related
+
+- [[06_Reinforcement_Learning/AI_Agents/AI_Agents_for_dummy]] — AI智能体 - 小白版 🤖 (共享: agent, mdp, reinforcement-learning, rl)
+- [[06_Reinforcement_Learning/AI_Agents/Agent-in-nutshell]] — AI 智能体速成指南 (共享: agent, mdp, reinforcement-learning, rl)
+- [[06_Reinforcement_Learning/AI_Agents/Agent_Future_Roadmap_2026_2030]] — Agent 未来发展路线图 2026-2030 (共享: agent, mdp, reinforcement-learning, rl)
+- [[06_Reinforcement_Learning/AI_Agents/Agent_Protocols_Detail]] — AI Agent 协议详解：MCP、A2A、UCP (共享: agent, mdp, reinforcement-learning, rl)

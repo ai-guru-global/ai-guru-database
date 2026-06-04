@@ -1,3 +1,12 @@
+---
+title: '10 MLOps 流水线 — 小白版 🔄'
+category: '10-mlops-pipeline'
+tags: ["mlops", "ci-cd", "pipeline", "feature-store"]
+summary: '> **一句话秒懂**: MLOps 就是 AI 版的"自动化工厂流水线"——从数据处理、模型训练、测试到部署，全流程自动化，让 AI 系统像正规产品一样持续迭代、稳定运行。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # 10 MLOps 流水线 — 小白版 🔄
 
 > **一句话秒懂**: MLOps 就是 AI 版的"自动化工厂流水线"——从数据处理、模型训练、测试到部署，全流程自动化，让 AI 系统像正规产品一样持续迭代、稳定运行。
@@ -120,3 +129,9 @@ MLOps 流程:
 ---
 
 *本文是 [README.md](./README.md) 的简化版，适合零基础读者。*
+
+## Related
+
+- [[10_MLOps_Pipeline/Data_Pipeline_Orchestration.md|Data_Pipeline_Orchestration]]
+- [[10_MLOps_Pipeline/MLOps-in-nutshell.md|MLOps-in-nutshell]]
+- [[concepts/mlops.md|mlops]]

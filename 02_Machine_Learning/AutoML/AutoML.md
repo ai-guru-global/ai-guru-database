@@ -1,3 +1,12 @@
+---
+title: 'AutoML - 自动化机器学习'
+category: '02-machine-learning-automl'
+tags: ["machine-learning", "supervised", "unsupervised"]
+summary: '> **一句话秒懂**: AutoML 就是让机器学习自己学会怎么学——自动选模型、调参数、做特征工程，让你从"炼丹师"变成"指挥官"。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # AutoML - 自动化机器学习
 
 > **一句话秒懂**: AutoML 就是让机器学习自己学会怎么学——自动选模型、调参数、做特征工程，让你从"炼丹师"变成"指挥官"。

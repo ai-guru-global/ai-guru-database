@@ -1,3 +1,12 @@
+---
+title: "Promptfoo: LLM Prompt 测试框架"
+category: "15-testing"
+tags: ["testing", "ai-testing", "prompt-testing", "evaluation", "llm"]
+summary: "> **一句话理解**: Promptfoo 是 LLM Prompt 测试框架——批量测试、多模型对比、回归测试、自定义评分，Prompt 工程的 CI/CD。"
+created: "2026-05-31"
+updated: "2026-05-31"
+---
+
 # Promptfoo: LLM Prompt 测试框架
 
 > **一句话理解**: Promptfoo 是 LLM Prompt 测试框架——批量测试、多模型对比、回归测试、自定义评分，Prompt 工程的 CI/CD。
@@ -336,3 +345,11 @@ jobs:
 
 *Last updated: 2026-04-26*
 *Version: 1.0.0*
+
+## Related
+
+- [[15_Testing/AI-Testing-in-nutshell.md|AI-Testing-in-nutshell]]
+- [[15_Testing/AI_Testing_for_dummy.md|AI_Testing_for_dummy]]
+- [[15_Testing/Java_AI_Testing.md|Java_AI_Testing]]
+- [[15_Testing/README.md|15_Testing README]]
+- [[04_NLP_LLMs/Fine_tuning_Techniques/Axolotl_Deep_Dive.md|Axolotl_Deep_Dive]]

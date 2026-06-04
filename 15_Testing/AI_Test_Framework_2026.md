@@ -1,3 +1,12 @@
+---
+title: 'AI 系统测试框架 (AI Test Framework 2026)'
+category: '15-testing'
+tags: ["testing", "ai-testing", "prompt-testing", "evaluation"]
+summary: '> **一句话理解**: AI 系统测试框架是保障 AI 应用质量的"安全网"——通过多层级、自动化的测试体系，确保 AI 系统在发布前经过充分验证，上线后稳定可靠。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # AI 系统测试框架 (AI Test Framework 2026)
 
 > **一句话理解**: AI 系统测试框架是保障 AI 应用质量的"安全网"——通过多层级、自动化的测试体系，确保 AI 系统在发布前经过充分验证，上线后稳定可靠。
@@ -1284,15 +1293,15 @@ jobs:
     steps:
       - name: Check test results
         run: |
-          if [[ "${{ needs.unit-tests.result }}" != "success" ]]; then
+          if `````[[ "${{ needs.unit-tests.result }}" != "success" ]]`````; then
             echo "Unit tests failed"
             exit 1
           fi
-          if [[ "${{ needs.prompt-tests.result }}" != "success" ]]; then
+          if `````[[ "${{ needs.prompt-tests.result }}" != "success" ]]`````; then
             echo "Prompt tests failed"
             exit 1
           fi
-          if [[ "${{ needs.component-tests.result }}" != "success" ]]; then
+          if `````[[ "${{ needs.component-tests.result }}" != "success" ]]`````; then
             echo "Component tests failed"
             exit 1
           fi
@@ -1373,3 +1382,11 @@ quality_gates:
 
 *Last updated: 2026-04-13*
 *Version: 1.0.0*
+
+## Related
+
+- [[15_Testing/AI-Testing-in-nutshell.md|AI-Testing-in-nutshell]]
+- [[15_Testing/AI_Testing_for_dummy.md|AI_Testing_for_dummy]]
+- [[15_Testing/Java_AI_Testing.md|Java_AI_Testing]]
+- [[15_Testing/README.md|15_Testing README]]
+- [[13_Agent_Production/16_Agent_Evaluation/Testing_Methodologies/Testing_Framework.md|Testing_Framework]]

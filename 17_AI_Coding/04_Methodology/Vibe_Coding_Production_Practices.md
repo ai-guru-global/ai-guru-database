@@ -1,3 +1,12 @@
+---
+title: 'Vibe Coding 生产环境实践指南'
+category: '17-ai-coding-04-methodology'
+tags: ["ai-coding", "code-generation", "cursor", "github-copilot"]
+summary: '> **一句话理解**: 在生产环境中应用 Vibe Coding 不是让 AI 随意写代码，而是建立一套"AI 生成 → 自动化验证 → 分级审查 → 灰度发布"的工程化体系，确保 AI 加速开发的同时不牺牲质量和安全。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # Vibe Coding 生产环境实践指南
 
 > **一句话理解**: 在生产环境中应用 Vibe Coding 不是让 AI 随意写代码，而是建立一套"AI 生成 → 自动化验证 → 分级审查 → 灰度发布"的工程化体系，确保 AI 加速开发的同时不牺牲质量和安全。

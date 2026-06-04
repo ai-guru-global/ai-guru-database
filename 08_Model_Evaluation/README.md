@@ -1,3 +1,12 @@
+---
+title: 模型评估 (Model Evaluation)
+category: 08-model-evaluation
+tags: ["model-evaluation", "metrics", "ab-testing", "benchmark"]
+summary: "> **一句话理解**: 模型评估就像考试——你需要设计不同类型的考题（评估指标），用合理的考试规则（评估方法），才能判断学生（模型）是否真的学好了，而不是只会背答案（过拟合）。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 模型评估 (Model Evaluation)
 
 > **一句话理解**: 模型评估就像考试——你需要设计不同类型的考题（评估指标），用合理的考试规则（评估方法），才能判断学生（模型）是否真的学好了，而不是只会背答案（过拟合）。
@@ -10,8 +19,13 @@
 |------|------|----------|
 | [Model Evaluation](./Model_Evaluation.md) | 分类/回归/排序指标、LLM 评估基准、统计显著性 | 系统学习 |
 | [Model Evaluation for Dummy](./Model_Evaluation_for_dummy.md) | 评估概念的简化版解释 | 初学者 |
-
-> ⚠️ **注意**: 本章正在扩充中。当前覆盖基础评估指标，自动化评估和在线评估专题即将上线。
+| [Evaluation-in-nutshell](./Evaluation-in-nutshell.md) | 模型评估速成指南 | 快速入门 |
+| [Evaluation Automation 2026](./Evaluation_Automation_2026.md) | CI/CD 中的自动评估流水线 | 进阶 |
+| [Online Evaluation](./Online_Evaluation.md) | A/B 测试、影子流量、金丝雀发布 | 进阶 |
+| [LLM-as-Judge 深度解析](./LLM_as_Judge_Deep_Dive.md) | 单点评分、成对比较、Rubric 评估、偏差缓解 | 进阶 |
+| [Multimodal Evaluation Benchmarks](./Multimodal_Evaluation_Benchmarks.md) | MMMU/MathVista/DocVQA/POPE 等视觉评测 | 进阶 |
+| [Long Context Evaluation](./Long_Context_Evaluation.md) | 128K+ 长上下文模型评估方法 | 进阶 |
+| [Fairness Evaluation](./Fairness_Evaluation_for_dummy.md) | 公平性评估入门 | 初学者 |
 
 ---
 
@@ -40,10 +54,37 @@
 
 ## 规划中的内容
 
-- [ ] 评估自动化 2026（CI/CD 中的自动评估流程）
-- [ ] 在线评估（A/B 测试、影子流量、金丝雀发布）
-- [ ] LLM 评估深度解析（超越 MMLU/HumanEval 的评估方法论）
+- [x] ✅ [Evaluation Automation 2026](./Evaluation_Automation_2026.md) — CI/CD 自动评估流程
+- [x] ✅ [Online Evaluation](./Online_Evaluation.md) — A/B 测试、影子流量、金丝雀发布
+- [x] ✅ [LLM-as-Judge 深度解析](./LLM_as_Judge_Deep_Dive.md) — LLM 评委评估方法论
+- [ ] 领域特定评估（医疗/金融/法律场景评估规范）
+- [ ] 评估数据集构建（高质量评估集的采集与维护）
 
 ---
 
 *本章内容持续建设中。*
+
+## Related
+- [[08_Model_Evaluation/LLM_Benchmark_Suite_2026|LLM Benchmark Suite 2026 — 大语言模型评测基准全览]]
+- [[08_Model_Evaluation/Agentic_Benchmark_Guide|Agentic Benchmarks — AI Agent 评测全景指南]]
+- [[08_Model_Evaluation/LLM_as_Judge_Deep_Dive|LLM-as-Judge 深度解析 (LLM-as-Judge Deep Dive)]]
+- [[08_Model_Evaluation/Evaluation-in-nutshell|模型评估速成指南]]
+- [[08_Model_Evaluation/Online_Evaluation|在线评估 (Online Evaluation)]]
+- [[08_Model_Evaluation/Fairness_Evaluation_for_dummy|公平性评估 - 小白版]]
+- [[08_Model_Evaluation/Evaluation_Automation_2026|自动化模型评估 2026 (Evaluation Automation)]]
+- [[08_Model_Evaluation/README_for_dummy|08 模型评估 — 小白版 📝]]
+
+- [[08_Model_Evaluation/Model_Evaluation]] — 模型评估 (Model Evaluation) (共享: ab-testing, benchmark, metrics, model-evaluation)
+- [[08_Model_Evaluation/Online_Evaluation.md|Online_Evaluation]]
+- [[08_Model_Evaluation/Fairness_Evaluation_for_dummy.md|Fairness_Evaluation_for_dummy]]
+- [[08_Model_Evaluation/Evaluation_Automation_2026.md|Evaluation_Automation_2026]]
+- [[08_Model_Evaluation/README_for_dummy.md|README_for_dummy]]
+- [[08_Model_Evaluation/Multimodal_Evaluation_Benchmarks|Multimodal_Evaluation_Benchmarks]]
+- [[08_Model_Evaluation/Long_Context_Evaluation|Long_Context_Evaluation]]
+
+## 本期新增
+
+- [[08_Model_Evaluation/Multimodal_Evaluation_Benchmarks|Multimodal Evaluation Benchmarks]]
+- [[08_Model_Evaluation/Long_Context_Evaluation|Long Context Evaluation]]
+
+

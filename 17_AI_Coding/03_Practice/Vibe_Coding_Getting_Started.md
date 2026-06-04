@@ -1,3 +1,12 @@
+---
+title: 'Vibe Coding 傻瓜指南 (Vibe Coding for Dummies)'
+category: '17-ai-coding-03-practice'
+tags: ["ai-coding", "code-generation", "cursor", "github-copilot"]
+summary: '> **一句话理解**: Vibe Coding 就是用"说人话"的方式让 AI 帮你写代码——你不是打字员，你是导演，AI 是你的编剧和演员。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # Vibe Coding 傻瓜指南 (Vibe Coding for Dummies)
 
 > **一句话理解**: Vibe Coding 就是用"说人话"的方式让 AI 帮你写代码——你不是打字员，你是导演，AI 是你的编剧和演员。
@@ -317,3 +326,11 @@ A: 基础使用1-2周，熟练使用1-2月，精通3-6月。
 ---
 
 *Last updated: 2026-04-11*
+
+## Related
+
+- [[17_AI_Coding/01_Theory/AI_Coding_Theory.md|AI_Coding_Theory]]
+- [[17_AI_Coding/02_Tools/AI_Coding_Assistants_2026.md|AI_Coding_Assistants_2026]]
+- [[17_AI_Coding/02_Tools/CodeBuddy_Guide.md|CodeBuddy_Guide]]
+- [[17_AI_Coding/02_Tools/Comate_Guide.md|Comate_Guide]]
+- [[17_AI_Coding/02_Tools/Coze_Guide.md|Coze_Guide]]

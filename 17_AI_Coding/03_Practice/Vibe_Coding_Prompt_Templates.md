@@ -1,3 +1,12 @@
+---
+title: Vibe Coding 提示词模板库
+category: 17-ai-coding-03-practice
+tags: ["ai-coding", "code-generation", "cursor", "github-copilot"]
+summary: "> **一句话理解**: 从 STAR 框架到规则文件模板，从场景模板到反面教材——你的一站式提示工程工具箱。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # Vibe Coding 提示词模板库
 
 > **一句话理解**: 从 STAR 框架到规则文件模板，从场景模板到反面教材——你的一站式提示工程工具箱。
@@ -538,3 +547,10 @@ src/
 ---
 
 *Consolidated from Vibe Coding 方法论 and Vibe Coding 傻瓜指南, 2026-04*
+
+## Related
+
+- [[17_AI_Coding/01_Theory/AI_Coding_Theory]] — AI辅助编程理论基础 (共享: ai-coding, code-generation, cursor, github-copilot)
+- [[17_AI_Coding/02_Tools/CodeBuddy_Guide]] — CodeBuddy / WorkBuddy 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
+- [[17_AI_Coding/02_Tools/Comate_Guide]] — Comate 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
+- [[17_AI_Coding/02_Tools/Coze_Guide]] — Coze 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)

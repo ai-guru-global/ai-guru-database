@@ -1,3 +1,12 @@
+---
+title: 'AI Agent 记忆系统 2026'
+category: '13-agent-production-memory-infrastructure'
+tags: ["ai-agents", "agent-framework", "production", "langgraph"]
+summary: '> **一句话理解**: 2026年的AI Agent不再"说完就忘"——MemGPT、Mem0等记忆系统让Agent拥有了层级记忆、人格一致性、跨会话学习的能力，从"每次都是新对话"进化到"真正的持续学习伙伴"。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # AI Agent 记忆系统 2026
 
 > **一句话理解**: 2026年的AI Agent不再"说完就忘"——MemGPT、Mem0等记忆系统让Agent拥有了层级记忆、人格一致性、跨会话学习的能力，从"每次都是新对话"进化到"真正的持续学习伙伴"。
@@ -674,3 +683,11 @@ class MemoryPrivacyManager:
 ---
 
 *Last updated: 2026-04-10*
+
+## Related
+
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026.md|Agent_Harness_Complete_2026]]
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026.md|Agent_Red_Teaming_2026]]
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow.md|Evaluation_Workflow]]
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment.md|Production_Assessment]]
+- [[13_Agent_Production/16_Agent_Evaluation/Benchmarking/Benchmarking_Criteria.md|Benchmarking_Criteria]]

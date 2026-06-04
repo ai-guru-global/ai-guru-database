@@ -1,3 +1,12 @@
+---
+title: 里程碑自测
+category: 90-learn
+tags: ["learning", "education", "courses", "study-path"]
+summary: "> **用这些问题检验你对每个 Stage 的理解程度。如果能回答大部分问题，说明你已经达到了该阶段的学习目标。**"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 里程碑自测
 
 > **用这些问题检验你对每个 Stage 的理解程度。如果能回答大部分问题，说明你已经达到了该阶段的学习目标。**
@@ -234,3 +243,12 @@
 ---
 
 *本文档是 AI Guru 知识库概念入门路径的里程碑自测系统。每个 Stage 的问题设计参考了 [AI 概念知识图谱](../91_Notes/AI_Concept_Knowledge_Graph.md) 中的概念依赖关系。*
+
+## Related
+
+- [[90_Learn/pathways/absolute-beginner]] — 零基础通识路径 (共享: courses, education, learning, study-path)
+- [[90_Learn/pathways/ai-researcher]] — AI 研究者路径 (共享: courses, education, learning, study-path)
+- [[90_Learn/pathways/java-developer]] — Java 开发者 AI 路径 (共享: courses, education, learning, study-path)
+- [[90_Learn/pathways/llm-engineer]] — LLM 工程师路径 (共享: courses, education, learning, study-path)
+- [[90_Learn/README.md|README]]
+- [[90_Learn/README_for_dummy.md|README_for_dummy]]

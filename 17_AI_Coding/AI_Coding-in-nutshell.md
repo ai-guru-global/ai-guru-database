@@ -1,3 +1,12 @@
+---
+title: AI 编程 - 速查版
+category: 17-ai-coding
+tags: ["ai-coding", "code-generation", "cursor", "github-copilot"]
+summary: "> **一句话秒懂**: 一张纸搞懂 AI 编程工具怎么选、怎么用、怎么避坑。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # AI 编程 - 速查版
 
 > **一句话秒懂**: 一张纸搞懂 AI 编程工具怎么选、怎么用、怎么避坑。
@@ -188,3 +197,10 @@
 ---
 
 *本文是 AI 编程的快速参考版。想看详细讲解？[点这里](./AI_Coding_for_dummy.md)*
+
+## Related
+
+- [[17_AI_Coding/01_Theory/AI_Coding_Theory]] — AI辅助编程理论基础 (共享: ai-coding, code-generation, cursor, github-copilot)
+- [[17_AI_Coding/02_Tools/CodeBuddy_Guide]] — CodeBuddy / WorkBuddy 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
+- [[17_AI_Coding/02_Tools/Comate_Guide]] — Comate 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
+- [[17_AI_Coding/02_Tools/Coze_Guide]] — Coze 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)

@@ -1,3 +1,12 @@
+---
+title: 语料库改进指南
+category: 13-agent-production-16-agent-evaluation-corpus-assessment
+tags: ["ai-agents", "agent-framework", "production", "langgraph"]
+summary: "> 基于评估结果的语料库优化方法论，实现从发现问题到验证提升的完整闭环"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 语料库改进指南
 
 > 基于评估结果的语料库优化方法论，实现从发现问题到验证提升的完整闭环
@@ -394,3 +403,11 @@ ROI = (提升带来的业务价值) / (语料改进投入成本) × 100%
 - [语料库质量指标](./Corpus_Quality_Metrics.md) - 详细的质量评估指标
 - [云产品 Agent 测评框架](../Cloud_Agent_Evaluation/Cloud_Agent_Benchmark_2026.md) - 整体测评框架
 - [云产品 Agent 排行榜](../Cloud_Agent_Leaderboard_2026.md) - 综合排名
+
+## Related
+
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/Memory_Infrastructure/README.md|README]]

@@ -1,3 +1,12 @@
+---
+title: 22 Papers — 小白版 📚
+category: 22-papers
+tags: ["paper", "deep-dive"]
+summary: "## 为什么要读论文？"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 22 Papers — 小白版 📚
 
 > **一句话秒懂**: 这一章带你读 AI 领域最重要的"武林秘籍"——那些改变世界的经典论文。每篇论文都有"核心贡献"和"为什么必读"的解读，让你从论文源头理解现代 AI 是怎么来的。
@@ -123,3 +132,7 @@
 ---
 
 *本文是 [README.md](./README.md) 的简化版，适合零基础读者。准备好探索 AI 武林秘籍了吗？让我们开始吧！* 🚀
+
+## Related
+
+- [[22_Papers/README]] — 10 经典与必读 AI 论文清单 (Essential AI Papers) (共享: deep-dive, paper)

@@ -1,3 +1,12 @@
+---
+title: Data Scientist 面试题实例答案
+category: 23-interviews-data-scientist
+tags: ["interviews", "career", "experience", "practitioners"]
+summary: "**答**：相关性反映变量共同变化，不代表因果。要建立因果关系需控制混杂因素，使用随机实验或因果推断方法（如倾向得分匹配）。在业务场景中，我会优先通过 A/B 测试验证结论。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # Data Scientist 面试题实例答案
 
 ## Q1: 相关性与因果性如何区分？
@@ -11,3 +20,10 @@
 
 ---
 *Last updated: 2026-02-26*
+
+## Related
+
+- [[23_Interviews/AI_Data_Analyst/company_level_question_bank]] — AI Data Analyst 按公司/级别区分的题库 (共享: career, experience, interviews, practitioners)
+- [[23_Interviews/AI_Data_Analyst/interview_answers]] — AI Data Analyst 面试题实例答案 (共享: career, experience, interviews, practitioners)
+- [[23_Interviews/AI_Data_Analyst/interview_preparing]] — AI Data Analyst 面试准备 (共享: career, experience, interviews, practitioners)
+- [[23_Interviews/AI_Data_Analyst/question_bank]] — AI Data Analyst 题库 (共享: career, experience, interviews, practitioners)

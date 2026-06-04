@@ -1,3 +1,12 @@
+---
+title: 'AI 法律与政务行业应用 (2025-2026)'
+category: '20-ai-applications-industry-legal-government'
+tags: ["ai-applications", "industry", "finance", "healthcare"]
+summary: '> **一句话理解**: 2026年AI法律助手已从"检索工具"进化为"初级律师"——Harvey AI服务全球前100大律所中的40+家，AI合同审查效率提升80%，智能政务覆盖全球50+国家。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # AI 法律与政务行业应用 (2025-2026)
 
 > **一句话理解**: 2026年AI法律助手已从"检索工具"进化为"初级律师"——Harvey AI服务全球前100大律所中的40+家，AI合同审查效率提升80%，智能政务覆盖全球50+国家。

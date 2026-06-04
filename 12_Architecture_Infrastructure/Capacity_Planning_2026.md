@@ -1,3 +1,12 @@
+---
+title: 'AI 系统容量规划指南 (Capacity Planning 2026)'
+category: '12-architecture-infrastructure'
+tags: ["architecture", "infrastructure", "kubernetes", "high-availability"]
+summary: '> **一句话理解**: 容量规划是 AI 系统的"预算管理"——预测未来负载、评估资源需求、制定扩缩容策略，确保系统在满足 SLA 的同时控制成本。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # AI 系统容量规划指南 (Capacity Planning 2026)
 
 > **一句话理解**: 容量规划是 AI 系统的"预算管理"——预测未来负载、评估资源需求、制定扩缩容策略，确保系统在满足 SLA 的同时控制成本。
@@ -1412,3 +1421,11 @@ groups:
 
 *Last updated: 2026-04-13*
 *Version: 1.0.0*
+
+## Related
+
+- [[12_Architecture_Infrastructure/AI_Infrastructure_2026.md|AI_Infrastructure_2026]]
+- [[12_Architecture_Infrastructure/Architecture-in-nutshell.md|Architecture-in-nutshell]]
+- [[12_Architecture_Infrastructure/Architecture_Infrastructure_for_dummy.md|Architecture_Infrastructure_for_dummy]]
+- [[12_Architecture_Infrastructure/Spring_AI_Architecture.md|Spring_AI_Architecture]]
+- [[concepts/llm-infrastructure.md|llm-infrastructure]]

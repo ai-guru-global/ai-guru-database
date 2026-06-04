@@ -1,3 +1,12 @@
+---
+title: 'AI 系统架构全景图 (AI System Architecture 2026)'
+category: '12-architecture-infrastructure'
+tags: ["architecture", "infrastructure", "kubernetes", "high-availability"]
+summary: '> **一句话理解**: 系统架构全景图是 AI 系统的"设计蓝图"——展示从用户请求到模型响应的完整链路，帮助理解各组件如何协作、数据如何流动、系统如何扩展。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # AI 系统架构全景图 (AI System Architecture 2026)
 
 > **一句话理解**: 系统架构全景图是 AI 系统的"设计蓝图"——展示从用户请求到模型响应的完整链路，帮助理解各组件如何协作、数据如何流动、系统如何扩展。
@@ -989,3 +998,11 @@ flowchart TD
 
 *Last updated: 2026-04-14*
 *Version: 2.0.0 (Enhanced with infrastructure integration)*
+
+## Related
+
+- [[12_Architecture_Infrastructure/AI_Infrastructure_2026.md|AI_Infrastructure_2026]]
+- [[12_Architecture_Infrastructure/Architecture-in-nutshell.md|Architecture-in-nutshell]]
+- [[12_Architecture_Infrastructure/Architecture_Infrastructure_for_dummy.md|Architecture_Infrastructure_for_dummy]]
+- [[12_Architecture_Infrastructure/Spring_AI_Architecture.md|Spring_AI_Architecture]]
+- [[concepts/llm-infrastructure.md|llm-infrastructure]]

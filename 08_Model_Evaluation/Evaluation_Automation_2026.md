@@ -1,3 +1,12 @@
+---
+title: '自动化模型评估 2026 (Evaluation Automation)'
+category: '08-model-evaluation'
+tags: ["model-evaluation", "metrics", "ab-testing", "benchmark"]
+summary: '> **一句话理解**: 自动化评估就像给模型装上"自动驾驶仪"——每次代码或模型变更都自动跑一遍"考试"，确保新版本不会比旧版本差，让评估从手工作坊变成工业流水线。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # 自动化模型评估 2026 (Evaluation Automation)
 
 > **一句话理解**: 自动化评估就像给模型装上"自动驾驶仪"——每次代码或模型变更都自动跑一遍"考试"，确保新版本不会比旧版本差，让评估从手工作坊变成工业流水线。
@@ -1371,3 +1380,11 @@ flowchart TD
 ---
 
 *Last updated: 2026-05-07*
+
+## Related
+
+- [[08_Model_Evaluation/Model_Evaluation.md|Model_Evaluation]]
+- [[08_Model_Evaluation/README.md|08_Model_Evaluation README]]
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow.md|Evaluation_Workflow]]
+- [[13_Agent_Production/16_Agent_Evaluation/Cloud_Agent_Evaluation/README.md|Cloud_Agent_Evaluation README]]
+- [[13_Agent_Production/16_Agent_Evaluation/Cloud_Agent_Evaluation_System_2026.md|Cloud_Agent_Evaluation_System_2026]]

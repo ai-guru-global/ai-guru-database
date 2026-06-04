@@ -1,10 +1,19 @@
+---
+title: 克隆仓库
+category: mkdocs-docs
+tags: ["documentation", "mkdocs", "docs-as-code"]
+summary: ""
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 <div align="center">
 
 <h1>🧠 AI Guru 知识库</h1>
 
 <p><strong>这可能是 GitHub 上最全面的 AI 学习资源</strong></p>
 
-<p>从理论到生产的完整 AI 知识体系 | 368+ 文档 | 519万+ 字 | 2026 最新</p>
+<p>从理论到生产的完整 AI 知识体系 | 492+ 文档 | 683万+ 字 | 2026 最新</p>
 
 <p>
   <a href="#-快速开始">🚀 快速开始</a> •
@@ -15,11 +24,11 @@
 </p>
 
 <p>
-  <img src="https://img.shields.io/badge/文档-368%2B-blue?style=flat-square&logo=bookstack" alt="Docs">
-  <img src="https://img.shields.io/badge/字数-519万%2B-green?style=flat-square" alt="Content">
+  <img src="https://img.shields.io/badge/文档-492%2B-blue?style=flat-square&logo=bookstack" alt="Docs">
+  <img src="https://img.shields.io/badge/字数-683万%2B-green?style=flat-square" alt="Content">
   <img src="https://img.shields.io/badge/章节-20-orange?style=flat-square" alt="Chapters">
   <img src="https://img.shields.io/badge/速成指南-9-purple?style=flat-square" alt="Guides">
-  <img src="https://img.shields.io/badge/更新-2026--04-red?style=flat-square" alt="Updated">
+  <img src="https://img.shields.io/badge/更新-2026--06-red?style=flat-square" alt="Updated">
   <img src="https://img.shields.io/badge/License-MIT-yellow?style=flat-square" alt="License">
 </p>
 
@@ -44,8 +53,8 @@
 <td width="50%">
 
 **📚 内容全面**
-- 368+ Markdown 文档
-- 519万+ 字符（约 865 页 A4）
+- 492+ Markdown 文档
+- 683万+ 字符（约 1,138 页 A4）
 - 涵盖 70+ 技术领域
 - 从数学基础到 AGI 前沿
 
@@ -84,7 +93,7 @@
 ### 📊 数据说话
 
 ```
-📁 368 个 Markdown 文件    📄 519 万+ 字符（约 865 页 A4）
+📁 492 个 Markdown 文件    📄 683 万+ 字符（约 1,138 页 A4）
 📚 20 个知识章节          ⚡ 9 个速成指南
 🎓 10 本大学教材          🔬 12 个 2026 专题
 🏢 8 大行业应用           👔 21 个岗位面试指南
@@ -95,18 +104,18 @@
 
 | 目录名称 | 文件数 | 字符数 | 占比 |
 |---------|--------|--------|------|
-| 13_Agent_Production | 89 | 140.67 万 | 36.7% |
-| 18_Cloud_Ops_Agent | 16 | 31.43 万 | 8.2% |
-| 06_Reinforcement_Learning | 19 | 35.30 万 | 9.2% |
-| 04_NLP_LLMs | 22 | 26.95 万 | 7.0% |
-| 19_Ethics_Safety | 13 | 18.64 万 | 4.9% |
-| 12_Architecture_Infrastructure | 7 | 17.54 万 | 4.6% |
-| 16_AI_Ops | 8 | 14.96 万 | 3.9% |
-| 15_Testing | 4 | 13.84 万 | 3.6% |
-| 03_Deep_Learning | 10 | 14.94 万 | 3.9% |
-| 00_AI_Introduction | 11 | 12.72 万 | 3.3% |
-| 其他 10 个目录 | 59 | 96.15 万 | 25.1% |
-| **总计** | **368** | **519.06 万** | **100%** |
+| 13_Agent_Production | 108 | 177.40 万 | 26.0% |
+| 04_NLP_LLMs | 56 | 86.68 万 | 12.7% |
+| 17_AI_Coding | 57 | 38.37 万 | 5.6% |
+| 06_Reinforcement_Learning | 21 | 37.11 万 | 5.4% |
+| 18_Cloud_Ops_Agent | 19 | 36.49 万 | 5.3% |
+| 02_Machine_Learning | 23 | 29.21 万 | 4.3% |
+| 16_AI_Ops | 23 | 29.22 万 | 4.3% |
+| 12_Architecture_Infrastructure | 12 | 24.54 万 | 3.6% |
+| 11_RAG_Systems | 20 | 24.17 万 | 3.5% |
+| 19_Ethics_Safety | 19 | 23.31 万 | 3.4% |
+| 其他 10 个目录 | 134 | 176.66 万 | 25.9% |
+| **总计** | **492** | **683.16 万** | **100%** |
 
 > 💡 提示：运行 `python3 count_words.py` 可查看最新的实时统计
 
@@ -452,3 +461,29 @@ git push origin feature/your-feature
 </p>
 
 </div>
+
+## Related
+
+- [[README]] — 克隆仓库 (共享: docs-as-code, documentation, mkdocs)
+- [MkDocs 站点建设指南](mkdocs-docs/SITE_BUILD_GUIDE.md) — docs-as-code, documentation, mkdocs
+- [[ROADMAP]] — AI Guru 知识库路线图
+- [[KNOWN_ISSUES]] — AI Guru 知识库 - 已知问题追踪 (Known Issues)
+- [[README_EN]] — README_EN
+- [[CONTRIBUTING]] — Contributing to AI Guru
+- [[README_for_dummy]] — README_for_dummy
+- [[22_Papers/Mixture_of_Experts_Deep_Dive]] — Mixture of Experts 深度解读 (从 Switch Transformers 到 Mixtral 和 DeepSeek)
+- [[22_Papers/Attention_Is_All_You_Need_Deep_Dive]] — Attention Is All You Need 深度解读
+- [[22_Papers/RLHF_DPO_Deep_Dive]] — RLHF 与 DPO 深度解读 (从 InstructGPT 到 Direct Preference Optimization)
+- [[22_Papers/AlphaGo_Deep_Dive]] — AlphaGo 深度解读 (Mastering the Game of Go)
+- [[22_Papers/LLaMA_Deep_Dive]] — LLaMA 深度解读 (Open and Efficient Foundation Language Models)
+- [[22_Papers/DQN_Deep_Dive]] — DQN 深度解读 (Playing Atari with Deep Reinforcement Learning)
+- [[14_AI_Gateway/AI_Gateway_for_dummy]] — AI Gateway 入门指南 (for Dummies)
+- [[14_AI_Gateway/Gateway-in-nutshell]] — AI 网关速成指南
+- [[14_AI_Gateway/AI_Gateway_2026]] — AI_Gateway_2026
+- [[14_AI_Gateway/Spring_AI_Gateway_Security]] — Spring AI 网关与安全
+- [[14_AI_Gateway/Kong_AI_Gateway_Deep_Dive]] — Kong AI Gateway 深度解析
+- [[14_AI_Gateway/Portkey_Deep_Dive]] — Portkey_Deep_Dive
+- [[14_AI_Gateway/Cohere_Deep_Dive]] — Cohere_Deep_Dive
+- [[00_AI_Introduction/AI_Fundamentals|AI 基础概念]] — 知识库入门索引
+
+- [[synthesis/README|跨域综合文档索引]] — 跨章节概念关联分析

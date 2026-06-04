@@ -1,3 +1,12 @@
+---
+title: Andrew Ng 简介 (Andrew Ng)
+category: 21-talks-andrew-ng
+tags: ["talks", "speeches", "insights", "leaders"]
+summary: "**身份**: Deeplearning.AI 与 Landing AI 创始人，Coursera 联合创始人，斯坦福大学兼职教授。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # Andrew Ng 简介 (Andrew Ng)
 
 - **身份**: Deeplearning.AI 与 Landing AI 创始人，Coursera 联合创始人，斯坦福大学兼职教授。
@@ -20,3 +29,11 @@
 - [AI 未来趋势](../../00_AI_Introduction/AI_Future_Trends.md) — 行业前瞻判断汇总
 
 *Last updated: 2026-05-07*
+
+## Related
+
+- [[21_Talks/Andrej_Karpathy/about]] — Andrej Karpathy 简介 (Andrej Karpathy) (共享: insights, leaders, speeches, talks)
+- [[21_Talks/Andrew_Ng/sayings]] — Andrew Ng 关于 AI 的观点与格言 (共享: insights, leaders, speeches, talks)
+- [[21_Talks/Bill_Gates/about]] — Bill Gates 简介 (Bill Gates) (共享: insights, leaders, speeches, talks)
+- [[21_Talks/Bill_Gates/sayings]] — Bill Gates 关于 AI 的观点 (Bill Gates on AI) (共享: insights, leaders, speeches, talks)
+- [[21_Talks/README_for_dummy.md|README_for_dummy]]

@@ -1,3 +1,12 @@
+---
+title: '06 强化学习与智能体 - 小白版 🎮'
+category: '06-reinforcement-learning'
+tags: ["reinforcement-learning", "agent", "mdp"]
+summary: '> **一句话秒懂**: 强化学习就是训练AI"边玩边学"——就像训练小狗做动作,做对了给零食奖励,做错了不给,AI通过反复尝试学会玩游戏、下棋、甚至控制机器人!'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # 06 强化学习与智能体 - 小白版 🎮
 
 > **一句话秒懂**: 强化学习就是训练AI"边玩边学"——就像训练小狗做动作,做对了给零食奖励,做错了不给,AI通过反复尝试学会玩游戏、下棋、甚至控制机器人!
@@ -131,3 +140,11 @@ AI: "我学到了:往右走好,往左走不好"
 ---
 
 *本文是 [README.md](./README.md) 的简化版,适合零基础读者。准备好让AI学会"从经验中学习"了吗?让我们开始吧!* 🚀
+
+## Related
+
+- [[06_Reinforcement_Learning/README.md|06_Reinforcement_Learning README]]
+- [[06_Reinforcement_Learning/AI_Agents/AI_Agents.md|AI_Agents]]
+- [[06_Reinforcement_Learning/AI_Agents/AI_Agents_for_dummy.md|AI_Agents_for_dummy]]
+- [[06_Reinforcement_Learning/AI_Agents/Agent-in-nutshell.md|Agent-in-nutshell]]
+- [[06_Reinforcement_Learning/AI_Agents/Agent_Future_Roadmap_2026_2030.md|Agent_Future_Roadmap_2026_2030]]

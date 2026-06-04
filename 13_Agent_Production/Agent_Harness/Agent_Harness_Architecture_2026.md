@@ -1,3 +1,12 @@
+---
+title: Agent Harness 技术架构 2026
+category: 13-agent-production-agent-harness
+tags: ["ai-agents", "agent-framework", "production", "langgraph"]
+summary: "> **一句话理解**: Agent Harness 是围绕模型智能构建的完整工程系统，本文从生产部署视角详解 Harness 技术架构、配置参数、性能指标、兼容性矩阵，并为六种角色提供差异化使用指南。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # Agent Harness 技术架构 2026
 
 > **一句话理解**: Agent Harness 是围绕模型智能构建的完整工程系统，本文从生产部署视角详解 Harness 技术架构、配置参数、性能指标、兼容性矩阵，并为六种角色提供差异化使用指南。
@@ -876,3 +885,10 @@ class CostMonitor:
 ---
 
 *Last updated: 2026-04-14 | Version: 2026 Edition*
+
+## Related
+
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)

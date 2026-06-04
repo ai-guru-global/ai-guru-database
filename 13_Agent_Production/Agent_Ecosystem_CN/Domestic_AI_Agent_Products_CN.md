@@ -1,3 +1,12 @@
+---
+title: 国内顶级 AI Agent 产品
+category: 13-agent-production-agent-ecosystem-cn
+tags: ["ai-agents", "agent-framework", "production", "langgraph"]
+summary: "> **一句话理解**: 从通义千问到 Kimi，从文心一言到豆包，国内 AI Agent 产品正在快速发展——它们在中文理解、多模态、企业应用等维度各有特色，形成了一个完整的 AI 生态。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 国内顶级 AI Agent 产品
 
 > **一句话理解**: 从通义千问到 Kimi，从文心一言到豆包，国内 AI Agent 产品正在快速发展——它们在中文理解、多模态、企业应用等维度各有特色，形成了一个完整的 AI 生态。
@@ -559,3 +568,10 @@ AI 搜索 ───────────────────────�
 - [讯飞星火](https://xinghuo.xfyun.cn)
 - [秘塔 AI](https://metaso.cn)
 - [DeepSeek](https://deepseek.com)
+
+## Related
+
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)

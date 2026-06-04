@@ -1,3 +1,12 @@
+---
+title: Agent Benchmarking Evaluation Framework
+category: 13-agent-production-16-agent-evaluation
+tags: ["ai-agents", "agent-framework", "production", "langgraph", "model-evaluation"]
+summary: "> A comprehensive, production-ready framework for evaluating AI agents in DevOps environments (2026 Edition)"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # Agent Benchmarking Evaluation Framework
 
 > A comprehensive, production-ready framework for evaluating AI agents in DevOps environments (2026 Edition)
@@ -311,3 +320,33 @@ To contribute to this framework:
 ## License
 
 This framework is provided for internal use within the organization. Adapt and extend as needed for your specific evaluation requirements.
+
+## Related
+- [[13_Agent_Production/16_Agent_Evaluation/Cloud_Agent_Leaderboard_2026|云产品智能体排行榜 2026]]
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Deep_Dive|Agent Harness 技术深度解析]]
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Comprehensive_2026|Agent Harness 全面指南 2026]]
+- [[13_Agent_Production/16_Agent_Evaluation/Ops_Agent_Harness_2026|Ops Agent Harness 2026: 运维 Agent 评估框架]]
+- [[13_Agent_Production/16_Agent_Evaluation/README|Agent Benchmarking Evaluation Framework]]
+- [[13_Agent_Production/16_Agent_Evaluation/README_for_dummy|Agent Benchmarking Evaluation Framework - Beginner's Guide]]
+
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
+- [[13_Agent_Production/16_Agent_Evaluation/Cloud_Agent_Evaluation/README]] — Cloud Agent Evaluation (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
+- [[13_Agent_Production/16_Agent_Evaluation/Cloud_Agent_Evaluation_System_2026]] — Cloud Agent Evaluation System 2026 (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
+- [[13_Agent_Production/16_Agent_Evaluation/Metrics/Evaluation_Metrics]] — Evaluation Metrics (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
+- [[13_Agent_Production/16_Agent_Evaluation/Metrics/Metrics_Collection]] — Metrics Collection
+- [[13_Agent_Production/16_Agent_Evaluation/Testing_Methodologies/Test_Suites]] — Test Suites
+- [[13_Agent_Production/16_Agent_Evaluation/Testing_Methodologies/Testing_Framework]] — Testing Framework
+- [[13_Agent_Production/16_Agent_Evaluation/Corpus_Assessment/Corpus_Coverage_Framework]] — 语料库覆盖度评估框架
+- [[13_Agent_Production/16_Agent_Evaluation/Corpus_Assessment/Corpus_Quality_Metrics]] — 语料库质量指标体系
+- [[13_Agent_Production/16_Agent_Evaluation/Corpus_Assessment/Corpus_Improvement_Guide]] — 语料库改进指南
+- [[13_Agent_Production/16_Agent_Evaluation/QA/Quality_Assurance]] — Quality Assurance
+- [[13_Agent_Production/16_Agent_Evaluation/QA/Performance_Benchmarks]] — Performance Benchmarks
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment
+- [[13_Agent_Production/16_Agent_Evaluation/Rubrics/Ranking_System]] — Ranking System
+- [[13_Agent_Production/16_Agent_Evaluation/Rubrics/Scoring_Rubrics]] — Scoring Rubrics
+- [[13_Agent_Production/16_Agent_Evaluation/Implementation/API_Integration_Guide]] — API 集成指南
+- [[13_Agent_Production/16_Agent_Evaluation/Implementation/Config_Templates]] — Configuration Templates
+- [[13_Agent_Production/16_Agent_Evaluation/Implementation/Implementation_Guide]] — Implementation Guide
+- [[13_Agent_Production/16_Agent_Evaluation/Implementation/LLM_as_Judge_Templates]] — LLM-as-Judge 评估提示词模板
+- [[13_Agent_Production/16_Agent_Evaluation/Implementation/Sample_Reports]] — Sample Reports
+

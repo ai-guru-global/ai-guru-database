@@ -1,3 +1,12 @@
+---
+title: AI 开源项目全景图
+category: 13-agent-production
+tags: ["ai-agents", "agent-framework", "production", "langgraph"]
+summary: "> **一句话理解**: 本知识库收录了 AI 领域 50+ 主流开源项目的深度文档，覆盖 LLM、Agent、RAG、推理部署、评估等全链路。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # AI 开源项目全景图
 
 > **一句话理解**: 本知识库收录了 AI 领域 50+ 主流开源项目的深度文档，覆盖 LLM、Agent、RAG、推理部署、评估等全链路。
@@ -348,3 +357,10 @@ AI 开源项目分类
 
 *Last updated: 2026-04-26*
 *Version: 1.1.0*
+
+## Related
+
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)

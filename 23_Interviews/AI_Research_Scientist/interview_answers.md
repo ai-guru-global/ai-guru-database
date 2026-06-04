@@ -1,3 +1,12 @@
+---
+title: AI Research Scientist 面试题实例答案
+category: 23-interviews-ai-research-scientist
+tags: ["interviews", "career", "experience", "practitioners"]
+summary: "**答**：从问题重要性、方法新颖性与可验证性评估，结合对标基线的实验提升与理论意义。若能推动新任务或新指标，更具影响力。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # AI Research Scientist 面试题实例答案
 
 ## Q1: 如何评估研究创新价值？
@@ -11,3 +20,10 @@
 
 ---
 *Last updated: 2026-02-26*
+
+## Related
+
+- [[23_Interviews/AI_Data_Analyst/company_level_question_bank]] — AI Data Analyst 按公司/级别区分的题库 (共享: career, experience, interviews, practitioners)
+- [[23_Interviews/AI_Data_Analyst/interview_answers]] — AI Data Analyst 面试题实例答案 (共享: career, experience, interviews, practitioners)
+- [[23_Interviews/AI_Data_Analyst/interview_preparing]] — AI Data Analyst 面试准备 (共享: career, experience, interviews, practitioners)
+- [[23_Interviews/AI_Data_Analyst/question_bank]] — AI Data Analyst 题库 (共享: career, experience, interviews, practitioners)

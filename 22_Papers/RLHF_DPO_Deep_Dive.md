@@ -1,3 +1,12 @@
+---
+title: RLHF 与 DPO 深度解读 (从 InstructGPT 到 Direct Preference Optimization)
+category: 22-papers
+tags: ["reinforcement-learning", "rlhf", "alignment", "dpo", "openai", "gpt"]
+summary: "RLHF 就像给一个博览群书但口无遮拦的天才请了一个\"礼仪教练\"——通过人类反馈的奖励信号，教会模型什么是\"好回答\"、什么是\"坏回答\"，而 DPO 则直接从偏好数据中学习，跳过了复杂的强化学习训练过程。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # RLHF 与 DPO 深度解读 (从 InstructGPT 到 Direct Preference Optimization)
 
 > **一句话理解**: RLHF 就像给一个博览群书但口无遮拦的天才请了一个"礼仪教练"——通过人类反馈的奖励信号，教会模型什么是"好回答"、什么是"坏回答"，而 DPO 则直接从偏好数据中学习，跳过了复杂的强化学习训练过程。
@@ -761,3 +770,9 @@ flowchart TB
 ---
 
 *Last updated: 2026-05-17*
+
+## Related
+
+- [[22_Papers/GPT3_Deep_Dive]] — GPT-3 深度解读 (Language Models are Few-Shot Learners) (共享: gpt, openai)
+
+- [[synthesis/alignment-rlhf|价值对齐 × RLHF：从人类反馈到可扩展监督]]

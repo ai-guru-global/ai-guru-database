@@ -1,3 +1,12 @@
+---
+title: 价值对齐 - 小白版
+category: 19-ethics-safety-value-alignment
+tags: ["ai-ethics", "safety", "alignment", "red-teaming"]
+summary: "> **一句话秒懂**: 就像教育孩子懂对错、守规矩一样,价值对齐是教 AI 理解人类价值观,不做坏事、不说假话、不伤害人!"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 价值对齐 - 小白版
 
 > **一句话秒懂**: 就像教育孩子懂对错、守规矩一样,价值对齐是教 AI 理解人类价值观,不做坏事、不说假话、不伤害人!
@@ -729,3 +738,10 @@ Anthropic 的 Claude:
 ---
 
 *本文是 [Value_Alignment.md](./Value_Alignment.md) 的简化版,适合零基础读者。完整公式和研究论文请参考原文档。*
+
+## Related
+
+- [[19_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming]] — AI 安全与红队 (AI Safety & Red Teaming) (共享: ai-ethics, alignment, red-teaming, safety)
+- [[19_Ethics_Safety/AI_Security_2026/README]] — AI安全 2026 (AI Security) (共享: ai-ethics, alignment, red-teaming, safety)
+- [[19_Ethics_Safety/AI_Supply_Chain_Security/AI_Supply_Chain_Security]] — AI 供应链安全 2026 (共享: ai-ethics, alignment, red-teaming, safety)
+- [[19_Ethics_Safety/Ethics-in-nutshell]] — AI 伦理与安全速成指南 (共享: ai-ethics, alignment, red-teaming, safety)

@@ -1,3 +1,12 @@
+---
+title: 模型训练小白指南
+category: 07-model-training
+tags: ["model-training", "distributed-training", "optimization", "fsdp"]
+summary: "> **一句话理解**: 模型训练就像教小孩认东西——给例子、指出错误、反复练习，直到学会。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 模型训练小白指南
 
 > **一句话理解**: 模型训练就像教小孩认东西——给例子、指出错误、反复练习，直到学会。
@@ -517,3 +526,11 @@ flowchart TB
 ---
 
 *Last updated: 2026-05-07*
+
+## Related
+
+- [[07_Model_Training/Distributed_Training_2026]] — Distributed Training 2026 (共享: distributed-training, fsdp, model-training, optimization)
+- [[07_Model_Training/Distributed_Training_for_dummy]] — 分布式训练 - 小白版 (共享: distributed-training, fsdp, model-training, optimization)
+- [[07_Model_Training/Mixed_Precision_Training]] — 混合精度训练 (Mixed Precision Training) (共享: distributed-training, fsdp, model-training, optimization)
+- [[07_Model_Training/Model-Training-in-nutshell]] — 模型训练速成指南 (共享: distributed-training, fsdp, model-training, optimization)
+- [[07_Model_Training/README_for_dummy.md|README_for_dummy]]

@@ -1,3 +1,12 @@
+---
+title: Cloud Ops Agent 知识库首页
+category: 18-cloud-ops-agent-docs
+tags: ["cloud-ops", "devops", "sre", "automation", "ai-agents"]
+summary: "欢迎来到 Cloud Ops Agent 的单一可信源（Single Source of Truth）。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # Cloud Ops Agent 知识库首页
 
 欢迎来到 Cloud Ops Agent 的单一可信源（Single Source of Truth）。
@@ -117,3 +126,11 @@ Cloud Ops Agent 文档体系
 
 *最后更新: 2026-04-15*
 *维护者: Cloud Ops Agent 团队*
+
+## Related
+
+- [[18_Cloud_Ops_Agent/CloudOps-in-nutshell]] — 云产品运维 Agent 速成指南 (共享: ai-agents, automation, cloud-ops, devops, sre)
+- [[18_Cloud_Ops_Agent/Cloud_Product_Ops_for_dummy]] — 云产品运维 Agent 入门指南 (for Dummies) (共享: ai-agents, automation, cloud-ops, devops, sre)
+- [[18_Cloud_Ops_Agent/docs/architecture/index]] — 云产品运维 Agent 架构设计指南 (Architecture) (共享: ai-agents, automation, cloud-ops, devops, sre)
+- [[18_Cloud_Ops_Agent/docs/corpus/index]] — 云产品运维 Agent 语料工程指南 (Corpus Engineering) (共享: ai-agents, automation, cloud-ops, devops, sre)
+- [[18_Cloud_Ops_Agent/docs/templates/arch_template.md|arch_template]]

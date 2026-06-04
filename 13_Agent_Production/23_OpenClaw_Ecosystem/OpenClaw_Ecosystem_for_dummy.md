@@ -1,3 +1,12 @@
+---
+title: "OpenClaw Ecosystem for Beginners: Your AI Assistant That Actually Does Things"
+category: "13-agent-production-23-openclaw-ecosystem"
+tags: ["ai-agents", "agent-framework", "production", "langgraph"]
+summary: "Imagine having a super-smart assistant who doesn't just answer questions—they actually DO things for you. That's OpenClaw!"
+created: "2026-05-31"
+updated: "2026-05-31"
+---
+
 # OpenClaw Ecosystem for Beginners: Your AI Assistant That Actually Does Things
 
 ## What is OpenClaw? (The Simple Version)
@@ -365,3 +374,11 @@ Check out our detailed technical guides:
 *Remember: The lobster is your friend! 🦞*
 
 *Last Updated: March 2026*
+
+## Related
+
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026.md|Agent_Harness_Complete_2026]]
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026.md|Agent_Red_Teaming_2026]]
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow.md|Evaluation_Workflow]]
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment.md|Production_Assessment]]
+- [[13_Agent_Production/16_Agent_Evaluation/Benchmarking/Benchmarking_Criteria.md|Benchmarking_Criteria]]

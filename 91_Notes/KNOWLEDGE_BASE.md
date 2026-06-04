@@ -1,3 +1,12 @@
+---
+title: 🧠 AI Guru Knowledge Base
+category: 91-notes
+tags: ["notes", "drafts", "ideas", "observations"]
+summary: "> **The Most Comprehensive AI Learning Resource on GitHub** | 从理论到生产的完整 AI 知识体系"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 🧠 AI Guru Knowledge Base
 
 > **The Most Comprehensive AI Learning Resource on GitHub** | 从理论到生产的完整 AI 知识体系
@@ -286,3 +295,8 @@ This project is licensed under the **MIT License** - see [LICENSE](./LICENSE) fi
   <a href="#-documentation-structure">📚 Browse Docs</a> •
   <a href="#-contributing">🤝 Contribute</a>
 </p>
+
+## Related
+
+- [[91_Notes/AI_Concept_Knowledge_Graph]] — AI 概念知识图谱 (共享: drafts, ideas, notes, observations)
+- [[91_Notes/AI_Full_Stack_Concepts]] — AI 全链路 Concept 清单 (共享: drafts, ideas, notes, observations)

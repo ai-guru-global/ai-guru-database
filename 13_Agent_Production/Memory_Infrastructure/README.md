@@ -1,3 +1,12 @@
+---
+title: '记忆与基础设施'
+category: '13-agent-production-memory-infrastructure'
+tags: ["ai-agents", "agent-framework", "production", "langgraph"]
+summary: '> Agent 的"智商"不仅取决于 LLM，还取决于 RAG 检索质量、记忆系统设计和知识管理架构。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # 记忆与基础设施
 
 > Agent 的"智商"不仅取决于 LLM，还取决于 RAG 检索质量、记忆系统设计和知识管理架构。
@@ -33,3 +42,15 @@
 ---
 
 *Last updated: 2026-04-14*
+
+## Related
+- [[13_Agent_Production/Memory_Infrastructure/RAG_Memory_Infrastructure_Tools|RAG、记忆与 Agent 基础设施]]
+- [[13_Agent_Production/Memory_Infrastructure/Agent_Memory_Systems_2026|AI Agent 记忆系统 2026]]
+- [[13_Agent_Production/Memory_Infrastructure/README|记忆与基础设施]]
+
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026.md|Agent_Harness_Complete_2026]]
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026.md|Agent_Red_Teaming_2026]]
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow.md|Evaluation_Workflow]]
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment.md|Production_Assessment]]
+- [[13_Agent_Production/16_Agent_Evaluation/Benchmarking/Benchmarking_Criteria.md|Benchmarking_Criteria]]
+

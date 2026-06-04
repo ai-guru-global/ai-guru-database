@@ -1,3 +1,12 @@
+---
+title: "Chroma: 轻量级向量数据库"
+category: "11-rag-systems"
+tags: ["rag", "retrieval", "vector-database", "embedding"]
+summary: "> **一句话理解**: Chroma 是最小的嵌入式向量数据库——专为 AI 应用设计，零配置、易上手、本地优先，LLM 时代的向量存储入门首选。"
+created: "2026-05-31"
+updated: "2026-05-31"
+---
+
 # Chroma: 轻量级向量数据库
 
 > **一句话理解**: Chroma 是最小的嵌入式向量数据库——专为 AI 应用设计，零配置、易上手、本地优先，LLM 时代的向量存储入门首选。
@@ -233,7 +242,7 @@ results = collection.query(
 )
 
 print(results)
-# {'ids': [['doc1', 'doc2']], 'distances': [[0.1, 0.3]], ...}
+# {'ids': ``[ ['doc1', 'doc2'] ]``, 'distances': ``[ [0.1, 0.3] ]``, ...}
 ```
 
 ### 4.3 使用嵌入函数
@@ -388,3 +397,11 @@ collection.add(
 
 *Last updated: 2026-04-26*
 *Version: 1.0.0*
+
+## Related
+
+- [[11_RAG_Systems/RAG-in-nutshell.md|RAG-in-nutshell]]
+- [[11_RAG_Systems/RAG_Systems.md|RAG_Systems]]
+- [[11_RAG_Systems/README_Advanced.md|README_Advanced]]
+- [[11_RAG_Systems/Spring_AI_RAG_Deep_Dive.md|Spring_AI_RAG_Deep_Dive]]
+- [[synthesis/rag-vector-database.md|rag-vector-database]]

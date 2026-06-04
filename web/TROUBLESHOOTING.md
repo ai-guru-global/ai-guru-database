@@ -1,3 +1,12 @@
+---
+title: Troubleshooting Guide
+category: web
+tags: ["web", "frontend", "backend", "fullstack"]
+summary: "**Solution A: Install Dependencies**"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # Troubleshooting Guide
 
 ## Common Issues
@@ -164,3 +173,10 @@ After starting the server, verify:
    ```bash
    npm run dev 2>&1 | tee dev.log
    ```
+
+## Related
+
+- [[Web/.trae/documents/CloudMaster应用全面修复计划]] — CloudMaster应用全面修复计划 (共享: backend, frontend, fullstack, web)
+- [[Web/CHANGELOG]] — Changelog (共享: backend, frontend, fullstack, web)
+- [[Web/CONTRIBUTING]] — 贡献指南 (共享: backend, frontend, fullstack, web)
+- [[Web/README]] — AI Guru Knowledge Base Frontend (共享: backend, frontend, fullstack, web)

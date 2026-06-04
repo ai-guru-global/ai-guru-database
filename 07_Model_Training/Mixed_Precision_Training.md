@@ -1,3 +1,12 @@
+---
+title: 混合精度训练 (Mixed Precision Training)
+category: 07-model-training
+tags: ["model-training", "distributed-training", "optimization", "fsdp"]
+summary: "> **一句话理解**: 混合精度训练是在保持模型精度的前提下，用 FP16/BF16/FP8 等低精度格式存储和计算大部分张量，从而显著降低显存占用、提升计算吞吐量的工程艺术。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 混合精度训练 (Mixed Precision Training)
 
 > **一句话理解**: 混合精度训练是在保持模型精度的前提下，用 FP16/BF16/FP8 等低精度格式存储和计算大部分张量，从而显著降低显存占用、提升计算吞吐量的工程艺术。
@@ -820,3 +829,11 @@ training_args = TrainingArguments(
 ---
 
 *Last updated: 2026-05-07*
+
+## Related
+
+- [[07_Model_Training/Distributed_Training_2026]] — Distributed Training 2026 (共享: distributed-training, fsdp, model-training, optimization)
+- [[07_Model_Training/Distributed_Training_for_dummy]] — 分布式训练 - 小白版 (共享: distributed-training, fsdp, model-training, optimization)
+- [[07_Model_Training/Model-Training-in-nutshell]] — 模型训练速成指南 (共享: distributed-training, fsdp, model-training, optimization)
+- [[07_Model_Training/Model_Training_for_dummy]] — 模型训练小白指南 (共享: distributed-training, fsdp, model-training, optimization)
+- [[07_Model_Training/Training_Monitoring_2026.md|Training_Monitoring_2026]]

@@ -1,3 +1,12 @@
+---
+title: '具身智能 (Embodied AI) - 2026年完整指南'
+category: '06-reinforcement-learning-robotics-embodied-ai'
+tags: ["reinforcement-learning", "agent", "mdp"]
+summary: '> **一句话理解**: 具身智能就像给AI装上"身体"——它不再是只会在屏幕上聊天的聊天机器人，而是能感知物理世界、自主行动、与环境实时交互的智能体。它是AI从"数字大脑"进化到"物理存在"的必然路径。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # 具身智能 (Embodied AI) - 2026年完整指南
 
 > **一句话理解**: 具身智能就像给AI装上"身体"——它不再是只会在屏幕上聊天的聊天机器人，而是能感知物理世界、自主行动、与环境实时交互的智能体。它是AI从"数字大脑"进化到"物理存在"的必然路径。
@@ -649,3 +658,7 @@ class WalkingController:
 ---
 
 *Last updated: 2026-04-01*
+
+## Related
+
+- [[06_Reinforcement_Learning/Robotics_Embodied_AI/README.md|README]]

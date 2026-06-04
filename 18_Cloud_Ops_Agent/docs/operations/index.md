@@ -1,3 +1,12 @@
+---
+title: 云产品运维 Agent 运维指南 (Operations)
+category: 18-cloud-ops-agent-docs-operations
+tags: ["cloud-ops", "devops", "sre", "automation", "ai-agents"]
+summary: "> 🎯 **目标**: 为运维工程师提供 Cloud Ops Agent 的日常运维、监控告警、故障处理、性能调优、安全运维的完整实操指南，确保系统稳定高效运行。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 云产品运维 Agent 运维指南 (Operations)
 
 > 🎯 **目标**: 为运维工程师提供 Cloud Ops Agent 的日常运维、监控告警、故障处理、性能调优、安全运维的完整实操指南，确保系统稳定高效运行。
@@ -940,3 +949,10 @@ slos:
 *最后更新: 2026-04-15*
 *版本: 2.0.0*
 *维护者: 运维团队*
+
+## Related
+
+- [[18_Cloud_Ops_Agent/CloudOps-in-nutshell]] — 云产品运维 Agent 速成指南 (共享: ai-agents, automation, cloud-ops, devops, sre)
+- [[18_Cloud_Ops_Agent/Cloud_Product_Ops_for_dummy]] — 云产品运维 Agent 入门指南 (for Dummies) (共享: ai-agents, automation, cloud-ops, devops, sre)
+- [[18_Cloud_Ops_Agent/docs/architecture/index]] — 云产品运维 Agent 架构设计指南 (Architecture) (共享: ai-agents, automation, cloud-ops, devops, sre)
+- [[18_Cloud_Ops_Agent/docs/corpus/index]] — 云产品运维 Agent 语料工程指南 (Corpus Engineering) (共享: ai-agents, automation, cloud-ops, devops, sre)

@@ -1,3 +1,12 @@
+---
+title: AI 能源与气候行业应用 (2025-2026)
+category: 20-ai-applications-industry-energy-climate
+tags: ["ai-applications", "industry", "finance", "healthcare"]
+summary: "> **一句话理解**: 2026年AI已成为能源转型和气候行动的核心引擎——Google用AI将数据中心能耗降低30%，AI加速核聚变研究、优化电网调度、预测极端天气，同时AI自身的能源消耗也引发关注。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # AI 能源与气候行业应用 (2025-2026)
 
 > **一句话理解**: 2026年AI已成为能源转型和气候行动的核心引擎——Google用AI将数据中心能耗降低30%，AI加速核聚变研究、优化电网调度、预测极端天气，同时AI自身的能源消耗也引发关注。
@@ -290,3 +299,9 @@ AI能源消耗 2025-2026:
 ---
 
 *Last updated: 2026-05-07*
+
+## Related
+
+- [[20_AI_Applications_Industry/Industry_Comparison_2026]] — AI 行业应用对比 2026 (Industry Comparison) (共享: ai-applications, finance, healthcare, industry)
+- [[20_AI_Applications_Industry/README]] — 13 - AI应用与行业融合 (共享: ai-applications, finance, healthcare, industry)
+- [[20_AI_Applications_Industry/README_for_dummy]] — AI 行业应用 — 小白版 🏭 (共享: ai-applications, finance, healthcare, industry)

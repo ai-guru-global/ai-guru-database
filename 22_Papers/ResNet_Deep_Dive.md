@@ -1,3 +1,12 @@
+---
+title: ResNet 深度解读 (Deep Residual Learning for Image Recognition)
+category: 22-papers
+tags: ["computer-vision", "cnn", "resnet", "deep-learning", "microsoft"]
+summary: "ResNet 就像给深层神经网络修建了\"高速公路\"——通过跳跃连接让梯度直接流通，解决了网络越深反而越差的反直觉问题，让 152 层甚至上千层的网络训练成为可能。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # ResNet 深度解读 (Deep Residual Learning for Image Recognition)
 
 > **一句话理解**: ResNet 就像给深层神经网络修建了"高速公路"——通过跳跃连接让梯度直接流通，解决了网络越深反而越差的反直觉问题，让 152 层甚至上千层的网络训练成为可能。
@@ -790,3 +799,9 @@ flowchart LR
 ---
 
 *Last updated: 2026-05-07*
+
+## Related
+
+- [[05_Computer_Vision/README]] — 05 计算机视觉 (Computer Vision) (共享: cnn, cv)
+- [[05_Computer_Vision/Segmentation/Segmentation_for_dummy]] — 图像分割 - 小白版 ✂️ (共享: cnn, cv)
+- [[05_Computer_Vision/Video_Generation/README]] — AI视频生成 (Video Generation) (共享: cnn, cv)

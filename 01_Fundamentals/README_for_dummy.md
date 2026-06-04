@@ -1,3 +1,12 @@
+---
+title: '基础理论 - 新手导航'
+category: '01-fundamentals'
+tags: ["fundamentals", "math", "algorithms", "basics"]
+summary: '> **一句话概括**: 这一章帮你打好地基——了解 AI 背后需要用到的基本"常识"。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # 基础理论 - 新手导航
 
 > **一句话概括**: 这一章帮你打好地基——了解 AI 背后需要用到的基本"常识"。
@@ -35,3 +44,11 @@
 
 ---
 *本文是 [README.md](./README.md) 的简化版，适合零基础读者。*
+
+## Related
+
+- [[01_Fundamentals/Fundamentals-in-nutshell.md|Fundamentals-in-nutshell]]
+- [[01_Fundamentals/README.md|01_Fundamentals README]]
+- [[01_Fundamentals/AI_Hardware/AI_Hardware_2026.md|AI_Hardware_2026]]
+- [[01_Fundamentals/AI_Hardware/README.md|AI_Hardware README]]
+- [[01_Fundamentals/Data_Structures_Algorithms/Data_Structures_Algorithms.md|Data_Structures_Algorithms]]

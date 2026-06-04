@@ -1,3 +1,12 @@
+---
+title: 08 AI 伦理、安全与对齐 (Ethics, Safety & Alignment)
+category: 19-ethics-safety
+tags: ["ai-ethics", "safety", "alignment", "red-teaming"]
+summary: "本章探讨 AI 系统的可信度与责任性，涵盖价值对齐技术（RLHF/DPO）、AI 安全与红队测试（对抗攻击/提示词注入）。随着 AI 能力增强，确保系统安全、公平、可控变得至关重要。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 08 AI 伦理、安全与对齐 (Ethics, Safety & Alignment)
 
 本章探讨 AI 系统的可信度与责任性，涵盖价值对齐技术（RLHF/DPO）、AI 安全与红队测试（对抗攻击/提示词注入）。随着 AI 能力增强，确保系统安全、公平、可控变得至关重要。
@@ -56,12 +65,14 @@
 | 隐私保护 AI (Privacy-Preserving AI) | 专业 | 差分隐私、联邦学习、同态加密、成员推断攻击防御 | [Privacy_Preserving_AI.md](./Privacy_Preserving_AI/Privacy_Preserving_AI.md) |
 | 深度伪造检测 (Deepfake Detection) | 专业 | 深度伪造检测技术、音视频伪造识别、内容真实性验证 | [Deepfake_Security.md](./Deepfake_Security/Deepfake_Security.md) |
 | AI 供应链安全 (Supply Chain Security) | 专业 | 数据投毒防御、模型后门检测、依赖安全、SBOM管理 | [AI_Supply_Chain_Security.md](./AI_Supply_Chain_Security/AI_Supply_Chain_Security.md) |
+| **联邦学习 (Federated Learning)** | **专业** | **FedAvg/FedProx/SCAFFOLD、差分隐私+安全聚合、联邦LLM微调** | **[Federated_Learning/](./Federated_Learning/)** |
 
 ### 生产实践层
 
 | 主题 | 难度 | 描述 | 文档链接 |
 |------|------|------|---------|
 | AI安全 2026 (AI Security 2026) | 实战 | OWASP LLM Top 10 + ASI Agentic AI安全框架，生产级防御 | [AI_Security_2026.md](./AI_Security_2026/AI_Security_2026.md) |
+| AI 安全评测框架 (Safety Evaluation) | 实战 | 毒性/偏见/幻觉评测、对抗鲁棒性、红队测试方法论与基准 | [Safety_Evaluation_Framework.md](./Safety_Evaluation_Framework.md) |
 
 ## 前置知识 (Prerequisites)
 
@@ -120,3 +131,30 @@
 
 ---
 *Last updated: 2026-04-10* - 新增模型安全机制、隐私保护AI、深度伪造检测、AI供应链安全四大专业模块
+
+## Related
+- [[19_Ethics_Safety/Federated_Learning/Federated_Learning_Deep_Dive|联邦学习深度解读: 从 FedAvg 到联邦 LLM 微调]]
+- [[19_Ethics_Safety/Federated_Learning/README|联邦学习 (Federated Learning)]]
+- [[19_Ethics_Safety/README_for_dummy|08 AI 伦理、安全与对齐 - 小白版]]
+
+- [[19_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming]] — AI 安全与红队 (AI Safety & Red Teaming) (共享: ai-ethics, alignment, red-teaming, safety)
+- [[19_Ethics_Safety/AI_Security_2026/README]] — AI安全 2026 (AI Security) (共享: ai-ethics, alignment, red-teaming, safety)
+- [[19_Ethics_Safety/AI_Supply_Chain_Security/AI_Supply_Chain_Security]] — AI 供应链安全 2026 (共享: ai-ethics, alignment, red-teaming, safety)
+- [[19_Ethics_Safety/Ethics-in-nutshell]] — AI 伦理与安全速成指南 (共享: ai-ethics, alignment, red-teaming, safety)
+- [[19_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming_for_dummy]] — AI_Safety_RedTeaming_for_dummy
+- [[19_Ethics_Safety/Privacy_Preserving_AI/Privacy_Preserving_AI]] — Privacy_Preserving_AI
+- [[19_Ethics_Safety/Privacy_Preserving_AI/Privacy_Preserving_AI_for_dummy]] — Privacy_Preserving_AI_for_dummy
+- [[19_Ethics_Safety/Value_Alignment/Value_Alignment]] — 价值对齐 (Value Alignment)
+- [[19_Ethics_Safety/Value_Alignment/Value_Alignment_for_dummy]] — 价值对齐 - 小白版
+- [[19_Ethics_Safety/Deepfake_Security/Deepfake_Security]] — Deepfake_Security
+- [[19_Ethics_Safety/Deepfake_Security/Deepfake_Security_for_dummy]] — Deepfake_Security_for_dummy
+- [[19_Ethics_Safety/Mechanistic_Interpretability/Mechanistic_Interpretability]] — Mechanistic_Interpretability
+- [[19_Ethics_Safety/Mechanistic_Interpretability/Mechanistic_Interpretability_for_dummy]] — Mechanistic_Interpretability_for_dummy
+- [[19_Ethics_Safety/AI_Security_2026/AI_Security_2026]] — AI_Security_2026
+- [[19_Ethics_Safety/AI_Supply_Chain_Security/AI_Supply_Chain_Security_for_dummy]] — AI_Supply_Chain_Security_for_dummy
+- [[19_Ethics_Safety/AI_Governance_Compliance_2026.md|AI_Governance_Compliance_2026]]
+- [[19_Ethics_Safety/README_for_dummy.md|README_for_dummy]]
+- [[synthesis/ai-ethics-future|Ai Ethics Future]]
+- [[19_Ethics_Safety/Safety_Evaluation_Framework|AI 安全评测框架]] — 安全评测基准与红队测试方法论
+
+

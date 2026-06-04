@@ -1,3 +1,12 @@
+---
+title: 价值对齐 (Value Alignment)
+category: 19-ethics-safety-value-alignment
+tags: ["ai-ethics", "safety", "alignment", "red-teaming"]
+summary: "> **一句话理解**: 就像教育孩子懂对错一样,价值对齐是教AI理解人类的价值观和伦理标准,确保它的行为符合人类期望。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 价值对齐 (Value Alignment)
 
 > **一句话理解**: 就像教育孩子懂对错一样,价值对齐是教AI理解人类的价值观和伦理标准,确保它的行为符合人类期望。
@@ -802,3 +811,10 @@ total_reward = α × helpfulness_reward + β × safety_reward
 ---
 
 *Last updated: 2026-02-10*
+
+## Related
+
+- [[19_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming]] — AI 安全与红队 (AI Safety & Red Teaming) (共享: ai-ethics, alignment, red-teaming, safety)
+- [[19_Ethics_Safety/AI_Security_2026/README]] — AI安全 2026 (AI Security) (共享: ai-ethics, alignment, red-teaming, safety)
+- [[19_Ethics_Safety/AI_Supply_Chain_Security/AI_Supply_Chain_Security]] — AI 供应链安全 2026 (共享: ai-ethics, alignment, red-teaming, safety)
+- [[19_Ethics_Safety/Ethics-in-nutshell]] — AI 伦理与安全速成指南 (共享: ai-ethics, alignment, red-teaming, safety)

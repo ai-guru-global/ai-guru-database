@@ -1,3 +1,12 @@
+---
+title: AI Guru 知识库项目全面评估报告
+category: 92-plan
+tags: ["planning", "roadmap", "strategy", "goals", "model-evaluation"]
+summary: "> **评估日期**: 2026-04-13"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # AI Guru 知识库项目全面评估报告
 
 > **评估日期**: 2026-04-13  
@@ -407,3 +416,9 @@
 
 *评估人: AI Assistant*  
 *评估日期: 2026-04-13*
+
+## Related
+
+- [[92_Plan/Content_Evaluation_2026]] — AI Guru Database - 内容全面评估 2026 (共享: goals, model-evaluation, planning, roadmap, strategy)
+- [[92_Plan/Project_Structure_Evaluation_2026]] — AI Guru 知识库 — 全项目结构评估与改进建议 (共享: goals, model-evaluation, planning, roadmap, strategy)
+- [[92_Plan/Implementation_Plan_2026]] — AI Guru 知识库整改执行计划 (共享: goals, planning, roadmap, strategy)

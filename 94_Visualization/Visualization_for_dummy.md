@@ -1,3 +1,12 @@
+---
+title: 'AI 可视化 - 小白版'
+category: '94-visualization'
+tags: ["visualization", "charts", "dashboards", "data-viz"]
+summary: '> **一句话秒懂**: 可视化就是给 AI 装"透视眼"——让你看见模型在想什么、学得怎样、哪里出了问题，就像给汽车装仪表盘，不用掀开引擎盖也能知道一切！'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # AI 可视化 - 小白版
 
 > **一句话秒懂**: 可视化就是给 AI 装"透视眼"——让你看见模型在想什么、学得怎样、哪里出了问题，就像给汽车装仪表盘，不用掀开引擎盖也能知道一切！
@@ -636,3 +645,9 @@ tensorboard --logdir=runs
 ---
 
 *本文是 AI 可视化的入门版，适合零基础读者。完整技术细节和代码实现请参考本章节其他文档。*
+
+## Related
+
+- [[94_Visualization/README.md|94_Visualization README]]
+- [[94_Visualization/atlas/README.md|atlas README]]
+- [[94_Visualization/atlas/docs/performance.md|performance]]

@@ -1,3 +1,12 @@
+---
+title: 'RAG 系统 (RAG Systems)'
+category: '11-rag-systems'
+tags: ["rag", "retrieval", "vector-database", "embedding"]
+summary: '> **一句话理解**: RAG（检索增强生成）就像给大模型配备了一个"外接大脑"——让模型在回答问题时，先查阅专业知识库，再基于检索到的信息生成准确、可信的回答。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # RAG 系统 (RAG Systems)
 
 > **一句话理解**: RAG（检索增强生成）就像给大模型配备了一个"外接大脑"——让模型在回答问题时，先查阅专业知识库，再基于检索到的信息生成准确、可信的回答。
@@ -74,3 +83,23 @@
 ---
 
 *详见 [RAG 高级实践导航](./README_Advanced.md) 获取框架选型与关键技术速查。*
+
+## Related
+- [[11_RAG_Systems/Haystack_Deep_Dive|Haystack: 开源 RAG 框架]]
+- [[11_RAG_Systems/RAG_Systems_for_dummy|RAG 系统 - 小白版]]
+- [[11_RAG_Systems/Dify_Deep_Dive|Dify: 开源 LLM 应用开发平台]]
+- [[11_RAG_Systems/Milvus_Deep_Dive|Milvus: 超大规模向量数据库]]
+- [[11_RAG_Systems/README|RAG 系统 (RAG Systems)]]
+- [[11_RAG_Systems/Weaviate_Deep_Dive|Weaviate: 开源向量数据库]]
+- [[11_RAG_Systems/Typesense_Deep_Dive|Typesense: 快速矢量搜索]]
+- [[11_RAG_Systems/Chroma_Deep_Dive|Chroma: 轻量级向量数据库]]
+- [[11_RAG_Systems/Flowise_Deep_Dive|Flowise: 低代码 LLM 应用平台]]
+- [[11_RAG_Systems/README_for_dummy|11 RAG 系统 — 小白版 🔍]]
+- [[11_RAG_Systems/LlamaIndex_Deep_Dive|LlamaIndex: 数据连接框架]]
+- [[11_RAG_Systems/Qdrant_Deep_Dive|Qdrant: 高性能向量数据库]]
+- [[11_RAG_Systems/LangFlow_Deep_Dive|LangFlow: 可视化 Agent/RAG 开发平台]]
+- [[11_RAG_Systems/Sentence_Transformers_Deep_Dive|Sentence-Transformers: 嵌入模型框架]]
+
+- [[concepts/rag-systems]] — RAG 系统
+- [[concepts/vector-database]] — 向量数据库
+

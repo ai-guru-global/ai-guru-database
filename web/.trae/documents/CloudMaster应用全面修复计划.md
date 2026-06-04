@@ -1,3 +1,12 @@
+---
+title: CloudMaster应用全面修复计划
+category: web-.trae-documents
+tags: ["web", "frontend", "backend", "fullstack"]
+summary: "1. **Vite配置问题**：运行`npm run dev`或`npx vite`时，遇到权限错误和配置文件解析问题"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # CloudMaster应用全面修复计划
 
 ## 问题分析
@@ -101,3 +110,11 @@
 - 组件化架构
 
 这个计划将全面解决CloudMaster应用中存在的所有问题，确保应用能够正常启动、运行和构建。
+
+## Related
+
+- [[Web/CHANGELOG]] — Changelog (共享: backend, frontend, fullstack, web)
+- [[Web/CONTRIBUTING]] — 贡献指南 (共享: backend, frontend, fullstack, web)
+- [[Web/README]] — AI Guru Knowledge Base Frontend (共享: backend, frontend, fullstack, web)
+- [[Web/TROUBLESHOOTING]] — Troubleshooting Guide (共享: backend, frontend, fullstack, web)
+- [[Web/.trae/documents/完成CloudMaster前端开发计划.md|完成CloudMaster前端开发计划]]

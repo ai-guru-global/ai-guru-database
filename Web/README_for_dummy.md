@@ -1,3 +1,12 @@
+---
+title: 'Web 前端项目 — 小白版 🌐'
+category: 'web'
+tags: ["web", "frontend", "backend", "fullstack"]
+summary: '> **一句话秒懂**: Web 目录是 AI Guru 知识库的"网上展示厅"——一个现代化的前端网站，让你可以用浏览器搜索和浏览整个知识库，就像使用图书馆的目录检索系统！'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # Web 前端项目 — 小白版 🌐
 
 > **一句话秒懂**: Web 目录是 AI Guru 知识库的"网上展示厅"——一个现代化的前端网站，让你可以用浏览器搜索和浏览整个知识库，就像使用图书馆的目录检索系统！
@@ -101,3 +110,11 @@ Web/
 ---
 
 *本文是 [README.md](./README.md) 的简化版，适合零基础读者。*
+
+## Related
+
+- [[Web/CHANGELOG.md|CHANGELOG]]
+- [[Web/CONTRIBUTING.md|CONTRIBUTING]]
+- [[Web/README.md|Web README]]
+- [[Web/TROUBLESHOOTING.md|TROUBLESHOOTING]]
+- [[Web/.trae/documents/CloudMaster应用全面修复计划.md|CloudMaster应用全面修复计划]]

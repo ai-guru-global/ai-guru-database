@@ -1,3 +1,12 @@
+---
+title: Cloud Agent Evaluation System 2026
+category: 13-agent-production-16-agent-evaluation
+tags: ["ai-agents", "agent-framework", "production", "langgraph", "model-evaluation"]
+summary: "> 云产品智能体能力评估系统 - 基于 CAPER 五维模型的全面评估框架"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # Cloud Agent Evaluation System 2026
 
 > 云产品智能体能力评估系统 - 基于 CAPER 五维模型的全面评估框架
@@ -438,3 +447,12 @@ A: 运行 `run_evaluation.py` 生成新的 `sample_results.json`，然后更新 
 
 **Q: 支持哪些 Agent API？**
 A: 内置支持阿里云 DashScope 和 OpenAI 兼容 API。通过插件机制可扩展任意 Agent。
+
+## Related
+
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
+- [[13_Agent_Production/16_Agent_Evaluation/Cloud_Agent_Evaluation/README]] — Cloud Agent Evaluation (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
+- [[13_Agent_Production/16_Agent_Evaluation/Metrics/Evaluation_Metrics]] — Evaluation Metrics (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
+- [[13_Agent_Production/16_Agent_Evaluation/Multi_Agent_Evaluation_2026]] — Multi-Agent System Evaluation Framework 2026 (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Deep_Dive.md|Agent_Harness_Deep_Dive]]
+- [[13_Agent_Production/16_Agent_Evaluation/Ops_Agent_Harness_2026.md|Ops_Agent_Harness_2026]]

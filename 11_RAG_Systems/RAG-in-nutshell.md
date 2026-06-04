@@ -1,3 +1,12 @@
+---
+title: RAG (检索增强生成) 速成指南
+category: 11-rag-systems
+tags: ["rag", "retrieval", "vector-database", "embedding"]
+summary: "> 🎯 **目标**：理解如何让 AI 模型访问你自己的数据，而无需重新训练。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # RAG (检索增强生成) 速成指南
 
 > 🎯 **目标**：理解如何让 AI 模型访问你自己的数据，而无需重新训练。
@@ -572,3 +581,15 @@ flowchart TB
 - [推理](../09_Deployment_Inference/Inference-in-nutshell.md) - 运行大模型部分
 - [智能体](../../06_Reinforcement_Learning/AI_Agents/Agent-in-nutshell.md) - RAG + 动作
 - [工作流](../13_Agent_Production/Agent_Workflow/Workflow-in-nutshell.md) - 生产环境中的 RAG
+
+## Related
+
+- [[11_RAG_Systems/RAG_Systems]] — RAG 系统 (RAG Systems) (共享: embedding, rag, retrieval, vector-database)
+- [[11_RAG_Systems/README_Advanced]] — RAG高级实践 2026 (共享: embedding, rag, retrieval, vector-database)
+- [[11_RAG_Systems/Spring_AI_RAG_Deep_Dive]] — Spring AI RAG 深度解析 (共享: embedding, rag, retrieval, vector-database)
+- [[synthesis/rag-vector-database]] — RAG 系统 × 向量数据库 (共享: embedding, rag, retrieval, vector-database)
+- [[11_RAG_Systems/Haystack_Deep_Dive.md|Haystack_Deep_Dive]]
+- [[11_RAG_Systems/Milvus_Deep_Dive.md|Milvus_Deep_Dive]]
+- [[11_RAG_Systems/Typesense_Deep_Dive.md|Typesense_Deep_Dive]]
+- [[11_RAG_Systems/LlamaIndex_Deep_Dive.md|LlamaIndex_Deep_Dive]]
+- [[11_RAG_Systems/Sentence_Transformers_Deep_Dive.md|Sentence_Transformers_Deep_Dive]]

@@ -1,3 +1,12 @@
+---
+title: "Weights & Biases: ML 实验追踪平台"
+category: "15-testing"
+tags: ["testing", "ai-testing", "prompt-testing", "evaluation"]
+summary: "> **一句话理解**: Weights & Biases (W&B) 是 ML 实验追踪平台——参数记录、可视化、协作、模型管理，AI 研究者的实验瑞士军刀。"
+created: "2026-05-31"
+updated: "2026-05-31"
+---
+
 # Weights & Biases: ML 实验追踪平台
 
 > **一句话理解**: Weights & Biases (W&B) 是 ML 实验追踪平台——参数记录、可视化、协作、模型管理，AI 研究者的实验瑞士军刀。
@@ -312,3 +321,11 @@ report = wandb.compose(
 
 *Last updated: 2026-04-26*
 *Version: 1.0.0*
+
+## Related
+
+- [[15_Testing/AI-Testing-in-nutshell.md|AI-Testing-in-nutshell]]
+- [[15_Testing/AI_Testing_for_dummy.md|AI_Testing_for_dummy]]
+- [[15_Testing/Java_AI_Testing.md|Java_AI_Testing]]
+- [[15_Testing/README.md|15_Testing README]]
+- [[13_Agent_Production/16_Agent_Evaluation/Testing_Methodologies/Testing_Framework.md|Testing_Framework]]

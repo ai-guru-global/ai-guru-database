@@ -1,3 +1,12 @@
+---
+title: 部署推理 2026 趋势
+category: 09-deployment-inference
+tags: ["deployment", "inference", "serving", "vllm", "model-deployment"]
+summary: "> **一句话秒懂**: 2026 年的 AI 推理部署 = 高性能推理引擎 + 极致压缩 + 智能调度 + 边缘部署，让大模型跑得快、跑得省、跑得稳。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 部署推理 2026 趋势
 
 > **一句话秒懂**: 2026 年的 AI 推理部署 = 高性能推理引擎 + 极致压缩 + 智能调度 + 边缘部署，让大模型跑得快、跑得省、跑得稳。
@@ -320,7 +329,7 @@ runner = ModelRunner.from_dir(
 )
 
 outputs = runner.generate(
-    input_ids=[[1, 2, 3, 4]],
+    input_ids=``[ [1, 2, 3, 4] ]``,
     max_new_tokens=512,
     temperature=0.7,
     top_p=0.9,
@@ -1185,3 +1194,12 @@ kubectl logs -f deployment/vllm-deployment -n llm
 - [llama.cpp 深度解析](./llama_cpp_Deep_Dive.md)
 - [AI Gateway 对比 2026](../14_AI_Gateway/AI_Gateway_Comparison_2026.md)
 - [API 设计 for AI](../93_Tools/API_Design_for_AI.md)
+
+## Related
+
+- [[09_Deployment_Inference/Deployment_Inference]] — 模型部署与推理加速 (Deployment & Inference) (共享: deployment, inference, model-deployment, serving, vllm)
+- [[09_Deployment_Inference/Deployment_Inference_for_dummy]] — 模型部署与推理加速 - 小白版 (共享: deployment, inference, model-deployment, serving, vllm)
+- [[09_Deployment_Inference/JVM_AI_Deployment]] — JVM AI 部署与推理 (共享: deployment, inference, model-deployment, serving, vllm)
+- [[09_Deployment_Inference/Inference-in-nutshell]] — 模型推理速成指南 (共享: deployment, inference, serving, vllm)
+- [[09_Deployment_Inference/LMDeploy_Deep_Dive.md|LMDeploy_Deep_Dive]]
+- [[09_Deployment_Inference/README.md|README]]

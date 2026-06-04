@@ -1,3 +1,12 @@
+---
+title: '分布式系统 - 小白版'
+category: '01-fundamentals-distributed-systems'
+tags: ["fundamentals", "math", "algorithms", "basics"]
+summary: '> **一句话秒懂**: 分布式系统就是"人多力量大"——一台电脑训练不了超大 AI，那就让几千台电脑一起上！'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # 分布式系统 - 小白版
 
 > **一句话秒懂**: 分布式系统就是"人多力量大"——一台电脑训练不了超大 AI，那就让几千台电脑一起上！

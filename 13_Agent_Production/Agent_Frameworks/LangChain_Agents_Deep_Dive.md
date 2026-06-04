@@ -1,3 +1,12 @@
+---
+title: "LangChain Agents: 工具调用框架"
+category: "13-agent-production-agent-frameworks"
+tags: ["ai-agents", "agent-framework", "production", "langgraph", "langchain"]
+summary: "> **一句话理解**: LangChain Agents 是 LangChain 的工具调用框架——通过 ReAct/Plan-and-Execute 等策略让 LLM 调用工具、联网搜索、执行代码，实现自主决策。"
+created: "2026-05-31"
+updated: "2026-05-31"
+---
+
 # LangChain Agents: 工具调用框架
 
 > **一句话理解**: LangChain Agents 是 LangChain 的工具调用框架——通过 ReAct/Plan-and-Execute 等策略让 LLM 调用工具、联网搜索、执行代码，实现自主决策。
@@ -392,3 +401,12 @@ result = executor.invoke({
 
 *Last updated: 2026-04-26*
 *Version: 1.0.0*
+
+## Related
+
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026.md|Agent_Harness_Complete_2026]]
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026.md|Agent_Red_Teaming_2026]]
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow.md|Evaluation_Workflow]]
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment.md|Production_Assessment]]
+- [[13_Agent_Production/16_Agent_Evaluation/Benchmarking/Benchmarking_Criteria.md|Benchmarking_Criteria]]
+- [[synthesis/reasoning-models-agents|推理模型 × Agent]] — 推理增强的 Agent 框架

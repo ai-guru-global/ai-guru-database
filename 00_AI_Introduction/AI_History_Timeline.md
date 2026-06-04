@@ -1,3 +1,12 @@
+---
+title: 人工智能历史与发展时间线
+category: 00-ai-introduction
+tags: ["ai", "history", "timeline", "milestones"]
+summary: "人工智能的75年历史是一部\"希望-失望-突破\"的循环史诗——从1950年图灵测试到2026年的Agentic AI，每一次\"寒冬\"后都迎来了更强大的技术复苏。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 人工智能历史与发展时间线
 
 > **一句话理解**: 人工智能的75年历史是一部"希望-失望-突破"的循环史诗——从1950年图灵测试到2026年的Agentic AI，每一次"寒冬"后都迎来了更强大的技术复苏。
@@ -433,3 +442,7 @@ AI成功的三大支柱:
 ---
 
 *Last updated: 2026-04-01* (1950-2026完整时间线)
+
+## Related
+
+- [[00_AI_Introduction/AI_Classic_Cases]] — AI经典案例分析集 (共享: ai, history)

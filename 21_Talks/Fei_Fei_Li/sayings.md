@@ -1,3 +1,12 @@
+---
+title: 李飞飞 (Fei-Fei Li) 关于 AI 的观点与格言
+category: 21-talks-fei-fei-li
+tags: ["talks", "speeches", "insights", "leaders"]
+summary: "> 说明：以下整理李飞飞教授在公开场合关于 AI 的代表性言论，提供中英文对照与出处链接。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 李飞飞 (Fei-Fei Li) 关于 AI 的观点与格言
 
 > 说明：以下整理李飞飞教授在公开场合关于 AI 的代表性言论，提供中英文对照与出处链接。
@@ -30,3 +39,10 @@
 
 ---
 *Last updated: 2026-02-08*
+
+## Related
+
+- [[21_Talks/Andrej_Karpathy/about]] — Andrej Karpathy 简介 (Andrej Karpathy) (共享: insights, leaders, speeches, talks)
+- [[21_Talks/Andrew_Ng/about]] — Andrew Ng 简介 (Andrew Ng) (共享: insights, leaders, speeches, talks)
+- [[21_Talks/Andrew_Ng/sayings]] — Andrew Ng 关于 AI 的观点与格言 (共享: insights, leaders, speeches, talks)
+- [[21_Talks/Bill_Gates/about]] — Bill Gates 简介 (Bill Gates) (共享: insights, leaders, speeches, talks)

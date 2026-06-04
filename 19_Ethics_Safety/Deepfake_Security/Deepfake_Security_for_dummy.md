@@ -1,3 +1,12 @@
+---
+title: '深度伪造安全小白指南 (Deepfake Security for Dummy)'
+category: '19-ethics-safety-deepfake-security'
+tags: ["ai-ethics", "safety", "alignment", "red-teaming"]
+summary: '> **一句话理解**: Deepfake 就像"数字变脸魔术"——用 AI 把你的脸换到别人身上，或者让某人说出从没说过的话，真假难辨。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # 深度伪造安全小白指南 (Deepfake Security for Dummy)
 
 > **一句话理解**: Deepfake 就像"数字变脸魔术"——用 AI 把你的脸换到别人身上，或者让某人说出从没说过的话，真假难辨。

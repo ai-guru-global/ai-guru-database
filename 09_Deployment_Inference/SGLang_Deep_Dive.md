@@ -1,3 +1,12 @@
+---
+title: "SGLang: 高性能 LLM 推理框架"
+category: "09-deployment-inference"
+tags: ["deployment", "inference", "serving", "vllm", "llm"]
+summary: "> **一句话理解**: SGLang 是 2026 年性能最强的 LLM 推理框架——通过 RadixAttention 技术实现前缀缓存和高速多轮对话，吞吐量领先 vLLM 29%。"
+created: "2026-05-31"
+updated: "2026-05-31"
+---
+
 # SGLang: 高性能 LLM 推理框架
 
 > **一句话理解**: SGLang 是 2026 年性能最强的 LLM 推理框架——通过 RadixAttention 技术实现前缀缓存和高速多轮对话，吞吐量领先 vLLM 29%。
@@ -412,3 +421,11 @@ client = OpenAI(base_url="http://localhost:30000/v1", api_key="not-needed")
 
 *Last updated: 2026-04-25*
 *Version: 1.0.0*
+
+## Related
+
+- [[09_Deployment_Inference/Deployment_Inference.md|Deployment_Inference]]
+- [[09_Deployment_Inference/Deployment_Inference_2026.md|Deployment_Inference_2026]]
+- [[09_Deployment_Inference/Deployment_Inference_for_dummy.md|Deployment_Inference_for_dummy]]
+- [[09_Deployment_Inference/Inference-in-nutshell.md|Inference-in-nutshell]]
+- [[09_Deployment_Inference/JVM_AI_Deployment.md|JVM_AI_Deployment]]

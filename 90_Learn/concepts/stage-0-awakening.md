@@ -1,3 +1,12 @@
+---
+title: 'Stage 0: AI 觉醒'
+category: '90-learn-concepts'
+tags: ["learning", "education", "courses", "study-path"]
+summary: '> **"在你学习如何建造之前，先理解你在建造什么。"**'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # Stage 0: AI 觉醒
 
 > **"在你学习如何建造之前，先理解你在建造什么。"**
@@ -125,3 +134,7 @@
 - **想系统学技术** → 进入 [Stage 1: 基础概念](./stage1-foundation.md)
 - **只想通识了解** → 进入 [零基础通识路径](../pathways/absolute-beginner.md)
 - **想做产品/管理** → 进入 [AI 产品经理路径](../pathways/product-manager.md)
+
+## Related
+
+- [[00_AI_Introduction/AI_Learning_Resources.md|AI_Learning_Resources]]

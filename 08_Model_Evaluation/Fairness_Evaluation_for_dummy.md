@@ -1,3 +1,12 @@
+---
+title: '公平性评估 - 小白版'
+category: '08-model-evaluation'
+tags: ["model-evaluation", "metrics", "ab-testing", "benchmark"]
+summary: '> **一句话秒懂**: AI 公平性评估就是给 AI 做"人品考核"——确保它对所有人都一视同仁，不会因为你的性别、肤色或年龄就区别对待。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # 公平性评估 - 小白版
 
 > **一句话秒懂**: AI 公平性评估就是给 AI 做"人品考核"——确保它对所有人都一视同仁，不会因为你的性别、肤色或年龄就区别对待。
@@ -482,3 +491,11 @@ AI 评估：信用一般，需要审核 ⚠️
 ---
 
 *本文是 AI 公平性评估的入门版，适合零基础读者。想了解更多评估知识？[点这里](./Model_Evaluation_for_dummy.md)*
+
+## Related
+
+- [[08_Model_Evaluation/Model_Evaluation.md|Model_Evaluation]]
+- [[08_Model_Evaluation/README.md|08_Model_Evaluation README]]
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow.md|Evaluation_Workflow]]
+- [[13_Agent_Production/16_Agent_Evaluation/Cloud_Agent_Evaluation/README.md|Cloud_Agent_Evaluation README]]
+- [[13_Agent_Production/16_Agent_Evaluation/Cloud_Agent_Evaluation_System_2026.md|Cloud_Agent_Evaluation_System_2026]]

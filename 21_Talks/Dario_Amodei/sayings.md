@@ -1,3 +1,12 @@
+---
+title: Dario Amodei 关于 AI 的观点 (Dario Amodei on AI)
+category: 21-talks-dario-amodei
+tags: ["talks", "speeches", "insights", "leaders"]
+summary: "1. **“Frontier models carry systemic risk; we need evaluations before deployment.” / “前沿模型有系统性风险，必须在部署前评估。”**"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # Dario Amodei 关于 AI 的观点 (Dario Amodei on AI)
 
 1. **“Frontier models carry systemic risk; we need evaluations before deployment.” / “前沿模型有系统性风险，必须在部署前评估。”**  
@@ -11,3 +20,10 @@
 
 ---
 *Last updated: 2026-02-08*
+
+## Related
+
+- [[21_Talks/Andrej_Karpathy/about]] — Andrej Karpathy 简介 (Andrej Karpathy) (共享: insights, leaders, speeches, talks)
+- [[21_Talks/Andrew_Ng/about]] — Andrew Ng 简介 (Andrew Ng) (共享: insights, leaders, speeches, talks)
+- [[21_Talks/Andrew_Ng/sayings]] — Andrew Ng 关于 AI 的观点与格言 (共享: insights, leaders, speeches, talks)
+- [[21_Talks/Bill_Gates/about]] — Bill Gates 简介 (Bill Gates) (共享: insights, leaders, speeches, talks)

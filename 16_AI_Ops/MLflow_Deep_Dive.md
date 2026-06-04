@@ -1,3 +1,12 @@
+---
+title: "MLflow: 机器学习生命周期管理"
+category: "16-ai-ops"
+tags: ["ai-ops", "observability", "monitoring", "incident-response"]
+summary: "> **一句话理解**: MLflow 是 Databricks 的机器学习生命周期管理平台——实验追踪、模型注册、特征存储、模型服务，开源 ML 平台的事实标准。"
+created: "2026-05-31"
+updated: "2026-05-31"
+---
+
 # MLflow: 机器学习生命周期管理
 
 > **一句话理解**: MLflow 是 Databricks 的机器学习生命周期管理平台——实验追踪、模型注册、特征存储、模型服务，开源 ML 平台的事实标准。
@@ -265,7 +274,7 @@ mlflow models serve -m "models:/iris-classifier/Production" -p 5001
 
 # 预测
 curl -X POST -H "Content-Type: application/json" \
-  -d '{"data": [[5.1, 3.5, 1.4, 0.2]]}' \
+  -d '{"data": ``[ [5.1, 3.5, 1.4, 0.2] ]``}' \
   http://localhost:5001/invocations
 ```
 
@@ -364,3 +373,11 @@ mlflow.log_feature_store(
 
 *Last updated: 2026-04-26*
 *Version: 1.0.0*
+
+## Related
+
+- [[16_AI_Ops/AIOps-in-nutshell.md|AIOps-in-nutshell]]
+- [[16_AI_Ops/AI_Incident_Response_Playbook.md|AI_Incident_Response_Playbook]]
+- [[16_AI_Ops/AI_Ops_for_dummy.md|AI_Ops_for_dummy]]
+- [[16_AI_Ops/README.md|16_AI_Ops README]]
+- [[16_AI_Ops/README_for_dummy.md|README_for_dummy]]

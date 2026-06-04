@@ -1,3 +1,12 @@
+---
+title: Performance Benchmarks
+category: 13-agent-production-16-agent-evaluation-qa
+tags: ["ai-agents", "agent-framework", "production", "langgraph"]
+summary: "> Industry standards and internal benchmarks for agent evaluation"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # Performance Benchmarks
 
 > Industry standards and internal benchmarks for agent evaluation
@@ -766,3 +775,10 @@ Representation:  ≥0.7 (Elite ≥0.85)
 - [Cloud Agent Evaluation](../Cloud_Agent_Evaluation/README.md) - 云产品Agent评估
 - [Cloud Agent Leaderboard](../Cloud_Agent_Leaderboard_2026.md) - 2026排行榜
 - [Corpus Coverage Framework](../Corpus_Assessment/Corpus_Coverage_Framework.md) - COVR模型
+
+## Related
+
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)

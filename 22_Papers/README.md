@@ -1,3 +1,12 @@
+---
+title: 10 经典与必读 AI 论文清单 (Essential AI Papers)
+category: 22-papers
+tags: ["paper", "deep-dive"]
+summary: "本清单精选 30+ 篇\"改变 AI 历史\"的核心论文，每篇附带\"为什么必读\"的解读和相关章节链接，帮你从论文源头理解现代 AI 的构建逻辑。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 10 经典与必读 AI 论文清单 (Essential AI Papers)
 
 > **一句话理解**: 本清单精选 30+ 篇"改变 AI 历史"的核心论文，每篇附带"为什么必读"的解读和相关章节链接，帮你从论文源头理解现代 AI 的构建逻辑。
@@ -72,6 +81,12 @@ flowchart LR
 - [Mixture of Experts 深度解读](./Mixture_of_Experts_Deep_Dive.md) — Switch Transformer、Mixtral、DeepSeek MoE 架构解析
 - [DQN 深度解读](./DQN_Deep_Dive.md) — 深度强化学习开山之作，Atari 游戏与经验回放
 - [AlphaGo 深度解读](./AlphaGo_Deep_Dive.md) — 围棋 AI 的突破，深度 RL 与蒙特卡洛树搜索
+- [GAN 深度解读](./GAN_Deep_Dive.md) — 生成对抗网络：从 Goodfellow 到 StyleGAN 的对抗训练革命
+- [CLIP 深度解读](./CLIP_Deep_Dive.md) — 视觉-语言多模态对齐基石，零样本分类与对比学习
+- [LoRA 深度解读](./LoRA_Deep_Dive.md) — 低秩适配微调：从 LoRA 到 QLoRA 的参数高效训练
+- [VAE 深度解读](./VAE_Deep_Dive.md) — 变分自编码器：重参数化技巧、潜空间生成、扩散模型前身
+- [Chain-of-Thought 深度解读](./Chain_of_Thought_Deep_Dive.md) — 思维链提示：让 LLM 逐步推理，o1/R1 的思想源头
+- [RAG 深度解读](./RAG_Deep_Dive.md) — 检索增强生成：先查后答，解决 LLM 知识过时和幻觉问题
 
 ---
 
@@ -166,3 +181,14 @@ flowchart TB
 ---
 
 *Last updated: 2026-05-07*
+
+## Related
+- [[22_Papers/RAG_Deep_Dive|论文深度解读: RAG — 检索增强生成 (Retrieval-Augmented Generation)]]
+- [[22_Papers/CLIP_Deep_Dive|CLIP 深度解读 (Learning Transferable Visual Models From Natural Language Supervision)]]
+- [[22_Papers/GAN_Deep_Dive|GAN 深度解读 (Generative Adversarial Networks)]]
+- [[22_Papers/Chain_of_Thought_Deep_Dive|论文深度解读: Chain-of-Thought — 让 LLM 逐步推理]]
+- [[22_Papers/VAE_Deep_Dive|论文深度解读: VAE — 变分自编码器 (Auto-Encoding Variational Bayes)]]
+- [[22_Papers/LoRA_Deep_Dive|LoRA 深度解读 (Low-Rank Adaptation of Large Language Models)]]
+
+- [[22_Papers/README_for_dummy]] — 22 Papers — 小白版 📚 (共享: deep-dive, paper)
+

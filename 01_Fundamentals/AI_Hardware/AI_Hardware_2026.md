@@ -1,3 +1,12 @@
+---
+title: 'AI硬件与芯片 2026年全景报告'
+category: '01-fundamentals-ai-hardware'
+tags: ["fundamentals", "math", "algorithms", "basics"]
+summary: '> **一句话理解**: AI芯片是AI革命的"引擎"——2026年NVIDIA H200成为推理新标杆，Blackwell B200开始交付，AMD MI350紧追不舍，而定制ASIC和边缘AI芯片正在分化市场。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # AI硬件与芯片 2026年全景报告
 
 > **一句话理解**: AI芯片是AI革命的"引擎"——2026年NVIDIA H200成为推理新标杆，Blackwell B200开始交付，AMD MI350紧追不舍，而定制ASIC和边缘AI芯片正在分化市场。

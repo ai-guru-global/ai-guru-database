@@ -1,3 +1,12 @@
+---
+title: Java Cloud SDK AI 集成指南
+category: 18-cloud-ops-agent
+tags: ["cloud-ops", "devops", "sre", "automation"]
+summary: "> 📚 **Spring AI 基础**: 如果你还不熟悉 Spring AI 的核心概念，请先阅读 [Spring AI 深度解析](../01_Fundamentals/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md)。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # Java Cloud SDK AI 集成指南
 
 > 📚 **Spring AI 基础**: 如果你还不熟悉 Spring AI 的核心概念，请先阅读 [Spring AI 深度解析](../01_Fundamentals/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md)。
@@ -1043,3 +1052,11 @@ GPU 需求: 1x T4 (16GB) + OpenAI API
 ---
 
 *Last updated: 2026-04*
+
+## Related
+
+- [[18_Cloud_Ops_Agent/CloudOps-in-nutshell]] — 云产品运维 Agent 速成指南 (共享: automation, cloud-ops, devops, sre)
+- [[18_Cloud_Ops_Agent/Cloud_Product_Ops_for_dummy]] — 云产品运维 Agent 入门指南 (for Dummies) (共享: automation, cloud-ops, devops, sre)
+- [[18_Cloud_Ops_Agent/docs/architecture/index]] — 云产品运维 Agent 架构设计指南 (Architecture) (共享: automation, cloud-ops, devops, sre)
+- [[18_Cloud_Ops_Agent/docs/corpus/index]] — 云产品运维 Agent 语料工程指南 (Corpus Engineering) (共享: automation, cloud-ops, devops, sre)
+- [[18_Cloud_Ops_Agent/README_for_dummy.md|README_for_dummy]]

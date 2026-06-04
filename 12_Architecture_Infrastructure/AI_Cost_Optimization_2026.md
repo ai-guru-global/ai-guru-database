@@ -1,3 +1,12 @@
+---
+title: 'AI 成本优化与 FinOps 2026'
+category: '12-architecture-infrastructure'
+tags: ["architecture", "infrastructure", "kubernetes", "high-availability"]
+summary: '> **一句话理解**: 2026年AI成本从"技术问题"变成"财务问题"——Token经济学、推理成本优化、容量规划成为每个AI项目必须掌握的能力，一个失误的模型选择可能导致每月数十万美元的浪费。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # AI 成本优化与 FinOps 2026
 
 > **一句话理解**: 2026年AI成本从"技术问题"变成"财务问题"——Token经济学、推理成本优化、容量规划成为每个AI项目必须掌握的能力，一个失误的模型选择可能导致每月数十万美元的浪费。
@@ -588,3 +597,11 @@ class AICapacityPlanner:
 ---
 
 *Last updated: 2026-04-10*
+
+## Related
+
+- [[12_Architecture_Infrastructure/AI_Infrastructure_2026.md|AI_Infrastructure_2026]]
+- [[12_Architecture_Infrastructure/Architecture-in-nutshell.md|Architecture-in-nutshell]]
+- [[12_Architecture_Infrastructure/Architecture_Infrastructure_for_dummy.md|Architecture_Infrastructure_for_dummy]]
+- [[12_Architecture_Infrastructure/Spring_AI_Architecture.md|Spring_AI_Architecture]]
+- [[concepts/llm-infrastructure.md|llm-infrastructure]]

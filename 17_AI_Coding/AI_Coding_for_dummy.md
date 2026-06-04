@@ -1,3 +1,12 @@
+---
+title: 'AI 编程 - 小白版'
+category: '17-ai-coding'
+tags: ["ai-coding", "code-generation", "cursor", "github-copilot"]
+summary: '> **一句话秒懂**: AI 编程就像手机输入法的"自动补全"进化成了超级版——你写一句话，它帮你写完整个程序。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # AI 编程 - 小白版
 
 > **一句话秒懂**: AI 编程就像手机输入法的"自动补全"进化成了超级版——你写一句话，它帮你写完整个程序。
@@ -462,3 +471,11 @@ Vibe Coding（氛围编程）：
 ---
 
 *本文是 [AI Coding](./README.md) 的简化版，适合零基础读者。*
+
+## Related
+
+- [[17_AI_Coding/01_Theory/AI_Coding_Theory.md|AI_Coding_Theory]]
+- [[17_AI_Coding/02_Tools/AI_Coding_Assistants_2026.md|AI_Coding_Assistants_2026]]
+- [[17_AI_Coding/02_Tools/CodeBuddy_Guide.md|CodeBuddy_Guide]]
+- [[17_AI_Coding/02_Tools/Comate_Guide.md|Comate_Guide]]
+- [[17_AI_Coding/02_Tools/Coze_Guide.md|Coze_Guide]]

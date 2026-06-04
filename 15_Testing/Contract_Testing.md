@@ -1,3 +1,12 @@
+---
+title: '契约测试 (Contract Testing for AI Systems)'
+category: '15-testing'
+tags: ["testing", "ai-testing", "prompt-testing", "evaluation"]
+summary: '> **一句话理解**: 契约测试是服务间的"协议保证书"——确保 AI 系统中各服务（LLM、向量库、Agent）之间的 API 交互符合约定，防止版本升级导致的兼容性问题。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # 契约测试 (Contract Testing for AI Systems)
 
 > **一句话理解**: 契约测试是服务间的"协议保证书"——确保 AI 系统中各服务（LLM、向量库、Agent）之间的 API 交互符合约定，防止版本升级导致的兼容性问题。
@@ -1599,3 +1608,11 @@ class VectorDBContract:
 
 *文档版本: 1.0.0*  
 *最后更新: 2026-04-13*
+
+## Related
+
+- [[15_Testing/AI-Testing-in-nutshell.md|AI-Testing-in-nutshell]]
+- [[15_Testing/AI_Testing_for_dummy.md|AI_Testing_for_dummy]]
+- [[15_Testing/Java_AI_Testing.md|Java_AI_Testing]]
+- [[15_Testing/README.md|15_Testing README]]
+- [[13_Agent_Production/16_Agent_Evaluation/Testing_Methodologies/Testing_Framework.md|Testing_Framework]]

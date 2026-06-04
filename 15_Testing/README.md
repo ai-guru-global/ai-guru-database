@@ -1,3 +1,12 @@
+---
+title: AI 测试与评估 (AI Testing)
+category: 15-testing
+tags: ["testing", "ai-testing", "prompt-testing", "evaluation"]
+summary: "> AI 测试是保障 LLM 应用质量的关键环节，覆盖 Prompt 测试、RAG 评估、Agent 评估、合同测试等多个维度。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # AI 测试与评估 (AI Testing)
 
 > AI 测试是保障 LLM 应用质量的关键环节，覆盖 Prompt 测试、RAG 评估、Agent 评估、合同测试等多个维度。
@@ -86,3 +95,26 @@ AI 测试类型
 ---
 
 *Last updated: 2026-04-26*
+
+## Related
+- [[15_Testing/Promptfoo_Deep_Dive|Promptfoo: LLM Prompt 测试框架]]
+- [[15_Testing/Weights_Biases_Deep_Dive|Weights & Biases: ML 实验追踪平台]]
+- [[15_Testing/Test_Data_Management|测试数据管理 (Test Data Management)]]
+- [[15_Testing/Contract_Testing|契约测试 (Contract Testing for AI Systems)]]
+- [[15_Testing/README_for_dummy|15 AI 测试 — 小白版 🧪]]
+- [[15_Testing/AI_Test_Framework_2026|AI 系统测试框架 (AI Test Framework 2026)]]
+- [[15_Testing/RAGAS_Deep_Dive|RAGAS: RAG 评估框架]]
+
+- [[15_Testing/AI-Testing-in-nutshell]] — AI 测试与评估速成指南 (共享: ai-testing, evaluation, prompt-testing, testing)
+- [[15_Testing/AI_Testing_for_dummy]] — AI 测试 - 小白版 (共享: ai-testing, evaluation, prompt-testing, testing)
+- [[15_Testing/Java_AI_Testing]] — Java AI 测试实践 (共享: ai-testing, evaluation, prompt-testing, testing)
+- [[15_Testing/README_for_dummy.md|README_for_dummy]]
+
+- [[15_Testing/Promptfoo_Deep_Dive|Promptfoo: LLM Prompt 测试框架]]
+- [[15_Testing/Weights_Biases_Deep_Dive|Weights & Biases: ML 实验追踪平台]]
+- [[15_Testing/Test_Data_Management|测试数据管理 (Test Data Management)]]
+- [[15_Testing/Contract_Testing|契约测试 (Contract Testing for AI Systems)]]
+- [[15_Testing/README_for_dummy|15 AI 测试 — 小白版 🧪]]
+- [[15_Testing/AI_Test_Framework_2026|AI 系统测试框架 (AI Test Framework 2026)]]
+- [[15_Testing/RAGAS_Deep_Dive|RAGAS: RAG 评估框架]]
+

@@ -1,3 +1,12 @@
+---
+title: 强化学习基础 - 小白版 🎲
+category: 06-reinforcement-learning-rl-foundations
+tags: ["reinforcement-learning", "agent", "mdp"]
+summary: "> **一句话秒懂**: 强化学习就像训练小狗做动作——做对了给零食奖励🦴,做错了不给,小狗通过反复尝试学会什么行为能获得最多零食!"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 强化学习基础 - 小白版 🎲
 
 > **一句话秒懂**: 强化学习就像训练小狗做动作——做对了给零食奖励🦴,做错了不给,小狗通过反复尝试学会什么行为能获得最多零食!
@@ -558,3 +567,10 @@ AI学玩游戏:
 ---
 
 *本文是 [RL_Foundations.md](./RL_Foundations.md) 的简化版,适合零基础读者。*
+
+## Related
+
+- [[06_Reinforcement_Learning/AI_Agents/AI_Agents_for_dummy]] — AI智能体 - 小白版 🤖 (共享: agent, mdp, reinforcement-learning, rl)
+- [[06_Reinforcement_Learning/AI_Agents/Agent-in-nutshell]] — AI 智能体速成指南 (共享: agent, mdp, reinforcement-learning, rl)
+- [[06_Reinforcement_Learning/AI_Agents/Agent_Future_Roadmap_2026_2030]] — Agent 未来发展路线图 2026-2030 (共享: agent, mdp, reinforcement-learning, rl)
+- [[06_Reinforcement_Learning/AI_Agents/Agent_Protocols_Detail]] — AI Agent 协议详解：MCP、A2A、UCP (共享: agent, mdp, reinforcement-learning, rl)

@@ -1,3 +1,12 @@
+---
+title: AI技术全景概览
+category: 00-ai-introduction
+tags: ["ai", "landscape", "overview", "ecosystem"]
+summary: "AI技术生态像一座冰山——你看到的ChatGPT只是水面上的尖端，水面下是数十年积累的数学理论、算法创新、工程实践和基础设施。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # AI技术全景概览
 
 > **一句话理解**: AI技术生态像一座冰山——你看到的ChatGPT只是水面上的尖端，水面下是数十年积累的数学理论、算法创新、工程实践和基础设施。
@@ -721,3 +730,9 @@ AI开发工具全景:
 ---
 
 *Last updated: 2026-04-01* (通识课教材版)
+
+## Related
+
+- [[concepts/ai-technology-landscape]] — AI 技术全景
+- [[concepts/ai-fundamentals]] — AI 基础概念
+- [[concepts/ai-hardware]] — AI 硬件

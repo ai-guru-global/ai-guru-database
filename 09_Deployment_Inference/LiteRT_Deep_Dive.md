@@ -1,3 +1,12 @@
+---
+title: "LiteRT / TensorFlow Lite: 边缘 AI 推理"
+category: "09-deployment-inference"
+tags: ["deployment", "inference", "serving", "vllm"]
+summary: "> **一句话理解**: LiteRT (TensorFlow Lite) 让 AI 模型在边缘设备上高效运行——手机、IoT、嵌入式系统，延迟低、功耗小、完全离线。"
+created: "2026-05-31"
+updated: "2026-05-31"
+---
+
 # LiteRT / TensorFlow Lite: 边缘 AI 推理
 
 > **一句话理解**: LiteRT (TensorFlow Lite) 让 AI 模型在边缘设备上高效运行——手机、IoT、嵌入式系统，延迟低、功耗小、完全离线。
@@ -219,3 +228,11 @@ output = interpreter.get_tensor(output_index)
 
 *Last updated: 2026-04-26*
 *Version: 1.0.0*
+
+## Related
+
+- [[09_Deployment_Inference/Deployment_Inference.md|Deployment_Inference]]
+- [[09_Deployment_Inference/Deployment_Inference_2026.md|Deployment_Inference_2026]]
+- [[09_Deployment_Inference/Deployment_Inference_for_dummy.md|Deployment_Inference_for_dummy]]
+- [[09_Deployment_Inference/Inference-in-nutshell.md|Inference-in-nutshell]]
+- [[09_Deployment_Inference/JVM_AI_Deployment.md|JVM_AI_Deployment]]

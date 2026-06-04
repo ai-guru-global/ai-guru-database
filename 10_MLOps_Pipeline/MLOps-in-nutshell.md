@@ -1,3 +1,12 @@
+---
+title: MLOps 速成指南
+category: 10-mlops-pipeline
+tags: ["mlops", "ci-cd", "pipeline", "feature-store"]
+summary: "> 🎯 **目标**：理解 MLOps 的核心概念、流水线架构和关键工具，掌握将 ML 模型从实验带到生产的工程实践。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # MLOps 速成指南
 
 > 🎯 **目标**：理解 MLOps 的核心概念、流水线架构和关键工具，掌握将 ML 模型从实验带到生产的工程实践。
@@ -351,3 +360,11 @@ flowchart TB
 ---
 
 *Last updated: 2026-04-11*
+
+## Related
+
+- [[10_MLOps_Pipeline/Data_Pipeline_Orchestration]] — 数据流水线编排 (Data Pipeline Orchestration) (共享: ci-cd, feature-store, mlops, pipeline)
+- [[10_MLOps_Pipeline/README.md|README]]
+- [[10_MLOps_Pipeline/README_for_dummy.md|README_for_dummy]]
+- [[10_MLOps_Pipeline/Experiment_Tracking_Deep_Dive.md|Experiment_Tracking_Deep_Dive]]
+- [[10_MLOps_Pipeline/Feature_Store_Deep_Dive.md|Feature_Store_Deep_Dive]]

@@ -1,3 +1,12 @@
+---
+title: "BentoML:  AI 模型服务框架"
+category: "09-deployment-inference"
+tags: ["deployment", "inference", "serving", "vllm"]
+summary: "> **一句话理解**: BentoML 是 AI 模型服务框架——一键打包模型为生产级 API、支持多框架、自动扩缩容，本地到生产的无缝迁移。"
+created: "2026-05-31"
+updated: "2026-05-31"
+---
+
 # BentoML:  AI 模型服务框架
 
 > **一句话理解**: BentoML 是 AI 模型服务框架——一键打包模型为生产级 API、支持多框架、自动扩缩容，本地到生产的无缝迁移。
@@ -318,3 +327,11 @@ class MultiModelService:
 
 *Last updated: 2026-04-26*
 *Version: 1.0.0*
+
+## Related
+
+- [[09_Deployment_Inference/Deployment_Inference.md|Deployment_Inference]]
+- [[09_Deployment_Inference/Deployment_Inference_2026.md|Deployment_Inference_2026]]
+- [[09_Deployment_Inference/Deployment_Inference_for_dummy.md|Deployment_Inference_for_dummy]]
+- [[09_Deployment_Inference/Inference-in-nutshell.md|Inference-in-nutshell]]
+- [[09_Deployment_Inference/JVM_AI_Deployment.md|JVM_AI_Deployment]]

@@ -1,3 +1,12 @@
+---
+title: '异常检测 (Anomaly Detection)'
+category: '02-machine-learning-anomaly-detection'
+tags: ["machine-learning", "supervised", "unsupervised"]
+summary: '> 异常检测是识别数据中"与众不同"的模式的任务，广泛应用于欺诈检测、入侵检测、设备故障预警等领域。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # 异常检测 (Anomaly Detection)
 
 > 异常检测是识别数据中"与众不同"的模式的任务，广泛应用于欺诈检测、入侵检测、设备故障预警等领域。

@@ -1,3 +1,12 @@
+---
+title: 语料库覆盖度评估框架
+category: 13-agent-production-16-agent-evaluation-corpus-assessment
+tags: ["ai-agents", "agent-framework", "production", "langgraph", "rag"]
+summary: "> 系统化评估各云产品智能体背后语料库/知识库的完备性、准确性和时效性"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 语料库覆盖度评估框架
 
 > 系统化评估各云产品智能体背后语料库/知识库的完备性、准确性和时效性
@@ -337,3 +346,12 @@ Agent    │  维持现状 │  语料是瓶颈│
 | 版本 | 日期 | 变更 |
 |------|------|------|
 | 1.0.0 | 2026-04 | 初始版本，建立 COVR 四维评估模型 |
+
+## Related
+
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/Memory_Infrastructure/RAG_Memory_Infrastructure_Tools.md|RAG_Memory_Infrastructure_Tools]]
+- [[13_Agent_Production/16_Agent_Evaluation/Corpus_Assessment/README.md|README]]

@@ -1,3 +1,12 @@
+---
+title: "vLLM: 生产级 LLM 推理引擎"
+category: "09-deployment-inference"
+tags: ["deployment", "inference", "serving", "vllm", "llm"]
+summary: "> **一句话理解**: vLLM 是 UC Berkeley 出品的生产级 LLM 推理引擎——PagedAttention 技术让显存利用率从 20% 提升到 90%+，吞吐量行业标杆。"
+created: "2026-05-31"
+updated: "2026-05-31"
+---
+
 # vLLM: 生产级 LLM 推理引擎
 
 > **一句话理解**: vLLM 是 UC Berkeley 出品的生产级 LLM 推理引擎——PagedAttention 技术让显存利用率从 20% 提升到 90%+，吞吐量行业标杆。
@@ -335,3 +344,11 @@ response = client.chat.completions.create(
 
 *Last updated: 2026-04-26*
 *Version: 1.0.0*
+
+## Related
+
+- [[09_Deployment_Inference/Deployment_Inference.md|Deployment_Inference]]
+- [[09_Deployment_Inference/Deployment_Inference_2026.md|Deployment_Inference_2026]]
+- [[09_Deployment_Inference/Deployment_Inference_for_dummy.md|Deployment_Inference_for_dummy]]
+- [[09_Deployment_Inference/Inference-in-nutshell.md|Inference-in-nutshell]]
+- [[09_Deployment_Inference/JVM_AI_Deployment.md|JVM_AI_Deployment]]

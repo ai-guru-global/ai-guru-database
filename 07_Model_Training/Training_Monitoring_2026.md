@@ -1,3 +1,12 @@
+---
+title: 'Training Monitoring & Experiment Tracking 2026'
+category: '07-model-training'
+tags: ["model-training", "distributed-training", "optimization", "fsdp"]
+summary: '> **一句话理解**: 训练监控与实验追踪是 AI 工程化的"黑匣子"，让每一次实验都可观测、可复现、可比较，从"炼丹"走向"科学"。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # Training Monitoring & Experiment Tracking 2026
 
 > **一句话理解**: 训练监控与实验追踪是 AI 工程化的"黑匣子"，让每一次实验都可观测、可复现、可比较，从"炼丹"走向"科学"。
@@ -843,3 +852,11 @@ loss_tensor = all_reduce_average(loss_tensor)
 ---
 
 *Last updated: 2026-05-07*
+
+## Related
+
+- [[07_Model_Training/Distributed_Training_2026.md|Distributed_Training_2026]]
+- [[07_Model_Training/Distributed_Training_for_dummy.md|Distributed_Training_for_dummy]]
+- [[07_Model_Training/Mixed_Precision_Training.md|Mixed_Precision_Training]]
+- [[07_Model_Training/Model-Training-in-nutshell.md|Model-Training-in-nutshell]]
+- [[07_Model_Training/Model_Training_for_dummy.md|Model_Training_for_dummy]]

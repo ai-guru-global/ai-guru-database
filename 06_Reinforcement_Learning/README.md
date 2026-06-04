@@ -1,3 +1,12 @@
+---
+title: 06 强化学习与智能体 (Reinforcement Learning & Agents)
+category: 06-reinforcement-learning
+tags: ["reinforcement-learning", "agent", "mdp"]
+summary: "本章涵盖强化学习的完整技术栈，从数学基础（MDP/贝尔曼方程）到深度强化学习算法（DQN/PPO），再到自主智能体架构（推理规划/工具使用）。这是构建自主决策系统的核心技术。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 06 强化学习与智能体 (Reinforcement Learning & Agents)
 
 本章涵盖强化学习的完整技术栈，从数学基础（MDP/贝尔曼方程）到深度强化学习算法（DQN/PPO），再到自主智能体架构（推理规划/工具使用）。这是构建自主决策系统的核心技术。
@@ -92,3 +101,27 @@
 
 ---
 *Last updated: 2026-04-01*
+
+## Related
+- [[06_Reinforcement_Learning/README_for_dummy|06 强化学习与智能体 - 小白版 🎮]]
+
+- [[06_Reinforcement_Learning/AI_Agents/AI_Agents_for_dummy]] — AI智能体 - 小白版 🤖 (共享: agent, mdp, reinforcement-learning, rl)
+- [[06_Reinforcement_Learning/AI_Agents/Agent-in-nutshell]] — AI 智能体速成指南 (共享: agent, mdp, reinforcement-learning, rl)
+- [[06_Reinforcement_Learning/AI_Agents/Agent_Future_Roadmap_2026_2030]] — Agent 未来发展路线图 2026-2030 (共享: agent, mdp, reinforcement-learning, rl)
+- [[06_Reinforcement_Learning/AI_Agents/Agent_Protocols_Detail]] — AI Agent 协议详解：MCP、A2A、UCP (共享: agent, mdp, reinforcement-learning, rl)
+- [[06_Reinforcement_Learning/RL_Foundations/RL_Foundations]] — 强化学习基础 (RL Foundations)
+- [[06_Reinforcement_Learning/RL_Foundations/RL_Foundations_for_dummy]] — 强化学习基础 - 小白版 🎲
+- [[06_Reinforcement_Learning/Robotics_Embodied_AI/Embodied_AI_2026]] — Embodied_AI_2026
+- [[06_Reinforcement_Learning/Robotics_Embodied_AI/VLA_Models_2026]] — VLA 模型 2026：视觉-语言-动作模型的技术突破与产业应用
+- [[06_Reinforcement_Learning/Robotics_Embodied_AI/Embodied_AI_Complete_2026]] — 具身智能 (Embodied AI) 2026 完整指南
+- [[06_Reinforcement_Learning/Deep_RL/Deep_RL]] — Deep_RL
+- [[06_Reinforcement_Learning/Deep_RL/PPO_Deep_Dive]] — PPO_Deep_Dive
+- [[06_Reinforcement_Learning/Deep_RL/Deep_RL_for_dummy]] — Deep_RL_for_dummy
+- [[06_Reinforcement_Learning/Deep_RL/DQN_Deep_Dive]] — DQN_Deep_Dive
+- [[06_Reinforcement_Learning/AI_Agents/Agent_Observability_2026]] — Agent_Observability_2026
+- [[06_Reinforcement_Learning/AI_Agents/AI_Agents]] — AI_Agents
+- [[06_Reinforcement_Learning/AI_Agents/MCP_Implementation_Guide]] — MCP_Implementation_Guide
+- [[06_Reinforcement_Learning/AI_Agents/Agent_State_Management]] — Agent_State_Management
+- [[06_Reinforcement_Learning/AI_Agents/Agent_Protocols_2026]] — Agent_Protocols_2026
+- [[concepts/rlhf.md|rlhf]]
+

@@ -1,3 +1,12 @@
+---
+title: AlphaGo 深度解读 (Mastering the Game of Go)
+category: 22-papers
+tags: ["reinforcement-learning", "alphago", "game-ai", "deepmind"]
+summary: "AlphaGo 像是一位结合了\"棋谱记忆\"和\"自我对弈\"的天才围棋手——它既学习了人类几千年积累的围棋智慧，又通过与自己下棋发现了人类从未想到的新招数，最终在围棋上战胜了人类冠军。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # AlphaGo 深度解读 (Mastering the Game of Go)
 
 > **一句话理解**: AlphaGo 像是一位结合了"棋谱记忆"和"自我对弈"的天才围棋手——它既学习了人类几千年积累的围棋智慧，又通过与自己下棋发现了人类从未想到的新招数，最终在围棋上战胜了人类冠军。
@@ -358,3 +367,9 @@ flowchart TB
 
 *本文是 [README.md](./README.md) 的补充，适合想深入理解 AlphaGo 和深度 RL 原理的读者。*
 *原始论文: [Mastering the Game of Go with Deep Neural Networks and Tree Search](https://www.nature.com/articles/nature16961)*
+
+## Related
+
+- [[concepts/reinforcement-learning]] — 强化学习基础
+- [[concepts/deep-reinforcement-learning]] — 深度强化学习
+- [[concepts/ai-agents]] — AI 智能体

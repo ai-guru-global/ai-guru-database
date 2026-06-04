@@ -1,3 +1,12 @@
+---
+title: Andrej Karpathy 简介 (Andrej Karpathy)
+category: 21-talks-andrej-karpathy
+tags: ["talks", "speeches", "insights", "leaders"]
+summary: "**身份**: 前 Tesla AI 主管、OpenAI 早期成员，知名 ML 教育者。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # Andrej Karpathy 简介 (Andrej Karpathy)
 
 - **身份**: 前 Tesla AI 主管、OpenAI 早期成员，知名 ML 教育者。
@@ -18,3 +27,12 @@
 - [AI 未来趋势](../../00_AI_Introduction/AI_Future_Trends.md) — 行业前瞻判断汇总
 
 *Last updated: 2026-05-07*
+
+## Related
+
+- [[21_Talks/Andrew_Ng/about]] — Andrew Ng 简介 (Andrew Ng) (共享: insights, leaders, speeches, talks)
+- [[21_Talks/Andrew_Ng/sayings]] — Andrew Ng 关于 AI 的观点与格言 (共享: insights, leaders, speeches, talks)
+- [[21_Talks/Bill_Gates/about]] — Bill Gates 简介 (Bill Gates) (共享: insights, leaders, speeches, talks)
+- [[21_Talks/Bill_Gates/sayings]] — Bill Gates 关于 AI 的观点 (Bill Gates on AI) (共享: insights, leaders, speeches, talks)
+- [[21_Talks/README.md|README]]
+- [[21_Talks/Andrej_Karpathy/sayings.md|sayings]]

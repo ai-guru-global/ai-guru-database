@@ -1,3 +1,12 @@
+---
+title: "Ollama: 本地大模型部署平台"
+category: "09-deployment-inference"
+tags: ["deployment", "inference", "serving", "vllm", "llama"]
+summary: "> **一句话理解**: Ollama 让在本地运行大模型变得超级简单——一条命令就能跑 Llama、Mistral 等模型，告别复杂配置和云服务依赖。"
+created: "2026-05-31"
+updated: "2026-05-31"
+---
+
 # Ollama: 本地大模型部署平台
 
 > **一句话理解**: Ollama 让在本地运行大模型变得超级简单——一条命令就能跑 Llama、Mistral 等模型，告别复杂配置和云服务依赖。
@@ -404,3 +413,11 @@ Ollama 性能参考 (Llama3 8B, M2 Pro, 32GB RAM)
 
 *Last updated: 2026-04-24*
 *Version: 1.0.0*
+
+## Related
+
+- [[09_Deployment_Inference/Deployment_Inference.md|Deployment_Inference]]
+- [[09_Deployment_Inference/Deployment_Inference_2026.md|Deployment_Inference_2026]]
+- [[09_Deployment_Inference/Deployment_Inference_for_dummy.md|Deployment_Inference_for_dummy]]
+- [[09_Deployment_Inference/Inference-in-nutshell.md|Inference-in-nutshell]]
+- [[09_Deployment_Inference/JVM_AI_Deployment.md|JVM_AI_Deployment]]

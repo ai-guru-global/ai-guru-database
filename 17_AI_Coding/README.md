@@ -1,3 +1,12 @@
+---
+title: 'AI编程 (AI Coding)'
+category: '17-ai-coding'
+tags: ["ai-coding", "code-generation", "cursor", "github-copilot"]
+summary: '> AI编程已从"代码补全"进化为"结对编程伙伴"——本目录构建涵盖理论、工具、实战、方法论的完整知识体系。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # AI编程 (AI Coding)
 
 > AI编程已从"代码补全"进化为"结对编程伙伴"——本目录构建涵盖理论、工具、实战、方法论的完整知识体系。
@@ -89,3 +98,42 @@
 ## 一句话总结
 
 > **AI编程已从"补全"进化为"结对编程伙伴"** — Cursor以72%代码接受率领跑，Hermes Agent以全平台开源和17+模型支持成为最大变量，Agentic Coding成为2026年主流。
+
+## Related
+- [[17_AI_Coding/03_Practice/Vibe_Coding_Prompt_Templates|Vibe Coding 提示词模板库]]
+- [[17_AI_Coding/03_Practice/Vibe_Coding_Getting_Started|Vibe Coding 傻瓜指南 (Vibe Coding for Dummies)]]
+- [[17_AI_Coding/03_Practice/Vibe_Coding_Real_World_Cases|Vibe Coding 实战案例集]]
+- [[17_AI_Coding/02_Tools/OpenRouter/12-openrouter-enterprise-advanced|17_AI_Coding/02_Tools/OpenRouter/12-openrouter-enterprise-advanced]]
+- [[17_AI_Coding/02_Tools/Hermes_Agent_2026|Hermes Agent 2026年专业指南]]
+- [[17_AI_Coding/02_Tools/Qoder_Guide|Qoder / QoderWork / QoderWake 使用指南]]
+- [[17_AI_Coding/02_Tools/DeepSeek_Guide|DeepSeek 使用指南]]
+- [[17_AI_Coding/02_Tools/Monica_Guide|Monica 使用指南]]
+- [[17_AI_Coding/AI_Coding-in-nutshell|AI 编程 - 速查版]]
+- [[17_AI_Coding/README|AI编程 (AI Coding)]]
+- [[17_AI_Coding/MOC_OpenRouter_OpenCode|topic-ai-coding MOC]]
+- [[17_AI_Coding/README_for_dummy|17 AI 编程 — 小白版 💻]]
+
+- [[concepts/ai-agents]] — AI 智能体
+- [[concepts/prompt-engineering]] — 提示工程
+- [[17_AI_Coding/04_Methodology/Vibe_Coding_Production_Practices]] — Vibe_Coding_Production_Practices
+- [[17_AI_Coding/04_Methodology/Agentic_Coding_Methodology]] — Agentic_Coding_Methodology
+- [[17_AI_Coding/04_Methodology/Vibe_Coding_Methodology]] — Vibe_Coding_Methodology
+- [[17_AI_Coding/02_Tools/MiMO_Guide]] — MiMO 使用指南
+- [[17_AI_Coding/02_Tools/Kilo_Guide]] — Kilo / KiloClaw 使用指南
+- [[17_AI_Coding/02_Tools/Grok_Guide]] — Grok / Grok Code 使用指南
+- [[17_AI_Coding/02_Tools/Kimi_Guide]] — Kimi Code / Kimi Chat 使用指南
+- [[17_AI_Coding/02_Tools/AI_Coding_Assistants_2026]] — AI_Coding_Assistants_2026
+- [[17_AI_Coding/02_Tools/Trae_Guide]] — Trae 使用指南
+- [[17_AI_Coding/02_Tools/MiniMax_Guide]] — MiniMax / MiniClaw 使用指南
+- [[17_AI_Coding/02_Tools/Manus_Guide]] — Manus 使用指南
+- [[17_AI_Coding/02_Tools/GLM_Guide]] — GLM 使用指南
+- [[17_AI_Coding/02_Tools/Qwen_Guide]] — Qwen (通义千问) 使用指南
+- [[17_AI_Coding/02_Tools/Cursor_Guide]] — Cursor 使用指南
+- [[17_AI_Coding/02_Tools/Comate_Guide]] — Comate 使用指南
+- [[17_AI_Coding/02_Tools/Ima_Guide]] — Ima 使用指南
+- [[17_AI_Coding/02_Tools/Coze_Guide]] — Coze 使用指南
+- [[17_AI_Coding/02_Tools/Pending_Tools_Catalog]] — 待探索工具目录
+
+
+
+

@@ -1,3 +1,12 @@
+---
+title: AI 基础速成指南
+category: 01-fundamentals
+tags: ["fundamentals", "math", "algorithms", "basics"]
+summary: "> **一句话理解**: AI 大厦的地基——数学、算法、硬件和工具链共同构成了让人工智能从理论变为现实的工程基础。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # AI 基础速成指南
 
 > **一句话理解**: AI 大厦的地基——数学、算法、硬件和工具链共同构成了让人工智能从理论变为现实的工程基础。
@@ -381,3 +390,10 @@ flowchart TB
 ---
 
 *Last updated: 2026-05-07*
+
+## Related
+
+- [[01_Fundamentals/AI_Hardware/README]] — AI硬件与芯片 (AI Hardware) (共享: algorithms, basics, fundamentals, math)
+- [[01_Fundamentals/Java_Ecosystem_AI/Java_Ecosystem_AI_Overview]] — Java 生态与 AI：全景概览 (共享: algorithms, basics, fundamentals, math)
+- [[01_Fundamentals/Java_Ecosystem_AI/Spring_AI_Deep_Dive]] — Spring AI 深度解析 (共享: algorithms, basics, fundamentals, math)
+- [[01_Fundamentals/README]] — 01 基础理论 (Fundamentals) (共享: algorithms, basics, fundamentals, math)

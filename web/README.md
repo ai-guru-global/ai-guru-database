@@ -1,3 +1,12 @@
+---
+title: AI Guru Knowledge Base Frontend
+category: web
+tags: ["web", "frontend", "backend", "fullstack"]
+summary: "A modern, high-performance knowledge base frontend built to CNCF open-source standards."
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # AI Guru Knowledge Base Frontend
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -125,3 +134,12 @@ This project is licensed under the MIT License - see the [LICENSE](../LICENSE) f
 - [shadcn/ui](https://ui.shadcn.com/) for the beautiful component library
 - [Tailwind CSS](https://tailwindcss.com/) for the utility-first CSS framework
 - [Vite](https://vitejs.dev/) for the next-generation frontend tooling
+
+## Related
+
+- [[Web/.trae/documents/CloudMaster应用全面修复计划]] — CloudMaster应用全面修复计划 (共享: backend, frontend, fullstack, web)
+- [[Web/CHANGELOG]] — Changelog (共享: backend, frontend, fullstack, web)
+- [[Web/CONTRIBUTING]] — 贡献指南 (共享: backend, frontend, fullstack, web)
+- [[Web/TROUBLESHOOTING]] — Troubleshooting Guide (共享: backend, frontend, fullstack, web)
+- [[Web/docs/architecture]] — Architecture Documentation
+- [[Web/README_for_dummy.md|README_for_dummy]]

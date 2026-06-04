@@ -1,3 +1,12 @@
+---
+title: '数据结构与算法 - 小白版'
+category: '01-fundamentals-data-structures-algorithms'
+tags: ["fundamentals", "math", "algorithms", "basics"]
+summary: '> **一句话秒懂**: 数据结构是"怎么摆放东西方便找"，算法是"怎么做事更高效"——就像图书馆的书架系统和找书的方法。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # 数据结构与算法 - 小白版
 
 > **一句话秒懂**: 数据结构是"怎么摆放东西方便找"，算法是"怎么做事更高效"——就像图书馆的书架系统和找书的方法。

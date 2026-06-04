@@ -1,3 +1,12 @@
+---
+title: "Weaviate: 开源向量数据库"
+category: "11-rag-systems"
+tags: ["rag", "retrieval", "vector-database", "embedding"]
+summary: "> **一句话理解**: Weaviate 是一个开源的向量数据库——支持语义搜索、混合搜索、知识图谱，专门为 LLM 时代设计，支持文本、图片等多模态数据。"
+created: "2026-05-31"
+updated: "2026-05-31"
+---
+
 # Weaviate: 开源向量数据库
 
 > **一句话理解**: Weaviate 是一个开源的向量数据库——支持语义搜索、混合搜索、知识图谱，专门为 LLM 时代设计，支持文本、图片等多模态数据。
@@ -386,3 +395,11 @@ result = client.query.get(
 
 *Last updated: 2026-04-25*
 *Version: 1.0.0*
+
+## Related
+
+- [[11_RAG_Systems/RAG-in-nutshell.md|RAG-in-nutshell]]
+- [[11_RAG_Systems/RAG_Systems.md|RAG_Systems]]
+- [[11_RAG_Systems/README_Advanced.md|README_Advanced]]
+- [[11_RAG_Systems/Spring_AI_RAG_Deep_Dive.md|Spring_AI_RAG_Deep_Dive]]
+- [[synthesis/rag-vector-database.md|rag-vector-database]]

@@ -1,3 +1,12 @@
+---
+title: Attention Is All You Need 深度解读
+category: 22-papers
+tags: ["nlp", "transformer", "attention", "google"]
+summary: "这篇论文就像 AI 领域的\"相对论\"——它证明了你不需要复杂的 RNN 或 CNN，只靠\"注意力机制\"就能理解序列中每个词与其他所有词的关系，从而彻底改变了自然语言处理乃至整个人工智能的架构范式。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # Attention Is All You Need 深度解读
 
 > **一句话理解**: 这篇论文就像 AI 领域的"相对论"——它证明了你不需要复杂的 RNN 或 CNN，只靠"注意力机制"就能理解序列中每个词与其他所有词的关系，从而彻底改变了自然语言处理乃至整个人工智能的架构范式。
@@ -396,3 +405,10 @@ flowchart TB
 ---
 
 *Last updated: 2026-05-07*
+
+## Related
+
+- [[22_Papers/BERT_Deep_Dive]] — BERT 深度解读 (Bidirectional Encoder Representations from Transformers) (共享: google, nlp, transformer)
+- [[synthesis/transformer-llm-architecture]] — Transformer 架构 × LLM 架构 (共享: attention, nlp, transformer)
+- [[04_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/README]] — PEFT 2026 (参数高效微调) (共享: nlp, transformer)
+- [[concepts/long-context-models.md|long-context-models]]

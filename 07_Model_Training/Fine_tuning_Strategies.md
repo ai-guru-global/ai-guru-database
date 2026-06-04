@@ -1,3 +1,12 @@
+---
+title: '微调策略完全指南 (Fine-tuning Strategies)'
+category: '07-model-training'
+tags: ["model-training", "distributed-training", "optimization", "fsdp"]
+summary: '> **一句话理解**: 微调策略是大模型"因材施教"的核心方法论——从全参数重塑到轻量级适配，选择正确的微调方法能在效果、成本与效率之间找到最优平衡。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # 微调策略完全指南 (Fine-tuning Strategies)
 
 > **一句话理解**: 微调策略是大模型"因材施教"的核心方法论——从全参数重塑到轻量级适配，选择正确的微调方法能在效果、成本与效率之间找到最优平衡。
@@ -1293,3 +1302,13 @@ lora_config = LoraConfig(
 ---
 
 *Last updated: 2026-05-07*
+
+## Related
+
+- [[07_Model_Training/Distributed_Training_2026.md|Distributed_Training_2026]]
+- [[07_Model_Training/Distributed_Training_for_dummy.md|Distributed_Training_for_dummy]]
+- [[07_Model_Training/Mixed_Precision_Training.md|Mixed_Precision_Training]]
+- [[07_Model_Training/Model-Training-in-nutshell.md|Model-Training-in-nutshell]]
+- [[07_Model_Training/Model_Training_for_dummy.md|Model_Training_for_dummy]]
+
+- [[synthesis/alignment-rlhf|价值对齐 × RLHF：从人类反馈到可扩展监督]]

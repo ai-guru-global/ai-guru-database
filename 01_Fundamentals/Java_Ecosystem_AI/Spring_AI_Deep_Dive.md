@@ -1,3 +1,12 @@
+---
+title: Spring AI 深度解析
+category: 01-fundamentals-java-ecosystem-ai
+tags: ["fundamentals", "math", "algorithms", "basics", "spring-ai"]
+summary: "> **一句话理解**: Spring AI 是 Spring 官方的 AI 应用框架 —— 用 Spring 的方式统一接入 LLM、构建 RAG、编排 Agent，让 Java 开发者用熟悉的编程模型构建企业级 AI 应用。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # Spring AI 深度解析
 
 > **一句话理解**: Spring AI 是 Spring 官方的 AI 应用框架 —— 用 Spring 的方式统一接入 LLM、构建 RAG、编排 Agent，让 Java 开发者用熟悉的编程模型构建企业级 AI 应用。
@@ -1449,3 +1458,10 @@ Trace: 用户请求 → AI 回答
 ---
 
 *Last updated: 2026-04*
+
+## Related
+
+- [[01_Fundamentals/AI_Hardware/README]] — AI硬件与芯片 (AI Hardware) (共享: algorithms, basics, fundamentals, math)
+- [[01_Fundamentals/Fundamentals-in-nutshell]] — AI 基础速成指南 (共享: algorithms, basics, fundamentals, math)
+- [[01_Fundamentals/Java_Ecosystem_AI/Java_Ecosystem_AI_Overview]] — Java 生态与 AI：全景概览 (共享: algorithms, basics, fundamentals, math)
+- [[01_Fundamentals/README]] — 01 基础理论 (Fundamentals) (共享: algorithms, basics, fundamentals, math)

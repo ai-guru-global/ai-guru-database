@@ -1,3 +1,12 @@
+---
+title: '训练监控可视化 (Training Monitoring Visualization)'
+category: '94-visualization'
+tags: ["visualization", "charts", "dashboards", "data-viz", "model-training"]
+summary: '> **一句话理解**: 训练监控可视化是 AI 开发的"黑匣子仪表盘"——实时追踪 Loss、梯度、学习率、GPU 利用率等关键指标，让每一次实验可观测、可诊断、可复现。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # 训练监控可视化 (Training Monitoring Visualization)
 
 > **一句话理解**: 训练监控可视化是 AI 开发的"黑匣子仪表盘"——实时追踪 Loss、梯度、学习率、GPU 利用率等关键指标，让每一次实验可观测、可诊断、可复现。
@@ -1034,3 +1043,11 @@ W&B 适合:
 ---
 
 *Last updated: 2026-05-17*
+
+## Related
+
+- [[94_Visualization/README.md|94_Visualization README]]
+- [[94_Visualization/atlas/README.md|atlas README]]
+- [[94_Visualization/atlas/docs/performance.md|performance]]
+- [[07_Model_Training/Distributed_Training_2026.md|Distributed_Training_2026]]
+- [[07_Model_Training/Distributed_Training_for_dummy.md|Distributed_Training_for_dummy]]

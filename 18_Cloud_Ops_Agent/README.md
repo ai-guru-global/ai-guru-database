@@ -1,3 +1,12 @@
+---
+title: '云运维 Agent (Cloud Ops Agent)'
+category: '18-cloud-ops-agent'
+tags: ["cloud-ops", "devops", "sre", "automation"]
+summary: '> **一句话理解**: 云运维 Agent 是专为云服务设计的"自动驾驶系统"——自主监控产品健康、诊断问题根因、执行变更操作，让云产品 7×24 小时稳定运行。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # 云运维 Agent (Cloud Ops Agent)
 
 > **一句话理解**: 云运维 Agent 是专为云服务设计的"自动驾驶系统"——自主监控产品健康、诊断问题根因、执行变更操作，让云产品 7×24 小时稳定运行。
@@ -41,3 +50,32 @@
 ---
 
 *本章配套有 docs/ 目录和 mkdocs.yml，支持构建独立文档站点。*
+
+## Related
+- [[18_Cloud_Ops_Agent/docs/templates/test_template|文档标题]]
+- [[18_Cloud_Ops_Agent/docs/templates/dev_template|文档标题]]
+- [[18_Cloud_Ops_Agent/docs/templates/arch_template|文档标题]]
+- [[18_Cloud_Ops_Agent/docs/templates/ops_template|文档标题]]
+- [[18_Cloud_Ops_Agent/docs/operations/index|云产品运维 Agent 运维指南 (Operations)]]
+- [[18_Cloud_Ops_Agent/docs/product/index|云产品运维 Agent 产品管理指南 (Product Management)]]
+- [[18_Cloud_Ops_Agent/README|云运维 Agent (Cloud Ops Agent)]]
+- [[18_Cloud_Ops_Agent/Mobile_AI_Ops_Design|Mobile AI Ops: 基于 Google Edge Gallery 的手拍即运维产品设计]]
+- [[18_Cloud_Ops_Agent/README_for_dummy|18 云运维 Agent — 小白版 ☁️]]
+- [[18_Cloud_Ops_Agent/Cloud_Product_Ops_2026|Cloud Product Ops 2026: 云产品运维 Agent 体系]]
+
+- [[concepts/ai-architecture]] — AI 系统架构
+- [[concepts/model-deployment]] — 模型部署
+- [[18_Cloud_Ops_Agent/docs/index]] — Cloud Ops Agent 知识库首页
+
+- [[18_Cloud_Ops_Agent/README|云运维 Agent (Cloud Ops Agent)]]
+- [[18_Cloud_Ops_Agent/Mobile_AI_Ops_Design|Mobile AI Ops: 基于 Google Edge Gallery 的手拍即运维产品设计]]
+- [[18_Cloud_Ops_Agent/README_for_dummy|18 云运维 Agent — 小白版 ☁️]]
+- [[18_Cloud_Ops_Agent/Cloud_Product_Ops_2026|Cloud Product Ops 2026: 云产品运维 Agent 体系]]
+
+- [[18_Cloud_Ops_Agent/docs/product/index|云产品运维 Agent 产品管理指南 (Product Management)]]
+
+- [[18_Cloud_Ops_Agent/docs/operations/index|云产品运维 Agent 运维指南 (Operations)]]
+
+
+
+

@@ -1,3 +1,12 @@
+---
+title: '无监督学习 (Unsupervised Learning)'
+category: '02-machine-learning-unsupervised-learning'
+tags: ["machine-learning", "supervised", "unsupervised"]
+summary: '> **一句话理解**: 无监督学习就像"自己找规律"——没有老师告诉答案,让模型在没有标签的数据中自己发现隐藏的模式和结构,就像考古学家从文物中推测古代文明的生活方式。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # 无监督学习 (Unsupervised Learning)
 
 > **一句话理解**: 无监督学习就像"自己找规律"——没有老师告诉答案,让模型在没有标签的数据中自己发现隐藏的模式和结构,就像考古学家从文物中推测古代文明的生活方式。

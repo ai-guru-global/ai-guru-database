@@ -1,3 +1,12 @@
+---
+title: AI工具与实践指南
+category: 00-ai-introduction
+tags: ["ai", "tools", "guide", "practical"]
+summary: "掌握AI工具是现代数字素养的核心——从日常效率提升到专业技能增强，学会与AI协作将成为像使用搜索引擎一样的基本能力。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # AI工具与实践指南
 
 > **一句话理解**: 掌握AI工具是现代数字素养的核心——从日常效率提升到专业技能增强，学会与AI协作将成为像使用搜索引擎一样的基本能力。
@@ -909,3 +918,9 @@ YouTube频道
 ---
 
 *Last updated: 2026-04-01* (通识课教材版)
+
+## Related
+
+- [[concepts/ai-agents]] — AI 智能体
+- [[concepts/prompt-engineering]] — 提示工程
+- [[concepts/model-serving]] — 模型服务

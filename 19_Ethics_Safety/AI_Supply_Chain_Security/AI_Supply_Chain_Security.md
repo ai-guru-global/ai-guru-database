@@ -1,3 +1,12 @@
+---
+title: AI 供应链安全 2026
+category: 19-ethics-safety-ai-supply-chain-security
+tags: ["ai-ethics", "safety", "alignment", "red-teaming"]
+summary: "> **一句话理解**: AI供应链如同软件供应链一样脆弱——从训练数据到模型权重，从API调用到第三方SDK，每一个环节都可能成为攻击向量。2026年的AI系统安全必须从「模型安全」扩展到「全链路供应链安全」。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # AI 供应链安全 2026
 
 > **一句话理解**: AI供应链如同软件供应链一样脆弱——从训练数据到模型权重，从API调用到第三方SDK，每一个环节都可能成为攻击向量。2026年的AI系统安全必须从「模型安全」扩展到「全链路供应链安全」。
@@ -593,3 +602,10 @@ AI供应链安全四大支柱:
 ---
 
 *Last updated: 2026-04-10*
+
+## Related
+
+- [[19_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming]] — AI 安全与红队 (AI Safety & Red Teaming) (共享: ai-ethics, alignment, red-teaming, safety)
+- [[19_Ethics_Safety/AI_Security_2026/README]] — AI安全 2026 (AI Security) (共享: ai-ethics, alignment, red-teaming, safety)
+- [[19_Ethics_Safety/Ethics-in-nutshell]] — AI 伦理与安全速成指南 (共享: ai-ethics, alignment, red-teaming, safety)
+- [[19_Ethics_Safety/README]] — 08 AI 伦理、安全与对齐 (Ethics, Safety & Alignment) (共享: ai-ethics, alignment, red-teaming, safety)

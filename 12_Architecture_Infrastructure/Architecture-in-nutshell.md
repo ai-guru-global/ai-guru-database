@@ -1,3 +1,12 @@
+---
+title: AI 架构速成指南
+category: 12-architecture-infrastructure
+tags: ["architecture", "infrastructure", "kubernetes", "high-availability"]
+summary: "> **一句话理解**: AI 架构就像设计一座智能工厂——从原材料（数据）到生产线（模型服务）再到出货口（应用接口），每一层都需要合理规划才能高效运转。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # AI 架构速成指南
 
 > **一句话理解**: AI 架构就像设计一座智能工厂——从原材料（数据）到生产线（模型服务）再到出货口（应用接口），每一层都需要合理规划才能高效运转。
@@ -518,3 +527,11 @@ flowchart TB
 ---
 
 *Last updated: 2026-05-07*
+
+## Related
+
+- [[12_Architecture_Infrastructure/AI_Infrastructure_2026]] — AI Infrastructure 2026 完全指南 (共享: architecture, high-availability, infrastructure, kubernetes)
+- [[12_Architecture_Infrastructure/Architecture_Infrastructure_for_dummy]] — AI 架构基础设施 - 小白版 (共享: architecture, high-availability, infrastructure, kubernetes)
+- [[12_Architecture_Infrastructure/Spring_AI_Architecture]] — Spring AI 系统架构设计 (共享: architecture, high-availability, infrastructure, kubernetes)
+- [[12_Architecture_Infrastructure/README.md|README]]
+- [[12_Architecture_Infrastructure/AI_System_Architecture_2026.md|AI_System_Architecture_2026]]

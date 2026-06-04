@@ -1,3 +1,12 @@
+---
+title: Implementation Guide
+category: 13-agent-production-16-agent-evaluation-implementation
+tags: ["ai-agents", "agent-framework", "production", "langgraph"]
+summary: "> Practical guide for deploying the agent evaluation framework"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # Implementation Guide
 
 > Practical guide for deploying the agent evaluation framework
@@ -473,7 +482,7 @@ pipeline {
                         url: "${EVALUATION_ENDPOINT}/api/v1/evaluations",
                         httpMode: 'POST',
                         contentType: 'APPLICATION_JSON',
-                        customHeaders: [[name: 'Authorization', value: "Bearer ${EVAL_API_KEY}"]],
+                        customHeaders: ``[ [name: 'Authorization', value: "Bearer ${EVAL_API_KEY}"] ]``,
                         requestBody: """{"agent_id": "${params.AGENT_ID}", "type": "${params.EVAL_TYPE}"}"""
                     )
                     def json = readJSON text: response.content
@@ -512,7 +521,7 @@ pipeline {
                 script {
                     def response = httpRequest(
                         url: "${EVALUATION_ENDPOINT}/api/v1/evaluations/${EVALUATION_ID}/result",
-                        customHeaders: [[name: 'Authorization', value: "Bearer ${EVAL_API_KEY}"]]
+                        customHeaders: ``[ [name: 'Authorization', value: "Bearer ${EVAL_API_KEY}"] ]``
                     )
                     def result = readJSON text: response.content
                     
@@ -530,7 +539,7 @@ pipeline {
             steps {
                 httpRequest(
                     url: "${EVALUATION_ENDPOINT}/api/v1/evaluations/${EVALUATION_ID}/report",
-                    customHeaders: [[name: 'Authorization', value: "Bearer ${EVAL_API_KEY}"]],
+                    customHeaders: ``[ [name: 'Authorization', value: "Bearer ${EVAL_API_KEY}"] ]``,
                     outputFile: 'evaluation_report.pdf'
                 )
                 archiveArtifacts artifacts: 'evaluation_report.pdf'
@@ -553,7 +562,7 @@ def runTestSuite(String suite) {
         url: "${EVALUATION_ENDPOINT}/api/v1/evaluations/${EVALUATION_ID}/run",
         httpMode: 'POST',
         contentType: 'APPLICATION_JSON',
-        customHeaders: [[name: 'Authorization', value: "Bearer ${EVAL_API_KEY}"]],
+        customHeaders: ``[ [name: 'Authorization', value: "Bearer ${EVAL_API_KEY}"] ]``,
         requestBody: """{"test_suite": "${suite}"}"""
     )
 }
@@ -1960,3 +1969,11 @@ if __name__ == "__main__":
 - [API Integration Guide](./API_Integration_Guide.md) - 9大Agent API封装与批量调度器
 - [Cloud Agent Evaluation](../Cloud_Agent_Evaluation/README.md) - 云产品Agent CAPER评估框架
 - [Corpus Assessment](../Corpus_Assessment/README.md) - 语料库COVR覆盖率评估
+- [[13_Agent_Production/16_Agent_Evaluation/Cloud_Agent_Evaluation/Cloud_Agent_Benchmark_2026.md|Cloud_Agent_Benchmark_2026]]
+
+## Related
+
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)

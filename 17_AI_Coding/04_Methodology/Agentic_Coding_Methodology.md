@@ -1,3 +1,12 @@
+---
+title: 'Agentic Coding 方法论'
+category: '17-ai-coding-04-methodology'
+tags: ["ai-coding", "code-generation", "cursor", "github-copilot", "ai-agents"]
+summary: '> **一句话理解**: 当编码从"人与单个AI对话"进化为"多个专业Agent协作"，需要全新的编排方法、质量保障和人在环机制——本文档构建 Agentic Coding 的方法论框架。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # Agentic Coding 方法论
 
 > **一句话理解**: 当编码从"人与单个AI对话"进化为"多个专业Agent协作"，需要全新的编排方法、质量保障和人在环机制——本文档构建 Agentic Coding 的方法论框架。

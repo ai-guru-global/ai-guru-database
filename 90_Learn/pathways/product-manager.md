@@ -1,3 +1,12 @@
+---
+title: AI 产品经理路径
+category: 90-learn-pathways
+tags: ["learning", "education", "courses", "study-path"]
+summary: "> **面向：用 AI 赋能业务的产品经理 / 运营 / 管理者 | 前置要求：无硬性要求 | 预计时间：20-30 小时**"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # AI 产品经理路径
 
 > **面向：用 AI 赋能业务的产品经理 / 运营 / 管理者 | 前置要求：无硬性要求 | 预计时间：20-30 小时**
@@ -236,3 +245,10 @@ Step 5: 迭代计划（如何持续优化 AI 效果？）
 ---
 
 *本路径专注于 AI 产品思维，不要求你写代码。但如果你有兴趣动手实践，强烈建议试试 [LLM 工程师路径](./llm-engineer.md) 的 Phase 2（Prompt Engineering），亲手体验 AI 的能力边界会大大加深你的产品直觉。*
+
+## Related
+
+- [[90_Learn/milestones]] — 里程碑自测 (共享: courses, education, learning, study-path)
+- [[90_Learn/pathways/absolute-beginner]] — 零基础通识路径 (共享: courses, education, learning, study-path)
+- [[90_Learn/pathways/ai-researcher]] — AI 研究者路径 (共享: courses, education, learning, study-path)
+- [[90_Learn/pathways/java-developer]] — Java 开发者 AI 路径 (共享: courses, education, learning, study-path)

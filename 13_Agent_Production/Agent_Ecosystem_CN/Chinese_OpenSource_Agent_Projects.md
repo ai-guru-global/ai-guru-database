@@ -1,3 +1,12 @@
+---
+title: 国内开源 AI Agent 项目
+category: 13-agent-production-agent-ecosystem-cn
+tags: ["ai-agents", "agent-framework", "production", "langgraph"]
+summary: "> **一句话理解**: 国内开源 AI Agent 项目正在快速崛起——从 ChatDev 的虚拟软件公司到 XAgent 的通用自主 Agent，从 CoPaw 的个人助手到 SWE-Agent 的代码修复，每个项目都在不同方向推动 AI Agent 的边界。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 国内开源 AI Agent 项目
 
 > **一句话理解**: 国内开源 AI Agent 项目正在快速崛起——从 ChatDev 的虚拟软件公司到 XAgent 的通用自主 Agent，从 CoPaw 的个人助手到 SWE-Agent 的代码修复，每个项目都在不同方向推动 AI Agent 的边界。
@@ -679,3 +688,10 @@ GPL (传染性):
 ### AgentScope
 - [GitHub](https://github.com/alibaba/agentscope)
 - [文档](https://agentscope.readthedocs.io)
+
+## Related
+
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)

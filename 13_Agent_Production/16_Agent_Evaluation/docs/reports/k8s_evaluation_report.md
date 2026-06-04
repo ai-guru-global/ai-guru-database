@@ -1,3 +1,12 @@
+---
+title: Kubernetes 领域专项评测报告
+category: 13-agent-production-16-agent-evaluation-docs-reports
+tags: ["ai-agents", "agent-framework", "production", "langgraph", "kubernetes", "model-evaluation"]
+summary: "> 评测日期: 2026-04-13 | 测试题数: 80 | 评测版本: 2026 Q2"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # Kubernetes 领域专项评测报告
 
 > 评测日期: 2026-04-13 | 测试题数: 80 | 评测版本: 2026 Q2
@@ -90,3 +99,10 @@
 ---
 
 *本报告由云产品智能体评估系统自动生成 | 2026-04-13*
+
+## Related
+
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
+- [[13_Agent_Production/16_Agent_Evaluation/Cloud_Agent_Evaluation/README]] — Cloud Agent Evaluation (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
+- [[13_Agent_Production/16_Agent_Evaluation/Cloud_Agent_Evaluation_System_2026]] — Cloud Agent Evaluation System 2026 (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
+- [[13_Agent_Production/16_Agent_Evaluation/Metrics/Evaluation_Metrics]] — Evaluation Metrics (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)

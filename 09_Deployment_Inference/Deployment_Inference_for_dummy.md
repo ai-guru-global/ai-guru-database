@@ -1,3 +1,12 @@
+---
+title: 模型部署与推理加速 - 小白版
+category: 09-deployment-inference
+tags: ["deployment", "inference", "serving", "vllm", "model-deployment"]
+summary: "> **一句话秒懂**: 就像把实验室的发明变成能在工厂量产的产品——不仅要好用,还要快、省钱、稳定!"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 模型部署与推理加速 - 小白版
 
 > **一句话秒懂**: 就像把实验室的发明变成能在工厂量产的产品——不仅要好用,还要快、省钱、稳定!
@@ -359,3 +368,12 @@ vLLM (PagedAttention):
 ---
 
 *本文是 [Deployment_Inference.md](./Deployment_Inference.md) 的简化版,适合零基础读者。完整技术细节(包括公式和架构设计)请参考原文档。*
+
+## Related
+
+- [[09_Deployment_Inference/Deployment_Inference]] — 模型部署与推理加速 (Deployment & Inference) (共享: deployment, inference, model-deployment, serving, vllm)
+- [[09_Deployment_Inference/Deployment_Inference_2026]] — 部署推理 2026 趋势 (共享: deployment, inference, model-deployment, serving, vllm)
+- [[09_Deployment_Inference/JVM_AI_Deployment]] — JVM AI 部署与推理 (共享: deployment, inference, model-deployment, serving, vllm)
+- [[09_Deployment_Inference/Inference-in-nutshell]] — 模型推理速成指南 (共享: deployment, inference, serving, vllm)
+- [[09_Deployment_Inference/llama_cpp_Deep_Dive.md|llama_cpp_Deep_Dive]]
+- [[09_Deployment_Inference/SGLang_Deep_Dive.md|SGLang_Deep_Dive]]

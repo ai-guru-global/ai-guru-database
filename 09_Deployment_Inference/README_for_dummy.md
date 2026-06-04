@@ -1,3 +1,12 @@
+---
+title: '09 部署与推理 — 小白版 🚀'
+category: '09-deployment-inference'
+tags: ["deployment", "inference", "serving", "vllm"]
+summary: '> **一句话秒懂**: 部署就是让 AI "上岗"——训练好的模型怎么变成服务，让大家都能用，同时要快、稳、省钱！'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # 09 部署与推理 — 小白版 🚀
 
 > **一句话秒懂**: 部署就是让 AI "上岗"——训练好的模型怎么变成服务，让大家都能用，同时要快、稳、省钱！
@@ -205,3 +214,11 @@ FP16 (16位) → INT8 (8位) → INT4 (4位)
 ---
 
 *本文是 [README.md](./README.md) 的简化版，适合零基础读者。*
+
+## Related
+
+- [[09_Deployment_Inference/Deployment_Inference.md|Deployment_Inference]]
+- [[09_Deployment_Inference/Deployment_Inference_2026.md|Deployment_Inference_2026]]
+- [[09_Deployment_Inference/Deployment_Inference_for_dummy.md|Deployment_Inference_for_dummy]]
+- [[09_Deployment_Inference/Inference-in-nutshell.md|Inference-in-nutshell]]
+- [[09_Deployment_Inference/JVM_AI_Deployment.md|JVM_AI_Deployment]]

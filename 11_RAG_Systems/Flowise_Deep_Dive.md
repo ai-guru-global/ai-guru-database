@@ -1,3 +1,12 @@
+---
+title: "Flowise: 低代码 LLM 应用平台"
+category: "11-rag-systems"
+tags: ["rag", "retrieval", "vector-database", "embedding", "llm"]
+summary: "> **一句话理解**: Flowise 是极简的低代码 LLM 应用平台——拖拽即可构建 AI 应用，专注于 Chatflow 可视化编排。"
+created: "2026-05-31"
+updated: "2026-05-31"
+---
+
 # Flowise: 低代码 LLM 应用平台
 
 > **一句话理解**: Flowise 是极简的低代码 LLM 应用平台——拖拽即可构建 AI 应用，专注于 Chatflow 可视化编排。
@@ -414,3 +423,11 @@ const yourFunction = async (nodeData) => {
 
 *Last updated: 2026-04-25*
 *Version: 1.0.0*
+
+## Related
+
+- [[11_RAG_Systems/RAG-in-nutshell.md|RAG-in-nutshell]]
+- [[11_RAG_Systems/RAG_Systems.md|RAG_Systems]]
+- [[11_RAG_Systems/README_Advanced.md|README_Advanced]]
+- [[11_RAG_Systems/Spring_AI_RAG_Deep_Dive.md|Spring_AI_RAG_Deep_Dive]]
+- [[synthesis/rag-vector-database.md|rag-vector-database]]

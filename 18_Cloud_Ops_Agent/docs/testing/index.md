@@ -1,3 +1,12 @@
+---
+title: 云产品运维 Agent 评测指南 (Testing & Evaluation)
+category: 18-cloud-ops-agent-docs-testing
+tags: ["cloud-ops", "devops", "sre", "automation", "ai-agents", "testing", "model-evaluation"]
+summary: "> 🎯 **目标**: 为测试工程师和评测工程师提供基于 Agent Harness 的全面评测体系，包括单 Agent 评估、Benchmark 设计、质量度量、回归测试策略，确保 Agent 能力持续提升。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 云产品运维 Agent 评测指南 (Testing & Evaluation)
 
 > 🎯 **目标**: 为测试工程师和评测工程师提供基于 Agent Harness 的全面评测体系，包括单 Agent 评估、Benchmark 设计、质量度量、回归测试策略，确保 Agent 能力持续提升。
@@ -1148,3 +1157,10 @@ AB_TESTS = [
 *最后更新: 2026-04-15*
 *版本: 2.0.0*
 *维护者: 评测团队*
+
+## Related
+
+- [[18_Cloud_Ops_Agent/docs/integration_testing/index]] — 云产品运维 Agent 集成测试指南 (Integration Testing) (共享: ai-agents, automation, cloud-ops, devops, sre, testing)
+- [[18_Cloud_Ops_Agent/CloudOps-in-nutshell]] — 云产品运维 Agent 速成指南 (共享: ai-agents, automation, cloud-ops, devops, sre)
+- [[18_Cloud_Ops_Agent/Cloud_Product_Ops_for_dummy]] — 云产品运维 Agent 入门指南 (for Dummies) (共享: ai-agents, automation, cloud-ops, devops, sre)
+- [[18_Cloud_Ops_Agent/docs/architecture/index]] — 云产品运维 Agent 架构设计指南 (Architecture) (共享: ai-agents, automation, cloud-ops, devops, sre)

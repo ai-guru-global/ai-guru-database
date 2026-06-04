@@ -1,3 +1,12 @@
+---
+title: 'AI 领袖观点合成 2026 (Talks Synthesis)'
+category: '21-talks'
+tags: ["talks", "speeches", "insights", "leaders"]
+summary: '> **一句话理解**: 本章节横向整合 20+ 位 AI 领袖的核心观点，按主题分类呈现，帮助你从"辩论双方"的视角理解 AI 发展中的关键分歧与共识。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # AI 领袖观点合成 2026 (Talks Synthesis)
 
 > **一句话理解**: 本章节横向整合 20+ 位 AI 领袖的核心观点，按主题分类呈现，帮助你从"辩论双方"的视角理解 AI 发展中的关键分歧与共识。
@@ -214,3 +223,11 @@ flowchart TB
 ---
 
 *Last updated: 2026-05-07*
+
+## Related
+
+- [[21_Talks/Andrej_Karpathy/about.md|about]]
+- [[21_Talks/Andrew_Ng/about.md|about]]
+- [[21_Talks/Andrew_Ng/sayings.md|sayings]]
+- [[21_Talks/Bill_Gates/about.md|about]]
+- [[21_Talks/Bill_Gates/sayings.md|sayings]]

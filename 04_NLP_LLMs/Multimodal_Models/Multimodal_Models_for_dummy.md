@@ -1,3 +1,12 @@
+---
+title: '多模态模型小白指南 (Multimodal Models for Dummy)'
+category: '04-nlp-llms-multimodal-models'
+tags: ["nlp", "llm", "transformer", "gpt", "bert"]
+summary: '> **一句话理解**: 多模态模型就像一个有"眼睛和耳朵"的 AI——不仅能读文字，还能看图片、听声音，然后综合所有信息来回答你。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # 多模态模型小白指南 (Multimodal Models for Dummy)
 
 > **一句话理解**: 多模态模型就像一个有"眼睛和耳朵"的 AI——不仅能读文字，还能看图片、听声音，然后综合所有信息来回答你。
@@ -135,3 +144,11 @@ flowchart TB
 ---
 
 *Last updated: 2026-05-07*
+
+## Related
+
+- [[04_NLP_LLMs/Multimodal_Models/Multimodal_Architectures_2026.md|Multimodal_Architectures_2026]]
+- [[04_NLP_LLMs/Fine_tuning_Techniques/Axolotl_Deep_Dive.md|Axolotl_Deep_Dive]]
+- [[04_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques.md|Fine_tuning_Techniques]]
+- [[04_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques_for_dummy.md|Fine_tuning_Techniques_for_dummy]]
+- [[04_NLP_LLMs/Fine_tuning_Techniques/Model_Merging_2026.md|Model_Merging_2026]]

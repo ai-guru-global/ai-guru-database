@@ -1,3 +1,12 @@
+---
+title: 插件 API 参考文档
+category: 13-agent-production-16-agent-evaluation-docs-api
+tags: ["ai-agents", "agent-framework", "production", "langgraph"]
+summary: "> Agent Plugin 接口定义和使用指南"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 插件 API 参考文档
 
 > Agent Plugin 接口定义和使用指南
@@ -167,3 +176,10 @@ result = asyncio.run(pipeline.run())
   "dimension_rankings": {...}
 }
 ```
+
+## Related
+
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)

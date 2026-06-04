@@ -1,3 +1,12 @@
+---
+title: 性能审计报告（Lighthouse）
+category: 94-visualization-atlas-docs
+tags: ["visualization", "charts", "dashboards", "data-viz"]
+summary: "在 [package.json](file:///Users/ai-guru/Documents/GitHub/ai-guru-global/ai-guru-database/visualization/atlas/package.json) 中执行 `perf:lhci`"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 性能审计报告（Lighthouse）
 
 运行方式：
@@ -21,3 +30,8 @@
 - FCP：293 ms
 - LCP：447 ms
 - TBT：162 ms
+
+## Related
+
+- [[94_Visualization/README]] — 知识图谱可视化 (Visualization) (共享: charts, dashboards, data-viz, visualization)
+- [[94_Visualization/atlas/README]] — AI Guru Knowledge Atlas（D3） (共享: charts, dashboards, data-viz, visualization)

@@ -1,3 +1,12 @@
+---
+title: "ClearML: 开源 ML 平台"
+category: "16-ai-ops"
+tags: ["ai-ops", "observability", "monitoring", "incident-response"]
+summary: "> **一句话理解**: ClearML 是开源 ML 平台——实验追踪、MLOps、自动化机器学习、模型服务，一站式 ML 解决方案。"
+created: "2026-05-31"
+updated: "2026-05-31"
+---
+
 # ClearML: 开源 ML 平台
 
 > **一句话理解**: ClearML 是开源 ML 平台——实验追踪、MLOps、自动化机器学习、模型服务，一站式 ML 解决方案。
@@ -292,3 +301,11 @@ automl.search(
 
 *Last updated: 2026-04-26*
 *Version: 1.0.0*
+
+## Related
+
+- [[16_AI_Ops/AIOps-in-nutshell.md|AIOps-in-nutshell]]
+- [[16_AI_Ops/AI_Incident_Response_Playbook.md|AI_Incident_Response_Playbook]]
+- [[16_AI_Ops/AI_Ops_for_dummy.md|AI_Ops_for_dummy]]
+- [[16_AI_Ops/README.md|16_AI_Ops README]]
+- [[16_AI_Ops/README_for_dummy.md|README_for_dummy]]

@@ -1,3 +1,12 @@
+---
+title: "Hermes Agent: 面向企业级的 AI Agent 运行时框架"
+category: "13-agent-production-enterprise-agent"
+tags: ["ai-agents", "agent-framework", "production", "langgraph"]
+summary: "> **一句话理解**: Hermes Agent 是专为生产环境设计的企业级 Agent 运行时框架，以安全、可靠、可审计为核心，提供完整的生命周期管理、权限控制和合规保障。"
+created: "2026-05-31"
+updated: "2026-05-31"
+---
+
 # Hermes Agent: 面向企业级的 AI Agent 运行时框架
 
 > **一句话理解**: Hermes Agent 是专为生产环境设计的企业级 Agent 运行时框架，以安全、可靠、可审计为核心，提供完整的生命周期管理、权限控制和合规保障。
@@ -609,3 +618,11 @@ async def handle_request(req):
 - [Hermes Agent 文档](https://docs.hermes-ai.io)
 - [企业 AI Agent 安全指南](../16_Agent_Evaluation/Agent_Red_Teaming_2026.md)
 - [Agent 生产部署最佳实践](./Agent_Production_2026.md)
+
+## Related
+
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026.md|Agent_Harness_Complete_2026]]
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026.md|Agent_Red_Teaming_2026]]
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow.md|Evaluation_Workflow]]
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment.md|Production_Assessment]]
+- [[13_Agent_Production/16_Agent_Evaluation/Benchmarking/Benchmarking_Criteria.md|Benchmarking_Criteria]]

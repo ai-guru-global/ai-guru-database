@@ -1,3 +1,12 @@
+---
+title: 世界模型 (World Models)
+category: 03-deep-learning-world-models
+tags: ["deep-learning", "neural-networks", "backpropagation"]
+summary: "| 文档 | 内容 | 适用读者 |"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 世界模型 (World Models)
 
 ## 文档导航
@@ -48,3 +57,14 @@
 - [V-JEPA 2.1 Paper](https://arxiv.org/abs/2603.14482) - 2026年最新
 - [LeCun的AGI路线图](https://openreview.net/pdf?id=BZ5a1r-kVsf)
 - [Meta AI JEPA项目](https://github.com/facebookresearch/ijepa)
+
+## Related
+
+- [[03_Deep_Learning/DL-in-nutshell]] — 深度学习速成指南 (共享: backpropagation, deep-learning, dl, neural-networks)
+- [[03_Deep_Learning/README]] — 03 深度学习基础 (Deep Learning Foundations) (共享: backpropagation, deep-learning, dl, neural-networks)
+- [[03_Deep_Learning/World_Models/JEPA_Architecture_2026]] — JEPA 架构深度解析：LeCun 的世界模型之路 (共享: backpropagation, deep-learning, dl, neural-networks)
+- [[concepts/neural-networks]] — 神经网络 (共享: backpropagation, dl)
+
+## 相关页面
+
+- [[concepts/world-models-jepa|World Models Jepa]]

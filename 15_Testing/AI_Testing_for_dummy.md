@@ -1,3 +1,12 @@
+---
+title: AI 测试 - 小白版
+category: 15-testing
+tags: ["testing", "ai-testing", "prompt-testing", "evaluation"]
+summary: "> **一句话秒懂**: AI 测试就像新车上市前的安全碰撞测试——不测不知道，一测吓一跳，测完才敢放心上路。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # AI 测试 - 小白版
 
 > **一句话秒懂**: AI 测试就像新车上市前的安全碰撞测试——不测不知道，一测吓一跳，测完才敢放心上路。
@@ -451,3 +460,11 @@ AI 在训练时没见过"特殊场景"
 ---
 
 *本文是 [AI Testing](./README.md) 的简化版，适合零基础读者。*
+
+## Related
+
+- [[15_Testing/AI-Testing-in-nutshell]] — AI 测试与评估速成指南 (共享: ai-testing, evaluation, prompt-testing, testing)
+- [[15_Testing/Java_AI_Testing]] — Java AI 测试实践 (共享: ai-testing, evaluation, prompt-testing, testing)
+- [[15_Testing/README]] — AI 测试与评估 (AI Testing) (共享: ai-testing, evaluation, prompt-testing, testing)
+- [[15_Testing/Weights_Biases_Deep_Dive.md|Weights_Biases_Deep_Dive]]
+- [[15_Testing/Contract_Testing.md|Contract_Testing]]

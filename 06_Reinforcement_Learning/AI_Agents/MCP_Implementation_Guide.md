@@ -1,3 +1,12 @@
+---
+title: 'MCP 协议实现指南 (MCP Implementation Guide)'
+category: '06-reinforcement-learning-ai-agents'
+tags: ["reinforcement-learning", "agent", "mdp"]
+summary: '> **一句话理解**: MCP 是 AI Agent 的"USB 接口"——让任何 Agent 都能即插即用地调用任何工具，无需为每个工具单独开发集成代码。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # MCP 协议实现指南 (MCP Implementation Guide)
 
 > **一句话理解**: MCP 是 AI Agent 的"USB 接口"——让任何 Agent 都能即插即用地调用任何工具，无需为每个工具单独开发集成代码。

@@ -1,3 +1,12 @@
+---
+title: 'LlamaIndex: 数据连接框架'
+category: '11-rag-systems'
+tags: ["rag", "retrieval", "vector-database", "embedding", "llama"]
+summary: '> **一句话理解**: LlamaIndex 是 LLM 应用的数据连接器——把私有数据接入大模型，让模型"阅读"并"理解"你的文档。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # LlamaIndex: 数据连接框架
 
 > **一句话理解**: LlamaIndex 是 LLM 应用的数据连接器——把私有数据接入大模型，让模型"阅读"并"理解"你的文档。
@@ -437,3 +446,11 @@ faithfulness_eval = FaithfulnessEvaluator()
 
 *Last updated: 2026-04-25*
 *Version: 1.0.0*
+
+## Related
+
+- [[11_RAG_Systems/RAG-in-nutshell.md|RAG-in-nutshell]]
+- [[11_RAG_Systems/RAG_Systems.md|RAG_Systems]]
+- [[11_RAG_Systems/README_Advanced.md|README_Advanced]]
+- [[11_RAG_Systems/Spring_AI_RAG_Deep_Dive.md|Spring_AI_RAG_Deep_Dive]]
+- [[synthesis/rag-vector-database.md|rag-vector-database]]

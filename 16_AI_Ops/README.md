@@ -1,3 +1,12 @@
+---
+title: AI 运维与可观测性 (AI Ops)
+category: 16-ai-ops
+tags: ["ai-ops", "observability", "monitoring", "incident-response"]
+summary: "> AI 运维是保障 LLM 应用稳定、高效、安全运行的关键，涵盖监控、日志、告警、灾难恢复等能力。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # AI 运维与可观测性 (AI Ops)
 
 > AI 运维是保障 LLM 应用稳定、高效、安全运行的关键，涵盖监控、日志、告警、灾难恢复等能力。
@@ -90,3 +99,29 @@
 ---
 
 *Last updated: 2026-04-26*
+
+## Related
+- [[16_AI_Ops/CI_CD_Pipeline_AI_2026|AI 系统 CI/CD 流水线 2026 (CI/CD Pipeline for AI)]]
+- [[16_AI_Ops/Phoenix_Deep_Dive|Phoenix: Arize AI 可观测性平台]]
+- [[16_AI_Ops/PromptLayer_Deep_Dive|PromptLayer: 提示词管理与追踪]]
+- [[16_AI_Ops/Chaos_Engineering_AI|AI 系统混沌工程实践 (Chaos Engineering for AI Systems)]]
+- [[16_AI_Ops/AI_Ops_2026|AI Ops 2026: 智能运维体系与实践]]
+- [[16_AI_Ops/Feast_Deep_Dive|Feast: 特征存储平台]]
+- [[16_AI_Ops/Helicone_Deep_Dive|Helicone: LLM 可观测性平台]]
+- [[16_AI_Ops/MLflow_Deep_Dive|MLflow: 机器学习生命周期管理]]
+- [[16_AI_Ops/LakeFS_Deep_Dive|LakeFS: 数据湖版本控制]]
+- [[16_AI_Ops/Prefect_Deep_Dive|Prefect: ML 数据流水线编排]]
+- [[16_AI_Ops/Braintrust_Deep_Dive|Braintrust: LLM 评估平台]]
+- [[16_AI_Ops/Kubeflow_Deep_Dive|Kubeflow: 云原生 ML 平台]]
+- [[16_AI_Ops/LangSmith_Deep_Dive|LangSmith: LLM 应用调试与监控]]
+- [[16_AI_Ops/DVC_Deep_Dive|DVC: 数据版本控制]]
+- [[16_AI_Ops/ClearML_Deep_Dive|ClearML: 开源 ML 平台]]
+- [[16_AI_Ops/Guardrails_Deep_Dive|Guardrails AI: LLM 安全护栏]]
+- [[16_AI_Ops/SRE_for_AI_Systems|AI 系统的 SRE 实践指南]]
+
+- [[16_AI_Ops/AIOps-in-nutshell]] — AI Ops 速成指南 (共享: ai-ops, incident-response, monitoring, observability)
+- [[16_AI_Ops/AI_Incident_Response_Playbook]] — AI 系统事故响应手册 (共享: ai-ops, incident-response, monitoring, observability)
+- [[16_AI_Ops/AI_Ops_for_dummy]] — AI Ops 入门指南 (for Dummies) (共享: ai-ops, incident-response, monitoring, observability)
+- [[16_AI_Ops/README_for_dummy]] — 16 AI Ops — 小白版 📡 (共享: ai-ops, incident-response, monitoring, observability)
+- [[16_AI_Ops/CI_CD_Pipeline_AI_2026.md|CI_CD_Pipeline_AI_2026]]
+

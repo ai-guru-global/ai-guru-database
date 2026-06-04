@@ -1,3 +1,12 @@
+---
+title: 'Agent Harness 全面指南 2026'
+category: '13-agent-production-16-agent-evaluation'
+tags: ["ai-agents", "agent-framework", "production", "langgraph"]
+summary: '> **一句话理解**: Agent Harness 是 AI Agent 工业化落地的核心基础设施，通过标准化的测试环境、多维度评估体系和完整可观测性，让 Agent 从"实验品"变成"可信赖的生产系统"。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # Agent Harness 全面指南 2026
 
 > **一句话理解**: Agent Harness 是 AI Agent 工业化落地的核心基础设施，通过标准化的测试环境、多维度评估体系和完整可观测性，让 Agent 从"实验品"变成"可信赖的生产系统"。
@@ -731,3 +740,11 @@ AgentScope     |  91.5%  |  75.2%  |  48.1%  |  35.2%
 - [Ops Agent Harness](./Ops_Agent_Harness_2026.md) - 运维场景
 - [Agent Red Teaming](./Agent_Red_Teaming_2026.md) - 安全评估
 - [Multi-Agent Evaluation](./Multi_Agent_Evaluation_2026.md) - 多 Agent
+
+## Related
+
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026.md|Agent_Harness_Complete_2026]]
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026.md|Agent_Red_Teaming_2026]]
+- [[13_Agent_Production/16_Agent_Evaluation/Cloud_Agent_Evaluation_System_2026.md|Cloud_Agent_Evaluation_System_2026]]
+- [[13_Agent_Production/16_Agent_Evaluation/Multi_Agent_Evaluation_2026.md|Multi_Agent_Evaluation_2026]]
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow.md|Evaluation_Workflow]]

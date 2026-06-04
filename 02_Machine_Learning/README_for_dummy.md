@@ -1,3 +1,12 @@
+---
+title: '经典机器学习 - 新手导航'
+category: '02-machine-learning'
+tags: ["machine-learning", "supervised", "unsupervised"]
+summary: '> **一句话概括**: 这一章教你 AI 是怎么从数据中"学东西"的——就像学生通过做题来掌握解题方法。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # 经典机器学习 - 新手导航
 
 > **一句话概括**: 这一章教你 AI 是怎么从数据中"学东西"的——就像学生通过做题来掌握解题方法。
@@ -32,3 +41,11 @@
 
 ---
 *本文是 [README.md](./README.md) 的简化版，适合零基础读者。*
+
+## Related
+
+- [[02_Machine_Learning/ML-in-nutshell.md|ML-in-nutshell]]
+- [[02_Machine_Learning/README.md|02_Machine_Learning README]]
+- [[02_Machine_Learning/Anomaly_Detection/Anomaly_Detection.md|Anomaly_Detection]]
+- [[02_Machine_Learning/Anomaly_Detection/Anomaly_Detection_for_dummy.md|Anomaly_Detection_for_dummy]]
+- [[02_Machine_Learning/AutoML/AutoML.md|AutoML]]

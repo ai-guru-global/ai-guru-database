@@ -1,3 +1,12 @@
+---
+title: "Portkey: 企业级 AI Gateway"
+category: "14-ai-gateway"
+tags: ["ai-gateway", "api-management", "routing", "litellm"]
+summary: "> **一句话理解**: Portkey 是企业级 AI Gateway——100+ 模型统一接入、智能路由、成本追踪、负载均衡，开箱即用的生产级 AI 基础设施。"
+created: "2026-05-31"
+updated: "2026-05-31"
+---
+
 # Portkey: 企业级 AI Gateway
 
 > **一句话理解**: Portkey 是企业级 AI Gateway——100+ 模型统一接入、智能路由、成本追踪、负载均衡，开箱即用的生产级 AI 基础设施。

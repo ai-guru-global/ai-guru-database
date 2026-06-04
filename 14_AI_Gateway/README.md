@@ -1,3 +1,12 @@
+---
+title: AI Gateway
+category: 14-ai-gateway
+tags: ["ai-gateway", "api-management", "routing", "litellm"]
+summary: "> AI 网关是 LLM 请求的统一入口，提供路由、限流、缓存、成本控制等企业级能力。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # AI Gateway
 
 > AI 网关是 LLM 请求的统一入口，提供路由、限流、缓存、成本控制等企业级能力。
@@ -40,3 +49,20 @@
 ---
 
 *Last updated: 2026-04-24*
+
+## Related
+- [[14_AI_Gateway/AI_Gateway_Comparison_2026|AI Gateway 对比 2026]]
+- [[14_AI_Gateway/LiteLLM_Deep_Dive|LiteLLM: 多模型统一 API 代理]]
+- [[14_AI_Gateway/README_for_dummy|14 AI Gateway — 小白版 🚪]]
+
+- [[14_AI_Gateway/AI_Gateway_for_dummy]] — AI Gateway 入门指南 (for Dummies) (共享: ai-gateway, api-management, litellm, routing)
+- [[14_AI_Gateway/Gateway-in-nutshell]] — AI 网关速成指南 (共享: ai-gateway, api-management, litellm, routing)
+- [[14_AI_Gateway/Kong_AI_Gateway_Deep_Dive]] — Kong AI Gateway 深度解析 (共享: ai-gateway, api-management, litellm, routing)
+- [[14_AI_Gateway/Spring_AI_Gateway_Security]] — Spring AI 网关与安全 (共享: ai-gateway, api-management, litellm, routing)
+- [[14_AI_Gateway/AI_Gateway_Comparison_2026.md|AI_Gateway_Comparison_2026]]
+- [[14_AI_Gateway/README_for_dummy.md|README_for_dummy]]
+
+- [[14_AI_Gateway/AI_Gateway_Comparison_2026|AI Gateway 对比 2026]]
+- [[14_AI_Gateway/LiteLLM_Deep_Dive|LiteLLM: 多模型统一 API 代理]]
+- [[14_AI_Gateway/README_for_dummy|14 AI Gateway — 小白版 🚪]]
+

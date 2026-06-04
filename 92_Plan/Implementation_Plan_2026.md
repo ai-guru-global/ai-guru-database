@@ -1,3 +1,12 @@
+---
+title: AI Guru 知识库整改执行计划
+category: 92-plan
+tags: ["planning", "roadmap", "strategy", "goals"]
+summary: "> **创建日期**: 2026-04-13"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # AI Guru 知识库整改执行计划
 
 > **创建日期**: 2026-04-13  
@@ -207,3 +216,10 @@
 ---
 
 *最后更新: 2026-04-13*
+
+## Related
+
+- [[92_Plan/Content_Evaluation_2026]] — AI Guru Database - 内容全面评估 2026 (共享: goals, planning, roadmap, strategy)
+- [[92_Plan/Project_Comprehensive_Evaluation_2026]] — AI Guru 知识库项目全面评估报告 (共享: goals, planning, roadmap, strategy)
+- [[92_Plan/Project_Structure_Evaluation_2026]] — AI Guru 知识库 — 全项目结构评估与改进建议 (共享: goals, planning, roadmap, strategy)
+- [[92_Plan/README_for_dummy.md|README_for_dummy]]

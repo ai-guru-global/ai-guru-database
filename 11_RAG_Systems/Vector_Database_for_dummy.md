@@ -1,3 +1,12 @@
+---
+title: '向量数据库 - 小白版'
+category: '11-rag-systems'
+tags: ["rag", "retrieval", "vector-database", "embedding"]
+summary: '> **一句话秒懂**: 向量数据库就是 AI 的超级图书馆——你说"我想找和这个差不多的东西"，它能在一秒内从几百万本书里找到最像的。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # 向量数据库 - 小白版
 
 > **一句话秒懂**: 向量数据库就是 AI 的超级图书馆——你说"我想找和这个差不多的东西"，它能在一秒内从几百万本书里找到最像的。
@@ -417,3 +426,11 @@ AI 会自动学习每个词/句子的"数字表示"
 ---
 
 *本文是向量数据库的入门版，适合零基础读者。想了解更多 RAG 相关知识？[点这里](./RAG_Systems_for_dummy.md)*
+
+## Related
+
+- [[11_RAG_Systems/RAG-in-nutshell.md|RAG-in-nutshell]]
+- [[11_RAG_Systems/RAG_Systems.md|RAG_Systems]]
+- [[11_RAG_Systems/README_Advanced.md|README_Advanced]]
+- [[11_RAG_Systems/Spring_AI_RAG_Deep_Dive.md|Spring_AI_RAG_Deep_Dive]]
+- [[synthesis/rag-vector-database.md|rag-vector-database]]

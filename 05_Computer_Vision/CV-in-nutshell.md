@@ -1,3 +1,12 @@
+---
+title: '计算机视觉速成指南 (Computer Vision in a Nutshell)'
+category: '05-computer-vision'
+tags: ["computer-vision", "cnn", "image-processing"]
+summary: '> **一句话理解**: 计算机视觉让机器拥有"眼睛"——从照片中识别物体、理解场景、甚至生成以假乱真的图像。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # 计算机视觉速成指南 (Computer Vision in a Nutshell)
 
 > **一句话理解**: 计算机视觉让机器拥有"眼睛"——从照片中识别物体、理解场景、甚至生成以假乱真的图像。
@@ -196,3 +205,11 @@ print(probs)  # [0.92, 0.05, 0.03] → 是猫！
 ---
 
 *Last updated: 2026-05-07*
+
+## Related
+
+- [[05_Computer_Vision/README.md|05_Computer_Vision README]]
+- [[05_Computer_Vision/3D_Vision/3D_Vision.md|3D_Vision]]
+- [[05_Computer_Vision/3D_Vision/3D_Vision_for_dummy.md|3D_Vision_for_dummy]]
+- [[05_Computer_Vision/Generative_Models/Generative_Models.md|Generative_Models]]
+- [[05_Computer_Vision/Generative_Models/Generative_Models_for_dummy.md|Generative_Models_for_dummy]]

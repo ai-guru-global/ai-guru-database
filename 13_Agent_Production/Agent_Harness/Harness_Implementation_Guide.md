@@ -1,3 +1,12 @@
+---
+title: Agent Harness 实现指南
+category: 13-agent-production-agent-harness
+tags: ["ai-agents", "agent-framework", "production", "langgraph"]
+summary: "> 目标：从零开始，用 Python 搭建一个生产级 Agent Harness。包含文件系统、Docker 沙箱、工具执行、验证回路、上下文压缩。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # Agent Harness 实现指南
 
 > 目标：从零开始，用 Python 搭建一个生产级 Agent Harness。包含文件系统、Docker 沙箱、工具执行、验证回路、上下文压缩。
@@ -831,3 +840,10 @@ class TestContext:
 ---
 
 > 📅 **最后更新**：2026-05-07
+
+## Related
+
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)

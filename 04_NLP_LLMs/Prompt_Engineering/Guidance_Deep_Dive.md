@@ -1,3 +1,12 @@
+---
+title: "Guidance: 结构化生成控制语言"
+category: "04-nlp-llms-prompt-engineering"
+tags: ["nlp", "llm", "transformer", "gpt", "bert"]
+summary: "> **一句话理解**: Guidance 是微软的引导式生成框架——用标签控制 LLM 输出格式，实现结构化 JSON、角色扮演、多路径分支，比 Jinja2 更强大。"
+created: "2026-05-31"
+updated: "2026-05-31"
+---
+
 # Guidance: 结构化生成控制语言
 
 > **一句话理解**: Guidance 是微软的引导式生成框架——用标签控制 LLM 输出格式，实现结构化 JSON、角色扮演、多路径分支，比 Jinja2 更强大。
@@ -307,3 +316,11 @@ result = generate_with_examples(
 
 *Last updated: 2026-04-26*
 *Version: 1.0.0*
+
+## Related
+
+- [[04_NLP_LLMs/Prompt_Engineering/Outlines_Deep_Dive.md|Outlines_Deep_Dive]]
+- [[04_NLP_LLMs/Prompt_Engineering/Prompt-Engineering-in-nutshell.md|Prompt-Engineering-in-nutshell]]
+- [[04_NLP_LLMs/Prompt_Engineering/Prompt_Engineering.md|Prompt_Engineering]]
+- [[04_NLP_LLMs/Prompt_Engineering/Prompt_Engineering_for_dummy.md|Prompt_Engineering_for_dummy]]
+- [[04_NLP_LLMs/Fine_tuning_Techniques/Axolotl_Deep_Dive.md|Axolotl_Deep_Dive]]

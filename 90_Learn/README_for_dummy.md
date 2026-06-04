@@ -1,3 +1,12 @@
+---
+title: '90 Learn — 小白版 🚀'
+category: '90-learn'
+tags: ["learning", "education", "courses", "study-path"]
+summary: '> **一句话秒懂**: 这一章是 AI Guru 知识库的"学习导航中心"——帮你找到最适合自己的学习路径。不管你是零基础小白还是 AI 专家，都能在这里找到适合你的路线。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # 90 Learn — 小白版 🚀
 
 > **一句话秒懂**: 这一章是 AI Guru 知识库的"学习导航中心"——帮你找到最适合自己的学习路径。不管你是零基础小白还是 AI 专家，都能在这里找到适合你的路线。
@@ -113,3 +122,11 @@ Stage 0: AI 觉醒 ─── AI 定义 · 三大类型 · 能力边界 · 经典
 ---
 
 *本文是 [README.md](./README.md) 的简化版，适合零基础读者。准备好找到你的学习路径了吗？* 🚀
+
+## Related
+
+- [[90_Learn/milestones.md|milestones]]
+- [[90_Learn/concepts/stage-0-awakening.md|stage-0-awakening]]
+- [[90_Learn/concepts/stage1-foundation.md|stage1-foundation]]
+- [[90_Learn/concepts/stage2-core-tech.md|stage2-core-tech]]
+- [[90_Learn/concepts/stage3-engineering.md|stage3-engineering]]

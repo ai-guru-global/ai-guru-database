@@ -1,3 +1,12 @@
+---
+title: 'Stage 2: 核心技术'
+category: '90-learn-concepts'
+tags: ["learning", "education", "courses", "study-path"]
+summary: '> **"现代 AI 的引擎——理解这些，你就理解了为什么 AI 在 2012 年后开始爆发。"**'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # Stage 2: 核心技术
 
 > **"现代 AI 的引擎——理解这些，你就理解了为什么 AI 在 2012 年后开始爆发。"**

@@ -1,3 +1,12 @@
+---
+title: "RAGAS: RAG 评估框架"
+category: "15-testing"
+tags: ["testing", "ai-testing", "prompt-testing", "evaluation", "rag"]
+summary: "> **一句话理解**: RAGAS 是一个专门评估 RAG 系统质量的开源框架——通过多维度指标（Faithfulness、Answer Relevancy、Context Precision 等）量化评估你的 RAG 应用。"
+created: "2026-05-31"
+updated: "2026-05-31"
+---
+
 # RAGAS: RAG 评估框架
 
 > **一句话理解**: RAGAS 是一个专门评估 RAG 系统质量的开源框架——通过多维度指标（Faithfulness、Answer Relevancy、Context Precision 等）量化评估你的 RAG 应用。
@@ -346,3 +355,11 @@ response: "量子计算可以破解所有密码系统。"
 
 *Last updated: 2026-04-25*
 *Version: 1.0.0*
+
+## Related
+
+- [[15_Testing/AI-Testing-in-nutshell.md|AI-Testing-in-nutshell]]
+- [[15_Testing/AI_Testing_for_dummy.md|AI_Testing_for_dummy]]
+- [[15_Testing/Java_AI_Testing.md|Java_AI_Testing]]
+- [[15_Testing/README.md|15_Testing README]]
+- [[11_RAG_Systems/RAG-in-nutshell.md|RAG-in-nutshell]]

@@ -1,3 +1,12 @@
+---
+title: AI Ops 速成指南
+category: 16-ai-ops
+tags: ["ai-ops", "observability", "monitoring", "incident-response"]
+summary: "> 🎯 **目标**：理解 AI Ops 的核心概念、智能监控、异常检测和自动修复能力。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # AI Ops 速成指南
 
 > 🎯 **目标**：理解 AI Ops 的核心概念、智能监控、异常检测和自动修复能力。
@@ -208,3 +217,14 @@ flowchart LR
 ---
 
 *Last updated: 2026-04-11*
+
+## Related
+
+- [[16_AI_Ops/AI_Incident_Response_Playbook]] — AI 系统事故响应手册 (共享: ai-ops, incident-response, monitoring, observability)
+- [[16_AI_Ops/AI_Ops_for_dummy]] — AI Ops 入门指南 (for Dummies) (共享: ai-ops, incident-response, monitoring, observability)
+- [[16_AI_Ops/README]] — AI 运维与可观测性 (AI Ops) (共享: ai-ops, incident-response, monitoring, observability)
+- [[16_AI_Ops/README_for_dummy]] — 16 AI Ops — 小白版 📡 (共享: ai-ops, incident-response, monitoring, observability)
+- [[16_AI_Ops/Phoenix_Deep_Dive.md|Phoenix_Deep_Dive]]
+- [[16_AI_Ops/Feast_Deep_Dive.md|Feast_Deep_Dive]]
+- [[16_AI_Ops/LakeFS_Deep_Dive.md|LakeFS_Deep_Dive]]
+- [[16_AI_Ops/LangSmith_Deep_Dive.md|LangSmith_Deep_Dive]]

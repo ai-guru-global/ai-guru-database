@@ -1,3 +1,12 @@
+---
+title: JEPA 架构深度解析：LeCun 的世界模型之路
+category: 03-deep-learning-world-models
+tags: ["deep-learning", "neural-networks", "backpropagation"]
+summary: "> 全面解析 Joint Embedding Predictive Architecture (JEPA)：自监督学习的世界模型、视频理解的核心架构、通向 AGI 的关键路径"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # JEPA 架构深度解析：LeCun 的世界模型之路
 
 > 全面解析 Joint Embedding Predictive Architecture (JEPA)：自监督学习的世界模型、视频理解的核心架构、通向 AGI 的关键路径
@@ -831,3 +840,10 @@ class ActiveJEPA(nn.Module):
 ---
 
 *Last updated: 2026-04-03 | Based on Yann LeCun's Vision and Latest Research*
+
+## Related
+
+- [[03_Deep_Learning/DL-in-nutshell]] — 深度学习速成指南 (共享: backpropagation, deep-learning, dl, neural-networks)
+- [[03_Deep_Learning/README]] — 03 深度学习基础 (Deep Learning Foundations) (共享: backpropagation, deep-learning, dl, neural-networks)
+- [[03_Deep_Learning/World_Models/README]] — 世界模型 (World Models) (共享: backpropagation, deep-learning, dl, neural-networks)
+- [[concepts/neural-networks]] — 神经网络 (共享: backpropagation, dl)

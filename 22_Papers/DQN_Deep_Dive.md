@@ -1,3 +1,12 @@
+---
+title: DQN 深度解读 (Playing Atari with Deep Reinforcement Learning)
+category: 22-papers
+tags: ["reinforcement-learning", "dqn", "deep-rl", "atari"]
+summary: "DQN 就像教一个婴儿玩电子游戏——通过反复尝试记住\"这样做得分高、那样做得分低\"，结合深度学习让 AI 直接从屏幕像素学习游戏策略，这是深度强化学习的开山之作。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # DQN 深度解读 (Playing Atari with Deep Reinforcement Learning)
 
 > **一句话理解**: DQN 就像教一个婴儿玩电子游戏——通过反复尝试记住"这样做得分高、那样做得分低"，结合深度学习让 AI 直接从屏幕像素学习游戏策略，这是深度强化学习的开山之作。
@@ -275,3 +284,9 @@ flowchart TB
 
 *本文是 [README.md](./README.md) 的补充，适合想深入理解 DQN 和深度 RL 原理的读者。*
 *原始论文: [Playing Atari with Deep Reinforcement Learning](https://arxiv.org/abs/1312.5602)*
+
+## Related
+
+- [[concepts/reinforcement-learning]] — 强化学习基础
+- [[concepts/deep-reinforcement-learning]] — 深度强化学习
+- [[concepts/neural-networks]] — 神经网络

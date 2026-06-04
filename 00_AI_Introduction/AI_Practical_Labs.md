@@ -1,3 +1,12 @@
+---
+title: AI课堂实验与实践指导
+category: 00-ai-introduction
+tags: ["ai", "labs", "practice", "hands-on"]
+summary: "## 实验概览"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # AI课堂实验与实践指导
 
 > 本指南为AI通识课提供动手实践项目，无需编程基础即可完成，帮助学生直观理解AI原理和应用。
@@ -600,3 +609,9 @@ AI通识课实验报告
 ---
 
 *Last updated: 2026-04-01* (通识课教材版)
+
+## Related
+
+- [[concepts/ai-fundamentals]] — AI 基础概念
+- [[concepts/ai-agents]] — AI 智能体
+- [[concepts/prompt-engineering]] — 提示工程

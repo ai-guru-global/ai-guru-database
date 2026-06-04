@@ -1,3 +1,12 @@
+---
+title: '模型可解释性可视化'
+category: '94-visualization'
+tags: ["visualization", "charts", "dashboards", "data-viz"]
+summary: '> **一句话秒懂**: 模型可解释性可视化就是给"黑箱模型"装上 X 光机——让你看到模型到底在看什么、学了什么、为什么做出这个决定。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # 模型可解释性可视化
 
 > **一句话秒懂**: 模型可解释性可视化就是给"黑箱模型"装上 X 光机——让你看到模型到底在看什么、学了什么、为什么做出这个决定。
@@ -1087,3 +1096,9 @@ flowchart TD
 - [BertViz](https://github.com/jessevig/bertviz)
 - [UMAP 文档](https://umap-learn.readthedocs.io/)
 - [TCAV 论文](https://arxiv.org/abs/1711.11279)
+
+## Related
+
+- [[94_Visualization/README.md|94_Visualization README]]
+- [[94_Visualization/atlas/README.md|atlas README]]
+- [[94_Visualization/atlas/docs/performance.md|performance]]

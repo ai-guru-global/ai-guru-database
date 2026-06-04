@@ -1,3 +1,12 @@
+---
+title: "SmolAgents: 轻量级 Agent 框架"
+category: "13-agent-production-agent-frameworks"
+tags: ["ai-agents", "agent-framework", "production", "langgraph"]
+summary: "> **一句话理解**: SmolAgents 是 Hugging Face 推出的轻量级 Agent 框架——用最少的代码实现 Tool Calling 和自主决策，让构建 Agent 变得简单高效。"
+created: "2026-05-31"
+updated: "2026-05-31"
+---
+
 # SmolAgents: 轻量级 Agent 框架
 
 > **一句话理解**: SmolAgents 是 Hugging Face 推出的轻量级 Agent 框架——用最少的代码实现 Tool Calling 和自主决策，让构建 Agent 变得简单高效。
@@ -370,3 +379,11 @@ agent = CodeAgent(
 
 *Last updated: 2026-04-24*
 *Version: 1.0.0*
+
+## Related
+
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026.md|Agent_Harness_Complete_2026]]
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026.md|Agent_Red_Teaming_2026]]
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow.md|Evaluation_Workflow]]
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment.md|Production_Assessment]]
+- [[13_Agent_Production/16_Agent_Evaluation/Benchmarking/Benchmarking_Criteria.md|Benchmarking_Criteria]]

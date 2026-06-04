@@ -1,3 +1,12 @@
+---
+title: AI Guru Knowledge Atlas（D3）
+category: 94-visualization-atlas
+tags: ["visualization", "charts", "dashboards", "data-viz"]
+summary: "新版：`visualization/atlas/index.html`（Vite 开发/构建）"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # AI Guru Knowledge Atlas（D3）
 
 入口页面：
@@ -34,3 +43,8 @@ pnpm demo:record
 pnpm build
 pnpm perf:lhci
 ```
+
+## Related
+
+- [[94_Visualization/README]] — 知识图谱可视化 (Visualization) (共享: charts, dashboards, data-viz, visualization)
+- [[94_Visualization/atlas/docs/performance]] — 性能审计报告（Lighthouse） (共享: charts, dashboards, data-viz, visualization)

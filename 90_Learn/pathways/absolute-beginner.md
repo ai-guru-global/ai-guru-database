@@ -1,3 +1,12 @@
+---
+title: 零基础通识路径
+category: 90-learn-pathways
+tags: ["learning", "education", "courses", "study-path"]
+summary: "> **面向：完全不了解 AI 的人 | 前置要求：无 | 预计时间：8-12 小时**"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 零基础通识路径
 
 > **面向：完全不了解 AI 的人 | 前置要求：无 | 预计时间：8-12 小时**
@@ -168,3 +177,10 @@ Stage 1: 基础概念（轻量浏览，重点理解概念名称）
 ---
 
 *本路径面向零基础读者，不要求任何技术背景。遇到不懂的概念可以先跳过，回过头再看。*
+
+## Related
+
+- [[90_Learn/milestones]] — 里程碑自测 (共享: courses, education, learning, study-path)
+- [[90_Learn/pathways/ai-researcher]] — AI 研究者路径 (共享: courses, education, learning, study-path)
+- [[90_Learn/pathways/java-developer]] — Java 开发者 AI 路径 (共享: courses, education, learning, study-path)
+- [[90_Learn/pathways/llm-engineer]] — LLM 工程师路径 (共享: courses, education, learning, study-path)

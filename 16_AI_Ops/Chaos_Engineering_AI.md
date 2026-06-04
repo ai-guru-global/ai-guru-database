@@ -1,3 +1,12 @@
+---
+title: 'AI 系统混沌工程实践 (Chaos Engineering for AI Systems)'
+category: '16-ai-ops'
+tags: ["ai-ops", "observability", "monitoring", "incident-response"]
+summary: '> **一句话理解**: 混沌工程是 AI 系统的"疫苗"——通过主动注入故障，发现系统弱点，提前修复潜在问题，让系统在真实故障面前更具韧性。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # AI 系统混沌工程实践 (Chaos Engineering for AI Systems)
 
 > **一句话理解**: 混沌工程是 AI 系统的"疫苗"——通过主动注入故障，发现系统弱点，提前修复潜在问题，让系统在真实故障面前更具韧性。
@@ -1159,3 +1168,11 @@ jobs:
 
 *文档版本: 1.0.0*  
 *最后更新: 2026-04-13*
+
+## Related
+
+- [[16_AI_Ops/AIOps-in-nutshell.md|AIOps-in-nutshell]]
+- [[16_AI_Ops/AI_Incident_Response_Playbook.md|AI_Incident_Response_Playbook]]
+- [[16_AI_Ops/AI_Ops_for_dummy.md|AI_Ops_for_dummy]]
+- [[16_AI_Ops/README.md|16_AI_Ops README]]
+- [[16_AI_Ops/README_for_dummy.md|README_for_dummy]]

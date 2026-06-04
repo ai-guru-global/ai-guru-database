@@ -1,3 +1,12 @@
+---
+title: Vibe Coding 实战案例集
+category: 17-ai-coding-03-practice
+tags: ["ai-coding", "code-generation", "cursor", "github-copilot"]
+summary: "> **一句话理解**: 从场景化方案到真实项目，覆盖不同规模、不同行业的 Vibe Coding 落地经验——帮你找到最贴近自身情况的实践参考。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # Vibe Coding 实战案例集
 
 > **一句话理解**: 从场景化方案到真实项目，覆盖不同规模、不同行业的 Vibe Coding 落地经验——帮你找到最贴近自身情况的实践参考。
@@ -355,3 +364,10 @@ Phase 4: 验证
 ---
 
 *Extracted from Vibe Coding 生产实践, restructured 2026-04*
+
+## Related
+
+- [[17_AI_Coding/01_Theory/AI_Coding_Theory]] — AI辅助编程理论基础 (共享: ai-coding, code-generation, cursor, github-copilot)
+- [[17_AI_Coding/02_Tools/CodeBuddy_Guide]] — CodeBuddy / WorkBuddy 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
+- [[17_AI_Coding/02_Tools/Comate_Guide]] — Comate 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
+- [[17_AI_Coding/02_Tools/Coze_Guide]] — Coze 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)

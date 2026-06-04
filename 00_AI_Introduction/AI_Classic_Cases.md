@@ -1,3 +1,12 @@
+---
+title: AI经典案例分析集
+category: 00-ai-introduction
+tags: ["ai", "cases", "classic", "history"]
+summary: "## 案例1: AlphaGo vs 李世石 —— AI超越人类专家的里程碑"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # AI经典案例分析集
 
 > 本案例集深度剖析人工智能发展史上的里程碑事件，通过真实案例理解AI技术演进、社会影响和未来启示。
@@ -1108,3 +1117,8 @@ Gemini Ultra (2024)
 ---
 
 *Last updated: 2026-04-01* (通识课教材版)
+
+## Related
+
+- [[00_AI_Introduction/AI_History_Timeline]] — 人工智能历史与发展时间线 (共享: ai, history)
+- [[00_AI_Introduction/AI_Ethics_Society.md|AI_Ethics_Society]]

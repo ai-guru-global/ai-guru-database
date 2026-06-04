@@ -1,3 +1,12 @@
+---
+title: '生成模型 - 小白版 🎨'
+category: '05-computer-vision-generative-models'
+tags: ["computer-vision", "cnn", "image-processing"]
+summary: '> **一句话秒懂**: 生成模型就是会"画画"的AI——你说"画一只戴帽子的柴犬",它就能真的画出来,甚至能修图、换背景、让模糊照片变清晰!'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # 生成模型 - 小白版 🎨
 
 > **一句话秒懂**: 生成模型就是会"画画"的AI——你说"画一只戴帽子的柴犬",它就能真的画出来,甚至能修图、换背景、让模糊照片变清晰!

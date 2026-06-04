@@ -1,3 +1,12 @@
+---
+title: AI 智能体速成指南
+category: 06-reinforcement-learning-ai-agents
+tags: ["reinforcement-learning", "agent", "mdp", "ai-agents"]
+summary: "> 🎯 **目标**：理解 AI 智能体如何工作，以及如何构建能够采取行动的自主 AI 系统。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # AI 智能体速成指南
 
 > 🎯 **目标**：理解 AI 智能体如何工作，以及如何构建能够采取行动的自主 AI 系统。
@@ -743,3 +752,10 @@ async def call_tool(name, arguments):
 - [RAG](../../11_RAG_Systems/RAG-in-nutshell.md) - 带知识检索的智能体
 - [技能](../../13_Agent_Production/Agent_Skills/Skills-in-nutshell.md) - 构建智能体能力
 - [工作流](../../13_Agent_Production/Agent_Workflow/Workflow-in-nutshell.md) - 智能体编排
+
+## Related
+
+- [[06_Reinforcement_Learning/AI_Agents/AI_Agents_for_dummy]] — AI智能体 - 小白版 🤖 (共享: agent, ai-agents, mdp, reinforcement-learning, rl)
+- [[06_Reinforcement_Learning/AI_Agents/Agent_Future_Roadmap_2026_2030]] — Agent 未来发展路线图 2026-2030 (共享: agent, ai-agents, mdp, reinforcement-learning, rl)
+- [[06_Reinforcement_Learning/AI_Agents/Agent_Protocols_Detail]] — AI Agent 协议详解：MCP、A2A、UCP (共享: agent, ai-agents, mdp, reinforcement-learning, rl)
+- [[06_Reinforcement_Learning/README]] — 06 强化学习与智能体 (Reinforcement Learning & Agents) (共享: agent, mdp, reinforcement-learning, rl)

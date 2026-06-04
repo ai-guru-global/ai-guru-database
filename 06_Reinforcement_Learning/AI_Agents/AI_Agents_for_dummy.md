@@ -1,3 +1,12 @@
+---
+title: AI智能体 - 小白版 🤖
+category: 06-reinforcement-learning-ai-agents
+tags: ["reinforcement-learning", "agent", "mdp", "ai-agents"]
+summary: "> **一句话秒懂**: AI智能体就是能像员工一样独立工作的AI——能理解任务、制定计划、使用工具、记住信息,还能自我反思改进,不需要你手把手指挥每一步!"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # AI智能体 - 小白版 🤖
 
 > **一句话秒懂**: AI智能体就是能像员工一样独立工作的AI——能理解任务、制定计划、使用工具、记住信息,还能自我反思改进,不需要你手把手指挥每一步!
@@ -721,3 +730,11 @@ agent.run("帮我规划明天的行程")
 ---
 
 *本文是 [AI_Agents.md](./AI_Agents.md) 的简化版,适合零基础读者。*
+
+## Related
+
+- [[06_Reinforcement_Learning/AI_Agents/Agent-in-nutshell]] — AI 智能体速成指南 (共享: agent, ai-agents, mdp, reinforcement-learning, rl)
+- [[06_Reinforcement_Learning/AI_Agents/Agent_Future_Roadmap_2026_2030]] — Agent 未来发展路线图 2026-2030 (共享: agent, ai-agents, mdp, reinforcement-learning, rl)
+- [[06_Reinforcement_Learning/AI_Agents/Agent_Protocols_Detail]] — AI Agent 协议详解：MCP、A2A、UCP (共享: agent, ai-agents, mdp, reinforcement-learning, rl)
+- [[06_Reinforcement_Learning/README]] — 06 强化学习与智能体 (Reinforcement Learning & Agents) (共享: agent, mdp, reinforcement-learning, rl)
+- [[06_Reinforcement_Learning/README_for_dummy.md|README_for_dummy]]

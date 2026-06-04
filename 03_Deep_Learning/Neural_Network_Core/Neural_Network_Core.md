@@ -1,3 +1,12 @@
+---
+title: '神经网络核心 (Neural Network Core)'
+category: '03-deep-learning-neural-network-core'
+tags: ["deep-learning", "neural-networks", "backpropagation"]
+summary: '> **一句话理解**: 神经网络就像"模拟大脑神经元的连接"——通过多层简单计算单元(神经元)的层层堆叠,将输入信息逐步转换为高层抽象特征,最终完成复杂的模式识别,就像人脑从视网膜信号识别出"猫"的过程。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # 神经网络核心 (Neural Network Core)
 
 > **一句话理解**: 神经网络就像"模拟大脑神经元的连接"——通过多层简单计算单元(神经元)的层层堆叠,将输入信息逐步转换为高层抽象特征,最终完成复杂的模式识别,就像人脑从视网膜信号识别出"猫"的过程。
@@ -664,8 +673,8 @@ class TinyNet(nn.Module):
 
 # 创建网络和数据
 model = TinyNet()
-x = torch.tensor([[1.0, 2.0]], requires_grad=True)
-y = torch.tensor([[1.0]])
+x = torch.tensor(```[ [1.0, 2.0] ]```, requires_grad=True)
+y = torch.tensor(```[[1.0]]```)
 
 # 前向传播
 output = model(x)

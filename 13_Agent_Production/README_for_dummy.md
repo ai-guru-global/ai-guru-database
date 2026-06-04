@@ -1,3 +1,12 @@
+---
+title: '13 Agent 生产部署 — 小白版 🤖'
+category: '13-agent-production'
+tags: ["ai-agents", "agent-framework", "production", "langgraph"]
+summary: '> **一句话秒懂**: Agent 就是能"自主行动"的 AI——不只是回答问题，还能规划任务、使用工具、记忆信息、和其他 Agent 协作，就像一个能干的员工，能帮你完成复杂的工作！'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # 13 Agent 生产部署 — 小白版 🤖
 
 > **一句话秒懂**: Agent 就是能"自主行动"的 AI——不只是回答问题，还能规划任务、使用工具、记忆信息、和其他 Agent 协作，就像一个能干的员工，能帮你完成复杂的工作！
@@ -164,3 +173,11 @@ Manager Agent ─── 分配任务
 ---
 
 *本文是 [README.md](./README.md) 的简化版，适合零基础读者。*
+
+## Related
+
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026.md|Agent_Harness_Complete_2026]]
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026.md|Agent_Red_Teaming_2026]]
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow.md|Evaluation_Workflow]]
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment.md|Production_Assessment]]
+- [[13_Agent_Production/16_Agent_Evaluation/Benchmarking/Benchmarking_Criteria.md|Benchmarking_Criteria]]

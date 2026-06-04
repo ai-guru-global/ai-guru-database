@@ -1,3 +1,12 @@
+---
+title: 13 - AI应用与行业融合
+category: 20-ai-applications-industry
+tags: ["ai-applications", "industry", "finance", "healthcare"]
+summary: "本章节提供人工智能在各行业的应用现状、案例分析和融合趋势，覆盖10大行业的2025-2026最新数据与标杆案例。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 13 - AI应用与行业融合
 
 本章节提供人工智能在各行业的应用现状、案例分析和融合趋势，覆盖10大行业的2025-2026最新数据与标杆案例。
@@ -68,3 +77,28 @@
 ---
 
 *Last updated: 2026-04-03*
+
+## Related
+- [[20_AI_Applications_Industry/AI_for_Science/AI_for_Science_Deep_Dive|AI for Science 深度解读: 从 AlphaFold 到科学基础模型]]
+- [[20_AI_Applications_Industry/AI_for_Science/README|AI for Science (AI 驱动的科学发现)]]
+- [[20_AI_Applications_Industry/AI_Applications_Industry|AI应用与行业融合全景]]
+- [[20_AI_Applications_Industry/AI_Applications_Industry_for_dummy|AI 行业应用 - 小白版]]
+- [[20_AI_Applications_Industry/Industry-in-nutshell|AI 行业应用速成指南]]
+
+- [[20_AI_Applications_Industry/Energy_Climate/AI_Energy_Climate_2026]] — AI 能源与气候行业应用 (2025-2026) (共享: ai-applications, finance, healthcare, industry)
+- [[20_AI_Applications_Industry/Industry_Comparison_2026]] — AI 行业应用对比 2026 (Industry Comparison) (共享: ai-applications, finance, healthcare, industry)
+- [[20_AI_Applications_Industry/README_for_dummy]] — AI 行业应用 — 小白版 🏭 (共享: ai-applications, finance, healthcare, industry)
+- [[20_AI_Applications_Industry/Agriculture/AI_Agriculture_2026]] — AI_Agriculture_2026
+- [[20_AI_Applications_Industry/Retail_Ecommerce/AI_Retail_Ecommerce_2026]] — AI_Retail_Ecommerce_2026
+- [[20_AI_Applications_Industry/Healthcare/AI_Healthcare_2026]] — AI_Healthcare_2026
+- [[20_AI_Applications_Industry/Content_Media/AI_Content_Media_2026]] — AI_Content_Media_2026
+- [[20_AI_Applications_Industry/Education/AI_Education_2026]] — AI_Education_2026
+- [[20_AI_Applications_Industry/Manufacturing/AI_Manufacturing_2026]] — AI_Manufacturing_2026
+- [[20_AI_Applications_Industry/Legal_Government/AI_Legal_Government_2026]] — AI_Legal_Government_2026
+- [[20_AI_Applications_Industry/Autonomous_Driving/AI_Autonomous_Driving_2026]] — AI_Autonomous_Driving_2026
+- [[20_AI_Applications_Industry/Finance/AI_Finance_2026]] — AI_Finance_2026
+- [[20_AI_Applications_Industry/AI_Applications_Industry_for_dummy.md|AI_Applications_Industry_for_dummy]]
+- [[20_AI_Applications_Industry/Industry-in-nutshell.md|Industry-in-nutshell]]
+- [[synthesis/ai-industry-applications|Ai Industry Applications]]
+
+

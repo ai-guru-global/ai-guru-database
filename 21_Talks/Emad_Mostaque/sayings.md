@@ -1,3 +1,12 @@
+---
+title: Emad Mostaque 关于 AI 的观点 (Emad Mostaque on AI)
+category: 21-talks-emad-mostaque
+tags: ["talks", "speeches", "insights", "leaders"]
+summary: "1. **“Open, decentralized AI will be more resilient and equitable.” / “开放、去中心化的 AI 更具韧性且更公平。”**"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # Emad Mostaque 关于 AI 的观点 (Emad Mostaque on AI)
 
 1. **“Open, decentralized AI will be more resilient and equitable.” / “开放、去中心化的 AI 更具韧性且更公平。”**  
@@ -12,3 +21,10 @@
 
 ---
 *Last updated: 2026-02-08*
+
+## Related
+
+- [[21_Talks/Andrej_Karpathy/about]] — Andrej Karpathy 简介 (Andrej Karpathy) (共享: insights, leaders, speeches, talks)
+- [[21_Talks/Andrew_Ng/about]] — Andrew Ng 简介 (Andrew Ng) (共享: insights, leaders, speeches, talks)
+- [[21_Talks/Andrew_Ng/sayings]] — Andrew Ng 关于 AI 的观点与格言 (共享: insights, leaders, speeches, talks)
+- [[21_Talks/Bill_Gates/about]] — Bill Gates 简介 (Bill Gates) (共享: insights, leaders, speeches, talks)

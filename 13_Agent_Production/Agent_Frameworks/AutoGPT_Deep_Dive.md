@@ -1,3 +1,12 @@
+---
+title: "AutoGPT: 自主任务执行 Agent"
+category: "13-agent-production-agent-frameworks"
+tags: ["ai-agents", "agent-framework", "production", "langgraph", "gpt"]
+summary: "> **一句话理解**: AutoGPT 是一个让 AI 自主完成复杂任务的框架——给它一个目标，它会自动分解任务、调用工具、反思改进，直到达成目标。"
+created: "2026-05-31"
+updated: "2026-05-31"
+---
+
 # AutoGPT: 自主任务执行 Agent
 
 > **一句话理解**: AutoGPT 是一个让 AI 自主完成复杂任务的框架——给它一个目标，它会自动分解任务、调用工具、反思改进，直到达成目标。
@@ -376,3 +385,11 @@ custom_prompt = """
 
 *Last updated: 2026-04-24*
 *Version: 1.0.0*
+
+## Related
+
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026.md|Agent_Harness_Complete_2026]]
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026.md|Agent_Red_Teaming_2026]]
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow.md|Evaluation_Workflow]]
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment.md|Production_Assessment]]
+- [[13_Agent_Production/16_Agent_Evaluation/Benchmarking/Benchmarking_Criteria.md|Benchmarking_Criteria]]

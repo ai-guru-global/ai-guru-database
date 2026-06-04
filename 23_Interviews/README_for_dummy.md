@@ -1,3 +1,12 @@
+---
+title: 'AI 面试准备 — 小白版 🎯'
+category: '23-interviews'
+tags: ["interviews", "career", "experience", "practitioners"]
+summary: '> **一句话秒懂**: 这一章是 AI 领域的"求职攻略"——帮你了解不同 AI 岗位需要什么技能、会考什么题目、怎么准备，助你斩获 offer！'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # AI 面试准备 — 小白版 🎯
 
 > **一句话秒懂**: 这一章是 AI 领域的"求职攻略"——帮你了解不同 AI 岗位需要什么技能、会考什么题目、怎么准备，助你斩获 offer！
@@ -147,3 +156,11 @@
 ---
 
 *本文是 [README.md](./README.md) 的简化版，适合零基础读者。*
+
+## Related
+
+- [[23_Interviews/AI_Data_Analyst/company_level_question_bank.md|company_level_question_bank]]
+- [[23_Interviews/AI_Data_Analyst/interview_answers.md|interview_answers]]
+- [[23_Interviews/AI_Data_Analyst/interview_preparing.md|interview_preparing]]
+- [[23_Interviews/AI_Data_Analyst/question_bank.md|question_bank]]
+- [[23_Interviews/AI_Evaluation_Engineer/company_level_question_bank.md|company_level_question_bank]]

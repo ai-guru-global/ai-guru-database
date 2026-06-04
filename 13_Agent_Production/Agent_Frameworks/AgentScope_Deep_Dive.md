@@ -1,3 +1,12 @@
+---
+title: 'AgentScope: 阿里巴巴多智能体开发平台'
+category: '13-agent-production-agent-frameworks'
+tags: ["ai-agents", "agent-framework", "production", "langgraph"]
+summary: '> **一句话理解**: AgentScope 是阿里巴巴开源的多智能体(Multi-Agent)开发平台，以"演员-舞台"为核心隐喻，提供丰富的环境交互能力和一键部署支持，让分布式多Agent应用的构建像编排剧本一样简单。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # AgentScope: 阿里巴巴多智能体开发平台
 
 > **一句话理解**: AgentScope 是阿里巴巴开源的多智能体(Multi-Agent)开发平台，以"演员-舞台"为核心隐喻，提供丰富的环境交互能力和一键部署支持，让分布式多Agent应用的构建像编排剧本一样简单。
@@ -589,3 +598,11 @@ class HeavyComputationStage:
 - [AgentScope 文档](https://agentscope.readthedocs.io)
 - [CoPaw (基于 AgentScope)](../23_OpenClaw_Ecosystem/CoPaw_Deep_Dive.md)
 - [Multi-Agent 评估框架](../16_Agent_Evaluation/Multi_Agent_Evaluation_2026.md)
+
+## Related
+
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026.md|Agent_Harness_Complete_2026]]
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026.md|Agent_Red_Teaming_2026]]
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow.md|Evaluation_Workflow]]
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment.md|Production_Assessment]]
+- [[13_Agent_Production/16_Agent_Evaluation/Benchmarking/Benchmarking_Criteria.md|Benchmarking_Criteria]]

@@ -1,3 +1,12 @@
+---
+title: AI伦理与社会影响
+category: 00-ai-introduction
+tags: ["ai", "ethics", "society", "responsible-ai"]
+summary: "AI不仅是技术问题，更是社会问题——算法偏见可能加剧不平等，自动化可能重塑就业，隐私风险可能威胁自由，我们需要在技术进步与社会价值之间寻找平衡。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # AI伦理与社会影响
 
 > **一句话理解**: AI不仅是技术问题，更是社会问题——算法偏见可能加剧不平等，自动化可能重塑就业，隐私风险可能威胁自由，我们需要在技术进步与社会价值之间寻找平衡。
@@ -1041,3 +1050,8 @@ AI社会的四种可能:
 ---
 
 *Last updated: 2026-04-01* (通识课教材版)
+
+## Related
+
+- [[concepts/ai-ethics]] — AI 伦理
+- [[concepts/ai-future-trends]] — AI 未来趋势

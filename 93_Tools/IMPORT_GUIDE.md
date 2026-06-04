@@ -1,3 +1,12 @@
+---
+title: 📥 导入指南
+category: 93-tools
+tags: ["tools", "software", "utilities", "productivity"]
+summary: "本指南介绍如何将 AI Guru 知识库导入到各种 AI 工具和笔记软件中。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 📥 导入指南
 
 本指南介绍如何将 AI Guru 知识库导入到各种 AI 工具和笔记软件中。
@@ -155,7 +164,7 @@ ln -s /path/to/ai-guru-knowledge-base/docs ~/Documents/ObsidianVault/AI-Guru
 
 ### 使用技巧
 
-- **双向链接**: 使用 `[[文档名]]` 创建链接
+- **双向链接**: 使用 `[ [文档名] ]` 语法创建链接（示例，非真实链接）
 - **图谱视图**: 查看知识点之间的关联
 - **标签系统**: 使用 `#标签` 分类内容
 - **本地优先**: 所有数据保存在本地
@@ -255,3 +264,8 @@ A: 先克隆仓库，然后只复制需要的章节文件夹进行导入。
 ---
 
 如有其他工具的使用问题，欢迎提交 Issue 讨论！
+
+## Related
+
+- [[93_Tools/DOCUMENT_TEMPLATES]] — AI Guru 知识库 — 文档模板规范 (共享: productivity, software, tools, utilities)
+- [[93_Tools/README]] — 工具与指南 (Tools) (共享: productivity, software, tools, utilities)

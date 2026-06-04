@@ -1,3 +1,12 @@
+---
+title: '03 深度学习基础 - 小白版'
+category: '03-deep-learning'
+tags: ["deep-learning", "neural-networks", "backpropagation"]
+summary: '> **一句话秒懂**: 深度学习就像教电脑"自己学习认东西"——不用人告诉它怎么识别猫,它通过看大量图片,像婴儿一样慢慢学会区分猫和狗!'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # 03 深度学习基础 - 小白版
 
 > **一句话秒懂**: 深度学习就像教电脑"自己学习认东西"——不用人告诉它怎么识别猫,它通过看大量图片,像婴儿一样慢慢学会区分猫和狗!
@@ -139,3 +148,11 @@ A: 这章是入门,工作还需要更多实战经验。但理解这些概念是�
 ---
 
 *本文是 [README.md](./README.md) 的简化版,适合零基础读者。想深入学习请查看原文档。*
+
+## Related
+
+- [[03_Deep_Learning/DL-in-nutshell.md|DL-in-nutshell]]
+- [[03_Deep_Learning/README.md|03_Deep_Learning README]]
+- [[03_Deep_Learning/Neural_Network_Core/Neural_Network_Core.md|Neural_Network_Core]]
+- [[03_Deep_Learning/Neural_Network_Core/Neural_Network_Core_for_dummy.md|Neural_Network_Core_for_dummy]]
+- [[03_Deep_Learning/Optimization/Optimization.md|Optimization]]

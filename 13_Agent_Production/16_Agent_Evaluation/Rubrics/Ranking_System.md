@@ -1,3 +1,12 @@
+---
+title: Ranking System
+category: 13-agent-production-16-agent-evaluation-rubrics
+tags: ["ai-agents", "agent-framework", "production", "langgraph"]
+summary: "> Methodology for comparing and ranking AI agents"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # Ranking System
 
 > Methodology for comparing and ranking AI agents
@@ -926,3 +935,11 @@ def record_cloud_agent_match(elo_system, agent_a, agent_b, caper_scores_a, caper
 - [Scoring System](../Benchmarking/Scoring_System.md) - Score calculations (含 CAPER 计算模型)
 - [Sample Reports](../Implementation/Sample_Reports.md) - Report templates
 - [Cloud Agent Leaderboard](../Cloud_Agent_Leaderboard_2026.md) - 云产品 Agent 排行榜
+- [[13_Agent_Production/16_Agent_Evaluation/Test_Bank/README.md|README]]
+
+## Related
+
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)

@@ -1,3 +1,12 @@
+---
+title: "Guardrails AI: LLM 安全护栏"
+category: "16-ai-ops"
+tags: ["ai-ops", "observability", "monitoring", "incident-response", "llm"]
+summary: "> **一句话理解**: Guardrails AI 是 LLM 安全护栏框架——输入验证、输出过滤、有害内容检测、数据隐私保护，确保 AI 应用安全合规。"
+created: "2026-05-31"
+updated: "2026-05-31"
+---
+
 # Guardrails AI: LLM 安全护栏
 
 > **一句话理解**: Guardrails AI 是 LLM 安全护栏框架——输入验证、输出过滤、有害内容检测、数据隐私保护，确保 AI 应用安全合规。
@@ -296,3 +305,11 @@ for log in guard.audit():
 
 *Last updated: 2026-04-26*
 *Version: 1.0.0*
+
+## Related
+
+- [[16_AI_Ops/AIOps-in-nutshell.md|AIOps-in-nutshell]]
+- [[16_AI_Ops/AI_Incident_Response_Playbook.md|AI_Incident_Response_Playbook]]
+- [[16_AI_Ops/AI_Ops_for_dummy.md|AI_Ops_for_dummy]]
+- [[16_AI_Ops/README.md|16_AI_Ops README]]
+- [[16_AI_Ops/README_for_dummy.md|README_for_dummy]]

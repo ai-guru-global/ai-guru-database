@@ -1,3 +1,12 @@
+---
+title: "OpenClaw Technical Deep Dive: Architecture, Internals & Implementation"
+category: "13-agent-production-23-openclaw-ecosystem"
+tags: ["ai-agents", "agent-framework", "production", "langgraph"]
+summary: "This document provides an in-depth technical analysis of OpenClaw's architecture, internal mechanisms, and implementation details. It is intended for software architects, developer"
+created: "2026-05-31"
+updated: "2026-05-31"
+---
+
 # OpenClaw Technical Deep Dive: Architecture, Internals & Implementation
 
 ## Overview
@@ -1391,3 +1400,11 @@ their daily tasks, answer questions, and help them be more productive.
 ---
 
 *Last Updated: March 2026*
+
+## Related
+
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026.md|Agent_Harness_Complete_2026]]
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026.md|Agent_Red_Teaming_2026]]
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow.md|Evaluation_Workflow]]
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment.md|Production_Assessment]]
+- [[13_Agent_Production/16_Agent_Evaluation/Benchmarking/Benchmarking_Criteria.md|Benchmarking_Criteria]]

@@ -1,3 +1,12 @@
+---
+title: '项目规划 (Plan)'
+category: '92-plan'
+tags: ["planning", "roadmap", "strategy", "goals"]
+summary: '> **一句话理解**: 本章节记录 AI Guru 知识库的项目规划、评估报告和发展路线图，是项目治理和持续改进的"指挥中心"。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # 项目规划 (Plan)
 
 > **一句话理解**: 本章节记录 AI Guru 知识库的项目规划、评估报告和发展路线图，是项目治理和持续改进的"指挥中心"。
@@ -49,3 +58,16 @@
 ---
 
 *本章节为项目维护者参考，普通读者可直接跳转到学习内容。*
+
+## Related
+- [[92_Plan/Content_Gap_Analysis_Encyclopedia_2026|AI 百科全书视角 - 内容缺口分析与改进计划]]
+- [[92_Plan/README|项目规划 (Plan)]]
+- [[92_Plan/README_for_dummy|92 Plan — 小白版 📋]]
+
+- [[92_Plan/Content_Evaluation_2026.md|Content_Evaluation_2026]]
+- [[92_Plan/Implementation_Plan_2026.md|Implementation_Plan_2026]]
+- [[92_Plan/Project_Comprehensive_Evaluation_2026.md|Project_Comprehensive_Evaluation_2026]]
+- [[92_Plan/Project_Structure_Evaluation_2026.md|Project_Structure_Evaluation_2026]]
+- [[synthesis/agents-reinforcement-learning.md|agents-reinforcement-learning]]
+
+

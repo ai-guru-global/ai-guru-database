@@ -1,3 +1,12 @@
+---
+title: Satya Nadella 简介 (Satya Nadella)
+category: 21-talks-satya-nadella
+tags: ["talks", "speeches", "insights", "leaders"]
+summary: "**身份**: Microsoft CEO。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # Satya Nadella 简介 (Satya Nadella)
 
 - **身份**: Microsoft CEO。
@@ -17,3 +26,10 @@
 - [AI 未来趋势](../../00_AI_Introduction/AI_Future_Trends.md) — 行业前瞻判断汇总
 
 *Last updated: 2026-05-07*
+
+## Related
+
+- [[21_Talks/Andrej_Karpathy/about]] — Andrej Karpathy 简介 (Andrej Karpathy) (共享: insights, leaders, speeches, talks)
+- [[21_Talks/Andrew_Ng/about]] — Andrew Ng 简介 (Andrew Ng) (共享: insights, leaders, speeches, talks)
+- [[21_Talks/Andrew_Ng/sayings]] — Andrew Ng 关于 AI 的观点与格言 (共享: insights, leaders, speeches, talks)
+- [[21_Talks/Bill_Gates/about]] — Bill Gates 简介 (Bill Gates) (共享: insights, leaders, speeches, talks)

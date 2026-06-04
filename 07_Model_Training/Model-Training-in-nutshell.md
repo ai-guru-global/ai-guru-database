@@ -1,3 +1,12 @@
+---
+title: 模型训练速成指南
+category: 07-model-training
+tags: ["model-training", "distributed-training", "optimization", "fsdp"]
+summary: "> 🎯 **目标**：用最简单的方式理解如何从零开始训练 AI/ML 模型。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 模型训练速成指南
 
 > 🎯 **目标**：用最简单的方式理解如何从零开始训练 AI/ML 模型。
@@ -367,3 +376,11 @@ flowchart TB
 - 学习 [推理](../09_Deployment_Inference/Inference-in-nutshell.md) - 使用训练好的模型
 - 探索 [MLOps](../MLOps_Pipeline/) - 自动化训练流水线
 - 理解 [模型评估](../Model_Evaluation/) - 衡量模型质量
+
+## Related
+
+- [[07_Model_Training/Distributed_Training_2026]] — Distributed Training 2026 (共享: distributed-training, fsdp, model-training, optimization)
+- [[07_Model_Training/Distributed_Training_for_dummy]] — 分布式训练 - 小白版 (共享: distributed-training, fsdp, model-training, optimization)
+- [[07_Model_Training/Mixed_Precision_Training]] — 混合精度训练 (Mixed Precision Training) (共享: distributed-training, fsdp, model-training, optimization)
+- [[07_Model_Training/Model_Training_for_dummy]] — 模型训练小白指南 (共享: distributed-training, fsdp, model-training, optimization)
+- [[07_Model_Training/Fine_tuning_Strategies.md|Fine_tuning_Strategies]]

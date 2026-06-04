@@ -1,3 +1,12 @@
+---
+title: AI 基础入门 - 小白版
+category: 00-ai-introduction
+tags: ["ai", "fundamentals", "introduction", "basics"]
+summary: "## 你将学到什么"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # AI 基础入门 - 小白版
 
 > **一句话秒懂**: AI 就像教一个小孩子认东西——你给它看足够多的例子，它慢慢就"学会"了，不用你一条一条地写规则。
@@ -300,3 +309,10 @@ AI 的学习过程完全一样：
 
 *本文是 [AI_Fundamentals.md](./AI_Fundamentals.md) 的简化版，适合零基础读者。*
 *想看包含技术细节的专业版？[点这里](./AI_Fundamentals.md)*
+
+## Related
+
+- [[00_AI_Introduction/AI_Fundamentals]] — AI基础概念入门 (共享: ai, basics, fundamentals, introduction)
+- [[00_AI_Introduction/README]] — 00 - AI 简介与历史 (共享: ai, introduction)
+- [[00_AI_Introduction/README_for_dummy]] — 00 AI 简介与历史 — 小白版 🚀 (共享: ai, introduction)
+- [[01_Fundamentals/AI_Hardware/README]] — AI硬件与芯片 (AI Hardware) (共享: basics, fundamentals)

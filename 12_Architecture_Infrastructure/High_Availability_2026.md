@@ -1,3 +1,12 @@
+---
+title: 'AI 系统高可用架构设计 (High Availability 2026)'
+category: '12-architecture-infrastructure'
+tags: ["architecture", "infrastructure", "kubernetes", "high-availability"]
+summary: '> **一句话理解**: 高可用架构是 AI 系统的"安全网"——通过多副本、自动故障转移、跨区域容灾等机制，确保 AI 服务在面对硬件故障、软件缺陷、流量突增时仍能稳定运行，达到 99.9%-99.99% 的可用性目标。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # AI 系统高可用架构设计 (High Availability 2026)
 
 > **一句话理解**: 高可用架构是 AI 系统的"安全网"——通过多副本、自动故障转移、跨区域容灾等机制，确保 AI 服务在面对硬件故障、软件缺陷、流量突增时仍能稳定运行，达到 99.9%-99.99% 的可用性目标。
@@ -765,3 +774,11 @@ groups:
 
 *Last updated: 2026-04-14*
 *Version: 1.0.0*
+
+## Related
+
+- [[12_Architecture_Infrastructure/AI_Infrastructure_2026.md|AI_Infrastructure_2026]]
+- [[12_Architecture_Infrastructure/Architecture-in-nutshell.md|Architecture-in-nutshell]]
+- [[12_Architecture_Infrastructure/Architecture_Infrastructure_for_dummy.md|Architecture_Infrastructure_for_dummy]]
+- [[12_Architecture_Infrastructure/Spring_AI_Architecture.md|Spring_AI_Architecture]]
+- [[concepts/llm-infrastructure.md|llm-infrastructure]]

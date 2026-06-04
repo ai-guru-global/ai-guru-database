@@ -1,3 +1,12 @@
+---
+title: Machine Learning Engineer 面试题实例答案
+category: 23-interviews-machine-learning-engineer
+tags: ["interviews", "career", "experience", "practitioners"]
+summary: "**答**：先确认评测口径与数据时间窗一致性，再排查样本选择偏差、特征漂移和线上曝光分布差异。若线上包含冷启动或实时反馈效应，应补充线上特征与反馈闭环，并用 A/B 实验验证改动对核心指标的实际提升。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # Machine Learning Engineer 面试题实例答案
 
 ## Q1: 线上指标与离线指标不一致怎么办？
@@ -11,3 +20,10 @@
 
 ---
 *Last updated: 2026-02-26*
+
+## Related
+
+- [[23_Interviews/AI_Data_Analyst/company_level_question_bank]] — AI Data Analyst 按公司/级别区分的题库 (共享: career, experience, interviews, practitioners)
+- [[23_Interviews/AI_Data_Analyst/interview_answers]] — AI Data Analyst 面试题实例答案 (共享: career, experience, interviews, practitioners)
+- [[23_Interviews/AI_Data_Analyst/interview_preparing]] — AI Data Analyst 面试准备 (共享: career, experience, interviews, practitioners)
+- [[23_Interviews/AI_Data_Analyst/question_bank]] — AI Data Analyst 题库 (共享: career, experience, interviews, practitioners)

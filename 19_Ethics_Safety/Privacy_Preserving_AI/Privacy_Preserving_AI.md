@@ -1,3 +1,12 @@
+---
+title: '隐私保护 AI (Privacy-Preserving AI) 2026'
+category: '19-ethics-safety-privacy-preserving-ai'
+tags: ["ai-ethics", "safety", "alignment", "red-teaming", "serving"]
+summary: '> **一句话理解**: 隐私保护AI是在"数据价值释放"和"隐私安全保护"之间找到平衡的技术体系——不是简单的数据脱敏，而是通过联邦学习、同态加密差分隐私等前沿技术，让AI在看不到原始数据的情况下仍能学习。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # 隐私保护 AI (Privacy-Preserving AI) 2026
 
 > **一句话理解**: 隐私保护AI是在"数据价值释放"和"隐私安全保护"之间找到平衡的技术体系——不是简单的数据脱敏，而是通过联邦学习、同态加密差分隐私等前沿技术，让AI在看不到原始数据的情况下仍能学习。

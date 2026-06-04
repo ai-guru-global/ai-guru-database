@@ -1,3 +1,12 @@
+---
+title: "LiteLLM: 多模型统一 API 代理"
+category: "14-ai-gateway"
+tags: ["ai-gateway", "api-management", "routing", "litellm", "llm"]
+summary: "> **一句话理解**: LiteLLM 让你可以用同一套接口调用 100+ 种 LLM——OpenAI、Anthropic、Azure、Ollama、HuggingFace 等，一个 SDK 搞定所有。"
+created: "2026-05-31"
+updated: "2026-05-31"
+---
+
 # LiteLLM: 多模型统一 API 代理
 
 > **一句话理解**: LiteLLM 让你可以用同一套接口调用 100+ 种 LLM——OpenAI、Anthropic、Azure、Ollama、HuggingFace 等，一个 SDK 搞定所有。
@@ -478,3 +487,11 @@ response = completion(
 
 *Last updated: 2026-04-24*
 *Version: 1.0.0*
+
+## Related
+
+- [[14_AI_Gateway/AI_Gateway_2026.md|AI_Gateway_2026]]
+- [[14_AI_Gateway/AI_Gateway_for_dummy.md|AI_Gateway_for_dummy]]
+- [[14_AI_Gateway/Cohere_Deep_Dive.md|Cohere_Deep_Dive]]
+- [[14_AI_Gateway/Gateway-in-nutshell.md|Gateway-in-nutshell]]
+- [[14_AI_Gateway/Kong_AI_Gateway_Deep_Dive.md|Kong_AI_Gateway_Deep_Dive]]

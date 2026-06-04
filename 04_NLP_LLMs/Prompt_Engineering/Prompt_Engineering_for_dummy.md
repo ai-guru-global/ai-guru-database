@@ -1,3 +1,12 @@
+---
+title: '提示词工程 - 小白版'
+category: '04-nlp-llms-prompt-engineering'
+tags: ["nlp", "llm", "transformer", "gpt", "bert"]
+summary: '> **一句话秒懂**: 提示词工程就像学会"问对问题"——你问得越清楚,AI 回答得越好。这是零成本让 ChatGPT 变聪明的技巧!'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # 提示词工程 - 小白版
 
 > **一句话秒懂**: 提示词工程就像学会"问对问题"——你问得越清楚,AI 回答得越好。这是零成本让 ChatGPT 变聪明的技巧!
@@ -590,3 +599,7 @@ Prompt: "逐步分析并解释你的推理过程"
 ---
 
 *最后更新: 2026-02-10*
+
+## Related
+
+- [[04_NLP_LLMs/Prompt_Engineering/Instructor_Deep_Dive.md|Instructor_Deep_Dive]]

@@ -1,3 +1,12 @@
+---
+title: '推荐系统 - 小白版'
+category: '02-machine-learning-recommendation-systems'
+tags: ["machine-learning", "supervised", "unsupervised"]
+summary: '> **一句话秒懂**: 推荐系统就像"一个超聪明的导购员"——它观察你看了什么、买了什么，然后猜出你可能还想要什么，并且猜得特别准。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # 推荐系统 - 小白版
 
 > **一句话秒懂**: 推荐系统就像"一个超聪明的导购员"——它观察你看了什么、买了什么，然后猜出你可能还想要什么，并且猜得特别准。

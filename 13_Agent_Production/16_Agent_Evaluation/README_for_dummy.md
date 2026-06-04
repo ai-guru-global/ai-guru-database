@@ -1,3 +1,12 @@
+---
+title: Agent Benchmarking Evaluation Framework - Beginner's Guide
+category: 13-agent-production-16-agent-evaluation
+tags: ["ai-agents", "agent-framework", "production", "langgraph", "model-evaluation"]
+summary: "> A simple guide to understanding how we test and compare AI agents"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # Agent Benchmarking Evaluation Framework - Beginner's Guide
 
 > A simple guide to understanding how we test and compare AI agents
@@ -263,3 +272,10 @@ Each might be "best" for different jobs.
 ```
 
 Happy evaluating!
+
+## Related
+
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
+- [[13_Agent_Production/16_Agent_Evaluation/Cloud_Agent_Evaluation/README]] — Cloud Agent Evaluation (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
+- [[13_Agent_Production/16_Agent_Evaluation/Cloud_Agent_Evaluation_System_2026]] — Cloud Agent Evaluation System 2026 (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
+- [[13_Agent_Production/16_Agent_Evaluation/Metrics/Evaluation_Metrics]] — Evaluation Metrics (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)

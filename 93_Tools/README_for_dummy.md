@@ -1,3 +1,12 @@
+---
+title: '93 Tools — 小白版 🛠️'
+category: '93-tools'
+tags: ["tools", "software", "utilities", "productivity"]
+summary: '> **一句话秒懂**: 这一章是 AI Guru 知识库的"工具箱"——提供文档模板、导入指南、自动化脚本，帮助你高效管理和维护知识库内容。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # 93 Tools — 小白版 🛠️
 
 > **一句话秒懂**: 这一章是 AI Guru 知识库的"工具箱"——提供文档模板、导入指南、自动化脚本，帮助你高效管理和维护知识库内容。
@@ -92,3 +101,10 @@
 ---
 
 *本文是 [README.md](./README.md) 的简化版，适合零基础读者。*
+
+## Related
+
+- [[93_Tools/DOCUMENT_TEMPLATES.md|DOCUMENT_TEMPLATES]]
+- [[93_Tools/IMPORT_GUIDE.md|IMPORT_GUIDE]]
+- [[93_Tools/README.md|93_Tools README]]
+- [[00_AI_Introduction/AI_Tools_Practical_Guide.md|AI_Tools_Practical_Guide]]

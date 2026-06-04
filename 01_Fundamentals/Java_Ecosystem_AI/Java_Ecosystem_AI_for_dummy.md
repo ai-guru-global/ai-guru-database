@@ -1,3 +1,12 @@
+---
+title: 'Java AI 生态小白指南 (Java Ecosystem AI for Dummy)'
+category: '01-fundamentals-java-ecosystem-ai'
+tags: ["fundamentals", "math", "algorithms", "basics", "java"]
+summary: '> **一句话理解**: Java AI 生态就像给企业软件装上了"智能大脑"——让原本用 Java 写的银行系统、电商网站也能跑 AI，而不需要推倒重来。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # Java AI 生态小白指南 (Java Ecosystem AI for Dummy)
 
 > **一句话理解**: Java AI 生态就像给企业软件装上了"智能大脑"——让原本用 Java 写的银行系统、电商网站也能跑 AI，而不需要推倒重来。

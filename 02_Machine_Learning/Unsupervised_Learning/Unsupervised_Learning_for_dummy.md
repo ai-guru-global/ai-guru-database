@@ -1,3 +1,12 @@
+---
+title: 无监督学习 - 小白版
+category: 02-machine-learning-unsupervised-learning
+tags: ["machine-learning", "supervised", "unsupervised"]
+summary: "> **一句话秒懂**: 无监督学习就像自己整理房间——没人告诉你怎么分类，但你会自然地把衣服放一堆、书放一堆、玩具放一堆。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 无监督学习 - 小白版
 
 > **一句话秒懂**: 无监督学习就像自己整理房间——没人告诉你怎么分类，但你会自然地把衣服放一堆、书放一堆、玩具放一堆。
@@ -176,3 +185,10 @@ A: 部分是的。推荐系统会用聚类把用户分成不同群体（"爱看�
 
 ---
 *本文是 [Unsupervised_Learning.md](./Unsupervised_Learning.md) 的简化版，适合零基础读者。*
+
+## Related
+
+- [[02_Machine_Learning/Ensemble_Learning/Ensemble_Learning]] — 集成学习 (Ensemble Learning) - 完全指南 (共享: machine-learning, ml, supervised, unsupervised)
+- [[02_Machine_Learning/Feature_Engineering/Feature_Engineering]] — 特征工程 (Feature Engineering) (共享: machine-learning, ml, supervised, unsupervised)
+- [[02_Machine_Learning/Feature_Engineering/Feature_Engineering_for_dummy]] — 特征工程 - 小白版 (共享: machine-learning, ml, supervised, unsupervised)
+- [[02_Machine_Learning/ML-in-nutshell]] — 机器学习速成指南 (共享: machine-learning, ml, supervised, unsupervised)

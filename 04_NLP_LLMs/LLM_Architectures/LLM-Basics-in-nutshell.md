@@ -1,3 +1,12 @@
+---
+title: 大语言模型基础速成指南
+category: 04-nlp-llms-llm-architectures
+tags: ["nlp", "llm", "transformer", "gpt", "bert"]
+summary: "> 🎯 **目标**：用最简单的方式理解大语言模型（LLM）是什么、如何工作、以及如何使用。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 大语言模型基础速成指南
 
 > 🎯 **目标**：用最简单的方式理解大语言模型（LLM）是什么、如何工作、以及如何使用。
@@ -574,3 +583,10 @@ flowchart TB
 - [模型推理](../../09_Deployment_Inference/Inference-in-nutshell.md) - 部署和优化
 - [RAG 系统](../../11_RAG_Systems/RAG-in-nutshell.md) - 让 LLM 访问你的数据
 - [AI 智能体](../../06_Reinforcement_Learning/AI_Agents/Agent-in-nutshell.md) - LLM + 工具 + 记忆
+
+## Related
+
+- [[04_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/README]] — PEFT 2026 (参数高效微调) (共享: bert, gpt, llm, nlp, transformer)
+- [[04_NLP_LLMs/Fine_tuning_Techniques/README]] — 微调技术 (Fine-tuning Techniques) (共享: bert, gpt, llm, nlp, transformer)
+- [[04_NLP_LLMs/Multimodal_Models/Multimodal_Architectures_2026]] — 多模态模型架构 2026：从 GPT-4V 到原生多模态 AGI (共享: bert, gpt, llm, nlp, transformer)
+- [[04_NLP_LLMs/Prompt_Engineering/Prompt-Engineering-in-nutshell]] — Prompt Engineering 速成指南 (共享: bert, gpt, llm, nlp, transformer)

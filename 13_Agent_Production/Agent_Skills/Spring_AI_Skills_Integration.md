@@ -1,3 +1,12 @@
+---
+title: Spring AI 与 Agent Skills 集成
+category: 13-agent-production-agent-skills
+tags: ["ai-agents", "agent-framework", "production", "langgraph", "spring-ai"]
+summary: "> Spring AI 是支持 Agent Skills 开放标准的 Java AI 应用框架之一。本文档说明如何在 Spring AI 项目中使用 Agent Skills。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # Spring AI 与 Agent Skills 集成
 
 > Spring AI 是支持 Agent Skills 开放标准的 Java AI 应用框架之一。本文档说明如何在 Spring AI 项目中使用 Agent Skills。
@@ -137,3 +146,10 @@ Spring AI 框架的深度技术文档（ChatClient、Advisor、RAG、MCP、Obser
 - [Agent Skills 实战指南](./Agent_Skills_Practical_Guide.md) — 创建和优化 Skill
 - [Spring AI 架构设计](../../12_Architecture_Infrastructure/Spring_AI_Architecture.md)
 - [Spring AI RAG 深度解析](../../11_RAG_Systems/Spring_AI_RAG_Deep_Dive.md)
+
+## Related
+
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)

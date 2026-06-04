@@ -1,3 +1,12 @@
+---
+title: NLP Engineer 面试准备
+category: 23-interviews-nlp-engineer
+tags: ["interviews", "career", "experience", "practitioners", "nlp"]
+summary: "**LLM 应用**: RAG、工具调用、对话系统。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # NLP Engineer 面试准备
 
 ## 核心职责
@@ -25,3 +34,11 @@
 
 ---
 *Last updated: 2026-02-26*
+
+## Related
+
+- [[23_Interviews/NLP_Engineer/company_level_question_bank]] — NLP Engineer 按公司/级别区分的题库 (共享: career, experience, interviews, nlp, practitioners)
+- [[23_Interviews/NLP_Engineer/interview_answers]] — NLP Engineer 面试题实例答案 (共享: career, experience, interviews, nlp, practitioners)
+- [[23_Interviews/NLP_Engineer/question_bank]] — NLP Engineer 题库 (共享: career, experience, interviews, nlp, practitioners)
+- [[23_Interviews/AI_Data_Analyst/company_level_question_bank]] — AI Data Analyst 按公司/级别区分的题库 (共享: career, experience, interviews, practitioners)
+- [[23_Interviews/Research_Scientist/interview_preparing.md|interview_preparing]]

@@ -1,3 +1,12 @@
+---
+title: Agent Skills 生态目录
+category: 13-agent-production-agent-skills
+tags: ["ai-agents", "agent-framework", "production", "langgraph"]
+summary: "> 🎯 **目标**：完整收录 38 家开发团队、451+ 个 Agent Skills 的生态全景，作为快速查找和选型参考。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # Agent Skills 生态目录
 
 > 🎯 **目标**：完整收录 38 家开发团队、451+ 个 Agent Skills 的生态全景，作为快速查找和选型参考。
@@ -497,3 +506,10 @@ awesome-agent-skills 仓库强调**人工审核**，不接受 AI 批量生成的
 - [精选合集](https://github.com/VoltAgent/awesome-agent-skills) — GitHub 精选列表
 
 > 📅 **最后更新**：2026-04-11 | **来源**：[officialskills.sh](https://officialskills.sh), [VoltAgent/awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills), [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills), [agentskills.io](https://agentskills.io)
+
+## Related
+
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)

@@ -1,3 +1,12 @@
+---
+title: Agent Skills 深度解析
+category: 13-agent-production-agent-skills
+tags: ["ai-agents", "agent-framework", "production", "langgraph"]
+summary: "> 🎯 **目标**：全面掌握 Agent Skills 开放标准 —— 从核心概念、完整规范、最佳实践到评估体系，构建生产级 Skill 的完整知识体系。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # Agent Skills 深度解析
 
 > 🎯 **目标**：全面掌握 Agent Skills 开放标准 —— 从核心概念、完整规范、最佳实践到评估体系，构建生产级 Skill 的完整知识体系。
@@ -1364,3 +1373,10 @@ skills-ref validate .agents/skills/my-skill
 ---
 
 > 📅 **最后更新**：2026-04-11 | **来源**：[agentskills.io](https://agentskills.io), [github.com/anthropics/skills](https://github.com/anthropics/skills), [officialskills.sh](https://officialskills.sh), [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills), [VoltAgent/awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills)
+
+## Related
+
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)

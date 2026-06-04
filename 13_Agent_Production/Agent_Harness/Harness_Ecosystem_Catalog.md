@@ -1,3 +1,12 @@
+---
+title: Agent Harness 生态目录
+category: 13-agent-production-agent-harness
+tags: ["ai-agents", "agent-framework", "production", "langgraph"]
+summary: "> 收录主流 Harness 平台、框架、工具链和观测系统，作为选型参考。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # Agent Harness 生态目录
 
 > 收录主流 Harness 平台、框架、工具链和观测系统，作为选型参考。
@@ -266,3 +275,10 @@ with Sandbox() as sandbox:
 ---
 
 > 📅 **最后更新**：2026-05-07
+
+## Related
+
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)

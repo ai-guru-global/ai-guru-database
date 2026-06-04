@@ -1,3 +1,12 @@
+---
+title: "Haystack: 开源 RAG 框架"
+category: "11-rag-systems"
+tags: ["rag", "retrieval", "vector-database", "embedding"]
+summary: "> **一句话理解**: Haystack 是 deepset 打造的模块化 RAG 框架——像搭积木一样组合 Pipeline、组件和数据源，构建强大的检索增强生成系统。"
+created: "2026-05-31"
+updated: "2026-05-31"
+---
+
 # Haystack: 开源 RAG 框架
 
 > **一句话理解**: Haystack 是 deepset 打造的模块化 RAG 框架——像搭积木一样组合 Pipeline、组件和数据源，构建强大的检索增强生成系统。
@@ -485,3 +494,11 @@ print(eval_result)
 
 *Last updated: 2026-04-24*
 *Version: 1.0.0*
+
+## Related
+
+- [[11_RAG_Systems/RAG-in-nutshell.md|RAG-in-nutshell]]
+- [[11_RAG_Systems/RAG_Systems.md|RAG_Systems]]
+- [[11_RAG_Systems/README_Advanced.md|README_Advanced]]
+- [[11_RAG_Systems/Spring_AI_RAG_Deep_Dive.md|Spring_AI_RAG_Deep_Dive]]
+- [[synthesis/rag-vector-database.md|rag-vector-database]]

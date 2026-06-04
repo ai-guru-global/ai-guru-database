@@ -1,3 +1,12 @@
+---
+title: Yoshua Bengio 关于 AI 的观点 (Yoshua Bengio on AI)
+category: 21-talks-yoshua-bengio
+tags: ["talks", "speeches", "insights", "leaders"]
+summary: "1. **“AI systems could cause serious harm; we need governance.” / “AI 系统可能造成严重危害，需要治理。”**"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # Yoshua Bengio 关于 AI 的观点 (Yoshua Bengio on AI)
 
 1. **“AI systems could cause serious harm; we need governance.” / “AI 系统可能造成严重危害，需要治理。”**  
@@ -13,3 +22,10 @@
 
 ---
 *Last updated: 2026-02-08*
+
+## Related
+
+- [[21_Talks/Andrej_Karpathy/about]] — Andrej Karpathy 简介 (Andrej Karpathy) (共享: insights, leaders, speeches, talks)
+- [[21_Talks/Andrew_Ng/about]] — Andrew Ng 简介 (Andrew Ng) (共享: insights, leaders, speeches, talks)
+- [[21_Talks/Andrew_Ng/sayings]] — Andrew Ng 关于 AI 的观点与格言 (共享: insights, leaders, speeches, talks)
+- [[21_Talks/Bill_Gates/about]] — Bill Gates 简介 (Bill Gates) (共享: insights, leaders, speeches, talks)

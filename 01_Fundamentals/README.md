@@ -1,3 +1,12 @@
+---
+title: 01 基础理论 (Fundamentals)
+category: 01-fundamentals
+tags: ["fundamentals", "math", "algorithms", "basics"]
+summary: "本章节涵盖人工智能与机器学习最底层的科学支柱，包括数学基础（线性代数、概率统计）和计算机科学基础（数据结构算法、分布式系统）。这些知识是理解现代 AI 技术栈的必要前提。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 01 基础理论 (Fundamentals)
 
 本章节涵盖人工智能与机器学习最底层的科学支柱，包括数学基础（线性代数、概率统计）和计算机科学基础（数据结构算法、分布式系统）。这些知识是理解现代 AI 技术栈的必要前提。
@@ -36,6 +45,9 @@
 | 分布式系统 (Distributed Systems) | 进阶 | All-Reduce、并行策略、ZeRO 优化，实现大规模模型训练 | [Distributed_Systems.md](./Distributed_Systems/Distributed_Systems.md) |
 | AI硬件与芯片 (AI Hardware) | 进阶 | H100/H200/B200对比，GPU选型，边缘AI芯片，2026年硬件格局 | [AI_Hardware_2026.md](./AI_Hardware/AI_Hardware_2026.md) |
 | Java 生态与 AI (Java Ecosystem AI) | 进阶 | Spring AI、LangChain4j、DJL、GraalVM，Java AI 应用全栈概览 | [Java_Ecosystem_AI_Overview.md](./Java_Ecosystem_AI/Java_Ecosystem_AI_Overview.md) |
+| **Python for AI (Python 基础)** | **入门** | **Python 语法速成，面向 AI 场景，零基础友好** | **[Python_for_AI_Basics.md](./Python_for_AI_Basics.md)** |
+| **Python 数据科学工具链** | **入门** | **NumPy / Pandas / Matplotlib / Scikit-learn 核心操作** | **[Python_Data_Science_Toolkit.md](./Python_Data_Science_Toolkit.md)** |
+| **AI 开发环境配置** | **入门** | **Jupyter / Conda / VS Code / Colab / GPU 环境搭建** | **[AI_Development_Environment_Setup.md](./AI_Development_Environment_Setup.md)** |
 
 ## 前置知识 (Prerequisites)
 
@@ -59,3 +71,30 @@
 
 ---
 *Last updated: 2026-02-10*
+
+## Related
+- [[01_Fundamentals/README_for_dummy|基础理论 - 新手导航]]
+
+- [[01_Fundamentals/AI_Hardware/README]] — AI硬件与芯片 (AI Hardware) (共享: algorithms, basics, fundamentals, math)
+- [[01_Fundamentals/Fundamentals-in-nutshell]] — AI 基础速成指南 (共享: algorithms, basics, fundamentals, math)
+- [[01_Fundamentals/Java_Ecosystem_AI/Java_Ecosystem_AI_Overview]] — Java 生态与 AI：全景概览 (共享: algorithms, basics, fundamentals, math)
+- [[01_Fundamentals/Java_Ecosystem_AI/Spring_AI_Deep_Dive]] — Spring AI 深度解析 (共享: algorithms, basics, fundamentals, math)
+- [[01_Fundamentals/Java_Ecosystem_AI/Java_Ecosystem_AI_for_dummy]] — Java_Ecosystem_AI_for_dummy
+- [[01_Fundamentals/Data_Structures_Algorithms/Data_Structures_Algorithms_for_dummy]] — Data_Structures_Algorithms_for_dummy
+- [[01_Fundamentals/Data_Structures_Algorithms/Data_Structures_Algorithms]] — Data_Structures_Algorithms
+- [[01_Fundamentals/Distributed_Systems/Distributed_Systems_for_dummy]] — Distributed_Systems_for_dummy
+- [[01_Fundamentals/Distributed_Systems/Distributed_Systems]] — Distributed_Systems
+- [[01_Fundamentals/Probability_Statistics/Probability_Statistics_for_dummy]] — Probability_Statistics_for_dummy
+- [[01_Fundamentals/Probability_Statistics/Probability_Statistics]] — Probability_Statistics
+- [[01_Fundamentals/AI_Hardware/AI_Hardware_2026]] — AI_Hardware_2026
+- [[01_Fundamentals/Linear_Algebra/Linear_Algebra_for_dummy]] — Linear_Algebra_for_dummy
+- [[01_Fundamentals/Linear_Algebra/Linear_Algebra]] — Linear_Algebra
+- [[01_Fundamentals/README_for_dummy.md|README_for_dummy]]
+- [[90_Learn/AI_Basics_Gap_Analysis|AI 基础入门缺口分析]] — 入门内容覆盖度分析与补全追踪
+
+## 相关页面
+- [[01_Fundamentals/Information_Theory/README|信息论基础 (Information Theory)]]
+- [[01_Fundamentals/Information_Theory/Information_Theory_Fundamentals|信息论基础: 从香农熵到 LLM 的交叉熵损失]]
+
+- [[concepts/data-structures-algorithms|Data Structures Algorithms]]
+

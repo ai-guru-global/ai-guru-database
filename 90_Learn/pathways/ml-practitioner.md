@@ -1,3 +1,12 @@
+---
+title: ML 从业者路径
+category: 90-learn-pathways
+tags: ["learning", "education", "courses", "study-path"]
+summary: "> **面向：有编程基础，想系统成为 AI 工程师 | 前置要求：Python 基础 | 预计时间：60-80 小时**"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # ML 从业者路径
 
 > **面向：有编程基础，想系统成为 AI 工程师 | 前置要求：Python 基础 | 预计时间：60-80 小时**
@@ -190,3 +199,10 @@ Phase 6: 完成端到端项目
 ---
 
 *本路径覆盖 AI 工程师的核心技能，但深度有限。如需在某个方向更深入，请参考对应章节的完整版文档。*
+
+## Related
+
+- [[90_Learn/milestones]] — 里程碑自测 (共享: courses, education, learning, study-path)
+- [[90_Learn/pathways/absolute-beginner]] — 零基础通识路径 (共享: courses, education, learning, study-path)
+- [[90_Learn/pathways/ai-researcher]] — AI 研究者路径 (共享: courses, education, learning, study-path)
+- [[90_Learn/pathways/java-developer]] — Java 开发者 AI 路径 (共享: courses, education, learning, study-path)

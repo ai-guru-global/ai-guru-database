@@ -1,3 +1,12 @@
+---
+title: 'AI 系统监控仪表盘'
+category: '94-visualization'
+tags: ["visualization", "charts", "dashboards", "data-viz"]
+summary: '> **一句话秒懂**: AI 系统仪表盘就是给你 AI 应用的"驾驶舱"——实时看到检索质量、Agent 决策、Token 消耗、A/B 测试、模型性能等一切关键指标。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # AI 系统监控仪表盘
 
 > **一句话秒懂**: AI 系统仪表盘就是给你 AI 应用的"驾驶舱"——实时看到检索质量、Agent 决策、Token 消耗、A/B 测试、模型性能等一切关键指标。
@@ -1100,3 +1109,9 @@ if __name__ == "__main__":
 - [LangSmith](https://docs.smith.langchain.com/)
 - [Grafana](https://grafana.com/docs/)
 - [Weights & Biases](https://docs.wandb.ai/)
+
+## Related
+
+- [[94_Visualization/README.md|94_Visualization README]]
+- [[94_Visualization/atlas/README.md|atlas README]]
+- [[94_Visualization/atlas/docs/performance.md|performance]]

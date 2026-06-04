@@ -1,3 +1,12 @@
+---
+title: Cloud Agent Evaluation Framework - Demo
+category: 13-agent-production-16-agent-evaluation-demo
+tags: ["ai-agents", "agent-framework", "production", "langgraph", "model-evaluation"]
+summary: "> CAPER 五维评估框架的可运行 Demo，包含评估引擎、测试数据集和模拟结果"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # Cloud Agent Evaluation Framework - Demo
 
 > CAPER 五维评估框架的可运行 Demo，包含评估引擎、测试数据集和模拟结果
@@ -43,3 +52,12 @@ python run_evaluation.py
 ## 详细文档
 
 参见 [Cloud_Agent_Evaluation_System_2026.md](../Cloud_Agent_Evaluation_System_2026.md)
+
+## Related
+- [[13_Agent_Production/16_Agent_Evaluation/demo/README|Cloud Agent Evaluation Framework - Demo]]
+
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
+- [[13_Agent_Production/16_Agent_Evaluation/Cloud_Agent_Evaluation/README]] — Cloud Agent Evaluation (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
+- [[13_Agent_Production/16_Agent_Evaluation/Cloud_Agent_Evaluation_System_2026]] — Cloud Agent Evaluation System 2026 (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
+- [[13_Agent_Production/16_Agent_Evaluation/Metrics/Evaluation_Metrics]] — Evaluation Metrics (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
+

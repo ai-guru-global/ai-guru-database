@@ -1,3 +1,12 @@
+---
+title: Sam Altman 关于 AI 的观点 (Sam Altman on AI)
+category: 21-talks-sam-altman
+tags: ["talks", "speeches", "insights", "leaders"]
+summary: "1. **“AI will amplify both the good and the bad; we have to manage the bad.” / “AI 会放大好与坏，我们必须管控坏的部分。”**"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # Sam Altman 关于 AI 的观点 (Sam Altman on AI)
 
 1. **“AI will amplify both the good and the bad; we have to manage the bad.” / “AI 会放大好与坏，我们必须管控坏的部分。”**  
@@ -12,3 +21,10 @@
 
 ---
 *Last updated: 2026-02-08*
+
+## Related
+
+- [[21_Talks/Andrej_Karpathy/about]] — Andrej Karpathy 简介 (Andrej Karpathy) (共享: insights, leaders, speeches, talks)
+- [[21_Talks/Andrew_Ng/about]] — Andrew Ng 简介 (Andrew Ng) (共享: insights, leaders, speeches, talks)
+- [[21_Talks/Andrew_Ng/sayings]] — Andrew Ng 关于 AI 的观点与格言 (共享: insights, leaders, speeches, talks)
+- [[21_Talks/Bill_Gates/about]] — Bill Gates 简介 (Bill Gates) (共享: insights, leaders, speeches, talks)

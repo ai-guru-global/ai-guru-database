@@ -1,3 +1,12 @@
+---
+title: Sebastian Thrun 简介 (Sebastian Thrun)
+category: 21-talks-sebastian-thrun
+tags: ["talks", "speeches", "insights", "leaders"]
+summary: "**身份**: Google X 创始人、Udacity 联合创始人，自动驾驶先驱。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # Sebastian Thrun 简介 (Sebastian Thrun)
 
 - **身份**: Google X 创始人、Udacity 联合创始人，自动驾驶先驱。
@@ -17,3 +26,10 @@
 - [AI 未来趋势](../../00_AI_Introduction/AI_Future_Trends.md) — 行业前瞻判断汇总
 
 *Last updated: 2026-05-07*
+
+## Related
+
+- [[21_Talks/Andrej_Karpathy/about]] — Andrej Karpathy 简介 (Andrej Karpathy) (共享: insights, leaders, speeches, talks)
+- [[21_Talks/Andrew_Ng/about]] — Andrew Ng 简介 (Andrew Ng) (共享: insights, leaders, speeches, talks)
+- [[21_Talks/Andrew_Ng/sayings]] — Andrew Ng 关于 AI 的观点与格言 (共享: insights, leaders, speeches, talks)
+- [[21_Talks/Bill_Gates/about]] — Bill Gates 简介 (Bill Gates) (共享: insights, leaders, speeches, talks)

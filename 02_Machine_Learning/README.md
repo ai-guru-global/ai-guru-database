@@ -1,3 +1,12 @@
+---
+title: 02 经典机器学习 (Classical Machine Learning)
+category: 02-machine-learning
+tags: ["machine-learning", "supervised", "unsupervised"]
+summary: "本章介绍深度学习之前的主流机器学习方法，包括监督学习（分类/回归/集成）、无监督学习（聚类/降维）和特征工程。这些技术至今仍在工业界广泛应用，是理解 AI 建模思路的重要基础。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 02 经典机器学习 (Classical Machine Learning)
 
 本章介绍深度学习之前的主流机器学习方法，包括监督学习（分类/回归/集成）、无监督学习（聚类/降维）和特征工程。这些技术至今仍在工业界广泛应用，是理解 AI 建模思路的重要基础。
@@ -35,6 +44,7 @@
 | 监督学习 (Supervised Learning) | 入门 | 分类、回归、集成学习（XGBoost/LightGBM），掌握有标签数据建模 | [Supervised_Learning.md](./Supervised_Learning/Supervised_Learning.md) |
 | 特征工程 (Feature Engineering) | 进阶 | 特征选择、特征构造、特征编码，提升模型性能的关键技能 | [Feature_Engineering/](./Feature_Engineering/) |
 | 无监督学习 (Unsupervised Learning) | 进阶 | 聚类（K-Means/DBSCAN）、降维（PCA/t-SNE），挖掘无标签数据 | [Unsupervised_Learning.md](./Unsupervised_Learning/Unsupervised_Learning.md) |
+| **经典算法速查表** | **入门** | **12 个经典 ML 算法对比，用类比建立算法选择直觉** | **[ML_Algorithms_Cheatsheet.md](./ML_Algorithms_Cheatsheet.md)** |
 
 ### 进阶主题
 
@@ -55,6 +65,9 @@
 | 异常检测入门 | [Anomaly_Detection_for_dummy.md](./Anomaly_Detection/Anomaly_Detection_for_dummy.md) |
 | 推荐系统入门 | [Recommendation_Systems_for_dummy.md](./Recommendation_Systems/Recommendation_Systems_for_dummy.md) |
 | AutoML入门 | [AutoML_for_dummy.md](./AutoML/AutoML_for_dummy.md) |
+| **数据预处理入门** | [Data_Preprocessing_for_dummy.md](./Feature_Engineering/Data_Preprocessing_for_dummy.md) |
+| **第一个 ML 模型** | [Your_First_ML_Model.md](./Supervised_Learning/Your_First_ML_Model.md) |
+| **EDA 快速入门** | [EDA_Quick_Start.md](./Supervised_Learning/EDA_Quick_Start.md) |
 
 ## 前置知识 (Prerequisites)
 
@@ -77,3 +90,43 @@
 
 ---
 *Last updated: 2026-02-10*
+
+## Related
+- [[02_Machine_Learning/README_for_dummy|经典机器学习 - 新手导航]]
+
+- [[02_Machine_Learning/Ensemble_Learning/Ensemble_Learning]] — 集成学习 (Ensemble Learning) - 完全指南 (共享: machine-learning, ml, supervised, unsupervised)
+- [[02_Machine_Learning/Feature_Engineering/Feature_Engineering]] — 特征工程 (Feature Engineering) (共享: machine-learning, ml, supervised, unsupervised)
+- [[02_Machine_Learning/Feature_Engineering/Feature_Engineering_for_dummy]] — 特征工程 - 小白版 (共享: machine-learning, ml, supervised, unsupervised)
+- [[02_Machine_Learning/ML-in-nutshell]] — 机器学习速成指南 (共享: machine-learning, ml, supervised, unsupervised)
+- [[02_Machine_Learning/Anomaly_Detection/Anomaly_Detection_for_dummy]] — Anomaly_Detection_for_dummy
+- [[02_Machine_Learning/Anomaly_Detection/Anomaly_Detection]] — Anomaly_Detection
+- [[02_Machine_Learning/Recommendation_Systems/Recommendation_Systems]] — Recommendation_Systems
+- [[02_Machine_Learning/Recommendation_Systems/Recommendation_Systems_for_dummy]] — Recommendation_Systems_for_dummy
+- [[02_Machine_Learning/AutoML/AutoML]] — AutoML
+- [[02_Machine_Learning/AutoML/AutoML_for_dummy]] — AutoML_for_dummy
+- [[02_Machine_Learning/Unsupervised_Learning/Unsupervised_Learning]] — Unsupervised_Learning
+- [[02_Machine_Learning/Unsupervised_Learning/Unsupervised_Learning_for_dummy]] — 无监督学习 - 小白版
+- [[02_Machine_Learning/Time_Series/Time_Series_for_dummy]] — Time_Series_for_dummy
+- [[02_Machine_Learning/Time_Series/Time_Series_Analysis]] — 时间序列分析 (Time Series Analysis) - 完全指南
+- [[02_Machine_Learning/Supervised_Learning/Supervised_Learning_for_dummy]] — Supervised_Learning_for_dummy
+- [[02_Machine_Learning/Supervised_Learning/Supervised_Learning]] — Supervised_Learning
+- [[02_Machine_Learning/Ensemble_Learning/Ensemble_Learning_for_dummy]] — Ensemble_Learning_for_dummy
+- [[02_Machine_Learning/README_for_dummy.md|README_for_dummy]]
+- [[concepts/feature-engineering.md|feature-engineering]]
+
+## 相关页面
+- [[02_Machine_Learning/Bayesian_Methods/Bayesian_Methods_Deep_Dive|贝叶斯方法深度解读: 从贝叶斯定理到概率编程]]
+- [[02_Machine_Learning/Bayesian_Methods/README|贝叶斯方法 (Bayesian Methods)]]
+- [[02_Machine_Learning/Causal_Inference/Causal_Inference_Deep_Dive|因果推断深度解读: 从相关到因果的 AI 新范式]]
+- [[02_Machine_Learning/Causal_Inference/README|因果推断 (Causal Inference)]]
+
+- [[concepts/recommendation-systems|Recommendation Systems]]
+
+- [[concepts/time-series-analysis|Time Series Analysis]]
+
+- [[concepts/automl|Automl]]
+
+- [[concepts/ensemble-learning|Ensemble Learning]]
+
+- [[concepts/anomaly-detection|Anomaly Detection]]
+

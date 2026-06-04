@@ -1,3 +1,12 @@
+---
+title: 'AI 治理与合规 2026'
+category: '19-ethics-safety'
+tags: ["ai-ethics", "safety", "alignment", "red-teaming"]
+summary: '> **一句话理解**: 2026年是AI监管从"纸上谈兵"到"落地执法"的转折点——EU AI Act正式生效，中国生成式AI管理办法全面执行，AI合规官(CAIO)成为热门岗位，企业必须从"事后补救"转向"从设计开始的合规"(Privacy by Design)。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # AI 治理与合规 2026
 
 > **一句话理解**: 2026年是AI监管从"纸上谈兵"到"落地执法"的转折点——EU AI Act正式生效，中国生成式AI管理办法全面执行，AI合规官(CAIO)成为热门岗位，企业必须从"事后补救"转向"从设计开始的合规"(Privacy by Design)。
@@ -607,3 +616,11 @@ CAIO (Chief AI Compliance Officer) 职责:
 ---
 
 *Last updated: 2026-04-10*
+
+## Related
+
+- [[19_Ethics_Safety/Ethics-in-nutshell.md|Ethics-in-nutshell]]
+- [[19_Ethics_Safety/README.md|19_Ethics_Safety README]]
+- [[19_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming.md|AI_Safety_RedTeaming]]
+- [[19_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming_for_dummy.md|AI_Safety_RedTeaming_for_dummy]]
+- [[19_Ethics_Safety/AI_Security_2026/AI_Security_2026.md|AI_Security_2026]]

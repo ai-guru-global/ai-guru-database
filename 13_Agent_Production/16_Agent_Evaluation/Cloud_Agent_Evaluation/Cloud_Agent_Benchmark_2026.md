@@ -1,3 +1,12 @@
+---
+title: 云产品智能体综合测评框架 2026
+category: 13-agent-production-16-agent-evaluation-cloud-agent-evaluation
+tags: ["ai-agents", "agent-framework", "production", "langgraph"]
+summary: "> 覆盖国内外 15+ 款云产品智能体的全方位基准测试与排名体系"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 云产品智能体综合测评框架 2026
 
 > 覆盖国内外 15+ 款云产品智能体的全方位基准测试与排名体系
@@ -277,3 +286,10 @@ Phase 5: 报告发布（Week 5-6）
 | 版本 | 日期 | 变更 |
 |------|------|------|
 | 1.0.0 | 2026-04 | 初始版本，覆盖 15+ 款云产品智能体 |
+
+## Related
+
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)

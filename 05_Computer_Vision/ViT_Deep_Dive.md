@@ -1,3 +1,12 @@
+---
+title: 'Vision Transformer (ViT) 深度解读'
+category: '05-computer-vision'
+tags: ["computer-vision", "cnn", "image-processing", "transformer"]
+summary: '> **一句话理解**: ViT 就像把图像变成一门外语——把图像切成小块（token），然后用 Transformer 的"翻译"能力来处理图像，从此计算机视觉进入了"注意力时代"。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # Vision Transformer (ViT) 深度解读
 
 > **一句话理解**: ViT 就像把图像变成一门外语——把图像切成小块（token），然后用 Transformer 的"翻译"能力来处理图像，从此计算机视觉进入了"注意力时代"。
@@ -375,3 +384,11 @@ predicted_class = outputs.logits.argmax(-1)
 
 *本文是 [README.md](./README.md) 的补充，适合想深入理解 ViT 和视觉 Transformer 原理的读者。*
 *原始论文: [An Image is Worth 16x16 Words](https://arxiv.org/abs/2010.11929)*
+
+## Related
+
+- [[05_Computer_Vision/README.md|05_Computer_Vision README]]
+- [[05_Computer_Vision/3D_Vision/3D_Vision.md|3D_Vision]]
+- [[05_Computer_Vision/3D_Vision/3D_Vision_for_dummy.md|3D_Vision_for_dummy]]
+- [[05_Computer_Vision/Generative_Models/Generative_Models.md|Generative_Models]]
+- [[05_Computer_Vision/Generative_Models/Generative_Models_for_dummy.md|Generative_Models_for_dummy]]

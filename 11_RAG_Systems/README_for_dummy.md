@@ -1,3 +1,12 @@
+---
+title: '11 RAG 系统 — 小白版 🔍'
+category: '11-rag-systems'
+tags: ["rag", "retrieval", "vector-database", "embedding"]
+summary: '> **一句话秒懂**: RAG 就是给 AI 装上"资料库"——让它在回答问题前先查资料，而不是只靠记忆硬答，这样 AI 回答得更准确，还能引用原文出处！'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # 11 RAG 系统 — 小白版 🔍
 
 > **一句话秒懂**: RAG 就是给 AI 装上"资料库"——让它在回答问题前先查资料，而不是只靠记忆硬答，这样 AI 回答得更准确，还能引用原文出处！
@@ -210,3 +219,11 @@ RAG 流程:
 ---
 
 *本文是 [README.md](./README.md) 的简化版，适合零基础读者。*
+
+## Related
+
+- [[11_RAG_Systems/RAG-in-nutshell.md|RAG-in-nutshell]]
+- [[11_RAG_Systems/RAG_Systems.md|RAG_Systems]]
+- [[11_RAG_Systems/README_Advanced.md|README_Advanced]]
+- [[11_RAG_Systems/Spring_AI_RAG_Deep_Dive.md|Spring_AI_RAG_Deep_Dive]]
+- [[synthesis/rag-vector-database.md|rag-vector-database]]

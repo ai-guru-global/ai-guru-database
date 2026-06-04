@@ -1,3 +1,12 @@
+---
+title: AI Guru 知识库 — 文档模板规范
+category: 93-tools
+tags: ["tools", "software", "utilities", "productivity"]
+summary: "> **一句话理解**: 本文档定义了 AI Guru 知识库所有 Markdown 文件的标准模板，确保 22 个章节、650+ 文件在结构、风格和用户体验上的一致性。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # AI Guru 知识库 — 文档模板规范
 
 > **一句话理解**: 本文档定义了 AI Guru 知识库所有 Markdown 文件的标准模板，确保 22 个章节、650+ 文件在结构、风格和用户体验上的一致性。
@@ -1066,3 +1075,8 @@ flowchart TB
 ---
 
 *Last updated: 2026-05-07*
+
+## Related
+
+- [[93_Tools/IMPORT_GUIDE]] — 📥 导入指南 (共享: productivity, software, tools, utilities)
+- [[93_Tools/README]] — 工具与指南 (Tools) (共享: productivity, software, tools, utilities)

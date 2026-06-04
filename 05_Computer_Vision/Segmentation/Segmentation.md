@@ -1,3 +1,12 @@
+---
+title: '图像分割 (Image Segmentation)'
+category: '05-computer-vision-segmentation'
+tags: ["computer-vision", "cnn", "image-processing"]
+summary: '> **一句话理解**: 如果目标检测是告诉你"图中哪里有猫"（画个框），那图像分割就是精确到"哪些像素属于猫"（描出轮廓）。分割是计算机视觉中最精细的空间理解任务。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # 图像分割 (Image Segmentation)
 
 > **一句话理解**: 如果目标检测是告诉你"图中哪里有猫"（画个框），那图像分割就是精确到"哪些像素属于猫"（描出轮廓）。分割是计算机视觉中最精细的空间理解任务。
@@ -209,7 +218,7 @@ image = cv2.imread("photo.jpg")
 predictor.set_image(image)
 
 # 点击提示: 点击图像中的一个点
-input_point = np.array([[500, 375]])     # (x, y) 坐标
+input_point = np.array(``[ [500, 375] ]``)     # (x, y) 坐标
 input_label = np.array([1])              # 1=前景, 0=背景
 
 masks, scores, logits = predictor.predict(

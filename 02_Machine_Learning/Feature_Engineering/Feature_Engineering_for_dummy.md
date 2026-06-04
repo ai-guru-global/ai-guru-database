@@ -1,3 +1,12 @@
+---
+title: 特征工程 - 小白版
+category: 02-machine-learning-feature-engineering
+tags: ["machine-learning", "supervised", "unsupervised"]
+summary: "> **一句话秒懂**: 特征工程就像做饭前的备菜——再好的厨师也做不好没洗没切的菜。同样，再强的 AI 也需要经过精心处理的数据。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 特征工程 - 小白版
 
 > **一句话秒懂**: 特征工程就像做饭前的备菜——再好的厨师也做不好没洗没切的菜。同样，再强的 AI 也需要经过精心处理的数据。
@@ -178,3 +187,10 @@ A: 说实话，它确实是 AI 项目中最"脏活累活"的部分。但它也�
 
 ---
 *本文是 [Feature_Engineering.md](./Feature_Engineering.md) 的简化版，适合零基础读者。*
+
+## Related
+
+- [[02_Machine_Learning/Ensemble_Learning/Ensemble_Learning]] — 集成学习 (Ensemble Learning) - 完全指南 (共享: machine-learning, ml, supervised, unsupervised)
+- [[02_Machine_Learning/Feature_Engineering/Feature_Engineering]] — 特征工程 (Feature Engineering) (共享: machine-learning, ml, supervised, unsupervised)
+- [[02_Machine_Learning/ML-in-nutshell]] — 机器学习速成指南 (共享: machine-learning, ml, supervised, unsupervised)
+- [[02_Machine_Learning/README]] — 02 经典机器学习 (Classical Machine Learning) (共享: machine-learning, ml, supervised, unsupervised)

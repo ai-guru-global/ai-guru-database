@@ -1,3 +1,12 @@
+---
+title: AI 研究者路径
+category: 90-learn-pathways
+tags: ["learning", "education", "courses", "study-path"]
+summary: "> **面向：想做 AI 研究、读论文、理解前沿理论 | 前置要求：数学基础（线代+概率）+ 编程 | 预计时间：80+ 小时**"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # AI 研究者路径
 
 > **面向：想做 AI 研究、读论文、理解前沿理论 | 前置要求：数学基础（线代+概率）+ 编程 | 预计时间：80+ 小时**
@@ -237,3 +246,10 @@ Phase 6: 前沿专题（多模态 / Agent / 世界模型）
 ---
 
 *本路径建议配合 [AI 概念知识图谱](../../91_Notes/AI_Concept_Knowledge_Graph.md) 使用，帮助理解概念间的依赖关系。*
+
+## Related
+
+- [[90_Learn/milestones]] — 里程碑自测 (共享: courses, education, learning, study-path)
+- [[90_Learn/pathways/absolute-beginner]] — 零基础通识路径 (共享: courses, education, learning, study-path)
+- [[90_Learn/pathways/java-developer]] — Java 开发者 AI 路径 (共享: courses, education, learning, study-path)
+- [[90_Learn/pathways/llm-engineer]] — LLM 工程师路径 (共享: courses, education, learning, study-path)

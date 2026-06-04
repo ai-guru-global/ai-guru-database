@@ -1,3 +1,12 @@
+---
+title: Distributed Training 2026
+category: 07-model-training
+tags: ["model-training", "distributed-training", "optimization", "fsdp"]
+summary: "> **一句话理解**: 分布式训练通过将数据和模型切分到多个 GPU/节点并行计算，使得原本无法在单卡上完成的大规模模型训练成为可能，是 2026 年训练百亿到万亿参数模型的核心基础设施。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # Distributed Training 2026
 
 > **一句话理解**: 分布式训练通过将数据和模型切分到多个 GPU/节点并行计算，使得原本无法在单卡上完成的大规模模型训练成为可能，是 2026 年训练百亿到万亿参数模型的核心基础设施。
@@ -1523,3 +1532,11 @@ if rank == 0:
 ---
 
 *Last updated: 2026-05-07*
+
+## Related
+
+- [[07_Model_Training/Distributed_Training_for_dummy]] — 分布式训练 - 小白版 (共享: distributed-training, fsdp, model-training, optimization)
+- [[07_Model_Training/Mixed_Precision_Training]] — 混合精度训练 (Mixed Precision Training) (共享: distributed-training, fsdp, model-training, optimization)
+- [[07_Model_Training/Model-Training-in-nutshell]] — 模型训练速成指南 (共享: distributed-training, fsdp, model-training, optimization)
+- [[07_Model_Training/Model_Training_for_dummy]] — 模型训练小白指南 (共享: distributed-training, fsdp, model-training, optimization)
+- [[07_Model_Training/Training_Optimization_2026.md|Training_Optimization_2026]]

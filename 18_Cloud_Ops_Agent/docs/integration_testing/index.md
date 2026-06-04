@@ -1,3 +1,12 @@
+---
+title: 云产品运维 Agent 集成测试指南 (Integration Testing)
+category: 18-cloud-ops-agent-docs-integration-testing
+tags: ["cloud-ops", "devops", "sre", "automation", "ai-agents", "testing"]
+summary: "> 🎯 **目标**: 为测试工程师提供 Cloud Ops Agent 的端到端集成测试、跨组件测试、灰度发布测试、混沌工程测试的完整测试体系，确保系统在生产环境下稳定可靠。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 云产品运维 Agent 集成测试指南 (Integration Testing)
 
 > 🎯 **目标**: 为测试工程师提供 Cloud Ops Agent 的端到端集成测试、跨组件测试、灰度发布测试、混沌工程测试的完整测试体系，确保系统在生产环境下稳定可靠。
@@ -1554,3 +1563,11 @@ class QualityGate:
 *最后更新: 2026-04-15*
 *版本: 1.0.0*
 *维护者: 测试工程团队*
+
+## Related
+
+- [[18_Cloud_Ops_Agent/docs/testing/index]] — 云产品运维 Agent 评测指南 (Testing & Evaluation) (共享: ai-agents, automation, cloud-ops, devops, sre, testing)
+- [[18_Cloud_Ops_Agent/CloudOps-in-nutshell]] — 云产品运维 Agent 速成指南 (共享: ai-agents, automation, cloud-ops, devops, sre)
+- [[18_Cloud_Ops_Agent/Cloud_Product_Ops_for_dummy]] — 云产品运维 Agent 入门指南 (for Dummies) (共享: ai-agents, automation, cloud-ops, devops, sre)
+- [[18_Cloud_Ops_Agent/docs/architecture/index]] — 云产品运维 Agent 架构设计指南 (Architecture) (共享: ai-agents, automation, cloud-ops, devops, sre)
+- [[18_Cloud_Ops_Agent/docs/templates/ops_template.md|ops_template]]

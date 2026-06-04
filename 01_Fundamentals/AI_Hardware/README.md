@@ -1,3 +1,12 @@
+---
+title: AI硬件与芯片 (AI Hardware)
+category: 01-fundamentals-ai-hardware
+tags: ["fundamentals", "math", "algorithms", "basics"]
+summary: "| 文档 | 内容 | 适用读者 |"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # AI硬件与芯片 (AI Hardware)
 
 ## 文档导航
@@ -39,3 +48,11 @@
 - [NVIDIA Data Center GPUs](https://www.nvidia.com/en-us/data-center/)
 - [AMD Instinct](https://www.amd.com/en/products/accelerators/instinct/)
 - [MLPerf Benchmarks](https://mlcommons.org/benchmarks/)
+
+## Related
+
+- [[01_Fundamentals/Fundamentals-in-nutshell]] — AI 基础速成指南 (共享: algorithms, basics, fundamentals, math)
+- [[01_Fundamentals/Java_Ecosystem_AI/Java_Ecosystem_AI_Overview]] — Java 生态与 AI：全景概览 (共享: algorithms, basics, fundamentals, math)
+- [[01_Fundamentals/Java_Ecosystem_AI/Spring_AI_Deep_Dive]] — Spring AI 深度解析 (共享: algorithms, basics, fundamentals, math)
+- [[01_Fundamentals/README]] — 01 基础理论 (Fundamentals) (共享: algorithms, basics, fundamentals, math)
+- [[concepts/data-structures-algorithms.md|data-structures-algorithms]]

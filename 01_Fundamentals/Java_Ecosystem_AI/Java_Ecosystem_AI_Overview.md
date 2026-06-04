@@ -1,3 +1,12 @@
+---
+title: Java 生态与 AI：全景概览
+category: 01-fundamentals-java-ecosystem-ai
+tags: ["fundamentals", "math", "algorithms", "basics", "java"]
+summary: "> **一句话理解**: Java 生态正在通过 Spring AI、GraalVM、LangChain4j 等项目全面拥抱 AI —— 从企业级后端到边缘推理，JVM 平台为 AI 应用提供了成熟的工程化基础设施。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # Java 生态与 AI：全景概览
 
 > **一句话理解**: Java 生态正在通过 Spring AI、GraalVM、LangChain4j 等项目全面拥抱 AI —— 从企业级后端到边缘推理，JVM 平台为 AI 应用提供了成熟的工程化基础设施。
@@ -1168,3 +1177,10 @@ Native Image 内存  80MB            45MB            -
 ---
 
 *Last updated: 2026-04*
+
+## Related
+
+- [[01_Fundamentals/AI_Hardware/README]] — AI硬件与芯片 (AI Hardware) (共享: algorithms, basics, fundamentals, math)
+- [[01_Fundamentals/Fundamentals-in-nutshell]] — AI 基础速成指南 (共享: algorithms, basics, fundamentals, math)
+- [[01_Fundamentals/Java_Ecosystem_AI/Spring_AI_Deep_Dive]] — Spring AI 深度解析 (共享: algorithms, basics, fundamentals, math)
+- [[01_Fundamentals/README]] — 01 基础理论 (Fundamentals) (共享: algorithms, basics, fundamentals, math)

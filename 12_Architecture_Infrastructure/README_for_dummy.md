@@ -1,3 +1,12 @@
+---
+title: '12 架构与基础设施 — 小白版 🏗️'
+category: '12-architecture-infrastructure'
+tags: ["architecture", "infrastructure", "kubernetes", "high-availability"]
+summary: '> **一句话秒懂**: 这一章告诉你怎么把 AI 系统"搭起来"——怎么设计高可用、可扩展的 AI 架构，怎么选型、怎么部署，让 AI 系统能够支撑百万用户同时使用。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # 12 架构与基础设施 — 小白版 🏗️
 
 > **一句话秒懂**: 这一章告诉你怎么把 AI 系统"搭起来"——怎么设计高可用、可扩展的 AI 架构，怎么选型、怎么部署，让 AI 系统能够支撑百万用户同时使用。
@@ -174,3 +183,11 @@ Kubernetes (K8s) 部署:
 ---
 
 *本文是 [README.md](./README.md) 的简化版，适合零基础读者。*
+
+## Related
+
+- [[12_Architecture_Infrastructure/AI_Infrastructure_2026.md|AI_Infrastructure_2026]]
+- [[12_Architecture_Infrastructure/Architecture-in-nutshell.md|Architecture-in-nutshell]]
+- [[12_Architecture_Infrastructure/Architecture_Infrastructure_for_dummy.md|Architecture_Infrastructure_for_dummy]]
+- [[12_Architecture_Infrastructure/Spring_AI_Architecture.md|Spring_AI_Architecture]]
+- [[concepts/llm-infrastructure.md|llm-infrastructure]]

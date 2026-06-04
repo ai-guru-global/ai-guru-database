@@ -1,3 +1,12 @@
+---
+title: AI 测试与评估速成指南
+category: 15-testing
+tags: ["testing", "ai-testing", "prompt-testing", "evaluation"]
+summary: "> 🎯 **目标**：掌握如何测试、评估和验证 AI 系统，确保生产环境的可靠性。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # AI 测试与评估速成指南
 
 > 🎯 **目标**：掌握如何测试、评估和验证 AI 系统，确保生产环境的可靠性。
@@ -829,3 +838,12 @@ flowchart TB
 - [RAG 系统](../11_RAG_Systems/RAG-in-nutshell.md) - RAG 评估方法
 - [AI 智能体](../../06_Reinforcement_Learning/AI_Agents/Agent-in-nutshell.md) - Agent 测试策略
 - [AI 工作流](../13_Agent_Production/Agent_Workflow/Workflow-in-nutshell.md) - 测试流水线集成
+
+## Related
+
+- [[15_Testing/AI_Testing_for_dummy]] — AI 测试 - 小白版 (共享: ai-testing, evaluation, prompt-testing, testing)
+- [[15_Testing/Java_AI_Testing]] — Java AI 测试实践 (共享: ai-testing, evaluation, prompt-testing, testing)
+- [[15_Testing/README]] — AI 测试与评估 (AI Testing) (共享: ai-testing, evaluation, prompt-testing, testing)
+- [[15_Testing/Promptfoo_Deep_Dive.md|Promptfoo_Deep_Dive]]
+- [[15_Testing/DeepEval_Deep_Dive.md|DeepEval_Deep_Dive]]
+- [[15_Testing/AI_Test_Framework_2026.md|AI_Test_Framework_2026]]

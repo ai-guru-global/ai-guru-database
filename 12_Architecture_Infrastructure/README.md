@@ -1,3 +1,12 @@
+---
+title: '架构与基础设施 (Architecture & Infrastructure)'
+category: '12-architecture-infrastructure'
+tags: ["architecture", "infrastructure", "kubernetes", "high-availability"]
+summary: '> **一句话理解**: AI 系统架构是智能应用的"骨架与神经系统"——决定系统能支撑多少用户、响应有多快、运行有多稳、成本有多低。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # 架构与基础设施 (Architecture & Infrastructure)
 
 > **一句话理解**: AI 系统架构是智能应用的"骨架与神经系统"——决定系统能支撑多少用户、响应有多快、运行有多稳、成本有多低。
@@ -16,6 +25,7 @@
 | [Edge AI 2026](./Edge_AI_2026.md) | 边缘部署、模型压缩、端侧推理 | 移动端/IoT 开发者 |
 | [Multi Tenant Architecture](./Multi_Tenant_Architecture.md) | 租户隔离、资源配额、计费计量 | SaaS 架构师 |
 | [Spring AI Architecture](./Spring_AI_Architecture.md) | Spring AI 企业级架构设计 | Java 生态开发者 |
+| [AI Stack Deep Dive](./AI_Stack_Deep_Dive.md) | 阿里云 AI Stack 软硬一体推理一体机（V2.14.0） | 政企 IT 决策者、基础设施工程师 |
 
 ---
 
@@ -26,6 +36,7 @@
 - **高可用设计** → [High Availability 2026](./High_Availability_2026.md) + [Multi Tenant Architecture](./Multi_Tenant_Architecture.md)
 - **边缘场景** → [Edge AI 2026](./Edge_AI_2026.md)
 - **Java 生态** → [Spring AI Architecture](./Spring_AI_Architecture.md)
+- **私有化 AI 一体机** → [AI Stack Deep Dive](./AI_Stack_Deep_Dive.md)
 
 ---
 
@@ -45,3 +56,17 @@
 ---
 
 *本章内容持续完善中。*
+
+## Related
+- [[12_Architecture_Infrastructure/AI_Cost_Optimization_2026|AI 成本优化与 FinOps 2026]]
+- [[12_Architecture_Infrastructure/High_Availability_2026|AI 系统高可用架构设计 (High Availability 2026)]]
+- [[12_Architecture_Infrastructure/README|架构与基础设施 (Architecture & Infrastructure)]]
+- [[12_Architecture_Infrastructure/Edge_AI_2026|边缘 AI / 设备端 AI 2026]]
+- [[12_Architecture_Infrastructure/AI_System_Architecture_2026|AI 系统架构全景图 (AI System Architecture 2026)]]
+- [[12_Architecture_Infrastructure/README_for_dummy|12 架构与基础设施 — 小白版 🏗️]]
+- [[12_Architecture_Infrastructure/Capacity_Planning_2026|AI 系统容量规划指南 (Capacity Planning 2026)]]
+
+- [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive|阿里云 AI Stack: 企业级软硬一体 AI 推理平台]]
+- [[concepts/ai-architecture]] — AI 系统架构
+- [[concepts/llm-infrastructure]] — LLM 基础设施
+

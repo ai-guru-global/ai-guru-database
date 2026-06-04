@@ -1,3 +1,12 @@
+---
+title: AI 安全与红队 (AI Safety & Red Teaming)
+category: 19-ethics-safety-ai-safety-redteaming
+tags: ["ai-ethics", "safety", "alignment", "red-teaming"]
+summary: "> **一句话理解**: 就像雇佣白帽黑客找系统漏洞一样,AI红队通过模拟攻击来发现和修复AI系统的安全弱点。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # AI 安全与红队 (AI Safety & Red Teaming)
 
 > **一句话理解**: 就像雇佣白帽黑客找系统漏洞一样,AI红队通过模拟攻击来发现和修复AI系统的安全弱点。
@@ -964,3 +973,14 @@ FRR = (误拒合法请求次数) / (合法请求总数)
 ---
 
 *Last updated: 2026-02-10*
+
+## Related
+
+- [[19_Ethics_Safety/AI_Security_2026/README]] — AI安全 2026 (AI Security) (共享: ai-ethics, alignment, red-teaming, safety)
+- [[19_Ethics_Safety/AI_Supply_Chain_Security/AI_Supply_Chain_Security]] — AI 供应链安全 2026 (共享: ai-ethics, alignment, red-teaming, safety)
+- [[19_Ethics_Safety/Ethics-in-nutshell]] — AI 伦理与安全速成指南 (共享: ai-ethics, alignment, red-teaming, safety)
+- [[19_Ethics_Safety/README]] — 08 AI 伦理、安全与对齐 (Ethics, Safety & Alignment) (共享: ai-ethics, alignment, red-teaming, safety)
+- [[19_Ethics_Safety/Safety_Evaluation_Framework|AI 安全评测框架]] — 安全评测基准与红队测试方法论
+- [[synthesis/safety-evaluation-red-teaming|安全评测 × 红队]] — 评测与攻击的迭代
+
+- [[synthesis/alignment-rlhf|价值对齐 × RLHF：从人类反馈到可扩展监督]]

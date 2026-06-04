@@ -1,3 +1,12 @@
+---
+title: 模型评估 (Model Evaluation)
+category: 08-model-evaluation
+tags: ["model-evaluation", "metrics", "ab-testing", "benchmark"]
+summary: "> **一句话理解**: 模型评估就像考试——你需要出不同类型的考题（评估指标），用合理的考试规则（评估方法），才能判断学生（模型）是否真的学好了，而不是只会背答案（过拟合）。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 模型评估 (Model Evaluation)
 
 > **一句话理解**: 模型评估就像考试——你需要出不同类型的考题（评估指标），用合理的考试规则（评估方法），才能判断学生（模型）是否真的学好了，而不是只会背答案（过拟合）。
@@ -1444,3 +1453,11 @@ class LLMEvaluationPipeline:
 ---
 
 *Last updated: 2026-05-07*
+
+## Related
+
+- [[08_Model_Evaluation/README]] — 模型评估 (Model Evaluation) (共享: ab-testing, benchmark, metrics, model-evaluation)
+- [[08_Model_Evaluation/Evaluation-in-nutshell.md|Evaluation-in-nutshell]]
+- [[08_Model_Evaluation/Model_Evaluation_for_dummy.md|Model_Evaluation_for_dummy]]
+- [[19_Ethics_Safety/Safety_Evaluation_Framework|AI 安全评测框架]] — 安全评测基准与红队测试方法论
+- [[synthesis/safety-evaluation-red-teaming|安全评测 × 红队]] — 模型评估与安全

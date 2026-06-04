@@ -1,3 +1,12 @@
+---
+title: 多 Agent Harness 设计模式
+category: 13-agent-production-agent-harness
+tags: ["ai-agents", "agent-framework", "production", "langgraph"]
+summary: "> 当单个 Agent 无法高效完成复杂任务时，需要将任务拆分给多个协作 Agent。本文档详解多 Agent Harness 的核心设计模式：状态共享、通信协议、Handoff 机制与冲突解决。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 多 Agent Harness 设计模式
 
 > 当单个 Agent 无法高效完成复杂任务时，需要将任务拆分给多个协作 Agent。本文档详解多 Agent Harness 的核心设计模式：状态共享、通信协议、Handoff 机制与冲突解决。
@@ -643,3 +652,10 @@ Please merge these versions intelligently, preserving all valuable changes.
 ---
 
 > 📅 **最后更新**：2026-05-07
+
+## Related
+
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)

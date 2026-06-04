@@ -1,3 +1,12 @@
+---
+title: GPT-3 深度解读 (Language Models are Few-Shot Learners)
+category: 22-papers
+tags: ["nlp", "gpt", "llm", "openai"]
+summary: "GPT-3 就像把一个阅读量超过人类万倍的天才放在一个\"只给例子不教规则\"的考试中——它通过 1750 亿参数和海量文本训练，竟能从几个示例中顿悟任务逻辑，开启了\"大模型 + 提示词\"的全新 AI 范式。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # GPT-3 深度解读 (Language Models are Few-Shot Learners)
 
 > **一句话理解**: GPT-3 就像把一个阅读量超过人类万倍的天才放在一个"只给例子不教规则"的考试中——它通过 1750 亿参数和海量文本训练，竟能从几个示例中顿悟任务逻辑，开启了"大模型 + 提示词"的全新 AI 范式。
@@ -746,3 +755,10 @@ print(f"英语: {english}")
 ---
 
 *Last updated: 2026-05-07*
+
+## Related
+
+- [[04_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/README]] — PEFT 2026 (参数高效微调) (共享: gpt, llm, nlp)
+- [[04_NLP_LLMs/Fine_tuning_Techniques/README]] — 微调技术 (Fine-tuning Techniques) (共享: gpt, llm, nlp)
+- [[04_NLP_LLMs/LLM_Architectures/LLM-Basics-in-nutshell]] — 大语言模型基础速成指南 (共享: gpt, llm, nlp)
+- [[04_NLP_LLMs/Multimodal_Models/Multimodal_Architectures_2026]] — 多模态模型架构 2026：从 GPT-4V 到原生多模态 AGI (共享: gpt, llm, nlp)

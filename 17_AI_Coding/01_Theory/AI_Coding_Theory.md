@@ -1,3 +1,12 @@
+---
+title: AI辅助编程理论基础
+category: 17-ai-coding-01-theory
+tags: ["ai-coding", "code-generation", "cursor", "github-copilot"]
+summary: "> **一句话理解**: 理解 AI 编程的底层原理——从编程范式的演进到 LLM 如何理解代码，从代码幻觉的成因到 Agentic Coding 的架构跃迁，为实践提供理论根基。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # AI辅助编程理论基础
 
 > **一句话理解**: 理解 AI 编程的底层原理——从编程范式的演进到 LLM 如何理解代码，从代码幻觉的成因到 Agentic Coding 的架构跃迁，为实践提供理论根基。
@@ -469,3 +478,11 @@ AI编程使用风险评估:
 ---
 
 *Last updated: 2026-04*
+
+## Related
+
+- [[17_AI_Coding/02_Tools/CodeBuddy_Guide]] — CodeBuddy / WorkBuddy 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
+- [[17_AI_Coding/02_Tools/Comate_Guide]] — Comate 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
+- [[17_AI_Coding/02_Tools/Coze_Guide]] — Coze 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
+- [[17_AI_Coding/02_Tools/Cursor_Guide]] — Cursor 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
+- [[17_AI_Coding/AI_Coding-in-nutshell.md|AI_Coding-in-nutshell]]

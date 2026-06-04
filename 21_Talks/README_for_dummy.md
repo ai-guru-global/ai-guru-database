@@ -1,3 +1,12 @@
+---
+title: '21 业界观点 — 小白版 🎤'
+category: '21-talks'
+tags: ["talks", "speeches", "insights", "leaders"]
+summary: '> **一句话秒懂**: 这一章汇集了 AI 领域"大咖"的声音——OpenAI、Google、DeepMind 的科学家们怎么看 AI 的未来，他们的预测正在塑造整个行业。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # 21 业界观点 — 小白版 🎤
 
 > **一句话秒懂**: 这一章汇集了 AI 领域"大咖"的声音——OpenAI、Google、DeepMind 的科学家们怎么看 AI 的未来，他们的预测正在塑造整个行业。
@@ -129,3 +138,11 @@
 ---
 
 *本文是 [README.md](./README.md) 的简化版，适合零基础读者。*
+
+## Related
+
+- [[21_Talks/Andrej_Karpathy/about.md|about]]
+- [[21_Talks/Andrew_Ng/about.md|about]]
+- [[21_Talks/Andrew_Ng/sayings.md|sayings]]
+- [[21_Talks/Bill_Gates/about.md|about]]
+- [[21_Talks/Bill_Gates/sayings.md|sayings]]

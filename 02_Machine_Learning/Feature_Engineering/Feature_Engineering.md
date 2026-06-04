@@ -1,3 +1,12 @@
+---
+title: 特征工程 (Feature Engineering)
+category: 02-machine-learning-feature-engineering
+tags: ["machine-learning", "supervised", "unsupervised"]
+summary: "> **一句话理解**: 特征工程就像厨师备料——原始食材（原始数据）需要经过清洗、切割、调味（特征处理）才能做出美味佳肴（高性能模型）。模型的上限由数据和特征决定，算法只是逼近这个上限。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 特征工程 (Feature Engineering)
 
 > **一句话理解**: 特征工程就像厨师备料——原始食材（原始数据）需要经过清洗、切割、调味（特征处理）才能做出美味佳肴（高性能模型）。模型的上限由数据和特征决定，算法只是逼近这个上限。
@@ -157,7 +166,7 @@ categorical_transformer = Pipeline(steps=[
 # 有序特征处理: 标签编码
 ordinal_transformer = Pipeline(steps=[
     ('imputer', SimpleImputer(strategy='most_frequent')),
-    ('ordinal', OrdinalEncoder(categories=[['低', '中', '高']]))
+    ('ordinal', OrdinalEncoder(categories=``[ ['低', '中', '高'] ]``))
 ])
 
 # 组合所有预处理步骤
@@ -340,3 +349,10 @@ def create_time_features(df, date_col='date', target_col='sales'):
 
 ---
 *Last updated: 2026-02-10*
+
+## Related
+
+- [[02_Machine_Learning/Ensemble_Learning/Ensemble_Learning]] — 集成学习 (Ensemble Learning) - 完全指南 (共享: machine-learning, ml, supervised, unsupervised)
+- [[02_Machine_Learning/Feature_Engineering/Feature_Engineering_for_dummy]] — 特征工程 - 小白版 (共享: machine-learning, ml, supervised, unsupervised)
+- [[02_Machine_Learning/ML-in-nutshell]] — 机器学习速成指南 (共享: machine-learning, ml, supervised, unsupervised)
+- [[02_Machine_Learning/README]] — 02 经典机器学习 (Classical Machine Learning) (共享: machine-learning, ml, supervised, unsupervised)

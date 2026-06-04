@@ -1,3 +1,12 @@
+---
+title: 云运维/DevOps Agent 专项测评
+category: 13-agent-production-16-agent-evaluation-cloud-agent-evaluation
+tags: ["ai-agents", "agent-framework", "production", "langgraph"]
+summary: "> 专注于云基础设施运维场景的 Agent 能力评估，覆盖故障排查、自动化部署、监控告警、安全合规等核心运维能力"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 云运维/DevOps Agent 专项测评
 
 > 专注于云基础设施运维场景的 Agent 能力评估，覆盖故障排查、自动化部署、监控告警、安全合规等核心运维能力
@@ -275,3 +284,10 @@ Case 27: 性能基准测试
 | 版本 | 日期 | 变更 |
 |------|------|------|
 | 1.0.0 | 2026-04 | 初始版本，100 题运维场景测试库 |
+
+## Related
+
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)

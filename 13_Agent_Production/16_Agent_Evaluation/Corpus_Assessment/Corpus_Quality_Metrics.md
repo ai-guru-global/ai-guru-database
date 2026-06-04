@@ -1,3 +1,12 @@
+---
+title: 语料库质量指标体系
+category: 13-agent-production-16-agent-evaluation-corpus-assessment
+tags: ["ai-agents", "agent-framework", "production", "langgraph"]
+summary: "> 量化评估语料库质量的完整指标体系，从准确性、完整性、一致性、时效性四个角度全面衡量"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 语料库质量指标体系
 
 > 量化评估语料库质量的完整指标体系，从准确性、完整性、一致性、时效性四个角度全面衡量
@@ -416,3 +425,11 @@ Agent 回答的信息是否可被验证
 - [语料库覆盖度框架](./Corpus_Coverage_Framework.md) - 覆盖度评估方法论
 - [语料库改进指南](./Corpus_Improvement_Guide.md) - 基于评估结果的改进方法
 - [云产品 Agent 测评框架](../Cloud_Agent_Evaluation/Cloud_Agent_Benchmark_2026.md) - 整体测评框架
+
+## Related
+
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/README.md|README]]

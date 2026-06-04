@@ -1,3 +1,12 @@
+---
+title: 云产品运维 Agent 产品管理指南 (Product Management)
+category: 18-cloud-ops-agent-docs-product
+tags: ["cloud-ops", "devops", "sre", "automation", "ai-agents"]
+summary: "> 🎯 **目标**: 为产品经理提供 Cloud Ops Agent 的产品规划、需求管理、成功指标定义、Roadmap 制定、用户研究的产品视角完整指南，确保产品方向与业务价值对齐。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 云产品运维 Agent 产品管理指南 (Product Management)
 
 > 🎯 **目标**: 为产品经理提供 Cloud Ops Agent 的产品规划、需求管理、成功指标定义、Roadmap 制定、用户研究的产品视角完整指南，确保产品方向与业务价值对齐。
@@ -753,3 +762,10 @@ pricing:
 *最后更新: 2026-04-15*
 *版本: 1.0.0*
 *维护者: 产品管理团队*
+
+## Related
+
+- [[18_Cloud_Ops_Agent/CloudOps-in-nutshell]] — 云产品运维 Agent 速成指南 (共享: ai-agents, automation, cloud-ops, devops, sre)
+- [[18_Cloud_Ops_Agent/Cloud_Product_Ops_for_dummy]] — 云产品运维 Agent 入门指南 (for Dummies) (共享: ai-agents, automation, cloud-ops, devops, sre)
+- [[18_Cloud_Ops_Agent/docs/architecture/index]] — 云产品运维 Agent 架构设计指南 (Architecture) (共享: ai-agents, automation, cloud-ops, devops, sre)
+- [[18_Cloud_Ops_Agent/docs/corpus/index]] — 云产品运维 Agent 语料工程指南 (Corpus Engineering) (共享: ai-agents, automation, cloud-ops, devops, sre)

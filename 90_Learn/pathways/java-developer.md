@@ -1,3 +1,12 @@
+---
+title: Java 开发者 AI 路径
+category: 90-learn-pathways
+tags: ["learning", "education", "courses", "study-path", "java"]
+summary: "> **面向：有 Java/Spring 经验、想转型或扩展到 AI 应用开发的后端工程师 | 前置要求：Java 17+、Spring Boot 基础 | 预计时间：50-70 小时**"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # Java 开发者 AI 路径
 
 > **面向：有 Java/Spring 经验、想转型或扩展到 AI 应用开发的后端工程师 | 前置要求：Java 17+、Spring Boot 基础 | 预计时间：50-70 小时**
@@ -772,3 +781,10 @@ Level 3: 新功能开发
 ---
 
 *Last updated: 2026-04*
+
+## Related
+
+- [[90_Learn/milestones]] — 里程碑自测 (共享: courses, education, learning, study-path)
+- [[90_Learn/pathways/absolute-beginner]] — 零基础通识路径 (共享: courses, education, learning, study-path)
+- [[90_Learn/pathways/ai-researcher]] — AI 研究者路径 (共享: courses, education, learning, study-path)
+- [[90_Learn/pathways/llm-engineer]] — LLM 工程师路径 (共享: courses, education, learning, study-path)

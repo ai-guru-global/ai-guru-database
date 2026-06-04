@@ -1,3 +1,12 @@
+---
+title: '92 Plan — 小白版 📋'
+category: '92-plan'
+tags: ["planning", "roadmap", "strategy", "goals"]
+summary: '> **一句话秒懂**: 这一章是 AI Guru 知识库的"项目指挥部"——记录项目的规划、评估报告和发展路线图，让你知道项目现在处于什么状态，接下来要做什么。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # 92 Plan — 小白版 📋
 
 > **一句话秒懂**: 这一章是 AI Guru 知识库的"项目指挥部"——记录项目的规划、评估报告和发展路线图，让你知道项目现在处于什么状态，接下来要做什么。
@@ -120,3 +129,11 @@ Q4-P2 (已完成 ✅)
 ---
 
 *本文是 [README.md](./README.md) 的简化版，适合零基础读者。*
+
+## Related
+
+- [[92_Plan/Content_Evaluation_2026.md|Content_Evaluation_2026]]
+- [[92_Plan/Implementation_Plan_2026.md|Implementation_Plan_2026]]
+- [[92_Plan/Project_Comprehensive_Evaluation_2026.md|Project_Comprehensive_Evaluation_2026]]
+- [[92_Plan/Project_Structure_Evaluation_2026.md|Project_Structure_Evaluation_2026]]
+- [[synthesis/agents-reinforcement-learning.md|agents-reinforcement-learning]]

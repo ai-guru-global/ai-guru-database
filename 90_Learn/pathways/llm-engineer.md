@@ -1,3 +1,12 @@
+---
+title: LLM 工程师路径
+category: 90-learn-pathways
+tags: ["learning", "education", "courses", "study-path", "llm"]
+summary: "> **面向：想专注大模型应用与 Agent 开发的工程师 | 前置要求：Python + 基础 ML | 预计时间：40-60 小时**"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # LLM 工程师路径
 
 > **面向：想专注大模型应用与 Agent 开发的工程师 | 前置要求：Python + 基础 ML | 预计时间：40-60 小时**
@@ -264,3 +273,10 @@ Agent 框架选择：
 ---
 
 *本路径聚焦 LLM 应用开发。如需深入模型训练或预训练，建议先完成 [ML 从业者路径](./ml-practitioner.md) 的 Phase 1-3。*
+
+## Related
+
+- [[90_Learn/milestones]] — 里程碑自测 (共享: courses, education, learning, study-path)
+- [[90_Learn/pathways/absolute-beginner]] — 零基础通识路径 (共享: courses, education, learning, study-path)
+- [[90_Learn/pathways/ai-researcher]] — AI 研究者路径 (共享: courses, education, learning, study-path)
+- [[90_Learn/pathways/java-developer]] — Java 开发者 AI 路径 (共享: courses, education, learning, study-path)

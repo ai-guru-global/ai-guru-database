@@ -1,3 +1,12 @@
+---
+title: AI 网关速成指南
+category: 14-ai-gateway
+tags: ["ai-gateway", "api-management", "routing", "litellm"]
+summary: "> 🎯 **目标**：理解 AI Gateway 的核心概念、架构和关键功能。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # AI 网关速成指南
 
 > 🎯 **目标**：理解 AI Gateway 的核心概念、架构和关键功能。
@@ -163,3 +172,10 @@ response = client.chat.completions.create(
 ---
 
 *Last updated: 2026-04-11*
+
+## Related
+
+- [[14_AI_Gateway/AI_Gateway_for_dummy]] — AI Gateway 入门指南 (for Dummies) (共享: ai-gateway, api-management, litellm, routing)
+- [[14_AI_Gateway/Kong_AI_Gateway_Deep_Dive]] — Kong AI Gateway 深度解析 (共享: ai-gateway, api-management, litellm, routing)
+- [[14_AI_Gateway/README]] — AI Gateway (共享: ai-gateway, api-management, litellm, routing)
+- [[14_AI_Gateway/Spring_AI_Gateway_Security]] — Spring AI 网关与安全 (共享: ai-gateway, api-management, litellm, routing)

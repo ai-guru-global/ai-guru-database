@@ -1,3 +1,12 @@
+---
+title: "TensorRT-LLM: NVIDIA 生产级 LLM 推理"
+category: "09-deployment-inference"
+tags: ["deployment", "inference", "serving", "vllm", "llm"]
+summary: "> **一句话理解**: TensorRT-LLM 是 NVIDIA 的高性能 LLM 推理库——TensorRT 加速 + 定制 kernel，单请求延迟最低，H100 推理性能标杆。"
+created: "2026-05-31"
+updated: "2026-05-31"
+---
+
 # TensorRT-LLM: NVIDIA 生产级 LLM 推理
 
 > **一句话理解**: TensorRT-LLM 是 NVIDIA 的高性能 LLM 推理库——TensorRT 加速 + 定制 kernel，单请求延迟最低，H100 推理性能标杆。
@@ -391,3 +400,11 @@ python3 -m tensorrt_llm.commands.build \
 
 *Last updated: 2026-04-26*
 *Version: 1.0.0*
+
+## Related
+
+- [[09_Deployment_Inference/Deployment_Inference.md|Deployment_Inference]]
+- [[09_Deployment_Inference/Deployment_Inference_2026.md|Deployment_Inference_2026]]
+- [[09_Deployment_Inference/Deployment_Inference_for_dummy.md|Deployment_Inference_for_dummy]]
+- [[09_Deployment_Inference/Inference-in-nutshell.md|Inference-in-nutshell]]
+- [[09_Deployment_Inference/JVM_AI_Deployment.md|JVM_AI_Deployment]]

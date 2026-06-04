@@ -1,3 +1,12 @@
+---
+title: "Gradio: 机器学习 Demo 框架"
+category: "13-agent-production"
+tags: ["ai-agents", "agent-framework", "production", "langgraph"]
+summary: "> **一句话理解**: Gradio 是机器学习 Demo 框架——几行代码构建 Web 界面、输入输出组件丰富、分享链接即用，ML 模型的交互界面神器。"
+created: "2026-05-31"
+updated: "2026-05-31"
+---
+
 # Gradio: 机器学习 Demo 框架
 
 > **一句话理解**: Gradio 是机器学习 Demo 框架——几行代码构建 Web 界面、输入输出组件丰富、分享链接即用，ML 模型的交互界面神器。
@@ -205,7 +214,7 @@ with gr.Blocks() as demo:
 
     # 示例
     gr.Examples(
-        examples=[["你好，请介绍一下自己"]],
+        examples=`[ ["你好，请介绍一下自己"] ]`,
         inputs=input_text
     )
 
@@ -329,3 +338,11 @@ with demo:
 
 *Last updated: 2026-04-26*
 *Version: 1.0.0*
+
+## Related
+
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026.md|Agent_Harness_Complete_2026]]
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026.md|Agent_Red_Teaming_2026]]
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow.md|Evaluation_Workflow]]
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment.md|Production_Assessment]]
+- [[13_Agent_Production/16_Agent_Evaluation/Benchmarking/Benchmarking_Criteria.md|Benchmarking_Criteria]]

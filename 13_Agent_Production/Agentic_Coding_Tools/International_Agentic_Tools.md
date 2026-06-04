@@ -1,3 +1,12 @@
+---
+title: 国际顶级 Agentic Coding 工具
+category: 13-agent-production-agentic-coding-tools
+tags: ["ai-agents", "agent-framework", "production", "langgraph"]
+summary: "> **一句话理解**: 除了 Claude Code 和 Cursor，国际上还有 Aider、Continue、CodeRabbit、Cody 等众多优秀的开源 Agentic Coding 工具，它们各有特色——Aider 以终端为中心、Continue 以 VS Code 扩展见长、CodeRabbit 专注代码审查、Cody 来自 Sourcegr"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 国际顶级 Agentic Coding 工具
 
 > **一句话理解**: 除了 Claude Code 和 Cursor，国际上还有 Aider、Continue、CodeRabbit、Cody 等众多优秀的开源 Agentic Coding 工具，它们各有特色——Aider 以终端为中心、Continue 以 VS Code 扩展见长、CodeRabbit 专注代码审查、Cody 来自 Sourcegraph。
@@ -478,3 +487,10 @@ IDE 扩展 ───────────────────────
 - [Codeium 官网](https://codeium.com)
 - [Claude Code](./Claude_Code_Deep_Dive.md)
 - [Windsurf/Cursor/Devin](./Windsurf_Cursor_Devin_Dive.md)
+
+## Related
+
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)

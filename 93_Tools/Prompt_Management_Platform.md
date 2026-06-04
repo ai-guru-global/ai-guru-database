@@ -1,3 +1,12 @@
+---
+title: 'Prompt 管理平台'
+category: '93-tools'
+tags: ["tools", "software", "utilities", "productivity"]
+summary: '> **一句话秒懂**: Prompt 管理平台就是 AI 应用界的"Git + CI/CD"，让团队能够版本控制、测试、评估和迭代提示词。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # Prompt 管理平台
 
 > **一句话秒懂**: Prompt 管理平台就是 AI 应用界的"Git + CI/CD"，让团队能够版本控制、测试、评估和迭代提示词。
@@ -1177,3 +1186,10 @@ async def rollback_prompt(name: str, version: int):
 - [部署推理 2026](../09_Deployment_Inference/Deployment_Inference_2026.md) - 生产部署最佳实践
 - [Langfuse 官方文档](https://langfuse.com/docs)
 - [Promptfoo 官方文档](https://promptfoo.dev/docs)
+
+## Related
+
+- [[93_Tools/DOCUMENT_TEMPLATES.md|DOCUMENT_TEMPLATES]]
+- [[93_Tools/IMPORT_GUIDE.md|IMPORT_GUIDE]]
+- [[93_Tools/README.md|93_Tools README]]
+- [[00_AI_Introduction/AI_Tools_Practical_Guide.md|AI_Tools_Practical_Guide]]

@@ -1,3 +1,12 @@
+---
+title: Evaluation Metrics
+category: 13-agent-production-16-agent-evaluation-metrics
+tags: ["ai-agents", "agent-framework", "production", "langgraph", "model-evaluation"]
+summary: "> Comprehensive catalog of metrics for AI agent evaluation"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # Evaluation Metrics
 
 > Comprehensive catalog of metrics for AI agent evaluation
@@ -911,3 +920,11 @@ corpus_metrics:
 - [Cloud Agent Evaluation](../Cloud_Agent_Evaluation/README.md) - 云产品Agent评估框架
 - [Corpus Quality Metrics](../Corpus_Assessment/Corpus_Quality_Metrics.md) - 语料质量指标
 - [Cloud Agent Leaderboard](../Cloud_Agent_Leaderboard_2026.md) - 2026排行榜
+- [[13_Agent_Production/16_Agent_Evaluation/Cloud_Agent_Evaluation/Domestic_Cloud_Agents.md|Domestic_Cloud_Agents]]
+
+## Related
+
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
+- [[13_Agent_Production/16_Agent_Evaluation/Cloud_Agent_Evaluation/README]] — Cloud Agent Evaluation (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
+- [[13_Agent_Production/16_Agent_Evaluation/Cloud_Agent_Evaluation_System_2026]] — Cloud Agent Evaluation System 2026 (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
+- [[13_Agent_Production/16_Agent_Evaluation/Multi_Agent_Evaluation_2026]] — Multi-Agent System Evaluation Framework 2026 (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)

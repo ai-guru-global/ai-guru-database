@@ -1,3 +1,12 @@
+---
+title: 深度学习速成指南
+category: 03-deep-learning
+tags: ["deep-learning", "neural-networks", "backpropagation"]
+summary: "> **一句话理解**: 深度学习就是用多层神经网络自动从数据中逐层提取特征，最终完成复杂任务——本质是大规模参数优化问题。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 深度学习速成指南
 
 > **一句话理解**: 深度学习就是用多层神经网络自动从数据中逐层提取特征，最终完成复杂任务——本质是大规模参数优化问题。
@@ -419,3 +428,10 @@ flowchart TB
 ---
 
 *Last updated: 2026-05-07*
+
+## Related
+
+- [[03_Deep_Learning/README]] — 03 深度学习基础 (Deep Learning Foundations) (共享: backpropagation, deep-learning, dl, neural-networks)
+- [[03_Deep_Learning/World_Models/JEPA_Architecture_2026]] — JEPA 架构深度解析：LeCun 的世界模型之路 (共享: backpropagation, deep-learning, dl, neural-networks)
+- [[03_Deep_Learning/World_Models/README]] — 世界模型 (World Models) (共享: backpropagation, deep-learning, dl, neural-networks)
+- [[03_Deep_Learning/State_Space_Models_2026.md|State_Space_Models_2026]]

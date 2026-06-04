@@ -1,3 +1,12 @@
+---
+title: '在线评估 (Online Evaluation)'
+category: '08-model-evaluation'
+tags: ["model-evaluation", "metrics", "ab-testing", "benchmark"]
+summary: '> **一句话理解**: 在线评估就像"实战演习"——再完美的模拟考也无法替代真实战场，只有让模型真正面对用户、在真实流量中检验，才能知道它到底行不行。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # 在线评估 (Online Evaluation)
 
 > **一句话理解**: 在线评估就像"实战演习"——再完美的模拟考也无法替代真实战场，只有让模型真正面对用户、在真实流量中检验，才能知道它到底行不行。
@@ -543,8 +552,8 @@ def render_canary_dashboard():
         "canary_latency": np.random.normal(145, 12, 60),
     })
     
-    st.line_chart(chart_data.set_index("time")[["baseline_error", "canary_error"]])
-    st.line_chart(chart_data.set_index("time")[["baseline_latency", "canary_latency"]])
+    st.line_chart(chart_data.set_index("time")``[ ["baseline_error", "canary_error"] ]``)
+    st.line_chart(chart_data.set_index("time")``[ ["baseline_latency", "canary_latency"] ]``)
     
     # 自动决策建议
     st.subheader("自动决策")
@@ -1317,3 +1326,13 @@ if __name__ == "__main__":
 ---
 
 *Last updated: 2026-05-07*
+
+## Related
+
+- [[08_Model_Evaluation/Model_Evaluation.md|Model_Evaluation]]
+- [[08_Model_Evaluation/README.md|08_Model_Evaluation README]]
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow.md|Evaluation_Workflow]]
+- [[13_Agent_Production/16_Agent_Evaluation/Cloud_Agent_Evaluation/README.md|Cloud_Agent_Evaluation README]]
+- [[13_Agent_Production/16_Agent_Evaluation/Cloud_Agent_Evaluation_System_2026.md|Cloud_Agent_Evaluation_System_2026]]
+
+- [[synthesis/benchmark-evaluation|评测基准 × 评测方法论：从分数到可信评估]]

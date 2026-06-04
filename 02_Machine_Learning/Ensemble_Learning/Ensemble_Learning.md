@@ -1,3 +1,12 @@
+---
+title: 集成学习 (Ensemble Learning) - 完全指南
+category: 02-machine-learning-ensemble-learning
+tags: ["machine-learning", "supervised", "unsupervised"]
+summary: "[1. 集成学习概述](#1-集成学习概述)"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 集成学习 (Ensemble Learning) - 完全指南
 
 ## 目录
@@ -1192,3 +1201,10 @@ print(f"Stacking Regressor: RMSE={rmse:.2f}, R²={r2:.4f}")
 | **Voting** | 快速集成 | 简单有效 | 提升有限 |
 
 > **经验法则**：从 Random Forest 基线开始，然后尝试 LightGBM/XGBoost 调优，需要更高精度时再考虑 Stacking。
+
+## Related
+
+- [[02_Machine_Learning/Feature_Engineering/Feature_Engineering]] — 特征工程 (Feature Engineering) (共享: machine-learning, ml, supervised, unsupervised)
+- [[02_Machine_Learning/Feature_Engineering/Feature_Engineering_for_dummy]] — 特征工程 - 小白版 (共享: machine-learning, ml, supervised, unsupervised)
+- [[02_Machine_Learning/ML-in-nutshell]] — 机器学习速成指南 (共享: machine-learning, ml, supervised, unsupervised)
+- [[02_Machine_Learning/README]] — 02 经典机器学习 (Classical Machine Learning) (共享: machine-learning, ml, supervised, unsupervised)

@@ -1,3 +1,12 @@
+---
+title: Agent Skills 文档索引
+category: 13-agent-production-agent-skills
+tags: ["ai-agents", "agent-framework", "production", "langgraph"]
+summary: "> 本文件夹收录 Agent Skills 开放标准的完整知识体系，覆盖从入门到生产、从个人到团队的全部场景。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # Agent Skills 文档索引
 
 > 本文件夹收录 Agent Skills 开放标准的完整知识体系，覆盖从入门到生产、从个人到团队的全部场景。
@@ -106,3 +115,19 @@ Agent_Skills_Ecosystem_Catalog.md → 按领域或团队查找
 ---
 
 > 📅 **最后更新**：2026-05-07
+
+## Related
+- [[13_Agent_Production/Agent_Skills/Agent_Skills_Multi_Role_Analysis|Agent Skills 多角色全景分析]]
+- [[13_Agent_Production/Agent_Skills/README|Agent Skills 文档索引]]
+- [[13_Agent_Production/Agent_Skills/Skill_Versioning_Guide|Skill 版本管理与团队治理]]
+- [[13_Agent_Production/Agent_Skills/Skills-in-nutshell|Agent Skills 书写速览]]
+- [[13_Agent_Production/Agent_Skills/Agent_Skills_Ecosystem_Catalog|Agent Skills 生态目录]]
+- [[13_Agent_Production/Agent_Skills/Agent_Skills_Deep_Dive|Agent Skills 深度解析]]
+- [[13_Agent_Production/Agent_Skills/Spring_AI_Skills_Integration|Spring AI 与 Agent Skills 集成]]
+- [[13_Agent_Production/Agent_Skills/Agent_Skills_Practical_Guide|Agent Skills 实战指南]]
+
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)
+

@@ -1,3 +1,12 @@
+---
+title: BERT 深度解读 (Bidirectional Encoder Representations from Transformers)
+category: 22-papers
+tags: ["nlp", "bert", "transformer", "google"]
+summary: "BERT 就像一个能\"左右开弓\"的阅读天才——它同时看到句子的前后文来理解每个词的含义，通过\"完形填空\"和\"句子接龙\"两个自监督任务学会语言规律，彻底改变了 NLP 的游戏规则。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # BERT 深度解读 (Bidirectional Encoder Representations from Transformers)
 
 > **一句话理解**: BERT 就像一个能"左右开弓"的阅读天才——它同时看到句子的前后文来理解每个词的含义，通过"完形填空"和"句子接龙"两个自监督任务学会语言规律，彻底改变了 NLP 的游戏规则。
@@ -843,3 +852,10 @@ flowchart TB
 ---
 
 *Last updated: 2026-05-17*
+
+## Related
+
+- [[04_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/README]] — PEFT 2026 (参数高效微调) (共享: bert, nlp, transformer)
+- [[04_NLP_LLMs/Fine_tuning_Techniques/README]] — 微调技术 (Fine-tuning Techniques) (共享: bert, nlp, transformer)
+- [[04_NLP_LLMs/LLM_Architectures/LLM-Basics-in-nutshell]] — 大语言模型基础速成指南 (共享: bert, nlp, transformer)
+- [[04_NLP_LLMs/Multimodal_Models/Multimodal_Architectures_2026]] — 多模态模型架构 2026：从 GPT-4V 到原生多模态 AGI (共享: bert, nlp, transformer)

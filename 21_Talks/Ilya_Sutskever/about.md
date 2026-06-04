@@ -1,3 +1,12 @@
+---
+title: Ilya Sutskever 简介 (Ilya Sutskever)
+category: 21-talks-ilya-sutskever
+tags: ["talks", "speeches", "insights", "leaders"]
+summary: "**身份**: OpenAI 联合创始人兼前首席科学家；深度学习顶尖研究者。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # Ilya Sutskever 简介 (Ilya Sutskever)
 
 - **身份**: OpenAI 联合创始人兼前首席科学家；深度学习顶尖研究者。
@@ -18,3 +27,10 @@
 - [AI 未来趋势](../../00_AI_Introduction/AI_Future_Trends.md) — 行业前瞻判断汇总
 
 *Last updated: 2026-05-07*
+
+## Related
+
+- [[21_Talks/Andrej_Karpathy/about]] — Andrej Karpathy 简介 (Andrej Karpathy) (共享: insights, leaders, speeches, talks)
+- [[21_Talks/Andrew_Ng/about]] — Andrew Ng 简介 (Andrew Ng) (共享: insights, leaders, speeches, talks)
+- [[21_Talks/Andrew_Ng/sayings]] — Andrew Ng 关于 AI 的观点与格言 (共享: insights, leaders, speeches, talks)
+- [[21_Talks/Bill_Gates/about]] — Bill Gates 简介 (Bill Gates) (共享: insights, leaders, speeches, talks)

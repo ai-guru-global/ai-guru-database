@@ -1,3 +1,12 @@
+---
+title: LLM-as-Judge 评估提示词模板
+category: 13-agent-production-16-agent-evaluation-implementation
+tags: ["ai-agents", "agent-framework", "production", "langgraph", "llm"]
+summary: "> 用于自动化 Agent 回答质量评估的标准提示词模板"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # LLM-as-Judge 评估提示词模板
 
 > 用于自动化 Agent 回答质量评估的标准提示词模板
@@ -397,3 +406,11 @@
 | 版本 | 日期 | 变更 |
 |------|------|------|
 | 1.0.0 | 2026-04 | 初始版本，6 个评估模板 |
+
+## Related
+
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/Agent_Frameworks/LangChain_Deep_Dive.md|LangChain_Deep_Dive]]

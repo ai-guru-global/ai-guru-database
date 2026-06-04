@@ -1,3 +1,12 @@
+---
+title: AI学习资源与方法论
+category: 00-ai-introduction
+tags: ["ai", "learning", "resources", "education"]
+summary: "在AI知识爆炸的时代，知道学什么、怎么学、去哪里学，比单纯积累知识更重要——这套方法论将帮助你建立高效的AI学习体系。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # AI学习资源与方法论
 
 > **一句话理解**: 在AI知识爆炸的时代，知道学什么、怎么学、去哪里学，比单纯积累知识更重要——这套方法论将帮助你建立高效的AI学习体系。
@@ -955,3 +964,10 @@ AI领域职业路径:
 ---
 
 *Last updated: 2026-04-01* (通识课教材版)
+
+## Related
+
+- [[90_Learn/milestones]] — 里程碑自测 (共享: education, learning)
+- [[90_Learn/pathways/absolute-beginner]] — 零基础通识路径 (共享: education, learning)
+- [[90_Learn/pathways/ai-researcher]] — AI 研究者路径 (共享: education, learning)
+- [[90_Learn/pathways/java-developer]] — Java 开发者 AI 路径 (共享: education, learning)

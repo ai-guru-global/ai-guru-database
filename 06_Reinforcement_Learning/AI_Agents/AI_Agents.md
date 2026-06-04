@@ -1,3 +1,12 @@
+---
+title: 'AI 智能体 (AI Agents)'
+category: '06-reinforcement-learning-ai-agents'
+tags: ["reinforcement-learning", "agent", "mdp", "ai-agents"]
+summary: '> **一句话理解**: AI智能体就像一个有自主判断能力的"AI员工"——能理解任务、制定计划、调用工具、自我反思，并持续执行直到完成目标，而不需要人类一步步指挥。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # AI 智能体 (AI Agents)
 > **一句话理解**: AI智能体就像一个有自主判断能力的"AI员工"——能理解任务、制定计划、调用工具、自我反思，并持续执行直到完成目标，而不需要人类一步步指挥。
 
@@ -2122,17 +2131,17 @@ def no_progress_detector(state_history):
 ### 10.1 核心论文
 
 **Agent架构**:
-- **ReAct**: Yao et al. (2023). ReAct: Synergizing Reasoning and Acting in Language Models. [[arxiv]](https://arxiv.org/abs/2210.03629)
-- **Reflexion**: Shinn et al. (2023). Reflexion: Language Agents with Verbal Reinforcement Learning. [[arxiv]](https://arxiv.org/abs/2303.11366)
-- **Generative Agents**: Park et al. (2023). Generative Agents: Interactive Simulacra of Human Behavior. [[arxiv]](https://arxiv.org/abs/2304.03442)
+- **ReAct**: Yao et al. (2023). ReAct: Synergizing Reasoning and Acting in Language Models. `[[arxiv]]`(https://arxiv.org/abs/2210.03629)
+- **Reflexion**: Shinn et al. (2023). Reflexion: Language Agents with Verbal Reinforcement Learning. `[[arxiv]]`(https://arxiv.org/abs/2303.11366)
+- **Generative Agents**: Park et al. (2023). Generative Agents: Interactive Simulacra of Human Behavior. `[[arxiv]]`(https://arxiv.org/abs/2304.03442)
 
 **工具使用**:
-- **Toolformer**: Schick et al. (2023). Toolformer: Language Models Can Teach Themselves to Use Tools. [[arxiv]](https://arxiv.org/abs/2302.04761)
-- **ToolLLM**: Qin et al. (2023). ToolLLM: Facilitating Large Language Models to Master 16000+ Real-world APIs. [[arxiv]](https://arxiv.org/abs/2307.16789)
+- **Toolformer**: Schick et al. (2023). Toolformer: Language Models Can Teach Themselves to Use Tools. `[[arxiv]]`(https://arxiv.org/abs/2302.04761)
+- **ToolLLM**: Qin et al. (2023). ToolLLM: Facilitating Large Language Models to Master 16000+ Real-world APIs. `[[arxiv]]`(https://arxiv.org/abs/2307.16789)
 
 **多智能体**:
-- **AutoGen**: Wu et al. (2023). AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation. [[arxiv]](https://arxiv.org/abs/2308.08155)
-- **ChatDev**: Qian et al. (2023). Communicative Agents for Software Development. [[arxiv]](https://arxiv.org/abs/2307.07924)
+- **AutoGen**: Wu et al. (2023). AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation. `[[arxiv]]`(https://arxiv.org/abs/2308.08155)
+- **ChatDev**: Qian et al. (2023). Communicative Agents for Software Development. `[[arxiv]]`(https://arxiv.org/abs/2307.07924)
 
 ### 10.2 综述与博客
 - **Lilian Weng的Agent博客**: [LLM Powered Autonomous Agents](https://lilianweng.github.io/posts/2023-06-23-agent/) —— 最全面的Agent综述
@@ -2174,3 +2183,7 @@ def no_progress_detector(state_history):
 
 ---
 *Last updated: 2026-02-10*
+
+## Related
+
+- [[18_Cloud_Ops_Agent/docs/operations/index.md|index]]

@@ -1,3 +1,12 @@
+---
+title: 'MLOps 流水线 - 小白版'
+category: '10-mlops-pipeline'
+tags: ["mlops", "ci-cd", "pipeline", "feature-store"]
+summary: '> **一句话秒懂**: 就像汽车生产流水线,MLOps 是 AI 的"全自动工厂"——从训练、测试、部署到监控,全程自动化!'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # MLOps 流水线 - 小白版
 
 > **一句话秒懂**: 就像汽车生产流水线,MLOps 是 AI 的"全自动工厂"——从训练、测试、部署到监控,全程自动化!
@@ -568,3 +577,9 @@ jobs:
 ---
 
 *本文是 MLOps_Pipeline.md 的简化版,适合零基础读者。完整技术架构和工具对比请参考项目文档。*
+
+## Related
+
+- [[10_MLOps_Pipeline/Data_Pipeline_Orchestration.md|Data_Pipeline_Orchestration]]
+- [[10_MLOps_Pipeline/MLOps-in-nutshell.md|MLOps-in-nutshell]]
+- [[concepts/mlops.md|mlops]]

@@ -1,3 +1,12 @@
+---
+title: "Qdrant: 高性能向量数据库"
+category: "11-rag-systems"
+tags: ["rag", "retrieval", "vector-database", "embedding"]
+summary: "> **一句话理解**: Qdrant 是一个用 Rust 编写的高性能向量数据库——亚毫秒级查询速度，支持混合搜索和过滤，专为生产环境设计。"
+created: "2026-05-31"
+updated: "2026-05-31"
+---
+
 # Qdrant: 高性能向量数据库
 
 > **一句话理解**: Qdrant 是一个用 Rust 编写的高性能向量数据库——亚毫秒级查询速度，支持混合搜索和过滤，专为生产环境设计。
@@ -375,3 +384,11 @@ client.upsert(
 
 *Last updated: 2026-04-25*
 *Version: 1.0.0*
+
+## Related
+
+- [[11_RAG_Systems/RAG-in-nutshell.md|RAG-in-nutshell]]
+- [[11_RAG_Systems/RAG_Systems.md|RAG_Systems]]
+- [[11_RAG_Systems/README_Advanced.md|README_Advanced]]
+- [[11_RAG_Systems/Spring_AI_RAG_Deep_Dive.md|Spring_AI_RAG_Deep_Dive]]
+- [[synthesis/rag-vector-database.md|rag-vector-database]]

@@ -1,3 +1,12 @@
+---
+title: '提示词工程 (Prompt Engineering)'
+category: '04-nlp-llms-prompt-engineering'
+tags: ["nlp", "llm", "transformer", "gpt", "bert"]
+summary: '> **一句话理解**: 提示词工程就像和一个超级聪明但需要精确指令的助手沟通——你表达得越清楚、给的例子越好，它的回答就越准确。Prompt 是人类与大模型之间的"编程语言"。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # 提示词工程 (Prompt Engineering)
 
 > **一句话理解**: 提示词工程就像和一个超级聪明但需要精确指令的助手沟通——你表达得越清楚、给的例子越好，它的回答就越准确。Prompt 是人类与大模型之间的"编程语言"。
@@ -417,3 +426,7 @@ final_prompt = ChatPromptTemplate.from_messages([
 
 ---
 *Last updated: 2026-04-11*
+
+## Related
+
+- [[04_NLP_LLMs/Prompt_Engineering/DSPy_Deep_Dive.md|DSPy_Deep_Dive]]

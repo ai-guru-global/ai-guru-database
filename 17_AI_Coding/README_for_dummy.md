@@ -1,3 +1,12 @@
+---
+title: '17 AI 编程 — 小白版 💻'
+category: '17-ai-coding'
+tags: ["ai-coding", "code-generation", "cursor", "github-copilot"]
+summary: '> **一句话秒懂**: AI 编程就是让 AI 当你的"编程助手"——帮你写代码、Debug、做 Code Review，让你的开发效率提升 10 倍！'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # 17 AI 编程 — 小白版 💻
 
 > **一句话秒懂**: AI 编程就是让 AI 当你的"编程助手"——帮你写代码、Debug、做 Code Review，让你的开发效率提升 10 倍！
@@ -150,3 +159,11 @@ AI 生成完整代码，你来审核和调整
 ---
 
 *本文是 [README.md](./README.md) 的简化版，适合零基础读者。*
+
+## Related
+
+- [[17_AI_Coding/01_Theory/AI_Coding_Theory.md|AI_Coding_Theory]]
+- [[17_AI_Coding/02_Tools/AI_Coding_Assistants_2026.md|AI_Coding_Assistants_2026]]
+- [[17_AI_Coding/02_Tools/CodeBuddy_Guide.md|CodeBuddy_Guide]]
+- [[17_AI_Coding/02_Tools/Comate_Guide.md|Comate_Guide]]
+- [[17_AI_Coding/02_Tools/Coze_Guide.md|Coze_Guide]]

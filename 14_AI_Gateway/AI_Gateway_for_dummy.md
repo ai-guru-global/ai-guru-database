@@ -1,3 +1,12 @@
+---
+title: AI Gateway 入门指南 (for Dummies)
+category: 14-ai-gateway
+tags: ["ai-gateway", "api-management", "routing", "litellm"]
+summary: "> 用最简单的语言解释什么是 AI Gateway，以及为什么你需要它。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # AI Gateway 入门指南 (for Dummies)
 
 > 用最简单的语言解释什么是 AI Gateway，以及为什么你需要它。
@@ -219,3 +228,10 @@ LLM 本身延迟: 1000-3000ms
 ---
 
 *Last updated: 2026-04-09*
+
+## Related
+
+- [[14_AI_Gateway/Gateway-in-nutshell]] — AI 网关速成指南 (共享: ai-gateway, api-management, litellm, routing)
+- [[14_AI_Gateway/Kong_AI_Gateway_Deep_Dive]] — Kong AI Gateway 深度解析 (共享: ai-gateway, api-management, litellm, routing)
+- [[14_AI_Gateway/README]] — AI Gateway (共享: ai-gateway, api-management, litellm, routing)
+- [[14_AI_Gateway/Spring_AI_Gateway_Security]] — Spring AI 网关与安全 (共享: ai-gateway, api-management, litellm, routing)

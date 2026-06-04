@@ -1,3 +1,12 @@
+---
+title: "Transformers Agents: HuggingFace Agent 框架"
+category: "13-agent-production-agent-frameworks"
+tags: ["ai-agents", "agent-framework", "production", "langgraph", "transformer"]
+summary: "> **一句话理解**: Transformers Agents 是 HuggingFace 的 Agent 开发框架——基于 Transformers 模型，支持多工具调用、代码生成、视觉理解，原生集成 HuggingFace 生态。"
+created: "2026-05-31"
+updated: "2026-05-31"
+---
+
 # Transformers Agents: HuggingFace Agent 框架
 
 > **一句话理解**: Transformers Agents 是 HuggingFace 的 Agent 开发框架——基于 Transformers 模型，支持多工具调用、代码生成、视觉理解，原生集成 HuggingFace 生态。
@@ -276,3 +285,11 @@ agent = Agent(tools=[WeatherTool()])
 
 *Last updated: 2026-04-26*
 *Version: 1.0.0*
+
+## Related
+
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026.md|Agent_Harness_Complete_2026]]
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026.md|Agent_Red_Teaming_2026]]
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow.md|Evaluation_Workflow]]
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment.md|Production_Assessment]]
+- [[13_Agent_Production/16_Agent_Evaluation/Benchmarking/Benchmarking_Criteria.md|Benchmarking_Criteria]]

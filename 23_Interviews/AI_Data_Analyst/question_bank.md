@@ -1,3 +1,12 @@
+---
+title: AI Data Analyst 题库
+category: 23-interviews-ai-data-analyst
+tags: ["interviews", "career", "experience", "practitioners"]
+summary: "解释 p-value 与置信区间的区别。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # AI Data Analyst 题库
 
 ## 基础
@@ -22,3 +31,11 @@
 
 ---
 *Last updated: 2026-02-26*
+
+## Related
+
+- [[23_Interviews/AI_Data_Analyst/company_level_question_bank]] — AI Data Analyst 按公司/级别区分的题库 (共享: career, experience, interviews, practitioners)
+- [[23_Interviews/AI_Data_Analyst/interview_answers]] — AI Data Analyst 面试题实例答案 (共享: career, experience, interviews, practitioners)
+- [[23_Interviews/AI_Data_Analyst/interview_preparing]] — AI Data Analyst 面试准备 (共享: career, experience, interviews, practitioners)
+- [[23_Interviews/AI_Evaluation_Engineer/company_level_question_bank]] — AI Evaluation Engineer 按公司/级别区分的题库 (共享: career, experience, interviews, practitioners)
+- [[23_Interviews/Interviews_for_dummy.md|Interviews_for_dummy]]

@@ -1,3 +1,12 @@
+---
+title: 评估执行指南
+category: 13-agent-production-16-agent-evaluation-docs-guides
+tags: ["ai-agents", "agent-framework", "production", "langgraph", "model-evaluation"]
+summary: "> 从配置到运行的完整操作手册"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 评估执行指南
 
 > 从配置到运行的完整操作手册
@@ -98,3 +107,10 @@ npm run dev
 - **性价比 (P)**: 响应速度和 Token 消耗效率
 - **交互质量 (E)**: 多轮对话的连贯性和中文能力
 - **安全合规 (R)**: 抵御注入攻击、避免信息泄露的能力
+
+## Related
+
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
+- [[13_Agent_Production/16_Agent_Evaluation/Cloud_Agent_Evaluation/README]] — Cloud Agent Evaluation (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
+- [[13_Agent_Production/16_Agent_Evaluation/Cloud_Agent_Evaluation_System_2026]] — Cloud Agent Evaluation System 2026 (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
+- [[13_Agent_Production/16_Agent_Evaluation/Metrics/Evaluation_Metrics]] — Evaluation Metrics (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)

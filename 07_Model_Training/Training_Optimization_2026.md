@@ -1,3 +1,12 @@
+---
+title: "训练优化技术 2026: 从显存到吞吐的全栈加速"
+category: "07-model-training"
+tags: ["model-training", "distributed-training", "optimization", "fsdp"]
+summary: "> **一句话理解**: 2026年的模型训练优化已从单一技巧进化为系统工程——FlashAttention削减O(n²)内存墙、梯度检查点用计算换空间、流水线并行打破单卡边界，十二种核心技术的组合策略让大模型训练速度提升3-10倍、显存节省50-90%。"
+created: "2026-05-31"
+updated: "2026-05-31"
+---
+
 # 训练优化技术 2026: 从显存到吞吐的全栈加速
 
 > **一句话理解**: 2026年的模型训练优化已从单一技巧进化为系统工程——FlashAttention削减O(n²)内存墙、梯度检查点用计算换空间、流水线并行打破单卡边界，十二种核心技术的组合策略让大模型训练速度提升3-10倍、显存节省50-90%。
@@ -963,3 +972,11 @@ return checkpoint(forward_fn, x, use_reentrant=False)
 ---
 
 *Last updated: 2026-05-07*
+
+## Related
+
+- [[07_Model_Training/Distributed_Training_2026.md|Distributed_Training_2026]]
+- [[07_Model_Training/Distributed_Training_for_dummy.md|Distributed_Training_for_dummy]]
+- [[07_Model_Training/Mixed_Precision_Training.md|Mixed_Precision_Training]]
+- [[07_Model_Training/Model-Training-in-nutshell.md|Model-Training-in-nutshell]]
+- [[07_Model_Training/Model_Training_for_dummy.md|Model_Training_for_dummy]]

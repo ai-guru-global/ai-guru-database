@@ -1,3 +1,12 @@
+---
+title: Mixture of Experts 深度解读 (从 Switch Transformers 到 Mixtral 和 DeepSeek)
+category: 22-papers
+tags: ["nlp", "moe", "llm", "sparse", "transformer"]
+summary: "MoE 就像一个\"超级医院\"——有几十个专科医生（专家），每个病人进来只看最相关的几个，既享受了全科室的智慧，又只花了看一两个医生的费用，让模型在保持推理成本可控的同时拥有超大参数容量。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # Mixture of Experts 深度解读 (从 Switch Transformers 到 Mixtral 和 DeepSeek)
 
 > **一句话理解**: MoE 就像一个"超级医院"——有几十个专科医生（专家），每个病人进来只看最相关的几个，既享受了全科室的智慧，又只花了看一两个医生的费用，让模型在保持推理成本可控的同时拥有超大参数容量。
@@ -849,3 +858,10 @@ if __name__ == "__main__":
 ---
 
 *Last updated: 2026-05-17*
+
+## Related
+
+- [[04_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/README]] — PEFT 2026 (参数高效微调) (共享: llm, nlp, transformer)
+- [[04_NLP_LLMs/Fine_tuning_Techniques/README]] — 微调技术 (Fine-tuning Techniques) (共享: llm, nlp, transformer)
+- [[04_NLP_LLMs/LLM_Architectures/LLM-Basics-in-nutshell]] — 大语言模型基础速成指南 (共享: llm, nlp, transformer)
+- [[04_NLP_LLMs/Multimodal_Models/Multimodal_Architectures_2026]] — 多模态模型架构 2026：从 GPT-4V 到原生多模态 AGI (共享: llm, nlp, transformer)

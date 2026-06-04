@@ -1,3 +1,12 @@
+---
+title: AI 概念知识图谱
+category: 91-notes
+tags: ["notes", "drafts", "ideas", "observations"]
+summary: "> AI 全链路概念之间的依赖关系与学习路径"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # AI 概念知识图谱
 
 > AI 全链路概念之间的依赖关系与学习路径
@@ -1508,3 +1517,9 @@ AI Safety Stack
 
 *Last updated: 2026-04-09*
 *新增第五节开源选型对比（向量数据库/推理引擎/Agent框架/Embedding模型/Agent协议/Coding Agent/微调框架），新增第六节专业领域深度图谱（AI Infrastructure完整技术栈、LLM完整生命周期、AI Agent完整架构、RAG系统完整架构、AI Safety完整技术栈），覆盖 8 类开源选型横向对比、15+ 选型决策树、100+ 技术点关联*
+
+## Related
+
+- [[91_Notes/AI_Full_Stack_Concepts]] — AI 全链路 Concept 清单 (共享: drafts, ideas, notes, observations)
+- [[91_Notes/KNOWLEDGE_BASE]] — 🧠 AI Guru Knowledge Base (共享: drafts, ideas, notes, observations)
+- [[91_Notes/README.md|README]]

@@ -1,3 +1,12 @@
+---
+title: '91 Notes — 小白版 📚'
+category: '91-notes'
+tags: ["notes", "drafts", "ideas", "observations"]
+summary: '> **一句话秒懂**: 这一章是 AI Guru 知识库的"底层数据库"——包含 AI 领域概念的完整知识图谱和术语字典，就像字典和百科全书的结合，帮助你理解所有专业术语之间的关系。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # 91 Notes — 小白版 📚
 
 > **一句话秒懂**: 这一章是 AI Guru 知识库的"底层数据库"——包含 AI 领域概念的完整知识图谱和术语字典，就像字典和百科全书的结合，帮助你理解所有专业术语之间的关系。
@@ -145,3 +154,9 @@ Stage 4: 前沿探索 ─── 多模态、世界模型、AGI
 ---
 
 *本文是 [README.md](./README.md) 的简化版，适合零基础读者。*
+
+## Related
+
+- [[91_Notes/AI_Concept_Knowledge_Graph.md|AI_Concept_Knowledge_Graph]]
+- [[91_Notes/AI_Full_Stack_Concepts.md|AI_Full_Stack_Concepts]]
+- [[91_Notes/KNOWLEDGE_BASE.md|KNOWLEDGE_BASE]]

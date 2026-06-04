@@ -1,3 +1,12 @@
+---
+title: 模型部署与推理加速 (Deployment & Inference)
+category: 09-deployment-inference
+tags: ["deployment", "inference", "serving", "vllm", "model-deployment"]
+summary: "> **一句话理解**: 就像把实验室里的发明变成能在工厂量产的产品，让AI模型从研究原型转变为高效稳定的生产服务。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 模型部署与推理加速 (Deployment & Inference)
 
 > **一句话理解**: 就像把实验室里的发明变成能在工厂量产的产品，让AI模型从研究原型转变为高效稳定的生产服务。
@@ -894,3 +903,12 @@ L = α × L_hard(y_true, y_student) + (1-α) × L_soft(y_teacher, y_student)
 
 *Last updated: 2026-04-01*
 *Version: 2.0.0 - 2026 AI Infra Update*
+
+## Related
+
+- [[09_Deployment_Inference/Deployment_Inference_2026]] — 部署推理 2026 趋势 (共享: deployment, inference, model-deployment, serving, vllm)
+- [[09_Deployment_Inference/Deployment_Inference_for_dummy]] — 模型部署与推理加速 - 小白版 (共享: deployment, inference, model-deployment, serving, vllm)
+- [[09_Deployment_Inference/JVM_AI_Deployment]] — JVM AI 部署与推理 (共享: deployment, inference, model-deployment, serving, vllm)
+- [[09_Deployment_Inference/Inference-in-nutshell]] — 模型推理速成指南 (共享: deployment, inference, serving, vllm)
+- [[09_Deployment_Inference/BentoML_Deep_Dive.md|BentoML_Deep_Dive]]
+- [[09_Deployment_Inference/TensorRT_LLM_Deep_Dive.md|TensorRT_LLM_Deep_Dive]]

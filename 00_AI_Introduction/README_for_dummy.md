@@ -1,3 +1,12 @@
+---
+title: 00 AI 简介与历史 — 小白版 🚀
+category: 00-ai-introduction
+tags: ["ai", "introduction"]
+summary: "## 什么是 AI？"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 00 AI 简介与历史 — 小白版 🚀
 
 > **一句话秒懂**: 这一章是 AI 学习的起点——告诉你 AI 到底是什么、有哪些类型、能做什么、是怎么发展过来的，让你从"完全不懂"到"有基本概念"。
@@ -207,3 +216,9 @@ ChatGPT、Claude、Gemini
 ---
 
 *本文是 [README.md](./README.md) 的简化版，适合零基础读者。*
+
+## Related
+
+- [[00_AI_Introduction/AI_Fundamentals]] — AI基础概念入门 (共享: ai, introduction)
+- [[00_AI_Introduction/AI_Fundamentals_for_dummy]] — AI 基础入门 - 小白版 (共享: ai, introduction)
+- [[00_AI_Introduction/README]] — 00 - AI 简介与历史 (共享: ai, introduction)

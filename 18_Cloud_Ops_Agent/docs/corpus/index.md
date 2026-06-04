@@ -1,3 +1,12 @@
+---
+title: 云产品运维 Agent 语料工程指南 (Corpus Engineering)
+category: 18-cloud-ops-agent-docs-corpus
+tags: ["cloud-ops", "devops", "sre", "automation", "ai-agents"]
+summary: "> 🎯 **目标**: 为语料工程师提供运维 Agent 的训练语料设计、Prompt 工程、Fine-tuning 数据集构建、评估数据集维护的完整指南，确保 Agent 的运维决策能力达到行业领先水平。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # 云产品运维 Agent 语料工程指南 (Corpus Engineering)
 
 > 🎯 **目标**: 为语料工程师提供运维 Agent 的训练语料设计、Prompt 工程、Fine-tuning 数据集构建、评估数据集维护的完整指南，确保 Agent 的运维决策能力达到行业领先水平。
@@ -925,3 +934,11 @@ class CorpusLineage:
 *最后更新: 2026-04-15*
 *版本: 1.0.0*
 *维护者: 语料工程团队*
+
+## Related
+
+- [[18_Cloud_Ops_Agent/CloudOps-in-nutshell]] — 云产品运维 Agent 速成指南 (共享: ai-agents, automation, cloud-ops, devops, sre)
+- [[18_Cloud_Ops_Agent/Cloud_Product_Ops_for_dummy]] — 云产品运维 Agent 入门指南 (for Dummies) (共享: ai-agents, automation, cloud-ops, devops, sre)
+- [[18_Cloud_Ops_Agent/docs/architecture/index]] — 云产品运维 Agent 架构设计指南 (Architecture) (共享: ai-agents, automation, cloud-ops, devops, sre)
+- [[18_Cloud_Ops_Agent/docs/development/index]] — 云产品运维 Agent 研发指南 (Development) (共享: ai-agents, automation, cloud-ops, devops, sre)
+- [[18_Cloud_Ops_Agent/docs/templates/test_template.md|test_template]]

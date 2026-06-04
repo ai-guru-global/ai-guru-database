@@ -1,3 +1,12 @@
+---
+title: AI 面试准备 - 小白版
+category: 23-interviews
+tags: ["interviews", "career", "experience", "practitioners"]
+summary: "> **一句话理解**: AI 面试就像参加一场综合运动会——不仅要跑得快（算法题），还要投得准（项目经验）、讲得好（沟通表达）、站得稳（基础知识）。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # AI 面试准备 - 小白版
 
 > **一句话理解**: AI 面试就像参加一场综合运动会——不仅要跑得快（算法题），还要投得准（项目经验）、讲得好（沟通表达）、站得稳（基础知识）。
@@ -347,3 +356,10 @@ AI 岗位 LeetCode 重点:
 ---
 
 *Last updated: 2026-05-07*
+
+## Related
+
+- [[23_Interviews/AI_Data_Analyst/company_level_question_bank]] — AI Data Analyst 按公司/级别区分的题库 (共享: career, experience, interviews, practitioners)
+- [[23_Interviews/AI_Data_Analyst/interview_answers]] — AI Data Analyst 面试题实例答案 (共享: career, experience, interviews, practitioners)
+- [[23_Interviews/AI_Data_Analyst/interview_preparing]] — AI Data Analyst 面试准备 (共享: career, experience, interviews, practitioners)
+- [[23_Interviews/AI_Data_Analyst/question_bank]] — AI Data Analyst 题库 (共享: career, experience, interviews, practitioners)

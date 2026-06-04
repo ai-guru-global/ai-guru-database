@@ -1,3 +1,12 @@
+---
+title: '模型评估 - 小白版'
+category: '08-model-evaluation'
+tags: ["model-evaluation", "metrics", "ab-testing", "benchmark"]
+summary: '> **一句话秒懂**: 就像给学生打分,不能只看数学成绩,还要看语文、体育、品德——评估 AI 也需要多个维度的"成绩单"!'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # 模型评估 - 小白版
 
 > **一句话秒懂**: 就像给学生打分,不能只看数学成绩,还要看语文、体育、品德——评估 AI 也需要多个维度的"成绩单"!
@@ -680,3 +689,11 @@ B:新模型
 ---
 
 *本文是 Model_Evaluation.md 的简化版,适合零基础读者。完整统计方法和高级技巧请参考项目文档。*
+
+## Related
+
+- [[08_Model_Evaluation/Model_Evaluation.md|Model_Evaluation]]
+- [[08_Model_Evaluation/README.md|08_Model_Evaluation README]]
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow.md|Evaluation_Workflow]]
+- [[13_Agent_Production/16_Agent_Evaluation/Cloud_Agent_Evaluation/README.md|Cloud_Agent_Evaluation README]]
+- [[13_Agent_Production/16_Agent_Evaluation/Cloud_Agent_Evaluation_System_2026.md|Cloud_Agent_Evaluation_System_2026]]

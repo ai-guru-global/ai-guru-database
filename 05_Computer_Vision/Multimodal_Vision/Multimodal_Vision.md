@@ -1,3 +1,12 @@
+---
+title: '多模态视觉 (Multimodal Vision)'
+category: '05-computer-vision-multimodal-vision'
+tags: ["computer-vision", "cnn", "image-processing"]
+summary: '> **一句话理解**: 多模态视觉就像给 AI 同时装上了"眼睛"和"大脑"——不仅能看到图片里有什么，还能用人类语言描述、理解甚至推理图像内容。它是连接视觉世界和语言世界的桥梁。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # 多模态视觉 (Multimodal Vision)
 
 > **一句话理解**: 多模态视觉就像给 AI 同时装上了"眼睛"和"大脑"——不仅能看到图片里有什么，还能用人类语言描述、理解甚至推理图像内容。它是连接视觉世界和语言世界的桥梁。

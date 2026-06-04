@@ -1,3 +1,12 @@
+---
+title: [文档标题]
+category: 18-cloud-ops-agent-docs-templates
+tags: ["cloud-ops", "devops", "sre", "automation"]
+summary: "> 🎯 **目标**: 为测试人员提供基于 Agent Harness 的[组件/功能]全自动化评估体系，确保单篇文档作为唯一可信源。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # [文档标题]
 
 > 🎯 **目标**: 为测试人员提供基于 Agent Harness 的[组件/功能]全自动化评估体系，确保单篇文档作为唯一可信源。
@@ -33,3 +42,10 @@
 
 ### 3.4 可观测性指标模板
 - [核心指标如 harness_pass_rate]
+
+## Related
+
+- [[18_Cloud_Ops_Agent/CloudOps-in-nutshell]] — 云产品运维 Agent 速成指南 (共享: automation, cloud-ops, devops, sre)
+- [[18_Cloud_Ops_Agent/Cloud_Product_Ops_for_dummy]] — 云产品运维 Agent 入门指南 (for Dummies) (共享: automation, cloud-ops, devops, sre)
+- [[18_Cloud_Ops_Agent/Java_Cloud_SDK_Guide]] — Java Cloud SDK AI 集成指南 (共享: automation, cloud-ops, devops, sre)
+- [[18_Cloud_Ops_Agent/docs/architecture/index]] — 云产品运维 Agent 架构设计指南 (Architecture) (共享: automation, cloud-ops, devops, sre)

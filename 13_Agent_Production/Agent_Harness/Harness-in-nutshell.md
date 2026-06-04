@@ -1,3 +1,12 @@
+---
+title: Agent Harness 速览
+category: 13-agent-production-agent-harness
+tags: ["ai-agents", "agent-framework", "production", "langgraph"]
+summary: "> 一句话：**Agent = Model + Harness**。Harness 是模型之外的一切——让裸模型变成可工作的 Agent 的工程系统。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
 # Agent Harness 速览
 
 > 一句话：**Agent = Model + Harness**。Harness 是模型之外的一切——让裸模型变成可工作的 Agent 的工程系统。
@@ -426,3 +435,11 @@ print(tool_counts.most_common(5))
 ---
 
 > 📅 **最后更新**：2026-05-07
+
+## Related
+
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)
+- [[13_Agent_Production/Agent_Harness/README.md|README]]

@@ -1,3 +1,12 @@
+---
+title: 'ML CI/CD 流水线 (ML CI/CD Pipeline)'
+category: '10-mlops-pipeline'
+tags: ["mlops", "ci-cd", "pipeline", "feature-store"]
+summary: '> **一句话理解**: ML CI/CD 就像 AI 模型的"出厂质检流水线"——每次代码变更都要自动通过数据检查、模型测试、性能验证等多道关卡，确保只有合格的模型才能上线服务用户。'
+created: '2026-05-31'
+updated: '2026-05-31'
+---
+
 # ML CI/CD 流水线 (ML CI/CD Pipeline)
 
 > **一句话理解**: ML CI/CD 就像 AI 模型的"出厂质检流水线"——每次代码变更都要自动通过数据检查、模型测试、性能验证等多道关卡，确保只有合格的模型才能上线服务用户。
@@ -445,3 +454,9 @@ class MLPipelineMonitor:
 ---
 
 *Last updated: 2026-05-18*
+
+## Related
+
+- [[10_MLOps_Pipeline/Data_Pipeline_Orchestration.md|Data_Pipeline_Orchestration]]
+- [[10_MLOps_Pipeline/MLOps-in-nutshell.md|MLOps-in-nutshell]]
+- [[concepts/mlops.md|mlops]]

@@ -138,7 +138,7 @@ TensorFlow/Keras 版本通常将 VAE 损失封装成自定义层或使用 `add_l
 
 ## 相关阅读
 
-- 课程索引：[[90_Learn/Microsoft_AI_For_Beginners]]
+- 课程索引：[[90_Learn/Courses/Microsoft_AI_For_Beginners]]
 - 本库相关页面：
   - [[05_Computer_Vision/Generative_Models/Generative_Models]]
   - [[05_Computer_Vision/CV-in-nutshell]]

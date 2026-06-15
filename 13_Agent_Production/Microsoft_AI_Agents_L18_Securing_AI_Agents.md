@@ -250,4 +250,4 @@ R0 → R1 → R2 → R3
 - [[13_Agent_Production/Microsoft_AI_Agents_L10_Production]] — L10：可观测性（OTel）
 - [[19_Ethics_Safety/GenAI_L13_Securing_AI_Applications]] — GenAI 安全基础
 - [[19_Ethics_Safety/README]] — 伦理与安全主题（如有）
-- [[90_Learn/Microsoft_AI_Agents_for_Beginners]] — 课程总览
+- [[90_Learn/Courses/Microsoft_AI_Agents_for_Beginners]] — 课程总览

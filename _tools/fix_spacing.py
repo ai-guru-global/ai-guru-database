@@ -135,7 +135,7 @@ def main():
 
     # Find all .md files in core directories (exclude Web, synthesis, .git, etc.)
     exclude_dirs = {'Web', 'synthesis', '.git', '_archives', '_raw', '_staging',
-                    'mkdocs-docs', 'concepts', 'entities', 'journal', 'projects',
+                    'concepts', 'entities', 'journal', 'projects',
                     'references', 'skills', '.venv', '.qoder', '.obsidian',
                     '.github', '.comate', '.qwen', 'node_modules'}
 

@@ -123,7 +123,7 @@ _, im_thresh = cv2.threshold(im_gray, 127, 255, cv2.THRESH_BINARY)
 
 ## 相关阅读
 
-- 课程索引：[[90_Learn/Microsoft_AI_For_Beginners]]
+- 课程索引：[[90_Learn/Courses/Microsoft_AI_For_Beginners]]
 - 本库相关页面：
   - [[05_Computer_Vision/README]]
   - [[05_Computer_Vision/Image_Classification_Detection/Image_Classification_Detection]]

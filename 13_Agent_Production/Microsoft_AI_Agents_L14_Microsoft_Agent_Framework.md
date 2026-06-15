@@ -243,4 +243,4 @@ async def logging_chat_middleware(context: ChatContext, next):
 - [[13_Agent_Production/Agent_Frameworks/README]] — 主流 Agent 框架总览
 - [[13_Agent_Production/Agent_Workflow/README]] — 工作流编排总览
 - [[13_Agent_Production/Microsoft_AI_Agents_L10_Production]] — L10：可观测性（OTel）
-- [[90_Learn/Microsoft_AI_Agents_for_Beginners]] — 课程总览
+- [[90_Learn/Courses/Microsoft_AI_Agents_for_Beginners]] — 课程总览

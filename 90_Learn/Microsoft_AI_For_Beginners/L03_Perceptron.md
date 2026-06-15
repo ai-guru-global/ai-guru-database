@@ -107,7 +107,7 @@ def train(positive_examples, negative_examples, num_iterations=100, eta=1):
 
 ## 相关阅读
 
-- 课程索引：[[90_Learn/Microsoft_AI_For_Beginners]]
+- 课程索引：[[90_Learn/Courses/Microsoft_AI_For_Beginners]]
 - 本库相关页面：
   - [[03_Deep_Learning/Neural_Network_Core/Neural_Network_Core]]
   - [[03_Deep_Learning/Neural_Network_Core/Your_First_Neural_Network]]

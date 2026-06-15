@@ -123,7 +123,7 @@ for epoch in range(num_epochs):
 
 ## 相关阅读
 
-- 课程索引：[[90_Learn/Microsoft_AI_For_Beginners]]
+- 课程索引：[[90_Learn/Courses/Microsoft_AI_For_Beginners]]
 - 本库相关页面：
   - [[04_NLP_LLMs/Sequence_Models/Sequence_Models]]
   - [[04_NLP_LLMs/LLM_Data_Engineering/LLM_Data_Engineering_Deep_Dive]]

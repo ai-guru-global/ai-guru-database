@@ -4,7 +4,7 @@ category: '90-learn'
 tags: ["learning", "education", "courses", "study-path"]
 summary: '> **从"AI是什么"到"如何构建AI系统"，按概念递进，因人施教。**'
 created: '2026-05-31'
-updated: '2026-06-12'
+updated: '2026-06-15'
 ---
 
 # Learn — AI Guru 概念入门路径
@@ -107,45 +107,48 @@ Stage 0: AI 觉醒 ────────────────────�
 
 ---
 
+## 两套路径系统的关系
+
+本目录提供两套互补的路径系统，服务不同场景：
+
+| 系统 | 位置 | 路径数 | 组织逻辑 | 适合场景 |
+|------|------|---------|---------|----------|
+| **认知层次路径** | [`pathways/`](./pathways/) | 6 条 | 按 Stage 0-4 认知递进 | 第一次学 AI，想知道“从哪里开始” |
+| **职业角色路径** | [`Learning_Paths_2026.md`](./Learning_Paths_2026.md) | 5 条 | 按 ML/LLM/PM/MLOps/Research 职业角色 | 已有方向，想知道“学哪些章节” |
+
+> **建议**: 新手先用 `pathways/` 建立全局认知，确定方向后切换到 `Learning_Paths_2026.md` 获得具体的章节序列和时间估算。
+
 ## 相关资源
 
 | 资源 | 说明 |
 |------|------|
-| [**学习路径指南 2026**](./Learning_Paths_2026.md) | 5 条角色路径全景 (ML/LLM/PM/MLOps/Research) |
+| [**职业角色路径指南 2026**](./Learning_Paths_2026.md) | 5 大职业角色学习路径全景 (ML/LLM/PM/MLOps/Research) |
+| [**AI 工程路线图 2026**](./AI_Engineering_Roadmap_2026.md) | 免费资源精选路线图（课程、论文、书籍、工具） |
+| [外部课程映射](./Courses/) | 18 门外部课程的章节映射（微软、HF、Datawhale 等） |
+| [概念层次卡片](./concepts/) | Stage 0-4 每个阶段的核心概念卡片 |
+| [里程碑自测](./milestones.md) | 每个 Stage 的自测问题与检查点 |
 | [概念知识图谱](../91_Notes/AI_Concept_Knowledge_Graph.md) | 800+ 概念的完整依赖关系图 |
 | [新手导航（章节版）](../README_for_dummy.md) | 按章节组织的入门指南 |
-| [里程碑自测](./milestones.md) | 每个 Stage 的自测问题与检查点 |
-| [AI 基础入门缺口分析](./AI_Basics_Gap_Analysis.md) | 系统性的入门内容覆盖度分析与补全追踪 |
-| [Microsoft AI For Beginners](./Microsoft_AI_For_Beginners.md) | 微软官方 12 周 24 课 AI 入门课程映射，含 PyTorch/TensorFlow 双框架 Notebook |
-| [Microsoft AI Agents for Beginners](./Microsoft_AI_Agents_for_Beginners.md) | 微软官方 16 课 AI Agent 入门课程映射（MAF + Azure AI Foundry）|
-| [Hello-Agents](./Hello_Agents_Course.md) | Datawhale 中文 Agent 教程：16 章 + 综合项目（ReAct/LangGraph/AutoGen/MCP/A2A/ANP）|
-| [Learn Claude Code](./Learn_Claude_Code_Course.md) | 20 课渐进式 Claude Code 式 Harness 工程教程 |
-| [Hands-On Large Language Models](./Hands_On_LLMs_Course.md) | 《图解 LLM》12 章课程映射 + 本地 Notebook |
-| [ApacheCN AILearning](./ApacheCN_AILearning_Guide.md) | 中文全栈 AI 学习资料库（数据分析/线代/ML/DL/TensorFlow）|
 | [500+ AI Projects](../references/500-ai-projects.md) | 500+ AI/ML/DL/CV/NLP 实战项目合集索引 |
 
 ---
 
-*本路径系统基于 AI Guru 知识库 2026 版构建 | 最后更新: 2026-06-12*
+*本路径系统基于 AI Guru 知识库 2026 版构建 | 最后更新: 2026-06-15*
 
 ## Related
+
 - [[90_Learn/Learning_Paths_2026|AI Guru 学习路径指南]] — 五大 AI 职业角色学习路径全景指南
-- [[90_Learn/README|Learn — AI Guru 概念入门路径]]
-- [[90_Learn/README_for_dummy|90 Learn — 小白版 🚀]]
-
-- [[90_Learn/concepts/stage3-engineering]] — stage3-engineering
-- [[90_Learn/concepts/stage2-core-tech]] — stage2-core-tech
-- [[90_Learn/concepts/stage4-frontier]] — stage4-frontier
-- [[90_Learn/concepts/stage-0-awakening]] — stage-0-awakening
-- [[90_Learn/concepts/stage1-foundation]] — stage1-foundation
-- [[90_Learn/pathways/absolute-beginner]] — 零基础通识路径
-- [[90_Learn/pathways/java-developer]] — Java 开发者 AI 路径
-- [[90_Learn/pathways/product-manager]] — AI 产品经理路径
-- [[90_Learn/pathways/ai-researcher]] — AI 研究者路径
-- [[90_Learn/pathways/llm-engineer]] — LLM 工程师路径
-- [[90_Learn/pathways/ml-practitioner]] — ML 从业者路径
-- [[90_Learn/AI_Basics_Gap_Analysis|AI 基础入门缺口分析]] — 入门内容覆盖度分析与补全追踪
-
-## 相关资源
-
 - [[90_Learn/AI_Engineering_Roadmap_2026|AI 工程学习路线图 2026(免费资源精选)]]
+- [[90_Learn/README_for_dummy|90 Learn — 小白版]]
+- [[90_Learn/milestones|里程碑自测]]
+- [[90_Learn/concepts/stage-0-awakening]] — Stage 0: AI 觉醒
+- [[90_Learn/concepts/stage1-foundation]] — Stage 1: 基础概念
+- [[90_Learn/concepts/stage2-core-tech]] — Stage 2: 核心技术
+- [[90_Learn/concepts/stage3-engineering]] — Stage 3: 工程实践
+- [[90_Learn/concepts/stage4-frontier]] — Stage 4: 前沿探索
+- [[90_Learn/pathways/absolute-beginner]] — 零基础通识路径
+- [[90_Learn/pathways/ml-practitioner]] — ML 从业者路径
+- [[90_Learn/pathways/llm-engineer]] — LLM 工程师路径
+- [[90_Learn/pathways/ai-researcher]] — AI 研究者路径
+- [[90_Learn/pathways/product-manager]] — AI 产品经理路径
+- [[90_Learn/pathways/java-developer]] — Java 开发者 AI 路径

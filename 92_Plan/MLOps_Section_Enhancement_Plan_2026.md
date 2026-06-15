@@ -207,7 +207,7 @@ related_section: 10_MLOps_Pipeline
 - [[_quality-assessment]] — 全库质量评估（2026-06-15）
 - [[_project-evaluation]] — 项目整体评估基线（2026-06-03）
 - [[_content-gap-analysis]] — LLM 全生命周期缺口分析
-- [[10_MLOps_Pipeline/_boundary-with-16]] — 10 vs 16 边界声明（P0 交付物）
+- [[10_MLOps_Pipeline/Boundary_with_16]] — 10 vs 16 边界声明（P0 交付物）
 - [[10_MLOps_Pipeline/README]] — 章节导航
 - [[Implementation_Plan_2026]] — 2026 年度实施计划
 

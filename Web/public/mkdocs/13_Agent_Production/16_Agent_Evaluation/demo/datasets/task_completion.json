@@ -1,0 +1,40 @@
+{
+  "metadata": {
+    "name": "Task Completion Test Set",
+    "version": "2026-Q2",
+    "total_tasks": 30,
+    "scenarios": ["resource_creation", "troubleshooting", "configuration", "migration", "monitoring"]
+  },
+  "tasks": [
+    {"id": "tc-001", "task": "创建一个2核4G的ECS实例，配置公网IP和安全组规则允许80和443端口", "steps_expected": 5, "scenario": "resource_creation", "difficulty": "easy"},
+    {"id": "tc-002", "task": "为现有ECS实例创建自定义镜像并共享给其他账号", "steps_expected": 4, "scenario": "resource_creation", "difficulty": "medium"},
+    {"id": "tc-003", "task": "部署一个高可用的Web应用，包含SLB、2台ECS和RDS主备", "steps_expected": 8, "scenario": "resource_creation", "difficulty": "hard"},
+    {"id": "tc-004", "task": "创建OSS Bucket并配置静态网站托管和自定义域名", "steps_expected": 5, "scenario": "resource_creation", "difficulty": "medium"},
+    {"id": "tc-005", "task": "配置VPC网络，包含公网子网和私网子网，设置NAT网关", "steps_expected": 6, "scenario": "resource_creation", "difficulty": "medium"},
+    {"id": "tc-006", "task": "创建ACK集群并部署一个Nginx应用，配置Ingress暴露服务", "steps_expected": 7, "scenario": "resource_creation", "difficulty": "hard"},
+    {"id": "tc-007", "task": "ECS实例无法SSH连接，排查并解决问题", "steps_expected": 5, "scenario": "troubleshooting", "difficulty": "medium"},
+    {"id": "tc-008", "task": "RDS数据库连接数达到上限导致应用报错，诊断并处理", "steps_expected": 6, "scenario": "troubleshooting", "difficulty": "hard"},
+    {"id": "tc-009", "task": "SLB后端健康检查全部失败，排查原因并恢复服务", "steps_expected": 5, "scenario": "troubleshooting", "difficulty": "medium"},
+    {"id": "tc-010", "task": "OSS访问出现403 Forbidden错误，定位权限问题并修复", "steps_expected": 4, "scenario": "troubleshooting", "difficulty": "medium"},
+    {"id": "tc-011", "task": "ACK Pod反复重启CrashLoopBackOff，排查容器日志并修复", "steps_expected": 6, "scenario": "troubleshooting", "difficulty": "hard"},
+    {"id": "tc-012", "task": "ECS实例CPU使用率持续100%，定位进程并优化", "steps_expected": 5, "scenario": "troubleshooting", "difficulty": "medium"},
+    {"id": "tc-013", "task": "配置ECS实例的自动快照策略，每天凌晨备份保留7天", "steps_expected": 3, "scenario": "configuration", "difficulty": "easy"},
+    {"id": "tc-014", "task": "为RDS实例配置SSL加密连接", "steps_expected": 4, "scenario": "configuration", "difficulty": "medium"},
+    {"id": "tc-015", "task": "配置RAM策略限制用户只能管理特定地域的ECS资源", "steps_expected": 4, "scenario": "configuration", "difficulty": "medium"},
+    {"id": "tc-016", "task": "配置云监控告警规则，ECS CPU超过90%持续5分钟发送钉钉通知", "steps_expected": 5, "scenario": "configuration", "difficulty": "medium"},
+    {"id": "tc-017", "task": "配置OSS生命周期规则，30天后转低频，180天后转归档", "steps_expected": 3, "scenario": "configuration", "difficulty": "easy"},
+    {"id": "tc-018", "task": "为函数计算配置VPC访问权限，使其能访问VPC内的RDS", "steps_expected": 5, "scenario": "configuration", "difficulty": "hard"},
+    {"id": "tc-019", "task": "将自建MySQL数据库迁移到阿里云RDS", "steps_expected": 7, "scenario": "migration", "difficulty": "hard"},
+    {"id": "tc-020", "task": "将ECS上的应用容器化并迁移到ACK集群", "steps_expected": 8, "scenario": "migration", "difficulty": "hard"},
+    {"id": "tc-021", "task": "将OSS数据从一个地域迁移到另一个地域", "steps_expected": 4, "scenario": "migration", "difficulty": "medium"},
+    {"id": "tc-022", "task": "将传统部署架构迁移到Serverless架构", "steps_expected": 7, "scenario": "migration", "difficulty": "hard"},
+    {"id": "tc-023", "task": "将AWS S3存储桶数据迁移到阿里云OSS", "steps_expected": 5, "scenario": "migration", "difficulty": "medium"},
+    {"id": "tc-024", "task": "从经典网络迁移到VPC网络", "steps_expected": 6, "scenario": "migration", "difficulty": "hard"},
+    {"id": "tc-025", "task": "配置SLS日志服务收集ECS系统日志并创建告警", "steps_expected": 5, "scenario": "monitoring", "difficulty": "medium"},
+    {"id": "tc-026", "task": "使用ARMS监控Java应用性能，配置链路追踪", "steps_expected": 5, "scenario": "monitoring", "difficulty": "medium"},
+    {"id": "tc-027", "task": "创建云监控大盘展示所有核心服务的运行状态", "steps_expected": 4, "scenario": "monitoring", "difficulty": "medium"},
+    {"id": "tc-028", "task": "配置EventBridge实现多云事件的统一处理", "steps_expected": 6, "scenario": "monitoring", "difficulty": "hard"},
+    {"id": "tc-029", "task": "为ACK集群配置Prometheus监控和Grafana可视化", "steps_expected": 5, "scenario": "monitoring", "difficulty": "medium"},
+    {"id": "tc-030", "task": "使用操作审计ActionTrail追踪所有云资源变更操作", "steps_expected": 4, "scenario": "monitoring", "difficulty": "easy"}
+  ]
+}

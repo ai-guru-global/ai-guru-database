@@ -1,15 +1,15 @@
 ---
-title: 06 强化学习与智能体 (Reinforcement Learning & Agents)
+title: 06 强化学习 (Reinforcement Learning)
 category: 06-reinforcement-learning
-tags: ["reinforcement-learning", "agent", "mdp"]
-summary: "本章涵盖强化学习的完整技术栈，从数学基础（MDP/贝尔曼方程）到深度强化学习算法（DQN/PPO），再到自主智能体架构（推理规划/工具使用）。这是构建自主决策系统的核心技术。"
+tags: ["reinforcement-learning", "mdp", "deep-rl"]
+summary: "本章涵盖强化学习的完整技术栈，从数学基础（MDP/贝尔曼方程）到深度强化学习算法（DQN/PPO），再到具身智能。Agent 相关内容已合并至 13_Agent_Production。"
 created: 2026-05-31
 updated: 2026-05-31
 ---
 
-# 06 强化学习与智能体 (Reinforcement Learning & Agents)
+# 06 强化学习 (Reinforcement Learning)
 
-本章涵盖强化学习的完整技术栈，从数学基础（MDP/贝尔曼方程）到深度强化学习算法（DQN/PPO），再到自主智能体架构（推理规划/工具使用）。这是构建自主决策系统的核心技术。
+本章涵盖强化学习的完整技术栈，从数学基础（MDP/贝尔曼方程）到深度强化学习算法（DQN/PPO），再到具身智能与机器人。Agent 相关内容已合并至 [13_Agent_Production](../13_Agent_Production/README.md)。
 
 ## 学习路径 (Learning Path)
 
@@ -29,13 +29,6 @@ updated: 2026-05-31
                │
                ▼
     ┌──────────────────────┐
-    │  AI Agents           │
-    │  智能体架构           │
-    │  (推理/记忆/工具)     │
-    └──────────┬───────────┘
-               │
-               ▼
-    ┌──────────────────────┐
     │  具身智能             │
     │  Embodied AI         │
     │  (机器人/VLA模型)     │
@@ -46,21 +39,12 @@ updated: 2026-05-31
 
 > 面向初级运维人员的入门材料，包含丰富的 Mermaid 图示。
 
-| 主题 | 描述 | 速成文档 |
-|------|------|----------|
-| AI 智能体 | 构建能思考、规划、行动的自主 AI 系统 | [Agent-in-nutshell.md](./AI_Agents/Agent-in-nutshell.md) |
-
----
-
 ## 内容索引 (Content Index)
 
 | 主题 | 难度 | 描述 | 文档链接 |
 |------|------|------|---------|
 | 强化学习基础 (RL Foundations) | 入门 | MDP、贝尔曼方程、策略梯度、价值函数，RL 数学框架 | [RL_Foundations.md](./RL_Foundations/RL_Foundations.md) |
 | 深度强化学习 (Deep RL) | 进阶 | DQN、PPO、SAC、离线 RL，结合神经网络的 RL 算法 | [Deep_RL.md](./Deep_RL/Deep_RL.md) |
-| AI Agents (智能体) | 实战 | ReAct、长期记忆、工具使用、多智能体系统，自主决策架构 | [AI_Agents.md](./AI_Agents/AI_Agents.md) |
-| Agent 协议对比 2026 | 进阶 | MCP、A2A、UCP 深度对比，互操作性现状与趋势 | [Agent_Protocols_Comparison_2026.md](./AI_Agents/Agent_Protocols_Comparison_2026.md) |
-| ADK 选型与实战 2026 | 实战 | MCP SDK、Google A2A ADK、UCP SDK 选型与跨协议 Agent 构建 | [ADK_Selection_and_Implementation_2026.md](./AI_Agents/ADK_Selection_and_Implementation_2026.md) |
 | 具身智能 (Embodied AI) | 前沿 | 机器人基础模型、VLA架构、Sim-to-Real、人形机器人产业 | [Embodied_AI_2026.md](./Robotics_Embodied_AI/Embodied_AI_2026.md) |
 
 ### 深度解读 (Deep Dive)
@@ -75,7 +59,6 @@ updated: 2026-05-31
 - [强化学习与智能体 - 小白版](./README_for_dummy.md) — 零基础入门
 - [RL 基础 - 小白版](./RL_Foundations/RL_Foundations_for_dummy.md)
 - [深度强化学习 - 小白版](./Deep_RL/Deep_RL_for_dummy.md)
-- [AI 智能体 - 小白版](./AI_Agents/AI_Agents_for_dummy.md)
 
 ## 前置知识 (Prerequisites)
 
@@ -108,10 +91,6 @@ updated: 2026-05-31
 - [[06_Reinforcement_Learning/RL-in-nutshell|强化学习速览]] — 从 MDP 到 DQN/PPO 到 RLHF/DPO/GRPO 全栈速览 (共享: rl, reinforcement-learning, ppo, rlhf)
 - [[06_Reinforcement_Learning/README_for_dummy|06 强化学习与智能体 - 小白版 🎮]]
 
-- [[06_Reinforcement_Learning/AI_Agents/AI_Agents_for_dummy]] — AI 智能体 - 小白版 🤖 (共享: agent, mdp, reinforcement-learning, rl)
-- [[06_Reinforcement_Learning/AI_Agents/Agent-in-nutshell]] — AI 智能体速成指南 (共享: agent, mdp, reinforcement-learning, rl)
-- [[06_Reinforcement_Learning/AI_Agents/Agent_Future_Roadmap_2026_2030]] — Agent 未来发展路线图 2026-2030 (共享: agent, mdp, reinforcement-learning, rl)
-- [[06_Reinforcement_Learning/AI_Agents/Agent_Protocols_Detail]] — AI Agent 协议详解：MCP、A2A、UCP (共享: agent, mdp, reinforcement-learning, rl)
 - [[06_Reinforcement_Learning/RL_Foundations/RL_Foundations]] — 强化学习基础 (RL Foundations)
 - [[06_Reinforcement_Learning/RL_Foundations/RL_Foundations_for_dummy]] — 强化学习基础 - 小白版 🎲
 - [[06_Reinforcement_Learning/Robotics_Embodied_AI/Embodied_AI_2026]] — Embodied_AI_2026
@@ -121,10 +100,5 @@ updated: 2026-05-31
 - [[06_Reinforcement_Learning/Deep_RL/PPO_Deep_Dive]] — PPO_Deep_Dive
 - [[06_Reinforcement_Learning/Deep_RL/Deep_RL_for_dummy]] — Deep_RL_for_dummy
 - [[06_Reinforcement_Learning/Deep_RL/DQN_Deep_Dive]] — DQN_Deep_Dive
-- [[06_Reinforcement_Learning/AI_Agents/Agent_Observability_2026]] — Agent_Observability_2026
-- [[06_Reinforcement_Learning/AI_Agents/AI_Agents]] — AI_Agents
-- [[06_Reinforcement_Learning/AI_Agents/MCP_Implementation_Guide]] — MCP_Implementation_Guide
-- [[06_Reinforcement_Learning/AI_Agents/Agent_State_Management]] — Agent_State_Management
-- [[06_Reinforcement_Learning/AI_Agents/Agent_Protocols_2026]] — Agent_Protocols_2026
 - [[concepts/rlhf.md|rlhf]]
 

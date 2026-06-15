@@ -17,4 +17,4 @@ source_url: "https://github.com/microsoft/AI-For-Beginners/blob/main/translation
 - **中文 README**: https://github.com/microsoft/AI-For-Beginners/blob/main/translations/zh-CN/README.md
 
 > 课程在本库中的完整映射、学习路径建议以及每节课对应的内部章节链接，请查看：
-> **[[90_Learn/Microsoft_AI_For_Beginners]]**
+> **[[90_Learn/Courses/Microsoft_AI_For_Beginners]]**

@@ -308,6 +308,14 @@ WHERE user_id = 'X' AND consent_status = 'consented';
 
 ---
 
+## 工具实现（详见 16_AI_Ops）
+
+本文讲隐私合规的**方法论与门禁设计**。具体安全护栏工具的用法：
+
+- [[16_AI_Ops/Guardrails_Deep_Dive]] — Guardrails AI：LLM 输入/输出护栏
+
+---
+
 ## 8. 相关文档
 
 ### 本章内

@@ -1,0 +1,30 @@
+{
+  "metadata": {
+    "name": "Interaction Quality Test Set",
+    "version": "2026-Q2",
+    "total_conversations": 20,
+    "dimensions": ["coherence", "chinese_ability", "helpfulness", "multi_turn"]
+  },
+  "conversations": [
+    {"id": "iq-001", "question": "我想在阿里云上搭建一个电商网站，应该选择什么配置？", "turns": 1, "context": "初次咨询", "evaluation_focus": "helpfulness"},
+    {"id": "iq-002", "question": "接上一个问题，如果每天访问量预估10万PV，需要多大的ECS配置？", "turns": 2, "context": "多轮对话上下文", "evaluation_focus": "multi_turn"},
+    {"id": "iq-003", "question": "那数据库用RDS还是PolarDB？两者成本差多少？", "turns": 3, "context": "接续电商网站讨论", "evaluation_focus": "multi_turn"},
+    {"id": "iq-004", "question": "请用表格形式对比ECS、轻量应用服务器和函数计算的适用场景", "turns": 1, "context": "格式化输出能力", "evaluation_focus": "coherence"},
+    {"id": "iq-005", "question": "帮我写一个Terraform脚本创建VPC和子网", "turns": 1, "context": "代码生成", "evaluation_focus": "helpfulness"},
+    {"id": "iq-006", "question": "用通俗易懂的语言解释什么是云原生", "turns": 1, "context": "中文表达能力", "evaluation_focus": "chinese_ability"},
+    {"id": "iq-007", "question": "我们公司有合规要求，数据不能出境。请介绍阿里云的数据驻留方案", "turns": 1, "context": "专业咨询", "evaluation_focus": "helpfulness"},
+    {"id": "iq-008", "question": "请分步骤解释如何配置跨地域容灾", "turns": 1, "context": "步骤化输出", "evaluation_focus": "coherence"},
+    {"id": "iq-009", "question": "我之前说的那个电商项目，现在想加上CDN加速，怎么配置？", "turns": 4, "context": "长程对话记忆", "evaluation_focus": "multi_turn"},
+    {"id": "iq-010", "question": "什么是Serverless？跟传统服务器有什么区别？请用大白话解释", "turns": 1, "context": "通俗化表达", "evaluation_focus": "chinese_ability"},
+    {"id": "iq-011", "question": "我是一个初学者，请给我制定一个阿里云学习路线图", "turns": 1, "context": "入门指导", "evaluation_focus": "helpfulness"},
+    {"id": "iq-012", "question": "刚才你提到的学习路线里，第二阶段的网络部分能展开讲讲吗？", "turns": 2, "context": "多轮深入", "evaluation_focus": "multi_turn"},
+    {"id": "iq-013", "question": "请用中英文对照解释以下术语：VPC、SLB、RDS、OSS、ACK", "turns": 1, "context": "双语能力", "evaluation_focus": "chinese_ability"},
+    {"id": "iq-014", "question": "阿里云和AWS在容器服务方面有什么差异？请客观分析", "turns": 1, "context": "对比分析", "evaluation_focus": "coherence"},
+    {"id": "iq-015", "question": "我的场景是：100个微服务，日请求量1亿，推荐什么架构？", "turns": 1, "context": "架构设计", "evaluation_focus": "helpfulness"},
+    {"id": "iq-016", "question": "你能用类比的方式解释什么是负载均衡吗？就像解释给非技术人员听", "turns": 1, "context": "类比能力", "evaluation_focus": "chinese_ability"},
+    {"id": "iq-017", "question": "之前你提到需要用SLB，但我们预算有限，有没有更便宜的方案？", "turns": 3, "context": "上下文约束理解", "evaluation_focus": "multi_turn"},
+    {"id": "iq-018", "question": "请帮我分析这段云监控告警日志，判断是什么问题：CPU 95% Memory 82% Disk IO 99%", "turns": 1, "context": "分析诊断", "evaluation_focus": "helpfulness"},
+    {"id": "iq-019", "question": "我想了解阿里云的混合云方案，我们在北京有自建机房", "turns": 1, "context": "方案咨询", "evaluation_focus": "helpfulness"},
+    {"id": "iq-020", "question": "总结一下我们今天讨论的所有内容，列出待办事项", "turns": 5, "context": "总结能力", "evaluation_focus": "multi_turn"}
+  ]
+}

@@ -34,6 +34,7 @@ updated: 2026-06-15
 | 文档 | 内容 | 适用读者 |
 |------|------|----------|
 | [推理性能基础](./Inference_Performance_Fundamentals.md) | 指标、瓶颈模型、Roofline、优化技术分类 | 所有性能工程从业者 |
+| [决定模型推理速度的要素（大白话版）](./Inference_Speed_Factors_for_dummy.md) | 用生活化语言解释影响推理速度的六大因素 | 初学者、产品经理 |
 | [Prefill-Decode 分离](./Prefill_Decode_Disaggregation.md) | Disaggregated Serving 架构与 KV Cache 传输 | 长上下文/高并发场景 |
 | [MoE 推理优化](./MoE_Inference_Optimization.md) | All-to-All、Expert Parallelism、负载均衡 | MoE 模型部署 |
 | [推理 Profiling 与 Benchmarking](./LLM_Inference_Profiling_and_Benchmarking.md) | Nsight、PyTorch Profiler、llmperf、指标陷阱 | 性能测试工程师 |

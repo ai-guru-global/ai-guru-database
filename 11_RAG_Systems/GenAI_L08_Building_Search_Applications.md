@@ -346,7 +346,7 @@ def search(query, embedding_index, top_k=5):
 
 ## 扩展阅读
 
-- [[90_Learn/Microsoft_GenAI_For_Beginners]]
+- [[90_Learn/Courses/Microsoft_GenAI_For_Beginners]]
 - [[11_RAG_Systems/RAG_Systems]]
 - [[11_RAG_Systems/Vector_Database_for_dummy]]
 - [[04_NLP_LLMs/Multimodal_Models/GenAI_L09_Building_Image_Applications]]

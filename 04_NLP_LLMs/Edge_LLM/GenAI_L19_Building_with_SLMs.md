@@ -377,7 +377,7 @@ Phi-3 Cookbook 包含：
 - [[04_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques|微调技术综述]]
 - [[04_NLP_LLMs/Global_LLM_Ecosystem/Mistral_AI_Deep_Dive|Mistral AI 深度指南]]
 - [[04_NLP_LLMs/Global_LLM_Ecosystem/Meta_LLaMA_Deep_Dive|Meta LLaMA 深度指南]]
-- [[90_Learn/Microsoft_GenAI_For_Beginners|Microsoft GenAI 入门课程]]
+- [[90_Learn/Courses/Microsoft_GenAI_For_Beginners|Microsoft GenAI 入门课程]]
 
 ## 课程导航
 

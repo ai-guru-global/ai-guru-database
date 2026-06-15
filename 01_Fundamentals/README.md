@@ -90,7 +90,7 @@ updated: 2026-05-31
 - [[01_Fundamentals/Linear_Algebra/Linear_Algebra_for_dummy]] — Linear_Algebra_for_dummy
 - [[01_Fundamentals/Linear_Algebra/Linear_Algebra]] — Linear_Algebra
 - [[01_Fundamentals/README_for_dummy.md|README_for_dummy]]
-- [[90_Learn/AI_Basics_Gap_Analysis|AI 基础入门缺口分析]] — 入门内容覆盖度分析与补全追踪
+- [[_meta/AI_Basics_Gap_Analysis|AI 基础入门缺口分析]] — 入门内容覆盖度分析与补全追踪
 
 ## 相关页面
 - [[01_Fundamentals/Information_Theory/README|信息论基础 (Information Theory)]]

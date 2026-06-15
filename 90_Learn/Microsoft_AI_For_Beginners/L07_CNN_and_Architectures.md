@@ -134,7 +134,7 @@ model = keras.Sequential([
 
 ## 相关阅读
 
-- 课程索引：[[90_Learn/Microsoft_AI_For_Beginners]]
+- 课程索引：[[90_Learn/Courses/Microsoft_AI_For_Beginners]]
 - 本库相关页面：
   - [[05_Computer_Vision/Image_Classification_Detection/Image_Classification_Detection]]
   - [[05_Computer_Vision/CV-in-nutshell]]

@@ -483,6 +483,15 @@ model = RandomForestClassifier(**params)
 
 ---
 
+## 工具实现（本章节）
+
+本文讲实验追踪的**概念与选型**。具体工具的命令、配置、部署：
+
+- [[MLflow_Deep_Dive]] — MLflow：开源 ML 生命周期管理
+- [[ClearML_Deep_Dive]] — ClearML：一站式开源 ML 平台
+
+---
+
 ## 8. 参考资源
 
 - [MLflow 官方文档](https://mlflow.org/docs/latest/index.html)

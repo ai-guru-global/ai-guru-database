@@ -18,7 +18,7 @@ source_url: "https://github.com/microsoft/generative-ai-for-beginners/blob/main/
 - **开发者论坛**: https://aka.ms/azureaifoundry/forum
 
 > 课程在本库中的完整映射、学习路径建议以及每节课对应的内部章节链接，请查看：
-> **[[90_Learn/Microsoft_GenAI_For_Beginners]]**
+> **[[90_Learn/Courses/Microsoft_GenAI_For_Beginners]]**
 
 ## 课程资源
 
@@ -33,4 +33,4 @@ source_url: "https://github.com/microsoft/generative-ai-for-beginners/blob/main/
 ## 相关引用
 
 - [[references/microsoft-ai-for-beginners]] — Microsoft AI For Beginners（12 周基础课程）引用索引
-- [[90_Learn/Microsoft_AI_For_Beginners]] — AI 基础课程映射
+- [[90_Learn/Courses/Microsoft_AI_For_Beginners]] — AI 基础课程映射

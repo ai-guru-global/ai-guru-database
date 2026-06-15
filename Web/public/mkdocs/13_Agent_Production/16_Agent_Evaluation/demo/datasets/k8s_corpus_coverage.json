@@ -1,0 +1,377 @@
+{
+  "metadata": {
+    "category": "k8s_corpus_coverage",
+    "description": "Kubernetes 语料库完整度评估测试集",
+    "total": 40,
+    "dimensions": {
+      "core_concepts": "核心概念覆盖 (30%)",
+      "api_objects": "API 对象完整性 (25%)",
+      "ops_knowledge": "运维知识覆盖 (25%)",
+      "version_timeliness": "版本时效性 (20%)"
+    },
+    "version": "2026 Q2",
+    "target_agents": ["qwen-agent", "kimi-agent", "minimax-agent"]
+  },
+  "questions": [
+    {
+      "id": "kc001",
+      "question": "请详细解释 Kubernetes Pod 的生命周期，包括各阶段（Pending、Running、Succeeded、Failed、Unknown）的含义和转换条件。",
+      "expected_answer": "Pod 生命周期包含 Pending（等待调度或拉取镜像）、Running（至少一个容器运行中）、Succeeded（所有容器成功终止）、Failed（至少一个容器失败终止）、Unknown（无法获取状态）。转换由 kubelet 上报状态驱动。",
+      "category": "core_concepts",
+      "subcategory": "Pod",
+      "difficulty": "easy",
+      "keywords": ["Pod", "生命周期", "Pending", "Running", "Succeeded", "Failed"]
+    },
+    {
+      "id": "kc002",
+      "question": "Kubernetes Service 有哪几种类型？各自的工作原理和适用场景是什么？",
+      "expected_answer": "ClusterIP（集群内部访问）、NodePort（通过节点端口暴露）、LoadBalancer（云厂商负载均衡器）、ExternalName（CNAME 映射）。ClusterIP 通过 kube-proxy 的 iptables/IPVS 规则实现。",
+      "category": "core_concepts",
+      "subcategory": "Service",
+      "difficulty": "easy",
+      "keywords": ["Service", "ClusterIP", "NodePort", "LoadBalancer", "ExternalName"]
+    },
+    {
+      "id": "kc003",
+      "question": "Deployment 和 StatefulSet 的核心区别是什么？分别适用于什么场景？",
+      "expected_answer": "Deployment 适用于无状态应用，Pod 可互换，支持滚动更新。StatefulSet 适用于有状态应用，提供稳定的网络标识（固定 Pod 名称）、持久化存储（PVC 绑定）和有序部署/删除。",
+      "category": "core_concepts",
+      "subcategory": "Workload",
+      "difficulty": "easy",
+      "keywords": ["Deployment", "StatefulSet", "有状态", "无状态", "滚动更新"]
+    },
+    {
+      "id": "kc004",
+      "question": "请解释 DaemonSet 的工作原理，以及它如何确保每个节点上运行一个 Pod 副本。",
+      "expected_answer": "DaemonSet 确保每个（或指定）节点运行一个 Pod 副本。新节点加入时自动创建 Pod，节点删除时自动清理。使用 nodeAffinity 和 tolerations 控制调度。常用于日志收集(fluentd)、监控(node-exporter)、网络插件(calico)。",
+      "category": "core_concepts",
+      "subcategory": "DaemonSet",
+      "difficulty": "medium",
+      "keywords": ["DaemonSet", "节点", "日志收集", "监控", "tolerations"]
+    },
+    {
+      "id": "kc005",
+      "question": "Job 和 CronJob 在 Kubernetes 中的区别和用法是什么？请给出一个 CronJob 的 YAML 示例。",
+      "expected_answer": "Job 运行一次性任务直到成功完成。CronJob 按 cron 时间表周期性创建 Job。CronJob 支持 concurrencyPolicy（Allow/Forbid/Replace）、startingDeadlineSeconds、successfulJobsHistoryLimit 等配置。",
+      "category": "core_concepts",
+      "subcategory": "Job",
+      "difficulty": "medium",
+      "keywords": ["Job", "CronJob", "定时任务", "concurrencyPolicy", "cron"]
+    },
+    {
+      "id": "kc006",
+      "question": "ConfigMap 和 Secret 有什么区别？Secret 的数据是如何存储的？是否安全？",
+      "expected_answer": "ConfigMap 存储非敏感配置，Secret 存储敏感数据。Secret 数据 base64 编码存储在 etcd 中，默认不加密。需要启用 EncryptionConfiguration 进行 etcd 加密，或使用外部 KMS。Secret 可通过 Volume 或环境变量注入 Pod。",
+      "category": "core_concepts",
+      "subcategory": "ConfigMap_Secret",
+      "difficulty": "medium",
+      "keywords": ["ConfigMap", "Secret", "base64", "etcd", "加密", "EncryptionConfiguration"]
+    },
+    {
+      "id": "kc007",
+      "question": "请解释 Kubernetes 的命名空间（Namespace）的作用，以及如何使用 ResourceQuota 和 LimitRange 进行资源管理。",
+      "expected_answer": "Namespace 提供逻辑隔离，用于多租户和环境分离。ResourceQuota 限制命名空间的总资源用量（CPU/内存/Pod数）。LimitRange 设置单个容器的默认和最大/最小资源限制。两者配合实现精细化资源管理。",
+      "category": "core_concepts",
+      "subcategory": "Namespace",
+      "difficulty": "medium",
+      "keywords": ["Namespace", "ResourceQuota", "LimitRange", "多租户", "资源管理"]
+    },
+    {
+      "id": "kc008",
+      "question": "Kubernetes 的 Label 和 Selector 机制是如何工作的？请说明 matchLabels 和 matchExpressions 的区别。",
+      "expected_answer": "Label 是附加到对象上的键值对。Selector 用于筛选对象。matchLabels 做精确匹配（AND 逻辑），matchExpressions 支持 In/NotIn/Exists/DoesNotExist 操作符，更灵活。Service/Deployment/NetworkPolicy 等都依赖 selector 关联 Pod。",
+      "category": "core_concepts",
+      "subcategory": "Labels",
+      "difficulty": "easy",
+      "keywords": ["Label", "Selector", "matchLabels", "matchExpressions"]
+    },
+    {
+      "id": "kc009",
+      "question": "请解释 Kubernetes Init Container 的作用和工作原理，并给出一个实际使用场景。",
+      "expected_answer": "Init Container 在主容器启动前按顺序运行，用于初始化工作。所有 Init Container 必须成功完成后主容器才启动。场景：等待依赖服务就绪、下载配置文件、初始化数据库 schema、设置文件权限。",
+      "category": "core_concepts",
+      "subcategory": "InitContainer",
+      "difficulty": "medium",
+      "keywords": ["Init Container", "初始化", "顺序执行", "依赖等待"]
+    },
+    {
+      "id": "kc010",
+      "question": "Kubernetes 中的 Taint 和 Toleration 机制是如何工作的？NoSchedule、PreferNoSchedule、NoExecute 有何区别？",
+      "expected_answer": "Taint 标记在节点上排斥 Pod，Toleration 允许 Pod 容忍特定 Taint。NoSchedule 禁止调度。PreferNoSchedule 尽量避免调度。NoExecute 禁止调度且驱逐已存在的不容忍 Pod。tolerationSeconds 控制驱逐等待时间。",
+      "category": "core_concepts",
+      "subcategory": "Scheduling",
+      "difficulty": "hard",
+      "keywords": ["Taint", "Toleration", "NoSchedule", "NoExecute", "调度"]
+    },
+    {
+      "id": "kc011",
+      "question": "请详细解释 Kubernetes RBAC 授权模型，包括 Role、ClusterRole、RoleBinding、ClusterRoleBinding 的关系。",
+      "expected_answer": "RBAC 通过 Role（命名空间级）和 ClusterRole（集群级）定义权限规则（apiGroups/resources/verbs）。RoleBinding 将 Role 绑定到 Subject（User/Group/ServiceAccount），ClusterRoleBinding 做集群级绑定。支持聚合 ClusterRole。",
+      "category": "api_objects",
+      "subcategory": "RBAC",
+      "difficulty": "medium",
+      "keywords": ["RBAC", "Role", "ClusterRole", "RoleBinding", "ServiceAccount"]
+    },
+    {
+      "id": "kc012",
+      "question": "NetworkPolicy 如何控制 Pod 之间的网络流量？请写一个只允许特定 namespace 访问的 NetworkPolicy YAML。",
+      "expected_answer": "NetworkPolicy 通过 podSelector 选择目标 Pod，ingress/egress 规则定义入站/出站策略。支持 podSelector、namespaceSelector、ipBlock 三种选择器。需要 CNI 插件（Calico/Cilium）支持。默认不隔离，创建 NetworkPolicy 后才生效。",
+      "category": "api_objects",
+      "subcategory": "NetworkPolicy",
+      "difficulty": "hard",
+      "keywords": ["NetworkPolicy", "ingress", "egress", "namespaceSelector", "CNI"]
+    },
+    {
+      "id": "kc013",
+      "question": "Ingress 和 Gateway API 各自的架构和区别是什么？为什么 Gateway API 被认为是 Ingress 的演进方向？",
+      "expected_answer": "Ingress 通过 IngressController 实现 L7 路由，配置简单但扩展性有限。Gateway API 引入 GatewayClass/Gateway/HTTPRoute 三层模型，支持角色分离（基础设施/集群/应用）、跨命名空间路由、L4/L7 统一、更丰富的匹配规则。K8s 1.31+ 推荐使用。",
+      "category": "api_objects",
+      "subcategory": "Ingress",
+      "difficulty": "hard",
+      "keywords": ["Ingress", "Gateway API", "HTTPRoute", "GatewayClass", "L7路由"]
+    },
+    {
+      "id": "kc014",
+      "question": "Kubernetes PersistentVolume、PersistentVolumeClaim 和 StorageClass 三者的关系是什么？动态供给是如何工作的？",
+      "expected_answer": "PV 是集群级存储资源。PVC 是用户的存储请求。StorageClass 定义存储供给策略。动态供给流程：用户创建 PVC 指定 StorageClass → provisioner 自动创建 PV → PVC 绑定 PV。回收策略包括 Retain/Delete/Recycle。",
+      "category": "api_objects",
+      "subcategory": "Storage",
+      "difficulty": "medium",
+      "keywords": ["PV", "PVC", "StorageClass", "动态供给", "provisioner"]
+    },
+    {
+      "id": "kc015",
+      "question": "HPA（Horizontal Pod Autoscaler）和 VPA（Vertical Pod Autoscaler）的工作原理和区别是什么？",
+      "expected_answer": "HPA 根据指标（CPU/内存/自定义）自动调整 Pod 副本数，通过 metrics-server 获取数据，使用算法 desiredReplicas = ceil(currentMetricValue/desiredMetricValue × currentReplicas)。VPA 自动调整单个 Pod 的资源请求值。两者不建议同时使用 CPU 指标。",
+      "category": "api_objects",
+      "subcategory": "Autoscaling",
+      "difficulty": "hard",
+      "keywords": ["HPA", "VPA", "自动扩缩容", "metrics-server", "副本数"]
+    },
+    {
+      "id": "kc016",
+      "question": "PodDisruptionBudget (PDB) 的作用是什么？如何配置以确保高可用？",
+      "expected_answer": "PDB 限制自愿中断（如节点维护、升级）时同时不可用的 Pod 数量。通过 minAvailable 或 maxUnavailable 配置。例如 minAvailable: 2 确保至少 2 个 Pod 可用。PDB 不影响非自愿中断（节点故障）。配合 Pod Anti-Affinity 使用效果更好。",
+      "category": "api_objects",
+      "subcategory": "PDB",
+      "difficulty": "hard",
+      "keywords": ["PDB", "PodDisruptionBudget", "高可用", "minAvailable", "自愿中断"]
+    },
+    {
+      "id": "kc017",
+      "question": "Kubernetes ServiceAccount 和 Token 机制在 1.24+ 版本有什么变化？如何正确管理服务账户凭据？",
+      "expected_answer": "K8s 1.24+ 不再自动为 ServiceAccount 创建永久 Secret Token。改用 TokenRequest API 获取有时效的绑定 Token（默认1小时）。投射卷（projected volume）自动挂载短期 Token。需要长期 Token 时需手动创建 Secret 并添加注解。",
+      "category": "api_objects",
+      "subcategory": "ServiceAccount",
+      "difficulty": "hard",
+      "keywords": ["ServiceAccount", "Token", "TokenRequest", "projected volume", "1.24"]
+    },
+    {
+      "id": "kc018",
+      "question": "CustomResourceDefinition (CRD) 和 Operator 模式在 Kubernetes 中的作用是什么？请举例说明。",
+      "expected_answer": "CRD 扩展 K8s API 定义自定义资源类型。Operator 封装运维经验，通过 Controller 自动管理 CRD 实例的生命周期。例如 MySQL Operator 管理 MySQL 集群的部署、备份、故障转移。Operator SDK/kubebuilder 简化开发。",
+      "category": "api_objects",
+      "subcategory": "CRD",
+      "difficulty": "hard",
+      "keywords": ["CRD", "Operator", "Controller", "自定义资源", "kubebuilder"]
+    },
+    {
+      "id": "kc019",
+      "question": "如何诊断 Pod 处于 CrashLoopBackOff 状态？请给出完整的排查步骤。",
+      "expected_answer": "1. kubectl describe pod 查看 Events 和退出码。2. kubectl logs --previous 查看崩溃前日志。3. 检查资源限制（OOMKilled 退出码 137）。4. 检查健康检查配置（liveness probe 过严）。5. 检查镜像和启动命令。6. kubectl exec 进入容器调试。7. 检查依赖服务是否就绪。",
+      "category": "ops_knowledge",
+      "subcategory": "Troubleshooting",
+      "difficulty": "medium",
+      "keywords": ["CrashLoopBackOff", "排查", "日志", "OOMKilled", "liveness probe"]
+    },
+    {
+      "id": "kc020",
+      "question": "节点 NotReady 状态的常见原因和排查方法是什么？",
+      "expected_answer": "常见原因：kubelet 进程异常、容器运行时故障、网络不通、磁盘满、内存不足。排查：1. kubectl describe node 查看 Conditions。2. SSH 到节点检查 kubelet 日志。3. systemctl status kubelet/containerd。4. 检查 /var/log/syslog。5. 检查磁盘和内存。6. 检查 CNI 插件状态。",
+      "category": "ops_knowledge",
+      "subcategory": "Troubleshooting",
+      "difficulty": "medium",
+      "keywords": ["NotReady", "kubelet", "节点故障", "容器运行时", "排查"]
+    },
+    {
+      "id": "kc021",
+      "question": "如何正确配置 Kubernetes 的 Liveness Probe、Readiness Probe 和 Startup Probe？各自的最佳实践是什么？",
+      "expected_answer": "Liveness 检测容器是否存活（失败则重启）。Readiness 检测是否可接收流量（失败则从 Service 移除）。Startup 用于启动慢的容器（成功后交给 liveness/readiness）。最佳实践：分开 liveness 和 readiness 端点、设置合理的 initialDelaySeconds 和 failureThreshold、使用 HTTP 检查优于 TCP。",
+      "category": "ops_knowledge",
+      "subcategory": "Health_Check",
+      "difficulty": "medium",
+      "keywords": ["Liveness", "Readiness", "Startup Probe", "健康检查", "最佳实践"]
+    },
+    {
+      "id": "kc022",
+      "question": "Kubernetes 集群升级的最佳实践是什么？如何从 1.30 升级到 1.31？",
+      "expected_answer": "1. 阅读 changelog 和 deprecation 指南。2. 备份 etcd。3. 先升级控制平面（一个版本一跳）。4. 使用 kubectl drain 逐个升级工作节点。5. 验证组件兼容性（CNI/CSI/Ingress Controller）。6. 运行 e2e 测试。kubeadm upgrade plan → kubeadm upgrade apply。节点版本偏差不超过 N-2。",
+      "category": "ops_knowledge",
+      "subcategory": "Upgrade",
+      "difficulty": "hard",
+      "keywords": ["升级", "kubeadm", "etcd备份", "drain", "版本偏差"]
+    },
+    {
+      "id": "kc023",
+      "question": "如何使用 Prometheus + Grafana 监控 Kubernetes 集群？核心监控指标有哪些？",
+      "expected_answer": "部署 kube-prometheus-stack（含 Prometheus Operator/Grafana/AlertManager）。核心指标：节点（CPU/内存/磁盘/网络）、Pod（资源使用/重启次数/OOM）、API Server（请求延迟/错误率）、etcd（延迟/磁盘IO）、调度器（调度延迟/失败率）。USE/RED 方法论。",
+      "category": "ops_knowledge",
+      "subcategory": "Monitoring",
+      "difficulty": "medium",
+      "keywords": ["Prometheus", "Grafana", "监控", "kube-prometheus-stack", "指标"]
+    },
+    {
+      "id": "kc024",
+      "question": "Kubernetes etcd 的备份和恢复操作步骤是什么？",
+      "expected_answer": "备份：etcdctl snapshot save /path/backup.db --endpoints=https://127.0.0.1:2379 --cacert --cert --key。恢复：1. 停止 kube-apiserver 和 etcd。2. etcdctl snapshot restore backup.db --data-dir=/new/path。3. 更新 etcd 配置指向新数据目录。4. 重启 etcd 和 apiserver。定期备份建议 cron 每小时一次。",
+      "category": "ops_knowledge",
+      "subcategory": "Backup",
+      "difficulty": "hard",
+      "keywords": ["etcd", "备份", "恢复", "snapshot", "etcdctl"]
+    },
+    {
+      "id": "kc025",
+      "question": "如何对 Kubernetes 集群进行安全加固？请列出关键措施。",
+      "expected_answer": "1. 启用 RBAC 最小权限。2. 使用 NetworkPolicy 隔离。3. Pod Security Standards (Restricted)。4. etcd 加密（EncryptionConfiguration）。5. 审计日志。6. 镜像签名验证。7. 禁用匿名访问。8. 定期轮换证书。9. 使用 Falco/OPA Gatekeeper 运行时安全。10. CIS Benchmark 扫描。",
+      "category": "ops_knowledge",
+      "subcategory": "Security",
+      "difficulty": "hard",
+      "keywords": ["安全加固", "RBAC", "NetworkPolicy", "Pod Security", "审计日志"]
+    },
+    {
+      "id": "kc026",
+      "question": "kubectl top、kubectl debug 和 ephemeral containers 的使用场景和方法是什么？",
+      "expected_answer": "kubectl top pod/node 查看实时资源使用（需 metrics-server）。kubectl debug 创建调试容器（K8s 1.25+ GA），可以 --target 附加到运行中 Pod、--copy-to 创建副本调试、--node 调试节点。Ephemeral containers 不需要预先在 spec 中定义，适合排查 distroless 镜像问题。",
+      "category": "ops_knowledge",
+      "subcategory": "Debug",
+      "difficulty": "medium",
+      "keywords": ["kubectl debug", "ephemeral containers", "kubectl top", "调试"]
+    },
+    {
+      "id": "kc027",
+      "question": "Kubernetes 中的资源请求（requests）和限制（limits）如何影响 QoS 类别？BestEffort、Burstable、Guaranteed 的区别是什么？",
+      "expected_answer": "Guaranteed: 所有容器都设置了 requests=limits。Burstable: 至少一个容器设置了 requests 但不是 Guaranteed。BestEffort: 没有设置任何 requests/limits。OOM 优先级：BestEffort > Burstable > Guaranteed。节点资源不足时先驱逐 BestEffort。",
+      "category": "ops_knowledge",
+      "subcategory": "QoS",
+      "difficulty": "medium",
+      "keywords": ["QoS", "requests", "limits", "Guaranteed", "Burstable", "BestEffort"]
+    },
+    {
+      "id": "kc028",
+      "question": "Kubernetes 1.31 引入的 Sidecar Container（原生支持）功能是什么？与传统 sidecar 模式有何不同？",
+      "expected_answer": "K8s 1.31 GA 的 Sidecar Container 通过 initContainers 中设置 restartPolicy: Always 实现。与传统 sidecar 区别：有明确的启动顺序（在主容器前启动）、在 Pod 终止时最后关闭、不阻塞 Job 完成。解决了 Istio sidecar 退出顺序、Job sidecar 不终止等长期痛点。",
+      "category": "version_timeliness",
+      "subcategory": "K8s_1.31",
+      "difficulty": "hard",
+      "keywords": ["Sidecar Container", "1.31", "restartPolicy", "initContainers", "Istio"]
+    },
+    {
+      "id": "kc029",
+      "question": "Kubernetes Gateway API 在最新版本中的状态和关键特性是什么？",
+      "expected_answer": "Gateway API v1.2+ (2025/2026)：HTTPRoute/GRPCRoute GA，TLSRoute/TCPRoute/UDPRoute Beta。支持 BackendTLSPolicy（后端 TLS 配置）、HTTPRouteFilter（请求/响应修改）、跨命名空间引用（ReferenceGrant）。基础设施 API（GatewayClass 由平台管理，Gateway 由集群管理员，HTTPRoute 由应用开发者）。",
+      "category": "version_timeliness",
+      "subcategory": "Gateway_API",
+      "difficulty": "hard",
+      "keywords": ["Gateway API", "HTTPRoute", "GRPCRoute", "TLSRoute", "ReferenceGrant"]
+    },
+    {
+      "id": "kc030",
+      "question": "Kubernetes 1.30-1.32 版本中有哪些重要的 GA（正式发布）特性？",
+      "expected_answer": "1.30: Structured Authorization (CEL), Pod Scheduling Readiness, Min Domains in Pod Topology Spread。1.31: Sidecar Containers GA, AppArmor GA, Pod Lifecycle Sleep Action。1.32: Custom Resource Field Selectors, Auto-remove PVC Created by StatefulSet, Structured Authentication Config。",
+      "category": "version_timeliness",
+      "subcategory": "K8s_versions",
+      "difficulty": "hard",
+      "keywords": ["1.30", "1.31", "1.32", "GA特性", "Sidecar", "CEL"]
+    },
+    {
+      "id": "kc031",
+      "question": "Kubernetes 中已废弃的 API 版本有哪些？如何迁移 extensions/v1beta1 到新版 API？",
+      "expected_answer": "主要废弃：extensions/v1beta1 Ingress → networking.k8s.io/v1 (1.22移除)，policy/v1beta1 PodSecurityPolicy → Pod Security Admission (1.25移除)，batch/v1beta1 CronJob → batch/v1 (1.25移除)。迁移工具：kubectl convert、kubent（检测废弃API）、Pluto。建议 CI/CD 中集成废弃 API 检测。",
+      "category": "version_timeliness",
+      "subcategory": "Deprecation",
+      "difficulty": "hard",
+      "keywords": ["废弃API", "extensions/v1beta1", "PodSecurityPolicy", "迁移", "kubent"]
+    },
+    {
+      "id": "kc032",
+      "question": "Kubernetes 中 ValidatingAdmissionPolicy（CEL 表达式）是什么？它如何替代部分 OPA/Gatekeeper 的功能？",
+      "expected_answer": "ValidatingAdmissionPolicy (1.30 GA) 使用 CEL 表达式在 API Server 层直接验证请求，无需外部 webhook。比 OPA/Gatekeeper 更轻量、延迟更低。支持 paramKind 参数化策略、messageExpression 自定义错误消息、auditAnnotations 审计。适合简单验证，复杂逻辑仍需 Gatekeeper。",
+      "category": "version_timeliness",
+      "subcategory": "Admission",
+      "difficulty": "hard",
+      "keywords": ["ValidatingAdmissionPolicy", "CEL", "OPA", "Gatekeeper", "Admission"]
+    },
+    {
+      "id": "kc033",
+      "question": "请解释 Kubernetes 中 kube-proxy 的 iptables 模式和 IPVS 模式的区别和性能差异。",
+      "expected_answer": "iptables 模式：规则数与 Service 数成正比，查找复杂度 O(n)，大规模集群（>1000 Service）性能下降。IPVS 模式：使用哈希表，查找 O(1)，支持更多负载均衡算法（rr/lc/dh/sh/sed/nq），连接追踪更高效。建议 >500 Service 使用 IPVS。",
+      "category": "core_concepts",
+      "subcategory": "Networking",
+      "difficulty": "hard",
+      "keywords": ["kube-proxy", "iptables", "IPVS", "负载均衡", "性能"]
+    },
+    {
+      "id": "kc034",
+      "question": "Kubernetes Pod 的 DNS 解析是如何工作的？CoreDNS 的配置和优化方法是什么？",
+      "expected_answer": "Pod 默认使用 CoreDNS（ClusterIP）。解析顺序：<svc>.<ns>.svc.cluster.local → <svc>.<ns>.svc → <svc>。dnsPolicy: ClusterFirst（默认）/Default/None。CoreDNS 优化：autopath 插件减少 DNS 查询次数、调整 cache TTL、NodeLocal DNSCache（每节点缓存降低延迟）。",
+      "category": "core_concepts",
+      "subcategory": "DNS",
+      "difficulty": "hard",
+      "keywords": ["CoreDNS", "DNS", "dnsPolicy", "NodeLocal DNSCache", "autopath"]
+    },
+    {
+      "id": "kc035",
+      "question": "如何设计一个 Kubernetes 多集群管理方案？常用的工具和模式有哪些？",
+      "expected_answer": "方案：1. Cluster API（声明式集群生命周期管理）。2. KubeFed（联邦集群资源分发）。3. Karmada（跨集群调度）。4. Submariner（跨集群网络）。5. Istio Multi-cluster（跨集群服务网格）。模式：Hub-spoke（中心管控）、Flat（对等互联）。考虑：网络连通、RBAC 同步、配置一致性。",
+      "category": "ops_knowledge",
+      "subcategory": "Multi_Cluster",
+      "difficulty": "hard",
+      "keywords": ["多集群", "Cluster API", "Karmada", "KubeFed", "Submariner"]
+    },
+    {
+      "id": "kc036",
+      "question": "Helm Chart 的最佳实践是什么？如何组织复杂应用的 Helm Chart？",
+      "expected_answer": "最佳实践：1. values.yaml 提供合理默认值。2. 使用 _helpers.tpl 定义公共模板。3. 支持自定义 annotations/labels。4. 使用 subchart 组织依赖。5. 提供 NOTES.txt 使用说明。6. 使用 helm test 验证。7. 语义化版本号。8. Chart.yaml 正确声明依赖。9. 支持 values 覆盖生产/测试配置。",
+      "category": "ops_knowledge",
+      "subcategory": "Helm",
+      "difficulty": "medium",
+      "keywords": ["Helm", "Chart", "values.yaml", "subchart", "最佳实践"]
+    },
+    {
+      "id": "kc037",
+      "question": "Kubernetes 中的 Pod Topology Spread Constraints 是什么？如何实现跨可用区的高可用部署？",
+      "expected_answer": "Pod Topology Spread Constraints 控制 Pod 在拓扑域（节点/可用区/区域）间的分布。topologyKey 定义拓扑维度，maxSkew 限制最大偏差，whenUnsatisfiable 定义不满足时行为（DoNotSchedule/ScheduleAnyway）。配合 minDomains（1.30 GA）确保 Pod 分布在足够多的域中。",
+      "category": "api_objects",
+      "subcategory": "TopologySpread",
+      "difficulty": "hard",
+      "keywords": ["Topology Spread", "maxSkew", "topologyKey", "可用区", "高可用"]
+    },
+    {
+      "id": "kc038",
+      "question": "在 Kubernetes 中如何实现蓝绿部署和金丝雀发布？",
+      "expected_answer": "蓝绿：部署新版本 Deployment，通过 Service selector 切换流量。金丝雀：使用 Deployment 多版本 + Service 权重（需 Istio/Nginx Ingress）、Argo Rollouts（原生支持 canary/bluegreen）、Flagger（自动化渐进式交付）。Argo Rollouts 支持 analysis（指标检查）、自动回滚。",
+      "category": "ops_knowledge",
+      "subcategory": "Deployment_Strategy",
+      "difficulty": "medium",
+      "keywords": ["蓝绿部署", "金丝雀", "Argo Rollouts", "Flagger", "渐进式交付"]
+    },
+    {
+      "id": "kc039",
+      "question": "Kubernetes 1.32 中的 Dynamic Resource Allocation (DRA) 是什么？它如何改变 GPU 等特殊资源的管理？",
+      "expected_answer": "DRA (1.32 Beta) 为 GPU/FPGA/SR-IOV 等设备提供类似 PV/PVC 的声明式管理。ResourceClaim 替代 device plugin 的 extended resource。支持结构化参数（驱动不参与调度）、动态分配、资源共享。解决 device plugin 的限制：无法表达资源拓扑、缺乏调度约束、不支持请求特定设备属性。",
+      "category": "version_timeliness",
+      "subcategory": "DRA",
+      "difficulty": "hard",
+      "keywords": ["DRA", "Dynamic Resource Allocation", "ResourceClaim", "GPU", "1.32"]
+    },
+    {
+      "id": "kc040",
+      "question": "请对比 Kubernetes 的几种 CNI 网络插件：Calico、Cilium、Flannel 的特点和适用场景。",
+      "expected_answer": "Flannel：简单 overlay（VXLAN），适合小规模。Calico：BGP/IPIP/VXLAN，支持 NetworkPolicy，高性能。Cilium：基于 eBPF，L3/L4/L7 策略，Service Mesh（无需 sidecar），Hubble 网络可观测，性能最优但要求较新内核(5.10+)。大规模生产推荐 Calico 或 Cilium。",
+      "category": "core_concepts",
+      "subcategory": "CNI",
+      "difficulty": "hard",
+      "keywords": ["CNI", "Calico", "Cilium", "Flannel", "eBPF", "NetworkPolicy"]
+    }
+  ]
+}

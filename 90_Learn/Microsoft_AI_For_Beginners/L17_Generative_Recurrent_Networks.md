@@ -142,5 +142,5 @@ def generate(model, prompt, n_chars=200, temperature=1.0):
 
 ## 相关阅读
 
-- 课程索引：[[90_Learn/Microsoft_AI_For_Beginners]]
+- 课程索引：[[90_Learn/Courses/Microsoft_AI_For_Beginners]]
 - 本库相关页面：[[04_NLP_LLMs/Sequence_Models/Sequence_Models]]

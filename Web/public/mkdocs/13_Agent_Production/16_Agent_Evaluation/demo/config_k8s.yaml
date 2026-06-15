@@ -1,0 +1,80 @@
+# ============================================================
+# K8s 专项评测配置 - Qwen / Kimi / Minimax
+# ============================================================
+
+evaluation:
+  name: "K8s Domain Evaluation - Qwen vs Kimi vs Minimax"
+  version: "1.0.0"
+  mode: "simulation"
+  parallel_workers: 3
+  timeout_per_task: 60
+
+# K8s 专项评估权重（调整为 K8s 领域专项）
+scoring:
+  weights:
+    k8s_corpus_coverage: 0.40    # 语料库完整度
+    k8s_qa_ability: 0.35         # 问答能力
+    cost_performance: 0.10       # 性价比
+    interaction: 0.10            # 交互质量
+    safety: 0.05                 # 安全合规
+
+  # K8s 语料库覆盖度子权重
+  k8s_corpus_sub_weights:
+    core_concepts: 0.30          # 核心概念覆盖
+    api_objects: 0.25            # API 对象完整性
+    ops_knowledge: 0.25          # 运维知识覆盖
+    version_timeliness: 0.20     # 版本时效性
+
+  # K8s 问答能力子权重
+  k8s_qa_sub_weights:
+    basic_qa: 0.30               # 基础知识问答准确率
+    config_writing: 0.25         # 配置编写和调试能力
+    cluster_ops: 0.25            # 集群管理和运维场景
+    multi_turn: 0.20             # 多轮对话上下文理解
+
+  grades:
+    S: { min: 90, label: "卓越" }
+    A: { min: 80, label: "优秀" }
+    B: { min: 70, label: "良好" }
+    C: { min: 60, label: "合格" }
+    D: { min: 0,  label: "待改进" }
+
+# K8s 数据集
+datasets:
+  k8s_corpus_coverage: "datasets/k8s_corpus_coverage.json"
+  k8s_qa_benchmark: "datasets/k8s_qa_benchmark.json"
+
+# 评测 Agent
+agents:
+  - id: "qwen-k8s"
+    name: "通义千问 Qwen-Max"
+    vendor: "阿里云"
+    category: "domestic_llm"
+    plugin: "mock_plugin"
+    config:
+      model: "qwen-max-2025"
+      description: "阿里云通义千问旗舰模型，云原生领域优化"
+
+  - id: "kimi-k8s"
+    name: "Kimi (月之暗面)"
+    vendor: "月之暗面"
+    category: "domestic_llm"
+    plugin: "mock_plugin"
+    config:
+      model: "moonshot-v1-128k"
+      description: "月之暗面 Kimi，长上下文对话能力突出"
+
+  - id: "minimax-k8s"
+    name: "MiniMax abab7"
+    vendor: "MiniMax"
+    category: "domestic_llm"
+    plugin: "mock_plugin"
+    config:
+      model: "abab7-chat"
+      description: "MiniMax 最新 abab7 模型"
+
+# 输出
+output:
+  results_dir: "results"
+  report_format: "json"
+  leaderboard_path: "results/k8s_evaluation_results.json"

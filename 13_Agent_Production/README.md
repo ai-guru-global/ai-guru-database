@@ -17,6 +17,7 @@ updated: 2026-06-15
 
 ```
 13_Agent_Production/
+├── Agent_Foundations/      -- Agent 理论基础（协议、状态管理、MCP、路线图）
 ├── Agent_Harness/          -- Agent Harness 工程（架构、组件、多角色指南）
 ├── Agentic_Coding_Tools/   -- Agentic Coding 工具（Claude Code、Cursor、Devin 等）
 ├── Agent_Frameworks/       -- 多 Agent 开发框架（AutoGen、CrewAI、LangGraph、AgentScope）
@@ -33,6 +34,21 @@ updated: 2026-06-15
 ---
 
 ## 文档导航
+
+### Agent 理论基础 (Agent Foundations)
+
+| 文档 | 内容 | 适用角色 |
+|------|------|----------|
+| [AI Agents](./Agent_Foundations/AI_Agents.md) | Agent 全景综述：架构、推理、记忆、工具使用 | 全角色 |
+| [Agent-in-nutshell](./Agent_Foundations/Agent-in-nutshell.md) | Agent 速成指南 | 入门 |
+| [Agent Protocols 2026](./Agent_Foundations/Agent_Protocols_2026.md) | MCP、A2A、UCP 协议规范 | 架构师、开发者 |
+| [Agent Protocols Comparison](./Agent_Foundations/Agent_Protocols_Comparison_2026.md) | Agent 协议对比分析 | 选型参考 |
+| [Agent Protocols Detail](./Agent_Foundations/Agent_Protocols_Detail.md) | Agent 协议详解 | 架构师 |
+| [MCP Implementation Guide](./Agent_Foundations/MCP_Implementation_Guide.md) | MCP 协议实现指南 | 开发者 |
+| [Agent State Management](./Agent_Foundations/Agent_State_Management.md) | Agent 状态管理 | 架构师、开发者 |
+| [Agent Observability 2026](./Agent_Foundations/Agent_Observability_2026.md) | Agent 可观测性 | SRE、运维 |
+| [ADK Selection & Implementation](./Agent_Foundations/ADK_Selection_and_Implementation_2026.md) | ADK 选型与跨协议实战 | 开发者 |
+| [Agent Future Roadmap](./Agent_Foundations/Agent_Future_Roadmap_2026_2030.md) | Agent 2026-2030 路线图 | 前瞻研究 |
 
 ### Agent Harness 工程
 

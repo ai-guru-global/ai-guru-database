@@ -1,0 +1,11274 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="CNCF-level knowledge base for AI documentation">
+      
+      
+        <meta name="author" content="AI Guru Team">
+      
+      
+      
+        <link rel="prev" href="../High_Availability_2026/">
+      
+      
+        <link rel="next" href="../Edge_AI_2026/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Capacity Planning 2026 - AI Guru Database</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ai-capacity-planning-2026" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="AI Guru Database" class="md-header__button md-logo" aria-label="AI Guru Database" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AI Guru Database
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Capacity Planning 2026
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../.." class="md-tabs__link">
+          
+  
+  
+  Overview
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../00_AI_Introduction/AI_Fundamentals/" class="md-tabs__link">
+          
+  
+  
+  AI Introduction
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../01_Fundamentals/Linear_Algebra/Linear_Algebra/" class="md-tabs__link">
+          
+  
+  
+  Fundamentals
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../02_Machine_Learning/Supervised_Learning/Supervised_Learning/" class="md-tabs__link">
+          
+  
+  
+  Machine Learning
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../03_Deep_Learning/Neural_Network_Core/Neural_Network_Core/" class="md-tabs__link">
+          
+  
+  
+  Deep Learning
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../04_NLP_LLMs/Transformer_Revolution/Transformer_Revolution/" class="md-tabs__link">
+          
+  
+  
+  NLP & LLMs
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../05_Computer_Vision/Image_Classification_Detection/Image_Classification_Detection/" class="md-tabs__link">
+          
+  
+  
+  Computer Vision
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../06_Reinforcement_Learning/RL_Foundations/RL_Foundations/" class="md-tabs__link">
+          
+  
+  
+  Reinforcement Learning & Agents
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../07_Model_Training/" class="md-tabs__link">
+          
+  
+  
+  Model Training
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../08_Model_Evaluation/" class="md-tabs__link">
+          
+  
+  
+  Model Evaluation
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../09_Deployment_Inference/" class="md-tabs__link">
+          
+  
+  
+  Deployment & Inference
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../10_MLOps_Pipeline/" class="md-tabs__link">
+          
+  
+  
+  MLOps Pipeline
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../11_RAG_Systems/" class="md-tabs__link">
+          
+  
+  
+  RAG Systems
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+  Architecture & Infrastructure
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../13_Agent_Production/" class="md-tabs__link">
+          
+  
+  
+  Agent Production
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../14_AI_Gateway/README.md" class="md-tabs__link">
+          
+  
+  
+  AI Gateway
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../15_Testing/README.md" class="md-tabs__link">
+          
+  
+  
+  AI Testing
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../16_AI_Ops/README.md" class="md-tabs__link">
+          
+  
+  
+  AI Ops
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../17_AI_Coding/" class="md-tabs__link">
+          
+  
+  
+  AI Coding
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../18_Cloud_Ops_Agent/README.md" class="md-tabs__link">
+          
+  
+  
+  Cloud Ops Agent
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../19_Ethics_Safety/" class="md-tabs__link">
+          
+  
+  
+  Ethics & Safety
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../20_AI_Applications_Industry/" class="md-tabs__link">
+          
+  
+  
+  AI Applications & Industry
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../21_Talks/" class="md-tabs__link">
+          
+  
+  
+  Talks & Insights
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../22_Papers/" class="md-tabs__link">
+          
+  
+  
+  Papers
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../23_Interviews/" class="md-tabs__link">
+          
+  
+  
+  Interview Prep
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="AI Guru Database" class="md-nav__button md-logo" aria-label="AI Guru Database" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    AI Guru Database
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Overview
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Project README
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Introduction
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    AI Introduction
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../00_AI_Introduction/AI_Fundamentals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Fundamentals
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../00_AI_Introduction/AI_Technology_Landscape/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Technology Landscape
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../00_AI_Introduction/AI_History_Timeline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    History Timeline
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../00_AI_Introduction/AI_Tools_Practical_Guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tools & Practice Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../00_AI_Introduction/AI_Ethics_Society/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ethics & Society
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../00_AI_Introduction/AI_Future_Trends/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Future Trends
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../00_AI_Introduction/AI_Learning_Resources/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Learning Resources
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../00_AI_Introduction/AI_Classic_Cases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Classic Cases
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../00_AI_Introduction/AI_Glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Glossary
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../00_AI_Introduction/AI_Practical_Labs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Practical Labs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fundamentals
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Fundamentals
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_Fundamentals/Linear_Algebra/Linear_Algebra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linear Algebra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_Fundamentals/Probability_Statistics/Probability_Statistics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Probability & Statistics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_Fundamentals/Data_Structures_Algorithms/Data_Structures_Algorithms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Structures & Algorithms
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_Fundamentals/Distributed_Systems/Distributed_Systems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Distributed Systems
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_Fundamentals/AI_Hardware/AI_Hardware_2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Hardware 2026
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Machine Learning
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Machine Learning
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_Machine_Learning/Supervised_Learning/Supervised_Learning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Supervised Learning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_Machine_Learning/Unsupervised_Learning/Unsupervised_Learning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unsupervised Learning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_Machine_Learning/Feature_Engineering/Feature_Engineering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Feature Engineering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deep Learning
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Deep Learning
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_Deep_Learning/Neural_Network_Core/Neural_Network_Core/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Neural Network Core
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_Deep_Learning/Optimization/Optimization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Optimization
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_Deep_Learning/World_Models/World_Models_2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    World Models 2026
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_Deep_Learning/World_Models/JEPA_Architecture_2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    JEPA Architecture 2026
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NLP & LLMs
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    NLP & LLMs
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_NLP_LLMs/Transformer_Revolution/Transformer_Revolution/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Transformer Revolution
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_NLP_LLMs/LLM_Architectures/LLM_Architectures/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LLM Architectures
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_NLP_LLMs/Sequence_Models/Sequence_Models/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sequence Models
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fine-tuning Techniques
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/PEFT_2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PEFT 2026
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_NLP_LLMs/Prompt_Engineering/Prompt_Engineering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prompt Engineering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_NLP_LLMs/Multimodal_Models/Multimodal_Architectures_2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Multimodal Architectures 2026
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Computer Vision
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Computer Vision
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05_Computer_Vision/Image_Classification_Detection/Image_Classification_Detection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Image Classification & Detection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05_Computer_Vision/Segmentation/Segmentation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Segmentation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05_Computer_Vision/Generative_Models/Generative_Models/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Generative Models
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05_Computer_Vision/Video_Generation/Video_Generation_2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Video Generation 2026
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05_Computer_Vision/Multimodal_Vision/Multimodal_Vision/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Multimodal Vision
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reinforcement Learning & Agents
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Reinforcement Learning & Agents
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06_Reinforcement_Learning/RL_Foundations/RL_Foundations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RL Foundations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06_Reinforcement_Learning/Deep_RL/Deep_RL/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deep RL
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06_Reinforcement_Learning/AI_Agents/AI_Agents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Agents & Protocols
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06_Reinforcement_Learning/Robotics_Embodied_AI/Embodied_AI_2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Robotics & Embodied AI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Model Training
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Model Training
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07_Model_Training/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07_Model_Training/Model-Training-in-nutshell/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Training in Nutshell
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07_Model_Training/Model_Training_for_dummy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Training for Dummies
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07_Model_Training/Fine_tuning_Strategies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fine-tuning Strategies
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07_Model_Training/Mixed_Precision_Training/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mixed Precision Training
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07_Model_Training/Distributed_Training_2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Distributed Training 2026
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07_Model_Training/Training_Optimization_2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Training Optimization 2026
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07_Model_Training/Training_Monitoring_2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Training Monitoring 2026
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Model Evaluation
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Model Evaluation
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../08_Model_Evaluation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../08_Model_Evaluation/Evaluation-in-nutshell/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Evaluation in Nutshell
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../08_Model_Evaluation/Model_Evaluation_for_dummy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Evaluation for Dummies
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../08_Model_Evaluation/Model_Evaluation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Model Evaluation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../08_Model_Evaluation/Online_Evaluation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Online Evaluation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../08_Model_Evaluation/Evaluation_Automation_2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Evaluation Automation 2026
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deployment & Inference
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Deployment & Inference
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../09_Deployment_Inference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../09_Deployment_Inference/Inference-in-nutshell/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inference in Nutshell
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../09_Deployment_Inference/Deployment_Inference_for_dummy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deployment for Dummies
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../09_Deployment_Inference/Deployment_Inference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deployment & Inference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../09_Deployment_Inference/vLLM_Deep_Dive/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    vLLM Deep Dive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../09_Deployment_Inference/SGLang_Deep_Dive/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SGLang Deep Dive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../09_Deployment_Inference/Ollama_Deep_Dive/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ollama Deep Dive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../09_Deployment_Inference/LMDeploy_Deep_Dive/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LMDeploy Deep Dive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../09_Deployment_Inference/TensorRT_LLM_Deep_Dive/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TensorRT-LLM Deep Dive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../09_Deployment_Inference/llama_cpp_Deep_Dive/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    llama.cpp Deep Dive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../09_Deployment_Inference/LiteRT_Deep_Dive/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LiteRT Deep Dive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../09_Deployment_Inference/BentoML_Deep_Dive/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BentoML Deep Dive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../09_Deployment_Inference/JVM_AI_Deployment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    JVM AI Deployment
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MLOps Pipeline
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    MLOps Pipeline
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../10_MLOps_Pipeline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../10_MLOps_Pipeline/MLOps-in-nutshell/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MLOps in Nutshell
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../10_MLOps_Pipeline/MLOps_Pipeline_for_dummy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MLOps for Dummies
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../10_MLOps_Pipeline/MLOps_Pipeline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MLOps Pipeline
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RAG Systems
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_13">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    RAG Systems
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../11_RAG_Systems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../11_RAG_Systems/RAG-in-nutshell/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RAG in Nutshell
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../11_RAG_Systems/RAG_Systems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RAG Systems
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../11_RAG_Systems/RAG_Advanced_2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RAG Advanced 2026
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../11_RAG_Systems/Chroma_Deep_Dive/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chroma Deep Dive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../11_RAG_Systems/Milvus_Deep_Dive/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Milvus Deep Dive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../11_RAG_Systems/Qdrant_Deep_Dive/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Qdrant Deep Dive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../11_RAG_Systems/Weaviate_Deep_Dive/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Weaviate Deep Dive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../11_RAG_Systems/Haystack_Deep_Dive/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Haystack Deep Dive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../11_RAG_Systems/LlamaIndex_Deep_Dive/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LlamaIndex Deep Dive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../11_RAG_Systems/LangFlow_Deep_Dive/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LangFlow Deep Dive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../11_RAG_Systems/Flowise_Deep_Dive/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Flowise Deep Dive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../11_RAG_Systems/Dify_Deep_Dive/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dify Deep Dive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../11_RAG_Systems/Spring_AI_RAG_Deep_Dive/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spring AI RAG Deep Dive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_14" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_14" id="__nav_14_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture & Infrastructure
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_14_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_14">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Architecture & Infrastructure
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Architecture-in-nutshell/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture in Nutshell
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Architecture_Infrastructure_for_dummy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture for Dummies
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AI_System_Architecture_2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI System Architecture 2026
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AI_Infrastructure_2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Infrastructure 2026
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Multi_Tenant_Architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Multi-Tenant Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../High_Availability_2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    High Availability 2026
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capacity Planning 2026
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capacity Planning 2026
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 容量规划概述
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 容量规划概述">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 为什么需要容量规划？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 AI 系统容量规划特点
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 规划周期与目标
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 负载建模
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 负载建模">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 请求特征分析
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 流量预测模型
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 资源需求计算
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 资源需求计算">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-gpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 GPU 显存计算
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 吞吐量计算
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 成本估算
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 成本估算">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 成本模型
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 扩缩容策略
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. 扩缩容策略">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 自动扩缩容配置
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 扩缩容决策逻辑
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 容量规划案例
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. 容量规划案例">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 案例：对话系统容量规划
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 监控与告警
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. 监控与告警">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 关键监控指标
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 容量预警规则
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. 最佳实践
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. 最佳实践">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 规划原则
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 检查清单
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. 参考资源
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Edge_AI_2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Edge AI 2026
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AI_Cost_Optimization_2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Cost Optimization 2026
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Spring_AI_Architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spring AI Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_15" >
+        
+          
+          <label class="md-nav__link" for="__nav_15" id="__nav_15_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agent Production
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_15">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Agent Production
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../13_Agent_Production/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../13_Agent_Production/Enterprise_Agent/Agent_Production_2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agent Production 2026
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../13_Agent_Production/Agent_Frameworks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agent Frameworks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../13_Agent_Production/Agent_Platforms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agent Platforms
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../13_Agent_Production/Agent_Skills/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agent Skills
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../13_Agent_Production/Agent_Workflow/Workflow-in-nutshell/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agent Workflow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../13_Agent_Production/Agent_Harness/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agent Harness
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../13_Agent_Production/16_Agent_Evaluation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agent Evaluation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../13_Agent_Production/Memory_Infrastructure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Memory Infrastructure
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../13_Agent_Production/Agentic_Coding_Tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agentic Coding Tools
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../13_Agent_Production/23_OpenClaw_Ecosystem/OpenClaw_Ecosystem/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OpenClaw Ecosystem
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../13_Agent_Production/Agent_Ecosystem_CN/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chinese Agent Ecosystem
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_16" >
+        
+          
+          <label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Gateway
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_16">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    AI Gateway
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../14_AI_Gateway/README.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../14_AI_Gateway/Gateway-in-nutshell.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gateway in Nutshell
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../14_AI_Gateway/AI_Gateway_for_dummy.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Gateway for Dummies
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../14_AI_Gateway/AI_Gateway_2026.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Gateway 2026
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../14_AI_Gateway/LiteLLM_Deep_Dive.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LiteLLM Deep Dive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../14_AI_Gateway/Portkey_Deep_Dive.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Portkey Deep Dive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../14_AI_Gateway/Cohere_Deep_Dive.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cohere Deep Dive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../14_AI_Gateway/Spring_AI_Gateway_Security.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spring AI Gateway Security
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_17" >
+        
+          
+          <label class="md-nav__link" for="__nav_17" id="__nav_17_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Testing
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_17_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_17">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    AI Testing
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../15_Testing/README.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../15_Testing/AI-Testing-in-nutshell.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Testing in Nutshell
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../15_Testing/AI_Test_Framework_2026.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Test Framework 2026
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../15_Testing/DeepEval_Deep_Dive.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DeepEval Deep Dive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../15_Testing/RAGAS_Deep_Dive.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RAGAS Deep Dive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../15_Testing/Promptfoo_Deep_Dive.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Promptfoo Deep Dive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../15_Testing/Contract_Testing.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contract Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../15_Testing/Java_AI_Testing.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Java AI Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../15_Testing/Weights_Biases_Deep_Dive.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Weights & Biases Deep Dive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../15_Testing/Test_Data_Management.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Test Data Management
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_18" >
+        
+          
+          <label class="md-nav__link" for="__nav_18" id="__nav_18_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Ops
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_18_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_18">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    AI Ops
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../16_AI_Ops/README.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../16_AI_Ops/AIOps-in-nutshell.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AIOps in Nutshell
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../16_AI_Ops/AI_Ops_for_dummy.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Ops for Dummies
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../16_AI_Ops/AI_Ops_2026.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Ops 2026
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../16_AI_Ops/AI_Observability_Guide.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Observability Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../16_AI_Ops/AI_Incident_Response_Playbook.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Incident Response
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../16_AI_Ops/CI_CD_Pipeline_AI_2026.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CI/CD Pipeline AI 2026
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../16_AI_Ops/Chaos_Engineering_AI.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chaos Engineering AI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../16_AI_Ops/SRE_for_AI_Systems.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SRE for AI Systems
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../16_AI_Ops/MLflow_Deep_Dive.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MLflow Deep Dive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../16_AI_Ops/Kubeflow_Deep_Dive.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kubeflow Deep Dive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../16_AI_Ops/ClearML_Deep_Dive.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ClearML Deep Dive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../16_AI_Ops/DVC_Deep_Dive.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DVC Deep Dive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../16_AI_Ops/Feast_Deep_Dive.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Feast Deep Dive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../16_AI_Ops/LakeFS_Deep_Dive.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LakeFS Deep Dive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../16_AI_Ops/Prefect_Deep_Dive.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prefect Deep Dive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../16_AI_Ops/LangSmith_Deep_Dive.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LangSmith Deep Dive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../16_AI_Ops/Helicone_Deep_Dive.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Helicone Deep Dive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../16_AI_Ops/Phoenix_Deep_Dive.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Phoenix Deep Dive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../16_AI_Ops/PromptLayer_Deep_Dive.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PromptLayer Deep Dive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../16_AI_Ops/Guardrails_Deep_Dive.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guardrails Deep Dive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../16_AI_Ops/Braintrust_Deep_Dive.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Braintrust Deep Dive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_19" >
+        
+          
+          <label class="md-nav__link" for="__nav_19" id="__nav_19_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Coding
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_19_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_19">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    AI Coding
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../17_AI_Coding/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../17_AI_Coding/01_Theory/AI_Coding_Theory/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Coding Theory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../17_AI_Coding/02_Tools/AI_Coding_Assistants_2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Coding Assistants 2026
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../17_AI_Coding/02_Tools/Hermes_Agent_2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hermes Agent 2026
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../17_AI_Coding/03_Practice/Vibe_Coding_Getting_Started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vibe Coding Getting Started
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../17_AI_Coding/03_Practice/Vibe_Coding_Prompt_Templates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vibe Coding Prompt Templates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../17_AI_Coding/03_Practice/Vibe_Coding_Real_World_Cases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vibe Coding Real World Cases
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../17_AI_Coding/04_Methodology/Vibe_Coding_Methodology/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vibe Coding Methodology
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../17_AI_Coding/04_Methodology/Agentic_Coding_Methodology/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agentic Coding Methodology
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../17_AI_Coding/04_Methodology/Vibe_Coding_Production_Practices/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vibe Coding Production Practices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_20" >
+        
+          
+          <label class="md-nav__link" for="__nav_20" id="__nav_20_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cloud Ops Agent
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_20_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_20">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Cloud Ops Agent
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../18_Cloud_Ops_Agent/README.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../18_Cloud_Ops_Agent/CloudOps-in-nutshell.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CloudOps in Nutshell
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../18_Cloud_Ops_Agent/Cloud_Product_Ops_for_dummy.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cloud Product Ops for Dummies
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../18_Cloud_Ops_Agent/Cloud_Product_Ops_2026.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cloud Product Ops 2026
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../18_Cloud_Ops_Agent/Java_Cloud_SDK_Guide.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Java Cloud SDK Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../18_Cloud_Ops_Agent/Mobile_AI_Ops_Design.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mobile AI Ops Design
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_21" >
+        
+          
+          <label class="md-nav__link" for="__nav_21" id="__nav_21_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ethics & Safety
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_21_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_21">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Ethics & Safety
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../19_Ethics_Safety/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../19_Ethics_Safety/Ethics-in-nutshell/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ethics in Nutshell
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../19_Ethics_Safety/README_for_dummy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ethics for Dummies
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../19_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Safety & Red Teaming
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../19_Ethics_Safety/AI_Security_2026/AI_Security_2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Security 2026
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../19_Ethics_Safety/Value_Alignment/Value_Alignment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Value Alignment
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../19_Ethics_Safety/Privacy_Preserving_AI/README.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Privacy Preserving AI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../19_Ethics_Safety/Mechanistic_Interpretability/README.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mechanistic Interpretability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../19_Ethics_Safety/Deepfake_Security/README.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deepfake Security
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../19_Ethics_Safety/AI_Supply_Chain_Security/README.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Supply Chain Security
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../19_Ethics_Safety/AI_Governance_Compliance_2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Governance & Compliance 2026
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_22" >
+        
+          
+          <label class="md-nav__link" for="__nav_22" id="__nav_22_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Applications & Industry
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_22_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_22">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    AI Applications & Industry
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../20_AI_Applications_Industry/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../20_AI_Applications_Industry/Industry-in-nutshell/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Industry in Nutshell
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../20_AI_Applications_Industry/AI_Applications_Industry_for_dummy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Applications for Dummies
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../20_AI_Applications_Industry/AI_Applications_Industry/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Applications & Industry
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../20_AI_Applications_Industry/Industry_Comparison_2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Industry Comparison 2026
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../20_AI_Applications_Industry/Healthcare/AI_Healthcare_2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Healthcare
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../20_AI_Applications_Industry/Finance/AI_Finance_2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Finance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../20_AI_Applications_Industry/Autonomous_Driving/AI_Autonomous_Driving_2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Autonomous Driving
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../20_AI_Applications_Industry/Manufacturing/AI_Manufacturing_2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Manufacturing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../20_AI_Applications_Industry/Retail_Ecommerce/AI_Retail_Ecommerce_2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Retail & E-commerce
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../20_AI_Applications_Industry/Education/AI_Education_2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Education
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../20_AI_Applications_Industry/Content_Media/AI_Content_Media_2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Content & Media
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../20_AI_Applications_Industry/Agriculture/AI_Agriculture_2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agriculture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../20_AI_Applications_Industry/Energy_Climate/AI_Energy_Climate_2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Energy & Climate
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../20_AI_Applications_Industry/Legal_Government/AI_Legal_Government_2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Legal & Government
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_23" >
+        
+          
+          <label class="md-nav__link" for="__nav_23" id="__nav_23_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Talks & Insights
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_23_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_23">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Talks & Insights
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../21_Talks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Talks Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../21_Talks/Talks_for_dummy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Talks for Dummies
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../21_Talks/Talks_Synthesis_2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Talks Synthesis 2026
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../21_Talks/Geoffrey_Hinton/about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Geoffrey Hinton
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../21_Talks/Yann_LeCun/about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Yann LeCun
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../21_Talks/Yoshua_Bengio/about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Yoshua Bengio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../21_Talks/Andrej_Karpathy/about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Andrej Karpathy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../21_Talks/Sam_Altman/about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sam Altman
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../21_Talks/Ilya_Sutskever/about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ilya Sutskever
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../21_Talks/Dario_Amodei/about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dario Amodei
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../21_Talks/Fei_Fei_Li/about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fei-Fei Li
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../21_Talks/Demis_Hassabis/about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Demis Hassabis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../21_Talks/Andrew_Ng/about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Andrew Ng
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../21_Talks/Jensen_Huang/about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jensen Huang
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../21_Talks/Bill_Gates/about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bill Gates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../21_Talks/Elon_Musk/about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Elon Musk
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../21_Talks/Emad_Mostaque/about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Emad Mostaque
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../21_Talks/Mark_Zuckerberg/about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mark Zuckerberg
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../21_Talks/Mira_Murati/about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mira Murati
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../21_Talks/Mustafa_Suleyman/about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mustafa Suleyman
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../21_Talks/Richard_Socher/about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Richard Socher
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../21_Talks/Satya_Nadella/about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Satya Nadella
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../21_Talks/Sebastian_Thrun/about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sebastian Thrun
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../21_Talks/Sundar_Pichai/about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sundar Pichai
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_24" >
+        
+          
+          <label class="md-nav__link" for="__nav_24" id="__nav_24_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Papers
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_24_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_24">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Papers
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../22_Papers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Papers Reading List
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../22_Papers/Attention_Is_All_You_Need_Deep_Dive/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Attention Is All You Need
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../22_Papers/GPT3_Deep_Dive/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GPT-3 Deep Dive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../22_Papers/ResNet_Deep_Dive/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ResNet Deep Dive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_25" >
+        
+          
+          <label class="md-nav__link" for="__nav_25" id="__nav_25_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interview Prep
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_25_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_25">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Interview Prep
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../23_Interviews/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interviews Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../23_Interviews/jobs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jobs Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../23_Interviews/Interviews_for_dummy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interviews for Dummies
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../23_Interviews/Machine_Learning_Engineer/question_bank/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Machine Learning Engineer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../23_Interviews/Data_Scientist/question_bank/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Scientist
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../23_Interviews/Data_Engineer/question_bank/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Engineer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../23_Interviews/NLP_Engineer/question_bank/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NLP Engineer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../23_Interviews/Computer_Vision_Engineer/question_bank/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Computer Vision Engineer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../23_Interviews/MLOps_Engineer/question_bank/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MLOps Engineer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../23_Interviews/AI_Research_Scientist/question_bank/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Research Scientist
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../23_Interviews/Research_Scientist/question_bank/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Research Scientist
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../23_Interviews/Prompt_Engineer/question_bank/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prompt Engineer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../23_Interviews/Robotics_Engineer/question_bank/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Robotics Engineer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../23_Interviews/AI_Security_Engineer/question_bank/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Security Engineer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../23_Interviews/LLM_Platform_Engineer/question_bank/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LLM Platform Engineer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../23_Interviews/AI_Data_Analyst/question_bank/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Data Analyst
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../23_Interviews/AI_Evaluation_Engineer/question_bank/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Evaluation Engineer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../23_Interviews/AI_Infrastructure_Engineer/question_bank/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Infrastructure Engineer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../23_Interviews/AI_Policy_Specialist/question_bank/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Policy Specialist
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../23_Interviews/AI_Product_Manager/question_bank/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Product Manager
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../23_Interviews/AI_Reliability_Engineer/question_bank/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Reliability Engineer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../23_Interviews/AI_Research_Engineer/question_bank/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Research Engineer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../23_Interviews/AI_Solutions_Architect/question_bank/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Solutions Architect
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../23_Interviews/Applied_Scientist/question_bank/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Applied Scientist
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 容量规划概述
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 容量规划概述">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 为什么需要容量规划？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 AI 系统容量规划特点
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 规划周期与目标
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 负载建模
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 负载建模">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 请求特征分析
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 流量预测模型
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 资源需求计算
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 资源需求计算">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-gpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 GPU 显存计算
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 吞吐量计算
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 成本估算
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 成本估算">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 成本模型
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 扩缩容策略
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. 扩缩容策略">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 自动扩缩容配置
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 扩缩容决策逻辑
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 容量规划案例
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. 容量规划案例">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 案例：对话系统容量规划
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 监控与告警
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. 监控与告警">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 关键监控指标
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 容量预警规则
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. 最佳实践
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. 最佳实践">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 规划原则
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 检查清单
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. 参考资源
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="ai-capacity-planning-2026">AI 系统容量规划指南 (Capacity Planning 2026)</h1>
+<blockquote>
+<p><strong>一句话理解</strong>: 容量规划是 AI 系统的"预算管理"——预测未来负载、评估资源需求、制定扩缩容策略，确保系统在满足 SLA 的同时控制成本。</p>
+<p><strong>相关文档</strong>: <a href="../AI_Infrastructure_2026/">AI 基础设施指南</a> | <a href="../AI_Cost_Optimization_2026/">成本优化</a> | <a href="../High_Availability_2026/">高可用设计</a> | <a href="../AI_System_Architecture_2026/">AI 系统架构</a></p>
+</blockquote>
+<hr />
+<h2 id="1">1. 容量规划概述</h2>
+<h3 id="11">1.1 为什么需要容量规划？</h3>
+<table>
+<thead>
+<tr>
+<th>挑战</th>
+<th>无规划</th>
+<th>有规划</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>突发流量</strong></td>
+<td>服务崩溃、用户流失</td>
+<td>自动扩容、平稳应对</td>
+</tr>
+<tr>
+<td><strong>成本失控</strong></td>
+<td>资源浪费、预算超支</td>
+<td>精准配置、成本可控</td>
+</tr>
+<tr>
+<td><strong>性能下降</strong></td>
+<td>用户投诉、业务损失</td>
+<td>提前预警、及时优化</td>
+</tr>
+<tr>
+<td><strong>资源浪费</strong></td>
+<td>过度配置、闲置浪费</td>
+<td>按需配置、弹性伸缩</td>
+</tr>
+</tbody>
+</table>
+<h3 id="12-ai">1.2 AI 系统容量规划特点</h3>
+<pre><code>传统 Web 服务 vs AI 服务容量规划
+
+传统 Web 服务:
+├── 资源: CPU、内存、带宽
+├── 计算: 固定算法，可预测
+├── 响应时间: 毫秒级
+└── 成本: 基础设施成本
+
+AI 服务:
+├── 资源: GPU、显存、Token 配额
+├── 计算: 模型推理，Token 相关
+├── 响应时间: 秒级到分钟级
+├── 成本: GPU + API Token
+└── 特殊考量: 模型版本、上下文长度、温度参数
+</code></pre>
+<h3 id="13">1.3 规划周期与目标</h3>
+<table>
+<thead>
+<tr>
+<th>规划类型</th>
+<th>周期</th>
+<th>目标</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>实时调度</strong></td>
+<td>秒/分钟</td>
+<td>自动扩缩容、负载均衡</td>
+</tr>
+<tr>
+<td><strong>短期规划</strong></td>
+<td>天/周</td>
+<td>资源预分配、成本控制</td>
+</tr>
+<tr>
+<td><strong>中期规划</strong></td>
+<td>月</td>
+<td>容量评估、采购决策</td>
+</tr>
+<tr>
+<td><strong>长期规划</strong></td>
+<td>季度/年</td>
+<td>架构演进、预算制定</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="2">2. 负载建模</h2>
+<h3 id="21">2.1 请求特征分析</h3>
+<pre><code class="language-python">&quot;&quot;&quot;
+AI 系统请求特征分析
+&quot;&quot;&quot;
+
+from dataclasses import dataclass
+from typing import List, Dict, Optional
+from datetime import datetime
+import numpy as np
+
+@dataclass
+class RequestProfile:
+    &quot;&quot;&quot;请求画像&quot;&quot;&quot;
+    request_id: str
+    timestamp: datetime
+
+    # 请求属性
+    request_type: str        # chat, completion, embedding, etc.
+    model: str               # gpt-4, claude-3, etc.
+
+    # Token 相关
+    prompt_tokens: int
+    max_completion_tokens: int
+    actual_completion_tokens: int
+
+    # 性能指标
+    latency_ms: float
+    queue_time_ms: float
+    processing_time_ms: float
+
+    # 资源消耗
+    gpu_memory_mb: float
+    gpu_utilization: float
+    cpu_utilization: float
+
+    # 成本
+    cost_usd: float
+
+    # 上下文
+    user_id: Optional[str] = None
+    session_id: Optional[str] = None
+    priority: int = 0
+
+
+class RequestAnalyzer:
+    &quot;&quot;&quot;请求分析器&quot;&quot;&quot;
+
+    def __init__(self, profiles: List[RequestProfile]):
+        self.profiles = profiles
+
+    def analyze_by_model(self) -&gt; Dict[str, Dict]:
+        &quot;&quot;&quot;按模型分析&quot;&quot;&quot;
+        results = {}
+
+        for profile in self.profiles:
+            model = profile.model
+            if model not in results:
+                results[model] = {
+                    'count': 0,
+                    'total_tokens': 0,
+                    'total_latency_ms': 0,
+                    'total_cost': 0,
+                    'latencies': [],
+                    'prompt_tokens': [],
+                    'completion_tokens': []
+                }
+
+            results[model]['count'] += 1
+            results[model]['total_tokens'] += profile.prompt_tokens + profile.actual_completion_tokens
+            results[model]['total_latency_ms'] += profile.latency_ms
+            results[model]['total_cost'] += profile.cost_usd
+            results[model]['latencies'].append(profile.latency_ms)
+            results[model]['prompt_tokens'].append(profile.prompt_tokens)
+            results[model]['completion_tokens'].append(profile.actual_completion_tokens)
+
+        # 计算统计量
+        for model, data in results.items():
+            data['avg_latency_ms'] = np.mean(data['latencies'])
+            data['p50_latency_ms'] = np.percentile(data['latencies'], 50)
+            data['p95_latency_ms'] = np.percentile(data['latencies'], 95)
+            data['p99_latency_ms'] = np.percentile(data['latencies'], 99)
+            data['avg_prompt_tokens'] = np.mean(data['prompt_tokens'])
+            data['avg_completion_tokens'] = np.mean(data['completion_tokens'])
+            data['tokens_per_request'] = data['total_tokens'] / data['count']
+
+        return results
+
+    def analyze_by_hour(self) -&gt; Dict[int, Dict]:
+        &quot;&quot;&quot;按时段分析&quot;&quot;&quot;
+        hourly = {}
+
+        for profile in self.profiles:
+            hour = profile.timestamp.hour
+            if hour not in hourly:
+                hourly[hour] = {'count': 0, 'total_tokens': 0, 'total_cost': 0}
+
+            hourly[hour]['count'] += 1
+            hourly[hour]['total_tokens'] += profile.prompt_tokens + profile.actual_completion_tokens
+            hourly[hour]['total_cost'] += profile.cost_usd
+
+        return hourly
+
+    def calculate_peak_metrics(self) -&gt; Dict:
+        &quot;&quot;&quot;计算峰值指标&quot;&quot;&quot;
+        hourly = self.analyze_by_hour()
+
+        peak_hour = max(hourly.items(), key=lambda x: x[1]['count'])
+        avg_count = np.mean([h['count'] for h in hourly.values()])
+
+        return {
+            'peak_hour': peak_hour[0],
+            'peak_requests': peak_hour[1]['count'],
+            'peak_tokens': peak_hour[1]['total_tokens'],
+            'peak_cost': peak_hour[1]['total_cost'],
+            'peak_to_avg_ratio': peak_hour[1]['count'] / avg_count if avg_count &gt; 0 else 1,
+            'avg_hourly_requests': avg_count
+        }
+</code></pre>
+<h3 id="22">2.2 流量预测模型</h3>
+<pre><code class="language-python">&quot;&quot;&quot;
+流量预测模型
+&quot;&quot;&quot;
+
+import numpy as np
+from typing import Tuple, List
+from datetime import datetime, timedelta
+
+class TrafficForecaster:
+    &quot;&quot;&quot;流量预测器&quot;&quot;&quot;
+
+    def __init__(self, historical_data: List[Tuple[datetime, int]]):
+        &quot;&quot;&quot;
+        Args:
+            historical_data: [(timestamp, request_count), ...]
+        &quot;&quot;&quot;
+        self.data = historical_data
+        self.timestamps = [d[0] for d in historical_data]
+        self.counts = [d[1] for d in historical_data]
+
+    def forecast_arima(
+        self, 
+        periods: int = 24
+    ) -&gt; Tuple[List[float], List[float]]:
+        &quot;&quot;&quot;
+        ARIMA 预测 (简化版)
+
+        Returns:
+            (predictions, confidence_intervals)
+        &quot;&quot;&quot;
+        from statsmodels.tsa.arima.model import ARIMA
+
+        series = np.array(self.counts)
+        model = ARIMA(series, order=(2, 1, 2))
+        fitted = model.fit()
+
+        forecast = fitted.forecast(periods)
+        predictions = forecast.tolist()
+
+        # 简化的置信区间
+        std_error = np.std(self.counts[-24:])  # 最近24小时的标准差
+        confidence_intervals = [
+            (p - 1.96 * std_error, p + 1.96 * std_error)
+            for p in predictions
+        ]
+
+        return predictions, confidence_intervals
+
+    def forecast_prophet(
+        self,
+        periods: int = 24,
+        include_holidays: bool = True
+    ) -&gt; Tuple[List[float], List[float]]:
+        &quot;&quot;&quot;
+        Prophet 预测
+
+        更适合处理:
+        - 季节性模式
+        - 节假日效应
+        - 趋势变化
+        &quot;&quot;&quot;
+        try:
+            from prophet import Prophet
+            import pandas as pd
+
+            df = pd.DataFrame({
+                'ds': self.timestamps,
+                'y': self.counts
+            })
+
+            model = Prophet(
+                daily_seasonality=True,
+                weekly_seasonality=True,
+                yearly_seasonality=True
+            )
+
+            if include_holidays:
+                # 添加节假日效应
+                model.add_country_holidays(country_name='CN')
+
+            model.fit(df)
+
+            future = model.make_future_dataframe(periods=periods, freq='H')
+            forecast = model.predict(future)
+
+            predictions = forecast['yhat'].tail(periods).tolist()
+            lower = forecast['yhat_lower'].tail(periods).tolist()
+            upper = forecast['yhat_upper'].tail(periods).tolist()
+
+            return predictions, list(zip(lower, upper))
+
+        except ImportError:
+            # 回退到简单预测
+            return self._simple_forecast(periods)
+
+    def _simple_forecast(self, periods: int) -&gt; Tuple[List[float], List[float]]:
+        &quot;&quot;&quot;简单预测 (移动平均)&quot;&quot;&quot;
+        window = min(24, len(self.counts))
+        avg = np.mean(self.counts[-window:])
+
+        predictions = [avg] * periods
+        std = np.std(self.counts[-window:])
+        confidence_intervals = [
+            (avg - 1.96 * std, avg + 1.96 * std)
+            for _ in range(periods)
+        ]
+
+        return predictions, confidence_intervals
+
+    def calculate_growth_rate(self) -&gt; float:
+        &quot;&quot;&quot;计算增长率&quot;&quot;&quot;
+        if len(self.counts) &lt; 2:
+            return 0.0
+
+        # 计算周环比增长率
+        weekly_totals = []
+        for i in range(0, len(self.counts), 168):  # 168 = 7 * 24
+            weekly_totals.append(sum(self.counts[i:i+168]))
+
+        if len(weekly_totals) &gt;= 2:
+            return (weekly_totals[-1] - weekly_totals[-2]) / weekly_totals[-2]
+
+        return 0.0
+
+
+class SeasonalPattern:
+    &quot;&quot;&quot;季节性模式分析&quot;&quot;&quot;
+
+    @staticmethod
+    def analyze_daily_pattern(
+        hourly_data: Dict[int, int]
+    ) -&gt; Dict[str, any]:
+        &quot;&quot;&quot;分析日模式&quot;&quot;&quot;
+        counts = [hourly_data.get(h, 0) for h in range(24)]
+
+        peak_hour = np.argmax(counts)
+        low_hour = np.argmin(counts)
+
+        return {
+            'peak_hour': peak_hour,
+            'peak_ratio': counts[peak_hour] / np.mean(counts) if np.mean(counts) &gt; 0 else 1,
+            'low_hour': low_hour,
+            'low_ratio': counts[low_hour] / np.mean(counts) if np.mean(counts) &gt; 0 else 1,
+            'pattern_type': 'business_hours' if peak_hour in range(9, 18) else 'off_hours'
+        }
+
+    @staticmethod
+    def analyze_weekly_pattern(
+        daily_data: Dict[int, int]  # weekday -&gt; count
+    ) -&gt; Dict[str, any]:
+        &quot;&quot;&quot;分析周模式&quot;&quot;&quot;
+        weekdays = ['周一', '周二', '周三', '周四', '周五', '周六', '周日']
+        counts = [daily_data.get(i, 0) for i in range(7)]
+
+        return {
+            'weekday_avg': np.mean(counts[:5]),
+            'weekend_avg': np.mean(counts[5:]),
+            'weekend_ratio': np.mean(counts[5:]) / np.mean(counts[:5]) if np.mean(counts[:5]) &gt; 0 else 1,
+            'peak_day': weekdays[np.argmax(counts)],
+            'pattern_type': 'weekday_heavy' if np.mean(counts[:5]) &gt; np.mean(counts[5:]) else 'weekend_heavy'
+        }
+</code></pre>
+<hr />
+<h2 id="3">3. 资源需求计算</h2>
+<h3 id="31-gpu">3.1 GPU 显存计算</h3>
+<pre><code class="language-python">&quot;&quot;&quot;
+GPU 显存需求计算
+&quot;&quot;&quot;
+
+from dataclasses import dataclass
+from typing import List, Optional
+
+@dataclass
+class ModelConfig:
+    &quot;&quot;&quot;模型配置&quot;&quot;&quot;
+    name: str
+    parameters_billion: float
+    hidden_size: int
+    num_layers: int
+    num_heads: int
+    vocab_size: int
+    max_sequence_length: int
+    precision: str = &quot;fp16&quot;  # fp16, fp32, int8, int4
+
+class GPUMemoryCalculator:
+    &quot;&quot;&quot;GPU 显存计算器&quot;&quot;&quot;
+
+    # 常见 GPU 规格
+    GPU_SPECS = {
+        'A100-40GB': {'memory_gb': 40, 'memory_bandwidth_gbps': 1559},
+        'A100-80GB': {'memory_gb': 80, 'memory_bandwidth_gbps': 2039},
+        'H100-80GB': {'memory_gb': 80, 'memory_bandwidth_gbps': 3352},
+        'L40S-48GB': {'memory_gb': 48, 'memory_bandwidth_gbps': 864},
+        'V100-32GB': {'memory_gb': 32, 'memory_bandwidth_gbps': 900},
+        'RTX4090-24GB': {'memory_gb': 24, 'memory_bandwidth_gbps': 1008},
+    }
+
+    def __init__(self, model_config: ModelConfig):
+        self.config = model_config
+
+    def calculate_model_weights(self) -&gt; float:
+        &quot;&quot;&quot;计算模型权重显存 (GB)&quot;&quot;&quot;
+        params = self.config.parameters_billion * 1e9
+
+        precision_bytes = {
+            'fp32': 4,
+            'fp16': 2,
+            'int8': 1,
+            'int4': 0.5
+        }
+
+        bytes_per_param = precision_bytes.get(self.config.precision, 2)
+        memory_bytes = params * bytes_per_param
+        memory_gb = memory_bytes / (1024 ** 3)
+
+        return memory_gb
+
+    def calculate_kv_cache(
+        self,
+        batch_size: int,
+        sequence_length: int
+    ) -&gt; float:
+        &quot;&quot;&quot;
+        计算 KV Cache 显存 (GB)
+
+        KV Cache = 2 * num_layers * batch_size * sequence_length * hidden_size * bytes_per_element
+        &quot;&quot;&quot;
+        bytes_per_element = 2 if self.config.precision in ['fp16', 'int8'] else 4
+
+        kv_cache_bytes = (
+            2 *  # K 和 V
+            self.config.num_layers *
+            batch_size *
+            sequence_length *
+            self.config.hidden_size *
+            bytes_per_element
+        )
+
+        return kv_cache_bytes / (1024 ** 3)
+
+    def calculate_activation_memory(
+        self,
+        batch_size: int,
+        sequence_length: int
+    ) -&gt; float:
+        &quot;&quot;&quot;
+        计算激活内存 (GB)
+
+        激活内存 ≈ batch_size * sequence_length * hidden_size * num_layers * bytes_per_element
+        &quot;&quot;&quot;
+        bytes_per_element = 2 if self.config.precision == 'fp16' else 4
+
+        activation_bytes = (
+            batch_size *
+            sequence_length *
+            self.config.hidden_size *
+            self.config.num_layers *
+            bytes_per_element *
+            2  # 估算因子
+        )
+
+        return activation_bytes / (1024 ** 3)
+
+    def calculate_total_memory(
+        self,
+        batch_size: int,
+        sequence_length: int,
+        overhead_factor: float = 1.1
+    ) -&gt; float:
+        &quot;&quot;&quot;计算总显存需求 (GB)&quot;&quot;&quot;
+        model_weights = self.calculate_model_weights()
+        kv_cache = self.calculate_kv_cache(batch_size, sequence_length)
+        activation = self.calculate_activation_memory(batch_size, sequence_length)
+
+        total = (model_weights + kv_cache + activation) * overhead_factor
+
+        return total
+
+    def recommend_gpu(
+        self,
+        batch_size: int,
+        sequence_length: int,
+        utilization_target: float = 0.8
+    ) -&gt; List[str]:
+        &quot;&quot;&quot;推荐合适的 GPU&quot;&quot;&quot;
+        required_memory = self.calculate_total_memory(batch_size, sequence_length)
+        required_with_util = required_memory / utilization_target
+
+        recommendations = []
+        for gpu_name, specs in self.GPU_SPECS.items():
+            if specs['memory_gb'] &gt;= required_with_util:
+                recommendations.append(gpu_name)
+
+        return recommendations
+
+    def calculate_max_batch_size(
+        self,
+        gpu_memory_gb: float,
+        sequence_length: int,
+        utilization_target: float = 0.8
+    ) -&gt; int:
+        &quot;&quot;&quot;计算最大批处理大小&quot;&quot;&quot;
+        available_memory = gpu_memory_gb * utilization_target
+
+        # 模型权重是固定的
+        model_weights = self.calculate_model_weights()
+        remaining_memory = available_memory - model_weights
+
+        if remaining_memory &lt;= 0:
+            return 0
+
+        # 二分查找最大 batch size
+        low, high = 1, 256
+        best_batch = 1
+
+        while low &lt;= high:
+            mid = (low + high) // 2
+            memory_needed = (
+                self.calculate_kv_cache(mid, sequence_length) +
+                self.calculate_activation_memory(mid, sequence_length)
+            )
+
+            if memory_needed &lt;= remaining_memory:
+                best_batch = mid
+                low = mid + 1
+            else:
+                high = mid - 1
+
+        return best_batch
+
+
+# 常见模型配置预设
+MODEL_CONFIGS = {
+    'llama-7b': ModelConfig(
+        name='LLaMA-7B',
+        parameters_billion=7,
+        hidden_size=4096,
+        num_layers=32,
+        num_heads=32,
+        vocab_size=32000,
+        max_sequence_length=2048
+    ),
+    'llama-70b': ModelConfig(
+        name='LLaMA-70B',
+        parameters_billion=70,
+        hidden_size=8192,
+        num_layers=80,
+        num_heads=64,
+        vocab_size=32000,
+        max_sequence_length=4096
+    ),
+    'qwen-72b': ModelConfig(
+        name='Qwen-72B',
+        parameters_billion=72,
+        hidden_size=8192,
+        num_layers=80,
+        num_heads=64,
+        vocab_size=151936,
+        max_sequence_length=32768
+    ),
+}
+
+
+# 使用示例
+def calculate_deployment_requirements(
+    model_name: str,
+    expected_qps: int,
+    avg_sequence_length: int,
+    target_latency_ms: float = 500
+) -&gt; dict:
+    &quot;&quot;&quot;计算部署需求&quot;&quot;&quot;
+    config = MODEL_CONFIGS.get(model_name)
+    if not config:
+        raise ValueError(f&quot;Unknown model: {model_name}&quot;)
+
+    calculator = GPUMemoryCalculator(config)
+
+    # 估算所需批处理大小
+    # batch_size ≈ QPS * target_latency / 1000
+    estimated_batch = int(expected_qps * target_latency_ms / 1000)
+
+    # 计算显存需求
+    memory_needed = calculator.calculate_total_memory(
+        batch_size=estimated_batch,
+        sequence_length=avg_sequence_length
+    )
+
+    # 推荐 GPU
+    recommended_gpus = calculator.recommend_gpu(
+        estimated_batch,
+        avg_sequence_length
+    )
+
+    return {
+        'model': model_name,
+        'estimated_batch_size': estimated_batch,
+        'memory_required_gb': memory_needed,
+        'recommended_gpus': recommended_gpus,
+        'avg_sequence_length': avg_sequence_length
+    }
+</code></pre>
+<h3 id="32">3.2 吞吐量计算</h3>
+<pre><code class="language-python">&quot;&quot;&quot;
+系统吞吐量计算
+&quot;&quot;&quot;
+
+from dataclasses import dataclass
+from typing import List, Dict
+import math
+
+@dataclass
+class ThroughputMetrics:
+    &quot;&quot;&quot;吞吐量指标&quot;&quot;&quot;
+    requests_per_second: float
+    tokens_per_second: float
+    batch_size: int
+    num_gpus: int
+    latency_ms: float
+    utilization: float
+
+class ThroughputCalculator:
+    &quot;&quot;&quot;吞吐量计算器&quot;&quot;&quot;
+
+    # 经验数据：不同模型在不同 GPU 上的吞吐量
+    # 单位: tokens/sec/GPU
+    THROUGHPUT_BENCHMARKS = {
+        ('llama-7b', 'A100-40GB'): 12000,
+        ('llama-7b', 'A100-80GB'): 11000,
+        ('llama-7b', 'H100-80GB'): 18000,
+        ('llama-70b', 'A100-80GB'): 2500,
+        ('llama-70b', 'H100-80GB'): 4000,
+        ('qwen-72b', 'A100-80GB'): 2200,
+        ('qwen-72b', 'H100-80GB'): 3500,
+    }
+
+    def __init__(self, model_name: str, gpu_type: str):
+        self.model_name = model_name
+        self.gpu_type = gpu_type
+
+        self.base_throughput = self.THROUGHPUT_BENCHMARKS.get(
+            (model_name, gpu_type), 5000
+        )
+
+    def calculate_qps(
+        self,
+        avg_tokens_per_request: int,
+        num_gpus: int,
+        target_latency_ms: float = None,
+        batch_size: int = None
+    ) -&gt; ThroughputMetrics:
+        &quot;&quot;&quot;
+        计算 QPS
+
+        两种模式:
+        1. 已知批处理大小 -&gt; 计算 QPS 和延迟
+        2. 已知目标延迟 -&gt; 计算最优批处理大小和 QPS
+        &quot;&quot;&quot;
+        if batch_size:
+            # 模式1：已知批处理大小
+            throughput = self.base_throughput * num_gpus
+            latency = (batch_size * avg_tokens_per_request) / throughput * 1000
+            qps = throughput / avg_tokens_per_request
+
+        elif target_latency_ms:
+            # 模式2：已知目标延迟
+            # 最优批处理大小 = 目标延迟 * 吞吐量 / 1000
+            throughput = self.base_throughput * num_gpus
+            batch_size = int(target_latency_ms * throughput / 1000 / avg_tokens_per_request)
+            batch_size = max(1, batch_size)
+
+            latency = (batch_size * avg_tokens_per_request) / throughput * 1000
+            qps = throughput / avg_tokens_per_request
+
+        else:
+            raise ValueError(&quot;必须提供 batch_size 或 target_latency_ms&quot;)
+
+        utilization = min(1.0, qps / (self.base_throughput * num_gpus / avg_tokens_per_request))
+
+        return ThroughputMetrics(
+            requests_per_second=qps,
+            tokens_per_second=self.base_throughput * num_gpus,
+            batch_size=batch_size,
+            num_gpus=num_gpus,
+            latency_ms=latency,
+            utilization=utilization
+        )
+
+    def calculate_gpu_count(
+        self,
+        target_qps: float,
+        avg_tokens_per_request: int,
+        max_latency_ms: float
+    ) -&gt; int:
+        &quot;&quot;&quot;计算所需 GPU 数量&quot;&quot;&quot;
+        # 估算单 GPU 最大 QPS
+        max_latency_sec = max_latency_ms / 1000
+        single_gpu_qps = self.base_throughput / avg_tokens_per_request
+
+        # 考虑延迟约束
+        batch_per_latency = single_gpu_qps * max_latency_sec
+        if batch_per_latency &lt; 1:
+            # 需要多 GPU 才能满足延迟
+            gpus_for_latency = math.ceil(1 / batch_per_latency)
+        else:
+            gpus_for_latency = 1
+
+        # 考虑 QPS 约束
+        gpus_for_qps = math.ceil(target_qps / single_gpu_qps)
+
+        return max(gpus_for_latency, gpus_for_qps)
+
+    def optimize_batch_size(
+        self,
+        gpu_memory_gb: float,
+        sequence_length: int,
+        model_params_billion: float
+    ) -&gt; int:
+        &quot;&quot;&quot;优化批处理大小&quot;&quot;&quot;
+        # 简化计算：基于显存和模型大小
+        model_memory_gb = model_params_billion * 2 / 1024  # fp16
+        available_memory = gpu_memory_gb - model_memory_gb
+
+        # KV Cache 估算
+        # 每个 token 约占用 2KB (简化估算)
+        kv_cache_per_token = 0.002  # GB
+
+        # 最大批处理大小
+        max_batch = int(available_memory / (sequence_length * kv_cache_per_token))
+
+        # 实际最优批处理大小通常在最大值的 60-80%
+        optimal_batch = int(max_batch * 0.7)
+
+        return max(1, optimal_batch)
+
+
+class CapacityPlanningResult:
+    &quot;&quot;&quot;容量规划结果&quot;&quot;&quot;
+
+    def __init__(self):
+        self.scenarios = []
+
+    def add_scenario(
+        self,
+        name: str,
+        qps: float,
+        latency_ms: float,
+        num_gpus: int,
+        gpu_type: str,
+        cost_per_hour: float,
+        details: dict = None
+    ):
+        &quot;&quot;&quot;添加场景&quot;&quot;&quot;
+        self.scenarios.append({
+            'name': name,
+            'qps': qps,
+            'latency_ms': latency_ms,
+            'num_gpus': num_gpus,
+            'gpu_type': gpu_type,
+            'cost_per_hour': cost_per_hour,
+            'details': details or {}
+        })
+
+    def get_recommendation(self) -&gt; dict:
+        &quot;&quot;&quot;获取推荐方案&quot;&quot;&quot;
+        if not self.scenarios:
+            return None
+
+        # 按性价比排序
+        for s in self.scenarios:
+            s['cost_per_qps'] = s['cost_per_hour'] / s['qps'] if s['qps'] &gt; 0 else float('inf')
+
+        sorted_scenarios = sorted(self.scenarios, key=lambda x: x['cost_per_qps'])
+
+        return sorted_scenarios[0]
+
+    def generate_report(self) -&gt; str:
+        &quot;&quot;&quot;生成报告&quot;&quot;&quot;
+        lines = []
+        lines.append(&quot;=&quot; * 80)
+        lines.append(&quot;CAPACITY PLANNING REPORT&quot;)
+        lines.append(&quot;=&quot; * 80)
+
+        for s in self.scenarios:
+            lines.append(f&quot;\n### {s['name']} ###&quot;)
+            lines.append(f&quot;  QPS: {s['qps']:.2f}&quot;)
+            lines.append(f&quot;  Latency: {s['latency_ms']:.0f}ms&quot;)
+            lines.append(f&quot;  GPUs: {s['num_gpus']}x {s['gpu_type']}&quot;)
+            lines.append(f&quot;  Cost: ${s['cost_per_hour']:.2f}/hour&quot;)
+            lines.append(f&quot;  Cost/QPS: ${s.get('cost_per_qps', 0):.4f}/hour&quot;)
+
+        recommendation = self.get_recommendation()
+        if recommendation:
+            lines.append(&quot;\n&quot; + &quot;=&quot; * 80)
+            lines.append(&quot;RECOMMENDATION&quot;)
+            lines.append(&quot;=&quot; * 80)
+            lines.append(f&quot;  Recommended: {recommendation['name']}&quot;)
+            lines.append(f&quot;  Reason: Best cost-performance ratio&quot;)
+
+        return '\n'.join(lines)
+</code></pre>
+<hr />
+<h2 id="4">4. 成本估算</h2>
+<h3 id="41">4.1 成本模型</h3>
+<pre><code class="language-python">&quot;&quot;&quot;
+AI 服务成本模型
+&quot;&quot;&quot;
+
+from dataclasses import dataclass
+from typing import Dict, List
+from enum import Enum
+
+class CostType(Enum):
+    GPU_COMPUTE = &quot;gpu_compute&quot;
+    API_TOKENS = &quot;api_tokens&quot;
+    STORAGE = &quot;storage&quot;
+    NETWORK = &quot;network&quot;
+    INFRASTRUCTURE = &quot;infrastructure&quot;
+
+@dataclass
+class PricingConfig:
+    &quot;&quot;&quot;定价配置&quot;&quot;&quot;
+    # GPU 价格 (美元/小时)
+    gpu_prices: Dict[str, float] = None
+
+    # API Token 价格 (美元/千Token)
+    token_prices: Dict[str, Dict[str, float]] = None
+
+    # 存储价格 (美元/GB/月)
+    storage_price_per_gb: float = 0.023
+
+    # 网络价格 (美元/GB)
+    network_price_per_gb: float = 0.09
+
+    def __post_init__(self):
+        if self.gpu_prices is None:
+            self.gpu_prices = {
+                'A100-40GB': 2.50,
+                'A100-80GB': 3.50,
+                'H100-80GB': 4.50,
+                'L40S-48GB': 1.50,
+                'V100-32GB': 1.20,
+                'RTX4090-24GB': 0.80,
+            }
+
+        if self.token_prices is None:
+            self.token_prices = {
+                'gpt-4-turbo': {'input': 0.01, 'output': 0.03},
+                'gpt-4': {'input': 0.03, 'output': 0.06},
+                'gpt-3.5-turbo': {'input': 0.0005, 'output': 0.0015},
+                'claude-3-opus': {'input': 0.015, 'output': 0.075},
+                'claude-3-sonnet': {'input': 0.003, 'output': 0.015},
+                'claude-3-haiku': {'input': 0.00025, 'output': 0.00125},
+            }
+
+class CostEstimator:
+    &quot;&quot;&quot;成本估算器&quot;&quot;&quot;
+
+    def __init__(self, pricing: PricingConfig = None):
+        self.pricing = pricing or PricingConfig()
+
+    def estimate_gpu_cost(
+        self,
+        gpu_type: str,
+        num_gpus: int,
+        hours_per_month: float = 730
+    ) -&gt; float:
+        &quot;&quot;&quot;估算 GPU 成本&quot;&quot;&quot;
+        hourly_rate = self.pricing.gpu_prices.get(gpu_type, 2.0)
+        return num_gpus * hourly_rate * hours_per_month
+
+    def estimate_api_cost(
+        self,
+        model: str,
+        input_tokens: int,
+        output_tokens: int
+    ) -&gt; float:
+        &quot;&quot;&quot;估算 API 成本&quot;&quot;&quot;
+        prices = self.pricing.token_prices.get(model, {'input': 0.01, 'output': 0.03})
+
+        input_cost = (input_tokens / 1000) * prices['input']
+        output_cost = (output_tokens / 1000) * prices['output']
+
+        return input_cost + output_cost
+
+    def estimate_monthly_api_cost(
+        self,
+        model: str,
+        daily_requests: int,
+        avg_input_tokens: int,
+        avg_output_tokens: int
+    ) -&gt; float:
+        &quot;&quot;&quot;估算月度 API 成本&quot;&quot;&quot;
+        daily_cost = daily_requests * self.estimate_api_cost(
+            model, avg_input_tokens, avg_output_tokens
+        )
+        return daily_cost * 30
+
+    def compare_hosted_vs_api(
+        self,
+        model: str,
+        monthly_requests: int,
+        avg_input_tokens: int,
+        avg_output_tokens: int,
+        gpu_type: str = 'A100-80GB',
+        num_gpus: int = 2
+    ) -&gt; Dict:
+        &quot;&quot;&quot;比较自托管和 API 调用成本&quot;&quot;&quot;
+        # API 成本
+        api_cost = monthly_requests * self.estimate_api_cost(
+            model, avg_input_tokens, avg_output_tokens
+        )
+
+        # 自托管成本
+        hosted_cost = self.estimate_gpu_cost(gpu_type, num_gpus)
+
+        # 添加运维成本 (估算为 GPU 成本的 20%)
+        hosted_cost *= 1.2
+
+        # 计算盈亏平衡点
+        if api_cost &gt; 0:
+            break_even_requests = hosted_cost / (api_cost / monthly_requests)
+        else:
+            break_even_requests = float('inf')
+
+        return {
+            'api_cost_monthly': api_cost,
+            'hosted_cost_monthly': hosted_cost,
+            'savings_monthly': api_cost - hosted_cost,
+            'break_even_requests': break_even_requests,
+            'recommendation': 'hosted' if hosted_cost &lt; api_cost else 'api'
+        }
+
+    def generate_cost_report(
+        self,
+        scenarios: List[Dict]
+    ) -&gt; str:
+        &quot;&quot;&quot;生成成本报告&quot;&quot;&quot;
+        lines = []
+        lines.append(&quot;=&quot; * 80)
+        lines.append(&quot;COST ANALYSIS REPORT&quot;)
+        lines.append(&quot;=&quot; * 80)
+
+        for s in scenarios:
+            lines.append(f&quot;\n### {s['name']} ###&quot;)
+            lines.append(f&quot;  GPU Cost: ${s.get('gpu_cost', 0):,.2f}/month&quot;)
+            lines.append(f&quot;  API Cost: ${s.get('api_cost', 0):,.2f}/month&quot;)
+            lines.append(f&quot;  Storage Cost: ${s.get('storage_cost', 0):,.2f}/month&quot;)
+            lines.append(f&quot;  Network Cost: ${s.get('network_cost', 0):,.2f}/month&quot;)
+            lines.append(f&quot;  Total: ${s.get('total_cost', 0):,.2f}/month&quot;)
+
+        return '\n'.join(lines)
+
+
+class BudgetPlanner:
+    &quot;&quot;&quot;预算规划器&quot;&quot;&quot;
+
+    def __init__(self, monthly_budget: float):
+        self.budget = monthly_budget
+
+    def allocate_budget(
+        self,
+        expected_qps: float,
+        avg_tokens_per_request: int,
+        latency_sla_ms: float
+    ) -&gt; Dict:
+        &quot;&quot;&quot;在预算约束下分配资源&quot;&quot;&quot;
+        # 预算分配策略
+        allocation = {
+            'gpu_compute': self.budget * 0.60,  # 60% 用于计算
+            'api_tokens': self.budget * 0.25,   # 25% 用于 API
+            'storage': self.budget * 0.10,      # 10% 用于存储
+            'network': self.budget * 0.05,      # 5% 用于网络
+        }
+
+        # 计算可支撑的 QPS
+        avg_tokens = avg_tokens_per_request * 2  # input + output
+
+        # 假设平均 token 成本
+        avg_token_cost = 0.01 / 1000  # $0.01 per 1K tokens
+
+        max_qps_from_api = (allocation['api_tokens'] / 30 / 24 / 3600) / (avg_tokens * avg_token_cost)
+
+        return {
+            'allocation': allocation,
+            'max_supported_qps': min(expected_qps, max_qps_from_api),
+            'budget_utilization': expected_qps / max_qps_from_api if max_qps_from_api &gt; 0 else 1.0
+        }
+</code></pre>
+<hr />
+<h2 id="5">5. 扩缩容策略</h2>
+<h3 id="51">5.1 自动扩缩容配置</h3>
+<pre><code class="language-yaml"># Kubernetes HPA 配置示例
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: llm-inference-hpa
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: llm-inference
+  minReplicas: 2
+  maxReplicas: 20
+  metrics:
+    # 基于 CPU 利用率
+    - type: Resource
+      resource:
+        name: cpu
+        target:
+          type: Utilization
+          averageUtilization: 70
+
+    # 基于自定义指标 (请求队列深度)
+    - type: Pods
+      pods:
+        metric:
+          name: request_queue_depth
+        target:
+          type: AverageValue
+          averageValue: 10
+
+    # 基于自定义指标 (QPS)
+    - type: Pods
+      pods:
+        metric:
+          name: requests_per_second
+        target:
+          type: AverageValue
+          averageValue: 100
+
+  behavior:
+    scaleDown:
+      stabilizationWindowSeconds: 300  # 5分钟稳定窗口
+      policies:
+        - type: Percent
+          value: 10
+          periodSeconds: 60
+    scaleUp:
+      stabilizationWindowSeconds: 60
+      policies:
+        - type: Percent
+          value: 100
+          periodSeconds: 30
+        - type: Pods
+          value: 4
+          periodSeconds: 30
+      selectPolicy: Max
+</code></pre>
+<h3 id="52">5.2 扩缩容决策逻辑</h3>
+<pre><code class="language-python">&quot;&quot;&quot;
+自动扩缩容决策引擎
+&quot;&quot;&quot;
+
+from dataclasses import dataclass
+from typing import List, Optional
+from enum import Enum
+import time
+
+class ScalingAction(Enum):
+    SCALE_UP = &quot;scale_up&quot;
+    SCALE_DOWN = &quot;scale_down&quot;
+    NO_ACTION = &quot;no_action&quot;
+
+@dataclass
+class ScalingDecision:
+    &quot;&quot;&quot;扩缩容决策&quot;&quot;&quot;
+    action: ScalingAction
+    current_replicas: int
+    target_replicas: int
+    reason: str
+    confidence: float
+
+class ScalingEngine:
+    &quot;&quot;&quot;扩缩容引擎&quot;&quot;&quot;
+
+    def __init__(
+        self,
+        min_replicas: int = 2,
+        max_replicas: int = 20,
+        scale_up_threshold: float = 0.8,
+        scale_down_threshold: float = 0.3,
+        cooldown_seconds: int = 300
+    ):
+        self.min_replicas = min_replicas
+        self.max_replicas = max_replicas
+        self.scale_up_threshold = scale_up_threshold
+        self.scale_down_threshold = scale_down_threshold
+        self.cooldown_seconds = cooldown_seconds
+
+        self.last_scaling_time = 0
+        self.current_replicas = min_replicas
+
+    def evaluate(
+        self,
+        metrics: dict,
+        predicted_load: Optional[float] = None
+    ) -&gt; ScalingDecision:
+        &quot;&quot;&quot;
+        评估是否需要扩缩容
+
+        Args:
+            metrics: {
+                'cpu_utilization': float,
+                'gpu_utilization': float,
+                'memory_utilization': float,
+                'queue_depth': int,
+                'avg_latency_ms': float,
+                'qps': float
+            }
+            predicted_load: 预测的未来负载 (QPS)
+        &quot;&quot;&quot;
+        # 检查冷却期
+        if time.time() - self.last_scaling_time &lt; self.cooldown_seconds:
+            return ScalingDecision(
+                action=ScalingAction.NO_ACTION,
+                current_replicas=self.current_replicas,
+                target_replicas=self.current_replicas,
+                reason=&quot;In cooldown period&quot;,
+                confidence=1.0
+            )
+
+        # 计算综合利用率
+        utilization = self._calculate_utilization(metrics)
+
+        # 基于当前指标和预测负载做决策
+        if utilization &gt; self.scale_up_threshold:
+            return self._scale_up(metrics, predicted_load)
+        elif utilization &lt; self.scale_down_threshold:
+            return self._scale_down(metrics)
+        else:
+            return ScalingDecision(
+                action=ScalingAction.NO_ACTION,
+                current_replicas=self.current_replicas,
+                target_replicas=self.current_replicas,
+                reason=f&quot;Utilization normal ({utilization:.1%})&quot;,
+                confidence=0.8
+            )
+
+    def _calculate_utilization(self, metrics: dict) -&gt; float:
+        &quot;&quot;&quot;计算综合利用率&quot;&quot;&quot;
+        weights = {
+            'gpu_utilization': 0.5,
+            'cpu_utilization': 0.2,
+            'memory_utilization': 0.15,
+            'queue_depth_factor': 0.15
+        }
+
+        # 队列深度因子
+        queue_depth = metrics.get('queue_depth', 0)
+        queue_factor = min(1.0, queue_depth / 100)
+
+        utilization = (
+            metrics.get('gpu_utilization', 0) * weights['gpu_utilization'] +
+            metrics.get('cpu_utilization', 0) * weights['cpu_utilization'] +
+            metrics.get('memory_utilization', 0) * weights['memory_utilization'] +
+            queue_factor * weights['queue_depth_factor']
+        )
+
+        return utilization
+
+    def _scale_up(
+        self, 
+        metrics: dict,
+        predicted_load: Optional[float]
+    ) -&gt; ScalingDecision:
+        &quot;&quot;&quot;扩容决策&quot;&quot;&quot;
+        current_qps = metrics.get('qps', 1)
+
+        # 计算需要的副本数
+        if predicted_load:
+            target_qps = max(current_qps, predicted_load) * 1.2  # 20% 余量
+        else:
+            target_qps = current_qps * 1.5
+
+        qps_per_replica = current_qps / self.current_replicas
+        target_replicas = int(target_qps / qps_per_replica) + 1
+
+        # 限制最大值
+        target_replicas = min(target_replicas, self.max_replicas)
+
+        if target_replicas &gt; self.current_replicas:
+            return ScalingDecision(
+                action=ScalingAction.SCALE_UP,
+                current_replicas=self.current_replicas,
+                target_replicas=target_replicas,
+                reason=f&quot;High utilization, scaling from {self.current_replicas} to {target_replicas}&quot;,
+                confidence=0.9
+            )
+
+        return ScalingDecision(
+            action=ScalingAction.NO_ACTION,
+            current_replicas=self.current_replicas,
+            target_replicas=self.current_replicas,
+            reason=&quot;Already at max replicas&quot;,
+            confidence=1.0
+        )
+
+    def _scale_down(self, metrics: dict) -&gt; ScalingDecision:
+        &quot;&quot;&quot;缩容决策&quot;&quot;&quot;
+        # 保守缩容：一次只减少 1 个副本
+        target_replicas = max(self.min_replicas, self.current_replicas - 1)
+
+        if target_replicas &lt; self.current_replicas:
+            return ScalingDecision(
+                action=ScalingAction.SCALE_DOWN,
+                current_replicas=self.current_replicas,
+                target_replicas=target_replicas,
+                reason=f&quot;Low utilization, scaling down from {self.current_replicas} to {target_replicas}&quot;,
+                confidence=0.7
+            )
+
+        return ScalingDecision(
+            action=ScalingAction.NO_ACTION,
+            current_replicas=self.current_replicas,
+            target_replicas=self.current_replicas,
+            reason=&quot;Already at min replicas&quot;,
+            confidence=1.0
+        )
+
+    def apply_decision(self, decision: ScalingDecision):
+        &quot;&quot;&quot;应用决策&quot;&quot;&quot;
+        if decision.action != ScalingAction.NO_ACTION:
+            self.current_replicas = decision.target_replicas
+            self.last_scaling_time = time.time()
+</code></pre>
+<hr />
+<h2 id="6">6. 容量规划案例</h2>
+<h3 id="61">6.1 案例：对话系统容量规划</h3>
+<pre><code class="language-python">&quot;&quot;&quot;
+案例：100万日活的对话系统容量规划
+&quot;&quot;&quot;
+
+def plan_conversational_system():
+    &quot;&quot;&quot;对话系统容量规划&quot;&quot;&quot;
+
+    # 1. 需求分析
+    daily_active_users = 1_000_000
+    conversations_per_user = 3
+    turns_per_conversation = 5
+    avg_tokens_per_turn = 100
+
+    # 2. 计算日请求量
+    daily_requests = (
+        daily_active_users *
+        conversations_per_user *
+        turns_per_conversation
+    )
+
+    # 3. 流量分布 (假设 12小时高峰)
+    peak_hours = 12
+    peak_traffic_ratio = 0.7  # 70% 流量在高峰期
+
+    peak_hourly_requests = (
+        daily_requests * peak_traffic_ratio / peak_hours
+    )
+
+    # 4. 计算 QPS
+    peak_qps = peak_hourly_requests / 3600
+
+    # 5. 容量计算
+    # 假设使用 GPT-3.5-Turbo
+    model = 'gpt-3.5-turbo'
+    avg_latency_ms = 500  # 目标延迟
+
+    calculator = ThroughputCalculator(model, 'A100-40GB')
+    metrics = calculator.calculate_qps(
+        avg_tokens_per_request=avg_tokens_per_turn,
+        num_gpus=1,
+        target_latency_ms=avg_latency_ms
+    )
+
+    # 6. 计算 GPU 数量
+    gpu_needed = calculator.calculate_gpu_count(
+        target_qps=peak_qps,
+        avg_tokens_per_request=avg_tokens_per_turn,
+        max_latency_ms=avg_latency_ms
+    )
+
+    # 7. 成本估算
+    pricing = PricingConfig()
+    estimator = CostEstimator(pricing)
+
+    # API 成本
+    api_cost = estimator.estimate_monthly_api_cost(
+        model=model,
+        daily_requests=daily_requests,
+        avg_input_tokens=avg_tokens_per_turn,
+        avg_output_tokens=avg_tokens_per_turn
+    )
+
+    # 自托管成本
+    hosted_cost = estimator.estimate_gpu_cost('A100-40GB', gpu_needed)
+
+    return {
+        'daily_requests': daily_requests,
+        'peak_qps': peak_qps,
+        'gpu_needed': gpu_needed,
+        'api_cost_monthly': api_cost,
+        'hosted_cost_monthly': hosted_cost * 1.2,  # 加运维
+        'recommendation': 'api' if api_cost &lt; hosted_cost * 1.2 else 'hosted'
+    }
+</code></pre>
+<hr />
+<h2 id="7">7. 监控与告警</h2>
+<h3 id="71">7.1 关键监控指标</h3>
+<table>
+<thead>
+<tr>
+<th>指标类别</th>
+<th>具体指标</th>
+<th>告警阈值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>负载指标</strong></td>
+<td>QPS、队列深度、并发数</td>
+<td>队列深度 &gt; 50</td>
+</tr>
+<tr>
+<td><strong>资源指标</strong></td>
+<td>GPU/CPU/内存利用率</td>
+<td>GPU 利用率 &gt; 90%</td>
+</tr>
+<tr>
+<td><strong>性能指标</strong></td>
+<td>P95/P99 延迟、超时率</td>
+<td>P95 &gt; SLA×1.5</td>
+</tr>
+<tr>
+<td><strong>成本指标</strong></td>
+<td>日/月消费、Token 消耗</td>
+<td>日消费超预算 20%</td>
+</tr>
+<tr>
+<td><strong>容量指标</strong></td>
+<td>剩余容量、扩缩容事件</td>
+<td>剩余容量 &lt; 20%</td>
+</tr>
+</tbody>
+</table>
+<h3 id="72">7.2 容量预警规则</h3>
+<pre><code class="language-yaml"># Prometheus 告警规则
+groups:
+  - name: capacity-alerts
+    rules:
+      - alert: HighGPUUtilization
+        expr: gpu_utilization &gt; 0.9
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: &quot;GPU 利用率过高&quot;
+          description: &quot;当前利用率 {{ $value }}%，建议扩容&quot;
+
+      - alert: ApproachingCapacityLimit
+        expr: |
+          current_qps / max_qps &gt; 0.8
+        for: 10m
+        labels:
+          severity: warning
+        annotations:
+          summary: &quot;接近容量上限&quot;
+          description: &quot;当前 QPS 已达最大容量的 {{ $value }}%&quot;
+
+      - alert: CostOverrun
+        expr: |
+          daily_cost_usd &gt; budget_daily_usd * 1.2
+        for: 1h
+        labels:
+          severity: critical
+        annotations:
+          summary: &quot;成本超支&quot;
+          description: &quot;日消费 {{ $value }} 美元，超出预算 20%&quot;
+</code></pre>
+<hr />
+<h2 id="8">8. 最佳实践</h2>
+<h3 id="81">8.1 规划原则</h3>
+<table>
+<thead>
+<tr>
+<th>原则</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>预留余量</strong></td>
+<td>保持 20-30% 容量冗余</td>
+</tr>
+<tr>
+<td><strong>分步扩容</strong></td>
+<td>避免一次性大规模扩容</td>
+</tr>
+<tr>
+<td><strong>成本优化</strong></td>
+<td>持续监控成本效率</td>
+</tr>
+<tr>
+<td><strong>预案准备</strong></td>
+<td>制定突发流量应对方案</td>
+</tr>
+<tr>
+<td><strong>定期复盘</strong></td>
+<td>每月审查容量规划准确性</td>
+</tr>
+</tbody>
+</table>
+<h3 id="82">8.2 检查清单</h3>
+<pre><code class="language-markdown">容量规划检查清单:
+
+□ 流量分析
+  □ 确定日均/峰值 QPS
+  □ 分析流量时间分布
+  □ 识别周期性模式
+
+□ 资源评估
+  □ 计算 GPU 显存需求
+  □ 确定最优批处理大小
+  □ 评估存储和网络需求
+
+□ 成本预算
+  □ 比较 API vs 自托管成本
+  □ 制定月度预算
+  □ 设置成本告警
+
+□ 弹性配置
+  □ 配置自动扩缩容
+  □ 设置扩缩容阈值
+  □ 测试扩缩容流程
+
+□ 监控告警
+  □ 部署关键指标监控
+  □ 配置告警规则
+  □ 建立值班机制
+</code></pre>
+<hr />
+<h2 id="9">9. 参考资源</h2>
+<ul>
+<li><a href="https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/">Kubernetes HPA</a></li>
+<li><a href="https://www.nvidia.com/en-us/data-center/products/">NVIDIA GPU Specifications</a></li>
+<li><a href="https://aws.amazon.com/ec2/pricing/">AWS EC2 Pricing</a></li>
+<li><a href="https://openai.com/pricing">OpenAI Pricing</a></li>
+<li><a href="https://www.anthropic.com/pricing">Anthropic Pricing</a></li>
+</ul>
+<hr />
+<p><em>Last updated: 2026-04-13</em>
+<em>Version: 1.0.0</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/ai-guru-global/ai-guru-database" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -137,4 +137,4 @@ updated: 2026-06-15
 - [[13_Agent_Production/Microsoft_AI_Agents_L09_Metacognition]] — L09：元认知中的反思也是 context 管理
 - [[04_NLP_LLMs/Prompt_Engineering/GenAI_L04_Prompt_Engineering_Fundamentals]] — Prompt 基础
 - [[11_RAG_Systems/README]] — RAG 是 Knowledge context 的主要实现
-- [[90_Learn/Microsoft_AI_Agents_for_Beginners]] — 课程总览
+- [[90_Learn/Courses/Microsoft_AI_Agents_for_Beginners]] — 课程总览

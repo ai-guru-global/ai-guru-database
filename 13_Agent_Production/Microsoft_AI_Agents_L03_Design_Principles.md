@@ -116,4 +116,4 @@ updated: 2026-06-15
 - [[13_Agent_Production/Microsoft_AI_Agents_L04_Tool_Use]] — 下一课：工具使用设计模式
 - [[13_Agent_Production/Agentic_Design_Patterns_AndrewNg]] — Andrew Ng 工程视角的四大 Agentic 模式
 - [[19_Ethics_Safety/GenAI_L03_Using_GenAI_Responsibly]] — 负责任 AI 概览
-- [[90_Learn/Microsoft_AI_Agents_for_Beginners]] — 课程总览
+- [[90_Learn/Courses/Microsoft_AI_Agents_for_Beginners]] — 课程总览

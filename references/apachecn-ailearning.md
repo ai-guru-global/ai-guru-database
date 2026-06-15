@@ -41,7 +41,7 @@ AiLearning 是 ApacheCN 整理的开源中文 AI 学习笔记与教程集合，�
 | TensorFlow 2.x | `docs/tf2/` | 《Sklearn 与 TensorFlow 机器学习实用指南》第二版节选 |
 | 其他 | `docs/misc/`、`docs/faq/`、`docs/report/` | 补充资料、FAQ 与阶段总结 |
 
-> 完整章节映射与学习建议见：[[90_Learn/ApacheCN_AILearning_Guide]]
+> 完整章节映射与学习建议见：[[90_Learn/Courses/ApacheCN_AILearning_Guide]]
 
 ## 相关资源
 

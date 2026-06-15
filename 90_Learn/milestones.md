@@ -246,9 +246,12 @@ updated: 2026-05-31
 
 ## Related
 
-- [[90_Learn/pathways/absolute-beginner]] — 零基础通识路径 (共享: courses, education, learning, study-path)
-- [[90_Learn/pathways/ai-researcher]] — AI 研究者路径 (共享: courses, education, learning, study-path)
-- [[90_Learn/pathways/java-developer]] — Java 开发者 AI 路径 (共享: courses, education, learning, study-path)
-- [[90_Learn/pathways/llm-engineer]] — LLM 工程师路径 (共享: courses, education, learning, study-path)
-- [[90_Learn/README.md|README]]
-- [[90_Learn/README_for_dummy.md|README_for_dummy]]
+- [[90_Learn/pathways/absolute-beginner]] — 零基础通识路径
+- [[90_Learn/pathways/ml-practitioner]] — ML 从业者路径
+- [[90_Learn/pathways/llm-engineer]] — LLM 工程师路径
+- [[90_Learn/pathways/ai-researcher]] — AI 研究者路径
+- [[90_Learn/pathways/product-manager]] — AI 产品经理路径
+- [[90_Learn/pathways/java-developer]] — Java 开发者 AI 路径
+- [[90_Learn/Learning_Paths_2026]] — 五大 AI 职业角色学习路径全景指南
+- [[90_Learn/README|Learn — AI Guru 概念入门路径]]
+- [[90_Learn/README_for_dummy|90 Learn — 小白版]]

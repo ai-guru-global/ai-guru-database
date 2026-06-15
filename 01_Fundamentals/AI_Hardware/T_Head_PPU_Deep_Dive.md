@@ -132,6 +132,34 @@ IoT / 端侧芯片:
 | 集群能力 | **64 卡全带宽互联**，128 卡超节点 |
 | 通信时延 | 低至百纳秒级 |
 
+#### 精度支持是什么意思？FP32 → FP4 有啥区别？
+
+真武 M890 说「原生支持 FP32 到 FP4 等多种数据精度」，这里的「精度」可以理解为：**数字用多少位二进制来表示**。
+
+位数越多，表示得越精细；位数越少，表示得越粗糙，但计算更快、更省内存。
+
+| 精度 | 全称 | 每位参数占多少字节 | 通俗理解 | 适用场景 |
+|------|------|------------------|---------|---------|
+| **FP32** | 32 位浮点 | 4 字节 | 小数点后保留很多位，最精确 | 模型训练初期、对精度要求极高的场景 |
+| **FP16** | 16 位浮点 | 2 字节 | 精度减半，但速度/省内存翻倍 | 主流训练、推理 |
+| **FP8** | 8 位浮点 | 1 字节 | 再减半，大部分情况下几乎看不出质量损失 | 大模型推理加速 |
+| **FP4** | 4 位浮点 | 0.5 字节 | 最粗糙，但最快、最省显存 | 超大模型推理、边缘部署、对速度要求极高的场景 |
+
+**大白话类比**：
+
+想象你在记录一个人的身高：
+- FP32 = 记录到 **1.75321 米**
+- FP16 = 记录到 **1.75 米**
+- FP8 = 记录到 **1.8 米**
+- FP4 = 记录到 **约 1.8 米** 或 **约 1.7 米**
+
+对于大部分 AI 任务，FP16 甚至 FP8 已经足够「看不出差别」，但 FP4 可以让同样大小的显存装下 **8 倍** 于 FP32 的参数，推理速度也更快。
+
+**真武 M890 支持全精度的意义**：
+- **训练时用 FP32/FP16**：保证模型学得更准、更稳
+- **推理时用 FP8/FP4**：让同样硬件跑得更快、服务更多用户
+- 一块芯片覆盖「高精度训练」到「超高速推理」全部场景
+
 ### 3.3 真武系列路线图
 
 ```
@@ -330,4 +358,4 @@ IoT / 端侧芯片:
 
 ### 关联 Wiki 页面
 
-> **关联**: -> [[01_Fundamentals/AI_Hardware/Chinese_AI_Chips_Deep_Dive|国产 AI 芯片深度解析]] | [[01_Fundamentals/AI_Hardware/AI_Hardware_2026|AI 硬件与芯片 2026 年全景报告]] | [[01_Fundamentals/AI_Hardware/NVIDIA_AMD_GPU_Deep_Dive|NVIDIA & AMD GPU 深度解析]] | [[12_Architecture_Infrastructure/AI_Infrastructure_2026|AI 基础设施 2026]] | [[07_Model_Training/Distributed_Training_2026|分布式训练 2026]]
+> **关联**: -> [[01_Fundamentals/AI_Hardware/Chinese_AI_Chips_Deep_Dive|国产 AI 芯片深度解析]] | [[01_Fundamentals/AI_Hardware/AI_Hardware_2026|AI 硬件与芯片 2026 年全景报告]] | [[01_Fundamentals/AI_Hardware/NVIDIA_AMD_GPU_Deep_Dive|NVIDIA & AMD GPU 深度解析]] | [[12_Architecture_Infrastructure/AI_Infrastructure_2026|AI 基础设施 2026]] | [[07_Model_Training/Distributed_Training_2026|分布式训练 2026]] | [[01_Fundamentals/AI_Hardware/T_Head_PPU_for_dummy|平头哥 PPU 大白话解读]]

@@ -118,6 +118,7 @@ KV Cache 优化技术栈（从底到顶叠加）
 ## Related
 
 - [[concepts/kv-cache-plain]] — KV Cache 大白话解释：适合初学者的类比版
+- [[concepts/transformer-layer]] — Transformer Layer（层）大白话解释
 - [[concepts/paged-attention]] — PagedAttention：KV Cache 的虚拟内存管理
 - [[concepts/multi-head-latent-attention]] — MLA：KV Cache 压缩 7-28×
 - [[concepts/prefix-caching]] — 前缀缓存：复用共享 prompt prefix

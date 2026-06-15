@@ -15,14 +15,14 @@ updated: 2026-06-12
 
 | 资源 | 类型 | 映射 |
 |------|------|------|
-| [Microsoft AI For Beginners](microsoft-ai-for-beginners.md) | 课程 | → [[90_Learn/Microsoft_AI_For_Beginners]] |
+| [Microsoft AI For Beginners](microsoft-ai-for-beginners.md) | 课程 | → [[90_Learn/Courses/Microsoft_AI_For_Beginners]] |
 
 ## 规划中的资源索引
 
 | 资源 | 类型 | 预计映射 |
 |------|------|----------|
-| DeepLearning.AI Short Courses | 课程 | → [[90_Learn/DeepLearningAI_Short_Courses]] |
-| Hugging Face NLP Course | 课程 | → [[90_Learn/HuggingFace_Official_Courses]] |
+| DeepLearning.AI Short Courses | 课程 | → [[90_Learn/Courses/DeepLearningAI_Short_Courses]] |
+| Hugging Face NLP Course | 课程 | → [[90_Learn/Courses/HuggingFace_Official_Courses]] |
 | Stanford CS229 | 课程 | 机器学习基础 |
 | Stanford CS231n | 课程 | 计算机视觉 |
 | Stanford CS224n | 课程 | NLP 与深度学习 |

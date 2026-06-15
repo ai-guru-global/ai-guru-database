@@ -71,15 +71,15 @@ flowchart TB
 
 | 课程 | 定位 | 适合路径 | 本库索引 |
 |------|------|---------|---------|
-| **Microsoft AI For Beginners** | 12 周 AI 入门，覆盖符号 AI、神经网络、CV、NLP、RL、伦理，含 PyTorch/TensorFlow 双框架 Notebook | 所有路径的入门阶段 | [[90_Learn/Microsoft_AI_For_Beginners]] |
-| **Microsoft AI Agents for Beginners** | 微软官方 16 课 AI Agent 入门（MAF + Azure AI Foundry + .NET/Python） | LLM/Agent Engineer | [[90_Learn/Microsoft_AI_Agents_for_Beginners]] |
-| **Hello-Agents (Datawhale)** | 中文 Agent 系统教程，16 章 + 综合项目，从零构建 ReAct/LangGraph/AutoGen/MCP/A2A/ANP | LLM/Agent Engineer、中文学习者 | [[90_Learn/Hello_Agents_Course]] |
-| **Learn Claude Code** | 20 课渐进式 Claude Code 式 Harness 工程教程 | LLM/Agent Engineer、Agent 工具开发者 | [[90_Learn/Learn_Claude_Code_Course]] |
-| **Hands-On Large Language Models** | 《图解 LLM》12 章 + 近 300 张图 + Jupyter Notebook，覆盖 Token 到 BERT/生成模型微调 | LLM/Agent Engineer、AI Research | [[90_Learn/Hands_On_LLMs_Course]] |
-| **ApacheCN AILearning** | 中文全栈 AI 学习资料库（数据分析、线性代数、ML、PyTorch、TensorFlow 2.x、NLP） | ML Engineer、AI Research、中文学习者 | [[90_Learn/ApacheCN_AILearning_Guide]] |
+| **Microsoft AI For Beginners** | 12 周 AI 入门，覆盖符号 AI、神经网络、CV、NLP、RL、伦理，含 PyTorch/TensorFlow 双框架 Notebook | 所有路径的入门阶段 | [[90_Learn/Courses/Microsoft_AI_For_Beginners]] |
+| **Microsoft AI Agents for Beginners** | 微软官方 16 课 AI Agent 入门（MAF + Azure AI Foundry + .NET/Python） | LLM/Agent Engineer | [[90_Learn/Courses/Microsoft_AI_Agents_for_Beginners]] |
+| **Hello-Agents (Datawhale)** | 中文 Agent 系统教程，16 章 + 综合项目，从零构建 ReAct/LangGraph/AutoGen/MCP/A2A/ANP | LLM/Agent Engineer、中文学习者 | [[90_Learn/Courses/Hello_Agents_Course]] |
+| **Learn Claude Code** | 20 课渐进式 Claude Code 式 Harness 工程教程 | LLM/Agent Engineer、Agent 工具开发者 | [[90_Learn/Courses/Learn_Claude_Code_Course]] |
+| **Hands-On Large Language Models** | 《图解 LLM》12 章 + 近 300 张图 + Jupyter Notebook，覆盖 Token 到 BERT/生成模型微调 | LLM/Agent Engineer、AI Research | [[90_Learn/Courses/Hands_On_LLMs_Course]] |
+| **ApacheCN AILearning** | 中文全栈 AI 学习资料库（数据分析、线性代数、ML、PyTorch、TensorFlow 2.x、NLP） | ML Engineer、AI Research、中文学习者 | [[90_Learn/Courses/ApacheCN_AILearning_Guide]] |
 | **500+ AI Projects** | 500+ AI/ML/DL/CV/NLP 实战项目合集索引 | 所有路径项目实践 | [[references/500-ai-projects]] |
-| **Hugging Face 官方课程** | Transformer / NLP / RL / Audio 系统课程 | LLM/Agent Engineer、AI Research | [[90_Learn/HuggingFace_Official_Courses]] |
-| **DeepLearning.AI 短课程** | 前沿技术短课程集合 | 各路径进阶补充 | [[90_Learn/DeepLearningAI_Short_Courses]] |
+| **Hugging Face 官方课程** | Transformer / NLP / RL / Audio 系统课程 | LLM/Agent Engineer、AI Research | [[90_Learn/Courses/HuggingFace_Official_Courses]] |
+| **DeepLearning.AI 短课程** | 前沿技术短课程集合 | 各路径进阶补充 | [[90_Learn/Courses/DeepLearningAI_Short_Courses]] |
 
 ---
 

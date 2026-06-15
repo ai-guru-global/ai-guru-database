@@ -165,7 +165,7 @@ def multi_head_attention(X, W_q, W_k, W_v, W_o, num_heads):
 
 ## 相关阅读
 
-- 课程索引：[[90_Learn/Microsoft_AI_For_Beginners]]
+- 课程索引：[[90_Learn/Courses/Microsoft_AI_For_Beginners]]
 - 本库相关页面：
   - [[04_NLP_LLMs/Transformer_Revolution/Transformer_Revolution]]
   - [[04_NLP_LLMs/LLM_Architectures/LLM_Architectures]]

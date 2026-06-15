@@ -11,7 +11,7 @@ summary: 用生活化的类比解释 KV Cache：大模型逐字生成文本时�
 lifecycle: draft
 tier: core
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-15T07:55:28.435Z
 ---
 
 # KV Cache 大白话解释
@@ -57,7 +57,54 @@ updated: 2026-06-15
 
 ---
 
+## KV Cache 在架构中的哪个位置？
+
+把大模型想象成一家工厂：
+
+- 原料（输入 token）进来
+- 先被“翻译”成机器能懂的格式（**词嵌入**）
+- 然后进入多道“加工车间”（**Layer**）
+- 每个车间里有：
+  1. **Attention 工位**：查看上下文，决定当前 token 应该关注谁
+  2. **FFN 工位**：对 attention 出来的结果再做一次变换
+- 最后一道车间出来的就是“下一个 token 选谁”（**logits**）
+
+KV Cache 就放在 **每个车间的 Attention 工位旁边**，是一本不断变厚的“上下文备忘录”。
+
+```
+输入 token → 词嵌入 → Layer 1 Attention → Layer 1 FFN → Layer 2 Attention → Layer 2 FFN → ... → 输出 logits
+```
+
+---
+
+## Layer 是什么？一句话看不懂怎么办
+
+**Layer（层）就是大模型“把同一段话反复想很多遍”。**
+
+人写文章也不是想一次就定稿：先打草稿，再润色，再检查逻辑。大模型也一样，它把同样的输入**反复过几十次**（比如 32 次、80 次），每一次都在上一次的基础上加深理解。
+
+每一层里有两个主要动作：
+
+| 动作 | 大白话 | 作用 |
+|------|--------|------|
+| **Attention** | “我看看上下文里谁和我有关” | 收集信息 |
+| **FFN** | “我结合上下文，重新理解一下我当前这个词” | 加工信息 |
+
+所以：
+
+- Layer 1 的 Attention 看到的是**最初级的词与词关系**
+- Layer 2 的 Attention 看到的是 Layer 1 加工后的结果
+- ……
+- Layer 80 的 Attention 看到的是非常抽象、高级的含义
+
+**每一层的理解都不一样，所以每一层都要有自己的 KV Cache。**
+
+> 类比：Layer 就像一排审稿人。第一个审稿人看语法，第二个看逻辑，第三个看风格……每个人对同一段话的“笔记”都不一样，所以每个人都要有自己的笔记本（KV Cache）。
+
+---
+
 ## Related
 
 - [[concepts/kv-cache]] — KV Cache 技术深潜与优化全景
+- [[concepts/transformer-layer]] — Transformer Layer（层）大白话解释
 - [[concepts/transformer-architecture]] — Transformer 架构简介

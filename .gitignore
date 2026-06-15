@@ -34,9 +34,6 @@ Web/.eval-history
 __pycache__
 *.pyc
 
-# MkDocs build output
-Web/public/mkdocs
-mkdocs-docs
 
 # ============================================================
 # _raw/ — GitHub source mirrors (staging area for wiki distillation)

@@ -444,6 +444,14 @@ class MLPipelineMonitor:
 
 ---
 
+## 工具实现（本章节）
+
+本文讲 ML CI/CD 的**概念与流程**。AI 系统的 CI/CD 实践与工具配置：
+
+- [[CI_CD_Pipeline_AI_2026]] — AI 系统 CI/CD 流水线 2026
+
+---
+
 ## 8. 参考资源
 
 - [Great Expectations](https://greatexpectations.io/)

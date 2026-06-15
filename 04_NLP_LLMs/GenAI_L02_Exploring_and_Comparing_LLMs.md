@@ -414,7 +414,7 @@ Azure AI Studio 的模型目录使用户能够：
 
 ## 扩展阅读
 
-- [[90_Learn/Microsoft_GenAI_For_Beginners]] — 课程总览与章节映射
+- [[90_Learn/Courses/Microsoft_GenAI_For_Beginners]] — 课程总览与章节映射
 - [[19_Ethics_Safety/GenAI_L03_Using_GenAI_Responsibly]] — 第 3 课：负责任地使用生成式 AI
 - [[04_NLP_LLMs/LLM_Architectures/LLM_Architectures]] — LLM 架构详解
 - [[11_RAG_Systems/RAG_Systems]] — RAG 系统详解

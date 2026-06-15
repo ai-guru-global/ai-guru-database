@@ -170,7 +170,7 @@ for step in range(num_steps):
 
 ## 相关阅读
 
-- 课程索引：[[90_Learn/Microsoft_AI_For_Beginners]]
+- 课程索引：[[90_Learn/Courses/Microsoft_AI_For_Beginners]]
 - 本库相关页面：[[05_Computer_Vision/Generative_Models/Generative_Models]]
 - 微软官方 Notebook 文件夹：[lessons/4-ComputerVision/10-GANs](https://github.com/microsoft/AI-For-Beginners/tree/main/lessons/4-ComputerVision/10-GANs)
 - 扩展资源：

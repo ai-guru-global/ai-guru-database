@@ -469,6 +469,15 @@ if __name__ == "__main__":
 
 ---
 
+## 工具实现（本章节）
+
+本文讲流水线编排的**概念与选型**。具体工具的命令、配置、部署：
+
+- [[Kubeflow_Deep_Dive]] — Kubeflow：云原生 ML 平台
+- [[Prefect_Deep_Dive]] — Prefect：Python 原生工作流编排
+
+---
+
 ## 8. 参考资源
 
 - [Apache Airflow 文档](https://airflow.apache.org/docs/)

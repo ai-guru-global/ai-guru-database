@@ -31,6 +31,18 @@ updated: '2026-05-31'
 | [CDI 小白版](./CDI_for_dummy.md) | 用「酒店入住单」「万能插头」比喻讲懂 CDI | 初学者、非基础设施背景 |
 | [DRA Deep Dive](./DRA_Deep_Dive.md) | 动态资源分配：K8s 设备分配的未来，与 CDI 配对 | 架构师、平台 SRE |
 
+### AI Gateway
+
+| 文档 | 内容 | 适用读者 |
+|------|------|----------|
+| [AI Gateway 2026](./AI_Gateway/AI_Gateway_2026.md) | AI Gateway 全景：路由、安全、可观测性 | 架构师、SRE |
+| [AI Gateway Comparison](./AI_Gateway/AI_Gateway_Comparison_2026.md) | 主流 Gateway 横向对比 | 选型参考 |
+| [LiteLLM Deep Dive](./AI_Gateway/LiteLLM_Deep_Dive.md) | LiteLLM 统一接口层 | 开发者 |
+| [Kong AI Gateway](./AI_Gateway/Kong_AI_Gateway_Deep_Dive.md) | Kong AI 网关插件体系 | 平台工程师 |
+| [Portkey Deep Dive](./AI_Gateway/Portkey_Deep_Dive.md) | Portkey 可观测性网关 | 架构师 |
+| [Cohere Deep Dive](./AI_Gateway/Cohere_Deep_Dive.md) | Cohere 企业级 RAG/安全 | 企业用户 |
+| [Spring AI Gateway Security](./AI_Gateway/Spring_AI_Gateway_Security.md) | Spring AI 安全网关 | Java 生态 |
+
 ---
 
 ## 学习路径
@@ -53,10 +65,9 @@ updated: '2026-05-31'
 - [RAG 系统](../11_RAG_Systems/README.md) — 检索系统的架构考量
 
 ### 进阶方向
-- [AI Gateway](../14_AI_Gateway/README.md) — 流量接入层设计
+- [AI Gateway](./AI_Gateway/AI_Gateway_README.md) — 流量接入层设计（本章子目录）
 - [AI Ops](../16_AI_Ops/README.md) — 运维监控与自动化
 - [Agent 生产](../13_Agent_Production/README.md) — Agent 系统的架构模式
-- [云运维 Agent](../18_Cloud_Ops_Agent/) — 云原生运维体系
 
 ---
 

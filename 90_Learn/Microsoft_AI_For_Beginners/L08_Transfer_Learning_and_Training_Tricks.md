@@ -181,7 +181,7 @@ model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy']
 
 ## 相关阅读
 
-- 课程索引：[[90_Learn/Microsoft_AI_For_Beginners]]
+- 课程索引：[[90_Learn/Courses/Microsoft_AI_For_Beginners]]
 - 本库相关页面：
   - [[05_Computer_Vision/Image_Classification_Detection/Image_Classification_Detection]]
   - [[07_Model_Training/Fine_tuning_Strategies]]

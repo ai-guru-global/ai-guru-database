@@ -433,7 +433,7 @@ except openai.BadRequestError as err:
 
 ## 扩展阅读
 
-- [[90_Learn/Microsoft_GenAI_For_Beginners]]
+- [[90_Learn/Courses/Microsoft_GenAI_For_Beginners]]
 - [[04_NLP_LLMs/Multimodal_Models/Multimodal_Models_for_dummy]]
 - [[20_AI_Applications_Industry/GenAI_L10_Building_Low_Code_AI_Applications]]
 - [[11_RAG_Systems/Multimodal_RAG_Architecture_2026]]

@@ -54,11 +54,12 @@ title: Wiki Index
 ### 容器与设备接入
 - [[12_Architecture_Infrastructure/CDI_Deep_Dive]] — CDI 容器设备接口标准:GPU/异构加速器统一接入 K8s ( #cdi #kubernetes #gpu #containerd #device-plugin)
 - [[12_Architecture_Infrastructure/DRA_Deep_Dive]] — DRA 动态资源分配:K8s 设备分配的未来,与 CDI 配对 ( #dra #kubernetes #gpu #scheduling)
+- [[references/cdi-spec]] — CDI 规范官方源引用(CNCF/Apache-2.0/运行时支持矩阵) ( #cdi #cncf #references)
 
 ### 学习课程
-- [[90_Learn/Microsoft_AI_For_Beginners]] — Microsoft 官方 12 周 AI 初学者课程映射 ( #learning-paths #microsoft #course)
+- [[90_Learn/Courses/Microsoft_AI_For_Beginners]] — Microsoft 官方 12 周 AI 初学者课程映射 ( #learning-paths #microsoft #course)
 - [[references/microsoft-ai-for-beginners]] — Microsoft AI For Beginners 外部源引用索引 ( #references #microsoft)
-- [[90_Learn/Microsoft_GenAI_For_Beginners]] — Microsoft 21 课生成式 AI 初学者课程映射 ( #learning-paths #microsoft #generative-ai #course)
+- [[90_Learn/Courses/Microsoft_GenAI_For_Beginners]] — Microsoft 21 课生成式 AI 初学者课程映射 ( #learning-paths #microsoft #generative-ai #course)
 - [[references/microsoft-genai-for-beginners]] — Microsoft Generative AI For Beginners 外部源引用索引 ( #references #microsoft #generative-ai)
 - [[01_Fundamentals/GenAI_L00_Course_Setup]] — L00 课程环境设置 ( #microsoft-genai-course #setup)
 - [[00_AI_Introduction/GenAI_L01_Intro_to_GenAI_and_LLMs]] — L01 生成式 AI 与 LLM 简介 ( #microsoft-genai-course #generative-ai)
@@ -84,9 +85,9 @@ title: Wiki Index
 - [[04_NLP_LLMs/Global_LLM_Ecosystem/GenAI_L21_Building_with_Meta]] — L21 使用 Meta 模型构建 ( #microsoft-genai-course #meta)
 
 ### Agent 课程
-- [[90_Learn/Hello_Agents_Course]] — Datawhale 中文 Agent 教程：16 章 + 综合项目 ( #learning-paths #ai-agents #datawhale #course)
+- [[90_Learn/Courses/Hello_Agents_Course]] — Datawhale 中文 Agent 教程：16 章 + 综合项目 ( #learning-paths #ai-agents #datawhale #course)
 - [[references/hello-agents]] — Hello-Agents 外部源引用索引 ( #references #ai-agents)
-- [[90_Learn/Microsoft_AI_Agents_for_Beginners]] — 微软官方 16 课 AI Agent 入门课程映射 ( #learning-paths #microsoft #ai-agents #course)
+- [[90_Learn/Courses/Microsoft_AI_Agents_for_Beginners]] — 微软官方 16 课 AI Agent 入门课程映射 ( #learning-paths #microsoft #ai-agents #course)
 - [[references/ai-agents-for-beginners]] — Microsoft AI Agents for Beginners 外部源引用索引 ( #references #microsoft #ai-agents)
 
 ### Microsoft AI Agents for Beginners — 17 课深度页面
@@ -107,13 +108,13 @@ title: Wiki Index
 - [[13_Agent_Production/Microsoft_AI_Agents_L14_Microsoft_Agent_Framework]] — L14 MAF 深度：Agents/Threads/Middleware/Workflows ( #microsoft-ai-agents-course #maf #workflows)
 - [[13_Agent_Production/Microsoft_AI_Agents_L15_Browser_Use]] — L15 浏览器 Agent：Browser-Use+Playwright+CDP ( #microsoft-ai-agents-course #cua #browser-use)
 - [[13_Agent_Production/Microsoft_AI_Agents_L18_Securing_AI_Agents]] — L18 加密审计收据：Ed25519+JCS+哈希链 ( #microsoft-ai-agents-course #security #cryptography #audit)
-- [[90_Learn/Learn_Claude_Code_Course]] — 20 课 Claude Code 式 Harness 工程教程映射 ( #learning-paths #claude-code #agent-harness #course)
+- [[90_Learn/Courses/Learn_Claude_Code_Course]] — 20 课 Claude Code 式 Harness 工程教程映射 ( #learning-paths #claude-code #agent-harness #course)
 - [[references/learn-claude-code]] — Learn Claude Code 外部源引用索引 ( #references #claude-code)
 
 ### LLM 与 AI 基础课程
-- [[90_Learn/Hands_On_LLMs_Course]] — 《Hands-On Large Language Models》12 章课程映射 ( #learning-paths #llm #course)
+- [[90_Learn/Courses/Hands_On_LLMs_Course]] — 《Hands-On Large Language Models》12 章课程映射 ( #learning-paths #llm #course)
 - [[references/books/hands-on-llms-alammar]] — Hands-On Large Language Models 书籍引用索引 ( #references #book #llm)
-- [[90_Learn/ApacheCN_AILearning_Guide]] — ApacheCN 中文全栈 AI 学习资料库指南 ( #learning-paths #chinese-ai #course)
+- [[90_Learn/Courses/ApacheCN_AILearning_Guide]] — ApacheCN 中文全栈 AI 学习资料库指南 ( #learning-paths #chinese-ai #course)
 - [[references/apachecn-ailearning]] — ApacheCN AILearning 外部源引用索引 ( #references #chinese-ai)
 
 ### 项目合集

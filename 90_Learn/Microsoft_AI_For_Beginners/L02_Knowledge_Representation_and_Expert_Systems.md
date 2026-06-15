@@ -186,7 +186,7 @@ Microsoft 是 company（概率 0.87），也是 brand（概率 0.75）。
 
 ## 相关阅读
 
-- 课程索引：[[90_Learn/Microsoft_AI_For_Beginners]]
+- 课程索引：[[90_Learn/Courses/Microsoft_AI_For_Beginners]]
 - 本库相关页面：
   - [[00_AI_Introduction/AI_Fundamentals]]
   - [[04_NLP_LLMs/Reasoning_Models/Neuro_Symbolic_and_Formal_Verification_2026]]

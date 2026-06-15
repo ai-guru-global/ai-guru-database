@@ -406,7 +406,7 @@ AI红队测试并非包罗万象，应作为其他控制措施的补充，例如
 
 ## 扩展阅读
 
-- [[90_Learn/Microsoft_GenAI_For_Beginners]] - 课程总览
+- [[90_Learn/Courses/Microsoft_GenAI_For_Beginners]] - 课程总览
 - [[19_Ethics_Safety/AI_Security_2026/README]] - AI安全前沿
 - [[19_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming]] - 红队测试实践
 - [[19_Ethics_Safety/Safety_Evaluation_Framework]] - 安全评估框架

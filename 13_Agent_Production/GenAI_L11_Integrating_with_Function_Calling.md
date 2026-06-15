@@ -456,7 +456,7 @@ You can click on the links to access the courses.
 
 ## 扩展阅读
 
-- [[90_Learn/Microsoft_GenAI_For_Beginners]]
+- [[90_Learn/Courses/Microsoft_GenAI_For_Beginners]]
 - [[13_Agent_Production/GenAI_L06_Text_Generation_Apps]]
 - [[13_Agent_Production/GenAI_L07_Building_Chat_Applications]]
 - [[13_Agent_Production/Agentic_Design_Patterns_AndrewNg]]

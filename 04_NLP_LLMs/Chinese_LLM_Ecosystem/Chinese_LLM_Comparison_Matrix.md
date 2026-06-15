@@ -238,7 +238,7 @@ updated: "2026-06-12"
 - [[04_NLP_LLMs/Chinese_LLM_Ecosystem/Tencent_Hunyuan_Deep_Dive]] — 腾讯混元深度解析
 - [[04_NLP_LLMs/Chinese_LLM_Ecosystem/iFlytek_Spark_Deep_Dive]] — 讯飞星火深度解析
 - [[04_NLP_LLMs/LLM_Architectures/MoE_Routing_and_Load_Balancing]] — MoE 路由与负载均衡
-- [[90_Learn/Microsoft_GenAI_For_Beginners]] — 生成式 AI 入门课程
+- [[90_Learn/Courses/Microsoft_GenAI_For_Beginners]] — 生成式 AI 入门课程
 
 ---
 

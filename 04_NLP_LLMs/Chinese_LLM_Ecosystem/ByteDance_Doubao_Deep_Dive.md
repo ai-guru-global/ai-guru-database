@@ -512,7 +512,7 @@ response = client.chat(
 - [[04_NLP_LLMs/Chinese_LLM_Ecosystem/Kimi_Moonshot_Deep_Dive]] — Kimi 月之暗面
 - [[04_NLP_LLMs/Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]] — 国产模型对比矩阵
 - [[13_Agent_Production/GenAI_L17_AI_Agents]] — AI Agent 概述
-- [[90_Learn/Microsoft_GenAI_For_Beginners]] — 生成式 AI 入门课程
+- [[90_Learn/Courses/Microsoft_GenAI_For_Beginners]] — 生成式 AI 入门课程
 
 ---
 

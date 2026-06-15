@@ -74,7 +74,7 @@ updated: 2026-06-12
 
 ## 相关阅读
 
-- [[90_Learn/Hands_On_LLMs_Course]] — 本库完整章节映射与学习路径
+- [[90_Learn/Courses/Hands_On_LLMs_Course]] — 本库完整章节映射与学习路径
 - [[04_NLP_LLMs/LLM_Fundamentals]] — LLM 基础概念
 - [[04_NLP_LLMs/Prompt_Engineering/Prompt_Engineering]] — 提示工程总览
 - [[11_RAG_Systems/RAG_Systems]] — RAG 系统总览

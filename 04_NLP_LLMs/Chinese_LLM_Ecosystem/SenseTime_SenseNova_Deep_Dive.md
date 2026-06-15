@@ -339,7 +339,7 @@ InternVL 架构创新:
 - [[04_NLP_LLMs/Chinese_LLM_Ecosystem/MiniMax_Deep_Dive]] — MiniMax 深度解析
 - [[04_NLP_LLMs/Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]] — 国产模型对比矩阵
 - [[04_NLP_LLMs/Multimodal_Models/Multimodal_Architectures_2026]] — 多模态架构
-- [[90_Learn/Microsoft_GenAI_For_Beginners]] — 生成式 AI 入门课程
+- [[90_Learn/Courses/Microsoft_GenAI_For_Beginners]] — 生成式 AI 入门课程
 
 ---
 

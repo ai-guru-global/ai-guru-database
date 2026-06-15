@@ -396,6 +396,18 @@ graph LR
 
 ---
 
+## 工具实现（本章节）
+
+本文讲 LLM 评估的**方法论**。具体评估工具的用法：
+
+- [[Braintrust_Deep_Dive]] — Braintrust：开源 LLM 评估平台
+- [[LangSmith_Deep_Dive]] — LangSmith：LLM 调试与评估
+- [[15_Testing/RAGAS_Deep_Dive]] — Ragas：RAG 评估事实标准
+- [[15_Testing/DeepEval_Deep_Dive]] — DeepEval：pytest 风格 LLM 测试
+- [[15_Testing/Promptfoo_Deep_Dive]] — Promptfoo：Prompt 对比与红队
+
+---
+
 ## 10. 相关文档
 
 ### 本章内

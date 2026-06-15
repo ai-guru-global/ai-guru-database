@@ -87,7 +87,7 @@ def main():
     base_dir = sys.argv[1] if len(sys.argv) > 1 else '.'
     exclude = {'.git', 'Web', 'synthesis', '_archives', '_raw', '_staging',
                'node_modules', '.venv', '.qoder', '.obsidian', '.github',
-               'mkdocs-docs', 'concepts', 'entities', 'journal', 'projects',
+               'concepts', 'entities', 'journal', 'projects',
                'references', 'skills'}
     
     total_fixes = 0

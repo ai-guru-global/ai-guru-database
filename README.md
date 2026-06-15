@@ -1,7 +1,7 @@
 ---
 title: 克隆仓库
-category: mkdocs-docs
-tags: ["documentation", "mkdocs", "docs-as-code"]
+category: documentation
+tags: ["documentation", "docs-as-code", "ai-knowledge"]
 summary: ""
 created: 2026-05-31
 updated: 2026-06-15
@@ -130,7 +130,7 @@ updated: 2026-06-15
 | 21_Talks | 54 | 12.45 万 | 1.3% |
 | **总计** | **898** | **950.10 万** | **100%** |
 
-> 💡 提示：运行 `python3 count_words.py` 可查看最新的实时统计
+> 💡 提示：运行 `python3 _tools/count_words.py` 可查看最新的实时统计
 
 ---
 
@@ -479,8 +479,7 @@ git push origin feature/your-feature
 
 ## Related
 
-- [[README]] — 克隆仓库 (共享: docs-as-code, documentation, mkdocs)
-- [MkDocs 站点建设指南](mkdocs-docs/SITE_BUILD_GUIDE.md) — docs-as-code, documentation, mkdocs
+- [[README]] — 克隆仓库 (共享: docs-as-code, documentation)
 - [[ROADMAP]] — AI Guru 知识库路线图
 - [[KNOWN_ISSUES]] — AI Guru 知识库 - 已知问题追踪 (Known Issues)
 - [[README_EN]] — README_EN

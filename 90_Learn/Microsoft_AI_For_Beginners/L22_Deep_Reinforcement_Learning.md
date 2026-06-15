@@ -91,7 +91,7 @@ Actor-Critic 版本则会额外训练一个价值网络，并用时序差分（T
 
 ## 相关阅读
 
-- 课程索引：[[90_Learn/Microsoft_AI_For_Beginners]]
+- 课程索引：[[90_Learn/Courses/Microsoft_AI_For_Beginners]]
 - 本库相关页面：
   - [[06_Reinforcement_Learning/Deep_RL/Deep_RL]]
   - [[06_Reinforcement_Learning/RL_Foundations/RL_Foundations]]

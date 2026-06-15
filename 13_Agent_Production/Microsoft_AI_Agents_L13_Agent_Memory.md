@@ -136,4 +136,4 @@ Azure AI Search 提供生产级 Structured RAG，从对话历史、邮件、图�
 - [[13_Agent_Production/Memory_Infrastructure/README]] — 本仓库记忆基础设施总览
 - [[13_Agent_Production/Hello_Agents_L08_Memory_RAG]] — Hello-Agents 课程的 Memory+RAG
 - [[11_RAG_Systems/README]] — RAG 主题
-- [[90_Learn/Microsoft_AI_Agents_for_Beginners]] — 课程总览
+- [[90_Learn/Courses/Microsoft_AI_Agents_for_Beginners]] — 课程总览

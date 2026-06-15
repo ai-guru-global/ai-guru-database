@@ -135,6 +135,7 @@ Transformer 训练 的标配配置：
 
 ## Related
 
+- [[concepts/transformer-layer]] — Transformer Layer（层）大白话解释
 - [[synthesis/transformer-llm-architecture]] — Transformer 架构 × LLM 架构 (共享: attention, bert, gpt, nlp, transformer)
 - [[04_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/README]] — PEFT 2026 (参数高效微调) (共享: bert, gpt, nlp, transformer)
 - [[04_NLP_LLMs/Fine_tuning_Techniques/README]] — 微调技术 (Fine-tuning Techniques) (共享: bert, gpt, nlp, transformer)

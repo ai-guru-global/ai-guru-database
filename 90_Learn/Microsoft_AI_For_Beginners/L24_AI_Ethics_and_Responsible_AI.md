@@ -80,7 +80,7 @@ updated: "2026-06-12"
 
 ## 相关阅读
 
-- 课程索引：[[90_Learn/Microsoft_AI_For_Beginners]]
+- 课程索引：[[90_Learn/Courses/Microsoft_AI_For_Beginners]]
 - 本库相关页面：
   - [[19_Ethics_Safety/Ethics-in-nutshell]]
   - [[19_Ethics_Safety/AI_Governance_Compliance_2026]]

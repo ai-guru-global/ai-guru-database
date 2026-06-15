@@ -24,6 +24,7 @@ updated: 2026-06-15
 | [Ollama Deep Dive](./Ollama_Deep_Dive.md) | 本地大模型部署：一键运行、多模态、工具调用、K8s | 开发者、个人用户 |
 | [SGLang Deep Dive](./SGLang_Deep_Dive.md) | 高性能推理框架：RadixAttention 前缀缓存、SRT、多 LoRA、结构化输出 | 追求极致性能 |
 | [vLLM Deep Dive](./vLLM_Deep_Dive.md) | PagedAttention 显存优化：UC Berkeley 生产级引擎 | 通用生产 |
+| [vLLM for Dummy](./vLLM_for_dummy.md) | vLLM 大白话解释：PagedAttention 与 KV Cache | 初学者快速入门 |
 | [LMDeploy Deep Dive](./LMDeploy_Deep_Dive.md) | 国产推理引擎：TurboMind/PyTorch 双后端、AWQ、国产芯片、多模态 | 中文场景 |
 | [LiteRT Deep Dive](./LiteRT_Deep_Dive.md) | 边缘 AI 推理：Android/iOS/嵌入式、Delegate 加速、端侧 LLM | 移动端部署 |
 | [llama.cpp Deep Dive](./llama_cpp_Deep_Dive.md) | 纯 C/C++ 本地推理：CPU/GPU 多后端、GGUF 量化、llamafile | 边缘/本地 |
@@ -46,6 +47,7 @@ updated: 2026-06-15
 |------|------|----------|
 | [推理性能专题首页](./Inference_Performance/README.md) | 专题导航与技术全景 | 性能工程师、架构师 |
 | [推理性能基础](./Inference_Performance/Inference_Performance_Fundamentals.md) | TTFT/TPOT/吞吐指标、Roofline 瓶颈分析、优化决策树 | 所有从业者 |
+| [决定模型推理速度的要素（大白话版）](./Inference_Performance/Inference_Speed_Factors_for_dummy.md) | 用生活化语言解释影响推理速度的六大因素 | 初学者、产品经理 |
 | [Prefill-Decode 分离](./Inference_Performance/Prefill_Decode_Disaggregation.md) | Disaggregated Serving 架构与 KV Cache 传输 | 长上下文/高并发 |
 | [MoE 推理优化](./Inference_Performance/MoE_Inference_Optimization.md) | All-to-All、Expert Parallelism、负载均衡 | MoE 部署 |
 | [推理 Profiling 与 Benchmarking](./Inference_Performance/LLM_Inference_Profiling_and_Benchmarking.md) | Nsight、PyTorch Profiler、llmperf、评测陷阱 | 性能测试 |
@@ -109,6 +111,7 @@ updated: 2026-06-15
 - [[09_Deployment_Inference/README|模型部署与推理]]
 - [[09_Deployment_Inference/SGLang_Deep_Dive|SGLang: 高性能 LLM 推理框架]]
 - [[09_Deployment_Inference/README_for_dummy|09 部署与推理 — 小白版 🚀]]
+- [[09_Deployment_Inference/vLLM_for_dummy|vLLM 大白话解释]]
 - [[09_Deployment_Inference/Ollama_Deep_Dive|Ollama: 本地大模型部署平台]]
 - [[09_Deployment_Inference/GPUStack_Deep_Dive|GPUStack: 开源 GPU 集群管理与模型服务平台]]
 - [[09_Deployment_Inference/LLM_Inference_Benchmarking_Guide|LLM 推理引擎基准测试指南]]

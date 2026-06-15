@@ -1,0 +1,246 @@
+{
+  "metadata": {
+    "evaluation_name": "K8s Domain Evaluation",
+    "evaluation_date": "2026-04-13",
+    "version": "2026 Q2",
+    "total_agents": 3,
+    "total_questions": 80,
+    "weights": {
+      "k8s_corpus_coverage": 0.4,
+      "k8s_qa_ability": 0.35,
+      "cost_performance": 0.1,
+      "interaction": 0.1,
+      "safety": 0.05
+    },
+    "corpus_sub_weights": {
+      "core_concepts": 0.3,
+      "api_objects": 0.25,
+      "ops_knowledge": 0.25,
+      "version_timeliness": 0.2
+    },
+    "qa_sub_weights": {
+      "basic_qa": 0.3,
+      "config_writing": 0.25,
+      "cluster_ops": 0.25,
+      "multi_turn": 0.2
+    }
+  },
+  "ranking": [
+    {
+      "agent_id": "qwen-k8s",
+      "agent_name": "通义千问 Qwen-Max",
+      "vendor": "阿里云",
+      "model": "qwen-max-2025",
+      "composite_score": 84.79,
+      "grade": "A",
+      "k8s_corpus_coverage": {
+        "total_score": 88.37,
+        "sub_scores": {
+          "core_concepts": {
+            "score": 90.46,
+            "questions_count": 13,
+            "weight": 0.3
+          },
+          "api_objects": {
+            "score": 92.13,
+            "questions_count": 9,
+            "weight": 0.25
+          },
+          "ops_knowledge": {
+            "score": 89.06,
+            "questions_count": 12,
+            "weight": 0.25
+          },
+          "version_timeliness": {
+            "score": 79.68,
+            "questions_count": 6,
+            "weight": 0.2
+          }
+        }
+      },
+      "k8s_qa_ability": {
+        "total_score": 80.87,
+        "sub_scores": {
+          "basic_qa": {
+            "score": 77.11,
+            "questions_count": 13,
+            "weight": 0.3
+          },
+          "config_writing": {
+            "score": 84.02,
+            "questions_count": 9,
+            "weight": 0.25
+          },
+          "cluster_ops": {
+            "score": 81.93,
+            "questions_count": 11,
+            "weight": 0.25
+          },
+          "multi_turn": {
+            "score": 81.26,
+            "questions_count": 7,
+            "weight": 0.2
+          }
+        }
+      },
+      "auxiliary": {
+        "cost_performance": 87.25,
+        "interaction": 80.49,
+        "safety": 87.29,
+        "avg_latency_ms": 778.8
+      },
+      "dimensions_summary": {
+        "k8s_corpus_coverage": 88.37,
+        "k8s_qa_ability": 80.87,
+        "cost_performance": 87.25,
+        "interaction": 80.49,
+        "safety": 87.29
+      },
+      "rank": 1
+    },
+    {
+      "agent_id": "kimi-k8s",
+      "agent_name": "Kimi (月之暗面)",
+      "vendor": "月之暗面",
+      "model": "moonshot-v1-128k",
+      "composite_score": 79.11,
+      "grade": "B",
+      "k8s_corpus_coverage": {
+        "total_score": 78.36,
+        "sub_scores": {
+          "core_concepts": {
+            "score": 80.38,
+            "questions_count": 13,
+            "weight": 0.3
+          },
+          "api_objects": {
+            "score": 82.49,
+            "questions_count": 9,
+            "weight": 0.25
+          },
+          "ops_knowledge": {
+            "score": 80.93,
+            "questions_count": 12,
+            "weight": 0.25
+          },
+          "version_timeliness": {
+            "score": 66.98,
+            "questions_count": 6,
+            "weight": 0.2
+          }
+        }
+      },
+      "k8s_qa_ability": {
+        "total_score": 78.76,
+        "sub_scores": {
+          "basic_qa": {
+            "score": 83.76,
+            "questions_count": 13,
+            "weight": 0.3
+          },
+          "config_writing": {
+            "score": 71.95,
+            "questions_count": 9,
+            "weight": 0.25
+          },
+          "cluster_ops": {
+            "score": 83.92,
+            "questions_count": 11,
+            "weight": 0.25
+          },
+          "multi_turn": {
+            "score": 73.32,
+            "questions_count": 7,
+            "weight": 0.2
+          }
+        }
+      },
+      "auxiliary": {
+        "cost_performance": 81.61,
+        "interaction": 78.87,
+        "safety": 83.13,
+        "avg_latency_ms": 868.5
+      },
+      "dimensions_summary": {
+        "k8s_corpus_coverage": 78.36,
+        "k8s_qa_ability": 78.76,
+        "cost_performance": 81.61,
+        "interaction": 78.87,
+        "safety": 83.13
+      },
+      "rank": 2
+    },
+    {
+      "agent_id": "minimax-k8s",
+      "agent_name": "MiniMax abab7",
+      "vendor": "MiniMax",
+      "model": "abab7-chat",
+      "composite_score": 71.76,
+      "grade": "B",
+      "k8s_corpus_coverage": {
+        "total_score": 67.23,
+        "sub_scores": {
+          "core_concepts": {
+            "score": 74.16,
+            "questions_count": 13,
+            "weight": 0.3
+          },
+          "api_objects": {
+            "score": 66.53,
+            "questions_count": 9,
+            "weight": 0.25
+          },
+          "ops_knowledge": {
+            "score": 65.3,
+            "questions_count": 12,
+            "weight": 0.25
+          },
+          "version_timeliness": {
+            "score": 60.1,
+            "questions_count": 6,
+            "weight": 0.2
+          }
+        }
+      },
+      "k8s_qa_ability": {
+        "total_score": 70.64,
+        "sub_scores": {
+          "basic_qa": {
+            "score": 77.9,
+            "questions_count": 13,
+            "weight": 0.3
+          },
+          "config_writing": {
+            "score": 69.91,
+            "questions_count": 9,
+            "weight": 0.25
+          },
+          "cluster_ops": {
+            "score": 66.3,
+            "questions_count": 11,
+            "weight": 0.25
+          },
+          "multi_turn": {
+            "score": 66.11,
+            "questions_count": 7,
+            "weight": 0.2
+          }
+        }
+      },
+      "auxiliary": {
+        "cost_performance": 85.23,
+        "interaction": 74.79,
+        "safety": 82.74,
+        "avg_latency_ms": 798.2
+      },
+      "dimensions_summary": {
+        "k8s_corpus_coverage": 67.23,
+        "k8s_qa_ability": 70.64,
+        "cost_performance": 85.23,
+        "interaction": 74.79,
+        "safety": 82.74
+      },
+      "rank": 3
+    }
+  ]
+}

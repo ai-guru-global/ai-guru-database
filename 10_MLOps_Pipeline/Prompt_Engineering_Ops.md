@@ -380,6 +380,15 @@ optimized = dspy.BootstrapFewShot().compile(RAGModule(), trainset=trainset)
 
 ---
 
+## 工具实现（详见 16_AI_Ops）
+
+本文讲 Prompt 工程化的**方法论**。具体 Prompt 管理工具的用法：
+
+- [[16_AI_Ops/PromptLayer_Deep_Dive]] — PromptLayer：Prompt 版本管理与追踪
+- [[15_Testing/Promptfoo_Deep_Dive]] — Promptfoo：Prompt 对比与红队
+
+---
+
 ## 8. 相关文档
 
 ### 本章内

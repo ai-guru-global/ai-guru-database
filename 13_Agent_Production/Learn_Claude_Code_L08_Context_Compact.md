@@ -55,7 +55,7 @@ Agent 读了大文件、跑了多轮命令后，`messages` 涨到超过上下文
 
 ## 关联阅读
 
-- [[90_Learn/Learn_Claude_Code_Course]] — 完整 20 课映射
+- [[90_Learn/Courses/Learn_Claude_Code_Course]] — 完整 20 课映射
 - [[references/learn-claude-code]] — 仓库引用索引
 - [[13_Agent_Production/Learn_Claude_Code_L09_Memory_System]] — 记忆系统
 - [[13_Agent_Production/Memory_Infrastructure/Agent_Memory_Systems_2026]] — Agent 记忆系统 2026

@@ -99,7 +99,7 @@ updated: "2026-06-12"
 
 ## 相关阅读
 
-- 课程索引：[[90_Learn/Microsoft_AI_For_Beginners]]
+- 课程索引：[[90_Learn/Courses/Microsoft_AI_For_Beginners]]
 - 本库相关页面：
   - [[04_NLP_LLMs/Sequence_Models/Sequence_Models]] —— RNN、LSTM 与序列建模基础
   - [[04_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques]] —— 预训练模型微调实践

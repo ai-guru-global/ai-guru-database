@@ -41,28 +41,21 @@ graph LR
 | 我在做传统 ML（推荐/分类/预测） | [[MLOps_Pipeline]] → 然后特征/CI-CD/监控 |
 | 我想知道 MLOps 是什么 | [[MLOps-in-nutshell]]（30 分钟速览） |
 | 我是纯初学者 | [[MLOps_Pipeline_for_dummy]] |
-| 我想知道工具怎么用 | → [[16_AI_Ops/README]]（工具产品页在 16 章） |
+| 我想知道工具怎么用 | 见下方「🔧 工具深度解析」区（已从 16 迁入本章） |
 
 ---
 
 ## 📍 与 16_AI_Ops 的边界
 
-> **10 是「建设方法论」（概念层），16 是「工具产品页 + 运维实践」（实现层）。**
-> 本章讲 What/Why/Design，工具的具体命令、部署、Runbook 在 [[16_AI_Ops/README]]。
-> 完整边界声明与归属矩阵见 [[_boundary-with-16]]。
-
-```mermaid
-graph LR
-    C[10 概念层<br/>What/Why/Design] -->|读者想动手| T[16 工具层<br/>How/Tool/Run]
-    T -->|读者想懂原理| C
-```
+> **本章是「ML 建设」（概念 + 工具实现，Build-time），16 是「AI 运维」（线上运营 + 应急，Run-time）。**
+> 2026-06-15 起，16 个工具深度解析已从 16 迁入本章。16 仅保留 Incident Response / SRE / Chaos Engineering。
+> 完整边界声明与归属矩阵见 [[Boundary_with_16]]。
 
 | 想了解 | 去哪 |
 |--------|------|
-| 什么是特征存储 / 为什么需要 | 本章 [[Feature_Store_Deep_Dive]] |
-| Feast 怎么装、怎么配 | [[16_AI_Ops/Feast_Deep_Dive]] |
-| 数据版本控制的原理 | 本章 [[Data_Versioning_DVC_LakeFS]] |
-| DVC/LakeFS 命令详解 | [[16_AI_Ops/DVC_Deep_Dive]] / [[16_AI_Ops/LakeFS_Deep_Dive]] |
+| 概念与方法论（什么是特征存储/为什么需要数据版本） | 本章上方「LLMOps 主线」/「传统 MLOps 主线」/「横切关注点」 |
+| 工具怎么用（Feast/DVC/MLflow/LangSmith…） | 本章下方「🔧 工具深度解析」 |
+| 事故响应 / SRE / 混沌工程 | [[16_AI_Ops/README]] — 运维专属 |
 
 ---
 
@@ -103,6 +96,53 @@ graph LR
 | [ML 系统可观测与 SLO](./ML_Observability_SLO.md) | 三大支柱、SLI/SLO/SLA、错误预算、USE 方法、告警设计 | SRE |
 | [MLOps 成本优化](./Cost_Optimization_MLOps.md) | GPU 调度、Spot 实例、弹性伸缩、训练/推理优化、FinOps | 平台 / FinOps |
 | [隐私与合规流水线](./Privacy_Compliance_Pipeline.md) | PII 检测、数据血源、模型卡强制化、公平性门禁、审计、GDPR/AI Act | 合规 / 风控 |
+
+### 🔧 工具深度解析（2026-06-15 从 16_AI_Ops 迁入）
+
+> 以下工具页聚焦**具体命令、配置、部署、踩坑**。概念与选型方法论见上方对应的概念页。
+
+#### 数据与版本控制
+
+| 文档 | 对应概念页 |
+|------|-----------|
+| [DVC Deep Dive](./DVC_Deep_Dive.md) | [[Data_Versioning_DVC_LakeFS]] |
+| [LakeFS Deep Dive](./LakeFS_Deep_Dive.md) | [[Data_Versioning_DVC_LakeFS]] |
+
+#### 特征与实验追踪
+
+| 文档 | 对应概念页 |
+|------|-----------|
+| [Feast Deep Dive](./Feast_Deep_Dive.md) | [[Feature_Store_Deep_Dive]] |
+| [MLflow Deep Dive](./MLflow_Deep_Dive.md) | [[Experiment_Tracking_Deep_Dive]] |
+| [ClearML Deep Dive](./ClearML_Deep_Dive.md) | [[Experiment_Tracking_Deep_Dive]] |
+
+#### 流水线编排
+
+| 文档 | 对应概念页 |
+|------|-----------|
+| [Kubeflow Deep Dive](./Kubeflow_Deep_Dive.md) | [[Data_Pipeline_Orchestration]] |
+| [Prefect Deep Dive](./Prefect_Deep_Dive.md) | [[Data_Pipeline_Orchestration]] |
+
+#### LLM 可观测与评估
+
+| 文档 | 对应概念页 |
+|------|-----------|
+| [LangSmith Deep Dive](./LangSmith_Deep_Dive.md) | [[LLM_Evaluation_Pipeline]] / [[LLM_Observability]] |
+| [Helicone Deep Dive](./Helicone_Deep_Dive.md) | [[LLM_Observability]] |
+| [Phoenix Deep Dive](./Phoenix_Deep_Dive.md) | [[LLM_Observability]] |
+| [Braintrust Deep Dive](./Braintrust_Deep_Dive.md) | [[LLM_Evaluation_Pipeline]] |
+
+#### 可观测性与 CI/CD（综合）
+
+| 文档 | 对应概念页 |
+|------|-----------|
+| [AI Observability Deep Dive](./AI_Observability_Deep_Dive.md) | [[ML_Observability_SLO]] |
+| [AI Observability Guide](./AI_Observability_Guide.md) | [[ML_Observability_SLO]] |
+| [AI Observability Guide 2026](./AI_Observability_Guide_2026.md) | [[ML_Observability_SLO]] |
+| [CI/CD Pipeline AI 2026](./CI_CD_Pipeline_AI_2026.md) | [[ML_CI_CD]] |
+| [LLM Production Pipeline 2026](./LLM_Production_Pipeline_2026.md) | [[LLMOps_2026]] |
+
+> Guardrails / PromptLayer 仍留 [[16_AI_Ops/README]]（安全护栏与 Prompt 管理更贴近运维场景）。
 
 ---
 
@@ -174,7 +214,7 @@ flowchart TB
 *本章内容持续完善中。*
 
 ## Related
-- [[10_MLOps_Pipeline/_boundary-with-16|📍 10 与 16 边界声明]] 📐 治理
+- [[10_MLOps_Pipeline/Boundary_with_16|📍 10 与 16 边界声明]] 📐 治理
 - [[92_Plan/MLOps_Section_Enhancement_Plan_2026|章节加强计划 2026]] 📋 路线图
 - [[10_MLOps_Pipeline/LLMOps_2026|LLMOps 2026：大模型时代的 MLOps 升级]] ⭐ LLM 时代主线
 - [[10_MLOps_Pipeline/Prompt_Engineering_Ops|Prompt 工程化运维]]

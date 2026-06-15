@@ -109,7 +109,7 @@ breed [cats cat]
 
 ## 相关阅读
 
-- 课程索引：[[90_Learn/Microsoft_AI_For_Beginners]]
+- 课程索引：[[90_Learn/Courses/Microsoft_AI_For_Beginners]]
 - 本库相关页面：
   - [[06_Reinforcement_Learning/AI_Agents/AI_Agents]]
   - [[13_Agent_Production/README]]

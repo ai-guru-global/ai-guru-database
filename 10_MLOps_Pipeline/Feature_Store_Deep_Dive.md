@@ -484,6 +484,14 @@ feature_view = FeatureView(
 
 ---
 
+## 工具实现（本章节）
+
+本文讲特征存储的**概念与选型**。具体工具的命令、配置、部署：
+
+- [[Feast_Deep_Dive]] — Feast：开源特征存储平台
+
+---
+
 ## 10. 参考资源
 
 - [Feast 官方文档](https://docs.feast.dev/)

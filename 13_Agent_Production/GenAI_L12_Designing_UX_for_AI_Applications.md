@@ -332,7 +332,7 @@ AI应用程序并不完美，因此难免会犯错。在设计你的应用程序
 
 ## 扩展阅读
 
-- [[90_Learn/Microsoft_GenAI_For_Beginners]] - 课程总览
+- [[90_Learn/Courses/Microsoft_GenAI_For_Beginners]] - 课程总览
 - [[13_Agent_Production/Agentic_Design_Patterns_AndrewNg]] - AI产品设计模式
 - [[19_Ethics_Safety/Ethics_Safety-in-nutshell]] - AI伦理与安全
 - [[13_Agent_Production/GenAI_L17_AI_Agents]] - AI代理设计

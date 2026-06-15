@@ -28,6 +28,7 @@ updated: 2026-06-15
 |------|------|---------|------|
 | [[01_Fundamentals/AI_Hardware/Chinese_AI_Chips_Deep_Dive|国产 AI 芯片深度解析]] | 12+ 家厂商 | 全线覆盖 | T1-T3 |
 | [[01_Fundamentals/AI_Hardware/T_Head_PPU_Deep_Dive|平头哥真武 PPU 深度解析]] | 平头哥 (T-Head) | 真武 810E / M890 | T2 |
+| [[01_Fundamentals/AI_Hardware/T_Head_PPU_for_dummy|平头哥 PPU 大白话解读]] | 平头哥 (T-Head) | 真武 810E / M890 | 入门 |
 
 ### NVIDIA/AMD 快速对比
 

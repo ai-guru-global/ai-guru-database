@@ -263,12 +263,12 @@ jobs:
 
 ---
 
-## 工具实现（详见 16_AI_Ops）
+## 工具实现（本章节）
 
 本文讲数据版本控制的**概念与选型**。具体工具的命令、配置、部署：
 
-- [[16_AI_Ops/DVC_Deep_Dive]] — DVC：Git 扩展模式的数据版本控制
-- [[16_AI_Ops/LakeFS_Deep_Dive]] — LakeFS：Git for 数据湖
+- [[DVC_Deep_Dive]] — DVC：Git 扩展模式的数据版本控制
+- [[LakeFS_Deep_Dive]] — LakeFS：Git for 数据湖
 
 ---
 

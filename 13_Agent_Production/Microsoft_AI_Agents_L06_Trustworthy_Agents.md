@@ -138,4 +138,4 @@ HITL 适合高风险动作（取消订单、转账、删除数据），不适合
 - [[13_Agent_Production/Microsoft_AI_Agents_L18_Securing_AI_Agents]] — L18：加密审计收据深度技术
 - [[13_Agent_Production/Microsoft_AI_Agents_L03_Design_Principles]] — L03：透明度/可控原则的理论基础
 - [[19_Ethics_Safety/GenAI_L13_Securing_AI_Applications]] — GenAI 应用安全基础
-- [[90_Learn/Microsoft_AI_Agents_for_Beginners]] — 课程总览
+- [[90_Learn/Courses/Microsoft_AI_Agents_for_Beginners]] — 课程总览

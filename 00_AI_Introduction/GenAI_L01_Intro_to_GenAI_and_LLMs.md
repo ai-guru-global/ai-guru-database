@@ -338,7 +338,7 @@ LLM 的输出具有随机性。相同的提示在不同时间运行可能产生�
 
 ## 扩展阅读
 
-- [[90_Learn/Microsoft_GenAI_For_Beginners]] — 课程总览与章节映射
+- [[90_Learn/Courses/Microsoft_GenAI_For_Beginners]] — 课程总览与章节映射
 - [[04_NLP_LLMs/GenAI_L02_Exploring_and_Comparing_LLMs]] — 第 2 课：探索和比较不同的 LLM
 - [[04_NLP_LLMs/LLM_Architectures/LLM_Architectures]] — LLM 架构详解
 - [[00_AI_Introduction/AI_Fundamentals]] — AI 基础概念

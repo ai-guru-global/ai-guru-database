@@ -1,0 +1,19 @@
+# Cloud Agent Evaluation Framework Dependencies
+# Core
+pyyaml>=6.0
+jsonschema>=4.20.0
+
+# Metrics & NLP
+numpy>=1.24.0
+scikit-learn>=1.3.0
+rouge-score>=0.1.2
+
+# Async support
+aiohttp>=3.9.0
+
+# Rich console output
+rich>=13.7.0
+
+# Optional: LLM API clients (uncomment as needed)
+# openai>=1.12.0
+# dashscope>=1.14.0

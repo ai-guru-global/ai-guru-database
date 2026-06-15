@@ -647,11 +647,11 @@ Your Agent Score    Industry Position    Recommendation
 
 ---
 
-## 7. 云产品Agent CAPER基准线
+## 7. 云产品 Agent CAPER 基准线
 
-> **关联框架**: 以下基准线基于CAPER五维模型，用于云产品Agent评估。详见 [Cloud_Agent_Evaluation/Cloud_Agent_Benchmark_2026.md](../Cloud_Agent_Evaluation/Cloud_Agent_Benchmark_2026.md)。
+> **关联框架**: 以下基准线基于 CAPER 五维模型，用于云产品 Agent 评估。详见 [Cloud_Agent_Evaluation/Cloud_Agent_Benchmark_2026.md](../Cloud_Agent_Evaluation/Cloud_Agent_Benchmark_2026.md)。
 
-### 7.1 CAPER维度基准线
+### 7.1 CAPER 维度基准线
 
 ```yaml
 caper_benchmarks:
@@ -694,7 +694,7 @@ caper_benchmarks:
       poor: "<90"
 ```
 
-### 7.2 按Agent类别的基准线
+### 7.2 按 Agent 类别的基准线
 
 ```yaml
 category_benchmarks:
@@ -740,7 +740,7 @@ covr_benchmarks:
     elite: "≥0.85"
 ```
 
-### 7.4 云Agent基准快速参考
+### 7.4 云 Agent 基准快速参考
 
 ```
 CAPER基准线快速参考

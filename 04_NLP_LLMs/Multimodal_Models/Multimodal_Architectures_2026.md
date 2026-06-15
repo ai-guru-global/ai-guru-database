@@ -58,7 +58,7 @@ updated: 2026-05-31
 | 2022 | Stable Diffusion | Stability AI | 开源文生图 |
 | 2023 | GPT-4V | OpenAI | 商业级视觉理解 |
 | 2023 | LLaVA | Microsoft | 开源视觉指令微调 |
-| 2024 | Gemini 1.5 Pro | Google | 100万 Token 多模态 |
+| 2024 | Gemini 1.5 Pro | Google | 100 万 Token 多模态 |
 | 2024 | Claude 3 | Anthropic | 强视觉推理 |
 | 2025 | GPT-4o | OpenAI | 原生多模态，实时交互 |
 | 2025 | Gemini 2.0 | Google | 原生多模态 Agent |
@@ -478,8 +478,8 @@ class Claude4Architecture:
 | **Video-LLaMA 2** | Frame + Audio + LLM | 数分钟 | 音视频联合理解 |
 | **VideoChat2** | Q-Former + Vicuna | 数分钟 | 高质量指令微调 |
 | **LLaVA-NeXT-Video** | AnyRes + LLaVA-1.6 | 数分钟 | 高分辨率支持 |
-| **Gemini 1.5 Pro** | Native Video | 1小时+ | 原生长视频理解 |
-| **GPT-4.5** | Unified Token | 1小时+ | 视频原生 Token |
+| **Gemini 1.5 Pro** | Native Video | 1 小时+ | 原生长视频理解 |
+| **GPT-4.5** | Unified Token | 1 小时+ | 视频原生 Token |
 | **InternVid2** | Video-LLaMA | 数分钟 | 大规模视频-语言预训练 |
 
 ### 5.3 时序建模技术
@@ -698,16 +698,16 @@ image = model('audio', 'image', audio_waveform)
 
 | 数据集 | 规模 | 模态 | 特点 |
 |--------|------|------|------|
-| **LAION-5B** | 58.5亿 | 图文 | 大规模筛选数据 |
-| **COYO-700M** | 7亿 | 图文 | 高质量子集 |
-| **DataComp-1B** | 12.8亿 | 图文 | 筛选策略研究 |
-| **InternVid** | 760万 | 视频-文本 | 大规模视频理解 |
-| **HD-VILA** | 371万 | 视频-文本 | 高清视频 |
-| **WebVid** | 1000万 | 视频-文本 | 短视频描述 |
-| **ShareGPT4V** | 10万 | 图文指令 | GPT-4V 生成 |
-| **LLaVA-Instruct** | 15万 | 图文指令 | 视觉指令遵循 |
-| **ALLaVA** | 40万 | 图文指令 | 合成数据 |
-| **MM-Instruct** | 200万 | 多模态指令 | 多样化任务 |
+| **LAION-5B** | 58.5 亿 | 图文 | 大规模筛选数据 |
+| **COYO-700M** | 7 亿 | 图文 | 高质量子集 |
+| **DataComp-1B** | 12.8 亿 | 图文 | 筛选策略研究 |
+| **InternVid** | 760 万 | 视频-文本 | 大规模视频理解 |
+| **HD-VILA** | 371 万 | 视频-文本 | 高清视频 |
+| **WebVid** | 1000 万 | 视频-文本 | 短视频描述 |
+| **ShareGPT4V** | 10 万 | 图文指令 | GPT-4V 生成 |
+| **LLaVA-Instruct** | 15 万 | 图文指令 | 视觉指令遵循 |
+| **ALLaVA** | 40 万 | 图文指令 | 合成数据 |
+| **MM-Instruct** | 200 万 | 多模态指令 | 多样化任务 |
 
 ### 7.3 训练技巧
 

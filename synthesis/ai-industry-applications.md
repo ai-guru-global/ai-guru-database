@@ -3,6 +3,7 @@ title: AI 行业应用与产业变革
 category: synthesis
 tags: [synthesis, ai-applications, industry, finance, healthcare, manufacturing]
 summary: AI 技术从实验室走向产业落地的共性模式、垂直行业差异和变革阻力分析。
+created: 2026-06-12
 ---
 
 # AI 行业应用与产业变革

@@ -147,7 +147,7 @@ copaw app
 **Popular Skills**:
 - File Organizer
 - Email Writer
-- Meeting Scheduler  
+- Meeting Scheduler 
 - Research Assistant
 - Code Helper
 

@@ -638,7 +638,7 @@ print(forecast``[ ['ds', 'yhat', 'yhat_lower', 'yhat_upper'] ]``.tail(10))
 | `holidays_prior_scale` | 10 | 节假日效应强度 |
 | `seasonality_mode` | 'additive' | 'additive' 或 'multiplicative' |
 | `changepoint_range` | 0.8 | 检测变化点的历史数据比例 |
-| `mcmc_samples` | 0 | 0=MAP估计，>0=全贝叶斯 |
+| `mcmc_samples` | 0 | 0=MAP 估计，>0=全贝叶斯 |
 
 ```python
 from prophet.diagnostics import cross_validation, performance_metrics
@@ -880,9 +880,9 @@ print(f"{'MASE':<10} {mase(y_true, y_pred_arima):>10.2f} {mase(y_true, y_pred_pr
 
 ## 12. 时间序列交叉验证
 
-### 12.1 为什么不能用标准 K折交叉验证
+### 12.1 为什么不能用标准 K 折交叉验证
 
-标准 K折会随机打乱数据，导致：
+标准 K 折会随机打乱数据，导致：
 - **数据泄露**：用未来数据训练预测过去
 - **高估性能**：模型看到了不该看到的信息
 

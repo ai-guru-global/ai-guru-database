@@ -4,6 +4,9 @@ title: 'Provider 与模型管理'
 tags:
 - ai
 - ai-coding
+created: 2026-06-12
+category: 17-ai-coding
+summary: ""
 ---
 title: Provider 与模型管理
 description: '# Provider 与模型管理'
@@ -34,7 +37,7 @@ trigger_keywords:
 - coding
 authors:
 - name: KUDIG Team
-  role: contributor
+ role: contributor
 k8s_versions:
 - '1.28'
 - '1.29'
@@ -246,7 +249,7 @@ OpenCode 还支持：302.AI、Baseten、Cerebras、Cloudflare AI Gateway、OpenR
 | **日常开发（综合）** | Claude Sonnet 4 / GPT-4.1 | 编码质量与速度平衡 |
 | **复杂架构设计** | Claude 4 Opus / O3 | 深度推理能力强 |
 | **快速迭代 / Plan** | Claude Haiku 4 / GPT-4.1-mini | 速度快、成本低 |
-| **大上下文窗口** | Gemini 2.5 (100万+ tokens) | 处理超大代码库 |
+| **大上下文窗口** | Gemini 2.5 (100 万+ tokens) | 处理超大代码库 |
 | **预算敏感** | Groq (Llama 4) / OpenCode Go | 开源模型、低成本 |
 | **高速推理** | Cerebras (Qwen 3 Coder 480B) | 推理芯片加速 |
 | **标题/摘要生成** | small_model（自动选择） | 无需手动配置 |

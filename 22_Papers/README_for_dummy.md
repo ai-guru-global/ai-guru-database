@@ -49,7 +49,7 @@ updated: 2026-05-31
 
 | 主题 | 难度 | 你会学到什么 | 文档链接 |
 |------|------|------------|---------|
-| 深度学习基础 | ⭐⭐ | 深度学习为什么在2012年后爆发 | [查看 README](./README.md#01-深度学习基础与优化) |
+| 深度学习基础 | ⭐⭐ | 深度学习为什么在 2012 年后爆发 | [查看 README](./README.md#01-深度学习基础与优化) |
 | 视觉与表征学习 | ⭐⭐⭐ | CNN、ResNet、ViT 的核心贡献 | [查看 README](./README.md#02-视觉与表征学习) |
 | NLP 与 Transformer | ⭐⭐⭐⭐ | 从 Attention 到 GPT、BERT 的演进 | [查看 README](./README.md#03-nlp-与-transformer) |
 | 生成式模型 | ⭐⭐⭐⭐ | GAN、VAE、Diffusion 的原理 | [查看 README](./README.md#04-生成式模型) |

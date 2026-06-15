@@ -861,8 +861,8 @@ AI代码额外检查:
 - [AI编程助手对比](../02_Tools/AI_Coding_Assistants_2026.md) — 工具详细对比与选型
 - [Hermes Agent 深度指南](../02_Tools/Hermes_Agent_2026.md) — Hermes Agent 功能与配置
 - [Vibe Coding 方法论](./Vibe_Coding_Methodology.md) — 方法论理论基础
-- [Agentic Coding 方法论](./Agentic_Coding_Methodology.md) — 多Agent协作开发
-- [Vibe Coding 入门](../03_Practice/Vibe_Coding_Getting_Started.md) — 5分钟入门指南
+- [Agentic Coding 方法论](./Agentic_Coding_Methodology.md) — 多 Agent 协作开发
+- [Vibe Coding 入门](../03_Practice/Vibe_Coding_Getting_Started.md) — 5 分钟入门指南
 - [提示词模板库](../03_Practice/Vibe_Coding_Prompt_Templates.md) — 提示模板与规则文件
 - [实战案例集](../03_Practice/Vibe_Coding_Real_World_Cases.md) — 场景实战与真实案例
 

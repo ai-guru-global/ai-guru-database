@@ -9,7 +9,7 @@ updated: '2026-05-31'
 
 # AI Agent 协议栈 2026 完全指南
 
-> **一句话理解**: 2026年是AI Agent协议标准化的元年——MCP让Agent拥有"万能工具接口"，A2A让Agent之间能够"自由对话"，两者结合构成了企业级Agent系统的通信基础设施。
+> **一句话理解**: 2026 年是 AI Agent 协议标准化的元年——MCP 让 Agent 拥有"万能工具接口"，A2A 让 Agent 之间能够"自由对话"，两者结合构成了企业级 Agent 系统的通信基础设施。
 
 ---
 
@@ -30,18 +30,18 @@ updated: '2026-05-31'
 
 ### 1.1 为什么需要标准化协议？
 
-**2025年前的困境**:
-- 每个Agent框架都有自己的工具调用方式
-- 跨框架Agent无法协作
-- 集成N个工具需要N个自定义连接器
+**2025 年前的困境**:
+- 每个 Agent 框架都有自己的工具调用方式
+- 跨框架 Agent 无法协作
+- 集成 N 个工具需要 N 个自定义连接器
 - 企业级治理和审计困难
 
-**2026年的解决方案**:
-- MCP提供统一的Agent-工具接口
-- A2A实现跨厂商Agent协作
+**2026 年的解决方案**:
+- MCP 提供统一的 Agent-工具接口
+- A2A 实现跨厂商 Agent 协作
 - 治理层确保企业级安全合规
 
-### 1.2 2026年协议栈四层架构
+### 1.2 2026 年协议栈四层架构
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
@@ -74,7 +74,7 @@ updated: '2026-05-31'
 
 ### 1.3 关键统计数据 (2026)
 
-| 协议 | 月SDK下载量 | 社区Server/Agent | 支持者 | 管理组织 |
+| 协议 | 月 SDK 下载量 | 社区 Server/Agent | 支持者 | 管理组织 |
 |------|------------|-----------------|--------|----------|
 | **MCP** | 97M+ | 5000+ | OpenAI, Google, Microsoft, AWS | Linux Foundation |
 | **A2A** | 25M+ | 100+ 企业 | Google + 50+合作伙伴 | Google / Linux Foundation |
@@ -160,11 +160,11 @@ async def list_resources() -> list[Resource]:
 
 ### 3.1 A2A 核心概念
 
-**一句话理解**: A2A是Agent之间的"社交协议"——让不同厂商、不同框架的Agent能够发现彼此、协商任务、协作完成复杂工作。
+**一句话理解**: A2A 是 Agent 之间的"社交协议"——让不同厂商、不同框架的 Agent 能够发现彼此、协商任务、协作完成复杂工作。
 
 **核心设计理念**:
-1. **Agent Card**: 标准化的Agent能力描述（类似名片）
-2. **任务驱动**: 以Task为中心的协作模型
+1. **Agent Card**: 标准化的 Agent 能力描述（类似名片）
+2. **任务驱动**: 以 Task 为中心的协作模型
 3. **异步友好**: 支持长时间运行的任务
 4. **状态透明**: 任务状态实时同步
 
@@ -287,22 +287,22 @@ async def get_weather(city: str):
 
 ## 7. 行业实践案例
 
-### 7.1 Google - 内部Agent生态系统
+### 7.1 Google - 内部 Agent 生态系统
 
 **架构**:
 - 100+ A2A Agents
-- 统一的Agent Registry
-- UCP电商集成
+- 统一的 Agent Registry
+- UCP 电商集成
 
 **成果**:
-- 客服成本降低40%
-- 响应时间减少60%
+- 客服成本降低 40%
+- 响应时间减少 60%
 
 ### 7.2 Anthropic - Claude + MCP
 
 **架构**:
 - Claude Desktop + MCP
-- 5000+ 社区Servers
+- 5000+ 社区 Servers
 - 开发者生态
 
 ---
@@ -336,8 +336,8 @@ async def get_weather(city: str):
 
 ## 参考资源
 
-- MCP官方: https://modelcontextprotocol.io
-- A2A官方: https://google.github.io/A2A
+- MCP 官方: https://modelcontextprotocol.io
+- A2A 官方: https://google.github.io/A2A
 - Linux Foundation: https://lf-ai.org
 
 ---

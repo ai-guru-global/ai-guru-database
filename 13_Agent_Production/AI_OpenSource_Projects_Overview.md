@@ -64,7 +64,7 @@ AI 开源项目分类
 
 | 框架 | 开发商 | 协作模式 | 特点 | 文档 |
 |------|--------|----------|------|------|
-| **LangGraph** | LangChain | 状态机 | 高度灵活，复杂工作流 | [Deep Dive](./Agent_Frameworks/LangGraph_Deep_Dive.md) |
+| **LangGraph** | LangChain | 状态机 | 高度灵活，复杂工作流 | [Deep Dive](./Agent_Workflow/LangGraph_Deep_Dive.md) |
 | **AutoGen** | Microsoft | 对话式 | Group Chat，代码执行 | [Deep Dive](./Agent_Frameworks/AutoGen_Deep_Dive.md) |
 | **CrewAI** | CrewAI | 角色+任务 | 简单易用，角色扮演 | [Deep Dive](./Agent_Frameworks/CrewAI_Deep_Dive.md) |
 | **AgentScope** | 阿里巴巴 | Actor-Staged | 大规模并发，中文 | [Deep Dive](./Agent_Frameworks/AgentScope_Deep_Dive.md) |
@@ -345,13 +345,13 @@ AI 开源项目分类
 1. **确定分类**: Agent 框架 → `13_Agent_Production/Agent_Frameworks/`
 2. **命名规范**: `<Project>_Deep_Dive.md`
 3. **文档结构**:
-   - 一句话理解
-   - 概述 (定位、特点)
-   - 核心概念
-   - 架构设计
-   - 代码示例
-   - 对比与选择
-   - 参考资源
+ - 一句话理解
+ - 概述 (定位、特点)
+ - 核心概念
+ - 架构设计
+ - 代码示例
+ - 对比与选择
+ - 参考资源
 
 ---
 

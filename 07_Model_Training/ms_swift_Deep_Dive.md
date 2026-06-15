@@ -49,15 +49,15 @@ updated: 2026-06-03
 | 能力维度 | 技术亮点 |
 |---------|---------|
 | **轻量训练** | LoRA、QLoRA、DoRA、LoRA+、LLaMAPro、LongLoRA、LoRA-GA、ReFT、RS-LoRA、Adapter、LISA |
-| **量化训练** | BNB、AWQ、GPTQ、AQLM、HQQ、EETQ，7B模型仅需9GB显存 |
-| **显存优化** | GaLore、Q-Galore、UnSloth、Liger-Kernel、Flash-Attention 2/3、Ulysses/Ring-Attention序列并行 |
+| **量化训练** | BNB、AWQ、GPTQ、AQLM、HQQ、EETQ，7B 模型仅需 9GB 显存 |
+| **显存优化** | GaLore、Q-Galore、UnSloth、Liger-Kernel、Flash-Attention 2/3、Ulysses/Ring-Attention 序列并行 |
 | **分布式训练** | DDP、device_map、DeepSpeed ZeRO2/ZeRO3、FSDP/FSDP2、Megatron |
-| **多模态** | 多模态packing提速100%+，文本/图像/视频/语音混合训练，ViT/Aligner/LLM单独控制 |
-| **强化学习** | GRPO、DAPO、GSPO、SAPO、CISPO、CHORD、RLOO、Reinforce++等GRPO族算法 |
+| **多模态** | 多模态 packing 提速 100%+，文本/图像/视频/语音混合训练，ViT/Aligner/LLM 单独控制 |
+| **强化学习** | GRPO、DAPO、GSPO、SAPO、CISPO、CHORD、RLOO、Reinforce++等 GRPO 族算法 |
 | **推理加速** | Transformers、vLLM、SGLang、LMDeploy |
 | **模型量化** | AWQ、GPTQ、FP8、BNB 量化导出 |
-| **Megatron并行** | TP/PP/SP/CP/ETP/EP/VPP，显著提升MoE训练速度 |
-| **硬件支持** | A10/A100/H100、RTX系列、T4/V100、CPU、MPS、Ascend NPU |
+| **Megatron 并行** | TP/PP/SP/CP/ETP/EP/VPP，显著提升 MoE 训练速度 |
+| **硬件支持** | A10/A100/H100、RTX 系列、T4/V100、CPU、MPS、Ascend NPU |
 
 ### 1.4 全链路能力矩阵
 
@@ -149,7 +149,7 @@ modelscope-registry.cn-hangzhou.cr.aliyuncs.com/modelscope-repo/modelscope:ubunt
 
 ---
 
-## 3. 快速开始：10分钟单卡3090微调
+## 3. 快速开始：10 分钟单卡 3090 微调
 
 ```bash
 # 13GB显存，对 Qwen3-4B-Instruct 进行自我认知微调
@@ -297,16 +297,16 @@ GRPO（Group Relative Policy Optimization）是 ms-swift 的核心亮点之一�
 
 | 算法 | 论文 | 核心思想 |
 |------|------|---------|
-| **GRPO** | arxiv 2402.03300 | 组相对策略优化，无需Critic模型 |
-| **DAPO** | 开源大规模RL系统 | 大规模分布式RL训练优化 |
+| **GRPO** | arxiv 2402.03300 | 组相对策略优化，无需 Critic 模型 |
+| **DAPO** | 开源大规模 RL 系统 | 大规模分布式 RL 训练优化 |
 | **GSPO** | Group Sequence Policy Optimization | 序列级策略优化 |
 | **SAPO** | Soft Adaptive Policy Optimization | 软自适应策略优化 |
 | **CISPO** | Clipped Importance Sampling PO | 重要性采样裁剪策略优化 |
-| **CHORD** | On-Policy RL Meets Off-Policy Experts | SFT与RL动态权重融合 |
+| **CHORD** | On-Policy RL Meets Off-Policy Experts | SFT 与 RL 动态权重融合 |
 | **RLOO** | REINFORCE Leave-One-Out | 留一法基线估计 |
-| **Reinforce++** | Efficient RLHF Algorithm | 对Prompt和Reward Model鲁棒 |
+| **Reinforce++** | Efficient RLHF Algorithm | 对 Prompt 和 Reward Model 鲁棒 |
 | **TreePO** | Heuristic Tree-based Modeling | 策略优化与推理效率桥接 |
-| **FIPO** | Future-KL Influenced PO | 未来KL影响的策略优化 |
+| **FIPO** | Future-KL Influenced PO | 未来 KL 影响的策略优化 |
 
 ### 5.2 GRPO 训练结构
 
@@ -362,20 +362,20 @@ GKD（Generalized Knowledge Distillation）提供灵活的知识蒸馏能力。
 
 | 算法 | 数据格式 | 关键超参 | 特点 |
 |------|---------|---------|------|
-| **GRPO** | system+query | - | 无需Critic，组相对优化 |
-| **DPO** | (x, y_w, y_l) | beta=0.1, loss_type | 直接偏好优化，建议先SFT |
+| **GRPO** | system+query | - | 无需 Critic，组相对优化 |
+| **DPO** | (x, y_w, y_l) | beta=0.1, loss_type | 直接偏好优化，建议先 SFT |
 | **RM** | (x, y_w, y_l) | center_rewards_coefficient | 奖励建模阶段 |
 | **PPO** | system+query | kl_coef=0.05, cliprange=0.2 | 四模型协同训练 |
 | **KTO** | (x, y, label) | beta=0.1, desirable_weight | 仅需好坏标签 |
 | **CPO** | (x, y_w, y_l) | beta=0.1, cpo_alpha=1.0 | 无参考模型偏好优化 |
-| **ORPO** | (x, y_w, y_l) | lambda（通过beta传入） | Odds Ratio优化 |
+| **ORPO** | (x, y_w, y_l) | lambda（通过 beta 传入） | Odds Ratio 优化 |
 | **SimPO** | (x, y_w, y_l) | beta=2.0, simpo_gamma=1.0 | 简单偏好优化 |
 
 ### 7.2 DPO 训练注意事项
 
-- 建议先用偏好数据集中用户偏好答案进行SFT，再DPO
-- 可通过 `rpo_alpha` 混合SFT loss提升稳定性
-- 支持多loss混合（如MPO训练）通过 `loss_weights` 设置权重
+- 建议先用偏好数据集中用户偏好答案进行 SFT，再 DPO
+- 可通过 `rpo_alpha` 混合 SFT loss 提升稳定性
+- 支持多 loss 混合（如 MPO 训练）通过 `loss_weights` 设置权重
 - 支持 LD-DPO（`ld_alpha`）抑制长度偏好
 
 ### 7.3 PPO 四模型架构
@@ -545,7 +545,7 @@ swift sample \
 ### 9.4 显存控制（两段采样）
 
 1. **第一阶段**：仅采样（指定 `--model` + `--sampler_engine`）
-2. **第二阶段**：仅RM过滤（`--sampler_engine no` + `--orm_model` + `--cache_files`）
+2. **第二阶段**：仅 RM 过滤（`--sampler_engine no` + `--orm_model` + `--cache_files`）
 
 ---
 
@@ -679,13 +679,13 @@ Agent Template 允许用户使用一套数据训练不同模型：
 
 ### 13.1 概念
 
-强化微调结合采样和训练，通过RM筛选高质量样本进行迭代训练。
+强化微调结合采样和训练，通过 RM 筛选高质量样本进行迭代训练。
 
 ### 13.2 适用场景
 
 - 数学推理能力提升
 - 代码生成能力提升
-- 需要test-time compute的场景
+- 需要 test-time compute 的场景
 
 ### 13.3 实现流程
 
@@ -806,10 +806,10 @@ swift export --mcore_model megatron_output/... --to_hf true \
 
 | 模块 | 说明 |
 |------|------|
-| **Agent Template** | Agent训练模板适配 |
+| **Agent Template** | Agent 训练模板适配 |
 | **Callbacks** | 训练回调钩子 |
 | **Loss** | 自定义损失函数 |
-| **Loss Scale** | 精细控制各部分loss权重 |
+| **Loss Scale** | 精细控制各部分 loss 权重 |
 | **Metrics** | 自定义评测指标 |
 | **Optimizers** | 自定义优化器 |
 | **Tuner Plugin** | 自定义微调插件 |
@@ -832,7 +832,7 @@ swift export --mcore_model megatron_output/... --to_hf true \
 ```
 
 **RLHF 格式**：
-- DPO类：`(x, y_w, y_l)` - 输入、偏好回答、拒绝回答
+- DPO 类：`(x, y_w, y_l)` - 输入、偏好回答、拒绝回答
 - KTO：`(x, y, label)` - 输入、回答、好坏标签
 - GRPO/PPO：仅需 `(system, query)` 输入
 
@@ -917,17 +917,17 @@ swift sft --model <model_id> --dataset <dataset> ...
 |------|------|
 | `swift sft` | 指令监督微调 |
 | `swift pt` | 预训练 |
-| `swift rlhf` | 人类对齐（DPO/KTO/PPO等） |
-| `swift grpo` | GRPO强化学习 |
+| `swift rlhf` | 人类对齐（DPO/KTO/PPO 等） |
+| `swift grpo` | GRPO 强化学习 |
 | `swift gkd` | 知识蒸馏 |
 | `swift sample` | 采样/蒸馏 |
 | `swift infer` | 推理 |
 | `swift deploy` | 部署（OpenAI API） |
-| `swift app` | Web-UI界面推理 |
+| `swift app` | Web-UI 界面推理 |
 | `swift eval` | 模型评测 |
 | `swift export` | 导出/量化/Merge/Push |
-| `megatron sft` | Megatron微调 |
-| `megatron pt` | Megatron预训练 |
+| `megatron sft` | Megatron 微调 |
+| `megatron pt` | Megatron 预训练 |
 | `megatron rlhf` | Megatron RLHF |
 
 ---
@@ -955,7 +955,7 @@ swift sft --model <model_id> --dataset <dataset> ...
 - **ModelScope**: https://modelscope.cn
 - **示例脚本**: https://github.com/modelscope/ms-swift/tree/main/examples
 - **支持模型列表**: https://swift.readthedocs.io/zh-cn/latest/Instruction/Supported-models-and-datasets.html
-- **EvalScope评测框架**: https://github.com/modelscope/eval-scope
+- **EvalScope 评测框架**: https://github.com/modelscope/eval-scope
 - **Mcore-Bridge**: https://github.com/modelscope/mcore-bridge
 
 ---

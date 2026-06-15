@@ -15,8 +15,8 @@ updated: "2026-05-31"
 
 Think of Skills as "apps for your AI agent" — they teach the AI how to perform specific tasks, from organizing files to writing code to conducting research.
 
-**ClawHub**: [github.com/openclaw/clawhub](https://github.com/openclaw/clawhub)  
-**SkillHub (China)**: [skillhub.tencent.com](https://skillhub.tencent.com/)  
+**ClawHub**: [github.com/openclaw/clawhub](https://github.com/openclaw/clawhub) 
+**SkillHub (China)**: [skillhub.tencent.com](https://skillhub.tencent.com/) 
 **Total Skills**: 22,000+ (as of March 2026)
 
 ---

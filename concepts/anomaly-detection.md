@@ -130,3 +130,4 @@ updated: 2026-05-31T00:00:00Z
 - [[02_Machine_Learning/Anomaly_Detection/Anomaly_Detection.md|Anomaly_Detection]]
 - [[02_Machine_Learning/Anomaly_Detection/Anomaly_Detection_for_dummy.md|Anomaly_Detection_for_dummy]]
 - [[02_Machine_Learning/AutoML/AutoML.md|AutoML]]
+- [[synthesis/anomaly-detection-automl|异常检测 × AutoML]] — 自动化异常发现的交叉合成

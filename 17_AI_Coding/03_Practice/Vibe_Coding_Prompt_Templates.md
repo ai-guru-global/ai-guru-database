@@ -292,7 +292,7 @@ Requirements:
 
 ## 3. 高级技巧
 
-### 技巧1: 渐进式细化 (Progressive Refinement)
+### 技巧 1: 渐进式细化 (Progressive Refinement)
 
 ```
 第1轮: "设计一个缓存系统的架构"
@@ -303,7 +303,7 @@ Requirements:
 
 **适用场景**: 需求逐步明确，从架构到细节逐步细化
 
-### 技巧2: 示例驱动 (Example-Driven)
+### 技巧 2: 示例驱动 (Example-Driven)
 
 ```
 "参考以下代码风格:
@@ -320,7 +320,7 @@ export async function getUser(id: string): Promise<Result<User, NotFoundError>> 
 
 **适用场景**: 需要保持代码风格一致性，棕地项目开发
 
-### 技巧3: 约束优先 (Constraints-First)
+### 技巧 3: 约束优先 (Constraints-First)
 
 ```
 "实现用户注册功能，但必须满足:
@@ -333,7 +333,7 @@ export async function getUser(id: string): Promise<Result<User, NotFoundError>> 
 
 **适用场景**: 安全关键代码、有严格合规要求的场景
 
-### 技巧4: 思维链引导 (Chain-of-Thought)
+### 技巧 4: 思维链引导 (Chain-of-Thought)
 
 ```
 "我需要实现一个订单状态机。请先:
@@ -345,7 +345,7 @@ export async function getUser(id: string): Promise<Result<User, NotFoundError>> 
 
 **适用场景**: 复杂业务逻辑、状态机、算法设计
 
-### 技巧5: 反例驱动 (Counter-Example)
+### 技巧 5: 反例驱动 (Counter-Example)
 
 ```
 "不要像这样写 (反面教材):
@@ -550,7 +550,7 @@ src/
 
 ## Related
 
-- [[17_AI_Coding/01_Theory/AI_Coding_Theory]] — AI辅助编程理论基础 (共享: ai-coding, code-generation, cursor, github-copilot)
+- [[17_AI_Coding/01_Theory/AI_Coding_Theory]] — AI 辅助编程理论基础 (共享: ai-coding, code-generation, cursor, github-copilot)
 - [[17_AI_Coding/02_Tools/CodeBuddy_Guide]] — CodeBuddy / WorkBuddy 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
 - [[17_AI_Coding/02_Tools/Comate_Guide]] — Comate 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
 - [[17_AI_Coding/02_Tools/Coze_Guide]] — Coze 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)

@@ -52,7 +52,7 @@ TensorRT-LLM: NVIDIA 生产级 LLM 推理
 | **定制 Attention** | FlashAttention 优化 |
 | **算子融合** | 减少内存访问 |
 | **FP8 支持** | H100 原生 |
-| **多GPU扩展** | Tensor/Pipeline Parallel |
+| **多 GPU 扩展** | Tensor/Pipeline Parallel |
 | **FlashAttention-3** | 2024 新优化 |
 
 ### 1.3 性能数据 (2026)

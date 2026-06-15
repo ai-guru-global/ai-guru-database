@@ -3,6 +3,7 @@ title: LLM 与 NLP 的融合与演进
 category: synthesis
 tags: [synthesis, llm, nlp, transformer, gpt, bert]
 summary: 从传统 NLP 到现代大语言模型的技术演进脉络，以及 LLM 如何重新定义自然语言处理的任务范式。
+created: 2026-06-12
 ---
 
 # LLM 与 NLP 的融合与演进

@@ -7,9 +7,11 @@ created: 2026-05-31
 updated: 2026-05-31
 ---
 
-# AI学习资源与方法论
+# AI 学习资源与方法论
 
-> **一句话理解**: 在AI知识爆炸的时代，知道学什么、怎么学、去哪里学，比单纯积累知识更重要——这套方法论将帮助你建立高效的AI学习体系。
+> **一句话理解**: 在 AI 知识爆炸的时代，知道学什么、怎么学、去哪里学，比单纯积累知识更重要——这套方法论将帮助你建立高效的 AI 学习体系。
+
+> **外部精选路线图**: → [[90_Learn/AI_Engineering_Roadmap_2026|AI 工程学习路线图 2026]]（ashishps1/learn-ai-engineering ⭐5.7k，免费课程+论文+书籍+工具精选）
 
 ---
 
@@ -142,14 +144,14 @@ AI学习路径矩阵:
 
 | 课程 | 平台 | 难度 | 时长 | 特点 |
 |------|------|------|------|------|
-| **AI For Everyone** | Coursera (吴恩达) | ⭐ | 4周 | 无技术要求，AI商业与应用 |
-| **机器学习专项** | Coursera (吴恩达) | ⭐⭐ | 11周×5门课 | 经典入门，数学适中 |
-| **深度学习专项** | Coursera (吴恩达) | ⭐⭐⭐ | 5门课 | 全面覆盖DL基础 |
-| **Fast.ai Practical DL** | fast.ai | ⭐⭐ | 7周 | 代码优先，实用导向 |
-| **李宏毅机器学习** | B站/YouTube | ⭐⭐ | 一学期 | 中文，理论与代码结合 |
-| **MIT 6.034 AI** | MIT OCW | ⭐⭐⭐ | 一学期 | 经典AI课程，较全面 |
+| **AI For Everyone** | Coursera (吴恩达) | ⭐ | 4 周 | 无技术要求，AI 商业与应用 |
+| **机器学习专项** | Coursera (吴恩达) | ⭐⭐ | 11 周×5 门课 | 经典入门，数学适中 |
+| **深度学习专项** | Coursera (吴恩达) | ⭐⭐⭐ | 5 门课 | 全面覆盖 DL 基础 |
+| **Fast.ai Practical DL** | fast.ai | ⭐⭐ | 7 周 | 代码优先，实用导向 |
+| **李宏毅机器学习** | B 站/YouTube | ⭐⭐ | 一学期 | 中文，理论与代码结合 |
+| **MIT 6.034 AI** | MIT OCW | ⭐⭐⭐ | 一学期 | 经典 AI 课程，较全面 |
 | **Stanford CS229** | Stanford | ⭐⭐⭐ | 一学期 | 机器学习数学基础 |
-| **Full Stack LLM Bootcamp** | Full Stack Deep Learning | ⭐⭐⭐ | 4天密集 | LLM工程实践，2026热门 |
+| **Full Stack LLM Bootcamp** | Full Stack Deep Learning | ⭐⭐⭐ | 4 天密集 | LLM 工程实践，2026 热门 |
 
 ### 2.2 进阶课程
 
@@ -160,7 +162,7 @@ AI学习路径矩阵:
 | **Berkeley CS285** | Berkeley | ⭐⭐⭐⭐ | RL | 深度强化学习 |
 | **CMU 10-708** | CMU | ⭐⭐⭐⭐⭐ | PGM | 概率图模型 |
 | **Stanford CS330** | Stanford | ⭐⭐⭐⭐ | Meta-Learning | 多任务、元学习 |
-| **Full Stack LLM Bootcamp** | Full Stack Deep Learning | ⭐⭐⭐ | LLM工程 | 大模型应用开发 |
+| **Full Stack LLM Bootcamp** | Full Stack Deep Learning | ⭐⭐⭐ | LLM 工程 | 大模型应用开发 |
 
 ### 2.3 专项技能课程
 

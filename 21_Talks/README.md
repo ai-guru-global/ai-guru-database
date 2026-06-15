@@ -4,7 +4,7 @@ category: 21-talks
 tags: ["talks", "speeches", "insights", "leaders"]
 summary: "> **一句话理解**: 本章节收录 AI 领域最具影响力的领袖人物的核心观点、演讲精华与思想演进，帮助你从技术先驱的视角理解 AI 发展的脉络与未来方向。"
 created: 2026-05-31
-updated: 2026-05-31
+updated: 2026-06-15
 ---
 
 # AI 名人演讲与观点 (Talks)
@@ -17,6 +17,7 @@ updated: 2026-05-31
 
 | 演讲者 | 身份/机构 | 核心贡献 |
 |--------|----------|---------|
+| [3Blue1Brown](./3Blue1Brown/) | Grant Sanderson, 数学可视化创作者 | 线性代数、神经网络可视化教学，全球最受欢迎的数学频道 |
 | [Andrej Karpathy](./Andrej_Karpathy/) | 前 Tesla AI 主管、OpenAI | "Software 2.0"、"Vibe Coding" |
 | [Andrew Ng](./Andrew_Ng/) | DeepLearning.AI 创始人 | 机器学习教育普及、Landing AI |
 | [Bill Gates](./Bill_Gates/) | 微软创始人 | AI 对社会的宏观影响 |
@@ -28,6 +29,7 @@ updated: 2026-05-31
 | [Geoffrey Hinton](./Geoffrey_Hinton/) | "深度学习之父"、图灵奖 | 反向传播、胶囊网络 |
 | [Ilya Sutskever](./Ilya_Sutskever/) | OpenAI 联合创始人 | GPT 系列、Superalignment |
 | [Jensen Huang](./Jensen_Huang/) | NVIDIA CEO | GPU 计算、AI 基础设施 |
+| [Josh Starmer](./Josh_Starmer/) | StatQuest 创作者 | 统计学/机器学习可视化教育 |
 | [Mark Zuckerberg](./Mark_Zuckerberg/) | Meta CEO | LLaMA、开源 AI 战略 |
 | [Mira Murati](./Mira_Murati/) | 前 OpenAI CTO | ChatGPT、产品化策略 |
 | [Mustafa Suleyman](./Mustafa_Suleyman/) | Microsoft AI CEO | Inflection AI、Pi |
@@ -38,6 +40,16 @@ updated: 2026-05-31
 | [Sundar Pichai](./Sundar_Pichai/) | Google/Alphabet CEO | Gemini、Responsible AI |
 | [Yann LeCun](./Yann_LeCun/) | Meta Chief AI Scientist | CNN、自监督学习、世界模型 |
 | [Yoshua Bengio](./Yoshua_Bengio/) | 图灵奖得主 | 深度学习理论、AI 安全 |
+
+### 中国 AI 领袖
+
+| 人物 | 身份 | 核心贡献 |
+|------|------|---------|
+| [杨植麟](./Zhilin_Yang/) | 月之暗面/Moonshot AI 创始人 | Transformer-XL、Kimi 长上下文 |
+| [梁文锋](./Wenfeng_Liang/) | DeepSeek 创始人 | DeepSeekMoE、MLA、$5.6M 训练 |
+| [唐杰](./Jie_Tang/) | 智谱 AI 联合创始人/首席科学家 | GLM 框架、ChatGLM、CogVLM |
+| [闫俊杰](./Junjie_Yan/) | MiniMax 创始人 | Lightning Attention、Hailuo 视频 |
+| [白金泽](./Jinze_Bai/) | 通义千问/Qwen 团队负责人 | Qwen 模型家族、119 语言、Hybrid Thinking |
 
 ---
 
@@ -60,6 +72,8 @@ updated: 2026-05-31
 > 🚧 **提示**: 本章节正在进行主题整合重构，计划新增 `Talks_Synthesis_2026.md` 按主题（如 Scaling Laws、AI 安全、Agent 未来）横向整合多位专家观点。
 
 ## Related
+- [[21_Talks/3Blue1Brown/youtube_channel|3Blue1Brown YouTube 频道 (Grant Sanderson 数学可视化)]]
+- [[21_Talks/Josh_Starmer/youtube_channel|StatQuest Josh Starmer YouTube 频道 (统计学/机器学习教育)]]
 - [[21_Talks/Jensen_Huang/sayings|Jensen Huang 关于 AI 的观点 (Jensen Huang on AI)]]
 - [[21_Talks/Jensen_Huang/about|Jensen Huang 简介 (Jensen Huang)]]
 - [[21_Talks/Mustafa_Suleyman/sayings|Mustafa Suleyman 关于 AI 的观点 (Mustafa Suleyman on AI)]]

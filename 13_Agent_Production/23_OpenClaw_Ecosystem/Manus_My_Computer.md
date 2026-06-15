@@ -13,9 +13,9 @@ updated: '2026-05-31'
 
 **Manus** is a general-purpose AI agent that was acquired by Meta in December 2025, marking one of the most significant AI acquisitions of the decade. The "My Computer" feature, launched in March 2026, represents a paradigm shift—bringing cloud AI intelligence directly to your local desktop.
 
-**Website**: [manus.im](https://manus.im/)  
-**Desktop App**: [manus.im/desktop](https://manus.im/desktop)  
-**Status**: Generally Available (macOS & Windows)  
+**Website**: [manus.im](https://manus.im/) 
+**Desktop App**: [manus.im/desktop](https://manus.im/desktop) 
+**Status**: Generally Available (macOS & Windows) 
 **Parent Company**: Meta Platforms, Inc.
 
 ---
@@ -293,8 +293,8 @@ You: Enjoy your vacation ☀️
 
 1. Visit [manus.im/desktop](https://manus.im/desktop)
 2. Download for your platform:
-   - macOS: `Manus-Desktop-macOS.dmg`
-   - Windows: `Manus-Desktop-Setup.exe`
+ - macOS: `Manus-Desktop-macOS.dmg`
+ - Windows: `Manus-Desktop-Setup.exe`
 
 #### Step 2: Install & Login
 

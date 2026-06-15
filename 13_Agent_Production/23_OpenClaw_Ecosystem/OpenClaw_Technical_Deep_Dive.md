@@ -13,7 +13,7 @@ updated: "2026-05-31"
 
 This document provides an in-depth technical analysis of OpenClaw's architecture, internal mechanisms, and implementation details. It is intended for software architects, developers, and engineers who need to understand how OpenClaw works under the hood for customization, integration, or security hardening.
 
-**Version Covered**: OpenClaw 2026.x  
+**Version Covered**: OpenClaw 2026.x 
 **Last Updated**: March 2026
 
 ---
@@ -1117,9 +1117,9 @@ Use this skill when the user wants to:
 Use curl to interact with Todoist REST API:
 ```bash
 curl -X POST "https://api.todoist.com/rest/v2/tasks" \
-  -H "Authorization: Bearer $TODOIST_API_KEY" \
-  -H "Content-Type: application/json" \
-  -d '{"content": "Task title", "project_id": "123"}'
+ -H "Authorization: Bearer $TODOIST_API_KEY" \
+ -H "Content-Type: application/json" \
+ -d '{"content": "Task title", "project_id": "123"}'
 ```
 
 ## Important Rules

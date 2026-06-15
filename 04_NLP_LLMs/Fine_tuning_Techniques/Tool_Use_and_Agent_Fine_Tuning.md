@@ -404,25 +404,25 @@ sequenceDiagram
 
 ```mermaid
 flowchart TB
-    subgraph Data["数据准备"]
-        D1["API 文档爬取"] --> D2["函数签名提取"]
-        D2 --> D3["训练样本合成"]
-        D3 --> D4["质量过滤 & 去重"]
-    end
+ subgraph Data["数据准备"]
+ D1["API 文档爬取"] --> D2["函数签名提取"]
+ D2 --> D3["训练样本合成"]
+ D3 --> D4["质量过滤 & 去重"]
+ end
 
-    subgraph Training["训练"]
-        T1["格式转换<br/>ShareGPT / OpenAI"] --> T2["混合通用数据<br/>防止灾难遗忘"]
-        T2 --> T3["SFT 训练<br/>LoRA / Full"]
-        T3 --> T4["格式 Token 特殊处理"]
-    end
+ subgraph Training["训练"]
+ T1["格式转换<br/>ShareGPT / OpenAI"] --> T2["混合通用数据<br/>防止灾难遗忘"]
+ T2 --> T3["SFT 训练<br/>LoRA / Full"]
+ T3 --> T4["格式 Token 特殊处理"]
+ end
 
-    subgraph Eval["评估"]
-        E1["BFCL Benchmark"] --> E2["格式合规检查"]
-        E2 --> E3["参数准确率"]
-        E3 --> E4["端到端任务测试"]
-    end
+ subgraph Eval["评估"]
+ E1["BFCL Benchmark"] --> E2["格式合规检查"]
+ E2 --> E3["参数准确率"]
+ E3 --> E4["端到端任务测试"]
+ end
 
-    Data --> Training --> Eval
+ Data --> Training --> Eval
 ```
 
 ### 3.2 数据收集与处理
@@ -434,19 +434,19 @@ flowchart TB
 import requests
 
 def scrape_openapi_specs(source_url: str) -> list:
-    """从 OpenAPI 目录中抓取 API 定义"""
-    specs = requests.get(source_url).json()
-    functions = []
-    for path, methods in specs.get("paths", {}).items():
-        for method, detail in methods.items():
-            functions.append({
-                "name": detail.get("operationId", path.replace("/", "_")),
-                "description": detail.get("summary", ""),
-                "parameters": detail.get("parameters", []),
-                "method": method.upper(),
-                "path": path
-            })
-    return functions
+ """从 OpenAPI 目录中抓取 API 定义"""
+ specs = requests.get(source_url).json()
+ functions = []
+ for path, methods in specs.get("paths", {}).items():
+ for method, detail in methods.items():
+ functions.append({
+ "name": detail.get("operationId", path.replace("/", "_")),
+ "description": detail.get("summary", ""),
+ "parameters": detail.get("parameters", []),
+ "method": method.upper(),
+ "path": path
+ })
+ return functions
 ```
 
 **Step 2: 数据增强策略**
@@ -477,20 +477,20 @@ def scrape_openapi_specs(source_url: str) -> list:
 ```python
 # 伪代码：对不同部分施加不同 loss 权重
 def compute_weighted_loss(logits, labels, token_types):
-    """
-    token_types: 'system' | 'user' | 'tool_def' | 'tool_call' | 'tool_result' | 'answer'
-    """
-    weights = {
-        'system': 0.0,        # 不计算 loss
-        'user': 0.0,          # 不计算 loss
-        'tool_def': 0.0,      # 工具定义不计算 loss
-        'tool_call': 2.0,     # 函数调用最重要，加大权重
-        'tool_result': 0.5,   # 工具返回结果，中等权重
-        'answer': 1.0,        # 最终回答，标准权重
-    }
-    loss = cross_entropy(logits, labels, reduction='none')
-    weighted_loss = loss * token_types.map(weights)
-    return weighted_loss.mean()
+ """
+ token_types: 'system' | 'user' | 'tool_def' | 'tool_call' | 'tool_result' | 'answer'
+ """
+ weights = {
+ 'system': 0.0, # 不计算 loss
+ 'user': 0.0, # 不计算 loss
+ 'tool_def': 0.0, # 工具定义不计算 loss
+ 'tool_call': 2.0, # 函数调用最重要，加大权重
+ 'tool_result': 0.5, # 工具返回结果，中等权重
+ 'answer': 1.0, # 最终回答，标准权重
+ }
+ loss = cross_entropy(logits, labels, reduction='none')
+ weighted_loss = loss * token_types.map(weights)
+ return weighted_loss.mean()
 ```
 
 #### 格式 Token 处理
@@ -855,9 +855,9 @@ Moonshot AI 的 Kimi K2 模型展示了 agentic 数据合成的前沿实践：
 1. **大规模 Self-Play**：Agent 在真实工具环境中 self-play 产生轨迹
 2. **μ-RL (Micro-RL)**：细粒度强化学习，优化每个 tool call 的决策
 3. **Agentic Data Synthesis**：
-   - 部署 Agent 在 Web 环境中执行真实任务
-   - 收集成功轨迹作为 SFT 数据
-   - 用 RL 进一步优化策略
+ - 部署 Agent 在 Web 环境中执行真实任务
+ - 收集成功轨迹作为 SFT 数据
+ - 用 RL 进一步优化策略
 4. **多轮迭代**：SFT → 部署 → 收集 → SFT → RL 循环
 
 ### 6.5 环境交互框架
@@ -1337,47 +1337,47 @@ import json
 
 # Step 1: 定义任务集
 TASKS = [
-    {"description": "帮我预订下周三下午2点的会议室A", "expected_tools": ["search_rooms", "book_room"], "difficulty": "medium"},
-    {"description": "分析销售数据并生成可视化报告", "expected_tools": ["query_db", "execute_code", "create_chart"], "difficulty": "hard"},
+ {"description": "帮我预订下周三下午 2 点的会议室 A", "expected_tools": ["search_rooms", "book_room"], "difficulty": "medium"},
+ {"description": "分析销售数据并生成可视化报告", "expected_tools": ["query_db", "execute_code", "create_chart"], "difficulty": "hard"},
 ]
 
 # Step 2: 轨迹生成
 def generate_agent_trajectory(task, tools, model):
-    messages = [{"role": "system", "content": SYSTEM_PROMPT},
-                {"role": "user", "content": task["description"]}]
-    trajectory = {"task": task, "steps": [], "success": False}
+ messages = [{"role": "system", "content": SYSTEM_PROMPT},
+ {"role": "user", "content": task["description"]}]
+ trajectory = {"task": task, "steps": [], "success": False}
 
-    for _ in range(15):
-        response = model.chat(messages, tools=tools, temperature=0.3)
-        if response.has_tool_calls:
-            for tc in response.tool_calls:
-                result = simulate_tool(tc.name, tc.arguments)
-                trajectory["steps"].append({"thought": response.thinking, "action": tc.to_dict(), "observation": result})
-                messages += [{"role": "assistant", "content": response.content, "tool_calls": [tc.to_dict()]},
-                             {"role": "tool", "content": json.dumps(result)}]
-        else:
-            trajectory["final_answer"] = response.content
-            trajectory["success"] = evaluate_answer(response.content, task)
-            break
-    return trajectory
+ for _ in range(15):
+ response = model.chat(messages, tools=tools, temperature=0.3)
+ if response.has_tool_calls:
+ for tc in response.tool_calls:
+ result = simulate_tool(tc.name, tc.arguments)
+ trajectory["steps"].append({"thought": response.thinking, "action": tc.to_dict(), "observation": result})
+ messages += [{"role": "assistant", "content": response.content, "tool_calls": [tc.to_dict()]},
+ {"role": "tool", "content": json.dumps(result)}]
+ else:
+ trajectory["final_answer"] = response.content
+ trajectory["success"] = evaluate_answer(response.content, task)
+ break
+ return trajectory
 
 # Step 3: 质量过滤 (成功 + 步骤数 2-12 + 有 thought + 无重复调用)
 def filter_trajectories(trajs):
-    return [t for t in trajs if t["success"] and 2 <= len(t["steps"]) <= 12
-            and all(s.get("thought") for s in t["steps"])
-            and len(set(json.dumps(s["action"], sort_keys=True) for s in t["steps"])) == len(t["steps"])]
+ return [t for t in trajs if t["success"] and 2 <= len(t["steps"]) <= 12
+ and all(s.get("thought") for s in t["steps"])
+ and len(set(json.dumps(s["action"], sort_keys=True) for s in t["steps"])) == len(t["steps"])]
 
 # Step 4: 格式转换为 ShareGPT
 def convert_format(trajs):
-    result = []
-    for t in trajs:
-        convs = [{"from": "system", "value": SYSTEM_PROMPT}, {"from": "human", "value": t["task"]["description"]}]
-        for s in t["steps"]:
-            convs += [{"from": "gpt", "value": s["thought"], "tool_calls": [s["action"]]},
-                      {"from": "tool", "value": json.dumps(s["observation"], ensure_ascii=False)}]
-        convs.append({"from": "gpt", "value": t["final_answer"]})
-        result.append({"conversations": convs})
-    return result
+ result = []
+ for t in trajs:
+ convs = [{"from": "system", "value": SYSTEM_PROMPT}, {"from": "human", "value": t["task"]["description"]}]
+ for s in t["steps"]:
+ convs += [{"from": "gpt", "value": s["thought"], "tool_calls": [s["action"]]},
+ {"from": "tool", "value": json.dumps(s["observation"], ensure_ascii=False)}]
+ convs.append({"from": "gpt", "value": t["final_answer"]})
+ result.append({"conversations": convs})
+ return result
 
 # 执行
 raw = [generate_agent_trajectory(t, TOOLS, gpt4_model) for t in TASKS]
@@ -1392,23 +1392,23 @@ print(f"生成 {len(training_data)} 条样本 (从 {len(raw)} 条过滤)")
 
 ```python
 def evaluate_function_calling(model, test_set):
-    """评估 function calling 能力的多个维度"""
-    metrics = {"format": [], "selection": [], "args": []}
-    for ex in test_set:
-        resp = model.generate(messages=ex["messages"], tools=ex["tools"])
-        try:
-            parsed = json.loads(resp.tool_call_json)
-            metrics["format"].append(1.0)
-        except json.JSONDecodeError:
-            metrics["format"].append(0.0); continue
+ """评估 function calling 能力的多个维度"""
+ metrics = {"format": [], "selection": [], "args": []}
+ for ex in test_set:
+ resp = model.generate(messages=ex["messages"], tools=ex["tools"])
+ try:
+ parsed = json.loads(resp.tool_call_json)
+ metrics["format"].append(1.0)
+ except json.JSONDecodeError:
+ metrics["format"].append(0.0); continue
 
-        exp_funcs, act_funcs = [tc["name"] for tc in ex["expected_calls"]], [tc["name"] for tc in parsed]
-        metrics["selection"].append(len(set(exp_funcs) & set(act_funcs)) / len(set(exp_funcs) | set(act_funcs)))
+ exp_funcs, act_funcs = [tc["name"] for tc in ex["expected_calls"]], [tc["name"] for tc in parsed]
+ metrics["selection"].append(len(set(exp_funcs) & set(act_funcs)) / len(set(exp_funcs) | set(act_funcs)))
 
-        for exp, act in zip(ex["expected_calls"], parsed):
-            if exp["name"] == act.get("name"):
-                metrics["args"].append(sum(act.get("arguments",{}).get(k)==v for k,v in exp["arguments"].items()) / len(exp["arguments"]))
-    return {k: sum(v)/len(v) if v else 0.0 for k,v in metrics.items()}
+ for exp, act in zip(ex["expected_calls"], parsed):
+ if exp["name"] == act.get("name"):
+ metrics["args"].append(sum(act.get("arguments",{}).get(k)==v for k,v in exp["arguments"].items()) / len(exp["arguments"]))
+ return {k: sum(v)/len(v) if v else 0.0 for k,v in metrics.items()}
 ```
 
 ### 10.7 生产环境注意事项

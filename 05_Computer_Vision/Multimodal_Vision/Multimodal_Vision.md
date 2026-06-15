@@ -145,7 +145,7 @@ LLaVA 架构 (简洁高效):
 | **Gemini Pro Vision** | Google | 原生多模态，支持长视频 | 超长上下文（1M tokens） |
 | **Claude 3.5 Sonnet** | Anthropic | 图像理解、代码截图分析 | 多图对比分析强 |
 | **Qwen-VL** | 阿里 | 中英双语视觉理解 | 开源，中文场景优 |
-| **InternVL** | 上海AI Lab | 动态分辨率、多图理解 | 开源最强之一 |
+| **InternVL** | 上海 AI Lab | 动态分辨率、多图理解 | 开源最强之一 |
 
 ---
 
@@ -265,7 +265,7 @@ print(answer)
 - [图像分割](../Segmentation/Segmentation.md) — SAM 的多模态分割能力
 - [生成模型](../Generative_Models/Generative_Models.md) — 文本引导的图像生成（DALL-E、SD）
 - [AI 智能体](../../06_Reinforcement_Learning/AI_Agents/AI_Agents.md) — 多模态 Agent 的视觉感知能力
-- [具身智能](../../06_Reinforcement_Learning/Robotics_Embodied_AI/Embodied_AI_2026.md) — VLA模型: 视觉-语言-动作端到端机器人控制
+- [具身智能](../../06_Reinforcement_Learning/Robotics_Embodied_AI/Embodied_AI_2026.md) — VLA 模型: 视觉-语言-动作端到端机器人控制
 - [微调技术](../../04_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques.md) — 多模态模型的微调方法
 
 ---

@@ -13,9 +13,9 @@ updated: "2026-05-31"
 
 **Wuying AgentBay** is Alibaba Cloud's cloud-native automation execution platform designed specifically for AI Agents. It provides a secure, serverless cloud environment where AI agents can perform automated tasks without requiring users to configure their own infrastructure.
 
-**Website**: [jvs.wuying.aliyun.com](https://jvs.wuying.aliyun.com/)  
-**SDK**: [github.com/agentbay-ai/wuying-agentbay-sdk](https://github.com/agentbay-ai/wuying-agentbay-sdk)  
-**MCP Server**: [mcpservers.org/servers/Michael98671/agentbay](https://mcpservers.org/servers/Michael98671/agentbay)  
+**Website**: [jvs.wuying.aliyun.com](https://jvs.wuying.aliyun.com/) 
+**SDK**: [github.com/agentbay-ai/wuying-agentbay-sdk](https://github.com/agentbay-ai/wuying-agentbay-sdk) 
+**MCP Server**: [mcpservers.org/servers/Michael98671/agentbay](https://mcpservers.org/servers/Michael98671/agentbay) 
 **Provider**: Alibaba Cloud (阿里云)
 
 ---

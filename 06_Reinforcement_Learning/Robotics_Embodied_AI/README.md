@@ -14,24 +14,25 @@ updated: 2026-05-31
 | 文档 | 内容 | 适用读者 |
 |------|------|----------|
 | [Embodied_AI_2026.md](./Embodied_AI_2026.md) | 具身智能完整指南 | 全面学习 |
+| [Robot_VLA_Training_Pipeline_2026.md](./Robot_VLA_Training_Pipeline_2026.md) | VLA 训练全流程：数据采集、动作 Token 化、Sim-to-Real | 专业开发者 |
 
 ## 快速链接
 
 ### 核心概念
 - **具身智能三大支柱**: 感知层 → 认知层 → 行动层
-- **VLA模型**: 视觉-语言-动作端到端模型
+- **VLA 模型**: 视觉-语言-动作端到端模型
 - **Sim-to-Real**: 仿真到现实迁移技术
 - **遥操作**: 人类示范数据采集
 
-### 2026年关键进展
-- **人形机器人**: Figure 02、Tesla Optimus、Unitree G1/H1进入实际部署
+### 2026 年关键进展
+- **人形机器人**: Figure 02、Tesla Optimus、Unitree G1/H1 进入实际部署
 - **机器人基础模型**: RT-2、π0、GR00T、Gemini Robotics
-- **市场规模**: 46.7亿→676.3亿美元 (2033年预测)
+- **市场规模**: 46.7 亿→676.3 亿美元 (2033 年预测)
 
 ### 主要玩家
 | 公司 | 产品/技术 | 特点 |
 |------|----------|------|
-| Figure AI | Figure 02 | BMW工厂试点 |
+| Figure AI | Figure 02 | BMW 工厂试点 |
 | Tesla | Optimus | 自有工厂测试 |
 | NVIDIA | GR00T + Isaac | 仿真+基础模型平台 |
 | Google DeepMind | RT-2 / Gemini Robotics | 视觉-语言-动作 |

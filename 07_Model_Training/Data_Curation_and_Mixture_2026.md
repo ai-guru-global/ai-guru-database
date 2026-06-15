@@ -19,7 +19,7 @@ updated: 2026-06-04
 |------|------|------|
 | [数据收集总览](#1-数据收集总览) | Web、Books、Code、Academic、Wikipedia 数据来源 | 入门 |
 | [数据清洗 Pipeline](#2-数据清洗-pipeline) | 语言识别、URL 过滤、去重、质量过滤、PII 移除 | 进阶 |
-| [Data Mixture 数据配比](#3-data-mixture-数据配比) | 配比对能力的影响、典型比例、DoReMi、DSIR | 进阶 |
+| [Data Mixture 数据配比](#3-data-mixture-数据配比) | 配比对能力的影响、典型比例、DoReMi、DSIR、分布式加载 | 进阶 |
 | [Synthetic Data 合成数据](#4-synthetic-data-合成数据) | Self-Instruct、Evol-Instruct、拒绝采样、冷启动 | 进阶 |
 | [Quality > Quantity 质量胜于数量](#5-quality--quantity-质量胜于数量) | LLaMA 1 启示、Phi、DCLM、FineWeb | 前沿 |
 | [Multilingual Data 多语言数据](#6-multilingual-data-多语言数据) | 英语主导问题、平衡策略、机器翻译增强 | 进阶 |
@@ -697,6 +697,66 @@ def dsir_select(
     return selected_indices
 ```
 
+### 3.6 Distributed Data Engineering at Scale
+
+在大规模分布式训练（如 512x H100 集群）中，如何高效、准确地将 Trillion 级别的 Token 喂给模型是一个巨大的工程挑战。
+
+#### 3.6.1 Streaming Datasets 流式数据
+
+传统的 `map-style` 数据加载需要将所有索引读入内存，在 TB 级数据面前会造成 OOM。2026 年的标准实践是使用 **IterableDataset** 流式加载。
+
+```python
+"""
+使用 HuggingFace `datasets` 库实现分布式流式加载。
+"""
+from datasets import load_dataset
+from torch.utils.data import DataLoader
+
+def get_distributed_stream(
+    dataset_name: str,
+    split: str = "train",
+    batch_size: int = 4,
+):
+    # streaming=True 开启流式模式，不下载完整文件
+    ds = load_dataset(dataset_name, split=split, streaming=True)
+    
+    # 自动处理分布式分片：每个 rank 只读取自己的数据部分
+    # ds = ds.shard(num_shards=world_size, index=global_rank)
+    
+    # 打乱缓冲区
+    ds = ds.shuffle(buffer_size=10_000, seed=42)
+    
+    return DataLoader(ds, batch_size=batch_size)
+```
+
+#### 3.6.2 Sharding & Shuffling 分片与打乱
+
+为了保证训练的随机性，需要实施 **两级打乱策略**：
+1. **全局打乱 (Global Shuffle)**: 在预处理阶段将数据切分为数万个小文件 (shards)，并随机打乱文件顺序。
+2. **局部打乱 (Local Shuffle)**: 每个训练进程读取分片时，维护一个缓冲区进行实时打乱。
+
+#### 3.6.3 Deterministic Resumption 确定性续训
+
+在分布式环境下，如果训练中断，如何保证恢复后数据不重不漏？
+
+- **方案**: 记录每个进程已读取的 `sample_index` 或文件 offset。
+- **最佳实践**: 使用 `WebDataset` 或 `MosaicML Streaming`，它们支持将数据加载状态保存到 checkpoint 中。
+
+```python
+# MosaicML Streaming 示例 (2026 行业标准)
+from streaming import StreamingDataset
+
+dataset = StreamingDataset(
+    local="./local_cache",
+    remote="s3://my-bucket/pretraining-data",
+    split="train",
+    shuffle=True,
+    batch_size=32
+)
+
+# 恢复训练时，StreamingDataset 会根据 checkpoint 自动定位 offset
+```
+
 ---
 
 ## 4. Synthetic Data 合成数据
@@ -999,10 +1059,10 @@ graph LR
 
 - **目标**: 在统一基准上比较不同数据清洗策略
 - **发现**:
-  - 质量过滤 > 数量扩张
-  - **基于分类器的过滤** 效果最好（Wikipedia 作为正样本）
-  - 去重的边际收益随规模增大而递减
-  - 最佳策略 = 分类器过滤 + MinHash 去重 + URL 过滤
+ - 质量过滤 > 数量扩张
+ - **基于分类器的过滤** 效果最好（Wikipedia 作为正样本）
+ - 去重的边际收益随规模增大而递减
+ - 最佳策略 = 分类器过滤 + MinHash 去重 + URL 过滤
 
 ### 5.4 FineWeb 高质量子集
 

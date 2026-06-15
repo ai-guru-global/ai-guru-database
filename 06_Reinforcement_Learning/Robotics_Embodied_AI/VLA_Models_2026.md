@@ -215,7 +215,7 @@ class PiZeroArchitecture:
 
 | 创新 | 说明 | 效果 |
 |------|------|------|
-| **Flow Matching** | 向量场学习生成连续动作 | 10步推理，实时性能 |
+| **Flow Matching** | 向量场学习生成连续动作 | 10 步推理，实时性能 |
 | **MoE Architecture** | 稀疏专家激活 | 3B 参数，高效推理 |
 | **Action Chunking** | 预测未来动作序列 | 时间一致性 |
 | **Diffusion Augmentation** | 扩散模型数据增强 | 提升鲁棒性 |
@@ -642,7 +642,7 @@ class VLSafetyChecker:
 
 ## Related
 
-- [[06_Reinforcement_Learning/AI_Agents/AI_Agents_for_dummy]] — AI智能体 - 小白版 🤖 (共享: agent, mdp, reinforcement-learning, rl)
+- [[06_Reinforcement_Learning/AI_Agents/AI_Agents_for_dummy]] — AI 智能体 - 小白版 🤖 (共享: agent, mdp, reinforcement-learning, rl)
 - [[06_Reinforcement_Learning/AI_Agents/Agent-in-nutshell]] — AI 智能体速成指南 (共享: agent, mdp, reinforcement-learning, rl)
 - [[06_Reinforcement_Learning/AI_Agents/Agent_Future_Roadmap_2026_2030]] — Agent 未来发展路线图 2026-2030 (共享: agent, mdp, reinforcement-learning, rl)
 - [[06_Reinforcement_Learning/AI_Agents/Agent_Protocols_Detail]] — AI Agent 协议详解：MCP、A2A、UCP (共享: agent, mdp, reinforcement-learning, rl)

@@ -4,10 +4,13 @@ title: '框架集成与生态系统'
 tags:
 - ai
 - ai-coding
+created: 2026-06-12
+category: 17-ai-coding
+summary: ""
 ---
 title: 框架集成与生态系统
 description: '**文档类型**: 集成指南 | **最后更新**: 2026-03 | **关键词**: OpenRouter, Frameworks,
-  OpenAI SDK, LangChain, Vercel AI, LlamaIndex, Mastra, PydanticAI, Aider, Cline'
+ OpenAI SDK, LangChain, Vercel AI, LlamaIndex, Mastra, PydanticAI, Aider, Cline'
 category: ai-coding
 tags:
 - ai
@@ -33,7 +36,7 @@ trigger_keywords:
 - coding
 authors:
 - name: KUDIG Team
-  role: contributor
+ role: contributor
 k8s_versions:
 - '1.28'
 - '1.29'

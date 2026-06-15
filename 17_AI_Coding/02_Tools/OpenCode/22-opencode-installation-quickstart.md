@@ -5,6 +5,9 @@ tags:
 - ai
 - ai-coding
 - configuration
+created: 2026-06-12
+category: 17-ai-coding
+summary: ""
 ---
 title: 安装部署与快速入门
 description: '# 安装部署与快速入门'
@@ -33,7 +36,7 @@ trigger_keywords:
 - coding
 authors:
 - name: KUDIG Team
-  role: contributor
+ role: contributor
 k8s_versions:
 - '1.28'
 - '1.29'

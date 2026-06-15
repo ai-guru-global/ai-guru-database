@@ -7,9 +7,9 @@ created: '2026-05-31'
 updated: '2026-05-31'
 ---
 
-# AI硬件与芯片 2026年全景报告
+# AI 硬件与芯片 2026 年全景报告
 
-> **一句话理解**: AI芯片是AI革命的"引擎"——2026年NVIDIA H200成为推理新标杆，Blackwell B200开始交付，AMD MI350紧追不舍，而定制ASIC和边缘AI芯片正在分化市场。
+> **一句话理解**: AI 芯片是 AI 革命的"引擎"——2026 年 NVIDIA H200 成为推理新标杆，Blackwell B200 开始交付，AMD MI350 紧追不舍，而定制 ASIC 和边缘 AI 芯片正在分化市场。
 
 ---
 
@@ -45,7 +45,7 @@ updated: '2026-05-31'
 
 ---
 
-## 2. NVIDIA GPU产品线详解
+## 2. NVIDIA GPU 产品线详解
 
 ### 2.1 H100 vs H200 深度对比
 
@@ -55,8 +55,8 @@ updated: '2026-05-31'
 | **制程** | 4nm | 4nm | - |
 | **显存** | 80GB HBM3 | 141GB HBM3e | +76% |
 | **显存带宽** | 3.35 TB/s | 4.8 TB/s | +43% |
-| **FP8算力** | 1,979 TFLOPS | 1,979 TFLOPS | - |
-| **NVLink带宽** | 900 GB/s | 900 GB/s | - |
+| **FP8 算力** | 1,979 TFLOPS | 1,979 TFLOPS | - |
+| **NVLink 带宽** | 900 GB/s | 900 GB/s | - |
 | **TDP** | 700W | 700W | - |
 | **价格** | ~$33,000 | ~$40,000 | +21% |
 
@@ -79,7 +79,7 @@ H200: 推理任务 (需要大内存容纳模型)
   • H200可多容纳~2x上下文长度
 ```
 
-### 2.2 Blackwell B200 (2026年新旗舰)
+### 2.2 Blackwell B200 (2026 年新旗舰)
 
 **架构突破**:
 ```
@@ -101,16 +101,16 @@ Blackwell架构亮点:
 • 推理吞吐: 比H100高15x (特定工作负载)
 ```
 
-**B200 vs H200选择指南**:
+**B200 vs H200 选择指南**:
 | 场景 | 推荐 | 原因 |
 |------|------|------|
 | 当前生产推理 | H200 | 成熟、供应稳定、软件优化完善 |
 | 下一代训练 | B200 | 算力密度更高、支持更大模型 |
 | 预算有限 | H100 | 性价比最高、二手市场活跃 |
 
-### 2.3 云厂商定价对比 (2026年)
+### 2.3 云厂商定价对比 (2026 年)
 
-| 平台 | GPU类型 | 价格/小时 | 性价比 |
+| 平台 | GPU 类型 | 价格/小时 | 性价比 |
 |------|---------|-----------|--------|
 | **AWS p5e** | H200 | $12-15 | 高 |
 | **AWS p5** | H100 | $10 | 中 |
@@ -214,14 +214,14 @@ AWQ/GPTQ (4位量化):
 └── 适用: 消费级GPU部署
 ```
 
-### 4.2 推理引擎性能对比 (2026年)
+### 4.2 推理引擎性能对比 (2026 年)
 
 | 引擎 | 吞吐量 (H100, Llama 3.1 8B) | 特点 |
 |------|----------------------------|------|
 | **SGLang** | 16,215 tok/s | 最快，RadixAttention |
 | **LMDeploy** | 16,132 tok/s | 国产，性能好 |
 | **vLLM** | 12,553 tok/s | 最流行，PagedAttention |
-| **TensorRT-LLM** | 10,000+ tok/s | NVIDIA官方 |
+| **TensorRT-LLM** | 10,000+ tok/s | NVIDIA 官方 |
 | **TGI** | ~9,500 tok/s | 维护模式 |
 
 ---
@@ -329,7 +329,7 @@ AI硬件选型决策树 2026:
 
 ## 8. 未来趋势
 
-### 8.1 2026-2028技术路线图
+### 8.1 2026-2028 技术路线图
 
 ```
 2026年:
@@ -353,7 +353,31 @@ AI硬件选型决策树 2026:
 
 ---
 
-## 9. 参考资源
+## 9. 国产 AI 芯片
+
+> 中国 AI 芯片市场在 2024-2026 年快速发展，华为昇腾是唯一通过千亿参数训练验证的国产芯片。
+
+### 代表性产品
+
+| 芯片 | 厂商 | 算力 (FP16) | 显存 | 软件生态 | 适用场景 |
+|------|------|------------|------|----------|----------|
+| **昇腾 910B** | 华为 | 320 TFLOPS | 64GB HBM2e | CANN + MindSpore | 大模型训练（已验证） |
+| **昇腾 910C** | 华为 | ~800 TFLOPS | 128GB HBM | CANN 8.0 | 千亿训练首选 |
+| **DCU Z100** | 海光 | ~400 TFLOPS | 64GB HBM | ROCm 兼容 | CUDA 迁移成本最低 |
+| **思元 590** | 寒武纪 | ~300 TFLOPS | 48GB | Neuware | 推理部署 |
+| **壁砺 104** | 壁仞 | ~400 TFLOPS | 64GB | BIRENSUPA | 通用训练 |
+| **MTT S4000** | 摩尔线程 | ~200 TFLOPS | 48GB | MUSA | 图形+AI |
+
+### 选型建议
+
+- **大模型训练替代**：昇腾 910C（唯一有训练验证，讯飞星火/华为盘古验证）
+- **CUDA 迁移**：海光 DCU（ROCm 兼容，CUDA→HIP 自动转换 90%+）
+- **推理部署**：寒武纪思元（Neuware 推理优化成熟）
+- **详见**: [[01_Fundamentals/AI_Hardware/Chinese_AI_Chips_Deep_Dive]] — 12家厂商完整对比
+
+---
+
+## 10. 参考资源
 
 ### 官方文档
 - [NVIDIA Data Center GPUs](https://www.nvidia.com/en-us/data-center/)
@@ -373,3 +397,13 @@ AI硬件选型决策树 2026:
 ---
 
 *Last updated: 2026-04-01* (H200 vs B200 vs MI350 landscape)
+
+## Related
+
+- [[concepts/gpu-interconnect]] — GPU 互联拓扑与 NVLink/NVSwitch 架构
+- [[concepts/model-serving]] — 模型服务化部署与推理引擎
+- [[09_Deployment_Inference/Deployment_Inference]] — 部署与推理系统全景
+- [[12_Architecture_Infrastructure/AI_Infrastructure_2026]] — AI 基础设施 2026
+- [[07_Model_Training/Distributed_Training_2026]] — 分布式训练与 GPU 集群调度
+- [[01_Fundamentals/AI_Hardware/Chinese_AI_Chips_Deep_Dive]] — 国产 AI 芯片12家厂商深度解析
+- [[concepts/heterogeneous-gpu]] — 异构 GPU 集群统一纳管

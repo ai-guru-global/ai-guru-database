@@ -90,3 +90,4 @@ SGLang的RadixAttention用Radix Tree缓存和复用KV Cache前缀，对多轮对
 - [[09_Deployment_Inference/Deployment_Inference]] — 模型部署与推理加速 (Deployment & Inference) (共享: serving, vllm)
 - [[09_Deployment_Inference/Deployment_Inference_2026]] — 部署推理 2026 趋势 (共享: serving, vllm)
 - [[09_Deployment_Inference/Deployment_Inference_for_dummy]] — 模型部署与推理加速 - 小白版 (共享: serving, vllm)
+- [[12_Architecture_Infrastructure/Alibaba_Cloud_AI_Stack_Deep_Dive|阿里云 AI Stack]] — 专有云容器化推理服务部署

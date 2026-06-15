@@ -1,5 +1,210 @@
 {
-  "sources": {},
   "version": 1,
-  "created": "2026-05-31T00:00:00Z"
+  "created": "2026-05-31T00:00:00Z",
+  "last_updated": "2026-06-12T00:00:00Z",
+  "sources": {
+    "/Users/ai-guru/Documents/GitHub/ai-guru-global/ai-guru-database/AI Stack 用户指南.pdf": {
+      "ingested_at": "2026-06-05T00:00:00Z",
+      "size_bytes": 7635406,
+      "modified_at": "2026-06-04T10:35:00Z",
+      "content_hash": "sha256:dbd22415cb794ac1d271eadb66d81b69ddf94af96873f28a579d933f954551a2",
+      "source_type": "document",
+      "project": null,
+      "pages_created": ["12_Architecture_Infrastructure/Alibaba_Cloud_AI_Stack_Deep_Dive.md"],
+      "pages_updated": []
+    },
+    "https://github.com/microsoft/AI-For-Beginners/blob/main/translations/zh-CN/README.md": {
+      "ingested_at": "2026-06-12T05:01:13Z",
+      "source_url": "https://github.com/microsoft/AI-For-Beginners/blob/main/translations/zh-CN/README.md",
+      "source_type": "url",
+      "project": null,
+      "promotion_status": "full-course",
+      "stub": false,
+      "pages_created": [
+        "90_Learn/Microsoft_AI_For_Beginners.md",
+        "references/microsoft-ai-for-beginners.md",
+        "90_Learn/Microsoft_AI_For_Beginners/L00_Course_Setup.md",
+        "90_Learn/Microsoft_AI_For_Beginners/L01_Introduction_and_History_of_AI.md",
+        "90_Learn/Microsoft_AI_For_Beginners/L02_Knowledge_Representation_and_Expert_Systems.md",
+        "90_Learn/Microsoft_AI_For_Beginners/L03_Perceptron.md",
+        "90_Learn/Microsoft_AI_For_Beginners/L04_Multi_Layered_Perceptron.md",
+        "90_Learn/Microsoft_AI_For_Beginners/L05_Frameworks_and_Overfitting.md",
+        "90_Learn/Microsoft_AI_For_Beginners/L06_Intro_to_Computer_Vision.md",
+        "90_Learn/Microsoft_AI_For_Beginners/L07_CNN_and_Architectures.md",
+        "90_Learn/Microsoft_AI_For_Beginners/L08_Transfer_Learning_and_Training_Tricks.md",
+        "90_Learn/Microsoft_AI_For_Beginners/L09_Autoencoders_and_VAEs.md",
+        "90_Learn/Microsoft_AI_For_Beginners/L10_GANs_and_Style_Transfer.md",
+        "90_Learn/Microsoft_AI_For_Beginners/L11_Object_Detection.md",
+        "90_Learn/Microsoft_AI_For_Beginners/L12_Semantic_Segmentation.md",
+        "90_Learn/Microsoft_AI_For_Beginners/L13_Text_Representation.md",
+        "90_Learn/Microsoft_AI_For_Beginners/L14_Semantic_Word_Embeddings.md",
+        "90_Learn/Microsoft_AI_For_Beginners/L15_Language_Modeling.md",
+        "90_Learn/Microsoft_AI_For_Beginners/L16_Recurrent_Neural_Networks.md",
+        "90_Learn/Microsoft_AI_For_Beginners/L17_Generative_Recurrent_Networks.md",
+        "90_Learn/Microsoft_AI_For_Beginners/L18_Transformers_and_BERT.md",
+        "90_Learn/Microsoft_AI_For_Beginners/L19_Named_Entity_Recognition.md",
+        "90_Learn/Microsoft_AI_For_Beginners/L20_Large_Language_Models.md",
+        "90_Learn/Microsoft_AI_For_Beginners/L21_Genetic_Algorithms.md",
+        "90_Learn/Microsoft_AI_For_Beginners/L22_Deep_Reinforcement_Learning.md",
+        "90_Learn/Microsoft_AI_For_Beginners/L23_Multi_Agent_Systems.md",
+        "90_Learn/Microsoft_AI_For_Beginners/L24_AI_Ethics_and_Responsible_AI.md",
+        "90_Learn/Microsoft_AI_For_Beginners/L25_Multi_Modal_Networks.md"
+      ],
+      "pages_updated": ["90_Learn/README.md", "90_Learn/Learning_Paths_2026.md", "index.md", "log.md"]
+    },
+    "https://github.com/ashishps1/learn-ai-engineering": {
+      "ingested_at": "2026-06-12T00:00:00Z",
+      "source_url": "https://github.com/ashishps1/learn-ai-engineering",
+      "source_type": "url",
+      "project": null,
+      "pages_created": ["90_Learn/AI_Engineering_Roadmap_2026.md"],
+      "pages_updated": ["90_Learn/Learning_Paths_2026.md", "00_AI_Introduction/AI_Learning_Resources.md"]
+    },
+    "https://github.com/microsoft/generative-ai-for-beginners/blob/main/translations/zh-CN/README.md": {
+      "ingested_at": "2026-06-12T06:00:00Z",
+      "source_url": "https://github.com/microsoft/generative-ai-for-beginners/blob/main/translations/zh-CN/README.md",
+      "source_type": "url",
+      "project": null,
+      "promotion_status": "full-course",
+      "stub": false,
+      "pages_created": [
+        "90_Learn/Microsoft_GenAI_For_Beginners.md",
+        "references/microsoft-genai-for-beginners.md",
+        "01_Fundamentals/GenAI_L00_Course_Setup.md",
+        "00_AI_Introduction/GenAI_L01_Intro_to_GenAI_and_LLMs.md",
+        "04_NLP_LLMs/GenAI_L02_Exploring_and_Comparing_LLMs.md",
+        "19_Ethics_Safety/GenAI_L03_Using_GenAI_Responsibly.md",
+        "04_NLP_LLMs/Prompt_Engineering/GenAI_L04_Prompt_Engineering_Fundamentals.md",
+        "04_NLP_LLMs/Prompt_Engineering/GenAI_L05_Advanced_Prompts.md",
+        "13_Agent_Production/GenAI_L06_Text_Generation_Apps.md",
+        "13_Agent_Production/GenAI_L07_Building_Chat_Applications.md",
+        "11_RAG_Systems/GenAI_L08_Building_Search_Applications.md",
+        "04_NLP_LLMs/Multimodal_Models/GenAI_L09_Building_Image_Applications.md",
+        "20_AI_Applications_Industry/GenAI_L10_Building_Low_Code_AI_Applications.md",
+        "13_Agent_Production/GenAI_L11_Integrating_with_Function_Calling.md",
+        "13_Agent_Production/GenAI_L12_Designing_UX_for_AI_Applications.md",
+        "19_Ethics_Safety/GenAI_L13_Securing_AI_Applications.md",
+        "10_MLOps_Pipeline/GenAI_L14_GenAI_Application_Lifecycle.md",
+        "11_RAG_Systems/GenAI_L15_RAG_and_Vector_Databases.md",
+        "04_NLP_LLMs/GenAI_L16_Open_Source_Models_and_Hugging_Face.md",
+        "13_Agent_Production/GenAI_L17_AI_Agents.md",
+        "04_NLP_LLMs/Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs.md",
+        "04_NLP_LLMs/Edge_LLM/GenAI_L19_Building_with_SLMs.md",
+        "04_NLP_LLMs/Global_LLM_Ecosystem/GenAI_L20_Building_with_Mistral.md",
+        "04_NLP_LLMs/Global_LLM_Ecosystem/GenAI_L21_Building_with_Meta.md"
+      ],
+      "pages_updated": []
+    },
+    "manual-concept-mrl": {
+      "ingested_at": "2026-06-12T06:30:00Z",
+      "source_type": "manual",
+      "project": null,
+      "pages_created": ["concepts/matryoshka-representation-learning.md"],
+      "pages_updated": ["concepts/embedding-models.md", "concepts/vector-database.md", "concepts/rag-systems.md", "index.md"]
+    },
+    "_raw/github-sources/hello-agents/README.md": {
+      "ingested_at": "2026-06-12T05:56:59Z",
+      "size_bytes": 20127,
+      "modified_at": "2026-06-12T05:38:59Z",
+      "content_hash": "sha256:cfb70dd1c1d46ebfbcc19ed4ca34298d1b1b908815846b41b15064053cc3d939",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [
+        "references/hello-agents.md",
+        "90_Learn/Hello_Agents_Course.md",
+        "04_NLP_LLMs/Prompt_Engineering/Hello_Agents_L04_ReAct.md",
+        "04_NLP_LLMs/Prompt_Engineering/Hello_Agents_L09_Context_Engineering.md",
+        "07_Model_Training/Hello_Agents_L11_Agentic_RL.md",
+        "13_Agent_Production/Hello_Agents_L06_Frameworks_AutoGen_LangGraph.md",
+        "13_Agent_Production/Hello_Agents_L08_Memory_RAG.md",
+        "13_Agent_Production/Hello_Agents_L10_Agent_Protocols.md",
+        "13_Agent_Production/Hello_Agents_L13_Travel_Assistant.md",
+        "13_Agent_Production/Hello_Agents_L15_Cyber_Town.md"
+      ],
+      "pages_updated": []
+    },
+    "_raw/github-sources/learn-claude-code/README.md": {
+      "ingested_at": "2026-06-12T05:56:59Z",
+      "size_bytes": 26210,
+      "modified_at": "2026-06-12T05:50:37Z",
+      "content_hash": "sha256:a334c602c75ff26c9613564e825c4571ea674ca79f48297960c203a2147cf092",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [
+        "references/learn-claude-code.md",
+        "90_Learn/Learn_Claude_Code_Course.md",
+        "13_Agent_Production/Learn_Claude_Code_L01_Agent_Loop.md",
+        "13_Agent_Production/Learn_Claude_Code_L03_Permission_System.md",
+        "13_Agent_Production/Learn_Claude_Code_L06_Subagent.md",
+        "13_Agent_Production/Learn_Claude_Code_L08_Context_Compact.md",
+        "13_Agent_Production/Learn_Claude_Code_L09_Memory_System.md",
+        "13_Agent_Production/Learn_Claude_Code_L12_Task_System.md",
+        "13_Agent_Production/Learn_Claude_Code_L15_Agent_Teams.md",
+        "13_Agent_Production/Learn_Claude_Code_L17_Autonomous_Agents.md"
+      ],
+      "pages_updated": []
+    },
+    "_raw/github-sources/ai-agents-for-beginners/README.md": {
+      "ingested_at": "2026-06-12T05:56:59Z",
+      "size_bytes": 20296,
+      "modified_at": "2026-06-12T05:54:42Z",
+      "content_hash": "sha256:3f4bc3c28d9aa76ad6a8bead9d48553d03a1ab92049dbc7bbbd45a43698fa260",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [
+        "references/ai-agents-for-beginners.md",
+        "90_Learn/Microsoft_AI_Agents_for_Beginners.md",
+        "13_Agent_Production/Microsoft_AI_Agents_L01_Intro.md",
+        "13_Agent_Production/Microsoft_AI_Agents_L02_Frameworks.md",
+        "13_Agent_Production/Microsoft_AI_Agents_L04_Tool_Use.md",
+        "13_Agent_Production/Microsoft_AI_Agents_L05_Agentic_RAG.md"
+      ],
+      "pages_updated": []
+    },
+    "_raw/github-sources/hands-on-llms/README.md": {
+      "ingested_at": "2026-06-12T05:56:59Z",
+      "size_bytes": 11808,
+      "modified_at": "2026-06-12T05:54:57Z",
+      "content_hash": "sha256:fa28ed0a7ffe8d8bc76c65495a967807ed7e82310e2858e9379be0de29d9088d",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [
+        "references/books/hands-on-llms-alammar.md",
+        "90_Learn/Hands_On_LLMs_Course.md"
+      ],
+      "pages_updated": []
+    },
+    "_raw/github-sources/ailearning/README.md": {
+      "ingested_at": "2026-06-12T05:56:59Z",
+      "size_bytes": 23798,
+      "modified_at": "2026-06-12T05:55:25Z",
+      "content_hash": "sha256:21bfe62715322678e1111e4bf59a5922efcebc7020091265312978551d94deb4",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [
+        "references/apachecn-ailearning.md",
+        "90_Learn/ApacheCN_AILearning_Guide.md",
+        "01_Fundamentals/ApacheCN_Data_Analysis_Track.md",
+        "01_Fundamentals/ApacheCN_Linear_Algebra_Track.md",
+        "02_Machine_Learning/ApacheCN_Machine_Learning_Track.md"
+      ],
+      "pages_updated": []
+    },
+    "_raw/github-sources/500-ai-projects/README.md": {
+      "ingested_at": "2026-06-12T05:56:59Z",
+      "size_bytes": 16818,
+      "modified_at": "2026-06-12T05:55:35Z",
+      "content_hash": "sha256:2f6f5a50bfe92df9d0c795803306c2edc16aa2fed20601fc336cf9358ca5eeb2",
+      "source_type": "document",
+      "project": null,
+      "pages_created": ["references/500-ai-projects.md"],
+      "pages_updated": []
+    }
+  },
+  "stats": {
+    "total_sources_ingested": 11,
+    "total_pages": 1073,
+    "total_projects": 0,
+    "last_full_rebuild": null
+  }
 }

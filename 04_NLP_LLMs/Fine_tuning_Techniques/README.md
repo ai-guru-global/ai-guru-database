@@ -15,7 +15,7 @@ updated: 2026-05-31
 |------|------|----------|
 | [Fine_tuning_Techniques.md](./Fine_tuning_Techniques.md) | 微调技术详解 | 进阶学习 |
 | [Fine_tuning_Techniques_for_dummy.md](./Fine_tuning_Techniques_for_dummy.md) | 微调入门 | 初学者 |
-| [PEFT_2026/](./PEFT_2026/) | PEFT 2026最佳实践 | 实战学习 |
+| [PEFT_2026/](./PEFT_2026/) | PEFT 2026 最佳实践 | 实战学习 |
 | [Unsloth Deep Dive](./Unsloth_Deep_Dive.md) | 高速微调框架：2x 加速、24GB 单卡 | 快速实验 |
 | [Axolotl Deep Dive](./Axolotl_Deep_Dive.md) | 开源微调工具：全参数/LoRA/QLoRA 支持 | 生产微调 |
 | [**ms-swift Deep Dive**](../../07_Model_Training/ms_swift_Deep_Dive.md) | 魔搭全链路框架：SFT/GRPO/RLHF/Megatron/部署/评测 | 全链路实战 |
@@ -39,7 +39,7 @@ PEFT (参数高效微调):
 └── 适用: 大多数微调任务
 ```
 
-### PEFT方法对比
+### PEFT 方法对比
 
 | 方法 | 显存需求 | 适用场景 |
 |------|---------|----------|

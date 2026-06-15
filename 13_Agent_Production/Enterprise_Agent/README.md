@@ -22,6 +22,7 @@ updated: 2026-05-31
 | 文档 | 内容 | 适用角色 |
 |------|------|----------|
 | [Agent Production 2026](./Agent_Production_2026.md) | Agent 生产部署最佳实践：架构模式、基础设施、监控、CI/CD | 架构师、SRE、开发者 |
+| [Enterprise Agent Governance 2026](./Enterprise_Agent_Governance_2026.md) | 智能体治理：注册中心、RBAC、计费配额、全链路可观测性 | 架构师、管理者 |
 | [Hermes Agent Deep Dive](./Hermes_Agent_Deep_Dive.md) | 企业级 Agent 运行时：安全沙箱、RBAC、审计、多租户 | 架构师、安全工程师 |
 
 ## 核心架构模式

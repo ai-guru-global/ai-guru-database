@@ -1275,6 +1275,84 @@ MiniMax 给我们的技术启示:
 
 ---
 
+---
+
+## M2.5/M2.7 最新规格 (2026年6月)
+
+### 模型能力总览
+
+MiniMax M2.5 和 M2.7 代表了当前 MiniMax 的最高技术水平：
+
+| 特性 | M2.5 | M2.7 |
+|------|------|------|
+| **定位** | 编码与 Agent SOTA | 数据精选基线，稀疏 token 研究 |
+| **上下文** | 1M tokens | 1M tokens |
+| **Chain of Thought** | 最高 128K tokens | 最高 128K tokens |
+| **多模态** | 原生多模态 (from step zero) | 原生多模态 (from step zero) |
+| **编码能力** | SWE-Bench 全球领先 | 研究基准 |
+
+### 原生多模态能力
+
+M2.5/M2.7 从设计之初就是原生多模态模型：
+
+```
+原生多模态架构 (Native Multimodal from Step Zero):
+═══════════════════════════════════════════════════════════════════
+
+不是后期拼接视觉模块，而是训练时就同时处理多模态数据:
+
+  文本 ──┐
+  图像 ──┼→ 统一 Transformer (Lightning Attention) → 多模态输出
+  视频 ──┘
+
+优势:
+  • 模态间深层交互
+  • 端到端训练，全局最优
+  • 单一模型处理所有模态
+```
+
+### 视频生成
+
+| 功能 | 规格 |
+|------|------|
+| **文本到视频** | 支持 |
+| **图像到视频** | 支持 |
+| **最高分辨率** | 1080p |
+| **物理模拟** | 高级流体、刚体、光影 |
+
+### 语音能力
+
+| 功能 | 规格 |
+|------|------|
+| **支持语言** | 40 种语言 |
+| **声音克隆** | 5 秒音频即可克隆 |
+| **语音合成 (TTS)** | 高质量自然语音 |
+| **语音转写 (STT)** | 多语言识别 |
+
+### 音乐生成
+
+MiniMax Music 2.0 支持从文本描述生成完整音乐作品，包括人声、器乐编排和风格控制。
+
+### 实时流式 API
+
+M2.5/M2.7 支持 Real-time Streaming API，适用于：
+- 实时对话系统
+- 流式代码补全
+- 低延迟 Agent 交互
+
+### 定价方案
+
+| 方案 | 价格 | 配额 | 适用场景 |
+|------|------|------|---------|
+| **Free** | ¥0 | 有限额度 | 试用与评估 |
+| **Standard** | 按需付费 | 按量计费 | 中等规模生产 |
+| **Pro** | 包月 | 更大配额 | 正式生产环境 |
+| **Custom** | 企业定制 | 无上限 | 大规模企业部署 |
+
+**订阅参考**: ~¥119/月可获得约 **71 亿 tokens** 的月度配额，适合中小型开发团队。
+
+---
+
 ## 附录 A: 术语表
 
 | 术语 | 英文 | 解释 |
@@ -1323,4 +1401,21 @@ MiniMax 关键数字速查:
 
 ---
 
+
+
+## 信息来源
+
+### 官方来源
+- MiniMax 官网: https://www.minimaxi.com
+- MiniMax 开放平台: https://platform.minimaxi.com
+- 海螺 AI: https://www.hailuo.ai
+- MiniMax GitHub: https://github.com/MetaCubeX/MiniMax
+- MiniMax-01 技术报告: https://github.com/MetaCubeX/MiniMax-01
+
+### Wiki 内部参考
+- [[04_NLP_LLMs/Chinese_LLM_Ecosystem/README]] — 中国大模型生态全景
+- [[04_NLP_LLMs/Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]] — 全厂商对比矩阵
+- [[04_NLP_LLMs/Chinese_LLM_Ecosystem/Chinese_LLM_Training_Inference_Platforms]] — 训推平台实战
+
+---
 *Last updated: 2026-06-01*

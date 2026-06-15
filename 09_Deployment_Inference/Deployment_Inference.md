@@ -9,7 +9,7 @@ updated: 2026-05-31
 
 # 模型部署与推理加速 (Deployment & Inference)
 
-> **一句话理解**: 就像把实验室里的发明变成能在工厂量产的产品，让AI模型从研究原型转变为高效稳定的生产服务。
+> **一句话理解**: 就像把实验室里的发明变成能在工厂量产的产品，让 AI 模型从研究原型转变为高效稳定的生产服务。
 
 ## 1. 概述 (Overview)
 
@@ -170,14 +170,14 @@ Req5:           ██████
 | **INT8 (PTQ)** | 8-bit | 4× | 0.5-2% | 通用加速 | 很快 |
 | **GPTQ** | 4/3-bit | 8-10× | 1-3% | 显存受限 | 很快 |
 | **AWQ** | 4-bit | 8× | <1% | 保精度压缩 | 很快 |
-| **GGUF** | 2-8bit混合 | 4-12× | 1-5% | CPU推理 | 中等 |
+| **GGUF** | 2-8bit 混合 | 4-12× | 1-5% | CPU 推理 | 中等 |
 | **bitsandbytes (NF4)** | 4-bit | 8× | 1-2% | 训练+推理 | 快 |
 
 #### GPTQ vs AWQ 原理对比
 
 **GPTQ (Generalized Post-Training Quantization)**:
 - 核心思想: 逐层最小化量化前后的输出差异
-- 优化目标: `argmin ||WX - Q(W)X||²` (W为权重矩阵)
+- 优化目标: `argmin ||WX - Q(W)X||²` (W 为权重矩阵)
 - 特点: 全局优化，计算成本高
 
 **AWQ (Activation-aware Weight Quantization)**:
@@ -367,28 +367,28 @@ print(tokenizer.decode(outputs[0]))
 
 ## 6. 进阶话题 (Advanced Topics)
 
-### 6.1 推理引擎深度对比 (2026更新)
+### 6.1 推理引擎深度对比 (2026 更新)
 
-#### 2026年推理引擎格局
+#### 2026 年推理引擎格局
 
-2026年LLM推理引擎格局发生了显著变化，SGLang成为新的性能领导者，TGI进入维护模式。
+2026 年 LLM 推理引擎格局发生了显著变化，SGLang 成为新的性能领导者，TGI 进入维护模式。
 
-| 引擎 | 开发者 | 核心技术 | 2026状态 | H100吞吐量 | 易用性 |
+| 引擎 | 开发者 | 核心技术 | 2026 状态 | H100 吞吐量 | 易用性 |
 |------|--------|---------|---------|-----------|--------|
 | **SGLang** | LMSYS | RadixAttention | ⭐ 活跃开发 | **16,215 tok/s** | ⭐⭐⭐⭐ |
 | **vLLM** | UC Berkeley | PagedAttention | ⭐ 活跃开发 | 12,553 tok/s | ⭐⭐⭐⭐⭐ |
 | **TensorRT-LLM** | NVIDIA | 层融合+FP8 | ⭐ 活跃开发 | 10,000+ tok/s | ⭐⭐⭐ |
 | **LMDeploy** | 社区 | TurboMind | ⭐ 活跃开发 | 16,132 tok/s | ⭐⭐⭐⭐ |
 | **TGI** | Hugging Face | Continuous Batching | ⚠️ 维护模式 | ~9,500 tok/s | ⭐⭐⭐⭐⭐ |
-| **llama.cpp** | 社区 | GGUF量化 | ⭐ 活跃开发 | ~6,000 tok/s | ⭐⭐⭐⭐⭐ |
+| **llama.cpp** | 社区 | GGUF 量化 | ⭐ 活跃开发 | ~6,000 tok/s | ⭐⭐⭐⭐⭐ |
 
 *测试配置: H100-80GB, Llama 3.1 8B Instruct, 1000 ShareGPT prompts*
 
 **关键发现 (2026)**:
-1. **SGLang领先**: 在相同kernel上比vLLM快29%，瓶颈在编排而非计算
+1. **SGLang 领先**: 在相同 kernel 上比 vLLM 快 29%，瓶颈在编排而非计算
 2. **TensorRT-LLM**: 单请求低延迟场景最强，但高并发下表现下降
-3. **TGI冻结**: 建议新项目考虑迁移到vLLM或SGLang
-4. **vLLM稳健**: 生态最丰富，文档最完善，仍是通用首选
+3. **TGI 冻结**: 建议新项目考虑迁移到 vLLM 或 SGLang
+4. **vLLM 稳健**: 生态最丰富，文档最完善，仍是通用首选
 
 #### 选型建议 (2026)
 
@@ -396,18 +396,18 @@ print(tokenizer.decode(outputs[0]))
 |------|---------|------|
 | **通用生产环境** | vLLM | 生态最成熟，文档完善，社区活跃 |
 | **极致性能** | SGLang | 吞吐量最高，多轮对话优化好 |
-| **NVIDIA深度优化** | TensorRT-LLM | 单请求延迟最低，FP8支持好 |
-| **Agent/RAG工作流** | SGLang | RadixAttention对共享前缀优化好 |
-| **快速原型** | vLLM/SGLang | 开箱即用，OpenAI兼容API |
-| **边缘/本地部署** | llama.cpp/Ollama | CPU优化好，量化支持丰富 |
+| **NVIDIA 深度优化** | TensorRT-LLM | 单请求延迟最低，FP8 支持好 |
+| **Agent/RAG 工作流** | SGLang | RadixAttention 对共享前缀优化好 |
+| **快速原型** | vLLM/SGLang | 开箱即用，OpenAI 兼容 API |
+| **边缘/本地部署** | llama.cpp/Ollama | CPU 优化好，量化支持丰富 |
 
-#### SGLang详解
+#### SGLang 详解
 
 **核心特性**:
-- **RadixAttention**: 自动前缀缓存，对多轮对话和RAG场景优化显著
-- **零开销CPU调度器**: 减少GPU空闲时间
+- **RadixAttention**: 自动前缀缓存，对多轮对话和 RAG 场景优化显著
+- **零开销 CPU 调度器**: 减少 GPU 空闲时间
 - **结构化输出原生支持**: JSON、约束解码内置
-- **多LoRA批处理**: 同时服务多个微调模型
+- **多 LoRA 批处理**: 同时服务多个微调模型
 
 **代码示例**:
 ```python
@@ -428,44 +428,44 @@ response = client.chat.completions.create(
 
 **最佳场景**:
 - 聊天机器人和多轮对话
-- RAG流水线（共享上下文前缀）
-- 需要结构化输出的Agent系统
+- RAG 流水线（共享上下文前缀）
+- 需要结构化输出的 Agent 系统
 - 高吞吐量在线服务
 
-#### vLLM vs SGLang对比
+#### vLLM vs SGLang 对比
 
 | 特性 | SGLang | vLLM |
 |------|--------|------|
-| **吞吐量** | 领先29% | 行业标准 |
-| **多轮对话** | RadixAttention优化 | APC支持 |
-| **模型支持** | 主流LLM/VLM | 最广，新模型支持最快 |
+| **吞吐量** | 领先 29% | 行业标准 |
+| **多轮对话** | RadixAttention 优化 | APC 支持 |
+| **模型支持** | 主流 LLM/VLM | 最广，新模型支持最快 |
 | **易用性** | 配置简单 | 文档最完善 |
 | **生态** | 快速增长 | 最成熟 |
 | **推测解码** | EAGLE/EAGLE3 | EAGLE/Medusa/n-gram |
 
 **迁移建议**:
-- 现有vLLM用户无需急于迁移，vLLM仍是稳健选择
-- 新项目追求极致性能可考虑SGLang
-- 使用OpenAI兼容API可实现无缝切换（仅需改base_url）
+- 现有 vLLM 用户无需急于迁移，vLLM 仍是稳健选择
+- 新项目追求极致性能可考虑 SGLang
+- 使用 OpenAI 兼容 API 可实现无缝切换（仅需改 base_url）
 
-### 6.2 FP8精度：2026年新标准
+### 6.2 FP8 精度：2026 年新标准
 
-**为什么FP8成为新标准**:
-- **H100原生支持**: 1.3 PFLOPS FP8计算能力
-- **几乎无损**: 质量保留>99%，速度提升30%+
-- **显存节省**: 相比FP16减少50%显存占用
+**为什么 FP8 成为新标准**:
+- **H100 原生支持**: 1.3 PFLOPS FP8 计算能力
+- **几乎无损**: 质量保留>99%，速度提升 30%+
+- **显存节省**: 相比 FP16 减少 50% 显存占用
 
 **量化方案对比 (2026)**:
 
 | 精度 | 显存节省 | 速度提升 | 质量保留 | 适用场景 |
 |------|---------|---------|---------|----------|
-| **FP8** | 50% | 30%+ | >99% | ⭐ Hopper GPU首选 |
+| **FP8** | 50% | 30%+ | >99% | ⭐ Hopper GPU 首选 |
 | **INT8** | 50% | 20% | 98% | 通用加速 |
 | **AWQ 4-bit** | 75% | 25% | 95% | 保精度压缩 |
 | **GPTQ 4-bit** | 75% | 25% | 90% | 极致压缩 |
-| **GGUF Q5_K_M** | 68% | - | 98% | CPU推理 |
+| **GGUF Q5_K_M** | 68% | - | 98% | CPU 推理 |
 
-**FP8配置示例 (vLLM)**:
+**FP8 配置示例 (vLLM)**:
 ```python
 from vllm import LLM, SamplingParams
 
@@ -480,7 +480,7 @@ llm = LLM(
 )
 ```
 
-**FP8配置示例 (TensorRT-LLM)**:
+**FP8 配置示例 (TensorRT-LLM)**:
 ```python
 # build时指定FP8
 python build.py --gpt_model_config=llama-3.1-70b \
@@ -489,12 +489,12 @@ python build.py --gpt_model_config=llama-3.1-70b \
     --use_fp8_context_fmha
 ```
 
-### 6.3 FlashAttention-3优化
+### 6.3 FlashAttention-3 优化
 
-**FlashAttention-3核心改进**:
-- **异步Tensor Core + TMA**: 重叠计算和数据传输
-- **交错matmul和softmax**: 提高流水线效率
-- **块量化FP8**: 支持FP8精度训练推理
+**FlashAttention-3 核心改进**:
+- **异步 Tensor Core + TMA**: 重叠计算和数据传输
+- **交错 matmul 和 softmax**: 提高流水线效率
+- **块量化 FP8**: 支持 FP8 精度训练推理
 
 **性能数据** (Hopper GPU):
 | 模式 | 计算能力 | 利用率 |
@@ -503,11 +503,11 @@ python build.py --gpt_model_config=llama-3.1-70b \
 | **FP8** | **1.3 PFLOPS** | **87%** |
 
 **内存节省**: 序列长度线性增长而非平方增长
-- 2K长度: 10x节省
-- 4K长度: 20x节省
-- 8K长度: 40x节省
+- 2K 长度: 10x 节省
+- 4K 长度: 20x 节省
+- 8K 长度: 40x 节省
 
-**启用FlashAttention-3**:
+**启用 FlashAttention-3**:
 ```python
 # vLLM自动检测Hopper GPU并启用FA3
 # 手动启用:
@@ -517,10 +517,10 @@ llm = LLM(
 )
 ```
 
-### 6.4 AI Gateway架构设计
+### 6.4 AI Gateway 架构设计
 
-**什么是AI Gateway**:
-AI Gateway是位于应用和LLM之间的控制层，负责请求路由、成本优化、安全治理和可观测性。
+**什么是 AI Gateway**:
+AI Gateway 是位于应用和 LLM 之间的控制层，负责请求路由、成本优化、安全治理和可观测性。
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
@@ -559,38 +559,38 @@ AI Gateway是位于应用和LLM之间的控制层，负责请求路由、成本�
 └─────────────────────────────────────────────────────────────────┘
 ```
 
-**AI Gateway核心功能**:
+**AI Gateway 核心功能**:
 
 1. **智能路由 (Intelligent Routing)**:
-   - 基于查询复杂度选择模型
-   - 成本优化路由（简单查询→便宜模型）
-   - 地理位置路由（选择最近的数据中心）
+ - 基于查询复杂度选择模型
+ - 成本优化路由（简单查询→便宜模型）
+ - 地理位置路由（选择最近的数据中心）
 
 2. **语义缓存 (Semantic Caching)**:
-   - 缓存相似语义的响应
-   - 典型节省: 40-50%成本
-   - 延迟降低: 缓存命中<10ms
+ - 缓存相似语义的响应
+ - 典型节省: 40-50% 成本
+ - 延迟降低: 缓存命中<10ms
 
-3. **Fallback机制**:
-   - 自动故障转移
-   - 多供应商备份
-   - 零停机切换
+3. **Fallback 机制**:
+ - 自动故障转移
+ - 多供应商备份
+ - 零停机切换
 
 4. **治理与安全**:
-   - 内容过滤和审核
-   - PII检测和脱敏
-   - 提示词注入防护
+ - 内容过滤和审核
+ - PII 检测和脱敏
+ - 提示词注入防护
 
-**开源AI Gateway方案 (2026)**:
+**开源 AI Gateway 方案 (2026)**:
 
 | 方案 | 特点 | 适用场景 |
 |------|------|----------|
 | **LiteLLM Proxy** | 100+模型统一接口，开源 | 多供应商管理 |
-| **Bifrost** | Rust编写，11μs延迟 | 高性能网关 |
+| **Bifrost** | Rust 编写，11μs 延迟 | 高性能网关 |
 | **Portkey** | 企业级观测性 | 生产环境 |
-| **Kong AI Gateway** | API网关集成 | 已有Kong基础设施 |
+| **Kong AI Gateway** | API 网关集成 | 已有 Kong 基础设施 |
 
-**LiteLLM配置示例**:
+**LiteLLM 配置示例**:
 ```yaml
 # litellm_config.yaml
 model_list:
@@ -613,7 +613,7 @@ cache:
   port: 6379
 ```
 
-### 6.5 LLM路由和成本优化策略
+### 6.5 LLM 路由和成本优化策略
 
 **三层成本优化架构**:
 
@@ -752,38 +752,38 @@ L = α × L_hard(y_true, y_student) + (1-α) × L_soft(y_teacher, y_student)
 
 #### 已成熟的技术 (Production Ready)
 
-- **FP8精度推理**: H100/H200原生支持，成为新默认标准
-- **FlashAttention-3**: Hopper GPU优化，1.3 PFLOPS计算能力
+- **FP8 精度推理**: H100/H200 原生支持，成为新默认标准
+- **FlashAttention-3**: Hopper GPU 优化，1.3 PFLOPS 计算能力
 - **SGLang RadixAttention**: 前缀缓存自动管理，多轮对话优化
 - **AI Gateway**: 智能路由、语义缓存成为生产标配
-- **Continuous Batching**: vLLM/TGI/SGLang全面支持
+- **Continuous Batching**: vLLM/TGI/SGLang 全面支持
 
 #### 快速发展中 (Early Adoption)
 
 - **Prefill-Decode Disaggregation**: 分离预填充和解码阶段，独立扩缩容
-- **投机解码优化**: EAGLE3达到2-3x加速比
+- **投机解码优化**: EAGLE3 达到 2-3x 加速比
 - **Multi-LoRA Serving**: 单个实例服务数千微调模型
-- **结构化输出原生支持**: JSON Schema约束解码
+- **结构化输出原生支持**: JSON Schema 约束解码
 
 #### 研究前沿 (Research)
 
-- **百万Token上下文**: 长文档处理优化
-- **MoE模型推理**: 专家并行和负载均衡
+- **百万 Token 上下文**: 长文档处理优化
+- **MoE 模型推理**: 专家并行和负载均衡
 - **动态量化**: 运行时精度调整
-- **边缘LLM**: 手机/IoT设备本地大模型
+- **边缘 LLM**: 手机/IoT 设备本地大模型
 
 #### 硬件趋势
 
-| 硬件 | 显存带宽 | FP8性能 | 适用场景 |
+| 硬件 | 显存带宽 | FP8 性能 | 适用场景 |
 |------|---------|---------|----------|
 | **H200** | 4.8 TB/s | 1.4x H100 | 高吞吐量首选 |
 | **H100** | 3.35 TB/s | 1.3 PFLOPS | 主流生产环境 |
 | **L40S** | 0.86 TB/s | 支持 | 性价比选择 |
 | **B200** (2024) | 8 TB/s | 2.2x H100 | 下一代旗舰 |
 
-**H200性能提升**:
-- 内存带宽比H100高1.4x
-- 推理吞吐量提升40-90%
+**H200 性能提升**:
+- 内存带宽比 H100 高 1.4x
+- 推理吞吐量提升 40-90%
 - 价格已正常化（$3-4/小时）
 
 ## 7. 与其他主题的关联 (Connections)
@@ -866,25 +866,25 @@ L = α × L_hard(y_true, y_student) + (1-α) × L_soft(y_teacher, y_student)
 
 **推理引擎**:
 - [vLLM](https://github.com/vllm-project/vllm) - PagedAttention 推理引擎，行业标准
-- [SGLang](https://github.com/sgl-project/sglang) - 2026新性能领导者，RadixAttention
-- [Text Generation Inference (TGI)](https://github.com/huggingface/text-generation-inference) - Hugging Face推理（维护模式）
-- [TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM) - NVIDIA官方LLM推理加速
-- [LMDeploy](https://github.com/InternLM/lmdeploy) -  TurboMind推理引擎
+- [SGLang](https://github.com/sgl-project/sglang) - 2026 新性能领导者，RadixAttention
+- [Text Generation Inference (TGI)](https://github.com/huggingface/text-generation-inference) - Hugging Face 推理（维护模式）
+- [TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM) - NVIDIA 官方 LLM 推理加速
+- [LMDeploy](https://github.com/InternLM/lmdeploy) - TurboMind 推理引擎
 
 **本地/边缘部署**:
-- [llama.cpp](https://github.com/ggerganov/llama.cpp) - CPU推理引擎，GGUF格式
+- [llama.cpp](https://github.com/ggerganov/llama.cpp) - CPU 推理引擎，GGUF 格式
 - [Ollama](https://github.com/ollama/ollama) - 本地模型部署工具
 
 **量化与优化**:
 - [bitsandbytes](https://github.com/TimDettmers/bitsandbytes) - 量化训练与推理库
-- [AutoAWQ](https://github.com/casper-hansen/AutoAWQ) - AWQ量化自动化
-- [GPTQ-for-LLaMa](https://github.com/qwopqwop200/GPTQ-for-LLaMa) - GPTQ量化实现
+- [AutoAWQ](https://github.com/casper-hansen/AutoAWQ) - AWQ 量化自动化
+- [GPTQ-for-LLaMa](https://github.com/qwopqwop200/GPTQ-for-LLaMa) - GPTQ 量化实现
 
 **AI Gateway**:
 - [LiteLLM Proxy](https://github.com/BerriAI/litellm) - 多供应商统一接口
-- [Bifrost](https://github.com/bifrost) - 高性能Rust网关
-- [Portkey](https://portkey.ai/) - 企业级AI网关
-- [Kong AI Gateway](https://konghq.com/products/kong-ai-gateway) - API网关集成
+- [Bifrost](https://github.com/bifrost) - 高性能 Rust 网关
+- [Portkey](https://portkey.ai/) - 企业级 AI 网关
+- [Kong AI Gateway](https://konghq.com/products/kong-ai-gateway) - API 网关集成
 
 ### 教程与文档
 

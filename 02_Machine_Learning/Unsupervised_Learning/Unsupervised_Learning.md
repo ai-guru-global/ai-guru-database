@@ -21,10 +21,10 @@ updated: '2026-05-31'
 - **探索性分析**: 发现数据中的未知模式
 - **特征学习**: 学习更好的数据表示用于下游任务
 - **核心任务**:
-  - **聚类 (Clustering)**: 将相似样本分组
-  - **降维 (Dimensionality Reduction)**: 压缩数据维度保留关键信息
-  - **异常检测 (Anomaly Detection)**: 识别异常样本
-  - **密度估计 (Density Estimation)**: 建模数据分布
+ - **聚类 (Clustering)**: 将相似样本分组
+ - **降维 (Dimensionality Reduction)**: 压缩数据维度保留关键信息
+ - **异常检测 (Anomaly Detection)**: 识别异常样本
+ - **密度估计 (Density Estimation)**: 建模数据分布
 
 ### 1.2 应用价值
 
@@ -77,8 +77,8 @@ $$WCSS = \sum_{k=1}^{K} \sum_{x_i \in C_k} ||x_i - \mu_k||^2$$
 **K 值选择方法**:
 
 1. **肘部法则 (Elbow Method)**:
-   - 绘制 K vs WCSS 曲线
-   - 选择曲线"拐点"处的 K 值
+ - 绘制 K vs WCSS 曲线
+ - 选择曲线"拐点"处的 K 值
    ```
    WCSS
      ^
@@ -90,13 +90,13 @@ $$WCSS = \sum_{k=1}^{K} \sum_{x_i \in C_k} ||x_i - \mu_k||^2$$
    ```
 
 2. **轮廓系数 (Silhouette Score)**:
-   $$s(i) = \frac{b(i) - a(i)}{\max\{a(i), b(i)\}}$$
-   - $a(i)$: 样本 $i$ 与同簇其他样本的平均距离
-   - $b(i)$: 样本 $i$ 与最近异簇样本的平均距离
-   - 取值范围 $[-1, 1]$,越接近 1 越好
+ $$s(i) = \frac{b(i) - a(i)}{\max\{a(i), b(i)\}}$$
+ - $a(i)$: 样本 $i$ 与同簇其他样本的平均距离
+ - $b(i)$: 样本 $i$ 与最近异簇样本的平均距离
+ - 取值范围 $[-1, 1]$,越接近 1 越好
 
 3. **Gap Statistic**:
-   比较真实数据的 WCSS 与随机数据的期望 WCSS
+ 比较真实数据的 WCSS 与随机数据的期望 WCSS
 
 **K-Means 优势与局限**:
 
@@ -151,14 +151,14 @@ $$WCSS = \sum_{k=1}^{K} \sum_{x_i \in C_k} ||x_i - \mu_k||^2$$
 **DBSCAN 参数选择**:
 
 1. **MinPts 选择**:
-   - 经验规则: $MinPts \geq D + 1$ (D 是数据维度)
-   - 低维数据: MinPts = 4
-   - 高维数据: MinPts 适当增大
+ - 经验规则: $MinPts \geq D + 1$ (D 是数据维度)
+ - 低维数据: MinPts = 4
+ - 高维数据: MinPts 适当增大
 
 2. **ε 选择** (K-距离图法):
-   - 计算每个点到第 K 个最近邻的距离
-   - 按距离排序绘制曲线
-   - 选择曲线"肘部"作为 ε
+ - 计算每个点到第 K 个最近邻的距离
+ - 按距离排序绘制曲线
+ - 选择曲线"肘部"作为 ε
    ```python
    from sklearn.neighbors import NearestNeighbors
    neighbors = NearestNeighbors(n_neighbors=MinPts)
@@ -290,8 +290,8 @@ $$C = \sum_i KL(P_i || Q_i) = \sum_i \sum_j p_{ij} \log \frac{p_{ij}}{q_{ij}}$$
 
 **关键参数**:
 - **Perplexity**: 控制关注的邻居数量 (推荐 5-50)
-  - 小 perplexity: 关注局部结构
-  - 大 perplexity: 关注全局结构
+ - 小 perplexity: 关注局部结构
+ - 大 perplexity: 关注全局结构
 - **学习率**: 通常 100-1000
 - **迭代次数**: 至少 1000 次
 
@@ -656,7 +656,7 @@ compressed_img = compressed.reshape(h, w, c)
 **任务**: 从基因表达矩阵中发现细胞类型
 **数据**: 单细胞 RNA 测序 (scRNA-seq)
 **流程**:
-1. **降维**: PCA (500维 → 50维) → UMAP (50维 → 2维)
+1. **降维**: PCA (500 维 → 50 维) → UMAP (50 维 → 2 维)
 2. **聚类**: Leiden / Louvain 算法识别细胞群
 3. **标记**: 寻找每个群的差异表达基因
 
@@ -719,33 +719,33 @@ compressed_img = compressed.reshape(h, w, c)
 
 **方法**:
 1. **共识聚类 (Consensus Clustering)**:
-   - 运行多次聚类 (不同参数/随机种子)
-   - 构建共识矩阵: $M_{ij}$ = 样本 $i,j$ 被分到同一簇的频率
-   - 对 $M$ 再次聚类
+ - 运行多次聚类 (不同参数/随机种子)
+ - 构建共识矩阵: $M_{ij}$ = 样本 $i,j$ 被分到同一簇的频率
+ - 对 $M$ 再次聚类
 
 2. **证据累积 (Evidence Accumulation)**:
-   - 将多个聚类结果编码为二值向量
-   - 计算样本间的汉明距离
-   - 基于距离矩阵聚类
+ - 将多个聚类结果编码为二值向量
+ - 计算样本间的汉明距离
+ - 基于距离矩阵聚类
 
 ### 6.4 常见陷阱
 
 1. **不做数据归一化**:
-   - 问题: 数量级大的特征主导距离计算
-   - 示例: 年龄 (0-100) vs 收入 (0-1000000)
-   - 解决: StandardScaler / MinMaxScaler
+ - 问题: 数量级大的特征主导距离计算
+ - 示例: 年龄 (0-100) vs 收入 (0-1000000)
+ - 解决: StandardScaler / MinMaxScaler
 
 2. **忽略评估多样性**:
-   - 问题: 仅用单一指标 (如 WCSS) 可能误导
-   - 解决: 同时参考 Silhouette / Calinski-Harabasz / 领域知识
+ - 问题: 仅用单一指标 (如 WCSS) 可能误导
+ - 解决: 同时参考 Silhouette / Calinski-Harabasz / 领域知识
 
 3. **t-SNE 参数未调优**:
-   - 问题: 默认参数可能产生误导性可视化
-   - 解决: 尝试不同 perplexity (5, 30, 50)
+ - 问题: 默认参数可能产生误导性可视化
+ - 解决: 尝试不同 perplexity (5, 30, 50)
 
 4. **高维数据直接聚类**:
-   - 问题: 维度灾难导致距离度量失效
-   - 解决: 先降维 (PCA) 再聚类
+ - 问题: 维度灾难导致距离度量失效
+ - 解决: 先降维 (PCA) 再聚类
 
 ## 7. 与其他主题的关联 (Connections)
 
@@ -771,23 +771,23 @@ compressed_img = compressed.reshape(h, w, c)
 **答案**: 四种主流方法
 
 1. **肘部法则 (Elbow Method)**:
-   - 绘制 K vs WCSS 曲线
-   - 选择曲线急剧下降后趋于平缓的"拐点"
-   - **局限**: 拐点不总是明显
+ - 绘制 K vs WCSS 曲线
+ - 选择曲线急剧下降后趋于平缓的"拐点"
+ - **局限**: 拐点不总是明显
 
 2. **轮廓系数法 (Silhouette Method)**:
-   - 计算不同 K 值的平均轮廓系数
-   - 选择系数最大的 K
-   - **优势**: 考虑了簇的紧密度和分离度
+ - 计算不同 K 值的平均轮廓系数
+ - 选择系数最大的 K
+ - **优势**: 考虑了簇的紧密度和分离度
 
 3. **Gap Statistic**:
-   - 比较 $\log(WCSS_k)$ 与随机数据的期望
-   - $Gap(k) = \mathbb{E}[\log(WCSS_k^*)] - \log(WCSS_k)$
-   - 选择 $Gap(k)$ 最大的 K
+ - 比较 $\log(WCSS_k)$ 与随机数据的期望
+ - $Gap(k) = \mathbb{E}[\log(WCSS_k^*)] - \log(WCSS_k)$
+ - 选择 $Gap(k)$ 最大的 K
 
 4. **领域知识**:
-   - 根据业务需求预设 (如客户分为 3-5 类)
-   - 结合可解释性要求
+ - 根据业务需求预设 (如客户分为 3-5 类)
+ - 结合可解释性要求
 
 **代码示例**:
 ```python
@@ -889,8 +889,8 @@ X_pca_manual = pca.fit_transform(X_centered)
 **是否需要标准化?**
 - **中心化**: 总是需要 (PCA 前提)
 - **标准化 (除以标准差)**: 
-  - 特征量纲不同 → 需要 (如身高 cm vs 体重 kg)
-  - 特征量纲相同 → 不需要 (如像素值都是 0-255)
+ - 特征量纲不同 → 需要 (如身高 cm vs 体重 kg)
+ - 特征量纲相同 → 不需要 (如像素值都是 0-255)
 
 ### Q5: GMM 和 K-Means 有什么本质区别?
 

@@ -4,6 +4,8 @@ description: 跨域合成：AI 评测基准（Benchmark）与评测方法论（E
 date: 2026-05-31
 tags: [benchmark, evaluation, llm-evaluation, safety-evaluation, agent-evaluation, multimodal-evaluation, metrics]
 category: synthesis
+created: 2026-06-12
+summary: ""
 ---
 
 # 评测基准 × 评测方法论：从分数到可信评估

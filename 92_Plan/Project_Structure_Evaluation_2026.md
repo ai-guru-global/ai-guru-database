@@ -553,8 +553,8 @@ ROADMAP.md
 
 1. **主入口**：`01_Fundamentals/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md`（全面介绍）
 2. **其他章节**只写领域特定扩展：
-   - `11_RAG_Systems/Spring_AI_RAG_Deep_Dive.md` → 只写 RAG 相关，基础部分引用主入口
-   - `14_AI_Gateway/Spring_AI_Gateway_Security.md` → 只写安全相关，基础部分引用主入口
+ - `11_RAG_Systems/Spring_AI_RAG_Deep_Dive.md` → 只写 RAG 相关，基础部分引用主入口
+ - `14_AI_Gateway/Spring_AI_Gateway_Security.md` → 只写安全相关，基础部分引用主入口
 3. **在每个相关文件顶部添加**：
    ```markdown
    > 📚 **Spring AI 基础**: 如果你还不熟悉 Spring AI，请先阅读 [Spring AI 深度解析](../01_Fundamentals/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md)。

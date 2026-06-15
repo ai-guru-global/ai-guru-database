@@ -831,11 +831,11 @@ description: Process CSV files.
 
 # After
 description: >
-  Analyze CSV and tabular data files — compute summary statistics,
-  add derived columns, generate charts, and clean messy data. Use this
-  skill when the user has a CSV, TSV, or Excel file and wants to
-  explore, transform, or visualize the data, even if they don't
-  explicitly mention "CSV" or "analysis."
+ Analyze CSV and tabular data files — compute summary statistics,
+ add derived columns, generate charts, and clean messy data. Use this
+ skill when the user has a CSV, TSV, or Excel file and wants to
+ explore, transform, or visualize the data, even if they don't
+ explicitly mention "CSV" or "analysis."
 ```
 
 ---
@@ -970,16 +970,16 @@ description: Use this skill when: the user asks about PDFs
 
 ```
 ┌─────────────────────────────────────────────────┐
-│  Agent Skills 生态快照                           │
-│                                                   │
-│  📦 总 Skills 数量：451+                          │
-│  🏢 官方 Skills：307 | 🌍 社区 Skills：144       │
-│  👥 开发团队：38 家                               │
-│  📂 分类：11 个类别                               │
-│  🔌 兼容 Agent 产品：30+                          │
-│  ⭐ 最大仓库：vercel-labs/agent-skills (24.9k★)  │
-│  ⭐ 精选合集：VoltAgent/awesome-agent-skills      │
-│            (15.1k★, 1060+ skills)                │
+│ Agent Skills 生态快照 │
+│ │
+│ 📦 总 Skills 数量：451+ │
+│ 🏢 官方 Skills：307 | 🌍 社区 Skills：144 │
+│ 👥 开发团队：38 家 │
+│ 📂 分类：11 个类别 │
+│ 🔌 兼容 Agent 产品：30+ │
+│ ⭐ 最大仓库：vercel-labs/agent-skills (24.9k★) │
+│ ⭐ 精选合集：VoltAgent/awesome-agent-skills │
+│ (15.1k★, 1060+ skills) │
 └─────────────────────────────────────────────────┘
 ```
 
@@ -1283,7 +1283,7 @@ Claim URL:   https://vercel.com/claim-deployment?code=...
 
 ```
 传统 Skills（代码实现）
-    ↕ 可以互相补充
+ ↕ 可以互相补充
 Agent Skills（开放标准）
 ```
 

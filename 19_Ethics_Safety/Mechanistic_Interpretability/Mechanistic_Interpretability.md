@@ -9,7 +9,7 @@ updated: '2026-05-31'
 
 # 机械可解释性 (Mechanistic Interpretability) 2026
 
-> **一句话理解**: 机械可解释性是AI安全的"逆向工程"——通过理解神经网络内部的具体计算机制，回答"这个模型为什么会这样做"，而不只是"这个模型做了什么"。
+> **一句话理解**: 机械可解释性是 AI 安全的"逆向工程"——通过理解神经网络内部的具体计算机制，回答"这个模型为什么会这样做"，而不只是"这个模型做了什么"。
 
 ---
 
@@ -86,7 +86,7 @@ updated: '2026-05-31'
 └─────────────────────────────────────────────────────────────┘
 ```
 
-### 2.2 Attention Pattern分析
+### 2.2 Attention Pattern 分析
 
 ```python
 """Attention Pattern分析示例"""
@@ -452,6 +452,27 @@ class FeatureProbe:
         ]
 ```
 
+### 4.3 机械可解释性方法对比
+
+| **方法** | **原理** | **适用模型规模** | **计算开销** | **可解释性深度** | **典型应用场景** |
+|---|---|---|---|---|---|
+| Attention Pattern 分析 | 可视化注意力权重分布 | 任意规模 | 低 | 浅层 | 理解信息流动 |
+| Activation Patching | 替换中间激活观察行为变化 | GPT-2 ~ 7B | 中 | 深层 | 电路发现 |
+| 线性探针 (Linear Probe) | 训练分类器检测特征方向 | 任意规模 | 低 | 中层 | 特征检测 |
+| 稀疏自编码器 (SAE) | 分解激活为稀疏可解释特征 | GPT-2 ~ 13B | 高 | 深层 | 特征字典构建 |
+| 因果追踪 (Causal Tracing) | 逐层干预确定因果路径 | GPT-2 ~ 7B | 高 | 最深层 | 完整电路解析 |
+| Logit Lens | 中间层投影到词汇空间 | 任意规模 | 低 | 中层 | 层间信息追踪 |
+
+### 4.4 电路发现方法评估基准
+
+| **电路发现方法** | **精确率** | **召回率** | **F1 分数** | **发现耗时 (小时)** | **支持模型** |
+|---|---:|---:|---:|---:|---|
+| 手动 Activation Patching | 92% | 65% | 76% | 40-80 | GPT-2, Pythia |
+| ACDC (自动电路发现) | 85% | 78% | 81% | 4-8 | GPT-2 ~ 2.8B |
+| Path Patching | 88% | 72% | 79% | 12-24 | GPT-2 ~ 6.7B |
+| Edge Pruning | 80% | 82% | 81% | 6-12 | GPT-2 ~ 7B |
+| Subnetwork Probing | 83% | 75% | 79% | 8-16 | GPT-2 ~ 2.8B |
+
 ---
 
 ## 5. 机械可解释性的应用
@@ -570,13 +591,27 @@ class CircuitIntervention:
 
 | 工具 | 用途 | 链接 |
 |------|------|------|
-| **TransformerLens** | Transformer机械可解释性的主要工具库 | GitHub |
+| **TransformerLens** | Transformer 机械可解释性的主要工具库 | GitHub |
 | **NeuroCode** | 神经网络分析框架 | GitHub |
 | ** Circuits** | 电路发现和可视化 | GitHub |
 | **Sparse Autoencoders** | 特征发现 | GitHub |
 | **Erasure** | 因果干预实验 | GitHub |
 
-### 6.2 TransformerLens示例
+**工具详细功能对比**:
+
+| **特性** | **TransformerLens** | **Baukit** | **NeuroScope** | **SAE (Sparse Autoencoders)** | **Circuit Vis** |
+|---|---|---|---|---|---|
+| **开发团队** | Neel Nanda | David Bau | Anthropic | Anthropic | Redwood Research |
+| **主要功能** | Hook 机制, 缓存, 干预 | 模型编辑, 追踪 | 特征可视化 | 特征分解 | 电路可视化 |
+| **支持模型** | GPT-2, Pythia, LLaMA | GPT-2, BERT, ViT | GPT-2, GPT-4 (有限) | GPT-2, Claude | HookedTransformer |
+| **Hook 系统** | 完整 (200+ hooks) | 部分支持 | 有限 | 无 | 依赖 TL |
+| **GPU 支持** | CUDA, MPS | CUDA | CUDA | CUDA | CUDA, MPS |
+| **学习曲线** | 中等 | 较高 | 低 | 中等 | 低 |
+| **文档质量** | 优秀 | 一般 | 优秀 | 良好 | 一般 |
+| **社区规模** | 大 | 中 | 中 | 大 | 小 |
+| **最佳用途** | 通用 mech-interp 研究 | 模型编辑实验 | 特征探索 | 大规模特征发现 | 电路展示 |
+
+### 6.2 TransformerLens 示例
 
 ```python
 """使用TransformerLens进行机械可解释性研究"""
@@ -645,7 +680,7 @@ for layer in range(model.cfg.n_layers):
 方向: 形式化定义、人类评估标准
 ```
 
-### 7.2 2026-2030年发展方向
+### 7.2 2026-2030 年发展方向
 
 ```
 发展方向:
@@ -679,6 +714,31 @@ for layer in range(model.cfg.n_layers):
 ### 工具
 - [TransformerLens](https://github.com/neelnanda-io/TransformerLens)
 - [Easy-Transformer](https://github.com/neelnanda-io/Easy-Transformer)
+
+---
+
+## 可解释性方法全景对比
+
+### 方法对比表
+
+| **方法** | **分析层级** | **计算成本** | **可解释性** | **适用模型** | **代表工具** |
+|----------|-------------|-------------|-------------|-------------|-------------|
+| **Activation Patching** | 单个组件 | 中 | 高 (因果) | Transformer | TransformerLens |
+| **Logit Lens** | 残差流 | 低 | 中 | Decoder-only | TransformerLens |
+| **Attention Pattern Viz** | 注意力头 | 低 | 中 | 所有 | BertViz |
+| **Probing Classifiers** | 表征层 | 中 | 中 | 所有 | 自定义 |
+| **Sparse Autoencoder** | 特征级 | 高 | 极高 | 大模型 | Anthropic SAE |
+| **Circuit Discovery** | 子网络 | 极高 | 极高 | 小-中模型 | ACDC, Tracr |
+
+### 工具生态对比
+
+| **工具** | **支持模型** | **核心功能** | **学习曲线** | **社区活跃度** |
+|----------|-------------|-------------|-------------|---------------|
+| **TransformerLens** | GPT-2/LLaMA/Pythia | Activation patching, logit lens | 中 | 极高 (Anthropic) |
+| **Baukit** | GPT-2/LLaMA | 模型编辑, 因果追踪 | 高 | 中 (MIT) |
+| **BertViz** | BERT/GPT | Attention 可视化 | 低 | 中 |
+| **SAE Library** | 通用 | Sparse autoencoder | 中 | 高 (Anthropic) |
+| **ACDC** | GPT-2 | 自动电路发现 | 高 | 低 |
 
 ---
 

@@ -1322,7 +1322,7 @@ class CloudAgentSandboxTest:
 - [Benchmarking Criteria](../Benchmarking/Benchmarking_Criteria.md) - Evaluation criteria definitions
 - [Production Assessment](../Assessment/Production_Assessment.md) - Production testing protocols
 - [Agent Harness Deep Dive](../Agent_Harness_Deep_Dive.md) - Comprehensive technical deep dive
-- [Cloud Agent Evaluation](../Cloud_Agent_Evaluation/README.md) - 云产品Agent评估框架
+- [Cloud Agent Evaluation](../Cloud_Agent_Evaluation/README.md) - 云产品 Agent 评估框架
 - [Test Bank Overview](../Test_Bank/Test_Bank_Overview.md) - 350+测试题库
 - [Corpus Assessment](../Corpus_Assessment/README.md) - 语料库覆盖率评估
 

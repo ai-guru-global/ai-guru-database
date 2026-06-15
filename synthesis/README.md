@@ -2,9 +2,9 @@
 title: 跨域综合文档索引 (Cross-Domain Synthesis Index)
 category: meta
 tags: [synthesis, knowledge-graph, cross-domain]
-summary: 17 篇跨领域综合分析文档，连接不同章节的概念，发现知识间的隐藏关联。
+summary: 18 篇跨领域综合分析文档，连接不同章节的概念，发现知识间的隐藏关联。
 created: 2026-06-03
-updated: 2026-06-03
+updated: 2026-06-15
 ---
 
 # 跨域综合文档索引 (Synthesis Index)
@@ -71,6 +71,12 @@ updated: 2026-06-03
 | [career-interviews](./career-interviews.md) | 23_Interviews × 全部章节 | AI 岗位面试的知识图谱 |
 | [talks-insights](./talks-insights.md) | 21_Talks × 00_AI_Introduction | AI 领袖观点中的技术趋势提炼 |
 
+### LLM 生态对比（1 篇）
+
+| 文档 | 交叉领域 | 核心洞见 |
+|------|----------|----------|
+| [Chinese_vs_Global_LLM_Comparison](./Chinese_vs_Global_LLM_Comparison.md) | Chinese_LLM_Ecosystem × Global_LLM_Ecosystem | 12 维度全面对比中国 15 家 vs 国际 5 巨头：效率路线 vs 规模路线的收敛 |
+
 ---
 
 - [[synthesis/alignment-rlhf|价值对齐 × RLHF：从人类反馈到可扩展监督]] — #alignment × #rlhf
@@ -118,9 +124,10 @@ lifecycle: draft | review | stable
 
 ## 统计
 
-- **总数**: 17 篇综合文档
+- **总数**: 18 篇综合文档
 - **平均大小**: ~3.1 KB
-- **覆盖交叉对**: 15+ 对章节组合
+- **覆盖交叉对**: 16+ 对章节组合
+- **最大文档**: Chinese_vs_Global_LLM_Comparison（756 行，12 维度对比）
 - **最高置信度**: moe-inference-optimization（0.80）
 - **最低置信度**: career-interviews（0.65）
 

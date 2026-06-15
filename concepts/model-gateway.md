@@ -20,6 +20,7 @@ provenance:
 base_confidence: 0.88
 lifecycle: stable
 tier: core
+created: 2026-06-12
 ---
 
 # 模型网关 (Model Gateway)
@@ -145,3 +146,4 @@ tier: core
 - [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack 深度解析
 - [[concepts/llm-infrastructure]] — LLM 基础设施
 - [[concepts/model-serving]] — 模型服务
+- [[12_Architecture_Infrastructure/Alibaba_Cloud_AI_Stack_Deep_Dive|阿里云 AI Stack]] — 专有云推理平台的模型网关实现

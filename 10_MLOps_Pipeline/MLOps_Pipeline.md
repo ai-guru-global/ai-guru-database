@@ -397,17 +397,17 @@ A/B 测试架构:
 
 ## 7. LLMOps 2026 最佳实践
 
-> **一句话理解**: LLMOps是MLOps的"大模型升级版"——不仅关注模型训练和部署，更强调提示词版本控制、语义缓存、智能路由和Agent编排。
+> **一句话理解**: LLMOps 是 MLOps 的"大模型升级版"——不仅关注模型训练和部署，更强调提示词版本控制、语义缓存、智能路由和 Agent 编排。
 
 ### 7.1 MLOps vs LLMOps 对比
 
-| 维度 | 传统MLOps | LLMOps (2026) |
+| 维度 | 传统 MLOps | LLMOps (2026) |
 |------|----------|---------------|
-| **版本控制** | 代码 + 数据 + 模型 | + 提示词 + RAG文档 + Agent配置 |
+| **版本控制** | 代码 + 数据 + 模型 | + 提示词 + RAG 文档 + Agent 配置 |
 | **评估方式** | 准确率、F1、AUC | 语义评估、人工反馈、LLM-as-Judge |
 | **推理优化** | 批处理、模型量化 | 连续批处理、FP8、投机解码 |
 | **成本优化** | 模型压缩、蒸馏 | 智能路由、语义缓存、多层级优化 |
-| **监控重点** | 数据漂移、概念漂移 | Token使用、延迟、幻觉检测 |
+| **监控重点** | 数据漂移、概念漂移 | Token 使用、延迟、幻觉检测 |
 | **部署单元** | 单个模型 | 模型 + 提示 + 工具 + Agent |
 
 ### 7.2 三层缓存架构
@@ -533,7 +533,7 @@ async def cascade_route(query: str) -> Response:
 | 提示压缩 | 20-30% | 低 |
 | **组合使用** | **70-90%** | 中 |
 
-### 7.4 LLM评估与CI/CD
+### 7.4 LLM 评估与 CI/CD
 
 **语义评估流水线**:
 ```yaml
@@ -574,7 +574,7 @@ jobs:
             --max-cost-per-request 0.01
 ```
 
-**LLM-as-Judge评估**:
+**LLM-as-Judge 评估**:
 ```python
 async def llm_judge_evaluate(prediction: str, ground_truth: str) -> dict:
     """使用LLM作为评估器"""
@@ -600,7 +600,7 @@ async def llm_judge_evaluate(prediction: str, ground_truth: str) -> dict:
     }
 ```
 
-### 7.5 Prompt版本控制
+### 7.5 Prompt 版本控制
 
 ```
 prompts/
@@ -643,9 +643,9 @@ class PromptRegistry:
         }
 ```
 
-### 7.6 Agent编排与监控
+### 7.6 Agent 编排与监控
 
-**Agent编排**:
+**Agent 编排**:
 ```python
 # 多Agent工作流编排
 class AgentOrchestrator:
@@ -691,15 +691,15 @@ METRICS = {
 }
 ```
 
-### 7.7 LLMOps工具链 (2026)
+### 7.7 LLMOps 工具链 (2026)
 
 | 类别 | 工具 | 用途 |
 |------|------|------|
-| **Prompt管理** | Langfuse, Promptlayer | 版本控制、A/B测试 |
+| **Prompt 管理** | Langfuse, Promptlayer | 版本控制、A/B 测试 |
 | **评估** | TruLens, Ragas, Arize | 语义评估、幻觉检测 |
 | **路由** | LiteLLM, Bifrost | 智能路由、成本控制 |
 | **缓存** | Redis, LangCache | 语义缓存 |
-| **观测** | LangSmith, Langfuse | Agent追踪、成本监控 |
+| **观测** | LangSmith, Langfuse | Agent 追踪、成本监控 |
 | **网关** | Portkey, Kong AI | 统一入口、治理 |
 
 **参考**: [AI Infrastructure 2026](../12_Architecture_Infrastructure/AI_Infrastructure_2026.md)

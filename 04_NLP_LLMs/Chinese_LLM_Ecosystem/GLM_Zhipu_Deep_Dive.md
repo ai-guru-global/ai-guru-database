@@ -7,11 +7,11 @@ created: 2026-06-01
 updated: 2026-06-01
 ---
 
-# GLM / 智谱AI (Zhipu AI) 技术深度剖析
+# GLM / 智谱 AI (Zhipu AI) 技术深度剖析
 
 ## 一句话理解
 
-智谱AI 就像一个从清华实验室走出来的"全能选手"——从学术理论（GLM 预训练框架）出发，一路修炼到工程落地（ChatGLM 开源），最终成长为覆盖语言、视觉、代码、Agent 的全栈 AI 平台。
+智谱 AI 就像一个从清华实验室走出来的"全能选手"——从学术理论（GLM 预训练框架）出发，一路修炼到工程落地（ChatGLM 开源），最终成长为覆盖语言、视觉、代码、Agent 的全栈 AI 平台。
 
 ---
 
@@ -246,7 +246,7 @@ ChatGLM3-6B 的能力扩展:
 
 ### 4.3 GLM-4: 架构现代化
 
-GLM-4 是智谱AI 架构转型的里程碑，全面拥抱了当时业界最先进的组件：
+GLM-4 是智谱 AI 架构转型的里程碑，全面拥抱了当时业界最先进的组件：
 
 ```
 GLM-4 架构栈:
@@ -301,7 +301,7 @@ vs GeLU(x) = x · Φ(x)
 
 ### 4.4 GLM-4.5: MoE + 推理 + Agent 三位一体
 
-GLM-4.5 是智谱AI 目前的旗舰模型，代表了其技术积累的最高水平。
+GLM-4.5 是智谱 AI 目前的旗舰模型，代表了其技术积累的最高水平。
 
 > 关于 MoE 架构的通用原理，参见 [LLM 架构详解](../LLM_Architectures/LLM_Architectures.md)；关于 MoE 路由策略与 DeepSeek 对比，参见 [MoE 案例研究](../LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md)。
 
@@ -964,7 +964,7 @@ GLM-4.5 在数学推理上展现了极强的竞争力，AIME24 的 91.0 分尤�
 
 ### 10.3 与其他中国 LLM 的对比
 
-| 维度 | 智谱AI (GLM) | DeepSeek | 通义千问 (阿里) | 文心一言 (百度) |
+| 维度 | 智谱 AI (GLM) | DeepSeek | 通义千问 (阿里) | 文心一言 (百度) |
 |------|-------------|----------|---------------|---------------|
 | 学术背景 | 清华 KEG | 量化私募 | 达摩院 | 百度研究院 |
 | 开源程度 | 高 | 高 | 中 | 低 |
@@ -1088,11 +1088,85 @@ print(response)
 
 ### 12.2 竞争格局
 
-智谱AI 在全球 LLM 竞争中已经站稳了第一梯队的位置。GLM-4.5 排名第 3 的成绩证明了中国团队在基础模型能力上的竞争力。未来的关键挑战在于：
+智谱 AI 在全球 LLM 竞争中已经站稳了第一梯队的位置。GLM-4.5 排名第 3 的成绩证明了中国团队在基础模型能力上的竞争力。未来的关键挑战在于：
 
 1. **算力限制**: 美国芯片出口管制对训练规模的影响
 2. **生态建设**: 开发者社区和应用生态的持续扩展
 3. **商业化**: 从技术领先到商业成功的转化
+
+---
+
+## GLM-4.5 API 最新规格 (2026年6月)
+
+### API 模型矩阵
+
+智谱 AI 在 2026 年提供完整的 GLM-4.5 系列 API 服务：
+
+| 模型 | 架构 | 上下文 | 最大输出 | 输入价格 | 输出价格 | 定位 |
+|------|------|--------|---------|---------|---------|------|
+| **GLM-4.5** | 355B/32B MoE | 128K | 96K | 0.8 元/百万 tokens | 2 元/百万 tokens | 旗舰模型 |
+| **GLM-4.5-Air** | 106B/12B MoE | 128K | 96K | 更低 | 更低 | 轻量版 |
+| **GLM-4.5-X** | 速度优化 | 128K | 96K | 中等 | 中等 | 极速版 |
+| **GLM-4.5-AirX** | 速度+轻量 | 128K | 96K | 低 | 低 | 极速轻量版 |
+| **GLM-4.5-Flash** | 速度优化 | 128K | 96K | **免费** | **免费** | 免费使用 |
+
+> GLM-4.5 基于 **15T tokens** 训练数据，生成速度超过 **100 tokens/sec**。
+
+### 思维模式 (Thinking Mode)
+
+GLM-4.5 支持通过 `"thinking"` 参数切换推理深度：
+
+```python
+from zhipuai import ZhipuAI
+
+client = ZhipuAI(api_key="your-api-key")
+
+# 启用思维模式
+response = client.chat.completions.create(
+    model="glm-4.5",
+    messages=[
+        {"role": "user", "content": "分析 Transformer 注意力机制的计算复杂度"}
+    ],
+    extra_body={
+        "thinking": {"type": "enabled"}
+    }
+)
+
+# 关闭思维模式，快速响应
+response_fast = client.chat.completions.create(
+    model="glm-4.5",
+    messages=[
+        {"role": "user", "content": "你好"}
+    ],
+    extra_body={
+        "thinking": {"type": "disabled"}
+    }
+)
+```
+
+### 高级功能
+
+| 功能 | 说明 |
+|------|------|
+| **Tool Calling (工具调用)** | 支持 Function Calling，多工具并行 |
+| **JSON 结构化输出** | 强制 JSON Schema 格式输出 |
+| **对话记忆缓存** | Conversation memory caching，减少重复计算 |
+| **MCP 协议支持** | Model Context Protocol 原生集成 |
+
+### 编程 Agent 集成
+
+GLM-4.5 已与主流编程 Agent 工具深度集成：
+
+| 编程工具 | 集成状态 | 说明 |
+|---------|---------|------|
+| **Claude Code** | 已集成 | 通过 MCP 协议连接 GLM-4.5 |
+| **Roo Code** | 已集成 | VS Code 插件直接调用 GLM-4.5 API |
+| **Cursor** | 兼容 | OpenAI-compatible API 格式 |
+| **CodeGeeX** | 原生支持 | 智谱自有编程助手 |
+
+### 模型退役通知
+
+> **注意**: GLM-4.5 和 GLM-4.5-X 模型即将在未来版本更新中被替代。建议开发者关注智谱 AI 官方公告，及时规划迁移方案。
 
 ---
 
@@ -1104,4 +1178,21 @@ print(response)
 
 ---
 
+
+
+## 信息来源
+
+### 官方来源
+- 智谱 AI 官网: https://www.zhipuai.cn
+- 智谱开放平台 BigModel: https://open.bigmodel.cn
+- THUDM GitHub: https://github.com/THUDM
+- ChatGLM 技术报告: arXiv:2406.12793
+- GLM-4 技术报告: arXiv:2406.12793
+
+### Wiki 内部参考
+- [[04_NLP_LLMs/Chinese_LLM_Ecosystem/README]] — 中国大模型生态全景
+- [[04_NLP_LLMs/Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]] — 全厂商对比矩阵
+- [[04_NLP_LLMs/Chinese_LLM_Ecosystem/Chinese_LLM_Training_Inference_Platforms]] — 训推平台实战
+
+---
 *Last updated: 2026-06-01*

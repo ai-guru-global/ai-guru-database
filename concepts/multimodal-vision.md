@@ -18,6 +18,7 @@ provenance:
   extracted: '0.80'
   inferred: '0.15'
   ambiguous: '0.05'
+created: 2026-06-12
 ---
 
 # 多模态视觉

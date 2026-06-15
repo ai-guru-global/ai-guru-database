@@ -7,9 +7,9 @@ created: '2026-05-31'
 updated: '2026-05-31'
 ---
 
-# 具身智能 (Embodied AI) - 2026年完整指南
+# 具身智能 (Embodied AI) - 2026 年完整指南
 
-> **一句话理解**: 具身智能就像给AI装上"身体"——它不再是只会在屏幕上聊天的聊天机器人，而是能感知物理世界、自主行动、与环境实时交互的智能体。它是AI从"数字大脑"进化到"物理存在"的必然路径。
+> **一句话理解**: 具身智能就像给 AI 装上"身体"——它不再是只会在屏幕上聊天的聊天机器人，而是能感知物理世界、自主行动、与环境实时交互的智能体。它是 AI 从"数字大脑"进化到"物理存在"的必然路径。
 
 ---
 
@@ -75,19 +75,19 @@ updated: '2026-05-31'
 
 **多模态传感器融合**:
 
-| 传感器类型 | 功能 | 2026年技术趋势 |
+| 传感器类型 | 功能 | 2026 年技术趋势 |
 |-----------|------|---------------|
-| **RGB摄像头** | 视觉识别、物体检测 | 高分辨率+低延迟，支持实时VLA模型 |
-| **LiDAR** | 3D环境建模、避障 | 固态LiDAR成本下降，人形机器人标配 |
+| **RGB 摄像头** | 视觉识别、物体检测 | 高分辨率+低延迟，支持实时 VLA 模型 |
+| **LiDAR** | 3D 环境建模、避障 | 固态 LiDAR 成本下降，人形机器人标配 |
 | **触觉传感器** | 抓取力反馈、材质感知 | 高分辨率电子皮肤 (Paxini, GelSight) |
-| **IMU** | 姿态估计、平衡控制 | MEMS传感器精度提升10倍 |
-| **力/力矩传感器** | 精细操作控制 | 6轴力传感器集成到机械臂 |
+| **IMU** | 姿态估计、平衡控制 | MEMS 传感器精度提升 10 倍 |
+| **力/力矩传感器** | 精细操作控制 | 6 轴力传感器集成到机械臂 |
 
 #### 认知层 (Cognition)
 
 **机器人基础模型 (Robot Foundation Models)**:
 
-2026年突破性技术——将LLM/VLM能力迁移到机器人控制：
+2026 年突破性技术——将 LLM/VLM 能力迁移到机器人控制：
 
 ```
 传统机器人控制:
@@ -101,14 +101,14 @@ updated: '2026-05-31'
    (一个模型处理多种任务，零样本泛化)
 ```
 
-**主要VLA模型对比**:
+**主要 VLA 模型对比**:
 
 | 模型 | 发布机构 | 架构 | 特点 |
 |------|----------|------|------|
 | **RT-2** | Google DeepMind | VLA | 视觉-语言-动作端到端，网页数据预训练 |
 | **π0 (Pi Zero)** | Physical Intelligence | VLA | 通用操作，流匹配(action chunking) |
-| **GR00T** | NVIDIA | VLA + 仿真 | 人形机器人专用，支持Isaac仿真训练 |
-| **Gemini Robotics** | Google | 原生多模态 | Gemini 2.0基础，支持实时交互 |
+| **GR00T** | NVIDIA | VLA + 仿真 | 人形机器人专用，支持 Isaac 仿真训练 |
+| **Gemini Robotics** | Google | 原生多模态 | Gemini 2.0 基础，支持实时交互 |
 
 #### 行动层 (Action)
 
@@ -133,7 +133,7 @@ updated: '2026-05-31'
 
 **核心挑战**: 仿真中训练的模型往往在真实世界中失败（"仿真-现实鸿沟"）
 
-**2026年主流解决方案**:
+**2026 年主流解决方案**:
 
 | 技术 | 原理 | 效果 |
 |------|------|------|
@@ -142,7 +142,7 @@ updated: '2026-05-31'
 | **System Identification** | 识别真实机器人动力学参数 | 仿真更接近现实 |
 | **Sim-to-Real Adaptation** | 在真实数据上微调仿真模型 | 弥补剩余差距 |
 
-**NVIDIA Isaac Lab工作流**:
+**NVIDIA Isaac Lab 工作流**:
 
 ```
 Isaac Sim仿真
@@ -239,7 +239,7 @@ def collect_teleoperation_data():
 - 优点：简单、高效
 - 缺点：对分布外情况敏感
 
-**扩散策略 (Diffusion Policy)** - 2026年主流:
+**扩散策略 (Diffusion Policy)** - 2026 年主流:
 - 将动作生成建模为去噪过程
 - 支持多模态动作分布
 - 更平滑、更鲁棒
@@ -250,7 +250,7 @@ def collect_teleoperation_data():
 - 真实机器人训练太慢且危险
 - 解决方案：**仿真预训练 + 真实微调**
 
-**RL算法选择**:
+**RL 算法选择**:
 
 | 算法 | 适用场景 | 特点 |
 |------|----------|------|
@@ -260,7 +260,7 @@ def collect_teleoperation_data():
 
 ### 4.3 触觉感知技术
 
-**2026年触觉传感器技术**:
+**2026 年触觉传感器技术**:
 
 | 技术路线 | 代表厂商 | 分辨率 | 应用 |
 |----------|----------|--------|------|
@@ -320,7 +320,7 @@ def collect_teleoperation_data():
 
 ---
 
-## 6. 代码实战：基于Isaac Gym的机器人仿真
+## 6. 代码实战：基于 Isaac Gym 的机器人仿真
 
 ### 6.1 环境配置
 
@@ -634,11 +634,11 @@ class WalkingController:
 ## 8. 参考资源
 
 ### 开源项目
-- [NVIDIA Isaac Gym](https://developer.nvidia.com/isaac-gym) - GPU加速机器人仿真
+- [NVIDIA Isaac Gym](https://developer.nvidia.com/isaac-gym) - GPU 加速机器人仿真
 - [Isaac Lab](https://github.com/isaac-sim/IsaacLab) - 最新仿真与训练框架
 - [Mujoco](https://mujoco.org/) - 物理精确仿真
 - [Robosuite](https://robosuite.ai/) - 机器人学习套件
-- [LeRobot](https://github.com/huggingface/lerobot) - Hugging Face机器人学习库
+- [LeRobot](https://github.com/huggingface/lerobot) - Hugging Face 机器人学习库
 
 ### 数据集
 - [Open X-Embodiment](https://open-x-embodiment.org/) - 谷歌主导的机器人数据集

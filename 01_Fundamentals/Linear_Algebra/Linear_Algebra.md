@@ -475,16 +475,16 @@ $$
 ### 6.3 常见陷阱
 
 1. **数值稳定性**:
-   - 直接计算 $A^T A$ 会丢失精度（条件数平方）
-   - 应使用 QR 分解或 Householder 变换
+ - 直接计算 $A^T A$ 会丢失精度（条件数平方）
+ - 应使用 QR 分解或 Householder 变换
 
 2. **稀疏矩阵**:
-   - 对于 $10^6 \times 10^6$ 的稀疏矩阵，不要转为稠密格式
-   - 使用 `scipy.sparse` 模块
+ - 对于 $10^6 \times 10^6$ 的稀疏矩阵，不要转为稠密格式
+ - 使用 `scipy.sparse` 模块
 
 3. **梯度消失**:
-   - 深度网络中多个矩阵相乘，若最大奇异值 <1 会导致梯度消失
-   - 解决方法: 正交初始化、残差连接、LayerNorm
+ - 深度网络中多个矩阵相乘，若最大奇异值 <1 会导致梯度消失
+ - 解决方法: 正交初始化、残差连接、LayerNorm
 
 ---
 
@@ -495,9 +495,9 @@ $$
 - **概率论**: 协方差矩阵是期望算子，EVD 用于高斯分布的对角化
 
 ### 进阶推荐
-- **[优化理论](../../02_Machine_Learning/Optimization_Methods/Optimization_Methods.md)**: 牛顿法、拟牛顿法依赖黑塞矩阵
+- **[优化理论](../../03_Deep_Learning/Optimization/Optimization.md)**: 牛顿法、拟牛顿法依赖黑塞矩阵
 - **[神经网络核心](../../03_Deep_Learning/Neural_Network_Core/Neural_Network_Core.md)**: 理解权重矩阵的初始化策略
-- **[Transformer 架构](../../04_NLP_LLMs/Transformer/Transformer.md)**: 注意力机制的矩阵计算
+- **[Transformer 架构](../../04_NLP_LLMs/Transformer_Revolution/Transformer_Revolution.md)**: 注意力机制的矩阵计算
 - **[模型压缩](../../09_Deployment_Inference/Deployment_Inference.md)**: SVD、低秩分解在压缩中的应用
 
 ---
@@ -536,8 +536,8 @@ $$
 **A**:
 - **关键**: 结合律（但不满足交换律）
 - **示例**: $A_{10 \times 100}, B_{100 \times 5}, C_{5 \times 50}$
-  - $(AB)C$: $10 \times 100 \times 5 + 10 \times 5 \times 50 = 7500$ 次乘法
-  - $A(BC)$: $100 \times 5 \times 50 + 10 \times 100 \times 50 = 75000$ 次乘法
+ - $(AB)C$: $10 \times 100 \times 5 + 10 \times 5 \times 50 = 7500$ 次乘法
+ - $A(BC)$: $100 \times 5 \times 50 + 10 \times 100 \times 50 = 75000$ 次乘法
 - **优化**: 使用动态规划找最优括号化（时间复杂度 $O(n^3)$）
 - **实践**: 现代深度学习框架会自动优化计算图
 

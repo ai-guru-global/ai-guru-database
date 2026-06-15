@@ -682,9 +682,9 @@ flowchart TB
 
 ---
 
-## 🤝 Agent协议速成 (2026)
+## 🤝 Agent 协议速成 (2026)
 
-> **一句话**: MCP让Agent有"手"(工具)，A2A让Agent有"同事"(协作)。
+> **一句话**: MCP 让 Agent 有"手"(工具)，A2A 让 Agent 有"同事"(协作)。
 
 ### MCP vs A2A 速览
 
@@ -693,7 +693,7 @@ flowchart TB
 | **作用** | Agent ↔ 工具 | Agent ↔ Agent |
 | **发起方** | Anthropic | Google |
 | **核心概念** | Tools/Resources | Agent Card/Task |
-| **使用场景** | 调用API/数据库 | 多Agent协作 |
+| **使用场景** | 调用 API/数据库 | 多 Agent 协作 |
 
 ### 快速决策
 

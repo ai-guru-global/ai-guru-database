@@ -311,11 +311,11 @@ AdaBoost（Adaptive Boosting）通过调整样本权重来聚焦难分类的样�
 
 1. 初始化样本权重 $w_i = 1/N$
 2. 对每一轮 $t = 1, 2, ..., T$：
-   - 用加权数据训练弱学习器 $h_t$
-   - 计算加权错误率：$\epsilon_t = \sum_{i: h_t(x_i) \neq y_i} w_i$
-   - 计算学习器权重：$\alpha_t = \frac{1}{2}\ln\frac{1-\epsilon_t}{\epsilon_t}$
-   - 更新样本权重：$w_i \leftarrow w_i \cdot \exp(-\alpha_t y_i h_t(x_i))$
-   - 归一化权重
+ - 用加权数据训练弱学习器 $h_t$
+ - 计算加权错误率：$\epsilon_t = \sum_{i: h_t(x_i) \neq y_i} w_i$
+ - 计算学习器权重：$\alpha_t = \frac{1}{2}\ln\frac{1-\epsilon_t}{\epsilon_t}$
+ - 更新样本权重：$w_i \leftarrow w_i \cdot \exp(-\alpha_t y_i h_t(x_i))$
+ - 归一化权重
 3. 最终分类器：$H(x) = \text{sign}\left(\sum_{t=1}^{T}\alpha_t h_t(x)\right)$
 
 ```python
@@ -848,7 +848,7 @@ print(f"Blending 准确率: {blending_score:.4f}")
 
 | 特性 | Stacking | Blending |
 |------|---------|----------|
-| 验证方式 | K折交叉验证 | 单次验证集 |
+| 验证方式 | K 折交叉验证 | 单次验证集 |
 | 数据利用 | 更充分 | 较少（验证集不参与训练） |
 | 计算复杂度 | 更高 | 较低 |
 | 过拟合风险 | 较低 | 较高 |

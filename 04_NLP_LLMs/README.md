@@ -153,6 +153,7 @@ flowchart LR
 - [[04_NLP_LLMs/Chinese_LLM_Ecosystem/GLM_Zhipu_Deep_Dive|GLM 智谱 AI 技术全景深度解析]]
 - [[04_NLP_LLMs/Chinese_LLM_Ecosystem/Kimi_Moonshot_Deep_Dive|Kimi 月之暗面技术全景深度解析]]
 - [[04_NLP_LLMs/Chinese_LLM_Ecosystem/MiniMax_Deep_Dive|MiniMax 稀宇科技技术全景深度解析]]
+- [[04_NLP_LLMs/Chinese_LLM_Ecosystem/Xiaomi_MiMo_Deep_Dive|小米 MiMo 技术全景深度解析]]
 - [[04_NLP_LLMs/Global_LLM_Ecosystem/README|国际大模型生态全景：OpenAI / Google / Anthropic / Meta / Mistral]]
 - [[04_NLP_LLMs/Global_LLM_Ecosystem/OpenAI_Deep_Dive|OpenAI 技术深度解析：从 GPT-3 到 o3]]
 - [[04_NLP_LLMs/Global_LLM_Ecosystem/Google_Gemini_Deep_Dive|Google Gemini 技术深度解析]]
@@ -173,3 +174,6 @@ flowchart LR
 
 - [[concepts/sequence-models|Sequence Models]]
 
+## 新增页面
+
+- [[04_NLP_LLMs/Structured_Output_Guide|结构化输出指南]]

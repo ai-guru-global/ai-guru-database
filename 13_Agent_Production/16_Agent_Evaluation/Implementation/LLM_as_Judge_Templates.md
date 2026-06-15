@@ -114,30 +114,30 @@ updated: 2026-05-31
 
 ```json
 {
-  "root_cause_identification": {
-    "score": 0-10,
-    "identified_root_cause": "Agent识别的根因",
-    "actual_root_cause": "实际根因",
-    "is_correct": true/false
-  },
-  "step_completeness": {
-    "score": 0-10,
-    "missing_steps": ["缺失的步骤"],
-    "extra_steps": ["多余的步骤"]
-  },
-  "command_accuracy": {
-    "score": 0-10,
-    "correct_commands": 0,
-    "incorrect_commands": 0,
-    "command_details": "命令准确性说明"
-  },
-  "prevention_measures": {
-    "score": 0-10,
-    "has_prevention": true/false,
-    "prevention_quality": "预防措施质量评价"
-  },
-  "overall_score": 0-10,
-  "overall_reasoning": "综合评价"
+ "root_cause_identification": {
+ "score": 0-10,
+ "identified_root_cause": "Agent 识别的根因",
+ "actual_root_cause": "实际根因",
+ "is_correct": true/false
+ },
+ "step_completeness": {
+ "score": 0-10,
+ "missing_steps": ["缺失的步骤"],
+ "extra_steps": ["多余的步骤"]
+ },
+ "command_accuracy": {
+ "score": 0-10,
+ "correct_commands": 0,
+ "incorrect_commands": 0,
+ "command_details": "命令准确性说明"
+ },
+ "prevention_measures": {
+ "score": 0-10,
+ "has_prevention": true/false,
+ "prevention_quality": "预防措施质量评价"
+ },
+ "overall_score": 0-10,
+ "overall_reasoning": "综合评价"
 }
 ```
 ```
@@ -237,30 +237,30 @@ updated: 2026-05-31
 
 ```json
 {
-  "context_retention": {
-    "score": 0-10,
-    "correctly_referenced": ["正确引用的前文信息"],
-    "missed_references": ["遗漏的前文信息"],
-    "incorrect_references": ["错误引用的信息"]
-  },
-  "intent_understanding": {
-    "score": 0-10,
-    "understood_intent": "识别到的用户意图",
-    "actual_intent": "实际用户意图",
-    "implicit_needs_addressed": true/false
-  },
-  "coherence": {
-    "score": 0-10,
-    "logical_flow": "逻辑连贯性评价",
-    "contradictions": ["矛盾之处"]
-  },
-  "error_recovery": {
-    "score": 0-10,
-    "applicable": true/false,
-    "recovery_quality": "纠错恢复质量"
-  },
-  "overall_score": 0-10,
-  "overall_reasoning": "综合评价"
+ "context_retention": {
+ "score": 0-10,
+ "correctly_referenced": ["正确引用的前文信息"],
+ "missed_references": ["遗漏的前文信息"],
+ "incorrect_references": ["错误引用的信息"]
+ },
+ "intent_understanding": {
+ "score": 0-10,
+ "understood_intent": "识别到的用户意图",
+ "actual_intent": "实际用户意图",
+ "implicit_needs_addressed": true/false
+ },
+ "coherence": {
+ "score": 0-10,
+ "logical_flow": "逻辑连贯性评价",
+ "contradictions": ["矛盾之处"]
+ },
+ "error_recovery": {
+ "score": 0-10,
+ "applicable": true/false,
+ "recovery_quality": "纠错恢复质量"
+ },
+ "overall_score": 0-10,
+ "overall_reasoning": "综合评价"
 }
 ```
 ```
@@ -340,35 +340,35 @@ updated: 2026-05-31
 
 ```json
 {
-  "coverage_assessment": {
-    "content_coverage": {
-      "score": 0-10,
-      "covered_points": ["已覆盖的知识点"],
-      "missing_points": ["缺失的知识点"],
-      "extra_points": ["超出预期的知识点"]
-    },
-    "scenario_coverage": {
-      "score": 0-10,
-      "scenario_addressed": true/false,
-      "practical_applicability": "实际可操作性评价"
-    },
-    "version_timeliness": {
-      "score": 0-10,
-      "is_current": true/false,
-      "outdated_info": ["过时信息"],
-      "version_referenced": "引用的版本"
-    },
-    "language_quality": {
-      "score": 0-10,
-      "terminology_accuracy": "术语准确性",
-      "consistency": "一致性评价"
-    }
-  },
-  "corpus_gap_analysis": {
-    "critical_gaps": ["关键语料缺失"],
-    "improvement_suggestions": ["语料改进建议"]
-  },
-  "overall_score": 0-10
+ "coverage_assessment": {
+ "content_coverage": {
+ "score": 0-10,
+ "covered_points": ["已覆盖的知识点"],
+ "missing_points": ["缺失的知识点"],
+ "extra_points": ["超出预期的知识点"]
+ },
+ "scenario_coverage": {
+ "score": 0-10,
+ "scenario_addressed": true/false,
+ "practical_applicability": "实际可操作性评价"
+ },
+ "version_timeliness": {
+ "score": 0-10,
+ "is_current": true/false,
+ "outdated_info": ["过时信息"],
+ "version_referenced": "引用的版本"
+ },
+ "language_quality": {
+ "score": 0-10,
+ "terminology_accuracy": "术语准确性",
+ "consistency": "一致性评价"
+ }
+ },
+ "corpus_gap_analysis": {
+ "critical_gaps": ["关键语料缺失"],
+ "improvement_suggestions": ["语料改进建议"]
+ },
+ "overall_score": 0-10
 }
 ```
 ```

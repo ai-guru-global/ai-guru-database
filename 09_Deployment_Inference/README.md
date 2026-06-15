@@ -56,7 +56,7 @@ updated: 2026-05-31
 *Last updated: 2026-04-25*
 
 ## Related
-- [[09_Deployment_Inference/BentoML_Deep_Dive|BentoML:  AI 模型服务框架]]
+- [[09_Deployment_Inference/BentoML_Deep_Dive|BentoML: AI 模型服务框架]]
 - [[09_Deployment_Inference/LMDeploy_Deep_Dive|LMDeploy: InternLM 高性能推理引擎]]
 - [[09_Deployment_Inference/llama_cpp_Deep_Dive|llama.cpp: 纯 C/C++ 本地 LLM 推理]]
 - [[09_Deployment_Inference/LiteRT_Deep_Dive|LiteRT / TensorFlow Lite: 边缘 AI 推理]]
@@ -83,3 +83,7 @@ updated: 2026-05-31
 
 - [[concepts/model-compression|Model Compression]]
 
+## 新增页面
+
+- [[09_Deployment_Inference/LLM_Cost_Optimization|LLM 成本优化]]
+- [[09_Deployment_Inference/Prompt_Caching_Advanced|Prompt 缓存高级技术]]

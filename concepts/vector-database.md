@@ -15,6 +15,8 @@ relationships:
   type: related_to
 - target: 'concepts/llm-infrastructure'
   type: related_to
+- target: 'concepts/matryoshka-representation-learning'
+  type: related_to
 sources:
 - 11_RAG_recommendation-systems/Milvus_deep-reinforcement-learning_Dive.md
 - 11_RAG_Systems/Qdrant_Deep_Dive.md
@@ -31,7 +33,7 @@ lifecycle: draft
 lifecycle_changed: 2026-05-31
 tier: supporting
 created: 2026-05-31 00:00:00+00:00
-updated: 2026-05-31 00:00:00+00:00
+updated: 2026-06-12 00:00:00+00:00
 ---
 
 # 向量数据库
@@ -45,6 +47,16 @@ updated: 2026-05-31 00:00:00+00:00
 ### 距离度量
 
 余弦相似度（Cosine）是文本嵌入的默认选择，衡量向量方向而非长度。点积（Dot Product）适合已归一化的向量，计算更快。欧氏距离（Euclid）常用于图像特征。度量方式的选择直接影响检索质量。
+
+### 可截断嵌入：Matryoshka Representation Learning
+
+[[concepts/matryoshka-representation-learning|Matryoshka 表示学习（MRL）]] 让向量可以在任意前缀维度上保持语义有效性。向量数据库因此可以：
+
+- 用低维前缀（如 128 维）构建紧凑索引，减少内存与计算
+- 用高维前缀（如 768/1024 维）做最终精排，保证精度
+- 同一份向量存储满足不同 latency/精度预算，无需维护多模型或多索引
+
+这对超大规模 RAG 和端侧部署尤其有价值。
 
 ## 详细内容
 

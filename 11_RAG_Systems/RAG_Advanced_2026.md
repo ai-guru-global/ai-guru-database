@@ -7,9 +7,9 @@ created: '2026-05-31'
 updated: '2026-05-31'
 ---
 
-# RAG高级实践 2026年完全指南
+# RAG 高级实践 2026 年完全指南
 
-> **一句话理解**: 2026年的RAG已从"向量搜索+LLM"的简单模式进化为精密工程——混合检索、智能重排、上下文压缩让准确率从60%提升至90%+，动态RAG甚至能自主决定何时停止检索。
+> **一句话理解**: 2026 年的 RAG 已从"向量搜索+LLM"的简单模式进化为精密工程——混合检索、智能重排、上下文压缩让准确率从 60% 提升至 90%+，动态 RAG 甚至能自主决定何时停止检索。
 
 ---
 
@@ -59,7 +59,7 @@ updated: '2026-05-31'
 | **固定大小** | 通用场景 | 简单、快速 | 可能切断语义 |
 | **语义分块** | 文档理解 | 保持语义完整 | 计算成本较高 |
 | **递归分块** | 层次化文档 | 多粒度表示 | 实现复杂 |
-| **Agentic分块** | 复杂文档 | 智能决策 | 需要LLM调用 |
+| **Agentic 分块** | 复杂文档 | 智能决策 | 需要 LLM 调用 |
 
 ### 2.2 Parent-Document Retrieval (小到大检索)
 
@@ -251,9 +251,9 @@ def hyde_retrieval(query: str, llm, retriever):
 | **Cross-Encoder** | BGE-Reranker, Cohere | 中等 | 高 | 中等 |
 | **LLM-based** | GPT-4, Claude | 慢 | 最高 | 高 |
 | **ColBERT** | ColBERTv2 | 快 | 中高 | 低 |
-| **轻量级CE** | MiniLM-Reranker | 很快 | 中 | 低 |
+| **轻量级 CE** | MiniLM-Reranker | 很快 | 中 | 低 |
 
-### 4.3 Cross-Encoder实现
+### 4.3 Cross-Encoder 实现
 
 ```python
 from sentence_transformers import CrossEncoder
@@ -373,7 +373,7 @@ def compress_with_summary(documents: List[str], llm, max_tokens: int = 4000):
 
 ---
 
-## 6. Agentic RAG (动态RAG)
+## 6. Agentic RAG (动态 RAG)
 
 ### 6.1 概念
 
@@ -386,7 +386,7 @@ Agentic RAG: 动态决策
          ↑_______________________|
 ```
 
-### 6.2 Self-RAG实现
+### 6.2 Self-RAG 实现
 
 ```python
 from typing import Literal

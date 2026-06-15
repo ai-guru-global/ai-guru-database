@@ -25,6 +25,8 @@ updated: 2026-05-31
 | [LLM-as-Judge 深度解析](./LLM_as_Judge_Deep_Dive.md) | 单点评分、成对比较、Rubric 评估、偏差缓解 | 进阶 |
 | [Multimodal Evaluation Benchmarks](./Multimodal_Evaluation_Benchmarks.md) | MMMU/MathVista/DocVQA/POPE 等视觉评测 | 进阶 |
 | [Long Context Evaluation](./Long_Context_Evaluation.md) | 128K+ 长上下文模型评估方法 | 进阶 |
+| [**LLM Benchmark Suite 2026**](./LLM_Benchmark_Suite_2026.md) | MMLU/GSM8K/HumanEval/SWE-bench/AIME/GPQA 全基准解读 | 进阶 |
+| [**Agentic Benchmark Guide**](./Agentic_Benchmark_Guide.md) | τ-bench/BFCL/SWE-bench/BrowseComp Agent 评测全景 | 进阶 |
 | [Fairness Evaluation](./Fairness_Evaluation_for_dummy.md) | 公平性评估入门 | 初学者 |
 
 ---
@@ -87,4 +89,6 @@ updated: 2026-05-31
 - [[08_Model_Evaluation/Multimodal_Evaluation_Benchmarks|Multimodal Evaluation Benchmarks]]
 - [[08_Model_Evaluation/Long_Context_Evaluation|Long Context Evaluation]]
 
+## 新增页面
 
+- [[08_Model_Evaluation/LLM_as_Judge_Guide|LLM-as-Judge 评估指南]]

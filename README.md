@@ -4,7 +4,7 @@ category: mkdocs-docs
 tags: ["documentation", "mkdocs", "docs-as-code"]
 summary: ""
 created: 2026-05-31
-updated: 2026-05-31
+updated: 2026-06-12
 ---
 
 <div align="center">
@@ -13,27 +13,27 @@ updated: 2026-05-31
 
 <p><strong>这可能是 GitHub 上最全面的 AI 学习资源</strong></p>
 
-<p>从理论到生产的完整 AI 知识体系 | 492+ 文档 | 683万+ 字 | 2026 最新</p>
+<p>从理论到生产的完整 AI 知识体系 | 800+ 文档 | 1,350 万+ 字 | 2026 最新</p>
 
 <p>
-  <a href="#-快速开始">🚀 快速开始</a> •
-  <a href="#-为什么选-ai-guru">💡 为什么选择</a> •
-  <a href="#-内容导航">📚 内容导航</a> •
-  <a href="#-适用人群">🎯 适用人群</a> •
-  <a href="#-下载到本地工具">💾 下载到本地</a>
+ <a href="#-快速开始">🚀 快速开始</a> •
+ <a href="#-为什么选-ai-guru">💡 为什么选择</a> •
+ <a href="#-内容导航">📚 内容导航</a> •
+ <a href="#-适用人群">🎯 适用人群</a> •
+ <a href="#-下载到本地工具">💾 下载到本地</a>
 </p>
 
 <p>
-  <img src="https://img.shields.io/badge/文档-492%2B-blue?style=flat-square&logo=bookstack" alt="Docs">
-  <img src="https://img.shields.io/badge/字数-683万%2B-green?style=flat-square" alt="Content">
-  <img src="https://img.shields.io/badge/章节-20-orange?style=flat-square" alt="Chapters">
-  <img src="https://img.shields.io/badge/速成指南-9-purple?style=flat-square" alt="Guides">
-  <img src="https://img.shields.io/badge/更新-2026--06-red?style=flat-square" alt="Updated">
-  <img src="https://img.shields.io/badge/License-MIT-yellow?style=flat-square" alt="License">
+ <img src="https://img.shields.io/badge/文档-800%2B-blue?style=flat-square&logo=bookstack" alt="Docs">
+ <img src="https://img.shields.io/badge/字数-1350万%2B-green?style=flat-square" alt="Content">
+ <img src="https://img.shields.io/badge/章节-25-orange?style=flat-square" alt="Chapters">
+ <img src="https://img.shields.io/badge/速成指南-13-purple?style=flat-square" alt="Guides">
+ <img src="https://img.shields.io/badge/更新-2026--06-red?style=flat-square" alt="Updated">
+ <img src="https://img.shields.io/badge/License-MIT-yellow?style=flat-square" alt="License">
 </p>
 
 <p>
-  <a href="./README_EN.md">🇺🇸 English Version</a>
+ <a href="./README_EN.md">🇺🇸 English Version</a>
 </p>
 
 </div>
@@ -53,8 +53,8 @@ updated: 2026-05-31
 <td width="50%">
 
 **📚 内容全面**
-- 492+ Markdown 文档
-- 683万+ 字符（约 1,138 页 A4）
+- 807+ Markdown 文档
+- 1,353万+ 字符（约 2,255 页 A4）
 - 涵盖 70+ 技术领域
 - 从数学基础到 AGI 前沿
 
@@ -72,9 +72,9 @@ updated: 2026-05-31
 <td width="50%">
 
 **🆕 2026 最新**
-- GPT-5.2 / Claude 4.5 架构
-- VLA 具身智能机器人
-- JEPA 世界模型
+- GPT-5.5 / Claude 4 Opus 架构
+- 中国六大厂商 (DeepSeek V4 / Qwen 3.7 / GLM-4.5 / Kimi K2.6 / MiniMax M2.7 / 小米 MiMo)
+- 国际五大厂商全景对比
 - Agent 生产部署最佳实践
 
 </td>
@@ -93,8 +93,8 @@ updated: 2026-05-31
 ### 📊 数据说话
 
 ```
-📁 492 个 Markdown 文件    📄 683 万+ 字符（约 1,138 页 A4）
-📚 20 个知识章节          ⚡ 9 个速成指南
+📁 807 个 Markdown 文件    📄 1,353 万+ 字符（约 2,255 页 A4）
+📚 25 个知识章节          ⚡ 9 个速成指南
 🎓 10 本大学教材          🔬 12 个 2026 专题
 🏢 8 大行业应用           👔 21 个岗位面试指南
 🧪 8 个动手实验           📖 6 个经典案例
@@ -104,18 +104,32 @@ updated: 2026-05-31
 
 | 目录名称 | 文件数 | 字符数 | 占比 |
 |---------|--------|--------|------|
-| 13_Agent_Production | 108 | 177.40 万 | 26.0% |
-| 04_NLP_LLMs | 56 | 86.68 万 | 12.7% |
-| 17_AI_Coding | 57 | 38.37 万 | 5.6% |
-| 06_Reinforcement_Learning | 21 | 37.11 万 | 5.4% |
-| 18_Cloud_Ops_Agent | 19 | 36.49 万 | 5.3% |
-| 02_Machine_Learning | 23 | 29.21 万 | 4.3% |
-| 16_AI_Ops | 23 | 29.22 万 | 4.3% |
-| 12_Architecture_Infrastructure | 12 | 24.54 万 | 3.6% |
-| 11_RAG_Systems | 20 | 24.17 万 | 3.5% |
-| 19_Ethics_Safety | 19 | 23.31 万 | 3.4% |
-| 其他 10 个目录 | 134 | 176.66 万 | 25.9% |
-| **总计** | **492** | **683.16 万** | **100%** |
+| 13_Agent_Production | 132 | 253.98 万 | 18.8% |
+| 04_NLP_LLMs | 100 | 198.95 万 | 14.7% |
+| 07_Model_Training | 23 | 66.29 万 | 4.9% |
+| 06_Reinforcement_Learning | 28 | 59.32 万 | 4.4% |
+| 17_AI_Coding | 61 | 58.36 万 | 4.3% |
+| 90_Learn | 60 | 51.76 万 | 3.8% |
+| 18_Cloud_Ops_Agent | 19 | 48.69 万 | 3.6% |
+| 02_Machine_Learning | 34 | 47.77 万 | 3.5% |
+| 16_AI_Ops | 26 | 44.09 万 | 3.3% |
+| 19_Ethics_Safety | 27 | 43.30 万 | 3.2% |
+| 11_RAG_Systems | 28 | 42.86 万 | 3.2% |
+| 09_Deployment_Inference | 25 | 40.97 万 | 3.0% |
+| 12_Architecture_Infrastructure | 17 | 40.07 万 | 3.0% |
+| 22_Papers | 22 | 38.61 万 | 2.9% |
+| 01_Fundamentals | 27 | 38.72 万 | 2.9% |
+| 08_Model_Evaluation | 16 | 35.68 万 | 2.6% |
+| 03_Deep_Learning | 20 | 32.32 万 | 2.4% |
+| 00_AI_Introduction | 14 | 29.30 万 | 2.2% |
+| 15_Testing | 12 | 28.20 万 | 2.1% |
+| 05_Computer_Vision | 23 | 27.86 万 | 2.1% |
+| 20_AI_Applications_Industry | 26 | 27.22 万 | 2.0% |
+| 14_AI_Gateway | 12 | 23.38 万 | 1.7% |
+| 23_Interviews | 88 | 18.72 万 | 1.4% |
+| 10_MLOps_Pipeline | 13 | 17.46 万 | 1.3% |
+| 21_Talks | 54 | 17.07 万 | 1.3% |
+| **总计** | **807** | **1,353.49 万** | **100%** |
 
 > 💡 提示：运行 `python3 count_words.py` 可查看最新的实时统计
 
@@ -299,23 +313,24 @@ curl -L -o ai-guru.zip https://github.com/your-org/ai-guru-knowledge-base/archiv
 <tr>
 <td>
 
-- [LLM 架构 2026](../04_NLP_LLMs/LLM_Architectures/LLM_Architectures.md) - GPT-5.2, Claude 4.5, 推理模型
-- [AI 硬件 2026](../01_Fundamentals/AI_Hardware/AI_Hardware_2026.md) - H100/H200/B200, GPU 选型
+- [中国大模型生态全景](./04_NLP_LLMs/Chinese_LLM_Ecosystem/README.md) - DeepSeek/Qwen/GLM/Kimi/MiniMax/MiMo 六大厂商
+- [国际大模型生态全景](./04_NLP_LLMs/Global_LLM_Ecosystem/README.md) - OpenAI/Google/Anthropic/Meta/Mistral 五大厂商
+- [模型问题排查手册](./07_Model_Training/Model_Troubleshooting_Guide.md) - 预训练/微调/推理全链路故障诊断
+- [LLM 基准测试全景](./08_Model_Evaluation/LLM_Benchmark_Suite_2026.md) - MMLU/SWE-bench/AIME/GPQA 全基准解读
+- [量化技术深度 2026](./09_Deployment_Inference/Quantization_Techniques_2026.md) - GPTQ/AWQ/GGUF/NF4/FP8
+- [学习路径指南](./90_Learn/Learning_Paths_2026.md) - 5 条角色路径 (ML/LLM/PM/MLOps/Research)
 - [PEFT 微调 2026](./04_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/) - LoRA/QLoRA/DoRA, 单卡微调 70B
-- [RAG 高级实践](./11_RAG_Systems/) - 混合检索、Agentic RAG
-- [AI 编程助手](./17_AI_Coding/) - Cursor, Claude Code, Devin
-- [Vibe Coding 方法论](./17_AI_Coding/) - 自然语言驱动开发、DGRV循环、生产实践
-- [具身智能 2026](./06_Reinforcement_Learning/Robotics_Embodied_AI/) - VLA 模型、人形机器人
 
 </td>
 <td>
 
-- [世界模型 2026](./03_Deep_Learning/World_Models/) - JEPA/V-JEPA, LeCun 的 AGI 路径
-- [AI 视频生成](./05_Computer_Vision/Video_Generation/) - Veo3, Kling 3.0, 后 Sora 时代
-- [AI 安全 2026](./19_Ethics_Safety/AI_Security_2026/) - OWASP LLM, ASI 框架
-- [Agent 生产部署](./13_Agent_Production/) - K8s, 监控, CI/CD
-- [Agent 协议 2026](../06_Reinforcement_Learning/AI_Agents/Agent_Protocols_2026.md) - MCP/A2A/UCP
-- [AI 基础设施](../12_Architecture_Infrastructure/AI_Infrastructure_2026.md) - SGLang, AI Gateway
+- [LLM 架构 2026](./04_NLP_LLMs/LLM_Architectures/LLM_Architectures.md) - GPT-5.5, Claude 4, 推理模型
+- [AI 硬件 2026](./01_Fundamentals/AI_Hardware/AI_Hardware_2026.md) - H100/H200/B200, GPU 选型
+- [Scaling Laws 与训练动力学](./07_Model_Training/Scaling_Laws_and_Training_Dynamics.md) - Chinchilla/Kaplan/涌现能力
+- [Tokenizer 设计 2026](./07_Model_Training/Tokenizer_Design_2026.md) - BPE/SentencePiece/tiktoken
+- [GRPO 与新对齐方法](./07_Model_Training/GRPO_and_New_Alignment_Methods.md) - GRPO/DPO/RLHF/RLOO
+- [Agent 协议 2026](./06_Reinforcement_Learning/AI_Agents/Agent_Protocols_2026.md) - MCP/A2A/UCP
+- [AI 基础设施](./12_Architecture_Infrastructure/AI_Infrastructure_2026.md) - SGLang, AI Gateway
 
 </td>
 </tr>

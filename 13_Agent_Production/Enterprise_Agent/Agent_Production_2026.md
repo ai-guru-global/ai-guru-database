@@ -9,7 +9,7 @@ updated: 2026-05-31
 
 # AI Agent 生产部署最佳实践 2026
 
-> **一句话理解**: 将AI Agent从Demo部署到生产环境，需要的不仅是代码——而是一套涵盖架构设计、基础设施、监控治理的完整工程体系。本指南总结了2026年企业级Agent部署的最新模式和反模式。
+> **一句话理解**: 将 AI Agent 从 Demo 部署到生产环境，需要的不仅是代码——而是一套涵盖架构设计、基础设施、监控治理的完整工程体系。本指南总结了 2026 年企业级 Agent 部署的最新模式和反模式。
 
 ---
 
@@ -983,7 +983,7 @@ class PromptVersionManager:
 - [Google Vertex AI Agent Builder](https://cloud.google.com/generative-ai-app-builder/docs/agent-intro)
 
 ### 开源工具
-- [LangServe](https://github.com/langchain-ai/langserve) - Agent服务化
+- [LangServe](https://github.com/langchain-ai/langserve) - Agent 服务化
 - [BentoML](https://github.com/bentoml/BentoML) - 模型服务
 - [Prometheus](https://prometheus.io/) + [Grafana](https://grafana.com/) - 监控
 - [Jaeger](https://www.jaegertracing.io/) - 分布式追踪
@@ -992,7 +992,7 @@ class PromptVersionManager:
 - [Google SRE Book](https://sre.google/sre-book/table-of-contents/)
 - [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/)
 - [Microsoft Azure Architecture Center](https://docs.microsoft.com/en-us/azure/architecture/)
-- [Vibe Coding 生产实践](../../17_AI_Coding/04_Methodology/Vibe_Coding_Production_Practices.md) - AI辅助编码的生产环境最佳实践
+- [Vibe Coding 生产实践](../../17_AI_Coding/04_Methodology/Vibe_Coding_Production_Practices.md) - AI 辅助编码的生产环境最佳实践
 
 ---
 

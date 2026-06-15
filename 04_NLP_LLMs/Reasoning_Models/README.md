@@ -3,6 +3,7 @@ title: 推理模型目录
 category: 04-nlp-llms
 tags: ['reasoning', 'overview', 'index']
 summary: 推理模型 相关内容的索引和概览。
+created: 2026-06-12
 ---
 
 # 推理模型
@@ -16,6 +17,7 @@ summary: 推理模型 相关内容的索引和概览。
 - [[04_NLP_LLMs/Reasoning_Models/o1_Class_Reasoning_Models|o1-Class Reasoning Models]]
 - [[04_NLP_LLMs/Reasoning_Models/DeepSeek_R1_Technical_Analysis|DeepSeek R1 Technical Analysis]]
 - [[04_NLP_LLMs/Reasoning_Models/Process_Reward_Models|Process Reward Models]]
+- [[04_NLP_LLMs/Reasoning_Models/Neuro_Symbolic_and_Formal_Verification_2026|Neuro-symbolic and Formal Verification]]
 
 ## 相关页面
 

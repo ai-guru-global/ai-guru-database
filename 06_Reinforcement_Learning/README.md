@@ -59,6 +59,8 @@ updated: 2026-05-31
 | 强化学习基础 (RL Foundations) | 入门 | MDP、贝尔曼方程、策略梯度、价值函数，RL 数学框架 | [RL_Foundations.md](./RL_Foundations/RL_Foundations.md) |
 | 深度强化学习 (Deep RL) | 进阶 | DQN、PPO、SAC、离线 RL，结合神经网络的 RL 算法 | [Deep_RL.md](./Deep_RL/Deep_RL.md) |
 | AI Agents (智能体) | 实战 | ReAct、长期记忆、工具使用、多智能体系统，自主决策架构 | [AI_Agents.md](./AI_Agents/AI_Agents.md) |
+| Agent 协议对比 2026 | 进阶 | MCP、A2A、UCP 深度对比，互操作性现状与趋势 | [Agent_Protocols_Comparison_2026.md](./AI_Agents/Agent_Protocols_Comparison_2026.md) |
+| ADK 选型与实战 2026 | 实战 | MCP SDK、Google A2A ADK、UCP SDK 选型与跨协议 Agent 构建 | [ADK_Selection_and_Implementation_2026.md](./AI_Agents/ADK_Selection_and_Implementation_2026.md) |
 | 具身智能 (Embodied AI) | 前沿 | 机器人基础模型、VLA架构、Sim-to-Real、人形机器人产业 | [Embodied_AI_2026.md](./Robotics_Embodied_AI/Embodied_AI_2026.md) |
 
 ### 深度解读 (Deep Dive)
@@ -103,9 +105,10 @@ updated: 2026-05-31
 *Last updated: 2026-04-01*
 
 ## Related
+- [[06_Reinforcement_Learning/RL-in-nutshell|强化学习速览]] — 从 MDP 到 DQN/PPO 到 RLHF/DPO/GRPO 全栈速览 (共享: rl, reinforcement-learning, ppo, rlhf)
 - [[06_Reinforcement_Learning/README_for_dummy|06 强化学习与智能体 - 小白版 🎮]]
 
-- [[06_Reinforcement_Learning/AI_Agents/AI_Agents_for_dummy]] — AI智能体 - 小白版 🤖 (共享: agent, mdp, reinforcement-learning, rl)
+- [[06_Reinforcement_Learning/AI_Agents/AI_Agents_for_dummy]] — AI 智能体 - 小白版 🤖 (共享: agent, mdp, reinforcement-learning, rl)
 - [[06_Reinforcement_Learning/AI_Agents/Agent-in-nutshell]] — AI 智能体速成指南 (共享: agent, mdp, reinforcement-learning, rl)
 - [[06_Reinforcement_Learning/AI_Agents/Agent_Future_Roadmap_2026_2030]] — Agent 未来发展路线图 2026-2030 (共享: agent, mdp, reinforcement-learning, rl)
 - [[06_Reinforcement_Learning/AI_Agents/Agent_Protocols_Detail]] — AI Agent 协议详解：MCP、A2A、UCP (共享: agent, mdp, reinforcement-learning, rl)

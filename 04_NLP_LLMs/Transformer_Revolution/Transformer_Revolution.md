@@ -234,7 +234,7 @@ RoPE 对高维向量的每对维度施加不同频率的旋转,使得相对位�
 **内存开销**:
 - 每层每个头需要存储 K 和 V: $2 \times seq\_len \times d_k$ (float16)
 - 对于 LLaMA-7B (32 层, 32 头, $d_k=128$, seq_len=2048):
-  - KV Cache 内存: $2 \times 32 \times 32 \times 128 \times 2048 \times 2 \text{ bytes} \approx 1GB$
+ - KV Cache 内存: $2 \times 32 \times 32 \times 128 \times 2048 \times 2 \text{ bytes} \approx 1GB$
 
 **优化技巧**:
 - **Multi-Query Attention (MQA)**: 所有头共享一组 K, V,内存降至 1/h

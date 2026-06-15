@@ -64,7 +64,7 @@ updated: 2026-05-31
 | 时间序列入门 | [Time_Series_for_dummy.md](./Time_Series/Time_Series_for_dummy.md) |
 | 异常检测入门 | [Anomaly_Detection_for_dummy.md](./Anomaly_Detection/Anomaly_Detection_for_dummy.md) |
 | 推荐系统入门 | [Recommendation_Systems_for_dummy.md](./Recommendation_Systems/Recommendation_Systems_for_dummy.md) |
-| AutoML入门 | [AutoML_for_dummy.md](./AutoML/AutoML_for_dummy.md) |
+| AutoML 入门 | [AutoML_for_dummy.md](./AutoML/AutoML_for_dummy.md) |
 | **数据预处理入门** | [Data_Preprocessing_for_dummy.md](./Feature_Engineering/Data_Preprocessing_for_dummy.md) |
 | **第一个 ML 模型** | [Your_First_ML_Model.md](./Supervised_Learning/Your_First_ML_Model.md) |
 | **EDA 快速入门** | [EDA_Quick_Start.md](./Supervised_Learning/EDA_Quick_Start.md) |
@@ -130,3 +130,9 @@ updated: 2026-05-31
 
 - [[concepts/anomaly-detection|Anomaly Detection]]
 
+## 相关资源
+
+- [[02_Machine_Learning/ML_Frameworks/scikit-learn_overview|Scikit-learn]]
+- [[02_Machine_Learning/ML_Frameworks/xgboost_overview|XGBoost]]
+- [[02_Machine_Learning/ML_Frameworks/lightgbm_overview|LightGBM]]
+- [[02_Machine_Learning/ML_Frameworks/catboost_overview|CatBoost]]

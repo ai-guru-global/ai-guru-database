@@ -4,10 +4,13 @@ title: 'TUI 定制：快捷键、主题与界面'
 tags:
 - ai
 - ai-coding
+created: 2026-06-12
+category: 17-ai-coding
+summary: ""
 ---
 title: TUI 定制：快捷键、主题与界面
 description: '**文档类型**: 定制指南 | **最后更新**: 2026-03 | **关键词**: OpenCode, TUI, Keybinds,
-  Themes, Leader Key, Bubble Tea, tui.json, Custom Theme'
+ Themes, Leader Key, Bubble Tea, tui.json, Custom Theme'
 category: ai-coding
 tags:
 - ai
@@ -33,7 +36,7 @@ trigger_keywords:
 - coding
 authors:
 - name: KUDIG Team
-  role: contributor
+ role: contributor
 k8s_versions:
 - '1.28'
 - '1.29'

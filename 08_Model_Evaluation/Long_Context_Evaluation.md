@@ -4,6 +4,7 @@ category: 08-model-evaluation
 tags: [evaluation, long-context, needle-in-haystack, ruler, longbench, needle-test, context-window, retrieval]
 summary: 系统梳理长上下文理解评测方法，从 Needle-in-a-Haystack 到 RULER、LongBench 和 InfiniteBench，解析不同评测维度的设计原理和工程实践。
 date: 2026-06-01
+created: 2026-06-12
 ---
 
 # 长上下文评测深度解析

@@ -20,6 +20,7 @@ provenance:
 base_confidence: 0.90
 lifecycle: stable
 tier: core
+created: 2026-06-12
 ---
 
 # RoPE 旋转位置编码 (Rotary Position Embedding)

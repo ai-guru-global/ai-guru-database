@@ -4,12 +4,12 @@ category: '90-learn'
 tags: ["learning", "education", "courses", "study-path"]
 summary: '> **从"AI是什么"到"如何构建AI系统"，按概念递进，因人施教。**'
 created: '2026-05-31'
-updated: '2026-05-31'
+updated: '2026-06-12'
 ---
 
 # Learn — AI Guru 概念入门路径
 
-> **从"AI是什么"到"如何构建AI系统"，按概念递进，因人施教。**
+> **从"AI 是什么"到"如何构建 AI 系统"，按概念递进，因人施教。**
 
 本目录是 AI Guru 知识库的**学习导航中心**。不同于按技术领域组织的章节结构（00-13），这里按**认知层次**和**角色需求**组织学习内容，帮你找到最适合自己的切入点。
 
@@ -111,16 +111,25 @@ Stage 0: AI 觉醒 ────────────────────�
 
 | 资源 | 说明 |
 |------|------|
+| [**学习路径指南 2026**](./Learning_Paths_2026.md) | 5 条角色路径全景 (ML/LLM/PM/MLOps/Research) |
 | [概念知识图谱](../91_Notes/AI_Concept_Knowledge_Graph.md) | 800+ 概念的完整依赖关系图 |
 | [新手导航（章节版）](../README_for_dummy.md) | 按章节组织的入门指南 |
 | [里程碑自测](./milestones.md) | 每个 Stage 的自测问题与检查点 |
 | [AI 基础入门缺口分析](./AI_Basics_Gap_Analysis.md) | 系统性的入门内容覆盖度分析与补全追踪 |
+| [Microsoft AI For Beginners](./Microsoft_AI_For_Beginners.md) | 微软官方 12 周 24 课 AI 入门课程映射，含 PyTorch/TensorFlow 双框架 Notebook |
+| [Microsoft AI Agents for Beginners](./Microsoft_AI_Agents_for_Beginners.md) | 微软官方 16 课 AI Agent 入门课程映射（MAF + Azure AI Foundry）|
+| [Hello-Agents](./Hello_Agents_Course.md) | Datawhale 中文 Agent 教程：16 章 + 综合项目（ReAct/LangGraph/AutoGen/MCP/A2A/ANP）|
+| [Learn Claude Code](./Learn_Claude_Code_Course.md) | 20 课渐进式 Claude Code 式 Harness 工程教程 |
+| [Hands-On Large Language Models](./Hands_On_LLMs_Course.md) | 《图解 LLM》12 章课程映射 + 本地 Notebook |
+| [ApacheCN AILearning](./ApacheCN_AILearning_Guide.md) | 中文全栈 AI 学习资料库（数据分析/线代/ML/DL/TensorFlow）|
+| [500+ AI Projects](../references/500-ai-projects.md) | 500+ AI/ML/DL/CV/NLP 实战项目合集索引 |
 
 ---
 
-*本路径系统基于 AI Guru 知识库 2026 版构建 | 最后更新: 2026-04-30*
+*本路径系统基于 AI Guru 知识库 2026 版构建 | 最后更新: 2026-06-12*
 
 ## Related
+- [[90_Learn/Learning_Paths_2026|AI Guru 学习路径指南]] — 五大 AI 职业角色学习路径全景指南
 - [[90_Learn/README|Learn — AI Guru 概念入门路径]]
 - [[90_Learn/README_for_dummy|90 Learn — 小白版 🚀]]
 
@@ -137,3 +146,6 @@ Stage 0: AI 觉醒 ────────────────────�
 - [[90_Learn/pathways/ml-practitioner]] — ML 从业者路径
 - [[90_Learn/AI_Basics_Gap_Analysis|AI 基础入门缺口分析]] — 入门内容覆盖度分析与补全追踪
 
+## 相关资源
+
+- [[90_Learn/AI_Engineering_Roadmap_2026|AI 工程学习路线图 2026(免费资源精选)]]

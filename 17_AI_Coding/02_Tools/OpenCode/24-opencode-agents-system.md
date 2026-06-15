@@ -4,6 +4,9 @@ title: 'Agent 系统深度指南'
 tags:
 - ai
 - ai-coding
+created: 2026-06-12
+category: 17-ai-coding
+summary: ""
 ---
 title: Agent 系统深度指南
 description: '# Agent 系统深度指南'
@@ -32,7 +35,7 @@ trigger_keywords:
 - coding
 authors:
 - name: KUDIG Team
-  role: contributor
+ role: contributor
 k8s_versions:
 - '1.28'
 - '1.29'
@@ -400,7 +403,7 @@ Provide constructive feedback without making direct changes.
 ## Obsidian 相关文档
 
 - [[17_AI_Coding/MOC_OpenRouter_OpenCode.md|MOC]]
-- [[17_AI_Coding/OpenRouter_OpenCode_Guide|AI 编程与  网关专题 — OpenRouter & OpenCode 全量指南]]
+- [[17_AI_Coding/OpenRouter_OpenCode_Guide|AI 编程与 网关专题 — OpenRouter & OpenCode 全量指南]]
 - [[17_AI_Coding/02_Tools/OpenRouter/01-openrouter-overview-architecture|OpenRouter 概述与核心架构]]
 - [[17_AI_Coding/02_Tools/OpenRouter/02-openrouter-quickstart-setup|快速接入与环境配置]]
 - [[17_AI_Coding/02_Tools/OpenRouter/03-openrouter-models-providers|模型与 Provider 生态]]

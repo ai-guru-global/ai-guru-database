@@ -1036,3 +1036,11 @@ graph TD
 - Schölkopf, B. et al. "Estimating the Support of a High-Dimensional Distribution" (2001)
 - Chandola, V. et al. "Anomaly Detection: A Survey" (2009)
 - sklearn 文档: https://scikit-learn.org/stable/modules/outlier_detection.html
+
+## Related
+
+- [[concepts/anomaly-detection]] — 异常检测概念总览
+- [[02_Machine_Learning/Unsupervised_Learning/Unsupervised_Learning]] — 无监督学习：聚类与降维
+- [[02_Machine_Learning/Ensemble_Learning/Ensemble_Learning]] — 集成学习：Isolation Forest 的理论基础
+- [[03_Deep_Learning/Self_Supervised_Learning/Self_Supervised_Learning_Deep_Dive]] — 自编码器与自监督异常检测
+- [[02_Machine_Learning/Feature_Engineering/Feature_Engineering]] — 特征工程：异常检测中的关键特征构造

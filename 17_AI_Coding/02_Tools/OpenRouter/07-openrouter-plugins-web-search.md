@@ -4,10 +4,13 @@ title: '插件体系与 Web Search'
 tags:
 - ai
 - ai-coding
+created: 2026-06-12
+category: 17-ai-coding
+summary: ""
 ---
 title: 插件体系与 Web Search
 description: '**文档类型**: 功能详解 | **最后更新**: 2026-03 | **关键词**: OpenRouter, Plugins, Web
-  Search, Exa, Firecrawl, Parallel, File Parser, Context Compression, Domain Filtering'
+ Search, Exa, Firecrawl, Parallel, File Parser, Context Compression, Domain Filtering'
 category: ai-coding
 tags:
 - ai
@@ -33,7 +36,7 @@ trigger_keywords:
 - coding
 authors:
 - name: KUDIG Team
-  role: contributor
+ role: contributor
 k8s_versions:
 - '1.28'
 - '1.29'

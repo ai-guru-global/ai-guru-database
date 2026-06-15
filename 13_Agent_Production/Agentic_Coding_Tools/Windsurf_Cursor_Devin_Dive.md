@@ -9,7 +9,7 @@ updated: '2026-05-31'
 
 # Agentic Coding CLI 工具全景对比
 
-> **一句话理解**: 从 Claude Code 到 Devin，Agentic Coding 工具正在重新定义编程边界——从"代码补全"到"自主执行"，从"单-Agent"到"多-Agent协作"，每款工具都在不同的维度推动 AI 编程的极限。
+> **一句话理解**: 从 Claude Code 到 Devin，Agentic Coding 工具正在重新定义编程边界——从"代码补全"到"自主执行"，从"单-Agent"到"多-Agent 协作"，每款工具都在不同的维度推动 AI 编程的极限。
 
 ---
 

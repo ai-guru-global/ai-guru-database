@@ -1416,16 +1416,16 @@ KV Cache for 10M tokens 需要巨大内存
 ### 11.1 关联文档
 
 - **LLaMA 论文深度解读** → [../../22_Papers/LLaMA_Deep_Dive.md](../../22_Papers/LLaMA_Deep_Dive.md)
-  - LLaMA 1/2/3 论文的核心技术细节、训练方法和实验分析
+ - LLaMA 1/2/3 论文的核心技术细节、训练方法和实验分析
 
 - **LLM 架构综述** → [../LLM_Architectures/LLM_Architectures.md](../LLM_Architectures/LLM_Architectures.md)
-  - Transformer 架构变体、位置编码、注意力机制的横向对比
+ - Transformer 架构变体、位置编码、注意力机制的横向对比
 
 - **MoE 案例研究** → [../LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md](../LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md)
-  - DeepSeek-MoE 和 Mixtral 的 MoE 架构详解，与 LLaMA 4 MoE 对比
+ - DeepSeek-MoE 和 Mixtral 的 MoE 架构详解，与 LLaMA 4 MoE 对比
 
 - **多模态架构 2026** → [../Multimodal_Models/Multimodal_Architectures_2026.md](../Multimodal_Models/Multimodal_Architectures_2026.md)
-  - 原生多模态 vs 外挂式多模态的全面对比
+ - 原生多模态 vs 外挂式多模态的全面对比
 
 ### 11.2 技术概念索引
 

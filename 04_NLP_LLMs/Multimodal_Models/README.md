@@ -3,6 +3,7 @@ title: 多模态模型目录
 category: 04-nlp-llms
 tags: ['multimodal', 'overview', 'index']
 summary: 多模态模型 相关内容的索引和概览。
+created: 2026-06-12
 ---
 
 # 多模态模型

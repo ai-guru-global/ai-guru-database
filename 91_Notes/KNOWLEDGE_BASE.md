@@ -285,15 +285,15 @@ This project is licensed under the **MIT License** - see [LICENSE](./LICENSE) fi
 ---
 
 <p align="center">
-  <b>AI Guru</b> — Making AI Learning Systematic, Efficient, and Accessible
-  <br>
-  <sub>Built with ❤️ by the AI community, for the AI community</sub>
+ <b>AI Guru</b> — Making AI Learning Systematic, Efficient, and Accessible
+ <br>
+ <sub>Built with ❤️ by the AI community, for the AI community</sub>
 </p>
 
 <p align="center">
-  <a href="#-quick-start">🚀 Get Started</a> •
-  <a href="#-documentation-structure">📚 Browse Docs</a> •
-  <a href="#-contributing">🤝 Contribute</a>
+ <a href="#-quick-start">🚀 Get Started</a> •
+ <a href="#-documentation-structure">📚 Browse Docs</a> •
+ <a href="#-contributing">🤝 Contribute</a>
 </p>
 
 ## Related

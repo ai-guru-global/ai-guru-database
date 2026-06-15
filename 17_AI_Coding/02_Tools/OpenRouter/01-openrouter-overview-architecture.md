@@ -11,6 +11,9 @@ aliases:
 - 全景
 - 概览
 - 概述
+created: 2026-06-12
+category: 17-ai-coding
+summary: ""
 ---
 title: OpenRouter 概述与核心架构
 description: '# OpenRouter 概述与核心架构'
@@ -40,7 +43,7 @@ trigger_keywords:
 - coding
 authors:
 - name: KUDIG Team
-  role: contributor
+ role: contributor
 k8s_versions:
 - '1.28'
 - '1.29'

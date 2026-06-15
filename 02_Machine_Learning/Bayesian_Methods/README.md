@@ -20,7 +20,7 @@ updated: 2026-06-04
 ## 前置知识
 
 - [[probability-statistics]] — 概率统计基础
-- [[Information_Theory_Fundamentals]] — 信息论 (KL散度)
+- [[Information_Theory_Fundamentals]] — 信息论 (KL 散度)
 
 ---
 

@@ -7,7 +7,7 @@ created: 2026-05-31
 updated: 2026-05-31
 ---
 
-# AI辅助编程理论基础
+# AI 辅助编程理论基础
 
 > **一句话理解**: 理解 AI 编程的底层原理——从编程范式的演进到 LLM 如何理解代码，从代码幻觉的成因到 Agentic Coding 的架构跃迁，为实践提供理论根基。
 
@@ -296,7 +296,7 @@ Stage 4: 多Agent系统 (Multi-Agent)
 └── 错误处理: 工具失败时的优雅降级
 ```
 
-### 3.3 多Agent编排架构
+### 3.3 多 Agent 编排架构
 
 ```
 多Agent编排模式:
@@ -472,7 +472,7 @@ AI编程使用风险评估:
 
 - [AI编程助手对比](../02_Tools/AI_Coding_Assistants_2026.md) — 主流工具能力对比
 - [Vibe Coding 方法论](../04_Methodology/Vibe_Coding_Methodology.md) — DGRV 模型与实践框架
-- [Agentic Coding 方法论](../04_Methodology/Agentic_Coding_Methodology.md) — 多Agent协作开发
+- [Agentic Coding 方法论](../04_Methodology/Agentic_Coding_Methodology.md) — 多 Agent 协作开发
 - [Prompt Engineering 专题](../../04_NLP_LLMs/Prompt_Engineering/Prompt_Engineering.md) — 提示工程理论基础
 
 ---

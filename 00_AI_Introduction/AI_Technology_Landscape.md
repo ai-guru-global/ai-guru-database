@@ -7,9 +7,9 @@ created: 2026-05-31
 updated: 2026-05-31
 ---
 
-# AI技术全景概览
+# AI 技术全景概览
 
-> **一句话理解**: AI技术生态像一座冰山——你看到的ChatGPT只是水面上的尖端，水面下是数十年积累的数学理论、算法创新、工程实践和基础设施。
+> **一句话理解**: AI 技术生态像一座冰山——你看到的 ChatGPT 只是水面上的尖端，水面下是数十年积累的数学理论、算法创新、工程实践和基础设施。
 
 ---
 
@@ -426,7 +426,7 @@ AI计算基础设施:
 
 ## 4. 前沿技术趋势 (2026)
 
-### 4.1 Agentic AI (智能体AI)
+### 4.1 Agentic AI (智能体 AI)
 
 ```
 AI Agent技术栈 (2026):
@@ -635,8 +635,8 @@ AI开发工具全景:
 
 | 任务 | 推荐技术 | 代表模型/工具 |
 |------|----------|--------------|
-| **文本分类** | Transformer编码器 | BERT, RoBERTa |
-| **文本生成** | Transformer解码器 | GPT-4, Llama, Qwen |
+| **文本分类** | Transformer 编码器 | BERT, RoBERTa |
+| **文本生成** | Transformer 解码器 | GPT-4, Llama, Qwen |
 | **机器翻译** | Encoder-Decoder | T5, mBART, NLLB |
 | **图像分类** | CNN / ViT | ResNet, EfficientNet, ViT |
 | **目标检测** | YOLO / DETR | YOLOv8, RT-DETR |

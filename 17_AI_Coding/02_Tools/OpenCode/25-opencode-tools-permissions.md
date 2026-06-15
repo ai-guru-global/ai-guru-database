@@ -4,10 +4,13 @@ title: '工具体系与权限模型'
 tags:
 - ai
 - ai-coding
+created: 2026-06-12
+category: 17-ai-coding
+summary: ""
 ---
 title: 工具体系与权限模型
 description: '**文档类型**: 核心能力专题 | **最后更新**: 2026-03 | **关键词**: OpenCode, Tools, Permissions,
-  Custom Tools, bash, edit, read, grep, Security, TypeScript'
+ Custom Tools, bash, edit, read, grep, Security, TypeScript'
 category: ai-coding
 tags:
 - ai
@@ -31,7 +34,7 @@ trigger_keywords:
 - coding
 authors:
 - name: KUDIG Team
-  role: contributor
+ role: contributor
 k8s_versions:
 - '1.28'
 - '1.29'

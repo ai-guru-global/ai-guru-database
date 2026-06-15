@@ -300,7 +300,7 @@ helicone.sso = {
 
 - [Helicone GitHub](https://github.com/helicone/helicone)
 - [Helicone 文档](https://docs.helicone.ai/)
-- [Helicone官网](https://helicone.ai/)
+- [Helicone 官网](https://helicone.ai/)
 
 ---
 

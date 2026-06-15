@@ -530,9 +530,9 @@ $$
 - **[微积分](../Calculus/Calculus.md)**: 期望（积分）、最大化（求导）
 
 ### 进阶推荐
-- **[机器学习基础](../../02_Machine_Learning/ML_Fundamentals/ML_Fundamentals.md)**: MLE/MAP 在具体算法中的应用
-- **[优化方法](../../02_Machine_Learning/Optimization_Methods/Optimization_Methods.md)**: 随机优化的概率视角
-- **[贝叶斯深度学习](../../03_Deep_Learning/Bayesian_DL/Bayesian_DL.md)**: 不确定性量化
+- **[机器学习基础](../../02_Machine_Learning/README.md)**: MLE/MAP 在具体算法中的应用
+- **[优化方法](../../03_Deep_Learning/Optimization/Optimization.md)**: 随机优化的概率视角
+- **[贝叶斯深度学习](../../02_Machine_Learning/Bayesian_Methods/Bayesian_Methods_Deep_Dive.md)**: 不确定性量化
 - **[生成模型](../../05_Computer_Vision/Generative_Models/Generative_Models.md)**: VAE、GAN 的概率基础
 
 ---
@@ -589,41 +589,41 @@ $$
 ## 9. 参考资源 (References)
 
 ### 经典教材
-- [Deep Learning Book - Chapter 3: Probability and Information Theory](https://www.deeplearningbook.org/contents/prob.html)  
-  Goodfellow 等著，第3章系统讲解概率基础
+- [Deep Learning Book - Chapter 3: Probability and Information Theory](https://www.deeplearningbook.org/contents/prob.html) 
+ Goodfellow 等著，第 3 章系统讲解概率基础
 
-- [Probability Theory: The Logic of Science - E.T. Jaynes](https://www.cambridge.org/core/books/probability-theory/973F8D76F2912DCC228B12270922900B)  
-  贝叶斯派经典，强调概率作为逻辑推理的延伸
+- [Probability Theory: The Logic of Science - E.T. Jaynes](https://www.cambridge.org/core/books/probability-theory/973F8D76F2912DCC228B12270922900B) 
+ 贝叶斯派经典，强调概率作为逻辑推理的延伸
 
-- [All of Statistics - Larry Wasserman](https://link.springer.com/book/10.1007/978-0-387-21736-9)  
-  简明统计学教材，兼顾频率派和贝叶斯派
+- [All of Statistics - Larry Wasserman](https://link.springer.com/book/10.1007/978-0-387-21736-9) 
+ 简明统计学教材，兼顾频率派和贝叶斯派
 
 ### 在线课程
-- [Harvard Stat 110: Introduction to Probability (Joe Blitzstein)](https://statistics.fas.harvard.edu/people/joseph-k-blitzstein)  
-  最受欢迎的概率论课程，配有 YouTube 视频
+- [Harvard Stat 110: Introduction to Probability (Joe Blitzstein)](https://statistics.fas.harvard.edu/people/joseph-k-blitzstein) 
+ 最受欢迎的概率论课程，配有 YouTube 视频
 
-- [Stanford CS229: Machine Learning (Section on Probability)](https://cs229.stanford.edu/)  
-  Andrew Ng 的 ML 课程，附有详细概率论讲义
+- [Stanford CS229: Machine Learning (Section on Probability)](https://cs229.stanford.edu/) 
+ Andrew Ng 的 ML 课程，附有详细概率论讲义
 
 ### 论文与博客
-- [A Tutorial on Energy-Based Learning (Yann LeCun)](http://yann.lecun.com/exdb/publis/pdf/lecun-06.pdf)  
-  从能量函数视角统一生成模型和判别模型
+- [A Tutorial on Energy-Based Learning (Yann LeCun)](http://yann.lecun.com/exdb/publis/pdf/lecun-06.pdf) 
+ 从能量函数视角统一生成模型和判别模型
 
-- [Bayesian Deep Learning: A Probabilistic Perspective (Google AI Blog)](https://ai.googleblog.com/)  
-  贝叶斯深度学习综述
+- [Bayesian Deep Learning: A Probabilistic Perspective (Google AI Blog)](https://ai.googleblog.com/) 
+ 贝叶斯深度学习综述
 
-- [Visual Information Theory (Chris Olah)](https://colah.github.io/posts/2015-09-Visual-Information/)  
-  交互式可视化信息论概念
+- [Visual Information Theory (Chris Olah)](https://colah.github.io/posts/2015-09-Visual-Information/) 
+ 交互式可视化信息论概念
 
 ### 工具与库
-- [SciPy.stats](https://docs.scipy.org/doc/scipy/reference/stats.html)  
-  Python 概率分布和统计检验库
+- [SciPy.stats](https://docs.scipy.org/doc/scipy/reference/stats.html) 
+ Python 概率分布和统计检验库
 
-- [PyMC3](https://docs.pymc.io/)  
-  概率编程框架，支持贝叶斯推理
+- [PyMC3](https://docs.pymc.io/) 
+ 概率编程框架，支持贝叶斯推理
 
-- [TensorFlow Probability](https://www.tensorflow.org/probability)  
-  深度学习中的概率建模工具
+- [TensorFlow Probability](https://www.tensorflow.org/probability) 
+ 深度学习中的概率建模工具
 
 ---
 

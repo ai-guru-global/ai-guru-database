@@ -3,6 +3,7 @@ title: LLM 架构目录
 category: 04-nlp-llms
 tags: ['llm-architecture', 'overview', 'index']
 summary: 大语言模型架构 相关内容的索引和概览。
+created: 2026-06-12
 ---
 
 # 大语言模型架构

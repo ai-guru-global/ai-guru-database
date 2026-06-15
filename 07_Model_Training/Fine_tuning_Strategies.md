@@ -74,7 +74,7 @@ flowchart TB
 
 DeepSpeed ZeRO / FSDP 优化后：
 
-| 优化策略 | 每卡显存 (8卡) | 总显存需求 |
+| 优化策略 | 每卡显存 (8 卡) | 总显存需求 |
 |----------|---------------|------------|
 | 无优化 | 840 GB | 8×A100 80GB |
 | ZeRO-2 | ~210 GB | 8×A100 40GB |
@@ -459,7 +459,7 @@ flowchart TB
     style Dir0 fill:#e8f5e9
 ```
 
-### 5.2 DoRA  vs 标准 LoRA
+### 5.2 DoRA vs 标准 LoRA
 
 | 维度 | LoRA | DoRA | 说明 |
 |------|------|------|------|

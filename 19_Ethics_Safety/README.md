@@ -61,17 +61,18 @@ updated: 2026-05-31
 
 | 主题 | 难度 | 描述 | 文档链接 |
 |------|------|------|---------|
-| 模型安全机制 (Mechanistic Interpretability) | 专业 | 逆向工程神经网络、电路追踪、形式化验证，实现可证明的AI安全 | [Mechanistic_Interpretability.md](./Mechanistic_Interpretability/Mechanistic_Interpretability.md) |
+| 模型安全机制 (Mechanistic Interpretability) | 专业 | 逆向工程神经网络、电路追踪、形式化验证，实现可证明的 AI 安全 | [Mechanistic_Interpretability.md](./Mechanistic_Interpretability/Mechanistic_Interpretability.md) |
 | 隐私保护 AI (Privacy-Preserving AI) | 专业 | 差分隐私、联邦学习、同态加密、成员推断攻击防御 | [Privacy_Preserving_AI.md](./Privacy_Preserving_AI/Privacy_Preserving_AI.md) |
 | 深度伪造检测 (Deepfake Detection) | 专业 | 深度伪造检测技术、音视频伪造识别、内容真实性验证 | [Deepfake_Security.md](./Deepfake_Security/Deepfake_Security.md) |
-| AI 供应链安全 (Supply Chain Security) | 专业 | 数据投毒防御、模型后门检测、依赖安全、SBOM管理 | [AI_Supply_Chain_Security.md](./AI_Supply_Chain_Security/AI_Supply_Chain_Security.md) |
-| **联邦学习 (Federated Learning)** | **专业** | **FedAvg/FedProx/SCAFFOLD、差分隐私+安全聚合、联邦LLM微调** | **[Federated_Learning/](./Federated_Learning/)** |
+| AI 供应链安全 (Supply Chain Security) | 专业 | 数据投毒防御、模型后门检测、依赖安全、SBOM 管理 | [AI_Supply_Chain_Security.md](./AI_Supply_Chain_Security/AI_Supply_Chain_Security.md) |
+| **联邦学习 (Federated Learning)** | **专业** | **FedAvg/FedProx/SCAFFOLD、差分隐私+安全聚合、联邦 LLM 微调** | **[Federated_Learning/](./Federated_Learning/)** |
 
 ### 生产实践层
 
 | 主题 | 难度 | 描述 | 文档链接 |
 |------|------|------|---------|
-| AI安全 2026 (AI Security 2026) | 实战 | OWASP LLM Top 10 + ASI Agentic AI安全框架，生产级防御 | [AI_Security_2026.md](./AI_Security_2026/AI_Security_2026.md) |
+| AI 安全 2026 (AI Security 2026) | 实战 | OWASP LLM Top 10 + ASI Agentic AI 安全框架，生产级防御 | [AI_Security_2026.md](./AI_Security_2026/AI_Security_2026.md) |
+| AI 监管工程化 2026 | 实战 | 欧盟 AI 法案、监管即代码、合规生命周期管理、可审计性 | [AI_Regulatory_Engineering_2026.md](./AI_Regulatory_Engineering_2026.md) |
 | AI 安全评测框架 (Safety Evaluation) | 实战 | 毒性/偏见/幻觉评测、对抗鲁棒性、红队测试方法论与基准 | [Safety_Evaluation_Framework.md](./Safety_Evaluation_Framework.md) |
 
 ## 前置知识 (Prerequisites)
@@ -101,7 +102,7 @@ updated: 2026-05-31
 - **Activation Patching**: 激活修补，因果干预方法定位关键计算组件
 - **Sparse Autoencoder (SAE)**: 稀疏自编码器，将神经网络激活分解为可解释特征
 - **Formal Verification**: 形式化验证，数学证明模型满足安全性质
-- **Superalignment**: 超级对齐，用较弱AI监督控制更强AI的挑战
+- **Superalignment**: 超级对齐，用较弱 AI 监督控制更强 AI 的挑战
 
 ### 隐私保护
 - **Differential Privacy (DP)**: 差分隐私，数学保证个体信息不被泄露
@@ -140,6 +141,7 @@ updated: 2026-05-31
 - [[19_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming]] — AI 安全与红队 (AI Safety & Red Teaming) (共享: ai-ethics, alignment, red-teaming, safety)
 - [[19_Ethics_Safety/AI_Security_2026/README]] — AI安全 2026 (AI Security) (共享: ai-ethics, alignment, red-teaming, safety)
 - [[19_Ethics_Safety/AI_Supply_Chain_Security/AI_Supply_Chain_Security]] — AI 供应链安全 2026 (共享: ai-ethics, alignment, red-teaming, safety)
+- [[19_Ethics_Safety/Ethics_Safety-in-nutshell|AI 伦理与安全速览]] — 一张图看懂 AI 伦理与安全全貌 (共享: ai-safety, alignment, rlhf, red-teaming)
 - [[19_Ethics_Safety/Ethics-in-nutshell]] — AI 伦理与安全速成指南 (共享: ai-ethics, alignment, red-teaming, safety)
 - [[19_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming_for_dummy]] — AI_Safety_RedTeaming_for_dummy
 - [[19_Ethics_Safety/Privacy_Preserving_AI/Privacy_Preserving_AI]] — Privacy_Preserving_AI
@@ -157,4 +159,7 @@ updated: 2026-05-31
 - [[synthesis/ai-ethics-future|Ai Ethics Future]]
 - [[19_Ethics_Safety/Safety_Evaluation_Framework|AI 安全评测框架]] — 安全评测基准与红队测试方法论
 
+## 新增页面
 
+- [[19_Ethics_Safety/Guardrails_Production_Guide|AI 护栏生产实践]]
+- [[19_Ethics_Safety/AI_Red_Teaming_Guide|AI 红队测试指南]]

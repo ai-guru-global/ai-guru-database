@@ -57,6 +57,8 @@ updated: 2026-05-31
 | 文档 | 内容 | 适用角色 |
 |------|------|----------|
 | [AutoGen / CrewAI / LangGraph](./Agent_Frameworks/AutoGen_CrewAI_LangGraph_Dive.md) | 多 Agent 框架对比 | 开发者、架构师 |
+| [Agentic UI/UX Design 2026](./Agent_Workflow/Agentic_UI_UX_Design_2026.md) | Canvas 模式、Artifacts 设计、Human-in-the-Loop 交互 | 设计师、产品经理 |
+| [Agentic Workflow Design Patterns 2026](./Agent_Workflow/Agentic_Workflow_Design_Patterns_2026.md) | 路由、并行、编排者-执行者、评估者-优化者、蜂群模式 | 架构师、开发者 |
 | [AgentScope Deep Dive](./Agent_Frameworks/AgentScope_Deep_Dive.md) | 阿里巴巴多智能体平台 | 开发者、架构师 |
 | [AutoGPT Deep Dive](./Agent_Frameworks/AutoGPT_Deep_Dive.md) | 自主任务执行 Agent | 开发者、探索者 |
 | [SmolAgents Deep Dive](./Agent_Frameworks/SmolAgents_Deep_Dive.md) | HuggingFace 轻量级框架 | HF 生态用户 |
@@ -207,9 +209,7 @@ L4: 持久化知识 → SQL/NoSQL
 - [[13_Agent_Production/Agent_Harness/Harness-in-nutshell]] — Agent Harness 速览
 - [[synthesis/agent-framework-production|Agent 框架与生产部署]]
 
+## 新增页面
 
-
-
-
-
-
+- [[13_Agent_Production/Agent_Protocols/A2A_Protocol_Deep_Dive|A2A 协议]]
+- [[13_Agent_Production/Memory_Infrastructure/Agent_Memory_Techniques|Agent 记忆技术]]

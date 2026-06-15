@@ -37,6 +37,8 @@ updated: 2026-06-04
 | 文档 | 内容 | 难度 |
 |------|------|------|
 | [AI_for_Science_Deep_Dive](./AI_for_Science_Deep_Dive.md) | AlphaFold/药物发现/气象/材料/神经算子全面解读 | ⭐⭐⭐⭐ |
+| [Protein Folding & Drug Discovery 2026](./Protein_Folding_and_Drug_Discovery_2026.md) | AlphaFold 3 扩散模型、多分子交互、全原子建模、生成式生物学 | ⭐⭐⭐⭐⭐ |
+| [Materials Science & Energy 2026](./Materials_Science_and_Energy_2026.md) | GNoME 晶体预测、固态电池、光伏、材料大模型 MatFM | ⭐⭐⭐⭐⭐ |
 
 ## 前置知识
 

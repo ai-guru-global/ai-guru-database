@@ -1396,7 +1396,7 @@ class LLMEvaluationPipeline:
 ## 11. 面试高频问题 (Interview FAQs)
 
 **Q1: 什么时候不应该用准确率 (Accuracy)？**
-> 当类别严重不平衡时。例如信用卡欺诈检测中，欺诈交易只占 0.1%，一个永远预测"正常"的模型准确率就有 99.9%，但毫无用处。此时应使用 PR-AUC、F1-Score 或 Recall@指定FPR。一般规则：当正负样本比例超过 1:3 时，就应考虑使用 F1 或 PR-AUC 替代准确率。
+> 当类别严重不平衡时。例如信用卡欺诈检测中，欺诈交易只占 0.1%，一个永远预测"正常"的模型准确率就有 99.9%，但毫无用处。此时应使用 PR-AUC、F1-Score 或 Recall@指定 FPR。一般规则：当正负样本比例超过 1:3 时，就应考虑使用 F1 或 PR-AUC 替代准确率。
 
 **Q2: AUC-ROC 和 PR-AUC 的区别？什么时候用哪个？**
 > AUC-ROC 衡量模型区分正负例的整体能力，在类别均衡时表现好。但在类别极度不均衡时（如 1:1000），即使 FPR 很小（如 0.01），绝对误报数量也很多，AUC-ROC 会高估性能。此时 PR-AUC（不使用 TN）更能反映模型对少数类的识别能力。**选择原则**：类别均衡看 AUC-ROC，类别不平衡看 PR-AUC。
@@ -1423,7 +1423,7 @@ class LLMEvaluationPipeline:
 > GLUE 是 2018 年推出的通用语言理解评估基准，包含 9 个相对简单的 NLP 任务。由于 BERT 等模型很快在 GLUE 上达到或超越人类水平，Google 和 NYU 于 2019 年推出 SuperGLUE 作为更困难的升级版，包含 8 个更具挑战性的任务（如 COPA 因果推理、WSC 指代消解、ReCoRD 完形填空）。SuperGLUE 设计了更具挑战性的任务类型，并且引入了人类基线对比。当前顶尖大模型在 SuperGLUE 上也已接近或超越人类表现。
 
 **Q10: 成对比较和 Likert 量表各有什么优劣？**
-> **Likert 量表**（1-5/1-7 分）：优点是直观、统计分析成熟、可以同时评估多个维度；缺点是标注者间一致性可能较低、不同标注者对"3分"的理解可能不同。**成对比较**（A vs B）：优点是标注者更容易判断"哪个更好"而非"打几分"、结果更可靠；缺点是只能产生相对排名、不能直接量化差距、需要 O(n²) 次比较。最佳实践：用 Likert 做初步筛选，用成对比较对头部模型做精确排名，用 ELO 系统整合成对比较结果。
+> **Likert 量表**（1-5/1-7 分）：优点是直观、统计分析成熟、可以同时评估多个维度；缺点是标注者间一致性可能较低、不同标注者对"3 分"的理解可能不同。**成对比较**（A vs B）：优点是标注者更容易判断"哪个更好"而非"打几分"、结果更可靠；缺点是只能产生相对排名、不能直接量化差距、需要 O(n²) 次比较。最佳实践：用 Likert 做初步筛选，用成对比较对头部模型做精确排名，用 ELO 系统整合成对比较结果。
 
 ---
 
@@ -1461,3 +1461,4 @@ class LLMEvaluationPipeline:
 - [[08_Model_Evaluation/Model_Evaluation_for_dummy.md|Model_Evaluation_for_dummy]]
 - [[19_Ethics_Safety/Safety_Evaluation_Framework|AI 安全评测框架]] — 安全评测基准与红队测试方法论
 - [[synthesis/safety-evaluation-red-teaming|安全评测 × 红队]] — 模型评估与安全
+- [[synthesis/agent-evaluation-model-evaluation|Agent 评估 × 模型评估]] — 从指标到行为的评估范式迁移

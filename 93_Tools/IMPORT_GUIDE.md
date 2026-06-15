@@ -158,9 +158,9 @@ ln -s /path/to/ai-guru-knowledge-base/docs ~/Documents/ObsidianVault/AI-Guru
 2. 选择「Open folder as vault」
 3. 选择 `AI-Guru` 文件夹
 4. 安装推荐插件：
-   - **Graph View**: 查看知识图谱
-   - **Search**: 全文搜索
-   - **Tags**: 标签管理
+ - **Graph View**: 查看知识图谱
+ - **Search**: 全文搜索
+ - **Tags**: 标签管理
 
 ### 使用技巧
 

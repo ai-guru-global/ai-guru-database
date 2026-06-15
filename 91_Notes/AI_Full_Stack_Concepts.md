@@ -208,16 +208,16 @@ updated: 2026-05-31
 | ReLU (Rectified Linear Unit) | 修正线性单元 | f(x) = max(0, x) | 默认激活函数 |
 | Leaky ReLU | 带泄露 ReLU | 负数区域有小的斜率 | 缓解神经元死亡 |
 | GELU | 高斯误差线性单元 | 平滑的 ReLU 变体 | Transformer |
-| Sigmoid | S型函数 | f(x) = 1/(1+e^(-x)) | 二分类输出 |
+| Sigmoid | S 型函数 | f(x) = 1/(1+e^(-x)) | 二分类输出 |
 | Tanh | 双曲正切 | 零中心的 S 型函数 | RNN 隐藏层 |
 | Softmax | 软最大 | 转换为概率分布 | 多分类输出 |
-| Swish/SiLU | Swish激活 | x * sigmoid(x) | 自动搜索发现 |
+| Swish/SiLU | Swish 激活 | x * sigmoid(x) | 自动搜索发现 |
 | Layer Normalization | 层归一化 | 对每层输入归一化 | Transformer |
 | Batch Normalization | 批归一化 | 对批次数据归一化 | CNN 加速训练 |
 | Group Normalization | 组归一化 | 通道分组归一化 | 小批次训练 |
 | Weight Initialization | 权重初始化 | 网络权重初始值设定 | 训练稳定性 |
-| Xavier/Glorot Initialization | Xavier初始化 | 保持前向后向方差一致 | Tanh/Sigmoid |
-| He Initialization | He初始化 | 适应 ReLU 的初始化 | ReLU 网络 |
+| Xavier/Glorot Initialization | Xavier 初始化 | 保持前向后向方差一致 | Tanh/Sigmoid |
+| He Initialization | He 初始化 | 适应 ReLU 的初始化 | ReLU 网络 |
 
 ### 3.2 训练机制 (Training Mechanisms)
 
@@ -272,8 +272,8 @@ updated: 2026-05-31
 | Transformer | Transformer | 基于自注意力的架构 | NLP、CV 通用 |
 | ResNet | 残差网络 | 带残差连接的深层网络 | 图像分类 |
 | DenseNet | 密集连接网络 | 每层与后面所有层连接 | 特征重用 |
-| Inception | Inception网络 | 多尺度卷积并行 | 多尺度特征 |
-| U-Net | U型网络 | 编码器-解码器带跳跃连接 | 图像分割 |
+| Inception | Inception 网络 | 多尺度卷积并行 | 多尺度特征 |
+| U-Net | U 型网络 | 编码器-解码器带跳跃连接 | 图像分割 |
 | VAE (Variational Autoencoder) | 变分自编码器 | 学习潜在分布的生成模型 | 生成、表示学习 |
 | GAN (Generative Adversarial Network) | 生成对抗网络 | 生成器与判别器对抗训练 | 图像生成 |
 | Diffusion Model | 扩散模型 | 逐步去噪的生成模型 | 高质量图像生成 |
@@ -458,7 +458,7 @@ updated: 2026-05-31
 | Concept | 中文 | 定义 | 应用场景 |
 |---------|------|------|----------|
 | Quantization | 量化 | 降低数值精度 | 推理加速 |
-| INT8/INT4 Quantization | 8/4位量化 | 权重量化到 INT8/INT4 | 边缘部署 |
+| INT8/INT4 Quantization | 8/4 位量化 | 权重量化到 INT8/INT4 | 边缘部署 |
 | AWQ (Activation-Aware Weight Quantization) | 激活感知权重量化 | 考虑激活的量化 | 4-bit 推理 |
 | GPTQ | GPTQ | 逐层量化方法 | 后训练量化 |
 | GGUF/GGML | GGUF/GGML | llama.cpp 量化格式 | 本地推理 |

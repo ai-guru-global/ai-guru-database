@@ -9,7 +9,7 @@ updated: 2026-05-31
 
 # AI 供应链安全 2026
 
-> **一句话理解**: AI供应链如同软件供应链一样脆弱——从训练数据到模型权重，从API调用到第三方SDK，每一个环节都可能成为攻击向量。2026年的AI系统安全必须从「模型安全」扩展到「全链路供应链安全」。
+> **一句话理解**: AI 供应链如同软件供应链一样脆弱——从训练数据到模型权重，从 API 调用到第三方 SDK，每一个环节都可能成为攻击向量。2026 年的 AI 系统安全必须从「模型安全」扩展到「全链路供应链安全」。
 
 ---
 
@@ -353,9 +353,9 @@ class ModelSignatureVerifier:
 
 ---
 
-## 4. API与SDK供应链
+## 4. API 与 SDK 供应链
 
-### 4.1 第三方AI API风险
+### 4.1 第三方 AI API 风险
 
 ```
 风险场景1: API劫持
@@ -383,7 +383,7 @@ class ModelSignatureVerifier:
 防御: 严格的速率限制 + 异常检测
 ```
 
-### 4.2 SDK供应链安全
+### 4.2 SDK 供应链安全
 
 ```python
 """SDK安全使用指南"""
@@ -531,7 +531,7 @@ class AdversarialRobustnessTester:
 
 ## 6. 供应链安全最佳实践
 
-### 6.1 企业级AI供应链安全框架
+### 6.1 企业级 AI 供应链安全框架
 
 ```
 AI供应链安全四大支柱:
@@ -606,6 +606,6 @@ AI供应链安全四大支柱:
 ## Related
 
 - [[19_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming]] — AI 安全与红队 (AI Safety & Red Teaming) (共享: ai-ethics, alignment, red-teaming, safety)
-- [[19_Ethics_Safety/AI_Security_2026/README]] — AI安全 2026 (AI Security) (共享: ai-ethics, alignment, red-teaming, safety)
+- [[19_Ethics_Safety/AI_Security_2026/README]] — AI 安全 2026 (AI Security) (共享: ai-ethics, alignment, red-teaming, safety)
 - [[19_Ethics_Safety/Ethics-in-nutshell]] — AI 伦理与安全速成指南 (共享: ai-ethics, alignment, red-teaming, safety)
 - [[19_Ethics_Safety/README]] — 08 AI 伦理、安全与对齐 (Ethics, Safety & Alignment) (共享: ai-ethics, alignment, red-teaming, safety)

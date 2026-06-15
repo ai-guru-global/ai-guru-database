@@ -4,10 +4,13 @@ title: 'LSP 代码智能与 Formatter'
 tags:
 - ai
 - ai-coding
+created: 2026-06-12
+category: 17-ai-coding
+summary: ""
 ---
 title: LSP 代码智能与 Formatter
 description: '**文档类型**: 技术深度专题 | **最后更新**: 2026-03 | **关键词**: OpenCode, LSP, Language
-  Server Protocol, Formatter, Code Intelligence, Diagnostics, ripgrep'
+ Server Protocol, Formatter, Code Intelligence, Diagnostics, ripgrep'
 category: ai-coding
 tags:
 - ai
@@ -34,7 +37,7 @@ trigger_keywords:
 - coding
 authors:
 - name: KUDIG Team
-  role: contributor
+ role: contributor
 k8s_versions:
 - '1.28'
 - '1.29'

@@ -33,7 +33,7 @@ updated: 2026-06-01
 
 **证据链**:
 - `01_Fundamentals/README.md` 前置知识明确要求 **"Python 基础、NumPy 基本操作"**
-- `90_Learn/pathways/ml-practitioner.md` 要求 **"Python 1年+"**
+- `90_Learn/pathways/ml-practitioner.md` 要求 **"Python 1 年+"**
 - `Fundamentals-in-nutshell.md` 提到 Jupyter/Conda/Docker，但假设读者已会 Python
 - `AI_Practical_Labs.md` 的 8 个实验都标注"无需编程基础"——从"零代码体验"到"写代码"之间没有过渡
 

@@ -768,7 +768,7 @@ results = harness.evaluate(agent=harness_adapter)
 - **协议错误是否可诊断**：要区分是 `schema` 错误、网络错误、权限错误，还是 Agent 本身策略失误。
 - **兼容性是否可回归**：协议升级后要能快速发现 breaking changes。
 
-更完整的协议测试实现，可继续阅读 `Agent_Harness_Deep_Dive.md` 中的“Agent协议测试 (2026)”章节。
+更完整的协议测试实现，可继续阅读 `Agent_Harness_Deep_Dive.md` 中的“Agent 协议测试 (2026)”章节。
 
 ---
 

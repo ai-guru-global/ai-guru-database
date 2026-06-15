@@ -1965,10 +1965,10 @@ if __name__ == "__main__":
 - [Sample Reports](./Sample_Reports.md) - Report examples
 - [Production Assessment](../Assessment/Production_Assessment.md) - Production protocols
 - [Agent Harness Deep Dive](../Agent_Harness_Deep_Dive.md) - Comprehensive technical deep dive
-- [LLM as Judge Templates](./LLM_as_Judge_Templates.md) - LLM评估提示词模板（6套评估Prompt）
-- [API Integration Guide](./API_Integration_Guide.md) - 9大Agent API封装与批量调度器
-- [Cloud Agent Evaluation](../Cloud_Agent_Evaluation/README.md) - 云产品Agent CAPER评估框架
-- [Corpus Assessment](../Corpus_Assessment/README.md) - 语料库COVR覆盖率评估
+- [LLM as Judge Templates](./LLM_as_Judge_Templates.md) - LLM 评估提示词模板（6 套评估 Prompt）
+- [API Integration Guide](./API_Integration_Guide.md) - 9 大 Agent API 封装与批量调度器
+- [Cloud Agent Evaluation](../Cloud_Agent_Evaluation/README.md) - 云产品 Agent CAPER 评估框架
+- [Corpus Assessment](../Corpus_Assessment/README.md) - 语料库 COVR 覆盖率评估
 - [[13_Agent_Production/16_Agent_Evaluation/Cloud_Agent_Evaluation/Cloud_Agent_Benchmark_2026.md|Cloud_Agent_Benchmark_2026]]
 
 ## Related

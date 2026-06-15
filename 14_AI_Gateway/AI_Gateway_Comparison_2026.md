@@ -84,7 +84,7 @@ Kong AI Gateway 是基于 Kong API Gateway 的 AI 扩展，将 LLM API 管理能
 
 ### 优势
 
-- 成熟的 API 网关基础（10年+历史）
+- 成熟的 API 网关基础（10 年+历史）
 - Kubernetes 原生支持（Helm + Ingress CRD）
 - 丰富的插件生态（100+ 插件）
 - 企业级安全（mTLS, OAuth2, RBAC）

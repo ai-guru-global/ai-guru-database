@@ -4,6 +4,7 @@ category: 04-nlp-llms-architecture
 tags: [moe, deepseek, mixtral, case-study, sparse-model, expert-routing, open-source]
 summary: 深度剖析 DeepSeek-MoE 和 Mixtral 两大开源 MoE 标杆的架构设计、路由策略、训练方法和工程实践。
 date: 2026-06-01
+created: 2026-06-12
 ---
 
 # MoE 案例研究：DeepSeek-MoE 与 Mixtral

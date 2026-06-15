@@ -10,7 +10,8 @@ tags:
 - gateway
 - llm
 - agent
-last_updated: 2026-05
+last_created: 2026-06-12
+updated: 2026-05
 difficulty: intermediate
 reading_level: intermediate
 audience:
@@ -29,6 +30,7 @@ trigger_keywords:
 - OpenCode
 - 全量指南
 - ai
+summary: ""
 ---
 
 

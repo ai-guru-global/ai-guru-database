@@ -875,20 +875,20 @@ $$\theta \leftarrow \theta - \mathbf{H}^{-1} \nabla_{\theta} J(\theta)$$
 ### 6.3 常见陷阱
 
 1. **忘记学习率预热**:
-   - 问题: Transformer 训练初期发散
-   - 解决: 添加 Warmup (5-10% 总步数)
+ - 问题: Transformer 训练初期发散
+ - 解决: 添加 Warmup (5-10% 总步数)
 
 2. **BatchNorm + Dropout 一起用**:
-   - 问题: 两者都有正则化效果,可能冲突
-   - 建议: 优先 BatchNorm,谨慎使用 Dropout
+ - 问题: 两者都有正则化效果,可能冲突
+ - 建议: 优先 BatchNorm,谨慎使用 Dropout
 
 3. **学习率过大导致 NaN**:
-   - 检测: 监控梯度范数,异常时降低学习率
-   - 预防: 梯度裁剪 + 合理初始化
+ - 检测: 监控梯度范数,异常时降低学习率
+ - 预防: 梯度裁剪 + 合理初始化
 
 4. **验证集性能震荡**:
-   - 原因: BatchNorm 在小 batch 下统计量不稳定
-   - 解决: 增大 batch size 或用 Layer Norm
+ - 原因: BatchNorm 在小 batch 下统计量不稳定
+ - 解决: 增大 batch size 或用 Layer Norm
 
 ## 7. 与其他主题的关联 (Connections)
 

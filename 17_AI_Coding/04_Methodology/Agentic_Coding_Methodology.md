@@ -1,237 +1,126 @@
 ---
-title: 'Agentic Coding 方法论'
-category: '17-ai-coding-04-methodology'
-tags: ["ai-coding", "code-generation", "cursor", "github-copilot", "ai-agents"]
-summary: '> **一句话理解**: 当编码从"人与单个AI对话"进化为"多个专业Agent协作"，需要全新的编排方法、质量保障和人在环机制——本文档构建 Agentic Coding 的方法论框架。'
-created: '2026-05-31'
-updated: '2026-05-31'
+title: "Agentic Coding Methodology 2026: Multi-Agent Software Engineering"
+category: "17-ai-coding"
+tags: ["ai-coding", "agentic-coding", "multi-agent-systems", "software-engineering", "workflow", "2026-trends"]
+summary: "> **一句话理解**: Agentic Coding 是软件工程的范式转移——从“人编写代码”转变为“人指挥一个由多个 AI 专家组成的团队协作编写代码”。"
+created: 2026-06-04
+updated: 2026-06-04
 ---
 
-# Agentic Coding 方法论
+# Agentic Coding Methodology 2026: Multi-Agent Software Engineering
 
-> **一句话理解**: 当编码从"人与单个AI对话"进化为"多个专业Agent协作"，需要全新的编排方法、质量保障和人在环机制——本文档构建 Agentic Coding 的方法论框架。
-
-> **状态**: 占位文件，大纲已建立，详细内容待后续填充。
+> **一句话理解**: Agentic Coding 是软件工程的范式转移——从“人编写代码”转变为“人指挥一个由多个 AI 专家组成的团队协作编写代码”。
 
 ---
 
 ## 目录
 
-1. [概述](#1-概述)
-2. [多Agent协作架构](#2-多agent协作架构)
-3. [编排模式](#3-编排模式)
-4. [工具与框架](#4-工具与框架)
-5. [质量保障](#5-质量保障)
-6. [最佳实践与反模式](#6-最佳实践与反模式)
+| 章节 | 内容 | 难度 |
+|------|------|------|
+| [从 Copilot 到 Agentic Team](#1-从-copilot-到-agentic-team) | 范式演进、自主性等级 | 入门 |
+| [多智能体协作架构 (M-ASE)](#2-多智能体协作架构-m-ase) | 角色定义、通信协议、环境共享 | 进阶 |
+| [核心协作模式](#3-核心协作模式) | 瀑布流、蜂群模式、评审循环 | 进阶 |
+| [环境与工具：The Sandbox](#4-环境与工具the-sandbox) | 隔离执行环境、LSP 共享、实时调试 | 专业 |
+| [质量保障：Agent-in-the-Loop](#5-质量保障agent-in-the-loop) | 自动测试、覆盖率驱动的迭代、漏洞自愈 | 进阶 |
+| [2026 实战工作流案例](#6-2026-实战工作流案例) | 从需求文档到部署的 0 人工干预尝试 | 实战 |
 
 ---
 
-## 1. 概述
+## 1. 从 Copilot 到 Agentic Team
 
-### 1.1 定义
+传统的 AI 编程（如 2023 年的 Copilot）是“指令式”的。Agentic Coding 则是“目标驱动”的。
 
-```
-Agentic Coding:
-┌─────────────────────────────────────────────────────────────┐
-│                                                               │
-│  Agentic Coding 是一种软件开发范式，多个自主 AI Agent         │
-│  在编排层协调下协作完成编码任务，人类在关键节点做决策——       │
-│  核心是从"人指挥一个AI"转变为"人管理一个AI团队"。           │
-│                                                               │
-└─────────────────────────────────────────────────────────────┘
-```
-
-### 1.2 从 Vibe Coding 到 Agentic Coding
-
-```
-演进脉络:
-═══════════════════════════════════════════════════════════════
-
-Vibe Coding (2025):
-├── 1个人 + 1个AI
-├── 线性的 DGRV 循环 (描述→生成→审查→验证)
-├── 人类全程监控每次交互
-└── 效率提升: 50-200%
-
-Agentic Coding (2026+):
-├── 1个人 + N个专业Agent
-├── 并行的多任务执行 + 编排协调
-├── 人类在关键节点决策 (Human-in-the-Loop)
-└── 效率提升: 200-500% (预期)
-```
-
-**要点大纲**:
-- Agentic Coding 的核心特征：自主性、工具使用、多步推理、自我纠错
-- 与传统自动化 (CI/CD) 的区别：意图驱动 vs 规则驱动
-- 适用场景判断：何时该从 Vibe Coding 升级到 Agentic Coding
+### 1.1 自主性等级 (Autonomy Levels)
+- **L1: 补全式**: 预测下一行代码。
+- **L2: 聊天式**: 通过对话生成函数或文件。
+- **L3: 任务级 Agent**: 给出一个明确任务（如“重构这个模块”），它能自主阅读文件并修改。
+- **L4: 协作型 Team (Current 2026)**: 多个 Agent 扮演不同角色（设计、编码、测试），共同完成一个 Epic。
 
 ---
 
-## 2. 多Agent协作架构
+## 2. 多智能体协作架构 (Multi-Agent Software Engineering)
 
-### 2.1 Agent 角色定义
+在 2026 年，一个典型的编程智能体团队由以下角色组成：
 
-```
-专业Agent角色:
-═══════════════════════════════════════════════════════════════
-
-架构师 Agent (Architect):
-├── 系统设计和模块拆分
-├── 接口定义和依赖分析
-├── 技术选型建议
-└── 架构一致性审查
-
-编码 Agent (Coder):
-├── 代码实现
-├── Bug 修复
-├── 重构执行
-└── 遵循架构师的接口规范
-
-测试 Agent (Tester):
-├── 测试用例设计
-├── 单元/集成/E2E 测试编写
-├── 变异测试
-└── 覆盖率分析
-
-审查 Agent (Reviewer):
-├── 代码质量审查
-├── 安全漏洞检测
-├── 性能分析
-└── 最佳实践检查
+```mermaid
+graph TD
+    User([User Goal]) --> PM[Product Manager Agent]
+    PM --> Arch[Architect Agent]
+    Arch --> Implementer[Coder Agent]
+    Implementer <--> Reviewer[Reviewer Agent]
+    Implementer <--> Tester[QA Agent]
+    Tester --> Sandbox[Execution Sandbox]
+    Reviewer --> PM
 ```
 
-**要点大纲**:
-- 每个 Agent 的职责边界和工具集
-- Agent 间的通信协议 (上下文传递、结果汇报)
-- Agent 的配置策略 (模型选择、温度参数、工具权限)
-- 子代理委托机制 (如 Hermes Agent 的 delegate_task)
-
-### 2.2 编排层设计
-
-**要点大纲**:
-- 编排层职责：任务拆解、Agent 分配、上下文管理、冲突解决
-- 中央编排 vs 去中心化协作的权衡
-- 编排状态管理 (任务队列、执行状态、依赖关系)
+### 2.1 角色职责 (Role Definition)
+- **Architect (架构师)**: 负责全局依赖分析、技术选型和接口定义。
+- **Implementer (执行者)**: 负责编写具体逻辑，直接操作文件系统。
+- **Tester (测试员)**: 编写单测、集成测试，并在沙箱中运行。
+- **Reviewer (评审员)**: 负责代码风格检查、安全扫描和逻辑纠错。
 
 ---
 
-## 3. 编排模式
+## 3. 核心协作模式
 
-### 3.1 串行管道模式
+### 3.1 瀑布流模式 (Sequential Chain)
+最稳定的模式，上一个 Agent 的输出是下一个的输入。适用于需求明确的小型功能。
 
-**要点大纲**:
-- 适用场景：需求明确、阶段清晰的任务
-- 示例：架构师出方案 → 编码者实现 → 测试者验证 → 审查者检查
-- 关键设计：阶段间的上下文传递格式
+### 3.2 动态蜂群模式 (Dynamic Swarms)
+Agent 根据实时运行结果（如编译错误）动态生成新的子任务。
+- **特点**: 高自主性，适合处理复杂的存量代码重构。
 
-### 3.2 并行协作模式
-
-**要点大纲**:
-- 适用场景：可独立开发的模块
-- 示例：编码者A做用户模块 + 编码者B做订单模块 → 合并
-- 关键设计：冲突预防和解决策略
-
-### 3.3 条件路由模式
-
-**要点大纲**:
-- 适用场景：任务类型多样的场景
-- 示例：根据文件类型/变更范围动态分配不同 Agent
-- 关键设计：路由规则和 Agent 选择策略
-
-### 3.4 人在环模式 (Human-in-the-Loop)
-
-**要点大纲**:
-- 适用场景：安全关键、高风险决策
-- 人类介入点：架构审批、安全审查、发布确认
-- 关键设计：通知机制、等待策略、超时处理
+### 3.3 竞争与共识 (Competitive Selection)
+同时由两个不同的模型（如 Claude 4 和 GPT-5）生成方案，由第三个模型进行 Cross-check 并选择最优解。
 
 ---
 
-## 4. 工具与框架
+## 4. 环境与工具：The Sandbox
 
-### 4.1 主流 Agentic Coding 平台
+Agentic Coding 的核心不是模型，而是**环境能力**。
 
-```
-平台对比:
-═══════════════════════════════════════════════════════════════
-
-平台            多Agent   开源    模型自由    消息平台    IDE集成
-─────────────────────────────────────────────────────────────
-Hermes Agent    子代理3   MIT     17+        7个        ACP
-Devin           内置      否      自有        无         无
-OpenCode        无        Apache  多模型      无         无
-Cursor          无        否      多模型      无         内置IDE
-Claude Code     无        否      Anthropic   无         无
-```
-
-**要点大纲**:
-- 各平台的多Agent能力对比
-- 选择建议：根据团队规模、安全要求、预算
-- 集成方案：如何组合多个平台形成工作流
-
-### 4.2 Agent 框架
-
-**要点大纲**:
-- CrewAI / AutoGen / LangGraph 等 Agent 框架对比
-- 自定义 Agent 开发：工具定义、提示模板、记忆系统
-- 与现有 CI/CD 的集成
+- **隔离环境**: 所有代码修改和运行都在 Docker 容器或 WebContainer 中进行，防止污染宿主机。
+- **LSP 深度集成**: Agent 不再只是看纯文本，它们通过 Language Server Protocol (LSP) 获取符号定义、类型提示和引用关系。
+- **Tool-use 矩阵**: 
+  - `edit_file`: 增量修改。
+  - `run_command`: 执行 shell 命令。
+  - `search_repo`: 语义化搜索代码库。
+  - `browser_interact`: 运行前端并截图验证 UI。
 
 ---
 
-## 5. 质量保障
+## 5. 质量保障：Agent-in-the-Loop
 
-### 5.1 Agent 输出验证
+### 5.1 覆盖率驱动的自我修正
+1. Agent 编写功能代码。
+2. Agent 编写测试用例。
+3. 运行测试，发现覆盖率不足或报错。
+4. Agent 自动分析报错日志，修改代码。
+5. **循环直到 100% 通过**。
 
-**要点大纲**:
-- 每个 Agent 输出的验证策略
-- 自动化验证 vs 人工验证的决策树
-- Agent 间的交叉验证 (编码者 vs 测试者 vs 审查者)
-
-### 5.2 回滚与恢复机制
-
-**要点大纲**:
-- Git Checkpoints / Worktree 隔离
-- Agent 执行的事务性保证
-- 失败时的状态恢复策略
-
-### 5.3 监控与可观测性
-
-**要点大纲**:
-- Agent 执行日志和审计追踪
-- 质量指标看板 (Agent 成功率、代码质量、效率提升)
-- 异常检测和自动告警
+### 5.2 安全左移
+Reviewer Agent 在合并代码前自动运行 SAST (静态分析工具) 和红队测试，拦截潜在的 SQL 注入或凭证泄露。
 
 ---
 
-## 6. 最佳实践与反模式
+## 6. 2026 实战工作流案例
 
-### 6.1 最佳实践
-
-**要点大纲**:
-- 从单Agent开始，逐步引入多Agent
-- 为每个Agent定义清晰的职责边界和工具权限
-- 在关键决策点设置人类审批
-- 使用 Git Checkpoints 保护代码状态
-- 建立Agent间的上下文传递标准格式
-
-### 6.2 反模式
-
-**要点大纲**:
-- Agent爆炸：不必要的多Agent增加复杂度
-- 无人环：完全自治运行导致错误累积
-- 上下文污染：Agent间传递无关信息
-- 权限过度：给Agent超出需要的工具权限
-- 责任模糊：人类不知道哪个Agent做了什么
+### 场景：从 Figma 图片到全栈功能
+1. **Frontend Agent**: 读取 Figma 截图，生成 React 组件。
+2. **Backend Agent**: 根据前端需求，定义 FastAPI 接口并模拟 Mock 数据。
+3. **Database Agent**: 设计 SQL 迁移文件。
+4. **Integration Agent**: 将三者串联，并在沙箱中运行端到端测试。
+5. **Human**: 审核最终运行的预览链接，点击“Deploy”。
 
 ---
 
-## 参考资源
+## Related
 
-- [AI辅助编程理论基础](../01_Theory/AI_Coding_Theory.md) — Agentic Coding 架构原理
-- [Vibe Coding 方法论](./Vibe_Coding_Methodology.md) — Vibe Coding 完整方法论
-- [Hermes Agent 深度指南](../02_Tools/Hermes_Agent_2026.md) — 多Agent平台实践
-- [AI编程助手对比](../02_Tools/AI_Coding_Assistants_2026.md) — 工具选型参考
+- [[17_AI_Coding/01_Theory/AI_Coding_Theory]] — 编程范式演进
+- [[13_Agent_Production/Agent_Frameworks/AutoGen_CrewAI_LangGraph_Dive]] — 协作框架的技术底层
+- [[13_Agent_Production/Agent_Workflow/Agentic_Workflow_Design_Patterns_2026]] — 通用工作流模式
+- [[17_AI_Coding/04_Methodology/Vibe_Coding_Methodology]] — 个人开发者视角的方法论
 
 ---
 
-*Placeholder document — Last updated: 2026-04*
+*Last updated: 2026-06-04*

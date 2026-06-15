@@ -1332,6 +1332,98 @@ model.print_trainable_parameters()
 
 ---
 
+## Qwen 3.7 系列最新更新 (2026年6月)
+
+### API 模型矩阵
+
+Qwen 在 2026 年持续迭代 API 模型产品线，覆盖从旗舰到经济的全层级：
+
+| 模型 | 上下文 | 思维预算 (Thinking Budget) | 最大输出 | 定位 |
+|------|--------|--------------------------|---------|------|
+| **qwen3.7-max** | 1M | 256K | 64K | 最强旗舰，复杂推理与 Agent |
+| **qwen3.7-plus** | 1M | 256K | 64K | 性价比平衡，生产环境首选 |
+| **qwen3.6-flash** | 1M | 128K | 64K | 最低成本，高吞吐场景 |
+| **qwen3.6-max-preview** | 256K | 128K | 64K | 预览版，256K 上下文 |
+| **qwen3.5-plus** | 1M | 80K | 64K | 上一代 Plus |
+| **qwen3.5-flash** | 1M | 80K | 64K | 上一代 Flash |
+
+> 所有模型均支持 **64K max output**，是目前开源生态中输出长度最大的模型之一。
+
+### 开源模型 (Open-Weight)
+
+2026 年新发布的开源权重模型：
+
+| 模型 | 架构 | 总参数 | 激活参数 | 说明 |
+|------|------|--------|---------|------|
+| **qwen3.5-397b-a17b** | MoE | 397B | 17B | 大规模 MoE 旗舰 |
+| **qwen3.5-122b-a10b** | MoE | 122B | 10B | 中等规模 MoE |
+| **qwen3.5-27b** | Dense | 27B | 27B | Dense 大模型 |
+| **qwen3.5-35b-a3b** | MoE | 35B | 3B | 超高效 MoE，端侧可部署 |
+
+### 混合思维模式 (Hybrid Thinking)
+
+Qwen 3.7 系列延续了混合思维模式设计，支持两种 API 调用方式：
+
+**方式 1: `enable_thinking` 参数 (Chat Completions API)**
+
+```python
+from openai import OpenAI
+
+client = OpenAI(
+    base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
+    api_key="your-api-key"
+)
+
+# 启用深度思考模式
+response = client.chat.completions.create(
+    model="qwen3.7-max",
+    messages=[
+        {"role": "user", "content": "证明 e 是无理数"}
+    ],
+    extra_body={
+        "enable_thinking": True,       # 启用思维模式
+        "thinking_budget": 16384       # 思维 token 预算
+    }
+)
+
+# 关闭思考，快速响应
+response_fast = client.chat.completions.create(
+    model="qwen3.7-plus",
+    messages=[
+        {"role": "user", "content": "今天天气怎么样？"}
+    ],
+    extra_body={
+        "enable_thinking": False
+    }
+)
+```
+
+**方式 2: `reasoning.effort` 参数 (Responses API)**
+
+```python
+# 使用 Responses API 的 reasoning.effort 控制思维深度
+response = client.responses.create(
+    model="qwen3.7-max",
+    input="分析这段代码的时间复杂度并给出优化建议",
+    reasoning={
+        "effort": "high"    # low / medium / high
+    }
+)
+```
+
+### 工具调用与结构化输出
+
+Qwen 3.7 系列全面支持以下高级功能：
+
+| 功能 | 支持模型 | 说明 |
+|------|---------|------|
+| **Function Calling** | plus / flash / max | 工具调用，支持多工具并行 |
+| **Structured Output (JSON)** | 全系列 | 强制 JSON Schema 输出 |
+| **Batch Inference** | plus / flash | 异步批处理，50% 折扣 |
+| **Vision (图像理解)** | 全系列 | 文本+图像多模态输入 |
+
+---
+
 ## 相关文档
 
 ### 架构基础
@@ -1360,4 +1452,22 @@ model.print_trainable_parameters()
 
 ---
 
+
+
+## 信息来源
+
+### 官方来源
+- 通义千问官网: https://qwen.readthedocs.io
+- Qwen GitHub: https://github.com/QwenLM/Qwen2.5
+- Qwen 在线体验: https://tongyi.aliyun.com/qianwen
+- 阿里云百炼平台: https://bailian.console.aliyun.com
+- Qwen2.5 技术报告: arXiv:2412.15115
+- Qwen2.5-VL 技术报告: arXiv:2502.13923
+
+### Wiki 内部参考
+- [[04_NLP_LLMs/Chinese_LLM_Ecosystem/README]] — 中国大模型生态全景
+- [[04_NLP_LLMs/Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]] — 全厂商对比矩阵
+- [[04_NLP_LLMs/Chinese_LLM_Ecosystem/Chinese_LLM_Training_Inference_Platforms]] — 训推平台实战
+
+---
 *Last updated: 2026-06-01*

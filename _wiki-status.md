@@ -3,85 +3,145 @@ title: Wiki Status Report
 category: meta
 tags: [meta, status, audit, health]
 summary: Wiki 全库健康度审计报告，包含页面统计、链接健康、Token 用量和待办建议。
+updated: 2026-06-05
 ---
 
 # Wiki Status
 
-生成时间: 2026-06-01 13:42
+生成时间: 2026-06-05
 
 ## Overview
 
-- **Total wiki pages:** 749
-- **Page visibility:** 749 public · 0 internal · 0 pii
-- **Total sources ingested:** 0 (content-native vault)
+- **Total wiki pages:** 865 across 30+ categories
+- **Page visibility:** 865 public · 0 internal · 0 pii
+- **Total sources ingested:** 0 (content-native vault, manifest empty)
 - **Projects tracked:** 0
-- **Last full rebuild:** N/A
-- **Staged writes pending:** 0
+- **Last ingest:** N/A (all content authored directly)
+- **Synthesis pages:** 21
+- **Frontmatter coverage:** 100%
 
-## Delta
+## Delta (what's changed since last ingest)
 
-### New sources: 0
-### Modified sources: 0
-### Deleted sources: 0
+本仓库为 content-native wiki — 所有内容直接编写，非通过 wiki-ingest pipeline 导入。
 
-> 本仓库为 content-native wiki，无外部源追踪。
+### External sources available but not tracked:
+
+| Source | Type | Count |
+|---|---|---|
+| ~/.claude/projects/*/*.jsonl | claude_conversation | 419 across 48 projects |
+| ~/.codex/sessions/**/rollout-*.jsonl | codex_rollout | 5 |
+| AI Stack 用户指南.pdf | document | 1 |
+
+### Deleted sources (ingested but gone): 0
+
+## Summary
+
+- **Ready to ingest:** 425 external sources (419 Claude convos + 5 Codex rollouts + 1 PDF)
+- **Wiki pages:** 865 content pages, all up to date
+- **Recommendation:** Ingest selectively — most Claude/Codex history may be project-specific and low-value for this knowledge base
 
 ## Token Footprint (estimated)
 
 | Scope | Pages | ~Tokens |
 |---|---|---|
-| core tier | 18 | 15,927 |
-| supporting tier | 731 | 1,854,289 |
+| core tier | 52 | 70,560 |
+| supporting tier | 35 | 49,015 |
 | peripheral tier | 0 | 0 |
-| **Full wiki (all)** | **749** | **1,870,216** |
+| untagged (default supporting) | 778 | 3,023,041 |
+| **Full wiki (all)** | **865** | **3,142,616** |
 
-Index-only pass (frontmatter + summaries): ~24,129 tokens
-Typical query (index + 5 full pages): ~36,609 tokens
+Index-only pass (frontmatter + summaries): ~34,600 tokens
+Typical query (index + 5 full pages):      ~52,765 tokens
 
-⚠️  Full wiki exceeds 100K tokens. Consider:
-  - Demoting peripheral pages
+⚠️  Full wiki exceeds 100K tokens (threshold: 100,000). Consider:
+  - Demoting peripheral pages — 778 pages lack `tier:` assignment; run `/wiki-status insights` for tier suggestions
   - Running /wiki-lint --consolidate to merge near-duplicates
   - Using wiki-query fast mode for most queries
 
+_4 chars/token heuristic_
+
 ## What to Do Next
 
-0. 🧩  20 synthesis opportunities identified → run: /wiki-synthesize
+1. 🏷️  778 pages lack `tier:` assignment — run: /wiki-status insights
+   Only 86 of 865 pages have explicit tier. Most vault tokens are in untagged pages.
+
+2. 🧩  20 synthesis opportunities identified (last scan: 2026-06-04) → run: /wiki-synthesize
+   Cross-domain pairs ≥3 co-occurrences: 85, uncovered: 20
+
+3. 📥  425 external sources available but untracked → run: /wiki-history-ingest
+   419 Claude conversations + 5 Codex rollouts + 1 PDF
+
+4. 🔗  12 orphan pages (mostly meta files) → run: /cross-linker
+   _insights, _wiki-status, _wiki-digest, log, hot, index, etc.
+
+5. ✅  Wiki health: 100% — 0 broken links, 0 bad YAML, 0 content orphans
+
+6. 🩺  Lint last run 2026-06-04 (1 day ago) — health 100%
 
 ## Detailed Metrics
 
 | 指标 | 数值 |
 |---|---|
-| 总页面 | 749 |
-| Frontmatter 覆盖率 | 749/749 |
-| 有效 YAML | 749/749 |
-| Wikilinks | 3485 |
-| Orphans | 4 |
+| 总页面 | 865 |
+| Frontmatter 覆盖率 | 865/865 (100%) |
+| 有效 YAML | 865/865 |
+| Wikilinks | 4,347 |
+| Orphans | 12 (meta files only) |
 | Broken links | 0 |
-| 合成页面 | 12 |
-| 唯一标签 | 414 |
-
-## Orphan List
-
-```
-  .github/ISSUE_TEMPLATE/bug_report.md
-  .github/ISSUE_TEMPLATE/documentation.md
-  .github/ISSUE_TEMPLATE/feature_request.md
-  .github/ISSUE_TEMPLATE/knowledge_gap.md
-```
+| 合成页面 | 21 |
+| Core tier pages | 52 |
+| Supporting tier pages | 35 |
+| Peripheral tier pages | 0 |
+| Untagged pages | 778 |
 
 ## Top Anchors
 
 | 页面 | 入链 |
 |---|---|
-| 23_Interviews/AI_Data_Analyst/company_level_question_bank | 86 |
-| 13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow | 71 |
-| 23_Interviews/AI_Data_Analyst/interview_answers | 70 |
-| 23_Interviews/AI_Data_Analyst/interview_preparing | 70 |
-| 23_Interviews/AI_Data_Analyst/question_bank | 70 |
-| 13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026 | 61 |
-| 13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026 | 61 |
-| 13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment | 60 |
-| 21_Talks/Andrej_Karpathy/about | 42 |
-| 21_Talks/Andrew_Ng/about | 42 |
+| 23_Interviews/AI_Data_Analyst/company_level_question_bank | 88 |
+| 13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow | 73 |
+| 23_Interviews/AI_Data_Analyst/question_bank | 72 |
+| 23_Interviews/AI_Data_Analyst/interview_preparing | 72 |
+| 23_Interviews/AI_Data_Analyst/interview_answers | 72 |
+| 13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026 | 63 |
+| 13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026 | 63 |
+| 13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment | 61 |
+| 21_Talks/Andrew_Ng/sayings | 43 |
+| 21_Talks/Andrej_Karpathy/about | 43 |
 
-_Last updated: 2026-06-01 13:42_
+## Category Distribution
+
+| Category | Pages |
+|---|---|
+| 13_Agent_Production | 108 |
+| 23_Interviews | 88 |
+| concepts | 86 |
+| 04_NLP_LLMs | 63 |
+| 17_AI_Coding | 57 |
+| 21_Talks | 46 |
+| 02_Machine_Learning | 27 |
+| 16_AI_Ops | 23 |
+| 06_Reinforcement_Learning | 21 |
+| 19_Ethics_Safety | 21 |
+| synthesis | 21 |
+| 01_Fundamentals | 21 |
+| 11_RAG_Systems | 20 |
+| 05_Computer_Vision | 20 |
+| 18_Cloud_Ops_Agent | 19 |
+| 22_Papers | 18 |
+| 20_AI_Applications_Industry | 18 |
+| 09_Deployment_Inference | 18 |
+| 07_Model_Training | 18 |
+| 03_Deep_Learning | 16 |
+| 90_Learn | 15 |
+| 12_Architecture_Infrastructure | 13 |
+| 08_Model_Evaluation | 13 |
+| 00_AI_Introduction | 13 |
+| 15_Testing | 12 |
+| 14_AI_Gateway | 11 |
+| 10_MLOps_Pipeline | 11 |
+| 91_Notes | 5 |
+| 94_Visualization | 5 |
+| 93_Tools | 7 |
+
+_Last updated: 2026-06-05_

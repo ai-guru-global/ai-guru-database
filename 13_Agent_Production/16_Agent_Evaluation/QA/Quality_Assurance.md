@@ -907,7 +907,7 @@ corpus_qa:
 - [Performance Benchmarks](./Performance_Benchmarks.md) - Industry benchmarks
 - [Evaluation Workflow](../Assessment/Evaluation_Workflow.md) - Process details
 - [Scoring Rubrics](../Rubrics/Scoring_Rubrics.md) - Scoring guidelines
-- [Cloud Agent Evaluation](../Cloud_Agent_Evaluation/README.md) - 云产品Agent评估
+- [Cloud Agent Evaluation](../Cloud_Agent_Evaluation/README.md) - 云产品 Agent 评估
 - [Corpus Assessment](../Corpus_Assessment/README.md) - 语料库评估
 - [LLM as Judge Templates](../Implementation/LLM_as_Judge_Templates.md) - 评估模板
 

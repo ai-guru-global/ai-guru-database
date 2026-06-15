@@ -125,3 +125,6 @@ updated: 2026-05-31
 - [[16_AI_Ops/README_for_dummy]] — 16 AI Ops — 小白版 📡 (共享: ai-ops, incident-response, monitoring, observability)
 - [[16_AI_Ops/CI_CD_Pipeline_AI_2026.md|CI_CD_Pipeline_AI_2026]]
 
+## 新增页面
+
+- [[16_AI_Ops/AI_Observability_Guide_2026|AI 可观测性指南]]

@@ -770,20 +770,20 @@ $$\mathbf{h}_i = \begin{cases} 0 & \text{with prob } p \\ \frac{1}{1-p} \mathbf{
 ### 6.3 常见陷阱
 
 1. **忘记设置 model.eval()**:
-   - Dropout/BatchNorm 在训练和推理行为不同
-   - 推理时必须调用 `model.eval()`
+ - Dropout/BatchNorm 在训练和推理行为不同
+ - 推理时必须调用 `model.eval()`
 
 2. **学习率过大**:
-   - 现象: 损失震荡或 NaN
-   - 解决: 使用学习率预热 (warmup) + 衰减
+ - 现象: 损失震荡或 NaN
+ - 解决: 使用学习率预热 (warmup) + 衰减
 
 3. **数据泄露**:
-   - 错误: 在全量数据上做归一化
-   - 正确: 只在训练集上 fit,测试集上 transform
+ - 错误: 在全量数据上做归一化
+ - 正确: 只在训练集上 fit,测试集上 transform
 
 4. **过拟合**:
-   - 现象: 训练误差低,验证误差高
-   - 解决: Dropout, L2 正则化, Early Stopping, 数据增强
+ - 现象: 训练误差低,验证误差高
+ - 解决: Dropout, L2 正则化, Early Stopping, 数据增强
 
 ## 7. 与其他主题的关联 (Connections)
 

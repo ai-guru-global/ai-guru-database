@@ -9,7 +9,7 @@ updated: 2026-05-31
 
 # AI Infrastructure 2026 完全指南
 
-> **一句话理解**: 2026年的AI基础设施是围绕高效推理、智能路由和成本优化构建的——从硬件芯片革新到软件栈演进，从训练集群到推理服务，每一层都在追求极致的效率和可靠性。
+> **一句话理解**: 2026 年的 AI 基础设施是围绕高效推理、智能路由和成本优化构建的——从硬件芯片革新到软件栈演进，从训练集群到推理服务，每一层都在追求极致的效率和可靠性。
 
 ---
 
@@ -614,7 +614,7 @@ class SemanticCache:
         })
 ```
 
-**命中率**: 典型工作负载 30-50%  
+**命中率**: 典型工作负载 30-50% 
 **成本节省**: 40-50%
 
 ### 5.4 开源方案对比
@@ -875,7 +875,7 @@ Static Fallback
 
 ## 11. 行业案例研究
 
-### 11.1 案例1: 大规模客服平台
+### 11.1 案例 1: 大规模客服平台
 
 **背景**: 日均 1000 万+ 对话，延迟 <200ms，成本控制严格
 
@@ -890,7 +890,7 @@ Static Fallback
 
 **结果**: 平均响应 120ms | 成本降低 65% | 满意度 4.5/5
 
-### 11.2 案例2: 多 Agent 协作系统
+### 11.2 案例 2: 多 Agent 协作系统
 
 **背景**: 10+ 个专用 Agent，需要 Agent 间协作
 
@@ -952,3 +952,5 @@ Static Fallback
 - [[12_Architecture_Infrastructure/Spring_AI_Architecture]] — Spring AI 系统架构设计 (共享: architecture, high-availability, infrastructure, kubernetes)
 - [[12_Architecture_Infrastructure/Multi_Tenant_Architecture.md|Multi_Tenant_Architecture]]
 - [[12_Architecture_Infrastructure/README_for_dummy.md|README_for_dummy]]
+- [[synthesis/llm-infrastructure-system-design|LLM 基础设施 × 传统系统架构]] — 从 Web 服务到 Token 工厂
+- [[01_Fundamentals/AI_Hardware/Chinese_AI_Chips_Deep_Dive]] — 国产 AI 芯片12家厂商深度解析 (昇腾/寒武纪/海光/壁仞等)

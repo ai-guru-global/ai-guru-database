@@ -402,11 +402,11 @@ JUDGE_PROMPT = """
 请以 JSON 格式返回：
 ```json
 {
-    "correctness": {"score": 1-5, "reason": "原因"},
-    "completeness": {"score": 1-5, "reason": "原因"},
-    "relevance": {"score": 1-5, "reason": "原因"},
-    "clarity": {"score": 1-5, "reason": "原因"},
-    "overall": {"score": 1-5, "summary": "总体评价"}
+ "correctness": {"score": 1-5, "reason": "原因"},
+ "completeness": {"score": 1-5, "reason": "原因"},
+ "relevance": {"score": 1-5, "reason": "原因"},
+ "clarity": {"score": 1-5, "reason": "原因"},
+ "overall": {"score": 1-5, "summary": "总体评价"}
 }
 ```
 """

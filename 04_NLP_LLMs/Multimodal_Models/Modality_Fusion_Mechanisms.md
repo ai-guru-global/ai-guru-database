@@ -4,6 +4,7 @@ category: 04-nlp-llms-multimodal
 tags: [multimodal, modality-fusion, cross-modal-attention, alignment, vision-language, contrastive-learning, embedding]
 summary: 深度解析多模态模型中的模态融合机制，包括表示空间对齐、交叉注意力设计、对比学习与生成式对齐的技术原理和工程实践。
 date: 2026-06-01
+created: 2026-06-12
 ---
 
 # 模态融合机制深度解析

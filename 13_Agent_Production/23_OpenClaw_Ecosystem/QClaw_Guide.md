@@ -13,9 +13,9 @@ updated: "2026-05-31"
 
 **QClaw** (龙虾/Lobster) is Tencent's OpenClaw implementation that brings AI agent capabilities to the masses through seamless WeChat integration. It's designed for consumers and professionals who want to control their computer remotely via China's most popular messaging app.
 
-**Website**: [qclaw.qq.com](https://qclaw.qq.com/)  
-**Alternative**: [claw.guanjia.qq.com](https://claw.guanjia.qq.com/)  
-**Developed by**: Tencent (腾讯电脑管家)  
+**Website**: [qclaw.qq.com](https://qclaw.qq.com/) 
+**Alternative**: [claw.guanjia.qq.com](https://claw.guanjia.qq.com/) 
+**Developed by**: Tencent (腾讯电脑管家) 
 **Status**: Internal Testing (申请内测中)
 
 ---
@@ -498,7 +498,7 @@ QClaw observes your patterns:
 
 ### Getting the Most from QClaw
 
-1. **Be Specific**: "把桌面的excel文件移动到工作文件夹" vs "整理文件"
+1. **Be Specific**: "把桌面的 excel 文件移动到工作文件夹" vs "整理文件"
 2. **Teach Preferences Early**: Let your lobster know your style
 3. **Use Scheduled Tasks**: Set up recurring automations
 4. **Explore Skills**: Check the Inspiration Square for ideas

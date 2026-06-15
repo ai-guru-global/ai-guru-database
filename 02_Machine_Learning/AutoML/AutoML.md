@@ -550,7 +550,7 @@ fig5.show()
 | 采样器 | 原理 | 何时使用 |
 |--------|------|----------|
 | `TPESampler` | 核密度估计分离好/坏参数 | 通用默认选择 |
-| `GPSampler` | 高斯过程回归 | 昂贵评估（<100次） |
+| `GPSampler` | 高斯过程回归 | 昂贵评估（<100 次） |
 | `CMAESampler` | 协方差矩阵自适应进化 | 连续参数空间 |
 | `NSGAIISampler` | 多目标进化算法 | 多目标优化 |
 | `BruteForceSampler` | 穷举搜索 | 小搜索空间验证 |
@@ -892,3 +892,11 @@ study.optimize(
 - [FLAML GitHub](https://github.com/microsoft/FLAML)
 - [DARTS 论文](https://arxiv.org/abs/1806.09055)
 - [H2O AutoML 文档](https://docs.h2o.ai/)
+
+## Related
+
+- [[concepts/automl]] — AutoML 概念总览
+- [[02_Machine_Learning/Supervised_Learning/Supervised_Learning]] — 监督学习：AutoML 自动选择的模型空间
+- [[02_Machine_Learning/Feature_Engineering/Feature_Engineering]] — 特征工程：自动化特征构造方法
+- [[07_Model_Training/Fine_tuning_Strategies]] — 微调策略：神经架构搜索 (NAS) 的应用
+- [[10_MLOps_Pipeline/Experiment_Tracking_Deep_Dive]] — 实验追踪：AutoML 搜索过程管理

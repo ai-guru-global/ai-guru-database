@@ -13,8 +13,8 @@ updated: '2026-05-31'
 
 **CoPaw** ("Works for you, grows with you") is Alibaba's flagship open-source AI agent implementation built on the **AgentScope** framework. It represents one of the most sophisticated personal AI assistant platforms available, featuring advanced memory management, multi-channel communication, and extensible skill systems.
 
-**Website**: [copaw.agentscope.io](https://copaw.agentscope.io/)  
-**GitHub**: [github.com/agentscope-ai/CoPaw](https://github.com/agentscope-ai/CoPaw)  
+**Website**: [copaw.agentscope.io](https://copaw.agentscope.io/) 
+**GitHub**: [github.com/agentscope-ai/CoPaw](https://github.com/agentscope-ai/CoPaw) 
 **Current Version**: v0.0.7 (March 2026)
 
 ---

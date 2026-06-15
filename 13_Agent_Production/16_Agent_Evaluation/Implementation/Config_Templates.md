@@ -1141,9 +1141,9 @@ mock_services:
 - [Implementation Guide](./Implementation_Guide.md) - Setup instructions
 - [Sample Reports](./Sample_Reports.md) - Example reports
 - [Test Suites](../Testing_Methodologies/Test_Suites.md) - Test case details
-- [API Integration Guide](./API_Integration_Guide.md) - Agent API对接指南
-- [LLM as Judge Templates](./LLM_as_Judge_Templates.md) - LLM评估模板
-- [Cloud Agent Evaluation](../Cloud_Agent_Evaluation/README.md) - 云Agent评估框架
+- [API Integration Guide](./API_Integration_Guide.md) - Agent API 对接指南
+- [LLM as Judge Templates](./LLM_as_Judge_Templates.md) - LLM 评估模板
+- [Cloud Agent Evaluation](../Cloud_Agent_Evaluation/README.md) - 云 Agent 评估框架
 - [Corpus Assessment](../Corpus_Assessment/README.md) - 语料库评估
 - [[13_Agent_Production/16_Agent_Evaluation/Cloud_Agent_Evaluation/General_Chat_Agent_Benchmark.md|General_Chat_Agent_Benchmark]]
 

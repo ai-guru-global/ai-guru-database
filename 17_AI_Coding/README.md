@@ -7,9 +7,9 @@ created: '2026-05-31'
 updated: '2026-05-31'
 ---
 
-# AI编程 (AI Coding)
+# AI 编程 (AI Coding)
 
-> AI编程已从"代码补全"进化为"结对编程伙伴"——本目录构建涵盖理论、工具、实战、方法论的完整知识体系。
+> AI 编程已从"代码补全"进化为"结对编程伙伴"——本目录构建涵盖理论、工具、实战、方法论的完整知识体系。
 
 ---
 
@@ -42,7 +42,7 @@ updated: '2026-05-31'
 |------|------|----------|
 | [Vibe_Coding_Methodology.md](./04_Methodology/Vibe_Coding_Methodology.md) | DGRV模型、五层能力模型、工作流模式、质量保障、团队协作 | 系统学习方法论 |
 | [Vibe_Coding_Production_Practices.md](./04_Methodology/Vibe_Coding_Production_Practices.md) | 安全工程、质量监控、技术债管理、组织变革、合规 | 生产环境落地 |
-| [Agentic_Coding_Methodology.md](./04_Methodology/Agentic_Coding_Methodology.md) | 多Agent协作架构、编排模式、质量保障 (占位) | 探索下一代范式 |
+| [Agentic_Coding_Methodology.md](./04_Methodology/Agentic_Coding_Methodology.md) | 多Agent协作架构、角色定义、环境沙箱、质量保障 | 进阶 |
 
 ---
 
@@ -97,19 +97,19 @@ updated: '2026-05-31'
 
 ## 一句话总结
 
-> **AI编程已从"补全"进化为"结对编程伙伴"** — Cursor以72%代码接受率领跑，Hermes Agent以全平台开源和17+模型支持成为最大变量，Agentic Coding成为2026年主流。
+> **AI 编程已从"补全"进化为"结对编程伙伴"** — Cursor 以 72% 代码接受率领跑，Hermes Agent 以全平台开源和 17+模型支持成为最大变量，Agentic Coding 成为 2026 年主流。
 
 ## Related
 - [[17_AI_Coding/03_Practice/Vibe_Coding_Prompt_Templates|Vibe Coding 提示词模板库]]
 - [[17_AI_Coding/03_Practice/Vibe_Coding_Getting_Started|Vibe Coding 傻瓜指南 (Vibe Coding for Dummies)]]
 - [[17_AI_Coding/03_Practice/Vibe_Coding_Real_World_Cases|Vibe Coding 实战案例集]]
 - [[17_AI_Coding/02_Tools/OpenRouter/12-openrouter-enterprise-advanced|17_AI_Coding/02_Tools/OpenRouter/12-openrouter-enterprise-advanced]]
-- [[17_AI_Coding/02_Tools/Hermes_Agent_2026|Hermes Agent 2026年专业指南]]
+- [[17_AI_Coding/02_Tools/Hermes_Agent_2026|Hermes Agent 2026 年专业指南]]
 - [[17_AI_Coding/02_Tools/Qoder_Guide|Qoder / QoderWork / QoderWake 使用指南]]
 - [[17_AI_Coding/02_Tools/DeepSeek_Guide|DeepSeek 使用指南]]
 - [[17_AI_Coding/02_Tools/Monica_Guide|Monica 使用指南]]
 - [[17_AI_Coding/AI_Coding-in-nutshell|AI 编程 - 速查版]]
-- [[17_AI_Coding/README|AI编程 (AI Coding)]]
+- [[17_AI_Coding/README|AI 编程 (AI Coding)]]
 - [[17_AI_Coding/MOC_OpenRouter_OpenCode|topic-ai-coding MOC]]
 - [[17_AI_Coding/README_for_dummy|17 AI 编程 — 小白版 💻]]
 
@@ -134,6 +134,6 @@ updated: '2026-05-31'
 - [[17_AI_Coding/02_Tools/Coze_Guide]] — Coze 使用指南
 - [[17_AI_Coding/02_Tools/Pending_Tools_Catalog]] — 待探索工具目录
 
+## 新增页面
 
-
-
+- [[17_AI_Coding/AI_Coding_2026_Guide|AI 编程 2026 全景指南]]

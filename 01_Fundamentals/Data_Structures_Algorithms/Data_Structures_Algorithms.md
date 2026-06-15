@@ -227,15 +227,15 @@ def beam_search(model, start_token, beam_width, max_len, vocab_size):
 $$
 \text{Score} = \frac{1}{T^\alpha} \sum_{t=1}^T \log P(y_t | y_{<t})
 $$
-   通常取 $\alpha \in [0.6, 0.7]$
+ 通常取 $\alpha \in [0.6, 0.7]$
 
 2. **剪枝**:
-   - 提前停止：当分数最高的未完成序列分数低于最差的完成序列时停止
-   - 覆盖惩罚：避免重复生成相同的片段
+ - 提前停止：当分数最高的未完成序列分数低于最差的完成序列时停止
+ - 覆盖惩罚：避免重复生成相同的片段
 
 3. **多样性**:
-   - Diverse Beam Search: 鼓励不同 beam 之间的差异
-   - Top-p Sampling: 从累积概率 $p$ 的核心词汇中采样
+ - Diverse Beam Search: 鼓励不同 beam 之间的差异
+ - Top-p Sampling: 从累积概率 $p$ 的核心词汇中采样
 
 #### 复杂度分析
 - **时间**: $O(k \times T \times V)$（每步考虑 $k$ 个序列的 $V$ 个扩展）
@@ -625,7 +625,7 @@ $$
 
 ### 进阶推荐
 - **[神经网络核心](../../03_Deep_Learning/Neural_Network_Core/Neural_Network_Core.md)**: 计算图与反向传播
-- **[Transformer 架构](../../04_NLP_LLMs/Transformer/Transformer.md)**: 注意力机制的优化
+- **[Transformer 架构](../../04_NLP_LLMs/Transformer_Revolution/Transformer_Revolution.md)**: 注意力机制的优化
 - **[模型压缩](../../09_Deployment_Inference/Deployment_Inference.md)**: 量化、剪枝、蒸馏
 - **[向量数据库](../../11_RAG_Systems/RAG_Systems.md)**: HNSW、ANN 算法实践
 
@@ -689,42 +689,50 @@ $$
 ## 9. 参考资源 (References)
 
 ### 经典教材
-- [Introduction to Algorithms (CLRS) - Thomas Cormen et al.](https://mitpress.mit.edu/9780262046305/introduction-to-algorithms/)  
-  算法圣经，覆盖所有基础算法
+- [Introduction to Algorithms (CLRS) - Thomas Cormen et al.](https://mitpress.mit.edu/9780262046305/introduction-to-algorithms/) 
+ 算法圣经，覆盖所有基础算法
 
-- [The Art of Computer Programming - Donald Knuth](https://www-cs-faculty.stanford.edu/~knuth/taocp.html)  
-  计算机科学的数学基础
+- [The Art of Computer Programming - Donald Knuth](https://www-cs-faculty.stanford.edu/~knuth/taocp.html) 
+ 计算机科学的数学基础
 
 ### 在线课程
-- [CS 61B: Data Structures (UC Berkeley)](https://sp21.datastructur.es/)  
-  Java 实现，配有完整作业和自动评分系统
+- [CS 61B: Data Structures (UC Berkeley)](https://sp21.datastructur.es/) 
+ Java 实现，配有完整作业和自动评分系统
 
-- [MIT 6.006: Introduction to Algorithms](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/)  
-  理论与实践并重
+- [MIT 6.006: Introduction to Algorithms](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/) 
+ 理论与实践并重
 
 ### 论文
-- [Automatic Differentiation in Machine Learning: a Survey](https://arxiv.org/abs/1502.05767)  
-  自动微分全面综述
+- [Automatic Differentiation in Machine Learning: a Survey](https://arxiv.org/abs/1502.05767) 
+ 自动微分全面综述
 
-- [Efficient and Robust Approximate Nearest Neighbor Search using Hierarchical Navigable Small World Graphs](https://arxiv.org/abs/1603.09320)  
-  HNSW 原始论文
+- [Efficient and Robust Approximate Nearest Neighbor Search using Hierarchical Navigable Small World Graphs](https://arxiv.org/abs/1603.09320) 
+ HNSW 原始论文
 
-- [Attention Is All You Need](https://arxiv.org/abs/1706.03762)  
-  Transformer 架构，Appendix 有复杂度分析
+- [Attention Is All You Need](https://arxiv.org/abs/1706.03762) 
+ Transformer 架构，Appendix 有复杂度分析
 
-- [Flash Attention: Fast and Memory-Efficient Exact Attention](https://arxiv.org/abs/2205.14135)  
-  IO 感知的注意力优化
+- [Flash Attention: Fast and Memory-Efficient Exact Attention](https://arxiv.org/abs/2205.14135) 
+ IO 感知的注意力优化
 
 ### 工具与库
-- [Faiss (Facebook AI Similarity Search)](https://github.com/facebookresearch/faiss)  
-  高效向量检索库，支持 GPU 加速
+- [Faiss (Facebook AI Similarity Search)](https://github.com/facebookresearch/faiss) 
+ 高效向量检索库，支持 GPU 加速
 
-- [PyTorch Autograd](https://pytorch.org/tutorials/beginner/blitz/autograd_tutorial.html)  
-  自动微分实现
+- [PyTorch Autograd](https://pytorch.org/tutorials/beginner/blitz/autograd_tutorial.html) 
+ 自动微分实现
 
-- [Numba](https://numba.pydata.org/)  
-  Python JIT 编译器，加速 NumPy 代码
+- [Numba](https://numba.pydata.org/) 
+ Python JIT 编译器，加速 NumPy 代码
 
 ---
 
 *Last updated: 2026-02-10*
+
+## Related
+
+- [[03_Deep_Learning/Neural_Network_Core/Neural_Network_Core]] — 神经网络核心：计算图与自动微分
+- [[04_NLP_LLMs/LLM_Architectures/LLM_Architectures]] — LLM 架构中的注意力复杂度优化
+- [[11_RAG_Systems/RAG_Systems]] — RAG 系统中的向量检索与 ANN 算法
+- [[07_Model_Training/Distributed_Training_2026]] — 分布式训练中的通信算法
+- [[concepts/transformer-architecture]] — Transformer 架构与注意力机制

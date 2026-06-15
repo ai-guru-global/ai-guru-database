@@ -21,8 +21,8 @@ updated: '2026-05-31'
 - **明确目标**: 损失函数定义了"好"模型的标准
 - **泛化能力**: 核心挑战是在未见数据上保持性能
 - **两大任务类型**:
-  - **分类 (Classification)**: 输出离散类别 (如垃圾邮件判别)
-  - **回归 (Regression)**: 输出连续数值 (如房价预测)
+ - **分类 (Classification)**: 输出离散类别 (如垃圾邮件判别)
+ - **回归 (Regression)**: 输出连续数值 (如房价预测)
 
 ### 1.2 学习流程
 
@@ -48,10 +48,10 @@ $$L(\mathbf{w}) = \frac{1}{m} \sum_{i=1}^{m} (y_i - \hat{y}_i)^2 = \frac{1}{m} |
 
 **优化方法**:
 1. **闭式解 (Normal Equation)**: $\mathbf{w}^* = (\mathbf{X}^T \mathbf{X})^{-1} \mathbf{X}^T \mathbf{y}$
-   - 优势: 一步求解,无需调参
-   - 劣势: $O(n^3)$ 复杂度,不适合大规模特征
+ - 优势: 一步求解,无需调参
+ - 劣势: $O(n^3)$ 复杂度,不适合大规模特征
 2. **梯度下降 (Gradient Descent)**: $\mathbf{w} \leftarrow \mathbf{w} - \eta \nabla_{\mathbf{w}} L$
-   - 优势: 可扩展到大数据,支持在线学习
+ - 优势: 可扩展到大数据,支持在线学习
 
 #### 逻辑回归 (Logistic Regression)
 
@@ -456,18 +456,18 @@ plt.savefig('feature_importance.png')
 
 **解决方案**:
 1. **数据层面**:
-   - 过采样 (SMOTE, ADASYN)
-   - 欠采样 (Tomek Links, NearMiss)
-   - 合成样本 (GAN)
+ - 过采样 (SMOTE, ADASYN)
+ - 欠采样 (Tomek Links, NearMiss)
+ - 合成样本 (GAN)
 
 2. **算法层面**:
-   - 类别权重: `class_weight='balanced'`
-   - 代价敏感学习 (Cost-sensitive Learning)
-   - 异常检测角度 (One-class SVM, Isolation Forest)
+ - 类别权重: `class_weight='balanced'`
+ - 代价敏感学习 (Cost-sensitive Learning)
+ - 异常检测角度 (One-class SVM, Isolation Forest)
 
 3. **评估层面**:
-   - 不用准确率,用 **Precision/Recall/F1/AUC**
-   - PR 曲线比 ROC 曲线更合适
+ - 不用准确率,用 **Precision/Recall/F1/AUC**
+ - PR 曲线比 ROC 曲线更合适
 
 ### 6.2 特征工程 (Feature Engineering)
 
@@ -512,15 +512,15 @@ stacking.fit(X_train, y_train)
 ### 6.4 常见陷阱
 
 1. **数据泄露 (Data Leakage)**:
-   - 错误: 在全量数据上做归一化,再划分训练/测试集
-   - 正确: 先划分,再在训练集上 fit,测试集上 transform
+ - 错误: 在全量数据上做归一化,再划分训练/测试集
+ - 正确: 先划分,再在训练集上 fit,测试集上 transform
 
 2. **过度调参 (Overfitting to Validation Set)**:
-   - 问题: 反复在验证集上调参,导致验证集不再"干净"
-   - 解决: 使用三重划分 (训练集/验证集/测试集) 或嵌套交叉验证
+ - 问题: 反复在验证集上调参,导致验证集不再"干净"
+ - 解决: 使用三重划分 (训练集/验证集/测试集) 或嵌套交叉验证
 
 3. **忽略业务约束**:
-   - 示例: 信用评分模型必须可解释 (监管要求),不能单纯追求 AUC
+ - 示例: 信用评分模型必须可解释 (监管要求),不能单纯追求 AUC
 
 ## 7. 与其他主题的关联 (Connections)
 
@@ -550,23 +550,23 @@ stacking.fit(X_train, y_train)
 2. **存储成本**: 高维特征矩阵无法存储 (维度灾难)
 3. **核技巧优势**: 只需计算内积 $K(\mathbf{x}_i, \mathbf{x}_j)$,复杂度 $O(n^2)$ 而非 $O(n^2 d)$
 
-**例子**: 2D → 多项式核 3次映射到 10D,1000 个样本需要 $1000 \times 10 = 10^4$ 存储,但核矩阵只需 $1000 \times 1000 = 10^6$ 且可稀疏化。
+**例子**: 2D → 多项式核 3 次映射到 10D,1000 个样本需要 $1000 \times 10 = 10^4$ 存储,但核矩阵只需 $1000 \times 1000 = 10^6$ 且可稀疏化。
 
 ### Q2: XGBoost 相比传统 GBDT 有哪些创新?
 
 **答案**: 五大核心改进
 
 1. **正则化目标函数**: 
-   $$Obj^{(t)} = \sum_{i=1}^{m} l(y_i, \hat{y}_i^{(t-1)} + f_t(x_i)) + \Omega(f_t) + \text{Constant}$$
-   其中 $\Omega(f) = \gamma T + \frac{1}{2} \lambda \sum_{j=1}^{T} w_j^2$,防止过拟合
+ $$Obj^{(t)} = \sum_{i=1}^{m} l(y_i, \hat{y}_i^{(t-1)} + f_t(x_i)) + \Omega(f_t) + \text{Constant}$$
+ 其中 $\Omega(f) = \gamma T + \frac{1}{2} \lambda \sum_{j=1}^{T} w_j^2$,防止过拟合
 
 2. **二阶泰勒展开**: 
-   $$Obj^{(t)} \approx \sum_{i=1}^{m} [g_i f_t(x_i) + \frac{1}{2} h_i f_t^2(x_i)] + \Omega(f_t)$$
-   更精确的损失近似,加速收敛
+ $$Obj^{(t)} \approx \sum_{i=1}^{m} [g_i f_t(x_i) + \frac{1}{2} h_i f_t^2(x_i)] + \Omega(f_t)$$
+ 更精确的损失近似,加速收敛
 
 3. **分裂增益公式**:
-   $$Gain = \frac{1}{2} \left[ \frac{G_L^2}{H_L + \lambda} + \frac{G_R^2}{H_R + \lambda} - \frac{(G_L + G_R)^2}{H_L + H_R + \lambda} \right] - \gamma$$
-   高效剪枝
+ $$Gain = \frac{1}{2} \left[ \frac{G_L^2}{H_L + \lambda} + \frac{G_R^2}{H_R + \lambda} - \frac{(G_L + G_R)^2}{H_L + H_R + \lambda} \right] - \gamma$$
+ 高效剪枝
 
 4. **稀疏感知**: 自动学习缺失值的最优分裂方向
 

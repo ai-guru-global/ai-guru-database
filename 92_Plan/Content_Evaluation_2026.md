@@ -55,53 +55,53 @@ updated: 2026-05-31
 
 ## 二、严重薄弱章节（需优先加强）
 
-### 2.1 94_Visualization（197字 / 3文件）
+### 2.1 94_Visualization（197 字 / 3 文件）
 - **问题**：几乎为空，AI 可视化是大趋势领域
 - **建议补充**：
-  - LLM 可视化（注意力热图、Token 流、思维链可视化）
-  - 训练监控仪表盘（Loss 曲线、指标追踪、TensorBoard 替代方案）
-  - 数据标注可视化工具
-  - 模型架构可视化（Netron、torchviz 等）
-  - RAG 检索结果可视化
-  - Agent 执行流程可视化
+ - LLM 可视化（注意力热图、Token 流、思维链可视化）
+ - 训练监控仪表盘（Loss 曲线、指标追踪、TensorBoard 替代方案）
+ - 数据标注可视化工具
+ - 模型架构可视化（Netron、torchviz 等）
+ - RAG 检索结果可视化
+ - Agent 执行流程可视化
 
-### 2.2 10_MLOps_Pipeline（4,479字 / 4文件）
+### 2.2 10_MLOps_Pipeline（4,479 字 / 4 文件）
 - **问题**：MLOps 是工业界核心，仅 3 篇实质内容
 - **建议补充**：
-  - 特征存储（Feature Store）- Feast/Tecton 深度对比
-  - 模型注册中心（Model Registry）- MLflow/Weights & Biases
-  - ML CI/CD Pipeline 实战
-  - 数据流水线编排 - Airflow/Dagster/Prefect
-  - 实验追踪系统 - MLflow/W&B/Neptune
-  - 模型版本管理与回滚策略
-  - Kubernetes 上的 ML 工作负载
-  - MLOps 成熟度模型
+ - 特征存储（Feature Store）- Feast/Tecton 深度对比
+ - 模型注册中心（Model Registry）- MLflow/Weights & Biases
+ - ML CI/CD Pipeline 实战
+ - 数据流水线编排 - Airflow/Dagster/Prefect
+ - 实验追踪系统 - MLflow/W&B/Neptune
+ - 模型版本管理与回滚策略
+ - Kubernetes 上的 ML 工作负载
+ - MLOps 成熟度模型
 
-### 2.3 22_Papers（7,096字 / 4文件）
+### 2.3 22_Papers（7,096 字 / 4 文件）
 - **问题**：仅 3 篇论文精读（ResNet、Attention Is All You Need、GPT-3）
 - **建议补充**：
-  - BERT（双向编码器）
-  - LLaMA / LLaMA 2 / LLaMA 3（开源 LLM 基石）
-  - Diffusion Models（DDPM / Stable Diffusion）
-  - RLHF 论文精读（InstructGPT）
-  - Retrieval-Augmented Generation（RAG 原始论文）
-  - Chain-of-Thought Prompting
-  - Mixture of Experts（MoE）
-  - Vision Transformer（ViT）
-  - DPO / PPO 对齐方法
-  - Diffusion Transformer（DiT / Sora）
+ - BERT（双向编码器）
+ - LLaMA / LLaMA 2 / LLaMA 3（开源 LLM 基石）
+ - Diffusion Models（DDPM / Stable Diffusion）
+ - RLHF 论文精读（InstructGPT）
+ - Retrieval-Augmented Generation（RAG 原始论文）
+ - Chain-of-Thought Prompting
+ - Mixture of Experts（MoE）
+ - Vision Transformer（ViT）
+ - DPO / PPO 对齐方法
+ - Diffusion Transformer（DiT / Sora）
 
-### 2.4 02_Machine_Learning（8,685字 / 9文件）
+### 2.4 02_Machine_Learning（8,685 字 / 9 文件）
 - **问题**：作为基础章节字数严重偏少
 - **建议补充**：
-  - 集成学习（Bagging/Boosting/Stacking）
-  - 时间序列分析（ARIMA/Prophet/Transformer-based）
-  - 概率图模型（贝叶斯网络/马尔可夫随机场）
-  - 推荐系统（协同过滤/深度推荐）
-  - 异常检测（Isolation Forest/AutoEncoder）
-  - 降维与流形学习（PCA/t-SNE/UMAP）
-  - 图神经网络基础
-  - AutoML 与超参数优化
+ - 集成学习（Bagging/Boosting/Stacking）
+ - 时间序列分析（ARIMA/Prophet/Transformer-based）
+ - 概率图模型（贝叶斯网络/马尔可夫随机场）
+ - 推荐系统（协同过滤/深度推荐）
+ - 异常检测（Isolation Forest/AutoEncoder）
+ - 降维与流形学习（PCA/t-SNE/UMAP）
+ - 图神经网络基础
+ - AutoML 与超参数优化
 
 ---
 

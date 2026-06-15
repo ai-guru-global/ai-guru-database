@@ -1,15 +1,15 @@
 ---
-title: 10 经典与必读 AI 论文清单 (Essential AI Papers)
+title: 22 经典与必读 AI 论文清单 (Essential AI Papers)
 category: 22-papers
 tags: ["paper", "deep-dive"]
-summary: "本清单精选 30+ 篇\"改变 AI 历史\"的核心论文，每篇附带\"为什么必读\"的解读和相关章节链接，帮你从论文源头理解现代 AI 的构建逻辑。"
+summary: "本清单精选 22 篇\"改变 AI 历史\"的核心论文（含 22 篇深度解读），每篇附带\"为什么必读\"的解读和相关章节链接，帮你从论文源头理解现代 AI 的构建逻辑。"
 created: 2026-05-31
-updated: 2026-05-31
+updated: 2026-06-15
 ---
 
-# 10 经典与必读 AI 论文清单 (Essential AI Papers)
+# 22 经典与必读 AI 论文清单 (Essential AI Papers)
 
-> **一句话理解**: 本清单精选 30+ 篇"改变 AI 历史"的核心论文，每篇附带"为什么必读"的解读和相关章节链接，帮你从论文源头理解现代 AI 的构建逻辑。
+> **一句话理解**: 本清单精选 22 篇"改变 AI 历史"的核心论文（含 22 篇深度解读），每篇附带"为什么必读"的解读和相关章节链接，帮你从论文源头理解现代 AI 的构建逻辑。
 
 ---
 
@@ -53,7 +53,7 @@ flowchart LR
 | 论文 | 核心贡献 | 为什么必读 | 相关章节 |
 |------|---------|-----------|---------|
 | **Deep Residual Learning for Image Recognition (2015)** He et al. | ResNet：残差连接解决梯度消失，成功训练 152+ 层网络，ImageNet 2015 冠军 | 几乎所有现代视觉模型都基于残差连接，CV 的必备基础 | [计算机视觉](../05_Computer_Vision/README.md) [图像分类](../05_Computer_Vision/Image_Classification_Detection/) |
-| **U-Net (2015)** Ronneberger et al. | 编码器-解码器 + 跳跃连接，医学图像分割的经典架构，影响扩散模型 U-Net  backbone | 分割任务的起点，也是 Stable Diffusion 的核心组件 | [分割](../05_Computer_Vision/Segmentation/) |
+| **U-Net (2015)** Ronneberger et al. | 编码器-解码器 + 跳跃连接，医学图像分割的经典架构，影响扩散模型 U-Net backbone | 分割任务的起点，也是 Stable Diffusion 的核心组件 | [分割](../05_Computer_Vision/Segmentation/) |
 | **Faster R-CNN (2015)** Ren et al. | RPN + Fast R-CNN 端到端训练，两阶段检测的速度突破，mAP 73.2% | 目标检测的奠基工作，理解 R-CNN 系列演进的关键节点 | [目标检测](../05_Computer_Vision/Image_Classification_Detection/) |
 | **An Image is Worth 16x16 Words (2020)** Dosovitskiy et al. | ViT：将图像切分为 patch 序列，纯 Transformer 超越 ResNet，开启视觉 Transformer 时代 | 2020 年后视觉领域最重要的架构转变，理解"CNN → Transformer"的迁移 | [计算机视觉](../05_Computer_Vision/README.md) [Transformer 革命](../04_NLP_LLMs/Transformer_Revolution/) |
 
@@ -68,16 +68,21 @@ flowchart LR
 | **Language Models are Few-Shot Learners (GPT-3, 2020)** Brown et al. | 175B 参数，上下文学习（In-Context Learning）涌现，无需微调即可完成任务 | Scaling Laws 的首次大规模验证，"大模型时代"的标志性论文 | [LLM 架构](../04_NLP_LLMs/LLM_Architectures/) [Prompt Engineering](../04_NLP_LLMs/Prompt_Engineering/) |
 | **Training language models to follow instructions with human feedback (InstructGPT, 2022)** Ouyang et al. | SFT + RLHF 三阶段训练，1.3B InstructGPT 超越 175B GPT-3，证明对齐的重要性 | ChatGPT 的技术基础，理解"有用、无害、诚实"的训练方法 | [Fine-tuning](../04_NLP_LLMs/Fine_tuning_Techniques/) [RL](../06_Reinforcement_Learning/) |
 | **LLaMA (2023)** Touvron et al. | 开源高效大模型，7B-65B，仅使用公开数据训练，性能接近 GPT-3，引发开源大模型浪潮 | 开源大模型的分水岭，理解高效训练和数据质量的重要性 | [LLM 架构](../04_NLP_LLMs/LLM_Architectures/) [开源 Agent](../13_Agent_Production/AI_OpenSource_Projects_Overview.md) |
+| **GPT-4 Technical Report (2023)** OpenAI | 多模态大模型（文本+图像输入），1.7T MoE 架构，在多项专业考试中达到人类水平 | 标志 LLM 进入"通用智能"阶段，MoE 架构在超大规模模型中的首次验证 | [LLM 架构](../04_NLP_LLMs/LLM_Architectures/) [Global LLM](../04_NLP_LLMs/Global_LLM_Ecosystem/) |
+| **DeepSeek-V3 Technical Report (2024)** DeepSeek | 671B MoE + MLA + FP8 混合精度训练，$5.6M 训练成本达到 GPT-4 级性能 | 颠覆"只有巨头才能训练大模型"的认知，效率优先路线的里程碑 | [Chinese LLM](../04_NLP_LLMs/Chinese_LLM_Ecosystem/) [LLM 架构](../04_NLP_LLMs/LLM_Architectures/) |
 
 ### 深度解读（持续更新）
 
 - [Attention Is All You Need 深度解读](./Attention_Is_All_You_Need_Deep_Dive.md) — Transformer 的完整技术剖析
 - [ResNet 深度解读](./ResNet_Deep_Dive.md) — 残差学习的数学直觉与工程实现
 - [GPT-3 深度解读](./GPT3_Deep_Dive.md) — 规模化、上下文学习与涌现能力
+- [GPT-4 深度解读](./GPT4_Deep_Dive.md) — 多模态 MoE 架构、系统提示词与涌现能力跃迁
 - [BERT 深度解读](./BERT_Deep_Dive.md) — 双向编码、MLM/NSP 与预训练-微调范式
 - [LLaMA 深度解读](./LLaMA_Deep_Dive.md) — 开源 LLM 革命、RoPE/SwiGLU/RMSNorm 架构创新
+- [DeepSeek-V3 技术报告](./DeepSeek_V3_Technical_Report.md) — MLA、MoE、FP8 训练与 $5.6M 成本奇迹
 - [Diffusion Models 深度解读](./Diffusion_Models_Deep_Dive.md) — 从 DDPM 到 Stable Diffusion 再到 DiT
 - [RLHF 与 DPO 深度解读](./RLHF_DPO_Deep_Dive.md) — InstructGPT 三阶段训练、DPO 数学推导与对齐方法
+- [DPO 深度解读](./DPO_Deep_Dive.md) — 直接偏好优化的数学推导、与 RLHF 对比及对齐方法演进
 - [Mixture of Experts 深度解读](./Mixture_of_Experts_Deep_Dive.md) — Switch Transformer、Mixtral、DeepSeek MoE 架构解析
 - [DQN 深度解读](./DQN_Deep_Dive.md) — 深度强化学习开山之作，Atari 游戏与经验回放
 - [AlphaGo 深度解读](./AlphaGo_Deep_Dive.md) — 围棋 AI 的突破，深度 RL 与蒙特卡洛树搜索
@@ -87,6 +92,7 @@ flowchart LR
 - [VAE 深度解读](./VAE_Deep_Dive.md) — 变分自编码器：重参数化技巧、潜空间生成、扩散模型前身
 - [Chain-of-Thought 深度解读](./Chain_of_Thought_Deep_Dive.md) — 思维链提示：让 LLM 逐步推理，o1/R1 的思想源头
 - [RAG 深度解读](./RAG_Deep_Dive.md) — 检索增强生成：先查后答，解决 LLM 知识过时和幻觉问题
+- [Chinchilla 深度解读](./Chinchilla_Deep_Dive.md) — 计算最优训练：数据量比参数量更重要，重塑 Scaling Laws
 
 ---
 
@@ -116,6 +122,7 @@ flowchart LR
 | 论文 | 核心贡献 | 为什么必读 | 相关章节 |
 |------|---------|-----------|---------|
 | **Scaling Laws for Neural Language Models (2020)** Kaplan et al. | 损失与计算量/参数量/数据量的幂律关系，预测 GPT-3 规模的可行性 | 大模型时代的"物理定律"，指导训练资源配置 | [模型训练](../07_Model_Training/README.md) [LLM 架构](../04_NLP_LLMs/LLM_Architectures/) |
+| **Training Compute-Optimal Large Language Models (Chinchilla, 2022)** Hoffmann et al. | 计算最优训练：给定固定计算预算，数据量应与参数量等比增加，70B Chinchilla 击败 280B Gopher | 推翻"越大越好"的简单 Scaling，证明数据质量和训练效率同样重要 | [模型训练](../07_Model_Training/README.md) [LLM 架构](../04_NLP_LLMs/LLM_Architectures/) |
 | **Switch Transformers (2021)** Fedus et al. | MoE 稀疏激活，1.6T 参数但每次只激活 200B，T5 的 7× 加速 | 超大规模模型的关键技术，GPT-4、Mixtral 的架构基础 | [LLM 架构](../04_NLP_LLMs/LLM_Architectures/) |
 | **ZeRO (2020)** Rajbhandari et al. | 优化器状态/梯度/参数分片，单卡可训练 10× 大模型，DeepSpeed 核心 | 分布式训练的必备技术，理解显存优化的极限 | [分布式训练](../07_Model_Training/Distributed_Training_2026.md) |
 | **LoRA (2021)** Hu et al. | 低秩适配，冻结原权重，只训练 A/B 低秩矩阵，显存节省 3× | 参数高效微调的标配方法，理解秩的选择与影响 | [Fine-tuning](../07_Model_Training/Fine_tuning_Strategies.md) |
@@ -148,8 +155,10 @@ flowchart TB
         B1[Attention 2017] --> B2[BERT 2018]
         B1 --> B3[GPT-3 2020]
         B3 --> B4[InstructGPT 2022]
-        B4 --> B5[Constitutional AI 2022]
-        B4 --> B6[DPO 2023]
+        B3 --> B5[GPT-4 2023]
+        B4 --> B6[Constitutional AI 2022]
+        B4 --> B7[DPO 2023]
+        B5 --> B8[DeepSeek-V3 2024]
     end
     
     subgraph 生成
@@ -160,13 +169,16 @@ flowchart TB
     
     subgraph 工程
         D1[Scaling Laws 2020] --> D2[GPT-3 2020]
-        D3[ZeRO 2020] --> D4[Switch 2021]
-        D5[LoRA 2021] --> D6[QLoRA 2023]
-        D7[FlashAttention 2022]
+        D1 --> D3[Chinchilla 2022]
+        D3 --> D4[GPT-4 2023]
+        D5[ZeRO 2020] --> D6[Switch 2021]
+        D7[LoRA 2021] --> D8[QLoRA 2023]
+        D9[FlashAttention 2022]
+        D6 --> D10[DeepSeek-V3 2024]
     end
     
-    B1 --> D7
-    B3 --> D3
+    B1 --> D9
+    B3 --> D5
 ```
 
 ---
@@ -180,7 +192,7 @@ flowchart TB
 
 ---
 
-*Last updated: 2026-05-07*
+*Last updated: 2026-06-15*
 
 ## Related
 - [[22_Papers/RAG_Deep_Dive|论文深度解读: RAG — 检索增强生成 (Retrieval-Augmented Generation)]]

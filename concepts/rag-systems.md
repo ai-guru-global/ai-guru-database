@@ -14,6 +14,8 @@ relationships:
   type: related_to
 - target: 'concepts/ai-architecture'
   type: related_to
+- target: 'concepts/matryoshka-representation-learning'
+  type: related_to
 sources:
 - 11_RAG_recommendation-systems/RAG_Systems.md
 - 11_RAG_Systems/RAG_Advanced_2026.md
@@ -29,7 +31,7 @@ lifecycle: stable
 lifecycle_changed: 2026-06-04
 tier: core
 created: 2026-05-31 00:00:00+00:00
-updated: 2026-06-04 00:00:00+00:00
+updated: 2026-06-12 00:00:00+00:00
 ---
 
 # RAG 检索增强生成
@@ -58,7 +60,7 @@ RAG相比微调的优势：知识可实时更新、成本更低（仅需存储+�
 
 ### Embedding模型选型
 
-BGE-M3是多语言通用首选（免费开源），OpenAI text-embedding-3-large适合商业应用，E5-mistral-7b适合长文本检索。选型维度包括维度、MTEB分数、多语言支持和成本。
+BGE-M3是多语言通用首选（免费开源），OpenAI text-embedding-3-large适合商业应用，E5-mistral-7b适合长文本检索。选型维度包括维度、MTEB分数、多语言支持和成本。若需在同一向量上支持多精度检索，可优先选择支持 [[concepts/matryoshka-representation-learning|Matryoshka 表示]] 的模型（如 nomic-embed-text-v1.5），用低维前缀粗排、高维前缀精排。
 
 ### 混合检索（Hybrid Search）
 

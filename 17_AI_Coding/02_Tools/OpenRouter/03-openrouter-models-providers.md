@@ -4,10 +4,13 @@ title: '模型与 Provider 生态'
 tags:
 - ai
 - ai-coding
+created: 2026-06-12
+category: 17-ai-coding
+summary: ""
 ---
 title: 模型与 Provider 生态
 description: '**文档类型**: 功能详解 | **最后更新**: 2026-03 | **关键词**: OpenRouter, Models, Providers,
-  Model API, Pricing, Variants, Multimodal, Embeddings'
+ Model API, Pricing, Variants, Multimodal, Embeddings'
 category: ai-coding
 tags:
 - ai
@@ -33,7 +36,7 @@ trigger_keywords:
 - coding
 authors:
 - name: KUDIG Team
-  role: contributor
+ role: contributor
 k8s_versions:
 - '1.28'
 - '1.29'

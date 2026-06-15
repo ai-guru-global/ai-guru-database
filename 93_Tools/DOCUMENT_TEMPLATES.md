@@ -388,7 +388,7 @@ flowchart TB
 
 ```mermaid
 flowchart LR
-    A[输入] --> B[处理] --> C[输出]
+ A[输入] --> B[处理] --> C[输出]
 ```
 
 | 概念 | 解释 | 类比 |
@@ -504,8 +504,8 @@ flowchart LR
 
 ```mermaid
 flowchart TB
-    A{你的场景} -->|条件1| B[✅ 需要]
-    A -->|条件2| C[❌ 不需要]
+ A{你的场景} -->|条件 1| B[✅ 需要]
+ A -->|条件 2| C[❌ 不需要]
 ```
 
 ---
@@ -598,8 +598,8 @@ flowchart TB
 
 ```mermaid
 flowchart TB
-    A[输入] --> B[处理]
-    B --> C[输出]
+ A[输入] --> B[处理]
+ B --> C[输出]
 ```
 
 ### 2.2 [子主题B]
@@ -652,12 +652,12 @@ pip install required-package
 import torch
 
 class MyModel(torch.nn.Module):
-    def __init__(self):
-        super().__init__()
-        self.layer = torch.nn.Linear(10, 1)
-    
-    def forward(self, x):
-        return self.layer(x)
+ def __init__(self):
+ super().__init__()
+ self.layer = torch.nn.Linear(10, 1)
+ 
+ def forward(self, x):
+ return self.layer(x)
 ```
 
 ### 4.3 运行与验证
@@ -759,7 +759,7 @@ python demo.py
 
 ```mermaid
 flowchart LR
-    A[输入] --> B[创新点] --> C[输出]
+ A[输入] --> B[创新点] --> C[输出]
 ```
 
 ---
@@ -841,12 +841,12 @@ flowchart TB
 ## 1. 行业现状概览
 
 ```
-2026年[行业]AI市场:
-├── 全球市场规模: $XX亿
-├── AI渗透率: XX%
+2026 年[行业]AI 市场:
+├── 全球市场规模: $XX 亿
+├── AI 渗透率: XX%
 └── 关键驱动力:
-    ├── [驱动力1]
-    └── [驱动力2]
+ ├── [驱动力 1]
+ └── [驱动力 2]
 ```
 
 ---

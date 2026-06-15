@@ -15,7 +15,7 @@ updated: 2026-06-04
 
 | 文档 | 内容 | 难度 |
 |------|------|------|
-| [Information_Theory_Fundamentals](./Information_Theory_Fundamentals.md) | 熵/交叉熵/KL散度/互信息/编码理论全面解读 | ⭐⭐ |
+| [Information_Theory_Fundamentals](./Information_Theory_Fundamentals.md) | 熵/交叉熵/KL 散度/互信息/编码理论全面解读 | ⭐⭐ |
 
 ## 前置知识
 

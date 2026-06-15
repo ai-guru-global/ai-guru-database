@@ -721,9 +721,9 @@ statistical_requirements:
 
 ---
 
-## 7. CAPER云产品Agent专用指标
+## 7. CAPER 云产品 Agent 专用指标
 
-> **关联框架**: 以下指标与 [Cloud_Agent_Evaluation/Cloud_Agent_Benchmark_2026.md](../Cloud_Agent_Evaluation/Cloud_Agent_Benchmark_2026.md) 中的CAPER五维模型对应。
+> **关联框架**: 以下指标与 [Cloud_Agent_Evaluation/Cloud_Agent_Benchmark_2026.md](../Cloud_Agent_Evaluation/Cloud_Agent_Benchmark_2026.md) 中的 CAPER 五维模型对应。
 
 ### 7.1 Correctness（知识正确性）指标
 

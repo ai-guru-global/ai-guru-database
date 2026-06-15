@@ -9,7 +9,7 @@ updated: '2026-05-31'
 
 # 边缘 AI / 设备端 AI 2026
 
-> **一句话理解**: 2026年的AI正在从云端走向"最后一公里"——Apple Intelligence、高通AI Hub、专用NPU芯片让70B参数的模型能在手机本地运行，"隐私优先、离线可用、毫秒响应"不再是云端专属。
+> **一句话理解**: 2026 年的 AI 正在从云端走向"最后一公里"——Apple Intelligence、高通 AI Hub、专用 NPU 芯片让 70B 参数的模型能在手机本地运行，"隐私优先、离线可用、毫秒响应"不再是云端专属。
 
 > **相关文档**: [AI 基础设施指南](./AI_Infrastructure_2026.md) | [成本优化](./AI_Cost_Optimization_2026.md) | [AI 系统架构](./AI_System_Architecture_2026.md)
 
@@ -63,7 +63,7 @@ updated: '2026-05-31'
 
 ## 2. 硬件架构
 
-### 2.1 2026年主要AI芯片
+### 2.1 2026 年主要 AI 芯片
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -125,6 +125,26 @@ NPU vs GPU vs CPU for AI:
 ├── GPU: 高效/中等功耗, 灵活可编程
 └── CPU: 最低效/最快启动, 适合小模型
 ```
+
+**边缘设备 AI 能力对比 (2026)**:
+
+| **设备类别** | **代表芯片** | **算力 (TOPS)** | **内存带宽** | **支持模型规模** | **典型推理速度 (7B INT4)** | **功耗 (W)** |
+|---|---|---:|---:|---|---:|---:|
+| 旗舰手机 | Snapdragon 8 Elite | 45 | 68 GB/s | 7B-13B | 40 tok/s | 5-8 |
+| 平板电脑 | Apple M4 | 38 | 120 GB/s | 7B-30B | 55 tok/s | 6-10 |
+| 笔记本 | Apple M4 Pro | 75 | 273 GB/s | 30B-70B | 180 tok/s | 15-30 |
+| 车载平台 | Jetson Thor | 2000 | 204 GB/s | 70B+ | 350 tok/s | 60-100 |
+| IoT 网关 | Edge TPU v2 | 8 | 4 GB/s | 1B-3B | 15 tok/s | 2-5 |
+| 智能穿戴 | Apple A18 NE | 45 | 42 GB/s | 1B-3B | 20 tok/s | 1-3 |
+
+### 2.3 计算单元选型决策
+
+| **计算单元** | **优势** | **劣势** | **最佳模型类型** | **能效比 (tok/s/W)** |
+|---|---|---|---|---:|
+| NPU | 最高能效, 专用矩阵运算 | 算子固定, 灵活性低 | Transformer, CNN | 8.0 |
+| GPU | 高并行, 可编程 | 功耗较高 | 自定义算子, 大矩阵 | 4.5 |
+| CPU | 通用性强, 快速启动 | AI 推理效率最低 | 小模型, 预处理 | 1.2 |
+| NPU + GPU 混合 | 兼顾效率与灵活性 | 调度复杂 | 混合精度模型 | 6.0 |
 
 ---
 
@@ -352,11 +372,11 @@ class EdgeCompiler:
 
 | 框架 | 平台 | 特点 | 量化支持 |
 |------|------|------|----------|
-| **Core ML** | Apple |ANE加速, 最高效 | INT8/FP16 |
+| **Core ML** | Apple |ANE 加速, 最高效 | INT8/FP16 |
 | **TFLite** | Android | 生态广, 工具完善 | INT8/FP16 |
 | **ONNX Runtime** | 跨平台 | 统一格式 | INT8/INT4 |
-| **MLC-LLM** | 通用 | 本地LLM | INT4/FP16 |
-| **llama.cpp** | 通用 | CPU优化, 活跃 | INT4/INT8 |
+| **MLC-LLM** | 通用 | 本地 LLM | INT4/FP16 |
+| **llama.cpp** | 通用 | CPU 优化, 活跃 | INT4/INT8 |
 
 ### 4.2 MLC-LLM 本地大模型
 
@@ -387,6 +407,17 @@ for response in engine.chat.completions.create(
 ):
     print(response.choices[0].delta.content, end="", flush=True)
 ```
+
+### 4.3 边缘推理框架深度对比
+
+| **框架** | **支持平台** | **LLM 支持** | **量化方案** | **最大模型** | **社区活跃度** | **学习曲线** | **特色功能** |
+|---|---|---|---|---|---|---|---|
+| llama.cpp | 全平台 | 原生支持 | Q2-K 到 Q8_0 | 70B | 极高 | 低 | CPU 优化, GGUF 格式 |
+| MLC-LLM | 全平台 | 原生支持 | q3f16, q4f16 | 30B | 高 | 中 | TVM 编译优化 |
+| Core ML | Apple 全系 | 部分支持 | INT8, FP16 | 13B | 中 | 低 | ANE 加速, 系统级集成 |
+| TFLite | Android/嵌入式 | 有限 | INT8, FP16 | 7B | 高 | 低 | Google 生态, 移动端首选 |
+| ONNX Runtime Mobile | 跨平台 | 部分支持 | INT8, QDQ | 13B | 中 | 中 | 统一模型格式 |
+| ExecuTorch | 移动端 | 原生支持 | INT4, INT8 | 7B | 中高 | 中 | PyTorch 原生集成 |
 
 ---
 
@@ -431,6 +462,18 @@ elif 模型能力不足 OR 上下文超长:
 else:
     → Edge优先，fallback到Cloud
 ```
+
+**边缘 vs 云端部署权衡对照表**:
+
+| **评估维度** | **边缘部署** | **云端部署** | **混合部署** | **推荐场景** |
+|---|---|---|---|---|
+| 响应延迟 | <50ms | 100-500ms | 50-200ms | 实时交互用边缘 |
+| 隐私保护 | 数据不离开设备 | 数据上传云端 | 按需分流 | 敏感数据用边缘 |
+| 模型能力 | 7B-30B | 70B-400B | 分层使用 | 复杂推理用云端 |
+| 运营成本 | 一次性硬件投入 | 按量付费 | 混合模式 | 高频调用用边缘 |
+| 离线可用 | 完全支持 | 不支持 | 部分支持 | 弱网环境用边缘 |
+| 模型更新 | 需推送更新 | 即时生效 | 分层更新 | 频繁迭代用云端 |
+| 可扩展性 | 受限于设备 | 弹性伸缩 | 弹性+本地 | 波峰流量用云端 |
 
 ### 5.2 隐私保护架构
 
@@ -538,6 +581,43 @@ Apple Intelligence 2026:
 - [Apple Neural Engine](https://www.apple.com/neural-engine/)
 - [Qualcomm AI Hub](https://aihub.qualcomm.com)
 - [NVIDIA Jetson](https://developer.nvidia.com/jetson)
+
+---
+
+## 七、Edge AI 全景对比
+
+### 7.1 Edge 硬件平台对比
+
+| **平台** | **AI 算力** | **功耗** | **内存** | **典型模型** | **适用场景** |
+|----------|-----------|---------|---------|-------------|-------------|
+| **Apple A17 Pro** | 35 TOPS | 6W | 8GB | 3B LLM, ViT | iPhone 端侧推理 |
+| **Qualcomm NPU** | 45 TOPS | 5W | 12GB | 7B LLM (量化) | Android 旗舰 |
+| **NVIDIA Jetson Orin** | 275 TOPS | 60W | 64GB | 70B LLM (INT4) | 机器人/自动驾驶 |
+| **Intel Meteor Lake** | 34 TOPS | 28W | 32GB | 13B LLM | PC 端 AI |
+| **Google TPU Edge** | 4 TOPS | 2W | 4GB | 1B 模型 | IoT/传感器 |
+| **Raspberry Pi 5 + Hailo** | 26 TOPS | 10W | 8GB | 3B 模型 | 嵌入式项目 |
+
+### 7.2 Edge vs Cloud 决策矩阵
+
+| **维度** | **Edge 部署** | **Cloud 部署** | **选择建议** |
+|----------|-------------|---------------|-------------|
+| **延迟** | <10ms | 50-200ms | 实时交互选 Edge |
+| **隐私** | 数据不出设备 | 数据上传 | 敏感数据选 Edge |
+| **模型规模** | ≤13B (量化) | 任意规模 | 大模型选 Cloud |
+| **离线能力** | 完全离线 | 需要网络 | 网络不稳定选 Edge |
+| **成本** | 一次性硬件 | 按量付费 | 高频调用选 Edge |
+| **更新** | OTA 推送 | 即时生效 | 快速迭代选 Cloud |
+
+### 7.3 主流 Edge 推理框架对比
+
+| **框架** | **支持平台** | **量化支持** | **LLM 支持** | **性能特点** |
+|----------|-------------|-------------|-------------|-------------|
+| **llama.cpp** | CPU/GPU/Metal | GGUF Q2-Q8 | 优秀 | CPU 推理首选 |
+| **MLC LLM** | iOS/Android/Web | INT4/INT8 | 优秀 | 跨平台移动端 |
+| **ONNX Runtime** | 全平台 | INT8/FP16 | 一般 | 微软生态 |
+| **TensorRT** | NVIDIA GPU | INT8/FP16 | 优秀 | NVIDIA 性能最佳 |
+| **CoreML** | Apple 全系 | INT8/FP16 | 良好 | Apple 原生优化 |
+| **MediaPipe** | Android/iOS | INT8 | 一般 | Google 移动端 |
 
 ---
 

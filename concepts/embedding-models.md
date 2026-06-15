@@ -9,6 +9,8 @@ relationships:
     type: related_to
   - target: "concepts/llm-architectures"
     type: builds_on
+  - target: "concepts/matryoshka-representation-learning"
+    type: related_to
 sources:
   - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
   - 11_RAG_Systems/RAG_Advanced_2026.md
@@ -21,7 +23,7 @@ base_confidence: 0.90
 lifecycle: stable
 tier: core
 created: 2026-06-04
-updated: 2026-06-04
+updated: 2026-06-12
 ---
 
 # 嵌入模型 (Embedding Models)
@@ -63,7 +65,7 @@ f: \text{text} \rightarrow \mathbf{v} \in \mathbb{R}^d
 | **GTE-Qwen2-7B** | 3584 | 8192 | 70.3 | Qwen2-based，长上下文 |
 | **bge-m3** | 1024 | 8192 | 65.4 | 多语言、多粒度、多函数 |
 | **E5-Mistral-7B** | 4096 | 32768 | 66.7 | LLM-based，超长上下文 |
-| **nomic-embed-text-v1.5** | 768 | 8192 | 62.3 | 开源，Matryoshka 表示 |
+| **nomic-embed-text-v1.5** | 768 | 8192 | 62.3 | 开源，[[concepts/matryoshka-representation-learning|Matryoshka 表示]] |
 | **Qwen3-Embedding-8B** | 4096 | 32768 | ~72 | AI Stack 预置模型 |
 | **bge-reranker-v2-m3** | - | 8192 | - | 重排序模型（非嵌入） |
 
@@ -113,7 +115,7 @@ Query → Embedding Model → 向量数据库 Top-100 → Reranker → Top-5 →
 | 关注点 | 建议 |
 |--------|------|
 | **维度选择** | 768 维适合小规模，1024+ 维适合高精度场景 |
-| **Matryoshka 表示** | 允许截断到更低维度（如 1024→256），灵活适配 |
+| **[[concepts/matryoshka-representation-learning|Matryoshka 表示]]** | 允许截断到更低维度（如 1024→256），灵活适配 |
 | **批处理** | GPU 批量编码（batch_size=64-256）提高吞吐 |
 | **归一化** | 嵌入向量 L2 归一化后可用内积替代余弦相似度 |
 | **缓存** | 对静态文档预计算嵌入并缓存，避免重复计算 |

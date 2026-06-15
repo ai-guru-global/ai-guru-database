@@ -4,6 +4,7 @@ category: 04-nlp-llms-reasoning
 tags: [reasoning, o1, test-time-compute, inference-time-compute, chain-of-thought, reinforcement-learning, llm-reasoning]
 summary: 深度解析 OpenAI o1/o3 类推理模型的技术原理，包括测试时计算扩展、隐式思维链、强化学习训练和推理时搜索策略。
 date: 2026-06-01
+created: 2026-06-12
 ---
 
 # o1-class Reasoning Models 深度解析

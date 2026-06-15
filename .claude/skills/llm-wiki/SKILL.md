@@ -422,7 +422,7 @@ All internal links connecting wiki pages are controlled by `OBSIDIAN_LINK_FORMAT
 
 | Setting | Syntax | Example |
 |---|---|---|
-| `wikilink` *(default)* | `[[path/to/page]]` or `[[path/to/page\|display text]]` | `[[concepts/foo\|foo]]` |
+| `wikilink` *(default)* | `[[path/to/page]]` or `[[path/to/page|display text]]` | `[[concepts/foo|foo]]` |
 | `markdown` | `[display text](relative/path.md)` | `[foo](../concepts/foo.md)` |
 
 ### Generating markdown-format links
@@ -439,7 +439,7 @@ When `OBSIDIAN_LINK_FORMAT=markdown`:
 | `projects/my-project/my-project.md` | `concepts/foo.md` | `[foo](../../concepts/foo.md)` |
 | `projects/my-project/concepts/arch.md` | `entities/bar.md` | `[bar](../../../entities/bar.md)` |
 
-The `[[path\|display text]]` wikilink form maps to `[display text](relative/path.md)` in Markdown mode.
+The `[[path|display text]]` wikilink form maps to `[display text](relative/path.md)` in Markdown mode.
 
 **Scope:** this setting affects only newly written or updated links. Existing vault content is never automatically migrated — users who want to convert old links can run the `cross-linker` or `wiki-lint` skill.
 

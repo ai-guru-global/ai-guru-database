@@ -4,10 +4,13 @@ title: 'Server 模式与 HTTP API'
 tags:
 - ai
 - ai-coding
+created: 2026-06-12
+category: 17-ai-coding
+summary: ""
 ---
 title: Server 模式与 HTTP API
 description: '**文档类型**: 平台集成专题 | **最后更新**: 2026-03 | **关键词**: OpenCode, Server, HTTP
-  API, OpenAPI 3.1, SDK, SSE, Headless, Stainless, Hono'
+ API, OpenAPI 3.1, SDK, SSE, Headless, Stainless, Hono'
 category: ai-coding
 tags:
 - ai
@@ -35,7 +38,7 @@ trigger_keywords:
 - coding
 authors:
 - name: KUDIG Team
-  role: contributor
+ role: contributor
 k8s_versions:
 - '1.28'
 - '1.29'

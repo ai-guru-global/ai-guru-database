@@ -7,9 +7,9 @@ created: 2026-05-31
 updated: 2026-05-31
 ---
 
-# 13 - AI应用与行业融合
+# 13 - AI 应用与行业融合
 
-本章节提供人工智能在各行业的应用现状、案例分析和融合趋势，覆盖10大行业的2025-2026最新数据与标杆案例。
+本章节提供人工智能在各行业的应用现状、案例分析和融合趋势，覆盖 10 大行业的 2025-2026 最新数据与标杆案例。
 
 ## 目录
 
@@ -18,20 +18,20 @@ updated: 2026-05-31
 
 ### 按行业深度分析 (2025-2026)
 
-| 行业 | 文件 | AI渗透率 | 关键词 |
+| 行业 | 文件 | AI 渗透率 | 关键词 |
 |------|------|----------|--------|
 | **医疗健康** | [AI_Healthcare_2026](./Healthcare/AI_Healthcare_2026.md) | 65% | 影像诊断、药物研发、精准医疗、手术机器人 |
 | **金融服务** | [AI_Finance_2026](./Finance/AI_Finance_2026.md) | 75% | 风控反欺诈、算法交易、智能投顾、RegTech |
 | **智能制造** | [AI_Manufacturing_2026](./Manufacturing/AI_Manufacturing_2026.md) | 55% | 数字孪生、预测性维护、视觉质检、黑灯工厂 |
 | **零售电商** | [AI_Retail_Ecommerce_2026](./Retail_Ecommerce/AI_Retail_Ecommerce_2026.md) | 70% | 个性化推荐、动态定价、智能供应链、无人零售 |
 | **自动驾驶** | [AI_Autonomous_Driving_2026](./Autonomous_Driving/AI_Autonomous_Driving_2026.md) | 45% | Robotaxi、ADAS、自动驾驶卡车、智能交通 |
-| **教育** | [AI_Education_2026](./Education/AI_Education_2026.md) | 50% | AI导师、个性化学习、编程教育、智能评估 |
-| **内容创作与媒体** | [AI_Content_Media_2026](./Content_Media/AI_Content_Media_2026.md) | 60%+ | 文本/图像/视频/音乐生成、AI游戏 |
+| **教育** | [AI_Education_2026](./Education/AI_Education_2026.md) | 50% | AI 导师、个性化学习、编程教育、智能评估 |
+| **内容创作与媒体** | [AI_Content_Media_2026](./Content_Media/AI_Content_Media_2026.md) | 60%+ | 文本/图像/视频/音乐生成、AI 游戏 |
 | **法律与政务** | [AI_Legal_Government_2026](./Legal_Government/AI_Legal_Government_2026.md) | 45% | 合同审查、诉讼预测、智慧城市、智能政务 |
 | **农业** | [AI_Agriculture_2026](./Agriculture/AI_Agriculture_2026.md) | 30% | 精准农业、农业机器人、产量预测、智能畜牧 |
 | **能源与气候** | [AI_Energy_Climate_2026](./Energy_Climate/AI_Energy_Climate_2026.md) | 45% | 智能电网、天气预测、碳监测、核聚变 |
 
-## 2026年行业应用特点
+## 2026 年行业应用特点
 
 ```
 核心特征:
@@ -62,8 +62,8 @@ updated: 2026-05-31
 3. 结合 [09_Deployment_Inference](../09_Deployment_Inference/) 了解工程实现
 
 ### 产品经理路径
-1. 了解各行业AI应用场景和最新案例
-2. 学习 [Agent_Production](../13_Agent_Production/) 了解AI Agent产品化
+1. 了解各行业 AI 应用场景和最新案例
+2. 学习 [Agent_Production](../13_Agent_Production/) 了解 AI Agent 产品化
 3. 研究 [AI_Coding_Assistants](../17_AI_Coding/02_Tools/AI_Coding_Assistants_2026.md) 提升开发效率
 
 ## 参考资源
@@ -83,6 +83,7 @@ updated: 2026-05-31
 - [[20_AI_Applications_Industry/AI_for_Science/README|AI for Science (AI 驱动的科学发现)]]
 - [[20_AI_Applications_Industry/AI_Applications_Industry|AI应用与行业融合全景]]
 - [[20_AI_Applications_Industry/AI_Applications_Industry_for_dummy|AI 行业应用 - 小白版]]
+- [[20_AI_Applications_Industry/Industry_Applications-in-nutshell|AI 行业应用速览]] — 横向速览 AI 在各行业的落地全景 (共享: ai-applications, industry, finance, healthcare)
 - [[20_AI_Applications_Industry/Industry-in-nutshell|AI 行业应用速成指南]]
 
 - [[20_AI_Applications_Industry/Energy_Climate/AI_Energy_Climate_2026]] — AI 能源与气候行业应用 (2025-2026) (共享: ai-applications, finance, healthcare, industry)
@@ -101,4 +102,9 @@ updated: 2026-05-31
 - [[20_AI_Applications_Industry/Industry-in-nutshell.md|Industry-in-nutshell]]
 - [[synthesis/ai-industry-applications|Ai Industry Applications]]
 
+## 新增页面
 
+- [[20_AI_Applications_Industry/Code_Generation/AI_Code_Generation_2026|AI 代码生成]]
+- [[20_AI_Applications_Industry/Finance/AI_Finance_Applications_2026|AI 金融应用]]
+- [[20_AI_Applications_Industry/Education/AI_Education_Applications_2026|AI 教育应用]]
+- [[20_AI_Applications_Industry/Healthcare/AI_Healthcare_Applications_2026|AI 医疗应用]]

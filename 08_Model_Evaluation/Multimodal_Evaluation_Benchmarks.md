@@ -4,6 +4,7 @@ category: 08-model-evaluation
 tags: [evaluation, multimodal, benchmark, mmmu, mathvista, chartqa, docvqa, video-evaluation, hallucination]
 summary: 系统梳理多模态理解评测基准，涵盖图像问答、文档理解、视频分析、跨模态推理和幻觉检测的评测方法与指标体系。
 date: 2026-06-01
+created: 2026-06-12
 ---
 
 # 多模态评测基准深度解析

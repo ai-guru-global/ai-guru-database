@@ -110,3 +110,4 @@ AI服务容量规划的特殊性：资源维度新增GPU显存和Token配额、�
 - [[concepts/model-evaluation.md|model-evaluation]]
 - [[concepts/model-compression.md|model-compression]]
 - [[concepts/multi-head-latent-attention]] — Multi-head Latent Attention (MLA) 与 FlashMLA 算子
+- [[synthesis/llm-infrastructure-system-design|LLM 基础设施 × 传统系统架构]] — 从 Web 服务到 Token 工厂

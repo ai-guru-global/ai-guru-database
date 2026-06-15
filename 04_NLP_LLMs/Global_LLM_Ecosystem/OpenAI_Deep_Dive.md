@@ -1591,6 +1591,94 @@ OpenAI 未来技术方向 (2025-2027)
 
 ---
 
+## GPT-5 系列最新模型 (2026年6月)
+
+### GPT-5 语言模型矩阵
+
+OpenAI 在 2026 年发布了 GPT-5 系列，包含三个层级：
+
+| 模型 | 输入价格 | 输出价格 | 上下文 | 最大输出 | 推理层级 | 知识截止 |
+|------|---------|---------|--------|---------|---------|---------|
+| **GPT-5.5** | $5.00/1M tokens | $30.00/1M tokens | 1M | 128K | 5 级可调 | 2025 年 12 月 |
+| **GPT-5.4** | $2.50/1M tokens | $15.00/1M tokens | 1M | 128K | 5 级可调 | 2025 年 8 月 |
+| **GPT-5.4-mini** | $0.75/1M tokens | $4.50/1M tokens | 400K | 128K | 5 级可调 | 2025 年 8 月 |
+
+**5 级推理深度 (Reasoning Effort)**:
+
+```
+推理力度层级:
+  Level 1 (minimal):  简单问答，格式转换
+  Level 2 (low):      日常对话，轻量分析
+  Level 3 (medium):   中等复杂度的编程和分析
+  Level 4 (high):     复杂推理，数学证明
+  Level 5 (max):      极限推理，前沿研究问题
+
+API 调用:
+  reasoning_effort: "minimal" | "low" | "medium" | "high" | "max"
+```
+
+**共同特性**:
+- Function Calling (工具调用)
+- Web Search (内置网络搜索)
+- Computer Use (计算机操作)
+- 文本+图像多模态输入
+- 多语言支持
+- Responses API 兼容
+
+### 实时音频模型 (Real-time Audio)
+
+OpenAI 推出 GPT-Realtime 系列，面向实时语音交互场景：
+
+| 模型 | 定位 | 特点 |
+|------|------|------|
+| **GPT-Realtime-2** | 推理语音 | 带推理能力的语音模型，适合复杂语音任务 |
+| **GPT-Realtime-1.5** | 最佳语音 | 最高语音自然度和理解力 |
+| **GPT-Realtime-mini** | 成本高效 | 低成本实时语音交互 |
+| **GPT-Realtime-Translate** | 语音翻译 | 实时语音到语音翻译 |
+
+```python
+# Realtime API 示例 (WebSocket)
+import asyncio
+from openai import AsyncOpenAI
+
+async def realtime_audio():
+    client = AsyncOpenAI(api_key="your-api-key")
+    
+    async with client.beta.realtime.connect(
+        model="gpt-realtime-2"
+    ) as connection:
+        await connection.session.update(
+            session={
+                "modalities": ["text", "audio"],
+                "instructions": "你是一个有帮助的语音助手",
+            }
+        )
+        # 发送音频数据并接收实时回复
+        await connection.input_audio_buffer.append(audio=audio_data)
+        await connection.response.create()
+```
+
+### GPT Image 2
+
+GPT Image 2 是 OpenAI 最新的图像生成模型，代表了当前 SOTA 水平：
+
+```
+GPT Image 2 特性:
+═══════════════════════════════════════════════════════════════════
+
+• State-of-the-art 图像生成质量
+• 精确的文本渲染 (text rendering)
+• 更好的 prompt 理解和遵循
+• 多种风格和构图控制
+• 通过 Responses API 和 Chat Completions API 调用
+
+API 调用:
+  model: "gpt-image-2"
+  支持: Text-to-Image, Image Editing, Image Variation
+```
+
+---
+
 ## 相关文档
 
 ### 架构基础

@@ -207,7 +207,7 @@ CLIP 催生的技术生态:
 
 | 模型 | 改进点 | 年份 |
 |------|--------|------|
-| ALIGN (Google) | 更大训练数据 (18亿图文对) | 2021 |
+| ALIGN (Google) | 更大训练数据 (18 亿图文对) | 2021 |
 | FILIP | 细粒度 token 级匹配 | 2021 |
 | SigLIP (Google) | Sigmoid 替代 Softmax (更高效) | 2023 |
 | EVA-CLIP | 更大 ViT + MIM 预训练 | 2023 |

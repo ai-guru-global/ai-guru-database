@@ -18,8 +18,15 @@ updated: '2026-05-31'
 | 文档 | 内容 | 适用读者 |
 |------|------|----------|
 | [Model-Training-in-nutshell](./Model-Training-in-nutshell.md) | 30 分钟速览：训练循环、超参数、监控工具 | 快速入门 |
-| [**ms-swift Deep Dive**](./ms_swift_Deep_Dive.md) | 魔搭大模型训练推理全链路框架：600+模型SFT/GRPO/RLHF/Megatron/推理部署/评测 | 框架实战 |
-| [**ms-swift 命令行参数参考**](./ms_swift_Command_Line_Parameters.md) | 200+命令行参数全量速查：基本/训练/RLHF/GRPO/推理/部署/导出/采样参数 | 参数手册 |
+| [**模型问题排查手册**](./Model_Troubleshooting_Guide.md) | 预训练/微调/推理全链路故障诊断，14 个常见问题 + 解决方案 | 实战排查 |
+| [**Scaler Laws 与训练动力学**](./Scaling_Laws_and_Training_Dynamics.md) | Kaplan/Chinchilla/涌现能力/推理时 Scaling | 理论研究 |
+| [**Tokenizer 设计 2026**](./Tokenizer_Design_2026.md) | BPE/SentencePiece/tiktoken/Unigram 全解析 | 预训练基础 |
+| [**优化器进阶 2026**](./Optimizer_Advanced_2026.md) | AdamW/Lion/Muon/Sophia/Shampoo + 学习率调度 | 训练优化 |
+| [**数据策展与配比 2026**](./Data_Curation_and_Mixture_2026.md) | 数据清洗/去重/配比/合成数据/多语言 | 数据工程 |
+| [**GRPO 与新对齐方法**](./GRPO_and_New_Alignment_Methods.md) | PPO/DPO/KTO/GRPO/RLOO/Reasoning RL | 对齐训练 |
+| [**剪枝与知识蒸馏**](./Pruning_and_Knowledge_Distillation.md) | Wanda/SparseGPT/LLM-Pruner/SFT 蒸馏 | 模型压缩 |
+| [**ms-swift Deep Dive**](./ms_swift_Deep_Dive.md) | 魔搭大模型训练推理全链路框架 | 框架实战 |
+| [**ms-swift 命令行参数参考**](./ms_swift_Command_Line_Parameters.md) | 200+ 命令行参数全量速查 | 参数手册 |
 
 > ⚠️ **注意**: 本章内容正在全面扩充中。当前仅包含速览指南，深度专题（分布式训练、混合精度、训练优化）即将上线。
 
@@ -28,8 +35,9 @@ updated: '2026-05-31'
 ## 学习路径
 
 - **快速入门** → [Model-Training-in-nutshell](./Model-Training-in-nutshell.md)（30 分钟）
-- **系统学习** → 待补充：分布式训练、混合精度、Fine-tuning 策略
-- **简化版** → 待补充：Model_Training_for_dummy.md
+- **遇到问题?** → [模型问题排查手册](./Model_Troubleshooting_Guide.md)（实战故障诊断）
+- **系统学习** → [Scaling Laws](./Scaling_Laws_and_Training_Dynamics.md) → [Tokenizer](./Tokenizer_Design_2026.md) → [优化器](./Optimizer_Advanced_2026.md) → [数据策展](./Data_Curation_and_Mixture_2026.md) → [GRPO 对齐](./GRPO_and_New_Alignment_Methods.md) → [剪枝蒸馏](./Pruning_and_Knowledge_Distillation.md)
+- **简化版** → [Model_Training_for_dummy](./Model_Training_for_dummy.md)
 
 ---
 
@@ -50,6 +58,13 @@ updated: '2026-05-31'
 
 ## 规划中的内容
 
+- [x] ✅ [Scaling Laws 与训练动力学](./Scaling_Laws_and_Training_Dynamics.md) — Kaplan/Chinchilla/涌现能力
+- [x] ✅ [Tokenizer 设计 2026](./Tokenizer_Design_2026.md) — BPE/SentencePiece/tiktoken
+- [x] ✅ [优化器进阶 2026](./Optimizer_Advanced_2026.md) — AdamW/Lion/Muon/Sophia
+- [x] ✅ [数据策展与配比 2026](./Data_Curation_and_Mixture_2026.md) — 数据清洗/去重/配比/合成数据
+- [x] ✅ [GRPO 与新对齐方法](./GRPO_and_New_Alignment_Methods.md) — PPO/DPO/KTO/GRPO/RLOO
+- [x] ✅ [剪枝与知识蒸馏](./Pruning_and_Knowledge_Distillation.md) — Wanda/SparseGPT/蒸馏
+- [x] ✅ [模型问题排查手册](./Model_Troubleshooting_Guide.md) — 全链路故障诊断
 - [ ] 分布式训练 2026（DDP / FSDP / DeepSpeed / Megatron-LM）
 - [ ] 混合精度训练（FP16 / BF16 / 梯度缩放）
 - [ ] 训练加速技术（FlashAttention / Gradient Checkpointing）
@@ -61,6 +76,7 @@ updated: '2026-05-31'
 *本章内容持续建设中，预计 2026-Q2 完成全面扩充。*
 
 ## Related
+- [[07_Model_Training/Model_Troubleshooting_Guide|模型问题排查手册 — 预训练/微调/推理全链路故障诊断]]
 - [[07_Model_Training/GRPO_and_New_Alignment_Methods|GRPO 与新一代对齐方法 (GRPO and New Alignment Methods)]]
 - [[07_Model_Training/Tokenizer_Design_2026|Tokenizer Design for LLMs]]
 - [[07_Model_Training/Data_Curation_and_Mixture_2026|Data Curation and Mixture for LLM Pretraining 2026]]

@@ -927,7 +927,7 @@ A: 13_Agent_Production/16_Agent_Evaluation/
 | **Flash Attention** | 闪存注意力 | IO-Aware, GPU | AI_Infrastructure_Trends_2026.md |
 | **Continuous Batching** | 连续批处理 | Inference, vLLM | Deployment_Inference/ |
 | **LLMOps** | 大模型运维 | Eval, Gateway | AI_Infrastructure_Trends_2026.md |
-| **MMLU** | 多任务知识评测 | 57学科, Benchmark | Model_Evaluation.md |
+| **MMLU** | 多任务知识评测 | 57 学科, Benchmark | Model_Evaluation.md |
 | **HumanEval** | 代码生成评测 | pass@k, Coding | Model_Evaluation.md |
 | **MT-Bench** | 多轮对话评测 | LLM-as-Judge | Model_Evaluation.md |
 | **AlphaFold** | 蛋白质结构预测 | GNN, Biology | AI_Applications_Industry.md |
@@ -953,7 +953,7 @@ A: 13_Agent_Production/16_Agent_Evaluation/
 | **Segmentation** | 图像分割 | Semantic, Instance | Segmentation/ |
 | **Feature Engineering** | 特征工程 | Selection, EDA | Feature_Engineering/ |
 | **Federated Learning** | 联邦学习 | FedAvg, Privacy | Distributed_Systems/ |
-| **PPML** | 隐私保护ML | HE, MPC, TEE | AI_Security_2026/ |
+| **PPML** | 隐私保护 ML | HE, MPC, TEE | AI_Security_2026/ |
 
 ---
 

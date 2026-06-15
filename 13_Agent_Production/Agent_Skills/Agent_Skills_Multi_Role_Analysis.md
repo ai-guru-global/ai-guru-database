@@ -97,8 +97,8 @@ flowchart TB
 
 | 规范项 | 要求 | 示例 |
 |--------|------|------|
-| **name 命名** | 小写+连字符, 1-64字符 | `csv-analyzer` ✅ `CSV_Analyzer` ❌ |
-| **description** | 祈使句式, ≤1024字符, 含触发关键词 | `"Analyze CSV files...Use when..."` |
+| **name 命名** | 小写+连字符, 1-64 字符 | `csv-analyzer` ✅ `CSV_Analyzer` ❌ |
+| **description** | 祈使句式, ≤1024 字符, 含触发关键词 | `"Analyze CSV files...Use when..."` |
 | **SKILL.md body** | < 500 行, < 5000 tokens | 详细内容移至 references/ |
 | **脚本声明依赖** | PEP 723 / Deno imports / Bun imports | `# /// script` `# dependencies = [...]` |
 | **脚本输入** | CLI 参数或环境变量, 禁止交互式提示 | `--format json --output report.csv` |
@@ -424,17 +424,17 @@ flowchart LR
 
 | 分类 | 代表 Skill | 复杂度 | 目标用户 | 商业价值 |
 |------|-----------|--------|---------|---------|
-| **文档处理** | docx, pdf, xlsx, pptx | 级别3-4 | 全员 | ⭐⭐⭐⭐⭐ |
-| **前端开发** | react-best-practices, frontend-design | 级别1-2 | 前端工程师 | ⭐⭐⭐⭐ |
-| **安全审计** | static-analysis, building-secure-contracts | 级别3-4 | 安全工程师 | ⭐⭐⭐⭐⭐ |
-| **云平台部署** | vercel-deploy, wrangler, netlify-deploy | 级别3 | DevOps | ⭐⭐⭐⭐ |
-| **AI/ML 工具** | hugging-face-model-trainer, fal-generate | 级别3-4 | ML 工程师 | ⭐⭐⭐ |
-| **数据分析** | csv-analyzer, duckdb-docs | 级别2-3 | 数据分析师 | ⭐⭐⭐⭐ |
-| **代码质量** | modern-python, code-review | 级别1-2 | 全部工程师 | ⭐⭐⭐ |
-| **基础设施** | terraform-*, azure-* | 级别2-3 | 基础设施工程师 | ⭐⭐⭐⭐ |
-| **创意设计** | algorithmic-art, canvas-design | 级别2-3 | 设计师/创意 | ⭐⭐⭐ |
-| **社交内容** | typefully, internal-comms | 级别1-2 | 市场/运营 | ⭐⭐ |
-| **平台集成** | gws-*, chatgpt-apps | 级别3 | 企业用户 | ⭐⭐⭐⭐⭐ |
+| **文档处理** | docx, pdf, xlsx, pptx | 级别 3-4 | 全员 | ⭐⭐⭐⭐⭐ |
+| **前端开发** | react-best-practices, frontend-design | 级别 1-2 | 前端工程师 | ⭐⭐⭐⭐ |
+| **安全审计** | static-analysis, building-secure-contracts | 级别 3-4 | 安全工程师 | ⭐⭐⭐⭐⭐ |
+| **云平台部署** | vercel-deploy, wrangler, netlify-deploy | 级别 3 | DevOps | ⭐⭐⭐⭐ |
+| **AI/ML 工具** | hugging-face-model-trainer, fal-generate | 级别 3-4 | ML 工程师 | ⭐⭐⭐ |
+| **数据分析** | csv-analyzer, duckdb-docs | 级别 2-3 | 数据分析师 | ⭐⭐⭐⭐ |
+| **代码质量** | modern-python, code-review | 级别 1-2 | 全部工程师 | ⭐⭐⭐ |
+| **基础设施** | terraform-*, azure-* | 级别 2-3 | 基础设施工程师 | ⭐⭐⭐⭐ |
+| **创意设计** | algorithmic-art, canvas-design | 级别 2-3 | 设计师/创意 | ⭐⭐⭐ |
+| **社交内容** | typefully, internal-comms | 级别 1-2 | 市场/运营 | ⭐⭐ |
+| **平台集成** | gws-*, chatgpt-apps | 级别 3 | 企业用户 | ⭐⭐⭐⭐⭐ |
 
 ### 6.3 用户旅程地图
 
@@ -481,10 +481,10 @@ flowchart LR
 
 | 阶段 | 时间线 | 关键里程碑 | 成功标准 |
 |------|--------|-----------|---------|
-| **MVP** | 1-2周 | 5个核心 Skills 可用 | 团队内部日活使用 |
-| **增长** | 1-3月 | 20+ Skills + 评估流程 | 触发成功率 > 80% |
-| **成熟** | 3-6月 | 自动化 CI 评估 + Skill 市场 | NPS > 40 |
-| **生态** | 6-12月 | 社区贡献 + 企业定制 | 月增 10+ 社区 Skills |
+| **MVP** | 1-2 周 | 5 个核心 Skills 可用 | 团队内部日活使用 |
+| **增长** | 1-3 月 | 20+ Skills + 评估流程 | 触发成功率 > 80% |
+| **成熟** | 3-6 月 | 自动化 CI 评估 + Skill 市场 | NPS > 40 |
+| **生态** | 6-12 月 | 社区贡献 + 企业定制 | 月增 10+ 社区 Skills |
 
 ---
 

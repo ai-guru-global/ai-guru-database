@@ -1322,6 +1322,82 @@ flowchart TB
 
 ---
 
+---
+
+## Kimi K2.6 与最新平台更新 (2026年6月)
+
+### 最新模型矩阵
+
+Kimi 平台在 2026 年持续扩展模型产品线：
+
+| 模型 | 上下文 | 特点 | 定位 |
+|------|--------|------|------|
+| **kimi-k2.6** | 256K | 多模态理解，长文本代码编写 | 最新一代旗舰 |
+| **kimi-k2.5** | 128K+ | 上一代高性能模型 | 稳定生产环境 |
+| **moonshot-v1-128k** | 128K | 经典长上下文模型 | Legacy v1 系列 |
+| **Thinking Model** | 128K+ | 高级推理，深度思考 | 复杂推理任务 |
+
+**kimi-k2.6 核心升级**:
+- 多模态理解能力：支持文本+图像输入
+- 256K 超长上下文窗口
+- 长文本代码编写优化：适合大型项目代码生成
+- 推理与 Agent 能力增强
+
+### 平台迁移
+
+Moonshot AI 开发者平台已完成迁移：
+
+```
+旧平台: platform.moonshot.cn
+新平台: platform.kimi.com  ← 当前正式平台
+
+API 端点:
+  旧: https://api.moonshot.cn/v1
+  新: https://api.kimi.com/v1   (推荐使用)
+
+说明:
+  • 旧域名仍可用但不再新增功能
+  • 新平台提供更完整的文档和控制台
+  • API Key 在两个平台通用
+```
+
+### Web Search 工具集成
+
+Kimi API 原生支持 Web Search 工具调用：
+
+```python
+from openai import OpenAI
+
+client = OpenAI(
+    base_url="https://api.kimi.com/v1",
+    api_key="your-api-key"
+)
+
+# 使用 Web Search 工具
+response = client.chat.completions.create(
+    model="kimi-k2.6",
+    messages=[
+        {"role": "user", "content": "2026年最新的AI芯片有哪些？"}
+    ],
+    tools=[
+        {
+            "type": "builtin_function",
+            "function": {
+                "name": "web_search",
+                "description": "搜索互联网获取最新信息"
+            }
+        }
+    ],
+    tool_choice="auto"
+)
+```
+
+### 定价与促销
+
+Kimi 平台提供灵活的定价方案，详情参见定价与促销门户 (platform.kimi.com/pricing)。新用户注册可获得免费额度用于模型测试。
+
+---
+
 ## 附录 A: 术语表
 
 | 术语 | 英文 | 说明 |
@@ -1349,4 +1425,21 @@ flowchart TB
 
 ---
 
+
+
+## 信息来源
+
+### 官方来源
+- Kimi Chat: https://kimi.moonshot.cn
+- Moonshot API 平台: https://platform.moonshot.cn
+- Moonshot AI GitHub: https://github.com/MoonshotAI
+- Kimi K2 技术报告: arXiv:2506.18858
+- Moonshot AI 官方博客: https://www.moonshot.cn
+
+### Wiki 内部参考
+- [[04_NLP_LLMs/Chinese_LLM_Ecosystem/README]] — 中国大模型生态全景
+- [[04_NLP_LLMs/Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]] — 全厂商对比矩阵
+- [[04_NLP_LLMs/Chinese_LLM_Ecosystem/Chinese_LLM_Training_Inference_Platforms]] — 训推平台实战
+
+---
 *Last updated: 2026-06-01*

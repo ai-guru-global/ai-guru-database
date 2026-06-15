@@ -114,7 +114,7 @@ updated: '2026-05-31'
 #### 记住这个
 
 > - 一个人奇怪 → **点异常**
-> - 一群人一起奇怪 → **集体异常**  
+> - 一群人一起奇怪 → **集体异常** 
 > - 情况不对才奇怪 → **上下文异常**
 
 ---
@@ -408,6 +408,7 @@ print(f"异常值: {data[result == -1].flatten()}")  # [100]
 ## 下一步
 
 学完这些基础后，可以继续学习：
-- [异常检测完整版](./Anomaly_Detection.md) - 深入每个方法的数学原理和代码
-- 时间序列异常检测 - 处理带时间的数据
-- 深度学习异常检测 - 用自编码器处理复杂数据
+- [[02_Machine_Learning/Anomaly_Detection/Anomaly_Detection|异常检测完整版]] - 深入每个方法的数学原理和代码
+- [[02_Machine_Learning/Time_Series/Time_Series_Analysis|时间序列分析]] - 处理带时间的数据
+- [[03_Deep_Learning/Self_Supervised_Learning/Self_Supervised_Learning_Deep_Dive|自监督学习]] - 用自编码器处理复杂数据
+- [[concepts/anomaly-detection]] — 异常检测概念总览

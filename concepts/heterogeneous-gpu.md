@@ -83,3 +83,4 @@ updated: 2026-06-03 00:00:00+00:00
 - [[concepts/training-inference-unification]] — 训推一体
 - [[concepts/rdma-roce]] — RDMA/RoCE 高速网络
 - [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — 阿里云 AI Stack
+- [[01_Fundamentals/AI_Hardware/Chinese_AI_Chips_Deep_Dive]] — 国产 AI 芯片12家厂商深度解析

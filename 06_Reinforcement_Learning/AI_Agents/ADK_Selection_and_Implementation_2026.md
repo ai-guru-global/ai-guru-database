@@ -1,0 +1,176 @@
+---
+title: "Agent Development Kits (ADK) 2026: Building with MCP, A2A, and UCP"
+category: "06-reinforcement-learning-ai-agents"
+tags: ["ai-agents", "adk", "sdk", "mcp", "a2a", "ucp", "implementation"]
+summary: "> **一句话理解**: 如果说协议（Protocol）是蓝图，那么 ADK（Agent Development Kit）就是施工工具箱——它让开发者无需从零编写网络报文，即可快速构建符合标准的智能体。"
+created: 2026-06-04
+updated: 2026-06-04
+---
+
+# Agent Development Kits (ADK) 2026: Building with MCP, A2A, and UCP
+
+> **一句话理解**: 如果说协议（Protocol）是蓝图，那么 ADK（Agent Development Kit）就是施工工具箱——它让开发者无需从零编写网络报文，即可快速构建符合标准的智能体。
+
+---
+
+## 📋 目录
+
+1. [ADK 核心定义与价值](#1-adk-核心定义与价值)
+2. [MCP SDK (Anthropic 生态)](#2-mcp-sdk-anthropic-生态)
+3. [Google A2A ADK (Google 生态)](#3-google-a2a-adk-google-生态)
+4. [UCP SDK (计算联盟生态)](#4-ucp-sdk-计算联盟生态)
+5. [ADK vs. Agent Frameworks](#5-adk-vs-agent-frameworks)
+6. [实战：使用 ADK 构建跨协议 Agent](#6-实战使用-adk-构建跨协议-agent)
+7. [2026 选型建议](#7-2026-选型建议)
+
+---
+
+## 1. ADK 核心定义与价值
+
+### 1.1 什么是 ADK？
+**ADK (Agent Development Kit)** 是为了特定 **Agent 协议**（如 MCP, A2A）量身定制的软件开发工具包。它通常包含：
+- **协议栈实现**: 处理底层序列化、消息路由和状态同步。
+- **预定义接口**: 封装了工具发现、身份验证和任务挂起等核心逻辑。
+- **本地调试工具**: 如 MCP Inspector 或 A2A Simulator。
+- **模板与脚手架**: 快速生成 Server/Client 样板代码。
+
+### 1.2 为什么需要 ADK？
+- **降低门槛**: 开发者只需调用 `server.add_tool()`，无需关心 JSON-RPC 的具体封装。
+- **保证合规**: 自动生成的代码天然符合协议规范，降低互操作性风险。
+- **性能优化**: 官方 ADK 通常对并发调用和内存管理有深度优化。
+
+---
+
+## 2. MCP SDK (Anthropic 生态)
+
+MCP (Model Context Protocol) 拥有目前最成熟的 ADK 生态，主要由 Anthropic 维护。
+
+### 2.1 Python/TypeScript SDK
+这是 MCP 开发者的首选，支持三种传输模式：
+- **stdio**: 最常用的本地开发模式（VS Code / Claude Desktop 集成）。
+- **SSE (Server-Sent Events)**: 适合 Web 环境。
+- **Websocket**: 适合高性能实时交互。
+
+### 2.2 核心组件
+- **`mcp.server`**: 用于构建工具提供者（如：Git MCP Server）。
+- **`mcp.client`**: 用于在智能体内调用外部工具。
+- **`mcp-inspector`**: 官方提供的图形化调试界面。
+
+### 2.3 代码片段 (TypeScript)
+```typescript
+import { Server } from "@modelcontextprotocol/sdk/server/index.js";
+import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
+
+const server = new Server({
+  name: "my-weather-adk",
+  version: "1.0.0",
+}, {
+  capabilities: { tools: {} }
+});
+
+server.setRequestHandler(ListToolsRequestSchema, async () => ({
+  tools: [{
+    name: "get_temperature",
+    description: "Get current temperature",
+    inputSchema: { type: "object", properties: { city: { type: "string" } } }
+  }]
+}));
+
+const transport = new StdioServerTransport();
+await server.connect(transport);
+```
+
+---
+
+## 3. Google A2A ADK (Google 生态)
+
+Google 在 2025 年推出的 **Agent-to-Agent (A2A) ADK**，旨在解决跨厂商 Agent 协作问题。
+
+### 3.1 核心特性
+- **Agent Card 生成**: 自动将 Python 函数文档转化为标准的 A2A JSON 名片。
+- **任务挂起 (Session Suspension)**: 原生支持长程任务的持久化和唤醒。
+- **多模态消息流**: 自动处理音频、图像在 Agent 间的传输和编解码。
+
+### 3.2 协作模式支持
+A2A ADK 原生支持 **Orchestrator（编排者）** 和 **Contributor（参与者）** 两种角色模板。
+
+### 3.3 与 Vertex AI 集成
+A2A ADK 可以一键将本地开发的 Agent 部署为 Vertex AI 的托管 Endpoint。
+
+---
+
+## 4. UCP SDK (计算联盟生态)
+
+UCP (Universal Compute Protocol) SDK 更加偏向底层，关注资源分配。
+
+### 4.1 核心层级
+- **`ucp-job-manager`**: 定义计算任务的优先级、所需算力（GPU 型号）和预算。
+- **`ucp-attestation-kit`**: 用于机密计算 (TEE) 的身份证明和数据加密传输。
+
+### 4.2 算力网格接入
+使用 UCP SDK，Agent 可以动态地在 AWS、Azure 以及去中心化算力网络 (DePIN) 之间切换任务。
+
+---
+
+## 5. ADK vs. Agent Frameworks
+
+这是开发者最容易混淆的概念。
+
+| 特性 | **ADK (如 MCP SDK)** | **Framework (如 LangGraph/AutoGen)** |
+|------|----------------------|---------------------------------------|
+| **关注点** | **通信标准** (怎么连接) | **逻辑编排** (怎么思考/工作) |
+| **抽象层级** | 底层 (RPC, 协议报文) | 高层 (状态机, 角色对话, 记忆) |
+| **互操作性** | 极高 (跨厂商通用) | 较低 (通常局限于框架内部) |
+| **典型代表** | MCP SDK, Google A2A ADK | LangChain, CrewAI, AutoGen |
+
+**2026 黄金法则**: 
+> **使用 Framework 来设计 Agent 的“大脑”，使用 ADK 来为 Agent 安装“四肢”和“电话机”。**
+
+---
+
+## 6. 实战：使用 ADK 构建跨协议 Agent
+
+### 6.1 场景描述
+构建一个“财务审计 Agent”，它需要：
+1. 通过 **MCP** 连接到公司的 ERP 数据库获取报表。
+2. 通过 **A2A** 联系外部的“税务合规 Agent”进行核对。
+3. 通过 **UCP** 申请高性能 GPU 进行异常检测模型推理。
+
+### 6.2 架构实现 (概念)
+```python
+# 1. 初始化 MCP Client 获取数据能力
+mcp_client = MCPClient(transport=StdioTransport("erp-server"))
+
+# 2. 初始化 A2A Client 获取外部协作能力
+tax_agent = A2AClient.connect("https://external-tax-api.com")
+
+# 3. 初始化 UCP Client 申请计算资源
+compute_job = UCPClient.submit(
+    task="anomaly_detection",
+    resources={"gpu": "H100"}
+)
+```
+
+---
+
+## 7. 2026 选型建议
+
+| 需求 | 推荐方案 |
+|------|----------|
+| **构建 IDE 插件、本地工具** | **MCP SDK (TypeScript)** — 生态位最稳固 |
+| **企业级跨部门多 Agent 协作** | **Google A2A ADK** — 标准化协作首选 |
+| **高性能计算或隐私敏感任务** | **UCP SDK** — 算力调度与机密计算 |
+| **简单对话、快速原型** | **LangChain / agno** — 绕过底层协议直接构建 |
+
+---
+
+## Related
+
+- [[06_Reinforcement_Learning/AI_Agents/Agent_Protocols_Comparison_2026]] — 协议横向对比表
+- [[06_Reinforcement_Learning/AI_Agents/MCP_Implementation_Guide]] — MCP 实战指南
+- [[13_Agent_Production/Agent_Frameworks/README]] — 高层开发框架概览
+- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Deep_Dive]] — 评估与测试工具
+
+---
+
+*Last updated: 2026-06-04*

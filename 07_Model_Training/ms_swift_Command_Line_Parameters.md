@@ -21,9 +21,9 @@ updated: 2026-06-03
 > 
 > 参数体系：基本参数 + 原子参数 → 集成参数（最终使用）。特定模型参数通过 `--model_kwargs` 或环境变量设置。
 >
-> - List参数用空格分隔：`--dataset <path1> <path2>`
-> - Dict参数用JSON：`--model_kwargs '{"fps_max_frames": 12}'`
-> - 支持yaml/json启动：`swift sft config.yaml`
+> - List 参数用空格分隔：`--dataset <path1> <path2>`
+> - Dict 参数用 JSON：`--model_kwargs '{"fps_max_frames": 12}'`
+> - 支持 yaml/json 启动：`swift sft config.yaml`
 
 ---
 
@@ -130,42 +130,42 @@ updated: 2026-06-03
 
 ---
 
-## 2. Seq2SeqTrainer 参数（继承自HF transformers）
+## 2. Seq2SeqTrainer 参数（继承自 HF transformers）
 
 | 参数 | 默认值 | 说明 |
 |------|--------|------|
 | 🔥`output_dir` | `'output/<model_name>'` | 输出目录 |
 | 🔥`gradient_checkpointing` | True | 降低显存但降低速度 |
-| 🔥`vit_gradient_checkpointing` | None(auto) | 多模态Vit部分gradient_checkpointing |
+| 🔥`vit_gradient_checkpointing` | None(auto) | 多模态 Vit 部分 gradient_checkpointing |
 | 🔥`deepspeed` | None | 可设`'zero0'`~`'zero3'`/`'zero2_offload'`/`'zero3_offload'`或自定义配置路径 |
-| 🔥`fsdp` | None | FSDP2配置，可设`'fsdp2'`或自定义路径 |
-| 🔥`per_device_train_batch_size` | 1 | 训练batch size |
-| 🔥`per_device_eval_batch_size` | 1 | 评估batch size |
-| 🔥`gradient_accumulation_steps` | None(auto>=16) | 梯度累加（GRPO默认1） |
-| 🔥`learning_rate` | 全参1e-5/LoRA1e-4 | 学习率 |
-| 🔥`vit_lr` | None(=lr) | 多模态ViT学习率 |
-| 🔥`aligner_lr` | None(=lr) | 多模态Aligner学习率 |
+| 🔥`fsdp` | None | FSDP2 配置，可设`'fsdp2'`或自定义路径 |
+| 🔥`per_device_train_batch_size` | 1 | 训练 batch size |
+| 🔥`per_device_eval_batch_size` | 1 | 评估 batch size |
+| 🔥`gradient_accumulation_steps` | None(auto>=16) | 梯度累加（GRPO 默认 1） |
+| 🔥`learning_rate` | 全参 1e-5/LoRA1e-4 | 学习率 |
+| 🔥`vit_lr` | None(=lr) | 多模态 ViT 学习率 |
+| 🔥`aligner_lr` | None(=lr) | 多模态 Aligner 学习率 |
 | `lr_scheduler_type` | `'cosine'` | 可选`'linear'`/`'constant'`/`'cosine_with_min_lr'` |
 | 🔥`report_to` | `'tensorboard'` | 可指定`'wandb'`/`'swanlab'`/`'all'` |
 | `logging_steps` | 5 | 日志打印间隔 |
-| 🔥`num_train_epochs` | 3 | 训练epoch数 |
+| 🔥`num_train_epochs` | 3 | 训练 epoch 数 |
 | 🔥`save_strategy` | `'steps'` | 可选`'no'`/`'steps'`/`'epoch'` |
 | 🔥`save_steps` | 500 | 保存间隔 |
-| 🔥`save_total_limit` | None(全保存) | 最多保存checkpoint数（设2则保存best+last） |
-| 🔥`eval_strategy` | None(跟随save) | 评估策略 |
-| 🔥`eval_steps` | None(跟随save) | 评估间隔 |
+| 🔥`save_total_limit` | None(全保存) | 最多保存 checkpoint 数（设 2 则保存 best+last） |
+| 🔥`eval_strategy` | None(跟随 save) | 评估策略 |
+| 🔥`eval_steps` | None(跟随 save) | 评估间隔 |
 | 🔥`warmup_ratio` | 0. | 预热比例 |
-| 🔥`resume_from_checkpoint` | None | 断点续训checkpoint路径 |
+| 🔥`resume_from_checkpoint` | None | 断点续训 checkpoint 路径 |
 | `resume_only_model` | False | 仅恢复模型权重（忽略优化器/种子） |
 | 🔥`dataloader_num_workers` | None(win:0/其他:1) | 数据加载进程数 |
 | `max_grad_norm` | 1. | 梯度裁剪 |
-| 🔥`neftune_noise_alpha` | 0 | NEFTune噪声（建议5/10/15） |
-| 🔥`use_liger_kernel` | False | Liger内核加速+省显存 |
+| 🔥`neftune_noise_alpha` | 0 | NEFTune 噪声（建议 5/10/15） |
+| 🔥`use_liger_kernel` | False | Liger 内核加速+省显存 |
 | `weight_decay` | 0.1 | 权重衰减 |
-| `adam_beta1` | 0.9 | Adam一阶矩衰减率 |
-| `adam_beta2` | 0.95 | Adam二阶矩衰减率 |
-| `router_aux_loss_coef` | 0. | MoE aux_loss权重 |
-| `max_epochs` | None | 训练到max_epochs强制退出（流式时有用） |
+| `adam_beta1` | 0.9 | Adam 一阶矩衰减率 |
+| `adam_beta2` | 0.95 | Adam 二阶矩衰减率 |
+| `router_aux_loss_coef` | 0. | MoE aux_loss 权重 |
+| `max_epochs` | None | 训练到 max_epochs 强制退出（流式时有用） |
 
 ---
 
@@ -227,39 +227,39 @@ updated: 2026-06-03
 
 | 参数 | 默认值 | 说明 |
 |------|--------|------|
-| 🔥`vllm_gpu_memory_utilization` | 0.9 | GPU内存比例 |
-| 🔥`vllm_tensor_parallel_size` | 1 | TP并行数 |
-| `vllm_pipeline_parallel_size` | 1 | PP并行数 |
-| `vllm_data_parallel_size` | 1 | DP并行数（deploy/rollout中生效） |
+| 🔥`vllm_gpu_memory_utilization` | 0.9 | GPU 内存比例 |
+| 🔥`vllm_tensor_parallel_size` | 1 | TP 并行数 |
+| `vllm_pipeline_parallel_size` | 1 | PP 并行数 |
+| `vllm_data_parallel_size` | 1 | DP 并行数（deploy/rollout 中生效） |
 | `vllm_enable_expert_parallel` | False | 专家并行 |
 | `vllm_max_num_seqs` | 256 | 单次迭代最大序列数 |
 | 🔥`vllm_max_model_len` | None(from config) | 模型最大长度 |
-| `vllm_enforce_eager` | False | True省显存但影响效率 |
+| `vllm_enforce_eager` | False | True 省显存但影响效率 |
 | 🔥`vllm_limit_mm_per_prompt` | None | 多图限制，如`'{"image": 5, "video": 2}'` |
-| 🔥`vllm_enable_prefix_caching` | None(跟随vLLM) | 前缀缓存加速 |
+| 🔥`vllm_enable_prefix_caching` | None(跟随 vLLM) | 前缀缓存加速 |
 | `vllm_speculative_config` | None | 推测解码配置(json) |
-| `vllm_reasoning_parser` | None | 思考模型解析器（仅deploy） |
+| `vllm_reasoning_parser` | None | 思考模型解析器（仅 deploy） |
 
 ### 4.2 SGLang 参数
 
 | 参数 | 默认值 | 说明 |
 |------|--------|------|
-| 🔥`sglang_tp_size` | 1 | TP数 |
-| `sglang_pp_size` | 1 | PP数 |
-| `sglang_dp_size` | 1 | DP数 |
-| `sglang_ep_size` | 1 | EP数 |
-| `sglang_mem_fraction_static` | None | 静态分配GPU内存比例 |
+| 🔥`sglang_tp_size` | 1 | TP 数 |
+| `sglang_pp_size` | 1 | PP 数 |
+| `sglang_dp_size` | 1 | DP 数 |
+| `sglang_ep_size` | 1 | EP 数 |
+| `sglang_mem_fraction_static` | None | 静态分配 GPU 内存比例 |
 | `sglang_context_length` | None(from config) | 最大上下文长度 |
 | `sglang_speculative_algorithm` | None | 推测算法：None/EAGLE/EAGLE3/NEXTN/STANDALONE/NGRAM |
-| `sglang_enable_dp_attention` | False | DP注意力（DeepSeek-V2/3, Qwen2/3 MoE） |
+| `sglang_enable_dp_attention` | False | DP 注意力（DeepSeek-V2/3, Qwen2/3 MoE） |
 
 ### 4.3 LMDeploy 参数
 
 | 参数 | 默认值 | 说明 |
 |------|--------|------|
-| 🔥`lmdeploy_tp` | 1 | tensor并行度 |
+| 🔥`lmdeploy_tp` | 1 | tensor 并行度 |
 | `lmdeploy_session_len` | None | 最大会话长度 |
-| `lmdeploy_cache_max_entry_count` | 0.8 | KV缓存GPU内存比例 |
+| `lmdeploy_cache_max_entry_count` | 0.8 | KV 缓存 GPU 内存比例 |
 
 ---
 
@@ -410,22 +410,22 @@ updated: 2026-06-03
 | 🔥`VIDEO_MAX_PIXELS` | 768×28×28 | 视频帧最大分辨率 |
 | 🔥`FPS_MAX_FRAMES` | 768 | 视频最大抽帧数 |
 | `FPS` | 2.0 | 视频抽帧率 |
-| 🔥`QWENVL_BBOX_FORMAT` | `'legacy'` | grounding格式：`'legacy'`/`'new'` |
+| 🔥`QWENVL_BBOX_FORMAT` | `'legacy'` | grounding 格式：`'legacy'`/`'new'` |
 
 ### 6.2 Qwen3-VL / Qwen3.5 系列
 
 | 参数 | 默认值 | 说明 |
 |------|--------|------|
-| `IMAGE_MAX_TOKEN_NUM` | 16384 | 单图最大图像tokens（防OOM） |
-| `VIDEO_MAX_TOKEN_NUM` | 768 | 视频帧最大tokens（防OOM） |
+| `IMAGE_MAX_TOKEN_NUM` | 16384 | 单图最大图像 tokens（防 OOM） |
+| `VIDEO_MAX_TOKEN_NUM` | 768 | 视频帧最大 tokens（防 OOM） |
 | 🔥`FPS_MAX_FRAMES` | 768 | 视频最大抽帧数 |
 
 ### 6.3 Qwen2.5-Omni / Qwen3-Omni
 
 | 参数 | 默认值 | 说明 |
 |------|--------|------|
-| `USE_AUDIO_IN_VIDEO` | False | 是否使用video中的音频 |
-| 🔥`ENABLE_AUDIO_OUTPUT` | None(from config) | Zero3训练请设False |
+| `USE_AUDIO_IN_VIDEO` | False | 是否使用 video 中的音频 |
+| 🔥`ENABLE_AUDIO_OUTPUT` | None(from config) | Zero3 训练请设 False |
 
 ### 6.4 其他多模态模型
 

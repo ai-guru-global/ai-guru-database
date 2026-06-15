@@ -1591,6 +1591,84 @@ trainer.train()
 
 ---
 
+## DeepSeek V4 API 最新规格与定价 (2026年6月)
+
+### API 模型规格
+
+DeepSeek V4 系列提供 Flash 和 Pro 两个版本，均支持百万级上下文：
+
+| 模型 | 上下文 | 最大输出 | 输入价格 (uncached) | 输入价格 (cached) | 输出价格 | 并发上限 |
+|------|--------|---------|--------------------|--------------------|---------|---------|
+| **V4-Flash** | 1M | 384K | $0.14/1M tokens | $0.0028/1M tokens | $0.28/1M tokens | 2,500 |
+| **V4-Pro** | 1M | 384K | $0.435/1M tokens | $0.003625/1M tokens | $0.87/1M tokens | 500 |
+
+> **关键亮点**: V4-Flash 的缓存输入价格仅 $0.0028/1M tokens，是目前业界最低之一。V4 系列最大输出达 **384K tokens**，大幅超越上一代的 8K-16K 限制。
+
+### Thinking 模式切换
+
+V4 系列通过 `"thinking"` 参数控制推理深度：
+
+```python
+from openai import OpenAI
+
+client = OpenAI(
+    base_url="https://api.deepseek.com/v1",
+    api_key="your-api-key"
+)
+
+# 启用思维模式
+response = client.chat.completions.create(
+    model="deepseek-v4-pro",
+    messages=[
+        {"role": "user", "content": "证明 Fermat 小定理"}
+    ],
+    extra_body={
+        "thinking": {"type": "enabled"}
+    },
+    max_tokens=384000
+)
+
+# 关闭思维模式，快速响应
+response_fast = client.chat.completions.create(
+    model="deepseek-v4-flash",
+    messages=[
+        {"role": "user", "content": "Python 的 list comprehension 怎么用？"}
+    ],
+    extra_body={
+        "thinking": {"type": "disabled"}
+    }
+)
+```
+
+### 高级功能支持
+
+| 功能 | 状态 | 说明 |
+|------|------|------|
+| **Function Calling** | 正式支持 | 工具调用，支持多工具并行 |
+| **Structured Output (JSON)** | 正式支持 | 强制 JSON Schema 输出 |
+| **FIM (Fill-in-the-Middle)** | Beta 测试 | 代码补全场景 |
+| **Batch Inference** | 正式支持 | 异步批处理 |
+
+### API 端点
+
+DeepSeek 提供双协议端点：
+
+| 端点 | 协议 | 说明 |
+|------|------|------|
+| `api.deepseek.com` | OpenAI-compatible | 标准 REST API，兼容 OpenAI SDK |
+| `api.deepseek.com/anthropic` | Anthropic-compatible | 兼容 Anthropic Messages API 格式 |
+
+### 旧模型退役计划
+
+| 模型 | 退役时间 | 替代方案 |
+|------|---------|---------|
+| `deepseek-chat` (V3) | 2026 年 7 月 | `deepseek-v4-flash` 或 `deepseek-v4-pro` |
+| `deepseek-reasoner` (R1) | 2026 年 7 月 | V4 系列 thinking 模式 |
+
+> **迁移建议**: 使用 `deepseek-chat` 的用户应尽快迁移至 V4 系列。V4-Flash 在大多数场景下性能更优且成本更低。
+
+---
+
 ## 相关文档
 
 ### 架构基础
@@ -1619,4 +1697,21 @@ trainer.train()
 
 ---
 
+
+
+## 信息来源
+
+### 官方来源
+- DeepSeek 官网: https://www.deepseek.com
+- DeepSeek API 平台: https://platform.deepseek.com
+- DeepSeek GitHub: https://github.com/deepseek-ai
+- DeepSeek-V3 技术报告: arXiv:2412.19437
+- DeepSeek-R1 技术报告: arXiv:2501.12948
+
+### Wiki 内部参考
+- [[04_NLP_LLMs/Chinese_LLM_Ecosystem/README]] — 中国大模型生态全景
+- [[04_NLP_LLMs/Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]] — 全厂商对比矩阵
+- [[04_NLP_LLMs/Chinese_LLM_Ecosystem/Chinese_LLM_Training_Inference_Platforms]] — 训推平台实战
+
+---
 *Last updated: 2026-06-01*

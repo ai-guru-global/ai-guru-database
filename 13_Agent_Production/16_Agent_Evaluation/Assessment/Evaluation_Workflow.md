@@ -800,11 +800,11 @@ documentation_retention:
 
 ---
 
-## 10. 云产品Agent评估工作流 (CAPER Path)
+## 10. 云产品 Agent 评估工作流 (CAPER Path)
 
-> **适用场景**: 评估云产品智能Agent（国内云、国际云、DevOps Agent、通用聊天Agent）时，使用CAPER五维评估模型替代或补充标准RAPS工作流。
+> **适用场景**: 评估云产品智能 Agent（国内云、国际云、DevOps Agent、通用聊天 Agent）时，使用 CAPER 五维评估模型替代或补充标准 RAPS 工作流。
 
-### 10.1 CAPER评估流程概览
+### 10.1 CAPER 评估流程概览
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
@@ -840,7 +840,7 @@ documentation_retention:
 └─────────────────────────────────────────────────────────────────┘
 ```
 
-### 10.2 Agent类别与权重配置
+### 10.2 Agent 类别与权重配置
 
 ```yaml
 caper_weight_profiles:
@@ -908,7 +908,7 @@ Day 7: Reporting
 □ 配置持续监控
 ```
 
-### 10.4 与标准RAPS工作流的关系
+### 10.4 与标准 RAPS 工作流的关系
 
 ```
 标准评估工作流 (§1-§9)              CAPER评估工作流 (§10)
@@ -947,3 +947,4 @@ Day 7: Reporting
 - [[13_Agent_Production/16_Agent_Evaluation/Cloud_Agent_Evaluation_System_2026]] — Cloud Agent Evaluation System 2026 (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
 - [[13_Agent_Production/16_Agent_Evaluation/Metrics/Evaluation_Metrics]] — Evaluation Metrics (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
 - [[13_Agent_Production/16_Agent_Evaluation/Multi_Agent_Evaluation_2026]] — Multi-Agent System Evaluation Framework 2026 (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
+- [[synthesis/agent-evaluation-model-evaluation|Agent 评估 × 模型评估]] — 从指标到行为的评估范式迁移

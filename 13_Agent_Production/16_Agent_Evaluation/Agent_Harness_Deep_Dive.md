@@ -9,7 +9,7 @@ updated: '2026-05-31'
 
 # Agent Harness 技术深度解析
 
-> **一句话理解**: Agent Harness 是AI Agent工业化落地的核心基础设施，它通过标准化的测试环境、多维度评估体系和完整可观测性，让Agent从"实验品"变成"可信赖的生产系统"。
+> **一句话理解**: Agent Harness 是 AI Agent 工业化落地的核心基础设施，它通过标准化的测试环境、多维度评估体系和完整可观测性，让 Agent 从"实验品"变成"可信赖的生产系统"。
 
 ---
 
@@ -32,21 +32,21 @@ updated: '2026-05-31'
 | 阶段 | 时期 | 特征 | 代表工具 |
 |------|------|------|----------|
 | **传统单元测试** | 2010s | 确定性验证、精确匹配预期 | JUnit, pytest |
-| **ML模型测试** | 2015s | 数据集划分、指标评估 | TensorFlow Model Analysis |
-| **LLM评估** | 2020-2022 | Prompt工程、人工评估 | OpenAI Evals (早期) |
+| **ML 模型测试** | 2015s | 数据集划分、指标评估 | TensorFlow Model Analysis |
+| **LLM 评估** | 2020-2022 | Prompt 工程、人工评估 | OpenAI Evals (早期) |
 | **Agent Harness 1.0** | 2023 | 沙箱环境、多轮交互测试 | LangSmith, AgentOps |
 | **Agent Harness 2.0** | 2024-2025 | 多维度评估、对抗测试、LLM-as-Judge | Phoenix, Arize |
 | **Agent Harness 3.0** | 2026+ | 自主评估、自适应测试、因果推理 | 新兴框架 |
 
 ### 1.2 关键里程碑
 
-- **2022.06**: LangChain 发布，首次系统化Agent开发框架
-- **2023.03**: AutoGPT 爆火，暴露Agent测试空白
-- **2023.09**: LangSmith GA，企业级Agent可观测性平台
-- **2024.01**: OpenAI Evals 开源，标准化LLM评估
-- **2024.06**: Arize Phoenix 发布，开源Agent评估框架
-- **2025.02**: Anthropic Computer Use API，带完整Harness的安全Agent
-- **2026.01**: AI Agent 评估ISO标准草案发布
+- **2022.06**: LangChain 发布，首次系统化 Agent 开发框架
+- **2023.03**: AutoGPT 爆火，暴露 Agent 测试空白
+- **2023.09**: LangSmith GA，企业级 Agent 可观测性平台
+- **2024.01**: OpenAI Evals 开源，标准化 LLM 评估
+- **2024.06**: Arize Phoenix 发布，开源 Agent 评估框架
+- **2025.02**: Anthropic Computer Use API，带完整 Harness 的安全 Agent
+- **2026.01**: AI Agent 评估 ISO 标准草案发布
 
 ---
 
@@ -210,7 +210,7 @@ class TestTrace:
 | **对抗测试** | ❌ | ✅ | ❌ | ⚠️ 部分 | ❌ |
 | **多租户** | ✅ | ❌ | ✅ | ✅ | ✅ |
 | **本地部署** | ❌ | ✅ | ❌ | ❌ | ❌ |
-| **CI/CD集成** | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **CI/CD 集成** | ✅ | ✅ | ✅ | ✅ | ✅ |
 | **成本** | $$$ | 免费 | $$ | $$ | $$$ |
 
 ### 3.2 详细对比
@@ -218,17 +218,17 @@ class TestTrace:
 #### LangSmith (LangChain)
 
 **优势**:
-- 与LangChain生态无缝集成
+- 与 LangChain 生态无缝集成
 - 企业级多租户支持
 - 丰富的可视化界面
 - 数据集管理和版本控制
 
 **劣势**:
 - 闭源商业产品
-- 仅限LangChain框架
+- 仅限 LangChain 框架
 - 成本较高
 
-**适用场景**: 使用LangChain的企业用户
+**适用场景**: 使用 LangChain 的企业用户
 
 ```python
 # LangSmith 示例
@@ -254,13 +254,13 @@ results = client.run_on_dataset(
 
 **优势**:
 - 完全开源
-- 强大的LLM-as-Judge功能
+- 强大的 LLM-as-Judge 功能
 - 无需代码修改即可追踪
 - 支持多种框架
 
 **劣势**:
-- UI功能相对简单
-- 企业功能需付费Arize平台
+- UI 功能相对简单
+- 企业功能需付费 Arize 平台
 
 **适用场景**: 追求开源、预算有限的团队
 
@@ -285,7 +285,7 @@ print(f"View traces at: {session.url}")
 #### AgentOps
 
 **优势**:
-- 专注于Agent特定功能
+- 专注于 Agent 特定功能
 - 会话重放功能
 - 成本追踪详细
 - 异常检测
@@ -458,7 +458,7 @@ class EnterpriseSecurityLayer:
 
 #### 场景: Code Generation Agent
 
-| 并发数 | 吞吐量 (tasks/min) | P95 延迟 (s) | 错误率 | CPU使用率 | 内存使用 |
+| 并发数 | 吞吐量 (tasks/min) | P95 延迟 (s) | 错误率 | CPU 使用率 | 内存使用 |
 |--------|-------------------|--------------|--------|-----------|----------|
 | 1 | 4.2 | 12.5 | 0% | 15% | 2.1GB |
 | 10 | 38.5 | 15.8 | 0.1% | 45% | 4.5GB |
@@ -468,9 +468,9 @@ class EnterpriseSecurityLayer:
 | 1000 | 1200.8 | 52.3 | 8.2% | 100% | 78.5GB |
 
 **优化建议**:
-- 100并发以下：单实例足够
-- 100-500并发：建议3-5实例集群
-- 500+并发：需优化Agent响应时间，考虑异步化
+- 100 并发以下：单实例足够
+- 100-500 并发：建议 3-5 实例集群
+- 500+并发：需优化 Agent 响应时间，考虑异步化
 
 ---
 
@@ -557,11 +557,11 @@ cs_harness = AgentHarness({
 
 ---
 
-## 7. Agent协议测试 (2026)
+## 7. Agent 协议测试 (2026)
 
-> **一句话**: 2026年的Agent Harness必须支持MCP Server测试、A2A Agent测试和跨协议集成测试。
+> **一句话**: 2026 年的 Agent Harness 必须支持 MCP Server 测试、A2A Agent 测试和跨协议集成测试。
 
-### 7.1 MCP Server测试框架
+### 7.1 MCP Server 测试框架
 
 ```python
 class MCPServerHarness:
@@ -633,7 +633,7 @@ class MCPServerHarness:
             )
 ```
 
-### 7.2 A2A Agent测试框架
+### 7.2 A2A Agent 测试框架
 
 ```python
 class A2AAgentHarness:
@@ -1182,15 +1182,15 @@ Agent Harness 标准化路线图
 ## 参考资料
 
 ### 学术论文
-1. **ReAct**: Yao et al. (2023) - Agent推理与行动框架
-2. **Reflexion**: Shinn et al. (2023) - 自我反思Agent
-3. **Voyager**: Wang et al. (2023) - 终身学习Agent
+1. **ReAct**: Yao et al. (2023) - Agent 推理与行动框架
+2. **Reflexion**: Shinn et al. (2023) - 自我反思 Agent
+3. **Voyager**: Wang et al. (2023) - 终身学习 Agent
 4. **AutoGen**: Wu et al. (2023) - 多智能体对话
 
 ### 开源项目
-1. [LangSmith](https://smith.langchain.com/) - LangChain官方平台
-2. [Phoenix](https://phoenix.arize.com/) - Arize开源评估框架
-3. [OpenAI Evals](https://github.com/openai/evals) - OpenAI评估框架
+1. [LangSmith](https://smith.langchain.com/) - LangChain 官方平台
+2. [Phoenix](https://phoenix.arize.com/) - Arize 开源评估框架
+3. [OpenAI Evals](https://github.com/openai/evals) - OpenAI 评估框架
 4. [Braintrust](https://www.braintrustdata.com/) - 企业评估平台
 
 ### 行业报告

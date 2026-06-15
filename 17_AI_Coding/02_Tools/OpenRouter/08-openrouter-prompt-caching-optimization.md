@@ -4,6 +4,9 @@ title: 'Prompt Caching 与成本优化'
 tags:
 - ai
 - ai-coding
+created: 2026-06-12
+category: 17-ai-coding
+summary: ""
 ---
 title: Prompt Caching 与成本优化
 description: '# Prompt Caching 与成本优化'
@@ -33,7 +36,7 @@ trigger_keywords:
 - coding
 authors:
 - name: KUDIG Team
-  role: contributor
+ role: contributor
 k8s_versions:
 - '1.28'
 - '1.29'

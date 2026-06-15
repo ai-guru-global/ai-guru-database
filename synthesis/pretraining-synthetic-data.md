@@ -4,6 +4,8 @@ description: 跨域合成：预训练数据工程（Pretraining Data）与合成
 date: 2026-05-31
 tags: [pretraining-data, synthetic-data, data-engineering, llm-training, data-curation, data-mixture, quality-over-scale]
 category: synthesis
+created: 2026-06-12
+summary: ""
 ---
 
 # 预训练数据 × 合成数据：从规模到质量的范式转移

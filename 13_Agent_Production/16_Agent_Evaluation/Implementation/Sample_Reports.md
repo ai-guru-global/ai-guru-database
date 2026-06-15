@@ -1014,9 +1014,9 @@ R (风险安全):   {agent_name} — 分
 - [Implementation Guide](./Implementation_Guide.md) - Setup instructions
 - [Config Templates](./Config_Templates.md) - Configuration files
 - [Evaluation Workflow](../Assessment/Evaluation_Workflow.md) - Process details
-- [Cloud Agent Leaderboard](../Cloud_Agent_Leaderboard_2026.md) - 2026云Agent排行榜
-- [Cloud Agent Evaluation](../Cloud_Agent_Evaluation/README.md) - 云Agent评估框架
-- [LLM as Judge Templates](./LLM_as_Judge_Templates.md) - LLM评估提示词模板
+- [Cloud Agent Leaderboard](../Cloud_Agent_Leaderboard_2026.md) - 2026 云 Agent 排行榜
+- [Cloud Agent Evaluation](../Cloud_Agent_Evaluation/README.md) - 云 Agent 评估框架
+- [LLM as Judge Templates](./LLM_as_Judge_Templates.md) - LLM 评估提示词模板
 - [Corpus Assessment](../Corpus_Assessment/README.md) - 语料库评估框架
 - [[13_Agent_Production/16_Agent_Evaluation/Cloud_Agent_Evaluation/DevOps_Agent_Benchmark.md|DevOps_Agent_Benchmark]]
 

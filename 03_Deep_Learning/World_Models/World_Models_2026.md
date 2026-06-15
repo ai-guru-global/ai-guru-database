@@ -7,9 +7,9 @@ created: '2026-05-31'
 updated: '2026-05-31'
 ---
 
-# 世界模型 (World Models) - 2026年完整指南
+# 世界模型 (World Models) - 2026 年完整指南
 
-> **一句话理解**: 世界模型就像AI的"内部模拟器"——它不是生成像素来预测未来，而是在抽象的表征空间中学习世界的运行规律，让AI能够像人类一样进行想象、规划和推理。
+> **一句话理解**: 世界模型就像 AI 的"内部模拟器"——它不是生成像素来预测未来，而是在抽象的表征空间中学习世界的运行规律，让 AI 能够像人类一样进行想象、规划和推理。
 
 ---
 
@@ -61,9 +61,9 @@ updated: '2026-05-31'
 
 ## 2. 核心概念 (Core Concepts)
 
-### 2.1 JEPA架构家族
+### 2.1 JEPA 架构家族
 
-**Joint Embedding Predictive Architecture (联合嵌入预测架构)** 是Meta AI在Yann LeCun领导下开发的世界模型范式。
+**Joint Embedding Predictive Architecture (联合嵌入预测架构)** 是 Meta AI 在 Yann LeCun 领导下开发的世界模型范式。
 
 ```
 JEPA核心架构:
@@ -104,7 +104,7 @@ JEPA核心架构:
 | **对噪声鲁棒性** | 差 (必须预测每个细节) | 强 (只学本质) |
 | **计算效率** | 低 (解码器昂贵) | 高 (无解码器) |
 
-### 2.2 JEPA家族成员详解
+### 2.2 JEPA 家族成员详解
 
 #### I-JEPA (Image JEPA)
 
@@ -125,7 +125,7 @@ I-JEPA 掩码策略:
 - 不使用像素重建
 ```
 
-**性能**: 在ImageNet上，I-JEPA学习的表征在下游任务上优于MAE和对比学习方法。
+**性能**: 在 ImageNet 上，I-JEPA 学习的表征在下游任务上优于 MAE 和对比学习方法。
 
 #### V-JEPA (Video JEPA)
 
@@ -184,7 +184,7 @@ class VJEPA2AC(nn.Module):
 
 #### LeJEPA (2025.11) - 理论突破
 
-**核心贡献**: 从理论上证明JEPA的可扩展性和防表征坍塌
+**核心贡献**: 从理论上证明 JEPA 的可扩展性和防表征坍塌
 
 ```
 传统自监督学习的问题:
@@ -197,14 +197,14 @@ LeJEPA的解决方案:
 - 提供收敛性和表征质量的数学保证
 ```
 
-**LeJEPA核心思想**:
+**LeJEPA 核心思想**:
 - 将预测问题转化为分布匹配问题
 - 使用能量模型框架
 - 自然避免表征坍塌
 
 #### VL-JEPA (2025.12) - 视觉语言版
 
-**核心创新**: 将JEPA扩展到视觉-语言领域，非自回归生成
+**核心创新**: 将 JEPA 扩展到视觉-语言领域，非自回归生成
 
 ```
 VL-JEPA vs 传统VLM:
@@ -346,9 +346,9 @@ JEPA可以看作**能量模型**:
 
 ### 4.2 机器人操作
 
-**V-JEPA 2在机器人中的实际部署**:
+**V-JEPA 2 在机器人中的实际部署**:
 
-| 任务 | 传统方法 | V-JEPA 2方法 | 成功率 |
+| 任务 | 传统方法 | V-JEPA 2 方法 | 成功率 |
 |------|----------|-------------|--------|
 | **抓取** | 关键点检测+运动规划 | 视觉表征直接预测抓取结果 | 80.8% |
 | **导航** | SLAM+路径规划 | 世界模型预测碰撞风险 | 5.687 ATE |
@@ -356,7 +356,7 @@ JEPA可以看作**能量模型**:
 
 ### 4.3 视频理解与生成
 
-**VL-JEPA的应用**:
+**VL-JEPA 的应用**:
 
 - **视频问答**: 预测问题的表征，而非逐字生成答案
 - **长视频理解**: 高效处理长序列，选择性解码关键片段
@@ -692,7 +692,7 @@ class WorldModelPlanner:
 |----------|----------|------|
 | **内容创作** | 生成模型 (Sora/DALL-E) | 需要高质量像素输出 |
 | **机器人控制** | 世界模型 (JEPA) | 需要理解物理，快速规划 |
-| **视频理解** | 两者结合 | JEPA理解，生成模型增强 |
+| **视频理解** | 两者结合 | JEPA 理解，生成模型增强 |
 | **自动驾驶** | 世界模型为主 | 安全关键，需要可解释性 |
 
 ---
@@ -746,7 +746,7 @@ class WorldModelPlanner:
 - [facebookresearch/v-jepa](https://github.com/facebookresearch/v-jepa)
 
 ### 相关综述
-- [Awesome Physical AI](https://github.com/keon/awesome-physical-ai) - 物理AI资源汇总
+- [Awesome Physical AI](https://github.com/keon/awesome-physical-ai) - 物理 AI 资源汇总
 - [World Models in Deep Learning](https://worldmodels.github.io/) - Ha & Schmidhuber
 
 ---

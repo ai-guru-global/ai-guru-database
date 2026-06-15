@@ -1155,7 +1155,7 @@ class TenantAccessControl:
 
 ---
 
-*文档版本: 1.0.0*  
+*文档版本: 1.0.0* 
 *最后更新: 2026-04-13*
 
 ## Related

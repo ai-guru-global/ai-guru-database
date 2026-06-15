@@ -14,24 +14,24 @@ summary: English README for the AI Guru comprehensive AI learning resource repos
 <p>Complete AI Knowledge System from Theory to Production | 290+ Docs | 2.6M+ Words | 2026 Latest</p>
 
 <p>
-  <a href="#-quick-start">🚀 Quick Start</a> •
-  <a href="#-why-ai-guru">💡 Why AI Guru</a> •
-  <a href="#-content-navigation">📚 Content Navigation</a> •
-  <a href="#-who-is-it-for">🎯 Who Is It For</a> •
-  <a href="#-download-for-local-tools">💾 Download for Local Tools</a>
+ <a href="#-quick-start">🚀 Quick Start</a> •
+ <a href="#-why-ai-guru">💡 Why AI Guru</a> •
+ <a href="#-content-navigation">📚 Content Navigation</a> •
+ <a href="#-who-is-it-for">🎯 Who Is It For</a> •
+ <a href="#-download-for-local-tools">💾 Download for Local Tools</a>
 </p>
 
 <p>
-  <img src="https://img.shields.io/badge/Docs-290%2B-blue?style=flat-square&logo=bookstack" alt="Docs">
-  <img src="https://img.shields.io/badge/Content-2.6M%2B%20words-green?style=flat-square" alt="Content">
-  <img src="https://img.shields.io/badge/Chapters-13-orange?style=flat-square" alt="Chapters">
-  <img src="https://img.shields.io/badge/Quick%20Guides-9-purple?style=flat-square" alt="Guides">
-  <img src="https://img.shields.io/badge/Updated-2026--04-red?style=flat-square" alt="Updated">
-  <img src="https://img.shields.io/badge/License-MIT-yellow?style=flat-square" alt="License">
+ <img src="https://img.shields.io/badge/Docs-290%2B-blue?style=flat-square&logo=bookstack" alt="Docs">
+ <img src="https://img.shields.io/badge/Content-2.6M%2B%20words-green?style=flat-square" alt="Content">
+ <img src="https://img.shields.io/badge/Chapters-13-orange?style=flat-square" alt="Chapters">
+ <img src="https://img.shields.io/badge/Quick%20Guides-9-purple?style=flat-square" alt="Guides">
+ <img src="https://img.shields.io/badge/Updated-2026--04-red?style=flat-square" alt="Updated">
+ <img src="https://img.shields.io/badge/License-MIT-yellow?style=flat-square" alt="License">
 </p>
 
 <p>
-  <a href="./README.md">🇨🇳 中文版</a>
+ <a href="./README.md">🇨🇳 中文版</a>
 </p>
 
 </div>

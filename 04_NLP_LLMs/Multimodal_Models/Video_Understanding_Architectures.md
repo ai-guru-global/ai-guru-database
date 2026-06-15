@@ -4,6 +4,7 @@ category: 04-nlp-llms-multimodal
 tags: [multimodal, video-understanding, temporal-modeling, video-llm, sora, action-recognition, video-language]
 summary: 从帧级图像理解到真正视频理解的架构演进，涵盖时序建模、视频-语言预训练、动作识别和生成式视频理解的最新技术。
 date: 2026-06-01
+created: 2026-06-12
 ---
 
 # 视频理解架构深度解析
@@ -318,7 +319,7 @@ def event_driven_sample(video):
 |---|---|---|---|
 | 视频-文本对比 (Video-Text Contrastive) | 视频 + 文本描述 | 相似度 | 对齐视频和文本表示 |
 | 视频-文本匹配 (Video-Text Matching) | 视频 + 文本 | 是否匹配 (0/1) | 细粒度对齐 |
-|  masked frame prediction | 视频（部分帧 masked）| 重建被遮帧 | 时序推理 |
+| masked frame prediction | 视频（部分帧 masked）| 重建被遮帧 | 时序推理 |
 | 动作排序 (Action Ordering) | 打乱的视频片段 | 正确顺序 | 因果理解 |
 | 视频问答 (Video QA) | 视频 + 问题 | 答案 | 联合推理 |
 | 视频描述生成 (Video Captioning) | 视频 | 文本描述 | 生成能力 |

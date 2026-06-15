@@ -4,6 +4,8 @@ description: 跨域合成：价值对齐（Value Alignment）与 RLHF（基于�
 date: 2026-05-31
 tags: [alignment, rlhf, value-alignment, reinforcement-learning, llm-training, safety, constitutional-ai]
 category: synthesis
+created: 2026-06-12
+summary: ""
 ---
 
 # 价值对齐 × RLHF：从人类反馈到可扩展监督

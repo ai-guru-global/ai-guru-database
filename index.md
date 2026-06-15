@@ -14,12 +14,14 @@ title: Wiki Index
 - [[concepts/gpu-operator]] — NVIDIA GPU Operator：K8s 上 GPU 全栈运维的事实标准 ( #gpu-operator #kubernetes #nvidia)
 - [[concepts/oci-runtime]] — OCI Runtime Spec：容器运行时标准，CDI 注入的最终落点 ( #oci #container-runtime #runc)
 - [[concepts/gpustack]] — GPUStack：开源 GPU 集群管理与私有 MaaS 平台 ( #deployment #inference #gpu-cluster #maas)
+- [[concepts/embeddings-vectors-mrl-plain]] — Embedding、向量与 MRL 大白话 ( #embedding #vector #matryoshka #for-dummy)
 
 ## Deep Dives
 
 - [[11_RAG_Systems/Matryoshka_Representation_Learning_Deep_Dive]] — Matryoshka Representation Learning 深度解析 ( #embeddings #rag #matryoshka)
 - [[11_RAG_Systems/Matryoshka_Representation_Learning_for_dummy]] — Matryoshka Representation Learning — 小白版 ( #embeddings #for-dummy #matryoshka)
 - [[22_Papers/Matryoshka_Representation_Learning_Deep_Dive]] — 论文深度解读: Matryoshka Representation Learning ( #paper #matryoshka)
+- [[concepts/embeddings-vectors-mrl-plain]] — Embedding、向量与 MRL 大白话 ( #embedding #vector #matryoshka #for-dummy)
 
 ## Entities
 

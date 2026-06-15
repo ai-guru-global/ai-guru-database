@@ -1,7 +1,7 @@
 {
   "version": 1,
   "created": "2026-05-31T00:00:00Z",
-  "last_updated": "2026-06-15",
+  "last_updated": "2026-06-15T07:35:00Z",
   "sources": {
     "/Users/ai-guru/Documents/GitHub/ai-guru-global/ai-guru-database/AI Stack 用户指南.pdf": {
       "ingested_at": "2026-06-05T00:00:00Z",
@@ -135,8 +135,20 @@
         "concepts/matryoshka-representation-learning.md",
         "concepts/embedding-models.md",
         "22_Papers/README.md",
-        "index.md",
-        "log.md"
+        "index.md"
+      ]
+    },
+    "manual-embeddings-vectors-mrl-plain": {
+      "ingested_at": "2026-06-15T07:30:00Z",
+      "source_type": "manual",
+      "project": null,
+      "pages_created": [
+        "concepts/embeddings-vectors-mrl-plain.md"
+      ],
+      "pages_updated": [
+        "concepts/embedding-models.md",
+        "concepts/matryoshka-representation-learning.md",
+        "index.md"
       ]
     },
     "_raw/github-sources/hello-agents/README.md": {

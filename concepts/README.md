@@ -2,7 +2,7 @@
 title: 概念卡片索引 (Concept Cards Index)
 category: meta
 tags: [concepts, knowledge-graph, index]
-summary: 87 张 AI 概念卡片，每张 5-9KB，覆盖 AI 全栈核心概念，与主章节通过 sources 字段关联。
+summary: 90 张 AI 概念卡片，每张 5-9KB，覆盖 AI 全栈核心概念，与主章节通过 sources 字段关联。
 created: 2026-06-03
 updated: 2026-06-15
 ---
@@ -98,7 +98,7 @@ updated: 2026-06-15
 | [ai-agents](./ai-agents.md) | 06_Reinforcement_Learning | ReAct、Tool Calling、MCP |
 | [ai-hardware](./ai-hardware.md) | 01_Fundamentals | GPU、TPU、H100/B200 |
 
-### 工程与部署（10 张）
+### 工程与部署（11 张）
 
 | 概念 | 来源章节 | 关键词 |
 |------|----------|--------|
@@ -106,6 +106,7 @@ updated: 2026-06-15
 | [model-evaluation](./model-evaluation.md) | 08_Model_Evaluation | 指标、基准、A/B 测试 |
 | [model-deployment](./model-deployment.md) | 09_Deployment_Inference | 部署策略、蓝绿、金丝雀 |
 | [model-serving](./model-serving.md) | 09_Deployment_Inference | vLLM、SGLang、模型服务 |
+| [model-inference](./model-inference.md) | 09_Deployment_Inference | 自回归生成、条件概率、前向传播、采样策略 |
 | [model-compression](./model-compression.md) | 09_Deployment_Inference | 量化、蒸馏、剪枝 |
 | [knowledge-distillation](./knowledge-distillation.md) | 09_Deployment_Inference | Teacher-Student、logit蒸馏、DeepSeek-R1蒸馏 |
 | [mlops](./mlops.md) | 10_MLOps_Pipeline | CI/CD、实验追踪、特征存储 |
@@ -172,7 +173,7 @@ tier: core | supporting
 
 ## 统计
 
-- **总数**: 89 张概念卡片
+- **总数**: 90 张概念卡片
 - **平均大小**: ~5.8 KB
 - **覆盖章节**: 00-19 全部 20 个主章节
 - **关系类型**: related_to、prerequisite、builds_on

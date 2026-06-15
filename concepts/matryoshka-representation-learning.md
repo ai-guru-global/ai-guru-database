@@ -8,6 +8,8 @@ relationships:
     type: "deep_dive"
   - target: "11_RAG_Systems/Matryoshka_Representation_Learning_for_dummy"
     type: "simplified"
+  - target: "concepts/embeddings-vectors-mrl-plain"
+    type: "simplified"
   - target: "22_Papers/Matryoshka_Representation_Learning_Deep_Dive"
     type: "paper"
   - target: "concepts/embedding-models"
@@ -20,6 +22,7 @@ sources:
   - "11_RAG_Systems/Matryoshka_Representation_Learning_Deep_Dive.md"
   - "22_Papers/Matryoshka_Representation_Learning_Deep_Dive.md"
   - "11_RAG_Systems/Matryoshka_Representation_Learning_for_dummy.md"
+  - "concepts/embeddings-vectors-mrl-plain.md"
 created: "2026-06-12"
 updated: "2026-06-15"
 lifecycle: "stable"
@@ -32,6 +35,7 @@ tier: "core"
 
 📚 深度专题: [[11_RAG_Systems/Matryoshka_Representation_Learning_Deep_Dive|Matryoshka Representation Learning 深度解析]]  
 🎓 小白版: [[11_RAG_Systems/Matryoshka_Representation_Learning_for_dummy|Matryoshka Representation Learning — 小白版]]  
+🗣️ 大白话: [[concepts/embeddings-vectors-mrl-plain|Embedding、向量与 MRL 大白话]]  
 📄 论文解读: [[22_Papers/Matryoshka_Representation_Learning_Deep_Dive|NeurIPS 2022 论文深度解读]]
 
 ---
@@ -241,6 +245,7 @@ $$
 - 论文解读: [[22_Papers/Matryoshka_Representation_Learning_Deep_Dive|NeurIPS 2022 论文深度解读]]
 - 深度专题: [[11_RAG_Systems/Matryoshka_Representation_Learning_Deep_Dive|Matryoshka Representation Learning 深度解析]]
 - 小白版: [[11_RAG_Systems/Matryoshka_Representation_Learning_for_dummy|Matryoshka Representation Learning — 小白版]]
+- 大白话: [[concepts/embeddings-vectors-mrl-plain|Embedding、向量与 MRL 大白话]]
 - 模型: [nomic-embed-text-v1.5](https://huggingface.co/nomic-ai/nomic-embed-text-v1.5)
 - 模型: [OpenAI text-embedding-3](https://platform.openai.com/docs/guides/embeddings)
 - 相关阅读：[[concepts/embedding-models]]、[[concepts/vector-database]]、[[concepts/rag-systems]]

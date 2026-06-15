@@ -948,3 +948,45 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
 - 总页面: 1038
 - 新增坏链: 0（已验证）
 - Health: 100%
+
+---
+
+## 2026-06-15 — 新增 GPUStack 专题
+
+- 新增页面:
+  - `09_Deployment_Inference/GPUStack_Deep_Dive.md` — GPUStack 深度解析 (27,950 bytes)
+  - `09_Deployment_Inference/GPUStack_for_dummy.md` — GPUStack 入门指南 (8,704 bytes)
+  - `concepts/gpustack.md` — GPUStack 概念卡片 (3,564 bytes)
+- 更新页面:
+  - `09_Deployment_Inference/README.md` — 新增 GPUStack 导航、对比表与 Related 链接
+  - `09_Deployment_Inference/Deployment_Inference.md` — 新增 GPUStack 选型建议与资源链接
+  - `index.md` — Concepts 部分新增 GPUStack 索引
+- 覆盖内容:
+  - 架构设计 (Server/Worker/AI Gateway/Inference Backend)
+  - 支持的硬件、模型与推理后端
+  - 安装部署 (脚本/Docker/Worker 加入集群)
+  - 模型目录、调度、性能优化、企业级运维
+  - 生态集成 (Dify/RAGFlow/LangChain/OpenAI API)
+  - 与 Ollama/vLLM/BentoML 的对比选型
+
+---
+
+## 2026-06-15 — 新增 CDI (Container Device Interface) 专题
+
+- 新增页面:
+  - `12_Architecture_Infrastructure/CDI_Deep_Dive.md` — CDI 容器设备接口标准深度解析 (13,226 bytes)
+- 更新页面:
+  - `12_Architecture_Infrastructure/README.md` — 新增 CDI 导航行、学习路径项、Related 链接
+  - `index.md` — 新增「容器与设备接入」分组并登记 CDI 索引
+  - `01_Fundamentals/AI_Hardware/Chinese_AI_Chips_Deep_Dive.md` — 关联区新增 CDI 反向链接（异构芯片统一接入）
+- 覆盖内容:
+  - 旧世界痛点（NVIDIA 环境变量黑魔法 / 设备插件注入缺口）
+  - Spec 文件结构（cdiVersion / kind / containerEdits / 继承模型）
+  - 工作原理架构图（提供方 → spec → 分配层 → containerd → runc）
+  - NVIDIA 与国产/异构厂商（昇腾/寒武纪/壁仞/AMD/Intel）的 kind 命名与生成
+  - K8s 上为 LLM 推理使用 CDI（containerd 原生 + DRA 现代姿势）
+  - MIG 切片 / GPUDirect RDMA / 异构混部场景
+  - CDI vs 设备插件 vs DRA 选型矩阵
+- 选址理由: CDI 是容器运行时层的「设备通用语」，横跨训练+推理，归入基础设施章节最贴切；特别契合本库「国产 AI 芯片」生态（异构加速器统一接入 K8s）。
+- 注意: 用户原始请求「SDI」为笔误，实际为「CDI」(Container Device Interface)。
+

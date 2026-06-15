@@ -4,11 +4,12 @@ title: Wiki Index
 
 # Wiki Index
 
-*This index is automatically maintained. Last updated: 2026-06-12*
+*This index is automatically maintained. Last updated: 2026-06-15*
 
 ## Concepts
 
 - [[concepts/matryoshka-representation-learning]] — Matryoshka 表示学习：可截断的多尺度嵌入 ( #embeddings #rag #vector-database #matryoshka)
+- [[concepts/gpustack]] — GPUStack：开源 GPU 集群管理与私有 MaaS 平台 ( #deployment #inference #gpu-cluster #maas)
 
 ## Entities
 
@@ -39,6 +40,9 @@ title: Wiki Index
 
 ### 国产 AI 芯片
 - [[01_Fundamentals/AI_Hardware/Chinese_AI_Chips_Deep_Dive]] — 国产 AI 芯片12家厂商深度解析 ( #ai-chip #ascend #cambricon #biren #chinese-llm)
+
+### 容器与设备接入
+- [[12_Architecture_Infrastructure/CDI_Deep_Dive]] — CDI 容器设备接口标准:GPU/异构加速器统一接入 K8s ( #cdi #kubernetes #gpu #containerd #device-plugin)
 
 ### 学习课程
 - [[90_Learn/Microsoft_AI_For_Beginners]] — Microsoft 官方 12 周 AI 初学者课程映射 ( #learning-paths #microsoft #course)

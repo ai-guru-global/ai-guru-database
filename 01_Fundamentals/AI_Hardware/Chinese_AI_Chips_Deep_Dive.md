@@ -1,8 +1,8 @@
 ---
 title: "国产 AI 芯片深度解析 2026"
 category: "01-fundamentals"
-tags: ["ai-chip", "chinese-chip", "huawei-ascend", "cambricon", "mthreads", "inference", "training", "hardware"]
-summary: "全面解析中国 12 家国产 AI 芯片厂商的技术架构、产品规格、软件生态和训练验证状态，覆盖华为昇腾、寒武纪、海光、摩尔线程等头部厂商，含横向对比矩阵和选型决策树。"
+tags: ["ai-chip", "chinese-chip", "huawei-ascend", "cambricon", "mthreads", "t-head", "pingtouge", "ppu", "inference", "training", "hardware"]
+summary: "全面解析中国 12 家国产 AI 芯片厂商的技术架构、产品规格、软件生态和训练验证状态，覆盖华为昇腾、寒武纪、海光、摩尔线程、平头哥等头部厂商，含横向对比矩阵和选型决策树。"
 sources:
   - "https://www.hiascend.com/"
   - "https://www.cambricon.com/"
@@ -10,8 +10,12 @@ sources:
   - "https://www.hgon.com/"
   - "https://www.iluvatar.com/"
   - "https://www.metax-tech.com/"
+  - "https://www.t-head.cn/"
+  - "https://www.caixin.com/2026-01-22/102406926.html"
+  - "https://www.caixin.com/2026-01-29/102409321.html"
+  - "https://www.cls.cn/detail/2273750"
 created: 2026-06-12
-updated: 2026-06-12
+updated: 2026-06-15
 lifecycle: reviewed
 tier: core
 ---
@@ -533,6 +537,53 @@ MagicMind 是寒武纪的推理引擎，对标 NVIDIA TensorRT：
 
 > **官网**: [metax-tech.com](https://www.metax-tech.com/)
 
+### 3.6 平头哥 (T-Head)
+
+**梯队定位**: 阿里生态背书的训推一体 AI 芯片破局者，2025 年国产 GPU 出货量最高
+
+#### 核心产品线
+
+| 芯片 | 类型 | 显存 | 片间互联 | 功耗 | 定位 | 状态 |
+|------|------|------|---------|------|------|------|
+| 真武 810E | 训推一体 PPU | 96GB HBM2e | 700GB/s | ≤400W | 大模型训练/推理 | 2026.01 官网发布 |
+| 真武 M890 | 训推一体 PPU | 144GB | 800GB/s | — | 高精度训练+全场景推理 | 2026.05 发布 |
+
+#### 关键数据 (2026)
+
+| 指标 | 数值 |
+|------|------|
+| 真武系列累计出货 | **47-60 万片**（不同统计口径） |
+| 万卡集群部署 | 已在阿里云多个万卡集群部署 |
+| 外部客户 | 400+ 家企业，覆盖 20+ 行业 |
+| 外部算力占比 | 60% 以上 |
+
+#### 技术特色
+
+- **自研并行计算架构**：针对 AI 训练/推理优化
+- **自研片间互联**：700-800GB/s 多卡互联带宽
+- **全栈自研软件栈**：驱动、运行时、通信库、框架适配
+- **CUDA 兼容**：降低迁移成本
+- **云-芯-模协同**：与阿里云、通义大模型深度优化
+
+#### 部署案例
+
+| 客户/场景 | 规模 | 说明 |
+|-----------|------|------|
+| 中国联通三江源智算中心 | 16384 张卡 | 阿里云 1024 台设备，1945P 算力 |
+| 新浪微博 / 小鹏汽车 / 中科院 | 规模化 | 外部商业化客户 |
+
+#### 优劣势分析
+
+| 优势 | 劣势 |
+|------|------|
+| 阿里生态与阿里云场景 | 制程与代工能力受限 |
+| 规模化出货与万卡部署验证 | 单卡算力与 H100/B200 有差距 |
+| CUDA 兼容，迁移成本低 | 自研软件生态仍需完善 |
+| 云-芯-模全栈协同 | 信创市场面临华为昇腾竞争 |
+
+> **官网**: [t-head.cn](https://www.t-head.cn/)  
+> **详见**: [[01_Fundamentals/AI_Hardware/T_Head_PPU_Deep_Dive|平头哥真武 PPU 深度解析]]
+
 ---
 
 ## 4. T3 梯队: 推理专用/边缘/车载
@@ -583,6 +634,8 @@ MagicMind 是寒武纪的推理引擎，对标 NVIDIA TensorRT：
 | 华为昇腾 | 910C | 7nm | 400+ TF | 96GB HBM2e | 600GB/s | HCCS | 350W |
 | 寒武纪 | 思元 590 | 7nm | 512 TF | 96GB HBM3 | 800GB/s | MLU-Link | 350W |
 | 海光 | DCU K100 | 7nm | 200+ TF | 64GB HBM3 | 1600GB/s | xGMI | 350W |
+| 平头哥 | 真武 810E | — | — | 96GB HBM2e | 700GB/s | 自研 | ≤400W |
+| 平头哥 | 真武 M890 | — | — | 144GB | 800GB/s | ICN Switch | — |
 | 壁仞 | 壁砺 166M | 7nm | 1000+ TF | 64GB HBM2e | 800GB/s | OAM | 550W |
 | 摩尔线程 | S5000 | 12nm | 200+ TF | 64GB HBM2e | 800GB/s | MUSA Link | 300W |
 | 燧原 | T20 | 12nm | 256 TF | 32GB HBM2e | 400GB/s | — | 300W |
@@ -595,6 +648,7 @@ MagicMind 是寒武纪的推理引擎，对标 NVIDIA TensorRT：
 | 华为昇腾 | ★★★★★ | ★★★★★ | ✅ | ✅ | ✅ |
 | 寒武纪 | ★★★★☆ | ★★★★☆ | ✅ | ✅ | ✅ |
 | 海光 | ★★★★☆ | ★★★★☆ | ✅ | ⚠️ | ✅ |
+| 平头哥 | ★★★★☆ | ★★★★☆ | ✅ | ✅ | ⚠️ |
 | 壁仞 | ★★★☆☆ | ★★★★☆ | ⚠️ | ⚠️ | ✅ |
 | 摩尔线程 | ★★★☆☆ | ★★★☆☆ | ⚠️ | ⚠️ | ✅ |
 | 燧原 | ★★★☆☆ | ★★★☆☆ | ⚠️ | ⚠️ | ✅ |
@@ -613,6 +667,7 @@ MagicMind 是寒武纪的推理引擎，对标 NVIDIA TensorRT：
 | 华为昇腾 | CANN | AscendCL | ❌ 不兼容 | MindSpore + 适配层 | 中 |
 | 寒武纪 | Neuware | CNToolkit | ❌ 不兼容 | Cambricon PyTorch | 中 |
 | 海光 | DTK | HIP/ROCm | ⚠️ 高度兼容 | 原生 ROCm PyTorch | 低 |
+| 平头哥 | 自研 PPU 栈 | PPU SDK | ⚠️ 兼容 | PyTorch 适配 | 低 |
 | 壁仞 | BIRENSUPA | BANG | ❌ 不兼容 | 适配层 | 高 |
 | 摩尔线程 | MUSA | MUSA SDK | ⚠️ 部分兼容 | MUSA PyTorch | 中 |
 | 燧原 | TopsRider | DTUCC | ❌ 不兼容 | 适配层 | 高 |
@@ -627,6 +682,7 @@ FlashMLA 是 DeepSeek 开源的 MLA (Multi-Latent Attention) 高效实现，是�
 | 华为昇腾 | ✅ 已完成 | Ascend/Ascend-Speed | ~85% |
 | 摩尔线程 | ✅ 已完成 | MooreThreads/FlashMLA-MUSA | ~75% |
 | 寒武纪 | ✅ 已完成 | Cambricon/FlashMLA-MLU | ~70% |
+| 平头哥 | ⚠️ 推进中 | — | — |
 | 海光 | ⚠️ 进行中 | — | — |
 | 壁仞 | ⚠️ 进行中 | — | — |
 
@@ -646,6 +702,7 @@ FlashMLA 是 DeepSeek 开源的 MLA (Multi-Latent Attention) 高效实现，是�
 | 海光 | LLaMA 7B | 70 亿 | 64 卡 | ✅ 已验证 |
 | 摩尔线程 | LLaMA 7B | 70 亿 | 64 卡 | ✅ 已验证 |
 | 百度昆仑 | 文心大模型 | 千亿级 | 内部集群 | ✅ 生产级 |
+| 平头哥 | 通义大模型 | 千亿级 | 万卡集群 | ✅ 生产级 |
 
 ### 7.2 MLPerf 提交记录
 
@@ -666,12 +723,14 @@ FlashMLA 是 DeepSeek 开源的 MLA (Multi-Latent Attention) 高效实现，是�
   大规模模型训练 (百亿-千亿参数):
   ├── 首选稳定性 → 华为昇腾 910B/910C (最成熟)
   ├── 高性价比 → 寒武纪 思元 590 (512 TFLOPS)
-  └── CUDA 迁移 → 海光 DCU K100 (ROCm 兼容)
+  ├── CUDA 迁移 → 海光 DCU K100 (ROCm 兼容)
+  └── 阿里生态/云协同 → 平头哥 真武 810E/M890
 
   云端推理部署:
   ├── 高密度 → 华为 310P / 寒武纪 370-S4
   ├── 低延迟 → 海光 DCU Z100
-  └── 搜索/文心 → 百度昆仑 3
+  ├── 搜索/文心 → 百度昆仑 3
+  └── 阿里云生态 → 平头哥 真武 PPU
 
   边缘推理:
   ├── 车载 → 地平线 征程 J6 (车规级)
@@ -681,7 +740,8 @@ FlashMLA 是 DeepSeek 开源的 MLA (Multi-Latent Attention) 高效实现，是�
   信创合规:
   ├── 必选国产化 → 华为昇腾 (首选)
   ├── x86 兼容 → 海光 DCU
-  └── 全功能 GPU → 摩尔线程 S5000
+  ├── 全功能 GPU → 摩尔线程 S5000
+  └── 阿里系/云厂商自研 → 平头哥 真武 PPU
 
   图形渲染 + AI:
   ├── 游戏/专业 → 摩尔线程 S80/S70
@@ -699,6 +759,7 @@ FlashMLA 是 DeepSeek 开源的 MLA (Multi-Latent Attention) 高效实现，是�
 | 华为昇腾 | [hiascend.com](https://www.hiascend.com/) |
 | 寒武纪 | [cambricon.com](https://www.cambricon.com/) |
 | 海光信息 | [hgon.com](https://www.hgon.com/) |
+| 平头哥 | [t-head.cn](https://www.t-head.cn/) |
 | 壁仞科技 | [birentech.com](https://www.birentech.com/) |
 | 摩尔线程 | [mthreads.com](https://www.mthreads.com/) |
 | 燧原科技 | [enflame-tech.com](https://www.enflame-tech.com/) |
@@ -722,4 +783,4 @@ FlashMLA 是 DeepSeek 开源的 MLA (Multi-Latent Attention) 高效实现，是�
 
 ### Wiki 内部链接
 
-> **关联**: -> [[01_Fundamentals/README|数学基础]] | [[04_NLP_LLMs/Chinese_LLM_Ecosystem/README|中国大模型生态]] | [[09_Deployment_Inference/README|部署推理]] | [[12_Architecture_Infrastructure/README|架构基础设施]] | [[07_Model_Training/README|模型训练]] | [[14_AI_Gateway/README|AI 网关]] | [[90_Learn/AI_Engineering_Roadmap_2026|AI 工程路线图]] | [[22_Papers/Mixture_of_Experts_Deep_Dive|MoE 深度解读]]
+> **关联**: -> [[01_Fundamentals/README|数学基础]] | [[04_NLP_LLMs/Chinese_LLM_Ecosystem/README|中国大模型生态]] | [[09_Deployment_Inference/README|部署推理]] | [[12_Architecture_Infrastructure/README|架构基础设施]] | [[12_Architecture_Infrastructure/CDI_Deep_Dive|CDI 容器设备接口(异构芯片统一接入)]] | [[07_Model_Training/README|模型训练]] | [[14_AI_Gateway/README|AI 网关]] | [[90_Learn/AI_Engineering_Roadmap_2026|AI 工程路线图]] | [[22_Papers/Mixture_of_Experts_Deep_Dive|MoE 深度解读]] | [[01_Fundamentals/AI_Hardware/T_Head_PPU_Deep_Dive|平头哥真武 PPU 深度解析]]

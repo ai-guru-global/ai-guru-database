@@ -27,6 +27,7 @@ updated: '2026-05-31'
 | [Spring AI Architecture](./Spring_AI_Architecture.md) | Spring AI 企业级架构设计 | Java 生态开发者 |
 | [AI Stack Deep Dive](./AI_Stack_Deep_Dive.md) | 阿里云 AI Stack 软硬一体推理一体机（V2.14.0） | 政企 IT 决策者、基础设施工程师 |
 | [Future AI Hardware 2026](./Future_Computing_Hardware_2026.md) | 前沿硬件：硅光子技术、LPU、NPU 霸权、生物计算 | 架构师、前瞻研究 |
+| [CDI Deep Dive](./CDI_Deep_Dive.md) | 容器设备接口标准：GPU/国产加速器如何统一接入 K8s 容器 | 基础设施工程师、平台 SRE |
 
 ---
 
@@ -38,6 +39,7 @@ updated: '2026-05-31'
 - **边缘场景** → [Edge AI 2026](./Edge_AI_2026.md)
 - **Java 生态** → [Spring AI Architecture](./Spring_AI_Architecture.md)
 - **私有化 AI 一体机** → [AI Stack Deep Dive](./AI_Stack_Deep_Dive.md)
+- **异构设备接入** → [CDI Deep Dive](./CDI_Deep_Dive.md)（GPU/昇腾/寒武纪统一容器化）
 
 ---
 
@@ -68,6 +70,7 @@ updated: '2026-05-31'
 - [[12_Architecture_Infrastructure/Capacity_Planning_2026|AI 系统容量规划指南 (Capacity Planning 2026)]]
 
 - [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive|阿里云 AI Stack: 企业级软硬一体 AI 推理平台]]
+- [[12_Architecture_Infrastructure/CDI_Deep_Dive|CDI (Container Device Interface): 容器设备接口标准]]
 - [[concepts/ai-architecture]] — AI 系统架构
 - [[concepts/llm-infrastructure]] — LLM 基础设施
 - [[12_Architecture_Infrastructure/Alibaba_Cloud_AI_Stack_Deep_Dive|阿里云 AI Stack 深度解读]] — 专有云 AI 推理平台三层架构

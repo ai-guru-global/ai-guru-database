@@ -4,7 +4,7 @@ category: 09-deployment-inference
 tags: ["deployment", "inference", "serving", "vllm", "model-deployment"]
 summary: "> **一句话理解**: 就像把实验室里的发明变成能在工厂量产的产品，让AI模型从研究原型转变为高效稳定的生产服务。"
 created: 2026-05-31
-updated: 2026-05-31
+updated: 2026-06-15
 ---
 
 # 模型部署与推理加速 (Deployment & Inference)
@@ -400,6 +400,7 @@ print(tokenizer.decode(outputs[0]))
 | **Agent/RAG 工作流** | SGLang | RadixAttention 对共享前缀优化好 |
 | **快速原型** | vLLM/SGLang | 开箱即用，OpenAI 兼容 API |
 | **边缘/本地部署** | llama.cpp/Ollama | CPU 优化好，量化支持丰富 |
+| **异构 GPU 集群 / 私有 MaaS** | GPUStack | 统一管理多品牌 GPU，多引擎调度，OpenAI 兼容 API |
 
 #### SGLang 详解
 
@@ -875,6 +876,9 @@ L = α × L_hard(y_true, y_student) + (1-α) × L_soft(y_teacher, y_student)
 - [llama.cpp](https://github.com/ggerganov/llama.cpp) - CPU 推理引擎，GGUF 格式
 - [Ollama](https://github.com/ollama/ollama) - 本地模型部署工具
 
+**GPU 集群管理与私有 MaaS**:
+- [GPUStack](https://github.com/gpustack/gpustack) - 开源 GPU 集群管理器，异构 GPU、多引擎、OpenAI 兼容 API
+
 **量化与优化**:
 - [bitsandbytes](https://github.com/TimDettmers/bitsandbytes) - 量化训练与推理库
 - [AutoAWQ](https://github.com/casper-hansen/AutoAWQ) - AWQ 量化自动化
@@ -901,8 +905,8 @@ L = α × L_hard(y_true, y_student) + (1-α) × L_soft(y_teacher, y_student)
 
 ---
 
-*Last updated: 2026-04-01*
-*Version: 2.0.0 - 2026 AI Infra Update*
+*Last updated: 2026-06-15*
+*Version: 2.0.1 - 2026 AI Infra Update*
 
 ## Related
 
@@ -912,3 +916,4 @@ L = α × L_hard(y_true, y_student) + (1-α) × L_soft(y_teacher, y_student)
 - [[09_Deployment_Inference/Inference-in-nutshell]] — 模型推理速成指南 (共享: deployment, inference, serving, vllm)
 - [[09_Deployment_Inference/BentoML_Deep_Dive.md|BentoML_Deep_Dive]]
 - [[09_Deployment_Inference/TensorRT_LLM_Deep_Dive.md|TensorRT_LLM_Deep_Dive]]
+- [[09_Deployment_Inference/GPUStack_Deep_Dive|GPUStack_Deep_Dive]]

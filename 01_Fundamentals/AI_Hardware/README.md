@@ -1,10 +1,10 @@
 ---
 title: "AI 硬件基础设施"
 category: "01-fundamentals"
-tags: ["hardware", "gpu", "ai-chip", "infrastructure"]
-summary: "AI 计算硬件基础设施总览，覆盖 GPU、AI 加速卡、国产芯片等硬件选型和部署方案。"
+tags: ["hardware", "gpu", "ai-chip", "infrastructure", "t-head", "ppu", "chinese-chip"]
+summary: "AI 计算硬件基础设施总览，覆盖 GPU、AI 加速卡、国产芯片（含平头哥真武 PPU）等硬件选型和部署方案。"
 created: 2026-06-12
-updated: 2026-06-12
+updated: 2026-06-15
 ---
 
 # AI 硬件基础设施
@@ -26,7 +26,8 @@ updated: 2026-06-12
 
 | 页面 | 厂商 | 核心芯片 | 梯队 |
 |------|------|---------|------|
-| [[01_Fundamentals/AI_Hardware/Chinese_AI_Chips_Deep_Dive|国产 AI 芯片深度解析]] | 12 家厂商 | 全线覆盖 | T1-T3 |
+| [[01_Fundamentals/AI_Hardware/Chinese_AI_Chips_Deep_Dive|国产 AI 芯片深度解析]] | 12+ 家厂商 | 全线覆盖 | T1-T3 |
+| [[01_Fundamentals/AI_Hardware/T_Head_PPU_Deep_Dive|平头哥真武 PPU 深度解析]] | 平头哥 (T-Head) | 真武 810E / M890 | T2 |
 
 ### NVIDIA/AMD 快速对比
 
@@ -45,6 +46,8 @@ updated: 2026-06-12
 |------|------|----------|------|------|------|
 | 华为昇腾 | 910C | 400+ TF | 96GB | 训练+推理 | [hiascend.com](https://www.hiascend.com/) |
 | 寒武纪 | 思元 590 | 512 TF | 96GB | 训练+推理 | [cambricon.com](https://www.cambricon.com/) |
+| 平头哥 | 真武 810E | — | 96GB HBM2e | 训推一体 | [t-head.cn](https://www.t-head.cn/) |
+| 平头哥 | 真武 M890 | — | 144GB | 新一代训推一体 | [t-head.cn](https://www.t-head.cn/) |
 | 海光 | DCU K100 | 200+ TF | 64GB | CUDA 兼容 | [hgon.com](https://www.hgon.com/) |
 | 摩尔线程 | S5000 | 200+ TF | 64GB | 全功能 GPU | [mthreads.com](https://www.mthreads.com/) |
 | 壁仞 | 壁砺 166M | 1000+ TF | 64GB | 高算力 | [birentech.com](https://www.birentech.com/) |
@@ -63,8 +66,8 @@ updated: 2026-06-12
 
 ```
 训练 or 推理?
-├── 训练 → NVIDIA H100 (首选) / 华为 910C (国产) / 海光 K100 (迁移)
-├── 推理 → NVIDIA L40S / 华为 310P / 寒武纪 370-S4
+├── 训练 → NVIDIA H100 (首选) / 华为 910C (国产) / 平头哥 真武 (阿里生态) / 海光 K100 (迁移)
+├── 推理 → NVIDIA L40S / 华为 310P / 平头哥 真武 PPU / 寒武纪 370-S4
 └── 边缘 → 地平线 J6 (车载) / 算能 BM1688 / 寒武纪 220
 ```
 

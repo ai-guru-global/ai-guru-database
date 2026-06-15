@@ -1,10 +1,10 @@
 ---
 title: 'AI硬件与芯片 2026年全景报告'
 category: '01-fundamentals-ai-hardware'
-tags: ["fundamentals", "math", "algorithms", "basics"]
-summary: '> **一句话理解**: AI芯片是AI革命的"引擎"——2026年NVIDIA H200成为推理新标杆，Blackwell B200开始交付，AMD MI350紧追不舍，而定制ASIC和边缘AI芯片正在分化市场。'
+tags: ["fundamentals", "ai-hardware", "gpu", "chinese-chip", "t-head", "ppu", "nvidia", "amd"]
+summary: '> **一句话理解**: AI芯片是AI革命的"引擎"——2026年NVIDIA H200成为推理新标杆，Blackwell B200开始交付，AMD MI350紧追不舍，平头哥真武PPU跻身国产AI芯片第一梯队，而定制ASIC和边缘AI芯片正在分化市场。'
 created: '2026-05-31'
-updated: '2026-05-31'
+updated: '2026-06-15'
 ---
 
 # AI 硬件与芯片 2026 年全景报告
@@ -355,7 +355,7 @@ AI硬件选型决策树 2026:
 
 ## 9. 国产 AI 芯片
 
-> 中国 AI 芯片市场在 2024-2026 年快速发展，华为昇腾是唯一通过千亿参数训练验证的国产芯片。
+> 中国 AI 芯片市场在 2024-2026 年快速发展，华为昇腾与平头哥真武均已实现千亿参数大模型的万卡级训练验证。
 
 ### 代表性产品
 
@@ -363,6 +363,8 @@ AI硬件选型决策树 2026:
 |------|------|------------|------|----------|----------|
 | **昇腾 910B** | 华为 | 320 TFLOPS | 64GB HBM2e | CANN + MindSpore | 大模型训练（已验证） |
 | **昇腾 910C** | 华为 | ~800 TFLOPS | 128GB HBM | CANN 8.0 | 千亿训练首选 |
+| **真武 810E** | 平头哥 | — | 96GB HBM2e | 自研 PPU 栈 + CUDA 兼容 | 训推一体，万卡集群 |
+| **真武 M890** | 平头哥 | — | 144GB | 自研 PPU 栈 + ICN Switch | 新一代训推一体 |
 | **DCU Z100** | 海光 | ~400 TFLOPS | 64GB HBM | ROCm 兼容 | CUDA 迁移成本最低 |
 | **思元 590** | 寒武纪 | ~300 TFLOPS | 48GB | Neuware | 推理部署 |
 | **壁砺 104** | 壁仞 | ~400 TFLOPS | 64GB | BIRENSUPA | 通用训练 |
@@ -370,10 +372,11 @@ AI硬件选型决策树 2026:
 
 ### 选型建议
 
-- **大模型训练替代**：昇腾 910C（唯一有训练验证，讯飞星火/华为盘古验证）
+- **大模型训练替代**：昇腾 910C（信创首选）/ 平头哥 真武 810E/M890（阿里生态，万卡验证）
 - **CUDA 迁移**：海光 DCU（ROCm 兼容，CUDA→HIP 自动转换 90%+）
-- **推理部署**：寒武纪思元（Neuware 推理优化成熟）
-- **详见**: [[01_Fundamentals/AI_Hardware/Chinese_AI_Chips_Deep_Dive]] — 12家厂商完整对比
+- **推理部署**：寒武纪思元（Neuware 推理优化成熟）/ 平头哥 真武 PPU（阿里云协同）
+- **详见**: [[01_Fundamentals/AI_Hardware/Chinese_AI_Chips_Deep_Dive]] — 国产厂商完整对比  
+- **专题**: [[01_Fundamentals/AI_Hardware/T_Head_PPU_Deep_Dive]] — 平头哥真武 PPU 深度解析
 
 ---
 
@@ -396,13 +399,14 @@ AI硬件选型决策树 2026:
 
 ---
 
-*Last updated: 2026-04-01* (H200 vs B200 vs MI350 landscape)
+*Last updated: 2026-06-15* (新增平头哥真武 PPU 系列)
 
 ## Related
 
 - [[concepts/gpu-interconnect]] — GPU 互联拓扑与 NVLink/NVSwitch 架构
 - [[concepts/model-serving]] — 模型服务化部署与推理引擎
 - [[09_Deployment_Inference/Deployment_Inference]] — 部署与推理系统全景
+- [[01_Fundamentals/AI_Hardware/T_Head_PPU_Deep_Dive]] — 平头哥真武 PPU 深度解析
 - [[12_Architecture_Infrastructure/AI_Infrastructure_2026]] — AI 基础设施 2026
 - [[07_Model_Training/Distributed_Training_2026]] — 分布式训练与 GPU 集群调度
 - [[01_Fundamentals/AI_Hardware/Chinese_AI_Chips_Deep_Dive]] — 国产 AI 芯片12家厂商深度解析

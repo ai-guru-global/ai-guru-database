@@ -4,7 +4,7 @@ category: 90-learn
 tags: [learning-path, roadmap, career]
 summary: "五大 AI 职业角色学习路径全景指南：ML Engineer、LLM/Agent Engineer、AI Product Manager、MLOps Engineer、AI Researcher，覆盖从入门到精通的完整技能地图。"
 created: 2026-06-05
-updated: 2026-06-12
+updated: 2026-06-15
 ---
 
 # AI Guru 学习路径指南 (Learning Paths Guide 2026)
@@ -183,8 +183,8 @@ flowchart LR
 
 - **Ch.07** — [Training nutshell](../07_Model_Training/Training-in-nutshell.md) → [分布式训练](../07_Model_Training/Distributed_Training.md) → [混合精度](../07_Model_Training/Mixed_Precision_Training.md)
 - **Ch.08** — [评估 for_dummy](../08_Model_Evaluation/Model_Evaluation_for_dummy.md) → [主文档](../08_Model_Evaluation/Model_Evaluation.md) → [A/B 测试](../08_Model_Evaluation/AB_Testing.md)
-- **Ch.09** — [部署 for_dummy](../09_Deployment_Inference/Deployment_Inference_for_dummy.md) → [Inference nutshell](../09_Deployment_Inference/Inference-in-nutshell.md) → [vLLM](../09_Deployment_Inference/vLLM_Deep_Dive.md) → 实践: Docker + FastAPI
-- **Key Skills**: FSDP/混合精度、Precision/Recall/F1/AUC、vLLM、容器化部署
+- **Ch.09** — [部署 for_dummy](../09_Deployment_Inference/Deployment_Inference_for_dummy.md) → [Inference nutshell](../09_Deployment_Inference/Inference-in-nutshell.md) → [推理引擎选型指南](../09_Deployment_Inference/LLM_Inference_Engine_Selection_Guide.md) → [vLLM](../09_Deployment_Inference/vLLM_Deep_Dive.md) → [推理性能基础](../09_Deployment_Inference/Inference_Performance/Inference_Performance_Fundamentals.md) → 实践: Docker + FastAPI
+- **Key Skills**: FSDP/混合精度、Precision/Recall/F1/AUC、vLLM、推理引擎选型、容器化部署
 
 完成本路径后，参考 [milestones.md](./milestones.md) Stage 0-3 自测。
 
@@ -246,9 +246,9 @@ flowchart LR
 
 **Phase 3: 生产运维（14-22h）**
 
-- **Ch.09** — [Inference nutshell](../09_Deployment_Inference/Inference-in-nutshell.md) → [vLLM](../09_Deployment_Inference/vLLM_Deep_Dive.md) → [量化](../09_Deployment_Inference/Quantization.md)
+- **Ch.09** — [Inference nutshell](../09_Deployment_Inference/Inference-in-nutshell.md) → [推理引擎选型指南](../09_Deployment_Inference/LLM_Inference_Engine_Selection_Guide.md) → [vLLM](../09_Deployment_Inference/vLLM_Deep_Dive.md) → [SGLang](../09_Deployment_Inference/SGLang_Deep_Dive.md) → [量化](../09_Deployment_Inference/Quantization.md) → [推理引擎迁移指南](../09_Deployment_Inference/LLM_Inference_Engine_Migration_Guide.md)
 - **Ch.16** — [AI Ops nutshell](../16_AI_Ops/AIOps-in-nutshell.md) → [LLM 可观测性](../16_AI_Ops/LLM_Observability.md) → [告警与灾难恢复](../16_AI_Ops/Alerting_Disaster_Recovery.md)
-- **Key Skills**: vLLM、量化 GPTQ/AWQ、KV Cache、LLM 监控、告警策略
+- **Key Skills**: vLLM/SGLang 选型、量化 GPTQ/AWQ、KV Cache、LLM 监控、告警策略
 
 完成本路径后，参考 [milestones.md](./milestones.md) Stage 2-4 自测。
 
@@ -369,9 +369,9 @@ flowchart LR
 
 **Phase 1: 部署基础（26-34h）**
 
-- **Ch.09** — [Inference nutshell](../09_Deployment_Inference/Inference-in-nutshell.md) → [主文档](../09_Deployment_Inference/Deployment_Inference.md) → [vLLM](../09_Deployment_Inference/vLLM_Deep_Dive.md) → [量化](../09_Deployment_Inference/Quantization.md) → 实践: vLLM + Docker 部署
+- **Ch.09** — [Inference nutshell](../09_Deployment_Inference/Inference-in-nutshell.md) → [主文档](../09_Deployment_Inference/Deployment_Inference.md) → [推理引擎选型指南](../09_Deployment_Inference/LLM_Inference_Engine_Selection_Guide.md) → [vLLM](../09_Deployment_Inference/vLLM_Deep_Dive.md) → [推理引擎基准测试指南](../09_Deployment_Inference/LLM_Inference_Benchmarking_Guide.md) → [量化](../09_Deployment_Inference/Quantization.md) → 实践: vLLM + Docker 部署
 - **Ch.10** — [MLOps for_dummy](../10_MLOps_Pipeline/MLOps_Pipeline_for_dummy.md) → [主文档](../10_MLOps_Pipeline/MLOps_Pipeline.md) → [Feature Store](../10_MLOps_Pipeline/Feature_Store.md) → [模型版本管理](../10_MLOps_Pipeline/Model_Versioning.md)
-- **Key Skills**: vLLM/TGI、量化、CI/CD for ML、DVC、Feature Store、Model Registry
+- **Key Skills**: vLLM/TGI 选型、量化、推理基准测试、CI/CD for ML、DVC、Feature Store、Model Registry
 
 **Phase 2: 平台构建（22-30h）**
 

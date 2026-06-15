@@ -127,6 +127,8 @@ updated: 2026-06-15
 | [flash-attention-kernels](./flash-attention-kernels.md) | 12_Architecture_Infrastructure | FlashMLA、FlashInfer、FlashAttention |
 | [inference-performance](./inference-performance.md) | 09_Deployment_Inference | TTFT、TPOT、吞吐、推理优化 |
 | [expert-parallelism](./expert-parallelism.md) | 09_Deployment_Inference | MoE、All-to-All、专家并行 |
+| [request-scheduling](./request-scheduling.md) | 09_Deployment_Inference | Continuous Batching、抢占、SLO-aware |
+| [inference-autoscaling](./inference-autoscaling.md) | 09_Deployment_Inference | HPA、负载均衡、扩缩容 |
 | [rdma-roce](./rdma-roce.md) | 12_Architecture_Infrastructure | RDMA、RoCE、GPU 高速网络 |
 | [gpu-interconnect](./gpu-interconnect.md) | 12_Architecture_Infrastructure | NVLink、NVSwitch、PCIe、HCCS |
 | [prefill-decode](./prefill-decode.md) | 12_Architecture_Infrastructure | Prefill/Decode阶段、TTFT、TPS |
@@ -170,7 +172,7 @@ tier: core | supporting
 
 ## 统计
 
-- **总数**: 87 张概念卡片
+- **总数**: 89 张概念卡片
 - **平均大小**: ~5.8 KB
 - **覆盖章节**: 00-19 全部 20 个主章节
 - **关系类型**: related_to、prerequisite、builds_on

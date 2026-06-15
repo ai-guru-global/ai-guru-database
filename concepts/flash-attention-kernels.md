@@ -7,9 +7,12 @@ relationships:
     type: implements
   - target: "concepts/kv-cache"
     type: optimizes
+  - target: "09_Deployment_Inference/Inference_Performance/Flash_Kernels_Deep_Dive"
+    type: deepened_by
 sources:
   - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
-summary: FlashMLA 是 DeepSeek 开源的 MLA 专用推理算子库（H800 峰值 660 TFLOPS），FlashInfer 是 NVIDIA 主导的通用注意力引擎（MLSys 2025 最佳论文）。两者分别针对特定架构和通用场景提供高性能注意力内核，是 2026 年 LLM 推理的两大算子基座。
+  - 09_Deployment_Inference/Inference_Performance/Flash_Kernels_Deep_Dive.md
+summary: FlashAttention、FlashDecoding、FlashInfer、FlashMLA 等内核通过分块计算、online softmax 和 kernel 融合，把 attention 的显存访问降到接近理论下限，是现代 LLM 推理的算子基座。
 provenance:
   extracted: 0.9
   inferred: 0.05
@@ -76,4 +79,5 @@ FlashInfer（[GitHub](https://github.com/flashinfer-ai/flashinfer)）是面向 L
 - [[concepts/multi-head-latent-attention]] — MLA 架构（FlashMLA 的优化目标）
 - [[concepts/kv-cache]] — KV Cache
 - [[concepts/attention-variants]] — GQA/MQA/SWA 注意力变体
+- [[09_Deployment_Inference/Inference_Performance/Flash_Kernels_Deep_Dive|Flash 系列 Kernel 深潜]]
 - [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — 阿里云 AI Stack

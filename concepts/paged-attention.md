@@ -99,3 +99,7 @@ PagedAttention 与 Continuous Batching 天然配合：
 - [[concepts/continuous-batching]] — Continuous Batching（协同技术）
 - [[concepts/model-deployment]] — 模型部署全景
 - [[concepts/multi-head-latent-attention]] — MLA（架构层压缩 KV Cache）
+- [[09_Deployment_Inference/vLLM_Deep_Dive]] — vLLM（PagedAttention 首发实现）
+- [[09_Deployment_Inference/SGLang_Deep_Dive]] — SGLang（结合 RadixAttention 的内存管理）
+- [[09_Deployment_Inference/LMDeploy_Deep_Dive]] — LMDeploy（TurboMind Paging KV Cache）
+- [[09_Deployment_Inference/TensorRT_LLM_Deep_Dive]] — TensorRT-LLM（In-Flight Batching + Paged KV）

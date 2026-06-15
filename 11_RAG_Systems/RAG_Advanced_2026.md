@@ -4,7 +4,7 @@ category: '11-rag-systems'
 tags: ["rag", "retrieval", "vector-database", "embedding"]
 summary: '> **一句话理解**: 2026年的RAG已从"向量搜索+LLM"的简单模式进化为精密工程——混合检索、智能重排、上下文压缩让准确率从60%提升至90%+，动态RAG甚至能自主决定何时停止检索。'
 created: '2026-05-31'
-updated: '2026-05-31'
+updated: '2026-06-15'
 ---
 
 # RAG 高级实践 2026 年完全指南
@@ -568,6 +568,19 @@ print(results)
 │                                                                  │
 └─────────────────────────────────────────────────────────────────┘
 ```
+
+### RAG 场景推理引擎推荐
+
+| 场景 | 推荐引擎 | 选型理由 |
+|------|----------|----------|
+| 通用生产 RAG | [vLLM](../09_Deployment_Inference/vLLM_Deep_Dive.md) | PagedAttention、高并发、OpenAI 兼容 |
+| 多轮对话 / RAG | [SGLang](../09_Deployment_Inference/SGLang_Deep_Dive.md) | RadixAttention 前缀缓存，TTFT 更低 |
+| 极致低延迟 | [Groq](../09_Deployment_Inference/Groq_Deep_Dive.md) | LPU 专用芯片，毫秒级响应 |
+| HF 生态生产 | [TGI](../09_Deployment_Inference/TGI_Deep_Dive.md) | 原生 HuggingFace、监控完善 |
+| 长上下文 RAG | [TensorRT-LLM](../09_Deployment_Inference/TensorRT_LLM_Deep_Dive.md) | FP8、长上下文 kernel 优化 |
+| 统一选型 | [LLM Inference Engine Selection Guide](../09_Deployment_Inference/LLM_Inference_Engine_Selection_Guide.md) | 决策树与成本模型 |
+
+完整引擎专题见 [09_Deployment_Inference](../09_Deployment_Inference/README.md)。
 
 ---
 

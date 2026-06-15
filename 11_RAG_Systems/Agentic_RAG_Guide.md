@@ -6,7 +6,7 @@ summary: "将 Agent 能力融入 RAG 系统,实现自适应检索、多步推理
 sources:
   - "https://github.com/NirDiamant/RAG_Techniques"
 created: 2026-06-12
-updated: 2026-06-12
+updated: 2026-06-15
 lifecycle: reviewed
 tier: core
 ---
@@ -107,6 +107,16 @@ graph.add_node("grade", grade_docs)
 2. **设置最大迭代次数**: 防止 Agent 无限循环
 3. **监控成本**: Agentic RAG 的 token 消耗更高
 4. **评估驱动**: 用 Ragas/DeepEval 量化改进效果
+
+## Agentic RAG 推理引擎推荐
+
+Agentic RAG 涉及多次 LLM 调用，低延迟和高吞吐至关重要：
+
+- **多轮推理 + 前缀缓存**: [[09_Deployment_Inference/SGLang_Deep_Dive|SGLang]]
+- **通用生产环境**: [[09_Deployment_Inference/vLLM_Deep_Dive|vLLM]]
+- **极低延迟云 API**: [[09_Deployment_Inference/Groq_Deep_Dive|Groq]]
+- **推理引擎统一选型**: [[09_Deployment_Inference/LLM_Inference_Engine_Selection_Guide|LLM 推理引擎选型指南]]
+- **迁移与基准测试**: [[09_Deployment_Inference/LLM_Inference_Engine_Migration_Guide|迁移指南]] / [[09_Deployment_Inference/LLM_Inference_Benchmarking_Guide|基准测试指南]]
 
 > **关联**: -> [[11_RAG_Systems|RAG 系统]] | [[13_Agent_Production|Agent 生产]] | [[synthesis/rag-agents|RAG x Agent 合成]]
 

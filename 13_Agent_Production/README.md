@@ -4,7 +4,7 @@ category: 13-agent-production
 tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> **一句话理解**: 从 Agent 原型到生产级系统，需要 Harness 工程、框架选型、平台部署、记忆架构、安全合规的完整工程体系。"
 created: 2026-05-31
-updated: 2026-05-31
+updated: 2026-06-15
 ---
 
 # Agent 生产部署 (Agent Production)
@@ -119,6 +119,7 @@ updated: 2026-05-31
 - **Kubernetes部署**: HPA自动扩缩容、PDB保证可用性
 - **服务网格**: Istio/Linkerd实现流量管理、可观测性
 - **模型路由**: 基于任务复杂度智能路由到不同模型
+- **推理引擎选型**: 参考 [LLM 推理引擎选型指南](../09_Deployment_Inference/LLM_Inference_Engine_Selection_Guide.md) | [vLLM](../09_Deployment_Inference/vLLM_Deep_Dive.md) | [SGLang](../09_Deployment_Inference/SGLang_Deep_Dive.md) | [Groq](../09_Deployment_Inference/Groq_Deep_Dive.md)
 
 ### 状态管理
 
@@ -152,6 +153,8 @@ L4: 持久化知识 → SQL/NoSQL
 - [23_OpenClaw_Ecosystem](./23_OpenClaw_Ecosystem/) -- OpenClaw 生态（CoPaw、QClaw）
 - [11_RAG_Systems](../11_RAG_Systems/) -- RAG 系统专题
 - [16_AI_Ops](../16_AI_Ops/) -- AI 系统运维
+- [09_Deployment_Inference](../09_Deployment_Inference/) -- 推理引擎（vLLM, SGLang, Groq）
+- [LLM 推理引擎选型指南](../09_Deployment_Inference/LLM_Inference_Engine_Selection_Guide.md) -- Agent 后端推理引擎选型
 
 ---
 
@@ -208,6 +211,10 @@ L4: 持久化知识 → SQL/NoSQL
 - [[13_Agent_Production/Agent_Harness/Harness_Ecosystem_Catalog]] — Agent Harness 生态目录
 - [[13_Agent_Production/Agent_Harness/Harness-in-nutshell]] — Agent Harness 速览
 - [[synthesis/agent-framework-production|Agent 框架与生产部署]]
+- [[09_Deployment_Inference/LLM_Inference_Engine_Selection_Guide|LLM 推理引擎选型指南]]
+- [[09_Deployment_Inference/vLLM_Deep_Dive|vLLM 深度解析]]
+- [[09_Deployment_Inference/SGLang_Deep_Dive|SGLang 深度解析]]
+- [[09_Deployment_Inference/Groq_Deep_Dive|Groq 深度解析]]
 
 ## 新增页面
 

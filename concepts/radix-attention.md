@@ -93,4 +93,6 @@ Root
 - [[concepts/kv-cache]] — KV Cache（RadixAttention 优化的对象）
 - [[concepts/prefix-caching]] — 前缀缓存（RadixAttention 是其中一种实现）
 - [[concepts/paged-attention]] — PagedAttention（底层内存管理）
-- [[09_Deployment_Inference/SGLang_Deep_Dive]] — SGLang 推理框架
+- [[09_Deployment_Inference/SGLang_Deep_Dive]] — SGLang 推理框架（RadixAttention 首发）
+- [[09_Deployment_Inference/vLLM_Deep_Dive]] — vLLM（Automatic Prefix Caching）
+- [[09_Deployment_Inference/LMDeploy_Deep_Dive]] — LMDeploy（Prefix Caching）

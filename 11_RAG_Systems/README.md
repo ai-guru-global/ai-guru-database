@@ -4,7 +4,7 @@ category: '11-rag-systems'
 tags: ["rag", "retrieval", "vector-database", "embedding"]
 summary: '> **一句话理解**: RAG（检索增强生成）就像给大模型配备了一个"外接大脑"——让模型在回答问题时，先查阅专业知识库，再基于检索到的信息生成准确、可信的回答。'
 created: '2026-05-31'
-updated: '2026-05-31'
+updated: '2026-06-15'
 ---
 
 # RAG 系统 (RAG Systems)
@@ -77,6 +77,20 @@ updated: '2026-05-31'
 - [部署推理](../09_Deployment_Inference/README.md) — 模型服务化部署
 - [Java 生态](../01_Fundamentals/Java_Ecosystem_AI/) — Spring AI 集成
 
+### RAG 推理引擎推荐
+
+RAG 的生成阶段对 TTFT（首个 token 时间）和前缀缓存命中率非常敏感，推荐根据场景选择：
+
+| 场景 | 推荐引擎 | 说明 |
+|------|----------|------|
+| 通用生产 RAG | [vLLM](../09_Deployment_Inference/vLLM_Deep_Dive.md) | PagedAttention、成熟生态、OpenAI 兼容 |
+| 多轮 / RAG 前缀缓存 | [SGLang](../09_Deployment_Inference/SGLang_Deep_Dive.md) | RadixAttention、前缀缓存命中率高 |
+| HuggingFace 原生 | [TGI](../09_Deployment_Inference/TGI_Deep_Dive.md) | Rust+Python、监控完善 |
+| 极致低延迟云 API | [Groq](../09_Deployment_Inference/Groq_Deep_Dive.md) | LPU、毫秒级 TTFT |
+| 推理引擎统一选型 | [LLM Inference Engine Selection Guide](../09_Deployment_Inference/LLM_Inference_Engine_Selection_Guide.md) | 决策树与场景速查 |
+
+详见 [09_Deployment_Inference](../09_Deployment_Inference/README.md) 完整专题。
+
 ### 进阶方向
 - [Agent 生产](../13_Agent_Production/README.md) — Agentic RAG、记忆系统
 - [AI Gateway](../14_AI_Gateway/README.md) — RAG 服务的流量治理
@@ -107,6 +121,10 @@ updated: '2026-05-31'
 - [[concepts/rag-systems]] — RAG 系统
 - [[concepts/vector-database]] — 向量数据库
 - [[12_Architecture_Infrastructure/Alibaba_Cloud_AI_Stack_Deep_Dive|阿里云 AI Stack]] — 内置知识库 + RAG 应用构建
+- [[09_Deployment_Inference/LLM_Inference_Engine_Selection_Guide|LLM 推理引擎选型指南]]
+- [[09_Deployment_Inference/vLLM_Deep_Dive|vLLM 深度解析]]
+- [[09_Deployment_Inference/SGLang_Deep_Dive|SGLang 深度解析]]
+- [[09_Deployment_Inference/Groq_Deep_Dive|Groq 深度解析]]
 
 ## 新增页面
 

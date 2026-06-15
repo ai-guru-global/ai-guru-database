@@ -89,3 +89,8 @@ Step 4: Decode A, B, C, D
 - [[concepts/paged-attention]] — PagedAttention（内存管理协同）
 - [[concepts/kv-cache]] — KV Cache
 - [[concepts/model-deployment]] — 模型部署
+- [[09_Deployment_Inference/vLLM_Deep_Dive]] — vLLM（Continuous Batching + PagedAttention）
+- [[09_Deployment_Inference/SGLang_Deep_Dive]] — SGLang（零开销调度 + Continuous Batching）
+- [[09_Deployment_Inference/TGI_Deep_Dive]] — TGI（Continuous Batching）
+- [[09_Deployment_Inference/LMDeploy_Deep_Dive]] — LMDeploy（Continuous Batching）
+- [[09_Deployment_Inference/TensorRT_LLM_Deep_Dive]] — TensorRT-LLM（In-Flight Batching）

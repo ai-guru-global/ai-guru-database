@@ -4,7 +4,7 @@ category: mkdocs-docs
 tags: ["documentation", "mkdocs", "docs-as-code"]
 summary: ""
 created: 2026-05-31
-updated: 2026-06-12
+updated: 2026-06-15
 ---
 
 <div align="center">
@@ -13,7 +13,7 @@ updated: 2026-06-12
 
 <p><strong>这可能是 GitHub 上最全面的 AI 学习资源</strong></p>
 
-<p>从理论到生产的完整 AI 知识体系 | 800+ 文档 | 1,350 万+ 字 | 2026 最新</p>
+<p>从理论到生产的完整 AI 知识体系 | 1,100+ 文档 | 1,000 万+ 字 | 2026 最新</p>
 
 <p>
  <a href="#-快速开始">🚀 快速开始</a> •
@@ -24,10 +24,10 @@ updated: 2026-06-12
 </p>
 
 <p>
- <img src="https://img.shields.io/badge/文档-800%2B-blue?style=flat-square&logo=bookstack" alt="Docs">
- <img src="https://img.shields.io/badge/字数-1350万%2B-green?style=flat-square" alt="Content">
- <img src="https://img.shields.io/badge/章节-25-orange?style=flat-square" alt="Chapters">
- <img src="https://img.shields.io/badge/速成指南-13-purple?style=flat-square" alt="Guides">
+ <img src="https://img.shields.io/badge/文档-1100%2B-blue?style=flat-square&logo=bookstack" alt="Docs">
+ <img src="https://img.shields.io/badge/字数-1000万%2B-green?style=flat-square" alt="Content">
+ <img src="https://img.shields.io/badge/章节-29-orange?style=flat-square" alt="Chapters">
+ <img src="https://img.shields.io/badge/速成指南-18-purple?style=flat-square" alt="Guides">
  <img src="https://img.shields.io/badge/更新-2026--06-red?style=flat-square" alt="Updated">
  <img src="https://img.shields.io/badge/License-MIT-yellow?style=flat-square" alt="License">
 </p>
@@ -53,8 +53,8 @@ updated: 2026-06-12
 <td width="50%">
 
 **📚 内容全面**
-- 807+ Markdown 文档
-- 1,353万+ 字符（约 2,255 页 A4）
+- 1,100+ Markdown 文档（核心章节 890 篇）
+- 1,000 万+ 字符（约 1,700 页 A4）
 - 涵盖 70+ 技术领域
 - 从数学基础到 AGI 前沿
 
@@ -62,8 +62,8 @@ updated: 2026-06-12
 <td width="50%">
 
 **🎯 双轨学习**
-- **速成路径**：9 篇实战指南（35-45 小时）
-- **系统学习**：13 大章节深度剖析
+- **速成路径**：18 篇实战指南（35-45 小时）
+- **系统学习**：23 大章节深度剖析
 - **大学课程**：16 周完整教学大纲
 
 </td>
@@ -93,8 +93,8 @@ updated: 2026-06-12
 ### 📊 数据说话
 
 ```
-📁 807 个 Markdown 文件    📄 1,353 万+ 字符（约 2,255 页 A4）
-📚 25 个知识章节          ⚡ 9 个速成指南
+📁 1,100+ 个 Markdown 文件  📄 1,000 万+ 字符（约 1,700 页 A4）
+📚 29 个知识章节          ⚡ 18 个速成指南
 🎓 10 本大学教材          🔬 12 个 2026 专题
 🏢 8 大行业应用           👔 21 个岗位面试指南
 🧪 8 个动手实验           📖 6 个经典案例
@@ -104,32 +104,31 @@ updated: 2026-06-12
 
 | 目录名称 | 文件数 | 字符数 | 占比 |
 |---------|--------|--------|------|
-| 13_Agent_Production | 132 | 253.98 万 | 18.8% |
-| 04_NLP_LLMs | 100 | 198.95 万 | 14.7% |
-| 07_Model_Training | 23 | 66.29 万 | 4.9% |
-| 06_Reinforcement_Learning | 28 | 59.32 万 | 4.4% |
-| 17_AI_Coding | 61 | 58.36 万 | 4.3% |
-| 90_Learn | 60 | 51.76 万 | 3.8% |
-| 18_Cloud_Ops_Agent | 19 | 48.69 万 | 3.6% |
-| 02_Machine_Learning | 34 | 47.77 万 | 3.5% |
-| 16_AI_Ops | 26 | 44.09 万 | 3.3% |
-| 19_Ethics_Safety | 27 | 43.30 万 | 3.2% |
-| 11_RAG_Systems | 28 | 42.86 万 | 3.2% |
-| 09_Deployment_Inference | 25 | 40.97 万 | 3.0% |
-| 12_Architecture_Infrastructure | 17 | 40.07 万 | 3.0% |
-| 22_Papers | 22 | 38.61 万 | 2.9% |
-| 01_Fundamentals | 27 | 38.72 万 | 2.9% |
-| 08_Model_Evaluation | 16 | 35.68 万 | 2.6% |
-| 03_Deep_Learning | 20 | 32.32 万 | 2.4% |
-| 00_AI_Introduction | 14 | 29.30 万 | 2.2% |
-| 15_Testing | 12 | 28.20 万 | 2.1% |
-| 05_Computer_Vision | 23 | 27.86 万 | 2.1% |
-| 20_AI_Applications_Industry | 26 | 27.22 万 | 2.0% |
-| 14_AI_Gateway | 12 | 23.38 万 | 1.7% |
-| 23_Interviews | 88 | 18.72 万 | 1.4% |
-| 10_MLOps_Pipeline | 13 | 17.46 万 | 1.3% |
-| 21_Talks | 54 | 17.07 万 | 1.3% |
-| **总计** | **807** | **1,353.49 万** | **100%** |
+| 13_Agent_Production | 153 | 197.47 万 | 20.8% |
+| 04_NLP_LLMs | 100 | 131.90 万 | 13.9% |
+| 07_Model_Training | 23 | 51.38 万 | 5.4% |
+| 06_Reinforcement_Learning | 28 | 42.12 万 | 4.4% |
+| 09_Deployment_Inference | 29 | 40.99 万 | 4.3% |
+| 17_AI_Coding | 61 | 40.88 万 | 4.3% |
+| 18_Cloud_Ops_Agent | 19 | 36.49 万 | 3.8% |
+| 02_Machine_Learning | 35 | 33.73 万 | 3.6% |
+| 22_Papers | 25 | 33.05 万 | 3.5% |
+| 01_Fundamentals | 30 | 32.35 万 | 3.4% |
+| 16_AI_Ops | 26 | 31.29 万 | 3.3% |
+| 12_Architecture_Infrastructure | 20 | 31.22 万 | 3.3% |
+| 11_RAG_Systems | 31 | 30.28 万 | 3.2% |
+| 19_Ethics_Safety | 27 | 29.41 万 | 3.1% |
+| 08_Model_Evaluation | 16 | 25.88 万 | 2.7% |
+| 15_Testing | 12 | 22.87 万 | 2.4% |
+| 10_MLOps_Pipeline | 25 | 22.70 万 | 2.4% |
+| 03_Deep_Learning | 21 | 22.68 万 | 2.4% |
+| 05_Computer_Vision | 23 | 19.63 万 | 2.1% |
+| 14_AI_Gateway | 12 | 17.51 万 | 1.8% |
+| 20_AI_Applications_Industry | 26 | 15.92 万 | 1.7% |
+| 00_AI_Introduction | 14 | 15.19 万 | 1.6% |
+| 23_Interviews | 88 | 12.73 万 | 1.3% |
+| 21_Talks | 54 | 12.45 万 | 1.3% |
+| **总计** | **898** | **950.10 万** | **100%** |
 
 > 💡 提示：运行 `python3 count_words.py` 可查看最新的实时统计
 
@@ -143,8 +142,8 @@ updated: 2026-06-12
 # 克隆仓库
 git clone https://github.com/your-org/ai-guru-knowledge-base.git
 
-# 进入文档目录
-cd ai-guru-knowledge-base/docs
+# 进入仓库根目录
+cd ai-guru-knowledge-base
 
 # 根据你的角色选择起点
 ls -la
@@ -185,7 +184,7 @@ curl -L -o ai-guru.zip https://github.com/your-org/ai-guru-knowledge-base/archiv
 
 ⏱️ 15-20 小时
 
-[速成指南 →](./docs#-速成路径-in-nutshell)
+[速成指南 →](#-速成路径-in-nutshell)
 
 </td>
 <td align="center" width="25%">
@@ -331,6 +330,7 @@ curl -L -o ai-guru.zip https://github.com/your-org/ai-guru-knowledge-base/archiv
 - [GRPO 与新对齐方法](./07_Model_Training/GRPO_and_New_Alignment_Methods.md) - GRPO/DPO/RLHF/RLOO
 - [Agent 协议 2026](./06_Reinforcement_Learning/AI_Agents/Agent_Protocols_2026.md) - MCP/A2A/UCP
 - [AI 基础设施](./12_Architecture_Infrastructure/AI_Infrastructure_2026.md) - SGLang, AI Gateway
+- [GPUStack 深度解析](./09_Deployment_Inference/GPUStack_Deep_Dive.md) - 开源 GPU 集群管理与私有 MaaS 平台
 
 </td>
 </tr>
@@ -355,7 +355,7 @@ AI Guru 知识库可以作为高质量语料导入到各种 AI 工具中：
 1. 打开 ima 应用
 2. 创建知识库
 3. 导入本地文件夹
-4. 选择下载的 `docs/` 目录
+4. 选择下载的仓库根目录
 5. 即可通过对话查询知识库内容
 
 ### Claude Projects / ChatGPT GPTs
@@ -364,10 +364,10 @@ AI Guru 知识库可以作为高质量语料导入到各种 AI 工具中：
 # 下载精简版（仅核心内容）
 git clone --depth 1 --filter=blob:none --sparse https://github.com/your-org/ai-guru-knowledge-base.git
 cd ai-guru-knowledge-base
-git sparse-checkout set docs/00_AI_Introduction docs/04_NLP_LLMs docs/13_Agent_Production
+git sparse-checkout set 00_AI_Introduction 04_NLP_LLMs 13_Agent_Production
 
 # 打包上传
-zip -r ai-guru-core.zip docs/
+zip -r ai-guru-core.zip 00_AI_Introduction 04_NLP_LLMs 13_Agent_Production
 ```
 
 ### Obsidian / Notion
@@ -390,7 +390,7 @@ zip -r ai-guru-core.zip docs/
 - ✅ **版本控制**: Git 历史记录，可追溯更新
 
 **建议的 Agent 使用方式**:
-1. 将整个 `docs/` 目录作为知识库导入
+1. 将整个仓库根目录作为知识库导入
 2. 使用文件路径作为上下文引用（如 `04_NLP_LLMs/LLM_Architectures/LLM_Architectures.md`）
 3. 结合章节 README 快速定位内容
 

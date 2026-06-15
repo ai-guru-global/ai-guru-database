@@ -149,4 +149,7 @@ GPU 共享模式决策树
 - [[concepts/ai-hardware]] — AI 硬件（GPU/TPU/NPU）
 - [[concepts/model-serving]] — 模型服务（多租户推理）
 - [[concepts/heterogeneous-gpu]] — 异构 GPU 集群
+- [[concepts/cdi]] — CDI 容器设备接口（MIG 实例如何注入容器）
+- [[concepts/dra]] — DRA 动态资源分配（MIG 切片的属性化调度）
+- [[concepts/gpu-operator]] — NVIDIA GPU Operator（MIG 经其动态管理）
 - [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack（GPU 共享模式）

@@ -1,43 +1,23 @@
 ---
-title: 🔥 热门页面
-description: 当前活跃度和连接度最高的页面
+title: Hot Cache
+updated: 2026-06-15T08:18:23Z
 ---
-
-> 本文件为自动化生成，反映知识库中最常被链接、最活跃的页面。
-> 生成时间：2026-06-12
 
 ## Recent Activity
 
-- [2026-06-12] INGEST: 6 个 GitHub AI/Agent 学习仓库本地化导入（Hello-Agents、Learn Claude Code、Microsoft AI Agents、Hands-On LLMs、ApacheCN AILearning、500+ AI Projects）
-- [2026-06-12] INGEST_COURSE: Microsoft Generative AI for Beginners (24 pages, 21 lessons + 2 index pages)
-- [2026-06-12] INGEST_URL: Microsoft AI For Beginners (2 pages)
+- **Ingested Microsoft AI Agents for Beginners 13 lesson READMEs** — 全部挂入 `13_Agent_Production/Microsoft_AI_Agents_L*.md`，补齐 17 课中缺失的 13 个深化页面（L00/L03/L06-L15/L18）。涵盖从课程环境、设计原则、可信 Agent、规划、多 Agent、元认知、生产化、协议（MCP/A2A/NLWeb）、上下文工程、记忆、MAF 框架、浏览器 Agent 到加密审计收据的全链路。每页含 Pydantic / OpenTelemetry / Ed25519 等具体代码示例与跨课交叉引用。
 
-## 本月新增：Agent 与 LLM 学习资源
+## Active Threads
 
-- [[90_Learn/Hello_Agents_Course]] — Datawhale 中文 Agent 系统教程 ⭐ 最新
-- [[90_Learn/Microsoft_AI_Agents_for_Beginners]] — 微软官方 16 课 AI Agent 课程
-- [[90_Learn/Learn_Claude_Code_Course]] — 20 课 Claude Code 式 Harness 工程
-- [[90_Learn/Hands_On_LLMs_Course]] — 图解 LLM 12 章课程映射
-- [[90_Learn/ApacheCN_AILearning_Guide]] — 中文全栈 AI 资料库指南
-- [[references/500-ai-projects]] — 500+ AI 实战项目索引
-
-## 本月新增合成页面
-
-- [[synthesis/anomaly-detection-automl|异常检测 × AutoML 合成]]
-- [[synthesis/agent-evaluation-model-evaluation|Agent 评估 × 模型评估 合成]]
-- [[synthesis/python-first-ml-model|Python 基础 × 第一个 ML 模型 合成]]
-- [[synthesis/llm-infrastructure-system-design|LLM 基础设施 × 传统系统架构 合成]]
+- **Microsoft AI Agents 课程深化系列**：17 课页面已完整覆盖，下一步可考虑 ingest 对应的 `*-python-agent-framework.ipynb` notebook 作为可运行示例
+- **`_raw/` 暂存区还剩 4 个仓库未 ingest**：learn-claude-code / hello-agents / ailearning / hands-on-llms 的章节 README 可按本批模式继续推进
 
 ## Key Takeaways
 
-- 6 个高质量 GitHub AI/Agent 学习仓库已浅克隆到 `_raw/github-sources/`，实现离线可用
-- 新增 35 个 wiki 页面，包括 6 个参考索引、5 个课程映射页、20+ 章节/概念笔记
-- Agent 学习路径现在覆盖中文教程（Hello-Agents）、 Harness 工程（Learn Claude Code）和微软官方课程（AI Agents for Beginners）
+- **Agent 设计三视角**：UX 原则（L03）→ 工程模式（L04/L07/L08）→ 元认知（L09）→ 生产化（L10）→ 协议化（L11）→ 上下文与记忆（L12/L13）→ 框架收口（L14）→ 安全兜底（L18）
+- **加密审计收据的边界（L18）**：Ed25519 签名证明 Attribution/Integrity/Ordering，**不证明** Correctness/Policy/Identity/Input truthfulness——这是治理系统设计的核心区分
+- **上下文工程 ≠ 提示工程（L12）**：前者管理动态信息流（四类上下文 + 六大策略 + 四大失败模式），后者只关注静态指令
 
-## Wiki 健康度
+## Flagged Contradictions
 
-- 页面: ~1046
-- 孤立页面: 待检查
-- 损坏链接: 待检查
-- Frontmatter: 100%
-- 新增课程页: 35
+- L03 "Agentic Design Principles"（UX 视角）vs [[13_Agent_Production/Agentic_Design_Patterns_AndrewNg]]（工程视角）—— 两者覆盖范围不同，需在引用处明确区分

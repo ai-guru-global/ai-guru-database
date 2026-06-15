@@ -5,10 +5,14 @@ tags: [inference, kv-cache, attention, memory, optimization]
 relationships:
   - target: "concepts/transformer-architecture"
     type: builds_on
+  - target: "concepts/kv-cache-plain"
+    type: simplified_by
   - target: "concepts/paged-attention"
     type: optimized_by
   - target: "concepts/multi-head-latent-attention"
     type: compressed_by
+  - target: "09_Deployment_Inference/KV_Cache_Deep_Dive"
+    type: deepened_by
 sources:
   - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
   - 09_Deployment_Inference/vLLM_Deep_Dive.md
@@ -22,7 +26,7 @@ lifecycle: draft
 lifecycle_changed: 2026-06-03
 tier: core
 created: 2026-06-03 00:00:00+00:00
-updated: 2026-06-03 00:00:00+00:00
+updated: 2026-06-15 00:00:00+00:00
 ---
 
 # KV Cache (Key-Value Cache)
@@ -113,8 +117,10 @@ KV Cache 优化技术栈（从底到顶叠加）
 
 ## Related
 
+- [[concepts/kv-cache-plain]] — KV Cache 大白话解释：适合初学者的类比版
 - [[concepts/paged-attention]] — PagedAttention：KV Cache 的虚拟内存管理
 - [[concepts/multi-head-latent-attention]] — MLA：KV Cache 压缩 7-28×
 - [[concepts/prefix-caching]] — 前缀缓存：复用共享 prompt prefix
 - [[concepts/model-deployment]] — 模型部署全景
 - [[concepts/long-context-models]] — 长上下文模型
+- [[09_Deployment_Inference/KV_Cache_Deep_Dive]] — KV Cache 深度研究：从原理到工程实践

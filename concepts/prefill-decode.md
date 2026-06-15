@@ -11,8 +11,11 @@ relationships:
     type: extends
   - target: "concepts/flash-attention-kernels"
     type: uses
+  - target: "09_Deployment_Inference/Inference_Performance/Prefill_Decode_Disaggregation"
+    type: optimized_by
 sources:
   - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 09_Deployment_Inference/Inference_Performance/Prefill_Decode_Disaggregation.md
 summary: "LLM 推理分为 Prefill（处理输入，计算密集）和 Decode（逐 token 生成，内存带宽密集）两阶段。优化策略截然不同，理解两阶段差异是推理系统设计的核心。"
 provenance:
   extracted: 0.60
@@ -148,4 +151,5 @@ Append 优化：将新 token 的 KV 写入与 Attention 计算融合，减少一
 - [[concepts/flash-attention-kernels]] — FlashAttention 内核（Prefill 加速）
 - [[concepts/paged-attention]] — PagedAttention（KV Cache 管理）
 - [[concepts/mixture-of-experts]] — MoE（与推理阶段的协同）
+- [[09_Deployment_Inference/Inference_Performance/Prefill_Decode_Disaggregation|Prefill-Decode 分离]]
 - [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack

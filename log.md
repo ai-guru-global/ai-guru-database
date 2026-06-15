@@ -4,6 +4,11 @@ title: Wiki Log
 
 # Wiki Log
 
+- [2026-06-15T15:10:00+08:00] MRL_DEEP_DIVE 新增 Matryoshka Representation Learning 深度专题:
+  - 创建主章节深度解析: 11_RAG_Systems/Matryoshka_Representation_Learning_Deep_Dive.md
+  - 创建小白版: 11_RAG_Systems/Matryoshka_Representation_Learning_for_dummy.md
+  - 创建论文深度解读: 22_Papers/Matryoshka_Representation_Learning_Deep_Dive.md
+  - 更新 11_RAG_Systems/README.md、concepts/matryoshka-representation-learning.md、concepts/embedding-models.md、22_Papers/README.md、index.md
 - [2026-05-31T00:00:00Z] INIT
 - [2026-05-31T21:30:00+08:00] CROSS_LINK concepts/ core layer
 - [2026-05-31T21:30:00+08:00] WIKI_SYNTHESIZE 5 pages
@@ -961,6 +966,8 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
   - `09_Deployment_Inference/README.md` — 新增 GPUStack 导航、对比表与 Related 链接
   - `09_Deployment_Inference/Deployment_Inference.md` — 新增 GPUStack 选型建议与资源链接
   - `index.md` — Concepts 部分新增 GPUStack 索引
+  - `README.md` — 2026 专题新增 GPUStack 深度解析入口
+  - `mkdocs.yml` — Deployment & Inference 导航新增 GPUStack 两个页面
 - 覆盖内容:
   - 架构设计 (Server/Worker/AI Gateway/Inference Backend)
   - 支持的硬件、模型与推理后端
@@ -990,3 +997,61 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
 - 选址理由: CDI 是容器运行时层的「设备通用语」，横跨训练+推理，归入基础设施章节最贴切；特别契合本库「国产 AI 芯片」生态（异构加速器统一接入 K8s）。
 - 注意: 用户原始请求「SDI」为笔误，实际为「CDI」(Container Device Interface)。
 
+---
+
+## 2026-06-15 — CDI 专题补全（反向链接 + 入门版 + 概念卡 + 总览植入）
+
+- 新增页面:
+  - `12_Architecture_Infrastructure/CDI_for_dummy.md` — CDI 小白版（酒店入住单/万能插头比喻，~9KB）
+  - `concepts/cdi.md` — CDI 概念卡片（对齐 GPUStack 三层结构，含 relationships/provenance）
+- 更新页面（反向链接，消除单向链接）:
+  - `09_Deployment_Inference/vLLM_Deep_Dive.md` — Related 新增 CDI 链接
+  - `09_Deployment_Inference/TensorRT_LLM_Deep_Dive.md` — Related 新增 CDI 链接
+  - `09_Deployment_Inference/TGI_Deep_Dive.md` — Related 新增 CDI 链接
+  - `12_Architecture_Infrastructure/AI_Infrastructure_2026.md` — 新增 §2.5「设备如何进容器：CDI 标准」（补硬件→容器拼图）
+  - `12_Architecture_Infrastructure/README.md` — 导航表新增 CDI 小白版行
+  - `index.md` — Concepts 分组新增 cdi 概念卡片索引
+- 验证:
+  - check_links.py：CDI 相关文件 0 broken markdown link（全库 358 为历史存量，非本次引入）
+  - 自定义 wikilink 校验：3 个 CDI 文件全部出链解析通过
+  - 概念卡片 relationships 修正：`distributed-training`（悬空）→ `distributed-parallelism`（存在）
+- manifest 结论: `.manifest.json` 仅登记外部入库源（PDF/URL/_raw），不含内部 wiki 页；GPUStack 亦未登记。CDI 系原创撰写，**无需手工登记**；`stats.total_pages` 自动计数。
+- 知识图谱: CDI 三页（Deep_Dive / for_dummy / concept）相互交叉链接，并获 4 处入链（README、index、AI_Infra §2.5、Chinese_AI_Chips），非 orphan。
+
+---
+
+## 2026-06-15 — 设备接入主题集群补全（DRA + GPU Operator + OCI + 反向链接）
+
+补完 CDI 相邻概念的三层叙事（分配层 / 运维层 / 运行时标准），消除「CDI 单点突出、邻居全空」的结构失衡。
+
+- 新增页面:
+  - `concepts/dra.md` — DRA 动态资源分配概念卡（核心 tier，与 CDI 配对）
+  - `12_Architecture_Infrastructure/DRA_Deep_Dive.md` — DRA 深度解析（与 CDI_Deep_Dive 对称，8 节）
+  - `concepts/gpu-operator.md` — NVIDIA GPU Operator 概念卡（运维层入口）
+  - `concepts/oci-runtime.md` — OCI Runtime Spec 概念卡（运行时标准，CDI 注入落点）
+- 反向链接（消除单向 + 闭合旧卡片）:
+  - `concepts/gpu-virtualization.md` → CDI / DRA / GPU Operator（旧卡片零感知 CDI，现闭合）
+  - `concepts/heterogeneous-gpu.md` → CDI / DRA（异构接入核心，旧卡片零感知）
+  - `concepts/cdi.md` 延伸阅读 → 新增 DRA / GPU Operator / OCI 同族卡片
+- 登记:
+  - `index.md` Concepts 区新增 dra / gpu-operator / oci-runtime 三张卡
+  - `index.md` 容器与设备接入分组新增 DRA_Deep_Dive
+  - `12_Architecture_Infrastructure/README.md` 导航表新增 DRA_Deep_Dive 行
+- 知识图谱结构:
+  - 形成设备接入主题集群：CDI(注入) ↔ DRA(分配) ↔ GPU Operator(运维) ↔ OCI Runtime(标准)
+  - 五张概念卡相互交叉链接，构成完整闭环
+- 验证:
+  - wikilink 校验：7 个新/改文件共 61 个出链全部解析通过
+  - check_links.py：新文件 0 broken markdown link
+  - 新页面均有 ≥3 入链，非 orphan
+  - 修正：heterogeneous-gpu 中保留的 `concepts/rdma-roce` 链接经验证存在
+
+
+
+
+- [2026-06-15T08:18:23Z] INGEST source="ai-agents-for-beginners (13 lesson READMEs: L00/L03/L06-L15/L18)" pages_created=13 pages_updated=0 mode=append
+  - L00 Course Setup, L03 Design Principles, L06 Trustworthy Agents, L07 Planning Design, L08 Multi-Agent
+  - L09 Metacognition, L10 Production, L11 Agentic Protocols, L12 Context Engineering
+  - L13 Agent Memory, L14 Microsoft Agent Framework, L15 Browser Use, L18 Securing AI Agents
+  - 全部挂载于 13_Agent_Production/Microsoft_AI_Agents_L*.md
+  - 与现有索引页 90_Learn/Microsoft_AI_Agents_for_Beginners 呼应，补全 17 课中的 13 个深化页（L01/L02/L04/L05 此前已存在）

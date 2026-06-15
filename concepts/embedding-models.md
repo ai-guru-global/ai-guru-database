@@ -14,6 +14,8 @@ relationships:
 sources:
   - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
   - 11_RAG_Systems/RAG_Advanced_2026.md
+  - 11_RAG_Systems/Matryoshka_Representation_Learning_Deep_Dive.md
+  - 22_Papers/Matryoshka_Representation_Learning_Deep_Dive.md
 summary: "嵌入模型将文本/图像映射为高维稠密向量，是语义搜索、RAG、聚类的基础。2026年主流方案包括 GTE、bge、E5-Mistral 等，维度从 384 到 4096。"
 provenance:
   extracted: 0.50
@@ -23,7 +25,7 @@ base_confidence: 0.90
 lifecycle: stable
 tier: core
 created: 2026-06-04
-updated: 2026-06-12
+updated: 2026-06-15
 ---
 
 # 嵌入模型 (Embedding Models)
@@ -139,4 +141,6 @@ Query → Embedding Model → 向量数据库 Top-100 → Reranker → Top-5 →
 - [[concepts/vector-database]] — 向量数据库（嵌入的存储与检索）
 - [[concepts/llm-architectures]] — LLM 架构
 - [[11_RAG_Systems/Sentence_Transformers_Deep_Dive]] — Sentence Transformers
+- [[11_RAG_Systems/Matryoshka_Representation_Learning_Deep_Dive]] — Matryoshka Representation Learning 深度解析
+- [[11_RAG_Systems/Embedding_Models_Guide]] — Embedding 模型选型与实践指南
 - [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack

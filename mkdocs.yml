@@ -131,6 +131,8 @@ nav:
       - LiteRT Deep Dive: 09_Deployment_Inference/LiteRT_Deep_Dive.md
       - BentoML Deep Dive: 09_Deployment_Inference/BentoML_Deep_Dive.md
       - JVM AI Deployment: 09_Deployment_Inference/JVM_AI_Deployment.md
+      - GPUStack Deep Dive: 09_Deployment_Inference/GPUStack_Deep_Dive.md
+      - GPUStack for Dummy: 09_Deployment_Inference/GPUStack_for_dummy.md
 
   - MLOps Pipeline:
       - Overview: 10_MLOps_Pipeline/README.md

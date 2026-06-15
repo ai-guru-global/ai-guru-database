@@ -56,6 +56,7 @@ flowchart LR
 | **U-Net (2015)** Ronneberger et al. | 编码器-解码器 + 跳跃连接，医学图像分割的经典架构，影响扩散模型 U-Net backbone | 分割任务的起点，也是 Stable Diffusion 的核心组件 | [分割](../05_Computer_Vision/Segmentation/) |
 | **Faster R-CNN (2015)** Ren et al. | RPN + Fast R-CNN 端到端训练，两阶段检测的速度突破，mAP 73.2% | 目标检测的奠基工作，理解 R-CNN 系列演进的关键节点 | [目标检测](../05_Computer_Vision/Image_Classification_Detection/) |
 | **An Image is Worth 16x16 Words (2020)** Dosovitskiy et al. | ViT：将图像切分为 patch 序列，纯 Transformer 超越 ResNet，开启视觉 Transformer 时代 | 2020 年后视觉领域最重要的架构转变，理解"CNN → Transformer"的迁移 | [计算机视觉](../05_Computer_Vision/README.md) [Transformer 革命](../04_NLP_LLMs/Transformer_Revolution/) |
+| **Matryoshka Representation Learning (2022)** Kusupati et al. | MRL：训练可截断的多尺度向量表示，任意前缀维度都保持语义有效性 | 向量表示的"弹性维度"革命，RAG、向量数据库和端侧部署的核心技术 | [RAG 系统](../11_RAG_Systems/README.md) [嵌入模型](../concepts/embedding-models.md) |
 
 ---
 
@@ -92,6 +93,7 @@ flowchart LR
 - [VAE 深度解读](./VAE_Deep_Dive.md) — 变分自编码器：重参数化技巧、潜空间生成、扩散模型前身
 - [Chain-of-Thought 深度解读](./Chain_of_Thought_Deep_Dive.md) — 思维链提示：让 LLM 逐步推理，o1/R1 的思想源头
 - [RAG 深度解读](./RAG_Deep_Dive.md) — 检索增强生成：先查后答，解决 LLM 知识过时和幻觉问题
+- [Matryoshka Representation Learning 深度解读](./Matryoshka_Representation_Learning_Deep_Dive.md) — 可截断的多尺度向量表示，RAG 与向量数据库的弹性维度方案
 - [Chinchilla 深度解读](./Chinchilla_Deep_Dive.md) — 计算最优训练：数据量比参数量更重要，重塑 Scaling Laws
 
 ---

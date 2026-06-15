@@ -2,9 +2,9 @@
 title: 概念卡片索引 (Concept Cards Index)
 category: meta
 tags: [concepts, knowledge-graph, index]
-summary: 81 张 AI 概念卡片，每张 5-9KB，覆盖 AI 全栈核心概念，与主章节通过 sources 字段关联。
+summary: 87 张 AI 概念卡片，每张 5-9KB，覆盖 AI 全栈核心概念，与主章节通过 sources 字段关联。
 created: 2026-06-03
-updated: 2026-06-03
+updated: 2026-06-15
 ---
 
 # 概念卡片索引 (Concept Cards)
@@ -125,6 +125,8 @@ updated: 2026-06-03
 | [training-inference-unification](./training-inference-unification.md) | 12_Architecture_Infrastructure | 训推一体、LeMix、共置调度 |
 | [heterogeneous-gpu](./heterogeneous-gpu.md) | 12_Architecture_Infrastructure | 异构GPU、国产芯片、统一纳管 |
 | [flash-attention-kernels](./flash-attention-kernels.md) | 12_Architecture_Infrastructure | FlashMLA、FlashInfer、FlashAttention |
+| [inference-performance](./inference-performance.md) | 09_Deployment_Inference | TTFT、TPOT、吞吐、推理优化 |
+| [expert-parallelism](./expert-parallelism.md) | 09_Deployment_Inference | MoE、All-to-All、专家并行 |
 | [rdma-roce](./rdma-roce.md) | 12_Architecture_Infrastructure | RDMA、RoCE、GPU 高速网络 |
 | [gpu-interconnect](./gpu-interconnect.md) | 12_Architecture_Infrastructure | NVLink、NVSwitch、PCIe、HCCS |
 | [prefill-decode](./prefill-decode.md) | 12_Architecture_Infrastructure | Prefill/Decode阶段、TTFT、TPS |
@@ -168,7 +170,7 @@ tier: core | supporting
 
 ## 统计
 
-- **总数**: 85 张概念卡片
+- **总数**: 87 张概念卡片
 - **平均大小**: ~5.8 KB
 - **覆盖章节**: 00-19 全部 20 个主章节
 - **关系类型**: related_to、prerequisite、builds_on

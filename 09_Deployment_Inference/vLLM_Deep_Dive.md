@@ -575,3 +575,4 @@ Decode 节点:  高显存带宽，专注 token 生成
 - [[09_Deployment_Inference/TensorRT_LLM_Deep_Dive.md|TensorRT_LLM_Deep_Dive]]
 - [[09_Deployment_Inference/TGI_Deep_Dive.md|TGI_Deep_Dive]]
 - [[09_Deployment_Inference/LMDeploy_Deep_Dive.md|LMDeploy_Deep_Dive]]
+- [[12_Architecture_Infrastructure/CDI_Deep_Dive.md|CDI 容器设备接口（GPU 容器接入）]]

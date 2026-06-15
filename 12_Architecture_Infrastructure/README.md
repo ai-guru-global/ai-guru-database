@@ -28,6 +28,8 @@ updated: '2026-05-31'
 | [AI Stack Deep Dive](./AI_Stack_Deep_Dive.md) | 阿里云 AI Stack 软硬一体推理一体机（V2.14.0） | 政企 IT 决策者、基础设施工程师 |
 | [Future AI Hardware 2026](./Future_Computing_Hardware_2026.md) | 前沿硬件：硅光子技术、LPU、NPU 霸权、生物计算 | 架构师、前瞻研究 |
 | [CDI Deep Dive](./CDI_Deep_Dive.md) | 容器设备接口标准：GPU/国产加速器如何统一接入 K8s 容器 | 基础设施工程师、平台 SRE |
+| [CDI 小白版](./CDI_for_dummy.md) | 用「酒店入住单」「万能插头」比喻讲懂 CDI | 初学者、非基础设施背景 |
+| [DRA Deep Dive](./DRA_Deep_Dive.md) | 动态资源分配：K8s 设备分配的未来，与 CDI 配对 | 架构师、平台 SRE |
 
 ---
 

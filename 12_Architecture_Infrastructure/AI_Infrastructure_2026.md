@@ -182,9 +182,28 @@ updated: 2026-05-31
    充足      有限  充足      有限  低功耗    高性能
     │         │   │         │   │         │
     ▼         ▼   ▼         ▼   ▼         ▼
-  B200     H100  H200     L40S  高通    Jetson
-  MI350    昇腾  TPU v5   A10   苹果    Thor
+   B200     H100  H200     L40S  高通    Jetson
+   MI350    昇腾  TPU v5   A10   苹果    Thor
 ```
+
+### 2.5 设备如何进容器：CDI 标准
+
+选完芯片只是第一步——在云原生时代，AI 工作负载几乎都跑在容器里，**芯片必须先被「接入」容器才能使用**。这正是 **CDI (Container Device Interface)** 解决的问题。
+
+CDI 是容器运行时层的「设备通用语」：用一份标准 JSON 描述「使用这块 GPU/FPGA/加速器，需要对容器做哪些改动（挂哪些设备节点、装哪些库、跑哪些钩子）」。它带来的关键改变：
+
+- **厂商无关**: NVIDIA、华为昇腾、寒武纪、AMD、Intel 都用同一套接入语言，不再每家造一套私有 runtime hook
+- **运行时无关**: containerd / CRI-O 原生识别，无需 NVIDIA 私有 runtime 补丁
+- **异构混部**: 一个 Pod 可同时申请 `nvidia.com/gpu=1` + `huawei.com/ascend=0`，运行时合并注入
+
+```bash
+# 2026 标准姿势：用 CDI 设备名直接请求 GPU，无需 NVIDIA_VISIBLE_DEVICES 黑魔法
+nerdctl run --device nvidia.com/gpu=0 vllm/vllm-openai:latest
+```
+
+> 在 K8s 中，CDI 是设备插件（旧）与 DRA 动态资源分配（新，1.32+ beta）**共同脚下的地基**——无论上层用哪种分配机制，最终都翻译成 CDI 设备名交给运行时。
+
+> 详见 [[12_Architecture_Infrastructure/CDI_Deep_Dive|CDI 容器设备接口标准深度解析]]。
 
 ---
 

@@ -602,3 +602,4 @@ curl http://127.0.0.1:8080/metrics
 - [[09_Deployment_Inference/Deployment_Inference_2026.md|Deployment_Inference_2026]]
 - [[09_Deployment_Inference/Quantization_Techniques_2026.md|Quantization_Techniques_2026]]
 - [[14_AI_Gateway/AI_Gateway_2026.md|AI_Gateway_2026]]
+- [[12_Architecture_Infrastructure/CDI_Deep_Dive.md|CDI 容器设备接口（GPU 容器接入）]]

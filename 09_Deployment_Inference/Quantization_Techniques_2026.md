@@ -2,7 +2,7 @@
 title: "LLM 量化技术深度解析 2026"
 category: "09-deployment-inference"
 tags: ["quantization", "GPTQ", "AWQ", "SmoothQuant", "GGUF", "NF4", "FP8", "deployment", "inference", "llm"]
-summary: "> **一句话理解**: 量化是把 LLM 的"高精度浮点体重"压缩成"低精度整数身材"——就像把 4K 视频压成 1080p，肉眼几乎看不出差别，但文件小了 4 倍，播放速度快了 3 倍。"
+summary: '> **一句话理解**: 量化是把 LLM 的"高精度浮点体重"压缩成"低精度整数身材"——就像把 4K 视频压成 1080p，肉眼几乎看不出差别，但文件小了 4 倍，播放速度快了 3 倍。'
 created: "2026-06-04"
 updated: "2026-06-04"
 ---

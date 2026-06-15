@@ -13,6 +13,26 @@ updated: 2026-05-31
 
 ---
 
+## 📍 与 10_MLOps_Pipeline 的边界
+
+> **本章是「工具产品页 + 运维实践」（实现层），10 章是「建设方法论」（概念层）。**
+> 本章讲 How/Tool/Run（用什么工具、怎么运维），概念与选型方法论在 [[10_MLOps_Pipeline/README]]。
+> 完整边界声明与归属矩阵见 [[10_MLOps_Pipeline/_boundary-with-16]]。
+
+| 想了解 | 去哪 |
+|--------|------|
+| Feast 怎么装、怎么配 | 本章 [[Feast_Deep_Dive]] |
+| 什么是特征存储 / 为什么需要 | [[10_MLOps_Pipeline/Feature_Store_Deep_Dive]] |
+| DVC/LakeFS 命令详解 | 本章 [[DVC_Deep_Dive]] / [[LakeFS_Deep_Dive]] |
+| 数据版本控制的原理 | [[10_MLOps_Pipeline/Data_Versioning_DVC_LakeFS]] |
+| MLflow / ClearML 用法 | 本章 [[MLflow_Deep_Dive]] / [[ClearML_Deep_Dive]] |
+| 实验追踪的选型方法论 | [[10_MLOps_Pipeline/Experiment_Tracking_Deep_Dive]] |
+| 事故响应 / SRE / 混沌工程 | 本章（10 不涉及运维） |
+
+**工具页写作规范**：每个工具页开头应加「概念见 10」链接，聚焦命令/配置/部署/踩坑，不重复讲概念。
+
+---
+
 ## 文档导航
 
 | 文档 | 内容 | 适用角色 |
@@ -92,9 +112,12 @@ updated: 2026-05-31
 
 ## 关联目录
 
+- [10_MLOps_Pipeline](../10_MLOps_Pipeline/) -- MLOps 建设方法论（概念层，本章是其工具实现层）
 - [09_Deployment_Inference](../09_Deployment_Inference/) -- 推理引擎 (vLLM, SGLang)
 - [14_AI_Gateway](../14_AI_Gateway/) -- AI 网关与路由
 - [15_Testing](../15_Testing/) -- AI 测试框架
+
+> 边界声明详见 [[10_MLOps_Pipeline/_boundary-with-16]]。
 
 ---
 

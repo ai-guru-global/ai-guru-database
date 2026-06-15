@@ -29,6 +29,7 @@ updated: '2026-05-31'
 | [RAG Systems](./RAG_Systems.md) | RAG 完整技术体系：索引、检索、生成、评估 | 系统学习 |
 | [RAG Advanced 2026](./RAG_Advanced_2026.md) | 混合检索、重排序、Agentic RAG | 进阶学习 |
 | [Multimodal RAG 2026](./Multimodal_RAG_Architecture_2026.md) | 多模态 RAG：复杂 PDF 解析、视频 RAG、ColPali 架构 | 进阶学习 |
+| [Matryoshka Representation Learning Deep Dive](./Matryoshka_Representation_Learning_Deep_Dive.md) | MRL 可截断嵌入：精度与成本的动态平衡 | 进阶学习 |
 | [Spring AI RAG Deep Dive](./Spring_AI_RAG_Deep_Dive.md) | Spring AI 生态中的 RAG 实现 | Java 开发者 |
 
 ### 向量数据库
@@ -56,6 +57,7 @@ updated: '2026-05-31'
 | 文档 | 内容 |
 |------|------|
 | [Sentence Transformers Deep Dive](./Sentence_Transformers_Deep_Dive.md) | 开源 Embedding 模型：多语言支持、100+ 模型 |
+| [Matryoshka Representation Learning Deep Dive](./Matryoshka_Representation_Learning_Deep_Dive.md) | MRL 可截断嵌入：同一向量按需取前缀 |
 
 ---
 
@@ -100,6 +102,7 @@ updated: '2026-05-31'
 - [[11_RAG_Systems/Qdrant_Deep_Dive|Qdrant: 高性能向量数据库]]
 - [[11_RAG_Systems/LangFlow_Deep_Dive|LangFlow: 可视化 Agent/RAG 开发平台]]
 - [[11_RAG_Systems/Sentence_Transformers_Deep_Dive|Sentence-Transformers: 嵌入模型框架]]
+- [[11_RAG_Systems/Matryoshka_Representation_Learning_Deep_Dive|Matryoshka Representation Learning 深度解析]]
 
 - [[concepts/rag-systems]] — RAG 系统
 - [[concepts/vector-database]] — 向量数据库
@@ -109,3 +112,5 @@ updated: '2026-05-31'
 
 - [[11_RAG_Systems/Agentic_RAG_Guide|Agentic RAG]]
 - [[11_RAG_Systems/Embedding_Models_Guide|Embedding 模型选型]]
+- [[11_RAG_Systems/Matryoshka_Representation_Learning_Deep_Dive|Matryoshka Representation Learning 深度解析]]
+- [[11_RAG_Systems/Matryoshka_Representation_Learning_for_dummy|Matryoshka Representation Learning — 小白版]]

@@ -11,6 +11,8 @@ updated: "2026-05-31"
 
 > **一句话理解**: LakeFS 是数据湖版本控制——用 Git 工作流管理数据，支持快照、分支、跨环境同步，像 Git 一样管理你的数据湖。
 
+> 📐 **概念与选型方法论**: 数据版本控制的原理、LakeFS vs DVC vs Delta Lake 对比，见 [[10_MLOps_Pipeline/Data_Versioning_DVC_LakeFS]]。本文聚焦 LakeFS 工具用法。
+
 ---
 
 ## 目录

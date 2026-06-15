@@ -37,3 +37,32 @@ __pycache__
 # MkDocs build output
 Web/public/mkdocs
 mkdocs-docs
+
+# ============================================================
+# _raw/ — GitHub source mirrors (staging area for wiki distillation)
+# Strategy: ALLOWLIST. Only .md / .ipynb / .py knowledge files pass.
+# Original 13581 files / 1.35 GB  →  target ~700 files / <15 MB.
+# ============================================================
+
+# Step 1 — Default deny: ignore everything under _raw/...
+_raw/**
+
+# ...but keep directory structure traversable (so git descends into dirs)
+!_raw/**/
+
+# Step 2 — Allowlist the three knowledge extensions
+!_raw/**/*.md
+!_raw/**/*.ipynb
+!_raw/**/*.py
+
+# Step 3 — Defense-in-depth: kill nested .git even if rules above change
+_raw/**/.git/
+_raw/**/.git
+_raw/**/.gitmodules
+_raw/**/.gitattributes
+
+# Step 4 — Translations: keep English originals only.
+# (translations/*/ re-ignores all language subdirs that Step 2 may have allowed;
+#  then we re-allow en/ — last matching pattern wins.)
+_raw/github-sources/ai-agents-for-beginners/translations/*/
+!_raw/github-sources/ai-agents-for-beginners/translations/en/

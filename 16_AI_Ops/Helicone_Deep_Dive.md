@@ -11,6 +11,8 @@ updated: "2026-05-31"
 
 > **一句话理解**: Helicone 是 LLM 可观测性平台——请求追踪、成本分析、速率限制、提示词版本，开箱即用的 LLM 监控。
 
+> 📐 **概念与选型方法论**: LLM 可观测性的五层监控体系与 Trace 设计，见 [[10_MLOps_Pipeline/LLM_Observability]]。本文聚焦 Helicone 工具用法。
+
 ---
 
 ## 目录

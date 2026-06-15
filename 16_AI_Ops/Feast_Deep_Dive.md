@@ -11,6 +11,8 @@ updated: "2026-05-31"
 
 > **一句话理解**: Feast 是开源特征存储——管理 ML 特征、在线/离线一致、特征复用、团队共享，ML 平台的特征工程基础设施。
 
+> 📐 **概念与选型方法论**: 特征存储的原理、Feast vs Tecton vs Hopsworks 选型，见 [[10_MLOps_Pipeline/Feature_Store_Deep_Dive]]。本文聚焦 Feast 工具用法。
+
 ---
 
 ## 目录

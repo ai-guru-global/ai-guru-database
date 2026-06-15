@@ -1,10 +1,10 @@
 ---
 title: 'MLOps 流水线 (MLOps Pipeline)'
 category: '10-mlops-pipeline'
-tags: ["mlops", "ci-cd", "pipeline", "feature-store"]
+tags: ["mlops", "llmops", "ci-cd", "pipeline", "feature-store"]
 summary: '> **一句话理解**: MLOps 是 DevOps 的"AI 版"——如果说开发一个模型像造一辆车，MLOps 就是建造并运营整条汽车生产线，确保模型能持续、稳定、高效地在生产环境中运行。'
 created: '2026-05-31'
-updated: '2026-05-31'
+updated: '2026-06-15'
 ---
 
 # MLOps 流水线 (MLOps Pipeline)
@@ -13,7 +13,73 @@ updated: '2026-05-31'
 
 ---
 
+## 🎯 双主线阅读导航
+
+本章按**两条主线**组织：传统 ML 的全生命周期管理 + LLM 时代的 LLMOps 升级。2026 年的实践必须两者兼顾——传统 ML 系统仍在运行，LLM 应用正在爆发。
+
+```mermaid
+graph LR
+    subgraph "传统 MLOps 主线"
+        T1[数据版本化] --> T2[实验追踪]
+        T2 --> T3[特征存储]
+        T3 --> T4[ML CI/CD]
+        T4 --> T5[模型注册]
+        T5 --> T6[漂移监控]
+    end
+    subgraph "LLMOps 主线（2026 新增）"
+        L1[LLMOps 总览] --> L2[Prompt 工程化]
+        L1 --> L3[LLM 评估流水线]
+        L1 --> L4[RAG 流水线运维]
+    end
+```
+
+### 📌 应该从哪条主线入手？
+
+| 你的场景 | 推荐起点 |
+|---------|---------|
+| 我在做 LLM/RAG/Agent 应用 | **[[LLMOps_2026]]** → 然后 Prompt/Eval/RAG 三专题 |
+| 我在做传统 ML（推荐/分类/预测） | [[MLOps_Pipeline]] → 然后特征/CI-CD/监控 |
+| 我想知道 MLOps 是什么 | [[MLOps-in-nutshell]]（30 分钟速览） |
+| 我是纯初学者 | [[MLOps_Pipeline_for_dummy]] |
+| 我想知道工具怎么用 | → [[16_AI_Ops/README]]（工具产品页在 16 章） |
+
+---
+
+## 📍 与 16_AI_Ops 的边界
+
+> **10 是「建设方法论」（概念层），16 是「工具产品页 + 运维实践」（实现层）。**
+> 本章讲 What/Why/Design，工具的具体命令、部署、Runbook 在 [[16_AI_Ops/README]]。
+> 完整边界声明与归属矩阵见 [[_boundary-with-16]]。
+
+```mermaid
+graph LR
+    C[10 概念层<br/>What/Why/Design] -->|读者想动手| T[16 工具层<br/>How/Tool/Run]
+    T -->|读者想懂原理| C
+```
+
+| 想了解 | 去哪 |
+|--------|------|
+| 什么是特征存储 / 为什么需要 | 本章 [[Feature_Store_Deep_Dive]] |
+| Feast 怎么装、怎么配 | [[16_AI_Ops/Feast_Deep_Dive]] |
+| 数据版本控制的原理 | 本章 [[Data_Versioning_DVC_LakeFS]] |
+| DVC/LakeFS 命令详解 | [[16_AI_Ops/DVC_Deep_Dive]] / [[16_AI_Ops/LakeFS_Deep_Dive]] |
+
+---
+
 ## 本章内容
+
+### 🆕 LLMOps 主线（LLM 时代·2026）
+
+| 文档 | 内容 | 适用读者 |
+|------|------|----------|
+| ⭐ **[LLMOps 2026](./LLMOps_2026.md)** | **LLM 时代主线**：传统 MLOps 失效的 7 大原因、Prompt/模型/RAG 三层架构、成本与延迟 SLO、可观测性、成熟度模型、3 个事故复盘 | 所有人必读 |
+| [Prompt 工程化运维](./Prompt_Engineering_Ops.md) | Prompt 版本化、A/B 测试、回归门禁、Prompt Registry（Promptflow/LangSmith/Promptfoo） | LLM 应用工程师 |
+| [LLM 评估流水线](./LLM_Evaluation_Pipeline.md) | LLM-as-Judge、人审工作流、Eval 数据集版本化、CI 门禁、Ragas/DeepEval 实战 | LLM 应用工程师 |
+| [RAG 流水线运维](./RAG_Pipeline_Ops.md) | 切块版本化、Embedding 升级策略、索引重建、检索质量监控（侧重 Ops） | RAG 系统工程师 |
+| [LLM 成本与延迟 SLO](./LLM_Cost_Latency_SLO.md) | 三层缓存、智能路由、级联、Token 预算熔断、FinOps | LLM 平台工程师 |
+| [LLM 可观测性](./LLM_Observability.md) | 五层监控、Trace 分布式追踪、幻觉/毒性/PII 在线检测、Runbook | SRE / LLM 平台 |
+
+### 传统 MLOps 主线
 
 | 文档 | 内容 | 适用读者 |
 |------|------|----------|
@@ -28,10 +94,26 @@ updated: '2026-05-31'
 | [MLOps 成熟度模型](./MLOps_Maturity_Model.md) | Level 0-3 成熟度评估、团队建设、工具选型、ROI 衡量 | 管理者 |
 | [Model Registry & Model Cards](./Model_Registry_and_Cards_Deep_Dive.md) | MLflow Registry、版本管理、阶段转换、Model Card 文档化 | 进阶 |
 
+### 横切关注点（跨 LLMOps 与 MLOps）
+
+| 文档 | 内容 | 适用读者 |
+|------|------|----------|
+| [数据版本控制](./Data_Versioning_DVC_LakeFS.md) | DVC/LakeFS/Delta Lake 对比，可复现性的基石 | 数据工程师 |
+| [自动化再训练](./Automated_Retraining.md) | 触发机制、数据回流、增量 vs 全量、自动门禁、灾难性遗忘 | ML 平台 |
+| [ML 系统可观测与 SLO](./ML_Observability_SLO.md) | 三大支柱、SLI/SLO/SLA、错误预算、USE 方法、告警设计 | SRE |
+| [MLOps 成本优化](./Cost_Optimization_MLOps.md) | GPU 调度、Spot 实例、弹性伸缩、训练/推理优化、FinOps | 平台 / FinOps |
+| [隐私与合规流水线](./Privacy_Compliance_Pipeline.md) | PII 检测、数据血源、模型卡强制化、公平性门禁、审计、GDPR/AI Act | 合规 / 风控 |
+
 ---
 
 ## 学习路径
 
+### LLM 应用开发者路径（2026 主流）
+- **主线** → [LLMOps 2026](./LLMOps_2026.md)（1 小时，必读）
+- **深扩** → [Prompt Ops](./Prompt_Engineering_Ops.md) → [LLM Eval](./LLM_Evaluation_Pipeline.md) → [RAG Ops](./RAG_Pipeline_Ops.md)
+- **成本** → 跨章参考 [[09_Deployment_Inference/LLM_Cost_Optimization]]
+
+### 传统 ML 工程师路径
 - **快速入门** → [MLOps-in-nutshell](./MLOps-in-nutshell.md)（30 分钟）
 - **系统学习** → [MLOps Pipeline](./MLOps_Pipeline.md)（2-3 小时）
 - **简化版** → [MLOps Pipeline for Dummy](./MLOps_Pipeline_for_dummy.md)
@@ -92,9 +174,21 @@ flowchart TB
 *本章内容持续完善中。*
 
 ## Related
+- [[10_MLOps_Pipeline/_boundary-with-16|📍 10 与 16 边界声明]] 📐 治理
+- [[92_Plan/MLOps_Section_Enhancement_Plan_2026|章节加强计划 2026]] 📋 路线图
+- [[10_MLOps_Pipeline/LLMOps_2026|LLMOps 2026：大模型时代的 MLOps 升级]] ⭐ LLM 时代主线
+- [[10_MLOps_Pipeline/Prompt_Engineering_Ops|Prompt 工程化运维]]
+- [[10_MLOps_Pipeline/LLM_Evaluation_Pipeline|LLM 评估流水线]]
+- [[10_MLOps_Pipeline/RAG_Pipeline_Ops|RAG 流水线运维]]
+- [[10_MLOps_Pipeline/LLM_Cost_Latency_SLO|LLM 成本与延迟 SLO]]
+- [[10_MLOps_Pipeline/LLM_Observability|LLM 可观测性]]
+- [[10_MLOps_Pipeline/Data_Versioning_DVC_LakeFS|数据版本控制：DVC 与 LakeFS]]
+- [[10_MLOps_Pipeline/Automated_Retraining|自动化再训练]]
+- [[10_MLOps_Pipeline/ML_Observability_SLO|ML 系统可观测与 SLO]]
+- [[10_MLOps_Pipeline/Cost_Optimization_MLOps|MLOps 成本优化]]
+- [[10_MLOps_Pipeline/Privacy_Compliance_Pipeline|隐私与合规流水线]]
 - [[10_MLOps_Pipeline/Model_Registry_and_Cards_Deep_Dive|模型注册与模型卡片深度解析 (Model Registry & Model Cards Deep Dive)]]
 - [[10_MLOps_Pipeline/MLOps_Pipeline|MLOps 流水线 (MLOps Pipeline)]]
-- [[10_MLOps_Pipeline/README|MLOps 流水线 (MLOps Pipeline)]]
 - [[10_MLOps_Pipeline/ML_CI_CD|ML CI/CD 流水线 (ML CI/CD Pipeline)]]
 - [[10_MLOps_Pipeline/MLOps_Pipeline_for_dummy|MLOps 流水线 - 小白版]]
 - [[10_MLOps_Pipeline/README_for_dummy|10 MLOps 流水线 — 小白版 🔄]]

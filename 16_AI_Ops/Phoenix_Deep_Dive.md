@@ -11,6 +11,8 @@ updated: "2026-05-31"
 
 > **一句话理解**: Phoenix 是 Arize AI 的开源可观测性工具——追踪 LLM 应用从 Prompt 到 Response 的完整链路，帮你发现和修复问题。
 
+> 📐 **概念与选型方法论**: LLM 可观测性见 [[10_MLOps_Pipeline/LLM_Observability]]，ML 系统 SLO/SLI 见 [[10_MLOps_Pipeline/ML_Observability_SLO]]。本文聚焦 Phoenix 工具用法。
+
 ---
 
 ## 目录

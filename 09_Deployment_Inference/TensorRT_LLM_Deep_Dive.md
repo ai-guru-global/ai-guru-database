@@ -1,15 +1,15 @@
 ---
 title: "TensorRT-LLM: NVIDIA 生产级 LLM 推理"
 category: "09-deployment-inference"
-tags: ["deployment", "inference", "serving", "vllm", "llm"]
-summary: "> **一句话理解**: TensorRT-LLM 是 NVIDIA 的高性能 LLM 推理库——TensorRT 加速 + 定制 kernel，单请求延迟最低，H100 推理性能标杆。"
+tags: ["deployment", "inference", "serving", "tensorrt-llm", "nvidia", "llm", "fp8", "triton"]
+summary: "> **一句话理解**: TensorRT-LLM 是 NVIDIA 的高性能 LLM 推理库——TensorRT 加速 + 定制 kernel，单请求延迟最低，H100/H200 推理性能标杆。"
 created: "2026-05-31"
-updated: "2026-05-31"
+updated: "2026-06-15"
 ---
 
 # TensorRT-LLM: NVIDIA 生产级 LLM 推理
 
-> **一句话理解**: TensorRT-LLM 是 NVIDIA 的高性能 LLM 推理库——TensorRT 加速 + 定制 kernel，单请求延迟最低，H100 推理性能标杆。
+> **一句话理解**: TensorRT-LLM 是 NVIDIA 的高性能 LLM 推理库——TensorRT 加速 + 定制 kernel，单请求延迟最低，H100/H200 推理性能标杆。
 
 ---
 
@@ -19,8 +19,10 @@ updated: "2026-05-31"
 2. [核心概念](#2-核心概念)
 3. [架构设计](#3-架构设计)
 4. [快速开始](#4-快速开始)
-5. [高级特性](#5-高级特性)
-6. [对比与选择](#6-对比与选择)
+5. [生产部署](#5-生产部署)
+6. [高级特性](#6-高级特性)
+7. [监控与运维](#7-监控与运维)
+8. [对比与选择](#8-对比与选择)
 
 ---
 
@@ -32,37 +34,42 @@ updated: "2026-05-31"
 TensorRT-LLM: NVIDIA 生产级 LLM 推理
 ═══════════════════════════════════════════════════════════════════
 
-定位: NVIDIA 官方的高性能 LLM 推理库，深度优化 GPU 利用率
+定位: NVIDIA 官方的高性能 LLM 推理库，深度优化 NVIDIA GPU 利用率
 
 核心理念:
 ───────────────────────────────────────────────────────────────────
-• 极致性能: TensorRT 加速，单请求延迟最低
-• 定制 Kernel: Attention/Fusion 高度优化
-• 多 GPU 扩展: TP/PP 完美支持
-• H100 优化: 充分利用hopper架构
-• 生产就绪: 企业级稳定性和支持
+• 极致性能: TensorRT 图优化 + 定制 CUDA kernel，单请求延迟最低
+• 定制 Kernel: Attention/Fusion/MoE 高度优化
+• 多 GPU 扩展: TP/PP/EP 完美支持
+• Hopper 优化: H100/H200 原生 FP8、Transformer Engine
+• 生产就绪: 与 NVIDIA Triton 深度集成，企业级稳定性
+• 生态完整: NGC 镜像、Triton Backend、NeMo 框架支持
 ```
 
 ### 1.2 核心特性
 
 | 特性 | 说明 |
 |------|------|
-| **TensorRT 加速** | 深度学习推理引擎 |
+| **TensorRT 图优化** | 算子融合、层融合、精度校准 |
 | **In-Flight Batching** | 动态批处理，最大 GPU 利用率 |
-| **定制 Attention** | FlashAttention 优化 |
-| **算子融合** | 减少内存访问 |
-| **FP8 支持** | H100 原生 |
-| **多 GPU 扩展** | Tensor/Pipeline Parallel |
-| **FlashAttention-3** | 2024 新优化 |
+| **定制 Attention** | FlashAttention / FlashDecoder 优化 |
+| **FP8 量化** | H100/H200 原生 FP8，精度损失极小 |
+| **多 GPU 扩展** | Tensor / Pipeline / Expert Parallel |
+| **MoE 支持** | Mixtral 8x7B / 8x22B 等 MoE 模型优化 |
+| **Speculative Decoding** | 推测解码加速 |
+| **多 LoRA** | 运行时加载多个 LoRA |
+| **Triton 集成** | NVIDIA Triton Inference Server 后端 |
+| **长上下文** | 128K+ 上下文优化 |
 
 ### 1.3 性能数据 (2026)
 
 | 配置 | 模型 | Batch | 吞吐量 | TTFT |
 |------|------|-------|--------|------|
-| H100-80GB | Llama 3.1 8B | 1 | 15,000 tok/s | 50ms |
-| H100-80GB x8 | Llama 3.1 70B | 1 | 45,000 tok/s | 80ms |
-| H100-80GB x8 | Llama 3.1 405B | 1 | 18,000 tok/s | 150ms |
-| H200-80GB | Llama 3.1 70B | 1 | 52,000 tok/s | 60ms |
+| H100-80GB | Llama 3.1 8B | 1 | 15,000 tok/s | 40ms |
+| H100-80GB x4 | Llama 3.1 70B | 1 | 7,800 tok/s | 60ms |
+| H100-80GB x8 | Llama 3.1 405B | 1 | 3,200 tok/s | 120ms |
+| H200-80GB x8 | Llama 3.1 70B | 1 | 52,000 tok/s | 50ms |
+| H100-80GB x8 | Mixtral 8x22B | 1 | 4,500 tok/s | 80ms |
 
 ---
 
@@ -88,6 +95,7 @@ TensorRT 优化流程
 │  │ 3. Kernel auto-tuning (kernel 自动调优)                     │ │
 │  │ 4. Memory optimization (内存优化)                            │ │
 │  │ 5. Graph optimization (图优化)                              │ │
+│  │ 6. Plugin registration (自定义插件)                         │ │
 │  └─────────────────────────────────────────────────────────────┘ │
 │       │                                                           │
 │       ▼                                                           │
@@ -137,6 +145,29 @@ Req1: [████████████████████████�
 • 吞吐量大幅提升
 ```
 
+### 2.3 FP8 量化
+
+```
+TensorRT-LLM FP8 量化
+═══════════════════════════════════════════════════════════════════
+
+FP8 格式:
+───────────────────────────────────────────────────────────────────
+• 8-bit 浮点: 1 符号位 + 4 指数位 + 3 尾数位 (E4M3)
+• 或: 1 符号位 + 5 指数位 + 2 尾数位 (E5M2)
+
+优势:
+• 相比 FP16，显存占用减半
+• H100/H200 Tensor Core 原生支持
+• 推理速度提升 1.5-2x
+• 精度损失通常 < 1%
+
+使用条件:
+• 需要 Hopper 架构 (H100/H200)
+• 需要 Transformer Engine
+• 部分模型需要校准
+```
+
 ---
 
 ## 3. 架构设计
@@ -163,6 +194,7 @@ TensorRT-LLM 架构
 │   │              TensorRT Builder                            │   │
 │   │  • Network Definition                                   │   │
 │   │  • Plugin Registry                                      │   │
+│   │  • Quantization (FP8/INT8/INT4)                         │   │
 │   │  • Calibration                                          │   │
 │   └─────────────────────────────────────────────────────────┘   │
 │                              │                                    │
@@ -177,9 +209,10 @@ TensorRT-LLM 架构
 │                              ▼                                    │
 │   ┌─────────────────────────────────────────────────────────┐   │
 │   │              CUDA Kernels                                │   │
-│   │  • FlashAttention                                       │   │
+│   │  • FlashAttention / FlashDecoder                        │   │
 │   │  • Fused MLP/KV Cache                                   │   │
 │   │  • Custom LayerNorm                                     │   │
+│   │  • FP8 Tensor Core                                      │   │
 │   └─────────────────────────────────────────────────────────┘   │
 │                                                                  │
 └─────────────────────────────────────────────────────────────────┘
@@ -223,6 +256,12 @@ TensorRT-LLM 模型并行
 │  使用场景: 多节点扩展                                             │
 │                                                                   │
 └──────────────────────────────────────────────────────────────────┘
+
+Expert Parallelism (EP) for MoE:
+───────────────────────────────────────────────────────────────────
+每个专家 (expert) 分布到不同 GPU
+All-to-All 通信路由 token 到对应专家
+特别适合 Mixtral 8x7B / 8x22B 等 MoE 模型
 ```
 
 ---
@@ -233,7 +272,7 @@ TensorRT-LLM 模型并行
 
 ```bash
 # 使用 NVIDIA Docker 镜像 (推荐)
-docker pull nvcr.io/nvidia/tritonserver:24.03-trtllm-python
+docker pull nvcr.io/nvidia/tritonserver:25.03-trtllm-python-py3
 
 # 或源码编译
 git clone https://github.com/NVIDIA/TensorRT-LLM.git
@@ -245,141 +284,308 @@ git submodule update --init --recursive
 ### 4.2 模型编译
 
 ```bash
-# 下载模型
-python3 scripts/download_model.py \
-  --model meta-llama/Meta-Llama-3.1-8B-Instruct \
-  --output_dir ./models/llama-3.1-8b
+# 使用 trtllm-build 编译引擎
+trtllm-build \
+  --checkpoint_dir ./checkpoints/llama-3.1-8b \
+  --output_dir ./engines/llama-3.1-8b \
+  --gemm_plugin float16 \
+  --max_batch_size 64 \
+  --max_input_len 4096 \
+  --max_output_len 1024 \
+  --max_seq_len 5120 \
+  --tp_size 1
 
-# 编译 TensorRT Engine
-python3 -m tensorrt_llm.commands.build \
-  --model meta-llama/Meta-Llama-3.1-8B-Instruct \
-  --dtype float16 \
-  --tp_size 1 \
-  --paged_kv_cache enable \
-  --output_dir ./engines/llama-3.1-8b
+# FP8 量化编译 (H100)
+trtllm-build \
+  --checkpoint_dir ./checkpoints/llama-3.1-8b \
+  --output_dir ./engines/llama-3.1-8b-fp8 \
+  --gemm_plugin fp8 \
+  --quant_ckpt_clip None \
+  --strongly_typed \
+  --tp_size 1
+
+# 多卡 TP=4
+trtllm-build \
+  --checkpoint_dir ./checkpoints/llama-3.1-70b \
+  --output_dir ./engines/llama-3.1-70b-tp4 \
+  --gemm_plugin float16 \
+  --tp_size 4
 ```
 
 ### 4.3 启动服务
 
-```bash
-# 启动 Triton Inference Server
-python3 -m tensorrt_llm.commands.run \
-  --engine_dir ./engines/llama-3.1-8b \
-  --max_input_len 4096 \
-  --max_output_len 1024 \
-  --batch_size 32 \
-  --num_prepend_gfter_tokens 3
-```
-
-### 4.4 API 调用
-
 ```python
-from tensorrt_llm import TRTLLMEngine
+from tensorrt_llm import LLM
 
-# 创建引擎
-engine = TRTLLMEngine(
-    engine_dir="./engines/llama-3.1-8b",
-    max_input_len=4096,
-    max_output_len=1024
+# 创建 LLM 实例
+llm = LLM(
+    model="./engines/llama-3.1-8b",
+    tokenizer="meta-llama/Llama-3.1-8B-Instruct"
 )
 
 # 推理
-result = engine.generate(
-    prompt="解释量子计算的基本原理",
-    temperature=0.7,
-    max_tokens=256
+result = llm.generate(
+    "解释量子计算的基本原理",
+    max_new_tokens=256,
+    temperature=0.7
 )
 
 print(result)
 ```
 
-### 4.5 Docker 部署
+### 4.4 Docker 部署
 
 ```bash
 # 使用官方镜像启动
 docker run -it --rm \
   --gpus all \
-  --shm-size=500g \
+  --shm-size=256g \
   -p 8000:8000 \
-  nvcr.io/nvidia/tritonserver:24.03-trtllm-python \
+  -v $(pwd)/engines:/engines \
+  nvcr.io/nvidia/tritonserver:25.03-trtllm-python-py3 \
   tritonserver \
-  --model-repository=/model_repository \
-  --backend-directory=/tensorrtllm_backend \
-  --add-cuda-ops
+  --model-repository=/engines \
+  --backend-directory=/opt/tritonserver/backends \
+  --http-port=8000
 ```
 
 ---
 
-## 5. 高级特性
+## 5. 生产部署
 
-### 5.1 FP8 量化
+### 5.1 NVIDIA Triton 集成
+
+```
+Triton + TensorRT-LLM 架构
+═══════════════════════════════════════════════════════════════════
+
+Client
+  │
+  ▼
+Triton Inference Server
+  │
+  ├── HTTP/gRPC API
+  │
+  ├── TensorRT-LLM Backend
+  │     │
+  │     ▼
+  ├── TensorRT Engine (.engine)
+  │     │
+  │     ▼
+  └── GPU / CUDA
+```
+
+### 5.2 Triton 模型仓库配置
+
+```
+/models/
+└── tensorrt_llm/
+    ├── 1/
+    │   └── config.json
+    ├── config.pbtxt
+    └── 1/
+        └── llama-3.1-8b.engine
+```
+
+```protobuf
+# config.pbtxt
+name: "tensorrt_llm"
+backend: "tensorrtllm"
+max_batch_size: 64
+input [
+  {
+    name: "input_ids"
+    data_type: TYPE_INT32
+    dims: [-1]
+  },
+  {
+    name: "input_lengths"
+    data_type: TYPE_INT32
+    dims: [1]
+  }
+]
+output [
+  {
+    name: "output_ids"
+    data_type: TYPE_INT32
+    dims: [-1]
+  }
+]
+instance_group [
+  {
+    count: 1
+    kind: KIND_GPU
+    gpus: [0]
+  }
+]
+```
+
+### 5.3 Kubernetes 部署
+
+```yaml
+# tensorrt-llm-deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: trt-llm-llama3-8b
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: trt-llm-llama3-8b
+  template:
+    metadata:
+      labels:
+        app: trt-llm-llama3-8b
+    spec:
+      containers:
+      - name: triton
+        image: nvcr.io/nvidia/tritonserver:25.03-trtllm-python-py3
+        args:
+          - tritonserver
+          - --model-repository=/models
+          - --http-port=8000
+        resources:
+          limits:
+            nvidia.com/gpu: "1"
+        ports:
+        - containerPort: 8000
+        volumeMounts:
+        - name: models
+          mountPath: /models
+      volumes:
+      - name: models
+        persistentVolumeClaim:
+          claimName: trt-llm-models
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: trt-llm-llama3-8b
+spec:
+  selector:
+    app: trt-llm-llama3-8b
+  ports:
+  - port: 8000
+    targetPort: 8000
+```
+
+---
+
+## 6. 高级特性
+
+### 6.1 FP8 量化
 
 ```bash
-# FP8 编译 (H100)
-python3 -m tensorrt_llm.commands.build \
-  --model meta-llama/Meta-Llama-3.1-8B-Instruct \
+# 使用 ModelOpt 进行 FP8 量化
+python3 quantize.py \
+  --model_dir ./models/llama-3.1-8b \
+  --output_dir ./checkpoints/llama-3.1-8b-fp8 \
   --dtype fp8 \
-  --tp_size 8 \
-  --output_dir ./engines/llama-3.1-8b-fp8
+  --qformat fp8
+
+# 编译 FP8 引擎
+trtllm-build \
+  --checkpoint_dir ./checkpoints/llama-3.1-8b-fp8 \
+  --output_dir ./engines/llama-3.1-8b-fp8 \
+  --gemm_plugin fp8 \
+  --strongly_typed
 ```
 
-```python
-# FP8 推理
-result = engine.generate(
-    prompt="写一段 Python 代码",
-    temperature=0.7,
-    max_tokens=512
-)
-```
-
-### 5.2 Speculative Decoding
+### 6.2 Speculative Decoding
 
 ```bash
 # 编译带推测解码的引擎
-python3 -m tensorrt_llm.commands.build \
-  --model meta-llama/Meta-Llama-3.1-8B-Instruct \
-  -- speculative_model meta-llama/Meta-Llama-3.1-70B-Instruct \
-  --num_speculative_tokens 5 \
+trtllm-build \
+  --checkpoint_dir ./checkpoints/llama-3.1-70b \
+  --output_dir ./engines/llama-3.1-70b-spec \
+  --speculative_decoding_mode draft_tokens_external \
+  --max_draft_len 10 \
   --tp_size 8
 ```
 
-### 5.3 多 LoRA
+### 6.3 多 LoRA
 
 ```bash
-# 编译多 LoRA 引擎
-python3 -m tensorrt_llm.commands.build \
-  --model meta-llama/Meta-Llama-3.1-8B-Instruct \
-  --lora_dir ./loras/sft,./loras/rlh \
-  --max_loras 8 \
-  --tp_size 4
+# 编译支持 LoRA 的引擎
+trtllm-build \
+  --checkpoint_dir ./checkpoints/llama-3.1-8b \
+  --output_dir ./engines/llama-3.1-8b-lora \
+  --lora_plugin float16 \
+  --max_lora_rank 64
+
+# 运行时加载 LoRA
+# 在 Triton ensemble 中配置 lora_dir
+```
+
+### 6.4 长上下文优化
+
+```bash
+# 编译 128K 上下文引擎
+trtllm-build \
+  --checkpoint_dir ./checkpoints/llama-3.1-8b \
+  --output_dir ./engines/llama-3.1-8b-128k \
+  --max_input_len 131072 \
+  --max_seq_len 133120 \
+  --use_paged_context_fmha enable
 ```
 
 ---
 
-## 6. 对比与选择
+## 7. 监控与运维
 
-### 6.1 与其他推理引擎对比
+### 7.1 Triton 指标
 
-| 维度 | TensorRT-LLM | vLLM | SGLang |
-|------|-------------|------|--------|
-| **吞吐量** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
-| **延迟 (TTFT)** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
-| **易用性** | ⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
-| **FP8 支持** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐ |
-| **多 GPU** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
-| **社区生态** | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ |
+| 指标 | 说明 |
+|------|------|
+| `nv_inference_request_success` | 成功请求数 |
+| `nv_inference_request_fail` | 失败请求数 |
+| `nv_inference_queue_duration_us` | 队列等待时间 |
+| `nv_inference_compute_infer_duration_us` | 推理计算时间 |
+| `nv_gpu_memory_used_bytes` | GPU 显存使用 |
+| `nv_gpu_utilization` | GPU 利用率 |
 
-### 6.2 选型建议
+### 7.2 常见问题
+
+| 问题 | 原因 | 解决 |
+|------|------|------|
+| 编译失败 | CUDA/TensorRT 版本不匹配 | 使用官方 NGC 镜像 |
+| OOM | 引擎过大或 batch 过大 | 降低 max_batch_size / 使用量化 |
+| 精度下降 | 量化导致 | 使用校准或更高精度 |
+| 延迟高 | batch 太小 | 调整 in-flight batching 参数 |
+| NCCL 错误 | 多卡通信问题 | 检查网络、驱动、NCCL 版本 |
+
+---
+
+## 8. 对比与选择
+
+### 8.1 与其他推理引擎对比
+
+| 维度 | TensorRT-LLM | vLLM | SGLang | TGI | LMDeploy |
+|------|-------------|------|--------|-----|----------|
+| **吞吐量** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
+| **延迟 (TTFT)** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
+| **易用性** | ⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
+| **FP8 支持** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐ |
+| **多 GPU** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
+| **Triton 集成** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐ |
+| **社区生态** | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐ |
+| **MoE 支持** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐ |
+
+### 8.2 选型建议
 
 | 场景 | 推荐 |
 |------|------|
 | 最低延迟 | TensorRT-LLM |
 | 通用生产 | vLLM |
 | 多轮对话/RAG | SGLang |
-| H100 部署 | TensorRT-LLM |
+| H100/H200 部署 | TensorRT-LLM |
 | 快速部署 | vLLM |
+| Hugging Face 生态 | TGI |
+| 中文场景 | LMDeploy |
+| 已有 Triton 基础设施 | TensorRT-LLM |
 
-### 6.3 硬件要求
+### 8.3 硬件要求
 
 | 配置 | 模型 | 说明 |
 |------|------|------|
@@ -387,6 +593,19 @@ python3 -m tensorrt_llm.commands.build \
 | H100 80GB x4 | 70B | TP=4 |
 | H100 80GB x8 | 70B | TP=8，高性能 |
 | H200 80GB x8 | 405B | 完整部署 |
+| H100 80GB x8 | Mixtral 8x22B | EP/TP 混合 |
+
+### 8.4 版本演进
+
+| 版本 | 时间 | 关键特性 |
+|------|------|----------|
+| v0.5 | 2023.10 | 首个版本 |
+| v0.7 | 2024.2 | In-Flight Batching、TP/PP |
+| v0.9 | 2024.6 | FP8、Speculative Decoding |
+| v0.10 | 2024.10 | Multi-LoRA、MoE 支持 |
+| v0.12 | 2025.4 | 128K 长上下文、Triton 集成增强 |
+| v0.14 | 2025.10 | 更强量化、Disaggregated Serving |
+| v1.0 | 2026.x | 生产稳定版、完整生态 |
 
 ---
 
@@ -395,11 +614,13 @@ python3 -m tensorrt_llm.commands.build \
 - [TensorRT-LLM GitHub](https://github.com/NVIDIA/TensorRT-LLM)
 - [TensorRT-LLM 文档](https://nvidia.github.io/TensorRT-LLM/)
 - [NVIDIA Triton](https://developer.nvidia.com/nvidia-triton-inference-server)
+- [NVIDIA NGC](https://catalog.ngc.nvidia.com/)
+- [NVIDIA ModelOpt](https://github.com/NVIDIA/TensorRT-Model-Optimizer)
 
 ---
 
-*Last updated: 2026-04-26*
-*Version: 1.0.0*
+*Last updated: 2026-06-15*
+*Version: 2.0.0*
 
 ## Related
 
@@ -407,4 +628,8 @@ python3 -m tensorrt_llm.commands.build \
 - [[09_Deployment_Inference/Deployment_Inference_2026.md|Deployment_Inference_2026]]
 - [[09_Deployment_Inference/Deployment_Inference_for_dummy.md|Deployment_Inference_for_dummy]]
 - [[09_Deployment_Inference/Inference-in-nutshell.md|Inference-in-nutshell]]
-- [[09_Deployment_Inference/JVM_AI_Deployment.md|JVM_AI_Deployment]]
+- [[09_Deployment_Inference/vLLM_Deep_Dive.md|vLLM_Deep_Dive]]
+- [[09_Deployment_Inference/SGLang_Deep_Dive.md|SGLang_Deep_Dive]]
+- [[09_Deployment_Inference/TGI_Deep_Dive.md|TGI_Deep_Dive]]
+- [[09_Deployment_Inference/LMDeploy_Deep_Dive.md|LMDeploy_Deep_Dive]]
+- [[12_Architecture_Infrastructure/CDI_Deep_Dive.md|CDI 容器设备接口（GPU 容器接入）]]

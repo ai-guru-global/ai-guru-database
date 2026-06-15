@@ -1,7 +1,7 @@
 {
   "version": 1,
   "created": "2026-05-31T00:00:00Z",
-  "last_updated": "2026-06-12T00:00:00Z",
+  "last_updated": "2026-06-15",
   "sources": {
     "/Users/ai-guru/Documents/GitHub/ai-guru-global/ai-guru-database/AI Stack 用户指南.pdf": {
       "ingested_at": "2026-06-05T00:00:00Z",
@@ -10,7 +10,9 @@
       "content_hash": "sha256:dbd22415cb794ac1d271eadb66d81b69ddf94af96873f28a579d933f954551a2",
       "source_type": "document",
       "project": null,
-      "pages_created": ["12_Architecture_Infrastructure/Alibaba_Cloud_AI_Stack_Deep_Dive.md"],
+      "pages_created": [
+        "12_Architecture_Infrastructure/Alibaba_Cloud_AI_Stack_Deep_Dive.md"
+      ],
       "pages_updated": []
     },
     "https://github.com/microsoft/AI-For-Beginners/blob/main/translations/zh-CN/README.md": {
@@ -50,15 +52,25 @@
         "90_Learn/Microsoft_AI_For_Beginners/L24_AI_Ethics_and_Responsible_AI.md",
         "90_Learn/Microsoft_AI_For_Beginners/L25_Multi_Modal_Networks.md"
       ],
-      "pages_updated": ["90_Learn/README.md", "90_Learn/Learning_Paths_2026.md", "index.md", "log.md"]
+      "pages_updated": [
+        "90_Learn/README.md",
+        "90_Learn/Learning_Paths_2026.md",
+        "index.md",
+        "log.md"
+      ]
     },
     "https://github.com/ashishps1/learn-ai-engineering": {
       "ingested_at": "2026-06-12T00:00:00Z",
       "source_url": "https://github.com/ashishps1/learn-ai-engineering",
       "source_type": "url",
       "project": null,
-      "pages_created": ["90_Learn/AI_Engineering_Roadmap_2026.md"],
-      "pages_updated": ["90_Learn/Learning_Paths_2026.md", "00_AI_Introduction/AI_Learning_Resources.md"]
+      "pages_created": [
+        "90_Learn/AI_Engineering_Roadmap_2026.md"
+      ],
+      "pages_updated": [
+        "90_Learn/Learning_Paths_2026.md",
+        "00_AI_Introduction/AI_Learning_Resources.md"
+      ]
     },
     "https://github.com/microsoft/generative-ai-for-beginners/blob/main/translations/zh-CN/README.md": {
       "ingested_at": "2026-06-12T06:00:00Z",
@@ -99,8 +111,33 @@
       "ingested_at": "2026-06-12T06:30:00Z",
       "source_type": "manual",
       "project": null,
-      "pages_created": ["concepts/matryoshka-representation-learning.md"],
-      "pages_updated": ["concepts/embedding-models.md", "concepts/vector-database.md", "concepts/rag-systems.md", "index.md"]
+      "pages_created": [
+        "concepts/matryoshka-representation-learning.md"
+      ],
+      "pages_updated": [
+        "concepts/embedding-models.md",
+        "concepts/vector-database.md",
+        "concepts/rag-systems.md",
+        "index.md"
+      ]
+    },
+    "manual-mrl-deep-dive": {
+      "ingested_at": "2026-06-15T07:10:00Z",
+      "source_type": "manual",
+      "project": null,
+      "pages_created": [
+        "11_RAG_Systems/Matryoshka_Representation_Learning_Deep_Dive.md",
+        "11_RAG_Systems/Matryoshka_Representation_Learning_for_dummy.md",
+        "22_Papers/Matryoshka_Representation_Learning_Deep_Dive.md"
+      ],
+      "pages_updated": [
+        "11_RAG_Systems/README.md",
+        "concepts/matryoshka-representation-learning.md",
+        "concepts/embedding-models.md",
+        "22_Papers/README.md",
+        "index.md",
+        "log.md"
+      ]
     },
     "_raw/github-sources/hello-agents/README.md": {
       "ingested_at": "2026-06-12T05:56:59Z",
@@ -197,14 +234,173 @@
       "content_hash": "sha256:2f6f5a50bfe92df9d0c795803306c2edc16aa2fed20601fc336cf9358ca5eeb2",
       "source_type": "document",
       "project": null,
-      "pages_created": ["references/500-ai-projects.md"],
+      "pages_created": [
+        "references/500-ai-projects.md"
+      ],
+      "pages_updated": []
+    },
+    "_raw/github-sources/ai-agents-for-beginners/00-course-setup/README.md": {
+      "ingested_at": "2026-06-15T08:17:32Z",
+      "size_bytes": 13053,
+      "modified_at": "2026-06-12T07:14:41Z",
+      "content_hash": "sha256:f417bba5e9d67f5a1ff90cd56242328a350da4f7b6128c826350d7440a3435ee",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [
+        "13_Agent_Production/Microsoft_AI_Agents_L00_Course_Setup.md"
+      ],
+      "pages_updated": []
+    },
+    "_raw/github-sources/ai-agents-for-beginners/03-agentic-design-patterns/README.md": {
+      "ingested_at": "2026-06-15T08:17:32Z",
+      "size_bytes": 7414,
+      "modified_at": "2026-06-12T07:14:41Z",
+      "content_hash": "sha256:617d77b5ba7df0c677f2ee54515021f8a49474f3e0e15bb8f79c13cfec0b5196",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [
+        "13_Agent_Production/Microsoft_AI_Agents_L03_Design_Principles.md"
+      ],
+      "pages_updated": []
+    },
+    "_raw/github-sources/ai-agents-for-beginners/06-building-trustworthy-agents/README.md": {
+      "ingested_at": "2026-06-15T08:17:32Z",
+      "size_bytes": 12417,
+      "modified_at": "2026-06-12T07:14:41Z",
+      "content_hash": "sha256:19e79f3e13cc9a0d55ea1dfb2c476e361485f52219d92324ed1c2721f41dddb8",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [
+        "13_Agent_Production/Microsoft_AI_Agents_L06_Trustworthy_Agents.md"
+      ],
+      "pages_updated": []
+    },
+    "_raw/github-sources/ai-agents-for-beginners/07-planning-design/README.md": {
+      "ingested_at": "2026-06-15T08:17:32Z",
+      "size_bytes": 12280,
+      "modified_at": "2026-06-12T07:14:42Z",
+      "content_hash": "sha256:d6195533c3b5a6448e5d3f3cdbb3e262053c5ff5339faf4d92a3226c34081ef3",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [
+        "13_Agent_Production/Microsoft_AI_Agents_L07_Planning_Design.md"
+      ],
+      "pages_updated": []
+    },
+    "_raw/github-sources/ai-agents-for-beginners/08-multi-agent/README.md": {
+      "ingested_at": "2026-06-15T08:17:32Z",
+      "size_bytes": 16358,
+      "modified_at": "2026-06-12T07:14:42Z",
+      "content_hash": "sha256:8974d6035ffdda5e82c07287046405d697c4d5e68b153d069aced3815c00617b",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [
+        "13_Agent_Production/Microsoft_AI_Agents_L08_Multi_Agent.md"
+      ],
+      "pages_updated": []
+    },
+    "_raw/github-sources/ai-agents-for-beginners/09-metacognition/README.md": {
+      "ingested_at": "2026-06-15T08:17:32Z",
+      "size_bytes": 64719,
+      "modified_at": "2026-06-12T07:14:42Z",
+      "content_hash": "sha256:d22cbff5ac91f5bdd57656c93bacefcea80c63f5e63f65f8a6615ea301790e97",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [
+        "13_Agent_Production/Microsoft_AI_Agents_L09_Metacognition.md"
+      ],
+      "pages_updated": []
+    },
+    "_raw/github-sources/ai-agents-for-beginners/10-ai-agents-production/README.md": {
+      "ingested_at": "2026-06-15T08:17:32Z",
+      "size_bytes": 16395,
+      "modified_at": "2026-06-12T07:14:42Z",
+      "content_hash": "sha256:1a090b0480cf418f8e6790e2940bd0ac4753cce56c9d68184fe842834530835c",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [
+        "13_Agent_Production/Microsoft_AI_Agents_L10_Production.md"
+      ],
+      "pages_updated": []
+    },
+    "_raw/github-sources/ai-agents-for-beginners/11-agentic-protocols/README.md": {
+      "ingested_at": "2026-06-15T08:17:32Z",
+      "size_bytes": 12968,
+      "modified_at": "2026-06-12T07:14:42Z",
+      "content_hash": "sha256:e00ae017d44c55131bf81b5e8a4c735b4ade3ac87bc173f027fe2f04d40e7f96",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [
+        "13_Agent_Production/Microsoft_AI_Agents_L11_Agentic_Protocols.md"
+      ],
+      "pages_updated": []
+    },
+    "_raw/github-sources/ai-agents-for-beginners/12-context-engineering/README.md": {
+      "ingested_at": "2026-06-15T08:17:32Z",
+      "size_bytes": 13102,
+      "modified_at": "2026-06-12T07:14:42Z",
+      "content_hash": "sha256:adfe00b06eccd05df761c67d74be5cada01d3d31b0720ecddadc47bbe94c68fa",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [
+        "13_Agent_Production/Microsoft_AI_Agents_L12_Context_Engineering.md"
+      ],
+      "pages_updated": []
+    },
+    "_raw/github-sources/ai-agents-for-beginners/13-agent-memory/README.md": {
+      "ingested_at": "2026-06-15T08:17:32Z",
+      "size_bytes": 11609,
+      "modified_at": "2026-06-12T07:14:42Z",
+      "content_hash": "sha256:750f7c4d2fd3e163584cae3858f8fef2885250c3bb1e7f1d6eba0d25bac29df2",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [
+        "13_Agent_Production/Microsoft_AI_Agents_L13_Agent_Memory.md"
+      ],
+      "pages_updated": []
+    },
+    "_raw/github-sources/ai-agents-for-beginners/14-microsoft-agent-framework/README.md": {
+      "ingested_at": "2026-06-15T08:17:32Z",
+      "size_bytes": 13981,
+      "modified_at": "2026-06-12T07:14:42Z",
+      "content_hash": "sha256:0cb6f375a0d9c10f51e06dc711de8ba2db20c733d89cea8cf66e979931a132ec",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [
+        "13_Agent_Production/Microsoft_AI_Agents_L14_Microsoft_Agent_Framework.md"
+      ],
+      "pages_updated": []
+    },
+    "_raw/github-sources/ai-agents-for-beginners/15-browser-use/README.md": {
+      "ingested_at": "2026-06-15T08:17:32Z",
+      "size_bytes": 4744,
+      "modified_at": "2026-06-12T07:14:42Z",
+      "content_hash": "sha256:1bd8469c021900eb2dd95304ccb72342c1b3155dcab8c330d3eb8d9cfb179060",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [
+        "13_Agent_Production/Microsoft_AI_Agents_L15_Browser_Use.md"
+      ],
+      "pages_updated": []
+    },
+    "_raw/github-sources/ai-agents-for-beginners/18-securing-ai-agents/README.md": {
+      "ingested_at": "2026-06-15T08:17:32Z",
+      "size_bytes": 23559,
+      "modified_at": "2026-06-12T07:14:42Z",
+      "content_hash": "sha256:60d028d4abaf965d48b7ef078df07cd9f45e3ba04b025bc02e71fb5defb1d428",
+      "source_type": "document",
+      "project": null,
+      "pages_created": [
+        "13_Agent_Production/Microsoft_AI_Agents_L18_Securing_AI_Agents.md"
+      ],
       "pages_updated": []
     }
   },
   "stats": {
-    "total_sources_ingested": 11,
-    "total_pages": 1073,
+    "total_sources_ingested": 25,
+    "total_pages": 1086,
     "total_projects": 0,
-    "last_full_rebuild": null
+    "last_full_rebuild": null,
+    "last_updated": "2026-06-15T08:17:32Z"
   }
 }

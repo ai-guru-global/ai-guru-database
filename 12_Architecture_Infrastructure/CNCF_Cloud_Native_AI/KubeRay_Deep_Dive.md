@@ -205,6 +205,17 @@ Reconcile 关键步骤：
 
 ### 4.1 安装 KubeRay Operator
 
+Operator 部署前的集群前置条件：
+
+| 组件 | 最低版本 / 要求 | 说明 |
+|------|-----------------|------|
+| Kubernetes | ≥ 1.24 | CRD 使用 v1 schema；1.22 以下需手改 |
+| NVIDIA GPU Operator | ≥ v23.9 | 提供 `nvidia.com/gpu` device plugin 与 DCGM exporter |
+| CNI（Calico / Cilium / Flannel） | — | 必须放行 Pod CIDR 间 10001 / 6379 / 8000 / 8265 + 52365–52700 |
+| RuntimeClass | `nvidia` | containerd 配 NVIDIA runtime，否则 GPU 容器拉不起来 |
+| 共享内存 `/dev/shm` | ≥ 64Gi | 不满足则 Ray object store 退化为 TCP，零拷贝失效 |
+| 集群 RBAC | CRD / Namespace / Pod / Service | Operator watch + reconcile 所需最小权限 |
+
 ```bash
 helm repo add kuberay https://ray-project.github.io/kuberay-helm-chart/
 helm repo update
@@ -222,11 +233,13 @@ kubectl get crd | grep ray
 
 ### 4.2 Ray 镜像选择
 
-| 镜像 | 用途 |
-|------|------|
-| `rayproject/ray:2.40.0-py310` | CPU 通用 |
-| `rayproject/ray:2.40.0-py310-gpu` | GPU（含 CUDA + Python） |
-| 自建镜像 | 在上述基础上 `pip install vllm sglang` 锁版本 |
+| 镜像 tag | Python | CUDA | 用途 |
+|----------|--------|------|------|
+| `rayproject/ray:2.40.0-py310` | 3.10 | — | CPU / head 节点 |
+| `rayproject/ray:2.40.0-py311` | 3.11 | — | CPU 新依赖场景 |
+| `rayproject/ray:2.40.0-py310-gpu` | 3.10 | 12.4 | GPU worker 默认 |
+| `rayproject/ray:2.40.0-py311-cu123` | 3.11 | 12.3 | 对齐特定 NCCL / driver |
+| 自建 `vllm-ray:0.6.3-ray2.40` | 3.10 | 12.4 | 锁 vLLM + SGLang，避免 runtime_env pip 拉镜像慢 |
 
 > 强约束：**operator 版本 ↔ Ray 镜像版本 ↔ CRD schema** 三者要匹配。operator 1.2.x 对应 Ray 2.9+；老 CRD 字段在新版可能改名。
 
@@ -253,6 +266,21 @@ Ray 进程间通信使用大量端口，KubeRay 默认通过 head Service 暴露
 | 52365–52700 | worker object store / 内部 RPC（节点池内） |
 
 生产环境务必在 Pod template 里设 `hostNetwork: false` + Service ClusterIP；若 Node 走 Calico / Cilium，确保 Pod CIDR 间这些端口畅通。
+
+### 4.5 多机组网与 head Service
+
+Ray Serve 与 tensor parallel 要求 worker↔head 双向可达，仅默认 head Service 不够。worker container 必须显式声明 object store / RPC 端口，KubeRay 才会为每个 worker 自动生成同名的 ClusterIP Service（承载 NCCL 跨 Pod 通信）：
+
+```yaml
+containers:
+  - name: ray-worker
+    ports:
+      - { containerPort: 10001, name: client }
+      - { containerPort: 6379,  name: gcs }
+      - { containerPort: 52365, name: obj }
+```
+
+跨 AZ 集群若无 AZ 间直连，建议把同一 workerGroup 用 `topology.kubernetes.io/zone` 亲和性打到同 AZ，避免 NCCL all-reduce 走跨 AZ 链路、tensor parallel 通信延迟暴涨。
 
 ---
 
@@ -501,16 +529,19 @@ Dashboard 提供：集群拓扑、actor / Serve 状态、Logs viewer、Metrics�
 
 ### 7.2 Prometheus / Grafana 关键指标
 
-| 指标 | 含义 | 告警阈值（参考） |
-|------|------|------------------|
-| `ray_cluster_active_nodes` | 在线 worker 数 | < minReplicas 持续 5 分钟 |
-| `ray_cluster_pending_nodes` | 等待启动 worker | > 0 持续 10 分钟（扩容卡住） |
-| `ray_actors` | actor 状态分布 | `DEAD` 占比 > 5% |
-| `ray_serve_num_http_requests` | Serve 请求速率 | 业务基线 ±50% |
-| `ray_serve_num_ongoing_requests` | 在途请求 | 持续 > target×2 |
-| `ray_serve_deployment_request_qps` | 每个 deployment QPS | 跌零 = 服务挂 |
-| `DCGM_FI_DEV_GPU_UTIL` | GPU 利用率（节点级 DCGM） | 长期 < 30% 排查 |
-| `DCGM_FI_DEV_FB_USED` | 显存占用 | > 95% 警惕 OOM |
+| 域 | 指标 | 含义 | 告警阈值（参考） |
+|----|------|------|------------------|
+| Core | `ray_cluster_active_nodes` | 在线 worker 数 | < minReplicas 持续 5 分钟 |
+| Core | `ray_cluster_pending_nodes` | 等待启动 worker | > 0 持续 10 分钟（扩容卡住） |
+| Core | `ray_actors` / `num_actors` | actor 状态分布（ALIVE / DEAD / PENDING） | `DEAD` 占比 > 5% |
+| Core | `actor_death` / `ray_actor_restart_total` | actor 死亡 / 重启计数 | 突增 = OOM 或 NCCL 失败 |
+| Serve | `serve_deployment_request_throughput` | deployment QPS（请求速率） | 跌零 = 服务挂 |
+| Serve | `serve_handle_request_latency_s` | handle 调用延迟分布 | p99 > 业务 SLO |
+| Serve | `serve_num_replicas` | deployment 当前 actor 数 | < `num_replicas` 持续 = 副本起不来 |
+| Serve | `ray_serve_num_ongoing_requests` | 在途请求 | 持续 > target×2 |
+| GPU | `DCGM_FI_DEV_GPU_UTIL` | GPU 利用率（DCGM exporter） | 长期 < 30% 排查 |
+| GPU | `DCGM_FI_DEV_FB_USED` | 显存占用 | > 95% 警惕 OOM |
+| GPU | `DCGM_FI_DEV_NVLINK_THROUGHPUT_TX` | NVLink 发送带宽（TP 跨卡通量） | 跌零 = NVLink 故障 |
 
 ServiceMonitor 片段：
 
@@ -527,17 +558,48 @@ spec:
       interval: 15s
 ```
 
+常用 PromQL（Ray Serve 多副本 TP 推理）：
+
+```promql
+# 1. 每个 deployment 的请求吞吐
+sum by (deployment) (rate(serve_deployment_request_throughput[1m]))
+
+# 2. P99 handle 调用延迟
+histogram_quantile(0.99, sum by (le) (rate(serve_handle_request_latency_s_bucket[5m])))
+
+# 3. actor 重启速率（OOM / NCCL 异常信号）
+rate(ray_actor_restart_total[5m]) > 0
+
+# 4. GPU 利用率均分（验证 TP 各 rank 都在工作）
+avg by (node) (DCGM_FI_DEV_GPU_UTIL) < 30
+```
+
 ### 7.3 常见问题与排查
 
 | 症状 | 可能原因 | 排查 |
 |------|----------|------|
 | Worker 一直 `Pending` | GPU Node 不足 / Kueue 排队 / 镜像拉不下 | `kubectl describe pod` 看 Events；查 Kueue Workload |
 | Serve replica 卡在 `STARTING` | 模型下载慢 / 权重未缓存 | 进 Pod `kubectl exec` 看 `~/.cache/huggingface`；用 PVC |
-| Actor `DEAD` 频发 | OOM kill / `/dev/shm` 太小 / NCCL 超时 | 看 `dmesg`、Ray logs；加大 shm，关 NCCL `BLOCKING_WAIT` |
+| Actor `DEAD` 频发 / 持续重启 | OOM kill / `/dev/shm` 太小 / NCCL 超时 | 看 `dmesg`、Ray logs；加大 shm，关 NCCL `BLOCKING_WAIT` |
 | Head OOM | object store 占满 head 内存 | 调 `object-store-memory`，head 不跑业务 |
-| Autoscaling 不触发 | `minReplicas==maxReplicas` 或 Ray pending actor=0 | 看 Dashboard pending resources；放宽 maxReplicas |
-| 网络分区 worker 失联 | 跨子网端口未通 / CNI 限速 | 检查 10001/6379/对象存储端口；开 Ray `RAY_GCS_server_request_timeout_seconds` |
+| Worker 连不上 head（网络） | 跨子网端口未通 / CNI 限速 / NetworkPolicy | 检查 10001 / 6379 / 52365 段；调 `RAY_GCS_server_request_timeout_seconds` |
+| Autoscaler 不触发 | `minReplicas==maxReplicas` 或 Ray pending actor=0 | Dashboard 看 pending resources；放宽 maxReplicas |
+| Ray Serve `num_replicas` 长期不满足 | placement group 调度失败 / GPU 碎片化 | 看 Serve deployment 状态、pending resources；workerGroup GPU 是否被其他 actor 占满 |
+| NCCL timeout（TP 初始化卡死） | 跨 Pod 端口不通 / NVLink / IB 故障 | vLLM 日志找 `NCCL error`；查 52365–52700 段；`nccl-test all-reduce` 测带宽 |
+| 多机 TP Pod 起不来（GPU 碎片） | workerGroup 总 GPU < `num_replicas × num_gpus` | 算清总需求；用 `topologySpreadConstraints`；开 Kueue 整组排队 |
+| Dashboard 8265 不可达 | head Pod 未起 / port-forward 端口冲突 / NetworkPolicy | `kubectl get pods -l ray.io/node-type=head`；`kubectl logs` 看 GCS 启动 |
 | RayService 滚动卡住 | 新版本健康检查不过 | `kubectl describe rayservice` 看 `status`；放大 `serviceUnhealthySecondThreshold` |
+
+### 7.4 Ray 版本升级流程
+
+Ray 大版本升级不能原地滚——runtime state 不向后兼容。正确流程：
+
+1. 部署新版本 RayService（新命名 / 新镜像 tag / 独立 Ray 集群）。
+2. 新集群健康检查通过（Serve `RUNNING`、所有 replica 就绪）。
+3. 把上层 Ingress / Gateway 流量切到新 serveService。
+4. 观察 1–2 个工作日，无误后 `kubectl delete rayservice <old>`。
+
+> 不要直接改 RayCluster 镜像 tag 触发 rolling——跨版本 in-place 重启必然失败。
 
 ---
 
@@ -545,17 +607,18 @@ spec:
 
 ### 8.1 与同类方案
 
-| 维度 | KubeRay + Ray Serve | KServe | llm-d | 原生 Deployment + vLLM |
-|------|---------------------|--------|-------|------------------------|
-| **底层引擎** | vLLM / SGLang / 自研（任意 Python） | vLLM / TGI / Triton / Ollama | vLLM（定制 worker） | 任意 |
-| **多机 Tensor Parallel** | 强（Ray 原生） | 中（需 ServingRuntime 配合） | 强（disaggregated） | 弱（要手写 StatefulSet） |
-| **Python 业务逻辑** | 原生（RAG / agent 首选） | 一般（要包成 runtime） | 弱（专注推理） | 取决于实现 |
-| **弹性粒度** | actor 级 / K8s Pod 级双层 | Knative Pod 级 | prefill/decode 拆分 | HPA |
-| **Scale-to-zero** | 弱（Ray 启动慢） | 强 | 中 | 弱 |
-| **Canary / 多版本** | Serve 应用层切分 | Knative 原生 | InferencePool 路由 | Ingress 手动 |
-| **典型规模** | 单集群数百 GPU | 单集群数十实例 | 万卡级 | 单实例 |
-| **学习曲线** | 中高（要懂 Ray） | 中 | 高 | 低 |
-| **生态互通** | 与 KServe / Kueue / Volcano 集成 | CNCF 标准 | 新生态 | 标准 K8s |
+| 维度 | KubeRay + Ray Serve | KServe | llm-d | 原生 Deployment + vLLM | BentoML |
+|------|---------------------|--------|-------|------------------------|---------|
+| **底层引擎** | vLLM / SGLang / 自研（任意 Python） | vLLM / TGI / Triton / Ollama | vLLM（定制 worker） | 任意 | 任意（Yatai 接管） |
+| **多机 Tensor Parallel** | 强（Ray 原生） | 中（需 ServingRuntime 配合） | 强（disaggregated） | 弱（要手写 StatefulSet） | 弱（偏单实例） |
+| **Python 业务逻辑** | 原生（RAG / agent 首选） | 一般（要包成 runtime） | 弱（专注推理） | 取决于实现 | 原生（Bento 自带） |
+| **副本管理粒度** | Serve actor 级（细到单个 GPU） | Knative Pod 级 | prefill/decode 拆分 | K8s Pod 级 | Bento 部署单元 |
+| **Scale-to-zero** | 弱（Ray 启动慢） | 强 | 中 | 弱 | 中（BentoML on Knative） |
+| **Canary / 多版本** | Serve 应用层切分 | Knative 原生 | InferencePool 路由 | Ingress 手动 | Yatai 内置 |
+| **典型规模** | 单集群数百 GPU | 单集群数十实例 | 万卡级 | 单实例 | 单集群数十实例 |
+| **生态成熟度** | CNCF Landscape / Ray 社区大 | CNCF Incubating / 标准化高 | 新生态（CNCF Sandbox） | 标准 K8s | 独立开源 + 商业版 |
+| **学习曲线** | 中高（要懂 Ray） | 中 | 高 | 低 | 中低 |
+| **推荐场景** | 70B+ 多机 TP、RAG/agent、训推一体 | 标准 InferenceService、scale-to-zero | 超大规模 disaggregated 推理 | 单卡模型快速上线 | 单团队 ML 生产化、CI/CD |
 
 ### 8.2 什么时候选 KubeRay
 
@@ -573,6 +636,12 @@ spec:
 ```
 
 > 与 [[09_Deployment_Inference/vLLM_Deep_Dive]] 配合：vLLM 引擎不变，KubeRay 只是把 vLLM 的多机部署 / 副本管理 / 升级流程 K8s 化。
+
+### 8.3 选型一句话
+
+一句话决策：**70B+ 多机 TP 或 Python 重业务 → KubeRay；标准化推理 + scale-to-zero → KServe；万卡级 disaggregated → llm-d；单卡快速验证 → 原生 Deployment；单团队 ML CI/CD → BentoML。**
+
+实际生产中并非互斥。最常见的组合是 **KubeRay（多机分布式底座）+ KServe（标准化对外接口 + Knative 灰度）**：KServe `ServingRuntime` 把流量转给 Ray Serve，KubeRay 专注底层 GPU 拓扑与 actor 调度；上层用 Kueue 做 GPU 配额排队，详见 [[CNCF_Cloud_Native_AI/Kueue_Deep_Dive]]。
 
 ---
 

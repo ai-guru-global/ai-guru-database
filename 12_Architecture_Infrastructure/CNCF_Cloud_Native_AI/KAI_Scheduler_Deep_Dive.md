@@ -233,31 +233,50 @@ KAI 不替换 kube-scheduler。集群里 kube-scheduler 仍负责普通 Pod（Co
 
 ### 4.1 前置条件
 
-| 项 | 要求 |
-|----|------|
-| Kubernetes | >= 1.27 |
-| GPU 节点 | 已装 NVIDIA GPU Operator / device plugin，`nvidia.com/gpu` 可上报 |
-| 网络 fabrics | RDMA / RoCE 推荐，拓扑感知才有意义 |
-| 拓扑标签 | 节点需打 `topology.kai/{switch,rack,row,...}` 标签 |
-| Helm | >= 3.10 |
-| RBAC | KAI 需对 Pod/PodGroup/Queue/Node 的读写权限 |
+| 类别 | 项 | 要求 / 说明 |
+|------|----|------|
+| 控制面 | Kubernetes 版本 | >= 1.27（CRD 与调度扩展依赖） |
+| 控制面 | 作为第二调度器部署 | KAI 不接管默认链，业务通过 `schedulerName: kai-scheduler` 显式路由；详见 4.5 |
+| 控制面 | Helm | >= 3.10 |
+| 控制面 | RBAC | KAI 需对 Pod / PodGroup / Queue / Node 的读写权限（chart 自动创建） |
+| 节点 | GPU Operator | NVIDIA GPU Operator / device plugin 已装，`nvidia.com/gpu` 可上报 |
+| 节点 | 拓扑标签（必填） | 节点需打 `topology.kai/{switch,rack,row,...}`；缺失则降级为普通 bin-packing |
+| 节点 | NUMA 拓扑（可选） | `topology.kai/numa-*` 标签，单机多卡跨 NUMA 场景进一步收紧 |
+| 网络 | RDMA / RoCE | 推荐但非强制；缺失时拓扑感知只影响放置决策，不影响通信本身 |
+| 网络 | GPU 直通 | 训练 Pod 需挂 `/dev/infiniband` 与 `/dev/shm`（见 5.2） |
 
 ### 4.2 给节点打拓扑标签
 
-```bash
-# 示例：把节点按物理位置标记
-kubectl label node gpu-node-01 topology.kai/switch=sw-12
-kubectl label node gpu-node-01 topology.kai/rack=rack-03
-kubectl label node gpu-node-01 topology.kai/row=row-1
-kubectl label node gpu-node-01 topology.kai/numa-range=0-3
+拓扑标签是 KAI 拓扑感知的前提。物理拓扑层级越细、标签越准，调度质量越高；缺失标签的节点会被降级处理。下表给出每一层标签的真实取值示例与含义：
 
-# 批量从 CMDB 同步（示例）
-# for n in $(kubectl get nodes -l node-role.kubernetes.io/gpu -o name); do
-#   kubectl label $n topology.kai/switch=$(switch_of $n) ...
-# done
+| 层级（由细到粗） | 标签 | 示例值 | 物理含义 | 通信代价 |
+|------------------|------|--------|----------|----------|
+| NUMA | `topology.kai/numa=0` | `0` / `1` | 同 NUMA node，跨 PCIe/NVLink 域 | 最低（NVLink/NVSwitch 全速） |
+| Node | （节点本身） | — | 单机 8 卡，整机 NVLink 域 | 极低 |
+| Switch | `topology.kai/switch=sw-12` | `sw-12` | 同 ToR 交换机下，RDMA 单跳 | 低（单跳 RoCE） |
+| Rack | `topology.kai/rack=rack-03` | `rack-03` | 同机架，可能跨 ToR 上行 | 中（跨交换机） |
+| Row / Pod | `topology.kai/row=row-1` | `row-1` | 同行列，同汇聚层 / Spine 下 | 高（多跳） |
+
+逐节点打标示例（推荐从机房 CMDB / BMC 自动同步，避免人工漂移）：
+
+```bash
+# 单节点：标全五层
+kubectl label node gpu-node-01 \
+  topology.kai/numa=0 \
+  topology.kai/switch=sw-12 \
+  topology.kai/rack=rack-03 \
+  topology.kai/row=row-1
+
+# 批量从 CMDB 同步（示例骨架，字段以实际 CMDB 为准）
+for n in $(kubectl get nodes -l node-role.kubernetes.io/gpu -o name); do
+  kubectl label "$n" \
+    topology.kai/switch=$(cmdb_lookup "${n#node/}" tor_switch) \
+    topology.kai/rack=$(cmdb_lookup "${n#node/}" rack) \
+    topology.kai/row=$(cmdb_lookup "${n#node/}" row) --overwrite
+done
 ```
 
-> 拓扑标签是 KAI 拓扑感知的前提。标签越准（NUMA 级最细），调度质量越高；缺失标签的节点会被降级处理。
+> 标签维护是长期运维项：机房扩容、线缆改接、ToR 更换都要同步更新标签，否则拓扑打分会失真。建议把标签同步纳入节点入网流程，CI 校验「带 GPU 但缺 switch 标签」的节点（`kubectl get nodes -l nvidia.com/gpu.present=true -o custom-columns=NAME:.metadata.name,SWITCH:...`）。
 
 ### 4.3 Helm 安装
 
@@ -280,6 +299,20 @@ helm upgrade --install kai-scheduler kai-scheduler/kai-scheduler \
 |---------------|------------|--------------|--------------------|
 | v1.0 | 1.27–1.30 | >= v23 | v1 |
 | v1.1+ | 1.28–1.31 | >= v24 | v1（向后兼容） |
+
+### 4.5 作为第二调度器与 kube-scheduler 共存
+
+KAI 不替换 kube-scheduler，二者并存。kube-scheduler 继续负责 CoreDNS、Prometheus、DaemonSet 等普通 Pod；AI 工作负载通过 `schedulerName: kai-scheduler` 显式路由给 KAI。两者共享同一份 Node / Resource 视图（都来自 apiserver），通过各自的绑定动作互不干扰。配置要点：
+
+| 关注点 | 配置 / 检查 |
+|--------|-------------|
+| KAI schedulerName | `scheduler.name=kai-scheduler`（chart 默认值，不要改成 `""`，否则会与 kube-scheduler 抢默认调度） |
+| kube-scheduler | 保持默认链不动；切勿禁用，否则系统 Pod 失去调度器 |
+| 资源视图一致性 | 两者都从 apiserver watch，假定 GPU 已通过 device plugin 上报 |
+| 绑定冲突 | KAI 只 bind `schedulerName=kai-scheduler` 的 Pod，kube-scheduler 跳过这些 Pod，互不踩踏 |
+| leader 选举 | KAI 与 kube-scheduler 各自独立选主，lease 不共享 |
+
+> 生产常见陷阱：把 KAI 的 `scheduler.name` 设成空或 `default-scheduler`，会让 AI Pod 反而被 kube-scheduler 抢走，Gang 拓扑全部失效。务必保持独立 schedulerName。可用 `kubectl get pods -A -o custom-columns=NAME:.metadata.name,SCHED:.spec.schedulerName` 审计 Pod 路由。
 
 ---
 
@@ -479,15 +512,23 @@ scheduler:
 
 ### 7.1 关键指标
 
-| 指标 | 含义 | 关注点 |
-|------|------|--------|
-| `kai_scheduling_latency_seconds` | 单次调度循环耗时 | P99 应 < 数百 ms；变大说明负载或锁竞争 |
-| `kai_podgang_pending_seconds` | PodGroup pending 时长 | 训练作业排队时间，公平性体感来源 |
-| `kai_fragmentation_ratio` | 集群碎片率 | 持续 > 10% 需调高 defrag 强度 |
-| `kai_topology_distance_distribution` | 已绑定 PodGroup 的拓扑跨度分布 | switch 占比越高越好 |
-| `kai_queue_allocated / guaranteed` | 各队列分配/保证量 | 是否有人长期超占 |
-| `kai_defrag_migrations_total` | 碎片整理迁移次数 | 突增可能是 churn 或策略过激 |
-| `kai_preemptions_total` | 抢占次数 | 频繁抢占提示权重/配额失衡 |
+KAI 的 `/metrics` 端口暴露 Prometheus 指标，可按"调度性能 / 拓扑质量 / 公平与排队 / 碎片与抢占"四类归口。下表给出生产常盯的指标与健康基线：
+
+| 类别 | 指标 | 含义 | 健康基线 / 关注点 |
+|------|------|------|-------------------|
+| 调度性能 | `kai_scheduling_latency_seconds` (histogram) | 单次调度循环耗时，按 bucket 暴露 | P50 < 50 ms，P99 < 数百 ms；P99 飙升看锁竞争 / batch 过大 |
+| 调度性能 | `kai_scheduling_batch_size` | 每批处理的 pending Pod 数 | 接近 `maxBatchSize` 说明积压，考虑拉大 batch 或分片 |
+| 拓扑质量 | `kai_topology_distance_distribution` | 已绑定 PodGroup 落在各拓扑层级的占比 | switch / rack 占比越高越好；row 占比高说明拓扑失真或资源紧 |
+| 拓扑质量 | `kai_topology_violations_total` | 触发放宽（BestEffort）或拒绑（Strict）的次数 | 上升说明标签缺失或拓扑域装不下 |
+| 公平与排队 | `kai_podgroup_pending_count` | 当前 pending 的 PodGroup 数 | 持续高位 + 0 绑定 = Gang 饥饿或配额耗尽 |
+| 公平与排队 | `kai_podgroup_pending_seconds` | PodGroup pending 时长（直方图） | 训练作业排队体感来源；与公平性体感强相关 |
+| 公平与排队 | `kai_queue_allocated` / `kai_queue_guaranteed` | 各队列已分配 / 保证量 | 长期 allocated > guaranteed 说明有人在借超额 |
+| 公平与排队 | `kai_queue_depth` | 各队列等待中的 PodGroup 数 | 单队列深度远超均值提示该队列权重/配额失衡 |
+| 碎片与抢占 | `kai_fragmentation_ratio` | 集群碎片率（0~1） | 持续 > 10% 需调高 defrag 强度或补标签 |
+| 碎片与抢占 | `kai_defrag_migrations_total` | 碎片整理迁移次数（counter） | 突增 = churn 或策略过激 |
+| 碎片与抢占 | `kai_preemptions_total` | 抢占次数（counter） | 频繁抢占提示权重/配额失衡或 cooldown 太短 |
+
+> 实践：把 P99 调度延迟、碎片率、pending PodGroup 数、抢占速率做成四条黄金 SLO 曲线；任一告警即触发 §7.3 排错流程。
 
 ### 7.2 Prometheus 接入
 
@@ -509,34 +550,47 @@ spec:
 常用 PromQL：
 
 ```promql
-# 平均调度延迟
-avg(histogram_quantile(0.95, rate(kai_scheduling_latency_seconds_bucket[5m])))
+# 1. 调度延迟 P50 / P99
+histogram_quantile(0.50, rate(kai_scheduling_latency_seconds_bucket[5m]))
+histogram_quantile(0.99, rate(kai_scheduling_latency_seconds_bucket[5m]))
 
-# 集群碎片率
-avg(kai_fragmentation_ratio)
+# 2. 集群碎片率（按 15s 采样取 5m 均值，避免抖动）
+avg_over_time(kai_fragmentation_ratio[5m])
 
-# 各队列 GPU 占用率
+# 3. 各队列 GPU 占用率（allocated / guaranteed）
 kai_queue_allocated{resource="nvidia.com/gpu"}
   / on(queue) kai_queue_guaranteed{resource="nvidia.com/gpu"}
+
+# 4. 拓扑跨度分布：switch 域占已绑定 PodGroup 的比例（越高越好）
+sum(kai_topology_distance_distribution{level="switch"})
+  / sum(kai_topology_distance_distribution)
+
+# 5. 抢占速率（每分钟），突增即告警
+rate(kai_preemptions_total[1m]) * 60
 ```
 
 ### 7.3 排错速查
 
-| 现象 | 可能原因 | 排查 |
-|------|----------|------|
-| PodGroup 一直 `Unschedulable` | 凑不齐 `minMember`；拓扑过严；队列超 `maxQuota` | `describe podgroup` 看 Events；临时放宽 `topologyPolicy` |
-| 调度延迟 P99 突增 | pending 量过大；锁竞争；集群视图滞后 | 调大 `batchInterval`；检查 leader 选举；看 apiserver RT |
-| 拓扑违规（跨交换机） | 节点拓扑标签缺失；`BestEffort` 放宽了 | 检查标签覆盖率；提升 `Strict` 或补标签 |
-| Gang 饥饿（饿死） | 大 job 长期排队抢不到 | 调队列权重；启用抢占；拆分 `minMember` |
-| Defrag churn（反复迁移） | `aggressiveness=high` + 高 churn | 降为 `medium`；调小 `maxMigrationsPerCycle` |
-| 高优先级被反复抢占 | 公平仲裁震荡；权重悬殊 | 检查 Queue 权重；调 `preemption.cooldownSeconds` |
+| # | 现象 | 可能原因 | 排查 / 处置 |
+|---|------|----------|-------------|
+| 1 | PodGroup 卡 `Pending` / `Unschedulable` | 凑不齐 `minMember`；拓扑过严；队列超 `maxQuota` | `kubectl describe podgroup` 看 Events；临时放宽 `topologyPolicy`；核对 Queue 配额 |
+| 2 | 拓扑违规（Pod 被放到跨交换机/跨机架） | 节点拓扑标签缺失；`BestEffort` 放宽了；拓扑域装不下 | 检查标签覆盖率（4.2 审计命令）；补标签或提升 `Strict`；扩容对应 switch 域 |
+| 3 | 拓扑标签缺失（节点降级处理） | 新节点入网未打标；CMDB 漂移 | 跑 4.2 审计命令找缺标节点；重新打标或回滚 CMDB 同步 |
+| 4 | Gang 饥饿（大 job 长期排队） | 资源被小 job 占满；权重低；抢占关闭 | 调队列 `weight`；启用抢占；拆分 `minMember`；调高该队列 `quota` |
+| 5 | Defrag churn（同一批 Pod 反复迁移） | `aggressiveness=high` + 高 churn 节点 | 降为 `medium`；调小 `maxMigrationsPerCycle`；对关键训练设高优先级豁免 |
+| 6 | Queue 饥饿（某队列长期拿不到资源） | 公平仲裁被高权重队列压制；`quota` 设过低 | `kubectl describe queue` 对比 allocated/guaranteed；调权重；加 `maxQuota` 上限防超占 |
+| 7 | 调度延迟 P99 突增 / 性能退化 | pending 量过大；锁竞争；集群视图滞后；scoring 深度过深 | 调大 `batchInterval`；检查 leader 选举；看 apiserver RT；调浅 scoring depth |
+| 8 | 意外抢占级联（一个抢占触发链式抢占） | 权重悬殊；`cooldownSeconds` 过短；fairness 震荡 | 调大 `preemption.cooldownSeconds`；拉平权重；检查 DRF 配置 |
+| 9 | 高优先级 Pod 被反复抢占 | 公平仲裁震荡；权重悬殊；优先级倒挂 | 检查 Queue 权重；核对 PriorityClass value；调 cooldown |
 
 ### 7.4 规模调优要点
 
 - 单实例瓶颈在万级 Pod 量级后显现，启用 `leaderElect` 多副本只解决 HA 不解决吞吐；真正扩容靠分片（按 Queue / namespace 分片多实例）。
-- `batchInterval` 与 `maxBatchSize` 是吞吐 vs 时延的旋钮：训练批作业拉大，推理混部调小。
+- `batchInterval` 与 `maxBatchSize` 是吞吐 vs 时延的旋钮：训练批作业拉大 batch、拉长 interval 换吞吐；推理混部调小换时延。`maxBatchSize` 接近上限（见 `kai_scheduling_batch_size`）即说明积压。
+- scoring depth（每 Pod 候选节点评分深度）在大集群下是主要 CPU 开销；万节点级可调浅评分深度，牺牲少量紧凑度换调度循环速度。
 - 拓扑索引常驻内存，节点数 × 拓扑层级决定内存占用，万节点级集群预留 4–8 GiB。
-- 拓扑标签维护是运维长期项：机房扩容、线缆改接都要同步更新标签。
+- 拓扑标签维护是运维长期项：机房扩容、线缆改接都要同步更新标签，否则 `kai_topology_distance_distribution` 会逐渐往 row 偏移。
+- defrag 在万卡集群建议默认 `medium`：`high` 在高 churn（频繁上下线节点）时会放大迁移风暴，`low` 又追不上碎片增长。
 
 ---
 

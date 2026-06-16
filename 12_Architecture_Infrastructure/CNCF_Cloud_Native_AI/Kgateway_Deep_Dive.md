@@ -130,6 +130,31 @@ Kgateway 不是「另起炉灶」, 而是**站在 Kubernetes Gateway API 标准�
 
 Gateway API 的 BackendRef 默认指向 Kubernetes Service, 但生产中后端远不止 K8s 内 Service: 一个外部 LLM API、另一个集群的服务、云上的函数。**Upstream 把「后端」抽象成统一的、可被路由引用的对象**, 这是 Kgateway 实现「any cloud, any environment」全向连接的关键。
 
+### 2.4 关键字段速查
+
+下表把生产配置中最常被引用的字段与职责集中列出, 写 YAML 时可对照:
+
+| CRD | 关键字段 | 职责 |
+|-----|---------|------|
+| **Gateway** | `spec.gatewayClassName`, `spec.listeners[].{protocol,port,tls}` | 声明由哪个 controller 实现、暴露哪些端口/协议/TLS |
+| **HTTPRoute** | `spec.hostnames`, `spec.rules[].{matches,backendRefs,filters}` | 主机/路径/header 匹配、转发目标、扩展过滤器挂载点 |
+| **Upstream** | `spec.type` (`static`/`kubernetes`/`aws`/`azure`/...), `spec.static.hosts[]` | 把任意云后端 (K8s Service / 外部 IP / 云函数) 统一抽象 |
+| **UpstreamGroup** | `spec.destinations[].{upstreamRef,weight}` | 加权/故障转移的后端组合, 灰度与多区路由基础 |
+| **AuthConfig** | `spec.configs[].{apiKeyAuth,oidc,jwt}` (经 extensionRef 绑路由) | 与路由解耦的认证策略集合 |
+| **DirectResponse** | `spec.status`, `spec.body` | 不经后端直接返回固定内容 (维护页/降级/合规拦截) |
+| **AIFilter** | `spec.providerRouting.rules[]`, `spec.promptSafety`, `spec.audit` | provider 分流、prompt/response 安全、token 审计 |
+
+### 2.5 东西向 vs 南北向拓扑
+
+```
+  南北向: 外部用户 → Kgateway(集中; 80/443; OIDC/WAF/限流) → 集群 Services
+          (单一入口、终结 TLS、副本规模 = 边缘并发量)
+  东西向: Svc A + kgw(mTLS/限流) ──► Svc B + kgw ──► Svc C ...
+          (hop-by-hop 治理、延迟敏感、与服务共伸缩)
+```
+
+南北向是「少数大实例顶在集群边缘」(多副本+PDB+跨可用区), 东西向是「多份小实例贴近服务」(per-call 认证/限流); AI 网关常叠加在南北向出口 (外部应用 → 集群 → 第三方 LLM)。两者共享同一控制面模型 (Gateway API + Upstream + AuthConfig), 仅部署形态与副本规模不同。
+
 ---
 
 ## 3. 架构设计
@@ -208,10 +233,15 @@ Kgateway 的「一套内核三种用法」在部署拓扑上体现为同一数�
 
 ### 4.1 前置条件
 
-- Kubernetes 集群 (1.27+)
-- Helm 3.x
-- Gateway API CRDs 已安装 (`gateway-api` 标准通道)
-- 足够资源运行 Envoy 数据面 (按流量规模, 见 6.1)
+| 组件 | 版本/要求 | 说明 |
+|------|----------|------|
+| Kubernetes 集群 | ≥ 1.27 | 托管 (EKS/GKE/AKS) 或自建均可; 东西向部署建议 NetworkPolicy 可用 |
+| Gateway API CRDs | v1.2+ (standard channel) | `standard-install.yaml`; 用实验特性时切 `experimental` 通道 |
+| Helm | ≥ 3.12 | 安装 Kgateway 控制面与数据面 chart |
+| Envoy 数据面镜像 | 由 chart 默认提供 | 私仓场景可覆盖 `image.repository/tag`; 行为对齐 Envoy v1.30+ |
+| cert-manager | ≥ 1.13 (可选) | 自动签发 webhook/mTLS 内部证书 |
+| mTLS 信任根 | SPIFFE 或自定义 CA | 跨集群东西向 mTLS 的前提, 需提前分发 trust bundle |
+| 资源预算 | 见 §6.1 sizing | 按 QPS/body 规模给 Envoy 预留 CPU/内存 |
 
 ### 4.2 Helm 安装
 
@@ -254,6 +284,19 @@ spec:
 | 集中式 (North-South) | 顶在集群边缘 | 独立 Deployment, 多副本 | 对外 API 入口、集中治理 |
 | 微网关 (East-West) | 服务间 | 按需部署的轻量实例 | 服务间 mTLS/限流 |
 | AI 网关 | 给 LLM 流量加治理 | 与集中式共用或独立 | 应用调第三方 LLM |
+
+### 4.5 多环境安装矩阵
+
+| 环境 | 控制面位置 | 数据面形态 | 关键注意 |
+|------|-----------|-----------|----------|
+| 托管 K8s (EKS/GKE/AKS) | 独立 namespace | LoadBalancer-type Gateway, 走云 LB | 云 LB 终结前置流量, Kgateway 接第二层 |
+| 自建 / on-prem | 同集群 | NodePort 或 MetalLB + external-dns | 证书与外层 ingress 衔接, 注意出网代理 |
+| 多集群 | 中心控制面或每集群一套 | 各集群独立 Envoy, 经 Upstream 互联 | 东西向 mTLS 跨集群, 控制面集中下发 |
+| 边缘 / 资源受限 | 裁剪控制面 | 单副本 Envoy | 仅做微网关, 关闭非必要 filter |
+
+### 4.6 高可用拓扑要点
+
+生产 HA 至少做到四点: ① Envoy Deployment **≥ 3 副本**并用 `topologySpreadConstraints` 跨可用区打散; ② 配 PodDisruptionBudget, `minAvailable` 留出滚动窗口; ③ 节点反亲和 (`podAntiAffinity`) 避免同节点堆积; ④ 控制面独立副本 (Helm 默认提供), 其故障不影响数据面热路径——xDS 已下发配置驻留在 Envoy 内存, 控制面恢复后再增量同步。完整 sizing/PDB YAML 见 §6.2。
 
 ---
 
@@ -517,18 +560,43 @@ kubectl exec -n kgateway-system deploy/kgateway-envoy -- \
 | `kgateway_llm_request_duration` | LLM 调用端到端延迟直方图 |
 | `kgateway_translation_errors` | 控制面翻译错误, 配置排障 |
 
+### 7.2.1 PromQL 常用查询
+
+```promql
+# 入口 RPS (按 Envoy Pod) + 后端 5xx 比率 (排障核心, 生产应 < 0.1%)
+sum(rate(envoy_http_downstream_rq_total[1m])) by (kubernetes_pod_name)
+sum(rate(envoy_cluster_upstream_rq_5xx[5m])) by (envoy_cluster_name)
+  / clamp_min(sum(rate(envoy_cluster_upstream_rq_total[5m])) by (envoy_cluster_name), 1)
+
+# 活跃上游连接 (容量规划, 决定是否扩 Envoy 副本)
+sum(envoy_cluster_upstream_cx_active) by (envoy_cluster_name)
+
+# LLM 调用速率与 P95 延迟 + token 成本速率 (input/output, 成本告警)
+sum(rate(kgateway_llm_calls_total[5m])) by (provider, model)
+histogram_quantile(0.95, sum(rate(kgateway_llm_request_duration_bucket[5m])) by (le, provider))
+sum(rate(kgateway_llm_tokens_total[5m])) by (direction)
+```
+
+把上述查询配进 Grafana + Alertmanager, 建议至少建两条告警: 后端 5xx 比率 > 1% 持续 5 分钟, 以及 `kgateway_translation_errors` 增长 (配置下发异常)。
+
 ### 7.3 故障排查
 
 | 症状 | 可能原因 | 处理 |
 |------|---------|------|
-| HTTPRoute 配置不生效 | 控制面翻译失败, 看 `kgateway_translation_errors` 与 controller 日志 | 校验 CRD 语法、backendRef 是否存在 |
-| 大量 503 | 后端 Upstream 不可达, 或 Envoy 无健康端点 | 检查 Upstream/Service、配置健康检查 |
-| Envoy OOM | 连接/流式 body 占内存超限 | 调大内存 limit; 排查长连接泄漏 |
-| LLM 调用延迟飙升 | ext_proc 成为瓶颈, 或上游 LLM 自身慢 | 扩 ext_proc 副本; 区分网关延迟与上游延迟 |
-| AI 内容安全误杀 | blockPatterns 过宽 | 收紧规则, 加白名单 |
-| mTLS 握手失败 | 证书过期或 SPIFFE 配置错 | 检查证书有效期与 trust domain |
+| HTTPRoute 配置不生效 | 控制面翻译失败, 看 `kgateway_translation_errors` 与 controller 日志 | 校验 CRD 语法、backendRef/Upstream 是否存在、GatewayClass 是否被认领 |
+| 大量 503 (no healthy upstream) | Upstream 不可达, 或 Envoy 无健康端点 | 检查 Upstream/Service、配置主动健康检查、确认 endpoint 未被 outlier detection 全弹 |
+| Envoy OOM | 连接/流式 body 占内存超限 | 调大内存 limit; 排查长连接/流式泄漏; 降并发或扩副本 |
+| LLM 调用延迟飙升 | ext_proc 成为瓶颈, 或上游 LLM 自身慢 | 扩 ext_proc 副本; 区分网关延迟 (`kgateway_llm_request_duration`) 与上游延迟 |
+| AI filter 超时 | ext_proc 处理时间超过默认 deadline | 调大 `ext_proc` 超时; 收窄 blockPatterns; 评估是否走流式 |
+| 限流风暴 (rate-limit storm) | 全局 rate-limit 后端抖动或 Redis 抖动 | 检查 rate-limit 后端健康; 切本地限流兜底; 排查触发计数异常 |
+| mTLS 握手失败 | 证书过期、SPIFFE trust domain 不匹配、SAN 错 | 检查证书有效期、trust bundle、SAN 与目标 Upstream host |
+| Envoy drain 超时 (滚动卡住) | 长连接/流式不退出, drain 时间过长 | 调小 `drainTimeSeconds`; 客户端配 keepalive; 滚动前主动缩流 |
+| Listener 冲突 (端口不生效) | 多个 Gateway 争同一端口、Route 不能 attach | 看 Gateway `status.conditions` 的 `Conflicted/Accepted`; 收敛监听器所有权 |
+| AI 内容安全误杀 | blockPatterns 过宽、命中正常 prompt | 收紧规则, 加白名单, 看 ext_proc 拒绝日志 |
 
 ### 7.4 升级
+
+Kgateway 升级分两层: 控制面 (Helm chart) 与数据面 (Envoy)。Helm 升级会滚动控制面, xDS 不中断数据面; 但 Envoy 配置变更 (新 xDS) 可能触发 Envoy 热重载或滚动重启, 因此务必先 dry-run 再执行, 并在低峰窗口操作。
 
 ```bash
 # 先看 helm diff, 再滚动升级
@@ -548,21 +616,39 @@ helm upgrade kgateway kgateway/kgateway \
 
 ### 8.1 横向对比
 
-| 维度 | Kgateway | Envoy AI Gateway | Istio | Cilium | Kong (非 CNCF) |
-|------|----------|------------------|-------|--------|----------------|
-| 数据面 | Envoy | Envoy | Envoy | eBPF/Envoy | Nginx/Lua |
-| Gateway API 原生 | 是 (重点) | 是 | 是 | 是 | 部分 |
-| 通用 API 网关 | 是 (强项) | 否 (AI 专用) | 偏 service mesh | 偏 CNI/网络 | 是 |
-| AI 网关能力 | 有 (双模) | 有 (核心) | 弱 | 无 | 有 (插件) |
-| 三合一 (微+集中+AI) | 是 | 否 | 偏 mesh | 否 | 部分 |
-| 成熟度 | 高 (Gloo 血统) | 较新 | 极高 | 高 | 极高 (非 CNCF) |
-| 适合谁 | 要 Envoy + Gateway API + AI + 通用 API 一套搞定 | 只要 AI 流量处理 | 已用 Istio 做 mesh | 要 eBPF 网络与基本 GW | 已用 Kong 生态 |
+| 维度 | Kgateway | Envoy AI Gateway | Istio | Cilium | Kong | APISIX |
+|------|----------|------------------|-------|--------|------|--------|
+| 数据面 | Envoy | Envoy | Envoy | eBPF/Envoy | Nginx+Lua | Nginx+Lua |
+| Gateway API 原生 | 是 (重点) | 是 | 是 | 是 | 部分 | 部分 |
+| 通用 API 网关 | 是 (强项) | 否 (AI 专用) | 偏 service mesh | 偏 CNI/网络 | 是 | 是 |
+| AI 网关能力 | 有 (双模) | 有 (核心) | 弱 | 无 | 插件 | 插件 |
+| 东西向 + 南北向 | 都覆盖 | 仅南北 | 偏东西 mesh | 偏网络 | 偏南北 | 偏南北 |
+| OSS License | Apache-2.0 | Apache-2.0 | Apache-2.0 | Apache-2.0 | Apache-2.0 (CE) | Apache-2.0 |
+| 血统 (Heritage) | Solo.io Gloo | Envoy 社区 | Google/IBM | Isovalent | Kong Inc. | Apache |
+| 成熟度 | 高 (Gloo 血统) | 较新 | 极高 | 高 | 极高 (企业版非 CNCF) | 高 |
+| 适合谁 | Envoy+GW API+AI+通用一套搞定 | 只要 AI 流量 | 已用 Istio mesh | 要 eBPF 网络 | 已用 Kong 生态 | 已用 APISIX 生态 |
 
 ### 8.2 选与不选
 
 **选 Kgateway 当**: 你想要 **Envoy 数据面 + Kubernetes Gateway API 标准 + 通用 API 网关 + AI 网关能力, 且都用一套**; 重视 Gloo 的成熟血统; 团队不想为「普通 API」和「AI 流量」各维护一套网关。
 
 **不选 Kgateway 当**: 你只想要纯 AI 流量处理且极简 → 看 Envoy AI Gateway; 已重度用 Istio service mesh → 直接用 Istio 的 Gateway API 实现; 要 eBPF 级网络性能 → 看 Cilium; 已在 Kong/Nginx 生态深耕 → 不必为了 AI 换底盘。
+
+### 8.3 选型裁定
+
+判断顺序可收敛为一条决策流:
+
+```
+   需要 AI 治理? ──否──► Istio / Cilium / Kong / APISIX (普通网关或 mesh)
+        │是
+   已在 Istio mesh? ──是──► 叠 Envoy AI Gateway
+        │否
+   要统一内外一套? ──是──► Kgateway ✅
+        │否
+   Envoy AI Gateway (纯 AI 出口)
+```
+
+① **是否需要 AI 治理**——不需要则 Istio/Cilium/Kong/APISIX 都行, Kgateway 的 AI 优势用不上; 需要则进入下一步。② **是否已有 service mesh**——已在 Istio 中且只差 AI, 可叠 Envoy AI Gateway; 想统一网关则让 Kgateway 接管南北向。③ **是否要一套覆盖内外**——Kgateway 的差异化正在于此: 同一 Envoy 内核既东西又南北还 AI, 避免「普通网关 + AI 网关 + mesh sidecar」三套数据面并存。血统也影响决策: Kgateway 承自 Gloo, 翻译层与企业特性经多年打磨; Envoy AI Gateway 更轻但只管 AI; Kong/APISIX 走 Nginx+Lua, 与 Envoy 过滤器生态不互通。若痛点是「网关太多、AI 流量没人管、又不想绑死供应商」, Kgateway 是 2026 年最直接的答案。
 
 ---
 

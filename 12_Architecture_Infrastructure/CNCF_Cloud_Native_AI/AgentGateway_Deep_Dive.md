@@ -82,15 +82,15 @@ AgentGateway 起源于 **Higress / Alibaba 社区**,用 **Rust** 实现,已进�
 
 ### 2.1 关键术语
 
-| 概念 | 是什么 |
-|------|--------|
-| **MCP server** | 用 Model Context Protocol 暴露工具的服务器。agent 通过 MCP 客户端连它,列出/调用工具(类比为工具的 gRPC/HTTP 服务端) |
-| **tool(工具)** | agent 可调用的能力单元(查库/发邮件/查库存)。一个 MCP server 可暴露多个 tool |
-| **agent client** | 发起工具调用的一方——某 agent 框架(LangGraph/Autogen/kagent)内嵌的 MCP 客户端,把 AgentGateway 当上游 |
-| **registry(注册表)** | "工具后端清单":地址、协议(MCP/REST)、鉴权、健康状态(类比 Envoy cluster / Nginx upstream) |
-| **policy(策略)** | 声明式规则:谁能调哪个工具、限流多少、参数怎么脱敏、协议怎么转 |
-| **sandbox(沙箱)** | 强约束工具可见性与参数安全的策略层:工具白名单 + 参数脱敏(工具调用的"防火墙") |
-| **protocol translation** | MCP ↔ REST ↔ A2A 双向翻译,让异构后端在 agent 看来都是统一接口 |
+| 概念 | 是什么 | 举例 |
+|------|--------|------|
+| **MCP server** | 用 Model Context Protocol 暴露工具的服务器。agent 通过 MCP 客户端连它,列出/调用工具(类比为工具的 gRPC/HTTP 服务端) | 一个暴露 `search_kb` / `send_email` 工具的 stdio/http 服务 |
+| **tool(工具)** | agent 可调用的能力单元(查库/发邮件/查库存)。一个 MCP server 可暴露多个 tool | `search_kb(q)`、`query_metrics(expr)`、`send_email(to, body)` |
+| **agent client** | 发起工具调用的一方——某 agent 框架(LangGraph/Autogen/kagent)内嵌的 MCP 客户端,把 AgentGateway 当上游 | LangGraph 节点里的 `streamablehttp_client("http://agentgateway.../mcp")` |
+| **registry(注册表)** | "工具后端清单":地址、协议(MCP/REST)、鉴权、健康状态(类比 Envoy cluster / Nginx upstream) | `mcp-kb → http://kb-mcp:8080`、`rest-metrics → http://metrics:9090` |
+| **policy(策略)** | 声明式规则:谁能调哪个工具、限流多少、参数怎么脱敏、协议怎么转 | `search_kb: 100/m`、`send_email: 10/m + quota 1000/d` |
+| **sandbox(沙箱)** | 强约束工具可见性与参数安全的策略层:工具白名单 + 参数脱敏(工具调用的"防火墙") | `allowTools: [search_kb]` + `redact: { inArgs: [token] }` |
+| **protocol translation** | MCP ↔ REST ↔ A2A 双向翻译,让异构后端在 agent 看来都是统一接口 | 把 Prometheus HTTP `/api/v1/query` 包成 MCP 工具 `query_metrics` |
 
 ### 2.2 调用拓扑
 
@@ -114,6 +114,31 @@ AgentGateway 起源于 **Higress / Alibaba 社区**,用 **Rust** 实现,已进�
 ```
 
 > 关键洞察:agent 只看到一个"统一 MCP 端点",背后是异构后端的真实集合——**把工具治理从 agent 代码里抽出来,下沉到网关**。
+
+### 2.3 一次工具调用的生命周期
+
+从 agent 视角,一次 `tools/call` 在 AgentGateway 内部依次穿过六个治理阶段,每个阶段都对应一项核心能力(接入鉴权 / 工具发现 / 策略限流 / 沙箱脱敏 / 路由转换 / 转发后端),再经第七阶段把脱敏后的结果与可观测数据回程:
+
+```
+   agent 发起                AgentGateway 内部治理阶段                         后端执行
+   ─────────                ───────────────────────────────────              ─────────
+
+   tools/call ──► ①接入鉴权 ─► ②工具发现 ─► ③策略/限流 ─► ④沙箱脱敏 ─► ⑤路由转换 ─► ⑥转发后端 ──► MCP/REST
+        ▲          (API key/     (registry       (per-tool      (allow-      (负载均衡/    (结果过滤/
+        │           OAuth)        + 白名单)        rate/quota)    list/redact) 协议翻译)     审计/trace)
+        │                                                                     │
+        └──────────────── ⑦ 响应回程:脱敏结果 + 指标/trace 上报 ◄────────────────────────┘
+```
+
+| 阶段 | 输入 | 输出 | 失败兜底 |
+|------|------|------|----------|
+| ① 接入鉴权 | agent 的 `X-Agent-Token` | 调用方身份 + 关联 policy | 身份无效 → 401 拒绝 |
+| ② 工具发现 | `tools/list` 请求 | 聚合后的全量工具清单(按白名单过滤) | 单后端宕机不影响清单完整性 |
+| ③ 策略/限流 | tool name + agent id | 放行 / 拒绝,并扣减配额 | 超限 → 429 |
+| ④ 沙箱脱敏 | `args` JSON | 擦除敏感字段后的 args | 含 `block` 字段 → 400 |
+| ⑤ 路由转换 | 目标后端 + 协议 | 选定副本 + 译好的请求 | 副本故障自动 failover |
+| ⑥ 转发后端 | HTTP / MCP 请求 | 后端原始响应 | 超时/5xx 重试或降级 |
+| ⑦ 响应回程 | 后端响应 | 脱敏结果 + trace/metrics/审计 | 全程审计日志落盘 |
 
 ---
 
@@ -285,21 +310,54 @@ LangGraph / Autogen / kagent 的 MCP client 接入方式相同——这是 Agent
 
 ## 5. 快速开始
 
-目标:注册 2 个后端(MCP server + REST API),写一份策略(限流 + 白名单),让一个 agent 通过 AgentGateway 调它们,并看到可观测数据。
+目标:注册 2 个后端(MCP server + REST API),写一份策略(限流 + 白名单),让一个 agent 通过 AgentGateway 调它们,并看到可观测数据。完整流程五步:**安装**(Helm) → **注册后端 + 写策略**(rate-limit / allow-list / 脱敏) → **指向 AgentGateway**(换 MCP client endpoint) → **触发调用**(`tools/list` + `search_kb`) → **观察 trace**(per-tool 指标 + 端到端链路)。
 
-### 5.1 应用配置
+### 5.1 安装 AgentGateway
+
+```bash
+helm repo add agentgateway https://agentgateway.github.io/agentgateway
+helm install agentgateway agentgateway/agentgateway \
+  --namespace agentgateway-system --create-namespace \
+  --set dataPlane.replicaCount=2
+kubectl wait --for=condition=ready pod -l app=agentgateway-dp \
+  -n agentgateway-system --timeout=120s
+```
+
+### 5.2 注册后端 + 写策略
+
+把"1 个 MCP server + 1 个 REST 后端"与"限流 + 白名单 + 脱敏"策略写进 `agentgateway-config.yaml`(限流:`search_kb` 100/m、`query_metrics` 60/m;白名单只放三个工具;入参擦 `token`/`apiKey`/`password`,返回擦 `ssn`/`creditCard`)。紧凑写法如下(展开版见 §4.3):
+
+```yaml
+registry:
+  servers:
+    - name: mcp-kb
+      protocol: MCP
+      transport: streamable-http
+      endpoints: ["http://kb-mcp.search.svc:8080"]
+      auth: { toBackend: { type: APIKey, header: "X-KB-Key", secretRef: { name: kb-key, key: key } } }
+      healthCheck: { path: /health, interval: 10s }
+    - name: rest-metrics
+      protocol: REST
+      endpoints: ["http://metrics-api.monitoring.svc:9090"]
+      translation: { exposeAs: MCP, toolName: query_metrics }
+      auth: { toBackend: { type: OAuth2, tokenURL: "http://idp.svc/token", clientId: agw, clientSecretRef: { name: idp-secret, key: secret } } }
+policies:
+  - name: agent-default
+    ingressAuth: { type: APIKey, header: "X-Agent-Token", secretRef: { name: agent-tokens, key: tokens } }
+    rateLimit: { rules: [ { tool: search_kb, queries: 100/m }, { tool: query_metrics, queries: 60/m }, { tool: send_email, queries: 10/m } ] }
+    sandbox: { allowTools: [search_kb, query_metrics, send_email], redact: [ { inArgs: [token, apiKey, password] }, { inResult: [ssn, creditCard] } ] }
+```
+
+下发(配置热生效,无需重启数据面):
 
 ```bash
 kubectl apply -f agentgateway-config.yaml -n agentgateway-system
-# 配置热下发,无需重启数据面
 kubectl logs -n agentgateway-system deploy/agentgateway-dp | grep "config applied"
 ```
 
-`agentgateway-config.yaml` 即 §4.3 的配置(2 个后端 + 1 个策略)。
+### 5.3 指向 AgentGateway 并触发调用
 
-### 5.2 启动一个 agent 试跑
-
-用最小 MCP 客户端模拟 agent 调用:
+agent 侧无需改业务逻辑,只要把 MCP client 的 endpoint 换成网关(Python 写法见 §4.4)。这里用最小 MCP 客户端 `mcplight` 模拟一次调用:
 
 ```bash
 export AGENTGW_TOKEN=$(kubectl get secret agent-tokens -n agentgateway-system -o jsonpath='{.data.tokens}' | base64 -d)
@@ -314,7 +372,7 @@ mcplight call http://agentgateway.agentgateway-system.svc/mcp \
   --header "X-Agent-Token: $AGENTGW_TOKEN"
 ```
 
-### 5.3 观察调用链与可观测
+### 5.4 观察调用链与可观测
 
 ```bash
 # 1) 端到端 trace: agent → AgentGateway → MCP server A 的耗时分解
@@ -337,7 +395,7 @@ curl -s http://agentgateway.agentgateway-system.svc:9090/metrics | grep agentgat
 
 整条链路里 **agent 只感知到一次"调用 search_kb"**,背后的鉴权/限流/脱敏/路由/协议转换/trace 全由 AgentGateway 完成——这就是集中式工具治理。
 
-### 5.4 验证沙箱生效
+### 5.5 验证沙箱生效
 
 尝试调一个不在白名单的危险工具,应被拒绝:
 
@@ -353,6 +411,29 @@ mcplight call http://agentgateway.agentgateway-system.svc/mcp \
 ---
 
 ## 6. 生产配置
+
+### 6.0 配置参数总览
+
+下表把生产环境最常用的配置域与关键参数汇总成 checklist,作为书写/审阅 `agentgateway.yaml` 时的参照(各项的含义与样例在 §6.1–§6.6 展开):
+
+| 配置域 | 关键参数 | 说明 | 生产建议 |
+|--------|----------|------|----------|
+| tool registry | `registry.servers[].name/protocol/transport/endpoints` | 后端标识、协议、传输、地址列表 | MCP 优先 `streamable-http`;多副本 ≥2 |
+| tool registry | `healthCheck.path/interval` | 主动探活路径与频率 | `/health`,10–30s |
+| per-tool rate limit | `rateLimit.rules[].queries` | 每分钟调用上限 | 按后端容量设 |
+| per-tool rate limit | `rateLimit.rules[].quota` | 周期配额(日/月) | 高成本/有副作用工具必设 |
+| per-tool rate limit | `rateLimit.perAgent` | 按 agent 分别计数 | 开启,使超配额可归属 |
+| per-tool rate limit | `rateLimit.default` | 未列出工具的兜底限流 | 必设,防漏网工具被刷爆 |
+| auth(入口) | `ingressAuth.type=APIKey/header` | agent→网关的 API key 鉴权 | 必开,token 走 secretRef(OAuth2 用于多租户) |
+| auth(后端) | `toBackend.type=APIKey/header/secretRef` | 网关→后端注入 API key | 密钥绝不进 agent 上下文 |
+| auth(后端) | `toBackend.type=OAuth2/tokenURL/scopes/clientSecretRef` | 网关托管 OAuth token 刷新 | token 缓存 + 自动续期 |
+| sandbox | `sandbox.allowTools` | 工具白名单(默认拒绝) | 最小权限,只放必要工具 |
+| sandbox | `sandbox.redact[].inArgs` | 入参字段脱敏 | `mask` 密钥/口令类字段 |
+| sandbox | `sandbox.redact[].inResult` / `strategy: block` | 返回脱敏 / 含字段直接拒绝 | 防 secret 回流;信用卡/身份证用 block |
+| protocol translation | `translation.exposeAs/toolName/mapping` | REST/A2A 包成 MCP 工具 | mapping 用 JSONPath 提取结果 |
+| TLS | 入口 TLS / `toBackend.tls` mTLS | 双向加密 | 证书走 cert-manager 自动轮换 |
+| RBAC | `policies[].principals` | 哪个 agent 适用该 policy | 一个 agent 一份最小权限策略 |
+| retry | `retry.attempts/onStatus` | 重试次数与触发状态码 | 5xx/超时重试,4xx 不重试 |
 
 ### 6.1 工具后端注册表(生产要点)
 
@@ -432,6 +513,32 @@ translation:
 | 副本数 | 数据面 ≥2,Pod 反亲和 + PDB(`minAvailable: 1`) |
 | 资源 | Rust 数据面低内存(通常 256Mi 起),按 RPS 调 cpu limit |
 | 配置版本化 | 全部声明式 YAML 进 Git,走 GitOps(见 [[CNCF_Cloud_Native_AI/kagent_Deep_Dive]] 的 GitOps 模式) |
+
+### 6.7 多 agent 多工具生产配置示例
+
+两个 agent(support-bot 全工具、analytics-bot 只读)共享同一份 registry、各用独立 policy,体现"最小权限 + 差异化配额":
+
+```yaml
+registry:
+  servers:
+    - { name: mcp-kb,       protocol: MCP,  endpoints: ["http://kb-mcp:8080"] }
+    - { name: rest-metrics, protocol: REST, endpoints: ["http://metrics:9090"], translation: { exposeAs: MCP, toolName: query_metrics } }
+    - { name: agent-b,      protocol: A2A,  endpoints: ["http://agent-b:9000"], translation: { exposeAs: MCP, toolName: ask_agent_b } }
+
+policies:
+  - name: support-bot-policy          # 全工具, 较紧配额
+    principals: ["support-bot"]
+    ingressAuth: { type: APIKey, header: "X-Agent-Token" }
+    rateLimit: { default: { queries: 500/m }, rules: [ { tool: send_email, queries: 10/m, quota: 1000/d } ] }
+    sandbox: { allowTools: [search_kb, query_metrics, send_email, ask_agent_b], redact: [ { inArgs: [token], strategy: mask } ] }
+  - name: analytics-bot-policy        # 只读, 不给发邮件 / 调 agent_b
+    principals: ["analytics-bot"]
+    ingressAuth: { type: APIKey, header: "X-Agent-Token" }
+    rateLimit: { default: { queries: 1000/m } }
+    sandbox: { allowTools: [query_metrics, search_kb] }
+```
+
+`principals` 把 policy 绑到具体 agent——同一份 registry 上,不同 agent 看到的工具集与配额各不相同,这是多 agent 共栈时的安全边界。
 
 ---
 

@@ -97,6 +97,21 @@ CNCF 归属: Landscape → AI Native Infra / Inference
                              ▼ 底层推理引擎 Pod (vLLM / SGLang / ...)
 ```
 
+**CRD 字段速查**（关键字段 → 职责，按 CRD 分组）：
+
+| CRD | 关键字段 | 职责 |
+|-----|---------|------|
+| **Model** | `source.modelID` / `.family` / `.revision` | HuggingFace repo、模型族、权重版本 |
+| | `source.quantization` (none/awq/gptq/fp8) | 量化方案 → 注入 `--quantization` |
+| | `runtime.name` (vllm/sglang/tgi/ollama/trt-llm) | 选用哪个引擎启动模板 |
+| | `runtime.args` / `.env` | 覆盖默认启动参数（用户优先级最高） |
+| **OpenAIServer** | `modelClaim.name` | 引用一个 Model |
+| | `replicas` / `containerSpec.resources` | 副本数 / GPU 申请 |
+| | `storage.pvcName` | 挂载权重缓存 PVC |
+| | `rollout` (Canary / trafficWeight) | 灰度策略 |
+| **Backend** | `modelClaim.name` / `expose` | 引用 Model，暴露引擎原生端口（非 OpenAI 协议） |
+| Runtime（内置模板） | —（非用户 CRD） | 每引擎一套「image + 默认 args」，webhook 查表注入 |
+
 ### 2.2 Model-then-Deploy（先声明模型，再声明部署）
 
 这是 llmaz 区别于裸 Deployment 的核心范式：
@@ -124,6 +139,22 @@ Model.spec
        ├─ name              (vllm / sglang / tgi / ollama / trt-llm)
        ├─ version           (引擎镜像 tag)
        └─ args / env        (覆盖默认启动参数)
+```
+
+### 2.3 运行时引擎抽象：Webhook 注入
+
+控制器逻辑引擎无关——引擎差异收敛在 mutating webhook 的模板查表，新增引擎只需注册一套模板，controller 零改动：
+
+```
+OpenAIServer ─admission─▶ Mutating Webhook
+  (不含引擎细节)          ① 读 Model.spec.runtime.name
+                          ② 查模板表 → image + 默认 args
+                             (vllm: --model,$MODEL_ID,--quantization ; sglang: ...)
+                          ③ Model.runtime.args / .env 覆盖默认 (用户优先)
+                          ④ PATCH PodSpec (image/args/env/healthcheck)
+                              │
+                              ▼
+                 controller 渲染 Deployment (引擎无关)
 ```
 
 ---
@@ -154,9 +185,19 @@ Model.spec
                           ┌──────────────────┐
                           │ OpenAI Gateway    │ ← /v1/chat /v1/comp
                           │ └─ InferencePool  │
-                          └────────┬──────────┘
-                                   ▼  客户端 (curl / SDK)
+                           └────────┬──────────┘
+                                    ▼  客户端 (curl / SDK)
 ```
+
+**组件职责一览**：
+
+| 组件 | 职责 | 关键行为 |
+|------|------|----------|
+| **controller-manager** | 调和 CRD，物化为工作负载 | watch Model/OpenAIServer/Backend；生成 Deployment + Service + HTTPRoute；上报 `status.conditions` |
+| **Mutating Webhook** | 引擎参数注入 | admission 阶段按 `Model.runtime` 注入 image/args/env/健康检查，使 controller 引擎无关 |
+| **OpenAI Gateway** | OpenAI 兼容前端 | 暴露 `/v1/chat/completions` `/v1/completions` `/v1/models`；多副本负载均衡；对接 InferencePool |
+| **Runtime Pods** | 实际推理 | vLLM/SGLang/TGI/Ollama/TensorRT-LLM 容器；initContainer 拉权重到共享 PVC |
+| **LeaderWorkerSet** | 多卡张量并行（TP>1） | 一 leader + N worker Pod，worker 复用 leader 启动参数与网络，支撑 TP=2/4/8 |
 
 ### 3.2 Model 如何被「物化」成 Deployment
 
@@ -169,6 +210,21 @@ Model.spec
      • quantization  注入 --quantization 参数
 4. 渲染 Deployment + Service + OpenAI Gateway 路由
 5. 上报 status.conditions (ModelsReady / Progressing / Available)
+```
+
+把上面五步串成一条「声明 → 注入 → 物化 → 路由」的流水线：
+
+```
+ declare              inject                materialize              route
+──────────────────────────────────────────────────────────────────────────────
+ Model CRD ─┐
+            │                                                   InferencePool
+ OpenAIServer┼─▶ webhook ─▶ controller ─▶ Deployment ─▶ Service ──▶ HTTPRoute
+  (claim)   │  注入引擎     渲染 Pod      initContainer  /v1/chat     ↓
+            │  image/args   + 挂载 PVC    下载权重       负载均衡    curl
+            ▼
+   status.conditions:  ModelsReady ─▶ Progressing ─▶ Available
+   (任一为 False 都会阻塞网关对外服务)
 ```
 
 ### 3.3 InferencePool 智能路由
@@ -248,6 +304,8 @@ helm upgrade llmaz llmaz/llmaz -n llmaz-system -f values.yaml
 
 ## 5. 快速开始
 
+本节给出三个递进示例：(1) 从零部署一个 HuggingFace 模型并用 OpenAI API 调用（5.1–5.4）；(2) 把引擎从 vLLM 换成 SGLang——只改一个字段（5.5）；(3) 在基座模型上挂载 LoRA 适配器，多适配器共用一份权重（5.6）。全程五步：① helm install llmaz（§4.2）→ ② apply Model CRD → ③ apply OpenAIServer → ④ 暴露网关（port-forward / HTTPRoute）→ ⑤ curl `/v1/chat/completions`。
+
 ### 5.1 声明一个 Model
 
 ```yaml
@@ -311,6 +369,68 @@ apply OpenAIServer → 渲染 Deployment → initContainer 下载权重到 PVC�
 Available=True     → OpenAI Gateway 就绪
 curl /v1/chat      → Gateway 路由到 Pod → 返回 JSON
 ```
+
+### 5.5 示例 2: 一键切换引擎 vLLM → SGLang
+
+模型权重不变，只把 `runtime.name` 从 `vllm` 改成 `sglang`，webhook 自动换上 SGLang 镜像与启动模板（Model + 部署一并 apply）：
+
+```yaml
+apiVersion: inference.llmaz.io/v1alpha1
+kind: Model
+metadata: { name: qwen2.5-7b-sglang }
+spec:
+  source: { family: Qwen2.5, modelID: Qwen/Qwen2.5-7B-Instruct }
+  runtime: { name: sglang }          # 仅此一处: vllm → sglang
+---
+apiVersion: inference.llmaz.io/v1alpha1
+kind: OpenAIServer
+metadata: { name: qwen-sglang }
+spec:
+  modelClaim: { name: qwen2.5-7b-sglang }
+  replicas: 2
+  containerSpec:
+    resources: { limits: { nvidia.com/gpu: "1" } }
+    args: [--tensor-parallel-size=1, --mem-fraction-static=0.88]
+```
+
+```bash
+kubectl apply -f sglang.yaml
+curl http://localhost:8000/v1/chat/completions -d '{"model":"qwen2.5-7b-sglang","messages":[{"role":"user","content":"hi"}]}'
+```
+
+要点：仅 `runtime.name` 一处变更；权重已在 PVC 缓存，切换引擎无需重新下载；SGLang 的 RadixAttention 在多轮 / 结构化输出场景吞吐优势明显（见 [[09_Deployment_Inference/SGLang_Deep_Dive]]）。
+
+### 5.6 示例 3: 部署 LoRA 适配器（多适配器共用基座）
+
+基座不变，借 vLLM 的 LoRA 能力在一个 Pod 内同时服务多个适配器，OpenAI 请求的 `model` 字段选基座或适配器：
+
+```yaml
+apiVersion: inference.llmaz.io/v1alpha1
+kind: Model
+metadata: { name: qwen2.5-7b-lora }
+spec:
+  source: { family: Qwen2.5, modelID: Qwen/Qwen2.5-7B-Instruct }
+  runtime:
+    name: vllm
+    args: [--enable-lora, --max-loras=4, --max-lora-rank=64, --lora-modules, legal-lora=/models/legal-lora, code-lora=/models/code-lora]
+---
+apiVersion: inference.llmaz.io/v1alpha1
+kind: OpenAIServer
+metadata: { name: qwen-lora }
+spec:
+  modelClaim: { name: qwen2.5-7b-lora }
+  replicas: 1
+  containerSpec:
+    resources: { limits: { nvidia.com/gpu: "1" } }
+  storage: { pvcName: model-cache }
+```
+
+```bash
+# model 字段填基座名(qwen2.5-7b-lora)→基座；填 adapter 名(legal-lora)→该适配器
+curl http://localhost:8000/v1/chat/completions -d '{"model":"legal-lora","messages":[{"role":"user","content":"起草租赁合同要点"}]}'
+```
+
+要点：`--enable-lora` 开启多 LoRA，`--lora-modules` 注册 `name→path` 映射（adapter 权重预先放入 PVC）；客户端只改 `model` 字段即可在基座与各适配器间切换，无需为每个适配器起独立副本。
 
 ---
 

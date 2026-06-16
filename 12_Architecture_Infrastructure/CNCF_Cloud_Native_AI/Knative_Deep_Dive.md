@@ -110,6 +110,18 @@ Knative Serving CRD 全景
 
 **对象关系**：`ksvc` 自动创建 `Configuration` + `Route`；每次 `spec.template` 变更产出不可变 `Revision`；`Route` 按权重把流量分到各 Revision（见 3.2 流量切分图）。
 
+**CRD 字段速查表**（关键字段 + 职责）：
+
+| CRD | 关键字段 | 职责 |
+|-----|---------|------|
+| **Service** (`ksvc`) | `spec.template`（容器/资源/注解）；`spec.traffic[]`（流量切分） | 用户唯一入口；template 变更触发新 Revision，traffic 定义灰度 |
+| **Configuration** | `spec.template.spec.containers[]`；`spec.template.spec.containerConcurrency` | 声明「跑什么」——镜像、资源（含 GPU）、并发硬限 |
+| **Revision** | `status.conditions[Ready]`；自动关联 `PodAutoscaler` | 不可变版本；每个 Revision 自动生成一个 Deployment + PA |
+| **Route** | `spec.traffic[].revisionName` + `percent` + `tag` | 流量按权重分流到 Revision；tag 生成独立子域名供 canary 访问 |
+| **PodAutoscaler** (`PA`) | `spec.scaleTargetRef`；`spec.minScale/maxScale`；`spec.containerConcurrency`；`spec.class`(kpa/hpa) | 内部 CRD，KPA 据此算期望副本并写回 `status.desiredPodCount` |
+
+> 记忆口诀：`Service` 管「怎么发布」，`Configuration` 管「跑什么」，`Revision` 是「不可变快照」，`Route` 管「流量怎么走」，`PodAutoscaler` 管「副本几个」——五者各司其职，由 controller 自动调和。
+
 ### 2.1 逐个概念
 
 - **Service (`ksvc`)**：最高层抽象。绝大多数场景只需写一个 `ksvc`，它会自动生成并管理 Configuration + Route。改 `spec.template` 即触发新版本。
@@ -136,8 +148,25 @@ Knative Serving CRD 全景
  稳态: Pod 数 = ceil(并发 / target)
                          │ 并发持续为 0 (持续 window, 默认 ~30s)
                          ▼
-                   KPA 缩容 → 副本 0 (scale-to-zero)
+                    KPA 缩容 → 副本 0 (scale-to-zero)
 ```
+
+下面是带**时间轴与阶段标注**的完整生命周期（以一次「营业 → 闲时 → 归零 → 再唤醒」为例）：
+
+```text
+ T=0s      ACTIVE          Pod=3, 并发=12, target=4 (稳态)
+ T+10s     请求结束        并发 → 0, 进入 IDLE
+ T+15s     IDLE            Pod 仍=3; stable-window(60s) + grace(30s) 开始计时
+ T+70s     宽限耗尽        ──► SCALE-TO-ZERO: KPA 缩副本→0, GPU 释放, Pod=0
+ T+120s    新请求到达      客户端 ─► Kourier ─► (副本=0) ─► Activator
+ T+121s    ACTIVATOR HOLD  挂起请求(不报错) + 回调 KPA: 期望副本 0→1
+           WAKE POD        调度 Pod → 分 GPU → vLLM 载入权重 (主要 cold start)
+ T+135s    Pod Ready       readinessProbe 通过, Queue-Proxy 就绪
+ T+136s    FORWARD         Activator 转发挂起的请求给新 Pod
+ T+137s    ACTIVE          请求返回客户端, 回到稳态
+```
+
+> 调用方感受到的「慢」= `T+120s → T+137s`（示例约 17s）。实际 7B 模型常为 30s~2min，70B 多卡 3~10min。可调项：缩短 WAKE POD（权重 PVC 预拉 / 量化），或直接跳过归零（`min-scale:1`）。
 
 两个关键阈值由注解决定：`target`（每 Pod 期望并发，超出即扩容）与 scale-to-zero 的空闲窗口（`scale-to-zero-grace-period` / `stable-window`）。对 LLM，cold start 主要耗时在**加载模型权重到 GPU 显存**（几 GB~上百 GB），可达数十秒到数分钟，是生产调优的重点。
 
@@ -370,18 +399,28 @@ time curl -s $URL/v1/chat/completions ...
 
 ### 6.1 弹性注解速查表
 
-| 注解 | 作用 | 典型值 (LLM) |
-|------|------|-------------|
-| `autoscaling.knative.dev/class` | 扩缩器类型 | `kpa.autoscaling.knative.dev`（请求驱动）；`hpa.*` 走 CPU/内存 |
-| `autoscaling.knative.dev/min-scale` | 最小副本 | `1`（保活避冷启动）/ `0`（开 scale-to-zero） |
-| `autoscaling.knative.dev/max-scale` | 最大副本 | GPU 总数上限，防超卖 |
-| `autoscaling.knative.dev/target` | 每 Pod 期望并发 | 依 GPU 吞吐设（2~10）；配合 `target-utilization: 0.7~0.8` |
-| `autoscaling.knative.dev/window` | 扩缩观测窗口 | `60s`（默认），突发流量可调 `30s` |
-| `autoscaling.knative.dev/stable-window` / `panic-window` | 稳定 / 恐慌窗口 | `60s` / `10s`（恐慌倍率 `panic-threshold-percentage: 200`） |
-| `autoscaling.knative.dev/scale-to-zero-pod-retention-period` | Pod 归零前保留时长 | `30s`~`5m`（短=省 GPU，长=抗抖动） |
-| `serving.knative.dev/progress-deadline` | 冷启动就绪宽限 | LLM 建议 `300s`~`900s` |
+下面列出 LLM 场景最常用的扩缩/服务注解与 spec 字段（共 16 项），按「弹性 / 归零 / 就绪 / 容器」分组：
 
-> 注：默认容器并发由 ConfigMap `config-defaults` 的 `container-concurrency-target-default` 决定；旧名 `serving.knative.dev/target` 同义。
+| 配置项 | 类型 | 作用 | 典型值 (LLM) |
+|--------|------|------|-------------|
+| `autoscaling.knative.dev/class` | 注解 | 扩缩器类型 | `kpa.autoscaling.knative.dev`（请求驱动）；`hpa.*` 走 CPU/内存 |
+| `autoscaling.knative.dev/min-scale` | 注解 | 最小副本 | `1`（保活避冷启动）/ `0`（开 scale-to-zero） |
+| `autoscaling.knative.dev/max-scale` | 注解 | 最大副本 | GPU 总数上限，防超卖（如 `4`） |
+| `autoscaling.knative.dev/target` | 注解 | 每 Pod 期望并发（软限，触发扩容） | 依 GPU 吞吐设（2~10） |
+| `autoscaling.knative.dev/target-utilization-percentage` | 注解 | target 的打折系数，留扩容余量 | `70`~`80`（默认 70） |
+| `autoscaling.knative.dev/initial-scale` | 注解 | Revision 首次创建时的初始副本 | `1`（默认），冷启动后即就绪 |
+| `autoscaling.knative.dev/window` | 注解 | 扩缩聚合观测窗口 | `60s`（默认）；突发可调 `30s` |
+| `autoscaling.knative.dev/stable-window` | 注解 | 稳态判定窗口（决定是否缩容/归零） | `60s`（默认） |
+| `autoscaling.knative.dev/panic-window` | 注解 | 恐慌窗口（突发快速扩容） | `10s`（默认，配合 panic-threshold） |
+| `autoscaling.knative.dev/panic-threshold-percentage` | 注解 | 进入恐慌模式的观测/期望比 | `200`（默认 2 倍即恐慌扩容） |
+| `autoscaling.knative.dev/scale-to-zero-pod-retention-period` | 注解 | 最后一次请求后 Pod 保留时长 | `30s`~`5m`（短=省 GPU，长=抗抖动） |
+| `autoscaling.knative.dev/scale-to-zero-grace-period` | 注解 | 归零前的最小宽限（stable-window 下限） | `30s`（默认），需 ≤ stable-window |
+| `serving.knative.dev/progress-deadline` | 注解 | Revision 就绪宽限；超时判 Ready 失败 | LLM 建议 `300s`~`900s`（权重加载） |
+| `serving.knative.dev/enable-service-links` | 注解 | 是否注入 K8s service env（`*_SERVICE_HOST`） | `false`（避免 env 膨胀、加快启动） |
+| `spec.template.spec.containerConcurrency` | spec | 单 Pod 硬并发上限（超出在 Queue-Proxy 排队） | `6`~`10`；建议 > target |
+| `containers[].resources.limits.nvidia.com/gpu` | spec | GPU 限额（驱动 device plugin 分配） | `1`（单卡）/ `4`（多卡 TP） |
+
+> 注：`target` 的全局默认值在 ConfigMap `config-defaults` 的 `container-concurrency-target-default`；旧名 `serving.knative.dev/target` 已废弃，统一用 `autoscaling.knative.dev/target`。
 
 ### 6.2 GPU 资源与显存
 
@@ -481,6 +520,61 @@ spec:
 
 `containerConcurrency` 是**硬限**（Queue-Proxy 强制排队），`target` 是**软限**（触发扩容）。LLM 场景建议 `target < containerConcurrency`，给扩容留出反应时间，避免突发流量击穿单 Pod。
 
+### 6.6 生产级 LLM Service 完整示例
+
+下面是一个「营业时段常驻、带 GPU、就绪宽限充分、对新模型做金丝雀」的生产级 `ksvc`，集中演示上面所有注解的协同：
+
+```yaml
+# qwen-prod.yaml —— 营业时段 min-scale:1 保活 + GPU + canary 到 14B
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata: { name: qwen-prod, namespace: default }
+spec:
+  template:
+    metadata:
+      name: qwen-prod-v2
+      annotations:
+        autoscaling.knative.dev/min-scale: "1"
+        autoscaling.knative.dev/max-scale: "4"
+        autoscaling.knative.dev/target: "4"
+        autoscaling.knative.dev/target-utilization-percentage: "75"
+        serving.knative.dev/progress-deadline: "900s"
+    spec:
+      timeoutSeconds: 300
+      containerConcurrency: 6
+      nodeSelector: { nvidia.com/gpu.present: "true" }
+      containers:
+        - name: vllm
+          image: vllm/vllm-openai:latest
+          args: ["--model=Qwen/Qwen2.5-14B-Instruct", "--tensor-parallel-size=1"]
+          env:
+            - name: HUGGING_FACE_HUB_TOKEN
+              valueFrom: { secretKeyRef: { name: hf-token, key: token } }
+          resources:
+            limits:   { nvidia.com/gpu: "1", memory: 48Gi }
+            requests: { nvidia.com/gpu: "1", memory: 32Gi }
+          readinessProbe:
+            httpGet: { path: /health, port: 8000 }
+            initialDelaySeconds: 60
+            failureThreshold: 60
+  traffic:
+    - { revisionName: qwen-prod-v1, percent: 90, tag: stable }
+    - { revisionName: qwen-prod-v2, percent: 10, tag: canary }
+```
+
+> 关键点：`min-scale:1` 让核心模型永不归零（无 cold start）；`progress-deadline:900s` + `failureThreshold:60` 给 14B 权重加载留足时间；`traffic` 块把 10% 流量引到 v2 做金丝雀。非营业时段可用脚本把 `min-scale` 改回 `0` 释放 GPU。
+
+### 6.7 冷启动缓解 Playbook
+
+当 `min-scale:0` 必须开（闲时省 GPU）但又要控制 cold start，按以下顺序叠加（4 种手段，由简到繁）：
+
+1. **保活预热 (`min-scale:1`)**：核心高 QPS 模型永远留 1 热副本——最有效、最简单，代价是一张常驻 GPU；仅低 QPS / 辅助模型开 scale-to-zero。
+2. **Keep-alive pinger**：用 CronJob 或轻量 sidecar，每隔 `< scale-to-zero-grace-period`（如 20s）打一次 `/v1/models`，刷新「最后请求时间」使 Pod 保持 IDLE 但不归零。适合白天波动、夜间偶发。
+3. **Activator 超时对齐**：客户端 `timeout`、Knative `timeoutSeconds`、`progress-deadline` 三者递增对齐（`progress-deadline ≥ 加载时间`，`timeoutSeconds ≥ progress-deadline`），探针 `failureThreshold` 调大，否则 Activator 先于 Pod 就绪返回 503。
+4. **init-container 预拉权重**：见 6.3——模型从对象存储拷到共享 PVC，主容器本地卷载入，省掉公网下载（分钟级→秒级）。
+
+> 经验法则：冷 start 预算 = `progress-deadline`。先用 1 个请求实测 WAKE POD 耗时，再设 `progress-deadline` 留 30% 余量；超出预算的模型一律 `min-scale:1` 保活。
+
 ---
 
 ## 7. 运维与可观测
@@ -568,18 +662,19 @@ kubectl rollout status deploy/controller -n knative-serving
 
 ### 8.1 Knative vs 同类弹性方案
 
-| 维度 | **Knative Serving** | raw Deployment + HPA | **KServe** (裹 Knative) | KEDA |
-|------|---------------------|----------------------|-------------------------|------|
-| **定位** | 通用 Serverless 弹性层 | K8s 原生 | 标准化推理 CRD | 事件/指标驱动扩缩 |
-| **scale-to-zero** | 原生一等公民 | 无（minReplicas≥1） | 继承 Knative，原生支持 | 支持（需配 idle） |
-| **扩缩信号** | 请求并发 (KPA) | CPU/内存/自定义 | KPA + 推理指标 | 多源（Kafka/Prom/...） |
-| **流量切分 / canary** | Route 原生百分比 | 需 Istio/Argo Rollouts | 继承 Knative + InferenceGraph | 无（仅扩缩） |
-| **Revision / 回滚** | 不可变快照，秒级回滚 | 手动镜像 tag 管理 | 继承 Knative | 无 |
-| **推理特化** | 无（通用） | 无 | 有（多框架/指标/存储） | 无 |
-| **学习曲线** | 中 | 低 | 中（要懂 Knative） | 低 |
-| **冷启动 (Activator)** | 内置、对调用方无感 | 不适用 | 继承 Knative | 无统一唤醒层 |
-| **GPU 友好** | 原生 `nvidia.com/gpu` | 原生 | 原生 + 推理优化 | 原生 |
-| **CNCF 状态** | **Graduated 毕业级** | K8s 内置 | Incubating | Incubating |
+| 维度 | **Knative Serving** | raw Deployment + HPA | **KServe** (裹 Knative) | KEDA | Fission |
+|------|---------------------|----------------------|-------------------------|------|---------|
+| **定位** | 通用 Serverless 弹性层 | K8s 原生工作负载 | 标准化推理 CRD | 事件/指标驱动扩缩 | 函数级 FaaS |
+| **scale-to-zero 支持** | 原生一等公民 | 无（minReplicas≥1） | 继承 Knative，原生支持 | 支持（需配 idle） | 原生（函数即按需） |
+| **并发驱动扩缩 (KPA)** | 原生 | 否（CPU/自定义） | 继承 Knative | 否（事件/指标） | 否（每请求新容器） |
+| **GPU autoscaling** | 原生 `nvidia.com/gpu` + target 并发 | 原生但靠 CPU 信号 | 原生 + 推理专属指标 | 原生（需自定义 scaler） | 较弱（函数不擅长 GPU） |
+| **canary / 流量切分** | Route 原生百分比 | 需 Istio/Argo Rollouts | 继承 + InferenceGraph | 无（仅扩缩） | 有限（路由层） |
+| **event-driven** | Eventing 模块（解耦可选） | 需外部接线 | 支持（消息/Storage） | 核心能力（Kafka/Prom） | HTTP 触发为主 |
+| **Revision / 回滚** | 不可变快照，秒级回滚 | 手动镜像 tag 管理 | 继承 Knative | 无 | 版本化函数 |
+| **冷启动唤醒 (Activator)** | 内置、对调用方无感 | 不适用 | 继承 Knative | 无统一唤醒层 | 函数级 cold start 较重 |
+| **推理特化** | 无（通用） | 无 | 有（多框架/指标/存储） | 无 | 无 |
+| **OSS 成熟度** | CNCF **Graduated** | K8s 内置 | CNCF Incubating | CNCF **Graduated** | CNCF 沙箱 |
+| **学习曲线** | 中 | 低 | 中（要懂 Knative） | 低 | 低 |
 
 ### 8.2 什么时候选 Knative Serving
 
@@ -594,6 +689,19 @@ kubectl rollout status deploy/controller -n knative-serving
                         ├── 纯事件驱动 (Kafka/Redis 触发) → KEDA
                         ├── 超大规模 disaggregated      → llm-d
                         └── 单机快速跑                 → vLLM 裸跑 / Ollama
+```
+
+**选型结论**：没有「最好」，只有「最贴合负载画像」。Knative 是**请求驱动 + scale-to-zero + 灰度**三位一体的通用弹性层，对「LLM 推理 Pod 闲时归零」这个特定痛点几乎是唯一原生解；但若扩缩信号是外部事件队列、或需要一个完整 ML 平台，就该把 Knative 当底座、上面叠 KEDA / KServe。Fission 适合短函数 FaaS，不擅长常驻 GPU 推理；raw Deployment+HPA 够用但缺 scale-to-zero 与灰度。
+
+决策树（按问题逐层分流）：
+
+```text
+ 需要 scale-to-zero 省 GPU ?           ── 是 ─► Knative Serving (KPA + Activator)
+    └─ 否
+       └─ 扩缩信号来自外部事件(Kafka/队列)? ── 是 ─► KEDA (叠加在 Deployment 上)
+             └─ 否
+                └─ 需要完整 ML 推理平台(多框架)? ── 是 ─► KServe (内含 Knative)
+                      └─ 否 ─► raw Deployment + HPA (够用就好)
 ```
 
 > 与 KServe 的关系：KServe 把 Knative 当作弹性底座，在其上叠加推理 CRD（InferenceService）、多框架 ServingRuntime、推理专属指标。如果你只要「弹性 + 灰度」，直接用 Knative 更轻；如果要「标准化推理平台 + 多框架」，用 KServe（详见 [[CNCF_Cloud_Native_AI/KServe_Deep_Dive]]）。

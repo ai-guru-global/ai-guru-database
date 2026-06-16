@@ -174,7 +174,36 @@ runbook:
 | **RBAC 边界** | 受 ServiceAccount 权限约束 | 最小权限 |
 | **终止判据** | LLM 判定证据足够即停 | 避免过度调查 |
 
-### 3.2 与告警/协作平台的集成拓扑
+把抽象循环落到真实工具调用——告警 `KubePodCrashLooping @ default/payments-api`：
+
+```
+告警: KubePodCrashLooping (pod=payments-api-7c9, restarts=14)
+  │
+  ├─ Step1 [kubectl logs --previous]  -> "OutOfMemoryError: Java heap" (exit 137)
+  ├─ Step2 [PromQL] max_over_time(    -> 峰值 512Mi > limit 256Mi
+  │           container_memory_working_set_bytes[30m])
+  ├─ Step3 [Runbook] crashloop-deep   -> rollout 2h 前部署、镜像未变, 排除回归
+  └─ Step4 [Reason] 根因=OOMKilled    -> 建议 limit 256Mi→768Mi + 查堆泄漏
+        ▼
+  Notifier ──► Slack: 根因 OOMKilled | 证据[step1 日志][step2 指标][step3 无变更]
+                      建议 limit→768Mi  [认领事故] [静默1h]
+```
+
+四步跨了 **kubectl / PromQL / Runbook** 三类工具，每步留证据——这正是 oncall 拿到告警后会做的事，只是 Agent 化、秒级完成。
+
+### 3.2 核心组件职责
+
+服务内拆为五个解耦组件，通过 Investigation 上下文协作，可独立替换（换模型只动 LLM Backend、加诊断能力只往 Tool Registry 注册新工具，互不耦合）：
+
+| 组件 | 职责 | 典型实现 |
+|------|------|---------|
+| **Investigation Engine** | 驱动 ReAct 循环，持有告警上下文与中间状态 | Python 控制循环 + step 计数 |
+| **Tool Registry** | 注册并向 LLM 暴露工具，统一鉴权/超时 | kubectl / Prometheus / 日志 / Runbook |
+| **LLM Backend** | 抽象模型调用，多 provider 可切换 | OpenAI / Azure / Anthropic / Ollama |
+| **Notifier** | 报告回发协作平台，按 severity 路由 | Slack / Teams / PagerDuty webhook |
+| **Evidence Store** | 沉淀每步工具调用与返回，组装证据链 | 内存 + 可选落盘，供事后复盘 |
+
+### 3.3 与告警/协作平台的集成拓扑
 
 HolmesGPT 以**旁路**方式接入现有可观测体系，不改变告警链路，只"插队"在告警和人之间多一个 AI 调查环节：
 
@@ -305,9 +334,50 @@ subjects:
 
 ## 5. 快速开始
 
-目标：让 HolmesGPT 接到一条测试告警，自动调查并把根因回帖到 Slack。
+目标：从零到端到端跑通一条 AI 调查。共六步——前两步安装接入（细节见 §4），步骤 3 写 Runbook，步骤 4–5 触发告警并看结果。
 
-### 5.1 部署一个会触发告警的工作负载
+### 5.1 步骤 1–2：安装、接告警源、配模型
+
+```bash
+helm install holmes robusta/holmes -n holmes --create-namespace \
+  --set holmes.openai.apiKey=$OPENAI_API_KEY
+```
+
+```yaml
+holmes:                          # holmes-values.yaml
+  alertmanager: { enabled: true, url: http://alertmanager.monitoring:9093 }
+  llm.ollama:  { url: http://ollama.ollama.svc:11434, model: qwen2.5:14b }   # 气隙
+  # llm.openai: { api_key: "$OPENAI_API_KEY", model: gpt-4o }                # 云端
+  slack: { webhook_url: "https://hooks.slack.com/...", default_channel: "#ops-oncall" }
+```
+
+> Alertmanager 加 receiver 指向 HolmesGPT；PagerDuty/Opsgenie 把 incident webhook 指向 `/pagerduty`、`/opsgenie` 端点。
+
+### 5.2 步骤 3：写自定义 Runbook
+
+把团队排障 SOP 沉淀为声明式剧本——投资回报最高的环节，ConfigMap 挂载即生效：
+
+```yaml
+# custom-runbooks/crashloop-deep.yaml
+runbook:
+  name: "crashloop-deep"
+  trigger: { alert: "KubePodCrashLooping" }
+  steps:
+    - "取上一轮崩溃日志 (kubectl logs --previous)"
+    - "describe pod 查 OOMKilled / ExitCode"
+    - "PromQL 取 30m 内存峰值对比 limit"
+    - "rollout history 排除变更回归"
+    - "OOM: 建议调大 limit; 报错: 关联代码"
+```
+
+```bash
+kubectl -n holmes create configmap holmes-runbooks \
+  --from-file=custom-runbooks/ -o yaml | kubectl apply -f -
+```
+
+> Runbook 不是硬编码流程，而是给 LLM 的「排障指南」——LLM 按告警匹配后自主决定执行顺序与工具调用。
+
+### 5.3 部署一个会触发告警的工作负载
 
 ```yaml
 # broken-pod.yaml - 一个故意 OOM 的 Pod
@@ -330,7 +400,7 @@ kubectl apply -f broken-pod.yaml
 kubectl get pod oom-demo -w   # 很快进入 CrashLoopBackOff
 ```
 
-### 5.2 触发告警并观察调查
+### 5.4 触发告警并观察调查
 
 若已配 `KubePodCrashLooping` 规则，Prometheus 会自动触发经 Alertmanager 推给 HolmesGPT；也可手动 CLI 触发（适合调试）：
 
@@ -352,11 +422,11 @@ kubectl -n holmes logs -f deploy/holmes   # 观察 Agent 循环
 [done]    根因: OOMKilled; 建议: 调大 limit 或排查内存泄漏
 ```
 
-### 5.3 接收 Slack 回帖
+### 5.5 接收 Slack 回帖
 
-几秒到几十秒后，HolmesGPT 在 `#ops-oncall` 发出结构化消息：告警摘要、根因假设、关键证据（OOMKilled / exit 137）、修复建议。全程无需人工介入。
+几秒到几十秒后，HolmesGPT 在 `#ops-oncall` 发出结构化消息：告警摘要、根因（OOMKilled）、证据链（step1 OOM 日志 / step2 内存峰值 / step3 无变更）、修复建议（limit 256Mi→768Mi），并附 `[查看完整调查] [认领事故] [静默1h]` 动作链接。全程无需人工介入，oncall 可直接点链接复核证据。
 
-### 5.4 常用 CLI 命令
+### 5.6 常用 CLI 命令
 
 | 命令 | 用途 |
 |------|------|

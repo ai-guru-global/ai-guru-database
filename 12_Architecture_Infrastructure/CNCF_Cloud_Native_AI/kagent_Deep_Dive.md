@@ -228,19 +228,9 @@ kagent 在 controller 牵引下，由 Autogen runtime 跑标准 ReAct 风格的 
 
 > 错误也回灌给 LLM：收到 `Forbidden` 时 Agent **会据此自我纠错**或如实上报"我没权限"——错误本身就是 Agent 的学习信号，比静默失败有用得多。
 
-**GitOps 同步流（声明式的真正价值）：**
+**GitOps 同步流**：Git 仓库（`models/ tools/ agents/ bindings/`）→ PR review → Argo/Flux sync → kube-apiserver apply CRD → controller watch 到变更 → reconcile。旧会话不中断，新会话用新 spec；审计/回滚 = `git revert` + 重新 sync。
 
-```
-   Git 仓库 (models/ tools/ agents/ bindings/)
-        │  PR review + merge
-        ▼
-   Argo/Flux ──sync──► kube-apiserver (apply CRD)
-                             │  controller watch 到变更 → reconcile
-                             ▼  旧会话不中断,新会话用新 spec
-                        审计/回滚 = git revert + 重新 sync
-```
-
-> 因为 Agent/Tool/Model/Binding 全是 CRD，**改 Agent 行为 = 改 Git 里的 YAML**——review 留痕、回滚即 revert、多环境就是不同目录。这是 kagent 相对应用内 Agent 框架的结构性优势，也是平台团队最看重的点。
+> 因为全是 CRD，**改 Agent 行为 = 改 Git YAML**——review 留痕、回滚即 revert、多环境就是不同目录。这是 kagent 相对应用内 Agent 框架的结构性优势。
 
 ---
 
@@ -426,21 +416,20 @@ apiVersion: kagent.dev/v1
 kind: Tool
 metadata: { name: list-high-restart-pods, namespace: prod }
 spec:
-  description: "列出指定 namespace 中 restartCount 超过阈值的 Pod"
+  description: "列出 namespace 中 restartCount 超过阈值的 Pod"
   python: { module: platform_tools.reliability, function: list_high_restart_pods }
   schema:
     type: object
     properties:
-      namespace: { type: string, description: "目标命名空间" }
-      threshold: { type: integer, default: 5, description: "重启次数阈值" }
+      namespace: { type: string }
+      threshold: { type: integer, default: 5 }
     required: [namespace]
 ```
 
-**挂到 Agent 并验证**（在 §5.1 的 Agent 模板上改两行即可）：
+**挂到 Agent**（基于 §5.1 模板，改 tools + systemPrompt）：
 
 ```yaml
 spec:
-  model: prod-gpt4o
   tools: [list-high-restart-pods, kubectl]   # 自定义 + 内置混用
   systemPrompt: |
     你是可靠性助手。用户问"哪些 Pod 不稳定"时,先调 list-high-restart-pods,
@@ -449,7 +438,7 @@ spec:
 
 ```bash
 kubectl apply -f high-restart-tool.yaml -f reliability-agent.yaml -n prod
-# UI 里问: "prod 哪些 Pod 不稳定?" → Agent 直接调自定义工具,一次拿到结构化结果
+# UI 问: "prod 哪些 Pod 不稳定?" → Agent 直接调自定义工具,一次拿到结构化结果
 ```
 
 > 这就是 kagent 的可编程性：**业务逻辑下沉到 Tool，编排逻辑写在 systemPrompt**，LLM 只负责"决定何时用哪个"。换需求不用改 LLM，改 Tool 即可——Tool 升级走 GitOps PR，可 review 可回滚。

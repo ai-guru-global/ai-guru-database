@@ -420,23 +420,45 @@ kubectl describe result default-web-7c9-oom -n k8sgpt
 
 ### 6.1 Analyzer 启用策略（降噪第一要务）
 
-默认全开 analyzer 在大集群里会产生大量噪声。**生产建议按"能动手解决的才开"**：
+默认全开 analyzer 在大集群里会产生大量噪声，**生产按"能动手解决的才开"**。下表覆盖内置 analyzer 全家桶（`k8sgpt filters list` 可查最新清单），**典型噪声**列反映 200 节点集群的经验信噪比：
 
-| Analyzer | 建议开关 | 理由 |
-|----------|---------|------|
-| Pod / Container 错误 | ✅ 开 | 崩溃/镜像拉取失败是最常见可操作问题 |
-| Events | ✅ 开 | 兜底捕获 K8s 事件 |
-| PersistentVolumeClaim | ✅ 开 | Pending PVC 易被忽略但影响大 |
-| Ingress / Service | ✅ 开 | 后端缺失、TLS 缺失高发 |
-| Node | ✅ 开 | NotReady / 磁盘压力 |
-| Cert-Manager Certificates | ✅ 开 | 证书快过期很关键 |
-| HPA / PDB | ⚠️ 看场景 | 数量多易刷屏，按需开 |
-| NetworkPolicy | ⚠️ 看场景 | 噪声较高，排障时再开 |
-| StatefulSet / CronJob | ✅ 开 | Job 失败常被忽略 |
+| Analyzer | 检查内容 | 建议开关 | 典型噪声 |
+|----------|---------|---------|---------|
+| `Pod` | Container `OOMKilled` / `CrashLoopBackOff` / `ImagePullBackOff` / 重启循环 | ✅ 开 | 低（几乎都是真问题） |
+| `Deployment` | 合并 Pod+ReplicaSet 信号、滚动更新卡顿、副本不达期望 | ✅ 开 | 低 |
+| `StatefulSet` | `ordinal` Pod 未就绪、`volumeClaimTemplate` Pending | ✅ 开 | 低 |
+| `DaemonSet` | 某些节点上未调度、滚动更新中断 | ✅ 开 | 中 |
+| `CronJob` / `Job` | 失败 Job、`failed` 计数超 `backoffLimit` | ✅ 开 | 中（高频调度时） |
+| `Service` | 无后端 Endpoints、`type`/端口错配、外部名解析失败 | ✅ 开 | 低 |
+| `Ingress` | 后端 Service 不存在、TLS Secret 缺失、规则冲突 | ✅ 开 | 中 |
+| `Node` | `NotReady` / `DiskPressure` / `MemoryPressure` / `PIDPressure` | ✅ 开 | 低 |
+| `PersistentVolumeClaim` | Pending（无匹配 PV / StorageClass）、容量/绑定失败 | ✅ 开 | 低 |
+| `Events` | 兜底读命名空间内 Warning 事件 | ✅ 开 | 中（事件风暴时刷屏） |
+| `Cert-Manager Certificate` | 临近过期、签发失败、Order 卡住 | ✅ 开 | 中 |
+| `CoreDNS` | ConfigMap 配置异常、CoreDNS Pod 未就绪 | ⚠️ 看场景 | 中 |
+| `HPA` | `DesiredReplicas` 恒等于 `min`/触顶 `max`、指标缺失 | ⚠️ 看场景 | 高（常态触发） |
+| `PDB` | `AllowedDisruptions: 0`、与滚动更新冲突 | ⚠️ 看场景 | 高（语义易误判） |
+| `NetworkPolicy` | 默认 deny 后选中的 Pod 无任何放行规则 | ⚠️ 看场景 | 高（语义易误判） |
 
 ```bash
 # CLI 关掉噪声大的 analyzer
-k8sgpt filters disable --filter NetworkPolicy,HPA
+k8sgpt filters disable --filter NetworkPolicy,HPA,PDB
+k8sgpt filters list          # 核对当前生效集
+```
+
+#### 降噪手册（Noise-Reduction Playbook）
+
+大集群降噪是迭代的，推荐四步收敛：
+
+1. **基线采样**：全开跑 24~48h，按 analyzer 统计 `active` Result 数，抽样 50 条标注"真问题占比"，低于 30% 的列为降噪候选。
+2. **命名空间收窄**：用 `--namespace` 把扫描圈在生产命名空间，整体排除 `kube-system` / `monitoring` / `gatekeeper-system` 等"已知设计行为"区。
+3. **标签级排除**：对混沌注入、压测等已知噪声资源，用 `--label-selector` 反选，或给资源打 `k8sgpt.ai/ignore=true`，自定义 plugin 里读该标签 `continue`。
+4. **生命周期治理**：反复误报用 `kubectl patch result <name> -p '{"spec":{"status":"solved"}}'` 标记；挂 TTL Controller 清掉超 N 天的 `solved` Result，避免 etcd 堆积。
+
+```bash
+# 仅扫某命名空间 + 排除带 ignore 标签的资源
+k8sgpt analyze --explain --namespace payments-prod \
+  --label-selector='app.kubernetes.io/part-of=payments,!k8sgpt.ai/ignore'
 ```
 
 ### 6.2 脱敏策略
@@ -509,9 +531,49 @@ spec:
     slack:
       webhook: ${SLACK_WEBHOOK}
       channel: "#ops-oncall"
-  # 资源限制(Operator 自身)
-  # 由 Helm values 控制 deployment resources
+   # 资源限制(Operator 自身)
+   # 由 Helm values 控制 deployment resources
 ```
+
+### 6.7 多命名空间 / 多集群 高级 CRD（PagerDuty 路由）
+
+多租户分治时推荐**每个业务命名空间组跑一个独立 `K8sGPT` CR**，各自带独立 backend、filter、通知 sink，便于按业务线核算成本。下面面向 `payments` 业务线，覆盖命名空间范围扫描、prompt 微调（`--language` / `--with-doc`）与 PagerDuty 路由：
+
+```yaml
+apiVersion: core.k8sgpt.ai/v1alpha1
+kind: K8sGPT
+metadata:
+  name: k8sgpt-payments
+  namespace: k8sgpt
+spec:
+  backend:
+    type: openai
+    model: gpt-4o-mini
+    secret:
+      name: k8sgpt-openai
+      key: openai-api-key
+  noCache: false
+  anonymize: true
+  filters:
+    - Pod
+    - Deployment
+    - Service
+    - Ingress
+    - PersistentVolumeClaim
+    - Node
+  extraOptions:
+    - "--namespace=payments-prod"          # 命名空间范围扫描
+    - "--label-selector=app.kubernetes.io/part-of=payments"
+    - "--max-concurrency=2"
+    - "--language=zh"                      # prompt 微调: 输出语言
+    - "--with-doc"                         # prompt 微调: 追加官方文档片段
+  notification:
+    slack:
+      webhook: ${SLACK_WEBHOOK_PAYMENTS}
+      channel: "#payments-oncall"
+```
+
+> **PagerDuty 路由**：K8sGPT 不直接呼 PagerDuty，而是把 `Result` 暴露成 Prometheus 指标（含 `status`/`kind`/`namespace` 标签），由 Alertmanager 规则判定哪些 active Result 升级为 P1/P2 再 route 到 PagerDuty——paging 门槛受 `group_wait`/`repeat_interval` 统一管控，避免 LLM 抖动炸值班手机。**多集群同理**：每集群一套 Operator + 一个 CR，统一指向中心 LLM 网关，Result 经远程写汇聚到中心 Prometheus，Alertmanager 在中心层统一 route、LLM 后端集中治理。
 
 ---
 
@@ -527,6 +589,15 @@ LLM 会幻觉，K8sGPT 的解释**必须人工复核**再动手。运维要点�
 | 建议命令有破坏性 | 任何 "kubectl delete" 类建议都要人审，CI 里禁止自动执行 |
 | 模型太小导致解释含糊 | 本地模型至少 14B；复杂问题升级到 70B 或云端大模型 |
 | 过时上下文 | Result 有时间戳，超过 1h 的建议重新扫描 |
+
+**幻觉信号核查表**——复核 Result 时，逐条对照下列信号；命中任意一条就把该 Result 打回重扫，不要照着动手：
+
+| 幻觉信号 | 表现 | 根因 | 处置 |
+|---------|------|------|------|
+| 编造资源名 | 解释里出现集群中根本不存在的 Pod/Service/Deployment 名 | 脱敏反解错位 / 模型外推补全 | 用 `kubectl get` 逐个核对；确认是掩码映射问题就升级 k8sgpt |
+| 泛泛而谈、不可执行 | 建议只是"检查网络配置 / 查看日志"，无具体资源与命令 | 模型太小 / 上下文被截断 / analyzer 未传够字段 | 升级到 14B+；开 `--with-doc`；关掉过载 analyzer |
+| 引用过时事件 | 引用的 Event `lastTimestamp` 已是几天前 | Result 未及时清理 / 缓存命中陈旧 | 重新 `analyze`；缩短 `extraOptions --interval` |
+| 虚构修复命令 | 给出 `kubectl edit` 不存在的字段或错误 API version | 模型训练数据过时 | 人工核对 `kubectl api-resources` |
 
 ```bash
 # 批量复核 active results
@@ -554,6 +625,16 @@ k8sgpt analyze --explain --output json | jq '.[] | {name, duration}'
 | Operator 扫描周期 | 300s（避免 LLM 过载） |
 | 单集群日均 token | 设预算上限，超出告警 |
 
+**成本与延迟实测对比**（典型规模：200 节点 / ~15k Pod / 一次全量 `analyze --explain` 约 120~200 条问题，未命中缓存）：
+
+| 后端 | 模型 | tokens/run（input+output） | 延迟 p50 | 延迟 p99 | 单次成本（估值） | 适用 |
+|------|------|----------------------------|---------|---------|-----------------|------|
+| OpenAI | `gpt-4o-mini` | 60k~120k | 0.8s | 2.5s | ~$0.02~0.05 | Dev/Staging，成本敏感（Azure OpenAI 区域驻留同理） |
+| Ollama 本地 | `qwen2.5:14b`（CPU/GPU） | 60k~120k | 4s | 12s | 仅硬件摊销 | 气隙 / 数据不出集群 |
+| Ollama 本地 | `llama3.1:70b`（单卡 A100） | 60k~120k | 6s | 18s | 仅硬件摊销 | 生产解释质量对标云端 |
+
+> 经验值：**单条 Result 平均消耗 400~900 tokens**（脱敏后的 K8s 上下文 + 解释输出）。命中缓存（`noCache: false`）后重复问题零 token、零延迟，因此**大集群务必开缓存**——日均可省 60~80% token。监控 Ollama 看 `ollama_request_duration_seconds`，监控 OpenAI 建议在出口加 LLM 网关（如 LiteLLM / one-api）统一计费与限流。
+
 ### 7.3 误报率与降噪
 
 误报主要来自：HPA/PDB/NetworkPolicy 等非"错误"状态被当成问题。应对：
@@ -575,13 +656,16 @@ kubectl -n k8sgpt top pod -l app.kubernetes.io/name=k8sgpt
 
 | 现象 | 可能原因 | 解决 |
 |------|---------|------|
-| `analyze` 无输出但集群明明有问题 | 对应 analyzer 被禁用 | `k8sgpt filters list` 检查 |
-| LLM 解释里出现 `dep_xxx` 没反解 | 脱敏后端异常 / 模型截断 | 升级 k8sgpt；调小单次 context |
 | `backend error: connection refused` | Ollama Service 不可达 | 检查 Service/DNS；`curl ollama:11434/api/tags` |
-| 解释明显幻觉（编造资源） | 模型太小 / prompt 被污染 | 升级到 14B+；检查 custom analyzer 输出 |
 | Operator Result 不更新 | 扫描周期过长 / operator crash | `kubectl logs -n k8sgpt -l app.kubernetes.io/name=k8sgpt` |
-| Slack 收不到通知 | webhook 失效 / 出口被 NetworkPolicy 拦 | 手动 curl webhook；放宽 egress |
-| Token 成本激增 | 缓存关闭 + 高频扫描 | 开 `noCache: false`；调大 interval |
+| 脱敏后输出可读性太差，全篇 `dep_xxx` | 默认 anonymize 把所有真名打码 | 仅本地 Ollama 内网调试时用 `--no-anonymize`；生产保留脱敏但靠反解还原 |
+| `backend error: 401 Unauthorized` / auth failed | OpenAI key 过期 / Bedrock 临时凭证失效 / CRD secret 引用错 | `k8sgpt auth list` 核对；轮换 key；确认 Secret 与 CRD 在同 namespace |
+| Operator 部署成功但从不生成 Result | RBAC 读权限缺失 / filters 全空 / backend 未认证静默失败 | 看 operator logs 找 `forbidden` / `auth` 错；补 ClusterRole；确认 `spec.filters` 非空 |
+| Result 全是 OK，但集群明显在报错 | analyzer 未覆盖该资源 / namespace 被排除 / 事件已过 TTL | `--filter` 加对应 analyzer；去掉 `--namespace` 限制；重跑 `--explain` |
+| 通知刷屏、Slack/PagerDuty 被打爆 | 高频扫描 + 无去重 + 每条 Result 都推 | 调大 `--interval`；开缓存；通知层加 Alertmanager `group_wait`/`repeat_interval` |
+| 误报率偏高（把正常状态当问题） | HPA/PDB/NetworkPolicy 语义误判 | 关掉噪声 analyzer；自定义 plugin 加白名单；标 `solved` |
+| 大集群 `analyze` 超时（backend timeout） | 单次 context 过大 / 并发过高把后端打满 | 加 `--max-concurrency`；按 namespace 分片；换更强后端或拆多 CR |
+| 自定义 Go analyzer plugin 不加载 | plugin 符号未导出 / 与 k8sgpt 版本 ABI 不匹配 | 确认 `var Analyzer = ...` 大写导出；用同版本 Go 编译；`--plugin` 路径可读 |
 
 ### 7.6 调优 Prompt（extraOptions）
 

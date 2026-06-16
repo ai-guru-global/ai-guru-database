@@ -103,6 +103,27 @@ BF16指数位与FP32相同，天然避免梯度下溢。FP8训练通过NVIDIA tr
 - Hu et al., "LoRA: Low-Rank Adaptation of Large Language Models," ICLR 2022
 - Dettmers et al., "QLoRA: Efficient Finetuning of Quantized LLMs," 2023
 
+## 大白话解读
+
+> **一句话理解**:模型训练就像教小孩做 10 万道数学题,做完对答案、记错题、慢慢变强。
+
+### 训练三步循环
+
+1. **猜**:把题目丢进模型,先随便输出一个答案
+2. **批**:跟标准答案比,看错得有多离谱(算"损失 / loss")
+3. **改**:从错误往回推,微调几十亿个参数(权重),让下次猜得更准
+
+整个数据集反复过几遍,**每完整过一遍叫一个 epoch**。
+
+### 什么是"参数 / 权重"
+
+模型里那些**数字旋钮**(可能有几百亿个)。训练就是**调旋钮**——调到某个位置,模型刚好能算出正确答案。训练完,这些数字就"定型"了,这就是你下载到的模型文件。
+
+### 直觉类比
+
+> 小学生做 10 万道数学题 → 对答案 → 错的下次改正 → 错的越来越少
+> 模型训练:数据 → forward → loss → backward → 调权重 → 重复
+
 ## Related
 
 - [[synthesis/training-fine-tuning]] — 模型训练 × 微调技术 (共享: deepspeed, fsdp, lora, training)

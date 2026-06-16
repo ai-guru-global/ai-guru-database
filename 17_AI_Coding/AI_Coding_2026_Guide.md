@@ -108,5 +108,5 @@ tier: core
 | 复杂架构设计 | 中 | 需要人工主导 |
 | 安全关键代码 | 差 | 必须人工审查 |
 
-> **关联**: -> [[17_AI_Coding|AI 编程]] | [[17_AI_Coding/02_Tools|编程工具]] | [[90_Learn/AI_Engineering_Roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[17_AI_Coding|AI 编程]] | [[17_AI_Coding/02_Tools|编程工具]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
 

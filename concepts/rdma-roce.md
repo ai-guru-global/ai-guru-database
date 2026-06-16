@@ -7,8 +7,13 @@ relationships:
     type: enables
   - target: "concepts/distributed-systems"
     type: extends
+  - target: "concepts/gpu-interconnect"
+    type: related_to
+  - target: "09_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy"
+    type: simplified_by
 sources:
   - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 09_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy.md
 summary: RDMA (Remote Direct Memory Access) 允许 GPU 间直接内存访问绕过 CPU/OS，RoCE (RDMA over Converged Ethernet) 将其承载在以太网上。AI Stack 16 卡版机间通信带宽达 1.6T，采用 RoCE + 拓扑感知路由实现低时延无拥塞通信。
 provenance:
   extracted: 0.85
@@ -23,6 +28,16 @@ updated: 2026-06-03 00:00:00+00:00
 ---
 
 # RDMA/RoCE (高速 GPU 网络)
+
+## 大白话
+
+多机多卡一起跑模型时，GPU 之间要传数据。
+
+- **RDMA**：让 GPU 直接读写远处 GPU 的内存，不用经过 CPU，像快递直达。
+- **RoCE**：把 RDMA 跑在普通以太网上，比专用 InfiniBand 便宜。
+- **InfiniBand（IB）**：专用高速网络，性能最好但贵。
+
+RDMA/IB/RoCE 就是 GPU 集群里的“高速公路”。
 
 ## 核心要点
 

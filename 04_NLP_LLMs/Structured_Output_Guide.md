@@ -87,5 +87,5 @@ user = client.chat.completions.create(
 4. **宽松到严格**: 先用 JSON Mode 快速验证,再用 schema 严格约束
 5. **测试边界值**: 用极端输入测试输出的鲁棒性
 
-> **关联**: -> [[04_NLP_LLMs/Prompt_Engineering|提示词工程]] | [[13_Agent_Production/GenAI_L11_Integrating_with_Function_Calling|Function Calling]] | [[90_Learn/AI_Engineering_Roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[04_NLP_LLMs/Prompt_Engineering|提示词工程]] | [[13_Agent_Production/GenAI_L11_Integrating_with_Function_Calling|Function Calling]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
 

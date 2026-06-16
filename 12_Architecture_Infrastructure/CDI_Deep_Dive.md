@@ -212,15 +212,16 @@ CDI 的声明式模型尤其擅长三种场景：
 
 三者**不是互斥**，而是分层协作。CDI 是最底层的「注入语言」，上层分配机制可选：
 
-| 维度 | 设备插件 (Device Plugin) | CDI | DRA (Dynamic Resource Allocation) |
-|------|--------------------------|-----|-----------------------------------|
-| **解决的问题** | 上报+分配设备计数 | 描述+注入设备到容器 | 拓扑感知的动态分配 |
-| **K8s 版本** | 1.8+（GA） | 运行时层，与 K8s 版本无关 | 1.26 alpha / 1.32+ beta |
-| **厂商耦合** | 每家写一套 | 厂商无关标准 | 厂商写 DRA 驱动 |
-| **GPU 细粒度** | 仅整卡/MIG 粗粒度 | 声明任意切片 | 支持拓扑/亲和 |
-| **2026 推荐** | 旧集群过渡 | **必装基座** | 新集群首选 |
+| 维度 | 设备插件 (Device Plugin) | CDI | DRA (Dynamic Resource Allocation) | HAMi |
+|------|--------------------------|-----|-----------------------------------|------|
+| **解决的问题** | 上报+分配设备计数 | 描述+注入设备到容器 | 拓扑感知的动态分配 | 异构设备共享与隔离 |
+| **K8s 版本** | 1.8+（GA） | 运行时层，与 K8s 版本无关 | 1.26 alpha / 1.32+ beta | 1.22+（DRA 模式需 1.34+） |
+| **厂商耦合** | 每家写一套 | 厂商无关标准 | 厂商写 DRA 驱动 | 多厂商统一适配 |
+| **GPU 细粒度** | 仅整卡/MIG 粗粒度 | 声明任意切片 | 支持拓扑/亲和 | 任意比例 vGPU 切分 |
+| **隔离级别** | 无（整卡独占） | 注入层，不保证隔离 | 分配层，依赖驱动 | 显存/算力硬隔离 |
+| **2026 推荐** | 旧集群过渡 | **必装基座** | 新集群首选 | 多租户/异构共享场景 |
 
-> **一句话**: CDI 不是用来替代设备插件或 DRA 的，而是**两者脚下共享的地基**。无论上层用哪种分配方式，最终都翻译成 CDI 设备名交给运行时。
+> **一句话**: CDI 不是用来替代设备插件、DRA 或 HAMi 的，而是**它们脚下共享的地基**。HAMi 可以在 Device Plugin 模式或 DRA 模式下运行，并把 vGPU 通过 CDI 注入容器。详见 [[12_Architecture_Infrastructure/HAMi_Deep_Dive]]。
 
 ---
 
@@ -319,6 +320,25 @@ CDI 是连接「硬件层」与「推理服务层」的隐形纽带：
 
 CDI 把设备注入从「代码」变成「数据」，带来了标准化红利，但也引入一类新的故障模式——**绝大多数问题本质是「spec 不对、找不到、不同步、不兼容」**。下面按场景归档。
 
+### 10.0 先纠正一个根本性误解
+
+> **Q: containerd 开了 `enable_cdi=true`，容器就能看到 GPU 吗？**
+> **A: 不能。** 那只是打开了「CDI 设备名解析器」。GPU 进容器要四件事凑齐，CDI 仅占其一：
+
+```
+① 宿主装好驱动 + nvidia-container-toolkit   ← 真正的 GPU 在这
+② 有人生成 /var/run/cdi/nvidia.yaml         ← 描述怎么接线(nvidia-ctk / GPU Operator)
+③ containerd 开 enable_cdi=true 并重启       ← 打开解析器(常被误当成"开关")
+④ 容器启动时显式申请 --device nvidia.com/gpu=0  ← 不申请拿不到
+   ─→ 容器内 nvidia-smi 才看得到
+```
+
+- **「开了 enable_cdi 就全有了」** ✗ → 只装了翻译官，还差 spec(②)+ 容器主动要(④)。最常翻车：spec 没生成，或容器没写 `--device`。
+- **「CDI 让容器能用 GPU」** ✗ → 没 CDI 也能用（老路 `NVIDIA_VISIBLE_DEVICES` + nvidia-container-runtime 一直在）。CDI 只是把描述方式从厂商私有 hook 换成通用 JSON，**能力本身来自驱动与 toolkit**。
+- **「所有容器自动看到」** ✗ → CDI **按需注入**，容器不声明设备名，一个节点都不给。
+
+> 一句话：CDI 是「接线说明书 + 解析器」，不是「电源开关」。
+
 ### 10.1 配置与发现类
 
 | 症状 | 根因 | 排查/修 |
@@ -408,6 +428,7 @@ CDI spec 是**某时刻的快照**，硬件变了 spec 没跟着变，就会引�
 
 - [[12_Architecture_Infrastructure/AI_Infrastructure_2026]] — GPU 集群与训练/推理基础设施
 - [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — 软硬一体推理平台设备治理
+- [[12_Architecture_Infrastructure/HAMi_Deep_Dive]] — HAMi 异构 GPU 虚拟化（与 CDI 配合的共享方案）
 - [[01_Fundamentals/AI_Hardware/Chinese_AI_Chips_Deep_Dive]] — 国产异构加速器（CDI 的核心受益者）
 - [[09_Deployment_Inference/vLLM_Deep_Dive]] — GPU 推理引擎的容器化落地
 - [[09_Deployment_Inference/Deployment_Inference_2026]] — 部署推理 2026 趋势

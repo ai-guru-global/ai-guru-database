@@ -10,6 +10,8 @@ relationships:
     type: related_to
   - target: "concepts/ai-agents"
     type: related_to
+  - target: "concepts/lora-qlora-sft-rlhf-dpo"
+    type: related_to
 sources:
   - 06_reinforcement-learning_unsupervised-learning/Deep_RL/Deep_RL.md
   - 06_Reinforcement_Learning/Deep_RL/PPO_Deep_Dive.md
@@ -23,7 +25,7 @@ lifecycle: draft
 lifecycle_changed: 2026-05-31
 tier: supporting
 created: 2026-05-31T00:00:00Z
-updated: 2026-05-31T00:00:00Z
+updated: 2026-06-16T00:00:00Z
 ---
 
 # RLHF
@@ -99,5 +101,6 @@ RLHF训练后的模型表现出明显的"对齐效应"：拒绝有害请求的�
 
 ## Related
 
+- [[concepts/lora-qlora-sft-rlhf-dpo]] — LoRA / QLoRA / SFT / RLHF / DPO 大白话串讲
 - [[22_Papers/RLHF_DPO_Deep_Dive]] — RLHF 与 DPO 深度解读 (从 InstructGPT 到 Direct Preference Optimization) (共享: alignment, rl, rlhf)
 - [[concepts/deep-reinforcement-learning]] — 深度强化学习 (共享: ppo, rl)

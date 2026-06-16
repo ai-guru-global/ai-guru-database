@@ -95,5 +95,5 @@ TensorFlow/Keras 风格则可用 `tf.keras.layers.LSTM(hid_size)` 直接堆叠�
 
 ## 相关阅读
 
-- 课程索引：[[90_Learn/Courses/Microsoft_AI_For_Beginners]]
+- 课程索引：[[90_Learn/courses/microsoft/microsoft_ai_for_beginners]]
 - 本库相关页面：[[04_NLP_LLMs/Sequence_Models/Sequence_Models]]

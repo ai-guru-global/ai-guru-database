@@ -160,7 +160,7 @@ predicted = text_prompts[probs.argmax()]
 
 ## 相关阅读
 
-- 课程索引：[[90_Learn/Courses/Microsoft_AI_For_Beginners]]
+- 课程索引：[[90_Learn/courses/microsoft/microsoft_ai_for_beginners]]
 - 本库相关页面：
   - [[05_Computer_Vision/Multimodal_Vision/CLIP_Deep_Dive]]
   - [[04_NLP_LLMs/Multimodal_Models/Multimodal_Models_for_dummy]]

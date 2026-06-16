@@ -192,4 +192,4 @@ agent.recommend(strategy="balanced")  # 重新算
 - [[13_Agent_Production/Microsoft_AI_Agents_L05_Agentic_RAG]] — Agentic RAG 基础
 - [[13_Agent_Production/Agentic_Design_Patterns_AndrewNg]] — Reflection 模式
 - [[11_RAG_Systems/README]] — 本仓库 RAG 主题总览
-- [[90_Learn/Courses/Microsoft_AI_Agents_for_Beginners]] — 课程总览
+- [[90_Learn/courses/microsoft/microsoft_ai_agents_for_beginners]] — 课程总览

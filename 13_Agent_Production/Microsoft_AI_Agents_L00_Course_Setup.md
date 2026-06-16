@@ -142,7 +142,7 @@ macOS 上首次运行可能出现 `ssl.SSLCertVerificationError`。三种解法�
 
 ## 关联阅读
 
-- [[90_Learn/Courses/Microsoft_AI_Agents_for_Beginners]] — 课程总览与课表映射
+- [[90_Learn/courses/microsoft/microsoft_ai_agents_for_beginners]] — 课程总览与课表映射
 - [[13_Agent_Production/Microsoft_AI_Agents_L01_Intro]] — 下一课：AI Agent 简介
 - [[13_Agent_Production/Microsoft_AI_Agents_L02_Frameworks]] — MAF 与 Azure AI Agent Service 框架选型
 - [[13_Agent_Production/Agent_Frameworks/README]] — 主流 Agent 框架概览

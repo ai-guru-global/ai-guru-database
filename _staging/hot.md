@@ -1,9 +1,11 @@
 ---
 title: Hot Cache
-updated: 2026-06-15T08:18:23Z
+updated: 2026-06-16T06:41:58Z
 ---
 
 ## Recent Activity
+
+- **新增 AI Stack 生产工具链专题** — 在 `12_Architecture_Infrastructure/` 下创建 8 个页面：总览页 + 容器与运行时 / GPU 监控 / 模型下载与管理 / 推理服务 / 训练启动器 / K8s 编排 / AI Stack 专属工具。覆盖 nerdctl、crictl、nvidia-smi、ppu-smi、huggingface-cli、modelscope、vllm serve、sglang、ollama、llama-server、torchrun、accelerate、deepspeed、swift、kubectl、helm、stackops、aioController 等核心工具，含生产级命令、Checklist 与故障排查。已更新 `12_Architecture_Infrastructure/README.md` 与 `AI_Stack_Deep_Dive.md` 导航。
 
 - **Ingested Microsoft AI Agents for Beginners 13 lesson READMEs** — 全部挂入 `13_Agent_Production/Microsoft_AI_Agents_L*.md`，补齐 17 课中缺失的 13 个深化页面（L00/L03/L06-L15/L18）。涵盖从课程环境、设计原则、可信 Agent、规划、多 Agent、元认知、生产化、协议（MCP/A2A/NLWeb）、上下文工程、记忆、MAF 框架、浏览器 Agent 到加密审计收据的全链路。每页含 Pydantic / OpenTelemetry / Ed25519 等具体代码示例与跨课交叉引用。
 

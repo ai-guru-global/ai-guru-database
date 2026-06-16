@@ -36,4 +36,4 @@ lifecycle: reviewed
 - 将 LLM 应用推向生产的工程师
 - 负责 AI 基础设施的 DevOps/SRE
 
-> **关联**: -> [[09_Deployment_Inference|部署推理]] | [[16_AI_Ops|AI Ops]] | [[90_Learn/AI_Engineering_Roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[09_Deployment_Inference|部署推理]] | [[16_AI_Ops|AI Ops]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]

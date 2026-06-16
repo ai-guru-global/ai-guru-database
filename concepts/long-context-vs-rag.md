@@ -78,5 +78,5 @@ tier: core
 | RAG vs Long Context | RAG 在精确信息检索任务上始终优于长上下文 |
 | RAPTOR | 递归摘要 + 检索 = 最佳分层方案 |
 
-> **关联**: -> [[11_RAG_Systems|RAG 系统]] | [[04_NLP_LLMs|NLP/LLM]] | [[90_Learn/AI_Engineering_Roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[11_RAG_Systems|RAG 系统]] | [[04_NLP_LLMs|NLP/LLM]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
 

@@ -33,5 +33,5 @@ tier: supporting
 
 Sebastian Raschka 是知名 ML 研究者和教育者,《Build a Large Language Model (From Scratch)》一书的作者。他的文章以深入浅出、代码驱动著称。
 
-> **关联**: -> [[04_NLP_LLMs|NLP/LLM]] | [[90_Learn/AI_Engineering_Roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[04_NLP_LLMs|NLP/LLM]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
 

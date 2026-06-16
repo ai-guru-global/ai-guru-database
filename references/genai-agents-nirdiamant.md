@@ -80,5 +80,5 @@ tier: core
 | 播客生成器 | LangGraph | 内容搜索->音频生成 |
 | 博客写手 | OpenAI Swarm | 协作内容创作 |
 
-> **关联**: -> [[13_Agent_Production|Agent 生产]] | [[90_Learn/AI_Engineering_Roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[13_Agent_Production|Agent 生产]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
 

@@ -162,7 +162,7 @@ model = LinearClassifier(input_size=len(vocab), num_classes=4)
 
 ## 相关阅读
 
-- 课程索引：[[90_Learn/Courses/Microsoft_AI_For_Beginners]]
+- 课程索引：[[90_Learn/courses/microsoft/microsoft_ai_for_beginners]]
 - 本库相关页面：
   - [[04_NLP_LLMs/LLM_Data_Engineering/LLM_Data_Engineering_Deep_Dive]]
   - [[04_NLP_LLMs/Sequence_Models/Sequence_Models]]

@@ -267,7 +267,7 @@ Dataverse 是 Power Platform 的底层数据平台，负责安全地存储应用
 
 ## 扩展阅读
 
-- [[90_Learn/Courses/Microsoft_GenAI_For_Beginners]]
+- [[90_Learn/courses/microsoft/microsoft_genai_for_beginners]]
 - [[04_NLP_LLMs/Multimodal_Models/GenAI_L09_Building_Image_Applications]]
 - [[13_Agent_Production/GenAI_L11_Integrating_with_Function_Calling]]
 - [[13_Agent_Production/Agent_Platforms/README]]

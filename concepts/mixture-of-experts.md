@@ -11,10 +11,13 @@ relationships:
     type: related_to
   - target: "09_Deployment_Inference/Inference_Performance/MoE_Inference_Optimization"
     type: optimized_by
+  - target: "09_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy"
+    type: simplified_by
 sources:
   - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
   - 04_NLP_LLMs/LLM_Architectures
   - 09_Deployment_Inference/Inference_Performance/MoE_Inference_Optimization.md
+  - 09_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy.md
 summary: "MoE 将 FFN 替换为多个专家网络，每次仅激活 Top-K 个专家，实现参数规模↑ 但计算量→不变。2026年主流大模型（DeepSeek-V3/Qwen3.5/Kimi-K2）均采用 MoE 架构。"
 provenance:
   extracted: 0.50
@@ -30,6 +33,21 @@ updated: 2026-06-04
 # 混合专家模型 (Mixture of Experts, MoE)
 
 > 参数规模爆炸但计算成本不变的秘密武器——用稀疏激活实现「大象的身材，猎豹的速度」。
+
+---
+
+## 大白话
+
+想象你去医院看病：
+
+- **Dense 模型** = 每个病人都找同一个全科医生。
+- **MoE 模型** = 医院里有 256 个专科医生，但前台根据症状只把你分到 2-8 个最相关的科室。
+
+所以 MoE 的医院“看起来很大、医生很多”，但每个病人实际看的医生很少，实现“参数量大但计算量小”。
+
+## 一句话解释
+
+> MoE 把 FFN 层拆成很多“专家”，每个 token 只激活少数几个专家。
 
 ---
 

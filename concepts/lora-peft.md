@@ -5,6 +5,8 @@ tags: ["lora", "peft", "fine-tuning", "parameter-efficient", "qlora", "adapter"]
 relationships:
   - target: "concepts/fine-tuning-techniques"
     type: belongs_to
+  - target: "concepts/lora-qlora-sft-rlhf-dpo"
+    type: related_to
   - target: "concepts/model-compression"
     type: complements
   - target: "concepts/distributed-parallelism"
@@ -21,7 +23,7 @@ base_confidence: 0.92
 lifecycle: stable
 tier: core
 created: 2026-06-04
-updated: 2026-06-04
+updated: 2026-06-16
 ---
 
 # LoRA 与参数高效微调 (PEFT)
@@ -153,9 +155,63 @@ QLoRA 是 LoRA + 4-bit 量化的组合：
 
 ---
 
+## 9. LoRA 怎么省显存（大白话）
+
+> **一句话理解**：不动原模型的 700 亿个旋钮，只外挂 100 万个"小旋钮"来调，显存省 99%。
+
+### 核心思想：只改一小撮"补丁参数"
+
+- 全量微调 = 改模型的全部旋钮（700 亿个），显存爆掉
+- LoRA = 把原旋钮**冻住**，在旁边挂两个**很小的矩阵 B×A** 来学"微调量"
+
+```
+原模型:  W₀ (4096×4096) = 16M 参数  ← 冻结，不学
+LoRA 补丁: B(4096×8) × A(8×4096)    ← 学这个
+补丁参数量: 8 × (4096+4096) = 6.5 万  ← 只有原来的 0.04%
+```
+
+### 显存去哪儿了？
+
+训练一张 70B 模型，显存主要被 4 样东西吃光：
+
+| 显存消耗项 | 全量微调 | LoRA | 原因 |
+|----------|---------|------|------|
+| **模型权重** | 140 GB | 140 GB | 都得加载 |
+| **梯度** | 140 GB | 几乎为 0 | LoRA 冻住大部分，不算梯度 |
+| **优化器状态**（Adam） | 280 GB | ~1 GB | Adam 要存 2 倍参数，LoRA 参数小 |
+| **激活值** | 几十 GB | 几十 GB | 跟 batch/序列长度相关 |
+| **合计** | **>600 GB** | **~160 GB** |  |
+
+**QLoRA 进一步压到 ~36 GB**：
+- 把"模型权重"从 FP16 → 4-bit → 省 4 倍
+- 加上"双重量化"、"分页优化器"等 trick
+- 单张 RTX 4090 就能跑 70B 微调
+
+### 为什么低秩（r=8）够用？
+
+经验发现：微调时权重的变化量 ΔW **本质是低秩的**——就像你的脸有几百块肌肉，但"表情"主要靠 20 块肌肉控制。r=8 / 16 通常就能捕获 90% 的微调效果。
+
+### 推理时的"零成本"
+
+训练完，把 B×A 算出来，直接加回 W₀，合并成新的 W：
+
+```
+W_final = W₀ + B×A
+```
+
+推理时跟原模型一模一样，**没有任何额外延迟**。
+
+### 一句话总结
+
+> LoRA = 冻结原模型 + 学一个小补丁，显存省 10 倍，效果保留 90%+，推理零成本。
+> QLoRA = LoRA + 把原模型压成 4-bit，显存再省 4 倍，单卡能玩 70B。
+
+---
+
 ## Related
 
 - [[concepts/fine-tuning-techniques]] — 微调技术（LoRA 的上级概念）
+- [[concepts/lora-qlora-sft-rlhf-dpo]] — LoRA / QLoRA / SFT / RLHF / DPO 大白话串讲
 - [[concepts/model-compression]] — 模型压缩（量化是 QLoRA 的基础）
 - [[concepts/distributed-parallelism]] — 分布式并行（全量微调的替代方案）
 - [[concepts/model-training]] — 模型训练（训练流程）

@@ -25,5 +25,5 @@ tier: supporting
 
 Keras 作者的深度学习教程,实战导向
 
-> **关联**: -> [[90_Learn/AI_Engineering_Roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
 

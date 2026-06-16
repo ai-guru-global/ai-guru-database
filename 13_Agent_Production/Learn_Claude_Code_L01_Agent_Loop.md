@@ -74,7 +74,7 @@ def agent_loop(messages):
 
 ## 关联阅读
 
-- [[90_Learn/Courses/Learn_Claude_Code_Course]] — 完整 20 课映射
+- [[90_Learn/courses/share_ai/learn_claude_code]] — 完整 20 课映射
 - [[references/learn-claude-code]] — 仓库引用索引
 - [[13_Agent_Production/Agent_Harness/The_Anatomy_of_an_Agent_Harness]] — Harness 工程定义
 - [[13_Agent_Production/GenAI_L17_AI_Agents]] — AI 代理基础

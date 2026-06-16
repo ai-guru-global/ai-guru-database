@@ -249,7 +249,7 @@ Phase 6: 前沿专题（多模态 / Agent / 世界模型）
 
 ## Related
 
-- [[90_Learn/milestones]] — 里程碑自测 (共享: courses, education, learning, study-path)
+- [[90_Learn/guides/milestones]] — 里程碑自测 (共享: courses, education, learning, study-path)
 - [[90_Learn/pathways/absolute-beginner]] — 零基础通识路径 (共享: courses, education, learning, study-path)
 - [[90_Learn/pathways/java-developer]] — Java 开发者 AI 路径 (共享: courses, education, learning, study-path)
 - [[90_Learn/pathways/llm-engineer]] — LLM 工程师路径 (共享: courses, education, learning, study-path)

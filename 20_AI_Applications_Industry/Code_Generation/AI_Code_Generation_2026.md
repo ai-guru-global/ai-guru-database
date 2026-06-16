@@ -52,5 +52,5 @@ tier: supporting
 - **知识产权**: 训练数据的版权问题
 - **技能退化**: 过度依赖可能降低编程能力
 
-> **关联**: -> [[17_AI_Coding|AI 编程]] | [[15_Testing|测试]] | [[90_Learn/AI_Engineering_Roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[17_AI_Coding|AI 编程]] | [[15_Testing|测试]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
 

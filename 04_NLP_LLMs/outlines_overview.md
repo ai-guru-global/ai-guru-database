@@ -33,4 +33,4 @@ tier: supporting
 | 速度 | 快(无需重试) | 中(可能重试) |
 | 依赖 | 需要 GPU | 只需 API |
 
-> **关联**: -> [[04_NLP_LLMs/Structured_Output_Guide|结构化输出指南]] | [[90_Learn/AI_Engineering_Roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[04_NLP_LLMs/Structured_Output_Guide|结构化输出指南]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]

@@ -154,6 +154,6 @@ This reference was generated from the repository cloned locally at `_raw/github-
 
 ## Related
 
-- [[90_Learn/Learning_Paths_2026|2026 AI Learning Paths]]
-- [[90_Learn/AI_Engineering_Roadmap_2026|AI Engineering Roadmap 2026]]
+- [[90_Learn/guides/learning_paths_2026|2026 AI Learning Paths]]
+- [[90_Learn/guides/ai_engineering_roadmap_2026|AI Engineering Roadmap 2026]]
 - [[references/papers-with-code|Papers with Code]]

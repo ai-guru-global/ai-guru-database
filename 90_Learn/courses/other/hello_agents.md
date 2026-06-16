@@ -120,5 +120,5 @@ base_confidence: 0.82
 ## 学习路径建议
 
 1. **快速体验**: 阅读 [[references/hello-agents]] 了解项目背景，直接跳到 [[13_Agent_Production/Hello_Agents_L13_Travel_Assistant]] 看完整项目效果。
-2. **系统学习**: 按 01 → 03 → 04 → 06 → 07 → 08 → 09 → 10 → 11 → 12 → 13 的顺序阅读，配合 [[90_Learn/AI_Engineering_Roadmap_2026]] 查漏补缺。
+2. **系统学习**: 按 01 → 03 → 04 → 06 → 07 → 08 → 09 → 10 → 11 → 12 → 13 的顺序阅读，配合 [[90_Learn/guides/ai_engineering_roadmap_2026]] 查漏补缺。
 3. **工程实战**: 重点看 [[13_Agent_Production/Hello_Agents_L06_Frameworks_AutoGen_LangGraph]]、[[13_Agent_Production/Hello_Agents_L10_Agent_Protocols]]、[[13_Agent_Production/Hello_Agents_L13_Travel_Assistant]]，并结合 [[13_Agent_Production/Agent_Frameworks/AutoGen_Deep_Dive]]、[[11_RAG_Systems/Dify_Deep_Dive]] 做项目迁移。

@@ -180,7 +180,7 @@ Stage 1: 基础概念（轻量浏览，重点理解概念名称）
 
 ## Related
 
-- [[90_Learn/milestones]] — 里程碑自测 (共享: courses, education, learning, study-path)
+- [[90_Learn/guides/milestones]] — 里程碑自测 (共享: courses, education, learning, study-path)
 - [[90_Learn/pathways/ai-researcher]] — AI 研究者路径 (共享: courses, education, learning, study-path)
 - [[90_Learn/pathways/java-developer]] — Java 开发者 AI 路径 (共享: courses, education, learning, study-path)
 - [[90_Learn/pathways/llm-engineer]] — LLM 工程师路径 (共享: courses, education, learning, study-path)

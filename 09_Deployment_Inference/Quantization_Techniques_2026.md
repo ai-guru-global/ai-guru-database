@@ -1887,7 +1887,11 @@ graph TB
 
 ## 8. 参考资料与交叉引用
 
-### 8.1 推理引擎深度解析
+### 8.1 量化精度影响分析
+
+本文聚焦量化方法的实现细节。关于量化对模型输出质量的影响（失效机制、层敏感度、校准数据选择、困惑度评估等），参见 [量化精度深度解析](./Quantization_Precision_Deep_Dive.md)。
+
+### 8.2 推理引擎深度解析
 
 量化模型需要高效的推理引擎来发挥加速效果:
 
@@ -1895,11 +1899,11 @@ graph TB
 - **TensorRT-LLM**: 参见 [TensorRT-LLM 深度解析](./TensorRT_LLM_Deep_Dive.md) — SmoothQuant W8A8 的原生支持，FP8 GEMM 优化
 - **llama.cpp**: 参见 [llama.cpp 深度解析](./llama_cpp_Deep_Dive.md) — GGUF 格式量化的完整工具链，CPU+GPU 混合推理
 
-### 8.2 微调与量化
+### 8.3 微调与量化
 
 - **QLoRA 与 PEFT**: 参见 [PEFT 2026](../04_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/PEFT_2026.md) — NF4 4-bit 加载 + LoRA 微调的完整流程
 
-### 8.3 核心论文
+### 8.4 核心论文
 
 | 论文 | 年份 | 关键贡献 |
 |------|------|----------|
@@ -1914,7 +1918,7 @@ graph TB
 | BitNet b1.58 (Ma et al.) | 2024 | 1.58-bit 三值权重 LLM |
 | DeepSeek-V3 (DeepSeek) | 2024 | 大规模 FP8 混合精度训练 |
 
-### 8.4 工具链速查
+### 8.5 工具链速查
 
 ```
 量化工具链速查表

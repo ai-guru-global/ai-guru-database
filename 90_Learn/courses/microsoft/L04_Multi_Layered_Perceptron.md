@@ -92,5 +92,5 @@ for x, y in minibatches:
 
 ## 相关阅读
 
-- 课程索引：[[90_Learn/Courses/Microsoft_AI_For_Beginners]]
+- 课程索引：[[90_Learn/courses/microsoft/microsoft_ai_for_beginners]]
 - 本库相关页面：[[03_Deep_Learning/Neural_Network_Core/Neural_Network_Core]]、[[03_Deep_Learning/Optimization/Optimization]]

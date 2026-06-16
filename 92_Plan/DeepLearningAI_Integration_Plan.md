@@ -46,4 +46,4 @@ updated: "2026-06-12"
 ---
 ## Related
 - [[92_Plan/HuggingFace_Integration_Plan]]
-- [[90_Learn/Learning_Paths_2026]]
+- [[90_Learn/guides/learning_paths_2026]]

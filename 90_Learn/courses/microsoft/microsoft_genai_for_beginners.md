@@ -82,7 +82,7 @@ source_url: "https://github.com/microsoft/generative-ai-for-beginners/blob/main/
 | 课号 | 课程名称 | 本库建议配合阅读 | 页面链接 |
 |------|----------|------------------|----------|
 | 15 | 检索增强生成（RAG）与向量数据库 | [[11_RAG_Systems/RAG_Systems]]、[[11_RAG_Systems/RAG_Advanced_2026]] | [[11_RAG_Systems/GenAI_L15_RAG_and_Vector_Databases]] |
-| 16 | 开源模型与 Hugging Face | [[04_NLP_LLMs/Global_LLM_Ecosystem/README]]、[[90_Learn/Courses/HuggingFace_Official_Courses]] | [[04_NLP_LLMs/GenAI_L16_Open_Source_Models_and_Hugging_Face]] |
+| 16 | 开源模型与 Hugging Face | [[04_NLP_LLMs/Global_LLM_Ecosystem/README]]、[[90_Learn/courses/hugging_face/official_courses]] | [[04_NLP_LLMs/GenAI_L16_Open_Source_Models_and_Hugging_Face]] |
 
 ### AI 代理（L17）
 
@@ -113,7 +113,7 @@ source_url: "https://github.com/microsoft/generative-ai-for-beginners/blob/main/
 
 ## 与 Microsoft AI For Beginners 的关系
 
-> 本课程（Generative AI for Beginners）专注于 **生成式 AI**，是 [[90_Learn/Courses/Microsoft_AI_For_Beginners]]（12 周 AI 基础课程）的姊妹篇。两门课程互补：
+> 本课程（Generative AI for Beginners）专注于 **生成式 AI**，是 [[90_Learn/courses/microsoft/microsoft_ai_for_beginners]]（12 周 AI 基础课程）的姊妹篇。两门课程互补：
 >
 > | 维度 | AI For Beginners | Generative AI For Beginners |
 > |------|------------------|---------------------------|
@@ -128,9 +128,9 @@ source_url: "https://github.com/microsoft/generative-ai-for-beginners/blob/main/
 
 ## 相关阅读
 
-- [[90_Learn/Courses/Microsoft_AI_For_Beginners]] — Microsoft 12 周 AI 基础课程映射
-- [[90_Learn/AI_Engineering_Roadmap_2026]] — AI 工程师学习路线
-- [[90_Learn/Learning_Paths_2026]] — 本库 6 条学习路径总览
-- [[90_Learn/Courses/HuggingFace_Official_Courses]] — Hugging Face 官方课程
-- [[90_Learn/Courses/DeepLearningAI_Short_Courses]] — DeepLearning.AI 前沿短课程
+- [[90_Learn/courses/microsoft/microsoft_ai_for_beginners]] — Microsoft 12 周 AI 基础课程映射
+- [[90_Learn/guides/ai_engineering_roadmap_2026]] — AI 工程师学习路线
+- [[90_Learn/guides/learning_paths_2026]] — 本库 6 条学习路径总览
+- [[90_Learn/courses/hugging_face/official_courses]] — Hugging Face 官方课程
+- [[90_Learn/courses/deeplearning_ai/short_courses]] — DeepLearning.AI 前沿短课程
 - [[references/microsoft-genai-for-beginners]] — 外部源引用索引

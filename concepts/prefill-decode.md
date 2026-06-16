@@ -13,9 +13,12 @@ relationships:
     type: uses
   - target: "09_Deployment_Inference/Inference_Performance/Prefill_Decode_Disaggregation"
     type: optimized_by
+  - target: "09_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy"
+    type: simplified_by
 sources:
   - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
   - 09_Deployment_Inference/Inference_Performance/Prefill_Decode_Disaggregation.md
+  - 09_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy.md
 summary: "LLM 推理分为 Prefill（处理输入，计算密集）和 Decode（逐 token 生成，内存带宽密集）两阶段。优化策略截然不同，理解两阶段差异是推理系统设计的核心。"
 provenance:
   extracted: 0.60
@@ -31,6 +34,18 @@ updated: 2026-06-04
 # Prefill/Decode 推理阶段 (Inference Phases)
 
 > 理解推理的两个阶段，才能分别优化它们。
+
+---
+
+## 大白话
+
+你把问题发给 ChatGPT，它要干两件事：
+
+1. **Prefill**：先把你的话全部看一遍，理解上下文，算出一个“记忆”（KV Cache）。
+2. **Decode**：然后一个字一个字往外蹦，每蹦一个字都要回头看前面的记忆。
+
+- Prefill 决定你等多久看到第一个字（TTFT）。
+- Decode 决定后面每个字蹦得多快（TPOT）。
 
 ---
 
@@ -151,5 +166,7 @@ Append 优化：将新 token 的 KV 写入与 Attention 计算融合，减少一
 - [[concepts/flash-attention-kernels]] — FlashAttention 内核（Prefill 加速）
 - [[concepts/paged-attention]] — PagedAttention（KV Cache 管理）
 - [[concepts/mixture-of-experts]] — MoE（与推理阶段的协同）
+- [[concepts/ttft]] — TTFT
 - [[09_Deployment_Inference/Inference_Performance/Prefill_Decode_Disaggregation|Prefill-Decode 分离]]
+- [[09_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy|推理性能术语大白话解释]]
 - [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack

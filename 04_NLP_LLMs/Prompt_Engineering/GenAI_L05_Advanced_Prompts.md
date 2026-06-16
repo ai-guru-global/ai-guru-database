@@ -720,7 +720,7 @@ if __name__ == '__main__':
 
 ## 扩展阅读
 
-- [[90_Learn/Courses/Microsoft_GenAI_For_Beginners]] — 课程总览与章节映射
+- [[90_Learn/courses/microsoft/microsoft_genai_for_beginners]] — 课程总览与章节映射
 - [[04_NLP_LLMs/Prompt_Engineering/GenAI_L04_Prompt_Engineering_Fundamentals]] — 第 4 课：提示工程基础
 - [[04_NLP_LLMs/Prompt_Engineering/Prompt_Engineering]] — 提示工程深度指南
 - [[04_NLP_LLMs/god-tier-prompts_overview]] — 高级提示模式概览

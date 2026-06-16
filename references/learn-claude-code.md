@@ -13,7 +13,7 @@ tier: supporting
 
 # Learn Claude Code (shareAI-lab)
 
-> 外部源引用索引。完整课程映射与每课的概念链接见 **[[90_Learn/Courses/Learn_Claude_Code_Course]]**。
+> 外部源引用索引。完整课程映射与每课的概念链接见 **[[90_Learn/courses/share_ai/learn_claude_code]]**。
 
 ## 项目信息
 
@@ -58,11 +58,11 @@ tier: supporting
 
 ## 学习路线
 
-主线：**行动 → 处理复杂工作 → 记忆与恢复 → 长期任务 → 协作 → 扩展与组装**。详见 [[90_Learn/Courses/Learn_Claude_Code_Course]] 的完整课表。
+主线：**行动 → 处理复杂工作 → 记忆与恢复 → 长期任务 → 协作 → 扩展与组装**。详见 [[90_Learn/courses/share_ai/learn_claude_code]] 的完整课表。
 
 ## 相关页面
 
-- [[90_Learn/Courses/Learn_Claude_Code_Course]] — 完整 20 课映射与本库概念链接
+- [[90_Learn/courses/share_ai/learn_claude_code]] — 完整 20 课映射与本库概念链接
 - [[13_Agent_Production/Agent_Harness/The_Anatomy_of_an_Agent_Harness]] — Harness 工程定义
 - [[13_Agent_Production/Agentic_Coding_Tools/Claude_Code_Deep_Dive]] — Claude Code 产品深度解析
 - [[13_Agent_Production/Agent_Harness/Agent_Harness_Architecture_2026]] — Agent Harness 架构 2026

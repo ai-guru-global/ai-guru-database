@@ -59,5 +59,5 @@ tier: "supporting"
 ## 参考
 
 - 仓库主线入口：`_raw/github-sources/ailearning/docs/ml/`
-- 上级指南：[[90_Learn/Courses/ApacheCN_AILearning_Guide]]
+- 上级指南：[[90_Learn/courses/apachecn/ailearning_guide]]
 - 引用索引：[[references/apachecn-ailearning]]

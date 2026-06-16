@@ -36,5 +36,5 @@ lifecycle: reviewed
 - 想从直觉理解线性代数的工程师
 - 需要补课数学基础再学 ML 的开发者
 
-> **关联**: -> [[01_Fundamentals|数学基础]] | [[90_Learn/AI_Engineering_Roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[01_Fundamentals|数学基础]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
 

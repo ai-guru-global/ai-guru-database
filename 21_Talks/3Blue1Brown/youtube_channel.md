@@ -28,5 +28,5 @@ tier: supporting
 | [Neural Networks](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi) | 4 | 神经网络可视化 |
 | [But what is a Neural Network?](https://www.youtube.com/watch?v=aircAruvnKk) | 1 | 神经网络入门 |
 
-> **关联**: -> [[01_Fundamentals|数学基础]] | [[90_Learn/AI_Engineering_Roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[01_Fundamentals|数学基础]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
 

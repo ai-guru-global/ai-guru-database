@@ -4,7 +4,7 @@ category: "12-architecture-infrastructure"
 tags: ["alibaba-cloud", "ai-stack", "inference", "private-deployment", "deepseek", "qwen", "appliance", "a-speed"]
 summary: "> **一句话理解**: 阿里云 AI Stack 是面向政企的软硬一体 AI 推理一体机——开箱即用部署 Qwen/DeepSeek 满血大模型，支持 APG/Ascend/Nvidia 三种 GPU，提供 A-Speed 加速推理、模型网关、RAG 应用等全链路能力。"
 created: "2026-06-03"
-updated: "2026-06-04"
+updated: "2026-06-16"
 ---
 
 # 阿里云 AI Stack: 企业级软硬一体 AI 推理平台
@@ -776,6 +776,23 @@ IDC 发布《中国 AI 训推一体机技术能力评估，2025》报告，阿�
 
 ---
 
+## 11. 生产运维工具链
+
+AI Stack 一体机交付后，日常生产环境涉及容器运行时、GPU 监控、模型管理、推理服务、训练启动、K8s 编排以及 AI Stack 专属工具。完整工具链已整理为专题：
+
+| 文档 | 内容 | 适用角色 |
+|------|------|----------|
+| [AI Stack 生产工具链总览](./AI_Stack_Production_Toolchain.md) | 工具全景速查与生命周期流程图 | 所有 AI Stack 用户 |
+| [容器与运行时](./AI_Stack_Container_Runtime_Guide.md) | nerdctl / crictl / ctr / docker / podman | SRE、平台工程师 |
+| [GPU 监控](./AI_Stack_GPU_Monitoring_Guide.md) | nvidia-smi / ppu-smi / rocm-smi / pmon | 运维、性能工程师 |
+| [模型下载与管理](./AI_Stack_Model_Management_Guide.md) | huggingface-cli / modelscope / git-lfs | 模型工程师 |
+| [推理服务](./AI_Stack_Inference_Serving_Guide.md) | vLLM / SGLang / Ollama / llama-server | 推理工程师 |
+| [训练启动器](./AI_Stack_Training_Launchers_Guide.md) | torchrun / accelerate / deepspeed / swift | 训练工程师 |
+| [K8s 编排](./AI_Stack_K8s_Operations_Guide.md) | kubectl / helm | K8s 工程师 |
+| [AI Stack 专属工具](./AI_Stack_Exclusive_Tools_Guide.md) | stackops / aioController | AI Stack 运维 |
+
+---
+
 ## 参考资料
 
 - [阿里云 AI Stack 产品页](https://www.aliyun.com/product/ai-stack)
@@ -835,3 +852,11 @@ IDC 发布《中国 AI 训推一体机技术能力评估，2025》报告，阿�
 - [[concepts/mixed-precision]] — 混合精度（BF16/FP8/AMP）
 - [[concepts/gpu-interconnect]] — NVLink/GPU 互联（NVSwitch/HCCS）
 - [[concepts/lora-peft]] — LoRA/PEFT 参数高效微调
+- [[12_Architecture_Infrastructure/AI_Stack_Production_Toolchain]] — AI Stack 生产工具链总览
+- [[12_Architecture_Infrastructure/AI_Stack_Container_Runtime_Guide]] — AI Stack 容器与运行时指南
+- [[12_Architecture_Infrastructure/AI_Stack_GPU_Monitoring_Guide]] — AI Stack GPU 监控指南
+- [[12_Architecture_Infrastructure/AI_Stack_Model_Management_Guide]] — AI Stack 模型下载与管理指南
+- [[12_Architecture_Infrastructure/AI_Stack_Inference_Serving_Guide]] — AI Stack 推理服务指南
+- [[12_Architecture_Infrastructure/AI_Stack_Training_Launchers_Guide]] — AI Stack 训练启动器指南
+- [[12_Architecture_Infrastructure/AI_Stack_K8s_Operations_Guide]] — AI Stack K8s 编排指南
+- [[12_Architecture_Infrastructure/AI_Stack_Exclusive_Tools_Guide]] — AI Stack 专属运维工具指南

@@ -336,7 +336,7 @@ for item in result.items:
 
 ## 扩展阅读
 
-- [[90_Learn/Courses/Microsoft_GenAI_For_Beginners]] — 课程总览与章节映射
+- [[90_Learn/courses/microsoft/microsoft_genai_for_beginners]] — 课程总览与章节映射
 - [[04_NLP_LLMs/Prompt_Engineering/GenAI_L04_Prompt_Engineering_Fundamentals]] — 第 4 课：提示工程基础
 - [[19_Ethics_Safety/Ethics-in-nutshell]] — AI 伦理概述
 - [[19_Ethics_Safety/AI_Security_2026/README]] — AI 安全体系

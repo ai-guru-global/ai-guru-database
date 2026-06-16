@@ -9,6 +9,8 @@ relationships:
     type: related_to
   - target: "concepts/ai-hardware"
     type: depends_on
+  - target: "concepts/model-precision"
+    type: detailed_by
 sources:
   - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
   - 07_Model_Training/Mixed_Precision_Training.md
@@ -150,6 +152,7 @@ AMP 训练流程:
 
 ## Related
 
+- [[concepts/model-precision]] — 模型精度（数值精度 vs 模型准确性的概念桥梁）
 - [[concepts/model-training]] — 模型训练（混合精度的应用）
 - [[concepts/model-compression]] — 模型压缩（量化技术）
 - [[concepts/ai-hardware]] — AI 硬件（GPU 精度支持）

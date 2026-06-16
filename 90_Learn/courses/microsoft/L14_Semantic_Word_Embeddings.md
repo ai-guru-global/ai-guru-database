@@ -189,7 +189,7 @@ output = classifier(sentence_vector)
 
 ## 相关阅读
 
-- 课程索引：[[90_Learn/Courses/Microsoft_AI_For_Beginners]]
+- 课程索引：[[90_Learn/courses/microsoft/microsoft_ai_for_beginners]]
 - 本库相关页面：
   - [[04_NLP_LLMs/Sequence_Models/Sequence_Models]]
   - [[04_NLP_LLMs/LLM_Data_Engineering/LLM_Data_Engineering_Deep_Dive]]（文本表示与数据工程）

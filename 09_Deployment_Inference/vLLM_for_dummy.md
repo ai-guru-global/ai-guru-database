@@ -143,6 +143,42 @@ PagedAttention：负责"算出来的 KV Cache 怎么存、怎么取、怎么共�
 
 ---
 
+## 8. 一张架构图看懂：为什么 vLLM 能让 GPU 服务更多人
+
+```mermaid
+flowchart LR
+    A[多个用户同时提问] --> B[vLLM 推理服务]
+    B --> C[Continuous Batching<br/>动态把请求拼成 batch]
+    C --> D[PagedAttention]
+    D --> E[把 KV Cache 切成小页]
+    E --> F[按需分配<br/>前缀共享<br/>减少碎片]
+    F --> G[显存利用率从 60% → 95%+]
+    G --> H[同一 GPU 同时服务更多请求]
+    H --> I[排队少了，生成更快]
+
+    style D fill:#e3f2fd,stroke:#1565c0
+    style G fill:#fff3e0,stroke:#f57c00
+    style I fill:#e8f5e9,stroke:#2e7d32
+```
+
+### 链路大白话
+
+```
+1. 很多人同时问问题
+        ↓
+2. vLLM 不一个个排队处理，而是把大家"拼桌"
+        ↓
+3. PagedAttention 把每个人的"记忆"（KV Cache）切成小块
+        ↓
+4. 用多少切多少，共同记得的部分还共用同一块
+        ↓
+5. 原来空着的显存被填满了
+        ↓
+6. 所以同一张 GPU 能同时服务更多人，速度也就更快
+```
+
+---
+
 *Last updated: 2026-06-15*
 
 ## Related

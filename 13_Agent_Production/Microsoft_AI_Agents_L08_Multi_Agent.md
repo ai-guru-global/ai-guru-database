@@ -136,4 +136,4 @@ updated: 2026-06-15
 - [[13_Agent_Production/Microsoft_AI_Agents_L09_Metacognition]] — 下一课：元认知
 - [[13_Agent_Production/Agentic_Design_Patterns_AndrewNg]] — Andrew Ng 的 Multi-Agent 模式
 - [[13_Agent_Production/Agent_Workflow/README]] — 工作流编排概览
-- [[90_Learn/Courses/Microsoft_AI_Agents_for_Beginners]] — 课程总览
+- [[90_Learn/courses/microsoft/microsoft_ai_agents_for_beginners]] — 课程总览

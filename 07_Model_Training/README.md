@@ -4,7 +4,7 @@ category: '07-model-training'
 tags: ["model-training", "distributed-training", "optimization", "fsdp"]
 summary: '> **一句话理解**: 模型训练是 AI 系统的"锻造车间"——将海量数据通过分布式计算、优化算法和工程技巧，转化为具有智能的模型参数。'
 created: '2026-05-31'
-updated: '2026-05-31'
+updated: '2026-06-16'
 ---
 
 # 模型训练 (Model Training)
@@ -38,6 +38,17 @@ updated: '2026-05-31'
 - **遇到问题?** → [模型问题排查手册](./Model_Troubleshooting_Guide.md)（实战故障诊断）
 - **系统学习** → [Scaling Laws](./Scaling_Laws_and_Training_Dynamics.md) → [Tokenizer](./Tokenizer_Design_2026.md) → [优化器](./Optimizer_Advanced_2026.md) → [数据策展](./Data_Curation_and_Mixture_2026.md) → [GRPO 对齐](./GRPO_and_New_Alignment_Methods.md) → [剪枝蒸馏](./Pruning_and_Knowledge_Distillation.md)
 - **简化版** → [Model_Training_for_dummy](./Model_Training_for_dummy.md)
+
+## AI Stack 训练启动器
+
+> 如果你正在使用阿里云 AI Stack 一体机，以下页面提供训练启动、GPU 监控与模型管理的生产级指南：
+
+| 文档 | 内容 | 适用角色 |
+|------|------|----------|
+| [AI Stack 生产工具链总览](../12_Architecture_Infrastructure/AI_Stack_Production_Toolchain.md) | AI Stack 工具全景与生命周期 | 所有 AI Stack 用户 |
+| [AI Stack 训练启动器](../12_Architecture_Infrastructure/AI_Stack_Training_Launchers_Guide.md) | torchrun / accelerate / deepspeed / swift | 训练工程师 |
+| [AI Stack GPU 监控](../12_Architecture_Infrastructure/AI_Stack_GPU_Monitoring_Guide.md) | nvidia-smi / ppu-smi 训练监控 | 运维、训练工程师 |
+| [AI Stack 模型管理](../12_Architecture_Infrastructure/AI_Stack_Model_Management_Guide.md) | 模型下载与版本组织 | 模型工程师 |
 
 ---
 
@@ -89,6 +100,10 @@ updated: '2026-05-31'
 - [[07_Model_Training/README_for_dummy|07 模型训练 — 小白版 🏋️]]
 - [[07_Model_Training/ms_swift_Deep_Dive|ms-swift 深度解析：魔搭大模型训练推理全链路框架]]
 - [[07_Model_Training/ms_swift_Command_Line_Parameters|ms-swift 命令行参数完全参考手册]]
+- [[12_Architecture_Infrastructure/AI_Stack_Production_Toolchain|AI Stack 生产工具链总览]]
+- [[12_Architecture_Infrastructure/AI_Stack_Training_Launchers_Guide|AI Stack 训练启动器指南]]
+- [[12_Architecture_Infrastructure/AI_Stack_GPU_Monitoring_Guide|AI Stack GPU 监控指南]]
+- [[12_Architecture_Infrastructure/AI_Stack_Model_Management_Guide|AI Stack 模型下载与管理指南]]
 
 - [[concepts/model-training]] — 模型训练
 - [[concepts/distributed-systems]] — 分布式系统

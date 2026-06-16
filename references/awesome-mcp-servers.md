@@ -36,5 +36,5 @@ tier: supporting
 
 Model Context Protocol (MCP) 是 Anthropic 提出的开放标准,用于连接 AI 模型与外部数据源和工具。MCP 服务器提供工具和资源,MCP 客户端(如 Claude Desktop、Cursor)可以调用这些服务。
 
-> **关联**: -> [[14_AI_Gateway|AI 网关]] | [[90_Learn/AI_Engineering_Roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[14_AI_Gateway|AI 网关]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
 

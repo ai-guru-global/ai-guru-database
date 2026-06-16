@@ -4,7 +4,7 @@ category: 04-nlp-llms-fine-tuning-techniques
 tags: ["nlp", "llm", "transformer", "gpt", "bert"]
 summary: "| 文档 | 内容 | 适用读者 |"
 created: 2026-05-31
-updated: 2026-05-31
+updated: 2026-06-16
 ---
 
 # 微调技术 (Fine-tuning Techniques)
@@ -13,6 +13,7 @@ updated: 2026-05-31
 
 | 文档 | 内容 | 适用读者 |
 |------|------|----------|
+| [LoRA_QLoRA_SFT_RLHF_DPO_in_Detail.md](./LoRA_QLoRA_SFT_RLHF_DPO_in_Detail.md) | LoRA/QLoRA/SFT/RLHF/DPO 大白话详解与实战 | 系统理解 |
 | [Fine_tuning_Techniques.md](./Fine_tuning_Techniques.md) | 微调技术详解 | 进阶学习 |
 | [Fine_tuning_Techniques_for_dummy.md](./Fine_tuning_Techniques_for_dummy.md) | 微调入门 | 初学者 |
 | [PEFT_2026/](./PEFT_2026/) | PEFT 2026 最佳实践 | 实战学习 |
@@ -53,10 +54,12 @@ PEFT (参数高效微调):
 
 ---
 
-*Last updated: 2026-04-01*
+*Last updated: 2026-06-16*
 
 ## Related
 
+- [[04_NLP_LLMs/Fine_tuning_Techniques/LoRA_QLoRA_SFT_RLHF_DPO_in_Detail]] — LoRA / QLoRA / SFT / RLHF / DPO 大白话详解与实战
+- [[concepts/lora-qlora-sft-rlhf-dpo]] — 概念卡片：LoRA / QLoRA / SFT / RLHF / DPO 大白话串讲
 - [[04_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/README]] — PEFT 2026 (参数高效微调) (共享: bert, gpt, llm, nlp, transformer)
 - [[04_NLP_LLMs/LLM_Architectures/LLM-Basics-in-nutshell]] — 大语言模型基础速成指南 (共享: bert, gpt, llm, nlp, transformer)
 - [[04_NLP_LLMs/Multimodal_Models/Multimodal_Architectures_2026]] — 多模态模型架构 2026：从 GPT-4V 到原生多模态 AGI (共享: bert, gpt, llm, nlp, transformer)

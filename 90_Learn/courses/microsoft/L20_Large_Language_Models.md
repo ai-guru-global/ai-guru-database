@@ -127,7 +127,7 @@ print(tokenizer.decode(outputs[0], skip_special_tokens=True))
 
 ## 相关阅读
 
-- 课程索引：[[90_Learn/Courses/Microsoft_AI_For_Beginners]]
+- 课程索引：[[90_Learn/courses/microsoft/microsoft_ai_for_beginners]]
 - 本库相关页面：
   - [[04_NLP_LLMs/LLM_Architectures/LLM_Architectures]]
   - [[04_NLP_LLMs/Prompt_Engineering/Prompt_Engineering]]

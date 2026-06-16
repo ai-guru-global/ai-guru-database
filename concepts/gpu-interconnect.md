@@ -11,8 +11,11 @@ relationships:
     type: related_to
   - target: "concepts/heterogeneous-gpu"
     type: related_to
+  - target: "09_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy"
+    type: simplified_by
 sources:
   - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 09_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy.md
 summary: "GPU 互联是分布式训练/推理的通信瓶颈。NVLink 5.0 达 1.8 TB/s 双向带宽，是 PCIe 5.0 的 14 倍。AI Stack APG 卡间互联达 700 GB/s，机间 1.6T。"
 provenance:
   extracted: 0.55
@@ -28,6 +31,18 @@ updated: 2026-06-04
 # NVLink 与 GPU 互联技术 (GPU Interconnect)
 
 > GPU 的算力再强，如果彼此之间无法高效通信，整体性能就上不去。
+
+---
+
+## 大白话
+
+多 GPU 一起工作时，它们之间要传数据。
+
+- **NVLink**：像 GPU 之间的“专用高速通道”，在一块主板或相邻卡之间很快。
+- **InfiniBand（IB）**：像机房里的“高速公路”，连接不同服务器上的 GPU。
+- **普通以太网**：像乡间小路，慢且不稳定。
+
+通信慢了，GPU 会空等，多卡反而更慢。
 
 ---
 

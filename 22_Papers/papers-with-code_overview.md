@@ -32,4 +32,4 @@ tier: supporting
 | 排行榜 | 有 | 无 | 无 |
 | 数据集 | 有 | 无 | 无 |
 
-> **关联**: -> [[22_Papers|论文精读]] | [[90_Learn/AI_Engineering_Roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[22_Papers|论文精读]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]

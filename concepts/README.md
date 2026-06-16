@@ -2,7 +2,7 @@
 title: 概念卡片索引 (Concept Cards Index)
 category: meta
 tags: [concepts, knowledge-graph, index]
-summary: 90 张 AI 概念卡片，每张 5-9KB，覆盖 AI 全栈核心概念，与主章节通过 sources 字段关联。
+summary: 95 张 AI 概念卡片，每张 5-9KB，覆盖 AI 全栈核心概念，与主章节通过 sources 字段关联。
 created: 2026-06-03
 updated: 2026-06-15
 ---
@@ -75,6 +75,7 @@ updated: 2026-06-15
 | [tokenization](./tokenization.md) | 04_NLP_LLMs | BPE、SentencePiece、Tokenizer |
 | [mixture-of-experts](./mixture-of-experts.md) | 04_NLP_LLMs | MoE、稀疏激活、DeepSeek-V3 |
 | [lora-peft](./lora-peft.md) | 04_NLP_LLMs | LoRA、QLoRA、低秩微调、参数高效 |
+| [lora-qlora-sft-rlhf-dpo](./lora-qlora-sft-rlhf-dpo.md) | 04_NLP_LLMs | LoRA、QLoRA、SFT、RLHF、DPO 大白话串讲 |
 | [llm-data-engineering](./llm-data-engineering.md) | 04_NLP_LLMs | 预训练数据、SFT数据、合成数据、数据配比 |
 | [edge-llm](./edge-llm.md) | 04_NLP_LLMs | 小模型、量化、llama.cpp、端侧部署 |
 
@@ -98,7 +99,7 @@ updated: 2026-06-15
 | [ai-agents](./ai-agents.md) | 06_Reinforcement_Learning | ReAct、Tool Calling、MCP |
 | [ai-hardware](./ai-hardware.md) | 01_Fundamentals | GPU、TPU、H100/B200 |
 
-### 工程与部署（11 张）
+### 工程与部署（12 张）
 
 | 概念 | 来源章节 | 关键词 |
 |------|----------|--------|
@@ -108,6 +109,7 @@ updated: 2026-06-15
 | [model-serving](./model-serving.md) | 09_Deployment_Inference | vLLM、SGLang、模型服务 |
 | [model-inference](./model-inference.md) | 09_Deployment_Inference | 自回归生成、条件概率、前向传播、采样策略 |
 | [model-compression](./model-compression.md) | 09_Deployment_Inference | 量化、蒸馏、剪枝 |
+| [model-precision](./model-precision.md) | 09_Deployment_Inference | 数值精度、模型准确性、FP32/FP16/BF16/FP8/FP4/INT8/INT4 |
 | [knowledge-distillation](./knowledge-distillation.md) | 09_Deployment_Inference | Teacher-Student、logit蒸馏、DeepSeek-R1蒸馏 |
 | [mlops](./mlops.md) | 10_MLOps_Pipeline | CI/CD、实验追踪、特征存储 |
 | [rag-systems](./rag-systems.md) | 11_RAG_Systems | 向量数据库、混合检索 |
@@ -127,9 +129,15 @@ updated: 2026-06-15
 | [heterogeneous-gpu](./heterogeneous-gpu.md) | 12_Architecture_Infrastructure | 异构GPU、国产芯片、统一纳管 |
 | [flash-attention-kernels](./flash-attention-kernels.md) | 12_Architecture_Infrastructure | FlashMLA、FlashInfer、FlashAttention |
 | [inference-performance](./inference-performance.md) | 09_Deployment_Inference | TTFT、TPOT、吞吐、推理优化 |
+| [inference-performance-gaps](./inference-performance-gaps.md) | 09_Deployment_Inference | 推理性能缺口、边缘、异构、能耗 |
 | [expert-parallelism](./expert-parallelism.md) | 09_Deployment_Inference | MoE、All-to-All、专家并行 |
 | [request-scheduling](./request-scheduling.md) | 09_Deployment_Inference | Continuous Batching、抢占、SLO-aware |
 | [inference-autoscaling](./inference-autoscaling.md) | 09_Deployment_Inference | HPA、负载均衡、扩缩容 |
+| [grouped-query-attention](./grouped-query-attention.md) | 12_Architecture_Infrastructure | GQA、MQA、KV Cache 压缩 |
+| [flops](./flops.md) | 01_Fundamentals | GPU 算力、FLOPS |
+| [ttft](./ttft.md) | 09_Deployment_Inference | 首字等待时间、TTFT |
+| [quantization](./quantization.md) | 09_Deployment_Inference | FP8/INT8/INT4、量化 |
+| [prefill-decode-disaggregation](./prefill-decode-disaggregation.md) | 09_Deployment_Inference | PD 分离、Disaggregated Serving |
 | [rdma-roce](./rdma-roce.md) | 12_Architecture_Infrastructure | RDMA、RoCE、GPU 高速网络 |
 | [gpu-interconnect](./gpu-interconnect.md) | 12_Architecture_Infrastructure | NVLink、NVSwitch、PCIe、HCCS |
 | [prefill-decode](./prefill-decode.md) | 12_Architecture_Infrastructure | Prefill/Decode阶段、TTFT、TPS |
@@ -173,7 +181,7 @@ tier: core | supporting
 
 ## 统计
 
-- **总数**: 90 张概念卡片
+- **总数**: 95 张概念卡片
 - **平均大小**: ~5.8 KB
 - **覆盖章节**: 00-19 全部 20 个主章节
 - **关系类型**: related_to、prerequisite、builds_on

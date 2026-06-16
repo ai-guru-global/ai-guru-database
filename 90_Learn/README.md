@@ -122,11 +122,11 @@ Stage 0: AI 觉醒 ────────────────────�
 
 | 资源 | 说明 |
 |------|------|
-| [**职业角色路径指南 2026**](./Learning_Paths_2026.md) | 5 大职业角色学习路径全景 (ML/LLM/PM/MLOps/Research) |
-| [**AI 工程路线图 2026**](./AI_Engineering_Roadmap_2026.md) | 免费资源精选路线图（课程、论文、书籍、工具） |
-| [外部课程映射](./Courses/) | 18 门外部课程的章节映射（微软、HF、Datawhale 等） |
+| [**职业角色路径指南 2026**](./guides/learning_paths_2026.md) | 5 大职业角色学习路径全景 (ML/LLM/PM/MLOps/Research) |
+| [**AI 工程路线图 2026**](./guides/ai_engineering_roadmap_2026.md) | 免费资源精选路线图（课程、论文、书籍、工具） |
+| [外部课程映射](./courses/) | 18 门外部课程的章节映射（微软、HF、Datawhale 等） |
 | [概念层次卡片](./concepts/) | Stage 0-4 每个阶段的核心概念卡片 |
-| [里程碑自测](./milestones.md) | 每个 Stage 的自测问题与检查点 |
+| [里程碑自测](./guides/milestones.md) | 每个 Stage 的自测问题与检查点 |
 | [概念知识图谱](../91_Notes/AI_Concept_Knowledge_Graph.md) | 800+ 概念的完整依赖关系图 |
 | [新手导航（章节版）](../README_for_dummy.md) | 按章节组织的入门指南 |
 | [500+ AI Projects](../references/500-ai-projects.md) | 500+ AI/ML/DL/CV/NLP 实战项目合集索引 |
@@ -137,15 +137,15 @@ Stage 0: AI 觉醒 ────────────────────�
 
 ## Related
 
-- [[90_Learn/Learning_Paths_2026|AI Guru 学习路径指南]] — 五大 AI 职业角色学习路径全景指南
-- [[90_Learn/AI_Engineering_Roadmap_2026|AI 工程学习路线图 2026(免费资源精选)]]
+- [[90_Learn/guides/learning_paths_2026|AI Guru 学习路径指南]] — 五大 AI 职业角色学习路径全景指南
+- [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程学习路线图 2026(免费资源精选)]]
 - [[90_Learn/README_for_dummy|90 Learn — 小白版]]
-- [[90_Learn/milestones|里程碑自测]]
-- [[90_Learn/concepts/stage-0-awakening]] — Stage 0: AI 觉醒
-- [[90_Learn/concepts/stage1-foundation]] — Stage 1: 基础概念
-- [[90_Learn/concepts/stage2-core-tech]] — Stage 2: 核心技术
-- [[90_Learn/concepts/stage3-engineering]] — Stage 3: 工程实践
-- [[90_Learn/concepts/stage4-frontier]] — Stage 4: 前沿探索
+- [[90_Learn/guides/milestones|里程碑自测]]
+- [[90_Learn/concepts/stage0_awakening]] — Stage 0: AI 觉醒
+- [[90_Learn/concepts/stage1_foundation]] — Stage 1: 基础概念
+- [[90_Learn/concepts/stage2_core_tech]] — Stage 2: 核心技术
+- [[90_Learn/concepts/stage3_engineering]] — Stage 3: 工程实践
+- [[90_Learn/concepts/stage4_frontier]] — Stage 4: 前沿探索
 - [[90_Learn/pathways/absolute-beginner]] — 零基础通识路径
 - [[90_Learn/pathways/ml-practitioner]] — ML 从业者路径
 - [[90_Learn/pathways/llm-engineer]] — LLM 工程师路径

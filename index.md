@@ -11,6 +11,7 @@ title: Wiki Index
 - [[concepts/matryoshka-representation-learning]] — Matryoshka 表示学习：可截断的多尺度嵌入 ( #embeddings #rag #vector-database #matryoshka)
 - [[concepts/cdi]] — CDI 容器设备接口：GPU/异构加速器统一接入容器的标准 ( #cdi #kubernetes #gpu #containerd)
 - [[concepts/dra]] — DRA 动态资源分配：K8s 设备分配的现代机制，与 CDI 配对 ( #dra #kubernetes #gpu #scheduling)
+- [[concepts/hami]] — HAMi：CNCF Sandbox 异构 GPU 虚拟化中间件 ( #hami #gpu-virtualization #cncf #kubernetes #heterogeneous)
 - [[concepts/gpu-operator]] — NVIDIA GPU Operator：K8s 上 GPU 全栈运维的事实标准 ( #gpu-operator #kubernetes #nvidia)
 - [[concepts/oci-runtime]] — OCI Runtime Spec：容器运行时标准，CDI 注入的最终落点 ( #oci #container-runtime #runc)
 - [[concepts/gpustack]] — GPUStack：开源 GPU 集群管理与私有 MaaS 平台 ( #deployment #inference #gpu-cluster #maas)
@@ -56,12 +57,37 @@ title: Wiki Index
 ### 容器与设备接入
 - [[12_Architecture_Infrastructure/CDI_Deep_Dive]] — CDI 容器设备接口标准:GPU/异构加速器统一接入 K8s ( #cdi #kubernetes #gpu #containerd #device-plugin)
 - [[12_Architecture_Infrastructure/DRA_Deep_Dive]] — DRA 动态资源分配:K8s 设备分配的未来,与 CDI 配对 ( #dra #kubernetes #gpu #scheduling)
+- [[12_Architecture_Infrastructure/HAMi_Deep_Dive]] — HAMi 深度解析:CNCF Sandbox 异构 GPU 虚拟化与调度 ( #hami #cncf #gpu-virtualization #kubernetes #heterogeneous)
+- [[12_Architecture_Infrastructure/HAMi_for_dummy]] — HAMi 入门:让 Kubernetes GPU 像 CPU 一样共享 ( #hami #for-dummy #gpu-sharing)
+- [[12_Architecture_Infrastructure/HAMi_Operation_Guide]] — HAMi 运维指南:安装、配置、升级与监控 ( #hami #operations #kubernetes)
+- [[16_AI_Ops/HAMi_Troubleshooting_Guide]] — HAMi 问题排查与故障解决指南 ( #hami #troubleshooting #ops)
 - [[references/cdi-spec]] — CDI 规范官方源引用(CNCF/Apache-2.0/运行时支持矩阵) ( #cdi #cncf #references)
 
+### CNCF 云原生大模型 (Cloud Native AI)
+- [[12_Architecture_Infrastructure/CNCF_Cloud_Native_AI/README]] — CNCF 生态 18 个大模型项目五层架构全景与选型决策树 ( #cncf #kubernetes #cloud-native #llm #genai)
+- [[12_Architecture_Infrastructure/CNCF_Cloud_Native_AI/KServe_Deep_Dive]] — KServe:K8s 标准化推理平台 (CNCF 孵化) ( #cncf #kserve #inference #kubernetes)
+- [[12_Architecture_Infrastructure/CNCF_Cloud_Native_AI/KAITO_Deep_Dive]] — KAITO:一行 preset 部署 LLM 的 Operator (CNCF 沙箱) ( #cncf #kaito #inference #azure)
+- [[12_Architecture_Infrastructure/CNCF_Cloud_Native_AI/llm-d_Deep_Dive]] — llm-d:分布式 + 共享 KV Cache 推理框架 ( #cncf #llm-d #distributed #kv-cache)
+- [[12_Architecture_Infrastructure/CNCF_Cloud_Native_AI/llmaz_Deep_Dive]] — llmaz:易用优先的多引擎 K8s 推理平台 ( #cncf #llmaz #vllm #sglang)
+- [[12_Architecture_Infrastructure/CNCF_Cloud_Native_AI/AIBrix_Deep_Dive]] — AIBrix:模块化 vLLM 推理基础设施组件 ( #cncf #aibrix #vllm #autoscaling)
+- [[12_Architecture_Infrastructure/CNCF_Cloud_Native_AI/Volcano_Deep_Dive]] — Volcano:Gang Scheduling 批处理调度器 (CNCF 孵化) ( #cncf #volcano #scheduling #batch)
+- [[12_Architecture_Infrastructure/CNCF_Cloud_Native_AI/KAI_Scheduler_Deep_Dive]] — KAI Scheduler:万卡级拓扑感知 GPU 调度器 (CNCF 沙箱) ( #cncf #kai-scheduler #gpu #topology)
+- [[12_Architecture_Infrastructure/CNCF_Cloud_Native_AI/Kueue_Deep_Dive]] — Kueue:K8s 原生作业排队/配额系统 (SIGs) ( #cncf #kueue #scheduling #quota)
+- [[12_Architecture_Infrastructure/CNCF_Cloud_Native_AI/KubeRay_Deep_Dive]] — KubeRay:Ray on K8s,vLLM 分布式底座 ( #cncf #kuberay #ray #distributed)
+- [[12_Architecture_Infrastructure/CNCF_Cloud_Native_AI/KitOps_Deep_Dive]] — KitOps/ModelKit:大模型制品打包标准 (CNCF 沙箱) ( #cncf #kitops #modelkit #oci #packaging)
+- [[12_Architecture_Infrastructure/CNCF_Cloud_Native_AI/Dragonfly_Deep_Dive]] — Dragonfly:P2P 加速权重分发 (CNCF 毕业) ( #cncf #dragonfly #p2p #distribution)
+- [[12_Architecture_Infrastructure/CNCF_Cloud_Native_AI/K8sGPT_Deep_Dive]] — K8sGPT:给 K8s 装一个 AI SRE (CNCF 沙箱) ( #cncf #k8sgpt #aiops #sre)
+- [[12_Architecture_Infrastructure/CNCF_Cloud_Native_AI/HolmesGPT_Deep_Dive]] — HolmesGPT:AI 事故调查员 (CNCF 沙箱) ( #cncf #holmesgpt #aiops #incident-response)
+- [[12_Architecture_Infrastructure/CNCF_Cloud_Native_AI/kagent_Deep_Dive]] — kagent:K8s 原生 DevOps Agent 框架 (CNCF 沙箱) ( #cncf #kagent #agent #devops)
+- [[12_Architecture_Infrastructure/CNCF_Cloud_Native_AI/Knative_Deep_Dive]] — Knative:LLM 服务 scale-to-zero (CNCF 毕业) ( #cncf #knative #serverless #autoscaling)
+- [[12_Architecture_Infrastructure/CNCF_Cloud_Native_AI/Envoy_AI_Gateway_Deep_Dive]] — Envoy AI Gateway:基于 Envoy 的 GenAI 统一入口 ( #cncf #envoy #ai-gateway)
+- [[12_Architecture_Infrastructure/CNCF_Cloud_Native_AI/Kgateway_Deep_Dive]] — Kgateway:Envoy 内核 API+AI 双模网关 ( #cncf #kgateway #envoy #gateway-api)
+- [[12_Architecture_Infrastructure/CNCF_Cloud_Native_AI/AgentGateway_Deep_Dive]] — AgentGateway:AI Agent 与 MCP 服务器代理网关 ( #cncf #agentgateway #mcp #agent)
+
 ### 学习课程
-- [[90_Learn/Courses/Microsoft_AI_For_Beginners]] — Microsoft 官方 12 周 AI 初学者课程映射 ( #learning-paths #microsoft #course)
+- [[90_Learn/courses/microsoft/microsoft_ai_for_beginners]] — Microsoft 官方 12 周 AI 初学者课程映射 ( #learning-paths #microsoft #course)
 - [[references/microsoft-ai-for-beginners]] — Microsoft AI For Beginners 外部源引用索引 ( #references #microsoft)
-- [[90_Learn/Courses/Microsoft_GenAI_For_Beginners]] — Microsoft 21 课生成式 AI 初学者课程映射 ( #learning-paths #microsoft #generative-ai #course)
+- [[90_Learn/courses/microsoft/microsoft_genai_for_beginners]] — Microsoft 21 课生成式 AI 初学者课程映射 ( #learning-paths #microsoft #generative-ai #course)
 - [[references/microsoft-genai-for-beginners]] — Microsoft Generative AI For Beginners 外部源引用索引 ( #references #microsoft #generative-ai)
 - [[01_Fundamentals/GenAI_L00_Course_Setup]] — L00 课程环境设置 ( #microsoft-genai-course #setup)
 - [[00_AI_Introduction/GenAI_L01_Intro_to_GenAI_and_LLMs]] — L01 生成式 AI 与 LLM 简介 ( #microsoft-genai-course #generative-ai)
@@ -87,9 +113,9 @@ title: Wiki Index
 - [[04_NLP_LLMs/Global_LLM_Ecosystem/GenAI_L21_Building_with_Meta]] — L21 使用 Meta 模型构建 ( #microsoft-genai-course #meta)
 
 ### Agent 课程
-- [[90_Learn/Courses/Hello_Agents_Course]] — Datawhale 中文 Agent 教程：16 章 + 综合项目 ( #learning-paths #ai-agents #datawhale #course)
+- [[90_Learn/courses/other/hello_agents]] — Datawhale 中文 Agent 教程：16 章 + 综合项目 ( #learning-paths #ai-agents #datawhale #course)
 - [[references/hello-agents]] — Hello-Agents 外部源引用索引 ( #references #ai-agents)
-- [[90_Learn/Courses/Microsoft_AI_Agents_for_Beginners]] — 微软官方 16 课 AI Agent 入门课程映射 ( #learning-paths #microsoft #ai-agents #course)
+- [[90_Learn/courses/microsoft/microsoft_ai_agents_for_beginners]] — 微软官方 16 课 AI Agent 入门课程映射 ( #learning-paths #microsoft #ai-agents #course)
 - [[references/ai-agents-for-beginners]] — Microsoft AI Agents for Beginners 外部源引用索引 ( #references #microsoft #ai-agents)
 
 ### Microsoft AI Agents for Beginners — 17 课深度页面
@@ -110,13 +136,13 @@ title: Wiki Index
 - [[13_Agent_Production/Microsoft_AI_Agents_L14_Microsoft_Agent_Framework]] — L14 MAF 深度：Agents/Threads/Middleware/Workflows ( #microsoft-ai-agents-course #maf #workflows)
 - [[13_Agent_Production/Microsoft_AI_Agents_L15_Browser_Use]] — L15 浏览器 Agent：Browser-Use+Playwright+CDP ( #microsoft-ai-agents-course #cua #browser-use)
 - [[13_Agent_Production/Microsoft_AI_Agents_L18_Securing_AI_Agents]] — L18 加密审计收据：Ed25519+JCS+哈希链 ( #microsoft-ai-agents-course #security #cryptography #audit)
-- [[90_Learn/Courses/Learn_Claude_Code_Course]] — 20 课 Claude Code 式 Harness 工程教程映射 ( #learning-paths #claude-code #agent-harness #course)
+- [[90_Learn/courses/share_ai/learn_claude_code]] — 20 课 Claude Code 式 Harness 工程教程映射 ( #learning-paths #claude-code #agent-harness #course)
 - [[references/learn-claude-code]] — Learn Claude Code 外部源引用索引 ( #references #claude-code)
 
 ### LLM 与 AI 基础课程
-- [[90_Learn/Courses/Hands_On_LLMs_Course]] — 《Hands-On Large Language Models》12 章课程映射 ( #learning-paths #llm #course)
+- [[90_Learn/courses/other/hands_on_llms]] — 《Hands-On Large Language Models》12 章课程映射 ( #learning-paths #llm #course)
 - [[references/books/hands-on-llms-alammar]] — Hands-On Large Language Models 书籍引用索引 ( #references #book #llm)
-- [[90_Learn/Courses/ApacheCN_AILearning_Guide]] — ApacheCN 中文全栈 AI 学习资料库指南 ( #learning-paths #chinese-ai #course)
+- [[90_Learn/courses/apachecn/ailearning_guide]] — ApacheCN 中文全栈 AI 学习资料库指南 ( #learning-paths #chinese-ai #course)
 - [[references/apachecn-ailearning]] — ApacheCN AILearning 外部源引用索引 ( #references #chinese-ai)
 
 ### 项目合集

@@ -42,7 +42,7 @@ updated: "2026-06-12"
 | **主力框架** | Microsoft Agent Framework (MAF) |
 | **托管服务** | Azure AI Foundry Agent Service V2 |
 | **认证方式** | Azure CLI (`AzureCliCredential`)，无需在代码中管理 API Key |
-| **前置要求** | 基础 Python；建议先完成 [[90_Learn/Courses/Microsoft_GenAI_For_Beginners]] 建立 LLM 基础 |
+| **前置要求** | 基础 Python；建议先完成 [[90_Learn/courses/microsoft/microsoft_genai_for_beginners]] 建立 LLM 基础 |
 | **社区支持** | [Microsoft Foundry Discord](https://aka.ms/ai-agents/discord) |
 
 ---
@@ -121,7 +121,7 @@ updated: "2026-06-12"
 
 ## 学习建议
 
-1. **先修 LLM 基础**：若对 LLM、提示工程不熟悉，建议先完成 [[90_Learn/Courses/Microsoft_GenAI_For_Beginners]] 的 L00-L05。
+1. **先修 LLM 基础**：若对 LLM、提示工程不熟悉，建议先完成 [[90_Learn/courses/microsoft/microsoft_genai_for_beginners]] 的 L00-L05。
 2. **按主线推进**：L01→L04 建立 Agent 核心概念；L05-L08 深入 RAG、可信、规划、多代理；L11-L18 掌握协议、上下文、记忆、生产、浏览器与安全。
 3. **动手运行代码**：每节课的 `code_samples` 是理解 MAF 与 Azure AI Agent Service 的关键；确保完成 Azure CLI 与 Foundry 项目配置。
 4. **交叉阅读**：本库 [[concepts/ai-agents]]、[[11_RAG_Systems/Agentic_RAG_Guide]]、[[13_Agent_Production/Agent_Frameworks/README]] 提供更广阔的框架对比视角。
@@ -131,7 +131,7 @@ updated: "2026-06-12"
 
 ## 与 Microsoft GenAI For Beginners 的关系
 
-> 本课程（AI Agents for Beginners）是 [[90_Learn/Courses/Microsoft_GenAI_For_Beginners]] 的进阶姊妹篇。前者聚焦“如何让 LLM 自主行动”，后者聚焦“如何使用与部署生成式 AI”。
+> 本课程（AI Agents for Beginners）是 [[90_Learn/courses/microsoft/microsoft_genai_for_beginners]] 的进阶姊妹篇。前者聚焦“如何让 LLM 自主行动”，后者聚焦“如何使用与部署生成式 AI”。
 >
 > | 维度 | Generative AI For Beginners | AI Agents for Beginners |
 > |------|----------------------------|-------------------------|
@@ -147,7 +147,7 @@ updated: "2026-06-12"
 ## 相关阅读
 
 - [[references/ai-agents-for-beginners]] — 外部源引用索引
-- [[90_Learn/Courses/Microsoft_GenAI_For_Beginners]] — 生成式 AI 初学者课程映射
-- [[90_Learn/Courses/Microsoft_AI_For_Beginners]] — Microsoft 12 周 AI 基础课程映射
-- [[90_Learn/AI_Engineering_Roadmap_2026]] — AI 工程师学习路线
-- [[90_Learn/Learning_Paths_2026]] — 本库学习路径总览
+- [[90_Learn/courses/microsoft/microsoft_genai_for_beginners]] — 生成式 AI 初学者课程映射
+- [[90_Learn/courses/microsoft/microsoft_ai_for_beginners]] — Microsoft 12 周 AI 基础课程映射
+- [[90_Learn/guides/ai_engineering_roadmap_2026]] — AI 工程师学习路线
+- [[90_Learn/guides/learning_paths_2026]] — 本库学习路径总览

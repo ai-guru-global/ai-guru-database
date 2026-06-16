@@ -25,5 +25,5 @@ tier: supporting
 
 从零构建 LLM,使用 PyTorch 实现 GPT 风格模型
 
-> **关联**: -> [[90_Learn/AI_Engineering_Roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
 

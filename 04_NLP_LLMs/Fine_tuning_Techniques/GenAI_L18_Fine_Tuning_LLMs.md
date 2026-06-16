@@ -312,7 +312,7 @@ Unsloth 是一个开源框架，专注于简化和加速大型语言模型的微
 - [[04_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026|PEFT 参数高效微调]]
 - [[04_NLP_LLMs/Fine_tuning_Techniques/Axolotl_Deep_Dive|Axolotl 深度指南]]
 - [[04_NLP_LLMs/Edge_LLM/Edge_LLM_Deep_Dive|边缘LLM深度指南]]
-- [[90_Learn/Courses/Microsoft_GenAI_For_Beginners|Microsoft GenAI 入门课程]]
+- [[90_Learn/courses/microsoft/microsoft_genai_for_beginners|Microsoft GenAI 入门课程]]
 
 ### 国产大模型微调实践
 

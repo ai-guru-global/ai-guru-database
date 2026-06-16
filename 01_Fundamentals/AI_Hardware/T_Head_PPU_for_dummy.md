@@ -8,8 +8,10 @@ sources:
   - "https://www.caixin.com/2026-01-22/102406926.html"
   - "https://www.caixin.com/2026-01-29/102409321.html"
   - "https://www.cls.cn/detail/2273750"
+  - "https://huacheng.gz-cmc.com/pages/2026/05/20/a3832d200d134f8cb2fbcd34c69d0830.html"
+  - "https://www.donews.com/news/detail/1/6535158.html"
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-16
 lifecycle: reviewed
 tier: core
 ---
@@ -61,6 +63,7 @@ tier: core
 
 - 2025 年 9 月意外在央视《新闻联播》里露脸，2026 年 1 月正式发布
 - 有 **96GB 显存**，芯片之间互联带宽 **700GB/s**
+- 每颗芯片有 **7 个 ICN 互联端口**，多卡协同能力强
 - 性能大概 **跟英伟达 H20 差不多**，比 A800 强
 - 功耗控制在 **400W 以内**
 - 已经大规模部署在阿里云，跑了多个**万卡集群**
@@ -72,6 +75,9 @@ tier: core
 - 性能是 810E 的 **3 倍**
 - 原生支持 **FP32 到 FP4 等多种数据精度**
 - 配合自研的 **ICN Switch** 芯片，可以让 64 张卡像一台电脑一样协同工作
+- 平头哥还公布了「一年一代」路线图：
+  - 2027 年 Q3 发布 **真武 V900**（性能预计再翻 3 倍）
+  - 2028 年 Q3 发布 **真武 J900**（下一代架构）
 
 ---
 
@@ -93,6 +99,18 @@ tier: core
   - 浦发银行
   - 中国电信
   - 中国一汽
+
+### 已经能跑超大模型
+
+- 2026 年 4 月，平头哥宣布真武 810E 完成小米 **MiMo-V2.5-Pro** 模型适配
+- 这个模型有 **1 万亿参数**，支持 **100 万 token 超长上下文**
+- 说明真武 810E 已经能撑起最前沿的大模型推理
+
+### 软件生态也跟上
+
+- 平头哥自研了 **T-Head SAIL** 软件栈
+- 支持 PyTorch、vLLM、SGLang 等主流框架
+- 兼容 CUDA 生态，迁移成本较低
 
 ### 能替代进口芯片
 
@@ -116,7 +134,7 @@ tier: core
 ## 6. 延伸阅读
 
 - 想深入了解技术规格和部署案例：[[01_Fundamentals/AI_Hardware/T_Head_PPU_Deep_Dive|平头哥真武 PPU 深度解析]]
-- 想了解 FP32/FP16/FP8/FP4 精度具体是什么意思：见 [[01_Fundamentals/AI_Hardware/T_Head_PPU_Deep_Dive#32-真武-m890|深度解析中的真武 M890 精度说明]] 或 [[01_Fundamentals/AI_Hardware/AI_Hardware_2026|AI 硬件与芯片 2026 年全景报告]]
+- 想了解 FP32/FP16/FP8/FP4 精度具体是什么意思：见 [[concepts/model-precision|模型精度概念详解]] 或 [[01_Fundamentals/AI_Hardware/T_Head_PPU_Deep_Dive#32-真武-m890|深度解析中的真武 M890 精度说明]]
 - 国产 AI 芯片全面对比：[[01_Fundamentals/AI_Hardware/Chinese_AI_Chips_Deep_Dive|国产 AI 芯片深度解析]]
 
 > **关联**: -> [[01_Fundamentals/AI_Hardware/README|AI 硬件基础设施]] | [[01_Fundamentals/AI_Hardware/Chinese_AI_Chips_Deep_Dive|国产 AI 芯片]] | [[04_NLP_LLMs/Chinese_LLM_Ecosystem/README|中国大模型生态]]

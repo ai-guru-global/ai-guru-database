@@ -4,7 +4,7 @@ category: 09-deployment-inference
 tags: ["deployment", "inference", "serving", "vllm"]
 summary: "> 从模型到生产的最后一公里——高效、可靠、可扩展的推理服务。"
 created: 2026-05-31
-updated: 2026-06-15
+updated: 2026-06-16
 ---
 
 # 模型部署与推理
@@ -38,6 +38,8 @@ updated: 2026-06-15
 | [CTranslate2 Deep Dive](./CTranslate2_Deep_Dive.md) | 轻量跨平台 Transformer 推理：CPU/GPU 高效服务 | CPU/GPU 轻量服务 |
 | [MLC LLM Deep Dive](./MLC_LLM_Deep_Dive.md) | 移动端/异构 LLM 推理：手机、Web、边缘部署 | 手机/Web/边缘 |
 | [KV Cache Deep Dive](./KV_Cache_Deep_Dive.md) | KV Cache 深度研究：从原理、架构压缩到量化与生产实践 | 推理优化工程师、架构师 |
+| [Quantization Techniques 2026](./Quantization_Techniques_2026.md) | 量化技术全景：GPTQ、AWQ、SmoothQuant、GGUF、FP8 | 部署工程师 |
+| [Quantization Precision Deep Dive](./Quantization_Precision_Deep_Dive.md) | 量化精度深度解析：失效机制、层敏感度、校准数据、PPL 评估 | 量化调优、质量保障 |
 
 ## 推理性能专题
 
@@ -48,6 +50,7 @@ updated: 2026-06-15
 | [推理性能专题首页](./Inference_Performance/README.md) | 专题导航与技术全景 | 性能工程师、架构师 |
 | [推理性能基础](./Inference_Performance/Inference_Performance_Fundamentals.md) | TTFT/TPOT/吞吐指标、Roofline 瓶颈分析、优化决策树 | 所有从业者 |
 | [决定模型推理速度的要素（大白话版）](./Inference_Performance/Inference_Speed_Factors_for_dummy.md) | 用生活化语言解释影响推理速度的六大因素 | 初学者、产品经理 |
+| [推理性能术语大白话解释](./Inference_Performance/Inference_Terms_for_dummy.md) | MoE、MLA/GQA、FLOPS、Prefill、Decode、TTFT、量化、NVLink/IB、PD 分离 | 初学者 |
 | [Prefill-Decode 分离](./Inference_Performance/Prefill_Decode_Disaggregation.md) | Disaggregated Serving 架构与 KV Cache 传输 | 长上下文/高并发 |
 | [MoE 推理优化](./Inference_Performance/MoE_Inference_Optimization.md) | All-to-All、Expert Parallelism、负载均衡 | MoE 部署 |
 | [推理 Profiling 与 Benchmarking](./Inference_Performance/LLM_Inference_Profiling_and_Benchmarking.md) | Nsight、PyTorch Profiler、llmperf、评测陷阱 | 性能测试 |
@@ -57,6 +60,7 @@ updated: 2026-06-15
 | [Embedding/Reranker 服务](./Inference_Performance/Embedding_Model_Serving.md) | Dynamic Batching、Matryoshka、混合精度 | RAG 部署 |
 | [多模态推理优化](./Inference_Performance/Multimodal_Inference_Optimization.md) | Vision Encoder、Image Token 压缩、VLM Prefill | VLM 部署 |
 | [长上下文推理 2026](./Inference_Performance/Long_Context_Inference_2026.md) | 128K+ 上下文、KV Cache 压缩、PD 分离 | 长上下文服务 |
+| [推理性能未解问题与缺口评估](./Inference_Performance/Remaining_Performance_Issues_2026.md) | 边缘、异构、能耗、多租户、编译启动等缺口 | 架构师、性能工程师 |
 
 ## 推理引擎对比 (2026)
 
@@ -83,6 +87,17 @@ updated: 2026-06-15
 | **llama.cpp** | ⭐⭐⭐ | ⭐⭐ | 最低 | 极致轻量、CPU |
 | **LM Studio** | ⭐⭐⭐⭐ | ⭐⭐⭐ | 中等 | 桌面应用 |
 | **GPUStack** | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | 中高 | 异构 GPU 集群、团队共享 |
+
+## AI Stack 推理服务
+
+> 如果你正在使用阿里云 AI Stack 一体机，以下页面提供推理部署的生产级命令与运维指南：
+
+| 文档 | 内容 | 适用角色 |
+|------|------|----------|
+| [AI Stack 生产工具链总览](../12_Architecture_Infrastructure/AI_Stack_Production_Toolchain.md) | AI Stack 工具全景与生命周期 | 所有 AI Stack 用户 |
+| [AI Stack 推理服务](../12_Architecture_Infrastructure/AI_Stack_Inference_Serving_Guide.md) | vLLM / SGLang / Ollama / llama-server 启动与运维 | 推理工程师 |
+| [AI Stack GPU 监控](../12_Architecture_Infrastructure/AI_Stack_GPU_Monitoring_Guide.md) | nvidia-smi / ppu-smi 等 GPU 监控 | 运维、SRE |
+| [AI Stack 模型管理](../12_Architecture_Infrastructure/AI_Stack_Model_Management_Guide.md) | 模型下载与版本组织 | 模型工程师 |
 
 ## 关联目录
 
@@ -116,6 +131,10 @@ updated: 2026-06-15
 - [[09_Deployment_Inference/GPUStack_Deep_Dive|GPUStack: 开源 GPU 集群管理与模型服务平台]]
 - [[09_Deployment_Inference/LLM_Inference_Benchmarking_Guide|LLM 推理引擎基准测试指南]]
 - [[09_Deployment_Inference/LLM_Inference_Engine_Migration_Guide|LLM 推理引擎迁移指南]]
+- [[12_Architecture_Infrastructure/AI_Stack_Production_Toolchain|AI Stack 生产工具链总览]]
+- [[12_Architecture_Infrastructure/AI_Stack_Inference_Serving_Guide|AI Stack 推理服务指南]]
+- [[12_Architecture_Infrastructure/AI_Stack_GPU_Monitoring_Guide|AI Stack GPU 监控指南]]
+- [[12_Architecture_Infrastructure/AI_Stack_Model_Management_Guide|AI Stack 模型下载与管理指南]]
 - [[09_Deployment_Inference/CTranslate2_Deep_Dive|CTranslate2: 轻量跨平台 Transformer 推理]]
 - [[09_Deployment_Inference/MLC_LLM_Deep_Dive|MLC LLM: 移动端/异构 LLM 推理]]
 

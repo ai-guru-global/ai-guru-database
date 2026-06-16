@@ -4,7 +4,7 @@ category: 16-ai-ops
 tags: ["ai-ops", "observability", "monitoring", "incident-response", "sre"]
 summary: "> AI 运维是保障 LLM 应用稳定、高效、安全运行的关键，涵盖监控、告警、事故响应、SRE、混沌工程等线上运营能力。"
 created: 2026-05-31
-updated: 2026-06-15
+updated: 2026-06-16
 ---
 
 # AI 运维与可观测性 (AI Ops)
@@ -54,6 +54,18 @@ updated: 2026-06-15
 
 > 其余工具深度解析（DVC/LakeFS/Feast/MLflow/ClearML/Kubeflow/Prefect/LangSmith/Helicone/Phoenix/Braintrust + 3 篇 Observability + CI_CD_Pipeline + LLM_Production_Pipeline）已迁入 [[10_MLOps_Pipeline/README]]。
 
+## AI Stack 运维工具
+
+> 如果你正在使用阿里云 AI Stack 一体机，以下页面提供容器运行时、GPU 监控、K8s 编排与专属运维工具的生产级指南：
+
+| 文档 | 内容 | 适用角色 |
+|------|------|----------|
+| [AI Stack 生产工具链总览](../12_Architecture_Infrastructure/AI_Stack_Production_Toolchain.md) | AI Stack 工具全景与生命周期 | 所有 AI Stack 用户 |
+| [AI Stack 容器与运行时](../12_Architecture_Infrastructure/AI_Stack_Container_Runtime_Guide.md) | nerdctl / crictl / ctr / docker / podman | SRE、平台工程师 |
+| [AI Stack GPU 监控](../12_Architecture_Infrastructure/AI_Stack_GPU_Monitoring_Guide.md) | nvidia-smi / ppu-smi / rocm-smi / pmon | 运维、SRE |
+| [AI Stack K8s 编排](../12_Architecture_Infrastructure/AI_Stack_K8s_Operations_Guide.md) | kubectl / helm 排障与包管理 | K8s 工程师 |
+| [AI Stack 专属工具](../12_Architecture_Infrastructure/AI_Stack_Exclusive_Tools_Guide.md) | stackops / aioController | AI Stack 运维 |
+
 ---
 
 ## 核心功能
@@ -93,3 +105,8 @@ updated: 2026-06-15
 - [[16_AI_Ops/AIOps-in-nutshell]] — AI Ops 速成指南
 - [[16_AI_Ops/AI_Ops_for_dummy]] — AI Ops 入门指南
 - [[16_AI_Ops/README_for_dummy]] — 16 AI Ops — 小白版 📡
+- [[12_Architecture_Infrastructure/AI_Stack_Production_Toolchain]] — AI Stack 生产工具链总览
+- [[12_Architecture_Infrastructure/AI_Stack_Container_Runtime_Guide]] — AI Stack 容器与运行时指南
+- [[12_Architecture_Infrastructure/AI_Stack_GPU_Monitoring_Guide]] — AI Stack GPU 监控指南
+- [[12_Architecture_Infrastructure/AI_Stack_K8s_Operations_Guide]] — AI Stack K8s 编排指南
+- [[12_Architecture_Infrastructure/AI_Stack_Exclusive_Tools_Guide]] — AI Stack 专属运维工具指南

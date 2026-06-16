@@ -908,11 +908,11 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
 
 | 资源 | 本地克隆路径 | 新增/更新页面 |
 |------|-------------|--------------|
-| Hello-Agents (Datawhale) | `_raw/github-sources/hello-agents` | [[references/hello-agents]], [[90_Learn/Courses/Hello_Agents_Course]], 7 个章节概念页 |
-| Learn Claude Code (shareAI-lab) | `_raw/github-sources/learn-claude-code` | [[references/learn-claude-code]], [[90_Learn/Courses/Learn_Claude_Code_Course]], 8 个 Harness 概念页 |
-| Microsoft AI Agents for Beginners | `_raw/github-sources/ai-agents-for-beginners` | [[references/ai-agents-for-beginners]], [[90_Learn/Courses/Microsoft_AI_Agents_for_Beginners]], 4 个章节概念页 |
-| Hands-On Large Language Models | `_raw/github-sources/hands-on-llms` | [[references/books/hands-on-llms-alammar]], [[90_Learn/Courses/Hands_On_LLMs_Course]] |
-| ApacheCN AILearning | `_raw/github-sources/ailearning` | [[references/apachecn-ailearning]], [[90_Learn/Courses/ApacheCN_AILearning_Guide]], 3 个主线跟踪页 |
+| Hello-Agents (Datawhale) | `_raw/github-sources/hello-agents` | [[references/hello-agents]], [[90_Learn/courses/other/hello_agents]], 7 个章节概念页 |
+| Learn Claude Code (shareAI-lab) | `_raw/github-sources/learn-claude-code` | [[references/learn-claude-code]], [[90_Learn/courses/share_ai/learn_claude_code]], 8 个 Harness 概念页 |
+| Microsoft AI Agents for Beginners | `_raw/github-sources/ai-agents-for-beginners` | [[references/ai-agents-for-beginners]], [[90_Learn/courses/microsoft/microsoft_ai_agents_for_beginners]], 4 个章节概念页 |
+| Hands-On Large Language Models | `_raw/github-sources/hands-on-llms` | [[references/books/hands-on-llms-alammar]], [[90_Learn/courses/other/hands_on_llms]] |
+| ApacheCN AILearning | `_raw/github-sources/ailearning` | [[references/apachecn-ailearning]], [[90_Learn/courses/apachecn/ailearning_guide]], 3 个主线跟踪页 |
 | 500+ AI Projects | `_raw/github-sources/500-ai-projects` | [[references/500-ai-projects]] |
 
 **统计**: 35 个 wiki 页面创建/更新，6 个仓库浅克隆到 `_raw/github-sources/`。
@@ -1078,3 +1078,9 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
 - 副作用备注(非本会话): index.md 的 `_llm-ecosystem-analysis-2026-06-15` 链接因外部重构(文件→_meta/)而悬空，非本次引入，留待重构进程统一处理
 
 
+
+## 2026-06-15 — 「CDI 非电源开关」误解澄清沉淀
+
+- `concepts/cdi.md` 新增「常见误解（CDI 是什么 / 不是什么）」节：四步链(驱动→spec→enable_cdi→容器申请) + 三大误解表（概念层身份认知）
+- `12_Architecture_Infrastructure/CDI_Deep_Dive.md` §10 新增 10.0「先纠正一个根本性误解」FAQ（开 enable_cidi≠看到 GPU），作为排错章的开篇
+- 校验: 两文件 wikilink 全部解析通过

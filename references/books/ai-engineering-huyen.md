@@ -25,5 +25,5 @@ tier: supporting
 
 AI 工程实践指南,基于基础模型构建应用
 
-> **关联**: -> [[90_Learn/AI_Engineering_Roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
 

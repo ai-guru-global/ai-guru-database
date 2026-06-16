@@ -71,7 +71,7 @@ class Task:
 
 ## 关联阅读
 
-- [[90_Learn/Courses/Learn_Claude_Code_Course]] — 完整 20 课映射
+- [[90_Learn/courses/share_ai/learn_claude_code]] — 完整 20 课映射
 - [[references/learn-claude-code]] — 仓库引用索引
 - [[13_Agent_Production/Learn_Claude_Code_L15_Agent_Teams]] — Agent Teams
 - [[13_Agent_Production/Learn_Claude_Code_L17_Autonomous_Agents]] — 自治 Agent

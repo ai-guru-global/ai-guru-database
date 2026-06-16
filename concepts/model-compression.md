@@ -18,6 +18,8 @@ relationships:
   type: benefits_from
 - target: 'concepts/fine-tuning-techniques'
   type: related_to
+- target: 'concepts/model-precision'
+  type: related_to
 sources:
 - 09_model-deployment_Inference/Deployment_Inference.md
 - 09_Deployment_Inference/Deployment_Inference_2026.md

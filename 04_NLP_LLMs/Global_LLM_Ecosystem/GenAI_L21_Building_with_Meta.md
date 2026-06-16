@@ -315,7 +315,7 @@ Llama 3.2 的核心突破在于引入了多模态视觉能力，弥补了 Llama 
 - [[04_NLP_LLMs/Edge_LLM/Edge_LLM_Deep_Dive|边缘LLM深度指南]]
 - [[04_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques|微调技术综述]]
 - [[04_NLP_LLMs/Global_LLM_Ecosystem/Mistral_AI_Deep_Dive|Mistral AI 深度指南]]
-- [[90_Learn/Courses/Microsoft_GenAI_For_Beginners|Microsoft GenAI 入门课程]]
+- [[90_Learn/courses/microsoft/microsoft_genai_for_beginners|Microsoft GenAI 入门课程]]
 
 ## 课程导航
 

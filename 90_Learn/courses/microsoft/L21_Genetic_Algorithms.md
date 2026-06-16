@@ -131,7 +131,7 @@ a + 2b + 3c + 4d = 30
 
 ## 相关阅读
 
-- 课程索引：[[90_Learn/Courses/Microsoft_AI_For_Beginners]]
+- 课程索引：[[90_Learn/courses/microsoft/microsoft_ai_for_beginners]]
 - 本库相关页面：
   - [[06_Reinforcement_Learning/RL-in-nutshell]]
   - [[02_Machine_Learning/ML-in-nutshell]]

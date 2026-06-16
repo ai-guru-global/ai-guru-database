@@ -520,7 +520,7 @@ AI代理的核心定义是让LLM通过获得状态（上下文）和工具（数
 
 ## 扩展阅读
 
-- [[90_Learn/Courses/Microsoft_GenAI_For_Beginners]] - 课程总览
+- [[90_Learn/courses/microsoft/microsoft_genai_for_beginners]] - 课程总览
 - [[13_Agent_Production/Agent_Frameworks/README]] - 代理框架详解
 - [[13_Agent_Production/Agentic_Design_Patterns_AndrewNg]] - 代理设计模式
 - [[13_Agent_Production/Agent_Workflow/Workflow-in-nutshell]] - 代理工作流

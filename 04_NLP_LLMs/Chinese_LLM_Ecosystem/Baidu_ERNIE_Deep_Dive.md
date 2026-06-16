@@ -780,7 +780,7 @@ print(response["result"])
 - [[04_NLP_LLMs/Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs]] — LLM 微调技术
 - [[11_RAG_Systems/GenAI_L15_RAG_and_Vector_Databases]] — RAG 与向量数据库
 - [[13_Agent_Production/GenAI_L17_AI_Agents]] — AI Agent 概述
-- [[90_Learn/Courses/Microsoft_GenAI_For_Beginners]] — 生成式 AI 入门课程
+- [[90_Learn/courses/microsoft/microsoft_genai_for_beginners]] — 生成式 AI 入门课程
 
 ---
 

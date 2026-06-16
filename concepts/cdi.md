@@ -71,6 +71,28 @@ updated: 2026-06-15 00:00:00+00:00
 - **GPUDirect RDMA / 训练**: GPU 直连网卡旁路 CPU，spec 同时声明网卡与 GPU
 - **异构混部**: 一个 Pod 同时申请 GPU + 智能网卡，CDI 合并两家 edits
 
+## 常见误解（CDI 是什么 / 不是什么）
+
+> **核心心智模型**: CDI 是「接线说明书 + 解析器」，**不是「电源开关」**。
+
+**问: containerd 开了 `enable_cdi=true`，容器就能看到 GPU 吗？**
+**答: 不能。** 那只是打开了「CDI 设备名解析器」。GPU 进容器是四件事凑齐，CDI 仅占其一：
+
+```
+① 宿主装好驱动 + nvidia-container-toolkit   ← 真正的 GPU 在这
+② 有人生成 /var/run/cdi/nvidia.yaml         ← 描述怎么接线(nvidia-ctk / GPU Operator)
+③ containerd 开 enable_cdi=true 并重启       ← 打开解析器
+④ 容器启动时显式申请 --device nvidia.com/gpu=0  ← 不申请拿不到
+```
+
+三个高频误解：
+
+| 误解 | 真相 |
+|------|------|
+| 「开了 `enable_cdi` 就全有了」 | 只装了「翻译官」，还需 spec 存在 + 容器主动申请 |
+| 「CDI 让容器能用 GPU」 | 没 CDI 也能用（老路 `NVIDIA_VISIBLE_DEVICES` + nvidia-container-runtime 一直在）。CDI 只是换了**更标准的描述方式**，能力来自驱动与 toolkit |
+| 「所有容器自动看到 GPU」 | CDI **按需注入**：容器不声明设备名，就一个节点都不给 |
+
 ## 与相关概念的关系
 
 ```

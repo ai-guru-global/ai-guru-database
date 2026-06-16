@@ -36,5 +36,5 @@ tier: supporting
 | House Prices | 入门 | 回归(房价预测) |
 | Digit Recognizer | 入门 | 图像分类(手写数字) |
 
-> **关联**: -> [[02_Machine_Learning|机器学习]] | [[90_Learn/AI_Engineering_Roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[02_Machine_Learning|机器学习]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
 

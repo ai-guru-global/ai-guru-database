@@ -173,4 +173,4 @@ response = client.create_response(
 - [[13_Agent_Production/Microsoft_AI_Agents_L08_Multi_Agent]] — 下一课：多 Agent 设计
 - [[13_Agent_Production/Agentic_Design_Patterns_AndrewNg]] — Andrew Ng 的 Planning 模式
 - [[13_Agent_Production/Agent_Workflow/README]] — 工作流编排概览
-- [[90_Learn/Courses/Microsoft_AI_Agents_for_Beginners]] — 课程总览
+- [[90_Learn/courses/microsoft/microsoft_ai_agents_for_beginners]] — 课程总览

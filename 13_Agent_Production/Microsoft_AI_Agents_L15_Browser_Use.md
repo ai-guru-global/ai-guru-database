@@ -149,4 +149,4 @@ AZURE_OPENAI_API_VERSION=...   # 可选
 - [[13_Agent_Production/Microsoft_AI_Agents_L18_Securing_AI_Agents]] — 下一课：安全（L18）
 - [[13_Agent_Production/Microsoft_AI_Agents_L11_Agentic_Protocols]] — L11：NLWeb 是互补方案
 - [[04_NLP_LLMs/Multimodal_Models/GenAI_L09_Building_Image_Applications]] — 多模态基础
-- [[90_Learn/Courses/Microsoft_AI_Agents_for_Beginners]] — 课程总览
+- [[90_Learn/courses/microsoft/microsoft_ai_agents_for_beginners]] — 课程总览

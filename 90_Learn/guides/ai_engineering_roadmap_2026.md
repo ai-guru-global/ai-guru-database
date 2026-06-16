@@ -396,7 +396,7 @@ flowchart TB
 | AI Ops | [[16_AI_Ops]] |
 | AI 编程 | [[17_AI_Coding]] |
 | 论文精读 | [[22_Papers]] |
-| 学习路径 | [[90_Learn/Learning_Paths_2026|AI Guru 学习路径]] |
+| 学习路径 | [[90_Learn/guides/learning_paths_2026|AI Guru 学习路径]] |
 
 ---
 
@@ -413,15 +413,15 @@ flowchart TB
 - [[references/awesome-llm-apps|Awesome LLM Apps (10k)]]
 
 ### 在线课程
-- [[90_Learn/Courses/coursera_ml_specialization|吴恩达机器学习专项]]
-- [[90_Learn/Courses/coursera_deep_learning_specialization|吴恩达深度学习专项]]
-- [[90_Learn/Courses/coursera_math_for_ml|Mathematics for ML]]
-- [[90_Learn/Courses/coursera_nlp_specialization|NLP 专项课程]]
-- [[90_Learn/Courses/coursera_rag_intro|RAG 入门实践]]
-- [[90_Learn/Courses/fastai_practical_dl|Fast.ai 实战深度学习]]
-- [[90_Learn/Courses/stanford_cs231n|斯坦福 CS231n]]
-- [[90_Learn/Courses/hf_deep_rl_course|HF 深度 RL 课程]]
-- [[90_Learn/Courses/hf_agents_course|HF AI Agent 课程]]
+- [[90_Learn/courses/coursera/coursera_ml_specialization|吴恩达机器学习专项]]
+- [[90_Learn/courses/coursera/coursera_deep_learning_specialization|吴恩达深度学习专项]]
+- [[90_Learn/courses/coursera/coursera_math_for_ml|Mathematics for ML]]
+- [[90_Learn/courses/coursera/coursera_nlp_specialization|NLP 专项课程]]
+- [[90_Learn/courses/coursera/coursera_rag_intro|RAG 入门实践]]
+- [[90_Learn/courses/other/fastai_practical_dl|Fast.ai 实战深度学习]]
+- [[90_Learn/courses/other/stanford_cs231n|斯坦福 CS231n]]
+- [[90_Learn/courses/hugging_face/deep_rl_course|HF 深度 RL 课程]]
+- [[90_Learn/courses/hugging_face/agents_course|HF AI Agent 课程]]
 
 ### 技术文章
 - [[references/illustrated-transformer|图解 Transformer]]

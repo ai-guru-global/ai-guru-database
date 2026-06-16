@@ -180,4 +180,4 @@ offline eval → deploy → online monitor → 收集新失败案例
 - [[13_Agent_Production/Microsoft_AI_Agents_L06_Trustworthy_Agents]] — L06 可信 Agent（审计与 HITL）
 - [[10_MLOps_Pipeline/GenAI_L14_GenAI_Application_Lifecycle]] — GenAI 应用生命周期
 - [[16_AI_Ops/README]] — 本仓库 AI Ops 主题（如有）
-- [[90_Learn/Courses/Microsoft_AI_Agents_for_Beginners]] — 课程总览
+- [[90_Learn/courses/microsoft/microsoft_ai_agents_for_beginners]] — 课程总览

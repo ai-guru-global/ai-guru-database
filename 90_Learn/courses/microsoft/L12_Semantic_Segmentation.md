@@ -98,7 +98,7 @@ updated: "2026-06-12"
 
 ## 相关阅读
 
-- 课程索引：[[90_Learn/Courses/Microsoft_AI_For_Beginners]]
+- 课程索引：[[90_Learn/courses/microsoft/microsoft_ai_for_beginners]]
 - 本库相关页面：
   - [[05_Computer_Vision/Segmentation/Segmentation]]
   - [[05_Computer_Vision/Segmentation/Segmentation_for_dummy]]

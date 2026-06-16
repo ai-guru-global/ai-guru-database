@@ -20,7 +20,7 @@ lifecycle: draft
 lifecycle_changed: 2026-06-03
 tier: core
 created: 2026-06-03 00:00:00+00:00
-updated: 2026-06-03 00:00:00+00:00
+updated: 2026-06-15 00:00:00+00:00
 ---
 
 # PagedAttention
@@ -81,6 +81,46 @@ PagedAttention 与 Continuous Batching 天然配合：
 - Continuous Batching 在迭代级动态调度请求（新请求插入、完成请求释放）
 - PagedAttention 提供细粒度 block 级内存管理，支持请求的随时插入和释放
 - 两者组合使 vLLM 在 bursty 流量下保持高吞吐
+
+## 架构链路：vLLM 为什么能同时服务更多请求
+
+```mermaid
+flowchart LR
+    A[多用户并发请求] --> B[vLLM 推理服务]
+    B --> C[Continuous Batching<br/>动态拼 batch]
+    C --> D[PagedAttention]
+    D --> E[KV Cache 分页存储]
+    E --> F[按需分配 block<br/>前缀共享<br/>碎片 <5%]
+    F --> G[显存利用率 95%+]
+    G --> H[同一张 GPU 塞下更多请求]
+    H --> I[整体吞吐量提升 2-4×]
+
+    style D fill:#e3f2fd,stroke:#1565c0
+    style E fill:#e8f5e9,stroke:#2e7d32
+    style G fill:#fff3e0,stroke:#f57c00
+```
+
+链路解释：
+
+1. **多请求进来** → vLLM 不一个请求一个请求顺序处理，而是用 Continuous Batching 动态把请求拼成一个 batch
+2. **PagedAttention 上场** → 把每个请求的 KV Cache 切成固定大小的 block，通过 block table 管理
+3. **按需分配 + 共享前缀** → 用多少分多少，多个请求相同的前半段上下文共用同一批 block
+4. **显存利用率飙升** → 从传统 50-65% 提升到 95%+
+5. **结果** → 同样的 GPU 能同时服务的请求变多，排队时间变短，整体生成速度变快
+
+### 对比图
+
+```
+传统连续分配：
+┌──────────────┐ ┌──────────┐ ┌──────────────┐
+│ Request A    │ │  空洞    │ │ Request B    │  ← 中间空着用不了
+└──────────────┘ └──────────┘ └──────────────┘
+
+PagedAttention 分页分配：
+Block Table: A→[1,5,8]  B→[2,6]  C→[3,7]
+物理显存: [A1][B1][C1][A2][B2][C2][A3][...]
+         ↑ 所有小块都填满，没有浪费
+```
 
 ### 局限与替代方案
 

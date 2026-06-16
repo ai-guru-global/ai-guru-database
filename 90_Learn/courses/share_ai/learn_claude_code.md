@@ -102,5 +102,5 @@ updated: "2026-06-12"
 - [[references/learn-claude-code]] — 仓库外部源引用索引
 - [[13_Agent_Production/Agent_Harness/The_Anatomy_of_an_Agent_Harness]] — Harness 工程定义
 - [[13_Agent_Production/Agentic_Coding_Tools/Claude_Code_Deep_Dive]] — Claude Code 产品解析
-- [[90_Learn/AI_Engineering_Roadmap_2026]] — AI 工程师学习路线
-- [[90_Learn/Learning_Paths_2026]] — 本库 6 条学习路径总览
+- [[90_Learn/guides/ai_engineering_roadmap_2026]] — AI 工程师学习路线
+- [[90_Learn/guides/learning_paths_2026]] — 本库 6 条学习路径总览

@@ -160,6 +160,48 @@ title: Wiki Index
 ### 大模型技术生态评估
 - [[_llm-ecosystem-analysis-2026-06-15]] — 大模型技术生态内容完整性分析 ( #meta #audit #llm-ecosystem)
 
+### Yeasy AI 知识库系列 — 提示词与上下文工程
+- [[04_NLP_LLMs/Prompt_Engineering/Prompt_Engineering_Complete_Guide]] — 提示词工程核心技术：结构、最佳实践、少样本、CoT、ReAct ( #prompt-engineering #llm)
+- [[04_NLP_LLMs/Prompt_Engineering/Prompt_Engineering_Advanced_Apps]] — 提示词高级应用：RAG、多模态、安全、PromptOps ( #prompt-engineering #rag #multimodal)
+- [[04_NLP_LLMs/Prompt_Engineering/Prompt_Engineering_Templates_Patterns]] — 提示词模板库、反模式与决策树 ( #prompt-engineering #templates #anti-patterns)
+- [[04_NLP_LLMs/Context_Engineering_Guide]] — 上下文工程权威指南：写入/选择/压缩/隔离四大策略 ( #context-engineering #llm)
+- [[04_NLP_LLMs/Context_Engineering_Patterns]] — 上下文工程模式：记忆架构、Graph RAG、XML 标签、反模式 ( #context-engineering #graph-rag #memory)
+
+### Yeasy AI 知识库系列 — LLM 原理与架构
+- [[04_NLP_LLMs/Transformer_Deep_Dive]] — Transformer 深度解析：QKV 注意力、位置编码（RoPE/ALiBi）、完整架构 ( #transformer #attention #position-encoding)
+- [[04_NLP_LLMs/LLM_Training_Deep_Dive]] — LLM 训练深度解析：预训练、分布式训练（ZeRO/3D 并行）、对齐（RLHF/DPO/LoRA） ( #llm-training #distributed #rlhf #lora)
+- [[04_NLP_LLMs/LLM_Inference_Deep_Dive]] — LLM 推理深度解析：解码策略、KV Cache、Flash Attention、投机解码、PagedAttention ( #llm-inference #kv-cache #flash-attention)
+- [[04_NLP_LLMs/LLM_Architecture_Evolution]] — LLM 架构演进：BERT/GPT/Llama/DeepSeek 家族、MoE、SSM/Mamba ( #llm-architecture #moe #ssm)
+
+### Yeasy AI 知识库系列 — AI 入门
+- [[00_AI_Introduction/AI_Reasoning_Models_Guide]] — 推理模型指南：System 1/2、推理计算、主流推理模型对比 ( #reasoning-models #inference-compute)
+- [[00_AI_Introduction/AI_New_Architectures]] — 新架构与创新：SSM/Mamba、Jamba、DeepSeek MLA/MoE/R1 ( #new-architectures #ssm #deepseek)
+- [[00_AI_Introduction/AI_Multimodal_GenAI]] — 多模态与生成式 AI：扩散模型、视频/音频生成、具身智能 ( #multimodal #genai #diffusion)
+
+### Yeasy AI 知识库系列 — Claude 与 AI 编码
+- [[17_AI_Coding/02_Tools/Claude_Complete_Guide]] — Claude 完整指南：模型家族、XML 提示、工具使用、MCP、Computer Use ( #claude #anthropic #mcp)
+- [[17_AI_Coding/02_Tools/Claude_Code_Deep_Dive]] — Claude Code 深度解析：CLI、SDK、IDE、Routines、Hooks ( #claude-code #ai-coding)
+- [[17_AI_Coding/01_Theory/Claude_Agent_Architecture]] — Claude Agent 架构：设计模式、扩展思考、多 Agent 协作、Agent SDK ( #claude #agent #multi-agent)
+
+### Yeasy AI 知识库系列 — 智能体与 Harness
+- [[13_Agent_Production/Agent_Foundations/Agentic_AI_Complete_Guide]] — 智能体 AI 完整指南：认知层级、推理、记忆、工具、MCP ( #agent #reasoning #memory)
+- [[13_Agent_Production/Agent_Foundations/Multi_Agent_Systems_Guide]] — 多智能体系统指南：协作架构、SOP、A2A、博弈论、评估 ( #multi-agent #collaboration #a2a)
+- [[13_Agent_Production/Agent_Workflow/AgentOps_Production_Guide]] — AgentOps 生产指南：框架生态、Harness、可观测性、反模式 ( #agentops #production #observability)
+- [[13_Agent_Production/Agent_Harness/Harness_Engineering_Complete_Guide]] — Harness 工程完整指南：五大子系统、设计原则、架构 ( #agent-harness #architecture)
+- [[13_Agent_Production/Agent_Harness/Harness_Core_Subsystems]] — Harness 核心子系统：运行时引擎、工具层、记忆、输出治理 ( #agent-harness #runtime #tool-layer)
+- [[13_Agent_Production/Agent_Harness/Harness_Production_Security]] — Harness 生产安全：编排、MCP、可靠性、安全威胁模型 ( #agent-harness #security #mcp)
+
+### Yeasy AI 知识库系列 — OpenClaw
+- [[13_Agent_Production/23_OpenClaw_Ecosystem/OpenClaw_Complete_Guide]] — OpenClaw 完整指南：安装、配置、工具、记忆、多渠道、多 Agent ( #openclaw #agent-framework)
+- [[13_Agent_Production/23_OpenClaw_Ecosystem/OpenClaw_Internals]] — OpenClaw 内部实现：Gateway 五平面、Agent Loop、可靠性、插件 ( #openclaw #internals #gateway)
+
+### Yeasy AI 知识库系列 — 安全
+- [[19_Ethics_Safety/LLM_Security_Complete_Guide]] — LLM 安全完整指南：威胁全景、OWASP/NIST/ATLAS、攻击技术 ( #llm-security #owasp #prompt-injection)
+- [[19_Ethics_Safety/LLM_Security_Defense_Guide]] — LLM 安全防御指南：纵深防御、I/O 防护、安全运营、治理 ( #llm-security #defense #red-teaming)
+- [[19_Ethics_Safety/Agent_RAG_Security]] — Agent 与 RAG 安全：攻击面、工具安全、多 Agent 安全、Rule of Two ( #agent-security #rag-security)
+
 ## Synthesis
+
+- [[synthesis/hami-cdi-dra]] — HAMi × CDI × DRA：异构 GPU 共享与设备注入的协作关系 ( #hami #cdi #dra #gpu-virtualization #synthesis)
 
 ## Journal

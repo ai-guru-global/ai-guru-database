@@ -2,7 +2,7 @@
 title: "Dragonfly: 大模型权重 P2P 加速分发"
 category: "12-architecture-infrastructure"
 tags: ["cncf", "dragonfly", "p2p", "distribution", "registry", "llm"]
-summary: "> **一句话理解**: Dragonfly 是 CNCF 毕业级的 P2P 分发系统——把"100 个 GPU 节点同时拉 70GB 模型把镜像仓库打爆"变成"节点越多反而越快"，是大模型镜像/权重分发的首选加速层。"
+summary: '> **一句话理解**: Dragonfly 是 CNCF 毕业级的 P2P 分发系统——把"100 个 GPU 节点同时拉 70GB 模型把镜像仓库打爆"变成"节点越多反而越快"，是大模型镜像/权重分发的首选加速层。'
 created: "2026-06-16"
 updated: "2026-06-16"
 ---

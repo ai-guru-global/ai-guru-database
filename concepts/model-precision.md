@@ -18,7 +18,7 @@ sources:
   - 09_Deployment_Inference/Quantization_Precision_Deep_Dive.md
   - 09_Deployment_Inference/Deployment_Inference_2026.md
   - 08_Model_Evaluation/README.md
-summary: "精度"在大模型语境中有两层含义：数值精度（每个参数用几位存储，FP32→INT4 逐级压缩）和模型准确性（benchmark 得分）。两者关系是——数值精度是手段，模型准确性是目的。量化的艺术就是在"省资源"和"不变傻"之间找平衡。
+summary: '精度"在大模型语境中有两层含义：数值精度（每个参数用几位存储，FP32→INT4 逐级压缩）和模型准确性（benchmark 得分）。两者关系是——数值精度是手段，模型准确性是目的。量化的艺术就是在"省资源"和"不变傻"之间找平衡。'
 provenance:
   extracted: 0.85
   inferred: 0.1

@@ -108,9 +108,7 @@ Knative Serving CRD 全景
 └─────────────────────────────────────────────────────────────────┘
 ```
 
-**对象关系**：`ksvc` 自动创建 `Configuration` + `Route`；每次 `spec.template` 变更产出不可变 `Revision`；`Route` 按权重把流量分到各 Revision（见 3.2 流量切分图）。
-
-**CRD 字段速查表**（关键字段 + 职责）：
+**对象关系**：`ksvc` 自动创建 `Configuration` + `Route`；每次 `spec.template` 变更产出不可变 `Revision`；`Route` 按权重把流量分到各 Revision（见 3.2 流量切分图）。各 CRD 的关键字段与职责：
 
 | CRD | 关键字段 | 职责 |
 |-----|---------|------|
@@ -119,8 +117,6 @@ Knative Serving CRD 全景
 | **Revision** | `status.conditions[Ready]`；自动关联 `PodAutoscaler` | 不可变版本；每个 Revision 自动生成一个 Deployment + PA |
 | **Route** | `spec.traffic[].revisionName` + `percent` + `tag` | 流量按权重分流到 Revision；tag 生成独立子域名供 canary 访问 |
 | **PodAutoscaler** (`PA`) | `spec.scaleTargetRef`；`spec.minScale/maxScale`；`spec.containerConcurrency`；`spec.class`(kpa/hpa) | 内部 CRD，KPA 据此算期望副本并写回 `status.desiredPodCount` |
-
-> 记忆口诀：`Service` 管「怎么发布」，`Configuration` 管「跑什么」，`Revision` 是「不可变快照」，`Route` 管「流量怎么走」，`PodAutoscaler` 管「副本几个」——五者各司其职，由 controller 自动调和。
 
 ### 2.1 逐个概念
 
@@ -162,8 +158,7 @@ Knative Serving CRD 全景
  T+121s    ACTIVATOR HOLD  挂起请求(不报错) + 回调 KPA: 期望副本 0→1
            WAKE POD        调度 Pod → 分 GPU → vLLM 载入权重 (主要 cold start)
  T+135s    Pod Ready       readinessProbe 通过, Queue-Proxy 就绪
- T+136s    FORWARD         Activator 转发挂起的请求给新 Pod
- T+137s    ACTIVE          请求返回客户端, 回到稳态
+ T+136s    FORWARD→ACTIVE  Activator 转发请求 → 客户端收到响应, 回到稳态
 ```
 
 > 调用方感受到的「慢」= `T+120s → T+137s`（示例约 17s）。实际 7B 模型常为 30s~2min，70B 多卡 3~10min。可调项：缩短 WAKE POD（权重 PVC 预拉 / 量化），或直接跳过归零（`min-scale:1`）。
@@ -399,8 +394,6 @@ time curl -s $URL/v1/chat/completions ...
 
 ### 6.1 弹性注解速查表
 
-下面列出 LLM 场景最常用的扩缩/服务注解与 spec 字段（共 16 项），按「弹性 / 归零 / 就绪 / 容器」分组：
-
 | 配置项 | 类型 | 作用 | 典型值 (LLM) |
 |--------|------|------|-------------|
 | `autoscaling.knative.dev/class` | 注解 | 扩缩器类型 | `kpa.autoscaling.knative.dev`（请求驱动）；`hpa.*` 走 CPU/内存 |
@@ -411,8 +404,7 @@ time curl -s $URL/v1/chat/completions ...
 | `autoscaling.knative.dev/initial-scale` | 注解 | Revision 首次创建时的初始副本 | `1`（默认），冷启动后即就绪 |
 | `autoscaling.knative.dev/window` | 注解 | 扩缩聚合观测窗口 | `60s`（默认）；突发可调 `30s` |
 | `autoscaling.knative.dev/stable-window` | 注解 | 稳态判定窗口（决定是否缩容/归零） | `60s`（默认） |
-| `autoscaling.knative.dev/panic-window` | 注解 | 恐慌窗口（突发快速扩容） | `10s`（默认，配合 panic-threshold） |
-| `autoscaling.knative.dev/panic-threshold-percentage` | 注解 | 进入恐慌模式的观测/期望比 | `200`（默认 2 倍即恐慌扩容） |
+| `autoscaling.knative.dev/panic-window` (+`panic-threshold-percentage`) | 注解 | 恐慌窗口（突发快速扩容）及触发倍率 | `10s` + `200`（默认 2 倍即恐慌扩容） |
 | `autoscaling.knative.dev/scale-to-zero-pod-retention-period` | 注解 | 最后一次请求后 Pod 保留时长 | `30s`~`5m`（短=省 GPU，长=抗抖动） |
 | `autoscaling.knative.dev/scale-to-zero-grace-period` | 注解 | 归零前的最小宽限（stable-window 下限） | `30s`（默认），需 ≤ stable-window |
 | `serving.knative.dev/progress-deadline` | 注解 | Revision 就绪宽限；超时判 Ready 失败 | LLM 建议 `300s`~`900s`（权重加载） |
@@ -525,7 +517,6 @@ spec:
 下面是一个「营业时段常驻、带 GPU、就绪宽限充分、对新模型做金丝雀」的生产级 `ksvc`，集中演示上面所有注解的协同：
 
 ```yaml
-# qwen-prod.yaml —— 营业时段 min-scale:1 保活 + GPU + canary 到 14B
 apiVersion: serving.knative.dev/v1
 kind: Service
 metadata: { name: qwen-prod, namespace: default }
@@ -534,35 +525,26 @@ spec:
     metadata:
       name: qwen-prod-v2
       annotations:
-        autoscaling.knative.dev/min-scale: "1"
+        autoscaling.knative.dev/min-scale: "1"          # 保活避冷启动
         autoscaling.knative.dev/max-scale: "4"
-        autoscaling.knative.dev/target: "4"
-        autoscaling.knative.dev/target-utilization-percentage: "75"
-        serving.knative.dev/progress-deadline: "900s"
+        serving.knative.dev/progress-deadline: "900s"   # 权重加载宽限
     spec:
-      timeoutSeconds: 300
       containerConcurrency: 6
       nodeSelector: { nvidia.com/gpu.present: "true" }
       containers:
         - name: vllm
           image: vllm/vllm-openai:latest
           args: ["--model=Qwen/Qwen2.5-14B-Instruct", "--tensor-parallel-size=1"]
-          env:
-            - name: HUGGING_FACE_HUB_TOKEN
-              valueFrom: { secretKeyRef: { name: hf-token, key: token } }
           resources:
             limits:   { nvidia.com/gpu: "1", memory: 48Gi }
             requests: { nvidia.com/gpu: "1", memory: 32Gi }
-          readinessProbe:
-            httpGet: { path: /health, port: 8000 }
-            initialDelaySeconds: 60
-            failureThreshold: 60
+          readinessProbe: { httpGet: { path: /health, port: 8000 }, failureThreshold: 60 }
   traffic:
     - { revisionName: qwen-prod-v1, percent: 90, tag: stable }
     - { revisionName: qwen-prod-v2, percent: 10, tag: canary }
 ```
 
-> 关键点：`min-scale:1` 让核心模型永不归零（无 cold start）；`progress-deadline:900s` + `failureThreshold:60` 给 14B 权重加载留足时间；`traffic` 块把 10% 流量引到 v2 做金丝雀。非营业时段可用脚本把 `min-scale` 改回 `0` 释放 GPU。
+> 关键点：`min-scale:1` 让核心模型永不归零（无 cold start）；`progress-deadline:900s` + `failureThreshold:60` 给 14B 权重加载留足时间；`traffic` 块把 10% 流量引到 v2 做金丝雀。非营业时段可把 `min-scale` 改回 `0` 释放 GPU。
 
 ### 6.7 冷启动缓解 Playbook
 

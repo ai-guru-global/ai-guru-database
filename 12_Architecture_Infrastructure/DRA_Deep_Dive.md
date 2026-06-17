@@ -46,7 +46,7 @@ resources:
 | 要 70GB+ 显存的卡 | 无法表达属性，只能全集群手动打标签 |
 | MIG 切片调度 | 实例被当成独立设备硬塞进 ExtendedResource，调度器不懂切片语义 |
 | GPU + 网卡同 NUMA | 无法表达设备间拓扑关系 |
-| 多 Pod 共享一卡 | 计数模型天生独占，共享要靠 [[12_Architecture_Infrastructure/HAMi_Deep_Dive\|HAMi]] 等外部方案 |
+| 多 Pod 共享一卡 | 计数模型天生独占，共享要靠 [[12_Architecture_Infrastructure/HAMi_Deep_Dive|HAMi]] 等外部方案 |
 | 厂商做复杂分配逻辑 | 必须绕过调度器，在 kubelet 外自建 gRPC，调度器看不到真实状态 |
 
 > **根本矛盾**: 调度器对设备「一无所知」，只看到一个整数；真实的设备能力、拓扑、共享需求，调度器全看不见。

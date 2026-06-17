@@ -85,13 +85,7 @@ source: "_sources/yeasy/agentic_ai_guide/ (Ch1-4)"
 
 ### 3.1 思维链 (CoT) -- 线性推理
 
-**核心思想**: 让模型在给出最终答案前先输出中间推理步骤。
-
-**为什么有效**:
-1. 降低认知负荷 -- 拆解复杂问题为单步计算
-2. 错误可追溯 -- 精确定位逻辑出错步骤
-3. 上下文引导 -- 中间步骤产生高质量上下文
-4. 对齐人类思维 -- 模仿 System 2 慢思考
+> CoT 的核心机制（分解复杂问题、利用中间结果、激活训练模式）、自一致性投票、思维树详见 [[Prompt_Engineering_Complete_Guide#6-思维链与推理增强chain-of-thought]]。此处仅保留智能体工程视角的要点：
 
 **核心变体**:
 
@@ -102,7 +96,7 @@ source: "_sources/yeasy/agentic_ai_guide/ (Ch1-4)"
 | Self-Consistency | Wang 2022 | 多路径采样 + 多数投票 | 高风险决策 |
 | 内在 CoT / System 2 推理 | o-series | 模型内部扩展思考 | 复杂任务 |
 
-**工程最佳实践**:
+**智能体工程最佳实践**:
 - 使用分隔符 (`<thinking>`, `<answer>`) 分离推理与答案
 - 单路推理: `temperature=0`; 投票: `temperature>0.5`
 - 明确推理框架 (Analyze -> Plan -> Reasoning -> Conclusion)
@@ -284,18 +278,9 @@ L1 工具结果磁盘缓存 -> L2 微压缩 (60min) -> L3 Session Memory -> L4 �
 
 ### 5.1 MCP (Model Context Protocol)
 
-**解决的痛点**: 重复造轮子、语义不一致、权限难治理、难以复用
-
-**从静态集成到动态发现**:
-- 静态: 手写每个工具描述、参数、错误处理
-- 动态: 运行时发现能力、资源、操作结构
-
-**Server 侧三原语**:
-1. **Resources** -- 只读数据项 (文件、表、文档)
-2. **Tools** -- 可执行操作 (查询、写入、API 调用)
-3. **Prompts** -- 可复用交互模式模板
-
-**架构三角**: Host (宿主) -> Client (1:1 会话) -> Server (暴露能力)
+> MCP 协议的完整架构（Host/Client/Server）、三大构件（Tools/Resources/Prompts）、传输层与上下文工程三层架构详见 [[Context_Engineering_Guide#5.3-model-context-protocol-mcp]]。
+> - MCP 解决的核心痛点：从静态集成（手写每个工具描述）到动态发现（运行时发现能力、资源、操作结构）
+> - 架构三角：Host (宿主) → Client (1:1 会话) → Server (暴露能力)
 
 ### 5.2 智能体技能 (Agent Skills)
 

@@ -1,10 +1,10 @@
 ---
 title: "Qwen (通义千问) 技术深度解析"
 category: 04-nlp-llms-chinese-llm
-tags: [qwen, alibaba, chinese-llm, moe, hybrid-thinking, multimodal, open-source, m-rope, reasoning]
-summary: "全面剖析阿里通义千问 Qwen 系列从 Qwen-7B 到 Qwen3-235B-A22B 的完整技术演进：架构设计、混合思维模式、M-RoPE 多模态位置编码、动态分辨率、后训练四阶段及开源生态。"
+tags: [qwen, alibaba, chinese-llm, moe, hybrid-thinking, multimodal, open-source, m-rope, reasoning, qwen3.7-max, qwen3-2507]
+summary: "全面剖析阿里通义千问 Qwen 系列从 Qwen-7B 到 Qwen3-235B-A22B 的完整技术演进：架构设计、混合思维模式、M-RoPE 多模态位置编码、动态分辨率、后训练四阶段及开源生态。2026 年 6 月更新补充 Qwen3-2507 开源系列 (1M 上下文、Instruct/Thinking 双变体) 与 Qwen3.7-Max 2026 闭源旗舰 (数学基准 HMMT Feb 2026 领先)。"
 created: 2026-06-01
-updated: 2026-06-01
+updated: 2026-06-16
 ---
 
 # Qwen (通义千问) 技术深度解析
@@ -102,7 +102,12 @@ timeline
     section 2025
         Qwen3 Dense : 2025-04 : 0.6B-32B
         Qwen3 MoE : 2025-04 : 235B-A22B, 30B-A3B
+        Qwen3-2507 : 2025-07 : Instruct/Thinking 双变体
+        Qwen3-2507 1M : 2025-08 : 235B & 30B 启用 1M 上下文
         Qwen3-Next : 2025 H2 : 80B-A3B 超高效推理
+    section 2026
+        Qwen3.7-Max : 2026 : 闭源旗舰，API-only
+        Qwen3.7-Max : 2026 : HMMT Feb 97.1 数学领先
 ```
 
 ### 2.2 模型参数演进表
@@ -120,7 +125,9 @@ timeline
 | 2024-11 | Qwen2.5-Coder | 0.5B-32B | Dense | 128K | 5.5T tokens | 92 种编程语言，FIM |
 | 2024-11 | QwQ-32B-Preview | 32B | Dense | 128K | 推理数据 | 长链思维，自我反思 |
 | 2025-04 | Qwen3 | 0.6B-32B + MoE | Dense + MoE | 32K-128K | 36T tokens | 混合思维模式，4 阶段后训练 |
+| 2025-07~08 | Qwen3-2507 | 235B-A22B, 30B-A3B, 4B | MoE + Dense | **1M (235B/30B)** | — | Instruct/Thinking 双变体分离，仅思考模式 |
 | 2025 H2 | Qwen3-Next | 80B-A3B | MoE | 128K | — | 超高效推理 |
+| 2026 | Qwen3.7-Max | proprietary (未公开) | Hybrid Thinking MoE (闭源) | 1M (API) | — | 2026 闭源旗舰，HMMT Feb 97.1 数学领先 |
 
 ### 2.3 模型命名规则
 
@@ -336,6 +343,280 @@ graph TB
 | 训练数据 | 36T tokens | 14.8T tokens |
 | 许可证 | Apache 2.0 | MIT |
 | 推理成本 | 较低 | 较高 |
+
+### 3.5 Qwen3-2507 与 Qwen3.7-Max：1M 上下文开源 + 2026 闭源旗舰
+
+继 2025 年 4 月 29 日发布的原始 Qwen3 系列之后，阿里通义千问团队在 2025 年中至 2026 年完成了两条平行的演进路线：
+
+```
+Qwen3 后续演进双轨 (2025 H2 ~ 2026)
+
+┌─────────────────────────────────────────────────────────────┐
+│  开源轨 (Open-Weight)                                          │
+│  ├── 2025-04-29  Qwen3 原始系列 (Dense + MoE)                 │
+│  ├── 2025-07~08  Qwen3-2507 系列 (Instruct/Thinking 双变体)    │
+│  └── 2025-08-08  1M 上下文启用 (235B & 30B)                   │
+│                                                               │
+│  闭源轨 (Proprietary / API-only)                              │
+│  └── 2026        Qwen3.7-Max 旗舰 (chat.qwen.ai / 百炼)        │
+└─────────────────────────────────────────────────────────────┘
+```
+
+#### 3.5.1 Qwen3-2507 开源系列
+
+Qwen3-2507 是 2025 年发布的开源权重迭代版本，在原始 Qwen3 的"双模式合一"基础上做了一次关键的产品形态调整：**把 Instruct (非思考) 与 Thinking (思考) 拆成两个独立模型**，各自在单一目标上做到极致。
+
+**变体 × 规模矩阵**:
+
+```
+                Instruct-2507           Thinking-2507
+                (非思考专用)             (仅思考专用)
+            ┌───────────────────┬───────────────────┐
+  235B-A22B │ Qwen3-Instruct-   │ Qwen3-Thinking-   │  ← MoE 旗舰
+            │     235B-2507     │     235B-2507     │
+            ├───────────────────┼───────────────────┤
+  30B-A3B   │ Qwen3-Instruct-   │ Qwen3-Thinking-   │  ← MoE 高效
+            │     30B-2507      │     30B-2507      │
+            ├───────────────────┼───────────────────┤
+  4B        │ Qwen3-Instruct-   │ Qwen3-Thinking-   │  ← Dense 端侧
+            │     4B-2507       │     4B-2507       │
+            └───────────────────┴───────────────────┘
+                  ↑                       ↑
+            直接生成回答            仅思考模式 (thinking-only)
+            低延迟响应              更长思考链 + 更深推理
+```
+
+**Thinking-2507 的关键改进**:
+
+| 维度 | 原始 Qwen3 (Thinking) | Qwen3-Thinking-2507 |
+|------|----------------------|---------------------|
+| 模式形态 | 与非思考模式共存 (混合切换) | **仅思考模式 (thinking-only)** |
+| 思考深度 | 标准 | **提升推理质量与深度** |
+| 思考链长度 | 标准 | **增加 thinking 长度** |
+| 调用复杂度 | 需 `enable_thinking` 切换 | 默认即思考，无需切换 |
+| 适用场景 | 既要快又要慢的通用场景 | 明确需要深度推理的专项场景 |
+
+**发布时间线 (Release Timeline)**:
+
+| 发布日期 | 模型 | 规模 | 备注 |
+|---------|------|------|------|
+| 2025-04-29 | 原始 Qwen3 系列 | 0.6B~235B-A22B | Dense + MoE，混合思维合一 |
+| 2025-07-21 | Qwen3-Instruct-235B-2507 | 235B-A22B (MoE) | 非思考专用旗舰首发 |
+| 2025-07-25 | Qwen3-Thinking-235B-2507 | 235B-A22B (MoE) | 仅思考模式旗舰 |
+| 2025-07-30 | Qwen3-Instruct-30B-2507 | 30B-A3B (MoE) | 高效版 Instruct |
+| 2025-07-31 | Qwen3-Thinking-30B-2507 | 30B-A3B (MoE) | 高效版 Thinking |
+| 2025-08-06 | Qwen3-Instruct/Thinking-4B-2507 | 4B (Dense) | 端侧版本 |
+| 2025-08-08 | 1M 上下文启用 | 235B & 30B | 235B 与 30B 尺寸解锁 1M |
+
+> 4B 端侧尺寸未列入 1M 上下文启用范围；Instruct-2357 的长上下文理解上限为 **256K**。
+
+#### 3.5.2 1M 上下文启用 (2025-08-08)
+
+2025 年 8 月 8 日，Qwen 官方为 **Qwen3-235B-2507 与 Qwen3-30B-2507** (Instruct 与 Thinking 变体均适用) 启用 **1M-token 上下文窗口**，这是 Qwen 开源系列首次将上下文从 128K 级别推进到百万级。
+
+```
+Qwen 开源上下文演进:
+
+Qwen1     (2023-08):   8K  ──────── (→32K 扩展)
+Qwen1.5   (2024-02):  32K ──────────────── (→128K)
+Qwen2/2.5 (2024):    128K ─────────────────────────────────
+Qwen3     (2025-04): 128K ─────────────────────────────────
+Qwen3-2507(2025-08): 1M  ────────────────────────────────────────────────
+                          ↑ 235B & 30B 尺寸解锁
+                          (4B 仍为 256K/128K 级)
+```
+
+**1M 上下文的意义**:
+
+1. **整库代码理解**: 一次喂入一个完整的中大型代码仓库 (约 20~30 万行代码)
+2. **长文档分析**: 一次性处理整本书籍、整套法律条文、完整财报季的所有文档
+3. **超长对话记忆**: 万轮以上的多轮对话无需外部 RAG 即可保持连贯
+4. **跨文档推理**: 在多份长文档之间做交叉引用与对比
+
+> **相关文档**: 长上下文的技术栈 (YaRN / NTK-aware / 滑动窗口) 见本文 [§4.5 长上下文扩展](#45-长上下文扩展-long-context-scaling)。
+
+#### 3.5.3 Qwen3.7-Max 闭源旗舰 (2026)
+
+**定位**: Qwen3.7-Max 是 Qwen 2026 年的**闭源旗舰 (proprietary, 非 open-weight)**，仅通过 API 提供服务，入口为 **https://chat.qwen.ai** (C 端对话) 与 **阿里云百炼 (Bailian / DashScope)** 平台 (B 端 API 接入)。
+
+```
+Qwen3.7-Max 在 Qwen 生态中的位置
+
+┌───────────────────────────────────────────────┐
+│             Qwen3.7-Max (2026 闭源旗舰)          │
+│  ├── 形态: proprietary / API-only               │
+│  ├── 入口: chat.qwen.ai · 阿里云百炼 DashScope   │
+│  ├── 架构: Qwen3 lineage 继承                    │
+│  │         (Hybrid Thinking MoE，权重未公开)      │
+│  └── 对标: Claude Opus 4.8 / GPT-5.5            │
+│            Gemini 3.1 Pro / GLM-5.2              │
+└───────────────────────────────────────────────┘
+         │ 架构血统继承
+         ▼
+┌───────────────────────────────────────────────┐
+│  Qwen3-235B-A22B-2507 (开源对照参考)            │
+│  ├── 形态: open-weight (Apache 2.0)             │
+│  ├── 架构: MoE 235B-A22B, 128 专家 Top-8        │
+│  ├── 模式: Hybrid Thinking (enable_thinking)    │
+│  └── 可作为理解 Qwen3.7-Max 架构的公开参照       │
+└───────────────────────────────────────────────┘
+```
+
+**架构继承说明 (重要)**:
+
+Qwen3.7-Max 的**具体参数规模、专家数、激活参数、训练数据量等细节均为 proprietary，官方未公开**。基于 Qwen 团队的命名血统 (Qwen3 lineage)，可以确认它继承自本文档已详述的 **Qwen3 Hybrid Thinking MoE 架构**:
+
+- **Hybrid Thinking**: 支持 thinking / non-thinking 双模式切换 (详见 [§4.1](#41-混合思维模式-hybrid-thinking-mode))
+- **MoE 路由**: 128 专家 Top-8 架构家族 (详见 [§3.4](#34-qwen3-架构革命))
+- **M-RoPE / 长上下文**: 继承 Qwen2-VL 以来的位置编码与 1M 上下文能力 (详见 [§4.3](#43-m-rope-multimodal-rotary-position-embedding) / [§4.5](#45-长上下文扩展-long-context-scaling))
+
+> **诚实声明**: 下文凡涉及 Qwen3.7-Max 的具体参数均标注 "proprietary / 未公开"。讨论架构机制时，以开源的 **Qwen3-235B-A22B-2507** 作为公开参照系。
+
+#### 3.5.4 Qwen3.7-Max 跨厂商 Benchmark
+
+以下数据来自官方 GLM-5.2 跨厂商对比表 (这些是真实跨厂商基准数据，Qwen3.7-Max 列作为对比参考):
+
+| Benchmark | Qwen3.7-Max | 说明 |
+|-----------|-------------|------|
+| **HLE** | **41.4** | Humanity's Last Exam (无工具) |
+| HLE (w/ Tools) | 53.5 | HLE 启用工具调用 |
+| **AIME 2026** | **97** | 美国数学邀请赛 2026 |
+| HMMT Nov. 2025 | 95 | 哈佛-MIT 数学锦标赛 11 月 |
+| **HMMT Feb. 2026** | **97.1** | **数学榜首 (开源对照集最高)** |
+| IMOAnswerBench | 90 | IMO 风格答题基准 |
+| GPQA-Diamond | 90 | 研究生级科学问答 |
+| SWE-bench Pro | 60.6 | 专业级软件工程 |
+| NL2Repo | 47.2 | 自然语言→代码仓库 |
+| Terminal-Bench 2.1 (Terminus-2) | 75 | 终端 Agent 任务 |
+| MCP-Atlas (Public) | 76.4 | MCP 工具图谱 |
+| Tool-Decathlon | — | 未提供数据 |
+
+**Qwen3.7-Max 的领先点**:
+
+```
+数学推理 (Math Leadership)
+┌──────────────────────────────────────────────┐
+│  HMMT Feb. 2026:  97.1  ← Qwen3.7-Max 榜首    │
+│  AIME 2026:        97                          │
+│  HMMT Nov. 2025:   95                          │
+│  IMOAnswerBench:   90                          │
+└──────────────────────────────────────────────┘
+  → 在 2025-2026 竞赛数学基准上处于第一梯队，
+    HMMT Feb 2026 成绩在公开对比集中居首。
+
+中文理解 (Chinese Understanding)
+  → Qwen 一贯优势，延续 Qwen3 中文领先的定位
+    (见 §6.1 中文能力对比)。
+
+Agent / 工具调用 (Agentic)
+┌──────────────────────────────────────────────┐
+│  Terminal-Bench 2.1: 75                       │
+│  MCP-Atlas (Public): 76.4                     │
+│  SWE-bench Pro:      60.6                     │
+│  NL2Repo:            47.2                     │
+└──────────────────────────────────────────────┘
+  → 工程类 Agent 基准进入第一梯队，
+    与 GLM-5.2 / Claude Opus 4.8 同台竞争。
+```
+
+**与同级闭源旗舰的竞争定位**:
+
+| 维度 | Qwen3.7-Max | Claude Opus 4.8 | GPT-5.5 | Gemini 3.1 Pro | GLM-5.2 |
+|------|-------------|-----------------|---------|----------------|---------|
+| 形态 | 闭源 API | 闭源 API | 闭源 API | 闭源 API | 闭源 API |
+| 数学 (HMMT Feb 2026) | **97.1 (领先)** | 竞争力 | 竞争力 | 竞争力 | 竞争力 |
+| 中文理解 | **领先** | 一般 | 一般 | 一般 | **领先** |
+| 开源对照参考 | Qwen3-235B-A22B-2507 | 无 | 无 | 无 | GLM-5.2 开源版 |
+| 接入入口 | chat.qwen.ai / 百炼 | Anthropic API | OpenAI API | Google API | 智谱 API |
+
+> **相关文档**: 跨厂商基准与 GLM-5.2 的全面对比，参见 [[GLM-5.2]] 及 [[04_NLP_LLMs/Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]]。
+
+#### 3.5.5 Hybrid Thinking 架构回顾
+
+Qwen3.7-Max 与 Qwen3-2507 共用的核心架构机制已在本文档前文详述，此处仅做交叉引用:
+
+| 机制 | 详见章节 | 要点 |
+|------|---------|------|
+| Hybrid Thinking Mode | [§4.1](#41-混合思维模式-hybrid-thinking-mode) | thinking/non-thinking 双模切换，`enable_thinking` 控制 |
+| MoE 128 专家 Top-8 | [§3.4](#34-qwen3-架构革命) | 235B-A22B 架构详解 |
+| M-RoPE 3D 位置编码 | [§4.3](#43-m-rope-multimodal-rotary-position-embedding) | (t, h, w) 多模态位置分解 |
+| 长上下文 (1M) | [§4.5](#45-长上下文扩展-long-context-scaling) | YaRN / NTK-aware / 滑动窗口 |
+| 4 阶段后训练 | [§4.2](#42-qwen3-四阶段后训练-post-training) | 冷启动→RL→模式融合→对齐 |
+
+> Qwen3-2507 的 Thinking 变体把混合思维中的"思考"模式独立出来并加长思考链；Qwen3.7-Max 在闭源侧延续 Hybrid Thinking 的双模式 API 设计 (`enable_thinking` / `reasoning.effort`，详见本文末尾"Qwen 3.7 系列最新更新")。
+
+#### 3.5.6 部署矩阵：开源 Qwen3-2507 vs 闭源 Qwen3.7-Max
+
+**A. 开源 Qwen3-2507 自托管部署 (1M 上下文)**
+
+```bash
+# SGLang 部署 Qwen3-Thinking-2507 (1M 上下文)
+python -m sglang.launch_server \
+    --model-path Qwen/Qwen3-Thinking-235B-2507 \
+    --tp 8 \
+    --context-length 262144 \
+    --reasoning-parser deepseek-r1 \
+    --port 30000
+# 注: --context-length 262144 为 256K 启用; 1M 需相应调整与显存预算
+
+# vLLM 部署 Qwen3-Thinking-2507 (启用推理解析)
+vllm serve Qwen/Qwen3-Thinking-235B-2507 \
+    --tensor-parallel-size 8 \
+    --max-model-len 1048576 \
+    --enable-reasoning \
+    --reasoning-parser deepseek_r1 \
+    --port 8000
+```
+
+```bash
+# Qwen3-Instruct-2507 (非思考版) 部署
+vllm serve Qwen/Qwen3-Instruct-235B-2507 \
+    --tensor-parallel-size 8 \
+    --max-model-len 1048576 \
+    --port 8000
+# 注: Instruct 版不需要 --enable-reasoning / reasoning-parser
+```
+
+**部署要点**:
+
+| 参数 | Thinking-2507 | Instruct-2507 |
+|------|---------------|---------------|
+| `--context-length` (SGLang) | 262144+ | 262144+ |
+| `--reasoning-parser` (SGLang) | `deepseek-r1` | 不需要 |
+| `--enable-reasoning` (vLLM) | 是 | 否 |
+| `--reasoning-parser` (vLLM) | `deepseek_r1` | 不需要 |
+| 1M 上下文显存参考 | 235B 需多卡 / 卸载 | 同左 |
+
+**B. 闭源 Qwen3.7-Max API 接入**
+
+Qwen3.7-Max 为 API-only，不可自托管，接入入口:
+
+| 入口 | 地址 | 适用场景 |
+|------|------|---------|
+| **chat.qwen.ai** | https://chat.qwen.ai | C 端网页对话体验 |
+| **阿里云百炼 (Bailian)** | https://bailian.console.aliyun.com | B 端 API / DashScope 兼容模式 |
+
+```python
+# 通过阿里云百炼 (DashScope) OpenAI 兼容模式调用 Qwen3.7-Max
+from openai import OpenAI
+
+client = OpenAI(
+    base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
+    api_key="your-bailian-api-key"
+)
+
+response = client.chat.completions.create(
+    model="qwen3.7-max",                # 闭源旗舰
+    messages=[
+        {"role": "user", "content": "证明 √2 是无理数"}
+    ],
+    extra_body={
+        "enable_thinking": True,         # Hybrid Thinking 启用
+        "thinking_budget": 16384         # 思维预算
+    }
+)
+# API 用法详见本文末尾 "Qwen 3.7 系列最新更新" 章节
+```
 
 > **相关文档**: 关于 MoE 路由策略和负载均衡的深入分析，参见 [MoE Case Studies](../LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md)
 
@@ -959,6 +1240,51 @@ Qwen3 语言覆盖:
 | OpenAI o1 | 强 | 强 | 强 | 强 |
 | OpenAI o3-mini | 中+ | 中 | 中+ | 中 |
 
+### 6.6 Qwen3.7-Max 与 Qwen3-2507 跨厂商基准 (2026)
+
+本节补充 2025-2026 年最新两代 (Qwen3-2507 开源系列与 Qwen3.7-Max 闭源旗舰) 的跨厂商基准。数据来源为官方 GLM-5.2 跨厂商对比表 (真实跨厂商基准)。
+
+**Qwen3.7-Max 闭源旗舰 (2026)**:
+
+| Benchmark | Qwen3.7-Max | 类别 |
+|-----------|-------------|------|
+| HLE | 41.4 | 综合推理 (无工具) |
+| HLE (w/ Tools) | 53.5 | 综合推理 (启用工具) |
+| AIME 2026 | 97 | 竞赛数学 |
+| HMMT Nov. 2025 | 95 | 竞赛数学 |
+| **HMMT Feb. 2026** | **97.1** | **竞赛数学 — 公开对比集榜首** |
+| IMOAnswerBench | 90 | IMO 风格数学 |
+| GPQA-Diamond | 90 | 研究生级科学问答 |
+| SWE-bench Pro | 60.6 | 软件工程 Agent |
+| NL2Repo | 47.2 | 自然语言→代码仓库 |
+| Terminal-Bench 2.1 (Terminus-2) | 75 | 终端 Agent |
+| MCP-Atlas (Public) | 76.4 | MCP 工具图谱 |
+| Tool-Decathlon | — | 未提供数据 |
+
+**Qwen3.7-Max 领先领域解读**:
+
+```
+竞赛数学第一梯队 (Competition Math)
+  HMMT Feb. 2026:  97.1 ★ Qwen3.7-Max 在公开对比集中居首
+  AIME 2026:        97
+  HMMT Nov. 2025:   95
+  IMOAnswerBench:   90
+  → 数学是 Qwen3.7-Max 最突出的能力维度
+
+Agent / 工程类
+  MCP-Atlas (Public):       76.4
+  Terminal-Bench 2.1:       75
+  SWE-bench Pro:            60.6
+  NL2Repo:                  47.2
+  → 进入第一梯队, 与 GLM-5.2 / Claude Opus 4.8 同台
+```
+
+**Qwen3-2507 开源系列**:
+
+Qwen3-2507 作为开源对照参考，其架构骨干 (Qwen3-235B-A22B-2507) 在原始 Qwen3 已有的强数学 / 强中文基础上进一步加深思考链 (Thinking 变体)。具体的跨厂商基准分数以官方 README (https://github.com/QwenLM/Qwen3) 为准；本节不杜撰开源版的具体数字，强调其作为 **Qwen3.7-Max 闭源旗舰的公开架构参照系** 这一角色。
+
+> **定位小结**: Qwen3.7-Max 在 HMMT Feb 2026 (97.1) 上领先，数学与中文是 Qwen 旗舰的标志能力；Qwen3-2507 则把这套 Hybrid Thinking MoE 架构以 open-weight 形式提供给社区自托管。
+
 ---
 
 ## 七、开源生态与社区
@@ -1112,6 +1438,82 @@ ollama run qwen3:32b         # 32B 模型 (~20GB)
 
 # 使用混合思维模式
 >>> /think 证明素数有无穷多个
+```
+
+### 7.6 Qwen3-2507 (1M 上下文) 与 Qwen3.7-Max 部署
+
+**A. Qwen3-2507 开源自托管 (1M 上下文)**
+
+Qwen3-2507 支持 **SGLang** 与 **vLLM** 两种主流推理后端，关键差异在于推理解析 (reasoning parser) 的配置:
+
+```bash
+# SGLang 部署 Qwen3-Thinking-2507 (启用 1M 上下文 + 推理解析)
+python -m sglang.launch_server \
+    --model-path Qwen/Qwen3-Thinking-235B-2507 \
+    --tp 8 \
+    --context-length 262144 \
+    --reasoning-parser deepseek-r1 \
+    --port 30000
+# --context-length 262144 为 256K; 全量 1M (1048576) 需匹配显存预算
+# --reasoning-parser deepseek-r1 解析 <think>...</think> 思考链
+
+# vLLM 部署 Qwen3-Thinking-2507
+vllm serve Qwen/Qwen3-Thinking-235B-2507 \
+    --tensor-parallel-size 8 \
+    --max-model-len 1048576 \
+    --enable-reasoning \
+    --reasoning-parser deepseek_r1 \
+    --port 8000
+# 注: vLLM 的 parser 名称为 deepseek_r1 (下划线), SGLang 为 deepseek-r1 (连字符)
+```
+
+```bash
+# Qwen3-Instruct-2507 (非思考版) — 不需要 reasoning parser
+vllm serve Qwen/Qwen3-Instruct-235B-2507 \
+    --tensor-parallel-size 8 \
+    --max-model-len 1048576 \
+    --port 8000
+```
+
+**Qwen3-2507 部署参数对照**:
+
+| 参数 | Thinking-2507 | Instruct-2507 |
+|------|---------------|---------------|
+| SGLang `--context-length` | 262144 / 1048576 | 262144 / 1048576 |
+| SGLang `--reasoning-parser` | `deepseek-r1` | 不需要 |
+| vLLM `--enable-reasoning` | 是 | 否 |
+| vLLM `--reasoning-parser` | `deepseek_r1` | 不需要 |
+| 1M 上下文支持 | 235B & 30B | 235B & 30B |
+
+> 4B 端侧尺寸不启用 1M; Instruct-2357 长上下文理解上限为 256K。
+
+**B. Qwen3.7-Max 闭源 API 接入**
+
+Qwen3.7-Max 为 **API-only 闭源旗舰**，不可自托管，通过以下入口接入:
+
+| 入口 | 地址 | 场景 |
+|------|------|------|
+| chat.qwen.ai | https://chat.qwen.ai | C 端网页对话 |
+| 阿里云百炼 (Bailian / DashScope) | https://bailian.console.aliyun.com | B 端 API 接入 |
+
+```python
+# 阿里云百炼 OpenAI 兼容模式调用 Qwen3.7-Max
+from openai import OpenAI
+
+client = OpenAI(
+    base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
+    api_key="your-bailian-api-key"
+)
+
+response = client.chat.completions.create(
+    model="qwen3.7-max",
+    messages=[{"role": "user", "content": "分析这段代码的时间复杂度"}],
+    extra_body={
+        "enable_thinking": True,        # Hybrid Thinking 启用
+        "thinking_budget": 16384        # 思维 token 预算
+    }
+)
+# 详细 API 矩阵见本文末尾 "Qwen 3.7 系列最新更新"
 ```
 
 ---
@@ -1270,18 +1672,27 @@ model.print_trainable_parameters()
 ├── 混合思维模式
 └── 119 种语言支持
 
-2025 H2 (已公布 / 预期)
+2025 H2 (已发布 / 公布)
+├── Qwen3-2507 系列 (Instruct/Thinking 双变体, 235B/30B/4B)
+├── 1M 上下文启用 (2025-08-08, 235B & 30B)
 ├── Qwen3-Next-80B-A3B (超高效 MoE)
 ├── Qwen3-VL (视觉语言升级版)
 ├── Qwen3-Audio (音频升级版)
 └── Qwen3-Coder / Math (专用模型升级)
 
-2026 (展望)
+2026 (已发布 — 新基线)
+├── Qwen3.7-Max 闭源旗舰 (API-only)
+│   ├── HMMT Feb 2026: 97.1 (数学领先)
+│   ├── 1M 上下文 · Hybrid Thinking MoE
+│   └── 对标 Claude Opus 4.8 / GPT-5.5 / GLM-5.2
+├── 原生多模态 (Native Multimodal) 持续推进
+└── Agent 能力强化 (MCP-Atlas / Terminal-Bench)
+
+2026+ (展望)
 ├── Qwen4 (下一代基础模型?)
-├── 原生多模态 (Native Multimodal)
-├── 更强的 Agent 能力
-├── 百万级上下文?
-└── 端侧大模型 (手机部署 7B+?)
+├── 更强 Agent / 工具调用 (MCP 生态深化)
+├── 端侧大模型 (手机部署 7B+?)
+└── 百万级上下文质量持续提升
 ```
 
 ### 10.2 技术趋势
@@ -1470,4 +1881,4 @@ Qwen 3.7 系列全面支持以下高级功能：
 - [[04_NLP_LLMs/Chinese_LLM_Ecosystem/Chinese_LLM_Training_Inference_Platforms]] — 训推平台实战
 
 ---
-*Last updated: 2026-06-01*
+*Last updated: 2026-06-16*

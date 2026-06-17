@@ -57,6 +57,7 @@ title: Wiki Index
 ### 容器与设备接入
 - [[12_Architecture_Infrastructure/CDI_Deep_Dive]] — CDI 容器设备接口标准:GPU/异构加速器统一接入 K8s ( #cdi #kubernetes #gpu #containerd #device-plugin)
 - [[12_Architecture_Infrastructure/DRA_Deep_Dive]] — DRA 动态资源分配:K8s 设备分配的未来,与 CDI 配对 ( #dra #kubernetes #gpu #scheduling)
+- [[12_Architecture_Infrastructure/MIG_Deep_Dive]] — MIG (Multi-Instance GPU):A100/H100/PPU 硬件级切片,多租户强隔离推理 ( #mig #gpu-partitioning #multi-tenant #a100 #h100)
 - [[12_Architecture_Infrastructure/HAMi_Deep_Dive]] — HAMi 深度解析:CNCF Sandbox 异构 GPU 虚拟化与调度 ( #hami #cncf #gpu-virtualization #kubernetes #heterogeneous)
 - [[12_Architecture_Infrastructure/HAMi_for_dummy]] — HAMi 入门:让 Kubernetes GPU 像 CPU 一样共享 ( #hami #for-dummy #gpu-sharing)
 - [[12_Architecture_Infrastructure/HAMi_Operation_Guide]] — HAMi 运维指南:安装、配置、升级与监控 ( #hami #operations #kubernetes)

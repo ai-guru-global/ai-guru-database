@@ -20,10 +20,10 @@ updated: 2026-06-17
 | **厂商** | **成立** | **核心技术** | **旗舰模型** | **总参数** | **最大亮点** | 深度文档 |
 |----------|---------|-------------|-------------|-----------|-------------|---------|
 | **DeepSeek** | 2023 | MLA + MoE + FP8 | DeepSeek-V4 Pro | 1.6T / 49B active | $5.6M 训练出 GPT-4 级模型 | [[DeepSeek_Deep_Dive]] |
-| **Qwen** (通义千问) | 2023 | Hybrid Thinking + MoE | Qwen3-Max | 未公开 | 1M 上下文 + 最全开源生态 | [[Qwen_Deep_Dive]] |
+| **Qwen** (通义千问) | 2023 | Hybrid Thinking + MoE | Qwen3.7-Max | 未公开（闭源旗舰） | 1M 上下文（开源 235B-A22B-2507）+ 数学/中文最强 + 最全开源生态 | [[Qwen_Deep_Dive]] |
 | **GLM/智谱 AI** | 2019 | MLA + 256 专家 MoE + DSA | GLM-5.2 | 744B / 40B active | 1M 上下文 + MIT 纯开源 + 最强开源编码 | [[GLM_Zhipu_Deep_Dive]] |
 | **Kimi/月之暗面** | 2023 | MuonClip + MoE + MLA | Kimi K2.6 | 1.04T / 32.6B active | 256K 上下文 + 多模态理解 | [[Kimi_Moonshot_Deep_Dive]] |
-| **MiniMax** | 2021 | Lightning Attention + MoE | M2.5 / M2.7 | 456B / 45.9B active | 1M 上下文 + 全模态覆盖 | [[MiniMax_Deep_Dive]] |
+| **MiniMax** | 2021 | MSA 稀疏注意力 + MoE | MiniMax-M3 | ~428B / ~23B active | 原生多模态（文/图/视频）+ 1M 上下文 + Coding & Cowork | [[MiniMax_Deep_Dive]] |
 | **小米 MiMo** | 2025 | MoE + Agent-First + MTP | MiMo-V2.5-Pro | 1T / 42B active | Agent 大脑 + 极致性价比 | [[Xiaomi_MiMo_Deep_Dive]] |
 
 ---

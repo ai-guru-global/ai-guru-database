@@ -1,10 +1,10 @@
 ---
 title: "MiniMax (稀宇科技): Lightning Attention 驱动的 AI 全栈平台"
 category: "04-nlp-llms-chinese-llm-ecosystem"
-tags: ["nlp", "llm", "minimax", "lightning-attention", "moe", "chinese-llm", "video-generation", "hailuo", "multimodal"]
-summary: "> **一句话理解**: MiniMax 就像一支拥有「闪电侠速度」的 AI 军团——用 Lightning Attention 将注意力计算从 O(n²) 降到 O(n)，让百万 token 上下文成为现实，同时在文本、视频、语音、音乐四大战场全面出击。"
+tags: ["nlp", "llm", "minimax", "lightning-attention", "moe", "chinese-llm", "video-generation", "hailuo", "multimodal", "minimax-m3", "msa", "native-multimodal"]
+summary: "> **一句话理解**: MiniMax 就像一支拥有「闪电侠速度」的 AI 军团——从 Lightning Attention (O(n) 复杂度) 到 MiniMax-M3 旗舰 (原生多模态 + MSA 稀疏注意力 + 1M 上下文 + ~428B/~23B MoE)，让百万 token 长程 Agent 与 coding/cowork 成为现实，同时在文本、视频、语音、音乐四大战场全面出击。"
 created: "2026-06-01"
-updated: "2026-06-01"
+updated: "2026-06-16"
 ---
 
 # MiniMax (稀宇科技): Lightning Attention 驱动的 AI 全栈平台
@@ -19,7 +19,7 @@ updated: "2026-06-01"
 2. [模型家族完整时间线](#2-模型家族完整时间线)
 3. [Lightning Attention 深度解析](#3-lightning-attention-深度解析)
 4. [MiniMax-Text-01 / VL-01 架构分析](#4-minimax-text-01--vl-01-架构分析)
-5. [M 系列模型演进](#5-m-系列模型演进)
+5. [M 系列模型演进 (含 MiniMax-M3 旗舰)](#5-m-系列模型演进)
 6. [Hailuo 视频生成模型](#6-hailuo-视频生成模型)
 7. [语音与音乐模型](#7-语音与音乐模型)
 8. [Benchmark 对比分析](#8-benchmark-对比分析)
@@ -42,8 +42,10 @@ MiniMax (稀宇科技):
 
 核心技术路线:
 ───────────────────────────────────────────────────────────────────
-• 自研 Lightning Attention: 线性复杂度注意力机制
-• MoE (Mixture of Experts): 稀疏专家混合架构
+• 自研 Lightning Attention: 线性复杂度注意力机制 (O(n))
+• MSA (MiniMax Sparse Attention): 稀疏注意力算子，1M 上下文 compute 降至 1/20 (M3)
+• MoE (Mixture of Experts): 稀疏专家混合架构 (Text-01 456B/45.9B → M3 ~428B/23B)
+• 原生多模态 (Native Multimodal): M3 从训练第一步即融合 text/image/video
 • 多模态全栈: 文本 + 视频 + 语音 + 音乐
 • 开源 + 商业双轨: HuggingFace 开源 + API 商业化
 ```
@@ -130,6 +132,7 @@ timeline
         2025 H1 : MiniMax-Text-01 : MiniMax-VL-01 : MiniMax-M1
         2025 H2 : MiniMax-M2
         2026 : M2.1 (Dec'25) : M2.5 (Feb) : M2.7 (Mar)
+        2026 H1 : MiniMax-M3 : 428B/23B MoE : 原生多模态 + MSA : 1M 上下文
     section 视频模型
         2024 : Hailuo 01
         2025 H2 : Hailuo 02
@@ -162,7 +165,8 @@ MiniMax 模型家族:
 │       ├── MiniMax-M2       (2025.11) - 稀疏 MoE，编码强项
 │       ├── MiniMax-M2.1     (2025.12) - 13 种编程语言
 │       ├── MiniMax-M2.5     (2026.02) - SWE-Bench 80.2%
-│       └── MiniMax-M2.7     (2026.03) - 最新旗舰
+│       ├── MiniMax-M2.7     (2026.03) - 上一代旗舰
+│       └── MiniMax-M3       (2026.06) - ~428B/~23B MoE，原生多模态 + MSA，1M 上下文 ★ 当前旗舰
 │
 ├── 👁️ 视觉语言模型 (Vision-Language)
 │   └── MiniMax-VL-01        (2025.01) - 512B 视觉-语言 token
@@ -196,6 +200,7 @@ MiniMax 模型家族:
 | 2025.11 | MiniMax Agent | 多步推理 Agent 平台 | Agent 生态布局 |
 | 2026.02 | M2.5 | SWE-Bench 80.2% | **全球编码能力第一** |
 | 2026.03 | M2.7 / highspeed | 低延迟推理 | 推理速度新标杆 |
+| 2026.06 | MiniMax-M3 | 原生多模态 + MSA 稀疏注意力，~428B/23B MoE，1M 上下文 | **新一代旗舰**，coding & cowork 第一梯队 |
 
 ---
 
@@ -318,7 +323,8 @@ GPU 内存层级与 LA-2 优化:
 | **Sliding Window** | O(n · w · d) | O(n · w) | ~32K (局部) | Mistral |
 | **Linear Attention** | O(n · d²) | O(n · d) | 理论上无限 | Performer |
 | **Sparse Attention** | O(n · √n · d) | O(n · √n) | ~64K | Longformer |
-| **Lightning Attention** | **O(n · d²)** | **O(n · d)** | **1M+ (训练), 4M+ (推理)** | **MiniMax** |
+| **Lightning Attention** | **O(n · d²)** | **O(n · d)** | **1M+ (训练), 4M+ (推理)** | **MiniMax (Text-01 / M1 / M2)** |
+| **MSA (MiniMax Sparse Attention)** | **学习式稀疏路由，per-token compute 降至 ~1/20** | **大幅压缩** | **1M (M3)** | **MiniMax-M3** |
 
 ### 3.5 Lightning Attention 伪代码
 
@@ -598,9 +604,11 @@ graph TD
     
     M25["MiniMax-M2.5<br/>(2026.02)<br/>230B/10B<br/>SWE-Bench 80.2%"]
     
-    M27["MiniMax-M2.7<br/>(2026.03)<br/>最新旗舰"]
+    M27["MiniMax-M2.7<br/>(2026.03)<br/>上一代旗舰"]
     
     M27H["M2.7-highspeed<br/>(2026.03)<br/>低延迟推理<br/>M2.5-Lightning 后继"]
+    
+    M3["MiniMax-M3<br/>(2026.06)<br/>~428B/~23B MoE<br/>原生多模态 + MSA<br/>1M 上下文 ★ 当前旗舰"]
     
     T01 --> M1
     M1 --> M2
@@ -608,10 +616,13 @@ graph TD
     M21 --> M25
     M25 --> M27
     M25 --> M27H
+    M27 --> M3
+    M27H --> M3
     
     style T01 fill:#e3f2fd
     style M25 fill:#fff9c4
     style M27H fill:#fce4ec
+    style M3 fill:#c8e6c9
 ```
 
 ### 5.2 各代模型详细对比
@@ -625,6 +636,7 @@ graph TD
 | **MiniMax-M2.5** | 2026.02 | 230B | 10B | Sparse MoE | SWE-Bench 80.2%，37% 加速 |
 | **MiniMax-M2.7** | 2026.03 | - | - | 最新架构 | 旗舰性能 |
 | **M2.7-highspeed** | 2026.03 | - | - | 低延迟优化 | M2.5-Lightning 后继者 |
+| **MiniMax-M3** | 2026.06 | **~428B** | **~23B** | **原生多模态 + MSA + MoE** | **1M 上下文，coding & cowork 旗舰 (★ 当前)** |
 
 ### 5.3 M2.5: SWE-Bench 全球第一
 
@@ -696,6 +708,174 @@ M2.5-Lightning ──(继承)──→ M2.7-highspeed
 标准 Dense 模型 (70B):       ████████████████████ 100ms
 M2.5 (230B/10B active):      ████████░░░░░░░░░░░░  40ms  (-60%)
 M2.7-highspeed:              █████░░░░░░░░░░░░░░░  25ms  (-75%)
+```
+
+### 5.6 MiniMax-M3：原生多模态 + MSA 稀疏注意力旗舰（2026）
+
+> **代际跃迁**：从 M2.5/M2.7 的「稀疏 MoE + Lightning Attention + 后期多模态」直接跃升到 **原生多模态 (native multimodal from step 1) + MiniMax Sparse Attention (MSA) + 1M 上下文 + ~428B/~23B MoE** 体系，是 M 系列迄今最大幅度的一次架构换代。M3 把「百万 token 长程 Agent」从理论上可行推到了工程上可生产。
+>
+> 技术报告：[MiniMax-M3 Technical Report (arXiv 2606.13392)](https://arxiv.org/abs/2606.13392) · 开源仓库：[MiniMax-AI/MiniMax-M3](https://github.com/MiniMax-AI/MiniMax-M3) · HuggingFace：[MiniMaxAI/MiniMax-M3](https://huggingface.co/MiniMaxAI/MiniMax-M3) · MSA 算子开源：[MiniMax-AI/MSA](https://github.com/MiniMax-AI/MSA)
+
+#### 5.6.1 定位与卖点
+
+MiniMax-M3 是 2026 年 MiniMax 的新一代旗舰模型，四项核心卖点：
+
+| 维度 | 详情 |
+|------|------|
+| **发布时间** | 2026 年 6 月 |
+| **旗舰定位** | 原生多模态 + 长程 Agent + coding & cowork |
+| **架构** | ~428B / ~23B active MoE + MSA 稀疏注意力 |
+| **上下文** | **1M tokens** |
+| **多模态** | **原生多模态**（text + image + video，训练第一步就混合，非后期拼接） |
+| **推理模式** | `thinking`: enabled / adaptive / disabled 三档 |
+| **许可** | MiniMax License（见 HF LICENSE） |
+
+**官方卖点提炼**：
+
+1. **原生多模态 (Native Multimodal from Step 1)** — 从训练第一步就混合 text/image/video，实现深层语义融合，而非后期外挂视觉模块。
+2. **MSA (MiniMax Sparse Attention)** — 面向百万 token 的高性能稀疏注意力算子，让 1M 上下文真正可承担。
+3. **长程 Agent / coding & cowork** — 在长时程 (long-horizon) agentic 基准上达到前沿水准，编码与协作场景是主战场。
+4. **1M 上下文 + ~428B/23B MoE** — 大容量 + 高稀疏，兼顾知识容量与推理速度。
+
+#### 5.6.2 架构全景
+
+```
+MiniMax-M3 架构:
+═══════════════════════════════════════════════════════════════════
+
+总参数 / 激活参数 :  ~428B / ~23B   (MoE，激活率 ~5.4%)
+上下文            :  1,048,576      (1M tokens)
+模态              :  原生多模态      (text + image + video，from step 1)
+注意力            :  MSA (MiniMax Sparse Attention)  ← 关键创新
+推理模式          :  thinking = enabled | adaptive | disabled
+定位              :  coding & cowork + long-horizon agentic
+
+┌───────────────────────────────────────────────────────────────┐
+│                    MiniMax-M3 架构                              │
+├───────────────────────────────────────────────────────────────┤
+│                                                                │
+│  Text  ──┐                                                     │
+│  Image ──┼──→ [Native Multimodal Input] ──→ 统一 token 流      │
+│  Video ──┘     (训练第一步即混合多模态，端到端联合优化)         │
+│                   │                                            │
+│                   ▼                                            │
+│  ┌──────────────────────────────────────────────────────┐     │
+│  │  Transformer Block × N                                │     │
+│  │  ┌────────────────────────────────────────────────┐  │     │
+│  │  │  MSA (MiniMax Sparse Attention)                 │  │     │
+│  │  │  百万 token 下 (vs M2 @ 1M):                     │  │     │
+│  │  │    prefill 9× 更快 / decode 15× 更快             │  │     │
+│  │  │    per-token compute 降至 1/20                   │  │     │
+│  │  └────────────────────────────────────────────────┘  │     │
+│  │       │                                               │     │
+│  │       ▼                                               │     │
+│  │  ┌────────────────────────────────────────────────┐  │     │
+│  │  │  Sparse MoE FFN (~428B 总参 / ~23B 激活)        │  │     │
+│  │  └────────────────────────────────────────────────┘  │     │
+│  └──────────────────────────────────────────────────────┘     │
+│       │                                                        │
+│       ▼                                                        │
+│  Output Head (多模态输出)                                      │
+│                                                                │
+└───────────────────────────────────────────────────────────────┘
+```
+
+**架构哲学**：M3 在 M2.5「双重稀疏（计算稀疏 + 参数稀疏）」之上又加了第三维稀疏——**注意力稀疏 (MSA)**。即用「稀疏的注意力 + 稀疏的 FFN + 原生多模态联合训练」换取在 1M 上下文下、~428B 模型规模的「可承担推理成本」。这与 Lightning Attention 的线性化思路互补：Lightning Attention 解决「块间」的长程问题，MSA 在「全局」层面进一步把百万 token 的注意力算力压到原来的 1/20。
+
+#### 5.6.3 MSA (MiniMax Sparse Attention) 深度解析
+
+MSA 是 M3 的关键架构创新，也是把 1M 上下文从「理论可行」变成「工程可生产」的工程关键。它是一个面向百万 token 上下文的高性能稀疏注意力算子，相比 GQA 在大幅削减 attention compute + memory 的同时保持质量。
+
+```
+GQA vs MSA @ 1M tokens (以 MiniMax-M2 @ 1M 为基线):
+═══════════════════════════════════════════════════════════════════
+
+传统 GQA (Grouped Query Attention):
+  每个 query group 都要扫过全部 KV，注意力矩阵随序列平方膨胀
+
+    Q1 ──attend──> [ K1   K2   K3   ...   K1000000 ]   全量 KV
+    Q2 ──attend──> [ K1   K2   K3   ...   K1000000 ]   全量 KV
+    ...
+    → 1M 上下文下: 注意力矩阵巨大，compute + memory 双双爆炸
+
+MSA (MiniMax Sparse Attention):
+  通过学习式稀疏路由，每个 query 只聚焦少量关键 KV
+
+    Q1 ──route──> [ K3   K47   K2001   ... ]   仅 top-k KV
+    Q2 ──route──> [ K12  K88   K9004   ... ]   仅 top-k KV
+    ...
+    → 1M 上下文下: 注意力 compute + memory 大幅压缩，质量近乎无损
+
+实测收益 (M3 MSA  vs  M2 @ 1M context):
+───────────────────────────────────────────────────────────────────
+  Prefill  阶段速度:   9×    更快
+  Decode   阶段速度:  15×    更快
+  Per-token 计算量:   降至 1/20
+───────────────────────────────────────────────────────────────────
+  → 让 ~428B MoE 在 1M 上下文下的推理从「不可承担」变为「可生产」
+
+为何 MSA 让 1M 真正可行?
+───────────────────────────────────────────────────────────────────
+  • 长程 Agent 场景下，绝大多数 query 其实只关心少量关键证据
+  • MSA 把这种「天然稀疏性」显式建模进架构，而非暴力全扫
+  • 算子已单独开源: https://github.com/MiniMax-AI/MSA
+```
+
+> **📎 关联阅读**: MSA 与 Lightning Attention、DeepSeek MLA / DSA、GLM IndexShare 同属 2026 年长上下文注意力的主流稀疏化路线，详见 [[concepts/long-context-models]] 与 [长上下文模型 2026](../Long_Context_Models_2026.md) 的横向对比。
+
+#### 5.6.4 三种思考模式 (thinking)
+
+M3 通过 `thinking` 参数提供「能力 / 速度」的显式平衡，覆盖从最大力度推理到极致低延迟的全场景：
+
+| `thinking` 取值 | 行为 | 适用场景 |
+|-----------------|------|----------|
+| `"enabled"` | 始终开启推理 (always reason) | 难题、长程 Agent、基准复现、最大质量 |
+| `"adaptive"` | 模型自主决定是否思考 | **默认推荐**，质量与延迟自适应平衡 |
+| `"disabled"` | 关闭推理，最小化延迟、最大化吞吐 | 高吞吐服务、直答、实时交互、代码补全 |
+
+#### 5.6.5 开源、下载与部署矩阵
+
+| 推理框架 | 资源链接 | 推荐场景 |
+|---------|---------|---------|
+| **SGLang** | [cookbook](https://docs.sglang.io/cookbook/autoregressive/MiniMax/MiniMax-M3) | 长上下文、前缀缓存、低延迟 |
+| **vLLM** | [recipes](https://recipes.vllm.ai/MiniMaxAI/MiniMax-M3) | 生产环境，OpenAI 兼容 |
+| **Transformers** | [model_doc/minimax_m3_vl](https://huggingface.co/docs/transformers/model_doc/minimax_m3_vl) | 研究与定制 |
+
+**模型下载**：
+
+```bash
+hf download MiniMaxAI/MiniMax-M3
+```
+
+**官方 API 入口**：
+
+| 入口 | URL | 用途 |
+|------|-----|------|
+| MiniMax Platform | https://platform.minimax.io | 开发者 API |
+| MiniMax Agent | https://agent.minimax.io | Agent 产品 |
+
+**资源一览**：
+
+- 技术报告：[arXiv 2606.13392](https://arxiv.org/abs/2606.13392)
+- GitHub 仓库：[MiniMax-AI/MiniMax-M3](https://github.com/MiniMax-AI/MiniMax-M3)
+- HuggingFace：[MiniMaxAI/MiniMax-M3](https://huggingface.co/MiniMaxAI/MiniMax-M3)
+- MSA 算子（单独开源）：[MiniMax-AI/MSA](https://github.com/MiniMax-AI/MSA)
+- 许可：MiniMax License（见 HF 模型卡 LICENSE）
+
+#### 5.6.6 M3 在 M 系列中的位置
+
+```
+M 系列注意力机制演进:
+═══════════════════════════════════════════════════════════════════
+
+  M1            : Lightning Attention (线性复杂度 O(n))
+       │           └─ 块内 Softmax + 块间 Linear
+  M2 / M2.x     : Lightning Attention + Sparse MoE
+       │           └─ 编码强项，SWE-Bench 登顶
+  M2.5 / M2.7   : 230B/10B 稀疏 MoE，多模态后期融合
+       │
+  M3            : 原生多模态 (from step 1) + MSA + 1M 上下文
+                  └─ ~428B/23B，coding & cowork 第一梯队 ★ 当前旗舰
 ```
 
 ---
@@ -970,6 +1150,31 @@ MiniMax 核心竞争力雷达图 (概念):
 5. 推理速度: highspeed 版本极致低延迟
 ```
 
+### 8.6 MiniMax-M3 性能定位（2026 旗舰）
+
+> 数据来源：[MiniMax-AI/MiniMax-M3 官方 README](https://github.com/MiniMax-AI/MiniMax-M3) 与 [HF 模型卡](https://huggingface.co/MiniMaxAI/MiniMax-M3)。官方以图片形式展示 benchmark，本节按官方描述做定性定位，不臆造具体分数。
+
+**定性定位**：M3 是 MiniMax 在 **long-horizon agentic** 基准上达到 **frontier-level（前沿级）** 表现的旗舰，主战场为 **coding & cowork（编码与人机协作）**，综合实力进入 2026 年全球第一梯队。
+
+```
+MiniMax-M3 的竞争坐标 (2026 H1 概念图):
+═══════════════════════════════════════════════════════════════════
+
+  第一梯队 (frontier):
+    Claude Opus 4.8  ┃███████████████████████████████████████
+    GPT-5.5          ┃██████████████████████████████████████░
+    GLM-5.2          ┃█████████████████████████████████████░░  ← 开源最强编码
+    MiniMax-M3       ┃████████████████████████████████████░░░  ← 本节主角
+    Gemini 3.1 Pro   ┃███████████████████████████████████░░░░
+
+  说明: M3 与上述模型同处 coding & cowork / 长程 Agent 第一梯队；
+        具体逐项分数请以官方 README benchmark 图为准。
+```
+
+**与开源同行的相对定位**（引用 [[GLM_Zhipu_Deep_Dive]] §9.1 的跨厂商对照）：在公开的跨厂商 agentic 基准（如 MCP-Atlas Public）上，开源第一梯队为 GLM-5.2、Qwen3.7-Max、MiniMax-M3、DeepSeek-V4-Pro，M3 是这一梯队的新成员。以 Terminal-Bench 2.1 为例，开源头部 (GLM-5.2 81.0) 即是 M3 所加入的竞争区间——M3 的价值在于把「原生多模态 + 1M 长程」带入了这一开源编码第一梯队。
+
+> **📎 横向对比**：完整的跨厂商逐项分数见 [[Chinese_LLM_Comparison_Matrix]] 与 [[GLM_Zhipu_Deep_Dive]] §9.1「GLM-5.2 vs 全球前沿模型」。
+
 ---
 
 ## 9. 开发者平台与 API 生态
@@ -1179,6 +1384,7 @@ HuggingFace 发布:
 • MiniMax-Text-01    → 开源权重 + 技术报告
 • MiniMax-VL-01      → 开源权重 + 技术报告
 • MiniMax-M1         → 开源权重
+• MiniMax-M3         → 开源权重 + 技术报告 (arXiv 2606.13392) + MSA 算子
 
 技术论文:
 ───────────────────────────────────────────────────────────────────
@@ -1193,6 +1399,76 @@ HuggingFace 发布:
 • Ollama 本地部署支持
 ```
 
+### 9.5 MiniMax-M3 快速部署（2026）
+
+> 官方推理参数推荐：`temperature=1.0`, `top_p=0.95`, `top_k=40`。三种推理模式通过 `thinking` 参数控制。
+
+**方式一：官方 API（最快上手）**
+
+```python
+from openai import OpenAI
+
+client = OpenAI(
+    api_key="your-minimax-api-key",
+    base_url="https://api.minimax.io/v1"
+)
+
+resp = client.chat.completions.create(
+    model="MiniMax-M3",
+    messages=[{"role": "user", "content": "把这个仓库重构成模块化结构并解释"}],
+    temperature=1.0,
+    top_p=0.95,
+    extra_body={"top_k": 40, "thinking": {"type": "adaptive"}}
+)
+print(resp.choices[0].message.content)
+```
+
+**方式二：本地权重下载**
+
+```bash
+hf download MiniMaxAI/MiniMax-M3
+```
+
+**方式三：vLLM 部署（生产推荐）**
+
+```bash
+pip install vllm
+
+vllm serve MiniMaxAI/MiniMax-M3 \
+  --tensor-parallel-size 8 \
+  --max-model-len 1048576 \
+  --trust-remote-code
+# Recipes: https://recipes.vllm.ai/MiniMaxAI/MiniMax-M3
+
+curl http://localhost:8000/v1/chat/completions -H "Content-Type: application/json" -d '{
+  "model": "MiniMaxAI/MiniMax-M3",
+  "messages": [{"role":"user","content":"写一个 MCP server"}],
+  "temperature": 1.0, "top_p": 0.95,
+  "thinking": {"type": "adaptive"}
+}'
+```
+
+**方式四：SGLang 部署（长上下文 / 前缀缓存场景更优）**
+
+```bash
+pip install "sglang[all]"
+
+python -m sglang.launch_server --model-path MiniMaxAI/MiniMax-M3 \
+  --tp 8 --context-length 1048576 --trust-remote-code
+# Cookbook: https://docs.sglang.io/cookbook/autoregressive/MiniMax/MiniMax-M3
+```
+
+**推理参数速查**：
+
+| 参数 | 推荐值 | 说明 |
+|------|--------|------|
+| `temperature` | `1.0` | 官方推荐 |
+| `top_p` | `0.95` | 官方推荐 |
+| `top_k` | `40` | 官方推荐 |
+| `thinking` | `"adaptive"` | 默认；难题用 `"enabled"`，高吞吐用 `"disabled"` |
+
+**官方入口**：Platform API https://platform.minimax.io · Agent https://agent.minimax.io · 技术报告 [arXiv 2606.13392](https://arxiv.org/abs/2606.13392)
+
 ---
 
 ## 10. 总结与展望
@@ -1203,24 +1479,27 @@ HuggingFace 发布:
 graph TD
     subgraph "已实现 (2023-2026)"
         P1["Lightning Attention<br/>O(n) 复杂度"]
-        P2["Sparse MoE<br/>230B/10B"]
+        P2["Sparse MoE<br/>M2.5: 230B/10B → M3: ~428B/23B"]
         P3["全模态产品线<br/>Text/Video/Speech/Music"]
         P4["SWE-Bench #1<br/>编码全球第一"]
+        P5["MiniMax-M3<br/>原生多模态 + MSA + 1M 上下文"]
     end
     
     subgraph "预期方向 (2026-2027)"
         F1["更长上下文<br/>10M+ tokens?"]
         F2["Agent 自主工作流<br/>复杂任务执行"]
         F3["端侧部署<br/>小模型优化"]
-        F4["原生多模态融合<br/>统一架构"]
+        F4["多模态 + Agent 深度协同<br/>统一长程多模态 Agent"]
     end
     
     P1 --> F1
     P2 --> F3
     P3 --> F4
     P4 --> F2
+    P5 --> F2
     
     style P4 fill:#fff9c4
+    style P5 fill:#c8e6c9
     style F2 fill:#e8f5e9
 ```
 
@@ -1228,13 +1507,14 @@ graph TD
 
 | 维度 | MiniMax | 智谱 AI (Zhipu) | 月之暗面 (Moonshot) | DeepSeek |
 |------|---------|-----------------|---------------------|----------|
-| **核心创新** | Lightning Attention | GLM 架构 | 长上下文优化 | MLA + MoE |
-| **旗舰模型** | M2.5 / M2.7 | GLM-4 | Kimi | DeepSeek-V3/R1 |
-| **参数效率** | 极高 (230B/10B) | 中等 | 中等 | 高 (671B/37B) |
-| **长上下文** | 1M-4M | 128K | 200K | 128K |
-| **编码** | SWE-Bench #1 | 中上 | 中等 | 强 |
+| **核心创新** | Lightning Attention + MSA | GLM 架构 + IndexShare | 长上下文优化 | MLA + MoE |
+| **旗舰模型** | **MiniMax-M3** (~428B/23B) | GLM-5.2 (744B/40B) | Kimi | DeepSeek-V3/R1 |
+| **参数效率** | 极高 (~23B 激活 / ~5.4%) | 高 (40B / 744B) | 中等 | 高 (37B / 671B) |
+| **长上下文** | **1M (M3)** | 1M (GLM-5.2) | 200K | 128K |
+| **原生多模态** | 是 (M3 from step 1) | 部分 | 有限 | 有限 |
+| **编码** | coding & cowork 第一梯队 | SWE-Bench / Terminal-Bench 开源最强 | 中等 | 强 |
 | **多模态** | 全栈 | 部分 | 有限 | 有限 |
-| **开源** | 部分 | 部分 | 有限 | 全面 |
+| **开源** | 部分 | MIT (GLM-5.2) | 有限 | 全面 |
 
 ### 10.3 关键技术洞察
 
@@ -1265,6 +1545,13 @@ MiniMax 给我们的技术启示:
   MiniMax 选择了 "底层创新 + 全栈产品" 路线，
   区别于 DeepSeek 的 "开源生态" 和 Moonshot 的 "C端体验"。
   每种路线都有其独特价值。
+
+5. M3 把「原生多模态 + 注意力稀疏化」带进第一梯队 (2026)
+───────────────────────────────────────────────────────────────────
+  MiniMax-M3 (~428B/23B) 用 MSA 把 1M 上下文 per-token 算力压到 1/20，
+  并从训练第一步就融合 text/image/video (原生多模态)。
+  这印证: 注意力稀疏化 + 原生多模态是 2026 长程 Agent 旗舰的共同路线
+  (与 GLM-5.2 的 IndexShare + DSA、DeepSeek MLA 同向)。
 ```
 
 ### 10.4 延伸阅读
@@ -1277,11 +1564,13 @@ MiniMax 给我们的技术启示:
 
 ---
 
-## M2.5/M2.7 最新规格 (2026年6月)
+## M2.5/M2.7 规格存档 (2026 年 6 月)
+
+> **更新提示**: MiniMax 当前旗舰已升级为 **MiniMax-M3**（原生多模态 + MSA + 1M 上下文 + ~428B/23B MoE），详见本文档 §5.6「MiniMax-M3：原生多模态 + MSA 稀疏注意力旗舰（2026）」。本节保留 M2.5/M2.7 的规格作为上一代基线存档。
 
 ### 模型能力总览
 
-MiniMax M2.5 和 M2.7 代表了当前 MiniMax 的最高技术水平：
+MiniMax M2.5 和 M2.7 代表了上一代（2026 Q1）MiniMax 的最高技术水平：
 
 | 特性 | M2.5 | M2.7 |
 |------|------|------|
@@ -1366,6 +1655,9 @@ M2.5/M2.7 支持 Real-time Streaming API，适用于：
 | Hailuo | 海螺 | MiniMax 视频生成模型系列 |
 | IO-aware | IO 感知 | 针对硬件内存层级优化的设计策略 |
 | Kernel trick | 核技巧 | 通过特征映射避免显式计算高维矩阵 |
+| MSA | MiniMax Sparse Attention | MiniMax-M3 的稀疏注意力算子，1M 上下文下 prefill 9×/decode 15×/compute 1/20 |
+| Native Multimodal | 原生多模态 | 从训练第一步即混合 text/image/video，非后期外挂融合 |
+| thinking (参数) | 思考模式 | M3 三档推理开关: enabled / adaptive / disabled |
 
 ## 附录 B: 关键参数速查
 
@@ -1382,14 +1674,15 @@ MiniMax 关键数字速查:
 旗舰模型:
   Text-01:       456B 总参数 / 45.9B 激活 / 1M 上下文
   M2.5:          230B 总参数 / 10B 激活 / SWE-Bench 80.2%
-  M2.7:          最新旗舰 (2026.03)
+  M3:            ~428B 总参数 / ~23B 激活 / 原生多模态 + MSA / 1M 上下文 ★ 当前旗舰
 
 核心指标:
   最大训练上下文:  1M tokens
-  最大推理上下文:  4M tokens (外推)
-  SWE-Bench:      80.2% (全球第一)
+  最大推理上下文:  4M tokens (外推) / 1M (M3 MSA)
+  SWE-Bench:      80.2% (M2.5 全球第一)
   MoE 专家数:     32 (Text-01)
-  激活率:         ~4.3% (M2.5: 10B/230B)
+  激活率:         ~4.3% (M2.5: 10B/230B) / ~5.4% (M3: 23B/428B)
+  MSA 加速:       prefill 9× / decode 15× / per-token compute 1/20 (M3 vs M2 @ 1M)
 
 产品:
   Talkie (星野):     Character AI 社交应用
@@ -1408,9 +1701,20 @@ MiniMax 关键数字速查:
 ### 官方来源
 - MiniMax 官网: https://www.minimaxi.com
 - MiniMax 开放平台: https://platform.minimaxi.com
+- MiniMax Platform API: https://platform.minimax.io
+- MiniMax Agent: https://agent.minimax.io
 - 海螺 AI: https://www.hailuo.ai
 - MiniMax GitHub: https://github.com/MetaCubeX/MiniMax
 - MiniMax-01 技术报告: https://github.com/MetaCubeX/MiniMax-01
+
+### MiniMax-M3 专项来源 (2026)
+- MiniMax-M3 GitHub: https://github.com/MiniMax-AI/MiniMax-M3
+- MiniMax-M3 HuggingFace: https://huggingface.co/MiniMaxAI/MiniMax-M3
+- MSA 稀疏注意力算子 (开源): https://github.com/MiniMax-AI/MSA
+- M3 技术报告: https://arxiv.org/abs/2606.13392
+- SGLang Cookbook: https://docs.sglang.io/cookbook/autoregressive/MiniMax/MiniMax-M3
+- vLLM Recipes: https://recipes.vllm.ai/MiniMaxAI/MiniMax-M3
+- Transformers 文档: https://huggingface.co/docs/transformers/model_doc/minimax_m3_vl
 
 ### Wiki 内部参考
 - [[04_NLP_LLMs/Chinese_LLM_Ecosystem/README]] — 中国大模型生态全景
@@ -1418,4 +1722,4 @@ MiniMax 关键数字速查:
 - [[04_NLP_LLMs/Chinese_LLM_Ecosystem/Chinese_LLM_Training_Inference_Platforms]] — 训推平台实战
 
 ---
-*Last updated: 2026-06-01*
+*Last updated: 2026-06-16*

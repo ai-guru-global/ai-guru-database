@@ -144,12 +144,12 @@ xychart-beta
 | **模型** | **厂商** | **阵营** | **MMLU** | **级别** |
 |----------|---------|---------|---------|---------|
 | Kimi K2 | 月之暗面 | 中国 | 89.5% | GPT-4 级 |
-| DeepSeek-V3 | DeepSeek | 中国 | 88.5% | GPT-4 级 |
-| Qwen3 | 通义千问 | 中国 | ~88% | GPT-4 级 |
+| DeepSeek-V4-Pro | DeepSeek | 中国 | 90.1% | GPT-4+ 级 |
+| Qwen3.7-Max | 通义千问 | 中国 | ~90%+ | GPT-4+ 级 |
 | ERNIE 4.5 | 百度 | 中国 | ~88% | GPT-4 级 |
 | Claude 4 Opus | Anthropic | 国际 | 87.4% | GPT-4 级 |
 | GPT-4 | OpenAI | 国际 | 86.4% | GPT-4 级 |
-| MiniMax Text-01 | MiniMax | 中国 | ~87% | 近 GPT-4 |
+| MiniMax-M3 | MiniMax | 中国 | ~88%+ | GPT-4 级 |
 | Hunyuan-Pro 2.0 | 腾讯 | 中国 | ~86% | 近 GPT-4 |
 | Baichuan-4 | 百川 | 中国 | ~85% | GPT-3.5+ |
 | Step-2 | 阶跃星辰 | 中国 | ~84% | GPT-3.5+ |
@@ -269,11 +269,11 @@ flowchart TD
 | **排名** | **模型** | **厂商** | **阵营** | **上下文长度** | **技术方案** |
 |---------|---------|---------|---------|-------------|------------|
 | 1 | LLaMA 4 Scout | Meta | 国际 | **10M** | MoE + 修改注意力路由 |
-| 2 | MiniMax M2.5 | MiniMax | 中国 | **4M** (外推) | Lightning Attention 线性 |
-| 3 | DeepSeek V4 | DeepSeek | 中国 | **1M** | MLA KV 压缩 95% |
+| 2 | MiniMax-M3 | MiniMax | 中国 | **1M** (solid) | MSA 稀疏注意力 (compute 1/20) |
+| 3 | DeepSeek V4 | DeepSeek | 中国 | **1M** | CSA+HCA 混合注意力 (KV cache 仅 V3.2 的 10%) |
 | 4 | GPT-4.1 | OpenAI | 国际 | **1M** | GQA + 长上下文优化 |
 | 5 | Gemini 2.5 Pro | Google | 国际 | **1M+** | MoE + 长上下文优化 |
-| 6 | Qwen3-Max | 通义千问 | 中国 | **1M** | Hybrid Thinking |
+| 6 | Qwen3.7-Max | 通义千问 | 中国 | **1M** | Hybrid Thinking + MoE |
 | 7 | GLM-5.2 | 智谱 | 中国 | **1M** | MLA + DSA + IndexShare |
 | 8 | Yi-1.5 | 零一万物 | 中国 | **200K** | GQA |
 | 9 | Claude 4 | Anthropic | 国际 | **200K** | 标准 Attention |

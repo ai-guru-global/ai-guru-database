@@ -403,23 +403,11 @@ Agentic Coding (理解 -> 规划 -> 执行 -> 验证 -> 迭代)
 
 ### 9.2 Agent Loop: 核心工作机制
 
-**微观循环 (单次迭代)**:
+> Agent Loop 的详细工程实现（异步生成器模式 vs 线性流水线模式、六步执行循环、漂移检测、Token 预算管理）详见 [[Harness_Core_Subsystems#1.1-智能体循环的工程实现]]。此处仅保留三个观察视角：
 
-```
-Think (分析状态, 规划下一步) -> Act (调用工具执行) -> Observe (处理返回, 决定是否继续)
-```
-
-**中观视角 (执行阶段)**:
-
-```
-Gather (收集上下文) -> Action (执行修改) -> Verify (运行测试/检查)
-```
-
-**任务级工作流 (开发者协作)**:
-
-```
-Plan (需求理解) -> Decompose (任务拆解) -> Execute (编码实现) -> Review (审查验收)
-```
+- **微观循环**：Think → Act → Observe（单次迭代）
+- **中观视角**：Gather → Action → Verify（执行阶段）
+- **任务级工作流**：Plan → Decompose → Execute → Review（开发者协作）
 
 > Workflow 包裹多个 Agent Loop; Agent Loop 是 Workflow 真正落地执行时反复转动的引擎。
 

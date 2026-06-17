@@ -30,6 +30,7 @@ updated: '2026-06-16'
 | [CDI Deep Dive](./CDI_Deep_Dive.md) | 容器设备接口标准：GPU/国产加速器如何统一接入 K8s 容器 | 基础设施工程师、平台 SRE |
 | [CDI 小白版](./CDI_for_dummy.md) | 用「酒店入住单」「万能插头」比喻讲懂 CDI | 初学者、非基础设施背景 |
 | [DRA Deep Dive](./DRA_Deep_Dive.md) | 动态资源分配：K8s 设备分配的未来，与 CDI 配对 | 架构师、平台 SRE |
+| [MIG Deep Dive](./MIG_Deep_Dive.md) | Multi-Instance GPU：A100/H100/PPU 硬件级切片（GI/CI），多租户强隔离推理 | 平台工程师、多租户 SRE |
 | [HAMi Deep Dive](./HAMi_Deep_Dive.md) | CNCF Sandbox 异构 GPU 虚拟化：NVIDIA/昇腾/寒武纪统一共享与隔离 | 平台工程师、SRE、成本优化团队 |
 | [HAMi 入门](./HAMi_for_dummy.md) | 零基础理解 HAMi 如何让 K8s GPU 像 CPU 一样共享 | 初学者、开发测试负责人 |
 | [HAMi 运维指南](./HAMi_Operation_Guide.md) | HAMi 安装、配置、升级、监控与 WebUI | 平台 SRE、运维工程师 |
@@ -98,6 +99,7 @@ updated: '2026-06-16'
 - **Java 生态** → [Spring AI Architecture](./Spring_AI_Architecture.md)
 - **私有化 AI 一体机** → [AI Stack Deep Dive](./AI_Stack_Deep_Dive.md) → [AI Stack 生产工具链总览](./AI_Stack_Production_Toolchain.md)
 - **异构设备接入** → [CDI Deep Dive](./CDI_Deep_Dive.md)（GPU/昇腾/寒武纪统一容器化）
+- **GPU 硬件级切分** → [MIG Deep Dive](./MIG_Deep_Dive.md)（A100/H100/PPU 多租户强隔离）+ [HAMi Deep Dive](./HAMi_Deep_Dive.md)（软件超卖）
 - **GPU 共享与池化** → [HAMi Deep Dive](./HAMi_Deep_Dive.md) → [HAMi 运维指南](./HAMi_Operation_Guide.md)
 - **云原生大模型** → [CNCF LLM 项目全景导览](./CNCF_Cloud_Native_AI/README.md)（推理/调度/平台/AIOps/网关五层）
 

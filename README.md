@@ -13,7 +13,7 @@ updated: 2026-06-15
 
 <p><strong>这可能是 GitHub 上最全面的 AI 学习资源</strong></p>
 
-<p>从理论到生产的完整 AI 知识体系 | 1,800+ 文档 | 1,500 万+ 字 | LLMOps 完整主线 | 2026 最新</p>
+<p>从理论到生产的完整 AI 知识体系 | 2,200+ 文档 | 1,600 万+ 字 | LLMOps 完整主线 | 2026 最新</p>
 
 <p>
  <a href="#-快速开始">🚀 快速开始</a> •
@@ -24,8 +24,8 @@ updated: 2026-06-15
 </p>
 
 <p>
- <img src="https://img.shields.io/badge/文档-1800%2B-blue?style=flat-square&logo=bookstack" alt="Docs">
- <img src="https://img.shields.io/badge/字数-1500万%2B-green?style=flat-square" alt="Content">
+ <img src="https://img.shields.io/badge/文档-2200%2B-blue?style=flat-square&logo=bookstack" alt="Docs">
+ <img src="https://img.shields.io/badge/字数-1600万%2B-green?style=flat-square" alt="Content">
  <img src="https://img.shields.io/badge/章节-27-orange?style=flat-square" alt="Chapters">
  <img src="https://img.shields.io/badge/速成指南-26-purple?style=flat-square" alt="Guides">
  <img src="https://img.shields.io/badge/LLMOps-完整主线-critical?style=flat-square" alt="LLMOps">
@@ -54,8 +54,8 @@ updated: 2026-06-15
 <td width="50%">
 
 **📚 内容全面**
-- 1,800+ Markdown 文档
-- 1,500 万+ 字符（约 2,500 页 A4）
+- 2,200+ Markdown 文档
+- 1,600 万+ 字符（约 2,700 页 A4）
 - 涵盖 70+ 技术领域
 - 从数学基础到 AGI 前沿
 
@@ -95,7 +95,7 @@ updated: 2026-06-15
 ### 📊 数据说话
 
 ```
-📁 1,800+ 个 Markdown 文件  📄 1,500 万+ 字符（约 2,500 页 A4）
+📁 2,200+ 个 Markdown 文件  📄 1,600 万+ 字符（约 2,700 页 A4）
 📚 27 个知识章节            ⚡ 26 个速成指南 (in-nutshell)
 🎓 99 篇入门指南 (for_dummy)  🔬 102 个 2026 专题 (_2026)
 🏢 8 大行业应用             👔 21 个岗位面试指南
@@ -106,33 +106,33 @@ updated: 2026-06-15
 
 | 目录名称 | 文件数 | 字符数 | 占比 |
 |---------|--------|--------|------|
-| 13_Agent_Production | 164 | 222.57 万 | 15.0% |
-| 04_NLP_LLMs | 100 | 131.94 万 | 8.9% |
-| 09_Deployment_Inference | 50 | 56.99 万 | 3.8% |
-| 07_Model_Training | 23 | 51.38 万 | 3.5% |
-| 12_Architecture_Infrastructure | 32 | 49.50 万 | 3.3% |
-| 17_AI_Coding | 61 | 40.88 万 | 2.7% |
-| 10_MLOps_Pipeline | 41 | 40.78 万 | 2.7% |
-| concepts | 114 | 38.20 万 | 2.6% |
-| 02_Machine_Learning | 35 | 33.73 万 | 2.3% |
-| 22_Papers | 25 | 33.05 万 | 2.2% |
-| 90_Learn | 60 | 32.98 万 | 2.2% |
-| 01_Fundamentals | 31 | 32.73 万 | 2.2% |
-| 19_Ethics_Safety | 28 | 30.71 万 | 2.1% |
-| 11_RAG_Systems | 31 | 30.53 万 | 2.0% |
-| 08_Model_Evaluation | 16 | 25.88 万 | 1.7% |
-| 15_Testing | 12 | 22.87 万 | 1.5% |
-| 03_Deep_Learning | 21 | 22.68 万 | 1.5% |
-| 05_Computer_Vision | 23 | 19.63 万 | 1.3% |
-| 16_AI_Ops | 11 | 16.85 万 | 1.1% |
-| 20_AI_Applications_Industry | 26 | 15.92 万 | 1.1% |
-| 00_AI_Introduction | 14 | 15.20 万 | 1.0% |
-| 23_Interviews | 88 | 12.73 万 | 0.9% |
-| 21_Talks | 54 | 12.45 万 | 0.8% |
-| synthesis | 28 | 8.24 万 | 0.6% |
-| references | 37 | 5.88 万 | 0.4% |
-| 06_Reinforcement_Learning | 17 | 17.07 万 | 1.1% |
-| **总计** | **1,800+** | **1,500 万+** | **100%** |
+| 13_Agent_Production | 172 | 230.95 万 | 20.8% |
+| 04_NLP_LLMs | 110 | 142.92 万 | 12.9% |
+| 12_Architecture_Infrastructure | 62 | 99.28 万 | 8.9% |
+| 09_Deployment_Inference | 53 | 60.13 万 | 5.4% |
+| 07_Model_Training | 25 | 53.11 万 | 4.8% |
+| 17_AI_Coding | 64 | 43.96 万 | 4.0% |
+| concepts | 123 | 42.98 万 | 3.9% |
+| 10_MLOps_Pipeline | 41 | 40.78 万 | 3.7% |
+| 02_Machine_Learning | 35 | 33.73 万 | 3.0% |
+| 19_Ethics_Safety | 31 | 33.68 万 | 3.0% |
+| 22_Papers | 25 | 33.05 万 | 3.0% |
+| 90_Learn | 60 | 32.98 万 | 3.0% |
+| 01_Fundamentals | 31 | 32.86 万 | 3.0% |
+| 11_RAG_Systems | 31 | 30.53 万 | 2.7% |
+| 08_Model_Evaluation | 16 | 25.88 万 | 2.3% |
+| 15_Testing | 12 | 22.87 万 | 2.1% |
+| 03_Deep_Learning | 21 | 22.68 万 | 2.0% |
+| 05_Computer_Vision | 23 | 19.63 万 | 1.8% |
+| 16_AI_Ops | 13 | 19.51 万 | 1.8% |
+| 06_Reinforcement_Learning | 17 | 17.07 万 | 1.5% |
+| 00_AI_Introduction | 17 | 16.87 万 | 1.5% |
+| 20_AI_Applications_Industry | 26 | 15.92 万 | 1.4% |
+| 23_Interviews | 88 | 12.73 万 | 1.1% |
+| 21_Talks | 54 | 12.45 万 | 1.1% |
+| synthesis | 29 | 8.55 万 | 0.8% |
+| references | 37 | 5.88 万 | 0.5% |
+| **总计** | **1,216** | **1,110.97 万** | **100%** |
 
 > 💡 提示：运行 `python3 count_words.py` 可查看最新的实时统计
 

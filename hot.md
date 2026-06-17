@@ -4,7 +4,32 @@ title: Hot Pages
 
 # Hot Pages — 最近新增与高价值页面
 
-*Last updated: 2026-06-16*
+*Last updated: 2026-06-17*
+
+## 2026-06-17 GLM-5.2 正式上线并开源 (智谱 AI)
+
+> **重大厂商事件** — 智谱发布 GLM-5.2，定位"长程任务"Agent 大脑，多维度刷新中国开源大模型上限。
+
+### 关键事实
+- 🥇 **Code Arena 全球可用模型第一** (百万用户盲测前端开发)
+- 📏 **Solid 1M 无损上下文** (数百 K 后不劣化)
+- 🏗️ **IndexShare 稀疏注意力**: 每 4 层共享 indexer，1M 上下文 FLOPs/token 降至 1/2.9
+- 🇨🇳 **Day 0 八家国产算力适配**: 昇腾 / 平头哥 / 摩尔线程 / 寒武纪 / 昆仑芯 / 沐曦 / 海光 / 壁仞
+- 📜 **MIT 协议开源** (无地域限制)
+- 📊 **Benchmark**: FrontierSWE 仅落后 Opus 4.8 1% (超 GPT-5.5 / Opus 4.7), Terminal-Bench 2.1 较 GLM-5.1 +17.5%
+
+### 更新页面
+- [[04_NLP_LLMs/Chinese_LLM_Ecosystem/GLM_Zhipu_Deep_Dive]] — 新增 §"GLM-5.2 正式发布与开源详解" (9 小节, 含架构/国产算力/部署/Agent 产品/未来路线)
+- [[04_NLP_LLMs/Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]] — GLM 行升级到 GLM-5.2, 国产算力适配列扩展为 8 家
+- [[04_NLP_LLMs/Chinese_LLM_Ecosystem/README]] — 第一梯队 GLM 行更新
+- [[_sources/wechat/2026-06-glm-5.2-release]] — 原文存档
+
+### 信源
+- 原文: https://mp.weixin.qq.com/s/GRzZ1NCCe1hWzYvCxN003Q
+- 官方 Blog: https://z.ai/blog/glm-5.2
+- GitHub: https://github.com/zai-org/GLM-5
+
+---
 
 ## 2026-06-16 Yeasy AI 知识库系列融合（26 页）
 

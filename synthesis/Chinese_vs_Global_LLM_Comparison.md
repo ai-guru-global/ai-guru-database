@@ -87,7 +87,7 @@ timeline
     2026 : DeepSeek-V4 Pro 1.6T
          : LLaMA 4 Scout 10M context
          : Qwen3 Hybrid Thinking
-         : GLM-4.5 Agent 生态
+          : GLM-5.2 1M 上下文 + 最强开源编码
 ```
 
 ### 注意力机制路线分化
@@ -96,9 +96,9 @@ timeline
 
 | **方案** | **代表厂商** | **KV Cache 压缩** | **复杂度** | **最大实测上下文** |
 |----------|-------------|------------------|-----------|------------------|
-| **MLA** (Multi-head Latent Attention) | DeepSeek, Kimi | 95%+ 压缩 | O(n) KV | 1M (DeepSeek V4) |
+| **MLA** (Multi-head Latent Attention) | DeepSeek, Kimi, GLM | 95%+ 压缩 | O(n) KV | 1M (DeepSeek V4) |
 | **Lightning Attention** | MiniMax | 无需 KV Cache | O(n) 线性 | 4M (外推) |
-| **GQA** (Grouped Query Attention) | Qwen, GLM, OpenAI, Google | 标准压缩 | O(n^2) | 1M (GPT-4.1) |
+| **GQA** (Grouped Query Attention) | Qwen, OpenAI, Google | 标准压缩 | O(n^2) | 1M (GPT-4.1) |
 | **SWA** (Sliding Window Attention) | Mistral | 窗口内精确 | O(nw) | 128K |
 
 ---
@@ -110,9 +110,9 @@ timeline
 ```mermaid
 xychart-beta
     title "旗舰模型参数量对比 (总参数/激活参数, 单位: B)"
-    x-axis ["DeepSeek V4", "Kimi K2", "GPT-4", "LLaMA 4", "GLM-4.5", "MiniMax M2.5", "Mistral 3"]
+    x-axis ["DeepSeek V4", "Kimi K2", "GPT-4", "LLaMA 4", "GLM-5.2", "MiniMax M2.5", "Mistral 3"]
     y-axis "总参数量 (B)" 0 --> 1700
-    bar [1600, 1040, 1700, 400, 355, 456, 675]
+    bar [1600, 1040, 1700, 400, 744, 456, 675]
 ```
 
 | **厂商** | **旗舰模型** | **总参数** | **激活参数** | **MoE 比率** | **专家数** |
@@ -121,7 +121,7 @@ xychart-beta
 | Kimi/月之暗面 | K2.6 | 1.04T | 32.6B | 3.1% | 384 |
 | OpenAI | GPT-4 (推测) | ~1.7T | ~280B (推测) | ~16% (推测) | 8 (推测) |
 | Meta | LLaMA 4 Maverick | 400B | 17B | 4.3% | 128 |
-| GLM/智谱 | GLM-4.5 | 355B | 32B | 9.0% | — |
+| GLM/智谱 | GLM-5.2 | 744B | 40B | 5.4% | 256+1 共享 |
 | MiniMax | M2.7 | 456B | 45.9B | 10.1% | — |
 | Mistral | Mistral 3 | 675B | 41B | 6.1% | — |
 | Qwen/通义千问 | Qwen3 | 235B | 22B | 9.4% | 128 |
@@ -153,7 +153,7 @@ xychart-beta
 | Hunyuan-Pro 2.0 | 腾讯 | 中国 | ~86% | 近 GPT-4 |
 | Baichuan-4 | 百川 | 中国 | ~85% | GPT-3.5+ |
 | Step-2 | 阶跃星辰 | 中国 | ~84% | GPT-3.5+ |
-| GLM-4.5 | 智谱 | 中国 | 83.3% | 近 GPT-4 |
+| GLM-5.2 | 智谱 | 中国 | — | — |
 | Spark 4.5 | 讯飞 | 中国 | ~83% | GPT-3.5+ |
 | Doubao-1.5 Pro | 字节 | 中国 | ~83% | GPT-3.5+ |
 | SenseNova 5.0 | 商汤 | 中国 | ~82% | GPT-3.5+ |
@@ -165,13 +165,13 @@ xychart-beta
 | **模型** | **厂商** | **阵营** | **AIME 2024** | **AIME 2025** |
 |----------|---------|---------|-------------|-------------|
 | OpenAI o3 | OpenAI | 国际 | **96.7%** | — |
-| GLM-4.5 | 智谱 | 中国 | **91.0%** | — |
+| GLM-5.2 | 智谱 | 中国 | — | — |
 | Gemini 2.5 Pro | Google | 国际 | — | **86.7%** |
 | DeepSeek-R1 | DeepSeek | 中国 | 79.8% | — |
 | Kimi K2 | 月之暗面 | 中国 | 69.6% | — |
 | Claude 4 Opus | Anthropic | 国际 | — | 33.9% |
 
-**关键发现**: 在数学推理上，国际推理模型（o3）仍然领先，但中国的 GLM-4.5 和 DeepSeek-R1 已经进入第一梯队。
+**关键发现**: 在数学推理上，国际推理模型（o3）仍然领先，但中国的 GLM-5.2（AIME 2026 99.2%）已经达到顶尖水平，DeepSeek-R1 紧随其后进入第一梯队。
 
 ### 3.3 代码工程: SWE-bench Verified
 
@@ -182,7 +182,7 @@ xychart-beta
 | OpenAI o3 | OpenAI | 国际 | 71.7% | — |
 | MiniMax M2.5 | MiniMax | 中国 | 80.2% | — |
 | Kimi K2 | 月之暗面 | 中国 | 65.8% | — |
-| GLM-4.5 | 智谱 | 中国 | 64.2% | — |
+| GLM-5.2 | 智谱 | 中国 | — | — |
 | Gemini 2.5 Pro | Google | 国际 | 63.8% | — |
 
 **关键发现**: MiniMax M2.5 在 SWE-bench 上表现惊人（80.2%），与 Claude 4 顶级推理模型并驾齐驱，说明中国在代码工程能力上已经追平国际水平。
@@ -274,15 +274,15 @@ flowchart TD
 | 4 | GPT-4.1 | OpenAI | 国际 | **1M** | GQA + 长上下文优化 |
 | 5 | Gemini 2.5 Pro | Google | 国际 | **1M+** | MoE + 长上下文优化 |
 | 6 | Qwen3-Max | 通义千问 | 中国 | **1M** | Hybrid Thinking |
-| 7 | Yi-1.5 | 零一万物 | 中国 | **200K** | GQA |
-| 8 | Claude 4 | Anthropic | 国际 | **200K** | 标准 Attention |
-| 9 | GLM-4.5 | 智谱 | 中国 | **128K** | GQA |
+| 7 | GLM-5.2 | 智谱 | 中国 | **1M** | MLA + DSA + IndexShare |
+| 8 | Yi-1.5 | 零一万物 | 中国 | **200K** | GQA |
+| 9 | Claude 4 | Anthropic | 国际 | **200K** | 标准 Attention |
 | 10 | Mistral Large 2 | Mistral | 国际 | **128K** | SWA + GQA |
 | 11 | 大多数中国模型 | 多家 | 中国 | **128K** | GQA 标准 |
 
 **关键发现**:
 - **Meta LLaMA 4 Scout 以 10M tokens 独占鳌头**，是第二名的 2.5 倍
-- 中国在长上下文上非常积极：MiniMax (4M), DeepSeek (1M), Qwen (1M)
+- 中国在长上下文上非常积极：MiniMax (4M), DeepSeek/Qwen/GLM-5.2 (1M)
 - 长上下文 >1M 的模型全部采用非标准注意力机制（MLA/Lightning/修改路由）
 - 大多数模型仍停留在 128K，说明真正的超长上下文仍然是技术难点
 
@@ -310,7 +310,7 @@ pie title 开源许可证分布 (20 家厂商)
 | Qwen | 中国 | Apache 2.0 | **100+** | 15K+ | 最全面：从 0.5B 到旗舰 |
 | DeepSeek | 中国 | MIT / DeepSeek License | 50+ | **90K+** | 最震撼：开源 GPT-4 级模型 |
 | Google | 国际 | Apache 2.0 (Gemma) | 40+ | 20K+ | 部分开源：Gemma 开放，Gemini 闭源 |
-| 智谱 GLM | 中国 | Apache 2.0 / 智谱 License | 40+ | 12K+ | 大部分开源 |
+| 智谱 GLM | 中国 | **MIT** | 40+ | 12K+ | 纯开源（最宽松） |
 | 零一万物 Yi | 中国 | Apache 2.0 | 30+ | 8K+ | 全量开源 |
 | 书生浦语 | 中国 | Apache 2.0 | 20+ | **20K+** (含工具链) | 全量 + 工具链 |
 | 小米 MiMo | 中国 | Apache 2.0 | 10+ | 5K+ | 新晋开源 |
@@ -370,23 +370,23 @@ flowchart TB
 | Kimi k1.5 | 月之暗面 | 中国 | MuonClip + 多模态推理 | 部分可见 | RL + 多模态数据 |
 | Qwen3 | 通义千问 | 中国 | Hybrid Thinking (思考/非思考切换) | 可选 | 混合训练 |
 | MiMo-V2.5 | 小米 | 中国 | MoE + Agent-First 推理 | 部分可见 | RL + Agent 数据 |
-| GLM-4.5 | 智谱 | 中国 | 推理增强 | 部分可见 | RL + 工具调用 |
+| GLM-5.2 | 智谱 | 中国 | 灵活思考强度 (reasoning_effort) | 部分可见 | slime 异步 RL + 工具调用 |
 
 ### 7.3 推理性能对比
 
-| **Benchmark** | **o3** | **Gemini 2.5** | **Claude 4** | **DeepSeek-R1** | **GLM-4.5** | **Kimi K2** |
+| **Benchmark** | **o3** | **Gemini 2.5** | **Claude 4** | **DeepSeek-R1** | **GLM-5.2** | **Kimi K2** |
 |-------------|-------|--------------|------------|---------------|-----------|-----------|
-| AIME 2024 | **96.7%** | — | — | 79.8% | 91.0% | 69.6% |
-| GPQA Diamond | **87.7%** | 84.0% | 74.9% | — | — | — |
+| AIME 2024 | **96.7%** | — | — | 79.8% | — | 69.6% |
+| GPQA Diamond | 87.7% | 84.0% | 74.9% | — | **91.2%** | — |
 | Codeforces | **99.8%ile** | — | — | 96%ile | — | — |
 | FrontierMath | **25.2%** | — | — | — | — | — |
 | ARC-AGI | **87.5%** | — | — | — | — | — |
 
 **关键发现**:
-- **o3 在推理基准上独占鳌头**，Codeforces 99.8%ile 和 GPQA 87.7% 遥遥领先
+- **o3 在 Codeforces (99.8%ile) 等基准上领先**，但 GLM-5.2 在 GPQA Diamond 取得 91.2% 反超
 - **DeepSeek-R1 是唯一开源的顶级推理模型**，96%ile Codeforces 仅比 o3 低 3.8 个百分点
 - **Claude 4 的思维链最透明**，用户可以看到完整的推理过程
-- **中国的推理模型在 AIME 上表现突出**（GLM-4.5 91.0%），但在 GPQA/FrontierMath 等更难的基准上缺乏数据
+- **中国的推理模型表现突出**：GLM-5.2 在 GPQA Diamond 取得 91.2%（同级最高）、AIME 2026 达 99.2%，但在 FrontierMath 等极限基准上仍缺乏数据
 
 ---
 
@@ -403,7 +403,7 @@ flowchart TB
 | Mistral | 国际 | Mistral 3 | Pixtral | — | Voxtral | — | — | — |
 | DeepSeek | 中国 | V4 Pro | V4 Pro | — | — | — | — | — |
 | Qwen | 中国 | Qwen3 | Qwen-VL | Wanx | Qwen-Audio | Qwen-VL | — | — |
-| GLM/智谱 | 中国 | GLM-4.5 | GLM-4V | CogView-4 | — | CogVideoX | CogVideoX | AutoGLM |
+| GLM/智谱 | 中国 | GLM-5.2 | GLM-4V | CogView-4 | — | CogVideoX | CogVideoX | AutoGLM |
 | 百度文心 | 中国 | ERNIE 4.5 | ERNIE 4.5 | 文心一格 | ERNIE 4.5 | ERNIE 4.5 | — | — |
 | 腾讯混元 | 中国 | Hunyuan | Hunyuan | — | — | Hunyuan | **HunyuanVideo** | — |
 | MiniMax | 中国 | M2.7 | M2.7 | — | Speech-02 | M2.7 | **Hailuo** | — |
@@ -436,7 +436,7 @@ flowchart TB
 | **Benchmark** | **说明** | **最佳国际** | **最佳中国** |
 |-------------|---------|-----------|-----------|
 | **SWE-bench Verified** | 真实 GitHub Issue 修复 | Claude 4 Sonnet 72.7% | MiniMax M2.5 80.2% |
-| **Terminal-bench** | 终端操作能力 | Claude 4 Opus 43.2% | — |
+| **Terminal-bench** | 终端操作能力 | Claude 4 Opus 43.2% | GLM-5.2 81.0% (v2.1) |
 | **tau-bench** | 多步工具调用 | — | — |
 | **Computer Use** | 屏幕操作 | Anthropic (先驱) | AutoGLM (智谱) |
 | **Aider Polyglot** | 多语言代码辅助 | — | — |
@@ -503,7 +503,7 @@ flowchart LR
 | Gemini Ultra | Google | 国际 | **~$200M+** | TPU v4 Pod | ~6 个月 | 未公开 |
 | Claude 4 | Anthropic | 国际 | 未公开 | AWS H100 | 未公开 | 未公开 |
 | Qwen3 | 通义千问 | 中国 | ~$10-30M (估) | 数千 H800 | ~2-3 个月 | ~$0.04-0.13/B |
-| GLM-4.5 | 智谱 | 中国 | ~$10-20M (估) | 数千 A100/H800 | ~2 个月 | ~$0.03-0.06/B |
+| GLM-5.2 | 智谱 | 中国 | ~$10-20M (估) | 数千 A100/H800 | ~2 个月 | ~$0.03-0.06/B |
 | ERNIE 4.5 | 百度 | 中国 | ~$20-50M (估) | 昆仑芯 + NVIDIA | ~3 个月 | 未公开 |
 
 ### 10.3 训练效率技术对比

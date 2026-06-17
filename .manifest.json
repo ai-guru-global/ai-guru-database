@@ -1,8 +1,28 @@
 {
   "version": 1,
   "created": "2026-05-31T00:00:00Z",
-  "last_updated": "2026-06-15T07:35:00Z",
+  "last_updated": "2026-06-17T00:00:00Z",
   "sources": {
+    "https://mp.weixin.qq.com/s/GRzZ1NCCe1hWzYvCxN003Q": {
+      "ingested_at": "2026-06-17T00:00:00Z",
+      "source_url": "https://mp.weixin.qq.com/s/GRzZ1NCCe1hWzYvCxN003Q",
+      "source_type": "url",
+      "publisher": "魔搭 ModelScope 社区 (经智谱 AI 授权转载)",
+      "title": "GLM-5.2 正式上线并开源",
+      "project": null,
+      "promotion_status": "chinese-llm-ecosystem",
+      "stub": false,
+      "pages_created": [
+        "_sources/wechat/2026-06-glm-5.2-release.md"
+      ],
+      "pages_updated": [
+        "04_NLP_LLMs/Chinese_LLM_Ecosystem/GLM_Zhipu_Deep_Dive.md",
+        "04_NLP_LLMs/Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix.md",
+        "04_NLP_LLMs/Chinese_LLM_Ecosystem/README.md",
+        "hot.md",
+        "index.md"
+      ]
+    },
     "/Users/ai-guru/Documents/GitHub/ai-guru-global/ai-guru-database/AI Stack 用户指南.pdf": {
       "ingested_at": "2026-06-05T00:00:00Z",
       "size_bytes": 7635406,
@@ -409,10 +429,10 @@
     }
   },
   "stats": {
-    "total_sources_ingested": 25,
-    "total_pages": 1086,
+    "total_sources_ingested": 26,
+    "total_pages": 1088,
     "total_projects": 0,
     "last_full_rebuild": null,
-    "last_updated": "2026-06-15T08:17:32Z"
+    "last_updated": "2026-06-17T00:00:00Z"
   }
 }

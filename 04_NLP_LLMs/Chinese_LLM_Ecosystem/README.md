@@ -4,7 +4,7 @@ category: 04-nlp-llms
 tags: ["chinese-llm", "deepseek", "qwen", "glm", "kimi", "minimax", "baidu", "baichuan", "yi", "tencent", "iflytek", "sensetime", "internlm", "bytedance", "stepfun", "xiaomi", "moe", "open-source"]
 summary: "系统梳理中国 15 家大模型厂商的技术路线、模型矩阵、核心创新与 Benchmark 对比，覆盖第一梯队（DeepSeek/Qwen/GLM/Kimi/MiniMax/MiMo）和第二梯队（百度/百川/零一万物/阶跃星辰/腾讯/讯飞/商汤/InternLM/字节跳动）。"
 created: 2026-06-01
-updated: 2026-06-12
+updated: 2026-06-17
 ---
 
 # 中国大模型生态全景 (Chinese LLM Ecosystem)
@@ -21,7 +21,7 @@ updated: 2026-06-12
 |----------|---------|-------------|-------------|-----------|-------------|---------|
 | **DeepSeek** | 2023 | MLA + MoE + FP8 | DeepSeek-V4 Pro | 1.6T / 49B active | $5.6M 训练出 GPT-4 级模型 | [[DeepSeek_Deep_Dive]] |
 | **Qwen** (通义千问) | 2023 | Hybrid Thinking + MoE | Qwen3-Max | 未公开 | 1M 上下文 + 最全开源生态 | [[Qwen_Deep_Dive]] |
-| **GLM/智谱 AI** | 2019 | GLM 框架 + MoE | GLM-4.5 | 355B / 32B active | 清华血统 + 全栈 Agent 生态 | [[GLM_Zhipu_Deep_Dive]] |
+| **GLM/智谱 AI** | 2019 | MLA + 256 专家 MoE + DSA | GLM-5.2 | 744B / 40B active | 1M 上下文 + MIT 纯开源 + 最强开源编码 | [[GLM_Zhipu_Deep_Dive]] |
 | **Kimi/月之暗面** | 2023 | MuonClip + MoE + MLA | Kimi K2.6 | 1.04T / 32.6B active | 256K 上下文 + 多模态理解 | [[Kimi_Moonshot_Deep_Dive]] |
 | **MiniMax** | 2021 | Lightning Attention + MoE | M2.5 / M2.7 | 456B / 45.9B active | 1M 上下文 + 全模态覆盖 | [[MiniMax_Deep_Dive]] |
 | **小米 MiMo** | 2025 | MoE + Agent-First + MTP | MiMo-V2.5-Pro | 1T / 42B active | Agent 大脑 + 极致性价比 | [[Xiaomi_MiMo_Deep_Dive]] |
@@ -50,18 +50,20 @@ updated: 2026-06-12
 
 ### 推理与数学
 
-| **Benchmark** | **DeepSeek-R1** | **Qwen3** | **GLM-4.5** | **Kimi K2** | **ERNIE 4.5** | **Hunyuan-Pro 2.0** |
+| **Benchmark** | **DeepSeek-R1** | **Qwen3** | **GLM-5.2** | **Kimi K2** | **ERNIE 4.5** | **Hunyuan-Pro 2.0** |
 |---------------|----------------|-----------|-------------|-------------|---------------|-------------------|
-| **MMLU** | 88.5% | ~88% | 83.3% | 89.5% | ~88% | ~86% |
-| **MATH-500** | 97.3% | — | 98.2% | — | ~68% | ~58% |
-| **AIME 2024** | 79.8% | — | 91.0% | 69.6% | — | — |
+| **MMLU** | 88.5% | ~88% | — | 89.5% | ~88% | ~86% |
+| **MATH-500** | 97.3% | — | — | — | ~68% | ~58% |
+| **AIME 2024** | 79.8% | — | — | 69.6% | — | — |
 
 ### 代码与工程
 
-| **Benchmark** | **DeepSeek-V3** | **GLM-4.5** | **Kimi K2** | **MiniMax-M2.5** | **Yi-Coder-9B** |
+| **Benchmark** | **DeepSeek-V3** | **GLM-5.2** | **Kimi K2** | **MiniMax-M2.5** | **Yi-Coder-9B** |
 |---------------|----------------|-------------|-------------|-----------------|----------------|
 | **HumanEval** | 82.6% | — | — | — | 79.3% |
-| **SWE-bench** | — | 64.2% | 65.8% | 80.2% | — |
+| **SWE-bench** | — | — | 65.8% | 80.2% | — |
+
+> **🆕 GLM-5.2 (2026-06) 新增基准**: FrontierSWE (Opus 4.8 -1%, GPT-5.5 +1%), Terminal-Bench 2.1 (Opus 4.8 -4%, 较 GLM-5.1 +17.5%), MCP-Atlas (Opus 4.8 -0.8%), Code Arena (全球可用模型第一)。详见 [[GLM_Zhipu_Deep_Dive]] §GLM-5.2 正式发布与开源详解。
 
 ---
 
@@ -71,10 +73,10 @@ updated: 2026-06-12
 
 | **厂商** | **注意力方案** | **复杂度** | **最大上下文** |
 |----------|---------------|-----------|--------------|
-| DeepSeek | **MLA** | KV cache 压缩 95% | 1M (V4) |
+| DeepSeek / GLM-5.2 | **MLA** | KV cache 压缩 95% | 1M |
 | Kimi | **MLA** | KV cache 压缩 | 128K |
 | MiniMax | **Lightning Attention** | O(n) 线性 | **4M** (外推) |
-| Qwen / GLM / 百度 | **GQA** | 标准 O(n²) | 128K |
+| Qwen / 百度 | **GQA** | 标准 O(n²) | 128K |
 | 腾讯/阶跃/讯飞 | **GQA** | 标准 | 128K |
 
 ### MoE 架构采用
@@ -83,7 +85,7 @@ updated: 2026-06-12
 |----------|-----------|-------------|-----------|-------------|
 | DeepSeek V4 | 1.6T | 49B | 256 | Top-8 + 共享专家 |
 | Kimi K2 | 1.04T | 32.6B | 384 | Top-8 + 1 共享 |
-| GLM-4.5 | 355B | 32B | — | MoE + 共享 |
+| GLM-5.2 | 744B | 40B | 256 | MoE + 共享 + **IndexShare** (每4层共享 indexer) |
 | Qwen3 | 235B | 22B | 128 | Top-8 |
 | MiniMax M2.5 | 230B | 10B | — | 稀疏 MoE |
 | 腾讯 Hunyuan-Large | 389B | 52B | ~64 | Top-2 + 1 共享 |
@@ -98,7 +100,7 @@ updated: 2026-06-12
 | DeepSeek | MIT / DeepSeek License | 50+ | 90K+ | 全量开源 |
 | Qwen | Apache 2.0 | 100+ | 15K+ | 全量开源 |
 | 零一万物 Yi | Apache 2.0 | 30+ | 8K+ | 全量开源 |
-| GLM | Apache 2.0 / 智谱 License | 40+ | 12K+ | 大部分开源 |
+| GLM | **MIT** (GLM-5.2) / Apache 2.0 (旧版) | 40+ | 12K+ | GLM-5.2 MIT 纯开源 + Day 0 八家国产算力 |
 | 书生浦语 | Apache 2.0 | 20+ | 20K+ (含工具链) | 全量+工具链 |
 | 百川 | Baichuan License | 15+ | 17K+ | 模型开源 |
 | 腾讯混元 | Hunyuan License | 10+ | 5K+ | 部分开源 |
@@ -113,7 +115,7 @@ updated: 2026-06-12
 
 | **能力维度** | **最强者** | **次强** |
 |-------------|-----------|---------|
-| 数学推理 | DeepSeek-R1, GLM-4.5 | Qwen3, Kimi K2 |
+| 数学推理 | DeepSeek-R1, GLM-5.2 | Qwen3, Kimi K2 |
 | 代码生成 | DeepSeek-V3, Yi-Coder | Qwen-Coder, GLM |
 | 中文理解 | ERNIE 4.5, Qwen | DeepSeek-V3, GLM |
 | 长上下文 | MiniMax (4M), DeepSeek | Qwen (1M), Kimi |

@@ -9,7 +9,7 @@ updated: 2026-06-12
 
 # 唐杰 (Jie Tang) — 智谱 AI 联合创始人
 
-> **一句话概括**: 清华大学教授创办智谱 AI，从 GLM-130B 到 GLM-4.5 (355B MoE)，打造了中国最具学术底蕴的大模型生态。
+> **一句话概括**: 清华大学教授创办智谱 AI，从 GLM-130B 到 GLM-5.2 (744B MoE)，打造了中国最具学术底蕴的大模型生态。
 
 ---
 
@@ -21,6 +21,7 @@ updated: 2026-06-12
 - **CogVLM / CogAgent** (2023-2024): 视觉语言模型和 GUI Agent
 - **AutoGLM** (2024): 自我进化的 AI Agent
 - **GLM-4.5** (2025): 355B/32B MoE，MATH-500 98.2%，AIME 91.0%
+- **GLM-5.2** (2026): 744B/40B MoE (256 路由专家 + 1 共享)，1M 上下文 (MLA + DSA + IndexShare)，MIT 纯开源，最强开源编码（Terminal-Bench 81.0、SWE-bench Pro 62.1、AIME 2026 99.2）
 
 ## 代表性论文与成果
 

@@ -36,7 +36,7 @@ title: Wiki Index
 - [[04_NLP_LLMs/Chinese_LLM_Ecosystem/Chinese_LLM_Training_Inference_Platforms]] — 训练推理平台实战参考 ( #chinese-llm #training #inference)
 - [[04_NLP_LLMs/Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive]] — DeepSeek 深度解析 (MLA+MoE+FP8) ( #chinese-llm #deepseek #moe)
 - [[04_NLP_LLMs/Chinese_LLM_Ecosystem/Qwen_Deep_Dive]] — 通义千问深度解析 ( #chinese-llm #qwen)
-- [[04_NLP_LLMs/Chinese_LLM_Ecosystem/GLM_Zhipu_Deep_Dive]] — 智谱 GLM 深度解析 ( #chinese-llm #glm)
+- [[04_NLP_LLMs/Chinese_LLM_Ecosystem/GLM_Zhipu_Deep_Dive]] — 智谱 GLM 深度解析 (GLM-5.2 · 1M 上下文 · MIT 开源) ( #chinese-llm #glm)
 - [[04_NLP_LLMs/Chinese_LLM_Ecosystem/Kimi_Moonshot_Deep_Dive]] — Kimi 月之暗面深度解析 ( #chinese-llm #kimi)
 - [[04_NLP_LLMs/Chinese_LLM_Ecosystem/MiniMax_Deep_Dive]] — MiniMax 深度解析 ( #chinese-llm #minimax)
 - [[04_NLP_LLMs/Chinese_LLM_Ecosystem/Xiaomi_MiMo_Deep_Dive]] — 小米 MiMo 深度解析 ( #chinese-llm #xiaomi)

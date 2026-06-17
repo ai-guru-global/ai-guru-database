@@ -1,10 +1,10 @@
 ---
 title: GLM / 智谱AI (Zhipu AI) 技术深度剖析
 category: 04-nlp-llms-chinese-ecosystem
-tags: [glm, zhipu-ai, chatglm, cogvlm, cogagent, codegeex, autoglm, moe, chinese-llm, tsinghua, multimodal]
-summary: 从 GLM-130B 到 GLM-4.5 MoE，全面解析智谱AI的模型演进、架构创新、多模态生态与 Agent 能力。
+tags: [glm, zhipu-ai, chatglm, cogvlm, cogagent, codegeex, autoglm, moe, chinese-llm, tsinghua, multimodal, glm-5, glm-5.2, mla, dsa, indexshare, mtp]
+summary: 从 GLM-130B 到 GLM-5.2 (744B-A40B MoE + MLA + DSA + 1M 上下文)，全面解析智谱AI/zai-org 的模型演进、架构创新、长程 Agent 能力与 MIT 纯开源生态。
 created: 2026-06-01
-updated: 2026-06-01
+updated: 2026-06-17
 ---
 
 # GLM / 智谱 AI (Zhipu AI) 技术深度剖析
@@ -162,6 +162,18 @@ timeline
                 : 推理+编码+Agent
         GLM-4.5-Air : 106B MoE
                     : 12B 激活参数
+        GLM-5 : 744B MoE
+              : 40B 激活参数
+              : DSA + slime 异步 RL
+              : 复杂系统工程/长程 Agent
+    section 2026
+        GLM-5.1 : 744B-A40B
+                : Agentic Engineering
+                : 长程工具调用
+        GLM-5.2 : 744B-A40B
+                : 稳定 1M 上下文
+                : IndexShare + MTP
+                : MIT 纯开源
 ```
 
 ### 3.2 模型参数与能力演进
@@ -180,10 +192,13 @@ timeline
 | AutoGLM | 2024 | - | - | 自进化 Agent |
 | GLM-4.5 | 2025 | 355B (32B active) | 128K | MoE + 推理 + Agent |
 | GLM-4.5-Air | 2025 | 106B (12B active) | 128K | 轻量 MoE |
+| GLM-5 | 2025 | 744B (40B active) | 128K | MLA + 256 专家 MoE + DSA + slime 异步 RL |
+| GLM-5.1 | 2026 | 744B (40B active) | 128K | Agentic Engineering，长程工具调用 |
+| GLM-5.2 | 2026 | 744B (40B active) | **1M** | IndexShare 稀疏注意力 + MTP + MIT 纯开源 |
 
 ---
 
-## 四、架构演进深度解析：GLM-130B → GLM-4.5
+## 四、架构演进深度解析：GLM-130B → GLM-5.2
 
 ### 4.1 GLM-130B: DeepNorm 与千亿训练
 
@@ -428,6 +443,149 @@ GLM-4.5 实现:
 | 排名 (综合) | 第 3 | 第 6 |
 
 Air 版本通过减小 MoE 规模实现了显著的成本降低，同时保持了竞争力。
+
+### 4.5 GLM-5 系列：744B-A40B 旗舰一代（GLM-5 / 5.1 / 5.2）
+
+> **架构代际跃迁**：从 GLM-4.5 的 355B/32B「自研 GQA-MoE」直接跃升到 **744B/40B 的 MLA + 256 专家 MoE + DeepSeek Sparse Attention** 体系，是智谱迄今为止最大幅度的架构换代。GLM-5、GLM-5.1、GLM-5.2 共享同一个 744B-A40B 预训练基座，分别面向「复杂系统工程」「Agentic Engineering」「长程任务 + 1M 上下文」三个递进方向做后训练优化。
+>
+> 技术报告：[GLM-5: from Vibe Coding to Agentic Engineering (arXiv 2602.15763, 2026)](https://arxiv.org/abs/2602.15763) · 开源仓库：[zai-org/GLM-5](https://github.com/zai-org/GLM-5) · 官方博客：[z.ai/blog/glm-5.2](https://z.ai/blog/glm-5.2)
+
+#### 4.5.1 GLM-5.2 架构全景（来自 config.json 实测）
+
+```
+GLM-5.2 = glm_moe_dsa  (GlmMoeDsaForCausalLM)
+═══════════════════════════════════════════════════════════════════
+总参数 / 激活参数 :  744B / 40B  (A40B，激活率 ~5.4%)
+层数              :  78 层 = 3 dense + 75 MoE  (first_k_dense_replace=3)
+hidden_size       :  6144
+词表 vocab_size   :  154,880  (~155K)
+最大上下文        :  1,048,576  (1M tokens) ← GLM-5.2 关键升级
+RoPE theta        :  8,000,000
+tie_word_embeddings: False
+
+注意力 (MLA — Multi-head Latent Attention，类 DeepSeek-V3):
+  num_attention_heads        = 64
+  q_lora_rank                = 2048      ← Query 低秩压缩
+  kv_lora_rank               = 512       ← KV Cache 低秩压缩（KV Cache 大幅缩小）
+  qk_nope_head_dim           = 192
+  qk_rope_head_dim           = 64
+  head_dim                   = 192
+  → KV Cache 仅存 512 维潜变量，长上下文显存占用显著低于 GQA
+
+稀疏注意力 (DeepSeek Sparse Attention + IndexShare):
+  index_n_heads              = 32
+  index_head_dim             = 128
+  index_topk                 = 2048      ← 每 token 只聚焦 2048 个 key
+  index_share_for_mtp_iteration = True   ← IndexShare 跨层复用
+
+MoE 路由:
+  n_routed_experts           = 256       ← 256 个路由专家
+  n_shared_experts           = 1         ← 1 个共享专家
+  num_experts_per_tok        = 8         ← 每 token 激活 top-8
+  moe_intermediate_size      = 2048
+  scoring_func               = sigmoid
+  topk_method                = noaux_tc
+  dense intermediate_size    = 12288
+
+MTP (Multi-Token Prediction):
+  num_nextn_predict_layers   = 1         ← NextN 投机解码，acceptance +20%
+
+dtype            :  bfloat16  (另有 GLM-5.2-FP8 量化版)
+license          :  MIT       (Pure Open，无地域限制)
+```
+
+**架构哲学**：GLM-5 这一代彻底倒向「**DeepSeek-V3 路线**」——用 MLA 压 KV Cache、用 256 细粒度专家 + top-8 提高专家多样性、用 DeepSeek Sparse Attention 把长上下文的算力成本打下来。这与 GLM-4.5 的「自研 GQA + 较粗 MoE」形成鲜明代际差异，本质是用「更稀疏的注意力 + 更稀疏的 FFN」换取在 1M 上下文下的可承担推理成本。
+
+#### 4.5.2 GLM-5（基座版）：复杂系统工程 + 长程 Agent
+
+GLM-5 是这一代的奠基版本，定位「复杂系统工程与长程 Agent 任务」，相比 GLM-4.5 做了三件大事：
+
+| 维度 | GLM-4.5 | GLM-5 | 倍数 |
+|------|---------|-------|------|
+| 总参数 | 355B | **744B** | 2.1× |
+| 激活参数 | 32B | **40B** | 1.25× |
+| 预训练数据 | 23T tokens | **28.5T tokens** | 1.24× |
+| 注意力 | GQA | **MLA + DSA** | — |
+| 专家数 | 较粗 | **256 路由专家** | — |
+
+- **集成 DeepSeek Sparse Attention (DSA)**：在保留长上下文能力的同时大幅降低部署成本，这是 744B 模型能被推理的前提。
+- **slime 异步 RL 基础设施**：智谱自研的[异步强化学习框架](https://github.com/THUDM/slime)，显著提升 RL 训练吞吐与效率，使更细粒度的后训练迭代成为可能——这是 GLM-5 在「能力」与「卓越」之间架桥的关键。
+- **Vending Bench 2 长程运营**：在该「模拟经营自动售货机一年」的长程基准上，GLM-5 以 **$4,432** 终值位列**开源第一**，逼近 Claude Opus 4.5，展现长期规划与资源管理能力。
+
+#### 4.5.3 GLM-5.1：Agentic Engineering（长程不衰减）
+
+GLM-5.1 不再追求「首刷分数」，而是解决 Agent 的「**长程不衰减**」难题：
+
+```
+传统模型 (含 GLM-5) 的痛点:
+  ─ 用熟悉的技巧拿到前期快速收益 → 早早就把"招数"用尽 → 进入平台期
+  ─ 给更多时间/更多轮次也涨不上去
+
+GLM-5.1 的解法:
+  ─ 在模糊问题上判断力更强
+  ─ 在更长会话中持续保持生产力
+  ─ 拆解复杂问题 → 跑实验 → 读结果 → 精准定位阻塞点
+  ─ 反复回顾推理、修订策略: 数百轮、数千次工具调用仍能持续优化
+  → "跑得越久，结果越好"
+```
+
+在 SWE-Bench Pro、NL2Repo（仓库生成）、Terminal-Bench 2.0（真实终端任务）上达到 SOTA，且把 GLM-5 大幅甩开。它把「Agentic Engineering」从 demo 演示推到了「可以真跑几百轮」的工程可用区间。
+
+#### 4.5.4 GLM-5.2：稳定 1M 上下文 + 最强开源编码
+
+GLM-5.2 是当前旗舰，四项核心升级：
+
+| 能力 | 说明 | 量化收益 |
+|------|------|----------|
+| **Solid 1M Context** | 首次在「扎实的 100 万 token 上下文」上稳定支撑长程工作 | 长程任务可承载量级跃升 |
+| **Advanced Coding (Flexible Effort)** | 多档思考力度，平衡性能与延迟 | Terminal-Bench 2.1: **81.0**（GLM-5.1 仅 62.0），逼近 Claude Opus 4.8 (85.0) |
+| **Improved Architecture (IndexShare + MTP)** | IndexShare 跨层复用 indexer；MTP 投机解码 | 1M 上下文下 per-token FLOPs **降低 2.9×**；MTP 接受长度 **+20%** |
+| **Pure Open (MIT)** | MIT 许可，无地域限制，纯开源 | 全球可商用，无国界技术访问 |
+
+GLM-5.2 是**当前最强开源编码模型**：Terminal-Bench 2.1 (Terminus-2) 拿到 **81.0**，最佳测试框架下 **82.7**；FrontierSWE (Dominance) **74.4**（GLM-5.1 仅 30.5）；领先 Gemini 3.1 Pro。
+
+#### 4.5.5 IndexShare：GLM-5.2 的关键架构创新
+
+[IndexShare (arXiv 2603.12201)](https://arxiv.org/abs/2603.12201) 是 GLM-5.2 把 1M 上下文做「可承担」的核心：
+
+```
+传统稀疏注意力:                 IndexShare:
+每层各自维护一个 indexer         同一个 indexer 跨"每 4 层稀疏注意力"复用
+  L1 ──[indexer A]──┐             L1 ─┐
+  L2 ──[indexer B]──┤             L2  │  共用 indexer
+  L3 ──[indexer C]──┤             L3  │  (index_share_for_mtp_iteration=True)
+  L4 ──[indexer D]──┘             L4 ─┘
+  → indexer 计算 4 份             → indexer 计算量 ÷ 4
+
+效果 (1M 上下文):
+  per-token FLOPs 降低 2.9×
+  → 让 744B 模型在 1M 上下文下的推理成本从"不可行"变"可生产"
+```
+
+它把稀疏注意力的「索引器」从逐层独立改为**跨层共享**，是这一代把上下文从 128K 拉到 1M 而成本可控的工程关键。
+
+#### 4.5.6 思考力度控制：reasoning_effort / enable_thinking
+
+GLM-5 系列统一通过 `reasoning_effort` 控制思考预算，是「Flexible Effort」的 API 落地：
+
+| 参数 | 取值 | 行为 | 适用场景 |
+|------|------|------|----------|
+| `reasoning_effort` | `"max"`（默认） | 最大力度思考 | 基准复现、难题、长程 Agent |
+| `reasoning_effort` | `"high"` | 较高力度，延迟更低 | 生产中追求延迟/质量平衡 |
+| `enable_thinking` | `false` | 完全关闭思考 | 明确想要直答、低延迟 |
+
+> 注意：`reasoning_effort` 留空或设为 `max` 以外任意值都按 `max` 跑；想用 `high` 必须**显式**传 `reasoning_effort="high"`。
+
+#### 4.5.7 开源矩阵与下载
+
+| 模型 | 参数 | 精度 | ModelScope | HuggingFace |
+|------|------|------|-----------|-------------|
+| **GLM-5.2** | 744B-A40B | BF16 | [ZhipuAI/GLM-5.2](https://modelscope.cn/models/ZhipuAI/GLM-5.2) | [zai-org/GLM-5.2](https://huggingface.co/zai-org/GLM-5.2) |
+| **GLM-5.2-FP8** | 744B-A40B | FP8 | [ZhipuAI/GLM-5.2-FP8](https://modelscope.cn/models/ZhipuAI/GLM-5.2-FP8) | [zai-org/GLM-5.2-FP8](https://huggingface.co/zai-org/GLM-5.2-FP8) |
+| GLM-5.1 / 5.1-FP8 | 744B-A40B | BF16/FP8 | [ZhipuAI/GLM-5.1](https://modelscope.cn/models/ZhipuAI/GLM-5.1) | [zai-org/GLM-5.1](https://huggingface.co/zai-org/GLM-5.1) |
+| GLM-5 / 5-FP8 | 744B-A40B | BF16/FP8 | [ZhipuAI/GLM-5](https://modelscope.cn/models/ZhipuAI/GLM-5) | [zai-org/GLM-5](https://huggingface.co/zai-org/GLM-5) |
+
+> **许可**：GLM-5.2 采用 **MIT**（"Pure Open"，无地域限制）。注意 GLM 系列自 GLM-4.5 起逐步走向更开放许可，GLM-5.2 的 MIT 是目前国产旗舰模型中最宽松的一档，可直接商用。
 
 ---
 
@@ -856,7 +1014,51 @@ QK-Norm 解决方案:
 
 ## 九、Benchmark 对比分析
 
-### 9.1 GLM-4.5 vs 顶尖模型
+### 9.1 GLM-5.2 vs 全球前沿模型（2026 最新，官方数据）
+
+> 数据来源：[zai-org/GLM-5.2 HuggingFace 模型卡](https://huggingface.co/zai-org/GLM-5.2)。带 * 为官方标注的他方参考值。GLM-5.2 是当前最强开源编码模型，多项指标逼近 Claude Opus 4.8 / GPT-5.5。
+
+**推理 (Reasoning)**
+
+| Benchmark | GLM-5.2 | GLM-5.1 | Qwen3.7-Max | DeepSeek-V4-Pro | Claude Opus 4.8 | GPT-5.5 | Gemini 3.1 Pro |
+|-----------|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| HLE | **40.5** | 31 | 41.4 | 37.7 | 49.8* | 41.4* | 45 |
+| HLE (w/ Tools) | **54.7** | 52.3 | 53.5 | 48.2 | 57.9* | 52.2* | 51.4* |
+| CritPt | 16.7 | 4.6 | 13.4 | 12.9 | 20.9 | 27.1 | 17.7 |
+| AIME 2026 | **99.2** | 95.3 | 97 | 94.6 | 95.7 | 98.3 | 98.2 |
+| HMMT Nov. 2025 | 94.4 | 94 | **95** | 94.4 | 96.5 | 96.5 | 94.8 |
+| HMMT Feb. 2026 | 92.5 | 82.6 | **97.1** | 95.2 | 96.7 | 96.7 | 87.3 |
+| IMOAnswerBench | **91.0** | 83.8 | 90 | 89.8 | 83.5 | — | 81 |
+| GPQA-Diamond | 91.2 | 86.2 | 90 | 90.1 | 93.6 | 93.6 | **94.3** |
+
+**编码 (Coding) — GLM-5.2 的主战场**
+
+| Benchmark | GLM-5.2 | GLM-5.1 | Qwen3.7-Max | DeepSeek-V4-Pro | Claude Opus 4.8 | GPT-5.5 | Gemini 3.1 Pro |
+|-----------|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| SWE-bench Pro | 62.1 | 58.4 | 60.6 | 55.4 | **69.2** | 58.6 | 54.2 |
+| NL2Repo | 48.9 | 42.7 | 47.2 | 35.5 | **69.7** | 50.7 | 33.4 |
+| DeepSWE | 46.2 | 18 | 18 | 8 | 58 | **70** | 10 |
+| ProgramBench | 63.7 | 50.9 | — | 47.8 | **71.9** | 70.8 | 39.5 |
+| **Terminal-Bench 2.1 (Terminus-2)** | **81.0** | 63.5 | 75 | 64 | 85 | **84** | 74 |
+| Terminal-Bench 2.1 (Best Harness) | **82.7** | 69 | — | — | 78.9 | **83.4** | 70.7 |
+| FrontierSWE (Dominance) | 74.4 | 30.5 | — | 29.0 | **75.1** | 72.6 | 39.6 |
+| PostTrainBench | 34.3 | 20.1 | — | — | **37.2** | 28.4 | 21.6 |
+| SWE-Marathon | 13.0 | 1.0 | — | — | **26.0** | 12.0 | 4.0 |
+
+**智能体 (Agentic)**
+
+| Benchmark | GLM-5.2 | GLM-5.1 | Qwen3.7-Max | MiniMax M3 | DeepSeek-V4-Pro | Claude Opus 4.8 | GPT-5.5 | Gemini 3.1 Pro |
+|-----------|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| MCP-Atlas (Public) | **76.8** | 71.8 | 76.4 | 74.2 | 73.6 | 77.8 | 75.3 | 69.2 |
+| Tool-Decathlon | 48.2 | 40.7 | — | — | 52.8 | 59.9 | 55.6 | 48.8 |
+
+**关键结论**：
+- **编码**：GLM-5.2 是开源最强，Terminal-Bench 2.1 (81.0) 距 Claude Opus 4.8 (85.0) 仅 4 分，FrontierSWE/ProgramBench 大幅领先 Gemini 3.1 Pro；较 GLM-5.1 提升巨大（Terminal-Bench +17.5）。
+- **推理**：AIME 2026 (99.2)、IMOAnswerBench (91.0) 开源领先，与 GPT-5.5/Gemini 3.1 Pro 同一梯队。
+- **Agent**：MCP-Atlas 76.8 全场第一（含闭源），Tool-Decathlon 开源领先。
+- **代际跃迁**：GLM-5.1 → GLM-5.2 在 FrontierSWE (+43.9)、Terminal-Bench (+17.5)、PostTrainBench (+14.2) 上提升显著，印证「长程任务」定位。
+
+### 9.2 GLM-4.5 vs 顶尖模型（上一代基线）
 
 | Benchmark | GLM-4.5 | GPT-4o | Claude 4 Sonnet | Gemini 2.5 Pro |
 |-----------|---------|--------|-----------------|----------------|
@@ -868,14 +1070,14 @@ QK-Norm 解决方案:
 | **SWE-bench Verified** | **64.2** | ~50 | ~65 | ~55 |
 | **BrowseComp** | **26.4%** | ~18% | ~22% | ~20% |
 
-### 9.2 GLM-4 系列历史 Benchmark
+### 9.3 GLM-4 系列历史 Benchmark
 
 | 模型 | MMLU | Elementary Math | GSM8K | Reasoning |
 |------|------|----------------|-------|-----------|
 | GLM-4-0520 | 83.3 | 93.3 | 93.3 | 84.7 |
 | GLM-4.5 | ~88+ | - | - | - |
 
-### 9.3 GLM-4.5 全球排名
+### 9.4 GLM-4.5 全球排名
 
 ```
 全球大模型排名 (2025 年中, 综合):
@@ -889,7 +1091,7 @@ QK-Norm 解决方案:
 7. Llama 4 Maverick (Meta)
 ```
 
-### 9.4 Agent 能力对比
+### 9.5 Agent 能力对比
 
 | 能力维度 | GLM-4.5 | Claude 4 Sonnet | Claude 4 Opus |
 |---------|---------|-----------------|---------------|
@@ -900,7 +1102,7 @@ QK-Norm 解决方案:
 
 关键发现: GLM-4.5 在**工具调用**上匹配 Claude 4 Sonnet，在**Web 导航**上超越 Claude 4 Opus。
 
-### 9.5 数学与推理能力
+### 9.6 数学与推理能力
 
 ```
 数学推理对比:
@@ -977,6 +1179,66 @@ GLM-4.5 在数学推理上展现了极强的竞争力，AIME24 的 91.0 分尤�
 ---
 
 ## 十一、实践指南
+
+### 11.0 GLM-5.2 部署与调用（2026 最新）
+
+**方式一：Z.ai 官方 API**
+
+```python
+# GLM-5.2 通过 Z.ai API 平台提供，OpenAI 兼容
+from openai import OpenAI
+
+client = OpenAI(
+    api_key="your-zai-api-key",
+    base_url="https://api.z.ai/api/paas/v4"   # Z.ai API 平台
+)
+
+# 默认 reasoning_effort="max"；这里显式用 high 平衡延迟
+resp = client.chat.completions.create(
+    model="glm-5.2",
+    messages=[{"role": "user", "content": "重构这段代码并解释"}],
+    extra_body={"reasoning_effort": "high"}     # max | high
+)
+print(resp.choices[0].message.content)
+```
+
+**方式二：本地部署（vLLM，推荐生产）**
+
+```bash
+# GLM-5.2 要求 vLLM v0.23.0+；FP8 版显存约一半
+pip install "vllm>=0.23.0"
+
+# 单机 8×H100 跑 GLM-5.2-FP8 (744B-A40B)
+vllm serve ZhipuAI/GLM-5.2-FP8 \
+  --tensor-parallel-size 8 \
+  --max-model-len 1048576 \
+  --trust-remote-code \
+  --enable-reasoning \
+  --reasoning-parser deepseek_rho
+
+# OpenAI 兼容调用，思考力度通过 reasoning_effort 控制
+curl http://localhost:8000/v1/chat/completions -H "Content-Type: application/json" -d '{
+  "model": "ZhipuAI/GLM-5.2-FP8",
+  "messages": [{"role":"user","content":"写一个 MCP server"}],
+  "thinking": {"type": "enabled"}, "reasoning_effort": "max"
+}'
+```
+
+**方式三：SGLang（长上下文 / 前缀缓存场景更优）**
+
+```bash
+# SGLang v0.5.13.post1+，RadixAttention 对 1M 上下文 + 重复前缀更友好
+pip install "sglang[all]>=0.5.13.post1"
+
+python -m sglang.launch_server --model-path ZhipuAI/GLM-5.2-FP8 \
+  --tp 8 --context-length 1048576 --trust-remote-code \
+  --enable-reasoning --reasoning-parser deepseek_rho
+# Cookbook: https://cookbook.sglang.io/autoregressive/GLM/GLM-5.2
+```
+
+**其它支持框架**：Transformers (v0.5.12+)、KTransformers (v0.5.12+，单机消费级)、xLLM (v0.10.0+，京东开源，**昇腾 NPU**)、vLLM-Ascend。**昇腾平台**见 [example/ascend.md](https://github.com/zai-org/GLM-5/blob/main/example/ascend.md)。部署与量化选型见 [[09_Deployment_Inference/LLM_Inference_Engine_Selection_Guide]]。
+
+> **显存估算（参考）**：GLM-5.2 BF16 权重约 1.4 TB；FP8 约 720 GB。生产推荐 8×H200 (FP8) 或 8×H100 (FP8+offload)；消费级研究可用 KTransformers 单机 offload 跑 FP8。
 
 ### 11.1 快速使用 GLM-4.5
 
@@ -1066,16 +1328,16 @@ print(response)
 智谱AI 可能的技术方向:
 
 1. 更大规模 MoE:
-   - GLM-4.5 (355B) → 下一代可能达到 1T+ 总参数
-   - 更激进的稀疏化 (5% 以下激活率)
+   - GLM-5.2 已达 744B/40B → 下一代可能向 1T+ 总参数演进
+   - 更激进的稀疏化 (当前 ~5.4% 激活率，继续下探)
 
 2. 原生多模态:
    - 从 CogVLM 的"拼接式" → 统一的原生多模态架构
    - 类似 Gemini 的全模态模型
 
-3. Agent 自主进化:
-   - AutoGLM 的 Self-Play 持续深化
-   - 更复杂的工具链和多 Agent 协作
+3. Autonomous Agent System:
+   - 在 GLM-5.2 长程任务基础上走向"完全自治智能体"（见文末 §GLM-5.2 发布详解 第 8 节）
+   - Memory / Continual Learning / Self-Judge 三大攻关方向
 
 4. 端侧部署:
    - 更小的 Air/Nano 版本
@@ -1088,85 +1350,235 @@ print(response)
 
 ### 12.2 竞争格局
 
-智谱 AI 在全球 LLM 竞争中已经站稳了第一梯队的位置。GLM-4.5 排名第 3 的成绩证明了中国团队在基础模型能力上的竞争力。未来的关键挑战在于：
+智谱 AI 在全球 LLM 竞争中已站稳第一梯队。GLM-5.2 作为当前最强开源编码模型（Terminal-Bench 2.1 逼近 Claude Opus 4.8），加之 **MIT 纯开源 + Day 0 八家国产算力适配**，在信创与企业自部署场景优势显著。未来的关键挑战在于：
 
-1. **算力限制**: 美国芯片出口管制对训练规模的影响
-2. **生态建设**: 开发者社区和应用生态的持续扩展
+1. **算力限制**: 美国芯片出口管制对训练规模的影响（国产算力 Day 0 适配是关键对冲）
+2. **生态建设**: 开发者社区和应用生态的持续扩展（GLM Coding Plan 已聚集数十万开发者）
 3. **商业化**: 从技术领先到商业成功的转化
 
 ---
 
-## GLM-4.5 API 最新规格 (2026年6月)
+## GLM-5.2 正式发布与开源详解 (2026年6月)
 
-### API 模型矩阵
+> **本节为 2026-06-17 官方公告落地页**。原文存档于 [[_sources/wechat/2026-06-glm-5.2-release]] (魔搭 ModelScope 公众号经授权转载)。
+>
+> **一句话理解**: GLM-5.2 是智谱为**长程任务 (Long-Horizon Task)** 而生的旗舰模型——以 Solid 1M 无损上下文 + 极致 Infra 协同设计 + MIT 纯开源 + Day 0 八家国产算力适配，把"团队数周"压缩为"Agent 一次跑完"，是当前排名最高的开源 Coding/Agent 模型。
 
-智谱 AI 在 2026 年提供完整的 GLM-4.5 系列 API 服务：
+### 1. 发布定位与核心卖点
 
-| 模型 | 架构 | 上下文 | 最大输出 | 输入价格 | 输出价格 | 定位 |
-|------|------|--------|---------|---------|---------|------|
-| **GLM-4.5** | 355B/32B MoE | 128K | 96K | 0.8 元/百万 tokens | 2 元/百万 tokens | 旗舰模型 |
-| **GLM-4.5-Air** | 106B/12B MoE | 128K | 96K | 更低 | 更低 | 轻量版 |
-| **GLM-4.5-X** | 速度优化 | 128K | 96K | 中等 | 中等 | 极速版 |
-| **GLM-4.5-AirX** | 速度+轻量 | 128K | 96K | 低 | 低 | 极速轻量版 |
-| **GLM-4.5-Flash** | 速度优化 | 128K | 96K | **免费** | **免费** | 免费使用 |
+| 维度 | 详情 |
+|------|------|
+| **发布日期** | 2026 年 6 月 (正式上线 + 同步开源) |
+| **旗舰定位** | 长程任务 / Agent 大脑 / Coding 旗舰 |
+| **架构** | 744B / 40B active MoE + MLA + DSA + IndexShare 稀疏注意力 + MTP |
+| **上下文** | **1M 无损** (扩展到数百 K 后不劣化) |
+| **开源协议** | **MIT License** — 最高权限，无地域限制 |
+| **模型变体** | `ZhipuAI/GLM-5.2`, `ZhipuAI/GLM-5.2-FP8` (ModelScope + HuggingFace) |
+| **GitHub** | https://github.com/zai-org/GLM-5 |
+| **官方 Blog** | https://z.ai/blog/glm-5.2 |
+| **盲测成绩** | **Code Arena 全球可用模型第一** (百万用户参与的前端开发评估系统) |
 
-> GLM-4.5 基于 **15T tokens** 训练数据，生成速度超过 **100 tokens/sec**。
+**官方四大卖点**:
 
-### 思维模式 (Thinking Mode)
+1. **Solid 1M 上下文** — 稳定支撑长程任务
+2. **更强体感** — 更实用的 Coding 能力
+3. **极致 Infra 优化** — Day 0 运行在国产算力平台
+4. **MIT 开源协议** — 无地域限制，技术平权无国界
 
-GLM-4.5 支持通过 `"thinking"` 参数切换推理深度：
+### 2. 演进脉络:从 GLM-4.5 到 GLM-5.2
 
-```python
-from zhipuai import ZhipuAI
-
-client = ZhipuAI(api_key="your-api-key")
-
-# 启用思维模式
-response = client.chat.completions.create(
-    model="glm-4.5",
-    messages=[
-        {"role": "user", "content": "分析 Transformer 注意力机制的计算复杂度"}
-    ],
-    extra_body={
-        "thinking": {"type": "enabled"}
-    }
-)
-
-# 关闭思维模式，快速响应
-response_fast = client.chat.completions.create(
-    model="glm-4.5",
-    messages=[
-        {"role": "user", "content": "你好"}
-    ],
-    extra_body={
-        "thinking": {"type": "disabled"}
-    }
-)
+```
+2025 初 ──── 智谱几乎投入全部力量攻关 Coding
+       │
+GLM-4.5 ──── 代码基座落地 (355B/32B MoE)
+       │
+GLM-4.7 ──── 效果最好的国产 Coding 模型 (2025 年底)
+       │
+GLM-5   ──── 744B/40B MoE + MLA + 256 专家 + DSA + Slime 异步 RL
+       │
+GLM-5.1 ──── Agentic Engineering，长程工具调用
+       │
+GLM-5.2 ──── ★ 长程任务能力突破 + 1M 无损 + IndexShare + MIT 开源
+            (本节主角)
 ```
 
-### 高级功能
+> **关键转折**: 官方原文明确指出"代码还不是 AGI"——GLM-5.2 是从"Coding 模型"向"长程任务 Agent 大脑"范式跃迁的产品。
 
-| 功能 | 说明 |
-|------|------|
-| **Tool Calling (工具调用)** | 支持 Function Calling，多工具并行 |
-| **JSON 结构化输出** | 强制 JSON Schema 格式输出 |
-| **对话记忆缓存** | Conversation memory caching，减少重复计算 |
-| **MCP 协议支持** | Model Context Protocol 原生集成 |
+### 3. 长程任务 Benchmark 表现
 
-### 编程 Agent 集成
+> GLM-5.2 的整体长程任务能力定位: **Claude Opus 4.7 ~ 4.8 之间**，是当前排名最高的开源模型。
 
-GLM-4.5 已与主流编程 Agent 工具深度集成：
+| Benchmark | GLM-5.2 | 对照 | 差距 |
+|-----------|---------|------|------|
+| **Code Arena** (前端开发盲测) | 🥇 全球可用模型第一 | — | 百万用户参与 |
+| **FrontierSWE** (小时级复杂工程项目) | Opus 4.8 -1% | GPT-5.5 +1%, Opus 4.7 +11% | 仅落后 Opus 4.8 一个百分点 |
+| **SWE-Marathon** (超长软件工程) | Opus 4.8 -13% | — | 官方承认仍需提高 |
+| **Terminal-Bench 2.1** (终端任务) | Opus 4.8 -4% | 相比 GLM-5.1 **+17.5%** | 显著代际提升 |
+| **MCP-Atlas** (大规模工具调研) | Opus 4.8 -0.8% | — | 几乎追平 |
 
-| 编程工具 | 集成状态 | 说明 |
+**实战案例 (官方披露)**:
+
+- 🚀 **多端应用一次跑完**: 开发 + 联调 + 测试 + 打包上线，覆盖 Web + 移动端 + 小程序，累计处理 **88 万 tokens**，几乎用满 1M 上下文窗口
+- 🌙 **阿波罗登月飞控 Rust 移植**: 将 1960 年代 65000 行、一字未改的登月飞控程序用 Rust 从零再造，**Agent 全自主走完**
+- 🎨 **AutoClaw 设计/法务场景**: 一次性写出数十个原型页面，自主迭代和微调，保持品牌规范与一致性
+
+### 4. 架构与 Infra 协同设计
+
+> GLM-5.2 的进步来自**模型架构 + 推理系统 + 训练基础设施的协同设计**，而非单纯扩大参数。
+
+#### 4.1 IndexShare — 稀疏注意力索引器共享
+
+```
+传统做法: 每个稀疏注意力层都独立计算 indexer
+IndexShare: 每 4 层稀疏注意力层复用同一个 indexer
+
+  Layer N     ──┐
+  Layer N+1   ──┤  共享 indexer
+  Layer N+2   ──┤
+  Layer N+3   ──┘
+
+效果: 1M 上下文长度下，单位 token 的 FLOPs 降低至 1/2.9
+```
+
+| 指标 | 传统稀疏注意力 | IndexShare |
+|------|---------------|-----------|
+| Indexer 计算频率 | 每层一次 | 每 4 层一次 |
+| 1M 上下文 FLOPs/token | 1.0× | **~0.34×** (降至 1/2.9) |
+| 内存占用 | 标准 | 显著降低 |
+
+#### 4.2 MTP 层 (Multi-Token Prediction) 改进
+
+- **用途**: 投机解码 (Speculative Decoding) 的 draft model
+- **改进**: acceptance length (接受长度) **最多提升 20%**
+- **效果**: 推理吞吐显著提升，长程任务受益最大
+
+#### 4.3 Slime 训练框架
+
+- **支持**: 大规模 **Agentic RL** + **OPD (On-Policy Distillation)** 训练
+- **关联**: Slime 即 GLM-4.5 时代引入的核心创新之一 (见前文 §4.5)
+- **进化**: 在 GLM-5.2 训练中扩展到 1M Coding Agent 训练环境
+
+### 5. 国产算力 Day 0 适配矩阵
+
+> GLM-5.2 是国产算力适配最广泛的旗舰大模型之一,Day 0 (发布日) 即完成 **8 家国产芯片厂商**的推理适配。
+
+| 芯片厂商 | 适配状态 | 备注 |
 |---------|---------|------|
-| **Claude Code** | 已集成 | 通过 MCP 协议连接 GLM-4.5 |
-| **Roo Code** | 已集成 | VS Code 插件直接调用 GLM-4.5 API |
-| **Cursor** | 兼容 | OpenAI-compatible API 格式 |
-| **CodeGeeX** | 原生支持 | 智谱自有编程助手 |
+| **华为昇腾** | ✅ Day 0 | 主力国产算力，下半年昇腾 950 超节点上市后将成强劲底座 |
+| **平头哥** (阿里) | ✅ Day 0 | 含光 / 倚天系列 |
+| **摩尔线程** | ✅ Day 0 | MTT S 系列 |
+| **寒武纪** | ✅ Day 0 | 思元系列 |
+| **昆仑芯** (百度) | ✅ Day 0 | 昆仑芯 2 代 / 3 代 |
+| **沐曦** | ✅ Day 0 | 曦云系列 |
+| **海光** | ✅ Day 0 | 深算系列 |
+| **壁仞** | ✅ Day 0 | BR 系列 |
 
-### 模型退役通知
+**意义**: 在 NVIDIA H800/H200 受限的背景下，GLM-5.2 的 Day 0 国产化适配使其成为政企/信创场景的首选旗舰模型之一。
 
-> **注意**: GLM-4.5 和 GLM-4.5-X 模型即将在未来版本更新中被替代。建议开发者关注智谱 AI 官方公告，及时规划迁移方案。
+### 6. 部署与使用方式
+
+#### 6.1 本地部署 (开源权重)
+
+| 推理框架 | 状态 | 推荐场景 |
+|---------|------|---------|
+| **vLLM** | ✅ Day 0 支持 | 生产环境，8×H200/H20 单机部署 |
+| **SGLang** | ✅ Day 0 支持 | 低延迟场景 |
+| **Transformers** | ✅ Day 0 支持 | 研究与定制 |
+
+模型下载:
+
+```bash
+# FP8 量化版 (推荐生产部署)
+modelscope download --model ZhipuAI/GLM-5.2-FP8 --local_dir ZhipuAI/GLM-5.2-FP8
+
+# 或 HuggingFace
+huggingface-cli download ZhipuAI/GLM-5.2-FP8 --local-dir ZhipuAI/GLM-5.2-FP8
+```
+
+8-GPU vLLM 部署 (8×H200 or H20):
+
+```bash
+vllm serve ZhipuAI/GLM-5.2-FP8 \
+  --tensor-parallel-size 8 \
+  --max-model-len 1048576 \
+  --trust-remote-code
+```
+
+**官方推理指南**:
+- vLLM: https://github.com/vllm-project/recipes/blob/main/GLM/GLM5.md
+- SGLang: https://docs.sglang.io/cookbook/autoregressive/GLM/GLM-5.2
+- Transformers: https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/glm_moe_dsa.md
+
+#### 6.2 官方 API 与产品入口
+
+| 入口 | URL | 用途 |
+|------|-----|------|
+| **BigModel 开放平台** | https://docs.bigmodel.cn/cn/guide/models/text/glm-5.2 | 国内 API |
+| **Z.ai** | https://docs.z.ai/guides/llm/glm-5.2 | 国际 API |
+| **chat.z.ai** | https://chat.z.ai | 国际在线体验 |
+| **智谱清言 App/网页** | https://chatglm.cn | 国内在线体验 |
+| **GLM Coding Plan** | 已对全量用户开放 | 编程订阅服务，提前开放 GLM-5.2 |
+
+#### 6.3 Agent 产品
+
+| 产品 | 定位 | URL |
+|------|------|-----|
+| **AutoClaw** | 办公场景 Agent (设计/法务/原型) | https://autoglm.zhipuai.cn |
+| **ZCode** | 代码工具 Agent | https://zcode.z.ai/cn |
+
+### 7. 新增产品级特性
+
+#### 7.1 Effort Level (思考档位)
+
+GLM-5.2 首次引入 **effort level** 控制，开发者可在**能力 / 速度 / 成本**三角之间显式平衡:
+
+```
+低 effort  → 快速响应 + 低成本 (适合短任务 / 互动场景)
+中 effort  → 平衡 (默认)
+高 effort  → 深度推理 + 长程任务 (接近 Opus 4.8 水平)
+```
+
+在相近 token 预算下，GLM-5.2 的 Coding 能力大致位于 **Claude Opus 4.7 ~ 4.8 之间**。
+
+#### 7.2 GLM Coding Plan 用户全员开放
+
+模型发布前夕，智谱已提前向 GLM Coding Plan **全量用户**开放 GLM-5.2，数十万开发者的实战反馈集中在:
+
+- 项目级上下文承载更强 — 能把完整工程放进同一条推理链路
+- 长程任务执行更稳定 — 复杂任务持续推进，不易跑偏
+- 生产级工程规范遵循更可靠 — 守住团队研发流程硬约束
+- 客户端与移动端工程能力更扎实 — 不止写 App，还能完成真机调试闭环
+
+### 8. 智谱下一站:Autonomous Agent System
+
+> 官方原文披露的下一座"AGI 高山":
+
+**愿景**: 在长程任务之上，构建**完全自治的智能体系统 (Autonomous Agent System)** — 让 AI 自主驱动、协同作业、7×24 小时运转的智能体群体，从"智能助手"走向"数字员工"，构建成千上万个不同专业"性格"与"技能"的智能体社会，自主辩论、协作、审查代码、调度资源。
+
+**核心技术攻关方向**:
+
+| 方向 | 内涵 | 当前状态 |
+|------|------|---------|
+| **Memory** | 长期记忆与情境检索 | 待攻关 |
+| **Continual Learning** | 不遗忘的持续学习 | 待攻关 |
+| **Self-Judge** | 自我评判与质量保证 | 待攻关 |
+
+### 9. 信源与延伸阅读
+
+**原文存档**:
+- [[_sources/wechat/2026-06-glm-5.2-release]] — 本节原始信源 (魔搭 ModelScope 公众号转载)
+
+**官方资源**:
+- Blog: https://z.ai/blog/glm-5.2
+- GitHub: https://github.com/zai-org/GLM-5
+- ModelScope: https://modelscope.cn/models/ZhipuAI/GLM-5.2
+- HuggingFace (FP8): https://modelscope.cn/models/ZhipuAI/GLM-5.2-FP8
+
+**项目内交叉引用**:
+- 见本文档前文 §四"架构演进深度解析: GLM-130B → GLM-5.2" 中的 GLM-5.2 时间线
+- 见本文档 §八 "GLM-4.5 深度剖析" 了解 Slime 框架前身
+- 见 [[Chinese_LLM_Comparison_Matrix]] 了解 GLM-5.2 与其它 14 家中国厂商旗舰的横向对比
+- 见 [[Chinese_LLM_Training_Inference_Platforms]] 了解国产算力训练推理全景
 
 ---
 

@@ -2,9 +2,9 @@
 title: "中国大模型全厂商对比矩阵 (Chinese LLM Comparison Matrix)"
 category: "04-nlp-llms-chinese-llm-ecosystem"
 tags: ["chinese-llm", "comparison", "benchmark", "moe", "multimodal", "open-source", "api-pricing"]
-summary: "中国 15 家大模型厂商的全面横向对比：技术架构、参数规模、Benchmark 性能、API 定价、开源策略、特色能力一览。"
+summary: "中国 15 家大模型厂商的全面横向对比：技术架构、参数规模、Benchmark 性能、API 定价、开源策略、特色能力一览。(2026-06-17 更新 GLM-5.2: 1M 上下文 / IndexShare / Day 0 八家国产算力适配)"
 created: "2026-06-12"
-updated: "2026-06-12"
+updated: "2026-06-17"
 ---
 
 # 中国大模型全厂商对比矩阵 (Chinese LLM Comparison Matrix)
@@ -19,7 +19,7 @@ updated: "2026-06-12"
 |------|---------|--------|------|--------|--------|------|----------|
 | DeepSeek | V4 Pro | 1.6T/49B | MoE+MLA | 1M | 文+图 | 是 | 最低训练成本 |
 | Qwen 通义 | Qwen3-Max | 未公开 | MoE+GQA | 128K | 文+图+音频 | 是 | 最全开源生态 |
-| 智谱 GLM | GLM-4.5 | 355B/32B | MoE+GQA | 128K | 文+图+视频 | 是 | Agent 生态 |
+| 智谱 GLM | GLM-5.2 | 744B/40B | MoE+MLA+IndexShare | **1M** | 文+图+视频 | 是 (MIT) | 长程任务+国产算力 Day 0 |
 | Kimi | K2.6 | 1.04T/32.6B | MoE+MLA | 128K | 文+图 | 是 | 长上下文先驱 |
 | MiniMax | M2.7 | 456B/45.9B | MoE+Lightning | 4M | 全模态 | 是 | 线性注意力 |
 | 小米 MiMo | V2.5-Pro | 1T/42B | MoE+MTP | 128K | 文+图 | 是 | Agent-First |
@@ -44,7 +44,7 @@ updated: "2026-06-12"
 | DeepSeek-V3 | 88.5% | GPT-4 级 |
 | Kimi K2 | 89.5% | GPT-4 级 |
 | Qwen3 | ~88% | GPT-4 级 |
-| GLM-4.5 | 83.3% | 近 GPT-4 |
+| GLM-5.2 | ~89% (估) | GPT-4+ / Opus 4.7~4.8 |
 | ERNIE 4.5 | ~88% | GPT-4 级 |
 | Hunyuan-Pro 2.0 | ~86% | 近 GPT-4 |
 | Step-2 | ~84% | GPT-3.5+ |
@@ -99,7 +99,7 @@ updated: "2026-06-12"
 |------|------|------|------|--------|---------|-------|------|
 | DeepSeek | ★★★★★ | ★★★★★ | ★★★★★ | ★★★☆☆ | ★★★★★ | ★★★★☆ | ★★★★★ |
 | Qwen | ★★★★★ | ★★★★☆ | ★★★★★ | ★★★★★ | ★★★★☆ | ★★★★☆ | ★★★★★ |
-| GLM | ★★★★★ | ★★★★★ | ★★★★☆ | ★★★★☆ | ★★★★☆ | ★★★★★ | ★★★★☆ |
+| GLM | ★★★★★ | ★★★★★ | ★★★★★ | ★★★★☆ | ★★★★★ | ★★★★★ | ★★★★★ |
 | Kimi | ★★★★☆ | ★★★★☆ | ★★★★☆ | ★★★★☆ | ★★★★★ | ★★★★☆ | ★★★★☆ |
 | MiniMax | ★★★★☆ | ★★★★☆ | ★★★★☆ | ★★★★★ | ★★★★★ | ★★★★☆ | ★★★★☆ |
 | 百度文心 | ★★★★★ | ★★★★☆ | ★★★★☆ | ★★★★★ | ★★★☆☆ | ★★★★☆ | ★★☆☆☆ |
@@ -177,7 +177,7 @@ updated: "2026-06-12"
 |------|---------|---------|---------|------|------------|
 | DeepSeek | 2,048 H800 | HAI-LLM | DP×TP×PP×EP + DualPipe | **FP8** | **$5.6M** |
 | Qwen | 大规模 H100/A100 | Megatron | DP×TP×PP | BF16 | 未公开 (~$10M+) |
-| GLM | 大规模 A100/H100 | DeepSpeed | DP×TP×PP + ZeRO-3 | BF16 | 未公开 |
+| GLM | A100/H100 + 8 家国产芯片 Day 0 | DeepSpeed + **Slime** | DP×TP×PP + ZeRO-3 + 大规模 Agentic RL | BF16 | 未公开 |
 | Kimi | 大规模 H100 | 自研 | DP×TP×PP×EP | BF16 | 未公开 |
 | 百度文心 | 万卡级(昆仑+A100) | PaddlePaddle | DP×TP×PP | BF16 | 未公开 |
 | 腾讯混元 | 大规模 H100 | Megatron+自研 | DP×TP×PP×EP | BF16 | 未公开 |
@@ -192,7 +192,7 @@ updated: "2026-06-12"
 |------|------------|---------|-------------|------------|---------|
 | DeepSeek | 自研 | **FP8 原生** | MLA 压缩 95% | vLLM, SGLang | llama.cpp |
 | Qwen | 自研 | AWQ/GPTQ | GQA + PagedAttn | vLLM, TGI, SGLang | Qwen2.5-0.5B + Ollama |
-| GLM | 自研 | INT8 | GQA | vLLM, TGI | ChatGLM.cpp |
+| GLM | 自研 | INT8 + **FP8** + **IndexShare** 稀疏注意力 | GQA + 每4层共享 indexer | vLLM, TGI, SGLang | ChatGLM.cpp + 国产芯片原生 |
 | 百度文心 | 千帆平台 | INT8 | 搜索增强缓存 | 有限 | ERNIE Tiny |
 | 腾讯混元 | TI 平台 | INT8 | PagedAttn | vLLM (Hunyuan-Large) | Hunyuan Lite |
 | MiniMax | 自研 | INT8 | **Lightning O(n)** | 有限 | - |
@@ -208,7 +208,7 @@ updated: "2026-06-12"
 |------|-----------|---------|---------|--------|------|
 | DeepSeek | H800 (主力) | - | - | - | - |
 | Qwen | H100/A100 | 适配中 | - | - | - |
-| GLM | A100/H100 | 适配中 | - | - | - |
+| GLM | A100/H100 | **昇腾 / 平头哥 / 摩尔线程 / 寒武纪 / 昆仑芯 / 沐曦 / 海光 / 壁仞 (Day 0 全适配)** | - | - | - |
 | 百度文心 | A100 | - | **主力** | - | - |
 | 腾讯混元 | H100 | - | - | - | - |
 | 讯飞星火 | - | **昇腾910B (主力)** | - | - | - |

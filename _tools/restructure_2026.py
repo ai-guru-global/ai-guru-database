@@ -69,6 +69,8 @@ NESTED_RENAME = {
 # 顶层遍历排除目录（供 _count_refs / rewrite_links 使用）
 _EXCLUDE_DIRS = {'.git', 'Web', 'node_modules', '.venv', '.qoder',
                  '.obsidian', '.github', '__pycache__'}
+# rewrite_links 额外排除：_raw 含外部 URL 路径不可改，docs/superpowers 记录映射规则本身
+_REWRITE_SKIP_DIRS = {'_raw', 'superpowers'}
 
 
 # === 重写规则构造 ===
@@ -203,11 +205,17 @@ def rename(commit=True):
 # === Phase C: rewrite-links ===
 
 def rewrite_links_in_file(filepath):
-    """对单个 .md 文件应用重写规则，仅作用于 [[...]] 与 ](... ) 内的路径。
+    """对单个 .md 文件应用重写规则。
 
-    使用边界匹配 (?<![A-Za-z0-9_]) 和 (?![A-Za-z0-9_]) 防止部分匹配。
-    按规则表（最长前缀优先）依次替换。
-    返回是否发生了修改。
+    覆盖四种路径出现形式：
+      1. wikilink [[...]] 内
+      2. markdown 链接 ](...) 内（含链接文本 [text] 部分）
+      3. 反引号内联代码 `...` 与 frontmatter sources: 字段内的路径
+      4. 任意位置的「带斜杠完整路径」old + "/"（如表格、注释、shell 命令）
+
+    第 4 类只匹配后接 "/" 的旧路径片段，避免误伤纯章节名叙述性提及
+    （如 "04_NLP_LLMs 章节讨论了..."）。
+    边界匹配 (?<![A-Za-z0-9_]) 防止 104_NLP_LLMs 等误伤。
     """
     rules = build_rewrite_rules()
     path_obj = Path(filepath)
@@ -217,7 +225,7 @@ def rewrite_links_in_file(filepath):
     for old, new in rules:
         if old == new:
             continue
-        # 边界：旧路径左侧/右侧不能是 [A-Za-z0-9_]，避免误伤 104_NLP_LLMs 等
+        # 边界：旧路径左侧不能是 [A-Za-z0-9_]，避免误伤 104_NLP_LLMs 等
         pattern = re.compile(
             r"(?<![A-Za-z0-9_])" + re.escape(old) + r"(?![A-Za-z0-9_])"
         )
@@ -227,8 +235,19 @@ def rewrite_links_in_file(filepath):
 
         # [[wiki links]]
         text = re.sub(r"\[\[[^\]]+\]\]", _replace_in_links, text)
-        # [text](link) —— 只替换括号内
-        text = re.sub(r"\]\([^)]+\)", _replace_in_links, text)
+        # [text](link) —— 整个链接结构（含链接文本与目标）
+        text = re.sub(r"\[[^\]]*\]\([^)]+\)", _replace_in_links, text)
+        # `inline code` 内的路径
+        text = re.sub(r"`[^`\n]+`", _replace_in_links, text)
+        # frontmatter sources: [a, b] 字段内的路径
+        text = re.sub(r"sources:\s*\[[^\]]+\]", _replace_in_links, text)
+
+        # 任意位置的「带斜杠完整路径」：old 后紧跟 /
+        # 覆盖表格单元格、代码注释、shell 命令、问答里的裸路径
+        slash_pat = re.compile(
+            r"(?<![A-Za-z0-9_])" + re.escape(old) + r"/"
+        )
+        text = slash_pat.sub(new + "/", text)
 
     if text != original:
         path_obj.write_text(text, encoding="utf-8")
@@ -237,15 +256,22 @@ def rewrite_links_in_file(filepath):
 
 
 def rewrite_links():
-    """Phase C：遍历全库 .md 文件，重写 wikilink 与 md 内链。"""
+    """Phase C：遍历全库 .md 文件，重写 wikilink、md 内链、反引号与 sources 字段。
+
+    跳过 _raw（含外部 URL 路径）与 docs/superpowers（记录映射规则本身）。
+    """
     changed_files = 0
     for root, dirs, files in os.walk(REPO_ROOT):
         dirs[:] = [d for d in dirs if d not in _EXCLUDE_DIRS
                    and not d.startswith('.')]
+        # 跳过 _raw 和 docs/superpowers 下的文件
+        root_path = Path(root)
+        if any(part in _REWRITE_SKIP_DIRS for part in root_path.parts):
+            continue
         for fn in files:
             if not fn.endswith('.md'):
                 continue
-            fp = Path(root) / fn
+            fp = root_path / fn
             if rewrite_links_in_file(fp):
                 changed_files += 1
     print(f"rewrite-links 完成：{changed_files} 个文件被修改")

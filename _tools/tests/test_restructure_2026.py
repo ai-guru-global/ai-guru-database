@@ -18,16 +18,23 @@ spec.loader.exec_module(rs)
 # === Task 1: 映射表完备性 ===
 
 def test_top_level_rename_covers_all_main_chapters():
-    """映射表必须覆盖全部现有主章节（00-23，排除 90-94 拓展目录）。"""
+    """映射表必须覆盖全部现有主章节（00-21，排除 90-94 拓展目录）。
+
+    rename 前实际目录是旧名（匹配键），rename 后是新名（匹配值）。
+    本测试在两个阶段都成立：实际目录应等于映射表的键集合 或 值集合。
+    """
     actual_dirs = {
         d.name for d in Path(rs.REPO_ROOT).iterdir()
         if d.is_dir() and len(d.name) > 3 and d.name[:2].isdigit()
         and not d.name.startswith("9")
     }
-    assert set(rs.TOP_LEVEL_RENAME.keys()) == actual_dirs, (
-        f"映射表键与实际主章节目录不一致。\n"
-        f"缺少: {actual_dirs - set(rs.TOP_LEVEL_RENAME.keys())}\n"
-        f"多余: {set(rs.TOP_LEVEL_RENAME.keys()) - actual_dirs}"
+    old_names = set(rs.TOP_LEVEL_RENAME.keys())
+    new_names = set(rs.TOP_LEVEL_RENAME.values())
+    assert actual_dirs == old_names or actual_dirs == new_names, (
+        f"实际主章节目录既不匹配映射表旧名也不匹配新名。\n"
+        f"实际: {sorted(actual_dirs)}\n"
+        f"旧名: {sorted(old_names)}\n"
+        f"新名: {sorted(new_names)}"
     )
 
 

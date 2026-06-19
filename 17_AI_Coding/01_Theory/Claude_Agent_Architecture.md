@@ -50,6 +50,8 @@ Anthropic 工程实践总结的五个基础构建块：
 
 ### 2.2 ReAct 模式
 
+> ReAct 的完整原理、三要素循环、生产护栏详见 [[Agentic_AI_Complete_Guide#3.3-react-推理与行动的统一]]。
+
 最经典的 Agent 模式：**行动之前先思考，行动之后看结果。**
 
 ```
@@ -237,48 +239,13 @@ Agent 排错的关键区分：
 
 ## 五、Extended Thinking 深度推理
 
-### 5.1 System 1 vs System 2
+> 模型支持矩阵（Adaptive/Extended Thinking）、effort 级别选择、成本公式与 ROI 决策框架详见 [[Claude_Complete_Guide#八extended-thinking-与-adaptive-thinking]]。此处仅保留对 Agent 架构的影响。
 
-| 模式 | 特征 | 示例 |
-|------|------|------|
-| **System 1（快思考）** | 直觉式反应 | "2+2=?" → "4" |
-| **System 2（慢思考）** | 逻辑推理，逐步验证 | "3491x231" → 列竖式 → "806421" |
-
-### 5.2 模型支持矩阵
-
-| 模型 | Adaptive Thinking | Extended Thinking | 控制方式 |
-|------|------------------|-------------------|---------|
-| Fable 5 | 常开不可关闭 | 不支持 | `output_config.effort` |
-| Opus 4.8/4.7 | 支持 | 不支持 | `output_config.effort` |
-| Sonnet 4.6 | 推荐 | 已弃用但可用 | `output_config.effort` |
-| Haiku 4.5 | 不支持 | 支持 | `budget_tokens` |
-
-### 5.3 effort 级别选择
-
-| 级别 | 适用场景 |
-|------|---------|
-| `low` | 简单任务，可能跳过思考 |
-| `medium` | 中等复杂度 |
-| `high`（默认） | 复杂推理 |
-| `xhigh` / `max` | 极端复杂 / Agentic 编码 |
-
-### 5.4 成本优化
-
-**核心公式**：
-```
-总成本 = Input Tokens x 输入单价 + (Thinking Tokens + Output Tokens) x 输出单价
-```
-
-**ROI 决策**：
-```
-是否值得 = 节省的重试成本 + 减少的人工成本 + 降低的故障成本
-           是否大于 Thinking Tokens x 输出单价
-```
-
-### 5.5 对 Agent 架构的影响
+### 5.1 对 Agent 架构的影响
 
 - **减少外部 Loop**：将部分规划与校验内化为一次更强的 Thinking Call
 - **混合策略**：Planner/Reviewer 开启 Thinking，Executor 使用快速模式
+- **System 1 vs System 2**：简单任务用快思考（直觉式反应），复杂任务用慢思考（逻辑推理、逐步验证）
 
 ---
 

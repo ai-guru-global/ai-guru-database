@@ -200,6 +200,8 @@ spec:
 
 ## 6. MIG 切片、RDMA 与多厂商混合
 
+> 🔗 MIG 的完整原理（GI/CI/CE/CU、A100/H100 profile、ppu-smi/nvidia-smi 操作、K8s GPU Operator 策略）见专题 [[12_Architecture_Infrastructure/MIG_Deep_Dive]]；本节聚焦 MIG 切片如何通过 CDI 透传进容器。
+
 CDI 的声明式模型尤其擅长三种场景：
 
 - **MIG（Multi-Instance GPU）**: 一块 H100 切成 7 份，每份是一个独立 CDI device（如 `nvidia.com/mig-1g.10gb=0`），不同 Pod 拿到隔离的推理实例，互不影响。

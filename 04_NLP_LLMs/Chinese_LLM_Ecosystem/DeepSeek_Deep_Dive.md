@@ -1,10 +1,10 @@
 ---
 title: "DeepSeek (深度求索) 技术深度解析"
 category: 04-nlp-llms-chinese-llm
-tags: [deepseek, chinese-llm, moe, mla, grpo, reasoning, fp8-training, r1, v3, v4, open-source]
-summary: "全面剖析 DeepSeek 从 7B Dense 到 V4 万亿参数 MoE 的完整技术演进：Multi-head Latent Attention (MLA)、DeepSeekMoE 路由、FP8 混合精度训练、GRPO 强化学习算法、Multi-token Prediction (MTP) 以及 R1 推理模型的自进化机制。"
+tags: [deepseek, chinese-llm, moe, mla, grpo, reasoning, fp8-training, r1, v3, v4, open-source, deepseek-v4, csa, hca, mhc, muon, hybrid-attention]
+summary: "全面剖析 DeepSeek 从 7B Dense 到 V4 系列（V4-Pro 1.6T-A49B / V4-Flash 284B-A13B，1M 上下文）的完整技术演进：MLA 注意力压缩、DeepSeekMoE 路由、FP8/FP4+FP8 混合精度训练、GRPO 强化学习、R1 自进化推理，以及 V4 的 Hybrid Attention (CSA+HCA)、Manifold-constrained Hyper-Connections (mHC)、Muon 优化器与三档思考力度（Non-think/High/Max）。"
 created: 2026-06-01
-updated: 2026-06-01
+updated: 2026-06-16
 ---
 
 # DeepSeek (深度求索) 技术深度解析
@@ -125,7 +125,9 @@ timeline
         DeepSeek-OCR : 2025-Q4 : 视觉文本压缩 OCR
         DeepSeek-V3.2 : 2025-Q3 : DSA 稀疏注意力
     section 2026
-        DeepSeek-V4 : 2026-04 : 1.6T Pro / 284B Flash
+        DeepSeek-V4-Pro : 2026-04 : 1.6T-A49B CSA+HCA+mHC Muon 1M
+        DeepSeek-V4-Flash : 2026-04 : 284B-A13B CSA+HCA+mHC Muon 1M
+        V4-Pro-Max : 2026-04 : Max-Reasoning 开源 SOTA
 ```
 
 ### 2.2 模型参数演进表
@@ -147,8 +149,9 @@ timeline
 | 2025-01 | Janus-Pro | — | 增强版 Janus | — | — | 增强多模态生成 |
 | 2025 Q3-Q4 | DeepSeek-V3.2 / V3.2-Exp | — | DSA 稀疏注意力 | 扩展长上下文 | — | Agentic 训练, Reasoning-first |
 | 2025 Q4 | DeepSeek-OCR | 3B-MoE decoder | DeepEncoder + MoE | — | — | 视觉文本压缩 |
-| 2026-04 | **DeepSeek-V4 Pro** | **1.6T total, 49B active** | **CSA + HCA + mHC** | **1M** | **32T+ tokens** | **混合压缩注意力, 自适应推理** |
-| 2026-04 | **DeepSeek-V4 Flash** | **284B total, 13B active** | **CSA + HCA + mHC** | **1M** | **32T+ tokens** | **高效版, Muon 优化器** |
+| 2026-04 | **DeepSeek-V4-Pro** | **1.6T total, 49B active** | **Hybrid Attention (CSA+HCA) + mHC + MoE** | **1M** | **32T+ tokens** | **FP4+FP8 混合精度, Muon 优化器, 三档推理 (Non-think/High/Max)** |
+| 2026-04 | **DeepSeek-V4-Flash** | **284B total, 13B active** | **Hybrid Attention (CSA+HCA) + mHC + MoE** | **1M** | **32T+ tokens** | **高效版, FP4+FP8 混合精度, 单 token FLOPs ≈ V3.2 的 27%** |
+| 2026-04 | **DeepSeek-V4-Pro-Max** | (V4-Pro Max-Reasoning) | — | ≥384K 上下文 | — | **当前最强开源模型, LiveCodeBench 93.5 / Codeforces 3206** |
 
 ### 2.3 模型命名规则
 
@@ -662,6 +665,176 @@ def speculative_decode(main_model, mtp_module, prompt, max_tokens=100):
 # 加速比: 通常 2-3x (取决于 draft 接受率)
 ```
 
+### 3.6 DeepSeek-V4 系列：万亿参数 + 混合稀疏注意力 + 1M 上下文（2026）
+
+> **代际跃迁**：V4 是 DeepSeek 自 V3 以来最大幅度的架构换代——总参数从 671B 跃升至 **1.6T (Pro) / 284B (Flash)**，上下文从 128K 拉到 **1M**，注意力机制从 V3 的 MLA 单一路线升级为 **Hybrid Attention (CSA + HCA)**，并引入 **Manifold-constrained Hyper-Connections (mHC)** 与 **Muon 优化器** 三项核心创新。V4 也是首批把 1M 上下文做"可承担"的开源旗舰——在 1M 上下文下，V4-Pro 单 token 推理 FLOPs 仅为 V3.2 的 **27%**，KV cache 仅 **10%**。
+>
+> 技术报告 PDF：[DeepSeek_V4.pdf](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro/blob/main/DeepSeek_V4.pdf) · 模型卡：[deepseek-ai/DeepSeek-V4-Pro](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro) · 引用键：`deepseekai2026deepseekv4`
+
+#### 3.6.1 双模型矩阵：V4-Pro 与 V4-Flash
+
+```
+DeepSeek-V4 产品线 (2026-04, MIT 许可, 1M 上下文)
+═══════════════════════════════════════════════════════════════════
+
+┌──────────────┬──────────────┬──────────────┬────────────────────────┐
+│    模型       │  总参/激活    │   精度        │       定位             │
+├──────────────┼──────────────┼──────────────┼────────────────────────┤
+│ V4-Pro       │ 1.6T / 49B   │ FP8 Mixed    │ 旗舰: 最强开源模型     │
+│              │              │ (Base)        │ (官方定性)             │
+│              │              │ FP4+FP8 Mixed│                        │
+│              │              │ (final)       │                        │
+├──────────────┼──────────────┼──────────────┼────────────────────────┤
+│ V4-Flash     │ 284B / 13B   │ FP8 Mixed    │ 高效版: 性价比优先     │
+│              │              │ (Base)        │ V4-Flash-Max 可接近    │
+│              │              │ FP4+FP8 Mixed│ Pro 的推理水平         │
+│              │              │ (final)       │                        │
+├──────────────┼──────────────┼──────────────┼────────────────────────┤
+│ V4-Pro-Base  │ 1.6T / 49B   │ FP8 Mixed    │ 基座 (无 Instruct)     │
+│ V4-Flash-Base│ 284B / 13B   │ FP8 Mixed    │ 基座 (无 Instruct)     │
+└──────────────┴──────────────┴──────────────┴────────────────────────┘
+
+注: FP4+FP8 Mixed = MoE 专家参数走 FP4, 其余多数参数走 FP8
+   → 同等显存下可承载更大参数规模, 几乎无损精度
+```
+
+| 维度 | V3 (前代) | **V4-Pro** | **V4-Flash** |
+|------|-----------|------------|--------------|
+| 总参数 | 671B | **1.6T** (~2.4×) | 284B (~0.42×) |
+| 激活参数 | 37B | **49B** (1.32×) | **13B** (0.35×) |
+| 上下文 | 128K | **1M** (8×) | **1M** (8×) |
+| 注意力 | MLA + DSA | **CSA + HCA** (Hybrid) | **CSA + HCA** (Hybrid) |
+| 残差连接 | 标准 | **mHC** | **mHC** |
+| 优化器 | AdamW | **Muon** | **Muon** |
+| 精度 (final) | FP8 | **FP4 + FP8 Mixed** | **FP4 + FP8 Mixed** |
+| 训练数据 | 14.8T | **32T+** | **32T+** |
+| 1M 单 token FLOPs vs V3.2 | — | **27%** | **27%** |
+| 1M KV cache vs V3.2 | — | **10%** | **10%** |
+
+#### 3.6.2 Hybrid Attention 深度解析：CSA + HCA
+
+V4 把"注意力"从一个统一算子拆成两条互补通道，按 token 距离做 **职责分离**：
+
+```
+Hybrid Attention = Compressed Sparse Attention (CSA)
+                + Heavily Compressed Attention (HCA)
+═══════════════════════════════════════════════════════════════════
+
+token 流:
+  t₁   t₂   t₃   ... t_w | t_{w+1} ... t_N
+  └─── 近端 (窗口内) ───┘   └──── 远端 (窗口外) ────┘
+         │                          │
+         ▼                          ▼
+     ┌────────┐                ┌────────┐
+     │  CSA   │  稀疏 + 高保真  │  HCA   │  重度压缩 + 极低显存
+     │ 精确   │                │ 极简   │
+     └────┬───┘                └────┬───┘
+          │                         │
+          └────────┬────────────────┘
+                   ▼
+              合并 → 输出
+
+层间交织示意 (Interleaved):
+  Layer 0:  ── CSA ──┐
+  Layer 1:  ── HCA ──┤  两种注意力按层交替/混合使用
+  Layer 2:  ── CSA ──┤  → 不同层承担不同"频率"的上下文建模
+  Layer 3:  ── HCA ──┘
+```
+
+**对比 V3 的 MLA + DSA 路线**：
+
+| 维度 | V3 (MLA + DSA) | **V4 (CSA + HCA)** |
+|------|----------------|--------------------|
+| 压缩哲学 | 单一低秩 + 稀疏选择 | **双通道职责分离** (近端精确 / 远端极简) |
+| 1M 单 token FLOPs | 100% (基准 = V3.2) | **27%** (≈ 3.7× 降低) |
+| 1M KV cache | 100% (基准 = V3.2) | **10%** (≈ 10× 降低) |
+| 远端上下文质量 | 中 | 中-高 (HCA 主动压缩而非丢弃) |
+| 1M 可承担性 | 困难 | **可生产部署** |
+
+> **为什么 1M 上下文在 V4 上首次"可承担"**：DSA 在 V3.2 上把长上下文的算力打了下来，但 1M 量级下 KV cache 仍是瓶颈。V4 的关键不是把单一注意力做得更稀疏，而是**承认远端 token 信息密度天然更低**——用 HCA 主动重度压缩远端，把省下来的 KV 预算留给近端 CSA 精确建模。这一"职责分离"才让 10% KV cache / 27% FLOPs 成为可能。
+
+#### 3.6.3 mHC：Manifold-constrained Hyper-Connections
+
+mHC（**流形约束超连接**）是对传统残差连接 `y = x + f(x)` 的强化，与 V3 的纯 MLA 配对方式不同：
+
+```
+传统残差:            mHC (Manifold-constrained Hyper-Connections):
+  y = x + f(x)         y = x + f(x) + 流形约束项
+
+                       强化跨层信号传播, 同时:
+                       ✓ 提升深层网络的信号稳定性
+                       ✓ 保留 (甚至增强) 表达能力
+                       ✓ 让 1.6T 参数的超深网络训练更稳定
+
+注: mHC ≠ MLA 的替代品; 它作用于"残差/层间连接", 不是注意力本身
+```
+
+mHC 与 Hybrid Attention 是正交的两项创新——一个负责"层内 token 交互"的算力压缩，一个负责"层间信号传播"的稳定性。两者叠加才能在万亿参数 + 1M 上下文下保持训练收敛。
+
+#### 3.6.4 Muon 优化器
+
+V4 把训练优化器从 AdamW 换成 **Muon**（详见 §6.5 的伪代码实现），核心收益：
+
+| 维度 | AdamW (V3) | **Muon (V4)** |
+|------|-----------|----------------|
+| 更新规则 | 一阶/二阶动量 | **动量 + Newton-Schulz 矩阵正交化** |
+| 收敛速度 | 基线 | **更快** |
+| 大规模训练稳定性 | 基线 | **更稳定** (1.6T 规模关键) |
+| 显存开销 | 标准 | 相当 |
+
+> Muon 在 V4 上的意义在于：1.6T 参数规模下，AdamW 的更新方向容易出现病态（ill-conditioning），Muon 通过把动量矩阵正交化，使每层更新方向更"均匀"，是万亿参数能稳定收敛的关键。
+
+#### 3.6.5 两阶段后训练：领域专家 + 在策略蒸馏
+
+V4 采用全新的两阶段后训练范式：
+
+```
+Stage 1: 独立培育领域专家 (Domain-Specific Experts)
+═══════════════════════════════════════════════════════════════════
+  对每个核心方向 (数学/代码/推理/Agent/...) 独立做:
+    SFT  ──►  RL (GRPO 算法, 沿用 R1 路线)
+  
+  → 得到多个"专精"子模型, 每个在自己的领域逼近上限
+
+Stage 2: 在策略蒸馏统一整合 (On-Policy Distillation)
+═══════════════════════════════════════════════════════════════════
+  把 Stage 1 的多个专家能力, 通过 on-policy 蒸馏
+  统一合并到同一个最终模型:
+  
+  学生 = V4 final;  教师 = 多个 Stage 1 专家
+  
+  → 保留每个专家的强项, 不互相覆盖
+  → 得到一个"全能但无明显短板"的统一模型
+```
+
+这套范式相比 R1 的"单模型 RL"思路，更接近"先分后合"的专家集成——通过蒸馏而非混合奖励来融合能力，避免了多任务奖励冲突。
+
+#### 3.6.6 三档思考力度：Non-think / High / Max
+
+| 模式 | 触发方式 | 行为 | 输出特征 | 适用场景 |
+|------|----------|------|----------|----------|
+| **Non-think** | 默认 / 关闭 thinking | 快速直觉回答 | `</think>` 简要摘要 | 实时对话、简单问答、低延迟 |
+| **Think High** | `thinking: enabled` (中档) | 有意识的逻辑分析 | `<think>...</think>` 完整推理 | 大多数复杂任务、平衡延迟与质量 |
+| **Think Max** | 专用系统提示 + `<think>` | 把推理推到极限 | 长链 `<think>` | 数学竞赛、研究难题、SOTA 复现 |
+
+**Max 模式的两个落地**：
+
+- **DeepSeek-V4-Pro-Max** = V4-Pro 的 Max-Reasoning 模式，官方定性为 **"目前最好的开源模型"**。在 LiveCodeBench 拿到 **93.5**（超越 Opus-4.6 Max 88.8 / Gemini-3.1-Pro 91.7），Codeforces Rating **3206**（超越 GPT-5.4 的 3168）。
+- **DeepSeek-V4-Flash-Max** = V4-Flash 的 Max-Reasoning 模式，官方指出在**更大的思考预算**下可达到**接近 V4-Pro 的推理水平**——这是高性价比部署推理密集任务的关键。
+
+> **与 GLM-5 系列的对比**：GLM-5 用 `reasoning_effort` (`max`/`high`) + `enable_thinking` 控制思考；V4 用 `thinking` 参数 + 专用 Max 系统提示。两者都把"推理深度"做成可控参数，V4 更进一步把 Max 模式独立为 `V4-Pro-Max` / `V4-Flash-Max` 的产品形态。
+
+#### 3.6.7 开源矩阵与下载
+
+| 模型 | 参数 | 精度 | HuggingFace | ModelScope |
+|------|------|------|-------------|------------|
+| **DeepSeek-V4-Pro** | 1.6T-A49B | FP4+FP8 Mixed | [deepseek-ai/DeepSeek-V4-Pro](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro) | [deepseek-ai/DeepSeek-V4-Pro](https://modelscope.cn/models/deepseek-ai/DeepSeek-V4-Pro) |
+| **DeepSeek-V4-Pro-Base** | 1.6T-A49B | FP8 Mixed | [deepseek-ai/DeepSeek-V4-Pro-Base](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-Base) | [deepseek-ai/DeepSeek-V4-Pro-Base](https://modelscope.cn/models/deepseek-ai/DeepSeek-V4-Pro-Base) |
+| **DeepSeek-V4-Flash** | 284B-A13B | FP4+FP8 Mixed | [deepseek-ai/DeepSeek-V4-Flash](https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash) | [deepseek-ai/DeepSeek-V4-Flash](https://modelscope.cn/models/deepseek-ai/DeepSeek-V4-Flash) |
+| **DeepSeek-V4-Flash-Base** | 284B-A13B | FP8 Mixed | [deepseek-ai/DeepSeek-V4-Flash-Base](https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Base) | [deepseek-ai/DeepSeek-V4-Flash-Base](https://modelscope.cn/models/deepseek-ai/DeepSeek-V4-Flash-Base) |
+
+> **许可**：全部 MIT。技术报告 PDF：[DeepSeek_V4.pdf](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro/blob/main/DeepSeek_V4.pdf)。Citation: `deepseekai2026deepseekv4`。
+
 ---
 
 ## 四、训练方法论与基础设施
@@ -814,9 +987,71 @@ GPT-4o             ████                                       9.3%
 (百分比越高越好, █ 代表相对比例)
 ```
 
+### 5.5 DeepSeek-V4 Benchmark（2026 官方数据）
+
+> 数据来源：[deepseek-ai/DeepSeek-V4-Pro HuggingFace 模型卡](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro)。下表为官方在统一评测设置下的真实分数，可直接对比。
+
+#### 5.5.1 基座模型对比（V4 vs V3.2-Base）
+
+| Benchmark | DeepSeek-V3.2-Base | V4-Flash-Base | **V4-Pro-Base** | 增量 (V3.2 → V4-Pro) |
+|-----------|--------------------|---------------|------------------|----------------------|
+| **MMLU-Pro** | 65.5 | 68.3 | **73.5** | +8.0 |
+| **MMLU** | 87.8 | 88.7 | **90.1** | +2.3 |
+| **Simple-QA (verified)** | 28.3 | 30.1 | **55.2** | **+26.9** |
+| **SuperGPQA** | 45.0 | 46.5 | **53.9** | +8.9 |
+| **FACTS Parametric** | 27.1 | 33.9 | **62.6** | **+35.5** |
+| **HumanEval** | 62.8 | 69.5 | **76.8** | +14.0 |
+| **MATH** | 60.5 | 57.4 | **64.5** | +4.0 |
+| **LongBench-V2** | 40.2 | 44.7 | **51.5** | +11.3 |
+| **MultiLoKo** | 38.7 | 42.2 | **51.1** | +12.4 |
+
+**关键观察**：
+
+- **事实性大幅跃升**：FACTS Parametric 从 27.1 → **62.6**（+35.5），Simple-QA verified 从 28.3 → **55.2**（+26.9）——这是 V4 基座最大的代际进步，说明预训练数据质量 + 规模（32T+ tokens）显著改善了参数化知识的可靠性。
+- **长上下文质量**：LongBench-V2 (40.2 → 51.5) 与 MultiLoKo (38.7 → 51.1) 双双提升 10+ 分，验证了 Hybrid Attention (CSA+HCA) 在 1M 上下文下的质量收益——不仅算力更省，远端 token 的建模质量反而更高。
+- **V4-Flash 的定位**：在大多数基准上比 V3.2-Base 强一档，但明显落后于 V4-Pro；其价值在 Instruct 阶段的 Max 模式下才真正释放（见 5.5.2）。
+
+#### 5.5.2 Instruct：V4-Pro-Max vs 全球前沿（2026）
+
+| Benchmark | **V4-Pro-Max** | 对比项 (官方参考) |
+|-----------|----------------|-------------------|
+| **LiveCodeBench** | **93.5** ⭐ (本组最佳) | Opus-4.6 Max 88.8 · Gemini-3.1-Pro 91.7 |
+| **Codeforces Rating** | **3206** | GPT-5.4: 3168 |
+| **SWE Verified** | 80.6 | — |
+| **SWE Pro** | 55.4 | — |
+| **BrowseComp** | 83.4 | — |
+| **HMMT 2026 Feb** | 95.2 | — |
+| **IMOAnswerBench** | 89.8 | — |
+| **Apex Shortlist** | **90.2** ⭐ (本组最佳) | — |
+| **GPQA Diamond** | 90.1 | — |
+| **MMLU-Pro** | 87.5 | — |
+| **MCPAtlas Public** | 73.6 | — |
+| **Toolathlon** | 51.8 | — |
+
+```
+LiveCodeBench (代码) 与 Codeforces (算法竞赛) — V4-Pro-Max 的双 SOTA
+═══════════════════════════════════════════════════════════════════
+
+LiveCodeBench:
+  V4-Pro-Max       ████████████████████████████████████████  93.5  ⭐
+  Gemini-3.1-Pro   ███████████████████████████████████████   91.7
+  Opus-4.6 Max     █████████████████████████████████████     88.8
+
+Codeforces Rating:
+  V4-Pro-Max       ████████████████████████████████████████  3206  ⭐
+  GPT-5.4          ███████████████████████████████████████   3168
+
+→ V4-Pro-Max 在"代码生成"与"竞赛算法"两项上同时登顶,
+  是当前最强开源编码 / 推理模型 (官方定性)
+```
+
+> **定位结论**：V4-Pro-Max 在 LiveCodeBench (93.5) 与 Codeforces Rating (3206) 双双击败 Opus-4.6 Max、Gemini-3.1-Pro、GPT-5.4 等闭源前沿模型，是 2026 年开源模型在"代码 + 推理"复合维度上的最高水准。配合 SWE Verified 80.6 / SWE Pro 55.4，V4-Pro-Max 也是当前最适合"真实软件工程"任务的开源基座。
+
 ---
 
 ## 六、DeepSeek-V4 架构深潜
+
+> **关于本节**：本节是 V4 发布前夕（2026-Q1）基于公开信息推断的"前瞻性"分析，部分概念性描述（尤其 §6.3 对 mHC 的解读）在官方资料发布后被修正。**官方权威事实请参见 [§3.6 DeepSeek-V4 系列](#36-deepseek-v4-系列万亿参数--混合稀疏注意力--1m-上下文2026)**：mHC 实为 **Manifold-constrained Hyper-Connections**（流形约束超连接，强化残差连接），而非 §6.3 推测的"Multi-head Compression"。本节予以保留作为"前瞻分析"的历史对照，不再作为事实依据。
 
 ### 6.1 V4 概述
 
@@ -1276,6 +1511,60 @@ graph TD
     Q3 --> |超长 1M| V4[V4 Pro/Flash]
 ```
 
+### 9.1.1 V4 快速部署指南（2026）
+
+```
+DeepSeek-V4 部署关键参数 (来自官方 model card)
+═══════════════════════════════════════════════════════════════════
+
+权重下载:
+  HuggingFace : deepseek-ai/DeepSeek-V4-Pro / V4-Pro-Base
+                 deepseek-ai/DeepSeek-V4-Flash / V4-Flash-Base
+  ModelScope  : 同名 (国内镜像, 推荐)
+
+推理代码:
+  仓库内 inference/ 文件夹提供官方推理指南
+  注意: V4 使用专用 encoding/ 文件夹处理 OpenAI 兼容消息
+       → 不依赖 Jinja chat template, 需按官方 encoding 流程预处理
+
+采样参数 (官方推荐):
+  temperature = 1.0
+  top_p       = 1.0
+
+上下文窗口:
+  常规模式 : 1M (1,048,576)
+  Think Max: ≥ 384K  ← 注意! Max 模式必须预留更大上下文给思维链
+```
+
+```python
+# V4 本地推理 (SGLang / vLLM 示例, 伪代码)
+from openai import OpenAI
+
+client = OpenAI(base_url="http://localhost:8000/v1", api_key="EMPTY")
+
+# V4-Pro-Max (Think Max) — 需 context ≥ 384K
+response = client.chat.completions.create(
+    model="deepseek-ai/DeepSeek-V4-Pro",       # 或 V4-Flash
+    messages=[
+        {"role": "system", "content": "<V4-Pro-Max 专用系统提示>"},  # Max 模式触发
+        {"role": "user",   "content": "证明: 任意三角形内角和为 180°"},
+    ],
+    temperature=1.0,     # 官方推荐, 不要随意降低
+    top_p=1.0,
+    max_tokens=32768,
+    extra_body={"thinking": {"type": "enabled"}},  # Think High / Max
+)
+```
+
+| 部署场景 | 推荐模型 | 备注 |
+|----------|----------|------|
+| 1M 上下文生产推理 | **V4-Pro** (1.6T-A49B) | 旗舰，需多 GPU；FLOPs/KV cache 已大幅降低 |
+| 推理密集 + 高性价比 | **V4-Flash-Max** | 在更大思考预算下接近 Pro 推理水平 |
+| 单 GPU / 边缘部署 | V4-Flash (284B-A13B) | 激活参数仅 13B，配合量化可下放到较小硬件 |
+| 基座研究 / 自研 Instruct | V4-Pro-Base / V4-Flash-Base | FP8 基座版，用于自定义后训练 |
+
+> **下载提示**：HF + ModelScope 双源提供 V4-Pro / V4-Pro-Base / V4-Flash / V4-Flash-Base 四个权重。FP4+FP8 混合精度 final 版适合直接部署，FP8 Mixed Base 版适合做自定义 SFT/RL 的起点。
+
 ### 9.2 API 调用示例
 
 ```python
@@ -1518,46 +1807,54 @@ trainer.train()
 ### 11.1 技术路线图
 
 ```
-已知 / 预期的发展方向:
+已知 / 预期的发展方向 (基线 = DeepSeek-V4, 2026-04):
 
-2025 (已发布 / 进行中)
+2025 (已发布)
 ├── DeepSeek-R1 及其蒸馏版
 ├── DeepSeek-V3.2 (DSA 稀疏注意力, Agentic 训练)
 ├── DeepSeek-OCR (文档识别)
 └── Janus-Pro (多模态生成)
 
-2026 (已发布 / 预期)
-├── DeepSeek-V4 Pro/Flash (1.6T / 284B) ← 已发布
-├── V4 自适应推理模式
-├── 下一代 R2 推理模型?
-└── V4 蒸馏版?
+2026 H1 (已发布) ← 当前基线
+├── DeepSeek-V4-Pro (1.6T-A49B) / V4-Flash (284B-A13B)
+│     · Hybrid Attention (CSA+HCA): 1M 上下文, FLOPs 27% / KV cache 10% vs V3.2
+│     · mHC + Muon 优化器, 三档思考 (Non-think/High/Max)
+│     · V4-Pro-Max: LiveCodeBench 93.5, Codeforces 3206 (开源 SOTA)
+├── V4-Flash-Max: 高性价比版接近 Pro 推理水平
+└── 两阶段后训练 (领域专家 RL + 在策略蒸馏)
 
-2026 H2+ (展望)
+2026 H2+ (展望, 基于 V4 基线)
 ├── DeepSeek-V5 (下一代基础模型?)
-├── 原生多模态 (Native Multimodal)
-├── 更强的 Agent / Tool-use 能力
-├── 更大规模 MoE (数千专家?)
-└── 端侧推理优化 (手机部署 R1 蒸馏版?)
+│     · V4 的 Hybrid Attention 已把 1M 做到"可承担", V5 可能向 10M 量级推进
+│     · MoE 专家数可能从 V3 的 256 进一步扩大
+├── 下一代 R2 推理模型? (在 V4 基座上做纯 RL)
+├── V4 蒸馏版? (把 V4-Pro-Max 的推理能力蒸馏到 1.5B-70B)
+├── 原生多模态 (Native Multimodal, V4 仍是纯文本)
+├── 更强的 Agent / Tool-use (V4-Pro-Max Toolathlon 51.8 / MCPAtlas 73.6 是新起点)
+└── 端侧推理优化 (FP4+FP8 混合精度 + 13B 激活让手机部署更近)
 ```
 
 ### 11.2 技术趋势
 
-1. **MoE 持续扩大**: 从 V2 的 64 专家到 V3 的 256 专家，V4 可能进一步扩大；专家数量与知识容量的正比关系将持续验证
-2. **注意力机制革命**: MLA → CSA/HCA → mHC，每一代都在压缩 KV cache 上突破极限，百万级上下文成为现实
-3. **RL-first 后训练**: R1 证明了纯 RL 训练推理模型的可行性，未来可能完全取代人工标注的思维链数据
-4. **自适应推理**: V4 的 Non-think / Think High / Think Max 模式将推理深度变成可控参数
-5. **开源生态扩大**: MIT 许可证 + 蒸馏系列使 DeepSeek 成为社区二次开发的首选基座
+1. **MoE 持续扩大**: 从 V2 的 64 专家到 V3 的 256 专家，V4 的 1.6T 总参继续放大；专家数量与知识容量的正比关系将持续验证
+2. **注意力机制革命**: MLA (V3) → Hybrid Attention CSA+HCA (V4)，每一代都在压缩 KV cache 上突破极限；V4 把 1M 上下文的 KV cache 压到 V3.2 的 10%，百万级上下文首次"可生产部署"
+3. **混合精度下探**: FP8 (V3 首次千亿规模落地) → FP4+FP8 Mixed (V4 final)，更低精度但几乎无损，是万亿参数能"装下"显存的关键
+4. **RL-first 后训练**: R1 证明了纯 RL 训练推理模型的可行性；V4 进一步把后训练拆成"领域专家 RL + 在策略蒸馏"两阶段，避免多任务奖励冲突
+5. **自适应推理**: V4 的 Non-think / Think High / Think Max 模式将推理深度变成可控参数；V4-Pro-Max / V4-Flash-Max 把"Max 推理"独立成产品形态
+6. **优化器换代**: AdamW (V3) → Muon (V4)，矩阵正交化使万亿参数训练更稳定，可能成为下一代大模型的标配
+7. **开源生态扩大**: MIT 许可证 + V4-Pro/Flash × Base/Final 四件套，使 DeepSeek 成为社区二次开发的首选基座
 
-### 11.3 关键挑战
+### 11.3 关键挑战 (基线 = V4)
 
-| 挑战 | 描述 | DeepSeek 的应对 |
-|------|------|----------------|
-| 推理成本 | 671B 模型部署成本高 | MoE + MLA 压缩 + 蒸馏系列 |
-| 幻觉问题 | 推理链中也可能出现错误 | R1 自我纠正能力 + RL 验证奖励 |
-| 安全对齐 | 强大的推理能力可能被滥用 | 多层安全过滤 + RLHF 约束 |
-| 训练数据质量 | 14.8T tokens 中的噪声 | 数据清洗 + 质量过滤 pipeline |
-| 硬件限制 | 美国芯片出口限制 | H800 替代方案 + 训练效率优化 |
-| 长上下文质量 | 128K+ 的"大海捞针"性能 | V4 的 CSA/HCA + mHC 压缩 |
+| 挑战 | 描述 | DeepSeek 的应对 (V4 基线) |
+|------|------|----------------------------|
+| 推理成本 | 1.6T 模型部署成本高 | MoE + Hybrid Attention (KV cache 仅 V3.2 的 10%) + V4-Flash 13B 激活 |
+| 幻觉问题 | 推理链中也可能出现错误 | FACTS Parametric 62.6 (V3.2 仅 27.1) + R1 自我纠正 + RL 验证 |
+| 安全对齐 | Max 模式的强推理可能被滥用 | 多层安全过滤 + RLHF 约束 |
+| 训练数据质量 | 32T+ tokens 中的噪声 | 数据清洗 + 质量过滤 pipeline |
+| 硬件限制 | 美国芯片出口限制 | FP4+FP8 Mixed 减半显存 + Muon 提升训练效率 |
+| 长上下文质量 | 1M 的"大海捞针"性能 | V4 的 CSA+HCA: LongBench-V2 51.5 / MultiLoKo 51.1 (V3.2 仅 40.2/38.7) |
+| Max 模式上下文 | Think Max 需 ≥384K 预留 | 推理框架需显式支持长思维链 context window |
 
 ---
 
@@ -1714,4 +2011,4 @@ DeepSeek 提供双协议端点：
 - [[04_NLP_LLMs/Chinese_LLM_Ecosystem/Chinese_LLM_Training_Inference_Platforms]] — 训推平台实战
 
 ---
-*Last updated: 2026-06-01*
+*Last updated: 2026-06-16*

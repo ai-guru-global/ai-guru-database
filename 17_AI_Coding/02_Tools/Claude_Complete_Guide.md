@@ -211,43 +211,21 @@ System Prompt 是 Claude 的"出厂设置"，具有**更高指令优先级**和*
 
 ## 五、MCP 模型上下文协议
 
-### 5.1 核心理念
+> MCP 协议的完整架构（Host/Client/Server）、三大构件（Tools/Resources/Prompts）与上下文工程三层架构详见 [[Context_Engineering_Guide#5.3-model-context-protocol-mcp]]。此处仅保留 Claude 生态相关信息。
 
-MCP 是 **AI 世界的 USB-C**——一套标准化的通用协议，让 AI 连接数据源像插 USB 设备一样简单。
+### 5.1 Claude 生态中的 MCP
 
 **解决的痛点**：M×N 集成问题。M 个 AI 应用连接 N 个外部服务，传统方式需要 M×N 个独立集成，MCP 只需 M+N 个实现。
 
-### 5.2 架构
-
-```
-MCP Host（Claude Desktop / Claude Code）
-  └── MCP Client（每个 Server 一个）
-        ├── Slack MCP Server → Slack API
-        ├── GitHub MCP Server → GitHub API
-        └── Postgres MCP Server → Database
-```
-
-### 5.3 三大核心能力
-
-| 能力 | 说明 |
-|------|------|
-| **Resources（资源）** | Claude 读取外部数据 |
-| **Tools（工具）** | Claude 执行外部操作 |
-| **Sampling（采样）** | Server 反向请求模型生成内容 |
-
-### 5.4 生态现状
-
-**客户端**：Claude Desktop、Claude Code、Cursor、Zed、VS Code
+**Claude 支持的客户端**：Claude Desktop、Claude Code、Cursor、Zed、VS Code
 
 **服务端分类**：
 - 本地资源：Filesystem, SQLite, Git
 - 云服务：AWS, Google Drive, Azure
 - SaaS：Slack, Linear, Notion, Sentry
-- 浏览器：Puppeteer
+- **Connectors**（零配置）：Notion、Figma、Canva、Linear、Stripe、HubSpot、Sentry
 
-**Connectors**（零配置体验）：Notion、Figma、Canva、Linear、Stripe、HubSpot、Sentry
-
-### 5.5 战略地位
+### 5.2 战略地位
 
 MCP 于 2024 年 11 月开源，2025 年 12 月加入 **Agentic AI Foundation (AAIF)**（Linux Foundation 托管，Anthropic/Block/OpenAI 联合发起）。
 

@@ -106,32 +106,32 @@ updated: 2026-06-15
 
 | 目录名称 | 文件数 | 字符数 | 占比 |
 |---------|--------|--------|------|
-| 13_Agent_Production | 172 | 230.95 万 | 20.8% |
-| 04_NLP_LLMs | 110 | 142.92 万 | 12.9% |
+| 15_Agent_Production | 172 | 230.95 万 | 20.8% |
+| 05_NLP_LLMs | 110 | 142.92 万 | 12.9% |
 | 12_Architecture_Infrastructure | 62 | 99.28 万 | 8.9% |
-| 09_Deployment_Inference | 53 | 60.13 万 | 5.4% |
+| 10_Deployment_Inference | 53 | 60.13 万 | 5.4% |
 | 07_Model_Training | 25 | 53.11 万 | 4.8% |
-| 17_AI_Coding | 64 | 43.96 万 | 4.0% |
-| concepts | 123 | 42.98 万 | 3.9% |
-| 10_MLOps_Pipeline | 41 | 40.78 万 | 3.7% |
+| 16_AI_Coding | 64 | 43.96 万 | 4.0% |
+| _concepts | 123 | 42.98 万 | 3.9% |
+| 11_MLOps_Pipeline | 41 | 40.78 万 | 3.7% |
 | 02_Machine_Learning | 35 | 33.73 万 | 3.0% |
-| 19_Ethics_Safety | 31 | 33.68 万 | 3.0% |
-| 22_Papers | 25 | 33.05 万 | 3.0% |
+| 17_Ethics_Safety | 31 | 33.68 万 | 3.0% |
+| 20_Papers | 25 | 33.05 万 | 3.0% |
 | 90_Learn | 60 | 32.98 万 | 3.0% |
 | 01_Fundamentals | 31 | 32.86 万 | 3.0% |
-| 11_RAG_Systems | 31 | 30.53 万 | 2.7% |
+| 14_RAG_Systems | 31 | 30.53 万 | 2.7% |
 | 08_Model_Evaluation | 16 | 25.88 万 | 2.3% |
-| 15_Testing | 12 | 22.87 万 | 2.1% |
+| 09_Testing | 12 | 22.87 万 | 2.1% |
 | 03_Deep_Learning | 21 | 22.68 万 | 2.0% |
-| 05_Computer_Vision | 23 | 19.63 万 | 1.8% |
-| 16_AI_Ops | 13 | 19.51 万 | 1.8% |
+| 04_Computer_Vision | 23 | 19.63 万 | 1.8% |
+| 13_AI_Ops | 13 | 19.51 万 | 1.8% |
 | 06_Reinforcement_Learning | 17 | 17.07 万 | 1.5% |
 | 00_AI_Introduction | 17 | 16.87 万 | 1.5% |
-| 20_AI_Applications_Industry | 26 | 15.92 万 | 1.4% |
-| 23_Interviews | 88 | 12.73 万 | 1.1% |
-| 21_Talks | 54 | 12.45 万 | 1.1% |
-| synthesis | 29 | 8.55 万 | 0.8% |
-| references | 37 | 5.88 万 | 0.5% |
+| 18_AI_Applications_Industry | 26 | 15.92 万 | 1.4% |
+| 21_Interviews | 88 | 12.73 万 | 1.1% |
+| 19_Talks | 54 | 12.45 万 | 1.1% |
+| _synthesis | 29 | 8.55 万 | 0.8% |
+| _references | 37 | 5.88 万 | 0.5% |
 | **总计** | **1,216** | **1,110.97 万** | **100%** |
 
 > 💡 提示：运行 `python3 count_words.py` 可查看最新的实时统计
@@ -303,31 +303,39 @@ graph LR
 
 | 章节 | 核心内容 | 难度 |
 |------|----------|------|
+| **L0 基础层** | | |
 | **00** [AI 简介与历史](./00_AI_Introduction/) | 通识导入：基础概念、技术全景、历史、工具、伦理、未来 | ⭐ |
 | **01** [基础理论](./01_Fundamentals/) | 数学与计算机：线代、概率、数据结构、分布式、AI 硬件 2026 | ⭐⭐ |
+| **L1 模型层** | | |
 | **02** [经典机器学习](./02_Machine_Learning/) | ML 基础：监督/无监督学习、特征工程、XGBoost | ⭐⭐ |
 | **03** [深度学习](./03_Deep_Learning/) | 神经网络：MLP、反向传播、优化、世界模型 JEPA | ⭐⭐⭐ |
-| **04** [NLP 与大模型](./05_NLP_LLMs/) | LLM 技术：Transformer、GPT-5.2/Claude 4.5、LoRA/RLHF/DPO | ⭐⭐⭐⭐ |
-| **05** [计算机视觉](./04_Computer_Vision/) | 视觉 AI：CNN、YOLO、Diffusion、视频生成 2026 | ⭐⭐⭐ |
+| **04** [计算机视觉](./04_Computer_Vision/) | 视觉 AI：CNN、YOLO、Diffusion、视频生成 2026 | ⭐⭐⭐ |
+| **05** [NLP 与大模型](./05_NLP_LLMs/) | LLM 技术：Transformer、GPT-5.2/Claude 4.5、LoRA/RLHF/DPO | ⭐⭐⭐⭐ |
 | **06** [强化学习与智能体](./06_Reinforcement_Learning/) | RL 与 Agent：DQN/PPO、Tool Calling、VLA 具身智能 | ⭐⭐⭐⭐ |
+| **L2 工程层** | | |
 | **07** [模型训练](./07_Model_Training/) | 训练工程：损失函数、优化器、分布式训练 | ⭐⭐⭐ |
 | **08** [模型评估](./08_Model_Evaluation/) | 评估方法：指标体系、基准测试、A/B 测试 | ⭐⭐⭐ |
-| **09** [部署与推理](./10_Deployment_Inference/) | 推理优化：vLLM、量化、模型服务 | ⭐⭐⭐⭐ |
-| **10** [MLOps 流水线](./11_MLOps_Pipeline/) | **LLMOps 完整主线** + 传统 MLOps + 工具深度解析（41 篇） | ⭐⭐⭐⭐ |
-| **11** [RAG 系统](./14_RAG_Systems/) | 检索增强：向量数据库、混合检索、Agentic RAG、多模态检索 | ⭐⭐⭐ |
+| **09** [AI 测试](./09_Testing/) | 测试工程：测试框架（Ragas/DeepEval/Promptfoo）、契约测试 | ⭐⭐⭐ |
+| **10** [部署与推理](./10_Deployment_Inference/) | 推理优化：vLLM、量化、模型服务 | ⭐⭐⭐⭐ |
+| **L3 平台层** | | |
+| **11** [MLOps 流水线](./11_MLOps_Pipeline/) | **LLMOps 完整主线** + 传统 MLOps + 工具深度解析（41 篇） | ⭐⭐⭐⭐ |
 | **12** [架构与基础设施](./12_Architecture_Infrastructure/) | 架构设计 + 基础设施：四层模型、多租户、高可用、容量规划、边缘 AI | ⭐⭐⭐⭐ |
-| **13** [Agent 生产部署](./15_Agent_Production/) | Agent 工程：框架、平台、Harness、技能、工作流、评估、OpenClaw 生态 | ⭐⭐⭐⭐ |
+| **13** [AI 运维](./13_AI_Ops/) | AIOps：事故响应、SRE 实践、混沌工程 | ⭐⭐⭐⭐ |
+| **L4 应用层** | | |
+| **14** [RAG 系统](./14_RAG_Systems/) | 检索增强：向量数据库、混合检索、Agentic RAG、多模态检索 | ⭐⭐⭐ |
+| **15** [Agent 生产部署](./15_Agent_Production/) | Agent 工程：框架、平台、Harness、技能、工作流、评估、OpenClaw 生态 | ⭐⭐⭐⭐ |
 | ↳ [Agent Skills](./15_Agent_Production/Agent_Skills/) | 技能体系：技能注册、组合、生态 | ⭐⭐⭐ |
 | ↳ [Agent Workflow](./15_Agent_Production/Agent_Workflow/) | 工作流：LangGraph、错误处理、编排 | ⭐⭐⭐ |
 | ↳ [Agent 评估](./15_Agent_Production/Agent_Evaluation/) | 评估体系：Benchmark、红队测试、Leaderboard | ⭐⭐⭐⭐ |
-| **15** [AI 测试](./09_Testing/) | 测试工程：测试框架（Ragas/DeepEval/Promptfoo）、契约测试 | ⭐⭐⭐ |
-| **16** [AI 运维](./13_AI_Ops/) | AIOps：事故响应、SRE 实践、混沌工程 | ⭐⭐⭐⭐ |
-| **17** [AI 编程](./16_AI_Coding/) | 编程工具与方法论：Cursor、Claude Code、Vibe Coding | ⭐⭐ |
-| **19** [伦理与安全](./17_Ethics_Safety/) | AI 安全：价值对齐、红队测试、隐私保护、OWASP LLM | ⭐⭐⭐ |
-| **20** [行业应用](./18_AI_Applications_Industry/) | 行业融合：医疗/金融/制造/零售核心应用 | ⭐⭐ |
-| **21** [业界观点](./19_Talks/) | 领袖洞见：21 位 AI 领袖演讲与观点 | ⭐⭐ |
-| **22** [必读论文](./20_Papers/) | 经典文献：Transformer、GPT、BERT 等里程碑 | ⭐⭐⭐⭐ |
-| **23** [面试与岗位](./21_Interviews/) | 职业发展：21 个 AI 岗位面试指南 | ⭐⭐ |
+| **16** [AI 编程](./16_AI_Coding/) | 编程工具与方法论：Cursor、Claude Code、Vibe Coding | ⭐⭐ |
+| **L5 治理层** | | |
+| **17** [伦理与安全](./17_Ethics_Safety/) | AI 安全：价值对齐、红队测试、隐私保护、OWASP LLM | ⭐⭐⭐ |
+| **L6 资源层** | | |
+| **18** [行业应用](./18_AI_Applications_Industry/) | 行业融合：医疗/金融/制造/零售核心应用 | ⭐⭐ |
+| **19** [业界观点](./19_Talks/) | 领袖洞见：21 位 AI 领袖演讲与观点 | ⭐⭐ |
+| **20** [必读论文](./20_Papers/) | 经典文献：Transformer、GPT、BERT 等里程碑 | ⭐⭐⭐⭐ |
+| **21** [面试与岗位](./21_Interviews/) | 职业发展：21 个 AI 岗位面试指南 | ⭐⭐ |
+| **拓展** | | |
 | **90** [学习资源](./90_Learn/) | 课程映射：微软/Datawhale/HuggingFace 等课程 | ⭐⭐ |
 | **91** [笔记](./91_Notes/) | 知识图谱：AI 全栈概念图 | ⭐⭐⭐ |
 

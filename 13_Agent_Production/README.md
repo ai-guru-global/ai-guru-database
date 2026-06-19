@@ -57,6 +57,7 @@ updated: 2026-06-15
 | [Agent Harness README](./Agent_Harness/) | Harness 专题入口与角色指南 | 全角色 |
 | [The Anatomy of an Agent Harness](./Agent_Harness/The_Anatomy_of_an_Agent_Harness.md) | LangChain 博客：Harness 工程定义与核心组件 | 设计师、架构师 |
 | [Agent Harness 技术架构 2026](./Agent_Harness/Agent_Harness_Architecture_2026.md) | 技术架构、配置参数、性能指标、兼容性矩阵 | 全角色 |
+| [Agent 安全与评估大白话](./Agent_Safety_Evaluation_for_dummy.md) | 工具调用安全、Agent 评估基准大白话 | 初学者 |
 
 ### Agentic Coding 工具
 
@@ -72,6 +73,9 @@ updated: 2026-06-15
 
 | 文档 | 内容 | 适用角色 |
 |------|------|----------|
+| [LangChain Deep Dive](./Agent_Frameworks/LangChain_Deep_Dive.md) | 最流行的 LLM 应用开发框架：Chain/Agent/Tool/RAG | 开发者 |
+| [LangChain Agents Deep Dive](./Agent_Frameworks/LangChain_Agents_Deep_Dive.md) | LangChain Agent 设计与工具调用 | 开发者 |
+| [AutoGen Deep Dive](./Agent_Frameworks/AutoGen_Deep_Dive.md) | 微软多 Agent 对话框架：群聊、代码执行 | 开发者、架构师 |
 | [AutoGen / CrewAI / LangGraph](./Agent_Frameworks/AutoGen_CrewAI_LangGraph_Dive.md) | 多 Agent 框架对比 | 开发者、架构师 |
 | [Agentic UI/UX Design 2026](./Agent_Workflow/Agentic_UI_UX_Design_2026.md) | Canvas 模式、Artifacts 设计、Human-in-the-Loop 交互 | 设计师、产品经理 |
 | [Agentic Workflow Design Patterns 2026](./Agent_Workflow/Agentic_Workflow_Design_Patterns_2026.md) | 路由、并行、编排者-执行者、评估者-优化者、蜂群模式 | 架构师、开发者 |
@@ -231,6 +235,10 @@ L4: 持久化知识 → SQL/NoSQL
 - [[09_Deployment_Inference/vLLM_Deep_Dive|vLLM 深度解析]]
 - [[09_Deployment_Inference/SGLang_Deep_Dive|SGLang 深度解析]]
 - [[09_Deployment_Inference/Groq_Deep_Dive|Groq 深度解析]]
+- [[concepts/tool-calling|工具调用]]
+- [[concepts/tool-calling-safety|工具调用安全]]
+- [[concepts/agent-evaluation-benchmarks|Agent 评估基准]]
+- [[13_Agent_Production/Agent_Safety_Evaluation_for_dummy|Agent 安全与评估大白话]]
 
 ## 新增页面
 

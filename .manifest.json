@@ -426,13 +426,154 @@
         "13_Agent_Production/Microsoft_AI_Agents_L18_Securing_AI_Agents.md"
       ],
       "pages_updated": []
+    },
+    "yeasy/ai_beginner_guide": {
+      "ingested_at": "2026-06-19T00:00:00Z",
+      "source_url": "https://github.com/yeasy/ai_beginner_guide",
+      "source_type": "book",
+      "project": null,
+      "pages_created": [
+        "00_AI_Introduction/AI_Reasoning_Models_Guide.md",
+        "00_AI_Introduction/AI_New_Architectures.md",
+        "00_AI_Introduction/AI_Multimodal_GenAI.md",
+        "00_AI_Introduction/AI_Beginner_Fundamentals.md",
+        "02_Machine_Learning/ML_For_Beginners.md",
+        "03_Deep_Learning/Deep_Learning_For_Beginners.md",
+        "04_NLP_LLMs/LLM_For_Beginners.md",
+        "00_AI_Introduction/AI_Application_Scenarios.md",
+        "19_Ethics_Safety/AI_Ethics_And_Future_For_Beginners.md"
+      ],
+      "pages_updated": []
+    },
+    "yeasy/prompt_engineering_guide": {
+      "ingested_at": "2026-06-19T00:00:00Z",
+      "source_url": "https://github.com/yeasy/prompt_engineering_guide",
+      "source_type": "book",
+      "project": null,
+      "pages_created": [
+        "04_NLP_LLMs/Prompt_Engineering/Prompt_Engineering_Complete_Guide.md",
+        "04_NLP_LLMs/Prompt_Engineering/Prompt_Engineering_Advanced_Apps.md",
+        "04_NLP_LLMs/Prompt_Engineering/Prompt_Engineering_Templates_Patterns.md"
+      ],
+      "pages_updated": []
+    },
+    "yeasy/context_engineering_guide": {
+      "ingested_at": "2026-06-19T00:00:00Z",
+      "source_url": "https://github.com/yeasy/context_engineering_guide",
+      "source_type": "book",
+      "project": null,
+      "pages_created": [
+        "04_NLP_LLMs/Context_Engineering_Guide.md",
+        "04_NLP_LLMs/Context_Engineering_Patterns.md"
+      ],
+      "pages_updated": []
+    },
+    "yeasy/llm_internals": {
+      "ingested_at": "2026-06-19T00:00:00Z",
+      "source_url": "https://github.com/yeasy/llm_internals",
+      "source_type": "book",
+      "project": null,
+      "pages_created": [
+        "04_NLP_LLMs/LLM_Internals_Architecture.md",
+        "04_NLP_LLMs/LLM_Internals_Training.md",
+        "04_NLP_LLMs/LLM_Internals_Inference.md",
+        "04_NLP_LLMs/LLM_Internals_Models_Frontiers.md"
+      ],
+      "pages_updated": []
+    },
+    "yeasy/claude_guide": {
+      "ingested_at": "2026-06-19T00:00:00Z",
+      "source_url": "https://github.com/yeasy/claude_guide",
+      "source_type": "book",
+      "project": null,
+      "pages_created": [
+        "17_AI_Coding/02_Tools/Claude_Complete_Guide.md",
+        "17_AI_Coding/02_Tools/Claude_Code_Deep_Dive.md",
+        "17_AI_Coding/01_Theory/Claude_Agent_Architecture.md"
+      ],
+      "pages_updated": []
+    },
+    "yeasy/agentic_ai_guide": {
+      "ingested_at": "2026-06-19T00:00:00Z",
+      "source_url": "https://github.com/yeasy/agentic_ai_guide",
+      "source_type": "book",
+      "project": null,
+      "pages_created": [
+        "13_Agent_Production/Agent_Foundations/Agentic_AI_Complete_Guide.md",
+        "13_Agent_Production/Agent_Foundations/Multi_Agent_Systems_Guide.md",
+        "13_Agent_Production/Agent_Workflow/AgentOps_Production_Guide.md"
+      ],
+      "pages_updated": []
+    },
+    "yeasy/harness_engineering_guide": {
+      "ingested_at": "2026-06-19T00:00:00Z",
+      "source_url": "https://github.com/yeasy/harness_engineering_guide",
+      "source_type": "book",
+      "project": null,
+      "pages_created": [
+        "13_Agent_Production/Agent_Harness/Harness_Engineering_Complete_Guide.md",
+        "13_Agent_Production/Agent_Harness/Harness_Core_Subsystems.md",
+        "13_Agent_Production/Agent_Harness/Harness_Production_Security.md"
+      ],
+      "pages_updated": []
+    },
+    "yeasy/openclaw_guide": {
+      "ingested_at": "2026-06-19T00:00:00Z",
+      "source_url": "https://github.com/yeasy/openclaw_guide",
+      "source_type": "book",
+      "project": null,
+      "pages_created": [
+        "13_Agent_Production/23_OpenClaw_Ecosystem/OpenClaw_Complete_Guide.md",
+        "13_Agent_Production/23_OpenClaw_Ecosystem/OpenClaw_Internals.md"
+      ],
+      "pages_updated": []
+    },
+    "yeasy/ai_security_guide": {
+      "ingested_at": "2026-06-19T00:00:00Z",
+      "source_url": "https://github.com/yeasy/ai_security_guide",
+      "source_type": "book",
+      "project": null,
+      "pages_created": [
+        "19_Ethics_Safety/LLM_Security_Complete_Guide.md",
+        "19_Ethics_Safety/LLM_Security_Defense_Guide.md",
+        "19_Ethics_Safety/Agent_RAG_Security.md"
+      ],
+      "pages_updated": []
+    },
+    "yeasy-distillation-cross-cutting": {
+      "ingested_at": "2026-06-19T00:00:00Z",
+      "source_url": "https://github.com/yeasy",
+      "source_type": "synthesis",
+      "project": null,
+      "note": "Concept atoms and cross-book synthesis/cheatsheet pages distilled across all 9 yeasy books",
+      "pages_created": [
+        "concepts/mcp.md",
+        "concepts/agent-loop.md",
+        "concepts/agent-harness.md",
+        "concepts/context-engineering.md",
+        "concepts/prompt-injection.md",
+        "concepts/hallucination.md",
+        "concepts/a2a-protocol.md",
+        "concepts/guardrails.md",
+        "_meta/synthesis-engineering-evolution.md",
+        "_meta/synthesis-llm-security-pipeline.md",
+        "_meta/synthesis-architecture-selection-guide.md",
+        "_meta/synthesis-memory-systems.md",
+        "_meta/cheatsheet-llm-inference.md",
+        "_meta/cheatsheet-agent-design.md",
+        "_meta/cheatsheet-security-defense.md"
+      ],
+      "pages_updated": [
+        "index.md",
+        "hot.md"
+      ]
     }
   },
   "stats": {
-    "total_sources_ingested": 26,
-    "total_pages": 1088,
+    "total_sources_ingested": 37,
+    "total_pages": 1133,
     "total_projects": 0,
     "last_full_rebuild": null,
-    "last_updated": "2026-06-17T00:00:00Z"
+    "last_updated": "2026-06-19T00:00:00Z"
   }
 }

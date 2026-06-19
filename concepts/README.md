@@ -54,6 +54,8 @@ updated: 2026-06-15
 | [optimization-regularization](./optimization-regularization.md) | 03_Deep_Learning | SGD、Adam、Dropout、权重衰减 |
 | [world-models-jepa](./world-models-jepa.md) | 03_Deep_Learning | JEPA、V-JEPA、LeCun AGI 路径 |
 | [state-space-models](./state-space-models.md) | 03_Deep_Learning | Mamba、RWKV、线性注意力 |
+| [mamba](./mamba.md) | 03_Deep_Learning | 选择性状态空间、长序列、线性复杂度 |
+| [retnet](./retnet.md) | 03_Deep_Learning | 保留机制、无 KV Cache、Transformer 替代 |
 | [graph-neural-networks](./graph-neural-networks.md) | 03_Deep_Learning | GCN、GAT、消息传递、分子预测 |
 | [self-supervised-learning](./self-supervised-learning.md) | 03_Deep_Learning | SimCLR、MoCo、MAE、对比学习 |
 | [distributed-systems](./distributed-systems.md) | 01_Fundamentals | CAP 定理、一致性、分布式训练 |
@@ -78,6 +80,10 @@ updated: 2026-06-15
 | [lora-qlora-sft-rlhf-dpo](./lora-qlora-sft-rlhf-dpo.md) | 04_NLP_LLMs | LoRA、QLoRA、SFT、RLHF、DPO 大白话串讲 |
 | [llm-data-engineering](./llm-data-engineering.md) | 04_NLP_LLMs | 预训练数据、SFT数据、合成数据、数据配比 |
 | [edge-llm](./edge-llm.md) | 04_NLP_LLMs | 小模型、量化、llama.cpp、端侧部署 |
+| [kv-cache-compression](./kv-cache-compression.md) | 04_NLP_LLMs | KV Cache 压缩、量化、GQA、MLA |
+| [agentic-rag](./agentic-rag.md) | 11_RAG_Systems | Agentic RAG、Self-RAG、CRAG |
+| [text2sql](./text2sql.md) | 11_RAG_Systems / 17_AI_Coding | 自然语言转 SQL、数据库查询 |
+| [code-generation-workflow](./code-generation-workflow.md) | 17_AI_Coding | AI 辅助代码工作流、CI/CD |
 
 ### 计算机视觉（6 张）
 
@@ -97,6 +103,9 @@ updated: 2026-06-15
 | [reinforcement-learning](./reinforcement-learning.md) | 06_Reinforcement_Learning | MDP、Q-Learning、策略梯度 |
 | [deep-reinforcement-learning](./deep-reinforcement-learning.md) | 06_Reinforcement_Learning | DQN、PPO、SAC |
 | [ai-agents](./ai-agents.md) | 06_Reinforcement_Learning | ReAct、Tool Calling、MCP |
+| [tool-calling](./tool-calling.md) | 13_Agent_Production | 函数调用、API、MCP |
+| [tool-calling-safety](./tool-calling-safety.md) | 13_Agent_Production / 19_Ethics_Safety | 工具调用安全、护栏、审计 |
+| [agent-evaluation-benchmarks](./agent-evaluation-benchmarks.md) | 08_Model_Evaluation / 13_Agent_Production | Agent 评估、SWE-bench、GAIA |
 | [ai-hardware](./ai-hardware.md) | 01_Fundamentals | GPU、TPU、H100/B200 |
 
 ### 工程与部署（12 张）
@@ -149,6 +158,23 @@ updated: 2026-06-15
 | [distributed-parallelism](./distributed-parallelism.md) | 07_Model_Training | TP/PP/DP/EP、Megatron、DeepSpeed |
 | [gpu-virtualization](./gpu-virtualization.md) | 12_Architecture_Infrastructure | MIG、GPU共享、算力/显存隔离 |
 | [federated-learning](./federated-learning.md) | 19_Ethics_Safety | FedAvg、差分隐私、安全聚合、联邦LLM |
+| [data-cleaning-pipeline](./data-cleaning-pipeline.md) | 07_Model_Training | 数据清洗、去重、质量过滤、配比 |
+| [dora](./dora.md) | 04_NLP_LLMs / 07_Model_Training | 权重分解 LoRA、方向微调 |
+| [rs-lora](./rs-lora.md) | 04_NLP_LLMs / 07_Model_Training | Rank-Stabilized LoRA、小 rank 稳定训练 |
+| [sglang](./sglang.md) | 09_Deployment_Inference | RadixAttention、结构化生成 |
+| [dynamic-batch-scheduling](./dynamic-batch-scheduling.md) | 09_Deployment_Inference | 动态批调度、Continuous Batching |
+| [gguf](./gguf.md) | 09_Deployment_Inference | llama.cpp、单文件量化格式 |
+| [smoothquant](./smoothquant.md) | 09_Deployment_Inference | INT8 量化、激活平滑 |
+| [tensorrt-llm](./tensorrt-llm.md) | 09_Deployment_Inference | NVIDIA 编译优化、FP8、端到端 |
+| [code-generation](./code-generation.md) | 17_AI_Coding | AI 代码生成、补全、测试生成 |
+| [llm-safety](./llm-safety.md) | 19_Ethics_Safety | LLM 安全、护栏、对齐、红队 |
+| [bbh](./bbh.md) | 08_Model_Evaluation | Big-Bench Hard、复杂推理基准 |
+| [llm-arena](./llm-arena.md) | 08_Model_Evaluation | Chatbot Arena、人类偏好、Elo 排名 |
+| [red-teaming](./red-teaming.md) | 19_Ethics_Safety / 08_Model_Evaluation | 红队测试、越狱、安全评估 |
+| [ci-integrated-evaluation](./ci-integrated-evaluation.md) | 10_MLOps_Pipeline / 08_Model_Evaluation | CI 集成评估、回归测试 |
+| [ab-testing-framework](./ab-testing-framework.md) | 10_MLOps_Pipeline / 08_Model_Evaluation | A/B 测试、在线评估、统计检验 |
+| [online-evaluation](./online-evaluation.md) | 08_Model_Evaluation | 在线评估、影子部署、金丝雀 |
+| [llm-production-pipeline](./llm-production-pipeline.md) | 10_MLOps_Pipeline | LLM 生产流水线、MLOps |
 
 ---
 

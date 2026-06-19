@@ -30,6 +30,7 @@ updated: 2026-06-16
 | [llama.cpp Deep Dive](./llama_cpp_Deep_Dive.md) | 纯 C/C++ 本地推理：CPU/GPU 多后端、GGUF 量化、llamafile | 边缘/本地 |
 | [TensorRT-LLM Deep Dive](./TensorRT_LLM_Deep_Dive.md) | NVIDIA 高性能推理：TensorRT 编译、FP8、Triton 集成 | H100 部署 |
 | [TGI Deep Dive](./TGI_Deep_Dive.md) | Hugging Face 生产级推理：Rust+Python、HF 生态原生 | HF 生态团队 |
+| [KServe Deep Dive](./KServe_Deep_Dive.md) | CNCF Kubernetes 标准化模型服务：多运行时、自动扩缩、灰度发布 | 平台工程师、SRE |
 | [Groq Deep Dive](./Groq_Deep_Dive.md) | LPU 高速推理云：毫秒级延迟、OpenAI 兼容 API | 实时低延迟 |
 | [Together AI Deep Dive](./Together_AI_Deep_Dive.md) | 开源模型云平台：200+ 模型、微调、OpenAI 兼容 | 开源模型优先 |
 | [Fireworks AI Deep Dive](./Fireworks_AI_Deep_Dive.md) | 快速推理云平台：FireAttention、批量、FireFunction | 高性价比批量 |
@@ -99,6 +100,14 @@ updated: 2026-06-16
 | [AI Stack GPU 监控](../12_Architecture_Infrastructure/AI_Stack_GPU_Monitoring_Guide.md) | nvidia-smi / ppu-smi 等 GPU 监控 | 运维、SRE |
 | [AI Stack 模型管理](../12_Architecture_Infrastructure/AI_Stack_Model_Management_Guide.md) | 模型下载与版本组织 | 模型工程师 |
 
+## 推理优化大白话
+
+> SGLang、动态批调度、GGUF、SmoothQuant、TensorRT-LLM 等核心推理优化技术的大白话解释：
+
+| 文档 | 内容 | 适用读者 |
+|------|------|----------|
+| [推理优化大白话](./Inference_Optimization_for_dummy.md) | SGLang、动态批调度、GGUF、SmoothQuant、TensorRT-LLM | 初学者 |
+
 ## 关联目录
 
 - [14_AI_Gateway](../14_AI_Gateway/) -- AI 网关与路由
@@ -131,10 +140,16 @@ updated: 2026-06-16
 - [[09_Deployment_Inference/GPUStack_Deep_Dive|GPUStack: 开源 GPU 集群管理与模型服务平台]]
 - [[09_Deployment_Inference/LLM_Inference_Benchmarking_Guide|LLM 推理引擎基准测试指南]]
 - [[09_Deployment_Inference/LLM_Inference_Engine_Migration_Guide|LLM 推理引擎迁移指南]]
+- [[09_Deployment_Inference/Inference_Optimization_for_dummy|推理优化大白话]]
 - [[12_Architecture_Infrastructure/AI_Stack_Production_Toolchain|AI Stack 生产工具链总览]]
 - [[12_Architecture_Infrastructure/AI_Stack_Inference_Serving_Guide|AI Stack 推理服务指南]]
 - [[12_Architecture_Infrastructure/AI_Stack_GPU_Monitoring_Guide|AI Stack GPU 监控指南]]
 - [[12_Architecture_Infrastructure/AI_Stack_Model_Management_Guide|AI Stack 模型下载与管理指南]]
+- [[concepts/sglang|SGLang]]
+- [[concepts/dynamic-batch-scheduling|动态批调度]]
+- [[concepts/gguf|GGUF]]
+- [[concepts/smoothquant|SmoothQuant]]
+- [[concepts/tensorrt-llm|TensorRT-LLM]]
 - [[09_Deployment_Inference/CTranslate2_Deep_Dive|CTranslate2: 轻量跨平台 Transformer 推理]]
 - [[09_Deployment_Inference/MLC_LLM_Deep_Dive|MLC LLM: 移动端/异构 LLM 推理]]
 

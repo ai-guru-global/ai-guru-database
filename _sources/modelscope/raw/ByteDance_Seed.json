@@ -1,0 +1,5224 @@
+{
+  "label": "ByteDance_Seed",
+  "namespace": "bytedance-community",
+  "organization": {
+    "ApplyFailureReason": "",
+    "ApplyReason": "",
+    "Avatar": "https://resources.modelscope.cn/avatar/organization-default-avatar.png",
+    "CreateCompetition": false,
+    "CreatedBy": "yingda",
+    "Description": "[\"root\",{},[\"p\",{},[\"span\",{\"data-type\":\"text\"},[\"span\",{\"data-type\":\"leaf\"},\"This organization was created as a community mirror to host open artifacts including models and datasets from various organizations eatablished by bytedance on hugging-face.\"]]]]",
+    "DisplayUrl": "",
+    "Email": "",
+    "FromSite": "",
+    "FullName": "bytedance-community",
+    "GithubAddress": "",
+    "GmtCreated": "2026-06-05T02:58:59Z",
+    "GmtModified": "2026-06-05T06:29:50Z",
+    "Id": 4159,
+    "InitAdminMembers": "",
+    "IsApply": false,
+    "IsCertification": "",
+    "Mobile": "",
+    "Name": "bytedance-community",
+    "Path": "",
+    "Roles": null,
+    "StarCnt": 0,
+    "Status": 0,
+    "SubscribeVo": null,
+    "Type": 1
+  },
+  "model_count": 141,
+  "stats": {
+    "total_counts": [
+      {
+        "term": "bytedance-community",
+        "TotalCount": 141
+      },
+      {
+        "term": "ByteDance",
+        "TotalCount": 180
+      }
+    ],
+    "pages_fetched": 4,
+    "candidates": 282
+  },
+  "models": [
+    {
+      "id": "bytedance-community/BAGEL-7B-MoT",
+      "Name": "BAGEL-7B-MoT",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 948,
+      "Stars": 0,
+      "StorageSize": 29561612534,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "bagel"
+      ],
+      "Architectures": [
+        "BagelForConditionalGeneration"
+      ],
+      "Tasks": [
+        {
+          "Name": "any-to-any",
+          "ChineseName": "统一多模态"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1780640609,
+      "LastUpdatedTime": 1780640955,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/BAGEL-7B-MoT"
+    },
+    {
+      "id": "bytedance-community/AffineQuant",
+      "Name": "AffineQuant",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 147,
+      "Stars": 0,
+      "StorageSize": 2049150657375,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "",
+          "ChineseName": ""
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1780636155,
+      "LastUpdatedTime": 1780745815,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/AffineQuant"
+    },
+    {
+      "id": "bytedance-community/Bernini-Diffusers",
+      "Name": "Bernini-Diffusers",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 63,
+      "Stars": 0,
+      "StorageSize": 192396137459,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "diffusers",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "bernini"
+      ],
+      "Architectures": [
+        "BerniniModel"
+      ],
+      "Tasks": [
+        {
+          "Name": "",
+          "ChineseName": ""
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1781116039,
+      "LastUpdatedTime": 1781188100,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Bernini-Diffusers"
+    },
+    {
+      "id": "bytedance-community/Bernini-R-Diffusers",
+      "Name": "Bernini-R-Diffusers",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 58,
+      "Stars": 1,
+      "StorageSize": 126200555938,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "diffusers",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "bernini_renderer"
+      ],
+      "Architectures": [
+        "BerniniRendererModel"
+      ],
+      "Tasks": [
+        {
+          "Name": "",
+          "ChineseName": ""
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1780629411,
+      "LastUpdatedTime": 1780630608,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Bernini-R-Diffusers"
+    },
+    {
+      "id": "bytedance-community/Bernini-R-1.3B-Diffusers",
+      "Name": "Bernini-R-1.3B-Diffusers",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 55,
+      "Stars": 0,
+      "StorageSize": 28930171505,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "diffusers",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "bernini_renderer"
+      ],
+      "Architectures": [
+        "BerniniRendererModel"
+      ],
+      "Tasks": [
+        {
+          "Name": "",
+          "ChineseName": ""
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1781028701,
+      "LastUpdatedTime": 1781117136,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Bernini-R-1.3B-Diffusers"
+    },
+    {
+      "id": "bytedance-community/UI-TARS-2B-SFT",
+      "Name": "UI-TARS-2B-SFT",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 43,
+      "Stars": 0,
+      "StorageSize": 9785468578,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "qwen2_vl"
+      ],
+      "Architectures": [
+        "Qwen2VLForConditionalGeneration"
+      ],
+      "Tasks": [
+        {
+          "Name": "image-text-to-text",
+          "ChineseName": "视觉多模态理解"
+        }
+      ],
+      "Tags": [
+        "multimodal",
+        "gui"
+      ],
+      "CreatedTime": 1780637479,
+      "LastUpdatedTime": 1781631466,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/UI-TARS-2B-SFT"
+    },
+    {
+      "id": "bytedance-community/LatentSync-1.6",
+      "Name": "LatentSync-1.6",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 42,
+      "Stars": 1,
+      "StorageSize": 9635786321,
+      "License": "openrail++",
+      "Libraries": [
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [],
+      "Tags": [
+        "lipsync",
+        "video-editing"
+      ],
+      "CreatedTime": 1780639402,
+      "LastUpdatedTime": 1780639639,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/LatentSync-1.6"
+    },
+    {
+      "id": "bytedance-community/UI-TARS-1.5-7B",
+      "Name": "UI-TARS-1.5-7B",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 41,
+      "Stars": 0,
+      "StorageSize": 33184697793,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "qwen2_5_vl"
+      ],
+      "Architectures": [
+        "Qwen2_5_VLForConditionalGeneration"
+      ],
+      "Tasks": [
+        {
+          "Name": "image-text-to-text",
+          "ChineseName": "视觉多模态理解"
+        }
+      ],
+      "Tags": [
+        "multimodal",
+        "gui"
+      ],
+      "CreatedTime": 1780634165,
+      "LastUpdatedTime": 1780634384,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/UI-TARS-1.5-7B"
+    },
+    {
+      "id": "bytedance-community/Ouro-2.6B",
+      "Name": "Ouro-2.6B",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 40,
+      "Stars": 0,
+      "StorageSize": 5341719563,
+      "License": "apache-2.0",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "ouro"
+      ],
+      "Architectures": [
+        "OuroForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [
+        "looped-language-model",
+        "reasoning",
+        "recurrent-depth"
+      ],
+      "CreatedTime": 1780638800,
+      "LastUpdatedTime": 1780646936,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Ouro-2.6B"
+    },
+    {
+      "id": "bytedance-community/Ouro-2.6B-Thinking",
+      "Name": "Ouro-2.6B-Thinking",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 40,
+      "Stars": 0,
+      "StorageSize": 5342035535,
+      "License": "apache-2.0",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "ouro"
+      ],
+      "Architectures": [
+        "OuroForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [
+        "looped-language-model",
+        "reasoning",
+        "recurrent-depth",
+        "thinking",
+        "chain-of-thought"
+      ],
+      "CreatedTime": 1780641874,
+      "LastUpdatedTime": 1780642205,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Ouro-2.6B-Thinking"
+    },
+    {
+      "id": "bytedance-community/ListConRanker",
+      "Name": "ListConRanker",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 39,
+      "Stars": 0,
+      "StorageSize": 1603567647,
+      "License": "",
+      "Libraries": [
+        "sentence-transformers",
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "bert"
+      ],
+      "Architectures": [
+        "ListConRanker"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-ranking",
+          "ChineseName": "语义相关性"
+        }
+      ],
+      "Tags": [
+        "mteb",
+        "sentence-transformers",
+        "transformers"
+      ],
+      "CreatedTime": 1780635011,
+      "LastUpdatedTime": 1781655749,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/ListConRanker"
+    },
+    {
+      "id": "bytedance-community/Hyper-SD",
+      "Name": "Hyper-SD",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 38,
+      "Stars": 0,
+      "StorageSize": 27740831876,
+      "License": "",
+      "Libraries": [
+        "pytorch",
+        "lora",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "text-to-image-synthesis",
+          "ChineseName": "文本生成图片"
+        }
+      ],
+      "Tags": [
+        "lora",
+        "text-to-image",
+        "stable-diffusion",
+        "flux"
+      ],
+      "CreatedTime": 1780631688,
+      "LastUpdatedTime": 1780631932,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Hyper-SD"
+    },
+    {
+      "id": "bytedance-community/Ouro-1.4B-Thinking",
+      "Name": "Ouro-1.4B-Thinking",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 38,
+      "Stars": 0,
+      "StorageSize": 2875360187,
+      "License": "apache-2.0",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "ouro"
+      ],
+      "Architectures": [
+        "OuroForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [
+        "looped-language-model",
+        "reasoning",
+        "recurrent-depth",
+        "thinking",
+        "chain-of-thought"
+      ],
+      "CreatedTime": 1780633083,
+      "LastUpdatedTime": 1780633360,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Ouro-1.4B-Thinking"
+    },
+    {
+      "id": "bytedance-community/Ouro-1.4B",
+      "Name": "Ouro-1.4B",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 38,
+      "Stars": 0,
+      "StorageSize": 2875039453,
+      "License": "apache-2.0",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "ouro"
+      ],
+      "Architectures": [
+        "OuroForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [
+        "looped-language-model",
+        "reasoning",
+        "recurrent-depth"
+      ],
+      "CreatedTime": 1780640446,
+      "LastUpdatedTime": 1780640808,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Ouro-1.4B"
+    },
+    {
+      "id": "bytedance-community/Timer-S1",
+      "Name": "Timer-S1",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 31,
+      "Stars": 0,
+      "StorageSize": 16608374487,
+      "License": "apache-2.0",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "Timer-S1"
+      ],
+      "Architectures": [
+        "Timer-S1"
+      ],
+      "Tasks": [
+        {
+          "Name": "",
+          "ChineseName": ""
+        }
+      ],
+      "Tags": [
+        "time series",
+        "time-series",
+        "forecasting",
+        "foundation models",
+        "pretrained models",
+        "time series foundation models"
+      ],
+      "CreatedTime": 1780639985,
+      "LastUpdatedTime": 1780640605,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Timer-S1"
+    },
+    {
+      "id": "bytedance-community/Sa2VA-Qwen2_5-VL-7B",
+      "Name": "Sa2VA-Qwen2_5-VL-7B",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 29,
+      "Stars": 0,
+      "StorageSize": 34126647112,
+      "License": "apache-2.0",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "sa2va_chat"
+      ],
+      "Architectures": [
+        "Sa2VAChatModelQwen"
+      ],
+      "Tasks": [
+        {
+          "Name": "image-text-to-text",
+          "ChineseName": "视觉多模态理解"
+        }
+      ],
+      "Tags": [
+        "Sa2VA",
+        "custom_code"
+      ],
+      "CreatedTime": 1780633363,
+      "LastUpdatedTime": 1780634021,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Sa2VA-Qwen2_5-VL-7B"
+    },
+    {
+      "id": "bytedance-community/DreamO",
+      "Name": "DreamO",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 28,
+      "Stars": 0,
+      "StorageSize": 5499720759,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "",
+          "ChineseName": ""
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1780634389,
+      "LastUpdatedTime": 1780650841,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/DreamO"
+    },
+    {
+      "id": "bytedance-community/AnimateDiff-Lightning",
+      "Name": "AnimateDiff-Lightning",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 26,
+      "Stars": 0,
+      "StorageSize": 7283230605,
+      "License": "creativeml-openrail-m",
+      "Libraries": [
+        "pytorch",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "text-to-video-synthesis",
+          "ChineseName": "文本生成视频"
+        }
+      ],
+      "Tags": [
+        "text-to-video",
+        "stable-diffusion",
+        "animatediff"
+      ],
+      "CreatedTime": 1780629247,
+      "LastUpdatedTime": 1780629540,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/AnimateDiff-Lightning"
+    },
+    {
+      "id": "bytedance-community/SDXL-Lightning",
+      "Name": "SDXL-Lightning",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 25,
+      "Stars": 0,
+      "StorageSize": 49492007358,
+      "License": "openrail++",
+      "Libraries": [
+        "pytorch",
+        "lora",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "text-to-image-synthesis",
+          "ChineseName": "文本生成图片"
+        }
+      ],
+      "Tags": [
+        "text-to-image",
+        "stable-diffusion"
+      ],
+      "CreatedTime": 1780630727,
+      "LastUpdatedTime": 1780631172,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/SDXL-Lightning"
+    },
+    {
+      "id": "bytedance-community/Lance",
+      "Name": "Lance",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 24,
+      "Stars": 1,
+      "StorageSize": 30856722748,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "any-to-any",
+          "ChineseName": "统一多模态"
+        }
+      ],
+      "Tags": [
+        "multimodal",
+        "image-generation",
+        "video-generation",
+        "image-editing",
+        "video-understanding",
+        "any-to-any"
+      ],
+      "CreatedTime": 1780640962,
+      "LastUpdatedTime": 1780641623,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Lance"
+    },
+    {
+      "id": "bytedance-community/Bernini-R",
+      "Name": "Bernini-R",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 23,
+      "Stars": 0,
+      "StorageSize": 168158317704,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors"
+      ],
+      "Frameworks": [],
+      "ModelType": [
+        "bernini_renderer"
+      ],
+      "Architectures": [
+        "BerniniRendererModel"
+      ],
+      "Tasks": [
+        {
+          "Name": "",
+          "ChineseName": ""
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1780638662,
+      "LastUpdatedTime": 1780651675,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Bernini-R"
+    },
+    {
+      "id": "bytedance-community/Seed-Coder-8B-Reasoning-bf16",
+      "Name": "Seed-Coder-8B-Reasoning-bf16",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 22,
+      "Stars": 0,
+      "StorageSize": 16513734388,
+      "License": "mit",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "llama"
+      ],
+      "Architectures": [
+        "LlamaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1780637592,
+      "LastUpdatedTime": 1780637918,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Seed-Coder-8B-Reasoning-bf16"
+    },
+    {
+      "id": "bytedance-community/Stable-DiffCoder-8B-Base",
+      "Name": "Stable-DiffCoder-8B-Base",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 22,
+      "Stars": 0,
+      "StorageSize": 16513038702,
+      "License": "mit",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "llama"
+      ],
+      "Architectures": [
+        "StableDiffcoderForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1780644175,
+      "LastUpdatedTime": 1780645011,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Stable-DiffCoder-8B-Base"
+    },
+    {
+      "id": "bytedance-community/EvoQuality",
+      "Name": "EvoQuality",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 19,
+      "Stars": 0,
+      "StorageSize": 16598696441,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "qwen2_5_vl"
+      ],
+      "Architectures": [
+        "Qwen2_5_VLForConditionalGeneration"
+      ],
+      "Tasks": [
+        {
+          "Name": "image-text-to-text",
+          "ChineseName": "视觉多模态理解"
+        }
+      ],
+      "Tags": [
+        "evoquality",
+        "image-quality-assessment",
+        "vlm",
+        "multimodal"
+      ],
+      "CreatedTime": 1781115350,
+      "LastUpdatedTime": 1781115859,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/EvoQuality"
+    },
+    {
+      "id": "bytedance-community/M3-Agent-Memorization",
+      "Name": "M3-Agent-Memorization",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 18,
+      "Stars": 0,
+      "StorageSize": 17880285544,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "qwen2_5_omni_thinker"
+      ],
+      "Architectures": [
+        "Qwen2_5OmniThinkerForConditionalGeneration"
+      ],
+      "Tasks": [],
+      "Tags": [],
+      "CreatedTime": 1780633225,
+      "LastUpdatedTime": 1780633959,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/M3-Agent-Memorization"
+    },
+    {
+      "id": "bytedance-community/UI-TARS-7B-DPO",
+      "Name": "UI-TARS-7B-DPO",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 18,
+      "Stars": 0,
+      "StorageSize": 16598782775,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "qwen2_vl"
+      ],
+      "Architectures": [
+        "Qwen2VLForConditionalGeneration"
+      ],
+      "Tasks": [
+        {
+          "Name": "image-text-to-text",
+          "ChineseName": "视觉多模态理解"
+        }
+      ],
+      "Tags": [
+        "multimodal",
+        "gui"
+      ],
+      "CreatedTime": 1780641238,
+      "LastUpdatedTime": 1780641733,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/UI-TARS-7B-DPO"
+    },
+    {
+      "id": "bytedance-community/InfiniteYou",
+      "Name": "InfiniteYou",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 17,
+      "Stars": 0,
+      "StorageSize": 43154330360,
+      "License": "cc-by-nc-4.0",
+      "Libraries": [
+        "lora",
+        "onnx",
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "text-to-image-synthesis",
+          "ChineseName": "文本生成图片"
+        }
+      ],
+      "Tags": [
+        "Text-to-Image",
+        "FLUX.1-dev",
+        "image-generation",
+        "Diffusion-Transformer",
+        "subject-personalization"
+      ],
+      "CreatedTime": 1780630577,
+      "LastUpdatedTime": 1780631360,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/InfiniteYou"
+    },
+    {
+      "id": "bytedance-community/Sa2VA-Qwen3-VL-4B",
+      "Name": "Sa2VA-Qwen3-VL-4B",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 16,
+      "Stars": 0,
+      "StorageSize": 20244783742,
+      "License": "apache-2.0",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "sa2va_chat"
+      ],
+      "Architectures": [
+        "Sa2VAChatModelQwen"
+      ],
+      "Tasks": [
+        {
+          "Name": "image-text-to-text",
+          "ChineseName": "视觉多模态理解"
+        }
+      ],
+      "Tags": [
+        "Sa2VA",
+        "custom_code"
+      ],
+      "CreatedTime": 1780637740,
+      "LastUpdatedTime": 1780637975,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Sa2VA-Qwen3-VL-4B"
+    },
+    {
+      "id": "bytedance-community/Sa2VA-1B",
+      "Name": "Sa2VA-1B",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 16,
+      "Stars": 0,
+      "StorageSize": 4058776064,
+      "License": "apache-2.0",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "sa2va_chat"
+      ],
+      "Architectures": [
+        "Sa2VAChatModel"
+      ],
+      "Tasks": [
+        {
+          "Name": "image-text-to-text",
+          "ChineseName": "视觉多模态理解"
+        }
+      ],
+      "Tags": [
+        "Sa2VA",
+        "custom_code"
+      ],
+      "CreatedTime": 1780632755,
+      "LastUpdatedTime": 1780632975,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Sa2VA-1B"
+    },
+    {
+      "id": "bytedance-community/Sa2VA-4B",
+      "Name": "Sa2VA-4B",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 16,
+      "Stars": 0,
+      "StorageSize": 15171552024,
+      "License": "apache-2.0",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "sa2va_chat"
+      ],
+      "Architectures": [
+        "Sa2VAChatModel"
+      ],
+      "Tasks": [
+        {
+          "Name": "image-text-to-text",
+          "ChineseName": "视觉多模态理解"
+        }
+      ],
+      "Tags": [
+        "Sa2VA",
+        "custom_code"
+      ],
+      "CreatedTime": 1780637921,
+      "LastUpdatedTime": 1780638302,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Sa2VA-4B"
+    },
+    {
+      "id": "bytedance-community/Valley3-8B-Instruct",
+      "Name": "Valley3-8B-Instruct",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 16,
+      "Stars": 0,
+      "StorageSize": 19081225434,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "valley_omni"
+      ],
+      "Architectures": [
+        "ValleyOmniForConditionalGeneration"
+      ],
+      "Tasks": [],
+      "Tags": [],
+      "CreatedTime": 1780635891,
+      "LastUpdatedTime": 1780636222,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Valley3-8B-Instruct"
+    },
+    {
+      "id": "bytedance-community/Valley2.5",
+      "Name": "Valley2.5",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 16,
+      "Stars": 0,
+      "StorageSize": 18865893897,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "valley"
+      ],
+      "Architectures": [
+        "ValleyQwen3ForCausalLM"
+      ],
+      "Tasks": [],
+      "Tags": [],
+      "CreatedTime": 1780634026,
+      "LastUpdatedTime": 1780634319,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Valley2.5"
+    },
+    {
+      "id": "bytedance-community/Seed-X-PPO-7B-GPTQ-Int8",
+      "Name": "Seed-X-PPO-7B-GPTQ-Int8",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 15,
+      "Stars": 0,
+      "StorageSize": 8057521003,
+      "License": "other",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "mistral"
+      ],
+      "Architectures": [
+        "MistralForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "translation",
+          "ChineseName": "翻译"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1780633058,
+      "LastUpdatedTime": 1780633342,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Seed-X-PPO-7B-GPTQ-Int8"
+    },
+    {
+      "id": "bytedance-community/Stable-DiffCoder-8B-Instruct",
+      "Name": "Stable-DiffCoder-8B-Instruct",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 15,
+      "Stars": 0,
+      "StorageSize": 16513040141,
+      "License": "mit",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "llama"
+      ],
+      "Architectures": [
+        "StableDiffcoderForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1780637570,
+      "LastUpdatedTime": 1780637821,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Stable-DiffCoder-8B-Instruct"
+    },
+    {
+      "id": "bytedance-community/Sa2VA-8B",
+      "Name": "Sa2VA-8B",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 14,
+      "Stars": 0,
+      "StorageSize": 32664923724,
+      "License": "apache-2.0",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "sa2va_chat"
+      ],
+      "Architectures": [
+        "Sa2VAChatModel"
+      ],
+      "Tasks": [
+        {
+          "Name": "image-text-to-text",
+          "ChineseName": "视觉多模态理解"
+        }
+      ],
+      "Tags": [
+        "Sa2VA",
+        "custom_code"
+      ],
+      "CreatedTime": 1780635567,
+      "LastUpdatedTime": 1780635886,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Sa2VA-8B"
+    },
+    {
+      "id": "bytedance-community/Seed-X-PPO-7B",
+      "Name": "Seed-X-PPO-7B",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 14,
+      "Stars": 0,
+      "StorageSize": 15031809064,
+      "License": "other",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "mistral"
+      ],
+      "Architectures": [
+        "MistralForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "translation",
+          "ChineseName": "翻译"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1780643765,
+      "LastUpdatedTime": 1780644226,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Seed-X-PPO-7B"
+    },
+    {
+      "id": "bytedance-community/Seed-X-RM-7B",
+      "Name": "Seed-X-RM-7B",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 14,
+      "Stars": 0,
+      "StorageSize": 14497158741,
+      "License": "other",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "mistral"
+      ],
+      "Architectures": [
+        "MistralForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "translation",
+          "ChineseName": "翻译"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1780641153,
+      "LastUpdatedTime": 1780641871,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Seed-X-RM-7B"
+    },
+    {
+      "id": "bytedance-community/Dolphin-v2",
+      "Name": "Dolphin-v2",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 14,
+      "Stars": 0,
+      "StorageSize": 7520912061,
+      "License": "",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "qwen2_5_vl"
+      ],
+      "Architectures": [
+        "Qwen2_5_VLForConditionalGeneration"
+      ],
+      "Tasks": [
+        {
+          "Name": "image-text-to-text",
+          "ChineseName": "视觉多模态理解"
+        }
+      ],
+      "Tags": [
+        "document-parsing",
+        "document-understanding",
+        "document-intelligence",
+        "ocr",
+        "layout-analysis",
+        "table-extraction",
+        "formula-recognition",
+        "code-extraction",
+        "multimodal",
+        "vision-language-model"
+      ],
+      "CreatedTime": 1780640597,
+      "LastUpdatedTime": 1780640983,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Dolphin-v2"
+    },
+    {
+      "id": "bytedance-community/Tar-1.5B",
+      "Name": "Tar-1.5B",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 14,
+      "Stars": 0,
+      "StorageSize": 5188972769,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "qwen2"
+      ],
+      "Architectures": [
+        "LlavaQwenForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "any-to-any",
+          "ChineseName": "统一多模态"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1780634533,
+      "LastUpdatedTime": 1780635322,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Tar-1.5B"
+    },
+    {
+      "id": "bytedance-community/pasa-7b-selector",
+      "Name": "pasa-7b-selector",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 14,
+      "Stars": 0,
+      "StorageSize": 30472387487,
+      "License": "cc-by-nc-sa-4.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "qwen2"
+      ],
+      "Architectures": [
+        "Qwen2ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1780628754,
+      "LastUpdatedTime": 1780629560,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/pasa-7b-selector"
+    },
+    {
+      "id": "bytedance-community/Q-Insight",
+      "Name": "Q-Insight",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 14,
+      "Stars": 0,
+      "StorageSize": 86436845074,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "",
+          "ChineseName": ""
+        }
+      ],
+      "Tags": [
+        "IQA",
+        "VQA",
+        "AIGC"
+      ],
+      "CreatedTime": 1780642209,
+      "LastUpdatedTime": 1780643227,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Q-Insight"
+    },
+    {
+      "id": "bytedance-community/Vidi1.5-9B",
+      "Name": "Vidi1.5-9B",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 14,
+      "Stars": 0,
+      "StorageSize": 20962982069,
+      "License": "cc-by-nc-4.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "dattn_gemma2"
+      ],
+      "Architectures": [
+        "DattnGemma2ForCausalLM"
+      ],
+      "Tasks": [],
+      "Tags": [
+        "video",
+        "audio",
+        "multimodal"
+      ],
+      "CreatedTime": 1780628756,
+      "LastUpdatedTime": 1780629226,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Vidi1.5-9B"
+    },
+    {
+      "id": "bytedance-community/Valley2-DPO",
+      "Name": "Valley2-DPO",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 14,
+      "Stars": 0,
+      "StorageSize": 17770637611,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "valley"
+      ],
+      "Architectures": [
+        "ValleyQwen2ForCausalLM"
+      ],
+      "Tasks": [],
+      "Tags": [],
+      "CreatedTime": 1780639643,
+      "LastUpdatedTime": 1780640376,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Valley2-DPO"
+    },
+    {
+      "id": "bytedance-community/Valley3-8B-Think",
+      "Name": "Valley3-8B-Think",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 14,
+      "Stars": 0,
+      "StorageSize": 19081224424,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "valley_omni"
+      ],
+      "Architectures": [
+        "ValleyOmniForConditionalGeneration"
+      ],
+      "Tasks": [],
+      "Tags": [],
+      "CreatedTime": 1780634174,
+      "LastUpdatedTime": 1780634526,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Valley3-8B-Think"
+    },
+    {
+      "id": "bytedance-community/Vidi-7B",
+      "Name": "Vidi-7B",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 14,
+      "Stars": 0,
+      "StorageSize": 17031521486,
+      "License": "cc-by-nc-4.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "dattn_mistral"
+      ],
+      "Architectures": [
+        "DattnMistralForCausalLM"
+      ],
+      "Tasks": [],
+      "Tags": [
+        "video",
+        "audio",
+        "multimodal"
+      ],
+      "CreatedTime": 1780632951,
+      "LastUpdatedTime": 1780633363,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Vidi-7B"
+    },
+    {
+      "id": "bytedance-community/Sa2VA-InternVL3-14B",
+      "Name": "Sa2VA-InternVL3-14B",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 14,
+      "Stars": 0,
+      "StorageSize": 60885844715,
+      "License": "apache-2.0",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "sa2va_chat"
+      ],
+      "Architectures": [
+        "Sa2VAChatModel"
+      ],
+      "Tasks": [
+        {
+          "Name": "image-text-to-text",
+          "ChineseName": "视觉多模态理解"
+        }
+      ],
+      "Tags": [
+        "Sa2VA",
+        "custom_code"
+      ],
+      "CreatedTime": 1780642487,
+      "LastUpdatedTime": 1780643240,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Sa2VA-InternVL3-14B"
+    },
+    {
+      "id": "bytedance-community/Valley-Eagle-7B",
+      "Name": "Valley-Eagle-7B",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 14,
+      "Stars": 0,
+      "StorageSize": 17767846321,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "valley"
+      ],
+      "Architectures": [
+        "ValleyQwen2ForCausalLM"
+      ],
+      "Tasks": [],
+      "Tags": [],
+      "CreatedTime": 1780635583,
+      "LastUpdatedTime": 1780635920,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Valley-Eagle-7B"
+    },
+    {
+      "id": "bytedance-community/Valley3-32B-Think",
+      "Name": "Valley3-32B-Think",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 14,
+      "Stars": 0,
+      "StorageSize": 68278613036,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "valley_omni"
+      ],
+      "Architectures": [
+        "ValleyOmniForConditionalGeneration"
+      ],
+      "Tasks": [],
+      "Tags": [],
+      "CreatedTime": 1780638808,
+      "LastUpdatedTime": 1780640086,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Valley3-32B-Think"
+    },
+    {
+      "id": "bytedance-community/Seed-Coder-8B-Instruct",
+      "Name": "Seed-Coder-8B-Instruct",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 13,
+      "Stars": 0,
+      "StorageSize": 16513244831,
+      "License": "mit",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "llama"
+      ],
+      "Architectures": [
+        "LlamaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1780642240,
+      "LastUpdatedTime": 1780642489,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Seed-Coder-8B-Instruct"
+    },
+    {
+      "id": "bytedance-community/Tar-7B",
+      "Name": "Tar-7B",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 12,
+      "Stars": 0,
+      "StorageSize": 17424593392,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "qwen2"
+      ],
+      "Architectures": [
+        "LlavaQwenForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "any-to-any",
+          "ChineseName": "统一多模态"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1780643272,
+      "LastUpdatedTime": 1780643761,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Tar-7B"
+    },
+    {
+      "id": "bytedance-community/pasa-7b-crawler",
+      "Name": "pasa-7b-crawler",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 12,
+      "Stars": 0,
+      "StorageSize": 15247200928,
+      "License": "cc-by-nc-sa-4.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "qwen2"
+      ],
+      "Architectures": [
+        "Qwen2ForCausalLM"
+      ],
+      "Tasks": [],
+      "Tags": [],
+      "CreatedTime": 1780632213,
+      "LastUpdatedTime": 1780632870,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/pasa-7b-crawler"
+    },
+    {
+      "id": "bytedance-community/BFS-Prover-V1-7B",
+      "Name": "BFS-Prover-V1-7B",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 12,
+      "Stars": 0,
+      "StorageSize": 15247187092,
+      "License": "apache-2.0",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "qwen2"
+      ],
+      "Architectures": [
+        "Qwen2ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [
+        "lean4",
+        "theorem-proving",
+        "formal-mathematics"
+      ],
+      "CreatedTime": 1780643247,
+      "LastUpdatedTime": 1780643775,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/BFS-Prover-V1-7B"
+    },
+    {
+      "id": "bytedance-community/Seed-X-PPO-7B-AWQ-Int4",
+      "Name": "Seed-X-PPO-7B-AWQ-Int4",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 12,
+      "Stars": 0,
+      "StorageSize": 4674143916,
+      "License": "other",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "mistral"
+      ],
+      "Architectures": [
+        "MistralForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "translation",
+          "ChineseName": "翻译"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1780635782,
+      "LastUpdatedTime": 1780635991,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Seed-X-PPO-7B-AWQ-Int4"
+    },
+    {
+      "id": "bytedance-community/BFS-Prover-V2-7B",
+      "Name": "BFS-Prover-V2-7B",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 12,
+      "Stars": 0,
+      "StorageSize": 15247186577,
+      "License": "apache-2.0",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "qwen2"
+      ],
+      "Architectures": [
+        "Qwen2ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [
+        "lean4",
+        "step-prover"
+      ],
+      "CreatedTime": 1780629543,
+      "LastUpdatedTime": 1780630111,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/BFS-Prover-V2-7B"
+    },
+    {
+      "id": "bytedance-community/Sa2VA-26B",
+      "Name": "Sa2VA-26B",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 12,
+      "Stars": 0,
+      "StorageSize": 92041392509,
+      "License": "apache-2.0",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "sa2va_chat"
+      ],
+      "Architectures": [
+        "Sa2VAChatModel"
+      ],
+      "Tasks": [
+        {
+          "Name": "image-text-to-text",
+          "ChineseName": "视觉多模态理解"
+        }
+      ],
+      "Tags": [
+        "Sa2VA",
+        "custom_code"
+      ],
+      "CreatedTime": 1780639785,
+      "LastUpdatedTime": 1780640862,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Sa2VA-26B"
+    },
+    {
+      "id": "bytedance-community/Seed-OSS-36B-Instruct",
+      "Name": "Seed-OSS-36B-Instruct",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 11,
+      "Stars": 0,
+      "StorageSize": 72314507715,
+      "License": "apache-2.0",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "seed_oss"
+      ],
+      "Architectures": [
+        "SeedOssForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [
+        "vllm"
+      ],
+      "CreatedTime": 1780634689,
+      "LastUpdatedTime": 1780635146,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Seed-OSS-36B-Instruct"
+    },
+    {
+      "id": "bytedance-community/Sa2VA-InternVL3-8B",
+      "Name": "Sa2VA-InternVL3-8B",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 11,
+      "Stars": 0,
+      "StorageSize": 32139105858,
+      "License": "apache-2.0",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "sa2va_chat"
+      ],
+      "Architectures": [
+        "Sa2VAChatModel"
+      ],
+      "Tasks": [
+        {
+          "Name": "image-text-to-text",
+          "ChineseName": "视觉多模态理解"
+        }
+      ],
+      "Tags": [
+        "Sa2VA",
+        "custom_code"
+      ],
+      "CreatedTime": 1780642261,
+      "LastUpdatedTime": 1780642965,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Sa2VA-InternVL3-8B"
+    },
+    {
+      "id": "bytedance-community/Sa2VA-Qwen3-VL-2B",
+      "Name": "Sa2VA-Qwen3-VL-2B",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 11,
+      "Stars": 0,
+      "StorageSize": 10683758818,
+      "License": "apache-2.0",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "sa2va_chat"
+      ],
+      "Architectures": [
+        "Sa2VAChatModelQwen"
+      ],
+      "Tasks": [
+        {
+          "Name": "image-text-to-text",
+          "ChineseName": "视觉多模态理解"
+        }
+      ],
+      "Tags": [
+        "Sa2VA",
+        "custom_code"
+      ],
+      "CreatedTime": 1780641736,
+      "LastUpdatedTime": 1780642257,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Sa2VA-Qwen3-VL-2B"
+    },
+    {
+      "id": "bytedance-community/TaskMem",
+      "Name": "TaskMem",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 11,
+      "Stars": 0,
+      "StorageSize": 62157584827,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "qwen3_vl_moe"
+      ],
+      "Architectures": [
+        "Qwen3VLMoeForConditionalGeneration"
+      ],
+      "Tasks": [],
+      "Tags": [],
+      "CreatedTime": 1780638984,
+      "LastUpdatedTime": 1780639977,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/TaskMem"
+    },
+    {
+      "id": "bytedance-community/Video-As-Prompt-Wan2.1-14B",
+      "Name": "Video-As-Prompt-Wan2.1-14B",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 10,
+      "Stars": 0,
+      "StorageSize": 65865834549,
+      "License": "apache-2.0",
+      "Libraries": [
+        "pytorch",
+        "safetensors",
+        "diffusers"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "image-to-video",
+          "ChineseName": "图片生成视频"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1780640092,
+      "LastUpdatedTime": 1780640440,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Video-As-Prompt-Wan2.1-14B"
+    },
+    {
+      "id": "bytedance-community/Seed-Coder-8B-Base",
+      "Name": "Seed-Coder-8B-Base",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 10,
+      "Stars": 0,
+      "StorageSize": 16513243928,
+      "License": "mit",
+      "Libraries": [
+        "pytorch",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "llama"
+      ],
+      "Architectures": [
+        "LlamaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1780629558,
+      "LastUpdatedTime": 1780630435,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Seed-Coder-8B-Base"
+    },
+    {
+      "id": "bytedance-community/Seed-OSS-36B-Base",
+      "Name": "Seed-OSS-36B-Base",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 10,
+      "Stars": 0,
+      "StorageSize": 72314507534,
+      "License": "apache-2.0",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "seed_oss"
+      ],
+      "Architectures": [
+        "SeedOssForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [
+        "vllm"
+      ],
+      "CreatedTime": 1780633459,
+      "LastUpdatedTime": 1780634157,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Seed-OSS-36B-Base"
+    },
+    {
+      "id": "bytedance-community/Seed-Coder-8B-Reasoning",
+      "Name": "Seed-Coder-8B-Reasoning",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 10,
+      "Stars": 0,
+      "StorageSize": 33014658841,
+      "License": "mit",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "llama"
+      ],
+      "Architectures": [
+        "LlamaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1780641243,
+      "LastUpdatedTime": 1780641852,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Seed-Coder-8B-Reasoning"
+    },
+    {
+      "id": "bytedance-community/academic-ds-9B",
+      "Name": "academic-ds-9B",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 10,
+      "Stars": 0,
+      "StorageSize": 18741611800,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "deepseek_v3"
+      ],
+      "Architectures": [
+        "DeepseekV3ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1780644931,
+      "LastUpdatedTime": 1780645546,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/academic-ds-9B"
+    },
+    {
+      "id": "bytedance-community/ContentV-8B",
+      "Name": "ContentV-8B",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 10,
+      "Stars": 0,
+      "StorageSize": 27788914559,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "diffusers",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "text-to-video-synthesis",
+          "ChineseName": "文本生成视频"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1780635924,
+      "LastUpdatedTime": 1780636271,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/ContentV-8B"
+    },
+    {
+      "id": "bytedance-community/AHN-GDN-for-Qwen-2.5-Instruct-14B",
+      "Name": "AHN-GDN-for-Qwen-2.5-Instruct-14B",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 10,
+      "Stars": 0,
+      "StorageSize": 121979875,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "qwen2"
+      ],
+      "Architectures": [
+        "Qwen2ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [
+        "chat"
+      ],
+      "CreatedTime": 1780637502,
+      "LastUpdatedTime": 1780637570,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/AHN-GDN-for-Qwen-2.5-Instruct-14B"
+    },
+    {
+      "id": "bytedance-community/lynx",
+      "Name": "lynx",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 10,
+      "Stars": 0,
+      "StorageSize": 19154904842,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "image-to-video",
+          "ChineseName": "图片生成视频"
+        }
+      ],
+      "Tags": [
+        "image-to-video",
+        "video-generation",
+        "personalized-video",
+        "identity-preservation"
+      ],
+      "CreatedTime": 1780631299,
+      "LastUpdatedTime": 1780631683,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/lynx"
+    },
+    {
+      "id": "bytedance-community/DynamicCoT",
+      "Name": "DynamicCoT",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 10,
+      "Stars": 0,
+      "StorageSize": 16601682545,
+      "License": "",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "qwen2_5_vl"
+      ],
+      "Architectures": [
+        "Qwen2_5_VLForConditionalGeneration"
+      ],
+      "Tasks": [],
+      "Tags": [],
+      "CreatedTime": 1780635944,
+      "LastUpdatedTime": 1780636277,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/DynamicCoT"
+    },
+    {
+      "id": "bytedance-community/Sa2VA-Qwen2_5-VL-3B",
+      "Name": "Sa2VA-Qwen2_5-VL-3B",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 10,
+      "Stars": 0,
+      "StorageSize": 17191911401,
+      "License": "apache-2.0",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "sa2va_chat"
+      ],
+      "Architectures": [
+        "Sa2VAChatModelQwen"
+      ],
+      "Tasks": [
+        {
+          "Name": "image-text-to-text",
+          "ChineseName": "视觉多模态理解"
+        }
+      ],
+      "Tags": [
+        "Sa2VA",
+        "custom_code"
+      ],
+      "CreatedTime": 1780630115,
+      "LastUpdatedTime": 1780630756,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Sa2VA-Qwen2_5-VL-3B"
+    },
+    {
+      "id": "bytedance-community/HyperLoRA",
+      "Name": "HyperLoRA",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 8,
+      "Stars": 0,
+      "StorageSize": 6278724422,
+      "License": "cc-by-nc-4.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "",
+          "ChineseName": ""
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1780635994,
+      "LastUpdatedTime": 1781638723,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/HyperLoRA"
+    },
+    {
+      "id": "bytedance-community/SeedVR2-7B",
+      "Name": "SeedVR2-7B",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 8,
+      "Stars": 0,
+      "StorageSize": 66921753307,
+      "License": "apache-2.0",
+      "Libraries": [
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "",
+          "ChineseName": ""
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1780634323,
+      "LastUpdatedTime": 1780635576,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/SeedVR2-7B"
+    },
+    {
+      "id": "bytedance-community/Cola-DLM",
+      "Name": "Cola-DLM",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 8,
+      "Stars": 0,
+      "StorageSize": 9329843009,
+      "License": "apache-2.0",
+      "Libraries": [
+        "pytorch",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [
+        "text-generation",
+        "language-model",
+        "diffusion",
+        "latent-diffusion",
+        "flow-matching",
+        "text-vae",
+        "pytorch",
+        "transformers",
+        "research"
+      ],
+      "CreatedTime": 1780631944,
+      "LastUpdatedTime": 1780632487,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Cola-DLM"
+    },
+    {
+      "id": "bytedance-community/M3-Agent-Control",
+      "Name": "M3-Agent-Control",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 8,
+      "Stars": 0,
+      "StorageSize": 65540272719,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "qwen3"
+      ],
+      "Architectures": [
+        "Qwen3ForCausalLM"
+      ],
+      "Tasks": [],
+      "Tags": [],
+      "CreatedTime": 1780633436,
+      "LastUpdatedTime": 1780634149,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/M3-Agent-Control"
+    },
+    {
+      "id": "bytedance-community/AHN-Mamba2-for-Qwen-2.5-Instruct-3B",
+      "Name": "AHN-Mamba2-for-Qwen-2.5-Instruct-3B",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 8,
+      "Stars": 0,
+      "StorageSize": 23790015,
+      "License": "other",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "qwen2"
+      ],
+      "Architectures": [
+        "Qwen2ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [
+        "chat"
+      ],
+      "CreatedTime": 1780632490,
+      "LastUpdatedTime": 1780632669,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/AHN-Mamba2-for-Qwen-2.5-Instruct-3B"
+    },
+    {
+      "id": "bytedance-community/UI-TARS-7B-SFT",
+      "Name": "UI-TARS-7B-SFT",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 8,
+      "Stars": 0,
+      "StorageSize": 33181534190,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "qwen2_vl"
+      ],
+      "Architectures": [
+        "Qwen2VLForConditionalGeneration"
+      ],
+      "Tasks": [
+        {
+          "Name": "image-text-to-text",
+          "ChineseName": "视觉多模态理解"
+        }
+      ],
+      "Tags": [
+        "multimodal",
+        "gui"
+      ],
+      "CreatedTime": 1780635024,
+      "LastUpdatedTime": 1780635562,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/UI-TARS-7B-SFT"
+    },
+    {
+      "id": "bytedance-community/AHN-Mamba2-for-Qwen-2.5-Instruct-14B",
+      "Name": "AHN-Mamba2-for-Qwen-2.5-Instruct-14B",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 8,
+      "Stars": 0,
+      "StorageSize": 102802187,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "qwen2"
+      ],
+      "Architectures": [
+        "Qwen2ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [
+        "chat"
+      ],
+      "CreatedTime": 1780629347,
+      "LastUpdatedTime": 1780629407,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/AHN-Mamba2-for-Qwen-2.5-Instruct-14B"
+    },
+    {
+      "id": "bytedance-community/AHN-GDN-for-Qwen-2.5-Instruct-3B",
+      "Name": "AHN-GDN-for-Qwen-2.5-Instruct-3B",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 8,
+      "Stars": 0,
+      "StorageSize": 26009765,
+      "License": "other",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "qwen2"
+      ],
+      "Architectures": [
+        "Qwen2ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [
+        "chat"
+      ],
+      "CreatedTime": 1780629489,
+      "LastUpdatedTime": 1780629554,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/AHN-GDN-for-Qwen-2.5-Instruct-3B"
+    },
+    {
+      "id": "bytedance-community/Seed-X-Instruct-7B",
+      "Name": "Seed-X-Instruct-7B",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 8,
+      "Stars": 0,
+      "StorageSize": 15031809030,
+      "License": "other",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "mistral"
+      ],
+      "Architectures": [
+        "MistralForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "translation",
+          "ChineseName": "翻译"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1780630760,
+      "LastUpdatedTime": 1780631391,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Seed-X-Instruct-7B"
+    },
+    {
+      "id": "bytedance-community/AHN-GDN-for-Qwen-2.5-Instruct-7B",
+      "Name": "AHN-GDN-for-Qwen-2.5-Instruct-7B",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 8,
+      "Stars": 0,
+      "StorageSize": 42603433,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "qwen2"
+      ],
+      "Architectures": [
+        "Qwen2ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [
+        "chat"
+      ],
+      "CreatedTime": 1780634410,
+      "LastUpdatedTime": 1780634475,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/AHN-GDN-for-Qwen-2.5-Instruct-7B"
+    },
+    {
+      "id": "bytedance-community/AHN-DN-for-Qwen-2.5-Instruct-7B",
+      "Name": "AHN-DN-for-Qwen-2.5-Instruct-7B",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 8,
+      "Stars": 0,
+      "StorageSize": 36968068,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "qwen2"
+      ],
+      "Architectures": [
+        "Qwen2ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [
+        "chat"
+      ],
+      "CreatedTime": 1780632980,
+      "LastUpdatedTime": 1780633053,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/AHN-DN-for-Qwen-2.5-Instruct-7B"
+    },
+    {
+      "id": "bytedance-community/AHN-Mamba2-for-Qwen-2.5-Instruct-7B",
+      "Name": "AHN-Mamba2-for-Qwen-2.5-Instruct-7B",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 8,
+      "Stars": 0,
+      "StorageSize": 37178914,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "qwen2"
+      ],
+      "Architectures": [
+        "Qwen2ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [
+        "chat"
+      ],
+      "CreatedTime": 1780642065,
+      "LastUpdatedTime": 1780642174,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/AHN-Mamba2-for-Qwen-2.5-Instruct-7B"
+    },
+    {
+      "id": "bytedance-community/AHN-DN-for-Qwen-2.5-Instruct-14B",
+      "Name": "AHN-DN-for-Qwen-2.5-Instruct-14B",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 8,
+      "Stars": 0,
+      "StorageSize": 102288542,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "qwen2"
+      ],
+      "Architectures": [
+        "Qwen2ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [
+        "chat"
+      ],
+      "CreatedTime": 1780642494,
+      "LastUpdatedTime": 1780642635,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/AHN-DN-for-Qwen-2.5-Instruct-14B"
+    },
+    {
+      "id": "bytedance-community/AHN-DN-for-Qwen-2.5-Instruct-3B",
+      "Name": "AHN-DN-for-Qwen-2.5-Instruct-3B",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 8,
+      "Stars": 0,
+      "StorageSize": 23633009,
+      "License": "other",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "qwen2"
+      ],
+      "Architectures": [
+        "Qwen2ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [
+        "chat"
+      ],
+      "CreatedTime": 1780632672,
+      "LastUpdatedTime": 1780632766,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/AHN-DN-for-Qwen-2.5-Instruct-3B"
+    },
+    {
+      "id": "bytedance-community/Seed-OSS-36B-Base-woSyn",
+      "Name": "Seed-OSS-36B-Base-woSyn",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 8,
+      "Stars": 0,
+      "StorageSize": 72314507673,
+      "License": "apache-2.0",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "seed_oss"
+      ],
+      "Architectures": [
+        "SeedOssForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [
+        "vllm"
+      ],
+      "CreatedTime": 1780639621,
+      "LastUpdatedTime": 1780640590,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Seed-OSS-36B-Base-woSyn"
+    },
+    {
+      "id": "bytedance-community/Valley3-32B-Instruct",
+      "Name": "Valley3-32B-Instruct",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 8,
+      "Stars": 0,
+      "StorageSize": 68278612909,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "valley_omni"
+      ],
+      "Architectures": [
+        "ValleyOmniForConditionalGeneration"
+      ],
+      "Tasks": [],
+      "Tags": [],
+      "CreatedTime": 1780631939,
+      "LastUpdatedTime": 1780632945,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Valley3-32B-Instruct"
+    },
+    {
+      "id": "bytedance-community/MammothModa2-Preview",
+      "Name": "MammothModa2-Preview",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 8,
+      "Stars": 0,
+      "StorageSize": 37071952817,
+      "License": "",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "mammothmoda2"
+      ],
+      "Architectures": [
+        "Mammothmoda2Model"
+      ],
+      "Tasks": [],
+      "Tags": [],
+      "CreatedTime": 1780628754,
+      "LastUpdatedTime": 1780629192,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/MammothModa2-Preview"
+    },
+    {
+      "id": "bytedance-community/GRN",
+      "Name": "GRN",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 7,
+      "Stars": 0,
+      "StorageSize": 46002876910,
+      "License": "mit",
+      "Libraries": [
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "",
+          "ChineseName": ""
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1780633963,
+      "LastUpdatedTime": 1780934965,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/GRN"
+    },
+    {
+      "id": "bytedance-community/SeedVR2-3B",
+      "Name": "SeedVR2-3B",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 7,
+      "Stars": 0,
+      "StorageSize": 14581242625,
+      "License": "apache-2.0",
+      "Libraries": [
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "",
+          "ChineseName": ""
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1780643780,
+      "LastUpdatedTime": 1780644927,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/SeedVR2-3B"
+    },
+    {
+      "id": "bytedance-community/UI-TARS-72B-SFT",
+      "Name": "UI-TARS-72B-SFT",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 7,
+      "Stars": 0,
+      "StorageSize": 293638400474,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "qwen2_vl"
+      ],
+      "Architectures": [
+        "Qwen2VLForConditionalGeneration"
+      ],
+      "Tasks": [
+        {
+          "Name": "image-text-to-text",
+          "ChineseName": "视觉多模态理解"
+        }
+      ],
+      "Tags": [
+        "multimodal",
+        "gui"
+      ],
+      "CreatedTime": 1780643233,
+      "LastUpdatedTime": 1780646148,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/UI-TARS-72B-SFT"
+    },
+    {
+      "id": "bytedance-community/cudaLLM-8B",
+      "Name": "cudaLLM-8B",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 7,
+      "Stars": 0,
+      "StorageSize": 32778908491,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "qwen3"
+      ],
+      "Architectures": [
+        "Qwen3ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [
+        "code",
+        "CUDA"
+      ],
+      "CreatedTime": 1780637573,
+      "LastUpdatedTime": 1780637953,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/cudaLLM-8B"
+    },
+    {
+      "id": "bytedance-community/MammothModa2-Dev",
+      "Name": "MammothModa2-Dev",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 7,
+      "Stars": 0,
+      "StorageSize": 51059635711,
+      "License": "",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "mammothmoda2"
+      ],
+      "Architectures": [
+        "Mammothmoda2Model"
+      ],
+      "Tasks": [],
+      "Tags": [],
+      "CreatedTime": 1780631896,
+      "LastUpdatedTime": 1780632748,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/MammothModa2-Dev"
+    },
+    {
+      "id": "bytedance-community/cryofm-v2",
+      "Name": "cryofm-v2",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 6,
+      "Stars": 0,
+      "StorageSize": 2018511080,
+      "License": "apache-2.0",
+      "Libraries": [
+        "pytorch",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "",
+          "ChineseName": ""
+        }
+      ],
+      "Tags": [
+        "cryo-em",
+        "flow-matching",
+        "3d-density-maps",
+        "foundation-model",
+        "conditional-sampling"
+      ],
+      "CreatedTime": 1780632047,
+      "LastUpdatedTime": 1780632252,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/cryofm-v2"
+    },
+    {
+      "id": "bytedance-community/LatentSync-1.5",
+      "Name": "LatentSync-1.5",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 5,
+      "Stars": 0,
+      "StorageSize": 9822069461,
+      "License": "openrail++",
+      "Libraries": [
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [],
+      "Tags": [
+        "lipsync",
+        "video-editing"
+      ],
+      "CreatedTime": 1780639104,
+      "LastUpdatedTime": 1780639397,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/LatentSync-1.5"
+    },
+    {
+      "id": "bytedance-community/USO",
+      "Name": "USO",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 5,
+      "Stars": 0,
+      "StorageSize": 501477508,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "text-to-image-synthesis",
+          "ChineseName": "文本生成图片"
+        }
+      ],
+      "Tags": [
+        "image-generation",
+        "subject-personalization",
+        "style-transfer",
+        "Diffusion-Transformer"
+      ],
+      "CreatedTime": 1780645010,
+      "LastUpdatedTime": 1780645184,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/USO"
+    },
+    {
+      "id": "bytedance-community/OneReward",
+      "Name": "OneReward",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 5,
+      "Stars": 0,
+      "StorageSize": 47887135458,
+      "License": "cc-by-nc-4.0",
+      "Libraries": [
+        "pytorch",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "image-to-image",
+          "ChineseName": "图片生成图片"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1780638520,
+      "LastUpdatedTime": 1780639616,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/OneReward"
+    },
+    {
+      "id": "bytedance-community/Video-As-Prompt-CogVideoX-5B",
+      "Name": "Video-As-Prompt-CogVideoX-5B",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 5,
+      "Stars": 0,
+      "StorageSize": 32617582020,
+      "License": "apache-2.0",
+      "Libraries": [
+        "pytorch",
+        "safetensors",
+        "diffusers"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "image-to-video",
+          "ChineseName": "图片生成视频"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1780638373,
+      "LastUpdatedTime": 1780638656,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Video-As-Prompt-CogVideoX-5B"
+    },
+    {
+      "id": "bytedance-community/UI-TARS-72B-DPO",
+      "Name": "UI-TARS-72B-DPO",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 5,
+      "Stars": 0,
+      "StorageSize": 146827277882,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "qwen2_vl"
+      ],
+      "Architectures": [
+        "Qwen2VLForConditionalGeneration"
+      ],
+      "Tasks": [
+        {
+          "Name": "image-text-to-text",
+          "ChineseName": "视觉多模态理解"
+        }
+      ],
+      "Tags": [
+        "multimodal",
+        "gui"
+      ],
+      "CreatedTime": 1780630616,
+      "LastUpdatedTime": 1780632202,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/UI-TARS-72B-DPO"
+    },
+    {
+      "id": "bytedance-community/BFS-Prover-V2-32B",
+      "Name": "BFS-Prover-V2-32B",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 5,
+      "Stars": 0,
+      "StorageSize": 131071543260,
+      "License": "apache-2.0",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "qwen2"
+      ],
+      "Architectures": [
+        "Qwen2ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [
+        "lean4",
+        "step-prover"
+      ],
+      "CreatedTime": 1780629199,
+      "LastUpdatedTime": 1780630565,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/BFS-Prover-V2-32B"
+    },
+    {
+      "id": "bytedance-community/Sa2VA-InternVL3-2B",
+      "Name": "Sa2VA-InternVL3-2B",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 4,
+      "Stars": 0,
+      "StorageSize": 8673309781,
+      "License": "apache-2.0",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "sa2va_chat"
+      ],
+      "Architectures": [
+        "Sa2VAChatModel"
+      ],
+      "Tasks": [
+        {
+          "Name": "image-text-to-text",
+          "ChineseName": "视觉多模态理解"
+        }
+      ],
+      "Tags": [
+        "Sa2VA",
+        "custom_code"
+      ],
+      "CreatedTime": 1780644230,
+      "LastUpdatedTime": 1780645006,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Sa2VA-InternVL3-2B"
+    },
+    {
+      "id": "bytedance-community/Dolphin-1.5",
+      "Name": "Dolphin-1.5",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 4,
+      "Stars": 0,
+      "StorageSize": 807744997,
+      "License": "mit",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "vision-encoder-decoder"
+      ],
+      "Architectures": [
+        "VisionEncoderDecoderModel"
+      ],
+      "Tasks": [
+        {
+          "Name": "image-text-to-text",
+          "ChineseName": "视觉多模态理解"
+        }
+      ],
+      "Tags": [
+        "document-parsing",
+        "document-understanding",
+        "document-intelligence",
+        "ocr",
+        "layout-analysis",
+        "table-extraction",
+        "multimodal",
+        "vision-language-model"
+      ],
+      "CreatedTime": 1780640812,
+      "LastUpdatedTime": 1780640916,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Dolphin-1.5"
+    },
+    {
+      "id": "bytedance-community/Dolphin",
+      "Name": "Dolphin",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 4,
+      "Stars": 0,
+      "StorageSize": 807744997,
+      "License": "mit",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "vision-encoder-decoder"
+      ],
+      "Architectures": [
+        "VisionEncoderDecoderModel"
+      ],
+      "Tasks": [
+        {
+          "Name": "image-text-to-text",
+          "ChineseName": "视觉多模态理解"
+        }
+      ],
+      "Tags": [
+        "document-parsing",
+        "document-understanding",
+        "document-intelligence",
+        "ocr",
+        "layout-analysis",
+        "table-extraction",
+        "multimodal",
+        "vision-language-model"
+      ],
+      "CreatedTime": 1780638013,
+      "LastUpdatedTime": 1780638088,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Dolphin"
+    },
+    {
+      "id": "bytedance-community/cryofm-v1",
+      "Name": "cryofm-v1",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 4,
+      "Stars": 0,
+      "StorageSize": 2578421574,
+      "License": "apache-2.0",
+      "Libraries": [
+        "pytorch",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "",
+          "ChineseName": ""
+        }
+      ],
+      "Tags": [
+        "cryo-em",
+        "flow-matching",
+        "3d-density-maps",
+        "foundation-model"
+      ],
+      "CreatedTime": 1780634659,
+      "LastUpdatedTime": 1780634930,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/cryofm-v1"
+    },
+    {
+      "id": "bytedance-community/UMO",
+      "Name": "UMO",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 4,
+      "Stars": 0,
+      "StorageSize": 2570726770,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "text-to-image-synthesis",
+          "ChineseName": "文本生成图片"
+        }
+      ],
+      "Tags": [
+        "image-generation",
+        "subject-personalization",
+        "Diffusion-Transformer"
+      ],
+      "CreatedTime": 1780634359,
+      "LastUpdatedTime": 1780634655,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/UMO"
+    },
+    {
+      "id": "bytedance-community/XVerse",
+      "Name": "XVerse",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 4,
+      "Stars": 0,
+      "StorageSize": 3040654183,
+      "License": "apache-2.0",
+      "Libraries": [
+        "lora",
+        "safetensors",
+        "diffusers",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "text-to-image-synthesis",
+          "ChineseName": "文本生成图片"
+        }
+      ],
+      "Tags": [
+        "LoRA",
+        "personalization",
+        "multi-subject"
+      ],
+      "CreatedTime": 1780633345,
+      "LastUpdatedTime": 1780633456,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/XVerse"
+    },
+    {
+      "id": "bytedance-community/MegaTTS3",
+      "Name": "MegaTTS3",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 3,
+      "Stars": 0,
+      "StorageSize": 4269604674,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "text-to-speech",
+          "ChineseName": "语音合成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1780640867,
+      "LastUpdatedTime": 1780641234,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/MegaTTS3"
+    },
+    {
+      "id": "bytedance-community/EchoVideo",
+      "Name": "EchoVideo",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 3,
+      "Stars": 0,
+      "StorageSize": 11300095730,
+      "License": "other",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "image-to-video",
+          "ChineseName": "图片生成视频"
+        }
+      ],
+      "Tags": [
+        "EchoVideo",
+        "video-generation",
+        "id-preserving"
+      ],
+      "CreatedTime": 1780643649,
+      "LastUpdatedTime": 1780644169,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/EchoVideo"
+    },
+    {
+      "id": "bytedance-community/SimArt",
+      "Name": "SimArt",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 3,
+      "Stars": 0,
+      "StorageSize": 19149109311,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "",
+          "ChineseName": ""
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1780631394,
+      "LastUpdatedTime": 1780631785,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/SimArt"
+    },
+    {
+      "id": "bytedance-community/Phantom",
+      "Name": "Phantom",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 2,
+      "Stars": 0,
+      "StorageSize": 62986764099,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "image-to-video",
+          "ChineseName": "图片生成视频"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1780637980,
+      "LastUpdatedTime": 1780638512,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Phantom"
+    },
+    {
+      "id": "bytedance-community/BM-Model",
+      "Name": "BM-Model",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 2,
+      "Stars": 0,
+      "StorageSize": 23802923791,
+      "License": "other",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "image-to-image",
+          "ChineseName": "图片生成图片"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1780637958,
+      "LastUpdatedTime": 1780638599,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/BM-Model"
+    },
+    {
+      "id": "bytedance-community/BindWeave",
+      "Name": "BindWeave",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 2,
+      "Stars": 0,
+      "StorageSize": 65715364562,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "image-to-video",
+          "ChineseName": "图片生成视频"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1780638306,
+      "LastUpdatedTime": 1780638800,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/BindWeave"
+    },
+    {
+      "id": "bytedance-community/sd2.1-base-zsnr-laionaes6-perceptual",
+      "Name": "sd2.1-base-zsnr-laionaes6-perceptual",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 2,
+      "Stars": 0,
+      "StorageSize": 5161897939,
+      "License": "openrail++",
+      "Libraries": [
+        "lora",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "text-to-image-synthesis",
+          "ChineseName": "文本生成图片"
+        }
+      ],
+      "Tags": [
+        "stable-diffusion",
+        "text-to-image"
+      ],
+      "CreatedTime": 1780642972,
+      "LastUpdatedTime": 1780643268,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/sd2.1-base-zsnr-laionaes6-perceptual"
+    },
+    {
+      "id": "bytedance-community/Adversarial-Flow-Models",
+      "Name": "Adversarial-Flow-Models",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 2,
+      "Stars": 0,
+      "StorageSize": 135989024180,
+      "License": "mit",
+      "Libraries": [
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "",
+          "ChineseName": ""
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1780645015,
+      "LastUpdatedTime": 1780646598,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Adversarial-Flow-Models"
+    },
+    {
+      "id": "bytedance-community/UNO",
+      "Name": "UNO",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 2,
+      "Stars": 0,
+      "StorageSize": 1914035836,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "image-to-image",
+          "ChineseName": "图片生成图片"
+        }
+      ],
+      "Tags": [
+        "subject-personalization",
+        "image-generation"
+      ],
+      "CreatedTime": 1780640986,
+      "LastUpdatedTime": 1780641239,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/UNO"
+    },
+    {
+      "id": "bytedance-community/ID-Patch",
+      "Name": "ID-Patch",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 2,
+      "Stars": 0,
+      "StorageSize": 5670494458,
+      "License": "openrail++",
+      "Libraries": [
+        "safetensors",
+        "diffusers",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "",
+          "ChineseName": ""
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1780630439,
+      "LastUpdatedTime": 1780630724,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/ID-Patch"
+    },
+    {
+      "id": "bytedance-community/Attention2Probability",
+      "Name": "Attention2Probability",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 2,
+      "Stars": 0,
+      "StorageSize": 17818673916,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "",
+          "ChineseName": ""
+        }
+      ],
+      "Tags": [
+        "speech",
+        "translation"
+      ],
+      "CreatedTime": 1780628756,
+      "LastUpdatedTime": 1780629194,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Attention2Probability"
+    },
+    {
+      "id": "bytedance-community/LVFace",
+      "Name": "LVFace",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 1,
+      "Stars": 0,
+      "StorageSize": 4220486306,
+      "License": "mit",
+      "Libraries": [
+        "onnx",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "",
+          "ChineseName": ""
+        }
+      ],
+      "Tags": [
+        "Face",
+        "VIT",
+        "lvface"
+      ],
+      "CreatedTime": 1780640381,
+      "LastUpdatedTime": 1780640749,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/LVFace"
+    },
+    {
+      "id": "bytedance-community/SeedVR-7B",
+      "Name": "SeedVR-7B",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 1,
+      "Stars": 0,
+      "StorageSize": 33962978536,
+      "License": "apache-2.0",
+      "Libraries": [
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "",
+          "ChineseName": ""
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1780633312,
+      "LastUpdatedTime": 1780634168,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/SeedVR-7B"
+    },
+    {
+      "id": "bytedance-community/Dreamfit",
+      "Name": "Dreamfit",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 1,
+      "Stars": 0,
+      "StorageSize": 6120188297,
+      "License": "",
+      "Libraries": [
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "",
+          "ChineseName": ""
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1780631365,
+      "LastUpdatedTime": 1780631893,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Dreamfit"
+    },
+    {
+      "id": "bytedance-community/HuMo",
+      "Name": "HuMo",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 1,
+      "Stars": 0,
+      "StorageSize": 75384638295,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "onnx",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "image-to-video",
+          "ChineseName": "图片生成视频"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1780635153,
+      "LastUpdatedTime": 1780635937,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/HuMo"
+    },
+    {
+      "id": "bytedance-community/ATI",
+      "Name": "ATI",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 1,
+      "Stars": 0,
+      "StorageSize": 65643079715,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "i2v"
+      ],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "image-to-video",
+          "ChineseName": "图片生成视频"
+        }
+      ],
+      "Tags": [
+        "videogen"
+      ],
+      "CreatedTime": 1780638604,
+      "LastUpdatedTime": 1780639777,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/ATI"
+    },
+    {
+      "id": "bytedance-community/Make-An-Audio-2",
+      "Name": "Make-An-Audio-2",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 0,
+      "Stars": 0,
+      "StorageSize": 7308073455,
+      "License": "mit",
+      "Libraries": [
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "",
+          "ChineseName": ""
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1780634934,
+      "LastUpdatedTime": 1780635021,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Make-An-Audio-2"
+    },
+    {
+      "id": "bytedance-community/VINCIE-7B",
+      "Name": "VINCIE-7B",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 0,
+      "Stars": 0,
+      "StorageSize": 66342703597,
+      "License": "apache-2.0",
+      "Libraries": [
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "",
+          "ChineseName": ""
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1780629565,
+      "LastUpdatedTime": 1781652352,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/VINCIE-7B"
+    },
+    {
+      "id": "bytedance-community/bamboo_mixer",
+      "Name": "bamboo_mixer",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 0,
+      "Stars": 0,
+      "StorageSize": 294319338,
+      "License": "cc-by-4.0",
+      "Libraries": [
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "",
+          "ChineseName": ""
+        }
+      ],
+      "Tags": [
+        "materials-science",
+        "chemistry",
+        "electrolyte-design"
+      ],
+      "CreatedTime": 1780634478,
+      "LastUpdatedTime": 1781636953,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/bamboo_mixer"
+    },
+    {
+      "id": "bytedance-community/ChatTS-14B",
+      "Name": "ChatTS-14B",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 0,
+      "Stars": 0,
+      "StorageSize": 29768984804,
+      "License": "apache-2.0",
+      "Libraries": [
+        "pytorch",
+        "transformer"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "chatts"
+      ],
+      "Architectures": [
+        "Qwen2TSForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1780641627,
+      "LastUpdatedTime": 1780642232,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/ChatTS-14B"
+    },
+    {
+      "id": "bytedance-community/RealCustom",
+      "Name": "RealCustom",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 0,
+      "Stars": 0,
+      "StorageSize": 21871538520,
+      "License": "cc-by-nc-nd-4.0",
+      "Libraries": [
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "text-to-image-synthesis",
+          "ChineseName": "文本生成图片"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1780635197,
+      "LastUpdatedTime": 1780635661,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/RealCustom"
+    },
+    {
+      "id": "bytedance-community/sd2.1-base-zsnr-laionaes6",
+      "Name": "sd2.1-base-zsnr-laionaes6",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 0,
+      "Stars": 0,
+      "StorageSize": 5161897826,
+      "License": "openrail++",
+      "Libraries": [
+        "lora",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "text-to-image-synthesis",
+          "ChineseName": "文本生成图片"
+        }
+      ],
+      "Tags": [
+        "stable-diffusion",
+        "text-to-image"
+      ],
+      "CreatedTime": 1780640753,
+      "LastUpdatedTime": 1780641149,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/sd2.1-base-zsnr-laionaes6"
+    },
+    {
+      "id": "bytedance-community/LatentSync",
+      "Name": "LatentSync",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 0,
+      "Stars": 0,
+      "StorageSize": 8032494985,
+      "License": "openrail++",
+      "Libraries": [
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [],
+      "Tags": [
+        "video-to-video"
+      ],
+      "CreatedTime": 1780638091,
+      "LastUpdatedTime": 1780638369,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/LatentSync"
+    },
+    {
+      "id": "bytedance-community/ChatTS-8B",
+      "Name": "ChatTS-8B",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 0,
+      "Stars": 0,
+      "StorageSize": 16533429087,
+      "License": "apache-2.0",
+      "Libraries": [
+        "pytorch",
+        "transformer"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "qwen3ts"
+      ],
+      "Architectures": [
+        "Qwen3TSForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1780632769,
+      "LastUpdatedTime": 1780633079,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/ChatTS-8B"
+    },
+    {
+      "id": "bytedance-community/FaceCLIP",
+      "Name": "FaceCLIP",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 0,
+      "Stars": 0,
+      "StorageSize": 44646162100,
+      "License": "cc-by-nc-4.0",
+      "Libraries": [
+        "lora",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "text-to-image-synthesis",
+          "ChineseName": "文本生成图片"
+        }
+      ],
+      "Tags": [
+        "Text-to-Image",
+        "SDXL-base-1.0",
+        "FLUX.1-dev",
+        "subject-personalization"
+      ],
+      "CreatedTime": 1780635326,
+      "LastUpdatedTime": 1780636149,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/FaceCLIP"
+    },
+    {
+      "id": "bytedance-community/VINCIE-3B",
+      "Name": "VINCIE-3B",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 0,
+      "Stars": 0,
+      "StorageSize": 42907479510,
+      "License": "apache-2.0",
+      "Libraries": [
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "image-to-image",
+          "ChineseName": "图片生成图片"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1780632256,
+      "LastUpdatedTime": 1780633307,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/VINCIE-3B"
+    },
+    {
+      "id": "bytedance-community/sd2.1-base-zsnr-laionaes5",
+      "Name": "sd2.1-base-zsnr-laionaes5",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 0,
+      "Stars": 0,
+      "StorageSize": 5161897259,
+      "License": "openrail++",
+      "Libraries": [
+        "lora",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "text-to-image-synthesis",
+          "ChineseName": "文本生成图片"
+        }
+      ],
+      "Tags": [
+        "stable-diffusion",
+        "text-to-image"
+      ],
+      "CreatedTime": 1780631789,
+      "LastUpdatedTime": 1780632043,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/sd2.1-base-zsnr-laionaes5"
+    },
+    {
+      "id": "bytedance-community/SeedVR-3B",
+      "Name": "SeedVR-3B",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 0,
+      "Stars": 0,
+      "StorageSize": 14570294157,
+      "License": "apache-2.0",
+      "Libraries": [
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "",
+          "ChineseName": ""
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1780629196,
+      "LastUpdatedTime": 1780629485,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/SeedVR-3B"
+    },
+    {
+      "id": "bytedance-community/HLLM",
+      "Name": "HLLM",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 0,
+      "Stars": 0,
+      "StorageSize": 136945589900,
+      "License": "apache-2.0",
+      "Libraries": [
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "",
+          "ChineseName": ""
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1780640960,
+      "LastUpdatedTime": 1780643637,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/HLLM"
+    },
+    {
+      "id": "bytedance-community/ConfRover-base-20M-v1.0",
+      "Name": "ConfRover-base-20M-v1.0",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 0,
+      "Stars": 0,
+      "StorageSize": 78748520,
+      "License": "apache-2.0",
+      "Libraries": [
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "",
+          "ChineseName": ""
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1780645187,
+      "LastUpdatedTime": 1780645479,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/ConfRover-base-20M-v1.0"
+    },
+    {
+      "id": "bytedance-community/Tar-TA-Tok",
+      "Name": "Tar-TA-Tok",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 0,
+      "Stars": 0,
+      "StorageSize": 10241401858,
+      "License": "apache-2.0",
+      "Libraries": [
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "",
+          "ChineseName": ""
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1780642178,
+      "LastUpdatedTime": 1780642483,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/Tar-TA-Tok"
+    },
+    {
+      "id": "bytedance-community/shot2story",
+      "Name": "shot2story",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 0,
+      "Stars": 0,
+      "StorageSize": 5964097207,
+      "License": "",
+      "Libraries": [
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "visual-question-answering",
+          "ChineseName": "视觉问答"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1780641857,
+      "LastUpdatedTime": 1780642061,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/shot2story"
+    },
+    {
+      "id": "bytedance-community/feature-preserve-portrait-editing",
+      "Name": "feature-preserve-portrait-editing",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 0,
+      "Stars": 0,
+      "StorageSize": 6883070407,
+      "License": "creativeml-openrail-m",
+      "Libraries": [
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "",
+          "ChineseName": ""
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1780637826,
+      "LastUpdatedTime": 1780638008,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/feature-preserve-portrait-editing"
+    },
+    {
+      "id": "bytedance-community/CascadeV",
+      "Name": "CascadeV",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 0,
+      "Stars": 0,
+      "StorageSize": 912346830,
+      "License": "openrail++",
+      "Libraries": [
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "",
+          "ChineseName": ""
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1780635664,
+      "LastUpdatedTime": 1780635778,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/CascadeV"
+    },
+    {
+      "id": "bytedance-community/NEVC1.0",
+      "Name": "NEVC1.0",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 0,
+      "Stars": 0,
+      "StorageSize": 206881261,
+      "License": "bsd-3-clause-clear",
+      "Libraries": [
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "",
+          "ChineseName": ""
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1780634156,
+      "LastUpdatedTime": 1780634356,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/NEVC1.0"
+    },
+    {
+      "id": "bytedance-community/ConfRover-interp-20M-v1.0",
+      "Name": "ConfRover-interp-20M-v1.0",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 0,
+      "Stars": 0,
+      "StorageSize": 78554072,
+      "License": "apache-2.0",
+      "Libraries": [
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "",
+          "ChineseName": ""
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1780633368,
+      "LastUpdatedTime": 1780633433,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/ConfRover-interp-20M-v1.0"
+    },
+    {
+      "id": "bytedance-community/SAIL-7B",
+      "Name": "SAIL-7B",
+      "Path": "bytedance-community",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 0,
+      "Stars": 0,
+      "StorageSize": 14509955819,
+      "License": "apache-2.0",
+      "Libraries": [
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "mistral"
+      ],
+      "Architectures": [
+        "MMistralForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "image-text-to-text",
+          "ChineseName": "视觉多模态理解"
+        }
+      ],
+      "Tags": [
+        "SAIL"
+      ],
+      "CreatedTime": 1780632874,
+      "LastUpdatedTime": 1780633221,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/bytedance-community/SAIL-7B"
+    }
+  ]
+}

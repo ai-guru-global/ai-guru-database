@@ -28,6 +28,7 @@ updated: '2026-06-15'
 |------|------|----------|
 | [RAG Systems](./RAG_Systems.md) | RAG 完整技术体系：索引、检索、生成、评估 | 系统学习 |
 | [RAG Advanced 2026](./RAG_Advanced_2026.md) | 混合检索、重排序、Agentic RAG | 进阶学习 |
+| [Agentic RAG 应用大白话](./Agentic_RAG_Applications_for_dummy.md) | Agentic RAG、Text2SQL、代码生成工作流大白话 | 初学者 |
 | [Multimodal RAG 2026](./Multimodal_RAG_Architecture_2026.md) | 多模态 RAG：复杂 PDF 解析、视频 RAG、ColPali 架构 | 进阶学习 |
 | [Matryoshka Representation Learning Deep Dive](./Matryoshka_Representation_Learning_Deep_Dive.md) | MRL 可截断嵌入：精度与成本的动态平衡 | 进阶学习 |
 | [Spring AI RAG Deep Dive](./Spring_AI_RAG_Deep_Dive.md) | Spring AI 生态中的 RAG 实现 | Java 开发者 |
@@ -125,6 +126,10 @@ RAG 的生成阶段对 TTFT（首个 token 时间）和前缀缓存命中率非�
 - [[09_Deployment_Inference/vLLM_Deep_Dive|vLLM 深度解析]]
 - [[09_Deployment_Inference/SGLang_Deep_Dive|SGLang 深度解析]]
 - [[09_Deployment_Inference/Groq_Deep_Dive|Groq 深度解析]]
+- [[concepts/agentic-rag|Agentic RAG]]
+- [[concepts/text2sql|Text2SQL]]
+- [[concepts/code-generation-workflow|代码生成工作流]]
+- [[11_RAG_Systems/Agentic_RAG_Applications_for_dummy|Agentic RAG 应用大白话]]
 
 ## 新增页面
 

@@ -11,6 +11,8 @@ relationships:
     type: optimized_by
   - target: "concepts/multi-head-latent-attention"
     type: compressed_by
+  - target: "concepts/kv-cache-compression"
+    type: generalized_by
   - target: "09_Deployment_Inference/KV_Cache_Deep_Dive"
     type: deepened_by
 sources:
@@ -125,3 +127,4 @@ KV Cache 优化技术栈（从底到顶叠加）
 - [[concepts/model-deployment]] — 模型部署全景
 - [[concepts/long-context-models]] — 长上下文模型
 - [[09_Deployment_Inference/KV_Cache_Deep_Dive]] — KV Cache 深度研究：从原理到工程实践
+- [[concepts/kv-cache-compression]] — KV Cache 压缩

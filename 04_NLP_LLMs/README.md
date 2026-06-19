@@ -4,7 +4,7 @@ category: 04-nlp-llms
 tags: ["nlp", "llm", "transformer", "gpt", "bert"]
 summary: "本章系统讲解自然语言处理的现代范式，从序列模型（RNN/LSTM）演进到 Transformer 架构，再到大语言模型（GPT/BERT）、微调技术（LoRA/QLoRA）和提示词工程。这是当前 AI 应用最活跃的领域。"
 created: 2026-05-31
-updated: 2026-05-31
+updated: 2026-06-16
 ---
 
 # 04 自然语言处理与大模型 (NLP & LLMs)
@@ -69,6 +69,7 @@ flowchart LR
 | 大语言模型架构 (LLM Architectures) | 进阶 | GPT（Decoder-only）、BERT（Encoder-only）、MoE，预训练范式 | [LLM_Architectures.md](./LLM_Architectures/LLM_Architectures.md) |
 | **推理模型 2026 (Reasoning Models)** | **2026 新增** | **o1/o3 推理模型、思维链进化、Test-Time Compute Scaling** | **[Reasoning_Models_2026.md](./LLM_Architectures/Reasoning_Models_2026.md)** |
 | **长上下文模型 2026 (Long Context)** | **2026 新增** | **100K-1M Token处理、稀疏注意力、KV Cache优化** | **[Long_Context_Models_2026.md](./Long_Context_Models_2026.md)** |
+| **架构演进大白话 (Architecture Evolution for Dummy)** | **2026 新增** | **KV 压缩、Mamba、RetNet 大白话解释** | **[Architecture_Evolution_for_dummy.md](./Architecture_Evolution_for_dummy.md)** |
 | **多模态模型 (Multimodal)** | 进阶 | **视觉-语言统一架构、GPT-4V/Gemini/LLaVA** | **[Multimodal_Architectures_2026.md](./Multimodal_Models/Multimodal_Architectures_2026.md)** |
 | 微调技术 (Fine-tuning Techniques) | 实战 | LoRA、QLoRA、Prefix Tuning，参数高效微调方法 | [Fine_tuning_Techniques.md](./Fine_tuning_Techniques/Fine_tuning_Techniques.md) |
 | 提示词工程 (Prompt Engineering) | 实战 | Few-shot、Chain-of-Thought、提示优化，零代码调用 LLM | [Prompt_Engineering/](./Prompt_Engineering/) |
@@ -171,6 +172,10 @@ flowchart LR
 - [[04_NLP_LLMs/Speech_Audio_AI/README|语音与音频 AI (Speech & Audio AI)]]
 
 - [[concepts/long-context-models|Long Context Models]]
+- [[concepts/kv-cache-compression|KV Cache 压缩]]
+- [[concepts/mamba|Mamba]]
+- [[concepts/retnet|RetNet]]
+- [[04_NLP_LLMs/Architecture_Evolution_for_dummy|架构演进大白话]]
 
 - [[concepts/sequence-models|Sequence Models]]
 

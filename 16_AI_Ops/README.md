@@ -49,6 +49,7 @@ updated: 2026-06-16
 
 | 文档 | 内容 | 适用角色 |
 |------|------|----------|
+| [Prometheus + Grafana Deep Dive](./Prometheus_Grafana_Deep_Dive.md) | AI 系统监控与可视化基座：GPU/推理/训练指标 | SRE、平台工程师 |
 | [Guardrails Deep Dive](./Guardrails_Deep_Dive.md) | LLM 输入/输出安全护栏 | 安全工程师 |
 | [PromptLayer Deep Dive](./PromptLayer_Deep_Dive.md) | Prompt 版本管理与追踪 | Prompt 工程师 |
 

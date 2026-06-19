@@ -1,10 +1,10 @@
 ---
 title: 中国大模型生态全景 (Chinese LLM Ecosystem)
 category: 04-nlp-llms
-tags: ["chinese-llm", "deepseek", "qwen", "glm", "kimi", "minimax", "baidu", "baichuan", "yi", "tencent", "iflytek", "sensetime", "internlm", "bytedance", "stepfun", "xiaomi", "moe", "open-source"]
+tags: ["chinese-llm", "deepseek", "qwen", "glm", "kimi", "minimax", "baidu", "baichuan", "yi", "tencent", "iflytek", "sensetime", "internlm", "bytedance", "stepfun", "xiaomi", "modelscope", "moe", "open-source"]
 summary: "系统梳理中国 15 家大模型厂商的技术路线、模型矩阵、核心创新与 Benchmark 对比，覆盖第一梯队（DeepSeek/Qwen/GLM/Kimi/MiniMax/MiMo）和第二梯队（百度/百川/零一万物/阶跃星辰/腾讯/讯飞/商汤/InternLM/字节跳动）。"
 created: 2026-06-01
-updated: 2026-06-17
+updated: 2026-06-19
 ---
 
 # 中国大模型生态全景 (Chinese LLM Ecosystem)
@@ -183,6 +183,14 @@ flowchart TD
 - [[Chinese_LLM_Comparison_Matrix]] — 全厂商技术/Benchmark/定价/选型对比
 - [[Chinese_LLM_Training_Inference_Platforms]] — 训推平台实战参考（分布式训练/MoE/RLHF/推理优化）
 
+### ModelScope 模型托管数据
+
+> 基于 ModelScope 魔搭社区官方 API 全量抓取（2026-06-19，共 1,621 个官方模型、1.97 亿次下载）
+
+- [[ModelScope_Model_Catalog]] — 15 家厂商 ModelScope 模型目录（组织信息 + Top 模型精选 + 统计）
+- [[ModelScope_Model_Index]] — 全量 1,621 个模型完整索引表（可检索参考）
+- 原始数据：`_sources/modelscope/raw/`（含可复跑抓取脚本）
+
 ---
 
 ## 关键术语速查 (Key Terms)
@@ -199,4 +207,4 @@ flowchart TD
 
 ---
 
-*Last updated: 2026-06-12*
+*Last updated: 2026-06-19*

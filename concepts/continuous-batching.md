@@ -7,6 +7,12 @@ relationships:
     type: optimizes
   - target: "concepts/paged-attention"
     type: synergizes_with
+  - target: "concepts/dynamic-batch-scheduling"
+    type: related_to
+  - target: "concepts/sglang"
+    type: used_by
+  - target: "concepts/tensorrt-llm"
+    type: used_by
 sources:
   - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
   - 09_Deployment_Inference/vLLM_Deep_Dive.md
@@ -94,3 +100,6 @@ Step 4: Decode A, B, C, D
 - [[09_Deployment_Inference/TGI_Deep_Dive]] — TGI（Continuous Batching）
 - [[09_Deployment_Inference/LMDeploy_Deep_Dive]] — LMDeploy（Continuous Batching）
 - [[09_Deployment_Inference/TensorRT_LLM_Deep_Dive]] — TensorRT-LLM（In-Flight Batching）
+- [[concepts/dynamic-batch-scheduling]] — 动态批调度
+- [[concepts/sglang]] — SGLang
+- [[concepts/tensorrt-llm]] — TensorRT-LLM

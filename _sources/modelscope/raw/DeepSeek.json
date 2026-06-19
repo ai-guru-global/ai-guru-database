@@ -1,0 +1,3341 @@
+{
+  "label": "DeepSeek",
+  "namespace": "deepseek-ai",
+  "organization": {
+    "ApplyFailureReason": "",
+    "ApplyReason": "",
+    "Avatar": "https://resouces.modelscope.cn/avatar/6c8d6d52-b760-4538-9b32-35dd5ebecc68.jpg",
+    "CreateCompetition": false,
+    "CreatedBy": "Cherrytest",
+    "Description": "[\"root\",{},[\"p\",{},[\"span\",{\"data-type\":\"text\"},[\"span\",{\"data-type\":\"leaf\"},\"\"]]]]",
+    "DisplayUrl": "",
+    "Email": "",
+    "FromSite": "",
+    "FullName": "DeepSeek",
+    "GithubAddress": " https://www.deepseek.com/",
+    "GmtCreated": "2023-11-02T14:39:45Z",
+    "GmtModified": "2025-11-21T08:30:42Z",
+    "Id": 405,
+    "InitAdminMembers": "",
+    "IsApply": false,
+    "IsCertification": "",
+    "Mobile": "",
+    "Name": "deepseek-ai",
+    "Path": "",
+    "Roles": null,
+    "StarCnt": 0,
+    "Status": 0,
+    "SubscribeVo": null,
+    "Type": 2
+  },
+  "model_count": 88,
+  "stats": {
+    "total_counts": [
+      {
+        "term": "deepseek-ai",
+        "TotalCount": 420
+      },
+      {
+        "term": "deepseek",
+        "TotalCount": 1992
+      }
+    ],
+    "pages_fetched": 25,
+    "candidates": 176
+  },
+  "models": [
+    {
+      "id": "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+      "Name": "DeepSeek-R1-Distill-Qwen-32B",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 2691813,
+      "Stars": 258,
+      "StorageSize": 65535737090,
+      "License": "mit",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "qwen2"
+      ],
+      "Architectures": [
+        "Qwen2ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1737386489,
+      "LastUpdatedTime": 1740435522,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B"
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
+      "Name": "DeepSeek-R1-Distill-Llama-70B",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 2109015,
+      "Stars": 114,
+      "StorageSize": 141117442518,
+      "License": "mit",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "llama"
+      ],
+      "Architectures": [
+        "LlamaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1737386076,
+      "LastUpdatedTime": 1740436377,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/DeepSeek-R1-Distill-Llama-70B"
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+      "Name": "DeepSeek-R1-Distill-Qwen-1.5B",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 1934828,
+      "Stars": 326,
+      "StorageSize": 3562046176,
+      "License": "mit",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "qwen2"
+      ],
+      "Architectures": [
+        "Qwen2ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1737386203,
+      "LastUpdatedTime": 1741335540,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B"
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-V3.1-Terminus",
+      "Name": "DeepSeek-V3.1-Terminus",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 1881594,
+      "Stars": 68,
+      "StorageSize": 688605863826,
+      "License": "mit",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "deepseek_v3"
+      ],
+      "Architectures": [
+        "DeepseekV3ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1758517020,
+      "LastUpdatedTime": 1758546857,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/DeepSeek-V3.1-Terminus"
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-V3.2-Exp",
+      "Name": "DeepSeek-V3.2-Exp",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 1828145,
+      "Stars": 146,
+      "StorageSize": 689500030738,
+      "License": "mit",
+      "Libraries": [
+        "safetensors"
+      ],
+      "Frameworks": [],
+      "ModelType": [
+        "deepseek_v32"
+      ],
+      "Architectures": [
+        "DeepseekV32ForCausalLM"
+      ],
+      "Tasks": [],
+      "Tags": [],
+      "CreatedTime": 1759128981,
+      "LastUpdatedTime": 1763433922,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/DeepSeek-V3.2-Exp"
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-OCR",
+      "Name": "DeepSeek-OCR",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "Lyxia",
+      "Description": "",
+      "Downloads": 1673233,
+      "Stars": 273,
+      "StorageSize": 6684382234,
+      "License": "mit",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "deepseek_vl_v2"
+      ],
+      "Architectures": [
+        "DeepseekOCRForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "image-text-to-text",
+          "ChineseName": "视觉多模态理解"
+        }
+      ],
+      "Tags": [
+        "deepseek",
+        "vision-language",
+        "ocr",
+        "custom_code"
+      ],
+      "CreatedTime": 1760950609,
+      "LastUpdatedTime": 1763266239,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/DeepSeek-OCR"
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-R1",
+      "Name": "DeepSeek-R1",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 925008,
+      "Stars": 1352,
+      "StorageSize": 688604361453,
+      "License": "mit",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "deepseek_v3"
+      ],
+      "Architectures": [
+        "DeepseekV3ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "",
+          "ChineseName": ""
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1737352135,
+      "LastUpdatedTime": 1741335540,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/DeepSeek-R1"
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+      "Name": "DeepSeek-R1-Distill-Qwen-7B",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 909392,
+      "Stars": 422,
+      "StorageSize": 15239131496,
+      "License": "mit",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "qwen2"
+      ],
+      "Architectures": [
+        "Qwen2ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1737387830,
+      "LastUpdatedTime": 1740436476,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B"
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-V2-Lite-Chat",
+      "Name": "DeepSeek-V2-Lite-Chat",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 789573,
+      "Stars": 17,
+      "StorageSize": 31418838137,
+      "License": "other",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "deepseek_v2"
+      ],
+      "Architectures": [
+        "DeepseekV2ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1716194220,
+      "LastUpdatedTime": 1721996356,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/DeepSeek-V2-Lite-Chat"
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct",
+      "Name": "DeepSeek-Coder-V2-Lite-Instruct",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 667837,
+      "Stars": 31,
+      "StorageSize": 31418823408,
+      "License": "other",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "deepseek_v2"
+      ],
+      "Architectures": [
+        "DeepseekV2ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1718630564,
+      "LastUpdatedTime": 1735167014,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct"
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-V2-Chat",
+      "Name": "DeepSeek-V2-Chat",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 622050,
+      "Stars": 42,
+      "StorageSize": 471493904643,
+      "License": "other",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "deepseek_v2"
+      ],
+      "Architectures": [
+        "DeepseekV2ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1715005062,
+      "LastUpdatedTime": 1740571624,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/DeepSeek-V2-Chat"
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-R1-0528",
+      "Name": "DeepSeek-R1-0528",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 579518,
+      "Stars": 324,
+      "StorageSize": 688603905611,
+      "License": "mit",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "deepseek_v3"
+      ],
+      "Architectures": [
+        "DeepseekV3ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1748447303,
+      "LastUpdatedTime": 1748518810,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/DeepSeek-R1-0528"
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-V4-Flash",
+      "Name": "DeepSeek-V4-Flash",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 550197,
+      "Stars": 268,
+      "StorageSize": 159634525789,
+      "License": "mit",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "deepseek_v4"
+      ],
+      "Architectures": [
+        "DeepseekV4ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1776837989,
+      "LastUpdatedTime": 1780898800,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/DeepSeek-V4-Flash"
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+      "Name": "DeepSeek-R1-Distill-Qwen-14B",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 465606,
+      "Stars": 173,
+      "StorageSize": 29548013462,
+      "License": "mit",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "qwen2"
+      ],
+      "Architectures": [
+        "Qwen2ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1737385213,
+      "LastUpdatedTime": 1740436372,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B"
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-V3.2",
+      "Name": "DeepSeek-V3.2",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 368509,
+      "Stars": 443,
+      "StorageSize": 689508116631,
+      "License": "",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "deepseek_v32"
+      ],
+      "Architectures": [
+        "DeepseekV32ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1764556517,
+      "LastUpdatedTime": 1764586285,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/DeepSeek-V3.2"
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-V3",
+      "Name": "DeepSeek-V3",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 330117,
+      "Stars": 255,
+      "StorageSize": 688603931820,
+      "License": "",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "deepseek_v3"
+      ],
+      "Architectures": [
+        "DeepseekV3ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1735258600,
+      "LastUpdatedTime": 1740373328,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/DeepSeek-V3"
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-Coder-V2-Base",
+      "Name": "DeepSeek-Coder-V2-Base",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 310782,
+      "Stars": 0,
+      "StorageSize": 471493890491,
+      "License": "other",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "deepseek_v2"
+      ],
+      "Architectures": [
+        "DeepseekV2ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "",
+          "ChineseName": ""
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1718631179,
+      "LastUpdatedTime": 1721999483,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/DeepSeek-Coder-V2-Base"
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-Coder-V2-Instruct",
+      "Name": "DeepSeek-Coder-V2-Instruct",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 289065,
+      "Stars": 7,
+      "StorageSize": 471493890549,
+      "License": "other",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "deepseek_v2"
+      ],
+      "Architectures": [
+        "DeepseekV2ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1718852447,
+      "LastUpdatedTime": 1724246335,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/DeepSeek-Coder-V2-Instruct"
+    },
+    {
+      "id": "deepseek-ai/deepseek-coder-6.7b-instruct",
+      "Name": "deepseek-coder-6.7b-instruct",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "Deepseek Coder comprises a series of code language models trained on both 87% code and 13% natural language in English and Chinese, with each model pre-trained on 2T tokens. We provide various sizes of the code model, ranging from 1B to 33B versions. Each model is pre-trained on project-level code corpus by employing a window size of 16K and a extra fill-in-the-blank task, to support project-level code completion and infilling. For coding capabilities, Deepseek Coder achieves state-of-the-art performance among open-source code models on multiple programming languages and various benchmarks.",
+      "Downloads": 253743,
+      "Stars": 30,
+      "StorageSize": 26963627574,
+      "License": "other",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "llama"
+      ],
+      "Architectures": [
+        "LlamaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1698936173,
+      "LastUpdatedTime": 1740589946,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/deepseek-coder-6.7b-instruct"
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-V4-Pro",
+      "Name": "DeepSeek-V4-Pro",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 227591,
+      "Stars": 419,
+      "StorageSize": 864744342196,
+      "License": "mit",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "deepseek_v4"
+      ],
+      "Architectures": [
+        "DeepseekV4ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1776838046,
+      "LastUpdatedTime": 1780898785,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/DeepSeek-V4-Pro"
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+      "Name": "DeepSeek-R1-0528-Qwen3-8B",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 199879,
+      "Stars": 122,
+      "StorageSize": 16388928144,
+      "License": "mit",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "qwen3"
+      ],
+      "Architectures": [
+        "Qwen3ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1748517224,
+      "LastUpdatedTime": 1748524622,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B"
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-OCR-2",
+      "Name": "DeepSeek-OCR-2",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 170616,
+      "Stars": 81,
+      "StorageSize": 6789306766,
+      "License": "apache-2.0",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "deepseek_vl_v2"
+      ],
+      "Architectures": [
+        "DeepseekOCR2ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "image-text-to-text",
+          "ChineseName": "视觉多模态理解"
+        }
+      ],
+      "Tags": [
+        "deepseek",
+        "vision-language",
+        "ocr",
+        "custom_code"
+      ],
+      "CreatedTime": 1769492011,
+      "LastUpdatedTime": 1770121021,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/DeepSeek-OCR-2"
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+      "Name": "DeepSeek-R1-Distill-Llama-8B",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 152761,
+      "Stars": 78,
+      "StorageSize": 16070465116,
+      "License": "mit",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "llama"
+      ],
+      "Architectures": [
+        "LlamaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1737384520,
+      "LastUpdatedTime": 1740411173,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/DeepSeek-R1-Distill-Llama-8B"
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-V2-Lite",
+      "Name": "DeepSeek-V2-Lite",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 134306,
+      "Stars": 5,
+      "StorageSize": 31418838135,
+      "License": "other",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "deepseek_v2"
+      ],
+      "Architectures": [
+        "DeepseekV2ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1716195937,
+      "LastUpdatedTime": 1721996336,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/DeepSeek-V2-Lite"
+    },
+    {
+      "id": "deepseek-ai/deepseek-moe-16b-chat",
+      "Name": "deepseek-moe-16b-chat",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 128480,
+      "Stars": 8,
+      "StorageSize": 32757324579,
+      "License": "other",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "deepseek"
+      ],
+      "Architectures": [
+        "DeepseekForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1704968246,
+      "LastUpdatedTime": 1740591615,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/deepseek-moe-16b-chat"
+    },
+    {
+      "id": "deepseek-ai/Janus-Pro-7B",
+      "Name": "Janus-Pro-7B",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 125630,
+      "Stars": 150,
+      "StorageSize": 14846642302,
+      "License": "mit",
+      "Libraries": [
+        "lora",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "multi_modality"
+      ],
+      "Architectures": null,
+      "Tasks": [
+        {
+          "Name": "any-to-any",
+          "ChineseName": "统一多模态"
+        }
+      ],
+      "Tags": [
+        "muiltimodal",
+        "text-to-image",
+        "unified-model"
+      ],
+      "CreatedTime": 1738023180,
+      "LastUpdatedTime": 1738411596,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/Janus-Pro-7B"
+    },
+    {
+      "id": "deepseek-ai/deepseek-llm-67b-chat",
+      "Name": "deepseek-llm-67b-chat",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 108944,
+      "Stars": 5,
+      "StorageSize": 134854991407,
+      "License": "other",
+      "Libraries": [
+        "pytorch",
+        "transformer"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "llama"
+      ],
+      "Architectures": [
+        "LlamaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1701272379,
+      "LastUpdatedTime": 1740583852,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/deepseek-llm-67b-chat"
+    },
+    {
+      "id": "deepseek-ai/deepseek-vl2-tiny",
+      "Name": "deepseek-vl2-tiny",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 99227,
+      "Stars": 19,
+      "StorageSize": 6748032779,
+      "License": "other",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "deepseek_vl_v2"
+      ],
+      "Architectures": [
+        "DeepseekV2ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "image-text-to-text",
+          "ChineseName": "视觉多模态理解"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1734104352,
+      "LastUpdatedTime": 1740571484,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/deepseek-vl2-tiny"
+    },
+    {
+      "id": "deepseek-ai/Janus-Pro-1B",
+      "Name": "Janus-Pro-1B",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 78002,
+      "Stars": 35,
+      "StorageSize": 4184243996,
+      "License": "mit",
+      "Libraries": [
+        "lora",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "multi_modality"
+      ],
+      "Architectures": [
+        "MultiModalityCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "any-to-any",
+          "ChineseName": "统一多模态"
+        }
+      ],
+      "Tags": [
+        "muiltimodal",
+        "text-to-image",
+        "unified-model"
+      ],
+      "CreatedTime": 1738023179,
+      "LastUpdatedTime": 1738411570,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/Janus-Pro-1B"
+    },
+    {
+      "id": "deepseek-ai/deepseek-llm-7b-chat",
+      "Name": "deepseek-llm-7b-chat",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 66745,
+      "Stars": 27,
+      "StorageSize": 13825464080,
+      "License": "other",
+      "Libraries": [
+        "pytorch",
+        "transformer"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "llama"
+      ],
+      "Architectures": [
+        "LlamaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1701271876,
+      "LastUpdatedTime": 1740592865,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/deepseek-llm-7b-chat"
+    },
+    {
+      "id": "deepseek-ai/deepseek-vl2-small",
+      "Name": "deepseek-vl2-small",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 65077,
+      "Stars": 13,
+      "StorageSize": 32302619528,
+      "License": "other",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "deepseek_vl_v2"
+      ],
+      "Architectures": null,
+      "Tasks": [
+        {
+          "Name": "image-text-to-text",
+          "ChineseName": "视觉多模态理解"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1734104895,
+      "LastUpdatedTime": 1734523449,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/deepseek-vl2-small"
+    },
+    {
+      "id": "deepseek-ai/deepseek-vl-7b-chat",
+      "Name": "deepseek-vl-7b-chat",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 64790,
+      "Stars": 36,
+      "StorageSize": 14692789193,
+      "License": "other",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "multi_modality"
+      ],
+      "Architectures": [
+        "MultiModalityCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "image-text-to-text",
+          "ChineseName": "视觉多模态理解"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1710167855,
+      "LastUpdatedTime": 1740572147,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/deepseek-vl-7b-chat"
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-V3.1",
+      "Name": "DeepSeek-V3.1",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 56041,
+      "Stars": 253,
+      "StorageSize": 688603635342,
+      "License": "mit",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "deepseek_v3"
+      ],
+      "Architectures": [
+        "DeepseekV3ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1755743733,
+      "LastUpdatedTime": 1756196241,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/DeepSeek-V3.1"
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-V2.5",
+      "Name": "DeepSeek-V2.5",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 52556,
+      "Stars": 11,
+      "StorageSize": 471493906231,
+      "License": "other",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "deepseek_v2"
+      ],
+      "Architectures": [
+        "DeepseekV2ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "",
+          "ChineseName": ""
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1725685193,
+      "LastUpdatedTime": 1733931491,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/DeepSeek-V2.5"
+    },
+    {
+      "id": "deepseek-ai/deepseek-math-7b-rl",
+      "Name": "deepseek-math-7b-rl",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 36503,
+      "Stars": 5,
+      "StorageSize": 29659521643,
+      "License": "other",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "llama"
+      ],
+      "Architectures": [
+        "LlamaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "",
+          "ChineseName": ""
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1708065837,
+      "LastUpdatedTime": 1740591090,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/deepseek-math-7b-rl"
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-V3-Base",
+      "Name": "DeepSeek-V3-Base",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 34967,
+      "Stars": 43,
+      "StorageSize": 688603931786,
+      "License": "",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "deepseek_v3"
+      ],
+      "Architectures": [
+        "DeepseekV3ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1735166335,
+      "LastUpdatedTime": 1740434787,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/DeepSeek-V3-Base"
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-V3-0324",
+      "Name": "DeepSeek-V3-0324",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 32061,
+      "Stars": 296,
+      "StorageSize": 688603871699,
+      "License": "mit",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "deepseek_v3"
+      ],
+      "Architectures": [
+        "DeepseekV3ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1742810384,
+      "LastUpdatedTime": 1742886829,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/DeepSeek-V3-0324"
+    },
+    {
+      "id": "deepseek-ai/deepseek-vl2",
+      "Name": "deepseek-vl2",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 27869,
+      "Stars": 44,
+      "StorageSize": 54968331013,
+      "License": "other",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "deepseek_vl_v2"
+      ],
+      "Architectures": [
+        "DeepseekV2ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "image-text-to-text",
+          "ChineseName": "视觉多模态理解"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1734104354,
+      "LastUpdatedTime": 1740571488,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/deepseek-vl2"
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-V2",
+      "Name": "DeepSeek-V2",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 15837,
+      "Stars": 5,
+      "StorageSize": 471493905285,
+      "License": "other",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "deepseek_v2"
+      ],
+      "Architectures": [
+        "DeepseekV2ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1715014834,
+      "LastUpdatedTime": 1721995995,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/DeepSeek-V2"
+    },
+    {
+      "id": "deepseek-ai/deepseek-vl-1.3b-chat",
+      "Name": "deepseek-vl-1.3b-chat",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 15199,
+      "Stars": 11,
+      "StorageSize": 3955159661,
+      "License": "other",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "multi_modality"
+      ],
+      "Architectures": [
+        "MultiModalityCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "image-text-to-text",
+          "ChineseName": "视觉多模态理解"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1710166571,
+      "LastUpdatedTime": 1740572504,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/deepseek-vl-1.3b-chat"
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-V3.2-Speciale",
+      "Name": "DeepSeek-V3.2-Speciale",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 14069,
+      "Stars": 100,
+      "StorageSize": 689508116701,
+      "License": "",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "deepseek_v32"
+      ],
+      "Architectures": [
+        "DeepseekV32ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1764301046,
+      "LastUpdatedTime": 1764586299,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/DeepSeek-V3.2-Speciale"
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-V4-Flash-Base",
+      "Name": "DeepSeek-V4-Flash-Base",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 13520,
+      "Stars": 11,
+      "StorageSize": 294692683615,
+      "License": "MIT License",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "deepseek_v4"
+      ],
+      "Architectures": [
+        "DeepseekV4ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1776837966,
+      "LastUpdatedTime": 1777273107,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/DeepSeek-V4-Flash-Base"
+    },
+    {
+      "id": "deepseek-ai/deepseek-llm-7b-base",
+      "Name": "deepseek-llm-7b-base",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 10779,
+      "Stars": 8,
+      "StorageSize": 13825463864,
+      "License": "other",
+      "Libraries": [
+        "pytorch",
+        "transformer"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "llama"
+      ],
+      "Architectures": [
+        "LlamaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1701265725,
+      "LastUpdatedTime": 1740595590,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/deepseek-llm-7b-base"
+    },
+    {
+      "id": "deepseek-ai/Janus-1.3B",
+      "Name": "Janus-1.3B",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 10688,
+      "Stars": 2,
+      "StorageSize": 4184362482,
+      "License": "mit",
+      "Libraries": [
+        "lora",
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "multi_modality"
+      ],
+      "Architectures": null,
+      "Tasks": [
+        {
+          "Name": "any-to-any",
+          "ChineseName": "统一多模态"
+        }
+      ],
+      "Tags": [
+        "muiltimodal",
+        "text-to-image",
+        "unified-model"
+      ],
+      "CreatedTime": 1729476740,
+      "LastUpdatedTime": 1738016363,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/Janus-1.3B"
+    },
+    {
+      "id": "deepseek-ai/deepseek-coder-1.3b-instruct",
+      "Name": "deepseek-coder-1.3b-instruct",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "Deepseek Coder comprises a series of code language models trained on both 87% code and 13% natural language in English and Chinese, with each model pre-trained on 2T tokens. We provide various sizes of the code model, ranging from 1B to 33B versions. Each model is pre-trained on project-level code corpus by employing a window size of 16K and a extra fill-in-the-blank task, to support project-level code completion and infilling. For coding capabilities, Deepseek Coder achieves state-of-the-art performance among open-source code models on multiple programming languages and various benchmarks.",
+      "Downloads": 10415,
+      "Stars": 9,
+      "StorageSize": 5387373108,
+      "License": "other",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "llama"
+      ],
+      "Architectures": [
+        "LlamaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1698975952,
+      "LastUpdatedTime": 1740587966,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/deepseek-coder-1.3b-instruct"
+    },
+    {
+      "id": "deepseek-ai/deepseek-math-7b-instruct",
+      "Name": "deepseek-math-7b-instruct",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 10329,
+      "Stars": 6,
+      "StorageSize": 13825475322,
+      "License": "other",
+      "Libraries": [
+        "pytorch",
+        "transformer"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "llama"
+      ],
+      "Architectures": [
+        "LlamaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "",
+          "ChineseName": ""
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1708065102,
+      "LastUpdatedTime": 1740583826,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/deepseek-math-7b-instruct"
+    },
+    {
+      "id": "deepseek-ai/deepseek-coder-33b-instruct",
+      "Name": "deepseek-coder-33b-instruct",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "Deepseek Coder comprises a series of code language models trained on both 87% code and 13% natural language in English and Chinese, with each model pre-trained on 2T tokens. We provide various sizes of the code model, ranging from 1B to 33B versions. Each model is pre-trained on project-level code corpus by employing a window size of 16K and a extra fill-in-the-blank task, to support project-level code completion and infilling. For coding capabilities, Deepseek Coder achieves state-of-the-art performance among open-source code models on multiple programming languages and various benchmarks.",
+      "Downloads": 9675,
+      "Stars": 11,
+      "StorageSize": 133373711611,
+      "License": "other",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "llama"
+      ],
+      "Architectures": [
+        "LlamaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1698967228,
+      "LastUpdatedTime": 1740586731,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/deepseek-coder-33b-instruct"
+    },
+    {
+      "id": "deepseek-ai/deepseek-moe-16b-base",
+      "Name": "deepseek-moe-16b-base",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 9583,
+      "Stars": 2,
+      "StorageSize": 32757323433,
+      "License": "other",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "deepseek"
+      ],
+      "Architectures": [
+        "DeepseekForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1704963615,
+      "LastUpdatedTime": 1740587207,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/deepseek-moe-16b-base"
+    },
+    {
+      "id": "deepseek-ai/deepseek-coder-5.7bmqa-instruct",
+      "Name": "deepseek-coder-5.7bmqa-instruct",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "Deepseek Coder comprises a series of code language models trained on both 87% code and 13% natural language in English and Chinese, with each model pre-trained on 2T tokens. We provide various sizes of the code model, ranging from 1B to 33B versions. Each model is pre-trained on project-level code corpus by employing a window size of 16K and a extra fill-in-the-blank task, to support project-level code completion and infilling. For coding capabilities, Deepseek Coder achieves state-of-the-art performance among open-source code models on multiple programming languages and various benchmarks.",
+      "Downloads": 9283,
+      "Stars": 0,
+      "StorageSize": 11402150675,
+      "License": "other",
+      "Libraries": [
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "llama"
+      ],
+      "Architectures": [
+        "LlamaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1698951502,
+      "LastUpdatedTime": 1698970388,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/deepseek-coder-5.7bmqa-instruct"
+    },
+    {
+      "id": "deepseek-ai/deepseek-coder-6.7b-base",
+      "Name": "deepseek-coder-6.7b-base",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "Deepseek Coder comprises a series of code language models trained on both 87% code and 13% natural language in English and Chinese, with each model pre-trained on 2T tokens. We provide various sizes of the code model, ranging from 1B to 33B versions. Each model is pre-trained on project-level code corpus by employing a window size of 16K and a extra fill-in-the-blank task, to support project-level code completion and infilling. For coding capabilities, Deepseek Coder achieves state-of-the-art performance among open-source code models on multiple programming languages and various benchmarks.",
+      "Downloads": 7933,
+      "Stars": 8,
+      "StorageSize": 26963626612,
+      "License": "other",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "llama"
+      ],
+      "Architectures": [
+        "LlamaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1698953518,
+      "LastUpdatedTime": 1740587273,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/deepseek-coder-6.7b-base"
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-V4-Pro-Base",
+      "Name": "DeepSeek-V4-Pro-Base",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 7497,
+      "Stars": 16,
+      "StorageSize": 1606066103259,
+      "License": "MIT License",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "deepseek_v4"
+      ],
+      "Architectures": [
+        "DeepseekV4ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1776838019,
+      "LastUpdatedTime": 1777273082,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/DeepSeek-V4-Pro-Base"
+    },
+    {
+      "id": "deepseek-ai/deepseek-vl-7b-base",
+      "Name": "deepseek-vl-7b-base",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 6757,
+      "Stars": 5,
+      "StorageSize": 14692789026,
+      "License": "other",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "multi_modality"
+      ],
+      "Architectures": [
+        "MultiModalityCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1710166931,
+      "LastUpdatedTime": 1710487220,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/deepseek-vl-7b-base"
+    },
+    {
+      "id": "deepseek-ai/deepseek-coder-33b-base",
+      "Name": "deepseek-coder-33b-base",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "Deepseek Coder comprises a series of code language models trained on both 87% code and 13% natural language in English and Chinese, with each model pre-trained on 2T tokens. We provide various sizes of the code model, ranging from 1B to 33B versions. Each model is pre-trained on project-level code corpus by employing a window size of 16K and a extra fill-in-the-blank task, to support project-level code completion and infilling. For coding capabilities, Deepseek Coder achieves state-of-the-art performance among open-source code models on multiple programming languages and various benchmarks.",
+      "Downloads": 6327,
+      "Stars": 8,
+      "StorageSize": 133373713832,
+      "License": "other",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "llama"
+      ],
+      "Architectures": [
+        "LlamaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1698955880,
+      "LastUpdatedTime": 1740592533,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/deepseek-coder-33b-base"
+    },
+    {
+      "id": "deepseek-ai/deepseek-vl-1.3b-base",
+      "Name": "deepseek-vl-1.3b-base",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 6326,
+      "Stars": 4,
+      "StorageSize": 3955159484,
+      "License": "other",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "multi_modality"
+      ],
+      "Architectures": [
+        "MultiModalityCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1710166213,
+      "LastUpdatedTime": 1710487088,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/deepseek-vl-1.3b-base"
+    },
+    {
+      "id": "deepseek-ai/deepseek-coder-1.3b-base",
+      "Name": "deepseek-coder-1.3b-base",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "Deepseek Coder comprises a series of code language models trained on both 87% code and 13% natural language in English and Chinese, with each model pre-trained on 2T tokens. We provide various sizes of the code model, ranging from 1B to 33B versions. Each model is pre-trained on project-level code corpus by employing a window size of 16K and a extra fill-in-the-blank task, to support project-level code completion and infilling. For coding capabilities, Deepseek Coder achieves state-of-the-art performance among open-source code models on multiple programming languages and various benchmarks.",
+      "Downloads": 6274,
+      "Stars": 7,
+      "StorageSize": 2694407098,
+      "License": "other",
+      "Libraries": [
+        "pytorch",
+        "transformer"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "llama"
+      ],
+      "Architectures": [
+        "LlamaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1698936204,
+      "LastUpdatedTime": 1740590731,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/deepseek-coder-1.3b-base"
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-Coder-V2-Lite-Base",
+      "Name": "DeepSeek-Coder-V2-Lite-Base",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 5128,
+      "Stars": 1,
+      "StorageSize": 31418823409,
+      "License": "other",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "deepseek_v2"
+      ],
+      "Architectures": [
+        "DeepseekV2ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1718631417,
+      "LastUpdatedTime": 1735167104,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/DeepSeek-Coder-V2-Lite-Base"
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-V2.5-1210",
+      "Name": "DeepSeek-V2.5-1210",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 4474,
+      "Stars": 6,
+      "StorageSize": 471493905266,
+      "License": "other",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "deepseek_v2"
+      ],
+      "Architectures": [
+        "DeepseekV2ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1733831792,
+      "LastUpdatedTime": 1733919508,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/DeepSeek-V2.5-1210"
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-V2-Chat-0628",
+      "Name": "DeepSeek-V2-Chat-0628",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 4095,
+      "Stars": 3,
+      "StorageSize": 471495006407,
+      "License": "",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "deepseek_v2"
+      ],
+      "Architectures": [
+        "DeepseekV2ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1721525007,
+      "LastUpdatedTime": 1722007905,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/DeepSeek-V2-Chat-0628"
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-Coder-V2-Instruct-0724",
+      "Name": "DeepSeek-Coder-V2-Instruct-0724",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 4094,
+      "Stars": 4,
+      "StorageSize": 471493909572,
+      "License": "other",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "deepseek_v2"
+      ],
+      "Architectures": [
+        "DeepseekV2ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "",
+          "ChineseName": ""
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1725685193,
+      "LastUpdatedTime": 1728415382,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/DeepSeek-Coder-V2-Instruct-0724"
+    },
+    {
+      "id": "deepseek-ai/deepseek-math-7b-base",
+      "Name": "deepseek-math-7b-base",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 3655,
+      "Stars": 2,
+      "StorageSize": 13825473651,
+      "License": "other",
+      "Libraries": [
+        "pytorch",
+        "transformer"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "llama"
+      ],
+      "Architectures": [
+        "LlamaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "",
+          "ChineseName": ""
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1708066008,
+      "LastUpdatedTime": 1740584110,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/deepseek-math-7b-base"
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-Math-V2",
+      "Name": "DeepSeek-Math-V2",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "Lyxia",
+      "Description": "",
+      "Downloads": 3275,
+      "Stars": 35,
+      "StorageSize": 3456,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "deepseek_v32"
+      ],
+      "Architectures": [
+        "DeepseekV32ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1764252173,
+      "LastUpdatedTime": 1764260424,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/DeepSeek-Math-V2"
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-Prover-V1.5-RL",
+      "Name": "DeepSeek-Prover-V1.5-RL",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 2620,
+      "Stars": 2,
+      "StorageSize": 13825418678,
+      "License": "other",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "llama"
+      ],
+      "Architectures": [
+        "LlamaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1723814828,
+      "LastUpdatedTime": 1724936270,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/DeepSeek-Prover-V1.5-RL"
+    },
+    {
+      "id": "deepseek-ai/deepseek-coder-7b-instruct-v1.5",
+      "Name": "deepseek-coder-7b-instruct-v1.5",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 2492,
+      "Stars": 4,
+      "StorageSize": 13825402492,
+      "License": "other",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "llama"
+      ],
+      "Architectures": [
+        "LlamaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1735167113,
+      "LastUpdatedTime": 1735167518,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/deepseek-coder-7b-instruct-v1.5"
+    },
+    {
+      "id": "deepseek-ai/deepseek-llm-67b-base",
+      "Name": "deepseek-llm-67b-base",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 2066,
+      "Stars": 5,
+      "StorageSize": 134854990232,
+      "License": "other",
+      "Libraries": [
+        "pytorch",
+        "transformer"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "llama"
+      ],
+      "Architectures": [
+        "LlamaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1701266749,
+      "LastUpdatedTime": 1740587146,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/deepseek-llm-67b-base"
+    },
+    {
+      "id": "deepseek-ai/deepseek-coder-7b-base-v1.5",
+      "Name": "deepseek-coder-7b-base-v1.5",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 1925,
+      "Stars": 0,
+      "StorageSize": 13825401095,
+      "License": "other",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "llama"
+      ],
+      "Architectures": [
+        "LlamaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1735166465,
+      "LastUpdatedTime": 1735166961,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/deepseek-coder-7b-base-v1.5"
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-Prover-V1.5-Base",
+      "Name": "DeepSeek-Prover-V1.5-Base",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 1723,
+      "Stars": 0,
+      "StorageSize": 13825418629,
+      "License": "other",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "llama"
+      ],
+      "Architectures": [
+        "LlamaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1723814827,
+      "LastUpdatedTime": 1724936271,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/DeepSeek-Prover-V1.5-Base"
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-Prover-V1.5-SFT",
+      "Name": "DeepSeek-Prover-V1.5-SFT",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 1697,
+      "Stars": 0,
+      "StorageSize": 13825418679,
+      "License": "other",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "llama"
+      ],
+      "Architectures": [
+        "LlamaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1723814828,
+      "LastUpdatedTime": 1724936271,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/DeepSeek-Prover-V1.5-SFT"
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-R1-Zero",
+      "Name": "DeepSeek-R1-Zero",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 1692,
+      "Stars": 21,
+      "StorageSize": 688604361453,
+      "License": "mit",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "deepseek_v3"
+      ],
+      "Architectures": [
+        "DeepseekV3ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "",
+          "ChineseName": ""
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1737350341,
+      "LastUpdatedTime": 1740434799,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/DeepSeek-R1-Zero"
+    },
+    {
+      "id": "deepseek-ai/ESFT-vanilla-lite",
+      "Name": "ESFT-vanilla-lite",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 1650,
+      "Stars": 0,
+      "StorageSize": 31418828902,
+      "License": "",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "deepseek_v2"
+      ],
+      "Architectures": [
+        "DeepseekV2ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1723814828,
+      "LastUpdatedTime": 1732192188,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/ESFT-vanilla-lite"
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-V3.1-Base",
+      "Name": "DeepSeek-V3.1-Base",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 1648,
+      "Stars": 21,
+      "StorageSize": 688603635342,
+      "License": "mit",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "deepseek_v3"
+      ],
+      "Architectures": [
+        "DeepseekV3ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1755597810,
+      "LastUpdatedTime": 1756196249,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/DeepSeek-V3.1-Base"
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-Prover-V1",
+      "Name": "DeepSeek-Prover-V1",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 1628,
+      "Stars": 0,
+      "StorageSize": 13825417812,
+      "License": "other",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "llama"
+      ],
+      "Architectures": [
+        "LlamaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1723814828,
+      "LastUpdatedTime": 1724936267,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/DeepSeek-Prover-V1"
+    },
+    {
+      "id": "deepseek-ai/deepseek-coder-5.7bmqa-base",
+      "Name": "deepseek-coder-5.7bmqa-base",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "Deepseek Coder comprises a series of code language models trained on both 87% code and 13% natural language in English and Chinese, with each model pre-trained on 2T tokens. We provide various sizes of the code model, ranging from 1B to 33B versions. Each model is pre-trained on project-level code corpus by employing a window size of 16K and a extra fill-in-the-blank task, to support project-level code completion and infilling. For coding capabilities, Deepseek Coder achieves state-of-the-art performance among open-source code models on multiple programming languages and various benchmarks.",
+      "Downloads": 1627,
+      "Stars": 0,
+      "StorageSize": 11402167386,
+      "License": "other",
+      "Libraries": [
+        "pytorch",
+        "transformer"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "llama"
+      ],
+      "Architectures": [
+        "LlamaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1698937568,
+      "LastUpdatedTime": 1740595908,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/deepseek-coder-5.7bmqa-base"
+    },
+    {
+      "id": "deepseek-ai/JanusFlow-1.3B",
+      "Name": "JanusFlow-1.3B",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 1574,
+      "Stars": 6,
+      "StorageSize": 4101301369,
+      "License": "mit",
+      "Libraries": [
+        "lora",
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "multi_modality"
+      ],
+      "Architectures": [
+        "MultiModalityCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "any-to-any",
+          "ChineseName": "统一多模态"
+        }
+      ],
+      "Tags": [
+        "muiltimodal",
+        "text-to-image",
+        "unified-model"
+      ],
+      "CreatedTime": 1731489794,
+      "LastUpdatedTime": 1738016561,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/JanusFlow-1.3B"
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-Prover-V2-7B",
+      "Name": "DeepSeek-Prover-V2-7B",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "Lyxia",
+      "Description": "",
+      "Downloads": 1199,
+      "Stars": 4,
+      "StorageSize": 13825414520,
+      "License": "",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "llama"
+      ],
+      "Architectures": [
+        "LlamaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1746841345,
+      "LastUpdatedTime": 1746842839,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/DeepSeek-Prover-V2-7B"
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-Prover-V2-671B",
+      "Name": "DeepSeek-Prover-V2-671B",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "Lyxia",
+      "Description": "",
+      "Downloads": 1085,
+      "Stars": 11,
+      "StorageSize": 688603589524,
+      "License": "",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "deepseek_v3"
+      ],
+      "Architectures": [
+        "DeepseekV3ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1746841346,
+      "LastUpdatedTime": 1746859654,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/DeepSeek-Prover-V2-671B"
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-V3.2-Exp-Base",
+      "Name": "DeepSeek-V3.2-Exp-Base",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 988,
+      "Stars": 3,
+      "StorageSize": 689499849818,
+      "License": "Apache License 2.0",
+      "Libraries": [
+        "safetensors"
+      ],
+      "Frameworks": [],
+      "ModelType": [
+        "deepseek_v32"
+      ],
+      "Architectures": [
+        "DeepseekV32ForCausalLM"
+      ],
+      "Tasks": [],
+      "Tags": [],
+      "CreatedTime": 1759129054,
+      "LastUpdatedTime": 1759142335,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/DeepSeek-V3.2-Exp-Base"
+    },
+    {
+      "id": "deepseek-ai/ESFT-gate-translation-lite",
+      "Name": "ESFT-gate-translation-lite",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 693,
+      "Stars": 0,
+      "StorageSize": 2115579695,
+      "License": "",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "deepseek_v2"
+      ],
+      "Architectures": [
+        "DeepseekV2ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1735167451,
+      "LastUpdatedTime": 1735167569,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/ESFT-gate-translation-lite"
+    },
+    {
+      "id": "deepseek-ai/ESFT-token-translation-lite",
+      "Name": "ESFT-token-translation-lite",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 687,
+      "Stars": 0,
+      "StorageSize": 1734933079,
+      "License": "",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "deepseek_v2"
+      ],
+      "Architectures": [
+        "DeepseekV2ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1735166705,
+      "LastUpdatedTime": 1735166803,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/ESFT-token-translation-lite"
+    },
+    {
+      "id": "deepseek-ai/ESFT-token-law-lite",
+      "Name": "ESFT-token-law-lite",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 684,
+      "Stars": 0,
+      "StorageSize": 2963383437,
+      "License": "",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "deepseek_v2"
+      ],
+      "Architectures": [
+        "DeepseekV2ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1735167621,
+      "LastUpdatedTime": 1735167765,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/ESFT-token-law-lite"
+    },
+    {
+      "id": "deepseek-ai/ESFT-gate-math-lite",
+      "Name": "ESFT-gate-math-lite",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 677,
+      "Stars": 0,
+      "StorageSize": 3171008915,
+      "License": "",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "deepseek_v2"
+      ],
+      "Architectures": [
+        "DeepseekV2ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1735166767,
+      "LastUpdatedTime": 1735166907,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/ESFT-gate-math-lite"
+    },
+    {
+      "id": "deepseek-ai/ESFT-token-code-lite",
+      "Name": "ESFT-token-code-lite",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 676,
+      "Stars": 0,
+      "StorageSize": 3880395817,
+      "License": "",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "deepseek_v2"
+      ],
+      "Architectures": [
+        "DeepseekV2ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1735167636,
+      "LastUpdatedTime": 1735167865,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/ESFT-token-code-lite"
+    },
+    {
+      "id": "deepseek-ai/ESFT-token-math-lite",
+      "Name": "ESFT-token-math-lite",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 676,
+      "Stars": 0,
+      "StorageSize": 2755758054,
+      "License": "",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "deepseek_v2"
+      ],
+      "Architectures": [
+        "DeepseekV2ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1735166438,
+      "LastUpdatedTime": 1735166584,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/ESFT-token-math-lite"
+    },
+    {
+      "id": "deepseek-ai/ESFT-gate-code-lite",
+      "Name": "ESFT-gate-code-lite",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 673,
+      "Stars": 0,
+      "StorageSize": 4693595392,
+      "License": "",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "deepseek_v2"
+      ],
+      "Architectures": [
+        "DeepseekV2ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1735166443,
+      "LastUpdatedTime": 1735166648,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/ESFT-gate-code-lite"
+    },
+    {
+      "id": "deepseek-ai/ESFT-token-summary-lite",
+      "Name": "ESFT-token-summary-lite",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 670,
+      "Stars": 0,
+      "StorageSize": 2323205053,
+      "License": "",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "deepseek_v2"
+      ],
+      "Architectures": [
+        "DeepseekV2ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1735166922,
+      "LastUpdatedTime": 1735167036,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/ESFT-token-summary-lite"
+    },
+    {
+      "id": "deepseek-ai/ESFT-gate-intent-lite",
+      "Name": "ESFT-gate-intent-lite",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 664,
+      "Stars": 0,
+      "StorageSize": 4278344614,
+      "License": "",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "deepseek_v2"
+      ],
+      "Architectures": [
+        "DeepseekV2ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1735167098,
+      "LastUpdatedTime": 1735167325,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/ESFT-gate-intent-lite"
+    },
+    {
+      "id": "deepseek-ai/ESFT-gate-law-lite",
+      "Name": "ESFT-gate-law-lite",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 662,
+      "Stars": 0,
+      "StorageSize": 3309425798,
+      "License": "",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "deepseek_v2"
+      ],
+      "Architectures": [
+        "DeepseekV2ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1735166443,
+      "LastUpdatedTime": 1735166595,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/ESFT-gate-law-lite"
+    },
+    {
+      "id": "deepseek-ai/ESFT-gate-summary-lite",
+      "Name": "ESFT-gate-summary-lite",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 659,
+      "Stars": 0,
+      "StorageSize": 3482447030,
+      "License": "",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "deepseek_v2"
+      ],
+      "Architectures": [
+        "DeepseekV2ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1735166462,
+      "LastUpdatedTime": 1735166623,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/ESFT-gate-summary-lite"
+    },
+    {
+      "id": "deepseek-ai/ESFT-token-intent-lite",
+      "Name": "ESFT-token-intent-lite",
+      "Path": "deepseek-ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 658,
+      "Stars": 0,
+      "StorageSize": 3205613166,
+      "License": "",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "deepseek_v2"
+      ],
+      "Architectures": [
+        "DeepseekV2ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1735166698,
+      "LastUpdatedTime": 1735166851,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/deepseek-ai/ESFT-token-intent-lite"
+    }
+  ]
+}

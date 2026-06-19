@@ -1,0 +1,753 @@
+{
+  "label": "Moonshot",
+  "namespace": "moonshotai",
+  "organization": {
+    "ApplyFailureReason": "",
+    "ApplyReason": "",
+    "Avatar": "https://resouces.modelscope.cn/avatar/d2c4393f-4423-4636-8aa7-770ccd035d7d.png",
+    "CreateCompetition": false,
+    "CreatedBy": "yingda",
+    "Description": "[\"root\",{},[\"p\",{},[\"span\",{\"data-type\":\"text\"},[\"span\",{\"data-type\":\"leaf\"},\"\"]]]]",
+    "DisplayUrl": "",
+    "Email": "",
+    "FromSite": "",
+    "FullName": "Moonshot AI",
+    "GithubAddress": "https://www.moonshot.cn/",
+    "GmtCreated": "2025-02-23T09:58:40Z",
+    "GmtModified": "2026-01-29T11:46:11Z",
+    "Id": 1656,
+    "InitAdminMembers": "",
+    "IsApply": false,
+    "IsCertification": "",
+    "Mobile": "",
+    "Name": "moonshotai",
+    "Path": "",
+    "Roles": null,
+    "StarCnt": 0,
+    "Status": 0,
+    "SubscribeVo": null,
+    "Type": 2
+  },
+  "model_count": 18,
+  "stats": {
+    "total_counts": [
+      {
+        "term": "moonshot-ai",
+        "TotalCount": 19
+      },
+      {
+        "term": "kimi",
+        "TotalCount": 286
+      },
+      {
+        "term": "moonshotai",
+        "TotalCount": 0
+      }
+    ],
+    "pages_fetched": 5,
+    "candidates": 33
+  },
+  "models": [
+    {
+      "id": "moonshotai/Kimi-K2-Thinking",
+      "Name": "Kimi-K2-Thinking",
+      "Path": "moonshotai",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 1808210,
+      "Stars": 90,
+      "StorageSize": 594256579608,
+      "License": "other",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "kimi_k2"
+      ],
+      "Architectures": [
+        "DeepseekV3ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1762246748,
+      "LastUpdatedTime": 1769775360,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/moonshotai/Kimi-K2-Thinking"
+    },
+    {
+      "id": "moonshotai/Kimi-VL-A3B-Thinking",
+      "Name": "Kimi-VL-A3B-Thinking",
+      "Path": "moonshotai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 1061843,
+      "Stars": 54,
+      "StorageSize": 32821011702,
+      "License": "mit",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "kimi_vl"
+      ],
+      "Architectures": [
+        "KimiVLForConditionalGeneration"
+      ],
+      "Tasks": [
+        {
+          "Name": "image-text-to-text",
+          "ChineseName": "视觉多模态理解"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1744221685,
+      "LastUpdatedTime": 1769775298,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/moonshotai/Kimi-VL-A3B-Thinking"
+    },
+    {
+      "id": "moonshotai/Kimi-K2.6",
+      "Name": "Kimi-K2.6",
+      "Path": "moonshotai",
+      "ChineseName": "",
+      "NickName": "ChuWei",
+      "Description": "",
+      "Downloads": 204969,
+      "Stars": 94,
+      "StorageSize": 595205004331,
+      "License": "other",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "kimi_k25"
+      ],
+      "Architectures": [
+        "KimiK25ForConditionalGeneration"
+      ],
+      "Tasks": [
+        {
+          "Name": "image-text-to-text",
+          "ChineseName": "视觉多模态理解"
+        }
+      ],
+      "Tags": [
+        "compressed-tensors"
+      ],
+      "CreatedTime": 1776395144,
+      "LastUpdatedTime": 1779332848,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/moonshotai/Kimi-K2.6"
+    },
+    {
+      "id": "moonshotai/Kimi-K2.5",
+      "Name": "Kimi-K2.5",
+      "Path": "moonshotai",
+      "ChineseName": "",
+      "NickName": "ChuWei",
+      "Description": "",
+      "Downloads": 146628,
+      "Stars": 279,
+      "StorageSize": 595205012439,
+      "License": "other",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "kimi_k25"
+      ],
+      "Architectures": [
+        "KimiK25ForConditionalGeneration"
+      ],
+      "Tasks": [
+        {
+          "Name": "image-text-to-text",
+          "ChineseName": "视觉多模态理解"
+        }
+      ],
+      "Tags": [
+        "compressed-tensors"
+      ],
+      "CreatedTime": 1769308162,
+      "LastUpdatedTime": 1777551644,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/moonshotai/Kimi-K2.5"
+    },
+    {
+      "id": "moonshotai/Kimi-K2-Instruct",
+      "Name": "Kimi-K2-Instruct",
+      "Path": "moonshotai",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 102560,
+      "Stars": 179,
+      "StorageSize": 1029207176181,
+      "License": "other",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "kimi_k2"
+      ],
+      "Architectures": [
+        "DeepseekV3ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1752214846,
+      "LastUpdatedTime": 1776947560,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/moonshotai/Kimi-K2-Instruct"
+    },
+    {
+      "id": "moonshotai/Kimi-VL-A3B-Instruct",
+      "Name": "Kimi-VL-A3B-Instruct",
+      "Path": "moonshotai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 92800,
+      "Stars": 16,
+      "StorageSize": 32823063513,
+      "License": "mit",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "kimi_vl"
+      ],
+      "Architectures": [
+        "KimiVLForConditionalGeneration"
+      ],
+      "Tasks": [
+        {
+          "Name": "image-text-to-text",
+          "ChineseName": "视觉多模态理解"
+        }
+      ],
+      "Tags": [
+        "agent",
+        "video",
+        "screenspot",
+        "long-context"
+      ],
+      "CreatedTime": 1744221686,
+      "LastUpdatedTime": 1769775491,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/moonshotai/Kimi-VL-A3B-Instruct"
+    },
+    {
+      "id": "moonshotai/Kimi-Audio-7B-Instruct",
+      "Name": "Kimi-Audio-7B-Instruct",
+      "Path": "moonshotai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 24162,
+      "Stars": 34,
+      "StorageSize": 42600477092,
+      "License": "mit",
+      "Libraries": [
+        "pytorch",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [
+        "MoonshotKimiaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-to-speech",
+          "ChineseName": "语音合成"
+        }
+      ],
+      "Tags": [
+        "audio",
+        "audio-language-model",
+        "speech-recognition",
+        "audio-understanding",
+        "text-to-speech",
+        "audio-generation",
+        "chat"
+      ],
+      "CreatedTime": 1745604065,
+      "LastUpdatedTime": 1748536089,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/moonshotai/Kimi-Audio-7B-Instruct"
+    },
+    {
+      "id": "moonshotai/Kimi-Dev-72B",
+      "Name": "Kimi-Dev-72B",
+      "Path": "moonshotai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 12555,
+      "Stars": 10,
+      "StorageSize": 145424762640,
+      "License": "mit",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "qwen2"
+      ],
+      "Architectures": [
+        "Qwen2ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "",
+          "ChineseName": ""
+        }
+      ],
+      "Tags": [
+        "code",
+        "swebench",
+        "software",
+        "issue-resolving"
+      ],
+      "CreatedTime": 1750117062,
+      "LastUpdatedTime": 1750180675,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/moonshotai/Kimi-Dev-72B"
+    },
+    {
+      "id": "moonshotai/Kimi-K2-Instruct-0905",
+      "Name": "Kimi-K2-Instruct-0905",
+      "Path": "moonshotai",
+      "ChineseName": "Kimi-K2-Instruct-0905",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 12303,
+      "Stars": 81,
+      "StorageSize": 1029208079014,
+      "License": "other",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "kimi_k2"
+      ],
+      "Architectures": [
+        "DeepseekV3ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1756971792,
+      "LastUpdatedTime": 1769775404,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/moonshotai/Kimi-K2-Instruct-0905"
+    },
+    {
+      "id": "moonshotai/Kimi-VL-A3B-Thinking-2506",
+      "Name": "Kimi-VL-A3B-Thinking-2506",
+      "Path": "moonshotai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 7410,
+      "Stars": 13,
+      "StorageSize": 32821834608,
+      "License": "mit",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "kimi_vl"
+      ],
+      "Architectures": [
+        "KimiVLForConditionalGeneration"
+      ],
+      "Tasks": [
+        {
+          "Name": "image-text-to-text",
+          "ChineseName": "视觉多模态理解"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1750529110,
+      "LastUpdatedTime": 1769775330,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/moonshotai/Kimi-VL-A3B-Thinking-2506"
+    },
+    {
+      "id": "moonshotai/Moonlight-16B-A3B-Instruct",
+      "Name": "Moonlight-16B-A3B-Instruct",
+      "Path": "moonshotai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 7259,
+      "Stars": 12,
+      "StorageSize": 31925332238,
+      "License": "mit",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "deepseek_v3"
+      ],
+      "Architectures": [
+        "DeepseekV3ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1740305633,
+      "LastUpdatedTime": 1769775290,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/moonshotai/Moonlight-16B-A3B-Instruct"
+    },
+    {
+      "id": "moonshotai/Kimi-K2-Base",
+      "Name": "Kimi-K2-Base",
+      "Path": "moonshotai",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 6737,
+      "Stars": 3,
+      "StorageSize": 1029206927327,
+      "License": "other",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "kimi_k2"
+      ],
+      "Architectures": [
+        "DeepseekV3ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1752170342,
+      "LastUpdatedTime": 1769771648,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/moonshotai/Kimi-K2-Base"
+    },
+    {
+      "id": "moonshotai/Kimi-Linear-48B-A3B-Instruct",
+      "Name": "Kimi-Linear-48B-A3B-Instruct",
+      "Path": "moonshotai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 6200,
+      "Stars": 20,
+      "StorageSize": 98253573573,
+      "License": "mit",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "kimi_linear"
+      ],
+      "Architectures": [
+        "KimiLinearForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1761847808,
+      "LastUpdatedTime": 1767860655,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/moonshotai/Kimi-Linear-48B-A3B-Instruct"
+    },
+    {
+      "id": "moonshotai/Kimi-Audio-7B",
+      "Name": "Kimi-Audio-7B",
+      "Path": "moonshotai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 4803,
+      "Stars": 7,
+      "StorageSize": 42600473075,
+      "License": "mit",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [
+        "MoonshotKimiaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-to-speech",
+          "ChineseName": "语音合成"
+        }
+      ],
+      "Tags": [
+        "audio",
+        "audio-language-model",
+        "speech-recognition",
+        "audio-understanding",
+        "text-to-speech",
+        "audio-generation",
+        "chat"
+      ],
+      "CreatedTime": 1745776930,
+      "LastUpdatedTime": 1748535919,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/moonshotai/Kimi-Audio-7B"
+    },
+    {
+      "id": "moonshotai/Kimi-K2.7-Code",
+      "Name": "Kimi-K2.7-Code",
+      "Path": "moonshotai",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 4499,
+      "Stars": 17,
+      "StorageSize": 595204989527,
+      "License": "other",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "kimi_k25"
+      ],
+      "Architectures": [
+        "KimiK25ForConditionalGeneration"
+      ],
+      "Tasks": [
+        {
+          "Name": "image-text-to-text",
+          "ChineseName": "视觉多模态理解"
+        }
+      ],
+      "Tags": [
+        "compressed-tensors"
+      ],
+      "CreatedTime": 1781268869,
+      "LastUpdatedTime": 1781525998,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/moonshotai/Kimi-K2.7-Code"
+    },
+    {
+      "id": "moonshotai/Moonlight-16B-A3B",
+      "Name": "Moonlight-16B-A3B",
+      "Path": "moonshotai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 2382,
+      "Stars": 0,
+      "StorageSize": 31925332233,
+      "License": "mit",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "deepseek_v3"
+      ],
+      "Architectures": [
+        "DeepseekV3ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1740305638,
+      "LastUpdatedTime": 1769775291,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/moonshotai/Moonlight-16B-A3B"
+    },
+    {
+      "id": "moonshotai/MoonViT-SO-400M",
+      "Name": "MoonViT-SO-400M",
+      "Path": "moonshotai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 572,
+      "Stars": 2,
+      "StorageSize": 834333350,
+      "License": "mit",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "moonvit"
+      ],
+      "Architectures": null,
+      "Tasks": [
+        {
+          "Name": "",
+          "ChineseName": ""
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1744740080,
+      "LastUpdatedTime": 1744927675,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/moonshotai/MoonViT-SO-400M"
+    },
+    {
+      "id": "moonshotai/Kimi-Linear-48B-A3B-Base",
+      "Name": "Kimi-Linear-48B-A3B-Base",
+      "Path": "moonshotai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 236,
+      "Stars": 0,
+      "StorageSize": 98253571557,
+      "License": "mit",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "kimi_linear"
+      ],
+      "Architectures": [
+        "KimiLinearForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1761847808,
+      "LastUpdatedTime": 1769775387,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/moonshotai/Kimi-Linear-48B-A3B-Base"
+    }
+  ]
+}

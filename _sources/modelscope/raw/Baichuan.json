@@ -1,0 +1,957 @@
+{
+  "label": "Baichuan",
+  "namespace": "baichuan-inc",
+  "organization": {
+    "ApplyFailureReason": "",
+    "ApplyReason": "",
+    "Avatar": "https://resouces.modelscope.cn/avatar/c74f7a7c-f4d1-4ef0-89ca-b6f8e71e800a.png",
+    "CreateCompetition": false,
+    "CreatedBy": "Cherrytest",
+    "Description": "[\"root\",{},[\"p\",{},[\"span\",{\"data-type\":\"text\"},[\"span\",{\"color\":\"rgb(0, 0, 0)\",\"data-type\":\"leaf\"},\"集百川之智，共赴山海，欢迎对AI充满激情与梦想的每一位同仁加入，共创美好未来\"]]]]",
+    "DisplayUrl": "",
+    "Email": "",
+    "FromSite": "",
+    "FullName": "百川智能",
+    "GithubAddress": "https://github.com/baichuan-inc",
+    "GmtCreated": "2023-06-13T11:16:58Z",
+    "GmtModified": "2023-09-05T10:00:44Z",
+    "Id": 149,
+    "InitAdminMembers": "",
+    "IsApply": false,
+    "IsCertification": "",
+    "Mobile": "",
+    "Name": "baichuan-inc",
+    "Path": "",
+    "Roles": null,
+    "StarCnt": 0,
+    "Status": 0,
+    "SubscribeVo": null,
+    "Type": 2
+  },
+  "model_count": 24,
+  "stats": {
+    "total_counts": [
+      {
+        "term": "baichuan-inc",
+        "TotalCount": 27
+      },
+      {
+        "term": "baichuan",
+        "TotalCount": 136
+      }
+    ],
+    "pages_fetched": 3,
+    "candidates": 48
+  },
+  "models": [
+    {
+      "id": "baichuan-inc/Baichuan2-7B-Chat-4bits",
+      "Name": "Baichuan2-7B-Chat-4bits",
+      "Path": "baichuan-inc",
+      "ChineseName": "百川2-7B-对话模型-4bits量化版",
+      "NickName": "",
+      "Description": "百川2-7B-对话模型-4bits量化版",
+      "Downloads": 365748,
+      "Stars": 35,
+      "StorageSize": 5403535925,
+      "License": "other",
+      "Libraries": [
+        "pytorch",
+        "transformer"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "baichuan"
+      ],
+      "Architectures": [
+        "BaichuanForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1693832331,
+      "LastUpdatedTime": 1740572886,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/baichuan-inc/Baichuan2-7B-Chat-4bits"
+    },
+    {
+      "id": "baichuan-inc/Baichuan2-7B-Chat",
+      "Name": "Baichuan2-7B-Chat",
+      "Path": "baichuan-inc",
+      "ChineseName": "百川2-7B-对话模型",
+      "NickName": "",
+      "Description": "百川7B对话模型第二版",
+      "Downloads": 358199,
+      "Stars": 93,
+      "StorageSize": 15014561351,
+      "License": "",
+      "Libraries": [
+        "pytorch",
+        "transformer"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "baichuan"
+      ],
+      "Architectures": [
+        "BaichuanForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1693558354,
+      "LastUpdatedTime": 1740572919,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/baichuan-inc/Baichuan2-7B-Chat"
+    },
+    {
+      "id": "baichuan-inc/Baichuan2-13B-Chat",
+      "Name": "Baichuan2-13B-Chat",
+      "Path": "baichuan-inc",
+      "ChineseName": "百川2-13B-对话模型",
+      "NickName": "",
+      "Description": "Baichuan 2 是百川智能推出的新一代开源大语言模型，采用 2.6 万亿 Tokens 的高质量语料训练。Baichuan 2 在多个权威的中文、英文和多语言的通用、领域 benchmark 上取得同尺寸最佳的效果。包含有 7B、13B 的 Base 和 Chat 版本，并提供了 Chat 版本的 4bits 量化。",
+      "Downloads": 263382,
+      "Stars": 251,
+      "StorageSize": 27795999733,
+      "License": "other",
+      "Libraries": [
+        "pytorch",
+        "transformer"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "baichuan"
+      ],
+      "Architectures": [
+        "BaichuanForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1693558117,
+      "LastUpdatedTime": 1740572890,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/baichuan-inc/Baichuan2-13B-Chat"
+    },
+    {
+      "id": "baichuan-inc/Baichuan-M2-32B-GPTQ-Int4",
+      "Name": "Baichuan-M2-32B-GPTQ-Int4",
+      "Path": "baichuan-inc",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 189675,
+      "Stars": 9,
+      "StorageSize": 20894097388,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "qwen2"
+      ],
+      "Architectures": [
+        "Qwen2ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [
+        "chat"
+      ],
+      "CreatedTime": 1754888702,
+      "LastUpdatedTime": 1756885288,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/baichuan-inc/Baichuan-M2-32B-GPTQ-Int4"
+    },
+    {
+      "id": "baichuan-inc/Baichuan2-13B-Chat-4bits",
+      "Name": "Baichuan2-13B-Chat-4bits",
+      "Path": "baichuan-inc",
+      "ChineseName": "百川2-13B-对话模型-4bits量化版",
+      "NickName": "",
+      "Description": "百川2-13B-对话模型-4bits量化版",
+      "Downloads": 87011,
+      "Stars": 61,
+      "StorageSize": 9082648770,
+      "License": "other",
+      "Libraries": [
+        "pytorch",
+        "transformer"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "baichuan"
+      ],
+      "Architectures": [
+        "BaichuanForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1693832185,
+      "LastUpdatedTime": 1740572781,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/baichuan-inc/Baichuan2-13B-Chat-4bits"
+    },
+    {
+      "id": "baichuan-inc/Baichuan2-7B-Base",
+      "Name": "Baichuan2-7B-Base",
+      "Path": "baichuan-inc",
+      "ChineseName": "百川2-7B-预训练模型",
+      "NickName": "",
+      "Description": "百川2-7B-预训练模型",
+      "Downloads": 44725,
+      "Stars": 31,
+      "StorageSize": 15014880894,
+      "License": "other",
+      "Libraries": [
+        "pytorch",
+        "transformer"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "baichuan"
+      ],
+      "Architectures": [
+        "BaichuanForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1693712839,
+      "LastUpdatedTime": 1740572891,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/baichuan-inc/Baichuan2-7B-Base"
+    },
+    {
+      "id": "baichuan-inc/baichuan-7B",
+      "Name": "baichuan-7B",
+      "Path": "baichuan-inc",
+      "ChineseName": "百川-7B",
+      "NickName": "",
+      "Description": "Baichuan-7B是由百川智能开发的开源大规模预训练模型。基于Transformer结构，在大约1.2万亿tokens上训练的70亿参数模型，支持中英双语，上下文窗口长度为4096。在标准的中文和英文权威benchmark（C-EVAL/MMLU）上均取得同尺寸最好的效果。",
+      "Downloads": 40789,
+      "Stars": 123,
+      "StorageSize": 14003328395,
+      "License": "",
+      "Libraries": [
+        "transformer",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "baichuan"
+      ],
+      "Architectures": [
+        "BaiChuanForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1686656439,
+      "LastUpdatedTime": 1740572883,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/baichuan-inc/baichuan-7B"
+    },
+    {
+      "id": "baichuan-inc/Baichuan2-13B-Base",
+      "Name": "Baichuan2-13B-Base",
+      "Path": "baichuan-inc",
+      "ChineseName": "百川2-13B-预训练模型",
+      "NickName": "",
+      "Description": "百川2-13B-预训练模型",
+      "Downloads": 39416,
+      "Stars": 36,
+      "StorageSize": 27795996054,
+      "License": "other",
+      "Libraries": [
+        "pytorch",
+        "transformer"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "baichuan"
+      ],
+      "Architectures": [
+        "BaichuanForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1693713013,
+      "LastUpdatedTime": 1740572897,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/baichuan-inc/Baichuan2-13B-Base"
+    },
+    {
+      "id": "baichuan-inc/Baichuan-13B-Chat",
+      "Name": "Baichuan-13B-Chat",
+      "Path": "baichuan-inc",
+      "ChineseName": "百川13B对话模型",
+      "NickName": "",
+      "Description": "Baichuan-13B-Chat为Baichuan-13B系列模型中对齐后的版本，预训练模型可见Baichuan-13B-Base。",
+      "Downloads": 39235,
+      "Stars": 129,
+      "StorageSize": 26531526311,
+      "License": "",
+      "Libraries": [
+        "pytorch",
+        "transformer"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "baichuan"
+      ],
+      "Architectures": [
+        "BaichuanForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1688972628,
+      "LastUpdatedTime": 1740572788,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/baichuan-inc/Baichuan-13B-Chat"
+    },
+    {
+      "id": "baichuan-inc/Baichuan-13B-Base",
+      "Name": "Baichuan-13B-Base",
+      "Path": "baichuan-inc",
+      "ChineseName": "百川13B模型",
+      "NickName": "",
+      "Description": "Baichuan-13B 是由百川智能继 Baichuan-7B 之后开发的包含 130 亿参数的开源可商用的大规模语言模型，在权威的中文和英文 benchmark 上均取得同尺寸最好的效果。",
+      "Downloads": 30440,
+      "Stars": 78,
+      "StorageSize": 26531524827,
+      "License": "",
+      "Libraries": [
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "baichuan"
+      ],
+      "Architectures": [
+        "BaichuanForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1688981713,
+      "LastUpdatedTime": 1740572775,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/baichuan-inc/Baichuan-13B-Base"
+    },
+    {
+      "id": "baichuan-inc/Baichuan-M2-32B",
+      "Name": "Baichuan-M2-32B",
+      "Path": "baichuan-inc",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 25194,
+      "Stars": 34,
+      "StorageSize": 67077845120,
+      "License": "apache-2.0",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "qwen2"
+      ],
+      "Architectures": [
+        "Qwen2ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [
+        "chat"
+      ],
+      "CreatedTime": 1754888702,
+      "LastUpdatedTime": 1766596358,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/baichuan-inc/Baichuan-M2-32B"
+    },
+    {
+      "id": "baichuan-inc/Baichuan-M1-14B-Instruct",
+      "Name": "Baichuan-M1-14B-Instruct",
+      "Path": "baichuan-inc",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 5269,
+      "Stars": 23,
+      "StorageSize": 28943921334,
+      "License": "",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "baichuan_m1"
+      ],
+      "Architectures": [
+        "BaichuanM1ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [
+        "medical"
+      ],
+      "CreatedTime": 1737702270,
+      "LastUpdatedTime": 1740053094,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/baichuan-inc/Baichuan-M1-14B-Instruct"
+    },
+    {
+      "id": "baichuan-inc/Baichuan-M3-235B",
+      "Name": "Baichuan-M3-235B",
+      "Path": "baichuan-inc",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 4009,
+      "Stars": 14,
+      "StorageSize": 471530685811,
+      "License": "apache-2.0",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "qwen3_moe"
+      ],
+      "Architectures": [
+        "Qwen3MoeForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [
+        "chat"
+      ],
+      "CreatedTime": 1768306456,
+      "LastUpdatedTime": 1770609394,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/baichuan-inc/Baichuan-M3-235B"
+    },
+    {
+      "id": "baichuan-inc/Baichuan-Audio-Instruct",
+      "Name": "Baichuan-Audio-Instruct",
+      "Path": "baichuan-inc",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 2674,
+      "Stars": 2,
+      "StorageSize": 21138959238,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "omni"
+      ],
+      "Architectures": [
+        "OmniForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "",
+          "ChineseName": ""
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1740487169,
+      "LastUpdatedTime": 1740487891,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/baichuan-inc/Baichuan-Audio-Instruct"
+    },
+    {
+      "id": "baichuan-inc/Baichuan-Omni-1d5",
+      "Name": "Baichuan-Omni-1d5",
+      "Path": "baichuan-inc",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 1621,
+      "Stars": 2,
+      "StorageSize": 22453885746,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "omni"
+      ],
+      "Architectures": [
+        "OmniForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "",
+          "ChineseName": ""
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1737992946,
+      "LastUpdatedTime": 1739017483,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/baichuan-inc/Baichuan-Omni-1d5"
+    },
+    {
+      "id": "baichuan-inc/BaichuanMed-OCR-7B",
+      "Name": "BaichuanMed-OCR-7B",
+      "Path": "baichuan-inc",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 1392,
+      "Stars": 2,
+      "StorageSize": 16600359054,
+      "License": "other",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "qwen2_5_vl"
+      ],
+      "Architectures": [
+        "Qwen2_5_VLForConditionalGeneration"
+      ],
+      "Tasks": [
+        {
+          "Name": "image-text-to-text",
+          "ChineseName": "视觉多模态理解"
+        }
+      ],
+      "Tags": [
+        "multimodal",
+        "medical"
+      ],
+      "CreatedTime": 1744048871,
+      "LastUpdatedTime": 1744049640,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/baichuan-inc/BaichuanMed-OCR-7B"
+    },
+    {
+      "id": "baichuan-inc/Baichuan-M1-14B-Base",
+      "Name": "Baichuan-M1-14B-Base",
+      "Path": "baichuan-inc",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 1265,
+      "Stars": 2,
+      "StorageSize": 28943920781,
+      "License": "",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "baichuan_m1"
+      ],
+      "Architectures": [
+        "BaichuanM1ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [
+        "medical"
+      ],
+      "CreatedTime": 1737702270,
+      "LastUpdatedTime": 1740053096,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/baichuan-inc/Baichuan-M1-14B-Base"
+    },
+    {
+      "id": "baichuan-inc/Baichuan-Omni-1d5-Base",
+      "Name": "Baichuan-Omni-1d5-Base",
+      "Path": "baichuan-inc",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 982,
+      "Stars": 0,
+      "StorageSize": 22453885747,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "omni"
+      ],
+      "Architectures": [
+        "OmniForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "",
+          "ChineseName": ""
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1737992046,
+      "LastUpdatedTime": 1739017485,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/baichuan-inc/Baichuan-Omni-1d5-Base"
+    },
+    {
+      "id": "baichuan-inc/Baichuan-Audio-Base",
+      "Name": "Baichuan-Audio-Base",
+      "Path": "baichuan-inc",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 796,
+      "Stars": 0,
+      "StorageSize": 21138959238,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "omni"
+      ],
+      "Architectures": [
+        "OmniForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "",
+          "ChineseName": ""
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1740486409,
+      "LastUpdatedTime": 1740487157,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/baichuan-inc/Baichuan-Audio-Base"
+    },
+    {
+      "id": "baichuan-inc/BaichuanMed-OCR-72B",
+      "Name": "BaichuanMed-OCR-72B",
+      "Path": "baichuan-inc",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 677,
+      "Stars": 2,
+      "StorageSize": 146837704420,
+      "License": "other",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "qwen2_5_vl"
+      ],
+      "Architectures": [
+        "Qwen2_5_VLForConditionalGeneration"
+      ],
+      "Tasks": [
+        {
+          "Name": "image-text-to-text",
+          "ChineseName": "视觉多模态理解"
+        }
+      ],
+      "Tags": [
+        "multimodal",
+        "medical"
+      ],
+      "CreatedTime": 1743616866,
+      "LastUpdatedTime": 1744067657,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/baichuan-inc/BaichuanMed-OCR-72B"
+    },
+    {
+      "id": "baichuan-inc/Baichuan-M3-235B-GPTQ-INT4",
+      "Name": "Baichuan-M3-235B-GPTQ-INT4",
+      "Path": "baichuan-inc",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 629,
+      "Stars": 2,
+      "StorageSize": 124578081330,
+      "License": "apache-2.0",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "qwen3_moe"
+      ],
+      "Architectures": [
+        "Qwen3MoeForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [
+        "chat"
+      ],
+      "CreatedTime": 1768306457,
+      "LastUpdatedTime": 1770609429,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/baichuan-inc/Baichuan-M3-235B-GPTQ-INT4"
+    },
+    {
+      "id": "baichuan-inc/Baichuan-M3-235B-Q4_K_M-GGUF",
+      "Name": "Baichuan-M3-235B-Q4_K_M-GGUF",
+      "Path": "baichuan-inc",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 510,
+      "Stars": 0,
+      "StorageSize": 143782850813,
+      "License": "apache-2.0",
+      "Libraries": [
+        "gguf",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [
+        "chat",
+        "medical",
+        "gguf"
+      ],
+      "CreatedTime": 1770661878,
+      "LastUpdatedTime": 1770662916,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/baichuan-inc/Baichuan-M3-235B-Q4_K_M-GGUF"
+    },
+    {
+      "id": "baichuan-inc/Baichuan-M3-235B-FP8",
+      "Name": "Baichuan-M3-235B-FP8",
+      "Path": "baichuan-inc",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 193,
+      "Stars": 2,
+      "StorageSize": 237768320993,
+      "License": "apache-2.0",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "qwen3_moe"
+      ],
+      "Architectures": [
+        "Qwen3MoeForCausalLM"
+      ],
+      "Tasks": [],
+      "Tags": [
+        "chat"
+      ],
+      "CreatedTime": 1769105460,
+      "LastUpdatedTime": 1770609461,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/baichuan-inc/Baichuan-M3-235B-FP8"
+    },
+    {
+      "id": "baichuan-inc/Baichuan-M2-32B-Q4_K_M-GGUF",
+      "Name": "Baichuan-M2-32B-Q4_K_M-GGUF",
+      "Path": "baichuan-inc",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 180,
+      "Stars": 1,
+      "StorageSize": 21889015634,
+      "License": "apache-2.0",
+      "Libraries": [
+        "gguf",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [
+        "chat",
+        "gguf"
+      ],
+      "CreatedTime": 1770403135,
+      "LastUpdatedTime": 1770649836,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/baichuan-inc/Baichuan-M2-32B-Q4_K_M-GGUF"
+    }
+  ]
+}

@@ -1,0 +1,3168 @@
+{
+  "label": "Tencent_Hunyuan",
+  "namespace": "Tencent-Hunyuan",
+  "organization": {
+    "ApplyFailureReason": "",
+    "ApplyReason": "",
+    "Avatar": "https://resouces.modelscope.cn/avatar/4cb5f252-eb14-4ebc-8d25-6137e9b9b581.png",
+    "CreateCompetition": false,
+    "CreatedBy": "Cherrytest",
+    "Description": "[\"root\",{},[\"p\",{},[\"span\",{\"data-type\":\"text\"},[\"span\",{\"data-type\":\"leaf\"},\"\"]]]]",
+    "DisplayUrl": "",
+    "Email": "",
+    "FromSite": "",
+    "FullName": "腾讯混元",
+    "GithubAddress": "",
+    "GmtCreated": "2025-06-25T10:48:29Z",
+    "GmtModified": "2025-11-21T08:30:42Z",
+    "Id": 2226,
+    "InitAdminMembers": "",
+    "IsApply": false,
+    "IsCertification": "",
+    "Mobile": "",
+    "Name": "Tencent-Hunyuan",
+    "Path": "",
+    "Roles": null,
+    "StarCnt": 0,
+    "Status": 0,
+    "SubscribeVo": null,
+    "Type": 2
+  },
+  "model_count": 84,
+  "stats": {
+    "total_counts": [
+      {
+        "term": "Tencent-Hunyuan",
+        "TotalCount": 107
+      },
+      {
+        "term": "hunyuan",
+        "TotalCount": 319
+      }
+    ],
+    "pages_fetched": 6,
+    "candidates": 168
+  },
+  "models": [
+    {
+      "id": "Tencent-Hunyuan/HunyuanOCR",
+      "Name": "HunyuanOCR",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 1189339,
+      "Stars": 89,
+      "StorageSize": 1998788351,
+      "License": "other",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "hunyuan_vl"
+      ],
+      "Architectures": [
+        "HunYuanVLForConditionalGeneration"
+      ],
+      "Tasks": [
+        {
+          "Name": "image-text-to-text",
+          "ChineseName": "视觉多模态理解"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1763439040,
+      "LastUpdatedTime": 1764053175,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/HunyuanOCR"
+    },
+    {
+      "id": "Tencent-Hunyuan/Hunyuan-A13B-Instruct-FP8",
+      "Name": "Hunyuan-A13B-Instruct-FP8",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "Hunyuan-A13B-Instruct-FP8",
+      "NickName": "",
+      "Description": "Tencent Hunyuan A13B，简称Hunyuan A13B，是腾讯最新发布的混合专家（MoE）大型语言模型。",
+      "Downloads": 67850,
+      "Stars": 1,
+      "StorageSize": 80935379456,
+      "License": "",
+      "Libraries": [
+        "safetensors"
+      ],
+      "Frameworks": [],
+      "ModelType": [
+        "hunyuan"
+      ],
+      "Architectures": [
+        "HunYuanMoEV1ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1750852948,
+      "LastUpdatedTime": 1751975863,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/Hunyuan-A13B-Instruct-FP8"
+    },
+    {
+      "id": "Tencent-Hunyuan/Hunyuan-A13B-Instruct",
+      "Name": "Hunyuan-A13B-Instruct",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "Hunyuan-A13B-Instruct",
+      "NickName": "",
+      "Description": "Tencent Hunyuan A13B，简称Hunyuan A13B，是腾讯最新发布的混合专家（MoE）大型语言模型。",
+      "Downloads": 51037,
+      "Stars": 31,
+      "StorageSize": 160806916344,
+      "License": "",
+      "Libraries": [
+        "safetensors",
+        "other"
+      ],
+      "Frameworks": [
+        "other"
+      ],
+      "ModelType": [
+        "hunyuan"
+      ],
+      "Architectures": [
+        "HunYuanMoEV1ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1750905441,
+      "LastUpdatedTime": 1751975777,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/Hunyuan-A13B-Instruct"
+    },
+    {
+      "id": "Tencent-Hunyuan/HY-Embodied-0.5",
+      "Name": "HY-Embodied-0.5",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 47559,
+      "Stars": 18,
+      "StorageSize": 7580142067,
+      "License": "other",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "hunyuan_vl_mot"
+      ],
+      "Architectures": [
+        "HunYuanVLMoTForConditionalGeneration"
+      ],
+      "Tasks": [
+        {
+          "Name": "image-text-to-text",
+          "ChineseName": "视觉多模态理解"
+        }
+      ],
+      "Tags": [
+        "hunyuan",
+        "vision-language",
+        "Embodied",
+        "image-to-text",
+        "2B",
+        "end-to-end",
+        "MoT"
+      ],
+      "CreatedTime": 1775705112,
+      "LastUpdatedTime": 1781619284,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/HY-Embodied-0.5"
+    },
+    {
+      "id": "Tencent-Hunyuan/Tencent-Hunyuan-Large",
+      "Name": "Tencent-Hunyuan-Large",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 43277,
+      "Stars": 6,
+      "StorageSize": 1947849198038,
+      "License": "other",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": null,
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1730785393,
+      "LastUpdatedTime": 1750850144,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/Tencent-Hunyuan-Large"
+    },
+    {
+      "id": "Tencent-Hunyuan/HY-World-2.0",
+      "Name": "HY-World-2.0",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "混元世界模型2.0 HY-World-2.0",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 32131,
+      "Stars": 74,
+      "StorageSize": 174734770472,
+      "License": "other",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "image-to-3D",
+          "ChineseName": "图片生成3D"
+        }
+      ],
+      "Tags": [
+        "worldmodel",
+        "3d",
+        "hy-world"
+      ],
+      "CreatedTime": 1776300952,
+      "LastUpdatedTime": 1781662796,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/HY-World-2.0"
+    },
+    {
+      "id": "Tencent-Hunyuan/Hunyuan-MT-7B",
+      "Name": "Hunyuan-MT-7B",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "Hunyuan-MT-7B",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 22023,
+      "Stars": 62,
+      "StorageSize": 16077023258,
+      "License": "",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "hunyuan_v1_dense"
+      ],
+      "Architectures": [
+        "HunYuanDenseV1ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "translation",
+          "ChineseName": "翻译"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1756384376,
+      "LastUpdatedTime": 1756897569,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/Hunyuan-MT-7B"
+    },
+    {
+      "id": "Tencent-Hunyuan/HY-MT1.5-1.8B",
+      "Name": "HY-MT1.5-1.8B",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 14248,
+      "Stars": 37,
+      "StorageSize": 4086795695,
+      "License": "",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "hunyuan_v1_dense"
+      ],
+      "Architectures": [
+        "HunYuanDenseV1ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "translation",
+          "ChineseName": "翻译"
+        }
+      ],
+      "Tags": [
+        "translation"
+      ],
+      "CreatedTime": 1766839764,
+      "LastUpdatedTime": 1767071725,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/HY-MT1.5-1.8B"
+    },
+    {
+      "id": "Tencent-Hunyuan/HunyuanVideo-Foley",
+      "Name": "HunyuanVideo-Foley",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "HunyuanVideo-Foley",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 12414,
+      "Stars": 28,
+      "StorageSize": 18593354366,
+      "License": "other",
+      "Libraries": [
+        "pytorch"
+      ],
+      "Frameworks": [
+        "PyTorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "audio-generation",
+          "ChineseName": "音频生成"
+        },
+        {
+          "Name": "text-to-speech",
+          "ChineseName": "语音合成"
+        }
+      ],
+      "Tags": [
+        "text-to-audio",
+        "video-to-audio",
+        "text-video-to-audio"
+      ],
+      "CreatedTime": 1756202205,
+      "LastUpdatedTime": 1759126223,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/HunyuanVideo-Foley"
+    },
+    {
+      "id": "Tencent-Hunyuan/HunyuanVideo-1.5",
+      "Name": "HunyuanVideo-1.5",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 12202,
+      "Stars": 43,
+      "StorageSize": 371771120212,
+      "License": "other",
+      "Libraries": [
+        "pytorch",
+        "safetensors",
+        "diffusers"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "text-to-video-synthesis",
+          "ChineseName": "文本生成视频"
+        }
+      ],
+      "Tags": [
+        "text-to-video",
+        "image-to-video"
+      ],
+      "CreatedTime": 1763696938,
+      "LastUpdatedTime": 1781765683,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/HunyuanVideo-1.5"
+    },
+    {
+      "id": "Tencent-Hunyuan/HunyuanVideo",
+      "Name": "HunyuanVideo",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 11147,
+      "Stars": 39,
+      "StorageSize": 39813712390,
+      "License": "other",
+      "Libraries": [
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": null,
+      "Tasks": [
+        {
+          "Name": "text-to-video-synthesis",
+          "ChineseName": "文本生成视频"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1733206273,
+      "LastUpdatedTime": 1750858482,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/HunyuanVideo"
+    },
+    {
+      "id": "Tencent-Hunyuan/HY-OmniWeaving",
+      "Name": "HY-OmniWeaving",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 10190,
+      "Stars": 21,
+      "StorageSize": 55305685610,
+      "License": "other",
+      "Libraries": [
+        "safetensors",
+        "diffusers",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "image-to-video",
+          "ChineseName": "图片生成视频"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1775197978,
+      "LastUpdatedTime": 1781734208,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/HY-OmniWeaving"
+    },
+    {
+      "id": "Tencent-Hunyuan/Hunyuan-MT-Chimera-7B-fp8",
+      "Name": "Hunyuan-MT-Chimera-7B-fp8",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "Hunyuan-MT-Chimera-7B-fp8",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 9153,
+      "Stars": 1,
+      "StorageSize": 8047120766,
+      "License": "",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "hunyuan_v1_dense"
+      ],
+      "Architectures": [
+        "HunYuanDenseV1ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "translation",
+          "ChineseName": "翻译"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1756634222,
+      "LastUpdatedTime": 1756897683,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/Hunyuan-MT-Chimera-7B-fp8"
+    },
+    {
+      "id": "Tencent-Hunyuan/HunyuanWorld-Voyager",
+      "Name": "HunyuanWorld-Voyager",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 6968,
+      "Stars": 13,
+      "StorageSize": 86110704813,
+      "License": "other",
+      "Libraries": [
+        "safetensors",
+        "tensorflow",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "image-to-video",
+          "ChineseName": "图片生成视频"
+        }
+      ],
+      "Tags": [
+        "hunyuan3d",
+        "worldmodel",
+        "3d-aigc",
+        "3d-generation",
+        "3d",
+        "scene-generation",
+        "image-to-video"
+      ],
+      "CreatedTime": 1756803586,
+      "LastUpdatedTime": 1781734889,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/HunyuanWorld-Voyager"
+    },
+    {
+      "id": "Tencent-Hunyuan/Hunyuan3D-2",
+      "Name": "Hunyuan3D-2",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 6609,
+      "Stars": 35,
+      "StorageSize": 74886104273,
+      "License": "other",
+      "Libraries": [
+        "safetensors",
+        "diffusers",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "image-to-3D",
+          "ChineseName": "图片生成3D"
+        }
+      ],
+      "Tags": [
+        "image-to-3d",
+        "text-to-3d"
+      ],
+      "CreatedTime": 1737445301,
+      "LastUpdatedTime": 1760717843,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/Hunyuan3D-2"
+    },
+    {
+      "id": "Tencent-Hunyuan/Hunyuan3D-2.1",
+      "Name": "Hunyuan3D-2.1",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 5953,
+      "Stars": 35,
+      "StorageSize": 14909683900,
+      "License": "other",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "image-to-3D",
+          "ChineseName": "图片生成3D"
+        }
+      ],
+      "Tags": [
+        "image-to-3d",
+        "text-to-3d"
+      ],
+      "CreatedTime": 1749837985,
+      "LastUpdatedTime": 1760717837,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/Hunyuan3D-2.1"
+    },
+    {
+      "id": "Tencent-Hunyuan/HunyuanImage-3.0",
+      "Name": "HunyuanImage-3.0",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "HunyuanImage-3.0",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 5320,
+      "Stars": 33,
+      "StorageSize": 168661991960,
+      "License": "other",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "hunyuan_image_3_moe"
+      ],
+      "Architectures": [
+        "HunyuanImage3ForCausalMM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-to-image-synthesis",
+          "ChineseName": "文本生成图片"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1758966629,
+      "LastUpdatedTime": 1769605023,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/HunyuanImage-3.0"
+    },
+    {
+      "id": "Tencent-Hunyuan/HY-MT1.5-7B",
+      "Name": "HY-MT1.5-7B",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 4666,
+      "Stars": 17,
+      "StorageSize": 16075607925,
+      "License": "",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "hunyuan_v1_dense"
+      ],
+      "Architectures": [
+        "HunYuanDenseV1ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "translation",
+          "ChineseName": "翻译"
+        }
+      ],
+      "Tags": [
+        "translation"
+      ],
+      "CreatedTime": 1766840065,
+      "LastUpdatedTime": 1767071785,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/HY-MT1.5-7B"
+    },
+    {
+      "id": "Tencent-Hunyuan/HunyuanImage-2.1",
+      "Name": "HunyuanImage-2.1",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 4380,
+      "Stars": 22,
+      "StorageSize": 173153422113,
+      "License": "other",
+      "Libraries": [
+        "pytorch",
+        "lora",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "text-to-image-synthesis",
+          "ChineseName": "文本生成图片"
+        }
+      ],
+      "Tags": [
+        "text-to-image"
+      ],
+      "CreatedTime": 1757395853,
+      "LastUpdatedTime": 1781780259,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/HunyuanImage-2.1"
+    },
+    {
+      "id": "Tencent-Hunyuan/HY-WorldPlay",
+      "Name": "HY-WorldPlay",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 4215,
+      "Stars": 11,
+      "StorageSize": 189273989469,
+      "License": "other",
+      "Libraries": [
+        "safetensors",
+        "diffusers",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "image-to-video",
+          "ChineseName": "图片生成视频"
+        }
+      ],
+      "Tags": [
+        "hunyuan3d",
+        "worldmodel",
+        "3d-reconstruction",
+        "3d-generation",
+        "3d",
+        "scene-generation",
+        "image-to-3D",
+        "text-to-3D"
+      ],
+      "CreatedTime": 1766022573,
+      "LastUpdatedTime": 1781769956,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/HY-WorldPlay"
+    },
+    {
+      "id": "Tencent-Hunyuan/Hunyuan-1.8B-Instruct",
+      "Name": "Hunyuan-1.8B-Instruct",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 4109,
+      "Stars": 11,
+      "StorageSize": 3588513188,
+      "License": "",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "other"
+      ],
+      "Frameworks": [
+        "other"
+      ],
+      "ModelType": [
+        "hunyuan_v1_dense"
+      ],
+      "Architectures": [
+        "HunYuanDenseV1ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1753845530,
+      "LastUpdatedTime": 1754552677,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/Hunyuan-1.8B-Instruct"
+    },
+    {
+      "id": "Tencent-Hunyuan/HunyuanImage-3.0-Instruct",
+      "Name": "HunyuanImage-3.0-Instruct",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 3882,
+      "Stars": 18,
+      "StorageSize": 168657608476,
+      "License": "other",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "hunyuan_image_3_moe"
+      ],
+      "Architectures": [
+        "HunyuanImage3ForCausalMM"
+      ],
+      "Tasks": [
+        {
+          "Name": "image-to-image",
+          "ChineseName": "图片生成图片"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1769573623,
+      "LastUpdatedTime": 1770211158,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/HunyuanImage-3.0-Instruct"
+    },
+    {
+      "id": "Tencent-Hunyuan/HY-MT1.5-1.8B-GGUF",
+      "Name": "HY-MT1.5-1.8B-GGUF",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 3759,
+      "Stars": 17,
+      "StorageSize": 4516420198,
+      "License": "",
+      "Libraries": [
+        "gguf",
+        "other"
+      ],
+      "Frameworks": [
+        "other"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "translation",
+          "ChineseName": "翻译"
+        }
+      ],
+      "Tags": [
+        "translation",
+        "gguf"
+      ],
+      "CreatedTime": 1767083561,
+      "LastUpdatedTime": 1767174621,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/HY-MT1.5-1.8B-GGUF"
+    },
+    {
+      "id": "Tencent-Hunyuan/HunyuanCustom",
+      "Name": "HunyuanCustom",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 3742,
+      "Stars": 14,
+      "StorageSize": 191128416111,
+      "License": "",
+      "Libraries": [
+        "safetensors",
+        "tensorflow",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": null,
+      "Tasks": [
+        {
+          "Name": "image-to-video",
+          "ChineseName": "图片生成视频"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1746760286,
+      "LastUpdatedTime": 1750868035,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/HunyuanCustom"
+    },
+    {
+      "id": "Tencent-Hunyuan/HunyuanWorld-Mirror",
+      "Name": "HunyuanWorld-Mirror",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 3402,
+      "Stars": 19,
+      "StorageSize": 5056744609,
+      "License": "other",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "image-to-3D",
+          "ChineseName": "图片生成3D"
+        }
+      ],
+      "Tags": [
+        "hunyuan3d",
+        "worldmodel",
+        "3d-reconstruction",
+        "3d-generation",
+        "3d",
+        "scene-generation",
+        "image-to-3D",
+        "video-to-3D"
+      ],
+      "CreatedTime": 1761055233,
+      "LastUpdatedTime": 1761109822,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/HunyuanWorld-Mirror"
+    },
+    {
+      "id": "Tencent-Hunyuan/HY-MT1.5-1.8B-FP8",
+      "Name": "HY-MT1.5-1.8B-FP8",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 3391,
+      "Stars": 3,
+      "StorageSize": 2048470963,
+      "License": "",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "hunyuan_v1_dense"
+      ],
+      "Architectures": [
+        "HunYuanDenseV1ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "translation",
+          "ChineseName": "翻译"
+        }
+      ],
+      "Tags": [
+        "translation"
+      ],
+      "CreatedTime": 1766839960,
+      "LastUpdatedTime": 1767071754,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/HY-MT1.5-1.8B-FP8"
+    },
+    {
+      "id": "Tencent-Hunyuan/Hunyuan-GameCraft-1.0",
+      "Name": "Hunyuan-GameCraft-1.0",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 3211,
+      "Stars": 15,
+      "StorageSize": 90092251286,
+      "License": "",
+      "Libraries": [
+        "safetensors",
+        "tensorflow",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "image-to-video",
+          "ChineseName": "图片生成视频"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1755165347,
+      "LastUpdatedTime": 1781735006,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/Hunyuan-GameCraft-1.0"
+    },
+    {
+      "id": "Tencent-Hunyuan/Hunyuan-0.5B-Instruct",
+      "Name": "Hunyuan-0.5B-Instruct",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 2761,
+      "Stars": 6,
+      "StorageSize": 1084361938,
+      "License": "",
+      "Libraries": [
+        "safetensors",
+        "other"
+      ],
+      "Frameworks": [
+        "other"
+      ],
+      "ModelType": [
+        "hunyuan_v1_dense"
+      ],
+      "Architectures": [
+        "HunYuanDenseV1ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1753845424,
+      "LastUpdatedTime": 1754469541,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/Hunyuan-0.5B-Instruct"
+    },
+    {
+      "id": "Tencent-Hunyuan/Hy-MT2-7B",
+      "Name": "Hy-MT2-7B",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 2543,
+      "Stars": 4,
+      "StorageSize": 16079806545,
+      "License": "apache-2.0",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "hunyuan_v1_dense"
+      ],
+      "Architectures": [
+        "HunYuanDenseV1ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "translation",
+          "ChineseName": "翻译"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1778515202,
+      "LastUpdatedTime": 1779786963,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/Hy-MT2-7B"
+    },
+    {
+      "id": "Tencent-Hunyuan/HY-MT1.5-1.8B-GPTQ-Int4",
+      "Name": "HY-MT1.5-1.8B-GPTQ-Int4",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 2523,
+      "Stars": 9,
+      "StorageSize": 1339397541,
+      "License": "",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "other"
+      ],
+      "Frameworks": [
+        "other"
+      ],
+      "ModelType": [
+        "hunyuan_v1_dense"
+      ],
+      "Architectures": [
+        "HunYuanDenseV1ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "translation",
+          "ChineseName": "翻译"
+        }
+      ],
+      "Tags": [
+        "translation"
+      ],
+      "CreatedTime": 1767070162,
+      "LastUpdatedTime": 1767075662,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/HY-MT1.5-1.8B-GPTQ-Int4"
+    },
+    {
+      "id": "Tencent-Hunyuan/HunyuanWorld-1",
+      "Name": "HunyuanWorld-1",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "ZuoXuhui",
+      "Description": "",
+      "Downloads": 2416,
+      "Stars": 12,
+      "StorageSize": 1558872086,
+      "License": "other",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": null,
+      "Tasks": [
+        {
+          "Name": "",
+          "ChineseName": ""
+        }
+      ],
+      "Tags": [
+        "hunyuan3d",
+        "worldmodel",
+        "3d-aigc",
+        "3d-generation",
+        "3d",
+        "scene-generation"
+      ],
+      "CreatedTime": 1753545107,
+      "LastUpdatedTime": 1753580198,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/HunyuanWorld-1"
+    },
+    {
+      "id": "Tencent-Hunyuan/Hunyuan-MT-7B-fp8",
+      "Name": "Hunyuan-MT-7B-fp8",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "Hunyuan-MT-7B-fp8",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 2378,
+      "Stars": 2,
+      "StorageSize": 8047121147,
+      "License": "",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "hunyuan_v1_dense"
+      ],
+      "Architectures": [
+        "HunYuanDenseV1ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "translation",
+          "ChineseName": "翻译"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1756638224,
+      "LastUpdatedTime": 1756897634,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/Hunyuan-MT-7B-fp8"
+    },
+    {
+      "id": "Tencent-Hunyuan/Hunyuan-7B-Instruct",
+      "Name": "Hunyuan-7B-Instruct",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 2326,
+      "Stars": 7,
+      "StorageSize": 15025698663,
+      "License": "",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "other"
+      ],
+      "Frameworks": [
+        "other"
+      ],
+      "ModelType": [
+        "hunyuan_v1_dense"
+      ],
+      "Architectures": [
+        "HunYuanDenseV1ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1753845602,
+      "LastUpdatedTime": 1756820997,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/Hunyuan-7B-Instruct"
+    },
+    {
+      "id": "Tencent-Hunyuan/Hunyuan-7B-Instruct-0124",
+      "Name": "Hunyuan-7B-Instruct-0124",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 2091,
+      "Stars": 1,
+      "StorageSize": 15018548038,
+      "License": "other",
+      "Libraries": [
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "hunyuan_v1_dense"
+      ],
+      "Architectures": [
+        "HunYuanDenseV1ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1737854074,
+      "LastUpdatedTime": 1753845596,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/Hunyuan-7B-Instruct-0124"
+    },
+    {
+      "id": "Tencent-Hunyuan/Hunyuan3D-1",
+      "Name": "Hunyuan3D-1",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 2043,
+      "Stars": 4,
+      "StorageSize": 16100066669,
+      "License": "other",
+      "Libraries": [
+        "safetensors",
+        "diffusers",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "image-to-3D",
+          "ChineseName": "图片生成3D"
+        }
+      ],
+      "Tags": [
+        "image-to-3d",
+        "text-to-3d"
+      ],
+      "CreatedTime": 1730855816,
+      "LastUpdatedTime": 1760717844,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/Hunyuan3D-1"
+    },
+    {
+      "id": "Tencent-Hunyuan/Hy-MT2-1.8B",
+      "Name": "Hy-MT2-1.8B",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 1816,
+      "Stars": 10,
+      "StorageSize": 4090994367,
+      "License": "apache-2.0",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "hunyuan_v1_dense"
+      ],
+      "Architectures": [
+        "HunYuanDenseV1ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "translation",
+          "ChineseName": "翻译"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1778515145,
+      "LastUpdatedTime": 1779786964,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/Hy-MT2-1.8B"
+    },
+    {
+      "id": "Tencent-Hunyuan/HY-MT1.5-7B-GGUF",
+      "Name": "HY-MT1.5-7B-GGUF",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 1807,
+      "Stars": 12,
+      "StorageSize": 18771087998,
+      "License": "",
+      "Libraries": [
+        "gguf",
+        "other"
+      ],
+      "Frameworks": [
+        "other"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "translation",
+          "ChineseName": "翻译"
+        }
+      ],
+      "Tags": [
+        "translation",
+        "gguf"
+      ],
+      "CreatedTime": 1767174127,
+      "LastUpdatedTime": 1767174639,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/HY-MT1.5-7B-GGUF"
+    },
+    {
+      "id": "Tencent-Hunyuan/HunyuanVideo-Avatar",
+      "Name": "HunyuanVideo-Avatar",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 1753,
+      "Stars": 8,
+      "StorageSize": 80774008207,
+      "License": "",
+      "Libraries": [
+        "safetensors",
+        "tensorflow",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": null,
+      "Tasks": [
+        {
+          "Name": "image-to-video",
+          "ChineseName": "图片生成视频"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1748369157,
+      "LastUpdatedTime": 1750867898,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/HunyuanVideo-Avatar"
+    },
+    {
+      "id": "Tencent-Hunyuan/HY-MT1.5-7B-FP8",
+      "Name": "HY-MT1.5-7B-FP8",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 1718,
+      "Stars": 4,
+      "StorageSize": 8046429766,
+      "License": "",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "hunyuan_v1_dense"
+      ],
+      "Architectures": [
+        "HunYuanDenseV1ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "translation",
+          "ChineseName": "翻译"
+        }
+      ],
+      "Tags": [
+        "translation"
+      ],
+      "CreatedTime": 1766840149,
+      "LastUpdatedTime": 1767071807,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/HY-MT1.5-7B-FP8"
+    },
+    {
+      "id": "Tencent-Hunyuan/Hunyuan-MT-Chimera-7B",
+      "Name": "Hunyuan-MT-Chimera-7B",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "Hunyuan-MT-Chimera-7B",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 1636,
+      "Stars": 7,
+      "StorageSize": 16077023464,
+      "License": "",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "hunyuan_v1_dense"
+      ],
+      "Architectures": [
+        "HunYuanDenseV1ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "translation",
+          "ChineseName": "翻译"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1756384526,
+      "LastUpdatedTime": 1756897658,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/Hunyuan-MT-Chimera-7B"
+    },
+    {
+      "id": "Tencent-Hunyuan/HunyuanVideo-PromptRewrite",
+      "Name": "HunyuanVideo-PromptRewrite",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 1584,
+      "Stars": 0,
+      "StorageSize": 779154478600,
+      "License": "other",
+      "Libraries": [
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "hunyuan"
+      ],
+      "Architectures": [
+        "HunYuanForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "",
+          "ChineseName": ""
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1733227369,
+      "LastUpdatedTime": 1750850279,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/HunyuanVideo-PromptRewrite"
+    },
+    {
+      "id": "Tencent-Hunyuan/Hy-MT2-1.8B-GGUF",
+      "Name": "Hy-MT2-1.8B-GGUF",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 1561,
+      "Stars": 1,
+      "StorageSize": 4520619452,
+      "License": "apache-2.0",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "gguf"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [
+        "gguf"
+      ],
+      "CreatedTime": 1779674097,
+      "LastUpdatedTime": 1779786976,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/Hy-MT2-1.8B-GGUF"
+    },
+    {
+      "id": "Tencent-Hunyuan/Hy-MT2-7B-FP8",
+      "Name": "Hy-MT2-7B-FP8",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 1549,
+      "Stars": 5,
+      "StorageSize": 8050628337,
+      "License": "apache-2.0",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "hunyuan_v1_dense"
+      ],
+      "Architectures": [
+        "HunYuanDenseV1ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "translation",
+          "ChineseName": "翻译"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1779207331,
+      "LastUpdatedTime": 1779786969,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/Hy-MT2-7B-FP8"
+    },
+    {
+      "id": "Tencent-Hunyuan/HunyuanVideo-I2V",
+      "Name": "HunyuanVideo-I2V",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 1420,
+      "Stars": 14,
+      "StorageSize": 30200172197,
+      "License": "other",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": null,
+      "Tasks": [
+        {
+          "Name": "image-to-video",
+          "ChineseName": "图片生成视频"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1741248163,
+      "LastUpdatedTime": 1750860340,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/HunyuanVideo-I2V"
+    },
+    {
+      "id": "Tencent-Hunyuan/Hunyuan3D-2mv",
+      "Name": "Hunyuan3D-2mv",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 1407,
+      "Stars": 5,
+      "StorageSize": 29580876354,
+      "License": "other",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "image-to-3D",
+          "ChineseName": "图片生成3D"
+        }
+      ],
+      "Tags": [
+        "image-to-3d",
+        "text-to-3d"
+      ],
+      "CreatedTime": 1742601208,
+      "LastUpdatedTime": 1760718754,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/Hunyuan3D-2mv"
+    },
+    {
+      "id": "Tencent-Hunyuan/Hunyuan-A13B-Instruct-GPTQ-Int4",
+      "Name": "Hunyuan-A13B-Instruct-GPTQ-Int4",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "Hunyuan-A13B-Instruct-GPTQ-Int4",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 1364,
+      "Stars": 2,
+      "StorageSize": 222298632038,
+      "License": "other",
+      "Libraries": [
+        "gguf",
+        "safetensors",
+        "other"
+      ],
+      "Frameworks": [
+        "other"
+      ],
+      "ModelType": [
+        "hunyuan"
+      ],
+      "Architectures": [
+        "HunYuanMoEV1ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [
+        "gguf"
+      ],
+      "CreatedTime": 1750942180,
+      "LastUpdatedTime": 1752578290,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/Hunyuan-A13B-Instruct-GPTQ-Int4"
+    },
+    {
+      "id": "Tencent-Hunyuan/Hunyuan3D-2mini",
+      "Name": "Hunyuan3D-2mini",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 1174,
+      "Stars": 8,
+      "StorageSize": 25258960601,
+      "License": "other",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "image-to-3D",
+          "ChineseName": "图片生成3D"
+        }
+      ],
+      "Tags": [
+        "image-to-3d",
+        "text-to-3d"
+      ],
+      "CreatedTime": 1742601208,
+      "LastUpdatedTime": 1760717838,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/Hunyuan3D-2mini"
+    },
+    {
+      "id": "Tencent-Hunyuan/Hy3-preview",
+      "Name": "Hy3-preview",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "Hy3 preview",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 1106,
+      "Stars": 13,
+      "StorageSize": 597593201766,
+      "License": "",
+      "Libraries": [
+        "safetensors",
+        "other"
+      ],
+      "Frameworks": [
+        "other"
+      ],
+      "ModelType": [
+        "hy_v3"
+      ],
+      "Architectures": [
+        "HYV3ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1776773020,
+      "LastUpdatedTime": 1776957520,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/Hy3-preview"
+    },
+    {
+      "id": "Tencent-Hunyuan/Hunyuan-7B-Pretrain-0124",
+      "Name": "Hunyuan-7B-Pretrain-0124",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 832,
+      "Stars": 0,
+      "StorageSize": 15018548002,
+      "License": "other",
+      "Libraries": [
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "hunyuan"
+      ],
+      "Architectures": [
+        "HunYuanForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1737855225,
+      "LastUpdatedTime": 1753684675,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/Hunyuan-7B-Pretrain-0124"
+    },
+    {
+      "id": "Tencent-Hunyuan/Hy-MT2-30B-A3B",
+      "Name": "Hy-MT2-30B-A3B",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 815,
+      "Stars": 2,
+      "StorageSize": 60147285606,
+      "License": "apache-2.0",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "hy_v3"
+      ],
+      "Architectures": [
+        "HYV3ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "translation",
+          "ChineseName": "翻译"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1778500361,
+      "LastUpdatedTime": 1779786959,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/Hy-MT2-30B-A3B"
+    },
+    {
+      "id": "Tencent-Hunyuan/Hy-MT2-7B-GGUF",
+      "Name": "Hy-MT2-7B-GGUF",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 768,
+      "Stars": 2,
+      "StorageSize": 18775286192,
+      "License": "apache-2.0",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "gguf"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [
+        "gguf"
+      ],
+      "CreatedTime": 1779674097,
+      "LastUpdatedTime": 1779786981,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/Hy-MT2-7B-GGUF"
+    },
+    {
+      "id": "Tencent-Hunyuan/Hunyuan-4B-Instruct",
+      "Name": "Hunyuan-4B-Instruct",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 705,
+      "Stars": 0,
+      "StorageSize": 8449905348,
+      "License": "",
+      "Libraries": [
+        "safetensors",
+        "other"
+      ],
+      "Frameworks": [
+        "other"
+      ],
+      "ModelType": [
+        "hunyuan_v1_dense"
+      ],
+      "Architectures": [
+        "HunYuanDenseV1ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1753845471,
+      "LastUpdatedTime": 1754553396,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/Hunyuan-4B-Instruct"
+    },
+    {
+      "id": "Tencent-Hunyuan/HunyuanPortrait",
+      "Name": "HunyuanPortrait",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 656,
+      "Stars": 0,
+      "StorageSize": 7341784827,
+      "License": "",
+      "Libraries": [
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": null,
+      "Tasks": [
+        {
+          "Name": "image-to-video",
+          "ChineseName": "图片生成视频"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1748362950,
+      "LastUpdatedTime": 1750852129,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/HunyuanPortrait"
+    },
+    {
+      "id": "Tencent-Hunyuan/HY-MT1.5-7B-GPTQ-Int4",
+      "Name": "HY-MT1.5-7B-GPTQ-Int4",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 630,
+      "Stars": 1,
+      "StorageSize": 4834338777,
+      "License": "",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "other"
+      ],
+      "Frameworks": [
+        "other"
+      ],
+      "ModelType": [
+        "hunyuan_v1_dense"
+      ],
+      "Architectures": [
+        "HunYuanDenseV1ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "translation",
+          "ChineseName": "翻译"
+        }
+      ],
+      "Tags": [
+        "translation"
+      ],
+      "CreatedTime": 1767070657,
+      "LastUpdatedTime": 1767083669,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/HY-MT1.5-7B-GPTQ-Int4"
+    },
+    {
+      "id": "Tencent-Hunyuan/Hunyuan-7B-Pretrain",
+      "Name": "Hunyuan-7B-Pretrain",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 570,
+      "Stars": 0,
+      "StorageSize": 15011448570,
+      "License": "",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "other"
+      ],
+      "Frameworks": [
+        "other"
+      ],
+      "ModelType": [
+        "hunyuan_v1_dense"
+      ],
+      "Architectures": [
+        "HunYuanDenseV1ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1753684710,
+      "LastUpdatedTime": 1756797215,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/Hunyuan-7B-Pretrain"
+    },
+    {
+      "id": "Tencent-Hunyuan/Hy-MT2-1.8B-FP8",
+      "Name": "Hy-MT2-1.8B-FP8",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 481,
+      "Stars": 3,
+      "StorageSize": 2052669623,
+      "License": "apache-2.0",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "hunyuan_v1_dense"
+      ],
+      "Architectures": [
+        "HunYuanDenseV1ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "translation",
+          "ChineseName": "翻译"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1779208488,
+      "LastUpdatedTime": 1779786966,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/Hy-MT2-1.8B-FP8"
+    },
+    {
+      "id": "Tencent-Hunyuan/HY-Motion-1.0",
+      "Name": "HY-Motion-1.0",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 447,
+      "Stars": 11,
+      "StorageSize": 6048146898,
+      "License": "other",
+      "Libraries": [
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "",
+          "ChineseName": ""
+        }
+      ],
+      "Tags": [
+        "text-to-motion",
+        "3d-human-motion"
+      ],
+      "CreatedTime": 1767060566,
+      "LastUpdatedTime": 1781700090,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/HY-Motion-1.0"
+    },
+    {
+      "id": "Tencent-Hunyuan/Hunyuan-7B-Instruct-AWQ-Int4",
+      "Name": "Hunyuan-7B-Instruct-AWQ-Int4",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 444,
+      "Stars": 0,
+      "StorageSize": 4695196449,
+      "License": "",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "other"
+      ],
+      "Frameworks": [
+        "other"
+      ],
+      "ModelType": [
+        "hunyuan_v1_dense"
+      ],
+      "Architectures": [
+        "HunYuanDenseV1ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1753883430,
+      "LastUpdatedTime": 1756718104,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/Hunyuan-7B-Instruct-AWQ-Int4"
+    },
+    {
+      "id": "Tencent-Hunyuan/HunyuanImage-3.0-Instruct-Distil",
+      "Name": "HunyuanImage-3.0-Instruct-Distil",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 419,
+      "Stars": 1,
+      "StorageSize": 168729167753,
+      "License": "other",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "hunyuan_image_3_moe"
+      ],
+      "Architectures": [
+        "HunyuanImage3ForCausalMM"
+      ],
+      "Tasks": [
+        {
+          "Name": "image-to-image",
+          "ChineseName": "图片生成图片"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1769575042,
+      "LastUpdatedTime": 1770211159,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/HunyuanImage-3.0-Instruct-Distil"
+    },
+    {
+      "id": "Tencent-Hunyuan/Hunyuan-0.5B-Pretrain",
+      "Name": "Hunyuan-0.5B-Pretrain",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 410,
+      "Stars": 0,
+      "StorageSize": 1084361313,
+      "License": "",
+      "Libraries": [
+        "safetensors",
+        "other"
+      ],
+      "Frameworks": [
+        "other"
+      ],
+      "ModelType": [
+        "hunyuan_v1_dense"
+      ],
+      "Architectures": [
+        "HunYuanDenseV1ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1753683123,
+      "LastUpdatedTime": 1754552992,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/Hunyuan-0.5B-Pretrain"
+    },
+    {
+      "id": "Tencent-Hunyuan/Hy-MT2-30B-A3B-FP8",
+      "Name": "Hy-MT2-30B-A3B-FP8",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 294,
+      "Stars": 2,
+      "StorageSize": 30597836185,
+      "License": "apache-2.0",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "hy_v3"
+      ],
+      "Architectures": [
+        "HYV3ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "translation",
+          "ChineseName": "翻译"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1779203534,
+      "LastUpdatedTime": 1779786973,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/Hy-MT2-30B-A3B-FP8"
+    },
+    {
+      "id": "Tencent-Hunyuan/Hunyuan3D-Part",
+      "Name": "Hunyuan3D-Part",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "Hunyuan3D-Part",
+      "NickName": "huiwenshi",
+      "Description": "",
+      "Downloads": 293,
+      "Stars": 4,
+      "StorageSize": 9496190489,
+      "License": "",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "image-to-3D",
+          "ChineseName": "图片生成3D"
+        }
+      ],
+      "Tags": [
+        "3D-Generation",
+        "Part-Segmentation",
+        "Part-Generataion"
+      ],
+      "CreatedTime": 1758876080,
+      "LastUpdatedTime": 1760717881,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/Hunyuan3D-Part"
+    },
+    {
+      "id": "Tencent-Hunyuan/Hunyuan-4B-Instruct-FP8",
+      "Name": "Hunyuan-4B-Instruct-FP8",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 264,
+      "Stars": 1,
+      "StorageSize": 4603033153,
+      "License": "",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "other"
+      ],
+      "Frameworks": [
+        "other"
+      ],
+      "ModelType": [
+        "hunyuan_v1_dense"
+      ],
+      "Architectures": [
+        "HunYuanDenseV1ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1753867246,
+      "LastUpdatedTime": 1754553185,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/Hunyuan-4B-Instruct-FP8"
+    },
+    {
+      "id": "Tencent-Hunyuan/Hunyuan-7B-Instruct-FP8",
+      "Name": "Hunyuan-7B-Instruct-FP8",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 253,
+      "Stars": 0,
+      "StorageSize": 8048609537,
+      "License": "",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "other"
+      ],
+      "Frameworks": [
+        "other"
+      ],
+      "ModelType": [
+        "hunyuan_v1_dense"
+      ],
+      "Architectures": [
+        "HunYuanDenseV1ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1753867391,
+      "LastUpdatedTime": 1756718186,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/Hunyuan-7B-Instruct-FP8"
+    },
+    {
+      "id": "Tencent-Hunyuan/Hy-MT2-1.8B-1.25Bit-GGUF",
+      "Name": "Hy-MT2-1.8B-1.25Bit-GGUF",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 233,
+      "Stars": 0,
+      "StorageSize": 466086673,
+      "License": "apache-2.0",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "gguf"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [
+        "gguf"
+      ],
+      "CreatedTime": 1779674097,
+      "LastUpdatedTime": 1781180436,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/Hy-MT2-1.8B-1.25Bit-GGUF"
+    },
+    {
+      "id": "Tencent-Hunyuan/Hy3-preview-Base",
+      "Name": "Hy3-preview-Base",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "Hy3 preview Base",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 209,
+      "Stars": 2,
+      "StorageSize": 597593375575,
+      "License": "other",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "hy_v3"
+      ],
+      "Architectures": [
+        "HYV3ForCausalLM"
+      ],
+      "Tasks": [],
+      "Tags": [],
+      "CreatedTime": 1776939147,
+      "LastUpdatedTime": 1781618640,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/Hy3-preview-Base"
+    },
+    {
+      "id": "Tencent-Hunyuan/Hunyuan-1.8B-Pretrain",
+      "Name": "Hunyuan-1.8B-Pretrain",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 203,
+      "Stars": 1,
+      "StorageSize": 3588513188,
+      "License": "",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "other"
+      ],
+      "Frameworks": [
+        "other"
+      ],
+      "ModelType": [
+        "hunyuan_v1_dense"
+      ],
+      "Architectures": [
+        "HunYuanDenseV1ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1753684077,
+      "LastUpdatedTime": 1754552571,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/Hunyuan-1.8B-Pretrain"
+    },
+    {
+      "id": "Tencent-Hunyuan/Hy-MT2-1.8B-2Bit-GGUF",
+      "Name": "Hy-MT2-1.8B-2Bit-GGUF",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 196,
+      "Stars": 0,
+      "StorageSize": 604760737,
+      "License": "apache-2.0",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "gguf"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [
+        "gguf"
+      ],
+      "CreatedTime": 1779674098,
+      "LastUpdatedTime": 1779786980,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/Hy-MT2-1.8B-2Bit-GGUF"
+    },
+    {
+      "id": "Tencent-Hunyuan/Hunyuan-0.5B-Instruct-AWQ-Int4",
+      "Name": "Hunyuan-0.5B-Instruct-AWQ-Int4",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 178,
+      "Stars": 0,
+      "StorageSize": 473130124,
+      "License": "",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "other"
+      ],
+      "Frameworks": [
+        "other"
+      ],
+      "ModelType": [
+        "hunyuan_v1_dense"
+      ],
+      "Architectures": [
+        "HunYuanDenseV1ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1753883244,
+      "LastUpdatedTime": 1754553430,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/Hunyuan-0.5B-Instruct-AWQ-Int4"
+    },
+    {
+      "id": "Tencent-Hunyuan/Hunyuan3D-Omni",
+      "Name": "Hunyuan3D-Omni",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "Hunyuan3D-Omni",
+      "NickName": "huiwenshi",
+      "Description": "",
+      "Downloads": 169,
+      "Stars": 4,
+      "StorageSize": 25729132675,
+      "License": "other",
+      "Libraries": [
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "image-to-3D",
+          "ChineseName": "图片生成3D"
+        }
+      ],
+      "Tags": [
+        "image-to-3d",
+        "text-to-3d"
+      ],
+      "CreatedTime": 1758820867,
+      "LastUpdatedTime": 1759046518,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/Hunyuan3D-Omni"
+    },
+    {
+      "id": "Tencent-Hunyuan/Hunyuan-7B-Instruct-GPTQ-Int4",
+      "Name": "Hunyuan-7B-Instruct-GPTQ-Int4",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 147,
+      "Stars": 1,
+      "StorageSize": 4700201698,
+      "License": "",
+      "Libraries": [
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [],
+      "ModelType": [
+        "hunyuan_v1_dense"
+      ],
+      "Architectures": [
+        "HunYuanDenseV1ForCausalLM"
+      ],
+      "Tasks": [],
+      "Tags": [],
+      "CreatedTime": 1753876831,
+      "LastUpdatedTime": 1756718154,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/Hunyuan-7B-Instruct-GPTQ-Int4"
+    },
+    {
+      "id": "Tencent-Hunyuan/Hunyuan-0.5B-Instruct-FP8",
+      "Name": "Hunyuan-0.5B-Instruct-FP8",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 143,
+      "Stars": 0,
+      "StorageSize": 672639278,
+      "License": "",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "other"
+      ],
+      "Frameworks": [
+        "other"
+      ],
+      "ModelType": [
+        "hunyuan_v1_dense"
+      ],
+      "Architectures": [
+        "HunYuanDenseV1ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1753866410,
+      "LastUpdatedTime": 1754553484,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/Hunyuan-0.5B-Instruct-FP8"
+    },
+    {
+      "id": "Tencent-Hunyuan/Hunyuan-A13B-Pretrain",
+      "Name": "Hunyuan-A13B-Pretrain",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "Hunyuan-A13B-Pretrain",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 138,
+      "Stars": 0,
+      "StorageSize": 160806865089,
+      "License": "",
+      "Libraries": [
+        "safetensors",
+        "other"
+      ],
+      "Frameworks": [
+        "other"
+      ],
+      "ModelType": [
+        "hunyuan"
+      ],
+      "Architectures": [
+        "HunYuanMoEV1ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1751043143,
+      "LastUpdatedTime": 1753683342,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/Hunyuan-A13B-Pretrain"
+    },
+    {
+      "id": "Tencent-Hunyuan/Hunyuan-4B-Pretrain",
+      "Name": "Hunyuan-4B-Pretrain",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 122,
+      "Stars": 0,
+      "StorageSize": 8449905300,
+      "License": "",
+      "Libraries": [
+        "safetensors",
+        "other"
+      ],
+      "Frameworks": [
+        "other"
+      ],
+      "ModelType": [
+        "hunyuan_v1_dense"
+      ],
+      "Architectures": [
+        "HunYuanDenseV1ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1753684328,
+      "LastUpdatedTime": 1754553444,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/Hunyuan-4B-Pretrain"
+    },
+    {
+      "id": "Tencent-Hunyuan/Hunyuan-0.5B-Instruct-GPTQ-Int4",
+      "Name": "Hunyuan-0.5B-Instruct-GPTQ-Int4",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 121,
+      "Stars": 0,
+      "StorageSize": 474180291,
+      "License": "",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "other"
+      ],
+      "Frameworks": [
+        "other"
+      ],
+      "ModelType": [
+        "hunyuan_v1_dense"
+      ],
+      "Architectures": [
+        "HunYuanDenseV1ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1753875666,
+      "LastUpdatedTime": 1754553453,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/Hunyuan-0.5B-Instruct-GPTQ-Int4"
+    },
+    {
+      "id": "Tencent-Hunyuan/Hunyuan-1.8B-Instruct-FP8",
+      "Name": "Hunyuan-1.8B-Instruct-FP8",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 121,
+      "Stars": 0,
+      "StorageSize": 2048534982,
+      "License": "",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "other"
+      ],
+      "Frameworks": [
+        "other"
+      ],
+      "ModelType": [
+        "hunyuan_v1_dense"
+      ],
+      "Architectures": [
+        "HunYuanDenseV1ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1753867066,
+      "LastUpdatedTime": 1754553023,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/Hunyuan-1.8B-Instruct-FP8"
+    },
+    {
+      "id": "Tencent-Hunyuan/Hunyuan-4B-Instruct-AWQ-Int4",
+      "Name": "Hunyuan-4B-Instruct-AWQ-Int4",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 111,
+      "Stars": 1,
+      "StorageSize": 2753050626,
+      "License": "",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "other"
+      ],
+      "Frameworks": [
+        "other"
+      ],
+      "ModelType": [
+        "hunyuan_v1_dense"
+      ],
+      "Architectures": [
+        "HunYuanDenseV1ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1753883398,
+      "LastUpdatedTime": 1754555395,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/Hunyuan-4B-Instruct-AWQ-Int4"
+    },
+    {
+      "id": "Tencent-Hunyuan/Hunyuan-4B-Instruct-GPTQ-Int4",
+      "Name": "Hunyuan-4B-Instruct-GPTQ-Int4",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 109,
+      "Stars": 0,
+      "StorageSize": 2757059385,
+      "License": "",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "other"
+      ],
+      "Frameworks": [
+        "other"
+      ],
+      "ModelType": [
+        "hunyuan_v1_dense"
+      ],
+      "Architectures": [
+        "HunYuanDenseV1ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1753875718,
+      "LastUpdatedTime": 1754555420,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/Hunyuan-4B-Instruct-GPTQ-Int4"
+    },
+    {
+      "id": "Tencent-Hunyuan/Hunyuan-1.8B-Instruct-GPTQ-Int4",
+      "Name": "Hunyuan-1.8B-Instruct-GPTQ-Int4",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 92,
+      "Stars": 0,
+      "StorageSize": 1309312675,
+      "License": "",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "other"
+      ],
+      "Frameworks": [
+        "other"
+      ],
+      "ModelType": [
+        "hunyuan_v1_dense"
+      ],
+      "Architectures": [
+        "HunYuanDenseV1ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1753875690,
+      "LastUpdatedTime": 1754553495,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/Hunyuan-1.8B-Instruct-GPTQ-Int4"
+    },
+    {
+      "id": "Tencent-Hunyuan/Hunyuan-1.8B-Instruct-AWQ-Int4",
+      "Name": "Hunyuan-1.8B-Instruct-AWQ-Int4",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 90,
+      "Stars": 0,
+      "StorageSize": 1306929220,
+      "License": "",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "other"
+      ],
+      "Frameworks": [
+        "other"
+      ],
+      "ModelType": [
+        "hunyuan_v1_dense"
+      ],
+      "Architectures": [
+        "HunYuanDenseV1ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1753883275,
+      "LastUpdatedTime": 1754553474,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/Hunyuan-1.8B-Instruct-AWQ-Int4"
+    },
+    {
+      "id": "Tencent-Hunyuan/HY3D-Bench",
+      "Name": "HY3D-Bench",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 76,
+      "Stars": 0,
+      "StorageSize": 9236923852,
+      "License": "other",
+      "Libraries": [
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "image-to-3D",
+          "ChineseName": "图片生成3D"
+        }
+      ],
+      "Tags": [
+        "image-to-3d",
+        "text-to-3d"
+      ],
+      "CreatedTime": 1770341649,
+      "LastUpdatedTime": 1770341775,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/HY3D-Bench"
+    },
+    {
+      "id": "Tencent-Hunyuan/HY-Video-PRFL",
+      "Name": "HY-Video-PRFL",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 76,
+      "Stars": 0,
+      "StorageSize": 29829729,
+      "License": "",
+      "Libraries": [
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [],
+      "Tasks": [
+        {
+          "Name": "text-to-video-synthesis",
+          "ChineseName": "文本生成视频"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1767802165,
+      "LastUpdatedTime": 1768285452,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/HY-Video-PRFL"
+    },
+    {
+      "id": "Tencent-Hunyuan/Hy-Embodied-0.5-VLA-UMI",
+      "Name": "Hy-Embodied-0.5-VLA-UMI",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "kelseye",
+      "Description": "",
+      "Downloads": 71,
+      "Stars": 1,
+      "StorageSize": 9063324890,
+      "License": "apache-2.0",
+      "Libraries": [
+        "pytorch",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [
+        "HyVLA"
+      ],
+      "Tasks": [],
+      "Tags": [
+        "robotics",
+        "VLA",
+        "bimanual",
+        "UMI",
+        "imitation-learning",
+        "pre-trained"
+      ],
+      "CreatedTime": 1781503242,
+      "LastUpdatedTime": 1781529772,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/Hy-Embodied-0.5-VLA-UMI"
+    },
+    {
+      "id": "Tencent-Hunyuan/Hy-Embodied-0.5-VLA-RoboTwin",
+      "Name": "Hy-Embodied-0.5-VLA-RoboTwin",
+      "Path": "Tencent-Hunyuan",
+      "ChineseName": "",
+      "NickName": "kelseye",
+      "Description": "",
+      "Downloads": 62,
+      "Stars": 1,
+      "StorageSize": 9063327800,
+      "License": "apache-2.0",
+      "Libraries": [
+        "pytorch",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [],
+      "Architectures": [
+        "HyVLA"
+      ],
+      "Tasks": [],
+      "Tags": [
+        "robotics",
+        "VLA",
+        "bimanual",
+        "RoboTwin",
+        "imitation-learning",
+        "fine-tuned"
+      ],
+      "CreatedTime": 1781503371,
+      "LastUpdatedTime": 1781528493,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/Tencent-Hunyuan/Hy-Embodied-0.5-VLA-RoboTwin"
+    }
+  ]
+}

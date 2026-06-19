@@ -27,7 +27,10 @@ updated: 2026-05-31
 | [Long Context Evaluation](./Long_Context_Evaluation.md) | 128K+ 长上下文模型评估方法 | 进阶 |
 | [**LLM Benchmark Suite 2026**](./LLM_Benchmark_Suite_2026.md) | MMLU/GSM8K/HumanEval/SWE-bench/AIME/GPQA 全基准解读 | 进阶 |
 | [**Agentic Benchmark Guide**](./Agentic_Benchmark_Guide.md) | τ-bench/BFCL/SWE-bench/BrowseComp Agent 评测全景 | 进阶 |
+| [LM Evaluation Harness Deep Dive](./LM_Evaluation_Harness_Deep_Dive.md) | EleutherAI 学术基准评测框架：MMLU/GSM8K/HumanEval 等 | 进阶 |
+| [OpenCompass Deep Dive](./OpenCompass_Deep_Dive.md) | 上海 AI Lab 一站式评测平台：中文/多模态/CompassRank | 进阶 |
 | [Fairness Evaluation](./Fairness_Evaluation_for_dummy.md) | 公平性评估入门 | 初学者 |
+| [LLM 评估与测试大白话](./LLM_Benchmarks_for_dummy.md) | BBH、Arena、红队测试、CI 集成评估、A/B 测试框架大白话 | 初学者 |
 
 ---
 

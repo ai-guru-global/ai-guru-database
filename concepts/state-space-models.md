@@ -10,7 +10,12 @@ relationships:
     type: related_to
   - target: "concepts/optimization-regularization"
     type: related_to
-sources: [03_Deep_unsupervised-learning/State_Space_world-models-jepa_2026.md]
+  - target: "concepts/mamba"
+    type: exemplified_by
+  - target: "concepts/retnet"
+    type: related_to
+sources:
+  - 03_Deep_Learning/State_Space_Models_2026.md
 summary: Transformer 的潜在替代架构，通过状态空间方程实现 O(n) 线性复杂度序列建模，Mamba 引入选择性机制在长序列任务上展现优势。
 provenance:
   extracted: 0.80
@@ -140,3 +145,11 @@ SSM 的训练与 传统神经网络 有所不同：
 - Gu & Dao (2023) "Mamba: Linear-Time Sequence Modeling with Selective State Spaces"
 - Dao & Gu (2024) "Mamba-2: Transforming State Space Models"
 - Lieber et al. (2024) "Jamba: A Hybrid Transformer-Mamba Language Model"
+
+## Related
+
+- [[concepts/mamba]] — Mamba
+- [[concepts/retnet]] — RetNet
+- [[concepts/transformer-architecture]] — Transformer 架构
+- [[concepts/long-context-models]] — 长上下文模型
+- [[03_Deep_Learning/State_Space_Models_2026]] — 状态空间模型 2026

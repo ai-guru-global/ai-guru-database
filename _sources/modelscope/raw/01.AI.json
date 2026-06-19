@@ -1,0 +1,1089 @@
+{
+  "label": "01.AI",
+  "namespace": "01ai",
+  "organization": {
+    "ApplyFailureReason": "",
+    "ApplyReason": "",
+    "Avatar": "https://resouces.modelscope.cn/avatar/bee887d1-690c-478a-8400-dbcc50cef465.png",
+    "CreateCompetition": false,
+    "CreatedBy": "zjsfxpm",
+    "Description": "[\"root\",{},[\"p\",{},[\"span\",{\"data-type\":\"text\"},[\"span\",{\"color\":\"rgb(0, 0, 0)\",\"highlight\":\"rgba(0, 0, 0, 0)\",\"data-type\":\"leaf\"},\"零一万物由创新工场人工智能工程院塔尖孵化，李开复博士亲自领军筹组，是一家致力打造 AI 2.0 时代的前沿大模型技术及软件应用的全球化公司，平台业务核心首重建构行业领先的通用大语言模型，之后推出结合图片、语音、视频等能力的多模态模型，同时逐步发布完善的平台中间件和开发者工具。消费级应用业务着重在研发新型态个人知识工作者及社交互动的应用软件，探索 AI 2.0的新交互、新入口级的未来超级应用；商务级应用层面，零一万物也积极与企业客户合作探索商务级2B应用层面的落地场景。\"]]],[\"p\",{},[\"span\",{\"data-type\":\"text\"},[\"span\",{\"color\":\"rgb(0, 0, 0)\",\"highlight\":\"rgba(0, 0, 0, 0)\",\"data-type\":\"leaf\"},\"\"]]],[\"p\",{},[\"span\",{\"data-type\":\"text\"},[\"span\",{\"color\":\"rgb(0, 0, 0)\",\"highlight\":\"rgba(0, 0, 0, 0)\",\"data-type\":\"leaf\"},\"零一万物团队深信，以基础大模型为突破的 AI 2.0 正在掀起技术、平台到应用多个层面的革命。如同 Windows 带动了 PC普及，Android催生了移动互联网的生态，我们预测 AI 2.0 时代将诞生比移动互联网大十倍的平台机会，将把既有的软件、使用界面和应用重写一次，改写用户的入口和界面，也将诞生新一批 AI-first 的应用，并催生由AI主导的商业模式。我们预测，这个全新的 AI 2.0平台将能有效帮助提升人类生产力，可期会创造巨大的经济价值及社会价值。\"]]]]",
+    "DisplayUrl": "",
+    "Email": "",
+    "FromSite": "",
+    "FullName": "01-ai",
+    "GithubAddress": "https://01.ai",
+    "GmtCreated": "2023-10-27T13:58:41Z",
+    "GmtModified": "2023-11-05T10:06:27Z",
+    "Id": 397,
+    "InitAdminMembers": "",
+    "IsApply": false,
+    "IsCertification": "",
+    "Mobile": "",
+    "Name": "01ai",
+    "Path": "",
+    "Roles": null,
+    "StarCnt": 0,
+    "Status": 0,
+    "SubscribeVo": null,
+    "Type": 2
+  },
+  "model_count": 28,
+  "stats": {
+    "total_counts": [
+      {
+        "term": "01ai",
+        "TotalCount": 113
+      }
+    ],
+    "pages_fetched": 2,
+    "candidates": 28
+  },
+  "models": [
+    {
+      "id": "01ai/Yi-6B-Chat",
+      "Name": "Yi-6B-Chat",
+      "Path": "01ai",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 48061,
+      "Stars": 22,
+      "StorageSize": 12126867115,
+      "License": "apache-2.0",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "llama"
+      ],
+      "Architectures": [
+        "LlamaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1700664384,
+      "LastUpdatedTime": 1719397667,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/01ai/Yi-6B-Chat"
+    },
+    {
+      "id": "01ai/Yi-1.5-34B-Chat",
+      "Name": "Yi-1.5-34B-Chat",
+      "Path": "01ai",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 20851,
+      "Stars": 18,
+      "StorageSize": 68782591284,
+      "License": "Apache License 2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "llama"
+      ],
+      "Architectures": [
+        "LlamaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1715508518,
+      "LastUpdatedTime": 1719455864,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/01ai/Yi-1.5-34B-Chat"
+    },
+    {
+      "id": "01ai/Yi-6B-Chat-4bits",
+      "Name": "Yi-6B-Chat-4bits",
+      "Path": "01ai",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 18073,
+      "Stars": 3,
+      "StorageSize": 3930305733,
+      "License": "apache-2.0",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "llama"
+      ],
+      "Architectures": [
+        "LlamaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1700664408,
+      "LastUpdatedTime": 1719397723,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/01ai/Yi-6B-Chat-4bits"
+    },
+    {
+      "id": "01ai/Yi-1.5-6B-Chat",
+      "Name": "Yi-1.5-6B-Chat",
+      "Path": "01ai",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 18006,
+      "Stars": 18,
+      "StorageSize": 12126776395,
+      "License": "Apache License 2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "llama"
+      ],
+      "Architectures": [
+        "LlamaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1715508439,
+      "LastUpdatedTime": 1719455843,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/01ai/Yi-1.5-6B-Chat"
+    },
+    {
+      "id": "01ai/Yi-34B-Chat-4bits",
+      "Name": "Yi-34B-Chat-4bits",
+      "Path": "01ai",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 17055,
+      "Stars": 38,
+      "StorageSize": 38457085806,
+      "License": "apache-2.0",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "llama"
+      ],
+      "Architectures": [
+        "LlamaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1700664321,
+      "LastUpdatedTime": 1719397590,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/01ai/Yi-34B-Chat-4bits"
+    },
+    {
+      "id": "01ai/Yi-6B",
+      "Name": "Yi-6B",
+      "Path": "01ai",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "Yi系列模型是由来自“零一万物”的开发者研发的大型语言模型。第一个公开版本包含两个双语版（英语/中文）基础模型，参数规模分别为6B和34B。两者都使用4K序列长度进行训练，并在推理时可以扩展到32K。",
+      "Downloads": 14688,
+      "Stars": 121,
+      "StorageSize": 12126932248,
+      "License": "apache-2.0",
+      "Libraries": [
+        "transformer",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "llama"
+      ],
+      "Architectures": [
+        "LlamaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1698850078,
+      "LastUpdatedTime": 1719397610,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/01ai/Yi-6B"
+    },
+    {
+      "id": "01ai/Yi-34B-Chat",
+      "Name": "Yi-34B-Chat",
+      "Path": "01ai",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 14134,
+      "Stars": 42,
+      "StorageSize": 68782681143,
+      "License": "apache-2.0",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "llama"
+      ],
+      "Architectures": [
+        "LlamaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1700449912,
+      "LastUpdatedTime": 1719397573,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/01ai/Yi-34B-Chat"
+    },
+    {
+      "id": "01ai/Yi-VL-6B",
+      "Name": "Yi-VL-6B",
+      "Path": "01ai",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 13669,
+      "Stars": 15,
+      "StorageSize": 19906600555,
+      "License": "Apache License 2.0",
+      "Libraries": [
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "llava"
+      ],
+      "Architectures": [
+        "LlavaLlamaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "visual-question-answering",
+          "ChineseName": "视觉问答"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1705644534,
+      "LastUpdatedTime": 1719456415,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/01ai/Yi-VL-6B"
+    },
+    {
+      "id": "01ai/Yi-1.5-6B",
+      "Name": "Yi-1.5-6B",
+      "Path": "01ai",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 13371,
+      "Stars": 5,
+      "StorageSize": 12126774465,
+      "License": "Apache License 2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "llama"
+      ],
+      "Architectures": [
+        "LlamaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1715450700,
+      "LastUpdatedTime": 1719402692,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/01ai/Yi-1.5-6B"
+    },
+    {
+      "id": "01ai/Yi-1.5-9B-Chat",
+      "Name": "Yi-1.5-9B-Chat",
+      "Path": "01ai",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 12000,
+      "Stars": 21,
+      "StorageSize": 17663548526,
+      "License": "Apache License 2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "llama"
+      ],
+      "Architectures": [
+        "LlamaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1715508493,
+      "LastUpdatedTime": 1719456182,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/01ai/Yi-1.5-9B-Chat"
+    },
+    {
+      "id": "01ai/Yi-34B-200K",
+      "Name": "Yi-34B-200K",
+      "Path": "01ai",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "Yi系列模型是由来自“零一万物”的开发者研发的大型语言模型。第一个公开版本包含两个双语版（英语/中文）基础模型，参数规模分别为6B和34B。两者都使用4K序列长度进行训练，并在推理时可以扩展到32K。Yi-6B-200K 和 Yi-34B-200K 分别是 200K 上下文扩展版。",
+      "Downloads": 11025,
+      "Stars": 42,
+      "StorageSize": 68782839923,
+      "License": "apache-2.0",
+      "Libraries": [
+        "transformer",
+        "tensorflow"
+      ],
+      "Frameworks": [
+        "Tensorflow"
+      ],
+      "ModelType": [
+        "llama"
+      ],
+      "Architectures": [
+        "LlamaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1699277578,
+      "LastUpdatedTime": 1719397554,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/01ai/Yi-34B-200K"
+    },
+    {
+      "id": "01ai/Yi-VL-34B",
+      "Name": "Yi-VL-34B",
+      "Path": "01ai",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 10076,
+      "Stars": 34,
+      "StorageSize": 76639581566,
+      "License": "Apache License 2.0",
+      "Libraries": [
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "llava"
+      ],
+      "Architectures": [
+        "LlavaLlamaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "visual-question-answering",
+          "ChineseName": "视觉问答"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1705653308,
+      "LastUpdatedTime": 1719456445,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/01ai/Yi-VL-34B"
+    },
+    {
+      "id": "01ai/Yi-9B",
+      "Name": "Yi-9B",
+      "Path": "01ai",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 8701,
+      "Stars": 22,
+      "StorageSize": 17663639791,
+      "License": "apache-2.0",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "llama"
+      ],
+      "Architectures": [
+        "LlamaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1709753178,
+      "LastUpdatedTime": 1740571946,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/01ai/Yi-9B"
+    },
+    {
+      "id": "01ai/Yi-34B",
+      "Name": "Yi-34B",
+      "Path": "01ai",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "Yi系列模型是由来自“零一万物”的开发者研发的大型语言模型。第一个公开版本包含两个双语版（英语/中文）基础模型，参数规模分别为6B和34B。两者都使用4K序列长度进行训练，并在推理时可以扩展到32K。",
+      "Downloads": 7141,
+      "Stars": 168,
+      "StorageSize": 68782805189,
+      "License": "apache-2.0",
+      "Libraries": [
+        "transformer",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "llama"
+      ],
+      "Architectures": [
+        "LlamaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1698889910,
+      "LastUpdatedTime": 1719397534,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/01ai/Yi-34B"
+    },
+    {
+      "id": "01ai/Yi-6B-Chat-8bits",
+      "Name": "Yi-6B-Chat-8bits",
+      "Path": "01ai",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 5587,
+      "Stars": 5,
+      "StorageSize": 6723437284,
+      "License": "apache-2.0",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "llama"
+      ],
+      "Architectures": [
+        "LlamaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1700664427,
+      "LastUpdatedTime": 1740572148,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/01ai/Yi-6B-Chat-8bits"
+    },
+    {
+      "id": "01ai/Yi-6B-200K",
+      "Name": "Yi-6B-200K",
+      "Path": "01ai",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "Yi系列模型是由来自“零一万物”的开发者研发的大型语言模型。第一个公开版本包含两个双语版（英语/中文）基础模型，参数规模分别为6B和34B。两者都使用4K序列长度进行训练，并在推理时可以扩展到32K。Yi-6B-200K 和 Yi-34B-200K 分别是 200K 上下文扩展版。",
+      "Downloads": 5397,
+      "Stars": 45,
+      "StorageSize": 12126932238,
+      "License": "apache-2.0",
+      "Libraries": [
+        "transformer",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "llama"
+      ],
+      "Architectures": [
+        "LlamaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1699275936,
+      "LastUpdatedTime": 1719397648,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/01ai/Yi-6B-200K"
+    },
+    {
+      "id": "01ai/Yi-1.5-34B-Chat-16K",
+      "Name": "Yi-1.5-34B-Chat-16K",
+      "Path": "01ai",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 4053,
+      "Stars": 10,
+      "StorageSize": 68782591245,
+      "License": "Apache License 2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "llama"
+      ],
+      "Architectures": [
+        "LlamaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-classification",
+          "ChineseName": "文本分类"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1715762014,
+      "LastUpdatedTime": 1719456160,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/01ai/Yi-1.5-34B-Chat-16K"
+    },
+    {
+      "id": "01ai/Yi-34B-Chat-8bits",
+      "Name": "Yi-34B-Chat-8bits",
+      "Path": "01ai",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 4033,
+      "Stars": 10,
+      "StorageSize": 36119902139,
+      "License": "apache-2.0",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "llama"
+      ],
+      "Architectures": [
+        "LlamaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1700664356,
+      "LastUpdatedTime": 1719397628,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/01ai/Yi-34B-Chat-8bits"
+    },
+    {
+      "id": "01ai/Yi-1.5-9B-Chat-16K",
+      "Name": "Yi-1.5-9B-Chat-16K",
+      "Path": "01ai",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 1871,
+      "Stars": 4,
+      "StorageSize": 17663548539,
+      "License": "Apache License 2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "llama"
+      ],
+      "Architectures": [
+        "LlamaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1715761998,
+      "LastUpdatedTime": 1719455819,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/01ai/Yi-1.5-9B-Chat-16K"
+    },
+    {
+      "id": "01ai/Yi-1.5-9B",
+      "Name": "Yi-1.5-9B",
+      "Path": "01ai",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 1429,
+      "Stars": 7,
+      "StorageSize": 17663546600,
+      "License": "Apache License 2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "llama"
+      ],
+      "Architectures": [
+        "LlamaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-classification",
+          "ChineseName": "文本分类"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1715450918,
+      "LastUpdatedTime": 1719455898,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/01ai/Yi-1.5-9B"
+    },
+    {
+      "id": "01ai/Yi-Coder-9B-Chat",
+      "Name": "Yi-Coder-9B-Chat",
+      "Path": "01ai",
+      "ChineseName": "",
+      "NickName": "Mia",
+      "Description": "",
+      "Downloads": 1427,
+      "Stars": 13,
+      "StorageSize": 17659944033,
+      "License": "apache-2.0",
+      "Libraries": [
+        "pytorch",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "llama"
+      ],
+      "Architectures": [
+        "LlamaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text2text-generation",
+          "ChineseName": "端到端文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1724206536,
+      "LastUpdatedTime": 1725528645,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/01ai/Yi-Coder-9B-Chat"
+    },
+    {
+      "id": "01ai/Yi-1.5-34B",
+      "Name": "Yi-1.5-34B",
+      "Path": "01ai",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 1330,
+      "Stars": 3,
+      "StorageSize": 68782589301,
+      "License": "Apache License 2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "llama"
+      ],
+      "Architectures": [
+        "LlamaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-classification",
+          "ChineseName": "文本分类"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1715450848,
+      "LastUpdatedTime": 1719456011,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/01ai/Yi-1.5-34B"
+    },
+    {
+      "id": "01ai/Yi-9B-200K",
+      "Name": "Yi-9B-200K",
+      "Path": "01ai",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 1183,
+      "Stars": 2,
+      "StorageSize": 17663803612,
+      "License": "apache-2.0",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "llama"
+      ],
+      "Architectures": [
+        "LlamaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1710744471,
+      "LastUpdatedTime": 1719397686,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/01ai/Yi-9B-200K"
+    },
+    {
+      "id": "01ai/Yi-1.5-9B-32K",
+      "Name": "Yi-1.5-9B-32K",
+      "Path": "01ai",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 745,
+      "Stars": 3,
+      "StorageSize": 17663546555,
+      "License": "Apache License 2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "llama"
+      ],
+      "Architectures": [
+        "LlamaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1715761939,
+      "LastUpdatedTime": 1719402648,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/01ai/Yi-1.5-9B-32K"
+    },
+    {
+      "id": "01ai/Yi-1.5-34B-32K",
+      "Name": "Yi-1.5-34B-32K",
+      "Path": "01ai",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 734,
+      "Stars": 2,
+      "StorageSize": 68782589256,
+      "License": "Apache License 2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "llama"
+      ],
+      "Architectures": [
+        "LlamaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1715761969,
+      "LastUpdatedTime": 1719402507,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/01ai/Yi-1.5-34B-32K"
+    },
+    {
+      "id": "01ai/Yi-Coder-1.5B-Chat",
+      "Name": "Yi-Coder-1.5B-Chat",
+      "Path": "01ai",
+      "ChineseName": "",
+      "NickName": "Mia",
+      "Description": "",
+      "Downloads": 436,
+      "Stars": 3,
+      "StorageSize": 2954060716,
+      "License": "apache-2.0",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "llama"
+      ],
+      "Architectures": [
+        "LlamaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text2text-generation",
+          "ChineseName": "端到端文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1724206491,
+      "LastUpdatedTime": 1725528723,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/01ai/Yi-Coder-1.5B-Chat"
+    },
+    {
+      "id": "01ai/Yi-Coder-1.5B",
+      "Name": "Yi-Coder-1.5B",
+      "Path": "01ai",
+      "ChineseName": "",
+      "NickName": "Mia",
+      "Description": "",
+      "Downloads": 336,
+      "Stars": 2,
+      "StorageSize": 2957618747,
+      "License": "apache-2.0",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "llama"
+      ],
+      "Architectures": [
+        "LlamaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text2text-generation",
+          "ChineseName": "端到端文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1723708882,
+      "LastUpdatedTime": 1725451607,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/01ai/Yi-Coder-1.5B"
+    },
+    {
+      "id": "01ai/Yi-Coder-9B",
+      "Name": "Yi-Coder-9B",
+      "Path": "01ai",
+      "ChineseName": "",
+      "NickName": "Mia",
+      "Description": "",
+      "Downloads": 276,
+      "Stars": 3,
+      "StorageSize": 17663503545,
+      "License": "apache-2.0",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "llama"
+      ],
+      "Architectures": [
+        "LlamaForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text2text-generation",
+          "ChineseName": "端到端文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1723708740,
+      "LastUpdatedTime": 1725451648,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/01ai/Yi-Coder-9B"
+    }
+  ]
+}

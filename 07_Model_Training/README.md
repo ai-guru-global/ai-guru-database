@@ -25,8 +25,11 @@ updated: '2026-06-16'
 | [**数据策展与配比 2026**](./Data_Curation_and_Mixture_2026.md) | 数据清洗/去重/配比/合成数据/多语言 | 数据工程 |
 | [**GRPO 与新对齐方法**](./GRPO_and_New_Alignment_Methods.md) | PPO/DPO/KTO/GRPO/RLOO/Reasoning RL | 对齐训练 |
 | [**剪枝与知识蒸馏**](./Pruning_and_Knowledge_Distillation.md) | Wanda/SparseGPT/LLM-Pruner/SFT 蒸馏 | 模型压缩 |
+| [**Ray Deep Dive**](./Ray_Deep_Dive.md) | 分布式 AI 计算框架：Train/Serve/Data/Tune | 分布式训练与推理 |
+| [**DeepSpeed Deep Dive**](./DeepSpeed_Deep_Dive.md) | 微软大模型训练与推理优化：ZeRO / Offload / MoE | 大模型训练优化 |
 | [**ms-swift Deep Dive**](./ms_swift_Deep_Dive.md) | 魔搭大模型训练推理全链路框架 | 框架实战 |
 | [**ms-swift 命令行参数参考**](./ms_swift_Command_Line_Parameters.md) | 200+ 命令行参数全量速查 | 参数手册 |
+| [**数据与微调大白话**](./Data_and_FineTuning_for_dummy.md) | 数据清洗 Pipeline、DoRA、RS-LoRA 大白话解释 | 初学者 |
 
 > ⚠️ **注意**: 本章内容正在全面扩充中。当前仅包含速览指南，深度专题（分布式训练、混合精度、训练优化）即将上线。
 
@@ -36,7 +39,7 @@ updated: '2026-06-16'
 
 - **快速入门** → [Model-Training-in-nutshell](./Model-Training-in-nutshell.md)（30 分钟）
 - **遇到问题?** → [模型问题排查手册](./Model_Troubleshooting_Guide.md)（实战故障诊断）
-- **系统学习** → [Scaling Laws](./Scaling_Laws_and_Training_Dynamics.md) → [Tokenizer](./Tokenizer_Design_2026.md) → [优化器](./Optimizer_Advanced_2026.md) → [数据策展](./Data_Curation_and_Mixture_2026.md) → [GRPO 对齐](./GRPO_and_New_Alignment_Methods.md) → [剪枝蒸馏](./Pruning_and_Knowledge_Distillation.md)
+- **系统学习** → [Scaling Laws](./Scaling_Laws_and_Training_Dynamics.md) → [Tokenizer](./Tokenizer_Design_2026.md) → [优化器](./Optimizer_Advanced_2026.md) → [数据策展](./Data_Curation_and_Mixture_2026.md) → [GRPO 对齐](./GRPO_and_New_Alignment_Methods.md) → [剪枝蒸馏](./Pruning_and_Knowledge_Distillation.md) → [分布式训练](./Ray_Deep_Dive.md) → [训练优化](./DeepSpeed_Deep_Dive.md)
 - **简化版** → [Model_Training_for_dummy](./Model_Training_for_dummy.md)
 
 ## AI Stack 训练启动器
@@ -104,6 +107,10 @@ updated: '2026-06-16'
 - [[12_Architecture_Infrastructure/AI_Stack_Training_Launchers_Guide|AI Stack 训练启动器指南]]
 - [[12_Architecture_Infrastructure/AI_Stack_GPU_Monitoring_Guide|AI Stack GPU 监控指南]]
 - [[12_Architecture_Infrastructure/AI_Stack_Model_Management_Guide|AI Stack 模型下载与管理指南]]
+- [[07_Model_Training/Data_and_FineTuning_for_dummy|数据与微调大白话]]
+- [[concepts/data-cleaning-pipeline|数据清洗 Pipeline]]
+- [[concepts/dora|DoRA]]
+- [[concepts/rs-lora|RS-LoRA]]
 
 - [[concepts/model-training]] — 模型训练
 - [[concepts/distributed-systems]] — 分布式系统

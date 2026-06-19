@@ -20,6 +20,10 @@ relationships:
   type: related_to
 - target: 'concepts/model-precision'
   type: related_to
+- target: 'concepts/gguf'
+  type: exemplified_by
+- target: 'concepts/smoothquant'
+  type: exemplified_by
 sources:
 - 09_model-deployment_Inference/Deployment_Inference.md
 - 09_Deployment_Inference/Deployment_Inference_2026.md
@@ -120,3 +124,11 @@ $$\mathcal{L} = \alpha \cdot \mathcal{L}_{\text{hard}} + (1-\alpha) \cdot \mathc
 - Lin et al., "AWQ: Activation-aware Weight Quantization for LLM Compression and Acceleration," 2024
 - Hinton et al., "Distilling the Knowledge in a Neural Network," 2015
 - Sun et al., "A Simple and Effective Pruning Approach for Large Language world-models-jepa," ICLR 2024
+
+## Related
+
+- [[concepts/quantization]] — 量化
+- [[concepts/gguf]] — GGUF
+- [[concepts/smoothquant]] — SmoothQuant
+- [[concepts/knowledge-distillation]] — 知识蒸馏
+- [[09_Deployment_Inference/Quantization_Techniques_2026]] — 量化技术 2026

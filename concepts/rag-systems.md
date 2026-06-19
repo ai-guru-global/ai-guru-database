@@ -16,6 +16,10 @@ relationships:
   type: related_to
 - target: 'concepts/matryoshka-representation-learning'
   type: related_to
+- target: 'concepts/agentic-rag'
+  type: evolves_into
+- target: 'concepts/text2sql'
+  type: related_to
 sources:
 - 11_RAG_recommendation-systems/RAG_Systems.md
 - 11_RAG_Systems/RAG_Advanced_2026.md
@@ -116,6 +120,9 @@ Dify适合企业内部平台（功能完整、可视化），Haystack适合企�
 - [[concepts/lora-peft]] — LoRA/PEFT（RAG vs 微调选型）
 - [[concepts/pretrain-vs-finetune-vs-rag]] — 预训练/微调/RAG 决策指南
 - [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack（内置知识库+RAG 应用）
+- [[concepts/agentic-rag]] — Agentic RAG
+- [[concepts/text2sql]] — Text2SQL
+- [[11_RAG_Systems/Agentic_RAG_Applications_for_dummy]] — Agentic RAG 应用大白话
 
 ---
 

@@ -7,6 +7,12 @@ relationships:
     type: implements
   - target: "concepts/model-compression"
     type: benefits_from
+  - target: "concepts/sglang"
+    type: exemplified_by
+  - target: "concepts/tensorrt-llm"
+    type: exemplified_by
+  - target: "concepts/dynamic-batch-scheduling"
+    type: uses
 sources:
   - 09_model-deployment_Inference/Deployment_Inference_2026.md
   - 09_Deployment_Inference/vLLM_Deep_Dive.md
@@ -91,3 +97,7 @@ SGLang的RadixAttention用Radix Tree缓存和复用KV Cache前缀，对多轮对
 - [[09_Deployment_Inference/Deployment_Inference_2026]] — 部署推理 2026 趋势 (共享: serving, vllm)
 - [[09_Deployment_Inference/Deployment_Inference_for_dummy]] — 模型部署与推理加速 - 小白版 (共享: serving, vllm)
 - [[12_Architecture_Infrastructure/Alibaba_Cloud_AI_Stack_Deep_Dive|阿里云 AI Stack]] — 专有云容器化推理服务部署
+- [[concepts/sglang]] — SGLang
+- [[concepts/tensorrt-llm]] — TensorRT-LLM
+- [[concepts/dynamic-batch-scheduling]] — 动态批调度
+- [[concepts/gguf]] — GGUF

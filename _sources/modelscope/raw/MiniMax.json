@@ -1,0 +1,739 @@
+{
+  "label": "MiniMax",
+  "namespace": "MiniMax",
+  "organization": {
+    "ApplyFailureReason": "",
+    "ApplyReason": "",
+    "Avatar": "https://resouces.modelscope.cn/avatar/ce66f246-537f-4582-86c6-aea46b80b709.jpeg",
+    "CreateCompetition": false,
+    "CreatedBy": "JadeCai",
+    "Description": "[\"root\",{},[\"p\",{},[\"span\",{\"data-type\":\"text\"},[\"span\",{\"data-type\":\"leaf\"},\"👋 欢迎来到 MiniMax 的开源组织。在这里，我们与所有人一起构建 AGI，让 AI 对每个人都是可访问的，并负责任地应对未来的挑战。从这里探索我们的最新模型 ➡️➡️➡️➡️\"]]],[\"p\",{\"ind\":{\"left\":0}},[\"span\",{\"data-type\":\"text\"},[\"span\",{\"data-type\":\"leaf\"},\"\"]]],[\"p\",{},[\"span\",{\"data-type\":\"text\"},[\"span\",{\"data-type\":\"leaf\"},\" • MiniMax 官方网站： \"]],[\"a\",{\"href\":\"https://www.minimaxi.com/\"},[\"span\",{\"data-type\":\"text\"},[\"span\",{\"data-type\":\"leaf\"},\"https://www.minimaxi.com/\"]]],[\"span\",{\"data-type\":\"text\"},[\"span\",{\"data-type\":\"leaf\"},\"\"]]],[\"p\",{},[\"span\",{\"data-type\":\"text\"},[\"span\",{\"data-type\":\"leaf\"},\" • MiniMax API 平台：\"]],[\"a\",{\"href\":\"https://www.minimaxi.com/platform_overview\"},[\"span\",{\"data-type\":\"text\"},[\"span\",{\"data-type\":\"leaf\"},\"https://www.minimaxi.com/platform_overview\"]]],[\"span\",{\"data-type\":\"text\"},[\"span\",{\"data-type\":\"leaf\"},\"\"]]],[\"p\",{},[\"span\",{\"data-type\":\"text\"},[\"span\",{\"data-type\":\"leaf\"},\" • MiniMax Chat（Text-01 / VL-01）: \"]],[\"a\",{\"href\":\"https://chat.minimaxi.com/\"},[\"span\",{\"data-type\":\"text\"},[\"span\",{\"data-type\":\"leaf\"},\"https://chat.minimaxi.com/\"]]],[\"span\",{\"data-type\":\"text\"},[\"span\",{\"data-type\":\"leaf\"},\"\"]]],[\"p\",{},[\"span\",{\"data-type\":\"text\"},[\"span\",{\"data-type\":\"leaf\"},\"\"]]]]",
+    "DisplayUrl": "",
+    "Email": "",
+    "FromSite": "",
+    "FullName": "MiniMax",
+    "GithubAddress": "https://github.com/MiniMax-AI",
+    "GmtCreated": "2025-03-10T11:24:21Z",
+    "GmtModified": "2025-03-18T03:05:34Z",
+    "Id": 1732,
+    "InitAdminMembers": "",
+    "IsApply": false,
+    "IsCertification": "",
+    "Mobile": "",
+    "Name": "MiniMax",
+    "Path": "",
+    "Roles": null,
+    "StarCnt": 0,
+    "Status": 0,
+    "SubscribeVo": null,
+    "Type": 2
+  },
+  "model_count": 18,
+  "stats": {
+    "total_counts": [
+      {
+        "term": "MiniMax",
+        "TotalCount": 320
+      }
+    ],
+    "pages_fetched": 4,
+    "candidates": 18
+  },
+  "models": [
+    {
+      "id": "MiniMax/MiniMax-M1-80k",
+      "Name": "MiniMax-M1-80k",
+      "Path": "MiniMax",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 476440,
+      "Stars": 61,
+      "StorageSize": 912231244365,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "minimax_m1"
+      ],
+      "Architectures": [
+        "MiniMaxM1ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [
+        "vllm"
+      ],
+      "CreatedTime": 1749948625,
+      "LastUpdatedTime": 1751906221,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/MiniMax/MiniMax-M1-80k"
+    },
+    {
+      "id": "MiniMax/MiniMax-M2.5",
+      "Name": "MiniMax-M2.5",
+      "Path": "MiniMax",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 344014,
+      "Stars": 218,
+      "StorageSize": 230163277833,
+      "License": "other",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "Pytorch"
+      ],
+      "ModelType": [
+        "minimax_m2"
+      ],
+      "Architectures": [
+        "MiniMaxM2ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1770912718,
+      "LastUpdatedTime": 1773231504,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/MiniMax/MiniMax-M2.5"
+    },
+    {
+      "id": "MiniMax/MiniMax-M2.7",
+      "Name": "MiniMax-M2.7",
+      "Path": "MiniMax",
+      "ChineseName": "",
+      "NickName": "kelseye",
+      "Description": "",
+      "Downloads": 270208,
+      "Stars": 134,
+      "StorageSize": 230169546588,
+      "License": "other",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "minimax_m2"
+      ],
+      "Architectures": [
+        "MiniMaxM2ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1775788005,
+      "LastUpdatedTime": 1781781859,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/MiniMax/MiniMax-M2.7"
+    },
+    {
+      "id": "MiniMax/MiniMax-M2.1",
+      "Name": "MiniMax-M2.1",
+      "Path": "MiniMax",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 52115,
+      "Stars": 84,
+      "StorageSize": 230162722878,
+      "License": "other",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "minimax_m2"
+      ],
+      "Architectures": [
+        "MiniMaxM2ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1766731585,
+      "LastUpdatedTime": 1770984969,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/MiniMax/MiniMax-M2.1"
+    },
+    {
+      "id": "MiniMax/MiniMax-VL-01",
+      "Name": "MiniMax-VL-01",
+      "Path": "MiniMax",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 33604,
+      "Stars": 6,
+      "StorageSize": 915389293362,
+      "License": "",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "minimax_vl_01"
+      ],
+      "Architectures": [
+        "MiniMaxVL01ForConditionalGeneration"
+      ],
+      "Tasks": [
+        {
+          "Name": "image-text-to-text",
+          "ChineseName": "视觉多模态理解"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1736873769,
+      "LastUpdatedTime": 1761545200,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/MiniMax/MiniMax-VL-01"
+    },
+    {
+      "id": "MiniMax/MiniMax-Text-01",
+      "Name": "MiniMax-Text-01",
+      "Path": "MiniMax",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 30218,
+      "Stars": 12,
+      "StorageSize": 914690839852,
+      "License": "",
+      "Libraries": [
+        "transformer",
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "minimax_text_01"
+      ],
+      "Architectures": [
+        "MiniMaxText01ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1736873769,
+      "LastUpdatedTime": 1761545200,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/MiniMax/MiniMax-Text-01"
+    },
+    {
+      "id": "MiniMax/MiniMax-M3-MXFP8",
+      "Name": "MiniMax-M3-MXFP8",
+      "Path": "MiniMax",
+      "ChineseName": "",
+      "NickName": "kelseye",
+      "Description": "",
+      "Downloads": 25227,
+      "Stars": 2,
+      "StorageSize": 443776008213,
+      "License": "other",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "minimax_m3_vl"
+      ],
+      "Architectures": [
+        "MiniMaxM3SparseForConditionalGeneration"
+      ],
+      "Tasks": [
+        {
+          "Name": "image-text-to-text",
+          "ChineseName": "视觉多模态理解"
+        }
+      ],
+      "Tags": [
+        "multimodal",
+        "moe",
+        "agent",
+        "coding",
+        "video"
+      ],
+      "CreatedTime": 1781248503,
+      "LastUpdatedTime": 1781529067,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/MiniMax/MiniMax-M3-MXFP8"
+    },
+    {
+      "id": "MiniMax/MiniMax-M1-40k",
+      "Name": "MiniMax-M1-40k",
+      "Path": "MiniMax",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 23243,
+      "Stars": 3,
+      "StorageSize": 912231248879,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "minimax_m1"
+      ],
+      "Architectures": [
+        "MiniMaxM1ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [
+        "vllm"
+      ],
+      "CreatedTime": 1749948625,
+      "LastUpdatedTime": 1751904842,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/MiniMax/MiniMax-M1-40k"
+    },
+    {
+      "id": "MiniMax/MiniMax-M2",
+      "Name": "MiniMax-M2",
+      "Path": "MiniMax",
+      "ChineseName": "",
+      "NickName": "kelseye",
+      "Description": "",
+      "Downloads": 14881,
+      "Stars": 144,
+      "StorageSize": 230162555902,
+      "License": "other",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "minimax_m2"
+      ],
+      "Architectures": [
+        "MiniMaxM2ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1761467444,
+      "LastUpdatedTime": 1766506725,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/MiniMax/MiniMax-M2"
+    },
+    {
+      "id": "MiniMax/MiniMax-M1-80k-hf",
+      "Name": "MiniMax-M1-80k-hf",
+      "Path": "MiniMax",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 2966,
+      "Stars": 0,
+      "StorageSize": 912229764985,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "minimax"
+      ],
+      "Architectures": [
+        "MiniMaxForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [
+        "vllm"
+      ],
+      "CreatedTime": 1761545225,
+      "LastUpdatedTime": 1761549874,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/MiniMax/MiniMax-M1-80k-hf"
+    },
+    {
+      "id": "MiniMax/MiniMax-M1-40k-hf",
+      "Name": "MiniMax-M1-40k-hf",
+      "Path": "MiniMax",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 2782,
+      "Stars": 0,
+      "StorageSize": 912229855608,
+      "License": "apache-2.0",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "minimax"
+      ],
+      "Architectures": [
+        "MiniMaxForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [
+        "vllm"
+      ],
+      "CreatedTime": 1761545202,
+      "LastUpdatedTime": 1761549484,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/MiniMax/MiniMax-M1-40k-hf"
+    },
+    {
+      "id": "MiniMax/MiniMax-M3",
+      "Name": "MiniMax-M3",
+      "Path": "MiniMax",
+      "ChineseName": "",
+      "NickName": "kelseye",
+      "Description": "",
+      "Downloads": 1476,
+      "Stars": 15,
+      "StorageSize": 854200513150,
+      "License": "other",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "minimax_m3_vl"
+      ],
+      "Architectures": [
+        "MiniMaxM3SparseForConditionalGeneration"
+      ],
+      "Tasks": [
+        {
+          "Name": "image-text-to-text",
+          "ChineseName": "视觉多模态理解"
+        }
+      ],
+      "Tags": [
+        "multimodal",
+        "moe",
+        "agent",
+        "coding",
+        "video"
+      ],
+      "CreatedTime": 1781248379,
+      "LastUpdatedTime": 1781608026,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/MiniMax/MiniMax-M3"
+    },
+    {
+      "id": "MiniMax/SynLogic-32B",
+      "Name": "SynLogic-32B",
+      "Path": "MiniMax",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 522,
+      "Stars": 1,
+      "StorageSize": 65543789511,
+      "License": "mit",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "qwen2"
+      ],
+      "Architectures": [
+        "Qwen2ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [
+        "LLM"
+      ],
+      "CreatedTime": 1749000286,
+      "LastUpdatedTime": 1749575118,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/MiniMax/SynLogic-32B"
+    },
+    {
+      "id": "MiniMax/SynLogic-7B",
+      "Name": "SynLogic-7B",
+      "Path": "MiniMax",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 503,
+      "Stars": 0,
+      "StorageSize": 15247184813,
+      "License": "mit",
+      "Libraries": [
+        "safetensors",
+        "pytorch"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "qwen2"
+      ],
+      "Architectures": [
+        "Qwen2ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [
+        "LLM"
+      ],
+      "CreatedTime": 1749000479,
+      "LastUpdatedTime": 1749573854,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/MiniMax/SynLogic-7B"
+    },
+    {
+      "id": "MiniMax/SynLogic-Mix-3-32B",
+      "Name": "SynLogic-Mix-3-32B",
+      "Path": "MiniMax",
+      "ChineseName": "",
+      "NickName": "小橙鱼",
+      "Description": "",
+      "Downloads": 438,
+      "Stars": 0,
+      "StorageSize": 65543790578,
+      "License": "mit",
+      "Libraries": [
+        "pytorch",
+        "transformer",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "qwen2"
+      ],
+      "Architectures": [
+        "Qwen2ForCausalLM"
+      ],
+      "Tasks": [
+        {
+          "Name": "text-generation",
+          "ChineseName": "文本生成"
+        }
+      ],
+      "Tags": [
+        "LLM"
+      ],
+      "CreatedTime": 1749000450,
+      "LastUpdatedTime": 1749576509,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/MiniMax/SynLogic-Mix-3-32B"
+    },
+    {
+      "id": "MiniMax/VTP-Small-f16d64",
+      "Name": "VTP-Small-f16d64",
+      "Path": "MiniMax",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 126,
+      "Stars": 0,
+      "StorageSize": 671097545,
+      "License": "other",
+      "Libraries": [
+        "pytorch",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "vtp"
+      ],
+      "Architectures": [
+        "VTPModel"
+      ],
+      "Tasks": [
+        {
+          "Name": "",
+          "ChineseName": ""
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1765862329,
+      "LastUpdatedTime": 1766113394,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/MiniMax/VTP-Small-f16d64"
+    },
+    {
+      "id": "MiniMax/VTP-Large-f16d64",
+      "Name": "VTP-Large-f16d64",
+      "Path": "MiniMax",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 122,
+      "Stars": 0,
+      "StorageSize": 0,
+      "License": "other",
+      "Libraries": [
+        "pytorch",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "vtp"
+      ],
+      "Architectures": [
+        "VTPModel"
+      ],
+      "Tasks": [
+        {
+          "Name": "",
+          "ChineseName": ""
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1765912089,
+      "LastUpdatedTime": 1765912181,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/MiniMax/VTP-Large-f16d64"
+    },
+    {
+      "id": "MiniMax/VTP-Base-f16d64",
+      "Name": "VTP-Base-f16d64",
+      "Path": "MiniMax",
+      "ChineseName": "",
+      "NickName": "",
+      "Description": "",
+      "Downloads": 116,
+      "Stars": 0,
+      "StorageSize": 0,
+      "License": "other",
+      "Libraries": [
+        "pytorch",
+        "safetensors"
+      ],
+      "Frameworks": [
+        "pytorch"
+      ],
+      "ModelType": [
+        "vtp"
+      ],
+      "Architectures": [
+        "VTPModel"
+      ],
+      "Tasks": [
+        {
+          "Name": "",
+          "ChineseName": ""
+        }
+      ],
+      "Tags": [],
+      "CreatedTime": 1765912018,
+      "LastUpdatedTime": 1765912086,
+      "Visibility": 5,
+      "ModelSource": "USER_UPLOAD",
+      "url": "https://modelscope.cn/models/MiniMax/VTP-Base-f16d64"
+    }
+  ]
+}

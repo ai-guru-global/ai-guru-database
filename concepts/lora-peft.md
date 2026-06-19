@@ -11,6 +11,10 @@ relationships:
     type: complements
   - target: "concepts/distributed-parallelism"
     type: reduces_need_for
+  - target: "concepts/dora"
+    type: related_to
+  - target: "concepts/rs-lora"
+    type: related_to
 sources:
   - 04_NLP_LLMs/Fine_tuning_Techniques/
   - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
@@ -217,3 +221,6 @@ W_final = W₀ + B×A
 - [[concepts/model-training]] — 模型训练（训练流程）
 - [[04_NLP_LLMs/Fine_tuning_Techniques]] — 微调技术详解
 - [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack
+- [[concepts/dora]] — DoRA
+- [[concepts/rs-lora]] — RS-LoRA
+- [[07_Model_Training/Data_and_FineTuning_for_dummy]] — 数据与微调大白话

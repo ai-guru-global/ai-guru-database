@@ -16,7 +16,7 @@ const mockDocs: DocEntry[] = [
   {
     slug: "rag-systems",
     title: "RAG Systems",
-    filePath: "11_RAG_Systems/RAG_Systems.md",
+    filePath: "14_RAG_Systems/RAG_Systems.md",
     category: "AI Engineering",
     categoryId: "07",
     description: "检索增强生成、索引、召回与知识库设计",

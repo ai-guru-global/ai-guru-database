@@ -103,8 +103,8 @@ Web/
 
 ## 下一步
 
-- 想学前端开发？→ [17_AI_Coding/README_for_dummy.md](../17_AI_Coding/README_for_dummy.md)
-- 想了解构建部署？→ [09_Deployment_Inference/README_for_dummy.md](../09_Deployment_Inference/README_for_dummy.md)
+- 想学前端开发？→ [16_AI_Coding/README_for_dummy.md](../16_AI_Coding/README_for_dummy.md)
+- 想了解构建部署？→ [10_Deployment_Inference/README_for_dummy.md](../10_Deployment_Inference/README_for_dummy.md)
 - 想了解整个知识库？→ [README.md](../README.md)
 
 ---

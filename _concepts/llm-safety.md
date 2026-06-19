@@ -3,17 +3,17 @@ title: "LLM 安全"
 category: concepts
 tags: ["llm-safety", "ai-safety", "guardrails", "red-teaming", "jailbreak", "alignment"]
 relationships:
-  - target: "concepts/ai-ethics"
+  - target: "_concepts/ai-ethics"
     type: belongs_to
-  - target: "concepts/guardrails"
+  - target: "_concepts/guardrails"
     type: uses
-  - target: "concepts/red-teaming"
+  - target: "_concepts/red-teaming"
     type: tested_by
-  - target: "concepts/tool-calling-safety"
+  - target: "_concepts/tool-calling-safety"
     type: secures
 sources:
-  - 19_Ethics_Safety/LLM_Security_Defense_Guide.md
-  - 19_Ethics_Safety/Safety_Evaluation_Framework.md
+  - 17_Ethics_Safety/LLM_Security_Defense_Guide.md
+  - 17_Ethics_Safety/Safety_Evaluation_Framework.md
 summary: "LLM 安全是确保大模型不被滥用、不造成伤害、不泄露隐私的一整套技术与治理措施。包括训练阶段的对齐、推理阶段的护栏、上线后的红队测试与监控。"
 provenance:
   extracted: 0.75
@@ -62,8 +62,8 @@ LLM 安全就像给大模型装了一套“刹车系统和安全带”：让它�
 
 ## Related
 
-- [[concepts/guardrails]] — Guardrails
-- [[concepts/red-teaming]] — 红队测试
-- [[concepts/tool-calling-safety]] — 工具调用安全
-- [[concepts/ai-ethics]] — AI 伦理
-- [[19_Ethics_Safety/LLM_Security_Defense_Guide]] — LLM 安全防御指南
+- [[_concepts/guardrails]] — Guardrails
+- [[_concepts/red-teaming]] — 红队测试
+- [[_concepts/tool-calling-safety]] — 工具调用安全
+- [[_concepts/ai-ethics]] — AI 伦理
+- [[17_Ethics_Safety/LLM_Security_Defense_Guide]] — LLM 安全防御指南

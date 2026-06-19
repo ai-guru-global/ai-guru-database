@@ -3,21 +3,21 @@ title: KV Cache (Key-Value Cache)
 category: concepts
 tags: [inference, kv-cache, attention, memory, optimization]
 relationships:
-  - target: "concepts/transformer-architecture"
+  - target: "_concepts/transformer-architecture"
     type: builds_on
-  - target: "concepts/kv-cache-plain"
+  - target: "_concepts/kv-cache-plain"
     type: simplified_by
-  - target: "concepts/paged-attention"
+  - target: "_concepts/paged-attention"
     type: optimized_by
-  - target: "concepts/multi-head-latent-attention"
+  - target: "_concepts/multi-head-latent-attention"
     type: compressed_by
-  - target: "concepts/kv-cache-compression"
+  - target: "_concepts/kv-cache-compression"
     type: generalized_by
-  - target: "09_Deployment_Inference/KV_Cache_Deep_Dive"
+  - target: "10_Deployment_Inference/KV_Cache_Deep_Dive"
     type: deepened_by
 sources:
   - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
-  - 09_Deployment_Inference/vLLM_Deep_Dive.md
+  - 10_Deployment_Inference/vLLM_Deep_Dive.md
 summary: KV Cache 是自回归 LLM 推理的核心优化——缓存已计算的 Key/Value 向量避免重复计算，将时间复杂度从 O(T²) 降至 O(T)。但 128K+ 上下文时 KV Cache 显存超过模型参数本身，催生 PagedAttention、MLA、FP8 量化等优化技术。
 provenance:
   extracted: 0.85
@@ -119,12 +119,12 @@ KV Cache 优化技术栈（从底到顶叠加）
 
 ## Related
 
-- [[concepts/kv-cache-plain]] — KV Cache 大白话解释：适合初学者的类比版
-- [[concepts/transformer-layer]] — Transformer Layer（层）大白话解释
-- [[concepts/paged-attention]] — PagedAttention：KV Cache 的虚拟内存管理
-- [[concepts/multi-head-latent-attention]] — MLA：KV Cache 压缩 7-28×
-- [[concepts/prefix-caching]] — 前缀缓存：复用共享 prompt prefix
-- [[concepts/model-deployment]] — 模型部署全景
-- [[concepts/long-context-models]] — 长上下文模型
-- [[09_Deployment_Inference/KV_Cache_Deep_Dive]] — KV Cache 深度研究：从原理到工程实践
-- [[concepts/kv-cache-compression]] — KV Cache 压缩
+- [[_concepts/kv-cache-plain]] — KV Cache 大白话解释：适合初学者的类比版
+- [[_concepts/transformer-layer]] — Transformer Layer（层）大白话解释
+- [[_concepts/paged-attention]] — PagedAttention：KV Cache 的虚拟内存管理
+- [[_concepts/multi-head-latent-attention]] — MLA：KV Cache 压缩 7-28×
+- [[_concepts/prefix-caching]] — 前缀缓存：复用共享 prompt prefix
+- [[_concepts/model-deployment]] — 模型部署全景
+- [[_concepts/long-context-models]] — 长上下文模型
+- [[10_Deployment_Inference/KV_Cache_Deep_Dive]] — KV Cache 深度研究：从原理到工程实践
+- [[_concepts/kv-cache-compression]] — KV Cache 压缩

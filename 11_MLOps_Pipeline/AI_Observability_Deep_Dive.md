@@ -306,9 +306,9 @@ def evaluate_faithfulness(trace_id: str, output: str, sources: list[str]):
 
 ### 相关文档
 
-- [[16_AI_Ops/AI_Ops]] - AI Ops 总体体系
-- [[16_AI_Ops/Incident_Response_for_AI_Systems]] - AI 系统故障响应
-- [[10_MLOps_Pipeline/Model_Monitoring_and_Drift_Detection_2026]] - 模型监控与漂移检测
+- [[13_AI_Ops/AI_Ops]] - AI Ops 总体体系
+- [[13_AI_Ops/Incident_Response_for_AI_Systems]] - AI 系统故障响应
+- [[11_MLOps_Pipeline/Model_Monitoring_and_Drift_Detection_2026]] - 模型监控与漂移检测
 
 ### 资源链接
 

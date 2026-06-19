@@ -3,13 +3,13 @@ title: Speculative Decoding (投机解码)
 category: concepts
 tags: [inference, speculative-decoding, mtp, acceleration]
 relationships:
-  - target: "concepts/model-deployment"
+  - target: "_concepts/model-deployment"
     type: optimizes
-  - target: "concepts/transformer-architecture"
+  - target: "_concepts/transformer-architecture"
     type: builds_on
 sources:
   - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
-  - 09_Deployment_Inference/Speculative_Decoding_Advanced_2026.md
+  - 10_Deployment_Inference/Speculative_Decoding_Advanced_2026.md
 summary: Speculative Decoding 用小模型(draft)快速生成候选 token，大模型(target)一次前向传播并行验证，接受率 >85%，实现 2-3× 延迟降低且不改变输出分布。DeepSeek MTP 变体无需外部 draft model，用内置辅助头实现投机解码。
 provenance:
   extracted: 0.85
@@ -96,6 +96,6 @@ DeepSeek-V3 的 MTP 在训练时增加辅助预测头，推理时天然作为 dr
 
 ## Related
 
-- [[concepts/kv-cache]] — KV Cache（投机解码中的验证步骤也利用 KV Cache）
-- [[concepts/model-deployment]] — 模型部署
-- [[09_Deployment_Inference/Speculative_Decoding_Advanced_2026]] — 投机解码高级技术
+- [[_concepts/kv-cache]] — KV Cache（投机解码中的验证步骤也利用 KV Cache）
+- [[_concepts/model-deployment]] — 模型部署
+- [[10_Deployment_Inference/Speculative_Decoding_Advanced_2026]] — 投机解码高级技术

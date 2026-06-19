@@ -258,9 +258,9 @@ torchrun --nproc_per_node=8 --nnodes=4 --node_rank=$RANK --master_addr=$MASTER_A
 
 ## Related
 
-- [[concepts/fsdp]] — FSDP 概念卡片
-- [[concepts/distributed-training]] — 分布式训练
-- [[concepts/deepspeed]] — DeepSpeed
-- [[concepts/megatron-lm]] — Megatron-LM
+- [[_concepts/fsdp]] — FSDP 概念卡片
+- [[_concepts/distributed-training]] — 分布式训练
+- [[_concepts/deepspeed]] — DeepSpeed
+- [[_concepts/megatron-lm]] — Megatron-LM
 - [[07_Model_Training/DeepSpeed_Deep_Dive]] — DeepSpeed 深度解析
 - [[07_Model_Training/Megatron_LM_Deep_Dive]] — Megatron-LM 深度解析

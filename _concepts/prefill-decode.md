@@ -3,22 +3,22 @@ title: "Prefill/Decode 推理阶段"
 category: concept
 tags: ["prefill", "decode", "inference-phase", "ttft", "tps", "throughput"]
 relationships:
-  - target: "concepts/kv-cache"
+  - target: "_concepts/kv-cache"
     type: builds_on
-  - target: "concepts/continuous-batching"
+  - target: "_concepts/continuous-batching"
     type: related_to
-  - target: "concepts/speculative-decoding"
+  - target: "_concepts/speculative-decoding"
     type: extends
-  - target: "concepts/flash-attention-kernels"
+  - target: "_concepts/flash-attention-kernels"
     type: uses
-  - target: "09_Deployment_Inference/Inference_Performance/Prefill_Decode_Disaggregation"
+  - target: "10_Deployment_Inference/Inference_Performance/Prefill_Decode_Disaggregation"
     type: optimized_by
-  - target: "09_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy"
+  - target: "10_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy"
     type: simplified_by
 sources:
   - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
-  - 09_Deployment_Inference/Inference_Performance/Prefill_Decode_Disaggregation.md
-  - 09_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy.md
+  - 10_Deployment_Inference/Inference_Performance/Prefill_Decode_Disaggregation.md
+  - 10_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy.md
 summary: "LLM 推理分为 Prefill（处理输入，计算密集）和 Decode（逐 token 生成，内存带宽密集）两阶段。优化策略截然不同，理解两阶段差异是推理系统设计的核心。"
 provenance:
   extracted: 0.60
@@ -160,13 +160,13 @@ Append 优化：将新 token 的 KV 写入与 Attention 计算融合，减少一
 
 ## Related
 
-- [[concepts/kv-cache]] — KV Cache（两阶段的核心数据结构）
-- [[concepts/continuous-batching]] — 连续批处理（Decode 阶段调度）
-- [[concepts/speculative-decoding]] — 投机解码（Decode 加速）
-- [[concepts/flash-attention-kernels]] — FlashAttention 内核（Prefill 加速）
-- [[concepts/paged-attention]] — PagedAttention（KV Cache 管理）
-- [[concepts/mixture-of-experts]] — MoE（与推理阶段的协同）
-- [[concepts/ttft]] — TTFT
-- [[09_Deployment_Inference/Inference_Performance/Prefill_Decode_Disaggregation|Prefill-Decode 分离]]
-- [[09_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy|推理性能术语大白话解释]]
+- [[_concepts/kv-cache]] — KV Cache（两阶段的核心数据结构）
+- [[_concepts/continuous-batching]] — 连续批处理（Decode 阶段调度）
+- [[_concepts/speculative-decoding]] — 投机解码（Decode 加速）
+- [[_concepts/flash-attention-kernels]] — FlashAttention 内核（Prefill 加速）
+- [[_concepts/paged-attention]] — PagedAttention（KV Cache 管理）
+- [[_concepts/mixture-of-experts]] — MoE（与推理阶段的协同）
+- [[_concepts/ttft]] — TTFT
+- [[10_Deployment_Inference/Inference_Performance/Prefill_Decode_Disaggregation|Prefill-Decode 分离]]
+- [[10_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy|推理性能术语大白话解释]]
 - [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack

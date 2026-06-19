@@ -59,4 +59,4 @@ tier: supporting
 | Agent | 基础 | 强 | 极强 |
 | 价格 | $10/月 | $20/月 | 按 token |
 
-> **关联**: -> [[17_AI_Coding|AI 编程]] | [[17_AI_Coding/AI_Coding_2026_Guide|AI 编程 2026 全景指南]]
+> **关联**: -> [[16_AI_Coding|AI 编程]] | [[16_AI_Coding/AI_Coding_2026_Guide|AI 编程 2026 全景指南]]

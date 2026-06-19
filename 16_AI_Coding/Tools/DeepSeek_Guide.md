@@ -19,7 +19,7 @@ updated: 2026-05-31
 
 | 维度 | 说明 |
 |------|------|
-| **类型** | AI [[concepts/ai-technology-landscape|大语言模型]] + 编程工具 |
+| **类型** | AI [[_concepts/ai-technology-landscape|大语言模型]] + 编程工具 |
 | **开发商** | DeepSeek（深度求索） |
 | **接入方式** | deepseek-tio |
 | **适用** | 日常编程、代码生成 |
@@ -102,7 +102,7 @@ deepseek-tio config set model deepseek-coder
 
 ## Related
 
-- [[17_AI_Coding/01_Theory/AI_Coding_Theory]] — AI辅助编程理论基础 (共享: ai-coding, code-generation, cursor, github-copilot)
-- [[17_AI_Coding/02_Tools/CodeBuddy_Guide]] — CodeBuddy / WorkBuddy 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
-- [[17_AI_Coding/02_Tools/Comate_Guide]] — Comate 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
-- [[17_AI_Coding/02_Tools/Coze_Guide]] — Coze 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
+- [[16_AI_Coding/Theory/AI_Coding_Theory]] — AI辅助编程理论基础 (共享: ai-coding, code-generation, cursor, github-copilot)
+- [[16_AI_Coding/Tools/CodeBuddy_Guide]] — CodeBuddy / WorkBuddy 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
+- [[16_AI_Coding/Tools/Comate_Guide]] — Comate 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
+- [[16_AI_Coding/Tools/Coze_Guide]] — Coze 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)

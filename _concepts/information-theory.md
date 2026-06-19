@@ -3,11 +3,11 @@ title: "信息论 (Information Theory)"
 category: concept
 tags: ["fundamentals", "information-theory", "entropy", "cross-entropy", "KL-divergence", "mutual-information", "perplexity"]
 relationships:
-  - target: "concepts/probability-statistics"
+  - target: "_concepts/probability-statistics"
     type: builds_on
-  - target: "concepts/llm-architectures"
+  - target: "_concepts/llm-architectures"
     type: related_to
-  - target: "concepts/model-evaluation"
+  - target: "_concepts/model-evaluation"
     type: related_to
 sources:
   - 01_Fundamentals/Information_Theory
@@ -151,7 +151,7 @@ BPE 不是最优的（贪心算法），但在实践中是计算效率与压缩�
 ## Related
 
 - [[01_Fundamentals/Information_Theory]] — 信息论基础
-- [[concepts/probability-statistics]] — 概率统计基础
-- [[concepts/llm-architectures]] — LLM 架构（交叉熵与困惑度）
-- [[concepts/model-evaluation]] — 模型评估（PPL、信息准则）
-- [[concepts/bayesian-methods]] — 贝叶斯方法（KL 散度与变分推断）
+- [[_concepts/probability-statistics]] — 概率统计基础
+- [[_concepts/llm-architectures]] — LLM 架构（交叉熵与困惑度）
+- [[_concepts/model-evaluation]] — 模型评估（PPL、信息准则）
+- [[_concepts/bayesian-methods]] — 贝叶斯方法（KL 散度与变分推断）

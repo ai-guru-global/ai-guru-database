@@ -120,22 +120,22 @@ HITL 适合高风险动作（取消订单、转账、删除数据），不适合
 
 ## 与其他课的衔接
 
-- 本课侧重**安全设计模式**，[[13_Agent_Production/Microsoft_AI_Agents_L18_Securing_AI_Agents]] 侧重**加密审计收据（Signed Receipts）**这一具体技术
-- 与 [[19_Ethics_Safety/GenAI_L13_Securing_AI_Applications]] 互为补充：那节是 GenAI 通用安全，本节是 Agent 专属安全
+- 本课侧重**安全设计模式**，[[15_Agent_Production/Microsoft_AI_Agents_L18_Securing_AI_Agents]] 侧重**加密审计收据（Signed Receipts）**这一具体技术
+- 与 [[17_Ethics_Safety/GenAI_L13_Securing_AI_Applications]] 互为补充：那节是 GenAI 通用安全，本节是 Agent 专属安全
 
 ## 参考资源
 
 - [Responsible AI overview](https://learn.microsoft.com/azure/ai-studio/responsible-use-of-ai-overview)
-- [Safety system messages](https://learn.microsoft.com/azure/ai-services/openai/concepts/system-message)
+- [Safety system messages](https://learn.microsoft.com/azure/ai-services/openai/_concepts/system-message)
 - [Microsoft RAI Impact Assessment Template](https://blogs.microsoft.com/wp-content/uploads/prod/sites/5/2022/06/Microsoft-RAI-Impact-Assessment-Template.pdf)
 
 ---
 
 ## 关联阅读
 
-- [[13_Agent_Production/Microsoft_AI_Agents_L05_Agentic_RAG]] — 上一课：Agentic RAG
-- [[13_Agent_Production/Microsoft_AI_Agents_L07_Planning_Design]] — 下一课：规划设计
-- [[13_Agent_Production/Microsoft_AI_Agents_L18_Securing_AI_Agents]] — L18：加密审计收据深度技术
-- [[13_Agent_Production/Microsoft_AI_Agents_L03_Design_Principles]] — L03：透明度/可控原则的理论基础
-- [[19_Ethics_Safety/GenAI_L13_Securing_AI_Applications]] — GenAI 应用安全基础
+- [[15_Agent_Production/Microsoft_AI_Agents_L05_Agentic_RAG]] — 上一课：Agentic RAG
+- [[15_Agent_Production/Microsoft_AI_Agents_L07_Planning_Design]] — 下一课：规划设计
+- [[15_Agent_Production/Microsoft_AI_Agents_L18_Securing_AI_Agents]] — L18：加密审计收据深度技术
+- [[15_Agent_Production/Microsoft_AI_Agents_L03_Design_Principles]] — L03：透明度/可控原则的理论基础
+- [[17_Ethics_Safety/GenAI_L13_Securing_AI_Applications]] — GenAI 应用安全基础
 - [[90_Learn/courses/microsoft/microsoft_ai_agents_for_beginners]] — 课程总览

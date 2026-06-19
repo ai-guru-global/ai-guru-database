@@ -13,7 +13,7 @@ updated: 2026-06-15
 >
 > **与主章节的关系**: 每篇综合文档从 2-4 个不同章节提取关联，形成"概念A × 概念B"的交叉洞见。
 >
-> **与 concepts/ 的关系**: concepts/ 是单点概念卡片，synthesis/ 是多点关联分析，二者互补构成知识图谱。
+> **与 _concepts/ 的关系**: _concepts/ 是单点概念卡片，_synthesis/ 是多点关联分析，二者互补构成知识图谱。
 
 ---
 
@@ -79,9 +79,9 @@ updated: 2026-06-15
 
 ---
 
-- [[synthesis/alignment-rlhf|价值对齐 × RLHF：从人类反馈到可扩展监督]] — #alignment × #rlhf
-- [[synthesis/benchmark-evaluation|评测基准 × 评测方法论：从分数到可信评估]] — #benchmark × #evaluation
-- [[synthesis/pretraining-synthetic-data|预训练数据 × 合成数据：从规模到质量的范式转移]] — #pretraining-data × #synthetic-data
+- [[_synthesis/alignment-rlhf|价值对齐 × RLHF：从人类反馈到可扩展监督]] — #alignment × #rlhf
+- [[_synthesis/benchmark-evaluation|评测基准 × 评测方法论：从分数到可信评估]] — #benchmark × #evaluation
+- [[_synthesis/pretraining-synthetic-data|预训练数据 × 合成数据：从规模到质量的范式转移]] — #pretraining-data × #synthetic-data
 ## 综合文档模板
 
 每篇综合文档遵循以下结构：

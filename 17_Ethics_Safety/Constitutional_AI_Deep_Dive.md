@@ -17,7 +17,7 @@ updated: 2026-06-15
 
 ### 1.1 起源与动机：RLHF 的天花板
 
-Constitutional AI (CAI) 由 Anthropic 于 2022 年提出，核心论文为 Bai et al. 的 *"Constitutional AI: Harmlessness from AI Feedback"*。要理解 CAI 的价值，必须先看 [[22_Papers/RLHF_DPO_Deep_Dive|RLHF]] 的固有缺陷：
+Constitutional AI (CAI) 由 Anthropic 于 2022 年提出，核心论文为 Bai et al. 的 *"Constitutional AI: Harmlessness from AI Feedback"*。要理解 CAI 的价值，必须先看 [[20_Papers/RLHF_DPO_Deep_Dive|RLHF]] 的固有缺陷：
 
 | RLHF 痛点 | 具体问题 | CAI 的回应 |
 |-----------|---------|-----------|
@@ -250,7 +250,7 @@ flowchart LR
 | **典型应用** | InstructGPT, ChatGPT | Claude 系列 | 开源社区广泛使用 | DeepSeek 系列 |
 | **首次提出** | 2022 (OpenAI) | 2022 (Anthropic) | 2023 (Stanford) | 2024 (DeepSeek) |
 
-> **详细对比参考**：[[22_Papers/RLHF_DPO_Deep_Dive|RLHF 与 DPO 深度解读]]、[[22_Papers/DPO_Deep_Dive|DPO 深度解读]]、[[07_Model_Training/GRPO_and_New_Alignment_Methods|GRPO 与新对齐方法]]
+> **详细对比参考**：[[20_Papers/RLHF_DPO_Deep_Dive|RLHF 与 DPO 深度解读]]、[[20_Papers/DPO_Deep_Dive|DPO 深度解读]]、[[07_Model_Training/GRPO_and_New_Alignment_Methods|GRPO 与新对齐方法]]
 
 ---
 
@@ -444,7 +444,7 @@ flowchart TB
 | **安全防护** | Guardrails / Output filtering | CAI 原则可转化为 guardrail 规则 |
 | **评估** | Red-teaming / Benchmarks | CAI 的 red-teaming 循环提供评估数据 |
 
-> **相关页面**：[[07_Model_Training/TRL_RLHF_DPO_Guide|TRL RLHF DPO 实践指南]]、[[19_Ethics_Safety/Value_Alignment/Value_Alignment|价值对齐]]、[[19_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming|AI 安全 Red-Teaming]]
+> **相关页面**：[[07_Model_Training/TRL_RLHF_DPO_Guide|TRL RLHF DPO 实践指南]]、[[17_Ethics_Safety/Value_Alignment/Value_Alignment|价值对齐]]、[[17_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming|AI 安全 Red-Teaming]]
 
 ---
 
@@ -479,7 +479,7 @@ flowchart LR
 - 相比 RLHF，CAI 在透明度、可扩展性、标注者心理健康方面有显著优势
 - 局限性包括原则偏见、模型能力依赖、"对齐税"等
 
-> **延伸阅读**：[[04_NLP_LLMs/Global_LLM_Ecosystem/Anthropic_Claude_Deep_Dive|Anthropic Claude 深度解读]]、[[22_Papers/RLHF_DPO_Deep_Dive|RLHF 与 DPO 深度解读]]、[[07_Model_Training/GRPO_and_New_Alignment_Methods|GRPO 与新对齐方法]]
+> **延伸阅读**：[[05_NLP_LLMs/Global_LLM_Ecosystem/Anthropic_Claude_Deep_Dive|Anthropic Claude 深度解读]]、[[20_Papers/RLHF_DPO_Deep_Dive|RLHF 与 DPO 深度解读]]、[[07_Model_Training/GRPO_and_New_Alignment_Methods|GRPO 与新对齐方法]]
 
 ---
 

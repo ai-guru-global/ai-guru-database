@@ -172,7 +172,7 @@ Understand AI capabilities & boundaries
 
 ⏱️ 8-10 hours
 
-[Industry Applications →](./20_AI_Applications_Industry/)
+[Industry Applications →](./18_AI_Applications_Industry/)
 
 </td>
 <td align="center" width="25%">
@@ -183,7 +183,7 @@ Track cutting-edge technologies
 
 ⏱️ Self-paced
 
-[Essential Papers →](./22_Papers/)
+[Essential Papers →](./20_Papers/)
 
 </td>
 </tr>
@@ -243,26 +243,26 @@ Complete path from math to production:
 | **01** [Fundamentals](./01_Fundamentals/) | Math & CS: Linear algebra, probability, distributed systems | ⭐⭐ |
 | **02** [Classical ML](./02_Machine_Learning/) | ML basics: Supervised/unsupervised, XGBoost | ⭐⭐ |
 | **03** [Deep Learning](./03_Deep_Learning/) | Neural networks: MLP, backprop, JEPA world models | ⭐⭐⭐ |
-| **04** [NLP & LLMs](./04_NLP_LLMs/) | LLM tech: Transformer, GPT-5.2/Claude 4.5, LoRA/RLHF | ⭐⭐⭐⭐ |
-| **05** [Computer Vision](./05_Computer_Vision/) | Vision AI: CNN, YOLO, diffusion, video generation | ⭐⭐⭐ |
+| **04** [NLP & LLMs](./05_NLP_LLMs/) | LLM tech: Transformer, GPT-5.2/Claude 4.5, LoRA/RLHF | ⭐⭐⭐⭐ |
+| **05** [Computer Vision](./04_Computer_Vision/) | Vision AI: CNN, YOLO, diffusion, video generation | ⭐⭐⭐ |
 | **06** [RL & Agents](./06_Reinforcement_Learning/) | RL & Agents: DQN/PPO, VLA embodied AI | ⭐⭐⭐⭐ |
 | **07** [Model Training](./07_Model_Training/) | Training: Loss functions, optimizers, distributed training | ⭐⭐⭐ |
 | **08** [Model Evaluation](./08_Model_Evaluation/) | Evaluation: Metrics, benchmarks, A/B testing | ⭐⭐⭐ |
-| **09** [Deployment & Inference](./09_Deployment_Inference/) | Inference: vLLM, quantization, model serving | ⭐⭐⭐⭐ |
-| **10** [MLOps Pipeline](./10_MLOps_Pipeline/) | Automation: CI/CD, model versioning, pipeline orchestration | ⭐⭐⭐⭐ |
-| **11** [RAG Systems](./11_RAG_Systems/) | Retrieval augmented: Vector DBs, hybrid search, Agentic RAG | ⭐⭐⭐ |
+| **09** [Deployment & Inference](./10_Deployment_Inference/) | Inference: vLLM, quantization, model serving | ⭐⭐⭐⭐ |
+| **10** [MLOps Pipeline](./11_MLOps_Pipeline/) | Automation: CI/CD, model versioning, pipeline orchestration | ⭐⭐⭐⭐ |
+| **11** [RAG Systems](./14_RAG_Systems/) | Retrieval augmented: Vector DBs, hybrid search, Agentic RAG | ⭐⭐⭐ |
 | **12** [Architecture & Infrastructure](./12_Architecture_Infrastructure/) | System design: Multi-tenant, SGLang, HA, edge AI | ⭐⭐⭐⭐ |
-| **13** [Agent Production](./13_Agent_Production/) | Agent engineering: Frameworks, skills, workflows, evaluation | ⭐⭐⭐⭐ |
+| **13** [Agent Production](./15_Agent_Production/) | Agent engineering: Frameworks, skills, workflows, evaluation | ⭐⭐⭐⭐ |
 | **14** [AI Gateway](./14_AI_Gateway/) | Gateway: Routing, rate limiting, model gateway | ⭐⭐⭐ |
-| **15** [AI Testing](./15_Testing/) | Testing: Test frameworks, contract testing, data management | ⭐⭐⭐ |
-| **16** [AI Ops](./16_AI_Ops/) | AIOps: Observability, incident response, chaos engineering | ⭐⭐⭐⭐ |
-| **17** [AI Coding](./17_AI_Coding/) | Coding tools & methodology: Cursor, Claude Code, Vibe Coding | ⭐⭐ |
+| **15** [AI Testing](./09_Testing/) | Testing: Test frameworks, contract testing, data management | ⭐⭐⭐ |
+| **16** [AI Ops](./13_AI_Ops/) | AIOps: Observability, incident response, chaos engineering | ⭐⭐⭐⭐ |
+| **17** [AI Coding](./16_AI_Coding/) | Coding tools & methodology: Cursor, Claude Code, Vibe Coding | ⭐⭐ |
 | **18** [Cloud Ops Agent](./18_Cloud_Ops_Agent/) | Cloud ops: Intelligent agent, operations practices | ⭐⭐⭐ |
-| **19** [Ethics & Safety](./19_Ethics_Safety/) | AI safety: Alignment, red teaming, OWASP LLM | ⭐⭐⭐ |
-| **20** [Industry Apps](./20_AI_Applications_Industry/) | Verticals: Healthcare/Finance/Manufacturing | ⭐⭐ |
-| **21** [Industry Insights](./21_Talks/) | Leader insights: 21 AI pioneers | ⭐⭐ |
-| **22** [Essential Papers](./22_Papers/) | Classic papers: Transformer, GPT, BERT | ⭐⭐⭐⭐ |
-| **23** [Interviews](./23_Interviews/) | Career guides: 21 AI role interviews | ⭐⭐ |
+| **19** [Ethics & Safety](./17_Ethics_Safety/) | AI safety: Alignment, red teaming, OWASP LLM | ⭐⭐⭐ |
+| **20** [Industry Apps](./18_AI_Applications_Industry/) | Verticals: Healthcare/Finance/Manufacturing | ⭐⭐ |
+| **21** [Industry Insights](./19_Talks/) | Leader insights: 21 AI pioneers | ⭐⭐ |
+| **22** [Essential Papers](./20_Papers/) | Classic papers: Transformer, GPT, BERT | ⭐⭐⭐⭐ |
+| **23** [Interviews](./21_Interviews/) | Career guides: 21 AI role interviews | ⭐⭐ |
 
 </details>
 
@@ -270,17 +270,17 @@ Complete path from math to production:
 
 Latest tech trends and industry insights:
 
-- [LLM Architectures 2026](./04_NLP_LLMs/LLM_Architectures/LLM_Architectures.md) - GPT-5.2, Claude 4.5, reasoning models
+- [LLM Architectures 2026](./05_NLP_LLMs/LLM_Architectures/LLM_Architectures.md) - GPT-5.2, Claude 4.5, reasoning models
 - [AI Hardware 2026](./01_Fundamentals/AI_Hardware/AI_Hardware_2026.md) - H100/H200/B200 comparison
-- [PEFT Fine-tuning 2026](./04_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/) - LoRA/QLoRA/DoRA, 70B on single GPU
-- [Advanced RAG](./11_RAG_Systems/) - Hybrid search, Agentic RAG
-- [AI Coding Assistants](./17_AI_Coding/) - Cursor, Claude Code, Devin
-- [Vibe Coding Methodology](./17_AI_Coding/) - Natural language driven dev, DGRV loop, production practices
+- [PEFT Fine-tuning 2026](./05_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/) - LoRA/QLoRA/DoRA, 70B on single GPU
+- [Advanced RAG](./14_RAG_Systems/) - Hybrid search, Agentic RAG
+- [AI Coding Assistants](./16_AI_Coding/) - Cursor, Claude Code, Devin
+- [Vibe Coding Methodology](./16_AI_Coding/) - Natural language driven dev, DGRV loop, production practices
 - [Embodied AI 2026](./06_Reinforcement_Learning/Robotics_Embodied_AI/) - VLA models, humanoid robots
 - [World Models 2026](./03_Deep_Learning/World_Models/) - JEPA/V-JEPA, LeCun's AGI path
-- [AI Video Generation](./05_Computer_Vision/Video_Generation/) - Veo3, Kling 3.0, post-Sora
-- [AI Security 2026](./19_Ethics_Safety/AI_Security_2026/) - OWASP LLM, ASI framework
-- [Agent Production](./13_Agent_Production/) - K8s, monitoring, CI/CD
+- [AI Video Generation](./04_Computer_Vision/Video_Generation/) - Veo3, Kling 3.0, post-Sora
+- [AI Security 2026](./17_Ethics_Safety/AI_Security_2026/) - OWASP LLM, ASI framework
+- [Agent Production](./15_Agent_Production/) - K8s, monitoring, CI/CD
 
 ---
 
@@ -337,7 +337,7 @@ Optimized for AI Agent consumption:
 
 **Recommended Agent Usage**:
 1. Import entire `docs/` directory as knowledge base
-2. Use file paths for context reference (e.g., `04_NLP_LLMs/LLM_Architectures/LLM_Architectures.md`)
+2. Use file paths for context reference (e.g., `05_NLP_LLMs/LLM_Architectures/LLM_Architectures.md`)
 3. Combine with chapter READMEs for quick content location
 
 ---

@@ -211,6 +211,6 @@ manager_agent.run("调研最新的 OpenAI O3 模型架构，并总结 3 个核�
 ---
 
 ## 相关阅读
-- [[13_Agent_Production/Agent_Frameworks/SmolAgents_Deep_Dive]]
-- [[17_AI_Coding/Cursor_ClaudeCode_Comparison]]
-- [[13_Agent_Production/Agent_Skills/Tool_Calling_Best_Practices]]
+- [[15_Agent_Production/Agent_Frameworks/SmolAgents_Deep_Dive]]
+- [[16_AI_Coding/Cursor_ClaudeCode_Comparison]]
+- [[15_Agent_Production/Agent_Skills/Tool_Calling_Best_Practices]]

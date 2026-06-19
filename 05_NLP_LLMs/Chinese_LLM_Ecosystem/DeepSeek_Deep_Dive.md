@@ -394,7 +394,7 @@ DeepSeekMoE 三大创新
 | 共享专家 | 1 | 1 | 1 | 1+ |
 | 负载均衡 | 无辅助损失 | 无辅助损失 | 无辅助损失 | 增强版 |
 
-> **相关文档**: 关于 MoE 路由与负载均衡的深入分析，参见 [Mixture of Experts Deep Dive](../../22_Papers/Mixture_of_Experts_Deep_Dive.md)
+> **相关文档**: 关于 MoE 路由与负载均衡的深入分析，参见 [Mixture of Experts Deep Dive](../../20_Papers/Mixture_of_Experts_Deep_Dive.md)
 
 ### 3.3 FP8 混合精度训练
 
@@ -1973,7 +1973,7 @@ DeepSeek 提供双协议端点：
 - [LLM Architectures (大语言模型架构)](../LLM_Architectures/LLM_Architectures.md) — Transformer, GPT, BERT, MoE 等核心架构的全面介绍
 - [MoE Case Studies: DeepSeek & Mixtral](../LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md) — MoE 路由策略、专家专业化的深度分析
 - [MoE Routing and Load Balancing](../LLM_Architectures/MoE_Routing_and_Load_Balancing.md) — MoE 负载均衡技术详解
-- [Mixture of Experts Deep Dive](../../22_Papers/Mixture_of_Experts_Deep_Dive.md) — MoE 从理论到实践的完整剖析
+- [Mixture of Experts Deep Dive](../../20_Papers/Mixture_of_Experts_Deep_Dive.md) — MoE 从理论到实践的完整剖析
 
 ### 推理模型
 
@@ -1990,7 +1990,7 @@ DeepSeek 提供双协议端点：
 ### 训练与微调
 
 - [Fine-tuning Techniques (微调技术)](../Fine_tuning_Techniques/Fine_tuning_Techniques.md) — LoRA, QLoRA, PEFT 等微调方法
-- [RLHF & DPO Deep Dive](../../22_Papers/RLHF_DPO_Deep_Dive.md) — 人类反馈强化学习与直接偏好优化
+- [RLHF & DPO Deep Dive](../../20_Papers/RLHF_DPO_Deep_Dive.md) — 人类反馈强化学习与直接偏好优化
 
 ---
 
@@ -2006,9 +2006,9 @@ DeepSeek 提供双协议端点：
 - DeepSeek-R1 技术报告: arXiv:2501.12948
 
 ### Wiki 内部参考
-- [[04_NLP_LLMs/Chinese_LLM_Ecosystem/README]] — 中国大模型生态全景
-- [[04_NLP_LLMs/Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]] — 全厂商对比矩阵
-- [[04_NLP_LLMs/Chinese_LLM_Ecosystem/Chinese_LLM_Training_Inference_Platforms]] — 训推平台实战
+- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/README]] — 中国大模型生态全景
+- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]] — 全厂商对比矩阵
+- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/Chinese_LLM_Training_Inference_Platforms]] — 训推平台实战
 
 ---
 *Last updated: 2026-06-16*

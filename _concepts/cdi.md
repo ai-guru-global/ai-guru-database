@@ -10,13 +10,13 @@ tags:
 - infrastructure
 - device-plugin
 relationships:
-- target: 'concepts/llm-infrastructure'
+- target: '_concepts/llm-infrastructure'
   type: enables
-- target: 'concepts/model-deployment'
+- target: '_concepts/model-deployment'
   type: enables
-- target: 'concepts/model-serving'
+- target: '_concepts/model-serving'
   type: related_to
-- target: 'concepts/distributed-parallelism'
+- target: '_concepts/distributed-parallelism'
   type: related_to
 sources:
 - 12_Architecture_Infrastructure/CDI_Deep_Dive.md
@@ -109,12 +109,12 @@ CDI (设备注入地基)
 - [[12_Architecture_Infrastructure/CDI_Deep_Dive|CDI 容器设备接口标准深度解析]]
 - [[12_Architecture_Infrastructure/CDI_for_dummy|CDI 小白版]]
 - [[12_Architecture_Infrastructure/DRA_Deep_Dive|DRA 深度解析（配对概念）]]
-- [[concepts/dra|DRA 动态资源分配（分配层搭档）]]
-- [[concepts/gpu-operator|NVIDIA GPU Operator（生成 CDI spec 的运维层）]]
-- [[concepts/oci-runtime|OCI Runtime Spec（CDI 注入的最终落点）]]
+- [[_concepts/dra|DRA 动态资源分配（分配层搭档）]]
+- [[_concepts/gpu-operator|NVIDIA GPU Operator（生成 CDI spec 的运维层）]]
+- [[_concepts/oci-runtime|OCI Runtime Spec（CDI 注入的最终落点）]]
 - [[12_Architecture_Infrastructure/AI_Infrastructure_2026|AI Infrastructure 2026]]
-- [[09_Deployment_Inference/vLLM_Deep_Dive|vLLM 深度解析]]
-- [[09_Deployment_Inference/TensorRT_LLM_Deep_Dive|TensorRT-LLM 深度解析]]
+- [[10_Deployment_Inference/vLLM_Deep_Dive|vLLM 深度解析]]
+- [[10_Deployment_Inference/TensorRT_LLM_Deep_Dive|TensorRT-LLM 深度解析]]
 - [[01_Fundamentals/AI_Hardware/Chinese_AI_Chips_Deep_Dive|国产 AI 芯片深度解析]]
-- [[concepts/llm-infrastructure|LLM 基础设施]]
-- [[concepts/model-deployment|模型部署]]
+- [[_concepts/llm-infrastructure|LLM 基础设施]]
+- [[_concepts/model-deployment|模型部署]]

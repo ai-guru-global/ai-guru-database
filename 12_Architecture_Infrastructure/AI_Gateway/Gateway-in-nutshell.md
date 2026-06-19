@@ -165,8 +165,8 @@ response = client.chat.completions.create(
 |------|------|
 | 完整架构 | [AI_Gateway_2026.md](./AI_Gateway_2026.md) |
 | 入门指南 | [AI_Gateway_for_dummy.md](./AI_Gateway_for_dummy.md) |
-| SRE 实践 | [../AI_Ops/SRE_for_AI_Systems.md](../16_AI_Ops/SRE_for_AI_Systems.md) |
-| 可观测性 | [../AI_Ops/AI_Observability_Guide.md](../16_AI_Ops/AI_Observability_Guide.md) |
+| SRE 实践 | [../AI_Ops/SRE_for_AI_Systems.md](../13_AI_Ops/SRE_for_AI_Systems.md) |
+| 可观测性 | [../AI_Ops/AI_Observability_Guide.md](../13_AI_Ops/AI_Observability_Guide.md) |
 | 成本优化 | [../AI_Cost_Optimization_2026.md](../12_Architecture_Infrastructure/AI_Cost_Optimization_2026.md) |
 
 ---

@@ -89,32 +89,32 @@ AI 测试类型
 
 ## 关联目录
 
-- [16_AI_Ops](../16_AI_Ops/) -- AI 运维与可观测性
-- [13_Agent_Production/16_Agent_Evaluation](../13_Agent_Production/16_Agent_Evaluation/) -- Agent 评估
+- [13_AI_Ops](../13_AI_Ops/) -- AI 运维与可观测性
+- [15_Agent_Production/Agent_Evaluation](../15_Agent_Production/Agent_Evaluation/) -- Agent 评估
 
 ---
 
 *Last updated: 2026-04-26*
 
 ## Related
-- [[15_Testing/Promptfoo_Deep_Dive|Promptfoo: LLM Prompt 测试框架]]
-- [[15_Testing/Weights_Biases_Deep_Dive|Weights & Biases: ML 实验追踪平台]]
-- [[15_Testing/Test_Data_Management|测试数据管理 (Test Data Management)]]
-- [[15_Testing/Contract_Testing|契约测试 (Contract Testing for AI Systems)]]
-- [[15_Testing/README_for_dummy|15 AI 测试 — 小白版 🧪]]
-- [[15_Testing/AI_Test_Framework_2026|AI 系统测试框架 (AI Test Framework 2026)]]
-- [[15_Testing/RAGAS_Deep_Dive|RAGAS: RAG 评估框架]]
+- [[09_Testing/Promptfoo_Deep_Dive|Promptfoo: LLM Prompt 测试框架]]
+- [[09_Testing/Weights_Biases_Deep_Dive|Weights & Biases: ML 实验追踪平台]]
+- [[09_Testing/Test_Data_Management|测试数据管理 (Test Data Management)]]
+- [[09_Testing/Contract_Testing|契约测试 (Contract Testing for AI Systems)]]
+- [[09_Testing/README_for_dummy|15 AI 测试 — 小白版 🧪]]
+- [[09_Testing/AI_Test_Framework_2026|AI 系统测试框架 (AI Test Framework 2026)]]
+- [[09_Testing/RAGAS_Deep_Dive|RAGAS: RAG 评估框架]]
 
-- [[15_Testing/AI-Testing-in-nutshell]] — AI 测试与评估速成指南 (共享: ai-testing, evaluation, prompt-testing, testing)
-- [[15_Testing/AI_Testing_for_dummy]] — AI 测试 - 小白版 (共享: ai-testing, evaluation, prompt-testing, testing)
-- [[15_Testing/Java_AI_Testing]] — Java AI 测试实践 (共享: ai-testing, evaluation, prompt-testing, testing)
-- [[15_Testing/README_for_dummy.md|README_for_dummy]]
+- [[09_Testing/AI-Testing-in-nutshell]] — AI 测试与评估速成指南 (共享: ai-testing, evaluation, prompt-testing, testing)
+- [[09_Testing/AI_Testing_for_dummy]] — AI 测试 - 小白版 (共享: ai-testing, evaluation, prompt-testing, testing)
+- [[09_Testing/Java_AI_Testing]] — Java AI 测试实践 (共享: ai-testing, evaluation, prompt-testing, testing)
+- [[09_Testing/README_for_dummy.md|README_for_dummy]]
 
-- [[15_Testing/Promptfoo_Deep_Dive|Promptfoo: LLM Prompt 测试框架]]
-- [[15_Testing/Weights_Biases_Deep_Dive|Weights & Biases: ML 实验追踪平台]]
-- [[15_Testing/Test_Data_Management|测试数据管理 (Test Data Management)]]
-- [[15_Testing/Contract_Testing|契约测试 (Contract Testing for AI Systems)]]
-- [[15_Testing/README_for_dummy|15 AI 测试 — 小白版 🧪]]
-- [[15_Testing/AI_Test_Framework_2026|AI 系统测试框架 (AI Test Framework 2026)]]
-- [[15_Testing/RAGAS_Deep_Dive|RAGAS: RAG 评估框架]]
+- [[09_Testing/Promptfoo_Deep_Dive|Promptfoo: LLM Prompt 测试框架]]
+- [[09_Testing/Weights_Biases_Deep_Dive|Weights & Biases: ML 实验追踪平台]]
+- [[09_Testing/Test_Data_Management|测试数据管理 (Test Data Management)]]
+- [[09_Testing/Contract_Testing|契约测试 (Contract Testing for AI Systems)]]
+- [[09_Testing/README_for_dummy|15 AI 测试 — 小白版 🧪]]
+- [[09_Testing/AI_Test_Framework_2026|AI 系统测试框架 (AI Test Framework 2026)]]
+- [[09_Testing/RAGAS_Deep_Dive|RAGAS: RAG 评估框架]]
 

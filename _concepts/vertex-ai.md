@@ -3,13 +3,13 @@ title: "Google Vertex AI"
 category: concept
 tags: ["vertex-ai", "google-cloud", "gcp", "ai-platform", "mlops", "foundation-model", "gemini", "tpus"]
 relationships:
-  - target: "concepts/cloud-ai-platform"
+  - target: "_concepts/cloud-ai-platform"
     type: extends
-  - target: "concepts/gemini"
+  - target: "_concepts/gemini"
     type: provides
-  - target: "concepts/aws-bedrock"
+  - target: "_concepts/aws-bedrock"
     type: related_to
-  - target: "concepts/azure-openai"
+  - target: "_concepts/azure-openai"
     type: related_to
 sources:
   - 12_Architecture_Infrastructure/Google_Vertex_AI_Deep_Dive.md
@@ -90,7 +90,7 @@ updated: 2026-06-16
 ## Related
 
 - [[12_Architecture_Infrastructure/Google_Vertex_AI_Deep_Dive]] — Google Vertex AI 深度解析
-- [[concepts/cloud-ai-platform]] — 云 AI 平台
-- [[concepts/gemini]] — Gemini
-- [[concepts/aws-bedrock]] — AWS Bedrock
-- [[concepts/azure-openai]] — Azure OpenAI
+- [[_concepts/cloud-ai-platform]] — 云 AI 平台
+- [[_concepts/gemini]] — Gemini
+- [[_concepts/aws-bedrock]] — AWS Bedrock
+- [[_concepts/azure-openai]] — Azure OpenAI

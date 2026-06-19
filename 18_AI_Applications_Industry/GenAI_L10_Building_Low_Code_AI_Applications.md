@@ -268,13 +268,13 @@ Dataverse 是 Power Platform 的底层数据平台，负责安全地存储应用
 ## 扩展阅读
 
 - [[90_Learn/courses/microsoft/microsoft_genai_for_beginners]]
-- [[04_NLP_LLMs/Multimodal_Models/GenAI_L09_Building_Image_Applications]]
-- [[13_Agent_Production/GenAI_L11_Integrating_with_Function_Calling]]
-- [[13_Agent_Production/Agent_Platforms/README]]
-- [[20_AI_Applications_Industry/Education/AI_Education_2026]]
+- [[05_NLP_LLMs/Multimodal_Models/GenAI_L09_Building_Image_Applications]]
+- [[15_Agent_Production/GenAI_L11_Integrating_with_Function_Calling]]
+- [[15_Agent_Production/Agent_Platforms/README]]
+- [[18_AI_Applications_Industry/Education/AI_Education_2026]]
 
 ## 课程导航
 
 | 上一课 | 下一课 |
 |--------|--------|
-| [[04_NLP_LLMs/Multimodal_Models/GenAI_L09_Building_Image_Applications|L09 构建图像生成应用]] | [[13_Agent_Production/GenAI_L11_Integrating_with_Function_Calling|L11 集成函数调用]] |
+| [[05_NLP_LLMs/Multimodal_Models/GenAI_L09_Building_Image_Applications|L09 构建图像生成应用]] | [[15_Agent_Production/GenAI_L11_Integrating_with_Function_Calling|L11 集成函数调用]] |

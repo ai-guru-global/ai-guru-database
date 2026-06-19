@@ -133,7 +133,7 @@ updated: '2026-05-31'
 ## 下一步
 
 - 想学技术？→ 从 [90_Learn/README.md](../90_Learn/README_for_dummy.md) 开始
-- 想看论文？→ [22_Papers/README_for_dummy.md](../22_Papers/README_for_dummy.md)
+- 想看论文？→ [20_Papers/README_for_dummy.md](../20_Papers/README_for_dummy.md)
 
 ---
 
@@ -141,8 +141,8 @@ updated: '2026-05-31'
 
 ## Related
 
-- [[21_Talks/Andrej_Karpathy/about.md|about]]
-- [[21_Talks/Andrew_Ng/about.md|about]]
-- [[21_Talks/Andrew_Ng/sayings.md|sayings]]
-- [[21_Talks/Bill_Gates/about.md|about]]
-- [[21_Talks/Bill_Gates/sayings.md|sayings]]
+- [[19_Talks/Andrej_Karpathy/about.md|about]]
+- [[19_Talks/Andrew_Ng/about.md|about]]
+- [[19_Talks/Andrew_Ng/sayings.md|sayings]]
+- [[19_Talks/Bill_Gates/about.md|about]]
+- [[19_Talks/Bill_Gates/sayings.md|sayings]]

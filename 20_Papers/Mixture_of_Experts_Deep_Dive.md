@@ -846,14 +846,14 @@ if __name__ == "__main__":
 - [GPT-3 深度解读](./GPT3_Deep_Dive.md) — Dense 模型的 Scaling Laws
 
 ### 横向关联
-- [LLM 架构](../04_NLP_LLMs/LLM_Architectures/) — MoE 在 LLM 中的架构设计
+- [LLM 架构](../05_NLP_LLMs/LLM_Architectures/) — MoE 在 LLM 中的架构设计
 - [分布式训练](../07_Model_Training/Distributed_Training_2026.md) — MoE 的专家并行策略
 - [模型训练](../07_Model_Training/README.md) — MoE 训练的工程挑战
 
 ### 进阶方向
 - [训练优化](../07_Model_Training/Training_Optimization_2026.md) — MoE 推理优化
 - [RLHF 与 DPO 深度解读](./RLHF_DPO_Deep_Dive.md) — MoE 模型的对齐
-- [AI 开源项目](../13_Agent_Production/AI_OpenSource_Projects_Overview.md) — 开源 MoE 模型生态
+- [AI 开源项目](../15_Agent_Production/AI_OpenSource_Projects_Overview.md) — 开源 MoE 模型生态
 
 ---
 
@@ -861,7 +861,7 @@ if __name__ == "__main__":
 
 ## Related
 
-- [[04_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/README]] — PEFT 2026 (参数高效微调) (共享: llm, nlp, transformer)
-- [[04_NLP_LLMs/Fine_tuning_Techniques/README]] — 微调技术 (Fine-tuning Techniques) (共享: llm, nlp, transformer)
-- [[04_NLP_LLMs/LLM_Architectures/LLM-Basics-in-nutshell]] — 大语言模型基础速成指南 (共享: llm, nlp, transformer)
-- [[04_NLP_LLMs/Multimodal_Models/Multimodal_Architectures_2026]] — 多模态模型架构 2026：从 GPT-4V 到原生多模态 AGI (共享: llm, nlp, transformer)
+- [[05_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/README]] — PEFT 2026 (参数高效微调) (共享: llm, nlp, transformer)
+- [[05_NLP_LLMs/Fine_tuning_Techniques/README]] — 微调技术 (Fine-tuning Techniques) (共享: llm, nlp, transformer)
+- [[05_NLP_LLMs/LLM_Architectures/LLM-Basics-in-nutshell]] — 大语言模型基础速成指南 (共享: llm, nlp, transformer)
+- [[05_NLP_LLMs/Multimodal_Models/Multimodal_Architectures_2026]] — 多模态模型架构 2026：从 GPT-4V 到原生多模态 AGI (共享: llm, nlp, transformer)

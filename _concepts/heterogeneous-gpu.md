@@ -3,9 +3,9 @@ title: 异构 GPU 集群 (Heterogeneous GPU Cluster)
 category: concepts
 tags: [infrastructure, gpu, heterogeneous, cluster, scheduling]
 relationships:
-  - target: "concepts/ai-hardware"
+  - target: "_concepts/ai-hardware"
     type: extends
-  - target: "concepts/training-inference-unification"
+  - target: "_concepts/training-inference-unification"
     type: enables
 sources:
   - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
@@ -67,7 +67,7 @@ updated: 2026-06-03 00:00:00+00:00
 ### 异构调度最佳实践
 
 1. **能力感知调度**：按 GPU 算力/显存匹配任务需求（大模型训练 → 高端 GPU，轻量推理 → 入门 GPU）
-2. **统一池化调度**：使用 [[concepts/hami|HAMi]] 将 NVIDIA/昇腾/寒武纪/海光/摩尔线程等异构芯片纳入同一资源池，统一申请 `nvidia.com/gpu` + `gpumem`/`gpucores`
+2. **统一池化调度**：使用 [[_concepts/hami|HAMi]] 将 NVIDIA/昇腾/寒武纪/海光/摩尔线程等异构芯片纳入同一资源池，统一申请 `nvidia.com/gpu` + `gpumem`/`gpucores`
 3. **通信拓扑优化**：同构 GPU 优先组成训练集群（高速互联），异构 GPU 用于推理（带宽要求低）
 4. **渐进式迁移**：新 GPU 先用于推理验证，稳定后逐步承担训练负载
 5. **算子适配层**：CUDA 兼容层（如海光 HIP）降低迁移成本
@@ -80,12 +80,12 @@ updated: 2026-06-03 00:00:00+00:00
 
 ## Related
 
-- [[concepts/ai-hardware]] — AI 硬件全景
-- [[concepts/training-inference-unification]] — 训推一体
-- [[concepts/rdma-roce]] — RDMA/RoCE 高速网络
-- [[concepts/cdi]] — CDI 容器设备接口（异构芯片统一接入容器的标准）
-- [[concepts/dra]] — DRA（异构设备的属性化分配）
-- [[concepts/hami]] — HAMi（异构 GPU 统一虚拟化与调度）
+- [[_concepts/ai-hardware]] — AI 硬件全景
+- [[_concepts/training-inference-unification]] — 训推一体
+- [[_concepts/rdma-roce]] — RDMA/RoCE 高速网络
+- [[_concepts/cdi]] — CDI 容器设备接口（异构芯片统一接入容器的标准）
+- [[_concepts/dra]] — DRA（异构设备的属性化分配）
+- [[_concepts/hami]] — HAMi（异构 GPU 统一虚拟化与调度）
 - [[12_Architecture_Infrastructure/HAMi_Deep_Dive]] — HAMi 深度解析
 - [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — 阿里云 AI Stack
 - [[01_Fundamentals/AI_Hardware/Chinese_AI_Chips_Deep_Dive]] — 国产 AI 芯片12家厂商深度解析

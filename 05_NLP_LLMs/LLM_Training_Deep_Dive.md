@@ -27,11 +27,11 @@ updated: 2026-06-17
 
 ## 关联文档
 
-- [[04_NLP_LLMs/Transformer_Deep_Dive]] — Transformer 核心架构
-- [[04_NLP_LLMs/LLM_Inference_Deep_Dive]] — 推理优化
-- [[04_NLP_LLMs/LLM_Architecture_Evolution]] — 架构演进
-- [[04_NLP_LLMs/Fine_tuning_Techniques/LoRA_QLoRA_SFT_RLHF_DPO_in_Detail]] — LoRA/RLHF/DPO 实战
-- [[04_NLP_LLMs/Fine_tuning_Techniques/PEFT_Advanced_2026]] — PEFT 前沿
+- [[05_NLP_LLMs/Transformer_Deep_Dive]] — Transformer 核心架构
+- [[05_NLP_LLMs/LLM_Inference_Deep_Dive]] — 推理优化
+- [[05_NLP_LLMs/LLM_Architecture_Evolution]] — 架构演进
+- [[05_NLP_LLMs/Fine_tuning_Techniques/LoRA_QLoRA_SFT_RLHF_DPO_in_Detail]] — LoRA/RLHF/DPO 实战
+- [[05_NLP_LLMs/Fine_tuning_Techniques/PEFT_Advanced_2026]] — PEFT 前沿
 
 ---
 

@@ -174,11 +174,11 @@ Text2SQL：让 AI 会查数据库
 
 ## Related
 
-- [[concepts/agentic-rag|Agentic RAG]]
-- [[concepts/text2sql|Text2SQL]]
-- [[concepts/code-generation-workflow|代码生成工作流]]
-- [[concepts/rag-systems|RAG 检索增强生成]]
-- [[concepts/ai-agents|AI Agent]]
-- [[concepts/tool-calling|工具调用]]
-- [[11_RAG_Systems/Agentic_RAG_Guide|Agentic RAG 指南]]
-- [[17_AI_Coding/README|AI 编程工具]]
+- [[_concepts/agentic-rag|Agentic RAG]]
+- [[_concepts/text2sql|Text2SQL]]
+- [[_concepts/code-generation-workflow|代码生成工作流]]
+- [[_concepts/rag-systems|RAG 检索增强生成]]
+- [[_concepts/ai-agents|AI Agent]]
+- [[_concepts/tool-calling|工具调用]]
+- [[14_RAG_Systems/Agentic_RAG_Guide|Agentic RAG 指南]]
+- [[16_AI_Coding/README|AI 编程工具]]

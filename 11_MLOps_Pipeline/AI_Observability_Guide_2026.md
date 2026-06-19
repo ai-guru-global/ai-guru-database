@@ -113,5 +113,5 @@ LLM 应用
 4. **定期审查**: 每周审查低分和高成本的请求
 5. **关联业务指标**: 将 LLM 指标与业务指标关联
 
-> **关联**: -> [[16_AI_Ops|AI Ops]] | [[16_AI_Ops/LangSmith_Deep_Dive|LangSmith]] | [[16_AI_Ops/Helicone_Deep_Dive|Helicone]] | [[16_AI_Ops/Phoenix_Deep_Dive|Phoenix]]
+> **关联**: -> [[13_AI_Ops|AI Ops]] | [[13_AI_Ops/LangSmith_Deep_Dive|LangSmith]] | [[13_AI_Ops/Helicone_Deep_Dive|Helicone]] | [[13_AI_Ops/Phoenix_Deep_Dive|Phoenix]]
 

@@ -14,10 +14,10 @@ created: 2026-06-12
 
 ## 页面列表
 
-- [[04_NLP_LLMs/LLM_Architectures/MoE_Routing_and_Load_Balancing|MoE Routing and Load Balancing]]
-- [[04_NLP_LLMs/LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral|MoE Case Studies: DeepSeek and Mixtral]]
-- [[04_NLP_LLMs/LLM_Architectures/Transformer_Alternatives|Transformer Alternatives: RWKV, RetNet, Mamba, and Beyond]]
+- [[05_NLP_LLMs/LLM_Architectures/MoE_Routing_and_Load_Balancing|MoE Routing and Load Balancing]]
+- [[05_NLP_LLMs/LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral|MoE Case Studies: DeepSeek and Mixtral]]
+- [[05_NLP_LLMs/LLM_Architectures/Transformer_Alternatives|Transformer Alternatives: RWKV, RetNet, Mamba, and Beyond]]
 
 ## 相关页面
 
-- [[04_NLP_LLMs/LLM_Architectures/README|LLM 架构目录]]
+- [[05_NLP_LLMs/LLM_Architectures/README|LLM 架构目录]]

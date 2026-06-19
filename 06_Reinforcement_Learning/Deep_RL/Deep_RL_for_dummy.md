@@ -641,7 +641,7 @@ AI在学习:
 
 **下一步阅读**:
 - 📘 [AI智能体 - 小白版](../AI_Agents/AI_Agents_for_dummy.md) - 学习自主决策系统
-- 📘 [Transformer - 小白版](../../04_NLP_LLMs/Transformer_Revolution/Transformer_Revolution_for_dummy.md) - 理解 PPO 如何训练 ChatGPT
+- 📘 [Transformer - 小白版](../../05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution_for_dummy.md) - 理解 PPO 如何训练 ChatGPT
 
 **查看原版文档**(需要技术基础):
 - 📄 [深度强化学习(原版)](./Deep_RL.md) - 包含 DQN、PPO 的代码实现
@@ -653,7 +653,7 @@ AI在学习:
 
 **相关主题**:
 - 🔙 [强化学习基础 - 小白版](../RL_Foundations/RL_Foundations_for_dummy.md) - 理解 Q-Learning 基础
-- 🔙 [CNN - 小白版](../../05_Computer_Vision/Image_Classification_Detection/Image_Classification_Detection_for_dummy.md) - DQN 的视觉编码器
+- 🔙 [CNN - 小白版](../../04_Computer_Vision/Image_Classification_Detection/Image_Classification_Detection_for_dummy.md) - DQN 的视觉编码器
 - 🔜 [AI智能体 - 小白版](../AI_Agents/AI_Agents_for_dummy.md) - RL 的高级应用
 
 ---

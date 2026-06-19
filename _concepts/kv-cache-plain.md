@@ -3,9 +3,9 @@ title: KV Cache 大白话解释
 category: concepts
 tags: [inference, kv-cache, attention, optimization, beginner]
 relationships:
-  - target: "concepts/kv-cache"
+  - target: "_concepts/kv-cache"
     type: simplified_version_of
-  - target: "concepts/transformer-architecture"
+  - target: "_concepts/transformer-architecture"
     type: builds_on
 summary: 用生活化的类比解释 KV Cache：大模型逐字生成文本时，把已经算过的“关键信息”存进小仓库，避免每次重复计算，从而显著加速推理。
 lifecycle: draft
@@ -105,6 +105,6 @@ KV Cache 就放在 **每个车间的 Attention 工位旁边**，是一本不断�
 
 ## Related
 
-- [[concepts/kv-cache]] — KV Cache 技术深潜与优化全景
-- [[concepts/transformer-layer]] — Transformer Layer（层）大白话解释
-- [[concepts/transformer-architecture]] — Transformer 架构简介
+- [[_concepts/kv-cache]] — KV Cache 技术深潜与优化全景
+- [[_concepts/transformer-layer]] — Transformer Layer（层）大白话解释
+- [[_concepts/transformer-architecture]] — Transformer 架构简介

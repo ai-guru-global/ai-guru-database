@@ -11,7 +11,7 @@ updated: "2026-05-31"
 
 > **一句话理解**: LakeFS 是数据湖版本控制——用 Git 工作流管理数据，支持快照、分支、跨环境同步，像 Git 一样管理你的数据湖。
 
-> 📐 **概念与选型方法论**: 数据版本控制的原理、LakeFS vs DVC vs Delta Lake 对比，见 [[10_MLOps_Pipeline/Data_Versioning_DVC_LakeFS]]。本文聚焦 LakeFS 工具用法。
+> 📐 **概念与选型方法论**: 数据版本控制的原理、LakeFS vs DVC vs Delta Lake 对比，见 [[11_MLOps_Pipeline/Data_Versioning_DVC_LakeFS]]。本文聚焦 LakeFS 工具用法。
 
 ---
 
@@ -344,8 +344,8 @@ prod_repo.branches["main"].merge(
 
 ## Related
 
-- [[16_AI_Ops/AIOps-in-nutshell.md|AIOps-in-nutshell]]
-- [[16_AI_Ops/AI_Incident_Response_Playbook.md|AI_Incident_Response_Playbook]]
-- [[16_AI_Ops/AI_Ops_for_dummy.md|AI_Ops_for_dummy]]
-- [[16_AI_Ops/README.md|16_AI_Ops README]]
-- [[16_AI_Ops/README_for_dummy.md|README_for_dummy]]
+- [[13_AI_Ops/AIOps-in-nutshell.md|AIOps-in-nutshell]]
+- [[13_AI_Ops/AI_Incident_Response_Playbook.md|AI_Incident_Response_Playbook]]
+- [[13_AI_Ops/AI_Ops_for_dummy.md|AI_Ops_for_dummy]]
+- [[13_AI_Ops/README.md|13_AI_Ops README]]
+- [[13_AI_Ops/README_for_dummy.md|README_for_dummy]]

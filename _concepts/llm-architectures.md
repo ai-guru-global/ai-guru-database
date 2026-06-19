@@ -3,13 +3,13 @@ title: LLM架构
 category: concepts
 tags: [nlp, llm, gpt, bert, moe, transformer-architecture]
 relationships:
-  - target: "[[concepts/transformer-architecture]]"
+  - target: "[[_concepts/transformer-architecture]]"
     type: built_on
-  - target: "concepts/fine-tuning-techniques"
+  - target: "_concepts/fine-tuning-techniques"
     type: related_to
-  - target: "concepts/reasoning-models"
+  - target: "_concepts/reasoning-models"
     type: related_to
-sources: [04_NLP_LLMs/LLM_Architectures/LLM_Architectures.md]
+sources: [05_NLP_LLMs/LLM_Architectures/LLM_Architectures.md]
 summary: 大语言模型（LLM）架构基于Transformer发展出三大范式：Encoder-only（BERT）、Decoder-only（GPT/LLaMA）和Encoder-Decoder（T5）。2026年主流趋势为Decoder-only + MoE架构，推理模型和Agent原生设计成为标配。
 provenance:
   extracted: 0.85
@@ -111,7 +111,7 @@ MHA每头独立KV（精度高但内存大），MQA所有头共享一组KV（省�
 
 ## Related
 
-- [[04_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/README]] — PEFT 2026 (参数高效微调) (共享: bert, gpt, llm, nlp)
-- [[04_NLP_LLMs/Fine_tuning_Techniques/README]] — 微调技术 (Fine-tuning Techniques) (共享: bert, gpt, llm, nlp)
-- [[04_NLP_LLMs/LLM_Architectures/LLM-Basics-in-nutshell]] — 大语言模型基础速成指南 (共享: bert, gpt, llm, nlp)
-- [[04_NLP_LLMs/Multimodal_Models/Multimodal_Architectures_2026]] — 多模态模型架构 2026：从 GPT-4V 到原生多模态 AGI (共享: bert, gpt, llm, nlp)
+- [[05_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/README]] — PEFT 2026 (参数高效微调) (共享: bert, gpt, llm, nlp)
+- [[05_NLP_LLMs/Fine_tuning_Techniques/README]] — 微调技术 (Fine-tuning Techniques) (共享: bert, gpt, llm, nlp)
+- [[05_NLP_LLMs/LLM_Architectures/LLM-Basics-in-nutshell]] — 大语言模型基础速成指南 (共享: bert, gpt, llm, nlp)
+- [[05_NLP_LLMs/Multimodal_Models/Multimodal_Architectures_2026]] — 多模态模型架构 2026：从 GPT-4V 到原生多模态 AGI (共享: bert, gpt, llm, nlp)

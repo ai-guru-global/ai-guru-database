@@ -8,11 +8,11 @@ tags:
 - high-availability
 - multi-tenant
 relationships:
-- target: 'concepts/llm-infrastructure'
+- target: '_concepts/llm-infrastructure'
   type: related_to
-- target: 'concepts/mlops'
+- target: '_concepts/mlops'
   type: related_to
-- target: 'concepts/rag-systems'
+- target: '_concepts/rag-systems'
   type: related_to
 sources:
 - 12_Architecture_Infrastructure/AI_System_Architecture_2026.md

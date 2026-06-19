@@ -390,4 +390,4 @@ Evol-Instruct 进化流程:
 
 ## 延伸阅读
 
-- [[synthesis/pretraining-synthetic-data|预训练数据 × 合成数据：从规模到质量的范式转移]]
+- [[_synthesis/pretraining-synthetic-data|预训练数据 × 合成数据：从规模到质量的范式转移]]

@@ -127,9 +127,9 @@ VLM 的 prefill 阶段特别重，因为：
 
 ## Related
 
-- [[concepts/multimodal-models]] — 多模态模型
-- [[concepts/prefill-decode]] — Prefill / Decode 阶段
-- [[concepts/prefix-caching]] — 前缀缓存
-- [[09_Deployment_Inference/Inference_Performance/README|推理性能专题]]
-- [[09_Deployment_Inference/Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]]
-- [[09_Deployment_Inference/Inference_Performance/Prefill_Decode_Disaggregation|Prefill-Decode 分离]]
+- [[_concepts/multimodal-models]] — 多模态模型
+- [[_concepts/prefill-decode]] — Prefill / Decode 阶段
+- [[_concepts/prefix-caching]] — 前缀缓存
+- [[10_Deployment_Inference/Inference_Performance/README|推理性能专题]]
+- [[10_Deployment_Inference/Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]]
+- [[10_Deployment_Inference/Inference_Performance/Prefill_Decode_Disaggregation|Prefill-Decode 分离]]

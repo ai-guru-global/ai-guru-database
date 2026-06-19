@@ -160,7 +160,7 @@ Gateway 能力:
 
 - 想深入技术？→ 查看子目录具体文档
 - 想学架构？→ [12_Architecture_Infrastructure/README_for_dummy.md](../12_Architecture_Infrastructure/README_for_dummy.md)
-- 想学部署？→ [09_Deployment_Inference/README_for_dummy.md](../09_Deployment_Inference/README_for_dummy.md)
+- 想学部署？→ [10_Deployment_Inference/README_for_dummy.md](../10_Deployment_Inference/README_for_dummy.md)
 
 ---
 

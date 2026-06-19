@@ -834,16 +834,16 @@ flowchart TB
 
 ## 🔗 相关主题
 
-- [Prompt Engineering](../../04_NLP_LLMs/Prompt_Engineering/Prompt-Engineering-in-nutshell.md) - 测试提示词效果
-- [RAG 系统](../11_RAG_Systems/RAG-in-nutshell.md) - RAG 评估方法
+- [Prompt Engineering](../../05_NLP_LLMs/Prompt_Engineering/Prompt-Engineering-in-nutshell.md) - 测试提示词效果
+- [RAG 系统](../14_RAG_Systems/RAG-in-nutshell.md) - RAG 评估方法
 - [AI 智能体](../../06_Reinforcement_Learning/AI_Agents/Agent-in-nutshell.md) - Agent 测试策略
-- [AI 工作流](../13_Agent_Production/Agent_Workflow/Workflow-in-nutshell.md) - 测试流水线集成
+- [AI 工作流](../15_Agent_Production/Agent_Workflow/Workflow-in-nutshell.md) - 测试流水线集成
 
 ## Related
 
-- [[15_Testing/AI_Testing_for_dummy]] — AI 测试 - 小白版 (共享: ai-testing, evaluation, prompt-testing, testing)
-- [[15_Testing/Java_AI_Testing]] — Java AI 测试实践 (共享: ai-testing, evaluation, prompt-testing, testing)
-- [[15_Testing/README]] — AI 测试与评估 (AI Testing) (共享: ai-testing, evaluation, prompt-testing, testing)
-- [[15_Testing/Promptfoo_Deep_Dive.md|Promptfoo_Deep_Dive]]
-- [[15_Testing/DeepEval_Deep_Dive.md|DeepEval_Deep_Dive]]
-- [[15_Testing/AI_Test_Framework_2026.md|AI_Test_Framework_2026]]
+- [[09_Testing/AI_Testing_for_dummy]] — AI 测试 - 小白版 (共享: ai-testing, evaluation, prompt-testing, testing)
+- [[09_Testing/Java_AI_Testing]] — Java AI 测试实践 (共享: ai-testing, evaluation, prompt-testing, testing)
+- [[09_Testing/README]] — AI 测试与评估 (AI Testing) (共享: ai-testing, evaluation, prompt-testing, testing)
+- [[09_Testing/Promptfoo_Deep_Dive.md|Promptfoo_Deep_Dive]]
+- [[09_Testing/DeepEval_Deep_Dive.md|DeepEval_Deep_Dive]]
+- [[09_Testing/AI_Test_Framework_2026.md|AI_Test_Framework_2026]]

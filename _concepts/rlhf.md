@@ -4,13 +4,13 @@ category: concepts
 tags: ["reinforcement-learning", "rlhf", "ppo", "alignment", "reward-model", "human-feedback", "ai-history"]
 aliases: [RLHF, reinforcement-learning from Human Feedback, 基于人类反馈的强化学习, 人类对齐]
 relationships:
-  - target: "[[concepts/deep-reinforcement-learning]]"
+  - target: "[[_concepts/deep-reinforcement-learning]]"
     type: related_to
-  - target: "concepts/reinforcement-learning"
+  - target: "_concepts/reinforcement-learning"
     type: related_to
-  - target: "concepts/ai-agents"
+  - target: "_concepts/ai-agents"
     type: related_to
-  - target: "concepts/lora-qlora-sft-rlhf-dpo"
+  - target: "_concepts/lora-qlora-sft-rlhf-dpo"
     type: related_to
 sources:
   - 06_reinforcement-learning_unsupervised-learning/Deep_RL/Deep_RL.md
@@ -101,6 +101,6 @@ RLHF训练后的模型表现出明显的"对齐效应"：拒绝有害请求的�
 
 ## Related
 
-- [[concepts/lora-qlora-sft-rlhf-dpo]] — LoRA / QLoRA / SFT / RLHF / DPO 大白话串讲
-- [[22_Papers/RLHF_DPO_Deep_Dive]] — RLHF 与 DPO 深度解读 (从 InstructGPT 到 Direct Preference Optimization) (共享: alignment, rl, rlhf)
-- [[concepts/deep-reinforcement-learning]] — 深度强化学习 (共享: ppo, rl)
+- [[_concepts/lora-qlora-sft-rlhf-dpo]] — LoRA / QLoRA / SFT / RLHF / DPO 大白话串讲
+- [[20_Papers/RLHF_DPO_Deep_Dive]] — RLHF 与 DPO 深度解读 (从 InstructGPT 到 Direct Preference Optimization) (共享: alignment, rl, rlhf)
+- [[_concepts/deep-reinforcement-learning]] — 深度强化学习 (共享: ppo, rl)

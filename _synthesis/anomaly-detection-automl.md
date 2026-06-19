@@ -3,8 +3,8 @@ title: "异常检测 × AutoML — 自动化异常发现"
 category: synthesis
 tags: [anomaly-detection, automl, machine-learning, unsupervised, autoencoder, isolation-forest]
 sources:
-  - "[[concepts/anomaly-detection]]"
-  - "[[concepts/automl]]"
+  - "[[_concepts/anomaly-detection]]"
+  - "[[_concepts/automl]]"
   - "[[02_Machine_Learning/Anomaly_Detection/Anomaly_Detection]]"
   - "[[02_Machine_Learning/AutoML/AutoML]]"
 created: 2026-06-05
@@ -58,8 +58,8 @@ lifecycle_changed: 2026-06-05
 
 ## Related
 
-- [[concepts/anomaly-detection]] — 异常检测概念总览
-- [[concepts/automl]] — AutoML 概念总览
+- [[_concepts/anomaly-detection]] — 异常检测概念总览
+- [[_concepts/automl]] — AutoML 概念总览
 - [[02_Machine_Learning/Anomaly_Detection/Anomaly_Detection]] — 异常检测完整指南
 - [[02_Machine_Learning/AutoML/AutoML]] — AutoML 完整指南
 - [[02_Machine_Learning/Unsupervised_Learning/Unsupervised_Learning]] — 无监督学习基础

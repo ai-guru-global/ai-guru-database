@@ -3,18 +3,18 @@ title: "Milvus"
 category: concept
 tags: ["milvus", "vector-database", "rag", "embedding", "zilliz", "distributed", "gpu"]
 relationships:
-  - target: "concepts/vector-database"
+  - target: "_concepts/vector-database"
     type: extends
-  - target: "concepts/rag"
+  - target: "_concepts/rag"
     type: enables
-  - target: "concepts/embedding"
+  - target: "_concepts/embedding"
     type: related_to
-  - target: "concepts/qdrant"
+  - target: "_concepts/qdrant"
     type: related_to
-  - target: "concepts/weaviate"
+  - target: "_concepts/weaviate"
     type: related_to
 sources:
-  - 11_RAG_Systems/Milvus_Deep_Dive.md
+  - 14_RAG_Systems/Milvus_Deep_Dive.md
 summary: "Milvus 是 Zilliz 开源的分布式向量数据库，专为海量 Embedding 检索设计，支持 GPU 索引、多副本、混合搜索（向量+标量），是 RAG 和企业级语义搜索的主流选择。"
 provenance:
   extracted: 0.8
@@ -103,10 +103,10 @@ Milvus Cluster
 
 ## Related
 
-- [[11_RAG_Systems/Milvus_Deep_Dive]] — Milvus 深度解析
-- [[concepts/vector-database]] — 向量数据库
-- [[concepts/rag]] — RAG
-- [[concepts/embedding]] — Embedding
-- [[concepts/qdrant]] — Qdrant
-- [[concepts/weaviate]] — Weaviate
-- [[concepts/chroma]] — Chroma
+- [[14_RAG_Systems/Milvus_Deep_Dive]] — Milvus 深度解析
+- [[_concepts/vector-database]] — 向量数据库
+- [[_concepts/rag]] — RAG
+- [[_concepts/embedding]] — Embedding
+- [[_concepts/qdrant]] — Qdrant
+- [[_concepts/weaviate]] — Weaviate
+- [[_concepts/chroma]] — Chroma

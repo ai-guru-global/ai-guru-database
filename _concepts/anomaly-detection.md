@@ -4,11 +4,11 @@ category: concepts
 tags: ["machine-learning", "anomaly-detection", "outlier-detection", "isolation-forest", "autoencoder", "one-class-svm"]
 aliases: [Anomaly object-detection, 离群点检测, 异常检测]
 relationships:
-  - target: "[[concepts/unsupervised-learning]]"
+  - target: "[[_concepts/unsupervised-learning]]"
     type: related_to
-  - target: "concepts/supervised-learning"
+  - target: "_concepts/supervised-learning"
     type: related_to
-  - target: "concepts/time-series-analysis"
+  - target: "_concepts/time-series-analysis"
     type: related_to
 sources: [02_Machine_unsupervised-learning/Anomaly_Detection/Anomaly_Detection.md]
 summary: 识别数据中"与众不同"的模式，广泛应用于欺诈检测、入侵检测、故障预警等场景。
@@ -119,15 +119,15 @@ updated: 2026-05-31T00:00:00Z
 
 ## 来源
 
-- references/anomaly-detection-reference
-- concepts/unsupervised-learning
-- concepts/time-series-analysis
+- _references/anomaly-detection-reference
+- _concepts/unsupervised-learning
+- _concepts/time-series-analysis
 
 ## Related
 
-- [[concepts/supervised-learning.md|supervised-learning]]
-- [[concepts/unsupervised-learning.md|unsupervised-learning]]
+- [[_concepts/supervised-learning.md|supervised-learning]]
+- [[_concepts/unsupervised-learning.md|unsupervised-learning]]
 - [[02_Machine_Learning/Anomaly_Detection/Anomaly_Detection.md|Anomaly_Detection]]
 - [[02_Machine_Learning/Anomaly_Detection/Anomaly_Detection_for_dummy.md|Anomaly_Detection_for_dummy]]
 - [[02_Machine_Learning/AutoML/AutoML.md|AutoML]]
-- [[synthesis/anomaly-detection-automl|异常检测 × AutoML]] — 自动化异常发现的交叉合成
+- [[_synthesis/anomaly-detection-automl|异常检测 × AutoML]] — 自动化异常发现的交叉合成

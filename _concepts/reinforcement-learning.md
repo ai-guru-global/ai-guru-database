@@ -4,11 +4,11 @@ category: concepts
 tags: ["reinforcement-learning", "mdp", "q-learning", "policy-gradient", "exploration"]
 aliases: [Reinforcement unsupervised-learning, RL, 强化学习基础]
 relationships:
-  - target: "[[concepts/deep-reinforcement-learning]]"
+  - target: "[[_concepts/deep-reinforcement-learning]]"
     type: related_to
-  - target: "concepts/rlhf"
+  - target: "_concepts/rlhf"
     type: related_to
-  - target: "concepts/ai-agents"
+  - target: "_concepts/ai-agents"
     type: related_to
 sources:
   - 06_Reinforcement_Learning/RL_Foundations/RL_Foundations.md

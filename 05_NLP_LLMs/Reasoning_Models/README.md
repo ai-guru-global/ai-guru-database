@@ -14,11 +14,11 @@ created: 2026-06-12
 
 ## 页面列表
 
-- [[04_NLP_LLMs/Reasoning_Models/o1_Class_Reasoning_Models|o1-Class Reasoning Models]]
-- [[04_NLP_LLMs/Reasoning_Models/DeepSeek_R1_Technical_Analysis|DeepSeek R1 Technical Analysis]]
-- [[04_NLP_LLMs/Reasoning_Models/Process_Reward_Models|Process Reward Models]]
-- [[04_NLP_LLMs/Reasoning_Models/Neuro_Symbolic_and_Formal_Verification_2026|Neuro-symbolic and Formal Verification]]
+- [[05_NLP_LLMs/Reasoning_Models/o1_Class_Reasoning_Models|o1-Class Reasoning Models]]
+- [[05_NLP_LLMs/Reasoning_Models/DeepSeek_R1_Technical_Analysis|DeepSeek R1 Technical Analysis]]
+- [[05_NLP_LLMs/Reasoning_Models/Process_Reward_Models|Process Reward Models]]
+- [[05_NLP_LLMs/Reasoning_Models/Neuro_Symbolic_and_Formal_Verification_2026|Neuro-symbolic and Formal Verification]]
 
 ## 相关页面
 
-- [[04_NLP_LLMs/Reasoning_Models/README|推理模型目录]]
+- [[05_NLP_LLMs/Reasoning_Models/README|推理模型目录]]

@@ -416,6 +416,6 @@ Layer 4 (归档记忆): 100K+ tokens，只保留关键事件和实体
 
 - [[08_Model_Evaluation/Multimodal_Evaluation_Benchmarks]]
 - [[08_Model_Evaluation/Model_Evaluation]]
-- [[04_NLP_LLMs/Long_Context_Models_2026]]
-- [[concepts/transformer-architecture]]
-- [[04_NLP_LLMs/LLM_Architectures/LLM_Architectures]]
+- [[05_NLP_LLMs/Long_Context_Models_2026]]
+- [[_concepts/transformer-architecture]]
+- [[05_NLP_LLMs/LLM_Architectures/LLM_Architectures]]

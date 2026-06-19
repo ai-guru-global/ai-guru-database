@@ -157,11 +157,11 @@ Cryo-EM 是观测分子结构的核心工具，但原始数据噪声极大。
 
 ## Related
 
-- [[20_AI_Applications_Industry/AI_for_Science/AI_for_Science_Deep_Dive]] — AI for Science 概论
+- [[18_AI_Applications_Industry/AI_for_Science/AI_for_Science_Deep_Dive]] — AI for Science 概论
 - [[03_Deep_Learning/World_Models/JEPA_Architecture_2026]] — 联合嵌入预测架构
-- [[05_Computer_Vision/Generative_Models/Diffusion_Models_Deep_Dive]] — 扩散模型深度解析
-- [[concepts/protein-folding]] — 蛋白质折叠基础概念
-- [[20_AI_Applications_Industry/Healthcare/AI_Healthcare_2026]] — 数字医疗与个性化用药
+- [[04_Computer_Vision/Generative_Models/Diffusion_Models_Deep_Dive]] — 扩散模型深度解析
+- [[_concepts/protein-folding]] — 蛋白质折叠基础概念
+- [[18_AI_Applications_Industry/Healthcare/AI_Healthcare_2026]] — 数字医疗与个性化用药
 
 ---
 

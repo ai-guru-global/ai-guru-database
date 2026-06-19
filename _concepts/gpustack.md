@@ -9,19 +9,19 @@ tags:
 - gpustack
 - model-serving
 relationships:
-- target: 'concepts/model-serving'
+- target: '_concepts/model-serving'
   type: implements
-- target: 'concepts/model-deployment'
+- target: '_concepts/model-deployment'
   type: enables
-- target: 'concepts/continuous-batching'
+- target: '_concepts/continuous-batching'
   type: uses
-- target: 'concepts/distributed-training'
+- target: '_concepts/distributed-training'
   type: related_to
 sources:
-- 09_Deployment_Inference/GPUStack_Deep_Dive.md
-- 09_Deployment_Inference/GPUStack_for_dummy.md
-- 09_Deployment_Inference/vLLM_Deep_Dive.md
-- 09_Deployment_Inference/SGLang_Deep_Dive.md
+- 10_Deployment_Inference/GPUStack_Deep_Dive.md
+- 10_Deployment_Inference/GPUStack_for_dummy.md
+- 10_Deployment_Inference/vLLM_Deep_Dive.md
+- 10_Deployment_Inference/SGLang_Deep_Dive.md
 summary: GPUStack 是开源的 GPU 集群管理器与私有 MaaS 平台，支持 NVIDIA/AMD/昇腾/摩尔线程等异构 GPU，通过可插拔的 vLLM、SGLang、llama-box、MindIE 等后端运行 LLM、VLM、Embedding、Reranker、语音和图像模型，并提供 OpenAI 兼容 API。
 provenance:
   extracted: 0.85
@@ -76,9 +76,9 @@ GPUStack
 
 ## 延伸阅读
 
-- [[09_Deployment_Inference/GPUStack_Deep_Dive|GPUStack 深度解析]]
-- [[09_Deployment_Inference/GPUStack_for_dummy|GPUStack 入门指南]]
-- [[09_Deployment_Inference/vLLM_Deep_Dive|vLLM 深度解析]]
-- [[09_Deployment_Inference/SGLang_Deep_Dive|SGLang 深度解析]]
-- [[concepts/model-serving|模型服务]]
-- [[concepts/model-deployment|模型部署]]
+- [[10_Deployment_Inference/GPUStack_Deep_Dive|GPUStack 深度解析]]
+- [[10_Deployment_Inference/GPUStack_for_dummy|GPUStack 入门指南]]
+- [[10_Deployment_Inference/vLLM_Deep_Dive|vLLM 深度解析]]
+- [[10_Deployment_Inference/SGLang_Deep_Dive|SGLang 深度解析]]
+- [[_concepts/model-serving|模型服务]]
+- [[_concepts/model-deployment|模型部署]]

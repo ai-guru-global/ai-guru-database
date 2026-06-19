@@ -67,7 +67,7 @@ Monica 功能矩阵:
 ### 3.1 安装
 
 1. 访问 https://monica.im 注册账户
-2. 安装浏览器插件（Chrome / [[concepts/model-deployment|Edge]] / Firefox）
+2. 安装浏览器插件（Chrome / [[_concepts/model-deployment|Edge]] / Firefox）
 3. 登录并激活 MAX 订阅
 
 ### 3.2 深度研究
@@ -120,7 +120,7 @@ https://monica.im/help/zh-cn/FAQs/rules_for_using_advanced_queries
 
 ## Related
 
-- [[17_AI_Coding/01_Theory/AI_Coding_Theory]] — AI辅助编程理论基础 (共享: ai-coding, code-generation, cursor, github-copilot)
-- [[17_AI_Coding/02_Tools/CodeBuddy_Guide]] — CodeBuddy / WorkBuddy 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
-- [[17_AI_Coding/02_Tools/Comate_Guide]] — Comate 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
-- [[17_AI_Coding/02_Tools/Coze_Guide]] — Coze 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
+- [[16_AI_Coding/Theory/AI_Coding_Theory]] — AI辅助编程理论基础 (共享: ai-coding, code-generation, cursor, github-copilot)
+- [[16_AI_Coding/Tools/CodeBuddy_Guide]] — CodeBuddy / WorkBuddy 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
+- [[16_AI_Coding/Tools/Comate_Guide]] — Comate 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
+- [[16_AI_Coding/Tools/Coze_Guide]] — Coze 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)

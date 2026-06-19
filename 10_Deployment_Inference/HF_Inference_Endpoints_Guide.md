@@ -132,6 +132,6 @@ print(response.choices[0].message.content)
 ---
 
 ## 相关阅读
-- [[09_Deployment_Inference/TGI_Deep_Dive]]
+- [[10_Deployment_Inference/TGI_Deep_Dive]]
 - [[12_Architecture_Infrastructure/Capacity_Planning]]
 - [[14_AI_Gateway/AI_Gateway_2026]]

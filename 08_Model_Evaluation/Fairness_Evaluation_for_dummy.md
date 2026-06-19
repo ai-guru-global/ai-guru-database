@@ -483,7 +483,7 @@ AI 评估：信用一般，需要审核 ⚠️
 
 建议接下来：
 1. **了解模型评估基础**：阅读 [模型评估入门](./Model_Evaluation_for_dummy.md)
-2. **深入学习伦理安全**：阅读 [AI 安全与红队测试](../19_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming_for_dummy.md)
+2. **深入学习伦理安全**：阅读 [AI 安全与红队测试](../17_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming_for_dummy.md)
 3. **动手实践**：试试 Fairlearn 或 AI Fairness 360，做个简单的偏见检测
 
 > 记住：公平的 AI 不是自然产生的，而是需要我们主动去设计、测试和维护的。每个人都可以为 AI 的公平性做出贡献！
@@ -496,6 +496,6 @@ AI 评估：信用一般，需要审核 ⚠️
 
 - [[08_Model_Evaluation/Model_Evaluation.md|Model_Evaluation]]
 - [[08_Model_Evaluation/README.md|08_Model_Evaluation README]]
-- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow.md|Evaluation_Workflow]]
-- [[13_Agent_Production/16_Agent_Evaluation/Cloud_Agent_Evaluation/README.md|Cloud_Agent_Evaluation README]]
-- [[13_Agent_Production/16_Agent_Evaluation/Cloud_Agent_Evaluation_System_2026.md|Cloud_Agent_Evaluation_System_2026]]
+- [[15_Agent_Production/Agent_Evaluation/Assessment/Evaluation_Workflow.md|Evaluation_Workflow]]
+- [[15_Agent_Production/Agent_Evaluation/Cloud_Agent_Evaluation/README.md|Cloud_Agent_Evaluation README]]
+- [[15_Agent_Production/Agent_Evaluation/Cloud_Agent_Evaluation_System_2026.md|Cloud_Agent_Evaluation_System_2026]]

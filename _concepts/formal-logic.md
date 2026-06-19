@@ -37,6 +37,6 @@ Process Reward Model ≈ 逐步验证逻辑正确性
 
 ## 相关阅读
 
-- [[04_NLP_LLMs/Reasoning_Models/o1_Class_Reasoning_Models]] — o1 类推理模型
-- [[04_NLP_LLMs/Reasoning_Models/Process_Reward_Models]] — 过程奖励模型
+- [[05_NLP_LLMs/Reasoning_Models/o1_Class_Reasoning_Models]] — o1 类推理模型
+- [[05_NLP_LLMs/Reasoning_Models/Process_Reward_Models]] — 过程奖励模型
 - [[01_Fundamentals/Data_Structures_Algorithms/Data_Structures_Algorithms]] — 数据结构与算法

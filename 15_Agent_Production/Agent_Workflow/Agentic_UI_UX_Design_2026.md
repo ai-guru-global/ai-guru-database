@@ -120,11 +120,11 @@ graph TD
 
 ## Related
 
-- [[13_Agent_Production/README]] — 智能体生产全景图
-- [[17_AI_Coding/02_Tools/Cursor_Guide]] — 典型的 Canvas 模式应用
-- [[13_Agent_Production/Agent_Workflow/Agentic_Workflow_Design_Patterns_2026]] — 后端工作流与前端界面的衔接
-- [[04_NLP_LLMs/Reasoning_Models/o1_Class_Reasoning_Models]] — 隐式思维链的 UI 处理
-- [[concepts/human-ai-interaction]] — 人机交互基础理论
+- [[15_Agent_Production/README]] — 智能体生产全景图
+- [[16_AI_Coding/Tools/Cursor_Guide]] — 典型的 Canvas 模式应用
+- [[15_Agent_Production/Agent_Workflow/Agentic_Workflow_Design_Patterns_2026]] — 后端工作流与前端界面的衔接
+- [[05_NLP_LLMs/Reasoning_Models/o1_Class_Reasoning_Models]] — 隐式思维链的 UI 处理
+- [[_concepts/human-ai-interaction]] — 人机交互基础理论
 
 ---
 

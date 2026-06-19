@@ -3,15 +3,15 @@ title: "Kueue"
 category: concept
 tags: ["kueue", "kubernetes", "scheduler", "queue", "job-management", "quota", "cncf"]
 relationships:
-  - target: "concepts/kubernetes"
+  - target: "_concepts/kubernetes"
     type: extends
-  - target: "concepts/job-scheduling"
+  - target: "_concepts/job-scheduling"
     type: enables
-  - target: "concepts/kubeflow"
+  - target: "_concepts/kubeflow"
     type: related_to
-  - target: "concepts/volcano"
+  - target: "_concepts/volcano"
     type: related_to
-  - target: "concepts/ray"
+  - target: "_concepts/ray"
     type: related_to
 sources:
   - 12_Architecture_Infrastructure/CNCF_Cloud_Native_AI/Kueue_Deep_Dive.md
@@ -100,7 +100,7 @@ updated: 2026-06-16
 ## Related
 
 - [[12_Architecture_Infrastructure/CNCF_Cloud_Native_AI/Kueue_Deep_Dive]] — Kueue 深度解析
-- [[concepts/kubernetes]] — Kubernetes
-- [[concepts/volcano]] — Volcano
-- [[concepts/kubeflow]] — Kubeflow
-- [[concepts/ray]] — Ray
+- [[_concepts/kubernetes]] — Kubernetes
+- [[_concepts/volcano]] — Volcano
+- [[_concepts/kubeflow]] — Kubeflow
+- [[_concepts/ray]] — Ray

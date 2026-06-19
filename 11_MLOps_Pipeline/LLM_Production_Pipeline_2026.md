@@ -6,7 +6,7 @@ summary: "> **一句话理解**: LLM 生产流水线不是传统 ML Pipeline 的
 created: 2026-06-15
 updated: 2026-06-15
 tier: core
-parent: "[[10_MLOps_Pipeline/LLMOps_2026]]"
+parent: "[[11_MLOps_Pipeline/LLMOps_2026]]"
 ---
 
 # LLM 生产流水线深度指南
@@ -1157,8 +1157,8 @@ stages:
 
 | 文档 | 说明 |
 |------|------|
-| [[16_AI_Ops/LangSmith_Deep_Dive]] | LangSmith 追踪与评估平台 |
-| [[09_Deployment_Inference/vLLM_Deep_Dive]] | vLLM 高性能推理引擎 |
+| [[13_AI_Ops/LangSmith_Deep_Dive]] | LangSmith 追踪与评估平台 |
+| [[10_Deployment_Inference/vLLM_Deep_Dive]] | vLLM 高性能推理引擎 |
 | [[Experiment_Tracking_Deep_Dive]] | 实验跟踪最佳实践 |
 | [[Model_Registry_and_Cards_Deep_Dive]] | 模型注册与治理 |
 | [[Data_Versioning_DVC_LakeFS]] | 数据版本化方案 |

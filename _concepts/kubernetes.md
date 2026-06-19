@@ -3,19 +3,19 @@ title: "Kubernetes"
 category: concept
 tags: ["kubernetes", "k8s", "orchestration", "container", "cncf", "scheduling", "cloud-native"]
 relationships:
-  - target: "concepts/containerd"
+  - target: "_concepts/containerd"
     type: uses
-  - target: "concepts/helm"
+  - target: "_concepts/helm"
     type: related_to
-  - target: "concepts/cni"
+  - target: "_concepts/cni"
     type: uses
-  - target: "concepts/csi"
+  - target: "_concepts/csi"
     type: uses
-  - target: "concepts/hami"
+  - target: "_concepts/hami"
     type: runs_on
-  - target: "concepts/kubeflow"
+  - target: "_concepts/kubeflow"
     type: runs_on
-  - target: "concepts/kserve"
+  - target: "_concepts/kserve"
     type: runs_on
 sources:
   - 12_Architecture_Infrastructure/AI_Infrastructure_2026.md
@@ -102,10 +102,10 @@ Worker Node
 
 ## Related
 
-- [[concepts/containerd]] — containerd
-- [[concepts/helm]] — Helm
-- [[concepts/etcd]] — etcd
-- [[concepts/hami]] — HAMi GPU 虚拟化
-- [[concepts/kubeflow]] — Kubeflow
-- [[concepts/kserve]] — KServe
+- [[_concepts/containerd]] — containerd
+- [[_concepts/helm]] — Helm
+- [[_concepts/etcd]] — etcd
+- [[_concepts/hami]] — HAMi GPU 虚拟化
+- [[_concepts/kubeflow]] — Kubeflow
+- [[_concepts/kserve]] — KServe
 - [[12_Architecture_Infrastructure/AI_Infrastructure_2026]] — AI 基础设施 2026

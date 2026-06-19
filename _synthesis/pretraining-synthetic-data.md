@@ -48,8 +48,8 @@ summary: ""
 
 - [[07_Model_Training/Data_Curation_and_Mixture_2026|数据策展与混合 2026]] — 数据混合比例的最新研究
 - [[07_Model_Training/Scaling_Laws_and_Training_Dynamics|Scaling Laws 与训练动态]] — 数据规模的数学规律
-- [[04_NLP_LLMs/LLM_Data_Engineering/LLM_Data_Engineering_Deep_Dive|LLM 数据工程深度解读]] — 数据工程全流程
-- [[concepts/llm-data-engineering|LLM 数据工程]] — 数据策展的核心理论
+- [[05_NLP_LLMs/LLM_Data_Engineering/LLM_Data_Engineering_Deep_Dive|LLM 数据工程深度解读]] — 数据工程全流程
+- [[_concepts/llm-data-engineering|LLM 数据工程]] — 数据策展的核心理论
 
 ## 前沿方向
 
@@ -59,5 +59,5 @@ summary: ""
 
 ## 延伸阅读
 
-- [[synthesis/python-data-science-pipeline|Python × 数据科学合成]]
-- [[concepts/fine-tuning-techniques|微调技术概念]]
+- [[_synthesis/python-data-science-pipeline|Python × 数据科学合成]]
+- [[_concepts/fine-tuning-techniques|微调技术概念]]

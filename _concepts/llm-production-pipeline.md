@@ -3,17 +3,17 @@ title: "LLM 生产流水线"
 category: concepts
 tags: ["llm-production", "mlops", "ci-cd", "deployment", "evaluation", "monitoring"]
 relationships:
-  - target: "concepts/mlops"
+  - target: "_concepts/mlops"
     type: belongs_to
-  - target: "concepts/ci-integrated-evaluation"
+  - target: "_concepts/ci-integrated-evaluation"
     type: includes
-  - target: "concepts/model-deployment"
+  - target: "_concepts/model-deployment"
     type: includes
-  - target: "concepts/ab-testing-framework"
+  - target: "_concepts/ab-testing-framework"
     type: includes
 sources:
-  - 10_MLOps_Pipeline/LLM_Production_Pipeline_2026.md
-  - 10_MLOps_Pipeline/README.md
+  - 11_MLOps_Pipeline/LLM_Production_Pipeline_2026.md
+  - 11_MLOps_Pipeline/README.md
 summary: "LLM 生产流水线是把大模型从实验环境交付到线上服务的完整工程链路，包括数据准备、训练/微调、评估、部署、监控、反馈闭环，确保模型可持续迭代且风险可控。"
 provenance:
   extracted: 0.75
@@ -76,8 +76,8 @@ LLM 生产流水线就像一条造车的总装线：从原材料到整车下线�
 
 ## Related
 
-- [[concepts/mlops]] — MLOps
-- [[concepts/ci-integrated-evaluation]] — CI 集成评估
-- [[concepts/model-deployment]] — 模型部署
-- [[concepts/ab-testing-framework]] — A/B 测试框架
-- [[10_MLOps_Pipeline/LLM_Production_Pipeline_2026]] — LLM 生产流水线 2026
+- [[_concepts/mlops]] — MLOps
+- [[_concepts/ci-integrated-evaluation]] — CI 集成评估
+- [[_concepts/model-deployment]] — 模型部署
+- [[_concepts/ab-testing-framework]] — A/B 测试框架
+- [[11_MLOps_Pipeline/LLM_Production_Pipeline_2026]] — LLM 生产流水线 2026

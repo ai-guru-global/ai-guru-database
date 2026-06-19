@@ -3,11 +3,11 @@ title: "知识蒸馏 (Knowledge Distillation)"
 category: concept
 tags: ["distillation", "model-compression", "teacher-student", "logit-distillation", "deepseek"]
 relationships:
-  - target: "concepts/model-compression"
+  - target: "_concepts/model-compression"
     type: complements
-  - target: "concepts/llm-architectures"
+  - target: "_concepts/llm-architectures"
     type: related_to
-  - target: "concepts/mixture-of-experts"
+  - target: "_concepts/mixture-of-experts"
     type: related_to
 sources:
   - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
@@ -138,9 +138,9 @@ q_i = \frac{\exp(z_i / T)}{\sum_j \exp(z_j / T)}
 
 ## Related
 
-- [[concepts/model-compression]] — 模型压缩（蒸馏是压缩手段之一）
-- [[concepts/llm-architectures]] — LLM 架构（Teacher/Student 选型）
-- [[concepts/mixture-of-experts]] — MoE（DeepSeek-R1 的 Teacher 架构）
-- [[concepts/lora-peft]] — LoRA/PEFT（蒸馏后的微调方案）
-- [[concepts/reasoning-models]] — 推理模型（DeepSeek-R1 蒸馏链）
+- [[_concepts/model-compression]] — 模型压缩（蒸馏是压缩手段之一）
+- [[_concepts/llm-architectures]] — LLM 架构（Teacher/Student 选型）
+- [[_concepts/mixture-of-experts]] — MoE（DeepSeek-R1 的 Teacher 架构）
+- [[_concepts/lora-peft]] — LoRA/PEFT（蒸馏后的微调方案）
+- [[_concepts/reasoning-models]] — 推理模型（DeepSeek-R1 蒸馏链）
 - [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack

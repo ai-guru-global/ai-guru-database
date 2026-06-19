@@ -247,7 +247,7 @@ updated: 2026-05-31
 
 - [原版技术文档](./README.md) - 包含数学公式和代码
 - [03 深度学习](../../03_Deep_Learning/README_for_dummy.md) - 理解神经网络基础
-- [09 部署与推理](../../09_Deployment_Inference/README.md) - 学习如何部署 AI
+- [09 部署与推理](../../10_Deployment_Inference/README.md) - 学习如何部署 AI
 
 ### 🎓 实践建议
 
@@ -269,7 +269,7 @@ updated: 2026-05-31
 ## 学习路径导航
 
 **上一章**: [← 03 深度学习 (小白版)](../../03_Deep_Learning/README_for_dummy.md)  
-**下一章**: [→ 05 计算机视觉 (小白版)](../../05_Computer_Vision/README_for_dummy.md)
+**下一章**: [→ 05 计算机视觉 (小白版)](../../04_Computer_Vision/README_for_dummy.md)
 
 **本章内容**:
 1. [序列模型 (小白版)](./Sequence_Models/Sequence_Models_for_dummy.md)
@@ -288,7 +288,7 @@ updated: 2026-05-31
 
 ## Related
 
-- [[04_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/README]] — PEFT 2026 (参数高效微调) (共享: bert, gpt, llm, nlp, transformer)
-- [[04_NLP_LLMs/Fine_tuning_Techniques/README]] — 微调技术 (Fine-tuning Techniques) (共享: bert, gpt, llm, nlp, transformer)
-- [[04_NLP_LLMs/LLM_Architectures/LLM-Basics-in-nutshell]] — 大语言模型基础速成指南 (共享: bert, gpt, llm, nlp, transformer)
-- [[04_NLP_LLMs/Multimodal_Models/Multimodal_Architectures_2026]] — 多模态模型架构 2026：从 GPT-4V 到原生多模态 AGI (共享: bert, gpt, llm, nlp, transformer)
+- [[05_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/README]] — PEFT 2026 (参数高效微调) (共享: bert, gpt, llm, nlp, transformer)
+- [[05_NLP_LLMs/Fine_tuning_Techniques/README]] — 微调技术 (Fine-tuning Techniques) (共享: bert, gpt, llm, nlp, transformer)
+- [[05_NLP_LLMs/LLM_Architectures/LLM-Basics-in-nutshell]] — 大语言模型基础速成指南 (共享: bert, gpt, llm, nlp, transformer)
+- [[05_NLP_LLMs/Multimodal_Models/Multimodal_Architectures_2026]] — 多模态模型架构 2026：从 GPT-4V 到原生多模态 AGI (共享: bert, gpt, llm, nlp, transformer)

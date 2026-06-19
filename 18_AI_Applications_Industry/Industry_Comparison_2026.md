@@ -206,6 +206,6 @@ quadrantChart
 
 ## Related
 
-- [[20_AI_Applications_Industry/Energy_Climate/AI_Energy_Climate_2026]] — AI 能源与气候行业应用 (2025-2026) (共享: ai-applications, finance, healthcare, industry)
-- [[20_AI_Applications_Industry/README]] — 13 - AI应用与行业融合 (共享: ai-applications, finance, healthcare, industry)
-- [[20_AI_Applications_Industry/README_for_dummy]] — AI 行业应用 — 小白版 🏭 (共享: ai-applications, finance, healthcare, industry)
+- [[18_AI_Applications_Industry/Energy_Climate/AI_Energy_Climate_2026]] — AI 能源与气候行业应用 (2025-2026) (共享: ai-applications, finance, healthcare, industry)
+- [[18_AI_Applications_Industry/README]] — 13 - AI应用与行业融合 (共享: ai-applications, finance, healthcare, industry)
+- [[18_AI_Applications_Industry/README_for_dummy]] — AI 行业应用 — 小白版 🏭 (共享: ai-applications, finance, healthcare, industry)

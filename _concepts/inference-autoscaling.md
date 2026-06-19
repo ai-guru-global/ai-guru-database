@@ -3,14 +3,14 @@ title: Inference Autoscaling and Load Balancing
 category: concepts
 tags: [inference, autoscaling, load-balancing, kubernetes, gpu, performance]
 relationships:
-  - target: "concepts/model-serving"
+  - target: "_concepts/model-serving"
     type: builds_on
-  - target: "concepts/model-gateway"
+  - target: "_concepts/model-gateway"
     type: related_to
-  - target: "09_Deployment_Inference/Inference_Performance/Inference_Autoscaling_and_Load_Balancing"
+  - target: "10_Deployment_Inference/Inference_Performance/Inference_Autoscaling_and_Load_Balancing"
     type: deepened_by
 sources:
-  - 09_Deployment_Inference/Inference_Performance/Inference_Autoscaling_and_Load_Balancing.md
+  - 10_Deployment_Inference/Inference_Performance/Inference_Autoscaling_and_Load_Balancing.md
 summary: 推理弹性扩缩容根据 QPS、延迟、KV Cache 使用率等指标自动调整实例数；负载均衡需考虑 GPU 显存、队列长度和请求特征，不能只看轮询。
 lifecycle: draft
 tier: core
@@ -33,6 +33,6 @@ updated: 2026-06-15
 
 ## Related
 
-- [[concepts/model-serving]] — 模型服务
-- [[concepts/model-gateway]] — AI Gateway
-- [[09_Deployment_Inference/Inference_Performance/Inference_Autoscaling_and_Load_Balancing|弹性扩缩容与负载均衡]]
+- [[_concepts/model-serving]] — 模型服务
+- [[_concepts/model-gateway]] — AI Gateway
+- [[10_Deployment_Inference/Inference_Performance/Inference_Autoscaling_and_Load_Balancing|弹性扩缩容与负载均衡]]

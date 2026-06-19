@@ -656,10 +656,10 @@ AI 伦理与安全 10 条底线:
 - [Federated Learning](./Federated_Learning/Federated_Learning_Deep_Dive.md) — 联邦学习深度解读
 
 ### 跨章节关联
-- [LLM 架构](../04_NLP_LLMs/LLM_Architectures/LLM-Basics-in-nutshell.md) — 理解被对齐的对象
-- [微调技术](../04_NLP_LLMs/Fine_tuning_Techniques/) — SFT 是对齐的第一步
+- [LLM 架构](../05_NLP_LLMs/LLM_Architectures/LLM-Basics-in-nutshell.md) — 理解被对齐的对象
+- [微调技术](../05_NLP_LLMs/Fine_tuning_Techniques/) — SFT 是对齐的第一步
 - [深度强化学习](../06_Reinforcement_Learning/Deep_RL/Deep_RL.md) — PPO 是 RLHF 的核心算法
-- [Prompt Engineering](../04_NLP_LLMs/Prompt_Engineering/Prompt-Engineering-in-nutshell.md) — 理解 Prompt Injection 攻击面
+- [Prompt Engineering](../05_NLP_LLMs/Prompt_Engineering/Prompt-Engineering-in-nutshell.md) — 理解 Prompt Injection 攻击面
 - [AI Agent](../06_Reinforcement_Learning/AI_Agents/Agent-in-nutshell.md) — Agentic AI 安全是新前线
 - [Model Evaluation](../08_Model_Evaluation/Evaluation-in-nutshell.md) — 评测方法论基础
 

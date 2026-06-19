@@ -172,10 +172,10 @@ model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy']
   - 分布式训练、混合精度训练、大规模调优等工程细节（参见本库 [[07_Model_Training/Distributed_Training_2026]]、[[07_Model_Training/Mixed_Precision_Training]]）。
 
 - **延伸**：
-  - 若想系统了解图像分类与检测理论，可阅读本库 [[05_Computer_Vision/Image_Classification_Detection/Image_Classification_Detection]]。
+  - 若想系统了解图像分类与检测理论，可阅读本库 [[04_Computer_Vision/Image_Classification_Detection/Image_Classification_Detection]]。
   - 若想深入微调策略（全量微调、参数高效微调 PEFT、LoRA 等），可阅读 [[07_Model_Training/Fine_tuning_Strategies]]。
   - 若想理解优化器进阶与训练动态，可参考 [[07_Model_Training/Optimizer_Advanced_2026]]、[[07_Model_Training/Training_Optimization_2026]]。
-  - 对抗样本相关内容也是 AI 安全与可解释性的入口，可延伸阅读 [[19_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming]] 或 [[19_Ethics_Safety/AI_Security_2026/AI_Security_2026]]。
+  - 对抗样本相关内容也是 AI 安全与可解释性的入口，可延伸阅读 [[17_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming]] 或 [[17_Ethics_Safety/AI_Security_2026/AI_Security_2026]]。
 
 ---
 
@@ -183,7 +183,7 @@ model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy']
 
 - 课程索引：[[90_Learn/courses/microsoft/microsoft_ai_for_beginners]]
 - 本库相关页面：
-  - [[05_Computer_Vision/Image_Classification_Detection/Image_Classification_Detection]]
+  - [[04_Computer_Vision/Image_Classification_Detection/Image_Classification_Detection]]
   - [[07_Model_Training/Fine_tuning_Strategies]]
 - 官方课前测验：[Pre-lecture quiz](https://ff-quizzes.netlify.app/en/ai/quiz/15)
 - 官方课后测验：[Post-lecture quiz](https://ff-quizzes.netlify.app/en/ai/quiz/16)

@@ -673,9 +673,9 @@ B:新模型
 ## 想深入了解?
 
 ### 📄 进阶阅读
-- [模型部署 - 小白版](../09_Deployment_Inference/Deployment_Inference_for_dummy.md)
-- [MLOps 流水线 - 小白版](../10_MLOps_Pipeline/MLOps_Pipeline_for_dummy.md)
-- [RAG 系统 - 小白版](../11_RAG_Systems/RAG_Systems_for_dummy.md)
+- [模型部署 - 小白版](../10_Deployment_Inference/Deployment_Inference_for_dummy.md)
+- [MLOps 流水线 - 小白版](../11_MLOps_Pipeline/MLOps_Pipeline_for_dummy.md)
+- [RAG 系统 - 小白版](../14_RAG_Systems/RAG_Systems_for_dummy.md)
 
 ### 🛠️ 动手实践
 - [Scikit-learn 评估指标](https://scikit-learn.org/stable/modules/model_evaluation.html)
@@ -684,7 +684,7 @@ B:新模型
 
 ### 🎓 相关知识
 - [监督学习 - 小白版](../../02_Machine_Learning/Supervised_Learning/Supervised_Learning_for_dummy.md)
-- [大语言模型 - 小白版](../../04_NLP_LLMs/LLM_Architectures/LLM_Architectures_for_dummy.md)
+- [大语言模型 - 小白版](../../05_NLP_LLMs/LLM_Architectures/LLM_Architectures_for_dummy.md)
 
 ---
 
@@ -694,6 +694,6 @@ B:新模型
 
 - [[08_Model_Evaluation/Model_Evaluation.md|Model_Evaluation]]
 - [[08_Model_Evaluation/README.md|08_Model_Evaluation README]]
-- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow.md|Evaluation_Workflow]]
-- [[13_Agent_Production/16_Agent_Evaluation/Cloud_Agent_Evaluation/README.md|Cloud_Agent_Evaluation README]]
-- [[13_Agent_Production/16_Agent_Evaluation/Cloud_Agent_Evaluation_System_2026.md|Cloud_Agent_Evaluation_System_2026]]
+- [[15_Agent_Production/Agent_Evaluation/Assessment/Evaluation_Workflow.md|Evaluation_Workflow]]
+- [[15_Agent_Production/Agent_Evaluation/Cloud_Agent_Evaluation/README.md|Cloud_Agent_Evaluation README]]
+- [[15_Agent_Production/Agent_Evaluation/Cloud_Agent_Evaluation_System_2026.md|Cloud_Agent_Evaluation_System_2026]]

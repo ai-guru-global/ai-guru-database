@@ -3,19 +3,19 @@ title: 预训练 vs 微调 vs RAG — 三种 LLM 定制方案选型
 category: concept
 tags: ["pretraining", "fine-tuning", "rag", "prompt-engineering", "llm-customization", "decision-guide"]
 relationships:
-  - target: "concepts/model-training"
+  - target: "_concepts/model-training"
     type: builds_on
-  - target: "concepts/fine-tuning-techniques"
+  - target: "_concepts/fine-tuning-techniques"
     type: compares_with
-  - target: "concepts/rag-systems"
+  - target: "_concepts/rag-systems"
     type: compares_with
-  - target: "concepts/prompt-engineering"
+  - target: "_concepts/prompt-engineering"
     type: compares_with
-  - target: "concepts/lora-peft"
+  - target: "_concepts/lora-peft"
     type: includes
 sources:
-  - 04_NLP_LLMs/LLM_Fundamentals.md
-  - 11_RAG_Systems/README.md
+  - 05_NLP_LLMs/LLM_Fundamentals.md
+  - 14_RAG_Systems/README.md
   - 07_Model_Training/Fine_tuning_Strategies.md
 summary: "在已有 LLM 基础上做定制,有四条路:Prompt Engineering → RAG → 微调 → 预训练。选型原则:优先用最便宜的方案解决 80% 的问题,只在该方案搞不定时才升级。本文档给出明确的决策树、对比表、典型场景与选型 checklist。"
 provenance:
@@ -176,11 +176,11 @@ updated: 2026-06-16
 
 ## Related
 
-- [[concepts/model-training]] — 模型训练基础
-- [[concepts/fine-tuning-techniques]] — 微调技术族
-- [[concepts/lora-peft]] — LoRA 省显存微调
-- [[concepts/rag-systems]] — RAG 检索增强生成
-- [[concepts/prompt-engineering]] — Prompt Engineering
-- [[concepts/long-context-vs-rag]] — 长上下文 vs RAG 选型
-- [[04_NLP_LLMs/LLM_Fundamentals]] — LLM 基础
-- [[11_RAG_Systems/README]] — RAG 系统
+- [[_concepts/model-training]] — 模型训练基础
+- [[_concepts/fine-tuning-techniques]] — 微调技术族
+- [[_concepts/lora-peft]] — LoRA 省显存微调
+- [[_concepts/rag-systems]] — RAG 检索增强生成
+- [[_concepts/prompt-engineering]] — Prompt Engineering
+- [[_concepts/long-context-vs-rag]] — 长上下文 vs RAG 选型
+- [[05_NLP_LLMs/LLM_Fundamentals]] — LLM 基础
+- [[14_RAG_Systems/README]] — RAG 系统

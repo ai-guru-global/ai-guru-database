@@ -80,7 +80,7 @@ flowchart TB
     B --> C{Skill 类型判定}
     C -->|纯文本| D1[编写 SKILL.md]
     C -->|带脚本| D2[SKILL.md + scripts/]
-    C -->|完整包| D3[SKILL.md + scripts/ + references/ + evals/]
+    C -->|完整包| D3[SKILL.md + scripts/ + _references/ + evals/]
     D1 --> E[本地测试]
     D2 --> E
     D3 --> E
@@ -99,7 +99,7 @@ flowchart TB
 |--------|------|------|
 | **name 命名** | 小写+连字符, 1-64 字符 | `csv-analyzer` ✅ `CSV_Analyzer` ❌ |
 | **description** | 祈使句式, ≤1024 字符, 含触发关键词 | `"Analyze CSV files...Use when..."` |
-| **SKILL.md body** | < 500 行, < 5000 tokens | 详细内容移至 references/ |
+| **SKILL.md body** | < 500 行, < 5000 tokens | 详细内容移至 _references/ |
 | **脚本声明依赖** | PEP 723 / Deno imports / Bun imports | `# /// script` `# dependencies = [...]` |
 | **脚本输入** | CLI 参数或环境变量, 禁止交互式提示 | `--format json --output report.csv` |
 | **脚本输出** | 结构化(JSON/CSV)到 stdout, 诊断到 stderr | `print(json.dumps(result))` |
@@ -635,7 +635,7 @@ flowchart TB
 
 ```markdown
 架构决策记录 (ADR):
-- Skill 类型: L4 完整包（SKILL.md + scripts/ + references/）
+- Skill 类型: L4 完整包（SKILL.md + scripts/ + _references/）
 - 安全: 需要 kubectl 读权限，禁止写操作
 - 子能力: Pod 状态检查 → 日志搜索 → 事件关联 → 根因推断
 - allowed-tools: Bash(kubectl:get) Bash(kubectl:describe) Bash(kubectl:logs)
@@ -649,7 +649,7 @@ flowchart TB
 ├── scripts/
 │   ├── check_pod.sh  # kubectl get/describe 封装
 │   └── analyze_logs.py  # 日志模式匹配
-├── references/
+├── _references/
 │   └── common_errors.md  # K8s 常见错误码速查
 └── evals/
     ├── evals.json    # 8 个测试用例
@@ -734,7 +734,7 @@ flowchart TB
 
 ## Related
 
-- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
-- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
-- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
-- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)
+- [[15_Agent_Production/Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
+- [[15_Agent_Production/Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[15_Agent_Production/Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[15_Agent_Production/Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)

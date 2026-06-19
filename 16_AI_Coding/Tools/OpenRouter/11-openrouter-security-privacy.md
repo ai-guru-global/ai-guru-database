@@ -310,7 +310,7 @@ DELETE /api/v1/keys/{key_id}
 | 文档 | 关系 |
 |------|------|
 | [04 - 智能路由](./04-openrouter-provider-routing.md) | ZDR 与 data_collection 路由参数 |
-| [08 - Prompt Caching](./08-openrouter-prompt-caching-[[concepts/model-training|optimization]].md) | BYOK 与成本控制 |
+| [08 - Prompt Caching](./08-openrouter-prompt-caching-[[_concepts/model-training|optimization]].md) | BYOK 与成本控制 |
 | [12 - 企业级实践](./12-openrouter-enterprise-advanced.md) | Provisioning Keys 与 Key 管理 |
 | [02 - 快速接入](./02-openrouter-quickstart-setup.md) | API Key 创建与配置 |
 
@@ -322,22 +322,22 @@ DELETE /api/v1/keys/{key_id}
 
 ## Obsidian 相关文档
 
-- [[17_AI_Coding/MOC_OpenRouter_OpenCode.md|MOC]]
-- [[17_AI_Coding/OpenRouter_OpenCode_Guide|AI 编程与 网关专题 — OpenRouter & OpenCode 全量指南]]
-- [[17_AI_Coding/02_Tools/OpenRouter/01-openrouter-overview-architecture|OpenRouter 概述与核心架构]]
-- [[17_AI_Coding/02_Tools/OpenRouter/02-openrouter-quickstart-setup|快速接入与环境配置]]
-- [[17_AI_Coding/02_Tools/OpenRouter/03-openrouter-models-providers|模型与 Provider 生态]]
-- [[17_AI_Coding/02_Tools/OpenRouter/04-openrouter-provider-routing|智能路由与 Provider 选择]]
-- [[17_AI_Coding/02_Tools/OpenRouter/05-openrouter-api-reference|API 参考与请求/响应规范]]
-- [[17_AI_Coding/02_Tools/OpenRouter/06-openrouter-structured-outputs-tools|Structured Outputs 与 Tool Calling]]
-- [[17_AI_Coding/02_Tools/OpenRouter/07-openrouter-plugins-web-search|插件体系与 Web Search]]
-- [[17_AI_Coding/02_Tools/OpenRouter/08-openrouter-prompt-caching-optimization|Prompt Caching 与成本优化]]
-- [[17_AI_Coding/02_Tools/OpenRouter/09-openrouter-frameworks-integrations|框架集成与生态系统]]
-- [[17_AI_Coding/02_Tools/OpenRouter/10-openrouter-streaming-multimedia|流式传输与多模态输入]]
+- [[16_AI_Coding/MOC_OpenRouter_OpenCode.md|MOC]]
+- [[16_AI_Coding/OpenRouter_OpenCode_Guide|AI 编程与 网关专题 — OpenRouter & OpenCode 全量指南]]
+- [[16_AI_Coding/Tools/OpenRouter/01-openrouter-overview-architecture|OpenRouter 概述与核心架构]]
+- [[16_AI_Coding/Tools/OpenRouter/02-openrouter-quickstart-setup|快速接入与环境配置]]
+- [[16_AI_Coding/Tools/OpenRouter/03-openrouter-models-providers|模型与 Provider 生态]]
+- [[16_AI_Coding/Tools/OpenRouter/04-openrouter-provider-routing|智能路由与 Provider 选择]]
+- [[16_AI_Coding/Tools/OpenRouter/05-openrouter-api-reference|API 参考与请求/响应规范]]
+- [[16_AI_Coding/Tools/OpenRouter/06-openrouter-structured-outputs-tools|Structured Outputs 与 Tool Calling]]
+- [[16_AI_Coding/Tools/OpenRouter/07-openrouter-plugins-web-search|插件体系与 Web Search]]
+- [[16_AI_Coding/Tools/OpenRouter/08-openrouter-prompt-caching-optimization|Prompt Caching 与成本优化]]
+- [[16_AI_Coding/Tools/OpenRouter/09-openrouter-frameworks-integrations|框架集成与生态系统]]
+- [[16_AI_Coding/Tools/OpenRouter/10-openrouter-streaming-multimedia|流式传输与多模态输入]]
 
 ## Related
 
-- [[17_AI_Coding/02_Tools/OpenCode/21-opencode-overview-architecture]] — 21-opencode-overview-architecture (共享: ai, ai-coding)
-- [[17_AI_Coding/02_Tools/OpenCode/22-opencode-installation-quickstart]] — 22-opencode-installation-quickstart (共享: ai, ai-coding)
-- [[17_AI_Coding/02_Tools/OpenCode/23-opencode-providers-models]] — 23-opencode-providers-models (共享: ai, ai-coding)
-- [[17_AI_Coding/02_Tools/OpenCode/24-opencode-agents-system]] — 24-opencode-agents-system (共享: ai, ai-coding)
+- [[16_AI_Coding/Tools/OpenCode/21-opencode-overview-architecture]] — 21-opencode-overview-architecture (共享: ai, ai-coding)
+- [[16_AI_Coding/Tools/OpenCode/22-opencode-installation-quickstart]] — 22-opencode-installation-quickstart (共享: ai, ai-coding)
+- [[16_AI_Coding/Tools/OpenCode/23-opencode-providers-models]] — 23-opencode-providers-models (共享: ai, ai-coding)
+- [[16_AI_Coding/Tools/OpenCode/24-opencode-agents-system]] — 24-opencode-agents-system (共享: ai, ai-coding)

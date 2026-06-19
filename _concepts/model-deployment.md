@@ -10,15 +10,15 @@ tags:
 - edge
 - - - mlops
 relationships:
-- target: 'concepts/model-compression'
+- target: '_concepts/model-compression'
   type: enables
-- target: 'concepts/model-serving'
+- target: '_concepts/model-serving'
   type: uses
-- target: 'concepts/model-evaluation'
+- target: '_concepts/model-evaluation'
   type: follows
 sources:
-- 09_Deployment_Inference/Deployment_Inference.md
-- 09_Deployment_Inference/Deployment_Inference_2026.md
+- 10_Deployment_Inference/Deployment_Inference.md
+- 10_Deployment_Inference/Deployment_Inference_2026.md
 summary: 模型部署将训练好的AI模型转化为高效稳定的生产服务，涵盖推理性能优化（KV Cache/PagedAttention/推测解码）、部署架构（K8s编排/Serverless/边缘部署）和成本优化策略。2026年推理引擎三强鼎立：vLLM（高吞吐）、TensorRT-LLM（低延迟）、SGLang（结构化生成）。
 provenance:
   extracted: 0.85
@@ -89,5 +89,5 @@ updated: 2026-05-31 00:00:00+00:00
 
 ## Related
 
-- [[synthesis/serving-deployment]] — 模型服务 × 模型部署 (共享: deployment, edge)
-- [[concepts/multi-head-latent-attention]] — Multi-head Latent Attention (MLA): KV Cache 压缩 7-28× 的注意力架构创新
+- [[_synthesis/serving-deployment]] — 模型服务 × 模型部署 (共享: deployment, edge)
+- [[_concepts/multi-head-latent-attention]] — Multi-head Latent Attention (MLA): KV Cache 压缩 7-28× 的注意力架构创新

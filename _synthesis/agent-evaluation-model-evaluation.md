@@ -3,7 +3,7 @@ title: "Agent 评估 × 模型评估 — 从指标到行为的评估范式迁移
 category: synthesis
 tags: [agent-evaluation, model-evaluation, benchmark, evaluation, llm-as-judge, agentic-ai]
 sources:
-  - "[[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow]]"
+  - "[[15_Agent_Production/Agent_Evaluation/Assessment/Evaluation_Workflow]]"
   - "[[08_Model_Evaluation/Model_Evaluation]]"
   - "[[08_Model_Evaluation/LLM_as_Judge_Deep_Dive]]"
   - "[[08_Model_Evaluation/Agentic_Benchmark_Guide]]"
@@ -63,9 +63,9 @@ Agent 评估不是模型评估的简单扩展，而是一次**范式迁移**：
 
 ## Related
 
-- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow]] — Agent 评估工作流
+- [[15_Agent_Production/Agent_Evaluation/Assessment/Evaluation_Workflow]] — Agent 评估工作流
 - [[08_Model_Evaluation/Model_Evaluation]] — 模型评估基础
 - [[08_Model_Evaluation/LLM_as_Judge_Deep_Dive]] — LLM-as-Judge 深度解读
 - [[08_Model_Evaluation/Agentic_Benchmark_Guide]] — Agent 评估基准指南
 - [[08_Model_Evaluation/Online_Evaluation]] — 在线评估方法
-- [[synthesis/benchmark-evaluation]] — 评测基准 × 评测方法论
+- [[_synthesis/benchmark-evaluation]] — 评测基准 × 评测方法论

@@ -3,11 +3,11 @@ title: 模型网关 (Model Gateway / AI Gateway)
 category: concepts
 tags: [model-gateway, ai-gateway, load-balancing, routing, api-management, synapse]
 relationships:
-  - target: "concepts/llm-infrastructure"
+  - target: "_concepts/llm-infrastructure"
     type: related_to
-  - target: "concepts/model-deployment"
+  - target: "_concepts/model-deployment"
     type: related_to
-  - target: "concepts/model-serving"
+  - target: "_concepts/model-serving"
     type: builds_on
 sources:
   - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
@@ -144,6 +144,6 @@ created: 2026-06-12
 - [[14_AI_Gateway/Kong_AI_Gateway_Deep_Dive]] — Kong AI Gateway
 - [[14_AI_Gateway/Portkey_Deep_Dive]] — Portkey 深度解析
 - [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack 深度解析
-- [[concepts/llm-infrastructure]] — LLM 基础设施
-- [[concepts/model-serving]] — 模型服务
+- [[_concepts/llm-infrastructure]] — LLM 基础设施
+- [[_concepts/model-serving]] — 模型服务
 - [[12_Architecture_Infrastructure/Alibaba_Cloud_AI_Stack_Deep_Dive|阿里云 AI Stack]] — 专有云推理平台的模型网关实现

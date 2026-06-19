@@ -69,7 +69,7 @@ summary: ""
 | 05 | [API 参考与请求/响应规范](./05-openrouter-api-reference.md) | 完整请求 Schema、响应格式、参数详解、Error Handling | 研发工程师 | 30min |
 | 06 | [Structured Outputs 与 Tool Calling](./06-openrouter-structured-outputs-tools.md) | JSON Schema 约束、Tool/Function Calling、Response Healing | 研发工程师 | 20min |
 | 07 | [插件体系与 Web Search](./07-openrouter-plugins-web-search.md) | Web 搜索插件、File Parser、Context Compression、引擎选择 | 研发工程师 | 25min |
-| 08 | [Prompt Caching 与成本优化](./08-openrouter-prompt-caching-[[concepts/model-training|optimization]].md) | Provider 级缓存策略、Sticky Routing、TTL 配置、成本分析 | 架构师、AI 工程师 | 25min |
+| 08 | [Prompt Caching 与成本优化](./08-openrouter-prompt-caching-[[_concepts/model-training|optimization]].md) | Provider 级缓存策略、Sticky Routing、TTL 配置、成本分析 | 架构师、AI 工程师 | 25min |
 | 09 | [框架集成与生态系统](./09-openrouter-frameworks-integrations.md) | OpenAI SDK、Vercel AI、LangChain、LlamaIndex、Aider/Cline | 研发工程师 | 20min |
 | 10 | [流式传输与多模态输入](./10-openrouter-streaming-multimedia.md) | SSE Streaming、Stream Cancellation、Image/PDF/Audio 输入 | 研发工程师 | 20min |
 | 11 | [安全、隐私与数据治理](./11-openrouter-security-privacy.md) | 数据收集策略、Zero Data Retention、EU 合规、BYOK、API Key 管理 | 安全工程师、架构师 | 25min |
@@ -89,7 +89,7 @@ summary: ""
 | 28 | [Skills 与自定义命令](./28-opencode-skills-commands.md) | 内置 Skills、自定义 Skill 开发、命令系统、快捷键 | 研发工程师 | 25min |
 | 29 | [TUI 界面与定制](./29-opencode-tui-customization.md) | 终端界面、主题配置、布局定制、交互模式 | 所有工程师 | 20min |
 | 30 | [Server 模式与 API](./30-opencode-server-api.md) | HTTP Server、WebSocket、API 端点、远程连接 | 架构师、SRE | 25min |
-| 31 | [GitHub 自动化](./31-opencode-github-[[concepts/model-evaluation|automation]].md) | PR 创建、Issue 管理、代码审查、CI/CD 集成 | 研发工程师 | 25min |
+| 31 | [GitHub 自动化](./31-opencode-github-[[_concepts/model-evaluation|automation]].md) | PR 创建、Issue 管理、代码审查、CI/CD 集成 | 研发工程师 | 25min |
 | 32 | [高级主题与最佳实践](./32-opencode-advanced-topics.md) | 性能优化、调试技巧、故障排查、企业部署 | 架构师、SRE | 30min |
 
 ---
@@ -155,7 +155,7 @@ graph TB
 1. [05 - API 参考](./05-openrouter-api-reference.md) → [06 - Structured Outputs](./06-openrouter-structured-outputs-tools.md) → [07 - 插件与 Web Search](./07-openrouter-plugins-web-search.md) → [10 - 流式与多模态](./10-openrouter-streaming-multimedia.md)
 
 **架构师 / SRE**：
-1. [04 - 智能路由](./04-openrouter-provider-routing.md) → [08 - Prompt Caching](./08-openrouter-prompt-caching-[[concepts/optimization-regularization|optimization]].md) → [11 - 安全隐私](./11-openrouter-security-privacy.md) → [12 - 企业高级](./12-openrouter-enterprise-advanced.md)
+1. [04 - 智能路由](./04-openrouter-provider-routing.md) → [08 - Prompt Caching](./08-openrouter-prompt-caching-[[_concepts/optimization-regularization|optimization]].md) → [11 - 安全隐私](./11-openrouter-security-privacy.md) → [12 - 企业高级](./12-openrouter-enterprise-advanced.md)
 
 **框架集成开发者**：
 1. [09 - 框架集成](./09-openrouter-frameworks-integrations.md) → [06 - Tool Calling](./06-openrouter-structured-outputs-tools.md) → [07 - Web Search](./07-openrouter-plugins-web-search.md)
@@ -192,8 +192,8 @@ graph TB
 | 技术领域 | 覆盖内容 |
 |---------|---------|
 | **核心架构** | Agent-based AI Coding、多 Provider 架构、MCP 协议、LSP 集成 |
-| **Provider 支持** | OpenRouter、OpenAI、Anthropic、Google、Azure、[[concepts/model-serving|Ollama]]、LM Studio 等 75+ |
-| **Agent 系统** | [[concepts/ai-agents|Multi-Agent]] 协作、上下文管理、记忆系统、ReAct 模式 |
+| **Provider 支持** | OpenRouter、OpenAI、Anthropic、Google、Azure、[[_concepts/model-serving|Ollama]]、LM Studio 等 75+ |
+| **Agent 系统** | [[_concepts/ai-agents|Multi-Agent]] 协作、上下文管理、记忆系统、ReAct 模式 |
 | **工具生态** | MCP (Model Context Protocol)、内置工具、自定义 Skills、权限控制 |
 | **代码能力** | LSP 语言服务器、Diagnostics、Formatter、代码补全、重构 |
 | **DevOps 集成** | GitHub Automation、PR 管理、Issue 追踪、CI/CD 工作流 |
@@ -206,7 +206,7 @@ graph TB
 
 ## Related
 
-- [[concepts/ai-agents]] — AI智能体 (共享: llm)
-- [[concepts/ai-ethics]] — AI伦理 (共享: ai)
-- [[concepts/ai-fundamentals]] — AI基础概念 (共享: ai)
-- [[concepts/ai-future-trends]] — AI未来趋势 (共享: ai)
+- [[_concepts/ai-agents]] — AI智能体 (共享: llm)
+- [[_concepts/ai-ethics]] — AI伦理 (共享: ai)
+- [[_concepts/ai-fundamentals]] — AI基础概念 (共享: ai)
+- [[_concepts/ai-future-trends]] — AI未来趋势 (共享: ai)

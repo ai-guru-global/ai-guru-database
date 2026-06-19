@@ -36,8 +36,8 @@ summary: ""
 - [[08_Model_Evaluation/LLM_as_Judge_Deep_Dive|LLM-as-Judge 深度解读]] — 自动化评测的核心方法
 - [[08_Model_Evaluation/Agentic_Benchmark_Guide|Agent 评测指南]] — 从静态到动态的评测演进
 - [[08_Model_Evaluation/Online_Evaluation|在线评测]] — 生产环境的实时评估
-- [[19_Ethics_Safety/Safety_Evaluation_Framework|安全评测框架]] — 安全维度的专项评估
-- [[synthesis/safety-evaluation-red-teaming|安全评测 × 红队测试]] — 对抗式安全评估
+- [[17_Ethics_Safety/Safety_Evaluation_Framework|安全评测框架]] — 安全维度的专项评估
+- [[_synthesis/safety-evaluation-red-teaming|安全评测 × 红队测试]] — 对抗式安全评估
 
 ## 前沿方向
 
@@ -47,5 +47,5 @@ summary: ""
 
 ## 延伸阅读
 
-- [[synthesis/reasoning-models-agents|推理模型 × Agent 合成]]
-- [[concepts/model-evaluation|模型评估核心概念]]
+- [[_synthesis/reasoning-models-agents|推理模型 × Agent 合成]]
+- [[_concepts/model-evaluation|模型评估核心概念]]

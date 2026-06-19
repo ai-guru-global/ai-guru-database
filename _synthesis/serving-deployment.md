@@ -2,7 +2,7 @@
 title: 模型服务 × 模型部署
 category: synthesis
 tags: [deployment, serving, inference, vllm, sglang, tensorrt, kubernetes, edge]
-sources: [concepts/model-serving.md, concepts/model-deployment.md]
+sources: [_concepts/model-serving.md, _concepts/model-deployment.md]
 created: 2026-05-31T21:30:00+08:00
 updated: 2026-05-31T21:30:00+08:00
 summary: "部署解决'如何上线'，服务解决'如何高效运行'：两者共同构成 LLM 推理的工程闭环，2026年的核心矛盾是吞吐量与延迟的权衡。"
@@ -19,7 +19,7 @@ lifecycle_changed: 2026-05-31
 
 ## The Connection
 
-[[concepts/model-deployment]] 回答"如何把训练好的模型放到生产环境"，[[concepts/model-serving]] 回答"如何让它跑得又快又稳"。两者是同一枚硬币的两面：没有合理的部署架构（Kubernetes/Serverless/边缘），再强的推理引擎（vLLM/SGLang/TensorRT-LLM）也无法发挥；反之，没有推理层面的优化（KV Cache、PagedAttention、推测解码），部署架构的成本将高到无法承受。
+[[_concepts/model-deployment]] 回答"如何把训练好的模型放到生产环境"，[[_concepts/model-serving]] 回答"如何让它跑得又快又稳"。两者是同一枚硬币的两面：没有合理的部署架构（Kubernetes/Serverless/边缘），再强的推理引擎（vLLM/SGLang/TensorRT-LLM）也无法发挥；反之，没有推理层面的优化（KV Cache、PagedAttention、推测解码），部署架构的成本将高到无法承受。
 
 ## Where They Co-occur
 
@@ -47,7 +47,7 @@ lifecycle_changed: 2026-05-31
 
 ## Related
 
-- [[09_Deployment_Inference/Deployment_Inference]] — 模型部署与推理加速 (Deployment & Inference) (共享: deployment, inference, serving, vllm)
-- [[09_Deployment_Inference/Deployment_Inference_2026]] — 部署推理 2026 趋势 (共享: deployment, inference, serving, vllm)
-- [[09_Deployment_Inference/Deployment_Inference_for_dummy]] — 模型部署与推理加速 - 小白版 (共享: deployment, inference, serving, vllm)
-- [[09_Deployment_Inference/Inference-in-nutshell]] — 模型推理速成指南 (共享: deployment, inference, serving, vllm)
+- [[10_Deployment_Inference/Deployment_Inference]] — 模型部署与推理加速 (Deployment & Inference) (共享: deployment, inference, serving, vllm)
+- [[10_Deployment_Inference/Deployment_Inference_2026]] — 部署推理 2026 趋势 (共享: deployment, inference, serving, vllm)
+- [[10_Deployment_Inference/Deployment_Inference_for_dummy]] — 模型部署与推理加速 - 小白版 (共享: deployment, inference, serving, vllm)
+- [[10_Deployment_Inference/Inference-in-nutshell]] — 模型推理速成指南 (共享: deployment, inference, serving, vllm)

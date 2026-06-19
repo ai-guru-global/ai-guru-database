@@ -2,7 +2,7 @@
 title: 模型训练 × 微调技术
 category: synthesis
 tags: ["model-training", "fine-tuning", "lora", "deepspeed", "fsdp", "optimization", "peft"]
-sources: [concepts/model-training.md, concepts/fine-tuning-techniques.md]
+sources: [_concepts/model-training.md, _concepts/fine-tuning-techniques.md]
 created: 2026-05-31T21:30:00+08:00
 updated: 2026-05-31T21:30:00+08:00
 summary: "从预训练到对齐的完整闭环：分布式训练解决规模问题，参数高效微调（LoRA/QLoRA/DoRA）解决适配问题，RLHF/DPO 解决价值观问题。"
@@ -19,7 +19,7 @@ lifecycle_changed: 2026-05-31
 
 ## The Connection
 
-大模型的能力不是单一阶段产生的，而是**预训练 → 微调 → 对齐**三阶段叠加的结果。预训练（由 [[concepts/model-training]] 涵盖）赋予模型语言和世界知识；微调（由 [[concepts/fine-tuning-techniques]] 涵盖）将通用能力聚焦到特定任务或领域；对齐（RLHF/DPO）则塑造模型的行为边界。三者共享同一个底层基础设施（分布式并行、混合精度、梯度优化），但目标函数和优化策略截然不同。
+大模型的能力不是单一阶段产生的，而是**预训练 → 微调 → 对齐**三阶段叠加的结果。预训练（由 [[_concepts/model-training]] 涵盖）赋予模型语言和世界知识；微调（由 [[_concepts/fine-tuning-techniques]] 涵盖）将通用能力聚焦到特定任务或领域；对齐（RLHF/DPO）则塑造模型的行为边界。三者共享同一个底层基础设施（分布式并行、混合精度、梯度优化），但目标函数和优化策略截然不同。
 
 ## Where They Co-occur
 

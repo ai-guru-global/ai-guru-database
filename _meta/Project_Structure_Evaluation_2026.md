@@ -19,8 +19,8 @@ updated: 2026-05-31
 
 本次评估基于对项目全量 `588` 个 Markdown 文件的数据扫描，发现项目在**内容深度、结构一致性、交叉引用**三个维度存在显著的不均衡。具体表现为：
 
-- **头部章节过强**：`13_Agent_Production`（58,951 行）占据全项目 29% 的内容量
-- **尾部章节过弱**：`07_Model_Training`（369 行）、`22_Papers`（57 行）几乎为空白
+- **头部章节过强**：`15_Agent_Production`（58,951 行）占据全项目 29% 的内容量
+- **尾部章节过弱**：`07_Model_Training`（369 行）、`20_Papers`（57 行）几乎为空白
 - **结构标准缺失**：12 个主要目录缺少 `README.md`，12/43 个子目录缺少 `for_dummy` 版本
 - **交叉引用孤岛化**：22 个章节内部链接密度低于 7.0，大量文件缺乏上下文关联
 
@@ -40,13 +40,13 @@ updated: 2026-05-31
 **关键缺失**：
 - `07_Model_Training/` — 核心工程环节，无入口导航
 - `08_Model_Evaluation/` — 只有 2 个文件（Model_Evaluation.md + for_dummy），无章节导览
-- `11_RAG_Systems/` — 有 `README_Advanced.md` 但无标准 `README.md`，命名不一致
+- `14_RAG_Systems/` — 有 `README_Advanced.md` 但无标准 `README.md`，命名不一致
 - `12_Architecture_Infrastructure/` — 8 个技术文件但无导航入口
 - `18_Cloud_Ops_Agent/` — 5 个核心文件 + mkdocs 配置，无章节导览
 
 ### 2.2 for_dummy 简化版覆盖度
 
-在 `01_Fundamentals`、`02_ML`、`03_DL`、`04_NLP_LLMs`、`05_CV`、`06_RL`、`19_Ethics_Safety` 的 **43 个子目录** 中：
+在 `01_Fundamentals`、`02_ML`、`03_DL`、`05_NLP_LLMs`、`05_CV`、`06_RL`、`17_Ethics_Safety` 的 **43 个子目录** 中：
 
 | 状态 | 数量 | 占比 |
 |------|------|------|
@@ -58,12 +58,12 @@ updated: 2026-05-31
 | 父目录 | 缺失子目录 | 影响 |
 |--------|-----------|------|
 | `01_Fundamentals` | `Java_Ecosystem_AI` | Spring AI 相关内容缺乏入门版 |
-| `04_NLP_LLMs` | `Multimodal_Models` | 多模态模型缺少简化版 |
-| `04_NLP_LLMs` | `Reasoning_Models` | 推理模型（如 o1/R1）缺少简化版 |
-| `19_Ethics_Safety` | `AI_Supply_Chain_Security` | 供应链安全缺少简化版 |
-| `19_Ethics_Safety` | `Deepfake_Security` | 深度伪造安全缺少简化版 |
-| `19_Ethics_Safety` | `Mechanistic_Interpretability` | 机制可解释性缺少简化版 |
-| `19_Ethics_Safety` | `Privacy_Preserving_AI` | 隐私保护 AI 缺少简化版 |
+| `05_NLP_LLMs` | `Multimodal_Models` | 多模态模型缺少简化版 |
+| `05_NLP_LLMs` | `Reasoning_Models` | 推理模型（如 o1/R1）缺少简化版 |
+| `17_Ethics_Safety` | `AI_Supply_Chain_Security` | 供应链安全缺少简化版 |
+| `17_Ethics_Safety` | `Deepfake_Security` | 深度伪造安全缺少简化版 |
+| `17_Ethics_Safety` | `Mechanistic_Interpretability` | 机制可解释性缺少简化版 |
+| `17_Ethics_Safety` | `Privacy_Preserving_AI` | 隐私保护 AI 缺少简化版 |
 
 ### 2.3 Nutshell 速览版覆盖度
 
@@ -71,8 +71,8 @@ updated: 2026-05-31
 
 | 有 Nutshell | 无 Nutshell（关键缺失） |
 |------------|----------------------|
-| 04_NLP_LLMs/LLM_Architectures | **01_Fundamentals**（无） |
-| 04_NLP_LLMs/Prompt_Engineering | **02_Machine_Learning**（无） |
+| 05_NLP_LLMs/LLM_Architectures | **01_Fundamentals**（无） |
+| 05_NLP_LLMs/Prompt_Engineering | **02_Machine_Learning**（无） |
 | 06_RL/AI_Agents | **03_Deep_Learning**（无） |
 | 07_Model_Training | **05_Computer_Vision**（无） |
 | 09_Deployment_Inference | **08_Model_Evaluation**（无） |
@@ -224,12 +224,12 @@ updated: 2026-05-31
 
 | 被引用章节 | 引用次数 | 说明 |
 |-----------|---------|------|
-| `04_NLP_LLMs` | 94 | 核心知识枢纽 |
+| `05_NLP_LLMs` | 94 | 核心知识枢纽 |
 | `01_Fundamentals` | 57 | 基础数学/算法被大量引用 |
 | `03_Deep_Learning` | 46 | 神经网络基础被广泛依赖 |
-| `11_RAG_Systems` | 42 | RAG 是热门交叉领域 |
+| `14_RAG_Systems` | 42 | RAG 是热门交叉领域 |
 | `02_Machine_Learning` | 38 | 传统 ML 方法被引用 |
-| `09_Deployment_Inference` | 36 | 部署推理是工程终点 |
+| `10_Deployment_Inference` | 36 | 部署推理是工程终点 |
 | `06_Reinforcement_Learning` | 35 | RL + Agent 强关联 |
 
 ### 4.3 内容重复与分散
@@ -240,14 +240,14 @@ updated: 2026-05-31
 01_Fundamentals/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md
 01_Fundamentals/Java_Ecosystem_AI/Java_Ecosystem_AI_Overview.md
 01_Fundamentals/README.md
-09_Deployment_Inference/JVM_AI_Deployment.md
-11_RAG_Systems/Spring_AI_RAG_Deep_Dive.md
+10_Deployment_Inference/JVM_AI_Deployment.md
+14_RAG_Systems/Spring_AI_RAG_Deep_Dive.md
 12_Architecture_Infrastructure/Spring_AI_Architecture.md
-13_Agent_Production/Agent_Skills/Spring_AI_Skills_Integration.md
-13_Agent_Production/Agent_Skills/README.md
-13_Agent_Production/Agent_Skills/Agent_Skills_Deep_Dive.md
+15_Agent_Production/Agent_Skills/Spring_AI_Skills_Integration.md
+15_Agent_Production/Agent_Skills/README.md
+15_Agent_Production/Agent_Skills/Agent_Skills_Deep_Dive.md
 14_AI_Gateway/Spring_AI_Gateway_Security.md
-15_Testing/Java_AI_Testing.md
+09_Testing/Java_AI_Testing.md
 18_Cloud_Ops_Agent/Java_Cloud_SDK_Guide.md
 ROADMAP.md
 90_Learn/pathways/java-developer.md
@@ -382,12 +382,12 @@ ROADMAP.md
 | **P0** | 扩充 `08_Model_Evaluation`（新增自动化/在线评估） | 核心知识链 | 中 | +30 分 |
 | **P1 — 短期完成** | 补齐 12 个缺失的 `for_dummy` | 初学者体验 | 中 | +10 分 |
 | **P1** | 为 8 个核心章节新增 `*nutshell*` | 速览体验 | 中 | +10 分 |
-| **P1** | 扩充 `22_Papers`（Top 10 论文深度解读） | 学术深度 | 大 | +25 分 |
-| **P1** | 重构 `21_Talks`（主题整合 + 交叉引用） | 内容连通 | 中 | +20 分 |
+| **P1** | 扩充 `20_Papers`（Top 10 论文深度解读） | 学术深度 | 大 | +25 分 |
+| **P1** | 重构 `19_Talks`（主题整合 + 交叉引用） | 内容连通 | 中 | +20 分 |
 | **P1** | 统一 Spring AI 等重复主题的引用规范 | 维护成本 | 小 | +15 分 |
-| **P2 — 中期规划** | 扩充 `20_AI_Applications_Industry`（每行业 500+ 行） | 行业深度 | 大 | +20 分 |
-| **P2** | 为 `10_MLOps_Pipeline` 新增 CI/CD、特征存储专题 | 工程完整 | 大 | +20 分 |
-| **P2** | 为 `23_Interviews` 增加章节 README 和交叉引用 | 求职体验 | 小 | +10 分 |
+| **P2 — 中期规划** | 扩充 `18_AI_Applications_Industry`（每行业 500+ 行） | 行业深度 | 大 | +20 分 |
+| **P2** | 为 `11_MLOps_Pipeline` 新增 CI/CD、特征存储专题 | 工程完整 | 大 | +20 分 |
+| **P2** | 为 `21_Interviews` 增加章节 README 和交叉引用 | 求职体验 | 小 | +10 分 |
 | **P2** | 建立统一的文档模板（README + for_dummy + nutshell 标准） | 长期规范 | 小 | +15 分 |
 
 ---
@@ -403,12 +403,12 @@ ROADMAP.md
 ```
 07_Model_Training/README.md
 08_Model_Evaluation/README.md
-10_MLOps_Pipeline/README.md
-11_RAG_Systems/README.md          （将 README_Advanced.md 重命名或合并）
+11_MLOps_Pipeline/README.md
+14_RAG_Systems/README.md          （将 README_Advanced.md 重命名或合并）
 12_Architecture_Infrastructure/README.md
 18_Cloud_Ops_Agent/README.md
-21_Talks/README.md
-23_Interviews/README.md
+19_Talks/README.md
+21_Interviews/README.md
 91_Notes/README.md
 92_Plan/README.md
 93_Tools/README.md
@@ -441,7 +441,7 @@ ROADMAP.md
 
 #### 2. 统一命名规范
 
-- `11_RAG_Systems/README_Advanced.md` → 重命名为 `README.md` 或合并为双栏导航
+- `14_RAG_Systems/README_Advanced.md` → 重命名为 `README.md` 或合并为双栏导航
 - 确保所有主要目录都有 `README.md`（而非 `README_Advanced.md` 或其他变体）
 
 ### 7.2 短期执行（1-2 周）
@@ -478,22 +478,22 @@ ROADMAP.md
 
 **for_dummy 缺失清单**（12 个）：
 - `01_Fundamentals/Java_Ecosystem_AI/Java_Ecosystem_AI_for_dummy.md`
-- `04_NLP_LLMs/Multimodal_Models/Multimodal_Models_for_dummy.md`
-- `04_NLP_LLMs/Reasoning_Models/Reasoning_Models_for_dummy.md`
-- `19_Ethics_Safety/AI_Supply_Chain_Security/AI_Supply_Chain_Security_for_dummy.md`
-- `19_Ethics_Safety/Deepfake_Security/Deepfake_Security_for_dummy.md`
-- `19_Ethics_Safety/Mechanistic_Interpretability/Mechanistic_Interpretability_for_dummy.md`
-- `19_Ethics_Safety/Privacy_Preserving_AI/Privacy_Preserving_AI_for_dummy.md`
+- `05_NLP_LLMs/Multimodal_Models/Multimodal_Models_for_dummy.md`
+- `05_NLP_LLMs/Reasoning_Models/Reasoning_Models_for_dummy.md`
+- `17_Ethics_Safety/AI_Supply_Chain_Security/AI_Supply_Chain_Security_for_dummy.md`
+- `17_Ethics_Safety/Deepfake_Security/Deepfake_Security_for_dummy.md`
+- `17_Ethics_Safety/Mechanistic_Interpretability/Mechanistic_Interpretability_for_dummy.md`
+- `17_Ethics_Safety/Privacy_Preserving_AI/Privacy_Preserving_AI_for_dummy.md`
 
 **nutshell 缺失清单**（关键 8 个）：
 - `01_Fundamentals/Fundamentals-in-nutshell.md`
 - `02_Machine_Learning/ML-in-nutshell.md`
 - `03_Deep_Learning/DL-in-nutshell.md`
-- `05_Computer_Vision/CV-in-nutshell.md`
+- `04_Computer_Vision/CV-in-nutshell.md`
 - `08_Model_Evaluation/Evaluation-in-nutshell.md`
 - `12_Architecture_Infrastructure/Architecture-in-nutshell.md`
-- `19_Ethics_Safety/Ethics-in-nutshell.md`
-- `20_AI_Applications_Industry/Industry-in-nutshell.md`
+- `17_Ethics_Safety/Ethics-in-nutshell.md`
+- `18_AI_Applications_Industry/Industry-in-nutshell.md`
 
 #### 6. 重构 21_Talks 和 22_Papers
 
@@ -503,8 +503,8 @@ ROADMAP.md
 - 在每个 `sayings.md` 底部增加"相关章节"链接
 
 **22_Papers 建议**：
-- 选择 Top 10 最具影响力论文，在对应章节中撰写深度解读（如 Attention Is All You Need 在 `04_NLP_LLMs/Transformer_Revolution/` 中扩充）
-- `22_Papers/README.md` 改为"论文索引 + 对应章节链接"，而非纯外链列表
+- 选择 Top 10 最具影响力论文，在对应章节中撰写深度解读（如 Attention Is All You Need 在 `05_NLP_LLMs/Transformer_Revolution/` 中扩充）
+- `20_Papers/README.md` 改为"论文索引 + 对应章节链接"，而非纯外链列表
 
 ### 7.3 中期规划（2-4 周）
 
@@ -553,7 +553,7 @@ ROADMAP.md
 
 1. **主入口**：`01_Fundamentals/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md`（全面介绍）
 2. **其他章节**只写领域特定扩展：
- - `11_RAG_Systems/Spring_AI_RAG_Deep_Dive.md` → 只写 RAG 相关，基础部分引用主入口
+ - `14_RAG_Systems/Spring_AI_RAG_Deep_Dive.md` → 只写 RAG 相关，基础部分引用主入口
  - `14_AI_Gateway/Spring_AI_Gateway_Security.md` → 只写安全相关，基础部分引用主入口
 3. **在每个相关文件顶部添加**：
    ```markdown
@@ -562,7 +562,7 @@ ROADMAP.md
 
 #### 9. 扩充行业应用章节
 
-将 `20_AI_Applications_Industry/` 的 10 个行业文件从平均 220 行扩充至 500+ 行：
+将 `18_AI_Applications_Industry/` 的 10 个行业文件从平均 220 行扩充至 500+ 行：
 
 每个行业文件应包含：
 - 行业背景与 AI 应用场景（100 行）
@@ -617,7 +617,7 @@ ROADMAP.md
 1. **项目骨架完整，但肌肉分布不均**：22 个章节的目录结构已经搭建，但 07、08、21、22 等章节内容几乎为空白，形成明显的"知识断层"。
 2. **导航体验受阻**：12 个章节缺少 README，读者无法快速了解章节内容和学习路径。
 3. **交叉引用是最大短板**：大量文件是"孤岛"，Spring AI 等热门主题分散在 12 个文件中，维护成本高且读者体验差。
-4. **Agent_Production 是标杆**：刚完成优化的 `13_Agent_Production`（Agent_Skills + Agent_Harness）展示了理想的文档标准，应作为模板推广至其他章节。
+4. **Agent_Production 是标杆**：刚完成优化的 `15_Agent_Production`（Agent_Skills + Agent_Harness）展示了理想的文档标准，应作为模板推广至其他章节。
 
 ### 下一步行动
 

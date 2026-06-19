@@ -115,11 +115,11 @@ flowchart TB
 
 ### 计算机视觉
 - [DL for CV - Stanford CS231n](https://cs231n.stanford.edu/) — 斯坦福经典 CV 课程
-- **关联**: → [[05_Computer_Vision/CV_Fundamentals|计算机视觉基础]]
+- **关联**: → [[04_Computer_Vision/CV_Fundamentals|计算机视觉基础]]
 
 ### NLP
 - [NLP Specialization - Coursera](https://www.coursera.org/specializations/natural-language-processing)
-- **关联**: → [[04_NLP_LLMs/NLP_Fundamentals|NLP 基础]]
+- **关联**: → [[05_NLP_LLMs/NLP_Fundamentals|NLP 基础]]
 
 ### 强化学习
 - [Deep RL Course - Hugging Face](https://huggingface.co/learn/deep-rl-course/unit0/introduction)
@@ -189,7 +189,7 @@ flowchart TB
 | [Gemini API](https://ai.google.dev/gemini-api/docs) | Google Gemini |
 | [Groq](https://groq.com/) | 高速推理 |
 
-> **关联**: → [[04_NLP_LLMs/LLM_Fundamentals|LLM 基础]] · [[22_Papers/Attention_Is_All_You_Need_Deep_Dive|Attention 论文]] · [[22_Papers/GPT3_Deep_Dive|GPT-3 论文]]
+> **关联**: → [[05_NLP_LLMs/LLM_Fundamentals|LLM 基础]] · [[20_Papers/Attention_Is_All_You_Need_Deep_Dive|Attention 论文]] · [[20_Papers/GPT3_Deep_Dive|GPT-3 论文]]
 
 ---
 
@@ -218,7 +218,7 @@ flowchart TB
 | [Claude Code](https://code.claude.com/docs/en/overview) | Anthropic CLI Agent |
 | [Codex](https://openai.com/codex/) | OpenAI 编程 Agent |
 
-> **关联**: → [[17_AI_Coding/02_Tools|AI 编程工具]]
+> **关联**: → [[16_AI_Coding/Tools|AI 编程工具]]
 
 ---
 
@@ -233,7 +233,7 @@ flowchart TB
 | [Getting Structured LLM Output](https://www.deeplearning.ai/short-courses/getting-structured-llm-output/) | 课程 | 结构化输出 |
 | [God Tier Prompts](https://www.godtierprompts.com/) | 工具 | 高质量提示词库 |
 
-> **关联**: → [[04_NLP_LLMs/Prompt_Engineering|提示词工程]]
+> **关联**: → [[05_NLP_LLMs/Prompt_Engineering|提示词工程]]
 
 ---
 
@@ -244,7 +244,7 @@ flowchart TB
 | [Introduction to RAG - Coursera](https://www.coursera.org/projects/introduction-to-rag) | 课程 | RAG 入门实践 |
 | [RAG Techniques](https://github.com/NirDiamant/RAG_Techniques) | GitHub | ⭐ RAG 技术大全 |
 
-> **关联**: → [[11_RAG_Systems/RAG_Fundamentals|RAG 基础]] · [[22_Papers/RAG_Deep_Dive|RAG 论文]]
+> **关联**: → [[14_RAG_Systems/RAG_Fundamentals|RAG 基础]] · [[20_Papers/RAG_Deep_Dive|RAG 论文]]
 
 ---
 
@@ -259,7 +259,7 @@ flowchart TB
 | [GenAI Agents](https://github.com/NirDiamant/GenAI_Agents) | GitHub | ⭐ Agent 实现集合 |
 | [AI Agents in Action (2nd Ed)](https://www.manning.com/books/ai-agents-in-action-second-edition) | 书籍 | Manning 出版 |
 
-> **关联**: → [[13_Agent_Production|Agent 生产]]
+> **关联**: → [[15_Agent_Production|Agent 生产]]
 
 ---
 
@@ -289,7 +289,7 @@ flowchart TB
 | [Streamlit](https://streamlit.io/) | 快速构建 ML Web 应用 |
 | [MLflow](https://mlflow.org/docs/latest/index.html) | ML 生命周期管理 |
 
-> **关联**: → [[10_MLOps_Pipeline|MLOps 流水线]] · [[09_Deployment_Inference|部署推理]]
+> **关联**: → [[11_MLOps_Pipeline|MLOps 流水线]] · [[10_Deployment_Inference|部署推理]]
 
 ---
 
@@ -354,12 +354,12 @@ flowchart TB
 
 | 论文 | 年份 | Wiki 深度解读 |
 |------|------|---------------|
-| [Attention Is All You Need](https://arxiv.org/pdf/1706.03762) | 2017 | → [[22_Papers/Attention_Is_All_You_Need_Deep_Dive]] |
-| [Generative Adversarial Networks](https://arxiv.org/abs/1406.2661) | 2014 | → [[22_Papers/GAN_Deep_Dive]] |
+| [Attention Is All You Need](https://arxiv.org/pdf/1706.03762) | 2017 | → [[20_Papers/Attention_Is_All_You_Need_Deep_Dive]] |
+| [Generative Adversarial Networks](https://arxiv.org/abs/1406.2661) | 2014 | → [[20_Papers/GAN_Deep_Dive]] |
 | [GPT: Improving Language Understanding](https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf) | 2018 | — |
-| [GPT-3: Few-Shot Learners](https://arxiv.org/abs/2005.14165) | 2020 | → [[22_Papers/GPT3_Deep_Dive]] |
-| [BERT](https://arxiv.org/abs/1810.04805) | 2018 | → [[22_Papers/BERT_Deep_Dive]] |
-| [Chain-of-Thought Prompting](https://arxiv.org/abs/2201.11903) | 2022 | → [[22_Papers/Chain_of_Thought_Deep_Dive]] |
+| [GPT-3: Few-Shot Learners](https://arxiv.org/abs/2005.14165) | 2020 | → [[20_Papers/GPT3_Deep_Dive]] |
+| [BERT](https://arxiv.org/abs/1810.04805) | 2018 | → [[20_Papers/BERT_Deep_Dive]] |
+| [Chain-of-Thought Prompting](https://arxiv.org/abs/2201.11903) | 2022 | → [[20_Papers/Chain_of_Thought_Deep_Dive]] |
 
 ---
 
@@ -381,21 +381,21 @@ flowchart TB
 | 数学基础 | [[01_Fundamentals]] |
 | ML 基础 | [[02_Machine_Learning]] |
 | 深度学习 | [[03_Deep_Learning]] |
-| NLP / LLM | [[04_NLP_LLMs]] |
-| 计算机视觉 | [[05_Computer_Vision]] |
+| NLP / LLM | [[05_NLP_LLMs]] |
+| 计算机视觉 | [[04_Computer_Vision]] |
 | 强化学习 | [[06_Reinforcement_Learning]] |
 | 模型训练 | [[07_Model_Training]] |
 | 模型评估 | [[08_Model_Evaluation]] |
-| 部署推理 | [[09_Deployment_Inference]] |
-| MLOps | [[10_MLOps_Pipeline]] |
-| RAG | [[11_RAG_Systems]] |
+| 部署推理 | [[10_Deployment_Inference]] |
+| MLOps | [[11_MLOps_Pipeline]] |
+| RAG | [[14_RAG_Systems]] |
 | 架构基础 | [[12_Architecture_Infrastructure]] |
-| Agent 生产 | [[13_Agent_Production]] |
+| Agent 生产 | [[15_Agent_Production]] |
 | AI 网关 | [[14_AI_Gateway]] |
-| 测试 | [[15_Testing]] |
-| AI Ops | [[16_AI_Ops]] |
-| AI 编程 | [[17_AI_Coding]] |
-| 论文精读 | [[22_Papers]] |
+| 测试 | [[09_Testing]] |
+| AI Ops | [[13_AI_Ops]] |
+| AI 编程 | [[16_AI_Coding]] |
+| 论文精读 | [[20_Papers]] |
 | 学习路径 | [[90_Learn/guides/learning_paths_2026|AI Guru 学习路径]] |
 
 ---
@@ -403,14 +403,14 @@ flowchart TB
 ## Wiki 页面索引（本路线图导入的页面）
 
 ### GitHub 仓库
-- [[references/llm-course-mlabonne|MLabonne LLM 课程 (80k)]]
-- [[references/rag-techniques-nirdiamant|RAG 技术大全 (27.9k)]]
-- [[references/genai-agents-nirdiamant|GenAI Agent 实现集合 (22.5k)]]
-- [[references/microsoft-genai-for-beginners|微软生成式 AI 入门 (75k)]]
-- [[references/prompt-engineering-nirdiamant|Prompt 工程技术大全 (5k)]]
-- [[references/awesome-mcp-servers|Awesome MCP Servers (15k)]]
-- [[references/anthropic-courses|Anthropic 官方教程]]
-- [[references/awesome-llm-apps|Awesome LLM Apps (10k)]]
+- [[_references/llm-course-mlabonne|MLabonne LLM 课程 (80k)]]
+- [[_references/rag-techniques-nirdiamant|RAG 技术大全 (27.9k)]]
+- [[_references/genai-agents-nirdiamant|GenAI Agent 实现集合 (22.5k)]]
+- [[_references/microsoft-genai-for-beginners|微软生成式 AI 入门 (75k)]]
+- [[_references/prompt-engineering-nirdiamant|Prompt 工程技术大全 (5k)]]
+- [[_references/awesome-mcp-servers|Awesome MCP Servers (15k)]]
+- [[_references/anthropic-courses|Anthropic 官方教程]]
+- [[_references/awesome-llm-apps|Awesome LLM Apps (10k)]]
 
 ### 在线课程
 - [[90_Learn/courses/coursera/coursera_ml_specialization|吴恩达机器学习专项]]
@@ -424,26 +424,26 @@ flowchart TB
 - [[90_Learn/courses/hugging_face/agents_course|HF AI Agent 课程]]
 
 ### 技术文章
-- [[references/illustrated-transformer|图解 Transformer]]
-- [[references/sebastian-raschka-articles|Sebastian Raschka LLM 系列]]
-- [[references/maarten-grootendorst-visual-guides|Maarten Grootendorst 图解系列]]
-- [[references/chip-huyen-agents-article|Chip Huyen Agent 深度解析]]
+- [[_references/illustrated-transformer|图解 Transformer]]
+- [[_references/sebastian-raschka-articles|Sebastian Raschka LLM 系列]]
+- [[_references/maarten-grootendorst-visual-guides|Maarten Grootendorst 图解系列]]
+- [[_references/chip-huyen-agents-article|Chip Huyen Agent 深度解析]]
 
 ### 推荐书籍 (15 本)
-- [[references/books/hands-on-ml-geron|Hands-On Machine Learning]]
-- [[references/books/deep-learning-goodfellow|Deep Learning (花书)]]
-- [[references/books/dl-with-python-chollet|Deep Learning with Python]]
-- [[references/books/designing-ml-systems-huyen|Designing ML Systems]]
-- [[references/books/ai-engineering-huyen|AI Engineering]]
-- [[references/books/build-llm-from-scratch-raschka|Build a LLM from Scratch]]
-- [[references/books/llm-engineers-handbook|LLM Engineer's Handbook]]
-- [[references/books/nlp-with-transformers|NLP with Transformers]]
-- 更多书籍见 references/books/ 目录
+- [[_references/books/hands-on-ml-geron|Hands-On Machine Learning]]
+- [[_references/books/deep-learning-goodfellow|Deep Learning (花书)]]
+- [[_references/books/dl-with-python-chollet|Deep Learning with Python]]
+- [[_references/books/designing-ml-systems-huyen|Designing ML Systems]]
+- [[_references/books/ai-engineering-huyen|AI Engineering]]
+- [[_references/books/build-llm-from-scratch-raschka|Build a LLM from Scratch]]
+- [[_references/books/llm-engineers-handbook|LLM Engineer's Handbook]]
+- [[_references/books/nlp-with-transformers|NLP with Transformers]]
+- 更多书籍见 _references/books/ 目录
 
 ### YouTube 频道
-- [[21_Talks/Andrej_Karpathy/youtube_channel|Andrej Karpathy]]
-- [[21_Talks/3Blue1Brown/youtube_channel|3Blue1Brown]]
-- [[21_Talks/Josh_Starmer/youtube_channel|StatQuest Josh Starmer]]
+- [[19_Talks/Andrej_Karpathy/youtube_channel|Andrej Karpathy]]
+- [[19_Talks/3Blue1Brown/youtube_channel|3Blue1Brown]]
+- [[19_Talks/Josh_Starmer/youtube_channel|StatQuest Josh Starmer]]
 
 ### ML/DL 框架
 - [[02_Machine_Learning/ML_Frameworks/scikit-learn_overview|Scikit-learn]]
@@ -455,27 +455,27 @@ flowchart TB
 - [[03_Deep_Learning/DL_Frameworks/keras_overview|Keras]]
 
 ### 高级主题
-- [[13_Agent_Production/Agent_Protocols/A2A_Protocol_Deep_Dive|A2A 协议]]
-- [[04_NLP_LLMs/Structured_Output_Guide|结构化输出指南]]
+- [[15_Agent_Production/Agent_Protocols/A2A_Protocol_Deep_Dive|A2A 协议]]
+- [[05_NLP_LLMs/Structured_Output_Guide|结构化输出指南]]
 - [[08_Model_Evaluation/LLM_as_Judge_Guide|LLM-as-Judge 评估]]
-- [[concepts/long-context-vs-rag|长上下文 vs RAG]]
-- [[17_AI_Coding/AI_Coding_2026_Guide|AI 编程 2026 全景]]
-- [[09_Deployment_Inference/Prompt_Caching_Advanced|Prompt 缓存高级]]
-- [[11_RAG_Systems/Agentic_RAG_Guide|Agentic RAG]]
-- [[19_Ethics_Safety/Guardrails_Production_Guide|AI 护栏实践]]
-- [[16_AI_Ops/AI_Observability_Guide_2026|AI 可观测性]]
-- [[19_Ethics_Safety/AI_Red_Teaming_Guide|AI 红队测试]]
+- [[_concepts/long-context-vs-rag|长上下文 vs RAG]]
+- [[16_AI_Coding/AI_Coding_2026_Guide|AI 编程 2026 全景]]
+- [[10_Deployment_Inference/Prompt_Caching_Advanced|Prompt 缓存高级]]
+- [[14_RAG_Systems/Agentic_RAG_Guide|Agentic RAG]]
+- [[17_Ethics_Safety/Guardrails_Production_Guide|AI 护栏实践]]
+- [[13_AI_Ops/AI_Observability_Guide_2026|AI 可观测性]]
+- [[17_Ethics_Safety/AI_Red_Teaming_Guide|AI 红队测试]]
 - [[14_AI_Gateway/LLM_Gateway_Comparison_2026|LLM 网关对比]]
-- [[11_RAG_Systems/Embedding_Models_Guide|Embedding 模型选型]]
-- [[13_Agent_Production/Memory_Infrastructure/Agent_Memory_Techniques|Agent 记忆技术]]
-- [[09_Deployment_Inference/LLM_Cost_Optimization|LLM 成本优化]]
+- [[14_RAG_Systems/Embedding_Models_Guide|Embedding 模型选型]]
+- [[15_Agent_Production/Memory_Infrastructure/Agent_Memory_Techniques|Agent 记忆技术]]
+- [[10_Deployment_Inference/LLM_Cost_Optimization|LLM 成本优化]]
 
 ### 应用场景
-- [[20_AI_Applications_Industry/Code_Generation/AI_Code_Generation_2026|AI 代码生成]]
-- [[20_AI_Applications_Industry/Finance/AI_Finance_Applications_2026|AI 金融应用]]
-- [[20_AI_Applications_Industry/Education/AI_Education_Applications_2026|AI 教育应用]]
-- [[20_AI_Applications_Industry/Healthcare/AI_Healthcare_Applications_2026|AI 医疗应用]]
+- [[18_AI_Applications_Industry/Code_Generation/AI_Code_Generation_2026|AI 代码生成]]
+- [[18_AI_Applications_Industry/Finance/AI_Finance_Applications_2026|AI 金融应用]]
+- [[18_AI_Applications_Industry/Education/AI_Education_Applications_2026|AI 教育应用]]
+- [[18_AI_Applications_Industry/Healthcare/AI_Healthcare_Applications_2026|AI 医疗应用]]
 
 ### 平台
-- [[references/papers-with-code|Papers with Code]]
-- [[references/kaggle|Kaggle]]
+- [[_references/papers-with-code|Papers with Code]]
+- [[_references/kaggle|Kaggle]]

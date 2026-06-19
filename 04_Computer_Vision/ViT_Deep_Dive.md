@@ -387,8 +387,8 @@ predicted_class = outputs.logits.argmax(-1)
 
 ## Related
 
-- [[05_Computer_Vision/README.md|05_Computer_Vision README]]
-- [[05_Computer_Vision/3D_Vision/3D_Vision.md|3D_Vision]]
-- [[05_Computer_Vision/3D_Vision/3D_Vision_for_dummy.md|3D_Vision_for_dummy]]
-- [[05_Computer_Vision/Generative_Models/Generative_Models.md|Generative_Models]]
-- [[05_Computer_Vision/Generative_Models/Generative_Models_for_dummy.md|Generative_Models_for_dummy]]
+- [[04_Computer_Vision/README.md|04_Computer_Vision README]]
+- [[04_Computer_Vision/3D_Vision/3D_Vision.md|3D_Vision]]
+- [[04_Computer_Vision/3D_Vision/3D_Vision_for_dummy.md|3D_Vision_for_dummy]]
+- [[04_Computer_Vision/Generative_Models/Generative_Models.md|Generative_Models]]
+- [[04_Computer_Vision/Generative_Models/Generative_Models_for_dummy.md|Generative_Models_for_dummy]]

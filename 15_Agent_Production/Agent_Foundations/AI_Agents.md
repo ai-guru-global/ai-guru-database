@@ -1920,19 +1920,19 @@ jobs:
 ## 10. 与其他主题的关联 (Connections)
 
 ### 10.1 前置知识
-- **大语言模型**: [LLM架构](../../04_NLP_LLMs/LLM_Architectures/LLM_Architectures.md) —— Agent 的"大脑"
-- **提示工程**: [Prompt Engineering](../../04_NLP_LLMs/Prompt_Engineering/Prompt_Engineering.md) —— 设计 Agent 的系统提示
+- **大语言模型**: [LLM架构](../../05_NLP_LLMs/LLM_Architectures/LLM_Architectures.md) —— Agent 的"大脑"
+- **提示工程**: [Prompt Engineering](../../05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering.md) —— 设计 Agent 的系统提示
 - **强化学习**: [RL Foundations](../RL_Foundations/RL_Foundations.md) —— Agent 的决策理论基础
 - **深度强化学习**: [Deep RL](../Deep_RL/Deep_RL.md) —— RLHF 训练 Agent
 
 ### 10.2 相关技术
 - **RAG**: [检索增强生成] —— Agent 的记忆系统基础
-- **Fine-tuning**: [Fine-tuning Techniques](../../04_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques.md) —— 定制化 Agent 能力
-- **多模态**: [Multimodal Vision](../../05_Computer_Vision/Multimodal_Vision/Multimodal_Vision.md) —— 视觉感知能力
+- **Fine-tuning**: [Fine-tuning Techniques](../../05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques.md) —— 定制化 Agent 能力
+- **多模态**: [Multimodal Vision](../../04_Computer_Vision/Multimodal_Vision/Multimodal_Vision.md) —— 视觉感知能力
 
 ### 10.3 应用领域
-- **软件工程**: [Deployment & Inference](../../09_Deployment_Inference/Deployment_Inference.md)
-- **MLOps**: [MLOps Pipeline](../../10_MLOps_Pipeline/MLOps_Pipeline.md) —— Agent 在 CI/CD 中的应用
+- **软件工程**: [Deployment & Inference](../../10_Deployment_Inference/Deployment_Inference.md)
+- **MLOps**: [MLOps Pipeline](../../11_MLOps_Pipeline/MLOps_Pipeline.md) —— Agent 在 CI/CD 中的应用
 
 ## 12. 面试高频问题 (Interview FAQs)
 

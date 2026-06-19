@@ -3,12 +3,12 @@ title: "联邦学习 (Federated Learning)"
 category: concept
 tags: ["privacy", "federated-learning", "FedAvg", "distributed-training", "differential-privacy"]
 relationships:
-  - target: "concepts/neural-networks"
+  - target: "_concepts/neural-networks"
     type: builds_on
-  - target: "concepts/bayesian-methods"
+  - target: "_concepts/bayesian-methods"
     type: related_to
 sources:
-  - 19_Ethics_Safety/Federated_Learning
+  - 17_Ethics_Safety/Federated_Learning
 summary: "联邦学习让多个参与方在不共享原始数据的前提下协作训练模型——数据不动模型动。核心算法FedAvg/FedProx，隐私保护用差分隐私+安全聚合。"
 provenance:
   extracted: 0.45
@@ -65,6 +65,6 @@ updated: 2026-06-04
 
 ## Related
 
-- [[19_Ethics_Safety/Federated_Learning]] — 联邦学习深度解析
-- [[concepts/neural-networks]] — 神经网络基础
-- [[concepts/bayesian-methods]] — 贝叶斯方法（不确定性量化）
+- [[17_Ethics_Safety/Federated_Learning]] — 联邦学习深度解析
+- [[_concepts/neural-networks]] — 神经网络基础
+- [[_concepts/bayesian-methods]] — 贝叶斯方法（不确定性量化）

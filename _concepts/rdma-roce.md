@@ -3,17 +3,17 @@ title: RDMA/RoCE (高速 GPU 网络)
 category: concepts
 tags: [infrastructure, networking, rdma, roce, gpu-cluster]
 relationships:
-  - target: "concepts/heterogeneous-gpu"
+  - target: "_concepts/heterogeneous-gpu"
     type: enables
-  - target: "concepts/distributed-systems"
+  - target: "_concepts/distributed-systems"
     type: extends
-  - target: "concepts/gpu-interconnect"
+  - target: "_concepts/gpu-interconnect"
     type: related_to
-  - target: "09_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy"
+  - target: "10_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy"
     type: simplified_by
 sources:
   - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
-  - 09_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy.md
+  - 10_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy.md
 summary: RDMA (Remote Direct Memory Access) 允许 GPU 间直接内存访问绕过 CPU/OS，RoCE (RDMA over Converged Ethernet) 将其承载在以太网上。AI Stack 16 卡版机间通信带宽达 1.6T，采用 RoCE + 拓扑感知路由实现低时延无拥塞通信。
 provenance:
   extracted: 0.85
@@ -99,7 +99,7 @@ AI Stack 16 卡版网络
 
 ## Related
 
-- [[concepts/heterogeneous-gpu]] — 异构 GPU 集群
-- [[concepts/distributed-systems]] — 分布式系统
-- [[concepts/training-inference-unification]] — 训推一体
+- [[_concepts/heterogeneous-gpu]] — 异构 GPU 集群
+- [[_concepts/distributed-systems]] — 分布式系统
+- [[_concepts/training-inference-unification]] — 训推一体
 - [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — 阿里云 AI Stack

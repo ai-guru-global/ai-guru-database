@@ -4,13 +4,13 @@ category: concepts
 tags: [ai, 历史, 时间线, 图灵, 深度学习, ChatGPT]
 aliases: [AI发展史, AI History, 人工智能历史]
 relationships:
-  - target: "[[concepts/ai-fundamentals]]"
+  - target: "[[_concepts/ai-fundamentals]]"
     type: related_to
-  - target: "concepts/ai-technology-landscape"
+  - target: "_concepts/ai-technology-landscape"
     type: related_to
-  - target: "concepts/ai-ethics"
+  - target: "_concepts/ai-ethics"
     type: related_to
-  - target: "concepts/ai-future-trends"
+  - target: "_concepts/ai-future-trends"
     type: related_to
 sources: [00_AI_Introduction/AI_History_Timeline.md]
 summary: 人工智能75年历史呈现"希望-失望-突破"的循环周期，从1950年图灵测试到2026年Agentic AI，经历两次寒冬后进入最持久的深度学习夏天。
@@ -170,9 +170,9 @@ AI发展呈现"技术突破→过度乐观→泡沫破裂→技术成熟"的周�
 
 ## 来源
 
-- references/00_AI_Introduction/AI_History_Timeline
+- _references/00_AI_Introduction/AI_History_Timeline
 
 ## Related
 
-- [[concepts/ai-fundamentals]] — AI基础概念 (共享: ai, 深度学习)
-- [[concepts/ai-technology-landscape]] — AI技术全景 (共享: ai, 深度学习)
+- [[_concepts/ai-fundamentals]] — AI基础概念 (共享: ai, 深度学习)
+- [[_concepts/ai-technology-landscape]] — AI技术全景 (共享: ai, 深度学习)

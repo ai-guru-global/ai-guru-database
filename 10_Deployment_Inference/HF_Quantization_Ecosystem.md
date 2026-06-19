@@ -121,7 +121,7 @@ model = AutoModelForCausalLM.from_pretrained(
 ---
 
 ## 相关阅读
-- [[09_Deployment_Inference/TGI_Deep_Dive]]
-- [[09_Deployment_Inference/vLLM_Deep_Dive]]
-- [[04_NLP_LLMs/Fine_tuning_Techniques/PEFT_Advanced_2026]]
+- [[10_Deployment_Inference/TGI_Deep_Dive]]
+- [[10_Deployment_Inference/vLLM_Deep_Dive]]
+- [[05_NLP_LLMs/Fine_tuning_Techniques/PEFT_Advanced_2026]]
 - [[01_Fundamentals/AI_Hardware/AI_Hardware_2026]]

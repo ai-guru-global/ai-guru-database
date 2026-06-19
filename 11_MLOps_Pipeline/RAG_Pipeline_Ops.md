@@ -6,14 +6,14 @@ summary: "> **一句话理解**: RAG 系统的运维难点不在「检索」，�
 created: 2026-06-15
 updated: 2026-06-15
 tier: core
-parent: "[[10_MLOps_Pipeline/LLMOps_2026]]"
+parent: "[[11_MLOps_Pipeline/LLMOps_2026]]"
 ---
 
 # RAG 流水线运维
 
 > **一句话理解**: RAG 系统的运维难点不在「检索」，而在「知识库是活的」——文档在变、切块策略在调、Embedding 模型在升级，每个变更都可能让召回质量崩塌。
 
-本文是 [[LLMOps_2026]] §6「RAG 流水线运维」的深扩专题，专注 Ops 视角。RAG 的架构与算法详见 [[11_RAG_Systems/README]]。
+本文是 [[LLMOps_2026]] §6「RAG 流水线运维」的深扩专题，专注 Ops 视角。RAG 的架构与算法详见 [[14_RAG_Systems/README]]。
 
 ---
 
@@ -400,7 +400,7 @@ jobs:
 | **Pinecone** | 后台异步 | 实时 | namespace | SaaS |
 | **pgvector** | 慢（VACUUM） | 事务 | 标准 SQL | PostgreSQL |
 
-详见 [[11_RAG_Systems/Vector_Database_for_dummy]]、[[concepts/vector-database]]。
+详见 [[14_RAG_Systems/Vector_Database_for_dummy]]、[[_concepts/vector-database]]。
 
 ---
 
@@ -427,21 +427,21 @@ jobs:
 ## 10. 相关文档
 
 ### 本章内
-- [[10_MLOps_Pipeline/LLMOps_2026]] — 本系列主线（§6 是本文的概览版）
-- [[10_MLOps_Pipeline/LLM_Evaluation_Pipeline]] — RAG 质量评估方法
-- [[10_MLOps_Pipeline/Model_Monitoring_and_Drift_Detection_2026]] — 漂移检测理论
-- [[10_MLOps_Pipeline/Data_Pipeline_Orchestration]] — 数据编排（RAG Pipeline 的基础）
+- [[11_MLOps_Pipeline/LLMOps_2026]] — 本系列主线（§6 是本文的概览版）
+- [[11_MLOps_Pipeline/LLM_Evaluation_Pipeline]] — RAG 质量评估方法
+- [[11_MLOps_Pipeline/Model_Monitoring_and_Drift_Detection_2026]] — 漂移检测理论
+- [[11_MLOps_Pipeline/Data_Pipeline_Orchestration]] — 数据编排（RAG Pipeline 的基础）
 
 ### 跨章
-- [[11_RAG_Systems/README]] — RAG 系统架构（本文侧重其 Ops）
-- [[11_RAG_Systems/RAG_Systems_for_dummy]] — RAG 入门
-- [[11_RAG_Systems/Vector_Database_for_dummy]] — 向量库入门
-- [[concepts/vector-database]] — 向量库概念
-- [[concepts/rag-systems]] — RAG 概念
-- [[concepts/embedding-models]] — Embedding 模型
-- [[concepts/matryoshka-representation-learning]] — 可截断嵌入（节省存储）
-- [[15_Testing/RAGAS_Deep_Dive]] — RAG 评估事实标准
-- [[09_Deployment_Inference/Prompt_Caching_Advanced]] — 缓存与 RAG
+- [[14_RAG_Systems/README]] — RAG 系统架构（本文侧重其 Ops）
+- [[14_RAG_Systems/RAG_Systems_for_dummy]] — RAG 入门
+- [[14_RAG_Systems/Vector_Database_for_dummy]] — 向量库入门
+- [[_concepts/vector-database]] — 向量库概念
+- [[_concepts/rag-systems]] — RAG 概念
+- [[_concepts/embedding-models]] — Embedding 模型
+- [[_concepts/matryoshka-representation-learning]] — 可截断嵌入（节省存储）
+- [[09_Testing/RAGAS_Deep_Dive]] — RAG 评估事实标准
+- [[10_Deployment_Inference/Prompt_Caching_Advanced]] — 缓存与 RAG
 
 ---
 

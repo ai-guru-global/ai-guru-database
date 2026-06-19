@@ -299,7 +299,7 @@ Few-shot (少样本):
 关键洞察: 模型没有更新权重！它只是在 context 中"理解"了任务。
 ```
 
-> **相关文档**: GPT-3 的详细论文分析，参见 [GPT-3 Deep Dive](../../22_Papers/GPT3_Deep_Dive.md)
+> **相关文档**: GPT-3 的详细论文分析，参见 [GPT-3 Deep Dive](../../20_Papers/GPT3_Deep_Dive.md)
 
 ### 3.2 GPT-3.5 / ChatGPT: AI 革命的引爆点 (2022)
 
@@ -411,7 +411,7 @@ graph TB
 | 训练成本 | ~$5M | ~$100M |
 | 显存需求 | ~350 GB (FP16) | ~3.5 TB (FP16) |
 
-> **相关文档**: MoE 架构的详细技术分析，参见 [Mixture of Experts Deep Dive](../../22_Papers/Mixture_of_Experts_Deep_Dive.md)
+> **相关文档**: MoE 架构的详细技术分析，参见 [Mixture of Experts Deep Dive](../../20_Papers/Mixture_of_Experts_Deep_Dive.md)
 
 #### 3.3.3 GPT-4 能力突破
 
@@ -1005,7 +1005,7 @@ Reward Model 训练:
        y_l = 人类不偏好的回复 (loser)
 ```
 
-> **相关文档**: RLHF 和 DPO 的详细技术对比，参见 [RLHF & DPO Deep Dive](../../22_Papers/RLHF_DPO_Deep_Dive.md)
+> **相关文档**: RLHF 和 DPO 的详细技术对比，参见 [RLHF & DPO Deep Dive](../../20_Papers/RLHF_DPO_Deep_Dive.md)
 
 ### 6.2 In-context Learning: 上下文学习
 
@@ -1684,7 +1684,7 @@ API 调用:
 ### 架构基础
 
 - [LLM Architectures (大语言模型架构)](../LLM_Architectures/LLM_Architectures.md) — Transformer, GPT, BERT, MoE 等核心架构的全面介绍
-- [Mixture of Experts Deep Dive](../../22_Papers/Mixture_of_Experts_Deep_Dive.md) — MoE 从理论到实践的完整剖析
+- [Mixture of Experts Deep Dive](../../20_Papers/Mixture_of_Experts_Deep_Dive.md) — MoE 从理论到实践的完整剖析
 - [MoE Case Studies: DeepSeek & Mixtral](../LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md) — MoE 路由策略与专家专业化分析
 - [MoE Routing and Load Balancing](../LLM_Architectures/MoE_Routing_and_Load_Balancing.md) — MoE 负载均衡技术详解
 
@@ -1698,9 +1698,9 @@ API 调用:
 
 ### 核心论文
 
-- [GPT-3 Deep Dive](../../22_Papers/GPT3_Deep_Dive.md) — GPT-3 论文的深度解析, Scaling Laws 与 In-context Learning
-- [RLHF & DPO Deep Dive](../../22_Papers/RLHF_DPO_Deep_Dive.md) — 人类反馈强化学习与直接偏好优化的技术对比
-- [Attention Is All You Need Deep Dive](../../22_Papers/Attention_Is_All_You_Need_Deep_Dive.md) — Transformer 架构原始论文解析
+- [GPT-3 Deep Dive](../../20_Papers/GPT3_Deep_Dive.md) — GPT-3 论文的深度解析, Scaling Laws 与 In-context Learning
+- [RLHF & DPO Deep Dive](../../20_Papers/RLHF_DPO_Deep_Dive.md) — 人类反馈强化学习与直接偏好优化的技术对比
+- [Attention Is All You Need Deep Dive](../../20_Papers/Attention_Is_All_You_Need_Deep_Dive.md) — Transformer 架构原始论文解析
 
 ### 多模态
 

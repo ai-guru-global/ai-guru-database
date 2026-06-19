@@ -3,20 +3,20 @@ title: "KV Cache 压缩"
 category: concepts
 tags: ["kv-cache", "compression", "inference", "long-context", "optimization"]
 relationships:
-  - target: "concepts/kv-cache"
+  - target: "_concepts/kv-cache"
     type: optimizes
-  - target: "concepts/kv-cache-plain"
+  - target: "_concepts/kv-cache-plain"
     type: simplified_version_of
-  - target: "concepts/multi-head-latent-attention"
+  - target: "_concepts/multi-head-latent-attention"
     type: related_to
-  - target: "concepts/grouped-query-attention"
+  - target: "_concepts/grouped-query-attention"
     type: related_to
-  - target: "concepts/quantization"
+  - target: "_concepts/quantization"
     type: complements
 sources:
-  - 04_NLP_LLMs/LLM_Architecture_Evolution.md
-  - 09_Deployment_Inference/KV_Cache_Deep_Dive.md
-  - 09_Deployment_Inference/Inference_Performance/Long_Context_Inference_2026.md
+  - 05_NLP_LLMs/LLM_Architecture_Evolution.md
+  - 10_Deployment_Inference/KV_Cache_Deep_Dive.md
+  - 10_Deployment_Inference/Inference_Performance/Long_Context_Inference_2026.md
 summary: "KV Cache 压缩就像把大模型推理时的‘记忆笔记本’变薄：通过量化、稀疏化、低秩近似、共享注意力头等技术，减少显存占用，让长上下文推理和多轮对话更便宜、更快。"
 provenance:
   extracted: 0.7
@@ -87,10 +87,10 @@ GQA/MLA：直接减少需要保存的 KV 数量
 
 ## Related
 
-- [[concepts/kv-cache]] — KV Cache 技术详解
-- [[concepts/kv-cache-plain]] — KV Cache 大白话解释
-- [[concepts/grouped-query-attention]] — 分组查询注意力（GQA）
-- [[concepts/multi-head-latent-attention]] — Multi-head Latent Attention (MLA)
-- [[concepts/quantization]] — 模型量化
-- [[09_Deployment_Inference/KV_Cache_Deep_Dive]] — KV Cache 深度研究
-- [[09_Deployment_Inference/Inference_Performance/Long_Context_Inference_2026]] — 长上下文推理 2026
+- [[_concepts/kv-cache]] — KV Cache 技术详解
+- [[_concepts/kv-cache-plain]] — KV Cache 大白话解释
+- [[_concepts/grouped-query-attention]] — 分组查询注意力（GQA）
+- [[_concepts/multi-head-latent-attention]] — Multi-head Latent Attention (MLA)
+- [[_concepts/quantization]] — 模型量化
+- [[10_Deployment_Inference/KV_Cache_Deep_Dive]] — KV Cache 深度研究
+- [[10_Deployment_Inference/Inference_Performance/Long_Context_Inference_2026]] — 长上下文推理 2026

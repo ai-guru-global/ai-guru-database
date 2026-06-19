@@ -3,19 +3,19 @@ title: "红队测试"
 category: concepts
 tags: ["red-teaming", "safety", "llm-safety", "jailbreak", "adversarial", "evaluation"]
 relationships:
-  - target: "concepts/model-evaluation"
+  - target: "_concepts/model-evaluation"
     type: belongs_to
-  - target: "concepts/llm-safety"
+  - target: "_concepts/llm-safety"
     type: tests
-  - target: "concepts/tool-calling-safety"
+  - target: "_concepts/tool-calling-safety"
     type: tests
-  - target: "concepts/guardrails"
+  - target: "_concepts/guardrails"
     type: informs
-  - target: "concepts/bbh"
+  - target: "_concepts/bbh"
     type: differs_from
 sources:
-  - 19_Ethics_Safety/LLM_Security_Defense_Guide.md
-  - 19_Ethics_Safety/Safety_Evaluation_Framework.md
+  - 17_Ethics_Safety/LLM_Security_Defense_Guide.md
+  - 17_Ethics_Safety/Safety_Evaluation_Framework.md
   - 08_Model_Evaluation/README.md
 summary: "红队测试是主动找 AI 系统漏洞的安全评估方法。测试者扮演‘攻击方’，用各种刁钻、恶意、诱导性的输入试图让模型输出有害内容、泄露隐私或做出危险行为，从而提前发现并修复风险。"
 provenance:
@@ -95,9 +95,9 @@ updated: 2026-06-16
 
 ## Related
 
-- [[concepts/model-evaluation]] — 模型评估
-- [[concepts/llm-safety]] — LLM 安全
-- [[concepts/tool-calling-safety]] — 工具调用安全
-- [[concepts/guardrails]] — Guardrails
-- [[19_Ethics_Safety/LLM_Security_Defense_Guide]] — LLM 安全防御指南
-- [[19_Ethics_Safety/Safety_Evaluation_Framework]] — 安全评估框架
+- [[_concepts/model-evaluation]] — 模型评估
+- [[_concepts/llm-safety]] — LLM 安全
+- [[_concepts/tool-calling-safety]] — 工具调用安全
+- [[_concepts/guardrails]] — Guardrails
+- [[17_Ethics_Safety/LLM_Security_Defense_Guide]] — LLM 安全防御指南
+- [[17_Ethics_Safety/Safety_Evaluation_Framework]] — 安全评估框架

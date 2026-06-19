@@ -63,9 +63,9 @@ updated: 2026-05-31
 
 ## Related
 
-- [[05_Computer_Vision/README]] — 05 计算机视觉 (Computer Vision) (共享: cnn, computer-vision, cv, image-processing)
-- [[05_Computer_Vision/Segmentation/Segmentation_for_dummy]] — 图像分割 - 小白版 ✂️ (共享: cnn, computer-vision, cv, image-processing)
-- [[22_Papers/ResNet_Deep_Dive]] — ResNet 深度解读 (Deep Residual Learning for Image Recognition) (共享: cnn, cv)
-- [[concepts/computer-vision]] — 计算机视觉 (共享: cnn, cv)
-- [[05_Computer_Vision/ViT_Deep_Dive.md|ViT_Deep_Dive]]
-- [[05_Computer_Vision/README_for_dummy.md|README_for_dummy]]
+- [[04_Computer_Vision/README]] — 05 计算机视觉 (Computer Vision) (共享: cnn, computer-vision, cv, image-processing)
+- [[04_Computer_Vision/Segmentation/Segmentation_for_dummy]] — 图像分割 - 小白版 ✂️ (共享: cnn, computer-vision, cv, image-processing)
+- [[20_Papers/ResNet_Deep_Dive]] — ResNet 深度解读 (Deep Residual Learning for Image Recognition) (共享: cnn, cv)
+- [[_concepts/computer-vision]] — 计算机视觉 (共享: cnn, cv)
+- [[04_Computer_Vision/ViT_Deep_Dive.md|ViT_Deep_Dive]]
+- [[04_Computer_Vision/README_for_dummy.md|README_for_dummy]]

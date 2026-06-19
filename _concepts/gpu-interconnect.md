@@ -3,19 +3,19 @@ title: "NVLink 与 GPU 互联技术"
 category: concept
 tags: ["nvlink", "gpu-interconnect", "pcie", "hccs", "nvswitch", "infiniband"]
 relationships:
-  - target: "concepts/ai-hardware"
+  - target: "_concepts/ai-hardware"
     type: belongs_to
-  - target: "concepts/distributed-parallelism"
+  - target: "_concepts/distributed-parallelism"
     type: enables
-  - target: "concepts/rdma-roce"
+  - target: "_concepts/rdma-roce"
     type: related_to
-  - target: "concepts/heterogeneous-gpu"
+  - target: "_concepts/heterogeneous-gpu"
     type: related_to
-  - target: "09_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy"
+  - target: "10_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy"
     type: simplified_by
 sources:
   - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
-  - 09_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy.md
+  - 10_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy.md
 summary: "GPU 互联是分布式训练/推理的通信瓶颈。NVLink 5.0 达 1.8 TB/s 双向带宽，是 PCIe 5.0 的 14 倍。AI Stack APG 卡间互联达 700 GB/s，机间 1.6T。"
 provenance:
   extracted: 0.55
@@ -184,8 +184,8 @@ NVSwitch 优势：
 
 ## Related
 
-- [[concepts/ai-hardware]] — AI 硬件（GPU 计算能力）
-- [[concepts/distributed-parallelism]] — 分布式并行策略（互联是基础）
-- [[concepts/rdma-roce]] — RDMA/RoCE（机间网络通信）
-- [[concepts/heterogeneous-gpu]] — 异构 GPU（国产互联挑战）
+- [[_concepts/ai-hardware]] — AI 硬件（GPU 计算能力）
+- [[_concepts/distributed-parallelism]] — 分布式并行策略（互联是基础）
+- [[_concepts/rdma-roce]] — RDMA/RoCE（机间网络通信）
+- [[_concepts/heterogeneous-gpu]] — 异构 GPU（国产互联挑战）
 - [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack（APG 互联架构）

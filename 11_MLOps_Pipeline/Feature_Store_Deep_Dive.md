@@ -505,6 +505,6 @@ feature_view = FeatureView(
 
 ## Related
 
-- [[10_MLOps_Pipeline/Data_Pipeline_Orchestration.md|Data_Pipeline_Orchestration]]
-- [[10_MLOps_Pipeline/MLOps-in-nutshell.md|MLOps-in-nutshell]]
-- [[concepts/mlops.md|mlops]]
+- [[11_MLOps_Pipeline/Data_Pipeline_Orchestration.md|Data_Pipeline_Orchestration]]
+- [[11_MLOps_Pipeline/MLOps-in-nutshell.md|MLOps-in-nutshell]]
+- [[_concepts/mlops.md|mlops]]

@@ -31,11 +31,11 @@ updated: 2026-06-12
 
 | 子模块 | 核心内容 | 链接 |
 |--------|---------|------|
-| **图像分类与检测** | ResNet、YOLO、DETR | [[05_Computer_Vision/Image_Classification_Detection/Image_Classification_Detection]] |
-| **图像分割** | 语义分割、实例分割、SAM | [[05_Computer_Vision/Segmentation/Segmentation]] |
-| **生成模型** | GAN、Diffusion、VAE | [[05_Computer_Vision/Generative_Models/Generative_Models]] |
-| **视频生成** | Sora、Runway、Kling | [[05_Computer_Vision/Video_Generation/Video_Generation_2026]] |
-| **3D 视觉** | NeRF、3D Gaussian Splatting | [[05_Computer_Vision/3D_Vision/3D_Vision]] |
+| **图像分类与检测** | ResNet、YOLO、DETR | [[04_Computer_Vision/Image_Classification_Detection/Image_Classification_Detection]] |
+| **图像分割** | 语义分割、实例分割、SAM | [[04_Computer_Vision/Segmentation/Segmentation]] |
+| **生成模型** | GAN、Diffusion、VAE | [[04_Computer_Vision/Generative_Models/Generative_Models]] |
+| **视频生成** | Sora、Runway、Kling | [[04_Computer_Vision/Video_Generation/Video_Generation_2026]] |
+| **3D 视觉** | NeRF、3D Gaussian Splatting | [[04_Computer_Vision/3D_Vision/3D_Vision]] |
 
 ---
 
@@ -160,10 +160,10 @@ YOLO (You Only Look Once) 将目标检测转化为单次回归问题，是实时
 
 ## 延伸阅读 (Further Reading)
 
-- [[05_Computer_Vision/CV-in-nutshell]] — 计算机视觉速成指南
-- [[05_Computer_Vision/ViT_Deep_Dive]] — Vision Transformer 深度解读
-- [[05_Computer_Vision/Image_Classification_Detection/Image_Classification_Detection]] — 图像分类与检测
-- [[05_Computer_Vision/Segmentation/Segmentation]] — 图像分割
-- [[05_Computer_Vision/Generative_Models/Generative_Models]] — 生成模型
-- [[05_Computer_Vision/Video_Generation/Video_Generation_2026]] — 视频生成 2026
-- [[05_Computer_Vision/3D_Vision/3D_Vision]] — 3D 视觉
+- [[04_Computer_Vision/CV-in-nutshell]] — 计算机视觉速成指南
+- [[04_Computer_Vision/ViT_Deep_Dive]] — Vision Transformer 深度解读
+- [[04_Computer_Vision/Image_Classification_Detection/Image_Classification_Detection]] — 图像分类与检测
+- [[04_Computer_Vision/Segmentation/Segmentation]] — 图像分割
+- [[04_Computer_Vision/Generative_Models/Generative_Models]] — 生成模型
+- [[04_Computer_Vision/Video_Generation/Video_Generation_2026]] — 视频生成 2026
+- [[04_Computer_Vision/3D_Vision/3D_Vision]] — 3D 视觉

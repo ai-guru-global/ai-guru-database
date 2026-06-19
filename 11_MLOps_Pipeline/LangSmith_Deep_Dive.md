@@ -11,7 +11,7 @@ updated: "2026-05-31"
 
 > **一句话理解**: LangSmith 是 LangChain 的 LLM 应用调试平台——请求追踪、日志分析、评估测试、质量监控，LLM 应用的开发者工具。
 
-> 📐 **概念与选型方法论**: LLM 评估方法论见 [[10_MLOps_Pipeline/LLM_Evaluation_Pipeline]]，LLM 可观测性见 [[10_MLOps_Pipeline/LLM_Observability]]。本文聚焦 LangSmith 工具用法。
+> 📐 **概念与选型方法论**: LLM 评估方法论见 [[11_MLOps_Pipeline/LLM_Evaluation_Pipeline]]，LLM 可观测性见 [[11_MLOps_Pipeline/LLM_Observability]]。本文聚焦 LangSmith 工具用法。
 
 ---
 
@@ -354,8 +354,8 @@ results = compare(
 
 ## Related
 
-- [[16_AI_Ops/AIOps-in-nutshell.md|AIOps-in-nutshell]]
-- [[16_AI_Ops/AI_Incident_Response_Playbook.md|AI_Incident_Response_Playbook]]
-- [[16_AI_Ops/AI_Ops_for_dummy.md|AI_Ops_for_dummy]]
-- [[16_AI_Ops/README.md|16_AI_Ops README]]
-- [[16_AI_Ops/README_for_dummy.md|README_for_dummy]]
+- [[13_AI_Ops/AIOps-in-nutshell.md|AIOps-in-nutshell]]
+- [[13_AI_Ops/AI_Incident_Response_Playbook.md|AI_Incident_Response_Playbook]]
+- [[13_AI_Ops/AI_Ops_for_dummy.md|AI_Ops_for_dummy]]
+- [[13_AI_Ops/README.md|13_AI_Ops README]]
+- [[13_AI_Ops/README_for_dummy.md|README_for_dummy]]

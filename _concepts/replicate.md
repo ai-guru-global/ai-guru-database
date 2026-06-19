@@ -3,16 +3,16 @@ title: "Replicate"
 category: concept
 tags: ["replicate", "model-hosting", "api", "gpu", "cloud", "inference", "open-source", "model-marketplace"]
 relationships:
-  - target: "concepts/model-serving"
+  - target: "_concepts/model-serving"
     type: extends
-  - target: "concepts/serverless"
+  - target: "_concepts/serverless"
     type: implements
-  - [[concepts/modal]]
+  - [[_concepts/modal]]
     type: related_to
-  - target: "concepts/huggingface"
+  - target: "_concepts/huggingface"
     type: related_to
 sources:
-  - 09_Deployment_Inference/Replicate_Deep_Dive.md
+  - 10_Deployment_Inference/Replicate_Deep_Dive.md
 summary: "Replicate 是开源模型托管与 API 平台，允许开发者上传模型并通过 HTTP API 调用，提供自动扩缩容、按秒计费和多语言 SDK，是快速上线开源模型的热门选择。"
 provenance:
   extracted: 0.75
@@ -115,8 +115,8 @@ class Predictor(BasePredictor):
 
 ## Related
 
-- [[concepts/replicate]] — Replicate 概念卡片
-- [[concepts/model-serving]] — 模型服务
-- [[concepts/modal]] — Modal
-- [[concepts/huggingface]] — HuggingFace
-- [[concepts/serverless]] — 无服务器
+- [[_concepts/replicate]] — Replicate 概念卡片
+- [[_concepts/model-serving]] — 模型服务
+- [[_concepts/modal]] — Modal
+- [[_concepts/huggingface]] — HuggingFace
+- [[_concepts/serverless]] — 无服务器

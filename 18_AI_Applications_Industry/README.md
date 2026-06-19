@@ -59,12 +59,12 @@ updated: 2026-05-31
 ### 行业分析师路径
 1. 阅读 [AI应用与行业融合全景](./AI_Applications_Industry.md) 了解整体图景
 2. 选择感兴趣的行业深入阅读对应文件
-3. 结合 [09_Deployment_Inference](../09_Deployment_Inference/) 了解工程实现
+3. 结合 [10_Deployment_Inference](../10_Deployment_Inference/) 了解工程实现
 
 ### 产品经理路径
 1. 了解各行业 AI 应用场景和最新案例
-2. 学习 [Agent_Production](../13_Agent_Production/) 了解 AI Agent 产品化
-3. 研究 [AI_Coding_Assistants](../17_AI_Coding/02_Tools/AI_Coding_Assistants_2026.md) 提升开发效率
+2. 学习 [Agent_Production](../15_Agent_Production/) 了解 AI Agent 产品化
+3. 研究 [AI_Coding_Assistants](../16_AI_Coding/Tools/AI_Coding_Assistants_2026.md) 提升开发效率
 
 ## 参考资源
 
@@ -79,32 +79,32 @@ updated: 2026-05-31
 *Last updated: 2026-04-03*
 
 ## Related
-- [[20_AI_Applications_Industry/AI_for_Science/AI_for_Science_Deep_Dive|AI for Science 深度解读: 从 AlphaFold 到科学基础模型]]
-- [[20_AI_Applications_Industry/AI_for_Science/README|AI for Science (AI 驱动的科学发现)]]
-- [[20_AI_Applications_Industry/AI_Applications_Industry|AI应用与行业融合全景]]
-- [[20_AI_Applications_Industry/AI_Applications_Industry_for_dummy|AI 行业应用 - 小白版]]
-- [[20_AI_Applications_Industry/Industry_Applications-in-nutshell|AI 行业应用速览]] — 横向速览 AI 在各行业的落地全景 (共享: ai-applications, industry, finance, healthcare)
-- [[20_AI_Applications_Industry/Industry-in-nutshell|AI 行业应用速成指南]]
+- [[18_AI_Applications_Industry/AI_for_Science/AI_for_Science_Deep_Dive|AI for Science 深度解读: 从 AlphaFold 到科学基础模型]]
+- [[18_AI_Applications_Industry/AI_for_Science/README|AI for Science (AI 驱动的科学发现)]]
+- [[18_AI_Applications_Industry/AI_Applications_Industry|AI应用与行业融合全景]]
+- [[18_AI_Applications_Industry/AI_Applications_Industry_for_dummy|AI 行业应用 - 小白版]]
+- [[18_AI_Applications_Industry/Industry_Applications-in-nutshell|AI 行业应用速览]] — 横向速览 AI 在各行业的落地全景 (共享: ai-applications, industry, finance, healthcare)
+- [[18_AI_Applications_Industry/Industry-in-nutshell|AI 行业应用速成指南]]
 
-- [[20_AI_Applications_Industry/Energy_Climate/AI_Energy_Climate_2026]] — AI 能源与气候行业应用 (2025-2026) (共享: ai-applications, finance, healthcare, industry)
-- [[20_AI_Applications_Industry/Industry_Comparison_2026]] — AI 行业应用对比 2026 (Industry Comparison) (共享: ai-applications, finance, healthcare, industry)
-- [[20_AI_Applications_Industry/README_for_dummy]] — AI 行业应用 — 小白版 🏭 (共享: ai-applications, finance, healthcare, industry)
-- [[20_AI_Applications_Industry/Agriculture/AI_Agriculture_2026]] — AI_Agriculture_2026
-- [[20_AI_Applications_Industry/Retail_Ecommerce/AI_Retail_Ecommerce_2026]] — AI_Retail_Ecommerce_2026
-- [[20_AI_Applications_Industry/Healthcare/AI_Healthcare_2026]] — AI_Healthcare_2026
-- [[20_AI_Applications_Industry/Content_Media/AI_Content_Media_2026]] — AI_Content_Media_2026
-- [[20_AI_Applications_Industry/Education/AI_Education_2026]] — AI_Education_2026
-- [[20_AI_Applications_Industry/Manufacturing/AI_Manufacturing_2026]] — AI_Manufacturing_2026
-- [[20_AI_Applications_Industry/Legal_Government/AI_Legal_Government_2026]] — AI_Legal_Government_2026
-- [[20_AI_Applications_Industry/Autonomous_Driving/AI_Autonomous_Driving_2026]] — AI_Autonomous_Driving_2026
-- [[20_AI_Applications_Industry/Finance/AI_Finance_2026]] — AI_Finance_2026
-- [[20_AI_Applications_Industry/AI_Applications_Industry_for_dummy.md|AI_Applications_Industry_for_dummy]]
-- [[20_AI_Applications_Industry/Industry-in-nutshell.md|Industry-in-nutshell]]
-- [[synthesis/ai-industry-applications|Ai Industry Applications]]
+- [[18_AI_Applications_Industry/Energy_Climate/AI_Energy_Climate_2026]] — AI 能源与气候行业应用 (2025-2026) (共享: ai-applications, finance, healthcare, industry)
+- [[18_AI_Applications_Industry/Industry_Comparison_2026]] — AI 行业应用对比 2026 (Industry Comparison) (共享: ai-applications, finance, healthcare, industry)
+- [[18_AI_Applications_Industry/README_for_dummy]] — AI 行业应用 — 小白版 🏭 (共享: ai-applications, finance, healthcare, industry)
+- [[18_AI_Applications_Industry/Agriculture/AI_Agriculture_2026]] — AI_Agriculture_2026
+- [[18_AI_Applications_Industry/Retail_Ecommerce/AI_Retail_Ecommerce_2026]] — AI_Retail_Ecommerce_2026
+- [[18_AI_Applications_Industry/Healthcare/AI_Healthcare_2026]] — AI_Healthcare_2026
+- [[18_AI_Applications_Industry/Content_Media/AI_Content_Media_2026]] — AI_Content_Media_2026
+- [[18_AI_Applications_Industry/Education/AI_Education_2026]] — AI_Education_2026
+- [[18_AI_Applications_Industry/Manufacturing/AI_Manufacturing_2026]] — AI_Manufacturing_2026
+- [[18_AI_Applications_Industry/Legal_Government/AI_Legal_Government_2026]] — AI_Legal_Government_2026
+- [[18_AI_Applications_Industry/Autonomous_Driving/AI_Autonomous_Driving_2026]] — AI_Autonomous_Driving_2026
+- [[18_AI_Applications_Industry/Finance/AI_Finance_2026]] — AI_Finance_2026
+- [[18_AI_Applications_Industry/AI_Applications_Industry_for_dummy.md|AI_Applications_Industry_for_dummy]]
+- [[18_AI_Applications_Industry/Industry-in-nutshell.md|Industry-in-nutshell]]
+- [[_synthesis/ai-industry-applications|Ai Industry Applications]]
 
 ## 新增页面
 
-- [[20_AI_Applications_Industry/Code_Generation/AI_Code_Generation_2026|AI 代码生成]]
-- [[20_AI_Applications_Industry/Finance/AI_Finance_Applications_2026|AI 金融应用]]
-- [[20_AI_Applications_Industry/Education/AI_Education_Applications_2026|AI 教育应用]]
-- [[20_AI_Applications_Industry/Healthcare/AI_Healthcare_Applications_2026|AI 医疗应用]]
+- [[18_AI_Applications_Industry/Code_Generation/AI_Code_Generation_2026|AI 代码生成]]
+- [[18_AI_Applications_Industry/Finance/AI_Finance_Applications_2026|AI 金融应用]]
+- [[18_AI_Applications_Industry/Education/AI_Education_Applications_2026|AI 教育应用]]
+- [[18_AI_Applications_Industry/Healthcare/AI_Healthcare_Applications_2026|AI 医疗应用]]

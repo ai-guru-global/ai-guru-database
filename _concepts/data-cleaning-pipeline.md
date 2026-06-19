@@ -3,15 +3,15 @@ title: "数据清洗 Pipeline"
 category: concepts
 tags: ["data-cleaning", "data-curation", "pretraining", "fine-tuning", "pipeline", "data-quality"]
 relationships:
-  - target: "concepts/llm-data-engineering"
+  - target: "_concepts/llm-data-engineering"
     type: belongs_to
-  - target: "concepts/model-training"
+  - target: "_concepts/model-training"
     type: precedes
-  - target: "concepts/scaling-laws"
+  - target: "_concepts/scaling-laws"
     type: influences
 sources:
   - 07_Model_Training/Data_Curation_and_Mixture_2026.md
-  - 04_NLP_LLMs/LLM_Data_Engineering.md
+  - 05_NLP_LLMs/LLM_Data_Engineering.md
   - 07_Model_Training/README.md
 summary: "数据清洗 Pipeline 就像给 AI 准备‘干净食材’的中央厨房：把从网上抓来的原始数据，经过去重、去噪、格式统一、质量打分、毒性过滤等步骤，变成适合训练大模型的高质量语料。"
 provenance:
@@ -90,8 +90,8 @@ updated: 2026-06-16
 
 ## Related
 
-- [[concepts/llm-data-engineering]] — 大模型数据工程
-- [[concepts/model-training]] — 模型训练
-- [[concepts/synthetic-data]] — 合成数据
+- [[_concepts/llm-data-engineering]] — 大模型数据工程
+- [[_concepts/model-training]] — 模型训练
+- [[_concepts/synthetic-data]] — 合成数据
 - [[07_Model_Training/Data_Curation_and_Mixture_2026]] — 数据策展与配比 2026
-- [[04_NLP_LLMs/LLM_Data_Engineering]] — 大模型数据工程
+- [[05_NLP_LLMs/LLM_Data_Engineering]] — 大模型数据工程

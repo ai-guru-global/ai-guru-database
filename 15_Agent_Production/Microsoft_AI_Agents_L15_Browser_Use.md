@@ -137,16 +137,16 @@ AZURE_OPENAI_API_VERSION=...   # 可选
 
 ## 与其他课的衔接
 
-- 本课是 [[13_Agent_Production/Microsoft_AI_Agents_L14_Microsoft_Agent_Framework]] 中 Workflows 的具体应用——Agent / Actor 模式可用 workflow edges 编排
-- 与 [[13_Agent_Production/Microsoft_AI_Agents_L11_Agentic_Protocols]] 中的 **NLWeb** 形成对比：NLWeb 让网站主动暴露 AI 接口，CUA 让 Agent 被动适配任何网站 ^[inferred]
-- 视觉感知呼应 [[04_NLP_LLMs/Multimodal_Models/GenAI_L09_Building_Image_Applications]] 的多模态基础
+- 本课是 [[15_Agent_Production/Microsoft_AI_Agents_L14_Microsoft_Agent_Framework]] 中 Workflows 的具体应用——Agent / Actor 模式可用 workflow edges 编排
+- 与 [[15_Agent_Production/Microsoft_AI_Agents_L11_Agentic_Protocols]] 中的 **NLWeb** 形成对比：NLWeb 让网站主动暴露 AI 接口，CUA 让 Agent 被动适配任何网站 ^[inferred]
+- 视觉感知呼应 [[05_NLP_LLMs/Multimodal_Models/GenAI_L09_Building_Image_Applications]] 的多模态基础
 
 ---
 
 ## 关联阅读
 
-- [[13_Agent_Production/Microsoft_AI_Agents_L14_Microsoft_Agent_Framework]] — 上一课：MAF
-- [[13_Agent_Production/Microsoft_AI_Agents_L18_Securing_AI_Agents]] — 下一课：安全（L18）
-- [[13_Agent_Production/Microsoft_AI_Agents_L11_Agentic_Protocols]] — L11：NLWeb 是互补方案
-- [[04_NLP_LLMs/Multimodal_Models/GenAI_L09_Building_Image_Applications]] — 多模态基础
+- [[15_Agent_Production/Microsoft_AI_Agents_L14_Microsoft_Agent_Framework]] — 上一课：MAF
+- [[15_Agent_Production/Microsoft_AI_Agents_L18_Securing_AI_Agents]] — 下一课：安全（L18）
+- [[15_Agent_Production/Microsoft_AI_Agents_L11_Agentic_Protocols]] — L11：NLWeb 是互补方案
+- [[05_NLP_LLMs/Multimodal_Models/GenAI_L09_Building_Image_Applications]] — 多模态基础
 - [[90_Learn/courses/microsoft/microsoft_ai_agents_for_beginners]] — 课程总览

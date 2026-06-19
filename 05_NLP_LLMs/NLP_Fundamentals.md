@@ -30,9 +30,9 @@ updated: 2026-06-12
 
 | 子模块 | 核心内容 | 链接 |
 |--------|---------|------|
-| **序列模型** | RNN、LSTM、GRU、Seq2Seq | [[04_NLP_LLMs/Sequence_Models/Sequence_Models]] |
-| **Transformer 革命** | Self-Attention、BERT、GPT | [[04_NLP_LLMs/Transformer_Revolution/Transformer_Revolution]] |
-| **Prompt Engineering** | 提示词工程、In-context Learning | [[04_NLP_LLMs/Prompt_Engineering/Prompt_Engineering]] |
+| **序列模型** | RNN、LSTM、GRU、Seq2Seq | [[05_NLP_LLMs/Sequence_Models/Sequence_Models]] |
+| **Transformer 革命** | Self-Attention、BERT、GPT | [[05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution]] |
+| **Prompt Engineering** | 提示词工程、In-context Learning | [[05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering]] |
 
 ---
 
@@ -159,8 +159,8 @@ flowchart LR
 
 ## 延伸阅读 (Further Reading)
 
-- [[04_NLP_LLMs/Sequence_Models/Sequence_Models]] — 序列模型详解 (RNN/LSTM)
-- [[04_NLP_LLMs/Transformer_Revolution/Transformer_Revolution]] — Transformer 架构革命
-- [[04_NLP_LLMs/Prompt_Engineering/Prompt_Engineering]] — 提示词工程
-- [[04_NLP_LLMs/LLM_Fundamentals]] — 大语言模型基础
-- [[04_NLP_LLMs/Transformer_Architecture]] — Transformer 架构详解
+- [[05_NLP_LLMs/Sequence_Models/Sequence_Models]] — 序列模型详解 (RNN/LSTM)
+- [[05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution]] — Transformer 架构革命
+- [[05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering]] — 提示词工程
+- [[05_NLP_LLMs/LLM_Fundamentals]] — 大语言模型基础
+- [[05_NLP_LLMs/Transformer_Architecture]] — Transformer 架构详解

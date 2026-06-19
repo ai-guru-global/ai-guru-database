@@ -207,7 +207,7 @@ FP16 (16位) → INT8 (8位) → INT4 (4位)
 
 ## 下一步
 
-- 想学 MLOps？→ [10_MLOps_Pipeline/README_for_dummy.md](../10_MLOps_Pipeline/README_for_dummy.md)
+- 想学 MLOps？→ [11_MLOps_Pipeline/README_for_dummy.md](../11_MLOps_Pipeline/README_for_dummy.md)
 - 想学推理框架？→ 查看子目录具体文档
 - 想学架构？→ [12_Architecture_Infrastructure/README_for_dummy.md](../12_Architecture_Infrastructure/README_for_dummy.md)
 
@@ -217,8 +217,8 @@ FP16 (16位) → INT8 (8位) → INT4 (4位)
 
 ## Related
 
-- [[09_Deployment_Inference/Deployment_Inference.md|Deployment_Inference]]
-- [[09_Deployment_Inference/Deployment_Inference_2026.md|Deployment_Inference_2026]]
-- [[09_Deployment_Inference/Deployment_Inference_for_dummy.md|Deployment_Inference_for_dummy]]
-- [[09_Deployment_Inference/Inference-in-nutshell.md|Inference-in-nutshell]]
-- [[09_Deployment_Inference/JVM_AI_Deployment.md|JVM_AI_Deployment]]
+- [[10_Deployment_Inference/Deployment_Inference.md|Deployment_Inference]]
+- [[10_Deployment_Inference/Deployment_Inference_2026.md|Deployment_Inference_2026]]
+- [[10_Deployment_Inference/Deployment_Inference_for_dummy.md|Deployment_Inference_for_dummy]]
+- [[10_Deployment_Inference/Inference-in-nutshell.md|Inference-in-nutshell]]
+- [[10_Deployment_Inference/JVM_AI_Deployment.md|JVM_AI_Deployment]]

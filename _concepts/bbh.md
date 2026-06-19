@@ -3,13 +3,13 @@ title: "BBH"
 category: concepts
 tags: ["bbh", "big-bench", "benchmark", "reasoning", "llm-evaluation", "few-shot"]
 relationships:
-  - target: "concepts/model-evaluation"
+  - target: "_concepts/model-evaluation"
     type: belongs_to
-  - target: "concepts/reasoning-models"
+  - target: "_concepts/reasoning-models"
     type: tests
-  - target: "concepts/llm-arena"
+  - target: "_concepts/llm-arena"
     type: complements
-  - target: "concepts/red-teaming"
+  - target: "_concepts/red-teaming"
     type: differs_from
 sources:
   - 08_Model_Evaluation/LLM_Benchmark_Suite_2026.md
@@ -87,8 +87,8 @@ Big-Bench 是 Google 发布的超大规模 LLM 基准，包含 200+ 任务，覆
 
 ## Related
 
-- [[concepts/model-evaluation]] — 模型评估
-- [[concepts/reasoning-models]] — 推理模型
-- [[concepts/llm-arena]] — LLM Arena
-- [[concepts/red-teaming]] — 红队测试
+- [[_concepts/model-evaluation]] — 模型评估
+- [[_concepts/reasoning-models]] — 推理模型
+- [[_concepts/llm-arena]] — LLM Arena
+- [[_concepts/red-teaming]] — 红队测试
 - [[08_Model_Evaluation/LLM_Benchmark_Suite_2026]] — LLM 基准套件 2026

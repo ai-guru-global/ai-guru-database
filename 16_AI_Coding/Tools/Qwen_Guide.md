@@ -19,7 +19,7 @@ updated: 2026-05-31
 
 | 维度 | 说明 |
 |------|------|
-| **类型** | AI [[concepts/ai-technology-landscape|大语言模型]] + API 平台 |
+| **类型** | AI [[_concepts/ai-technology-landscape|大语言模型]] + API 平台 |
 | **开发商** | 阿里云 (Alibaba Cloud) |
 | **接入方式** | OpenClaw + Qwen Token Plan |
 | **适用** | 认知系统开发、深度编程 |
@@ -113,7 +113,7 @@ Qwen 生态:
 
 ## Related
 
-- [[17_AI_Coding/01_Theory/AI_Coding_Theory]] — AI辅助编程理论基础 (共享: ai-coding, code-generation, cursor, github-copilot)
-- [[17_AI_Coding/02_Tools/CodeBuddy_Guide]] — CodeBuddy / WorkBuddy 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
-- [[17_AI_Coding/02_Tools/Comate_Guide]] — Comate 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
-- [[17_AI_Coding/02_Tools/Coze_Guide]] — Coze 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
+- [[16_AI_Coding/Theory/AI_Coding_Theory]] — AI辅助编程理论基础 (共享: ai-coding, code-generation, cursor, github-copilot)
+- [[16_AI_Coding/Tools/CodeBuddy_Guide]] — CodeBuddy / WorkBuddy 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
+- [[16_AI_Coding/Tools/Comate_Guide]] — Comate 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
+- [[16_AI_Coding/Tools/Coze_Guide]] — Coze 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)

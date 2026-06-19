@@ -24,14 +24,14 @@
 | 源仓库 | 目标目录 | 融合策略 |
 |--------|---------|---------|
 | `ai_beginner_guide` | `00_AI_Introduction/` | AI 入门基础，补充现有概览 |
-| `prompt_engineering_guide` | `04_NLP_LLMs/` | 提示词工程，归入 LLM 应用 |
-| `context_engineering_guide` | `04_NLP_LLMs/` | 上下文工程，与提示词工程并列 |
-| `llm_internals` | `04_NLP_LLMs/` | 模型原理架构，深化 LLM 底层 |
-| `claude_guide` | `17_AI_Coding/` | Claude 工具使用与 AI 编码 |
-| `agentic_ai_guide` | `13_Agent_Production/` | 智能体架构核心 |
-| `harness_engineering_guide` | `13_Agent_Production/` | 智能体工程基础设施 |
-| `openclaw_guide` | `13_Agent_Production/` | 开源智能体框架实践 |
-| `ai_security_guide` | `19_Ethics_Safety/` | 安全攻防 |
+| `prompt_engineering_guide` | `05_NLP_LLMs/` | 提示词工程，归入 LLM 应用 |
+| `context_engineering_guide` | `05_NLP_LLMs/` | 上下文工程，与提示词工程并列 |
+| `llm_internals` | `05_NLP_LLMs/` | 模型原理架构，深化 LLM 底层 |
+| `claude_guide` | `16_AI_Coding/` | Claude 工具使用与 AI 编码 |
+| `agentic_ai_guide` | `15_Agent_Production/` | 智能体架构核心 |
+| `harness_engineering_guide` | `15_Agent_Production/` | 智能体工程基础设施 |
+| `openclaw_guide` | `15_Agent_Production/` | 开源智能体框架实践 |
+| `ai_security_guide` | `17_Ethics_Safety/` | 安全攻防 |
 
 ## 执行步骤
 

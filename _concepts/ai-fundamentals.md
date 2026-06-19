@@ -4,13 +4,13 @@ category: concepts
 tags: [ai, 机器学习, 深度学习, 基础概念, 入门]
 aliases: [人工智能基础, AI Fundamentals, AI入门]
 relationships:
-  - target: "[[concepts/ai-technology-landscape]]"
+  - target: "[[_concepts/ai-technology-landscape]]"
     type: related_to
-  - target: "concepts/ai-history"
+  - target: "_concepts/ai-history"
     type: related_to
-  - target: "concepts/ai-ethics"
+  - target: "_concepts/ai-ethics"
     type: related_to
-  - target: "concepts/ai-future-trends"
+  - target: "_concepts/ai-future-trends"
     type: related_to
 sources: [00_AI_Introduction/AI_Fundamentals.md]
 summary: 人工智能是让机器模拟人类智能的科学，通过算法、数据和算力三大支柱实现感知、推理、学习和决策能力。
@@ -133,9 +133,9 @@ AI系统生命周期分三阶段：
 
 ## 来源
 
-- references/00_AI_Introduction/AI_Fundamentals
+- _references/00_AI_Introduction/AI_Fundamentals
 
 ## Related
 
-- [[concepts/ai-technology-landscape]] — AI技术全景 (共享: ai, 机器学习, 深度学习)
-- [[concepts/ai-history]] — AI历史 (共享: ai, 深度学习)
+- [[_concepts/ai-technology-landscape]] — AI技术全景 (共享: ai, 机器学习, 深度学习)
+- [[_concepts/ai-history]] — AI历史 (共享: ai, 深度学习)

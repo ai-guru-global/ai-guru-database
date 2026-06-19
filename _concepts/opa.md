@@ -3,16 +3,16 @@ title: "OPA (Open Policy Agent)"
 category: concept
 tags: ["opa", "open-policy-agent", "policy", "security", "authorization", "admission-control", "rego", "cncf"]
 relationships:
-  - target: "concepts/policy-as-code"
+  - target: "_concepts/policy-as-code"
     type: implements
-  - target: "concepts/kubernetes"
+  - target: "_concepts/kubernetes"
     type: used_by
-  - target: "concepts/kyverno"
+  - target: "_concepts/kyverno"
     type: related_to
-  - target: "concepts/falco"
+  - target: "_concepts/falco"
     type: related_to
 sources:
-  - 19_Ethics_Safety/LLM_Security_Complete_Guide.md
+  - 17_Ethics_Safety/LLM_Security_Complete_Guide.md
 summary: "OPA 是 CNCF Graduated 的开源策略引擎，使用 Rego 语言定义策略，可用于 K8s 准入控制、API 授权、微服务访问控制等场景，是策略即代码（Policy as Code）的代表工具。"
 provenance:
   extracted: 0.75
@@ -85,8 +85,8 @@ updated: 2026-06-16
 
 ## Related
 
-- [[concepts/policy-as-code]] — 策略即代码
-- [[concepts/kyverno]] — Kyverno
-- [[concepts/falco]] — Falco
-- [[concepts/kubernetes]] — Kubernetes
-- [[19_Ethics_Safety/LLM_Security_Complete_Guide]] — LLM 安全完整指南
+- [[_concepts/policy-as-code]] — 策略即代码
+- [[_concepts/kyverno]] — Kyverno
+- [[_concepts/falco]] — Falco
+- [[_concepts/kubernetes]] — Kubernetes
+- [[17_Ethics_Safety/LLM_Security_Complete_Guide]] — LLM 安全完整指南

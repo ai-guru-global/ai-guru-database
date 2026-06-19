@@ -32,5 +32,5 @@ source_url: "https://github.com/microsoft/generative-ai-for-beginners/blob/main/
 
 ## 相关引用
 
-- [[references/microsoft-ai-for-beginners]] — Microsoft AI For Beginners（12 周基础课程）引用索引
+- [[_references/microsoft-ai-for-beginners]] — Microsoft AI For Beginners（12 周基础课程）引用索引
 - [[90_Learn/courses/microsoft/microsoft_ai_for_beginners]] — AI 基础课程映射

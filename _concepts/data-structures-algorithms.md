@@ -4,11 +4,11 @@ category: concepts
 tags: ["algorithms", "data-structures", "computational-graphs", "vector-indexing", "beam-search", "hnsw"]
 aliases: [Data Structures, Algorithms, 计算图, 向量检索, DSA]
 relationships:
-  - target: "[[concepts/linear-algebra]]"
+  - target: "[[_concepts/linear-algebra]]"
     type: related_to
-  - target: "concepts/probability-statistics"
+  - target: "_concepts/probability-statistics"
     type: related_to
-  - target: "concepts/distributed-systems"
+  - target: "_concepts/distributed-systems"
     type: related_to
 sources: [01_ai-fundamentals/Data_Structures_Algorithms/Data_Structures_Algorithms.md]
 summary: 数据结构决定存储效率，算法决定计算速度。涵盖计算图与自动微分、Beam Search、HNSW向量检索，支撑AI训练到推理全流程。

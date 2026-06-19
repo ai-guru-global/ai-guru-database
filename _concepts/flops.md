@@ -3,14 +3,14 @@ title: FLOPS
 category: concepts
 tags: [hardware, gpu, flops, performance, inference]
 relationships:
-  - target: "concepts/ai-hardware"
+  - target: "_concepts/ai-hardware"
     type: builds_on
-  - target: "concepts/prefill-decode"
+  - target: "_concepts/prefill-decode"
     type: related_to
-  - target: "09_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy"
+  - target: "10_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy"
     type: simplified_by
 sources:
-  - 09_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy.md
+  - 10_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy.md
 summary: FLOPS 衡量 GPU 每秒能执行多少次浮点运算，是 prefill 阶段算力瓶颈的关键指标，但高 FLOPS 不直接等于推理快，还受显存带宽和数据搬运限制。
 lifecycle: draft
 tier: core
@@ -40,6 +40,6 @@ FLOPS 就是 GPU 每秒能做多少次数学运算，类似 CPU 的“几核几�
 
 ## Related
 
-- [[concepts/ai-hardware]] — AI 硬件
-- [[concepts/prefill-decode]] — Prefill / Decode 阶段
-- [[09_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy|推理性能术语大白话解释]]
+- [[_concepts/ai-hardware]] — AI 硬件
+- [[_concepts/prefill-decode]] — Prefill / Decode 阶段
+- [[10_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy|推理性能术语大白话解释]]

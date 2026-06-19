@@ -50,7 +50,7 @@ Stage 1: 基础概念（轻量浏览，重点理解概念名称）
 
 **🎯 目标**：理解 AI 是什么，它和普通软件有什么区别，为什么 ChatGPT 这么特别。
 
-**📚 核心概念**：[Stage 0: AI 觉醒](../concepts/stage-0-awakening.md)
+**📚 核心概念**：[Stage 0: AI 觉醒](../_concepts/stage-0-awakening.md)
 
 **🔗 深入阅读**：
 - [AI 基础概念入门](../../00_AI_Introduction/AI_Fundamentals.md) — 最推荐的起点
@@ -68,7 +68,7 @@ Stage 1: 基础概念（轻量浏览，重点理解概念名称）
 
 **🎯 目标**：掌握 AI 领域的核心术语，知道"模型"、"训练"、"推理"这些词是什么意思。
 
-**📚 核心概念**：[Stage 1: 基础概念](../concepts/stage1-foundation.md)（浏览为主，不需要深入细节）
+**📚 核心概念**：[Stage 1: 基础概念](../_concepts/stage1-foundation.md)（浏览为主，不需要深入细节）
 
 **🔗 深入阅读**：
 - [README_for_dummy.md](../../README_for_dummy.md) — 新手导航，章节级别的概览
@@ -98,10 +98,10 @@ Stage 1: 基础概念（轻量浏览，重点理解概念名称）
 **🎯 目标**：理解 ChatGPT、Claude 为什么能对话，它们背后的 Transformer 是什么。
 
 **🔗 深入阅读**：
-- [自然语言处理与大模型（小白版）](../../04_NLP_LLMs/README_for_dummy.md)
-- [Transformer 革命（小白版）](../../04_NLP_LLMs/Transformer_Revolution/Transformer_Revolution_for_dummy.md)
-- [提示词工程（小白版）](../../04_NLP_LLMs/Prompt_Engineering/Prompt_Engineering_for_dummy.md)
-- [大语言模型架构（小白版）](../../04_NLP_LLMs/LLM_Architectures/LLM_Architectures_for_dummy.md)
+- [自然语言处理与大模型（小白版）](../../05_NLP_LLMs/README_for_dummy.md)
+- [Transformer 革命（小白版）](../../05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution_for_dummy.md)
+- [提示词工程（小白版）](../../05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering_for_dummy.md)
+- [大语言模型架构（小白版）](../../05_NLP_LLMs/LLM_Architectures/LLM_Architectures_for_dummy.md)
 
 **✅ 学会标志**：
 - 能解释 Transformer 的核心思想（Attention 机制）
@@ -116,9 +116,9 @@ Stage 1: 基础概念（轻量浏览，重点理解概念名称）
 **🎯 目标**：理解 AI 怎么看图片和视频，为什么它能认出照片里的人脸。
 
 **🔗 深入阅读**：
-- [计算机视觉（小白版）](../../05_Computer_Vision/README_for_dummy.md)
-- [图像分类与检测（小白版）](../../05_Computer_Vision/Image_Classification_Detection/Image_Classification_Detection_for_dummy.md)
-- [生成模型（小白版）](../../05_Computer_Vision/Generative_Models/Generative_Models_for_dummy.md)
+- [计算机视觉（小白版）](../../04_Computer_Vision/README_for_dummy.md)
+- [图像分类与检测（小白版）](../../04_Computer_Vision/Image_Classification_Detection/Image_Classification_Detection_for_dummy.md)
+- [生成模型（小白版）](../../04_Computer_Vision/Generative_Models/Generative_Models_for_dummy.md)
 
 **✅ 学会标志**：
 - 能解释 CNN 的核心思想（卷积核扫描图像）
@@ -134,8 +134,8 @@ Stage 1: 基础概念（轻量浏览，重点理解概念名称）
 **🔗 深入阅读**：
 - [AI 伦理与社会影响](../../00_AI_Introduction/AI_Ethics_Society.md)
 - [AI 经典案例分析集](../../00_AI_Introduction/AI_Classic_Cases.md)
-- [价值对齐（小白版）](../../19_Ethics_Safety/Value_Alignment/Value_Alignment_for_dummy.md)
-- [AI 安全与红队（小白版）](../../19_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming_for_dummy.md)
+- [价值对齐（小白版）](../../17_Ethics_Safety/Value_Alignment/Value_Alignment_for_dummy.md)
+- [AI 安全与红队（小白版）](../../17_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming_for_dummy.md)
 
 **✅ 学会标志**：
 - 能列出至少 3 个 AI 伦理问题并说出各方观点
@@ -172,7 +172,7 @@ Stage 1: 基础概念（轻量浏览，重点理解概念名称）
 | 想学点编程，动手做 AI 项目 | [ML 从业者路径](./ml-practitioner.md) |
 | 只想深入了解大模型技术 | [LLM 工程师路径](./llm-engineer.md)（前置部分） |
 | 想把 AI 用在工作中 | [AI 产品经理路径](./product-manager.md) |
-| 还想继续通识学习 | [AI 经典案例分析集](../../00_AI_Introduction/AI_Classic_Cases.md) + [行业应用](../../20_AI_Applications_Industry/AI_Applications_Industry.md) |
+| 还想继续通识学习 | [AI 经典案例分析集](../../00_AI_Introduction/AI_Classic_Cases.md) + [行业应用](../../18_AI_Applications_Industry/AI_Applications_Industry.md) |
 
 ---
 

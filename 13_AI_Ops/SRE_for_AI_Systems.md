@@ -591,15 +591,15 @@ request_cost_dollars = Counter(
 - [AI Ops 2026](AI_Ops_2026.md) — 智能运维完整体系
 - [AI Ops 速成](AIOps-in-nutshell.md) — AI Ops 核心概念
 - [Cloud Ops 2026](../18_Cloud_Ops_Agent/Cloud_Product_Ops_2026.md) — 云产品运维
-- [部署与推理](../09_Deployment_Inference/Inference-in-nutshell.md) — 推理优化
+- [部署与推理](../10_Deployment_Inference/Inference-in-nutshell.md) — 推理优化
 - [AI 成本优化](../12_Architecture_Infrastructure/AI_Cost_Optimization_2026.md) — Token 经济学
-- [AI 安全](../../19_Ethics_Safety/AI_Security_2026/) — 安全红队
+- [AI 安全](../../17_Ethics_Safety/AI_Security_2026/) — 安全红队
 
 > 📅 **最后更新**：2026-04-11 | **方法论**：Google SRE Book + AI 生产实践
 
 ## Related
 
-- [[16_AI_Ops/AIOps-in-nutshell]] — AI Ops 速成指南 (共享: ai-ops, incident-response, monitoring, observability)
-- [[16_AI_Ops/AI_Incident_Response_Playbook]] — AI 系统事故响应手册 (共享: ai-ops, incident-response, monitoring, observability)
-- [[16_AI_Ops/AI_Ops_for_dummy]] — AI Ops 入门指南 (for Dummies) (共享: ai-ops, incident-response, monitoring, observability)
-- [[16_AI_Ops/README]] — AI 运维与可观测性 (AI Ops) (共享: ai-ops, incident-response, monitoring, observability)
+- [[13_AI_Ops/AIOps-in-nutshell]] — AI Ops 速成指南 (共享: ai-ops, incident-response, monitoring, observability)
+- [[13_AI_Ops/AI_Incident_Response_Playbook]] — AI 系统事故响应手册 (共享: ai-ops, incident-response, monitoring, observability)
+- [[13_AI_Ops/AI_Ops_for_dummy]] — AI Ops 入门指南 (for Dummies) (共享: ai-ops, incident-response, monitoring, observability)
+- [[13_AI_Ops/README]] — AI 运维与可观测性 (AI Ops) (共享: ai-ops, incident-response, monitoring, observability)

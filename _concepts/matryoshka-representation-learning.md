@@ -4,25 +4,25 @@ category: "concepts"
 tags: ["embeddings", "representation-learning", "matryoshka", "rag", "vector-database", "model-efficiency", "dimensionality-reduction"]
 summary: "一种表示学习方法：训练得到的向量在任何前缀维度上都保持语义有效性，可像俄罗斯套娃一样按需截断，兼顾检索精度与存储/计算成本。"
 relationships:
-  - target: "11_RAG_Systems/Matryoshka_Representation_Learning_Deep_Dive"
+  - target: "14_RAG_Systems/Matryoshka_Representation_Learning_Deep_Dive"
     type: "deep_dive"
-  - target: "11_RAG_Systems/Matryoshka_Representation_Learning_for_dummy"
+  - target: "14_RAG_Systems/Matryoshka_Representation_Learning_for_dummy"
     type: "simplified"
-  - target: "concepts/embeddings-vectors-mrl-plain"
+  - target: "_concepts/embeddings-vectors-mrl-plain"
     type: "simplified"
-  - target: "22_Papers/Matryoshka_Representation_Learning_Deep_Dive"
+  - target: "20_Papers/Matryoshka_Representation_Learning_Deep_Dive"
     type: "paper"
-  - target: "concepts/embedding-models"
+  - target: "_concepts/embedding-models"
     type: "related_to"
-  - target: "concepts/vector-database"
+  - target: "_concepts/vector-database"
     type: "related_to"
-  - target: "concepts/rag-systems"
+  - target: "_concepts/rag-systems"
     type: "related_to"
 sources:
-  - "11_RAG_Systems/Matryoshka_Representation_Learning_Deep_Dive.md"
-  - "22_Papers/Matryoshka_Representation_Learning_Deep_Dive.md"
-  - "11_RAG_Systems/Matryoshka_Representation_Learning_for_dummy.md"
-  - "concepts/embeddings-vectors-mrl-plain.md"
+  - "14_RAG_Systems/Matryoshka_Representation_Learning_Deep_Dive.md"
+  - "20_Papers/Matryoshka_Representation_Learning_Deep_Dive.md"
+  - "14_RAG_Systems/Matryoshka_Representation_Learning_for_dummy.md"
+  - "_concepts/embeddings-vectors-mrl-plain.md"
 created: "2026-06-12"
 updated: "2026-06-15"
 lifecycle: "stable"
@@ -33,10 +33,10 @@ tier: "core"
 
 > **一句话理解**: MRL 让模型学会"一层套一层"的向量表示——取前 64 维能做粗排，取前 256 维能做精排，取全量 768/1024 维能做高精度匹配；同一组向量可按需截断，不必为不同精度场景训练多个模型。
 
-📚 深度专题: [[11_RAG_Systems/Matryoshka_Representation_Learning_Deep_Dive|Matryoshka Representation Learning 深度解析]]  
-🎓 小白版: [[11_RAG_Systems/Matryoshka_Representation_Learning_for_dummy|Matryoshka Representation Learning — 小白版]]  
-🗣️ 大白话: [[concepts/embeddings-vectors-mrl-plain|Embedding、向量与 MRL 大白话]]  
-📄 论文解读: [[22_Papers/Matryoshka_Representation_Learning_Deep_Dive|NeurIPS 2022 论文深度解读]]
+📚 深度专题: [[14_RAG_Systems/Matryoshka_Representation_Learning_Deep_Dive|Matryoshka Representation Learning 深度解析]]  
+🎓 小白版: [[14_RAG_Systems/Matryoshka_Representation_Learning_for_dummy|Matryoshka Representation Learning — 小白版]]  
+🗣️ 大白话: [[_concepts/embeddings-vectors-mrl-plain|Embedding、向量与 MRL 大白话]]  
+📄 论文解读: [[20_Papers/Matryoshka_Representation_Learning_Deep_Dive|NeurIPS 2022 论文深度解读]]
 
 ---
 
@@ -146,7 +146,7 @@ $$
 
 ### 6.1 RAG 检索增强生成
 
-在 [[concepts/rag-systems]] 中，MRL 可优化检索流水线：
+在 [[_concepts/rag-systems]] 中，MRL 可优化检索流水线：
 
 ```text
 用户 Query
@@ -165,7 +165,7 @@ Top-10  → z[:768]  最终排序 → LLM
 
 ### 6.2 向量数据库优化
 
-在 [[concepts/vector-database]] 中：
+在 [[_concepts/vector-database]] 中：
 - 低维前缀可构建更紧凑的索引（HNSW、IVF-PQ 等），减少内存占用。
 - 高维前缀用于精度敏感场景。
 - 动态升级：业务精度要求提升时，直接启用更高维度，无需重新嵌入全部文档。
@@ -173,7 +173,7 @@ Top-10  → z[:768]  最终排序 → LLM
 ### 6.3 端侧与边缘部署
 
 - 低维前缀计算更快、内存更小，适合手机、IoT、浏览器端推理。
-- 与 [[concepts/edge-llm]]、[[concepts/model-compression]] 目标一致。
+- 与 [[_concepts/edge-llm]]、[[_concepts/model-compression]] 目标一致。
 
 ### 6.4 长文档与层次化索引
 
@@ -230,22 +230,22 @@ $$
 
 | 概念 | 关系 |
 |------|------|
-| [[concepts/embedding-models]] | MRL 是一种嵌入模型训练范式，nomic-embed-text-v1.5 等已支持 |
-| [[concepts/vector-database]] | MRL 让向量库可灵活选择存储/检索维度 |
-| [[concepts/rag-systems]] | MRL 优化 RAG 的检索精度与成本权衡 |
-| [[concepts/model-compression]] | MRL 可视为一种“运行时压缩”，与剪枝、量化互补 |
-| [[concepts/edge-llm]] | 低维前缀适合端侧嵌入推理 |
-| [[concepts/attention-variants]] | 某些高效注意力机制（如 MQA/GQA）与 MRL 共享“共享/复用”思想 |
+| [[_concepts/embedding-models]] | MRL 是一种嵌入模型训练范式，nomic-embed-text-v1.5 等已支持 |
+| [[_concepts/vector-database]] | MRL 让向量库可灵活选择存储/检索维度 |
+| [[_concepts/rag-systems]] | MRL 优化 RAG 的检索精度与成本权衡 |
+| [[_concepts/model-compression]] | MRL 可视为一种“运行时压缩”，与剪枝、量化互补 |
+| [[_concepts/edge-llm]] | 低维前缀适合端侧嵌入推理 |
+| [[_concepts/attention-variants]] | 某些高效注意力机制（如 MQA/GQA）与 MRL 共享“共享/复用”思想 |
 
 ---
 
 ## 10. 延伸阅读
 
 - 论文: *Matryoshka Representation Learning* (Kusupati et al., NeurIPS 2022)
-- 论文解读: [[22_Papers/Matryoshka_Representation_Learning_Deep_Dive|NeurIPS 2022 论文深度解读]]
-- 深度专题: [[11_RAG_Systems/Matryoshka_Representation_Learning_Deep_Dive|Matryoshka Representation Learning 深度解析]]
-- 小白版: [[11_RAG_Systems/Matryoshka_Representation_Learning_for_dummy|Matryoshka Representation Learning — 小白版]]
-- 大白话: [[concepts/embeddings-vectors-mrl-plain|Embedding、向量与 MRL 大白话]]
+- 论文解读: [[20_Papers/Matryoshka_Representation_Learning_Deep_Dive|NeurIPS 2022 论文深度解读]]
+- 深度专题: [[14_RAG_Systems/Matryoshka_Representation_Learning_Deep_Dive|Matryoshka Representation Learning 深度解析]]
+- 小白版: [[14_RAG_Systems/Matryoshka_Representation_Learning_for_dummy|Matryoshka Representation Learning — 小白版]]
+- 大白话: [[_concepts/embeddings-vectors-mrl-plain|Embedding、向量与 MRL 大白话]]
 - 模型: [nomic-embed-text-v1.5](https://huggingface.co/nomic-ai/nomic-embed-text-v1.5)
 - 模型: [OpenAI text-embedding-3](https://platform.openai.com/docs/guides/embeddings)
-- 相关阅读：[[concepts/embedding-models]]、[[concepts/vector-database]]、[[concepts/rag-systems]]
+- 相关阅读：[[_concepts/embedding-models]]、[[_concepts/vector-database]]、[[_concepts/rag-systems]]

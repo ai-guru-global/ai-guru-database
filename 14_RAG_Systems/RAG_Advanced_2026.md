@@ -573,14 +573,14 @@ print(results)
 
 | 场景 | 推荐引擎 | 选型理由 |
 |------|----------|----------|
-| 通用生产 RAG | [vLLM](../09_Deployment_Inference/vLLM_Deep_Dive.md) | PagedAttention、高并发、OpenAI 兼容 |
-| 多轮对话 / RAG | [SGLang](../09_Deployment_Inference/SGLang_Deep_Dive.md) | RadixAttention 前缀缓存，TTFT 更低 |
-| 极致低延迟 | [Groq](../09_Deployment_Inference/Groq_Deep_Dive.md) | LPU 专用芯片，毫秒级响应 |
-| HF 生态生产 | [TGI](../09_Deployment_Inference/TGI_Deep_Dive.md) | 原生 HuggingFace、监控完善 |
-| 长上下文 RAG | [TensorRT-LLM](../09_Deployment_Inference/TensorRT_LLM_Deep_Dive.md) | FP8、长上下文 kernel 优化 |
-| 统一选型 | [LLM Inference Engine Selection Guide](../09_Deployment_Inference/LLM_Inference_Engine_Selection_Guide.md) | 决策树与成本模型 |
+| 通用生产 RAG | [vLLM](../10_Deployment_Inference/vLLM_Deep_Dive.md) | PagedAttention、高并发、OpenAI 兼容 |
+| 多轮对话 / RAG | [SGLang](../10_Deployment_Inference/SGLang_Deep_Dive.md) | RadixAttention 前缀缓存，TTFT 更低 |
+| 极致低延迟 | [Groq](../10_Deployment_Inference/Groq_Deep_Dive.md) | LPU 专用芯片，毫秒级响应 |
+| HF 生态生产 | [TGI](../10_Deployment_Inference/TGI_Deep_Dive.md) | 原生 HuggingFace、监控完善 |
+| 长上下文 RAG | [TensorRT-LLM](../10_Deployment_Inference/TensorRT_LLM_Deep_Dive.md) | FP8、长上下文 kernel 优化 |
+| 统一选型 | [LLM Inference Engine Selection Guide](../10_Deployment_Inference/LLM_Inference_Engine_Selection_Guide.md) | 决策树与成本模型 |
 
-完整引擎专题见 [09_Deployment_Inference](../09_Deployment_Inference/README.md)。
+完整引擎专题见 [10_Deployment_Inference](../10_Deployment_Inference/README.md)。
 
 ---
 
@@ -612,9 +612,9 @@ print(results)
 
 ## Related
 
-- [[11_RAG_Systems/RAG-in-nutshell.md|RAG-in-nutshell]]
-- [[11_RAG_Systems/RAG_Systems.md|RAG_Systems]]
-- [[11_RAG_Systems/README_Advanced.md|README_Advanced]]
-- [[11_RAG_Systems/Spring_AI_RAG_Deep_Dive.md|Spring_AI_RAG_Deep_Dive]]
-- [[synthesis/rag-vector-database.md|rag-vector-database]]
-- [[synthesis/multimodal-rag|多模态 × RAG]] — 图文音视频统一检索
+- [[14_RAG_Systems/RAG-in-nutshell.md|RAG-in-nutshell]]
+- [[14_RAG_Systems/RAG_Systems.md|RAG_Systems]]
+- [[14_RAG_Systems/README_Advanced.md|README_Advanced]]
+- [[14_RAG_Systems/Spring_AI_RAG_Deep_Dive.md|Spring_AI_RAG_Deep_Dive]]
+- [[_synthesis/rag-vector-database.md|rag-vector-database]]
+- [[_synthesis/multimodal-rag|多模态 × RAG]] — 图文音视频统一检索

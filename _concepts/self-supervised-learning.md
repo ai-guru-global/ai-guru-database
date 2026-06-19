@@ -3,11 +3,11 @@ title: "自监督学习 (Self-Supervised Learning)"
 category: concept
 tags: ["deep-learning", "self-supervised-learning", "contrastive-learning", "SimCLR", "MoCo", "MAE", "DINO"]
 relationships:
-  - target: "concepts/neural-networks"
+  - target: "_concepts/neural-networks"
     type: builds_on
-  - target: "concepts/transformer-architecture"
+  - target: "_concepts/transformer-architecture"
     type: related_to
-  - target: "concepts/llm-architectures"
+  - target: "_concepts/llm-architectures"
     type: enables
 sources:
   - 03_Deep_Learning/Self_Supervised_Learning
@@ -81,5 +81,5 @@ updated: 2026-06-04
 ## Related
 
 - [[03_Deep_Learning/Self_Supervised_Learning]] — 自监督学习深度解析
-- [[concepts/neural-networks]] — 神经网络基础
-- [[concepts/llm-architectures]] — LLM 架构（自监督预训练）
+- [[_concepts/neural-networks]] — 神经网络基础
+- [[_concepts/llm-architectures]] — LLM 架构（自监督预训练）

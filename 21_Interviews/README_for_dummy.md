@@ -150,7 +150,7 @@ updated: '2026-05-31'
 
 ## 下一步
 
-- 想看具体岗位？→ 查看 [23_Interviews/Interviews_for_dummy.md](./Interviews_for_dummy.md)
+- 想看具体岗位？→ 查看 [21_Interviews/Interviews_for_dummy.md](./Interviews_for_dummy.md)
 - 想学技术？→ 从 [90_Learn/README.md](../90_Learn/README_for_dummy.md) 选择路径
 
 ---
@@ -159,8 +159,8 @@ updated: '2026-05-31'
 
 ## Related
 
-- [[23_Interviews/AI_Data_Analyst/company_level_question_bank.md|company_level_question_bank]]
-- [[23_Interviews/AI_Data_Analyst/interview_answers.md|interview_answers]]
-- [[23_Interviews/AI_Data_Analyst/interview_preparing.md|interview_preparing]]
-- [[23_Interviews/AI_Data_Analyst/question_bank.md|question_bank]]
-- [[23_Interviews/AI_Evaluation_Engineer/company_level_question_bank.md|company_level_question_bank]]
+- [[21_Interviews/AI_Data_Analyst/company_level_question_bank.md|company_level_question_bank]]
+- [[21_Interviews/AI_Data_Analyst/interview_answers.md|interview_answers]]
+- [[21_Interviews/AI_Data_Analyst/interview_preparing.md|interview_preparing]]
+- [[21_Interviews/AI_Data_Analyst/question_bank.md|question_bank]]
+- [[21_Interviews/AI_Evaluation_Engineer/company_level_question_bank.md|company_level_question_bank]]

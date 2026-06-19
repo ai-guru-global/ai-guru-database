@@ -362,8 +362,8 @@ jobs:
 
 ## Related
 
-- [[15_Testing/AI-Testing-in-nutshell.md|AI-Testing-in-nutshell]]
-- [[15_Testing/AI_Testing_for_dummy.md|AI_Testing_for_dummy]]
-- [[15_Testing/Java_AI_Testing.md|Java_AI_Testing]]
-- [[15_Testing/README.md|15_Testing README]]
-- [[04_NLP_LLMs/Fine_tuning_Techniques/Axolotl_Deep_Dive.md|Axolotl_Deep_Dive]]
+- [[09_Testing/AI-Testing-in-nutshell.md|AI-Testing-in-nutshell]]
+- [[09_Testing/AI_Testing_for_dummy.md|AI_Testing_for_dummy]]
+- [[09_Testing/Java_AI_Testing.md|Java_AI_Testing]]
+- [[09_Testing/README.md|09_Testing README]]
+- [[05_NLP_LLMs/Fine_tuning_Techniques/Axolotl_Deep_Dive.md|Axolotl_Deep_Dive]]

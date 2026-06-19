@@ -1352,7 +1352,7 @@ async def health():
 
 - [AI Gateway 对比 2026](../14_AI_Gateway/AI_Gateway_Comparison_2026.md)
 - [Prompt 管理平台](./Prompt_Management_Platform.md)
-- [部署推理 2026](../09_Deployment_Inference/Deployment_Inference_2026.md)
+- [部署推理 2026](../10_Deployment_Inference/Deployment_Inference_2026.md)
 - [Kong AI Gateway 深度解析](../14_AI_Gateway/Kong_AI_Gateway_Deep_Dive.md)
 
 ## Related

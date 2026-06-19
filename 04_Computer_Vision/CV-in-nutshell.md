@@ -198,9 +198,9 @@ print(probs)  # [0.92, 0.05, 0.03] → 是猫！
 ## 8. 与其他章节的关联
 
 - [深度学习基础](../03_Deep_Learning/README.md) — CNN、Transformer 原理
-- [NLP & LLMs](../04_NLP_LLMs/README.md) — 多模态模型（CLIP、LLaVA）
-- [部署推理](../09_Deployment_Inference/README.md) — 模型上线与优化
-- [AI 应用](../20_AI_Applications_Industry/) — 行业应用案例
+- [NLP & LLMs](../05_NLP_LLMs/README.md) — 多模态模型（CLIP、LLaVA）
+- [部署推理](../10_Deployment_Inference/README.md) — 模型上线与优化
+- [AI 应用](../18_AI_Applications_Industry/) — 行业应用案例
 
 ---
 
@@ -208,8 +208,8 @@ print(probs)  # [0.92, 0.05, 0.03] → 是猫！
 
 ## Related
 
-- [[05_Computer_Vision/README.md|05_Computer_Vision README]]
-- [[05_Computer_Vision/3D_Vision/3D_Vision.md|3D_Vision]]
-- [[05_Computer_Vision/3D_Vision/3D_Vision_for_dummy.md|3D_Vision_for_dummy]]
-- [[05_Computer_Vision/Generative_Models/Generative_Models.md|Generative_Models]]
-- [[05_Computer_Vision/Generative_Models/Generative_Models_for_dummy.md|Generative_Models_for_dummy]]
+- [[04_Computer_Vision/README.md|04_Computer_Vision README]]
+- [[04_Computer_Vision/3D_Vision/3D_Vision.md|3D_Vision]]
+- [[04_Computer_Vision/3D_Vision/3D_Vision_for_dummy.md|3D_Vision_for_dummy]]
+- [[04_Computer_Vision/Generative_Models/Generative_Models.md|Generative_Models]]
+- [[04_Computer_Vision/Generative_Models/Generative_Models_for_dummy.md|Generative_Models_for_dummy]]

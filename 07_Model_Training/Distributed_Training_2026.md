@@ -25,7 +25,7 @@ updated: 2026-05-31
 - [实战代码](#实战代码)
 - [性能调优](#性能调优)
 - [常见问题](#常见问题)
-- [References](#references)
+- [References](#_references)
 
 ---
 
@@ -1506,10 +1506,10 @@ if rank == 0:
 ### 交叉引用
 
 - 神经网络基础与反向传播原理，请参阅 [`../03_Deep_Learning/README.md`](../03_Deep_Learning/README.md)
-- 模型推理优化与部署，请参阅 [`../09_Deployment_Inference/README.md`](../09_Deployment_Inference/README.md)
+- 模型推理优化与部署，请参阅 [`../10_Deployment_Inference/README.md`](../10_Deployment_Inference/README.md)
 - GPU 集群硬件配置与网络拓扑，请参阅 [`../12_Architecture_Infrastructure/AI_Infrastructure_2026.md`](../12_Architecture_Infrastructure/AI_Infrastructure_2026.md)
 - 模型评估方法，请参阅 [`../08_Model_Evaluation/Model_Evaluation.md`](../08_Model_Evaluation/Model_Evaluation.md)
-- MLOps 训练流水线，请参阅 [`../10_MLOps_Pipeline/MLOps_Pipeline.md`](../10_MLOps_Pipeline/MLOps_Pipeline.md)
+- MLOps 训练流水线，请参阅 [`../11_MLOps_Pipeline/MLOps_Pipeline.md`](../11_MLOps_Pipeline/MLOps_Pipeline.md)
 
 ### 核心论文
 

@@ -3,18 +3,18 @@ title: "动态批调度"
 category: concepts
 tags: ["inference", "batching", "scheduling", "throughput", "continuous-batching"]
 relationships:
-  - target: "concepts/continuous-batching"
+  - target: "_concepts/continuous-batching"
     type: related_to
-  - target: "concepts/model-serving"
+  - target: "_concepts/model-serving"
     type: optimizes
-  - target: "concepts/paged-attention"
+  - target: "_concepts/paged-attention"
     type: synergizes_with
-  - target: "concepts/kv-cache"
+  - target: "_concepts/kv-cache"
     type: manages
 sources:
-  - 09_Deployment_Inference/Inference_Performance/Request_Scheduling_for_LLMs.md
-  - 09_Deployment_Inference/vLLM_Deep_Dive.md
-  - 09_Deployment_Inference/SGLang_Deep_Dive.md
+  - 10_Deployment_Inference/Inference_Performance/Request_Scheduling_for_LLMs.md
+  - 10_Deployment_Inference/vLLM_Deep_Dive.md
+  - 10_Deployment_Inference/SGLang_Deep_Dive.md
 summary: "动态批调度是推理引擎在每个生成步骤后重新安排请求的策略：新请求随时插入，完成请求随时退出，让 GPU 一直处于满负荷运转，避免‘等一个慢请求拖垮整批’的浪费。"
 provenance:
   extracted: 0.75
@@ -93,9 +93,9 @@ Step 4: A 完成退出，F 加入 → D + E + F
 
 ## Related
 
-- [[concepts/continuous-batching]] — Continuous Batching
-- [[concepts/paged-attention]] — PagedAttention
-- [[concepts/model-serving]] — 模型服务
-- [[concepts/inference-performance]] — 推理性能
-- [[09_Deployment_Inference/Inference_Performance/Request_Scheduling_for_LLMs]] — LLM 请求调度
-- [[09_Deployment_Inference/vLLM_Deep_Dive]] — vLLM 深度解析
+- [[_concepts/continuous-batching]] — Continuous Batching
+- [[_concepts/paged-attention]] — PagedAttention
+- [[_concepts/model-serving]] — 模型服务
+- [[_concepts/inference-performance]] — 推理性能
+- [[10_Deployment_Inference/Inference_Performance/Request_Scheduling_for_LLMs]] — LLM 请求调度
+- [[10_Deployment_Inference/vLLM_Deep_Dive]] — vLLM 深度解析

@@ -9,19 +9,19 @@ tags:
 - benchmark
 - ci-cd
 relationships:
-- target: 'concepts/model-training'
+- target: '_concepts/model-training'
   type: validates
-- target: 'concepts/model-deployment'
+- target: '_concepts/model-deployment'
   type: precedes
-- target: 'concepts/bbh'
+- target: '_concepts/bbh'
   type: exemplified_by
-- target: 'concepts/llm-arena'
+- target: '_concepts/llm-arena'
   type: exemplified_by
-- target: 'concepts/red-teaming'
+- target: '_concepts/red-teaming'
   type: tested_by
-- target: 'concepts/ci-integrated-evaluation'
+- target: '_concepts/ci-integrated-evaluation'
   type: implements
-- target: 'concepts/ab-testing-framework'
+- target: '_concepts/ab-testing-framework'
   type: implements
 sources:
 - 08_model-training_Evaluation/Model_Evaluation.md
@@ -105,9 +105,9 @@ updated: 2026-05-31 00:00:00+00:00
 
 - [[08_Model_Evaluation/Model_Evaluation]] — 模型评估 (Model Evaluation) (共享: ab-testing, benchmark, metrics)
 - [[08_Model_Evaluation/README]] — 模型评估 (Model Evaluation) (共享: ab-testing, benchmark, metrics)
-- [[concepts/bbh]] — BBH
-- [[concepts/llm-arena]] — LLM Arena
-- [[concepts/red-teaming]] — 红队测试
-- [[concepts/ci-integrated-evaluation]] — CI 集成评估
-- [[concepts/ab-testing-framework]] — A/B 测试框架
+- [[_concepts/bbh]] — BBH
+- [[_concepts/llm-arena]] — LLM Arena
+- [[_concepts/red-teaming]] — 红队测试
+- [[_concepts/ci-integrated-evaluation]] — CI 集成评估
+- [[_concepts/ab-testing-framework]] — A/B 测试框架
 - [[08_Model_Evaluation/LLM_Benchmarks_for_dummy]] — LLM 评估与测试大白话

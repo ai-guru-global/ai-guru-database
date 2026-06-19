@@ -3,16 +3,16 @@ title: "LMDeploy"
 category: concept
 tags: ["lmdeploy", "inference", "llm", "turbomind", "pytorch", "quantization", "awq", "chinese-llm", "deployment"]
 relationships:
-  - target: "concepts/model-serving"
+  - target: "_concepts/model-serving"
     type: belongs_to
-  - target: "concepts/vllm"
+  - target: "_concepts/vllm"
     type: related_to
-  - target: "concepts/hami"
+  - target: "_concepts/hami"
     type: related_to
-  - target: "concepts/quantization"
+  - target: "_concepts/quantization"
     type: uses
 sources:
-  - 09_Deployment_Inference/LMDeploy_Deep_Dive.md
+  - 10_Deployment_Inference/LMDeploy_Deep_Dive.md
 summary: "LMDeploy 是 OpenMMLab 开源的国产 LLM 推理部署工具，提供 TurboMind 高性能引擎与 PyTorch 后端，支持 AWQ/GPTQ 量化、多模态、国产芯片和 OpenAI 兼容 API，在中文场景应用广泛。"
 provenance:
   extracted: 0.75
@@ -105,8 +105,8 @@ API Server (Python)
 
 ## Related
 
-- [[09_Deployment_Inference/LMDeploy_Deep_Dive]] — LMDeploy 深度解析
-- [[concepts/model-serving]] — 模型服务
-- [[concepts/vllm]] — vLLM 推理引擎
-- [[concepts/hami]] — HAMi GPU 虚拟化
-- [[concepts/quantization]] — 量化
+- [[10_Deployment_Inference/LMDeploy_Deep_Dive]] — LMDeploy 深度解析
+- [[_concepts/model-serving]] — 模型服务
+- [[_concepts/vllm]] — vLLM 推理引擎
+- [[_concepts/hami]] — HAMi GPU 虚拟化
+- [[_concepts/quantization]] — 量化

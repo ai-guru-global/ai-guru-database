@@ -1011,6 +1011,6 @@ AI是人类创造的最强大工具之一，
 
 ## Related
 
-- [[concepts/ai-future-trends]] — AI 未来趋势
-- [[concepts/ai-agents]] — AI 智能体
-- [[concepts/ai-ethics]] — AI 伦理
+- [[_concepts/ai-future-trends]] — AI 未来趋势
+- [[_concepts/ai-agents]] — AI 智能体
+- [[_concepts/ai-ethics]] — AI 伦理

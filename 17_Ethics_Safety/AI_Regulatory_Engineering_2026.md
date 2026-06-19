@@ -108,10 +108,10 @@ graph LR
 
 ## Related
 
-- [[19_Ethics_Safety/Safety_Evaluation_Framework]] — 具体的安全评估指标
-- [[10_MLOps_Pipeline/ML_CI_CD]] — 如何将合规集成到流水线
-- [[04_NLP_LLMs/Reasoning_Models/Neuro_Symbolic_and_Formal_Verification_2026]] — 形式化验证的技术底层
-- [[concepts/ai-ethics]] — 伦理基础理论
+- [[17_Ethics_Safety/Safety_Evaluation_Framework]] — 具体的安全评估指标
+- [[11_MLOps_Pipeline/ML_CI_CD]] — 如何将合规集成到流水线
+- [[05_NLP_LLMs/Reasoning_Models/Neuro_Symbolic_and_Formal_Verification_2026]] — 形式化验证的技术底层
+- [[_concepts/ai-ethics]] — 伦理基础理论
 
 ---
 

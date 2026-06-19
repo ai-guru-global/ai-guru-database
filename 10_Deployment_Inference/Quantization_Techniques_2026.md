@@ -822,7 +822,7 @@ NF4 误差:  ▁▁▂▁▁▁▁▁▂▁▁  (中心几乎为 0)
 
 ```python
 # QLoRA 4-bit 加载 (NF4 + Double Quantization)
-# 参考: ../04_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/PEFT_2026.md
+# 参考: ../05_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/PEFT_2026.md
 # ═══════════════════════════════════════════════════════════════
 
 from transformers import AutoModelForCausalLM, BitsAndBytesConfig
@@ -1587,7 +1587,7 @@ Q2_K         3.2 GB   7.94    68 tok/s            极限压缩
 
 ```python
 # QLoRA: 4-bit NF4 加载 + LoRA 微调
-# 参考: ../04_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/PEFT_2026.md
+# 参考: ../05_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/PEFT_2026.md
 # ═══════════════════════════════════════════════════════════════
 
 import torch
@@ -1901,7 +1901,7 @@ graph TB
 
 ### 8.3 微调与量化
 
-- **QLoRA 与 PEFT**: 参见 [PEFT 2026](../04_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/PEFT_2026.md) — NF4 4-bit 加载 + LoRA 微调的完整流程
+- **QLoRA 与 PEFT**: 参见 [PEFT 2026](../05_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/PEFT_2026.md) — NF4 4-bit 加载 + LoRA 微调的完整流程
 
 ### 8.4 核心论文
 

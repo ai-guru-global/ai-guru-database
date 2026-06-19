@@ -3,14 +3,14 @@ title: Quantization
 category: concepts
 tags: [inference, quantization, fp8, int8, int4, model-compression, performance]
 relationships:
-  - target: "concepts/model-compression"
+  - target: "_concepts/model-compression"
     type: builds_on
-  - target: "concepts/kv-cache"
+  - target: "_concepts/kv-cache"
     type: optimizes
-  - target: "09_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy"
+  - target: "10_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy"
     type: simplified_by
 sources:
-  - 09_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy.md
+  - 10_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy.md
 summary: 量化通过降低模型权重和激活的数值精度，减少显存占用和数据搬运量，从而加速推理；常用 FP8/INT8/INT4/GPTQ/AWQ。
 lifecycle: draft
 tier: core
@@ -47,7 +47,7 @@ updated: 2026-06-15
 
 ## Related
 
-- [[concepts/model-compression]] — 模型压缩
-- [[concepts/kv-cache]] — KV Cache
-- [[09_Deployment_Inference/Quantization_Techniques_2026|Quantization Techniques 2026]]
-- [[09_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy|推理性能术语大白话解释]]
+- [[_concepts/model-compression]] — 模型压缩
+- [[_concepts/kv-cache]] — KV Cache
+- [[10_Deployment_Inference/Quantization_Techniques_2026|Quantization Techniques 2026]]
+- [[10_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy|推理性能术语大白话解释]]

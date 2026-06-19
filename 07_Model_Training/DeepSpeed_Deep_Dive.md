@@ -373,11 +373,11 @@ resources:
 
 ## Related
 
-- [[concepts/deepspeed]] — DeepSpeed 概念卡片
-- [[concepts/distributed-training]] — 分布式训练
-- [[concepts/fsdp]] — PyTorch FSDP
-- [[concepts/megatron-lm]] — Megatron-LM
-- [[concepts/hami]] — HAMi GPU 虚拟化
-- [[concepts/ray]] — Ray 分布式框架
+- [[_concepts/deepspeed]] — DeepSpeed 概念卡片
+- [[_concepts/distributed-training]] — 分布式训练
+- [[_concepts/fsdp]] — PyTorch FSDP
+- [[_concepts/megatron-lm]] — Megatron-LM
+- [[_concepts/hami]] — HAMi GPU 虚拟化
+- [[_concepts/ray]] — Ray 分布式框架
 - [[07_Model_Training/Ray_Deep_Dive]] — Ray
 - [[07_Model_Training/Distributed_Training_2026]] — 分布式训练 2026

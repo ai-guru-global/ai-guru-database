@@ -93,5 +93,5 @@ tier: supporting
 4. **记录一切**: 建立攻击知识库
 5. **快速响应**: 发现漏洞后快速修复并回归测试
 
-> **关联**: -> [[19_Ethics_Safety|伦理安全]] | [[19_Ethics_Safety/AI_Safety_RedTeaming|AI 安全红队]] | [[15_Testing|测试]]
+> **关联**: -> [[17_Ethics_Safety|伦理安全]] | [[17_Ethics_Safety/AI_Safety_RedTeaming|AI 安全红队]] | [[09_Testing|测试]]
 

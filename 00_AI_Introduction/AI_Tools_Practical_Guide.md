@@ -921,6 +921,6 @@ YouTube频道
 
 ## Related
 
-- [[concepts/ai-agents]] — AI 智能体
-- [[concepts/prompt-engineering]] — 提示工程
-- [[concepts/model-serving]] — 模型服务
+- [[_concepts/ai-agents]] — AI 智能体
+- [[_concepts/prompt-engineering]] — 提示工程
+- [[_concepts/model-serving]] — 模型服务

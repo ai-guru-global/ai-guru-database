@@ -382,7 +382,7 @@ flowchart TB
 
 ## Related
 
-- [[10_MLOps_Pipeline/MLOps_Pipeline|MLOps 流水线]] — 完整流水线设计
-- [[10_MLOps_Pipeline/Experiment_Tracking_Deep_Dive|实验追踪深度解析]] — 模型注册的实验关联
-- [[10_MLOps_Pipeline/ML_CI_CD|ML CI/CD 流水线]] — 自动化部署流程
-- [[concepts/mlops]] — MLOps 概念卡片
+- [[11_MLOps_Pipeline/MLOps_Pipeline|MLOps 流水线]] — 完整流水线设计
+- [[11_MLOps_Pipeline/Experiment_Tracking_Deep_Dive|实验追踪深度解析]] — 模型注册的实验关联
+- [[11_MLOps_Pipeline/ML_CI_CD|ML CI/CD 流水线]] — 自动化部署流程
+- [[_concepts/mlops]] — MLOps 概念卡片

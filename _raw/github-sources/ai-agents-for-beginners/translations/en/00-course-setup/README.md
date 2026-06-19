@@ -149,7 +149,7 @@ Make sure that you are using the right version of Python in VSCode.
 You need an Azure AI Foundry **hub** and **project** with a deployed model to run the notebooks.
 
 1. Go to [ai.azure.com](https://ai.azure.com) and sign in with your Azure account.
-2. Create a **hub** (or use an existing one). See: [Hub resources overview](https://learn.microsoft.com/azure/ai-foundry/concepts/ai-resources).
+2. Create a **hub** (or use an existing one). See: [Hub resources overview](https://learn.microsoft.com/azure/ai-foundry/_concepts/ai-resources).
 3. Inside the hub, create a **project**.
 4. Deploy a model (e.g., `gpt-4o`) from **Models + Endpoints** → **Deploy model**.
 

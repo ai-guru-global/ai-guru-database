@@ -125,15 +125,15 @@ updated: 2026-06-15
 
 ## 与其他课的衔接
 
-- 接 [[13_Agent_Production/Microsoft_AI_Agents_L07_Planning_Design]]：Planner 输出的结构化 plan 触发这里的多 Agent 路由
-- [[13_Agent_Production/Microsoft_AI_Agents_L09_Metacognition]]（下一课）将探讨 Agent **自我反思**——多 Agent 中的每个成员都可以具备元认知能力 ^[inferred]
+- 接 [[15_Agent_Production/Microsoft_AI_Agents_L07_Planning_Design]]：Planner 输出的结构化 plan 触发这里的多 Agent 路由
+- [[15_Agent_Production/Microsoft_AI_Agents_L09_Metacognition]]（下一课）将探讨 Agent **自我反思**——多 Agent 中的每个成员都可以具备元认知能力 ^[inferred]
 
 ---
 
 ## 关联阅读
 
-- [[13_Agent_Production/Microsoft_AI_Agents_L07_Planning_Design]] — 上一课：Planner 触发多 Agent
-- [[13_Agent_Production/Microsoft_AI_Agents_L09_Metacognition]] — 下一课：元认知
-- [[13_Agent_Production/Agentic_Design_Patterns_AndrewNg]] — Andrew Ng 的 Multi-Agent 模式
-- [[13_Agent_Production/Agent_Workflow/README]] — 工作流编排概览
+- [[15_Agent_Production/Microsoft_AI_Agents_L07_Planning_Design]] — 上一课：Planner 触发多 Agent
+- [[15_Agent_Production/Microsoft_AI_Agents_L09_Metacognition]] — 下一课：元认知
+- [[15_Agent_Production/Agentic_Design_Patterns_AndrewNg]] — Andrew Ng 的 Multi-Agent 模式
+- [[15_Agent_Production/Agent_Workflow/README]] — 工作流编排概览
 - [[90_Learn/courses/microsoft/microsoft_ai_agents_for_beginners]] — 课程总览

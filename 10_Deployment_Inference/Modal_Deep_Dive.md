@@ -239,8 +239,8 @@ Modal Cloud
 
 ## Related
 
-- [[concepts/modal]] — Modal 概念卡片
-- [[concepts/model-serving]] — 模型服务
-- [[concepts/serverless]] — 无服务器
-- [[concepts/vllm]] — vLLM
-- [[concepts/replicate]] — Replicate
+- [[_concepts/modal]] — Modal 概念卡片
+- [[_concepts/model-serving]] — 模型服务
+- [[_concepts/serverless]] — 无服务器
+- [[_concepts/vllm]] — vLLM
+- [[_concepts/replicate]] — Replicate

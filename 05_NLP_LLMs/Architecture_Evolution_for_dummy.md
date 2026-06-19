@@ -152,11 +152,11 @@ RetNet 用 **Retention（保留机制）** 代替 Attention：
 
 ## Related
 
-- [[concepts/kv-cache-compression|KV Cache 压缩]]
-- [[concepts/mamba|Mamba]]
-- [[concepts/retnet|RetNet]]
-- [[concepts/kv-cache|KV Cache 技术详解]]
-- [[concepts/state-space-models|状态空间模型（SSM）]]
-- [[concepts/transformer-architecture|Transformer 架构]]
-- [[04_NLP_LLMs/LLM_Architecture_Evolution|LLM 架构演进]]
+- [[_concepts/kv-cache-compression|KV Cache 压缩]]
+- [[_concepts/mamba|Mamba]]
+- [[_concepts/retnet|RetNet]]
+- [[_concepts/kv-cache|KV Cache 技术详解]]
+- [[_concepts/state-space-models|状态空间模型（SSM）]]
+- [[_concepts/transformer-architecture|Transformer 架构]]
+- [[05_NLP_LLMs/LLM_Architecture_Evolution|LLM 架构演进]]
 - [[03_Deep_Learning/State_Space_Models_2026|状态空间模型 2026]]

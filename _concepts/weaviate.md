@@ -3,18 +3,18 @@ title: "Weaviate"
 category: concept
 tags: ["weaviate", "vector-database", "rag", "embedding", "semantic-search", "graphql", "modular"]
 relationships:
-  - target: "concepts/vector-database"
+  - target: "_concepts/vector-database"
     type: extends
-  - target: "concepts/rag"
+  - target: "_concepts/rag"
     type: enables
-  - target: "concepts/embedding"
+  - target: "_concepts/embedding"
     type: related_to
-  - target: "concepts/milvus"
+  - target: "_concepts/milvus"
     type: related_to
-  - target: "concepts/qdrant"
+  - target: "_concepts/qdrant"
     type: related_to
 sources:
-  - 11_RAG_Systems/Weaviate_Deep_Dive.md
+  - 14_RAG_Systems/Weaviate_Deep_Dive.md
 summary: "Weaviate 是开源的 AI 原生向量数据库，内置 embedding 与生成模型模块，支持 GraphQL/REST 查询、混合搜索和模块化架构，适合需要端到端 AI 检索能力的 RAG 应用。"
 provenance:
   extracted: 0.75
@@ -90,9 +90,9 @@ updated: 2026-06-16
 
 ## Related
 
-- [[11_RAG_Systems/Weaviate_Deep_Dive]] — Weaviate 深度解析
-- [[concepts/vector-database]] — 向量数据库
-- [[concepts/rag]] — RAG
-- [[concepts/embedding]] — Embedding
-- [[concepts/milvus]] — Milvus
-- [[concepts/qdrant]] — Qdrant
+- [[14_RAG_Systems/Weaviate_Deep_Dive]] — Weaviate 深度解析
+- [[_concepts/vector-database]] — 向量数据库
+- [[_concepts/rag]] — RAG
+- [[_concepts/embedding]] — Embedding
+- [[_concepts/milvus]] — Milvus
+- [[_concepts/qdrant]] — Qdrant

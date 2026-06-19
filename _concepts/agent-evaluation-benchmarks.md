@@ -3,18 +3,18 @@ title: "Agent 评估基准"
 category: concepts
 tags: ["agent-evaluation", "benchmark", "agent", "tool-calling", "reasoning", "multistep"]
 relationships:
-  - target: "concepts/ai-agents"
+  - target: "_concepts/ai-agents"
     type: evaluates
-  - target: "concepts/model-evaluation"
+  - target: "_concepts/model-evaluation"
     type: belongs_to
-  - target: "concepts/tool-calling"
+  - target: "_concepts/tool-calling"
     type: tests
-  - target: "concepts/agentic-rag"
+  - target: "_concepts/agentic-rag"
     type: related_to
 sources:
   - 08_Model_Evaluation/Agentic_Benchmark_Guide.md
-  - 13_Agent_Production/16_Agent_Evaluation/README.md
-  - 13_Agent_Production/Agent_Harness/Agent_Harness_Comprehensive_2026.md
+  - 15_Agent_Production/Agent_Evaluation/README.md
+  - 15_Agent_Production/Agent_Harness/Agent_Harness_Comprehensive_2026.md
 summary: "Agent 评估基准是专门测试 AI Agent 综合能力的数据集和指标。它不只考模型会不会答题，而是考 Agent 能否正确规划、调用工具、多步推理、处理错误、最终完成任务。"
 provenance:
   extracted: 0.75
@@ -93,9 +93,9 @@ Agent 评估基准就像 AI 的‘综合素质面试’：不是让它背答案�
 
 ## Related
 
-- [[concepts/ai-agents]] — AI Agent
-- [[concepts/tool-calling]] — 工具调用
-- [[concepts/model-evaluation]] — 模型评估
-- [[concepts/agentic-rag]] — Agentic RAG
+- [[_concepts/ai-agents]] — AI Agent
+- [[_concepts/tool-calling]] — 工具调用
+- [[_concepts/model-evaluation]] — 模型评估
+- [[_concepts/agentic-rag]] — Agentic RAG
 - [[08_Model_Evaluation/Agentic_Benchmark_Guide]] — Agentic 评估指南
-- [[13_Agent_Production/16_Agent_Evaluation/README]] — Agent 评估
+- [[15_Agent_Production/Agent_Evaluation/README]] — Agent 评估

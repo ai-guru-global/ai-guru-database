@@ -153,8 +153,8 @@ AI 生成完整代码，你来审核和调整
 ## 下一步
 
 - 想深入工具？→ 查看子目录具体文档
-- 想学开发？→ [10_MLOps_Pipeline/README_for_dummy.md](../10_MLOps_Pipeline/README_for_dummy.md)
-- 想学测试？→ [15_Testing/README_for_dummy.md](../15_Testing/README_for_dummy.md)
+- 想学开发？→ [11_MLOps_Pipeline/README_for_dummy.md](../11_MLOps_Pipeline/README_for_dummy.md)
+- 想学测试？→ [09_Testing/README_for_dummy.md](../09_Testing/README_for_dummy.md)
 
 ---
 
@@ -162,8 +162,8 @@ AI 生成完整代码，你来审核和调整
 
 ## Related
 
-- [[17_AI_Coding/01_Theory/AI_Coding_Theory.md|AI_Coding_Theory]]
-- [[17_AI_Coding/02_Tools/AI_Coding_Assistants_2026.md|AI_Coding_Assistants_2026]]
-- [[17_AI_Coding/02_Tools/CodeBuddy_Guide.md|CodeBuddy_Guide]]
-- [[17_AI_Coding/02_Tools/Comate_Guide.md|Comate_Guide]]
-- [[17_AI_Coding/02_Tools/Coze_Guide.md|Coze_Guide]]
+- [[16_AI_Coding/Theory/AI_Coding_Theory.md|AI_Coding_Theory]]
+- [[16_AI_Coding/Tools/AI_Coding_Assistants_2026.md|AI_Coding_Assistants_2026]]
+- [[16_AI_Coding/Tools/CodeBuddy_Guide.md|CodeBuddy_Guide]]
+- [[16_AI_Coding/Tools/Comate_Guide.md|Comate_Guide]]
+- [[16_AI_Coding/Tools/Coze_Guide.md|Coze_Guide]]

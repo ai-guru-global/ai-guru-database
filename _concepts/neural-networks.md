@@ -4,11 +4,11 @@ category: concepts
 tags: ["deep-learning", "neural-networks", "backpropagation", "activation-function", "normalization", "cnn", "rnn"]
 aliases: [Neural Network, 神经网络核心, 深度学习基础]
 relationships:
-  - target: "[[concepts/optimization-regularization]]"
+  - target: "[[_concepts/optimization-regularization]]"
     type: related_to
-  - target: "concepts/transformer-architecture"
+  - target: "_concepts/transformer-architecture"
     type: related_to
-  - target: "concepts/state-space-models"
+  - target: "_concepts/state-space-models"
     type: related_to
 sources: [03_deep-reinforcement-learning_unsupervised-learning/Neural_Network_Core/Neural_Network_Core.md]
 summary: 深度学习基石，通过层级化非线性变换自动学习多层次数据表示，涵盖前向传播、反向传播、激活函数与归一化等核心机制。
@@ -158,4 +158,4 @@ $$\hat{x}_i = \frac{x_i - \mu_{\mathcal{B}}}{\sqrt{\sigma_{\mathcal{B}}^2 + \eps
 - [[03_Deep_Learning/README]] — 03 深度学习基础 (Deep Learning Foundations) (共享: backpropagation, dl)
 - [[03_Deep_Learning/World_Models/JEPA_Architecture_2026]] — JEPA 架构深度解析：LeCun 的世界模型之路 (共享: backpropagation, dl)
 - [[03_Deep_Learning/World_Models/README]] — 世界模型 (World Models) (共享: backpropagation, dl)
-- [[concepts/world-models-jepa.md|world-models-jepa]]
+- [[_concepts/world-models-jepa.md|world-models-jepa]]

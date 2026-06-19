@@ -824,4 +824,4 @@ Bias、Fairness、Privacy、Explainable AI、Alignment、Hallucination
 
 ## Related
 
-- [[17_AI_Coding/02_Tools/OpenRouter/05-openrouter-api-reference]] — 05-openrouter-api-reference (共享: ai, reference)
+- [[16_AI_Coding/Tools/OpenRouter/05-openrouter-api-reference]] — 05-openrouter-api-reference (共享: ai, reference)

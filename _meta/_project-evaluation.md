@@ -23,7 +23,7 @@ updated: 2026-06-03
 | 总字符数 | **683 万字**（约 1,138 页 A4） |
 | 知识领域 | 20+ 技术方向 |
 | 前端项目 | React + Vite + TypeScript |
-| 辅助系统 | concepts/synthesis/journal 等知识图谱体系 |
+| 辅助系统 | _concepts/_synthesis/journal 等知识图谱体系 |
 
 ### 各目录详细统计
 
@@ -55,8 +55,8 @@ updated: 2026-06-03
 ## 二、核心优势
 
 ### 1. 内容体量突出
-- 单 `13_Agent_Production` 目录 108 个文件、177 万字，覆盖 Agent 全生命周期
-- `04_NLP_LLMs` 56 个文件、86 万字，大模型技术体系完整
+- 单 `15_Agent_Production` 目录 108 个文件、177 万字，覆盖 Agent 全生命周期
+- `05_NLP_LLMs` 56 个文件、86 万字，大模型技术体系完整
 - 知识密度远超同类开源知识库项目
 
 ### 2. 结构设计成熟
@@ -86,8 +86,8 @@ updated: 2026-06-03
 ## 三、存在的问题与风险
 
 ### 1. 内容比例失衡
-- `13_Agent_Production` 占比 26%（177万/683万），过于集中
-- `10_MLOps_Pipeline`（10万字）、`08_Model_Evaluation`（16万字）相对薄弱
+- `15_Agent_Production` 占比 26%（177万/683万），过于集中
+- `11_MLOps_Pipeline`（10万字）、`08_Model_Evaluation`（16万字）相对薄弱
 - 建议：针对薄弱章节参考 `_content-gap-analysis.md` 补充
 
 ### 2. 元数据与实际偏差
@@ -106,7 +106,7 @@ updated: 2026-06-03
 - **已修复**：2026-06-03 清理冗余文件
 
 ### 5. 辅助目录缺乏治理
-- `concepts/`（50 个文件）、`synthesis/`（17 个文件）与主体章节关系模糊
+- `_concepts/`（50 个文件）、`_synthesis/`（17 个文件）与主体章节关系模糊
 - `_raw/`、`_staging/` 目录用途需明确文档化
 - 可能存在与主目录的内容重复
 
@@ -134,7 +134,7 @@ updated: 2026-06-03
 | 1 | 更新 README/ROADMAP 统计数据 | P0 | ✅ 已完成 |
 | 2 | 清理 Web 目录冗余文件 | P1 | ✅ 已完成 |
 | 3 | 补充 MLOps/评估 薄弱章节 | P2 | ⏳ 计划中 |
-| 4 | 治理 concepts/synthesis 辅助目录 | P2 | ⏳ 计划中 |
+| 4 | 治理 _concepts/synthesis 辅助目录 | P2 | ⏳ 计划中 |
 | 5 | 将 count_words.py 集成到 CI 自动更新 badge | P3 | ⏳ 计划中 |
 | 6 | 建立辅助目录与主目录去重机制 | P3 | ⏳ 计划中 |
 

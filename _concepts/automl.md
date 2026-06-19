@@ -4,11 +4,11 @@ category: concepts
 tags: ["machine-learning", "automl", "hyperparameter-optimization", "optuna", "nas", "model-selection"]
 aliases: [AutoML, 自动化机器学习, Automated Machine unsupervised-learning]
 relationships:
-  - target: "[[concepts/supervised-learning]]"
+  - target: "[[_concepts/supervised-learning]]"
     type: related_to
-  - target: "concepts/ensemble-learning"
+  - target: "_concepts/ensemble-learning"
     type: related_to
-  - target: "concepts/feature-engineering"
+  - target: "_concepts/feature-engineering"
     type: related_to
 sources: [02_Machine_Learning/AutoML/AutoML.md]
 summary: 自动化机器学习Pipeline，包括自动特征工程、模型选择、超参数优化，降低ML应用门槛。
@@ -121,16 +121,16 @@ Featuretools 是最流行的自动化特征工程库，核心是**深度特征�
 
 ## 来源
 
-- references/automl-reference
-- concepts/supervised-learning
-- concepts/ensemble-learning
-- concepts/feature-engineering
+- _references/automl-reference
+- _concepts/supervised-learning
+- _concepts/ensemble-learning
+- _concepts/feature-engineering
 
 ## Related
 
-- [[concepts/supervised-learning.md|supervised-learning]]
-- [[concepts/unsupervised-learning.md|unsupervised-learning]]
+- [[_concepts/supervised-learning.md|supervised-learning]]
+- [[_concepts/unsupervised-learning.md|unsupervised-learning]]
 - [[02_Machine_Learning/Anomaly_Detection/Anomaly_Detection.md|Anomaly_Detection]]
 - [[02_Machine_Learning/Anomaly_Detection/Anomaly_Detection_for_dummy.md|Anomaly_Detection_for_dummy]]
 - [[02_Machine_Learning/AutoML/AutoML.md|AutoML]]
-- [[synthesis/anomaly-detection-automl|异常检测 × AutoML]] — 自动化异常发现的交叉合成
+- [[_synthesis/anomaly-detection-automl|异常检测 × AutoML]] — 自动化异常发现的交叉合成

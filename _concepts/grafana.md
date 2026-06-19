@@ -3,16 +3,16 @@ title: "Grafana"
 category: concept
 tags: ["grafana", "observability", "visualization", "dashboard", "monitoring", "metrics", "logs", "traces"]
 relationships:
-  - target: "concepts/prometheus"
+  - target: "_concepts/prometheus"
     type: paired_with
-  - target: "concepts/observability"
+  - target: "_concepts/observability"
     type: extends
-  - target: "concepts/loki"
+  - target: "_concepts/loki"
     type: related_to
-  - target: "concepts/tempo"
+  - target: "_concepts/tempo"
     type: related_to
 sources:
-  - 16_AI_Ops/Prometheus_Grafana_Deep_Dive.md
+  - 13_AI_Ops/Prometheus_Grafana_Deep_Dive.md
 summary: "Grafana 是开源的可视化与监控平台，支持 Prometheus、Loki、Tempo、Elasticsearch 等多种数据源，广泛用于构建 AI 系统和云原生基础设施的监控大盘。"
 provenance:
   extracted: 0.75
@@ -66,7 +66,7 @@ updated: 2026-06-16
 
 ## Related
 
-- [[16_AI_Ops/Prometheus_Grafana_Deep_Dive]] — Prometheus + Grafana 深度解析
-- [[concepts/prometheus]] — Prometheus 监控系统
-- [[concepts/observability]] — 可观测性
-- [[16_AI_Ops/AI_Observability_Guide_2026]] — AI 可观测指南 2026
+- [[13_AI_Ops/Prometheus_Grafana_Deep_Dive]] — Prometheus + Grafana 深度解析
+- [[_concepts/prometheus]] — Prometheus 监控系统
+- [[_concepts/observability]] — 可观测性
+- [[13_AI_Ops/AI_Observability_Guide_2026]] — AI 可观测指南 2026

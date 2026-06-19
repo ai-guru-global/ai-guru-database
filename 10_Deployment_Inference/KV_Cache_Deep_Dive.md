@@ -231,7 +231,7 @@ kv_size = 2 * 32 * 8 * 128 * 128000 * 16 * 2  # ≈ 256 GB
 - 支持共享前缀（Copy-on-Write）
 - 支持动态增长
 
-更多细节见：[[concepts/paged-attention|PagedAttention 概念卡]]、[[09_Deployment_Inference/vLLM_Deep_Dive|vLLM 深度解析]]。
+更多细节见：[[_concepts/paged-attention|PagedAttention 概念卡]]、[[10_Deployment_Inference/vLLM_Deep_Dive|vLLM 深度解析]]。
 
 ### 4.2 Prefix Caching / Prompt Caching
 
@@ -245,7 +245,7 @@ kv_size = 2 * 32 * 8 * 128 * 128000 * 16 * 2  # ≈ 256 GB
 
 效果：命中时首 token 延迟降低 5–10×，长文档 RAG 场景成本降低 80–95%。
 
-深入解析：[[09_Deployment_Inference/Prompt_Caching_and_KV_Cache_Optimization|Prompt Caching 与 KV Cache 优化深度解析]]。
+深入解析：[[10_Deployment_Inference/Prompt_Caching_and_KV_Cache_Optimization|Prompt Caching 与 KV Cache 优化深度解析]]。
 
 ### 4.3 Continuous Batching
 
@@ -356,7 +356,7 @@ $$
 - 与 RoPE 的交互复杂
 - 社区正在研究 MHA/GQA → MLA 的迁移（MHA2MLA、TransMLA）
 
-更多：[[concepts/multi-head-latent-attention|MLA 概念卡]]、[[04_NLP_LLMs/Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive|DeepSeek 深度解析]]。
+更多：[[_concepts/multi-head-latent-attention|MLA 概念卡]]、[[05_NLP_LLMs/Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive|DeepSeek 深度解析]]。
 
 ### 5.6 架构对比表
 
@@ -687,17 +687,17 @@ MQA 压缩太激进，质量损失明显。GQA 在压缩比和质量之间取得
 
 ### 参考页面
 
-- [[concepts/kv-cache|KV Cache 概念卡]]
-- [[concepts/paged-attention|PagedAttention 概念卡]]
-- [[concepts/prefix-caching|Prefix Caching 概念卡]]
-- [[concepts/multi-head-latent-attention|MLA 概念卡]]
-- [[concepts/prefill-decode|Prefill / Decode 概念卡]]
-- [[concepts/attention-variants|Attention 变体概念卡]]
-- [[09_Deployment_Inference/vLLM_Deep_Dive|vLLM 深度解析]]
-- [[09_Deployment_Inference/Prompt_Caching_and_KV_Cache_Optimization|Prompt Caching 与 KV Cache 优化]]
-- [[09_Deployment_Inference/Speculative_Decoding_Advanced_2026|投机解码前沿技术]]
-- [[09_Deployment_Inference/Quantization_Techniques_2026|量化技术 2026]]
-- [[04_NLP_LLMs/LLM_Architectures/Transformer_Alternatives|Transformer 替代架构]]
+- [[_concepts/kv-cache|KV Cache 概念卡]]
+- [[_concepts/paged-attention|PagedAttention 概念卡]]
+- [[_concepts/prefix-caching|Prefix Caching 概念卡]]
+- [[_concepts/multi-head-latent-attention|MLA 概念卡]]
+- [[_concepts/prefill-decode|Prefill / Decode 概念卡]]
+- [[_concepts/attention-variants|Attention 变体概念卡]]
+- [[10_Deployment_Inference/vLLM_Deep_Dive|vLLM 深度解析]]
+- [[10_Deployment_Inference/Prompt_Caching_and_KV_Cache_Optimization|Prompt Caching 与 KV Cache 优化]]
+- [[10_Deployment_Inference/Speculative_Decoding_Advanced_2026|投机解码前沿技术]]
+- [[10_Deployment_Inference/Quantization_Techniques_2026|量化技术 2026]]
+- [[05_NLP_LLMs/LLM_Architectures/Transformer_Alternatives|Transformer 替代架构]]
 
 ---
 

@@ -50,5 +50,5 @@ tier: supporting
 
 - [[90_Learn/courses/microsoft/microsoft_ai_agents_for_beginners]] — 本库完整课程映射与章节链接
 - [[90_Learn/courses/microsoft/microsoft_genai_for_beginners]] — 姊妹课程：生成式 AI 初学者课程
-- [[references/microsoft-genai-for-beginners]] — 生成式 AI 课程引用索引
-- [[references/microsoft-ai-for-beginners]] — Microsoft AI For Beginners 12 周基础课程引用索引
+- [[_references/microsoft-genai-for-beginners]] — 生成式 AI 课程引用索引
+- [[_references/microsoft-ai-for-beginners]] — Microsoft AI For Beginners 12 周基础课程引用索引

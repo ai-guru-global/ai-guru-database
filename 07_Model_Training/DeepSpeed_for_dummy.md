@@ -234,15 +234,15 @@ model = deepspeed.init_inference(
 2. 想看分布式训练全景 → [[07_Model_Training/Distributed_Training_2026]]
 3. 想零基础了解训练 → [[07_Model_Training/Model_Training_for_dummy]]
 4. 想配合 Hugging Face 使用 → [[07_Model_Training/HF_Accelerate_DeepSpeed_Guide]]
-5. 想快速查阅 → [[concepts/deepspeed]]
+5. 想快速查阅 → [[_concepts/deepspeed]]
 
 ---
 
 ## Related
 
-- [[concepts/deepspeed]] — DeepSpeed 概念卡片
+- [[_concepts/deepspeed]] — DeepSpeed 概念卡片
 - [[07_Model_Training/DeepSpeed_Deep_Dive]] — DeepSpeed 深度解析
 - [[07_Model_Training/Distributed_Training_2026]] — 分布式训练全景
 - [[07_Model_Training/Model_Training_for_dummy]] — 模型训练入门
 - [[07_Model_Training/HF_Accelerate_DeepSpeed_Guide]] — Accelerate + DeepSpeed 极简指南
-- [[concepts/hami]] — HAMi GPU 虚拟化
+- [[_concepts/hami]] — HAMi GPU 虚拟化

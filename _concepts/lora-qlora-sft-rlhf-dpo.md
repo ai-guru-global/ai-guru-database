@@ -6,19 +6,19 @@ aliases:
   - "LoRA QLoRA SFT RLHF DPO"
   - "微调五件套"
 relationships:
-  - target: "concepts/fine-tuning-techniques"
+  - target: "_concepts/fine-tuning-techniques"
     type: belongs_to
-  - target: "concepts/lora-peft"
+  - target: "_concepts/lora-peft"
     type: related_to
-  - target: "concepts/rlhf"
+  - target: "_concepts/rlhf"
     type: related_to
-  - target: "concepts/model-training"
+  - target: "_concepts/model-training"
     type: prerequisite
-  - target: "concepts/deep-reinforcement-learning"
+  - target: "_concepts/deep-reinforcement-learning"
     type: related_to
 sources:
-  - 04_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques_for_dummy.md
-  - 04_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/PEFT_2026.md
+  - 05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques_for_dummy.md
+  - 05_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/PEFT_2026.md
   - 07_Model_Training/TRL_RLHF_DPO_Guide.md
   - 07_Model_Training/GRPO_and_New_Alignment_Methods.md
 summary: "把大模型微调的五个核心概念串成一条线：SFT 教它说话，RLHF/DPO 教它讨人喜欢，LoRA/QLoRA 让这一切能在普通显卡上跑起来。"
@@ -335,10 +335,10 @@ Aligned Chat Model（又好又安全）
 
 ## Related
 
-- [[concepts/fine-tuning-techniques]] — 微调技术总览
-- [[concepts/lora-peft]] — LoRA 与参数高效微调
-- [[concepts/rlhf]] — 基于人类反馈的强化学习
-- [[concepts/model-training]] — 模型训练基础
-- [[04_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques_for_dummy]] — 微调技术小白版
+- [[_concepts/fine-tuning-techniques]] — 微调技术总览
+- [[_concepts/lora-peft]] — LoRA 与参数高效微调
+- [[_concepts/rlhf]] — 基于人类反馈的强化学习
+- [[_concepts/model-training]] — 模型训练基础
+- [[05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques_for_dummy]] — 微调技术小白版
 - [[07_Model_Training/TRL_RLHF_DPO_Guide]] — TRL 实战：RLHF 与 DPO
 - [[07_Model_Training/GRPO_and_New_Alignment_Methods]] — GRPO 与新一代对齐方法

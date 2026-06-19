@@ -210,8 +210,8 @@ updated: 2026-06-15
 
 ## Related
 
-- [[concepts/inference-performance]] — 推理性能概念卡
-- [[09_Deployment_Inference/Inference_Performance/README|推理性能专题]]
-- [[09_Deployment_Inference/Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]]
-- [[09_Deployment_Inference/Inference_Performance/Inference_Speed_Factors_for_dummy|决定模型推理速度的要素]]
-- [[09_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy|推理性能术语大白话解释]]
+- [[_concepts/inference-performance]] — 推理性能概念卡
+- [[10_Deployment_Inference/Inference_Performance/README|推理性能专题]]
+- [[10_Deployment_Inference/Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]]
+- [[10_Deployment_Inference/Inference_Performance/Inference_Speed_Factors_for_dummy|决定模型推理速度的要素]]
+- [[10_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy|推理性能术语大白话解释]]

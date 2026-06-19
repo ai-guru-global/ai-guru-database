@@ -14,11 +14,11 @@ aliases:
 - 语义分割
 - 实例分割
 relationships:
-- target: 'concepts/computer-vision'
+- target: '_concepts/computer-vision'
   type: related_to
-- target: 'concepts/object-detection'
+- target: '_concepts/object-detection'
   type: related_to
-- target: 'concepts/generative-vision-models'
+- target: '_concepts/generative-vision-models'
   type: related_to
 sources:
 - 05_computer-vision_multimodal-vision/Segmentation/Segmentation.md
@@ -107,4 +107,4 @@ BiSeNet v2采用双路径设计（空间路径+语义路径），实现>150 FPS�
 
 ## 来源
 
-- 05_Computer_Vision/Segmentation/Segmentation.md
+- 04_Computer_Vision/Segmentation/Segmentation.md

@@ -429,8 +429,8 @@ AI 会自动学习每个词/句子的"数字表示"
 
 ## Related
 
-- [[11_RAG_Systems/RAG-in-nutshell.md|RAG-in-nutshell]]
-- [[11_RAG_Systems/RAG_Systems.md|RAG_Systems]]
-- [[11_RAG_Systems/README_Advanced.md|README_Advanced]]
-- [[11_RAG_Systems/Spring_AI_RAG_Deep_Dive.md|Spring_AI_RAG_Deep_Dive]]
-- [[synthesis/rag-vector-database.md|rag-vector-database]]
+- [[14_RAG_Systems/RAG-in-nutshell.md|RAG-in-nutshell]]
+- [[14_RAG_Systems/RAG_Systems.md|RAG_Systems]]
+- [[14_RAG_Systems/README_Advanced.md|README_Advanced]]
+- [[14_RAG_Systems/Spring_AI_RAG_Deep_Dive.md|Spring_AI_RAG_Deep_Dive]]
+- [[_synthesis/rag-vector-database.md|rag-vector-database]]

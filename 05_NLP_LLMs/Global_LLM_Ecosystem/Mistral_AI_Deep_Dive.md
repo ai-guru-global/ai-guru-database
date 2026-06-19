@@ -1456,7 +1456,7 @@ curl http://localhost:11434/api/generate -d '{
 
 ### MoE 深度研究
 
-- [Mixture of Experts Deep Dive](../../22_Papers/Mixture_of_Experts_Deep_Dive.md) — MoE 从理论到实践的完整剖析，涵盖 Mixtral 和 DeepSeek
+- [Mixture of Experts Deep Dive](../../20_Papers/Mixture_of_Experts_Deep_Dive.md) — MoE 从理论到实践的完整剖析，涵盖 Mixtral 和 DeepSeek
 
 ### 中国 LLM 生态
 

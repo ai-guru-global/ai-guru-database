@@ -971,5 +971,5 @@ Static Fallback
 - [[12_Architecture_Infrastructure/Spring_AI_Architecture]] — Spring AI 系统架构设计 (共享: architecture, high-availability, infrastructure, kubernetes)
 - [[12_Architecture_Infrastructure/Multi_Tenant_Architecture.md|Multi_Tenant_Architecture]]
 - [[12_Architecture_Infrastructure/README_for_dummy.md|README_for_dummy]]
-- [[synthesis/llm-infrastructure-system-design|LLM 基础设施 × 传统系统架构]] — 从 Web 服务到 Token 工厂
+- [[_synthesis/llm-infrastructure-system-design|LLM 基础设施 × 传统系统架构]] — 从 Web 服务到 Token 工厂
 - [[01_Fundamentals/AI_Hardware/Chinese_AI_Chips_Deep_Dive]] — 国产 AI 芯片12家厂商深度解析 (昇腾/寒武纪/海光/壁仞等)

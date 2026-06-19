@@ -91,9 +91,9 @@ TensorFlow/Keras 风格则可用 `tf.keras.layers.LSTM(hid_size)` 直接堆叠�
   - RNN 在语音、时间序列预测等其他模态的应用。
 - **延伸**：
   - Christopher Olah 的博客 [Understanding LSTM Networks](https://colah.github.io/posts/2015-08-Understanding-LSTMs/) 是理解 LSTM 门控细节的绝佳读物。
-  - 想深入长程建模，可继续阅读本库 [[04_NLP_LLMs/Transformer_Revolution/Transformer_Revolution]] 与 [[04_NLP_LLMs/LLM_Architectures/LLM_Architectures]]。
+  - 想深入长程建模，可继续阅读本库 [[05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution]] 与 [[05_NLP_LLMs/LLM_Architectures/LLM_Architectures]]。
 
 ## 相关阅读
 
 - 课程索引：[[90_Learn/courses/microsoft/microsoft_ai_for_beginners]]
-- 本库相关页面：[[04_NLP_LLMs/Sequence_Models/Sequence_Models]]
+- 本库相关页面：[[05_NLP_LLMs/Sequence_Models/Sequence_Models]]

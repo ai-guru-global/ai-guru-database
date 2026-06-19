@@ -317,4 +317,4 @@ image_square_size: 336
 
 ## Related
 
-- [[04_NLP_LLMs/README.md|README]]
+- [[05_NLP_LLMs/README.md|README]]

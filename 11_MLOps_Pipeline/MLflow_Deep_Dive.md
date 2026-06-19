@@ -11,7 +11,7 @@ updated: "2026-05-31"
 
 > **一句话理解**: MLflow 是 Databricks 的机器学习生命周期管理平台——实验追踪、模型注册、特征存储、模型服务，开源 ML 平台的事实标准。
 
-> 📐 **概念与选型方法论**: 实验追踪的原理、MLflow vs W&B vs Neptune 选型，见 [[10_MLOps_Pipeline/Experiment_Tracking_Deep_Dive]]；模型注册概念见 [[10_MLOps_Pipeline/Model_Registry_and_Cards_Deep_Dive]]。本文聚焦 MLflow 工具用法。
+> 📐 **概念与选型方法论**: 实验追踪的原理、MLflow vs W&B vs Neptune 选型，见 [[11_MLOps_Pipeline/Experiment_Tracking_Deep_Dive]]；模型注册概念见 [[11_MLOps_Pipeline/Model_Registry_and_Cards_Deep_Dive]]。本文聚焦 MLflow 工具用法。
 
 ---
 
@@ -378,8 +378,8 @@ mlflow.log_feature_store(
 
 ## Related
 
-- [[16_AI_Ops/AIOps-in-nutshell.md|AIOps-in-nutshell]]
-- [[16_AI_Ops/AI_Incident_Response_Playbook.md|AI_Incident_Response_Playbook]]
-- [[16_AI_Ops/AI_Ops_for_dummy.md|AI_Ops_for_dummy]]
-- [[16_AI_Ops/README.md|16_AI_Ops README]]
-- [[16_AI_Ops/README_for_dummy.md|README_for_dummy]]
+- [[13_AI_Ops/AIOps-in-nutshell.md|AIOps-in-nutshell]]
+- [[13_AI_Ops/AI_Incident_Response_Playbook.md|AI_Incident_Response_Playbook]]
+- [[13_AI_Ops/AI_Ops_for_dummy.md|AI_Ops_for_dummy]]
+- [[13_AI_Ops/README.md|13_AI_Ops README]]
+- [[13_AI_Ops/README_for_dummy.md|README_for_dummy]]

@@ -3,15 +3,15 @@ title: "Volcano"
 category: concept
 tags: ["volcano", "kubernetes", "scheduler", "batch", "gang-scheduling", "distributed-training", "cncf"]
 relationships:
-  - target: "concepts/kubernetes"
+  - target: "_concepts/kubernetes"
     type: extends
-  - target: "concepts/distributed-training"
+  - target: "_concepts/distributed-training"
     type: enables
-  - target: "concepts/kubeflow"
+  - target: "_concepts/kubeflow"
     type: related_to
-  - target: "concepts/kueue"
+  - target: "_concepts/kueue"
     type: related_to
-  - target: "concepts/ray"
+  - target: "_concepts/ray"
     type: related_to
 sources:
   - 12_Architecture_Infrastructure/CNCF_Cloud_Native_AI/Volcano_Deep_Dive.md
@@ -90,8 +90,8 @@ updated: 2026-06-16
 ## Related
 
 - [[12_Architecture_Infrastructure/CNCF_Cloud_Native_AI/Volcano_Deep_Dive]] — Volcano 深度解析
-- [[concepts/kubernetes]] — Kubernetes
-- [[concepts/distributed-training]] — 分布式训练
-- [[concepts/kubeflow]] — Kubeflow
-- [[concepts/kueue]] — Kueue
-- [[concepts/ray]] — Ray
+- [[_concepts/kubernetes]] — Kubernetes
+- [[_concepts/distributed-training]] — 分布式训练
+- [[_concepts/kubeflow]] — Kubeflow
+- [[_concepts/kueue]] — Kueue
+- [[_concepts/ray]] — Ray

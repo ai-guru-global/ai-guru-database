@@ -1347,9 +1347,9 @@ flowchart TD
 - [模型评估基础](./Model_Evaluation.md) — 评估指标与方法论
 
 ### 进阶方向
-- [AI 测试框架](../15_Testing/README.md) — 测试框架与评估工具链
-- [MLOps 流水线](../10_MLOps_Pipeline/MLOps_Pipeline.md) — CI/CD 集成与模型生命周期
-- [AI Ops 监控](../16_AI_Ops/AI_Ops_2026.md) — 生产环境模型监控与自动告警
+- [AI 测试框架](../09_Testing/README.md) — 测试框架与评估工具链
+- [MLOps 流水线](../11_MLOps_Pipeline/MLOps_Pipeline.md) — CI/CD 集成与模型生命周期
+- [AI Ops 监控](../13_AI_Ops/AI_Ops_2026.md) — 生产环境模型监控与自动告警
 - [在线评估](./Online_Evaluation.md) — 上线后的真实效果评估
 
 ---
@@ -1385,6 +1385,6 @@ flowchart TD
 
 - [[08_Model_Evaluation/Model_Evaluation.md|Model_Evaluation]]
 - [[08_Model_Evaluation/README.md|08_Model_Evaluation README]]
-- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow.md|Evaluation_Workflow]]
-- [[13_Agent_Production/16_Agent_Evaluation/Cloud_Agent_Evaluation/README.md|Cloud_Agent_Evaluation README]]
-- [[13_Agent_Production/16_Agent_Evaluation/Cloud_Agent_Evaluation_System_2026.md|Cloud_Agent_Evaluation_System_2026]]
+- [[15_Agent_Production/Agent_Evaluation/Assessment/Evaluation_Workflow.md|Evaluation_Workflow]]
+- [[15_Agent_Production/Agent_Evaluation/Cloud_Agent_Evaluation/README.md|Cloud_Agent_Evaluation README]]
+- [[15_Agent_Production/Agent_Evaluation/Cloud_Agent_Evaluation_System_2026.md|Cloud_Agent_Evaluation_System_2026]]

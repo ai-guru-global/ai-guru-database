@@ -3,9 +3,9 @@ title: Prefix Caching (前缀缓存)
 category: concepts
 tags: [inference, kv-cache, caching, prefix, optimization]
 relationships:
-  - target: "concepts/kv-cache"
+  - target: "_concepts/kv-cache"
     type: optimizes
-  - target: "concepts/radix-attention"
+  - target: "_concepts/radix-attention"
     type: implemented_by
 sources:
   - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
@@ -72,7 +72,7 @@ Request 2: [System Prompt (10K)] + [Document (50K)] + [User Query B (150)]
 
 ## Related
 
-- [[concepts/kv-cache]] — KV Cache
-- [[concepts/radix-attention]] — RadixAttention（SGLang 实现）
-- [[concepts/paged-attention]] — PagedAttention（底层内存管理）
-- [[09_Deployment_Inference/Prompt_Caching_and_KV_Cache_Optimization]] — Prompt Caching 全景
+- [[_concepts/kv-cache]] — KV Cache
+- [[_concepts/radix-attention]] — RadixAttention（SGLang 实现）
+- [[_concepts/paged-attention]] — PagedAttention（底层内存管理）
+- [[10_Deployment_Inference/Prompt_Caching_and_KV_Cache_Optimization]] — Prompt Caching 全景

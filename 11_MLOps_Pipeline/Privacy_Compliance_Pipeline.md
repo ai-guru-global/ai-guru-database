@@ -12,7 +12,7 @@ tier: core
 
 > **一句话理解**: 合规不是上线后补的论文，是流水线的门禁——PII 检测、数据血源、模型卡强制化、审计追溯，让每个模型都能回答「用了谁的数据、给谁用、合不合规」。
 
-本文是合规视角的 MLOps。隐私保护技术（联邦学习/差分隐私）见 [[19_Ethics_Safety/Privacy_Preserving_AI/README]]，安全红队见 [[19_Ethics_Safety/AI_Security_2026/README]]。
+本文是合规视角的 MLOps。隐私保护技术（联邦学习/差分隐私）见 [[17_Ethics_Safety/Privacy_Preserving_AI/README]]，安全红队见 [[17_Ethics_Safety/AI_Security_2026/README]]。
 
 ---
 
@@ -312,24 +312,24 @@ WHERE user_id = 'X' AND consent_status = 'consented';
 
 本文讲隐私合规的**方法论与门禁设计**。具体安全护栏工具的用法：
 
-- [[16_AI_Ops/Guardrails_Deep_Dive]] — Guardrails AI：LLM 输入/输出护栏
+- [[13_AI_Ops/Guardrails_Deep_Dive]] — Guardrails AI：LLM 输入/输出护栏
 
 ---
 
 ## 8. 相关文档
 
 ### 本章内
-- [[10_MLOps_Pipeline/MLOps_Pipeline]] — 全流水线（合规是横切关注点）
-- [[10_MLOps_Pipeline/Model_Registry_and_Cards_Deep_Dive]] — 模型卡
-- [[10_MLOps_Pipeline/Data_Versioning_DVC_LakeFS]] — 数据血源基础
-- [[10_MLOps_Pipeline/LLM_Observability]] — PII 在线检测
+- [[11_MLOps_Pipeline/MLOps_Pipeline]] — 全流水线（合规是横切关注点）
+- [[11_MLOps_Pipeline/Model_Registry_and_Cards_Deep_Dive]] — 模型卡
+- [[11_MLOps_Pipeline/Data_Versioning_DVC_LakeFS]] — 数据血源基础
+- [[11_MLOps_Pipeline/LLM_Observability]] — PII 在线检测
 
 ### 跨章
-- [[19_Ethics_Safety/README]] — 伦理与安全
-- [[19_Ethics_Safety/Privacy_Preserving_AI/README]] — 联邦学习/差分隐私
-- [[19_Ethics_Safety/Value_Alignment/README]] — 价值对齐
+- [[17_Ethics_Safety/README]] — 伦理与安全
+- [[17_Ethics_Safety/Privacy_Preserving_AI/README]] — 联邦学习/差分隐私
+- [[17_Ethics_Safety/Value_Alignment/README]] — 价值对齐
 - [[08_Model_Evaluation/Fairness_Evaluation_for_dummy]] — 公平性评估
-- [[concepts/mlops]] — MLOps 概念
+- [[_concepts/mlops]] — MLOps 概念
 
 ---
 

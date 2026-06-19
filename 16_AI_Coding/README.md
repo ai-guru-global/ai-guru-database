@@ -100,40 +100,40 @@ updated: '2026-05-31'
 > **AI 编程已从"补全"进化为"结对编程伙伴"** — Cursor 以 72% 代码接受率领跑，Hermes Agent 以全平台开源和 17+模型支持成为最大变量，Agentic Coding 成为 2026 年主流。
 
 ## Related
-- [[17_AI_Coding/03_Practice/Vibe_Coding_Prompt_Templates|Vibe Coding 提示词模板库]]
-- [[17_AI_Coding/03_Practice/Vibe_Coding_Getting_Started|Vibe Coding 傻瓜指南 (Vibe Coding for Dummies)]]
-- [[17_AI_Coding/03_Practice/Vibe_Coding_Real_World_Cases|Vibe Coding 实战案例集]]
-- [[17_AI_Coding/02_Tools/OpenRouter/12-openrouter-enterprise-advanced|17_AI_Coding/02_Tools/OpenRouter/12-openrouter-enterprise-advanced]]
-- [[17_AI_Coding/02_Tools/Hermes_Agent_2026|Hermes Agent 2026 年专业指南]]
-- [[17_AI_Coding/02_Tools/Qoder_Guide|Qoder / QoderWork / QoderWake 使用指南]]
-- [[17_AI_Coding/02_Tools/DeepSeek_Guide|DeepSeek 使用指南]]
-- [[17_AI_Coding/02_Tools/Monica_Guide|Monica 使用指南]]
-- [[17_AI_Coding/AI_Coding-in-nutshell|AI 编程 - 速查版]]
-- [[17_AI_Coding/README|AI 编程 (AI Coding)]]
-- [[17_AI_Coding/MOC_OpenRouter_OpenCode|topic-ai-coding MOC]]
-- [[17_AI_Coding/README_for_dummy|17 AI 编程 — 小白版 💻]]
+- [[16_AI_Coding/Practice/Vibe_Coding_Prompt_Templates|Vibe Coding 提示词模板库]]
+- [[16_AI_Coding/Practice/Vibe_Coding_Getting_Started|Vibe Coding 傻瓜指南 (Vibe Coding for Dummies)]]
+- [[16_AI_Coding/Practice/Vibe_Coding_Real_World_Cases|Vibe Coding 实战案例集]]
+- [[16_AI_Coding/Tools/OpenRouter/12-openrouter-enterprise-advanced|16_AI_Coding/Tools/OpenRouter/12-openrouter-enterprise-advanced]]
+- [[16_AI_Coding/Tools/Hermes_Agent_2026|Hermes Agent 2026 年专业指南]]
+- [[16_AI_Coding/Tools/Qoder_Guide|Qoder / QoderWork / QoderWake 使用指南]]
+- [[16_AI_Coding/Tools/DeepSeek_Guide|DeepSeek 使用指南]]
+- [[16_AI_Coding/Tools/Monica_Guide|Monica 使用指南]]
+- [[16_AI_Coding/AI_Coding-in-nutshell|AI 编程 - 速查版]]
+- [[16_AI_Coding/README|AI 编程 (AI Coding)]]
+- [[16_AI_Coding/MOC_OpenRouter_OpenCode|topic-ai-coding MOC]]
+- [[16_AI_Coding/README_for_dummy|17 AI 编程 — 小白版 💻]]
 
-- [[concepts/ai-agents]] — AI 智能体
-- [[concepts/prompt-engineering]] — 提示工程
-- [[17_AI_Coding/04_Methodology/Vibe_Coding_Production_Practices]] — Vibe_Coding_Production_Practices
-- [[17_AI_Coding/04_Methodology/Agentic_Coding_Methodology]] — Agentic_Coding_Methodology
-- [[17_AI_Coding/04_Methodology/Vibe_Coding_Methodology]] — Vibe_Coding_Methodology
-- [[17_AI_Coding/02_Tools/MiMO_Guide]] — MiMO 使用指南
-- [[17_AI_Coding/02_Tools/Kilo_Guide]] — Kilo / KiloClaw 使用指南
-- [[17_AI_Coding/02_Tools/Grok_Guide]] — Grok / Grok Code 使用指南
-- [[17_AI_Coding/02_Tools/Kimi_Guide]] — Kimi Code / Kimi Chat 使用指南
-- [[17_AI_Coding/02_Tools/AI_Coding_Assistants_2026]] — AI_Coding_Assistants_2026
-- [[17_AI_Coding/02_Tools/Trae_Guide]] — Trae 使用指南
-- [[17_AI_Coding/02_Tools/MiniMax_Guide]] — MiniMax / MiniClaw 使用指南
-- [[17_AI_Coding/02_Tools/Manus_Guide]] — Manus 使用指南
-- [[17_AI_Coding/02_Tools/GLM_Guide]] — GLM 使用指南
-- [[17_AI_Coding/02_Tools/Qwen_Guide]] — Qwen (通义千问) 使用指南
-- [[17_AI_Coding/02_Tools/Cursor_Guide]] — Cursor 使用指南
-- [[17_AI_Coding/02_Tools/Comate_Guide]] — Comate 使用指南
-- [[17_AI_Coding/02_Tools/Ima_Guide]] — Ima 使用指南
-- [[17_AI_Coding/02_Tools/Coze_Guide]] — Coze 使用指南
-- [[17_AI_Coding/02_Tools/Pending_Tools_Catalog]] — 待探索工具目录
+- [[_concepts/ai-agents]] — AI 智能体
+- [[_concepts/prompt-engineering]] — 提示工程
+- [[16_AI_Coding/Methodology/Vibe_Coding_Production_Practices]] — Vibe_Coding_Production_Practices
+- [[16_AI_Coding/Methodology/Agentic_Coding_Methodology]] — Agentic_Coding_Methodology
+- [[16_AI_Coding/Methodology/Vibe_Coding_Methodology]] — Vibe_Coding_Methodology
+- [[16_AI_Coding/Tools/MiMO_Guide]] — MiMO 使用指南
+- [[16_AI_Coding/Tools/Kilo_Guide]] — Kilo / KiloClaw 使用指南
+- [[16_AI_Coding/Tools/Grok_Guide]] — Grok / Grok Code 使用指南
+- [[16_AI_Coding/Tools/Kimi_Guide]] — Kimi Code / Kimi Chat 使用指南
+- [[16_AI_Coding/Tools/AI_Coding_Assistants_2026]] — AI_Coding_Assistants_2026
+- [[16_AI_Coding/Tools/Trae_Guide]] — Trae 使用指南
+- [[16_AI_Coding/Tools/MiniMax_Guide]] — MiniMax / MiniClaw 使用指南
+- [[16_AI_Coding/Tools/Manus_Guide]] — Manus 使用指南
+- [[16_AI_Coding/Tools/GLM_Guide]] — GLM 使用指南
+- [[16_AI_Coding/Tools/Qwen_Guide]] — Qwen (通义千问) 使用指南
+- [[16_AI_Coding/Tools/Cursor_Guide]] — Cursor 使用指南
+- [[16_AI_Coding/Tools/Comate_Guide]] — Comate 使用指南
+- [[16_AI_Coding/Tools/Ima_Guide]] — Ima 使用指南
+- [[16_AI_Coding/Tools/Coze_Guide]] — Coze 使用指南
+- [[16_AI_Coding/Tools/Pending_Tools_Catalog]] — 待探索工具目录
 
 ## 新增页面
 
-- [[17_AI_Coding/AI_Coding_2026_Guide|AI 编程 2026 全景指南]]
+- [[16_AI_Coding/AI_Coding_2026_Guide|AI 编程 2026 全景指南]]

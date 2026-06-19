@@ -164,10 +164,10 @@ metrics:
 
 ## Related
 
-- [[concepts/model-serving]] — 模型服务
-- [[concepts/model-gateway]] — AI Gateway
-- [[09_Deployment_Inference/Inference_Performance/README|推理性能专题]]
-- [[09_Deployment_Inference/Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]]
-- [[09_Deployment_Inference/Inference_Performance/Prefill_Decode_Disaggregation|Prefill-Decode 分离]]
-- [[09_Deployment_Inference/Inference_Performance/Request_Scheduling_for_LLMs|请求调度]]
-- [[09_Deployment_Inference/LLM_Cost_Optimization|LLM 成本优化]]
+- [[_concepts/model-serving]] — 模型服务
+- [[_concepts/model-gateway]] — AI Gateway
+- [[10_Deployment_Inference/Inference_Performance/README|推理性能专题]]
+- [[10_Deployment_Inference/Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]]
+- [[10_Deployment_Inference/Inference_Performance/Prefill_Decode_Disaggregation|Prefill-Decode 分离]]
+- [[10_Deployment_Inference/Inference_Performance/Request_Scheduling_for_LLMs|请求调度]]
+- [[10_Deployment_Inference/LLM_Cost_Optimization|LLM 成本优化]]

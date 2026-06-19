@@ -720,18 +720,18 @@ MTTR_DISTRIBUTION = {
 - [SRE for AI Systems](./SRE_for_AI_Systems.md) — SLI/SLO 设计与错误预算
 - [AI Ops 2026](./AI_Ops_2026.md) — 智能运维完整体系
 - [Cloud Ops 2026](../18_Cloud_Ops_Agent/Cloud_Product_Ops_2026.md) — 云产品运维 Agent
-- [部署与推理](../09_Deployment_Inference/Inference-in-nutshell.md) — 推理优化
-- [AI 测试](../15_Testing/AI-Testing-in-nutshell.md) — AI 测试体系
+- [部署与推理](../10_Deployment_Inference/Inference-in-nutshell.md) — 推理优化
+- [AI 测试](../09_Testing/AI-Testing-in-nutshell.md) — AI 测试体系
 
 > 📅 **最后更新**：2026-04-11 | **方法论**：PagerDuty Incident Response + Google SRE + AI 生产实践
 
 ## Related
 
-- [[16_AI_Ops/AIOps-in-nutshell]] — AI Ops 速成指南 (共享: ai-ops, incident-response, monitoring, observability)
-- [[16_AI_Ops/AI_Ops_for_dummy]] — AI Ops 入门指南 (for Dummies) (共享: ai-ops, incident-response, monitoring, observability)
-- [[16_AI_Ops/README]] — AI 运维与可观测性 (AI Ops) (共享: ai-ops, incident-response, monitoring, observability)
-- [[16_AI_Ops/README_for_dummy]] — 16 AI Ops — 小白版 📡 (共享: ai-ops, incident-response, monitoring, observability)
-- [[16_AI_Ops/AI_Observability_Guide.md|AI_Observability_Guide]]
-- [[16_AI_Ops/Helicone_Deep_Dive.md|Helicone_Deep_Dive]]
-- [[16_AI_Ops/Prefect_Deep_Dive.md|Prefect_Deep_Dive]]
-- [[16_AI_Ops/DVC_Deep_Dive.md|DVC_Deep_Dive]]
+- [[13_AI_Ops/AIOps-in-nutshell]] — AI Ops 速成指南 (共享: ai-ops, incident-response, monitoring, observability)
+- [[13_AI_Ops/AI_Ops_for_dummy]] — AI Ops 入门指南 (for Dummies) (共享: ai-ops, incident-response, monitoring, observability)
+- [[13_AI_Ops/README]] — AI 运维与可观测性 (AI Ops) (共享: ai-ops, incident-response, monitoring, observability)
+- [[13_AI_Ops/README_for_dummy]] — 16 AI Ops — 小白版 📡 (共享: ai-ops, incident-response, monitoring, observability)
+- [[13_AI_Ops/AI_Observability_Guide.md|AI_Observability_Guide]]
+- [[13_AI_Ops/Helicone_Deep_Dive.md|Helicone_Deep_Dive]]
+- [[13_AI_Ops/Prefect_Deep_Dive.md|Prefect_Deep_Dive]]
+- [[13_AI_Ops/DVC_Deep_Dive.md|DVC_Deep_Dive]]

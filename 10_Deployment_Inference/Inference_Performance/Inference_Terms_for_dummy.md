@@ -237,15 +237,15 @@ PD 分离就是：**让擅长查资料的人去 prefill，让擅长写字的人�
 
 ## Related
 
-- [[concepts/mixture-of-experts]] — MoE
-- [[concepts/multi-head-latent-attention]] — MLA
-- [[concepts/attention-variants]] — GQA/MQA
-- [[concepts/flops]] — FLOPS
-- [[concepts/prefill-decode]] — Prefill / Decode
-- [[concepts/ttft]] — TTFT
-- [[concepts/quantization]] — 量化
-- [[concepts/gpu-interconnect]] — GPU 互联
-- [[concepts/rdma-roce]] — RDMA / InfiniBand
-- [[concepts/prefill-decode-disaggregation]] — PD 分离
-- [[09_Deployment_Inference/Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]]
-- [[09_Deployment_Inference/Inference_Performance/Inference_Speed_Factors_for_dummy|决定模型推理速度的要素]]
+- [[_concepts/mixture-of-experts]] — MoE
+- [[_concepts/multi-head-latent-attention]] — MLA
+- [[_concepts/attention-variants]] — GQA/MQA
+- [[_concepts/flops]] — FLOPS
+- [[_concepts/prefill-decode]] — Prefill / Decode
+- [[_concepts/ttft]] — TTFT
+- [[_concepts/quantization]] — 量化
+- [[_concepts/gpu-interconnect]] — GPU 互联
+- [[_concepts/rdma-roce]] — RDMA / InfiniBand
+- [[_concepts/prefill-decode-disaggregation]] — PD 分离
+- [[10_Deployment_Inference/Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]]
+- [[10_Deployment_Inference/Inference_Performance/Inference_Speed_Factors_for_dummy|决定模型推理速度的要素]]

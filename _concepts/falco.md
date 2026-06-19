@@ -3,16 +3,16 @@ title: "Falco"
 category: concept
 tags: ["falco", "security", "runtime-security", "kubernetes", "syscall", "threat-detection", "cncf"]
 relationships:
-  - target: "concepts/runtime-security"
+  - target: "_concepts/runtime-security"
     type: implements
-  - target: "concepts/kubernetes"
+  - target: "_concepts/kubernetes"
     type: used_by
-  - target: "concepts/opa"
+  - target: "_concepts/opa"
     type: related_to
-  - target: "concepts/kyverno"
+  - target: "_concepts/kyverno"
     type: related_to
 sources:
-  - 19_Ethics_Safety/LLM_Security_Complete_Guide.md
+  - 17_Ethics_Safety/LLM_Security_Complete_Guide.md
 summary: "Falco 是 CNCF Incubating 的运行时安全检测工具，通过监控系统调用和 K8s 审计日志发现异常行为，广泛应用于容器逃逸、权限提升、敏感文件访问等威胁检测。"
 provenance:
   extracted: 0.75
@@ -85,8 +85,8 @@ updated: 2026-06-16
 
 ## Related
 
-- [[concepts/runtime-security]] — 运行时安全
-- [[concepts/opa]] — OPA
-- [[concepts/kyverno]] — Kyverno
-- [[concepts/kubernetes]] — Kubernetes
-- [[19_Ethics_Safety/LLM_Security_Complete_Guide]] — LLM 安全完整指南
+- [[_concepts/runtime-security]] — 运行时安全
+- [[_concepts/opa]] — OPA
+- [[_concepts/kyverno]] — Kyverno
+- [[_concepts/kubernetes]] — Kubernetes
+- [[17_Ethics_Safety/LLM_Security_Complete_Guide]] — LLM 安全完整指南

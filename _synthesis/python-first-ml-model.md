@@ -70,4 +70,4 @@ Day 14:   Kaggle 提交 + 总结复盘
 - [[01_Fundamentals/AI_Development_Environment_Setup]] — 开发环境配置
 - [[02_Machine_Learning/Supervised_Learning/EDA_Quick_Start]] — EDA 快速入门
 - [[02_Machine_Learning/Feature_Engineering/Data_Preprocessing_for_dummy]] — 数据预处理入门
-- [[synthesis/python-data-science-pipeline]] — Python × 数据科学管道
+- [[_synthesis/python-data-science-pipeline]] — Python × 数据科学管道

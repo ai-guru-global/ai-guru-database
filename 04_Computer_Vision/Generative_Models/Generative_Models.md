@@ -517,7 +517,7 @@ result.save("controlnet_output.png")
 ### 前置知识
 - [卷积神经网络](../Image_Classification_Detection/Image_Classification_Detection.md): U-Net 基础
 - [自编码器](../../02_Machine_Learning/Autoencoders/Autoencoders.md): VAE 原理
-- [Transformer](../../04_NLP_LLMs/Transformer_Revolution/Transformer_Revolution.md): CLIP, Attention 机制
+- [Transformer](../../05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution.md): CLIP, Attention 机制
 
 ### 后续推荐
 - [多模态视觉](../Multimodal_Vision/Multimodal_Vision.md): CLIP, BLIP

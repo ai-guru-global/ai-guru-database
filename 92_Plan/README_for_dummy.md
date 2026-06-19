@@ -136,4 +136,4 @@ Q4-P2 (已完成 ✅)
 - [[92_Plan/Implementation_Plan_2026.md|Implementation_Plan_2026]]
 - [[92_Plan/Project_Comprehensive_Evaluation_2026.md|Project_Comprehensive_Evaluation_2026]]
 - [[92_Plan/Project_Structure_Evaluation_2026.md|Project_Structure_Evaluation_2026]]
-- [[synthesis/agents-reinforcement-learning.md|agents-reinforcement-learning]]
+- [[_synthesis/agents-reinforcement-learning.md|agents-reinforcement-learning]]

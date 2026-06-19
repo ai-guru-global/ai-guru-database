@@ -3,25 +3,25 @@ title: "嵌入模型 (Embedding Models)"
 category: concept
 tags: ["embedding", "vector-representation", "semantic-search", "sentence-transformers", "reranking"]
 relationships:
-  - target: "concepts/rag-systems"
+  - target: "_concepts/rag-systems"
     type: enables
-  - target: "concepts/vector-database"
+  - target: "_concepts/vector-database"
     type: related_to
-  - target: "concepts/llm-architectures"
+  - target: "_concepts/llm-architectures"
     type: builds_on
-  - target: "concepts/matryoshka-representation-learning"
+  - target: "_concepts/matryoshka-representation-learning"
     type: related_to
-  - target: "concepts/embeddings-vectors-mrl-plain"
+  - target: "_concepts/embeddings-vectors-mrl-plain"
     type: simplified
-  - target: "09_Deployment_Inference/Inference_Performance/Embedding_Model_Serving"
+  - target: "10_Deployment_Inference/Inference_Performance/Embedding_Model_Serving"
     type: optimized_by
 sources:
   - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
-  - 11_RAG_Systems/RAG_Advanced_2026.md
-  - 11_RAG_Systems/Matryoshka_Representation_Learning_Deep_Dive.md
-  - 22_Papers/Matryoshka_Representation_Learning_Deep_Dive.md
-  - 09_Deployment_Inference/Inference_Performance/Embedding_Model_Serving.md
-  - concepts/embeddings-vectors-mrl-plain.md
+  - 14_RAG_Systems/RAG_Advanced_2026.md
+  - 14_RAG_Systems/Matryoshka_Representation_Learning_Deep_Dive.md
+  - 20_Papers/Matryoshka_Representation_Learning_Deep_Dive.md
+  - 10_Deployment_Inference/Inference_Performance/Embedding_Model_Serving.md
+  - _concepts/embeddings-vectors-mrl-plain.md
 summary: "嵌入模型将文本/图像映射为高维稠密向量，是语义搜索、RAG、聚类的基础。2026年主流方案包括 GTE、bge、E5-Mistral 等，维度从 384 到 4096。"
 provenance:
   extracted: 0.50
@@ -73,7 +73,7 @@ f: \text{text} \rightarrow \mathbf{v} \in \mathbb{R}^d
 | **GTE-Qwen2-7B** | 3584 | 8192 | 70.3 | Qwen2-based，长上下文 |
 | **bge-m3** | 1024 | 8192 | 65.4 | 多语言、多粒度、多函数 |
 | **E5-Mistral-7B** | 4096 | 32768 | 66.7 | LLM-based，超长上下文 |
-| **nomic-embed-text-v1.5** | 768 | 8192 | 62.3 | 开源，[[concepts/matryoshka-representation-learning|Matryoshka 表示]] |
+| **nomic-embed-text-v1.5** | 768 | 8192 | 62.3 | 开源，[[_concepts/matryoshka-representation-learning|Matryoshka 表示]] |
 | **Qwen3-Embedding-8B** | 4096 | 32768 | ~72 | AI Stack 预置模型 |
 | **bge-reranker-v2-m3** | - | 8192 | - | 重排序模型（非嵌入） |
 
@@ -123,7 +123,7 @@ Query → Embedding Model → 向量数据库 Top-100 → Reranker → Top-5 →
 | 关注点 | 建议 |
 |--------|------|
 | **维度选择** | 768 维适合小规模，1024+ 维适合高精度场景 |
-| **[[concepts/matryoshka-representation-learning|Matryoshka 表示]]** | 允许截断到更低维度（如 1024→256），灵活适配 |
+| **[[_concepts/matryoshka-representation-learning|Matryoshka 表示]]** | 允许截断到更低维度（如 1024→256），灵活适配 |
 | **批处理** | GPU 批量编码（batch_size=64-256）提高吞吐 |
 | **归一化** | 嵌入向量 L2 归一化后可用内积替代余弦相似度 |
 | **缓存** | 对静态文档预计算嵌入并缓存，避免重复计算 |
@@ -143,12 +143,12 @@ Query → Embedding Model → 向量数据库 Top-100 → Reranker → Top-5 →
 
 ## Related
 
-- [[concepts/rag-systems]] — RAG 系统（嵌入模型的核心应用）
-- [[concepts/vector-database]] — 向量数据库（嵌入的存储与检索）
-- [[concepts/llm-architectures]] — LLM 架构
-- [[concepts/embeddings-vectors-mrl-plain]] — Embedding、向量与 MRL 大白话
-- [[11_RAG_Systems/Sentence_Transformers_Deep_Dive]] — Sentence Transformers
-- [[11_RAG_Systems/Matryoshka_Representation_Learning_Deep_Dive]] — Matryoshka Representation Learning 深度解析
-- [[11_RAG_Systems/Embedding_Models_Guide]] — Embedding 模型选型与实践指南
-- [[09_Deployment_Inference/Inference_Performance/Embedding_Model_Serving|Embedding/Reranker 服务]]
+- [[_concepts/rag-systems]] — RAG 系统（嵌入模型的核心应用）
+- [[_concepts/vector-database]] — 向量数据库（嵌入的存储与检索）
+- [[_concepts/llm-architectures]] — LLM 架构
+- [[_concepts/embeddings-vectors-mrl-plain]] — Embedding、向量与 MRL 大白话
+- [[14_RAG_Systems/Sentence_Transformers_Deep_Dive]] — Sentence Transformers
+- [[14_RAG_Systems/Matryoshka_Representation_Learning_Deep_Dive]] — Matryoshka Representation Learning 深度解析
+- [[14_RAG_Systems/Embedding_Models_Guide]] — Embedding 模型选型与实践指南
+- [[10_Deployment_Inference/Inference_Performance/Embedding_Model_Serving|Embedding/Reranker 服务]]
 - [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack

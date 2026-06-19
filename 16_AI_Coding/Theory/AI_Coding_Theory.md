@@ -473,7 +473,7 @@ AI编程使用风险评估:
 - [AI编程助手对比](../02_Tools/AI_Coding_Assistants_2026.md) — 主流工具能力对比
 - [Vibe Coding 方法论](../04_Methodology/Vibe_Coding_Methodology.md) — DGRV 模型与实践框架
 - [Agentic Coding 方法论](../04_Methodology/Agentic_Coding_Methodology.md) — 多 Agent 协作开发
-- [Prompt Engineering 专题](../../04_NLP_LLMs/Prompt_Engineering/Prompt_Engineering.md) — 提示工程理论基础
+- [Prompt Engineering 专题](../../05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering.md) — 提示工程理论基础
 
 ---
 
@@ -481,8 +481,8 @@ AI编程使用风险评估:
 
 ## Related
 
-- [[17_AI_Coding/02_Tools/CodeBuddy_Guide]] — CodeBuddy / WorkBuddy 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
-- [[17_AI_Coding/02_Tools/Comate_Guide]] — Comate 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
-- [[17_AI_Coding/02_Tools/Coze_Guide]] — Coze 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
-- [[17_AI_Coding/02_Tools/Cursor_Guide]] — Cursor 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
-- [[17_AI_Coding/AI_Coding-in-nutshell.md|AI_Coding-in-nutshell]]
+- [[16_AI_Coding/Tools/CodeBuddy_Guide]] — CodeBuddy / WorkBuddy 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
+- [[16_AI_Coding/Tools/Comate_Guide]] — Comate 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
+- [[16_AI_Coding/Tools/Coze_Guide]] — Coze 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
+- [[16_AI_Coding/Tools/Cursor_Guide]] — Cursor 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
+- [[16_AI_Coding/AI_Coding-in-nutshell.md|AI_Coding-in-nutshell]]

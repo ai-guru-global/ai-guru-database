@@ -476,14 +476,14 @@ Mistral NeMo 是唯一带有 Apache 2.0 许可证的免费模型，采用 Tekken
 
 ## 扩展阅读
 
-- [[04_NLP_LLMs/Global_LLM_Ecosystem/Mistral_AI_Deep_Dive|Mistral AI 深度指南]]
-- [[04_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques|微调技术综述]]
-- [[04_NLP_LLMs/Edge_LLM/Edge_LLM_Deep_Dive|边缘LLM深度指南]]
-- [[04_NLP_LLMs/Global_LLM_Ecosystem/Meta_LLaMA_Deep_Dive|Meta LLaMA 深度指南]]
+- [[05_NLP_LLMs/Global_LLM_Ecosystem/Mistral_AI_Deep_Dive|Mistral AI 深度指南]]
+- [[05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques|微调技术综述]]
+- [[05_NLP_LLMs/Edge_LLM/Edge_LLM_Deep_Dive|边缘LLM深度指南]]
+- [[05_NLP_LLMs/Global_LLM_Ecosystem/Meta_LLaMA_Deep_Dive|Meta LLaMA 深度指南]]
 - [[90_Learn/courses/microsoft/microsoft_genai_for_beginners|Microsoft GenAI 入门课程]]
 
 ## 课程导航
 
 | 上一课 | 下一课 |
 |--------|--------|
-| [[04_NLP_LLMs/Edge_LLM/GenAI_L19_Building_with_SLMs|L19 使用小型语言模型构建]] | [[04_NLP_LLMs/Global_LLM_Ecosystem/GenAI_L21_Building_with_Meta|L21 使用Meta家族模型构建]] |
+| [[05_NLP_LLMs/Edge_LLM/GenAI_L19_Building_with_SLMs|L19 使用小型语言模型构建]] | [[05_NLP_LLMs/Global_LLM_Ecosystem/GenAI_L21_Building_with_Meta|L21 使用Meta家族模型构建]] |

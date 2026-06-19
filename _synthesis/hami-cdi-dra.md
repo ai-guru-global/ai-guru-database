@@ -6,9 +6,9 @@ sources:
   - "12_Architecture_Infrastructure/HAMi_Deep_Dive"
   - "12_Architecture_Infrastructure/CDI_Deep_Dive"
   - "12_Architecture_Infrastructure/DRA_Deep_Dive"
-  - "concepts/hami"
-  - "concepts/cdi"
-  - "concepts/dra"
+  - "_concepts/hami"
+  - "_concepts/cdi"
+  - "_concepts/dra"
 created: 2026-06-16
 updated: 2026-06-16
 summary: "厘清 HAMi、CDI、DRA 三者在 Kubernetes 异构 GPU 共享中的分层关系：HAMi 负责资源切分与隔离，DRA 负责调度器参与的分配，CDI 负责把最终设备规范注入容器。"
@@ -94,6 +94,6 @@ lifecycle_changed: 2026-06-16
 - [[12_Architecture_Infrastructure/HAMi_Deep_Dive]] — HAMi 深度解析
 - [[12_Architecture_Infrastructure/CDI_Deep_Dive]] — CDI 容器设备接口标准
 - [[12_Architecture_Infrastructure/DRA_Deep_Dive]] — DRA 动态资源分配
-- [[concepts/hami]] — HAMi 概念卡片
-- [[concepts/cdi]] — CDI 概念卡片
-- [[concepts/dra]] — DRA 概念卡片
+- [[_concepts/hami]] — HAMi 概念卡片
+- [[_concepts/cdi]] — CDI 概念卡片
+- [[_concepts/dra]] — DRA 概念卡片

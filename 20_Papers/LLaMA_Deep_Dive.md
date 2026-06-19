@@ -852,13 +852,13 @@ flowchart TB
 - [BERT 深度解读](./BERT_Deep_Dive.md) — 预训练-微调范式的对比
 
 ### 横向关联
-- [LLM 架构](../04_NLP_LLMs/LLM_Architectures/) — 现代大模型架构设计
+- [LLM 架构](../05_NLP_LLMs/LLM_Architectures/) — 现代大模型架构设计
 - [RLHF 与 DPO 深度解读](./RLHF_DPO_Deep_Dive.md) — LLaMA 2 Chat 的 RLHF 对齐
 - [Mixture of Experts 深度解读](./Mixture_of_Experts_Deep_Dive.md) — MoE 架构在 LLM 中的应用
 
 ### 进阶方向
 - [模型训练](../07_Model_Training/README.md) — 大规模分布式训练策略
-- [Fine-tuning 技术](../04_NLP_LLMs/Fine_tuning_Techniques/) — LoRA/QLoRA 参数高效微调
+- [Fine-tuning 技术](../05_NLP_LLMs/Fine_tuning_Techniques/) — LoRA/QLoRA 参数高效微调
 
 ---
 
@@ -866,7 +866,7 @@ flowchart TB
 
 ## Related
 
-- [[04_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/README]] — PEFT 2026 (参数高效微调) (共享: llm, nlp)
-- [[04_NLP_LLMs/Fine_tuning_Techniques/README]] — 微调技术 (Fine-tuning Techniques) (共享: llm, nlp)
-- [[04_NLP_LLMs/LLM_Architectures/LLM-Basics-in-nutshell]] — 大语言模型基础速成指南 (共享: llm, nlp)
-- [[04_NLP_LLMs/Multimodal_Models/Multimodal_Architectures_2026]] — 多模态模型架构 2026：从 GPT-4V 到原生多模态 AGI (共享: llm, nlp)
+- [[05_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/README]] — PEFT 2026 (参数高效微调) (共享: llm, nlp)
+- [[05_NLP_LLMs/Fine_tuning_Techniques/README]] — 微调技术 (Fine-tuning Techniques) (共享: llm, nlp)
+- [[05_NLP_LLMs/LLM_Architectures/LLM-Basics-in-nutshell]] — 大语言模型基础速成指南 (共享: llm, nlp)
+- [[05_NLP_LLMs/Multimodal_Models/Multimodal_Architectures_2026]] — 多模态模型架构 2026：从 GPT-4V 到原生多模态 AGI (共享: llm, nlp)

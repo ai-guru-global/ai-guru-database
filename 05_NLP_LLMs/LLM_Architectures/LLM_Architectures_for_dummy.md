@@ -425,7 +425,7 @@ MoE = 虽然有很多"专家"(参数),但每次只用一部分,省计算量!
 
 - **前置知识**: [Transformer 革命 (小白版)](../Transformer_Revolution/Transformer_Revolution_for_dummy.md)
 - **实战技能**: [提示词工程 (小白版)](../Prompt_Engineering/Prompt_Engineering_for_dummy.md)
-- **进阶主题**: [RAG 系统 (小白版)](../../11_RAG_Systems/RAG_Systems_for_dummy.md)
+- **进阶主题**: [RAG 系统 (小白版)](../../14_RAG_Systems/RAG_Systems_for_dummy.md)
 
 ---
 

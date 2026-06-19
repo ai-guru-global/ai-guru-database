@@ -3,24 +3,24 @@ title: 模型服务
 category: concepts
 tags: [serving, vllm, sglang, tensorrt, triton, ollama, llama-cpp, inference-engine]
 relationships:
-  - target: "[[concepts/model-deployment]]"
+  - target: "[[_concepts/model-deployment]]"
     type: implements
-  - target: "concepts/model-compression"
+  - target: "_concepts/model-compression"
     type: benefits_from
-  - target: "concepts/sglang"
+  - target: "_concepts/sglang"
     type: exemplified_by
-  - target: "concepts/tensorrt-llm"
+  - target: "_concepts/tensorrt-llm"
     type: exemplified_by
-  - target: "concepts/dynamic-batch-scheduling"
+  - target: "_concepts/dynamic-batch-scheduling"
     type: uses
 sources:
   - 09_model-deployment_Inference/Deployment_Inference_2026.md
-  - 09_Deployment_Inference/vLLM_Deep_Dive.md
-  - 09_Deployment_Inference/SGLang_Deep_Dive.md
-  - 09_Deployment_Inference/TensorRT_LLM_Deep_Dive.md
-  - 09_Deployment_Inference/BentoML_Deep_Dive.md
-  - 09_Deployment_Inference/Ollama_Deep_Dive.md
-  - 09_Deployment_Inference/llm-architectures_cpp_Deep_Dive.md
+  - 10_Deployment_Inference/vLLM_Deep_Dive.md
+  - 10_Deployment_Inference/SGLang_Deep_Dive.md
+  - 10_Deployment_Inference/TensorRT_LLM_Deep_Dive.md
+  - 10_Deployment_Inference/BentoML_Deep_Dive.md
+  - 10_Deployment_Inference/Ollama_Deep_Dive.md
+  - 10_Deployment_Inference/llm-architectures_cpp_Deep_Dive.md
 summary: 模型服务框架是连接AI模型与业务应用的桥梁。2026年GPU推理三强鼎立：vLLM以PagedAttention实现高吞吐、TensorRT-LLM提供NVIDIA极致低延迟优化、SGLang擅长结构化生成。CPU/本地场景有Ollama（易用）和llama.cpp（极致量化）。BentoML提供统一的模型打包部署框架。
 provenance:
   extracted: 0.85
@@ -92,12 +92,12 @@ SGLang的RadixAttention用Radix Tree缓存和复用KV Cache前缀，对多轮对
 
 ## Related
 
-- [[synthesis/serving-deployment]] — 模型服务 × 模型部署 (共享: serving, sglang, tensorrt, vllm)
-- [[09_Deployment_Inference/Deployment_Inference]] — 模型部署与推理加速 (Deployment & Inference) (共享: serving, vllm)
-- [[09_Deployment_Inference/Deployment_Inference_2026]] — 部署推理 2026 趋势 (共享: serving, vllm)
-- [[09_Deployment_Inference/Deployment_Inference_for_dummy]] — 模型部署与推理加速 - 小白版 (共享: serving, vllm)
+- [[_synthesis/serving-deployment]] — 模型服务 × 模型部署 (共享: serving, sglang, tensorrt, vllm)
+- [[10_Deployment_Inference/Deployment_Inference]] — 模型部署与推理加速 (Deployment & Inference) (共享: serving, vllm)
+- [[10_Deployment_Inference/Deployment_Inference_2026]] — 部署推理 2026 趋势 (共享: serving, vllm)
+- [[10_Deployment_Inference/Deployment_Inference_for_dummy]] — 模型部署与推理加速 - 小白版 (共享: serving, vllm)
 - [[12_Architecture_Infrastructure/Alibaba_Cloud_AI_Stack_Deep_Dive|阿里云 AI Stack]] — 专有云容器化推理服务部署
-- [[concepts/sglang]] — SGLang
-- [[concepts/tensorrt-llm]] — TensorRT-LLM
-- [[concepts/dynamic-batch-scheduling]] — 动态批调度
-- [[concepts/gguf]] — GGUF
+- [[_concepts/sglang]] — SGLang
+- [[_concepts/tensorrt-llm]] — TensorRT-LLM
+- [[_concepts/dynamic-batch-scheduling]] — 动态批调度
+- [[_concepts/gguf]] — GGUF

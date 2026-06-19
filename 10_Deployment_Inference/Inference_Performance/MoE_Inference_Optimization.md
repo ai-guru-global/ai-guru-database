@@ -172,9 +172,9 @@ GPU 3: Expert 12, 13, 14, 15
 
 ## Related
 
-- [[concepts/mixture-of-experts]] — MoE 概念
-- [[concepts/expert-parallelism]] — 专家并行
-- [[concepts/kv-cache]] — KV Cache 优化
-- [[09_Deployment_Inference/Inference_Performance/README|推理性能专题]]
-- [[09_Deployment_Inference/Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]]
-- [[09_Deployment_Inference/Inference_Performance/Prefill_Decode_Disaggregation|Prefill-Decode 分离]]
+- [[_concepts/mixture-of-experts]] — MoE 概念
+- [[_concepts/expert-parallelism]] — 专家并行
+- [[_concepts/kv-cache]] — KV Cache 优化
+- [[10_Deployment_Inference/Inference_Performance/README|推理性能专题]]
+- [[10_Deployment_Inference/Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]]
+- [[10_Deployment_Inference/Inference_Performance/Prefill_Decode_Disaggregation|Prefill-Decode 分离]]

@@ -53,7 +53,7 @@ updated: 2026-06-05
 
 - **核心要点**: 回顾 AlphaFold 从 CASP 竞赛到诺贝尔奖的历程，展望 AI 在生物学、材料科学、药物设计中的未来应用
 - **来源**: [Nobel Prize Official](https://www.nobelprize.org/prizes/chemistry/2024/hassabis/lecture/)
-- **影响**: 标志着 AI 研究首次获得诺贝尔奖级别的认可，与 [[21_Talks/Yann_LeCun/about]] 的"AI 需要科学导向"形成共鸣
+- **影响**: 标志着 AI 研究首次获得诺贝尔奖级别的认可，与 [[19_Talks/Yann_LeCun/about]] 的"AI 需要科学导向"形成共鸣
 
 ---
 
@@ -61,7 +61,7 @@ updated: 2026-06-05
 
 ### AGI 路径：科学导向 vs 产品导向
 
-Hassabis 的独特之处在于他将 AGI 研究视为"基础科学问题"而非"产品竞赛"。他认为理解智能的本质比构建商业产品更重要，DeepMind 的研究方向包括神经科学启发的架构、多智能体系统、世界模型等，远超 LLM 的范畴。这一立场与 [[21_Talks/Sam_Altman/about]] 的产品化路线形成鲜明对比。
+Hassabis 的独特之处在于他将 AGI 研究视为"基础科学问题"而非"产品竞赛"。他认为理解智能的本质比构建商业产品更重要，DeepMind 的研究方向包括神经科学启发的架构、多智能体系统、世界模型等，远超 LLM 的范畴。这一立场与 [[19_Talks/Sam_Altman/about]] 的产品化路线形成鲜明对比。
 
 ### 多路径融合
 
@@ -69,7 +69,7 @@ Hassabis 的独特之处在于他将 AGI 研究视为"基础科学问题"而非"
 
 ### AI 安全与治理
 
-Hassabis 主张"负责任地推进"，支持前沿 AI 研究的全球治理合作。他在 FT 采访中明确表示"AI 治理需要合作"，但不支持暂停研究。他更倾向于通过技术手段（如可解释性、对齐研究）而非政策禁令来管理风险。此立场介于 [[21_Talks/Dario_Amodei/about]] 的"安全优先"与 [[21_Talks/Yann_LeCun/about]] 的"末日论荒谬"之间。
+Hassabis 主张"负责任地推进"，支持前沿 AI 研究的全球治理合作。他在 FT 采访中明确表示"AI 治理需要合作"，但不支持暂停研究。他更倾向于通过技术手段（如可解释性、对齐研究）而非政策禁令来管理风险。此立场介于 [[19_Talks/Dario_Amodei/about]] 的"安全优先"与 [[19_Talks/Yann_LeCun/about]] 的"末日论荒谬"之间。
 
 ### AI for Science
 
@@ -128,7 +128,7 @@ Hassabis 的学术背景横跨神经科学与计算机科学，这深刻影响�
 - [AI 伦理与社会](../00_AI_Introduction/AI_Ethics_Society.md) -- AI 治理与国际合作
 - [强化学习](../06_Reinforcement_Learning/README.md) -- AlphaGo/MuZero 的强化学习技术细节
 - [深度学习基础](../03_Deep_Learning/README.md) -- 深度神经网络与多模态架构
-- [LLM 基础](../04_NLP_LLMs/README.md) -- Gemini 系列模型架构
+- [LLM 基础](../05_NLP_LLMs/README.md) -- Gemini 系列模型架构
 - [Sam Altman](./Sam_Altman/about.md) -- AGI 路线之争：科学化 vs 产品化
 - [Jensen Huang](./Jensen_Huang/about.md) -- AI for Science 的算力基础设施支撑
 - [Dario Amodei](./Dario_Amodei/about.md) -- AI 安全治理的不同侧重
@@ -149,10 +149,10 @@ Hassabis 的学术背景横跨神经科学与计算机科学，这深刻影响�
 
 ## Related
 
-- [[21_Talks/Demis_Hassabis/sayings]] -- Demis Hassabis 关于 AI 的观点 (Demis Hassabis on AI)
-- [[21_Talks/Sam_Altman/about]] -- Sam Altman 简介 (共享: AGI vision, industry competition)
-- [[21_Talks/Dario_Amodei/about]] -- Dario Amodei 简介 (共享: AI safety, responsible deployment)
-- [[21_Talks/Yann_LeCun/about]] -- Yann LeCun 简介 (共享: AGI research paths, world models)
-- [[21_Talks/Andrej_Karpathy/about]] -- Andrej Karpathy 简介 (共享: insights, leaders, speeches, talks)
-- [[21_Talks/Andrew_Ng/about]] -- Andrew Ng 简介 (共享: insights, leaders, speeches, talks)
-- [[21_Talks/Bill_Gates/about]] -- Bill Gates 简介 (共享: insights, leaders, speeches, talks)
+- [[19_Talks/Demis_Hassabis/sayings]] -- Demis Hassabis 关于 AI 的观点 (Demis Hassabis on AI)
+- [[19_Talks/Sam_Altman/about]] -- Sam Altman 简介 (共享: AGI vision, industry competition)
+- [[19_Talks/Dario_Amodei/about]] -- Dario Amodei 简介 (共享: AI safety, responsible deployment)
+- [[19_Talks/Yann_LeCun/about]] -- Yann LeCun 简介 (共享: AGI research paths, world models)
+- [[19_Talks/Andrej_Karpathy/about]] -- Andrej Karpathy 简介 (共享: insights, leaders, speeches, talks)
+- [[19_Talks/Andrew_Ng/about]] -- Andrew Ng 简介 (共享: insights, leaders, speeches, talks)
+- [[19_Talks/Bill_Gates/about]] -- Bill Gates 简介 (共享: insights, leaders, speeches, talks)

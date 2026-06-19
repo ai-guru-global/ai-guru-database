@@ -4,11 +4,11 @@ category: concepts
 tags: [math, linear-algebra, tensors, SVD, eigenvalues, matrix-operations]
 aliases: [Linear Algebra, 矩阵运算, 张量运算]
 relationships:
-  - target: "[[concepts/probability-statistics]]"
+  - target: "[[_concepts/probability-statistics]]"
     type: related_to
-  - target: "concepts/data-structures-algorithms"
+  - target: "_concepts/data-structures-algorithms"
     type: related_to
-  - target: "concepts/distributed-systems"
+  - target: "_concepts/distributed-systems"
     type: related_to
 sources: [01_ai-fundamentals/Linear_Algebra/Linear_Algebra.md]
 summary: 线性代数是AI的空间变换工具箱：数据是向量，模型是矩阵，训练即寻找最佳空间变换。涵盖张量、特征值分解、SVD及矩阵运算。

@@ -80,8 +80,8 @@ Thought (分析) -> Action (工具调用) -> Observation (反馈) -> Thought -> 
 
 ## 深入阅读
 
-- [[13_Agent_Production/Agent_Harness/Harness_Core_Subsystems.md]] -- 运行时引擎的深度工程实现
-- [[13_Agent_Production/Agent_Workflow/AgentOps_Production_Guide.md]] -- Agent Loop 的微观/中观/任务级视角
-- [[13_Agent_Production/23_OpenClaw_Ecosystem/OpenClaw_Internals.md]] -- OpenClaw 的 Agent Loop 内核
-- [[17_AI_Coding/01_Theory/Claude_Agent_Architecture.md]] -- Claude Agent 的 ReAct 和 Plan-and-Solve 模式
-- [[13_Agent_Production/Agent_Foundations/Agentic_AI_Complete_Guide.md]] -- ReAct 循环的理论基础
+- [[15_Agent_Production/Agent_Harness/Harness_Core_Subsystems.md]] -- 运行时引擎的深度工程实现
+- [[15_Agent_Production/Agent_Workflow/AgentOps_Production_Guide.md]] -- Agent Loop 的微观/中观/任务级视角
+- [[15_Agent_Production/OpenClaw_Ecosystem/OpenClaw_Internals.md]] -- OpenClaw 的 Agent Loop 内核
+- [[16_AI_Coding/Theory/Claude_Agent_Architecture.md]] -- Claude Agent 的 ReAct 和 Plan-and-Solve 模式
+- [[15_Agent_Production/Agent_Foundations/Agentic_AI_Complete_Guide.md]] -- ReAct 循环的理论基础

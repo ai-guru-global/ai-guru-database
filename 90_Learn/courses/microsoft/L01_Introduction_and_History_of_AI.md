@@ -94,7 +94,7 @@ updated: "2026-06-12"
   - 想深入 AI 发展时间线：[[00_AI_Introduction/AI_History_Timeline]]
   - 想巩固 AI 基础概念：[[00_AI_Introduction/AI_Fundamentals]]
   - 想了解神经网络核心机制：[[03_Deep_Learning/Neural_Network_Core/Neural_Network_Core]]
-  - 想了解现代深度学习爆发背景：[[04_NLP_LLMs/LLM_Architectures/LLM_Architectures]]、[[05_Computer_Vision/README]]
+  - 想了解现代深度学习爆发背景：[[05_NLP_LLMs/LLM_Architectures/LLM_Architectures]]、[[04_Computer_Vision/README]]
 
 ## 相关阅读
 

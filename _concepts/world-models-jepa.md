@@ -4,11 +4,11 @@ category: concepts
 tags: ["deep-learning", "world-model", "jepa", "self-supervised", "v-jepa", "representation-learning", "agi"]
 aliases: [World model-training, JEPA, V-JEPA, 世界模型, 联合嵌入预测架构, LeCun世界模型]
 relationships:
-  - target: "[[concepts/transformer-architecture]]"
+  - target: "[[_concepts/transformer-architecture]]"
     type: related_to
-  - target: "concepts/neural-networks"
+  - target: "_concepts/neural-networks"
     type: related_to
-  - target: "concepts/state-space-models"
+  - target: "_concepts/state-space-models"
     type: related_to
 sources: [03_Deep_unsupervised-learning/World_Models/World_Models_2026.md, 03_Deep_Learning/World_Models/JEPA_transformer-architecture_2026.md]
 summary: LeCun 提出的自监督世界模型架构，不预测像素而是预测抽象表征，让AI学会世界的运行规律，是通向AGI的关键路径之一。
@@ -163,8 +163,8 @@ Perception（编码器）
 
 ## Related
 
-- [[concepts/neural-networks.md|neural-networks]]
-- [[concepts/optimization-regularization.md|optimization-regularization]]
-- [[concepts/state-space-models.md|state-space-models]]
-- [[concepts/transformer-architecture.md|transformer-architecture]]
+- [[_concepts/neural-networks.md|neural-networks]]
+- [[_concepts/optimization-regularization.md|optimization-regularization]]
+- [[_concepts/state-space-models.md|state-space-models]]
+- [[_concepts/transformer-architecture.md|transformer-architecture]]
 - [[00_AI_Introduction/AI_Future_Trends.md|AI_Future_Trends]]

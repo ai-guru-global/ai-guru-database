@@ -3,17 +3,17 @@ title: "TensorRT-LLM"
 category: concepts
 tags: ["tensorrt-llm", "nvidia", "inference", "serving", "optimization", "quantization"]
 relationships:
-  - target: "concepts/model-serving"
+  - target: "_concepts/model-serving"
     type: belongs_to
-  - target: "concepts/tensorrt"
+  - target: "_concepts/tensorrt"
     type: implements
-  - target: "concepts/quantization"
+  - target: "_concepts/quantization"
     type: uses
-  - target: "concepts/continuous-batching"
+  - target: "_concepts/continuous-batching"
     type: uses
 sources:
-  - 09_Deployment_Inference/TensorRT_LLM_Deep_Dive.md
-  - 09_Deployment_Inference/LLM_Inference_Engine_Selection_Guide.md
+  - 10_Deployment_Inference/TensorRT_LLM_Deep_Dive.md
+  - 10_Deployment_Inference/LLM_Inference_Engine_Selection_Guide.md
   - 12_Architecture_Infrastructure/AI_Stack_Inference_Serving_Guide.md
 summary: "TensorRT-LLM 是 NVIDIA 推出的 LLM 推理优化引擎。它把模型编译成高度优化的 GPU 执行图，支持 FP8/INT8 量化、Continuous Batching、PagedAttention、多 GPU 并行，是 NVIDIA GPU 上追求极致性能的首选。"
 provenance:
@@ -95,9 +95,9 @@ python build.py --checkpoint_dir ./tllm_checkpoint --output_dir ./llama-7b-trt
 
 ## Related
 
-- [[concepts/model-serving]] — 模型服务
-- [[concepts/quantization]] — 量化
-- [[concepts/continuous-batching]] — Continuous Batching
-- [[concepts/paged-attention]] — PagedAttention
-- [[09_Deployment_Inference/TensorRT_LLM_Deep_Dive]] — TensorRT-LLM 深度解析
-- [[09_Deployment_Inference/LLM_Inference_Engine_Selection_Guide]] — LLM 推理引擎选型指南
+- [[_concepts/model-serving]] — 模型服务
+- [[_concepts/quantization]] — 量化
+- [[_concepts/continuous-batching]] — Continuous Batching
+- [[_concepts/paged-attention]] — PagedAttention
+- [[10_Deployment_Inference/TensorRT_LLM_Deep_Dive]] — TensorRT-LLM 深度解析
+- [[10_Deployment_Inference/LLM_Inference_Engine_Selection_Guide]] — LLM 推理引擎选型指南

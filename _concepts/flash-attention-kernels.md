@@ -3,15 +3,15 @@ title: Flash Attention 算子 (FlashMLA/FlashInfer)
 category: concepts
 tags: [inference, attention, kernel, flashmla, flashinfer, gpu]
 relationships:
-  - target: "concepts/multi-head-latent-attention"
+  - target: "_concepts/multi-head-latent-attention"
     type: implements
-  - target: "concepts/kv-cache"
+  - target: "_concepts/kv-cache"
     type: optimizes
-  - target: "09_Deployment_Inference/Inference_Performance/Flash_Kernels_Deep_Dive"
+  - target: "10_Deployment_Inference/Inference_Performance/Flash_Kernels_Deep_Dive"
     type: deepened_by
 sources:
   - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
-  - 09_Deployment_Inference/Inference_Performance/Flash_Kernels_Deep_Dive.md
+  - 10_Deployment_Inference/Inference_Performance/Flash_Kernels_Deep_Dive.md
 summary: FlashAttention、FlashDecoding、FlashInfer、FlashMLA 等内核通过分块计算、online softmax 和 kernel 融合，把 attention 的显存访问降到接近理论下限，是现代 LLM 推理的算子基座。
 provenance:
   extracted: 0.9
@@ -76,8 +76,8 @@ FlashInfer（[GitHub](https://github.com/flashinfer-ai/flashinfer)）是面向 L
 
 ## Related
 
-- [[concepts/multi-head-latent-attention]] — MLA 架构（FlashMLA 的优化目标）
-- [[concepts/kv-cache]] — KV Cache
-- [[concepts/attention-variants]] — GQA/MQA/SWA 注意力变体
-- [[09_Deployment_Inference/Inference_Performance/Flash_Kernels_Deep_Dive|Flash 系列 Kernel 深潜]]
+- [[_concepts/multi-head-latent-attention]] — MLA 架构（FlashMLA 的优化目标）
+- [[_concepts/kv-cache]] — KV Cache
+- [[_concepts/attention-variants]] — GQA/MQA/SWA 注意力变体
+- [[10_Deployment_Inference/Inference_Performance/Flash_Kernels_Deep_Dive|Flash 系列 Kernel 深潜]]
 - [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — 阿里云 AI Stack

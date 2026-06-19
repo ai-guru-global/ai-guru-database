@@ -2,7 +2,7 @@
 title: RAG 系统 × 向量数据库
 category: synthesis
 tags: [rag, vector-database, embedding, retrieval, hnsw, milvus, qdrant]
-sources: [concepts/rag-systems.md, concepts/vector-database.md]
+sources: [_concepts/rag-systems.md, _concepts/vector-database.md]
 created: 2026-05-31T21:30:00+08:00
 updated: 2026-05-31T21:30:00+08:00
 summary: "检索增强生成的精度瓶颈不在生成端，而在检索端：向量数据库的近似最近邻算法决定了语义检索的上限，进而决定了整个 RAG 系统的天花板。"
@@ -19,7 +19,7 @@ lifecycle_changed: 2026-05-31
 
 ## The Connection
 
-RAG（检索增强生成）的直觉很简单：LLM 记不住所有知识，所以让外部数据库帮它"开卷考试"。但很少有人追问：**这个"外部数据库"的能力边界，直接就是 RAG 系统的能力边界。** [[concepts/vector-database]] 不是 RAG 的"附件"，而是 RAG 的**感知器官**——它决定了模型能"看到"什么信息，以及以什么精度"看到"。
+RAG（检索增强生成）的直觉很简单：LLM 记不住所有知识，所以让外部数据库帮它"开卷考试"。但很少有人追问：**这个"外部数据库"的能力边界，直接就是 RAG 系统的能力边界。** [[_concepts/vector-database]] 不是 RAG 的"附件"，而是 RAG 的**感知器官**——它决定了模型能"看到"什么信息，以及以什么精度"看到"。
 
 ## Where They Co-occur
 
@@ -47,7 +47,7 @@ RAG（检索增强生成）的直觉很简单：LLM 记不住所有知识，所�
 
 ## Related
 
-- [[11_RAG_Systems/RAG-in-nutshell]] — RAG (检索增强生成) 速成指南 (共享: embedding, rag, retrieval, vector-database)
-- [[11_RAG_Systems/RAG_Systems]] — RAG 系统 (RAG Systems) (共享: embedding, rag, retrieval, vector-database)
-- [[11_RAG_Systems/README_Advanced]] — RAG高级实践 2026 (共享: embedding, rag, retrieval, vector-database)
-- [[11_RAG_Systems/Spring_AI_RAG_Deep_Dive]] — Spring AI RAG 深度解析 (共享: embedding, rag, retrieval, vector-database)
+- [[14_RAG_Systems/RAG-in-nutshell]] — RAG (检索增强生成) 速成指南 (共享: embedding, rag, retrieval, vector-database)
+- [[14_RAG_Systems/RAG_Systems]] — RAG 系统 (RAG Systems) (共享: embedding, rag, retrieval, vector-database)
+- [[14_RAG_Systems/README_Advanced]] — RAG高级实践 2026 (共享: embedding, rag, retrieval, vector-database)
+- [[14_RAG_Systems/Spring_AI_RAG_Deep_Dive]] — Spring AI RAG 深度解析 (共享: embedding, rag, retrieval, vector-database)

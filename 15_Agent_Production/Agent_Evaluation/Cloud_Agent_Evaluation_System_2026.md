@@ -77,7 +77,7 @@ R - Risk & Safety             安全合规        15%
 ## 2. 目录结构
 
 ```
-13_Agent_Production/16_Agent_Evaluation/
+15_Agent_Production/Agent_Evaluation/
 ├── demo/                              # 评估框架源码
 │   ├── run_evaluation.py              # 主入口脚本
 │   ├── config.yaml                    # 评估配置
@@ -116,7 +116,7 @@ R - Risk & Safety             安全合规        15%
 ### 3.1 运行评估 Demo
 
 ```bash
-cd 13_Agent_Production/16_Agent_Evaluation/demo
+cd 15_Agent_Production/Agent_Evaluation/demo
 
 # 安装依赖
 pip install -r requirements.txt
@@ -350,7 +350,7 @@ agents:
 ## 9. 文档归档结构
 
 ```
-13_Agent_Production/16_Agent_Evaluation/
+15_Agent_Production/Agent_Evaluation/
 ├── docs/                                    # 文档归档目录
 │   ├── architecture/                        # 系统架构文档
 │   │   └── system_architecture.md           # 四层 Harness 架构说明
@@ -450,9 +450,9 @@ A: 内置支持阿里云 DashScope 和 OpenAI 兼容 API。通过插件机制可
 
 ## Related
 
-- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
-- [[13_Agent_Production/16_Agent_Evaluation/Cloud_Agent_Evaluation/README]] — Cloud Agent Evaluation (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
-- [[13_Agent_Production/16_Agent_Evaluation/Metrics/Evaluation_Metrics]] — Evaluation Metrics (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
-- [[13_Agent_Production/16_Agent_Evaluation/Multi_Agent_Evaluation_2026]] — Multi-Agent System Evaluation Framework 2026 (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
-- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Deep_Dive.md|Agent_Harness_Deep_Dive]]
-- [[13_Agent_Production/16_Agent_Evaluation/Ops_Agent_Harness_2026.md|Ops_Agent_Harness_2026]]
+- [[15_Agent_Production/Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
+- [[15_Agent_Production/Agent_Evaluation/Cloud_Agent_Evaluation/README]] — Cloud Agent Evaluation (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
+- [[15_Agent_Production/Agent_Evaluation/Metrics/Evaluation_Metrics]] — Evaluation Metrics (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
+- [[15_Agent_Production/Agent_Evaluation/Multi_Agent_Evaluation_2026]] — Multi-Agent System Evaluation Framework 2026 (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
+- [[15_Agent_Production/Agent_Evaluation/Agent_Harness_Deep_Dive.md|Agent_Harness_Deep_Dive]]
+- [[15_Agent_Production/Agent_Evaluation/Ops_Agent_Harness_2026.md|Ops_Agent_Harness_2026]]

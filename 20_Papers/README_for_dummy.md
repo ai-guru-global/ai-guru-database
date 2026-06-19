@@ -125,8 +125,8 @@ updated: 2026-05-31
 ## 下一步
 
 学完这章后，你可以：
-- 去 [04_NLP_LLMs](../04_NLP_LLMs/README.md) 深入学习 LLM 技术
-- 去 [05_Computer_Vision](../05_Computer_Vision/README.md) 深入学习计算机视觉
+- 去 [05_NLP_LLMs](../05_NLP_LLMs/README.md) 深入学习 LLM 技术
+- 去 [04_Computer_Vision](../04_Computer_Vision/README.md) 深入学习计算机视觉
 - 去 [06_Reinforcement_Learning](../06_Reinforcement_Learning/README.md) 深入学习强化学习
 
 ---
@@ -135,4 +135,4 @@ updated: 2026-05-31
 
 ## Related
 
-- [[22_Papers/README]] — 10 经典与必读 AI 论文清单 (Essential AI Papers) (共享: deep-dive, paper)
+- [[20_Papers/README]] — 10 经典与必读 AI 论文清单 (Essential AI Papers) (共享: deep-dive, paper)

@@ -63,5 +63,5 @@ tier: supporting
 - 人工兜底: 关键决策必须有人工审核
 - 模型验证: 定期评估模型偏见和公平性
 
-> **关联**: -> [[20_AI_Applications_Industry/Finance|金融 AI]] | [[19_Ethics_Safety|伦理安全]]
+> **关联**: -> [[18_AI_Applications_Industry/Finance|金融 AI]] | [[17_Ethics_Safety|伦理安全]]
 

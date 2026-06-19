@@ -3,16 +3,16 @@ title: "Modal"
 category: concept
 tags: ["modal", "serverless", "gpu", "cloud", "inference", "python", "deployment"]
 relationships:
-  - target: "concepts/model-serving"
+  - target: "_concepts/model-serving"
     type: extends
-  - target: "concepts/serverless"
+  - target: "_concepts/serverless"
     type: implements
-  - target: "concepts/gpu-cloud"
+  - target: "_concepts/gpu-cloud"
     type: related_to
-  - target: "concepts/vllm"
+  - target: "_concepts/vllm"
     type: related_to
 sources:
-  - 09_Deployment_Inference/Modal_Deep_Dive.md
+  - 10_Deployment_Inference/Modal_Deep_Dive.md
 summary: "Modal 是无服务器 GPU 云平台，允许开发者用 Python 装饰器将函数部署为弹性 GPU/CPU 服务，按秒计费，适合快速原型、异步任务和弹性推理服务。"
 provenance:
   extracted: 0.75
@@ -107,8 +107,8 @@ def main():
 
 ## Related
 
-- [[09_Deployment_Inference/Modal_Deep_Dive]] — Modal 深度解析
-- [[concepts/model-serving]] — 模型服务
-- [[concepts/serverless]] — 无服务器
-- [[concepts/vllm]] — vLLM
-- [[concepts/replicate]] — Replicate
+- [[10_Deployment_Inference/Modal_Deep_Dive]] — Modal 深度解析
+- [[_concepts/model-serving]] — 模型服务
+- [[_concepts/serverless]] — 无服务器
+- [[_concepts/vllm]] — vLLM
+- [[_concepts/replicate]] — Replicate

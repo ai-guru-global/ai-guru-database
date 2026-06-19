@@ -849,10 +849,10 @@ class ConditionalDiffusion:
 ### 前置知识
 - [Attention Is All You Need 深度解读](./Attention_Is_All_You_Need_Deep_Dive.md) — Transformer 架构基础
 - [ResNet 深度解读](./ResNet_Deep_Dive.md) — U-Net 中的残差连接
-- [计算机视觉](../05_Computer_Vision/README.md) — 生成模型基础
+- [计算机视觉](../04_Computer_Vision/README.md) — 生成模型基础
 
 ### 横向关联
-- [生成模型](../05_Computer_Vision/Generative_Models/) — GAN / VAE / Diffusion 对比
+- [生成模型](../04_Computer_Vision/Generative_Models/) — GAN / VAE / Diffusion 对比
 - [RLHF 与 DPO 深度解读](./RLHF_DPO_Deep_Dive.md) — RLHF 用于对齐生成模型
 - [LLaMA 深度解读](./LLaMA_Deep_Dive.md) — DiT 与 LLM 架构的融合
 
@@ -866,6 +866,6 @@ class ConditionalDiffusion:
 
 ## Related
 
-- [[concepts/generative-vision-models]] — 视觉生成模型
-- [[concepts/computer-vision]] — 计算机视觉
-- [[concepts/video-generation]] — 视频生成
+- [[_concepts/generative-vision-models]] — 视觉生成模型
+- [[_concepts/computer-vision]] — 计算机视觉
+- [[_concepts/video-generation]] — 视频生成

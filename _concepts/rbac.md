@@ -3,9 +3,9 @@ title: "RBAC 基于角色的访问控制"
 category: concept
 tags: ["rbac", "access-control", "security", "authentication", "authorization", "multi-tenant"]
 relationships:
-  - target: "concepts/ai-architecture"
+  - target: "_concepts/ai-architecture"
     type: related_to
-  - target: "concepts/model-gateway"
+  - target: "_concepts/model-gateway"
     type: related_to
 sources:
   - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
@@ -138,7 +138,7 @@ AI Stack 安全分层
 
 ## Related
 
-- [[concepts/ai-architecture]] — AI 架构（安全架构）
-- [[concepts/model-gateway]] — 模型网关（API-Key 鉴权）
+- [[_concepts/ai-architecture]] — AI 架构（安全架构）
+- [[_concepts/model-gateway]] — 模型网关（API-Key 鉴权）
 - [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack（RBAC 实现）
-- [[concepts/model-serving]] — 模型服务（多租户安全）
+- [[_concepts/model-serving]] — 模型服务（多租户安全）

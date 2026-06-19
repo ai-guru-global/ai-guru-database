@@ -281,16 +281,16 @@ GPUStack 可以同时提供这 3 种服务。
 
 ## 下一步
 
-- 想深入了解? → [[09_Deployment_Inference/GPUStack_Deep_Dive|GPUStack 深度解析]]
-- 想对比推理引擎? → [[09_Deployment_Inference/README|模型部署与推理目录]]
-- 想学 RAG? → [[11_RAG_Systems/README_for_dummy|RAG 系统小白版]]
+- 想深入了解? → [[10_Deployment_Inference/GPUStack_Deep_Dive|GPUStack 深度解析]]
+- 想对比推理引擎? → [[10_Deployment_Inference/README|模型部署与推理目录]]
+- 想学 RAG? → [[14_RAG_Systems/README_for_dummy|RAG 系统小白版]]
 
 ---
 
-*本文是 [[09_Deployment_Inference/GPUStack_Deep_Dive|GPUStack 深度解析]] 的简化版, 适合零基础读者。*
+*本文是 [[10_Deployment_Inference/GPUStack_Deep_Dive|GPUStack 深度解析]] 的简化版, 适合零基础读者。*
 
 ## Related
-- [[09_Deployment_Inference/GPUStack_Deep_Dive|GPUStack: 开源 GPU 集群管理与模型服务平台]]
-- [[09_Deployment_Inference/Ollama_Deep_Dive|Ollama: 本地大模型部署平台]]
-- [[09_Deployment_Inference/vLLM_Deep_Dive|vLLM: 生产级 LLM 推理引擎]]
-- [[11_RAG_Systems/README_for_dummy|RAG 系统 — 小白版]]
+- [[10_Deployment_Inference/GPUStack_Deep_Dive|GPUStack: 开源 GPU 集群管理与模型服务平台]]
+- [[10_Deployment_Inference/Ollama_Deep_Dive|Ollama: 本地大模型部署平台]]
+- [[10_Deployment_Inference/vLLM_Deep_Dive|vLLM: 生产级 LLM 推理引擎]]
+- [[14_RAG_Systems/README_for_dummy|RAG 系统 — 小白版]]

@@ -794,14 +794,14 @@ $$\mathbf{h}_i = \begin{cases} 0 & \text{with prob } p \\ \frac{1}{1-p} \mathbf{
 
 ### 7.2 横向关联
 - [**优化算法**](../Optimization/Optimization.md): SGD/Adam/学习率调度
-- [**卷积神经网络**](../../05_Computer_Vision/): CNN 架构详解
-- [**循环神经网络**](../../04_NLP_LLMs/Sequence_Models/): LSTM/GRU
-- [**Transformer**](../../04_NLP_LLMs/Transformer_Revolution/Transformer_Revolution.md): 注意力机制
+- [**卷积神经网络**](../../04_Computer_Vision/): CNN 架构详解
+- [**循环神经网络**](../../05_NLP_LLMs/Sequence_Models/): LSTM/GRU
+- [**Transformer**](../../05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution.md): 注意力机制
 
 ### 7.3 纵向进阶
-- [**模型压缩**](../../09_Deployment_Inference/Deployment_Inference.md): 剪枝、量化、蒸馏
-- [**迁移学习**](../../04_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques.md): 预训练 + 微调
-- [**神经架构搜索**](../../10_MLOps_Pipeline/MLOps_Pipeline.md): AutoML
+- [**模型压缩**](../../10_Deployment_Inference/Deployment_Inference.md): 剪枝、量化、蒸馏
+- [**迁移学习**](../../05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques.md): 预训练 + 微调
+- [**神经架构搜索**](../../11_MLOps_Pipeline/MLOps_Pipeline.md): AutoML
 
 ## 8. 面试高频问题 (Interview FAQs)
 

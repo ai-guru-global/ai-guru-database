@@ -3,15 +3,15 @@ title: "Ray / KubeRay"
 category: concept
 tags: ["ray", "kuberay", "distributed", "training", "inference", "cncf", "kubernetes", "actor", "task", "data"]
 relationships:
-  - target: "concepts/distributed-training"
+  - target: "_concepts/distributed-training"
     type: enables
-  - target: "concepts/kubernetes"
+  - target: "_concepts/kubernetes"
     type: runs_on
-  - target: "concepts/hami"
+  - target: "_concepts/hami"
     type: related_to
-  - target: "concepts/spark"
+  - target: "_concepts/spark"
     type: related_to
-  - target: "concepts/deepspeed"
+  - target: "_concepts/deepspeed"
     type: related_to
 sources:
   - 07_Model_Training/Ray_Deep_Dive.md
@@ -155,7 +155,7 @@ result = ray.get(predictor.predict.remote(x))
 
 - [[07_Model_Training/Ray_Deep_Dive]] — Ray 深度解析
 - [[12_Architecture_Infrastructure/CNCF_Cloud_Native_AI/KubeRay_Deep_Dive]] — KubeRay 深度解析
-- [[concepts/distributed-training]] — 分布式训练
-- [[concepts/hami]] — HAMi GPU 虚拟化
+- [[_concepts/distributed-training]] — 分布式训练
+- [[_concepts/hami]] — HAMi GPU 虚拟化
 - [[07_Model_Training/DeepSpeed_Deep_Dive]] — DeepSpeed
-- [[09_Deployment_Inference/KServe_Deep_Dive]] — KServe
+- [[10_Deployment_Inference/KServe_Deep_Dive]] — KServe

@@ -232,8 +232,8 @@ PRM 对步骤 3 的评估困境:
 
 ## Related
 
-- [[04_NLP_LLMs/Reasoning_Models/o1_Class_Reasoning_Models]]
-- [[04_NLP_LLMs/Reasoning_Models/DeepSeek_R1_Technical_Analysis]]
+- [[05_NLP_LLMs/Reasoning_Models/o1_Class_Reasoning_Models]]
+- [[05_NLP_LLMs/Reasoning_Models/DeepSeek_R1_Technical_Analysis]]
 - [[06_Reinforcement_Learning/Deep_RL/Deep_RL]]
-- [[concepts/rlhf]]
+- [[_concepts/rlhf]]
 - [[07_Model_Training/Training_Optimization_2026]]

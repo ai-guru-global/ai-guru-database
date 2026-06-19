@@ -55,7 +55,7 @@ graph LR
 |--------|------|
 | 概念与方法论（什么是特征存储/为什么需要数据版本） | 本章上方「LLMOps 主线」/「传统 MLOps 主线」/「横切关注点」 |
 | 工具怎么用（Feast/DVC/MLflow/LangSmith…） | 本章下方「🔧 工具深度解析」 |
-| 事故响应 / SRE / 混沌工程 | [[16_AI_Ops/README]] — 运维专属 |
+| 事故响应 / SRE / 混沌工程 | [[13_AI_Ops/README]] — 运维专属 |
 
 ---
 
@@ -142,7 +142,7 @@ graph LR
 | [CI/CD Pipeline AI 2026](./CI_CD_Pipeline_AI_2026.md) | [[ML_CI_CD]] |
 | [LLM Production Pipeline 2026](./LLM_Production_Pipeline_2026.md) | [[LLMOps_2026]] |
 
-> Guardrails / PromptLayer 仍留 [[16_AI_Ops/README]]（安全护栏与 Prompt 管理更贴近运维场景）。
+> Guardrails / PromptLayer 仍留 [[13_AI_Ops/README]]（安全护栏与 Prompt 管理更贴近运维场景）。
 
 ---
 
@@ -151,7 +151,7 @@ graph LR
 ### LLM 应用开发者路径（2026 主流）
 - **主线** → [LLMOps 2026](./LLMOps_2026.md)（1 小时，必读）
 - **深扩** → [Prompt Ops](./Prompt_Engineering_Ops.md) → [LLM Eval](./LLM_Evaluation_Pipeline.md) → [RAG Ops](./RAG_Pipeline_Ops.md)
-- **成本** → 跨章参考 [[09_Deployment_Inference/LLM_Cost_Optimization]]
+- **成本** → 跨章参考 [[10_Deployment_Inference/LLM_Cost_Optimization]]
 
 ### 传统 ML 工程师路径
 - **快速入门** → [MLOps-in-nutshell](./MLOps-in-nutshell.md)（30 分钟）
@@ -165,13 +165,13 @@ graph LR
 ### 前置知识
 - [模型训练](../07_Model_Training/) — 训练流程是 MLOps 的输入
 - [模型评估](../08_Model_Evaluation/) — 评估是流水线中的质量门禁
-- [部署推理](../09_Deployment_Inference/README.md) — MLOps 的最终交付环节
+- [部署推理](../10_Deployment_Inference/README.md) — MLOps 的最终交付环节
 
 ### 进阶方向
-- [AI Ops](../16_AI_Ops/README.md) — 模型监控、告警、自动回滚
-- [测试](../15_Testing/README.md) — AI 系统的测试策略
+- [AI Ops](../13_AI_Ops/README.md) — 模型监控、告警、自动回滚
+- [测试](../09_Testing/README.md) — AI 系统的测试策略
 - [架构基础设施](../12_Architecture_Infrastructure/) — 底层基础设施支撑
-- [RAG 系统](../11_RAG_Systems/) — 知识密集型应用的 MLOps 实践
+- [RAG 系统](../14_RAG_Systems/) — 知识密集型应用的 MLOps 实践
 
 ---
 
@@ -214,29 +214,29 @@ flowchart TB
 *本章内容持续完善中。*
 
 ## Related
-- [[10_MLOps_Pipeline/Boundary_with_16|📍 10 与 16 边界声明]] 📐 治理
+- [[11_MLOps_Pipeline/Boundary_with_16|📍 10 与 16 边界声明]] 📐 治理
 - [[92_Plan/MLOps_Section_Enhancement_Plan_2026|章节加强计划 2026]] 📋 路线图
-- [[10_MLOps_Pipeline/LLMOps_2026|LLMOps 2026：大模型时代的 MLOps 升级]] ⭐ LLM 时代主线
-- [[10_MLOps_Pipeline/Prompt_Engineering_Ops|Prompt 工程化运维]]
-- [[10_MLOps_Pipeline/LLM_Evaluation_Pipeline|LLM 评估流水线]]
-- [[10_MLOps_Pipeline/RAG_Pipeline_Ops|RAG 流水线运维]]
-- [[10_MLOps_Pipeline/LLM_Cost_Latency_SLO|LLM 成本与延迟 SLO]]
-- [[10_MLOps_Pipeline/LLM_Observability|LLM 可观测性]]
-- [[10_MLOps_Pipeline/Data_Versioning_DVC_LakeFS|数据版本控制：DVC 与 LakeFS]]
-- [[10_MLOps_Pipeline/Automated_Retraining|自动化再训练]]
-- [[10_MLOps_Pipeline/ML_Observability_SLO|ML 系统可观测与 SLO]]
-- [[10_MLOps_Pipeline/Cost_Optimization_MLOps|MLOps 成本优化]]
-- [[10_MLOps_Pipeline/Privacy_Compliance_Pipeline|隐私与合规流水线]]
-- [[10_MLOps_Pipeline/Model_Registry_and_Cards_Deep_Dive|模型注册与模型卡片深度解析 (Model Registry & Model Cards Deep Dive)]]
-- [[10_MLOps_Pipeline/MLOps_Pipeline|MLOps 流水线 (MLOps Pipeline)]]
-- [[10_MLOps_Pipeline/ML_CI_CD|ML CI/CD 流水线 (ML CI/CD Pipeline)]]
-- [[10_MLOps_Pipeline/MLOps_Pipeline_for_dummy|MLOps 流水线 - 小白版]]
-- [[10_MLOps_Pipeline/README_for_dummy|10 MLOps 流水线 — 小白版 🔄]]
-- [[10_MLOps_Pipeline/Experiment_Tracking_Deep_Dive|实验追踪深度解析 (Experiment Tracking Deep Dive)]]
-- [[10_MLOps_Pipeline/MLOps_Maturity_Model|MLOps 成熟度模型与最佳实践 (MLOps Maturity Model)]]
-- [[10_MLOps_Pipeline/Feature_Store_Deep_Dive|Feature Store 深度解析 (Feature Store Deep Dive)]]
+- [[11_MLOps_Pipeline/LLMOps_2026|LLMOps 2026：大模型时代的 MLOps 升级]] ⭐ LLM 时代主线
+- [[11_MLOps_Pipeline/Prompt_Engineering_Ops|Prompt 工程化运维]]
+- [[11_MLOps_Pipeline/LLM_Evaluation_Pipeline|LLM 评估流水线]]
+- [[11_MLOps_Pipeline/RAG_Pipeline_Ops|RAG 流水线运维]]
+- [[11_MLOps_Pipeline/LLM_Cost_Latency_SLO|LLM 成本与延迟 SLO]]
+- [[11_MLOps_Pipeline/LLM_Observability|LLM 可观测性]]
+- [[11_MLOps_Pipeline/Data_Versioning_DVC_LakeFS|数据版本控制：DVC 与 LakeFS]]
+- [[11_MLOps_Pipeline/Automated_Retraining|自动化再训练]]
+- [[11_MLOps_Pipeline/ML_Observability_SLO|ML 系统可观测与 SLO]]
+- [[11_MLOps_Pipeline/Cost_Optimization_MLOps|MLOps 成本优化]]
+- [[11_MLOps_Pipeline/Privacy_Compliance_Pipeline|隐私与合规流水线]]
+- [[11_MLOps_Pipeline/Model_Registry_and_Cards_Deep_Dive|模型注册与模型卡片深度解析 (Model Registry & Model Cards Deep Dive)]]
+- [[11_MLOps_Pipeline/MLOps_Pipeline|MLOps 流水线 (MLOps Pipeline)]]
+- [[11_MLOps_Pipeline/ML_CI_CD|ML CI/CD 流水线 (ML CI/CD Pipeline)]]
+- [[11_MLOps_Pipeline/MLOps_Pipeline_for_dummy|MLOps 流水线 - 小白版]]
+- [[11_MLOps_Pipeline/README_for_dummy|10 MLOps 流水线 — 小白版 🔄]]
+- [[11_MLOps_Pipeline/Experiment_Tracking_Deep_Dive|实验追踪深度解析 (Experiment Tracking Deep Dive)]]
+- [[11_MLOps_Pipeline/MLOps_Maturity_Model|MLOps 成熟度模型与最佳实践 (MLOps Maturity Model)]]
+- [[11_MLOps_Pipeline/Feature_Store_Deep_Dive|Feature Store 深度解析 (Feature Store Deep Dive)]]
 
-- [[concepts/mlops]] — MLOps
-- [[concepts/model-deployment]] — 模型部署
+- [[_concepts/mlops]] — MLOps
+- [[_concepts/model-deployment]] — 模型部署
 
 

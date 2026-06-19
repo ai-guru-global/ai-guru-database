@@ -509,16 +509,16 @@ LLM 推理引擎选型 Checklist
 
 ## 参考资源
 
-- [[09_Deployment_Inference/vLLM_Deep_Dive|vLLM 深度解析]]
-- [[09_Deployment_Inference/SGLang_Deep_Dive|SGLang 深度解析]]
-- [[09_Deployment_Inference/TensorRT_LLM_Deep_Dive|TensorRT-LLM 深度解析]]
-- [[09_Deployment_Inference/llama_cpp_Deep_Dive|llama.cpp 深度解析]]
-- [[09_Deployment_Inference/TGI_Deep_Dive|TGI 深度解析]]
-- [[09_Deployment_Inference/Groq_Deep_Dive|Groq 深度解析]]
-- [[09_Deployment_Inference/Ollama_Deep_Dive|Ollama 深度解析]]
-- [[09_Deployment_Inference/LMDeploy_Deep_Dive|LMDeploy 深度解析]]
-- [[09_Deployment_Inference/BentoML_Deep_Dive|BentoML 深度解析]]
-- [[09_Deployment_Inference/LiteRT_Deep_Dive|LiteRT 深度解析]]
+- [[10_Deployment_Inference/vLLM_Deep_Dive|vLLM 深度解析]]
+- [[10_Deployment_Inference/SGLang_Deep_Dive|SGLang 深度解析]]
+- [[10_Deployment_Inference/TensorRT_LLM_Deep_Dive|TensorRT-LLM 深度解析]]
+- [[10_Deployment_Inference/llama_cpp_Deep_Dive|llama.cpp 深度解析]]
+- [[10_Deployment_Inference/TGI_Deep_Dive|TGI 深度解析]]
+- [[10_Deployment_Inference/Groq_Deep_Dive|Groq 深度解析]]
+- [[10_Deployment_Inference/Ollama_Deep_Dive|Ollama 深度解析]]
+- [[10_Deployment_Inference/LMDeploy_Deep_Dive|LMDeploy 深度解析]]
+- [[10_Deployment_Inference/BentoML_Deep_Dive|BentoML 深度解析]]
+- [[10_Deployment_Inference/LiteRT_Deep_Dive|LiteRT 深度解析]]
 - [[14_AI_Gateway/LiteLLM_Deep_Dive|LiteLLM 深度解析]]
 
 ---
@@ -528,7 +528,7 @@ LLM 推理引擎选型 Checklist
 
 ## Related
 
-- [[09_Deployment_Inference/README|模型部署与推理目录]]
-- [[09_Deployment_Inference/Deployment_Inference_2026|部署推理 2026 趋势]]
-- [[09_Deployment_Inference/LLM_Cost_Optimization|LLM 成本优化]]
+- [[10_Deployment_Inference/README|模型部署与推理目录]]
+- [[10_Deployment_Inference/Deployment_Inference_2026|部署推理 2026 趋势]]
+- [[10_Deployment_Inference/LLM_Cost_Optimization|LLM 成本优化]]
 - [[14_AI_Gateway/AI_Gateway_2026|AI Gateway 2026]]

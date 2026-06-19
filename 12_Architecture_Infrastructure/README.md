@@ -109,13 +109,13 @@ updated: '2026-06-16'
 
 ### 前置知识
 - [深度学习](../03_Deep_Learning/README.md) — 理解模型计算特性
-- [部署推理](../09_Deployment_Inference/README.md) — 推理优化是架构设计的基础
-- [RAG 系统](../11_RAG_Systems/README.md) — 检索系统的架构考量
+- [部署推理](../10_Deployment_Inference/README.md) — 推理优化是架构设计的基础
+- [RAG 系统](../14_RAG_Systems/README.md) — 检索系统的架构考量
 
 ### 进阶方向
 - [AI Gateway](./AI_Gateway/AI_Gateway_README.md) — 流量接入层设计（本章子目录）
-- [AI Ops](../16_AI_Ops/README.md) — 运维监控与自动化
-- [Agent 生产](../13_Agent_Production/README.md) — Agent 系统的架构模式
+- [AI Ops](../13_AI_Ops/README.md) — 运维监控与自动化
+- [Agent 生产](../15_Agent_Production/README.md) — Agent 系统的架构模式
 
 ---
 
@@ -132,8 +132,8 @@ updated: '2026-06-16'
 
 - [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive|阿里云 AI Stack: 企业级软硬一体 AI 推理平台]]
 - [[12_Architecture_Infrastructure/CDI_Deep_Dive|CDI (Container Device Interface): 容器设备接口标准]]
-- [[concepts/ai-architecture]] — AI 系统架构
-- [[concepts/llm-infrastructure]] — LLM 基础设施
+- [[_concepts/ai-architecture]] — AI 系统架构
+- [[_concepts/llm-infrastructure]] — LLM 基础设施
 - [[12_Architecture_Infrastructure/Alibaba_Cloud_AI_Stack_Deep_Dive|阿里云 AI Stack 深度解读]] — 专有云 AI 推理平台三层架构
 - [[12_Architecture_Infrastructure/AI_Stack_Production_Toolchain|AI Stack 生产工具链总览]]
 - [[12_Architecture_Infrastructure/AI_Stack_Container_Runtime_Guide|AI Stack 容器与运行时指南]]

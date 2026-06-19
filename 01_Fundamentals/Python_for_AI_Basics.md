@@ -284,4 +284,4 @@ except Exception as e:
 - [[01_Fundamentals/AI_Development_Environment_Setup]] — Jupyter / Conda / Colab / GPU
 - [[01_Fundamentals/Linear_Algebra/Linear_Algebra_for_dummy]] — 线代基础
 - [[00_AI_Introduction/AI_Fundamentals_for_dummy]] — AI 概念小白版
-- [[synthesis/python-data-science-pipeline|Python × 数据科学]] — AI 入门完整工具链
+- [[_synthesis/python-data-science-pipeline|Python × 数据科学]] — AI 入门完整工具链

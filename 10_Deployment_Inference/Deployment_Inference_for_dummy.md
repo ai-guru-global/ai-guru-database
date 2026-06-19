@@ -353,8 +353,8 @@ vLLM (PagedAttention):
 
 ### 📄 进阶阅读
 - [模型部署与推理加速(完整版)](./Deployment_Inference.md) - 技术细节和公式
-- [RAG 系统 - 小白版](../11_RAG_Systems/RAG_Systems_for_dummy.md) - 推理的实战应用
-- [MLOps 流水线 - 小白版](../10_MLOps_Pipeline/MLOps_Pipeline_for_dummy.md) - 部署自动化
+- [RAG 系统 - 小白版](../14_RAG_Systems/RAG_Systems_for_dummy.md) - 推理的实战应用
+- [MLOps 流水线 - 小白版](../11_MLOps_Pipeline/MLOps_Pipeline_for_dummy.md) - 部署自动化
 
 ### 🛠️ 动手实践
 - [vLLM 官方教程](https://docs.vllm.ai/en/latest/getting_started/quickstart.html)
@@ -362,7 +362,7 @@ vLLM (PagedAttention):
 - [Hugging Face 量化指南](https://huggingface.co/docs/transformers/main/quantization)
 
 ### 🎓 相关知识
-- [Transformer 架构 - 小白版](../../04_NLP_LLMs/Transformer_Revolution/Transformer_Revolution_for_dummy.md)
+- [Transformer 架构 - 小白版](../../05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution_for_dummy.md)
 - [神经网络核心 - 小白版](../../03_Deep_Learning/Neural_Network_Core/Neural_Network_Core_for_dummy.md)
 
 ---
@@ -371,9 +371,9 @@ vLLM (PagedAttention):
 
 ## Related
 
-- [[09_Deployment_Inference/Deployment_Inference]] — 模型部署与推理加速 (Deployment & Inference) (共享: deployment, inference, model-deployment, serving, vllm)
-- [[09_Deployment_Inference/Deployment_Inference_2026]] — 部署推理 2026 趋势 (共享: deployment, inference, model-deployment, serving, vllm)
-- [[09_Deployment_Inference/JVM_AI_Deployment]] — JVM AI 部署与推理 (共享: deployment, inference, model-deployment, serving, vllm)
-- [[09_Deployment_Inference/Inference-in-nutshell]] — 模型推理速成指南 (共享: deployment, inference, serving, vllm)
-- [[09_Deployment_Inference/llama_cpp_Deep_Dive.md|llama_cpp_Deep_Dive]]
-- [[09_Deployment_Inference/SGLang_Deep_Dive.md|SGLang_Deep_Dive]]
+- [[10_Deployment_Inference/Deployment_Inference]] — 模型部署与推理加速 (Deployment & Inference) (共享: deployment, inference, model-deployment, serving, vllm)
+- [[10_Deployment_Inference/Deployment_Inference_2026]] — 部署推理 2026 趋势 (共享: deployment, inference, model-deployment, serving, vllm)
+- [[10_Deployment_Inference/JVM_AI_Deployment]] — JVM AI 部署与推理 (共享: deployment, inference, model-deployment, serving, vllm)
+- [[10_Deployment_Inference/Inference-in-nutshell]] — 模型推理速成指南 (共享: deployment, inference, serving, vllm)
+- [[10_Deployment_Inference/llama_cpp_Deep_Dive.md|llama_cpp_Deep_Dive]]
+- [[10_Deployment_Inference/SGLang_Deep_Dive.md|SGLang_Deep_Dive]]

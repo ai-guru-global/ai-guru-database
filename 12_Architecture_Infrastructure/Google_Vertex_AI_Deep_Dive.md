@@ -261,9 +261,9 @@ Vertex AI 提供两种 grounding 方式：
 
 ## Related
 
-- [[concepts/vertex-ai]] — Google Vertex AI 概念卡片
-- [[concepts/aws-bedrock]] — AWS Bedrock
-- [[concepts/azure-openai]] — Azure OpenAI
-- [[concepts/gemini]] — Gemini
-- [[concepts/cloud-ai-platform]] — 云 AI 平台
+- [[_concepts/vertex-ai]] — Google Vertex AI 概念卡片
+- [[_concepts/aws-bedrock]] — AWS Bedrock
+- [[_concepts/azure-openai]] — Azure OpenAI
+- [[_concepts/gemini]] — Gemini
+- [[_concepts/cloud-ai-platform]] — 云 AI 平台
 - [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack 深度解析

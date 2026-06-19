@@ -3,21 +3,21 @@ title: "LangChain"
 category: concept
 tags: ["langchain", "agent", "llm", "framework", "rag", "tool-use", "chain", "orchestration"]
 relationships:
-  - target: "concepts/agent-framework"
+  - target: "_concepts/agent-framework"
     type: extends
-  - target: "concepts/rag"
+  - target: "_concepts/rag"
     type: enables
-  - target: "concepts/llm"
+  - target: "_concepts/llm"
     type: uses
-  - target: "concepts/llamaindex"
+  - target: "_concepts/llamaindex"
     type: related_to
-  - target: "concepts/autogen"
+  - target: "_concepts/autogen"
     type: related_to
-  - target: "concepts/mcp"
+  - target: "_concepts/mcp"
     type: related_to
 sources:
-  - 13_Agent_Production/Agent_Frameworks/LangChain_Deep_Dive.md
-  - 13_Agent_Production/Agent_Frameworks/LangChain_Agents_Deep_Dive.md
+  - 15_Agent_Production/Agent_Frameworks/LangChain_Deep_Dive.md
+  - 15_Agent_Production/Agent_Frameworks/LangChain_Agents_Deep_Dive.md
 summary: "LangChain 是最流行的 LLM 应用开发框架之一，提供 Chain、Agent、Tool、Memory、RAG 等抽象，帮助开发者快速构建基于大模型的应用和工作流。"
 provenance:
   extracted: 0.8
@@ -93,9 +93,9 @@ updated: 2026-06-16
 
 ## Related
 
-- [[13_Agent_Production/Agent_Frameworks/LangChain_Deep_Dive]] — LangChain 深度解析
-- [[13_Agent_Production/Agent_Frameworks/LangChain_Agents_Deep_Dive]] — LangChain Agents 深度解析
-- [[concepts/agent-framework]] — Agent 框架
-- [[concepts/rag]] — RAG
-- [[concepts/llamaindex]] — LlamaIndex
-- [[concepts/autogen]] — AutoGen
+- [[15_Agent_Production/Agent_Frameworks/LangChain_Deep_Dive]] — LangChain 深度解析
+- [[15_Agent_Production/Agent_Frameworks/LangChain_Agents_Deep_Dive]] — LangChain Agents 深度解析
+- [[_concepts/agent-framework]] — Agent 框架
+- [[_concepts/rag]] — RAG
+- [[_concepts/llamaindex]] — LlamaIndex
+- [[_concepts/autogen]] — AutoGen

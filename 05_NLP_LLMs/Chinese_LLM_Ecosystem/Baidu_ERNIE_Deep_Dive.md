@@ -771,15 +771,15 @@ print(response["result"])
 
 ### Wiki 内部链接
 
-- [[04_NLP_LLMs/Chinese_LLM_Ecosystem/README]] — 中国大模型生态总览
-- [[04_NLP_LLMs/Chinese_LLM_Ecosystem/Qwen_Deep_Dive]] — 通义千问深度解析
-- [[04_NLP_LLMs/Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive]] — DeepSeek 深度解析
-- [[04_NLP_LLMs/Chinese_LLM_Ecosystem/GLM_Zhipu_Deep_Dive]] — 智谱 GLM 深度解析
-- [[04_NLP_LLMs/Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]] — 国产模型对比矩阵
-- [[04_NLP_LLMs/Prompt_Engineering/GenAI_L04_Prompt_Engineering_Fundamentals]] — 提示工程基础
-- [[04_NLP_LLMs/Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs]] — LLM 微调技术
-- [[11_RAG_Systems/GenAI_L15_RAG_and_Vector_Databases]] — RAG 与向量数据库
-- [[13_Agent_Production/GenAI_L17_AI_Agents]] — AI Agent 概述
+- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/README]] — 中国大模型生态总览
+- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/Qwen_Deep_Dive]] — 通义千问深度解析
+- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive]] — DeepSeek 深度解析
+- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/GLM_Zhipu_Deep_Dive]] — 智谱 GLM 深度解析
+- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]] — 国产模型对比矩阵
+- [[05_NLP_LLMs/Prompt_Engineering/GenAI_L04_Prompt_Engineering_Fundamentals]] — 提示工程基础
+- [[05_NLP_LLMs/Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs]] — LLM 微调技术
+- [[14_RAG_Systems/GenAI_L15_RAG_and_Vector_Databases]] — RAG 与向量数据库
+- [[15_Agent_Production/GenAI_L17_AI_Agents]] — AI Agent 概述
 - [[90_Learn/courses/microsoft/microsoft_genai_for_beginners]] — 生成式 AI 入门课程
 
 ---

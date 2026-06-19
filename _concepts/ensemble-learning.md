@@ -4,11 +4,11 @@ category: concepts
 tags: ["machine-learning", "ensemble", "bagging", "boosting", "stacking", "random-forest", "xgboost", "lightgbm", "catboost"]
 aliases: [Ensemble unsupervised-learning, 集成方法]
 relationships:
-  - target: "[[concepts/supervised-learning]]"
+  - target: "[[_concepts/supervised-learning]]"
     type: related_to
-  - target: "concepts/feature-engineering"
+  - target: "_concepts/feature-engineering"
     type: related_to
-  - target: "concepts/automl"
+  - target: "_concepts/automl"
     type: related_to
 sources: [02_Machine_Learning/Ensemble_Learning/Ensemble_Learning.md]
 summary: 组合多个弱学习器构建强学习器，三大范式为Bagging、Boosting和Stacking。
@@ -110,11 +110,11 @@ Stacking 使用 K 折交叉验证生成元特征，数据利用更充分、过�
 
 ## 来源
 
-- references/ensemble-learning-reference
-- concepts/supervised-learning
-- concepts/feature-engineering
-- concepts/automl
+- _references/ensemble-learning-reference
+- _concepts/supervised-learning
+- _concepts/feature-engineering
+- _concepts/automl
 
 ## Related
 
-- [[concepts/supervised-learning]] — 监督学习 (共享: ml, xgboost)
+- [[_concepts/supervised-learning]] — 监督学习 (共享: ml, xgboost)

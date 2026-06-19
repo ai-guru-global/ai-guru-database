@@ -44,6 +44,6 @@ internal_mappings: 映射到的内部章节列表
 
 ## 相关目录
 
-- [[22_Papers/README]] — 必读论文
+- [[20_Papers/README]] — 必读论文
 - [[90_Learn/README]] — 学习路径
 - [[00_AI_Introduction/AI_Learning_Resources]] — AI 学习资源

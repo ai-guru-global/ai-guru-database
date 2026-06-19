@@ -23,8 +23,8 @@ updated: 2026-05-31
 
 ## Related
 
-- [[23_Interviews/AI_Evaluation_Engineer/company_level_question_bank]] — AI Evaluation Engineer 按公司/级别区分的题库 (共享: career, experience, interviews, model-evaluation, practition)
-- [[23_Interviews/AI_Evaluation_Engineer/interview_preparing]] — AI Evaluation Engineer 面试准备 (共享: career, experience, interviews, model-evaluation, practition)
-- [[23_Interviews/AI_Evaluation_Engineer/question_bank]] — AI Evaluation Engineer 题库 (共享: career, experience, interviews, model-evaluation, practition)
-- [[23_Interviews/AI_Data_Analyst/company_level_question_bank]] — AI Data Analyst 按公司/级别区分的题库 (共享: career, experience, interviews, practitioners)
-- [[23_Interviews/AI_Reliability_Engineer/interview_answers.md|interview_answers]]
+- [[21_Interviews/AI_Evaluation_Engineer/company_level_question_bank]] — AI Evaluation Engineer 按公司/级别区分的题库 (共享: career, experience, interviews, model-evaluation, practition)
+- [[21_Interviews/AI_Evaluation_Engineer/interview_preparing]] — AI Evaluation Engineer 面试准备 (共享: career, experience, interviews, model-evaluation, practition)
+- [[21_Interviews/AI_Evaluation_Engineer/question_bank]] — AI Evaluation Engineer 题库 (共享: career, experience, interviews, model-evaluation, practition)
+- [[21_Interviews/AI_Data_Analyst/company_level_question_bank]] — AI Data Analyst 按公司/级别区分的题库 (共享: career, experience, interviews, practitioners)
+- [[21_Interviews/AI_Reliability_Engineer/interview_answers.md|interview_answers]]

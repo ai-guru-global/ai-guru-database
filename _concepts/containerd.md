@@ -3,13 +3,13 @@ title: "containerd"
 category: concept
 tags: ["containerd", "container-runtime", "cri", "kubernetes", "docker", "cncf"]
 relationships:
-  - target: "concepts/cri"
+  - target: "_concepts/cri"
     type: implements
-  - target: "concepts/kubernetes"
+  - target: "_concepts/kubernetes"
     type: used_by
-  - target: "concepts/oci-runtime"
+  - target: "_concepts/oci-runtime"
     type: related_to
-  - target: "concepts/docker"
+  - target: "_concepts/docker"
     type: related_to
 sources:
   - 12_Architecture_Infrastructure/AI_Infrastructure_2026.md
@@ -101,8 +101,8 @@ systemctl status containerd
 
 ## Related
 
-- [[concepts/kubernetes]] — Kubernetes
-- [[concepts/cri]] — CRI 容器运行时接口
-- [[concepts/oci-runtime]] — OCI Runtime
-- [[concepts/cdi]] — CDI 容器设备接口
+- [[_concepts/kubernetes]] — Kubernetes
+- [[_concepts/cri]] — CRI 容器运行时接口
+- [[_concepts/oci-runtime]] — OCI Runtime
+- [[_concepts/cdi]] — CDI 容器设备接口
 - [[12_Architecture_Infrastructure/AI_Infrastructure_2026]] — AI 基础设施 2026

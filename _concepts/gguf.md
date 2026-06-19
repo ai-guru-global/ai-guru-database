@@ -3,18 +3,18 @@ title: "GGUF"
 category: concepts
 tags: ["gguf", "llama-cpp", "quantization", "model-format", "edge-llm", "model-compression"]
 relationships:
-  - target: "concepts/model-compression"
+  - target: "_concepts/model-compression"
     type: belongs_to
-  - target: "concepts/quantization"
+  - target: "_concepts/quantization"
     type: implements
-  - target: "concepts/edge-llm"
+  - target: "_concepts/edge-llm"
     type: enables
-  - target: "concepts/llama-cpp"
+  - target: "_concepts/llama-cpp"
     type: used_by
 sources:
-  - 09_Deployment_Inference/llama_cpp_Deep_Dive.md
-  - 09_Deployment_Inference/Quantization_Techniques_2026.md
-  - 04_NLP_LLMs/Edge_LLM/README.md
+  - 10_Deployment_Inference/llama_cpp_Deep_Dive.md
+  - 10_Deployment_Inference/Quantization_Techniques_2026.md
+  - 05_NLP_LLMs/Edge_LLM/README.md
 summary: "GGUF（GPT-Generated Unified Format）是 llama.cpp 推出的大模型文件格式。它把模型权重、配置、tokenizer、特殊词表都打包进一个文件，并原生支持多种量化精度，是本地/边缘部署事实标准。"
 provenance:
   extracted: 0.75
@@ -91,9 +91,9 @@ llama-server -m model.gguf --port 8080
 
 ## Related
 
-- [[concepts/model-compression]] — 模型压缩
-- [[concepts/quantization]] — 量化
-- [[concepts/edge-llm]] — 边缘 LLM
-- [[concepts/llama-cpp]] — llama.cpp
-- [[09_Deployment_Inference/llama_cpp_Deep_Dive]] — llama.cpp 深度解析
-- [[09_Deployment_Inference/Quantization_Techniques_2026]] — 量化技术 2026
+- [[_concepts/model-compression]] — 模型压缩
+- [[_concepts/quantization]] — 量化
+- [[_concepts/edge-llm]] — 边缘 LLM
+- [[_concepts/llama-cpp]] — llama.cpp
+- [[10_Deployment_Inference/llama_cpp_Deep_Dive]] — llama.cpp 深度解析
+- [[10_Deployment_Inference/Quantization_Techniques_2026]] — 量化技术 2026

@@ -97,5 +97,5 @@ tier: core
 | AlpacaEval | 指令跟随 | Stanford |
 | Chatbot Arena | 人类偏好排名 | LMSYS |
 
-> **关联**: -> [[08_Model_Evaluation|模型评估]] | [[15_Testing/DeepEval_Deep_Dive|DeepEval]] | [[15_Testing/RAGAS_Deep_Dive|RAGAS]] | [[15_Testing/Promptfoo_Deep_Dive|Promptfoo]]
+> **关联**: -> [[08_Model_Evaluation|模型评估]] | [[09_Testing/DeepEval_Deep_Dive|DeepEval]] | [[09_Testing/RAGAS_Deep_Dive|RAGAS]] | [[09_Testing/Promptfoo_Deep_Dive|Promptfoo]]
 

@@ -126,4 +126,4 @@ helm show values gpustack/gpustack
 - [[12_Architecture_Infrastructure/AI_Stack_Exclusive_Tools_Guide|AI Stack 专属运维工具指南]]
 - [[12_Architecture_Infrastructure/CDI_Deep_Dive|CDI: 容器设备接口标准]]
 - [[12_Architecture_Infrastructure/DRA_Deep_Dive|DRA: 动态资源分配]]
-- [[16_AI_Ops/AI_Ops_2026|AI Ops 2026: 智能运维体系与实践]]
+- [[13_AI_Ops/AI_Ops_2026|AI Ops 2026: 智能运维体系与实践]]

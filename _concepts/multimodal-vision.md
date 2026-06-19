@@ -4,15 +4,15 @@ category: 'concepts'
 tags: ["computer-vision", "multimodal", "clip", "llava", "multimodal-models", "blip"]
 aliases: [Multimodal Vision, 多模态, 视觉-语言模型, VLM]
 relationships:
-  - target: "[[concepts/computer-vision]]"
+  - target: "[[_concepts/computer-vision]]"
     type: related_to
-  - target: "concepts/generative-vision-models"
+  - target: "_concepts/generative-vision-models"
     type: related_to
-  - target: "concepts/ai-agents"
+  - target: "_concepts/ai-agents"
     type: related_to
 sources:
   - 05_computer-vision_Vision/Multimodal_Vision/Multimodal_Vision.md
-  - 05_Computer_Vision/Multimodal_Vision/CLIP_deep-reinforcement-learning_Dive.md
+  - 04_Computer_Vision/Multimodal_Vision/CLIP_deep-reinforcement-learning_Dive.md
 summary: '多模态视觉连接视觉和语言，CLIP实现零样本分类，LLaVA将视觉注入LLM，开启视觉问答和推理时代。'
 provenance:
   extracted: '0.80'
@@ -79,13 +79,13 @@ CLIP的对比学习范式催生了大量衍生工作：OpenCLIP在大规模LAION
 
 ## 来源
 
-- 05_Computer_Vision/Multimodal_Vision/Multimodal_Vision.md
-- 05_Computer_Vision/Multimodal_Vision/CLIP_Deep_Dive.md
+- 04_Computer_Vision/Multimodal_Vision/Multimodal_Vision.md
+- 04_Computer_Vision/Multimodal_Vision/CLIP_Deep_Dive.md
 
 ## Related
 
-- [[concepts/computer-vision.md|computer-vision]]
-- [[concepts/generative-vision-models.md|generative-vision-models]]
-- [[concepts/object-detection.md|object-detection]]
-- [[05_Computer_Vision/3D_Vision/3D_Vision.md|3D_Vision]]
-- [[05_Computer_Vision/3D_Vision/3D_Vision_for_dummy.md|3D_Vision_for_dummy]]
+- [[_concepts/computer-vision.md|computer-vision]]
+- [[_concepts/generative-vision-models.md|generative-vision-models]]
+- [[_concepts/object-detection.md|object-detection]]
+- [[04_Computer_Vision/3D_Vision/3D_Vision.md|3D_Vision]]
+- [[04_Computer_Vision/3D_Vision/3D_Vision_for_dummy.md|3D_Vision_for_dummy]]

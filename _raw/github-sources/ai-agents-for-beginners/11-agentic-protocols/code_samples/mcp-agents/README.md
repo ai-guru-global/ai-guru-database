@@ -2,7 +2,7 @@
 
 > TL;DR - Can You Build Agent2Agent Communication on MCP? Yes!
 
-MCP has evolved significantly beyond its original goal of "providing context to LLMs". With recent enhancements including [resumable streams](https://modelcontextprotocol.io/docs/concepts/transports#resumability-and-redelivery), [elicitation](https://modelcontextprotocol.io/specification/2025-06-18/client/elicitation), [sampling](https://modelcontextprotocol.io/specification/2025-06-18/client/sampling), and notifications ([progress](https://modelcontextprotocol.io/specification/2025-06-18/basic/utilities/progress) and [resources](https://modelcontextprotocol.io/specification/2025-06-18/schema#resourceupdatednotification)), MCP now provides a robust foundation for building complex agent-to-agent communication systems.
+MCP has evolved significantly beyond its original goal of "providing context to LLMs". With recent enhancements including [resumable streams](https://modelcontextprotocol.io/docs/_concepts/transports#resumability-and-redelivery), [elicitation](https://modelcontextprotocol.io/specification/2025-06-18/client/elicitation), [sampling](https://modelcontextprotocol.io/specification/2025-06-18/client/sampling), and notifications ([progress](https://modelcontextprotocol.io/specification/2025-06-18/basic/utilities/progress) and [resources](https://modelcontextprotocol.io/specification/2025-06-18/schema#resourceupdatednotification)), MCP now provides a robust foundation for building complex agent-to-agent communication systems.
 
 ## The Agent/Tool Misconception
 

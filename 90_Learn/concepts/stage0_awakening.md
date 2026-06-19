@@ -116,7 +116,7 @@ updated: '2026-05-31'
 - **一句话定义**：AI 发展带来的社会变革、风险和治理议题。
 - **核心议题**：算法偏见与公平性、隐私保护、就业影响、信息生态（深假/虚假信息）、AI 治理与法规（如 EU AI Act）
 - **入门阅读**：[AI 伦理与社会影响](../../00_AI_Introduction/AI_Ethics_Society.md)
-- **深入学习**：[价值对齐](../19_Ethics_Safety/Value_Alignment/Value_Alignment_for_dummy.md) | [AI 安全与红队](../19_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming_for_dummy.md)
+- **深入学习**：[价值对齐](../17_Ethics_Safety/Value_Alignment/Value_Alignment_for_dummy.md) | [AI 安全与红队](../17_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming_for_dummy.md)
 
 ---
 

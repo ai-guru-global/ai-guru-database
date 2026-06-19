@@ -74,8 +74,8 @@ created: 2026-06-17
 
 ## 深入阅读
 
-- [[19_Ethics_Safety/LLM_Security_Complete_Guide.md]] -- 幻觉作为 LLM 核心技术特性的安全映射
-- [[19_Ethics_Safety/LLM_Security_Defense_Guide.md]] -- 输出审核与 Constitutional Classifiers
-- [[19_Ethics_Safety/Agent_RAG_Security.md]] -- 幻觉驱动的工具调用风险
-- [[04_NLP_LLMs/Context_Engineering_Patterns.md]] -- 过度压缩导致关键约束丢失的反模式
-- [[13_Agent_Production/Agent_Harness/Harness_Core_Subsystems.md]] -- 模型集成与输出治理的幻觉检测机制
+- [[17_Ethics_Safety/LLM_Security_Complete_Guide.md]] -- 幻觉作为 LLM 核心技术特性的安全映射
+- [[17_Ethics_Safety/LLM_Security_Defense_Guide.md]] -- 输出审核与 Constitutional Classifiers
+- [[17_Ethics_Safety/Agent_RAG_Security.md]] -- 幻觉驱动的工具调用风险
+- [[05_NLP_LLMs/Context_Engineering_Patterns.md]] -- 过度压缩导致关键约束丢失的反模式
+- [[15_Agent_Production/Agent_Harness/Harness_Core_Subsystems.md]] -- 模型集成与输出治理的幻觉检测机制

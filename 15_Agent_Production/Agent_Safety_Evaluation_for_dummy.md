@@ -115,10 +115,10 @@ Agent 开发
 
 ## Related
 
-- [[concepts/tool-calling-safety|工具调用安全]]
-- [[concepts/agent-evaluation-benchmarks|Agent 评估基准]]
-- [[concepts/ai-agents|AI Agent]]
-- [[concepts/tool-calling|工具调用]]
-- [[concepts/red-teaming|红队测试]]
-- [[13_Agent_Production/16_Agent_Evaluation/README|Agent 评估]]
-- [[19_Ethics_Safety/LLM_Security_Defense_Guide|LLM 安全防御指南]]
+- [[_concepts/tool-calling-safety|工具调用安全]]
+- [[_concepts/agent-evaluation-benchmarks|Agent 评估基准]]
+- [[_concepts/ai-agents|AI Agent]]
+- [[_concepts/tool-calling|工具调用]]
+- [[_concepts/red-teaming|红队测试]]
+- [[15_Agent_Production/Agent_Evaluation/README|Agent 评估]]
+- [[17_Ethics_Safety/LLM_Security_Defense_Guide|LLM 安全防御指南]]

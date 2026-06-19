@@ -99,7 +99,7 @@ metadata:
 
 ### 2.2 版本迁移指南
 
-当发布 MAJOR 版本时，需在 `references/` 中保留迁移说明：
+当发布 MAJOR 版本时，需在 `_references/` 中保留迁移说明：
 
 ```markdown
 # Migration Guide: v1 → v2
@@ -153,7 +153,7 @@ metadata:
 ```markdown
 > ⚠️ **Deprecated**: This skill is deprecated as of v1.5.0.
 > Please migrate to `new-csv-analyzer` (v2.0+).
-> See [Migration Guide](references/migration-v1-to-v2.md).
+> See [Migration Guide](_references/migration-v1-to-v2.md).
 ```
 
 ---
@@ -308,7 +308,7 @@ git push origin "csv-analyzer-v1.2.0"
 
 ## Related
 
-- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
-- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
-- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
-- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)
+- [[15_Agent_Production/Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
+- [[15_Agent_Production/Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[15_Agent_Production/Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[15_Agent_Production/Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)

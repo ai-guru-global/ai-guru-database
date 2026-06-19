@@ -4,15 +4,15 @@ category: concepts
 tags: ["deep-learning", "ssm", "mamba", "state-space", "linear-complexity", "sequence-models"]
 aliases: [SSM, State Space Model, Mamba, 状态空间, 线性复杂度序列模型]
 relationships:
-  - target: "[[concepts/transformer-architecture]]"
+  - target: "[[_concepts/transformer-architecture]]"
     type: related_to
-  - target: "concepts/neural-networks"
+  - target: "_concepts/neural-networks"
     type: related_to
-  - target: "concepts/optimization-regularization"
+  - target: "_concepts/optimization-regularization"
     type: related_to
-  - target: "concepts/mamba"
+  - target: "_concepts/mamba"
     type: exemplified_by
-  - target: "concepts/retnet"
+  - target: "_concepts/retnet"
     type: related_to
 sources:
   - 03_Deep_Learning/State_Space_Models_2026.md
@@ -148,8 +148,8 @@ SSM 的训练与 传统神经网络 有所不同：
 
 ## Related
 
-- [[concepts/mamba]] — Mamba
-- [[concepts/retnet]] — RetNet
-- [[concepts/transformer-architecture]] — Transformer 架构
-- [[concepts/long-context-models]] — 长上下文模型
+- [[_concepts/mamba]] — Mamba
+- [[_concepts/retnet]] — RetNet
+- [[_concepts/transformer-architecture]] — Transformer 架构
+- [[_concepts/long-context-models]] — 长上下文模型
 - [[03_Deep_Learning/State_Space_Models_2026]] — 状态空间模型 2026

@@ -339,13 +339,13 @@ LLM 的输出具有随机性。相同的提示在不同时间运行可能产生�
 ## 扩展阅读
 
 - [[90_Learn/courses/microsoft/microsoft_genai_for_beginners]] — 课程总览与章节映射
-- [[04_NLP_LLMs/GenAI_L02_Exploring_and_Comparing_LLMs]] — 第 2 课：探索和比较不同的 LLM
-- [[04_NLP_LLMs/LLM_Architectures/LLM_Architectures]] — LLM 架构详解
+- [[05_NLP_LLMs/GenAI_L02_Exploring_and_Comparing_LLMs]] — 第 2 课：探索和比较不同的 LLM
+- [[05_NLP_LLMs/LLM_Architectures/LLM_Architectures]] — LLM 架构详解
 - [[00_AI_Introduction/AI_Fundamentals]] — AI 基础概念
-- [[04_NLP_LLMs/Transformer_Revolution/Transformer_Revolution]] — Transformer 技术革命
+- [[05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution]] — Transformer 技术革命
 
 ## 课程导航
 
 | 上一课 | 下一课 |
 |--------|--------|
-| [[01_Fundamentals/GenAI_L00_Course_Setup|L00 课程设置]] | [[04_NLP_LLMs/GenAI_L02_Exploring_and_Comparing_LLMs|L02 探索和比较 LLM]] |
+| [[01_Fundamentals/GenAI_L00_Course_Setup|L00 课程设置]] | [[05_NLP_LLMs/GenAI_L02_Exploring_and_Comparing_LLMs|L02 探索和比较 LLM]] |

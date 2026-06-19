@@ -139,6 +139,6 @@ updated: "2026-06-16"
 - [[12_Architecture_Infrastructure/AI_Stack_Training_Launchers_Guide|AI Stack 训练启动器指南]]
 - [[12_Architecture_Infrastructure/AI_Stack_K8s_Operations_Guide|AI Stack K8s 编排指南]]
 - [[12_Architecture_Infrastructure/AI_Stack_Exclusive_Tools_Guide|AI Stack 专属运维工具指南]]
-- [[09_Deployment_Inference/LLM_Inference_Engine_Selection_Guide|LLM 推理引擎选型指南]]
+- [[10_Deployment_Inference/LLM_Inference_Engine_Selection_Guide|LLM 推理引擎选型指南]]
 - [[07_Model_Training/Distributed_Training_2026|分布式训练 2026]]
-- [[16_AI_Ops/AI_Ops_2026|AI Ops 2026: 智能运维体系与实践]]
+- [[13_AI_Ops/AI_Ops_2026|AI Ops 2026: 智能运维体系与实践]]

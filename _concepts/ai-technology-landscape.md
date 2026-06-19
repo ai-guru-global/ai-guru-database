@@ -4,13 +4,13 @@ category: concepts
 tags: [ai, 技术栈, 机器学习, 深度学习, 大语言模型, 计算机视觉, 基础设施]
 aliases: [AI技术栈, AI Technology Landscape, 技术全景]
 relationships:
-  - target: "[[concepts/ai-fundamentals]]"
+  - target: "[[_concepts/ai-fundamentals]]"
     type: related_to
-  - target: "concepts/ai-history"
+  - target: "_concepts/ai-history"
     type: related_to
-  - target: "concepts/ai-future-trends"
+  - target: "_concepts/ai-future-trends"
     type: related_to
-  - target: "concepts/ai-ethics"
+  - target: "_concepts/ai-ethics"
     type: related_to
 sources: [00_AI_Introduction/AI_Technology_Landscape.md]
 summary: AI技术生态是一个从基础设施到应用的完整技术栈，涵盖机器学习算法、深度学习架构、大语言模型、计算机视觉及前沿智能体技术。
@@ -163,9 +163,9 @@ AI Agent核心技术栈：
 
 ## 来源
 
-- references/00_AI_Introduction/AI_Technology_Landscape
+- _references/00_AI_Introduction/AI_Technology_Landscape
 
 ## Related
 
-- [[concepts/ai-fundamentals]] — AI基础概念 (共享: ai, 机器学习, 深度学习)
-- [[concepts/ai-history]] — AI历史 (共享: ai, 深度学习)
+- [[_concepts/ai-fundamentals]] — AI基础概念 (共享: ai, 机器学习, 深度学习)
+- [[_concepts/ai-history]] — AI历史 (共享: ai, 深度学习)

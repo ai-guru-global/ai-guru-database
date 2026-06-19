@@ -329,8 +329,8 @@ opencompass --summarize ./outputs
 
 ## Related
 
-- [[concepts/opencompass]] — OpenCompass 概念卡片
-- [[concepts/lm-evaluation-harness]] — LM Evaluation Harness
-- [[concepts/model-evaluation]] — 模型评估
+- [[_concepts/opencompass]] — OpenCompass 概念卡片
+- [[_concepts/lm-evaluation-harness]] — LM Evaluation Harness
+- [[_concepts/model-evaluation]] — 模型评估
 - [[08_Model_Evaluation/LM_Evaluation_Harness_Deep_Dive]] — LM Evaluation Harness 深度解析
 - [[08_Model_Evaluation/LLM_Benchmark_Suite_2026]] — LLM 基准套件 2026

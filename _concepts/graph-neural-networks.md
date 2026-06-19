@@ -3,11 +3,11 @@ title: "图神经网络 (Graph Neural Networks)"
 category: concept
 tags: ["deep-learning", "GNN", "graph-neural-networks", "GCN", "GAT", "message-passing", "molecular"]
 relationships:
-  - target: "concepts/neural-networks"
+  - target: "_concepts/neural-networks"
     type: builds_on
-  - target: "concepts/transformer-architecture"
+  - target: "_concepts/transformer-architecture"
     type: related_to
-  - target: "concepts/ai-for-science"
+  - target: "_concepts/ai-for-science"
     type: enables
 sources:
   - 03_Deep_Learning/Graph_Neural_Networks
@@ -141,6 +141,6 @@ Weisfeiler-Lehman (WL) 图同构测试是 GNN 表达能力的理论上限：
 ## Related
 
 - [[03_Deep_Learning/Graph_Neural_Networks]] — 图神经网络深度解析
-- [[concepts/neural-networks]] — 神经网络基础
-- [[concepts/transformer-architecture]] — Transformer（Graph Transformer 基础）
-- [[concepts/ai-for-science]] — AI for Science（GNN 在分子/材料中的核心应用）
+- [[_concepts/neural-networks]] — 神经网络基础
+- [[_concepts/transformer-architecture]] — Transformer（Graph Transformer 基础）
+- [[_concepts/ai-for-science]] — AI for Science（GNN 在分子/材料中的核心应用）

@@ -3,16 +3,16 @@ title: "Kyverno"
 category: concept
 tags: ["kyverno", "kubernetes", "policy", "security", "admission-control", "yaml", "cncf"]
 relationships:
-  - target: "concepts/policy-as-code"
+  - target: "_concepts/policy-as-code"
     type: implements
-  - target: "concepts/kubernetes"
+  - target: "_concepts/kubernetes"
     type: extends
-  - target: "concepts/opa"
+  - target: "_concepts/opa"
     type: related_to
-  - target: "concepts/falco"
+  - target: "_concepts/falco"
     type: related_to
 sources:
-  - 19_Ethics_Safety/LLM_Security_Complete_Guide.md
+  - 17_Ethics_Safety/LLM_Security_Complete_Guide.md
 summary: "Kyverno 是专为 Kubernetes 设计的策略引擎，使用原生 YAML 定义策略，无需学习新语言，广泛应用于 K8s 安全基线、资源合规和最佳实践强制。"
 provenance:
   extracted: 0.75
@@ -86,8 +86,8 @@ updated: 2026-06-16
 
 ## Related
 
-- [[concepts/policy-as-code]] — 策略即代码
-- [[concepts/opa]] — OPA
-- [[concepts/falco]] — Falco
-- [[concepts/kubernetes]] — Kubernetes
-- [[19_Ethics_Safety/LLM_Security_Complete_Guide]] — LLM 安全完整指南
+- [[_concepts/policy-as-code]] — 策略即代码
+- [[_concepts/opa]] — OPA
+- [[_concepts/falco]] — Falco
+- [[_concepts/kubernetes]] — Kubernetes
+- [[17_Ethics_Safety/LLM_Security_Complete_Guide]] — LLM 安全完整指南

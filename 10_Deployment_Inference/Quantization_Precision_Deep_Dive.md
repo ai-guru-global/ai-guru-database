@@ -532,9 +532,9 @@ Step 3: 人工抽样验证（1-2 小时）
 ### 相关文档
 
 - [[Quantization_Techniques_2026]] — 量化技术全景（方法实现细节）
-- [[concepts/model-precision]] — 模型精度概念卡片（概览）
-- [[concepts/mixed-precision]] — 混合精度训练与推理
-- [[concepts/model-compression]] — 模型压缩（量化/剪枝/蒸馏）
-- [[concepts/kv-cache]] — KV Cache 优化
+- [[_concepts/model-precision]] — 模型精度概念卡片（概览）
+- [[_concepts/mixed-precision]] — 混合精度训练与推理
+- [[_concepts/model-compression]] — 模型压缩（量化/剪枝/蒸馏）
+- [[_concepts/kv-cache]] — KV Cache 优化
 - [[vLLM_Deep_Dive]] — vLLM 中的量化配置
 - [[llama_cpp_Deep_Dive]] — llama.cpp GGUF 量化详解

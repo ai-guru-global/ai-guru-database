@@ -145,7 +145,7 @@ AI 翻译 "Hello" → "你好" ✓
 
 - 想深入技术？→ 查看子目录具体文档
 - 想学模型评估？→ [08_Model_Evaluation/README_for_dummy.md](../08_Model_Evaluation/README_for_dummy.md)
-- 想学 MLOps？→ [10_MLOps_Pipeline/README_for_dummy.md](../10_MLOps_Pipeline/README_for_dummy.md)
+- 想学 MLOps？→ [11_MLOps_Pipeline/README_for_dummy.md](../11_MLOps_Pipeline/README_for_dummy.md)
 
 ---
 
@@ -153,8 +153,8 @@ AI 翻译 "Hello" → "你好" ✓
 
 ## Related
 
-- [[15_Testing/AI-Testing-in-nutshell.md|AI-Testing-in-nutshell]]
-- [[15_Testing/AI_Testing_for_dummy.md|AI_Testing_for_dummy]]
-- [[15_Testing/Java_AI_Testing.md|Java_AI_Testing]]
-- [[15_Testing/README.md|15_Testing README]]
-- [[13_Agent_Production/16_Agent_Evaluation/Testing_Methodologies/Testing_Framework.md|Testing_Framework]]
+- [[09_Testing/AI-Testing-in-nutshell.md|AI-Testing-in-nutshell]]
+- [[09_Testing/AI_Testing_for_dummy.md|AI_Testing_for_dummy]]
+- [[09_Testing/Java_AI_Testing.md|Java_AI_Testing]]
+- [[09_Testing/README.md|09_Testing README]]
+- [[15_Agent_Production/Agent_Evaluation/Testing_Methodologies/Testing_Framework.md|Testing_Framework]]

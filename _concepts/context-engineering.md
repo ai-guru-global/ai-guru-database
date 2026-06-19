@@ -69,7 +69,7 @@ Anthropic 在其工程博客（2025-09-29）明确把上下文工程定义为"�
 
 ## 深入阅读
 
-- [[04_NLP_LLMs/Context_Engineering_Guide.md]] -- 上下文工程完整指南：定义、演进、四大策略、生产实践
-- [[04_NLP_LLMs/Context_Engineering_Patterns.md]] -- 技术深度：记忆架构、RAG 集成、压缩策略、反模式
-- [[13_Agent_Production/Agent_Foundations/Agentic_AI_Complete_Guide.md]] -- 智能体上下文管理的四大模式
-- [[13_Agent_Production/Agent_Harness/Harness_Core_Subsystems.md]] -- Harness 中的上下文组装引擎与缓存策略
+- [[05_NLP_LLMs/Context_Engineering_Guide.md]] -- 上下文工程完整指南：定义、演进、四大策略、生产实践
+- [[05_NLP_LLMs/Context_Engineering_Patterns.md]] -- 技术深度：记忆架构、RAG 集成、压缩策略、反模式
+- [[15_Agent_Production/Agent_Foundations/Agentic_AI_Complete_Guide.md]] -- 智能体上下文管理的四大模式
+- [[15_Agent_Production/Agent_Harness/Harness_Core_Subsystems.md]] -- Harness 中的上下文组装引擎与缓存策略

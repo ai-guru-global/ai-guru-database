@@ -3,20 +3,20 @@ title: "HAMi (Heterogeneous AI Computing Virtualization Middleware)"
 category: concept
 tags: ["hami", "gpu-virtualization", "heterogeneous-computing", "cncf", "kubernetes", "gpu-sharing", "vgpu", "scheduling"]
 relationships:
-  - target: "concepts/gpu-virtualization"
+  - target: "_concepts/gpu-virtualization"
     type: extends
-  - target: "concepts/heterogeneous-gpu"
+  - target: "_concepts/heterogeneous-gpu"
     type: enables
-  - target: "concepts/cdi"
+  - target: "_concepts/cdi"
     type: related_to
-  - target: "concepts/dra"
+  - target: "_concepts/dra"
     type: related_to
-  - target: "concepts/gpu-operator"
+  - target: "_concepts/gpu-operator"
     type: related_to
 sources:
   - 12_Architecture_Infrastructure/HAMi_Deep_Dive.md
   - 12_Architecture_Infrastructure/HAMi_Operation_Guide.md
-  - 16_AI_Ops/HAMi_Troubleshooting_Guide.md
+  - 13_AI_Ops/HAMi_Troubleshooting_Guide.md
 summary: "HAMi 是 CNCF Sandbox 级异构 AI 算力虚拟化中间件，前身 k8s-vGPU-scheduler，可在 Kubernetes 上共享和隔离 GPU/NPU/MLU 等加速器，实现细粒度切分、显存硬隔离、拓扑感知调度与多厂商统一纳管。"
 provenance:
   extracted: 0.75
@@ -130,11 +130,11 @@ Pod 提交
 
 ## Related
 
-- [[concepts/gpu-virtualization]] — GPU 虚拟化技术全景
-- [[concepts/heterogeneous-gpu]] — 异构 GPU 集群
-- [[concepts/cdi]] — CDI 容器设备接口
-- [[concepts/dra]] — DRA 动态资源分配
-- [[concepts/gpu-operator]] — NVIDIA GPU Operator
+- [[_concepts/gpu-virtualization]] — GPU 虚拟化技术全景
+- [[_concepts/heterogeneous-gpu]] — 异构 GPU 集群
+- [[_concepts/cdi]] — CDI 容器设备接口
+- [[_concepts/dra]] — DRA 动态资源分配
+- [[_concepts/gpu-operator]] — NVIDIA GPU Operator
 - [[12_Architecture_Infrastructure/HAMi_Deep_Dive]] — HAMi 深度解析
 - [[12_Architecture_Infrastructure/HAMi_Operation_Guide]] — HAMi 运维指南
-- [[16_AI_Ops/HAMi_Troubleshooting_Guide]] — HAMi 问题排查
+- [[13_AI_Ops/HAMi_Troubleshooting_Guide]] — HAMi 问题排查

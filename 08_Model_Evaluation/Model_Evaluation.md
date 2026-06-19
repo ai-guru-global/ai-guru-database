@@ -1116,7 +1116,7 @@ class TemperatureScaler(nn.Module):
 - **Equal Opportunity**: 不同群体的 TPR 是否相等
 - **工具**: AIF360 (IBM), Fairlearn (Microsoft)
 
-→ 详见 [价值对齐](../../19_Ethics_Safety/Value_Alignment/Value_Alignment.md)
+→ 详见 [价值对齐](../../17_Ethics_Safety/Value_Alignment/Value_Alignment.md)
 
 ### 7.5 常见陷阱
 
@@ -1385,11 +1385,11 @@ class LLMEvaluationPipeline:
 ### 进阶方向
 - [自动化评估](./Evaluation_Automation_2026.md) — CI/CD 中的评估自动化
 - [在线评估](./Online_Evaluation.md) — 上线后的真实效果评估
-- [MLOps Pipeline](../10_MLOps_Pipeline/MLOps_Pipeline.md) — 评估自动化和持续监控
-- [价值对齐](../../19_Ethics_Safety/Value_Alignment/Value_Alignment.md) — 公平性评估
-- [AI 测试框架](../15_Testing/README.md) — 系统化的 AI 测试方法
+- [MLOps Pipeline](../11_MLOps_Pipeline/MLOps_Pipeline.md) — 评估自动化和持续监控
+- [价值对齐](../../17_Ethics_Safety/Value_Alignment/Value_Alignment.md) — 公平性评估
+- [AI 测试框架](../09_Testing/README.md) — 系统化的 AI 测试方法
 - [特征工程](../../02_Machine_Learning/Feature_Engineering/Feature_Engineering.md) — 评估指导特征改进
-- [AI Ops 监控](../16_AI_Ops/AI_Ops_2026.md) — 生产环境模型监控
+- [AI Ops 监控](../13_AI_Ops/AI_Ops_2026.md) — 生产环境模型监控
 
 ---
 
@@ -1459,6 +1459,6 @@ class LLMEvaluationPipeline:
 - [[08_Model_Evaluation/README]] — 模型评估 (Model Evaluation) (共享: ab-testing, benchmark, metrics, model-evaluation)
 - [[08_Model_Evaluation/Evaluation-in-nutshell.md|Evaluation-in-nutshell]]
 - [[08_Model_Evaluation/Model_Evaluation_for_dummy.md|Model_Evaluation_for_dummy]]
-- [[19_Ethics_Safety/Safety_Evaluation_Framework|AI 安全评测框架]] — 安全评测基准与红队测试方法论
-- [[synthesis/safety-evaluation-red-teaming|安全评测 × 红队]] — 模型评估与安全
-- [[synthesis/agent-evaluation-model-evaluation|Agent 评估 × 模型评估]] — 从指标到行为的评估范式迁移
+- [[17_Ethics_Safety/Safety_Evaluation_Framework|AI 安全评测框架]] — 安全评测基准与红队测试方法论
+- [[_synthesis/safety-evaluation-red-teaming|安全评测 × 红队]] — 模型评估与安全
+- [[_synthesis/agent-evaluation-model-evaluation|Agent 评估 × 模型评估]] — 从指标到行为的评估范式迁移

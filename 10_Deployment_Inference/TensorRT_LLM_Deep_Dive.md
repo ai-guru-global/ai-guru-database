@@ -624,12 +624,12 @@ trtllm-build \
 
 ## Related
 
-- [[09_Deployment_Inference/Deployment_Inference.md|Deployment_Inference]]
-- [[09_Deployment_Inference/Deployment_Inference_2026.md|Deployment_Inference_2026]]
-- [[09_Deployment_Inference/Deployment_Inference_for_dummy.md|Deployment_Inference_for_dummy]]
-- [[09_Deployment_Inference/Inference-in-nutshell.md|Inference-in-nutshell]]
-- [[09_Deployment_Inference/vLLM_Deep_Dive.md|vLLM_Deep_Dive]]
-- [[09_Deployment_Inference/SGLang_Deep_Dive.md|SGLang_Deep_Dive]]
-- [[09_Deployment_Inference/TGI_Deep_Dive.md|TGI_Deep_Dive]]
-- [[09_Deployment_Inference/LMDeploy_Deep_Dive.md|LMDeploy_Deep_Dive]]
+- [[10_Deployment_Inference/Deployment_Inference.md|Deployment_Inference]]
+- [[10_Deployment_Inference/Deployment_Inference_2026.md|Deployment_Inference_2026]]
+- [[10_Deployment_Inference/Deployment_Inference_for_dummy.md|Deployment_Inference_for_dummy]]
+- [[10_Deployment_Inference/Inference-in-nutshell.md|Inference-in-nutshell]]
+- [[10_Deployment_Inference/vLLM_Deep_Dive.md|vLLM_Deep_Dive]]
+- [[10_Deployment_Inference/SGLang_Deep_Dive.md|SGLang_Deep_Dive]]
+- [[10_Deployment_Inference/TGI_Deep_Dive.md|TGI_Deep_Dive]]
+- [[10_Deployment_Inference/LMDeploy_Deep_Dive.md|LMDeploy_Deep_Dive]]
 - [[12_Architecture_Infrastructure/CDI_Deep_Dive.md|CDI 容器设备接口（GPU 容器接入）]]

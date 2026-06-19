@@ -10,15 +10,15 @@ tags:
 - scheduling
 - cdi
 relationships:
-- target: 'concepts/cdi'
+- target: '_concepts/cdi'
   type: pairs_with
-- target: 'concepts/gpu-virtualization'
+- target: '_concepts/gpu-virtualization'
   type: supersedes_allocation
-- target: 'concepts/heterogeneous-gpu'
+- target: '_concepts/heterogeneous-gpu'
   type: enables
-- target: 'concepts/llm-infrastructure'
+- target: '_concepts/llm-infrastructure'
   type: enables
-- target: 'concepts/model-deployment'
+- target: '_concepts/model-deployment'
   type: enables
 sources:
 - 12_Architecture_Infrastructure/DRA_Deep_Dive.md
@@ -43,7 +43,7 @@ updated: 2026-06-15 00:00:00+00:00
 - **DRA** 是 Kubernetes 设备分配的新一代机制（KEP-3063），解决传统 Device Plugin 的根本局限
 - 成熟度：**1.26 alpha（2022）→ 1.32 beta（2024，含结构化参数）→ 预计 1.34 GA**
 - 核心抽象：第三方 **DRA 驱动**（DaemonSet）通过自定义资源声明、协调、分配设备
-- 与 [[concepts/cdi|CDI]] 是**配对关系**：DRA 负责分配层决策，CDI 负责注入层落地；DRA 驱动返回 CDI 设备 ID，运行时据此注入
+- 与 [[_concepts/cdi|CDI]] 是**配对关系**：DRA 负责分配层决策，CDI 负责注入层落地；DRA 驱动返回 CDI 设备 ID，运行时据此注入
 - 四大对象：`ResourceClass`（资源类）、`ResourceClaim`（资源申请）、`ResourceClaimTemplate`（Pod 级模板）、`PodSchedulingContext`（调度协调）
 
 ## 解决 Device Plugin 的什么痛点
@@ -115,9 +115,9 @@ DRA (分配层 - 新)
 ## 延伸阅读
 
 - [[12_Architecture_Infrastructure/DRA_Deep_Dive|DRA 深度解析]]
-- [[concepts/cdi|CDI 容器设备接口（配对概念）]]
+- [[_concepts/cdi|CDI 容器设备接口（配对概念）]]
 - [[12_Architecture_Infrastructure/CDI_Deep_Dive|CDI 深度解析]]
-- [[concepts/gpu-virtualization|GPU 虚拟化]]
-- [[concepts/heterogeneous-gpu|异构 GPU 集群]]
-- [[concepts/gpu-operator|NVIDIA GPU Operator]]
-- [[concepts/oci-runtime|OCI Runtime Spec]]
+- [[_concepts/gpu-virtualization|GPU 虚拟化]]
+- [[_concepts/heterogeneous-gpu|异构 GPU 集群]]
+- [[_concepts/gpu-operator|NVIDIA GPU Operator]]
+- [[_concepts/oci-runtime|OCI Runtime Spec]]

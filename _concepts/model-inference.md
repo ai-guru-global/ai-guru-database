@@ -3,20 +3,20 @@ title: 模型推理原理 (Model Inference)
 category: concepts
 tags: [inference, autoregressive, transformer, next-token-prediction, decoding]
 relationships:
-  - target: "concepts/model-deployment"
+  - target: "_concepts/model-deployment"
     type: informs
-  - target: "concepts/model-serving"
+  - target: "_concepts/model-serving"
     type: implemented_by
-  - target: "concepts/kv-cache"
+  - target: "_concepts/kv-cache"
     type: optimized_by
-  - target: "concepts/speculative-decoding"
+  - target: "_concepts/speculative-decoding"
     type: accelerated_by
-  - target: "concepts/model-compression"
+  - target: "_concepts/model-compression"
     type: optimized_by
 sources:
-  - 09_Deployment_Inference/README.md
-  - 04_NLP_LLMs/LLM_Fundamentals.md
-  - 04_NLP_LLMs/Transformer_Architecture.md
+  - 10_Deployment_Inference/README.md
+  - 05_NLP_LLMs/LLM_Fundamentals.md
+  - 05_NLP_LLMs/Transformer_Architecture.md
 summary: 模型推理的本质是自回归的"条件概率计算"——给定前文，预测下一个 token。整个过程分三步：token 编码（embedding）、前向传播（数十层 Transformer 的矩阵运算）、概率采样输出。GPU 擅长密集矩阵乘法，因此推理速度快。2026 年核心优化手段包括 KV Cache、量化、连续批处理、投机解码和 PagedAttention。
 provenance:
   extracted: 0.9
@@ -79,7 +79,7 @@ updated: 2026-06-15 00:00:00+00:00
 ...
 ```
 
-每个新 token 的生成都依赖之前所有 token，这就是"自回归"（autoregressive）的含义。序列越长，每步计算量越大——这正是 [[concepts/kv-cache|KV Cache]] 要解决的问题。
+每个新 token 的生成都依赖之前所有 token，这就是"自回归"（autoregressive）的含义。序列越长，每步计算量越大——这正是 [[_concepts/kv-cache|KV Cache]] 要解决的问题。
 
 ### Attention 机制的直觉
 
@@ -109,11 +109,11 @@ Attention 解决的是"指代消解"问题——当模型看到"它"时，需要
 
 | 优化技术 | 解决什么问题 | 效果 |
 |----------|------------|------|
-| [[concepts/kv-cache\|KV Cache]] | 避免每步重算已有 token 的注意力 | 将复杂度从 O(T²) 降至 O(T) |
-| [[concepts/paged-attention\|PagedAttention]] | KV Cache 显存碎片化浪费 | 显存利用率接近 100% |
-| [[concepts/speculative-decoding\|投机解码]] | 自回归逐 token 生成太慢 | 2-3× 延迟降低，输出分布不变 |
-| [[concepts/model-compression\|量化]] | FP16 参数太大，显存装不下 | INT4 量化后模型体积缩小 4× |
-| [[concepts/continuous-batching\|连续批处理]] | 单请求 GPU 利用率低 | 多请求动态拼批，吞吐提升数倍 |
+| [[_concepts/kv-cache\|KV Cache]] | 避免每步重算已有 token 的注意力 | 将复杂度从 O(T²) 降至 O(T) |
+| [[_concepts/paged-attention\|PagedAttention]] | KV Cache 显存碎片化浪费 | 显存利用率接近 100% |
+| [[_concepts/speculative-decoding\|投机解码]] | 自回归逐 token 生成太慢 | 2-3× 延迟降低，输出分布不变 |
+| [[_concepts/model-compression\|量化]] | FP16 参数太大，显存装不下 | INT4 量化后模型体积缩小 4× |
+| [[_concepts/continuous-batching\|连续批处理]] | 单请求 GPU 利用率低 | 多请求动态拼批，吞吐提升数倍 |
 
 ### Pre-fill vs Decode 两阶段
 
@@ -126,19 +126,19 @@ Attention 解决的是"指代消解"问题——当模型看到"它"时，需要
 延迟可控                           延迟决定用户体验 (TTFT vs TPOT)
 ```
 
-这一区分催生了 [[concepts/prefill-decode|Prefill-Decode 分离架构]]——用不同硬件配置分别优化两个阶段。
+这一区分催生了 [[_concepts/prefill-decode|Prefill-Decode 分离架构]]——用不同硬件配置分别优化两个阶段。
 
 ## 来源
 
 - Vaswani et al., "Attention Is All You Need," NeurIPS 2017
-- [[04_NLP_LLMs/LLM_Fundamentals]] — LLM 基础知识
-- [[04_NLP_LLMs/Transformer_Architecture]] — Transformer 架构详解
+- [[05_NLP_LLMs/LLM_Fundamentals]] — LLM 基础知识
+- [[05_NLP_LLMs/Transformer_Architecture]] — Transformer 架构详解
 
 ## Related
 
-- [[concepts/kv-cache]] — KV Cache 推理优化核心
-- [[concepts/model-deployment]] — 模型部署（推理的生产落地）
-- [[concepts/model-serving]] — 推理引擎选型（vLLM/SGLang/TensorRT-LLM）
-- [[concepts/speculative-decoding]] — 投机解码加速
-- [[concepts/prefill-decode]] — Prefill-Decode 分离架构
-- [[concepts/mixture-of-experts]] — MoE 稀疏激活降低推理计算量
+- [[_concepts/kv-cache]] — KV Cache 推理优化核心
+- [[_concepts/model-deployment]] — 模型部署（推理的生产落地）
+- [[_concepts/model-serving]] — 推理引擎选型（vLLM/SGLang/TensorRT-LLM）
+- [[_concepts/speculative-decoding]] — 投机解码加速
+- [[_concepts/prefill-decode]] — Prefill-Decode 分离架构
+- [[_concepts/mixture-of-experts]] — MoE 稀疏激活降低推理计算量

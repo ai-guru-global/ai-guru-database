@@ -35,5 +35,5 @@ CLI → GUI → Touch → Voice → Conversational AI → Agentic UI
 
 ## 相关阅读
 
-- [[13_Agent_Production/Agent_Workflow/Agentic_UI_UX_Design_2026]] — Agentic UI/UX 设计
-- [[13_Agent_Production/GenAI_L12_Designing_UX_for_AI_Applications]] — AI 应用 UX 设计
+- [[15_Agent_Production/Agent_Workflow/Agentic_UI_UX_Design_2026]] — Agentic UI/UX 设计
+- [[15_Agent_Production/GenAI_L12_Designing_UX_for_AI_Applications]] — AI 应用 UX 设计

@@ -98,8 +98,8 @@ HITL 设计原则：渐进式授权、可解释性、最小打扰、批量确认
 
 ## 深入阅读
 
-- [[19_Ethics_Safety/LLM_Security_Defense_Guide.md]] -- 纵深防御架构、I/O 防护与 Constitutional Classifiers
-- [[19_Ethics_Safety/LLM_Security_Complete_Guide.md]] -- OWASP LLM Top 10 与攻击技术全景
-- [[19_Ethics_Safety/Agent_RAG_Security.md]] -- 智能体安全设计原则、Rule of Two 与多智能体安全架构
-- [[13_Agent_Production/Agent_Harness/Harness_Engineering_Complete_Guide.md]] -- Harness 安全层与渐进信任原则
-- [[13_Agent_Production/Agent_Workflow/AgentOps_Production_Guide.md]] -- 护栏缺失的反模式与故障模式
+- [[17_Ethics_Safety/LLM_Security_Defense_Guide.md]] -- 纵深防御架构、I/O 防护与 Constitutional Classifiers
+- [[17_Ethics_Safety/LLM_Security_Complete_Guide.md]] -- OWASP LLM Top 10 与攻击技术全景
+- [[17_Ethics_Safety/Agent_RAG_Security.md]] -- 智能体安全设计原则、Rule of Two 与多智能体安全架构
+- [[15_Agent_Production/Agent_Harness/Harness_Engineering_Complete_Guide.md]] -- Harness 安全层与渐进信任原则
+- [[15_Agent_Production/Agent_Workflow/AgentOps_Production_Guide.md]] -- 护栏缺失的反模式与故障模式

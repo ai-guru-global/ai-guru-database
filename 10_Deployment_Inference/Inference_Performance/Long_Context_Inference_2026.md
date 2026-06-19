@@ -117,11 +117,11 @@ KV Cache ≈ seq_len × n_layers × 2(K+V) × d_model × bytes
 
 ## Related
 
-- [[concepts/long-context-models]] — 长上下文模型
-- [[concepts/kv-cache]] — KV Cache 优化
-- [[concepts/multi-head-latent-attention]] — MLA
-- [[concepts/prefix-caching]] — 前缀缓存
-- [[09_Deployment_Inference/Inference_Performance/README|推理性能专题]]
-- [[09_Deployment_Inference/Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]]
-- [[09_Deployment_Inference/Inference_Performance/Prefill_Decode_Disaggregation|Prefill-Decode 分离]]
-- [[09_Deployment_Inference/KV_Cache_Deep_Dive|KV Cache Deep Dive]]
+- [[_concepts/long-context-models]] — 长上下文模型
+- [[_concepts/kv-cache]] — KV Cache 优化
+- [[_concepts/multi-head-latent-attention]] — MLA
+- [[_concepts/prefix-caching]] — 前缀缓存
+- [[10_Deployment_Inference/Inference_Performance/README|推理性能专题]]
+- [[10_Deployment_Inference/Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]]
+- [[10_Deployment_Inference/Inference_Performance/Prefill_Decode_Disaggregation|Prefill-Decode 分离]]
+- [[10_Deployment_Inference/KV_Cache_Deep_Dive|KV Cache Deep Dive]]

@@ -210,7 +210,7 @@ curl -L -o ai-guru.zip https://github.com/your-org/ai-guru-knowledge-base/archiv
 
 ⏱️ 8-10 小时
 
-[行业应用 →](./20_AI_Applications_Industry/)
+[行业应用 →](./18_AI_Applications_Industry/)
 
 </td>
 <td align="center" width="25%">
@@ -221,7 +221,7 @@ curl -L -o ai-guru.zip https://github.com/your-org/ai-guru-knowledge-base/archiv
 
 ⏱️ 自主学习
 
-[必读论文 →](./22_Papers/)
+[必读论文 →](./20_Papers/)
 
 </td>
 </tr>
@@ -285,12 +285,12 @@ graph LR
 
 | 文档 | 内容 |
 |------|------|
-| ⭐ [LLMOps 2026](./10_MLOps_Pipeline/LLMOps_2026.md) | 主线：传统 MLOps 失效的 7 大原因、三层架构、成熟度模型、事故复盘 |
-| [Prompt 工程化运维](./10_MLOps_Pipeline/Prompt_Engineering_Ops.md) | Prompt 即代码、版本化、A/B 测试、CI 门禁、DSPy 自动优化 |
-| [LLM 评估流水线](./10_MLOps_Pipeline/LLM_Evaluation_Pipeline.md) | LLM-as-Judge、人审闭环、Eval-Driven Development、评估陷阱 |
-| [RAG 流水线运维](./10_MLOps_Pipeline/RAG_Pipeline_Ops.md) | 四维可变性、Embedding 升级迁移、索引重建灰度 |
-| [LLM 成本与延迟 SLO](./10_MLOps_Pipeline/LLM_Cost_Latency_SLO.md) | 三层缓存、智能路由、Token 预算熔断、FinOps |
-| [LLM 可观测性](./10_MLOps_Pipeline/LLM_Observability.md) | 五层监控、Trace 分布式追踪、幻觉/毒性/PII 在线检测 |
+| ⭐ [LLMOps 2026](./11_MLOps_Pipeline/LLMOps_2026.md) | 主线：传统 MLOps 失效的 7 大原因、三层架构、成熟度模型、事故复盘 |
+| [Prompt 工程化运维](./11_MLOps_Pipeline/Prompt_Engineering_Ops.md) | Prompt 即代码、版本化、A/B 测试、CI 门禁、DSPy 自动优化 |
+| [LLM 评估流水线](./11_MLOps_Pipeline/LLM_Evaluation_Pipeline.md) | LLM-as-Judge、人审闭环、Eval-Driven Development、评估陷阱 |
+| [RAG 流水线运维](./11_MLOps_Pipeline/RAG_Pipeline_Ops.md) | 四维可变性、Embedding 升级迁移、索引重建灰度 |
+| [LLM 成本与延迟 SLO](./11_MLOps_Pipeline/LLM_Cost_Latency_SLO.md) | 三层缓存、智能路由、Token 预算熔断、FinOps |
+| [LLM 可观测性](./11_MLOps_Pipeline/LLM_Observability.md) | 五层监控、Trace 分布式追踪、幻觉/毒性/PII 在线检测 |
 
 > 加上横切关注点（数据版本/再训练/系统 SLO/成本/合规）与 16 个工具深度解析，10_MLOps_Pipeline 共 41 篇文档。
 
@@ -307,27 +307,27 @@ graph LR
 | **01** [基础理论](./01_Fundamentals/) | 数学与计算机：线代、概率、数据结构、分布式、AI 硬件 2026 | ⭐⭐ |
 | **02** [经典机器学习](./02_Machine_Learning/) | ML 基础：监督/无监督学习、特征工程、XGBoost | ⭐⭐ |
 | **03** [深度学习](./03_Deep_Learning/) | 神经网络：MLP、反向传播、优化、世界模型 JEPA | ⭐⭐⭐ |
-| **04** [NLP 与大模型](./04_NLP_LLMs/) | LLM 技术：Transformer、GPT-5.2/Claude 4.5、LoRA/RLHF/DPO | ⭐⭐⭐⭐ |
-| **05** [计算机视觉](./05_Computer_Vision/) | 视觉 AI：CNN、YOLO、Diffusion、视频生成 2026 | ⭐⭐⭐ |
+| **04** [NLP 与大模型](./05_NLP_LLMs/) | LLM 技术：Transformer、GPT-5.2/Claude 4.5、LoRA/RLHF/DPO | ⭐⭐⭐⭐ |
+| **05** [计算机视觉](./04_Computer_Vision/) | 视觉 AI：CNN、YOLO、Diffusion、视频生成 2026 | ⭐⭐⭐ |
 | **06** [强化学习与智能体](./06_Reinforcement_Learning/) | RL 与 Agent：DQN/PPO、Tool Calling、VLA 具身智能 | ⭐⭐⭐⭐ |
 | **07** [模型训练](./07_Model_Training/) | 训练工程：损失函数、优化器、分布式训练 | ⭐⭐⭐ |
 | **08** [模型评估](./08_Model_Evaluation/) | 评估方法：指标体系、基准测试、A/B 测试 | ⭐⭐⭐ |
-| **09** [部署与推理](./09_Deployment_Inference/) | 推理优化：vLLM、量化、模型服务 | ⭐⭐⭐⭐ |
-| **10** [MLOps 流水线](./10_MLOps_Pipeline/) | **LLMOps 完整主线** + 传统 MLOps + 工具深度解析（41 篇） | ⭐⭐⭐⭐ |
-| **11** [RAG 系统](./11_RAG_Systems/) | 检索增强：向量数据库、混合检索、Agentic RAG、多模态检索 | ⭐⭐⭐ |
+| **09** [部署与推理](./10_Deployment_Inference/) | 推理优化：vLLM、量化、模型服务 | ⭐⭐⭐⭐ |
+| **10** [MLOps 流水线](./11_MLOps_Pipeline/) | **LLMOps 完整主线** + 传统 MLOps + 工具深度解析（41 篇） | ⭐⭐⭐⭐ |
+| **11** [RAG 系统](./14_RAG_Systems/) | 检索增强：向量数据库、混合检索、Agentic RAG、多模态检索 | ⭐⭐⭐ |
 | **12** [架构与基础设施](./12_Architecture_Infrastructure/) | 架构设计 + 基础设施：四层模型、多租户、高可用、容量规划、边缘 AI | ⭐⭐⭐⭐ |
-| **13** [Agent 生产部署](./13_Agent_Production/) | Agent 工程：框架、平台、Harness、技能、工作流、评估、OpenClaw 生态 | ⭐⭐⭐⭐ |
-| ↳ [Agent Skills](./13_Agent_Production/Agent_Skills/) | 技能体系：技能注册、组合、生态 | ⭐⭐⭐ |
-| ↳ [Agent Workflow](./13_Agent_Production/Agent_Workflow/) | 工作流：LangGraph、错误处理、编排 | ⭐⭐⭐ |
-| ↳ [Agent 评估](./13_Agent_Production/16_Agent_Evaluation/) | 评估体系：Benchmark、红队测试、Leaderboard | ⭐⭐⭐⭐ |
-| **15** [AI 测试](./15_Testing/) | 测试工程：测试框架（Ragas/DeepEval/Promptfoo）、契约测试 | ⭐⭐⭐ |
-| **16** [AI 运维](./16_AI_Ops/) | AIOps：事故响应、SRE 实践、混沌工程 | ⭐⭐⭐⭐ |
-| **17** [AI 编程](./17_AI_Coding/) | 编程工具与方法论：Cursor、Claude Code、Vibe Coding | ⭐⭐ |
-| **19** [伦理与安全](./19_Ethics_Safety/) | AI 安全：价值对齐、红队测试、隐私保护、OWASP LLM | ⭐⭐⭐ |
-| **20** [行业应用](./20_AI_Applications_Industry/) | 行业融合：医疗/金融/制造/零售核心应用 | ⭐⭐ |
-| **21** [业界观点](./21_Talks/) | 领袖洞见：21 位 AI 领袖演讲与观点 | ⭐⭐ |
-| **22** [必读论文](./22_Papers/) | 经典文献：Transformer、GPT、BERT 等里程碑 | ⭐⭐⭐⭐ |
-| **23** [面试与岗位](./23_Interviews/) | 职业发展：21 个 AI 岗位面试指南 | ⭐⭐ |
+| **13** [Agent 生产部署](./15_Agent_Production/) | Agent 工程：框架、平台、Harness、技能、工作流、评估、OpenClaw 生态 | ⭐⭐⭐⭐ |
+| ↳ [Agent Skills](./15_Agent_Production/Agent_Skills/) | 技能体系：技能注册、组合、生态 | ⭐⭐⭐ |
+| ↳ [Agent Workflow](./15_Agent_Production/Agent_Workflow/) | 工作流：LangGraph、错误处理、编排 | ⭐⭐⭐ |
+| ↳ [Agent 评估](./15_Agent_Production/Agent_Evaluation/) | 评估体系：Benchmark、红队测试、Leaderboard | ⭐⭐⭐⭐ |
+| **15** [AI 测试](./09_Testing/) | 测试工程：测试框架（Ragas/DeepEval/Promptfoo）、契约测试 | ⭐⭐⭐ |
+| **16** [AI 运维](./13_AI_Ops/) | AIOps：事故响应、SRE 实践、混沌工程 | ⭐⭐⭐⭐ |
+| **17** [AI 编程](./16_AI_Coding/) | 编程工具与方法论：Cursor、Claude Code、Vibe Coding | ⭐⭐ |
+| **19** [伦理与安全](./17_Ethics_Safety/) | AI 安全：价值对齐、红队测试、隐私保护、OWASP LLM | ⭐⭐⭐ |
+| **20** [行业应用](./18_AI_Applications_Industry/) | 行业融合：医疗/金融/制造/零售核心应用 | ⭐⭐ |
+| **21** [业界观点](./19_Talks/) | 领袖洞见：21 位 AI 领袖演讲与观点 | ⭐⭐ |
+| **22** [必读论文](./20_Papers/) | 经典文献：Transformer、GPT、BERT 等里程碑 | ⭐⭐⭐⭐ |
+| **23** [面试与岗位](./21_Interviews/) | 职业发展：21 个 AI 岗位面试指南 | ⭐⭐ |
 | **90** [学习资源](./90_Learn/) | 课程映射：微软/Datawhale/HuggingFace 等课程 | ⭐⭐ |
 | **91** [笔记](./91_Notes/) | 知识图谱：AI 全栈概念图 | ⭐⭐⭐ |
 
@@ -341,17 +341,17 @@ graph LR
 <tr>
 <td>
 
-- [中国大模型生态全景](./04_NLP_LLMs/Chinese_LLM_Ecosystem/README.md) - DeepSeek/Qwen/GLM/Kimi/MiniMax/MiMo 六大厂商
-- [国际大模型生态全景](./04_NLP_LLMs/Global_LLM_Ecosystem/README.md) - OpenAI/Google/Anthropic/Meta/Mistral 五大厂商
-- [LLMOps 2026](./10_MLOps_Pipeline/LLMOps_2026.md) - 大模型时代的 MLOps 升级（⭐ 独家主线）
+- [中国大模型生态全景](./05_NLP_LLMs/Chinese_LLM_Ecosystem/README.md) - DeepSeek/Qwen/GLM/Kimi/MiniMax/MiMo 六大厂商
+- [国际大模型生态全景](./05_NLP_LLMs/Global_LLM_Ecosystem/README.md) - OpenAI/Google/Anthropic/Meta/Mistral 五大厂商
+- [LLMOps 2026](./11_MLOps_Pipeline/LLMOps_2026.md) - 大模型时代的 MLOps 升级（⭐ 独家主线）
 - [模型问题排查手册](./07_Model_Training/Model_Troubleshooting_Guide.md) - 预训练/微调/推理全链路故障诊断
 - [LLM 基准测试全景](./08_Model_Evaluation/LLM_Benchmark_Suite_2026.md) - MMLU/SWE-bench/AIME/GPQA 全基准解读
-- [量化技术深度 2026](./09_Deployment_Inference/Quantization_Techniques_2026.md) - GPTQ/AWQ/GGUF/NF4/FP8
+- [量化技术深度 2026](./10_Deployment_Inference/Quantization_Techniques_2026.md) - GPTQ/AWQ/GGUF/NF4/FP8
 
 </td>
 <td>
 
-- [LLM 架构 2026](./04_NLP_LLMs/LLM_Architectures/LLM_Architectures.md) - GPT-5.2, Claude 4.5, 推理模型
+- [LLM 架构 2026](./05_NLP_LLMs/LLM_Architectures/LLM_Architectures.md) - GPT-5.2, Claude 4.5, 推理模型
 - [AI 硬件 2026](./01_Fundamentals/AI_Hardware/AI_Hardware_2026.md) - H100/H200/B200, GPU 选型
 - [Scaling Laws 与训练动力学](./07_Model_Training/Scaling_Laws_and_Training_Dynamics.md) - Chinchilla/Kaplan/涌现能力
 - [GRPO 与新对齐方法](./07_Model_Training/GRPO_and_New_Alignment_Methods.md) - GRPO/DPO/RLHF/RLOO
@@ -414,14 +414,14 @@ zip -r ai-guru-core.zip 00_AI_Introduction 04_NLP_LLMs 10_MLOps_Pipeline 13_Agen
 - ✅ **代码可执行**: 包含可运行的代码示例
 - ✅ **中英文对照**: 技术术语保留英文，便于理解原始概念
 - ✅ **Wiki 链接**: 6,900+ 内部 wikilink，形成知识图谱
-- ✅ **概念词典**: 114 篇 concepts/ 概念页 + 28 篇 synthesis/ 跨域合成页
+- ✅ **概念词典**: 114 篇 _concepts/ 概念页 + 28 篇 _synthesis/ 跨域合成页
 - ✅ **版本控制**: Git 历史记录，可追溯更新
 
 **建议的 Agent 使用方式**:
 1. 将整个仓库根目录作为知识库导入
-2. 使用文件路径作为上下文引用（如 `04_NLP_LLMs/LLM_Architectures/LLM_Architectures.md`）
+2. 使用文件路径作为上下文引用（如 `05_NLP_LLMs/LLM_Architectures/LLM_Architectures.md`）
 3. 结合章节 README 快速定位内容
-4. 利用 concepts/ 做概念查询，synthesis/ 做跨域关联
+4. 利用 _concepts/ 做概念查询，_synthesis/ 做跨域关联
 
 ---
 
@@ -516,6 +516,6 @@ git push origin feature/your-feature
 - [[index]] — 知识库索引
 - [[hot]] — 热门页面
 - [[92_Plan/MLOps_Section_Enhancement_Plan_2026]] — MLOps 章节加强计划
-- [[10_MLOps_Pipeline/Boundary_with_16]] — 10 与 16 边界声明
-- [[synthesis/README]] — 跨域综合文档索引
+- [[11_MLOps_Pipeline/Boundary_with_16]] — 10 与 16 边界声明
+- [[_synthesis/README]] — 跨域综合文档索引
 - [[00_AI_Introduction/AI_Fundamentals]] — 知识库入门索引

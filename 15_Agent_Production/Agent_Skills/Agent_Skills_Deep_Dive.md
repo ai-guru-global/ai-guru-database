@@ -103,7 +103,7 @@ flowchart TB
         ┌──────────────────────┐
         │  Tier 3: 按需加载   │
         │  scripts/extract.py  │
-        │  references/...      │
+        │  _references/...      │
         └──────────────────────┘
 ```
 
@@ -117,7 +117,7 @@ flowchart TB
 skill-name/
 ├── SKILL.md          # 必需：元数据 + 指令
 ├── scripts/          # 可选：可执行代码
-├── references/       # 可选：文档参考
+├── _references/       # 可选：文档参考
 ├── assets/           # 可选：模板、资源
 └── ...               # 任意额外文件或目录
 ```
@@ -264,7 +264,7 @@ Markdown body 包含 Skill 指令，没有格式限制。推荐章节：
 输出: ...
 ```
 
-> ⚠️ `SKILL.md` 建议保持在 **500 行以内**、**5000 tokens 以内**。将详细参考资料移至 `references/` 目录。
+> ⚠️ `SKILL.md` 建议保持在 **500 行以内**、**5000 tokens 以内**。将详细参考资料移至 `_references/` 目录。
 
 ### 3.4 可选目录详解
 
@@ -275,7 +275,7 @@ Markdown body 包含 Skill 指令，没有格式限制。推荐章节：
 - 包含有用的错误消息
 - 优雅处理边缘情况
 
-#### `references/` - 参考资料
+#### `_references/` - 参考资料
 
 包含 Agent 需要时可以读取的额外文档：
 - `REFERENCE.md` — 详细技术参考
@@ -291,7 +291,7 @@ Markdown body 包含 Skill 指令，没有格式限制。推荐章节：
 引用其他文件时，使用**从 Skill 根目录的相对路径**：
 
 ```markdown
-See [the reference guide](references/REFERENCE.md) for details.
+See [the reference guide](_references/REFERENCE.md) for details.
 
 Run the extraction script:
 `scripts/extract.py`
@@ -404,8 +404,8 @@ PDF (Portable Document Format) 文件是一种常见文件格式，包含文本�
 
 ```
 SKILL.md (< 500 行, < 5000 tokens)
-  → references/api-errors.md (只在 API 返回非 200 时加载)
-  → references/advanced-patterns.md (只在处理复杂场景时加载)
+  → _references/api-errors.md (只在 API 返回非 200 时加载)
+  → _references/advanced-patterns.md (只在处理复杂场景时加载)
 ```
 
 关键是告诉 Agent **何时**加载每个文件。
@@ -448,7 +448,7 @@ python scripts/migrate.py --verify --backup
 将 orders 表连接到 customers 表...
 
 <!-- 可复用方法 — 适用于任何分析查询 -->
-1. 从 references/schema.yaml 读取模式以找到相关表
+1. 从 _references/schema.yaml 读取模式以找到相关表
 2. 使用 _id 外键约定连接表
 3. 将用户请求的过滤器应用为 WHERE 子句
 4. 按需聚合数值列并格式化为 Markdown 表格
@@ -907,7 +907,7 @@ Relative paths in this skill are relative to the skill directory.
 <skill_resources>
   <file>scripts/extract.py</file>
   <file>scripts/merge.py</file>
-  <file>references/pdf-spec-summary.md</file>
+  <file>_references/pdf-spec-summary.md</file>
 </skill_resources>
 </skill_content>
 ```
@@ -1376,7 +1376,7 @@ skills-ref validate .agents/skills/my-skill
 
 ## Related
 
-- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
-- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
-- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
-- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)
+- [[15_Agent_Production/Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
+- [[15_Agent_Production/Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[15_Agent_Production/Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[15_Agent_Production/Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)

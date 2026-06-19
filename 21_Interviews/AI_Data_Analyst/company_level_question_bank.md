@@ -46,8 +46,8 @@ updated: 2026-05-31
 
 ## Related
 
-- [[23_Interviews/AI_Data_Analyst/interview_answers]] — AI Data Analyst 面试题实例答案 (共享: career, experience, interviews, practitioners)
-- [[23_Interviews/AI_Data_Analyst/interview_preparing]] — AI Data Analyst 面试准备 (共享: career, experience, interviews, practitioners)
-- [[23_Interviews/AI_Data_Analyst/question_bank]] — AI Data Analyst 题库 (共享: career, experience, interviews, practitioners)
-- [[23_Interviews/AI_Evaluation_Engineer/company_level_question_bank]] — AI Evaluation Engineer 按公司/级别区分的题库 (共享: career, experience, interviews, practitioners)
-- [[23_Interviews/jobs.md|jobs]]
+- [[21_Interviews/AI_Data_Analyst/interview_answers]] — AI Data Analyst 面试题实例答案 (共享: career, experience, interviews, practitioners)
+- [[21_Interviews/AI_Data_Analyst/interview_preparing]] — AI Data Analyst 面试准备 (共享: career, experience, interviews, practitioners)
+- [[21_Interviews/AI_Data_Analyst/question_bank]] — AI Data Analyst 题库 (共享: career, experience, interviews, practitioners)
+- [[21_Interviews/AI_Evaluation_Engineer/company_level_question_bank]] — AI Evaluation Engineer 按公司/级别区分的题库 (共享: career, experience, interviews, practitioners)
+- [[21_Interviews/jobs.md|jobs]]

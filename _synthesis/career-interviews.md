@@ -40,7 +40,7 @@ created: 2026-06-12
 
 ## Related
 
-- [[23_Interviews/README]]
-- [[concepts/ai-fundamentals]]
+- [[21_Interviews/README]]
+- [[_concepts/ai-fundamentals]]
 - [[00_AI_Introduction/AI_Learning_Resources]]
-- [[17_AI_Coding/AI_Coding_for_dummy]]
+- [[16_AI_Coding/AI_Coding_for_dummy]]

@@ -3,12 +3,12 @@ title: "LLM 数据工程 (LLM Data Engineering)"
 category: concept
 tags: ["nlp", "llm", "data-engineering", "pretraining-data", "sft-data", "synthetic-data"]
 relationships:
-  - target: "concepts/llm-architectures"
+  - target: "_concepts/llm-architectures"
     type: related_to
-  - target: "concepts/self-supervised-learning"
+  - target: "_concepts/self-supervised-learning"
     type: builds_on
 sources:
-  - 04_NLP_LLMs/LLM_Data_Engineering
+  - 05_NLP_LLMs/LLM_Data_Engineering
 summary: "LLM 数据工程覆盖预训练数据收集清洗(去重/过滤/配比)、SFT数据构建(人工标注/自我指令/蒸馏)、RLHF偏好数据和合成数据生成的全链路。"
 provenance:
   extracted: 0.45
@@ -256,8 +256,8 @@ GPT-4(教师) → 回答一批问题 → 用 GPT-4 的回答训练开源模型(�
 
 ## Related
 
-- [[04_NLP_LLMs/LLM_Data_Engineering]] — LLM 数据工程深度解析
-- [[concepts/llm-architectures]] — LLM 架构
-- [[concepts/self-supervised-learning]] — 自监督学习（预训练范式）
-- [[concepts/fine-tuning-techniques]] — 微调技术族
-- [[concepts/lora-peft]] — LoRA / PEFT 微调
+- [[05_NLP_LLMs/LLM_Data_Engineering]] — LLM 数据工程深度解析
+- [[_concepts/llm-architectures]] — LLM 架构
+- [[_concepts/self-supervised-learning]] — 自监督学习（预训练范式）
+- [[_concepts/fine-tuning-techniques]] — 微调技术族
+- [[_concepts/lora-peft]] — LoRA / PEFT 微调

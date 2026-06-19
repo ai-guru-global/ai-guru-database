@@ -3,17 +3,17 @@ title: "RetNet"
 category: concepts
 tags: ["retnet", "transformer-alternative", "long-context", "architecture", "rnnt"]
 relationships:
-  - target: "concepts/transformer-architecture"
+  - target: "_concepts/transformer-architecture"
     type: alternative_to
-  - target: "concepts/mamba"
+  - target: "_concepts/mamba"
     type: related_to
-  - target: "concepts/state-space-models"
+  - target: "_concepts/state-space-models"
     type: related_to
-  - target: "concepts/kv-cache"
+  - target: "_concepts/kv-cache"
     type: replaces
 sources:
   - 00_AI_Introduction/AI_New_Architectures.md
-  - 04_NLP_LLMs/LLM_Architecture_Evolution.md
+  - 05_NLP_LLMs/LLM_Architecture_Evolution.md
   - 03_Deep_Learning/State_Space_Models_2026.md
 summary: "RetNet 是微软提出的 Transformer 替代方案，用‘保留机制（Retention）’取代 Attention。它既能像 Transformer 一样并行训练，又能像 RNN 一样线性复杂度推理，并且完全不需要 KV Cache。"
 provenance:
@@ -95,9 +95,9 @@ RetNet 用一个衰减因子和位置编码，把历史信息压缩进一个状�
 
 ## Related
 
-- [[concepts/transformer-architecture]] — Transformer 架构
-- [[concepts/mamba]] — Mamba
-- [[concepts/state-space-models]] — 状态空间模型（SSM）
-- [[concepts/kv-cache]] — KV Cache
+- [[_concepts/transformer-architecture]] — Transformer 架构
+- [[_concepts/mamba]] — Mamba
+- [[_concepts/state-space-models]] — 状态空间模型（SSM）
+- [[_concepts/kv-cache]] — KV Cache
 - [[00_AI_Introduction/AI_New_Architectures]] — AI 新架构
 - [[03_Deep_Learning/State_Space_Models_2026]] — 状态空间模型 2026

@@ -2,7 +2,7 @@
 title: Transformer 架构 × LLM 架构
 category: synthesis
 tags: [nlp, transformer, llm, bert, gpt, attention, architecture]
-sources: [concepts/transformer-architecture.md, concepts/llm-architectures.md]
+sources: [_concepts/transformer-architecture.md, _concepts/llm-architectures.md]
 created: 2026-05-31T21:30:00+08:00
 updated: 2026-05-31T21:30:00+08:00
 summary: "从自注意力机制到Decoder-only范式：Transformer如何成为所有现代大语言模型的唯一基座，以及MoE、推理模型等架构演进如何在此之上生长。"
@@ -23,7 +23,7 @@ Transformer（2017）本是一个序列到序列的翻译模型，却意外成�
 
 ## Where They Co-occur
 
-- 几乎所有 [[concepts/llm-architectures]] 页面都会回溯到 [[concepts/transformer-architecture]] 的注意力公式
+- 几乎所有 [[_concepts/llm-architectures]] 页面都会回溯到 [[_concepts/transformer-architecture]] 的注意力公式
 - 混合专家（MoE）模型（如 Mixtral、DeepSeek-V3）在 Transformer Block 内部做稀疏化，而非推翻它
 - 推理模型（o1/o3/DeepSeek-R1）的"长思维链"能力，本质上是 Transformer 自回归生成在测试时的计算扩展
 
@@ -35,7 +35,7 @@ Transformer（2017）本是一个序列到序列的翻译模型，却意外成�
 
 ## Tensions and Trade-offs
 
-- **效率 vs 表达能力**：Transformer 的 O(n²) 注意力是长文本的瓶颈，催生了 [[concepts/state-space-models]]（Mamba）等替代架构，但尚未动摇其统治地位
+- **效率 vs 表达能力**：Transformer 的 O(n²) 注意力是长文本的瓶颈，催生了 [[_concepts/state-space-models]]（Mamba）等替代架构，但尚未动摇其统治地位
 - **统一架构 vs 专用优化**：视觉 Transformer（ViT）试图将图像 patches 当作 tokens 处理，但 CNN 在边缘设备上仍更高效
 - **推理成本**：Transformer 的 KV Cache 内存随序列长度线性增长，是模型服务中的首要优化目标
 
@@ -47,7 +47,7 @@ Transformer（2017）本是一个序列到序列的翻译模型，却意外成�
 
 ## Related
 
-- [[04_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/README]] — PEFT 2026 (参数高效微调) (共享: bert, gpt, llm, nlp, transformer)
-- [[04_NLP_LLMs/Fine_tuning_Techniques/README]] — 微调技术 (Fine-tuning Techniques) (共享: bert, gpt, llm, nlp, transformer)
-- [[04_NLP_LLMs/LLM_Architectures/LLM-Basics-in-nutshell]] — 大语言模型基础速成指南 (共享: bert, gpt, llm, nlp, transformer)
-- [[04_NLP_LLMs/Multimodal_Models/Multimodal_Architectures_2026]] — 多模态模型架构 2026：从 GPT-4V 到原生多模态 AGI (共享: bert, gpt, llm, nlp, transformer)
+- [[05_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/README]] — PEFT 2026 (参数高效微调) (共享: bert, gpt, llm, nlp, transformer)
+- [[05_NLP_LLMs/Fine_tuning_Techniques/README]] — 微调技术 (Fine-tuning Techniques) (共享: bert, gpt, llm, nlp, transformer)
+- [[05_NLP_LLMs/LLM_Architectures/LLM-Basics-in-nutshell]] — 大语言模型基础速成指南 (共享: bert, gpt, llm, nlp, transformer)
+- [[05_NLP_LLMs/Multimodal_Models/Multimodal_Architectures_2026]] — 多模态模型架构 2026：从 GPT-4V 到原生多模态 AGI (共享: bert, gpt, llm, nlp, transformer)

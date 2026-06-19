@@ -48,8 +48,8 @@ CV 领域的一个深层规律是**架构统一化趋势**：
 
 ## Related
 
-- [[05_Computer_Vision/README]]
-- [[concepts/computer-vision]]
-- [[concepts/neural-networks]]
+- [[04_Computer_Vision/README]]
+- [[_concepts/computer-vision]]
+- [[_concepts/neural-networks]]
 - [[03_Deep_Learning/Neural_Network_Core/Neural_Network_Core]]
-- [[22_Papers/ResNet_Deep_Dive]]
+- [[20_Papers/ResNet_Deep_Dive]]

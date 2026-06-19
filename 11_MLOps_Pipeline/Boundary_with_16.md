@@ -17,7 +17,7 @@ type: governance
 
 ## 一、为什么需要这份声明
 
-2026-06-15 诊断发现：`16_AI_Ops/` 有 16 个工具深度解析与 `10_MLOps_Pipeline/` 主题重叠。为消除重复、建立权威源（SSOT），明确划分两章职责。
+2026-06-15 诊断发现：`13_AI_Ops/` 有 16 个工具深度解析与 `11_MLOps_Pipeline/` 主题重叠。为消除重复、建立权威源（SSOT），明确划分两章职责。
 
 **2026-06-15 迁移已完成**：工具深度解析（DVC/Feast/MLflow/Kubeflow/LangSmith/Helicone/Phoenix/Braintrust/ClearML/Prefect/LakeFS + 3 篇 Observability + CI_CD_Pipeline + LLM_Production_Pipeline）已从 16 迁入 10。
 
@@ -80,12 +80,12 @@ graph TB
 
 | 主题 | 权威页 |
 |------|--------|
-| **AI 运维总览** | [[16_AI_Ops/AI_Ops_2026]] |
-| **事故响应** | [[16_AI_Ops/AI_Incident_Response_Playbook]]、[[16_AI_Ops/Incident_Response_for_AI_Systems]] |
-| **SRE 实践** | [[16_AI_Ops/SRE_for_AI_Systems]] |
-| **混沌工程** | [[16_AI_Ops/Chaos_Engineering_AI]] |
-| **安全护栏（工具）** | [[16_AI_Ops/Guardrails_Deep_Dive]]（未迁移，留 16） |
-| **Prompt 管理（工具）** | [[16_AI_Ops/PromptLayer_Deep_Dive]]（未迁移，留 16） |
+| **AI 运维总览** | [[13_AI_Ops/AI_Ops_2026]] |
+| **事故响应** | [[13_AI_Ops/AI_Incident_Response_Playbook]]、[[13_AI_Ops/Incident_Response_for_AI_Systems]] |
+| **SRE 实践** | [[13_AI_Ops/SRE_for_AI_Systems]] |
+| **混沌工程** | [[13_AI_Ops/Chaos_Engineering_AI]] |
+| **安全护栏（工具）** | [[13_AI_Ops/Guardrails_Deep_Dive]]（未迁移，留 16） |
+| **Prompt 管理（工具）** | [[13_AI_Ops/PromptLayer_Deep_Dive]]（未迁移，留 16） |
 
 ### 3.3 独占主题
 
@@ -113,7 +113,7 @@ graph TB
 ### 4.3 运维页（16）怎么写
 
 - 聚焦线上运营、应急响应
-- 引用 10 的概念作为背景：「模型监控门禁设计见 [[10_MLOps_Pipeline/ML_Observability_SLO]]」
+- 引用 10 的概念作为背景：「模型监控门禁设计见 [[11_MLOps_Pipeline/ML_Observability_SLO]]」
 
 ---
 
@@ -148,7 +148,7 @@ graph TB
 
 - [[92_Plan/MLOps_Section_Enhancement_Plan_2026|章节加强计划 2026]] — 含本声明的背景与后续路线图
 - [[README]] — 10 章节导航
-- [[16_AI_Ops/README]] — 16 章节导航
+- [[13_AI_Ops/README]] — 16 章节导航
 
 ---
 

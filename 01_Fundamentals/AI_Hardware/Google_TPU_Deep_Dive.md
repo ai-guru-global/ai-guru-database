@@ -392,4 +392,4 @@ Gemini 2.0 训练配置:
 └── ROCm 生态 → 可接受迁移成本
 ```
 
-> **关联**: -> [[01_Fundamentals/AI_Hardware/NVIDIA_AMD_GPU_Deep_Dive|NVIDIA & AMD GPU]] | [[01_Fundamentals/AI_Hardware/Chinese_AI_Chips_Deep_Dive|国产 AI 芯片]] | [[07_Model_Training|模型训练]] | [[09_Deployment_Inference|部署推理]]
+> **关联**: -> [[01_Fundamentals/AI_Hardware/NVIDIA_AMD_GPU_Deep_Dive|NVIDIA & AMD GPU]] | [[01_Fundamentals/AI_Hardware/Chinese_AI_Chips_Deep_Dive|国产 AI 芯片]] | [[07_Model_Training|模型训练]] | [[10_Deployment_Inference|部署推理]]

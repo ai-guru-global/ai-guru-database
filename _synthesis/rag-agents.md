@@ -28,10 +28,10 @@ updated: 2026-06-12
 
 ### 融合的三个层面
 
-1. **RAG 作为 Agent 工具** ([[11_RAG_Systems/RAG_Advanced_2026]]):
+1. **RAG 作为 Agent 工具** ([[14_RAG_Systems/RAG_Advanced_2026]]):
    - Agent 将 RAG 检索作为一个 Tool Calling 动作
    - 决定何时检索、检索什么、如何使用结果
-   - 参考: [[13_Agent_Production/Agent_Skills/Tool_Calling_Best_Practices]]
+   - 参考: [[15_Agent_Production/Agent_Skills/Tool_Calling_Best_Practices]]
 
 2. **Agent 增强 RAG** ([[06_Reinforcement_Learning/AI_Agents/AI_Agents]]):
    - Agent 自主优化检索策略（选择数据库、调整查询）
@@ -39,8 +39,8 @@ updated: 2026-06-12
    - 自我验证检索结果的相关性
 
 3. **统一架构**:
-   - LangGraph 实现 RAG + Agent 工作流 ([[13_Agent_Production/Agent_Workflow/LangGraph_Deep_Dive]])
-   - 数据摄入管道自动化 ([[11_RAG_Systems/Data_Ingestion_Pipeline]])
+   - LangGraph 实现 RAG + Agent 工作流 ([[15_Agent_Production/Agent_Workflow/LangGraph_Deep_Dive]])
+   - 数据摄入管道自动化 ([[14_RAG_Systems/Data_Ingestion_Pipeline]])
    - 评估体系统一 ([[08_Model_Evaluation/Evaluation_Metrics]])
 
 ### 关键挑战
@@ -65,8 +65,8 @@ updated: 2026-06-12
 
 ## 相关页面
 
-- [[11_RAG_Systems/RAG_Systems]] — RAG 系统全景
-- [[11_RAG_Systems/RAG_Advanced_2026]] — RAG 高级实践
-- [[13_Agent_Production/README]] — Agent 生产部署
-- [[13_Agent_Production/Agent_Workflow/Agentic_Workflow_Design_Patterns_2026]] — Agentic 工作流设计模式
-- [[13_Agent_Production/Agent_Skills/Tool_Calling_Best_Practices]] — Tool Calling 最佳实践
+- [[14_RAG_Systems/RAG_Systems]] — RAG 系统全景
+- [[14_RAG_Systems/RAG_Advanced_2026]] — RAG 高级实践
+- [[15_Agent_Production/README]] — Agent 生产部署
+- [[15_Agent_Production/Agent_Workflow/Agentic_Workflow_Design_Patterns_2026]] — Agentic 工作流设计模式
+- [[15_Agent_Production/Agent_Skills/Tool_Calling_Best_Practices]] — Tool Calling 最佳实践

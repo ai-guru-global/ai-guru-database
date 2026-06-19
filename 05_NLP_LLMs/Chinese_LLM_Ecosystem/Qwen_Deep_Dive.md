@@ -529,7 +529,7 @@ Agent / 工具调用 (Agentic)
 | 开源对照参考 | Qwen3-235B-A22B-2507 | 无 | 无 | 无 | GLM-5.2 开源版 |
 | 接入入口 | chat.qwen.ai / 百炼 | Anthropic API | OpenAI API | Google API | 智谱 API |
 
-> **相关文档**: 跨厂商基准与 GLM-5.2 的全面对比，参见 [[GLM-5.2]] 及 [[04_NLP_LLMs/Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]]。
+> **相关文档**: 跨厂商基准与 GLM-5.2 的全面对比，参见 [[GLM-5.2]] 及 [[05_NLP_LLMs/Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]]。
 
 #### 3.5.5 Hybrid Thinking 架构回顾
 
@@ -1876,9 +1876,9 @@ Qwen 3.7 系列全面支持以下高级功能：
 - Qwen2.5-VL 技术报告: arXiv:2502.13923
 
 ### Wiki 内部参考
-- [[04_NLP_LLMs/Chinese_LLM_Ecosystem/README]] — 中国大模型生态全景
-- [[04_NLP_LLMs/Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]] — 全厂商对比矩阵
-- [[04_NLP_LLMs/Chinese_LLM_Ecosystem/Chinese_LLM_Training_Inference_Platforms]] — 训推平台实战
+- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/README]] — 中国大模型生态全景
+- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]] — 全厂商对比矩阵
+- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/Chinese_LLM_Training_Inference_Platforms]] — 训推平台实战
 
 ---
 *Last updated: 2026-06-16*

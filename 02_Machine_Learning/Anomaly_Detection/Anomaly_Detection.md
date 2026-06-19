@@ -1039,7 +1039,7 @@ graph TD
 
 ## Related
 
-- [[concepts/anomaly-detection]] — 异常检测概念总览
+- [[_concepts/anomaly-detection]] — 异常检测概念总览
 - [[02_Machine_Learning/Unsupervised_Learning/Unsupervised_Learning]] — 无监督学习：聚类与降维
 - [[02_Machine_Learning/Ensemble_Learning/Ensemble_Learning]] — 集成学习：Isolation Forest 的理论基础
 - [[03_Deep_Learning/Self_Supervised_Learning/Self_Supervised_Learning_Deep_Dive]] — 自编码器与自监督异常检测

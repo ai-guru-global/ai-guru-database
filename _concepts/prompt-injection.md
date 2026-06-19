@@ -73,7 +73,7 @@ Prompt Injection 是利用 LLM 无法严格区分指令与数据这一根本特�
 
 ## 深入阅读
 
-- [[19_Ethics_Safety/LLM_Security_Complete_Guide.md]] -- 攻击技术详解与威胁全景
-- [[19_Ethics_Safety/LLM_Security_Defense_Guide.md]] -- 防御架构、I/O 防护与 Constitutional Classifiers
-- [[19_Ethics_Safety/Agent_RAG_Security.md]] -- 智能体控制流劫持与 RAG 知识库投毒
-- [[04_NLP_LLMs/Context_Engineering_Patterns.md]] -- 上下文污染与隔离失效的反模式
+- [[17_Ethics_Safety/LLM_Security_Complete_Guide.md]] -- 攻击技术详解与威胁全景
+- [[17_Ethics_Safety/LLM_Security_Defense_Guide.md]] -- 防御架构、I/O 防护与 Constitutional Classifiers
+- [[17_Ethics_Safety/Agent_RAG_Security.md]] -- 智能体控制流劫持与 RAG 知识库投毒
+- [[05_NLP_LLMs/Context_Engineering_Patterns.md]] -- 上下文污染与隔离失效的反模式

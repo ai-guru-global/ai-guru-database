@@ -4,11 +4,11 @@ category: concepts
 tags: ["deep-learning", "transformer", "attention", "self-attention", "bert", "gpt", "nlp"]
 aliases: [Transformer, 注意力机制, 自注意力, long-context-models Is All You Need]
 relationships:
-  - target: "[[concepts/neural-networks]]"
+  - target: "[[_concepts/neural-networks]]"
     type: related_to
-  - target: "concepts/optimization-regularization"
+  - target: "_concepts/optimization-regularization"
     type: related_to
-  - target: "concepts/state-space-models"
+  - target: "_concepts/state-space-models"
     type: related_to
 sources: [03_Deep_unsupervised-learning/Neural_Network_Core/Neural_Network_Core.md, 03_Deep_Learning/README.md]
 summary: 基于自注意力机制的序列建模架构，摒弃循环和卷积实现并行计算，是 BERT/GPT 等大模型的基础，但也面临 O(n²) 复杂度瓶颈。
@@ -135,10 +135,10 @@ Transformer 训练 的标配配置：
 
 ## Related
 
-- [[concepts/transformer-layer]] — Transformer Layer（层）大白话解释
-- [[synthesis/transformer-llm-architecture]] — Transformer 架构 × LLM 架构 (共享: attention, bert, gpt, nlp, transformer)
-- [[04_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/README]] — PEFT 2026 (参数高效微调) (共享: bert, gpt, nlp, transformer)
-- [[04_NLP_LLMs/Fine_tuning_Techniques/README]] — 微调技术 (Fine-tuning Techniques) (共享: bert, gpt, nlp, transformer)
-- [[04_NLP_LLMs/LLM_Architectures/LLM-Basics-in-nutshell]] — 大语言模型基础速成指南 (共享: bert, gpt, nlp, transformer)
-- [[concepts/multimodal-models.md|multimodal-models]]
-- [[synthesis/llm-nlp]]
+- [[_concepts/transformer-layer]] — Transformer Layer（层）大白话解释
+- [[_synthesis/transformer-llm-architecture]] — Transformer 架构 × LLM 架构 (共享: attention, bert, gpt, nlp, transformer)
+- [[05_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/README]] — PEFT 2026 (参数高效微调) (共享: bert, gpt, nlp, transformer)
+- [[05_NLP_LLMs/Fine_tuning_Techniques/README]] — 微调技术 (Fine-tuning Techniques) (共享: bert, gpt, nlp, transformer)
+- [[05_NLP_LLMs/LLM_Architectures/LLM-Basics-in-nutshell]] — 大语言模型基础速成指南 (共享: bert, gpt, nlp, transformer)
+- [[_concepts/multimodal-models.md|multimodal-models]]
+- [[_synthesis/llm-nlp]]

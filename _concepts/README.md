@@ -188,7 +188,7 @@ title: 概念名称
 category: concepts
 tags: [tag1, tag2]
 relationships:
-  - target: "concepts/related-concept"
+  - target: "_concepts/related-concept"
     type: related_to | prerequisite | builds_on
 sources:
   - XX_Chapter/Specific_Document.md
@@ -214,9 +214,9 @@ tier: core | supporting
 
 ## 相关页面
 
-- [[concepts/speech-audio-ai|语音与音频 AI (Speech & Audio AI)]]
-- [[concepts/llm-data-engineering|LLM 数据工程 (LLM Data Engineering)]]
-- [[concepts/edge-llm|端侧 LLM (Edge LLM)]]
-- [[concepts/README|概念卡片索引 (Concept Cards Index)]]
-- [[concepts/causal-inference|因果推断 (Causal Inference)]]
-- [[concepts/federated-learning|联邦学习 (Federated Learning)]]
+- [[_concepts/speech-audio-ai|语音与音频 AI (Speech & Audio AI)]]
+- [[_concepts/llm-data-engineering|LLM 数据工程 (LLM Data Engineering)]]
+- [[_concepts/edge-llm|端侧 LLM (Edge LLM)]]
+- [[_concepts/README|概念卡片索引 (Concept Cards Index)]]
+- [[_concepts/causal-inference|因果推断 (Causal Inference)]]
+- [[_concepts/federated-learning|联邦学习 (Federated Learning)]]

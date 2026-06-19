@@ -115,6 +115,6 @@ updated: "2026-06-12"
 ---
 
 ## 相关阅读
-- [[04_NLP_LLMs/Prompt_Engineering/Prompt_Engineering]]
-- [[13_Agent_Production/Agentic_Design_Patterns_AndrewNg]]
+- [[05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering]]
+- [[15_Agent_Production/Agentic_Design_Patterns_AndrewNg]]
 - [[08_Model_Evaluation/LLM_as_Judge_Deep_Dive]]

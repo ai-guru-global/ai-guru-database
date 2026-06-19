@@ -3,13 +3,13 @@ title: "OpenCompass"
 category: concept
 tags: ["opencompass", "evaluation", "benchmark", "llm", "chinese-llm", "mmbench", "multimodal"]
 relationships:
-  - target: "concepts/model-evaluation"
+  - target: "_concepts/model-evaluation"
     type: extends
-  - target: "concepts/benchmark"
+  - target: "_concepts/benchmark"
     type: enables
-  - target: "concepts/lm-evaluation-harness"
+  - target: "_concepts/lm-evaluation-harness"
     type: related_to
-  - target: "concepts/llm"
+  - target: "_concepts/llm"
     type: evaluates
 sources:
   - 08_Model_Evaluation/OpenCompass_Deep_Dive.md
@@ -87,7 +87,7 @@ updated: 2026-06-16
 ## Related
 
 - [[08_Model_Evaluation/OpenCompass_Deep_Dive]] — OpenCompass 深度解析
-- [[concepts/model-evaluation]] — 模型评估
-- [[concepts/benchmark]] — 基准测试
-- [[concepts/lm-evaluation-harness]] — LM Evaluation Harness
+- [[_concepts/model-evaluation]] — 模型评估
+- [[_concepts/benchmark]] — 基准测试
+- [[_concepts/lm-evaluation-harness]] — LM Evaluation Harness
 - [[08_Model_Evaluation/LLM_Benchmark_Suite_2026]] — LLM 基准套件 2026

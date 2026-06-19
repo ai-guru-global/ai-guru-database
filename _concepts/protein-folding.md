@@ -41,5 +41,5 @@ updated: 2026-06-12
 
 ## 相关阅读
 
-- [[20_AI_Applications_Industry/AI_for_Science/Protein_Folding_and_Drug_Discovery_2026]] — AI 蛋白质折叠与药物发现
-- [[20_AI_Applications_Industry/AI_for_Science/AI_for_Science_Deep_Dive]] — AI for Science 深度解读
+- [[18_AI_Applications_Industry/AI_for_Science/Protein_Folding_and_Drug_Discovery_2026]] — AI 蛋白质折叠与药物发现
+- [[18_AI_Applications_Industry/AI_for_Science/AI_for_Science_Deep_Dive]] — AI for Science 深度解读

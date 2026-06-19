@@ -494,8 +494,8 @@ Mamba/SSM 提供了"短期记忆"的技术基础，但如何与 Transformer 的"
 
 ## Related
 
-- [[concepts/transformer-architecture]]
-- [[04_NLP_LLMs/LLM_Architectures/LLM_Architectures]]
+- [[_concepts/transformer-architecture]]
+- [[05_NLP_LLMs/LLM_Architectures/LLM_Architectures]]
 - [[03_Deep_Learning/State_Space_Models_2026]]
-- [[04_NLP_LLMs/Long_Context_Models_2026]]
+- [[05_NLP_LLMs/Long_Context_Models_2026]]
 - [[03_Deep_Learning/Neural_Network_Core/Neural_Network_Core]]

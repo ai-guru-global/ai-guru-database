@@ -273,8 +273,8 @@ response = client.converse(
 
 ## Related
 
-- [[concepts/aws-bedrock]] — AWS Bedrock 概念卡片
-- [[concepts/azure-openai]] — Azure OpenAI
-- [[concepts/vertex-ai]] — Google Vertex AI
-- [[concepts/cloud-ai-platform]] — 云 AI 平台
+- [[_concepts/aws-bedrock]] — AWS Bedrock 概念卡片
+- [[_concepts/azure-openai]] — Azure OpenAI
+- [[_concepts/vertex-ai]] — Google Vertex AI
+- [[_concepts/cloud-ai-platform]] — 云 AI 平台
 - [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack 深度解析

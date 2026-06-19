@@ -76,7 +76,7 @@ updated: 2026-05-31
  - 错误处理与重试策略
 
 **4. 新增 Agent 性能基准测试**
-- 文件: `13_Agent_Production/16_Agent_Evaluation/Performance_Benchmarks/`
+- 文件: `15_Agent_Production/Agent_Evaluation/Performance_Benchmarks/`
 - 内容:
  - 延迟基准 (首 token/总耗时)
  - 吞吐量测试 (QPS/TPS)
@@ -109,7 +109,7 @@ updated: 2026-05-31
 #### 整改方案
 
 **1. 扩展长上下文技术专题**
-- 文件: `04_NLP_LLMs/Long_Context_Models_2026.md`
+- 文件: `05_NLP_LLMs/Long_Context_Models_2026.md`
 - 扩展内容:
   - Ring Attention / Striped Attention
   - 上下文压缩技术 (H2O, StreamingLLM)
@@ -117,7 +117,7 @@ updated: 2026-05-31
   - 长文本评估基准 (LongBench, L-Eval)
 
 **2. 新增测试时计算专题**
-- 文件: `04_NLP_LLMs/Reasoning_Models/Test_Time_Compute_2026.md`
+- 文件: `05_NLP_LLMs/Reasoning_Models/Test_Time_Compute_2026.md`
 - 内容:
   - Chain-of-Thought 优化
   - Self-Consistency / Majority Voting
@@ -125,7 +125,7 @@ updated: 2026-05-31
   - 计算-性能权衡曲线
 
 **3. 新增多模态 LLM 专题**
-- 文件: `04_NLP_LLMs/Multimodal_Models/Multimodal_LLMs_2026.md`
+- 文件: `05_NLP_LLMs/Multimodal_Models/Multimodal_LLMs_2026.md`
 - 内容:
   - Vision Encoder 集成 (CLIP/SigLIP)
   - 投影层设计 (Q-Former/MLP)
@@ -133,7 +133,7 @@ updated: 2026-05-31
   - 视觉指令微调
 
 **4. 补充模型合并技术**
-- 文件: `04_NLP_LLMs/Fine_tuning_Techniques/Model_Merging_2026.md`
+- 文件: `05_NLP_LLMs/Fine_tuning_Techniques/Model_Merging_2026.md`
 - 内容:
   - SLERP / TIES / DARE
   - MergeKit 实战
@@ -242,7 +242,7 @@ updated: 2026-05-31
 #### 整改方案
 
 **1. 新增 AI 系统测试框架**
-- 文件: `15_Testing/AI_Test_Framework_2026.md`
+- 文件: `09_Testing/AI_Test_Framework_2026.md`
 - 内容:
   - 测试金字塔 (Unit/Component/Integration/E2E)
   - 测试数据工厂 (Factory Pattern)
@@ -250,7 +250,7 @@ updated: 2026-05-31
   - 测试覆盖率目标
 
 **2. 新增 CI/CD 流水线**
-- 文件: `16_AI_Ops/CI_CD_Pipeline_AI_2026.md`
+- 文件: `13_AI_Ops/CI_CD_Pipeline_AI_2026.md`
 - 内容:
   ```yaml
   stages:
@@ -266,7 +266,7 @@ updated: 2026-05-31
   ```
 
 **3. 新增混沌工程实践**
-- 文件: `16_AI_Ops/Chaos_Engineering_AI.md`
+- 文件: `13_AI_Ops/Chaos_Engineering_AI.md`
 - 内容:
   - LLM 服务故障注入
   - 向量数据库延迟模拟
@@ -274,7 +274,7 @@ updated: 2026-05-31
   - 自动恢复验证
 
 **4. 新增契约测试**
-- 文件: `15_Testing/Contract_Testing.md`
+- 文件: `09_Testing/Contract_Testing.md`
 - 内容:
   - OpenAPI 契约验证
   - 消费者驱动契约 (CDC)

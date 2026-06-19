@@ -466,9 +466,9 @@ helm uninstall hami -n kube-system
 
 ## Related
 
-- [[concepts/hami]] — HAMi 概念卡片
+- [[_concepts/hami]] — HAMi 概念卡片
 - [[12_Architecture_Infrastructure/HAMi_Deep_Dive]] — HAMi 深度解析
 - [[12_Architecture_Infrastructure/HAMi_for_dummy]] — HAMi 入门
-- [[16_AI_Ops/HAMi_Troubleshooting_Guide]] — HAMi 问题排查
-- [[concepts/gpu-virtualization]] — GPU 虚拟化
-- [[concepts/dra]] — DRA 动态资源分配
+- [[13_AI_Ops/HAMi_Troubleshooting_Guide]] — HAMi 问题排查
+- [[_concepts/gpu-virtualization]] — GPU 虚拟化
+- [[_concepts/dra]] — DRA 动态资源分配

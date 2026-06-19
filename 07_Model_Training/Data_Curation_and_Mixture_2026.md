@@ -1966,7 +1966,7 @@ def evaluate_quality_classifier(
 - [Tokenizer Design 2026](./Tokenizer_Design_2026.md) — Tokenizer 设计对多语言数据效率的影响，BPE/SentencePiece/Unigram 对比
 - [Scaling Laws and Training Dynamics](./Scaling_Laws_and_Training_Dynamics.md) — Chinchilla 定律、数据规模与模型规模的最优比例
 - [Distributed Training 2026](./Distributed_Training_2026.md) — FSDP/DeepSpeed/Megatron 分布式训练，数据加载与并行策略
-- [LLaMA Deep Dive](../22_Papers/LLaMA_Deep_Dive.md) — LLaMA 系列论文深度解读，数据配比细节分析
+- [LLaMA Deep Dive](../20_Papers/LLaMA_Deep_Dive.md) — LLaMA 系列论文深度解读，数据配比细节分析
 
 ### 关键论文与资源
 
@@ -2056,4 +2056,4 @@ Pre-training Data Quality Checklist / 预训练数据质量检查清单
 
 ## 延伸阅读
 
-- [[synthesis/pretraining-synthetic-data|预训练数据 × 合成数据：从规模到质量的范式转移]]
+- [[_synthesis/pretraining-synthetic-data|预训练数据 × 合成数据：从规模到质量的范式转移]]

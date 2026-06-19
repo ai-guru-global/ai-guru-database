@@ -393,7 +393,7 @@ result = executor.invoke({
 
 ## 参考资源
 
-- [LangChain Agents 文档](https://python.langchain.com/docs/concepts/agency/)
+- [LangChain Agents 文档](https://python.langchain.com/docs/_concepts/agency/)
 - [LangChain GitHub](https://github.com/langchain-ai/langchain)
 - [ReAct 论文](https://arxiv.org/abs/2210.03629)
 
@@ -404,9 +404,9 @@ result = executor.invoke({
 
 ## Related
 
-- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026.md|Agent_Harness_Complete_2026]]
-- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026.md|Agent_Red_Teaming_2026]]
-- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow.md|Evaluation_Workflow]]
-- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment.md|Production_Assessment]]
-- [[13_Agent_Production/16_Agent_Evaluation/Benchmarking/Benchmarking_Criteria.md|Benchmarking_Criteria]]
-- [[synthesis/reasoning-models-agents|推理模型 × Agent]] — 推理增强的 Agent 框架
+- [[15_Agent_Production/Agent_Evaluation/Agent_Harness_Complete_2026.md|Agent_Harness_Complete_2026]]
+- [[15_Agent_Production/Agent_Evaluation/Agent_Red_Teaming_2026.md|Agent_Red_Teaming_2026]]
+- [[15_Agent_Production/Agent_Evaluation/Assessment/Evaluation_Workflow.md|Evaluation_Workflow]]
+- [[15_Agent_Production/Agent_Evaluation/Assessment/Production_Assessment.md|Production_Assessment]]
+- [[15_Agent_Production/Agent_Evaluation/Benchmarking/Benchmarking_Criteria.md|Benchmarking_Criteria]]
+- [[_synthesis/reasoning-models-agents|推理模型 × Agent]] — 推理增强的 Agent 框架

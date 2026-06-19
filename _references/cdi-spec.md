@@ -70,13 +70,13 @@ vendor.com/class=unique_name
 
 - 深度解析 → [[12_Architecture_Infrastructure/CDI_Deep_Dive|CDI 深度解析]](含 spec 结构、工作原理、训练/推理定位、常见问题)
 - 入门 → [[12_Architecture_Infrastructure/CDI_for_dummy|CDI 小白版]]
-- 概念卡 → [[concepts/cdi|CDI 概念卡片]]
-- 配套生态 → [[concepts/dra|DRA]]、[[concepts/gpu-operator|GPU Operator]]、[[concepts/oci-runtime|OCI Runtime Spec]]
+- 概念卡 → [[_concepts/cdi|CDI 概念卡片]]
+- 配套生态 → [[_concepts/dra|DRA]]、[[_concepts/gpu-operator|GPU Operator]]、[[_concepts/oci-runtime|OCI Runtime Spec]]
 
 ## Related
 
 - [[12_Architecture_Infrastructure/CDI_Deep_Dive]]
-- [[concepts/cdi]]
-- [[concepts/dra]]
-- [[concepts/gpu-operator]]
-- [[concepts/oci-runtime]]
+- [[_concepts/cdi]]
+- [[_concepts/dra]]
+- [[_concepts/gpu-operator]]
+- [[_concepts/oci-runtime]]

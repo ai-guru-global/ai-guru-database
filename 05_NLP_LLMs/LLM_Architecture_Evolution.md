@@ -28,12 +28,12 @@ updated: 2026-06-17
 
 ## 关联文档
 
-- [[04_NLP_LLMs/Transformer_Deep_Dive]] — Transformer 核心架构
-- [[04_NLP_LLMs/LLM_Training_Deep_Dive]] — 训练技术
-- [[04_NLP_LLMs/LLM_Inference_Deep_Dive]] — 推理优化
-- [[04_NLP_LLMs/LLM_Architectures/LLM_Architectures]] — LLM 架构总览
-- [[04_NLP_LLMs/LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral]] — MoE 案例分析
-- [[04_NLP_LLMs/Reasoning_Models/DeepSeek_R1_Technical_Analysis]] — DeepSeek-R1 技术分析
+- [[05_NLP_LLMs/Transformer_Deep_Dive]] — Transformer 核心架构
+- [[05_NLP_LLMs/LLM_Training_Deep_Dive]] — 训练技术
+- [[05_NLP_LLMs/LLM_Inference_Deep_Dive]] — 推理优化
+- [[05_NLP_LLMs/LLM_Architectures/LLM_Architectures]] — LLM 架构总览
+- [[05_NLP_LLMs/LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral]] — MoE 案例分析
+- [[05_NLP_LLMs/Reasoning_Models/DeepSeek_R1_Technical_Analysis]] — DeepSeek-R1 技术分析
 
 ---
 
@@ -197,7 +197,7 @@ $$h_t = Ah_{t-1} + Bx_t, \quad y_t = Ch_t + Dx_t$$
 
 ### 3.4 多模态融合
 
-从拼接式（视觉编码器 + LLM）到原生多模态（统一架构预训练所有模态）。Gemini 和 GPT-4 代表原生多模态路线。Llama 3.2 在开放模型中引入视觉理解。详见 [[04_NLP_LLMs/Multimodal_Models/Native_Multimodal_Architectures]]。
+从拼接式（视觉编码器 + LLM）到原生多模态（统一架构预训练所有模态）。Gemini 和 GPT-4 代表原生多模态路线。Llama 3.2 在开放模型中引入视觉理解。详见 [[05_NLP_LLMs/Multimodal_Models/Native_Multimodal_Architectures]]。
 
 ### 3.5 AI Agent 与工具调用
 
@@ -222,7 +222,7 @@ $$h_t = Ah_{t-1} + Bx_t, \quad y_t = Ch_t + Dx_t$$
 
 ### 3.6 推理时计算扩展
 
-以 o1 和 DeepSeek-R1 为代表，通过 RL 训练模型学会何时分步思考/回溯检查/尝试不同路径。开辟了预训练扩展之外的第二条 Scaling 曲线。详见 [[04_NLP_LLMs/Reasoning_Models/o1_Class_Reasoning_Models]] 和 [[04_NLP_LLMs/Reasoning_Models/Test_Time_Compute_2026]]。
+以 o1 和 DeepSeek-R1 为代表，通过 RL 训练模型学会何时分步思考/回溯检查/尝试不同路径。开辟了预训练扩展之外的第二条 Scaling 曲线。详见 [[05_NLP_LLMs/Reasoning_Models/o1_Class_Reasoning_Models]] 和 [[05_NLP_LLMs/Reasoning_Models/Test_Time_Compute_2026]]。
 
 ---
 

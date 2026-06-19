@@ -166,13 +166,13 @@ TensorRT-LLM 就像给 NVIDIA GPU 请了一位“赛车调校师”：把普通�
 
 ## Related
 
-- [[concepts/sglang|SGLang]]
-- [[concepts/dynamic-batch-scheduling|动态批调度]]
-- [[concepts/gguf|GGUF]]
-- [[concepts/smoothquant|SmoothQuant]]
-- [[concepts/tensorrt-llm|TensorRT-LLM]]
-- [[concepts/continuous-batching|Continuous Batching]]
-- [[concepts/quantization|量化]]
-- [[09_Deployment_Inference/LLM_Inference_Engine_Selection_Guide|LLM 推理引擎选型指南]]
-- [[09_Deployment_Inference/SGLang_Deep_Dive|SGLang 深度解析]]
-- [[09_Deployment_Inference/TensorRT_LLM_Deep_Dive|TensorRT-LLM 深度解析]]
+- [[_concepts/sglang|SGLang]]
+- [[_concepts/dynamic-batch-scheduling|动态批调度]]
+- [[_concepts/gguf|GGUF]]
+- [[_concepts/smoothquant|SmoothQuant]]
+- [[_concepts/tensorrt-llm|TensorRT-LLM]]
+- [[_concepts/continuous-batching|Continuous Batching]]
+- [[_concepts/quantization|量化]]
+- [[10_Deployment_Inference/LLM_Inference_Engine_Selection_Guide|LLM 推理引擎选型指南]]
+- [[10_Deployment_Inference/SGLang_Deep_Dive|SGLang 深度解析]]
+- [[10_Deployment_Inference/TensorRT_LLM_Deep_Dive|TensorRT-LLM 深度解析]]

@@ -363,9 +363,9 @@ git tag -a data-v2.1 -m "Training data version 2.1"
 
 ## 7. 与其他章节的关联
 
-- [MLOps 流水线](../../10_MLOps_Pipeline/README.md) — 训练到部署的完整流程
+- [MLOps 流水线](../../11_MLOps_Pipeline/README.md) — 训练到部署的完整流程
 - [模型评估](../../08_Model_Evaluation/README.md) — 质量门禁的评估方法
-- [部署推理](../../09_Deployment_Inference/README.md) — 模型服务化技术
+- [部署推理](../../10_Deployment_Inference/README.md) — 模型服务化技术
 - [混沌工程](./Chaos_Engineering_AI.md) — 故障注入测试
 - [AI Ops 概述](./AI_Ops_2026.md) — 运维监控体系
 
@@ -375,8 +375,8 @@ git tag -a data-v2.1 -m "Training data version 2.1"
 
 ## Related
 
-- [[16_AI_Ops/AIOps-in-nutshell.md|AIOps-in-nutshell]]
-- [[16_AI_Ops/AI_Incident_Response_Playbook.md|AI_Incident_Response_Playbook]]
-- [[16_AI_Ops/AI_Ops_for_dummy.md|AI_Ops_for_dummy]]
-- [[16_AI_Ops/README.md|16_AI_Ops README]]
-- [[16_AI_Ops/README_for_dummy.md|README_for_dummy]]
+- [[13_AI_Ops/AIOps-in-nutshell.md|AIOps-in-nutshell]]
+- [[13_AI_Ops/AI_Incident_Response_Playbook.md|AI_Incident_Response_Playbook]]
+- [[13_AI_Ops/AI_Ops_for_dummy.md|AI_Ops_for_dummy]]
+- [[13_AI_Ops/README.md|13_AI_Ops README]]
+- [[13_AI_Ops/README_for_dummy.md|README_for_dummy]]

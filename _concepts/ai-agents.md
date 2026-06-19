@@ -16,19 +16,19 @@ aliases:
 - Agent
 - AI代理
 relationships:
-- target: 'concepts/reinforcement-learning'
+- target: '_concepts/reinforcement-learning'
   type: related_to
-- target: 'concepts/deep-reinforcement-learning'
+- target: '_concepts/deep-reinforcement-learning'
   type: related_to
-- target: 'concepts/multimodal-vision'
+- target: '_concepts/multimodal-vision'
   type: related_to
-- target: 'concepts/tool-calling'
+- target: '_concepts/tool-calling'
   type: uses
-- target: 'concepts/tool-calling-safety'
+- target: '_concepts/tool-calling-safety'
   type: secures
-- target: 'concepts/agent-evaluation-benchmarks'
+- target: '_concepts/agent-evaluation-benchmarks'
   type: evaluated_by
-- target: 'concepts/agentic-rag'
+- target: '_concepts/agentic-rag'
   type: related_to
 sources:
 - 06_reinforcement-learning_unsupervised-learning/AI_Agents/AI_Agents.md
@@ -122,12 +122,12 @@ RAG是单次检索增强的问答系统，无状态、无规划。Agent是多轮
 
 ## Related
 
-- [[synthesis/agents-reinforcement-learning]] — AI 智能体 × 强化学习 (共享: ai-agents, mcp, planning, react, rl, tool-use)
+- [[_synthesis/agents-reinforcement-learning]] — AI 智能体 × 强化学习 (共享: ai-agents, mcp, planning, react, rl, tool-use)
 - [[06_Reinforcement_Learning/AI_Agents/AI_Agents_for_dummy]] — AI智能体 - 小白版 🤖 (共享: ai-agents, rl)
 - [[06_Reinforcement_Learning/AI_Agents/Agent-in-nutshell]] — AI 智能体速成指南 (共享: ai-agents, rl)
 - [[06_Reinforcement_Learning/AI_Agents/Agent_Future_Roadmap_2026_2030]] — Agent 未来发展路线图 2026-2030 (共享: ai-agents, rl)
-- [[concepts/tool-calling]] — 工具调用
-- [[concepts/tool-calling-safety]] — 工具调用安全
-- [[concepts/agent-evaluation-benchmarks]] — Agent 评估基准
-- [[concepts/agentic-rag]] — Agentic RAG
-- [[13_Agent_Production/Agent_Safety_Evaluation_for_dummy]] — Agent 安全与评估大白话
+- [[_concepts/tool-calling]] — 工具调用
+- [[_concepts/tool-calling-safety]] — 工具调用安全
+- [[_concepts/agent-evaluation-benchmarks]] — Agent 评估基准
+- [[_concepts/agentic-rag]] — Agentic RAG
+- [[15_Agent_Production/Agent_Safety_Evaluation_for_dummy]] — Agent 安全与评估大白话

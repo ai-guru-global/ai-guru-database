@@ -625,9 +625,9 @@ $$
 
 ### 进阶推荐
 - **[神经网络核心](../../03_Deep_Learning/Neural_Network_Core/Neural_Network_Core.md)**: 计算图与反向传播
-- **[Transformer 架构](../../04_NLP_LLMs/Transformer_Revolution/Transformer_Revolution.md)**: 注意力机制的优化
-- **[模型压缩](../../09_Deployment_Inference/Deployment_Inference.md)**: 量化、剪枝、蒸馏
-- **[向量数据库](../../11_RAG_Systems/RAG_Systems.md)**: HNSW、ANN 算法实践
+- **[Transformer 架构](../../05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution.md)**: 注意力机制的优化
+- **[模型压缩](../../10_Deployment_Inference/Deployment_Inference.md)**: 量化、剪枝、蒸馏
+- **[向量数据库](../../14_RAG_Systems/RAG_Systems.md)**: HNSW、ANN 算法实践
 
 ---
 
@@ -732,7 +732,7 @@ $$
 ## Related
 
 - [[03_Deep_Learning/Neural_Network_Core/Neural_Network_Core]] — 神经网络核心：计算图与自动微分
-- [[04_NLP_LLMs/LLM_Architectures/LLM_Architectures]] — LLM 架构中的注意力复杂度优化
-- [[11_RAG_Systems/RAG_Systems]] — RAG 系统中的向量检索与 ANN 算法
+- [[05_NLP_LLMs/LLM_Architectures/LLM_Architectures]] — LLM 架构中的注意力复杂度优化
+- [[14_RAG_Systems/RAG_Systems]] — RAG 系统中的向量检索与 ANN 算法
 - [[07_Model_Training/Distributed_Training_2026]] — 分布式训练中的通信算法
-- [[concepts/transformer-architecture]] — Transformer 架构与注意力机制
+- [[_concepts/transformer-architecture]] — Transformer 架构与注意力机制

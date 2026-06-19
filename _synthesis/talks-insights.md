@@ -40,7 +40,7 @@ AI 领袖的公开演讲和访谈不仅是个人观点的表达，更是行业�
 
 ## Related
 
-- [[21_Talks/README]]
+- [[19_Talks/README]]
 - [[00_AI_Introduction/AI_Future_Trends]]
 - [[03_Deep_Learning/World_Models/README]]
-- [[concepts/ai-technology-landscape]]
+- [[_concepts/ai-technology-landscape]]

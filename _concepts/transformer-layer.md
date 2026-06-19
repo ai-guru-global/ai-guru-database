@@ -3,11 +3,11 @@ title: Transformer Layer（层）大白话
 category: concepts
 tags: [transformer, attention, layer, architecture, beginner]
 relationships:
-  - target: "concepts/transformer-architecture"
+  - target: "_concepts/transformer-architecture"
     type: part_of
-  - target: "concepts/kv-cache"
+  - target: "_concepts/kv-cache"
     type: related_to
-  - target: "concepts/kv-cache-plain"
+  - target: "_concepts/kv-cache-plain"
     type: related_to
 summary: 用生活化类比解释 Transformer 中的 Layer：大模型不是一次就想清楚，而是把输入反复经过多层“审稿人”，每层先做 Attention 收集上下文，再做 FFN 加工理解，逐步提炼出高级语义。
 lifecycle: draft
@@ -116,7 +116,7 @@ FFN 就像一个全连接神经网络，把 Attention 出来的结果再做一�
 
 ## Related
 
-- [[concepts/transformer-architecture]] — Transformer 架构总览
-- [[concepts/kv-cache]] — KV Cache 技术深潜
-- [[concepts/kv-cache-plain]] — KV Cache 大白话解释
-- [[concepts/attention-variants]] — Attention 的各种变体
+- [[_concepts/transformer-architecture]] — Transformer 架构总览
+- [[_concepts/kv-cache]] — KV Cache 技术深潜
+- [[_concepts/kv-cache-plain]] — KV Cache 大白话解释
+- [[_concepts/attention-variants]] — Attention 的各种变体

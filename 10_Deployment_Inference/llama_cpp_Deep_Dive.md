@@ -665,11 +665,11 @@ llama.cpp 性能优化 checklist
 
 ## Related
 
-- [[09_Deployment_Inference/Deployment_Inference.md|Deployment_Inference]]
-- [[09_Deployment_Inference/Deployment_Inference_2026.md|Deployment_Inference_2026]]
-- [[09_Deployment_Inference/Deployment_Inference_for_dummy.md|Deployment_Inference_for_dummy]]
-- [[09_Deployment_Inference/Inference-in-nutshell.md|Inference-in-nutshell]]
-- [[09_Deployment_Inference/Ollama_Deep_Dive.md|Ollama_Deep_Dive]]
-- [[09_Deployment_Inference/vLLM_Deep_Dive.md|vLLM_Deep_Dive]]
-- [[09_Deployment_Inference/SGLang_Deep_Dive.md|SGLang_Deep_Dive]]
-- [[09_Deployment_Inference/TensorRT_LLM_Deep_Dive.md|TensorRT_LLM_Deep_Dive]]
+- [[10_Deployment_Inference/Deployment_Inference.md|Deployment_Inference]]
+- [[10_Deployment_Inference/Deployment_Inference_2026.md|Deployment_Inference_2026]]
+- [[10_Deployment_Inference/Deployment_Inference_for_dummy.md|Deployment_Inference_for_dummy]]
+- [[10_Deployment_Inference/Inference-in-nutshell.md|Inference-in-nutshell]]
+- [[10_Deployment_Inference/Ollama_Deep_Dive.md|Ollama_Deep_Dive]]
+- [[10_Deployment_Inference/vLLM_Deep_Dive.md|vLLM_Deep_Dive]]
+- [[10_Deployment_Inference/SGLang_Deep_Dive.md|SGLang_Deep_Dive]]
+- [[10_Deployment_Inference/TensorRT_LLM_Deep_Dive.md|TensorRT_LLM_Deep_Dive]]

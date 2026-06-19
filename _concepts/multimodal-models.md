@@ -3,17 +3,17 @@ title: 多模态模型
 category: concepts
 tags: [nlp, multimodal-vision, vision-language, video, diffusion]
 relationships:
-  - target: "[[concepts/transformer-architecture]]"
+  - target: "[[_concepts/transformer-architecture]]"
     type: built_on
-  - target: "concepts/llm-architectures"
+  - target: "_concepts/llm-architectures"
     type: extends
-  - target: "concepts/long-context-models"
+  - target: "_concepts/long-context-models"
     type: related_to
-  - target: "09_Deployment_Inference/Inference_Performance/Multimodal_Inference_Optimization"
+  - target: "10_Deployment_Inference/Inference_Performance/Multimodal_Inference_Optimization"
     type: optimized_by
 sources:
-  - 04_NLP_LLMs/Multimodal_world-models-jepa/Multimodal_llm-architectures_2026.md
-  - 09_Deployment_Inference/Inference_Performance/Multimodal_Inference_Optimization.md
+  - 05_NLP_LLMs/Multimodal_world-models-jepa/Multimodal_llm-architectures_2026.md
+  - 10_Deployment_Inference/Inference_Performance/Multimodal_Inference_Optimization.md
 summary: 多模态模型从CLIP时代的图文对齐，发展到2026年的原生多模态统一架构。三大范式为模块化（LLaVA）、统一（GPT-4V/Claude）和原生多模态（GPT-4o/Gemini 2），支持文本、图像、音频、视频的无缝理解和生成。
 provenance:
   extracted: 0.80
@@ -131,9 +131,9 @@ KV Cache优化（2-3×）、Speculative Decoding（2-3×）、INT8/INT4量化（
 
 ## Related
 
-- [[concepts/generative-vision-models.md|generative-vision-models]]
-- [[concepts/llm-architectures.md|llm-architectures]]
-- [[concepts/transformer-architecture.md|transformer-architecture]]
-- [[09_Deployment_Inference/Inference_Performance/Multimodal_Inference_Optimization|多模态推理优化]]
-- [[04_NLP_LLMs/Fine_tuning_Techniques/Axolotl_Deep_Dive.md|Axolotl_Deep_Dive]]
-- [[04_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques.md|Fine_tuning_Techniques]]
+- [[_concepts/generative-vision-models.md|generative-vision-models]]
+- [[_concepts/llm-architectures.md|llm-architectures]]
+- [[_concepts/transformer-architecture.md|transformer-architecture]]
+- [[10_Deployment_Inference/Inference_Performance/Multimodal_Inference_Optimization|多模态推理优化]]
+- [[05_NLP_LLMs/Fine_tuning_Techniques/Axolotl_Deep_Dive.md|Axolotl_Deep_Dive]]
+- [[05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques.md|Fine_tuning_Techniques]]

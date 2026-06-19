@@ -36,4 +36,4 @@ tier: supporting
 - **文件分析**: 上传 PDF/Excel 等文件分析
 - **GPTs**: 自定义 AI 助手
 
-> **关联**: -> [[04_NLP_LLMs/LLM_Fundamentals|LLM 基础]] | [[04_NLP_LLMs/Global_LLM_Ecosystem|全球 LLM 生态]]
+> **关联**: -> [[05_NLP_LLMs/LLM_Fundamentals|LLM 基础]] | [[05_NLP_LLMs/Global_LLM_Ecosystem|全球 LLM 生态]]

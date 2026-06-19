@@ -3,16 +3,16 @@ title: Request Scheduling for LLMs
 category: concepts
 tags: [inference, scheduling, continuous-batching, preemption, performance]
 relationships:
-  - target: "concepts/continuous-batching"
+  - target: "_concepts/continuous-batching"
     type: builds_on
-  - target: "concepts/paged-attention"
+  - target: "_concepts/paged-attention"
     type: uses
-  - target: "concepts/prefill-decode"
+  - target: "_concepts/prefill-decode"
     type: optimizes
-  - target: "09_Deployment_Inference/Inference_Performance/Request_Scheduling_for_LLMs"
+  - target: "10_Deployment_Inference/Inference_Performance/Request_Scheduling_for_LLMs"
     type: deepened_by
 sources:
-  - 09_Deployment_Inference/Inference_Performance/Request_Scheduling_for_LLMs.md
+  - 10_Deployment_Inference/Inference_Performance/Request_Scheduling_for_LLMs.md
 summary: LLM 推理请求调度决定请求顺序、batch 组成、抢占策略，通过 Continuous Batching、Chunked Prefill、SLO-aware 调度等手段提高吞吐并稳定延迟。
 lifecycle: draft
 tier: core
@@ -35,7 +35,7 @@ updated: 2026-06-15
 
 ## Related
 
-- [[concepts/continuous-batching]] — Continuous Batching
-- [[concepts/paged-attention]] — PagedAttention
-- [[concepts/prefill-decode]] — Prefill / Decode 阶段
-- [[09_Deployment_Inference/Inference_Performance/Request_Scheduling_for_LLMs|LLM 请求调度]]
+- [[_concepts/continuous-batching]] — Continuous Batching
+- [[_concepts/paged-attention]] — PagedAttention
+- [[_concepts/prefill-decode]] — Prefill / Decode 阶段
+- [[10_Deployment_Inference/Inference_Performance/Request_Scheduling_for_LLMs|LLM 请求调度]]

@@ -570,7 +570,7 @@ AI是工具,不是替代
 
 **下一步阅读**:
 - 📘 [多模态视觉 - 小白版](../Multimodal_Vision/Multimodal_Vision_for_dummy.md) - 理解CLIP如何理解文字提示
-- 📘 [Transformer - 小白版](../../04_NLP_LLMs/Transformer_Revolution/Transformer_Revolution_for_dummy.md) - 理解Diffusion中的注意力机制
+- 📘 [Transformer - 小白版](../../05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution_for_dummy.md) - 理解Diffusion中的注意力机制
 
 **查看原版文档**(需要技术基础):
 - 📄 [生成模型(原版)](./Generative_Models.md) - 包含GAN、Diffusion的数学推导和代码

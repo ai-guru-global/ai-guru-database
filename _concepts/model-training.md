@@ -11,11 +11,11 @@ tags:
 - deepspeed
 - fsdp
 relationships:
-- target: 'concepts/neural-networks'
+- target: '_concepts/neural-networks'
   type: built_on
-- target: 'concepts/fine-tuning-techniques'
+- target: '_concepts/fine-tuning-techniques'
   type: related_to
-- target: 'concepts/model-evaluation'
+- target: '_concepts/model-evaluation'
   type: followed_by
 sources:
 - 07_Model_Training/Distributed_Training_2026.md
@@ -126,5 +126,5 @@ BF16指数位与FP32相同，天然避免梯度下溢。FP8训练通过NVIDIA tr
 
 ## Related
 
-- [[synthesis/training-fine-tuning]] — 模型训练 × 微调技术 (共享: deepspeed, fsdp, lora, training)
-- [[concepts/distributed-systems]] — 分布式系统 (共享: fsdp, training)
+- [[_synthesis/training-fine-tuning]] — 模型训练 × 微调技术 (共享: deepspeed, fsdp, lora, training)
+- [[_concepts/distributed-systems]] — 分布式系统 (共享: fsdp, training)

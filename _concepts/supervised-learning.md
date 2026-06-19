@@ -4,13 +4,13 @@ category: concepts
 tags: ["machine-learning", "supervised", "classification", "regression", "svm", "decision-tree", "xgboost"]
 aliases: [Supervised unsupervised-learning, 有监督学习]
 relationships:
-  - target: "[[concepts/unsupervised-learning]]"
+  - target: "[[_concepts/unsupervised-learning]]"
     type: related_to
-  - target: "concepts/feature-engineering"
+  - target: "_concepts/feature-engineering"
     type: related_to
-  - target: "concepts/ensemble-learning"
+  - target: "_concepts/ensemble-learning"
     type: related_to
-  - target: "concepts/automl"
+  - target: "_concepts/automl"
     type: related_to
 sources: [02_Machine_Learning/Supervised_Learning/Supervised_Learning.md]
 summary: 利用标注数据学习输入到输出的映射，分为分类和回归两大任务，是机器学习核心范式。
@@ -97,10 +97,10 @@ SVM 寻找最大间隔超平面，核技巧（线性核、多项式核、RBF 核
 
 ## 来源
 
-- references/supervised-learning-reference
-- concepts/unsupervised-learning
-- concepts/feature-engineering
-- concepts/ensemble-learning
+- _references/supervised-learning-reference
+- _concepts/unsupervised-learning
+- _concepts/feature-engineering
+- _concepts/ensemble-learning
 
 ## Related
 
@@ -108,5 +108,5 @@ SVM 寻找最大间隔超平面，核技巧（线性核、多项式核、RBF 核
 - [[02_Machine_Learning/Feature_Engineering/Feature_Engineering]] — 特征工程 (Feature Engineering) (共享: ml, supervised)
 - [[02_Machine_Learning/Feature_Engineering/Feature_Engineering_for_dummy]] — 特征工程 - 小白版 (共享: ml, supervised)
 - [[02_Machine_Learning/ML-in-nutshell]] — 机器学习速成指南 (共享: ml, supervised)
-- [[concepts/recommendation-systems.md|recommendation-systems]]
-- [[concepts/anomaly-detection.md|anomaly-detection]]
+- [[_concepts/recommendation-systems.md|recommendation-systems]]
+- [[_concepts/anomaly-detection.md|anomaly-detection]]

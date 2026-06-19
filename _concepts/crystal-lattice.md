@@ -36,5 +36,5 @@ updated: 2026-06-12
 
 ## 相关阅读
 
-- [[20_AI_Applications_Industry/AI_for_Science/Materials_Science_and_Energy_2026]] — AI 材料科学
+- [[18_AI_Applications_Industry/AI_for_Science/Materials_Science_and_Energy_2026]] — AI 材料科学
 - [[03_Deep_Learning/Graph_Neural_Networks/Graph_Neural_Networks_Deep_Dive]] — 图神经网络深度解读

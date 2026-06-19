@@ -3,13 +3,13 @@ title: "LLM Arena"
 category: concepts
 tags: ["llm-arena", "lmsys", "chatbot-arena", "human-evaluation", "benchmark", "elo"]
 relationships:
-  - target: "concepts/model-evaluation"
+  - target: "_concepts/model-evaluation"
     type: belongs_to
-  - target: "concepts/llm-as-judge"
+  - target: "_concepts/llm-as-judge"
     type: related_to
-  - target: "concepts/bbh"
+  - target: "_concepts/bbh"
     type: complements
-  - target: "concepts/red-teaming"
+  - target: "_concepts/red-teaming"
     type: differs_from
 sources:
   - 08_Model_Evaluation/LLM_Benchmark_Suite_2026.md
@@ -92,9 +92,9 @@ LLM Arena 就像大模型界的‘盲测选秀’：两个选手匿名出战，�
 
 ## Related
 
-- [[concepts/model-evaluation]] — 模型评估
-- [[concepts/llm-as-judge]] — LLM-as-Judge
-- [[concepts/bbh]] — BBH
-- [[concepts/red-teaming]] — 红队测试
+- [[_concepts/model-evaluation]] — 模型评估
+- [[_concepts/llm-as-judge]] — LLM-as-Judge
+- [[_concepts/bbh]] — BBH
+- [[_concepts/red-teaming]] — 红队测试
 - [[08_Model_Evaluation/LLM_Benchmark_Suite_2026]] — LLM 基准套件 2026
 - [[08_Model_Evaluation/LLM_as_Judge_Guide]] — LLM-as-Judge 指南

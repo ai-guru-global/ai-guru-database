@@ -519,11 +519,11 @@ class RedTeamOrchestrator:
 
 ## Related
 
-- [[19_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming]] — 红队测试实战
-- [[19_Ethics_Safety/AI_Security_2026/AI_Security_2026]] — AI 安全 2026 框架
-- [[19_Ethics_Safety/Value_Alignment/Value_Alignment]] — 价值对齐技术
+- [[17_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming]] — 红队测试实战
+- [[17_Ethics_Safety/AI_Security_2026/AI_Security_2026]] — AI 安全 2026 框架
+- [[17_Ethics_Safety/Value_Alignment/Value_Alignment]] — 价值对齐技术
 - [[08_Model_Evaluation/Model_Evaluation]] — 通用模型评测
 - [[08_Model_Evaluation/Model_Evaluation_for_dummy]] — 模型评测入门
-- [[synthesis/safety-evaluation-red-teaming|安全评测 × 红队]] — 攻防闭环
+- [[_synthesis/safety-evaluation-red-teaming|安全评测 × 红队]] — 攻防闭环
 
-- [[synthesis/benchmark-evaluation|评测基准 × 评测方法论：从分数到可信评估]]
+- [[_synthesis/benchmark-evaluation|评测基准 × 评测方法论：从分数到可信评估]]

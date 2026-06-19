@@ -19,7 +19,7 @@ updated: 2026-06-15
 
 与现有内容的区别：
 
-- `09_Deployment_Inference/README.md` 是**引擎选型地图**。
+- `10_Deployment_Inference/README.md` 是**引擎选型地图**。
 - `Deployment_Inference.md` 是**部署与加速概览**。
 - 本专题是**性能工程方法论**，专门回答：
   - 延迟到底花在哪里？
@@ -106,10 +106,10 @@ LLM 推理性能优化技术栈
 
 ## Related
 
-- [[concepts/inference-performance]] — 推理性能：概念卡
-- [[concepts/kv-cache]] — KV Cache 优化
-- [[concepts/paged-attention]] — PagedAttention
-- [[concepts/continuous-batching]] — Continuous Batching
-- [[concepts/speculative-decoding]] — 投机解码
-- [[concepts/prefill-decode]] — Prefill / Decode 阶段
-- [[09_Deployment_Inference/README|模型部署与推理]]
+- [[_concepts/inference-performance]] — 推理性能：概念卡
+- [[_concepts/kv-cache]] — KV Cache 优化
+- [[_concepts/paged-attention]] — PagedAttention
+- [[_concepts/continuous-batching]] — Continuous Batching
+- [[_concepts/speculative-decoding]] — 投机解码
+- [[_concepts/prefill-decode]] — Prefill / Decode 阶段
+- [[10_Deployment_Inference/README|模型部署与推理]]

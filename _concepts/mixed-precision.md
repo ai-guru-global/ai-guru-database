@@ -3,13 +3,13 @@ title: "混合精度训练与推理 (Mixed Precision)"
 category: concept
 tags: ["mixed-precision", "bf16", "fp16", "fp8", "fp32", "quantization", "amp"]
 relationships:
-  - target: "concepts/model-training"
+  - target: "_concepts/model-training"
     type: optimizes
-  - target: "concepts/model-compression"
+  - target: "_concepts/model-compression"
     type: related_to
-  - target: "concepts/ai-hardware"
+  - target: "_concepts/ai-hardware"
     type: depends_on
-  - target: "concepts/model-precision"
+  - target: "_concepts/model-precision"
     type: detailed_by
 sources:
   - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
@@ -152,11 +152,11 @@ AMP 训练流程:
 
 ## Related
 
-- [[concepts/model-precision]] — 模型精度（数值精度 vs 模型准确性的概念桥梁）
-- [[concepts/model-training]] — 模型训练（混合精度的应用）
-- [[concepts/model-compression]] — 模型压缩（量化技术）
-- [[concepts/ai-hardware]] — AI 硬件（GPU 精度支持）
-- [[concepts/distributed-parallelism]] — 分布式并行（训练加速策略）
-- [[concepts/kv-cache]] — KV Cache（推理中的精度选择）
+- [[_concepts/model-precision]] — 模型精度（数值精度 vs 模型准确性的概念桥梁）
+- [[_concepts/model-training]] — 模型训练（混合精度的应用）
+- [[_concepts/model-compression]] — 模型压缩（量化技术）
+- [[_concepts/ai-hardware]] — AI 硬件（GPU 精度支持）
+- [[_concepts/distributed-parallelism]] — 分布式并行（训练加速策略）
+- [[_concepts/kv-cache]] — KV Cache（推理中的精度选择）
 - [[07_Model_Training/Mixed_Precision_Training]] — 混合精度训练详解
 - [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack

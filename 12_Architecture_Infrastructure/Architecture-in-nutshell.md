@@ -518,8 +518,8 @@ flowchart TB
 
 ## 🔗 相关主题
 
-- [RAG 速成指南](../11_RAG_Systems/RAG-in-nutshell.md) —— 检索增强生成
-- [推理速成指南](../09_Deployment_Inference/Inference-in-nutshell.md) —— 模型部署推理
+- [RAG 速成指南](../14_RAG_Systems/RAG-in-nutshell.md) —— 检索增强生成
+- [推理速成指南](../10_Deployment_Inference/Inference-in-nutshell.md) —— 模型部署推理
 - [成本优化完整版](AI_Cost_Optimization_2026.md) —— 深入成本策略
 - [高可用完整版](High_Availability_2026.md) —— 深入 HA 设计
 - [架构基础设施 - 小白版](Architecture_Infrastructure_for_dummy.md) —— 零基础入门

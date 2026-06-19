@@ -3,16 +3,16 @@ title: "代码生成"
 category: concepts
 tags: ["code-generation", "ai-coding", "copilot", "program-synthesis"]
 relationships:
-  - target: "concepts/code-generation-workflow"
+  - target: "_concepts/code-generation-workflow"
     type: part_of
-  - target: "concepts/ai-agents"
+  - target: "_concepts/ai-agents"
     type: used_by
-  - target: "concepts/text2sql"
+  - target: "_concepts/text2sql"
     type: belongs_to
 sources:
-  - 17_AI_Coding/README.md
-  - 17_AI_Coding/Cursor_Deep_Dive.md
-  - 17_AI_Coding/GitHub_Copilot_Deep_Dive.md
+  - 16_AI_Coding/README.md
+  - 16_AI_Coding/Cursor_Deep_Dive.md
+  - 16_AI_Coding/GitHub_Copilot_Deep_Dive.md
 summary: "代码生成是让大模型根据自然语言描述或上下文自动写出代码的技术。范围从单行补全、函数生成，到多文件项目开发、测试用例生成、代码审查辅助。"
 provenance:
   extracted: 0.8
@@ -60,8 +60,8 @@ updated: 2026-06-16
 
 ## Related
 
-- [[concepts/code-generation-workflow]] — 代码生成工作流
-- [[concepts/ai-agents]] — AI Agent
-- [[concepts/text2sql]] — Text2SQL
-- [[17_AI_Coding/README]] — AI 编程工具
-- [[17_AI_Coding/GitHub_Copilot_Deep_Dive]] — GitHub Copilot 深度解析
+- [[_concepts/code-generation-workflow]] — 代码生成工作流
+- [[_concepts/ai-agents]] — AI Agent
+- [[_concepts/text2sql]] — Text2SQL
+- [[16_AI_Coding/README]] — AI 编程工具
+- [[16_AI_Coding/GitHub_Copilot_Deep_Dive]] — GitHub Copilot 深度解析

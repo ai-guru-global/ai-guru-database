@@ -3,11 +3,11 @@ title: "Helm"
 category: concept
 tags: ["helm", "kubernetes", "package-manager", "chart", "templating", "cncf", "deployment"]
 relationships:
-  - target: "concepts/kubernetes"
+  - target: "_concepts/kubernetes"
     type: used_by
-  - target: "concepts/kustomize"
+  - target: "_concepts/kustomize"
     type: related_to
-  - target: "concepts/argocd"
+  - target: "_concepts/argocd"
     type: related_to
 sources:
   - 12_Architecture_Infrastructure/AI_Infrastructure_2026.md
@@ -92,7 +92,7 @@ helm rollback hami -n kube-system
 
 ## Related
 
-- [[concepts/kubernetes]] — Kubernetes
-- [[concepts/kustomize]] — Kustomize
-- [[concepts/argocd]] — ArgoCD
+- [[_concepts/kubernetes]] — Kubernetes
+- [[_concepts/kustomize]] — Kustomize
+- [[_concepts/argocd]] — ArgoCD
 - [[12_Architecture_Infrastructure/AI_Infrastructure_2026]] — AI 基础设施 2026

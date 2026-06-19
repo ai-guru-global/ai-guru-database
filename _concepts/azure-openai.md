@@ -3,13 +3,13 @@ title: "Azure OpenAI"
 category: concept
 tags: ["azure-openai", "microsoft", "azure", "cloud", "openai", "gpt", "enterprise", "api"]
 relationships:
-  - target: "concepts/cloud-ai-platform"
+  - target: "_concepts/cloud-ai-platform"
     type: extends
-  - target: "concepts/openai"
+  - target: "_concepts/openai"
     type: related_to
-  - target: "concepts/aws-bedrock"
+  - target: "_concepts/aws-bedrock"
     type: related_to
-  - target: "concepts/vertex-ai"
+  - target: "_concepts/vertex-ai"
     type: related_to
 sources:
   - 12_Architecture_Infrastructure/Azure_OpenAI_Deep_Dive.md
@@ -90,7 +90,7 @@ updated: 2026-06-16
 ## Related
 
 - [[12_Architecture_Infrastructure/Azure_OpenAI_Deep_Dive]] — Azure OpenAI 深度解析
-- [[concepts/cloud-ai-platform]] — 云 AI 平台
-- [[concepts/openai]] — OpenAI
-- [[concepts/aws-bedrock]] — AWS Bedrock
-- [[concepts/vertex-ai]] — Google Vertex AI
+- [[_concepts/cloud-ai-platform]] — 云 AI 平台
+- [[_concepts/openai]] — OpenAI
+- [[_concepts/aws-bedrock]] — AWS Bedrock
+- [[_concepts/vertex-ai]] — Google Vertex AI

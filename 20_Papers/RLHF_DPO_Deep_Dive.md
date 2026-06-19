@@ -759,12 +759,12 @@ flowchart TB
 - [深度学习优化](../03_Deep_Learning/Optimization/Optimization.md) — PPO 优化算法
 
 ### 横向关联
-- [Fine-tuning 技术](../04_NLP_LLMs/Fine_tuning_Techniques/) — SFT、LoRA 等微调方法
-- [价值对齐](../19_Ethics_Safety/Value_Alignment/Value_Alignment.md) — AI 安全与对齐全景
+- [Fine-tuning 技术](../05_NLP_LLMs/Fine_tuning_Techniques/) — SFT、LoRA 等微调方法
+- [价值对齐](../17_Ethics_Safety/Value_Alignment/Value_Alignment.md) — AI 安全与对齐全景
 - [强化学习](../06_Reinforcement_Learning/README.md) — PPO 算法原理
 
 ### 进阶方向
-- [AI 安全](../19_Ethics_Safety/AI_Safety_RedTeaming/) — Red Teaming 和安全评估
+- [AI 安全](../17_Ethics_Safety/AI_Safety_RedTeaming/) — Red Teaming 和安全评估
 - [Diffusion Models 深度解读](./Diffusion_Models_Deep_Dive.md) — 扩散模型的对齐方法
 
 ---
@@ -773,6 +773,6 @@ flowchart TB
 
 ## Related
 
-- [[22_Papers/GPT3_Deep_Dive]] — GPT-3 深度解读 (Language Models are Few-Shot Learners) (共享: gpt, openai)
+- [[20_Papers/GPT3_Deep_Dive]] — GPT-3 深度解读 (Language Models are Few-Shot Learners) (共享: gpt, openai)
 
-- [[synthesis/alignment-rlhf|价值对齐 × RLHF：从人类反馈到可扩展监督]]
+- [[_synthesis/alignment-rlhf|价值对齐 × RLHF：从人类反馈到可扩展监督]]

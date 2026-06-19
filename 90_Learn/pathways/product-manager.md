@@ -49,7 +49,7 @@ Stage 3: 工程实践（理解 AI 产品的工程边界）
 
 **🎯 目标**：理解 AI 是什么，它能做什么、不能做什么，建立对 AI 能力的直觉。
 
-**📚 核心概念**：[Stage 0: AI 觉醒](../concepts/stage-0-awakening.md)（全量）
+**📚 核心概念**：[Stage 0: AI 觉醒](../_concepts/stage-0-awakening.md)（全量）
 
 **🔗 深入阅读**：
 - [AI 基础概念入门](../../00_AI_Introduction/AI_Fundamentals.md)
@@ -72,12 +72,12 @@ Stage 3: 工程实践（理解 AI 产品的工程边界）
 
 **🎯 目标**：理解 AI 产品的工程约束，知道 AI 项目为什么常常延期和失败。
 
-**📚 核心概念**：[Stage 1 基础概念](../concepts/stage1-foundation.md) + [Stage 3 工程实践](../concepts/stage3-engineering.md)
+**📚 核心概念**：[Stage 1 基础概念](../_concepts/stage1-foundation.md) + [Stage 3 工程实践](../_concepts/stage3-engineering.md)
 
 **🔗 深入阅读**：
 - [README_for_dummy.md](../../README_for_dummy.md) — 新手导航（快速浏览）
-- [RAG 系统（小白版）](../../11_RAG_Systems/RAG_Systems_for_dummy.md) — 理解 AI + 知识库的工程路径
-- [部署与推理（小白版）](../../09_Deployment_Inference/Deployment_Inference_for_dummy.md) — 理解 AI 的性能与成本
+- [RAG 系统（小白版）](../../14_RAG_Systems/RAG_Systems_for_dummy.md) — 理解 AI + 知识库的工程路径
+- [部署与推理（小白版）](../../10_Deployment_Inference/Deployment_Inference_for_dummy.md) — 理解 AI 的性能与成本
 - [模型评估（小白版）](../../08_Model_Evaluation/Model_Evaluation_for_dummy.md) — 理解 AI 质量评估的复杂性
 
 **💡 产品经理必须理解的技术事实**：
@@ -109,11 +109,11 @@ AI 成本结构：
 
 **🎯 目标**：掌握 AI 产品设计的核心方法论，知道如何将 AI 能力转化为用户价值。
 
-**📚 核心概念**：[Stage 3 工程实践 — Agent / 工作流部分](../concepts/stage3-engineering.md)（重点理解 Agent 能做什么）
+**📚 核心概念**：[Stage 3 工程实践 — Agent / 工作流部分](../_concepts/stage3-engineering.md)（重点理解 Agent 能做什么）
 
 **🔗 深入阅读**：
 - [AI Agent（小白版）](../../06_Reinforcement_Learning/AI_Agents/AI_Agents_for_dummy.md) — 理解 AI Agent 的能力边界
-- [AI 工作流（速查版）](../../13_Agent_Production/Agent_Workflow/Workflow-in-nutshell.md) — 理解 AI 工作流设计
+- [AI 工作流（速查版）](../../15_Agent_Production/Agent_Workflow/Workflow-in-nutshell.md) — 理解 AI 工作流设计
 - [AI 工具与实践指南](../../00_AI_Introduction/AI_Technology_Landscape.md) — 理解 AI 工具生态
 
 **💡 AI 产品设计的核心原则**：
@@ -171,7 +171,7 @@ AI 成本结构：
 **📚 核心概念**：综合 Stage 0-3
 
 **🔗 行业案例深入阅读**：
-- [AI 在各行业的应用概览](../../20_AI_Applications_Industry/AI_Applications_Industry.md)
+- [AI 在各行业的应用概览](../../18_AI_Applications_Industry/AI_Applications_Industry.md)
 - [金融行业 AI 应用](../../13_AI_Applications_Industry/Finance/)
 - [医疗健康 AI 应用](../../13_AI_Applications_Industry/Healthcare/)
 - [教育行业 AI 应用](../../13_AI_Applications_Industry/Education/)
@@ -196,7 +196,7 @@ AI 成本结构：
 
 **🎯 目标**：理解 AI 的发展趋势，制定 AI 产品路线图。
 
-**📚 核心概念**：[Stage 4 前沿探索](../concepts/stage4-frontier.md)（浏览为主）
+**📚 核心概念**：[Stage 4 前沿探索](../_concepts/stage4-frontier.md)（浏览为主）
 
 **🔗 深入阅读**：
 - [AI 未来趋势展望](../../00_AI_Introduction/AI_Future_Trends.md)

@@ -79,7 +79,7 @@ updated: '2026-05-31'
 
 - **通俗类比**：训练像医生读医学院（长期、高强度）；推理像医生给病人看病（快速、精准）。
 - **入门阅读**：[监督学习入门](../../02_Machine_Learning/Supervised_Learning/Supervised_Learning_for_dummy.md)
-- **深入学习**：[部署与推理](../../09_Deployment_Inference/Deployment_Inference_for_dummy.md)
+- **深入学习**：[部署与推理](../../10_Deployment_Inference/Deployment_Inference_for_dummy.md)
 - **关联概念**：模型、过拟合、部署
 
 ### 5. 损失函数 (Loss Function)

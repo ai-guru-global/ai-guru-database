@@ -21,4 +21,4 @@ lifecycle: reviewed
 - **模板化**: 可直接复制使用的提示词模板
 - **多场景覆盖**: 写作、编程、分析、创意等
 
-> **关联**: -> [[04_NLP_LLMs/Prompt_Engineering|提示词工程]] | [[references/prompt-engineering-nirdiamant|Prompt 工程技术大全]]
+> **关联**: -> [[05_NLP_LLMs/Prompt_Engineering|提示词工程]] | [[_references/prompt-engineering-nirdiamant|Prompt 工程技术大全]]

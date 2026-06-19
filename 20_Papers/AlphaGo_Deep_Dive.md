@@ -370,6 +370,6 @@ flowchart TB
 
 ## Related
 
-- [[concepts/reinforcement-learning]] — 强化学习基础
-- [[concepts/deep-reinforcement-learning]] — 深度强化学习
-- [[concepts/ai-agents]] — AI 智能体
+- [[_concepts/reinforcement-learning]] — 强化学习基础
+- [[_concepts/deep-reinforcement-learning]] — 深度强化学习
+- [[_concepts/ai-agents]] — AI 智能体

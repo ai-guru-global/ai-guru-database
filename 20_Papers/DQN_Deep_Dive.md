@@ -287,6 +287,6 @@ flowchart TB
 
 ## Related
 
-- [[concepts/reinforcement-learning]] — 强化学习基础
-- [[concepts/deep-reinforcement-learning]] — 深度强化学习
-- [[concepts/neural-networks]] — 神经网络
+- [[_concepts/reinforcement-learning]] — 强化学习基础
+- [[_concepts/deep-reinforcement-learning]] — 深度强化学习
+- [[_concepts/neural-networks]] — 神经网络

@@ -71,10 +71,10 @@ updated: "2026-06-12"
 
 - **不覆盖**：具体的公平性优化算法实现（如 Fairlearn 的 `ExponentiatedGradient`、`GridSearch`）、差分隐私训练、对抗样本防御、AI 法律法规细节。
 - **延伸**：
-  - 想了解 AI 伦理全景 → [[19_Ethics_Safety/Ethics-in-nutshell]]
-  - 想了解企业级 AI 治理、合规框架与落地流程 → [[19_Ethics_Safety/AI_Governance_Compliance_2026]]
-  - 想了解生成式 AI 的安全风险与缓解 → [[19_Ethics_Safety/GenAI_L03_Using_GenAI_Responsibly]]
-  - 想了解红队测试与模型安全评估 → [[19_Ethics_Safety/AI_Red_Teaming_Guide]]、[[19_Ethics_Safety/Safety_Evaluation_Framework]]
+  - 想了解 AI 伦理全景 → [[17_Ethics_Safety/Ethics-in-nutshell]]
+  - 想了解企业级 AI 治理、合规框架与落地流程 → [[17_Ethics_Safety/AI_Governance_Compliance_2026]]
+  - 想了解生成式 AI 的安全风险与缓解 → [[17_Ethics_Safety/GenAI_L03_Using_GenAI_Responsibly]]
+  - 想了解红队测试与模型安全评估 → [[17_Ethics_Safety/AI_Red_Teaming_Guide]]、[[17_Ethics_Safety/Safety_Evaluation_Framework]]
 
 ---
 
@@ -82,5 +82,5 @@ updated: "2026-06-12"
 
 - 课程索引：[[90_Learn/courses/microsoft/microsoft_ai_for_beginners]]
 - 本库相关页面：
-  - [[19_Ethics_Safety/Ethics-in-nutshell]]
-  - [[19_Ethics_Safety/AI_Governance_Compliance_2026]]
+  - [[17_Ethics_Safety/Ethics-in-nutshell]]
+  - [[17_Ethics_Safety/AI_Governance_Compliance_2026]]

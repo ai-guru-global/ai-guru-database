@@ -37,8 +37,8 @@ updated: 2026-05-31
 
 ## Related
 
-- [[23_Interviews/NLP_Engineer/company_level_question_bank]] — NLP Engineer 按公司/级别区分的题库 (共享: career, experience, interviews, nlp, practitioners)
-- [[23_Interviews/NLP_Engineer/interview_answers]] — NLP Engineer 面试题实例答案 (共享: career, experience, interviews, nlp, practitioners)
-- [[23_Interviews/NLP_Engineer/question_bank]] — NLP Engineer 题库 (共享: career, experience, interviews, nlp, practitioners)
-- [[23_Interviews/AI_Data_Analyst/company_level_question_bank]] — AI Data Analyst 按公司/级别区分的题库 (共享: career, experience, interviews, practitioners)
-- [[23_Interviews/Research_Scientist/interview_preparing.md|interview_preparing]]
+- [[21_Interviews/NLP_Engineer/company_level_question_bank]] — NLP Engineer 按公司/级别区分的题库 (共享: career, experience, interviews, nlp, practitioners)
+- [[21_Interviews/NLP_Engineer/interview_answers]] — NLP Engineer 面试题实例答案 (共享: career, experience, interviews, nlp, practitioners)
+- [[21_Interviews/NLP_Engineer/question_bank]] — NLP Engineer 题库 (共享: career, experience, interviews, nlp, practitioners)
+- [[21_Interviews/AI_Data_Analyst/company_level_question_bank]] — AI Data Analyst 按公司/级别区分的题库 (共享: career, experience, interviews, practitioners)
+- [[21_Interviews/Research_Scientist/interview_preparing.md|interview_preparing]]

@@ -1211,7 +1211,7 @@ class Muon(torch.optim.Optimizer):
 | Sophia | 需自定义 | ZeRO-1/2 | HVP 需额外 backward |
 
 > 参见 [Distributed Training 2026](./Distributed_Training_2026.md) 中 FSDP 和 DeepSpeed ZeRO 如何分片优化器状态。
-> 参见 [LLM Architectures](../04_NLP_LLMs/LLM_Architectures/LLM_Architectures.md) 了解不同 Transformer 组件（Attention、FFN、LayerNorm）对优化器的差异化需求。
+> 参见 [LLM Architectures](../05_NLP_LLMs/LLM_Architectures/LLM_Architectures.md) 了解不同 Transformer 组件（Attention、FFN、LayerNorm）对优化器的差异化需求。
 
 ---
 
@@ -1237,7 +1237,7 @@ class Muon(torch.optim.Optimizer):
 - [Training Optimization 2026](./Training_Optimization_2026.md) — FlashAttention、梯度检查点等全栈优化
 - [Training Monitoring 2026](./Training_Monitoring_2026.md) — 训练监控与实验追踪
 - [Scaling Laws and Training Dynamics](./Scaling_Laws_and_Training_Dynamics.md) — 训练动态与 scaling law
-- [LLM Architectures](../04_NLP_LLMs/LLM_Architectures/LLM_Architectures.md) — Transformer 架构与优化器的关系
+- [LLM Architectures](../05_NLP_LLMs/LLM_Architectures/LLM_Architectures.md) — Transformer 架构与优化器的关系
 - [Optimization 基础](../03_Deep_Learning/Optimization/Optimization.md) — 深度学习优化基础：梯度下降、凸优化、Loss Landscape
 
 ---

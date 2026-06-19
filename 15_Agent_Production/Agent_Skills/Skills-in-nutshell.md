@@ -35,7 +35,7 @@ EOF
 **核心原则**：
 1. `description` 决定 Skill **会不会被触发**（最关键）
 2. `SKILL.md` body 决定 Skill **触发后怎么做**
-3. 详细内容放 `references/`，按需加载
+3. 详细内容放 `_references/`，按需加载
 4. 保持 **< 500 行**、**< 5000 tokens**
 
 ---
@@ -69,7 +69,7 @@ Tier 2: 指令加载（< 5000 tokens）
     → 告诉 Agent"具体怎么做"
 
 Tier 3: 资源按需（按需变化）
-    → 指令中引用时才加载 scripts/references/assets
+    → 指令中引用时才加载 scripts/_references/assets
     → 提供"执行所需的工具和参考"
 ```
 
@@ -97,7 +97,7 @@ Tier 3: 资源按需（按需变化）
 skill-name/                 ← 目录名必须等于 name 字段
 ├── SKILL.md                ← 必需：元数据 + Markdown 指令
 ├── scripts/                ← 可选：可执行脚本
-├── references/             ← 可选：参考文档（按需加载）
+├── _references/             ← 可选：参考文档（按需加载）
 ├── assets/                 ← 可选：模板、图片、静态资源
 └── evals/                  ← 可选：评估测试用例
     ├── evals.json
@@ -111,7 +111,7 @@ skill-name/                 ← 目录名必须等于 name 字段
 | **L1** | 纯 `SKILL.md` | 编码风格、审查清单、简单工作流 |
 | **L2** | `SKILL.md` + 一次性命令 | 调用现有工具链（`npx`/`uvx`/`deno run`） |
 | **L3** | `SKILL.md` + `scripts/` | 需要自定义逻辑的复杂工作流 |
-| **L4** | 完整包（含 `references/` + `assets/` + `evals/`） | 生产级、可评估、可分发 |
+| **L4** | 完整包（含 `_references/` + `assets/` + `evals/`） | 生产级、可评估、可分发 |
 
 ---
 
@@ -212,7 +212,7 @@ Markdown body 没有固定格式限制，推荐包含以下章节：
 输出: ...
 ```
 
-> ⚠️ **约束**：SKILL.md body 建议保持 **< 500 行**、**< 5000 tokens**。详细参考资料移至 `references/` 目录。
+> ⚠️ **约束**：SKILL.md body 建议保持 **< 500 行**、**< 5000 tokens**。详细参考资料移至 `_references/` 目录。
 
 ---
 
@@ -317,8 +317,8 @@ PDF (Portable Document Format) 文件是一种常见文件格式...
 
 ```
 SKILL.md (< 500 行, < 5000 tokens)
-  → references/api-errors.md (只在 API 返回非 200 时加载)
-  → references/advanced-patterns.md (只在处理复杂场景时加载)
+  → _references/api-errors.md (只在 API 返回非 200 时加载)
+  → _references/advanced-patterns.md (只在处理复杂场景时加载)
 ```
 
 关键是告诉 Agent **何时**加载每个文件。
@@ -407,7 +407,7 @@ import pandas as pd
 |------|------|---------|
 | **Description 太宽泛** | Skill 在不相关任务时也被触发 | 添加明确的"不要用于"边界 |
 | **Description 太窄** | Skill 在应该触发时不触发 | 包含更多关键词和场景描述 |
-| **指令太长** | Agent 丢失重点，输出质量下降 | 保持 `< 500` 行，用 `references/` 分流 |
+| **指令太长** | Agent 丢失重点，输出质量下降 | 保持 `< 500` 行，用 `_references/` 分流 |
 | **缺少边缘情况** | 特定输入时 Agent 犯错 | 添加 **Gotchas** 章节 |
 | **脚本交互式** | Agent 运行时挂起 | 所有输入通过 CLI 参数或环境变量 |
 | **过度规定** | Agent 无法灵活适应变化 | 只在脆弱操作处精确指定 |
@@ -457,7 +457,7 @@ npx skills-ref validate .agents/skills/my-skill
 引用其他文件时，使用**从 Skill 根目录的相对路径**：
 
 ```markdown
-See [the reference guide](references/REFERENCE.md) for details.
+See [the reference guide](_references/REFERENCE.md) for details.
 
 Run the extraction script:
 `scripts/extract.py`
@@ -678,7 +678,7 @@ description: React + Next.js performance optimization...
 
 ## Related
 
-- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
-- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
-- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
-- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)
+- [[15_Agent_Production/Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
+- [[15_Agent_Production/Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[15_Agent_Production/Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[15_Agent_Production/Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)

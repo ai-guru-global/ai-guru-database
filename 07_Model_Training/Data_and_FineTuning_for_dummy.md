@@ -138,10 +138,10 @@ RS-LoRA 把缩放改成与 √r 相关，让小 rank 也能稳定学习。
 
 ## Related
 
-- [[concepts/data-cleaning-pipeline|数据清洗 Pipeline]]
-- [[concepts/dora|DoRA]]
-- [[concepts/rs-lora|RS-LoRA]]
-- [[concepts/lora-peft|LoRA 与参数高效微调]]
-- [[concepts/llm-data-engineering|大模型数据工程]]
+- [[_concepts/data-cleaning-pipeline|数据清洗 Pipeline]]
+- [[_concepts/dora|DoRA]]
+- [[_concepts/rs-lora|RS-LoRA]]
+- [[_concepts/lora-peft|LoRA 与参数高效微调]]
+- [[_concepts/llm-data-engineering|大模型数据工程]]
 - [[07_Model_Training/Data_Curation_and_Mixture_2026|数据策展与配比 2026]]
-- [[04_NLP_LLMs/Fine_tuning_Techniques/LoRA_QLoRA_SFT_RLHF_DPO_in_Detail|LoRA/QLoRA/SFT/RLHF/DPO 详解]]
+- [[05_NLP_LLMs/Fine_tuning_Techniques/LoRA_QLoRA_SFT_RLHF_DPO_in_Detail|LoRA/QLoRA/SFT/RLHF/DPO 详解]]

@@ -53,7 +53,7 @@ updated: "2026-06-15"
 - **交付物**：更新 6 个已升级专题的对比表。
 
 #### 1.2 建立全局选型决策页
-- **目标**：新建 `09_Deployment_Inference/LLM_Inference_Engine_Selection_Guide.md`
+- **目标**：新建 `10_Deployment_Inference/LLM_Inference_Engine_Selection_Guide.md`
 - **内容**：
   - 一图流：所有引擎横向对比（吞吐量、延迟、易用性、成本、生态）
   - 决策树：按「延迟敏感 / 吞吐敏感 / 本地 / 云端 / 中文 / 多模态 / 预算」给出推荐
@@ -62,7 +62,7 @@ updated: "2026-06-15"
 - **交付物**：独立的 Selection Guide 专题页。
 
 #### 1.3 补齐概念页反向链接
-- **目标**：从 `concepts/paged-attention.md`、`concepts/radix-attention.md`、`concepts/continuous-batching.md` 等概念页反向链接到对应引擎专题。
+- **目标**：从 `_concepts/paged-attention.md`、`_concepts/radix-attention.md`、`_concepts/continuous-batching.md` 等概念页反向链接到对应引擎专题。
 - **动作**：
   - 在各专题中增加「相关概念」小节
   - 在概念页底部增加「相关引擎」Related 链接
@@ -175,8 +175,8 @@ updated: "2026-06-15"
 #### 5.1 RAG / Agent / Gateway 联动
 - **目标**：在相关目录中推荐合适的推理引擎。
 - **动作**：
-  - 在 `11_RAG_Systems/` 相关专题中链接推理引擎专题
-  - 在 `13_Agent_Production/` 中补充 Agent 推理延迟优化
+  - 在 `14_RAG_Systems/` 相关专题中链接推理引擎专题
+  - 在 `15_Agent_Production/` 中补充 Agent 推理延迟优化
   - 在 `14_AI_Gateway/` 中补充网关 + 多推理引擎路由策略
 - **交付物**：更新 3-5 个跨目录专题。
 
@@ -209,10 +209,10 @@ updated: "2026-06-15"
 ## 四、验收标准
 
 1. 本计划文件已保存至 `92_Plan/LLM_Inference_Engine_Content_Improvement_Plan.md`
-2. `09_Deployment_Inference/LLM_Inference_Engine_Selection_Guide.md` 已创建，≥500 行
+2. `10_Deployment_Inference/LLM_Inference_Engine_Selection_Guide.md` 已创建，≥500 行
 3. Ollama、LMDeploy、BentoML、LiteRT 专题均 ≥550 行
 4. 新增至少 2 个云推理 API 专题，每个 ≥400 行
-5. `09_Deployment_Inference/README.md` 导航已更新
+5. `10_Deployment_Inference/README.md` 导航已更新
 6. 所有新增/修改文件通过 `check_links.py` 检查，无新增断链
 7. 对比维度在核心引擎专题中保持一致
 
@@ -220,13 +220,13 @@ updated: "2026-06-15"
 
 ## 五、相关资源
 
-- [[09_Deployment_Inference/README|模型部署与推理目录]]
-- [[09_Deployment_Inference/vLLM_Deep_Dive|vLLM 深度解析]]
-- [[09_Deployment_Inference/SGLang_Deep_Dive|SGLang 深度解析]]
-- [[09_Deployment_Inference/TensorRT_LLM_Deep_Dive|TensorRT-LLM 深度解析]]
-- [[09_Deployment_Inference/llama_cpp_Deep_Dive|llama.cpp 深度解析]]
-- [[09_Deployment_Inference/TGI_Deep_Dive|TGI 深度解析]]
-- [[09_Deployment_Inference/Groq_Deep_Dive|Groq 深度解析]]
+- [[10_Deployment_Inference/README|模型部署与推理目录]]
+- [[10_Deployment_Inference/vLLM_Deep_Dive|vLLM 深度解析]]
+- [[10_Deployment_Inference/SGLang_Deep_Dive|SGLang 深度解析]]
+- [[10_Deployment_Inference/TensorRT_LLM_Deep_Dive|TensorRT-LLM 深度解析]]
+- [[10_Deployment_Inference/llama_cpp_Deep_Dive|llama.cpp 深度解析]]
+- [[10_Deployment_Inference/TGI_Deep_Dive|TGI 深度解析]]
+- [[10_Deployment_Inference/Groq_Deep_Dive|Groq 深度解析]]
 
 ---
 

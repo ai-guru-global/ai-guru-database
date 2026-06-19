@@ -2,7 +2,7 @@
 title: AI 智能体 × 强化学习
 category: synthesis
 tags: ["ai-agents", "reinforcement-learning", "react", "planning", "tool-use", "mcp"]
-sources: [concepts/ai-agents.md, concepts/reinforcement-learning.md]
+sources: [_concepts/ai-agents.md, _concepts/reinforcement-learning.md]
 created: 2026-05-31T21:30:00+08:00
 updated: 2026-05-31T21:30:00+08:00
 summary: "智能体的行动决策本质上是序贯决策问题：ReAct 框架是强化学习的软约束版本，而 Tool Calling 则是将动作空间从离散 token 扩展到外部 API 的关键跃迁。"
@@ -19,7 +19,7 @@ lifecycle_changed: 2026-05-31
 
 ## The Connection
 
-[[concepts/ai-agents]] 和 [[concepts/reinforcement-learning]] 看似属于不同世代的技术——Agent 是 2024-2026 年的热词，RL 则是 2016-2019 年的明星。但它们的数学本质高度一致：**两者都是在不确定性环境中，通过试错学习最优行为策略的序贯决策系统。** ReAct 框架中的"推理→行动→观察"循环，就是 RL 中"状态→动作→奖励→下一状态"循环的 LLM 化表达。
+[[_concepts/ai-agents]] 和 [[_concepts/reinforcement-learning]] 看似属于不同世代的技术——Agent 是 2024-2026 年的热词，RL 则是 2016-2019 年的明星。但它们的数学本质高度一致：**两者都是在不确定性环境中，通过试错学习最优行为策略的序贯决策系统。** ReAct 框架中的"推理→行动→观察"循环，就是 RL 中"状态→动作→奖励→下一状态"循环的 LLM 化表达。
 
 ## Where They Co-occur
 

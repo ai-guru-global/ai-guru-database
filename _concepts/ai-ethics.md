@@ -4,11 +4,11 @@ category: concepts
 tags: [ai, 伦理, 偏见, 隐私, 安全, 治理, 社会影响]
 aliases: [AI Ethics, AI伦理与社会, 负责任AI]
 relationships:
-  - target: "[[concepts/ai-fundamentals]]"
+  - target: "[[_concepts/ai-fundamentals]]"
     type: related_to
-  - target: "concepts/ai-future-trends"
+  - target: "_concepts/ai-future-trends"
     type: related_to
-  - target: "concepts/ai-history"
+  - target: "_concepts/ai-history"
     type: related_to
 sources: [00_AI_Introduction/AI_Ethics_Society.md]
 summary: AI伦理涵盖算法偏见、隐私保护、就业影响、安全可控和全球治理等核心议题，需要在技术进步与社会价值之间寻找平衡。
@@ -155,9 +155,9 @@ AI对就业的三重效应：
 
 ## 来源
 
-- references/00_AI_Introduction/AI_Ethics_Society
+- _references/00_AI_Introduction/AI_Ethics_Society
 
 ## Related
 
-- [[concepts/ai-future-trends]] — AI未来趋势 (共享: ai, 社会影响)
-- [[synthesis/ai-ethics-future]]
+- [[_concepts/ai-future-trends]] — AI未来趋势 (共享: ai, 社会影响)
+- [[_synthesis/ai-ethics-future]]

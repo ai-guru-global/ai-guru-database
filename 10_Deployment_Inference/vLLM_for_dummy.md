@@ -183,8 +183,8 @@ flowchart LR
 
 ## Related
 
-- [[09_Deployment_Inference/vLLM_Deep_Dive|vLLM 深度解析]]
-- [[09_Deployment_Inference/LLM_Inference_Engine_Selection_Guide|LLM 推理引擎选型指南]]
-- [[concepts/paged-attention|PagedAttention 概念卡片]]
-- [[concepts/kv-cache|KV Cache 概念卡片]]
-- [[concepts/continuous-batching|Continuous Batching 概念卡片]]
+- [[10_Deployment_Inference/vLLM_Deep_Dive|vLLM 深度解析]]
+- [[10_Deployment_Inference/LLM_Inference_Engine_Selection_Guide|LLM 推理引擎选型指南]]
+- [[_concepts/paged-attention|PagedAttention 概念卡片]]
+- [[_concepts/kv-cache|KV Cache 概念卡片]]
+- [[_concepts/continuous-batching|Continuous Batching 概念卡片]]

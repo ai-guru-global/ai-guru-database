@@ -114,12 +114,12 @@ updated: "2026-06-12"
   - 三维目标检测、目标跟踪、视频检测。
 
 - **延伸**：
-  - 想了解计算机视觉整体脉络：[[05_Computer_Vision/README]]
-  - 想深入图像分类与检测基础：[[05_Computer_Vision/Image_Classification_Detection/Image_Classification_Detection]]
+  - 想了解计算机视觉整体脉络：[[04_Computer_Vision/README]]
+  - 想深入图像分类与检测基础：[[04_Computer_Vision/Image_Classification_Detection/Image_Classification_Detection]]
   - 想学习模型训练与微调：[[07_Model_Training/Fine_tuning_Strategies]]
-  - 想了解目标检测的工业部署：[[09_Deployment_Inference/README]]
+  - 想了解目标检测的工业部署：[[10_Deployment_Inference/README]]
 
 ## 相关阅读
 
 - 课程索引：[[90_Learn/courses/microsoft/microsoft_ai_for_beginners]]
-- 本库相关页面：[[05_Computer_Vision/Image_Classification_Detection/Image_Classification_Detection]]
+- 本库相关页面：[[04_Computer_Vision/Image_Classification_Detection/Image_Classification_Detection]]

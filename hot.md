@@ -10,9 +10,9 @@ title: Hot Pages
 
 > 通过 ModelScope 官方 API 全量抓取 15 家中国大模型厂商的组织信息与已发布模型清单，共 1,621 个官方模型、1.97 亿次累计下载。
 
-### 模型目录与索引（04_NLP_LLMs/Chinese_LLM_Ecosystem/）
-- [[04_NLP_LLMs/Chinese_LLM_Ecosystem/ModelScope_Model_Catalog]] — 15 家厂商 ModelScope 模型目录（组织信息 + Top 模型精选 + 许可/任务统计）
-- [[04_NLP_LLMs/Chinese_LLM_Ecosystem/ModelScope_Model_Index]] — 全量 1,621 个模型完整索引表（按厂商分组、下载量排序）
+### 模型目录与索引（05_NLP_LLMs/Chinese_LLM_Ecosystem/）
+- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/ModelScope_Model_Catalog]] — 15 家厂商 ModelScope 模型目录（组织信息 + Top 模型精选 + 许可/任务统计）
+- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/ModelScope_Model_Index]] — 全量 1,621 个模型完整索引表（按厂商分组、下载量排序）
 
 ### 原始数据（_sources/modelscope/）
 - `_sources/modelscope/README.md` — 数据源说明 + 抓取方法 + org→namespace 映射
@@ -24,19 +24,19 @@ title: Hot Pages
 
 > 完成最后两本未蒸馏书（llm_internals、ai_beginner_guide 剩余章节），yeasy 9 本书全部融入 wiki。
 
-### LLM 原理与架构（4 页，04_NLP_LLMs/）
-- [[04_NLP_LLMs/LLM_Internals_Architecture]] — 序列建模演进、注意力机制、Transformer 组件、位置编码
-- [[04_NLP_LLMs/LLM_Internals_Training]] — 预训练/Scaling Law、AdamW、分布式训练、对齐 SFT/RLHF/DPO/LoRA
-- [[04_NLP_LLMs/LLM_Internals_Inference]] — 解码策略、KV Cache/GQA/MLA、Flash Attention、量化、投机解码
-- [[04_NLP_LLMs/LLM_Internals_Models_Frontiers]] — BERT/GPT/Llama/DeepSeek 家族、MoE/SSM/测试时计算
+### LLM 原理与架构（4 页，05_NLP_LLMs/）
+- [[05_NLP_LLMs/LLM_Internals_Architecture]] — 序列建模演进、注意力机制、Transformer 组件、位置编码
+- [[05_NLP_LLMs/LLM_Internals_Training]] — 预训练/Scaling Law、AdamW、分布式训练、对齐 SFT/RLHF/DPO/LoRA
+- [[05_NLP_LLMs/LLM_Internals_Inference]] — 解码策略、KV Cache/GQA/MLA、Flash Attention、量化、投机解码
+- [[05_NLP_LLMs/LLM_Internals_Models_Frontiers]] — BERT/GPT/Llama/DeepSeek 家族、MoE/SSM/测试时计算
 
 ### AI 入门基础（6 页，跨目录）
 - [[00_AI_Introduction/AI_Beginner_Fundamentals]] — AI 定义/历史/强vs弱、AI⊃ML⊃DL、技术生态
 - [[02_Machine_Learning/ML_For_Beginners]] — 四大学习范式、评估指标与选型
 - [[03_Deep_Learning/Deep_Learning_For_Beginners]] — 神经网络、梯度下降、主流架构与局限
-- [[04_NLP_LLMs/LLM_For_Beginners]] — Next Token Prediction、注意力、预训练→微调→RLHF
+- [[05_NLP_LLMs/LLM_For_Beginners]] — Next Token Prediction、注意力、预训练→微调→RLHF
 - [[00_AI_Introduction/AI_Application_Scenarios]] — BROKE 框架、上下文工程、五大应用场景
-- [[19_Ethics_Safety/AI_Ethics_And_Future_For_Beginners]] — 伦理/对齐、就业、AGI、AI 硬件与量子
+- [[17_Ethics_Safety/AI_Ethics_And_Future_For_Beginners]] — 伦理/对齐、就业、AGI、AI 硬件与量子
 
 ---
 
@@ -44,21 +44,21 @@ title: Hot Pages
 
 > 在 26 页初版基础上进一步消化蒸馏：概念原子化、跨书综合、速查表、去重压缩。
 
-### 概念原子页（8 页，concepts/）
-- [[concepts/mcp]] — MCP 模型上下文协议
-- [[concepts/agent-loop]] — Agent Loop 运行时循环
-- [[concepts/agent-harness]] — Agent Harness 执行治理层
-- [[concepts/context-engineering]] — 上下文工程
-- [[concepts/prompt-injection]] — 提示注入攻击与防御
-- [[concepts/hallucination]] — LLM 幻觉根因与缓解
-- [[concepts/a2a-protocol]] — A2A 智能体互操作协议
-- [[concepts/guardrails]] — AI 护栏体系
+### 概念原子页（8 页，_concepts/）
+- [[_concepts/mcp]] — MCP 模型上下文协议
+- [[_concepts/agent-loop]] — Agent Loop 运行时循环
+- [[_concepts/agent-harness]] — Agent Harness 执行治理层
+- [[_concepts/context-engineering]] — 上下文工程
+- [[_concepts/prompt-injection]] — 提示注入攻击与防御
+- [[_concepts/hallucination]] — LLM 幻觉根因与缓解
+- [[_concepts/a2a-protocol]] — A2A 智能体互操作协议
+- [[_concepts/guardrails]] — AI 护栏体系
 
 ### 跨书综合页（4 页，_meta/）
-- [[_meta/synthesis-engineering-evolution]] — 提示词→上下文→Harness 三阶演进
-- [[_meta/synthesis-llm-security-pipeline]] — 安全全链路：训练投毒到推理防御
-- [[_meta/synthesis-architecture-selection-guide]] — 架构选型决策树
-- [[_meta/synthesis-memory-systems]] — 记忆体系全景：KV Cache 到知识图谱
+- [[_meta/_synthesis-engineering-evolution]] — 提示词→上下文→Harness 三阶演进
+- [[_meta/_synthesis-llm-security-pipeline]] — 安全全链路：训练投毒到推理防御
+- [[_meta/_synthesis-architecture-selection-guide]] — 架构选型决策树
+- [[_meta/_synthesis-memory-systems]] — 记忆体系全景：KV Cache 到知识图谱
 
 ### 速查表（3 页，_meta/）
 - [[_meta/cheatsheet-llm-inference]] — LLM 推理技术速查
@@ -87,9 +87,9 @@ title: Hot Pages
 - 📊 **Benchmark**: FrontierSWE 仅落后 Opus 4.8 1% (超 GPT-5.5 / Opus 4.7), Terminal-Bench 2.1 较 GLM-5.1 +17.5%
 
 ### 更新页面
-- [[04_NLP_LLMs/Chinese_LLM_Ecosystem/GLM_Zhipu_Deep_Dive]] — 新增 §"GLM-5.2 正式发布与开源详解" (9 小节, 含架构/国产算力/部署/Agent 产品/未来路线)
-- [[04_NLP_LLMs/Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]] — GLM 行升级到 GLM-5.2, 国产算力适配列扩展为 8 家
-- [[04_NLP_LLMs/Chinese_LLM_Ecosystem/README]] — 第一梯队 GLM 行更新
+- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/GLM_Zhipu_Deep_Dive]] — 新增 §"GLM-5.2 正式发布与开源详解" (9 小节, 含架构/国产算力/部署/Agent 产品/未来路线)
+- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]] — GLM 行升级到 GLM-5.2, 国产算力适配列扩展为 8 家
+- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/README]] — 第一梯队 GLM 行更新
 - [[_sources/wechat/2026-06-glm-5.2-release]] — 原文存档
 
 ### 信源
@@ -102,17 +102,17 @@ title: Hot Pages
 ## 2026-06-16 Yeasy AI 知识库系列融合（26 页）
 
 ### 提示词与上下文工程
-- [[04_NLP_LLMs/Prompt_Engineering/Prompt_Engineering_Complete_Guide]] — 提示词工程核心技术
-- [[04_NLP_LLMs/Prompt_Engineering/Prompt_Engineering_Advanced_Apps]] — 提示词高级应用
-- [[04_NLP_LLMs/Prompt_Engineering/Prompt_Engineering_Templates_Patterns]] — 模板库与反模式
-- [[04_NLP_LLMs/Context_Engineering_Guide]] — 上下文工程权威指南
-- [[04_NLP_LLMs/Context_Engineering_Patterns]] — 上下文工程模式
+- [[05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering_Complete_Guide]] — 提示词工程核心技术
+- [[05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering_Advanced_Apps]] — 提示词高级应用
+- [[05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering_Templates_Patterns]] — 模板库与反模式
+- [[05_NLP_LLMs/Context_Engineering_Guide]] — 上下文工程权威指南
+- [[05_NLP_LLMs/Context_Engineering_Patterns]] — 上下文工程模式
 
 ### LLM 原理与架构
-- [[04_NLP_LLMs/Transformer_Deep_Dive]] — Transformer 深度解析
-- [[04_NLP_LLMs/LLM_Training_Deep_Dive]] — LLM 训练深度解析
-- [[04_NLP_LLMs/LLM_Inference_Deep_Dive]] — LLM 推理深度解析
-- [[04_NLP_LLMs/LLM_Architecture_Evolution]] — LLM 架构演进
+- [[05_NLP_LLMs/Transformer_Deep_Dive]] — Transformer 深度解析
+- [[05_NLP_LLMs/LLM_Training_Deep_Dive]] — LLM 训练深度解析
+- [[05_NLP_LLMs/LLM_Inference_Deep_Dive]] — LLM 推理深度解析
+- [[05_NLP_LLMs/LLM_Architecture_Evolution]] — LLM 架构演进
 
 ### AI 入门与新架构
 - [[00_AI_Introduction/AI_Reasoning_Models_Guide]] — 推理模型指南
@@ -120,23 +120,23 @@ title: Hot Pages
 - [[00_AI_Introduction/AI_Multimodal_GenAI]] — 多模态与生成式 AI
 
 ### Claude 与 AI 编码
-- [[17_AI_Coding/02_Tools/Claude_Complete_Guide]] — Claude 完整指南
-- [[17_AI_Coding/02_Tools/Claude_Code_Deep_Dive]] — Claude Code 深度解析
-- [[17_AI_Coding/01_Theory/Claude_Agent_Architecture]] — Claude Agent 架构
+- [[16_AI_Coding/Tools/Claude_Complete_Guide]] — Claude 完整指南
+- [[16_AI_Coding/Tools/Claude_Code_Deep_Dive]] — Claude Code 深度解析
+- [[16_AI_Coding/Theory/Claude_Agent_Architecture]] — Claude Agent 架构
 
 ### 智能体与 Harness
-- [[13_Agent_Production/Agent_Foundations/Agentic_AI_Complete_Guide]] — 智能体 AI 完整指南
-- [[13_Agent_Production/Agent_Foundations/Multi_Agent_Systems_Guide]] — 多智能体系统
-- [[13_Agent_Production/Agent_Workflow/AgentOps_Production_Guide]] — AgentOps 生产指南
-- [[13_Agent_Production/Agent_Harness/Harness_Engineering_Complete_Guide]] — Harness 工程完整指南
-- [[13_Agent_Production/Agent_Harness/Harness_Core_Subsystems]] — Harness 核心子系统
-- [[13_Agent_Production/Agent_Harness/Harness_Production_Security]] — Harness 生产安全
+- [[15_Agent_Production/Agent_Foundations/Agentic_AI_Complete_Guide]] — 智能体 AI 完整指南
+- [[15_Agent_Production/Agent_Foundations/Multi_Agent_Systems_Guide]] — 多智能体系统
+- [[15_Agent_Production/Agent_Workflow/AgentOps_Production_Guide]] — AgentOps 生产指南
+- [[15_Agent_Production/Agent_Harness/Harness_Engineering_Complete_Guide]] — Harness 工程完整指南
+- [[15_Agent_Production/Agent_Harness/Harness_Core_Subsystems]] — Harness 核心子系统
+- [[15_Agent_Production/Agent_Harness/Harness_Production_Security]] — Harness 生产安全
 
 ### OpenClaw
-- [[13_Agent_Production/23_OpenClaw_Ecosystem/OpenClaw_Complete_Guide]] — OpenClaw 完整指南
-- [[13_Agent_Production/23_OpenClaw_Ecosystem/OpenClaw_Internals]] — OpenClaw 内部实现
+- [[15_Agent_Production/OpenClaw_Ecosystem/OpenClaw_Complete_Guide]] — OpenClaw 完整指南
+- [[15_Agent_Production/OpenClaw_Ecosystem/OpenClaw_Internals]] — OpenClaw 内部实现
 
 ### 安全
-- [[19_Ethics_Safety/LLM_Security_Complete_Guide]] — LLM 安全完整指南
-- [[19_Ethics_Safety/LLM_Security_Defense_Guide]] — LLM 安全防御指南
-- [[19_Ethics_Safety/Agent_RAG_Security]] — Agent 与 RAG 安全
+- [[17_Ethics_Safety/LLM_Security_Complete_Guide]] — LLM 安全完整指南
+- [[17_Ethics_Safety/LLM_Security_Defense_Guide]] — LLM 安全防御指南
+- [[17_Ethics_Safety/Agent_RAG_Security]] — Agent 与 RAG 安全

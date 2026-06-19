@@ -3,18 +3,18 @@ title: "Agentic RAG"
 category: concepts
 tags: ["rag", "agentic-rag", "agent", "retrieval", "reasoning", "self-rag"]
 relationships:
-  - target: "concepts/rag-systems"
+  - target: "_concepts/rag-systems"
     type: evolves_from
-  - target: "concepts/ai-agents"
+  - target: "_concepts/ai-agents"
     type: uses
-  - target: "concepts/tool-calling"
+  - target: "_concepts/tool-calling"
     type: uses
-  - target: "concepts/reasoning-models"
+  - target: "_concepts/reasoning-models"
     type: related_to
 sources:
-  - 11_RAG_Systems/Agentic_RAG_Guide.md
-  - 11_RAG_Systems/RAG_Advanced_2026.md
-  - 11_RAG_Systems/README_Advanced.md
+  - 14_RAG_Systems/Agentic_RAG_Guide.md
+  - 14_RAG_Systems/RAG_Advanced_2026.md
+  - 14_RAG_Systems/README_Advanced.md
 summary: "Agentic RAG 是让大模型在检索时拥有‘自主权’的 RAG 升级版。模型不再一次性检索就回答，而是可以判断要不要检索、检索什么、检索结果够不够好，必要时重写查询多轮迭代，把准确率从 70% 提升到 90%+。"
 provenance:
   extracted: 0.8
@@ -106,9 +106,9 @@ Agent 判断：需要检索吗？
 
 ## Related
 
-- [[concepts/rag-systems]] — RAG 检索增强生成
-- [[concepts/ai-agents]] — AI Agent
-- [[concepts/tool-calling]] — 工具调用
-- [[concepts/reasoning-models]] — 推理模型
-- [[11_RAG_Systems/Agentic_RAG_Guide]] — Agentic RAG 指南
-- [[11_RAG_Systems/RAG_Advanced_2026]] — RAG 高级技术 2026
+- [[_concepts/rag-systems]] — RAG 检索增强生成
+- [[_concepts/ai-agents]] — AI Agent
+- [[_concepts/tool-calling]] — 工具调用
+- [[_concepts/reasoning-models]] — 推理模型
+- [[14_RAG_Systems/Agentic_RAG_Guide]] — Agentic RAG 指南
+- [[14_RAG_Systems/RAG_Advanced_2026]] — RAG 高级技术 2026

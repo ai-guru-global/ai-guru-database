@@ -162,15 +162,15 @@ response = client.create_response(
 
 ## 与其他课的衔接
 
-- 本课的 Planner 输出会触发 [[13_Agent_Production/Microsoft_AI_Agents_L08_Multi_Agent]] 中的多 Agent 协作
-- 与 [[13_Agent_Production/Agentic_Design_Patterns_AndrewNg]] 中 Andrew Ng 的 Planning 模式互为补充：本课侧重**结构化输出 + 路由**，Ng 模式侧重**Reflection + ReAct** ^[inferred]
+- 本课的 Planner 输出会触发 [[15_Agent_Production/Microsoft_AI_Agents_L08_Multi_Agent]] 中的多 Agent 协作
+- 与 [[15_Agent_Production/Agentic_Design_Patterns_AndrewNg]] 中 Andrew Ng 的 Planning 模式互为补充：本课侧重**结构化输出 + 路由**，Ng 模式侧重**Reflection + ReAct** ^[inferred]
 
 ---
 
 ## 关联阅读
 
-- [[13_Agent_Production/Microsoft_AI_Agents_L06_Trustworthy_Agents]] — 上一课：可信 Agent
-- [[13_Agent_Production/Microsoft_AI_Agents_L08_Multi_Agent]] — 下一课：多 Agent 设计
-- [[13_Agent_Production/Agentic_Design_Patterns_AndrewNg]] — Andrew Ng 的 Planning 模式
-- [[13_Agent_Production/Agent_Workflow/README]] — 工作流编排概览
+- [[15_Agent_Production/Microsoft_AI_Agents_L06_Trustworthy_Agents]] — 上一课：可信 Agent
+- [[15_Agent_Production/Microsoft_AI_Agents_L08_Multi_Agent]] — 下一课：多 Agent 设计
+- [[15_Agent_Production/Agentic_Design_Patterns_AndrewNg]] — Andrew Ng 的 Planning 模式
+- [[15_Agent_Production/Agent_Workflow/README]] — 工作流编排概览
 - [[90_Learn/courses/microsoft/microsoft_ai_agents_for_beginners]] — 课程总览

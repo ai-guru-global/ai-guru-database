@@ -4,13 +4,13 @@ category: concepts
 tags: ["ai", "未来趋势", "agi", "智能体", "具身智能", "产业变革", "社会影响"]
 aliases: [AI Future, AI未来, 未来趋势展望]
 relationships:
-  - target: "[[concepts/ai-fundamentals]]"
+  - target: "[[_concepts/ai-fundamentals]]"
     type: related_to
-  - target: "concepts/ai-technology-landscape"
+  - target: "_concepts/ai-technology-landscape"
     type: related_to
-  - target: "concepts/ai-history"
+  - target: "_concepts/ai-history"
     type: related_to
-  - target: "concepts/ai-ethics"
+  - target: "_concepts/ai-ethics"
     type: related_to
 sources: [00_AI_Introduction/AI_Future_Trends.md]
 summary: AI正处于从狭义AI向通用AI过渡的关键十年，技术突破、产业变革和社会适应将同步加速，迈向AGI的路径需在创新与安全之间取得平衡。
@@ -175,10 +175,10 @@ AI催生六大新产业方向：
 
 ## 来源
 
-- references/00_AI_Introduction/AI_Future_Trends
+- _references/00_AI_Introduction/AI_Future_Trends
 
 ## Related
 
 - [[00_AI_Introduction/AI_Future_Trends]] — AI未来趋势展望 (共享: agi, ai)
-- [[concepts/ai-ethics]] — AI伦理 (共享: ai, 社会影响)
-- [[synthesis/ai-ethics-future]]
+- [[_concepts/ai-ethics]] — AI伦理 (共享: ai, 社会影响)
+- [[_synthesis/ai-ethics-future]]

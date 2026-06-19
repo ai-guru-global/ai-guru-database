@@ -176,11 +176,11 @@ Roofline 把性能上限表示为：
 
 ## Related
 
-- [[concepts/inference-performance]] — 推理性能概念卡
-- [[concepts/prefill-decode]] — Prefill / Decode 阶段
-- [[concepts/kv-cache]] — KV Cache 优化
-- [[concepts/continuous-batching]] — Continuous Batching
-- [[concepts/speculative-decoding]] — 投机解码
-- [[09_Deployment_Inference/Inference_Performance/README|推理性能专题]]
-- [[09_Deployment_Inference/KV_Cache_Deep_Dive|KV Cache Deep Dive]]
-- [[09_Deployment_Inference/Quantization_Techniques_2026|Quantization Techniques 2026]]
+- [[_concepts/inference-performance]] — 推理性能概念卡
+- [[_concepts/prefill-decode]] — Prefill / Decode 阶段
+- [[_concepts/kv-cache]] — KV Cache 优化
+- [[_concepts/continuous-batching]] — Continuous Batching
+- [[_concepts/speculative-decoding]] — 投机解码
+- [[10_Deployment_Inference/Inference_Performance/README|推理性能专题]]
+- [[10_Deployment_Inference/KV_Cache_Deep_Dive|KV Cache Deep Dive]]
+- [[10_Deployment_Inference/Quantization_Techniques_2026|Quantization Techniques 2026]]

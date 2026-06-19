@@ -3,18 +3,18 @@ title: "Kubeflow"
 category: concept
 tags: ["kubeflow", "kubernetes", "mlops", "pipeline", "notebook", "training", "serving", "katib", "cncf"]
 relationships:
-  - target: "concepts/mlops"
+  - target: "_concepts/mlops"
     type: extends
-  - target: "concepts/kubernetes"
+  - target: "_concepts/kubernetes"
     type: runs_on
-  - target: "concepts/pipeline"
+  - target: "_concepts/pipeline"
     type: enables
-  - target: "concepts/kserve"
+  - target: "_concepts/kserve"
     type: related_to
-  - target: "concepts/volcano"
+  - target: "_concepts/volcano"
     type: related_to
 sources:
-  - 10_MLOps_Pipeline/Kubeflow_Deep_Dive.md
+  - 11_MLOps_Pipeline/Kubeflow_Deep_Dive.md
 summary: "Kubeflow 是 CNCF 孵化的 Kubernetes 机器学习工具集，提供 Notebooks、Pipelines、Training、Katib（AutoML）、Serving 等组件，是 K8s 上端到端 MLOps 的主流开源方案。"
 provenance:
   extracted: 0.8
@@ -103,9 +103,9 @@ Kubeflow Platform
 
 ## Related
 
-- [[10_MLOps_Pipeline/Kubeflow_Deep_Dive]] — Kubeflow 深度解析
-- [[concepts/mlops]] — MLOps
-- [[concepts/kubernetes]] — Kubernetes
-- [[concepts/kserve]] — KServe
-- [[concepts/volcano]] — Volcano
-- [[concepts/kueue]] — Kueue
+- [[11_MLOps_Pipeline/Kubeflow_Deep_Dive]] — Kubeflow 深度解析
+- [[_concepts/mlops]] — MLOps
+- [[_concepts/kubernetes]] — Kubernetes
+- [[_concepts/kserve]] — KServe
+- [[_concepts/volcano]] — Volcano
+- [[_concepts/kueue]] — Kueue

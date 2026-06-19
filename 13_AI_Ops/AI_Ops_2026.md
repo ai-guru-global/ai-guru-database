@@ -1959,8 +1959,8 @@ Phase 5: 持续优化 (持续)
 
 ## Related
 
-- [[16_AI_Ops/AIOps-in-nutshell.md|AIOps-in-nutshell]]
-- [[16_AI_Ops/AI_Incident_Response_Playbook.md|AI_Incident_Response_Playbook]]
-- [[16_AI_Ops/AI_Ops_for_dummy.md|AI_Ops_for_dummy]]
-- [[16_AI_Ops/README.md|16_AI_Ops README]]
-- [[16_AI_Ops/README_for_dummy.md|README_for_dummy]]
+- [[13_AI_Ops/AIOps-in-nutshell.md|AIOps-in-nutshell]]
+- [[13_AI_Ops/AI_Incident_Response_Playbook.md|AI_Incident_Response_Playbook]]
+- [[13_AI_Ops/AI_Ops_for_dummy.md|AI_Ops_for_dummy]]
+- [[13_AI_Ops/README.md|13_AI_Ops README]]
+- [[13_AI_Ops/README_for_dummy.md|README_for_dummy]]

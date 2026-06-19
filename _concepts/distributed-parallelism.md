@@ -3,11 +3,11 @@ title: "分布式并行策略 (Distributed Parallelism)"
 category: concept
 tags: ["distributed", "parallelism", "tensor-parallel", "pipeline-parallel", "data-parallel", "expert-parallel", "megatron", "deepspeed"]
 relationships:
-  - target: "concepts/mixture-of-experts"
+  - target: "_concepts/mixture-of-experts"
     type: related_to
-  - target: "concepts/model-training"
+  - target: "_concepts/model-training"
     type: enables
-  - target: "concepts/model-serving"
+  - target: "_concepts/model-serving"
     type: enables
 sources:
   - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
@@ -187,7 +187,7 @@ Experts 0-85    Experts 86-170   Experts 171-255
 ## Related
 
 - [[07_Model_Training/Distributed_Training_2026]] — 分布式训练
-- [[concepts/mixture-of-experts]] — MoE（Expert Parallelism）
-- [[concepts/model-training]] — 模型训练
-- [[concepts/model-serving]] — 模型服务（推理并行策略）
-- [[concepts/heterogeneous-gpu]] — 异构 GPU 集群
+- [[_concepts/mixture-of-experts]] — MoE（Expert Parallelism）
+- [[_concepts/model-training]] — 模型训练
+- [[_concepts/model-serving]] — 模型服务（推理并行策略）
+- [[_concepts/heterogeneous-gpu]] — 异构 GPU 集群

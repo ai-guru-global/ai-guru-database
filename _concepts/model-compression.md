@@ -12,23 +12,23 @@ tags:
 - awq
 - knowledge-distillation
 relationships:
-- target: 'concepts/model-deployment'
+- target: '_concepts/model-deployment'
   type: enables
-- target: 'concepts/model-serving'
+- target: '_concepts/model-serving'
   type: benefits_from
-- target: 'concepts/fine-tuning-techniques'
+- target: '_concepts/fine-tuning-techniques'
   type: related_to
-- target: 'concepts/model-precision'
+- target: '_concepts/model-precision'
   type: related_to
-- target: 'concepts/gguf'
+- target: '_concepts/gguf'
   type: exemplified_by
-- target: 'concepts/smoothquant'
+- target: '_concepts/smoothquant'
   type: exemplified_by
 sources:
 - 09_model-deployment_Inference/Deployment_Inference.md
-- 09_Deployment_Inference/Deployment_Inference_2026.md
-- 09_Deployment_Inference/vLLM_Deep_Dive.md
-- 09_Deployment_Inference/llama_cpp_Deep_Dive.md
+- 10_Deployment_Inference/Deployment_Inference_2026.md
+- 10_Deployment_Inference/vLLM_Deep_Dive.md
+- 10_Deployment_Inference/llama_cpp_Deep_Dive.md
 - 07_Model_Training/Fine_fine-tuning-techniques_Strategies.md
 summary: 模型压缩通过量化（INT4/INT8/FP8）、剪枝和知识蒸馏将大模型缩减为更小更快但不显著损失精度的版本。2026年主流量化方案为GPTQ和AWQ，支持4-bit推理保持95%+原始精度；知识蒸馏用大模型指导小模型训练；结构化剪枝移除整个注意力头或FFN层。
 provenance:
@@ -127,8 +127,8 @@ $$\mathcal{L} = \alpha \cdot \mathcal{L}_{\text{hard}} + (1-\alpha) \cdot \mathc
 
 ## Related
 
-- [[concepts/quantization]] — 量化
-- [[concepts/gguf]] — GGUF
-- [[concepts/smoothquant]] — SmoothQuant
-- [[concepts/knowledge-distillation]] — 知识蒸馏
-- [[09_Deployment_Inference/Quantization_Techniques_2026]] — 量化技术 2026
+- [[_concepts/quantization]] — 量化
+- [[_concepts/gguf]] — GGUF
+- [[_concepts/smoothquant]] — SmoothQuant
+- [[_concepts/knowledge-distillation]] — 知识蒸馏
+- [[10_Deployment_Inference/Quantization_Techniques_2026]] — 量化技术 2026

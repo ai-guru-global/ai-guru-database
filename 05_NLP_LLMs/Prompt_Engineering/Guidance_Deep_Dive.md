@@ -319,8 +319,8 @@ result = generate_with_examples(
 
 ## Related
 
-- [[04_NLP_LLMs/Prompt_Engineering/Outlines_Deep_Dive.md|Outlines_Deep_Dive]]
-- [[04_NLP_LLMs/Prompt_Engineering/Prompt-Engineering-in-nutshell.md|Prompt-Engineering-in-nutshell]]
-- [[04_NLP_LLMs/Prompt_Engineering/Prompt_Engineering.md|Prompt_Engineering]]
-- [[04_NLP_LLMs/Prompt_Engineering/Prompt_Engineering_for_dummy.md|Prompt_Engineering_for_dummy]]
-- [[04_NLP_LLMs/Fine_tuning_Techniques/Axolotl_Deep_Dive.md|Axolotl_Deep_Dive]]
+- [[05_NLP_LLMs/Prompt_Engineering/Outlines_Deep_Dive.md|Outlines_Deep_Dive]]
+- [[05_NLP_LLMs/Prompt_Engineering/Prompt-Engineering-in-nutshell.md|Prompt-Engineering-in-nutshell]]
+- [[05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering.md|Prompt_Engineering]]
+- [[05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering_for_dummy.md|Prompt_Engineering_for_dummy]]
+- [[05_NLP_LLMs/Fine_tuning_Techniques/Axolotl_Deep_Dive.md|Axolotl_Deep_Dive]]

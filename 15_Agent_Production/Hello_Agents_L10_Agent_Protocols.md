@@ -119,7 +119,7 @@ HelloAgents 通信协议架构
 
 ## 6. 关联阅读
 
-- [[13_Agent_Production/Agent_Protocols/A2A_Protocol_Deep_Dive]] — A2A 协议深度解析
-- [[references/awesome-mcp-servers]] — 优质 MCP Servers 索引
-- [[13_Agent_Production/Agent_Skills/Agent_Skills_Deep_Dive]] — Agent Skills 与 MCP 对比
-- [[13_Agent_Production/Hello_Agents_L13_Travel_Assistant]] — 旅行助手中的 MCP 实践
+- [[15_Agent_Production/Agent_Protocols/A2A_Protocol_Deep_Dive]] — A2A 协议深度解析
+- [[_references/awesome-mcp-servers]] — 优质 MCP Servers 索引
+- [[15_Agent_Production/Agent_Skills/Agent_Skills_Deep_Dive]] — Agent Skills 与 MCP 对比
+- [[15_Agent_Production/Hello_Agents_L13_Travel_Assistant]] — 旅行助手中的 MCP 实践

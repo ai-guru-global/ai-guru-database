@@ -3,26 +3,26 @@ title: Inference Performance
 category: concepts
 tags: [inference, performance, latency, throughput, optimization, benchmarking]
 relationships:
-  - target: "concepts/kv-cache"
+  - target: "_concepts/kv-cache"
     type: optimized_by
-  - target: "concepts/paged-attention"
+  - target: "_concepts/paged-attention"
     type: optimized_by
-  - target: "concepts/continuous-batching"
+  - target: "_concepts/continuous-batching"
     type: optimized_by
-  - target: "concepts/speculative-decoding"
+  - target: "_concepts/speculative-decoding"
     type: optimized_by
-  - target: "concepts/prefill-decode"
+  - target: "_concepts/prefill-decode"
     type: decomposed_into
-  - target: "09_Deployment_Inference/Inference_Performance/README"
+  - target: "10_Deployment_Inference/Inference_Performance/README"
     type: deepened_by
-  - target: "09_Deployment_Inference/Inference_Performance/Inference_Performance_Fundamentals"
+  - target: "10_Deployment_Inference/Inference_Performance/Inference_Performance_Fundamentals"
     type: deepened_by
-  - target: "09_Deployment_Inference/Inference_Performance/Inference_Speed_Factors_for_dummy"
+  - target: "10_Deployment_Inference/Inference_Performance/Inference_Speed_Factors_for_dummy"
     type: simplified_by
 sources:
-  - 09_Deployment_Inference/Inference_Performance/README.md
-  - 09_Deployment_Inference/Inference_Performance/Inference_Performance_Fundamentals.md
-  - 09_Deployment_Inference/Inference_Performance/Inference_Speed_Factors_for_dummy.md
+  - 10_Deployment_Inference/Inference_Performance/README.md
+  - 10_Deployment_Inference/Inference_Performance/Inference_Performance_Fundamentals.md
+  - 10_Deployment_Inference/Inference_Performance/Inference_Speed_Factors_for_dummy.md
 summary: LLM 推理性能工程关注 TTFT、TPOT、吞吐、QPS 等核心指标，通过计算优化、KV Cache 优化、调度优化和系统架构优化，降低延迟并提高资源利用率。
 lifecycle: draft
 tier: core
@@ -58,10 +58,10 @@ updated: 2026-06-15
 
 ## Related
 
-- [[concepts/prefill-decode]] — Prefill / Decode 阶段
-- [[concepts/kv-cache]] — KV Cache 优化
-- [[concepts/paged-attention]] — PagedAttention
-- [[concepts/continuous-batching]] — Continuous Batching
-- [[concepts/speculative-decoding]] — 投机解码
-- [[09_Deployment_Inference/Inference_Performance/README|推理性能专题]]
-- [[09_Deployment_Inference/Inference_Performance/Inference_Speed_Factors_for_dummy|决定模型推理速度的要素（大白话版）]]
+- [[_concepts/prefill-decode]] — Prefill / Decode 阶段
+- [[_concepts/kv-cache]] — KV Cache 优化
+- [[_concepts/paged-attention]] — PagedAttention
+- [[_concepts/continuous-batching]] — Continuous Batching
+- [[_concepts/speculative-decoding]] — 投机解码
+- [[10_Deployment_Inference/Inference_Performance/README|推理性能专题]]
+- [[10_Deployment_Inference/Inference_Performance/Inference_Speed_Factors_for_dummy|决定模型推理速度的要素（大白话版）]]

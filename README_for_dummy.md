@@ -72,30 +72,30 @@ updated: '2026-05-31'
 
 ---
 
-### [第4章：自然语言处理与大模型](./04_NLP_LLMs/README_for_dummy.md)
+### [第4章：自然语言处理与大模型](./05_NLP_LLMs/README_for_dummy.md)
 
 让电脑读懂人话、写出文章——ChatGPT 就是这么来的。
 
 | 主题 | 你能学到 | 开始学习 |
 |------|---------|---------|
-| 序列模型 | AI 怎么理解"有先后顺序"的信息 | [点这里](./04_NLP_LLMs/Sequence_Models/Sequence_Models_for_dummy.md) |
-| Transformer | 当今所有大模型的"发动机"是怎么工作的 | [点这里](./04_NLP_LLMs/Transformer_Revolution/Transformer_Revolution_for_dummy.md) |
-| 大语言模型架构 | GPT、LLaMA 这些大模型有什么不同 | [点这里](./04_NLP_LLMs/LLM_Architectures/LLM_Architectures_for_dummy.md) |
-| 微调技术 | 怎么把通用 AI 训练成专业 AI | [点这里](./04_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques_for_dummy.md) |
-| 提示词工程 | 怎么跟 AI 说话才能得到好答案 | [点这里](./04_NLP_LLMs/Prompt_Engineering/Prompt_Engineering_for_dummy.md) |
+| 序列模型 | AI 怎么理解"有先后顺序"的信息 | [点这里](./05_NLP_LLMs/Sequence_Models/Sequence_Models_for_dummy.md) |
+| Transformer | 当今所有大模型的"发动机"是怎么工作的 | [点这里](./05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution_for_dummy.md) |
+| 大语言模型架构 | GPT、LLaMA 这些大模型有什么不同 | [点这里](./05_NLP_LLMs/LLM_Architectures/LLM_Architectures_for_dummy.md) |
+| 微调技术 | 怎么把通用 AI 训练成专业 AI | [点这里](./05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques_for_dummy.md) |
+| 提示词工程 | 怎么跟 AI 说话才能得到好答案 | [点这里](./05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering_for_dummy.md) |
 
 ---
 
-### [第5章：计算机视觉](./05_Computer_Vision/README_for_dummy.md)
+### [第5章：计算机视觉](./04_Computer_Vision/README_for_dummy.md)
 
 让电脑"看懂"图片和视频。
 
 | 主题 | 你能学到 | 开始学习 |
 |------|---------|---------|
-| 图像分类与检测 | AI 怎么认出照片里是猫还是狗 | [点这里](./05_Computer_Vision/Image_Classification_Detection/Image_Classification_Detection_for_dummy.md) |
-| 图像分割 | AI 怎么把图片里的每个物体"抠"出来 | [点这里](./05_Computer_Vision/Segmentation/Segmentation_for_dummy.md) |
-| 多模态视觉 | AI 怎么同时理解图片和文字 | [点这里](./05_Computer_Vision/Multimodal_Vision/Multimodal_Vision_for_dummy.md) |
-| 生成模型 | AI 怎么画出逼真的图片 | [点这里](./05_Computer_Vision/Generative_Models/Generative_Models_for_dummy.md) |
+| 图像分类与检测 | AI 怎么认出照片里是猫还是狗 | [点这里](./04_Computer_Vision/Image_Classification_Detection/Image_Classification_Detection_for_dummy.md) |
+| 图像分割 | AI 怎么把图片里的每个物体"抠"出来 | [点这里](./04_Computer_Vision/Segmentation/Segmentation_for_dummy.md) |
+| 多模态视觉 | AI 怎么同时理解图片和文字 | [点这里](./04_Computer_Vision/Multimodal_Vision/Multimodal_Vision_for_dummy.md) |
+| 生成模型 | AI 怎么画出逼真的图片 | [点这里](./04_Computer_Vision/Generative_Models/Generative_Models_for_dummy.md) |
 
 ---
 
@@ -111,28 +111,28 @@ updated: '2026-05-31'
 
 ---
 
-### [第7章：AI 工程化](./09_Deployment_Inference/README.md)
+### [第7章：AI 工程化](./10_Deployment_Inference/README.md)
 
 把实验室里的 AI 变成真正能用的产品。
 
 | 主题 | 你能学到 | 开始学习 |
 |------|---------|---------|
-| 模型部署与推理 | 怎么把训练好的 AI 放到网上让大家用 | [点这里](./09_Deployment_Inference/Deployment_Inference_for_dummy.md) |
-| RAG 系统 | 怎么让 AI "开卷考试"，查资料再回答 | [点这里](./11_RAG_Systems/RAG_Systems_for_dummy.md) |
-| MLOps 流水线 | 怎么像工厂流水线一样管理 AI 项目 | [点这里](./10_MLOps_Pipeline/MLOps_Pipeline_for_dummy.md) |
+| 模型部署与推理 | 怎么把训练好的 AI 放到网上让大家用 | [点这里](./10_Deployment_Inference/Deployment_Inference_for_dummy.md) |
+| RAG 系统 | 怎么让 AI "开卷考试"，查资料再回答 | [点这里](./14_RAG_Systems/RAG_Systems_for_dummy.md) |
+| MLOps 流水线 | 怎么像工厂流水线一样管理 AI 项目 | [点这里](./11_MLOps_Pipeline/MLOps_Pipeline_for_dummy.md) |
 | 模型评估 | 怎么判断一个 AI 到底好不好用 | [点这里](./08_Model_Evaluation/Model_Evaluation_for_dummy.md) |
-| Vibe Coding | 怎么用"说人话"的方式让 AI 帮你写代码 | [点这里](./17_AI_Coding/03_Practice/Vibe_Coding_Getting_Started.md) |
+| Vibe Coding | 怎么用"说人话"的方式让 AI 帮你写代码 | [点这里](./16_AI_Coding/Practice/Vibe_Coding_Getting_Started.md) |
 
 ---
 
-### [第8章：伦理与安全](./19_Ethics_Safety/README_for_dummy.md)
+### [第8章：伦理与安全](./17_Ethics_Safety/README_for_dummy.md)
 
 让 AI 安全、公平地为人类服务。
 
 | 主题 | 你能学到 | 开始学习 |
 |------|---------|---------|
-| 价值对齐 | 怎么让 AI 的行为符合人类价值观 | [点这里](./19_Ethics_Safety/Value_Alignment/Value_Alignment_for_dummy.md) |
-| AI 安全与红队 | 怎么发现和防止 AI 被坏人利用 | [点这里](./19_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming_for_dummy.md) |
+| 价值对齐 | 怎么让 AI 的行为符合人类价值观 | [点这里](./17_Ethics_Safety/Value_Alignment/Value_Alignment_for_dummy.md) |
+| AI 安全与红队 | 怎么发现和防止 AI 被坏人利用 | [点这里](./17_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming_for_dummy.md) |
 
 ---
 

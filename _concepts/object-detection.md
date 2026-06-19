@@ -4,11 +4,11 @@ category: concepts
 tags: ["computer-vision", "object-detection", "yolo", "faster-rcnn", "detr", "bounding-box"]
 aliases: [Object Detection, 物体检测, 目标检测]
 relationships:
-  - target: "[[concepts/computer-vision]]"
+  - target: "[[_concepts/computer-vision]]"
     type: related_to
-  - target: "concepts/image-segmentation"
+  - target: "_concepts/image-segmentation"
     type: related_to
-  - target: "concepts/multimodal-vision"
+  - target: "_concepts/multimodal-vision"
     type: related_to
 sources:
   - 05_computer-vision_multimodal-vision/image-segmentation_supervised-learning_Detection/Image_Classification_Detection.md
@@ -93,8 +93,8 @@ Mosaic增强将4张图像拼接成1张，迫使模型学习更小目标，是YOL
 
 ## 来源
 
-- 05_Computer_Vision/Image_Classification_Detection/Image_Classification_Detection.md
+- 04_Computer_Vision/Image_Classification_Detection/Image_Classification_Detection.md
 
 ## Related
 
-- [[concepts/computer-vision]] — 计算机视觉 (共享: cv, object-detection)
+- [[_concepts/computer-vision]] — 计算机视觉 (共享: cv, object-detection)

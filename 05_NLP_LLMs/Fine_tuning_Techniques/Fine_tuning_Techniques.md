@@ -503,7 +503,7 @@ lora_config = LoraConfig(
 ### 后续推荐
 - [提示工程](../Prompt_Engineering/Prompt_Engineering.md): 微调的替代方案
 - [模型评估](../../08_Model_Evaluation/Model_Evaluation.md): 如何评估微调效果
-- [推理部署](../../09_Deployment_Inference/Deployment_Inference.md): INT8/INT4 量化与部署
+- [推理部署](../../10_Deployment_Inference/Deployment_Inference.md): INT8/INT4 量化与部署
 
 ---
 

@@ -497,17 +497,17 @@ evaluation_prompt = f"""
 
 ### 前置知识
 
-- [Transformer 架构](../../04_NLP_LLMs/Transformer_Revolution/Transformer_Revolution.md) - 理解 Embedding 和 Attention 机制
+- [Transformer 架构](../../05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution.md) - 理解 Embedding 和 Attention 机制
 - [向量检索基础](../../01_Fundamentals/Data_Structures_Algorithms/Data_Structures_Algorithms.md) - HNSW、IVF 索引原理
-- [自然语言处理基础](../../04_NLP_LLMs/LLM_Architectures/LLM_Architectures.md) - 文本预处理和分词
+- [自然语言处理基础](../../05_NLP_LLMs/LLM_Architectures/LLM_Architectures.md) - 文本预处理和分词
 
 ### 进阶推荐
 
-- [LLM 推理引擎选型指南](../09_Deployment_Inference/LLM_Inference_Engine_Selection_Guide.md) - RAG 系统的推理引擎选型
-- [vLLM Deep Dive](../09_Deployment_Inference/vLLM_Deep_Dive.md) - 通用生产级 RAG 推理引擎
-- [SGLang Deep Dive](../09_Deployment_Inference/SGLang_Deep_Dive.md) - 多轮 / RAG 前缀缓存优化
-- [模型部署与推理](../09_Deployment_Inference/Deployment_Inference.md) - RAG 系统的生产环境部署
-- [Prompt 工程](../../04_NLP_LLMs/Prompt_Engineering/Prompt_Engineering.md) - 优化 RAG 的 Prompt 设计
+- [LLM 推理引擎选型指南](../10_Deployment_Inference/LLM_Inference_Engine_Selection_Guide.md) - RAG 系统的推理引擎选型
+- [vLLM Deep Dive](../10_Deployment_Inference/vLLM_Deep_Dive.md) - 通用生产级 RAG 推理引擎
+- [SGLang Deep Dive](../10_Deployment_Inference/SGLang_Deep_Dive.md) - 多轮 / RAG 前缀缓存优化
+- [模型部署与推理](../10_Deployment_Inference/Deployment_Inference.md) - RAG 系统的生产环境部署
+- [Prompt 工程](../../05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering.md) - 优化 RAG 的 Prompt 设计
 - [模型评估](../08_Model_Evaluation/Model_Evaluation.md) - RAG 系统的效果评估方法
 
 ## 8. 面试高频问题 (Interview FAQs)
@@ -654,11 +654,11 @@ evaluation_prompt = f"""
 
 ## Related
 
-- [[11_RAG_Systems/RAG-in-nutshell]] — RAG (检索增强生成) 速成指南 (共享: embedding, rag, retrieval, vector-database)
-- [[11_RAG_Systems/README_Advanced]] — RAG高级实践 2026 (共享: embedding, rag, retrieval, vector-database)
-- [[11_RAG_Systems/Spring_AI_RAG_Deep_Dive]] — Spring AI RAG 深度解析 (共享: embedding, rag, retrieval, vector-database)
-- [[synthesis/rag-vector-database]] — RAG 系统 × 向量数据库 (共享: embedding, rag, retrieval, vector-database)
-- [[11_RAG_Systems/RAG_Systems_for_dummy.md|RAG_Systems_for_dummy]]
-- [[11_RAG_Systems/RAG_Advanced_2026.md|RAG_Advanced_2026]]
-- [[11_RAG_Systems/Chroma_Deep_Dive.md|Chroma_Deep_Dive]]
-- [[11_RAG_Systems/Qdrant_Deep_Dive.md|Qdrant_Deep_Dive]]
+- [[14_RAG_Systems/RAG-in-nutshell]] — RAG (检索增强生成) 速成指南 (共享: embedding, rag, retrieval, vector-database)
+- [[14_RAG_Systems/README_Advanced]] — RAG高级实践 2026 (共享: embedding, rag, retrieval, vector-database)
+- [[14_RAG_Systems/Spring_AI_RAG_Deep_Dive]] — Spring AI RAG 深度解析 (共享: embedding, rag, retrieval, vector-database)
+- [[_synthesis/rag-vector-database]] — RAG 系统 × 向量数据库 (共享: embedding, rag, retrieval, vector-database)
+- [[14_RAG_Systems/RAG_Systems_for_dummy.md|RAG_Systems_for_dummy]]
+- [[14_RAG_Systems/RAG_Advanced_2026.md|RAG_Advanced_2026]]
+- [[14_RAG_Systems/Chroma_Deep_Dive.md|Chroma_Deep_Dive]]
+- [[14_RAG_Systems/Qdrant_Deep_Dive.md|Qdrant_Deep_Dive]]

@@ -38,5 +38,5 @@ CPU (通用计算) → GPU (并行矩阵运算) → TPU (张量专用) → NPU (
 ## 相关阅读
 
 - [[01_Fundamentals/AI_Hardware/AI_Hardware_2026]] — AI 硬件 2026
-- [[09_Deployment_Inference/Quantization_Techniques]] — 量化技术
+- [[10_Deployment_Inference/Quantization_Techniques]] — 量化技术
 - [[12_Architecture_Infrastructure/AI_Infrastructure_2026]] — AI 基础设施 2026

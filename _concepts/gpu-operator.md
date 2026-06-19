@@ -10,15 +10,15 @@ tags:
 - cdi
 - mig
 relationships:
-- target: 'concepts/cdi'
+- target: '_concepts/cdi'
   type: generates
-- target: 'concepts/dra'
+- target: '_concepts/dra'
   type: deploys_driver
-- target: 'concepts/gpu-virtualization'
+- target: '_concepts/gpu-virtualization'
   type: manages
-- target: 'concepts/llm-infrastructure'
+- target: '_concepts/llm-infrastructure'
   type: enables
-- target: 'concepts/model-deployment'
+- target: '_concepts/model-deployment'
   type: enables
 sources:
 - 01_Fundamentals/AI_Hardware/NVIDIA_AMD_GPU_Deep_Dive.md
@@ -45,8 +45,8 @@ updated: 2026-06-15 00:00:00+00:00
 - 目标：把「GPU 节点初始化」从手工 SSH 装驱动，变成 `helm install` 声明式配置
 - **Day-0 自动化**: 驱动加载、容器运行时配置（containerd/docker）、nvidia-container-toolkit 部署
 - **Day-2 运维**: 驱动升级、MIG 切片动态重配、DCGM 监控、节点标签、健康检查
-- **CDI 生产线**: v23.9+ 可自动生成 `/var/run/cdi/nvidia.yaml`，是 [[concepts/cdi|CDI]] 在 NVIDIA 集群的事实来源
-- **DRA 载体**: 也是部署 NVIDIA DRA 驱动（见 [[concepts/dra|DRA]]）的推荐方式
+- **CDI 生产线**: v23.9+ 可自动生成 `/var/run/cdi/nvidia.yaml`，是 [[_concepts/cdi|CDI]] 在 NVIDIA 集群的事实来源
+- **DRA 载体**: 也是部署 NVIDIA DRA 驱动（见 [[_concepts/dra|DRA]]）的推荐方式
 
 ## 管理的组件
 
@@ -112,10 +112,10 @@ GPU Operator (运维层)
 
 ## 延伸阅读
 
-- [[concepts/cdi|CDI 容器设备接口（Operator 生成其 spec）]]
-- [[concepts/dra|DRA（Operator 可部署其驱动）]]
-- [[concepts/gpu-virtualization|GPU 虚拟化（MIG 经 Operator 管理）]]
+- [[_concepts/cdi|CDI 容器设备接口（Operator 生成其 spec）]]
+- [[_concepts/dra|DRA（Operator 可部署其驱动）]]
+- [[_concepts/gpu-virtualization|GPU 虚拟化（MIG 经 Operator 管理）]]
 - [[12_Architecture_Infrastructure/CDI_Deep_Dive|CDI 深度解析]]
 - [[12_Architecture_Infrastructure/DRA_Deep_Dive|DRA 深度解析]]
 - [[01_Fundamentals/AI_Hardware/NVIDIA_AMD_GPU_Deep_Dive|NVIDIA/AMD GPU 深度解析]]
-- [[concepts/llm-infrastructure|LLM 基础设施]]
+- [[_concepts/llm-infrastructure|LLM 基础设施]]

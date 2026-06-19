@@ -4,13 +4,13 @@ category: concepts
 tags: ["machine-learning", "feature-engineering", "encoding", "feature-selection", "preprocessing"]
 aliases: [Feature prompt-engineering, 特征处理]
 relationships:
-  - target: "[[concepts/supervised-learning]]"
+  - target: "[[_concepts/supervised-learning]]"
     type: related_to
-  - target: "concepts/unsupervised-learning"
+  - target: "_concepts/unsupervised-learning"
     type: related_to
-  - target: "concepts/automl"
+  - target: "_concepts/automl"
     type: related_to
-  - target: "concepts/time-series-analysis"
+  - target: "_concepts/time-series-analysis"
     type: related_to
 sources: [02_Machine_unsupervised-learning/Feature_Engineering/Feature_Engineering.md]
 summary: 将原始数据转换为更有效表示的过程，是连接数据与模型的关键桥梁，决定模型性能上限。
@@ -111,16 +111,16 @@ updated: 2026-05-31T00:00:00Z
 
 ## 来源
 
-- references/feature-engineering-reference
-- concepts/supervised-learning
-- concepts/unsupervised-learning
-- concepts/automl
-- concepts/time-series-analysis
+- _references/feature-engineering-reference
+- _concepts/supervised-learning
+- _concepts/unsupervised-learning
+- _concepts/automl
+- _concepts/time-series-analysis
 
 ## Related
 
-- [[concepts/supervised-learning.md|supervised-learning]]
-- [[concepts/unsupervised-learning.md|unsupervised-learning]]
+- [[_concepts/supervised-learning.md|supervised-learning]]
+- [[_concepts/unsupervised-learning.md|unsupervised-learning]]
 - [[02_Machine_Learning/Anomaly_Detection/Anomaly_Detection.md|Anomaly_Detection]]
 - [[02_Machine_Learning/Anomaly_Detection/Anomaly_Detection_for_dummy.md|Anomaly_Detection_for_dummy]]
 - [[02_Machine_Learning/AutoML/AutoML.md|AutoML]]

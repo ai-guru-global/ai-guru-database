@@ -58,5 +58,5 @@ tier: supporting
 - **数字鸿沟**: AI 教育工具的可及性
 - **过度依赖**: 保持人类教师的核心角色
 
-> **关联**: -> [[20_AI_Applications_Industry/Education|教育 AI]] | [[19_Ethics_Safety|伦理安全]]
+> **关联**: -> [[18_AI_Applications_Industry/Education|教育 AI]] | [[17_Ethics_Safety|伦理安全]]
 

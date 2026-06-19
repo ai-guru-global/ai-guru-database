@@ -4,11 +4,11 @@ category: concepts
 tags: ["computer-vision", "generative-models", "gan", "diffusion", "stable-diffusion", "image-generation"]
 aliases: [Generative multimodal-vision world-models-jepa, 生成模型, GAN, multimodal-models Models, 扩散模型]
 relationships:
-  - target: "[[concepts/computer-vision]]"
+  - target: "[[_concepts/computer-vision]]"
     type: related_to
-  - target: "concepts/image-segmentation"
+  - target: "_concepts/image-segmentation"
     type: related_to
-  - target: "concepts/video-generation"
+  - target: "_concepts/video-generation"
     type: related_to
 sources:
   - 05_computer-vision_Vision/Generative_Models/Generative_Models.md
@@ -95,8 +95,8 @@ AI艺术创作（Midjourney、DALL-E 3）、图像编辑（Inpainting、超分�
 
 ## 来源
 
-- 05_Computer_Vision/Generative_Models/Generative_Models.md
+- 04_Computer_Vision/Generative_Models/Generative_Models.md
 
 ## Related
 
-- [[22_Papers/Diffusion_Models_Deep_Dive]] — Diffusion Models 深度解读 (从 DDPM 到 Stable Diffusion 再到 DiT) (共享: cv, diffusion, generative-models, stable-diffusion)
+- [[20_Papers/Diffusion_Models_Deep_Dive]] — Diffusion Models 深度解读 (从 DDPM 到 Stable Diffusion 再到 DiT) (共享: cv, diffusion, generative-models, stable-diffusion)

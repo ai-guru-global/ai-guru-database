@@ -3,20 +3,20 @@ title: "LoRA 与参数高效微调 (PEFT)"
 category: concept
 tags: ["lora", "peft", "fine-tuning", "parameter-efficient", "qlora", "adapter"]
 relationships:
-  - target: "concepts/fine-tuning-techniques"
+  - target: "_concepts/fine-tuning-techniques"
     type: belongs_to
-  - target: "concepts/lora-qlora-sft-rlhf-dpo"
+  - target: "_concepts/lora-qlora-sft-rlhf-dpo"
     type: related_to
-  - target: "concepts/model-compression"
+  - target: "_concepts/model-compression"
     type: complements
-  - target: "concepts/distributed-parallelism"
+  - target: "_concepts/distributed-parallelism"
     type: reduces_need_for
-  - target: "concepts/dora"
+  - target: "_concepts/dora"
     type: related_to
-  - target: "concepts/rs-lora"
+  - target: "_concepts/rs-lora"
     type: related_to
 sources:
-  - 04_NLP_LLMs/Fine_tuning_Techniques/
+  - 05_NLP_LLMs/Fine_tuning_Techniques/
   - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
 summary: "LoRA 通过低秩矩阵分解实现仅微调 <1% 参数，是 LLM 微调的主流方案。QLoRA 结合 4-bit 量化可在单卡 24GB GPU 上微调 70B 模型。"
 provenance:
@@ -214,13 +214,13 @@ W_final = W₀ + B×A
 
 ## Related
 
-- [[concepts/fine-tuning-techniques]] — 微调技术（LoRA 的上级概念）
-- [[concepts/lora-qlora-sft-rlhf-dpo]] — LoRA / QLoRA / SFT / RLHF / DPO 大白话串讲
-- [[concepts/model-compression]] — 模型压缩（量化是 QLoRA 的基础）
-- [[concepts/distributed-parallelism]] — 分布式并行（全量微调的替代方案）
-- [[concepts/model-training]] — 模型训练（训练流程）
-- [[04_NLP_LLMs/Fine_tuning_Techniques]] — 微调技术详解
+- [[_concepts/fine-tuning-techniques]] — 微调技术（LoRA 的上级概念）
+- [[_concepts/lora-qlora-sft-rlhf-dpo]] — LoRA / QLoRA / SFT / RLHF / DPO 大白话串讲
+- [[_concepts/model-compression]] — 模型压缩（量化是 QLoRA 的基础）
+- [[_concepts/distributed-parallelism]] — 分布式并行（全量微调的替代方案）
+- [[_concepts/model-training]] — 模型训练（训练流程）
+- [[05_NLP_LLMs/Fine_tuning_Techniques]] — 微调技术详解
 - [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack
-- [[concepts/dora]] — DoRA
-- [[concepts/rs-lora]] — RS-LoRA
+- [[_concepts/dora]] — DoRA
+- [[_concepts/rs-lora]] — RS-LoRA
 - [[07_Model_Training/Data_and_FineTuning_for_dummy]] — 数据与微调大白话

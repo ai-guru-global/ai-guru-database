@@ -3,18 +3,18 @@ title: "SmoothQuant"
 category: concepts
 tags: ["smoothquant", "quantization", "int8", "inference", "llm", "optimization"]
 relationships:
-  - target: "concepts/quantization"
+  - target: "_concepts/quantization"
     type: belongs_to
-  - target: "concepts/model-compression"
+  - target: "_concepts/model-compression"
     type: belongs_to
-  - target: "concepts/model-precision"
+  - target: "_concepts/model-precision"
     type: related_to
-  - target: "concepts/tensorrt-llm"
+  - target: "_concepts/tensorrt-llm"
     type: used_by
 sources:
-  - 09_Deployment_Inference/Quantization_Techniques_2026.md
-  - 09_Deployment_Inference/Quantization_Precision_Deep_Dive.md
-  - 09_Deployment_Inference/TensorRT_LLM_Deep_Dive.md
+  - 10_Deployment_Inference/Quantization_Techniques_2026.md
+  - 10_Deployment_Inference/Quantization_Precision_Deep_Dive.md
+  - 10_Deployment_Inference/TensorRT_LLM_Deep_Dive.md
 summary: "SmoothQuant 是一种让大模型 INT8 量化更稳定的技术。它通过把权重和激活值之间的‘波动’重新分配，让两者都更容易用 8 位整数表示，从而在几乎不损失精度的情况下把推理速度提升 1.5-2 倍。"
 provenance:
   extracted: 0.7
@@ -93,9 +93,9 @@ Y = (X / s) · (W × s)
 
 ## Related
 
-- [[concepts/quantization]] — 量化
-- [[concepts/model-compression]] — 模型压缩
-- [[concepts/model-precision]] — 模型精度
-- [[concepts/tensorrt-llm]] — TensorRT-LLM
-- [[09_Deployment_Inference/Quantization_Techniques_2026]] — 量化技术 2026
-- [[09_Deployment_Inference/TensorRT_LLM_Deep_Dive]] — TensorRT-LLM 深度解析
+- [[_concepts/quantization]] — 量化
+- [[_concepts/model-compression]] — 模型压缩
+- [[_concepts/model-precision]] — 模型精度
+- [[_concepts/tensorrt-llm]] — TensorRT-LLM
+- [[10_Deployment_Inference/Quantization_Techniques_2026]] — 量化技术 2026
+- [[10_Deployment_Inference/TensorRT_LLM_Deep_Dive]] — TensorRT-LLM 深度解析

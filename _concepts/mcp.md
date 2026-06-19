@@ -65,8 +65,8 @@ MCP 使上下文工程从静态的向量检索演进到动态、可组合、可�
 
 ## 深入阅读
 
-- [[04_NLP_LLMs/Context_Engineering_Guide.md]] -- MCP 在上下文工程中的三层架构
-- [[17_AI_Coding/02_Tools/Claude_Complete_Guide.md]] -- Claude 生态中的 MCP 实现与生态现状
-- [[13_Agent_Production/Agent_Foundations/Agentic_AI_Complete_Guide.md]] -- MCP 在智能体工具系统中的定位
-- [[19_Ethics_Safety/Agent_RAG_Security.md]] -- MCP 协议安全考量
-- [[13_Agent_Production/23_OpenClaw_Ecosystem/OpenClaw_Complete_Guide.md]] -- OpenClaw 中的 MCP 集成实践
+- [[05_NLP_LLMs/Context_Engineering_Guide.md]] -- MCP 在上下文工程中的三层架构
+- [[16_AI_Coding/Tools/Claude_Complete_Guide.md]] -- Claude 生态中的 MCP 实现与生态现状
+- [[15_Agent_Production/Agent_Foundations/Agentic_AI_Complete_Guide.md]] -- MCP 在智能体工具系统中的定位
+- [[17_Ethics_Safety/Agent_RAG_Security.md]] -- MCP 协议安全考量
+- [[15_Agent_Production/OpenClaw_Ecosystem/OpenClaw_Complete_Guide.md]] -- OpenClaw 中的 MCP 集成实践

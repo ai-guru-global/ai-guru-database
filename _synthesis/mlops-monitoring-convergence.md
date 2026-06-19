@@ -17,7 +17,7 @@ updated: 2026-06-12
 
 ### 融合趋势
 
-传统上，MLOps（[[10_MLOps_Pipeline/README]]）和 AI 运维监控（[[16_AI_Ops/README]]）是两个独立领域。但在 2024-2026 年间，两者正在快速融合：
+传统上，MLOps（[[11_MLOps_Pipeline/README]]）和 AI 运维监控（[[13_AI_Ops/README]]）是两个独立领域。但在 2024-2026 年间，两者正在快速融合：
 
 ```
 传统模式:
@@ -30,9 +30,9 @@ updated: 2026-06-12
 
 ### 融合的三个维度
 
-1. **数据漂移 + 特征存储**: 特征存储（[[10_MLOps_Pipeline/Feature_Store_Deep_Dive]]）检测到特征分布变化时，自动通知监控系统
-2. **模型漂移 + 实验追踪**: 监控发现模型性能下降时，自动触发实验追踪（[[10_MLOps_Pipeline/Experiment_Tracking_Deep_Dive]]）中的重训练流程
-3. **推理监控 + 模型注册**: 推理延迟/错误率异常时，自动从模型注册表（[[10_MLOps_Pipeline/Model_Registry_and_Cards_Deep_Dive]]）回滚到上一个稳定版本
+1. **数据漂移 + 特征存储**: 特征存储（[[11_MLOps_Pipeline/Feature_Store_Deep_Dive]]）检测到特征分布变化时，自动通知监控系统
+2. **模型漂移 + 实验追踪**: 监控发现模型性能下降时，自动触发实验追踪（[[11_MLOps_Pipeline/Experiment_Tracking_Deep_Dive]]）中的重训练流程
+3. **推理监控 + 模型注册**: 推理延迟/错误率异常时，自动从模型注册表（[[11_MLOps_Pipeline/Model_Registry_and_Cards_Deep_Dive]]）回滚到上一个稳定版本
 
 ### 2026 工具格局
 
@@ -56,8 +56,8 @@ updated: 2026-06-12
 
 ## 相关页面
 
-- [[10_MLOps_Pipeline/MLOps_Pipeline]] — MLOps 流水线
-- [[10_MLOps_Pipeline/Model_Monitoring_and_Drift_Detection_2026]] — 模型监控与漂移检测
-- [[16_AI_Ops/AI_Observability_Deep_Dive]] — AI 可观测性
-- [[16_AI_Ops/Incident_Response_for_AI_Systems]] — AI 系统故障响应
-- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Deep_Dive]] — Agent 评估体系
+- [[11_MLOps_Pipeline/MLOps_Pipeline]] — MLOps 流水线
+- [[11_MLOps_Pipeline/Model_Monitoring_and_Drift_Detection_2026]] — 模型监控与漂移检测
+- [[13_AI_Ops/AI_Observability_Deep_Dive]] — AI 可观测性
+- [[13_AI_Ops/Incident_Response_for_AI_Systems]] — AI 系统故障响应
+- [[15_Agent_Production/Agent_Evaluation/Agent_Harness_Deep_Dive]] — Agent 评估体系

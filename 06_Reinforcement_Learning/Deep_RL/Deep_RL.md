@@ -747,9 +747,9 @@ Sutton 指出，以下三者同时存在会导致不稳定：
 - **模仿学习**: Behavior Cloning, GAIL, IRL
 
 ### 7.3 相关领域
-- **自然语言处理**: [Transformer](../../04_NLP_LLMs/Transformer_Revolution/Transformer_Revolution.md) —— RLHF 中的策略网络
-- **计算机视觉**: [图像分类检测](../../05_Computer_Vision/Image_Classification_Detection/Image_Classification_Detection.md) —— Atari 游戏的视觉编码
-- **生成模型**: [生成模型](../../05_Computer_Vision/Generative_Models/Generative_Models.md) —— 基于扩散模型的 RL
+- **自然语言处理**: [Transformer](../../05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution.md) —— RLHF 中的策略网络
+- **计算机视觉**: [图像分类检测](../../04_Computer_Vision/Image_Classification_Detection/Image_Classification_Detection.md) —— Atari 游戏的视觉编码
+- **生成模型**: [生成模型](../../04_Computer_Vision/Generative_Models/Generative_Models.md) —— 基于扩散模型的 RL
 
 ## 8. 面试高频问题 (Interview FAQs)
 

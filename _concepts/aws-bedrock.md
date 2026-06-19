@@ -3,13 +3,13 @@ title: "AWS Bedrock"
 category: concept
 tags: ["aws-bedrock", "aws", "cloud", "foundation-model", "api", "serverless", "inference"]
 relationships:
-  - target: "concepts/cloud-ai-platform"
+  - target: "_concepts/cloud-ai-platform"
     type: extends
-  - target: "concepts/foundation-model"
+  - target: "_concepts/foundation-model"
     type: provides
-  - target: "concepts/azure-openai"
+  - target: "_concepts/azure-openai"
     type: related_to
-  - target: "concepts/vertex-ai"
+  - target: "_concepts/vertex-ai"
     type: related_to
 sources:
   - 12_Architecture_Infrastructure/AWS_Bedrock_Deep_Dive.md
@@ -89,7 +89,7 @@ updated: 2026-06-16
 ## Related
 
 - [[12_Architecture_Infrastructure/AWS_Bedrock_Deep_Dive]] — AWS Bedrock 深度解析
-- [[concepts/cloud-ai-platform]] — 云 AI 平台
-- [[concepts/azure-openai]] — Azure OpenAI
-- [[concepts/vertex-ai]] — Google Vertex AI
-- [[concepts/foundation-model]] — 基础模型
+- [[_concepts/cloud-ai-platform]] — 云 AI 平台
+- [[_concepts/azure-openai]] — Azure OpenAI
+- [[_concepts/vertex-ai]] — Google Vertex AI
+- [[_concepts/foundation-model]] — 基础模型

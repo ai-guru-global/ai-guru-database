@@ -3,18 +3,18 @@ title: "CI 集成评估"
 category: concepts
 tags: ["ci-cd", "evaluation", "automation", "regression-testing", "model-evaluation", "mlops"]
 relationships:
-  - target: "concepts/model-evaluation"
+  - target: "_concepts/model-evaluation"
     type: implements
-  - target: "concepts/mlops"
+  - target: "_concepts/mlops"
     type: belongs_to
-  - target: "concepts/ab-testing-framework"
+  - target: "_concepts/ab-testing-framework"
     type: precedes
-  - target: "concepts/llm-production-pipeline"
+  - target: "_concepts/llm-production-pipeline"
     type: part_of
 sources:
   - 08_Model_Evaluation/Evaluation_Automation_2026.md
-  - 10_MLOps_Pipeline/LLM_Evaluation_Pipeline.md
-  - 10_MLOps_Pipeline/CI_CD_Pipeline_AI_2026.md
+  - 11_MLOps_Pipeline/LLM_Evaluation_Pipeline.md
+  - 11_MLOps_Pipeline/CI_CD_Pipeline_AI_2026.md
 summary: "CI 集成评估是把模型评估嵌入持续集成流水线。每次代码或模型变更都自动跑一组基准测试，像软件项目的单元测试一样，确保新版本不会在某些能力上‘开倒车’。"
 provenance:
   extracted: 0.75
@@ -100,9 +100,9 @@ CI 集成评估让这些问题变成流水线的一部分。
 
 ## Related
 
-- [[concepts/model-evaluation]] — 模型评估
-- [[concepts/mlops]] — MLOps
-- [[concepts/ab-testing-framework]] — A/B 测试框架
-- [[concepts/llm-production-pipeline]] — LLM 生产流水线
+- [[_concepts/model-evaluation]] — 模型评估
+- [[_concepts/mlops]] — MLOps
+- [[_concepts/ab-testing-framework]] — A/B 测试框架
+- [[_concepts/llm-production-pipeline]] — LLM 生产流水线
 - [[08_Model_Evaluation/Evaluation_Automation_2026]] — 评估自动化 2026
-- [[10_MLOps_Pipeline/LLM_Evaluation_Pipeline]] — LLM 评估流水线
+- [[11_MLOps_Pipeline/LLM_Evaluation_Pipeline]] — LLM 评估流水线

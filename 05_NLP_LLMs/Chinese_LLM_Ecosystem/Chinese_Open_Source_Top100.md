@@ -541,15 +541,15 @@ Kimi-Linear-48B — 2025年12月发布
 - OpenMOSS (复旦): https://github.com/OpenMOSS
 
 ### Wiki 内部参考
-- [[04_NLP_LLMs/Chinese_LLM_Ecosystem/README]] — 中国大模型生态全景
-- [[04_NLP_LLMs/Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]] — 全厂商对比矩阵
-- [[04_NLP_LLMs/Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive]] — DeepSeek 深度解析
-- [[04_NLP_LLMs/Chinese_LLM_Ecosystem/Qwen_Deep_Dive]] — 通义千问深度解析
-- [[04_NLP_LLMs/Chinese_LLM_Ecosystem/GLM_Zhipu_Deep_Dive]] — 智谱 GLM 深度解析
-- [[04_NLP_LLMs/Chinese_LLM_Ecosystem/Kimi_Moonshot_Deep_Dive]] — Kimi 深度解析
-- [[04_NLP_LLMs/Chinese_LLM_Ecosystem/InternLM_Deep_Dive]] — 书生浦语深度解析
-- [[04_NLP_LLMs/Chinese_LLM_Ecosystem/Chinese_LLM_Training_Inference_Platforms]] — 训推平台实战
-- [[04_NLP_LLMs/GenAI_L16_Open_Source_Models_and_Hugging_Face]] — 开源模型与 Hugging Face
+- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/README]] — 中国大模型生态全景
+- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]] — 全厂商对比矩阵
+- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive]] — DeepSeek 深度解析
+- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/Qwen_Deep_Dive]] — 通义千问深度解析
+- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/GLM_Zhipu_Deep_Dive]] — 智谱 GLM 深度解析
+- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/Kimi_Moonshot_Deep_Dive]] — Kimi 深度解析
+- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/InternLM_Deep_Dive]] — 书生浦语深度解析
+- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/Chinese_LLM_Training_Inference_Platforms]] — 训推平台实战
+- [[05_NLP_LLMs/GenAI_L16_Open_Source_Models_and_Hugging_Face]] — 开源模型与 Hugging Face
 - [[01_Fundamentals/AI_Hardware/Chinese_AI_Chips_Deep_Dive]] — 国产 AI 芯片
 
 ---

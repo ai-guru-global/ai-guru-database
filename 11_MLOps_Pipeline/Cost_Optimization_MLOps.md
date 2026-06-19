@@ -224,11 +224,11 @@ graph TD
 
 | 手段 | 成本节省 | 详见 |
 |------|---------|------|
-| **量化（INT8/INT4）** | 50–75% 显存 | [[09_Deployment_Inference/Quantization_Techniques_2026]] |
-| **动态批处理** | 3–5x 吞吐 | [[09_Deployment_Inference/vLLM_Deep_Dive]] |
+| **量化（INT8/INT4）** | 50–75% 显存 | [[10_Deployment_Inference/Quantization_Techniques_2026]] |
+| **动态批处理** | 3–5x 吞吐 | [[10_Deployment_Inference/vLLM_Deep_Dive]] |
 | **知识蒸馏** | 小模型替代大模型 | [[07_Model_Training/Pruning_and_Knowledge_Distillation]] |
-| **投机解码** | 2x 速度 | [[09_Deployment_Inference/Speculative_Decoding_Advanced_2026]] |
-| **Prompt 缓存** | 50% 延迟 | [[09_Deployment_Inference/Prompt_Caching_Advanced]] |
+| **投机解码** | 2x 速度 | [[10_Deployment_Inference/Speculative_Decoding_Advanced_2026]] |
+| **Prompt 缓存** | 50% 延迟 | [[10_Deployment_Inference/Prompt_Caching_Advanced]] |
 
 ---
 
@@ -272,17 +272,17 @@ def detect_cost_anomaly():
 ## 8. 相关文档
 
 ### 本章内
-- [[10_MLOps_Pipeline/LLM_Cost_Latency_SLO]] — LLM Token 成本与缓存
-- [[10_MLOps_Pipeline/ML_Observability_SLO]] — GPU 利用率监控
-- [[10_MLOps_Pipeline/MLOps_Maturity_Model]] — 成熟度
+- [[11_MLOps_Pipeline/LLM_Cost_Latency_SLO]] — LLM Token 成本与缓存
+- [[11_MLOps_Pipeline/ML_Observability_SLO]] — GPU 利用率监控
+- [[11_MLOps_Pipeline/MLOps_Maturity_Model]] — 成熟度
 
 ### 跨章
 - [[07_Model_Training/Training_Optimization_2026]] — 训练优化
 - [[07_Model_Training/Mixed_Precision_Training]] — 混合精度
-- [[09_Deployment_Inference/LLM_Cost_Optimization]] — LLM 推理成本
-- [[09_Deployment_Inference/Quantization_Techniques_2026]] — 量化
+- [[10_Deployment_Inference/LLM_Cost_Optimization]] — LLM 推理成本
+- [[10_Deployment_Inference/Quantization_Techniques_2026]] — 量化
 - [[12_Architecture_Infrastructure/AI_Cost_Optimization_2026]] — 架构层成本
-- [[concepts/mlops]] — MLOps 概念
+- [[_concepts/mlops]] — MLOps 概念
 
 ---
 

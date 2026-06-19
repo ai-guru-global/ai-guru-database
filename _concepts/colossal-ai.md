@@ -3,13 +3,13 @@ title: "Colossal-AI"
 category: concept
 tags: ["colossal-ai", "distributed-training", "parallelism", "llm", "training", "inference", "optimization", "hpc"]
 relationships:
-  - target: "concepts/distributed-training"
+  - target: "_concepts/distributed-training"
     type: extends
-  - target: "concepts/deepspeed"
+  - target: "_concepts/deepspeed"
     type: related_to
-  - target: "concepts/megatron-lm"
+  - target: "_concepts/megatron-lm"
     type: related_to
-  - target: "concepts/fsdp"
+  - target: "_concepts/fsdp"
     type: related_to
 sources:
   - 07_Model_Training/Colossal_AI_Deep_Dive.md
@@ -87,7 +87,7 @@ updated: 2026-06-16
 ## Related
 
 - [[07_Model_Training/Colossal_AI_Deep_Dive]] — Colossal-AI 深度解析
-- [[concepts/distributed-training]] — 分布式训练
-- [[concepts/deepspeed]] — DeepSpeed
-- [[concepts/megatron-lm]] — Megatron-LM
-- [[concepts/fsdp]] — FSDP
+- [[_concepts/distributed-training]] — 分布式训练
+- [[_concepts/deepspeed]] — DeepSpeed
+- [[_concepts/megatron-lm]] — Megatron-LM
+- [[_concepts/fsdp]] — FSDP

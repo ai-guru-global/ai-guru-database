@@ -3,17 +3,17 @@ title: "CoT / ReAct / ToT — 推理时 Prompt 技巧"
 category: concept
 tags: ["prompt-engineering", "cot", "react", "tot", "reasoning", "agent-prompting", "chain-of-thought"]
 relationships:
-  - target: "concepts/prompt-engineering"
+  - target: "_concepts/prompt-engineering"
     type: belongs_to
-  - target: "concepts/ai-agents"
+  - target: "_concepts/ai-agents"
     type: enables
-  - target: "concepts/reasoning-models"
+  - target: "_concepts/reasoning-models"
     type: related_to
-  - target: "concepts/rag-systems"
+  - target: "_concepts/rag-systems"
     type: complements
 sources:
-  - 04_NLP_LLMs/Prompt_Engineering/Prompt_Engineering.md
-  - 04_NLP_LLMs/Reasoning_Models/
+  - 05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering.md
+  - 05_NLP_LLMs/Reasoning_Models/
 summary: "CoT(思维链)引导模型'一步步想',ReAct(推理+行动)让模型边想边查工具,ToT(思维树)支持多路径探索。这些推理时 Prompt 技巧让 LLM 在不动参数的情况下解锁更复杂的推理能力,是 Agent 和 Reasoning Model 的核心技术基础。"
 provenance:
   extracted: 0.75
@@ -230,9 +230,9 @@ CoT 是单路径推理,ToT 让模型**同时探索多条推理路径**,用评估
 
 ## Related
 
-- [[concepts/prompt-engineering]] — Prompt Engineering 基础
-- [[concepts/reasoning-models]] — 推理模型(o1/o3/R1)
-- [[concepts/ai-agents]] — AI Agent(ReAct 是 Agent 核心)
-- [[concepts/rag-systems]] — RAG(ReAct 决定何时检索)
-- [[04_NLP_LLMs/Prompt_Engineering]] — Prompt 详解
-- [[04_NLP_LLMs/Reasoning_Models]] — Reasoning Models 详解
+- [[_concepts/prompt-engineering]] — Prompt Engineering 基础
+- [[_concepts/reasoning-models]] — 推理模型(o1/o3/R1)
+- [[_concepts/ai-agents]] — AI Agent(ReAct 是 Agent 核心)
+- [[_concepts/rag-systems]] — RAG(ReAct 决定何时检索)
+- [[05_NLP_LLMs/Prompt_Engineering]] — Prompt 详解
+- [[05_NLP_LLMs/Reasoning_Models]] — Reasoning Models 详解

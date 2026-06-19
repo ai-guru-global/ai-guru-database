@@ -3,11 +3,11 @@ title: "GPU 虚拟化 (GPU Virtualization)"
 category: concept
 tags: ["gpu-virtualization", "gpu-sharing", "MIG", "vGPU", "multi-instance", "isolation"]
 relationships:
-  - target: "concepts/ai-hardware"
+  - target: "_concepts/ai-hardware"
     type: builds_on
-  - target: "concepts/model-serving"
+  - target: "_concepts/model-serving"
     type: enables
-  - target: "concepts/heterogeneous-gpu"
+  - target: "_concepts/heterogeneous-gpu"
     type: related_to
 sources:
   - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
@@ -119,7 +119,7 @@ GPU 共享模式决策树
 | 方案 | 粒度 | 说明 |
 |------|------|------|
 | **整卡分配** | 1 GPU = 1 Pod | 默认 Device Plugin |
-| **GPU 共享** | 分数 GPU | [[concepts/hami|HAMi]], Tencent GPU Sharing |
+| **GPU 共享** | 分数 GPU | [[_concepts/hami|HAMi]], Tencent GPU Sharing |
 | **MIG 调度** | MIG 实例 | NVIDIA MIG Manager |
 | **拓扑感知** | NUMA/NVLink 拓扑 | Topology Aware Scheduling |
 
@@ -129,7 +129,7 @@ GPU 共享模式决策树
 
 1. **推理场景优先独享**：单模型推理时独占 GPU 性能最优
 2. **多租户用 MIG**：需要强隔离时（如金融行业多客户），MIG 是首选
-3. **开发测试用共享**：开发环境用 [[concepts/hami|HAMi]] 等软件级共享提高 GPU 利用率
+3. **开发测试用共享**：开发环境用 [[_concepts/hami|HAMi]] 等软件级共享提高 GPU 利用率
 4. **多厂商混部用 HAMi**：需要统一纳管 NVIDIA/昇腾/寒武纪/海光等时使用 HAMi
 5. **监控显存碎片**：共享模式下显存碎片是常见问题，需 PagedAttention 配合
 6. **避免超卖**：算力共享时过度分配会导致 OOM 和性能劣化
@@ -141,18 +141,18 @@ GPU 共享模式决策树
 1. **MIG 粒度不灵活**：仅支持固定分区比例，不能任意切分
 2. **软件隔离的抖动**：进程级隔离在高负载时延迟不可预测
 3. **NVLink 共享**：MIG 实例无法跨实例使用 NVLink
-4. **国产 GPU 虚拟化**：海光 DCU、昇腾 NPU 的虚拟化能力仍在追赶，可借助 [[concepts/hami|HAMi]] 统一纳管
+4. **国产 GPU 虚拟化**：海光 DCU、昇腾 NPU 的虚拟化能力仍在追赶，可借助 [[_concepts/hami|HAMi]] 统一纳管
 
 ---
 
 ## Related
 
-- [[concepts/ai-hardware]] — AI 硬件（GPU/TPU/NPU）
-- [[concepts/model-serving]] — 模型服务（多租户推理）
-- [[concepts/heterogeneous-gpu]] — 异构 GPU 集群
-- [[concepts/cdi]] — CDI 容器设备接口（MIG 实例如何注入容器）
-- [[concepts/dra]] — DRA 动态资源分配（MIG 切片的属性化调度）
-- [[concepts/gpu-operator]] — NVIDIA GPU Operator（MIG 经其动态管理）
-- [[concepts/hami]] — HAMi（Kubernetes 异构 GPU 虚拟化中间件）
+- [[_concepts/ai-hardware]] — AI 硬件（GPU/TPU/NPU）
+- [[_concepts/model-serving]] — 模型服务（多租户推理）
+- [[_concepts/heterogeneous-gpu]] — 异构 GPU 集群
+- [[_concepts/cdi]] — CDI 容器设备接口（MIG 实例如何注入容器）
+- [[_concepts/dra]] — DRA 动态资源分配（MIG 切片的属性化调度）
+- [[_concepts/gpu-operator]] — NVIDIA GPU Operator（MIG 经其动态管理）
+- [[_concepts/hami]] — HAMi（Kubernetes 异构 GPU 虚拟化中间件）
 - [[12_Architecture_Infrastructure/HAMi_Deep_Dive]] — HAMi 深度解析
 - [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack（GPU 共享模式）

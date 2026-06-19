@@ -1053,5 +1053,5 @@ AI社会的四种可能:
 
 ## Related
 
-- [[concepts/ai-ethics]] — AI 伦理
-- [[concepts/ai-future-trends]] — AI 未来趋势
+- [[_concepts/ai-ethics]] — AI 伦理
+- [[_concepts/ai-future-trends]] — AI 未来趋势

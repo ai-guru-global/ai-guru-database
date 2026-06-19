@@ -48,23 +48,23 @@ quality: final
 
 - **README.md 覆盖**: 29/29 ✅
 - **README_for_dummy.md 覆盖**: 29/29 ✅
-- **in-nutshell 速成指南**: 约 18/29（62%），应用/资源型章节（21_Talks/22_Papers/23_Interviews 等）缺速成入口，按体裁可接受 🟡
+- **in-nutshell 速成指南**: 约 18/29（62%），应用/资源型章节（19_Talks/20_Papers/23_Interviews 等）缺速成入口，按体裁可接受 🟡
 
 ### 2.3 章节体量分布
 
 | 章节 | 文件数 | 字符数 | 健康度 |
 |------|--------|--------|--------|
-| `13_Agent_Production` | 153 | 197.5 万 | 🟢 最大章节，占比 20.8% |
-| `04_NLP_LLMs` | 100 | 131.9 万 | 🟢 第二大 |
-| `23_Interviews` | 88 | 12.7 万 | 🟡 文件多但单篇极短（约 1445 字符/篇） |
-| `17_AI_Coding` | 61 | 40.9 万 | 🟢 |
+| `15_Agent_Production` | 153 | 197.5 万 | 🟢 最大章节，占比 20.8% |
+| `05_NLP_LLMs` | 100 | 131.9 万 | 🟢 第二大 |
+| `21_Interviews` | 88 | 12.7 万 | 🟡 文件多但单篇极短（约 1445 字符/篇） |
+| `16_AI_Coding` | 61 | 40.9 万 | 🟢 |
 | `90_Learn` | 61 | 33.2 万 | 🟢 |
 | `07_Model_Training` | 23 | 51.4 万 | 🟢 单篇最厚 |
-| `09_Deployment_Inference` | 29 | 41.0 万 | 🟢 |
-| `10_MLOps_Pipeline` | 25 | 22.7 万 | 🟡 较基线显著扩充，但缺少单篇标杆长文 |
-| `15_Testing` | 12 | 22.9 万 | 🟡 偏薄 |
-| `concepts/` | 100 | 34.0 万 | 🟢 概念词典质量高 |
-| `synthesis/` | 28 | 8.2 万 | 🟡 合成页平均 2941 字符，深度不足 |
+| `10_Deployment_Inference` | 29 | 41.0 万 | 🟢 |
+| `11_MLOps_Pipeline` | 25 | 22.7 万 | 🟡 较基线显著扩充，但缺少单篇标杆长文 |
+| `09_Testing` | 12 | 22.9 万 | 🟡 偏薄 |
+| `_concepts/` | 100 | 34.0 万 | 🟢 概念词典质量高 |
+| `_synthesis/` | 28 | 8.2 万 | 🟡 合成页平均 2941 字符，深度不足 |
 
 ---
 
@@ -80,11 +80,11 @@ quality: final
 
 ### 3.2 明显薄弱领域 ⚠️
 
-1. **AI 测试** (`15_Testing`): 12 文件 / 22.9 万字符，与 Agent 评估章节存在职能重叠但未明确分工
-2. **行业应用** (`20_AI_Applications_Industry`): 26 文件但深度参差，多为概述
-3. **合成页面** (`synthesis/`): 28 页平均不足 3000 字符，跨域洞察不够
+1. **AI 测试** (`09_Testing`): 12 文件 / 22.9 万字符，与 Agent 评估章节存在职能重叠但未明确分工
+2. **行业应用** (`18_AI_Applications_Industry`): 26 文件但深度参差，多为概述
+3. **合成页面** (`_synthesis/`): 28 页平均不足 3000 字符，跨域洞察不够
 4. **References**: 36 文件但多属索引，缺乏 annotated bibliography
-5. **访谈/演讲** (`21_Talks`/`23_Interviews`): 文件数多但单篇字数密度低（<300 词/篇），信息浓度不足
+5. **访谈/演讲** (`19_Talks`/`21_Interviews`): 文件数多但单篇字数密度低（<300 词/篇），信息浓度不足
 
 ### 3.3 长文分布
 
@@ -100,9 +100,9 @@ quality: final
 ### 4.1 Frontmatter 问题
 
 - **YAML 语法错误**: 3 个文件因中文引号未转义导致解析失败
-  - `09_Deployment_Inference/Quantization_Techniques_2026.md`
-  - `04_NLP_LLMs/LLM_Fundamentals.md`
-  - `04_NLP_LLMs/NLP_Fundamentals.md`
+  - `10_Deployment_Inference/Quantization_Techniques_2026.md`
+  - `05_NLP_LLMs/LLM_Fundamentals.md`
+  - `05_NLP_LLMs/NLP_Fundamentals.md`
 - **空 summary 字段**: 43 个
 - **缺失 category**: 9 个
 - **缺失 tags**: 9 个
@@ -133,17 +133,17 @@ quality: final
 
 ### 6.1 目录健康
 
-- **空目录**: 214 个，其中大量来自 `Web/public/mkdocs/` 下带 ` 2`/` 3`/` 4` 后缀的重复副本目录，以及 `13_Agent_Production/src`、`13_Agent_Production/config` 等代码目录混入知识库
-- **辅助目录边界模糊**: `concepts/`、`synthesis/`、`references/`、`journal/` 与主章节关系未明确文档化
+- **空目录**: 214 个，其中大量来自 `Web/public/mkdocs/` 下带 ` 2`/` 3`/` 4` 后缀的重复副本目录，以及 `15_Agent_Production/src`、`15_Agent_Production/config` 等代码目录混入知识库
+- **辅助目录边界模糊**: `_concepts/`、`_synthesis/`、`_references/`、`journal/` 与主章节关系未明确文档化
 
 ### 6.2 待完成内容
 
 - 17 个文件包含 `TODO:`、`WIP`、`占位符`、`待补充` 等标记，分布在：
-  - `15_Testing/Test_Data_Management.md`
+  - `09_Testing/Test_Data_Management.md`
   - `18_Cloud_Ops_Agent/Mobile_AI_Ops_Design.md`
   - `08_Model_Evaluation/README.md`
-  - `17_AI_Coding/` 下的 Vibe Coding 系列
-  - `13_Agent_Production/` 的评估与 OpenClaw 生态
+  - `16_AI_Coding/` 下的 Vibe Coding 系列
+  - `15_Agent_Production/` 的评估与 OpenClaw 生态
 
 ### 6.3 版本控制
 
@@ -177,15 +177,15 @@ quality: final
 ### 🟡 P1 — 本月内
 
 4. **运行链接清洗**: 区分真假失效链接，修复 `./docs#` 错误锚点和目录链接
-5. **提升 `10_MLOps_Pipeline` 标杆长文密度**: 现有 25 文件 / 22.7 万字符，但缺少 >5000 词单篇标杆，建议将 LLMOps/Feature Store/Model Registry 之一扩写为深度长文
-6. **治理 `Web/public/mkdocs/` 重复目录** 和 `13_Agent_Production/src|tests|config` 代码混入
+5. **提升 `11_MLOps_Pipeline` 标杆长文密度**: 现有 25 文件 / 22.7 万字符，但缺少 >5000 词单篇标杆，建议将 LLMOps/Feature Store/Model Registry 之一扩写为深度长文
+6. **治理 `Web/public/mkdocs/` 重复目录** 和 `15_Agent_Production/src|tests|config` 代码混入
 7. **建立统一统计脚本**（`scripts/count_core.py`），让 README badge、manifest、wiki-status 同源
 
 ### 🟢 P2 — 持续优化
 
 8. 给 43 个空 summary 字段补写摘要
-9. 给 `synthesis/` 页面扩写到 >3000 字符，增强跨域洞察
-10. 明确 `concepts/` / `synthesis/` / `references/` 与主章节的映射关系
+9. 给 `_synthesis/` 页面扩写到 >3000 字符，增强跨域洞察
+10. 明确 `_concepts/` / `_synthesis/` / `_references/` 与主章节的映射关系
 11. 制定标题去重规则，避免 README 与 in-nutshell 标题冲突
 
 ---

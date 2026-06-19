@@ -4,11 +4,11 @@ category: concepts
 tags: ["machine-learning", "time-series", "arima", "forecasting", "seasonality", "prophet", "sarima"]
 aliases: [Time Series Analysis, 时序分析, 时间序列预测]
 relationships:
-  - target: "[[concepts/supervised-learning]]"
+  - target: "[[_concepts/supervised-learning]]"
     type: related_to
-  - target: "concepts/feature-engineering"
+  - target: "_concepts/feature-engineering"
     type: related_to
-  - target: "concepts/anomaly-detection"
+  - target: "_concepts/anomaly-detection"
     type: related_to
 sources: [02_Machine_unsupervised-learning/Time_Series/Time_Series_Analysis.md]
 summary: 分析按时间排列的数据序列，捕捉趋势、季节性和周期模式，用于预测未来值。
@@ -127,15 +127,15 @@ Facebook 开发的可加模型：$y(t) = g(t) + s(t) + h(t) + \epsilon_t$
 
 ## 来源
 
-- references/time-series-reference
-- concepts/supervised-learning
-- concepts/feature-engineering
-- concepts/anomaly-detection
+- _references/time-series-reference
+- _concepts/supervised-learning
+- _concepts/feature-engineering
+- _concepts/anomaly-detection
 
 ## Related
 
-- [[concepts/supervised-learning.md|supervised-learning]]
-- [[concepts/unsupervised-learning.md|unsupervised-learning]]
+- [[_concepts/supervised-learning.md|supervised-learning]]
+- [[_concepts/unsupervised-learning.md|unsupervised-learning]]
 - [[02_Machine_Learning/Anomaly_Detection/Anomaly_Detection.md|Anomaly_Detection]]
 - [[02_Machine_Learning/Anomaly_Detection/Anomaly_Detection_for_dummy.md|Anomaly_Detection_for_dummy]]
 - [[02_Machine_Learning/AutoML/AutoML.md|AutoML]]

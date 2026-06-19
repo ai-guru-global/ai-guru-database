@@ -3,16 +3,16 @@ title: "TGI (Text Generation Inference)"
 category: concept
 tags: ["tgi", "huggingface", "inference", "llm", "text-generation", "continuous-batching", "quantization", "deployment"]
 relationships:
-  - target: "concepts/vllm"
+  - target: "_concepts/vllm"
     type: related_to
-  - target: "concepts/model-serving"
+  - target: "_concepts/model-serving"
     type: extends
-  - target: "concepts/hami"
+  - target: "_concepts/hami"
     type: related_to
-  - target: "concepts/tensorrt-llm"
+  - target: "_concepts/tensorrt-llm"
     type: related_to
 sources:
-  - 09_Deployment_Inference/TGI_Deep_Dive.md
+  - 10_Deployment_Inference/TGI_Deep_Dive.md
 summary: "TGI 是 HuggingFace 开源的 LLM 推理服务引擎，支持连续批处理、Safetensors、流式生成、量化和 OpenAI 兼容 API，广泛用于生产级文本生成服务。"
 provenance:
   extracted: 0.8
@@ -131,9 +131,9 @@ docker run --gpus all \
 
 ## Related
 
-- [[09_Deployment_Inference/TGI_Deep_Dive]] — TGI 深度解析
-- [[concepts/vllm]] — vLLM 推理引擎
-- [[concepts/model-serving]] — 模型服务
-- [[concepts/hami]] — HAMi GPU 虚拟化
-- [[09_Deployment_Inference/KServe_Deep_Dive]] — KServe
-- [[09_Deployment_Inference/vLLM_Deep_Dive]] — vLLM
+- [[10_Deployment_Inference/TGI_Deep_Dive]] — TGI 深度解析
+- [[_concepts/vllm]] — vLLM 推理引擎
+- [[_concepts/model-serving]] — 模型服务
+- [[_concepts/hami]] — HAMi GPU 虚拟化
+- [[10_Deployment_Inference/KServe_Deep_Dive]] — KServe
+- [[10_Deployment_Inference/vLLM_Deep_Dive]] — vLLM

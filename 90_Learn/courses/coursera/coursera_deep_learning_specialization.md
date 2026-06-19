@@ -21,7 +21,7 @@ updated: "2026-06-12"
 
 - [[02_Machine_Learning/README]] — 经典机器学习
 - [[03_Deep_Learning/README]] — 深度学习基础
-- [[04_NLP_LLMs/README]] — NLP 与大模型
+- [[05_NLP_LLMs/README]] — NLP 与大模型
 
 ## 相关链接
 

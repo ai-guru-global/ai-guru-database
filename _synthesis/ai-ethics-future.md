@@ -52,6 +52,6 @@ AI 伦理不是一个技术问题，而是一个**权力分配问题**。谁决�
 
 - [[00_AI_Introduction/AI_Future_Trends]]
 - [[00_AI_Introduction/AI_Ethics_Society]]
-- [[concepts/ai-future-trends]]
-- [[concepts/ai-ethics]]
-- [[19_Ethics_Safety/Value_Alignment/Value_Alignment.md]]
+- [[_concepts/ai-future-trends]]
+- [[_concepts/ai-ethics]]
+- [[17_Ethics_Safety/Value_Alignment/Value_Alignment.md]]

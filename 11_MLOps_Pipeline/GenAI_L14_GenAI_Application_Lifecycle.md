@@ -338,14 +338,14 @@ LLMOps的五大核心指标是质量、伤害、诚实度、成本和延迟。�
 ## 扩展阅读
 
 - [[90_Learn/courses/microsoft/microsoft_genai_for_beginners]] - 课程总览
-- [[10_MLOps_Pipeline/MLOps_Maturity_Model]] - MLOps成熟度模型
-- [[11_RAG_Systems/RAG-in-nutshell]] - RAG技术概述
-- [[10_MLOps_Pipeline/Model_Monitoring_and_Drift_Detection_2026]] - 模型监控
-- [[11_RAG_Systems/GenAI_L15_RAG_and_Vector_Databases]] - RAG与向量数据库
-- [[19_Ethics_Safety/GenAI_L13_Securing_AI_Applications]] - AI应用安全
+- [[11_MLOps_Pipeline/MLOps_Maturity_Model]] - MLOps成熟度模型
+- [[14_RAG_Systems/RAG-in-nutshell]] - RAG技术概述
+- [[11_MLOps_Pipeline/Model_Monitoring_and_Drift_Detection_2026]] - 模型监控
+- [[14_RAG_Systems/GenAI_L15_RAG_and_Vector_Databases]] - RAG与向量数据库
+- [[17_Ethics_Safety/GenAI_L13_Securing_AI_Applications]] - AI应用安全
 
 ## 课程导航
 
 | 上一课 | 下一课 |
 |--------|--------|
-| [[19_Ethics_Safety/GenAI_L13_Securing_AI_Applications|L13 保障AI应用安全]] | [[11_RAG_Systems/GenAI_L15_RAG_and_Vector_Databases|L15 RAG与向量数据库]] |
+| [[17_Ethics_Safety/GenAI_L13_Securing_AI_Applications|L13 保障AI应用安全]] | [[14_RAG_Systems/GenAI_L15_RAG_and_Vector_Databases|L15 RAG与向量数据库]] |

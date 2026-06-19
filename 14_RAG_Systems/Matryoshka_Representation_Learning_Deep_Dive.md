@@ -455,14 +455,14 @@ def adaptive_retrieve(query_embedding, index, latency_budget_ms):
 ## 10. 延伸阅读
 
 - 论文: *Matryoshka Representation Learning* (Kusupati et al., NeurIPS 2022)
-- 论文解读: [[22_Papers/Matryoshka_Representation_Learning_Deep_Dive]]
-- 概念卡片: [[concepts/matryoshka-representation-learning]]
+- 论文解读: [[20_Papers/Matryoshka_Representation_Learning_Deep_Dive]]
+- 概念卡片: [[_concepts/matryoshka-representation-learning]]
 - 相关主题:
-  - [[11_RAG_Systems/Embedding_Models_Guide|Embedding 模型选型]]
-  - [[11_RAG_Systems/Sentence_Transformers_Deep_Dive|Sentence-Transformers]]
-  - [[concepts/vector-database|向量数据库]]
-  - [[concepts/rag-systems|RAG 系统]]
-  - [[concepts/model-compression|模型压缩]]
+  - [[14_RAG_Systems/Embedding_Models_Guide|Embedding 模型选型]]
+  - [[14_RAG_Systems/Sentence_Transformers_Deep_Dive|Sentence-Transformers]]
+  - [[_concepts/vector-database|向量数据库]]
+  - [[_concepts/rag-systems|RAG 系统]]
+  - [[_concepts/model-compression|模型压缩]]
 
 ---
 

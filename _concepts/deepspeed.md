@@ -3,15 +3,15 @@ title: "DeepSpeed"
 category: concept
 tags: ["deepspeed", "microsoft", "distributed-training", "zero", "parallelism", "inference", "optimization", "moe"]
 relationships:
-  - target: "concepts/distributed-training"
+  - target: "_concepts/distributed-training"
     type: extends
-  - target: "concepts/megatron-lm"
+  - target: "_concepts/megatron-lm"
     type: related_to
-  - target: "concepts/fsdp"
+  - target: "_concepts/fsdp"
     type: related_to
-  - target: "concepts/hami"
+  - target: "_concepts/hami"
     type: related_to
-  - target: "concepts/ray"
+  - target: "_concepts/ray"
     type: related_to
 sources:
   - 07_Model_Training/DeepSpeed_Deep_Dive.md
@@ -109,8 +109,8 @@ Data Parallel Group
 ## Related
 
 - [[07_Model_Training/DeepSpeed_Deep_Dive]] — DeepSpeed 深度解析
-- [[concepts/distributed-training]] — 分布式训练
-- [[concepts/fsdp]] — PyTorch FSDP
-- [[concepts/megatron-lm]] — Megatron-LM
-- [[concepts/hami]] — HAMi GPU 虚拟化
-- [[concepts/ray]] — Ray 分布式框架
+- [[_concepts/distributed-training]] — 分布式训练
+- [[_concepts/fsdp]] — PyTorch FSDP
+- [[_concepts/megatron-lm]] — Megatron-LM
+- [[_concepts/hami]] — HAMi GPU 虚拟化
+- [[_concepts/ray]] — Ray 分布式框架

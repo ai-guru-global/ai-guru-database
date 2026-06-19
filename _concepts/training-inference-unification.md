@@ -3,9 +3,9 @@ title: 训推一体 (Training-Inference Unification)
 category: concepts
 tags: [infrastructure, gpu-scheduling, training, inference, unified]
 relationships:
-  - target: "concepts/ai-architecture"
+  - target: "_concepts/ai-architecture"
     type: extends
-  - target: "concepts/heterogeneous-gpu"
+  - target: "_concepts/heterogeneous-gpu"
     type: related_to
 sources:
   - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
@@ -84,7 +84,7 @@ LeMix（UC Riverside, 2025）提出细粒度训推共置调度框架：
 
 ## Related
 
-- [[concepts/ai-architecture]] — AI 系统架构
-- [[concepts/heterogeneous-gpu]] — 异构 GPU 集群
-- [[concepts/continuous-batching]] — Continuous Batching
+- [[_concepts/ai-architecture]] — AI 系统架构
+- [[_concepts/heterogeneous-gpu]] — 异构 GPU 集群
+- [[_concepts/continuous-batching]] — Continuous Batching
 - [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — 阿里云 AI Stack

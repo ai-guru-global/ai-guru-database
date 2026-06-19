@@ -3,13 +3,13 @@ title: "LM Evaluation Harness"
 category: concept
 tags: ["lm-evaluation-harness", "eleutherai", "evaluation", "benchmark", "llm", "few-shot", "perplexity"]
 relationships:
-  - target: "concepts/model-evaluation"
+  - target: "_concepts/model-evaluation"
     type: extends
-  - target: "concepts/benchmark"
+  - target: "_concepts/benchmark"
     type: enables
-  - target: "concepts/opencompass"
+  - target: "_concepts/opencompass"
     type: related_to
-  - target: "concepts/llm"
+  - target: "_concepts/llm"
     type: evaluates
 sources:
   - 08_Model_Evaluation/LM_Evaluation_Harness_Deep_Dive.md
@@ -88,7 +88,7 @@ updated: 2026-06-16
 ## Related
 
 - [[08_Model_Evaluation/LM_Evaluation_Harness_Deep_Dive]] — LM Evaluation Harness 深度解析
-- [[concepts/model-evaluation]] — 模型评估
-- [[concepts/benchmark]] — 基准测试
-- [[concepts/opencompass]] — OpenCompass
+- [[_concepts/model-evaluation]] — 模型评估
+- [[_concepts/benchmark]] — 基准测试
+- [[_concepts/opencompass]] — OpenCompass
 - [[08_Model_Evaluation/LLM_Benchmark_Suite_2026]] — LLM 基准套件 2026

@@ -3,15 +3,15 @@ title: "在线评估"
 category: concepts
 tags: ["online-evaluation", "ab-testing", "model-evaluation", "deployment", "shadow-deployment"]
 relationships:
-  - target: "concepts/model-evaluation"
+  - target: "_concepts/model-evaluation"
     type: belongs_to
-  - target: "concepts/ab-testing-framework"
+  - target: "_concepts/ab-testing-framework"
     type: implements
-  - target: "concepts/model-deployment"
+  - target: "_concepts/model-deployment"
     type: follows
 sources:
   - 08_Model_Evaluation/Online_Evaluation.md
-  - 10_MLOps_Pipeline/LLM_Evaluation_Pipeline.md
+  - 11_MLOps_Pipeline/LLM_Evaluation_Pipeline.md
 summary: "在线评估是在真实用户环境中验证模型效果的方法。相比离线基准，它直接测量业务指标（转化率、留存、满意度），常用 A/B 测试、影子部署、金丝雀发布等手段。"
 provenance:
   extracted: 0.8
@@ -58,7 +58,7 @@ updated: 2026-06-16
 
 ## Related
 
-- [[concepts/model-evaluation]] — 模型评估
-- [[concepts/ab-testing-framework]] — A/B 测试框架
-- [[concepts/model-deployment]] — 模型部署
+- [[_concepts/model-evaluation]] — 模型评估
+- [[_concepts/ab-testing-framework]] — A/B 测试框架
+- [[_concepts/model-deployment]] — 模型部署
 - [[08_Model_Evaluation/Online_Evaluation]] — 在线评估

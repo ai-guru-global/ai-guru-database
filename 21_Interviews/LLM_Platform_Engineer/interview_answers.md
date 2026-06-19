@@ -23,8 +23,8 @@ updated: 2026-05-31
 
 ## Related
 
-- [[23_Interviews/LLM_Platform_Engineer/company_level_question_bank]] — LLM Platform Engineer 按公司/级别区分的题库 (共享: career, experience, interviews, llm, practitioners)
-- [[23_Interviews/LLM_Platform_Engineer/interview_preparing]] — LLM Platform Engineer 面试准备 (共享: career, experience, interviews, llm, practitioners)
-- [[23_Interviews/LLM_Platform_Engineer/question_bank]] — LLM Platform Engineer 题库 (共享: career, experience, interviews, llm, practitioners)
-- [[23_Interviews/AI_Data_Analyst/company_level_question_bank]] — AI Data Analyst 按公司/级别区分的题库 (共享: career, experience, interviews, practitioners)
-- [[23_Interviews/Robotics_Engineer/interview_answers.md|interview_answers]]
+- [[21_Interviews/LLM_Platform_Engineer/company_level_question_bank]] — LLM Platform Engineer 按公司/级别区分的题库 (共享: career, experience, interviews, llm, practitioners)
+- [[21_Interviews/LLM_Platform_Engineer/interview_preparing]] — LLM Platform Engineer 面试准备 (共享: career, experience, interviews, llm, practitioners)
+- [[21_Interviews/LLM_Platform_Engineer/question_bank]] — LLM Platform Engineer 题库 (共享: career, experience, interviews, llm, practitioners)
+- [[21_Interviews/AI_Data_Analyst/company_level_question_bank]] — AI Data Analyst 按公司/级别区分的题库 (共享: career, experience, interviews, practitioners)
+- [[21_Interviews/Robotics_Engineer/interview_answers.md|interview_answers]]

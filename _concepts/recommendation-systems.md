@@ -4,11 +4,11 @@ category: concepts
 tags: ["machine-learning", "recommendation", "collaborative-filtering", "content-based", "hybrid", "computer-vision", "matrix-factorization"]
 aliases: [Recommendation Systems, 推荐系统, RecSys]
 relationships:
-  - target: "[[concepts/supervised-learning]]"
+  - target: "[[_concepts/supervised-learning]]"
     type: related_to
-  - target: "concepts/unsupervised-learning"
+  - target: "_concepts/unsupervised-learning"
     type: related_to
-  - target: "concepts/feature-engineering"
+  - target: "_concepts/feature-engineering"
     type: related_to
 sources: [02_Machine_unsupervised-learning/Recommendation_Systems/Recommendation_Systems.md]
 summary: 预测用户对物品的偏好，是电商、内容平台的核心技术，涵盖协同过滤、内容推荐和深度学习方法。
@@ -120,15 +120,15 @@ Netflix Prize 关键经验：集成方法效果最好、矩阵分解是核心、
 
 ## 来源
 
-- references/recommendation-systems-reference
-- concepts/supervised-learning
-- concepts/unsupervised-learning
-- concepts/feature-engineering
+- _references/recommendation-systems-reference
+- _concepts/supervised-learning
+- _concepts/unsupervised-learning
+- _concepts/feature-engineering
 
 ## Related
 
-- [[concepts/supervised-learning.md|supervised-learning]]
-- [[concepts/unsupervised-learning.md|unsupervised-learning]]
+- [[_concepts/supervised-learning.md|supervised-learning]]
+- [[_concepts/unsupervised-learning.md|unsupervised-learning]]
 - [[02_Machine_Learning/Anomaly_Detection/Anomaly_Detection.md|Anomaly_Detection]]
 - [[02_Machine_Learning/Anomaly_Detection/Anomaly_Detection_for_dummy.md|Anomaly_Detection_for_dummy]]
 - [[02_Machine_Learning/AutoML/AutoML.md|AutoML]]

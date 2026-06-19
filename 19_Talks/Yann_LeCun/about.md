@@ -133,8 +133,8 @@ LeCun 认为监督学习受限于标注数据的规模和成本，而自监督�
 - [AI 伦理与社会](../00_AI_Introduction/AI_Ethics_Society.md) -- 开源 vs 闭源、AI 安全争论
 - [AI 未来趋势](../00_AI_Introduction/AI_Future_Trends.md) -- 世界模型与后 LLM 架构
 - [深度学习基础](../03_Deep_Learning/README.md) -- CNN 架构与自监督学习理论
-- [计算机视觉](../05_Computer_Vision/README.md) -- LeNet 到现代视觉模型的演进
-- [LLM 基础](../04_NLP_LLMs/README.md) -- LLaMA 开源模型与 LLM 局限性讨论
+- [计算机视觉](../04_Computer_Vision/README.md) -- LeNet 到现代视觉模型的演进
+- [LLM 基础](../05_NLP_LLMs/README.md) -- LLaMA 开源模型与 LLM 局限性讨论
 
 ---
 
@@ -152,11 +152,11 @@ LeCun 认为监督学习受限于标注数据的规模和成本，而自监督�
 
 ## Related
 
-- [[21_Talks/Yann_LeCun/sayings]] -- Yann LeCun 关于 AI 的观点 (Yann LeCun on AI)
-- [[21_Talks/Geoffrey_Hinton/about]] -- Geoffrey Hinton 简介 (共享: deep learning pioneers, Turing Award, AI safety debate)
-- [[21_Talks/Yoshua_Bengio/about]] -- Yoshua Bengio 简介 (共享: deep learning pioneers, Turing Award, scaling concerns)
-- [[21_Talks/Sam_Altman/about]] -- Sam Altman 简介 (共享: open vs closed AI debate)
-- [[21_Talks/Dario_Amodei/about]] -- Dario Amodei 简介 (共享: AI safety debate — urgency vs practicality)
-- [[21_Talks/Mark_Zuckerberg/about]] -- Mark Zuckerberg 简介 (共享: Meta AI strategy, LLaMA open source)
-- [[21_Talks/Andrej_Karpathy/about]] -- Andrej Karpathy 简介 (共享: insights, leaders, speeches, talks)
-- [[21_Talks/Andrew_Ng/about]] -- Andrew Ng 简介 (共享: insights, leaders, speeches, talks)
+- [[19_Talks/Yann_LeCun/sayings]] -- Yann LeCun 关于 AI 的观点 (Yann LeCun on AI)
+- [[19_Talks/Geoffrey_Hinton/about]] -- Geoffrey Hinton 简介 (共享: deep learning pioneers, Turing Award, AI safety debate)
+- [[19_Talks/Yoshua_Bengio/about]] -- Yoshua Bengio 简介 (共享: deep learning pioneers, Turing Award, scaling concerns)
+- [[19_Talks/Sam_Altman/about]] -- Sam Altman 简介 (共享: open vs closed AI debate)
+- [[19_Talks/Dario_Amodei/about]] -- Dario Amodei 简介 (共享: AI safety debate — urgency vs practicality)
+- [[19_Talks/Mark_Zuckerberg/about]] -- Mark Zuckerberg 简介 (共享: Meta AI strategy, LLaMA open source)
+- [[19_Talks/Andrej_Karpathy/about]] -- Andrej Karpathy 简介 (共享: insights, leaders, speeches, talks)
+- [[19_Talks/Andrew_Ng/about]] -- Andrew Ng 简介 (共享: insights, leaders, speeches, talks)

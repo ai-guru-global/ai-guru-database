@@ -216,6 +216,6 @@ def multi_agent_team(user_request):
 ---
 
 ## 相关阅读
-- [[13_Agent_Production/Agent_Frameworks/AutoGen_Deep_Dive]]
-- [[13_Agent_Production/Agent_Frameworks/SmolAgents_Practical_Guide]]
-- [[04_NLP_LLMs/Prompt_Engineering/Prompt_Engineering_Principles_Ng]]
+- [[15_Agent_Production/Agent_Frameworks/AutoGen_Deep_Dive]]
+- [[15_Agent_Production/Agent_Frameworks/SmolAgents_Practical_Guide]]
+- [[05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering_Principles_Ng]]

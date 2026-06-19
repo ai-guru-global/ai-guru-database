@@ -714,9 +714,9 @@ METRICS = {
 - [分布式系统](../../01_Fundamentals/Distributed_Systems/Distributed_Systems.md) — 分布式训练基础设施
 
 ### 进阶方向
-- [模型部署与推理](../09_Deployment_Inference/Deployment_Inference.md) — MLOps 的推理服务层
+- [模型部署与推理](../10_Deployment_Inference/Deployment_Inference.md) — MLOps 的推理服务层
 - [模型评估](../08_Model_Evaluation/Model_Evaluation.md) — Pipeline 中的评估环节
-- [RAG 系统](../11_RAG_Systems/RAG_Systems.md) — LLMOps 中 RAG Pipeline 的管理
+- [RAG 系统](../14_RAG_Systems/RAG_Systems.md) — LLMOps 中 RAG Pipeline 的管理
 
 ---
 
@@ -763,6 +763,6 @@ METRICS = {
 
 ## Related
 
-- [[10_MLOps_Pipeline/Data_Pipeline_Orchestration.md|Data_Pipeline_Orchestration]]
-- [[10_MLOps_Pipeline/MLOps-in-nutshell.md|MLOps-in-nutshell]]
-- [[concepts/mlops.md|mlops]]
+- [[11_MLOps_Pipeline/Data_Pipeline_Orchestration.md|Data_Pipeline_Orchestration]]
+- [[11_MLOps_Pipeline/MLOps-in-nutshell.md|MLOps-in-nutshell]]
+- [[_concepts/mlops.md|mlops]]

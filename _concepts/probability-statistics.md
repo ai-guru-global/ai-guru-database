@@ -4,11 +4,11 @@ category: concepts
 tags: [linear-algebra, probability, statistics, bayes, information-theory, distributions]
 aliases: [Probability Statistics, 概率论, 贝叶斯, 信息论]
 relationships:
-  - target: "[[concepts/linear-algebra]]"
+  - target: "[[_concepts/linear-algebra]]"
     type: related_to
-  - target: "concepts/data-structures-algorithms"
+  - target: "_concepts/data-structures-algorithms"
     type: related_to
-  - target: "concepts/ai-hardware"
+  - target: "_concepts/ai-hardware"
     type: related_to
 sources: [01_ai-fundamentals/Probability_Statistics/Probability_Statistics.md]
 summary: 概率论是AI的不确定性指南针：从贝叶斯推理到交叉熵损失，概率思维贯穿整个机器学习。涵盖MLE、MAP、信息论基础。

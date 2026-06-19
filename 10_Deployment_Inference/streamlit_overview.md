@@ -63,4 +63,4 @@ st.line_chart(df)
 - Stitch Fix: 分享 ML 模型和分析
 - Uber: 数据应用民主化
 
-> **关联**: -> [[09_Deployment_Inference|部署推理]] | [[13_Agent_Production/Gradio_Deep_Dive|Gradio]]
+> **关联**: -> [[10_Deployment_Inference|部署推理]] | [[15_Agent_Production/Gradio_Deep_Dive|Gradio]]

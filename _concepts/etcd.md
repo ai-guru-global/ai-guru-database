@@ -3,11 +3,11 @@ title: "etcd"
 category: concept
 tags: ["etcd", "distributed-database", "key-value", "kubernetes", "consensus", "raft", "cncf"]
 relationships:
-  - target: "concepts/kubernetes"
+  - target: "_concepts/kubernetes"
     type: used_by
-  - target: "concepts/consensus"
+  - target: "_concepts/consensus"
     type: implements
-  - target: "concepts/distributed-systems"
+  - target: "_concepts/distributed-systems"
     type: extends
 sources:
   - 12_Architecture_Infrastructure/AI_Infrastructure_2026.md
@@ -86,7 +86,7 @@ etcdctl snapshot save backup.db
 
 ## Related
 
-- [[concepts/kubernetes]] — Kubernetes
-- [[concepts/distributed-systems]] — 分布式系统
-- [[concepts/consensus]] — 共识算法
+- [[_concepts/kubernetes]] — Kubernetes
+- [[_concepts/distributed-systems]] — 分布式系统
+- [[_concepts/consensus]] — 共识算法
 - [[12_Architecture_Infrastructure/AI_Infrastructure_2026]] — AI 基础设施 2026

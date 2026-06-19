@@ -1291,12 +1291,12 @@ lora_config = LoraConfig(
 ### 前置知识
 - [深度学习基础](../03_Deep_Learning/README.md) — 反向传播、优化器原理
 - [机器学习](../02_Machine_Learning/README.md) — 监督学习、正则化
-- [NLP 与 LLMs](../04_NLP_LLMs/README.md) — Transformer 架构、预训练模型
+- [NLP 与 LLMs](../05_NLP_LLMs/README.md) — Transformer 架构、预训练模型
 
 ### 进阶内容
-- [微调技术深度专题](../04_NLP_LLMs/Fine_tuning_Techniques/) — 更全面的微调方法、RLHF/DPO 对齐
-- [部署与推理](../09_Deployment_Inference/README.md) — 微调后模型的生产部署、推理加速
-- [RAG 系统](../11_RAG_Systems/README.md) — RAG + 微调的混合策略，检索增强与微调结合
+- [微调技术深度专题](../05_NLP_LLMs/Fine_tuning_Techniques/) — 更全面的微调方法、RLHF/DPO 对齐
+- [部署与推理](../10_Deployment_Inference/README.md) — 微调后模型的生产部署、推理加速
+- [RAG 系统](../14_RAG_Systems/README.md) — RAG + 微调的混合策略，检索增强与微调结合
 - [模型评估](../08_Model_Evaluation/) — 微调后的系统评估方法
 
 ---
@@ -1311,4 +1311,4 @@ lora_config = LoraConfig(
 - [[07_Model_Training/Model-Training-in-nutshell.md|Model-Training-in-nutshell]]
 - [[07_Model_Training/Model_Training_for_dummy.md|Model_Training_for_dummy]]
 
-- [[synthesis/alignment-rlhf|价值对齐 × RLHF：从人类反馈到可扩展监督]]
+- [[_synthesis/alignment-rlhf|价值对齐 × RLHF：从人类反馈到可扩展监督]]

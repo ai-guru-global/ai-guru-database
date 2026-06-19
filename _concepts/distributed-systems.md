@@ -4,11 +4,11 @@ category: concepts
 tags: ["distributed-systems", "all-reduce", "parallelism", "ZeRO", "fsdp", "model-training"]
 aliases: [Distributed recommendation-systems, 分布式训练, All-Reduce, 3D并行]
 relationships:
-  - target: "[[concepts/linear-algebra]]"
+  - target: "[[_concepts/linear-algebra]]"
     type: related_to
-  - target: "concepts/data-structures-algorithms"
+  - target: "_concepts/data-structures-algorithms"
     type: related_to
-  - target: "concepts/ai-hardware"
+  - target: "_concepts/ai-hardware"
     type: related_to
 sources: [01_ai-fundamentals/Distributed_Systems/Distributed_Systems.md]
 summary: 分布式训练是大规模AI的核心工程：数据并行解决数据量问题，模型并行解决单卡容量问题，ZeRO优化器消除冗余显存。
@@ -204,5 +204,5 @@ PyTorch对ZeRO-3的实现。与DDP的主要区别：
 
 ## Related
 
-- [[concepts/model-training]] — 模型训练 (共享: fsdp, training)
-- [[synthesis/training-fine-tuning]] — 模型训练 × 微调技术 (共享: fsdp, training)
+- [[_concepts/model-training]] — 模型训练 (共享: fsdp, training)
+- [[_synthesis/training-fine-tuning]] — 模型训练 × 微调技术 (共享: fsdp, training)

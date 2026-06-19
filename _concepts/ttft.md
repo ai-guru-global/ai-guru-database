@@ -3,14 +3,14 @@ title: TTFT
 category: concepts
 tags: [inference, latency, ttft, prefill, performance]
 relationships:
-  - target: "concepts/prefill-decode"
+  - target: "_concepts/prefill-decode"
     type: builds_on
-  - target: "concepts/inference-performance"
+  - target: "_concepts/inference-performance"
     type: related_to
-  - target: "09_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy"
+  - target: "10_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy"
     type: simplified_by
 sources:
-  - 09_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy.md
+  - 10_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy.md
 summary: TTFT（Time To First Token）是从请求发送到模型输出第一个 token 的时间，主要由 prefill 阶段决定，是用户体验的关键指标。
 lifecycle: draft
 tier: core
@@ -46,6 +46,6 @@ TTFT 主要由 **prefill 阶段**决定：
 
 ## Related
 
-- [[concepts/prefill-decode]] — Prefill / Decode 阶段
-- [[concepts/inference-performance]] — 推理性能
-- [[09_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy|推理性能术语大白话解释]]
+- [[_concepts/prefill-decode]] — Prefill / Decode 阶段
+- [[_concepts/inference-performance]] — 推理性能
+- [[10_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy|推理性能术语大白话解释]]

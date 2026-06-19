@@ -14,17 +14,17 @@ updated: "2026-06-12"
 ## 1. 核心整合维度与落地方案
 
 ### 1.1 Agent 设计模式 (Agentic Design Patterns)
-**目标目录**: `13_Agent_Production/`
+**目标目录**: `15_Agent_Production/`
 
 *   **吴恩达四大 Agent 设计模式**: 新增 `Agentic_Design_Patterns_AndrewNg.md`。将吴恩达总结的 2024-2026 推动 AI Agent 发展的四大核心范式：Reflection (反思)、Tool Use (工具使用)、Planning (规划)、Multi-agent Collaboration (多智能体协作) 进行深度拆解。这是整个 Agent 目录的理论总纲。
 
 ### 1.2 高阶 RAG 检索技术 (Advanced RAG)
-**目标目录**: `11_RAG_Systems/`
+**目标目录**: `14_RAG_Systems/`
 
 *   **DLAI 高阶 RAG 实战**: 新增 `Advanced_RAG_DLAI_Practices.md`。提炼 LlamaIndex 创始人 Jerry Liu 和 Chroma 创始人讲述的经典短课程精华。包括：Sentence Window Retrieval (句子窗口检索)、Auto-merging Retrieval (自动合并检索)、Query Expansion (查询扩展) 和 Cohere Re-ranking (重排)。
 
 ### 1.3 提示词工程 (Prompt Engineering)
-**目标目录**: `04_NLP_LLMs/Prompt_Engineering/`
+**目标目录**: `05_NLP_LLMs/Prompt_Engineering/`
 
 *   **开发者提示词工程原则**: 新增 `Prompt_Engineering_Principles_Ng.md`。提炼吴恩达与 OpenAI 的 Isa Fulford 共同讲授的最受欢迎课程《ChatGPT Prompt Engineering for Developers》。总结两大核心原则（写出清晰明确的指令、给模型思考的时间）及其实战技巧（如分隔符、结构化输出、Few-shot、指定思考步骤）。
 

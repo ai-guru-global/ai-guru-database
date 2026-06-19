@@ -87,8 +87,8 @@ response = llm.invoke(f"基于以下信息回答问题:\n{context}\n\n问题: {q
 
 ## 相关阅读
 
-- [[11_RAG_Systems/RAG_Systems]] — RAG 系统全景
-- [[11_RAG_Systems/Vector_Database_for_dummy]] — 向量数据库入门
-- [[11_RAG_Systems/Data_Ingestion_Pipeline]] — 数据摄入管道
-- [[11_RAG_Systems/RAG_Advanced_2026]] — RAG 高级实践
-- [[11_RAG_Systems/Advanced_RAG_DLAI_Practices]] — RAG 高级实践 (DLAI)
+- [[14_RAG_Systems/RAG_Systems]] — RAG 系统全景
+- [[14_RAG_Systems/Vector_Database_for_dummy]] — 向量数据库入门
+- [[14_RAG_Systems/Data_Ingestion_Pipeline]] — 数据摄入管道
+- [[14_RAG_Systems/RAG_Advanced_2026]] — RAG 高级实践
+- [[14_RAG_Systems/Advanced_RAG_DLAI_Practices]] — RAG 高级实践 (DLAI)

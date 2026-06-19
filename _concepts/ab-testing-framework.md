@@ -3,18 +3,18 @@ title: "A/B 测试框架"
 category: concepts
 tags: ["ab-testing", "online-evaluation", "experimentation", "model-evaluation", "statistics"]
 relationships:
-  - target: "concepts/model-evaluation"
+  - target: "_concepts/model-evaluation"
     type: implements
-  - target: "concepts/model-deployment"
+  - target: "_concepts/model-deployment"
     type: follows
-  - target: "concepts/ci-integrated-evaluation"
+  - target: "_concepts/ci-integrated-evaluation"
     type: precedes
-  - target: "concepts/online-evaluation"
+  - target: "_concepts/online-evaluation"
     type: belongs_to
 sources:
   - 08_Model_Evaluation/Online_Evaluation.md
-  - 10_MLOps_Pipeline/LLM_Evaluation_Pipeline.md
-  - concepts/model-evaluation.md
+  - 11_MLOps_Pipeline/LLM_Evaluation_Pipeline.md
+  - _concepts/model-evaluation.md
 summary: "A/B 测试框架是一套在线对比新模型/策略与旧版本的工程系统。它把用户随机分成两组，一组用老版本（A），一组用新版本（B），通过统计检验判断新版本是否在真实业务指标上更好。"
 provenance:
   extracted: 0.75
@@ -98,9 +98,9 @@ A/B 测试直接看真实用户身上的效果。
 
 ## Related
 
-- [[concepts/model-evaluation]] — 模型评估
-- [[concepts/model-deployment]] — 模型部署
-- [[concepts/online-evaluation]] — 在线评估
-- [[concepts/ci-integrated-evaluation]] — CI 集成评估
+- [[_concepts/model-evaluation]] — 模型评估
+- [[_concepts/model-deployment]] — 模型部署
+- [[_concepts/online-evaluation]] — 在线评估
+- [[_concepts/ci-integrated-evaluation]] — CI 集成评估
 - [[08_Model_Evaluation/Online_Evaluation]] — 在线评估
-- [[10_MLOps_Pipeline/LLM_Evaluation_Pipeline]] — LLM 评估流水线
+- [[11_MLOps_Pipeline/LLM_Evaluation_Pipeline]] — LLM 评估流水线

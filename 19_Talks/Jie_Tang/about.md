@@ -79,9 +79,9 @@ updated: 2026-06-12
 
 ## 相关文档
 
-- [GLM/智谱 AI 技术全景](../../04_NLP_LLMs/Chinese_LLM_Ecosystem/GLM_Zhipu_Deep_Dive.md)
-- [中国大模型生态全景](../../04_NLP_LLMs/Chinese_LLM_Ecosystem/README.md)
-- [Multimodal Architectures](../../04_NLP_LLMs/Multimodal_Models/Multimodal_Architectures_2026.md)
+- [GLM/智谱 AI 技术全景](../../05_NLP_LLMs/Chinese_LLM_Ecosystem/GLM_Zhipu_Deep_Dive.md)
+- [中国大模型生态全景](../../05_NLP_LLMs/Chinese_LLM_Ecosystem/README.md)
+- [Multimodal Architectures](../../05_NLP_LLMs/Multimodal_Models/Multimodal_Architectures_2026.md)
 
 ---
 

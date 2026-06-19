@@ -4,18 +4,18 @@ category: concept
 tags: ["embedding", "vector", "matryoshka", "mrl", "for-dummy", "plain-chinese", "rag"]
 summary: "用大白话讲清楚 Embedding、向量和 MRL（俄罗斯套娃表示学习）三个核心概念：它们是什么、解决什么问题、生活中怎么理解。"
 relationships:
-  - target: "concepts/embedding-models"
+  - target: "_concepts/embedding-models"
     type: "simplified"
-  - target: "concepts/matryoshka-representation-learning"
+  - target: "_concepts/matryoshka-representation-learning"
     type: "simplified"
-  - target: "concepts/vector-database"
+  - target: "_concepts/vector-database"
     type: "related_to"
-  - target: "concepts/rag-systems"
+  - target: "_concepts/rag-systems"
     type: "related_to"
 sources:
-  - "concepts/embedding-models.md"
-  - "concepts/matryoshka-representation-learning.md"
-  - "11_RAG_Systems/Matryoshka_Representation_Learning_for_dummy.md"
+  - "_concepts/embedding-models.md"
+  - "_concepts/matryoshka-representation-learning.md"
+  - "14_RAG_Systems/Matryoshka_Representation_Learning_for_dummy.md"
 lifecycle: stable
 tier: supporting
 created: "2026-06-15"
@@ -293,12 +293,12 @@ MRL 的解决办法：**只训练一个模型，输出一个向量，按需截�
 
 ## 延伸阅读
 
-- [[concepts/embedding-models]] — 嵌入模型概念卡片
-- [[concepts/matryoshka-representation-learning]] — MRL 概念卡片
-- [[11_RAG_Systems/Matryoshka_Representation_Learning_for_dummy]] — MRL 小白版
-- [[11_RAG_Systems/Matryoshka_Representation_Learning_Deep_Dive]] — MRL 深度解析
-- [[concepts/vector-database]] — 向量数据库
-- [[concepts/rag-systems]] — RAG 系统
+- [[_concepts/embedding-models]] — 嵌入模型概念卡片
+- [[_concepts/matryoshka-representation-learning]] — MRL 概念卡片
+- [[14_RAG_Systems/Matryoshka_Representation_Learning_for_dummy]] — MRL 小白版
+- [[14_RAG_Systems/Matryoshka_Representation_Learning_Deep_Dive]] — MRL 深度解析
+- [[_concepts/vector-database]] — 向量数据库
+- [[_concepts/rag-systems]] — RAG 系统
 
 ---
 

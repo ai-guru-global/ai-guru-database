@@ -59,4 +59,4 @@ brew install --cask codex
 | 云执行 | Codex Web | 无 | 无 |
 | 定价 | ChatGPT 订阅/API | 按 token | 免费额度大 |
 
-> **关联**: -> [[17_AI_Coding|AI 编程]] | [[17_AI_Coding/AI_Coding_2026_Guide|AI 编程 2026 全景指南]]
+> **关联**: -> [[16_AI_Coding|AI 编程]] | [[16_AI_Coding/AI_Coding_2026_Guide|AI 编程 2026 全景指南]]

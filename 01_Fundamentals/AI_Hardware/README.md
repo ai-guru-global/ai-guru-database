@@ -72,4 +72,4 @@ updated: 2026-06-15
 └── 边缘 → 地平线 J6 (车载) / 算能 BM1688 / 寒武纪 220
 ```
 
-> **关联**: -> [[01_Fundamentals|基础]] | [[07_Model_Training|模型训练]] | [[09_Deployment_Inference|部署推理]] | [[12_Architecture_Infrastructure|架构基础]]
+> **关联**: -> [[01_Fundamentals|基础]] | [[07_Model_Training|模型训练]] | [[10_Deployment_Inference|部署推理]] | [[12_Architecture_Infrastructure|架构基础]]

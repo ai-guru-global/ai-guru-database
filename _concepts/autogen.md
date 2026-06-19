@@ -3,19 +3,19 @@ title: "AutoGen"
 category: concept
 tags: ["autogen", "microsoft", "agent", "multi-agent", "llm", "framework", "conversation", "tool-use"]
 relationships:
-  - target: "concepts/agent-framework"
+  - target: "_concepts/agent-framework"
     type: extends
-  - target: "concepts/multi-agent"
+  - target: "_concepts/multi-agent"
     type: enables
-  - target: "concepts/langchain"
+  - target: "_concepts/langchain"
     type: related_to
-  - target: "concepts/llamaindex"
+  - target: "_concepts/llamaindex"
     type: related_to
-  - target: "concepts/mcp"
+  - target: "_concepts/mcp"
     type: related_to
 sources:
-  - 13_Agent_Production/Agent_Frameworks/AutoGen_Deep_Dive.md
-  - 13_Agent_Production/Agent_Frameworks/AutoGen_CrewAI_LangGraph_Dive.md
+  - 15_Agent_Production/Agent_Frameworks/AutoGen_Deep_Dive.md
+  - 15_Agent_Production/Agent_Frameworks/AutoGen_CrewAI_LangGraph_Dive.md
 summary: "AutoGen 是微软开源的多 Agent 对话框架，通过 ConversableAgent 抽象让多个 LLM Agent 互相协作、调用工具、执行代码，适合复杂任务分解和多角色协作场景。"
 provenance:
   extracted: 0.8
@@ -90,9 +90,9 @@ updated: 2026-06-16
 
 ## Related
 
-- [[13_Agent_Production/Agent_Frameworks/AutoGen_Deep_Dive]] — AutoGen 深度解析
-- [[13_Agent_Production/Agent_Frameworks/AutoGen_CrewAI_LangGraph_Dive]] — AutoGen / CrewAI / LangGraph 对比
-- [[concepts/agent-framework]] — Agent 框架
-- [[concepts/multi-agent]] — 多 Agent 系统
-- [[concepts/langchain]] — LangChain
-- [[concepts/llamaindex]] — LlamaIndex
+- [[15_Agent_Production/Agent_Frameworks/AutoGen_Deep_Dive]] — AutoGen 深度解析
+- [[15_Agent_Production/Agent_Frameworks/AutoGen_CrewAI_LangGraph_Dive]] — AutoGen / CrewAI / LangGraph 对比
+- [[_concepts/agent-framework]] — Agent 框架
+- [[_concepts/multi-agent]] — 多 Agent 系统
+- [[_concepts/langchain]] — LangChain
+- [[_concepts/llamaindex]] — LlamaIndex

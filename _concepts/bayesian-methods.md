@@ -3,11 +3,11 @@ title: "贝叶斯方法 (Bayesian Methods)"
 category: concept
 tags: ["machine-learning", "bayesian", "MCMC", "variational-inference", "probabilistic-programming", "uncertainty"]
 relationships:
-  - target: "concepts/probability-statistics"
+  - target: "_concepts/probability-statistics"
     type: builds_on
-  - target: "concepts/information-theory"
+  - target: "_concepts/information-theory"
     type: related_to
-  - target: "concepts/optimization-regularization"
+  - target: "_concepts/optimization-regularization"
     type: related_to
 sources:
   - 02_Machine_Learning/Bayesian_Methods
@@ -157,6 +157,6 @@ q^*(\theta) = \arg\min_{q \in \mathcal{Q}} D_{KL}(q(\theta) \| P(\theta|\mathcal
 ## Related
 
 - [[02_Machine_Learning/Bayesian_Methods]] — 贝叶斯方法深度解析
-- [[concepts/probability-statistics]] — 概率统计基础
-- [[concepts/information-theory]] — 信息论（KL 散度与变分推断）
-- [[concepts/optimization-regularization]] — 优化与正则化（贝叶斯视角下的正则化）
+- [[_concepts/probability-statistics]] — 概率统计基础
+- [[_concepts/information-theory]] — 信息论（KL 散度与变分推断）
+- [[_concepts/optimization-regularization]] — 优化与正则化（贝叶斯视角下的正则化）

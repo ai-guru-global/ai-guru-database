@@ -85,5 +85,5 @@ tier: core
 - 有 ML 基础想深入 LLM 领域的研究者
 - 需要从零构建 LLM 应用的开发者
 
-> **关联**: -> [[04_NLP_LLMs|NLP/LLM]] | [[07_Model_Training|模型训练]] | [[09_Deployment_Inference|部署推理]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[05_NLP_LLMs|NLP/LLM]] | [[07_Model_Training|模型训练]] | [[10_Deployment_Inference|部署推理]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
 

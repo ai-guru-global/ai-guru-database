@@ -3,11 +3,11 @@ title: "因果推断 (Causal Inference)"
 category: concept
 tags: ["machine-learning", "causal-inference", "causality", "do-calculus", "causal-graph", "confounder"]
 relationships:
-  - target: "concepts/probability-statistics"
+  - target: "_concepts/probability-statistics"
     type: builds_on
-  - target: "concepts/supervised-learning"
+  - target: "_concepts/supervised-learning"
     type: related_to
-  - target: "concepts/bayesian-methods"
+  - target: "_concepts/bayesian-methods"
     type: related_to
 sources:
   - 02_Machine_Learning/Causal_Inference
@@ -153,6 +153,6 @@ P(Y|do(X=x)) = \sum_z P(Y|X=x, Z=z) \cdot P(Z=z)
 ## Related
 
 - [[02_Machine_Learning/Causal_Inference]] — 因果推断深度解析
-- [[concepts/probability-statistics]] — 概率统计基础
-- [[concepts/supervised-learning]] — 监督学习（相关 vs 因果）
-- [[concepts/bayesian-methods]] — 贝叶斯方法（贝叶斯因果网络）
+- [[_concepts/probability-statistics]] — 概率统计基础
+- [[_concepts/supervised-learning]] — 监督学习（相关 vs 因果）
+- [[_concepts/bayesian-methods]] — 贝叶斯方法（贝叶斯因果网络）

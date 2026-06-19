@@ -28,10 +28,10 @@ updated: 2026-06-17
 
 ## 关联文档
 
-- [[04_NLP_LLMs/Transformer_Deep_Dive]] — Transformer 架构基础
-- [[04_NLP_LLMs/LLM_Training_Deep_Dive]] — 训练技术
-- [[04_NLP_LLMs/LLM_Architecture_Evolution]] — 架构演进
-- [[04_NLP_LLMs/Edge_LLM/Edge_LLM_Deep_Dive]] — 端侧推理
+- [[05_NLP_LLMs/Transformer_Deep_Dive]] — Transformer 架构基础
+- [[05_NLP_LLMs/LLM_Training_Deep_Dive]] — 训练技术
+- [[05_NLP_LLMs/LLM_Architecture_Evolution]] — 架构演进
+- [[05_NLP_LLMs/Edge_LLM/Edge_LLM_Deep_Dive]] — 端侧推理
 
 ---
 

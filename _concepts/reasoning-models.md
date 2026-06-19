@@ -8,15 +8,15 @@ tags:
 - o1
 - test-time-compute
 relationships:
-- target: 'concepts/llm-architectures'
+- target: '_concepts/llm-architectures'
   type: extends
-- target: 'concepts/prompt-engineering'
+- target: '_concepts/prompt-engineering'
   type: uses
-- target: 'concepts/transformer-architecture'
+- target: '_concepts/transformer-architecture'
   type: built_on
 sources:
-- 04_NLP_LLMs/LLM_llm-architectures/Reasoning_world-models-jepa_2026.md
-- 04_NLP_LLMs/Reasoning_Models/Test_Time_Compute_2026.md
+- 05_NLP_LLMs/LLM_llm-architectures/Reasoning_world-models-jepa_2026.md
+- 05_NLP_LLMs/Reasoning_Models/Test_Time_Compute_2026.md
 summary: 推理模型（o1/o3/DeepSeek-R1）通过在推理阶段增加"思考"计算量，实现从"直觉型"到"思考型"的范式转变。核心技术包括思维链、测试时计算扩展和自我反思修正，在数学、代码、逻辑推理任务上显著超越普通LLM。
 provenance:
   extracted: 0.8

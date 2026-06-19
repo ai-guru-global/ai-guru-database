@@ -584,8 +584,8 @@ class PersistentKVCache:
 
 ## Related
 
-- [[09_Deployment_Inference/Speculative_Decoding_Advanced_2026]]
-- [[09_Deployment_Inference/vLLM_Deep_Dive]]
-- [[concepts/model-serving]]
-- [[04_NLP_LLMs/LLM_Architectures/LLM_Architectures]]
-- [[09_Deployment_Inference/Deployment_Inference_2026]]
+- [[10_Deployment_Inference/Speculative_Decoding_Advanced_2026]]
+- [[10_Deployment_Inference/vLLM_Deep_Dive]]
+- [[_concepts/model-serving]]
+- [[05_NLP_LLMs/LLM_Architectures/LLM_Architectures]]
+- [[10_Deployment_Inference/Deployment_Inference_2026]]

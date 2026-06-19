@@ -9,11 +9,11 @@ tags:
 - infrastructure
 - standards
 relationships:
-- target: 'concepts/cdi'
+- target: '_concepts/cdi'
   type: consumed_by
-- target: 'concepts/llm-infrastructure'
+- target: '_concepts/llm-infrastructure'
   type: foundation_of
-- target: 'concepts/model-deployment'
+- target: '_concepts/model-deployment'
   type: enables
 sources:
 - 12_Architecture_Infrastructure/CDI_Deep_Dive.md
@@ -39,7 +39,7 @@ updated: 2026-06-15 00:00:00+00:00
 - 三大规范：**Image Spec**(镜像格式)、**Runtime Spec**(运行时行为，本文焦点)、**Distribution Spec**(镜像分发)
 - Runtime Spec 定义「容器实例是什么」——一份 **`config.json`** 描述运行态的全部细节
 - **runc** 是参考实现，**crun / runsc / kata** 等均符合此规范
-- 与 [[concepts/cdi|CDI]] 的关系：CDI **不是** OCI 规范的一部分，而是高层运行时(containerd)在调用 runc 前**预处理 config.json** 的中间层——CDI 的 containerEdits 被合并进 config.json 的 `mounts` / `linux.devices` / `hooks`
+- 与 [[_concepts/cdi|CDI]] 的关系：CDI **不是** OCI 规范的一部分，而是高层运行时(containerd)在调用 runc 前**预处理 config.json** 的中间层——CDI 的 containerEdits 被合并进 config.json 的 `mounts` / `linux.devices` / `hooks`
 
 ## config.json 的关键字段
 
@@ -92,9 +92,9 @@ OCI Runtime Spec (容器运行时标准)
 
 ## 延伸阅读
 
-- [[concepts/cdi|CDI（注入 config.json 的预处理层）]]
-- [[concepts/dra|DRA（分配层）]]
-- [[concepts/gpu-operator|NVIDIA GPU Operator]]
+- [[_concepts/cdi|CDI（注入 config.json 的预处理层）]]
+- [[_concepts/dra|DRA（分配层）]]
+- [[_concepts/gpu-operator|NVIDIA GPU Operator]]
 - [[12_Architecture_Infrastructure/CDI_Deep_Dive|CDI 深度解析]]
 - [[12_Architecture_Infrastructure/DRA_Deep_Dive|DRA 深度解析]]
-- [[concepts/llm-infrastructure|LLM 基础设施]]
+- [[_concepts/llm-infrastructure|LLM 基础设施]]

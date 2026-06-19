@@ -4,11 +4,11 @@ category: concepts
 tags: ["deep-learning", "optimization", "regularization", "adam", "sgd", "learning-rate", "dropout", "weight-decay"]
 aliases: [Optimization, 训练优化, 优化器, 深度学习优化]
 relationships:
-  - target: "[[concepts/neural-networks]]"
+  - target: "[[_concepts/neural-networks]]"
     type: related_to
-  - target: "concepts/transformer-architecture"
+  - target: "_concepts/transformer-architecture"
     type: related_to
-  - target: "concepts/state-space-models"
+  - target: "_concepts/state-space-models"
     type: related_to
 sources: [03_deep-reinforcement-learning_unsupervised-learning/Optimization/Optimization.md]
 summary: 深度学习训练的核心环节，涵盖优化器设计（SGD/Adam/AdamW）、学习率调度、梯度裁剪与正则化技术，决定模型收敛速度和最终性能。
@@ -142,4 +142,4 @@ FP16 加速计算 + FP32 保证精度。损失缩放避免 FP16 下溢，主权�
 - Goyal et al. (2017) 大 batch 训练技巧
 ## Related
 
-- [[22_Papers/ResNet_Deep_Dive.md]] — ResNet 深度解读
+- [[20_Papers/ResNet_Deep_Dive.md]] — ResNet 深度解读

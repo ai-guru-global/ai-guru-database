@@ -612,6 +612,6 @@ AI通识课实验报告
 
 ## Related
 
-- [[concepts/ai-fundamentals]] — AI 基础概念
-- [[concepts/ai-agents]] — AI 智能体
-- [[concepts/prompt-engineering]] — 提示工程
+- [[_concepts/ai-fundamentals]] — AI 基础概念
+- [[_concepts/ai-agents]] — AI 智能体
+- [[_concepts/prompt-engineering]] — 提示工程

@@ -3,18 +3,18 @@ title: "Qdrant"
 category: concept
 tags: ["qdrant", "vector-database", "rag", "embedding", "rust", "open-source"]
 relationships:
-  - target: "concepts/vector-database"
+  - target: "_concepts/vector-database"
     type: extends
-  - target: "concepts/rag"
+  - target: "_concepts/rag"
     type: enables
-  - target: "concepts/embedding"
+  - target: "_concepts/embedding"
     type: related_to
-  - target: "concepts/milvus"
+  - target: "_concepts/milvus"
     type: related_to
-  - target: "concepts/weaviate"
+  - target: "_concepts/weaviate"
     type: related_to
 sources:
-  - 11_RAG_Systems/Qdrant_Deep_Dive.md
+  - 14_RAG_Systems/Qdrant_Deep_Dive.md
 summary: "Qdrant 是用 Rust 开发的开源向量数据库，以高性能、低延迟和易部署著称，支持混合搜索、稀疏向量、量化与多副本，是 RAG 和中型规模语义搜索的热门选择。"
 provenance:
   extracted: 0.75
@@ -89,9 +89,9 @@ updated: 2026-06-16
 
 ## Related
 
-- [[11_RAG_Systems/Qdrant_Deep_Dive]] — Qdrant 深度解析
-- [[concepts/vector-database]] — 向量数据库
-- [[concepts/rag]] — RAG
-- [[concepts/embedding]] — Embedding
-- [[concepts/milvus]] — Milvus
-- [[concepts/weaviate]] — Weaviate
+- [[14_RAG_Systems/Qdrant_Deep_Dive]] — Qdrant 深度解析
+- [[_concepts/vector-database]] — 向量数据库
+- [[_concepts/rag]] — RAG
+- [[_concepts/embedding]] — Embedding
+- [[_concepts/milvus]] — Milvus
+- [[_concepts/weaviate]] — Weaviate

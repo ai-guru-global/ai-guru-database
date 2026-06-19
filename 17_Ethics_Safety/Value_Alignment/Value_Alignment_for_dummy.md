@@ -732,7 +732,7 @@ Anthropic 的 Claude:
 - [AI Fairness 360](https://github.com/Trusted-AI/AIF360) - 偏见检测
 
 ### 🎓 相关知识
-- [大语言模型 - 小白版](../../04_NLP_LLMs/LLM_Architectures/LLM_Architectures_for_dummy.md)
+- [大语言模型 - 小白版](../../05_NLP_LLMs/LLM_Architectures/LLM_Architectures_for_dummy.md)
 - [监督学习 - 小白版](../../02_Machine_Learning/Supervised_Learning/Supervised_Learning_for_dummy.md)
 
 ---
@@ -741,7 +741,7 @@ Anthropic 的 Claude:
 
 ## Related
 
-- [[19_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming]] — AI 安全与红队 (AI Safety & Red Teaming) (共享: ai-ethics, alignment, red-teaming, safety)
-- [[19_Ethics_Safety/AI_Security_2026/README]] — AI安全 2026 (AI Security) (共享: ai-ethics, alignment, red-teaming, safety)
-- [[19_Ethics_Safety/AI_Supply_Chain_Security/AI_Supply_Chain_Security]] — AI 供应链安全 2026 (共享: ai-ethics, alignment, red-teaming, safety)
-- [[19_Ethics_Safety/Ethics-in-nutshell]] — AI 伦理与安全速成指南 (共享: ai-ethics, alignment, red-teaming, safety)
+- [[17_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming]] — AI 安全与红队 (AI Safety & Red Teaming) (共享: ai-ethics, alignment, red-teaming, safety)
+- [[17_Ethics_Safety/AI_Security_2026/README]] — AI安全 2026 (AI Security) (共享: ai-ethics, alignment, red-teaming, safety)
+- [[17_Ethics_Safety/AI_Supply_Chain_Security/AI_Supply_Chain_Security]] — AI 供应链安全 2026 (共享: ai-ethics, alignment, red-teaming, safety)
+- [[17_Ethics_Safety/Ethics-in-nutshell]] — AI 伦理与安全速成指南 (共享: ai-ethics, alignment, red-teaming, safety)

@@ -11,7 +11,7 @@ updated: "2026-06-16"
 
 > **一句话理解**: llmaz 把「模型」抽象成一个 Kubernetes CRD（Model）——声明一次模型来源/量化/引擎，就能在任何地方复用部署，是 K8s 上「易用优先」的大模型推理平台。
 
-> 📐 **概念方法论**: llmaz 把「模型定义」从「部署配置」里彻底剥离——`Model` CRD 描述「模型是什么」（HuggingFace repo、量化、运行时引擎），`OpenAIServer`/`Backend` 描述「怎么跑它」。这种关注点分离与 [[CNCF_Cloud_Native_AI/KServe_Deep_Dive]] 的 InferenceService 抽象一脉相承，但更激进地追求 UX 简洁。运行时层可插拔（vLLM/SGLang/TGI/Ollama/TensorRT-LLM），选型见 [[09_Deployment_Inference/LLM_Inference_Engine_Selection_Guide]]。
+> 📐 **概念方法论**: llmaz 把「模型定义」从「部署配置」里彻底剥离——`Model` CRD 描述「模型是什么」（HuggingFace repo、量化、运行时引擎），`OpenAIServer`/`Backend` 描述「怎么跑它」。这种关注点分离与 [[CNCF_Cloud_Native_AI/KServe_Deep_Dive]] 的 InferenceService 抽象一脉相承，但更激进地追求 UX 简洁。运行时层可插拔（vLLM/SGLang/TGI/Ollama/TensorRT-LLM），选型见 [[10_Deployment_Inference/LLM_Inference_Engine_Selection_Guide]]。
 
 ---
 
@@ -398,7 +398,7 @@ kubectl apply -f sglang.yaml
 curl http://localhost:8000/v1/chat/completions -d '{"model":"qwen2.5-7b-sglang","messages":[{"role":"user","content":"hi"}]}'
 ```
 
-要点：仅 `runtime.name` 一处变更；权重已在 PVC 缓存，切换引擎无需重新下载；SGLang 的 RadixAttention 在多轮 / 结构化输出场景吞吐优势明显（见 [[09_Deployment_Inference/SGLang_Deep_Dive]]）。
+要点：仅 `runtime.name` 一处变更；权重已在 PVC 缓存，切换引擎无需重新下载；SGLang 的 RadixAttention 在多轮 / 结构化输出场景吞吐优势明显（见 [[10_Deployment_Inference/SGLang_Deep_Dive]]）。
 
 ### 5.6 示例 3: 部署 LoRA 适配器（多适配器共用基座）
 
@@ -446,7 +446,7 @@ curl http://localhost:8000/v1/chat/completions -d '{"model":"legal-lora","messag
 | **Ollama** | 边缘 / 小模型 / CPU | 部署最简单、量化方案成熟 | 大模型性能弱 |
 | **TensorRT-LLM** | NVIDIA 极致延迟 | 单卡延迟最低、企业级 | 编译复杂、绑定 NVIDIA |
 
-选型细节见 [[09_Deployment_Inference/LLM_Inference_Engine_Selection_Guide]]。
+选型细节见 [[10_Deployment_Inference/LLM_Inference_Engine_Selection_Guide]]。
 
 ### 6.2 模型来源、镜像加速与量化
 
@@ -675,5 +675,5 @@ A: 截至 2026-06，llmaz 已进入 CNCF Landscape（Inference 分类），由 I
 - [[CNCF_Cloud_Native_AI/README]] — CNCF 云原生 LLM 项目全景
 - [[CNCF_Cloud_Native_AI/KServe_Deep_Dive]] — 同类推理平台，更通用但更复杂
 - [[CNCF_Cloud_Native_AI/KAITO_Deep_Dive]] — 微软出品的一键式 K8s 推理
-- [[09_Deployment_Inference/vLLM_Deep_Dive]] — llmaz 默认运行时引擎
-- [[09_Deployment_Inference/SGLang_Deep_Dive]] — llmaz 可选运行时，前缀缓存更强
+- [[10_Deployment_Inference/vLLM_Deep_Dive]] — llmaz 默认运行时引擎
+- [[10_Deployment_Inference/SGLang_Deep_Dive]] — llmaz 可选运行时，前缀缓存更强

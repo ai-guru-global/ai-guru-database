@@ -13,11 +13,11 @@ aliases:
 - AI视频生成
 - 文生视频
 relationships:
-- target: 'concepts/generative-vision-models'
+- target: '_concepts/generative-vision-models'
   type: related_to
-- target: 'concepts/computer-vision'
+- target: '_concepts/computer-vision'
   type: related_to
-- target: 'concepts/multimodal-vision'
+- target: '_concepts/multimodal-vision'
   type: related_to
 sources:
 - 05_computer-vision_multimodal-vision/Video_Generation/Video_Generation_2026.md
@@ -96,7 +96,7 @@ AI视频生成需要多维度评估：时序一致性（帧间差异越小越好
 
 ## 来源
 
-- 05_Computer_Vision/Video_Generation/Video_Generation_2026.md
+- 04_Computer_Vision/Video_Generation/Video_Generation_2026.md
 ## Related
 
-- [[22_Papers/Diffusion_Models_Deep_Dive.md]] — 扩散模型深度解读
+- [[20_Papers/Diffusion_Models_Deep_Dive.md]] — 扩散模型深度解读

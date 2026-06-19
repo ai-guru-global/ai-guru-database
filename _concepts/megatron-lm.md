@@ -3,15 +3,15 @@ title: "Megatron-LM"
 category: concept
 tags: ["megatron-lm", "nvidia", "distributed-training", "tensor-parallelism", "pipeline-parallelism", "llm", "training"]
 relationships:
-  - target: "concepts/distributed-training"
+  - target: "_concepts/distributed-training"
     type: extends
-  - target: "concepts/deepspeed"
+  - target: "_concepts/deepspeed"
     type: related_to
-  - target: "concepts/fsdp"
+  - target: "_concepts/fsdp"
     type: related_to
-  - target: "concepts/tensor-parallelism"
+  - target: "_concepts/tensor-parallelism"
     type: implements
-  - target: "concepts/pipeline-parallelism"
+  - target: "_concepts/pipeline-parallelism"
     type: implements
 sources:
   - 07_Model_Training/Megatron_LM_Deep_Dive.md
@@ -101,8 +101,8 @@ updated: 2026-06-16
 ## Related
 
 - [[07_Model_Training/Megatron_LM_Deep_Dive]] — Megatron-LM 深度解析
-- [[concepts/distributed-training]] — 分布式训练
-- [[concepts/deepspeed]] — DeepSpeed
-- [[concepts/fsdp]] — FSDP
-- [[concepts/tensor-parallelism]] — 张量并行
-- [[concepts/pipeline-parallelism]] — 流水线并行
+- [[_concepts/distributed-training]] — 分布式训练
+- [[_concepts/deepspeed]] — DeepSpeed
+- [[_concepts/fsdp]] — FSDP
+- [[_concepts/tensor-parallelism]] — 张量并行
+- [[_concepts/pipeline-parallelism]] — 流水线并行

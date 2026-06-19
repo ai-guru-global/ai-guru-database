@@ -74,7 +74,7 @@ OpenCode 的工具体系是 Agent 从「纯 Chat」进化为「执行者」的�
 | **question** | 向用户提问（多选/自由输入） | `question` | — |
 | **skill** | 按需加载 SKILL.md | `skill` | 匹配 Skill 名称 |
 
-> **底层实现**：grep、glob、list 底层使用 **ripgrep** 引擎，自动遵守 `.gitignore` 规则。websearch 通过 Exa AI 托管 [[concepts/ai-agents|MCP]] 服务实现，无需 API Key。
+> **底层实现**：grep、glob、list 底层使用 **ripgrep** 引擎，自动遵守 `.gitignore` 规则。websearch 通过 Exa AI 托管 [[_concepts/ai-agents|MCP]] 服务实现，无需 API Key。
 
 ---
 
@@ -235,7 +235,7 @@ export default tool({
 ### 3.3 多工具导出
 
 ```typescript
-// .opencode/tools/[[concepts/probability-statistics|math]].ts
+// .opencode/tools/[[_concepts/probability-statistics|math]].ts
 import { tool } from "@opencode-ai/plugin"
 
 export const add = tool({
@@ -359,29 +359,29 @@ export default tool({
 
 ## Obsidian 相关文档
 
-- [[17_AI_Coding/MOC_OpenRouter_OpenCode.md|MOC]]
-- [[17_AI_Coding/OpenRouter_OpenCode_Guide|AI 编程与  网关专题 — OpenRouter & OpenCode 全量指南]]
-- [[17_AI_Coding/02_Tools/OpenRouter/01-openrouter-overview-architecture|OpenRouter 概述与核心架构]]
-- [[17_AI_Coding/02_Tools/OpenRouter/02-openrouter-quickstart-setup|快速接入与环境配置]]
-- [[17_AI_Coding/02_Tools/OpenRouter/03-openrouter-models-providers|模型与 Provider 生态]]
-- [[17_AI_Coding/02_Tools/OpenRouter/04-openrouter-provider-routing|智能路由与 Provider 选择]]
-- [[17_AI_Coding/02_Tools/OpenRouter/05-openrouter-api-reference|API 参考与请求/响应规范]]
-- [[17_AI_Coding/02_Tools/OpenRouter/06-openrouter-structured-outputs-tools|Structured Outputs 与 Tool Calling]]
-- [[17_AI_Coding/02_Tools/OpenRouter/07-openrouter-plugins-web-search|插件体系与 Web Search]]
-- [[17_AI_Coding/02_Tools/OpenRouter/08-openrouter-prompt-caching-optimization|Prompt Caching 与成本优化]]
-- [[17_AI_Coding/02_Tools/OpenRouter/09-openrouter-frameworks-integrations|框架集成与生态系统]]
-- [[17_AI_Coding/02_Tools/OpenRouter/10-openrouter-streaming-multimedia|流式传输与多模态输入]]
+- [[16_AI_Coding/MOC_OpenRouter_OpenCode.md|MOC]]
+- [[16_AI_Coding/OpenRouter_OpenCode_Guide|AI 编程与  网关专题 — OpenRouter & OpenCode 全量指南]]
+- [[16_AI_Coding/Tools/OpenRouter/01-openrouter-overview-architecture|OpenRouter 概述与核心架构]]
+- [[16_AI_Coding/Tools/OpenRouter/02-openrouter-quickstart-setup|快速接入与环境配置]]
+- [[16_AI_Coding/Tools/OpenRouter/03-openrouter-models-providers|模型与 Provider 生态]]
+- [[16_AI_Coding/Tools/OpenRouter/04-openrouter-provider-routing|智能路由与 Provider 选择]]
+- [[16_AI_Coding/Tools/OpenRouter/05-openrouter-api-reference|API 参考与请求/响应规范]]
+- [[16_AI_Coding/Tools/OpenRouter/06-openrouter-structured-outputs-tools|Structured Outputs 与 Tool Calling]]
+- [[16_AI_Coding/Tools/OpenRouter/07-openrouter-plugins-web-search|插件体系与 Web Search]]
+- [[16_AI_Coding/Tools/OpenRouter/08-openrouter-prompt-caching-optimization|Prompt Caching 与成本优化]]
+- [[16_AI_Coding/Tools/OpenRouter/09-openrouter-frameworks-integrations|框架集成与生态系统]]
+- [[16_AI_Coding/Tools/OpenRouter/10-openrouter-streaming-multimedia|流式传输与多模态输入]]
 
 ## Related
 
-- [[17_AI_Coding/02_Tools/OpenCode/21-opencode-overview-architecture]] — 21-opencode-overview-architecture (共享: ai, ai-coding)
-- [[17_AI_Coding/02_Tools/OpenCode/22-opencode-installation-quickstart]] — 22-opencode-installation-quickstart (共享: ai, ai-coding)
-- [[17_AI_Coding/02_Tools/OpenCode/23-opencode-providers-models]] — 23-opencode-providers-models (共享: ai, ai-coding)
-- [[17_AI_Coding/02_Tools/OpenCode/24-opencode-agents-system]] — 24-opencode-agents-system (共享: ai, ai-coding)
-- [[17_AI_Coding/02_Tools/OpenCode/26-opencode-mcp-integration.md|26-opencode-mcp-integration]]
-- [[17_AI_Coding/02_Tools/OpenCode/27-opencode-lsp-formatters.md|27-opencode-lsp-formatters]]
-- [[17_AI_Coding/02_Tools/OpenCode/30-opencode-server-api.md|30-opencode-server-api]]
-- [[17_AI_Coding/02_Tools/OpenCode/29-opencode-tui-customization.md|29-opencode-tui-customization]]
-- [[17_AI_Coding/02_Tools/OpenCode/32-opencode-advanced-topics.md|32-opencode-advanced-topics]]
-- [[17_AI_Coding/02_Tools/OpenCode/31-opencode-github-automation.md|31-opencode-github-automation]]
-- [[17_AI_Coding/02_Tools/OpenCode/28-opencode-skills-commands.md|28-opencode-skills-commands]]
+- [[16_AI_Coding/Tools/OpenCode/21-opencode-overview-architecture]] — 21-opencode-overview-architecture (共享: ai, ai-coding)
+- [[16_AI_Coding/Tools/OpenCode/22-opencode-installation-quickstart]] — 22-opencode-installation-quickstart (共享: ai, ai-coding)
+- [[16_AI_Coding/Tools/OpenCode/23-opencode-providers-models]] — 23-opencode-providers-models (共享: ai, ai-coding)
+- [[16_AI_Coding/Tools/OpenCode/24-opencode-agents-system]] — 24-opencode-agents-system (共享: ai, ai-coding)
+- [[16_AI_Coding/Tools/OpenCode/26-opencode-mcp-integration.md|26-opencode-mcp-integration]]
+- [[16_AI_Coding/Tools/OpenCode/27-opencode-lsp-formatters.md|27-opencode-lsp-formatters]]
+- [[16_AI_Coding/Tools/OpenCode/30-opencode-server-api.md|30-opencode-server-api]]
+- [[16_AI_Coding/Tools/OpenCode/29-opencode-tui-customization.md|29-opencode-tui-customization]]
+- [[16_AI_Coding/Tools/OpenCode/32-opencode-advanced-topics.md|32-opencode-advanced-topics]]
+- [[16_AI_Coding/Tools/OpenCode/31-opencode-github-automation.md|31-opencode-github-automation]]
+- [[16_AI_Coding/Tools/OpenCode/28-opencode-skills-commands.md|28-opencode-skills-commands]]

@@ -20,7 +20,7 @@ ai-guru-database/
 │
 ├── 📚 主知识章节 (00-23)     ← 核心内容，深度文档
 ├── 🗂️ 辅助知识章节 (90-94)   ← 学习/笔记/计划/工具/可视化
-├── 🔗 知识图谱层             ← concepts/ + synthesis/ + references/ + ...
+├── 🔗 知识图谱层             ← _concepts/ + _synthesis/ + _references/ + ...
 ├── 📋 _meta/                 ← 项目治理、审计、评估报告（集中管理）
 ├── 🗄️ 暂存与归档             ← _raw/ + _staging/ + _archives/
 ├── 🌐 工具与构建             ← Web/ (Astro) + _tools/
@@ -32,7 +32,7 @@ ai-guru-database/
 ## 二、主知识章节（00-23）
 
 > **定位**: 核心知识内容，每个章节覆盖一个技术领域。
-> **命名规范**: `{编号}_{Title_Case名称}/`，如 `04_NLP_LLMs/`
+> **命名规范**: `{编号}_{Title_Case名称}/`，如 `05_NLP_LLMs/`
 
 | 编号 | 目录 | 定位 | 文件数 |
 |------|------|------|--------|
@@ -85,22 +85,22 @@ ai-guru-database/
 
 > **定位**: 轻量级知识索引与跨域分析，与主章节通过 `sources` 字段关联。
 
-### concepts/（50 个文件）
+### _concepts/（50 个文件）
 - **类型**: 概念卡片（Concept Cards）
 - **大小**: 每张 5-9 KB
 - **用途**: 单个核心概念的速查摘要
 - **与主章节关系**: `sources` 字段指向主目录中的深度文档
-- **索引**: [concepts/README.md](./concepts/README.md)
+- **索引**: [_concepts/README.md](./_concepts/README.md)
 - **阅读路径**: 概念卡片 → 主章节深度文档
 
-### synthesis/（17 个文件）
+### _synthesis/（17 个文件）
 - **类型**: 跨域综合文档（Cross-Domain Synthesis）
 - **大小**: 每篇 1.7-4.5 KB
 - **用途**: 连接 2-4 个不同章节的概念，揭示跨域关联
 - **与主章节关系**: `sources` 字段列出关联的多个章节文档
-- **索引**: [synthesis/README.md](./synthesis/README.md)
+- **索引**: [_synthesis/README.md](./_synthesis/README.md)
 
-### references/
+### _references/
 - **类型**: 参考资料
 - **用途**: 外部论文、书籍、课程的引用索引，含 PDF、课程索引等
 
@@ -155,7 +155,7 @@ ai-guru-database/
 |------|------|
 | `Web/` | 知识库前端应用（Astro + TypeScript） |
 | `_tools/` | 项目维护脚本（字数统计、链接检查、间距修复等） |
-| `concepts/` | 概念卡片（同时属于知识图谱层） |
+| `_concepts/` | 概念卡片（同时属于知识图谱层） |
 
 ---
 
@@ -183,10 +183,10 @@ ai-guru-database/
 
 | 内容类型 | 放置位置 | 示例 |
 |----------|----------|------|
-| 某领域的深度技术文档 | 对应的主章节目录 | `04_NLP_LLMs/LLM_Architectures/xxx.md` |
-| 某概念的速查卡片 | `concepts/` | `concepts/xxx.md` |
-| 跨 2+ 领域的综合分析 | `synthesis/` | `synthesis/xxx-yyy.md` |
-| 某个工具/产品的深度解析 | 最相关的章节 | `09_Deployment_Inference/xxx_Deep_Dive.md` |
+| 某领域的深度技术文档 | 对应的主章节目录 | `05_NLP_LLMs/LLM_Architectures/xxx.md` |
+| 某概念的速查卡片 | `_concepts/` | `_concepts/xxx.md` |
+| 跨 2+ 领域的综合分析 | `_synthesis/` | `_synthesis/xxx-yyy.md` |
+| 某个工具/产品的深度解析 | 最相关的章节 | `10_Deployment_Inference/xxx_Deep_Dive.md` |
 | 项目治理报告 | `_meta/` | `_meta/_xxx-report.md` |
 | 原始素材（待处理） | `_raw/` | `_raw/xxx.md` |
 

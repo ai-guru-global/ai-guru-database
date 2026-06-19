@@ -20,7 +20,7 @@ updated: 2026-06-04
 ## 前置知识
 
 - [[LLM_Architectures]] — LLM 架构基础
-- [[04_NLP_LLMs/Multimodal_Models/Native_Multimodal_Architectures|多模态模型]] — 多模态模型
+- [[05_NLP_LLMs/Multimodal_Models/Native_Multimodal_Architectures|多模态模型]] — 多模态模型
 
 ---
 

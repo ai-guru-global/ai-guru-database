@@ -920,7 +920,7 @@ return checkpoint(forward_fn, x, use_reentrant=False)
 | CUDA Graphs | ⚠️ | ✅ | 推理 shape 固定 |
 | 序列并行 | ✅ | ✅ | 长上下文推理必需 |
 
-**推理专属优化** → [../09_Deployment_Inference/Inference-in-nutshell.md](../09_Deployment_Inference/Inference-in-nutshell.md)
+**推理专属优化** → [../10_Deployment_Inference/Inference-in-nutshell.md](../10_Deployment_Inference/Inference-in-nutshell.md)
 
 ---
 
@@ -933,12 +933,12 @@ return checkpoint(forward_fn, x, use_reentrant=False)
 ### 横向关联
 - [混合精度训练详解](./Mixed_Precision_Training.md) — FP16/BF16/FP8 深度解析
 - [分布式训练 2026](./Distributed_Training_2026.md) — DDP/FSDP/DeepSpeed/Megatron-LM
-- [长上下文模型](../04_NLP_LLMs/Long_Context_Models_2026.md) — Ring Attention、稀疏注意力
+- [长上下文模型](../05_NLP_LLMs/Long_Context_Models_2026.md) — Ring Attention、稀疏注意力
 
 ### 纵向进阶
 - [模型评估](../08_Model_Evaluation/Model_Evaluation.md) — 训练后验证模型质量
-- [部署推理优化](../09_Deployment_Inference/Inference-in-nutshell.md) — 模型上线推理加速
-- [MLOps 流水线](../10_MLOps_Pipeline/MLOps_Pipeline.md) — 自动化训练与监控
+- [部署推理优化](../10_Deployment_Inference/Inference-in-nutshell.md) — 模型上线推理加速
+- [MLOps 流水线](../11_MLOps_Pipeline/MLOps_Pipeline.md) — 自动化训练与监控
 - [AI 基础设施](../12_Architecture_Infrastructure/AI_Infrastructure_2026.md) — 集群网络与存储优化
 
 ---

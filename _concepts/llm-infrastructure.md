@@ -3,11 +3,11 @@ title: LLM 基础设施
 category: concepts
 tags: ["infrastructure", "gpu", "ai-hardware", "model-training", "edge-ai", "cost-optimization"]
 relationships:
-  - target: "[[concepts/ai-architecture]]"
+  - target: "[[_concepts/ai-architecture]]"
     type: related_to
-  - target: "concepts/mlops"
+  - target: "_concepts/mlops"
     type: related_to
-  - target: "concepts/ai-hardware"
+  - target: "_concepts/ai-hardware"
     type: related_to
 sources:
   - 12_transformer-architecture_Infrastructure/AI_Infrastructure_2026.md
@@ -105,9 +105,9 @@ AI服务容量规划的特殊性：资源维度新增GPU显存和Token配额、�
 
 ## Related
 
-- [[concepts/image-segmentation.md|image-segmentation]]
-- [[concepts/reasoning-models.md|reasoning-models]]
-- [[concepts/model-evaluation.md|model-evaluation]]
-- [[concepts/model-compression.md|model-compression]]
-- [[concepts/multi-head-latent-attention]] — Multi-head Latent Attention (MLA) 与 FlashMLA 算子
-- [[synthesis/llm-infrastructure-system-design|LLM 基础设施 × 传统系统架构]] — 从 Web 服务到 Token 工厂
+- [[_concepts/image-segmentation.md|image-segmentation]]
+- [[_concepts/reasoning-models.md|reasoning-models]]
+- [[_concepts/model-evaluation.md|model-evaluation]]
+- [[_concepts/model-compression.md|model-compression]]
+- [[_concepts/multi-head-latent-attention]] — Multi-head Latent Attention (MLA) 与 FlashMLA 算子
+- [[_synthesis/llm-infrastructure-system-design|LLM 基础设施 × 传统系统架构]] — 从 Web 服务到 Token 工厂

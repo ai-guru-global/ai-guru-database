@@ -23,8 +23,8 @@ updated: 2026-05-31
 
 ## Related
 
-- [[23_Interviews/Computer_Vision_Engineer/company_level_question_bank]] — Computer Vision Engineer 按公司/级别区分的题库 (共享: career, computer-vision, experience, interviews, practitione)
-- [[23_Interviews/Computer_Vision_Engineer/interview_preparing]] — Computer Vision Engineer 面试准备 (共享: career, computer-vision, experience, interviews, practitione)
-- [[23_Interviews/Computer_Vision_Engineer/question_bank]] — Computer Vision Engineer 题库 (共享: career, computer-vision, experience, interviews, practitione)
-- [[23_Interviews/AI_Data_Analyst/company_level_question_bank]] — AI Data Analyst 按公司/级别区分的题库 (共享: career, experience, interviews, practitioners)
-- [[23_Interviews/Machine_Learning_Engineer/interview_answers.md|interview_answers]]
+- [[21_Interviews/Computer_Vision_Engineer/company_level_question_bank]] — Computer Vision Engineer 按公司/级别区分的题库 (共享: career, computer-vision, experience, interviews, practitione)
+- [[21_Interviews/Computer_Vision_Engineer/interview_preparing]] — Computer Vision Engineer 面试准备 (共享: career, computer-vision, experience, interviews, practitione)
+- [[21_Interviews/Computer_Vision_Engineer/question_bank]] — Computer Vision Engineer 题库 (共享: career, computer-vision, experience, interviews, practitione)
+- [[21_Interviews/AI_Data_Analyst/company_level_question_bank]] — AI Data Analyst 按公司/级别区分的题库 (共享: career, experience, interviews, practitioners)
+- [[21_Interviews/Machine_Learning_Engineer/interview_answers.md|interview_answers]]

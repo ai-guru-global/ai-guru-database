@@ -80,9 +80,9 @@ updated: 2026-06-12
 
 ## 相关文档
 
-- [MiniMax 技术全景](../../04_NLP_LLMs/Chinese_LLM_Ecosystem/MiniMax_Deep_Dive.md)
-- [中国大模型生态全景](../../04_NLP_LLMs/Chinese_LLM_Ecosystem/README.md)
-- [长上下文模型 2026](../../04_NLP_LLMs/Long_Context_Models_2026.md)
+- [MiniMax 技术全景](../../05_NLP_LLMs/Chinese_LLM_Ecosystem/MiniMax_Deep_Dive.md)
+- [中国大模型生态全景](../../05_NLP_LLMs/Chinese_LLM_Ecosystem/README.md)
+- [长上下文模型 2026](../../05_NLP_LLMs/Long_Context_Models_2026.md)
 
 ---
 

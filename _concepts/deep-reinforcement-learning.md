@@ -4,11 +4,11 @@ category: concepts
 tags: ["reinforcement-learning", "deep-rl", "dqn", "ppo", "sac", "actor-critic"]
 aliases: [Deep reinforcement-learning unsupervised-learning, Deep RL, DRL]
 relationships:
-  - target: "[[concepts/reinforcement-learning]]"
+  - target: "[[_concepts/reinforcement-learning]]"
     type: related_to
-  - target: "concepts/rlhf"
+  - target: "_concepts/rlhf"
     type: related_to
-  - target: "concepts/ai-agents"
+  - target: "_concepts/ai-agents"
     type: related_to
 sources:
   - 06_Reinforcement_Learning/Deep_RL/Deep_RL.md
@@ -105,7 +105,7 @@ ChatGPT rlhf（PPO优化奖励模型）、AlphaGo（MCTS+Deep RL）、OpenAI Fiv
 
 ## Related
 
-- [[22_Papers/DQN_Deep_Dive]] — DQN 深度解读 (Playing Atari with Deep Reinforcement Learning) (共享: deep-rl, dqn, rl)
+- [[20_Papers/DQN_Deep_Dive]] — DQN 深度解读 (Playing Atari with Deep Reinforcement Learning) (共享: deep-rl, dqn, rl)
 - [[06_Reinforcement_Learning/AI_Agents/AI_Agents_for_dummy]] — AI智能体 - 小白版 🤖 (共享: reinforcement-learning, rl)
 - [[06_Reinforcement_Learning/AI_Agents/Agent-in-nutshell]] — AI 智能体速成指南 (共享: reinforcement-learning, rl)
 - [[06_Reinforcement_Learning/AI_Agents/Agent_Future_Roadmap_2026_2030]] — Agent 未来发展路线图 2026-2030 (共享: reinforcement-learning, rl)

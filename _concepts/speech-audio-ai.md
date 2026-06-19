@@ -3,14 +3,14 @@ title: "语音与音频 AI (Speech & Audio AI)"
 category: concept
 tags: ["nlp", "speech", "audio", "ASR", "TTS", "whisper", "cosyvoice", "audio-llm"]
 relationships:
-  - target: "concepts/llm-architectures"
+  - target: "_concepts/llm-architectures"
     type: builds_on
-  - target: "concepts/multimodal-models"
+  - target: "_concepts/multimodal-models"
     type: related_to
-  - target: "concepts/transformer-architecture"
+  - target: "_concepts/transformer-architecture"
     type: builds_on
 sources:
-  - 04_NLP_LLMs/Speech_Audio_AI
+  - 05_NLP_LLMs/Speech_Audio_AI
 summary: "语音AI覆盖自动语音识别(ASR/Whisper)、语音合成(TTS/CosyVoice)、音频理解(AudioLM)、音乐生成(MusicGen/Suno)、实时语音对话(GPT-4o/Moshi)。"
 provenance:
   extracted: 0.40
@@ -170,7 +170,7 @@ updated: 2026-06-04
 
 ## Related
 
-- [[04_NLP_LLMs/Speech_Audio_AI]] — 语音与音频 AI 深度解析
-- [[concepts/llm-architectures]] — LLM 架构（语音 LLM 基础）
-- [[concepts/multimodal-models]] — 多模态模型（音频多模态）
-- [[concepts/transformer-architecture]] — Transformer（语音模型基础架构）
+- [[05_NLP_LLMs/Speech_Audio_AI]] — 语音与音频 AI 深度解析
+- [[_concepts/llm-architectures]] — LLM 架构（语音 LLM 基础）
+- [[_concepts/multimodal-models]] — 多模态模型（音频多模态）
+- [[_concepts/transformer-architecture]] — Transformer（语音模型基础架构）

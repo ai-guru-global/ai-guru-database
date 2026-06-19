@@ -3,13 +3,13 @@ title: 提示工程
 category: concepts
 tags: [fine-tuning-techniques, prompt-engineering, cot, few-shot, llm-infrastructure]
 relationships:
-  - target: "[[concepts/llm-architectures]]"
+  - target: "[[_concepts/llm-architectures]]"
     type: applies_to
-  - target: "concepts/fine-tuning-techniques"
+  - target: "_concepts/fine-tuning-techniques"
     type: alternative_to
-  - target: "concepts/reasoning-models"
+  - target: "_concepts/reasoning-models"
     type: enables
-sources: [04_NLP_LLMs/Prompt_Engineering/Prompt_Engineering.md]
+sources: [05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering.md]
 summary: 提示工程是设计和优化输入提示词以引导LLM产生期望输出的技术，不需要修改模型参数。核心技术从Zero-shot、Few-shot到思维链（CoT）和思维树（ToT），是使用LLM最低成本、最高效的优化手段。
 provenance:
   extracted: 0.85
@@ -132,8 +132,8 @@ Prefix Caching缓存共享的System Prompt前缀；LLMLingua等工具压缩长Pr
 - 推理模型：CoT/ToT是推理模型的核心策略
 ## Related
 
-- [[22_Papers/BERT_Deep_Dive.md]] — BERT 深度解读
-- [[22_Papers/GPT3_Deep_Dive.md]] — GPT-3 深度解读
+- [[20_Papers/BERT_Deep_Dive.md]] — BERT 深度解读
+- [[20_Papers/GPT3_Deep_Dive.md]] — GPT-3 深度解读
 - [[00_AI_Introduction/AI_Practical_Labs.md]] — AI 实践实验室
 - [[00_AI_Introduction/AI_Tools_Practical_Guide.md]] — AI 工具实战指南
-- [[concepts/sequence-models.md|sequence-models]]
+- [[_concepts/sequence-models.md|sequence-models]]

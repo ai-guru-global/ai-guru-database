@@ -4,11 +4,11 @@ category: concepts
 tags: ["hardware", "gpu", "AI-chips", "NVIDIA", "AMD", "Blackwell", "inference", "quantization"]
 aliases: [AI Hardware, GPU, AI芯片, H100, H200, B200, 硬件选型]
 relationships:
-  - target: "[[concepts/distributed-systems]]"
+  - target: "[[_concepts/distributed-systems]]"
     type: related_to
-  - target: "concepts/data-structures-algorithms"
+  - target: "_concepts/data-structures-algorithms"
     type: related_to
-  - target: "concepts/linear-algebra"
+  - target: "_concepts/linear-algebra"
     type: related_to
 sources: [01_ai-fundamentals/AI_Hardware/AI_Hardware_2026.md]
 summary: 2026年AI芯片全景：H200成为推理新标杆，Blackwell B200开始交付，AMD MI350紧追，内存带宽成新瓶颈，推理市场增速超训练。

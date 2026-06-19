@@ -3,17 +3,17 @@ title: Prefill-Decode Disaggregation
 category: concepts
 tags: [inference, prefill, decode, disaggregated-serving, performance]
 relationships:
-  - target: "concepts/prefill-decode"
+  - target: "_concepts/prefill-decode"
     type: optimizes
-  - target: "concepts/kv-cache"
+  - target: "_concepts/kv-cache"
     type: uses
-  - target: "09_Deployment_Inference/Inference_Performance/Prefill_Decode_Disaggregation"
+  - target: "10_Deployment_Inference/Inference_Performance/Prefill_Decode_Disaggregation"
     type: deepened_by
-  - target: "09_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy"
+  - target: "10_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy"
     type: simplified_by
 sources:
-  - 09_Deployment_Inference/Inference_Performance/Prefill_Decode_Disaggregation.md
-  - 09_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy.md
+  - 10_Deployment_Inference/Inference_Performance/Prefill_Decode_Disaggregation.md
+  - 10_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy.md
 summary: PD 分离把 prefill 和 decode 阶段拆到不同 GPU/实例执行，让算力型资源处理输入、带宽型资源处理生成，从而优化长上下文和高并发场景的延迟与稳定性。
 lifecycle: draft
 tier: core
@@ -44,7 +44,7 @@ PD 分离就是：**让擅长查资料的人去 prefill，让擅长写字的人�
 
 ## Related
 
-- [[concepts/prefill-decode]] — Prefill / Decode 阶段
-- [[concepts/kv-cache]] — KV Cache
-- [[09_Deployment_Inference/Inference_Performance/Prefill_Decode_Disaggregation|Prefill-Decode 分离深潜]]
-- [[09_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy|推理性能术语大白话解释]]
+- [[_concepts/prefill-decode]] — Prefill / Decode 阶段
+- [[_concepts/kv-cache]] — KV Cache
+- [[10_Deployment_Inference/Inference_Performance/Prefill_Decode_Disaggregation|Prefill-Decode 分离深潜]]
+- [[10_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy|推理性能术语大白话解释]]

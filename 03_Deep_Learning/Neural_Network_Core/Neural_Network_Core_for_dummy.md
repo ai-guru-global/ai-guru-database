@@ -604,9 +604,9 @@ Tanh(拉伸版Sigmoid):
 - [机器学习小白版](../../02_Machine_Learning/README_for_dummy.md) - 对比传统方法
 
 **进阶学习**:
-- [卷积神经网络(CNN)](../../05_Computer_Vision/README_for_dummy.md) - 专门处理图像的神经网络
-- [循环神经网络(RNN)](../../04_NLP_LLMs/README_for_dummy.md) - 处理文字和序列数据
-- [Transformer](../../04_NLP_LLMs/README_for_dummy.md) - ChatGPT 的核心技术
+- [卷积神经网络(CNN)](../../04_Computer_Vision/README_for_dummy.md) - 专门处理图像的神经网络
+- [循环神经网络(RNN)](../../05_NLP_LLMs/README_for_dummy.md) - 处理文字和序列数据
+- [Transformer](../../05_NLP_LLMs/README_for_dummy.md) - ChatGPT 的核心技术
 
 ### 🎯 实战建议:
 

@@ -16,7 +16,7 @@ tags:
 - coding
 - copilot
 - code-generation
-- [[concepts/ai-agents|llm]]
+- [[_concepts/ai-agents|llm]]
 - rag
 last_updated: 2026-05
 difficulty: intermediate
@@ -46,13 +46,13 @@ k8s_versions:
 ---
 # Prompt Caching 与成本优化
 
-> **文档类型**: 架构与优化 | **最后更新**: 2026-03 | **关键词**: OpenRouter, Prompt Caching, Sticky Routing, Cache TTL, Cost [[concepts/model-training|Optimization]], Anthropic Cache, OpenAI Cache, DeepSeek, Credits
+> **文档类型**: 架构与优化 | **最后更新**: 2026-03 | **关键词**: OpenRouter, Prompt Caching, Sticky Routing, Cache TTL, Cost [[_concepts/model-training|Optimization]], Anthropic Cache, OpenAI Cache, DeepSeek, Credits
 
 ---
 
 ## 概述
 
-Prompt Caching 是降低 [[concepts/prompt-engineering|LLM]] 推理成本的核心机制。OpenRouter 统一管理各 Provider 的缓存策略，并通过 **Provider Sticky Routing** 最大化缓存命中率。本文覆盖 Provider 级缓存策略对比、Sticky Routing 机制、Anthropic/OpenAI 缓存深度配置、缓存效果检查以及综合成本优化策略。
+Prompt Caching 是降低 [[_concepts/prompt-engineering|LLM]] 推理成本的核心机制。OpenRouter 统一管理各 Provider 的缓存策略，并通过 **Provider Sticky Routing** 最大化缓存命中率。本文覆盖 Provider 级缓存策略对比、Sticky Routing 机制、Anthropic/OpenAI 缓存深度配置、缓存效果检查以及综合成本优化策略。
 
 ---
 
@@ -309,22 +309,22 @@ console.log('Remaining:', keyInfo.data.limit_remaining);
 
 ## Obsidian 相关文档
 
-- [[17_AI_Coding/MOC_OpenRouter_OpenCode.md|MOC]]
-- [[17_AI_Coding/OpenRouter_OpenCode_Guide|AI 编程与 LLM 网关专题 — OpenRouter & OpenCode 全量指南]]
-- [[17_AI_Coding/02_Tools/OpenRouter/01-openrouter-overview-architecture|OpenRouter 概述与核心架构]]
-- [[17_AI_Coding/02_Tools/OpenRouter/02-openrouter-quickstart-setup|快速接入与环境配置]]
-- [[17_AI_Coding/02_Tools/OpenRouter/03-openrouter-models-providers|模型与 Provider 生态]]
-- [[17_AI_Coding/02_Tools/OpenRouter/04-openrouter-provider-routing|智能路由与 Provider 选择]]
-- [[17_AI_Coding/02_Tools/OpenRouter/05-openrouter-api-reference|API 参考与请求/响应规范]]
-- [[17_AI_Coding/02_Tools/OpenRouter/06-openrouter-structured-outputs-tools|Structured Outputs 与 Tool Calling]]
-- [[17_AI_Coding/02_Tools/OpenRouter/07-openrouter-plugins-web-search|插件体系与 Web Search]]
-- [[17_AI_Coding/02_Tools/OpenRouter/09-openrouter-frameworks-integrations|框架集成与生态系统]]
-- [[17_AI_Coding/02_Tools/OpenRouter/10-openrouter-streaming-multimedia|流式传输与多模态输入]]
-- [[17_AI_Coding/02_Tools/OpenRouter/11-openrouter-security-privacy|安全、隐私与数据治理]]
+- [[16_AI_Coding/MOC_OpenRouter_OpenCode.md|MOC]]
+- [[16_AI_Coding/OpenRouter_OpenCode_Guide|AI 编程与 LLM 网关专题 — OpenRouter & OpenCode 全量指南]]
+- [[16_AI_Coding/Tools/OpenRouter/01-openrouter-overview-architecture|OpenRouter 概述与核心架构]]
+- [[16_AI_Coding/Tools/OpenRouter/02-openrouter-quickstart-setup|快速接入与环境配置]]
+- [[16_AI_Coding/Tools/OpenRouter/03-openrouter-models-providers|模型与 Provider 生态]]
+- [[16_AI_Coding/Tools/OpenRouter/04-openrouter-provider-routing|智能路由与 Provider 选择]]
+- [[16_AI_Coding/Tools/OpenRouter/05-openrouter-api-reference|API 参考与请求/响应规范]]
+- [[16_AI_Coding/Tools/OpenRouter/06-openrouter-structured-outputs-tools|Structured Outputs 与 Tool Calling]]
+- [[16_AI_Coding/Tools/OpenRouter/07-openrouter-plugins-web-search|插件体系与 Web Search]]
+- [[16_AI_Coding/Tools/OpenRouter/09-openrouter-frameworks-integrations|框架集成与生态系统]]
+- [[16_AI_Coding/Tools/OpenRouter/10-openrouter-streaming-multimedia|流式传输与多模态输入]]
+- [[16_AI_Coding/Tools/OpenRouter/11-openrouter-security-privacy|安全、隐私与数据治理]]
 
 ## Related
 
-- [[17_AI_Coding/02_Tools/OpenCode/21-opencode-overview-architecture]] — 21-opencode-overview-architecture (共享: ai, ai-coding)
-- [[17_AI_Coding/02_Tools/OpenCode/22-opencode-installation-quickstart]] — 22-opencode-installation-quickstart (共享: ai, ai-coding)
-- [[17_AI_Coding/02_Tools/OpenCode/23-opencode-providers-models]] — 23-opencode-providers-models (共享: ai, ai-coding)
-- [[17_AI_Coding/02_Tools/OpenCode/24-opencode-agents-system]] — 24-opencode-agents-system (共享: ai, ai-coding)
+- [[16_AI_Coding/Tools/OpenCode/21-opencode-overview-architecture]] — 21-opencode-overview-architecture (共享: ai, ai-coding)
+- [[16_AI_Coding/Tools/OpenCode/22-opencode-installation-quickstart]] — 22-opencode-installation-quickstart (共享: ai, ai-coding)
+- [[16_AI_Coding/Tools/OpenCode/23-opencode-providers-models]] — 23-opencode-providers-models (共享: ai, ai-coding)
+- [[16_AI_Coding/Tools/OpenCode/24-opencode-agents-system]] — 24-opencode-agents-system (共享: ai, ai-coding)

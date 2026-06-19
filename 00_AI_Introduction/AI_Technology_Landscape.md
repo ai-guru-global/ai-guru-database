@@ -733,6 +733,6 @@ AI开发工具全景:
 
 ## Related
 
-- [[concepts/ai-technology-landscape]] — AI 技术全景
-- [[concepts/ai-fundamentals]] — AI 基础概念
-- [[concepts/ai-hardware]] — AI 硬件
+- [[_concepts/ai-technology-landscape]] — AI 技术全景
+- [[_concepts/ai-fundamentals]] — AI 基础概念
+- [[_concepts/ai-hardware]] — AI 硬件

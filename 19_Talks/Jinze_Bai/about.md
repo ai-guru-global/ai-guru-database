@@ -83,9 +83,9 @@ updated: 2026-06-12
 
 ## 相关文档
 
-- [Qwen 技术全景](../../04_NLP_LLMs/Chinese_LLM_Ecosystem/Qwen_Deep_Dive.md)
-- [中国大模型生态全景](../../04_NLP_LLMs/Chinese_LLM_Ecosystem/README.md)
-- [MoE 案例研究](../../04_NLP_LLMs/LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md)
+- [Qwen 技术全景](../../05_NLP_LLMs/Chinese_LLM_Ecosystem/Qwen_Deep_Dive.md)
+- [中国大模型生态全景](../../05_NLP_LLMs/Chinese_LLM_Ecosystem/README.md)
+- [MoE 案例研究](../../05_NLP_LLMs/LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md)
 
 ---
 

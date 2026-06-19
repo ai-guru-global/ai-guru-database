@@ -3,9 +3,9 @@ title: Attention 变体 (GQA/MQA/SWA)
 category: concepts
 tags: [attention, transformer, gqa, mqa, swa, kv-cache]
 relationships:
-  - target: "concepts/transformer-architecture"
+  - target: "_concepts/transformer-architecture"
     type: extends
-  - target: "concepts/multi-head-latent-attention"
+  - target: "_concepts/multi-head-latent-attention"
     type: related_to
 sources:
   - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
@@ -84,6 +84,6 @@ KV Cache 大小: W × n_layers × 2 × d_model × bytes  (恒定)
 
 ## Related
 
-- [[concepts/multi-head-latent-attention]] — MLA（最强压缩，DeepSeek 系列）
-- [[concepts/kv-cache]] — KV Cache（所有变体的优化目标）
-- [[concepts/transformer-architecture]] — Transformer 架构基础
+- [[_concepts/multi-head-latent-attention]] — MLA（最强压缩，DeepSeek 系列）
+- [[_concepts/kv-cache]] — KV Cache（所有变体的优化目标）
+- [[_concepts/transformer-architecture]] — Transformer 架构基础

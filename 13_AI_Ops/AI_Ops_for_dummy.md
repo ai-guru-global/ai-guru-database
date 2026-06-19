@@ -342,12 +342,12 @@ AI Ops 不是单一工具，而是一整套解决方案！
 
 ## Related
 
-- [[16_AI_Ops/AIOps-in-nutshell]] — AI Ops 速成指南 (共享: ai-ops, incident-response, monitoring, observability)
-- [[16_AI_Ops/AI_Incident_Response_Playbook]] — AI 系统事故响应手册 (共享: ai-ops, incident-response, monitoring, observability)
-- [[16_AI_Ops/README]] — AI 运维与可观测性 (AI Ops) (共享: ai-ops, incident-response, monitoring, observability)
-- [[16_AI_Ops/README_for_dummy]] — 16 AI Ops — 小白版 📡 (共享: ai-ops, incident-response, monitoring, observability)
-- [[16_AI_Ops/PromptLayer_Deep_Dive.md|PromptLayer_Deep_Dive]]
-- [[16_AI_Ops/MLflow_Deep_Dive.md|MLflow_Deep_Dive]]
-- [[16_AI_Ops/Braintrust_Deep_Dive.md|Braintrust_Deep_Dive]]
-- [[16_AI_Ops/ClearML_Deep_Dive.md|ClearML_Deep_Dive]]
-- [[16_AI_Ops/SRE_for_AI_Systems.md|SRE_for_AI_Systems]]
+- [[13_AI_Ops/AIOps-in-nutshell]] — AI Ops 速成指南 (共享: ai-ops, incident-response, monitoring, observability)
+- [[13_AI_Ops/AI_Incident_Response_Playbook]] — AI 系统事故响应手册 (共享: ai-ops, incident-response, monitoring, observability)
+- [[13_AI_Ops/README]] — AI 运维与可观测性 (AI Ops) (共享: ai-ops, incident-response, monitoring, observability)
+- [[13_AI_Ops/README_for_dummy]] — 16 AI Ops — 小白版 📡 (共享: ai-ops, incident-response, monitoring, observability)
+- [[13_AI_Ops/PromptLayer_Deep_Dive.md|PromptLayer_Deep_Dive]]
+- [[13_AI_Ops/MLflow_Deep_Dive.md|MLflow_Deep_Dive]]
+- [[13_AI_Ops/Braintrust_Deep_Dive.md|Braintrust_Deep_Dive]]
+- [[13_AI_Ops/ClearML_Deep_Dive.md|ClearML_Deep_Dive]]
+- [[13_AI_Ops/SRE_for_AI_Systems.md|SRE_for_AI_Systems]]

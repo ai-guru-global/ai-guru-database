@@ -309,4 +309,4 @@ result = generator(model, "生成团队成员列表")
 
 ## Related
 
-- [[04_NLP_LLMs/Prompt_Engineering/README.md|README]]
+- [[05_NLP_LLMs/Prompt_Engineering/README.md|README]]

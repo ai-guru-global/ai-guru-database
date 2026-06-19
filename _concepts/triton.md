@@ -3,16 +3,16 @@ title: "Triton Inference Server"
 category: concept
 tags: ["triton", "nvidia", "inference-server", "model-serving", "tensorrt", "onnx", "pytorch", "multi-framework"]
 relationships:
-  - target: "concepts/model-serving"
+  - target: "_concepts/model-serving"
     type: extends
-  - target: "concepts/tensorrt-llm"
+  - target: "_concepts/tensorrt-llm"
     type: related_to
-  - target: "concepts/vllm"
+  - target: "_concepts/vllm"
     type: related_to
-  - target: "concepts/kserve"
+  - target: "_concepts/kserve"
     type: related_to
 sources:
-  - 09_Deployment_Inference/Triton_Inference_Server_Deep_Dive.md
+  - 10_Deployment_Inference/Triton_Inference_Server_Deep_Dive.md
 summary: "Triton Inference Server 是 NVIDIA 开源的高性能推理服务框架，支持 TensorRT、PyTorch、ONNX、TensorFlow 等多种后端，提供动态批处理、并发模型执行和多 GPU 多模型服务。"
 provenance:
   extracted: 0.8
@@ -103,8 +103,8 @@ Triton Server
 
 ## Related
 
-- [[09_Deployment_Inference/Triton_Inference_Server_Deep_Dive]] — Triton Inference Server 深度解析
-- [[concepts/model-serving]] — 模型服务
-- [[concepts/tensorrt-llm]] — TensorRT-LLM
-- [[concepts/kserve]] — KServe
-- [[concepts/vllm]] — vLLM
+- [[10_Deployment_Inference/Triton_Inference_Server_Deep_Dive]] — Triton Inference Server 深度解析
+- [[_concepts/model-serving]] — 模型服务
+- [[_concepts/tensorrt-llm]] — TensorRT-LLM
+- [[_concepts/kserve]] — KServe
+- [[_concepts/vllm]] — vLLM

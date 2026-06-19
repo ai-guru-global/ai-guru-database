@@ -3,18 +3,18 @@ title: "KServe"
 category: concept
 tags: ["kserve", "kubernetes", "model-serving", "inference", "cncf", "kfserving", "serverless", "autoscaling"]
 relationships:
-  - target: "concepts/model-serving"
+  - target: "_concepts/model-serving"
     type: extends
-  - target: "concepts/kubernetes"
+  - target: "_concepts/kubernetes"
     type: runs_on
-  - target: "concepts/vllm"
+  - target: "_concepts/vllm"
     type: related_to
-  - target: "concepts/hami"
+  - target: "_concepts/hami"
     type: related_to
-  - target: "concepts/istio"
+  - target: "_concepts/istio"
     type: related_to
 sources:
-  - 09_Deployment_Inference/KServe_Deep_Dive.md
+  - 10_Deployment_Inference/KServe_Deep_Dive.md
 summary: "KServe 是 CNCF Incubating 的 Kubernetes 模型服务平台，提供标准化的 InferenceService CRD、多运行时支持、自动扩缩容、蓝绿/金丝雀发布与可解释性，广泛用于生产级 LLM 推理服务。"
 provenance:
   extracted: 0.8
@@ -146,9 +146,9 @@ spec:
 
 ## Related
 
-- [[09_Deployment_Inference/KServe_Deep_Dive]] — KServe 深度解析
-- [[concepts/model-serving]] — 模型服务概念
-- [[concepts/vllm]] — vLLM 推理引擎
-- [[concepts/hami]] — HAMi GPU 虚拟化
-- [[09_Deployment_Inference/BentoML_Deep_Dive]] — BentoML 模型服务框架
+- [[10_Deployment_Inference/KServe_Deep_Dive]] — KServe 深度解析
+- [[_concepts/model-serving]] — 模型服务概念
+- [[_concepts/vllm]] — vLLM 推理引擎
+- [[_concepts/hami]] — HAMi GPU 虚拟化
+- [[10_Deployment_Inference/BentoML_Deep_Dive]] — BentoML 模型服务框架
 - [[12_Architecture_Infrastructure/CNCF_Cloud_Native_AI/README]] — CNCF 云原生大模型全景

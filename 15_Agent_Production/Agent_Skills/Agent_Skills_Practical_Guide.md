@@ -278,7 +278,7 @@ my-skill/
 ├── scripts/
 │   ├── extract.py
 │   └── validate.py
-├── references/
+├── _references/
 │   ├── api-errors.md
 │   └── schema.yaml
 ├── assets/
@@ -384,7 +384,7 @@ pdf-form-processor/
 │   ├── analyze_form.py      # 提取表单字段
 │   ├── validate_fields.py   # 验证字段映射
 │   └── fill_form.py         # 填写并生成 PDF
-├── references/
+├── _references/
 │   ├── pdf-form-spec.md     # PDF 表单技术规范
 │   └── common-field-types.md # 常见字段类型说明
 ├── assets/
@@ -436,7 +436,7 @@ description: >
 
 ## Tools
 - Python 3.10+ with `pypdf` and `pdfrw`
-- See [Common Field Types](references/common-field-types.md) for field naming conventions
+- See [Common Field Types](_references/common-field-types.md) for field naming conventions
 
 ## Gotchas
 - Checkbox fields use export values like `"Yes"` / `"Off"`, not booleans
@@ -625,10 +625,10 @@ flowchart LR
 ## 高级分析
 
 对于需要统计建模的任务，加载：
-- [统计方法参考](references/statistics.md)
+- [统计方法参考](_references/statistics.md)
 
 对于需要地理可视化的任务，加载：
-- [地图绘制指南](references/mapping.md)
+- [地图绘制指南](_references/mapping.md)
 ```
 
 ### 5.3 Skill 模板
@@ -684,7 +684,7 @@ flowchart TB
 |------|------|---------|
 | **Description 太宽泛** | Skill 在不相关任务时也被触发 | 添加明确的"不要用于"边界 |
 | **Description 太窄** | Skill 在应该触发时不触发 | 包含更多关键词和场景描述 |
-| **指令太长** | Agent 丢失重点，输出质量下降 | 保持 < 500 行，用 references/ 分流 |
+| **指令太长** | Agent 丢失重点，输出质量下降 | 保持 < 500 行，用 _references/ 分流 |
 | **缺少边缘情况** | 特定输入时 Agent 犯错 | 添加 Gotchas 章节 |
 | **脚本交互式** | Agent 运行时挂起 | 所有输入通过 CLI 参数或环境变量 |
 | **过度规定** | Agent 无法灵活适应变化 | 只在脆弱操作处精确指定 |
@@ -816,7 +816,7 @@ npx skills-ref validate .agents/skills/my-skill
 
 ## Related
 
-- [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
-- [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
-- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
-- [[13_Agent_Production/16_Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)
+- [[15_Agent_Production/Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
+- [[15_Agent_Production/Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[15_Agent_Production/Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[15_Agent_Production/Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)

@@ -4,26 +4,9 @@ import re
 import os
 import sys
 
-# Mapping: broken path pattern → correct path
-# These are relative-path-aware replacements
-FIXES = {
-    # Transformer references
-    '04_NLP_LLMs/Transformer/Transformer.md': '04_NLP_LLMs/Transformer_Revolution/Transformer_Revolution.md',
-    '04_NLP_LLMs/Transformer/Transformer_for_dummy.md': '04_NLP_LLMs/Transformer_Revolution/Transformer_Revolution_for_dummy.md',
-    
-    # Optimization references
-    '02_Machine_Learning/Optimization_Methods/Optimization_Methods.md': '03_Deep_Learning/Optimization/Optimization.md',
-    
-    # Non-existent files → closest match
-    '02_Machine_Learning/ML_Fundamentals/ML_Fundamentals.md': '02_Machine_Learning/README.md',
-    '03_Deep_Learning/Bayesian_DL/Bayesian_DL.md': '02_Machine_Learning/Bayesian_Methods/Bayesian_Methods_Deep_Dive.md',
-    
-    # vLLM
-    '09_Deployment_Inference/vLLM.md': '09_Deployment_Inference/vLLM_Deep_Dive.md',
-    
-    # Path depth fixes (../../../04_NLP_LLMs/ from 03_Deep_Learning subdirs should be ../../04_NLP_LLMs/)
-    # These are handled by the depth-aware fixer below
-}
+# 历史修复映射已于 2026-06 重构后清空（章节重编号使旧路径失效）。
+# 新增修复请在确认新路径后单独添加。
+FIXES = {}
 
 # Depth corrections: when a file at depth N uses ../ M times where M != N
 # Pattern: (wrong_prefix_count, correct_prefix_count, target_path)
@@ -85,10 +68,10 @@ def fix_links_in_file(filepath, base_dir):
 
 def main():
     base_dir = sys.argv[1] if len(sys.argv) > 1 else '.'
-    exclude = {'.git', 'Web', 'synthesis', '_archives', '_raw', '_staging',
+    exclude = {'.git', 'Web', '_synthesis', '_archives', '_raw', '_staging',
                'node_modules', '.venv', '.qoder', '.obsidian', '.github',
-               'concepts', 'entities', 'journal', 'projects',
-               'references', 'skills'}
+               '_concepts', 'entities', 'journal', 'projects',
+               '_references', 'skills'}
     
     total_fixes = 0
     files_fixed = 0

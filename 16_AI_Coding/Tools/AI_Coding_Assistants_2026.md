@@ -327,7 +327,7 @@ Copilot Workspace (预览):
 
 ### 5.2 提示工程技巧
 
-> 详细的提示词模板、STAR 框架、规则文件模板等请参阅 [Vibe Coding 提示词模板库](../03_Practice/Vibe_Coding_Prompt_Templates.md)
+> 详细的提示词模板、STAR 框架、规则文件模板等请参阅 [Vibe Coding 提示词模板库](../Practice/Vibe_Coding_Prompt_Templates.md)
 
 ```python
 # 好的提示 (STAR框架)
@@ -450,9 +450,9 @@ https://codeium.com/windsurf
 ```
 
 详细的 Vibe Coding 方法论和生产环境实践，请参阅：
-- [Vibe Coding 方法论](../04_Methodology/Vibe_Coding_Methodology.md) — 完整方法论指南
-- [Vibe Coding 生产实践](../04_Methodology/Vibe_Coding_Production_Practices.md) — 生产环境实战
-- [Vibe Coding 入门指南](../03_Practice/Vibe_Coding_Getting_Started.md) — 5分钟入门
+- [Vibe Coding 方法论](../Methodology/Vibe_Coding_Methodology.md) — 完整方法论指南
+- [Vibe Coding 生产实践](../Methodology/Vibe_Coding_Production_Practices.md) — 生产环境实战
+- [Vibe Coding 入门指南](../Practice/Vibe_Coding_Getting_Started.md) — 5分钟入门
 
 ---
 

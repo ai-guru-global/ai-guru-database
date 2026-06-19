@@ -112,7 +112,7 @@ updated: 2026-06-15
 |------|------|----------|
 | [国内 AI Agent 产品](./Agent_Ecosystem_CN/Domestic_AI_Agent_Products_CN.md) | 通义千问/Kimi/智谱/豆包等 | 产品经理、选型 |
 | [国内开源 Agent 项目](./Agent_Ecosystem_CN/Chinese_OpenSource_Agent_Projects.md) | ChatDev/XAgent/MetaGPT/SWE-agent | 开发者、选型 |
-| [CoPaw Deep Dive](./23_OpenClaw_Ecosystem/CoPaw_Deep_Dive.md) | 阿里开源个人 AI 助手 | 开发者、参考 |
+| [CoPaw Deep Dive](./OpenClaw_Ecosystem/CoPaw_Deep_Dive.md) | 阿里开源个人 AI 助手 | 开发者、参考 |
 
 ---
 
@@ -168,9 +168,9 @@ L4: 持久化知识 → SQL/NoSQL
 
 ## 关联目录
 
-- [16_Agent_Evaluation](./16_Agent_Evaluation/) -- Agent 评估体系（Harness 评估视角、基准测试、评分框架）
+- [Agent_Evaluation](./Agent_Evaluation/) -- Agent 评估体系（Harness 评估视角、基准测试、评分框架）
 - [16_AI_Coding](../16_AI_Coding/) -- AI 编程方法论（Vibe Coding、Hermes Agent）
-- [23_OpenClaw_Ecosystem](./23_OpenClaw_Ecosystem/) -- OpenClaw 生态（CoPaw、QClaw）
+- [OpenClaw_Ecosystem](./OpenClaw_Ecosystem/) -- OpenClaw 生态（CoPaw、QClaw）
 - [14_RAG_Systems](../14_RAG_Systems/) -- RAG 系统专题
 - [13_AI_Ops](../13_AI_Ops/) -- AI 系统运维
 - [10_Deployment_Inference](../10_Deployment_Inference/) -- 推理引擎（vLLM, SGLang, Groq）

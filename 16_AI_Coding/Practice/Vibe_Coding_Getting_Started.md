@@ -302,9 +302,9 @@ Week 4+: 实战
 └── 持续学习
 
 推荐阅读:
-├── [方法论详解](../04_Methodology/Vibe_Coding_Methodology.md)
-├── [生产环境实践](../04_Methodology/Vibe_Coding_Production_Practices.md)
-└── [AI编程助手对比](../02_Tools/AI_Coding_Assistants_2026.md)
+├── [方法论详解](../Methodology/Vibe_Coding_Methodology.md)
+├── [生产环境实践](../Methodology/Vibe_Coding_Production_Practices.md)
+└── [AI编程助手对比](../Tools/AI_Coding_Assistants_2026.md)
 ```
 
 ---

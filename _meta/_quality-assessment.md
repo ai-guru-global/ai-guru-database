@@ -125,7 +125,7 @@ baseline: _project-evaluation.md
 | # | 缺口 | 严重度 | 建议动作 |
 |---|------|--------|---------|
 | 1 | `11_MLOps_Pipeline` 仅 13 文件/1.4 万词，相对全栈比例严重不足 | 🔴 高 | 补充 Feature Store / Model Registry / CI/CD for ML / Drift Detection |
-| 2 | `09_Testing` 12 文件，相比 `15_Agent_Production` 的 16_Agent_Evaluation 子目录（也是测试）体量失衡 | 🟡 中 | 整合或明确分工：传统 ML 测试 vs Agent 评估 |
+| 2 | `09_Testing` 12 文件，相比 `15_Agent_Production` 的 Agent_Evaluation 子目录（也是测试）体量失衡 | 🟡 中 | 整合或明确分工：传统 ML 测试 vs Agent 评估 |
 | 3 | `_references/` 21 文件、仅 3.6k 词，主要是索引页，缺乏深度参考文献 | 🟡 中 | 选 5-10 个核心参考升格为 annotated bibliography |
 | 4 | `_synthesis/` 28 页均字 ~395 词，合成页深度不足 | 🟡 中 | 合成页应 >1000 词，含跨域洞察而非仅链接 |
 | 5 | 21_Talks / 22_Papers / 23_Interviews 三个章节字数密度低（均 <300 词/篇） | 🟢 低 | 按体裁可接受，但建议每篇补"核心洞察"段 |

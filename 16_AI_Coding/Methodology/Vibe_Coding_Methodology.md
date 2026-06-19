@@ -452,7 +452,7 @@ R - Requirements (具体要求)
 
 ### 4.3 规则文件最佳实践
 
-> 完整的规则文件模板 (.cursorrules / AGENTS.md / CLAUDE.md) 请参阅 [提示词模板库](../03_Practice/Vibe_Coding_Prompt_Templates.md#4-规则文件模板)
+> 完整的规则文件模板 (.cursorrules / AGENTS.md / CLAUDE.md) 请参阅 [提示词模板库](../Practice/Vibe_Coding_Prompt_Templates.md#4-规则文件模板)
 
 规则文件的核心结构：
 ```
@@ -474,7 +474,7 @@ R - Requirements (具体要求)
 
 ### 4.4 高级提示技巧
 
-> 完整的提示词示例和按场景分类的模板请参阅 [提示词模板库](../03_Practice/Vibe_Coding_Prompt_Templates.md)
+> 完整的提示词示例和按场景分类的模板请参阅 [提示词模板库](../Practice/Vibe_Coding_Prompt_Templates.md)
 
 核心技巧概览：
 ```
@@ -1093,11 +1093,11 @@ Vibe Coding 演进路线:
 - [OpenCode Documentation](https://opencode.ai)
 
 ### 本项目相关文档
-- [AI编程助手对比](../02_Tools/AI_Coding_Assistants_2026.md) — Cursor/Claude Code/Windsurf/Devin 详细对比
-- [Hermes Agent 深度指南](../02_Tools/Hermes_Agent_2026.md) — Hermes Agent 功能与配置
-- [Vibe Coding 入门](../03_Practice/Vibe_Coding_Getting_Started.md) — 5分钟入门指南
-- [提示词模板库](../03_Practice/Vibe_Coding_Prompt_Templates.md) — 完整提示模板与规则文件
-- [实战案例集](../03_Practice/Vibe_Coding_Real_World_Cases.md) — 场景化实战与真实案例
+- [AI编程助手对比](../Tools/AI_Coding_Assistants_2026.md) — Cursor/Claude Code/Windsurf/Devin 详细对比
+- [Hermes Agent 深度指南](../Tools/Hermes_Agent_2026.md) — Hermes Agent 功能与配置
+- [Vibe Coding 入门](../Practice/Vibe_Coding_Getting_Started.md) — 5分钟入门指南
+- [提示词模板库](../Practice/Vibe_Coding_Prompt_Templates.md) — 完整提示模板与规则文件
+- [实战案例集](../Practice/Vibe_Coding_Real_World_Cases.md) — 场景化实战与真实案例
 - [Vibe Coding 生产实践](./Vibe_Coding_Production_Practices.md) — 生产环境工程化落地
 - [Agentic Coding 方法论](./Agentic_Coding_Methodology.md) — 多Agent协作开发方法论
 - [Prompt Engineering 专题](../../05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering.md) — 提示工程理论基础

@@ -69,8 +69,9 @@ NESTED_RENAME = {
 # 顶层遍历排除目录（供 _count_refs / rewrite_links 使用）
 _EXCLUDE_DIRS = {'.git', 'Web', 'node_modules', '.venv', '.qoder',
                  '.obsidian', '.github', '__pycache__'}
-# rewrite_links 额外排除：_raw 含外部 URL 路径不可改，docs/superpowers 记录映射规则本身
-_REWRITE_SKIP_DIRS = {'_raw', 'superpowers'}
+# rewrite_links 额外排除：_raw/_sources 含外部来源自有结构不可改，
+# docs/superpowers 记录映射规则本身
+_REWRITE_SKIP_DIRS = {'_raw', '_sources', 'superpowers'}
 
 
 # === 重写规则构造 ===

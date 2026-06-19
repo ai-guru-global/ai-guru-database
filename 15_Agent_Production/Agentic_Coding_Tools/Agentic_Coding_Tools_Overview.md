@@ -372,8 +372,8 @@ AWS Bedrock    │  ✓    │  ✓    │  -    │  ✓    │  ✓
 - [OpenRouter](../Agent_Platforms/OpenRouter_Deep_Dive.md)
 
 ### 评估框架
-- [Agent Harness 全面指南](../16_Agent_Evaluation/Agent_Harness_Comprehensive_2026.md)
-- [Multi-Agent 评估](../16_Agent_Evaluation/Multi_Agent_Evaluation_2026.md)
+- [Agent Harness 全面指南](../Agent_Evaluation/Agent_Harness_Comprehensive_2026.md)
+- [Multi-Agent 评估](../Agent_Evaluation/Multi_Agent_Evaluation_2026.md)
 
 ## Related
 

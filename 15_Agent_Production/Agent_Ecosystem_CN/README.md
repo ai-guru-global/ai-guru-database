@@ -39,7 +39,7 @@ updated: 2026-05-31
 - [Agentic Coding Tools](../Agentic_Coding_Tools/) -- 国际 Agentic Coding 工具对比
 - [Agent Frameworks](../Agent_Frameworks/) -- AgentScope 等国内开源框架
 - [Agent Platforms](../Agent_Platforms/) -- Dify、Coze 等平台
-- [23_OpenClaw_Ecosystem](../23_OpenClaw_Ecosystem/) -- OpenClaw 生态
+- [OpenClaw_Ecosystem](../OpenClaw_Ecosystem/) -- OpenClaw 生态
 
 ---
 

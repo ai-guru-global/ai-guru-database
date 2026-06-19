@@ -463,7 +463,7 @@ Vibe Coding（氛围编程）：
 
 建议接下来：
 1. **立即体验**：打开 [Cursor](https://cursor.sh) 或 [ChatGPT](https://chat.openai.com)，试着让 AI 帮你写一个小程序
-2. **学习 Vibe Coding**：阅读 [Vibe Coding 入门](./03_Practice/Vibe_Coding_Getting_Started.md)
+2. **学习 Vibe Coding**：阅读 [Vibe Coding 入门](./Practice/Vibe_Coding_Getting_Started.md)
 3. **快速参考**：查看 [AI 编程速查版](./AI_Coding-in-nutshell.md)
 
 > 记住：AI 编程的最大好处不是让你成为更好的程序员，而是让你能更快地把想法变成现实！

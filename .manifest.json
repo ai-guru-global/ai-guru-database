@@ -16,9 +16,9 @@
         "_sources/wechat/2026-06-glm-5.2-release.md"
       ],
       "pages_updated": [
-        "04_NLP_LLMs/Chinese_LLM_Ecosystem/GLM_Zhipu_Deep_Dive.md",
-        "04_NLP_LLMs/Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix.md",
-        "04_NLP_LLMs/Chinese_LLM_Ecosystem/README.md",
+        "05_NLP_LLMs/Chinese_LLM_Ecosystem/GLM_Zhipu_Deep_Dive.md",
+        "05_NLP_LLMs/Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix.md",
+        "05_NLP_LLMs/Chinese_LLM_Ecosystem/README.md",
         "hot.md",
         "index.md"
       ]
@@ -44,7 +44,7 @@
       "stub": false,
       "pages_created": [
         "90_Learn/Microsoft_AI_For_Beginners.md",
-        "references/microsoft-ai-for-beginners.md",
+        "_references/microsoft-ai-for-beginners.md",
         "90_Learn/Microsoft_AI_For_Beginners/L00_Course_Setup.md",
         "90_Learn/Microsoft_AI_For_Beginners/L01_Introduction_and_History_of_AI.md",
         "90_Learn/Microsoft_AI_For_Beginners/L02_Knowledge_Representation_and_Expert_Systems.md",
@@ -101,29 +101,29 @@
       "stub": false,
       "pages_created": [
         "90_Learn/Microsoft_GenAI_For_Beginners.md",
-        "references/microsoft-genai-for-beginners.md",
+        "_references/microsoft-genai-for-beginners.md",
         "01_Fundamentals/GenAI_L00_Course_Setup.md",
         "00_AI_Introduction/GenAI_L01_Intro_to_GenAI_and_LLMs.md",
-        "04_NLP_LLMs/GenAI_L02_Exploring_and_Comparing_LLMs.md",
-        "19_Ethics_Safety/GenAI_L03_Using_GenAI_Responsibly.md",
-        "04_NLP_LLMs/Prompt_Engineering/GenAI_L04_Prompt_Engineering_Fundamentals.md",
-        "04_NLP_LLMs/Prompt_Engineering/GenAI_L05_Advanced_Prompts.md",
-        "13_Agent_Production/GenAI_L06_Text_Generation_Apps.md",
-        "13_Agent_Production/GenAI_L07_Building_Chat_Applications.md",
-        "11_RAG_Systems/GenAI_L08_Building_Search_Applications.md",
-        "04_NLP_LLMs/Multimodal_Models/GenAI_L09_Building_Image_Applications.md",
-        "20_AI_Applications_Industry/GenAI_L10_Building_Low_Code_AI_Applications.md",
-        "13_Agent_Production/GenAI_L11_Integrating_with_Function_Calling.md",
-        "13_Agent_Production/GenAI_L12_Designing_UX_for_AI_Applications.md",
-        "19_Ethics_Safety/GenAI_L13_Securing_AI_Applications.md",
-        "10_MLOps_Pipeline/GenAI_L14_GenAI_Application_Lifecycle.md",
-        "11_RAG_Systems/GenAI_L15_RAG_and_Vector_Databases.md",
-        "04_NLP_LLMs/GenAI_L16_Open_Source_Models_and_Hugging_Face.md",
-        "13_Agent_Production/GenAI_L17_AI_Agents.md",
-        "04_NLP_LLMs/Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs.md",
-        "04_NLP_LLMs/Edge_LLM/GenAI_L19_Building_with_SLMs.md",
-        "04_NLP_LLMs/Global_LLM_Ecosystem/GenAI_L20_Building_with_Mistral.md",
-        "04_NLP_LLMs/Global_LLM_Ecosystem/GenAI_L21_Building_with_Meta.md"
+        "05_NLP_LLMs/GenAI_L02_Exploring_and_Comparing_LLMs.md",
+        "17_Ethics_Safety/GenAI_L03_Using_GenAI_Responsibly.md",
+        "05_NLP_LLMs/Prompt_Engineering/GenAI_L04_Prompt_Engineering_Fundamentals.md",
+        "05_NLP_LLMs/Prompt_Engineering/GenAI_L05_Advanced_Prompts.md",
+        "15_Agent_Production/GenAI_L06_Text_Generation_Apps.md",
+        "15_Agent_Production/GenAI_L07_Building_Chat_Applications.md",
+        "14_RAG_Systems/GenAI_L08_Building_Search_Applications.md",
+        "05_NLP_LLMs/Multimodal_Models/GenAI_L09_Building_Image_Applications.md",
+        "18_AI_Applications_Industry/GenAI_L10_Building_Low_Code_AI_Applications.md",
+        "15_Agent_Production/GenAI_L11_Integrating_with_Function_Calling.md",
+        "15_Agent_Production/GenAI_L12_Designing_UX_for_AI_Applications.md",
+        "17_Ethics_Safety/GenAI_L13_Securing_AI_Applications.md",
+        "11_MLOps_Pipeline/GenAI_L14_GenAI_Application_Lifecycle.md",
+        "14_RAG_Systems/GenAI_L15_RAG_and_Vector_Databases.md",
+        "05_NLP_LLMs/GenAI_L16_Open_Source_Models_and_Hugging_Face.md",
+        "15_Agent_Production/GenAI_L17_AI_Agents.md",
+        "05_NLP_LLMs/Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs.md",
+        "05_NLP_LLMs/Edge_LLM/GenAI_L19_Building_with_SLMs.md",
+        "05_NLP_LLMs/Global_LLM_Ecosystem/GenAI_L20_Building_with_Mistral.md",
+        "05_NLP_LLMs/Global_LLM_Ecosystem/GenAI_L21_Building_with_Meta.md"
       ],
       "pages_updated": []
     },
@@ -132,12 +132,12 @@
       "source_type": "manual",
       "project": null,
       "pages_created": [
-        "concepts/matryoshka-representation-learning.md"
+        "_concepts/matryoshka-representation-learning.md"
       ],
       "pages_updated": [
-        "concepts/embedding-models.md",
-        "concepts/vector-database.md",
-        "concepts/rag-systems.md",
+        "_concepts/embedding-models.md",
+        "_concepts/vector-database.md",
+        "_concepts/rag-systems.md",
         "index.md"
       ]
     },
@@ -146,15 +146,15 @@
       "source_type": "manual",
       "project": null,
       "pages_created": [
-        "11_RAG_Systems/Matryoshka_Representation_Learning_Deep_Dive.md",
-        "11_RAG_Systems/Matryoshka_Representation_Learning_for_dummy.md",
-        "22_Papers/Matryoshka_Representation_Learning_Deep_Dive.md"
+        "14_RAG_Systems/Matryoshka_Representation_Learning_Deep_Dive.md",
+        "14_RAG_Systems/Matryoshka_Representation_Learning_for_dummy.md",
+        "20_Papers/Matryoshka_Representation_Learning_Deep_Dive.md"
       ],
       "pages_updated": [
-        "11_RAG_Systems/README.md",
-        "concepts/matryoshka-representation-learning.md",
-        "concepts/embedding-models.md",
-        "22_Papers/README.md",
+        "14_RAG_Systems/README.md",
+        "_concepts/matryoshka-representation-learning.md",
+        "_concepts/embedding-models.md",
+        "20_Papers/README.md",
         "index.md"
       ]
     },
@@ -163,11 +163,11 @@
       "source_type": "manual",
       "project": null,
       "pages_created": [
-        "concepts/embeddings-vectors-mrl-plain.md"
+        "_concepts/embeddings-vectors-mrl-plain.md"
       ],
       "pages_updated": [
-        "concepts/embedding-models.md",
-        "concepts/matryoshka-representation-learning.md",
+        "_concepts/embedding-models.md",
+        "_concepts/matryoshka-representation-learning.md",
         "index.md"
       ]
     },
@@ -179,16 +179,16 @@
       "source_type": "document",
       "project": null,
       "pages_created": [
-        "references/hello-agents.md",
+        "_references/hello-agents.md",
         "90_Learn/Hello_Agents_Course.md",
-        "04_NLP_LLMs/Prompt_Engineering/Hello_Agents_L04_ReAct.md",
-        "04_NLP_LLMs/Prompt_Engineering/Hello_Agents_L09_Context_Engineering.md",
+        "05_NLP_LLMs/Prompt_Engineering/Hello_Agents_L04_ReAct.md",
+        "05_NLP_LLMs/Prompt_Engineering/Hello_Agents_L09_Context_Engineering.md",
         "07_Model_Training/Hello_Agents_L11_Agentic_RL.md",
-        "13_Agent_Production/Hello_Agents_L06_Frameworks_AutoGen_LangGraph.md",
-        "13_Agent_Production/Hello_Agents_L08_Memory_RAG.md",
-        "13_Agent_Production/Hello_Agents_L10_Agent_Protocols.md",
-        "13_Agent_Production/Hello_Agents_L13_Travel_Assistant.md",
-        "13_Agent_Production/Hello_Agents_L15_Cyber_Town.md"
+        "15_Agent_Production/Hello_Agents_L06_Frameworks_AutoGen_LangGraph.md",
+        "15_Agent_Production/Hello_Agents_L08_Memory_RAG.md",
+        "15_Agent_Production/Hello_Agents_L10_Agent_Protocols.md",
+        "15_Agent_Production/Hello_Agents_L13_Travel_Assistant.md",
+        "15_Agent_Production/Hello_Agents_L15_Cyber_Town.md"
       ],
       "pages_updated": []
     },
@@ -200,16 +200,16 @@
       "source_type": "document",
       "project": null,
       "pages_created": [
-        "references/learn-claude-code.md",
+        "_references/learn-claude-code.md",
         "90_Learn/Learn_Claude_Code_Course.md",
-        "13_Agent_Production/Learn_Claude_Code_L01_Agent_Loop.md",
-        "13_Agent_Production/Learn_Claude_Code_L03_Permission_System.md",
-        "13_Agent_Production/Learn_Claude_Code_L06_Subagent.md",
-        "13_Agent_Production/Learn_Claude_Code_L08_Context_Compact.md",
-        "13_Agent_Production/Learn_Claude_Code_L09_Memory_System.md",
-        "13_Agent_Production/Learn_Claude_Code_L12_Task_System.md",
-        "13_Agent_Production/Learn_Claude_Code_L15_Agent_Teams.md",
-        "13_Agent_Production/Learn_Claude_Code_L17_Autonomous_Agents.md"
+        "15_Agent_Production/Learn_Claude_Code_L01_Agent_Loop.md",
+        "15_Agent_Production/Learn_Claude_Code_L03_Permission_System.md",
+        "15_Agent_Production/Learn_Claude_Code_L06_Subagent.md",
+        "15_Agent_Production/Learn_Claude_Code_L08_Context_Compact.md",
+        "15_Agent_Production/Learn_Claude_Code_L09_Memory_System.md",
+        "15_Agent_Production/Learn_Claude_Code_L12_Task_System.md",
+        "15_Agent_Production/Learn_Claude_Code_L15_Agent_Teams.md",
+        "15_Agent_Production/Learn_Claude_Code_L17_Autonomous_Agents.md"
       ],
       "pages_updated": []
     },
@@ -221,12 +221,12 @@
       "source_type": "document",
       "project": null,
       "pages_created": [
-        "references/ai-agents-for-beginners.md",
+        "_references/ai-agents-for-beginners.md",
         "90_Learn/Microsoft_AI_Agents_for_Beginners.md",
-        "13_Agent_Production/Microsoft_AI_Agents_L01_Intro.md",
-        "13_Agent_Production/Microsoft_AI_Agents_L02_Frameworks.md",
-        "13_Agent_Production/Microsoft_AI_Agents_L04_Tool_Use.md",
-        "13_Agent_Production/Microsoft_AI_Agents_L05_Agentic_RAG.md"
+        "15_Agent_Production/Microsoft_AI_Agents_L01_Intro.md",
+        "15_Agent_Production/Microsoft_AI_Agents_L02_Frameworks.md",
+        "15_Agent_Production/Microsoft_AI_Agents_L04_Tool_Use.md",
+        "15_Agent_Production/Microsoft_AI_Agents_L05_Agentic_RAG.md"
       ],
       "pages_updated": []
     },
@@ -238,7 +238,7 @@
       "source_type": "document",
       "project": null,
       "pages_created": [
-        "references/books/hands-on-llms-alammar.md",
+        "_references/books/hands-on-llms-alammar.md",
         "90_Learn/Hands_On_LLMs_Course.md"
       ],
       "pages_updated": []
@@ -251,7 +251,7 @@
       "source_type": "document",
       "project": null,
       "pages_created": [
-        "references/apachecn-ailearning.md",
+        "_references/apachecn-ailearning.md",
         "90_Learn/ApacheCN_AILearning_Guide.md",
         "01_Fundamentals/ApacheCN_Data_Analysis_Track.md",
         "01_Fundamentals/ApacheCN_Linear_Algebra_Track.md",
@@ -267,7 +267,7 @@
       "source_type": "document",
       "project": null,
       "pages_created": [
-        "references/500-ai-projects.md"
+        "_references/500-ai-projects.md"
       ],
       "pages_updated": []
     },
@@ -279,7 +279,7 @@
       "source_type": "document",
       "project": null,
       "pages_created": [
-        "13_Agent_Production/Microsoft_AI_Agents_L00_Course_Setup.md"
+        "15_Agent_Production/Microsoft_AI_Agents_L00_Course_Setup.md"
       ],
       "pages_updated": []
     },
@@ -291,7 +291,7 @@
       "source_type": "document",
       "project": null,
       "pages_created": [
-        "13_Agent_Production/Microsoft_AI_Agents_L03_Design_Principles.md"
+        "15_Agent_Production/Microsoft_AI_Agents_L03_Design_Principles.md"
       ],
       "pages_updated": []
     },
@@ -303,7 +303,7 @@
       "source_type": "document",
       "project": null,
       "pages_created": [
-        "13_Agent_Production/Microsoft_AI_Agents_L06_Trustworthy_Agents.md"
+        "15_Agent_Production/Microsoft_AI_Agents_L06_Trustworthy_Agents.md"
       ],
       "pages_updated": []
     },
@@ -315,7 +315,7 @@
       "source_type": "document",
       "project": null,
       "pages_created": [
-        "13_Agent_Production/Microsoft_AI_Agents_L07_Planning_Design.md"
+        "15_Agent_Production/Microsoft_AI_Agents_L07_Planning_Design.md"
       ],
       "pages_updated": []
     },
@@ -327,7 +327,7 @@
       "source_type": "document",
       "project": null,
       "pages_created": [
-        "13_Agent_Production/Microsoft_AI_Agents_L08_Multi_Agent.md"
+        "15_Agent_Production/Microsoft_AI_Agents_L08_Multi_Agent.md"
       ],
       "pages_updated": []
     },
@@ -339,7 +339,7 @@
       "source_type": "document",
       "project": null,
       "pages_created": [
-        "13_Agent_Production/Microsoft_AI_Agents_L09_Metacognition.md"
+        "15_Agent_Production/Microsoft_AI_Agents_L09_Metacognition.md"
       ],
       "pages_updated": []
     },
@@ -351,7 +351,7 @@
       "source_type": "document",
       "project": null,
       "pages_created": [
-        "13_Agent_Production/Microsoft_AI_Agents_L10_Production.md"
+        "15_Agent_Production/Microsoft_AI_Agents_L10_Production.md"
       ],
       "pages_updated": []
     },
@@ -363,7 +363,7 @@
       "source_type": "document",
       "project": null,
       "pages_created": [
-        "13_Agent_Production/Microsoft_AI_Agents_L11_Agentic_Protocols.md"
+        "15_Agent_Production/Microsoft_AI_Agents_L11_Agentic_Protocols.md"
       ],
       "pages_updated": []
     },
@@ -375,7 +375,7 @@
       "source_type": "document",
       "project": null,
       "pages_created": [
-        "13_Agent_Production/Microsoft_AI_Agents_L12_Context_Engineering.md"
+        "15_Agent_Production/Microsoft_AI_Agents_L12_Context_Engineering.md"
       ],
       "pages_updated": []
     },
@@ -387,7 +387,7 @@
       "source_type": "document",
       "project": null,
       "pages_created": [
-        "13_Agent_Production/Microsoft_AI_Agents_L13_Agent_Memory.md"
+        "15_Agent_Production/Microsoft_AI_Agents_L13_Agent_Memory.md"
       ],
       "pages_updated": []
     },
@@ -399,7 +399,7 @@
       "source_type": "document",
       "project": null,
       "pages_created": [
-        "13_Agent_Production/Microsoft_AI_Agents_L14_Microsoft_Agent_Framework.md"
+        "15_Agent_Production/Microsoft_AI_Agents_L14_Microsoft_Agent_Framework.md"
       ],
       "pages_updated": []
     },
@@ -411,7 +411,7 @@
       "source_type": "document",
       "project": null,
       "pages_created": [
-        "13_Agent_Production/Microsoft_AI_Agents_L15_Browser_Use.md"
+        "15_Agent_Production/Microsoft_AI_Agents_L15_Browser_Use.md"
       ],
       "pages_updated": []
     },
@@ -423,7 +423,7 @@
       "source_type": "document",
       "project": null,
       "pages_created": [
-        "13_Agent_Production/Microsoft_AI_Agents_L18_Securing_AI_Agents.md"
+        "15_Agent_Production/Microsoft_AI_Agents_L18_Securing_AI_Agents.md"
       ],
       "pages_updated": []
     },
@@ -439,9 +439,9 @@
         "00_AI_Introduction/AI_Beginner_Fundamentals.md",
         "02_Machine_Learning/ML_For_Beginners.md",
         "03_Deep_Learning/Deep_Learning_For_Beginners.md",
-        "04_NLP_LLMs/LLM_For_Beginners.md",
+        "05_NLP_LLMs/LLM_For_Beginners.md",
         "00_AI_Introduction/AI_Application_Scenarios.md",
-        "19_Ethics_Safety/AI_Ethics_And_Future_For_Beginners.md"
+        "17_Ethics_Safety/AI_Ethics_And_Future_For_Beginners.md"
       ],
       "pages_updated": []
     },
@@ -451,9 +451,9 @@
       "source_type": "book",
       "project": null,
       "pages_created": [
-        "04_NLP_LLMs/Prompt_Engineering/Prompt_Engineering_Complete_Guide.md",
-        "04_NLP_LLMs/Prompt_Engineering/Prompt_Engineering_Advanced_Apps.md",
-        "04_NLP_LLMs/Prompt_Engineering/Prompt_Engineering_Templates_Patterns.md"
+        "05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering_Complete_Guide.md",
+        "05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering_Advanced_Apps.md",
+        "05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering_Templates_Patterns.md"
       ],
       "pages_updated": []
     },
@@ -463,8 +463,8 @@
       "source_type": "book",
       "project": null,
       "pages_created": [
-        "04_NLP_LLMs/Context_Engineering_Guide.md",
-        "04_NLP_LLMs/Context_Engineering_Patterns.md"
+        "05_NLP_LLMs/Context_Engineering_Guide.md",
+        "05_NLP_LLMs/Context_Engineering_Patterns.md"
       ],
       "pages_updated": []
     },
@@ -474,10 +474,10 @@
       "source_type": "book",
       "project": null,
       "pages_created": [
-        "04_NLP_LLMs/LLM_Internals_Architecture.md",
-        "04_NLP_LLMs/LLM_Internals_Training.md",
-        "04_NLP_LLMs/LLM_Internals_Inference.md",
-        "04_NLP_LLMs/LLM_Internals_Models_Frontiers.md"
+        "05_NLP_LLMs/LLM_Internals_Architecture.md",
+        "05_NLP_LLMs/LLM_Internals_Training.md",
+        "05_NLP_LLMs/LLM_Internals_Inference.md",
+        "05_NLP_LLMs/LLM_Internals_Models_Frontiers.md"
       ],
       "pages_updated": []
     },
@@ -487,9 +487,9 @@
       "source_type": "book",
       "project": null,
       "pages_created": [
-        "17_AI_Coding/02_Tools/Claude_Complete_Guide.md",
-        "17_AI_Coding/02_Tools/Claude_Code_Deep_Dive.md",
-        "17_AI_Coding/01_Theory/Claude_Agent_Architecture.md"
+        "16_AI_Coding/02_Tools/Claude_Complete_Guide.md",
+        "16_AI_Coding/02_Tools/Claude_Code_Deep_Dive.md",
+        "16_AI_Coding/01_Theory/Claude_Agent_Architecture.md"
       ],
       "pages_updated": []
     },
@@ -499,9 +499,9 @@
       "source_type": "book",
       "project": null,
       "pages_created": [
-        "13_Agent_Production/Agent_Foundations/Agentic_AI_Complete_Guide.md",
-        "13_Agent_Production/Agent_Foundations/Multi_Agent_Systems_Guide.md",
-        "13_Agent_Production/Agent_Workflow/AgentOps_Production_Guide.md"
+        "15_Agent_Production/Agent_Foundations/Agentic_AI_Complete_Guide.md",
+        "15_Agent_Production/Agent_Foundations/Multi_Agent_Systems_Guide.md",
+        "15_Agent_Production/Agent_Workflow/AgentOps_Production_Guide.md"
       ],
       "pages_updated": []
     },
@@ -511,9 +511,9 @@
       "source_type": "book",
       "project": null,
       "pages_created": [
-        "13_Agent_Production/Agent_Harness/Harness_Engineering_Complete_Guide.md",
-        "13_Agent_Production/Agent_Harness/Harness_Core_Subsystems.md",
-        "13_Agent_Production/Agent_Harness/Harness_Production_Security.md"
+        "15_Agent_Production/Agent_Harness/Harness_Engineering_Complete_Guide.md",
+        "15_Agent_Production/Agent_Harness/Harness_Core_Subsystems.md",
+        "15_Agent_Production/Agent_Harness/Harness_Production_Security.md"
       ],
       "pages_updated": []
     },
@@ -523,8 +523,8 @@
       "source_type": "book",
       "project": null,
       "pages_created": [
-        "13_Agent_Production/23_OpenClaw_Ecosystem/OpenClaw_Complete_Guide.md",
-        "13_Agent_Production/23_OpenClaw_Ecosystem/OpenClaw_Internals.md"
+        "15_Agent_Production/23_OpenClaw_Ecosystem/OpenClaw_Complete_Guide.md",
+        "15_Agent_Production/23_OpenClaw_Ecosystem/OpenClaw_Internals.md"
       ],
       "pages_updated": []
     },
@@ -534,31 +534,31 @@
       "source_type": "book",
       "project": null,
       "pages_created": [
-        "19_Ethics_Safety/LLM_Security_Complete_Guide.md",
-        "19_Ethics_Safety/LLM_Security_Defense_Guide.md",
-        "19_Ethics_Safety/Agent_RAG_Security.md"
+        "17_Ethics_Safety/LLM_Security_Complete_Guide.md",
+        "17_Ethics_Safety/LLM_Security_Defense_Guide.md",
+        "17_Ethics_Safety/Agent_RAG_Security.md"
       ],
       "pages_updated": []
     },
     "yeasy-distillation-cross-cutting": {
       "ingested_at": "2026-06-19T00:00:00Z",
       "source_url": "https://github.com/yeasy",
-      "source_type": "synthesis",
+      "source_type": "_synthesis",
       "project": null,
-      "note": "Concept atoms and cross-book synthesis/cheatsheet pages distilled across all 9 yeasy books",
+      "note": "Concept atoms and cross-book _synthesis/cheatsheet pages distilled across all 9 yeasy books",
       "pages_created": [
-        "concepts/mcp.md",
-        "concepts/agent-loop.md",
-        "concepts/agent-harness.md",
-        "concepts/context-engineering.md",
-        "concepts/prompt-injection.md",
-        "concepts/hallucination.md",
-        "concepts/a2a-protocol.md",
-        "concepts/guardrails.md",
-        "_meta/synthesis-engineering-evolution.md",
-        "_meta/synthesis-llm-security-pipeline.md",
-        "_meta/synthesis-architecture-selection-guide.md",
-        "_meta/synthesis-memory-systems.md",
+        "_concepts/mcp.md",
+        "_concepts/agent-loop.md",
+        "_concepts/agent-harness.md",
+        "_concepts/context-engineering.md",
+        "_concepts/prompt-injection.md",
+        "_concepts/hallucination.md",
+        "_concepts/a2a-protocol.md",
+        "_concepts/guardrails.md",
+        "_meta/_synthesis-engineering-evolution.md",
+        "_meta/_synthesis-llm-security-pipeline.md",
+        "_meta/_synthesis-architecture-selection-guide.md",
+        "_meta/_synthesis-memory-systems.md",
         "_meta/cheatsheet-llm-inference.md",
         "_meta/cheatsheet-agent-design.md",
         "_meta/cheatsheet-security-defense.md"

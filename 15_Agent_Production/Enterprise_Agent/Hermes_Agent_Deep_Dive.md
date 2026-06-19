@@ -616,7 +616,7 @@ async def handle_request(req):
 
 - [Hermes Agent 官网](https://hermes-ai.io)
 - [Hermes Agent 文档](https://docs.hermes-ai.io)
-- [企业 AI Agent 安全指南](../16_Agent_Evaluation/Agent_Red_Teaming_2026.md)
+- [企业 AI Agent 安全指南](../Agent_Evaluation/Agent_Red_Teaming_2026.md)
 - [Agent 生产部署最佳实践](./Agent_Production_2026.md)
 
 ## Related

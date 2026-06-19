@@ -539,10 +539,10 @@ src/
 
 ## 参考资源
 
-- [Vibe Coding 方法论](../04_Methodology/Vibe_Coding_Methodology.md) — 完整方法论指南
+- [Vibe Coding 方法论](../Methodology/Vibe_Coding_Methodology.md) — 完整方法论指南
 - [Vibe Coding 入门](./Vibe_Coding_Getting_Started.md) — 5分钟入门
 - [实战案例集](./Vibe_Coding_Real_World_Cases.md) — 场景化实战与真实案例
-- [AI编程助手对比](../02_Tools/AI_Coding_Assistants_2026.md) — 工具选型参考
+- [AI编程助手对比](../Tools/AI_Coding_Assistants_2026.md) — 工具选型参考
 
 ---
 

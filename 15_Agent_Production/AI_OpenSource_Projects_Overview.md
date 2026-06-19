@@ -213,7 +213,7 @@ AI 开源项目分类
 | 项目 | 开发商 | 特点 | 文档 |
 |------|--------|------|------|
 | **AgentScope** | 阿里巴巴 | Actor-Staged 架构 | [Deep Dive](./Agent_Frameworks/AgentScope_Deep_Dive.md) |
-| **CoPaw** | 阿里 | 个人 AI 助手 | (见 23_OpenClaw_Ecosystem) |
+| **CoPaw** | 阿里 | 个人 AI 助手 | (见 OpenClaw_Ecosystem) |
 | **ChatDev** | 清华大学 | 虚拟软件公司 | (见 Agent_Ecosystem_CN) |
 | **XAgent** | 上海 AI 实验室 | 通用自主 Agent | (见 Agent_Ecosystem_CN) |
 | **MetaGPT** | 研究院 | SOP 驱动 | (见 Agent_Ecosystem_CN) |

@@ -70,7 +70,7 @@ This framework provides standardized methodologies for benchmarking and evaluati
 ## Framework Structure
 
 ```
-16_Agent_Evaluation/
+Agent_Evaluation/
 │
 ├── Cloud_Agent_Evaluation/              # 云产品智能体专项评估 (NEW)
 │   ├── Cloud_Agent_Benchmark_2026.md    # 综合测评框架 (CAPER 五维模型)

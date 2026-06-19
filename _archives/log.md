@@ -302,7 +302,7 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
 ### Actions Completed
 1. **Broken Links**: Fixed all true broken links + false positives
 2. **Cross-linker**: Injected 286 + 45 = 331 orphan links into READMEs
-3. **Title Fix**: Added 24 missing titles in 16_AI_Coding/02_Tools
+3. **Title Fix**: Added 24 missing titles in 16_AI_Coding/Tools
 4. **Synthesis**: Created 3 new high-value synthesis pages
  - alignment-rlhf.md (#alignment × #rlhf)
  - benchmark-evaluation.md (#benchmark × #evaluation)

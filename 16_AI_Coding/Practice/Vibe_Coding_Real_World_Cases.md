@@ -356,10 +356,10 @@ Phase 4: 验证
 
 ## 参考资源
 
-- [Vibe Coding 方法论](../04_Methodology/Vibe_Coding_Methodology.md) — DGRV 模型、能力模型、工作流模式
-- [Vibe Coding 生产实践](../04_Methodology/Vibe_Coding_Production_Practices.md) — 安全工程、质量监控、组织变革
+- [Vibe Coding 方法论](../Methodology/Vibe_Coding_Methodology.md) — DGRV 模型、能力模型、工作流模式
+- [Vibe Coding 生产实践](../Methodology/Vibe_Coding_Production_Practices.md) — 安全工程、质量监控、组织变革
 - [提示词模板库](./Vibe_Coding_Prompt_Templates.md) — 各场景提示词模板和规则文件
-- [AI编程助手对比](../02_Tools/AI_Coding_Assistants_2026.md) — 工具选型参考
+- [AI编程助手对比](../Tools/AI_Coding_Assistants_2026.md) — 工具选型参考
 
 ---
 

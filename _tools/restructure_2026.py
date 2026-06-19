@@ -146,34 +146,20 @@ def dry_run(out_csv=REPO_ROOT / "_tools" / "rename_plan.csv"):
 def rename(commit=True):
     """Phase B：git mv 重命名目录，保留历史。
 
-    顺序：先 NESTED（子目录），再 KG，再 TOP_LEVEL（处理 04↔05 对调）。
+    顺序：
+      1) 顶层章节（13→15 等，含 04↔05 对调）—— 先改父目录
+      2) 知识图谱层加 _ 前缀
+      3) 嵌套子目录去编号（此时父目录已是新名，旧路径需用新父前缀）
+
     每个顶层章节一个 commit（当 commit=True）。
     """
-    # 1) 嵌套子目录（必须先于父目录改名，否则路径失效）
-    for old, new in NESTED_RENAME.items():
-        if (REPO_ROOT / old).exists():
-            _git(["mv", old, new])
-    if commit:
-        _git(["add", "-A"]); _git(["commit", "-m",
-            "refactor(restructure): 嵌套子目录去编号前缀（13/17）"])
-
-    # 2) 知识图谱层加 _ 前缀
-    for old, new in KG_RENAME.items():
-        if (REPO_ROOT / old).exists():
-            _git(["mv", old, new])
-    if commit:
-        _git(["add", "-A"]); _git(["commit", "-m",
-            "refactor(restructure): 知识图谱层加 _ 前缀"])
-
-    # 3) 顶层章节重命名
-    # 3a) 收集需变更的 (old, new) 对（排除 old==new 的 no-op）
+    # 1) 顶层章节重命名（必须最先，嵌套依赖新父前缀）
     pending = [(o, n) for o, n in TOP_LEVEL_RENAME.items() if o != n]
     done = set()
     for old, new in pending:
         if old in done:
             continue
-        # 双向冲突：目标 new 是另一个待处理项的旧名
-        # （典型 04↔05：new=05_NLP_LLMs 恰是 other_old）
+        # 双向冲突：目标 new 是另一个待处理项的旧名（典型 04↔05 对调）
         other_old = next((o for o, _ in pending if o == new), None)
         if other_old is not None and other_old != old:
             # 三步法（old→tmp, other_old→new, tmp→other_new）
@@ -189,6 +175,29 @@ def rename(commit=True):
         if commit:
             _git(["add", "-A"]); _git(["commit", "-m",
                 f"refactor(restructure): 重命名 {old} → {new}"])
+
+    # 2) 知识图谱层加 _ 前缀
+    for old, new in KG_RENAME.items():
+        if (REPO_ROOT / old).exists():
+            _git(["mv", old, new])
+    if commit:
+        _git(["add", "-A"]); _git(["commit", "-m",
+            "refactor(restructure): 知识图谱层加 _ 前缀"])
+
+    # 3) 嵌套子目录去编号前缀
+    #    顶层已改名，NESTED_RENAME 的旧路径用旧编号，需替换为当前实际路径。
+    #    构造 old_top→new_top 反查，把嵌套旧路径的父前缀换成新名。
+    for old_nested, new_nested in NESTED_RENAME.items():
+        # old_nested 如 "13_Agent_Production/16_Agent_Evaluation"，但 13 已变 15
+        # 用 new_nested 的父前缀（15_Agent_Production）+ old_nested 的子名重构实际旧路径
+        new_parent = new_nested.rsplit("/", 1)[0]  # 15_Agent_Production
+        old_child = old_nested.rsplit("/", 1)[1]   # 16_Agent_Evaluation
+        actual_old = f"{new_parent}/{old_child}"    # 15_Agent_Production/16_Agent_Evaluation
+        if (REPO_ROOT / actual_old).exists():
+            _git(["mv", actual_old, new_nested])
+    if commit:
+        _git(["add", "-A"]); _git(["commit", "-m",
+            "refactor(restructure): 嵌套子目录去编号前缀（13/17）"])
 
 
 # === Phase C: rewrite-links ===

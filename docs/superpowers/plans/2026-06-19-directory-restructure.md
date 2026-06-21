@@ -593,12 +593,12 @@ git commit -m "feat(restructure): rename 阶段（git mv + 04↔05 对调三步�
 Append to `_tools/tests/test_restructure_2026.py`:
 ```python
 def test_rewrite_links_handles_wikilink_and_mdlink(tmp_path, monkeypatch):
-    """wikilink [[04_NLP_LLMs/x]] 与 md link ](04_NLP_LLMs/x) 都要改，正文不改。"""
+    """wikilink [[05_NLP_LLMs/x]] 与 md link ](05_NLP_LLMs/x) 都要改，正文不改。"""
     monkeypatch.setattr(rs, "REPO_ROOT", tmp_path)
     doc = tmp_path / "doc.md"
     doc.write_text(
-        "见 [[04_NLP_LLMs/LLM_Fundamentals]] 和 "
-        "[链接](04_NLP_LLMs/README.md)。\n"
+        "见 [[05_NLP_LLMs/LLM_Fundamentals]] 和 "
+        "[链接](05_NLP_LLMs/README.md)。\n"
         "正文提及 04_NLP_LLMs 不应被改。\n", encoding="utf-8")
 
     rs.rewrite_links_in_file(doc)
@@ -613,7 +613,7 @@ def test_rewrite_links_nested_before_top_level(tmp_path, monkeypatch):
     """嵌套路径必须在顶层路径之前替换。"""
     monkeypatch.setattr(rs, "REPO_ROOT", tmp_path)
     doc = tmp_path / "doc.md"
-    doc.write_text("[[13_Agent_Production/16_Agent_Evaluation/x]]",
+    doc.write_text("[[15_Agent_Production/Agent_Evaluation/x]]",
                    encoding="utf-8")
     rs.rewrite_links_in_file(doc)
     assert "15_Agent_Production/Agent_Evaluation/x" in doc.read_text("utf-8")
@@ -1146,7 +1146,7 @@ Review 章节导航表，确认行内编号与目录名是否需手动更新（�
 
 - [ ] **Step 2: 重写 README 章节导航表（L296-334）**
 
-将表格按新映射表更新。示例替换 `| **05** [计算机视觉](./05_Computer_Vision/)` → `| **04** [计算机视觉](./04_Computer_Vision/)`，依此类推全部 22 行。注意 04↔05 对调、Testing 15→09、各章新编号。
+将表格按新映射表更新。示例替换 `| **05** [计算机视觉](./04_Computer_Vision/)` → `| **04** [计算机视觉](./04_Computer_Vision/)`，依此类推全部 22 行。注意 04↔05 对调、Testing 15→09、各章新编号。
 
 - [ ] **Step 3: 更新 README 统计表（L107-135）**
 

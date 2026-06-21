@@ -134,7 +134,7 @@ tier: core
 ## 6. 延伸阅读
 
 - 想深入了解技术规格和部署案例：[[01_Fundamentals/AI_Hardware/T_Head_PPU_Deep_Dive|平头哥真武 PPU 深度解析]]
-- 想了解 FP32/FP16/FP8/FP4 精度具体是什么意思：见 [[concepts/model-precision|模型精度概念详解]] 或 [[01_Fundamentals/AI_Hardware/T_Head_PPU_Deep_Dive#32-真武-m890|深度解析中的真武 M890 精度说明]]
+- 想了解 FP32/FP16/FP8/FP4 精度具体是什么意思：见 [[_concepts/model-precision|模型精度概念详解]] 或 [[01_Fundamentals/AI_Hardware/T_Head_PPU_Deep_Dive#32-真武-m890|深度解析中的真武 M890 精度说明]]
 - 国产 AI 芯片全面对比：[[01_Fundamentals/AI_Hardware/Chinese_AI_Chips_Deep_Dive|国产 AI 芯片深度解析]]
 
-> **关联**: -> [[01_Fundamentals/AI_Hardware/README|AI 硬件基础设施]] | [[01_Fundamentals/AI_Hardware/Chinese_AI_Chips_Deep_Dive|国产 AI 芯片]] | [[04_NLP_LLMs/Chinese_LLM_Ecosystem/README|中国大模型生态]]
+> **关联**: -> [[01_Fundamentals/AI_Hardware/README|AI 硬件基础设施]] | [[01_Fundamentals/AI_Hardware/Chinese_AI_Chips_Deep_Dive|国产 AI 芯片]] | [[05_NLP_LLMs/Chinese_LLM_Ecosystem/README|中国大模型生态]]

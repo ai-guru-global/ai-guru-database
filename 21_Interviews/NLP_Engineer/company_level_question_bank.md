@@ -1,0 +1,52 @@
+---
+title: NLP Engineer 按公司/级别区分的题库
+category: 23-interviews-nlp-engineer
+tags: ["interviews", "career", "experience", "practitioners", "nlp"]
+summary: "多语言与多域场景如何评测？"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
+# NLP Engineer 按公司/级别区分的题库
+
+## 公司类型
+### 大厂/平台型
+- 多语言与多域场景如何评测？
+- 规模化推理如何降本增效？
+
+### 创业公司/中小团队
+- 如何快速落地高价值 NLP 应用？
+- 如何在成本与体验之间权衡？
+
+### 研究机构/实验室
+- 论文复现与自建基准如何做？
+- 评测体系与创新点如何设计？
+
+### 具体公司（示例）
+- **字节跳动**: 在高速迭代与大规模业务场景下，该岗位如何平衡效果、成本与稳定性？
+- **腾讯**: 多业务线协同下如何统一标准并推动落地？
+- **Meta**: 开源与隐私合规并重时，该岗位如何处理权衡？
+- **OpenAI**: 面向高影响系统时如何强化安全与质量保障？
+
+## 级别
+### 初级 (Junior)
+- NLP 基础与常见模型理解。
+- 简单评测与数据处理能力。
+
+### 中级 (Mid)
+- RAG 与评测体系建设。
+- 线上问题排查与优化能力。
+
+### 高级/负责人 (Senior/Lead)
+- 端到端系统设计与成本治理。
+- 团队技术路线规划。
+
+---
+*Last updated: 2026-02-26*
+
+## Related
+
+- [[21_Interviews/NLP_Engineer/interview_answers]] — NLP Engineer 面试题实例答案 (共享: career, experience, interviews, nlp, practitioners)
+- [[21_Interviews/NLP_Engineer/interview_preparing]] — NLP Engineer 面试准备 (共享: career, experience, interviews, nlp, practitioners)
+- [[21_Interviews/NLP_Engineer/question_bank]] — NLP Engineer 题库 (共享: career, experience, interviews, nlp, practitioners)
+- [[21_Interviews/AI_Data_Analyst/company_level_question_bank]] — AI Data Analyst 按公司/级别区分的题库 (共享: career, experience, interviews, practitioners)

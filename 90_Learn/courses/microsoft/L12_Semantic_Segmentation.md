@@ -100,7 +100,7 @@ updated: "2026-06-12"
 
 - 课程索引：[[90_Learn/courses/microsoft/microsoft_ai_for_beginners]]
 - 本库相关页面：
-  - [[05_Computer_Vision/Segmentation/Segmentation]]
-  - [[05_Computer_Vision/Segmentation/Segmentation_for_dummy]]
-  - [[05_Computer_Vision/CV-in-nutshell]]
-  - [[05_Computer_Vision/Image_Classification_Detection/Image_Classification_Detection]]
+  - [[04_Computer_Vision/Segmentation/Segmentation]]
+  - [[04_Computer_Vision/Segmentation/Segmentation_for_dummy]]
+  - [[04_Computer_Vision/CV-in-nutshell]]
+  - [[04_Computer_Vision/Image_Classification_Detection/Image_Classification_Detection]]

@@ -365,5 +365,5 @@ for name, m in models.items():
 - [[01_Fundamentals/Python_Data_Science_Toolkit]] — NumPy / Pandas / Matplotlib
 - [[01_Fundamentals/AI_Development_Environment_Setup]] — 环境配置
 - [[02_Machine_Learning/ML_Algorithms_Cheatsheet]] — 经典算法速查
-- [[synthesis/python-data-science-pipeline|Python × 数据科学]] — 入门到实战
-- [[synthesis/python-first-ml-model|Python 基础 × 第一个 ML 模型]] — 从零到一的实战桥梁
+- [[_synthesis/python-data-science-pipeline|Python × 数据科学]] — 入门到实战
+- [[_synthesis/python-first-ml-model|Python 基础 × 第一个 ML 模型]] — 从零到一的实战桥梁

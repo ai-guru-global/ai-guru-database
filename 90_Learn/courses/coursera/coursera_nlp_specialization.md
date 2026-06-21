@@ -36,5 +36,5 @@ lifecycle: reviewed
 - 想系统学习 NLP 的工程师
 - 有 Python/ML 基础想进入 NLP 领域的开发者
 
-> **关联**: -> [[04_NLP_LLMs|NLP/LLM]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[05_NLP_LLMs|NLP/LLM]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
 

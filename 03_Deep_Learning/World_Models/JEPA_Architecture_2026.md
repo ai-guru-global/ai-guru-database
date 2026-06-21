@@ -846,4 +846,4 @@ class ActiveJEPA(nn.Module):
 - [[03_Deep_Learning/DL-in-nutshell]] — 深度学习速成指南 (共享: backpropagation, deep-learning, dl, neural-networks)
 - [[03_Deep_Learning/README]] — 03 深度学习基础 (Deep Learning Foundations) (共享: backpropagation, deep-learning, dl, neural-networks)
 - [[03_Deep_Learning/World_Models/README]] — 世界模型 (World Models) (共享: backpropagation, deep-learning, dl, neural-networks)
-- [[concepts/neural-networks]] — 神经网络 (共享: backpropagation, dl)
+- [[_concepts/neural-networks]] — 神经网络 (共享: backpropagation, dl)

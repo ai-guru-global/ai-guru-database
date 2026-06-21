@@ -42,11 +42,11 @@ updated: 2026-06-15
 
 ## 关联目录
 
-- [09_Deployment_Inference](../09_Deployment_Inference/) -- 推理引擎 (vLLM, SGLang)
-- [LLM 推理引擎选型指南](../09_Deployment_Inference/LLM_Inference_Engine_Selection_Guide.md) -- 网关后端模型/推理引擎选型
-- [LLM 推理引擎迁移指南](../09_Deployment_Inference/LLM_Inference_Engine_Migration_Guide.md) -- 多引擎切换与灰度策略
-- [11_RAG_Systems](../11_RAG_Systems/) -- RAG 系统
-- [16_AI_Ops](../16_AI_Ops/) -- AI 运维
+- [10_Deployment_Inference](../10_Deployment_Inference/) -- 推理引擎 (vLLM, SGLang)
+- [LLM 推理引擎选型指南](../10_Deployment_Inference/LLM_Inference_Engine_Selection_Guide.md) -- 网关后端模型/推理引擎选型
+- [LLM 推理引擎迁移指南](../10_Deployment_Inference/LLM_Inference_Engine_Migration_Guide.md) -- 多引擎切换与灰度策略
+- [14_RAG_Systems](../14_RAG_Systems/) -- RAG 系统
+- [13_AI_Ops](../13_AI_Ops/) -- AI 运维
 
 ---
 
@@ -56,10 +56,10 @@ updated: 2026-06-15
 - [[14_AI_Gateway/AI_Gateway_Comparison_2026|AI Gateway 对比 2026]]
 - [[14_AI_Gateway/LiteLLM_Deep_Dive|LiteLLM: 多模型统一 API 代理]]
 - [[14_AI_Gateway/README_for_dummy|14 AI Gateway — 小白版 🚪]]
-- [[09_Deployment_Inference/LLM_Inference_Engine_Selection_Guide|LLM 推理引擎选型指南]]
-- [[09_Deployment_Inference/LLM_Inference_Engine_Migration_Guide|LLM 推理引擎迁移指南]]
-- [[09_Deployment_Inference/vLLM_Deep_Dive|vLLM 深度解析]]
-- [[09_Deployment_Inference/SGLang_Deep_Dive|SGLang 深度解析]]
+- [[10_Deployment_Inference/LLM_Inference_Engine_Selection_Guide|LLM 推理引擎选型指南]]
+- [[10_Deployment_Inference/LLM_Inference_Engine_Migration_Guide|LLM 推理引擎迁移指南]]
+- [[10_Deployment_Inference/vLLM_Deep_Dive|vLLM 深度解析]]
+- [[10_Deployment_Inference/SGLang_Deep_Dive|SGLang 深度解析]]
 
 - [[14_AI_Gateway/AI_Gateway_for_dummy]] — AI Gateway 入门指南 (for Dummies) (共享: ai-gateway, api-management, litellm, routing)
 - [[14_AI_Gateway/Gateway-in-nutshell]] — AI 网关速成指南 (共享: ai-gateway, api-management, litellm, routing)

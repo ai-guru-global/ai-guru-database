@@ -99,7 +99,7 @@ LLM 生产化的 10 个痛点              ←→   云原生解法
 | 7 | **KAI Scheduler** | Sandbox | 调度 | 大规模 AI GPU 调度器（YN 机房级） | [[CNCF_Cloud_Native_AI/KAI_Scheduler_Deep_Dive]] |
 | 8 | **Kueue** | Landscape | 调度 | K8s 原生 Job 排队系统（配额/抢占） | [[CNCF_Cloud_Native_AI/Kueue_Deep_Dive]] |
 | 9 | **KubeRay** | Landscape | 调度 | 在 K8s 上运行 Ray（vLLM/SGLang 分布式底座） | [[CNCF_Cloud_Native_AI/KubeRay_Deep_Dive]] |
-| 10 | **Kubeflow** | Incubating | 平台 | K8s 原生 ML 平台（训练流水线） | [[10_MLOps_Pipeline/Kubeflow_Deep_Dive]] |
+| 10 | **Kubeflow** | Incubating | 平台 | K8s 原生 ML 平台（训练流水线） | [[11_MLOps_Pipeline/Kubeflow_Deep_Dive]] |
 | 11 | **KitOps** | Sandbox | 平台 | ModelKit——模型+代码+数据统一打包标准 | [[CNCF_Cloud_Native_AI/KitOps_Deep_Dive]] |
 | 12 | **Dragonfly** | Graduated | 平台 | P2P 加速——百 GB 模型权重秒级分发 | [[CNCF_Cloud_Native_AI/Dragonfly_Deep_Dive]] |
 | 13 | **K8sGPT** | Sandbox | AIOps | 用 LLM 给 K8s 集群做"AI 体检" | [[CNCF_Cloud_Native_AI/K8sGPT_Deep_Dive]] |
@@ -109,7 +109,7 @@ LLM 生产化的 10 个痛点              ←→   云原生解法
 | 17 | **Envoy AI Gateway** | Landscape | 网关 | 基于 Envoy Gateway 的 GenAI 统一入口 | [[CNCF_Cloud_Native_AI/Envoy_AI_Gateway_Deep_Dive]] |
 | 18 | **Kgateway** | Landscape | 网关 | Envoy 内核的 API/AI 双模网关 | [[CNCF_Cloud_Native_AI/Kgateway_Deep_Dive]] |
 | 19 | **AgentGateway** | Landscape | 网关 | AI Agent 与 MCP 服务器的下一代代理 | [[CNCF_Cloud_Native_AI/AgentGateway_Deep_Dive]] |
-| 20 | **vLLM / SGLang / TGI** | 参考 | 推理(引擎) | 被 KServe/KAITO/llm-d 编排的底层引擎 | [[09_Deployment_Inference/vLLM_Deep_Dive]] |
+| 20 | **vLLM / SGLang / TGI** | 参考 | 推理(引擎) | 被 KServe/KAITO/llm-d 编排的底层引擎 | [[10_Deployment_Inference/vLLM_Deep_Dive]] |
 
 ---
 
@@ -129,7 +129,7 @@ LLM 生产化的 10 个痛点              ←→   云原生解法
 
 > 选型一句话：**中小团队上 llmaz，企业统一平台上 KServe，追极致规模上 llm-d，微软/Azure 栈上 KAITO。**
 
-详见各深度文档。底层引擎选型（vLLM vs SGLang vs TGI）见 [[09_Deployment_Inference/LLM_Inference_Engine_Selection_Guide]]。
+详见各深度文档。底层引擎选型（vLLM vs SGLang vs TGI）见 [[10_Deployment_Inference/LLM_Inference_Engine_Selection_Guide]]。
 
 ### 4.2 调度与编排层 (Scheduling & Orchestration)
 
@@ -236,12 +236,12 @@ LLM 工作负载的特点是 **GPU 密集 + 长任务 + 资源争抢**，K8s 默
 
 | 本节项目 | 关联章节 | 关联点 |
 |---------|---------|-------|
-| KServe / KAITO / llm-d | [[09_Deployment_Inference/index\|部署与推理]] | 它们编排的就是 vLLM/SGLang/TGI 这些引擎 |
+| KServe / KAITO / llm-d | [[10_Deployment_Inference/index\|部署与推理]] | 它们编排的就是 vLLM/SGLang/TGI 这些引擎 |
 | KubeRay / Volcano / Kueue | [[12_Architecture_Infrastructure/AI_Infrastructure_2026\|AI 基础设施]] | GPU 调度与集群管理 |
 | Envoy AI Gateway / Kgateway | [[12_Architecture_Infrastructure/AI_Gateway/AI_Gateway_2026\|AI Gateway]] | 流量入口的 CNCF 实现 |
-| K8sGPT / HolmesGPT | [[16_AI_Ops/index\|AI 运维]] | AIOps 的云原生实践 |
-| KitOps | [[10_MLOps_Pipeline/index\|MLOps 流水线]] | 模型制品管理 |
-| Kubeflow | [[10_MLOps_Pipeline/Kubeflow_Deep_Dive\|Kubeflow 深度解析]] | 已有专题，本节引用 |
+| K8sGPT / HolmesGPT | [[13_AI_Ops/index\|AI 运维]] | AIOps 的云原生实践 |
+| KitOps | [[11_MLOps_Pipeline/index\|MLOps 流水线]] | 模型制品管理 |
+| Kubeflow | [[11_MLOps_Pipeline/Kubeflow_Deep_Dive\|Kubeflow 深度解析]] | 已有专题，本节引用 |
 | DRA / CDI | [[12_Architecture_Infrastructure/DRA_Deep_Dive\|DRA]] / [[12_Architecture_Infrastructure/CDI_Deep_Dive\|CDI]] | GPU 设备怎么分配给上面这些项目 |
 
 ---
@@ -250,7 +250,7 @@ LLM 工作负载的特点是 **GPU 密集 + 长任务 + 资源争抢**，K8s 默
 
 - [[12_Architecture_Infrastructure/AI_Infrastructure_2026|AI 基础设施 2026]] — 本节项目的底层硬件/网络/存储
 - [[12_Architecture_Infrastructure/DRA_Deep_Dive|DRA 深度解析]] — K8s 把 GPU 分给推理 Pod 的机制
-- [[09_Deployment_Inference/LLM_Inference_Engine_Selection_Guide|LLM 推理引擎选型]] — 本节推理层调用的底层引擎
+- [[10_Deployment_Inference/LLM_Inference_Engine_Selection_Guide|LLM 推理引擎选型]] — 本节推理层调用的底层引擎
 - [[12_Architecture_Infrastructure/AI_Gateway/AI_Gateway_Comparison_2026|AI Gateway 对比]] — 网关层全方案对比
-- [[16_AI_Ops/SRE_for_AI_Systems|面向 AI 系统的 SRE]] — K8sGPT/HolmesGPT 落地的运维框架
+- [[13_AI_Ops/SRE_for_AI_Systems|面向 AI 系统的 SRE]] — K8sGPT/HolmesGPT 落地的运维框架
 - [[README|知识库总索引]]

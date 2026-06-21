@@ -301,7 +301,7 @@ AI 的学习过程完全一样：
 建议接下来：
 1. **实际体验**：去试试 ChatGPT 或其他 AI 工具，感受一下
 2. **继续学习**：阅读 [机器学习基础](../02_Machine_Learning/Supervised_Learning/Supervised_Learning_for_dummy.md)
-3. **动手实践**：试试 [Vibe Coding](../17_AI_Coding/03_Practice/Vibe_Coding_Getting_Started.md)，用 AI 帮你写代码
+3. **动手实践**：试试 [Vibe Coding](../16_AI_Coding/Practice/Vibe_Coding_Getting_Started.md)，用 AI 帮你写代码
 
 > 记住：每个专家都曾是初学者。你已经开始了解 AI 了，这就是最棒的一步！
 

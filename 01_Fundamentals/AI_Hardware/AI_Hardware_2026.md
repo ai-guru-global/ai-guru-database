@@ -403,12 +403,12 @@ AI硬件选型决策树 2026:
 
 ## Related
 
-- [[concepts/gpu-interconnect]] — GPU 互联拓扑与 NVLink/NVSwitch 架构
-- [[concepts/model-serving]] — 模型服务化部署与推理引擎
-- [[09_Deployment_Inference/Deployment_Inference]] — 部署与推理系统全景
+- [[_concepts/gpu-interconnect]] — GPU 互联拓扑与 NVLink/NVSwitch 架构
+- [[_concepts/model-serving]] — 模型服务化部署与推理引擎
+- [[10_Deployment_Inference/Deployment_Inference]] — 部署与推理系统全景
 - [[01_Fundamentals/AI_Hardware/T_Head_PPU_Deep_Dive]] — 平头哥真武 PPU 深度解析
 - [[01_Fundamentals/AI_Hardware/T_Head_PPU_for_dummy]] — 平头哥 PPU 大白话解读
 - [[12_Architecture_Infrastructure/AI_Infrastructure_2026]] — AI 基础设施 2026
 - [[07_Model_Training/Distributed_Training_2026]] — 分布式训练与 GPU 集群调度
 - [[01_Fundamentals/AI_Hardware/Chinese_AI_Chips_Deep_Dive]] — 国产 AI 芯片12家厂商深度解析
-- [[concepts/heterogeneous-gpu]] — 异构 GPU 集群统一纳管
+- [[_concepts/heterogeneous-gpu]] — 异构 GPU 集群统一纳管

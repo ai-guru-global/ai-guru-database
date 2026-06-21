@@ -179,7 +179,7 @@ Microsoft 是 company（概率 0.87），也是 brand（概率 0.75）。
   - 神经-符号结合的前沿模型（如神经定理证明、LLM 与符号推理融合）。
 
 - **延伸**：
-  - 想理解符号推理的现代延续，阅读 [[04_NLP_LLMs/Reasoning_Models/Neuro_Symbolic_and_Formal_Verification_2026]]。
+  - 想理解符号推理的现代延续，阅读 [[05_NLP_LLMs/Reasoning_Models/Neuro_Symbolic_and_Formal_Verification_2026]]。
   - 想了解 AI 的整体脉络，阅读 [[00_AI_Introduction/AI_Fundamentals]]。
   - 想深入本体工程，可学习 OWL、RDF、SPARQL，并尝试 Protégé。
   - 想对比连接主义学习，继续学习本课程 L03「感知器」。
@@ -189,4 +189,4 @@ Microsoft 是 company（概率 0.87），也是 brand（概率 0.75）。
 - 课程索引：[[90_Learn/courses/microsoft/microsoft_ai_for_beginners]]
 - 本库相关页面：
   - [[00_AI_Introduction/AI_Fundamentals]]
-  - [[04_NLP_LLMs/Reasoning_Models/Neuro_Symbolic_and_Formal_Verification_2026]]
+  - [[05_NLP_LLMs/Reasoning_Models/Neuro_Symbolic_and_Formal_Verification_2026]]

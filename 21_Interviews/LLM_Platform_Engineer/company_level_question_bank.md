@@ -1,0 +1,52 @@
+---
+title: LLM Platform Engineer 按公司/级别区分的题库
+category: 23-interviews-llm-platform-engineer
+tags: ["interviews", "career", "experience", "practitioners", "llm"]
+summary: "多租户推理平台如何做隔离与计费？"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
+# LLM Platform Engineer 按公司/级别区分的题库
+
+## 公司类型
+### 大厂/平台型
+- 多租户推理平台如何做隔离与计费？
+- 如何保障跨业务线的 SLA？
+
+### 创业公司/中小团队
+- 如何在有限资源下搭建稳定推理服务？
+- 如何在成本压力下选择模型与架构？
+
+### 研究机构/实验室
+- 研究模型上线与评测如何衔接？
+- 如何支撑高频实验迭代？
+
+### 具体公司（示例）
+- **字节跳动**: 在高速迭代与大规模业务场景下，该岗位如何平衡效果、成本与稳定性？
+- **腾讯**: 多业务线协同下如何统一标准并推动落地？
+- **Meta**: 开源与隐私合规并重时，该岗位如何处理权衡？
+- **OpenAI**: 面向高影响系统时如何强化安全与质量保障？
+
+## 级别
+### 初级 (Junior)
+- 基础推理服务与监控理解。
+- 常见加速手段掌握。
+
+### 中级 (Mid)
+- 路由、灰度与容量规划。
+- 成本与性能优化能力。
+
+### 高级/负责人 (Senior/Lead)
+- 平台架构与资源治理。
+- 业务策略与技术路线规划。
+
+---
+*Last updated: 2026-02-26*
+
+## Related
+
+- [[21_Interviews/LLM_Platform_Engineer/interview_answers]] — LLM Platform Engineer 面试题实例答案 (共享: career, experience, interviews, llm, practitioners)
+- [[21_Interviews/LLM_Platform_Engineer/interview_preparing]] — LLM Platform Engineer 面试准备 (共享: career, experience, interviews, llm, practitioners)
+- [[21_Interviews/LLM_Platform_Engineer/question_bank]] — LLM Platform Engineer 题库 (共享: career, experience, interviews, llm, practitioners)
+- [[21_Interviews/AI_Data_Analyst/company_level_question_bank]] — AI Data Analyst 按公司/级别区分的题库 (共享: career, experience, interviews, practitioners)

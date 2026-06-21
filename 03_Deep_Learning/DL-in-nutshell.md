@@ -420,7 +420,7 @@ flowchart TB
 
 - [AI 基础速成](../01_Fundamentals/Fundamentals-in-nutshell.md) —— 线性代数、微积分、概率基础
 - [机器学习速成](../02_Machine_Learning/ML-in-nutshell.md) —— 传统 ML 方法
-- [计算机视觉速成](../05_Computer_Vision/CV-in-nutshell.md) —— CNN 和视觉 Transformer
+- [计算机视觉速成](../04_Computer_Vision/CV-in-nutshell.md) —— CNN 和视觉 Transformer
 - [训练速成](../07_Model_Training/Model-Training-in-nutshell.md) —— 端到端训练实践
 - [神经网络核心](./Neural_Network_Core/Neural_Network_Core.md) —— 更深入的理论讲解
 - [优化详解](./Optimization/Optimization.md) —— 优化器与正则化深入

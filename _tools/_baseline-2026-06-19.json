@@ -1,0 +1,8 @@
+{
+  "captured_at": "2026-06-19",
+  "source": "check_links.py",
+  "files_checked": 2328,
+  "internal_links": 6179,
+  "broken_links_before": 643,
+  "note": "基线含历史断链（如指向 14_AI_Gateway 的误引用）。verify 阶段仅要求 broken_links_after <= 643，且重构不应引入新断链。"
+}

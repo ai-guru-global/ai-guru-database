@@ -31,17 +31,17 @@ Judea Pearl 因果阶梯、Do-calculus、因果发现算法（PC/FCI）、工具
 **归属**: `02_Machine_Learning/Causal_Inference/`
 
 ### 1.4 联邦学习与隐私计算 — 已有独立章节
-✅ 已创建独立章节 `19_Ethics_Safety/Federated_Learning/`，覆盖 FedAvg/FedProx、差分隐私、安全聚合、联邦 LLM 微调。
+✅ 已创建独立章节 `17_Ethics_Safety/Federated_Learning/`，覆盖 FedAvg/FedProx、差分隐私、安全聚合、联邦 LLM 微调。
 
 ### 1.5 AI for Science — 完全空白
 AlphaFold 蛋白质结构预测、AI 药物发现、AI 气象预测（GraphCast/Pangu-Weather）、AI 材料科学。2024-2026 最具影响力的 AI 应用方向之一。
 
-**归属**: `20_AI_Applications_Industry/AI_for_Science/`
+**归属**: `18_AI_Applications_Industry/AI_for_Science/`
 
 ### 1.6 语音与音频 AI — 完全空白
 ASR（Whisper）、TTS（VITS/CosyVoice）、音频理解（AudioLM）、音乐生成（MusicGen/Suno）。语音是 AI 感知层的核心模态。
 
-**归属**: `04_NLP_LLMs/Speech_Audio_AI/`
+**归属**: `05_NLP_LLMs/Speech_Audio_AI/`
 
 ---
 
@@ -79,19 +79,19 @@ ASR（Whisper）、TTS（VITS/CosyVoice）、音频理解（AudioLM）、音乐�
 
 ### P0 - 百科级必备（影响完整性）
 1. ✅ GNN 专题 → `03_Deep_Learning/Graph_Neural_Networks/`
-2. ✅ AI for Science → `20_AI_Applications_Industry/AI_for_Science/`
-3. ✅ 语音与音频 AI → `04_NLP_LLMs/Speech_Audio_AI/`
+2. ✅ AI for Science → `18_AI_Applications_Industry/AI_for_Science/`
+3. ✅ 语音与音频 AI → `05_NLP_LLMs/Speech_Audio_AI/`
 4. ✅ 信息论基础 → `01_Fundamentals/Information_Theory/`
 5. ✅ 因果推断 → `02_Machine_Learning/Causal_Inference/`
 6. ✅ 贝叶斯方法 → `02_Machine_Learning/Bayesian_Methods/`
-7. ✅ 核心论文补充 → `22_Papers/` (GAN/VAE/CLIP/LoRA/CoT)
+7. ✅ 核心论文补充 → `20_Papers/` (GAN/VAE/CLIP/LoRA/CoT)
 
 ### P1 - 理论深度提升
 8. ✅ 自监督学习专题 → `03_Deep_Learning/Self_Supervised_Learning/`
-9. ✅ LLM 数据工程 → `04_NLP_LLMs/LLM_Data_Engineering/`
-10. ✅ 小模型/端侧 LLM → `04_NLP_LLMs/Edge_LLM/`
-11. ✅ 联邦学习独立章节 → `19_Ethics_Safety/Federated_Learning/`
-12. ✅ 论文补充: VAE/CoT/RAG → `22_Papers/`
+9. ✅ LLM 数据工程 → `05_NLP_LLMs/LLM_Data_Engineering/`
+10. ✅ 小模型/端侧 LLM → `05_NLP_LLMs/Edge_LLM/`
+11. ✅ 联邦学习独立章节 → `17_Ethics_Safety/Federated_Learning/`
+12. ✅ 论文补充: VAE/CoT/RAG → `20_Papers/`
 
 ### P2 - 实践价值增强
 13. 统一 Benchmark 对比表
@@ -104,8 +104,8 @@ ASR（Whisper）、TTS（VITS/CosyVoice）、音频理解（AudioLM）、音乐�
 
 | 维度 | 现状 | 建议 |
 |------|------|------|
-| 知识图谱可视化 | concepts/ 有 51 个概念页但无关联图谱 | 增加概念间依赖关系图（Mermaid） |
-| 跨章节导航 | synthesis/ 有 17 篇但深度不够 | 增加「学习路径推荐器」 |
+| 知识图谱可视化 | _concepts/ 有 51 个概念页但无关联图谱 | 增加概念间依赖关系图（Mermaid） |
+| 跨章节导航 | _synthesis/ 有 17 篇但深度不够 | 增加「学习路径推荐器」 |
 | 代码实验 | 00 章有 8 个实验 | 各章节均应配套可运行实验 |
 | 基准测试汇总 | 散落在各文档中 | 建立统一 Benchmark 对比表 |
 | 历史脉络 | 00 章有时间线 | 增加技术发展因果关系图 |

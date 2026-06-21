@@ -639,7 +639,7 @@ tensorboard --logdir=runs
 ### 🎓 相关知识
 - [模型训练 - 小白版](../07_Model_Training/Model_Training_for_dummy.md) - 训练基础概念
 - [模型评估 - 小白版](../08_Model_Evaluation/Model_Evaluation_for_dummy.md) - 评估指标详解
-- [RAG 系统 - 小白版](../11_RAG_Systems/RAG_Systems_for_dummy.md) - RAG 原理入门
+- [RAG 系统 - 小白版](../14_RAG_Systems/RAG_Systems_for_dummy.md) - RAG 原理入门
 - [深度学习核心 - 小白版](../03_Deep_Learning/Neural_Network_Core/Neural_Network_Core_for_dummy.md) - 神经网络基础
 
 ---

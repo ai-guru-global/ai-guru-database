@@ -330,5 +330,5 @@ pip install jupyter notebook  # 交互式编程环境
 - [[01_Fundamentals/AI_Development_Environment_Setup]] — Jupyter / Conda / GPU 环境
 - [[02_Machine_Learning/Supervised_Learning/Your_First_ML_Model]] — 你的第一个 ML 模型实战
 - [[02_Machine_Learning/ML_Algorithms_Cheatsheet]] — 经典算法速查表
-- [[synthesis/python-data-science-pipeline|Python × 数据科学]] — 从语法到实战
-- [[synthesis/python-first-ml-model|Python 基础 × 第一个 ML 模型]] — 从零到一的实战桥梁
+- [[_synthesis/python-data-science-pipeline|Python × 数据科学]] — 从语法到实战
+- [[_synthesis/python-first-ml-model|Python 基础 × 第一个 ML 模型]] — 从零到一的实战桥梁

@@ -447,11 +447,11 @@ vLLM 看到的显存即为配额，可同时运行多个 vLLM 实例共卡。
 
 ## Related
 
-- [[concepts/hami]] — HAMi 概念卡片
-- [[concepts/gpu-virtualization]] — GPU 虚拟化
-- [[concepts/heterogeneous-gpu]] — 异构 GPU 集群
-- [[concepts/cdi]] — CDI 容器设备接口
-- [[concepts/dra]] — DRA 动态资源分配
+- [[_concepts/hami]] — HAMi 概念卡片
+- [[_concepts/gpu-virtualization]] — GPU 虚拟化
+- [[_concepts/heterogeneous-gpu]] — 异构 GPU 集群
+- [[_concepts/cdi]] — CDI 容器设备接口
+- [[_concepts/dra]] — DRA 动态资源分配
 - [[12_Architecture_Infrastructure/HAMi_Operation_Guide]] — HAMi 运维指南
 - [[12_Architecture_Infrastructure/HAMi_for_dummy]] — HAMi 入门
-- [[16_AI_Ops/HAMi_Troubleshooting_Guide]] — HAMi 问题排查
+- [[13_AI_Ops/HAMi_Troubleshooting_Guide]] — HAMi 问题排查

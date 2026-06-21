@@ -88,4 +88,4 @@ PPO 引入了一个**比值因子 (Ratio)** 来衡量新策略和旧策略的差
 ## 相关阅读
 - [[06_Reinforcement_Learning/RL_Fundamentals]]
 - [[01_Fundamentals/Mathematics_for_AI]]
-- [[04_NLP_LLMs/Transformer_Revolution/Self_Attention_Mechanism]]
+- [[05_NLP_LLMs/Transformer_Revolution/Self_Attention_Mechanism]]

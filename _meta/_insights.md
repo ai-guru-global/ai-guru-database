@@ -11,15 +11,15 @@ updated: 2026-06-05
 
 | Page | Incoming | Outgoing | Note |
 |---|---|---|---|
-| [[synthesis/README]] | 259 | 3 | major hub |
-| [[21_Talks/Yoshua_Bengio/about]] | 189 | 4 | major hub |
-| [[23_Interviews/Robotics_Engineer/company_level_question_bank]] | 138 | 4 | major hub |
-| [[23_Interviews/Robotics_Engineer/interview_answers]] | 117 | 4 | major hub |
-| [[23_Interviews/Robotics_Engineer/interview_preparing]] | 117 | 4 | major hub |
-| [[23_Interviews/Robotics_Engineer/question_bank]] | 117 | 4 | major hub |
-| [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow]] | 106 | 5 | connector hub |
-| [[13_Agent_Production/16_Agent_Evaluation/Agent_Harness_Complete_2026]] | 90 | 5 | connector hub |
-| [[13_Agent_Production/16_Agent_Evaluation/Agent_Red_Teaming_2026]] | 90 | 6 | connector hub |
+| [[_synthesis/README]] | 259 | 3 | major hub |
+| [[19_Talks/Yoshua_Bengio/about]] | 189 | 4 | major hub |
+| [[21_Interviews/Robotics_Engineer/company_level_question_bank]] | 138 | 4 | major hub |
+| [[21_Interviews/Robotics_Engineer/interview_answers]] | 117 | 4 | major hub |
+| [[21_Interviews/Robotics_Engineer/interview_preparing]] | 117 | 4 | major hub |
+| [[21_Interviews/Robotics_Engineer/question_bank]] | 117 | 4 | major hub |
+| [[15_Agent_Production/Agent_Evaluation/Assessment/Evaluation_Workflow]] | 106 | 5 | connector hub |
+| [[15_Agent_Production/Agent_Evaluation/Agent_Harness_Complete_2026]] | 90 | 5 | connector hub |
+| [[15_Agent_Production/Agent_Evaluation/Agent_Red_Teaming_2026]] | 90 | 6 | connector hub |
 
 ## Bridge Pages (top 5)
 
@@ -28,8 +28,8 @@ updated: 2026-06-05
 | [[OpenRouter_OpenCode_Guide]] | 205 pairs | 17_AI_Coding ↔ concepts, root ↔ concepts |
 | [[MOC_OpenRouter_OpenCode]] | 154 pairs | synthesis ↔ 17_AI_Coding, root ↔ concepts |
 | [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] | 137 pairs | concepts ↔ 11_RAG_Systems, concepts ↔ 09_Deployment_Inference |
-| concepts/ai-agents | 89 pairs | 06_Reinforcement_Learning ↔ 13_Agent_Production, concepts ↔ 17_AI_Coding |
-| concepts/transformer-architecture | 76 pairs | 03_Deep_Learning ↔ 04_NLP_LLMs, concepts ↔ 09_Deployment_Inference |
+| _concepts/ai-agents | 89 pairs | 06_Reinforcement_Learning ↔ 13_Agent_Production, concepts ↔ 17_AI_Coding |
+| _concepts/transformer-architecture | 76 pairs | 03_Deep_Learning ↔ 04_NLP_LLMs, concepts ↔ 09_Deployment_Inference |
 
 > Note: README/README_for_dummy basenames are excluded — they span 259 directories and inflate bridge scores due to basename collision.
 
@@ -51,15 +51,15 @@ updated: 2026-06-05
 
 ## Surprising Connections (top 5)
 
-- [[00_AI_Introduction/AI_Ethics_Society]] → [[concepts/ai-ethics]] — score 4
+- [[00_AI_Introduction/AI_Ethics_Society]] → [[_concepts/ai-ethics]] — score 4
   - Reason: cross-layer (00_AI_Introduction ↔ concepts), peripheral→hub (4→10)
-- [[00_AI_Introduction/AI_Glossary]] → [[17_AI_Coding/02_Tools/OpenRouter/05-openrouter-api-reference]] — score 4
+- [[00_AI_Introduction/AI_Glossary]] → [[16_AI_Coding/Tools/OpenRouter/05-openrouter-api-reference]] — score 4
   - Reason: cross-layer (00_AI_Introduction ↔ 17_AI_Coding), peripheral→hub (2→41)
-- [[02_Machine_Learning/Bayesian_Methods/Bayesian_Methods_Deep_Dive]] → [[concepts/model-training]] — score 4
+- [[02_Machine_Learning/Bayesian_Methods/Bayesian_Methods_Deep_Dive]] → [[_concepts/model-training]] — score 4
   - Reason: cross-layer (02_Machine_Learning ↔ concepts), peripheral→hub (4→18)
-- [[02_Machine_Learning/Causal_Inference/Causal_Inference_Deep_Dive]] → [[concepts/probability-statistics]] — score 4
+- [[02_Machine_Learning/Causal_Inference/Causal_Inference_Deep_Dive]] → [[_concepts/probability-statistics]] — score 4
   - Reason: cross-layer (02_Machine_Learning ↔ concepts), peripheral→hub (4→11)
-- [[04_NLP_LLMs/LLM_Data_Engineering/LLM_Data_Engineering_Deep_Dive]] → [[synthesis/pretraining-synthetic-data]] — score 4
+- [[05_NLP_LLMs/LLM_Data_Engineering/LLM_Data_Engineering_Deep_Dive]] → [[_synthesis/pretraining-synthetic-data]] — score 4
   - Reason: cross-layer (04_NLP_LLMs ↔ synthesis), peripheral→hub (3→10)
 
 ## Orphan-Adjacent (dead-ends near hubs)
@@ -86,13 +86,13 @@ updated: 2026-06-05
 
 | # | Page | Incoming | Current Tier |
 |---|---|---|---|
-| 1 | [[synthesis/README]] | 259 | unset |
-| 2 | [[21_Talks/Yoshua_Bengio/about]] | 189 | unset |
-| 3 | [[23_Interviews/Robotics_Engineer/company_level_question_bank]] | 138 | unset |
-| 4 | [[23_Interviews/Robotics_Engineer/interview_answers]] | 117 | unset |
-| 5 | [[23_Interviews/Robotics_Engineer/interview_preparing]] | 117 | unset |
-| 6 | [[23_Interviews/Robotics_Engineer/question_bank]] | 117 | unset |
-| 7 | [[13_Agent_Production/16_Agent_Evaluation/Assessment/Evaluation_Workflow]] | 106 | unset |
+| 1 | [[_synthesis/README]] | 259 | unset |
+| 2 | [[19_Talks/Yoshua_Bengio/about]] | 189 | unset |
+| 3 | [[21_Interviews/Robotics_Engineer/company_level_question_bank]] | 138 | unset |
+| 4 | [[21_Interviews/Robotics_Engineer/interview_answers]] | 117 | unset |
+| 5 | [[21_Interviews/Robotics_Engineer/interview_preparing]] | 117 | unset |
+| 6 | [[21_Interviews/Robotics_Engineer/question_bank]] | 117 | unset |
+| 7 | [[15_Agent_Production/Agent_Evaluation/Assessment/Evaluation_Workflow]] | 106 | unset |
 
 ### Demote to `peripheral`
 

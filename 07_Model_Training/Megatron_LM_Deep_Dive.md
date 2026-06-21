@@ -253,10 +253,10 @@ python pretrain_gpt.py \
 
 ## Related
 
-- [[concepts/megatron-lm]] — Megatron-LM 概念卡片
-- [[concepts/distributed-training]] — 分布式训练
-- [[concepts/deepspeed]] — DeepSpeed
-- [[concepts/fsdp]] — FSDP
-- [[concepts/tensor-parallelism]] — 张量并行
-- [[concepts/pipeline-parallelism]] — 流水线并行
+- [[_concepts/megatron-lm]] — Megatron-LM 概念卡片
+- [[_concepts/distributed-training]] — 分布式训练
+- [[_concepts/deepspeed]] — DeepSpeed
+- [[_concepts/fsdp]] — FSDP
+- [[_concepts/tensor-parallelism]] — 张量并行
+- [[_concepts/pipeline-parallelism]] — 流水线并行
 - [[07_Model_Training/DeepSpeed_Deep_Dive]] — DeepSpeed 深度解析

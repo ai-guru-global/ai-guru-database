@@ -63,20 +63,20 @@ updated: "2026-06-16"
 
 | 项目 | 定位 | 建议位置 | 优先级 |
 |------|------|----------|--------|
-| **containerd** | 容器运行时 | `concepts/containerd.md` + `12_Architecture_Infrastructure/` | P2 |
-| **CRI-O** | 容器运行时 | `concepts/cri-o.md` | P2 |
+| **containerd** | 容器运行时 | `_concepts/containerd.md` + `12_Architecture_Infrastructure/` | P2 |
+| **CRI-O** | 容器运行时 | `_concepts/cri-o.md` | P2 |
 | **Kubernetes** | 编排平台 | `01_Fundamentals/` 或 `12_Architecture_Infrastructure/` | P1 |
 | **K3s** | 轻量 K8s 发行版 | `12_Architecture_Infrastructure/` | P2 |
-| **Helm** | 包管理 | `10_MLOps_Pipeline/` | P1 |
+| **Helm** | 包管理 | `11_MLOps_Pipeline/` | P1 |
 | **etcd** | 分布式配置存储 | `12_Architecture_Infrastructure/` | P2 |
 
 ### 3.2 AI/ML 工作负载
 
 | 项目 | 定位 | 建议位置 | 优先级 |
 |------|------|----------|--------|
-| **Kubeflow** | ML 工作流平台 | `10_MLOps_Pipeline/` | P1 |
-| **KServe** | 模型服务 | `09_Deployment_Inference/` | P1 |
-| **Ray / KubeRay** | 分布式 AI 框架 | `07_Model_Training/` / `09_Deployment_Inference/` | P1 |
+| **Kubeflow** | ML 工作流平台 | `11_MLOps_Pipeline/` | P1 |
+| **KServe** | 模型服务 | `10_Deployment_Inference/` | P1 |
+| **Ray / KubeRay** | 分布式 AI 框架 | `07_Model_Training/` / `10_Deployment_Inference/` | P1 |
 | **Volcano** | 批处理调度器 | `12_Architecture_Infrastructure/CNCF_Cloud_Native_AI/` | P1 |
 | **Kueue** | 作业排队/配额 | `12_Architecture_Infrastructure/CNCF_Cloud_Native_AI/` | P1 |
 | **HAMi** | 异构 GPU 虚拟化 | `12_Architecture_Infrastructure/` ✅ 已完成 | — |
@@ -86,10 +86,10 @@ updated: "2026-06-16"
 
 | 项目 | 定位 | 建议位置 | 优先级 |
 |------|------|----------|--------|
-| **Prometheus** | 监控/告警 | `10_MLOps_Pipeline/` / `16_AI_Ops/` | P1 |
-| **Grafana** | 可视化 | `10_MLOps_Pipeline/` / `16_AI_Ops/` | P1 |
-| **OpenTelemetry** | 可观测标准 | `16_AI_Ops/` | P1 |
-| **Jaeger** | 分布式追踪 | `16_AI_Ops/` | P2 |
+| **Prometheus** | 监控/告警 | `11_MLOps_Pipeline/` / `13_AI_Ops/` | P1 |
+| **Grafana** | 可视化 | `11_MLOps_Pipeline/` / `13_AI_Ops/` | P1 |
+| **OpenTelemetry** | 可观测标准 | `13_AI_Ops/` | P1 |
+| **Jaeger** | 分布式追踪 | `13_AI_Ops/` | P2 |
 | **Envoy** | 服务代理 / AI Gateway | `12_Architecture_Infrastructure/AI_Gateway/` | P1 |
 | **Istio** | 服务网格 | `12_Architecture_Infrastructure/AI_Gateway/` | P2 |
 
@@ -97,17 +97,17 @@ updated: "2026-06-16"
 
 | 项目 | 定位 | 建议位置 | 优先级 |
 |------|------|----------|--------|
-| **OPA** | 策略引擎 | `19_Ethics_Safety/` | P2 |
-| **Kyverno** | K8s 策略管理 | `19_Ethics_Safety/` | P2 |
-| **Falco** | 运行时安全 | `19_Ethics_Safety/` | P2 |
+| **OPA** | 策略引擎 | `17_Ethics_Safety/` | P2 |
+| **Kyverno** | K8s 策略管理 | `17_Ethics_Safety/` | P2 |
+| **Falco** | 运行时安全 | `17_Ethics_Safety/` | P2 |
 
 ### 3.5 新兴/AI 原生
 
 | 项目 | 定位 | 建议位置 | 优先级 |
 |------|------|----------|--------|
-| **CDI** | 容器设备接口 | `concepts/cdi.md` ✅ 已存在 |
-| **DRA** | 动态资源分配 | `concepts/dra.md` ✅ 已存在 |
-| **NVIDIA GPU Operator** | GPU 全栈运维 | `concepts/gpu-operator.md` ✅ 已存在 |
+| **CDI** | 容器设备接口 | `_concepts/cdi.md` ✅ 已存在 |
+| **DRA** | 动态资源分配 | `_concepts/dra.md` ✅ 已存在 |
+| **NVIDIA GPU Operator** | GPU 全栈运维 | `_concepts/gpu-operator.md` ✅ 已存在 |
 | **RunAI** | 商业 GPU 调度 | `12_Architecture_Infrastructure/` | P2 |
 
 ---
@@ -118,24 +118,24 @@ updated: "2026-06-16"
 
 | 产品 | 定位 | 建议位置 | 优先级 | 状态 |
 |------|------|----------|--------|------|
-| **vLLM** | 高吞吐 LLM 推理 | `09_Deployment_Inference/` ✅ 已存在 |
-| **TGI (Text Generation Inference)** | HuggingFace 推理服务 | `09_Deployment_Inference/` | P1 | 待创建 |
-| **TensorRT-LLM** | NVIDIA 推理优化 | `09_Deployment_Inference/` | P1 | 待创建 |
-| **SGLang** | 结构化生成推理 | `09_Deployment_Inference/` | P2 | 待创建 |
-| **LMDeploy** | 多后端推理服务 | `09_Deployment_Inference/` | P2 | 待创建 |
-| **llama.cpp** | 边缘/本地推理 | `09_Deployment_Inference/` | P2 | 待创建 |
-| **DeepSpeed-Inference** | 微软分布式推理 | `09_Deployment_Inference/` | P2 | 待创建 |
+| **vLLM** | 高吞吐 LLM 推理 | `10_Deployment_Inference/` ✅ 已存在 |
+| **TGI (Text Generation Inference)** | HuggingFace 推理服务 | `10_Deployment_Inference/` | P1 | 待创建 |
+| **TensorRT-LLM** | NVIDIA 推理优化 | `10_Deployment_Inference/` | P1 | 待创建 |
+| **SGLang** | 结构化生成推理 | `10_Deployment_Inference/` | P2 | 待创建 |
+| **LMDeploy** | 多后端推理服务 | `10_Deployment_Inference/` | P2 | 待创建 |
+| **llama.cpp** | 边缘/本地推理 | `10_Deployment_Inference/` | P2 | 待创建 |
+| **DeepSpeed-Inference** | 微软分布式推理 | `10_Deployment_Inference/` | P2 | 待创建 |
 
 ### 4.2 模型服务与部署平台
 
 | 产品 | 定位 | 建议位置 | 优先级 | 状态 |
 |------|------|----------|--------|------|
-| **KServe** | K8s 标准化推理平台 | `09_Deployment_Inference/` | P1 | 待创建 |
-| **BentoML** | 模型服务框架 | `09_Deployment_Inference/` ✅ 已存在 |
-| **Triton Inference Server** | NVIDIA 推理服务 | `09_Deployment_Inference/` | P2 | 待创建 |
-| **Modal** | 无服务器 GPU 平台 | `09_Deployment_Inference/` | P2 | 待创建 |
-| **Replicate** | 模型托管与 API | `09_Deployment_Inference/` | P2 | 待创建 |
-| **Fireworks AI** | 快速推理 API | `09_Deployment_Inference/` ✅ 已存在 |
+| **KServe** | K8s 标准化推理平台 | `10_Deployment_Inference/` | P1 | 待创建 |
+| **BentoML** | 模型服务框架 | `10_Deployment_Inference/` ✅ 已存在 |
+| **Triton Inference Server** | NVIDIA 推理服务 | `10_Deployment_Inference/` | P2 | 待创建 |
+| **Modal** | 无服务器 GPU 平台 | `10_Deployment_Inference/` | P2 | 待创建 |
+| **Replicate** | 模型托管与 API | `10_Deployment_Inference/` | P2 | 待创建 |
+| **Fireworks AI** | 快速推理 API | `10_Deployment_Inference/` ✅ 已存在 |
 
 ### 4.3 训练框架与工具
 
@@ -154,22 +154,22 @@ updated: "2026-06-16"
 
 | 产品 | 定位 | 建议位置 | 优先级 | 状态 |
 |------|------|----------|--------|------|
-| **Chroma** | 向量数据库 | `11_RAG_Systems/` ✅ 已存在 |
-| **Milvus/Zilliz** | 分布式向量数据库 | `11_RAG_Systems/` | P1 | 待创建 |
-| **Weaviate** | 向量搜索引擎 | `11_RAG_Systems/` | P2 | 待创建 |
-| **Qdrant** | 高性能向量数据库 | `11_RAG_Systems/` | P2 | 待创建 |
-| **pgvector** | Postgres 向量扩展 | `11_RAG_Systems/` | P2 | 待创建 |
-| **Pinecone** | 托管向量数据库 | `11_RAG_Systems/` | P2 | 待创建 |
+| **Chroma** | 向量数据库 | `14_RAG_Systems/` ✅ 已存在 |
+| **Milvus/Zilliz** | 分布式向量数据库 | `14_RAG_Systems/` | P1 | 待创建 |
+| **Weaviate** | 向量搜索引擎 | `14_RAG_Systems/` | P2 | 待创建 |
+| **Qdrant** | 高性能向量数据库 | `14_RAG_Systems/` | P2 | 待创建 |
+| **pgvector** | Postgres 向量扩展 | `14_RAG_Systems/` | P2 | 待创建 |
+| **Pinecone** | 托管向量数据库 | `14_RAG_Systems/` | P2 | 待创建 |
 
 ### 4.5 Agent 与工具编排
 
 | 产品 | 定位 | 建议位置 | 优先级 | 状态 |
 |------|------|----------|--------|------|
-| **LangChain** | LLM 应用框架 | `13_Agent_Production/` | P1 | 待创建 |
-| **LlamaIndex** | RAG/Agent 数据框架 | `13_Agent_Production/` | P1 | 待创建 |
-| **AutoGen** | 多 Agent 对话框架 | `13_Agent_Production/` | P1 | 待创建 |
-| **CrewAI** | 角色扮演 Agent 团队 | `13_Agent_Production/` | P2 | 待创建 |
-| **MCP (Model Context Protocol)** | 模型上下文协议 | `13_Agent_Production/` ✅ 已存在 |
+| **LangChain** | LLM 应用框架 | `15_Agent_Production/` | P1 | 待创建 |
+| **LlamaIndex** | RAG/Agent 数据框架 | `15_Agent_Production/` | P1 | 待创建 |
+| **AutoGen** | 多 Agent 对话框架 | `15_Agent_Production/` | P1 | 待创建 |
+| **CrewAI** | 角色扮演 Agent 团队 | `15_Agent_Production/` | P2 | 待创建 |
+| **MCP (Model Context Protocol)** | 模型上下文协议 | `15_Agent_Production/` ✅ 已存在 |
 
 ### 4.6 评估与基准
 
@@ -183,9 +183,9 @@ updated: "2026-06-16"
 
 | 产品 | 定位 | 建议位置 | 优先级 | 状态 |
 |------|------|----------|--------|------|
-| **HuggingFace Hub** | 模型/数据集仓库 | `10_MLOps_Pipeline/` | P1 | 待创建 |
-| **ModelScope** | 魔搭社区 | `10_MLOps_Pipeline/` | P2 | 待创建 |
-| **Safetensors** | 安全模型格式 | `10_MLOps_Pipeline/` ✅ 已存在 |
+| **HuggingFace Hub** | 模型/数据集仓库 | `11_MLOps_Pipeline/` | P1 | 待创建 |
+| **ModelScope** | 魔搭社区 | `11_MLOps_Pipeline/` | P2 | 待创建 |
+| **Safetensors** | 安全模型格式 | `11_MLOps_Pipeline/` ✅ 已存在 |
 | **HuggingFace Datasets** | 数据集工具 | `07_Model_Training/LLM_Data_Engineering/` | P2 | 待创建 |
 
 ### 4.8 云厂商 AI 平台
@@ -260,14 +260,14 @@ updated: "2026-06-16"
 |----------|----------|------|
 | 深度文档 | `{Topic}_Deep_Dive.md` | 最相关章节 |
 | 入门文档 | `{Topic}_for_dummy.md` | 最相关章节 |
-| 概念卡片 | `{kebab-case}.md` | `concepts/` |
+| 概念卡片 | `{kebab-case}.md` | `_concepts/` |
 | 运维/排错 | `{Topic}_Operation_Guide.md` / `{Topic}_Troubleshooting_Guide.md` | 对应章节 |
 
 ### 6.4 交叉链接
 
-- 关联到相关概念卡片（`concepts/`）。
+- 关联到相关概念卡片（`_concepts/`）。
 - 关联到相关章节深度文档。
-- 在 `synthesis/` 下创建跨域综合文档（如需要）。
+- 在 `_synthesis/` 下创建跨域综合文档（如需要）。
 
 ### 6.5 质量检查
 
@@ -304,9 +304,9 @@ updated: "YYYY-MM-DD"
 
 | 产品 | 深度文档 | 入门文档 | 概念卡片 |
 |------|---------|---------|---------|
-| KServe | `09_Deployment_Inference/KServe_Deep_Dive.md` | `09_Deployment_Inference/KServe_for_dummy.md` | `concepts/kserve.md` |
-| Ray | `07_Model_Training/Ray_Deep_Dive.md` | `07_Model_Training/Ray_for_dummy.md` | `concepts/ray.md` |
-| Prometheus | `16_AI_Ops/Prometheus_Deep_Dive.md` | `16_AI_Ops/Prometheus_for_dummy.md` | `concepts/prometheus.md` |
+| KServe | `10_Deployment_Inference/KServe_Deep_Dive.md` | `10_Deployment_Inference/KServe_for_dummy.md` | `_concepts/kserve.md` |
+| Ray | `07_Model_Training/Ray_Deep_Dive.md` | `07_Model_Training/Ray_for_dummy.md` | `_concepts/ray.md` |
+| Prometheus | `13_AI_Ops/Prometheus_Deep_Dive.md` | `13_AI_Ops/Prometheus_for_dummy.md` | `_concepts/prometheus.md` |
 
 ---
 

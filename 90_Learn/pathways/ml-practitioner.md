@@ -46,7 +46,7 @@ Phase 6: 完成端到端项目
 
 **🎯 目标**：补齐数学基础，理解为什么 AI 需要线性代数和概率统计。
 
-**📚 核心概念**：[Stage 1: 基础概念](../concepts/stage1-foundation.md)（重点关注损失函数、梯度下降相关概念）
+**📚 核心概念**：[Stage 1: 基础概念](../_concepts/stage1-foundation.md)（重点关注损失函数、梯度下降相关概念）
 
 **🔗 深入阅读**：
 - [线性代数（小白版）](../../01_Fundamentals/Linear_Algebra/Linear_Algebra_for_dummy.md)
@@ -66,7 +66,7 @@ Phase 6: 完成端到端项目
 
 **🎯 目标**：掌握经典 ML 的三大范式：监督学习、无监督学习、特征工程。
 
-**📚 核心概念**：[Stage 1](../concepts/stage1-foundation.md) + [Stage 2 前半](../concepts/stage2-core-tech.md)
+**📚 核心概念**：[Stage 1](../_concepts/stage1-foundation.md) + [Stage 2 前半](../_concepts/stage2-core-tech.md)
 
 **🔗 深入阅读**：
 - [监督学习（小白版）](../../02_Machine_Learning/Supervised_Learning/Supervised_Learning_for_dummy.md)
@@ -91,12 +91,12 @@ Phase 6: 完成端到端项目
 
 **🎯 目标**：理解神经网络、反向传播、CNN、Transformer 的工作原理。
 
-**📚 核心概念**：[Stage 2: 核心技术](../concepts/stage2-core-tech.md)
+**📚 核心概念**：[Stage 2: 核心技术](../_concepts/stage2-core-tech.md)
 
 **🔗 深入阅读**：
 - [神经网络核心（小白版）](../../03_Deep_Learning/Neural_Network_Core/Neural_Network_Core_for_dummy.md)
 - [优化（小白版）](../../03_Deep_Learning/Optimization/Optimization_for_dummy.md)
-- [Transformer 革命（小白版）](../../04_NLP_LLMs/Transformer_Revolution/Transformer_Revolution_for_dummy.md)
+- [Transformer 革命（小白版）](../../05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution_for_dummy.md)
 
 **💡 动手实践建议**：
 - 用 PyTorch 实现一个简单的手写数字识别（MNIST）
@@ -117,18 +117,18 @@ Phase 6: 完成端到端项目
 
 #### 方向 A: NLP / 大模型（推荐）
 
-- [序列模型（小白版）](../../04_NLP_LLMs/Sequence_Models/Sequence_Models_for_dummy.md)
-- [LLM 架构（小白版）](../../04_NLP_LLMs/LLM_Architectures/LLM_Architectures_for_dummy.md)
-- [微调技术（小白版）](../../04_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques_for_dummy.md)
-- [提示词工程（小白版）](../../04_NLP_LLMs/Prompt_Engineering/Prompt_Engineering_for_dummy.md)
+- [序列模型（小白版）](../../05_NLP_LLMs/Sequence_Models/Sequence_Models_for_dummy.md)
+- [LLM 架构（小白版）](../../05_NLP_LLMs/LLM_Architectures/LLM_Architectures_for_dummy.md)
+- [微调技术（小白版）](../../05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques_for_dummy.md)
+- [提示词工程（小白版）](../../05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering_for_dummy.md)
 
 **动手项目**：用 Hugging Face PEFT 库对 LLaMA 做 LoRA 微调
 
 #### 方向 B: 计算机视觉
 
-- [图像分类与检测（小白版）](../../05_Computer_Vision/Image_Classification_Detection/Image_Classification_Detection_for_dummy.md)
-- [生成模型（小白版）](../../05_Computer_Vision/Generative_Models/Generative_Models_for_dummy.md)
-- [多模态视觉（小白版）](../../05_Computer_Vision/Multimodal_Vision/Multimodal_Vision_for_dummy.md)
+- [图像分类与检测（小白版）](../../04_Computer_Vision/Image_Classification_Detection/Image_Classification_Detection_for_dummy.md)
+- [生成模型（小白版）](../../04_Computer_Vision/Generative_Models/Generative_Models_for_dummy.md)
+- [多模态视觉（小白版）](../../04_Computer_Vision/Multimodal_Vision/Multimodal_Vision_for_dummy.md)
 
 **动手项目**：用 diffusers 库跑一遍 Stable Diffusion 图像生成
 
@@ -145,14 +145,14 @@ Phase 6: 完成端到端项目
 
 **🎯 目标**：掌握将模型部署上线的完整工程能力。
 
-**📚 核心概念**：[Stage 3: 工程实践](../concepts/stage3-engineering.md)
+**📚 核心概念**：[Stage 3: 工程实践](../_concepts/stage3-engineering.md)
 
 **🔗 深入阅读**：
-- [部署与推理（小白版）](../../09_Deployment_Inference/Deployment_Inference_for_dummy.md)
-- [RAG 系统（小白版）](../../11_RAG_Systems/RAG_Systems_for_dummy.md)
-- [MLOps 流水线（小白版）](../../10_MLOps_Pipeline/MLOps_Pipeline_for_dummy.md)
+- [部署与推理（小白版）](../../10_Deployment_Inference/Deployment_Inference_for_dummy.md)
+- [RAG 系统（小白版）](../../14_RAG_Systems/RAG_Systems_for_dummy.md)
+- [MLOps 流水线（小白版）](../../11_MLOps_Pipeline/MLOps_Pipeline_for_dummy.md)
 - [模型评估（小白版）](../../08_Model_Evaluation/Model_Evaluation_for_dummy.md)
-- [AI 工作流（速查版）](../../13_Agent_Production/Agent_Workflow/Workflow-in-nutshell.md)
+- [AI 工作流（速查版）](../../15_Agent_Production/Agent_Workflow/Workflow-in-nutshell.md)
 
 **💡 动手实践建议**：
 - 用 vLLM 部署一个开源 LLM（如 Qwen），测试其推理性能
@@ -194,7 +194,7 @@ Phase 6: 完成端到端项目
 |---------|---------|
 | 想专注 LLM 应用开发 | [LLM 工程师路径](./llm-engineer.md) |
 | 想做 AI 研究/读论文 | [AI 研究者路径](./ai-researcher.md) |
-| 想系统评估/测试 AI | [Agent 评估框架](../../13_Agent_Production/16_Agent_Evaluation/README.md) |
+| 想系统评估/测试 AI | [Agent 评估框架](../../15_Agent_Production/Agent_Evaluation/README.md) |
 
 ---
 

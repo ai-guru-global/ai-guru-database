@@ -1,0 +1,52 @@
+---
+title: Data Scientist 按公司/级别区分的题库
+category: 23-interviews-data-scientist
+tags: ["interviews", "career", "experience", "practitioners"]
+summary: "指标体系与实验平台如何设计？"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
+# Data Scientist 按公司/级别区分的题库
+
+## 公司类型
+### 大厂/平台型
+- 指标体系与实验平台如何设计？
+- 多产品线如何统一指标口径与治理？
+
+### 创业公司/中小团队
+- 如何在数据不完整情况下做决策？
+- 如何快速建立关键指标与报表？
+
+### 研究机构/算法团队
+- 评测基准与统计显著性如何把控？
+- 如何将分析结果转化为模型改进？
+
+### 具体公司（示例）
+- **字节跳动**: 在高速迭代与大规模业务场景下，该岗位如何平衡效果、成本与稳定性？
+- **腾讯**: 多业务线协同下如何统一标准并推动落地？
+- **Meta**: 开源与隐私合规并重时，该岗位如何处理权衡？
+- **OpenAI**: 面向高影响系统时如何强化安全与质量保障？
+
+## 级别
+### 初级 (Junior)
+- 基础统计与常用分析方法。
+- SQL 与报表逻辑能力。
+
+### 中级 (Mid)
+- 实验设计与指标拆解能力。
+- 业务问题建模与复盘能力。
+
+### 高级/负责人 (Senior/Lead)
+- 指标体系与数据治理规划。
+- 跨团队推动与影响力。
+
+---
+*Last updated: 2026-02-26*
+
+## Related
+
+- [[21_Interviews/AI_Data_Analyst/company_level_question_bank]] — AI Data Analyst 按公司/级别区分的题库 (共享: career, experience, interviews, practitioners)
+- [[21_Interviews/AI_Data_Analyst/interview_answers]] — AI Data Analyst 面试题实例答案 (共享: career, experience, interviews, practitioners)
+- [[21_Interviews/AI_Data_Analyst/interview_preparing]] — AI Data Analyst 面试准备 (共享: career, experience, interviews, practitioners)
+- [[21_Interviews/AI_Data_Analyst/question_bank]] — AI Data Analyst 题库 (共享: career, experience, interviews, practitioners)

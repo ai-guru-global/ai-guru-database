@@ -718,7 +718,7 @@ python demo.py
 对经典 AI 论文的完整解读，帮助读者从论文源头理解技术演进。
 
 ### 文件位置
-`22_Papers/Paper_Name_Deep_Dive.md`
+`20_Papers/Paper_Name_Deep_Dive.md`
 
 ### 模板结构
 
@@ -827,7 +827,7 @@ flowchart TB
 特定行业的 AI 应用方案，包含行业背景、核心场景、技术方案、案例研究、合规要求和 ROI 分析。
 
 ### 文件位置
-`20_AI_Applications_Industry/Industry_Name/AI_Industry_Name_2026.md`
+`18_AI_Applications_Industry/Industry_Name/AI_Industry_Name_2026.md`
 
 ### 模板结构
 
@@ -914,7 +914,7 @@ flowchart TB
 ## 9. 与其他章节的关联
 
 - [相关技术](../XX_Technology/README.md)
-- [伦理安全](../../19_Ethics_Safety/README.md)
+- [伦理安全](../../17_Ethics_Safety/README.md)
 
 ---
 
@@ -938,7 +938,7 @@ flowchart TB
 AI 领域领袖人物的简介、核心观点和动态追踪。
 
 ### 文件位置
-`21_Talks/Person_Name/about.md` + `21_Talks/Person_Name/sayings.md`
+`19_Talks/Person_Name/about.md` + `19_Talks/Person_Name/sayings.md`
 
 ### about.md 模板
 
@@ -959,7 +959,7 @@ AI 领域领袖人物的简介、核心观点和动态追踪。
 
 ## 相关主题与延伸阅读
 
-- [Talks Synthesis 2026](../21_Talks/Talks_Synthesis_2026.md) — 查看 [姓名] 在 Scaling Laws、AI 安全等主题中的立场
+- [Talks Synthesis 2026](../19_Talks/Talks_Synthesis_2026.md) — 查看 [姓名] 在 Scaling Laws、AI 安全等主题中的立场
 - [AI 历史](../../00_AI_Introduction/AI_History_Timeline.md) — [姓名] 的关键贡献时间线
 - [AI 未来趋势](../../00_AI_Introduction/AI_Future_Trends.md) — 行业前瞻判断汇总
 
@@ -997,7 +997,7 @@ AI 领域领袖人物的简介、核心观点和动态追踪。
 为特定 AI 岗位提供面试准备资料，包含职责、能力要求、考点和题库。
 
 ### 文件位置
-`23_Interviews/Job_Title/interview_preparing.md` 等
+`21_Interviews/Job_Title/interview_preparing.md` 等
 
 ### interview_preparing.md 模板
 

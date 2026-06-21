@@ -214,7 +214,7 @@ flowchart TB
 
 - [Spring AI 深度解析](./Spring_AI_Deep_Dive.md) — 完整技术细节
 - [Java Ecosystem AI Overview](./Java_Ecosystem_AI_Overview.md) — 生态全景
-- [部署推理](../../09_Deployment_Inference/JVM_AI_Deployment.md) — Java 模型部署
+- [部署推理](../../10_Deployment_Inference/JVM_AI_Deployment.md) — Java 模型部署
 
 ---
 

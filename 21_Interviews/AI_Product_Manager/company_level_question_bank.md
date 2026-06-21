@@ -1,0 +1,52 @@
+---
+title: AI Product Manager 按公司/级别区分的题库
+category: 23-interviews-ai-product-manager
+tags: ["interviews", "career", "experience", "practitioners"]
+summary: "如何做跨团队产品路线与资源协调？"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
+# AI Product Manager 按公司/级别区分的题库
+
+## 公司类型
+### 大厂/平台型
+- 如何做跨团队产品路线与资源协调？
+- 如何设定平台级指标与评测门禁？
+
+### 创业公司/中小团队
+- 如何快速验证 AI 产品的 PMF？
+- 如何在成本受限下做功能取舍？
+
+### 研究机构/实验室
+- 研究成果如何转化为可交付能力？
+- 如何定义研究型产品的评价标准？
+
+### 具体公司（示例）
+- **字节跳动**: 在高速迭代与大规模业务场景下，该岗位如何平衡效果、成本与稳定性？
+- **腾讯**: 多业务线协同下如何统一标准并推动落地？
+- **Meta**: 开源与隐私合规并重时，该岗位如何处理权衡？
+- **OpenAI**: 面向高影响系统时如何强化安全与质量保障？
+
+## 级别
+### 初级 (Junior)
+- PRD 与指标设计基础。
+- 基本模型能力理解。
+
+### 中级 (Mid)
+- 项目管理与跨团队推进能力。
+- 评测与上线策略设计能力。
+
+### 高级/负责人 (Senior/Lead)
+- 产品路线规划与商业化策略。
+- 风险控制与合规治理能力。
+
+---
+*Last updated: 2026-02-26*
+
+## Related
+
+- [[21_Interviews/AI_Data_Analyst/company_level_question_bank]] — AI Data Analyst 按公司/级别区分的题库 (共享: career, experience, interviews, practitioners)
+- [[21_Interviews/AI_Data_Analyst/interview_answers]] — AI Data Analyst 面试题实例答案 (共享: career, experience, interviews, practitioners)
+- [[21_Interviews/AI_Data_Analyst/interview_preparing]] — AI Data Analyst 面试准备 (共享: career, experience, interviews, practitioners)
+- [[21_Interviews/AI_Data_Analyst/question_bank]] — AI Data Analyst 题库 (共享: career, experience, interviews, practitioners)

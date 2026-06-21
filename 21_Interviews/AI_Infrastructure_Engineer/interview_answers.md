@@ -1,0 +1,29 @@
+---
+title: AI Infrastructure Engineer 面试题实例答案
+category: 23-interviews-ai-infrastructure-engineer
+tags: ["interviews", "career", "experience", "practitioners"]
+summary: "**答**：先从 I/O、网络与调度层定位瓶颈，再检查热点节点与资源竞争；使用 profiling 与监控指标追踪变化，并逐步回滚最近变更验证影响。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
+# AI Infrastructure Engineer 面试题实例答案
+
+## Q1: 训练集群性能退化如何排查？
+**答**：先从 I/O、网络与调度层定位瓶颈，再检查热点节点与资源竞争；使用 profiling 与监控指标追踪变化，并逐步回滚最近变更验证影响。
+
+## Q2: 如何设计资源调度与隔离？
+**答**：采用配额与优先级策略、支持多租户隔离；结合弹性扩缩与容量规划保证关键任务稳定性。
+
+## Q3: 数据管道瓶颈如何优化？
+**答**：优化数据预处理并行度与缓存策略，使用高吞吐存储与并行读取；对热数据做本地缓存或分层存储。
+
+---
+*Last updated: 2026-02-26*
+
+## Related
+
+- [[21_Interviews/AI_Data_Analyst/company_level_question_bank]] — AI Data Analyst 按公司/级别区分的题库 (共享: career, experience, interviews, practitioners)
+- [[21_Interviews/AI_Data_Analyst/interview_answers]] — AI Data Analyst 面试题实例答案 (共享: career, experience, interviews, practitioners)
+- [[21_Interviews/AI_Data_Analyst/interview_preparing]] — AI Data Analyst 面试准备 (共享: career, experience, interviews, practitioners)
+- [[21_Interviews/AI_Data_Analyst/question_bank]] — AI Data Analyst 题库 (共享: career, experience, interviews, practitioners)

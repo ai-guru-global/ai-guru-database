@@ -38,7 +38,7 @@ tier: "supporting"
 | 机器学习 | 16 章 + 总结 | `docs/ml/` | [[02_Machine_Learning/ApacheCN_Machine_Learning_Track]] |
 | PyTorch | 约 28 篇 | `docs/pytorch/` | [[03_Deep_Learning/ApacheCN_PyTorch_Track]] |
 | TensorFlow 2.x | 10 章 | `docs/tf2/` | [[03_Deep_Learning/ApacheCN_TensorFlow_Track]] |
-| 自然语言处理 | 16 章 | `docs/nlp/` | [[04_NLP_LLMs/ApacheCN_NLP_Track]] |
+| 自然语言处理 | 16 章 | `docs/nlp/` | [[05_NLP_LLMs/ApacheCN_NLP_Track]] |
 | 其他补充 | misc 10 + faq 2 + report 1 | `docs/misc/` 等 | 见下方说明 |
 
 ## 推荐学习路径
@@ -46,7 +46,7 @@ tier: "supporting"
 1. **数学与工具基础** → [[01_Fundamentals/ApacheCN_Data_Analysis_Track]] + [[01_Fundamentals/ApacheCN_Linear_Algebra_Track]]
 2. **经典机器学习** → [[02_Machine_Learning/ApacheCN_Machine_Learning_Track]] + [[02_Machine_Learning/README]]
 3. **深度学习框架（二选一）** → [[03_Deep_Learning/ApacheCN_PyTorch_Track]] 或 [[03_Deep_Learning/ApacheCN_TensorFlow_Track]]
-4. **自然语言处理** → [[04_NLP_LLMs/ApacheCN_NLP_Track]] + [[04_NLP_LLMs/README]]
+4. **自然语言处理** → [[05_NLP_LLMs/ApacheCN_NLP_Track]] + [[05_NLP_LLMs/README]]
 
 ## 各主线速览
 
@@ -65,7 +65,7 @@ MIT 18.06 的中文笔记，从方程组几何解释到 SVD、伪逆，是理解
 ### [[03_Deep_Learning/ApacheCN_TensorFlow_Track|TensorFlow 2.x]]
 《Sklearn 与 TensorFlow 机器学习实用指南》第二版节选，使用 Keras 讲解 ANN、CNN、RNN/Attention、GAN、RL 与部署。
 
-### [[04_NLP_LLMs/ApacheCN_NLP_Track|自然语言处理]]
+### [[05_NLP_LLMs/ApacheCN_NLP_Track|自然语言处理]]
 基于 NLTK 的《Python 自然语言处理》第二版，讲解语料、分词、标注、分类、句法/语义分析与语言学数据管理。
 
 ## 其他资料
@@ -76,6 +76,6 @@ MIT 18.06 的中文笔记，从方程组几何解释到 SVD、伪逆，是理解
 
 ## 相关页面
 
-- [[references/apachecn-ailearning]] — 外部源引用索引
+- [[_references/apachecn-ailearning]] — 外部源引用索引
 - [[00_AI_Introduction/AI_Learning_Resources]] — AI 学习资源与方法论
 - [[90_Learn/guides/learning_paths_2026]] — 本库学习路径总览

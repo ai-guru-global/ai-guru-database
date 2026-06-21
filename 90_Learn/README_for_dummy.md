@@ -95,7 +95,7 @@ Stage 0: AI 觉醒 ─── AI 定义 · 三大类型 · 能力边界 · 经典
 | [职业角色路径指南](./guides/learning_paths_2026.md) | 5 大职业角色学习路径全景 |
 | [AI 工程路线图](./guides/ai_engineering_roadmap_2026.md) | 免费资源精选路线图 |
 | [外部课程映射](./courses/) | 18 门外部课程章节映射 |
-| [概念层次卡片](./concepts/) | Stage 0-4 核心概念卡片 |
+| [概念层次卡片](./_concepts/) | Stage 0-4 核心概念卡片 |
 | [里程碑自测](./guides/milestones.md) | 每个 Stage 的自测问题 |
 | [概念知识图谱](../91_Notes/AI_Concept_Knowledge_Graph.md) | 1300+ 概念的依赖关系图 |
 
@@ -133,8 +133,8 @@ Stage 0: AI 觉醒 ─── AI 定义 · 三大类型 · 能力边界 · 经典
 - [[90_Learn/guides/learning_paths_2026|AI Guru 学习路径指南]]
 - [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程学习路线图 2026]]
 - [[90_Learn/guides/milestones|里程碑自测]]
-- [[90_Learn/concepts/stage0_awakening|Stage 0: AI 觉醒]]
-- [[90_Learn/concepts/stage1_foundation|Stage 1: 基础概念]]
-- [[90_Learn/concepts/stage2_core_tech|Stage 2: 核心技术]]
-- [[90_Learn/concepts/stage3_engineering|Stage 3: 工程实践]]
-- [[90_Learn/concepts/stage4_frontier|Stage 4: 前沿探索]]
+- [[90_Learn/_concepts/stage0_awakening|Stage 0: AI 觉醒]]
+- [[90_Learn/_concepts/stage1_foundation|Stage 1: 基础概念]]
+- [[90_Learn/_concepts/stage2_core_tech|Stage 2: 核心技术]]
+- [[90_Learn/_concepts/stage3_engineering|Stage 3: 工程实践]]
+- [[90_Learn/_concepts/stage4_frontier|Stage 4: 前沿探索]]

@@ -125,4 +125,4 @@ Agentic RL 旨在赋予 LLM Agent 以下能力 ^[extracted]：
 - [[07_Model_Training/TRL_RLHF_DPO_Guide]] — TRL RLHF/DPO 实战
 - [[06_Reinforcement_Learning/RL_Fundamentals]] — 强化学习基础
 - [[06_Reinforcement_Learning/Deep_RL/README]] — 深度强化学习
-- [[13_Agent_Production/Hello_Agents_L04_ReAct]] — ReAct 多步推理范式
+- [[15_Agent_Production/Hello_Agents_L04_ReAct]] — ReAct 多步推理范式

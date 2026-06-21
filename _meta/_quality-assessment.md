@@ -95,7 +95,7 @@ baseline: _project-evaluation.md
 | 00–09 (核心) | ✅ 全 | ✅ 全 | ✅ 全 | ✅ |
 | 10_MLOps | ✅ | ✅ | ✅ | ⚠️ 偏少 |
 | 11–20 (工程) | ✅ 全 | ✅ 全 | 7/10 | ✅ |
-| 21_Talks/22_Papers/23_Interviews | ✅ 全 | ✅ 全 | ❌ 全缺 | — (按体裁合理) |
+| 19_Talks/20_Papers/23_Interviews | ✅ 全 | ✅ 全 | ❌ 全缺 | — (按体裁合理) |
 | 90_Learn/91_Notes | ✅ | ✅ | ❌ | — |
 | 92_Plan/93_Tools/94_Visualization | ✅ 全 | ✅ 全 | ❌ | — |
 
@@ -109,7 +109,7 @@ baseline: _project-evaluation.md
 |------|------|------|
 | **广度 (Coverage)** | ⭐⭐⭐⭐⭐ | 29 章覆盖 AI 全栈：数学基础 → 训练 → 部署 → Agent → 安全 → 行业应用 |
 | **深度 (Depth)** | ⭐⭐⭐⭐☆ | 122 篇 >5000 词长文；MLOps(10)、Testing(15)、references 仍偏浅 |
-| **结构 (Structure)** | ⭐⭐⭐⭐⭐ | 三层入口（README/for_dummy/nutshell）+ 编号目录 + concepts/synthesis 辅助层 |
+| **结构 (Structure)** | ⭐⭐⭐⭐⭐ | 三层入口（README/for_dummy/nutshell）+ 编号目录 + _concepts/synthesis 辅助层 |
 | **交叉引用 (Cross-refs)** | ⭐⭐⭐⭐⭐ | 6,925 wikilinks，0 损坏链接，12 孤立页（仅 meta） |
 | **时效性 (Freshness)** | ⭐⭐⭐⭐⭐ | 2026 前沿（GPT-5.2、MCP/A2A、Veo3、JEPA、GRPO、Vibe Coding） |
 | **元数据 (Metadata)** | ⭐⭐⭐☆☆ | Frontmatter 100%，但 778/865 缺 `tier:`；4 处统计互相矛盾 |
@@ -124,10 +124,10 @@ baseline: _project-evaluation.md
 
 | # | 缺口 | 严重度 | 建议动作 |
 |---|------|--------|---------|
-| 1 | `10_MLOps_Pipeline` 仅 13 文件/1.4 万词，相对全栈比例严重不足 | 🔴 高 | 补充 Feature Store / Model Registry / CI/CD for ML / Drift Detection |
-| 2 | `15_Testing` 12 文件，相比 `13_Agent_Production` 的 16_Agent_Evaluation 子目录（也是测试）体量失衡 | 🟡 中 | 整合或明确分工：传统 ML 测试 vs Agent 评估 |
-| 3 | `references/` 21 文件、仅 3.6k 词，主要是索引页，缺乏深度参考文献 | 🟡 中 | 选 5-10 个核心参考升格为 annotated bibliography |
-| 4 | `synthesis/` 28 页均字 ~395 词，合成页深度不足 | 🟡 中 | 合成页应 >1000 词，含跨域洞察而非仅链接 |
+| 1 | `11_MLOps_Pipeline` 仅 13 文件/1.4 万词，相对全栈比例严重不足 | 🔴 高 | 补充 Feature Store / Model Registry / CI/CD for ML / Drift Detection |
+| 2 | `09_Testing` 12 文件，相比 `15_Agent_Production` 的 Agent_Evaluation 子目录（也是测试）体量失衡 | 🟡 中 | 整合或明确分工：传统 ML 测试 vs Agent 评估 |
+| 3 | `_references/` 21 文件、仅 3.6k 词，主要是索引页，缺乏深度参考文献 | 🟡 中 | 选 5-10 个核心参考升格为 annotated bibliography |
+| 4 | `_synthesis/` 28 页均字 ~395 词，合成页深度不足 | 🟡 中 | 合成页应 >1000 词，含跨域洞察而非仅链接 |
 | 5 | 21_Talks / 22_Papers / 23_Interviews 三个章节字数密度低（均 <300 词/篇） | 🟢 低 | 按体裁可接受，但建议每篇补"核心洞察"段 |
 
 ### 4.2 元数据与治理缺口 ⚠️
@@ -137,7 +137,7 @@ baseline: _project-evaluation.md
 | 1 | **页面计数四源不一致**: hot(1046) / manifest(1073) / log(1038) / wiki-status(865) | 自动化 pipeline 失灵，可信度受损 |
 | 2 | 778/865 wiki 页面缺 `tier:` 分级 | 无法做 token 预算、查询优先级 |
 | 3 | `_raw/` 累积 3,612 个原始源文件未消化 | staging → promotion 通道堵塞 |
-| 4 | `13_Agent_Production` 混入 `src/` `tests/` `config/` 代码目录 | 知识库与代码项目边界模糊 |
+| 4 | `15_Agent_Production` 混入 `src/` `tests/` `config/` 代码目录 | 知识库与代码项目边界模糊 |
 | 5 | 6 月仅 1 个 git commit，4000+ 文件未入库 | 单点故障即丢失大量工作 |
 
 ### 4.3 06-03 缺口分析的完成度 ✅
@@ -163,17 +163,17 @@ baseline: _project-evaluation.md
 | # | 动作 | 章节 | 预计工时 | 影响 |
 |---|------|------|---------|------|
 | 4 | 给 778 个未分级页面批量补 `tier:`（先按目录启发式） | 全库 | 4h | 高 |
-| 5 | 扩充 `10_MLOps_Pipeline`：新增 4 篇核心长文 | 10 | 8h | 高 |
-| 6 | 把 `13_Agent_Production/src|tests|config` 迁出到独立 `13_Agent_Production/_code/` 或外移 | 13 | 1h | 中 |
-| 7 | 选 10 篇 `synthesis/` 扩写到 >1000 词，加入跨域结论 | synthesis | 6h | 中 |
+| 5 | 扩充 `11_MLOps_Pipeline`：新增 4 篇核心长文 | 10 | 8h | 高 |
+| 6 | 把 `15_Agent_Production/src|tests|config` 迁出到独立 `15_Agent_Production/_code/` 或外移 | 13 | 1h | 中 |
+| 7 | 选 10 篇 `_synthesis/` 扩写到 >1000 词，加入跨域结论 | synthesis | 6h | 中 |
 | 8 | 清理 `_raw/` 中已 promote 的源文件（对照 manifest） | `_raw/` | 2h | 中 |
 
 ### 🟢 P2 — 增强（持续）
 
 | # | 动作 | 章节 | 预计工时 | 影响 |
 |---|------|------|---------|------|
-| 9 | 给 `references/` 选 5-10 篇做 annotated bibliography | references | 4h | 中 |
-| 10 | 21_Talks/22_Papers 每篇补"核心洞察 100 词"段 | 21/22 | 4h | 低 |
+| 9 | 给 `_references/` 选 5-10 篇做 annotated bibliography | references | 4h | 中 |
+| 10 | 19_Talks/22_Papers 每篇补"核心洞察 100 词"段 | 21/22 | 4h | 低 |
 | 11 | 给 11 个缺 in-nutshell 的应用/资源章节补 1 页速览 | 20/21/22/23 | 4h | 低 |
 | 12 | 建立 `_tools/count_words.py` CI hook 自动更新 README badge | CI | 2h | 中 |
 
@@ -210,15 +210,15 @@ baseline: _project-evaluation.md
 | 文件 | 字数 |
 |------|------|
 | 91_Notes/AI_Concept_Knowledge_Graph.md | 7,918 |
-| 09_Deployment_Inference/Quantization_Techniques_2026.md | 6,859 |
+| 10_Deployment_Inference/Quantization_Techniques_2026.md | 6,859 |
 | 07_Model_Training/Tokenizer_Design_2026.md | 6,769 |
-| 04_NLP_LLMs/Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive.md | 6,761 |
+| 05_NLP_LLMs/Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive.md | 6,761 |
 | 07_Model_Training/Data_Curation_and_Mixture_2026.md | 6,695 |
-| 04_NLP_LLMs/Global_LLM_Ecosystem/OpenAI_Deep_Dive.md | 6,694 |
+| 05_NLP_LLMs/Global_LLM_Ecosystem/OpenAI_Deep_Dive.md | 6,694 |
 | 01_Fundamentals/AI_Hardware/NVIDIA_AMD_GPU_Deep_Dive.md | 6,612 |
 | 91_Notes/AI_Full_Stack_Concepts.md | 6,514 |
 | 07_Model_Training/GRPO_and_New_Alignment_Methods.md | 5,895 |
-| 04_NLP_LLMs/Global_LLM_Ecosystem/Anthropic_Claude_Deep_Dive.md | 5,824 |
+| 05_NLP_LLMs/Global_LLM_Ecosystem/Anthropic_Claude_Deep_Dive.md | 5,824 |
 
 ---
 
@@ -244,7 +244,7 @@ baseline: _project-evaluation.md
 1. **`git add -A && git commit`** — 先抢救未提交的 4000+ 文件变更
 2. **运行 `/wiki-status`** — 重新生成统计并修正四源不一致
 3. **运行 `/wiki-lint --consolidate`** — 治理 778 个未分级页面与可能的内容重复
-4. **针对 `10_MLOps_Pipeline` 运行 `/wiki-research`** — 自动研究并补充流水线缺口
+4. **针对 `11_MLOps_Pipeline` 运行 `/wiki-research`** — 自动研究并补充流水线缺口
 5. **下次评估**: 一个月后（2026-07-15），重点验证元数据同步机制是否落地
 
 ---

@@ -787,7 +787,7 @@ SWE-bench 是目前最贴近真实软件工程的代码评测基准。
 | Claude 3.5 Sonnet + Agent | ~49% | ~72% | 2024-10 |
 | o3 + SWE-Agent | — | ~76% | 2025-01 |
 
-> **相关文档**: 关于代码生成模型的详细评测，请参阅 [Global_LLM_Ecosystem/README.md](../04_NLP_LLMs/Global_LLM_Ecosystem/README.md)。
+> **相关文档**: 关于代码生成模型的详细评测，请参阅 [Global_LLM_Ecosystem/README.md](../05_NLP_LLMs/Global_LLM_Ecosystem/README.md)。
 
 ---
 
@@ -1505,8 +1505,8 @@ settings:
 | 长上下文评测 | [Long_Context_Evaluation.md](./Long_Context_Evaluation.md) | Needle-in-Haystack, RULER, LongBench 等长窗口专项评测 |
 | 多模态评测 | [Multimodal_Evaluation_Benchmarks.md](./Multimodal_Evaluation_Benchmarks.md) | MMMU, MathVista, ChartQA 等视觉+语言基准 |
 | LLM-as-Judge | [LLM_as_Judge_Deep_Dive.md](./LLM_as_Judge_Deep_Dive.md) | GPT-4 评委、Pairwise Comparison、评委偏差分析 |
-| 全球 LLM 生态 | [Global_LLM_Ecosystem/README.md](../04_NLP_LLMs/Global_LLM_Ecosystem/README.md) | GPT-4, Claude, Gemini 等模型的全面对比 |
-| 中国 LLM 生态 | [Chinese_LLM_Ecosystem/README.md](../04_NLP_LLMs/Chinese_LLM_Ecosystem/README.md) | 通义千问、DeepSeek、GLM 等中国模型评测 |
+| 全球 LLM 生态 | [Global_LLM_Ecosystem/README.md](../05_NLP_LLMs/Global_LLM_Ecosystem/README.md) | GPT-4, Claude, Gemini 等模型的全面对比 |
+| 中国 LLM 生态 | [Chinese_LLM_Ecosystem/README.md](../05_NLP_LLMs/Chinese_LLM_Ecosystem/README.md) | 通义千问、DeepSeek、GLM 等中国模型评测 |
 
 ---
 
@@ -1514,4 +1514,4 @@ settings:
 
 ## 延伸阅读
 
-- [[synthesis/benchmark-evaluation|评测基准 × 评测方法论：从分数到可信评估]]
+- [[_synthesis/benchmark-evaluation|评测基准 × 评测方法论：从分数到可信评估]]

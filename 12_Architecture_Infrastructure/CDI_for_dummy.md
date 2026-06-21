@@ -125,4 +125,4 @@ flowchart LR
 - [[12_Architecture_Infrastructure/Architecture_Infrastructure_for_dummy|架构基础设施 - 小白版]]
 - [[12_Architecture_Infrastructure/README|架构与基础设施]]
 - [[01_Fundamentals/AI_Hardware/Chinese_AI_Chips_Deep_Dive|国产 AI 芯片（CDI 的最大受益者）]]
-- [[concepts/cdi|CDI 概念卡片]]
+- [[_concepts/cdi|CDI 概念卡片]]

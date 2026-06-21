@@ -112,7 +112,7 @@ updated: 2026-05-31
 - [[02_Machine_Learning/Supervised_Learning/Supervised_Learning]] — Supervised_Learning
 - [[02_Machine_Learning/Ensemble_Learning/Ensemble_Learning_for_dummy]] — Ensemble_Learning_for_dummy
 - [[02_Machine_Learning/README_for_dummy.md|README_for_dummy]]
-- [[concepts/feature-engineering.md|feature-engineering]]
+- [[_concepts/feature-engineering.md|feature-engineering]]
 
 ## 相关页面
 - [[02_Machine_Learning/Bayesian_Methods/Bayesian_Methods_Deep_Dive|贝叶斯方法深度解读: 从贝叶斯定理到概率编程]]
@@ -120,15 +120,15 @@ updated: 2026-05-31
 - [[02_Machine_Learning/Causal_Inference/Causal_Inference_Deep_Dive|因果推断深度解读: 从相关到因果的 AI 新范式]]
 - [[02_Machine_Learning/Causal_Inference/README|因果推断 (Causal Inference)]]
 
-- [[concepts/recommendation-systems|Recommendation Systems]]
+- [[_concepts/recommendation-systems|Recommendation Systems]]
 
-- [[concepts/time-series-analysis|Time Series Analysis]]
+- [[_concepts/time-series-analysis|Time Series Analysis]]
 
-- [[concepts/automl|Automl]]
+- [[_concepts/automl|Automl]]
 
-- [[concepts/ensemble-learning|Ensemble Learning]]
+- [[_concepts/ensemble-learning|Ensemble Learning]]
 
-- [[concepts/anomaly-detection|Anomaly Detection]]
+- [[_concepts/anomaly-detection|Anomaly Detection]]
 
 ## 相关资源
 

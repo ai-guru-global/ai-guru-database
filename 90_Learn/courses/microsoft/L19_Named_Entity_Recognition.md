@@ -93,7 +93,7 @@ updated: "2026-06-12"
 - **不覆盖**：条件随机场（CRF）这一经典序列建模层。虽然很多工业 NER 会在 BiLSTM 后接 CRF 以约束标签转移，但本课只讲基础的 LSTM 词元分类。
 - **不覆盖**：大规模通用 NER 工具（如 spaCy、Hugging Face `token-classification` pipeline）的工程细节，这些在本库其他页面有更详细介绍。
 - **延伸**：可阅读 Andrej Karpathy 的博客《[The Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)》，理解 RNN 为什么能处理序列任务。
-- **延伸**：进一步了解本库 [[04_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques]] 中关于 BERT 微调的实践细节。
+- **延伸**：进一步了解本库 [[05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques]] 中关于 BERT 微调的实践细节。
 
 ---
 
@@ -101,5 +101,5 @@ updated: "2026-06-12"
 
 - 课程索引：[[90_Learn/courses/microsoft/microsoft_ai_for_beginners]]
 - 本库相关页面：
-  - [[04_NLP_LLMs/Sequence_Models/Sequence_Models]] —— RNN、LSTM 与序列建模基础
-  - [[04_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques]] —— 预训练模型微调实践
+  - [[05_NLP_LLMs/Sequence_Models/Sequence_Models]] —— RNN、LSTM 与序列建模基础
+  - [[05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques]] —— 预训练模型微调实践

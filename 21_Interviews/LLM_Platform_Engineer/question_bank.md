@@ -1,0 +1,40 @@
+---
+title: LLM Platform Engineer 题库
+category: 23-interviews-llm-platform-engineer
+tags: ["interviews", "career", "experience", "practitioners", "llm"]
+summary: "KV Cache 的作用与影响是什么？"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
+# LLM Platform Engineer 题库
+
+## 基础
+- KV Cache 的作用与影响是什么？
+- 批处理与流式输出如何权衡？
+- 常见推理加速方法有哪些？
+
+## 项目
+- 描述一个大模型服务平台的落地项目。
+- 如何进行吞吐与成本优化？
+- 如何进行模型版本与路由管理？
+
+## 系统设计
+- 设计一个多租户推理平台的架构。
+- 灰度发布与容量规划如何做？
+- 监控与计费体系如何设计？
+
+## 案例
+- 延迟突然升高如何排查？
+- 热点模型导致拥塞如何处理？
+- 模型升级后质量下降如何回滚？
+
+---
+*Last updated: 2026-02-26*
+
+## Related
+
+- [[21_Interviews/LLM_Platform_Engineer/company_level_question_bank]] — LLM Platform Engineer 按公司/级别区分的题库 (共享: career, experience, interviews, llm, practitioners)
+- [[21_Interviews/LLM_Platform_Engineer/interview_answers]] — LLM Platform Engineer 面试题实例答案 (共享: career, experience, interviews, llm, practitioners)
+- [[21_Interviews/LLM_Platform_Engineer/interview_preparing]] — LLM Platform Engineer 面试准备 (共享: career, experience, interviews, llm, practitioners)
+- [[21_Interviews/AI_Data_Analyst/company_level_question_bank]] — AI Data Analyst 按公司/级别区分的题库 (共享: career, experience, interviews, practitioners)

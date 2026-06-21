@@ -371,9 +371,9 @@ flowchart LR
 ## 🔗 想深入了解？
 
 - [AI 架构速成指南](Architecture-in-nutshell.md) —— 技术细节版
-- [RAG 速成指南](../11_RAG_Systems/RAG-in-nutshell.md) —— 知识库怎么搭
-- [推理速成指南](../09_Deployment_Inference/Inference-in-nutshell.md) —— 模型怎么跑
-- [MLOps 速成指南](../10_MLOps_Pipeline/MLOps-in-nutshell.md) —— 自动化运维
+- [RAG 速成指南](../14_RAG_Systems/RAG-in-nutshell.md) —— 知识库怎么搭
+- [推理速成指南](../10_Deployment_Inference/Inference-in-nutshell.md) —— 模型怎么跑
+- [MLOps 速成指南](../11_MLOps_Pipeline/MLOps-in-nutshell.md) —— 自动化运维
 
 ---
 

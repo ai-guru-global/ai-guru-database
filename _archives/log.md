@@ -5,12 +5,12 @@ title: Wiki Log
 # Wiki Log
 
 - [2026-06-15T15:10:00+08:00] MRL_DEEP_DIVE 新增 Matryoshka Representation Learning 深度专题:
-  - 创建主章节深度解析: 11_RAG_Systems/Matryoshka_Representation_Learning_Deep_Dive.md
-  - 创建小白版: 11_RAG_Systems/Matryoshka_Representation_Learning_for_dummy.md
-  - 创建论文深度解读: 22_Papers/Matryoshka_Representation_Learning_Deep_Dive.md
-  - 更新 11_RAG_Systems/README.md、concepts/matryoshka-representation-learning.md、concepts/embedding-models.md、22_Papers/README.md、index.md
+  - 创建主章节深度解析: 14_RAG_Systems/Matryoshka_Representation_Learning_Deep_Dive.md
+  - 创建小白版: 14_RAG_Systems/Matryoshka_Representation_Learning_for_dummy.md
+  - 创建论文深度解读: 20_Papers/Matryoshka_Representation_Learning_Deep_Dive.md
+  - 更新 14_RAG_Systems/README.md、_concepts/matryoshka-representation-learning.md、_concepts/embedding-models.md、20_Papers/README.md、index.md
 - [2026-05-31T00:00:00Z] INIT
-- [2026-05-31T21:30:00+08:00] CROSS_LINK concepts/ core layer
+- [2026-05-31T21:30:00+08:00] CROSS_LINK _concepts/ core layer
 - [2026-05-31T21:30:00+08:00] WIKI_SYNTHESIZE 5 pages
 - [2026-05-31T21:35:00+08:00] FRONTMATTER_BACKFILL batch=1 files=25
 - [2026-05-31T21:40:00+08:00] FRONTMATTER_BACKFILL batch=2 files=58
@@ -27,7 +27,7 @@ title: Wiki Log
 - Broken link 清理最终轮:
  - 修复 15 个文件的 false positive（Python 列表、YAML 头、模板语法）
  - 修复 MOC_OpenRouter_OpenCode.md 的 [[topic-ai-coding/ 前缀链接
- - 修复 24 个 OpenRouter/OpenCode 文件的 `[[17_AI_Coding/MOC_OpenRouter_OpenCode|...]]` 回链
+ - 修复 24 个 OpenRouter/OpenCode 文件的 `[[16_AI_Coding/MOC_OpenRouter_OpenCode|...]]` 回链
  - **最终 broken links: 0**
 - Frontmatter 补完:
  - 为 `_insights.md` 和 `README_EN.md` 添加 frontmatter
@@ -37,7 +37,7 @@ title: Wiki Log
  - Wikilinks: ~2,327
  - Orphans: 333（主要为 interview guides 和 tool docs）
  - Broken links: 0
- - Top anchor: 23_Interviews/AI_Data_Analyst/company_level_question_bank (86 incoming)
+ - Top anchor: 21_Interviews/AI_Data_Analyst/company_level_question_bank (86 incoming)
 
 
 ## 2026-06-01 11:00 — Orphan Rescue 完成
@@ -46,8 +46,8 @@ title: Wiki Log
  - 第一轮（outgoing links）: 为 160 个 orphan 添加 Related 出链
  - 第二轮（incoming links）: 从非 orphan 宿主页面指向 261 个 orphan
  - 第三轮（目录内交叉链接 + README 聚合）:
- - Talks: 20 个文件通过 `21_Talks/README.md` 获得入链
- - Interviews: 46 个文件通过 `23_Interviews/README.md` 获得入链
+ - Talks: 20 个文件通过 `19_Talks/README.md` 获得入链
+ - Interviews: 46 个文件通过 `21_Interviews/README.md` 获得入链
  - index.md 通过 `README.md` 获得入链
  - **最终 orphans: 4** (仅 `.github/ISSUE_TEMPLATE/`，不属于 wiki 内容)
  - **Orphan rate: ~0%**
@@ -59,11 +59,11 @@ title: Wiki Log
 ## 2026-06-01 11:05 — Wiki-Synthesize 第二轮
 
 - 创建 3 个新合成页面:
- - `synthesis/agent-framework-production.md` — Agent 框架与生产部署
- - `synthesis/career-interviews.md` — AI 面试与职业发展
- - `synthesis/talks-insights.md` — AI 领袖演讲与行业洞察
+ - `_synthesis/agent-framework-production.md` — Agent 框架与生产部署
+ - `_synthesis/career-interviews.md` — AI 面试与职业发展
+ - `_synthesis/talks-insights.md` — AI 领袖演讲与行业洞察
 - 合成页面内链接全部验证通过（✓）
-- 在 13_Agent_Production/README、23_Interviews/README、21_Talks/README 中注入合成链接
+- 在 15_Agent_Production/README、21_Interviews/README、19_Talks/README 中注入合成链接
 - 最终健康度:
  - 页面: 743
  - Frontmatter: 743/743 (100%)
@@ -81,7 +81,7 @@ title: Wiki Log
 - Frontmatter YAML 修复:
  - 第一轮: 修复 263 个文件的 title/summary 引号问题
  - 第二轮: 修复 190 个文件的中文引号导致的解析失败
- - 手动修复: concepts/multimodal-vision.md 的 relationships/sources 列表格式
+ - 手动修复: _concepts/multimodal-vision.md 的 relationships/sources 列表格式
  - 最终 bad frontmatter: 0
 - 报告生成:
  - `_tag-taxonomy-report.md` — 完整标签分布与规范化映射
@@ -102,14 +102,14 @@ title: Wiki Log
  - 共同邻居分析: 发现 15 个高共引页面对
  - 概念桥梁分析: 发现 10 个高共享标签概念对
 - 创建 4 个新合成页面:
- - `synthesis/llm-nlp` — LLM 与 NLP 的融合与演进 (37 页跨 12 目录)
- - `synthesis/ai-industry-applications` — AI 行业应用与产业变革 (16 页跨 11 目录)
- - `synthesis/cv-deep-learning` — 深度学习驱动的计算机视觉 (22 页跨 10 目录)
- - `synthesis/ai-ethics-future` — AI 伦理与未来趋势的交叉审视
+ - `_synthesis/llm-nlp` — LLM 与 NLP 的融合与演进 (37 页跨 12 目录)
+ - `_synthesis/ai-industry-applications` — AI 行业应用与产业变革 (16 页跨 11 目录)
+ - `_synthesis/cv-deep-learning` — 深度学习驱动的计算机视觉 (22 页跨 10 目录)
+ - `_synthesis/ai-ethics-future` — AI 伦理与未来趋势的交叉审视
 - 反向链接注入:
  - 4 个 category README + 4 个 concept 页面
 - 链接修复:
- - `concepts/cnn` → `concepts/neural-networks`
+ - `_concepts/cnn` → `_concepts/neural-networks`
  - `Value_Alignment/README` → `Value_Alignment/Value_Alignment`
 - 最终状态:
  - 页面: 749
@@ -140,29 +140,29 @@ title: Wiki Log
 Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle coverage:
 
 ### 多模态架构 (P1)
-- [[04_NLP_LLMs/Multimodal_Models/Native_Multimodal_Architectures|Native Multimodal Architectures: From GPT-4V to Gemini 2.5]] — 12.8 KB
-- [[04_NLP_LLMs/Multimodal_Models/Modality_Fusion_Mechanisms|Modality Fusion Mechanisms: Deep Dive]] — 14.2 KB
-- [[04_NLP_LLMs/Multimodal_Models/Video_Understanding_Architectures|Video Understanding Architectures]] — 15.9 KB
+- [[05_NLP_LLMs/Multimodal_Models/Native_Multimodal_Architectures|Native Multimodal Architectures: From GPT-4V to Gemini 2.5]] — 12.8 KB
+- [[05_NLP_LLMs/Multimodal_Models/Modality_Fusion_Mechanisms|Modality Fusion Mechanisms: Deep Dive]] — 14.2 KB
+- [[05_NLP_LLMs/Multimodal_Models/Video_Understanding_Architectures|Video Understanding Architectures]] — 15.9 KB
 
 ### MoE 与架构前沿 (P1)
-- [[04_NLP_LLMs/LLM_Architectures/MoE_Routing_and_Load_Balancing|MoE Routing and Load Balancing]] — 15.1 KB
-- [[04_NLP_LLMs/LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral|MoE Case Studies: DeepSeek and Mixtral]] — 11.1 KB
+- [[05_NLP_LLMs/LLM_Architectures/MoE_Routing_and_Load_Balancing|MoE Routing and Load Balancing]] — 15.1 KB
+- [[05_NLP_LLMs/LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral|MoE Case Studies: DeepSeek and Mixtral]] — 11.1 KB
 
 ### Transformer 替代方案 (P2)
-- [[04_NLP_LLMs/LLM_Architectures/Transformer_Alternatives|Transformer Alternatives: RWKV, RetNet, Mamba, and Beyond]] — 13.7 KB
+- [[05_NLP_LLMs/LLM_Architectures/Transformer_Alternatives|Transformer Alternatives: RWKV, RetNet, Mamba, and Beyond]] — 13.7 KB
 
 ### 推理模型 (P2)
-- [[04_NLP_LLMs/Reasoning_Models/o1_Class_Reasoning_Models|o1-Class Reasoning Models]] — 13.7 KB
-- [[04_NLP_LLMs/Reasoning_Models/DeepSeek_R1_Technical_Analysis|DeepSeek R1 Technical Analysis]] — 13.5 KB
-- [[04_NLP_LLMs/Reasoning_Models/Process_Reward_Models|Process Reward Models]] — 7.0 KB
+- [[05_NLP_LLMs/Reasoning_Models/o1_Class_Reasoning_Models|o1-Class Reasoning Models]] — 13.7 KB
+- [[05_NLP_LLMs/Reasoning_Models/DeepSeek_R1_Technical_Analysis|DeepSeek R1 Technical Analysis]] — 13.5 KB
+- [[05_NLP_LLMs/Reasoning_Models/Process_Reward_Models|Process Reward Models]] — 7.0 KB
 
 ### 多模态与长上下文评估 (P1)
 - [[08_Model_Evaluation/Multimodal_Evaluation_Benchmarks|Multimodal Evaluation Benchmarks]] — 11.7 KB
 - [[08_Model_Evaluation/Long_Context_Evaluation|Long Context Evaluation]] — 12.9 KB
 
 ### 推理优化前沿 (P2)
-- [[09_Deployment_Inference/Speculative_Decoding_Advanced_2026|Speculative Decoding Advanced]] — 14.8 KB
-- [[09_Deployment_Inference/Prompt_Caching_and_KV_Cache_Optimization|Prompt Caching and KV Cache Optimization]] — 15.2 KB
+- [[10_Deployment_Inference/Speculative_Decoding_Advanced_2026|Speculative Decoding Advanced]] — 14.8 KB
+- [[10_Deployment_Inference/Prompt_Caching_and_KV_Cache_Optimization|Prompt Caching and KV Cache Optimization]] — 15.2 KB
 
 ### 基础设施
 - Created directory READMEs for `Multimodal_Models/`, `LLM_Architectures/`, `Reasoning_Models/`
@@ -178,11 +178,11 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
 
 ### 内容扩充
 - 扩充 `03_Deep_Learning/State_Space_Models_2026.md` — 新增 RWKV (2.3) 与 RetNet (2.4) 章节
-- 创建 `19_Ethics_Safety/Safety_Evaluation_Framework.md` — 25 KB，覆盖毒性/偏见/幻觉评测、对抗鲁棒性、红队测试方法论
+- 创建 `17_Ethics_Safety/Safety_Evaluation_Framework.md` — 25 KB，覆盖毒性/偏见/幻觉评测、对抗鲁棒性、红队测试方法论
 
 ### 索引更新
 - 更新 `_content-gap-analysis.md` — 所有 P1-P6 建议页面标记为 ✅ 已完成
-- 更新 `19_Ethics_Safety/README.md` — 添加安全评测框架入口
+- 更新 `17_Ethics_Safety/README.md` — 添加安全评测框架入口
 
 ## 2026-06-01 — AI 基础入门缺口补全
 
@@ -217,12 +217,12 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
 
 ### Cross-linker
 - 为 2 个 orphan 页面添加反向链接:
- - `Safety_Evaluation_Framework.md` ← 19_Ethics_Safety/README, AI_Safety_RedTeaming, Model_Evaluation
+ - `Safety_Evaluation_Framework.md` ← 17_Ethics_Safety/README, AI_Safety_RedTeaming, Model_Evaluation
  - `AI_Basics_Gap_Analysis.md` ← 90_Learn/README, 01_Fundamentals/README
 - 删除旧元数据文件 `_cross-link-report.md`
 
 ### 17_AI_Coding 断链修复
-- 修复 28 个文件中的 concepts/ 短链接（model-training, ai-agents 等 → concepts/model-training）
+- 修复 28 个文件中的 _concepts/ 短链接（model-training, ai-agents 等 → _concepts/model-training）
 - 修复 MOC_OpenRouter_OpenCode.md 中的表格路径错误（17_AI_Coding 前缀 + .md 后缀 + 多余竖线）
 - 修复 OpenCode 文件路径（OpenRouter/ → OpenCode/）
 - 最终断链: 18 个（15 个 arxiv false-positive + 3 个 mkdocs/IMPORT_GUIDE 非核心链接）
@@ -236,11 +236,11 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
 ## 2026-06-02 — Wiki Synthesize
 
 ### 新建合成页面（5 个）
-- `synthesis/multimodal-rag.md` — 多模态 × RAG（统一嵌入空间、跨模态检索）
-- `synthesis/reasoning-models-agents.md` — 推理模型 × Agent（推理即规划、树搜索 Agent）
-- `synthesis/moe-inference-optimization.md` — MoE × 推理优化（专家感知投机解码、动态专家并行）
-- `synthesis/python-data-science-pipeline.md` — Python × 数据科学（2 周入门路径）
-- `synthesis/safety-evaluation-red-teaming.md` — 安全评测 × 红队测试（攻防闭环）
+- `_synthesis/multimodal-rag.md` — 多模态 × RAG（统一嵌入空间、跨模态检索）
+- `_synthesis/reasoning-models-agents.md` — 推理模型 × Agent（推理即规划、树搜索 Agent）
+- `_synthesis/moe-inference-optimization.md` — MoE × 推理优化（专家感知投机解码、动态专家并行）
+- `_synthesis/python-data-science-pipeline.md` — Python × 数据科学（2 周入门路径）
+- `_synthesis/safety-evaluation-red-teaming.md` — 安全评测 × 红队测试（攻防闭环）
 
 ### 反向链接注入
 - 为 16 个源概念页面添加 synthesis 反向链接
@@ -291,7 +291,7 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
 - Assessment: Most high-count pairs are intra-domain (fundamentals, basics, core concepts). Cross-domain value limited.
 
 ### Lint
-- Fixed 24 missing title fields in 17_AI_Coding/02_Tools/*
+- Fixed 24 missing title fields in 16_AI_Coding/Tools/*
 - Frontmatter coverage: 768/768 pages (100%)
 - Bad YAML: 0
 - Orphans: 0
@@ -302,7 +302,7 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
 ### Actions Completed
 1. **Broken Links**: Fixed all true broken links + false positives
 2. **Cross-linker**: Injected 286 + 45 = 331 orphan links into READMEs
-3. **Title Fix**: Added 24 missing titles in 17_AI_Coding/02_Tools
+3. **Title Fix**: Added 24 missing titles in 16_AI_Coding/Tools
 4. **Synthesis**: Created 3 new high-value synthesis pages
  - alignment-rlhf.md (#alignment × #rlhf)
  - benchmark-evaluation.md (#benchmark × #evaluation)
@@ -331,7 +331,7 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
 - Injected backlinks into 12 source pages
 
 ### Deep Lint Results
-- Missing titles fixed: 24 (17_AI_Coding/02_Tools/*)
+- Missing titles fixed: 24 (16_AI_Coding/Tools/*)
 - Frontmatter coverage: 850/850 (100%)
 - Bad YAML: 0
 
@@ -371,7 +371,7 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
 
 ### Graph Analysis
 - Nodes: 637 unique basenames, Edges: 4,322 wikilinks
-- Top anchors: synthesis/README (259 in), Yoshua_Bengio/about (189 in), Robotics_Engineer/company_level_question_bank (138 in)
+- Top anchors: _synthesis/README (259 in), Yoshua_Bengio/about (189 in), Robotics_Engineer/company_level_question_bank (138 in)
 - Top bridges: OpenRouter_OpenCode_Guide (205 cross-cluster pairs), MOC_OpenRouter_OpenCode (154 pairs), AI_Stack_Deep_Dive (137 pairs)
 - Most cohesive tags: #interviews (1.24), #model-deployment (1.20), #distributed-training (1.06)
 - Most fragmented tags: #overview (0.00), #visualization (0.00), #chinese-llm (0.00)
@@ -384,8 +384,8 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
 ### Links Added: 29 across 9 pages
 
 **Orphan rescue (4 incoming links):**
-- `19_Ethics_Safety/Ethics_Safety-in-nutshell` ← 19_Ethics_Safety/README
-- `20_AI_Applications_Industry/Industry_Applications-in-nutshell` ← 20_AI_Applications_Industry/README
+- `17_Ethics_Safety/Ethics_Safety-in-nutshell` ← 17_Ethics_Safety/README
+- `18_AI_Applications_Industry/Industry_Applications-in-nutshell` ← 18_AI_Applications_Industry/README
 - `90_Learn/Learning_Paths_2026` ← 90_Learn/README
 - `06_Reinforcement_Learning/RL-in-nutshell` ← 06_Reinforcement_Learning/README
 
@@ -402,10 +402,10 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
 ## 2026-06-05 — Wiki Synthesize (第四轮)
 
 ### 新建合成页面（4 个）
-1. `synthesis/anomaly-detection-automl.md` — 异常检测 × AutoML：自动化异常发现 (02_Machine_Learning × concepts)
-2. `synthesis/agent-evaluation-model-evaluation.md` — Agent 评估 × 模型评估：从指标到行为的评估范式迁移 (13_Agent_Production × 08_Model_Evaluation)
-3. `synthesis/python-first-ml-model.md` — Python 基础 × 第一个 ML 模型：从零到一的实战桥梁 (01_Fundamentals × 02_Machine_Learning)
-4. `synthesis/llm-infrastructure-system-design.md` — LLM 基础设施 × 传统系统架构：从 Web 服务到 Token 工厂 (12_Architecture × concepts)
+1. `_synthesis/anomaly-detection-automl.md` — 异常检测 × AutoML：自动化异常发现 (02_Machine_Learning × concepts)
+2. `_synthesis/agent-evaluation-model-evaluation.md` — Agent 评估 × 模型评估：从指标到行为的评估范式迁移 (13_Agent_Production × 08_Model_Evaluation)
+3. `_synthesis/python-first-ml-model.md` — Python 基础 × 第一个 ML 模型：从零到一的实战桥梁 (01_Fundamentals × 02_Machine_Learning)
+4. `_synthesis/llm-infrastructure-system-design.md` — LLM 基础设施 × 传统系统架构：从 Web 服务到 Token 工厂 (12_Architecture × concepts)
 
 ### 反向链接注入
 - 8 个源概念页面添加 synthesis 反向链接
@@ -439,10 +439,10 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
   - 多机版本集群管理
 
 ### Backlinks Added: 4
-- concepts/model-gateway.md
-- concepts/model-serving.md
+- _concepts/model-gateway.md
+- _concepts/model-serving.md
 - 12_Architecture_Infrastructure/README.md
-- 11_RAG_Systems/README.md
+- 14_RAG_Systems/README.md
 
 ### Manifest Updated
 - 首次 source tracking entry
@@ -462,7 +462,7 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
 
 ### Pages Created: 28
 - `90_Learn/Microsoft_AI_For_Beginners.md` — 完整课程表与章节映射（25 节课）
-- `references/microsoft-ai-for-beginners.md` — 外部源引用索引
+- `_references/microsoft-ai-for-beginners.md` — 外部源引用索引
 - `90_Learn/Microsoft_AI_For_Beginners/L00_Course_Setup.md` — 课程环境设置
 - `90_Learn/Microsoft_AI_For_Beginners/L01_Introduction_and_History_of_AI.md` — 人工智能介绍与历史
 - `90_Learn/Microsoft_AI_For_Beginners/L02_Knowledge_Representation_and_Expert_Systems.md` — 知识表示与专家系统
@@ -534,14 +534,14 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
 ### 操作
 - 批量创建 49 个本地化中文 Wiki 页面，覆盖路线图中全部外部链接
 - 新增 GitHub 仓库页面(含详细技术内容):
-  - `references/llm-course-mlabonne.md` (80k star, LLM 学习路线)
-  - `references/rag-techniques-nirdiamant.md` (27.9k star, 42+ RAG 技术)
-  - `references/genai-agents-nirdiamant.md` (22.5k star, 52+ Agent 实现)
-  - `references/microsoft-genai-for-beginners.md` (75k star, 18 课)
-  - `references/prompt-engineering-nirdiamant.md` (5k star)
-  - `references/awesome-mcp-servers.md` (15k star)
-  - `references/anthropic-courses.md`
-  - `references/awesome-llm-apps.md` (10k star)
+  - `_references/llm-course-mlabonne.md` (80k star, LLM 学习路线)
+  - `_references/rag-techniques-nirdiamant.md` (27.9k star, 42+ RAG 技术)
+  - `_references/genai-agents-nirdiamant.md` (22.5k star, 52+ Agent 实现)
+  - `_references/microsoft-genai-for-beginners.md` (75k star, 18 课)
+  - `_references/prompt-engineering-nirdiamant.md` (5k star)
+  - `_references/awesome-mcp-servers.md` (15k star)
+  - `_references/anthropic-courses.md`
+  - `_references/awesome-llm-apps.md` (10k star)
 - 新增课程页面:
   - `90_Learn/Courses/coursera_ml_specialization.md` (吴恩达 ML)
   - `90_Learn/Courses/coursera_deep_learning_specialization.md` (吴恩达 DL)
@@ -550,18 +550,18 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
   - `90_Learn/Courses/hf_deep_rl_course.md` (HF RL)
   - `90_Learn/Courses/hf_agents_course.md` (HF Agent)
 - 新增技术文章页面:
-  - `references/illustrated-transformer.md` (图解 Transformer)
-  - `references/sebastian-raschka-articles.md` (LLM 深度解析系列)
-  - `references/maarten-grootendorst-visual-guides.md` (图解 AI 系列)
-  - `references/chip-huyen-agents-article.md` (Agent 深度解析)
+  - `_references/illustrated-transformer.md` (图解 Transformer)
+  - `_references/sebastian-raschka-articles.md` (LLM 深度解析系列)
+  - `_references/maarten-grootendorst-visual-guides.md` (图解 AI 系列)
+  - `_references/chip-huyen-agents-article.md` (Agent 深度解析)
 - 新增书籍页面(15 本):
-  - `references/books/` 目录下 15 本书籍页面
+  - `_references/books/` 目录下 15 本书籍页面
 - 新增 YouTube 频道页面:
-  - `21_Talks/Andrej_Karpathy/youtube_channel.md`
-  - `21_Talks/3Blue1Brown/youtube_channel.md`
+  - `19_Talks/Andrej_Karpathy/youtube_channel.md`
+  - `19_Talks/3Blue1Brown/youtube_channel.md`
 - 新增平台页面:
-  - `references/papers-with-code.md`
-  - `references/kaggle.md`
+  - `_references/papers-with-code.md`
+  - `_references/kaggle.md`
 - 新增 ML/DL 框架页面(7 个):
   - `02_Machine_Learning/ML_Frameworks/` (Scikit-learn、XGBoost、LightGBM、CatBoost)
   - `03_Deep_Learning/DL_Frameworks/` (PyTorch、TensorFlow、Keras)
@@ -580,19 +580,19 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
 - 创建 11 个高级主题和应用场景的深度中文页面
 
 ### 高级主题页面(7 个)
-- `13_Agent_Production/Agent_Protocols/A2A_Protocol_Deep_Dive.md` — Agent-to-Agent 协议,含 A2A vs MCP 对比
-- `04_NLP_LLMs/Structured_Output_Guide.md` — 结构化输出完全指南(Instructor/PydanticAI/Outlines)
+- `15_Agent_Production/Agent_Protocols/A2A_Protocol_Deep_Dive.md` — Agent-to-Agent 协议,含 A2A vs MCP 对比
+- `05_NLP_LLMs/Structured_Output_Guide.md` — 结构化输出完全指南(Instructor/PydanticAI/Outlines)
 - `08_Model_Evaluation/LLM_as_Judge_Guide.md` — LLM-as-Judge 评估指南(Ragas/DeepEval/Promptfoo)
-- `concepts/long-context-vs-rag.md` — 长上下文 vs RAG 技术选型决策框架
-- `17_AI_Coding/AI_Coding_2026_Guide.md` — AI 编程全景指南(Cursor/Claude Code/Codex)
-- `09_Deployment_Inference/Prompt_Caching_Advanced.md` — Prompt 缓存高级技术
-- `11_RAG_Systems/Agentic_RAG_Guide.md` — Agentic RAG 架构(Self-RAG/CRAG/Adaptive RAG)
+- `_concepts/long-context-vs-rag.md` — 长上下文 vs RAG 技术选型决策框架
+- `16_AI_Coding/AI_Coding_2026_Guide.md` — AI 编程全景指南(Cursor/Claude Code/Codex)
+- `10_Deployment_Inference/Prompt_Caching_Advanced.md` — Prompt 缓存高级技术
+- `14_RAG_Systems/Agentic_RAG_Guide.md` — Agentic RAG 架构(Self-RAG/CRAG/Adaptive RAG)
 
 ### 应用场景页面(4 个)
-- `20_AI_Applications_Industry/Code_Generation/AI_Code_Generation_2026.md` — AI 代码生成应用
-- `20_AI_Applications_Industry/Finance/AI_Finance_Applications_2026.md` — AI 金融应用(风控/量化/合规)
-- `20_AI_Applications_Industry/Education/AI_Education_Applications_2026.md` — AI 教育应用(个性化辅导/自动评分)
-- `20_AI_Applications_Industry/Healthcare/AI_Healthcare_Applications_2026.md` — AI 医疗应用(辅助诊断/药物发现)
+- `18_AI_Applications_Industry/Code_Generation/AI_Code_Generation_2026.md` — AI 代码生成应用
+- `18_AI_Applications_Industry/Finance/AI_Finance_Applications_2026.md` — AI 金融应用(风控/量化/合规)
+- `18_AI_Applications_Industry/Education/AI_Education_Applications_2026.md` — AI 教育应用(个性化辅导/自动评分)
+- `18_AI_Applications_Industry/Healthcare/AI_Healthcare_Applications_2026.md` — AI 医疗应用(辅助诊断/药物发现)
 
 ### 页面统计
 - 新增页面: 11 个
@@ -606,13 +606,13 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
 - 创建 7 个高级主题和运维指南的深度中文页面
 
 ### 新增页面
-- `19_Ethics_Safety/Guardrails_Production_Guide.md` — AI 护栏生产实践(NeMo Guardrails/Guardrails AI/Llama Guard)
-- `16_AI_Ops/AI_Observability_Guide_2026.md` — AI 可观测性完全指南(Langfuse/LangSmith/Helicone)
-- `19_Ethics_Safety/AI_Red_Teaming_Guide.md` — AI 红队测试指南(攻击向量/测试框架/防御策略)
+- `17_Ethics_Safety/Guardrails_Production_Guide.md` — AI 护栏生产实践(NeMo Guardrails/Guardrails AI/Llama Guard)
+- `13_AI_Ops/AI_Observability_Guide_2026.md` — AI 可观测性完全指南(Langfuse/LangSmith/Helicone)
+- `17_Ethics_Safety/AI_Red_Teaming_Guide.md` — AI 红队测试指南(攻击向量/测试框架/防御策略)
 - `14_AI_Gateway/LLM_Gateway_Comparison_2026.md` — LLM 网关对比(LiteLLM/Portkey/Kong)
-- `11_RAG_Systems/Embedding_Models_Guide.md` — Embedding 模型选型指南(闭源/开源模型对比)
-- `13_Agent_Production/Memory_Infrastructure/Agent_Memory_Techniques.md` — Agent 记忆技术(Mem0/Zep/Graphiti)
-- `09_Deployment_Inference/LLM_Cost_Optimization.md` — LLM 成本优化(模型路由/缓存/量化/批处理)
+- `14_RAG_Systems/Embedding_Models_Guide.md` — Embedding 模型选型指南(闭源/开源模型对比)
+- `15_Agent_Production/Memory_Infrastructure/Agent_Memory_Techniques.md` — Agent 记忆技术(Mem0/Zep/Graphiti)
+- `10_Deployment_Inference/LLM_Cost_Optimization.md` — LLM 成本优化(模型路由/缓存/量化/批处理)
 
 ### 页面统计
 - 新增页面: 7 个
@@ -627,7 +627,7 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
   - `90_Learn/Courses/coursera_math_for_ml.md` — Mathematics for ML 专项
   - `90_Learn/Courses/coursera_nlp_specialization.md` — NLP 专项课程
   - `90_Learn/Courses/coursera_rag_intro.md` — RAG 入门实践
-  - `21_Talks/Josh_Starmer/youtube_channel.md` — StatQuest 频道
+  - `19_Talks/Josh_Starmer/youtube_channel.md` — StatQuest 频道
 - 为 9 个 README 文件添加指向新页面的交叉引用
 - 为 3 个孤立页面补充出站链接
 - 更新路线图页面，添加完整的 Wiki 页面索引（70+ 页面的 wikilinks）
@@ -679,7 +679,7 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
   - §15 选型决策树: 训练/推理/边缘/信创/车规
   - §16 信息来源: 12 个官网 + 6 个 GitHub 仓库 + 8 个 Wiki 链接
 - 创建 `01_Fundamentals/AI_Hardware/README.md` — 硬件目录索引 + 快速对比表 + 决策树
-- 验证 `04_NLP_LLMs/Chinese_LLM_Ecosystem/Chinese_LLM_Training_Inference_Platforms.md` 已含交叉引用
+- 验证 `05_NLP_LLMs/Chinese_LLM_Ecosystem/Chinese_LLM_Training_Inference_Platforms.md` 已含交叉引用
 
 ---
 
@@ -843,43 +843,43 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
 
 **课程索引页面 (2)**
 - `90_Learn/Microsoft_GenAI_For_Beginners.md` — 21 课完整课程表与章节映射
-- `references/microsoft-genai-for-beginners.md` — 外部源引用索引
+- `_references/microsoft-genai-for-beginners.md` — 外部源引用索引
 
 **基础入门 (4)**
 - `01_Fundamentals/GenAI_L00_Course_Setup.md` — L00 课程环境设置
 - `00_AI_Introduction/GenAI_L01_Intro_to_GenAI_and_LLMs.md` — L01 生成式 AI 与 LLM 简介
-- `04_NLP_LLMs/GenAI_L02_Exploring_and_Comparing_LLMs.md` — L02 探索与比较不同 LLM
-- `19_Ethics_Safety/GenAI_L03_Using_GenAI_Responsibly.md` — L03 负责任地使用生成式 AI
+- `05_NLP_LLMs/GenAI_L02_Exploring_and_Comparing_LLMs.md` — L02 探索与比较不同 LLM
+- `17_Ethics_Safety/GenAI_L03_Using_GenAI_Responsibly.md` — L03 负责任地使用生成式 AI
 
 **提示工程 (2)**
-- `04_NLP_LLMs/Prompt_Engineering/GenAI_L04_Prompt_Engineering_Fundamentals.md` — L04 提示工程基础
-- `04_NLP_LLMs/Prompt_Engineering/GenAI_L05_Advanced_Prompts.md` — L05 创建高级提示
+- `05_NLP_LLMs/Prompt_Engineering/GenAI_L04_Prompt_Engineering_Fundamentals.md` — L04 提示工程基础
+- `05_NLP_LLMs/Prompt_Engineering/GenAI_L05_Advanced_Prompts.md` — L05 创建高级提示
 
 **应用构建 (6)**
-- `13_Agent_Production/GenAI_L06_Text_Generation_Apps.md` — L06 构建文本生成应用
-- `13_Agent_Production/GenAI_L07_Building_Chat_Applications.md` — L07 构建聊天应用
-- `11_RAG_Systems/GenAI_L08_Building_Search_Applications.md` — L08 构建搜索应用
-- `04_NLP_LLMs/Multimodal_Models/GenAI_L09_Building_Image_Applications.md` — L09 构建图像生成应用
-- `20_AI_Applications_Industry/GenAI_L10_Building_Low_Code_AI_Applications.md` — L10 构建低代码 AI 应用
-- `13_Agent_Production/GenAI_L11_Integrating_with_Function_Calling.md` — L11 使用函数调用集成外部应用
+- `15_Agent_Production/GenAI_L06_Text_Generation_Apps.md` — L06 构建文本生成应用
+- `15_Agent_Production/GenAI_L07_Building_Chat_Applications.md` — L07 构建聊天应用
+- `14_RAG_Systems/GenAI_L08_Building_Search_Applications.md` — L08 构建搜索应用
+- `05_NLP_LLMs/Multimodal_Models/GenAI_L09_Building_Image_Applications.md` — L09 构建图像生成应用
+- `18_AI_Applications_Industry/GenAI_L10_Building_Low_Code_AI_Applications.md` — L10 构建低代码 AI 应用
+- `15_Agent_Production/GenAI_L11_Integrating_with_Function_Calling.md` — L11 使用函数调用集成外部应用
 
 **设计与运维 (3)**
-- `13_Agent_Production/GenAI_L12_Designing_UX_for_AI_Applications.md` — L12 设计 AI 应用用户体验
-- `19_Ethics_Safety/GenAI_L13_Securing_AI_Applications.md` — L13 保障生成式 AI 应用安全
-- `10_MLOps_Pipeline/GenAI_L14_GenAI_Application_Lifecycle.md` — L14 生成式 AI 应用生命周期
+- `15_Agent_Production/GenAI_L12_Designing_UX_for_AI_Applications.md` — L12 设计 AI 应用用户体验
+- `17_Ethics_Safety/GenAI_L13_Securing_AI_Applications.md` — L13 保障生成式 AI 应用安全
+- `11_MLOps_Pipeline/GenAI_L14_GenAI_Application_Lifecycle.md` — L14 生成式 AI 应用生命周期
 
 **RAG 与开源 (2)**
-- `11_RAG_Systems/GenAI_L15_RAG_and_Vector_Databases.md` — L15 RAG 与向量数据库
-- `04_NLP_LLMs/GenAI_L16_Open_Source_Models_and_Hugging_Face.md` — L16 开源模型与 Hugging Face
+- `14_RAG_Systems/GenAI_L15_RAG_and_Vector_Databases.md` — L15 RAG 与向量数据库
+- `05_NLP_LLMs/GenAI_L16_Open_Source_Models_and_Hugging_Face.md` — L16 开源模型与 Hugging Face
 
 **AI 代理 (1)**
-- `13_Agent_Production/GenAI_L17_AI_Agents.md` — L17 AI 代理
+- `15_Agent_Production/GenAI_L17_AI_Agents.md` — L17 AI 代理
 
 **微调与模型家族 (4)**
-- `04_NLP_LLMs/Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs.md` — L18 微调大型语言模型
-- `04_NLP_LLMs/Edge_LLM/GenAI_L19_Building_with_SLMs.md` — L19 使用小型语言模型构建
-- `04_NLP_LLMs/Global_LLM_Ecosystem/GenAI_L20_Building_with_Mistral.md` — L20 使用 Mistral 模型构建
-- `04_NLP_LLMs/Global_LLM_Ecosystem/GenAI_L21_Building_with_Meta.md` — L21 使用 Meta 模型构建
+- `05_NLP_LLMs/Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs.md` — L18 微调大型语言模型
+- `05_NLP_LLMs/Edge_LLM/GenAI_L19_Building_with_SLMs.md` — L19 使用小型语言模型构建
+- `05_NLP_LLMs/Global_LLM_Ecosystem/GenAI_L20_Building_with_Mistral.md` — L20 使用 Mistral 模型构建
+- `05_NLP_LLMs/Global_LLM_Ecosystem/GenAI_L21_Building_with_Meta.md` — L21 使用 Meta 模型构建
 
 ### 章节映射分布
 | 目标目录 | 课程数 |
@@ -908,12 +908,12 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
 
 | 资源 | 本地克隆路径 | 新增/更新页面 |
 |------|-------------|--------------|
-| Hello-Agents (Datawhale) | `_raw/github-sources/hello-agents` | [[references/hello-agents]], [[90_Learn/courses/other/hello_agents]], 7 个章节概念页 |
-| Learn Claude Code (shareAI-lab) | `_raw/github-sources/learn-claude-code` | [[references/learn-claude-code]], [[90_Learn/courses/share_ai/learn_claude_code]], 8 个 Harness 概念页 |
-| Microsoft AI Agents for Beginners | `_raw/github-sources/ai-agents-for-beginners` | [[references/ai-agents-for-beginners]], [[90_Learn/courses/microsoft/microsoft_ai_agents_for_beginners]], 4 个章节概念页 |
-| Hands-On Large Language Models | `_raw/github-sources/hands-on-llms` | [[references/books/hands-on-llms-alammar]], [[90_Learn/courses/other/hands_on_llms]] |
-| ApacheCN AILearning | `_raw/github-sources/ailearning` | [[references/apachecn-ailearning]], [[90_Learn/courses/apachecn/ailearning_guide]], 3 个主线跟踪页 |
-| 500+ AI Projects | `_raw/github-sources/500-ai-projects` | [[references/500-ai-projects]] |
+| Hello-Agents (Datawhale) | `_raw/github-sources/hello-agents` | [[_references/hello-agents]], [[90_Learn/courses/other/hello_agents]], 7 个章节概念页 |
+| Learn Claude Code (shareAI-lab) | `_raw/github-sources/learn-claude-code` | [[_references/learn-claude-code]], [[90_Learn/courses/share_ai/learn_claude_code]], 8 个 Harness 概念页 |
+| Microsoft AI Agents for Beginners | `_raw/github-sources/ai-agents-for-beginners` | [[_references/ai-agents-for-beginners]], [[90_Learn/courses/microsoft/microsoft_ai_agents_for_beginners]], 4 个章节概念页 |
+| Hands-On Large Language Models | `_raw/github-sources/hands-on-llms` | [[_references/books/hands-on-llms-alammar]], [[90_Learn/courses/other/hands_on_llms]] |
+| ApacheCN AILearning | `_raw/github-sources/ailearning` | [[_references/apachecn-ailearning]], [[90_Learn/courses/apachecn/ailearning_guide]], 3 个主线跟踪页 |
+| 500+ AI Projects | `_raw/github-sources/500-ai-projects` | [[_references/500-ai-projects]] |
 
 **统计**: 35 个 wiki 页面创建/更新，6 个仓库浅克隆到 `_raw/github-sources/`。
 **更新文件**: `index.md`, `90_Learn/README.md`, `90_Learn/Learning_Paths_2026.md`, `.manifest.json`, `hot.md`。
@@ -923,7 +923,7 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
 ## 2026-06-12 — 新增概念专题：Matryoshka Representation Learning（MRL）
 
 ### 操作
-- 创建 `concepts/matryoshka-representation-learning.md`
+- 创建 `_concepts/matryoshka-representation-learning.md`
   - 主题: Matryoshka Representation Learning（俄罗斯套娃表示学习）
   - 内容覆盖:
     - 核心思想与数学形式化（多尺度损失、可截断向量前缀）
@@ -932,14 +932,14 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
     - 代表性模型：nomic-embed-text-v1.5、OpenAI text-embedding-3、Jina v3
     - 应用场景：RAG 多级检索、向量数据库存储优化、端侧部署
     - 局限与开放问题
-- 更新 `concepts/embedding-models.md`
+- 更新 `_concepts/embedding-models.md`
   - 模型对比表中 nomic-embed-text-v1.5 链接到 MRL 专题
   - 工程最佳实践表中 Matryoshka 表示链接到 MRL 专题
   - frontmatter 增加 `matryoshka-representation-learning` 关系
-- 更新 `concepts/vector-database.md`
+- 更新 `_concepts/vector-database.md`
   - 新增“可截断嵌入：Matryoshka Representation Learning”小节
   - frontmatter 增加 MRL 关系
-- 更新 `concepts/rag-systems.md`
+- 更新 `_concepts/rag-systems.md`
   - Embedding 模型选型段落补充 MRL 模型推荐
   - frontmatter 增加 MRL 关系
 - 更新 `index.md`
@@ -959,12 +959,12 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
 ## 2026-06-15 — 新增 GPUStack 专题
 
 - 新增页面:
-  - `09_Deployment_Inference/GPUStack_Deep_Dive.md` — GPUStack 深度解析 (27,950 bytes)
-  - `09_Deployment_Inference/GPUStack_for_dummy.md` — GPUStack 入门指南 (8,704 bytes)
-  - `concepts/gpustack.md` — GPUStack 概念卡片 (3,564 bytes)
+  - `10_Deployment_Inference/GPUStack_Deep_Dive.md` — GPUStack 深度解析 (27,950 bytes)
+  - `10_Deployment_Inference/GPUStack_for_dummy.md` — GPUStack 入门指南 (8,704 bytes)
+  - `_concepts/gpustack.md` — GPUStack 概念卡片 (3,564 bytes)
 - 更新页面:
-  - `09_Deployment_Inference/README.md` — 新增 GPUStack 导航、对比表与 Related 链接
-  - `09_Deployment_Inference/Deployment_Inference.md` — 新增 GPUStack 选型建议与资源链接
+  - `10_Deployment_Inference/README.md` — 新增 GPUStack 导航、对比表与 Related 链接
+  - `10_Deployment_Inference/Deployment_Inference.md` — 新增 GPUStack 选型建议与资源链接
   - `index.md` — Concepts 部分新增 GPUStack 索引
   - `README.md` — 2026 专题新增 GPUStack 深度解析入口
   - `mkdocs.yml` — Deployment & Inference 导航新增 GPUStack 两个页面
@@ -1003,11 +1003,11 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
 
 - 新增页面:
   - `12_Architecture_Infrastructure/CDI_for_dummy.md` — CDI 小白版（酒店入住单/万能插头比喻，~9KB）
-  - `concepts/cdi.md` — CDI 概念卡片（对齐 GPUStack 三层结构，含 relationships/provenance）
+  - `_concepts/cdi.md` — CDI 概念卡片（对齐 GPUStack 三层结构，含 relationships/provenance）
 - 更新页面（反向链接，消除单向链接）:
-  - `09_Deployment_Inference/vLLM_Deep_Dive.md` — Related 新增 CDI 链接
-  - `09_Deployment_Inference/TensorRT_LLM_Deep_Dive.md` — Related 新增 CDI 链接
-  - `09_Deployment_Inference/TGI_Deep_Dive.md` — Related 新增 CDI 链接
+  - `10_Deployment_Inference/vLLM_Deep_Dive.md` — Related 新增 CDI 链接
+  - `10_Deployment_Inference/TensorRT_LLM_Deep_Dive.md` — Related 新增 CDI 链接
+  - `10_Deployment_Inference/TGI_Deep_Dive.md` — Related 新增 CDI 链接
   - `12_Architecture_Infrastructure/AI_Infrastructure_2026.md` — 新增 §2.5「设备如何进容器：CDI 标准」（补硬件→容器拼图）
   - `12_Architecture_Infrastructure/README.md` — 导航表新增 CDI 小白版行
   - `index.md` — Concepts 分组新增 cdi 概念卡片索引
@@ -1025,14 +1025,14 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
 补完 CDI 相邻概念的三层叙事（分配层 / 运维层 / 运行时标准），消除「CDI 单点突出、邻居全空」的结构失衡。
 
 - 新增页面:
-  - `concepts/dra.md` — DRA 动态资源分配概念卡（核心 tier，与 CDI 配对）
+  - `_concepts/dra.md` — DRA 动态资源分配概念卡（核心 tier，与 CDI 配对）
   - `12_Architecture_Infrastructure/DRA_Deep_Dive.md` — DRA 深度解析（与 CDI_Deep_Dive 对称，8 节）
-  - `concepts/gpu-operator.md` — NVIDIA GPU Operator 概念卡（运维层入口）
-  - `concepts/oci-runtime.md` — OCI Runtime Spec 概念卡（运行时标准，CDI 注入落点）
+  - `_concepts/gpu-operator.md` — NVIDIA GPU Operator 概念卡（运维层入口）
+  - `_concepts/oci-runtime.md` — OCI Runtime Spec 概念卡（运行时标准，CDI 注入落点）
 - 反向链接（消除单向 + 闭合旧卡片）:
-  - `concepts/gpu-virtualization.md` → CDI / DRA / GPU Operator（旧卡片零感知 CDI，现闭合）
-  - `concepts/heterogeneous-gpu.md` → CDI / DRA（异构接入核心，旧卡片零感知）
-  - `concepts/cdi.md` 延伸阅读 → 新增 DRA / GPU Operator / OCI 同族卡片
+  - `_concepts/gpu-virtualization.md` → CDI / DRA / GPU Operator（旧卡片零感知 CDI，现闭合）
+  - `_concepts/heterogeneous-gpu.md` → CDI / DRA（异构接入核心，旧卡片零感知）
+  - `_concepts/cdi.md` 延伸阅读 → 新增 DRA / GPU Operator / OCI 同族卡片
 - 登记:
   - `index.md` Concepts 区新增 dra / gpu-operator / oci-runtime 三张卡
   - `index.md` 容器与设备接入分组新增 DRA_Deep_Dive
@@ -1044,7 +1044,7 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
   - wikilink 校验：7 个新/改文件共 61 个出链全部解析通过
   - check_links.py：新文件 0 broken markdown link
   - 新页面均有 ≥3 入链，非 orphan
-  - 修正：heterogeneous-gpu 中保留的 `concepts/rdma-roce` 链接经验证存在
+  - 修正：heterogeneous-gpu 中保留的 `_concepts/rdma-roce` 链接经验证存在
 
 
 
@@ -1053,7 +1053,7 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
   - L00 Course Setup, L03 Design Principles, L06 Trustworthy Agents, L07 Planning Design, L08 Multi-Agent
   - L09 Metacognition, L10 Production, L11 Agentic Protocols, L12 Context Engineering
   - L13 Agent Memory, L14 Microsoft Agent Framework, L15 Browser Use, L18 Securing AI Agents
-  - 全部挂载于 13_Agent_Production/Microsoft_AI_Agents_L*.md
+  - 全部挂载于 15_Agent_Production/Microsoft_AI_Agents_L*.md
   - 与现有索引页 90_Learn/Microsoft_AI_Agents_for_Beginners 呼应，补全 17 课中的 13 个深化页（L01/L02/L04/L05 此前已存在）
 
 ## 2026-06-15 — CDI 大白话沉淀 + 官方资源补录
@@ -1068,19 +1068,19 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
 
 ## 2026-06-15 — CDI 官方源引用页 + 常见问题与排错
 
-- 新增 `references/cdi-spec.md` — CDI 规范官方源引用索引（references 层；仓库/Apache-2.0/CNCF Tags/spec 版本/运行时支持矩阵/CLI 工具，含本地文档反链）
+- 新增 `_references/cdi-spec.md` — CDI 规范官方源引用索引（references 层；仓库/Apache-2.0/CNCF Tags/spec 版本/运行时支持矩阵/CLI 工具，含本地文档反链）
 - 更新 `12_Architecture_Infrastructure/CDI_Deep_Dive.md`:
   - 新增 §10「常见问题与排错」—— 6 大类（配置发现 / 生成同步 / 版本兼容 / 注入冲突 / 排查 / 安全）+ 排错决策树，覆盖 spec 找不到、忘重启 runtime、MIG 不同步、Docker feature flag、hooks 报错隐晦、隔离失效等真实坑
-  - 「官方资源」段加引向 [[references/cdi-spec]] 的 wiki 链接
+  - 「官方资源」段加引向 [[_references/cdi-spec]] 的 wiki 链接
   - 目录更新为 §1–§11
-- 登记: `index.md` 容器与设备接入分组新增 references/cdi-spec
-- 校验: 新文件 wikilink 全部解析；check_links.py 对新文件 0 broken；references/cdi-spec 获 2 入链（index + Deep_Dive）非 orphan
+- 登记: `index.md` 容器与设备接入分组新增 _references/cdi-spec
+- 校验: 新文件 wikilink 全部解析；check_links.py 对新文件 0 broken；_references/cdi-spec 获 2 入链（index + Deep_Dive）非 orphan
 - 副作用备注(非本会话): index.md 的 `_llm-ecosystem-analysis-2026-06-15` 链接因外部重构(文件→_meta/)而悬空，非本次引入，留待重构进程统一处理
 
 
 
 ## 2026-06-15 — 「CDI 非电源开关」误解澄清沉淀
 
-- `concepts/cdi.md` 新增「常见误解（CDI 是什么 / 不是什么）」节：四步链(驱动→spec→enable_cdi→容器申请) + 三大误解表（概念层身份认知）
+- `_concepts/cdi.md` 新增「常见误解（CDI 是什么 / 不是什么）」节：四步链(驱动→spec→enable_cdi→容器申请) + 三大误解表（概念层身份认知）
 - `12_Architecture_Infrastructure/CDI_Deep_Dive.md` §10 新增 10.0「先纠正一个根本性误解」FAQ（开 enable_cidi≠看到 GPU），作为排错章的开篇
 - 校验: 两文件 wikilink 全部解析通过

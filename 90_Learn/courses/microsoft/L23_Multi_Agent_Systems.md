@@ -105,14 +105,14 @@ breed [cats cat]
 
 - **不覆盖**：本课只进行概念与 NetLogo 仿真演示，不深入 MAS 的形式化理论、分布式协商算法、博弈论、以及多智能体强化学习（MARL）的训练方法。
 - **不覆盖**：没有涉及当前热门的 LLM-based Multi-Agent 框架（如 AutoGen、CrewAI、LangGraph 等）的工程实践。
-- **延伸**：若对现代 Agent 工程感兴趣，可阅读本库 [[06_Reinforcement_Learning/AI_Agents/AI_Agents]] 与 [[13_Agent_Production/README]]；若对 Agent 仿真与复杂系统建模感兴趣，可进一步学习基于 Agent 的建模方法论、Swarm Intelligence 以及 NetLogo 的 BehaviorSpace 实验工具。
+- **延伸**：若对现代 Agent 工程感兴趣，可阅读本库 [[06_Reinforcement_Learning/AI_Agents/AI_Agents]] 与 [[15_Agent_Production/README]]；若对 Agent 仿真与复杂系统建模感兴趣，可进一步学习基于 Agent 的建模方法论、Swarm Intelligence 以及 NetLogo 的 BehaviorSpace 实验工具。
 
 ## 相关阅读
 
 - 课程索引：[[90_Learn/courses/microsoft/microsoft_ai_for_beginners]]
 - 本库相关页面：
   - [[06_Reinforcement_Learning/AI_Agents/AI_Agents]]
-  - [[13_Agent_Production/README]]
+  - [[15_Agent_Production/README]]
 - 外部资源：
   - [NetLogo 官方站点](https://ccl.northwestern.edu/netlogo/)
   - [Beginner's Interactive NetLogo Dictionary](https://ccl.northwestern.edu/netlogo/bind/)

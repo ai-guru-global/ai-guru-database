@@ -1,0 +1,684 @@
+---
+title: Agent Skills 书写速览
+category: 13-agent-production-agent-skills
+tags: ["ai-agents", "agent-framework", "production", "langgraph"]
+summary: "> 一句话：**Agent Skills = 一个包含 `SKILL.md` 的文件夹**，用 Markdown 告诉 AI Agent 什么场景下该做什么、怎么做。"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
+# Agent Skills 书写速览
+
+> 一句话：**Agent Skills = 一个包含 `SKILL.md` 的文件夹**，用 Markdown 告诉 AI Agent 什么场景下该做什么、怎么做。
+
+---
+
+## TL;DR（30 秒速查）
+
+```bash
+mkdir -p .agents/skills/my-skill
+cat > .agents/skills/my-skill/SKILL.md << 'EOF'
+---
+name: my-skill
+description: What this skill does and when to use it. Be specific!
+---
+
+## Workflow
+1. Step one
+2. Step two
+
+## Gotchas
+- Edge case to remember
+EOF
+```
+
+**核心原则**：
+1. `description` 决定 Skill **会不会被触发**（最关键）
+2. `SKILL.md` body 决定 Skill **触发后怎么做**
+3. 详细内容放 `_references/`，按需加载
+4. 保持 **< 500 行**、**< 5000 tokens**
+
+---
+
+## 一、核心理念
+
+Agent Skills 是由 Anthropic 开发并作为开放标准发布的轻量级标准，已被 30+ 主流 Agent 产品采纳（Claude Code、Copilot、Cursor、Codex、Gemini CLI 等）。
+
+与传统"编程实现的 Skills"（Python 类/函数）不同，Agent Skills **不需要写代码**——用 Markdown 即可定义可复用的领域能力，实现"一次写好，到处复用"。
+
+| 维度 | 传统 Skills（代码） | Agent Skills（本标准） |
+|------|-------------------|----------------------|
+| 定义方式 | Python 类 | `SKILL.md` Markdown |
+| 技术门槛 | 需要编程 | 会写 Markdown 即可 |
+| 可移植性 | 绑定语言和框架 | 跨所有兼容 Agent |
+| 适用场景 | 自建 Agent 框架 | 通用 Agent 产品 |
+
+---
+
+## 二、核心机制：渐进式披露
+
+Agent Skills 采用三层加载策略，高效管理上下文：
+
+```
+Tier 1: 目录发现（~50-100 tokens/skill）
+    → 只加载 name + description
+    → 决定"要不要激活这个 Skill"
+
+Tier 2: 指令加载（< 5000 tokens）
+    → Skill 被匹配时加载完整 SKILL.md body
+    → 告诉 Agent"具体怎么做"
+
+Tier 3: 资源按需（按需变化）
+    → 指令中引用时才加载 scripts/_references/assets
+    → 提供"执行所需的工具和参考"
+```
+
+**关键优势**：装 20 个 Skill 不会一次性吃掉 20 份完整指令的 Token——只有实际用到的才加载。
+
+---
+
+## 三、关键约束速查
+
+| 项目 | 限制 |
+|------|------|
+| `name` 长度 | 1-64 字符 |
+| `name` 字符集 | `a-z`, `0-9`, `-` |
+| `description` 长度 | 1-1024 字符 |
+| `compatibility` 长度 | 1-500 字符 |
+| SKILL.md body | **< 500 行**，**< 5000 tokens** |
+| 文件引用深度 | 一层 |
+| 每个 Skill 在目录中的 Token 开销 | ~50-100 tokens |
+
+---
+
+## 四、目录结构
+
+```
+skill-name/                 ← 目录名必须等于 name 字段
+├── SKILL.md                ← 必需：元数据 + Markdown 指令
+├── scripts/                ← 可选：可执行脚本
+├── _references/             ← 可选：参考文档（按需加载）
+├── assets/                 ← 可选：模板、图片、静态资源
+└── evals/                  ← 可选：评估测试用例
+    ├── evals.json
+    └── files/
+```
+
+### 四种复杂度级别
+
+| 级别 | 结构 | 适用场景 |
+|------|------|---------|
+| **L1** | 纯 `SKILL.md` | 编码风格、审查清单、简单工作流 |
+| **L2** | `SKILL.md` + 一次性命令 | 调用现有工具链（`npx`/`uvx`/`deno run`） |
+| **L3** | `SKILL.md` + `scripts/` | 需要自定义逻辑的复杂工作流 |
+| **L4** | 完整包（含 `_references/` + `assets/` + `evals/`） | 生产级、可评估、可分发 |
+
+---
+
+## 五、SKILL.md 格式规范
+
+`SKILL.md` 必须包含 **YAML frontmatter** + **Markdown body**。
+
+### 4.1 Frontmatter（元数据）
+
+```markdown
+---
+name: skill-name
+description: What this skill does and when to use it.
+---
+```
+
+| 字段 | 必需 | 约束 | 说明 |
+|------|------|------|------|
+| `name` | ✅ | 1-64 字符，`a-z` `0-9` `-` | 必须匹配父目录名 |
+| `description` | ✅ | 1-1024 字符，非空 | **最关键字段**，决定触发时机 |
+| `license` | ❌ | 许可证名称或文件引用 | — |
+| `compatibility` | ❌ | 最多 500 字符 | 环境要求说明 |
+| `metadata` | ❌ | 任意键值映射 | 额外元数据 |
+| `allowed-tools` | ❌ | 空格分隔的工具字符串 | 预批准工具（实验性） |
+
+#### `name` 规则
+
+```
+✅ 有效：pdf-processing, data-analysis, code-review
+❌ 无效：PDF-Processing (大写), -pdf (连字符开头), pdf--processing (连续连字符)
+```
+
+#### `description` 写法（最关键！）
+
+`description` 是 Tier 1 唯一被加载的内容，直接决定 Agent 会不会激活你的 Skill。
+
+**好的描述**：
+```yaml
+description: >
+  Analyze CSV and tabular data files — compute summary statistics,
+  add derived columns, generate charts, and clean messy data. Use this
+  skill when the user has a CSV, TSV, or Excel file and wants to
+  explore, transform, or visualize the data, even if they don't
+  explicitly mention "CSV" or "analysis."
+```
+
+**差的描述**：
+```yaml
+description: Process CSV files.   ← 太宽泛，容易误触发或漏触发
+```
+
+**原则**：
+- 使用祈使句式（"Use this skill when..."）
+- 关注**用户意图**，而非实现细节
+- 包含具体关键词帮助匹配
+- 宁可"过于主动"也不要遗漏场景
+- 最多 **1024 字符**
+
+**自测模板**：写完后用以下查询测试你的 `description`：
+
+```json
+[
+  {"query": "一个应该触发此 skill 的真实用户请求", "should_trigger": true},
+  {"query": "一个不应该触发的类似请求", "should_trigger": false},
+  {"query": "另一个边界情况的请求", "should_trigger": true}
+]
+```
+
+每个查询运行 3 次，计算触发率。应触发 > 0.5 通过，不应触发 < 0.5 通过。
+
+### 4.2 Body（指令正文）
+
+Markdown body 没有固定格式限制，推荐包含以下章节：
+
+```markdown
+# Skill 标题
+
+## When to use this skill
+[扩展触发条件，比 description 更详细]
+
+## Workflow
+1. 步骤 1
+2. 步骤 2
+3. ...
+
+## Tools / Dependencies
+[需要的工具、库、命令]
+
+## Gotchas
+[环境特定的陷阱和反直觉的事实]
+
+## Output format
+[输出格式模板或示例]
+
+## Examples
+### Example 1: [场景描述]
+输入: ...
+输出: ...
+```
+
+> ⚠️ **约束**：SKILL.md body 建议保持 **< 500 行**、**< 5000 tokens**。详细参考资料移至 `_references/` 目录。
+
+---
+
+## 六、书写 Skills 的五大核心模式
+
+### 模式一：陷阱清单（Gotchas）
+
+最高价值的内容往往是环境特定、反直觉的事实：
+
+```markdown
+## Gotchas
+
+- `users` 表使用软删除。查询必须包含 `WHERE deleted_at IS NULL`
+  否则结果将包含已停用的账户。
+- 用户 ID 在数据库中是 `user_id`，在认证服务中是 `uid`，
+  在账单 API 中是 `accountId`。三个都指同一个值。
+- `/health` 端点只要 Web 服务器在运行就返回 200，
+  即使数据库连接断了。用 `/ready` 检查完整服务健康。
+```
+
+### 模式二：输出格式模板
+
+需要特定格式时，提供模板比用散文描述更可靠：
+
+```markdown
+## Output format
+
+# [分析标题]
+
+## 执行摘要
+[一段关键发现概述]
+
+## 关键发现
+- 发现 1 + 支持数据
+- 发现 2 + 支持数据
+
+## 建议
+1. 具体可执行的建议
+2. 具体可执行的建议
+```
+
+### 模式三：检查清单（Checklist）
+
+```markdown
+## Workflow
+
+- [ ] 步骤 1：分析表单（运行 `scripts/analyze_form.py`）
+- [ ] 步骤 2：创建字段映射（编辑 `fields.json`）
+- [ ] 步骤 3：验证映射（运行 `scripts/validate_fields.py`）
+- [ ] 步骤 4：填写表单（运行 `scripts/fill_form.py`）
+```
+
+### 模式四：验证循环
+
+```markdown
+## Workflow
+
+1. 执行分析
+2. 运行 `scripts/validate.py output/`
+3. 如果失败：
+   - 查看错误消息
+   - 修复问题
+   - 从步骤 2 重新开始
+4. 只有验证通过后才交付
+```
+
+### 模式五：计划-验证-执行
+
+```markdown
+## Workflow
+
+1. 提取表单字段：`python scripts/analyze_form.py input.pdf` → `form_fields.json`
+2. 创建 `field_values.json` 映射每个字段名到其预期值
+3. 验证：`python scripts/validate_fields.py form_fields.json field_values.json`
+4. 如果验证失败，修订 `field_values.json` 并重新验证
+5. 填写表单：`python scripts/fill_form.py input.pdf field_values.json output.pdf`
+```
+
+---
+
+## 七、上下文使用原则
+
+### 添加 Agent 缺少的，省略 Agent 已知的
+
+```markdown
+<!-- ❌ 太冗长 — Agent 已经知道 PDF 是什么 -->
+PDF (Portable Document Format) 文件是一种常见文件格式...
+
+<!-- ✅ 更好 — 直接跳到 Agent 不会知道的内容 -->
+## 提取 PDF 文本
+
+使用 pdfplumber 进行文本提取。对于扫描文档，回退到 pdf2image + pytesseract。
+```
+
+对每段内容问自己："**没有这条指令，Agent 会犯错吗？**" 如果答案是否，就删掉它。
+
+### 追求适度详细
+
+过于全面的 Skill 可能弊大于利。简洁的、分步的指导加一个可工作的示例，通常优于详尽的文档。
+
+### 用渐进式披露组织大型 Skill
+
+```
+SKILL.md (< 500 行, < 5000 tokens)
+  → _references/api-errors.md (只在 API 返回非 200 时加载)
+  → _references/advanced-patterns.md (只在处理复杂场景时加载)
+```
+
+关键是告诉 Agent **何时**加载每个文件。
+
+### 校准控制程度
+
+| 任务特性 | 策略 | 示例 |
+|---------|------|------|
+| 多种方法有效，容忍变化 | **给 Agent 自由** | "检查 SQL 注入、验证认证、寻找竞态条件" |
+| 操作脆弱，必须按序执行 | **精确指定** | "运行确切的这个序列：`python scripts/migrate.py --verify --backup`。不要修改命令。" |
+
+### 提供默认值，而非菜单
+
+```markdown
+<!-- ❌ 太多选项 -->
+你可以使用 pypdf、pdfplumber、PyMuPDF 或 pdf2image...
+
+<!-- ✅ 清晰的默认值 + 逃生舱 -->
+使用 pdfplumber 进行文本提取。
+对于需要 OCR 的扫描 PDF，改用 pdf2image + pytesseract。
+```
+
+---
+
+## 八、脚本设计准则
+
+### 7.1 何时需要脚本
+
+| 场景 | 方案 |
+|------|------|
+| 现有工具已满足需求 | 直接在 SKILL.md 中引用一次性命令（`uvx`/`npx`/`deno run`） |
+| 需要自定义逻辑 | 放入 `scripts/` 目录 |
+
+### 7.2 一次性命令示例
+
+```markdown
+## Tools
+
+- `uvx ruff@0.8.0 check .` — Python 代码检查
+- `npx eslint@9 --fix .` — JavaScript 代码检查
+- `deno run npm:cheerio@1.0.0` — HTML 解析
+```
+
+**关键技巧**：固定版本（如 `ruff@0.8.0`）确保行为一致。
+
+### 7.3 自包含脚本（Python PEP 723）
+
+```python
+# /// script
+# dependencies = [
+#   "pandas",
+#   "matplotlib"
+# ]
+# ///
+
+import pandas as pd
+# ...
+```
+
+运行：`uv run scripts/my-script.py`
+
+### 7.4 脚本硬性要求
+
+1. **禁止交互式提示**（硬性要求）
+   ```
+   ❌ 差：脚本阻塞等待输入
+   $ python scripts/deploy.py
+   Target environment: _
+
+   ✅ 好：清晰的错误 + 引导
+   $ python scripts/deploy.py
+   Error: --env is required. Options: development, staging, production.
+   Usage: python scripts/deploy.py --env staging --tag v1.2.3
+   ```
+
+2. **必须有 `--help`**：不带参数时应输出 Usage，而非 stack trace
+3. **错误信息要友好**：指出问题 + 提供有效选项
+4. **输出结构化**：数据走 stdout，日志/警告走 stderr，优先 JSON/CSV
+5. **幂等性**："不存在则创建"比"创建并重复时报错"更安全
+
+---
+
+## 九、常见陷阱与解决方案
+
+| 陷阱 | 症状 | 解决方案 |
+|------|------|---------|
+| **Description 太宽泛** | Skill 在不相关任务时也被触发 | 添加明确的"不要用于"边界 |
+| **Description 太窄** | Skill 在应该触发时不触发 | 包含更多关键词和场景描述 |
+| **指令太长** | Agent 丢失重点，输出质量下降 | 保持 `< 500` 行，用 `_references/` 分流 |
+| **缺少边缘情况** | 特定输入时 Agent 犯错 | 添加 **Gotchas** 章节 |
+| **脚本交互式** | Agent 运行时挂起 | 所有输入通过 CLI 参数或环境变量 |
+| **过度规定** | Agent 无法灵活适应变化 | 只在脆弱操作处精确指定 |
+| **缺少示例** | Agent 理解偏了 | 添加具体的输入/输出示例 |
+| **信息重复** | SKILL.md 和 references 内容重叠 | 信息只存一处，SKILL.md 存核心流程，详细内容放 references |
+
+---
+
+## 十、调试排错
+
+### Skill 未被触发？
+
+1. **检查路径**：`ls .agents/skills/my-skill/SKILL.md`
+2. **检查 name**：必须匹配目录名（`my-skill` → `name: my-skill`）
+3. **检查 description**：是否包含用户实际会说的关键词？
+   - ❌ 差：`A tool for PDFs`
+   - ✅ 好：`Use when the user needs to process PDF files`
+4. **确认客户端已发现**：Claude Code / Copilot 输入 `/skills` 查看列表
+
+### Skill 触发但输出差？
+
+| 症状 | 原因 | 修复 |
+|------|------|------|
+| Agent 忽略某些指令 | 指令太长，超出注意力窗口 | 精简到 < 500 行 |
+| Agent 做不该做的事 | 指令有歧义 | 添加明确的禁止指令 |
+| Agent 跳过关键步骤 | 步骤间无验证门 | 添加检查清单或验证循环 |
+| 输出格式不对 | 无模板参考 | 添加具体的输出模板 |
+| 不同运行结果不一致 | 指令太模糊 | 增加示例和具体约束 |
+
+### 脚本执行失败？
+
+```bash
+# 检查是否自包含
+uv run scripts/my-script.py
+
+# 检查是否非交互式（应该输出 Usage，不挂起）
+echo "test" | python scripts/my-script.py --input -
+
+# 验证 Skill 格式
+npx skills-ref validate .agents/skills/my-skill
+```
+
+---
+
+## 十一、文件引用规范
+
+引用其他文件时，使用**从 Skill 根目录的相对路径**：
+
+```markdown
+See [the reference guide](_references/REFERENCE.md) for details.
+
+Run the extraction script:
+`scripts/extract.py`
+```
+
+**保持文件引用一层深度**，避免深度嵌套的引用链。
+
+---
+
+## 十二、与相关概念的关系
+
+### Agent Skills vs AGENTS.md / CLAUDE.md
+
+| 维度 | AGENTS.md / CLAUDE.md | Agent Skills |
+|------|----------------------|-------------|
+| 加载方式 | 始终加载到上下文 | 按需激活 |
+| 作用域 | 整个项目的通用指令 | 特定任务的专项能力 |
+| Token 开销 | 固定开销 | 按需付费 |
+| 管理方式 | 单文件 | 独立目录 |
+
+**最佳实践**：用 AGENTS.md 定义项目通用约定，用 Skills 添加专项能力。
+
+### Agent Skills vs MCP
+
+- **Agent Skills** = 知识和指令（告诉 Agent 怎么做）
+- **MCP** = 工具和数据（给 Agent 操作的手段）
+
+两者协同：Skill 提供专业知识，MCP 提供执行通道。
+
+---
+
+## 十三、5 分钟 Quickstart
+
+```bash
+# 1. 创建目录
+mkdir -p .agents/skills/my-skill
+
+# 2. 编写 SKILL.md
+cat > .agents/skills/my-skill/SKILL.md << 'EOF'
+---
+name: my-skill
+description: What this skill does and when to use it.
+---
+
+# My Skill Instructions
+
+## When to use this skill
+Use this skill when...
+
+## Workflow
+1. Step one
+2. Step two
+3. Step three
+
+## Gotchas
+- Important edge case to remember
+EOF
+
+# 3. 验证（可选）
+npx skills-ref validate .agents/skills/my-skill
+```
+
+### 各客户端 Skills 目录
+
+| 客户端 | 项目级路径 | 用户级路径 |
+|--------|-----------|-----------|
+| Claude Code | `.claude/skills/` 或 `.agents/skills/` | `~/.claude/skills/` 或 `~/.agents/skills/` |
+| VS Code Copilot | `.agents/skills/` | `~/.agents/skills/` |
+| Cursor | `.agents/skills/` | `~/.agents/skills/` |
+| OpenAI Codex | `.agents/skills/` | `~/.agents/skills/` |
+| Gemini CLI | `.agents/skills/` | `~/.agents/skills/` |
+
+**优先级**：项目级 > 用户级（同名时项目级覆盖）
+
+---
+
+## 十四、评估 Skill 质量
+
+### 触发准确性
+设计 ~20 个查询（10 个应触发 + 10 个不应触发），每个运行 3 次：
+- 应触发查询触发率 > 0.5 → 通过
+- 不应触发查询触发率 < 0.5 → 通过
+
+### 有/无 Skill 对比
+每个测试用例运行两次：一次带 Skill，一次不带（基线）。
+关注 `delta`：通过率提升 vs 额外时间/Token 成本。
+
+### 验证命令
+```bash
+npx skills-ref validate .agents/skills/my-skill
+```
+
+---
+
+## 十五、完整工作流（5 阶段）
+
+```
+真实任务 → 提取成功步骤 → 精炼 SKILL.md → 设计 evals → 优化 description → 发布
+```
+
+| 阶段 | 行动 | 产出 |
+|------|------|------|
+| **提取** | 在对话中完成真实任务，记录成功步骤和纠正 | 初稿 SKILL.md |
+| **精炼** | 执行 → 审查轨迹 → 修订 → 循环 | 稳定的 SKILL.md |
+| **评估** | 设计测试用例，运行 with/without 对比 | evals.json + 评分 |
+| **优化** | 训练集/验证集分割，优化 description | 高触发准确率版本 |
+| **发布** | `skills-ref validate` → `git commit` → 分享 | 生产级 Skill |
+
+---
+
+## 十六、真实 Skill 拆解
+
+### 16.1 Anthropic `frontend-design` Skill
+
+**定位**：高质量前端界面设计
+
+**目录结构**：
+```
+frontend-design/
+└── SKILL.md    # 纯文本 L1 级别
+```
+
+**SKILL.md 结构分析**：
+
+```markdown
+---
+name: frontend-design
+description: Create distinctive, production-grade frontend interfaces...
+---
+
+# Design Thinking          ← 先思考再编码
+## Purpose → Tone → Constraints → Differentiation
+
+# Frontend Aesthetics      ← 具体执行准则
+## Typography（独特字体）
+## Color & Theme（CSS 变量）
+## Motion（CSS 优先）
+## Spatial Composition（非对称/重叠）
+## Backgrounds & Visual Details
+
+# NEVER use...             ← 明确禁止清单
+## ❌ Inter/Roboto/Arial
+## ❌ 紫色渐变+白背景
+## ❌ 千篇一律布局
+```
+
+**可学习的模式**：
+1. **先思考后编码** — 用 4 个问题框定设计方向
+2. **明确禁止** — "NEVER use" 清单阻止 Agent 落入俗套
+3. **极端风格** — 要求"Pick an extreme"，拒绝平庸
+4. **无脚本** — 纯文本指令即可驱动高质量输出
+
+---
+
+### 16.2 Vercel `react-best-practices` Skill
+
+**定位**：React/Next.js 性能优化
+
+**目录结构**：
+```
+react-best-practices/
+└── SKILL.md    # 纯文本 L1 级别
+```
+
+**SKILL.md 结构分析**：
+
+```markdown
+---
+name: react-best-practices
+description: React + Next.js performance optimization...
+---
+
+# Priority Tiers           ← 按优先级分层
+## Critical: 消除瀑布流 + Bundle 大小优化
+## High: 服务端性能
+## Medium-High: 客户端数据获取
+## Medium: 重渲染优化
+## Low-Medium: JavaScript 微优化
+
+# Rules by Category        ← 按类别组织规则
+## Data Fetching (8 rules)
+## Component Structure (6 rules)
+## Bundle Optimization (5 rules)
+## ...
+```
+
+**可学习的模式**：
+1. **优先级分层** — Agent 根据紧急程度聚焦高影响操作
+2. **规则编号** — 40+ 规则分 8 类别，便于引用和检查
+3. **触发短语** — `"optimize my React app"` / `"review performance"` / `"check data fetching"`
+
+---
+
+### 16.3 拆解对比
+
+| Skill | 级别 | 核心模式 | 独特之处 |
+|-------|------|---------|---------|
+| `frontend-design` | L1 | 先思考后编码 + 明确禁止 | 强调"大胆美学方向" |
+| `react-best-practices` | L1 | 优先级分层 + 规则清单 | 按影响程度聚焦 |
+| `pdf-processing`（本库示例）| L4 | 验证循环 + 多脚本协同 | 技术细节外置到 references |
+
+**给你的启发**：
+- 写纯文本 Skill 时，用**禁止清单**划定边界比用**建议清单**更有效
+- 按**优先级**组织内容，Agent 会在上下文有限时先处理高优项
+- L1 Skill 不需要脚本，清晰的思维框架就能产生高质量输出
+
+---
+
+## 🔗 相关主题
+
+- [Agent Skills 深度解析](./Agent_Skills_Deep_Dive.md) — 完整规范、最佳实践、评估体系
+- [Agent Skills 实战指南](./Agent_Skills_Practical_Guide.md) — 从零创建、测试、优化和发布
+- [Agent Skills 生态目录](./Agent_Skills_Ecosystem_Catalog.md) — 451+ Skills 按团队和领域索引
+- [Agent Skills 多角色全景分析](./Agent_Skills_Multi_Role_Analysis.md) — 五角色视角深度解析完整生命周期
+- [AI Agents](../../06_Reinforcement_Learning/AI_Agents/Agent-in-nutshell.md) — Agent 基础概念
+- [官方文档](https://agentskills.io) — Agent Skills 标准文档站
+- [官方目录](https://officialskills.sh) — 在线浏览全部 451+ Skills
+
+## Related
+
+- [[15_Agent_Production/Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
+- [[15_Agent_Production/Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[15_Agent_Production/Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[15_Agent_Production/Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)

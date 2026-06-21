@@ -9,7 +9,7 @@ updated: 2026-05-31
 
 # 06 强化学习 (Reinforcement Learning)
 
-本章涵盖强化学习的完整技术栈，从数学基础（MDP/贝尔曼方程）到深度强化学习算法（DQN/PPO），再到具身智能与机器人。Agent 相关内容已合并至 [13_Agent_Production](../13_Agent_Production/README.md)。
+本章涵盖强化学习的完整技术栈，从数学基础（MDP/贝尔曼方程）到深度强化学习算法（DQN/PPO），再到具身智能与机器人。Agent 相关内容已合并至 [15_Agent_Production](../15_Agent_Production/README.md)。
 
 ## 学习路径 (Learning Path)
 
@@ -65,7 +65,7 @@ updated: 2026-05-31
 - **必修**: [概率统计](../01_Fundamentals/Probability_Statistics/Probability_Statistics.md)（理解 MDP 和期望计算）
 - **必修**: [神经网络核心](../03_Deep_Learning/Neural_Network_Core/Neural_Network_Core.md)（深度 RL 中的函数逼近）
 - **推荐**: [优化与正则化](../03_Deep_Learning/Optimization/Optimization.md)（稳定 RL 训练）
-- **可选**: [大语言模型架构](../04_NLP_LLMs/LLM_Architectures/LLM_Architectures.md)（理解 LLM 驱动的智能体）
+- **可选**: [大语言模型架构](../05_NLP_LLMs/LLM_Architectures/LLM_Architectures.md)（理解 LLM 驱动的智能体）
 
 ## 关键术语速查 (Key Terms)
 
@@ -100,5 +100,5 @@ updated: 2026-05-31
 - [[06_Reinforcement_Learning/Deep_RL/PPO_Deep_Dive]] — PPO_Deep_Dive
 - [[06_Reinforcement_Learning/Deep_RL/Deep_RL_for_dummy]] — Deep_RL_for_dummy
 - [[06_Reinforcement_Learning/Deep_RL/DQN_Deep_Dive]] — DQN_Deep_Dive
-- [[concepts/rlhf.md|rlhf]]
+- [[_concepts/rlhf.md|rlhf]]
 

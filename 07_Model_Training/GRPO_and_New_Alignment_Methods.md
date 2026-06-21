@@ -581,7 +581,7 @@ def grpo_loss(
 
 ### 4.6 GRPO 在 DeepSeek-R1 中的应用
 
-GRPO 是 DeepSeek-R1 训练流程的核心算法（详见 [DeepSeek-R1 技术分析](../04_NLP_LLMs/Reasoning_Models/DeepSeek_R1_Technical_Analysis.md)）：
+GRPO 是 DeepSeek-R1 训练流程的核心算法（详见 [DeepSeek-R1 技术分析](../05_NLP_LLMs/Reasoning_Models/DeepSeek_R1_Technical_Analysis.md)）：
 
 ```mermaid
 flowchart LR
@@ -825,7 +825,7 @@ $$
 
 ### 6.3 Rejection Sampling 在 DeepSeek-R1 中的应用
 
-在 DeepSeek-R1 的训练流程中，Rejection Sampling 扮演了关键的第三阶段角色（详见 [DeepSeek 深度解析](../04_NLP_LLMs/Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive.md)）：
+在 DeepSeek-R1 的训练流程中，Rejection Sampling 扮演了关键的第三阶段角色（详见 [DeepSeek 深度解析](../05_NLP_LLMs/Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive.md)）：
 
 ```mermaid
 flowchart LR
@@ -1201,7 +1201,7 @@ def hybrid_reward(prompt, response, alpha=0.4):
     return alpha * orm_score + (1 - alpha) * prm_score
 ```
 
-> **延伸阅读**: 更多关于 PRM 和 ORM 的详细技术分析，参见 [Process Reward Models 深度解析](../04_NLP_LLMs/Reasoning_Models/Process_Reward_Models.md)。
+> **延伸阅读**: 更多关于 PRM 和 ORM 的详细技术分析，参见 [Process Reward Models 深度解析](../05_NLP_LLMs/Reasoning_Models/Process_Reward_Models.md)。
 
 ---
 
@@ -1562,15 +1562,15 @@ flowchart TB
 ## 12. 与其他章节的关联
 
 ### 前置知识
-- [RLHF 与 DPO 深度解读](../22_Papers/RLHF_DPO_Deep_Dive.md) — InstructGPT、DPO 原始论文的详细解读
+- [RLHF 与 DPO 深度解读](../20_Papers/RLHF_DPO_Deep_Dive.md) — InstructGPT、DPO 原始论文的详细解读
 - [深度学习基础](../03_Deep_Learning/README.md) — 反向传播、优化器、损失函数
 - [强化学习基础](../06_Reinforcement_Learning/) — PPO、REINFORCE、Actor-Critic 等 RL 算法
 
 ### 进阶内容
-- [DeepSeek-R1 技术深度解析](../04_NLP_LLMs/Reasoning_Models/DeepSeek_R1_Technical_Analysis.md) — GRPO 在 R1 四阶段训练中的详细应用
-- [Process Reward Models 深度解析](../04_NLP_LLMs/Reasoning_Models/Process_Reward_Models.md) — PRM/ORM 的架构、训练方法和信用分配
-- [DeepSeek 深度解析](../04_NLP_LLMs/Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive.md) — DeepSeek 全系列产品和技术分析
-- [o1 类推理模型](../04_NLP_LLMs/Reasoning_Models/o1_Class_Reasoning_Models.md) — OpenAI o1 系列推理模型分析
+- [DeepSeek-R1 技术深度解析](../05_NLP_LLMs/Reasoning_Models/DeepSeek_R1_Technical_Analysis.md) — GRPO 在 R1 四阶段训练中的详细应用
+- [Process Reward Models 深度解析](../05_NLP_LLMs/Reasoning_Models/Process_Reward_Models.md) — PRM/ORM 的架构、训练方法和信用分配
+- [DeepSeek 深度解析](../05_NLP_LLMs/Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive.md) — DeepSeek 全系列产品和技术分析
+- [o1 类推理模型](../05_NLP_LLMs/Reasoning_Models/o1_Class_Reasoning_Models.md) — OpenAI o1 系列推理模型分析
 
 ### 相关训练技术
 - [微调策略完全指南](Fine_tuning_Strategies.md) — SFT、LoRA、QLoRA 等微调方法

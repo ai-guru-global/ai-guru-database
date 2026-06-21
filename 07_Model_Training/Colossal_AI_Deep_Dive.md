@@ -239,10 +239,10 @@ model, optimizer, criterion, dataloader, lr_scheduler = booster.boost(
 
 ## Related
 
-- [[concepts/colossal-ai]] — Colossal-AI 概念卡片
-- [[concepts/distributed-training]] — 分布式训练
-- [[concepts/deepspeed]] — DeepSpeed
-- [[concepts/megatron-lm]] — Megatron-LM
-- [[concepts/fsdp]] — FSDP
+- [[_concepts/colossal-ai]] — Colossal-AI 概念卡片
+- [[_concepts/distributed-training]] — 分布式训练
+- [[_concepts/deepspeed]] — DeepSpeed
+- [[_concepts/megatron-lm]] — Megatron-LM
+- [[_concepts/fsdp]] — FSDP
 - [[07_Model_Training/DeepSpeed_Deep_Dive]] — DeepSpeed 深度解析
 - [[07_Model_Training/Megatron_LM_Deep_Dive]] — Megatron-LM 深度解析

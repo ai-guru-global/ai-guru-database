@@ -50,10 +50,10 @@ updated: 2026-05-31
 - [模型训练](../07_Model_Training/) — 训练过程与评估的关系
 
 ### 进阶方向
-- [MLOps 流水线](../10_MLOps_Pipeline/) — 评估自动化和持续监控
-- [测试](../15_Testing/README.md) — AI 系统测试框架
-- [AI Ops](../16_AI_Ops/README.md) — 模型性能监控与告警
-- [价值对齐](../19_Ethics_Safety/Value_Alignment/Value_Alignment.md) — 公平性评估
+- [MLOps 流水线](../11_MLOps_Pipeline/) — 评估自动化和持续监控
+- [测试](../09_Testing/README.md) — AI 系统测试框架
+- [AI Ops](../13_AI_Ops/README.md) — 模型性能监控与告警
+- [价值对齐](../17_Ethics_Safety/Value_Alignment/Value_Alignment.md) — 公平性评估
 
 ---
 

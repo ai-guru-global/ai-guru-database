@@ -20,7 +20,7 @@ ai-guru-database/
 │
 ├── 📚 主知识章节 (00-23)     ← 核心内容，深度文档
 ├── 🗂️ 辅助知识章节 (90-94)   ← 学习/笔记/计划/工具/可视化
-├── 🔗 知识图谱层             ← concepts/ + synthesis/ + references/ + ...
+├── 🔗 知识图谱层             ← _concepts/ + _synthesis/ + _references/ + ...
 ├── 📋 _meta/                 ← 项目治理、审计、评估报告（集中管理）
 ├── 🗄️ 暂存与归档             ← _raw/ + _staging/ + _archives/
 ├── 🌐 工具与构建             ← Web/ (Astro) + _tools/
@@ -29,41 +29,44 @@ ai-guru-database/
 
 ---
 
-## 二、主知识章节（00-23）
+## 二、主知识章节（00-21，分层架构）
 
-> **定位**: 核心知识内容，每个章节覆盖一个技术领域。
-> **命名规范**: `{编号}_{Title_Case名称}/`，如 `04_NLP_LLMs/`
+> **定位**: 核心知识内容，按「从下到上」技术栈分层编排，编号连续无缺口。
+> **命名规范**: `{编号}_{Title_Case名称}/`，如 `05_NLP_LLMs/`
+> **重构记录**: 2026-06 由学习路径式编号重构为分层架构式（详见 _post-restructure-2026-06-19）
 
-| 编号 | 目录 | 定位 | 文件数 |
-|------|------|------|--------|
-| 00 | AI_Introduction | AI 通识与历史 | 13 |
-| 01 | Fundamentals | 数学与计算机基础 | 19 |
-| 02 | Machine_Learning | 经典 ML 算法 | 23 |
-| 03 | Deep_Learning | 神经网络核心 | 12 |
-| 04 | NLP_LLMs | 大模型技术 | 56 |
-| 05 | Computer_Vision | 计算机视觉 | 20 |
-| 06 | Reinforcement_Learning | 强化学习与具身智能 | ~15 |
-| 07 | Model_Training | 训练工程 | 23 |
-| 08 | Model_Evaluation | 评估方法 | 16 |
-| 09 | Deployment_Inference | 推理与部署 | 37 |
-| 10 | MLOps_Pipeline | MLOps 流水线 + 工具 Deep Dive | ~40 |
-| 11 | RAG_Systems | RAG 与向量数据库 | 31 |
-| 12 | Architecture_Infrastructure | 架构 + AI Gateway | ~32 |
-| 13 | Agent_Production | Agent 全链路（基础+生产） | ~65 |
-| 15 | Testing | AI 测试 | 12 |
-| 16 | AI_Ops | AI 运维（SRE/混沌/事件响应） | ~11 |
-| 17 | AI_Coding | AI 编程工具 | 12 |
-| 19 | Ethics_Safety | 伦理与安全 | 20 |
-| 20 | AI_Applications_Industry | 行业应用 | - |
-| 21 | Talks | 业界观点 | - |
-| 22 | Papers | 必读论文 | - |
-| 23 | Interviews | 面试与岗位 | - |
+| 编号 | 层级 | 目录 | 定位 |
+|------|------|------|------|
+| 00 | L0 基础 | AI_Introduction | AI 通识与历史 |
+| 01 | L0 基础 | Fundamentals | 数学与计算机基础 |
+| 02 | L1 模型 | Machine_Learning | 经典 ML 算法 |
+| 03 | L1 模型 | Deep_Learning | 神经网络核心 |
+| 04 | L1 模型 | Computer_Vision | 计算机视觉 |
+| 05 | L1 模型 | NLP_LLMs | 大模型技术 |
+| 06 | L1 模型 | Reinforcement_Learning | 强化学习与具身智能 |
+| 07 | L2 工程 | Model_Training | 训练工程 |
+| 08 | L2 工程 | Model_Evaluation | 评估方法 |
+| 09 | L2 工程 | Testing | AI 测试 |
+| 10 | L2 工程 | Deployment_Inference | 推理与部署 |
+| 11 | L3 平台 | MLOps_Pipeline | MLOps 流水线 + LLMOps |
+| 12 | L3 平台 | Architecture_Infrastructure | 架构 + AI Gateway |
+| 13 | L3 平台 | AI_Ops | AI 运维（SRE/混沌/事件响应） |
+| 14 | L4 应用 | RAG_Systems | RAG 与向量数据库 |
+| 15 | L4 应用 | Agent_Production | Agent 全链路（基础+生产） |
+| 16 | L4 应用 | AI_Coding | AI 编程工具与方法论 |
+| 17 | L5 治理 | Ethics_Safety | 伦理与安全 |
+| 18 | L6 资源 | AI_Applications_Industry | 行业应用 |
+| 19 | L6 资源 | Talks | 业界观点 |
+| 20 | L6 资源 | Papers | 必读论文 |
+| 21 | L6 资源 | Interviews | 面试与岗位 |
 
 **每个章节的标准文件**:
 - `README.md` — 章节导航
 - `README_for_dummy.md` — 入门版（初学者友好）
 - `{Topic}_for_dummy.md` — 单主题入门版
 - `{Topic}_Deep_Dive.md` — 深度解析
+
+**嵌套子目录规范**: 章节内子目录用纯主题命名（如 `Agent_Skills/`、`Tools/`），**不带全局编号前缀**（2026-06 重构统一）。
 
 ---
 
@@ -85,22 +88,22 @@ ai-guru-database/
 
 > **定位**: 轻量级知识索引与跨域分析，与主章节通过 `sources` 字段关联。
 
-### concepts/（50 个文件）
+### _concepts/（概念卡片）
 - **类型**: 概念卡片（Concept Cards）
 - **大小**: 每张 5-9 KB
 - **用途**: 单个核心概念的速查摘要
 - **与主章节关系**: `sources` 字段指向主目录中的深度文档
-- **索引**: [concepts/README.md](./concepts/README.md)
+- **索引**: [_concepts/README.md](./_concepts/README.md)
 - **阅读路径**: 概念卡片 → 主章节深度文档
 
-### synthesis/（17 个文件）
+### _synthesis/（跨域综合）
 - **类型**: 跨域综合文档（Cross-Domain Synthesis）
 - **大小**: 每篇 1.7-4.5 KB
 - **用途**: 连接 2-4 个不同章节的概念，揭示跨域关联
 - **与主章节关系**: `sources` 字段列出关联的多个章节文档
-- **索引**: [synthesis/README.md](./synthesis/README.md)
+- **索引**: [_synthesis/README.md](./_synthesis/README.md)
 
-### references/
+### _references/
 - **类型**: 参考资料
 - **用途**: 外部论文、书籍、课程的引用索引，含 PDF、课程索引等
 
@@ -131,9 +134,12 @@ ai-guru-database/
 | `_wiki-digest.md` | Wiki 摘要 |
 | `_wiki-status.md` | Wiki 状态报告 |
 | `_directory-conventions.md` | 本文档（目录规范） |
+| `_post-restructure-2026-06-19.md` | 目录重构后验证报告 |
+| `cheatsheets/` | 速查表子目录（cheatsheet-*.md 归位） |
 
 **命名规则**: `_` 前缀 + kebab-case，如 `_project-evaluation.md`
 **定期报告**: 附加日期后缀 `_xxx-YYYY-MM-DD.md`
+**子目录**: `cheatsheets/` 存放速查类文档（非治理报告）
 
 ---
 
@@ -155,7 +161,7 @@ ai-guru-database/
 |------|------|
 | `Web/` | 知识库前端应用（Astro + TypeScript） |
 | `_tools/` | 项目维护脚本（字数统计、链接检查、间距修复等） |
-| `concepts/` | 概念卡片（同时属于知识图谱层） |
+| `_concepts/` | 概念卡片（同时属于知识图谱层） |
 
 ---
 
@@ -173,6 +179,7 @@ ai-guru-database/
 | `KNOWN_ISSUES.md` | 已知问题追踪 |
 | `LICENSE` | MIT 许可证 |
 | `index.md` | Wiki 索引页（自动生成） |
+| `hot.md` | 热门页面导航（**正式入口**，非暂存；用户与 Agent 的快捷入口） |
 | `.gitignore` | Git 忽略规则 |
 
 ---
@@ -183,10 +190,10 @@ ai-guru-database/
 
 | 内容类型 | 放置位置 | 示例 |
 |----------|----------|------|
-| 某领域的深度技术文档 | 对应的主章节目录 | `04_NLP_LLMs/LLM_Architectures/xxx.md` |
-| 某概念的速查卡片 | `concepts/` | `concepts/xxx.md` |
-| 跨 2+ 领域的综合分析 | `synthesis/` | `synthesis/xxx-yyy.md` |
-| 某个工具/产品的深度解析 | 最相关的章节 | `09_Deployment_Inference/xxx_Deep_Dive.md` |
+| 某领域的深度技术文档 | 对应的主章节目录 | `05_NLP_LLMs/LLM_Architectures/xxx.md` |
+| 某概念的速查卡片 | `_concepts/` | `_concepts/xxx.md` |
+| 跨 2+ 领域的综合分析 | `_synthesis/` | `_synthesis/xxx-yyy.md` |
+| 某个工具/产品的深度解析 | 最相关的章节 | `10_Deployment_Inference/xxx_Deep_Dive.md` |
 | 项目治理报告 | `_meta/` | `_meta/_xxx-report.md` |
 | 原始素材（待处理） | `_raw/` | `_raw/xxx.md` |
 

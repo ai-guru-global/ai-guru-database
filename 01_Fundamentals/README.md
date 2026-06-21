@@ -96,5 +96,5 @@ updated: 2026-05-31
 - [[01_Fundamentals/Information_Theory/README|信息论基础 (Information Theory)]]
 - [[01_Fundamentals/Information_Theory/Information_Theory_Fundamentals|信息论基础: 从香农熵到 LLM 的交叉熵损失]]
 
-- [[concepts/data-structures-algorithms|Data Structures Algorithms]]
+- [[_concepts/data-structures-algorithms|Data Structures Algorithms]]
 

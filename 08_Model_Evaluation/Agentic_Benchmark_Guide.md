@@ -16,12 +16,12 @@ updated: 2026-06-04
 ## 相关阅读
 
 - [LLM Benchmark Suite 2026](./LLM_Benchmark_Suite_2026.md) — 通用 LLM 评测基准全景
-- [Agent 生产化部署](../13_Agent_Production/README.md) — Agent 从评测到生产的完整路径
-- [全球 LLM 生态总览](../04_NLP_LLMs/Global_LLM_Ecosystem/README.md) — 各模型家族与能力对比
+- [Agent 生产化部署](../15_Agent_Production/README.md) — Agent 从评测到生产的完整路径
+- [全球 LLM 生态总览](../05_NLP_LLMs/Global_LLM_Ecosystem/README.md) — 各模型家族与能力对比
 
 ---
 
-- [[synthesis/benchmark-evaluation|评测基准 × 评测方法论：从分数到可信评估]]
+- [[_synthesis/benchmark-evaluation|评测基准 × 评测方法论：从分数到可信评估]]
 ## 一、Agent 评测概述
 
 ### 1.1 为什么标准 Benchmark 对 Agent 失效

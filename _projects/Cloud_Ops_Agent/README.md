@@ -38,14 +38,14 @@ updated: '2026-05-31'
 ## 与其他章节的关联
 
 ### 前置知识
-- [Agent 生产](../13_Agent_Production/README.md) — Agent 架构、Harness 工程
+- [Agent 生产](../15_Agent_Production/README.md) — Agent 架构、Harness 工程
 - [架构基础设施](../12_Architecture_Infrastructure/README.md) — 高可用、容量规划
-- [AI Ops](../16_AI_Ops/README.md) — 可观测性、混沌工程
+- [AI Ops](../13_AI_Ops/README.md) — 可观测性、混沌工程
 
 ### 进阶方向
 - [AI Gateway](../14_AI_Gateway/README.md) — 云服务的流量治理
-- [测试](../15_Testing/README.md) — 运维变更的测试策略
-- [伦理安全](../19_Ethics_Safety/README.md) — 自动化运维的安全合规
+- [测试](../09_Testing/README.md) — 运维变更的测试策略
+- [伦理安全](../17_Ethics_Safety/README.md) — 自动化运维的安全合规
 
 ---
 
@@ -63,8 +63,8 @@ updated: '2026-05-31'
 - [[18_Cloud_Ops_Agent/README_for_dummy|18 云运维 Agent — 小白版 ☁️]]
 - [[18_Cloud_Ops_Agent/Cloud_Product_Ops_2026|Cloud Product Ops 2026: 云产品运维 Agent 体系]]
 
-- [[concepts/ai-architecture]] — AI 系统架构
-- [[concepts/model-deployment]] — 模型部署
+- [[_concepts/ai-architecture]] — AI 系统架构
+- [[_concepts/model-deployment]] — 模型部署
 - [[18_Cloud_Ops_Agent/docs/index]] — Cloud Ops Agent 知识库首页
 
 - [[18_Cloud_Ops_Agent/README|云运维 Agent (Cloud Ops Agent)]]

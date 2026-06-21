@@ -182,6 +182,6 @@ DPO 会最大化模型对 `chosen` 回答的生成概率，同时极力惩罚 `r
 ---
 
 ## 相关阅读
-- [[04_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026]]
-- [[22_Papers/RLHF_DPO_Deep_Dive]]
+- [[05_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026]]
+- [[20_Papers/RLHF_DPO_Deep_Dive]]
 - [[07_Model_Training/Optimization_for_dummy]]

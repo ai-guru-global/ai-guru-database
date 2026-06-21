@@ -210,13 +210,13 @@ docker run --rm --gpus '"device=mig-uuid://MIG-4416c2c4-..."' \
   -e CUDA_VISIBLE_DEVICES=0 vllm/vllm-openai:latest --model Qwen2.5-1.5B
 ```
 
-> 阿里云 PPU 容器隔离细节见[容器隔离使用指南](https://help.aliyun.com/zh/document_detail/3031170.html)；CDI 如何统一描述 MIG/国产加速器设备见 [[concepts/cdi]]。
+> 阿里云 PPU 容器隔离细节见[容器隔离使用指南](https://help.aliyun.com/zh/document_detail/3031170.html)；CDI 如何统一描述 MIG/国产加速器设备见 [[_concepts/cdi]]。
 
 ---
 
 ## 6. K8s 生产实践：GPU Operator MIG 策略
 
-裸 `nvidia-smi` 切 MIG 适合单机调试；**生产 K8s 集群应交给 [NVIDIA GPU Operator](https://github.com/NVIDIA/gpu-operator) 统一管理**（国产卡用对应厂商 operator / [[concepts/gpu-operator]]）。
+裸 `nvidia-smi` 切 MIG 适合单机调试；**生产 K8s 集群应交给 [NVIDIA GPU Operator](https://github.com/NVIDIA/gpu-operator) 统一管理**（国产卡用对应厂商 operator / [[_concepts/gpu-operator]]）。
 
 ### 6.1 两种 MIG 策略
 
@@ -340,12 +340,12 @@ CUDA_VISIBLE_DEVICES=4,2,MIG-${UUID},3,PPU-${UUID}  # 生效：GPU4,GPU2
 | [[12_Architecture_Infrastructure/CDI_Deep_Dive]] | CDI 是把 MIG 切片透传进容器的标准 JSON 接口（§6 专讲 MIG 切片） |
 | [[12_Architecture_Infrastructure/DRA_Deep_Dive]] | DRA 是 MIG 在 K8s 的未来声明式分配方式 |
 | [[12_Architecture_Infrastructure/HAMi_Deep_Dive]] | HAMi 可在 MIG 之上做多租户 oversubscribe，互补 |
-| [[concepts/gpu-virtualization]] | MIG 在 GPU 虚拟化全景中的定位 |
-| [[concepts/cdi]] / [[concepts/dra]] / [[concepts/gpu-operator]] | MIG 落地 K8s 的概念链 |
-| [[synthesis/hami-cdi-dra]] | HAMi + CDI + DRA + MIG 的综合选型 |
+| [[_concepts/gpu-virtualization]] | MIG 在 GPU 虚拟化全景中的定位 |
+| [[_concepts/cdi]] / [[_concepts/dra]] / [[_concepts/gpu-operator]] | MIG 落地 K8s 的概念链 |
+| [[_synthesis/hami-cdi-dra]] | HAMi + CDI + DRA + MIG 的综合选型 |
 | [[12_Architecture_Infrastructure/Multi_Tenant_Architecture]] | MIG 作为多租户推理的硬件隔离底座 |
 | [[01_Fundamentals/AI_Hardware/NVIDIA_AMD_GPU_Deep_Dive]] | A100/H100 硬件基础 |
-| [[09_Deployment_Inference/vLLM_Deep_Dive]] | vLLM 跑在 MIG 切片上的部署实践 |
+| [[10_Deployment_Inference/vLLM_Deep_Dive]] | vLLM 跑在 MIG 切片上的部署实践 |
 
 ---
 
@@ -354,7 +354,7 @@ CUDA_VISIBLE_DEVICES=4,2,MIG-${UUID},3,PPU-${UUID}  # 生效：GPU4,GPU2
 - [[12_Architecture_Infrastructure/CDI_Deep_Dive]] — MIG 切片如何被容器消费
 - [[12_Architecture_Infrastructure/DRA_Deep_Dive]] — K8s 设备分配的未来（含 MIG）
 - [[12_Architecture_Infrastructure/HAMi_Deep_Dive]] — GPU 超卖与多租户（与 MIG 互补）
-- [[concepts/gpu-virtualization]] — GPU 虚拟化全景
-- [[synthesis/hami-cdi-dra]] — GPU 共享技术栈综合
+- [[_concepts/gpu-virtualization]] — GPU 虚拟化全景
+- [[_synthesis/hami-cdi-dra]] — GPU 共享技术栈综合
 - [[_sources/aliyun/MIG使用指南_v2.1]] — 原始信源归档（阿里云 PPU MIG 指南 v2.1）
 - [[README]] — 知识库总索引

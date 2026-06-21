@@ -710,7 +710,7 @@ Phase 4: 高级功能
 - [LiteLLM 深度解析](./LiteLLM_Deep_Dive.md)
 - [AI Gateway 2026 概述](./AI_Gateway_2026.md)
 - [API 设计 for AI](../../93_Tools/API_Design_for_AI.md)
-- [部署推理 2026](../../09_Deployment_Inference/Deployment_Inference_2026.md)
+- [部署推理 2026](../../10_Deployment_Inference/Deployment_Inference_2026.md)
 
 ## Related
 

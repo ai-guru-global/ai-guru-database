@@ -1,0 +1,52 @@
+---
+title: Prompt Engineer 按公司/级别区分的题库
+category: 23-interviews-prompt-engineer
+tags: ["interviews", "career", "experience", "practitioners"]
+summary: "如何构建大规模 Prompt 资产管理体系？"
+created: 2026-05-31
+updated: 2026-05-31
+---
+
+# Prompt Engineer 按公司/级别区分的题库
+
+## 公司类型
+### 大厂/平台型
+- 如何构建大规模 Prompt 资产管理体系？
+- 评测与安全如何平台化？
+
+### 创业公司/中小团队
+- 如何在有限时间内提升效果？
+- 如何搭建轻量评测与回归？
+
+### 研究机构/实验室
+- Prompt 方法如何与论文评测对齐？
+- 如何量化 Prompt 改进的贡献？
+
+### 具体公司（示例）
+- **字节跳动**: 在高速迭代与大规模业务场景下，该岗位如何平衡效果、成本与稳定性？
+- **腾讯**: 多业务线协同下如何统一标准并推动落地？
+- **Meta**: 开源与隐私合规并重时，该岗位如何处理权衡？
+- **OpenAI**: 面向高影响系统时如何强化安全与质量保障？
+
+## 级别
+### 初级 (Junior)
+- 基础 Prompt 模式与任务理解。
+- 简单模板构建能力。
+
+### 中级 (Mid)
+- 评测体系与版本管理能力。
+- 复杂场景策略设计能力。
+
+### 高级/负责人 (Senior/Lead)
+- Prompt 资产平台化与治理。
+- 跨团队推广与标准制定。
+
+---
+*Last updated: 2026-02-26*
+
+## Related
+
+- [[21_Interviews/AI_Data_Analyst/company_level_question_bank]] — AI Data Analyst 按公司/级别区分的题库 (共享: career, experience, interviews, practitioners)
+- [[21_Interviews/AI_Data_Analyst/interview_answers]] — AI Data Analyst 面试题实例答案 (共享: career, experience, interviews, practitioners)
+- [[21_Interviews/AI_Data_Analyst/interview_preparing]] — AI Data Analyst 面试准备 (共享: career, experience, interviews, practitioners)
+- [[21_Interviews/AI_Data_Analyst/question_bank]] — AI Data Analyst 题库 (共享: career, experience, interviews, practitioners)

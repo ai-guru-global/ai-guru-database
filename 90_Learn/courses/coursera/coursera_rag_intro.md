@@ -35,5 +35,5 @@ lifecycle: reviewed
 - 想快速上手 RAG 的开发者
 - 需要实操经验的工程师
 
-> **关联**: -> [[11_RAG_Systems|RAG 系统]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[14_RAG_Systems|RAG 系统]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
 

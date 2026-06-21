@@ -133,9 +133,9 @@ zip -r ai-guru-claude.zip claude_upload/
 
 - `00_AI_Introduction/AI_Fundamentals.md`
 - `00_AI_Introduction/AI_Glossary.md`
-- `04_NLP_LLMs/LLM_Architectures/LLM_Architectures.md`
-- `04_NLP_LLMs/Prompt_Engineering/Prompt-Engineering-in-nutshell.md`
-- `11_RAG_Systems/RAG-in-nutshell.md`
+- `05_NLP_LLMs/LLM_Architectures/LLM_Architectures.md`
+- `05_NLP_LLMs/Prompt_Engineering/Prompt-Engineering-in-nutshell.md`
+- `14_RAG_Systems/RAG-in-nutshell.md`
 - `06_Reinforcement_Learning/AI_Agents/Agent-in-nutshell.md`
 
 ---

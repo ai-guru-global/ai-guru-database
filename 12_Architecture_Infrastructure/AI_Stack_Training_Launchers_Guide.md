@@ -161,4 +161,4 @@ swift dpo \
 - [[07_Model_Training/HF_Accelerate_DeepSpeed_Guide|HF Accelerate & DeepSpeed 指南]]
 - [[07_Model_Training/ms_swift_Deep_Dive|ms-swift 深度解析]]
 - [[07_Model_Training/Training_Monitoring_2026|训练监控与实验追踪 2026]]
-- [[concepts/distributed-parallelism|分布式并行策略]]
+- [[_concepts/distributed-parallelism|分布式并行策略]]

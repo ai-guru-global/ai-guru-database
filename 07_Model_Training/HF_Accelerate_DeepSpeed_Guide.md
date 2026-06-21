@@ -150,5 +150,5 @@ accelerate launch --num_processes=4 my_script.py
 
 ## 相关阅读
 - [[07_Model_Training/Optimization_for_dummy]]
-- [[04_NLP_LLMs/Fine_tuning_Techniques/PEFT_Advanced_2026]]
+- [[05_NLP_LLMs/Fine_tuning_Techniques/PEFT_Advanced_2026]]
 - [[12_Architecture_Infrastructure/AI_Infrastructure_2026]]

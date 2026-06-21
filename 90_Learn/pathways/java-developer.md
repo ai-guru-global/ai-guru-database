@@ -52,12 +52,12 @@ Phase 5 企业级实践（安全 + 部署 + 多云）
 **🎯 目标**：理解 AI/LLM 核心概念，了解 Java 生态的 AI 布局。
 
 **📚 核心阅读**：
-- [Stage 1: 基础概念](../concepts/stage1-foundation.md)（快速浏览）
+- [Stage 1: 基础概念](../_concepts/stage1-foundation.md)（快速浏览）
 - [Java 生态 AI 全景概览](../../01_Fundamentals/Java_Ecosystem_AI/Java_Ecosystem_AI_Overview.md)（重点）
 
 **🔗 深入阅读**：
-- [LLM 架构（小白版）](../../04_NLP_LLMs/LLM_Architectures/LLM_Architectures_for_dummy.md)
-- [RAG 系统入门](../../11_RAG_Systems/RAG_Systems_for_dummy.md)
+- [LLM 架构（小白版）](../../05_NLP_LLMs/LLM_Architectures/LLM_Architectures_for_dummy.md)
+- [RAG 系统入门](../../14_RAG_Systems/RAG_Systems_for_dummy.md)
 - [AI 系统架构全景图](../../12_Architecture_Infrastructure/AI_System_Architecture_2026.md)
 
 **💡 重点理解**：
@@ -127,8 +127,8 @@ public class ChatController {
 **🎯 目标**：掌握用 Spring AI 构建 RAG 系统 —— 文档加载、分块、向量存储、检索增强。
 
 **📚 核心阅读**：
-- [Spring AI RAG 深度解析](../../11_RAG_Systems/Spring_AI_RAG_Deep_Dive.md)（重点精读）
-- [RAG 高级专题](../../11_RAG_Systems/RAG_Advanced_2026.md)（选读）
+- [Spring AI RAG 深度解析](../../14_RAG_Systems/Spring_AI_RAG_Deep_Dive.md)（重点精读）
+- [RAG 高级专题](../../14_RAG_Systems/RAG_Advanced_2026.md)（选读）
 
 **🔧 实践任务**：
 
@@ -142,7 +142,7 @@ public class ChatController {
 | Task 6 | 构建完整的企业知识库问答系统 |
 
 **🔗 参考文档**：
-- [Milvus 深度解析](../../11_RAG_Systems/Milvus_Deep_Dive.md)
+- [Milvus 深度解析](../../14_RAG_Systems/Milvus_Deep_Dive.md)
 - [Spring AI 网关与安全](../../14_AI_Gateway/Spring_AI_Gateway_Security.md)
 
 **✅ 学会标志**：
@@ -159,7 +159,7 @@ public class ChatController {
 
 **📚 核心阅读**：
 - [Spring AI 深度解析 - MCP 部分](../../01_Fundamentals/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md#9-mcp-协议集成)
-- [Agent Skills 深度解析](../../13_Agent_Production/Agent_Skills/Agent_Skills_Deep_Dive.md)
+- [Agent Skills 深度解析](../../15_Agent_Production/Agent_Skills/Agent_Skills_Deep_Dive.md)
 
 **🔧 实践任务**：
 
@@ -183,8 +183,8 @@ public class ChatController {
 
 **📚 核心阅读**：
 - [Spring AI 网关与安全](../../14_AI_Gateway/Spring_AI_Gateway_Security.md)（重点）
-- [JVM AI 部署与推理](../../09_Deployment_Inference/JVM_AI_Deployment.md)（重点）
-- [Java AI 测试实践](../../15_Testing/Java_AI_Testing.md)（重点）
+- [JVM AI 部署与推理](../../10_Deployment_Inference/JVM_AI_Deployment.md)（重点）
+- [Java AI 测试实践](../../09_Testing/Java_AI_Testing.md)（重点）
 - [Java Cloud SDK 指南](../../18_Cloud_Ops_Agent/Java_Cloud_SDK_Guide.md)（选读）
 
 **🔧 实践任务**：
@@ -384,7 +384,7 @@ Day 1-2: Embedding + 向量数据库
 □ 安装 PGVector (docker run pgvector/pgvector)
 □ 理解 Embedding 原理
 □ 实现文档 → Embedding → PGVector 写入
-□ 阅读文档: → [RAG 深度指南](../../11_RAG_Systems/Spring_AI_RAG_Deep_Dive.md)
+□ 阅读文档: → [RAG 深度指南](../../14_RAG_Systems/Spring_AI_RAG_Deep_Dive.md)
 
 Day 3-5: 构建第一个 RAG 应用
 ────────────────────────────────────────────────────────────────
@@ -472,7 +472,7 @@ Week 7: 测试
 Day 1-2: 单元测试
   □ Mock ChatModel 测试
   □ 测试数据工厂搭建
-  □ 阅读文档: → [Java AI 测试](../../15_Testing/Java_AI_Testing.md)
+  □ 阅读文档: → [Java AI 测试](../../09_Testing/Java_AI_Testing.md)
 
 Day 3-5: 集成测试 + 安全测试
   □ Testcontainers 集成测试
@@ -485,7 +485,7 @@ Day 1-3: Docker + K8s
   □ GraalVM Native Image 构建
   □ Docker 镜像优化
   □ Kubernetes 部署配置
-  □ 阅读文档: → [JVM AI 部署](../../09_Deployment_Inference/JVM_AI_Deployment.md)
+  □ 阅读文档: → [JVM AI 部署](../../10_Deployment_Inference/JVM_AI_Deployment.md)
 
 Day 4-5: 监控与运维
   □ 生产就绪检查清单

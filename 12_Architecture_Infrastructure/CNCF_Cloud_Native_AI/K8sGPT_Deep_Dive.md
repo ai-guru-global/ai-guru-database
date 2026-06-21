@@ -11,7 +11,7 @@ updated: "2026-06-16"
 
 > **一句话理解**: K8sGPT 是 CNCF 沙箱级的"AI SRE"——用一组分析器扫集群里的失败信号，再交给 LLM（可本地 Ollama）翻译成"哪里坏了、怎么修"的人话，支持 CLI 和常驻 Operator 两种模式。
 
-> 📐 **概念方法论**: K8sGPT 把 SRE 的"读告警 → 读 Event/Pod 日志 → 在脑子里推理根因 → 写处置建议"这条认知链路，拆成**确定性**（Analyzers 提取结构化失败信号）+ **概率性**（LLM 翻译成自然语言）两段。这种"用 LLM 操作 LLM 基础设施"的范式与 [[16_AI_Ops/SRE_for_AI_Systems]] 一脉相承；与同类项目 [[CNCF_Cloud_Native_AI/HolmesGPT_Deep_Dive]] 相比，K8sGPT 更偏"集群健康扫描器"，HolmesGPT 更偏"告警分诊员"。
+> 📐 **概念方法论**: K8sGPT 把 SRE 的"读告警 → 读 Event/Pod 日志 → 在脑子里推理根因 → 写处置建议"这条认知链路，拆成**确定性**（Analyzers 提取结构化失败信号）+ **概率性**（LLM 翻译成自然语言）两段。这种"用 LLM 操作 LLM 基础设施"的范式与 [[13_AI_Ops/SRE_for_AI_Systems]] 一脉相承；与同类项目 [[CNCF_Cloud_Native_AI/HolmesGPT_Deep_Dive]] 相比，K8sGPT 更偏"集群健康扫描器"，HolmesGPT 更偏"告警分诊员"。
 
 ---
 
@@ -250,7 +250,7 @@ k8sgpt auth list
 k8sgpt auth default --backend localai
 ```
 
-> Ollama 端建议至少 `qwen2.5:14b` 或 `llama3.1:8b` 以上，模型太小会导致解释含糊。详见 [[09_Deployment_Inference/Ollama_Deep_Dive]]。
+> Ollama 端建议至少 `qwen2.5:14b` 或 `llama3.1:8b` 以上，模型太小会导致解释含糊。详见 [[10_Deployment_Inference/Ollama_Deep_Dive]]。
 
 ### 4.3 Operator 安装（Helm）
 
@@ -650,7 +650,7 @@ kubectl -n k8sgpt top pod -l app.kubernetes.io/name=k8sgpt
 # 典型: CPU 50~200m, Mem 50~150Mi (不含 Ollama)
 ```
 
-> Ollama 本身的资源开销取决于模型大小，见 [[09_Deployment_Inference/Ollama_Deep_Dive]]。建议 Ollama 独立 Deployment，避免与 operator 争抢资源。
+> Ollama 本身的资源开销取决于模型大小，见 [[10_Deployment_Inference/Ollama_Deep_Dive]]。建议 Ollama 独立 Deployment，避免与 operator 争抢资源。
 
 ### 7.5 常见故障排查
 
@@ -722,7 +722,7 @@ A: 核心区别在**触发模型**：K8sGPT 主动扫全集群（"体检"），H
 A: 不能。K8sGPT 的输出是"建议"不是"指令"，**必须人工复核**。尤其涉及 `kubectl delete`、扩缩容等动作前要核对 Result 里的 `error.text` 原始字段。生产中禁止把 K8sGPT 的建议直接接入自动修复。
 
 **Q6: 本地 Ollama 用多大模型合适？**
-A: 排障场景至少 14B（如 `qwen2.5:14b`、`llama3.1:8b` 勉强）。复杂根因分析建议 70B 级别。模型太小会出现"含糊其辞"或编造资源。详见 [[09_Deployment_Inference/Ollama_Deep_Dive]]。
+A: 排障场景至少 14B（如 `qwen2.5:14b`、`llama3.1:8b` 勉强）。复杂根因分析建议 70B 级别。模型太小会出现"含糊其辞"或编造资源。详见 [[10_Deployment_Inference/Ollama_Deep_Dive]]。
 
 ---
 
@@ -731,5 +731,5 @@ A: 排障场景至少 14B（如 `qwen2.5:14b`、`llama3.1:8b` 勉强）。复杂
 - [[CNCF_Cloud_Native_AI/README]] — CNCF 云原生 LLM 项目全景
 - [[CNCF_Cloud_Native_AI/HolmesGPT_Deep_Dive]] — 告警分诊员，K8sGPT 的互补项
 - [[CNCF_Cloud_Native_AI/kagent_Deep_Dive]] — 自主多步 Agent，更强的自动修复方向
-- [[16_AI_Ops/SRE_for_AI_Systems]] — 用 LLM 做 SRE 的方法论总论
-- [[09_Deployment_Inference/Ollama_Deep_Dive]] — K8sGPT 离线模式依赖的本地推理引擎
+- [[13_AI_Ops/SRE_for_AI_Systems]] — 用 LLM 做 SRE 的方法论总论
+- [[10_Deployment_Inference/Ollama_Deep_Dive]] — K8sGPT 离线模式依赖的本地推理引擎

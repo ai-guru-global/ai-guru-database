@@ -39,9 +39,9 @@ summary: 基于关键词扫描和深度检测的 LLM 全生命周期内容覆盖
 - 视频理解架构：时空注意力、帧采样策略
 
 **建议新建页面**:
-- ✅ `04_NLP_LLMs/Multimodal_Models/Native_Multimodal_Architectures.md` — 已创建 (12.8 KB)
-- ✅ `04_NLP_LLMs/Multimodal_Models/Modality_Fusion_Mechanisms.md` — 已创建 (14.2 KB)
-- ✅ `04_NLP_LLMs/Multimodal_Models/Video_Understanding_Architectures.md` — 已创建 (15.9 KB)
+- ✅ `05_NLP_LLMs/Multimodal_Models/Native_Multimodal_Architectures.md` — 已创建 (12.8 KB)
+- ✅ `05_NLP_LLMs/Multimodal_Models/Modality_Fusion_Mechanisms.md` — 已创建 (14.2 KB)
+- ✅ `05_NLP_LLMs/Multimodal_Models/Video_Understanding_Architectures.md` — 已创建 (15.9 KB)
 
 ---
 
@@ -58,8 +58,8 @@ summary: 基于关键词扫描和深度检测的 LLM 全生命周期内容覆盖
 - MoE 的通信开销与 All-to-All 优化
 
 **建议新建页面**:
-- ✅ `04_NLP_LLMs/LLM_Architectures/MoE_Routing_and_Load_Balancing.md` — 已创建 (15.1 KB)
-- ✅ `04_NLP_LLMs/LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md` — 已创建 (11.1 KB)
+- ✅ `05_NLP_LLMs/LLM_Architectures/MoE_Routing_and_Load_Balancing.md` — 已创建 (15.1 KB)
+- ✅ `05_NLP_LLMs/LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md` — 已创建 (11.1 KB)
 
 ---
 
@@ -94,7 +94,7 @@ summary: 基于关键词扫描和深度检测的 LLM 全生命周期内容覆盖
 
 **建议新建页面**:
 - ✅ `03_Deep_Learning/State_Space_Models_2026.md` — 已扩充 RWKV/RetNet
-- ✅ `04_NLP_LLMs/LLM_Architectures/Transformer_Alternatives.md` — 已创建 (13.7 KB)
+- ✅ `05_NLP_LLMs/LLM_Architectures/Transformer_Alternatives.md` — 已创建 (13.7 KB)
 
 ---
 
@@ -111,8 +111,8 @@ summary: 基于关键词扫描和深度检测的 LLM 全生命周期内容覆盖
 -  prefix caching 在多轮对话中的收益分析
 
 **建议新建页面**:
-- ✅ `09_Deployment_Inference/Speculative_Decoding_Advanced_2026.md` — 已创建 (14.8 KB)
-- ✅ `09_Deployment_Inference/Prompt_Caching_and_KV_Cache_Optimization.md` — 已创建 (15.2 KB)
+- ✅ `10_Deployment_Inference/Speculative_Decoding_Advanced_2026.md` — 已创建 (14.8 KB)
+- ✅ `10_Deployment_Inference/Prompt_Caching_and_KV_Cache_Optimization.md` — 已创建 (15.2 KB)
 
 ---
 
@@ -129,9 +129,9 @@ summary: 基于关键词扫描和深度检测的 LLM 全生命周期内容覆盖
 - 推理模型的评测：Beyond accuracy — 推理过程可追溯性
 
 **建议新建页面**:
-- ✅ `04_NLP_LLMs/Reasoning_Models/o1_Class_Reasoning_Models.md` — 已创建 (13.7 KB)
-- ✅ `04_NLP_LLMs/Reasoning_Models/DeepSeek_R1_Technical_Analysis.md` — 已创建 (13.5 KB)
-- ✅ `04_NLP_LLMs/Reasoning_Models/Process_Reward_Models.md` — 已创建 (7.0 KB)
+- ✅ `05_NLP_LLMs/Reasoning_Models/o1_Class_Reasoning_Models.md` — 已创建 (13.7 KB)
+- ✅ `05_NLP_LLMs/Reasoning_Models/DeepSeek_R1_Technical_Analysis.md` — 已创建 (13.5 KB)
+- ✅ `05_NLP_LLMs/Reasoning_Models/Process_Reward_Models.md` — 已创建 (7.0 KB)
 
 ---
 

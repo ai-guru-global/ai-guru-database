@@ -1164,4 +1164,4 @@ class TenantAccessControl:
 - [[12_Architecture_Infrastructure/Architecture-in-nutshell.md|Architecture-in-nutshell]]
 - [[12_Architecture_Infrastructure/Architecture_Infrastructure_for_dummy.md|Architecture_Infrastructure_for_dummy]]
 - [[12_Architecture_Infrastructure/Spring_AI_Architecture.md|Spring_AI_Architecture]]
-- [[concepts/llm-infrastructure.md|llm-infrastructure]]
+- [[_concepts/llm-infrastructure.md|llm-infrastructure]]

@@ -64,9 +64,9 @@ updated: '2026-06-16'
 
 ### 进阶方向
 - [模型评估](../08_Model_Evaluation/) — 训练后如何评估模型质量
-- [部署推理](../09_Deployment_Inference/README.md) — 训练好的模型如何上线
-- [MLOps 流水线](../10_MLOps_Pipeline/) — 自动化训练与持续交付
-- [RAG 系统](../11_RAG_Systems/) — 检索增强生成的训练策略
+- [部署推理](../10_Deployment_Inference/README.md) — 训练好的模型如何上线
+- [MLOps 流水线](../11_MLOps_Pipeline/) — 自动化训练与持续交付
+- [RAG 系统](../14_RAG_Systems/) — 检索增强生成的训练策略
 
 ---
 
@@ -108,12 +108,12 @@ updated: '2026-06-16'
 - [[12_Architecture_Infrastructure/AI_Stack_GPU_Monitoring_Guide|AI Stack GPU 监控指南]]
 - [[12_Architecture_Infrastructure/AI_Stack_Model_Management_Guide|AI Stack 模型下载与管理指南]]
 - [[07_Model_Training/Data_and_FineTuning_for_dummy|数据与微调大白话]]
-- [[concepts/data-cleaning-pipeline|数据清洗 Pipeline]]
-- [[concepts/dora|DoRA]]
-- [[concepts/rs-lora|RS-LoRA]]
+- [[_concepts/data-cleaning-pipeline|数据清洗 Pipeline]]
+- [[_concepts/dora|DoRA]]
+- [[_concepts/rs-lora|RS-LoRA]]
 
-- [[concepts/model-training]] — 模型训练
-- [[concepts/distributed-systems]] — 分布式系统
-- [[concepts/optimization-regularization]] — 优化与正则化
+- [[_concepts/model-training]] — 模型训练
+- [[_concepts/distributed-systems]] — 分布式系统
+- [[_concepts/optimization-regularization]] — 优化与正则化
 
 

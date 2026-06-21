@@ -303,8 +303,8 @@ lm_eval --model local-completions \
 
 ## Related
 
-- [[concepts/lm-evaluation-harness]] — LM Evaluation Harness 概念卡片
-- [[concepts/opencompass]] — OpenCompass
-- [[concepts/model-evaluation]] — 模型评估
+- [[_concepts/lm-evaluation-harness]] — LM Evaluation Harness 概念卡片
+- [[_concepts/opencompass]] — OpenCompass
+- [[_concepts/model-evaluation]] — 模型评估
 - [[08_Model_Evaluation/OpenCompass_Deep_Dive]] — OpenCompass 深度解析
 - [[08_Model_Evaluation/LLM_Benchmark_Suite_2026]] — LLM 基准套件 2026

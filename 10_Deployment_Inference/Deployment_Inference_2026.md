@@ -1192,7 +1192,7 @@ kubectl logs -f deployment/vllm-deployment -n llm
 - [TensorRT-LLM 深度解析](./TensorRT_LLM_Deep_Dive.md)
 - [Ollama 深度解析](./Ollama_Deep_Dive.md)
 - [llama.cpp 深度解析](./llama_cpp_Deep_Dive.md)
-- [AI Gateway 对比 2026](../14_AI_Gateway/AI_Gateway_Comparison_2026.md)
+- [AI Gateway 对比 2026](../12_Architecture_Infrastructure/AI_Gateway/AI_Gateway_Comparison_2026.md)
 - [API 设计 for AI](../93_Tools/API_Design_for_AI.md)
 
 ## Related

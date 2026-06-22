@@ -123,12 +123,12 @@ Altman 的管理风格融合了硅谷创业文化与技术理想主义。他强�
 
 - [Talks 主题合成 2026](../Talks_Synthesis_2026.md) -- Scaling Laws、开源 vs 闭源、AI 安全、Agent 未来等主题中 Altman 的立场
 - [Sam Altman 金句集](./sayings.md) -- 更多金句与权威来源链接
-- [AI 历史时间线](../00_AI_Introduction/AI_History_Timeline.md) -- ChatGPT 发布与 AI 产业爆发
-- [AI 伦理与社会](../00_AI_Introduction/AI_Ethics_Society.md) -- Altman 参议院听证与 AI 监管讨论
-- [AI 未来趋势](../00_AI_Introduction/AI_Future_Trends.md) -- AGI 时间线与产业格局预判
-- [Agent 生产实践](../15_Agent_Production/README.md) -- OpenAI 的 Agent 生态与工具调用
-- [AI 伦理与安全](../17_Ethics_Safety/README.md) -- AI 对齐与安全部署策略
-- [LLM 基础](../05_NLP_LLMs/README.md) -- GPT 系列模型架构与演进
+- [AI 历史时间线](../../00_AI_Introduction/AI_History_Timeline.md) -- ChatGPT 发布与 AI 产业爆发
+- [AI 伦理与社会](../../00_AI_Introduction/AI_Ethics_Society.md) -- Altman 参议院听证与 AI 监管讨论
+- [AI 未来趋势](../../00_AI_Introduction/AI_Future_Trends.md) -- AGI 时间线与产业格局预判
+- [Agent 生产实践](../../15_Agent_Production/README.md) -- OpenAI 的 Agent 生态与工具调用
+- [AI 伦理与安全](../../17_Ethics_Safety/README.md) -- AI 对齐与安全部署策略
+- [LLM 基础](../../05_NLP_LLMs/README.md) -- GPT 系列模型架构与演进
 - [Jensen Huang](./Jensen_Huang/about.md) -- 算力基础设施与 Scaling 共识
 - [Demis Hassabis](./Demis_Hassabis/about.md) -- AGI 路线之争：产品化 vs 科学化
 - [Yann LeCun](./Yann_LeCun/about.md) -- 开源 vs 闭源路线的核心辩论

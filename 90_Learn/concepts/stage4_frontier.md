@@ -46,7 +46,7 @@ updated: '2026-05-31'
 | Kling 3.0 | 电影级视频生成，中国团队 | 快手 |
 
 - **入门阅读**：[多模态视觉](../../04_Computer_Vision/Multimodal_Vision/Multimodal_Vision_for_dummy.md)
-- **深入学习**：[视频生成](../04_Computer_Vision/Video_Generation/README.md)
+- **深入学习**：[视频生成](../../04_Computer_Vision/README.md)
 - **关联概念**：CLIP、扩散模型、视频生成、具身智能
 
 ### 2. AI Agent 深度进阶
@@ -70,8 +70,8 @@ updated: '2026-05-31'
 - 异常检测 → 根因分析 → 自动修复 → 报告的闭环
 - 参见：[Ops Agent Harness 2026](../../15_Agent_Production/Agent_Evaluation/Ops_Agent_Harness_2026.md)
 
-- **入门阅读**：[AI Agent 入门](../../06_Reinforcement_Learning/AI_Agents/AI_Agents_for_dummy.md)
-- **深入学习**：[Agent 速查](../../06_Reinforcement_Learning/AI_Agents/Agent-in-nutshell.md)
+- **入门阅读**：[AI Agent 入门](../../15_Agent_Production/Agent_Foundations/AI_Agents_for_dummy.md)
+- **深入学习**：[Agent 速查](../../15_Agent_Production/Agent_Foundations/Agent-in-nutshell.md)
 - **关联概念**：Tool Use、规划、记忆、多 Agent 协作
 
 ### 3. 世界模型与 JEPA 架构
@@ -85,7 +85,7 @@ updated: '2026-05-31'
 - **相关进展**：
   - **V-JEPA** (Meta, 2024)：基于 JEPA 架构的视频预测模型，在机器人操作任务上表现优异
   - **物理 AI**：结合世界模型和机器人控制，实现"先在模拟器里试错，再在真实世界执行"
-- **入门阅读**：[世界模型](../03_Deep_Learning/World_Models/README.md)
+- **入门阅读**：[世界模型](../../03_Deep_Learning/README.md)
 - **关联概念**：自监督学习、多模态、具身智能、机器人
 
 ### 4. VLA — 视觉-语言-动作模型与具身智能
@@ -138,8 +138,8 @@ updated: '2026-05-31'
   - **RLHF / DPO**：用人类反馈信号对齐模型
   - **Constitutional AI (CAI)**：让 AI 根据一组"宪法"自我约束
   - **可解释性研究**：机械可解释性 (Mechanistic Interpretability) 试图理解 Transformer 内部在计算什么
-- **入门阅读**：[价值对齐](../17_Ethics_Safety/Value_Alignment/Value_Alignment_for_dummy.md)
-- **深入学习**：[AI 安全与红队](../17_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming_for_dummy.md)
+- **入门阅读**：[价值对齐](../../17_Ethics_Safety/Value_Alignment/Value_Alignment_for_dummy.md)
+- **深入学习**：[AI 安全与红队](../../17_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming_for_dummy.md)
 - **关联概念**：RLHF、机械可解释性、红队测试
 
 ### 7. Scaling Law 与规模法则
@@ -196,5 +196,5 @@ updated: '2026-05-31'
 
 完成 Stage 4 后，你已经具备了完整的 AI 认知框架。建议：
 - **深入某个方向** → 选择对应的专业路径继续深耕
-- **准备面试/述职** → 回顾 [milestones.md](../milestones.md) 自测
+- **准备面试/述职** → 回顾 [milestones.md](../guides/milestones.md) 自测
 - **关注最新进展** → 订阅 [AI Guru 知识库](../README.md) 的更新

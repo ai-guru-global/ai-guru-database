@@ -212,7 +212,7 @@ flowchart LR
 | 入门指南 | [AI_Ops_for_dummy.md](./AI_Ops_for_dummy.md) |
 | SRE 实践 | [SRE_for_AI_Systems.md](./SRE_for_AI_Systems.md) |
 | 事故响应 | [AI_Incident_Response_Playbook.md](./AI_Incident_Response_Playbook.md) |
-| 可观测性 | [AI_Observability_Guide.md](./AI_Observability_Guide.md) |
+| 可观测性 | [AI_Observability_Guide.md](../11_MLOps_Pipeline/AI_Observability_Guide.md) |
 
 ---
 

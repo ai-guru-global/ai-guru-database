@@ -22,8 +22,8 @@ updated: '2026-05-31'
 
 | 文档 | 内容 | 用途 |
 |------|------|------|
-| [Project Comprehensive Evaluation 2026](./Project_Comprehensive_Evaluation_2026.md) | 从角色视角看项目：Agent 工程师、大模型工程师等视角的评估 | 了解不同角色的需求 |
-| [Project Structure Evaluation 2026](./Project_Structure_Evaluation_2026.md) | 数据驱动的项目结构评估：结构一致性、内容深度、交叉引用 | 了解内容健康度 |
+| [Project Comprehensive Evaluation 2026](../_meta/Project_Comprehensive_Evaluation_2026.md) | 从角色视角看项目：Agent 工程师、大模型工程师等视角的评估 | 了解不同角色的需求 |
+| [Project Structure Evaluation 2026](../_meta/Project_Structure_Evaluation_2026.md) | 数据驱动的项目结构评估：结构一致性、内容深度、交叉引用 | 了解内容健康度 |
 | [Implementation Plan 2026](./Implementation_Plan_2026.md) | 2026 年详细的实施计划，包含 Q2-Q4 的任务清单 | 了解具体执行计划 |
 
 ## 评估体系

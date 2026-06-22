@@ -264,7 +264,7 @@ print(answer)
 ### 进阶方向
 - [图像分割](../Segmentation/Segmentation.md) — SAM 的多模态分割能力
 - [生成模型](../Generative_Models/Generative_Models.md) — 文本引导的图像生成（DALL-E、SD）
-- [AI 智能体](../../06_Reinforcement_Learning/AI_Agents/AI_Agents.md) — 多模态 Agent 的视觉感知能力
+- [AI 智能体](../../15_Agent_Production/Agent_Foundations/AI_Agents.md) — 多模态 Agent 的视觉感知能力
 - [具身智能](../../06_Reinforcement_Learning/Robotics_Embodied_AI/Embodied_AI_2026.md) — VLA 模型: 视觉-语言-动作端到端机器人控制
 - [微调技术](../../05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques.md) — 多模态模型的微调方法
 

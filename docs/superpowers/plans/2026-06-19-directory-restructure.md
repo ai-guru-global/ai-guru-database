@@ -598,7 +598,7 @@ def test_rewrite_links_handles_wikilink_and_mdlink(tmp_path, monkeypatch):
     doc = tmp_path / "doc.md"
     doc.write_text(
         "见 [[05_NLP_LLMs/LLM_Fundamentals]] 和 "
-        "[链接](05_NLP_LLMs/README.md)。\n"
+        "[链接](../../../05_NLP_LLMs/README.md)。\n"
         "正文提及 04_NLP_LLMs 不应被改。\n", encoding="utf-8")
 
     rs.rewrite_links_in_file(doc)

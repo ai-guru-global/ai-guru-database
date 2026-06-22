@@ -17,8 +17,8 @@ updated: '2026-05-31'
 
 | 文档 | 内容 | 更新频率 |
 |------|------|---------|
-| [Project Comprehensive Evaluation 2026](./Project_Comprehensive_Evaluation_2026.md) | 项目全面评估报告（角色视角）：Agent 工程师、大模型工程师、架构师、测试、工单管理 | 季度 |
-| [Project Structure Evaluation 2026](./Project_Structure_Evaluation_2026.md) | 项目结构评估报告（数据驱动）：结构一致性、内容深度、交叉引用、覆盖完整度 | 季度 |
+| [Project Comprehensive Evaluation 2026](../_meta/Project_Comprehensive_Evaluation_2026.md) | 项目全面评估报告（角色视角）：Agent 工程师、大模型工程师、架构师、测试、工单管理 | 季度 |
+| [Project Structure Evaluation 2026](../_meta/Project_Structure_Evaluation_2026.md) | 项目结构评估报告（数据驱动）：结构一致性、内容深度、交叉引用、覆盖完整度 | 季度 |
 | [Implementation Plan 2026](./Implementation_Plan_2026.md) | 2026 年实施计划与路线图 | 月度 |
 
 ---

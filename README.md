@@ -363,7 +363,7 @@ graph LR
 - [AI 硬件 2026](./01_Fundamentals/AI_Hardware/AI_Hardware_2026.md) - H100/H200/B200, GPU 选型
 - [Scaling Laws 与训练动力学](./07_Model_Training/Scaling_Laws_and_Training_Dynamics.md) - Chinchilla/Kaplan/涌现能力
 - [GRPO 与新对齐方法](./07_Model_Training/GRPO_and_New_Alignment_Methods.md) - GRPO/DPO/RLHF/RLOO
-- [Agent 协议 2026](./06_Reinforcement_Learning/AI_Agents/Agent_Protocols_2026.md) - MCP/A2A/UCP
+- [Agent 协议 2026](15_Agent_Production/Agent_Foundations/Agent_Protocols_2026.md) - MCP/A2A/UCP
 - [AI 基础设施](./12_Architecture_Infrastructure/AI_Infrastructure_2026.md) - SGLang, AI Gateway
 
 </td>

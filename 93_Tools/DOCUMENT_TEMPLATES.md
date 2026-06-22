@@ -914,7 +914,7 @@ flowchart TB
 ## 9. 与其他章节的关联
 
 - [相关技术](../XX_Technology/README.md)
-- [伦理安全](../../17_Ethics_Safety/README.md)
+- [伦理安全](../17_Ethics_Safety/README.md)
 
 ---
 
@@ -960,8 +960,8 @@ AI 领域领袖人物的简介、核心观点和动态追踪。
 ## 相关主题与延伸阅读
 
 - [Talks Synthesis 2026](../19_Talks/Talks_Synthesis_2026.md) — 查看 [姓名] 在 Scaling Laws、AI 安全等主题中的立场
-- [AI 历史](../../00_AI_Introduction/AI_History_Timeline.md) — [姓名] 的关键贡献时间线
-- [AI 未来趋势](../../00_AI_Introduction/AI_Future_Trends.md) — 行业前瞻判断汇总
+- [AI 历史](../00_AI_Introduction/AI_History_Timeline.md) — [姓名] 的关键贡献时间线
+- [AI 未来趋势](../00_AI_Introduction/AI_Future_Trends.md) — 行业前瞻判断汇总
 
 ---
 

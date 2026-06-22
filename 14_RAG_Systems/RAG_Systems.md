@@ -497,9 +497,9 @@ evaluation_prompt = f"""
 
 ### 前置知识
 
-- [Transformer 架构](../../05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution.md) - 理解 Embedding 和 Attention 机制
-- [向量检索基础](../../01_Fundamentals/Data_Structures_Algorithms/Data_Structures_Algorithms.md) - HNSW、IVF 索引原理
-- [自然语言处理基础](../../05_NLP_LLMs/LLM_Architectures/LLM_Architectures.md) - 文本预处理和分词
+- [Transformer 架构](../05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution.md) - 理解 Embedding 和 Attention 机制
+- [向量检索基础](../01_Fundamentals/Data_Structures_Algorithms/Data_Structures_Algorithms.md) - HNSW、IVF 索引原理
+- [自然语言处理基础](../05_NLP_LLMs/LLM_Architectures/LLM_Architectures.md) - 文本预处理和分词
 
 ### 进阶推荐
 
@@ -507,7 +507,7 @@ evaluation_prompt = f"""
 - [vLLM Deep Dive](../10_Deployment_Inference/vLLM_Deep_Dive.md) - 通用生产级 RAG 推理引擎
 - [SGLang Deep Dive](../10_Deployment_Inference/SGLang_Deep_Dive.md) - 多轮 / RAG 前缀缓存优化
 - [模型部署与推理](../10_Deployment_Inference/Deployment_Inference.md) - RAG 系统的生产环境部署
-- [Prompt 工程](../../05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering.md) - 优化 RAG 的 Prompt 设计
+- [Prompt 工程](../05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering.md) - 优化 RAG 的 Prompt 设计
 - [模型评估](../08_Model_Evaluation/Model_Evaluation.md) - RAG 系统的效果评估方法
 
 ## 8. 面试高频问题 (Interview FAQs)

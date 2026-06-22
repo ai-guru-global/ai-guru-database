@@ -123,12 +123,12 @@ Hassabis 的学术背景横跨神经科学与计算机科学，这深刻影响�
 
 - [Talks 主题合成 2026](../Talks_Synthesis_2026.md) -- Scaling Laws、开源 vs 闭源、AI 安全、Agent 未来等主题中 Hassabis 的立场
 - [Demis Hassabis 金句集](./sayings.md) -- 更多金句与权威来源链接
-- [AI 历史时间线](../00_AI_Introduction/AI_History_Timeline.md) -- AlphaGo、AlphaFold 里程碑事件
-- [AI 未来趋势](../00_AI_Introduction/AI_Future_Trends.md) -- AI for Science 与 AGI 研究路线
-- [AI 伦理与社会](../00_AI_Introduction/AI_Ethics_Society.md) -- AI 治理与国际合作
-- [强化学习](../06_Reinforcement_Learning/README.md) -- AlphaGo/MuZero 的强化学习技术细节
-- [深度学习基础](../03_Deep_Learning/README.md) -- 深度神经网络与多模态架构
-- [LLM 基础](../05_NLP_LLMs/README.md) -- Gemini 系列模型架构
+- [AI 历史时间线](../../00_AI_Introduction/AI_History_Timeline.md) -- AlphaGo、AlphaFold 里程碑事件
+- [AI 未来趋势](../../00_AI_Introduction/AI_Future_Trends.md) -- AI for Science 与 AGI 研究路线
+- [AI 伦理与社会](../../00_AI_Introduction/AI_Ethics_Society.md) -- AI 治理与国际合作
+- [强化学习](../../06_Reinforcement_Learning/README.md) -- AlphaGo/MuZero 的强化学习技术细节
+- [深度学习基础](../../03_Deep_Learning/README.md) -- 深度神经网络与多模态架构
+- [LLM 基础](../../05_NLP_LLMs/README.md) -- Gemini 系列模型架构
 - [Sam Altman](./Sam_Altman/about.md) -- AGI 路线之争：科学化 vs 产品化
 - [Jensen Huang](./Jensen_Huang/about.md) -- AI for Science 的算力基础设施支撑
 - [Dario Amodei](./Dario_Amodei/about.md) -- AI 安全治理的不同侧重

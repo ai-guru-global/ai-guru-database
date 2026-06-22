@@ -600,7 +600,7 @@ Tanh(拉伸版Sigmoid):
 ### 🔗 相关主题:
 
 **前置知识**:
-- [线性代数小白版](../../../01_Fundamentals/Linear_Algebra/Linear_Algebra_for_dummy.md) - 理解矩阵计算(可选)
+- [线性代数小白版](../../01_Fundamentals/Linear_Algebra/Linear_Algebra_for_dummy.md) - 理解矩阵计算(可选)
 - [机器学习小白版](../../02_Machine_Learning/README_for_dummy.md) - 对比传统方法
 
 **进阶学习**:

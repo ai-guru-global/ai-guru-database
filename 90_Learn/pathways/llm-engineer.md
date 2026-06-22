@@ -172,8 +172,8 @@ Stage 4 前沿（Agent / 多模态）
 **📚 核心概念**：[Stage 3: 工程实践 — Agent 部分](../_concepts/stage3-engineering.md) + [Stage 4 前沿 — Agent 深度](../_concepts/stage4-frontier.md)
 
 **🔗 深入阅读**：
-- [AI Agent（小白版）](../../06_Reinforcement_Learning/AI_Agents/AI_Agents_for_dummy.md)
-- [AI Agent（速查版）](../../06_Reinforcement_Learning/AI_Agents/Agent-in-nutshell.md)
+- [AI Agent（小白版）](../../15_Agent_Production/Agent_Foundations/AI_Agents_for_dummy.md)
+- [AI Agent（速查版）](../../15_Agent_Production/Agent_Foundations/Agent-in-nutshell.md)
 - [AI 工作流（速查版）](../../15_Agent_Production/Agent_Workflow/Workflow-in-nutshell.md)
 
 **💡 Agent 核心架构**：
@@ -219,7 +219,7 @@ Agent 框架选择：
 **🔗 深入阅读**：
 - [部署与推理（小白版）](../../10_Deployment_Inference/Deployment_Inference_for_dummy.md)
 - [部署与推理（速查版）](../../10_Deployment_Inference/Inference-in-nutshell.md)
-- [AI Gateway（速查版）](../../14_AI_Gateway/Gateway-in-nutshell.md)
+- [AI Gateway（速查版）](../../12_Architecture_Infrastructure/AI_Gateway/Gateway-in-nutshell.md)
 - [AIOps（速查版）](../../13_AI_Ops/AIOps-in-nutshell.md)
 
 **💡 生产优化技术栈**：
@@ -259,7 +259,7 @@ Agent 框架选择：
 
 ## 里程碑自测
 
-完成本路径后，请回顾 [milestones.md](../milestones.md) 中 Stage 2-4 的自测题，重点关注 LLM、Agent、RAG 相关问题。
+完成本路径后，请回顾 [milestones.md](../guides/milestones.md) 中 Stage 2-4 的自测题，重点关注 LLM、Agent、RAG 相关问题。
 
 ## 下一步推荐
 

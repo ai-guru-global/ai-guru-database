@@ -847,7 +847,7 @@ loss_tensor = all_reduce_average(loss_tensor)
 
 - **分布式训练监控**: 详见 [./Distributed_Training_2026.md](./Distributed_Training_2026.md)
 - **MLOps 流水线集成**: 详见 [../11_MLOps_Pipeline/](../11_MLOps_Pipeline/)
-- **生产环境可观测性**: 详见 [../13_AI_Ops/AI_Observability_Guide.md](../13_AI_Ops/AI_Observability_Guide.md)
+- **生产环境可观测性**: 详见 [../13_AI_Ops/AI_Observability_Guide.md](../11_MLOps_Pipeline/AI_Observability_Guide.md)
 
 ---
 

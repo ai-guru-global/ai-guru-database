@@ -75,8 +75,8 @@ updated: 2026-05-31
 ## 开始之前你需要知道
 
 **必备基础** (建议先看这些):
-- [神经网络核心 - 小白版](../../03_Deep_Learning/Neural_Network_Core/Neural_Network_Core_for_dummy.md) - 理解 AI 大脑的工作原理
-- [深度学习优化 - 小白版](../../03_Deep_Learning/Optimization/Optimization_for_dummy.md) - 理解训练过程
+- [神经网络核心 - 小白版](../03_Deep_Learning/Neural_Network_Core/Neural_Network_Core_for_dummy.md) - 理解 AI 大脑的工作原理
+- [深度学习优化 - 小白版](../03_Deep_Learning/Optimization/Optimization_for_dummy.md) - 理解训练过程
 
 **不需要的基础**:
 - ❌ 不需要会写论文

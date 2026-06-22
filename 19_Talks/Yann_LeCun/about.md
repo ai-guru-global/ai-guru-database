@@ -129,12 +129,12 @@ LeCun 认为监督学习受限于标注数据的规模和成本，而自监督�
 
 - [Talks 主题合成 2026](../Talks_Synthesis_2026.md) -- Scaling Laws、开源 vs 闭源、AI 安全等主题中 LeCun 的立场
 - [Yann LeCun 金句集](./sayings.md) -- 更多金句与权威来源链接
-- [AI 历史时间线](../00_AI_Introduction/AI_History_Timeline.md) -- CNN 的发明与深度学习革命
-- [AI 伦理与社会](../00_AI_Introduction/AI_Ethics_Society.md) -- 开源 vs 闭源、AI 安全争论
-- [AI 未来趋势](../00_AI_Introduction/AI_Future_Trends.md) -- 世界模型与后 LLM 架构
-- [深度学习基础](../03_Deep_Learning/README.md) -- CNN 架构与自监督学习理论
-- [计算机视觉](../04_Computer_Vision/README.md) -- LeNet 到现代视觉模型的演进
-- [LLM 基础](../05_NLP_LLMs/README.md) -- LLaMA 开源模型与 LLM 局限性讨论
+- [AI 历史时间线](../../00_AI_Introduction/AI_History_Timeline.md) -- CNN 的发明与深度学习革命
+- [AI 伦理与社会](../../00_AI_Introduction/AI_Ethics_Society.md) -- 开源 vs 闭源、AI 安全争论
+- [AI 未来趋势](../../00_AI_Introduction/AI_Future_Trends.md) -- 世界模型与后 LLM 架构
+- [深度学习基础](../../03_Deep_Learning/README.md) -- CNN 架构与自监督学习理论
+- [计算机视觉](../../04_Computer_Vision/README.md) -- LeNet 到现代视觉模型的演进
+- [LLM 基础](../../05_NLP_LLMs/README.md) -- LLaMA 开源模型与 LLM 局限性讨论
 
 ---
 

@@ -229,7 +229,7 @@ Phase 6: 前沿专题（多模态 / Agent / 世界模型）
 
 ## 里程碑自测
 
-完成本路径后，请回顾 [milestones.md](../milestones.md) 中的所有自测题。同时检查：
+完成本路径后，请回顾 [milestones.md](../guides/milestones.md) 中的所有自测题。同时检查：
 - [ ] 能阅读并理解 NeurIPS / ICLR / ACL 的论文
 - [ ] 能复现至少 2 篇论文的实验
 - [ ] 对某个前沿方向有深入理解，能提出 research ideas

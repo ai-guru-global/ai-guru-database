@@ -660,7 +660,7 @@ AI 伦理与安全 10 条底线:
 - [微调技术](../05_NLP_LLMs/Fine_tuning_Techniques/) — SFT 是对齐的第一步
 - [深度强化学习](../06_Reinforcement_Learning/Deep_RL/Deep_RL.md) — PPO 是 RLHF 的核心算法
 - [Prompt Engineering](../05_NLP_LLMs/Prompt_Engineering/Prompt-Engineering-in-nutshell.md) — 理解 Prompt Injection 攻击面
-- [AI Agent](../06_Reinforcement_Learning/AI_Agents/Agent-in-nutshell.md) — Agentic AI 安全是新前线
+- [AI Agent](../15_Agent_Production/Agent_Foundations/Agent-in-nutshell.md) — Agentic AI 安全是新前线
 - [Model Evaluation](../08_Model_Evaluation/Evaluation-in-nutshell.md) — 评测方法论基础
 
 ### 同系列速览

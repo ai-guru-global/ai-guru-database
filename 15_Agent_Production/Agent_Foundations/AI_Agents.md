@@ -1922,8 +1922,8 @@ jobs:
 ### 10.1 前置知识
 - **大语言模型**: [LLM架构](../../05_NLP_LLMs/LLM_Architectures/LLM_Architectures.md) —— Agent 的"大脑"
 - **提示工程**: [Prompt Engineering](../../05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering.md) —— 设计 Agent 的系统提示
-- **强化学习**: [RL Foundations](../RL_Foundations/RL_Foundations.md) —— Agent 的决策理论基础
-- **深度强化学习**: [Deep RL](../Deep_RL/Deep_RL.md) —— RLHF 训练 Agent
+- **强化学习**: [RL Foundations](../../06_Reinforcement_Learning/RL_Foundations/RL_Foundations.md) —— Agent 的决策理论基础
+- **深度强化学习**: [Deep RL](../../06_Reinforcement_Learning/Deep_RL/Deep_RL.md) —— RLHF 训练 Agent
 
 ### 10.2 相关技术
 - **RAG**: [检索增强生成] —— Agent 的记忆系统基础

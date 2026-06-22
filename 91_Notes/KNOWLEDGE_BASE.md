@@ -185,7 +185,7 @@ Cutting-edge content updated for 2026:
 | **[AI Video Generation 2026](../04_Computer_Vision/Video_Generation/Video_Generation_2026.md)** | Veo3, Kling 3.0, Seedance, post-Sora landscape |
 | **[AI Security 2026](../17_Ethics_Safety/AI_Security_2026/AI_Security_2026.md)** | OWASP LLM Top 10 + ASI framework, Agent security |
 | **[Agent Production](../15_Agent_Production/Enterprise_Agent/Agent_Production_2026.md)** | K8s architecture, monitoring, CI/CD, cost control |
-| **[Agent Protocols 2026](../06_Reinforcement_Learning/AI_Agents/Agent_Protocols_2026.md)** | MCP/A2A/UCP stack, protocol testing framework |
+| **[Agent Protocols 2026](../15_Agent_Production/Agent_Foundations/Agent_Protocols_2026.md)** | MCP/A2A/UCP stack, protocol testing framework |
 | **[AI Infrastructure 2026](../12_Architecture_Infrastructure/AI_Infrastructure_2026.md)** | SGLang 16k tok/s vs vLLM, AI Gateway, LLMOps caching |
 
 ---

@@ -184,7 +184,7 @@ updated: '2026-05-31'
 ## 下一步
 
 - 想学深度学习？→ [03_Deep_Learning/README_for_dummy.md](../03_Deep_Learning/README_for_dummy.md)
-- 想学优化？→ [03_Deep_Learning/Optimization/README_for_dummy.md](../03_Deep_Learning/Optimization/README_for_dummy.md)
+- 想学优化？→ [03_Deep_Learning/Optimization/README_for_dummy.md](../03_Deep_Learning/README_for_dummy.md)
 - 想学部署？→ [10_Deployment_Inference/README_for_dummy.md](../10_Deployment_Inference/README_for_dummy.md)
 
 ---

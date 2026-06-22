@@ -112,7 +112,7 @@ AI 成本结构：
 **📚 核心概念**：[Stage 3 工程实践 — Agent / 工作流部分](../_concepts/stage3-engineering.md)（重点理解 Agent 能做什么）
 
 **🔗 深入阅读**：
-- [AI Agent（小白版）](../../06_Reinforcement_Learning/AI_Agents/AI_Agents_for_dummy.md) — 理解 AI Agent 的能力边界
+- [AI Agent（小白版）](../../15_Agent_Production/Agent_Foundations/AI_Agents_for_dummy.md) — 理解 AI Agent 的能力边界
 - [AI 工作流（速查版）](../../15_Agent_Production/Agent_Workflow/Workflow-in-nutshell.md) — 理解 AI 工作流设计
 - [AI 工具与实践指南](../../00_AI_Introduction/AI_Technology_Landscape.md) — 理解 AI 工具生态
 
@@ -227,7 +227,7 @@ Step 5: 迭代计划（如何持续优化 AI 效果？）
 
 ## 里程碑自测
 
-完成本路径后，请回顾 [milestones.md](../milestones.md) 中 Stage 0-1 的自测题，重点检查：
+完成本路径后，请回顾 [milestones.md](../guides/milestones.md) 中 Stage 0-1 的自测题，重点检查：
 - [ ] 能理解 AI 术语并与 AI 团队有效沟通
 - [ ] 能评估 AI 产品需求的可行性和成本
 - [ ] 能设计包含 AI 功能的完整产品方案

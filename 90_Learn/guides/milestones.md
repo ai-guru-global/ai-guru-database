@@ -40,8 +40,8 @@ updated: 2026-05-31
 | 问题 | 补救建议 |
 |------|---------|
 | Q1-Q3 | 回到 [Stage 0 概念卡](./_concepts/stage-0-awakening.md)，重点阅读 AI 定义、AI 能力边界、历史部分 |
-| Q4 | 阅读 [AI 伦理与社会影响](../00_AI_Introduction/AI_Ethics_Society.md) |
-| Q5-Q6 | 阅读 [监督学习入门](../02_Machine_Learning/Supervised_Learning/Supervised_Learning_for_dummy.md) |
+| Q4 | 阅读 [AI 伦理与社会影响](../../00_AI_Introduction/AI_Ethics_Society.md) |
+| Q5-Q6 | 阅读 [监督学习入门](../../02_Machine_Learning/Supervised_Learning/Supervised_Learning_for_dummy.md) |
 
 ---
 
@@ -73,11 +73,11 @@ updated: 2026-05-31
 
 | 问题 | 补救建议 |
 |------|---------|
-| Q1 | 阅读 [监督学习](../02_Machine_Learning/Supervised_Learning/Supervised_Learning_for_dummy.md) |
-| Q2-Q3 | 阅读 [神经网络核心](../03_Deep_Learning/Neural_Network_Core/Neural_Network_Core_for_dummy.md) + [优化](../03_Deep_Learning/Optimization/Optimization_for_dummy.md) |
-| Q4-Q5 | 阅读 [监督学习](../02_Machine_Learning/Supervised_Learning/Supervised_Learning_for_dummy.md) 中的过拟合章节 |
-| Q6 | 阅读 [模型评估](../08_Model_Evaluation/Model_Evaluation_for_dummy.md) |
-| Q7 | 阅读 [无监督学习](../02_Machine_Learning/Unsupervised_Learning/Unsupervised_Learning_for_dummy.md) + [强化学习基础](../06_Reinforcement_Learning/RL_Foundations/RL_Foundations_for_dummy.md) |
+| Q1 | 阅读 [监督学习](../../02_Machine_Learning/Supervised_Learning/Supervised_Learning_for_dummy.md) |
+| Q2-Q3 | 阅读 [神经网络核心](../../03_Deep_Learning/Neural_Network_Core/Neural_Network_Core_for_dummy.md) + [优化](../../03_Deep_Learning/Optimization/Optimization_for_dummy.md) |
+| Q4-Q5 | 阅读 [监督学习](../../02_Machine_Learning/Supervised_Learning/Supervised_Learning_for_dummy.md) 中的过拟合章节 |
+| Q6 | 阅读 [模型评估](../../08_Model_Evaluation/Model_Evaluation_for_dummy.md) |
+| Q7 | 阅读 [无监督学习](../../02_Machine_Learning/Unsupervised_Learning/Unsupervised_Learning_for_dummy.md) + [强化学习基础](../../06_Reinforcement_Learning/RL_Foundations/RL_Foundations_for_dummy.md) |
 
 ---
 
@@ -112,11 +112,11 @@ updated: 2026-05-31
 
 | 问题 | 补救建议 |
 |------|---------|
-| Q1-Q2 | 阅读 [神经网络核心（小白版）](../03_Deep_Learning/Neural_Network_Core/Neural_Network_Core_for_dummy.md) |
-| Q3 | 阅读 [序列模型（小白版）](../05_NLP_LLMs/Sequence_Models/Sequence_Models_for_dummy.md) + [图像分类（小白版）](../04_Computer_Vision/Image_Classification_Detection/Image_Classification_Detection_for_dummy.md) |
-| Q4-Q5 | 阅读 [Transformer 革命（小白版）](../05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution_for_dummy.md) |
-| Q6-Q7 | 阅读 [LLM 架构（小白版）](../05_NLP_LLMs/LLM_Architectures/LLM_Architectures_for_dummy.md) + [微调技术（小白版）](../05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques_for_dummy.md) |
-| Q8 | 阅读 [生成模型（小白版）](../04_Computer_Vision/Generative_Models/Generative_Models_for_dummy.md) |
+| Q1-Q2 | 阅读 [神经网络核心（小白版）](../../03_Deep_Learning/Neural_Network_Core/Neural_Network_Core_for_dummy.md) |
+| Q3 | 阅读 [序列模型（小白版）](../../05_NLP_LLMs/Sequence_Models/Sequence_Models_for_dummy.md) + [图像分类（小白版）](../../04_Computer_Vision/Image_Classification_Detection/Image_Classification_Detection_for_dummy.md) |
+| Q4-Q5 | 阅读 [Transformer 革命（小白版）](../../05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution_for_dummy.md) |
+| Q6-Q7 | 阅读 [LLM 架构（小白版）](../../05_NLP_LLMs/LLM_Architectures/LLM_Architectures_for_dummy.md) + [微调技术（小白版）](../../05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques_for_dummy.md) |
+| Q8 | 阅读 [生成模型（小白版）](../../04_Computer_Vision/Generative_Models/Generative_Models_for_dummy.md) |
 
 ---
 
@@ -149,12 +149,12 @@ updated: 2026-05-31
 
 | 问题 | 补救建议 |
 |------|---------|
-| Q1-Q2 | 阅读 [RAG 系统（小白版）](../14_RAG_Systems/RAG_Systems_for_dummy.md) |
-| Q3 | 阅读 [提示词工程（小白版）](../05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering_for_dummy.md) |
-| Q4 | 阅读 [AI Agent（小白版）](../06_Reinforcement_Learning/AI_Agents/AI_Agents_for_dummy.md) |
-| Q5 | 阅读 [MLOps 流水线（小白版）](../11_MLOps_Pipeline/MLOps_Pipeline_for_dummy.md) |
-| Q6 | 阅读 [模型评估（小白版）](../08_Model_Evaluation/Model_Evaluation_for_dummy.md) |
-| Q7 | 阅读 [AI Gateway（速查版）](../14_AI_Gateway/Gateway-in-nutshell.md) |
+| Q1-Q2 | 阅读 [RAG 系统（小白版）](../../14_RAG_Systems/RAG_Systems_for_dummy.md) |
+| Q3 | 阅读 [提示词工程（小白版）](../../05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering_for_dummy.md) |
+| Q4 | 阅读 [AI Agent（小白版）](../../15_Agent_Production/Agent_Foundations/AI_Agents_for_dummy.md) |
+| Q5 | 阅读 [MLOps 流水线（小白版）](../../11_MLOps_Pipeline/MLOps_Pipeline_for_dummy.md) |
+| Q6 | 阅读 [模型评估（小白版）](../../08_Model_Evaluation/Model_Evaluation_for_dummy.md) |
+| Q7 | 阅读 [AI Gateway（速查版）](../../12_Architecture_Infrastructure/AI_Gateway/Gateway-in-nutshell.md) |
 
 ---
 
@@ -185,11 +185,11 @@ updated: 2026-05-31
 
 | 问题 | 补救建议 |
 |------|---------|
-| Q1 | 阅读 [多模态视觉（小白版）](../04_Computer_Vision/Multimodal_Vision/Multimodal_Vision_for_dummy.md) |
-| Q2 | 阅读 [世界模型 2026](../03_Deep_Learning/World_Models/World_Models_2026.md) |
-| Q3 | 阅读 [机器人与具身智能 2026](../06_Reinforcement_Learning/Robotics_Embodied_AI/Embodied_AI_2026.md) |
-| Q4 | 阅读 [AI 未来趋势](../00_AI_Introduction/AI_Future_Trends.md) |
-| Q5 | 阅读 [AI 安全与红队（小白版）](../17_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming_for_dummy.md) |
+| Q1 | 阅读 [多模态视觉（小白版）](../../04_Computer_Vision/Multimodal_Vision/Multimodal_Vision_for_dummy.md) |
+| Q2 | 阅读 [世界模型 2026](../../03_Deep_Learning/World_Models/World_Models_2026.md) |
+| Q3 | 阅读 [机器人与具身智能 2026](../../06_Reinforcement_Learning/Robotics_Embodied_AI/Embodied_AI_2026.md) |
+| Q4 | 阅读 [AI 未来趋势](../../00_AI_Introduction/AI_Future_Trends.md) |
+| Q5 | 阅读 [AI 安全与红队（小白版）](../../17_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming_for_dummy.md) |
 | Q6 | 回到 [Stage 4 概念卡](./_concepts/stage4-frontier.md) 的 Scaling Law 部分 |
 
 ---
@@ -242,7 +242,7 @@ updated: 2026-05-31
 
 ---
 
-*本文档是 AI Guru 知识库概念入门路径的里程碑自测系统。每个 Stage 的问题设计参考了 [AI 概念知识图谱](../91_Notes/AI_Concept_Knowledge_Graph.md) 中的概念依赖关系。*
+*本文档是 AI Guru 知识库概念入门路径的里程碑自测系统。每个 Stage 的问题设计参考了 [AI 概念知识图谱](../../91_Notes/AI_Concept_Knowledge_Graph.md) 中的概念依赖关系。*
 
 ## Related
 

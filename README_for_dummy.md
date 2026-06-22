@@ -107,7 +107,7 @@ updated: '2026-05-31'
 |------|---------|---------|
 | 强化学习基础 | AI 怎么通过奖励和惩罚学习 | [点这里](./06_Reinforcement_Learning/RL_Foundations/RL_Foundations_for_dummy.md) |
 | 深度强化学习 | 让神经网络玩游戏、下围棋 | [点这里](./06_Reinforcement_Learning/Deep_RL/Deep_RL_for_dummy.md) |
-| AI 智能体 | 能自己思考、使用工具的 AI 助手 | [点这里](./06_Reinforcement_Learning/AI_Agents/AI_Agents_for_dummy.md) |
+| AI 智能体 | 能自己思考、使用工具的 AI 助手 | [点这里](15_Agent_Production/Agent_Foundations/AI_Agents_for_dummy.md) |
 
 ---
 

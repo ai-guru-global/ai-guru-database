@@ -143,7 +143,7 @@ public class ChatController {
 
 **🔗 参考文档**：
 - [Milvus 深度解析](../../14_RAG_Systems/Milvus_Deep_Dive.md)
-- [Spring AI 网关与安全](../../14_AI_Gateway/Spring_AI_Gateway_Security.md)
+- [Spring AI 网关与安全](../../12_Architecture_Infrastructure/AI_Gateway/Spring_AI_Gateway_Security.md)
 
 **✅ 学会标志**：
 - [ ] 能配置 PGVector/Milvus 向量存储
@@ -182,7 +182,7 @@ public class ChatController {
 **🎯 目标**：掌握安全、部署、多云、测试等生产就绪技能。
 
 **📚 核心阅读**：
-- [Spring AI 网关与安全](../../14_AI_Gateway/Spring_AI_Gateway_Security.md)（重点）
+- [Spring AI 网关与安全](../../12_Architecture_Infrastructure/AI_Gateway/Spring_AI_Gateway_Security.md)（重点）
 - [JVM AI 部署与推理](../../10_Deployment_Inference/JVM_AI_Deployment.md)（重点）
 - [Java AI 测试实践](../../09_Testing/Java_AI_Testing.md)（重点）
 - [Java Cloud SDK 指南](../../18_Cloud_Ops_Agent/Java_Cloud_SDK_Guide.md)（选读）
@@ -444,7 +444,7 @@ Day 1-2: 安全防护
   □ 实现 Prompt 注入防御
   □ 配置 OAuth2 + API Key 认证
   □ 实现速率限制
-  □ 阅读文档: → [Gateway 安全](../../14_AI_Gateway/Spring_AI_Gateway_Security.md)
+  □ 阅读文档: → [Gateway 安全](../../12_Architecture_Infrastructure/AI_Gateway/Spring_AI_Gateway_Security.md)
 
 Day 3-5: 可观测性
   □ 集成 Micrometer + Prometheus

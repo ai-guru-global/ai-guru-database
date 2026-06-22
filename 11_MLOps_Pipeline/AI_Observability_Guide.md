@@ -743,9 +743,9 @@ groups:
 
 ## 🔗 相关主题
 
-- [SRE for AI Systems](./SRE_for_AI_Systems.md) — SLI/SLO 设计与错误预算
-- [事故响应手册](./AI_Incident_Response_Playbook.md) — Runbook 与事故处理
-- [AI Ops 2026](./AI_Ops_2026.md) — 智能运维完整体系
+- [SRE for AI Systems](../13_AI_Ops/SRE_for_AI_Systems.md) — SLI/SLO 设计与错误预算
+- [事故响应手册](../13_AI_Ops/AI_Incident_Response_Playbook.md) — Runbook 与事故处理
+- [AI Ops 2026](../13_AI_Ops/AI_Ops_2026.md) — 智能运维完整体系
 - [部署与推理](../10_Deployment_Inference/Inference-in-nutshell.md) — 推理性能优化
 - [AI 成本优化](../12_Architecture_Infrastructure/AI_Cost_Optimization_2026.md) — Token 经济学与 FinOps
 

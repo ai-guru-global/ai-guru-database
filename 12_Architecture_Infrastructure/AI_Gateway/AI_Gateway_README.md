@@ -43,8 +43,8 @@ updated: 2026-06-15
 ## 关联目录
 
 - [10_Deployment_Inference](../10_Deployment_Inference/) -- 推理引擎 (vLLM, SGLang)
-- [LLM 推理引擎选型指南](../10_Deployment_Inference/LLM_Inference_Engine_Selection_Guide.md) -- 网关后端模型/推理引擎选型
-- [LLM 推理引擎迁移指南](../10_Deployment_Inference/LLM_Inference_Engine_Migration_Guide.md) -- 多引擎切换与灰度策略
+- [LLM 推理引擎选型指南](../../10_Deployment_Inference/LLM_Inference_Engine_Selection_Guide.md) -- 网关后端模型/推理引擎选型
+- [LLM 推理引擎迁移指南](../../10_Deployment_Inference/LLM_Inference_Engine_Migration_Guide.md) -- 多引擎切换与灰度策略
 - [14_RAG_Systems](../14_RAG_Systems/) -- RAG 系统
 - [13_AI_Ops](../13_AI_Ops/) -- AI 运维
 

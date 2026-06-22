@@ -165,8 +165,8 @@ updated: 2026-05-31
 ## 下一步
 
 - 想深入某个行业？→ 查看对应子目录
-- 想学技术？→ 从 [00_AI_Introduction](./00_AI_Introduction/README_for_dummy.md) 开始
-- 想找工作？→ [21_Interviews/Interviews_for_dummy.md](./21_Interviews/Interviews_for_dummy.md)
+- 想学技术？→ 从 [00_AI_Introduction](../00_AI_Introduction/README_for_dummy.md) 开始
+- 想找工作？→ [21_Interviews/Interviews_for_dummy.md](../21_Interviews/Interviews_for_dummy.md)
 
 ---
 

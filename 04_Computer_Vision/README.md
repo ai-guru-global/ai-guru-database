@@ -47,8 +47,8 @@ updated: 2026-05-31
 | 多模态视觉 (Multimodal Vision) | 进阶 | CLIP、ALIGN，视觉-语言联合表示学习 | [Multimodal_Vision/](./Multimodal_Vision/) |
 | 生成模型 (Generative Models) | 实战 | GAN、DDPM、Stable Diffusion，图像生成与编辑 | [Generative_Models.md](./Generative_Models/Generative_Models.md) |
 | AI 视频生成 (Video Generation) | 前沿 | 2026 年视频生成格局，Veo3/Kling/Seedance/Sora 后时代 | [Video_Generation/](./Video_Generation/) |
-| 3D 视觉 (3D Vision) | 进阶 | 深度估计、点云分割、NeRF、3D 检测 | [3D_Vision.md](./3D_Vision.md) |
-| OCR 文字识别 (OCR) | 入门 | 文本检测、文本识别、端到端 OCR | [OCR_Text_Recognition.md](./OCR_Text_Recognition.md) |
+| 3D 视觉 (3D Vision) | 进阶 | 深度估计、点云分割、NeRF、3D 检测 | [3D_Vision.md](3D_Vision/3D_Vision.md) |
+| OCR 文字识别 (OCR) | 入门 | 文本检测、文本识别、端到端 OCR | [OCR_Text_Recognition.md](OCR_Text_Recognition/OCR_Text_Recognition.md) |
 
 ### 深度解读 (Deep Dive)
 

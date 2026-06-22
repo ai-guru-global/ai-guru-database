@@ -161,7 +161,7 @@ Stage 1: 基础概念（轻量浏览，重点理解概念名称）
 
 ## 里程碑自测
 
-完成本路径后，请回顾 [milestones.md](../milestones.md) 中的 Stage 0 和 Stage 1 自测题。
+完成本路径后，请回顾 [milestones.md](../guides/milestones.md) 中的 Stage 0 和 Stage 1 自测题。
 
 如果你能正确回答大部分问题，说明你已经建立了扎实的 AI 基础认知框架。
 

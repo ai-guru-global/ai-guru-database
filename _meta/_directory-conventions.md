@@ -93,7 +93,7 @@ ai-guru-database/
 - **大小**: 每张 5-9 KB
 - **用途**: 单个核心概念的速查摘要
 - **与主章节关系**: `sources` 字段指向主目录中的深度文档
-- **索引**: [_concepts/README.md](./_concepts/README.md)
+- **索引**: [_concepts/README.md](../_concepts/README.md)
 - **阅读路径**: 概念卡片 → 主章节深度文档
 
 ### _synthesis/（跨域综合）
@@ -101,7 +101,7 @@ ai-guru-database/
 - **大小**: 每篇 1.7-4.5 KB
 - **用途**: 连接 2-4 个不同章节的概念，揭示跨域关联
 - **与主章节关系**: `sources` 字段列出关联的多个章节文档
-- **索引**: [_synthesis/README.md](./_synthesis/README.md)
+- **索引**: [_synthesis/README.md](../_synthesis/README.md)
 
 ### _references/
 - **类型**: 参考资料
@@ -152,6 +152,27 @@ ai-guru-database/
 | `_archives/` | 已归档的旧版本 | 长期保留，不再更新（含 `log.md`） |
 
 **生命周期**: `_raw/` → `_staging/` → 主章节/辅助目录 → `_archives/`
+
+---
+
+## 六之二、自动化守护（防重复文件入侵）
+
+**问题**: 同步工具（iCloud/编辑器）会反复产生 `* 2.md` 重复副本，污染知识库。2026-06 治理时曾一次清理 280+ 个此类文件。
+
+**防护措施**（三层）：
+
+1. **`.gitignore` 规则**：忽略 `* 2.md`、`* 2.json`、`*conflicted copy*`、`*.copy.md`
+2. **pre-commit hook**（`.githooks/pre-commit`）：拦截暂存区的重复文件名，提交前报错
+3. **`_tools/check_links.py`**：exclude 集合排除 `_sources`/`_projects`（外部来源自有结构）
+
+**Hook 安装**（每个克隆后执行一次）：
+
+```bash
+git config core.hooksPath .githooks
+```
+
+> `core.hooksPath` 是本地配置，不会随仓库分发。新克隆者需手动执行上述命令启用 hook。
+> 如需绕过（确认要提交某重复文件），用 `git commit --no-verify`。
 
 ---
 

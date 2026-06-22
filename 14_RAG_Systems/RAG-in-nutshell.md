@@ -579,7 +579,7 @@ flowchart TB
 ## 🔗 相关主题
 
 - [推理](../10_Deployment_Inference/Inference-in-nutshell.md) - 运行大模型部分
-- [智能体](../../06_Reinforcement_Learning/AI_Agents/Agent-in-nutshell.md) - RAG + 动作
+- [智能体](../15_Agent_Production/Agent_Foundations/Agent-in-nutshell.md) - RAG + 动作
 - [工作流](../15_Agent_Production/Agent_Workflow/Workflow-in-nutshell.md) - 生产环境中的 RAG
 
 ## Related

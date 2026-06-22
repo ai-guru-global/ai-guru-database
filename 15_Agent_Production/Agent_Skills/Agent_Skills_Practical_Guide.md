@@ -807,7 +807,7 @@ npx skills-ref validate .agents/skills/my-skill
 - [Agent Skills 生态目录](./Agent_Skills_Ecosystem_Catalog.md) — 451+ Skills 按团队和领域索引
 - [Agent Skills 多角色全景分析](./Agent_Skills_Multi_Role_Analysis.md) — 五角色视角深度解析完整生命周期
 - [AI Skills 速成](./Skills-in-nutshell.md) — 传统 Skill 编程实现
-- [AI Agents](../../06_Reinforcement_Learning/AI_Agents/Agent-in-nutshell.md) — Agent 基础
+- [AI Agents](../Agent_Foundations/Agent-in-nutshell.md) — Agent 基础
 - [官方目录](https://officialskills.sh) — 在线浏览全部 Skills
 - [Vercel Skills](https://github.com/vercel-labs/agent-skills) — React/Next.js 最佳实践 Skill
 - [精选合集](https://github.com/VoltAgent/awesome-agent-skills) — 1060+ Skills 精选列表

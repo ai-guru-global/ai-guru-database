@@ -550,7 +550,7 @@ AI学玩游戏:
 
 **下一步阅读**:
 - 📘 [深度强化学习 - 小白版](../Deep_RL/Deep_RL_for_dummy.md) - 学习 DQN 如何玩 Atari 游戏
-- 📘 [AI智能体 - 小白版](../AI_Agents/AI_Agents_for_dummy.md) - 学习自主决策系统
+- 📘 [AI智能体 - 小白版](../../15_Agent_Production/Agent_Foundations/AI_Agents_for_dummy.md) - 学习自主决策系统
 
 **查看原版文档**(需要技术基础):
 - 📄 [强化学习基础(原版)](./RL_Foundations.md) - 包含贝尔曼方程推导和代码

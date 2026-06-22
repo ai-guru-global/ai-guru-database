@@ -1181,7 +1181,7 @@ async def rollback_prompt(name: str, version: int):
 
 ### 相关文档
 
-- [AI Gateway 对比 2026](../14_AI_Gateway/AI_Gateway_Comparison_2026.md) - 网关层 prompt 管理
+- [AI Gateway 对比 2026](../12_Architecture_Infrastructure/AI_Gateway/AI_Gateway_Comparison_2026.md) - 网关层 prompt 管理
 - [API 设计 for AI](./API_Design_for_AI.md) - API 层面的 prompt 集成
 - [部署推理 2026](../10_Deployment_Inference/Deployment_Inference_2026.md) - 生产部署最佳实践
 - [Langfuse 官方文档](https://langfuse.com/docs)

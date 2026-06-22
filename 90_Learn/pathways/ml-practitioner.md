@@ -135,7 +135,7 @@ Phase 6: 完成端到端项目
 #### 方向 C: 强化学习 / Agent
 
 - [强化学习基础（小白版）](../../06_Reinforcement_Learning/RL_Foundations/RL_Foundations_for_dummy.md)
-- [AI Agent（小白版）](../../06_Reinforcement_Learning/AI_Agents/AI_Agents_for_dummy.md)
+- [AI Agent（小白版）](../../15_Agent_Production/Agent_Foundations/AI_Agents_for_dummy.md)
 
 **动手项目**：用 LangGraph 构建一个能调用搜索工具的对话 Agent
 
@@ -186,7 +186,7 @@ Phase 6: 完成端到端项目
 
 ## 里程碑自测
 
-完成本路径后，请回顾 [milestones.md](../milestones.md) 中 Stage 1-3 的自测题。
+完成本路径后，请回顾 [milestones.md](../guides/milestones.md) 中 Stage 1-3 的自测题。
 
 ## 下一步推荐
 

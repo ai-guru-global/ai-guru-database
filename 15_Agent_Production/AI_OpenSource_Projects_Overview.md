@@ -141,16 +141,16 @@ AI 开源项目分类
 
 | 方案 | 模型支持 | 特点 | 文档 |
 |------|----------|------|------|
-| **LiteLLM** | 100+ | 统一接口，智能路由 | [Deep Dive](../14_AI_Gateway/LiteLLM_Deep_Dive.md) |
-| **Portkey** | 50+ | 企业级，可观测性 | [Deep Dive](../14_AI_Gateway/Portkey_Deep_Dive.md) |
-| **Cohere** | Embedding+LLM | 企业级 embedding | [Deep Dive](../14_AI_Gateway/Cohere_Deep_Dive.md) |
+| **LiteLLM** | 100+ | 统一接口，智能路由 | [Deep Dive](../12_Architecture_Infrastructure/AI_Gateway/LiteLLM_Deep_Dive.md) |
+| **Portkey** | 50+ | 企业级，可观测性 | [Deep Dive](../12_Architecture_Infrastructure/AI_Gateway/Portkey_Deep_Dive.md) |
+| **Cohere** | Embedding+LLM | 企业级 embedding | [Deep Dive](../12_Architecture_Infrastructure/AI_Gateway/Cohere_Deep_Dive.md) |
 
 ### 3.4 Embedding 模型
 
 | 模型 | 特点 | 文档 |
 |------|------|------|
 | **Sentence-Transformers** | 开源，多语言 | [Deep Dive](../14_RAG_Systems/Sentence_Transformers_Deep_Dive.md) |
-| **Cohere Embed** | 企业级，高精度 | [Deep Dive](../14_AI_Gateway/Cohere_Deep_Dive.md) |
+| **Cohere Embed** | 企业级，高精度 | [Deep Dive](../12_Architecture_Infrastructure/AI_Gateway/Cohere_Deep_Dive.md) |
 | **OpenAI Embedding** | API 调用 | (见 OpenAI API 文档) |
 
 ---
@@ -233,33 +233,33 @@ AI 开源项目分类
 
 | 工具 | 特点 | 文档 |
 |------|------|------|
-| **MLflow** | 全流程，开源 | [Deep Dive](../13_AI_Ops/MLflow_Deep_Dive.md) |
+| **MLflow** | 全流程，开源 | [Deep Dive](../11_MLOps_Pipeline/MLflow_Deep_Dive.md) |
 | **Weights & Biases** | SaaS，易用 | [Deep Dive](../09_Testing/Weights_Biases_Deep_Dive.md) |
-| **ClearML** | 一站式，开源 | [Deep Dive](../13_AI_Ops/ClearML_Deep_Dive.md) |
+| **ClearML** | 一站式，开源 | [Deep Dive](../11_MLOps_Pipeline/ClearML_Deep_Dive.md) |
 
 ### 7.2 数据版本控制
 
 | 工具 | 特点 | 文档 |
 |------|------|------|
-| **DVC** | Git 工作流 | [Deep Dive](../13_AI_Ops/DVC_Deep_Dive.md) |
-| **LakeFS** | 数据湖版本 | [Deep Dive](../13_AI_Ops/LakeFS_Deep_Dive.md) |
+| **DVC** | Git 工作流 | [Deep Dive](../11_MLOps_Pipeline/DVC_Deep_Dive.md) |
+| **LakeFS** | 数据湖版本 | [Deep Dive](../11_MLOps_Pipeline/LakeFS_Deep_Dive.md) |
 
 ### 7.3 提示词管理
 
 | 工具 | 特点 | 文档 |
 |------|------|------|
 | **PromptLayer** | 请求追踪 | [Deep Dive](../13_AI_Ops/PromptLayer_Deep_Dive.md) |
-| **LangSmith** | LLM 调试 | [Deep Dive](../13_AI_Ops/LangSmith_Deep_Dive.md) |
+| **LangSmith** | LLM 调试 | [Deep Dive](../11_MLOps_Pipeline/LangSmith_Deep_Dive.md) |
 
 ### 7.4 MLOps 平台
 
 | 工具 | 特点 | 文档 |
 |------|------|------|
-| **Kubeflow** | 云原生，K8s | [Deep Dive](../13_AI_Ops/Kubeflow_Deep_Dive.md) |
-| **Prefect** | Python 原生流水线 | [Deep Dive](../13_AI_Ops/Prefect_Deep_Dive.md) |
-| **MLflow** | 全流程，开源 | [Deep Dive](../13_AI_Ops/MLflow_Deep_Dive.md) |
-| **ClearML** | 一站式开源 | [Deep Dive](../13_AI_Ops/ClearML_Deep_Dive.md) |
-| **Feast** | 特征存储 | [Deep Dive](../13_AI_Ops/Feast_Deep_Dive.md) |
+| **Kubeflow** | 云原生，K8s | [Deep Dive](../11_MLOps_Pipeline/Kubeflow_Deep_Dive.md) |
+| **Prefect** | Python 原生流水线 | [Deep Dive](../11_MLOps_Pipeline/Prefect_Deep_Dive.md) |
+| **MLflow** | 全流程，开源 | [Deep Dive](../11_MLOps_Pipeline/MLflow_Deep_Dive.md) |
+| **ClearML** | 一站式开源 | [Deep Dive](../11_MLOps_Pipeline/ClearML_Deep_Dive.md) |
+| **Feast** | 特征存储 | [Deep Dive](../11_MLOps_Pipeline/Feast_Deep_Dive.md) |
 
 ### 7.5 LLM 安全
 
@@ -272,8 +272,8 @@ AI 开源项目分类
 
 | 工具 | 特点 | 文档 |
 |------|------|------|
-| **Braintrust** | 开源评估 | [Deep Dive](../13_AI_Ops/Braintrust_Deep_Dive.md) |
-| **Helicone** | 可观测性 | [Deep Dive](../13_AI_Ops/Helicone_Deep_Dive.md) |
+| **Braintrust** | 开源评估 | [Deep Dive](../11_MLOps_Pipeline/Braintrust_Deep_Dive.md) |
+| **Helicone** | 可观测性 | [Deep Dive](../11_MLOps_Pipeline/Helicone_Deep_Dive.md) |
 | **Promptfoo** | Prompt 测试 | [Deep Dive](../09_Testing/Promptfoo_Deep_Dive.md) |
 | **RAGAS** | RAG 评估 | [Deep Dive](../09_Testing/RAGAS_Deep_Dive.md) |
 | **DeepEval** | LLM 评估 | [Deep Dive](../09_Testing/DeepEval_Deep_Dive.md) |

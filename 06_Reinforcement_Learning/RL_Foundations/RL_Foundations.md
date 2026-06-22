@@ -524,7 +524,7 @@ print("训练完成！Q表已学习最优策略。")
 
 ### 7.2 后续进阶
 - **深度强化学习**: [Deep RL](../Deep_RL/Deep_RL.md) —— DQN, PPO, SAC 等现代算法
-- **AI 智能体**: [AI Agents](../AI_Agents/AI_Agents.md) —— 基于 LLM 的自主规划系统
+- **AI 智能体**: [AI Agents](../../15_Agent_Production/Agent_Foundations/AI_Agents.md) —— 基于 LLM 的自主规划系统
 - **多智能体系统**: 博弈论、协作学习
 - **模仿学习**: 从人类演示中学习（Behavior Cloning, GAIL）
 

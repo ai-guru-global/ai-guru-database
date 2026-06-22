@@ -362,8 +362,8 @@ vLLM (PagedAttention):
 - [Hugging Face 量化指南](https://huggingface.co/docs/transformers/main/quantization)
 
 ### 🎓 相关知识
-- [Transformer 架构 - 小白版](../../05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution_for_dummy.md)
-- [神经网络核心 - 小白版](../../03_Deep_Learning/Neural_Network_Core/Neural_Network_Core_for_dummy.md)
+- [Transformer 架构 - 小白版](../05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution_for_dummy.md)
+- [神经网络核心 - 小白版](../03_Deep_Learning/Neural_Network_Core/Neural_Network_Core_for_dummy.md)
 
 ---
 

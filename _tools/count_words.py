@@ -6,6 +6,7 @@
 """
 
 import os
+import re
 from pathlib import Path
 from collections import defaultdict
 
@@ -19,10 +20,14 @@ def count_words():
     file_count = 0
     dir_stats = defaultdict(lambda: {"files": 0, "chars": 0})
     
-    # 只统计主要的文档目录 (00_* 到 19_*)
-    doc_dirs = [d for d in base_dir.iterdir() 
-                if d.is_dir() and (d.name.startswith('0') or d.name.startswith('1')) 
-                and '_' in d.name]
+    # 统计所有主章节目录（00-99 数字前缀）+ 知识图谱层（_concepts 等）
+    doc_dirs = [d for d in base_dir.iterdir()
+                if d.is_dir() and re.match(r'^\d{2}_', d.name)]
+    # 纳入知识图谱层
+    for kg in ('_concepts', '_synthesis', '_references'):
+        kg_dir = base_dir / kg
+        if kg_dir.is_dir():
+            doc_dirs.append(kg_dir)
     
     print(f"\n📁 找到 {len(doc_dirs)} 个主要文档目录")
     print("-" * 60)

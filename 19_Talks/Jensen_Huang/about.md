@@ -123,11 +123,11 @@ Huang 将数据中心视为 AI 时代的"工厂"，其核心产品不仅是 GPU 
 
 - [Talks 主题合成 2026](../Talks_Synthesis_2026.md) -- Scaling Laws、AI 安全、中国 AI 与全球格局等主题中 Huang 的立场
 - [Jensen Huang 金句集](./sayings.md) -- 更多金句与权威来源链接
-- [AI 历史时间线](../00_AI_Introduction/AI_History_Timeline.md) -- CUDA 发布与 GPU 计算革命
-- [AI 未来趋势](../00_AI_Introduction/AI_Future_Trends.md) -- "AI 工厂"与"物理 AI"趋势预判
-- [架构与基础设施](../12_Architecture_Infrastructure/README.md) -- GPU 集群、数据中心与 AI 计算架构
-- [模型训练](../07_Model_Training/README.md) -- 大规模分布式训练与 GPU 算力需求
-- [部署与推理](../10_Deployment_Inference/README.md) -- 推理优化与 GPU 推理引擎
+- [AI 历史时间线](../../00_AI_Introduction/AI_History_Timeline.md) -- CUDA 发布与 GPU 计算革命
+- [AI 未来趋势](../../00_AI_Introduction/AI_Future_Trends.md) -- "AI 工厂"与"物理 AI"趋势预判
+- [架构与基础设施](../../12_Architecture_Infrastructure/README.md) -- GPU 集群、数据中心与 AI 计算架构
+- [模型训练](../../07_Model_Training/README.md) -- 大规模分布式训练与 GPU 算力需求
+- [部署与推理](../../10_Deployment_Inference/README.md) -- 推理优化与 GPU 推理引擎
 - [机器人系统](../15_Robotics_Systems/README.md) -- Physical AI、Isaac 平台与机器人仿真
 - [Sam Altman](./Sam_Altman/about.md) -- Scaling Laws 信仰与算力需求共识
 - [Demis Hassabis](./Demis_Hassabis/about.md) -- AI for Science 与 GPU 算力支撑

@@ -101,12 +101,12 @@ A: 这章是入门,工作还需要更多实战经验。但理解这些概念是�
 - 电脑基础:知道什么是程序、数据
 
 ### 有更好,没有也行:
-- [线性代数小白版](../../01_Fundamentals/Linear_Algebra/Linear_Algebra_for_dummy.md) - 帮助理解矩阵计算
-- [概率统计小白版](../../01_Fundamentals/Probability_Statistics/Probability_Statistics_for_dummy.md) - 理解为什么要用概率
+- [线性代数小白版](../01_Fundamentals/Linear_Algebra/Linear_Algebra_for_dummy.md) - 帮助理解矩阵计算
+- [概率统计小白版](../01_Fundamentals/Probability_Statistics/Probability_Statistics_for_dummy.md) - 理解为什么要用概率
 
 ### 学完之后可以看:
-- [机器学习基础小白版](../../02_Machine_Learning/README_for_dummy.md) - 对比传统方法和深度学习
-- [自然语言处理小白版](../../05_NLP_LLMs/README_for_dummy.md) - ChatGPT 是怎么工作的
+- [机器学习基础小白版](../02_Machine_Learning/README_for_dummy.md) - 对比传统方法和深度学习
+- [自然语言处理小白版](../05_NLP_LLMs/README_for_dummy.md) - ChatGPT 是怎么工作的
 
 ## 关键术语速查
 

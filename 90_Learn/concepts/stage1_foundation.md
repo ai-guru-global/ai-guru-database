@@ -199,4 +199,4 @@ updated: '2026-05-31'
 
 完成 Stage 1 后：
 - **进入技术核心** → [Stage 2: 核心技术](./stage2-core-tech.md)
-- **补充数学基础** → [01_Fundamentals](../01_Fundamentals/README_for_dummy.md)（线性代数、概率统计）
+- **补充数学基础** → [01_Fundamentals](../../01_Fundamentals/README_for_dummy.md)（线性代数、概率统计）

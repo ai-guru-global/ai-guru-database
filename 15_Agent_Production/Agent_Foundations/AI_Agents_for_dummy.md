@@ -749,7 +749,7 @@ agent.run("帮我规划明天的行程")
 - 🔗 LangChain Hub - Agent 示例库
 
 **相关主题**:
-- 🔙 [深度强化学习 - 小白版](../Deep_RL/Deep_RL_for_dummy.md) - Agent 决策的理论基础
+- 🔙 [深度强化学习 - 小白版](../../06_Reinforcement_Learning/Deep_RL/Deep_RL_for_dummy.md) - Agent 决策的理论基础
 - 🔙 [Transformer - 小白版](../../05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution_for_dummy.md) - Agent 的语言理解能力
 - 🔜 [部署与推理 - 小白版](../../10_Deployment_Inference/Deployment_Inference_for_dummy.md) - Agent 的生产部署
 

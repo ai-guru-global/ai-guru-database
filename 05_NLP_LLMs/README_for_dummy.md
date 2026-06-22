@@ -181,8 +181,8 @@ updated: 2026-05-31
 - ✅ 初中英语水平(因为很多术语是英文)
 
 **如果你还学过这些会更轻松:**
-- [深度学习基础 (小白版)](../../03_Deep_Learning/README_for_dummy.md) - 了解神经网络是什么
-- [机器学习基础 (小白版)](../../02_Machine_Learning/README_for_dummy.md) - 知道"训练"、"模型"这些概念
+- [深度学习基础 (小白版)](../03_Deep_Learning/README_for_dummy.md) - 了解神经网络是什么
+- [机器学习基础 (小白版)](../02_Machine_Learning/README_for_dummy.md) - 知道"训练"、"模型"这些概念
 
 ---
 
@@ -246,8 +246,8 @@ updated: 2026-05-31
 ### 📚 进阶资源
 
 - [原版技术文档](./README.md) - 包含数学公式和代码
-- [03 深度学习](../../03_Deep_Learning/README_for_dummy.md) - 理解神经网络基础
-- [09 部署与推理](../../10_Deployment_Inference/README.md) - 学习如何部署 AI
+- [03 深度学习](../03_Deep_Learning/README_for_dummy.md) - 理解神经网络基础
+- [09 部署与推理](../10_Deployment_Inference/README.md) - 学习如何部署 AI
 
 ### 🎓 实践建议
 
@@ -268,8 +268,8 @@ updated: 2026-05-31
 
 ## 学习路径导航
 
-**上一章**: [← 03 深度学习 (小白版)](../../03_Deep_Learning/README_for_dummy.md)  
-**下一章**: [→ 05 计算机视觉 (小白版)](../../04_Computer_Vision/README_for_dummy.md)
+**上一章**: [← 03 深度学习 (小白版)](../03_Deep_Learning/README_for_dummy.md)  
+**下一章**: [→ 05 计算机视觉 (小白版)](../04_Computer_Vision/README_for_dummy.md)
 
 **本章内容**:
 1. [序列模型 (小白版)](./Sequence_Models/Sequence_Models_for_dummy.md)

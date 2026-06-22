@@ -6,6 +6,7 @@ import sys
 
 def find_broken_links(base_dir):
     exclude = {'.git', 'Web', '_synthesis', '_archives', '_raw', '_staging',
+               '_sources', '_projects',
                'node_modules', '.venv', '.qoder', '.obsidian', '.github'}
 
     broken = []

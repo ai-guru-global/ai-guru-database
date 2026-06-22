@@ -23,6 +23,17 @@ Web/.eval-history
 !.vscode/extensions.json
 .idea
 .DS_Store
+
+# 同步工具重复文件防护（iCloud/编辑器产生的 "* 2.ext" 副本）
+* 2.md
+* 2.json
+* 2.txt
+* 2.pdf
+* 2.svg
+* 2.html
+* 2.xml
+*.copy.md
+*conflicted copy*
 *.suo
 *.ntvs*
 *.njsproj

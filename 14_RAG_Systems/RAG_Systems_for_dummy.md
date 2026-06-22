@@ -586,9 +586,9 @@ prompt = """
 - [Chroma 5 分钟入门](https://docs.trychroma.com/getting-started)
 
 ### 🎓 相关知识
-- [Transformer - 小白版](../../05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution_for_dummy.md)
-- [大语言模型 - 小白版](../../05_NLP_LLMs/LLM_Architectures/LLM_Architectures_for_dummy.md)
-- [Prompt 工程 - 小白版](../../05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering_for_dummy.md)
+- [Transformer - 小白版](../05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution_for_dummy.md)
+- [大语言模型 - 小白版](../05_NLP_LLMs/LLM_Architectures/LLM_Architectures_for_dummy.md)
+- [Prompt 工程 - 小白版](../05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering_for_dummy.md)
 
 ---
 

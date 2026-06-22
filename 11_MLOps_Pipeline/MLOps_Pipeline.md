@@ -709,9 +709,9 @@ METRICS = {
 ## 8. 与其他主题的关联 (Connections)
 
 ### 前置知识
-- [监督学习](../../02_Machine_Learning/Supervised_Learning/Supervised_Learning.md) — 理解模型训练流程
-- [特征工程](../../02_Machine_Learning/Feature_Engineering/Feature_Engineering.md) — Feature Store 的基础
-- [分布式系统](../../01_Fundamentals/Distributed_Systems/Distributed_Systems.md) — 分布式训练基础设施
+- [监督学习](../02_Machine_Learning/Supervised_Learning/Supervised_Learning.md) — 理解模型训练流程
+- [特征工程](../02_Machine_Learning/Feature_Engineering/Feature_Engineering.md) — Feature Store 的基础
+- [分布式系统](../01_Fundamentals/Distributed_Systems/Distributed_Systems.md) — 分布式训练基础设施
 
 ### 进阶方向
 - [模型部署与推理](../10_Deployment_Inference/Deployment_Inference.md) — MLOps 的推理服务层

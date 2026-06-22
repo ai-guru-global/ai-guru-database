@@ -1116,7 +1116,7 @@ class TemperatureScaler(nn.Module):
 - **Equal Opportunity**: 不同群体的 TPR 是否相等
 - **工具**: AIF360 (IBM), Fairlearn (Microsoft)
 
-→ 详见 [价值对齐](../../17_Ethics_Safety/Value_Alignment/Value_Alignment.md)
+→ 详见 [价值对齐](../17_Ethics_Safety/Value_Alignment/Value_Alignment.md)
 
 ### 7.5 常见陷阱
 
@@ -1378,17 +1378,17 @@ class LLMEvaluationPipeline:
 ## 10. 与其他主题的关联 (Connections)
 
 ### 前置知识
-- [概率论与数理统计](../../01_Fundamentals/Probability_Statistics/Probability_Statistics.md) — 理解统计检验和置信区间
-- [监督学习](../../02_Machine_Learning/Supervised_Learning/Supervised_Learning.md) — 偏差-方差权衡
+- [概率论与数理统计](../01_Fundamentals/Probability_Statistics/Probability_Statistics.md) — 理解统计检验和置信区间
+- [监督学习](../02_Machine_Learning/Supervised_Learning/Supervised_Learning.md) — 偏差-方差权衡
 - [模型训练](../07_Model_Training/Model-Training-in-nutshell.md) — 训练与验证的关系
 
 ### 进阶方向
 - [自动化评估](./Evaluation_Automation_2026.md) — CI/CD 中的评估自动化
 - [在线评估](./Online_Evaluation.md) — 上线后的真实效果评估
 - [MLOps Pipeline](../11_MLOps_Pipeline/MLOps_Pipeline.md) — 评估自动化和持续监控
-- [价值对齐](../../17_Ethics_Safety/Value_Alignment/Value_Alignment.md) — 公平性评估
+- [价值对齐](../17_Ethics_Safety/Value_Alignment/Value_Alignment.md) — 公平性评估
 - [AI 测试框架](../09_Testing/README.md) — 系统化的 AI 测试方法
-- [特征工程](../../02_Machine_Learning/Feature_Engineering/Feature_Engineering.md) — 评估指导特征改进
+- [特征工程](../02_Machine_Learning/Feature_Engineering/Feature_Engineering.md) — 评估指导特征改进
 - [AI Ops 监控](../13_AI_Ops/AI_Ops_2026.md) — 生产环境模型监控
 
 ---

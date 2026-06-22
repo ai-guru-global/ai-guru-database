@@ -110,8 +110,8 @@ updated: '2026-05-31'
 
 - **Agent 架构框架**：LangGraph、AutoGen、CrewAI、Dify、Coze
 - **Agent 协议 (2026)**：MCP (Model Context Protocol)、A2A (Agent-to-Agent)、UCP (Universal Computer Protocol)
-- **入门阅读**：[AI Agent 入门](../../06_Reinforcement_Learning/AI_Agents/AI_Agents_for_dummy.md)
-- **深入学习**：[Agent 速查](../../06_Reinforcement_Learning/AI_Agents/Agent-in-nutshell.md)
+- **入门阅读**：[AI Agent 入门](../../15_Agent_Production/Agent_Foundations/AI_Agents_for_dummy.md)
+- **深入学习**：[Agent 速查](../../15_Agent_Production/Agent_Foundations/Agent-in-nutshell.md)
 - **关联概念**：Tool Use、ReAct、规划、多 Agent 系统
 
 ### 6. Tool Use / Function Calling
@@ -133,7 +133,7 @@ updated: '2026-05-31'
 | API | 第三方服务（地图、天气、股票） |
 | 操作 | 发送邮件、操作 UI、控制机器人 |
 
-- **入门阅读**：[AI Agent 入门](../../06_Reinforcement_Learning/AI_Agents/AI_Agents_for_dummy.md) → "工具使用" 章节
+- **入门阅读**：[AI Agent 入门](../../15_Agent_Production/Agent_Foundations/AI_Agents_for_dummy.md) → "工具使用" 章节
 - **关联概念**：Agent、Function Calling、MCP 协议
 
 ### 7. MLOps — 机器学习运维
@@ -209,7 +209,7 @@ updated: '2026-05-31'
 | **日志与监控** | 追踪每次调用的质量、成本、延迟 |
 
 - **主流方案**：Portkey、Weights & Biases Inference、MLflow AI Gateway、自建（基于 Nginx/Kong + FastAPI）
-- **入门阅读**：[AI Gateway 速查](../../14_AI_Gateway/Gateway-in-nutshell.md)
+- **入门阅读**：[AI Gateway 速查](../../12_Architecture_Infrastructure/AI_Gateway/Gateway-in-nutshell.md)
 - **关联概念**：API 网关、负载均衡、成本优化
 
 ---

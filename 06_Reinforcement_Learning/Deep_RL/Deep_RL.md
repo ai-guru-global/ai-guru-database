@@ -742,7 +742,7 @@ Sutton 指出，以下三者同时存在会导致不稳定：
 - **概率统计**: [概率统计基础](../../01_Fundamentals/Probability_Statistics/Probability_Statistics.md) —— 期望、方差、重要性采样
 
 ### 7.2 后续进阶
-- **AI 智能体**: [AI Agents](../AI_Agents/AI_Agents.md) —— 结合 LLM 的自主规划系统
+- **AI 智能体**: [AI Agents](../../15_Agent_Production/Agent_Foundations/AI_Agents.md) —— 结合 LLM 的自主规划系统
 - **多智能体强化学习**: 博弈论、协作通信
 - **模仿学习**: Behavior Cloning, GAIL, IRL
 

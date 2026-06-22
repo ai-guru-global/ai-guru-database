@@ -683,8 +683,8 @@ B:新模型
 - [A/B 测试计算器](https://www.optimizely.com/sample-size-calculator/)
 
 ### 🎓 相关知识
-- [监督学习 - 小白版](../../02_Machine_Learning/Supervised_Learning/Supervised_Learning_for_dummy.md)
-- [大语言模型 - 小白版](../../05_NLP_LLMs/LLM_Architectures/LLM_Architectures_for_dummy.md)
+- [监督学习 - 小白版](../02_Machine_Learning/Supervised_Learning/Supervised_Learning_for_dummy.md)
+- [大语言模型 - 小白版](../05_NLP_LLMs/LLM_Architectures/LLM_Architectures_for_dummy.md)
 
 ---
 

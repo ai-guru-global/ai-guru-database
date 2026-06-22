@@ -17,7 +17,7 @@ updated: 2026-05-31
 ## 最新动态与权威来源 (Latest Updates & Sources)
 - **个人主页 (Official Site)**: [karpathy.ai](https://karpathy.ai/)
 - **Vibe Coding 原始推文**: [2025 年 2 月提出 "Vibe Coding" 概念](https://x.com/karpathy/status/1886192184808213008)，引发行业对自然语言驱动开发范式的广泛讨论
-- **Vibe Coding 方法论详解**: [Vibe Coding 方法论](../../../16_AI_Coding/Methodology/Vibe_Coding_Methodology.md)
+- **Vibe Coding 方法论详解**: [Vibe Coding 方法论](../../16_AI_Coding/Methodology/Vibe_Coding_Methodology.md)
 ---
 
 ## 相关主题与延伸阅读

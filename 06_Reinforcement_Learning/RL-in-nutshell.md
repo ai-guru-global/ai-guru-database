@@ -367,7 +367,7 @@ Self-Play 是 AlphaGo/AlphaStar 的核心训练策略——Agent 和自己（的
 - **挑战**: 策略循环 (rock-paper-scissors 问题)
 - **解决**: Fictitious Play、Population-Based Training
 
-> 多智能体与 Agent 架构详见 [AI Agents 详解](./AI_Agents/AI_Agents.md)
+> 多智能体与 Agent 架构详见 [AI Agents 详解](../15_Agent_Production/Agent_Foundations/AI_Agents.md)
 
 ---
 
@@ -642,7 +642,7 @@ flowchart TB
 | 深度 RL | DQN/PPO/SAC 详解 | [Deep_RL.md](./Deep_RL/Deep_RL.md) |
 | PPO 深入 | PPO 论文解读 | [PPO_Deep_Dive.md](./Deep_RL/PPO_Deep_Dive.md) |
 | DQN 深入 | DQN 论文解读 | [DQN_Deep_Dive.md](./Deep_RL/DQN_Deep_Dive.md) |
-| AI Agents | 智能体架构与工具使用 | [Agent-in-nutshell.md](./AI_Agents/Agent-in-nutshell.md) |
+| AI Agents | 智能体架构与工具使用 | [Agent-in-nutshell.md](../15_Agent_Production/Agent_Foundations/Agent-in-nutshell.md) |
 | GRPO/对齐 | 新一代对齐方法详解 | [GRPO 详解](../07_Model_Training/GRPO_and_New_Alignment_Methods.md) |
 | 推理模型 | o1/R1 推理 RL | [DeepSeek-R1](../05_NLP_LLMs/Reasoning_Models/DeepSeek_R1_Technical_Analysis.md) |
 | RLHF 概念 | RLHF 核心概念 | [RLHF 概念](../_concepts/rlhf.md) |

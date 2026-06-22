@@ -641,7 +641,7 @@ response = client.chat.completions.create(
 - [RAG 系统](../14_RAG_Systems/RAG-in-nutshell.md) - 带检索的推理
 - [MLOps 流水线](../MLOps_Pipeline/) - 自动化部署
 - [SRE 实践](../13_AI_Ops/SRE_for_AI_Systems.md) - SLI/SLO 与可靠性工程
-- [可观测性](../13_AI_Ops/AI_Observability_Guide.md) - AI 系统监控与追踪
+- [可观测性](../11_MLOps_Pipeline/AI_Observability_Guide.md) - AI 系统监控与追踪
 
 ## Related
 

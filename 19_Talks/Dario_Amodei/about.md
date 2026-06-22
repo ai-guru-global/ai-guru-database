@@ -122,12 +122,12 @@ Amodei 是少数公开讨论 AI 对劳动力市场冲击的 AI CEO 之一。他�
 
 - [Talks 主题合成 2026](../Talks_Synthesis_2026.md) -- Scaling Laws、开源 vs 闭源、AI 安全、Agent 未来等主题中 Amodei 的立场
 - [Dario Amodei 金句集](./sayings.md) -- 更多金句与权威来源链接
-- [AI 历史时间线](../00_AI_Introduction/AI_History_Timeline.md) -- Anthropic 创立与 Claude 系列发布
-- [AI 伦理与社会](../00_AI_Introduction/AI_Ethics_Society.md) -- Constitutional AI 与 AI 安全治理
-- [AI 未来趋势](../00_AI_Introduction/AI_Future_Trends.md) -- AGI 竞赛与安全并行发展
-- [AI 伦理与安全](../17_Ethics_Safety/README.md) -- AI 对齐、可解释性与安全评估
-- [LLM 基础](../05_NLP_LLMs/README.md) -- Claude 模型架构与技术特点
-- [RAG 系统](../14_RAG_Systems/README.md) -- Claude 在企业 RAG 场景中的应用
+- [AI 历史时间线](../../00_AI_Introduction/AI_History_Timeline.md) -- Anthropic 创立与 Claude 系列发布
+- [AI 伦理与社会](../../00_AI_Introduction/AI_Ethics_Society.md) -- Constitutional AI 与 AI 安全治理
+- [AI 未来趋势](../../00_AI_Introduction/AI_Future_Trends.md) -- AGI 竞赛与安全并行发展
+- [AI 伦理与安全](../../17_Ethics_Safety/README.md) -- AI 对齐、可解释性与安全评估
+- [LLM 基础](../../05_NLP_LLMs/README.md) -- Claude 模型架构与技术特点
+- [RAG 系统](../../14_RAG_Systems/README.md) -- Claude 在企业 RAG 场景中的应用
 
 ---
 

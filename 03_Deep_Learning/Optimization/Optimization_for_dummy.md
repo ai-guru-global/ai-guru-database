@@ -1117,8 +1117,8 @@ A100       40GB    Batch=128-256
 - [神经网络核心小白版](../Neural_Network_Core/Neural_Network_Core_for_dummy.md) - 理解前向和反向传播(必读!)
 
 **横向扩展**:
-- [监督学习小白版](../../../02_Machine_Learning/Supervised_Learning/Supervised_Learning_for_dummy.md) - 理解过拟合/欠拟合
-- [线性代数小白版](../../../01_Fundamentals/Linear_Algebra/Linear_Algebra_for_dummy.md) - 理解梯度(可选)
+- [监督学习小白版](../../02_Machine_Learning/Supervised_Learning/Supervised_Learning_for_dummy.md) - 理解过拟合/欠拟合
+- [线性代数小白版](../../01_Fundamentals/Linear_Algebra/Linear_Algebra_for_dummy.md) - 理解梯度(可选)
 
 **进阶学习**:
 - [Transformer小白版](../../05_NLP_LLMs/README_for_dummy.md) - 看大模型怎么训练的

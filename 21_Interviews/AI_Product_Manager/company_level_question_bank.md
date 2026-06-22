@@ -1,6 +1,6 @@
 ---
 title: AI Product Manager 按公司/级别区分的题库
-category: 23-interviews-ai-product-manager
+category: 21-interviews-ai-product-manager
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "如何做跨团队产品路线与资源协调？"
 created: 2026-05-31

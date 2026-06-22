@@ -1,6 +1,6 @@
 ---
 title: "Prometheus"
-category: concept
+category: -concepts
 tags: ["prometheus", "monitoring", "observability", "metrics", "alerting", "cncf", "time-series"]
 relationships:
   - target: "_concepts/grafana"

@@ -1,6 +1,6 @@
 ---
 title: LoRA 深度解读 (Low-Rank Adaptation of Large Language Models)
-category: 22-papers
+category: 20-papers
 tags: ["parameter-efficient-fine-tuning", "LoRA", "QLoRA", "PEFT", "fine-tuning", "low-rank", "microsoft"]
 summary: "LoRA 是微调大模型的标准方法——冻结原始权重，只训练低秩旁路矩阵，将微调参数量从数十亿降到数百万（减少 1000x），同时保持接近全量微调的性能。从 LoRA 到 QLoRA，让单卡消费级 GPU 微调 70B 模型成为可能。"
 created: 2026-06-04

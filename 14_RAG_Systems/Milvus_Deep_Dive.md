@@ -1,6 +1,6 @@
 ---
 title: "Milvus: 超大规模向量数据库"
-category: "11-rag-systems"
+category: "14-rag-systems"
 tags: ["rag", "retrieval", "vector-database", "embedding"]
 summary: "> **一句话理解**: Milvus 是超大规模向量数据库——万亿向量秒级检索、分片水平扩展、混合标量过滤，AI 时代的高性能向量检索引擎。"
 created: "2026-05-31"

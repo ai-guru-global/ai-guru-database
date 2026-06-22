@@ -1,6 +1,6 @@
 ---
 title: Computer Vision Engineer 题库
-category: 23-interviews-computer-vision-engineer
+category: 21-interviews-computer-vision-engineer
 tags: ["interviews", "career", "experience", "practitioners", "computer-vision"]
 summary: "CNN 与 ViT 的主要差异是什么？"
 created: 2026-05-31

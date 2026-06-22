@@ -1,6 +1,6 @@
 ---
 title: "LLMs in Production"
-category: "references"
+category: "-references-books"
 tags: ["book", "learning-resource", "production", "llm", "engineering"]
 summary: "Manning 出版的 LLM 生产化实战指南,覆盖从原型到生产的全流程:部署、监控、成本优化、安全、评估等关键主题。"
 sources:

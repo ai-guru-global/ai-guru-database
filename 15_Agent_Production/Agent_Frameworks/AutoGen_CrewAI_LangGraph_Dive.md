@@ -1,6 +1,6 @@
 ---
 title: "多 Agent 开发框架: AutoGen / CrewAI / LangGraph"
-category: "13-agent-production-agent-frameworks"
+category: "15-agent-production-agent-frameworks"
 tags: ["ai-agents", "agent-framework", "production", "langgraph", "autogen", "crewai"]
 summary: "> **一句话理解**: AutoGen、CrewAI 和 LangGraph 是当前最主流的多 Agent 开发框架——AutoGen 以微软研究院为背书强调对话式协作，CrewAI 以角色扮演和任务编排见长，LangGraph 则以状态机模式和可扩展性著称。"
 created: "2026-05-31"

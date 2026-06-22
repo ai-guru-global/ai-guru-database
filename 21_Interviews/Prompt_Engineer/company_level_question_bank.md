@@ -1,6 +1,6 @@
 ---
 title: Prompt Engineer 按公司/级别区分的题库
-category: 23-interviews-prompt-engineer
+category: 21-interviews-prompt-engineer
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "如何构建大规模 Prompt 资产管理体系？"
 created: 2026-05-31

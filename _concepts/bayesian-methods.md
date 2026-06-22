@@ -1,6 +1,6 @@
 ---
 title: "贝叶斯方法 (Bayesian Methods)"
-category: concept
+category: -concepts
 tags: ["machine-learning", "bayesian", "MCMC", "variational-inference", "probabilistic-programming", "uncertainty"]
 relationships:
   - target: "_concepts/probability-statistics"

@@ -1,6 +1,6 @@
 ---
 title: 目标检测
-category: concepts
+category: -concepts
 tags: ["computer-vision", "object-detection", "yolo", "faster-rcnn", "detr", "bounding-box"]
 aliases: [Object Detection, 物体检测, 目标检测]
 relationships:

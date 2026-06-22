@@ -1,7 +1,7 @@
 ---
 title: AI 编程与 LLM 网关专题 — OpenRouter & OpenCode 全量指南
 description: '# AI 编程与 LLM 网关专题 — OpenRouter & OpenCode 全量指南'
-category: ai-coding
+category: 16-ai-coding
 tags:
 - ai
 - coding

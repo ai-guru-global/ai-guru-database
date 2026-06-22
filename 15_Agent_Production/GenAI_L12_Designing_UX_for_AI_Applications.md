@@ -1,6 +1,6 @@
 ---
 title: "为人工智能应用设计用户体验"
-category: "course"
+category: "15-agent-production"
 tags: ["microsoft-genai-course", "ux-design", "ai-product", "human-centered-design", "explainability"]
 summary: "深入探讨AI应用用户体验设计的核心原则：可用性、可靠性、可访问性与愉悦性，以及如何为信任、透明性、协作与反馈而设计AI应用。"
 created: "2026-06-12"

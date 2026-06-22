@@ -1,6 +1,6 @@
 ---
 title: "Agent 平台与部署: Dify / Coze / LocalAI"
-category: "13-agent-production-agent-platforms"
+category: "15-agent-production-agent-platforms"
 tags: ["ai-agents", "agent-framework", "production", "langgraph", "dify", "coze"]
 summary: "> **一句话理解**: Dify 和 Coze 是当前最流行的 Agent 开发平台——Dify 以开源和私有部署见长，Coze 以字节跳动为背书强调企业级工作流编排，LocalAI 则让一切在本地运行。"
 created: "2026-05-31"

@@ -1,6 +1,6 @@
 ---
 title: "DeepEval: LLM 测试框架"
-category: "15-testing"
+category: "09-testing"
 tags: ["testing", "ai-testing", "prompt-testing", "evaluation", "llm"]
 summary: "> **一句话理解**: DeepEval 是一个开源的 LLM 测试框架——基于 Pytest，方便地编写单元测试来评估你的 LLM 应用，覆盖幻觉、毒性、摘要质量等场景。"
 created: "2026-05-31"

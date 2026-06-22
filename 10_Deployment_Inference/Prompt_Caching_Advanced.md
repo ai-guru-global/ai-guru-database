@@ -1,6 +1,6 @@
 ---
 title: "Prompt 缓存高级技术"
-category: "09-deployment-inference"
+category: "10-deployment-inference"
 tags: ["prompt-caching", "inference", "optimization", "cost", "latency"]
 summary: "Prompt 缓存是降低 LLM 推理成本和延迟的关键技术,本文覆盖前缀缓存、语义缓存、KV Cache 优化等高级方案。"
 sources:

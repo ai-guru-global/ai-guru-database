@@ -1,6 +1,6 @@
 ---
 title: "Haystack: 开源 RAG 框架"
-category: "11-rag-systems"
+category: "14-rag-systems"
 tags: ["rag", "retrieval", "vector-database", "embedding"]
 summary: "> **一句话理解**: Haystack 是 deepset 打造的模块化 RAG 框架——像搭积木一样组合 Pipeline、组件和数据源，构建强大的检索增强生成系统。"
 created: "2026-05-31"

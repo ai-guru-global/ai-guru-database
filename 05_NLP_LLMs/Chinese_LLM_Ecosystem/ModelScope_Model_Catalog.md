@@ -1,6 +1,6 @@
 ---
 title: "ModelScope 模型目录全景 (ModelScope Model Catalog)"
-category: 04-nlp-llms-chinese-llm
+category: 05-nlp-llms-chinese-llm-ecosystem
 tags: ["modelscope", "chinese-llm", "model-hub", "qwen", "deepseek", "glm", "open-source", "catalog"]
 summary: "基于 ModelScope 官方 API 全量抓取的 15 家中国大模型厂商模型目录：每家的组织信息、模型矩阵、下载量统计、Top 模型精选与许可证分布。共 1,621 个官方模型、197,281,034 次累计下载。"
 created: 2026-06-19

@@ -1,6 +1,6 @@
 ---
 title: MLOps 流水线
-category: concepts
+category: -concepts
 tags: [mlops, llmops, ci-cd, feature-store, experiment-tracking]
 relationships:
   - target: "[[_concepts/ai-architecture]]"

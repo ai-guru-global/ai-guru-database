@@ -1,6 +1,6 @@
 ---
 title: Agent Harness 速览
-category: 13-agent-production-agent-harness
+category: 15-agent-production-agent-harness
 tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> 一句话：**Agent = Model + Harness**。Harness 是模型之外的一切——让裸模型变成可工作的 Agent 的工程系统。"
 created: 2026-05-31

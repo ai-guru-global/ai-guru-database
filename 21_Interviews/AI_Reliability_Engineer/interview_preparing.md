@@ -1,6 +1,6 @@
 ---
 title: AI Reliability Engineer 面试准备
-category: 23-interviews-ai-reliability-engineer
+category: 21-interviews-ai-reliability-engineer
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "**系统可靠性**: 推理稳定性、故障恢复。"
 created: 2026-05-31

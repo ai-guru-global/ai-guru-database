@@ -1,6 +1,6 @@
 ---
 title: Mustafa Suleyman 关于 AI 的观点 (Mustafa Suleyman on AI)
-category: 21-talks-mustafa-suleyman
+category: 19-talks-mustafa-suleyman
 tags: ["talks", "speeches", "insights", "leaders"]
 summary: "1. **“We need a global regulatory structure for frontier AI.” / “前沿 AI 需要全球监管框架。”**"
 created: 2026-05-31

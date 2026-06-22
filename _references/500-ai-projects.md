@@ -1,6 +1,6 @@
 ---
 title: "500 AI / ML / DL / CV / NLP Projects with Code"
-category: references
+category: -references
 tags: ["references", "projects", "machine-learning", "deep-learning", "computer-vision", "nlp", "github", "code"]
 sources:
   - "https://github.com/ashishpatel26/500-AI-Machine-learning-Deep-learning-Computer-vision-NLP-Projects-with-code"

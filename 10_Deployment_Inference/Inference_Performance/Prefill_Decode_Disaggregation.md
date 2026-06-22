@@ -1,6 +1,6 @@
 ---
 title: Prefill-Decode 分离（Disaggregated Serving）
-category: 09-deployment-inference
+category: 10-deployment-inference-inference-performance
 tags: [inference, prefill, decode, disaggregated-serving, kv-cache, performance]
 summary: "> 把 LLM 推理的 Prefill 和 Decode 阶段拆到不同资源上执行，是长上下文与高并发场景的关键优化。"
 created: 2026-06-15

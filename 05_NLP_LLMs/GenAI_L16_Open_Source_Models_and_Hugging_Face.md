@@ -1,6 +1,6 @@
 ---
 title: "开源模型与Hugging Face"
-category: "course"
+category: "05-nlp-llms"
 tags: ["microsoft-genai-course", "open-source-llm", "hugging-face", "model-selection", "llama", "mistral"]
 summary: "介绍开源LLM生态：Llama 2、Mistral、Falcon等模型特点与优势，以及如何在Hugging Face和Azure AI Studio上选择和使用开源模型。"
 created: "2026-06-12"

@@ -1,6 +1,6 @@
 ---
 title: "提示词工程的两大黄金法则 (吴恩达 & OpenAI 联合指南)"
-category: "04-nlp-llms-prompt-engineering"
+category: "05-nlp-llms-prompt-engineering"
 tags: ["prompt-engineering", "andrew-ng", "openai", "best-practices", "deeplearning-ai"]
 summary: "> **一句话理解**: 抛开网上繁杂的“咒语大全”，吴恩达与 OpenAI 教员在 DLAI 课程中将 Prompt Engineering 总结为两条最底层的黄金法则：1. 写出清晰明确的指令；2. 给模型思考的时间。"
 created: "2026-06-12"

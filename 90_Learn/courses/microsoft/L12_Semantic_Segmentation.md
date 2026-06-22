@@ -1,6 +1,6 @@
 ---
 title: "L12 - 语义分割与U-Net"
-category: "90-learn"
+category: "90-learn-courses-microsoft"
 tags: ["microsoft-ai-course", "computer-vision", "semantic-segmentation", "u-net", "medical-imaging"]
 summary: "本课介绍如何将图像分割任务转化为逐像素分类，讲解编码器-解码器架构、SegNet 与 U-Net，并用 PH² 皮肤镜数据集进行医学图像分割实践。"
 source_url: "https://raw.githubusercontent.com/microsoft/AI-For-Beginners/main/lessons/4-ComputerVision/12-Segmentation/README.md"

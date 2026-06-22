@@ -1,6 +1,6 @@
 ---
 title: Mira Murati 简介 (Mira Murati)
-category: 21-talks-mira-murati
+category: 19-talks-mira-murati
 tags: ["talks", "speeches", "insights", "leaders"]
 summary: "**身份**: OpenAI CTO。"
 created: 2026-05-31

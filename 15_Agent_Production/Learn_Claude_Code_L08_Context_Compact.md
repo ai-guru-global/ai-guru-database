@@ -1,6 +1,6 @@
 ---
 title: "Learn Claude Code L08：Context Compact — 上下文总会满，要有办法腾地方"
-category: 13-agent-production
+category: 15-agent-production
 tags:
   - ai-agents
   - agent-harness

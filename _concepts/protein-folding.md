@@ -1,6 +1,6 @@
 ---
 title: "蛋白质折叠 (Protein Folding)"
-category: concepts
+category: -concepts
 tags: ["protein-folding", "bioinformatics", "alphafold", "ai-for-science"]
 summary: "蛋白质折叠是 AI for Science 的里程碑应用——AlphaFold 2 在 2020 年解决了 50 年来的蛋白质结构预测难题。"
 created: 2026-06-12

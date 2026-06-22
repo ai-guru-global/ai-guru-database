@@ -1,6 +1,6 @@
 ---
 title: Agent Skills 书写速览
-category: 13-agent-production-agent-skills
+category: 15-agent-production-agent-skills
 tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> 一句话：**Agent Skills = 一个包含 `SKILL.md` 的文件夹**，用 Markdown 告诉 AI Agent 什么场景下该做什么、怎么做。"
 created: 2026-05-31

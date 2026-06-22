@@ -1,6 +1,6 @@
 ---
 title: 神经网络
-category: concepts
+category: -concepts
 tags: ["deep-learning", "neural-networks", "backpropagation", "activation-function", "normalization", "cnn", "rnn"]
 aliases: [Neural Network, 神经网络核心, 深度学习基础]
 relationships:

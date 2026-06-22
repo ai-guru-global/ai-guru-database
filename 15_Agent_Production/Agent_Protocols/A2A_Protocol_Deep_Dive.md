@@ -1,6 +1,6 @@
 ---
 title: "Agent-to-Agent 协议 (A2A) 深度解读"
-category: "13-agent-production"
+category: "15-agent-production-agent-protocols"
 tags: ["agents", "a2a", "protocol", "interoperability", "multi-agent"]
 summary: "Google 提出的 Agent-to-Agent (A2A) 协议,定义了 AI Agent 之间互操作的开放标准,是多 Agent 系统的通信基石。"
 sources:

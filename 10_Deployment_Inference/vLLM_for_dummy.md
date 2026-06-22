@@ -1,6 +1,6 @@
 ---
 title: "vLLM 大白话解释"
-category: "09-deployment-inference"
+category: "10-deployment-inference"
 tags: ["vllm", "inference", "deployment", "paged-attention", "kv-cache"]
 summary: "> **一句话秒懂**: vLLM 就是一套让开源大模型在 GPU 上跑得更猛、更省、更稳的推理服务端引擎。"
 created: "2026-06-15"

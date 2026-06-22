@@ -1,6 +1,6 @@
 ---
 title: '3D 计算机视觉'
-category: '05-computer-vision-3d-vision'
+category: '04-computer-vision-3d-vision'
 tags: ["computer-vision", "cnn", "image-processing"]
 summary: '> **一句话秒懂**: 3D 计算机视觉让机器不仅能"看"到平面图像，还能理解物体的深度、形状和三维空间关系。'
 created: '2026-05-31'

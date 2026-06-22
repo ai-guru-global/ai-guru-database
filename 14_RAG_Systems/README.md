@@ -1,6 +1,6 @@
 ---
 title: 'RAG 系统 (RAG Systems)'
-category: '11-rag-systems'
+category: '14-rag-systems'
 tags: ["rag", "retrieval", "vector-database", "embedding"]
 summary: '> **一句话理解**: RAG（检索增强生成）就像给大模型配备了一个"外接大脑"——让模型在回答问题时，先查阅专业知识库，再基于检索到的信息生成准确、可信的回答。'
 created: '2026-05-31'

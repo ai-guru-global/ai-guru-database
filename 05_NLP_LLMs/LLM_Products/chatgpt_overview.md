@@ -1,6 +1,6 @@
 ---
 title: "ChatGPT 概览"
-category: "04-nlp-llms"
+category: "05-nlp-llms-llm-products"
 tags: ["llm", "chatbot", "product", "openai", "ai-assistant"]
 summary: "OpenAI 出品的全球用户量最大的 AI 对话产品,支持文本、图像、代码、搜索等多模态能力。"
 sources:

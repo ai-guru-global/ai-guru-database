@@ -1,6 +1,6 @@
 ---
 title: "生成式AI应用生命周期"
-category: "course"
+category: "11-mlops-pipeline"
 tags: ["microsoft-genai-course", "llmops", "mlops", "ai-lifecycle", "promptflow"]
 summary: "介绍从MLOps到LLMOps的范式转变，涵盖LLM生命周期的三大阶段（探索、构建、运营）及Azure AI平台工具链。"
 created: "2026-06-12"

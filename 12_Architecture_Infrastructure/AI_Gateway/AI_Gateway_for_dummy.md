@@ -1,6 +1,6 @@
 ---
 title: AI Gateway 入门指南 (for Dummies)
-category: 14-ai-gateway
+category: 12-architecture-infrastructure-ai-gateway
 tags: ["ai-gateway", "api-management", "routing", "litellm"]
 summary: "> 用最简单的语言解释什么是 AI Gateway，以及为什么你需要它。"
 created: 2026-05-31

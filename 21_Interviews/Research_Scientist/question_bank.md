@@ -1,6 +1,6 @@
 ---
 title: Research Scientist 题库
-category: 23-interviews-research-scientist
+category: 21-interviews-research-scientist
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "解释梯度消失/爆炸的原因与解决思路。"
 created: 2026-05-31

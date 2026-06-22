@@ -1,6 +1,6 @@
 ---
 title: 'MLOps 流水线 (MLOps Pipeline)'
-category: '10-mlops-pipeline'
+category: '11-mlops-pipeline'
 tags: ["mlops", "ci-cd", "pipeline", "feature-store"]
 summary: '> **一句话理解**: MLOps 就像 DevOps 的"AI 版"——如果说开发一个模型像造一辆车，MLOps 就是建造并运营整条汽车生产线，确保模型能持续、稳定、高效地在生产环境中运行。'
 created: '2026-05-31'

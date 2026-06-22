@@ -1,6 +1,6 @@
 ---
 title: "L19 - 命名实体识别 NER"
-category: "90-learn"
+category: "90-learn-courses-microsoft"
 tags: ["microsoft-ai-course", "nlp", "named-entity-recognition", "token-classification", "sequence-models"]
 summary: "命名实体识别（NER）把文本中的每个词判定为实体类型或背景，是序列标注/词元分类在 NLP 中的典型应用。"
 source_url: "https://raw.githubusercontent.com/microsoft/AI-For-Beginners/main/lessons/5-NLP/19-NER/README.md"

@@ -1,6 +1,6 @@
 ---
 title: Agentic Coding 工具
-category: 13-agent-production-agentic-coding-tools
+category: 15-agent-production-agentic-coding-tools
 tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> 从代码补全到完全自主执行，AI Agent 编程工具正在重塑软件开发的每个环节。"
 created: 2026-05-31

@@ -1,6 +1,6 @@
 ---
 title: 异常检测
-category: concepts
+category: -concepts
 tags: ["machine-learning", "anomaly-detection", "outlier-detection", "isolation-forest", "autoencoder", "one-class-svm"]
 aliases: [Anomaly object-detection, 离群点检测, 异常检测]
 relationships:

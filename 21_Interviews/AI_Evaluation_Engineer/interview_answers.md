@@ -1,6 +1,6 @@
 ---
 title: AI Evaluation Engineer 面试题实例答案
-category: 23-interviews-ai-evaluation-engineer
+category: 21-interviews-ai-evaluation-engineer
 tags: ["interviews", "career", "experience", "practitioners", "model-evaluation"]
 summary: "**答**：先明确目标场景与覆盖维度，采用分层采样与去重规则，避免训练数据泄露。对标多版本模型输出进行一致性校验，并通过人工抽检与标注规范控制偏差。"
 created: 2026-05-31

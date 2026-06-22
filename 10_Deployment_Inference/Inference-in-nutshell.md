@@ -1,6 +1,6 @@
 ---
 title: 模型推理速成指南
-category: 09-deployment-inference
+category: 10-deployment-inference
 tags: ["deployment", "inference", "serving", "vllm"]
 summary: "> 🎯 **目标**：理解如何在生产环境中使用训练好的 AI 模型进行预测。"
 created: 2026-05-31

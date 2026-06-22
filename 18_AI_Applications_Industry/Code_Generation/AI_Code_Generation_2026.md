@@ -1,6 +1,6 @@
 ---
 title: "AI 代码生成应用场景深度解析"
-category: "20-ai-applications-industry"
+category: "18-ai-applications-industry-code-generation"
 tags: ["code-generation", "ai-coding", "application", "developer-tools"]
 summary: "AI 代码生成从辅助补全到自主开发的演进,覆盖 GitHub Copilot、Cursor、Claude Code 等工具在企业中的落地实践。"
 sources:

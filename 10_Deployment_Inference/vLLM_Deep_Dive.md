@@ -1,6 +1,6 @@
 ---
 title: "vLLM: 生产级 LLM 推理引擎"
-category: "09-deployment-inference"
+category: "10-deployment-inference"
 tags: ["deployment", "inference", "serving", "vllm", "llm", "paged-attention", "continuous-batching"]
 summary: "> **一句话理解**: vLLM 是 UC Berkeley 出品的生产级 LLM 推理引擎——PagedAttention 技术让显存利用率从 20% 提升到 90%+，吞吐量行业标杆。"
 created: "2026-05-31"

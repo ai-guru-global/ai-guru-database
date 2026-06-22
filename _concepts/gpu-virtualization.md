@@ -1,6 +1,6 @@
 ---
 title: "GPU 虚拟化 (GPU Virtualization)"
-category: concept
+category: -concepts
 tags: ["gpu-virtualization", "gpu-sharing", "MIG", "vGPU", "multi-instance", "isolation"]
 relationships:
   - target: "_concepts/ai-hardware"

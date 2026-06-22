@@ -1,6 +1,6 @@
 ---
 title: "数据清洗 Pipeline"
-category: concepts
+category: -concepts
 tags: ["data-cleaning", "data-curation", "pretraining", "fine-tuning", "pipeline", "data-quality"]
 relationships:
   - target: "_concepts/llm-data-engineering"

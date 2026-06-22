@@ -1,6 +1,6 @@
 ---
 title: NLP Engineer 面试准备
-category: 23-interviews-nlp-engineer
+category: 21-interviews-nlp-engineer
 tags: ["interviews", "career", "experience", "practitioners", "nlp"]
 summary: "**LLM 应用**: RAG、工具调用、对话系统。"
 created: 2026-05-31

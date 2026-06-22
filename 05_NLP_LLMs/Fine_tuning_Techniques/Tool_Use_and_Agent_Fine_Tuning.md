@@ -1,6 +1,6 @@
 ---
 title: 'Tool Use 与 Agent 微调 (Tool-Use and Agent Fine-Tuning)'
-category: '04-nlp-llms-fine-tuning'
+category: '05-nlp-llms-fine-tuning-techniques'
 tags: [tool-use, function-calling, agent, fine-tuning, mcp, react, agent-training]
 summary: '> **一句话理解**: Tool-Use 微调就像教一个博学但只会纸上谈兵的学者"动手干活"——学会调用计算器、查数据库、写代码，从"能说"进化到"能做"；Agent 微调则更进一步，让它像项目经理一样自主规划、分步执行、处理异常。'
 created: '2026-06-04'

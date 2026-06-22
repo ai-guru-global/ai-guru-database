@@ -1,6 +1,6 @@
 ---
 title: '11 RAG 系统 — 小白版 🔍'
-category: '11-rag-systems'
+category: '14-rag-systems'
 tags: ["rag", "retrieval", "vector-database", "embedding"]
 summary: '> **一句话秒懂**: RAG 就是给 AI 装上"资料库"——让它在回答问题前先查资料，而不是只靠记忆硬答，这样 AI 回答得更准确，还能引用原文出处！'
 created: '2026-05-31'

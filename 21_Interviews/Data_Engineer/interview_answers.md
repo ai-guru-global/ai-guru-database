@@ -1,6 +1,6 @@
 ---
 title: Data Engineer 面试题实例答案
-category: 23-interviews-data-engineer
+category: 21-interviews-data-engineer
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "**答**：建立数据校验规则与质量指标，采用分层校验（入湖、加工、产出），并结合血缘与回溯机制定位问题。对关键指标设置报警与回滚。"
 created: 2026-05-31

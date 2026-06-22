@@ -1,6 +1,6 @@
 ---
 title: CLIP 深度解读 (Learning Transferable Visual Models From Natural Language Supervision)
-category: 22-papers
+category: 20-papers
 tags: ["multimodal", "contrastive-learning", "vision-language", "zero-shot", "openai", "CLIP"]
 summary: "CLIP 是视觉-语言多模态 AI 的基石——通过对比学习将图像和文本映射到共享空间，实现了零样本图像分类、文本生成图像检索、以及为 Stable Diffusion/DALL-E 等多模态模型提供语义对齐。"
 created: 2026-06-04

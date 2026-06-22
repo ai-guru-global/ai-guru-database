@@ -1,6 +1,6 @@
 ---
 title: 模型部署与推理
-category: 09-deployment-inference
+category: 10-deployment-inference
 tags: ["deployment", "inference", "serving", "vllm"]
 summary: "> 从模型到生产的最后一公里——高效、可靠、可扩展的推理服务。"
 created: 2026-05-31

@@ -1,6 +1,6 @@
 ---
 title: "高阶 RAG 实战：来自 DeepLearning.AI 的四个落地技巧 (含完整代码)"
-category: "11-rag-systems"
+category: "14-rag-systems"
 tags: ["rag", "deeplearning-ai", "llamaindex", "chroma", "advanced-rag", "retrieval", "code-implementation"]
 summary: "> **一句话理解**: 基础的“分块->向量化->余弦相似度检索”在面对真实复杂的业务文档时效果极差。本文不仅总结了 DLAI 课程中推崇的四大高阶 RAG 优化技巧，还提供了基于 LlamaIndex 的完整本地可运行代码。"
 created: "2026-06-12"

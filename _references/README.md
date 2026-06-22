@@ -1,6 +1,6 @@
 ---
 title: "参考资料索引 (References)"
-category: references
+category: -references
 tags: ["references", "external-sources", "courses", "books", "papers"]
 summary: "外部学习资源的结构化索引——课程、书籍、教程、数据集的引用与映射。"
 created: 2026-06-12

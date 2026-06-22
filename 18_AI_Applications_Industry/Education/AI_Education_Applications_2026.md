@@ -1,6 +1,6 @@
 ---
 title: "AI 教育应用场景深度解析"
-category: "20-ai-applications-industry"
+category: "18-ai-applications-industry-education"
 tags: ["education", "edtech", "application", "tutoring", "personalized-learning"]
 summary: "AI 在教育领域的核心应用:个性化辅导、自动评分、内容生成、学习分析等场景的技术方案与实践。"
 sources:

@@ -1,6 +1,6 @@
 ---
 title: "混合专家模型 (Mixture of Experts, MoE)"
-category: concept
+category: -concepts
 tags: ["moe", "mixture-of-experts", "sparse-activation", "routing", "scaling", "deepseek", "qwen"]
 relationships:
   - target: "_concepts/llm-architectures"

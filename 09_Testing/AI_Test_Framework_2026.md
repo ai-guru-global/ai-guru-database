@@ -1,6 +1,6 @@
 ---
 title: 'AI 系统测试框架 (AI Test Framework 2026)'
-category: '15-testing'
+category: '09-testing'
 tags: ["testing", "ai-testing", "prompt-testing", "evaluation"]
 summary: '> **一句话理解**: AI 系统测试框架是保障 AI 应用质量的"安全网"——通过多层级、自动化的测试体系，确保 AI 系统在发布前经过充分验证，上线后稳定可靠。'
 created: '2026-05-31'

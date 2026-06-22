@@ -1,6 +1,6 @@
 ---
 title: "因果推断深度解读: 从相关到因果的 AI 新范式"
-category: "02-machine-learning"
+category: "02-machine-learning-causal-inference"
 tags: ["causal-inference", "causality", "do-calculus", "SCM", "pearl", "treatment-effect", "confounding", "instrumental-variable", "causal-discovery"]
 summary: "> **一句话理解**: 机器学习擅长发现「相关性」(下雨天雨伞多)，因果推断要回答「因果性」(下雨导致雨伞多)——前者观察世界，后者理解干预的后果，这是AI从「模式匹配」走向「真正理解」的关键一步。"
 created: 2026-06-04

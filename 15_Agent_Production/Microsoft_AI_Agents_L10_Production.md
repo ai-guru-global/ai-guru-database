@@ -1,6 +1,6 @@
 ---
 title: "L10 生产化 AI Agent：可观测性与评估（Observability & Evaluation）"
-category: "13-agent-production"
+category: "15-agent-production"
 tags:
   - ai-agents
   - microsoft

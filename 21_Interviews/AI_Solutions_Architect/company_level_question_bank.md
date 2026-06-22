@@ -1,6 +1,6 @@
 ---
 title: AI Solutions Architect 按公司/级别区分的题库
-category: 23-interviews-ai-solutions-architect
+category: 21-interviews-ai-solutions-architect
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "多系统协同与安全合规如何设计？"
 created: 2026-05-31

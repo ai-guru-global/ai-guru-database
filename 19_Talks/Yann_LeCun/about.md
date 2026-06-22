@@ -1,6 +1,6 @@
 ---
 title: Yann LeCun 简介 (Yann LeCun)
-category: 21-talks-yann-lecun
+category: 19-talks-yann-lecun
 tags: ["talks", "speeches", "insights", "leaders", "Meta-AI", "CNN", "self-supervised-learning", "world-models"]
 summary: "**一句话概括**: Meta 首席 AI 科学家，CNN 之父与图灵奖得主，以世界模型和开源路线挑战 LLM 主导范式。"
 created: 2026-05-31

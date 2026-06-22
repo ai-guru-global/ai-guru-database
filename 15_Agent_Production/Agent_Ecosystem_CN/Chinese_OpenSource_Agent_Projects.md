@@ -1,6 +1,6 @@
 ---
 title: 国内开源 AI Agent 项目
-category: 13-agent-production-agent-ecosystem-cn
+category: 15-agent-production-agent-ecosystem-cn
 tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> **一句话理解**: 国内开源 AI Agent 项目正在快速崛起——从 ChatDev 的虚拟软件公司到 XAgent 的通用自主 Agent，从 CoPaw 的个人助手到 SWE-Agent 的代码修复，每个项目都在不同方向推动 AI Agent 的边界。"
 created: 2026-05-31

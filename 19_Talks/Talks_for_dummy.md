@@ -1,6 +1,6 @@
 ---
 title: AI 名人演讲与观点 - 小白版
-category: 21-talks
+category: 19-talks
 tags: ["talks", "speeches", "insights", "leaders"]
 summary: "> **一句话理解**: 读 AI 大牛的演讲就像站在巨人的肩膀上看世界——他们帮你把复杂的技术趋势浓缩成清晰的方向感。"
 created: 2026-05-31

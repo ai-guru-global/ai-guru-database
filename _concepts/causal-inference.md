@@ -1,6 +1,6 @@
 ---
 title: "因果推断 (Causal Inference)"
-category: concept
+category: -concepts
 tags: ["machine-learning", "causal-inference", "causality", "do-calculus", "causal-graph", "confounder"]
 relationships:
   - target: "_concepts/probability-statistics"

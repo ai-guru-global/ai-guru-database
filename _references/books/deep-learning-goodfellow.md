@@ -1,6 +1,6 @@
 ---
 title: "Deep Learning"
-category: "references"
+category: "-references-books"
 tags: ["book", "learning-resource"]
 summary: "深度学习花书,系统覆盖数学基础、深度网络、正则化、优化等.作者:Ian Goodfellow 等."
 sources:

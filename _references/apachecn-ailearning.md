@@ -1,6 +1,6 @@
 ---
 title: "ApacheCN AiLearning"
-category: "references"
+category: "-references"
 tags: ["apachecn", "ailearning", "reference", "chinese-ai", "course-catalog", "machine-learning", "deep-learning"]
 summary: "ApacheCN AiLearning 仓库的引用索引：大型中文 AI 学习资料集，覆盖数据分析、线性代数、机器学习、PyTorch、TensorFlow 2.x、NLP 等主线。"
 created: "2026-06-12"

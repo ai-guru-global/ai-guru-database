@@ -1,6 +1,6 @@
 ---
 title: "AI for Science: Protein Folding and Drug Discovery 2026"
-category: "20-ai-applications-industry"
+category: "18-ai-applications-industry-ai-for-science"
 tags: ["ai4s", "biology", "protein-folding", "drug-discovery", "alphafold", "generative-biology", "2026-trends"]
 summary: "> **一句话理解**: AI 正在将生物学从一门“观察学科”变为一门“预测学科”——如果说显微镜让我们看见了生命，那么 AI 正在让我们理解生命的“源代码”并能够重新编写它。"
 created: 2026-06-04

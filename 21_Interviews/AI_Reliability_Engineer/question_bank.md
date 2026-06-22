@@ -1,6 +1,6 @@
 ---
 title: AI Reliability Engineer 题库
-category: 23-interviews-ai-reliability-engineer
+category: 21-interviews-ai-reliability-engineer
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "SLI/SLO/SLA 的区别是什么？"
 created: 2026-05-31

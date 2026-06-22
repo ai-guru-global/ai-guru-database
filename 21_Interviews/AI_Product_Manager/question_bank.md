@@ -1,6 +1,6 @@
 ---
 title: AI Product Manager 题库
-category: 23-interviews-ai-product-manager
+category: 21-interviews-ai-product-manager
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "如何评估模型能力边界与产品可用性？"
 created: 2026-05-31

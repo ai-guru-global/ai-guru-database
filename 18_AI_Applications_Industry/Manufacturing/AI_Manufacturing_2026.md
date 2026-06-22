@@ -1,6 +1,6 @@
 ---
 title: 'AI 智能制造行业应用 (2025-2026)'
-category: '20-ai-applications-industry-manufacturing'
+category: '18-ai-applications-industry-manufacturing'
 tags: ["ai-applications", "industry", "finance", "healthcare"]
 summary: '> **一句话理解**: 2026年制造业AI已进入"数字孪生+Agentic"阶段——PepsiCo用AI数字孪生提升产能20%，视觉质检漏检率降低90%，"黑灯工厂"从概念走向规模化落地。'
 created: '2026-05-31'

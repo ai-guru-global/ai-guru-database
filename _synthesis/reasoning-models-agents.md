@@ -1,6 +1,6 @@
 ---
 title: "推理模型 × Agent: 当慢思考遇上自主行动"
-category: synthesis
+category: -synthesis
 tags: ["reasoning", "agent", "o1", "deepseek-r1", "mcts", "planning", "synthesis"]
 sources:
   - "05_NLP_LLMs/Reasoning_Models/o1_Class_Reasoning_Models"

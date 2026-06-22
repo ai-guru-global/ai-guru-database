@@ -1,6 +1,6 @@
 ---
 title: "AI for Science: Materials Science and Energy 2026"
-category: "20-ai-applications-industry"
+category: "18-ai-applications-industry-ai-for-science"
 tags: ["ai4s", "materials-science", "energy", "batteries", "catalysis", "superconductors", "2026-trends"]
 summary: "> **一句话理解**: AI 正在加速寻找“奇迹材料”——从续航更久的电池到室温超导体，AI 通过模拟和预测，将数千年的试错过程压缩到了几天。"
 created: 2026-06-04

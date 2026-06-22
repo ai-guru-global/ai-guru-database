@@ -1,6 +1,6 @@
 ---
 title: 深度学习驱动的计算机视觉
-category: synthesis
+category: -synthesis
 tags: [synthesis, computer-vision, cv, cnn, deep-learning, image-classification]
 summary: 从 CNN 到 Vision Transformer，深度学习如何彻底重塑计算机视觉的任务边界和性能上限。
 created: 2026-06-12

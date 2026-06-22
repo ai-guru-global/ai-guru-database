@@ -1,6 +1,6 @@
 ---
 title: "AI Agent 记忆技术完全指南"
-category: "13-agent-production"
+category: "15-agent-production-memory-infrastructure"
 tags: ["agents", "memory", "rag", "knowledge-graph", "mem0", "long-term-memory"]
 summary: "Agent 记忆系统的架构与实现:短期记忆、长期记忆、工作记忆、情景记忆,含 Mem0、Zep、Graphiti 等工具。"
 sources:

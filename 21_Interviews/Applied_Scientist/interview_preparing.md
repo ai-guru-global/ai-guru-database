@@ -1,6 +1,6 @@
 ---
 title: Applied Scientist 面试准备
-category: 23-interviews-applied-scientist
+category: 21-interviews-applied-scientist
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "**研究成果落地**: 模型性能与业务指标对齐。"
 created: 2026-05-31

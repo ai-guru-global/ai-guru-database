@@ -1,6 +1,6 @@
 ---
 title: Data Engineer 面试准备
-category: 23-interviews-data-engineer
+category: 21-interviews-data-engineer
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "**数据管道**: 离线/实时数据 ETL 与数据湖/仓。"
 created: 2026-05-31

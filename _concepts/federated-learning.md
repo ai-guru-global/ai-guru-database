@@ -1,6 +1,6 @@
 ---
 title: "联邦学习 (Federated Learning)"
-category: concept
+category: -concepts
 tags: ["privacy", "federated-learning", "FedAvg", "distributed-training", "differential-privacy"]
 relationships:
   - target: "_concepts/neural-networks"

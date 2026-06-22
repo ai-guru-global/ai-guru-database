@@ -1,6 +1,6 @@
 ---
 title: 微调技术
-category: concepts
+category: -concepts
 tags:
 - nlp
 - fine-tuning

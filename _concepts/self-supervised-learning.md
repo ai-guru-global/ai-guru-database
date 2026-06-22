@@ -1,6 +1,6 @@
 ---
 title: "自监督学习 (Self-Supervised Learning)"
-category: concept
+category: -concepts
 tags: ["deep-learning", "self-supervised-learning", "contrastive-learning", "SimCLR", "MoCo", "MAE", "DINO"]
 relationships:
   - target: "_concepts/neural-networks"

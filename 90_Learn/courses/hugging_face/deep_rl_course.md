@@ -1,6 +1,6 @@
 ---
 title: "HuggingFace 深度强化学习课程 (Deep RL Course)"
-category: "90-learn-courses"
+category: "90-learn-courses-hugging-face"
 tags: ["course", "huggingface", "reinforcement-learning", "deep-rl"]
 summary: "HuggingFace 官方深度强化学习课程——从 Q-Learning 到 PPO，配合 Gymnasium 实战。"
 created: "2026-06-12"

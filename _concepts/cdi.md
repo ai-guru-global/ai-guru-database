@@ -1,6 +1,6 @@
 ---
 title: CDI (Container Device Interface)
-category: concepts
+category: -concepts
 tags:
 - cdi
 - container-device-interface

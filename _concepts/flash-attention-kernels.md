@@ -1,6 +1,6 @@
 ---
 title: Flash Attention 算子 (FlashMLA/FlashInfer)
-category: concepts
+category: -concepts
 tags: [inference, attention, kernel, flashmla, flashinfer, gpu]
 relationships:
   - target: "_concepts/multi-head-latent-attention"

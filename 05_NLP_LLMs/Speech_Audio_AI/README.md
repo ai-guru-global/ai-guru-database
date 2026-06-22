@@ -1,6 +1,6 @@
 ---
 title: "语音与音频 AI (Speech & Audio AI)"
-category: "04-nlp-llms"
+category: "05-nlp-llms-speech-audio-ai"
 tags: ["speech", "audio", "ASR", "TTS", "whisper", "cosyvoice"]
 summary: "> 语音 AI 让机器「听懂」和「说出」——涵盖 ASR、TTS、音频理解、音乐生成、实时对话。"
 created: 2026-06-04

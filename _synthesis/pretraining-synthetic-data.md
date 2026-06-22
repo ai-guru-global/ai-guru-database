@@ -3,7 +3,7 @@ title: 预训练数据 × 合成数据：从规模到质量的范式转移
 description: 跨域合成：预训练数据工程（Pretraining Data）与合成数据生成（Synthetic Data）的技术交汇，探索数据质量超越数据规模的新范式
 date: 2026-05-31
 tags: [pretraining-data, synthetic-data, data-engineering, llm-training, data-curation, data-mixture, quality-over-scale]
-category: synthesis
+category: -synthesis
 created: 2026-06-12
 summary: ""
 ---

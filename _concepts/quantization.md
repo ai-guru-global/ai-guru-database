@@ -1,6 +1,6 @@
 ---
 title: Quantization
-category: concepts
+category: -concepts
 tags: [inference, quantization, fp8, int8, int4, model-compression, performance]
 relationships:
   - target: "_concepts/model-compression"

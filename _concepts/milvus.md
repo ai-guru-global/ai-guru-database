@@ -1,6 +1,6 @@
 ---
 title: "Milvus"
-category: concept
+category: -concepts
 tags: ["milvus", "vector-database", "rag", "embedding", "zilliz", "distributed", "gpu"]
 relationships:
   - target: "_concepts/vector-database"

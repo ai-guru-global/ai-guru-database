@@ -1,6 +1,6 @@
 ---
 title: GAN 深度解读 (Generative Adversarial Networks)
-category: 22-papers
+category: 20-papers
 tags: ["generative-models", "GAN", "StyleGAN", "adversarial-training", "image-generation", "goodfellow"]
 summary: "GAN 是生成式 AI 的先驱——通过生成器和判别器的对抗博弈，学会了创造逼真的图像、视频和 3D 模型。虽然 2024 年后被扩散模型取代，但 GAN 的对抗训练思想深刻影响了整个 AI 领域。"
 created: 2026-06-04

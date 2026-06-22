@@ -1,6 +1,6 @@
 ---
 title: "Kueue: Kubernetes 原生作业排队系统"
-category: "12-architecture-infrastructure"
+category: "12-architecture-infrastructure-cncf-cloud-native-ai"
 tags: ["cncf", "kubernetes", "kueue", "scheduling", "batch", "quota"]
 summary: "Kueue 是 Kubernetes SIGs 的作业排队/配额层,在 GPU 等稀缺资源紧张时按团队配额、优先级、公平共享决定谁能先跑,再把已准入的作业交给真正的调度器。"
 created: "2026-06-16"

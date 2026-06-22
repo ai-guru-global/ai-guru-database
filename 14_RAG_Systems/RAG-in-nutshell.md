@@ -1,6 +1,6 @@
 ---
 title: RAG (检索增强生成) 速成指南
-category: 11-rag-systems
+category: 14-rag-systems
 tags: ["rag", "retrieval", "vector-database", "embedding"]
 summary: "> 🎯 **目标**：理解如何让 AI 模型访问你自己的数据，而无需重新训练。"
 created: 2026-05-31

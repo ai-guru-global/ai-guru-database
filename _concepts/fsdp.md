@@ -1,6 +1,6 @@
 ---
 title: "FSDP (Fully Sharded Data Parallel)"
-category: concept
+category: -concepts
 tags: ["fsdp", "pytorch", "distributed-training", "zero", "sharding", "llm", "training"]
 relationships:
   - target: "_concepts/distributed-training"

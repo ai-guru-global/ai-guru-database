@@ -1,6 +1,6 @@
 ---
 title: "Neuro-symbolic AI & Formal Verification 2026"
-category: "04-nlp-llms-reasoning"
+category: "05-nlp-llms-reasoning-models"
 tags: ["neuro-symbolic", "formal-verification", "lean4", "coq", "automated-theorem-proving", "reasoning", "alpha-geometry"]
 summary: "> **一句话理解**: 神经符号 AI 是将 LLM 的“直觉”与形式逻辑的“严谨”相结合——让模型不仅能猜出答案，还能给出数学上绝对正确的证明。"
 created: 2026-06-04

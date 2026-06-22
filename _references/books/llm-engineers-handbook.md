@@ -1,6 +1,6 @@
 ---
 title: "LLM Engineer's Handbook"
-category: "references"
+category: "-references-books"
 tags: ["book", "learning-resource"]
 summary: "LLM 工程师手册,端到端 LLM 应用设计到部署.作者:Maxime Labonne."
 sources:

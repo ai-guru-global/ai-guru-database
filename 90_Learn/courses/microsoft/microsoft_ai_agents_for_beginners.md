@@ -1,6 +1,6 @@
 ---
 title: "Microsoft AI Agents for Beginners：16 课 AI 代理初学者课程映射"
-category: "90-learn"
+category: "90-learn-courses-microsoft"
 tags:
   - learning-paths
   - microsoft

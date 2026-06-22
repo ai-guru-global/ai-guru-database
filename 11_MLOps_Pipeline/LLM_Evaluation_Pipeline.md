@@ -1,6 +1,6 @@
 ---
 title: "LLM 评估流水线"
-category: "10-mlops-pipeline"
+category: "11-mlops-pipeline"
 tags: ["llmops", "evaluation", "llm-as-judge", "human-eval", "ci-cd", "ragas", "deepeval", "golden-set"]
 summary: "> **一句话理解**: 没有自动化评估，LLM 应用的每一次改动都是赌博——评估流水线是把「靠感觉发版」变成「靠数据发版」的唯一途径。"
 created: 2026-06-15

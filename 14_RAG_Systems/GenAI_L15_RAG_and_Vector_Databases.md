@@ -1,6 +1,6 @@
 ---
 title: "检索增强生成(RAG)与向量数据库"
-category: "course"
+category: "14-rag-systems"
 tags: ["microsoft-genai-course", "rag", "vector-database", "embeddings", "semantic-search"]
 summary: "详解RAG架构原理与实现流程：知识库构建、文本嵌入、向量搜索、检索增强生成，以及向量数据库的选择与使用。"
 created: "2026-06-12"

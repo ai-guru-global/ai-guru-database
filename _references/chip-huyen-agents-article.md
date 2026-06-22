@@ -1,6 +1,6 @@
 ---
 title: "Chip Huyen: AI Agent 深度解析"
-category: "references"
+category: "-references"
 tags: ["agents", "article", "chip-huyen", "architecture", "production"]
 summary: "Chip Huyen 关于 AI Agent 的深度技术文章,覆盖 Agent 架构、工具使用、记忆机制、生产部署等主题。"
 sources:

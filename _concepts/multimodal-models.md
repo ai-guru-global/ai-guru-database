@@ -1,6 +1,6 @@
 ---
 title: 多模态模型
-category: concepts
+category: -concepts
 tags: [nlp, multimodal-vision, vision-language, video, diffusion]
 relationships:
   - target: "[[_concepts/transformer-architecture]]"

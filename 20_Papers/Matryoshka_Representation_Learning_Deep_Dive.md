@@ -1,6 +1,6 @@
 ---
 title: "论文深度解读: Matryoshka Representation Learning"
-category: "22-papers"
+category: "20-papers"
 tags: ["paper", "matryoshka", "mrl", "representation-learning", "embedding", "neurips-2022", "adaptive-retrieval"]
 summary: "MRL (Kusupati et al., NeurIPS 2022) 提出俄罗斯套娃表示学习：训练得到的向量在任何前缀维度上都保持语义有效性，让表示学习首次具备按需截断能力，成为 RAG、向量数据库和端侧部署的关键技术。"
 created: "2026-06-15"

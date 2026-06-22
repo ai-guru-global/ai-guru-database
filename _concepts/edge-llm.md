@@ -1,6 +1,6 @@
 ---
 title: "端侧 LLM (Edge LLM)"
-category: concept
+category: -concepts
 tags: ["nlp", "edge-llm", "small-language-model", "quantization", "on-device", "llama-cpp"]
 relationships:
   - target: "_concepts/llm-architectures"

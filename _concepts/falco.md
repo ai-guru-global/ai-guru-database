@@ -1,6 +1,6 @@
 ---
 title: "Falco"
-category: concept
+category: -concepts
 tags: ["falco", "security", "runtime-security", "kubernetes", "syscall", "threat-detection", "cncf"]
 relationships:
   - target: "_concepts/runtime-security"

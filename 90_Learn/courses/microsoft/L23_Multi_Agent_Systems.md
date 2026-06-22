@@ -1,6 +1,6 @@
 ---
 title: "L23 - 多智能体系统"
-category: "90-learn"
+category: "90-learn-courses-microsoft"
 tags: ["microsoft-ai-course", "multi-agent", "agent-based-modeling", "netlogo", "emergent-behavior"]
 summary: "从简单个体如何通过交互涌现出复杂集体行为的角度，理解多智能体系统（Multi-Agent Systems）的核心思想、代理分类，以及用 NetLogo 进行仿真实验的方法。"
 source_url: "https://raw.githubusercontent.com/microsoft/AI-For-Beginners/main/lessons/6-Other/23-MultiagentSystems/README.md"

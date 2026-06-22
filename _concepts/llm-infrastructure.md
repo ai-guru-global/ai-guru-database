@@ -1,6 +1,6 @@
 ---
 title: LLM 基础设施
-category: concepts
+category: -concepts
 tags: ["infrastructure", "gpu", "ai-hardware", "model-training", "edge-ai", "cost-optimization"]
 relationships:
   - target: "[[_concepts/ai-architecture]]"

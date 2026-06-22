@@ -1,6 +1,6 @@
 ---
 title: "人形机器人 2026 (Humanoid Robots)"
-category: "06-rl-robotics"
+category: "06-reinforcement-learning-robotics-embodied-ai"
 tags: ["humanoid-robot", "embodied-ai", "tesla-optimus", "figure", "robotics"]
 summary: "2026 年全球人形机器人全景：从 Tesla Optimus 到 Figure 02、Unitree、Boston Dynamics，覆盖运动控制、操作能力、商业落地与市场格局。"
 created: "2026-06-12"

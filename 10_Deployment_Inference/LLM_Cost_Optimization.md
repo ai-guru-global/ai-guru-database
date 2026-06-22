@@ -1,6 +1,6 @@
 ---
 title: "LLM 成本优化完全指南"
-category: "09-deployment-inference"
+category: "10-deployment-inference"
 tags: ["cost", "optimization", "inference", "prompt-caching", "model-routing"]
 summary: "降低 LLM 应用成本的系统性方法:模型路由、Prompt 缓存、量化、批处理、供应商选择等策略。"
 sources:

@@ -1,6 +1,6 @@
 ---
 title: "LLM 推理引擎选型指南"
-category: "09-deployment-inference"
+category: "10-deployment-inference"
 tags: ["deployment", "inference", "serving", "llm", "selection", "decision-guide", "vllm", "sglang", "tensorrt-llm"]
 summary: "> **一句话理解**: 面向生产环境的 LLM 推理引擎选型指南——通过统一对比维度、场景决策树和成本模型，帮助你在 vLLM、SGLang、TensorRT-LLM、TGI、Groq、llama.cpp 等引擎中做出最优选择。"
 created: "2026-06-15"

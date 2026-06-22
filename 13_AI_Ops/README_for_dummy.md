@@ -1,6 +1,6 @@
 ---
 title: 16 AI Ops — 小白版 📡
-category: 16-ai-ops
+category: 13-ai-ops
 tags: ["ai-ops", "observability", "monitoring", "incident-response"]
 summary: "> **一句话秒懂**: AI Ops 就是用 AI 来运维 AI 系统——智能监控、自动告警、根因分析、自动修复，让 AI 系统自己照顾自己，运维人员不用 24 小时盯着。"
 created: 2026-05-31

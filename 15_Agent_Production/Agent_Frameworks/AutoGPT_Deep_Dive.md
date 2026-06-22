@@ -1,6 +1,6 @@
 ---
 title: "AutoGPT: 自主任务执行 Agent"
-category: "13-agent-production-agent-frameworks"
+category: "15-agent-production-agent-frameworks"
 tags: ["ai-agents", "agent-framework", "production", "langgraph", "gpt"]
 summary: "> **一句话理解**: AutoGPT 是一个让 AI 自主完成复杂任务的框架——给它一个目标，它会自动分解任务、调用工具、反思改进，直到达成目标。"
 created: "2026-05-31"

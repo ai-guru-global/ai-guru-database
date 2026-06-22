@@ -5,12 +5,12 @@ tags:
 - ai
 - ai-coding
 created: 2026-06-12
-category: 17-ai-coding
+category: 16-ai-coding-tools-opencode
 summary: ""
 ---
 title: Agent 系统深度指南
 description: '# Agent 系统深度指南'
-category: ai-coding
+category: 16-ai-coding-tools-opencode
 tags:
 - ai
 - coding

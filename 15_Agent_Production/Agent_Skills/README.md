@@ -1,6 +1,6 @@
 ---
 title: Agent Skills 文档索引
-category: 13-agent-production-agent-skills
+category: 15-agent-production-agent-skills
 tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> 本文件夹收录 Agent Skills 开放标准的完整知识体系，覆盖从入门到生产、从个人到团队的全部场景。"
 created: 2026-05-31

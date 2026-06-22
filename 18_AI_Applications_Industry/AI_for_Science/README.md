@@ -1,6 +1,6 @@
 ---
 title: "AI for Science (AI 驱动的科学发现)"
-category: "20-ai-applications"
+category: "18-ai-applications-industry-ai-for-science"
 tags: ["ai-for-science", "alphafold", "drug-discovery", "materials-science"]
 summary: "> AI for Science 正在重塑科学研究——从蛋白质结构预测到药物发现、气象预报、材料设计。"
 created: 2026-06-04

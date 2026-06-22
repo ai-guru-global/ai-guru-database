@@ -1,6 +1,6 @@
 ---
 title: 22 经典与必读 AI 论文清单 (Essential AI Papers)
-category: 22-papers
+category: 20-papers
 tags: ["paper", "deep-dive"]
 summary: "本清单精选 22 篇\"改变 AI 历史\"的核心论文（含 22 篇深度解读），每篇附带\"为什么必读\"的解读和相关章节链接，帮你从论文源头理解现代 AI 的构建逻辑。"
 created: 2026-05-31

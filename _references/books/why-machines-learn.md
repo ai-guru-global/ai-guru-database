@@ -1,6 +1,6 @@
 ---
 title: "Why Machines Learn"
-category: "references"
+category: "-references-books"
 tags: ["book", "learning-resource"]
 summary: "ML 背后的数学直觉,科普风格.作者:Anil Ananthaswamy."
 sources:

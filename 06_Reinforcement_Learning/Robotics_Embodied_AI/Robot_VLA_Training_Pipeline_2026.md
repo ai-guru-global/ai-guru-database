@@ -1,6 +1,6 @@
 ---
 title: "Robot VLA Training Pipeline 2026: End-to-End Robotic Foundation Models"
-category: "06-reinforcement-learning-robotics"
+category: "06-reinforcement-learning-robotics-embodied-ai"
 tags: ["robotics", "vla", "embodied-ai", "training-pipeline", "sim-to-real", "data-collection", "2026-trends"]
 summary: "> **一句话理解**: VLA (Vision-Language-Action) 训练流水线是具身智能的“炼丹炉”——它将海量的视频数据、人类示范数据和仿真环境经验转化为机器人可执行的连贯动作指令。"
 created: 2026-06-04

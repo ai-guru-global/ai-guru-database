@@ -1,6 +1,6 @@
 ---
 title: 模型服务
-category: concepts
+category: -concepts
 tags: [serving, vllm, sglang, tensorrt, triton, ollama, llama-cpp, inference-engine]
 relationships:
   - target: "[[_concepts/model-deployment]]"

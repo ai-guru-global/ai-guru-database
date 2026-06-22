@@ -1,6 +1,6 @@
 ---
 title: "使用小型语言模型构建应用"
-category: "course"
+category: "05-nlp-llms-edge-llm"
 tags: ["microsoft-genai-course", "slm", "edge-deployment", "phi-3", "onnx-runtime", "ollama"]
 summary: "全面介绍小型语言模型（SLM）的概念与优势，以微软Phi-3/3.5家族为主线，涵盖文本、视觉和MoE场景的推理与部署方法，包括云端API和本地部署完整指南。"
 created: "2026-06-12"

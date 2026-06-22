@@ -1,6 +1,6 @@
 ---
 title: "平头哥 T-Head 真武 PPU 深度解析 2026"
-category: "01-fundamentals"
+category: "01-fundamentals-ai-hardware"
 tags: ["ai-chip", "chinese-chip", "t-head", "pingtouge", "ppu", "zhenwu", "alibaba", "training", "inference", "gpu"]
 summary: "全面解析阿里巴巴旗下平头哥半导体及其真武 PPU 系列 AI 芯片的产品演进、技术规格、部署规模与生态定位，覆盖 2026 年最新公开的真武 810E 与真武 M890。"
 sources:

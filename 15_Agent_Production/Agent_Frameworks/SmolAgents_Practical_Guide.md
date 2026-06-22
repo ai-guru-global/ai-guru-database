@@ -1,6 +1,6 @@
 ---
 title: "SmolAgents 实战指南：用 50 行代码构建多模态 Code Agent"
-category: "13-agent-production-agent-frameworks"
+category: "15-agent-production-agent-frameworks"
 tags: ["ai-agents", "smolagents", "huggingface", "code-agent", "practical-guide"]
 summary: "> **一句话理解**: SmolAgents 用 Python 代码代替 JSON 作为 Agent 的思考与行动载体，极大简化了多工具调用、错误恢复和逻辑推理的复杂度。本文将带你从零实现生产级的 SmolAgents 工作流。"
 created: "2026-06-12"

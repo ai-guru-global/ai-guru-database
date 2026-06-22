@@ -1,6 +1,6 @@
 ---
 title: "LangSmith: LLM 应用调试与监控"
-category: "16-ai-ops"
+category: "11-mlops-pipeline"
 tags: ["ai-ops", "observability", "monitoring", "incident-response", "llm"]
 summary: "> **一句话理解**: LangSmith 是 LangChain 的 LLM 应用调试平台——请求追踪、日志分析、评估测试、质量监控，LLM 应用的开发者工具。"
 created: "2026-05-31"

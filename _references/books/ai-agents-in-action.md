@@ -1,6 +1,6 @@
 ---
 title: "AI Agents in Action"
-category: "references"
+category: "-references-books"
 tags: ["book", "learning-resource"]
 summary: "AI Agent 实战,从基础到高级.作者:Manning."
 sources:

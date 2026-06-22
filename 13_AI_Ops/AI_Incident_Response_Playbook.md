@@ -1,6 +1,6 @@
 ---
 title: AI 系统事故响应手册
-category: 16-ai-ops
+category: 13-ai-ops
 tags: ["ai-ops", "observability", "monitoring", "incident-response"]
 summary: "> 🎯 **目标**：建立 AI/LLM 生产系统的事故响应体系 —— 从 Runbook 模板、War Room 流程、分诊决策树到自动化修复脚本，确保团队在高压下一致、高效地处理故障。"
 created: 2026-05-31

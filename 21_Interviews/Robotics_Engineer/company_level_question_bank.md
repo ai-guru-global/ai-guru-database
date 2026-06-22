@@ -1,6 +1,6 @@
 ---
 title: Robotics Engineer (AI) 按公司/级别区分的题库
-category: 23-interviews-robotics-engineer
+category: 21-interviews-robotics-engineer
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "端云协同与规模化部署如何设计？"
 created: 2026-05-31

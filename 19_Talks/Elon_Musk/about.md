@@ -1,6 +1,6 @@
 ---
 title: Elon Musk 简介 (Elon Musk)
-category: 21-talks-elon-musk
+category: 19-talks-elon-musk
 tags: ["talks", "speeches", "insights", "leaders"]
 summary: "**身份**: SpaceX/特斯拉/ X (Twitter) CEO，OpenAI 联合创始人之一（已离开）。"
 created: 2026-05-31

@@ -1,6 +1,6 @@
 ---
 title: Data Scientist 面试题实例答案
-category: 23-interviews-data-scientist
+category: 21-interviews-data-scientist
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "**答**：相关性反映变量共同变化，不代表因果。要建立因果关系需控制混杂因素，使用随机实验或因果推断方法（如倾向得分匹配）。在业务场景中，我会优先通过 A/B 测试验证结论。"
 created: 2026-05-31

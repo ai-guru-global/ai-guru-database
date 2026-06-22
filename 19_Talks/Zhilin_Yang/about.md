@@ -1,6 +1,6 @@
 ---
 title: "杨植麟 (Zhilin Yang) — 月之暗面/Moonshot AI 创始人"
-category: 21-talks
+category: 19-talks-zhilin-yang
 tags: [zhilin-yang, moonshot-ai, kimi, long-context, transformer-xl, xlnet, chinese-ai, agi]
 summary: "杨植麟是月之暗面创始人，Transformer-XL 和 XLNet 共同发明人，29 岁创业，坚信长上下文是通往 AGI 的关键。"
 created: 2026-06-12

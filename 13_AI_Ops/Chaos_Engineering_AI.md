@@ -1,6 +1,6 @@
 ---
 title: 'AI 系统混沌工程实践 (Chaos Engineering for AI Systems)'
-category: '16-ai-ops'
+category: '13-ai-ops'
 tags: ["ai-ops", "observability", "monitoring", "incident-response"]
 summary: '> **一句话理解**: 混沌工程是 AI 系统的"疫苗"——通过主动注入故障，发现系统弱点，提前修复潜在问题，让系统在真实故障面前更具韧性。'
 created: '2026-05-31'

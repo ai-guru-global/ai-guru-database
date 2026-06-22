@@ -1,6 +1,6 @@
 ---
 title: 语料库质量指标体系
-category: 13-agent-production-16-agent-evaluation-corpus-assessment
+category: 15-agent-production-agent-evaluation-corpus-assessment
 tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> 量化评估语料库质量的完整指标体系，从准确性、完整性、一致性、时效性四个角度全面衡量"
 created: 2026-05-31

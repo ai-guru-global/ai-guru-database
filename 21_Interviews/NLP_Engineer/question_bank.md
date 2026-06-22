@@ -1,6 +1,6 @@
 ---
 title: NLP Engineer 题库
-category: 23-interviews-nlp-engineer
+category: 21-interviews-nlp-engineer
 tags: ["interviews", "career", "experience", "practitioners", "nlp"]
 summary: "解释分词、子词与词表的差异。"
 created: 2026-05-31

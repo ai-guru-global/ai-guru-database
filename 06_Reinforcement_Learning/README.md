@@ -53,6 +53,7 @@ updated: 2026-05-31
 |------|------|---------|
 | DQN | 深度强化学习开山之作，Atari 游戏与经验回放 | [DQN_Deep_Dive.md](./Deep_RL/DQN_Deep_Dive.md) |
 | PPO | OpenAI 默认 RL 算法，裁剪更新稳定训练 | [PPO_Deep_Dive.md](./Deep_RL/PPO_Deep_Dive.md) |
+| RLHF/DPO/GRPO | 大模型对齐训练三大范式（GPT/DPO/DeepSeek-R1 路线） | [RLHF_DPO_GRPO_Deep_Dive.md](./RLHF_DPO_GRPO_Deep_Dive.md) |
 
 ### 小白版入门 (for_dummy)
 

@@ -6,12 +6,12 @@ tags:
 - ai-coding
 - security
 created: 2026-06-12
-category: 17-ai-coding
+category: 16-ai-coding-tools-openrouter
 summary: ""
 ---
 title: 安全、隐私与数据治理
 description: '# 安全、隐私与数据治理'
-category: ai-coding
+category: 16-ai-coding-tools-openrouter
 tags:
 - ai
 - coding

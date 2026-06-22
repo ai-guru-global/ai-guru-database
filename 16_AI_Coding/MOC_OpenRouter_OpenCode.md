@@ -1,7 +1,7 @@
 ---
 title: "topic-ai-coding MOC"
 description: "topic-ai-coding 专题导航页，覆盖 24 篇文档"
-category: moc
+category: 16-ai-coding
 tags: ["kubernetes", "moc", "ai"]
 moc_scope: "topic-ai-coding"
 moc_type: "topic"

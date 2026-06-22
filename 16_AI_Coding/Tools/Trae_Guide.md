@@ -1,6 +1,6 @@
 ---
 title: Trae 使用指南
-category: 17-ai-coding-02-tools
+category: 16-ai-coding-tools
 tags: ["ai-coding", "code-generation", "cursor", "github-copilot"]
 summary: "> **一句话**: Trae 是字节跳动推出的 AI IDE，支持 Pro+ 订阅，适合全栈项目开发。"
 created: 2026-05-31

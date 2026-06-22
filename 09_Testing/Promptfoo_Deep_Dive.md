@@ -1,6 +1,6 @@
 ---
 title: "Promptfoo: LLM Prompt 测试框架"
-category: "15-testing"
+category: "09-testing"
 tags: ["testing", "ai-testing", "prompt-testing", "evaluation", "llm"]
 summary: "> **一句话理解**: Promptfoo 是 LLM Prompt 测试框架——批量测试、多模型对比、回归测试、自定义评分，Prompt 工程的 CI/CD。"
 created: "2026-05-31"

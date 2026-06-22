@@ -1,6 +1,6 @@
 ---
 title: 'OCR 与文字识别 - 小白版 🔤'
-category: '05-computer-vision-ocr-text-recognition'
+category: '04-computer-vision-ocr-text-recognition'
 tags: ["computer-vision", "cnn", "image-processing"]
 summary: '> **一句话秒懂**: OCR 就是让 AI "识字"——把图片里的文字变成可编辑的文本，就像给机器装上了"阅读"能力！'
 created: '2026-05-31'

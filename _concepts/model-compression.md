@@ -1,6 +1,6 @@
 ---
 title: 模型压缩
-category: concepts
+category: -concepts
 tags:
 - - - ai-hardware
 - pruning

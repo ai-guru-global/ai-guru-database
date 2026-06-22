@@ -1,6 +1,6 @@
 ---
 title: LLM Platform Engineer 按公司/级别区分的题库
-category: 23-interviews-llm-platform-engineer
+category: 21-interviews-llm-platform-engineer
 tags: ["interviews", "career", "experience", "practitioners", "llm"]
 summary: "多租户推理平台如何做隔离与计费？"
 created: 2026-05-31

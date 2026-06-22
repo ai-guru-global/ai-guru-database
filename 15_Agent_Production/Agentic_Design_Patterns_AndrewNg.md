@@ -1,6 +1,6 @@
 ---
 title: "吴恩达：Agentic Design Patterns 深度解析 (含 Prompt 与代码实现)"
-category: "13-agent-production"
+category: "15-agent-production"
 tags: ["ai-agents", "agentic-design-patterns", "andrew-ng", "deeplearning-ai", "reflection", "planning", "code-implementation"]
 summary: "> **一句话理解**: 吴恩达提出了推动 AI Agent 走向生产的四大核心模式：Reflection、Tool Use、Planning 和 Multi-agent。本文深入拆解这四大模式，并提供可以直接在内部环境运行的 Prompt 模板与 Python 控制流代码。"
 created: "2026-06-12"

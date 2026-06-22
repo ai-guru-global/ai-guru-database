@@ -1,6 +1,6 @@
 ---
 title: 'AI 系统 CI/CD 流水线 2026 (CI/CD Pipeline for AI)'
-category: '16-ai-ops'
+category: '11-mlops-pipeline'
 tags: ["ai-ops", "observability", "monitoring", "incident-response"]
 summary: '> **一句话理解**: AI 系统的 CI/CD 就像"智能工厂的生产线"——不仅自动测试和部署代码，还要自动训练模型、评估质量、监控性能，确保每次更新都是安全可靠的。'
 created: '2026-05-31'

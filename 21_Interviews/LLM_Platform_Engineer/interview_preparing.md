@@ -1,6 +1,6 @@
 ---
 title: LLM Platform Engineer 面试准备
-category: 23-interviews-llm-platform-engineer
+category: 21-interviews-llm-platform-engineer
 tags: ["interviews", "career", "experience", "practitioners", "llm"]
 summary: "**推理平台**: 模型服务化、路由与弹性扩缩。"
 created: 2026-05-31

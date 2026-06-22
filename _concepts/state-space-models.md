@@ -1,6 +1,6 @@
 ---
 title: 状态空间模型
-category: concepts
+category: -concepts
 tags: ["deep-learning", "ssm", "mamba", "state-space", "linear-complexity", "sequence-models"]
 aliases: [SSM, State Space Model, Mamba, 状态空间, 线性复杂度序列模型]
 relationships:

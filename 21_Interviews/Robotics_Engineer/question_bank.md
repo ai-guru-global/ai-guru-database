@@ -1,6 +1,6 @@
 ---
 title: Robotics Engineer (AI) 题库
-category: 23-interviews-robotics-engineer
+category: 21-interviews-robotics-engineer
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "解释 SLAM 的核心流程与挑战。"
 created: 2026-05-31

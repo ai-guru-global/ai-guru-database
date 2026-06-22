@@ -1,6 +1,6 @@
 ---
 title: Jensen Huang 关于 AI 的观点 (Jensen Huang on AI)
-category: 21-talks-jensen-huang
+category: 19-talks-jensen-huang
 tags: ["talks", "speeches", "insights", "leaders"]
 summary: "1. **“Accelerated computing and generative AI mark a new industrial revolution.” / “加速计算与生成式 AI 代表新的工业革命。”**"
 created: 2026-05-31

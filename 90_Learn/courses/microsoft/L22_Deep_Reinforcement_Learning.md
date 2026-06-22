@@ -1,6 +1,6 @@
 ---
 title: "L22 - 深度强化学习"
-category: "90-learn"
+category: "90-learn-courses-microsoft"
 tags: ["microsoft-ai-course", "reinforcement-learning", "deep-rl", "policy-gradient", "actor-critic", "openai-gym"]
 summary: "通过 OpenAI Gym 中的 CartPole 任务，理解强化学习『学习 by doing』的范式，掌握策略梯度（Policy Gradient）与 Actor-Critic 两类深度 RL 算法的基本思想。"
 source_url: "https://raw.githubusercontent.com/microsoft/AI-For-Beginners/main/lessons/6-Other/22-DeepRL/README.md"

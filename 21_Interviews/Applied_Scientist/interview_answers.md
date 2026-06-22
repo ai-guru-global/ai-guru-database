@@ -1,6 +1,6 @@
 ---
 title: Applied Scientist 面试题实例答案
-category: 23-interviews-applied-scientist
+category: 21-interviews-applied-scientist
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "**答**：先验证离线评估集是否覆盖线上分布，再评估线上用户行为反馈的变化。针对差异引入线上特征或新的评测切片，并通过 A/B 实验闭环验证。"
 created: 2026-05-31

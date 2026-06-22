@@ -1,6 +1,6 @@
 ---
 title: GPUStack
-category: concepts
+category: -concepts
 tags:
 - deployment
 - inference

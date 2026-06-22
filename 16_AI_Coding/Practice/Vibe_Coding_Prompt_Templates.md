@@ -1,6 +1,6 @@
 ---
 title: Vibe Coding 提示词模板库
-category: 17-ai-coding-03-practice
+category: 16-ai-coding-practice
 tags: ["ai-coding", "code-generation", "cursor", "github-copilot"]
 summary: "> **一句话理解**: 从 STAR 框架到规则文件模板，从场景模板到反面教材——你的一站式提示工程工具箱。"
 created: 2026-05-31

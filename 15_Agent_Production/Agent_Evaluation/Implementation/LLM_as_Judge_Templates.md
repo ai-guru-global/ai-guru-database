@@ -1,6 +1,6 @@
 ---
 title: LLM-as-Judge 评估提示词模板
-category: 13-agent-production-16-agent-evaluation-implementation
+category: 15-agent-production-agent-evaluation-implementation
 tags: ["ai-agents", "agent-framework", "production", "langgraph", "llm"]
 summary: "> 用于自动化 Agent 回答质量评估的标准提示词模板"
 created: 2026-05-31

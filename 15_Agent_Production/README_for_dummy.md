@@ -1,6 +1,6 @@
 ---
 title: '13 Agent 生产部署 — 小白版 🤖'
-category: '13-agent-production'
+category: '15-agent-production'
 tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: '> **一句话秒懂**: Agent 就是能"自主行动"的 AI——不只是回答问题，还能规划任务、使用工具、记忆信息、和其他 Agent 协作，就像一个能干的员工，能帮你完成复杂的工作！'
 created: '2026-05-31'

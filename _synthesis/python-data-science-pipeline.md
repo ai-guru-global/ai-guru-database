@@ -1,6 +1,6 @@
 ---
 title: "Python 基础 × 数据科学: AI 入门者的完整工具链"
-category: synthesis
+category: -synthesis
 tags: ["python", "data-science", "numpy", "pandas", "beginner", "education", "synthesis"]
 sources:
   - "01_Fundamentals/Python_for_AI_Basics"

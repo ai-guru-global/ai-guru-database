@@ -1,6 +1,6 @@
 ---
 title: "梁文锋 (Wenfeng Liang) — DeepSeek 创始人"
-category: 21-talks
+category: 19-talks-wenfeng-liang
 tags: [wenfeng-liang, deepseek, high-flyer, moe, mla, open-source, chinese-ai, efficiency]
 summary: "梁文锋是幻方量化联合创始人、DeepSeek 创始人，用 $5.6M 训练出媲美 GPT-4 的模型，以开源和效率震惊全球 AI 界。"
 created: 2026-06-12

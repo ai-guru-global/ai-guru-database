@@ -1,6 +1,6 @@
 ---
 title: AI Security Engineer 题库
-category: 23-interviews-ai-security-engineer
+category: 21-interviews-ai-security-engineer
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "常见 AI 安全威胁模型有哪些？"
 created: 2026-05-31

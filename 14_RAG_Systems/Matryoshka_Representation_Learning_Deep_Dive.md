@@ -1,6 +1,6 @@
 ---
 title: "Matryoshka Representation Learning 深度解析"
-category: "11-rag-systems"
+category: "14-rag-systems"
 tags: ["matryoshka", "mrl", "embedding", "representation-learning", "rag", "vector-database", "dimensionality-reduction", "model-efficiency"]
 summary: "> **一句话理解**: MRL（俄罗斯套娃表示学习）让一组向量具备可截断能力——前 64 维做粗排、前 256 维做精排、全量 768/1024 维做最终匹配，同一模型按需取前缀即可兼顾检索精度与存储/计算成本。"
 created: "2026-06-15"

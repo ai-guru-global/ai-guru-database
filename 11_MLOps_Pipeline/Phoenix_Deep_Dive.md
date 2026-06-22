@@ -1,6 +1,6 @@
 ---
 title: "Phoenix: Arize AI 可观测性平台"
-category: "16-ai-ops"
+category: "11-mlops-pipeline"
 tags: ["ai-ops", "observability", "monitoring", "incident-response"]
 summary: "> **一句话理解**: Phoenix 是 Arize AI 的开源可观测性工具——追踪 LLM 应用从 Prompt 到 Response 的完整链路，帮你发现和修复问题。"
 created: "2026-05-31"

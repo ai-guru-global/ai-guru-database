@@ -1,6 +1,6 @@
 ---
 title: "GenAI Agent 实现集合 (22.5k)"
-category: "references"
+category: "-references"
 tags: ["agents", "genai", "multi-agent", "langgraph", "github-repo", "tutorial"]
 summary: "50+ 个 GenAI Agent 教程与实现(22.5k star),从简单对话机器人到复杂多 Agent 系统。"
 sources:

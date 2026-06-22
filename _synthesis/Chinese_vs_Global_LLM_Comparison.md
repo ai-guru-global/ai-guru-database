@@ -1,6 +1,6 @@
 ---
 title: "中国 vs 国际大模型全面对比 (Chinese vs Global LLM Comparison)"
-category: synthesis
+category: -synthesis
 tags: ["synthesis", "chinese-llm", "global-llm", "comparison", "benchmark", "pricing", "moe", "open-source", "reasoning", "multimodal", "agent"]
 sources:
   - "05_NLP_LLMs/Chinese_LLM_Ecosystem"

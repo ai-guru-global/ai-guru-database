@@ -1,6 +1,6 @@
 ---
 title: "LLM 推理深度剖析：解码策略、推理优化与服务引擎"
-category: 04-nlp-llms-inference-deep-dive
+category: 05-nlp-llms
 tags: ["decoding", "greedy-search", "beam-search", "sampling", "temperature", "top-p", "kv-cache", "flash-attention", "quantization", "speculative-decoding", "continuous-batching", "PagedAttention", "disaggregated-serving", "prefill-decode"]
 summary: "> 系统覆盖 LLM 推理全链路：解码策略（贪心/束搜索/温度/Top-k/Top-p/Gumbel-Max）、推理优化（KV 缓存/GQA/MLA/Flash Attention/量化/投机解码）、服务引擎（连续批处理/PagedAttention/分离式 Prefill-Decode）。"
 source: "_sources/yeasy/llm_internals/ (Ch9-11)"

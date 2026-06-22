@@ -1,6 +1,6 @@
 ---
 title: AI 运维与可观测性 (AI Ops)
-category: 16-ai-ops
+category: 13-ai-ops
 tags: ["ai-ops", "observability", "monitoring", "incident-response", "sre"]
 summary: "> AI 运维是保障 LLM 应用稳定、高效、安全运行的关键，涵盖监控、告警、事故响应、SRE、混沌工程等线上运营能力。"
 created: 2026-05-31
@@ -43,6 +43,8 @@ updated: 2026-06-16
 | [AI_Incident_Response_Playbook](./AI_Incident_Response_Playbook.md) | AI 事故响应手册：分级、流程、Runbook | SRE、DevOps |
 | [Incident_Response_for_AI_Systems](./Incident_Response_for_AI_Systems.md) | AI 系统事件响应实践 | SRE |
 | [SRE_for_AI_Systems](./SRE_for_AI_Systems.md) | AI 系统 SRE 实践：SLI/SLO、错误预算 | SRE |
+| [SLO 与错误预算](./SLO_Error_Budget_AI_Deep_Dive.md) | 多维度 SLO（可用性+质量+成本）、发版门控 | SRE、架构师 |
+| [成本优化](./Cost_Optimization_AI_Deep_Dive.md) | 推理降本六板斧（批处理/量化/缓存/路由/投机/KV）、FinOps | FinOps、平台工程师 |
 | [Chaos_Engineering_AI](./Chaos_Engineering_AI.md) | AI 系统混沌工程：故障注入、韧性测试 | 可靠性工程师 |
 
 ## 保留在本章的工具页

@@ -1,6 +1,6 @@
 ---
 title: Data Scientist 按公司/级别区分的题库
-category: 23-interviews-data-scientist
+category: 21-interviews-data-scientist
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "指标体系与实验平台如何设计？"
 created: 2026-05-31

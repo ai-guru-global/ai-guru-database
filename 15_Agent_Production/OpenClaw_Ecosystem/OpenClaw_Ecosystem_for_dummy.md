@@ -1,6 +1,6 @@
 ---
 title: "OpenClaw Ecosystem for Beginners: Your AI Assistant That Actually Does Things"
-category: "13-agent-production-23-openclaw-ecosystem"
+category: "15-agent-production-openclaw-ecosystem"
 tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "Imagine having a super-smart assistant who doesn't just answer questions—they actually DO things for you. That's OpenClaw!"
 created: "2026-05-31"

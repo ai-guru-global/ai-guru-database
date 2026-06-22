@@ -1,6 +1,6 @@
 ---
 title: "使用Meta家族模型构建应用"
-category: "course"
+category: "05-nlp-llms-global-llm-ecosystem"
 tags: ["microsoft-genai-course", "meta-llama", "multimodal", "function-calling", "llama-3.1", "llama-3.2", "vision-model"]
 summary: "全面介绍Meta Llama 3.1和Llama 3.2系列模型，涵盖原生函数调用、多模态视觉支持、边缘部署能力，包含完整的Python代码示例。"
 created: "2026-06-12"

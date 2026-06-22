@@ -1,6 +1,6 @@
 ---
 title: "KV Cache 压缩"
-category: concepts
+category: -concepts
 tags: ["kv-cache", "compression", "inference", "long-context", "optimization"]
 relationships:
   - target: "_concepts/kv-cache"

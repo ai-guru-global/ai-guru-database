@@ -1,6 +1,6 @@
 ---
 title: AI 面试准备 (Interviews)
-category: 23-interviews
+category: 21-interviews
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "> **一句话理解**: 本章节为 AI/ML 相关岗位面试提供系统化的准备资料，覆盖 20+ 个核心岗位的核心职责、能力要求、考点梳理与面试题库。"
 created: 2026-05-31

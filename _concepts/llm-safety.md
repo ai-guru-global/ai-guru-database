@@ -1,6 +1,6 @@
 ---
 title: "LLM 安全"
-category: concepts
+category: -concepts
 tags: ["llm-safety", "ai-safety", "guardrails", "red-teaming", "jailbreak", "alignment"]
 relationships:
   - target: "_concepts/ai-ethics"

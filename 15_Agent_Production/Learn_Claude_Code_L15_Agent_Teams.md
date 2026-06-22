@@ -1,6 +1,6 @@
 ---
 title: "Learn Claude Code L15：Agent Teams — 一个搞不定，组队来"
-category: 13-agent-production
+category: 15-agent-production
 tags:
   - ai-agents
   - agent-harness

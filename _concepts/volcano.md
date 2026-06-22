@@ -1,6 +1,6 @@
 ---
 title: "Volcano"
-category: concept
+category: -concepts
 tags: ["volcano", "kubernetes", "scheduler", "batch", "gang-scheduling", "distributed-training", "cncf"]
 relationships:
   - target: "_concepts/kubernetes"

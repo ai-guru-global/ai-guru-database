@@ -1,6 +1,6 @@
 ---
 title: "课程设置与环境配置"
-category: "course"
+category: "01-fundamentals"
 tags: ["microsoft-genai-course", "development-environment", "python-setup", "azure-openai", "github-codespaces"]
 summary: "Microsoft 生成式 AI 初学者课程的完整开发环境设置指南，涵盖 GitHub Codespaces、本地环境配置、Miniconda、容器化开发、Azure OpenAI 服务和密钥管理。"
 created: "2026-06-12"

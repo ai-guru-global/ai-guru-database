@@ -1,6 +1,6 @@
 ---
 title: "AI 安全评测框架 2026: 从基准测试到红队实战"
-category: 19-ethics-safety
+category: 17-ethics-safety
 tags: ["ai-safety", "evaluation", "red-teaming", "toxicity", "bias", "robustness", "benchmark"]
 summary: "系统性梳理 AI 安全评测的完整方法论，涵盖内容安全（毒性/偏见/幻觉）、对抗鲁棒性（越狱/提示注入）、红队测试流程，以及主流评测基准（ToxiGen、BBQ、TruthfulQA、HarmBench）的工程实践。"
 created: 2026-06-01

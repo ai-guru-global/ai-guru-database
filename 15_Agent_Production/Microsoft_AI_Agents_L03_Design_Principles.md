@@ -1,6 +1,6 @@
 ---
 title: "L03 Agentic 设计原则：Space / Time / Core 三维框架"
-category: "13-agent-production"
+category: "15-agent-production"
 tags:
   - ai-agents
   - microsoft

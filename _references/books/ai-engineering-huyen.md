@@ -1,6 +1,6 @@
 ---
 title: "AI Engineering"
-category: "references"
+category: "-references-books"
 tags: ["book", "learning-resource"]
 summary: "AI 工程实践指南,基于基础模型构建应用.作者:Chip Huyen."
 sources:

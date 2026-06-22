@@ -1,6 +1,6 @@
 ---
 title: "DeepSpeed"
-category: concept
+category: -concepts
 tags: ["deepspeed", "microsoft", "distributed-training", "zero", "parallelism", "inference", "optimization", "moe"]
 relationships:
   - target: "_concepts/distributed-training"

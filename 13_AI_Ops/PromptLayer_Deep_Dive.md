@@ -1,6 +1,6 @@
 ---
 title: "PromptLayer: 提示词管理与追踪"
-category: "16-ai-ops"
+category: "13-ai-ops"
 tags: ["ai-ops", "observability", "monitoring", "incident-response"]
 summary: "> **一句话理解**: PromptLayer 是提示词管理平台——追踪 LLM 请求、版本化管理提示词、性能分析、团队协作，Prompt 工程的 IDE。"
 created: "2026-05-31"

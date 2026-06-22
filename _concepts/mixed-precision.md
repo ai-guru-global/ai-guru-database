@@ -1,6 +1,6 @@
 ---
 title: "混合精度训练与推理 (Mixed Precision)"
-category: concept
+category: -concepts
 tags: ["mixed-precision", "bf16", "fp16", "fp8", "fp32", "quantization", "amp"]
 relationships:
   - target: "_concepts/model-training"

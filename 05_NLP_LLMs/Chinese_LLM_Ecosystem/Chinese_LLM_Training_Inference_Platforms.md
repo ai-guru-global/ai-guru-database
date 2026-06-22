@@ -1,6 +1,6 @@
 ---
 title: "中国大模型训练与推理平台实战参考 (Training & Inference Platforms)"
-category: "04-nlp-llms-chinese-llm-ecosystem"
+category: "05-nlp-llms-chinese-llm-ecosystem"
 tags: ["chinese-llm", "training", "inference", "distributed-training", "moe-training", "rlhf", "quantization", "vllm", "serving", "gpu-cluster", "ascend"]
 summary: "面向模型训推平台工程师的实战参考：中国 15 家大模型厂商的训练基础设施、分布式训练策略、数据工程流水线、对齐训练方案、推理优化技术、服务化部署架构、硬件选型与成本分析。"
 created: "2026-06-12"

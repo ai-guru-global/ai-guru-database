@@ -1,6 +1,6 @@
 ---
 title: AI历史
-category: concepts
+category: -concepts
 tags: [ai, 历史, 时间线, 图灵, 深度学习, ChatGPT]
 aliases: [AI发展史, AI History, 人工智能历史]
 relationships:

@@ -1,6 +1,6 @@
 ---
 title: "Mathematics for Machine Learning 专项课程"
-category: "90-learn"
+category: "90-learn-courses-coursera"
 tags: ["mathematics", "linear-algebra", "calculus", "coursera", "course"]
 summary: "Coursera 数学 for ML 专项课程,覆盖线性代数、多元微积分、PCA 三大核心数学主题,是 ML 入门前的数学补课首选。"
 sources:

@@ -1,6 +1,6 @@
 ---
 title: "DVC: 数据版本控制"
-category: "16-ai-ops"
+category: "11-mlops-pipeline"
 tags: ["ai-ops", "observability", "monitoring", "incident-response"]
 summary: "> **一句话理解**: DVC 是数据版本控制工具——用 Git 的工作流管理数据和模型，追踪数据集变化、支持数据管道、连接云存储，ML 数据的 Git。"
 created: "2026-05-31"

@@ -1,6 +1,6 @@
 ---
 title: Machine Learning Engineer 面试准备
-category: 23-interviews-machine-learning-engineer
+category: 21-interviews-machine-learning-engineer
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "**模型训练与评估**: 数据清洗、特征工程、训练与离线评估。"
 created: 2026-05-31

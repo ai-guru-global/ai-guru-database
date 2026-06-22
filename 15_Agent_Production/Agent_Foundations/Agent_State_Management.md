@@ -1,6 +1,6 @@
 ---
 title: 'Agent 状态管理 (Agent State Management)'
-category: '06-reinforcement-learning-ai-agents'
+category: '15-agent-production-agent-foundations'
 tags: ["reinforcement-learning", "agent", "mdp", "ai-agents"]
 summary: '> **一句话理解**: Agent 状态管理让 AI 智能体具备"记忆"和"恢复"能力——就像游戏存档一样，随时暂停、随时继续，不怕意外中断。'
 created: '2026-05-31'

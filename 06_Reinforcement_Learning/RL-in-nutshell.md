@@ -1,6 +1,6 @@
 ---
 title: "强化学习速览 (Reinforcement Learning in a Nutshell)"
-category: 06-rl
+category: 06-reinforcement-learning
 tags: [rl, reinforcement-learning, q-learning, ppo, rlhf, dpo, grpo, dqn]
 summary: "从 MDP 数学基础到 DQN/PPO 深度算法，再到 RLHF/DPO/GRPO 大模型对齐——一文速览强化学习全栈知识图谱。"
 created: 2026-06-05

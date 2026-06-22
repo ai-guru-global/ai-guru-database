@@ -1,6 +1,6 @@
 ---
 title: "AI Guru 学习路径指南"
-category: 90-learn
+category: 90-learn-guides
 tags: [learning-path, roadmap, career]
 summary: "五大 AI 职业角色学习路径全景指南：ML Engineer、LLM/Agent Engineer、AI Product Manager、MLOps Engineer、AI Researcher，覆盖从入门到精通的完整技能地图。"
 created: 2026-06-05

@@ -1,6 +1,6 @@
 ---
 title: Vibe Coding 实战案例集
-category: 17-ai-coding-03-practice
+category: 16-ai-coding-practice
 tags: ["ai-coding", "code-generation", "cursor", "github-copilot"]
 summary: "> **一句话理解**: 从场景化方案到真实项目，覆盖不同规模、不同行业的 Vibe Coding 落地经验——帮你找到最贴近自身情况的实践参考。"
 created: 2026-05-31

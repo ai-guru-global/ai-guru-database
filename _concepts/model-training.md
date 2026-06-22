@@ -1,6 +1,6 @@
 ---
 title: 模型训练
-category: concepts
+category: -concepts
 tags:
 - training
 - - - distributed-systems

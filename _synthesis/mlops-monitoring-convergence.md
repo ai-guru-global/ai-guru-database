@@ -1,6 +1,6 @@
 ---
 title: "MLOps 与监控的融合 (MLOps-Monitoring Convergence)"
-category: synthesis
+category: -synthesis
 tags: ["synthesis", "mlops", "monitoring", "observability", "ai-ops", "model-drift"]
 summary: "MLOps 流水线与 AI 运维监控正在深度融合——模型监控从'事后告警'走向'自动化闭环'，成为 MLOps 不可或缺的一环。"
 created: 2026-06-12

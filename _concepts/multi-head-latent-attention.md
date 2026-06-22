@@ -1,6 +1,6 @@
 ---
 title: Multi-head Latent Attention (MLA)
-category: concepts
+category: -concepts
 tags:
 - attention
 - kv-cache

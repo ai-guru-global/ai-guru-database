@@ -1,6 +1,6 @@
 ---
 title: LLM Platform Engineer 题库
-category: 23-interviews-llm-platform-engineer
+category: 21-interviews-llm-platform-engineer
 tags: ["interviews", "career", "experience", "practitioners", "llm"]
 summary: "KV Cache 的作用与影响是什么？"
 created: 2026-05-31

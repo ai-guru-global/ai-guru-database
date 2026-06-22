@@ -1,6 +1,6 @@
 ---
 title: "LLM 生产流水线"
-category: concepts
+category: -concepts
 tags: ["llm-production", "mlops", "ci-cd", "deployment", "evaluation", "monitoring"]
 relationships:
   - target: "_concepts/mlops"

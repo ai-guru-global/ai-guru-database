@@ -1,6 +1,6 @@
 ---
 title: "LLMOps 2026：大模型时代的 MLOps 升级"
-category: "10-mlops-pipeline"
+category: "11-mlops-pipeline"
 tags: ["mlops", "llmops", "llm", "prompt-engineering", "rag", "evaluation", "observability", "ci-cd", "production"]
 summary: "> **一句话理解**: LLMOps 是 MLOps 在大模型时代的升级版——当模型从「固定权重的预测器」变成「由 Prompt + 模型 + RAG 三层动态组合的系统」，运维对象、评估方式、成本结构都发生了根本性变化。"
 created: 2026-06-15

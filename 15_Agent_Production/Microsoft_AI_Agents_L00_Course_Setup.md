@@ -1,6 +1,6 @@
 ---
 title: "L00 课程环境设置：Microsoft AI Agents for Beginners"
-category: "13-agent-production"
+category: "15-agent-production"
 tags:
   - ai-agents
   - microsoft

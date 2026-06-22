@@ -1,6 +1,6 @@
 ---
 title: 云运维/DevOps Agent 专项测评
-category: 13-agent-production-16-agent-evaluation-cloud-agent-evaluation
+category: 15-agent-production-agent-evaluation-cloud-agent-evaluation
 tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> 专注于云基础设施运维场景的 Agent 能力评估，覆盖故障排查、自动化部署、监控告警、安全合规等核心运维能力"
 created: 2026-05-31

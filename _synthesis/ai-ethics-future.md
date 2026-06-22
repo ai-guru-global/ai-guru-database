@@ -1,6 +1,6 @@
 ---
 title: AI 伦理与未来趋势的交叉审视
-category: synthesis
+category: -synthesis
 tags: [synthesis, ai-ethics, future-trends, agi, safety, alignment, society]
 summary: 技术加速主义与伦理审慎主义的张力：在奔向 AGI 的过程中，我们如何平衡创新速度与社会安全？
 created: 2026-06-12

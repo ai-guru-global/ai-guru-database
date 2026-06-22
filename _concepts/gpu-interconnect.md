@@ -1,6 +1,6 @@
 ---
 title: "NVLink 与 GPU 互联技术"
-category: concept
+category: -concepts
 tags: ["nvlink", "gpu-interconnect", "pcie", "hccs", "nvswitch", "infiniband"]
 relationships:
   - target: "_concepts/ai-hardware"

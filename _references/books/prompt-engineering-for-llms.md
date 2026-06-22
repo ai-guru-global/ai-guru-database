@@ -1,6 +1,6 @@
 ---
 title: "Prompt Engineering for LLMs"
-category: "references"
+category: "-references-books"
 tags: ["book", "learning-resource"]
 summary: "提示工程权威指南.作者:O'Reilly."
 sources:

@@ -1,6 +1,6 @@
 ---
 title: "CatBoost 概览"
-category: "02-machine-learning"
+category: "02-machine-learning-ml-frameworks"
 tags: ["machine-learning", "framework", "gradient-boosting", "tool"]
 summary: "Yandex 出品的梯度提升框架，原生支持类别特征，无需额外编码"
 sources:

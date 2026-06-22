@@ -1,6 +1,6 @@
 ---
 title: "Skills & ClawHub: The OpenClaw Skill Ecosystem"
-category: "13-agent-production-23-openclaw-ecosystem"
+category: "15-agent-production-openclaw-ecosystem"
 tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "**Skills** are the extensible capability modules that transform OpenClaw agents from simple chatbots into powerful task executors. **ClawHub** is the official marketplace for disco"
 created: "2026-05-31"
@@ -276,7 +276,7 @@ name: file-organizer
 version: 2.1.0
 author: openclawdev
 description: Intelligent file organization and cleanup
-category: productivity
+category: 15-agent-production-openclaw-ecosystem
 tags:
   - files
   - organization

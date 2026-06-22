@@ -1,6 +1,6 @@
 ---
 title: "LiteLLM: 多模型统一 API 代理"
-category: "14-ai-gateway"
+category: "12-architecture-infrastructure-ai-gateway"
 tags: ["ai-gateway", "api-management", "routing", "litellm", "llm"]
 summary: "> **一句话理解**: LiteLLM 让你可以用同一套接口调用 100+ 种 LLM——OpenAI、Anthropic、Azure、Ollama、HuggingFace 等，一个 SDK 搞定所有。"
 created: "2026-05-31"

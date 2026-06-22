@@ -1,6 +1,6 @@
 ---
 title: 国际云厂商 Agent 测评详情
-category: 13-agent-production-16-agent-evaluation-cloud-agent-evaluation
+category: 15-agent-production-agent-evaluation-cloud-agent-evaluation
 tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> AWS、Azure、GCP、Databricks、Snowflake 五大国际云产品智能体的深度测评"
 created: 2026-05-31

@@ -1,6 +1,6 @@
 ---
 title: "Hello-Agents (Datawhale)：从零开始构建智能体"
-category: references
+category: -references
 tags:
   - course
   - datawhale

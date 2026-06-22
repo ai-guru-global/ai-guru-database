@@ -1,6 +1,6 @@
 ---
 title: "DeepLearning.AI 短课程 (Short Courses) 核心知识库提炼"
-category: "90-learn"
+category: "90-learn-courses-deeplearning-ai"
 tags: ["learning-paths", "deeplearning-ai", "andrew-ng", "short-courses", "course-catalog", "knowledge-extraction"]
 summary: "> **一句话理解**: 针对内部断网无法观看外网视频的环境，本文档直接提取了 DeepLearning.AI 平台上各大热门短课程的“干货”、“核心结论”与“经典 Prompt 评估模板”，将其转化为离线文本参考手册。"
 created: "2026-06-12"

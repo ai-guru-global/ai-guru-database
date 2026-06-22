@@ -1,6 +1,6 @@
 ---
 title: NLP Engineer 按公司/级别区分的题库
-category: 23-interviews-nlp-engineer
+category: 21-interviews-nlp-engineer
 tags: ["interviews", "career", "experience", "practitioners", "nlp"]
 summary: "多语言与多域场景如何评测？"
 created: 2026-05-31

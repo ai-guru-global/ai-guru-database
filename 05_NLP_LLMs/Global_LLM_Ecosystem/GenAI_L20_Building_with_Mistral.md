@@ -1,6 +1,6 @@
 ---
 title: "使用Mistral模型构建应用"
-category: "course"
+category: "05-nlp-llms-global-llm-ecosystem"
 tags: ["microsoft-genai-course", "mistral", "rag", "function-calling", "tokenizer", "mistral-large", "mistral-small", "mistral-nemo"]
 summary: "深入探讨Mistral AI的三款主力模型：旗舰级Mistral Large 2、高性价比Mistral Small、开源Mistral NeMo，包含RAG、函数调用和分词器对比的完整代码示例。"
 created: "2026-06-12"

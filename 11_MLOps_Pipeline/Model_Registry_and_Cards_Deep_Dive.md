@@ -1,6 +1,6 @@
 ---
 title: 模型注册与模型卡片深度解析 (Model Registry & Model Cards Deep Dive)
-category: 10-mlops-pipeline
+category: 11-mlops-pipeline
 tags: ["model-registry", "model-cards", "mlops", "model-versioning", "metadata"]
 summary: "> 从 MLflow Model Registry 到 Hugging Face Hub，系统讲解模型注册、版本管理、阶段转换与 Model Cards 文档化最佳实践。"
 created: 2026-06-03

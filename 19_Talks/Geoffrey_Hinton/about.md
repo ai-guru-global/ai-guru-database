@@ -1,6 +1,6 @@
 ---
 title: Geoffrey Hinton 简介 (Geoffrey Hinton)
-category: 21-talks-geoffrey-hinton
+category: 19-talks-geoffrey-hinton
 tags: ["talks", "speeches", "insights", "leaders"]
 summary: "**身份**: 深度学习先驱，图灵奖得主（2018），前 Google Brain 研究员，多伦多大学荣休教授。"
 created: 2026-05-31

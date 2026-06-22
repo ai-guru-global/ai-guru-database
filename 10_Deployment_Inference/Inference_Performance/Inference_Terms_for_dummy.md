@@ -1,6 +1,6 @@
 ---
 title: 推理性能术语大白话解释
-category: 09-deployment-inference
+category: 10-deployment-inference-inference-performance
 tags: [inference, glossary, beginner, moe, mla, gqa, flops, prefill, decode, ttft, quantization, nvlink, infiniband, pd-disaggregation]
 summary: "> 用大白话解释 MoE、MLA/GQA、FLOPS、Prefill、Decode、TTFT、量化、NVLink/IB、PD 分离等推理性能核心术语。"
 created: 2026-06-15

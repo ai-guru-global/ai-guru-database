@@ -5,13 +5,13 @@ tags:
 - ai
 - ai-coding
 created: 2026-06-12
-category: 17-ai-coding
+category: 16-ai-coding-tools-opencode
 summary: ""
 ---
 title: Server 模式与 HTTP API
 description: '**文档类型**: 平台集成专题 | **最后更新**: 2026-03 | **关键词**: OpenCode, Server, HTTP
  API, OpenAPI 3.1, SDK, SSE, Headless, Stainless, Hono'
-category: ai-coding
+category: 16-ai-coding-tools-opencode
 tags:
 - ai
 - coding

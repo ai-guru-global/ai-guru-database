@@ -1,6 +1,6 @@
 ---
 title: "Microsoft AI Agents for Beginners"
-category: references
+category: -references
 tags:
   - course
   - microsoft

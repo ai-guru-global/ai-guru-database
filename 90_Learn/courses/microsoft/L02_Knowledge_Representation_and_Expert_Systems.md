@@ -1,6 +1,6 @@
 ---
 title: "L02 - 知识表示与专家系统"
-category: "90-learn"
+category: "90-learn-courses-microsoft"
 tags: ["microsoft-ai-course", "symbolic-ai", "knowledge-representation", "expert-systems", "semantic-web", "ontology"]
 summary: "本课介绍符号 AI 的核心：如何将人类知识编码为计算机可处理的结构，并用专家系统进行推理，以及语义网与本体的现代延续。"
 source_url: "https://raw.githubusercontent.com/microsoft/AI-For-Beginners/main/lessons/2-Symbolic/README.md"

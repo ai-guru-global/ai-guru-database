@@ -1,6 +1,6 @@
 ---
 title: "Keras 概览"
-category: "03-deep-learning"
+category: "03-deep-learning-dl-frameworks"
 tags: ["deep-learning", "framework", "neural-network", "tool"]
 summary: "François Chollet 创建的高层神经网络 API，现已集成进 TensorFlow"
 sources:

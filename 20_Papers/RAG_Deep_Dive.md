@@ -1,6 +1,6 @@
 ---
 title: "论文深度解读: RAG — 检索增强生成 (Retrieval-Augmented Generation)"
-category: "22-papers"
+category: "20-papers"
 tags: ["paper", "RAG", "retrieval-augmented-generation", "knowledge-grounding", "Lewis", "Facebook-AI"]
 summary: "RAG (Lewis et al., 2020) 将信息检索与文本生成结合，让 LLM 在生成时查阅外部知识库，解决了参数化记忆的知识过时和幻觉问题，成为企业 AI 应用的核心架构。"
 created: 2026-06-04

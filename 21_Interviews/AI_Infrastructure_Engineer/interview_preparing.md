@@ -1,6 +1,6 @@
 ---
 title: AI Infrastructure Engineer 面试准备
-category: 23-interviews-ai-infrastructure-engineer
+category: 21-interviews-ai-infrastructure-engineer
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "**训练基础设施**: 计算资源调度与集群管理。"
 created: 2026-05-31

@@ -1,6 +1,6 @@
 ---
 title: "论文深度解读: VAE — 变分自编码器 (Auto-Encoding Variational Bayes)"
-category: "22-papers"
+category: "20-papers"
 tags: ["paper", "VAE", "variational-inference", "generative-model", "latent-space", "Kingma"]
 summary: "VAE (Kingma & Welling, 2014) 将变分推断与深度生成模型结合，开创了连续潜变量生成模型的先河，是扩散模型、Stable Diffusion 的直接前身。"
 created: 2026-06-04

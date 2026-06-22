@@ -1,6 +1,6 @@
 ---
 title: '测试数据管理 (Test Data Management)'
-category: '15-testing'
+category: '09-testing'
 tags: ["testing", "ai-testing", "prompt-testing", "evaluation"]
 summary: '> **一句话理解**: 测试数据管理是 AI 系统测试的"后勤保障"——系统化地创建、维护、版本化测试数据，确保测试可重复、结果可信、回归高效。'
 created: '2026-05-31'

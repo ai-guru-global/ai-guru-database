@@ -1,6 +1,6 @@
 ---
 title: AI 面试准备 - 小白版
-category: 23-interviews
+category: 21-interviews
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "> **一句话理解**: AI 面试就像参加一场综合运动会——不仅要跑得快（算法题），还要投得准（项目经验）、讲得好（沟通表达）、站得稳（基础知识）。"
 created: 2026-05-31

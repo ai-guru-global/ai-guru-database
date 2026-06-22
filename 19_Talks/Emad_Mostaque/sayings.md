@@ -1,6 +1,6 @@
 ---
 title: Emad Mostaque 关于 AI 的观点 (Emad Mostaque on AI)
-category: 21-talks-emad-mostaque
+category: 19-talks-emad-mostaque
 tags: ["talks", "speeches", "insights", "leaders"]
 summary: "1. **“Open, decentralized AI will be more resilient and equitable.” / “开放、去中心化的 AI 更具韧性且更公平。”**"
 created: 2026-05-31

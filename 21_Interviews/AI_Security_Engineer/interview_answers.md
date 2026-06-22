@@ -1,6 +1,6 @@
 ---
 title: AI Security Engineer 面试题实例答案
-category: 23-interviews-ai-security-engineer
+category: 21-interviews-ai-security-engineer
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "**答**：构建覆盖越狱、注入、隐私泄露等风险的评测集，结合自动化评测与人工审查；定义风险等级与阈值，形成上线门禁与回归测试流程。"
 created: 2026-05-31

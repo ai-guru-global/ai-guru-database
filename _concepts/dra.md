@@ -1,6 +1,6 @@
 ---
 title: DRA (Dynamic Resource Allocation)
-category: concepts
+category: -concepts
 tags:
 - dra
 - dynamic-resource-allocation

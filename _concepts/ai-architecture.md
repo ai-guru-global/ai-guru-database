@@ -1,6 +1,6 @@
 ---
 title: AI 系统架构
-category: concepts
+category: -concepts
 tags:
 - - - transformer-architecture
 - kubernetes

@@ -1,6 +1,6 @@
 ---
 title: "Python 基础 × 第一个 ML 模型 — 从零到一的实战桥梁"
-category: synthesis
+category: -synthesis
 tags: [python, machine-learning, fundamentals, scikit-learn, beginner, hands-on]
 sources:
   - "[[01_Fundamentals/Python_Data_Science_Toolkit]]"

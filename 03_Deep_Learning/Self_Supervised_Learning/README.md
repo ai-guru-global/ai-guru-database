@@ -1,6 +1,6 @@
 ---
 title: 自监督学习 (Self-Supervised Learning)
-category: "03-deep-learning"
+category: "03-deep-learning-self-supervised-learning"
 tags: ["self-supervised-learning", "contrastive-learning", "masked-modeling"]
 summary: "自监督学习从未标注数据中构造监督信号，是现代 AI 预训练的核心范式。"
 created: 2026-06-04

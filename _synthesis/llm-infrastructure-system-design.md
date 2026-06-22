@@ -1,6 +1,6 @@
 ---
 title: "LLM 基础设施 × 传统系统架构 — 从 Web 服务到 Token 工厂"
-category: synthesis
+category: -synthesis
 tags: [llm-infrastructure, ai-infrastructure, system-design, gpu, serving, architecture]
 sources:
   - "[[_concepts/llm-infrastructure]]"

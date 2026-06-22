@@ -1,6 +1,6 @@
 ---
 title: AI 测试与评估 (AI Testing)
-category: 15-testing
+category: 09-testing
 tags: ["testing", "ai-testing", "prompt-testing", "evaluation"]
 summary: "> AI 测试是保障 LLM 应用质量的关键环节，覆盖 Prompt 测试、RAG 评估、Agent 评估、合同测试等多个维度。"
 created: 2026-05-31
@@ -31,6 +31,13 @@ updated: 2026-05-31
 | [Promptfoo Deep Dive](./Promptfoo_Deep_Dive.md) | Prompt 测试框架：批量测试、版本对比 | 开发者、Prompt 工程师 |
 | [RAGAS Deep Dive](./RAGAS_Deep_Dive.md) | RAG 评估框架：答案质量、召回率 | RAG 开发者 |
 | [DeepEval Deep Dive](./DeepEval_Deep_Dive.md) | LLM 评估框架：单元测试、集成测试 | 开发者、QA |
+
+### 安全测试
+
+| 文档 | 内容 | 适用角色 |
+|------|------|----------|
+| [LLM 安全测试](./LLM_Safety_Testing_Deep_Dive.md) | 红队、越狱、对抗防御、OWASP LLM Top 10 | 安全工程师、QA |
+| [回归测试](./Regression_Testing_LLM_Deep_Dive.md) | 非确定性输出的回归策略、黄金集、CI 门控 | QA、平台工程师 |
 
 ### 实验追踪
 

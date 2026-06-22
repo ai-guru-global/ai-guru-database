@@ -1,6 +1,6 @@
 ---
 title: "Megatron-LM"
-category: concept
+category: -concepts
 tags: ["megatron-lm", "nvidia", "distributed-training", "tensor-parallelism", "pipeline-parallelism", "llm", "training"]
 relationships:
   - target: "_concepts/distributed-training"

@@ -1,6 +1,6 @@
 ---
 title: "Coursera 深度学习专项课程 (Deep Learning Specialization)"
-category: "90-learn-courses"
+category: "90-learn-courses-coursera"
 tags: ["course", "deeplearning-ai", "andrew-ng", "deep-learning"]
 summary: "Andrew Ng 的 5 门深度学习课程——神经网络、超参调优、结构化机器学习、CNN、序列模型。"
 created: "2026-06-12"

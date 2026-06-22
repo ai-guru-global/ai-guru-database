@@ -1,6 +1,6 @@
 ---
 title: AI技术全景
-category: concepts
+category: -concepts
 tags: [ai, 技术栈, 机器学习, 深度学习, 大语言模型, 计算机视觉, 基础设施]
 aliases: [AI技术栈, AI Technology Landscape, 技术全景]
 relationships:

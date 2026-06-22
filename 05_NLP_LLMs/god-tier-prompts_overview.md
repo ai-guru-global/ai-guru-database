@@ -1,6 +1,6 @@
 ---
 title: "God Tier Prompts 概览"
-category: "04-nlp-llms"
+category: "05-nlp-llms"
 tags: ["tool", "prompt-engineering", "prompts", "community"]
 summary: "高质量提示词集合与社区平台,提供经过验证的高效提示词模板,覆盖写作、编程、分析等场景。"
 sources:

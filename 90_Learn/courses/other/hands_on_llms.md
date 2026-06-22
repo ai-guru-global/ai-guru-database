@@ -1,6 +1,6 @@
 ---
 title: "Hands-On Large Language Models：12 章课程映射"
-category: 90-learn
+category: 90-learn-courses-other
 tags:
   - learning-paths
   - llm

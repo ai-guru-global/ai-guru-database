@@ -1,6 +1,6 @@
 ---
 title: "Learn Claude Code L12：Task System — 目标太大，拆成小任务"
-category: 13-agent-production
+category: 15-agent-production
 tags:
   - ai-agents
   - agent-harness

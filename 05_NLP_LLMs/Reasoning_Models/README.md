@@ -1,6 +1,6 @@
 ---
 title: 推理模型目录
-category: 04-nlp-llms
+category: 05-nlp-llms-reasoning-models
 tags: ['reasoning', 'overview', 'index']
 summary: 推理模型 相关内容的索引和概览。
 created: 2026-06-12

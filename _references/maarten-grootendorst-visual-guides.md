@@ -1,6 +1,6 @@
 ---
 title: "Maarten Grootendorst 图解 AI 系列"
-category: "references"
+category: "-references"
 tags: ["llm", "agents", "moe", "article", "visualization"]
 summary: "Maarten Grootendorst 的图解 AI 系列文章,用精美可视化解释 LLM Agent、MoE、推理模型等前沿概念。"
 sources:

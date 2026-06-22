@@ -1,6 +1,6 @@
 ---
 title: "Helm"
-category: concept
+category: -concepts
 tags: ["helm", "kubernetes", "package-manager", "chart", "templating", "cncf", "deployment"]
 relationships:
   - target: "_concepts/kubernetes"

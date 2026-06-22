@@ -1,6 +1,6 @@
 ---
 title: "Matryoshka Representation Learning（MRL，俄罗斯套娃表示学习）"
-category: "concepts"
+category: "-concepts"
 tags: ["embeddings", "representation-learning", "matryoshka", "rag", "vector-database", "model-efficiency", "dimensionality-reduction"]
 summary: "一种表示学习方法：训练得到的向量在任何前缀维度上都保持语义有效性，可像俄罗斯套娃一样按需截断，兼顾检索精度与存储/计算成本。"
 relationships:

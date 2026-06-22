@@ -1,6 +1,6 @@
 ---
 title: '多模态视觉'
-category: 'concepts'
+category: '-concepts'
 tags: ["computer-vision", "multimodal", "clip", "llava", "multimodal-models", "blip"]
 aliases: [Multimodal Vision, 多模态, 视觉-语言模型, VLM]
 relationships:

@@ -1,6 +1,6 @@
 ---
 title: "10_MLOps_Pipeline 与 16_AI_Ops 边界声明"
-category: "10-mlops-pipeline"
+category: "11-mlops-pipeline"
 tags: ["meta", "boundary", "governance", "mlops", "ai-ops", "single-source-of-truth"]
 summary: "> 明确 10（建设方法论+工具实现）与 16（运维实践）的职责分工，建立权威源（SSOT）。工具深度解析已于 2026-06-15 从 16 迁入 10。"
 created: 2026-06-15

@@ -1,6 +1,6 @@
 ---
 title: "MLflow: 机器学习生命周期管理"
-category: "16-ai-ops"
+category: "11-mlops-pipeline"
 tags: ["ai-ops", "observability", "monitoring", "incident-response"]
 summary: "> **一句话理解**: MLflow 是 Databricks 的机器学习生命周期管理平台——实验追踪、模型注册、特征存储、模型服务，开源 ML 平台的事实标准。"
 created: "2026-05-31"

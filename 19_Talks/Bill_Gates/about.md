@@ -1,6 +1,6 @@
 ---
 title: Bill Gates 简介 (Bill Gates)
-category: 21-talks-bill-gates
+category: 19-talks-bill-gates
 tags: ["talks", "speeches", "insights", "leaders"]
 summary: "**身份**: 微软联合创始人、慈善家。"
 created: 2026-05-31

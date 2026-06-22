@@ -1,6 +1,6 @@
 ---
 title: "Dify: 开源 LLM 应用开发平台"
-category: "11-rag-systems"
+category: "14-rag-systems"
 tags: ["rag", "retrieval", "vector-database", "embedding", "llm"]
 summary: "> **一句话理解**: Dify 是一个开源的 LLM 应用开发平台——让 AI 应用开发变得简单，支持 RAG、Agent、工作流编排，零代码也能构建生产级 AI 应用。"
 created: "2026-05-31"

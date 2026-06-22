@@ -1,6 +1,6 @@
 ---
 title: "Microsoft AI For Beginners"
-category: "references"
+category: "-references"
 tags: ["course", "microsoft", "ai-beginners", "external-source"]
 summary: "Microsoft 官方开源的 12 周 AI 初学者课程引用索引。完整课程表与章节映射见 90_Learn/Microsoft_AI_For_Beginners。"
 created: "2026-06-12"

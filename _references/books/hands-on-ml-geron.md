@@ -1,6 +1,6 @@
 ---
 title: "Hands-On Machine Learning"
-category: "references"
+category: "-references-books"
 tags: ["book", "learning-resource"]
 summary: "ML/DL 实战圣经,使用 Scikit-learn、Keras 和 TensorFlow 构建智能系统.作者:Aurelien Geron."
 sources:

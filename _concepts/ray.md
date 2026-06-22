@@ -1,6 +1,6 @@
 ---
 title: "Ray / KubeRay"
-category: concept
+category: -concepts
 tags: ["ray", "kuberay", "distributed", "training", "inference", "cncf", "kubernetes", "actor", "task", "data"]
 relationships:
   - target: "_concepts/distributed-training"

@@ -1,6 +1,6 @@
 ---
 title: "RAG 技术大全 (27.9k)"
-category: "references"
+category: "-references"
 tags: ["rag", "retrieval-augmented-generation", "github-repo", "notebook", "vector-database"]
 summary: "社区驱动的 RAG 技术集合(27.9k star),含 42+ 可运行 Notebook,覆盖从基础到前沿的全部 RAG 技术。"
 sources:

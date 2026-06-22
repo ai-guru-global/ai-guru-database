@@ -1,6 +1,6 @@
 ---
 title: 概率论与数理统计
-category: concepts
+category: -concepts
 tags: [linear-algebra, probability, statistics, bayes, information-theory, distributions]
 aliases: [Probability Statistics, 概率论, 贝叶斯, 信息论]
 relationships:

@@ -1,6 +1,6 @@
 ---
 title: "ClearML: 开源 ML 平台"
-category: "16-ai-ops"
+category: "11-mlops-pipeline"
 tags: ["ai-ops", "observability", "monitoring", "incident-response"]
 summary: "> **一句话理解**: ClearML 是开源 ML 平台——实验追踪、MLOps、自动化机器学习、模型服务，一站式 ML 解决方案。"
 created: "2026-05-31"

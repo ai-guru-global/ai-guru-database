@@ -1,6 +1,6 @@
 ---
 title: Agent 平台与部署
-category: 13-agent-production-agent-platforms
+category: 15-agent-production-agent-platforms
 tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> Agent 开发平台提供可视化编排、一键部署、模型网关等能力，大幅降低 Agent 系统的构建门槛。"
 created: 2026-05-31

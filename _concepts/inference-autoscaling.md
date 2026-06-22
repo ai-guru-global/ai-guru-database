@@ -1,6 +1,6 @@
 ---
 title: Inference Autoscaling and Load Balancing
-category: concepts
+category: -concepts
 tags: [inference, autoscaling, load-balancing, kubernetes, gpu, performance]
 relationships:
   - target: "_concepts/model-serving"

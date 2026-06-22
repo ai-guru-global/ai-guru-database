@@ -1,6 +1,6 @@
 ---
 title: 语料库覆盖度评估框架
-category: 13-agent-production-16-agent-evaluation-corpus-assessment
+category: 15-agent-production-agent-evaluation-corpus-assessment
 tags: ["ai-agents", "agent-framework", "production", "langgraph", "rag"]
 summary: "> 系统化评估各云产品智能体背后语料库/知识库的完备性、准确性和时效性"
 created: 2026-05-31

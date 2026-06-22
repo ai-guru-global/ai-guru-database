@@ -1,6 +1,6 @@
 ---
 title: "TGI (Text Generation Inference)"
-category: concept
+category: -concepts
 tags: ["tgi", "huggingface", "inference", "llm", "text-generation", "continuous-batching", "quantization", "deployment"]
 relationships:
   - target: "_concepts/vllm"

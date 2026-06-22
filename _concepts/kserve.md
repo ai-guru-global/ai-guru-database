@@ -1,6 +1,6 @@
 ---
 title: "KServe"
-category: concept
+category: -concepts
 tags: ["kserve", "kubernetes", "model-serving", "inference", "cncf", "kfserving", "serverless", "autoscaling"]
 relationships:
   - target: "_concepts/model-serving"

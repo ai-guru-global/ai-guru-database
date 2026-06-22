@@ -1,6 +1,6 @@
 ---
 title: "L01 - 人工智能介绍与历史"
-category: "90-learn"
+category: "90-learn-courses-microsoft"
 tags: ["microsoft-ai-course", "ai-intro", "ai-history", "turing-test", "symbolic-ai"]
 summary: "从‘什么是智能’出发，区分弱 AI 与强 AI、符号推理与神经网络两条路线，并梳理 AI 从专家系统到深度学习的历史脉络。"
 source_url: "https://raw.githubusercontent.com/microsoft/AI-For-Beginners/main/lessons/1-Intro/README.md"

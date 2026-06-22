@@ -1,6 +1,6 @@
 ---
 title: Andrew Ng 简介 (Andrew Ng)
-category: 21-talks-andrew-ng
+category: 19-talks-andrew-ng
 tags: ["talks", "speeches", "insights", "leaders"]
 summary: "**身份**: Deeplearning.AI 与 Landing AI 创始人，Coursera 联合创始人，斯坦福大学兼职教授。"
 created: 2026-05-31

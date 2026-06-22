@@ -1,6 +1,6 @@
 ---
 title: "Kubernetes"
-category: concept
+category: -concepts
 tags: ["kubernetes", "k8s", "orchestration", "container", "cncf", "scheduling", "cloud-native"]
 relationships:
   - target: "_concepts/containerd"

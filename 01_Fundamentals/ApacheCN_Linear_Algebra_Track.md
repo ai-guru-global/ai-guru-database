@@ -1,6 +1,6 @@
 ---
 title: "ApacheCN 线性代数主线"
-category: "01-fundamentals-linear-algebra"
+category: "01-fundamentals"
 tags: ["apachecn", "ailearning", "linear-algebra", "mit-18.06", "math", "svd", "eigenvalue"]
 summary: "ApacheCN 线性代数主线概览：docs/linalg/ 下 MIT 18.06 中文笔记 35 讲，覆盖向量空间、特征值、SVD、伪逆与线性变换。"
 created: "2026-06-12"

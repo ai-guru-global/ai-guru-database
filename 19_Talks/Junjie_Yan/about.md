@@ -1,6 +1,6 @@
 ---
 title: "闫俊杰 (Junjie Yan) — MiniMax 创始人"
-category: 21-talks
+category: 19-talks-junjie-yan
 tags: [junjie-yan, minimax, lightning-attention, hailuo, talkie, chinese-ai, multimodal]
 summary: "闫俊杰是前商汤科技 VP，MiniMax 创始人，打造了 Lightning Attention 和 Hailuo 视频生成，以全模态产品线切入 AI 赛道。"
 created: 2026-06-12

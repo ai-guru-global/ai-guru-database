@@ -1,6 +1,6 @@
 ---
 title: Data Scientist 面试准备
-category: 23-interviews-data-scientist
+category: 21-interviews-data-scientist
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "**统计建模与分析**: 建模、实验设计与指标解释。"
 created: 2026-05-31

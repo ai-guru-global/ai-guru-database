@@ -1,6 +1,6 @@
 ---
 title: "CrewAI: 多 Agent 协作框架"
-category: "13-agent-production-agent-frameworks"
+category: "15-agent-production-agent-frameworks"
 tags: ["ai-agents", "agent-framework", "production", "langgraph", "crewai"]
 summary: "> **一句话理解**: CrewAI 让多个 AI Agent 像团队一样协作——每个 Agent 有自己的角色和目标，通过任务编排实现复杂目标。"
 created: "2026-05-31"

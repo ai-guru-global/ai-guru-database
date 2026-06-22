@@ -1,6 +1,6 @@
 ---
 title: AI Evaluation Engineer 按公司/级别区分的题库
-category: 23-interviews-ai-evaluation-engineer
+category: 21-interviews-ai-evaluation-engineer
 tags: ["interviews", "career", "experience", "practitioners", "model-evaluation"]
 summary: "如何统一多模型评测基准与指标？"
 created: 2026-05-31

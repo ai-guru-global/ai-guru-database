@@ -1,6 +1,6 @@
 ---
 title: 模型部署
-category: concepts
+category: -concepts
 tags:
 - deployment
 - - - ai-hardware

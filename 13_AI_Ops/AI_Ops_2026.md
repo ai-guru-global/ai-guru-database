@@ -1,6 +1,6 @@
 ---
 title: "AI Ops 2026: 智能运维体系与实践"
-category: "16-ai-ops"
+category: "13-ai-ops"
 tags: ["ai-ops", "observability", "monitoring", "incident-response"]
 summary: "> **一句话理解**: AI Ops 是将 AI 能力应用于运维领域，通过智能化监控、自动化诊断、根因分析和预测性维护，从被动响应转变为主动预防，实现运维效率的质的飞跃。"
 created: "2026-05-31"

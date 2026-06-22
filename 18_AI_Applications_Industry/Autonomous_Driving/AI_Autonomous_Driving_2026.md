@@ -1,6 +1,6 @@
 ---
 title: 'AI 自动驾驶与智能交通应用 (2025-2026)'
-category: '20-ai-applications-industry-autonomous-driving'
+category: '18-ai-applications-industry-autonomous-driving'
 tags: ["ai-applications", "industry", "finance", "healthcare"]
 summary: '> **一句话理解**: 2026年自动驾驶正式进入"商业化拐点"——Waymo在美国多城市运营Robotaxi，Tesla FSD累计行驶超30亿英里，中国L4级无人出租车在武汉/北京规模运营，端到端AI架构成为技术主流。'
 created: '2026-05-31'

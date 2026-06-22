@@ -1,6 +1,6 @@
 ---
 title: "Prompt 工程技术大全 (5k)"
-category: "references"
+category: "-references"
 tags: ["prompt-engineering", "github-repo", "techniques", "tutorial"]
 summary: "从基础到高级的提示工程技术集合,含详细教程和实现。"
 sources:

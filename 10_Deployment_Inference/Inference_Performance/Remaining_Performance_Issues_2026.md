@@ -1,6 +1,6 @@
 ---
 title: 推理性能未解问题与缺口评估（2026）
-category: 09-deployment-inference
+category: 10-deployment-inference-inference-performance
 tags: [inference, performance, gaps, issues, future, edge, energy, observability]
 summary: "> 评估当前推理性能专题已覆盖内容与仍未被系统讨论的缺口：边缘/异构、能耗、多租户隔离、编译开销、tokenizer 瓶颈等。"
 created: 2026-06-15

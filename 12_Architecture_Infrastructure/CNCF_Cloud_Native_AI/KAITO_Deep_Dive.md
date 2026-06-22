@@ -1,6 +1,6 @@
 ---
 title: "KAITO (Kubernetes AI Toolchain Operator) 深度解析"
-category: "12-architecture-infrastructure"
+category: "12-architecture-infrastructure-cncf-cloud-native-ai"
 tags: ["cncf", "kubernetes", "inference", "kaito", "llm", "rag"]
 summary: "> **一句话理解**: KAITO 让你用一行 preset 名字（如 mistral-7b-instruct）就能在 K8s 上拉起一个大模型推理服务——自动选 GPU、自动配 vLLM/TGI、自动暴露 API，是 LLM on K8s 最快的'开箱即用'方案。"
 created: "2026-06-16"

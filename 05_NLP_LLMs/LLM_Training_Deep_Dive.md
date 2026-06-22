@@ -1,6 +1,6 @@
 ---
 title: "LLM 训练深度剖析：预训练、分布式训练与对齐"
-category: 04-nlp-llms-training-deep-dive
+category: 05-nlp-llms
 tags: ["pretraining", "autoregressive-LM", "masked-LM", "scaling-laws", "distributed-training", "data-parallel", "tensor-parallel", "pipeline-parallel", "ZeRO", "activation-checkpointing", "mixed-precision", "SFT", "RLHF", "DPO", "LoRA", "PEFT"]
 summary: "> 从预训练目标（自回归/掩码 LM）到规模定律，从分布式训练四维并行（数据/张量/流水线/ZeRO）到混合精度与激活检查点，再到对齐三阶段（SFT→RLHF→DPO）与参数高效微调（LoRA/QLoRA），系统覆盖 LLM 训练全链路。"
 source: "_sources/yeasy/llm_internals/ (Ch5-8)"

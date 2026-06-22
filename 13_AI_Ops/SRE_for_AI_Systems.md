@@ -1,6 +1,6 @@
 ---
 title: AI 系统的 SRE 实践指南
-category: 16-ai-ops
+category: 13-ai-ops
 tags: ["ai-ops", "observability", "monitoring", "incident-response"]
 summary: "> 🎯 **目标**：将 Google SRE 方法论应用于 AI/LLM 生产系统，建立可靠性工程体系 —— SLI/SLO 定义、错误预算、On-Call、事故响应和 Postmortem 文化。"
 created: 2026-05-31

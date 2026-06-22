@@ -1,6 +1,6 @@
 ---
 title: AI Data Analyst 面试题实例答案
-category: 23-interviews-ai-data-analyst
+category: 21-interviews-ai-data-analyst
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "**答**：先看时间序列与置信区间，再做分群与对照分析；结合外部事件与版本变更判断是否系统性影响。必要时使用统计检验与因果分析确认。"
 created: 2026-05-31

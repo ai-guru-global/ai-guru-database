@@ -1,6 +1,6 @@
 ---
 title: Prompt Caching 与 KV Cache 优化深度解析
-category: 09-deployment-inference
+category: 10-deployment-inference
 tags: [prompt-caching, kv-cache, prefix-caching, attention-optimization, inference-engine, vllm, pagedattention]
 summary: 深度解析 LLM 推理中的 KV Cache 管理、Prefix Caching、Prompt Caching 和注意力优化技术，涵盖从内存管理到多轮对话缓存的全栈优化策略。
 date: 2026-06-01

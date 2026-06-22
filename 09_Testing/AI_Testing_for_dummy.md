@@ -1,6 +1,6 @@
 ---
 title: AI 测试 - 小白版
-category: 15-testing
+category: 09-testing
 tags: ["testing", "ai-testing", "prompt-testing", "evaluation"]
 summary: "> **一句话秒懂**: AI 测试就像新车上市前的安全碰撞测试——不测不知道，一测吓一跳，测完才敢放心上路。"
 created: 2026-05-31

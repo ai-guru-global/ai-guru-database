@@ -1,6 +1,6 @@
 ---
 title: "Braintrust: LLM 评估平台"
-category: "16-ai-ops"
+category: "11-mlops-pipeline"
 tags: ["ai-ops", "observability", "monitoring", "incident-response", "llm"]
 summary: "> **一句话理解**: Braintrust 是开源 LLM 评估平台——evals 数据集、A/B 测试、回归检测、成本追踪，开源的 LLM 质量保障工具。"
 created: "2026-05-31"

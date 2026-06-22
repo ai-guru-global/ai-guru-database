@@ -1,6 +1,6 @@
 ---
 title: "AI 系统故障响应 (Incident Response for AI)"
-category: "16-ai-ops"
+category: "13-ai-ops"
 tags: ["incident-response", "on-call", "runbook", "post-mortem", "ai-ops"]
 summary: "面向 AI/LLM 生产系统的故障响应体系：AI 特有故障模式分类 (模型漂移、幻觉激增、Prompt 注入、数据管线故障)、事故分级、Runbook 模板、升级流程和 Post-Mortem 方法论。"
 created: "2026-06-12"

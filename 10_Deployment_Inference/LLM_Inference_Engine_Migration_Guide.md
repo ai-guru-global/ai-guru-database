@@ -1,6 +1,6 @@
 ---
 title: "LLM 推理引擎迁移指南"
-category: "09-deployment-inference"
+category: "10-deployment-inference"
 tags: ["deployment", "inference", "migration", "llm", "vllm", "sglang", "tgi", "tensorrt-llm"]
 summary: "> **一句话理解**: LLM 推理引擎迁移指南——覆盖 vLLM、SGLang、TGI、TensorRT-LLM 之间的 API、配置、量化、部署迁移方法，以及自建到云 API 的切换策略。"
 created: "2026-06-15"

@@ -1,6 +1,6 @@
 ---
 title: "BentoML: AI 模型服务框架"
-category: "09-deployment-inference"
+category: "10-deployment-inference"
 tags: ["deployment", "inference", "serving", "bentoml", "model-serving", "kubernetes", "mlops"]
 summary: "> **一句话理解**: BentoML 是开源 AI 模型服务框架——一键将任意模型打包为生产级 API，支持多框架、自动扩缩容、A/B 测试，并能与 vLLM/TGI/TensorRT-LLM 等推理引擎无缝集成。"
 created: "2026-05-31"

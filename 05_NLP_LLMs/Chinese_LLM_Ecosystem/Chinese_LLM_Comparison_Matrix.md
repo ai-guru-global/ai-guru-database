@@ -1,6 +1,6 @@
 ---
 title: "中国大模型全厂商对比矩阵 (Chinese LLM Comparison Matrix)"
-category: "04-nlp-llms-chinese-llm-ecosystem"
+category: "05-nlp-llms-chinese-llm-ecosystem"
 tags: ["chinese-llm", "comparison", "benchmark", "moe", "multimodal", "open-source", "api-pricing"]
 summary: "中国 15 家大模型厂商的全面横向对比：技术架构、参数规模、Benchmark 性能、API 定价、开源策略、特色能力一览。(2026-06-17 更新 GLM-5.2: 1M 上下文 / IndexShare / Day 0 八家国产算力适配)"
 created: "2026-06-12"

@@ -1,6 +1,6 @@
 ---
 title: AI Security Engineer 面试准备
-category: 23-interviews-ai-security-engineer
+category: 21-interviews-ai-security-engineer
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "**安全评测**: 红队测试、越狱与提示词注入检测。"
 created: 2026-05-31

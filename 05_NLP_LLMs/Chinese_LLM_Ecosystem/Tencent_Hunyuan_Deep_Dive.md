@@ -1,6 +1,6 @@
 ---
 title: "腾讯混元 (Hunyuan): 腾讯生态驱动的大模型平台"
-category: "04-nlp-llms-chinese-llm-ecosystem"
+category: "05-nlp-llms-chinese-llm-ecosystem"
 tags: ["nlp", "llm", "tencent", "hunyuan", "chinese-llm", "moe", "video-generation", "open-source"]
 summary: "> **一句话理解**: 腾讯混元依托腾讯生态，Hunyuan-Large 389B 开源 MoE 模型和 HunyuanVideo 视频生成技术为双核心，在社交、游戏、内容创作场景深度集成。"
 created: "2026-06-12"

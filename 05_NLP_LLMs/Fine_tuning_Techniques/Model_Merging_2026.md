@@ -1,6 +1,6 @@
 ---
 title: '模型合并技术 2026 (Model Merging)'
-category: '04-nlp-llms-fine-tuning-techniques'
+category: '05-nlp-llms-fine-tuning-techniques'
 tags: ["nlp", "llm", "transformer", "gpt", "bert"]
 summary: '> **一句话理解**: 模型合并就像"炼金术"——把多个已经训练好的模型像调色一样混合在一起，不需要重新训练就能得到一个兼具多家之长的新模型。'
 created: '2026-05-31'

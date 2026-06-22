@@ -1,6 +1,6 @@
 ---
 title: Transformer 替代架构深度解析
-category: 04-nlp-llms-architecture
+category: 05-nlp-llms-llm-architectures
 tags: [transformer-alternative, rwkv, retnet, mamba, state-space-model, linear-attention, efficient-architecture]
 summary: 深度解析 RWKV、RetNet、Mamba 等 Transformer 替代架构的设计原理、效率优势和适用场景，以及线性注意力的技术演进脉络。
 date: 2026-06-01

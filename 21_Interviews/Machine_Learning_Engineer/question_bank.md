@@ -1,6 +1,6 @@
 ---
 title: Machine Learning Engineer 题库
-category: 23-interviews-machine-learning-engineer
+category: 21-interviews-machine-learning-engineer
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "解释过拟合与欠拟合的差异，并给出常见处理方法。"
 created: 2026-05-31

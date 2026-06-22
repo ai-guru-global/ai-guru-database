@@ -1,6 +1,6 @@
 ---
 title: 'AI 行业应用速成指南'
-category: '20-ai-applications-industry'
+category: '18-ai-applications-industry'
 tags: ["ai-applications", "industry", "finance", "healthcare"]
 summary: '> **一句话理解**: AI 在行业中就像"智能杠杆"——找准支点（痛点），用最小的技术投入撬动最大的业务价值。'
 created: '2026-05-31'

@@ -1,6 +1,6 @@
 ---
 title: "PEFT 2026 高阶指南：从 LoRA 到 DoRA 与 PiSSA"
-category: "04-nlp-llms"
+category: "05-nlp-llms-fine-tuning-techniques"
 tags: ["peft", "lora", "dora", "pissa", "fine-tuning", "huggingface"]
 summary: "> **一句话理解**: 标准 LoRA 已经足够优秀，但 DoRA 和 PiSSA 等 2025/2026 年爆发的微调新星通过改进权重初始化和方向/幅度解耦，在同等参数量下逼近了全量微调（FFT）的极限能力。"
 created: "2026-06-12"

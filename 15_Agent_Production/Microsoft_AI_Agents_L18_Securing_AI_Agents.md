@@ -1,6 +1,6 @@
 ---
 title: "L18 用加密审计收据保障 AI Agent 安全：Ed25519 + JCS + 哈希链"
-category: "13-agent-production"
+category: "15-agent-production"
 tags:
   - ai-agents
   - microsoft

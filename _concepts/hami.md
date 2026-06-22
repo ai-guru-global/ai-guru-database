@@ -1,6 +1,6 @@
 ---
 title: "HAMi (Heterogeneous AI Computing Virtualization Middleware)"
-category: concept
+category: -concepts
 tags: ["hami", "gpu-virtualization", "heterogeneous-computing", "cncf", "kubernetes", "gpu-sharing", "vgpu", "scheduling"]
 relationships:
   - target: "_concepts/gpu-virtualization"

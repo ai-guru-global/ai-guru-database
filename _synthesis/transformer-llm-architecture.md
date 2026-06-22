@@ -1,6 +1,6 @@
 ---
 title: Transformer 架构 × LLM 架构
-category: synthesis
+category: -synthesis
 tags: [nlp, transformer, llm, bert, gpt, attention, architecture]
 sources: [_concepts/transformer-architecture.md, _concepts/llm-architectures.md]
 created: 2026-05-31T21:30:00+08:00

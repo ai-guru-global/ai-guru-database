@@ -1,6 +1,6 @@
 ---
 title: MoE 推理优化
-category: 09-deployment-inference
+category: 10-deployment-inference-inference-performance
 tags: [inference, moe, mixture-of-experts, expert-parallelism, all-to-all, performance]
 summary: "> MoE 模型用稀疏激活降低推理成本，但 All-to-All 通信和负载不均衡成为新的性能瓶颈。"
 created: 2026-06-15

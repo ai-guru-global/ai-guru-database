@@ -1,6 +1,6 @@
 ---
 title: AI智能体
-category: concepts
+category: -concepts
 tags:
 - rl
 - ai-agents

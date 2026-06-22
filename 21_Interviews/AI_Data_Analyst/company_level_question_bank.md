@@ -1,6 +1,6 @@
 ---
 title: AI Data Analyst 按公司/级别区分的题库
-category: 23-interviews-ai-data-analyst
+category: 21-interviews-ai-data-analyst
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "多业务线指标口径如何统一？"
 created: 2026-05-31

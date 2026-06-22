@@ -1,6 +1,6 @@
 ---
 title: 图像分割
-category: concepts
+category: -concepts
 tags:
 - cv
 - segmentation

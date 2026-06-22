@@ -1,6 +1,6 @@
 ---
 title: "Scaling Laws for Neural Language Models (Kaplan et al.) 深度解读"
-category: 22-papers
+category: 20-papers
 tags: ["scaling-laws", "kaplan", "openai", "power-law", "emergent-abilities"]
 summary: "Scaling Laws 就像 AI 的'元素周期表'——它告诉你模型性能可以用简单的幂律公式预测，让训练从'炼金术'变成'工程学'"
 created: 2026-06-12

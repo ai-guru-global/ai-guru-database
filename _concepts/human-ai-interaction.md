@@ -1,6 +1,6 @@
 ---
 title: "人机交互 (Human-AI Interaction)"
-category: concepts
+category: -concepts
 tags: ["hci", "human-ai-interaction", "ux", "agentic-ui"]
 summary: "人机交互研究人类如何与 AI 系统有效协作——从传统的 GUI 到对话式 AI 再到 Agentic UI 的演进。"
 created: 2026-06-12

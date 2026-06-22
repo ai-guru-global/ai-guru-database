@@ -1,6 +1,6 @@
 ---
 title: 提示词工程与结构化输出 (Prompt Engineering & Structured Output)
-category: 04-nlp-llms-prompt-engineering
+category: 05-nlp-llms-prompt-engineering
 tags: ["nlp", "llm", "transformer", "gpt", "bert"]
 summary: "> 提示词工程是优化 LLM 输入以获得更好输出的技术，结构化输出框架确保 LLM 返回格式正确的 JSON/类型数据。"
 created: 2026-05-31

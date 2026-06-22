@@ -1,6 +1,6 @@
 ---
 title: "Agentic Workflow Design Patterns 2026: Beyond Simple Chains"
-category: "13-agent-production"
+category: "15-agent-production-agent-workflow"
 tags: ["ai-agents", "workflow", "design-patterns", "orchestration", "swarms", "2026-trends"]
 summary: "> **一句话理解**: 2026 年的智能体开发不再是堆叠 Prompt，而是像设计“分布式软件架构”一样，通过成熟的工作流模式来解决 LLM 的不确定性问题。"
 created: 2026-06-04

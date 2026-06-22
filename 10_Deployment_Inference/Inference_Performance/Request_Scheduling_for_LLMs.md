@@ -1,6 +1,6 @@
 ---
 title: LLM 推理请求调度
-category: 09-deployment-inference
+category: 10-deployment-inference-inference-performance
 tags: [inference, scheduling, continuous-batching, preemption, priority, performance]
 summary: "> 请求调度决定谁先算、怎么拼 batch、被抢占了怎么办，是高并发推理服务的核心控制面。"
 created: 2026-06-15

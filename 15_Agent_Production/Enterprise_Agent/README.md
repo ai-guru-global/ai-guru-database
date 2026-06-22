@@ -1,6 +1,6 @@
 ---
 title: 企业级 Agent
-category: 13-agent-production-enterprise-agent
+category: 15-agent-production-enterprise-agent
 tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> 生产部署 ≠ 原型上线 —— 企业级 Agent 需要分层架构、完善监控、CI/CD 流水线，以及严格的安全控制和成本管理。"
 created: 2026-05-31

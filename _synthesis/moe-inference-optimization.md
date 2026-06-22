@@ -1,6 +1,6 @@
 ---
 title: "MoE × 推理优化: 专家混合架构的推理加速挑战"
-category: synthesis
+category: -synthesis
 tags: ["moe", "inference-optimization", "deepseek", "speculative-decoding", "routing", "synthesis"]
 sources:
   - "05_NLP_LLMs/LLM_Architectures/MoE_Routing_and_Load_Balancing"

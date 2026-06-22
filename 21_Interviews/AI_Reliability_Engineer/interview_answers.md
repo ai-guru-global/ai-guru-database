@@ -1,6 +1,6 @@
 ---
 title: AI Reliability Engineer 面试题实例答案
-category: 23-interviews-ai-reliability-engineer
+category: 21-interviews-ai-reliability-engineer
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "**答**：先明确用户体验关键路径，选取延迟、错误率与可用性作为 SLI，并根据业务目标设定合理 SLO；同时设定告警与回滚阈值。"
 created: 2026-05-31

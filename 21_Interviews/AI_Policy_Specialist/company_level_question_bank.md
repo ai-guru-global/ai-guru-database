@@ -1,6 +1,6 @@
 ---
 title: AI Policy Specialist 按公司/级别区分的题库
-category: 23-interviews-ai-policy-specialist
+category: 21-interviews-ai-policy-specialist
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "多业务线的合规治理如何协同？"
 created: 2026-05-31

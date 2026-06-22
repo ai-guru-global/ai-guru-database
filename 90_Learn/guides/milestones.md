@@ -1,6 +1,6 @@
 ---
 title: 里程碑自测
-category: 90-learn
+category: 90-learn-guides
 tags: ["learning", "education", "courses", "study-path"]
 summary: "> **用这些问题检验你对每个 Stage 的理解程度。如果能回答大部分问题，说明你已经达到了该阶段的学习目标。**"
 created: 2026-05-31

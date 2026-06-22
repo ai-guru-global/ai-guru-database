@@ -1,6 +1,6 @@
 ---
 title: Agent 开发框架
-category: 13-agent-production-agent-frameworks
+category: 15-agent-production-agent-frameworks
 tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> 多 Agent 开发框架是构建协作式 Agent 系统的核心基础设施，从对话式协作到状态机编排各有特色。"
 created: 2026-05-31

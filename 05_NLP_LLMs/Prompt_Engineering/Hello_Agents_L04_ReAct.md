@@ -1,6 +1,6 @@
 ---
 title: "Hello-Agents L04：智能体经典范式构建（ReAct / Plan-and-Solve / Reflection）"
-category: "04-nlp-llms-prompt-engineering"
+category: "05-nlp-llms-prompt-engineering"
 tags:
   - ai-agents
   - react

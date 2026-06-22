@@ -1,6 +1,6 @@
 ---
 title: "语音与音频 AI (Speech & Audio AI)"
-category: concept
+category: -concepts
 tags: ["nlp", "speech", "audio", "ASR", "TTS", "whisper", "cosyvoice", "audio-llm"]
 relationships:
   - target: "_concepts/llm-architectures"

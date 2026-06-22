@@ -1,6 +1,6 @@
 ---
 title: "Hugging Face Diffusers 实战：从图像到视频生成的底层引擎"
-category: "05-computer-vision"
+category: "04-computer-vision"
 tags: ["diffusers", "computer-vision", "huggingface", "stable-diffusion", "flux", "video-generation"]
 summary: "> **一句话理解**: `diffusers` 是计算机视觉生成领域的“Transformers 库”。无论是经典的 Stable Diffusion、最强的 FLUX.1，还是类似 Sora 的视频生成模型，都基于这套 API 运行。"
 created: "2026-06-12"

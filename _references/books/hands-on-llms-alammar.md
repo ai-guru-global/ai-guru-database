@@ -1,6 +1,6 @@
 ---
 title: "Hands-On Large Language Models"
-category: references
+category: -references-books
 tags:
   - book
   - learning-resource

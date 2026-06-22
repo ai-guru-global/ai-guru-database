@@ -1,6 +1,6 @@
 ---
 title: "OPA (Open Policy Agent)"
-category: concept
+category: -concepts
 tags: ["opa", "open-policy-agent", "policy", "security", "authorization", "admission-control", "rego", "cncf"]
 relationships:
   - target: "_concepts/policy-as-code"

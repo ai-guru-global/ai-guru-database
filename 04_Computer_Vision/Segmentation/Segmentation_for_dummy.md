@@ -1,6 +1,6 @@
 ---
 title: 图像分割 - 小白版 ✂️
-category: 05-computer-vision-segmentation
+category: 04-computer-vision-segmentation
 tags: ["computer-vision", "cnn", "image-processing"]
 summary: "> **一句话秒懂**: 图像分割就像给涂色书的每个区域涂上不同颜色——AI要把图片里的每一个像素都分类,哪里是天空、哪里是树、哪里是人!"
 created: 2026-05-31

@@ -1,6 +1,6 @@
 ---
 title: 'OCR 与文字识别'
-category: '05-computer-vision-ocr-text-recognition'
+category: '04-computer-vision-ocr-text-recognition'
 tags: ["computer-vision", "cnn", "image-processing"]
 summary: '> **一句话秒懂**: OCR 就像给电脑装了一双"识字眼"，能看懂图片里的文字，把它变成可以编辑的文本。'
 created: '2026-05-31'

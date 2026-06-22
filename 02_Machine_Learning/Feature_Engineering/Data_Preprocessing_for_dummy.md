@@ -1,6 +1,6 @@
 ---
 title: "数据预处理入门: 清洗、转换、标准化"
-category: 02-machine-learning
+category: 02-machine-learning-feature-engineering
 tags: ["data-preprocessing", "cleaning", "missing-values", "normalization", "beginner", "for-dummy"]
 summary: "面向初学者的数据预处理完整指南。从缺失值处理、异常值检测、数据类型转换到特征缩放，全部用生活化比喻和代码示例讲解。"
 created: 2026-06-01

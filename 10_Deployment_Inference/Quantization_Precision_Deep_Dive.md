@@ -1,6 +1,6 @@
 ---
 title: "量化精度深度解析 (Quantization Precision Deep Dive)"
-category: "09-deployment-inference"
+category: "10-deployment-inference"
 tags: ["quantization", "precision", "accuracy", "perplexity", "calibration", "outlier", "layer-sensitivity", "kv-cache-quantization"]
 summary: >
   深入剖析量化对 LLM 输出质量的影响机制：三种退化模式（长尾知识丢失、重复生成、格式退化）、层敏感度分析（Attention Q/K/V 极敏感，FFN 中间层鲁棒）、激活值离群点问题（LLM.int8()/SmoothQuant 解决方案）、校准数据选择策略、困惑度作为量化体温计、KV Cache 量化第二战场。提供完整的量化质量评估工作流。

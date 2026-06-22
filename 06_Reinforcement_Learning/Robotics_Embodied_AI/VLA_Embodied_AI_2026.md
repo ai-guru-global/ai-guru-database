@@ -1,6 +1,6 @@
 ---
 title: "VLA 具身智能 2026"
-category: "06-rl-robotics"
+category: "06-reinforcement-learning-robotics-embodied-ai"
 tags: ["vla", "embodied-ai", "robotics", "vision-language-action", "rt-2", "pi0"]
 summary: "从 RT-2 到 pi-0，Vision-Language-Action (VLA) 模型如何将视觉理解、语言推理与物理动作统一到一个端到端架构中，驱动具身智能在 2026 年进入通用化阶段。"
 created: "2026-06-12"

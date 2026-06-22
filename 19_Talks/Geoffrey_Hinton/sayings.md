@@ -1,6 +1,6 @@
 ---
 title: Geoffrey Hinton 关于 AI 的观点 (Geoffrey Hinton on AI)
-category: 21-talks-geoffrey-hinton
+category: 19-talks-geoffrey-hinton
 tags: ["talks", "speeches", "insights", "leaders"]
 summary: "1. **“I console myself with the normal excuse: If I hadn’t done it, somebody else would have.” / “我安慰自己：如果我不做，总会有人做。”**"
 created: 2026-05-31

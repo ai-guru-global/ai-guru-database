@@ -1,6 +1,6 @@
 ---
 title: "AI 工程学习路线图 2026（免费资源精选）"
-category: "90-learn"
+category: "90-learn-guides"
 tags: ["learning-path", "roadmap", "ai-engineering", "llm", "agents", "free-resources", "curated"]
 summary: "基于 ashishps1/learn-ai-engineering (5.7k⭐) 整理的 AI 工程全流程免费学习路线，覆盖数学基础→ML→深度学习→LLM→Agent→MCP→MLOps，含课程、论文、书籍、工具推荐。"
 sources:

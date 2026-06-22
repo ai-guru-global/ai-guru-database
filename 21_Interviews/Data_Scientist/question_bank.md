@@ -1,6 +1,6 @@
 ---
 title: Data Scientist 题库
-category: 23-interviews-data-scientist
+category: 21-interviews-data-scientist
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "解释置信区间与 p-value 的区别。"
 created: 2026-05-31

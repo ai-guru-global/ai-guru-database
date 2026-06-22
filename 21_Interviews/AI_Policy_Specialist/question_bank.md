@@ -1,6 +1,6 @@
 ---
 title: AI Policy Specialist 题库
-category: 23-interviews-ai-policy-specialist
+category: 21-interviews-ai-policy-specialist
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "欧盟 AI 法案的核心风险分级框架是什么？"
 created: 2026-05-31

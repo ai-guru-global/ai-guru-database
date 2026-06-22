@@ -1,6 +1,6 @@
 ---
 title: "L18 - Transformer 与 BERT"
-category: "90-learn"
+category: "90-learn-courses-microsoft"
 tags: ["microsoft-ai-course", "transformer", "attention", "bert", "nlp"]
 summary: "从注意力机制出发，理解 Transformer 如何取代 RNN 成为现代 NLP 的核心架构，以及 BERT 如何通过双向编码器实现迁移学习。"
 source_url: "https://raw.githubusercontent.com/microsoft/AI-For-Beginners/main/lessons/5-NLP/18-Transformers/README.md"

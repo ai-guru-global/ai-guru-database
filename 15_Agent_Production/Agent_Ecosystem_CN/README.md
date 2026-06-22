@@ -1,6 +1,6 @@
 ---
 title: 国内 AI Agent 生态
-category: 13-agent-production-agent-ecosystem-cn
+category: 15-agent-production-agent-ecosystem-cn
 tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> 国内 AI Agent 产品和开源项目正在快速崛起，在中文理解、多模态、企业应用等维度各有特色。"
 created: 2026-05-31

@@ -1,6 +1,6 @@
 ---
 title: "Qwen (通义千问) 技术深度解析"
-category: 04-nlp-llms-chinese-llm
+category: 05-nlp-llms-chinese-llm-ecosystem
 tags: [qwen, alibaba, chinese-llm, moe, hybrid-thinking, multimodal, open-source, m-rope, reasoning, qwen3.7-max, qwen3-2507]
 summary: "全面剖析阿里通义千问 Qwen 系列从 Qwen-7B 到 Qwen3-235B-A22B 的完整技术演进：架构设计、混合思维模式、M-RoPE 多模态位置编码、动态分辨率、后训练四阶段及开源生态。2026 年 6 月更新补充 Qwen3-2507 开源系列 (1M 上下文、Instruct/Thinking 双变体) 与 Qwen3.7-Max 2026 闭源旗舰 (数学基准 HMMT Feb 2026 领先)。"
 created: 2026-06-01

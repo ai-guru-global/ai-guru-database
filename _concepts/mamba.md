@@ -1,6 +1,6 @@
 ---
 title: "Mamba"
-category: concepts
+category: -concepts
 tags: ["mamba", "state-space-model", "ssm", "long-context", "architecture", "transformer-alternative"]
 relationships:
   - target: "_concepts/state-space-models"

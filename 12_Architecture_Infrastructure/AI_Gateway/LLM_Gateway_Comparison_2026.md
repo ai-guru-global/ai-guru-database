@@ -1,6 +1,6 @@
 ---
 title: "LLM 网关对比 2026: LiteLLM vs Portkey vs Kong"
-category: "14-ai-gateway"
+category: "12-architecture-infrastructure-ai-gateway"
 tags: ["ai-gateway", "litellm", "portkey", "kong", "routing", "cost-optimization"]
 summary: "LLM 网关是统一管理多 LLM 供应商的关键基础设施,本文对比 LiteLLM、Portkey、Kong 等主流方案的架构与适用场景。"
 sources:

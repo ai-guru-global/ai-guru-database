@@ -1,6 +1,6 @@
 ---
 title: "LLM 数据工程深度解读: 从预训练数据到合成数据"
-category: "04-nlp-llms"
+category: "05-nlp-llms-llm-data-engineering"
 tags: ["llm", "data-engineering", "pretraining-data", "sft-data", "synthetic-data", "data-quality", "data-mixture"]
 summary: "LLM 训练中最被低估但最影响质量的环节。覆盖万亿token预训练数据清洗、SFT数据质量工程、RLHF偏好数据构建、合成数据飞轮。"
 created: 2026-06-04

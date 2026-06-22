@@ -1,6 +1,6 @@
 ---
 title: AI Research Engineer 题库
-category: 23-interviews-ai-research-engineer
+category: 21-interviews-ai-research-engineer
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "分布式训练常见通信瓶颈有哪些？"
 created: 2026-05-31

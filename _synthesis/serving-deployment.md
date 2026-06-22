@@ -1,6 +1,6 @@
 ---
 title: 模型服务 × 模型部署
-category: synthesis
+category: -synthesis
 tags: [deployment, serving, inference, vllm, sglang, tensorrt, kubernetes, edge]
 sources: [_concepts/model-serving.md, _concepts/model-deployment.md]
 created: 2026-05-31T21:30:00+08:00

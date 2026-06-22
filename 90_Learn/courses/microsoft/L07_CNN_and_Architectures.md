@@ -1,6 +1,6 @@
 ---
 title: "L07 - 卷积神经网络与 CNN 架构"
-category: "90-learn"
+category: "90-learn-courses-microsoft"
 tags: ["microsoft-ai-course", "computer-vision", "cnn", "pytorch", "tensorflow", "vgg"]
 summary: "本节课介绍卷积神经网络（Convolutional Neural Network, CNN）的核心思想：用可学习的卷积滤波器自动提取图像中的局部模式，并通过层级特征金字塔逐步组合成高级语义，最终完成图像分类。"
 source_url: "https://raw.githubusercontent.com/microsoft/AI-For-Beginners/main/lessons/4-ComputerVision/07-ConvNets/README.md"

@@ -1,6 +1,6 @@
 ---
 title: "Microsoft Generative AI For Beginners：21 课生成式 AI 初学者课程映射"
-category: "90-learn"
+category: "90-learn-courses-microsoft"
 tags: ["learning-paths", "microsoft", "generative-ai", "course-catalog", "llm", "prompt-engineering"]
 summary: "Microsoft 官方出品的 21 课生成式 AI 入门课程，覆盖 LLM 基础、提示工程、RAG、AI 代理、微调、开源模型等核心主题，附带 Python / TypeScript 代码示例。本页将课程完整课表映射到 ai-guru-database 的对应章节。"
 created: "2026-06-12"

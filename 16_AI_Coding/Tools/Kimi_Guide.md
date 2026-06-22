@@ -1,6 +1,6 @@
 ---
 title: Kimi Code / Kimi Chat 使用指南
-category: 17-ai-coding-02-tools
+category: 16-ai-coding-tools
 tags: ["ai-coding", "code-generation", "cursor", "github-copilot"]
 summary: "> **一句话**: 月之暗面 Kimi 提供 Code（编程）和 Chat（对话）两种模式，Allegretto 套餐 ¥159/月，是稳定的国产 AI 编程辅助工具。"
 created: 2026-05-31

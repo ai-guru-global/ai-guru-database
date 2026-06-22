@@ -1,6 +1,6 @@
 ---
 title: FLOPS
-category: concepts
+category: -concepts
 tags: [hardware, gpu, flops, performance, inference]
 relationships:
   - target: "_concepts/ai-hardware"

@@ -1,6 +1,6 @@
 ---
 title: "智能体 AI 权威指南 Part 3: AgentOps 与生产化落地"
-category: agent-workflow
+category: 15-agent-production-agent-workflow
 tags: [agentops, production, framework-ecosystem, LangChain, LlamaIndex, multi-agent-framework, harness, observability, optimization, enterprise-platform, failure-modes, anti-patterns, agentic-coding]
 summary: "从框架生态选型到 AgentOps 设计模式、Harness 架构、可观测性、性能优化、企业级平台、故障模式、反模式到智能体编程实践的生产化全景指南"
 created: 2026-06-16

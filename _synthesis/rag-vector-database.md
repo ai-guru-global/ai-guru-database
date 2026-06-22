@@ -1,6 +1,6 @@
 ---
 title: RAG 系统 × 向量数据库
-category: synthesis
+category: -synthesis
 tags: [rag, vector-database, embedding, retrieval, hnsw, milvus, qdrant]
 sources: [_concepts/rag-systems.md, _concepts/vector-database.md]
 created: 2026-05-31T21:30:00+08:00

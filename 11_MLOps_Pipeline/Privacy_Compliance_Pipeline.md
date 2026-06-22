@@ -1,6 +1,6 @@
 ---
 title: "隐私与合规流水线"
-category: "10-mlops-pipeline"
+category: "11-mlops-pipeline"
 tags: ["mlops", "privacy", "compliance", "pii", "gdpr", "model-card", "audit", "governance"]
 summary: "> **一句话理解**: 合规不是上线后补的论文，是流水线的门禁——PII 检测、数据血源、模型卡强制化、审计追溯，让每个模型都能回答「用了谁的数据、给谁用、合不合规」。"
 created: 2026-06-15

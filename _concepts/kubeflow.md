@@ -1,6 +1,6 @@
 ---
 title: "Kubeflow"
-category: concept
+category: -concepts
 tags: ["kubeflow", "kubernetes", "mlops", "pipeline", "notebook", "training", "serving", "katib", "cncf"]
 relationships:
   - target: "_concepts/mlops"

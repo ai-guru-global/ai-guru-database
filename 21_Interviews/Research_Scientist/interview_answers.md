@@ -1,6 +1,6 @@
 ---
 title: Research Scientist 面试题实例答案
-category: 23-interviews-research-scientist
+category: 21-interviews-research-scientist
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "**答**：从核心假设出发，逐一移除关键模块，保持其余配置一致。用统一评测指标与统计检验确保差异可信，同时记录计算成本，避免性能提升来自规模差异。"
 created: 2026-05-31

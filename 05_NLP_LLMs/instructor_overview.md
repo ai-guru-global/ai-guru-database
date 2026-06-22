@@ -1,6 +1,6 @@
 ---
 title: "Instructor 结构化输出库概览"
-category: "04-nlp-llms"
+category: "05-nlp-llms"
 tags: ["tool", "structured-output", "pydantic", "instructor", "json"]
 summary: "最流行的 LLM 结构化输出库,通过 Pydantic 模型定义输出 schema,自动重试确保输出可靠,支持 OpenAI/Anthropic/Gemini 等多家 API。"
 sources:

@@ -1,6 +1,6 @@
 ---
 title: "Google TPU 深度解析 2026"
-category: "01-fundamentals"
+category: "01-fundamentals-ai-hardware"
 tags: ["tpu", "google", "ironwood", "trillium", "v5p", "v6e", "tpu7x", "ai-chip", "training", "inference"]
 summary: "Google TPU 全代际技术解析:从 v4 到 TPU7x (Ironwood)，覆盖架构规格、Pod 规模、软件生态、部署案例和与 NVIDIA/AMD 的对比。"
 sources:

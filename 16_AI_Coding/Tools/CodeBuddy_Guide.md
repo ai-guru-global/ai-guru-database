@@ -1,6 +1,6 @@
 ---
 title: CodeBuddy / WorkBuddy 使用指南
-category: 17-ai-coding-02-tools
+category: 16-ai-coding-tools
 tags: ["ai-coding", "code-generation", "cursor", "github-copilot"]
 summary: "> **一句话**: CodeBuddy 是 AI 编程助手，WorkBuddy 是其办公延伸，适合文档和项目脚手架生成。"
 created: 2026-05-31

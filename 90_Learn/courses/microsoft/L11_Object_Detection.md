@@ -1,6 +1,6 @@
 ---
 title: "L11 - 目标检测"
-category: "90-learn"
+category: "90-learn-courses-microsoft"
 tags: ["microsoft-ai-course", "computer-vision", "object-detection", "yolo", "rcnn"]
 summary: "本课讲解如何让模型同时回答图像中‘有什么’和‘在哪里’，介绍目标检测的数据集、评价指标 IoU/AP/mAP，以及从 R-CNN 到 YOLO 的主流算法。"
 source_url: "https://raw.githubusercontent.com/microsoft/AI-For-Beginners/main/lessons/4-ComputerVision/11-ObjectDetection/README.md"

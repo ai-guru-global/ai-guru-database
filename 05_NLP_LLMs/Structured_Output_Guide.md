@@ -1,6 +1,6 @@
 ---
 title: "LLM 结构化输出完全指南"
-category: "04-nlp-llms"
+category: "05-nlp-llms"
 tags: ["llm", "structured-output", "pydantic", "instructor", "json", "function-calling"]
 summary: "让 LLM 返回可靠结构化数据的技术全景:Function Calling、JSON Mode、Instructor、PydanticAI、Outlines 等方案对比与实践。"
 sources:

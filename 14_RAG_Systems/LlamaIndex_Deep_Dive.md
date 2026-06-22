@@ -1,6 +1,6 @@
 ---
 title: 'LlamaIndex: 数据连接框架'
-category: '11-rag-systems'
+category: '14-rag-systems'
 tags: ["rag", "retrieval", "vector-database", "embedding", "llama"]
 summary: '> **一句话理解**: LlamaIndex 是 LLM 应用的数据连接器——把私有数据接入大模型，让模型"阅读"并"理解"你的文档。'
 created: '2026-05-31'

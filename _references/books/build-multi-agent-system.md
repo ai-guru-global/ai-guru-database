@@ -1,6 +1,6 @@
 ---
 title: "Build a Multi-Agent System"
-category: "references"
+category: "-references-books"
 tags: ["book", "learning-resource"]
 summary: "从零构建多 Agent 系统.作者:Manning."
 sources:

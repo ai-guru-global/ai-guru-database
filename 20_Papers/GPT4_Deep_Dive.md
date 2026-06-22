@@ -1,6 +1,6 @@
 ---
 title: "GPT-4 Technical Report 深度解读"
-category: 22-papers
+category: 20-papers
 tags: ["gpt-4", "openai", "multimodal", "moe", "scaling"]
 summary: "GPT-4 是第一个在律师考试、SAT、GRE 等人类专业测试中达到前 10% 水平的 AI 模型，标志着大模型从'语言能力'到'专业能力'的质变"
 created: 2026-06-15

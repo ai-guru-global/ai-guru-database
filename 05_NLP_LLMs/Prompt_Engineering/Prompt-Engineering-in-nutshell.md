@@ -1,6 +1,6 @@
 ---
 title: Prompt Engineering 速成指南
-category: 04-nlp-llms-prompt-engineering
+category: 05-nlp-llms-prompt-engineering
 tags: ["nlp", "llm", "transformer", "gpt", "bert"]
 summary: "> 🎯 **目标**：掌握如何编写有效的提示词，让大语言模型产出高质量结果。"
 created: 2026-05-31

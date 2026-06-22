@@ -1,6 +1,6 @@
 ---
 title: Metrics Collection
-category: 13-agent-production-16-agent-evaluation-metrics
+category: 15-agent-production-agent-evaluation-metrics
 tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> Automated and manual methods for collecting evaluation metrics"
 created: 2026-05-31

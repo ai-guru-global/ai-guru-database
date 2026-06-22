@@ -1,6 +1,6 @@
 ---
 title: "Streamlit 概览"
-category: "09-deployment-inference"
+category: "10-deployment-inference"
 tags: ["tool", "streamlit", "web-app", "data-app", "visualization"]
 summary: "Streamlit 是用 Python 快速构建数据应用和 ML Demo 的开源框架,无需前端经验,几分钟即可将脚本变为可分享的 Web 应用。"
 sources:

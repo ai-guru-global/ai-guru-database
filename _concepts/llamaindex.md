@@ -1,6 +1,6 @@
 ---
 title: "LlamaIndex"
-category: concept
+category: -concepts
 tags: ["llamaindex", "rag", "llm", "framework", "data-framework", "agent", "indexing", "retrieval"]
 relationships:
   - target: "_concepts/rag"

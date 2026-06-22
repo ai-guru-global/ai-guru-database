@@ -1,6 +1,6 @@
 ---
 title: AI Research Engineer 按公司/级别区分的题库
-category: 23-interviews-ai-research-engineer
+category: 21-interviews-ai-research-engineer
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "大规模训练平台如何保证效率与稳定性？"
 created: 2026-05-31

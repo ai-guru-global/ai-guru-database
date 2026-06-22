@@ -12,12 +12,12 @@ aliases:
 - 概览
 - 概述
 created: 2026-06-12
-category: 17-ai-coding
+category: 16-ai-coding-tools-opencode
 summary: ""
 ---
 title: OpenCode 概述与核心架构
 description: '# OpenCode 概述与核心架构'
-category: ai-coding
+category: 16-ai-coding-tools-opencode
 tags:
 - ai
 - coding

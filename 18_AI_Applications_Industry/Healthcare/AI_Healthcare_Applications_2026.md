@@ -1,6 +1,6 @@
 ---
 title: "AI 医疗健康应用场景深度解析"
-category: "20-ai-applications-industry"
+category: "18-ai-applications-industry-healthcare"
 tags: ["healthcare", "medical", "application", "diagnosis", "drug-discovery"]
 summary: "AI 在医疗领域的核心应用:辅助诊断、药物发现、医学影像、临床决策支持、患者管理等场景。"
 sources:

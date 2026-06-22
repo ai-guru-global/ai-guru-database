@@ -1,6 +1,6 @@
 ---
 title: '序列模型 (Sequence Models)'
-category: '04-nlp-llms-sequence-models'
+category: '05-nlp-llms-sequence-models'
 tags: ["nlp", "llm", "transformer", "gpt", "bert"]
 summary: '> **一句话理解**: 序列模型就像人类阅读文字——逐字逐句地读，并且记住前文来理解后文。RNN/LSTM/GRU 就是让计算机拥有这种"边读边记"能力的技术，是 Transformer 出现之前 NLP 的绝对主力。'
 created: '2026-05-31'

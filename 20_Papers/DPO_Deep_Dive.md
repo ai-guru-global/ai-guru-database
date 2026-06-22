@@ -1,6 +1,6 @@
 ---
 title: "Direct Preference Optimization (DPO) 深度解读"
-category: 22-papers
+category: 20-papers
 tags: ["dpo", "preference-optimization", "rlhf-alternative", "alignment", "stanford"]
 summary: "DPO 就像跳过了'先请老师打分再学'的中间步骤——直接从人类偏好数据学习，不需要单独训练奖励模型"
 created: 2026-06-15

@@ -1,6 +1,6 @@
 ---
 title: RLHF
-category: concepts
+category: -concepts
 tags: ["reinforcement-learning", "rlhf", "ppo", "alignment", "reward-model", "human-feedback", "ai-history"]
 aliases: [RLHF, reinforcement-learning from Human Feedback, 基于人类反馈的强化学习, 人类对齐]
 relationships:

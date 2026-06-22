@@ -1,6 +1,6 @@
 ---
 title: "Learn Claude Code L06：Subagent — 大任务拆小，干净上下文"
-category: 13-agent-production
+category: 15-agent-production
 tags:
   - ai-agents
   - agent-harness

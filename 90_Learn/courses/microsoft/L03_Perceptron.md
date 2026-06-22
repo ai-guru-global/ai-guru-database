@@ -1,6 +1,6 @@
 ---
 title: "L03 - 感知器"
-category: "90-learn"
+category: "90-learn-courses-microsoft"
 tags: ["microsoft-ai-course", "perceptron", "neural-networks", "binary-classification", "gradient-descent"]
 summary: "从 Frank Rosenblatt 的 Mark-1 硬件到现代二分类模型，理解感知器的结构、感知器准则与基于梯度下降的权重更新。"
 source_url: "https://raw.githubusercontent.com/microsoft/AI-For-Beginners/main/lessons/3-NeuralNetworks/03-Perceptron/README.md"

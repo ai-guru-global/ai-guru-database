@@ -1,6 +1,6 @@
 ---
 title: "OpenCompass"
-category: concept
+category: -concepts
 tags: ["opencompass", "evaluation", "benchmark", "llm", "chinese-llm", "mmbench", "multimodal"]
 relationships:
   - target: "_concepts/model-evaluation"

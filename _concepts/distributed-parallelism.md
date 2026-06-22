@@ -1,6 +1,6 @@
 ---
 title: "分布式并行策略 (Distributed Parallelism)"
-category: concept
+category: -concepts
 tags: ["distributed", "parallelism", "tensor-parallel", "pipeline-parallel", "data-parallel", "expert-parallel", "megatron", "deepspeed"]
 relationships:
   - target: "_concepts/mixture-of-experts"

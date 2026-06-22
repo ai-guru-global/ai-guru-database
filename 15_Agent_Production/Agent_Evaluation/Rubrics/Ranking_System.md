@@ -1,6 +1,6 @@
 ---
 title: Ranking System
-category: 13-agent-production-16-agent-evaluation-rubrics
+category: 15-agent-production-agent-evaluation-rubrics
 tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> Methodology for comparing and ranking AI agents"
 created: 2026-05-31

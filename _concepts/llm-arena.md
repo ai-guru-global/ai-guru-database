@@ -1,6 +1,6 @@
 ---
 title: "LLM Arena"
-category: concepts
+category: -concepts
 tags: ["llm-arena", "lmsys", "chatbot-arena", "human-evaluation", "benchmark", "elo"]
 relationships:
   - target: "_concepts/model-evaluation"

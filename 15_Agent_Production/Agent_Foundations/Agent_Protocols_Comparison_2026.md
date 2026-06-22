@@ -1,6 +1,6 @@
 ---
 title: "Agent Protocols Comparison 2026: MCP, A2A, UCP, and Beyond"
-category: "06-reinforcement-learning-agents"
+category: "15-agent-production-agent-foundations"
 tags: ["ai-agents", "protocols", "mcp", "a2a", "interoperability", "standardization", "2026-trends"]
 summary: "> **一句话理解**: 协议是智能体的“通用语言”——它决定了不同厂商的 AI 之间能否像人类发邮件一样互通，以及 AI 能否顺畅地使用全球各地的工具。"
 created: 2026-06-04

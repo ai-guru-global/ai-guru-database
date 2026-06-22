@@ -1,6 +1,6 @@
 ---
 title: "小米 MiMo 技术深度解析"
-category: 04-nlp-llms-chinese
+category: 05-nlp-llms-chinese-llm-ecosystem
 tags: [xiaomi, mimo, moe, agent, reasoning, open-source, trillion-parameter]
 summary: "全面剖析小米 MiMo 从 V1 推理模型到 V2.5-Pro 万亿参数 MoE 的完整技术演进：1T 总参数 / 42B 激活参数的 MoE 架构、7:1 混合注意力、Multi-Token Prediction (MTP)、Harness-Aware 上下文管理以及 Agent-First 设计哲学，揭示小米如何从消费电子巨头跨界成为 AI 基础设施玩家。"
 created: 2026-06-12

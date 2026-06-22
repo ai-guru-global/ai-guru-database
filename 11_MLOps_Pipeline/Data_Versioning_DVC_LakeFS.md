@@ -1,6 +1,6 @@
 ---
 title: "数据版本控制：DVC 与 LakeFS"
-category: "10-mlops-pipeline"
+category: "11-mlops-pipeline"
 tags: ["mlops", "data-versioning", "dvc", "lakefs", "reproducibility", "git"]
 summary: "> **一句话理解**: 代码用 Git 管，但 GB–TB 级的数据塞不进 Git——DVC 和 LakeFS 用「指针入 Git，数据入对象存储」的方式，让数据集也能版本化、可 diff、可回滚。"
 created: 2026-06-15

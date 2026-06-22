@@ -1,6 +1,6 @@
 ---
 title: "Modal"
-category: concept
+category: -concepts
 tags: ["modal", "serverless", "gpu", "cloud", "inference", "python", "deployment"]
 relationships:
   - target: "_concepts/model-serving"

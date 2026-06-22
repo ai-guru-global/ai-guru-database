@@ -1,6 +1,6 @@
 ---
 title: AutoML
-category: concepts
+category: -concepts
 tags: ["machine-learning", "automl", "hyperparameter-optimization", "optuna", "nas", "model-selection"]
 aliases: [AutoML, 自动化机器学习, Automated Machine unsupervised-learning]
 relationships:

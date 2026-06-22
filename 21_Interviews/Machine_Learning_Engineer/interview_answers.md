@@ -1,6 +1,6 @@
 ---
 title: Machine Learning Engineer 面试题实例答案
-category: 23-interviews-machine-learning-engineer
+category: 21-interviews-machine-learning-engineer
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "**答**：先确认评测口径与数据时间窗一致性，再排查样本选择偏差、特征漂移和线上曝光分布差异。若线上包含冷启动或实时反馈效应，应补充线上特征与反馈闭环，并用 A/B 实验验证改动对核心指标的实际提升。"
 created: 2026-05-31

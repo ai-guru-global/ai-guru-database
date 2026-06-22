@@ -1,6 +1,6 @@
 ---
 title: "CDI 规范 (Container Device Interface Spec) — 官方源引用"
-category: references
+category: -references
 tags: ["references", "cdi", "container-device-interface", "cncf", "specification", "kubernetes", "container-runtime"]
 sources:
   - "https://github.com/cncf-tags/container-device-interface"

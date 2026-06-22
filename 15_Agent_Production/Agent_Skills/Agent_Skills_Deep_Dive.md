@@ -1,6 +1,6 @@
 ---
 title: Agent Skills 深度解析
-category: 13-agent-production-agent-skills
+category: 15-agent-production-agent-skills
 tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> 🎯 **目标**：全面掌握 Agent Skills 开放标准 —— 从核心概念、完整规范、最佳实践到评估体系，构建生产级 Skill 的完整知识体系。"
 created: 2026-05-31

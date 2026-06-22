@@ -1,6 +1,6 @@
 ---
 title: 模型部署与推理加速 - 小白版
-category: 09-deployment-inference
+category: 10-deployment-inference
 tags: ["deployment", "inference", "serving", "vllm", "model-deployment"]
 summary: "> **一句话秒懂**: 就像把实验室的发明变成能在工厂量产的产品——不仅要好用,还要快、省钱、稳定!"
 created: 2026-05-31

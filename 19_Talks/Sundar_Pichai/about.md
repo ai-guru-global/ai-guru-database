@@ -1,6 +1,6 @@
 ---
 title: Sundar Pichai 简介 (Sundar Pichai)
-category: 21-talks-sundar-pichai
+category: 19-talks-sundar-pichai
 tags: ["talks", "speeches", "insights", "leaders"]
 summary: "**身份**: Google/Alphabet CEO。"
 created: 2026-05-31

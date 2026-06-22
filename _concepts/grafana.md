@@ -1,6 +1,6 @@
 ---
 title: "Grafana"
-category: concept
+category: -concepts
 tags: ["grafana", "observability", "visualization", "dashboard", "monitoring", "metrics", "logs", "traces"]
 relationships:
   - target: "_concepts/prometheus"

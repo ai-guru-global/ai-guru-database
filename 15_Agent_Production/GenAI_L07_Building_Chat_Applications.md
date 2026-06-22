@@ -1,6 +1,6 @@
 ---
 title: "构建生成式 AI 驱动的聊天应用"
-category: "course"
+category: "15-agent-production"
 tags: ["microsoft-genai-course", "chat-applications", "responsible-ai", "ux-design", "dsl-models", "fine-tuning"]
 summary: "学习构建AI驱动的聊天应用，涵盖架构设计、SDK/API集成、用户体验优化、领域特定模型微调和负责任AI六项原则的全面实践指南。"
 created: "2026-06-12"

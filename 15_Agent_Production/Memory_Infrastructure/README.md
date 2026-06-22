@@ -1,6 +1,6 @@
 ---
 title: '记忆与基础设施'
-category: '13-agent-production-memory-infrastructure'
+category: '15-agent-production-memory-infrastructure'
 tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: '> Agent 的"智商"不仅取决于 LLM，还取决于 RAG 检索质量、记忆系统设计和知识管理架构。'
 created: '2026-05-31'

@@ -1,6 +1,6 @@
 ---
 title: 视觉生成模型
-category: concepts
+category: -concepts
 tags: ["computer-vision", "generative-models", "gan", "diffusion", "stable-diffusion", "image-generation"]
 aliases: [Generative multimodal-vision world-models-jepa, 生成模型, GAN, multimodal-models Models, 扩散模型]
 relationships:

@@ -1,6 +1,6 @@
 ---
 title: "LMDeploy: InternLM 高性能推理引擎"
-category: "09-deployment-inference"
+category: "10-deployment-inference"
 tags: ["deployment", "inference", "serving", "lmdeploy", "turbomind", "internlm", "chinese", "awq"]
 summary: "> **一句话理解**: LMDeploy 是上海人工智能实验室出品的高性能 LLM 推理引擎——TurboMind 加速、中文场景优化、AWQ 量化，是中文业务与国产硬件部署的重要选择。"
 created: "2026-05-31"

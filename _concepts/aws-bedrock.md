@@ -1,6 +1,6 @@
 ---
 title: "AWS Bedrock"
-category: concept
+category: -concepts
 tags: ["aws-bedrock", "aws", "cloud", "foundation-model", "api", "serverless", "inference"]
 relationships:
   - target: "_concepts/cloud-ai-platform"

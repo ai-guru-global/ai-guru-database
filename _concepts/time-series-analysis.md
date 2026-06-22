@@ -1,6 +1,6 @@
 ---
 title: 时间序列分析
-category: concepts
+category: -concepts
 tags: ["machine-learning", "time-series", "arima", "forecasting", "seasonality", "prophet", "sarima"]
 aliases: [Time Series Analysis, 时序分析, 时间序列预测]
 relationships:

@@ -1,6 +1,6 @@
 ---
 title: AI Gateway
-category: 14-ai-gateway
+category: 12-architecture-infrastructure-ai-gateway
 tags: ["ai-gateway", "api-management", "routing", "litellm"]
 summary: "> AI 网关是 LLM 请求的统一入口，提供路由、限流、缓存、成本控制等企业级能力。"
 created: 2026-05-31

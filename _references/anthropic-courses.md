@@ -1,6 +1,6 @@
 ---
 title: "Anthropic 官方教程"
-category: "references"
+category: "-references"
 tags: ["anthropic", "claude", "course", "official"]
 summary: "Anthropic 官方提供的 Claude API 教程,覆盖提示工程、工具使用、RAG 等主题。"
 sources:

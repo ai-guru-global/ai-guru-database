@@ -1,6 +1,6 @@
 ---
 title: 推荐系统
-category: concepts
+category: -concepts
 tags: ["machine-learning", "recommendation", "collaborative-filtering", "content-based", "hybrid", "computer-vision", "matrix-factorization"]
 aliases: [Recommendation Systems, 推荐系统, RecSys]
 relationships:

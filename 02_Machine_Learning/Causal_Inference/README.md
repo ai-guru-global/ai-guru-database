@@ -1,6 +1,6 @@
 ---
 title: "因果推断 (Causal Inference)"
-category: "02-machine-learning"
+category: "02-machine-learning-causal-inference"
 tags: ["causal-inference", "causality", "do-calculus", "SCM"]
 summary: "> 从「相关」到「因果」——do-演算、因果图、因果发现，让AI真正理解世界。"
 created: 2026-06-04

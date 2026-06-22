@@ -1,6 +1,6 @@
 ---
 title: Research Scientist 按公司/级别区分的题库
-category: 23-interviews-research-scientist
+category: 21-interviews-research-scientist
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "如何衡量研究对产品与平台的长期价值？"
 created: 2026-05-31

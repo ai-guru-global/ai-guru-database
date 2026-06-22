@@ -1,6 +1,6 @@
 ---
 title: Inference Performance Gaps
-category: concepts
+category: -concepts
 tags: [inference, performance, gaps, edge, heterogeneous, energy, multi-tenant]
 relationships:
   - target: "_concepts/inference-performance"

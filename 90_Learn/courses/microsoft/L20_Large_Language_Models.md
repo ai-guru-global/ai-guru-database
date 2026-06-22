@@ -1,6 +1,6 @@
 ---
 title: "L20 - 大语言模型提示编程与少样本任务"
-category: "90-learn"
+category: "90-learn-courses-microsoft"
 tags: ["microsoft-ai-course", "nlp", "llm", "prompt-engineering", "few-shot-learning"]
 summary: "本课介绍预训练大语言模型（GPT 系列）的核心思想：通过自监督语言建模习得通用语言能力，并借助提示工程（Prompt Engineering）与少样本示例完成多种下游任务。"
 source_url: "https://raw.githubusercontent.com/microsoft/AI-For-Beginners/main/lessons/5-NLP/20-LangModels/README.md"

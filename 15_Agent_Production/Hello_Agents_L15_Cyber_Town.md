@@ -1,6 +1,6 @@
 ---
 title: "Hello-Agents L15：构建赛博小镇（AI NPC + 游戏引擎 + 记忆好感度）"
-category: "13-agent-production"
+category: "15-agent-production"
 tags:
   - ai-agents
   - ai-npc

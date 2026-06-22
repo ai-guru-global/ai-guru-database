@@ -1,6 +1,6 @@
 ---
 title: Robotics Engineer (AI) 面试题实例答案
-category: 23-interviews-robotics-engineer
+category: 21-interviews-robotics-engineer
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "**答**：根据传感器特点建立时间同步与坐标系校准，使用滤波或图优化融合多源信息，保障实时性与鲁棒性。"
 created: 2026-05-31

@@ -1,6 +1,6 @@
 ---
 title: "MiniMax (稀宇科技): Lightning Attention 驱动的 AI 全栈平台"
-category: "04-nlp-llms-chinese-llm-ecosystem"
+category: "05-nlp-llms-chinese-llm-ecosystem"
 tags: ["nlp", "llm", "minimax", "lightning-attention", "moe", "chinese-llm", "video-generation", "hailuo", "multimodal", "minimax-m3", "msa", "native-multimodal"]
 summary: "> **一句话理解**: MiniMax 就像一支拥有「闪电侠速度」的 AI 军团——从 Lightning Attention (O(n) 复杂度) 到 MiniMax-M3 旗舰 (原生多模态 + MSA 稀疏注意力 + 1M 上下文 + ~428B/~23B MoE)，让百万 token 长程 Agent 与 coding/cowork 成为现实，同时在文本、视频、语音、音乐四大战场全面出击。"
 created: "2026-06-01"

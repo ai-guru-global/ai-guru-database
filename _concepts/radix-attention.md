@@ -1,6 +1,6 @@
 ---
 title: RadixAttention
-category: concepts
+category: -concepts
 tags: [inference, kv-cache, prefix-caching, sglang, radix-tree]
 relationships:
   - target: "_concepts/kv-cache"

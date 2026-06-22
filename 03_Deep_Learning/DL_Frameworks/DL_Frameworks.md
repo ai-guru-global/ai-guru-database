@@ -1,6 +1,6 @@
 ---
 title: "深度学习框架概览 (DL Frameworks)"
-category: 03-deep-learning
+category: 03-deep-learning-dl-frameworks
 tags: ["deep-learning", "frameworks", "pytorch", "tensorflow", "jax"]
 summary: "主流深度学习框架的对比与选型指南——PyTorch、TensorFlow、JAX、Keras 各有生态和适用场景。"
 created: 2026-06-15

@@ -1,6 +1,6 @@
 ---
 title: "Build a Reasoning Model"
-category: "references"
+category: "-references-books"
 tags: ["book", "learning-resource"]
 summary: "从零构建推理模型.作者:Manning."
 sources:

@@ -1,6 +1,6 @@
 ---
 title: "图解 Transformer (Jay Alammar)"
-category: "references"
+category: "-references"
 tags: ["transformer", "attention", "article", "visualization", "classic"]
 summary: "Jay Alammar 的经典图解 Transformer 文章,用可视化方式解释自注意力、编码器-解码器等核心概念,Transformer 入门必读。"
 sources:

@@ -1,6 +1,6 @@
 ---
 title: AI 工作流速成指南
-category: 13-agent-production-agent-workflow
+category: 15-agent-production-agent-workflow
 tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> 🎯 **目标**：理解如何将 AI 组件编排成可靠运行的生产流水线和自动化工作流。"
 created: 2026-05-31

@@ -1,6 +1,6 @@
 ---
 title: 模型网关 (Model Gateway / AI Gateway)
-category: concepts
+category: -concepts
 tags: [model-gateway, ai-gateway, load-balancing, routing, api-management, synapse]
 relationships:
   - target: "_concepts/llm-infrastructure"

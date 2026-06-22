@@ -1,6 +1,6 @@
 ---
 title: "GitHub Copilot 概览"
-category: "17-ai-coding"
+category: "16-ai-coding-tools"
 tags: ["tool", "ai-coding", "copilot", "github", "code-completion"]
 summary: "GitHub 出品的 AI 编程助手,基于 OpenAI 模型,提供实时代码补全、Chat 对话和 Agent 模式,是全球使用最广泛的 AI 编程工具。"
 sources:

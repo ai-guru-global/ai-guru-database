@@ -1,6 +1,6 @@
 ---
 title: "知识蒸馏 (Knowledge Distillation)"
-category: concept
+category: -concepts
 tags: ["distillation", "model-compression", "teacher-student", "logit-distillation", "deepseek"]
 relationships:
   - target: "_concepts/model-compression"

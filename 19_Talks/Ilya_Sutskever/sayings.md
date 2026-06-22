@@ -1,6 +1,6 @@
 ---
 title: Ilya Sutskever 关于 AI 的观点 (Ilya Sutskever on AI)
-category: 21-talks-ilya-sutskever
+category: 19-talks-ilya-sutskever
 tags: ["talks", "speeches", "insights", "leaders"]
 summary: "1. **“Alignment is the most important unsolved problem in AI.” / “对齐是 AI 中最重要且尚未解决的问题。”**"
 created: 2026-05-31

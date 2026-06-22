@@ -1,6 +1,6 @@
 ---
 title: "Learn Claude Code 课程映射：20 课 Harness 工程"
-category: 90-learn
+category: 90-learn-courses-share-ai
 tags: ["learning-paths", "claude-code", "agent-harness", "course-catalog", "ai-agents"]
 sources:
   - "https://github.com/shareAI-lab/learn-claude-code"

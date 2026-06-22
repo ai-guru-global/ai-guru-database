@@ -1,6 +1,6 @@
 ---
 title: "PyTorch 概览"
-category: "03-deep-learning"
+category: "03-deep-learning-dl-frameworks"
 tags: ["deep-learning", "framework", "neural-network", "tool"]
 summary: "Meta 出品的主流深度学习框架，动态计算图，研究社区首选"
 sources:

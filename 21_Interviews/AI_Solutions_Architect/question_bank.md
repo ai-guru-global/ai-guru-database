@@ -1,6 +1,6 @@
 ---
 title: AI Solutions Architect 题库
-category: 23-interviews-ai-solutions-architect
+category: 21-interviews-ai-solutions-architect
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "方案架构中性能、成本与风险如何权衡？"
 created: 2026-05-31

@@ -1,6 +1,6 @@
 ---
 title: "AI 金融应用场景深度解析"
-category: "20-ai-applications-industry"
+category: "18-ai-applications-industry-finance"
 tags: ["finance", "fintech", "application", "trading", "risk"]
 summary: "AI 在金融领域的核心应用:智能投顾、风控、反欺诈、量化交易、合规审查等场景的技术方案与落地实践。"
 sources:

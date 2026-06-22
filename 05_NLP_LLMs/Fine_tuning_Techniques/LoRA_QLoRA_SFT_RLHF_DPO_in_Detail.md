@@ -1,6 +1,6 @@
 ---
 title: "LoRA / QLoRA / SFT / RLHF / DPO 大白话详解"
-category: "04-nlp-llms-fine-tuning-techniques"
+category: "05-nlp-llms-fine-tuning-techniques"
 tags: ["nlp", "llm", "lora", "qlora", "sft", "rlhf", "dpo", "fine-tuning", "alignment", "peft"]
 summary: "> **一句话理解**: 把大模型微调的五个核心概念串成一条线——SFT 教它说话，RLHF/DPO 教它讨人喜欢，LoRA/QLoRA 让这一切能在普通显卡上跑起来。"
 created: "2026-06-16"

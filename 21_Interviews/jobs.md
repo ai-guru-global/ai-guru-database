@@ -1,6 +1,6 @@
 ---
 title: AI 相关岗位与工种清单 (AI Roles & Jobs)
-category: 23-interviews
+category: 21-interviews
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "本清单面向“AI 方向求职/转岗/晋升”的学习与面试准备，覆盖研究、工程、数据、产品与安全方向。每个岗位均提供对应面试准备建议（见子目录）。"
 created: 2026-05-31

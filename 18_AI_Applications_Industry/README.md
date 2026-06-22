@@ -1,6 +1,6 @@
 ---
 title: 13 - AI应用与行业融合
-category: 20-ai-applications-industry
+category: 18-ai-applications-industry
 tags: ["ai-applications", "industry", "finance", "healthcare"]
 summary: "本章节提供人工智能在各行业的应用现状、案例分析和融合趋势，覆盖10大行业的2025-2026最新数据与标杆案例。"
 created: 2026-05-31

@@ -1,6 +1,6 @@
 ---
 title: "Kyverno"
-category: concept
+category: -concepts
 tags: ["kyverno", "kubernetes", "policy", "security", "admission-control", "yaml", "cncf"]
 relationships:
   - target: "_concepts/policy-as-code"

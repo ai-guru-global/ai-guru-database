@@ -1,6 +1,6 @@
 ---
 title: Computer Vision Engineer 面试题实例答案
-category: 23-interviews-computer-vision-engineer
+category: 21-interviews-computer-vision-engineer
 tags: ["interviews", "career", "experience", "practitioners", "computer-vision"]
 summary: "**答**：优先增强数据与标注质量，使用更高分辨率输入或多尺度训练；模型层可引入 FPN、注意力与更合适的 anchor 配置；评测上使用分尺度 mAP 监控变化。"
 created: 2026-05-31

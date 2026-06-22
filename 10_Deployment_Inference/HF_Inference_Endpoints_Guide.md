@@ -1,6 +1,6 @@
 ---
 title: "Hugging Face Inference Endpoints：一键 Serverless 部署开源大模型"
-category: "09-deployment-inference"
+category: "10-deployment-inference"
 tags: ["deployment", "huggingface", "serverless", "inference-endpoints", "api"]
 summary: "> **一句话理解**: Hugging Face Inference Endpoints 是专为大模型设计的托管服务（PaaS），它让你只需点几下鼠标，就能把 Hub 上几百 GB 的开源模型变成高可用的生产级 API，按秒计费，免去运维 K8s 集群的折磨。"
 created: "2026-06-12"

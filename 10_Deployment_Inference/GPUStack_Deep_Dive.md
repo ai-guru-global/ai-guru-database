@@ -1,6 +1,6 @@
 ---
 title: "GPUStack: 开源 GPU 集群管理与模型服务平台"
-category: "09-deployment-inference"
+category: "10-deployment-inference"
 tags: ["deployment", "inference", "serving", "gpustack", "gpu-cluster", "maas", "vllm", "llama.cpp"]
 summary: "GPUStack 是面向企业级 AI 模型部署的开源 GPU 集群管理器（MaaS 平台），支持 NVIDIA/AMD/昇腾/摩尔线程等异构 GPU，通过 vLLM、SGLang、llama-box 等可插拔推理引擎提供 OpenAI 兼容的模型服务。"
 created: "2026-06-15"

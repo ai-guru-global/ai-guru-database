@@ -1,6 +1,6 @@
 ---
 title: Speculative Decoding (投机解码)
-category: concepts
+category: -concepts
 tags: [inference, speculative-decoding, mtp, acceleration]
 relationships:
   - target: "_concepts/model-deployment"

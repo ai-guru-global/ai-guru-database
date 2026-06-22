@@ -1,6 +1,6 @@
 ---
 title: "AI 编程 2026 全景指南"
-category: "17-ai-coding"
+category: "16-ai-coding"
 tags: ["ai-coding", "copilot", "cursor", "claude-code", "codex", "pair-programming"]
 summary: "2026 年 AI 编程工具全景:从代码补全到自主编程 Agent,对比 Cursor、Windsurf、Claude Code、Codex、GitHub Copilot 等主流方案。"
 sources:

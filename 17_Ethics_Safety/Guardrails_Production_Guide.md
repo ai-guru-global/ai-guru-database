@@ -1,6 +1,6 @@
 ---
 title: "AI 护栏 (Guardrails) 生产实践指南"
-category: "19-ethics-safety"
+category: "17-ethics-safety"
 tags: ["guardrails", "safety", "production", "nemo-guardrails", "guardrails-ai"]
 summary: "在生产环境中为 LLM 应用添加安全护栏:输入过滤、输出验证、主题限制、事实检查等技术方案与工具。"
 sources:

@@ -5,13 +5,13 @@ tags:
 - ai
 - ai-coding
 created: 2026-06-12
-category: 17-ai-coding
+category: 16-ai-coding-tools-opencode
 summary: ""
 ---
 title: TUI 定制：快捷键、主题与界面
 description: '**文档类型**: 定制指南 | **最后更新**: 2026-03 | **关键词**: OpenCode, TUI, Keybinds,
  Themes, Leader Key, Bubble Tea, tui.json, Custom Theme'
-category: ai-coding
+category: 16-ai-coding-tools-opencode
 tags:
 - ai
 - coding

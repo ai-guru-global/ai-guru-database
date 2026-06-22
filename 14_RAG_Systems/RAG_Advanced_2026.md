@@ -1,6 +1,6 @@
 ---
 title: 'RAG高级实践 2026年完全指南'
-category: '11-rag-systems'
+category: '14-rag-systems'
 tags: ["rag", "retrieval", "vector-database", "embedding"]
 summary: '> **一句话理解**: 2026年的RAG已从"向量搜索+LLM"的简单模式进化为精密工程——混合检索、智能重排、上下文压缩让准确率从60%提升至90%+，动态RAG甚至能自主决定何时停止检索。'
 created: '2026-05-31'

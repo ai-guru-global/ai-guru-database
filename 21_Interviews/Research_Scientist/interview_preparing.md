@@ -1,6 +1,6 @@
 ---
 title: Research Scientist 面试准备
-category: 23-interviews-research-scientist
+category: 21-interviews-research-scientist
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "**前沿研究**: 算法创新、理论分析与论文产出。"
 created: 2026-05-31

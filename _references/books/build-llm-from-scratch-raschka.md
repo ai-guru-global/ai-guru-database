@@ -1,6 +1,6 @@
 ---
 title: "Build a LLM from Scratch"
-category: "references"
+category: "-references-books"
 tags: ["book", "learning-resource"]
 summary: "从零构建 LLM,使用 PyTorch 实现 GPT 风格模型.作者:Sebastian Raschka."
 sources:

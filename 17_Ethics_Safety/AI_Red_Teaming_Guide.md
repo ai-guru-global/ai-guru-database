@@ -1,6 +1,6 @@
 ---
 title: "AI 红队测试完全指南"
-category: "19-ethics-safety"
+category: "17-ethics-safety"
 tags: ["red-teaming", "security", "safety", "adversarial", "testing"]
 summary: "AI 红队测试方法论:如何系统性地发现 LLM 应用的安全漏洞,含攻击向量、测试框架、防御策略。"
 sources:

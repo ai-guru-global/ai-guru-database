@@ -1,6 +1,6 @@
 ---
 title: 推理 Profiling 与 Benchmarking
-category: 09-deployment-inference
+category: 10-deployment-inference-inference-performance
 tags: [inference, profiling, benchmarking, performance, latency, throughput]
 summary: "> 如何公平、可复现地测量 LLM 推理性能，并用工具定位真正的瓶颈。"
 created: 2026-06-15

@@ -1,6 +1,6 @@
 ---
 title: "代码生成工作流"
-category: concepts
+category: -concepts
 tags: ["code-generation", "ai-coding", "workflow", "agent", "ci-cd", "software-engineering"]
 relationships:
   - target: "_concepts/code-generation"

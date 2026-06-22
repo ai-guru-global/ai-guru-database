@@ -1,6 +1,6 @@
 ---
 title: "Hugging Face 官方系统化课程：离线硬核知识点提取"
-category: "90-learn"
+category: "90-learn-courses-hugging-face"
 tags: ["learning-paths", "huggingface", "nlp", "rl", "audio", "course", "knowledge-extraction"]
 summary: "> **一句话理解**: 针对无法直接观看视频的离线内网环境，本文档将 Hugging Face 官方三大课程（NLP, 强化学习, 音频）中最底层的硬核数学直觉、算法原理与特征工程逻辑进行了文字化的提取与整理。"
 created: "2026-06-12"

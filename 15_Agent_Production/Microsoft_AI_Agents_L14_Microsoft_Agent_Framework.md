@@ -1,6 +1,6 @@
 ---
 title: "L14 Microsoft Agent Framework 深度：Agents / Threads / Middleware / Workflows"
-category: "13-agent-production"
+category: "15-agent-production"
 tags:
   - ai-agents
   - microsoft

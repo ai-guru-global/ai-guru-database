@@ -1,6 +1,6 @@
 ---
 title: Agent 生产部署 (Agent Production)
-category: 13-agent-production
+category: 15-agent-production
 tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> **一句话理解**: 从 Agent 原型到生产级系统，需要 Harness 工程、框架选型、平台部署、记忆架构、安全合规的完整工程体系。"
 created: 2026-05-31

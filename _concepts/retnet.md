@@ -1,6 +1,6 @@
 ---
 title: "RetNet"
-category: concepts
+category: -concepts
 tags: ["retnet", "transformer-alternative", "long-context", "architecture", "rnnt"]
 relationships:
   - target: "_concepts/transformer-architecture"

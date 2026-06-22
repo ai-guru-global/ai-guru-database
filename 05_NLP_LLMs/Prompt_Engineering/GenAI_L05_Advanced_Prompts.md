@@ -1,6 +1,6 @@
 ---
 title: "高级提示技术"
-category: "course"
+category: "05-nlp-llms-prompt-engineering"
 tags: ["microsoft-genai-course", "prompt-engineering", "advanced-prompting", "chain-of-thought", "self-refine", "temperature"]
 summary: "深入讲解七种高级提示技术：零样本、少样本、思维链、生成知识、从少到多、自我优化、助产式提示，以及温度参数对输出确定性的控制，含完整代码示例。"
 created: "2026-06-12"

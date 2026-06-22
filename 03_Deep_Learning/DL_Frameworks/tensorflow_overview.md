@@ -1,6 +1,6 @@
 ---
 title: "TensorFlow 概览"
-category: "03-deep-learning"
+category: "03-deep-learning-dl-frameworks"
 tags: ["deep-learning", "framework", "neural-network", "tool"]
 summary: "Google 出品的深度学习框架，生产部署生态完善"
 sources:

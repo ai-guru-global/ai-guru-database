@@ -1,6 +1,6 @@
 ---
 title: "HAMi 问题排查与故障解决指南"
-category: "16-ai-ops"
+category: "13-ai-ops"
 tags: ["hami", "troubleshooting", "gpu-virtualization", "kubernetes", "ops", "debugging", "vgpu"]
 summary: "> **一句话理解**: 本文档汇总 HAMi 在生产环境中最常见的安装、调度、隔离、兼容性问题，提供从症状识别、日志定位到修复措施的完整排查路径。"
 created: "2026-06-16"

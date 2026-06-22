@@ -1,6 +1,6 @@
 ---
 title: 通用对话/知识 Agent 测评详情
-category: 13-agent-production-16-agent-evaluation-cloud-agent-evaluation
+category: 15-agent-production-agent-evaluation-cloud-agent-evaluation
 tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> ChatGPT、Claude、Gemini、Kimi、通义千问、DeepSeek 六大通用对话 Agent 的深度测评"
 created: 2026-05-31

@@ -1,6 +1,6 @@
 ---
 title: "RAGAS: RAG 评估框架"
-category: "15-testing"
+category: "09-testing"
 tags: ["testing", "ai-testing", "prompt-testing", "evaluation", "rag"]
 summary: "> **一句话理解**: RAGAS 是一个专门评估 RAG 系统质量的开源框架——通过多维度指标（Faithfulness、Answer Relevancy、Context Precision 等）量化评估你的 RAG 应用。"
 created: "2026-05-31"

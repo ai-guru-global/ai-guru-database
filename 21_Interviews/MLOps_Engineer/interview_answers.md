@@ -1,6 +1,6 @@
 ---
 title: MLOps Engineer 面试题实例答案
-category: 23-interviews-mlops-engineer
+category: 21-interviews-mlops-engineer
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "**答**：定义模型注册、评测门禁、灰度发布、监控与回滚流程；通过 CI/CD 自动化并保留版本可追踪性；上线后持续监控性能、漂移与成本。"
 created: 2026-05-31

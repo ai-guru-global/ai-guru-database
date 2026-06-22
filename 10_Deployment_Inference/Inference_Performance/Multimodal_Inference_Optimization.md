@@ -1,6 +1,6 @@
 ---
 title: 多模态推理优化
-category: 09-deployment-inference
+category: 10-deployment-inference-inference-performance
 tags: [inference, multimodal, vlm, vision-encoder, performance]
 summary: "> VLM 推理不仅要跑 LLM，还要跑视觉编码器，prefill 阶段压力大，需要专门的优化策略。"
 created: 2026-06-15

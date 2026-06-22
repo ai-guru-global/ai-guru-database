@@ -1,6 +1,6 @@
 ---
 title: 'Vibe Coding 傻瓜指南 (Vibe Coding for Dummies)'
-category: '17-ai-coding-03-practice'
+category: '16-ai-coding-practice'
 tags: ["ai-coding", "code-generation", "cursor", "github-copilot"]
 summary: '> **一句话理解**: Vibe Coding 就是用"说人话"的方式让 AI 帮你写代码——你不是打字员，你是导演，AI 是你的编剧和演员。'
 created: '2026-05-31'

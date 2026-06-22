@@ -1,6 +1,6 @@
 ---
 title: "Feast: 特征存储平台"
-category: "16-ai-ops"
+category: "11-mlops-pipeline"
 tags: ["ai-ops", "observability", "monitoring", "incident-response"]
 summary: "> **一句话理解**: Feast 是开源特征存储——管理 ML 特征、在线/离线一致、特征复用、团队共享，ML 平台的特征工程基础设施。"
 created: "2026-05-31"

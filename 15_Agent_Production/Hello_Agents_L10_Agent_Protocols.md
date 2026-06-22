@@ -1,6 +1,6 @@
 ---
 title: "Hello-Agents L10：智能体通信协议（MCP / A2A / ANP）"
-category: "13-agent-production-agent-protocols"
+category: "15-agent-production"
 tags:
   - ai-agents
   - mcp

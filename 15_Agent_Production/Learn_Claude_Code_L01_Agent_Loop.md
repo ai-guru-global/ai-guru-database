@@ -1,6 +1,6 @@
 ---
 title: "Learn Claude Code L01：Agent Loop — 一个循环就够了"
-category: 13-agent-production
+category: 15-agent-production
 tags:
   - ai-agents
   - agent-harness

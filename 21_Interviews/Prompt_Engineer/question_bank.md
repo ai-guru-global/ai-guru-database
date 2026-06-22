@@ -1,6 +1,6 @@
 ---
 title: Prompt Engineer 题库
-category: 23-interviews-prompt-engineer
+category: 21-interviews-prompt-engineer
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "常见提示词模式有哪些？"
 created: 2026-05-31

@@ -1,6 +1,6 @@
 ---
 title: "AI 伦理与安全速览 (AI Ethics & Safety in a Nutshell)"
-category: 19-ethics-safety
+category: 17-ethics-safety
 tags: [ai-safety, alignment, rlhf, red-teaming, bias, privacy, interpretability]
 summary: "一张图看懂 AI 伦理与安全全貌：对齐、鲁棒性、可解释性三大支柱，加上红队实战、隐私保护、治理合规、安全评测的工程方法论。本文以速览形式串联整个 19_Ethics_Safety 章节的核心知识。"
 created: 2026-06-05

@@ -1,6 +1,6 @@
 ---
 title: Jensen Huang 简介 (Jensen Huang)
-category: 21-talks
+category: 19-talks-jensen-huang
 tags: ["talks", "speeches", "insights", "leaders", "NVIDIA", "GPU", "accelerated-computing", "physical-AI"]
 summary: "NVIDIA 联合创始人兼 CEO，用 GPU 重新定义了 AI 计算基础设施的芯片 visionary。"
 created: 2026-05-31

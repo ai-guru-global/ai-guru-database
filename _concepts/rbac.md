@@ -1,6 +1,6 @@
 ---
 title: "RBAC 基于角色的访问控制"
-category: concept
+category: -concepts
 tags: ["rbac", "access-control", "security", "authentication", "authorization", "multi-tenant"]
 relationships:
   - target: "_concepts/ai-architecture"

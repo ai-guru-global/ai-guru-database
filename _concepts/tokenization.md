@@ -1,6 +1,6 @@
 ---
 title: "分词与 Tokenization"
-category: concept
+category: -concepts
 tags: ["tokenization", "BPE", "sentencepiece", "tokenizer", "vocabulary", "subword"]
 relationships:
   - target: "_concepts/information-theory"

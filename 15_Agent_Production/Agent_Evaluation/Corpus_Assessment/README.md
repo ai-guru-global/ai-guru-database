@@ -1,6 +1,6 @@
 ---
 title: Corpus Assessment
-category: 13-agent-production-16-agent-evaluation-corpus-assessment
+category: 15-agent-production-agent-evaluation-corpus-assessment
 tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> 语料库/知识库质量评估文档目录"
 created: 2026-05-31

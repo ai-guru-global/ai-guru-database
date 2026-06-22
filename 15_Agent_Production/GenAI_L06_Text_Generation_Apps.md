@@ -1,6 +1,6 @@
 ---
 title: "构建文本生成应用程序"
-category: "course"
+category: "15-agent-production"
 tags: ["microsoft-genai-course", "text-generation", "prompt-engineering", "openai-api", "temperature", "tokens"]
 summary: "学习使用OpenAI库构建文本生成应用，掌握提示词、温度和令牌等核心概念，通过食谱生成器案例实现从简单提示到多轮交互的完整开发流程。"
 created: "2026-06-12"

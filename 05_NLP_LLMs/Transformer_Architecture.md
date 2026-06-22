@@ -1,6 +1,6 @@
 ---
 title: "Transformer 架构详解"
-category: 04-nlp-llms-transformer
+category: 05-nlp-llms
 tags: ["transformer", "architecture", "encoder-decoder", "positional-encoding"]
 summary: "> **一句话理解**: Transformer 用 Self-Attention 取代循环和卷积，让序列中任意两个位置都能直接交互——并行训练、全局感知、高度可扩展，成为当代 AI 的统一基础架构。"
 created: 2026-06-12

@@ -1,6 +1,6 @@
 ---
 title: 04 自然语言处理与大模型 (NLP & LLMs)
-category: 04-nlp-llms
+category: 05-nlp-llms
 tags: ["nlp", "llm", "transformer", "gpt", "bert"]
 summary: "本章系统讲解自然语言处理的现代范式，从序列模型（RNN/LSTM）演进到 Transformer 架构，再到大语言模型（GPT/BERT）、微调技术（LoRA/QLoRA）和提示词工程。这是当前 AI 应用最活跃的领域。"
 created: 2026-05-31

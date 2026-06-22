@@ -1,6 +1,6 @@
 ---
 title: "Triton Inference Server 深度解析: NVIDIA 多模型推理服务平台"
-category: "09-deployment-inference"
+category: "10-deployment-inference"
 tags: ["triton", "nvidia", "inference-server", "model-serving", "tensorrt", "onnx", "pytorch", "dynamic-batching", "kserve"]
 summary: "> **一句话理解**: Triton Inference Server 是 NVIDIA 开源的高性能推理服务框架，支持 TensorRT、PyTorch、ONNX、TensorFlow 等多种后端，提供动态批处理、并发模型执行、模型集成和企业级可观测，是多模型统一服务的主流选择。"
 created: "2026-06-16"

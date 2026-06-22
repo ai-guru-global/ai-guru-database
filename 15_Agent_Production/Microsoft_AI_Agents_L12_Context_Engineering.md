@@ -1,6 +1,6 @@
 ---
 title: "L12 上下文工程：四类上下文、六大管理策略与四大失败模式"
-category: "13-agent-production"
+category: "15-agent-production"
 tags:
   - ai-agents
   - microsoft

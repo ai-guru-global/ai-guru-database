@@ -1,6 +1,6 @@
 ---
 title: Cloud Agent Evaluation Framework - Demo
-category: 13-agent-production-16-agent-evaluation-demo
+category: 15-agent-production-agent-evaluation-demo
 tags: ["ai-agents", "agent-framework", "production", "langgraph", "model-evaluation"]
 summary: "> CAPER 五维评估框架的可运行 Demo，包含评估引擎、测试数据集和模拟结果"
 created: 2026-05-31

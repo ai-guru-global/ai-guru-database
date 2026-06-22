@@ -1,6 +1,6 @@
 ---
 title: Diffusion Models 深度解读 (从 DDPM 到 Stable Diffusion 再到 DiT)
-category: 22-papers
+category: 20-papers
 tags: ["computer-vision", "diffusion", "generative-models", "stable-diffusion"]
 summary: "扩散模型就像\"从噪声中雕刻出图像\"——先给图片逐步添加噪声直到变成纯噪声，然后学习这个过程的逆过程，从纯噪声中一步步\"雕刻\"出清晰图片，最终击败 GAN 成为生成式 AI 的新王者。"
 created: 2026-05-31

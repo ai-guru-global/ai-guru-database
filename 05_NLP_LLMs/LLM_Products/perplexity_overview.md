@@ -1,6 +1,6 @@
 ---
 title: "Perplexity AI 概览"
-category: "04-nlp-llms"
+category: "05-nlp-llms-llm-products"
 tags: ["llm", "search", "product", "ai-assistant", "research"]
 summary: "结合 LLM 与实时网络搜索的 AI 搜索引擎,提供带引用来源的精准回答,是信息检索的新范式。"
 sources:

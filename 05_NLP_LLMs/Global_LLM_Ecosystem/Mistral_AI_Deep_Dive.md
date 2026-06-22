@@ -1,6 +1,6 @@
 ---
 title: "Mistral AI 技术深度解析"
-category: 04-nlp-llms-global-llm
+category: 05-nlp-llms-global-llm-ecosystem
 tags: [mistral-ai, mixtral, moe, sliding-window-attention, gqa, codestral, pixtral, voxtral, open-weight, european-ai, mamba-ssm, mistral-3]
 summary: "全面剖析 Mistral AI 从 7B Dense 到 Mistral 3 旗舰 675B MoE 的完整技术演进：Sliding Window Attention (SWA)、Grouped Query Attention (GQA)、开源 MoE 革命 (Mixtral)、Codestral 代码模型、Mamba/SSM 架构探索以及多模态生态 (Pixtral, Voxtral, OCR)。"
 created: 2026-06-02

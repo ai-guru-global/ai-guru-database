@@ -1,6 +1,6 @@
 ---
 title: "Microsoft Generative AI For Beginners"
-category: "references"
+category: "-references"
 tags: ["course", "microsoft", "generative-ai", "external-source"]
 summary: "Microsoft 官方开源的 21 课生成式 AI 初学者课程引用索引。完整课程表与章节映射见 90_Learn/Microsoft_GenAI_For_Beginners。"
 created: "2026-06-12"

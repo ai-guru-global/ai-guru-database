@@ -1,6 +1,6 @@
 ---
 title: "ApacheCN AiLearning 学习指南"
-category: "90-learn"
+category: "90-learn-courses-apachecn"
 tags: ["learning-paths", "apachecn", "ailearning", "course-catalog", "data-analysis", "linear-algebra", "machine-learning", "pytorch", "tensorflow", "nlp"]
 summary: "ApacheCN AiLearning 主线的学习指南，将数据分析、线性代数、机器学习、PyTorch、TensorFlow 2.x、NLP 等目录映射到本库章节。"
 created: "2026-06-12"

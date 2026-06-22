@@ -1,6 +1,6 @@
 ---
 title: Scoring Rubrics
-category: 13-agent-production-16-agent-evaluation-rubrics
+category: 15-agent-production-agent-evaluation-rubrics
 tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> Detailed scoring guides for consistent agent evaluation"
 created: 2026-05-31

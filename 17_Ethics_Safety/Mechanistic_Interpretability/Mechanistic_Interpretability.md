@@ -1,6 +1,6 @@
 ---
 title: '机械可解释性 (Mechanistic Interpretability) 2026'
-category: '19-ethics-safety-mechanistic-interpretability'
+category: '17-ethics-safety-mechanistic-interpretability'
 tags: ["ai-ethics", "safety", "alignment", "red-teaming"]
 summary: '> **一句话理解**: 机械可解释性是AI安全的"逆向工程"——通过理解神经网络内部的具体计算机制，回答"这个模型为什么会这样做"，而不只是"这个模型做了什么"。'
 created: '2026-05-31'

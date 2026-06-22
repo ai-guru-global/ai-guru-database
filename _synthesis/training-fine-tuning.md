@@ -1,6 +1,6 @@
 ---
 title: 模型训练 × 微调技术
-category: synthesis
+category: -synthesis
 tags: ["model-training", "fine-tuning", "lora", "deepspeed", "fsdp", "optimization", "peft"]
 sources: [_concepts/model-training.md, _concepts/fine-tuning-techniques.md]
 created: 2026-05-31T21:30:00+08:00

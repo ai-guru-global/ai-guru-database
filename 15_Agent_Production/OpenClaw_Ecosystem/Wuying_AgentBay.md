@@ -1,6 +1,6 @@
 ---
 title: "Wuying AgentBay: Alibaba Cloud's AI Agent Infrastructure"
-category: "13-agent-production-23-openclaw-ecosystem"
+category: "15-agent-production-openclaw-ecosystem"
 tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "**Wuying AgentBay** is Alibaba Cloud's cloud-native automation execution platform designed specifically for AI Agents. It provides a secure, serverless cloud environment where AI a"
 created: "2026-05-31"

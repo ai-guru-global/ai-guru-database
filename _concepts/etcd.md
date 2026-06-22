@@ -1,6 +1,6 @@
 ---
 title: "etcd"
-category: concept
+category: -concepts
 tags: ["etcd", "distributed-database", "key-value", "kubernetes", "consensus", "raft", "cncf"]
 relationships:
   - target: "_concepts/kubernetes"

@@ -1,6 +1,6 @@
 ---
 title: "AI 可观测性 2026 完全指南"
-category: "16-ai-ops"
+category: "11-mlops-pipeline"
 tags: ["observability", "monitoring", "langfuse", "langsmith", "tracing", "ai-ops"]
 summary: "LLM 应用的可观测性体系:追踪、监控、评估、成本分析,含 Langfuse/LangSmith/Helicone 等工具对比。"
 sources:

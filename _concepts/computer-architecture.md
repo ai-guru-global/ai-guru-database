@@ -1,6 +1,6 @@
 ---
 title: "计算机体系结构 (Computer Architecture)"
-category: concepts
+category: -concepts
 tags: ["computer-architecture", "gpu", "cpu", "tpu", "ai-hardware"]
 summary: "计算机体系结构是 AI 训练与推理的物理基础——从 CPU 到 GPU 到 TPU，硬件架构决定了 AI 系统的性能天花板。"
 created: 2026-06-12

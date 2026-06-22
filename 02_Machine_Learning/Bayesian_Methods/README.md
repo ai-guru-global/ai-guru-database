@@ -1,6 +1,6 @@
 ---
 title: "贝叶斯方法 (Bayesian Methods)"
-category: "02-machine-learning"
+category: "02-machine-learning-bayesian-methods"
 tags: ["bayesian", "probabilistic-programming", "MCMC", "variational-inference"]
 summary: "> 贝叶斯方法让AI量化不确定性——先验+似然=后验，从点估计到概率思维的范式转变。"
 created: 2026-06-04

@@ -1,6 +1,6 @@
 ---
 title: AI 伦理与安全速成指南
-category: 19-ethics-safety
+category: 17-ethics-safety
 tags: ["ai-ethics", "safety", "alignment", "red-teaming"]
 summary: "> **一句话理解**: AI 伦理与安全就像给一辆超级跑车安装刹车、安全带和交通规则——不是为了限制速度，而是确保它能安全、可靠地到达正确目的地。"
 created: 2026-05-31

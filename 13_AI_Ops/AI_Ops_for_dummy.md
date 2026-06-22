@@ -1,6 +1,6 @@
 ---
 title: AI Ops 入门指南 (for Dummies)
-category: 16-ai-ops
+category: 13-ai-ops
 tags: ["ai-ops", "observability", "monitoring", "incident-response"]
 summary: "> 用最简单的语言解释什么是 AI Ops，以及它如何让运维工作变得更轻松。"
 created: 2026-05-31

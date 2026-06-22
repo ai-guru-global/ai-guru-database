@@ -1,6 +1,6 @@
 ---
 title: "信息论基础: 从香农熵到 LLM 的交叉熵损失"
-category: "01-fundamentals"
+category: "01-fundamentals-information-theory"
 tags: ["information-theory", "entropy", "KL-divergence", "cross-entropy", "mutual-information", "data-compression", "channel-coding"]
 summary: "> **一句话理解**: 信息论是AI的数学灵魂——交叉熵是几乎所有分类模型的损失函数，KL散度衡量两个分布的距离，互信息发现特征与标签的关联，没有信息论就没有现代机器学习。"
 created: 2026-06-04

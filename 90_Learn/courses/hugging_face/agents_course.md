@@ -1,6 +1,6 @@
 ---
 title: "HuggingFace AI Agents 课程"
-category: "90-learn-courses"
+category: "90-learn-courses-hugging-face"
 tags: ["course", "huggingface", "ai-agents", "smolagents"]
 summary: "HuggingFace 官方 AI Agents 课程——使用 smolagents 构建生产级智能体。"
 created: "2026-06-12"

@@ -1,6 +1,6 @@
 ---
 title: "构建低代码 AI 应用程序"
-category: "course"
+category: "18-ai-applications-industry"
 tags: ["microsoft-genai-course", "low-code", "power-platform", "copilot", "ai-builder", "dataverse"]
 summary: "学习使用微软Power Platform和Copilot构建低代码AI应用，涵盖Power Apps、Power Automate、Dataverse和AI Builder的完整实践指南。"
 created: "2026-06-12"

@@ -1,6 +1,6 @@
 ---
 title: "你的第一个神经网络: 用 PyTorch 训练图像分类器"
-category: 03-deep-learning
+category: 03-deep-learning-neural-network-core
 tags: ["deep-learning", "neural-network", "pytorch", "beginner", "tutorial", "cnn", "image-classification"]
 summary: "从感知机到卷积神经网络的动手实战。使用 PyTorch 搭建并训练一个能识别手写数字 (MNIST) 的神经网络，理解前向传播、反向传播、损失函数和优化器的本质。"
 created: 2026-06-01

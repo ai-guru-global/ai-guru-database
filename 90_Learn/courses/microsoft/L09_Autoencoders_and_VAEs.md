@@ -1,6 +1,6 @@
 ---
 title: "L09 - 自编码器与变分自编码器VAE"
-category: "90-learn"
+category: "90-learn-courses-microsoft"
 tags: ["microsoft-ai-course", "computer-vision", "generative-models", "autoencoders", "vae"]
 summary: "本课介绍自编码器（Autoencoder, AE）与变分自编码器（Variational Autoencoder, VAE），讲解如何在没有标签的情况下训练神经网络学习图像的紧凑表示，并用于降噪、超分辨率与图像生成。"
 source_url: "https://raw.githubusercontent.com/microsoft/AI-For-Beginners/main/lessons/4-ComputerVision/09-Autoencoders/README.md"

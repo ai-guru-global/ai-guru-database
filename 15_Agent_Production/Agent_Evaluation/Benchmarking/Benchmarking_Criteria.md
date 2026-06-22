@@ -1,6 +1,6 @@
 ---
 title: Benchmarking Criteria
-category: 13-agent-production-16-agent-evaluation-benchmarking
+category: 15-agent-production-agent-evaluation-benchmarking
 tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> Comprehensive evaluation criteria for AI agent assessment"
 created: 2026-05-31

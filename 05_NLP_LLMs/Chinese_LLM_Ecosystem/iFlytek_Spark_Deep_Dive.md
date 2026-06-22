@@ -1,6 +1,6 @@
 ---
 title: "讯飞星火 (Spark): 语音AI龙头的大语言模型之路"
-category: "04-nlp-llms-chinese-llm-ecosystem"
+category: "05-nlp-llms-chinese-llm-ecosystem"
 tags: ["nlp", "llm", "iflytek", "spark", "chinese-llm", "speech-ai", "education", "huawei-ascend"]
 summary: "> **一句话理解**: 科大讯飞以语音 AI 起家，星火大模型融合语音与文本双模态，在教育、医疗场景深耕，并与华为昇腾生态深度合作构建国产算力链路。"
 created: "2026-06-12"

@@ -1,6 +1,6 @@
 ---
 title: "集成函数调用"
-category: "course"
+category: "15-agent-production"
 tags: ["microsoft-genai-course", "function-calling", "azure-openai", "structured-output", "api-integration"]
 summary: "学习使用Azure OpenAI函数调用功能实现结构化响应、外部API集成和工具调用，构建具备外部数据访问能力的完整AI应用。"
 created: "2026-06-12"

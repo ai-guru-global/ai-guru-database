@@ -1,6 +1,6 @@
 ---
 title: '微调技术 (Fine-tuning Techniques)'
-category: '04-nlp-llms-fine-tuning-techniques'
+category: '05-nlp-llms-fine-tuning-techniques'
 tags: ["nlp", "llm", "transformer", "gpt", "bert"]
 summary: '> **一句话理解**: 微调就像给已经受过通识教育的大学生进行"专业培训"——不是从零教起(预训练已完成),而是针对特定技能(下游任务)进行强化训练,既省时间又保留了原有知识。'
 created: '2026-05-31'

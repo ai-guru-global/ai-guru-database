@@ -1,6 +1,6 @@
 ---
 title: "Axolotl: 开源微调工具"
-category: "04-nlp-llms-fine-tuning-techniques"
+category: "05-nlp-llms-fine-tuning-techniques"
 tags: ["nlp", "llm", "transformer", "gpt", "bert"]
 summary: "> **一句话理解**: Axolotl 是开源微调工具——支持全参数/LoRA/QLoRA 微调、多框架兼容、分布式训练，AI 开发者微调的首选。"
 created: "2026-05-31"

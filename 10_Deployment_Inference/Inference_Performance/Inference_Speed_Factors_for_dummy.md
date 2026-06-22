@@ -1,6 +1,6 @@
 ---
 title: 决定模型推理速度的要素（大白话版）
-category: 09-deployment-inference
+category: 10-deployment-inference-inference-performance
 tags: [inference, performance, latency, throughput, beginner]
 summary: "> 用生活化的大白话解释：到底是什么决定了大模型推理快不快。"
 created: 2026-06-15

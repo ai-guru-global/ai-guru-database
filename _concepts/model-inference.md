@@ -1,6 +1,6 @@
 ---
 title: 模型推理原理 (Model Inference)
-category: concepts
+category: -concepts
 tags: [inference, autoregressive, transformer, next-token-prediction, decoding]
 relationships:
   - target: "_concepts/model-deployment"

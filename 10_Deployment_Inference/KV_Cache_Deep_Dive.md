@@ -1,6 +1,6 @@
 ---
 title: KV Cache 深度研究：从原理到工程实践
-category: 09-deployment-inference
+category: 10-deployment-inference
 tags: [kv-cache, attention, inference-optimization, long-context, quantization]
 summary: 由浅入深拆解 LLM 推理中的 KV Cache：从自回归冗余、显存公式、生命周期，到 PagedAttention、MQA/GQA/MLA、KV 量化、Token 驱逐与生产框架实现。
 created: 2026-06-15

@@ -1,6 +1,6 @@
 ---
 title: 无监督学习
-category: concepts
+category: -concepts
 tags: ["machine-learning", "unsupervised", "clustering", "pca", "dimensionality-reduction", "tsne", "dbscan"]
 aliases: [Unsupervised Learning]
 relationships:

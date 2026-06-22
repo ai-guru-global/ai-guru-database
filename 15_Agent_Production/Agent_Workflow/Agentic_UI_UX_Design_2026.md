@@ -1,6 +1,6 @@
 ---
 title: "Agentic UI/UX Design 2026: Designing for AI Agents"
-category: "13-agent-production"
+category: "15-agent-production-agent-workflow"
 tags: ["ai-agents", "ui-ux", "hci", "human-agent-interaction", "artifacts", "canvas", "collaboration", "2026-trends"]
 summary: "> **一句话理解**: 好的智能体 UI 不仅仅是一个聊天框，而是一个让“人”与“AI”能够像同事一样协作的数字化动态空间。"
 created: 2026-06-04

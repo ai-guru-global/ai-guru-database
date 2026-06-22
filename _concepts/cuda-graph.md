@@ -1,6 +1,6 @@
 ---
 title: "CUDA Graph"
-category: concepts
+category: -concepts
 tags: [inference, cuda, performance, gpu, kernel-optimization, vllm, sglang]
 relationships:
   - target: "_concepts/paged-attention"

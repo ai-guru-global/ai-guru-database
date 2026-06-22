@@ -1,6 +1,6 @@
 ---
 title: "LangChain"
-category: concept
+category: -concepts
 tags: ["langchain", "agent", "llm", "framework", "rag", "tool-use", "chain", "orchestration"]
 relationships:
   - target: "_concepts/agent-framework"

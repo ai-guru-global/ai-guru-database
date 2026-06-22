@@ -1,6 +1,6 @@
 ---
 title: "AI代理(Agents)"
-category: "course"
+category: "15-agent-production"
 tags: ["microsoft-genai-course", "ai-agents", "langchain", "autogen", "taskweaver", "jarvis"]
 summary: "详解AI代理概念与四大框架：LangChain Agents、AutoGen、TaskWeaver、JARVIS，涵盖状态管理、工具集成和多代理协作。"
 created: "2026-06-12"

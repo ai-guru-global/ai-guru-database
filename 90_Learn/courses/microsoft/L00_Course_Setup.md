@@ -1,6 +1,6 @@
 ---
 title: "L00 - 课程环境设置"
-category: "90-learn"
+category: "90-learn-courses-microsoft"
 tags: ["microsoft-ai-course", "course-setup", "jupyter", "pytorch", "tensorflow"]
 summary: "介绍如何开始使用 Microsoft AI For Beginners（微软 AI 入门）课程：不同学习者的起步方式、Jupyter Notebook（Jupyter 交互式笔记本）的运行路径、课程教学方法与离线访问方案。"
 source_url: "https://raw.githubusercontent.com/microsoft/AI-For-Beginners/main/lessons/0-course-setup/setup.md"

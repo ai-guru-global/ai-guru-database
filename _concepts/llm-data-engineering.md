@@ -1,6 +1,6 @@
 ---
 title: "LLM 数据工程 (LLM Data Engineering)"
-category: concept
+category: -concepts
 tags: ["nlp", "llm", "data-engineering", "pretraining-data", "sft-data", "synthetic-data"]
 relationships:
   - target: "_concepts/llm-architectures"

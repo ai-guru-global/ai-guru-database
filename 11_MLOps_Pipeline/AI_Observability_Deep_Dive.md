@@ -1,6 +1,6 @@
 ---
 title: "AI 可观测性深度解读 (AI Observability)"
-category: "16-ai-ops"
+category: "11-mlops-pipeline"
 tags: ["observability", "monitoring", "tracing", "metrics", "llm-ops", "langsmith"]
 summary: "从传统三大支柱 (Metrics/Traces/Logs) 到 LLM 专属可观测性：深入解析 AI 应用的追踪体系、成本分析、延迟优化、幻觉监控，以及 LangSmith/LangFuse/Helicone 等工具的选型策略。"
 created: "2026-06-12"

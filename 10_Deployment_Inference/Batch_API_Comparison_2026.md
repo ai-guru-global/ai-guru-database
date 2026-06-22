@@ -1,6 +1,6 @@
 ---
 title: "LLM Batch API 完全指南: 批量推理的成本优化利器"
-category: "09-deployment-inference"
+category: "10-deployment-inference"
 tags: ["batch-api", "cost-optimization", "inference", "openai", "anthropic", "gemini", "deepseek", "async-processing"]
 summary: "> **一句话理解**: Batch API 是 LLM 成本优化的最大杠杆——用 50% 的价格处理非实时任务，覆盖数据标注、评估、批量嵌入等场景，是生产系统降本的核心武器。"
 created: 2026-06-15

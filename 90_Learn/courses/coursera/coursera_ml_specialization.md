@@ -1,6 +1,6 @@
 ---
 title: "Coursera 机器学习专项课程 (Machine Learning Specialization)"
-category: "90-learn-courses"
+category: "90-learn-courses-coursera"
 tags: ["course", "deeplearning-ai", "andrew-ng", "machine-learning"]
 summary: "Andrew Ng 2022 年更新的 3 门机器学习入门课程——监督学习、高级算法、无监督学习。"
 created: "2026-06-12"

@@ -1,6 +1,6 @@
 ---
 title: "小模型与端侧 LLM 深度解读: 从高效模型到端侧部署"
-category: "04-nlp-llms"
+category: "05-nlp-llms-edge-llm"
 tags: ["edge-llm", "small-language-model", "Phi", "Gemma", "Qwen", "quantization", "GPTQ", "AWQ", "llama-cpp", "MLC-LLM", "ONNX"]
 summary: "让LLM跑在手机/PC/嵌入式设备上。覆盖高效小模型设计(Phi/Gemma/Qwen)、量化压缩(GPTQ/AWQ/GGUF)、端侧推理引擎(llama.cpp/MLC-LLM/ONNX Runtime)。"
 created: 2026-06-04

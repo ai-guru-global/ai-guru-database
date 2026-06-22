@@ -1,6 +1,6 @@
 ---
 title: "AI for Science (AI驱动的科学发现)"
-category: concept
+category: -concepts
 tags: ["ai-for-science", "alphafold", "drug-discovery", "weather-prediction", "materials-science", "neural-operator", "equivariant"]
 relationships:
   - target: "_concepts/graph-neural-networks"

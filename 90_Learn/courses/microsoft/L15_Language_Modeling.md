@@ -1,6 +1,6 @@
 ---
 title: "L15 - 语言建模与自定义嵌入训练"
-category: "90-learn"
+category: "90-learn-courses-microsoft"
 tags: ["microsoft-ai-course", "nlp", "language-modeling", "word-embedding", "word2vec", "self-supervised-learning"]
 summary: "从语义嵌入走向语言建模：利用自监督思想在无标注文本上训练 N-gram、CBoW 与 Skip-gram 模型，并动手用 PyTorch/TensorFlow 训练自己的 Word2Vec 嵌入。"
 source_url: "https://raw.githubusercontent.com/microsoft/AI-For-Beginners/main/lessons/5-NLP/15-LanguageModeling/README.md"

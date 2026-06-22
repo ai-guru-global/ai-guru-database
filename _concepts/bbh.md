@@ -1,6 +1,6 @@
 ---
 title: "BBH"
-category: concepts
+category: -concepts
 tags: ["bbh", "big-bench", "benchmark", "reasoning", "llm-evaluation", "few-shot"]
 relationships:
   - target: "_concepts/model-evaluation"

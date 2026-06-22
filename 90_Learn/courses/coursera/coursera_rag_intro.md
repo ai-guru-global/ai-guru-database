@@ -1,6 +1,6 @@
 ---
 title: "RAG 入门实践项目 (Coursera)"
-category: "90-learn"
+category: "90-learn-courses-coursera"
 tags: ["rag", "coursera", "course", "project", "hands-on"]
 summary: "Coursera RAG 入门实践项目,通过动手项目学习检索增强生成的基础知识和实现方法。"
 sources:

@@ -1,6 +1,6 @@
 ---
 title: "Hello-Agents (Datawhale) 课程映射：从零开始构建智能体"
-category: "90-learn"
+category: "90-learn-courses-other"
 tags:
   - learning-paths
   - datawhale

@@ -1,6 +1,6 @@
 ---
 title: "SGLang"
-category: concepts
+category: -concepts
 tags: ["sglang", "inference", "serving", "vllm", "radix-attention", "prefix-caching"]
 relationships:
   - target: "_concepts/model-serving"

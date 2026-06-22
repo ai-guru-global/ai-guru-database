@@ -1,6 +1,6 @@
 ---
 title: Inference Performance
-category: concepts
+category: -concepts
 tags: [inference, performance, latency, throughput, optimization, benchmarking]
 relationships:
   - target: "_concepts/kv-cache"

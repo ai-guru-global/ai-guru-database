@@ -1,6 +1,6 @@
 ---
 title: 国际大模型生态全景 (Global LLM Ecosystem)
-category: 04-nlp-llms
+category: 05-nlp-llms-global-llm-ecosystem
 tags: ["openai", "google", "gemini", "anthropic", "claude", "meta", "llama", "mistral", "global-llm", "moe", "reasoning"]
 summary: "系统梳理国际五大前沿大模型厂商（OpenAI、Google DeepMind、Anthropic、Meta、Mistral AI）的技术路线、模型矩阵、核心创新与 Benchmark 对比，对标 HuggingFace 和 ModelScope 信息量。"
 created: 2026-06-02

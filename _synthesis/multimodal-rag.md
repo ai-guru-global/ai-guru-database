@@ -1,6 +1,6 @@
 ---
 title: "多模态 × RAG: 当检索增强遇上图文音视频"
-category: synthesis
+category: -synthesis
 tags: ["multimodal", "rag", "vision-language", "retrieval", "embedding", "synthesis"]
 sources:
   - "05_NLP_LLMs/Multimodal_Models/Native_Multimodal_Architectures"

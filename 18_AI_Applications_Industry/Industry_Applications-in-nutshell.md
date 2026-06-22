@@ -1,6 +1,6 @@
 ---
 title: "AI 行业应用速览 (AI Industry Applications in a Nutshell)"
-category: 20-industry
+category: 18-ai-applications-industry
 tags: [ai-applications, industry, finance, healthcare, education, autonomous-driving]
 summary: "横向速览 AI 在金融、医疗、教育、法律、制造、零售、自动驾驶、内容创作等行业的落地全景——成熟度矩阵、核心技术栈、标杆案例与关键数据一册掌握。"
 created: 2026-06-05

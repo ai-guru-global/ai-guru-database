@@ -1,6 +1,6 @@
 ---
 title: JVM AI 部署与推理
-category: 09-deployment-inference
+category: 10-deployment-inference
 tags: ["deployment", "inference", "serving", "vllm", "model-deployment"]
 summary: "> 📚 **Spring AI 基础**: 如果你还不熟悉 Spring AI 的核心概念，请先阅读 [Spring AI 深度解析](../01_Fundamentals/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md)。"
 created: 2026-05-31

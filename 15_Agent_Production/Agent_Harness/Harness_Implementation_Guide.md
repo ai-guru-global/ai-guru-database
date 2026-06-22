@@ -1,6 +1,6 @@
 ---
 title: Agent Harness 实现指南
-category: 13-agent-production-agent-harness
+category: 15-agent-production-agent-harness
 tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> 目标：从零开始，用 Python 搭建一个生产级 Agent Harness。包含文件系统、Docker 沙箱、工具执行、验证回路、上下文压缩。"
 created: 2026-05-31

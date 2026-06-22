@@ -1,6 +1,6 @@
 ---
 title: 'AI视频生成 2026年全景报告'
-category: '05-computer-vision-video-generation'
+category: '04-computer-vision-video-generation'
 tags: ["computer-vision", "cnn", "image-processing"]
 summary: '> **一句话理解**: AI视频生成已经从"实验室玩具"进化为"生产力工具"——OpenAI的Sora在2026年3月停止服务，但Google Veo3、快手Kling 3.0、字节Seedance 2.0等竞品已经超越Sora，在质量、速度和成本上全面领先。'
 created: '2026-05-31'

@@ -1,6 +1,6 @@
 ---
 title: 线性代数
-category: concepts
+category: -concepts
 tags: [math, linear-algebra, tensors, SVD, eigenvalues, matrix-operations]
 aliases: [Linear Algebra, 矩阵运算, 张量运算]
 relationships:

@@ -1,6 +1,6 @@
 ---
 title: "L16 - 循环神经网络RNN"
-category: "90-learn"
+category: "90-learn-courses-microsoft"
 tags: ["microsoft-ai-course", "rnn", "lstm", "sequence-modeling", "nlp"]
 summary: "学习循环神经网络（RNN）如何通过隐藏状态建模序列顺序，并了解 LSTM/GRU、双向与多层 RNN 的基本结构与典型应用。"
 source_url: "https://raw.githubusercontent.com/microsoft/AI-For-Beginners/main/lessons/5-NLP/16-RNN/README.md"

@@ -1,6 +1,6 @@
 ---
 title: '生成模型 (Generative Models)'
-category: '05-computer-vision-generative-models'
+category: '04-computer-vision-generative-models'
 tags: ["computer-vision", "cnn", "image-processing"]
 summary: '> **一句话理解**: 生成模型就像"AI 画家"——给定文字描述或随机噪声,能创作出逼真的图像、音乐甚至视频,它们不是简单地记忆训练数据,而是学会了"创造"的能力。'
 created: '2026-05-31'

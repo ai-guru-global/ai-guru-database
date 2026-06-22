@@ -1,6 +1,6 @@
 ---
 title: "Model Monitoring and Drift Detection 2026"
-category: "10-mlops-pipeline"
+category: "11-mlops-pipeline"
 tags: ["mlops", "monitoring", "data-drift", "concept-drift", "observability", "production-ml"]
 summary: "> **一句话理解**: 模型监控是 AI 生产系统的“哨兵”——不仅要确保系统在运行，更要确保模型没有因为数据分布的变化而产生“幻觉”或性能退化。"
 created: 2026-06-04

@@ -1,6 +1,6 @@
 ---
 title: "工具调用安全"
-category: concepts
+category: -concepts
 tags: ["tool-calling", "function-calling", "safety", "agent-security", "guardrails", "mcp"]
 relationships:
   - target: "_concepts/ai-agents"

@@ -1,6 +1,6 @@
 ---
 title: "Weights & Biases: ML 实验追踪平台"
-category: "15-testing"
+category: "09-testing"
 tags: ["testing", "ai-testing", "prompt-testing", "evaluation"]
 summary: "> **一句话理解**: Weights & Biases (W&B) 是 ML 实验追踪平台——参数记录、可视化、协作、模型管理，AI 研究者的实验瑞士军刀。"
 created: "2026-05-31"

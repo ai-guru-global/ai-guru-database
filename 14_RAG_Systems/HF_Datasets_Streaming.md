@@ -1,6 +1,6 @@
 ---
 title: "Hugging Face Datasets 流式处理与大规模语料加工指南"
-category: "11-rag-systems"
+category: "14-rag-systems"
 tags: ["datasets", "huggingface", "data-processing", "streaming", "rag"]
 summary: "> **一句话理解**: 面对 TB 级的大模型预训练/RAG 语料，`datasets` 库的 Streaming 模式允许你在一台只有 8GB 内存的笔记本上处理海量数据而不会 OOM。"
 created: "2026-06-12"

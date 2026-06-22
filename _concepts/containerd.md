@@ -1,6 +1,6 @@
 ---
 title: "containerd"
-category: concept
+category: -concepts
 tags: ["containerd", "container-runtime", "cri", "kubernetes", "docker", "cncf"]
 relationships:
   - target: "_concepts/cri"

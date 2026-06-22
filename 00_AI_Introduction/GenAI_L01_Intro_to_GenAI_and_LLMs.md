@@ -1,6 +1,6 @@
 ---
 title: "生成式人工智能和大型语言模型简介"
-category: "course"
+category: "00-ai-introduction"
 tags: ["microsoft-genai-course", "generative-ai", "llm-basics", "transformer", "tokenization", "ai-history"]
 summary: "全面介绍生成式 AI 的定义、从 1960 年代至今的发展历程、大型语言模型基于 Transformer 的工作原理（分词、预测、温度参数）及其在教育领域的应用场景。"
 created: "2026-06-12"

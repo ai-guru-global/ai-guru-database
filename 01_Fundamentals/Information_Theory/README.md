@@ -1,6 +1,6 @@
 ---
 title: "信息论基础 (Information Theory)"
-category: "01-fundamentals"
+category: "01-fundamentals-information-theory"
 tags: ["information-theory", "entropy", "cross-entropy", "KL-divergence"]
 summary: "> 信息论是 AI 的数学灵魂——熵、交叉熵、KL散度、互信息，理解这些才能理解损失函数和模型压缩。"
 created: 2026-06-04

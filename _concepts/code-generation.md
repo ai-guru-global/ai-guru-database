@@ -1,6 +1,6 @@
 ---
 title: "代码生成"
-category: concepts
+category: -concepts
 tags: ["code-generation", "ai-coding", "copilot", "program-synthesis"]
 relationships:
   - target: "_concepts/code-generation-workflow"

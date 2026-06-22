@@ -1,6 +1,6 @@
 ---
 title: "OpenAI 技术深度解析 — 从 GPT-3 到 o3 的完整演进之路"
-category: 04-nlp-llms-global-llm
+category: 05-nlp-llms-global-llm-ecosystem
 tags: [openai, gpt, gpt-3, gpt-4, gpt-4o, gpt-4.1, o1, o3, o4-mini, rlhf, moe, reasoning, multimodal, dall-e, whisper, sora, chatgpt]
 summary: "全面剖析 OpenAI 从 2015 年成立到 2025 年的完整技术演进：GPT 系列架构迭代 (GPT-3 → GPT-4 → GPT-4.1)、RLHF 对齐革命、MoE 稀疏专家架构、原生多模态 (GPT-4o)、o 系列推理模型 (o1/o3/o4-mini) 的隐式思维链与测试时计算扩展，以及 DALL-E / Whisper / Sora 多模态生态。"
 created: 2026-06-02

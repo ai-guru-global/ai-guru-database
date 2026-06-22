@@ -1,6 +1,6 @@
 ---
 title: "强化学习基础 (RL Fundamentals)"
-category: 06-rl
+category: 06-reinforcement-learning
 tags: ["reinforcement-learning", "mdp", "bellman", "q-learning", "policy-gradient", "reward"]
 summary: "> **一句话理解**: 强化学习就是让 AI 通过试错来学习最优策略——像一只小狗通过奖励学会坐下、握手、翻滚，只不过这里的'小狗'是算法，'奖励'是数学函数。"
 created: 2026-06-12

@@ -1,6 +1,6 @@
 ---
 title: 微调技术 (Fine-tuning Techniques)
-category: 04-nlp-llms-fine-tuning-techniques
+category: 05-nlp-llms-fine-tuning-techniques
 tags: ["nlp", "llm", "transformer", "gpt", "bert"]
 summary: "| 文档 | 内容 | 适用读者 |"
 created: 2026-05-31

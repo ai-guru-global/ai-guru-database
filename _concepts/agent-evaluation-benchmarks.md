@@ -1,6 +1,6 @@
 ---
 title: "Agent 评估基准"
-category: concepts
+category: -concepts
 tags: ["agent-evaluation", "benchmark", "agent", "tool-calling", "reasoning", "multistep"]
 relationships:
   - target: "_concepts/ai-agents"

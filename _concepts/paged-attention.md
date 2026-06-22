@@ -1,6 +1,6 @@
 ---
 title: PagedAttention
-category: concepts
+category: -concepts
 tags: [inference, kv-cache, memory-management, vllm, paged-attention]
 relationships:
   - target: "_concepts/kv-cache"

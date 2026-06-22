@@ -1,6 +1,6 @@
 ---
 title: KV Cache (Key-Value Cache)
-category: concepts
+category: -concepts
 tags: [inference, kv-cache, attention, memory, optimization]
 relationships:
   - target: "_concepts/transformer-architecture"

@@ -1,6 +1,6 @@
 ---
 title: "Enterprise Agent Governance 2026: Managing Thousands of Agents"
-category: "13-agent-production"
+category: "15-agent-production-enterprise-agent"
 tags: ["ai-agents", "governance", "enterprise", "security", "billing", "rbac", "2026-trends"]
 summary: "> **一句话理解**: 企业智能体治理是确保公司内部成千上万个 AI Agent 在合规、安全、且成本可控的前提下运行的“交通指挥系统”。"
 created: 2026-06-04

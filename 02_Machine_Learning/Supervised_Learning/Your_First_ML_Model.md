@@ -1,6 +1,6 @@
 ---
 title: "你的第一个 ML 模型: 从数据到预测（30 分钟实战）"
-category: 02-machine-learning
+category: 02-machine-learning-supervised-learning
 tags: ["machine-learning", "scikit-learn", "beginner", "tutorial", "first-model", "supervised-learning"]
 summary: "零基础动手训练第一个真实机器学习模型。从加载数据、预处理、训练、评估到预测新样本，完整走通 ML 全流程。使用 scikit-learn 和经典 Titanic 数据集。"
 created: 2026-06-01

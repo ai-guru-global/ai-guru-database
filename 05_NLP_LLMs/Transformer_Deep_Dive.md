@@ -1,6 +1,6 @@
 ---
 title: "Transformer 深度剖析：从 QKV 到完整架构"
-category: 04-nlp-llms-transformer-deep-dive
+category: 05-nlp-llms
 tags: ["transformer", "attention", "QKV", "multi-head-attention", "positional-encoding", "RoPE", "ALiBi", "feedforward", "layernorm", "residual-connection"]
 summary: "> 从序列建模的根本挑战出发，逐层拆解 Transformer 的每个核心组件——QKV 注意力、缩放点积、多头机制、位置编码（正弦/RoPE/ALiBi）、FFN、残差连接、LayerNorm，最终组装为完整的 Encoder-Decoder 架构。"
 source: "_sources/yeasy/llm_internals/ (Ch1-4)"

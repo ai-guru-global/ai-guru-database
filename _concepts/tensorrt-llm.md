@@ -1,6 +1,6 @@
 ---
 title: "TensorRT-LLM"
-category: concepts
+category: -concepts
 tags: ["tensorrt-llm", "nvidia", "inference", "serving", "optimization", "quantization"]
 relationships:
   - target: "_concepts/model-serving"

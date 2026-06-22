@@ -1,6 +1,6 @@
 ---
 title: 'AI安全 2026年完全指南'
-category: '19-ethics-safety-ai-security-2026'
+category: '17-ethics-safety-ai-security-2026'
 tags: ["ai-ethics", "safety", "alignment", "red-teaming"]
 summary: '> **一句话理解**: AI安全已经从"可选配置"变为"生死存亡"——OWASP LLM Top 10 2026和全新的Agentic AI Security框架定义了生产级AI系统的安全基线，一次提示注入攻击可能导致数百万美元损失。'
 created: '2026-05-31'

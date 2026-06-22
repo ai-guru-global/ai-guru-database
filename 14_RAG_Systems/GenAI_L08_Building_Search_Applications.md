@@ -1,6 +1,6 @@
 ---
 title: "构建搜索应用程序"
-category: "course"
+category: "14-rag-systems"
 tags: ["microsoft-genai-course", "semantic-search", "embeddings", "vector-database", "cosine-similarity", "text-embedding"]
 summary: "学习使用文本嵌入构建语义搜索应用，掌握嵌入索引创建、余弦相似度计算和向量数据库使用的完整流程。"
 created: "2026-06-12"

@@ -1,6 +1,6 @@
 ---
 title: AI Security Engineer 按公司/级别区分的题库
-category: 23-interviews-ai-security-engineer
+category: 21-interviews-ai-security-engineer
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "多业务线统一安全标准如何制定？"
 created: 2026-05-31

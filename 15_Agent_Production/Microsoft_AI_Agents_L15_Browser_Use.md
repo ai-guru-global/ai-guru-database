@@ -1,6 +1,6 @@
 ---
 title: "L15 浏览器使用 Agent (CUA)：Browser-Use + Playwright + CDP 混合架构"
-category: "13-agent-production"
+category: "15-agent-production"
 tags:
   - ai-agents
   - microsoft

@@ -1,6 +1,6 @@
 ---
 title: "安全评测 × 红队测试: 构建 AI 安全的攻防闭环"
-category: synthesis
+category: -synthesis
 tags: ["ai-safety", "red-teaming", "evaluation", "jailbreak", "harmbench", "synthesis"]
 sources:
   - "17_Ethics_Safety/Safety_Evaluation_Framework"

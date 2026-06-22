@@ -1,6 +1,6 @@
 ---
 title: "TensorRT-LLM: NVIDIA 生产级 LLM 推理"
-category: "09-deployment-inference"
+category: "10-deployment-inference"
 tags: ["deployment", "inference", "serving", "tensorrt-llm", "nvidia", "llm", "fp8", "triton"]
 summary: "> **一句话理解**: TensorRT-LLM 是 NVIDIA 的高性能 LLM 推理库——TensorRT 加速 + 定制 kernel，单请求延迟最低，H100/H200 推理性能标杆。"
 created: "2026-05-31"

@@ -1,6 +1,6 @@
 ---
 title: 集成学习
-category: concepts
+category: -concepts
 tags: ["machine-learning", "ensemble", "bagging", "boosting", "stacking", "random-forest", "xgboost", "lightgbm", "catboost"]
 aliases: [Ensemble unsupervised-learning, 集成方法]
 relationships:

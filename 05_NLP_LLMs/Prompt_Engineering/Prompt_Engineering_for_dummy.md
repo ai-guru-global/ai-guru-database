@@ -1,6 +1,6 @@
 ---
 title: '提示词工程 - 小白版'
-category: '04-nlp-llms-prompt-engineering'
+category: '05-nlp-llms-prompt-engineering'
 tags: ["nlp", "llm", "transformer", "gpt", "bert"]
 summary: '> **一句话秒懂**: 提示词工程就像学会"问对问题"——你问得越清楚,AI 回答得越好。这是零成本让 ChatGPT 变聪明的技巧!'
 created: '2026-05-31'

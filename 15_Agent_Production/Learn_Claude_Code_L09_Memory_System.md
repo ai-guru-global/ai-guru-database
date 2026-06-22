@@ -1,6 +1,6 @@
 ---
 title: "Learn Claude Code L09：Memory — 压缩会丢细节，要有一层不丢的"
-category: 13-agent-production
+category: 15-agent-production
 tags:
   - ai-agents
   - agent-harness

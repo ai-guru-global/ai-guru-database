@@ -1,6 +1,6 @@
 ---
 title: Kubernetes 领域专项评测报告
-category: 13-agent-production-16-agent-evaluation-docs-reports
+category: 15-agent-production-agent-evaluation-docs-reports
 tags: ["ai-agents", "agent-framework", "production", "langgraph", "kubernetes", "model-evaluation"]
 summary: "> 评测日期: 2026-04-13 | 测试题数: 80 | 评测版本: 2026 Q2"
 created: 2026-05-31

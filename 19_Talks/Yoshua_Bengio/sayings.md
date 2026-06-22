@@ -1,6 +1,6 @@
 ---
 title: Yoshua Bengio 关于 AI 的观点 (Yoshua Bengio on AI)
-category: 21-talks-yoshua-bengio
+category: 19-talks-yoshua-bengio
 tags: ["talks", "speeches", "insights", "leaders"]
 summary: "1. **“AI systems could cause serious harm; we need governance.” / “AI 系统可能造成严重危害，需要治理。”**"
 created: 2026-05-31

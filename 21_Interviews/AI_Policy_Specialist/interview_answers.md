@@ -1,6 +1,6 @@
 ---
 title: AI Policy Specialist 面试题实例答案
-category: 23-interviews-ai-policy-specialist
+category: 21-interviews-ai-policy-specialist
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "**答**：把法规条款转化为风险分级与检查清单，明确责任人、审批链路与审计记录。对高风险场景设置前置评估与上线门禁。"
 created: 2026-05-31

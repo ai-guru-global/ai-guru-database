@@ -1,6 +1,6 @@
 ---
 title: "Self-Attention 机制详解"
-category: 04-nlp-llms-transformer
+category: 05-nlp-llms-transformer-revolution
 tags: ["transformer", "self-attention", "multi-head-attention", "mechanism"]
 summary: "> **一句话理解**: Self-Attention 让序列中的每个位置都能'看到'其他所有位置——通过 Query-Key-Value 机制计算注意力权重，实现全局信息融合。"
 created: 2026-06-12

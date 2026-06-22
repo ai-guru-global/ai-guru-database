@@ -1,6 +1,6 @@
 ---
 title: "数据摄入管道 (Data Ingestion Pipeline)"
-category: 11-rag-systems
+category: 14-rag-systems
 tags: ["rag", "data-ingestion", "etl", "chunking", "embedding", "pipeline"]
 summary: "> **一句话理解**: 数据摄入管道就像图书馆的'新书处理流水线'——从采购（抓取数据）、拆包（解析内容）、编目（分块+嵌入）到上架（存入向量数据库），一气呵成。"
 created: 2026-06-12

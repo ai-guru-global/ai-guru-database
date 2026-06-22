@@ -1,6 +1,6 @@
 ---
 title: "LakeFS: 数据湖版本控制"
-category: "16-ai-ops"
+category: "11-mlops-pipeline"
 tags: ["ai-ops", "observability", "monitoring", "incident-response"]
 summary: "> **一句话理解**: LakeFS 是数据湖版本控制——用 Git 工作流管理数据，支持快照、分支、跨环境同步，像 Git 一样管理你的数据湖。"
 created: "2026-05-31"

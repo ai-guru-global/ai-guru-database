@@ -1,6 +1,6 @@
 ---
 title: RoPE 旋转位置编码 (Rotary Position Embedding)
-category: concepts
+category: -concepts
 tags: [rope, position-encoding, rotary-embedding, transformer, attention, deepseek]
 relationships:
   - target: "_concepts/transformer-architecture"

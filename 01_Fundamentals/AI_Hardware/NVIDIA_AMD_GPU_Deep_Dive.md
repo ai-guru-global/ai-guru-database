@@ -1,6 +1,6 @@
 ---
 title: "NVIDIA & AMD 数据中心 GPU 深度解析 2026"
-category: "01-fundamentals"
+category: "01-fundamentals-ai-hardware"
 tags: ["gpu", "nvidia", "amd", "h200", "b200", "mi300x", "mi350", "blackwell", "hopper", "inference", "training"]
 summary: "NVIDIA H200/B200/GB200 和 AMD MI300X/MI350 的完整技术规格、架构对比、云厂商定价和大规模部署案例。"
 sources:

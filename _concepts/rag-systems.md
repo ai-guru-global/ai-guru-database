@@ -1,6 +1,6 @@
 ---
 title: RAG 检索增强生成
-category: concepts
+category: -concepts
 tags:
 - rag
 - retrieval

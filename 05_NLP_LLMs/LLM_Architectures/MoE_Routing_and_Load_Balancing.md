@@ -1,6 +1,6 @@
 ---
 title: MoE 路由与负载均衡深度解析
-category: 04-nlp-llms-architecture
+category: 05-nlp-llms-llm-architectures
 tags: [moe, mixture-of-experts, routing, load-balancing, expert-selection, sparse-activation, switch-transformer]
 summary: 深度解析混合专家模型（MoE）的路由算法、负载均衡机制、专家选择策略和通信优化，涵盖 Top-K、Expert Choice 和 Noisy Top-Gating 等技术原理。
 date: 2026-06-01

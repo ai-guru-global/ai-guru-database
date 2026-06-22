@@ -1,6 +1,6 @@
 ---
 title: OCI Runtime Spec (开放容器倡议运行时规范)
-category: concepts
+category: -concepts
 tags:
 - oci
 - container-runtime

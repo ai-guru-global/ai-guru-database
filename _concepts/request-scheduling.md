@@ -1,6 +1,6 @@
 ---
 title: Request Scheduling for LLMs
-category: concepts
+category: -concepts
 tags: [inference, scheduling, continuous-batching, preemption, performance]
 relationships:
   - target: "_concepts/continuous-batching"

@@ -1,6 +1,6 @@
 ---
 title: Agent Harness 安全深度指南
-category: 13-agent-production-agent-harness
+category: 15-agent-production-agent-harness
 tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> 生产级 Agent Harness 面临独特的安全挑战：Agent 可以执行代码、访问文件、调用外部 API。本文档提供系统化的 Harness 安全设计方法，从威胁建模到防御实现。"
 created: 2026-05-31

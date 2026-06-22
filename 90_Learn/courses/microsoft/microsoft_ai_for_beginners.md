@@ -1,6 +1,6 @@
 ---
 title: "Microsoft AI For Beginners：12 周初学者课程映射"
-category: "90-learn"
+category: "90-learn-courses-microsoft"
 tags: ["learning-paths", "microsoft", "ai-beginners", "course-catalog", "pytorch", "tensorflow"]
 summary: "> **一句话理解**: Microsoft 官方出品的 12 周 24 课 AI 入门课程，覆盖符号 AI、神经网络、CV、NLP、RL、伦理等主题，并附带 PyTorch/TensorFlow 双框架 Notebook，是本库零基础到进阶的极佳外部学习路线。"
 created: "2026-06-12"

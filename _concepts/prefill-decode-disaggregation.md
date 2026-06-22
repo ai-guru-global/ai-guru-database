@@ -1,6 +1,6 @@
 ---
 title: Prefill-Decode Disaggregation
-category: concepts
+category: -concepts
 tags: [inference, prefill, decode, disaggregated-serving, performance]
 relationships:
   - target: "_concepts/prefill-decode"

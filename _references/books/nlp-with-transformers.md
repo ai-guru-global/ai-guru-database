@@ -1,6 +1,6 @@
 ---
 title: "NLP with Transformers"
-category: "references"
+category: "-references-books"
 tags: ["book", "learning-resource"]
 summary: "Hugging Face 团队的 Transformers 实战指南.作者:Lewis Tunstall 等."
 sources:

@@ -1,6 +1,6 @@
 ---
 title: Kong AI Gateway 深度解析
-category: 14-ai-gateway
+category: 12-architecture-infrastructure-ai-gateway
 tags: ["ai-gateway", "api-management", "routing", "litellm"]
 summary: "> **一句话秒懂**: Kong AI Gateway 是建立在 Kong 网关之上的 AI 专属代理层，为 LLM API 提供限流、缓存、安全、可观测等企业级能力。"
 created: 2026-05-31

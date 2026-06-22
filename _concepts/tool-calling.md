@@ -1,6 +1,6 @@
 ---
 title: "工具调用"
-category: concepts
+category: -concepts
 tags: ["tool-calling", "function-calling", "agent", "api", "mcp"]
 relationships:
   - target: "_concepts/ai-agents"

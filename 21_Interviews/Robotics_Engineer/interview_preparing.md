@@ -1,6 +1,6 @@
 ---
 title: Robotics Engineer (AI) 面试准备
-category: 23-interviews-robotics-engineer
+category: 21-interviews-robotics-engineer
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "**机器人感知与控制**: 视觉/传感器融合与运动规划。"
 created: 2026-05-31

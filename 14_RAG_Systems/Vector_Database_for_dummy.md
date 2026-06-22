@@ -1,6 +1,6 @@
 ---
 title: '向量数据库 - 小白版'
-category: '11-rag-systems'
+category: '14-rag-systems'
 tags: ["rag", "retrieval", "vector-database", "embedding"]
 summary: '> **一句话秒懂**: 向量数据库就是 AI 的超级图书馆——你说"我想找和这个差不多的东西"，它能在一秒内从几百万本书里找到最像的。'
 created: '2026-05-31'

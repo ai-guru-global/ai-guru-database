@@ -1,6 +1,6 @@
 ---
 title: Flash 系列 Kernel 深潜
-category: 09-deployment-inference
+category: 10-deployment-inference-inference-performance
 tags: [inference, flash-attention, flashinfer, flashmla, flashdecoding, kernels, performance]
 summary: "> FlashAttention、FlashDecoding、FlashInfer、FlashMLA 等内核如何把 Attention 的显存访问降到接近理论下限。"
 created: 2026-06-15

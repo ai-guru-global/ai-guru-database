@@ -1,6 +1,6 @@
 ---
 title: Skill 版本管理与团队治理
-category: 13-agent-production-agent-skills
+category: 15-agent-production-agent-skills
 tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> 当团队有 5 个以上的 Agent Skills 时，就需要建立版本管理、评审流程和治理规范。本文档提供一套可直接落地的团队 Skill 库治理方案。"
 created: 2026-05-31

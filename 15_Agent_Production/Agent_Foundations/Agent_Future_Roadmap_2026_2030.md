@@ -1,6 +1,6 @@
 ---
 title: Agent 未来发展路线图 2026-2030
-category: 06-reinforcement-learning-ai-agents
+category: 15-agent-production-agent-foundations
 tags: ["reinforcement-learning", "agent", "mdp", "ai-agents"]
 summary: "> 从当前状态到 AGI Agent：技术演进、产业变革、社会影响的全景预测"
 created: 2026-05-31

@@ -1,6 +1,6 @@
 ---
 title: Prompt Engineer 面试题实例答案
-category: 23-interviews-prompt-engineer
+category: 21-interviews-prompt-engineer
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "**答**：先明确任务边界与输入输出格式，使用结构化提示与示例约束；对关键场景建立评测集，迭代优化并进行版本管理。"
 created: 2026-05-31

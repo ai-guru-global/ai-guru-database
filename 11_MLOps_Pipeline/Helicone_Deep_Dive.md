@@ -1,6 +1,6 @@
 ---
 title: "Helicone: LLM 可观测性平台"
-category: "16-ai-ops"
+category: "11-mlops-pipeline"
 tags: ["ai-ops", "observability", "monitoring", "incident-response", "llm"]
 summary: "> **一句话理解**: Helicone 是 LLM 可观测性平台——请求追踪、成本分析、速率限制、提示词版本，开箱即用的 LLM 监控。"
 created: "2026-05-31"

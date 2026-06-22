@@ -1,6 +1,6 @@
 ---
 title: "自监督学习深度解读: 从对比学习到掩码建模"
-category: "03-deep-learning"
+category: "03-deep-learning-self-supervised-learning"
 tags: ["self-supervised-learning", "contrastive-learning", "SimCLR", "MoCo", "MAE", "BEiT", "BYOL", "masked-modeling"]
 summary: "自监督学习是现代AI预训练的核心范式，通过构造预测任务从无标注数据中学习通用表示。"
 created: 2026-06-04

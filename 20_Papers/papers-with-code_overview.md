@@ -1,6 +1,6 @@
 ---
 title: "Papers with Code 概览"
-category: "22-papers"
+category: "20-papers"
 tags: ["tool", "papers", "benchmark", "sota", "research", "code"]
 summary: "论文+代码+排行榜的综合平台,追踪各领域 SOTA 结果,是 AI 研究者查找论文、对比方法、获取代码的核心工具。"
 sources:

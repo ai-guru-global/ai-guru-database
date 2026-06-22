@@ -1,6 +1,6 @@
 ---
 title: 'AI 系统可观测性实践指南'
-category: '16-ai-ops'
+category: '11-mlops-pipeline'
 tags: ["ai-ops", "observability", "monitoring", "incident-response"]
 summary: '> 🎯 **目标**：建立 AI/LLM 生产系统的完整可观测性体系 —— 从传统三支柱到 LLM 专属指标、全链路追踪、Token 粒度成本核算，实现"看见一切，理解一切"。'
 created: '2026-05-31'

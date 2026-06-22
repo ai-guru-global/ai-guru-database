@@ -1,6 +1,6 @@
 ---
 title: Embedding 与 Reranker 模型服务
-category: 09-deployment-inference
+category: 10-deployment-inference-inference-performance
 tags: [inference, embedding, reranker, serving, dynamic-batching, performance]
 summary: "> Embedding 和 Reranker 是 RAG 的关键路径，推理特征与 LLM 不同，需要专门的 batching 和部署策略。"
 created: 2026-06-15

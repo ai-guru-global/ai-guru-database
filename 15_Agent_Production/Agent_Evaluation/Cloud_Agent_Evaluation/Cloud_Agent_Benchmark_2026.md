@@ -1,6 +1,6 @@
 ---
 title: 云产品智能体综合测评框架 2026
-category: 13-agent-production-16-agent-evaluation-cloud-agent-evaluation
+category: 15-agent-production-agent-evaluation-cloud-agent-evaluation
 tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> 覆盖国内外 15+ 款云产品智能体的全方位基准测试与排名体系"
 created: 2026-05-31

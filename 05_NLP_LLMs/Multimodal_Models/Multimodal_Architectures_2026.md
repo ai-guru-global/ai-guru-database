@@ -1,6 +1,6 @@
 ---
 title: 多模态模型架构 2026：从 GPT-4V 到原生多模态 AGI
-category: 04-nlp-llms-multimodal-models
+category: 05-nlp-llms-multimodal-models
 tags: ["nlp", "llm", "transformer", "gpt", "bert"]
 summary: "> 全面解析 2026 年最前沿的多模态大模型架构：视觉-语言融合、原生多模态设计、视频理解与生成的技术突破"
 created: 2026-05-31

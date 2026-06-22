@@ -1,6 +1,6 @@
 ---
 title: "Scikit-learn 概览"
-category: "02-machine-learning"
+category: "02-machine-learning-ml-frameworks"
 tags: ["machine-learning", "framework", "scikit-learn", "tool"]
 summary: "经典 Python ML 框架，覆盖分类、回归、聚类、降维等算法，适合入门和快速原型"
 sources:

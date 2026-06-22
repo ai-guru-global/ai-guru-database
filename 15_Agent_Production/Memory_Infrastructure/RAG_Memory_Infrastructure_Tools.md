@@ -1,6 +1,6 @@
 ---
 title: 'RAG、记忆与 Agent 基础设施'
-category: '13-agent-production-memory-infrastructure'
+category: '15-agent-production-memory-infrastructure'
 tags: ["ai-agents", "agent-framework", "production", "langgraph", "rag"]
 summary: '> **一句话理解**: Agent 的"智商"不仅取决于 LLM，还取决于 RAG 检索质量、记忆系统设计、知识管理架构——LlamaIndex 是 RAG 的核心框架、MemGPT 开创了持久记忆、Dify 让一切可视化。'
 created: '2026-05-31'

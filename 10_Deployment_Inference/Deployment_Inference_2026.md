@@ -1,6 +1,6 @@
 ---
 title: 部署推理 2026 趋势
-category: 09-deployment-inference
+category: 10-deployment-inference
 tags: ["deployment", "inference", "serving", "vllm", "model-deployment"]
 summary: "> **一句话秒懂**: 2026 年的 AI 推理部署 = 高性能推理引擎 + 极致压缩 + 智能调度 + 边缘部署，让大模型跑得快、跑得省、跑得稳。"
 created: 2026-05-31

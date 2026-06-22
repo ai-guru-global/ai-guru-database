@@ -1,6 +1,6 @@
 ---
 title: "LLM 生产流水线深度指南"
-category: "10-mlops-pipeline"
+category: "11-mlops-pipeline"
 tags: ["mlops", "llmops", "llm", "production-pipeline", "ci-cd", "deployment", "monitoring", "cost-management", "mlflow", "vllm", "langsmith", "prometheus"]
 summary: "> **一句话理解**: LLM 生产流水线不是传统 ML Pipeline 的简单延伸，而是一套以 Prompt 为变更核心、以 Token 为成本单位、以 LLM-as-Judge 为质量门禁的全新工程体系——本文是这套体系的端到端实战蓝图。"
 created: 2026-06-15

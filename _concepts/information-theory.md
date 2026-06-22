@@ -1,6 +1,6 @@
 ---
 title: "信息论 (Information Theory)"
-category: concept
+category: -concepts
 tags: ["fundamentals", "information-theory", "entropy", "cross-entropy", "KL-divergence", "mutual-information", "perplexity"]
 relationships:
   - target: "_concepts/probability-statistics"

@@ -1,6 +1,6 @@
 ---
 title: "Kueue"
-category: concept
+category: -concepts
 tags: ["kueue", "kubernetes", "scheduler", "queue", "job-management", "quota", "cncf"]
 relationships:
   - target: "_concepts/kubernetes"

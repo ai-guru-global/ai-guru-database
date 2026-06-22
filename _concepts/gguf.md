@@ -1,6 +1,6 @@
 ---
 title: "GGUF"
-category: concepts
+category: -concepts
 tags: ["gguf", "llama-cpp", "quantization", "model-format", "edge-llm", "model-compression"]
 relationships:
   - target: "_concepts/model-compression"

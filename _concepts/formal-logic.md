@@ -1,6 +1,6 @@
 ---
 title: "形式逻辑 (Formal Logic)"
-category: concepts
+category: -concepts
 tags: ["formal-logic", "reasoning", "symbolic-ai", "knowledge-representation"]
 summary: "形式逻辑是 AI 推理能力的数学基础——从命题逻辑到一阶逻辑，再到现代 LLM 的神经符号推理。"
 created: 2026-06-12

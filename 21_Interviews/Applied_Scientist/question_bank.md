@@ -1,6 +1,6 @@
 ---
 title: Applied Scientist 题库
-category: 23-interviews-applied-scientist
+category: 21-interviews-applied-scientist
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "解释偏差-方差权衡与常见处理方法。"
 created: 2026-05-31

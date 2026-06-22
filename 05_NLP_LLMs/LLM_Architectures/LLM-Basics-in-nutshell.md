@@ -1,6 +1,6 @@
 ---
 title: 大语言模型基础速成指南
-category: 04-nlp-llms-llm-architectures
+category: 05-nlp-llms-llm-architectures
 tags: ["nlp", "llm", "transformer", "gpt", "bert"]
 summary: "> 🎯 **目标**：用最简单的方式理解大语言模型（LLM）是什么、如何工作、以及如何使用。"
 created: 2026-05-31

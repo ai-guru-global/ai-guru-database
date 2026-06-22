@@ -1,6 +1,6 @@
 ---
 title: AI Research Engineer 面试题实例答案
-category: 23-interviews-ai-research-engineer
+category: 21-interviews-ai-research-engineer
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "**答**：从数据管道并行、混合精度、梯度累积与分布式通信优化入手；通过 profiling 找到瓶颈并针对性优化，同时用监控与回归测试保证稳定性。"
 created: 2026-05-31

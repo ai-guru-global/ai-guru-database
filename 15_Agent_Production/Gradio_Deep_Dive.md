@@ -1,6 +1,6 @@
 ---
 title: "Gradio: 机器学习 Demo 框架"
-category: "13-agent-production"
+category: "15-agent-production"
 tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> **一句话理解**: Gradio 是机器学习 Demo 框架——几行代码构建 Web 界面、输入输出组件丰富、分享链接即用，ML 模型的交互界面神器。"
 created: "2026-05-31"

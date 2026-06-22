@@ -1,6 +1,6 @@
 ---
 title: 价值对齐 (Value Alignment)
-category: 19-ethics-safety-value-alignment
+category: 17-ethics-safety-value-alignment
 tags: ["ai-ethics", "safety", "alignment", "red-teaming"]
 summary: "> **一句话理解**: 就像教育孩子懂对错一样,价值对齐是教AI理解人类的价值观和伦理标准,确保它的行为符合人类期望。"
 created: 2026-05-31

@@ -1,6 +1,6 @@
 ---
 title: "Agentic Coding Methodology 2026: Multi-Agent Software Engineering"
-category: "17-ai-coding"
+category: "16-ai-coding-methodology"
 tags: ["ai-coding", "agentic-coding", "multi-agent-systems", "software-engineering", "workflow", "2026-trends"]
 summary: "> **一句话理解**: Agentic Coding 是软件工程的范式转移——从“人编写代码”转变为“人指挥一个由多个 AI 专家组成的团队协作编写代码”。"
 created: 2026-06-04

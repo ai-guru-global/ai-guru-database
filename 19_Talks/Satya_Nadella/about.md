@@ -1,6 +1,6 @@
 ---
 title: Satya Nadella 简介 (Satya Nadella)
-category: 21-talks-satya-nadella
+category: 19-talks-satya-nadella
 tags: ["talks", "speeches", "insights", "leaders"]
 summary: "**身份**: Microsoft CEO。"
 created: 2026-05-31

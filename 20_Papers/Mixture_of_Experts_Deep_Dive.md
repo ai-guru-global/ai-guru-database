@@ -1,6 +1,6 @@
 ---
 title: Mixture of Experts 深度解读 (从 Switch Transformers 到 Mixtral 和 DeepSeek)
-category: 22-papers
+category: 20-papers
 tags: ["nlp", "moe", "llm", "sparse", "transformer"]
 summary: "MoE 就像一个\"超级医院\"——有几十个专科医生（专家），每个病人进来只看最相关的几个，既享受了全科室的智慧，又只花了看一两个医生的费用，让模型在保持推理成本可控的同时拥有超大参数容量。"
 created: 2026-05-31

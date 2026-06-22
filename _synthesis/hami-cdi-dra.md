@@ -1,6 +1,6 @@
 ---
 title: "HAMi × CDI × DRA: 异构 GPU 共享与设备注入的协作关系"
-category: synthesis
+category: -synthesis
 tags: ["hami", "cdi", "dra", "gpu-virtualization", "kubernetes", "heterogeneous-computing", "synthesis"]
 sources:
   - "12_Architecture_Infrastructure/HAMi_Deep_Dive"

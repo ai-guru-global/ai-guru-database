@@ -1,6 +1,6 @@
 ---
 title: Spring AI 网关与安全
-category: 14-ai-gateway
+category: 12-architecture-infrastructure-ai-gateway
 tags: ["ai-gateway", "api-management", "routing", "litellm"]
 summary: "> 📚 **Spring AI 基础**: 如果你还不熟悉 Spring AI 的核心概念，请先阅读 [Spring AI 深度解析](../../01_Fundamentals/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md)。"
 created: 2026-05-31

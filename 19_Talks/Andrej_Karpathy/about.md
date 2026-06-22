@@ -1,6 +1,6 @@
 ---
 title: Andrej Karpathy 简介 (Andrej Karpathy)
-category: 21-talks-andrej-karpathy
+category: 19-talks-andrej-karpathy
 tags: ["talks", "speeches", "insights", "leaders"]
 summary: "**身份**: 前 Tesla AI 主管、OpenAI 早期成员，知名 ML 教育者。"
 created: 2026-05-31

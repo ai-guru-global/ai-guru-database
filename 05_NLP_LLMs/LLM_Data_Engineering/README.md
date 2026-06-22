@@ -1,6 +1,6 @@
 ---
 title: LLM 数据工程 (LLM Data Engineering)
-category: "04-nlp-llms"
+category: "05-nlp-llms-llm-data-engineering"
 tags: ["llm", "data-engineering", "pretraining-data", "sft-data", "synthetic-data"]
 summary: "LLM 数据工程覆盖预训练数据收集清洗、SFT数据构建、合成数据生成等全链路数据管理。"
 created: 2026-06-04

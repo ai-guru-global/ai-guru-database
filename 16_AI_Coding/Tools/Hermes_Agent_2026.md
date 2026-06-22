@@ -1,6 +1,6 @@
 ---
 title: Hermes Agent 2026年专业指南
-category: 17-ai-coding-02-tools
+category: 16-ai-coding-tools
 tags: ["ai-coding", "code-generation", "cursor", "github-copilot", "ai-agents"]
 summary: "> **一句话理解**: Hermes Agent是Nous Research推出的开源、多平台、多模型AI代理——它不只是一个CLI编码工具，而是一个跨终端、消息平台、浏览器、语音的全能型自主助手。"
 created: 2026-05-31

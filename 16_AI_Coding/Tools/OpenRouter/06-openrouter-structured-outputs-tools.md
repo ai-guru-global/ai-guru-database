@@ -5,14 +5,14 @@ tags:
 - ai
 - ai-coding
 created: 2026-06-12
-category: 17-ai-coding
+category: 16-ai-coding-tools-openrouter
 summary: ""
 ---
 title: Structured Outputs 与 Tool Calling
 description: '**文档类型**: 功能详解 | **最后更新**: 2026-03 | **关键词**: OpenRouter, Structured
  Outputs, JSON Schema, Tool Calling, Function Calling, Response Healing, Parallel
  Tools'
-category: ai-coding
+category: 16-ai-coding-tools-openrouter
 tags:
 - ai
 - coding

@@ -1,6 +1,6 @@
 ---
 title: "图神经网络 (Graph Neural Networks)"
-category: "03-deep-learning"
+category: "03-deep-learning-graph-neural-networks"
 tags: ["deep-learning", "graph-neural-networks", "GNN"]
 summary: "> 图神经网络是让AI理解「关系」的钥匙——处理社交网络、分子结构、知识图谱等图结构数据。"
 created: 2026-06-04

@@ -1,6 +1,6 @@
 ---
 title: "KubeRay: 在 Kubernetes 上运行 Ray"
-category: "12-architecture-infrastructure"
+category: "12-architecture-infrastructure-cncf-cloud-native-ai"
 tags: ["cncf", "kubernetes", "ray", "kuberay", "distributed", "vllm"]
 summary: "> **一句话理解**: KubeRay 是 Ray 的 Kubernetes Operator——把 RayCluster/RayJob/RayService 声明式跑在 K8s 上，是大模型多机多卡分布式推理（Ray Serve + vLLM tensor parallel）的标配底座。"
 created: "2026-06-16"

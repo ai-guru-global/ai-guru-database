@@ -1,6 +1,6 @@
 ---
 title: '长上下文模型 2026: 万级 Token 处理'
-category: '04-nlp-llms'
+category: '05-nlp-llms'
 tags: ["nlp", "llm", "transformer", "gpt", "bert"]
 summary: '> **一句话理解**: 2026年的LLM已从"大海捞针"进化到"整本典籍"——100K-1M token的上下文窗口重新定义了AI能处理的问题规模，但随之而来的计算复杂度、内存管理、信息检索挑战催生了全新的工程范式。'
 created: '2026-05-31'

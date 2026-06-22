@@ -1,6 +1,6 @@
 ---
 title: ResNet 深度解读 (Deep Residual Learning for Image Recognition)
-category: 22-papers
+category: 20-papers
 tags: ["computer-vision", "cnn", "resnet", "deep-learning", "microsoft"]
 summary: "ResNet 就像给深层神经网络修建了\"高速公路\"——通过跳跃连接让梯度直接流通，解决了网络越深反而越差的反直觉问题，让 152 层甚至上千层的网络训练成为可能。"
 created: 2026-05-31

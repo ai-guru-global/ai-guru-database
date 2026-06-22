@@ -1,6 +1,6 @@
 ---
 title: MLOps Engineer 面试准备
-category: 23-interviews-mlops-engineer
+category: 21-interviews-mlops-engineer
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "**训练与部署流水线**: CI/CD、模型版本管理。"
 created: 2026-05-31

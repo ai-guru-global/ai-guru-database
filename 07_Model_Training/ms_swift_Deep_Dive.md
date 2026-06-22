@@ -1,7 +1,7 @@
 ---
 title: "ms-swift 深度解析：魔搭大模型训练推理全链路框架"
 summary: "系统梳理 ms-swift（ModelScope SWIFT）框架的核心能力，涵盖600+纯文本大模型与400+多模态模型的预训练、微调、GRPO强化学习、RLHF人类对齐、推理部署、评测、量化导出全流程，对标官方文档 v4.x 信息量。"
-category: model-training
+category: 07-model-training
 tags:
   - ms-swift
   - ModelScope

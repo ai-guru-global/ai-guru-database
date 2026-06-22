@@ -1,6 +1,6 @@
 ---
 title: "ModelScope 全量模型索引 (ModelScope Model Index)"
-category: 04-nlp-llms-chinese-llm
+category: 05-nlp-llms-chinese-llm-ecosystem
 tags: ["modelscope", "chinese-llm", "model-hub", "index", "reference"]
 summary: "ModelScope 上 15 家中国大模型厂商全部 1,621 个官方模型的完整索引表（按厂商分组、按下载量排序），含模型 ID、类型、任务、许可、下载量与链接。为可检索的全量参考资料。"
 created: 2026-06-19

@@ -1,7 +1,7 @@
 ---
 title: "ms-swift 命令行参数完全参考手册"
 summary: "ms-swift v4.x 全量命令行参数速查：基本参数、模型/数据/模板/生成/量化参数、Seq2SeqTrainer参数、Tuner参数（LoRA/全参/GaLore/LISA等）、vLLM/SGLang/LMDeploy参数、训练/RLHF/推理/部署/评测/导出/采样参数、GRPO参数、特定模型参数、环境变量。"
-category: model-training
+category: 07-model-training
 tags:
   - ms-swift
   - 命令行参数

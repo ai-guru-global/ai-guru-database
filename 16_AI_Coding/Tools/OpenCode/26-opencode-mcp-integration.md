@@ -5,12 +5,12 @@ tags:
 - ai
 - ai-coding
 created: 2026-06-12
-category: 17-ai-coding
+category: 16-ai-coding-tools-opencode
 summary: ""
 ---
 title: [[_concepts/ai-agents|MCP]] 协议集成指南
 description: '# MCP 协议集成指南'
-category: ai-coding
+category: 16-ai-coding-tools-opencode
 tags:
 - ai
 - coding

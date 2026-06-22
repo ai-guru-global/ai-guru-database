@@ -1,6 +1,6 @@
 ---
 title: AI Product Manager 面试准备
-category: 23-interviews-ai-product-manager
+category: 21-interviews-ai-product-manager
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "**需求洞察**: 场景挖掘与用户价值定义。"
 created: 2026-05-31

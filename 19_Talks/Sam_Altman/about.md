@@ -1,6 +1,6 @@
 ---
 title: Sam Altman 简介 (Sam Altman)
-category: 21-talks
+category: 19-talks-sam-altman
 tags: ["talks", "speeches", "insights", "leaders", "OpenAI", "AGI", "scaling-laws", "startup"]
 summary: "OpenAI CEO，将生成式 AI 从实验室推向全球亿万用户的科技企业家。"
 created: 2026-05-31

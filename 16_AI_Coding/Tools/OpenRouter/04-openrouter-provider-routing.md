@@ -5,13 +5,13 @@ tags:
 - ai
 - ai-coding
 created: 2026-06-12
-category: 17-ai-coding
+category: 16-ai-coding-tools-openrouter
 summary: ""
 ---
 title: 智能路由与 Provider 选择
 description: '**文档类型**: 架构深度 | **最后更新**: 2026-03 | **关键词**: OpenRouter, Provider Routing,
  Load Balancing, Fallback, Auto Router, Throughput, Latency, Performance Threshold'
-category: ai-coding
+category: 16-ai-coding-tools-openrouter
 tags:
 - ai
 - coding

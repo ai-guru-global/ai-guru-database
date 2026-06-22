@@ -1,6 +1,6 @@
 ---
 title: 联邦学习 (Federated Learning)
-category: "19-ethics-safety"
+category: "17-ethics-safety-federated-learning"
 tags: ["federated-learning", "privacy", "distributed-training", "FedAvg"]
 summary: "联邦学习让多个参与方在不共享原始数据的前提下协作训练模型，是隐私保护 AI 的核心技术。"
 created: 2026-06-04

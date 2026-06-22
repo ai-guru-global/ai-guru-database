@@ -1,6 +1,6 @@
 ---
 title: "KAI Scheduler: 大规模 AI GPU 调度器"
-category: "12-architecture-infrastructure"
+category: "12-architecture-infrastructure-cncf-cloud-native-ai"
 tags: ["cncf", "kubernetes", "scheduling", "kai-scheduler", "gpu", "topology"]
 summary: "> **一句话理解**: KAI Scheduler 是为万卡级 AI 集群设计的 CNCF 沙箱调度器——靠拓扑感知（同机架/同交换机优先）+ 主动碎片整理 + 大规模公平调度，在 GPU 紧张时把吞吐和拓扑带宽同时拉满。"
 created: "2026-06-16"

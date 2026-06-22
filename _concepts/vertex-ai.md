@@ -1,6 +1,6 @@
 ---
 title: "Google Vertex AI"
-category: concept
+category: -concepts
 tags: ["vertex-ai", "google-cloud", "gcp", "ai-platform", "mlops", "foundation-model", "gemini", "tpus"]
 relationships:
   - target: "_concepts/cloud-ai-platform"

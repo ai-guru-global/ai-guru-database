@@ -1,6 +1,6 @@
 ---
 title: Prompt Engineer 面试准备
-category: 23-interviews-prompt-engineer
+category: 21-interviews-prompt-engineer
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "**提示词设计**: 任务分解、约束与质量控制。"
 created: 2026-05-31

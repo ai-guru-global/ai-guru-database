@@ -1,6 +1,6 @@
 ---
 title: "保护生成式AI应用程序"
-category: "course"
+category: "17-ethics-safety"
 tags: ["microsoft-genai-course", "ai-security", "red-teaming", "data-poisoning", "prompt-injection"]
 summary: "深入分析AI系统面临的安全威胁（数据投毒、提示注入、供应链攻击），介绍安全测试方法、红队测试及防御策略。"
 created: "2026-06-12"

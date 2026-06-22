@@ -1,6 +1,6 @@
 ---
 title: 'AI 编程 - 小白版'
-category: '17-ai-coding'
+category: '16-ai-coding'
 tags: ["ai-coding", "code-generation", "cursor", "github-copilot"]
 summary: '> **一句话秒懂**: AI 编程就像手机输入法的"自动补全"进化成了超级版——你写一句话，它帮你写完整个程序。'
 created: '2026-05-31'

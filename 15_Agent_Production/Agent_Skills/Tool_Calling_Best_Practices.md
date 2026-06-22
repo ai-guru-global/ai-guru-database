@@ -1,6 +1,6 @@
 ---
 title: "Tool Calling 最佳实践"
-category: 13-agent-production-agent-skills
+category: 15-agent-production-agent-skills
 tags: ["ai-agents", "tool-calling", "function-calling", "mcp", "agent-skills", "production"]
 summary: "> **一句话理解**: Tool Calling 就是让 AI 从'只会说话'变成'能动手做事'——通过函数调用连接 LLM 的语言理解能力和外部工具的执行能力。"
 created: 2026-06-12

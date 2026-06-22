@@ -1,6 +1,6 @@
 ---
 title: 04 自然语言处理与大模型 - 小白版
-category: 04-nlp-llms
+category: 05-nlp-llms
 tags: ["nlp", "llm", "transformer", "gpt", "bert"]
 summary: "> **欢迎来到 AI 最火爆的领域!** 这一章将带你了解让 ChatGPT、Sora 等神奇 AI 成为可能的核心技术。"
 created: 2026-05-31

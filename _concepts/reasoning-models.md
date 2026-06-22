@@ -1,6 +1,6 @@
 ---
 title: 推理模型
-category: concepts
+category: -concepts
 tags:
 - nlp
 - reasoning

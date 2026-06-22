@@ -1,6 +1,6 @@
 ---
 title: "A/B 测试框架"
-category: concepts
+category: -concepts
 tags: ["ab-testing", "online-evaluation", "experimentation", "model-evaluation", "statistics"]
 relationships:
   - target: "_concepts/model-evaluation"

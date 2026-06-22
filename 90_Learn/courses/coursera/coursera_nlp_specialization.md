@@ -1,6 +1,6 @@
 ---
 title: "NLP 专项课程 (Coursera)"
-category: "90-learn"
+category: "90-learn-courses-coursera"
 tags: ["nlp", "coursera", "course", "deeplearning-ai"]
 summary: "Coursera NLP 专项课程(DeepLearning.AI),覆盖情感分析、机器翻译、注意力机制、Transformer 等 NLP 核心技术。"
 sources:

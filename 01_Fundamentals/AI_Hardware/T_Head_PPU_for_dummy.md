@@ -1,6 +1,6 @@
 ---
 title: "平头哥 PPU 大白话解读"
-category: "01-fundamentals"
+category: "01-fundamentals-ai-hardware"
 tags: ["ai-chip", "chinese-chip", "t-head", "ppu", "zhenwu", "for-dummy", "alibaba"]
 summary: "用大白话解释阿里巴巴平头哥 PPU 是什么、真武 810E/M890 能干啥、FP32 到 FP4 精度又是啥意思。"
 sources:

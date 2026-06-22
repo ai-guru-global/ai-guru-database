@@ -5,12 +5,12 @@ tags:
 - ai
 - ai-coding
 created: 2026-06-12
-category: 17-ai-coding
+category: 16-ai-coding-tools-openrouter
 summary: ""
 ---
 title: Prompt Caching 与成本优化
 description: '# Prompt Caching 与成本优化'
-category: ai-coding
+category: 16-ai-coding-tools-openrouter
 tags:
 - ai
 - coding

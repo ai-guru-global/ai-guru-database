@@ -1,6 +1,6 @@
 ---
 title: "Hugging Face 量化生态：BitsAndBytes, AWQ, GPTQ 与 GGUF"
-category: "09-deployment-inference"
+category: "10-deployment-inference"
 tags: ["quantization", "huggingface", "llm-inference", "bitsandbytes", "awq", "gptq", "gguf"]
 summary: "> **一句话理解**: Hugging Face 通过统一的 `quantization_config` 接口，将大模型领域碎片化的量化技术（INT8/INT4/FP4）完美整合。无论你是要动态加载、高性能推理还是部署到边缘设备，都能轻松配置。"
 created: "2026-06-12"

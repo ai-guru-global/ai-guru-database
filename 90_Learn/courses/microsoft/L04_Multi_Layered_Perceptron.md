@@ -1,6 +1,6 @@
 ---
 title: "L04 - 多层感知器及创建自己的框架"
-category: "90-learn"
+category: "90-learn-courses-microsoft"
 tags: ["microsoft-ai-course", "multilayer-perceptron", "backpropagation", "sgd", "numpy"]
 summary: "从单层感知器扩展到多层感知器（MLP），并用手写 NumPy 框架理解前向传播、反向传播与梯度下降。"
 source_url: "https://raw.githubusercontent.com/microsoft/AI-For-Beginners/main/lessons/3-NeuralNetworks/04-OwnFramework/README.md"

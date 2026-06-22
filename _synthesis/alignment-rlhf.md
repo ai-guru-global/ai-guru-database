@@ -3,7 +3,7 @@ title: 价值对齐 × RLHF：从人类反馈到可扩展监督
 description: 跨域合成：价值对齐（Value Alignment）与 RLHF（基于人类反馈的强化学习）的技术演进、方法论融合与前沿方向
 date: 2026-05-31
 tags: [alignment, rlhf, value-alignment, reinforcement-learning, llm-training, safety, constitutional-ai]
-category: synthesis
+category: -synthesis
 created: 2026-06-12
 summary: ""
 ---

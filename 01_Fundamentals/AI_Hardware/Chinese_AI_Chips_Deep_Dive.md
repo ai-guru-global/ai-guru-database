@@ -1,6 +1,6 @@
 ---
 title: "国产 AI 芯片深度解析 2026"
-category: "01-fundamentals"
+category: "01-fundamentals-ai-hardware"
 tags: ["ai-chip", "chinese-chip", "huawei-ascend", "cambricon", "mthreads", "t-head", "pingtouge", "ppu", "inference", "training", "hardware"]
 summary: "全面解析中国 12 家国产 AI 芯片厂商的技术架构、产品规格、软件生态和训练验证状态，覆盖华为昇腾、寒武纪、海光、摩尔线程、平头哥等头部厂商，含横向对比矩阵和选型决策树。"
 sources:

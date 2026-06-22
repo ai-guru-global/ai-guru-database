@@ -1,6 +1,6 @@
 ---
 title: AI Policy Specialist 面试准备
-category: 23-interviews-ai-policy-specialist
+category: 21-interviews-ai-policy-specialist
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "**政策研究**: AI 法规、合规与治理框架研究。"
 created: 2026-05-31

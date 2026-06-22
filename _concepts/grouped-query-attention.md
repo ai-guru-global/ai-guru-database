@@ -1,6 +1,6 @@
 ---
 title: Grouped-Query Attention (GQA)
-category: concepts
+category: -concepts
 tags: [attention, kv-cache, gqa, mqa, mha, inference-optimization]
 relationships:
   - target: "_concepts/transformer-architecture"

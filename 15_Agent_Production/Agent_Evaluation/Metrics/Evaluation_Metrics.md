@@ -1,6 +1,6 @@
 ---
 title: Evaluation Metrics
-category: 13-agent-production-16-agent-evaluation-metrics
+category: 15-agent-production-agent-evaluation-metrics
 tags: ["ai-agents", "agent-framework", "production", "langgraph", "model-evaluation"]
 summary: "> Comprehensive catalog of metrics for AI agent evaluation"
 created: 2026-05-31

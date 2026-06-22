@@ -1,6 +1,6 @@
 ---
 title: DeepSeek-R1 技术深度解析
-category: 04-nlp-llms-reasoning
+category: 05-nlp-llms-reasoning-models
 tags: [deepseek, r1, reasoning, grpo, reinforcement-learning, cold-start, self-evolution, open-source]
 summary: 深度剖析 DeepSeek-R1 的训练全流程、GRPO 算法、冷启动策略、自我进化现象和开源工程实践。
 date: 2026-06-01

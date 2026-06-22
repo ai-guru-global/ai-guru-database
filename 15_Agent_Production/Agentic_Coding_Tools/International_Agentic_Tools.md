@@ -1,6 +1,6 @@
 ---
 title: 国际顶级 Agentic Coding 工具
-category: 13-agent-production-agentic-coding-tools
+category: 15-agent-production-agentic-coding-tools
 tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> **一句话理解**: 除了 Claude Code 和 Cursor，国际上还有 Aider、Continue、CodeRabbit、Cody 等众多优秀的开源 Agentic Coding 工具，它们各有特色——Aider 以终端为中心、Continue 以 VS Code 扩展见长、CodeRabbit 专注代码审查、Cody 来自 Sourcegr"
 created: 2026-05-31

@@ -1,6 +1,6 @@
 ---
 title: "智能体 AI 权威指南 Part 2: 多智能体系统全解"
-category: agent-foundations
+category: 15-agent-production-agent-foundations
 tags: [multi-agent, collaboration, hierarchical, flat, dynamic, SOP, human-in-the-loop, communication-protocol, social-simulation, game-theory, A2A, AgentBench, continuous-learning]
 summary: "从协作架构到角色分工、通信协议、社会模拟、博弈论、A2A 互操作协议、评估体系与持续进化，系统梳理多智能体系统的完整知识体系"
 created: 2026-06-16

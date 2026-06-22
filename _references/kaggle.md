@@ -1,6 +1,6 @@
 ---
 title: "Kaggle 数据科学竞赛平台"
-category: "references"
+category: "-references"
 tags: ["kaggle", "competition", "dataset", "notebook", "practice"]
 summary: "Google 旗下数据科学竞赛平台,提供数据集、GPU Notebook 和社区,是 ML 实战练习的首选平台。"
 sources:

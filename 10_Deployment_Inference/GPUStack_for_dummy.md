@@ -1,6 +1,6 @@
 ---
 title: 'GPUStack 入门指南 🚀'
-category: '09-deployment-inference'
+category: '10-deployment-inference'
 tags: ["deployment", "inference", "serving", "gpustack", "maas", "for-dummy"]
 summary: '> **一句话秒懂**: GPUStack 就像一个"AI 模型应用商店 + 机房管家"——把各种 GPU 统一管理起来, 点几下就能部署大模型, 还能用 OpenAI 一样的 API 调用。'
 created: '2026-06-15'

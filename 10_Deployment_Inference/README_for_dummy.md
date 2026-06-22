@@ -1,6 +1,6 @@
 ---
 title: '09 部署与推理 — 小白版 🚀'
-category: '09-deployment-inference'
+category: '10-deployment-inference'
 tags: ["deployment", "inference", "serving", "vllm"]
 summary: '> **一句话秒懂**: 部署就是让 AI "上岗"——训练好的模型怎么变成服务，让大家都能用，同时要快、稳、省钱！'
 created: '2026-05-31'

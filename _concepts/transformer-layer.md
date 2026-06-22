@@ -1,6 +1,6 @@
 ---
 title: Transformer Layer（层）大白话
-category: concepts
+category: -concepts
 tags: [transformer, attention, layer, architecture, beginner]
 relationships:
   - target: "_concepts/transformer-architecture"

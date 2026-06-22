@@ -1,6 +1,6 @@
 ---
 title: AI智能体 - 小白版 🤖
-category: 06-reinforcement-learning-ai-agents
+category: 15-agent-production-agent-foundations
 tags: ["reinforcement-learning", "agent", "mdp", "ai-agents"]
 summary: "> **一句话秒懂**: AI智能体就是能像员工一样独立工作的AI——能理解任务、制定计划、使用工具、记住信息,还能自我反思改进,不需要你手把手指挥每一步!"
 created: 2026-05-31

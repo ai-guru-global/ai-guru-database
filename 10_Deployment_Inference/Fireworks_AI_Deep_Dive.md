@@ -1,6 +1,6 @@
 ---
 title: "Fireworks AI: 快速推理云平台"
-category: "09-deployment-inference"
+category: "10-deployment-inference"
 tags: ["fireworks-ai", "inference", "cloud-api", "open-source", "llm", "deployment"]
 summary: "> **一句话理解**: Fireworks AI 是专注于快速推理和模型微调的云端 AI 平台——以 State Space Model (SSM) 和快速投机解码著称，高性价比，适合批量处理和企业级部署。"
 created: "2026-06-15"

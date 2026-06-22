@@ -1,6 +1,6 @@
 ---
 title: Applied Scientist 按公司/级别区分的题库
-category: 23-interviews-applied-scientist
+category: 21-interviews-applied-scientist
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "业务指标与模型指标如何对齐？"
 created: 2026-05-31

@@ -1,6 +1,6 @@
 ---
 title: "LoRA 与参数高效微调 (PEFT)"
-category: concept
+category: -concepts
 tags: ["lora", "peft", "fine-tuning", "parameter-efficient", "qlora", "adapter"]
 relationships:
   - target: "_concepts/fine-tuning-techniques"

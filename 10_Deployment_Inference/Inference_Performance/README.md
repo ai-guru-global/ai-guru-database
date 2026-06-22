@@ -1,6 +1,6 @@
 ---
 title: 推理性能专题
-category: 09-deployment-inference
+category: 10-deployment-inference-inference-performance
 tags: [inference, performance, latency, throughput, optimization, benchmarking]
 summary: "> 从指标定义到系统优化：LLM 推理性能工程的知识地图与实践指南。"
 created: 2026-06-15

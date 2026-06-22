@@ -1,6 +1,6 @@
 ---
 title: RDMA/RoCE (高速 GPU 网络)
-category: concepts
+category: -concepts
 tags: [infrastructure, networking, rdma, roce, gpu-cluster]
 relationships:
   - target: "_concepts/heterogeneous-gpu"

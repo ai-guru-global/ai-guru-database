@@ -1,6 +1,6 @@
 ---
 title: 22 Papers — 小白版 📚
-category: 22-papers
+category: 20-papers
 tags: ["paper", "deep-dive"]
 summary: "## 为什么要读论文？"
 created: 2026-05-31

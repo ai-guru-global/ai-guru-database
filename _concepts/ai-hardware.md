@@ -1,6 +1,6 @@
 ---
 title: AI硬件
-category: concepts
+category: -concepts
 tags: ["hardware", "gpu", "AI-chips", "NVIDIA", "AMD", "Blackwell", "inference", "quantization"]
 aliases: [AI Hardware, GPU, AI芯片, H100, H200, B200, 硬件选型]
 relationships:

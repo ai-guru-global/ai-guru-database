@@ -1,6 +1,6 @@
 ---
 title: 云产品智能体排行榜 2026
-category: 13-agent-production-16-agent-evaluation
+category: 15-agent-production-agent-evaluation
 tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> 基于综合测评框架的权威排名，覆盖 15+ 款云产品智能体"
 created: 2026-05-31

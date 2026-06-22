@@ -1,6 +1,6 @@
 ---
 title: "StatQuest Josh Starmer YouTube 频道"
-category: "21-talks"
+category: "19-talks-josh-starmer"
 tags: ["youtube", "statistics", "machine-learning", "mathematics", "visualization"]
 summary: "StatQuest 频道用简单直觉的方式讲解统计学和机器学习,Josh Starmer 的可视化教学让复杂数学变得易懂。"
 sources:

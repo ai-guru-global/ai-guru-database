@@ -1,6 +1,6 @@
 ---
 title: "AI for Science 深度解读: 从 AlphaFold 到科学基础模型"
-category: "20-ai-applications"
+category: "18-ai-applications-industry-ai-for-science"
 tags: ["ai-for-science", "alphafold", "drug-discovery", "weather-prediction", "materials-science", "protein", "molecular-dynamics", "neural-operator"]
 summary: "> **一句话理解**: AI for Science 是用深度学习解决自然科学的核心问题——预测蛋白质结构、发现新药、模拟天气、设计新材料，它正在重塑科学研究的方式，从「实验驱动」走向「AI 驱动的科学发现」。"
 created: 2026-06-04

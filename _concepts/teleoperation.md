@@ -1,6 +1,6 @@
 ---
 title: "遥操作 (Teleoperation)"
-category: concepts
+category: -concepts
 tags: ["teleoperation", "robotics", "embodied-ai", "vla", "imitation-learning"]
 summary: "遥操作是具身智能数据采集的核心手段——人类远程控制机器人执行任务，记录操作轨迹用于模仿学习。"
 created: 2026-06-12

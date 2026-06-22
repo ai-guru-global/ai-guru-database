@@ -1,6 +1,6 @@
 ---
 title: 投机解码前沿技术 2026
-category: 09-deployment-inference
+category: 10-deployment-inference
 tags: [speculative-decoding, medusa, lookahead-decoding, draft-model, inference-optimization, fast-decoding]
 summary: 深度解析投机解码及其变体（Medusa、Lookahead Decoding、REST）的技术原理、实现细节和工程实践，覆盖从标准投机解码到无 draft 模型方案的全谱系。
 date: 2026-06-01

@@ -1,6 +1,6 @@
 ---
 title: "LLM 推理引擎基准测试指南"
-category: "09-deployment-inference"
+category: "10-deployment-inference"
 tags: ["deployment", "inference", "benchmarking", "llm", "performance", "ttft", "tpot", "throughput"]
 summary: "> **一句话理解**: 面向 LLM 推理引擎的基准测试指南——统一指标定义、测试工具、评测方法和结果解读，帮助你客观对比 vLLM、SGLang、TensorRT-LLM 等引擎的真实性能。"
 created: "2026-06-15"

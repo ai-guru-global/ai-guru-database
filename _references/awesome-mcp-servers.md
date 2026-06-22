@@ -1,6 +1,6 @@
 ---
 title: "Awesome MCP Servers 集合 (15k)"
-category: "references"
+category: "-references"
 tags: ["mcp", "model-context-protocol", "github-repo", "servers", "tools"]
 summary: "社区维护的 MCP 服务器集合,涵盖文件系统、数据库、搜索、开发工具等各类 MCP 服务。"
 sources:

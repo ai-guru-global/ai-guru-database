@@ -1,6 +1,6 @@
 ---
 title: "AIBrix: 模块化的大模型推理基础设施组件"
-category: "12-architecture-infrastructure"
+category: "12-architecture-infrastructure-cncf-cloud-native-ai"
 tags: ["cncf", "kubernetes", "inference", "aibrix", "vllm", "gateway"]
 summary: "> **一句话理解**: AIBrix 是一组即插即用的 GenAI 推理基础设施组件——智能路由、前缀缓存亲和、GPU 弹性伸缩、Token 级监控，专为在 vLLM/SGLang 之上叠加'运营能力'而设计，而非又一个完整推理平台。"
 created: "2026-06-16"

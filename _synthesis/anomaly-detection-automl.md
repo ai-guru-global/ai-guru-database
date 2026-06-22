@@ -1,6 +1,6 @@
 ---
 title: "异常检测 × AutoML — 自动化异常发现"
-category: synthesis
+category: -synthesis
 tags: [anomaly-detection, automl, machine-learning, unsupervised, autoencoder, isolation-forest]
 sources:
   - "[[_concepts/anomaly-detection]]"

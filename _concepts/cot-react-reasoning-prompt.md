@@ -1,6 +1,6 @@
 ---
 title: "CoT / ReAct / ToT — 推理时 Prompt 技巧"
-category: concept
+category: -concepts
 tags: ["prompt-engineering", "cot", "react", "tot", "reasoning", "agent-prompting", "chain-of-thought"]
 relationships:
   - target: "_concepts/prompt-engineering"

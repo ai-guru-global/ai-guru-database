@@ -1,6 +1,6 @@
 ---
 title: 计算机视觉
-category: concepts
+category: -concepts
 tags: ["computer-vision", "image-classification", "object-detection", "cnn", "vit", "deep-learning"]
 aliases: [Computer multimodal-vision, CV, 计算机视觉基础]
 relationships:

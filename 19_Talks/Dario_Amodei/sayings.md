@@ -1,6 +1,6 @@
 ---
 title: Dario Amodei 关于 AI 的观点 (Dario Amodei on AI)
-category: 21-talks-dario-amodei
+category: 19-talks-dario-amodei
 tags: ["talks", "speeches", "insights", "leaders"]
 summary: "1. **“Frontier models carry systemic risk; we need evaluations before deployment.” / “前沿模型有系统性风险，必须在部署前评估。”**"
 created: 2026-05-31

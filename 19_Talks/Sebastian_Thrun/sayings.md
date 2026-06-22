@@ -1,6 +1,6 @@
 ---
 title: Sebastian Thrun 关于 AI 的观点 (Sebastian Thrun on AI)
-category: 21-talks-sebastian-thrun
+category: 19-talks-sebastian-thrun
 tags: ["talks", "speeches", "insights", "leaders"]
 summary: "1. **“Self-driving cars can save lives—most accidents are human error.” / “自动驾驶可以拯救生命——大多数事故源于人为错误。”**"
 created: 2026-05-31

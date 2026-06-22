@@ -1,6 +1,6 @@
 ---
 title: Continuous Batching (连续批处理)
-category: concepts
+category: -concepts
 tags: [inference, batching, scheduling, throughput]
 relationships:
   - target: "_concepts/model-deployment"

@@ -1,6 +1,6 @@
 ---
 title: 提示工程
-category: concepts
+category: -concepts
 tags: [fine-tuning-techniques, prompt-engineering, cot, few-shot, llm-infrastructure]
 relationships:
   - target: "[[_concepts/llm-architectures]]"

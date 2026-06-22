@@ -1,6 +1,6 @@
 ---
 title: "L14 - 语义词嵌入：Word2Vec 与 GloVe"
-category: "90-learn"
+category: "90-learn-courses-microsoft"
 tags: ["microsoft-ai-course", "nlp", "word-embeddings", "word2vec", "glove", "pytorch", "tensorflow"]
 summary: "本课介绍如何用低维稠密向量表示词语，从可学习的 Embedding 层到 Word2Vec/GloVe 等语义预训练嵌入，并讨论上下文嵌入对一词多义的必要性。"
 source_url: "https://raw.githubusercontent.com/microsoft/AI-For-Beginners/main/lessons/5-NLP/14-Embeddings/README.md"

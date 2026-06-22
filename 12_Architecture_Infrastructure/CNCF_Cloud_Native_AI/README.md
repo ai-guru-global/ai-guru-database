@@ -1,6 +1,6 @@
 ---
 title: "CNCF 云原生大模型 (LLM) 项目全景导览"
-category: "12-architecture-infrastructure"
+category: "12-architecture-infrastructure-cncf-cloud-native-ai"
 tags: ["cncf", "cloud-native", "kubernetes", "llm", "genai", "inference", "ai-infrastructure"]
 summary: "> **一句话理解**: 这是 CNCF 生态中与大模型 (LLM/GenAI) 相关的 20 个核心项目的系统性梳理——按「推理 / 调度 / 平台 / AIOps / 网关」五大层次组织，每个项目覆盖基础知识、使用、运维、配置，面向生产环境。"
 created: "2026-06-16"

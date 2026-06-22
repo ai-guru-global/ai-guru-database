@@ -1,6 +1,6 @@
 ---
 title: Demis Hassabis 关于 AI 的观点 (Demis Hassabis on AI)
-category: 21-talks-demis-hassabis
+category: 19-talks-demis-hassabis
 tags: ["talks", "speeches", "insights", "leaders"]
 summary: "1. **“AGI is not about building robots; it’s about solving intelligence to solve everything else.” / “AGI 的目标不是造机器人，而是解决智能以解决其他问题。”**"
 created: 2026-05-31

@@ -1,6 +1,6 @@
 ---
 title: 'AI 面试准备 — 小白版 🎯'
-category: '23-interviews'
+category: '21-interviews'
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: '> **一句话秒懂**: 这一章是 AI 领域的"求职攻略"——帮你了解不同 AI 岗位需要什么技能、会考什么题目、怎么准备，助你斩获 offer！'
 created: '2026-05-31'

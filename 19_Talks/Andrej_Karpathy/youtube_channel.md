@@ -1,6 +1,6 @@
 ---
 title: "Andrej Karpathy YouTube 频道"
-category: "21-talks"
+category: "19-talks-andrej-karpathy"
 tags: ["youtube", "karpathy", "deep-learning", "llm", "education"]
 summary: "前 OpenAI/Tesla AI 负责人 Andrej Karpathy 的 YouTube 频道,深入浅出讲解 LLM、神经网络、GPT 等核心技术。"
 sources:

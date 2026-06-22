@@ -16,7 +16,7 @@ tags:
   - verification
   - langchain
 created: 2026-06-12
-category: 13-agent-production
+category: 15-agent-production-agent-harness
 summary: ""
 ---
 

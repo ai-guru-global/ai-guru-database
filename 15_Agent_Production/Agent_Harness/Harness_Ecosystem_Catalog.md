@@ -1,6 +1,6 @@
 ---
 title: Agent Harness 生态目录
-category: 13-agent-production-agent-harness
+category: 15-agent-production-agent-harness
 tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> 收录主流 Harness 平台、框架、工具链和观测系统，作为选型参考。"
 created: 2026-05-31

@@ -1,6 +1,6 @@
 ---
 title: Expert Parallelism
-category: concepts
+category: -concepts
 tags: [moe, expert-parallelism, distributed-inference, all-to-all, performance]
 relationships:
   - target: "_concepts/mixture-of-experts"

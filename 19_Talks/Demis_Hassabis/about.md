@@ -1,6 +1,6 @@
 ---
 title: Demis Hassabis 简介 (Demis Hassabis)
-category: 21-talks
+category: 19-talks-demis-hassabis
 tags: ["talks", "speeches", "insights", "leaders", "DeepMind", "AGI", "AlphaGo", "AlphaFold", "Nobel-Prize"]
 summary: "Google DeepMind CEO，用 AlphaGo 和 AlphaFold 证明 AI 可以攻克人类最复杂的智力与科学难题。"
 created: 2026-05-31

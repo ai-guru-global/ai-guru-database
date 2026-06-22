@@ -1,6 +1,6 @@
 ---
 title: AI 智能体 × 强化学习
-category: synthesis
+category: -synthesis
 tags: ["ai-agents", "reinforcement-learning", "react", "planning", "tool-use", "mcp"]
 sources: [_concepts/ai-agents.md, _concepts/reinforcement-learning.md]
 created: 2026-05-31T21:30:00+08:00

@@ -1,6 +1,6 @@
 ---
 title: "DeepSeek (深度求索) 技术深度解析"
-category: 04-nlp-llms-chinese-llm
+category: 05-nlp-llms-chinese-llm-ecosystem
 tags: [deepseek, chinese-llm, moe, mla, grpo, reasoning, fp8-training, r1, v3, v4, open-source, deepseek-v4, csa, hca, mhc, muon, hybrid-attention]
 summary: "全面剖析 DeepSeek 从 7B Dense 到 V4 系列（V4-Pro 1.6T-A49B / V4-Flash 284B-A13B，1M 上下文）的完整技术演进：MLA 注意力压缩、DeepSeekMoE 路由、FP8/FP4+FP8 混合精度训练、GRPO 强化学习、R1 自进化推理，以及 V4 的 Hybrid Attention (CSA+HCA)、Manifold-constrained Hyper-Connections (mHC)、Muon 优化器与三档思考力度（Non-think/High/Max）。"
 created: 2026-06-01

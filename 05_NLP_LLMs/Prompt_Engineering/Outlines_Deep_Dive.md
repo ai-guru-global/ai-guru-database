@@ -1,6 +1,6 @@
 ---
 title: "Outlines: 结构化输出框架"
-category: "04-nlp-llms-prompt-engineering"
+category: "05-nlp-llms-prompt-engineering"
 tags: ["nlp", "llm", "transformer", "gpt", "bert"]
 summary: "> **一句话理解**: Outlines 是 Joshi 团队的结构化生成框架——结合上下文无关文法 (CFG) 和有限状态机实现精确的格式控制，比 regex 引导更可靠。"
 created: "2026-05-31"

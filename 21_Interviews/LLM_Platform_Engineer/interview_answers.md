@@ -1,6 +1,6 @@
 ---
 title: LLM Platform Engineer 面试题实例答案
-category: 23-interviews-llm-platform-engineer
+category: 21-interviews-llm-platform-engineer
 tags: ["interviews", "career", "experience", "practitioners", "llm"]
 summary: "**答**：采用动态批处理、KV Cache、算子融合与量化；系统层做弹性扩缩、路由与负载均衡；按业务分级使用不同模型与缓存策略。"
 created: 2026-05-31

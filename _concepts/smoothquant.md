@@ -1,6 +1,6 @@
 ---
 title: "SmoothQuant"
-category: concepts
+category: -concepts
 tags: ["smoothquant", "quantization", "int8", "inference", "llm", "optimization"]
 relationships:
   - target: "_concepts/quantization"

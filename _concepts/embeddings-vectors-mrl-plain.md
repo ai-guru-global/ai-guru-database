@@ -1,6 +1,6 @@
 ---
 title: "Embedding、向量与 MRL 大白话"
-category: concept
+category: -concepts
 tags: ["embedding", "vector", "matryoshka", "mrl", "for-dummy", "plain-chinese", "rag"]
 summary: "用大白话讲清楚 Embedding、向量和 MRL（俄罗斯套娃表示学习）三个核心概念：它们是什么、解决什么问题、生活中怎么理解。"
 relationships:

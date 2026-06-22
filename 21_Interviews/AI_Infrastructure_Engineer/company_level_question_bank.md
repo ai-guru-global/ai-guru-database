@@ -1,6 +1,6 @@
 ---
 title: AI Infrastructure Engineer 按公司/级别区分的题库
-category: 23-interviews-ai-infrastructure-engineer
+category: 21-interviews-ai-infrastructure-engineer
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "如何设计多租户训练平台与配额体系？"
 created: 2026-05-31

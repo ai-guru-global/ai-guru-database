@@ -1,6 +1,6 @@
 ---
 title: "L25 - 多模态网络 CLIP 与 VQGAN"
-category: "90-learn"
+category: "90-learn-courses-microsoft"
 tags: ["microsoft-ai-course", "multi-modal", "CLIP", "VQGAN", "DALL-E", "contrastive-learning"]
 summary: "本课介绍多模态学习的核心范式：CLIP 如何通过对比学习（Contrastive Learning）对齐图像与文本，VQGAN+CLIP 如何实现文本到图像生成，以及 DALL-E 系列的基本思想。"
 source_url: "https://raw.githubusercontent.com/microsoft/AI-For-Beginners/main/lessons/X-Extras/X1-MultiModal/README.md"

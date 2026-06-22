@@ -292,7 +292,7 @@ updated: "2026-06-16"
 ```yaml
 ---
 title: "{Topic} 深度解析"
-category: "{chapter-number}-{chapter-name}"
+category: "92-plan"
 tags: ["{tag1}", "{tag2}", "{tag3}"]
 summary: "> **一句话理解**: {一句话描述}"
 created: "YYYY-MM-DD"

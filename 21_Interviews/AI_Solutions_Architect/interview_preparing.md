@@ -1,6 +1,6 @@
 ---
 title: AI Solutions Architect 面试准备
-category: 23-interviews-ai-solutions-architect
+category: 21-interviews-ai-solutions-architect
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "**方案设计**: 端到端 AI 解决方案与架构落地。"
 created: 2026-05-31

@@ -1,6 +1,6 @@
 ---
 title: AI Evaluation Engineer 题库
-category: 23-interviews-ai-evaluation-engineer
+category: 21-interviews-ai-evaluation-engineer
 tags: ["interviews", "career", "experience", "practitioners", "model-evaluation"]
 summary: "如何构建评测集并控制偏差？"
 created: 2026-05-31

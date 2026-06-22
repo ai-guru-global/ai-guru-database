@@ -1,6 +1,6 @@
 ---
 title: "MLabonne LLM 课程 (80k)"
-category: "references"
+category: "-references"
 tags: ["llm", "learning-resource", "github-repo", "fine-tuning", "quantization", "roadmap"]
 summary: "GitHub 最受欢迎的 LLM 学习路线(80k star),含三大部分:LLM 基础、LLM 科学家、LLM 工程师,附带 Colab 实战 Notebook。"
 sources:

@@ -1,6 +1,6 @@
 ---
 title: "LoRA / QLoRA / SFT / RLHF / DPO 大白话串讲"
-category: concepts
+category: -concepts
 tags: ["lora", "qlora", "sft", "rlhf", "dpo", "fine-tuning", "alignment", "peft"]
 aliases:
   - "LoRA QLoRA SFT RLHF DPO"

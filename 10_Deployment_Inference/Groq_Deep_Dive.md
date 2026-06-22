@@ -1,6 +1,6 @@
 ---
 title: "Groq: LPU 高速推理云平台"
-category: "09-deployment-inference"
+category: "10-deployment-inference"
 tags: ["groq", "lpu", "inference", "low-latency", "cloud-api", "deployment"]
 summary: "> **一句话理解**: Groq 是基于自研 LPU (Language Processing Unit) 芯片的高速 LLM 推理云平台，以极低延迟和极具竞争力的价格提供 OpenAI 兼容 API。"
 created: "2026-06-15"

@@ -1,6 +1,6 @@
 ---
 title: 云产品智能体评估系统 - 系统架构文档
-category: 13-agent-production-16-agent-evaluation-docs-architecture
+category: 15-agent-production-agent-evaluation-docs-architecture
 tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> 基于 CAPER 五维模型的四层 Harness 架构"
 created: 2026-05-31

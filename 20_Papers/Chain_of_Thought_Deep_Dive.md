@@ -1,6 +1,6 @@
 ---
 title: "论文深度解读: Chain-of-Thought — 让 LLM 逐步推理"
-category: "22-papers"
+category: "20-papers"
 tags: ["paper", "chain-of-thought", "reasoning", "prompting", "CoT", "few-shot", "Wei"]
 summary: "Chain-of-Thought (Wei et al., 2022) 发现通过在 prompt 中加入推理步骤示例，可以让 LLM 在复杂推理任务上性能大幅提升，开创了推理链提示的整个研究方向。"
 created: 2026-06-04

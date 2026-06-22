@@ -5,13 +5,13 @@ tags:
 - ai
 - ai-coding
 created: 2026-06-12
-category: 17-ai-coding
+category: 16-ai-coding-tools-openrouter
 summary: ""
 ---
 title: 插件体系与 Web Search
 description: '**文档类型**: 功能详解 | **最后更新**: 2026-03 | **关键词**: OpenRouter, Plugins, Web
  Search, Exa, Firecrawl, Parallel, File Parser, Context Compression, Domain Filtering'
-category: ai-coding
+category: 16-ai-coding-tools-openrouter
 tags:
 - ai
 - coding

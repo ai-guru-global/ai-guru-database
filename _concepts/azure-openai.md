@@ -1,6 +1,6 @@
 ---
 title: "Azure OpenAI"
-category: concept
+category: -concepts
 tags: ["azure-openai", "microsoft", "azure", "cloud", "openai", "gpt", "enterprise", "api"]
 relationships:
   - target: "_concepts/cloud-ai-platform"

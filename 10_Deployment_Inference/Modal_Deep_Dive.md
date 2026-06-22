@@ -1,6 +1,6 @@
 ---
 title: "Modal 深度解析: 无服务器 GPU 云平台"
-category: "09-deployment-inference"
+category: "10-deployment-inference"
 tags: ["modal", "serverless", "gpu", "cloud", "inference", "python", "deployment", "vllm", "async"]
 summary: "> **一句话理解**: Modal 是无服务器 GPU 云平台，允许开发者用 Python 装饰器将函数部署为弹性 GPU/CPU 服务，按秒计费、自动扩缩容，适合快速原型、异步任务和弹性推理服务。"
 created: "2026-06-16"

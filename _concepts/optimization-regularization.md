@@ -1,6 +1,6 @@
 ---
 title: 优化与正则化
-category: concepts
+category: -concepts
 tags: ["deep-learning", "optimization", "regularization", "adam", "sgd", "learning-rate", "dropout", "weight-decay"]
 aliases: [Optimization, 训练优化, 优化器, 深度学习优化]
 relationships:

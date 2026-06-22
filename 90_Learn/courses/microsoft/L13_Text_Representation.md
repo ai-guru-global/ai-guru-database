@@ -1,6 +1,6 @@
 ---
 title: "L13 - 文本表示：词袋模型与 TF-IDF"
-category: "90-learn"
+category: "90-learn-courses-microsoft"
 tags: ["microsoft-ai-course", "nlp", "text-representation", "bag-of-words", "tf-idf"]
 summary: "本课介绍如何将文本转换为神经网络可处理的张量，重点讲解词袋模型（BoW）与 TF-IDF 两种经典表示方法，并说明它们的局限与后续方向。"
 source_url: "https://raw.githubusercontent.com/microsoft/AI-For-Beginners/main/lessons/5-NLP/13-TextRep/README.md"

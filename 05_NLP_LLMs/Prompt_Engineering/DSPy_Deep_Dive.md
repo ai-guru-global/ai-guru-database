@@ -1,6 +1,6 @@
 ---
 title: "DSPy: 可编程的 Prompt 优化框架"
-category: "04-nlp-llms-prompt-engineering"
+category: "05-nlp-llms-prompt-engineering"
 tags: ["nlp", "llm", "transformer", "gpt", "bert"]
 summary: "> **一句话理解**: DSPy 是斯坦福的可编程 Prompt 优化框架——用 Python 代码而非字符串定义 Prompt、自动优化模块组合、学会提示而非手工撰写。"
 created: "2026-05-31"

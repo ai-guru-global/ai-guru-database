@@ -1,6 +1,6 @@
 ---
 title: Transformer 架构
-category: concepts
+category: -concepts
 tags: ["deep-learning", "transformer", "attention", "self-attention", "bert", "gpt", "nlp"]
 aliases: [Transformer, 注意力机制, 自注意力, long-context-models Is All You Need]
 relationships:

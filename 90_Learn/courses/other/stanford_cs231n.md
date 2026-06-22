@@ -1,6 +1,6 @@
 ---
 title: "Stanford CS231n: 计算机视觉与深度学习"
-category: "90-learn-courses"
+category: "90-learn-courses-other"
 tags: ["course", "stanford", "computer-vision", "deep-learning"]
 summary: "Stanford 经典计算机视觉课程——CNN 架构、目标检测、图像生成、视觉 Transformer。"
 created: "2026-06-12"

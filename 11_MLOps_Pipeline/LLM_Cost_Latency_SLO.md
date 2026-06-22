@@ -1,6 +1,6 @@
 ---
 title: "LLM 成本与延迟 SLO"
-category: "10-mlops-pipeline"
+category: "11-mlops-pipeline"
 tags: ["llmops", "cost-optimization", "latency", "slo", "caching", "routing", "finops"]
 summary: "> **一句话理解**: LLM 推理成本比传统 ML 高 100–1000 倍——成本管理不是优化项，是 LLMOps 的生死线，必须从架构层设计缓存、路由、预算三道防线。"
 created: 2026-06-15

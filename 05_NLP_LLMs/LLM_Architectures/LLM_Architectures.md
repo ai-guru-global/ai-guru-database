@@ -1,6 +1,6 @@
 ---
 title: '大语言模型架构 (LLM Architectures)'
-category: '04-nlp-llms-llm-architectures'
+category: '05-nlp-llms-llm-architectures'
 tags: ["nlp", "llm", "transformer", "gpt", "bert"]
 summary: '> **一句话理解**: 大语言模型就像不同设计理念的"超级大脑"——有的专注理解(BERT),有的擅长创作(GPT),有的是全能选手(T5),还有的像"专家团队"(MoE),各有所长但都基于 Transformer 这一核心架构。'
 created: '2026-05-31'

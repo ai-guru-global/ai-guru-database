@@ -1,6 +1,6 @@
 ---
 title: GLM / 智谱AI (Zhipu AI) 技术深度剖析
-category: 04-nlp-llms-chinese-ecosystem
+category: 05-nlp-llms-chinese-llm-ecosystem
 tags: [glm, zhipu-ai, chatglm, cogvlm, cogagent, codegeex, autoglm, moe, chinese-llm, tsinghua, multimodal, glm-5, glm-5.2, mla, dsa, indexshare, mtp]
 summary: 从 GLM-130B 到 GLM-5.2 (744B-A40B MoE + MLA + DSA + 1M 上下文)，全面解析智谱AI/zai-org 的模型演进、架构创新、长程 Agent 能力与 MIT 纯开源生态。
 created: 2026-06-01

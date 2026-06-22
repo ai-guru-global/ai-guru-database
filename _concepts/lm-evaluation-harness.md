@@ -1,6 +1,6 @@
 ---
 title: "LM Evaluation Harness"
-category: concept
+category: -concepts
 tags: ["lm-evaluation-harness", "eleutherai", "evaluation", "benchmark", "llm", "few-shot", "perplexity"]
 relationships:
   - target: "_concepts/model-evaluation"

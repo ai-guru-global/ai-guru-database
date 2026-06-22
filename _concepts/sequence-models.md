@@ -1,6 +1,6 @@
 ---
 title: 序列模型
-category: concepts
+category: -concepts
 tags: [fine-tuning-techniques, rnn, lstm, gru, sequence-modeling]
 relationships:
   - target: "[[_concepts/transformer-architecture]]"

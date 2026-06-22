@@ -6,12 +6,12 @@ tags:
 - ai-coding
 - configuration
 created: 2026-06-12
-category: 17-ai-coding
+category: 16-ai-coding-tools-openrouter
 summary: ""
 ---
 title: 快速接入与环境配置
 description: '# 快速接入与环境配置'
-category: ai-coding
+category: 16-ai-coding-tools-openrouter
 tags:
 - ai
 - coding

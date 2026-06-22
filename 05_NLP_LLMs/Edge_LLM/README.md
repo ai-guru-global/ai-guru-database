@@ -1,6 +1,6 @@
 ---
 title: 小模型与端侧 LLM (Edge LLM)
-category: "04-nlp-llms"
+category: "05-nlp-llms-edge-llm"
 tags: ["edge-llm", "small-language-model", "on-device", "quantization", "efficient-llm"]
 summary: "小模型与端侧 LLM 覆盖 Phi/Gemma/Qwen 等高效小模型及端侧部署方案 (ONNX/MLC-LLM/MediaPipe)。"
 created: 2026-06-04

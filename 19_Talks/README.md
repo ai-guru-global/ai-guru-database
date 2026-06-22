@@ -1,6 +1,6 @@
 ---
 title: AI 名人演讲与观点 (Talks)
-category: 21-talks
+category: 19-talks
 tags: ["talks", "speeches", "insights", "leaders"]
 summary: "> **一句话理解**: 本章节收录 AI 领域最具影响力的领袖人物的核心观点、演讲精华与思想演进，帮助你从技术先驱的视角理解 AI 发展的脉络与未来方向。"
 created: 2026-05-31

@@ -1,6 +1,6 @@
 ---
 title: "AI 辅助编程速览 (AI-Assisted Coding in a Nutshell)"
-category: 17-ai-coding
+category: 16-ai-coding
 tags: [ai-coding, copilot, cursor, claude-code, aider, coding-agent]
 summary: "从代码补全到 Agentic Coding——一张图、一张表、一份决策清单，搞懂 2026 年 AI 编程全景。"
 created: 2026-06-05

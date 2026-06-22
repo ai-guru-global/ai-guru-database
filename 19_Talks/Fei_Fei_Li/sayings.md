@@ -1,6 +1,6 @@
 ---
 title: 李飞飞 (Fei-Fei Li) 关于 AI 的观点与格言
-category: 21-talks-fei-fei-li
+category: 19-talks-fei-fei-li
 tags: ["talks", "speeches", "insights", "leaders"]
 summary: "> 说明：以下整理李飞飞教授在公开场合关于 AI 的代表性言论，提供中英文对照与出处链接。"
 created: 2026-05-31

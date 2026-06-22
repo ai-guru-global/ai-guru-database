@@ -1,6 +1,6 @@
 ---
 title: AI Evaluation Engineer 面试准备
-category: 23-interviews-ai-evaluation-engineer
+category: 21-interviews-ai-evaluation-engineer
 tags: ["interviews", "career", "experience", "practitioners", "model-evaluation"]
 summary: "**评测体系**: 评测基准、指标与自动化测试。"
 created: 2026-05-31

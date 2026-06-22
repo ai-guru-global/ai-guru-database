@@ -1,6 +1,6 @@
 ---
 title: Scoring System
-category: 13-agent-production-16-agent-evaluation-benchmarking
+category: 15-agent-production-agent-evaluation-benchmarking
 tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> Comprehensive methodology for calculating and comparing agent scores"
 created: 2026-05-31

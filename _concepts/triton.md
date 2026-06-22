@@ -1,6 +1,6 @@
 ---
 title: "Triton Inference Server"
-category: concept
+category: -concepts
 tags: ["triton", "nvidia", "inference-server", "model-serving", "tensorrt", "onnx", "pytorch", "multi-framework"]
 relationships:
   - target: "_concepts/model-serving"

@@ -10,12 +10,12 @@ aliases:
 - 参考
 - 参考资料
 created: 2026-06-12
-category: 17-ai-coding
+category: 16-ai-coding-tools-openrouter
 summary: ""
 ---
 title: API 参考与请求/响应规范
 description: '## 概述'
-category: ai-coding
+category: 16-ai-coding-tools-openrouter
 tags:
 - ai
 - coding

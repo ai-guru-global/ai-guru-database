@@ -1,6 +1,6 @@
 ---
 title: "3Blue1Brown YouTube 频道"
-category: "21-talks"
+category: "19-talks-3blue1brown"
 tags: ["youtube", "mathematics", "linear-algebra", "neural-networks", "visualization"]
 summary: "3Blue1Brown 频道用精美动画讲解数学和 AI,线性代数和神经网络系列是全球最受欢迎的数学可视化教程。"
 sources:

@@ -1,6 +1,6 @@
 ---
 title: 世界模型与JEPA架构
-category: concepts
+category: -concepts
 tags: ["deep-learning", "world-model", "jepa", "self-supervised", "v-jepa", "representation-learning", "agi"]
 aliases: [World model-training, JEPA, V-JEPA, 世界模型, 联合嵌入预测架构, LeCun世界模型]
 relationships:

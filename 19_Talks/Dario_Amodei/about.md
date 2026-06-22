@@ -1,6 +1,6 @@
 ---
 title: Dario Amodei 简介 (Dario Amodei)
-category: 21-talks-dario-amodei
+category: 19-talks-dario-amodei
 tags: ["talks", "speeches", "insights", "leaders", "Anthropic", "AI-safety", "Constitutional-AI"]
 summary: "**一句话概括**: Anthropic 联合创始人兼 CEO，以'安全优先'理念挑战 OpenAI，开创 Constitutional AI 对齐范式。"
 created: 2026-05-31

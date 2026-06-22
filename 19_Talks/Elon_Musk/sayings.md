@@ -1,6 +1,6 @@
 ---
 title: Elon Musk 关于 AI 的观点与格言 (Elon Musk on AI)
-category: 21-talks-elon-musk
+category: 19-talks-elon-musk
 tags: ["talks", "speeches", "insights", "leaders"]
 summary: "> 说明：以下收录的是 Elon Musk 在公开场合关于人工智能的重要言论，按时间与主题整理，并提供出处与链接。术语均提供中英文对照。"
 created: 2026-05-31

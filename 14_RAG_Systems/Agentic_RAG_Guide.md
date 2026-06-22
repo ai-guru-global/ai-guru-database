@@ -1,6 +1,6 @@
 ---
 title: "Agentic RAG: Agent 驱动的智能检索"
-category: "11-rag-systems"
+category: "14-rag-systems"
 tags: ["rag", "agents", "agentic-rag", "architecture", "self-rag", "corrective-rag"]
 summary: "将 Agent 能力融入 RAG 系统,实现自适应检索、多步推理、自我纠正的智能 RAG 架构。"
 sources:

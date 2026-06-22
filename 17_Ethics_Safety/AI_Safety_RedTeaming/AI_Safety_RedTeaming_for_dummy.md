@@ -1,6 +1,6 @@
 ---
 title: 'AI 安全与红队测试 - 小白版'
-category: '19-ethics-safety-ai-safety-redteaming'
+category: '17-ethics-safety-ai-safety-redteaming'
 tags: ["ai-ethics", "safety", "alignment", "red-teaming"]
 summary: '> **一句话秒懂**: 就像雇佣白帽黑客测试网站漏洞一样,红队测试是"好人扮演坏人",在真正的攻击者出手前找出 AI 的安全弱点!'
 created: '2026-05-31'

@@ -1,6 +1,6 @@
 ---
 title: "推理优化大白话：SGLang、动态批调度、GGUF、SmoothQuant、TensorRT-LLM"
-category: "09-deployment-inference"
+category: "10-deployment-inference"
 tags: ["inference", "sglang", "dynamic-batching", "gguf", "smoothquant", "tensorrt-llm", "for-dummy"]
 summary: "> **一句话理解**: 大模型推理优化就是让它‘跑得快、吃得少、装得下’——SGLang 和动态批调度让它跑得更快，GGUF 和 SmoothQuant 让它体积更小，TensorRT-LLM 把 NVIDIA GPU 的性能榨干。"
 created: "2026-06-16"

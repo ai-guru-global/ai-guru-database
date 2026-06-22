@@ -1,6 +1,6 @@
 ---
 title: Data Engineer 题库
-category: 23-interviews-data-engineer
+category: 21-interviews-data-engineer
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "解释 ETL 与 ELT 的区别与适用场景。"
 created: 2026-05-31

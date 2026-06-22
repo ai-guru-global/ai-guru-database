@@ -1,6 +1,6 @@
 ---
 title: KV Cache 大白话解释
-category: concepts
+category: -concepts
 tags: [inference, kv-cache, attention, optimization, beginner]
 relationships:
   - target: "_concepts/kv-cache"

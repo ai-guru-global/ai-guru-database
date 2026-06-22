@@ -1,6 +1,6 @@
 ---
 title: "Constitutional AI (CAI) 深度解读：Anthropic 的宪法式对齐方法"
-category: 19-ethics-safety
+category: 17-ethics-safety
 tags: ["constitutional-ai", "alignment", "anthropic", "rlaif", "safety", "ai-feedback", "red-teaming", "constitutional-principles"]
 summary: "Constitutional AI 是 Anthropic 提出的对齐方法论——用一组明确的'宪法原则'取代大量人工标注，让 AI 自我批评、自我修正、自我训练，实现可扩展的 harmlessness 对齐。"
 created: 2026-06-15

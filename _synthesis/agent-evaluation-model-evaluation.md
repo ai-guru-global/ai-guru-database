@@ -1,6 +1,6 @@
 ---
 title: "Agent 评估 × 模型评估 — 从指标到行为的评估范式迁移"
-category: synthesis
+category: -synthesis
 tags: [agent-evaluation, model-evaluation, benchmark, evaluation, llm-as-judge, agentic-ai]
 sources:
   - "[[15_Agent_Production/Agent_Evaluation/Assessment/Evaluation_Workflow]]"

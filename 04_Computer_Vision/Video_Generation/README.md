@@ -1,6 +1,6 @@
 ---
 title: AI视频生成 (Video Generation)
-category: 05-computer-vision-video-generation
+category: 04-computer-vision-video-generation
 tags: ["computer-vision", "cnn", "image-processing"]
 summary: "| 文档 | 内容 | 适用读者 |"
 created: 2026-05-31

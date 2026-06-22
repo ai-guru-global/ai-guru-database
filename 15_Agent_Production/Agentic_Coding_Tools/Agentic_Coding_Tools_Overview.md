@@ -1,6 +1,6 @@
 ---
 title: AI Agent 全景图 2026
-category: 13-agent-production-agentic-coding-tools
+category: 15-agent-production-agentic-coding-tools
 tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> **一句话理解**: 从代码补全到完全自主执行，AI Agent 工具正在重塑软件开发的每个环节——本指南覆盖 20+ 主流工具，按能力层级和使用场景系统整理。"
 created: 2026-05-31

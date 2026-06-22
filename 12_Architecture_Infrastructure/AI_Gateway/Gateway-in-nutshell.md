@@ -1,6 +1,6 @@
 ---
 title: AI 网关速成指南
-category: 14-ai-gateway
+category: 12-architecture-infrastructure-ai-gateway
 tags: ["ai-gateway", "api-management", "routing", "litellm"]
 summary: "> 🎯 **目标**：理解 AI Gateway 的核心概念、架构和关键功能。"
 created: 2026-05-31

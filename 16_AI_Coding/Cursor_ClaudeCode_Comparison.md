@@ -1,6 +1,6 @@
 ---
 title: "Cursor vs Claude Code 对比指南"
-category: 17-ai-coding
+category: 16-ai-coding
 tags: ["ai-coding", "cursor", "claude-code", "copilot", "ide", "cli", "vibe-coding"]
 summary: "> **一句话理解**: Cursor 是'AI 增强的 IDE'，适合喜欢在图形界面中写代码的开发者；Claude Code 是'AI 驱动的终端代理'，适合喜欢命令行和完全自动化工作流的工程师。"
 created: 2026-06-12

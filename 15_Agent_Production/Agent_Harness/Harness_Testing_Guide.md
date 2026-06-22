@@ -1,6 +1,6 @@
 ---
 title: Agent Harness 测试指南
-category: 13-agent-production-agent-harness
+category: 15-agent-production-agent-harness
 tags: ["ai-agents", "agent-framework", "production", "langgraph", "testing"]
 summary: "> 系统化的 Harness 测试策略，覆盖单元测试、集成测试、端到端测试、安全测试和回归测试。"
 created: 2026-05-31

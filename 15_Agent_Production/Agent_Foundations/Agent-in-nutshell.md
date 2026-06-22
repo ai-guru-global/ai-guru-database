@@ -1,6 +1,6 @@
 ---
 title: AI 智能体速成指南
-category: 06-reinforcement-learning-ai-agents
+category: 15-agent-production-agent-foundations
 tags: ["reinforcement-learning", "agent", "mdp", "ai-agents"]
 summary: "> 🎯 **目标**：理解 AI 智能体如何工作，以及如何构建能够采取行动的自主 AI 系统。"
 created: 2026-05-31

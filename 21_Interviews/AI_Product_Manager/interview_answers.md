@@ -1,6 +1,6 @@
 ---
 title: AI Product Manager 面试题实例答案
-category: 23-interviews-ai-product-manager
+category: 21-interviews-ai-product-manager
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "**答**：先定义关键任务与失败模式，使用代表性评测集做离线验证，再做小流量线上实验。结合成本、延迟与可控性，确定可交付范围与产品边界。"
 created: 2026-05-31

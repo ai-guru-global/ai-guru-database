@@ -1,6 +1,6 @@
 ---
 title: "Qdrant"
-category: concept
+category: -concepts
 tags: ["qdrant", "vector-database", "rag", "embedding", "rust", "open-source"]
 relationships:
   - target: "_concepts/vector-database"

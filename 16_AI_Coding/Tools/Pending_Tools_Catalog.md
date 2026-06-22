@@ -1,6 +1,6 @@
 ---
 title: 待探索工具目录
-category: 17-ai-coding-02-tools
+category: 16-ai-coding-tools
 tags: ["ai-coding", "code-generation", "cursor", "github-copilot"]
 summary: "> 已识别的 AI 编程工具，待后续探索使用，按类型分类。"
 created: 2026-05-31

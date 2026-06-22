@@ -1,6 +1,6 @@
 ---
 title: AI未来趋势
-category: concepts
+category: -concepts
 tags: ["ai", "未来趋势", "agi", "智能体", "具身智能", "产业变革", "社会影响"]
 aliases: [AI Future, AI未来, 未来趋势展望]
 relationships:

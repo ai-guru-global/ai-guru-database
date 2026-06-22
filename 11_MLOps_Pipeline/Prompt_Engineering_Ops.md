@@ -1,6 +1,6 @@
 ---
 title: "Prompt 工程化运维"
-category: "10-mlops-pipeline"
+category: "11-mlops-pipeline"
 tags: ["llmops", "prompt-engineering", "version-control", "ab-testing", "ci-cd", "prompt-registry"]
 summary: "> **一句话理解**: Prompt 不是文案，是代码——任何一行改动都可能让线上 LLM 应用从 95 分掉到 40 分，必须用工程化方式版本化、测试、灰度。"
 created: 2026-06-15

@@ -1,6 +1,6 @@
 ---
 title: "Typesense: 快速矢量搜索"
-category: "11-rag-systems"
+category: "14-rag-systems"
 tags: ["rag", "retrieval", "vector-database", "embedding"]
 summary: "> **一句话理解**: Typesense 是闪电般的矢量搜索——专为搜索设计、极低延迟、模糊匹配、开源替代 Elasticsearch 的候选。"
 created: "2026-05-31"

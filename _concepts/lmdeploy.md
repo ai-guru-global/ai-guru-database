@@ -1,6 +1,6 @@
 ---
 title: "LMDeploy"
-category: concept
+category: -concepts
 tags: ["lmdeploy", "inference", "llm", "turbomind", "pytorch", "quantization", "awq", "chinese-llm", "deployment"]
 relationships:
   - target: "_concepts/model-serving"

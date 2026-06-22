@@ -1,6 +1,6 @@
 ---
 title: "Agentic RAG"
-category: concepts
+category: -concepts
 tags: ["rag", "agentic-rag", "agent", "retrieval", "reasoning", "self-rag"]
 relationships:
   - target: "_concepts/rag-systems"

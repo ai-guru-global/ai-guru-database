@@ -1,6 +1,6 @@
 ---
 title: Mark Zuckerberg 简介 (Mark Zuckerberg)
-category: 21-talks-mark-zuckerberg
+category: 19-talks-mark-zuckerberg
 tags: ["talks", "speeches", "insights", "leaders"]
 summary: "**身份**: Meta 创始人兼 CEO。"
 created: 2026-05-31

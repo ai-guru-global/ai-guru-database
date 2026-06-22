@@ -1,6 +1,6 @@
 ---
 title: Yann LeCun 关于 AI 的观点 (Yann LeCun on AI)
-category: 21-talks-yann-lecun
+category: 19-talks-yann-lecun
 tags: ["talks", "speeches", "insights", "leaders"]
 summary: "1. **“Doomsday predictions are just ridiculous.” / “末日论很荒谬。”**"
 created: 2026-05-31

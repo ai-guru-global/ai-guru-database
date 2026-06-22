@@ -1,6 +1,6 @@
 ---
 title: 08 AI 伦理、安全与对齐 - 小白版
-category: 19-ethics-safety
+category: 17-ethics-safety
 tags: ["ai-ethics", "safety", "alignment", "red-teaming"]
 summary: "> **一句话秒懂**: 就像教育孩子要懂对错、守规矩一样,AI 伦理与安全是教 AI 理解人类价值观、不作恶、保护用户安全!"
 created: 2026-05-31

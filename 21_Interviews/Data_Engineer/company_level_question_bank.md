@@ -1,6 +1,6 @@
 ---
 title: Data Engineer 按公司/级别区分的题库
-category: 23-interviews-data-engineer
+category: 21-interviews-data-engineer
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "大规模数据平台如何做成本治理？"
 created: 2026-05-31

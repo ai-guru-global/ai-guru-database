@@ -1,6 +1,6 @@
 ---
 title: "Learn Claude Code L03：Permission — 执行前做权限判断"
-category: 13-agent-production
+category: 15-agent-production
 tags:
   - ai-agents
   - agent-harness

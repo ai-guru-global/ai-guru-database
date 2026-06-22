@@ -1,6 +1,6 @@
 ---
 title: 概念卡片索引 (Concept Cards Index)
-category: meta
+category: -concepts
 tags: [concepts, knowledge-graph, index]
 summary: 95 张 AI 概念卡片，每张 5-9KB，覆盖 AI 全栈核心概念，与主章节通过 sources 字段关联。
 created: 2026-06-03
@@ -185,7 +185,7 @@ updated: 2026-06-15
 ```yaml
 ---
 title: 概念名称
-category: concepts
+category: -concepts
 tags: [tag1, tag2]
 relationships:
   - target: "_concepts/related-concept"

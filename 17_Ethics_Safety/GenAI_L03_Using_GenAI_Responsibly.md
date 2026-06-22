@@ -1,6 +1,6 @@
 ---
 title: "负责任地使用生成式人工智能"
-category: "course"
+category: "17-ethics-safety"
 tags: ["microsoft-genai-course", "responsible-ai", "ai-safety", "ai-ethics", "hallucination", "content-safety"]
 summary: "全面讲解生成式 AI 应用中的三大风险（幻觉、有害内容、缺乏公平性）、负责任 AI 六大原则，以及四步缓解框架（测量→缓解→评估→运营），介绍 Azure AI 内容安全等工具。"
 created: "2026-06-12"

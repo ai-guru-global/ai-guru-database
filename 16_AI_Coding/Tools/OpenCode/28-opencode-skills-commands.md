@@ -10,13 +10,13 @@ aliases:
 - 技能
 - 操作技能
 created: 2026-06-12
-category: 17-ai-coding
+category: 16-ai-coding-tools-opencode
 summary: ""
 ---
 title: Agent Skill 与自定义命令
 description: '**文档类型**: 扩展开发专题 | **最后更新**: 2026-03 | **关键词**: OpenCode, Skill, SKILL.md,
  Custom Command, Template, Arguments, Shell Output, File Reference'
-category: ai-coding
+category: 16-ai-coding-tools-opencode
 tags:
 - ai
 - coding

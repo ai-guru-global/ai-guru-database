@@ -1,6 +1,6 @@
 ---
 title: "AutoGen"
-category: concept
+category: -concepts
 tags: ["autogen", "microsoft", "agent", "multi-agent", "llm", "framework", "conversation", "tool-use"]
 relationships:
   - target: "_concepts/agent-framework"

@@ -1,6 +1,6 @@
 ---
 title: 扩散模型深度解读 (Diffusion Models Deep Dive)
-category: 05-computer-vision
+category: 04-computer-vision-generative-models
 tags: ["diffusion-models", "generative-models", "stable-diffusion", "ddpm", "score-matching", "image-generation"]
 summary: "> **一句话理解**: 扩散模型通过逐步去噪来生成高质量图像——就像雕塑家从一块大理石中'去掉多余的部分'，每一步都在让图像变得更清晰。"
 created: 2026-06-12

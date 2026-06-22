@@ -1,6 +1,6 @@
 ---
 title: 强化学习
-category: concepts
+category: -concepts
 tags: ["reinforcement-learning", "mdp", "q-learning", "policy-gradient", "exploration"]
 aliases: [Reinforcement unsupervised-learning, RL, 强化学习基础]
 relationships:

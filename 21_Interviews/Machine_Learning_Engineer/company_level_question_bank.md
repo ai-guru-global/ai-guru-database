@@ -1,6 +1,6 @@
 ---
 title: Machine Learning Engineer 按公司/级别区分的题库
-category: 23-interviews-machine-learning-engineer
+category: 21-interviews-machine-learning-engineer
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "大规模特征存储与在线一致性如何实现？"
 created: 2026-05-31

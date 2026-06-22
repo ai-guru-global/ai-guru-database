@@ -1,6 +1,6 @@
 ---
 title: "DeepSeek-V3 Technical Report 深度解读"
-category: 22-papers
+category: 20-papers
 tags: ["deepseek", "v3", "moe", "mla", "fp8", "open-source"]
 summary: "DeepSeek-V3 用 $5.6M 和 2048 张 H800 训练出了媲美 GPT-4o 的 671B 模型，证明了算法创新比 GPU 数量更重要"
 created: 2026-06-12

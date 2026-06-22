@@ -1,6 +1,6 @@
 ---
 title: "AI 硬件基础设施"
-category: "01-fundamentals"
+category: "01-fundamentals-ai-hardware"
 tags: ["hardware", "gpu", "ai-chip", "infrastructure", "t-head", "ppu", "chinese-chip"]
 summary: "AI 计算硬件基础设施总览，覆盖 GPU、AI 加速卡、国产芯片（含平头哥真武 PPU）等硬件选型和部署方案。"
 created: 2026-06-12

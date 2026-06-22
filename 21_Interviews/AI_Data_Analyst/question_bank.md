@@ -1,6 +1,6 @@
 ---
 title: AI Data Analyst 题库
-category: 23-interviews-ai-data-analyst
+category: 21-interviews-ai-data-analyst
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "解释 p-value 与置信区间的区别。"
 created: 2026-05-31

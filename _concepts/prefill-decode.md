@@ -1,6 +1,6 @@
 ---
 title: "Prefill/Decode 推理阶段"
-category: concept
+category: -concepts
 tags: ["prefill", "decode", "inference-phase", "ttft", "tps", "throughput"]
 relationships:
   - target: "_concepts/kv-cache"

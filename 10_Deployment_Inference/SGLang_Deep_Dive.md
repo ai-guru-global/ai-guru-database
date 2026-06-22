@@ -1,6 +1,6 @@
 ---
 title: "SGLang: 高性能 LLM 推理框架"
-category: "09-deployment-inference"
+category: "10-deployment-inference"
 tags: ["deployment", "inference", "serving", "sglang", "llm", "radix-attention", "prefix-caching"]
 summary: "> **一句话理解**: SGLang 是 LMSYS 出品的高性能 LLM 推理框架——RadixAttention 前缀缓存 + SGLang Runtime，多轮对话与 RAG 场景性能领先。"
 created: "2026-05-31"

@@ -1,6 +1,6 @@
 ---
 title: 跨域综合文档索引 (Cross-Domain Synthesis Index)
-category: meta
+category: -synthesis
 tags: [synthesis, knowledge-graph, cross-domain]
 summary: 18 篇跨领域综合分析文档，连接不同章节的概念，发现知识间的隐藏关联。
 created: 2026-06-03
@@ -89,7 +89,7 @@ updated: 2026-06-15
 ```markdown
 ---
 title: "概念A × 概念B: 标题"
-category: synthesis
+category: -synthesis
 tags: [tag1, tag2, synthesis]
 sources:
   - "XX_Chapter/Document_A"

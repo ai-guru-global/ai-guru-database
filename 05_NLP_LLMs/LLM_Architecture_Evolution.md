@@ -1,6 +1,6 @@
 ---
 title: "LLM 架构演进：从 BERT 到 MoE/Mamba 与 Agent 时代"
-category: 04-nlp-llms-architecture-evolution
+category: 05-nlp-llms
 tags: ["BERT", "GPT", "Llama", "DeepSeek", "Gemini", "Claude", "encoder-models", "decoder-models", "mixture-of-experts", "SSM", "Mamba", "multimodal", "AI-agent", "tool-use", "MCP", "long-context"]
 summary: "> 追踪 Transformer 架构的三条演化路线：编码器模型（BERT 家族）、解码器模型（GPT→Llama→DeepSeek→Gemini），以及未来趋势——高效注意力、MoE 混合专家、SSM/Mamba 状态空间模型、多模态融合与 AI Agent 工具调用。"
 source: "_sources/yeasy/llm_internals/ (Ch12-14)"

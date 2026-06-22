@@ -1,6 +1,6 @@
 ---
 title: "QClaw Complete Guide: Tencent's WeChat-First AI Agent"
-category: "13-agent-production-23-openclaw-ecosystem"
+category: "15-agent-production-openclaw-ecosystem"
 tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "**QClaw** (龙虾/Lobster) is Tencent's OpenClaw implementation that brings AI agent capabilities to the masses through seamless WeChat integration. It's designed for consumers and pro"
 created: "2026-05-31"

@@ -1,6 +1,6 @@
 ---
 title: "ML 框架概览 (ML Frameworks)"
-category: 02-machine-learning
+category: 02-machine-learning-ml-frameworks
 tags: ["machine-learning", "frameworks", "scikit-learn", "xgboost", "lightgbm"]
 summary: "经典机器学习框架的对比与选型——scikit-learn 是通用首选，XGBoost/LightGBM 统治表格数据竞赛。"
 created: 2026-06-15

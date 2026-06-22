@@ -1,6 +1,6 @@
 ---
 title: Satya Nadella 关于 AI 的观点 (Satya Nadella on AI)
-category: 21-talks-satya-nadella
+category: 19-talks-satya-nadella
 tags: ["talks", "speeches", "insights", "leaders"]
 summary: "1. **“AI is the runtime for the new world.” / “AI 是新时代的运行时。”**"
 created: 2026-05-31

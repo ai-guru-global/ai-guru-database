@@ -1,6 +1,6 @@
 ---
 title: 李飞飞简介 (Fei-Fei Li)
-category: 21-talks-fei-fei-li
+category: 19-talks-fei-fei-li
 tags: ["talks", "speeches", "insights", "leaders"]
 summary: "**身份**: 斯坦福大学教授，斯坦福 HAI 联合主任，前 Google Cloud AI/ML 首席科学家。"
 created: 2026-05-31

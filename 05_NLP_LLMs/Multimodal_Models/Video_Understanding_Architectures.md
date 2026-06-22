@@ -1,6 +1,6 @@
 ---
 title: 视频理解架构深度解析
-category: 04-nlp-llms-multimodal
+category: 05-nlp-llms-multimodal-models
 tags: [multimodal, video-understanding, temporal-modeling, video-llm, sora, action-recognition, video-language]
 summary: 从帧级图像理解到真正视频理解的架构演进，涵盖时序建模、视频-语言预训练、动作识别和生成式视频理解的最新技术。
 date: 2026-06-01

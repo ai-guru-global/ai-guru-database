@@ -1,6 +1,6 @@
 ---
 title: "Outlines 受控生成框架概览"
-category: "04-nlp-llms"
+category: "05-nlp-llms"
 tags: ["tool", "structured-output", "outlines", "controlled-generation", "local-llm"]
 summary: "通过正则表达式和 JSON Schema 约束 LLM 输出的受控生成框架,特别适合本地模型(Llama/Mistral 等),基于有限状态机实现精确输出控制。"
 sources:

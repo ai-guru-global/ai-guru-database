@@ -6,12 +6,12 @@ tags:
 - ai-coding
 - configuration
 created: 2026-06-12
-category: 17-ai-coding
+category: 16-ai-coding-tools-opencode
 summary: ""
 ---
 title: 安装部署与快速入门
 description: '# 安装部署与快速入门'
-category: ai-coding
+category: 16-ai-coding-tools-opencode
 tags:
 - ai
 - coding

@@ -1,6 +1,6 @@
 ---
 title: Computer Vision Engineer 按公司/级别区分的题库
-category: 23-interviews-computer-vision-engineer
+category: 21-interviews-computer-vision-engineer
 tags: ["interviews", "career", "experience", "practitioners", "computer-vision"]
 summary: "多模型多场景的评测与上线策略如何设计？"
 created: 2026-05-31

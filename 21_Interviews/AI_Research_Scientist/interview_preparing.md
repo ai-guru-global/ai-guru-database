@@ -1,6 +1,6 @@
 ---
 title: AI Research Scientist 面试准备
-category: 23-interviews-ai-research-scientist
+category: 21-interviews-ai-research-scientist
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "**前沿研究**: 设计算法与理论创新，产出高质量论文。"
 created: 2026-05-31

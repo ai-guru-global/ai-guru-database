@@ -1,6 +1,6 @@
 ---
 title: 预训练 vs 微调 vs RAG — 三种 LLM 定制方案选型
-category: concept
+category: -concepts
 tags: ["pretraining", "fine-tuning", "rag", "prompt-engineering", "llm-customization", "decision-guide"]
 relationships:
   - target: "_concepts/model-training"

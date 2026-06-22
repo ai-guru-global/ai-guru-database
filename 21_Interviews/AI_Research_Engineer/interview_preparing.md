@@ -1,6 +1,6 @@
 ---
 title: AI Research Engineer 面试准备
-category: 23-interviews-ai-research-engineer
+category: 21-interviews-ai-research-engineer
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "**研究工程化**: 把研究想法转化为可训练的系统与代码。"
 created: 2026-05-31

@@ -1,6 +1,6 @@
 ---
 title: "K8sGPT: 给 K8s 集群装一个 AI SRE"
-category: "12-architecture-infrastructure"
+category: "12-architecture-infrastructure-cncf-cloud-native-ai"
 tags: ["cncf", "kubernetes", "k8sgpt", "aiops", "llm", "observability", "sre"]
 summary: "> **一句话理解**: K8sGPT 是 CNCF 沙箱级的'AI SRE'——用一组分析器扫集群里的失败信号，再交给 LLM（可本地 Ollama）翻译成'哪里坏了、怎么修'的人话，支持 CLI 和常驻 Operator 两种模式。"
 created: "2026-06-16"

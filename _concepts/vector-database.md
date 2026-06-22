@@ -1,6 +1,6 @@
 ---
 title: 向量数据库
-category: concepts
+category: -concepts
 tags:
 - vector-database
 - - - data-structures-algorithms|hnsw

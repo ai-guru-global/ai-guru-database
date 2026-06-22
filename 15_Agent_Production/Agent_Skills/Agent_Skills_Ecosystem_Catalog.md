@@ -1,6 +1,6 @@
 ---
 title: Agent Skills 生态目录
-category: 13-agent-production-agent-skills
+category: 15-agent-production-agent-skills
 tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> 🎯 **目标**：完整收录 38 家开发团队、451+ 个 Agent Skills 的生态全景，作为快速查找和选型参考。"
 created: 2026-05-31

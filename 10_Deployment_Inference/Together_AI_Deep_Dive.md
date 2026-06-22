@@ -1,6 +1,6 @@
 ---
 title: "Together AI: 开源模型推理云平台"
-category: "09-deployment-inference"
+category: "10-deployment-inference"
 tags: ["together-ai", "inference", "cloud-api", "open-source", "llm", "deployment"]
 summary: "> **一句话理解**: Together AI 是专注于开源大模型的云端推理平台——模型选择最广、价格有竞争力、OpenAI 兼容，是开源模型云端部署的重要选择。"
 created: "2026-06-15"

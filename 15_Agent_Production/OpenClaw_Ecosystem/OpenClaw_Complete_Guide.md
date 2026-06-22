@@ -1,6 +1,6 @@
 ---
 title: "OpenClaw 从入门到精通：完整运维与使用指南"
-category: "13-agent-production-23-openclaw-ecosystem"
+category: "15-agent-production-openclaw-ecosystem"
 tags: ["openclaw", "ai-agents", "agent-framework", "production", "configuration", "multi-agent", "automation", "ops-security"]
 summary: "从《OpenClaw 从入门到精通》第一、二部分（Ch1-8）提炼的实操指南：涵盖 OpenClaw 核心概念、安装部署、配置体系与模型治理、工具系统与技能、会话/上下文/记忆管理、多渠道分发与多智能体协作、自动化运维与安全基线。"
 source: "yeasy/openclaw_guide (Ch1-8)"

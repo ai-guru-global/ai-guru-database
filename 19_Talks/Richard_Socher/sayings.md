@@ -1,6 +1,6 @@
 ---
 title: Richard Socher 关于 AI 的观点 (Richard Socher on AI)
-category: 21-talks-richard-socher
+category: 19-talks-richard-socher
 tags: ["talks", "speeches", "insights", "leaders"]
 summary: "1. **“The next interface is natural language.” / “下一代界面是自然语言。”**"
 created: 2026-05-31

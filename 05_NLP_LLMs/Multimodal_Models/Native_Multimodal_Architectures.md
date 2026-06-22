@@ -1,6 +1,6 @@
 ---
 title: 原生多模态架构深度解析
-category: 04-nlp-llms-multimodal
+category: 05-nlp-llms-multimodal-models
 tags: [multimodal, native-multimodal, architecture, vision-language, gpt-4v, gemini, flamingo, modality-alignment]
 summary: 从拼接式多模态到原生多模态的架构演进，深度解析 GPT-4V、Gemini、Flamingo 等主流架构的模态融合机制与设计哲学。
 date: 2026-06-01

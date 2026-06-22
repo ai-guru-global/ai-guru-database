@@ -1,6 +1,6 @@
 ---
 title: "Flowise: 低代码 LLM 应用平台"
-category: "11-rag-systems"
+category: "14-rag-systems"
 tags: ["rag", "retrieval", "vector-database", "embedding", "llm"]
 summary: "> **一句话理解**: Flowise 是极简的低代码 LLM 应用平台——拖拽即可构建 AI 应用，专注于 Chatflow 可视化编排。"
 created: "2026-05-31"

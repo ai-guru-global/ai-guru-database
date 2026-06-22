@@ -1,6 +1,6 @@
 ---
 title: "L17 - 生成循环网络"
-category: "90-learn"
+category: "90-learn-courses-microsoft"
 tags: ["microsoft-ai-course", "nlp", "rnn", "generative-models", "text-generation"]
 summary: "基于循环神经网络（RNN）学习字符级语言模型，并用温度采样生成连贯文本。"
 source_url: "https://raw.githubusercontent.com/microsoft/AI-For-Beginners/main/lessons/5-NLP/17-GenerativeNetworks/README.md"

@@ -1,6 +1,6 @@
 ---
 title: "探索和比较不同的 LLM"
-category: "course"
+category: "05-nlp-llms"
 tags: ["microsoft-genai-course", "llm-comparison", "model-selection", "rag", "fine-tuning", "azure-ai-studio"]
 summary: "系统介绍 LLM 的多种分类方式（输出类型、架构、开放性），详解基础模型 vs 专用模型、开源 vs 专有、编码器-解码器 vs 仅解码器，以及如何通过提示工程、RAG、微调提升 LLM 性能。"
 created: "2026-06-12"

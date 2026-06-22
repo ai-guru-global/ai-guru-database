@@ -1,6 +1,6 @@
 ---
 title: "L08 多 Agent 设计模式：组聊、Hand-off、协同过滤"
-category: "13-agent-production"
+category: "15-agent-production"
 tags:
   - ai-agents
   - microsoft

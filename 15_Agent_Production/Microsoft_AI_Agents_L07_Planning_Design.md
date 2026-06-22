@@ -1,6 +1,6 @@
 ---
 title: "L07 规划设计模式：任务分解、结构化输出与迭代重规划"
-category: "13-agent-production"
+category: "15-agent-production"
 tags:
   - ai-agents
   - microsoft

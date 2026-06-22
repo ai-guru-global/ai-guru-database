@@ -1,6 +1,6 @@
 ---
 title: LLM架构
-category: concepts
+category: -concepts
 tags: [nlp, llm, gpt, bert, moe, transformer-architecture]
 relationships:
   - target: "[[_concepts/transformer-architecture]]"

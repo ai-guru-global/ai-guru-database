@@ -1,6 +1,6 @@
 ---
 title: Bill Gates 关于 AI 的观点 (Bill Gates on AI)
-category: 21-talks-bill-gates
+category: 19-talks-bill-gates
 tags: ["talks", "speeches", "insights", "leaders"]
 summary: "1. **“AI is as revolutionary as mobile phones and the Internet.” / “AI 的革命性堪比手机和互联网。”**"
 created: 2026-05-31

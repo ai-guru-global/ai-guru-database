@@ -1,6 +1,6 @@
 ---
 title: "Anthropic Claude 技术深度解析"
-category: 04-nlp-llms-global-llm
+category: 05-nlp-llms-global-llm-ecosystem
 tags: [anthropic, claude, constitutional-ai, safety, extended-thinking, computer-use, mcp, rlhf, rlaif, reasoning, alignment]
 summary: "全面剖析 Anthropic 从 Claude 1 到 Claude 4.5 的完整技术演进：Constitutional AI (CAI) 自监督对齐、Extended Thinking 混合推理、Computer Use 桌面智能体、Model Context Protocol (MCP) 开放协议以及 Responsible Scaling Policy 安全框架。"
 created: 2026-06-02

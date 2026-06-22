@@ -1,6 +1,6 @@
 ---
 title: 异构 GPU 集群 (Heterogeneous GPU Cluster)
-category: concepts
+category: -concepts
 tags: [infrastructure, gpu, heterogeneous, cluster, scheduling]
 relationships:
   - target: "_concepts/ai-hardware"

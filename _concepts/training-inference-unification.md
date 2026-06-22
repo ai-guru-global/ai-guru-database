@@ -1,6 +1,6 @@
 ---
 title: 训推一体 (Training-Inference Unification)
-category: concepts
+category: -concepts
 tags: [infrastructure, gpu-scheduling, training, inference, unified]
 relationships:
   - target: "_concepts/ai-architecture"

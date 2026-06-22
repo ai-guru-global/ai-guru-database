@@ -1,6 +1,6 @@
 ---
 title: 'Deepfake 安全 2026'
-category: '19-ethics-safety-deepfake-security'
+category: '17-ethics-safety-deepfake-security'
 tags: ["ai-ethics", "safety", "alignment", "red-teaming"]
 summary: '> **一句话理解**: Deepfake已经从"明星换脸"进化到"人人可造"——2026年的AI生成内容(AIGC)技术让伪造身份、冒充领导、制造虚假新闻变得前所未有的简单。防御方必须从"识别假"转向"证明真"。'
 created: '2026-05-31'

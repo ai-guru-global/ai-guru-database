@@ -1,6 +1,6 @@
 ---
 title: "Colossal-AI"
-category: concept
+category: -concepts
 tags: ["colossal-ai", "distributed-training", "parallelism", "llm", "training", "inference", "optimization", "hpc"]
 relationships:
   - target: "_concepts/distributed-training"

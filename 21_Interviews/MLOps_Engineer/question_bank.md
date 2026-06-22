@@ -1,6 +1,6 @@
 ---
 title: MLOps Engineer 题库
-category: 23-interviews-mlops-engineer
+category: 21-interviews-mlops-engineer
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "模型生命周期管理的关键阶段有哪些？"
 created: 2026-05-31

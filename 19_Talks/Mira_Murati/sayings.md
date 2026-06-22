@@ -1,6 +1,6 @@
 ---
 title: Mira Murati 关于 AI 的观点 (Mira Murati on AI)
-category: 21-talks-mira-murati
+category: 19-talks-mira-murati
 tags: ["talks", "speeches", "insights", "leaders"]
 summary: "1. **“We should be a little bit scared; it’s important to get it right.” / “我们应该有些敬畏，把事情做好很重要。”**"
 created: 2026-05-31

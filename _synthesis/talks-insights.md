@@ -1,6 +1,6 @@
 ---
 title: AI 领袖演讲与行业洞察
-category: synthesis
+category: -synthesis
 tags: [synthesis, talks, speeches, insights, leaders]
 summary: 从 AI 领域领袖的演讲和观点中提取跨时间的行业洞察与思想演进脉络。
 created: 2026-06-12

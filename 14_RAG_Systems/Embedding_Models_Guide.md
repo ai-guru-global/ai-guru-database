@@ -1,6 +1,6 @@
 ---
 title: "Embedding 模型选型与实践指南 2026"
-category: "11-rag-systems"
+category: "14-rag-systems"
 tags: ["embedding", "vector", "rag", "semantic-search", "model-selection"]
 summary: "Embedding 模型是 RAG 和语义搜索的核心,本文对比主流 Embedding 模型的性能、维度、成本,提供选型建议。"
 sources:

@@ -1,6 +1,6 @@
 ---
 title: "OpenAI Codex 概览"
-category: "17-ai-coding"
+category: "16-ai-coding-tools"
 tags: ["tool", "ai-coding", "agent", "openai", "codex", "cli"]
 summary: "OpenAI 出品的轻量级编程 Agent,可在终端本地运行,也可在云端异步执行代码任务,支持 ChatGPT 订阅直接使用。"
 sources:

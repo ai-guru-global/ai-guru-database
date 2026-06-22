@@ -1,6 +1,6 @@
 ---
 title: "RAG 流水线运维"
-category: "10-mlops-pipeline"
+category: "11-mlops-pipeline"
 tags: ["llmops", "rag", "vector-database", "embedding", "indexing", "retrieval", "observability"]
 summary: "> **一句话理解**: RAG 系统的运维难点不在「检索」，而在「知识库是活的」——文档在变、切块策略在调、Embedding 模型在升级，每个变更都可能让召回质量崩塌。"
 created: 2026-06-15

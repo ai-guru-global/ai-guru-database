@@ -1,6 +1,6 @@
 ---
 title: 'AI编程 (AI Coding)'
-category: '17-ai-coding'
+category: '16-ai-coding'
 tags: ["ai-coding", "code-generation", "cursor", "github-copilot"]
 summary: '> AI编程已从"代码补全"进化为"结对编程伙伴"——本目录构建涵盖理论、工具、实战、方法论的完整知识体系。'
 created: '2026-05-31'

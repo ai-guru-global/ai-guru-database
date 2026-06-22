@@ -1,6 +1,6 @@
 ---
 title: "L06 - 计算机视觉简介与 OpenCV"
-category: "90-learn"
+category: "90-learn-courses-microsoft"
 tags: ["microsoft-ai-course", "computer-vision", "opencv", "image-processing", "motion-detection"]
 summary: "介绍计算机视觉的核心任务与典型流程，重点讲解使用 OpenCV 进行图像读取、颜色空间转换、几何变换、阈值化与光流等预处理技术。"
 source_url: "https://raw.githubusercontent.com/microsoft/AI-For-Beginners/main/lessons/4-ComputerVision/06-IntroCV/README.md"

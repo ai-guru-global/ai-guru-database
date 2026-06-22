@@ -1,6 +1,6 @@
 ---
 title: 中国大模型生态全景 (Chinese LLM Ecosystem)
-category: 04-nlp-llms
+category: 05-nlp-llms-chinese-llm-ecosystem
 tags: ["chinese-llm", "deepseek", "qwen", "glm", "kimi", "minimax", "baidu", "baichuan", "yi", "tencent", "iflytek", "sensetime", "internlm", "bytedance", "stepfun", "xiaomi", "modelscope", "moe", "open-source"]
 summary: "系统梳理中国 15 家大模型厂商的技术路线、模型矩阵、核心创新与 Benchmark 对比，覆盖第一梯队（DeepSeek/Qwen/GLM/Kimi/MiniMax/MiMo）和第二梯队（百度/百川/零一万物/阶跃星辰/腾讯/讯飞/商汤/InternLM/字节跳动）。"
 created: 2026-06-01

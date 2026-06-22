@@ -1,6 +1,6 @@
 ---
 title: "动态批调度"
-category: concepts
+category: -concepts
 tags: ["inference", "batching", "scheduling", "throughput", "continuous-batching"]
 relationships:
   - target: "_concepts/continuous-batching"

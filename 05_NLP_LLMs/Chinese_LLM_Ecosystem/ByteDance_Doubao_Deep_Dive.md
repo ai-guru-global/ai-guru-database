@@ -1,6 +1,6 @@
 ---
 title: "字节豆包 (Doubao): 超级App生态驱动的大模型平台"
-category: "04-nlp-llms-chinese-llm-ecosystem"
+category: "05-nlp-llms-chinese-llm-ecosystem"
 tags: ["nlp", "llm", "bytedance", "doubao", "chinese-llm", "coze", "volcano-engine", "skylark"]
 summary: "> **一句话理解**: 字节跳动依托抖音/今日头条超级 App 生态和火山引擎云平台，豆包大模型在 C 端拥有海量用户，Coze 扣子平台成为 AI Bot 开发热门选择。"
 created: "2026-06-12"

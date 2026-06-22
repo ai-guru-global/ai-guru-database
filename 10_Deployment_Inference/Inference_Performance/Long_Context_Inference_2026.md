@@ -1,6 +1,6 @@
 ---
 title: 长上下文推理 2026
-category: 09-deployment-inference
+category: 10-deployment-inference-inference-performance
 tags: [inference, long-context, kv-cache, 128k, 1m, performance]
 summary: "> 128K 以上长上下文推理，KV Cache 显存超过模型参数，需要系统级的压缩、缓存与架构优化。"
 created: 2026-06-15

@@ -1,6 +1,6 @@
 ---
 title: "KServe 深度解析: Kubernetes 标准化模型服务平台"
-category: "09-deployment-inference"
+category: "10-deployment-inference"
 tags: ["kserve", "kubernetes", "model-serving", "inference", "cncf", "kfserving", "serverless", "autoscaling", "canary", "vllm", "triton"]
 summary: "> **一句话理解**: KServe 是 CNCF Incubating 的 Kubernetes 模型服务平台，通过 InferenceService CRD 把模型推理服务的部署、扩缩、灰度、观测封装成声明式 API，支持 vLLM、Triton、TorchServe 等多种运行时。"
 created: "2026-06-16"

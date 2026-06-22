@@ -1,6 +1,6 @@
 ---
 title: "Replicate"
-category: concept
+category: -concepts
 tags: ["replicate", "model-hosting", "api", "gpu", "cloud", "inference", "open-source", "model-marketplace"]
 relationships:
   - target: "_concepts/model-serving"

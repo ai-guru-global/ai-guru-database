@@ -1,6 +1,6 @@
 ---
 title: Emad Mostaque 简介 (Emad Mostaque)
-category: 21-talks-emad-mostaque
+category: 19-talks-emad-mostaque
 tags: ["talks", "speeches", "insights", "leaders"]
 summary: "**身份**: Stability AI 创始人兼 CEO。"
 created: 2026-05-31

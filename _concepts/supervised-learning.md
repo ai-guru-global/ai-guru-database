@@ -1,6 +1,6 @@
 ---
 title: 监督学习
-category: concepts
+category: -concepts
 tags: ["machine-learning", "supervised", "classification", "regression", "svm", "decision-tree", "xgboost"]
 aliases: [Supervised unsupervised-learning, 有监督学习]
 relationships:

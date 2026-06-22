@@ -1,6 +1,6 @@
 ---
 title: "Learn Claude Code (shareAI-lab)"
-category: references
+category: -references
 tags: ["course", "claude-code", "agent-harness", "github-repo", "external-source"]
 sources:
   - "https://github.com/shareAI-lab/learn-claude-code"

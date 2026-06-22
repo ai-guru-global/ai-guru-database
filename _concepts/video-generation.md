@@ -1,6 +1,6 @@
 ---
 title: 视频生成
-category: concepts
+category: -concepts
 tags:
 - cv
 - video-generation

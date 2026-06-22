@@ -1,6 +1,6 @@
 ---
 title: AI Research Scientist 面试题实例答案
-category: 23-interviews-ai-research-scientist
+category: 21-interviews-ai-research-scientist
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "**答**：从问题重要性、方法新颖性与可验证性评估，结合对标基线的实验提升与理论意义。若能推动新任务或新指标，更具影响力。"
 created: 2026-05-31

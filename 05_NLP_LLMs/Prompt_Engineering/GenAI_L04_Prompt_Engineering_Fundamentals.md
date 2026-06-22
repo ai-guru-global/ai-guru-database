@@ -1,6 +1,6 @@
 ---
 title: "提示工程基础"
-category: "course"
+category: "05-nlp-llms-prompt-engineering"
 tags: ["microsoft-genai-course", "prompt-engineering", "llm-fundamentals", "tokenization", "instruction-tuning", "few-shot"]
 summary: "系统讲解提示工程的核心概念：分词机制、基础模型 vs 指令调优模型、提示构建模式（指令/主要内容/次要内容）、零样本/少样本/提示语/模板等设计技术及最佳实践。"
 created: "2026-06-12"

@@ -1,6 +1,6 @@
 ---
 title: NVIDIA GPU Operator
-category: concepts
+category: -concepts
 tags:
 - gpu-operator
 - kubernetes

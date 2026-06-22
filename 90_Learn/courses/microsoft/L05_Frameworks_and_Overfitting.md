@@ -1,6 +1,6 @@
 ---
 title: "L05 - 框架简介与过拟合"
-category: "90-learn"
+category: "90-learn-courses-microsoft"
 tags: ["microsoft-ai-course", "pytorch", "tensorflow", "overfitting", "frameworks"]
 summary: "介绍 PyTorch 与 TensorFlow/Keras 的高低层 API 区别，以及过拟合的成因、检测方法与偏差-方差权衡。"
 source_url: "https://raw.githubusercontent.com/microsoft/AI-For-Beginners/main/lessons/3-NeuralNetworks/05-Frameworks/README.md"

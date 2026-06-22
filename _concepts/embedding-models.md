@@ -1,6 +1,6 @@
 ---
 title: "嵌入模型 (Embedding Models)"
-category: concept
+category: -concepts
 tags: ["embedding", "vector-representation", "semantic-search", "sentence-transformers", "reranking"]
 relationships:
   - target: "_concepts/rag-systems"

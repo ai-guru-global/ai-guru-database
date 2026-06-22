@@ -1,6 +1,6 @@
 ---
 title: "XGBoost 概览"
-category: "02-machine-learning"
+category: "02-machine-learning-ml-frameworks"
 tags: ["machine-learning", "framework", "gradient-boosting", "tool"]
 summary: "高性能梯度提升框架，Kaggle 竞赛常胜军，支持分布式训练"
 sources:

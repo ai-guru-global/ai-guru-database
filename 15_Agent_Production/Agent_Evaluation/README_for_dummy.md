@@ -1,6 +1,6 @@
 ---
 title: Agent Benchmarking Evaluation Framework - Beginner's Guide
-category: 13-agent-production-16-agent-evaluation
+category: 15-agent-production-agent-evaluation
 tags: ["ai-agents", "agent-framework", "production", "langgraph", "model-evaluation"]
 summary: "> A simple guide to understanding how we test and compare AI agents"
 created: 2026-05-31

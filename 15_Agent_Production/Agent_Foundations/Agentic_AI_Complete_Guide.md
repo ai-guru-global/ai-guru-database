@@ -1,6 +1,6 @@
 ---
 title: "智能体 AI 权威指南 Part 1: 单体智能架构全解"
-category: agent-foundations
+category: 15-agent-production-agent-foundations
 tags: [agentic-ai, agent-paradigm, reasoning, CoT, ReAct, Reflexion, memory-systems, RAG, vector-db, graph-memory, MCP, tool-use, agentic-ux, context-engineering]
 summary: "从范式革命到认知层级、推理规划、记忆系统到工具交互，系统梳理单体智能体架构的完整知识图谱"
 created: 2026-06-16

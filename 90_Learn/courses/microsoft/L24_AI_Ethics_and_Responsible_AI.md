@@ -1,6 +1,6 @@
 ---
 title: "L24 - AI 伦理与负责任的 AI"
-category: "90-learn"
+category: "90-learn-courses-microsoft"
 tags: ["microsoft-ai-course", "ai-ethics", "responsible-ai", "fairness", "ai-governance"]
 summary: "微软 AI For Beginners 第 24 课：AI 是强大工具，既可造福也可能被误用；课程围绕微软负责任 AI 的六大原则与 Responsible AI Toolbox 工具链，讲解如何在开发全流程中构建公平、安全、透明、可问责的 AI 系统。"
 source_url: "https://raw.githubusercontent.com/microsoft/AI-For-Beginners/main/lessons/7-Ethics/README.md"

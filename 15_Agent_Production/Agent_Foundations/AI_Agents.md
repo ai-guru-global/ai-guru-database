@@ -1,6 +1,6 @@
 ---
 title: 'AI 智能体 (AI Agents)'
-category: '06-reinforcement-learning-ai-agents'
+category: '15-agent-production-agent-foundations'
 tags: ["reinforcement-learning", "agent", "mdp", "ai-agents"]
 summary: '> **一句话理解**: AI智能体就像一个有自主判断能力的"AI员工"——能理解任务、制定计划、调用工具、自我反思，并持续执行直到完成目标，而不需要人类一步步指挥。'
 created: '2026-05-31'

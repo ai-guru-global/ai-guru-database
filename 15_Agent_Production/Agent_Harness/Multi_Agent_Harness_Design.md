@@ -1,6 +1,6 @@
 ---
 title: 多 Agent Harness 设计模式
-category: 13-agent-production-agent-harness
+category: 15-agent-production-agent-harness
 tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> 当单个 Agent 无法高效完成复杂任务时，需要将任务拆分给多个协作 Agent。本文档详解多 Agent Harness 的核心设计模式：状态共享、通信协议、Handoff 机制与冲突解决。"
 created: 2026-05-31

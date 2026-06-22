@@ -1,6 +1,6 @@
 ---
 title: Andrew Ng 关于 AI 的观点与格言
-category: 21-talks-andrew-ng
+category: 19-talks-andrew-ng
 tags: ["talks", "speeches", "insights", "leaders"]
 summary: "> 说明：以下整理 Andrew Ng 在公开场合关于 AI 的代表性言论，提供中英文对照与出处链接。"
 created: 2026-05-31

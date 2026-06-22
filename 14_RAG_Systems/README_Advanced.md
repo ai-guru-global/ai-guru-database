@@ -1,6 +1,6 @@
 ---
 title: RAG高级实践 2026
-category: 11-rag-systems
+category: 14-rag-systems
 tags: ["rag", "retrieval", "vector-database", "embedding"]
 summary: "| 文档 | 内容 | 适用读者 |"
 created: 2026-05-31

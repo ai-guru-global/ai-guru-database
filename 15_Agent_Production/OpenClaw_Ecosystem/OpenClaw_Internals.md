@@ -1,6 +1,6 @@
 ---
 title: "OpenClaw 内部机制与生产优化深度指南"
-category: "13-agent-production-23-openclaw-ecosystem"
+category: "15-agent-production-openclaw-ecosystem"
 tags: ["openclaw", "internals", "gateway", "agent-loop", "reliability", "security", "plugin", "performance", "troubleshooting", "mcp", "claude"]
 summary: "从《OpenClaw 从入门到精通》第三、四部分（Ch9-16）提炼的深度技术指南：涵盖 Gateway 五平面架构与协议机制、Agent Loop 运行内核、可靠性与安全机制、插件扩展体系、生产实战案例、性能与成本优化、故障诊断决策树、Claude/MCP 生态集成。"
 source: "yeasy/openclaw_guide (Ch9-16)"

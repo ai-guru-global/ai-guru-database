@@ -1,6 +1,6 @@
 ---
 title: "大语言模型基础 (LLM Fundamentals)"
-category: 04-nlp-llms
+category: 05-nlp-llms
 tags: ["llm", "transformer", "pretraining", "fine-tuning", "inference"]
 summary: '> **一句话理解**: 大语言模型 (LLM) = Transformer 架构 + 海量文本预训练 + 人类反馈对齐——它不"理解"语言，但通过预测下一个 token 的概率分布，涌现出了翻译、推理、编程等惊人能力。'
 created: 2026-06-12

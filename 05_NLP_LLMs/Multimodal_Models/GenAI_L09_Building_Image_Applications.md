@@ -1,6 +1,6 @@
 ---
 title: "构建图像生成应用程序"
-category: "course"
+category: "05-nlp-llms-multimodal-models"
 tags: ["microsoft-genai-course", "image-generation", "dall-e", "multimodal", "meta-prompt", "temperature"]
 summary: "学习使用DALL-E和Midjourney构建图像生成应用，掌握元提示、温度控制和图像编辑变体等核心技术的完整实践指南。"
 created: "2026-06-12"

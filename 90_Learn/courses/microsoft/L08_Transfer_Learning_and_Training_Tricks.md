@@ -1,6 +1,6 @@
 ---
 title: "L08 - 预训练网络、迁移学习与训练技巧"
-category: "90-learn"
+category: "90-learn-courses-microsoft"
 tags: ["microsoft-ai-course", "computer-vision", "transfer-learning", "fine-tuning", "training-tricks", "pytorch", "tensorflow"]
 summary: "在大型图像数据集上预训练的卷积神经网络（CNN）可迁移到下游分类任务；配合批归一化、Dropout、学习率衰减等训练技巧，可用少量数据快速训练出高性能图像分类器。"
 source_url: "https://raw.githubusercontent.com/microsoft/AI-For-Beginners/main/lessons/4-ComputerVision/08-TransferLearning/README.md"

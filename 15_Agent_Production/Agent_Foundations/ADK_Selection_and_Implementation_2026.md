@@ -1,6 +1,6 @@
 ---
 title: "Agent Development Kits (ADK) 2026: Building with MCP, A2A, and UCP"
-category: "06-reinforcement-learning-ai-agents"
+category: "15-agent-production-agent-foundations"
 tags: ["ai-agents", "adk", "sdk", "mcp", "a2a", "ucp", "implementation"]
 summary: "> **一句话理解**: 如果说协议（Protocol）是蓝图，那么 ADK（Agent Development Kit）就是施工工具箱——它让开发者无需从零编写网络报文，即可快速构建符合标准的智能体。"
 created: 2026-06-04

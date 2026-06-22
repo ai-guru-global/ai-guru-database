@@ -1,6 +1,6 @@
 ---
 title: AI伦理
-category: concepts
+category: -concepts
 tags: [ai, 伦理, 偏见, 隐私, 安全, 治理, 社会影响]
 aliases: [AI Ethics, AI伦理与社会, 负责任AI]
 relationships:

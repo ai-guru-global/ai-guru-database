@@ -1,6 +1,6 @@
 ---
 title: '图像分割 (Image Segmentation)'
-category: '05-computer-vision-segmentation'
+category: '04-computer-vision-segmentation'
 tags: ["computer-vision", "cnn", "image-processing"]
 summary: '> **一句话理解**: 如果目标检测是告诉你"图中哪里有猫"（画个框），那图像分割就是精确到"哪些像素属于猫"（描出轮廓）。分割是计算机视觉中最精细的空间理解任务。'
 created: '2026-05-31'

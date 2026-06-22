@@ -1,6 +1,6 @@
 ---
 title: 分布式系统
-category: concepts
+category: -concepts
 tags: ["distributed-systems", "all-reduce", "parallelism", "ZeRO", "fsdp", "model-training"]
 aliases: [Distributed recommendation-systems, 分布式训练, All-Reduce, 3D并行]
 relationships:

@@ -1,6 +1,6 @@
 ---
 title: "图神经网络 (Graph Neural Networks)"
-category: concept
+category: -concepts
 tags: ["deep-learning", "GNN", "graph-neural-networks", "GCN", "GAT", "message-passing", "molecular"]
 relationships:
   - target: "_concepts/neural-networks"

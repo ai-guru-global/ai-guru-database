@@ -1,6 +1,6 @@
 ---
 title: AI Research Scientist 题库
-category: 23-interviews-ai-research-scientist
+category: 21-interviews-ai-research-scientist
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "解释偏差-方差权衡，并给出实际例子。"
 created: 2026-05-31

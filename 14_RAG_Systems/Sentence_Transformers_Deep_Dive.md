@@ -1,6 +1,6 @@
 ---
 title: "Sentence-Transformers: 嵌入模型框架"
-category: "11-rag-systems"
+category: "14-rag-systems"
 tags: ["rag", "retrieval", "vector-database", "embedding", "transformer"]
 summary: "> **一句话理解**: Sentence-Transformers 让文本转向量变得简单——几行代码就能使用预训练的语义嵌入模型，支持 100+ 语言，专为语义搜索和 RAG 设计。"
 created: "2026-05-31"

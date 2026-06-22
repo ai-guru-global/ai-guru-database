@@ -1,6 +1,6 @@
 ---
 title: "Awesome LLM Apps 集合 (10k)"
-category: "references"
+category: "-references"
 tags: ["llm", "applications", "github-repo", "examples"]
 summary: "LLM 应用案例集合,含 RAG、Agent、聊天机器人等各类实际应用实现。"
 sources:

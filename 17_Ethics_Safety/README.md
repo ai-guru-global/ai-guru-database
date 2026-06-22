@@ -1,6 +1,6 @@
 ---
 title: 08 AI 伦理、安全与对齐 (Ethics, Safety & Alignment)
-category: 19-ethics-safety
+category: 17-ethics-safety
 tags: ["ai-ethics", "safety", "alignment", "red-teaming"]
 summary: "本章探讨 AI 系统的可信度与责任性，涵盖价值对齐技术（RLHF/DPO）、AI 安全与红队测试（对抗攻击/提示词注入）。随着 AI 能力增强，确保系统安全、公平、可控变得至关重要。"
 created: 2026-05-31

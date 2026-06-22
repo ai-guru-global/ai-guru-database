@@ -1,6 +1,6 @@
 ---
 title: Prefix Caching (前缀缓存)
-category: concepts
+category: -concepts
 tags: [inference, kv-cache, caching, prefix, optimization]
 relationships:
   - target: "_concepts/kv-cache"

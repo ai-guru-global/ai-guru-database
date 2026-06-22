@@ -1,6 +1,6 @@
 ---
 title: 'AI Gateway 对比 2026'
-category: '14-ai-gateway'
+category: '12-architecture-infrastructure-ai-gateway'
 tags: ["ai-gateway", "api-management", "routing", "litellm"]
 summary: '> **一句话秒懂**: AI Gateway 是调用大模型 API 的"中间人"，帮你统一管理多模型路由、限流、缓存、安全和成本，是 AI 工程化的基础设施。'
 created: '2026-05-31'

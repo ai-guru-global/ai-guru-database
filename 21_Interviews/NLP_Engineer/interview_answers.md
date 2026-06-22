@@ -1,6 +1,6 @@
 ---
 title: NLP Engineer 面试题实例答案
-category: 23-interviews-nlp-engineer
+category: 21-interviews-nlp-engineer
 tags: ["interviews", "career", "experience", "practitioners", "nlp"]
 summary: "**答**：先建立高质量索引（分块策略、向量检索、混合检索），再引入重排序与缓存；评测采用检索与生成双指标，并对高频场景做提示词优化与工具调用。"
 created: 2026-05-31

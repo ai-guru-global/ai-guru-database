@@ -1,6 +1,6 @@
 ---
 title: "L21 - 遗传算法"
-category: "90-learn"
+category: "90-learn-courses-microsoft"
 tags: ["microsoft-ai-course", "genetic-algorithms", "evolutionary-computation", "optimization", "search"]
 summary: "通过模拟种群进化中的选择、交叉与变异，在复杂搜索空间中寻找近似最优解。"
 source_url: "https://raw.githubusercontent.com/microsoft/AI-For-Beginners/main/lessons/6-Other/21-GeneticAlgorithms/README.md"

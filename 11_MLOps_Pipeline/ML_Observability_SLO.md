@@ -1,6 +1,6 @@
 ---
 title: "ML 系统可观测性与 SLO"
-category: "10-mlops-pipeline"
+category: "11-mlops-pipeline"
 tags: ["mlops", "observability", "slo", "sli", "error-budget", "latency", "throughput"]
 summary: "> **一句话理解**: 漂移监控只关心「模型准不准」，系统可观测关心「整个推理服务在不在健康运行」——延迟、吞吐、SLO、错误预算，是模型上线的工程底线。"
 created: 2026-06-15

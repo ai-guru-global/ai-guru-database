@@ -1,6 +1,6 @@
 ---
 title: "agno: 现代 AI Agent 框架"
-category: "13-agent-production-agent-frameworks"
+category: "15-agent-production-agent-frameworks"
 tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> **一句话理解**: agno 是一个现代化的 AI Agent 框架——用极简的代码构建拥有知识、记忆和工具调用的智能 Agent。"
 created: "2026-05-31"

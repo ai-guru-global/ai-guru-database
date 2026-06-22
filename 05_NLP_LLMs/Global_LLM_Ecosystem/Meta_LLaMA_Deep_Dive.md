@@ -1,6 +1,6 @@
 ---
 title: "Meta LLaMA 深度技术解析：从 Dense 到 MoE 的开源 LLM 进化之路"
-category: "04-nlp-llms-global-llm-ecosystem"
+category: "05-nlp-llms-global-llm-ecosystem"
 tags: ["nlp", "llm", "meta", "llama", "moe", "open-source", "multimodal", "chinchilla-scaling", "transformer"]
 summary: "> **一句话理解**: LLaMA 是 Meta 开源的 LLM 家族——从 7B Dense 模型到 400B MoE 架构，用 Chinchilla scaling law 和开放权重策略重塑了整个 AI 行业格局。"
 created: "2026-06-02"

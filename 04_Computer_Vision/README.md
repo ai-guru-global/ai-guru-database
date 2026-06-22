@@ -1,6 +1,6 @@
 ---
 title: 05 计算机视觉 (Computer Vision)
-category: 05-computer-vision
+category: 04-computer-vision
 tags: ["computer-vision", "cnn", "image-processing"]
 summary: "本章涵盖图像理解与生成的核心技术，从经典 CNN 架构到目标检测（YOLO）、图像分割（Semantic/Instance）、多模态视觉（CLIP）以及生成模型（GAN/Diffusion）。这是视觉 AI 应用的技术全景。"
 created: 2026-05-31

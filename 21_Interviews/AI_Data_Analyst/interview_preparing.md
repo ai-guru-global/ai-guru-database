@@ -1,6 +1,6 @@
 ---
 title: AI Data Analyst 面试准备
-category: 23-interviews-ai-data-analyst
+category: 21-interviews-ai-data-analyst
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "**数据分析与洞察**: 指标体系、用户行为与业务分析。"
 created: 2026-05-31

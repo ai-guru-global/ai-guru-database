@@ -1,6 +1,6 @@
 ---
 title: 'Andrej Karpathy 关于 AI 的观点 (Andrej Karpathy on AI)'
-category: '21-talks-andrej-karpathy'
+category: '19-talks-andrej-karpathy'
 tags: ["talks", "speeches", "insights", "leaders"]
 summary: '1. **"Neural networks are Software 2.0." / "神经网络就是软件 2.0。"**'
 created: '2026-05-31'

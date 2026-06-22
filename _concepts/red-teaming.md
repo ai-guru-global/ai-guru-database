@@ -1,6 +1,6 @@
 ---
 title: "红队测试"
-category: concepts
+category: -concepts
 tags: ["red-teaming", "safety", "llm-safety", "jailbreak", "adversarial", "evaluation"]
 relationships:
   - target: "_concepts/model-evaluation"

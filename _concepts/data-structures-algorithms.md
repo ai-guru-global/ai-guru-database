@@ -1,6 +1,6 @@
 ---
 title: 数据结构与算法
-category: concepts
+category: -concepts
 tags: ["algorithms", "data-structures", "computational-graphs", "vector-indexing", "beam-search", "hnsw"]
 aliases: [Data Structures, Algorithms, 计算图, 向量检索, DSA]
 relationships:

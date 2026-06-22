@@ -1,6 +1,6 @@
 ---
 title: "L11 Agentic 协议：MCP / A2A / NLWeb 三件套"
-category: "13-agent-production"
+category: "15-agent-production"
 tags:
   - ai-agents
   - microsoft

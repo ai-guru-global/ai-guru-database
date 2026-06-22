@@ -1,6 +1,6 @@
 ---
 title: "Deep Learning with Python"
-category: "references"
+category: "-references-books"
 tags: ["book", "learning-resource"]
 summary: "Keras 作者的深度学习教程,实战导向.作者:Francois Chollet."
 sources:

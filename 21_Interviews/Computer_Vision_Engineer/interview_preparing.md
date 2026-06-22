@@ -1,6 +1,6 @@
 ---
 title: Computer Vision Engineer 面试准备
-category: 23-interviews-computer-vision-engineer
+category: 21-interviews-computer-vision-engineer
 tags: ["interviews", "career", "experience", "practitioners", "computer-vision"]
 summary: "**视觉模型训练**: 分类、检测、分割与生成。"
 created: 2026-05-31

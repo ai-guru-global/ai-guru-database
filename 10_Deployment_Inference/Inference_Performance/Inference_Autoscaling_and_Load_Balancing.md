@@ -1,6 +1,6 @@
 ---
 title: 推理弹性扩缩容与负载均衡
-category: 09-deployment-inference
+category: 10-deployment-inference-inference-performance
 tags: [inference, autoscaling, load-balancing, kubernetes, gpu, performance]
 summary: "> 推理流量波动大、成本高，弹性扩缩容和智能路由是控制成本与保障 SLO 的关键。"
 created: 2026-06-15

@@ -1,6 +1,6 @@
 ---
 title: AI 测试与评估速成指南
-category: 15-testing
+category: 09-testing
 tags: ["testing", "ai-testing", "prompt-testing", "evaluation"]
 summary: "> 🎯 **目标**：掌握如何测试、评估和验证 AI 系统，确保生产环境的可靠性。"
 created: 2026-05-31

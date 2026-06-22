@@ -1,6 +1,6 @@
 ---
 title: 推理性能基础
-category: 09-deployment-inference
+category: 10-deployment-inference-inference-performance
 tags: [inference, performance, latency, throughput, roofline, benchmarking]
 summary: "> LLM 推理性能的核心指标、瓶颈分析框架与优化技术分类。"
 created: 2026-06-15

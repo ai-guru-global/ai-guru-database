@@ -1,6 +1,6 @@
 ---
 title: '17 AI 编程 — 小白版 💻'
-category: '17-ai-coding'
+category: '16-ai-coding'
 tags: ["ai-coding", "code-generation", "cursor", "github-copilot"]
 summary: '> **一句话秒懂**: AI 编程就是让 AI 当你的"编程助手"——帮你写代码、Debug、做 Code Review，让你的开发效率提升 10 倍！'
 created: '2026-05-31'

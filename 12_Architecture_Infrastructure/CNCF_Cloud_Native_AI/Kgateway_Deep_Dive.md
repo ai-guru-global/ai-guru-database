@@ -1,6 +1,6 @@
 ---
 title: "Kgateway: Envoy 内核的 API 与 AI 双模网关"
-category: "12-architecture-infrastructure"
+category: "12-architecture-infrastructure-cncf-cloud-native-ai"
 tags: ["cncf", "kgateway", "envoy", "api-gateway", "ai-gateway", "kubernetes", "gateway-api"]
 summary: "> **一句话理解**: Kgateway 是基于 Envoy 的 Kubernetes Gateway API 实现 (CNCF 景观, 前身 Gloo Gateway)——从微网关到集中式网关再到 AI 网关一套通吃, 既管内部 API 也给外部 LLM 调用加安全/治理。"
 created: "2026-06-16"

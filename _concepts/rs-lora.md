@@ -1,6 +1,6 @@
 ---
 title: "RS-LoRA"
-category: concepts
+category: -concepts
 tags: ["lora", "rs-lora", "peft", "fine-tuning", "parameter-efficient", "rank"]
 relationships:
   - target: "_concepts/lora-peft"

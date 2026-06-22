@@ -1,6 +1,6 @@
 ---
 title: 'Vision Transformer (ViT) 深度解读'
-category: '05-computer-vision'
+category: '04-computer-vision'
 tags: ["computer-vision", "cnn", "image-processing", "transformer"]
 summary: '> **一句话理解**: ViT 就像把图像变成一门外语——把图像切成小块（token），然后用 Transformer 的"翻译"能力来处理图像，从此计算机视觉进入了"注意力时代"。'
 created: '2026-05-31'

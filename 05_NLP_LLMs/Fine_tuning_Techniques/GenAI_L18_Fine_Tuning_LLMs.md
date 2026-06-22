@@ -1,6 +1,6 @@
 ---
 title: "微调大型语言模型"
-category: "course"
+category: "05-nlp-llms-fine-tuning-techniques"
 tags: ["microsoft-genai-course", "fine-tuning", "llm-training", "监督微调", "peft"]
 summary: "系统介绍LLM微调的核心概念、决策流程与实践方法，涵盖监督微调与少样本学习的对比分析，以及OpenAI、Azure、Hugging Face、AutoTrain、Unsloth等平台的完整实操教程。"
 created: "2026-06-12"

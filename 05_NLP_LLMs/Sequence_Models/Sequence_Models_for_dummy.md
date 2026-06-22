@@ -1,6 +1,6 @@
 ---
 title: '序列模型 - 小白版'
-category: '04-nlp-llms-sequence-models'
+category: '05-nlp-llms-sequence-models'
 tags: ["nlp", "llm", "transformer", "gpt", "bert"]
 summary: '> **一句话秒懂**: 序列模型就像你读小说时边读边记住前面的情节——AI 也要学会"边读边记"才能理解句子的意思!'
 created: '2026-05-31'

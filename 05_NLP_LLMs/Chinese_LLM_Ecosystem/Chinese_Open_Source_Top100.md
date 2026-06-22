@@ -1,6 +1,6 @@
 ---
 title: 中国开源大模型生态 Top 100 项目全景 (2026 最新)
-category: chinese-llm-ecosystem
+category: 05-nlp-llms-chinese-llm-ecosystem
 tags: [chinese-llm, open-source, ecosystem, foundation, top100, 2026]
 created: 2026-06-15
 updated: 2026-06-15

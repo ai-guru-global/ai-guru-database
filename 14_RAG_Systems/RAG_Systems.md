@@ -1,6 +1,6 @@
 ---
 title: RAG 系统 (RAG Systems)
-category: 11-rag-systems
+category: 14-rag-systems
 tags: ["rag", "retrieval", "vector-database", "embedding"]
 summary: "> **一句话理解**: 就像开卷考试,LLM 可以先翻书查资料再回答问题,而不是只靠记忆硬答。"
 created: 2026-05-31

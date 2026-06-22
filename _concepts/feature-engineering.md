@@ -1,6 +1,6 @@
 ---
 title: 特征工程
-category: concepts
+category: -concepts
 tags: ["machine-learning", "feature-engineering", "encoding", "feature-selection", "preprocessing"]
 aliases: [Feature prompt-engineering, 特征处理]
 relationships:

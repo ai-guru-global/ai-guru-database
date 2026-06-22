@@ -1,6 +1,6 @@
 ---
 title: "联邦学习深度解读: 从 FedAvg 到联邦 LLM 微调"
-category: "19-ethics-safety"
+category: "17-ethics-safety-federated-learning"
 tags: ["federated-learning", "FedAvg", "FedProx", "privacy", "differential-privacy", "secure-aggregation", "FL", "Non-IID"]
 summary: "联邦学习让数据不动模型动——多个参与方在本地训练，只上传模型更新。覆盖核心算法(FedAvg/FedProx/SCAFFOLD)、隐私保护(差分隐私/安全聚合)、通信优化、联邦LLM微调。"
 created: 2026-06-04

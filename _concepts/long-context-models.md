@@ -1,6 +1,6 @@
 ---
 title: 长上下文模型
-category: concepts
+category: -concepts
 tags: [nlp, long-context, attention, kv-cache, scaling]
 relationships:
   - target: "[[_concepts/transformer-architecture]]"

@@ -1,6 +1,6 @@
 ---
 title: AI Reliability Engineer 按公司/级别区分的题库
-category: 23-interviews-ai-reliability-engineer
+category: 21-interviews-ai-reliability-engineer
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "如何设计全链路可观测性与治理？"
 created: 2026-05-31

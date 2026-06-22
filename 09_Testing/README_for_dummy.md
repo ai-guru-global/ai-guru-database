@@ -1,6 +1,6 @@
 ---
 title: '15 AI 测试 — 小白版 🧪'
-category: '15-testing'
+category: '09-testing'
 tags: ["testing", "ai-testing", "prompt-testing", "evaluation"]
 summary: '> **一句话秒懂**: AI 测试就是给 AI "出考题"——设计各种测试用例验证 AI 的能力，就像考试一样，有选择题、简答题、应用题，让 AI 答题然后评分，判断 AI 是否真正学会了。'
 created: '2026-05-31'

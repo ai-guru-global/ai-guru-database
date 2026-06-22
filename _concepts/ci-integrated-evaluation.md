@@ -1,6 +1,6 @@
 ---
 title: "CI 集成评估"
-category: concepts
+category: -concepts
 tags: ["ci-cd", "evaluation", "automation", "regression-testing", "model-evaluation", "mlops"]
 relationships:
   - target: "_concepts/model-evaluation"

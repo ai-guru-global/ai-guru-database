@@ -1,6 +1,6 @@
 ---
 title: "Hello-Agents L06：框架开发实践（AutoGen / AgentScope / CAMEL / LangGraph）"
-category: "13-agent-production-agent-frameworks"
+category: "15-agent-production"
 tags:
   - ai-agents
   - autogen

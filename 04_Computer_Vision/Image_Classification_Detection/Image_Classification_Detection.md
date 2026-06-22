@@ -1,6 +1,6 @@
 ---
 title: '图像分类与检测 (Image Classification & Detection)'
-category: '05-computer-vision-image-classification-detection'
+category: '04-computer-vision-image-classification-detection'
 tags: ["computer-vision", "cnn", "image-processing"]
 summary: '> **一句话理解**: 图像分类就像"看图识物"——告诉计算机这是猫还是狗;目标检测则更进一步,不仅要识别"是什么",还要圈出"在哪里",就像给照片中的每个物体画边框并标注名字。'
 created: '2026-05-31'

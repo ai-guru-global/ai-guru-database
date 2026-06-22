@@ -1,6 +1,6 @@
 ---
 title: "Prometheus + Grafana 深度解析: AI 系统监控与可视化基座"
-category: "16-ai-ops"
+category: "13-ai-ops"
 tags: ["prometheus", "grafana", "monitoring", "observability", "metrics", "alerting", "dashboard", "ai-ops", "cncf"]
 summary: "> **一句话理解**: Prometheus 负责拉取、存储和告警时序指标；Grafana 负责把指标可视化成交互式大盘。二者是 AI 训练、推理和基础设施监控的事实标准组合。"
 created: "2026-06-16"

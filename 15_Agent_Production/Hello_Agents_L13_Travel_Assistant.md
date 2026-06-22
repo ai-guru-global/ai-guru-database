@@ -1,6 +1,6 @@
 ---
 title: "Hello-Agents L13：智能旅行助手（多 Agent + MCP 实战）"
-category: "13-agent-production"
+category: "15-agent-production"
 tags:
   - ai-agents
   - multi-agent

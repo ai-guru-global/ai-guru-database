@@ -1,6 +1,6 @@
 ---
 title: 深度强化学习
-category: concepts
+category: -concepts
 tags: ["reinforcement-learning", "deep-rl", "dqn", "ppo", "sac", "actor-critic"]
 aliases: [Deep reinforcement-learning unsupervised-learning, Deep RL, DRL]
 relationships:

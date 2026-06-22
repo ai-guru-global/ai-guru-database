@@ -1,6 +1,6 @@
 ---
 title: "DoRA"
-category: concepts
+category: -concepts
 tags: ["lora", "dora", "peft", "fine-tuning", "parameter-efficient"]
 relationships:
   - target: "_concepts/lora-peft"

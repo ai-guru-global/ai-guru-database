@@ -1,6 +1,6 @@
 ---
 title: 'Claude Code: Anthropic 官方 Agent 编程 CLI'
-category: '13-agent-production-agentic-coding-tools'
+category: '15-agent-production-agentic-coding-tools'
 tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: '> **一句话理解**: Claude Code 是 Anthropic 官方推出的 Agent 编程工具，通过深度集成 Claude 模型与本地开发环境，让 AI 能够直接读写文件、执行命令、搜索代码，实现"人机协同编程"的新范式。'
 created: '2026-05-31'

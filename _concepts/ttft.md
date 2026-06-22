@@ -1,6 +1,6 @@
 ---
 title: TTFT
-category: concepts
+category: -concepts
 tags: [inference, latency, ttft, prefill, performance]
 relationships:
   - target: "_concepts/prefill-decode"

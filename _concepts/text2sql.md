@@ -1,6 +1,6 @@
 ---
 title: "Text2SQL"
-category: concepts
+category: -concepts
 tags: ["text2sql", "nl2sql", "database", "rag", "agent", "sql"]
 relationships:
   - target: "_concepts/rag-systems"

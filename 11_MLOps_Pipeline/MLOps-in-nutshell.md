@@ -1,6 +1,6 @@
 ---
 title: MLOps 速成指南
-category: 10-mlops-pipeline
+category: 11-mlops-pipeline
 tags: ["mlops", "ci-cd", "pipeline", "feature-store"]
 summary: "> 🎯 **目标**：理解 MLOps 的核心概念、流水线架构和关键工具，掌握将 ML 模型从实验带到生产的工程实践。"
 created: 2026-05-31

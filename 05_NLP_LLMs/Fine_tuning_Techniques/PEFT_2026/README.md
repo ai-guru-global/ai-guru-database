@@ -1,6 +1,6 @@
 ---
 title: PEFT 2026 (参数高效微调)
-category: 04-nlp-llms-fine-tuning-techniques-peft-2026
+category: 05-nlp-llms-fine-tuning-techniques-peft-2026
 tags: ["nlp", "llm", "transformer", "gpt", "bert"]
 summary: "| 文档 | 内容 | 适用读者 |"
 created: 2026-05-31

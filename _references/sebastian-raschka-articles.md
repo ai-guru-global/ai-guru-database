@@ -1,6 +1,6 @@
 ---
 title: "Sebastian Raschka LLM 深度解析系列"
-category: "references"
+category: "-references"
 tags: ["llm", "article", "sebastian-raschka", "architecture", "training"]
 summary: "Sebastian Raschka 的 LLM 深度解析系列文章,覆盖架构、训练、微调、推理等核心主题。"
 sources:

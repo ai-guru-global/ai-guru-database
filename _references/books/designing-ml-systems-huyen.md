@@ -1,6 +1,6 @@
 ---
 title: "Designing Machine Learning Systems"
-category: "references"
+category: "-references-books"
 tags: ["book", "learning-resource"]
 summary: "ML 系统设计权威指南,覆盖数据、训练、部署、监控全流程.作者:Chip Huyen."
 sources:

@@ -1,6 +1,6 @@
 ---
 title: "Google Gemini 技术深度解析"
-category: 04-nlp-llms-global-llm
+category: 05-nlp-llms-global-llm-ecosystem
 tags: [google, gemini, deepmind, palm, lama, gemma, multimodal, moe, long-context, thinking-model, tpu, astra, mariner]
 summary: "全面剖析 Google DeepMind 从 LaMDA 到 Gemini 2.5 的完整技术演进：Pathways 分布式训练系统、原生多模态架构 (Natively Multimodal)、Mixture-of-Experts + 百万级上下文、Thinking Mode 可控推理、Gemma 开源模型族、TPU 自研芯片基础设施，以及 Project Astra / Mariner 智能体生态。"
 created: 2026-06-02

@@ -1,6 +1,6 @@
 ---
 title: "L10 - 生成对抗网络与艺术风格迁移"
-category: "90-learn"
+category: "90-learn-courses-microsoft"
 tags: ["microsoft-ai-course", "computer-vision", "generative-models", "gans", "style-transfer"]
 summary: "学习生成对抗网络（GAN）的生成器-判别器对抗训练原理，以及基于卷积神经网络特征的艺术风格迁移方法。"
 source_url: "https://raw.githubusercontent.com/microsoft/AI-For-Beginners/main/lessons/4-ComputerVision/10-GANs/README.md"

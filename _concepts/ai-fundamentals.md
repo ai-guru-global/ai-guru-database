@@ -1,6 +1,6 @@
 ---
 title: AI基础概念
-category: concepts
+category: -concepts
 tags: [ai, 机器学习, 深度学习, 基础概念, 入门]
 aliases: [人工智能基础, AI Fundamentals, AI入门]
 relationships:

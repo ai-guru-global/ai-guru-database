@@ -1,6 +1,6 @@
 ---
 title: 模型精度 (Model Precision & Accuracy)
-category: concepts
+category: -concepts
 tags: [precision, accuracy, quantization, fp16, bf16, int4, int8, benchmark]
 relationships:
   - target: "_concepts/mixed-precision"

@@ -1,6 +1,6 @@
 ---
 title: Attention 变体 (GQA/MQA/SWA)
-category: concepts
+category: -concepts
 tags: [attention, transformer, gqa, mqa, swa, kv-cache]
 relationships:
   - target: "_concepts/transformer-architecture"

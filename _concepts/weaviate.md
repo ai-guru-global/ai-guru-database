@@ -1,6 +1,6 @@
 ---
 title: "Weaviate"
-category: concept
+category: -concepts
 tags: ["weaviate", "vector-database", "rag", "embedding", "semantic-search", "graphql", "modular"]
 relationships:
   - target: "_concepts/vector-database"

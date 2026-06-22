@@ -1,6 +1,6 @@
 ---
 title: "L06 构建可信 AI Agent：系统消息框架、威胁建模与人在回路"
-category: "13-agent-production"
+category: "15-agent-production"
 tags:
   - ai-agents
   - microsoft

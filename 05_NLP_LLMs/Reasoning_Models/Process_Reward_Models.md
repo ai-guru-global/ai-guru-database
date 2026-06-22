@@ -1,6 +1,6 @@
 ---
 title: Process Reward Models (PRM) 深度解析
-category: 04-nlp-llms-reasoning
+category: 05-nlp-llms-reasoning-models
 tags: [prm, process-reward-model, reward-model, reasoning, verification, step-level-evaluation, outcome-reward]
 summary: 深度解析过程奖励模型（PRM）与结果奖励模型（ORM）的设计原理、训练方法、信用分配问题，以及在推理模型训练中的关键作用。
 date: 2026-06-01

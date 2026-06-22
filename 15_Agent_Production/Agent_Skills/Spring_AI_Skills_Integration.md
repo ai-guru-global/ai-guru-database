@@ -1,6 +1,6 @@
 ---
 title: Spring AI 与 Agent Skills 集成
-category: 13-agent-production-agent-skills
+category: 15-agent-production-agent-skills
 tags: ["ai-agents", "agent-framework", "production", "langgraph", "spring-ai"]
 summary: "> Spring AI 是支持 Agent Skills 开放标准的 Java AI 应用框架之一。本文档说明如何在 Spring AI 项目中使用 Agent Skills。"
 created: 2026-05-31

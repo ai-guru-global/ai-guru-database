@@ -188,7 +188,9 @@ flowchart TD
 > 基于 ModelScope 魔搭社区官方 API 全量抓取（2026-06-19，共 1,621 个官方模型、1.97 亿次下载）
 
 - [[ModelScope_Model_Catalog]] — 15 家厂商 ModelScope 模型目录（组织信息 + Top 模型精选 + 统计）
-- [[ModelScope_Model_Index]] — 全量 1,621 个模型完整索引表（可检索参考）
+- [[ModelScope_Model_Index]] — 全量 1,621 个模型完整索引表（Qwen/InternLM 已拆分）
+- [[ModelScope_Model_Index_Qwen]] — 通义千问 437 个模型完整索引（拆分页）
+- [[ModelScope_Model_Index_InternLM]] — 书生 InternLM 443 个模型完整索引（拆分页）
 - 原始数据：`_sources/modelscope/raw/`（含可复跑抓取脚本）
 
 ---

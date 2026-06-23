@@ -158,5 +158,5 @@ for m in models:
 
 ## 相关阅读
 - [[12_Architecture_Infrastructure/AI_Infrastructure_2026]]
-- [[11_MLOps_Pipeline/Model_Registry_and_Cards_Deep_Dive]]
+- [[11_MLOps_Pipeline/Experiment_Tracking/Model_Registry_and_Cards_Deep_Dive]]
 - [[17_Ethics_Safety/AI_Security_2026]]

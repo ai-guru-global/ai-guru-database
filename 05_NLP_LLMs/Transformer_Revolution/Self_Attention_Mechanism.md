@@ -85,5 +85,5 @@ class MultiHeadAttention(torch.nn.Module):
 
 - [[05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution]] — Transformer 革命
 - [[05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution_for_dummy]] — Transformer 入门
-- [[20_Papers/Attention_Is_All_You_Need_Deep_Dive]] — Attention Is All You Need 深度解读
+- [[20_Papers/Architecture/Attention_Is_All_You_Need_Deep_Dive]] — Attention Is All You Need 深度解读
 - [[05_NLP_LLMs/LLM_Architectures/LLM_Architectures]] — LLM 架构 2026

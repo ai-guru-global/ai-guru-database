@@ -169,12 +169,12 @@ model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy']
   - 从零设计新的 CNN 架构（参见 L07 卷积神经网络与 CNN 架构）。
   - 目标检测、语义分割等更复杂的视觉任务（参见 L11、L12）。
   - 自然语言处理中的迁移学习与微调（如 BERT、GPT 等预训练语言模型，参见 L18–L20）。
-  - 分布式训练、混合精度训练、大规模调优等工程细节（参见本库 [[07_Model_Training/Distributed_Training_2026]]、[[07_Model_Training/Mixed_Precision_Training]]）。
+  - 分布式训练、混合精度训练、大规模调优等工程细节（参见本库 [[07_Model_Training/Distributed_Training/Distributed_Training_2026]]、[[07_Model_Training/Optimization/Mixed_Precision_Training]]）。
 
 - **延伸**：
   - 若想系统了解图像分类与检测理论，可阅读本库 [[04_Computer_Vision/Image_Classification_Detection/Image_Classification_Detection]]。
   - 若想深入微调策略（全量微调、参数高效微调 PEFT、LoRA 等），可阅读 [[07_Model_Training/Fine_tuning_Strategies]]。
-  - 若想理解优化器进阶与训练动态，可参考 [[07_Model_Training/Optimizer_Advanced_2026]]、[[07_Model_Training/Training_Optimization_2026]]。
+  - 若想理解优化器进阶与训练动态，可参考 [[07_Model_Training/Optimization/Optimizer_Advanced_2026]]、[[07_Model_Training/Optimization/Training_Optimization_2026]]。
   - 对抗样本相关内容也是 AI 安全与可解释性的入口，可延伸阅读 [[17_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming]] 或 [[17_Ethics_Safety/AI_Security_2026/AI_Security_2026]]。
 
 ---

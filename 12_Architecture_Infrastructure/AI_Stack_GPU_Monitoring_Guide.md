@@ -124,5 +124,5 @@ pmon | sort -k4 -n
 - [[12_Architecture_Infrastructure/AI_Stack_Inference_Serving_Guide|AI Stack 推理服务指南]]
 - [[12_Architecture_Infrastructure/AI_Stack_Training_Launchers_Guide|AI Stack 训练启动器指南]]
 - [[10_Deployment_Inference/Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]]
-- [[07_Model_Training/Training_Monitoring_2026|训练监控与实验追踪 2026]]
+- [[07_Model_Training/Monitoring/Training_Monitoring_2026|训练监控与实验追踪 2026]]
 - [[_concepts/gpu-operator|GPU Operator]]

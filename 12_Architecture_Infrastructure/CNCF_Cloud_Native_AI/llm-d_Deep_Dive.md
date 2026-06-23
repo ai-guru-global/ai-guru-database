@@ -11,7 +11,7 @@ updated: "2026-06-16"
 
 > **一句话理解**: llm-d 把「大模型推理」拆成 Gateway + KV Cache 协调 + vLLM Worker 三层——可以让多个推理 Pod 共享 KV Cache、独立扩缩 prefill/decode，是目前 K8s 上规模最大的开源 LLM 推理框架之一。
 
-> 📐 **概念方法论**: llm-d 是「**disaggregated inference（解耦推理）**」在 Kubernetes 上的工程实现——把传统 vLLM 单进程内的 prefill / decode / KV-cache 三件事拆成可独立扩缩的分布式组件，再用 Kubernetes Gateway API 的 InferencePool 把「带缓存的请求路由到带缓存的 Pod」。要理解它，必须先理解 KV Cache 的物理意义（详见 [[10_Deployment_Inference/KV_Cache_Deep_Dive]]），以及 K8s 上推理服务的演进路径（详见 [[CNCF_Cloud_Native_AI/KServe_Deep_Dive]]）。
+> 📐 **概念方法论**: llm-d 是「**disaggregated inference（解耦推理）**」在 Kubernetes 上的工程实现——把传统 vLLM 单进程内的 prefill / decode / KV-cache 三件事拆成可独立扩缩的分布式组件，再用 Kubernetes Gateway API 的 InferencePool 把「带缓存的请求路由到带缓存的 Pod」。要理解它，必须先理解 KV Cache 的物理意义（详见 [[10_Deployment_Inference/Caching/KV_Cache_Deep_Dive]]），以及 K8s 上推理服务的演进路径（详见 [[CNCF_Cloud_Native_AI/KServe_Deep_Dive]]）。
 
 ---
 
@@ -693,6 +693,6 @@ kubectl logs <worker-pod> -n llm-d-system | grep -E "OOM|out of memory|KV cache"
 
 - [[CNCF_Cloud_Native_AI/README]] — CNCF 云原生 LLM 全景导览，llm-d 在「推理层」的定位
 - [[CNCF_Cloud_Native_AI/KServe_Deep_Dive]] — 推理 CRD 另一主流方案，与 llm-d 互补
-- [[10_Deployment_Inference/KV_Cache_Deep_Dive]] — 理解 llm-d 杀手特性的前提：KV Cache 物理本质
-- [[10_Deployment_Inference/vLLM_Deep_Dive]] — llm-d worker 引擎的底层
+- [[10_Deployment_Inference/Caching/KV_Cache_Deep_Dive]] — 理解 llm-d 杀手特性的前提：KV Cache 物理本质
+- [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive]] — llm-d worker 引擎的底层
 - [[12_Architecture_Infrastructure/AI_Infrastructure_2026]] — 2026 年 AI 基础设施全景，llm-d 是推理侧关键拼图

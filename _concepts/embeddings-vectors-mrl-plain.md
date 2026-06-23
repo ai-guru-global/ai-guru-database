@@ -296,7 +296,7 @@ MRL 的解决办法：**只训练一个模型，输出一个向量，按需截�
 - [[_concepts/embedding-models]] — 嵌入模型概念卡片
 - [[_concepts/matryoshka-representation-learning]] — MRL 概念卡片
 - [[14_RAG_Systems/Matryoshka_Representation_Learning_for_dummy]] — MRL 小白版
-- [[14_RAG_Systems/Matryoshka_Representation_Learning_Deep_Dive]] — MRL 深度解析
+- [[14_RAG_Systems/Embeddings/Matryoshka_Representation_Learning_Deep_Dive]] — MRL 深度解析
 - [[_concepts/vector-database]] — 向量数据库
 - [[_concepts/rag-systems]] — RAG 系统
 

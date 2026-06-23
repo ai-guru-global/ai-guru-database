@@ -899,4 +899,4 @@ study.optimize(
 - [[02_Machine_Learning/Supervised_Learning/Supervised_Learning]] — 监督学习：AutoML 自动选择的模型空间
 - [[02_Machine_Learning/Feature_Engineering/Feature_Engineering]] — 特征工程：自动化特征构造方法
 - [[07_Model_Training/Fine_tuning_Strategies]] — 微调策略：神经架构搜索 (NAS) 的应用
-- [[11_MLOps_Pipeline/Experiment_Tracking_Deep_Dive]] — 实验追踪：AutoML 搜索过程管理
+- [[11_MLOps_Pipeline/Experiment_Tracking/Experiment_Tracking_Deep_Dive]] — 实验追踪：AutoML 搜索过程管理

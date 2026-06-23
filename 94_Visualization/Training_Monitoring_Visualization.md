@@ -1049,5 +1049,5 @@ W&B 适合:
 - [[94_Visualization/README.md|94_Visualization README]]
 - [[94_Visualization/atlas/README.md|atlas README]]
 - [[94_Visualization/atlas/docs/performance.md|performance]]
-- [[07_Model_Training/Distributed_Training_2026.md|Distributed_Training_2026]]
-- [[07_Model_Training/Distributed_Training_for_dummy.md|Distributed_Training_for_dummy]]
+- [[07_Model_Training/Distributed_Training/Distributed_Training_2026.md|Distributed_Training_2026]]
+- [[07_Model_Training/Distributed_Training/Distributed_Training_for_dummy.md|Distributed_Training_for_dummy]]

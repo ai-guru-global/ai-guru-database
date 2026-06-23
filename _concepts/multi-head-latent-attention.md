@@ -18,7 +18,7 @@ relationships:
   type: simplified_by
 sources:
 - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
-- 10_Deployment_Inference/vLLM_Deep_Dive.md
+- 10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive.md
 - 10_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy.md
 summary: Multi-head Latent Attention (MLA) 是 DeepSeek 提出的注意力压缩架构，通过低秩 KV 联合压缩将 KV Cache 显存降低 7-28×，是 DeepSeek V2/V3/R1 经济化部署 128K-1M 上下文的核心技术。FlashMLA 算子库在 H800 上达到 660 TFLOPS 峰值性能。
 provenance:

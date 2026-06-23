@@ -11,7 +11,7 @@ updated: "2026-05-31"
 
 > **一句话理解**: Guardrails AI 是 LLM 安全护栏框架——输入验证、输出过滤、有害内容检测、数据隐私保护，确保 AI 应用安全合规。
 
-> 📐 **概念与选型方法论**: 隐私合规流水线（PII/数据血源/Model Card 门禁）见 [[11_MLOps_Pipeline/Privacy_Compliance_Pipeline]]，LLM 安全监控见 [[11_MLOps_Pipeline/LLM_Observability]]。本文聚焦 Guardrails 工具用法。
+> 📐 **概念与选型方法论**: 隐私合规流水线（PII/数据血源/Model Card 门禁）见 [[11_MLOps_Pipeline/Orchestration/Privacy_Compliance_Pipeline]]，LLM 安全监控见 [[11_MLOps_Pipeline/Observability/LLM_Observability]]。本文聚焦 Guardrails 工具用法。
 
 ---
 

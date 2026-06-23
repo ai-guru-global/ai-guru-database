@@ -240,8 +240,8 @@ updated: 2026-05-31
 01_Fundamentals/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md
 01_Fundamentals/Java_Ecosystem_AI/Java_Ecosystem_AI_Overview.md
 01_Fundamentals/README.md
-10_Deployment_Inference/JVM_AI_Deployment.md
-14_RAG_Systems/Spring_AI_RAG_Deep_Dive.md
+10_Deployment_Inference/Inference_Engines/JVM_AI_Deployment.md
+14_RAG_Systems/RAG_Frameworks/Spring_AI_RAG_Deep_Dive.md
 12_Architecture_Infrastructure/Spring_AI_Architecture.md
 15_Agent_Production/Agent_Skills/Spring_AI_Skills_Integration.md
 15_Agent_Production/Agent_Skills/README.md
@@ -553,7 +553,7 @@ ROADMAP.md
 
 1. **主入口**：`01_Fundamentals/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md`（全面介绍）
 2. **其他章节**只写领域特定扩展：
- - `14_RAG_Systems/Spring_AI_RAG_Deep_Dive.md` → 只写 RAG 相关，基础部分引用主入口
+ - `14_RAG_Systems/RAG_Frameworks/Spring_AI_RAG_Deep_Dive.md` → 只写 RAG 相关，基础部分引用主入口
  - `14_AI_Gateway/Spring_AI_Gateway_Security.md` → 只写安全相关，基础部分引用主入口
 3. **在每个相关文件顶部添加**：
    ```markdown

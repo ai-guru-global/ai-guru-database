@@ -210,14 +210,14 @@ baseline: _project-evaluation.md
 | 文件 | 字数 |
 |------|------|
 | 91_Notes/AI_Concept_Knowledge_Graph.md | 7,918 |
-| 10_Deployment_Inference/Quantization_Techniques_2026.md | 6,859 |
-| 07_Model_Training/Tokenizer_Design_2026.md | 6,769 |
+| 10_Deployment_Inference/Quantization/Quantization_Techniques_2026.md | 6,859 |
+| 07_Model_Training/Data/Tokenizer_Design_2026.md | 6,769 |
 | 05_NLP_LLMs/Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive.md | 6,761 |
-| 07_Model_Training/Data_Curation_and_Mixture_2026.md | 6,695 |
+| 07_Model_Training/Data/Data_Curation_and_Mixture_2026.md | 6,695 |
 | 05_NLP_LLMs/Global_LLM_Ecosystem/OpenAI_Deep_Dive.md | 6,694 |
 | 01_Fundamentals/AI_Hardware/NVIDIA_AMD_GPU_Deep_Dive.md | 6,612 |
 | 91_Notes/AI_Full_Stack_Concepts.md | 6,514 |
-| 07_Model_Training/GRPO_and_New_Alignment_Methods.md | 5,895 |
+| 07_Model_Training/Alignment/GRPO_and_New_Alignment_Methods.md | 5,895 |
 | 05_NLP_LLMs/Global_LLM_Ecosystem/Anthropic_Claude_Deep_Dive.md | 5,824 |
 
 ---

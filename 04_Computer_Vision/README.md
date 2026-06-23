@@ -98,7 +98,7 @@ updated: 2026-05-31
 
 - [[04_Computer_Vision/Segmentation/Segmentation_for_dummy]] — 图像分割 - 小白版 ✂️ (共享: cnn, computer-vision, cv, image-processing)
 - [[04_Computer_Vision/Video_Generation/README]] — AI视频生成 (Video Generation) (共享: cnn, computer-vision, cv, image-processing)
-- [[20_Papers/ResNet_Deep_Dive]] — ResNet 深度解读 (Deep Residual Learning for Image Recognition) (共享: cnn, cv)
+- [[20_Papers/Vision/ResNet_Deep_Dive]] — ResNet 深度解读 (Deep Residual Learning for Image Recognition) (共享: cnn, cv)
 - [[04_Computer_Vision/3D_Vision/3D_Vision]] — 3D_Vision
 - [[04_Computer_Vision/3D_Vision/3D_Vision_for_dummy]] — 3D_Vision_for_dummy
 - [[04_Computer_Vision/Segmentation/Segmentation]] — Segmentation

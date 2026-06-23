@@ -832,8 +832,8 @@ training_args = TrainingArguments(
 
 ## Related
 
-- [[07_Model_Training/Distributed_Training_2026]] — Distributed Training 2026 (共享: distributed-training, fsdp, model-training, optimization)
-- [[07_Model_Training/Distributed_Training_for_dummy]] — 分布式训练 - 小白版 (共享: distributed-training, fsdp, model-training, optimization)
+- [[07_Model_Training/Distributed_Training/Distributed_Training_2026]] — Distributed Training 2026 (共享: distributed-training, fsdp, model-training, optimization)
+- [[07_Model_Training/Distributed_Training/Distributed_Training_for_dummy]] — 分布式训练 - 小白版 (共享: distributed-training, fsdp, model-training, optimization)
 - [[07_Model_Training/Model-Training-in-nutshell]] — 模型训练速成指南 (共享: distributed-training, fsdp, model-training, optimization)
 - [[07_Model_Training/Model_Training_for_dummy]] — 模型训练小白指南 (共享: distributed-training, fsdp, model-training, optimization)
-- [[07_Model_Training/Training_Monitoring_2026.md|Training_Monitoring_2026]]
+- [[07_Model_Training/Monitoring/Training_Monitoring_2026.md|Training_Monitoring_2026]]

@@ -15,7 +15,7 @@ relationships:
     type: used_by
 sources:
   - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
-  - 10_Deployment_Inference/vLLM_Deep_Dive.md
+  - 10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive.md
 summary: Continuous Batching（连续批处理）由 Orca (OSDI'22) 提出，在迭代级别动态调度请求——新请求插入正在运行的 batch，已完成请求立即释放资源。相比静态 batching 吞吐提升 2-4×，是 2026 年高吞吐推理的标配技术。
 provenance:
   extracted: 0.9
@@ -95,11 +95,11 @@ Step 4: Decode A, B, C, D
 - [[_concepts/paged-attention]] — PagedAttention（内存管理协同）
 - [[_concepts/kv-cache]] — KV Cache
 - [[_concepts/model-deployment]] — 模型部署
-- [[10_Deployment_Inference/vLLM_Deep_Dive]] — vLLM（Continuous Batching + PagedAttention）
-- [[10_Deployment_Inference/SGLang_Deep_Dive]] — SGLang（零开销调度 + Continuous Batching）
-- [[10_Deployment_Inference/TGI_Deep_Dive]] — TGI（Continuous Batching）
-- [[10_Deployment_Inference/LMDeploy_Deep_Dive]] — LMDeploy（Continuous Batching）
-- [[10_Deployment_Inference/TensorRT_LLM_Deep_Dive]] — TensorRT-LLM（In-Flight Batching）
+- [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive]] — vLLM（Continuous Batching + PagedAttention）
+- [[10_Deployment_Inference/Inference_Engines/SGLang_Deep_Dive]] — SGLang（零开销调度 + Continuous Batching）
+- [[10_Deployment_Inference/Inference_Engines/TGI_Deep_Dive]] — TGI（Continuous Batching）
+- [[10_Deployment_Inference/Inference_Engines/LMDeploy_Deep_Dive]] — LMDeploy（Continuous Batching）
+- [[10_Deployment_Inference/Inference_Engines/TensorRT_LLM_Deep_Dive]] — TensorRT-LLM（In-Flight Batching）
 - [[_concepts/dynamic-batch-scheduling]] — 动态批调度
 - [[_concepts/sglang]] — SGLang
 - [[_concepts/tensorrt-llm]] — TensorRT-LLM

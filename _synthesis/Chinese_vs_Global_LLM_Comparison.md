@@ -725,12 +725,12 @@ flowchart TD
 
 ### 相关论文
 
-- [[20_Papers/Scaling_Laws_Deep_Dive|Scaling Laws 深度解读]]
-- [[20_Papers/Mixture_of_Experts_Deep_Dive|MoE 深度解读]]
-- [[20_Papers/DeepSeek_V3_Technical_Report|DeepSeek-V3 技术报告]]
-- [[20_Papers/RLHF_DPO_Deep_Dive|RLHF 与 DPO 深度解读]]
-- [[20_Papers/Chain_of_Thought_Deep_Dive|Chain-of-Thought 深度解读]]
-- [[20_Papers/Chinchilla_Deep_Dive|Chinchilla 深度解读]]
+- [[20_Papers/Scaling/Scaling_Laws_Deep_Dive|Scaling Laws 深度解读]]
+- [[20_Papers/Architecture/Mixture_of_Experts_Deep_Dive|MoE 深度解读]]
+- [[20_Papers/Frontier/DeepSeek_V3_Technical_Report|DeepSeek-V3 技术报告]]
+- [[20_Papers/Alignment/RLHF_DPO_Deep_Dive|RLHF 与 DPO 深度解读]]
+- [[20_Papers/Alignment/Chain_of_Thought_Deep_Dive|Chain-of-Thought 深度解读]]
+- [[20_Papers/Scaling/Chinchilla_Deep_Dive|Chinchilla 深度解读]]
 
 ### 相关合成文档
 

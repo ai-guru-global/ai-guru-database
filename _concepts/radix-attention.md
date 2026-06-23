@@ -9,7 +9,7 @@ relationships:
     type: implements
 sources:
   - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
-  - 10_Deployment_Inference/SGLang_Deep_Dive.md
+  - 10_Deployment_Inference/Inference_Engines/SGLang_Deep_Dive.md
 summary: RadixAttention 是 SGLang 提出的基于基数树的 KV Cache 复用技术，自动检测并缓存共享 prompt 前缀，支持分支前缀匹配。在多轮对话、Agent 循环、RAG 等场景下比 vLLM APC 快 10-20%，是 2026 年动态多轮场景的最优选择。
 provenance:
   extracted: 0.88
@@ -93,6 +93,6 @@ Root
 - [[_concepts/kv-cache]] — KV Cache（RadixAttention 优化的对象）
 - [[_concepts/prefix-caching]] — 前缀缓存（RadixAttention 是其中一种实现）
 - [[_concepts/paged-attention]] — PagedAttention（底层内存管理）
-- [[10_Deployment_Inference/SGLang_Deep_Dive]] — SGLang 推理框架（RadixAttention 首发）
-- [[10_Deployment_Inference/vLLM_Deep_Dive]] — vLLM（Automatic Prefix Caching）
-- [[10_Deployment_Inference/LMDeploy_Deep_Dive]] — LMDeploy（Prefix Caching）
+- [[10_Deployment_Inference/Inference_Engines/SGLang_Deep_Dive]] — SGLang 推理框架（RadixAttention 首发）
+- [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive]] — vLLM（Automatic Prefix Caching）
+- [[10_Deployment_Inference/Inference_Engines/LMDeploy_Deep_Dive]] — LMDeploy（Prefix Caching）

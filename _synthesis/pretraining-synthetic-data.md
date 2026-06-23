@@ -46,8 +46,8 @@ summary: ""
 
 ## 跨域连接
 
-- [[07_Model_Training/Data_Curation_and_Mixture_2026|数据策展与混合 2026]] — 数据混合比例的最新研究
-- [[07_Model_Training/Scaling_Laws_and_Training_Dynamics|Scaling Laws 与训练动态]] — 数据规模的数学规律
+- [[07_Model_Training/Data/Data_Curation_and_Mixture_2026|数据策展与混合 2026]] — 数据混合比例的最新研究
+- [[07_Model_Training/Optimization/Scaling_Laws_and_Training_Dynamics|Scaling Laws 与训练动态]] — 数据规模的数学规律
 - [[05_NLP_LLMs/LLM_Data_Engineering/LLM_Data_Engineering_Deep_Dive|LLM 数据工程深度解读]] — 数据工程全流程
 - [[_concepts/llm-data-engineering|LLM 数据工程]] — 数据策展的核心理论
 

@@ -19,10 +19,10 @@ relationships:
   type: related_to
 sources:
 - 11_RAG_recommendation-systems/Milvus_deep-reinforcement-learning_Dive.md
-- 14_RAG_Systems/Qdrant_Deep_Dive.md
-- 14_RAG_Systems/Chroma_Deep_Dive.md
+- 14_RAG_Systems/Vector_Databases/Qdrant_Deep_Dive.md
+- 14_RAG_Systems/Vector_Databases/Chroma_Deep_Dive.md
 - 14_RAG_Systems/RAG_Systems.md
-- 14_RAG_Systems/RAG_Advanced_2026.md
+- 14_RAG_Systems/Advanced_RAG/RAG_Advanced_2026.md
 summary: 向量数据库是AI时代的专用存储引擎，通过HNSW/IVF等近似最近邻算法实现高维向量的毫秒级语义检索，是RAG系统和语义搜索的基础设施。
 provenance:
   extracted: 0.82
@@ -114,11 +114,11 @@ IVF（Inverted File Index）将向量空间划分为聚类中心，查询时只�
 
 ## 来源
 
-- 14_RAG_Systems/Milvus_Deep_Dive.md — Milvus架构、索引类型、性能基准
-- 14_RAG_Systems/Qdrant_Deep_Dive.md — Qdrant核心概念、混合搜索、多租户
-- 14_RAG_Systems/Chroma_Deep_Dive.md — Chroma轻量级设计、快速开始
+- 14_RAG_Systems/Vector_Databases/Milvus_Deep_Dive.md — Milvus架构、索引类型、性能基准
+- 14_RAG_Systems/Vector_Databases/Qdrant_Deep_Dive.md — Qdrant核心概念、混合搜索、多租户
+- 14_RAG_Systems/Vector_Databases/Chroma_Deep_Dive.md — Chroma轻量级设计、快速开始
 - 14_RAG_Systems/RAG_Systems.md — 向量数据库对比与选型建议
-- 14_RAG_Systems/RAG_Advanced_2026.md — 混合检索架构与生产部署
+- 14_RAG_Systems/Advanced_RAG/RAG_Advanced_2026.md — 混合检索架构与生产部署
 
 ## Related
 

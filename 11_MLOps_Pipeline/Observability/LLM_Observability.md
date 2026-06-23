@@ -294,9 +294,9 @@ graph TD
 
 ### 本章内
 - [[11_MLOps_Pipeline/LLMOps_2026]] — 本系列主线（§7 是本文概览版）
-- [[11_MLOps_Pipeline/LLM_Evaluation_Pipeline]] — 评估方法（本文是在线版）
-- [[11_MLOps_Pipeline/Model_Monitoring_and_Drift_Detection_2026]] — 传统漂移监控
-- [[11_MLOps_Pipeline/ML_Observability_SLO]] — 系统层 SLO/SLI
+- [[11_MLOps_Pipeline/Evaluation/LLM_Evaluation_Pipeline]] — 评估方法（本文是在线版）
+- [[11_MLOps_Pipeline/Observability/Model_Monitoring_and_Drift_Detection_2026]] — 传统漂移监控
+- [[11_MLOps_Pipeline/Observability/ML_Observability_SLO]] — 系统层 SLO/SLI
 
 ### 跨章
 - [[13_AI_Ops/README]] — AI 系统运维（基础设施层）

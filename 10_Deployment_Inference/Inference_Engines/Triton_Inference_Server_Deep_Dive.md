@@ -278,4 +278,4 @@ Triton 暴露 Prometheus 指标：
 - [[_concepts/model-serving]] — 模型服务
 - [[_concepts/tensorrt-llm]] — TensorRT-LLM
 - [[_concepts/kserve]] — KServe
-- [[10_Deployment_Inference/TensorRT_LLM_Deep_Dive]] — TensorRT-LLM 深度解析
+- [[10_Deployment_Inference/Inference_Engines/TensorRT_LLM_Deep_Dive]] — TensorRT-LLM 深度解析

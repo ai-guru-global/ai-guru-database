@@ -436,7 +436,7 @@ except openai.BadRequestError as err:
 - [[90_Learn/courses/microsoft/microsoft_genai_for_beginners]]
 - [[05_NLP_LLMs/Multimodal_Models/Multimodal_Models_for_dummy]]
 - [[18_AI_Applications_Industry/GenAI_L10_Building_Low_Code_AI_Applications]]
-- [[14_RAG_Systems/Multimodal_RAG_Architecture_2026]]
+- [[14_RAG_Systems/Advanced_RAG/Multimodal_RAG_Architecture_2026]]
 - [[15_Agent_Production/GenAI_L06_Text_Generation_Apps]]
 
 ## 课程导航

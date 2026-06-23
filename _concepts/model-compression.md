@@ -27,8 +27,8 @@ relationships:
 sources:
 - 09_model-deployment_Inference/Deployment_Inference.md
 - 10_Deployment_Inference/Deployment_Inference_2026.md
-- 10_Deployment_Inference/vLLM_Deep_Dive.md
-- 10_Deployment_Inference/llama_cpp_Deep_Dive.md
+- 10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive.md
+- 10_Deployment_Inference/Inference_Engines/llama_cpp_Deep_Dive.md
 - 07_Model_Training/Fine_fine-tuning-techniques_Strategies.md
 summary: 模型压缩通过量化（INT4/INT8/FP8）、剪枝和知识蒸馏将大模型缩减为更小更快但不显著损失精度的版本。2026年主流量化方案为GPTQ和AWQ，支持4-bit推理保持95%+原始精度；知识蒸馏用大模型指导小模型训练；结构化剪枝移除整个注意力头或FFN层。
 provenance:
@@ -131,4 +131,4 @@ $$\mathcal{L} = \alpha \cdot \mathcal{L}_{\text{hard}} + (1-\alpha) \cdot \mathc
 - [[_concepts/gguf]] — GGUF
 - [[_concepts/smoothquant]] — SmoothQuant
 - [[_concepts/knowledge-distillation]] — 知识蒸馏
-- [[10_Deployment_Inference/Quantization_Techniques_2026]] — 量化技术 2026
+- [[10_Deployment_Inference/Quantization/Quantization_Techniques_2026]] — 量化技术 2026

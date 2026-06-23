@@ -528,11 +528,11 @@ router_settings:
 
 ## Related
 
-- [[10_Deployment_Inference/LLM_Inference_Engine_Selection_Guide|LLM_Inference_Engine_Selection_Guide]]
-- [[10_Deployment_Inference/LLM_Inference_Benchmarking_Guide|LLM_Inference_Benchmarking_Guide]]
-- [[10_Deployment_Inference/vLLM_Deep_Dive|vLLM_Deep_Dive]]
-- [[10_Deployment_Inference/SGLang_Deep_Dive|SGLang_Deep_Dive]]
-- [[10_Deployment_Inference/TGI_Deep_Dive|TGI_Deep_Dive]]
-- [[10_Deployment_Inference/TensorRT_LLM_Deep_Dive|TensorRT_LLM_Deep_Dive]]
-- [[10_Deployment_Inference/Groq_Deep_Dive|Groq_Deep_Dive]]
+- [[10_Deployment_Inference/Inference_Engines/LLM_Inference_Engine_Selection_Guide|LLM_Inference_Engine_Selection_Guide]]
+- [[10_Deployment_Inference/Inference_Engines/LLM_Inference_Benchmarking_Guide|LLM_Inference_Benchmarking_Guide]]
+- [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive|vLLM_Deep_Dive]]
+- [[10_Deployment_Inference/Inference_Engines/SGLang_Deep_Dive|SGLang_Deep_Dive]]
+- [[10_Deployment_Inference/Inference_Engines/TGI_Deep_Dive|TGI_Deep_Dive]]
+- [[10_Deployment_Inference/Inference_Engines/TensorRT_LLM_Deep_Dive|TensorRT_LLM_Deep_Dive]]
+- [[10_Deployment_Inference/Inference_Engines/Groq_Deep_Dive|Groq_Deep_Dive]]
 - [[14_AI_Gateway/LiteLLM_Deep_Dive|LiteLLM_Deep_Dive]]

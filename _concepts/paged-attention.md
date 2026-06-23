@@ -9,7 +9,7 @@ relationships:
     type: enables
 sources:
   - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
-  - 10_Deployment_Inference/vLLM_Deep_Dive.md
+  - 10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive.md
 summary: PagedAttention 是 vLLM 提出的 KV Cache 内存管理技术，借鉴操作系统虚拟内存分页思想，将 KV Cache 分成固定大小 block 按需分配，消除显存碎片，将利用率从 50-65% 提升到 95%+。2026 年所有主流推理引擎均默认启用。
 provenance:
   extracted: 0.9
@@ -139,7 +139,7 @@ Block Table: A→[1,5,8]  B→[2,6]  C→[3,7]
 - [[_concepts/continuous-batching]] — Continuous Batching（协同技术）
 - [[_concepts/model-deployment]] — 模型部署全景
 - [[_concepts/multi-head-latent-attention]] — MLA（架构层压缩 KV Cache）
-- [[10_Deployment_Inference/vLLM_Deep_Dive]] — vLLM（PagedAttention 首发实现）
-- [[10_Deployment_Inference/SGLang_Deep_Dive]] — SGLang（结合 RadixAttention 的内存管理）
-- [[10_Deployment_Inference/LMDeploy_Deep_Dive]] — LMDeploy（TurboMind Paging KV Cache）
-- [[10_Deployment_Inference/TensorRT_LLM_Deep_Dive]] — TensorRT-LLM（In-Flight Batching + Paged KV）
+- [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive]] — vLLM（PagedAttention 首发实现）
+- [[10_Deployment_Inference/Inference_Engines/SGLang_Deep_Dive]] — SGLang（结合 RadixAttention 的内存管理）
+- [[10_Deployment_Inference/Inference_Engines/LMDeploy_Deep_Dive]] — LMDeploy（TurboMind Paging KV Cache）
+- [[10_Deployment_Inference/Inference_Engines/TensorRT_LLM_Deep_Dive]] — TensorRT-LLM（In-Flight Batching + Paged KV）

@@ -340,7 +340,7 @@ LLMOps的五大核心指标是质量、伤害、诚实度、成本和延迟。�
 - [[90_Learn/courses/microsoft/microsoft_genai_for_beginners]] - 课程总览
 - [[11_MLOps_Pipeline/MLOps_Maturity_Model]] - MLOps成熟度模型
 - [[14_RAG_Systems/RAG-in-nutshell]] - RAG技术概述
-- [[11_MLOps_Pipeline/Model_Monitoring_and_Drift_Detection_2026]] - 模型监控
+- [[11_MLOps_Pipeline/Observability/Model_Monitoring_and_Drift_Detection_2026]] - 模型监控
 - [[14_RAG_Systems/GenAI_L15_RAG_and_Vector_Databases]] - RAG与向量数据库
 - [[17_Ethics_Safety/GenAI_L13_Securing_AI_Applications]] - AI应用安全
 

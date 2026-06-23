@@ -815,13 +815,13 @@ AI Stack 一体机交付后，日常生产环境涉及容器运行时、GPU 监�
 ## Related
 
 - [[12_Architecture_Infrastructure/AI_Infrastructure_2026]] — AI 基础设施全景
-- [[10_Deployment_Inference/vLLM_Deep_Dive]] — vLLM 推理框架
-- [[10_Deployment_Inference/SGLang_Deep_Dive]] — SGLang 推理框架
+- [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive]] — vLLM 推理框架
+- [[10_Deployment_Inference/Inference_Engines/SGLang_Deep_Dive]] — SGLang 推理框架
 - [[07_Model_Training/Fine_tuning_Strategies]] — 模型微调策略
-- [[14_RAG_Systems/RAG_Advanced_2026]] — RAG 高级技术
+- [[14_RAG_Systems/Advanced_RAG/RAG_Advanced_2026]] — RAG 高级技术
 - [[05_NLP_LLMs/Chinese_LLM_Ecosystem]] — 中国大模型生态
-- [[10_Deployment_Inference/Speculative_Decoding_Advanced_2026]] — 投机解码高级技术（MTP 相关）
-- [[10_Deployment_Inference/Prompt_Caching_and_KV_Cache_Optimization]] — KV Cache 优化全景
+- [[10_Deployment_Inference/Caching/Speculative_Decoding_Advanced_2026]] — 投机解码高级技术（MTP 相关）
+- [[10_Deployment_Inference/Caching/Prompt_Caching_and_KV_Cache_Optimization]] — KV Cache 优化全景
 
 - [[_concepts/ai-hardware|AI 基础设施]] — AI 基础设施
 - [[_concepts/model-deployment|LLM 部署]] — LLM 部署

@@ -124,6 +124,6 @@ print("PiSSA 模型准备就绪。")
 ---
 
 ## 相关阅读
-- [[07_Model_Training/TRL_RLHF_DPO_Guide]]
+- [[07_Model_Training/Alignment/TRL_RLHF_DPO_Guide]]
 - [[05_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026]]
 - [[03_Deep_Learning/Optimization/Optimization_for_dummy]]

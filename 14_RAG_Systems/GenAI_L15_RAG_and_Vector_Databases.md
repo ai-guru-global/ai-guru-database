@@ -446,8 +446,8 @@ RAG和向量数据库可以应用于多种场景：
 - [[90_Learn/courses/microsoft/microsoft_genai_for_beginners]] - 课程总览
 - [[14_RAG_Systems/RAG-in-nutshell]] - RAG核心概念
 - [[14_RAG_Systems/Vector_Database_for_dummy]] - 向量数据库入门
-- [[14_RAG_Systems/LlamaIndex_Deep_Dive]] - LlamaIndex框架
-- [[14_RAG_Systems/Chroma_Deep_Dive]] - Chroma向量数据库
+- [[14_RAG_Systems/RAG_Frameworks/LlamaIndex_Deep_Dive]] - LlamaIndex框架
+- [[14_RAG_Systems/Vector_Databases/Chroma_Deep_Dive]] - Chroma向量数据库
 - [[11_MLOps_Pipeline/GenAI_L14_GenAI_Application_Lifecycle]] - AI应用生命周期
 
 ## 课程导航

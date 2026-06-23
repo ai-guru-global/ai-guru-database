@@ -14,7 +14,7 @@ relationships:
   - target: "_concepts/volcano"
     type: related_to
 sources:
-  - 11_MLOps_Pipeline/Kubeflow_Deep_Dive.md
+  - 11_MLOps_Pipeline/Orchestration/Kubeflow_Deep_Dive.md
 summary: "Kubeflow 是 CNCF 孵化的 Kubernetes 机器学习工具集，提供 Notebooks、Pipelines、Training、Katib（AutoML）、Serving 等组件，是 K8s 上端到端 MLOps 的主流开源方案。"
 provenance:
   extracted: 0.8
@@ -103,7 +103,7 @@ Kubeflow Platform
 
 ## Related
 
-- [[11_MLOps_Pipeline/Kubeflow_Deep_Dive]] — Kubeflow 深度解析
+- [[11_MLOps_Pipeline/Orchestration/Kubeflow_Deep_Dive]] — Kubeflow 深度解析
 - [[_concepts/mlops]] — MLOps
 - [[_concepts/kubernetes]] — Kubernetes
 - [[_concepts/kserve]] — KServe

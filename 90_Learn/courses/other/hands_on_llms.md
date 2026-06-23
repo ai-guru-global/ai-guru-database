@@ -74,7 +74,7 @@ updated: 2026-06-12
 | Ch 9 | Multimodal Large Language Models | CLIP、视觉编码器、多模态提示 | [[05_NLP_LLMs/Multimodal_Models/Multimodal_Models\|多模态模型]], [[04_Computer_Vision/Multimodal_Vision/Multimodal_Vision\|多模态视觉]] |
 | Ch 10 | Creating Text Embedding Models | 对比学习、sentence-transformers、Matryoshka 嵌入 | [[14_RAG_Systems/Embedding_Models\|嵌入模型]]（如存在）, [[05_NLP_LLMs/LLM_Fundamentals\|LLM 基础]] |
 | Ch 11 | Fine-tuning Representation Models for Classification | BERT 微调、LoRA、分类任务最佳实践 | [[05_NLP_LLMs/Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs\|微调 LLM]], [[05_NLP_LLMs/Fine_tuning_Techniques/LoRA\|LoRA]]（如存在） |
-| Ch 12 | Fine-tuning Generation Models | 指令微调、SFT、RLHF、DPO、奖励模型 | [[05_NLP_LLMs/Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs\|微调 LLM]], [[07_Model_Training/GRPO_and_New_Alignment_Methods\|GRPO 与新对齐方法]] |
+| Ch 12 | Fine-tuning Generation Models | 指令微调、SFT、RLHF、DPO、奖励模型 | [[05_NLP_LLMs/Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs\|微调 LLM]], [[07_Model_Training/Alignment/GRPO_and_New_Alignment_Methods\|GRPO 与新对齐方法]] |
 
 ---
 

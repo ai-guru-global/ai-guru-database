@@ -11,7 +11,7 @@ relationships:
     type: enables
 sources:
   - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
-  - 07_Model_Training/Distributed_Training_2026.md
+  - 07_Model_Training/Distributed_Training/Distributed_Training_2026.md
 summary: "分布式并行策略是将大模型训练/推理分布到多GPU上的核心技术——数据并行(DP)、张量并行(TP)、流水线并行(PP)、专家并行(EP)、序列并行(SP)，可组合使用。"
 provenance:
   extracted: 0.50
@@ -186,7 +186,7 @@ Experts 0-85    Experts 86-170   Experts 171-255
 
 ## Related
 
-- [[07_Model_Training/Distributed_Training_2026]] — 分布式训练
+- [[07_Model_Training/Distributed_Training/Distributed_Training_2026]] — 分布式训练
 - [[_concepts/mixture-of-experts]] — MoE（Expert Parallelism）
 - [[_concepts/model-training]] — 模型训练
 - [[_concepts/model-serving]] — 模型服务（推理并行策略）

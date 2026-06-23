@@ -73,4 +73,4 @@ def check_permission(block) -> bool:
 - [[90_Learn/courses/share_ai/learn_claude_code]] — 完整 20 课映射
 - [[_references/learn-claude-code]] — 仓库引用索引
 - [[15_Agent_Production/Enterprise_Agent/Agent_Production_2026]] — Agent 生产治理
-- [[15_Agent_Production/Learn_Claude_Code_L01_Agent_Loop]] — L01 最小循环
+- [[15_Agent_Production/Course_Notes/Learn_Claude_Code/Learn_Claude_Code_L01_Agent_Loop]] — L01 最小循环

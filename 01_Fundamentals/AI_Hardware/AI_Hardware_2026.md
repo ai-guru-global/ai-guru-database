@@ -409,6 +409,6 @@ AI硬件选型决策树 2026:
 - [[01_Fundamentals/AI_Hardware/T_Head_PPU_Deep_Dive]] — 平头哥真武 PPU 深度解析
 - [[01_Fundamentals/AI_Hardware/T_Head_PPU_for_dummy]] — 平头哥 PPU 大白话解读
 - [[12_Architecture_Infrastructure/AI_Infrastructure_2026]] — AI 基础设施 2026
-- [[07_Model_Training/Distributed_Training_2026]] — 分布式训练与 GPU 集群调度
+- [[07_Model_Training/Distributed_Training/Distributed_Training_2026]] — 分布式训练与 GPU 集群调度
 - [[01_Fundamentals/AI_Hardware/Chinese_AI_Chips_Deep_Dive]] — 国产 AI 芯片12家厂商深度解析
 - [[_concepts/heterogeneous-gpu]] — 异构 GPU 集群统一纳管

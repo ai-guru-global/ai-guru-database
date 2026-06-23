@@ -489,9 +489,9 @@ engine = MLCEngine(
 
 ## Related
 
-- [[10_Deployment_Inference/llama_cpp_Deep_Dive|llama_cpp_Deep_Dive]]
-- [[10_Deployment_Inference/LiteRT_Deep_Dive|LiteRT_Deep_Dive]]
-- [[10_Deployment_Inference/Ollama_Deep_Dive|Ollama_Deep_Dive]]
-- [[10_Deployment_Inference/vLLM_Deep_Dive|vLLM_Deep_Dive]]
-- [[10_Deployment_Inference/LLM_Inference_Engine_Selection_Guide|LLM_Inference_Engine_Selection_Guide]]
+- [[10_Deployment_Inference/Inference_Engines/llama_cpp_Deep_Dive|llama_cpp_Deep_Dive]]
+- [[10_Deployment_Inference/Inference_Engines/LiteRT_Deep_Dive|LiteRT_Deep_Dive]]
+- [[10_Deployment_Inference/Inference_Engines/Ollama_Deep_Dive|Ollama_Deep_Dive]]
+- [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive|vLLM_Deep_Dive]]
+- [[10_Deployment_Inference/Inference_Engines/LLM_Inference_Engine_Selection_Guide|LLM_Inference_Engine_Selection_Guide]]
 - [[10_Deployment_Inference/Deployment_Inference.md|Deployment_Inference]]

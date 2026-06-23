@@ -30,9 +30,9 @@ updated: 2026-06-12
 
 ### 融合的三个维度
 
-1. **数据漂移 + 特征存储**: 特征存储（[[11_MLOps_Pipeline/Feature_Store_Deep_Dive]]）检测到特征分布变化时，自动通知监控系统
-2. **模型漂移 + 实验追踪**: 监控发现模型性能下降时，自动触发实验追踪（[[11_MLOps_Pipeline/Experiment_Tracking_Deep_Dive]]）中的重训练流程
-3. **推理监控 + 模型注册**: 推理延迟/错误率异常时，自动从模型注册表（[[11_MLOps_Pipeline/Model_Registry_and_Cards_Deep_Dive]]）回滚到上一个稳定版本
+1. **数据漂移 + 特征存储**: 特征存储（[[11_MLOps_Pipeline/Experiment_Tracking/Feature_Store_Deep_Dive]]）检测到特征分布变化时，自动通知监控系统
+2. **模型漂移 + 实验追踪**: 监控发现模型性能下降时，自动触发实验追踪（[[11_MLOps_Pipeline/Experiment_Tracking/Experiment_Tracking_Deep_Dive]]）中的重训练流程
+3. **推理监控 + 模型注册**: 推理延迟/错误率异常时，自动从模型注册表（[[11_MLOps_Pipeline/Experiment_Tracking/Model_Registry_and_Cards_Deep_Dive]]）回滚到上一个稳定版本
 
 ### 2026 工具格局
 
@@ -57,7 +57,7 @@ updated: 2026-06-12
 ## 相关页面
 
 - [[11_MLOps_Pipeline/MLOps_Pipeline]] — MLOps 流水线
-- [[11_MLOps_Pipeline/Model_Monitoring_and_Drift_Detection_2026]] — 模型监控与漂移检测
+- [[11_MLOps_Pipeline/Observability/Model_Monitoring_and_Drift_Detection_2026]] — 模型监控与漂移检测
 - [[13_AI_Ops/AI_Observability_Deep_Dive]] — AI 可观测性
 - [[13_AI_Ops/Incident_Response_for_AI_Systems]] — AI 系统故障响应
 - [[15_Agent_Production/Agent_Evaluation/Agent_Harness_Deep_Dive]] — Agent 评估体系

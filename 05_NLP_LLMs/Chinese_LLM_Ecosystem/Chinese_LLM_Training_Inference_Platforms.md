@@ -623,7 +623,7 @@ MoE 推理特殊挑战与优化:
 | LMDeploy | TurboMind + 量化 | 高 | 低 | 支持 | Apache 2.0 |
 | llama.cpp | GGUF + CPU 优化 | 中 | 中 | 部分支持 | MIT |
 
-> 各框架详细对比参见 [[10_Deployment_Inference/vLLM_Deep_Dive|vLLM]]、[[10_Deployment_Inference/SGLang_Deep_Dive|SGLang]]、[[10_Deployment_Inference/TGI_Deep_Dive|TGI]]、[[10_Deployment_Inference/TensorRT_LLM_Deep_Dive|TensorRT-LLM]]、[[10_Deployment_Inference/LMDeploy_Deep_Dive|LMDeploy]]、[[10_Deployment_Inference/llama_cpp_Deep_Dive|llama.cpp]]
+> 各框架详细对比参见 [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive|vLLM]]、[[10_Deployment_Inference/Inference_Engines/SGLang_Deep_Dive|SGLang]]、[[10_Deployment_Inference/Inference_Engines/TGI_Deep_Dive|TGI]]、[[10_Deployment_Inference/Inference_Engines/TensorRT_LLM_Deep_Dive|TensorRT-LLM]]、[[10_Deployment_Inference/Inference_Engines/LMDeploy_Deep_Dive|LMDeploy]]、[[10_Deployment_Inference/Inference_Engines/llama_cpp_Deep_Dive|llama.cpp]]
 
 ### 7.2 各厂商推荐推理方案
 
@@ -880,21 +880,21 @@ print(state["answer"])
 - [[05_NLP_LLMs/LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral]] — MoE 案例研究
 - [[05_NLP_LLMs/Reasoning_Models/DeepSeek_R1_Technical_Analysis]] — DeepSeek R1 GRPO 训练
 - [[05_NLP_LLMs/Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs]] — LLM 微调技术
-- [[20_Papers/LoRA_Deep_Dive]] — LoRA 低秩适配
-- [[20_Papers/Mixture_of_Experts_Deep_Dive]] — MoE 论文解读
+- [[20_Papers/Efficiency/LoRA_Deep_Dive]] — LoRA 低秩适配
+- [[20_Papers/Architecture/Mixture_of_Experts_Deep_Dive]] — MoE 论文解读
 
 ### 推理相关
 
-- [[10_Deployment_Inference/vLLM_Deep_Dive]] — vLLM 深度解析
-- [[10_Deployment_Inference/SGLang_Deep_Dive]] — SGLang 深度解析
-- [[10_Deployment_Inference/TGI_Deep_Dive]] — HuggingFace TGI
-- [[10_Deployment_Inference/TensorRT_LLM_Deep_Dive]] — TensorRT-LLM
-- [[10_Deployment_Inference/LMDeploy_Deep_Dive]] — LMDeploy (InternLM)
-- [[10_Deployment_Inference/Quantization_Techniques_2026]] — 量化技术
-- [[10_Deployment_Inference/Prompt_Caching_and_KV_Cache_Optimization]] — KV Cache 优化
-- [[10_Deployment_Inference/Speculative_Decoding_Advanced_2026]] — 投机解码
-- [[10_Deployment_Inference/llama_cpp_Deep_Dive]] — llama.cpp (端侧)
-- [[10_Deployment_Inference/Ollama_Deep_Dive]] — Ollama (一键部署)
+- [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive]] — vLLM 深度解析
+- [[10_Deployment_Inference/Inference_Engines/SGLang_Deep_Dive]] — SGLang 深度解析
+- [[10_Deployment_Inference/Inference_Engines/TGI_Deep_Dive]] — HuggingFace TGI
+- [[10_Deployment_Inference/Inference_Engines/TensorRT_LLM_Deep_Dive]] — TensorRT-LLM
+- [[10_Deployment_Inference/Inference_Engines/LMDeploy_Deep_Dive]] — LMDeploy (InternLM)
+- [[10_Deployment_Inference/Quantization/Quantization_Techniques_2026]] — 量化技术
+- [[10_Deployment_Inference/Caching/Prompt_Caching_and_KV_Cache_Optimization]] — KV Cache 优化
+- [[10_Deployment_Inference/Caching/Speculative_Decoding_Advanced_2026]] — 投机解码
+- [[10_Deployment_Inference/Inference_Engines/llama_cpp_Deep_Dive]] — llama.cpp (端侧)
+- [[10_Deployment_Inference/Inference_Engines/Ollama_Deep_Dive]] — Ollama (一键部署)
 
 ### 厂商深度解析
 

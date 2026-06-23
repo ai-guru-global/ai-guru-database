@@ -15,7 +15,7 @@ relationships:
     type: complements
 sources:
   - 05_NLP_LLMs/LLM_Architecture_Evolution.md
-  - 10_Deployment_Inference/KV_Cache_Deep_Dive.md
+  - 10_Deployment_Inference/Caching/KV_Cache_Deep_Dive.md
   - 10_Deployment_Inference/Inference_Performance/Long_Context_Inference_2026.md
 summary: "KV Cache 压缩就像把大模型推理时的‘记忆笔记本’变薄：通过量化、稀疏化、低秩近似、共享注意力头等技术，减少显存占用，让长上下文推理和多轮对话更便宜、更快。"
 provenance:
@@ -92,5 +92,5 @@ GQA/MLA：直接减少需要保存的 KV 数量
 - [[_concepts/grouped-query-attention]] — 分组查询注意力（GQA）
 - [[_concepts/multi-head-latent-attention]] — Multi-head Latent Attention (MLA)
 - [[_concepts/quantization]] — 模型量化
-- [[10_Deployment_Inference/KV_Cache_Deep_Dive]] — KV Cache 深度研究
+- [[10_Deployment_Inference/Caching/KV_Cache_Deep_Dive]] — KV Cache 深度研究
 - [[10_Deployment_Inference/Inference_Performance/Long_Context_Inference_2026]] — 长上下文推理 2026

@@ -11,7 +11,7 @@ updated: "2026-06-16"
 
 > **一句话理解**: Kueue 是 Kubernetes SIGs 的作业排队/配额层——它不调度,只负责在 GPU 等稀缺资源紧张时按团队配额/优先级/公平共享决定"谁能先跑",再把作业交给真正的调度器(Volcano/KAI/kube-scheduler)。
 
-> 📐 **概念方法论**: Kueue 解决的是"准入控制"问题,而非"节点选择"问题。它与 [[CNCF_Cloud_Native_AI/Volcano_Deep_Dive]] 形成互补——Volcano 是调度器,Kueue 是调度器之上的配额/排队层;二者常配合 [[11_MLOps_Pipeline/Kubeflow_Deep_Dive]] Training Operator 实现 AI/ML 训练作业的全链路管理。理解 Kueue 的关键在于区分 **admission(准入)** 与 **scheduling(调度)** 两层抽象。
+> 📐 **概念方法论**: Kueue 解决的是"准入控制"问题,而非"节点选择"问题。它与 [[CNCF_Cloud_Native_AI/Volcano_Deep_Dive]] 形成互补——Volcano 是调度器,Kueue 是调度器之上的配额/排队层;二者常配合 [[11_MLOps_Pipeline/Orchestration/Kubeflow_Deep_Dive]] Training Operator 实现 AI/ML 训练作业的全链路管理。理解 Kueue 的关键在于区分 **admission(准入)** 与 **scheduling(调度)** 两层抽象。
 
 ## 目录
 
@@ -691,4 +691,4 @@ Kueue 要求每个 ClusterQueue 引用的 flavor 必须有对应的 ResourceFlav
 - [[CNCF_Cloud_Native_AI/Volcano_Deep_Dive]] — Volcano 批量调度器(Kueue 的下游调度器)
 - [[CNCF_Cloud_Native_AI/KAI_Scheduler_Deep_Dive]] — KAI Scheduler(AI 专用调度器)
 - [[CNCF_Cloud_Native_AI/KubeRay_Deep_Dive]] — KubeRay(RayJob on Kubernetes,Kueue 集成对象)
-- [[11_MLOps_Pipeline/Kubeflow_Deep_Dive]] — Kubeflow Training Operator(Kueue 的主要 AI 作业集成)
+- [[11_MLOps_Pipeline/Orchestration/Kubeflow_Deep_Dive]] — Kubeflow Training Operator(Kueue 的主要 AI 作业集成)

@@ -14,7 +14,7 @@ relationships:
   - target: "_concepts/pipeline-parallelism"
     type: implements
 sources:
-  - 07_Model_Training/Megatron_LM_Deep_Dive.md
+  - 07_Model_Training/Distributed_Training/Megatron_LM_Deep_Dive.md
 summary: "Megatron-LM 是 NVIDIA 开源的大规模 Transformer 训练框架，以张量并行（TP）和流水线并行（PP）著称，广泛用于千亿参数 GPT/BERT/T5 模型的预训练。"
 provenance:
   extracted: 0.8
@@ -100,7 +100,7 @@ updated: 2026-06-16
 
 ## Related
 
-- [[07_Model_Training/Megatron_LM_Deep_Dive]] — Megatron-LM 深度解析
+- [[07_Model_Training/Distributed_Training/Megatron_LM_Deep_Dive]] — Megatron-LM 深度解析
 - [[_concepts/distributed-training]] — 分布式训练
 - [[_concepts/deepspeed]] — DeepSpeed
 - [[_concepts/fsdp]] — FSDP

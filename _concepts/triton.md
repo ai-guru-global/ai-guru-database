@@ -12,7 +12,7 @@ relationships:
   - target: "_concepts/kserve"
     type: related_to
 sources:
-  - 10_Deployment_Inference/Triton_Inference_Server_Deep_Dive.md
+  - 10_Deployment_Inference/Inference_Engines/Triton_Inference_Server_Deep_Dive.md
 summary: "Triton Inference Server 是 NVIDIA 开源的高性能推理服务框架，支持 TensorRT、PyTorch、ONNX、TensorFlow 等多种后端，提供动态批处理、并发模型执行和多 GPU 多模型服务。"
 provenance:
   extracted: 0.8
@@ -103,7 +103,7 @@ Triton Server
 
 ## Related
 
-- [[10_Deployment_Inference/Triton_Inference_Server_Deep_Dive]] — Triton Inference Server 深度解析
+- [[10_Deployment_Inference/Inference_Engines/Triton_Inference_Server_Deep_Dive]] — Triton Inference Server 深度解析
 - [[_concepts/model-serving]] — 模型服务
 - [[_concepts/tensorrt-llm]] — TensorRT-LLM
 - [[_concepts/kserve]] — KServe

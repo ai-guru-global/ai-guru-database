@@ -231,7 +231,7 @@ CDI 的声明式模型尤其擅长三种场景：
 
 CDI 是连接「硬件层」与「推理服务层」的隐形纽带：
 
-- 向上支撑 [[10_Deployment_Inference/vLLM_Deep_Dive]]、[[10_Deployment_Inference/TensorRT_LLM_Deep_Dive]]、[[10_Deployment_Inference/TGI_Deep_Dive]] 等 GPU 推理引擎的容器化部署
+- 向上支撑 [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive]]、[[10_Deployment_Inference/Inference_Engines/TensorRT_LLM_Deep_Dive]]、[[10_Deployment_Inference/Inference_Engines/TGI_Deep_Dive]] 等 GPU 推理引擎的容器化部署
 - 横向配合 [[01_Fundamentals/AI_Hardware/Chinese_AI_Chips_Deep_Dive]] 中国产加速器的统一接入
 - 与 [[12_Architecture_Infrastructure/AI_Infrastructure_2026]] 的 GPU 集群管理、[[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] 一体机的设备治理同属基础设施层
 
@@ -432,6 +432,6 @@ CDI spec 是**某时刻的快照**，硬件变了 spec 没跟着变，就会引�
 - [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — 软硬一体推理平台设备治理
 - [[12_Architecture_Infrastructure/HAMi_Deep_Dive]] — HAMi 异构 GPU 虚拟化（与 CDI 配合的共享方案）
 - [[01_Fundamentals/AI_Hardware/Chinese_AI_Chips_Deep_Dive]] — 国产异构加速器（CDI 的核心受益者）
-- [[10_Deployment_Inference/vLLM_Deep_Dive]] — GPU 推理引擎的容器化落地
+- [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive]] — GPU 推理引擎的容器化落地
 - [[10_Deployment_Inference/Deployment_Inference_2026]] — 部署推理 2026 趋势
 - [[_synthesis/serving-deployment]] — 推理服务与部署综合

@@ -103,29 +103,29 @@ RAG 的生成阶段对 TTFT（首个 token 时间）和前缀缓存命中率非�
 *详见 [RAG 高级实践导航](./README_Advanced.md) 获取框架选型与关键技术速查。*
 
 ## Related
-- [[14_RAG_Systems/Haystack_Deep_Dive|Haystack: 开源 RAG 框架]]
+- [[14_RAG_Systems/RAG_Frameworks/Haystack_Deep_Dive|Haystack: 开源 RAG 框架]]
 - [[14_RAG_Systems/RAG_Systems_for_dummy|RAG 系统 - 小白版]]
-- [[14_RAG_Systems/Dify_Deep_Dive|Dify: 开源 LLM 应用开发平台]]
-- [[14_RAG_Systems/Milvus_Deep_Dive|Milvus: 超大规模向量数据库]]
+- [[14_RAG_Systems/RAG_Frameworks/Dify_Deep_Dive|Dify: 开源 LLM 应用开发平台]]
+- [[14_RAG_Systems/Vector_Databases/Milvus_Deep_Dive|Milvus: 超大规模向量数据库]]
 - [[14_RAG_Systems/README|RAG 系统 (RAG Systems)]]
-- [[14_RAG_Systems/Weaviate_Deep_Dive|Weaviate: 开源向量数据库]]
-- [[14_RAG_Systems/Typesense_Deep_Dive|Typesense: 快速矢量搜索]]
-- [[14_RAG_Systems/Chroma_Deep_Dive|Chroma: 轻量级向量数据库]]
-- [[14_RAG_Systems/Flowise_Deep_Dive|Flowise: 低代码 LLM 应用平台]]
+- [[14_RAG_Systems/Vector_Databases/Weaviate_Deep_Dive|Weaviate: 开源向量数据库]]
+- [[14_RAG_Systems/Vector_Databases/Typesense_Deep_Dive|Typesense: 快速矢量搜索]]
+- [[14_RAG_Systems/Vector_Databases/Chroma_Deep_Dive|Chroma: 轻量级向量数据库]]
+- [[14_RAG_Systems/RAG_Frameworks/Flowise_Deep_Dive|Flowise: 低代码 LLM 应用平台]]
 - [[14_RAG_Systems/README_for_dummy|11 RAG 系统 — 小白版 🔍]]
-- [[14_RAG_Systems/LlamaIndex_Deep_Dive|LlamaIndex: 数据连接框架]]
-- [[14_RAG_Systems/Qdrant_Deep_Dive|Qdrant: 高性能向量数据库]]
-- [[14_RAG_Systems/LangFlow_Deep_Dive|LangFlow: 可视化 Agent/RAG 开发平台]]
-- [[14_RAG_Systems/Sentence_Transformers_Deep_Dive|Sentence-Transformers: 嵌入模型框架]]
-- [[14_RAG_Systems/Matryoshka_Representation_Learning_Deep_Dive|Matryoshka Representation Learning 深度解析]]
+- [[14_RAG_Systems/RAG_Frameworks/LlamaIndex_Deep_Dive|LlamaIndex: 数据连接框架]]
+- [[14_RAG_Systems/Vector_Databases/Qdrant_Deep_Dive|Qdrant: 高性能向量数据库]]
+- [[14_RAG_Systems/RAG_Frameworks/LangFlow_Deep_Dive|LangFlow: 可视化 Agent/RAG 开发平台]]
+- [[14_RAG_Systems/Embeddings/Sentence_Transformers_Deep_Dive|Sentence-Transformers: 嵌入模型框架]]
+- [[14_RAG_Systems/Embeddings/Matryoshka_Representation_Learning_Deep_Dive|Matryoshka Representation Learning 深度解析]]
 
 - [[_concepts/rag-systems]] — RAG 系统
 - [[_concepts/vector-database]] — 向量数据库
 - [[12_Architecture_Infrastructure/Alibaba_Cloud_AI_Stack_Deep_Dive|阿里云 AI Stack]] — 内置知识库 + RAG 应用构建
-- [[10_Deployment_Inference/LLM_Inference_Engine_Selection_Guide|LLM 推理引擎选型指南]]
-- [[10_Deployment_Inference/vLLM_Deep_Dive|vLLM 深度解析]]
-- [[10_Deployment_Inference/SGLang_Deep_Dive|SGLang 深度解析]]
-- [[10_Deployment_Inference/Groq_Deep_Dive|Groq 深度解析]]
+- [[10_Deployment_Inference/Inference_Engines/LLM_Inference_Engine_Selection_Guide|LLM 推理引擎选型指南]]
+- [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive|vLLM 深度解析]]
+- [[10_Deployment_Inference/Inference_Engines/SGLang_Deep_Dive|SGLang 深度解析]]
+- [[10_Deployment_Inference/Inference_Engines/Groq_Deep_Dive|Groq 深度解析]]
 - [[_concepts/agentic-rag|Agentic RAG]]
 - [[_concepts/text2sql|Text2SQL]]
 - [[_concepts/code-generation-workflow|代码生成工作流]]
@@ -133,7 +133,7 @@ RAG 的生成阶段对 TTFT（首个 token 时间）和前缀缓存命中率非�
 
 ## 新增页面
 
-- [[14_RAG_Systems/Agentic_RAG_Guide|Agentic RAG]]
-- [[14_RAG_Systems/Embedding_Models_Guide|Embedding 模型选型]]
-- [[14_RAG_Systems/Matryoshka_Representation_Learning_Deep_Dive|Matryoshka Representation Learning 深度解析]]
+- [[14_RAG_Systems/Advanced_RAG/Agentic_RAG_Guide|Agentic RAG]]
+- [[14_RAG_Systems/Embeddings/Embedding_Models_Guide|Embedding 模型选型]]
+- [[14_RAG_Systems/Embeddings/Matryoshka_Representation_Learning_Deep_Dive|Matryoshka Representation Learning 深度解析]]
 - [[14_RAG_Systems/Matryoshka_Representation_Learning_for_dummy|Matryoshka Representation Learning — 小白版]]

@@ -107,6 +107,6 @@ Harrison Chase 课程中最核心的是他对大模型 Memory (记忆) 机制的
 ---
 
 ## 相关阅读
-- [[14_RAG_Systems/Advanced_RAG_DLAI_Practices]]
+- [[14_RAG_Systems/Advanced_RAG/Advanced_RAG_DLAI_Practices]]
 - [[15_Agent_Production/Agentic_Design_Patterns_AndrewNg]]
 - [[08_Model_Evaluation/Evaluation_Metrics]]

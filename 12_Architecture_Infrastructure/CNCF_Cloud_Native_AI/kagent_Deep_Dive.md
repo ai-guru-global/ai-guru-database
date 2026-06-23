@@ -553,7 +553,7 @@ kubectl get agentsessions.kagent.dev -n prod          # 会话历史 CRD
 kubectl describe agentsession <id> -n prod            # 单次会话全轨迹(含每个 tool call)
 ```
 
-每个 tool call（参数、返回、耗时、状态码）都记录在 session 对象里，是审计"Agent 到底干了什么"的唯一权威来源。可观测体系的整体方法论见 [[11_MLOps_Pipeline/LLM_Observability]]。
+每个 tool call（参数、返回、耗时、状态码）都记录在 session 对象里，是审计"Agent 到底干了什么"的唯一权威来源。可观测体系的整体方法论见 [[11_MLOps_Pipeline/Observability/LLM_Observability]]。
 
 ### 7.2 关键指标
 
@@ -569,7 +569,7 @@ kubectl describe agentsession <id> -n prod            # 单次会话全轨迹(�
 | `kagent_llm_cost_usd_total{model}` | 按 Model 核算的美元成本 | 突增 = 失控循环或模型涨价 |
 | `kagent_agent_success_rate{agent}` | 会话成功完成比例 | 低 = 模型/工具/Prompt 问题 |
 
-> 建议按 `namespace` + `agent` 打 label 做成本与故障归属。可观测整体方法论见 [[11_MLOps_Pipeline/LLM_Observability]]。
+> 建议按 `namespace` + `agent` 打 label 做成本与故障归属。可观测整体方法论见 [[11_MLOps_Pipeline/Observability/LLM_Observability]]。
 
 ### 7.3 LLM Token / 成本追踪
 
@@ -673,4 +673,4 @@ A: v1.0（2025）后 API 趋稳，但仍处 CNCF Sandbox，schema 可能演进�
 - [[CNCF_Cloud_Native_AI/K8sGPT_Deep_Dive]] — 单轮诊断型 SRE 助手（与 kagent 多步执行型互补）
 - [[CNCF_Cloud_Native_AI/HolmesGPT_Deep_Dive]] — 另一诊断型工具，定位参考
 - [[15_Agent_Production/index]] — Agent 生产部署的完整方法论
-- [[11_MLOps_Pipeline/LLM_Observability]] — LLM/Agent 可观测体系（token、成本、轨迹追踪）
+- [[11_MLOps_Pipeline/Observability/LLM_Observability]] — LLM/Agent 可观测体系（token、成本、轨迹追踪）

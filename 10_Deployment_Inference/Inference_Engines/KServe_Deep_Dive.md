@@ -444,6 +444,6 @@ kubectl logs <predictor-pod>
 - [[_concepts/model-serving]] — 模型服务
 - [[_concepts/vllm]] — vLLM 推理引擎
 - [[_concepts/hami]] — HAMi GPU 虚拟化
-- [[10_Deployment_Inference/BentoML_Deep_Dive]] — BentoML
-- [[10_Deployment_Inference/TGI_Deep_Dive]] — TGI
+- [[10_Deployment_Inference/Inference_Engines/BentoML_Deep_Dive]] — BentoML
+- [[10_Deployment_Inference/Inference_Engines/TGI_Deep_Dive]] — TGI
 - [[12_Architecture_Infrastructure/CNCF_Cloud_Native_AI/README]] — CNCF 云原生大模型全景

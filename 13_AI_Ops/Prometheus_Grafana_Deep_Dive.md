@@ -434,7 +434,7 @@ kubectl logs -n monitoring prometheus-kube-prometheus-stack-prometheus-0
 - [[_concepts/grafana]] — Grafana 概念卡片
 - [[_concepts/observability]] — 可观测性
 - [[13_AI_Ops/AI_Observability_Guide_2026]] — AI 可观测指南 2026
-- [[11_MLOps_Pipeline/AI_Observability_Deep_Dive]] — AI 可观测深度解析
+- [[11_MLOps_Pipeline/Observability/AI_Observability_Deep_Dive]] — AI 可观测深度解析
 - [[12_Architecture_Infrastructure/HAMi_Deep_Dive]] — HAMi（含 vGPUmonitor 指标）
-- [[10_Deployment_Inference/KServe_Deep_Dive]] — KServe
-- [[07_Model_Training/Ray_Deep_Dive]] — Ray
+- [[10_Deployment_Inference/Inference_Engines/KServe_Deep_Dive]] — KServe
+- [[07_Model_Training/Distributed_Training/Ray_Deep_Dive]] — Ray

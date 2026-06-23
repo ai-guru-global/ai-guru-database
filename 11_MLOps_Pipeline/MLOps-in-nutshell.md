@@ -363,8 +363,8 @@ flowchart TB
 
 ## Related
 
-- [[11_MLOps_Pipeline/Data_Pipeline_Orchestration]] — 数据流水线编排 (Data Pipeline Orchestration) (共享: ci-cd, feature-store, mlops, pipeline)
+- [[11_MLOps_Pipeline/Orchestration/Data_Pipeline_Orchestration]] — 数据流水线编排 (Data Pipeline Orchestration) (共享: ci-cd, feature-store, mlops, pipeline)
 - [[11_MLOps_Pipeline/README.md|README]]
 - [[11_MLOps_Pipeline/README_for_dummy.md|README_for_dummy]]
-- [[11_MLOps_Pipeline/Experiment_Tracking_Deep_Dive.md|Experiment_Tracking_Deep_Dive]]
-- [[11_MLOps_Pipeline/Feature_Store_Deep_Dive.md|Feature_Store_Deep_Dive]]
+- [[11_MLOps_Pipeline/Experiment_Tracking/Experiment_Tracking_Deep_Dive.md|Experiment_Tracking_Deep_Dive]]
+- [[11_MLOps_Pipeline/Experiment_Tracking/Feature_Store_Deep_Dive.md|Feature_Store_Deep_Dive]]

@@ -413,7 +413,7 @@ graph LR
 ### 本章内
 - [[11_MLOps_Pipeline/LLMOps_2026]] — 本系列主线（§4 是本文的概览版）
 - [[11_MLOps_Pipeline/Prompt_Engineering_Ops]] — Prompt CI 门禁依赖本文的评估方法
-- [[11_MLOps_Pipeline/RAG_Pipeline_Ops]] — RAG 检索质量评估是本文的应用场景
+- [[11_MLOps_Pipeline/Orchestration/RAG_Pipeline_Ops]] — RAG 检索质量评估是本文的应用场景
 - [[11_MLOps_Pipeline/MLOps_Maturity_Model]] — 成熟度模型
 
 ### 跨章

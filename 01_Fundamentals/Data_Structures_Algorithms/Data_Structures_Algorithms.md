@@ -734,5 +734,5 @@ $$
 - [[03_Deep_Learning/Neural_Network_Core/Neural_Network_Core]] — 神经网络核心：计算图与自动微分
 - [[05_NLP_LLMs/LLM_Architectures/LLM_Architectures]] — LLM 架构中的注意力复杂度优化
 - [[14_RAG_Systems/RAG_Systems]] — RAG 系统中的向量检索与 ANN 算法
-- [[07_Model_Training/Distributed_Training_2026]] — 分布式训练中的通信算法
+- [[07_Model_Training/Distributed_Training/Distributed_Training_2026]] — 分布式训练中的通信算法
 - [[_concepts/transformer-architecture]] — Transformer 架构与注意力机制

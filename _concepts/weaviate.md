@@ -14,7 +14,7 @@ relationships:
   - target: "_concepts/qdrant"
     type: related_to
 sources:
-  - 14_RAG_Systems/Weaviate_Deep_Dive.md
+  - 14_RAG_Systems/Vector_Databases/Weaviate_Deep_Dive.md
 summary: "Weaviate 是开源的 AI 原生向量数据库，内置 embedding 与生成模型模块，支持 GraphQL/REST 查询、混合搜索和模块化架构，适合需要端到端 AI 检索能力的 RAG 应用。"
 provenance:
   extracted: 0.75
@@ -90,7 +90,7 @@ updated: 2026-06-16
 
 ## Related
 
-- [[14_RAG_Systems/Weaviate_Deep_Dive]] — Weaviate 深度解析
+- [[14_RAG_Systems/Vector_Databases/Weaviate_Deep_Dive]] — Weaviate 深度解析
 - [[_concepts/vector-database]] — 向量数据库
 - [[_concepts/rag]] — RAG
 - [[_concepts/embedding]] — Embedding

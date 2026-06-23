@@ -975,8 +975,8 @@ return checkpoint(forward_fn, x, use_reentrant=False)
 
 ## Related
 
-- [[07_Model_Training/Distributed_Training_2026.md|Distributed_Training_2026]]
-- [[07_Model_Training/Distributed_Training_for_dummy.md|Distributed_Training_for_dummy]]
-- [[07_Model_Training/Mixed_Precision_Training.md|Mixed_Precision_Training]]
+- [[07_Model_Training/Distributed_Training/Distributed_Training_2026.md|Distributed_Training_2026]]
+- [[07_Model_Training/Distributed_Training/Distributed_Training_for_dummy.md|Distributed_Training_for_dummy]]
+- [[07_Model_Training/Optimization/Mixed_Precision_Training.md|Mixed_Precision_Training]]
 - [[07_Model_Training/Model-Training-in-nutshell.md|Model-Training-in-nutshell]]
 - [[07_Model_Training/Model_Training_for_dummy.md|Model_Training_for_dummy]]

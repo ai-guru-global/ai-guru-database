@@ -231,10 +231,10 @@ L4: 持久化知识 → SQL/NoSQL
 - [[15_Agent_Production/Agent_Harness/Harness_Ecosystem_Catalog]] — Agent Harness 生态目录
 - [[15_Agent_Production/Agent_Harness/Harness-in-nutshell]] — Agent Harness 速览
 - [[_synthesis/agent-framework-production|Agent 框架与生产部署]]
-- [[10_Deployment_Inference/LLM_Inference_Engine_Selection_Guide|LLM 推理引擎选型指南]]
-- [[10_Deployment_Inference/vLLM_Deep_Dive|vLLM 深度解析]]
-- [[10_Deployment_Inference/SGLang_Deep_Dive|SGLang 深度解析]]
-- [[10_Deployment_Inference/Groq_Deep_Dive|Groq 深度解析]]
+- [[10_Deployment_Inference/Inference_Engines/LLM_Inference_Engine_Selection_Guide|LLM 推理引擎选型指南]]
+- [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive|vLLM 深度解析]]
+- [[10_Deployment_Inference/Inference_Engines/SGLang_Deep_Dive|SGLang 深度解析]]
+- [[10_Deployment_Inference/Inference_Engines/Groq_Deep_Dive|Groq 深度解析]]
 - [[_concepts/tool-calling|工具调用]]
 - [[_concepts/tool-calling-safety|工具调用安全]]
 - [[_concepts/agent-evaluation-benchmarks|Agent 评估基准]]

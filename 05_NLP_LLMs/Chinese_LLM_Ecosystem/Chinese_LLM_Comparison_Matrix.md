@@ -220,13 +220,13 @@ updated: "2026-06-17"
 ### 训推平台深度参考
 
 - [[05_NLP_LLMs/Chinese_LLM_Ecosystem/Chinese_LLM_Training_Inference_Platforms]] — **训练推理平台实战参考** (核心文档)
-- [[10_Deployment_Inference/vLLM_Deep_Dive]] — vLLM 推理引擎深度解析
-- [[10_Deployment_Inference/SGLang_Deep_Dive]] — SGLang 推理引擎
-- [[10_Deployment_Inference/LMDeploy_Deep_Dive]] — LMDeploy (InternLM)
-- [[10_Deployment_Inference/TensorRT_LLM_Deep_Dive]] — TensorRT-LLM
-- [[10_Deployment_Inference/Quantization_Techniques_2026]] — 量化技术全景
-- [[10_Deployment_Inference/Prompt_Caching_and_KV_Cache_Optimization]] — KV Cache 优化
-- [[10_Deployment_Inference/Speculative_Decoding_Advanced_2026]] — 投机解码
+- [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive]] — vLLM 推理引擎深度解析
+- [[10_Deployment_Inference/Inference_Engines/SGLang_Deep_Dive]] — SGLang 推理引擎
+- [[10_Deployment_Inference/Inference_Engines/LMDeploy_Deep_Dive]] — LMDeploy (InternLM)
+- [[10_Deployment_Inference/Inference_Engines/TensorRT_LLM_Deep_Dive]] — TensorRT-LLM
+- [[10_Deployment_Inference/Quantization/Quantization_Techniques_2026]] — 量化技术全景
+- [[10_Deployment_Inference/Caching/Prompt_Caching_and_KV_Cache_Optimization]] — KV Cache 优化
+- [[10_Deployment_Inference/Caching/Speculative_Decoding_Advanced_2026]] — 投机解码
 
 ### 厂商深度解析
 

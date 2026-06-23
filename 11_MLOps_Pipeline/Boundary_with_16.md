@@ -113,7 +113,7 @@ graph TB
 ### 4.3 运维页（16）怎么写
 
 - 聚焦线上运营、应急响应
-- 引用 10 的概念作为背景：「模型监控门禁设计见 [[11_MLOps_Pipeline/ML_Observability_SLO]]」
+- 引用 10 的概念作为背景：「模型监控门禁设计见 [[11_MLOps_Pipeline/Observability/ML_Observability_SLO]]」
 
 ---
 

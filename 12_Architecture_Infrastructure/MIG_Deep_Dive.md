@@ -345,7 +345,7 @@ CUDA_VISIBLE_DEVICES=4,2,MIG-${UUID},3,PPU-${UUID}  # 生效：GPU4,GPU2
 | [[_synthesis/hami-cdi-dra]] | HAMi + CDI + DRA + MIG 的综合选型 |
 | [[12_Architecture_Infrastructure/Multi_Tenant_Architecture]] | MIG 作为多租户推理的硬件隔离底座 |
 | [[01_Fundamentals/AI_Hardware/NVIDIA_AMD_GPU_Deep_Dive]] | A100/H100 硬件基础 |
-| [[10_Deployment_Inference/vLLM_Deep_Dive]] | vLLM 跑在 MIG 切片上的部署实践 |
+| [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive]] | vLLM 跑在 MIG 切片上的部署实践 |
 
 ---
 

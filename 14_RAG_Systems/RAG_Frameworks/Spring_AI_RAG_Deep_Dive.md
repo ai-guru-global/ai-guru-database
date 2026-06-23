@@ -1397,7 +1397,7 @@ record SelfRagResult(String answer, String strategy, List<Document> sources, dou
 - [[14_RAG_Systems/RAG_Systems]] — RAG 系统 (RAG Systems) (共享: embedding, rag, retrieval, vector-database)
 - [[14_RAG_Systems/README_Advanced]] — RAG高级实践 2026 (共享: embedding, rag, retrieval, vector-database)
 - [[_synthesis/rag-vector-database]] — RAG 系统 × 向量数据库 (共享: embedding, rag, retrieval, vector-database)
-- [[14_RAG_Systems/Dify_Deep_Dive.md|Dify_Deep_Dive]]
-- [[14_RAG_Systems/Weaviate_Deep_Dive.md|Weaviate_Deep_Dive]]
-- [[14_RAG_Systems/Flowise_Deep_Dive.md|Flowise_Deep_Dive]]
-- [[14_RAG_Systems/LangFlow_Deep_Dive.md|LangFlow_Deep_Dive]]
+- [[14_RAG_Systems/RAG_Frameworks/Dify_Deep_Dive.md|Dify_Deep_Dive]]
+- [[14_RAG_Systems/Vector_Databases/Weaviate_Deep_Dive.md|Weaviate_Deep_Dive]]
+- [[14_RAG_Systems/RAG_Frameworks/Flowise_Deep_Dive.md|Flowise_Deep_Dive]]
+- [[14_RAG_Systems/RAG_Frameworks/LangFlow_Deep_Dive.md|LangFlow_Deep_Dive]]

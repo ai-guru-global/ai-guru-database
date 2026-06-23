@@ -13,11 +13,11 @@ relationships:
     type: compressed_by
   - target: "_concepts/kv-cache-compression"
     type: generalized_by
-  - target: "10_Deployment_Inference/KV_Cache_Deep_Dive"
+  - target: "10_Deployment_Inference/Caching/KV_Cache_Deep_Dive"
     type: deepened_by
 sources:
   - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
-  - 10_Deployment_Inference/vLLM_Deep_Dive.md
+  - 10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive.md
 summary: KV Cache 是自回归 LLM 推理的核心优化——缓存已计算的 Key/Value 向量避免重复计算，将时间复杂度从 O(T²) 降至 O(T)。但 128K+ 上下文时 KV Cache 显存超过模型参数本身，催生 PagedAttention、MLA、FP8 量化等优化技术。
 provenance:
   extracted: 0.85
@@ -126,5 +126,5 @@ KV Cache 优化技术栈（从底到顶叠加）
 - [[_concepts/prefix-caching]] — 前缀缓存：复用共享 prompt prefix
 - [[_concepts/model-deployment]] — 模型部署全景
 - [[_concepts/long-context-models]] — 长上下文模型
-- [[10_Deployment_Inference/KV_Cache_Deep_Dive]] — KV Cache 深度研究：从原理到工程实践
+- [[10_Deployment_Inference/Caching/KV_Cache_Deep_Dive]] — KV Cache 深度研究：从原理到工程实践
 - [[_concepts/kv-cache-compression]] — KV Cache 压缩

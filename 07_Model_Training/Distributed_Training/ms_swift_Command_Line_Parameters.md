@@ -518,7 +518,7 @@ ENV:
 
 ## 相关文档
 
-- [[07_Model_Training/ms_swift_Deep_Dive|ms-swift 深度解析：魔搭大模型训练推理全链路框架]]
+- [[07_Model_Training/Distributed_Training/ms_swift_Deep_Dive|ms-swift 深度解析：魔搭大模型训练推理全链路框架]]
 - [[07_Model_Training/Fine_tuning_Strategies|微调策略完全指南]]
-- [[07_Model_Training/Distributed_Training_2026|分布式训练技术]]
-- [[07_Model_Training/Training_Optimization_2026|训练优化技术]]
+- [[07_Model_Training/Distributed_Training/Distributed_Training_2026|分布式训练技术]]
+- [[07_Model_Training/Optimization/Training_Optimization_2026|训练优化技术]]

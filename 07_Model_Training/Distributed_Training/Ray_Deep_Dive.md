@@ -449,6 +449,6 @@ ray status
 - [[12_Architecture_Infrastructure/CNCF_Cloud_Native_AI/KubeRay_Deep_Dive]] — KubeRay 深度解析
 - [[_concepts/distributed-training]] — 分布式训练
 - [[_concepts/hami]] — HAMi GPU 虚拟化
-- [[07_Model_Training/DeepSpeed_Deep_Dive]] — DeepSpeed
-- [[07_Model_Training/Distributed_Training_2026]] — 分布式训练 2026
-- [[10_Deployment_Inference/KServe_Deep_Dive]] — KServe
+- [[07_Model_Training/Distributed_Training/DeepSpeed_Deep_Dive]] — DeepSpeed
+- [[07_Model_Training/Distributed_Training/Distributed_Training_2026]] — 分布式训练 2026
+- [[10_Deployment_Inference/Inference_Engines/KServe_Deep_Dive]] — KServe

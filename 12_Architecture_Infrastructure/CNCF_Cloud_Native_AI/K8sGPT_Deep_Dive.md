@@ -250,7 +250,7 @@ k8sgpt auth list
 k8sgpt auth default --backend localai
 ```
 
-> Ollama 端建议至少 `qwen2.5:14b` 或 `llama3.1:8b` 以上，模型太小会导致解释含糊。详见 [[10_Deployment_Inference/Ollama_Deep_Dive]]。
+> Ollama 端建议至少 `qwen2.5:14b` 或 `llama3.1:8b` 以上，模型太小会导致解释含糊。详见 [[10_Deployment_Inference/Inference_Engines/Ollama_Deep_Dive]]。
 
 ### 4.3 Operator 安装（Helm）
 
@@ -650,7 +650,7 @@ kubectl -n k8sgpt top pod -l app.kubernetes.io/name=k8sgpt
 # 典型: CPU 50~200m, Mem 50~150Mi (不含 Ollama)
 ```
 
-> Ollama 本身的资源开销取决于模型大小，见 [[10_Deployment_Inference/Ollama_Deep_Dive]]。建议 Ollama 独立 Deployment，避免与 operator 争抢资源。
+> Ollama 本身的资源开销取决于模型大小，见 [[10_Deployment_Inference/Inference_Engines/Ollama_Deep_Dive]]。建议 Ollama 独立 Deployment，避免与 operator 争抢资源。
 
 ### 7.5 常见故障排查
 
@@ -722,7 +722,7 @@ A: 核心区别在**触发模型**：K8sGPT 主动扫全集群（"体检"），H
 A: 不能。K8sGPT 的输出是"建议"不是"指令"，**必须人工复核**。尤其涉及 `kubectl delete`、扩缩容等动作前要核对 Result 里的 `error.text` 原始字段。生产中禁止把 K8sGPT 的建议直接接入自动修复。
 
 **Q6: 本地 Ollama 用多大模型合适？**
-A: 排障场景至少 14B（如 `qwen2.5:14b`、`llama3.1:8b` 勉强）。复杂根因分析建议 70B 级别。模型太小会出现"含糊其辞"或编造资源。详见 [[10_Deployment_Inference/Ollama_Deep_Dive]]。
+A: 排障场景至少 14B（如 `qwen2.5:14b`、`llama3.1:8b` 勉强）。复杂根因分析建议 70B 级别。模型太小会出现"含糊其辞"或编造资源。详见 [[10_Deployment_Inference/Inference_Engines/Ollama_Deep_Dive]]。
 
 ---
 
@@ -732,4 +732,4 @@ A: 排障场景至少 14B（如 `qwen2.5:14b`、`llama3.1:8b` 勉强）。复杂
 - [[CNCF_Cloud_Native_AI/HolmesGPT_Deep_Dive]] — 告警分诊员，K8sGPT 的互补项
 - [[CNCF_Cloud_Native_AI/kagent_Deep_Dive]] — 自主多步 Agent，更强的自动修复方向
 - [[13_AI_Ops/SRE_for_AI_Systems]] — 用 LLM 做 SRE 的方法论总论
-- [[10_Deployment_Inference/Ollama_Deep_Dive]] — K8sGPT 离线模式依赖的本地推理引擎
+- [[10_Deployment_Inference/Inference_Engines/Ollama_Deep_Dive]] — K8sGPT 离线模式依赖的本地推理引擎

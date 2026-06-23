@@ -12,8 +12,8 @@ relationships:
   - target: "_concepts/continuous-batching"
     type: synergizes_with
 sources:
-  - 10_Deployment_Inference/SGLang_Deep_Dive.md
-  - 10_Deployment_Inference/LLM_Inference_Engine_Selection_Guide.md
+  - 10_Deployment_Inference/Inference_Engines/SGLang_Deep_Dive.md
+  - 10_Deployment_Inference/Inference_Engines/LLM_Inference_Engine_Selection_Guide.md
   - 12_Architecture_Infrastructure/AI_Stack_Inference_Serving_Guide.md
 summary: "SGLang 是一个高性能大模型推理框架，由 UC Berkeley 开发。它通过 RadixAttention（基数树前缀缓存）和结构化生成语言（SGLang）来压榨 GPU 吞吐，特别适合多轮对话、复杂 Agent 工作流等需要反复命中相同前缀的场景。"
 provenance:
@@ -102,5 +102,5 @@ def qa(s, question):
 - [[_concepts/continuous-batching]] — Continuous Batching
 - [[_concepts/radix-attention]] — RadixAttention
 - [[_concepts/paged-attention]] — PagedAttention
-- [[10_Deployment_Inference/SGLang_Deep_Dive]] — SGLang 深度解析
-- [[10_Deployment_Inference/LLM_Inference_Engine_Selection_Guide]] — LLM 推理引擎选型指南
+- [[10_Deployment_Inference/Inference_Engines/SGLang_Deep_Dive]] — SGLang 深度解析
+- [[10_Deployment_Inference/Inference_Engines/LLM_Inference_Engine_Selection_Guide]] — LLM 推理引擎选型指南

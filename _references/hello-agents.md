@@ -62,4 +62,4 @@ tier: supporting
 - [[15_Agent_Production/Agent_Frameworks/AutoGen_Deep_Dive]] — AutoGen 深度解析
 - [[15_Agent_Production/Agent_Protocols/A2A_Protocol_Deep_Dive]] — A2A 协议深度解析
 - [[14_RAG_Systems/RAG_Systems]] — RAG 系统总览
-- [[07_Model_Training/GRPO_and_New_Alignment_Methods]] — GRPO 与新对齐方法
+- [[07_Model_Training/Alignment/GRPO_and_New_Alignment_Methods]] — GRPO 与新对齐方法

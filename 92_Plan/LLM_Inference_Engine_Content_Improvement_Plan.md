@@ -53,7 +53,7 @@ updated: "2026-06-15"
 - **交付物**：更新 6 个已升级专题的对比表。
 
 #### 1.2 建立全局选型决策页
-- **目标**：新建 `10_Deployment_Inference/LLM_Inference_Engine_Selection_Guide.md`
+- **目标**：新建 `10_Deployment_Inference/Inference_Engines/LLM_Inference_Engine_Selection_Guide.md`
 - **内容**：
   - 一图流：所有引擎横向对比（吞吐量、延迟、易用性、成本、生态）
   - 决策树：按「延迟敏感 / 吞吐敏感 / 本地 / 云端 / 中文 / 多模态 / 预算」给出推荐
@@ -209,7 +209,7 @@ updated: "2026-06-15"
 ## 四、验收标准
 
 1. 本计划文件已保存至 `92_Plan/LLM_Inference_Engine_Content_Improvement_Plan.md`
-2. `10_Deployment_Inference/LLM_Inference_Engine_Selection_Guide.md` 已创建，≥500 行
+2. `10_Deployment_Inference/Inference_Engines/LLM_Inference_Engine_Selection_Guide.md` 已创建，≥500 行
 3. Ollama、LMDeploy、BentoML、LiteRT 专题均 ≥550 行
 4. 新增至少 2 个云推理 API 专题，每个 ≥400 行
 5. `10_Deployment_Inference/README.md` 导航已更新
@@ -221,12 +221,12 @@ updated: "2026-06-15"
 ## 五、相关资源
 
 - [[10_Deployment_Inference/README|模型部署与推理目录]]
-- [[10_Deployment_Inference/vLLM_Deep_Dive|vLLM 深度解析]]
-- [[10_Deployment_Inference/SGLang_Deep_Dive|SGLang 深度解析]]
-- [[10_Deployment_Inference/TensorRT_LLM_Deep_Dive|TensorRT-LLM 深度解析]]
-- [[10_Deployment_Inference/llama_cpp_Deep_Dive|llama.cpp 深度解析]]
-- [[10_Deployment_Inference/TGI_Deep_Dive|TGI 深度解析]]
-- [[10_Deployment_Inference/Groq_Deep_Dive|Groq 深度解析]]
+- [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive|vLLM 深度解析]]
+- [[10_Deployment_Inference/Inference_Engines/SGLang_Deep_Dive|SGLang 深度解析]]
+- [[10_Deployment_Inference/Inference_Engines/TensorRT_LLM_Deep_Dive|TensorRT-LLM 深度解析]]
+- [[10_Deployment_Inference/Inference_Engines/llama_cpp_Deep_Dive|llama.cpp 深度解析]]
+- [[10_Deployment_Inference/Inference_Engines/TGI_Deep_Dive|TGI 深度解析]]
+- [[10_Deployment_Inference/Inference_Engines/Groq_Deep_Dive|Groq 深度解析]]
 
 ---
 

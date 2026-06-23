@@ -75,4 +75,4 @@ Request 2: [System Prompt (10K)] + [Document (50K)] + [User Query B (150)]
 - [[_concepts/kv-cache]] — KV Cache
 - [[_concepts/radix-attention]] — RadixAttention（SGLang 实现）
 - [[_concepts/paged-attention]] — PagedAttention（底层内存管理）
-- [[10_Deployment_Inference/Prompt_Caching_and_KV_Cache_Optimization]] — Prompt Caching 全景
+- [[10_Deployment_Inference/Caching/Prompt_Caching_and_KV_Cache_Optimization]] — Prompt Caching 全景

@@ -425,10 +425,10 @@ Together AI 生产使用 checklist
 
 ## Related
 
-- [[10_Deployment_Inference/Groq_Deep_Dive.md|Groq_Deep_Dive]]
-- [[10_Deployment_Inference/Fireworks_AI_Deep_Dive.md|Fireworks_AI_Deep_Dive]]
-- [[10_Deployment_Inference/vLLM_Deep_Dive.md|vLLM_Deep_Dive]]
-- [[10_Deployment_Inference/LLM_Inference_Engine_Selection_Guide.md|LLM_Inference_Engine_Selection_Guide]]
-- [[10_Deployment_Inference/LLM_Cost_Optimization.md|LLM_Cost_Optimization]]
+- [[10_Deployment_Inference/Inference_Engines/Groq_Deep_Dive.md|Groq_Deep_Dive]]
+- [[10_Deployment_Inference/Inference_Engines/Fireworks_AI_Deep_Dive.md|Fireworks_AI_Deep_Dive]]
+- [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive.md|vLLM_Deep_Dive]]
+- [[10_Deployment_Inference/Inference_Engines/LLM_Inference_Engine_Selection_Guide.md|LLM_Inference_Engine_Selection_Guide]]
+- [[10_Deployment_Inference/Cost/LLM_Cost_Optimization.md|LLM_Cost_Optimization]]
 - [[14_AI_Gateway/LiteLLM_Deep_Dive.md|LiteLLM_Deep_Dive]]
 - [[14_AI_Gateway/AI_Gateway_2026.md|AI_Gateway_2026]]

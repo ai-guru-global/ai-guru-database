@@ -47,9 +47,9 @@ title: Wiki Index
 
 ## Deep Dives
 
-- [[14_RAG_Systems/Matryoshka_Representation_Learning_Deep_Dive]] — Matryoshka Representation Learning 深度解析 ( #embeddings #rag #matryoshka)
+- [[14_RAG_Systems/Embeddings/Matryoshka_Representation_Learning_Deep_Dive]] — Matryoshka Representation Learning 深度解析 ( #embeddings #rag #matryoshka)
 - [[14_RAG_Systems/Matryoshka_Representation_Learning_for_dummy]] — Matryoshka Representation Learning — 小白版 ( #embeddings #for-dummy #matryoshka)
-- [[20_Papers/Matryoshka_Representation_Learning_Deep_Dive]] — 论文深度解读: Matryoshka Representation Learning ( #paper #matryoshka)
+- [[20_Papers/Efficiency/Matryoshka_Representation_Learning_Deep_Dive]] — 论文深度解读: Matryoshka Representation Learning ( #paper #matryoshka)
 - [[_concepts/embeddings-vectors-mrl-plain]] — Embedding、向量与 MRL 大白话 ( #embedding #vector #matryoshka #for-dummy)
 
 ## Entities
@@ -150,23 +150,23 @@ title: Wiki Index
 - [[_references/ai-agents-for-beginners]] — Microsoft AI Agents for Beginners 外部源引用索引 ( #references #microsoft #ai-agents)
 
 ### Microsoft AI Agents for Beginners — 17 课深度页面
-- [[15_Agent_Production/Microsoft_AI_Agents_L00_Course_Setup]] — L00 课程环境：Python/.NET/Azure CLI/Foundry 与 keyless 认证 ( #microsoft-ai-agents-course #setup #azure-foundry)
-- [[15_Agent_Production/Microsoft_AI_Agents_L01_Intro]] — L01 AI Agent 简介与七种类型 ( #microsoft-ai-agents-course #agent-types)
-- [[15_Agent_Production/Microsoft_AI_Agents_L02_Frameworks]] — L02 MAF 与 Azure AI Agent Service 框架选型 ( #microsoft-ai-agents-course #frameworks)
-- [[15_Agent_Production/Microsoft_AI_Agents_L03_Design_Principles]] — L03 Agentic 设计三原则：Space/Time/Core ( #microsoft-ai-agents-course #design-principles #hax)
-- [[15_Agent_Production/Microsoft_AI_Agents_L04_Tool_Use]] — L04 工具使用设计模式与函数调用 ( #microsoft-ai-agents-course #tool-use)
-- [[15_Agent_Production/Microsoft_AI_Agents_L05_Agentic_RAG]] — L05 Agentic RAG 迭代检索-评估-自纠 ( #microsoft-ai-agents-course #rag)
-- [[15_Agent_Production/Microsoft_AI_Agents_L06_Trustworthy_Agents]] — L06 系统消息框架+五类威胁+HITL ( #microsoft-ai-agents-course #trust #security)
-- [[15_Agent_Production/Microsoft_AI_Agents_L07_Planning_Design]] — L07 任务分解+结构化输出+迭代重规划 ( #microsoft-ai-agents-course #planning)
-- [[15_Agent_Production/Microsoft_AI_Agents_L08_Multi_Agent]] — L08 多 Agent 模式：组聊/Hand-off/协同过滤 ( #microsoft-ai-agents-course #multi-agent)
-- [[15_Agent_Production/Microsoft_AI_Agents_L09_Metacognition]] — L09 元认知+Corrective RAG+代码生成 ( #microsoft-ai-agents-course #metacognition #corrective-rag)
-- [[15_Agent_Production/Microsoft_AI_Agents_L10_Production]] — L10 可观测性+离线/在线评估+成本三策略 ( #microsoft-ai-agents-course #production #observability)
-- [[15_Agent_Production/Microsoft_AI_Agents_L11_Agentic_Protocols]] — L11 MCP/A2A/NLWeb 三大协议对比 ( #microsoft-ai-agents-course #mcp #a2a #nlweb #protocols)
-- [[15_Agent_Production/Microsoft_AI_Agents_L12_Context_Engineering]] — L12 上下文工程+四类上下文+四大失败模式 ( #microsoft-ai-agents-course #context-engineering)
-- [[15_Agent_Production/Microsoft_AI_Agents_L13_Agent_Memory]] — L13 七种记忆+Mem0/Cognee/Azure AI Search ( #microsoft-ai-agents-course #memory)
-- [[15_Agent_Production/Microsoft_AI_Agents_L14_Microsoft_Agent_Framework]] — L14 MAF 深度：Agents/Threads/Middleware/Workflows ( #microsoft-ai-agents-course #maf #workflows)
-- [[15_Agent_Production/Microsoft_AI_Agents_L15_Browser_Use]] — L15 浏览器 Agent：Browser-Use+Playwright+CDP ( #microsoft-ai-agents-course #cua #browser-use)
-- [[15_Agent_Production/Microsoft_AI_Agents_L18_Securing_AI_Agents]] — L18 加密审计收据：Ed25519+JCS+哈希链 ( #microsoft-ai-agents-course #security #cryptography #audit)
+- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents/Microsoft_AI_Agents_L00_Course_Setup]] — L00 课程环境：Python/.NET/Azure CLI/Foundry 与 keyless 认证 ( #microsoft-ai-agents-course #setup #azure-foundry)
+- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents/Microsoft_AI_Agents_L01_Intro]] — L01 AI Agent 简介与七种类型 ( #microsoft-ai-agents-course #agent-types)
+- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents/Microsoft_AI_Agents_L02_Frameworks]] — L02 MAF 与 Azure AI Agent Service 框架选型 ( #microsoft-ai-agents-course #frameworks)
+- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents/Microsoft_AI_Agents_L03_Design_Principles]] — L03 Agentic 设计三原则：Space/Time/Core ( #microsoft-ai-agents-course #design-principles #hax)
+- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents/Microsoft_AI_Agents_L04_Tool_Use]] — L04 工具使用设计模式与函数调用 ( #microsoft-ai-agents-course #tool-use)
+- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents/Microsoft_AI_Agents_L05_Agentic_RAG]] — L05 Agentic RAG 迭代检索-评估-自纠 ( #microsoft-ai-agents-course #rag)
+- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents/Microsoft_AI_Agents_L06_Trustworthy_Agents]] — L06 系统消息框架+五类威胁+HITL ( #microsoft-ai-agents-course #trust #security)
+- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents/Microsoft_AI_Agents_L07_Planning_Design]] — L07 任务分解+结构化输出+迭代重规划 ( #microsoft-ai-agents-course #planning)
+- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents/Microsoft_AI_Agents_L08_Multi_Agent]] — L08 多 Agent 模式：组聊/Hand-off/协同过滤 ( #microsoft-ai-agents-course #multi-agent)
+- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents/Microsoft_AI_Agents_L09_Metacognition]] — L09 元认知+Corrective RAG+代码生成 ( #microsoft-ai-agents-course #metacognition #corrective-rag)
+- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents/Microsoft_AI_Agents_L10_Production]] — L10 可观测性+离线/在线评估+成本三策略 ( #microsoft-ai-agents-course #production #observability)
+- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents/Microsoft_AI_Agents_L11_Agentic_Protocols]] — L11 MCP/A2A/NLWeb 三大协议对比 ( #microsoft-ai-agents-course #mcp #a2a #nlweb #protocols)
+- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents/Microsoft_AI_Agents_L12_Context_Engineering]] — L12 上下文工程+四类上下文+四大失败模式 ( #microsoft-ai-agents-course #context-engineering)
+- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents/Microsoft_AI_Agents_L13_Agent_Memory]] — L13 七种记忆+Mem0/Cognee/Azure AI Search ( #microsoft-ai-agents-course #memory)
+- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents/Microsoft_AI_Agents_L14_Microsoft_Agent_Framework]] — L14 MAF 深度：Agents/Threads/Middleware/Workflows ( #microsoft-ai-agents-course #maf #workflows)
+- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents/Microsoft_AI_Agents_L15_Browser_Use]] — L15 浏览器 Agent：Browser-Use+Playwright+CDP ( #microsoft-ai-agents-course #cua #browser-use)
+- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents/Microsoft_AI_Agents_L18_Securing_AI_Agents]] — L18 加密审计收据：Ed25519+JCS+哈希链 ( #microsoft-ai-agents-course #security #cryptography #audit)
 - [[90_Learn/courses/share_ai/learn_claude_code]] — 20 课 Claude Code 式 Harness 工程教程映射 ( #learning-paths #claude-code #agent-harness #course)
 - [[_references/learn-claude-code]] — Learn Claude Code 外部源引用索引 ( #references #claude-code)
 
@@ -180,25 +180,25 @@ title: Wiki Index
 - [[_references/500-ai-projects]] — 500+ AI/ML/DL/CV/NLP 实战项目合集索引 ( #references #projects)
 
 ### 推理与成本优化
-- [[10_Deployment_Inference/Batch_API_Comparison_2026]] — LLM Batch API 全面对比：OpenAI/Anthropic/Google/DeepSeek 批量处理 ( #batch-api #cost-optimization #inference)
-- [[10_Deployment_Inference/KServe_Deep_Dive]] — KServe 深度解析：Kubernetes 标准化模型服务平台 ( #kserve #cncf #kubernetes #model-serving)
-- [[10_Deployment_Inference/TGI_Deep_Dive]] — TGI 深度解析：HuggingFace 生产级 LLM 推理引擎 ( #tgi #huggingface #inference #llm)
-- [[10_Deployment_Inference/TensorRT_LLM_Deep_Dive]] — TensorRT-LLM 深度解析：NVIDIA LLM 推理优化引擎 ( #tensorrt-llm #nvidia #inference)
-- [[10_Deployment_Inference/SGLang_Deep_Dive]] — SGLang 深度解析：RadixAttention 高性能推理框架 ( #sglang #inference #radix-attention)
-- [[10_Deployment_Inference/LMDeploy_Deep_Dive]] — LMDeploy 深度解析：国产 LLM 推理部署工具 ( #lmdeploy #inference #chinese-llm)
+- [[10_Deployment_Inference/Inference_Engines/Batch_API_Comparison_2026]] — LLM Batch API 全面对比：OpenAI/Anthropic/Google/DeepSeek 批量处理 ( #batch-api #cost-optimization #inference)
+- [[10_Deployment_Inference/Inference_Engines/KServe_Deep_Dive]] — KServe 深度解析：Kubernetes 标准化模型服务平台 ( #kserve #cncf #kubernetes #model-serving)
+- [[10_Deployment_Inference/Inference_Engines/TGI_Deep_Dive]] — TGI 深度解析：HuggingFace 生产级 LLM 推理引擎 ( #tgi #huggingface #inference #llm)
+- [[10_Deployment_Inference/Inference_Engines/TensorRT_LLM_Deep_Dive]] — TensorRT-LLM 深度解析：NVIDIA LLM 推理优化引擎 ( #tensorrt-llm #nvidia #inference)
+- [[10_Deployment_Inference/Inference_Engines/SGLang_Deep_Dive]] — SGLang 深度解析：RadixAttention 高性能推理框架 ( #sglang #inference #radix-attention)
+- [[10_Deployment_Inference/Inference_Engines/LMDeploy_Deep_Dive]] — LMDeploy 深度解析：国产 LLM 推理部署工具 ( #lmdeploy #inference #chinese-llm)
 
 ### 训练与分布式计算
-- [[07_Model_Training/Ray_Deep_Dive]] — Ray 深度解析：Python 分布式 AI 计算框架 ( #ray #distributed #training #inference)
-- [[07_Model_Training/DeepSpeed_Deep_Dive]] — DeepSpeed 深度解析：微软大模型训练与推理优化库 ( #deepspeed #distributed-training #microsoft)
-- [[11_MLOps_Pipeline/Kubeflow_Deep_Dive]] — Kubeflow 深度解析：K8s 端到端 MLOps 平台 ( #kubeflow #kubernetes #mlops)
+- [[07_Model_Training/Distributed_Training/Ray_Deep_Dive]] — Ray 深度解析：Python 分布式 AI 计算框架 ( #ray #distributed #training #inference)
+- [[07_Model_Training/Distributed_Training/DeepSpeed_Deep_Dive]] — DeepSpeed 深度解析：微软大模型训练与推理优化库 ( #deepspeed #distributed-training #microsoft)
+- [[11_MLOps_Pipeline/Orchestration/Kubeflow_Deep_Dive]] — Kubeflow 深度解析：K8s 端到端 MLOps 平台 ( #kubeflow #kubernetes #mlops)
 - [[12_Architecture_Infrastructure/CNCF_Cloud_Native_AI/Volcano_Deep_Dive]] — Volcano 深度解析：K8s 批处理调度器 ( #volcano #kubernetes #scheduling)
 - [[12_Architecture_Infrastructure/CNCF_Cloud_Native_AI/Kueue_Deep_Dive]] — Kueue 深度解析：K8s 原生作业排队与配额系统 ( #kueue #kubernetes #scheduling)
 
 ### RAG 与向量数据库
-- [[14_RAG_Systems/Milvus_Deep_Dive]] — Milvus 深度解析：分布式向量数据库 ( #milvus #vector-database #rag)
-- [[14_RAG_Systems/Qdrant_Deep_Dive]] — Qdrant 深度解析：Rust 高性能向量数据库 ( #qdrant #vector-database #rag)
-- [[14_RAG_Systems/Weaviate_Deep_Dive]] — Weaviate 深度解析：AI 原生向量数据库 ( #weaviate #vector-database #rag)
-- [[14_RAG_Systems/LlamaIndex_Deep_Dive]] — LlamaIndex 深度解析：LLM 数据框架与 RAG ( #llamaindex #rag #data-framework)
+- [[14_RAG_Systems/Vector_Databases/Milvus_Deep_Dive]] — Milvus 深度解析：分布式向量数据库 ( #milvus #vector-database #rag)
+- [[14_RAG_Systems/Vector_Databases/Qdrant_Deep_Dive]] — Qdrant 深度解析：Rust 高性能向量数据库 ( #qdrant #vector-database #rag)
+- [[14_RAG_Systems/Vector_Databases/Weaviate_Deep_Dive]] — Weaviate 深度解析：AI 原生向量数据库 ( #weaviate #vector-database #rag)
+- [[14_RAG_Systems/RAG_Frameworks/LlamaIndex_Deep_Dive]] — LlamaIndex 深度解析：LLM 数据框架与 RAG ( #llamaindex #rag #data-framework)
 
 ### Agent 框架
 - [[15_Agent_Production/Agent_Frameworks/LangChain_Deep_Dive]] — LangChain 深度解析：LLM 应用开发框架 ( #langchain #agent #framework)
@@ -217,7 +217,7 @@ title: Wiki Index
 
 ### MLOps 流水线
 - [[11_MLOps_Pipeline/LLM_Production_Pipeline_2026]] — LLM 生产流水线完全指南：七阶段闭环架构 ( #mlops #llm-pipeline #production #ci-cd)
-- [[11_MLOps_Pipeline/Kubeflow_Deep_Dive]] — Kubeflow 深度解析：K8s 端到端 MLOps 平台 ( #kubeflow #kubernetes #mlops)
+- [[11_MLOps_Pipeline/Orchestration/Kubeflow_Deep_Dive]] — Kubeflow 深度解析：K8s 端到端 MLOps 平台 ( #kubeflow #kubernetes #mlops)
 
 ### 大模型技术生态评估
 - [[_llm-ecosystem-analysis-2026-06-15]] — 大模型技术生态内容完整性分析 ( #meta #audit #llm-ecosystem)

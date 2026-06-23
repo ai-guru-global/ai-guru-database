@@ -11,7 +11,7 @@ updated: "2026-05-31"
 
 > **一句话理解**: Kubeflow 是云原生机器学习平台——在 K8s 上运行 ML 工作流、分布式训练、超参数调优、模型服务，开源 ML Platform。
 
-> 📐 **概念与选型方法论**: 流水线编排的原理、Kubeflow vs Airflow vs Prefect 选型，见 [[11_MLOps_Pipeline/Data_Pipeline_Orchestration]]。本文聚焦 Kubeflow 工具用法。
+> 📐 **概念与选型方法论**: 流水线编排的原理、Kubeflow vs Airflow vs Prefect 选型，见 [[11_MLOps_Pipeline/Orchestration/Data_Pipeline_Orchestration]]。本文聚焦 Kubeflow 工具用法。
 
 ---
 

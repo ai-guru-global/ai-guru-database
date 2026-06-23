@@ -428,9 +428,9 @@ jobs:
 
 ### 本章内
 - [[11_MLOps_Pipeline/LLMOps_2026]] — 本系列主线（§6 是本文的概览版）
-- [[11_MLOps_Pipeline/LLM_Evaluation_Pipeline]] — RAG 质量评估方法
-- [[11_MLOps_Pipeline/Model_Monitoring_and_Drift_Detection_2026]] — 漂移检测理论
-- [[11_MLOps_Pipeline/Data_Pipeline_Orchestration]] — 数据编排（RAG Pipeline 的基础）
+- [[11_MLOps_Pipeline/Evaluation/LLM_Evaluation_Pipeline]] — RAG 质量评估方法
+- [[11_MLOps_Pipeline/Observability/Model_Monitoring_and_Drift_Detection_2026]] — 漂移检测理论
+- [[11_MLOps_Pipeline/Orchestration/Data_Pipeline_Orchestration]] — 数据编排（RAG Pipeline 的基础）
 
 ### 跨章
 - [[14_RAG_Systems/README]] — RAG 系统架构（本文侧重其 Ops）
@@ -441,7 +441,7 @@ jobs:
 - [[_concepts/embedding-models]] — Embedding 模型
 - [[_concepts/matryoshka-representation-learning]] — 可截断嵌入（节省存储）
 - [[09_Testing/RAGAS_Deep_Dive]] — RAG 评估事实标准
-- [[10_Deployment_Inference/Prompt_Caching_Advanced]] — 缓存与 RAG
+- [[10_Deployment_Inference/Caching/Prompt_Caching_Advanced]] — 缓存与 RAG
 
 ---
 

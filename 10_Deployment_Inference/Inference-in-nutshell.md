@@ -648,6 +648,6 @@ response = client.chat.completions.create(
 - [[10_Deployment_Inference/Deployment_Inference]] — 模型部署与推理加速 (Deployment & Inference) (共享: deployment, inference, serving, vllm)
 - [[10_Deployment_Inference/Deployment_Inference_2026]] — 部署推理 2026 趋势 (共享: deployment, inference, serving, vllm)
 - [[10_Deployment_Inference/Deployment_Inference_for_dummy]] — 模型部署与推理加速 - 小白版 (共享: deployment, inference, serving, vllm)
-- [[10_Deployment_Inference/JVM_AI_Deployment]] — JVM AI 部署与推理 (共享: deployment, inference, serving, vllm)
-- [[10_Deployment_Inference/vLLM_Deep_Dive.md|vLLM_Deep_Dive]]
+- [[10_Deployment_Inference/Inference_Engines/JVM_AI_Deployment]] — JVM AI 部署与推理 (共享: deployment, inference, serving, vllm)
+- [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive.md|vLLM_Deep_Dive]]
 - [[10_Deployment_Inference/README_for_dummy.md|README_for_dummy]]

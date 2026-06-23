@@ -639,12 +639,12 @@ GPUStack 可同时提供 LLM、Embedding、Reranker、TTS、STT, 成为企业 AI
 
 ## Related
 - [[10_Deployment_Inference/README|模型部署与推理]]
-- [[10_Deployment_Inference/vLLM_Deep_Dive|vLLM: 生产级 LLM 推理引擎]]
-- [[10_Deployment_Inference/SGLang_Deep_Dive|SGLang: 高性能 LLM 推理框架]]
-- [[10_Deployment_Inference/Ollama_Deep_Dive|Ollama: 本地大模型部署平台]]
-- [[10_Deployment_Inference/BentoML_Deep_Dive|BentoML: AI 模型服务框架]]
-- [[10_Deployment_Inference/llama_cpp_Deep_Dive|llama.cpp: 纯 C/C++ 本地 LLM 推理]]
+- [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive|vLLM: 生产级 LLM 推理引擎]]
+- [[10_Deployment_Inference/Inference_Engines/SGLang_Deep_Dive|SGLang: 高性能 LLM 推理框架]]
+- [[10_Deployment_Inference/Inference_Engines/Ollama_Deep_Dive|Ollama: 本地大模型部署平台]]
+- [[10_Deployment_Inference/Inference_Engines/BentoML_Deep_Dive|BentoML: AI 模型服务框架]]
+- [[10_Deployment_Inference/Inference_Engines/llama_cpp_Deep_Dive|llama.cpp: 纯 C/C++ 本地 LLM 推理]]
 - [[10_Deployment_Inference/Deployment_Inference_2026|部署推理 2026 趋势]]
 - [[_concepts/gpustack|GPUStack 概念卡片]]
 - [[14_AI_Gateway/AI_Gateway_2026|AI Gateway 2026]]
-- [[14_RAG_Systems/Agentic_RAG_Guide|Agentic RAG 指南]]
+- [[14_RAG_Systems/Advanced_RAG/Agentic_RAG_Guide|Agentic RAG 指南]]

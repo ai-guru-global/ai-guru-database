@@ -197,12 +197,12 @@ flowchart TB
 *Last updated: 2026-06-15*
 
 ## Related
-- [[20_Papers/RAG_Deep_Dive|论文深度解读: RAG — 检索增强生成 (Retrieval-Augmented Generation)]]
-- [[20_Papers/CLIP_Deep_Dive|CLIP 深度解读 (Learning Transferable Visual Models From Natural Language Supervision)]]
-- [[20_Papers/GAN_Deep_Dive|GAN 深度解读 (Generative Adversarial Networks)]]
-- [[20_Papers/Chain_of_Thought_Deep_Dive|论文深度解读: Chain-of-Thought — 让 LLM 逐步推理]]
-- [[20_Papers/VAE_Deep_Dive|论文深度解读: VAE — 变分自编码器 (Auto-Encoding Variational Bayes)]]
-- [[20_Papers/LoRA_Deep_Dive|LoRA 深度解读 (Low-Rank Adaptation of Large Language Models)]]
+- [[20_Papers/Retrieval/RAG_Deep_Dive|论文深度解读: RAG — 检索增强生成 (Retrieval-Augmented Generation)]]
+- [[20_Papers/Vision/CLIP_Deep_Dive|CLIP 深度解读 (Learning Transferable Visual Models From Natural Language Supervision)]]
+- [[20_Papers/Vision/GAN_Deep_Dive|GAN 深度解读 (Generative Adversarial Networks)]]
+- [[20_Papers/Alignment/Chain_of_Thought_Deep_Dive|论文深度解读: Chain-of-Thought — 让 LLM 逐步推理]]
+- [[20_Papers/Vision/VAE_Deep_Dive|论文深度解读: VAE — 变分自编码器 (Auto-Encoding Variational Bayes)]]
+- [[20_Papers/Efficiency/LoRA_Deep_Dive|LoRA 深度解读 (Low-Rank Adaptation of Large Language Models)]]
 
 - [[20_Papers/README_for_dummy]] — 22 Papers — 小白版 📚 (共享: deep-dive, paper)
 

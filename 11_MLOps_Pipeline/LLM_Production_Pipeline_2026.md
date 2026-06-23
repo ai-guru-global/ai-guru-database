@@ -1158,7 +1158,7 @@ stages:
 | 文档 | 说明 |
 |------|------|
 | [[13_AI_Ops/LangSmith_Deep_Dive]] | LangSmith 追踪与评估平台 |
-| [[10_Deployment_Inference/vLLM_Deep_Dive]] | vLLM 高性能推理引擎 |
+| [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive]] | vLLM 高性能推理引擎 |
 | [[Experiment_Tracking_Deep_Dive]] | 实验跟踪最佳实践 |
 | [[Model_Registry_and_Cards_Deep_Dive]] | 模型注册与治理 |
 | [[Data_Versioning_DVC_LakeFS]] | 数据版本化方案 |

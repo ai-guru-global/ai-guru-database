@@ -111,8 +111,8 @@ summary: 基于关键词扫描和深度检测的 LLM 全生命周期内容覆盖
 -  prefix caching 在多轮对话中的收益分析
 
 **建议新建页面**:
-- ✅ `10_Deployment_Inference/Speculative_Decoding_Advanced_2026.md` — 已创建 (14.8 KB)
-- ✅ `10_Deployment_Inference/Prompt_Caching_and_KV_Cache_Optimization.md` — 已创建 (15.2 KB)
+- ✅ `10_Deployment_Inference/Caching/Speculative_Decoding_Advanced_2026.md` — 已创建 (14.8 KB)
+- ✅ `10_Deployment_Inference/Caching/Prompt_Caching_and_KV_Cache_Optimization.md` — 已创建 (15.2 KB)
 
 ---
 

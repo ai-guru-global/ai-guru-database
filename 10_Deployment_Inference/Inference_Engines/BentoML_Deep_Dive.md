@@ -705,12 +705,12 @@ class ObservableService:
 
 ## Related
 
-- [[10_Deployment_Inference/vLLM_Deep_Dive.md|vLLM_Deep_Dive]]
-- [[10_Deployment_Inference/TGI_Deep_Dive.md|TGI_Deep_Dive]]
-- [[10_Deployment_Inference/TensorRT_LLM_Deep_Dive.md|TensorRT_LLM_Deep_Dive]]
+- [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive.md|vLLM_Deep_Dive]]
+- [[10_Deployment_Inference/Inference_Engines/TGI_Deep_Dive.md|TGI_Deep_Dive]]
+- [[10_Deployment_Inference/Inference_Engines/TensorRT_LLM_Deep_Dive.md|TensorRT_LLM_Deep_Dive]]
 - [[10_Deployment_Inference/Deployment_Inference.md|Deployment_Inference]]
 - [[10_Deployment_Inference/Deployment_Inference_2026.md|Deployment_Inference_2026]]
 - [[10_Deployment_Inference/Deployment_Inference_for_dummy.md|Deployment_Inference_for_dummy]]
 - [[10_Deployment_Inference/Inference-in-nutshell.md|Inference-in-nutshell]]
-- [[10_Deployment_Inference/LLM_Inference_Engine_Selection_Guide.md|LLM_Inference_Engine_Selection_Guide]]
+- [[10_Deployment_Inference/Inference_Engines/LLM_Inference_Engine_Selection_Guide.md|LLM_Inference_Engine_Selection_Guide]]
 - [[14_AI_Gateway/LiteLLM_Deep_Dive.md|LiteLLM_Deep_Dive]]

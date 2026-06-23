@@ -11,7 +11,7 @@ updated: "2026-06-16"
 
 > **一句话理解**: KubeRay 是 Ray 的 Kubernetes Operator——把 RayCluster/RayJob/RayService 声明式跑在 K8s 上，是大模型多机多卡分布式推理（Ray Serve + vLLM tensor parallel）的标配底座。
 
-> 📐 **概念方法论**: KubeRay 解决的是「分布式 Python 计算框架 Ray 如何被 Kubernetes 原生纳管」——它把 Ray 的运行时拓扑（head + worker）、批作业、长期服务三种形态分别抽象为 CRD，再用 Operator 把 Ray Autoscaler 接到 K8s Pod 调度链上。理解它的前提是理解 vLLM 的多机 tensor parallel 怎么把一个模型拆到多张 GPU 上（详见 [[10_Deployment_Inference/vLLM_Deep_Dive]]），以及推理服务编排的标准接口为什么需要 Ray Serve 而非纯 KServe（详见 [[CNCF_Cloud_Native_AI/KServe_Deep_Dive]]）。
+> 📐 **概念方法论**: KubeRay 解决的是「分布式 Python 计算框架 Ray 如何被 Kubernetes 原生纳管」——它把 Ray 的运行时拓扑（head + worker）、批作业、长期服务三种形态分别抽象为 CRD，再用 Operator 把 Ray Autoscaler 接到 K8s Pod 调度链上。理解它的前提是理解 vLLM 的多机 tensor parallel 怎么把一个模型拆到多张 GPU 上（详见 [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive]]），以及推理服务编排的标准接口为什么需要 Ray Serve 而非纯 KServe（详见 [[CNCF_Cloud_Native_AI/KServe_Deep_Dive]]）。
 
 ---
 
@@ -635,7 +635,7 @@ Ray 大版本升级不能原地滚——runtime state 不向后兼容。正确�
                  └── 只要 scale-to-zero 极致省 GPU → KServe + Knative
 ```
 
-> 与 [[10_Deployment_Inference/vLLM_Deep_Dive]] 配合：vLLM 引擎不变，KubeRay 只是把 vLLM 的多机部署 / 副本管理 / 升级流程 K8s 化。
+> 与 [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive]] 配合：vLLM 引擎不变，KubeRay 只是把 vLLM 的多机部署 / 副本管理 / 升级流程 K8s 化。
 
 ### 8.3 选型一句话
 
@@ -675,5 +675,5 @@ Ray 2.x 起支持 GCS 外部存储（Redis / etcd），head Pod 重建后能恢�
 - [[CNCF_Cloud_Native_AI/README]] —— CNCF 云原生 LLM 项目全景
 - [[CNCF_Cloud_Native_AI/KServe_Deep_Dive]] —— 与 KubeRay 互补的标准化推理接口层
 - [[CNCF_Cloud_Native_AI/Kueue_Deep_Dive]] —— 把 Ray 集群当 Workload 排队的调度器
-- [[10_Deployment_Inference/vLLM_Deep_Dive]] —— KubeRay 上最常见的推理引擎
-- [[10_Deployment_Inference/SGLang_Deep_Dive]] —— 另一个常跑在 Ray 上的高性能推理引擎
+- [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive]] —— KubeRay 上最常见的推理引擎
+- [[10_Deployment_Inference/Inference_Engines/SGLang_Deep_Dive]] —— 另一个常跑在 Ray 上的高性能推理引擎

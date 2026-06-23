@@ -199,4 +199,4 @@ FlashMLA 专门为 MLA 设计：
 - [[_concepts/multi-head-latent-attention]] — MLA
 - [[10_Deployment_Inference/Inference_Performance/README|推理性能专题]]
 - [[10_Deployment_Inference/Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]]
-- [[10_Deployment_Inference/KV_Cache_Deep_Dive|KV Cache Deep Dive]]
+- [[10_Deployment_Inference/Caching/KV_Cache_Deep_Dive|KV Cache Deep Dive]]

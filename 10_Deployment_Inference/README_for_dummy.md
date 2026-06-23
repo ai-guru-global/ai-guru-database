@@ -221,4 +221,4 @@ FP16 (16位) → INT8 (8位) → INT4 (4位)
 - [[10_Deployment_Inference/Deployment_Inference_2026.md|Deployment_Inference_2026]]
 - [[10_Deployment_Inference/Deployment_Inference_for_dummy.md|Deployment_Inference_for_dummy]]
 - [[10_Deployment_Inference/Inference-in-nutshell.md|Inference-in-nutshell]]
-- [[10_Deployment_Inference/JVM_AI_Deployment.md|JVM_AI_Deployment]]
+- [[10_Deployment_Inference/Inference_Engines/JVM_AI_Deployment.md|JVM_AI_Deployment]]

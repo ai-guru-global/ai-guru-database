@@ -54,4 +54,4 @@ updated: "2026-06-12"
 ---
 ## Related
 - [[15_Agent_Production/Agent_Frameworks/SmolAgents_Deep_Dive]]
-- [[10_Deployment_Inference/vLLM_Deep_Dive]]
+- [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive]]

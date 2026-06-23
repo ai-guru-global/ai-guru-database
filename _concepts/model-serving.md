@@ -15,11 +15,11 @@ relationships:
     type: uses
 sources:
   - 09_model-deployment_Inference/Deployment_Inference_2026.md
-  - 10_Deployment_Inference/vLLM_Deep_Dive.md
-  - 10_Deployment_Inference/SGLang_Deep_Dive.md
-  - 10_Deployment_Inference/TensorRT_LLM_Deep_Dive.md
-  - 10_Deployment_Inference/BentoML_Deep_Dive.md
-  - 10_Deployment_Inference/Ollama_Deep_Dive.md
+  - 10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive.md
+  - 10_Deployment_Inference/Inference_Engines/SGLang_Deep_Dive.md
+  - 10_Deployment_Inference/Inference_Engines/TensorRT_LLM_Deep_Dive.md
+  - 10_Deployment_Inference/Inference_Engines/BentoML_Deep_Dive.md
+  - 10_Deployment_Inference/Inference_Engines/Ollama_Deep_Dive.md
   - 10_Deployment_Inference/llm-architectures_cpp_Deep_Dive.md
 summary: 模型服务框架是连接AI模型与业务应用的桥梁。2026年GPU推理三强鼎立：vLLM以PagedAttention实现高吞吐、TensorRT-LLM提供NVIDIA极致低延迟优化、SGLang擅长结构化生成。CPU/本地场景有Ollama（易用）和llama.cpp（极致量化）。BentoML提供统一的模型打包部署框架。
 provenance:

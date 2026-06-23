@@ -5,9 +5,9 @@ title: Wiki Log
 # Wiki Log
 
 - [2026-06-15T15:10:00+08:00] MRL_DEEP_DIVE 新增 Matryoshka Representation Learning 深度专题:
-  - 创建主章节深度解析: 14_RAG_Systems/Matryoshka_Representation_Learning_Deep_Dive.md
+  - 创建主章节深度解析: 14_RAG_Systems/Embeddings/Matryoshka_Representation_Learning_Deep_Dive.md
   - 创建小白版: 14_RAG_Systems/Matryoshka_Representation_Learning_for_dummy.md
-  - 创建论文深度解读: 20_Papers/Matryoshka_Representation_Learning_Deep_Dive.md
+  - 创建论文深度解读: 20_Papers/Efficiency/Matryoshka_Representation_Learning_Deep_Dive.md
   - 更新 14_RAG_Systems/README.md、_concepts/matryoshka-representation-learning.md、_concepts/embedding-models.md、20_Papers/README.md、index.md
 - [2026-05-31T00:00:00Z] INIT
 - [2026-05-31T21:30:00+08:00] CROSS_LINK _concepts/ core layer
@@ -161,8 +161,8 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
 - [[08_Model_Evaluation/Long_Context_Evaluation|Long Context Evaluation]] — 12.9 KB
 
 ### 推理优化前沿 (P2)
-- [[10_Deployment_Inference/Speculative_Decoding_Advanced_2026|Speculative Decoding Advanced]] — 14.8 KB
-- [[10_Deployment_Inference/Prompt_Caching_and_KV_Cache_Optimization|Prompt Caching and KV Cache Optimization]] — 15.2 KB
+- [[10_Deployment_Inference/Caching/Speculative_Decoding_Advanced_2026|Speculative Decoding Advanced]] — 14.8 KB
+- [[10_Deployment_Inference/Caching/Prompt_Caching_and_KV_Cache_Optimization|Prompt Caching and KV Cache Optimization]] — 15.2 KB
 
 ### 基础设施
 - Created directory READMEs for `Multimodal_Models/`, `LLM_Architectures/`, `Reasoning_Models/`
@@ -585,8 +585,8 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
 - `08_Model_Evaluation/LLM_as_Judge_Guide.md` — LLM-as-Judge 评估指南(Ragas/DeepEval/Promptfoo)
 - `_concepts/long-context-vs-rag.md` — 长上下文 vs RAG 技术选型决策框架
 - `16_AI_Coding/AI_Coding_2026_Guide.md` — AI 编程全景指南(Cursor/Claude Code/Codex)
-- `10_Deployment_Inference/Prompt_Caching_Advanced.md` — Prompt 缓存高级技术
-- `14_RAG_Systems/Agentic_RAG_Guide.md` — Agentic RAG 架构(Self-RAG/CRAG/Adaptive RAG)
+- `10_Deployment_Inference/Caching/Prompt_Caching_Advanced.md` — Prompt 缓存高级技术
+- `14_RAG_Systems/Advanced_RAG/Agentic_RAG_Guide.md` — Agentic RAG 架构(Self-RAG/CRAG/Adaptive RAG)
 
 ### 应用场景页面(4 个)
 - `18_AI_Applications_Industry/Code_Generation/AI_Code_Generation_2026.md` — AI 代码生成应用
@@ -610,9 +610,9 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
 - `13_AI_Ops/AI_Observability_Guide_2026.md` — AI 可观测性完全指南(Langfuse/LangSmith/Helicone)
 - `17_Ethics_Safety/AI_Red_Teaming_Guide.md` — AI 红队测试指南(攻击向量/测试框架/防御策略)
 - `14_AI_Gateway/LLM_Gateway_Comparison_2026.md` — LLM 网关对比(LiteLLM/Portkey/Kong)
-- `14_RAG_Systems/Embedding_Models_Guide.md` — Embedding 模型选型指南(闭源/开源模型对比)
+- `14_RAG_Systems/Embeddings/Embedding_Models_Guide.md` — Embedding 模型选型指南(闭源/开源模型对比)
 - `15_Agent_Production/Memory_Infrastructure/Agent_Memory_Techniques.md` — Agent 记忆技术(Mem0/Zep/Graphiti)
-- `10_Deployment_Inference/LLM_Cost_Optimization.md` — LLM 成本优化(模型路由/缓存/量化/批处理)
+- `10_Deployment_Inference/Cost/LLM_Cost_Optimization.md` — LLM 成本优化(模型路由/缓存/量化/批处理)
 
 ### 页面统计
 - 新增页面: 7 个
@@ -959,8 +959,8 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
 ## 2026-06-15 — 新增 GPUStack 专题
 
 - 新增页面:
-  - `10_Deployment_Inference/GPUStack_Deep_Dive.md` — GPUStack 深度解析 (27,950 bytes)
-  - `10_Deployment_Inference/GPUStack_for_dummy.md` — GPUStack 入门指南 (8,704 bytes)
+  - `10_Deployment_Inference/GPU_Infrastructure/GPUStack_Deep_Dive.md` — GPUStack 深度解析 (27,950 bytes)
+  - `10_Deployment_Inference/GPU_Infrastructure/GPUStack_for_dummy.md` — GPUStack 入门指南 (8,704 bytes)
   - `_concepts/gpustack.md` — GPUStack 概念卡片 (3,564 bytes)
 - 更新页面:
   - `10_Deployment_Inference/README.md` — 新增 GPUStack 导航、对比表与 Related 链接
@@ -1005,9 +1005,9 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
   - `12_Architecture_Infrastructure/CDI_for_dummy.md` — CDI 小白版（酒店入住单/万能插头比喻，~9KB）
   - `_concepts/cdi.md` — CDI 概念卡片（对齐 GPUStack 三层结构，含 relationships/provenance）
 - 更新页面（反向链接，消除单向链接）:
-  - `10_Deployment_Inference/vLLM_Deep_Dive.md` — Related 新增 CDI 链接
-  - `10_Deployment_Inference/TensorRT_LLM_Deep_Dive.md` — Related 新增 CDI 链接
-  - `10_Deployment_Inference/TGI_Deep_Dive.md` — Related 新增 CDI 链接
+  - `10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive.md` — Related 新增 CDI 链接
+  - `10_Deployment_Inference/Inference_Engines/TensorRT_LLM_Deep_Dive.md` — Related 新增 CDI 链接
+  - `10_Deployment_Inference/Inference_Engines/TGI_Deep_Dive.md` — Related 新增 CDI 链接
   - `12_Architecture_Infrastructure/AI_Infrastructure_2026.md` — 新增 §2.5「设备如何进容器：CDI 标准」（补硬件→容器拼图）
   - `12_Architecture_Infrastructure/README.md` — 导航表新增 CDI 小白版行
   - `index.md` — Concepts 分组新增 cdi 概念卡片索引

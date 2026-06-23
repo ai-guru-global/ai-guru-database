@@ -773,6 +773,6 @@ flowchart TB
 
 ## Related
 
-- [[20_Papers/GPT3_Deep_Dive]] — GPT-3 深度解读 (Language Models are Few-Shot Learners) (共享: gpt, openai)
+- [[20_Papers/Scaling/GPT3_Deep_Dive]] — GPT-3 深度解读 (Language Models are Few-Shot Learners) (共享: gpt, openai)
 
 - [[_synthesis/alignment-rlhf|价值对齐 × RLHF：从人类反馈到可扩展监督]]

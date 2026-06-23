@@ -100,7 +100,7 @@ quality: final
 ### 4.1 Frontmatter 问题
 
 - **YAML 语法错误**: 3 个文件因中文引号未转义导致解析失败
-  - `10_Deployment_Inference/Quantization_Techniques_2026.md`
+  - `10_Deployment_Inference/Quantization/Quantization_Techniques_2026.md`
   - `05_NLP_LLMs/LLM_Fundamentals.md`
   - `05_NLP_LLMs/NLP_Fundamentals.md`
 - **空 summary 字段**: 43 个

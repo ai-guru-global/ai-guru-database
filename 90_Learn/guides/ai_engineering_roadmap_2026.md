@@ -189,7 +189,7 @@ flowchart TB
 | [Gemini API](https://ai.google.dev/gemini-api/docs) | Google Gemini |
 | [Groq](https://groq.com/) | 高速推理 |
 
-> **关联**: → [[05_NLP_LLMs/LLM_Fundamentals|LLM 基础]] · [[20_Papers/Attention_Is_All_You_Need_Deep_Dive|Attention 论文]] · [[20_Papers/GPT3_Deep_Dive|GPT-3 论文]]
+> **关联**: → [[05_NLP_LLMs/LLM_Fundamentals|LLM 基础]] · [[20_Papers/Architecture/Attention_Is_All_You_Need_Deep_Dive|Attention 论文]] · [[20_Papers/Scaling/GPT3_Deep_Dive|GPT-3 论文]]
 
 ---
 
@@ -244,7 +244,7 @@ flowchart TB
 | [Introduction to RAG - Coursera](https://www.coursera.org/projects/introduction-to-rag) | 课程 | RAG 入门实践 |
 | [RAG Techniques](https://github.com/NirDiamant/RAG_Techniques) | GitHub | ⭐ RAG 技术大全 |
 
-> **关联**: → [[14_RAG_Systems/RAG_Fundamentals|RAG 基础]] · [[20_Papers/RAG_Deep_Dive|RAG 论文]]
+> **关联**: → [[14_RAG_Systems/RAG_Fundamentals|RAG 基础]] · [[20_Papers/Retrieval/RAG_Deep_Dive|RAG 论文]]
 
 ---
 
@@ -354,12 +354,12 @@ flowchart TB
 
 | 论文 | 年份 | Wiki 深度解读 |
 |------|------|---------------|
-| [Attention Is All You Need](https://arxiv.org/pdf/1706.03762) | 2017 | → [[20_Papers/Attention_Is_All_You_Need_Deep_Dive]] |
-| [Generative Adversarial Networks](https://arxiv.org/abs/1406.2661) | 2014 | → [[20_Papers/GAN_Deep_Dive]] |
+| [Attention Is All You Need](https://arxiv.org/pdf/1706.03762) | 2017 | → [[20_Papers/Architecture/Attention_Is_All_You_Need_Deep_Dive]] |
+| [Generative Adversarial Networks](https://arxiv.org/abs/1406.2661) | 2014 | → [[20_Papers/Vision/GAN_Deep_Dive]] |
 | [GPT: Improving Language Understanding](https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf) | 2018 | — |
-| [GPT-3: Few-Shot Learners](https://arxiv.org/abs/2005.14165) | 2020 | → [[20_Papers/GPT3_Deep_Dive]] |
-| [BERT](https://arxiv.org/abs/1810.04805) | 2018 | → [[20_Papers/BERT_Deep_Dive]] |
-| [Chain-of-Thought Prompting](https://arxiv.org/abs/2201.11903) | 2022 | → [[20_Papers/Chain_of_Thought_Deep_Dive]] |
+| [GPT-3: Few-Shot Learners](https://arxiv.org/abs/2005.14165) | 2020 | → [[20_Papers/Scaling/GPT3_Deep_Dive]] |
+| [BERT](https://arxiv.org/abs/1810.04805) | 2018 | → [[20_Papers/Architecture/BERT_Deep_Dive]] |
+| [Chain-of-Thought Prompting](https://arxiv.org/abs/2201.11903) | 2022 | → [[20_Papers/Alignment/Chain_of_Thought_Deep_Dive]] |
 
 ---
 
@@ -460,15 +460,15 @@ flowchart TB
 - [[08_Model_Evaluation/LLM_as_Judge_Guide|LLM-as-Judge 评估]]
 - [[_concepts/long-context-vs-rag|长上下文 vs RAG]]
 - [[16_AI_Coding/AI_Coding_2026_Guide|AI 编程 2026 全景]]
-- [[10_Deployment_Inference/Prompt_Caching_Advanced|Prompt 缓存高级]]
-- [[14_RAG_Systems/Agentic_RAG_Guide|Agentic RAG]]
+- [[10_Deployment_Inference/Caching/Prompt_Caching_Advanced|Prompt 缓存高级]]
+- [[14_RAG_Systems/Advanced_RAG/Agentic_RAG_Guide|Agentic RAG]]
 - [[17_Ethics_Safety/Guardrails_Production_Guide|AI 护栏实践]]
 - [[13_AI_Ops/AI_Observability_Guide_2026|AI 可观测性]]
 - [[17_Ethics_Safety/AI_Red_Teaming_Guide|AI 红队测试]]
 - [[14_AI_Gateway/LLM_Gateway_Comparison_2026|LLM 网关对比]]
-- [[14_RAG_Systems/Embedding_Models_Guide|Embedding 模型选型]]
+- [[14_RAG_Systems/Embeddings/Embedding_Models_Guide|Embedding 模型选型]]
 - [[15_Agent_Production/Memory_Infrastructure/Agent_Memory_Techniques|Agent 记忆技术]]
-- [[10_Deployment_Inference/LLM_Cost_Optimization|LLM 成本优化]]
+- [[10_Deployment_Inference/Cost/LLM_Cost_Optimization|LLM 成本优化]]
 
 ### 应用场景
 - [[18_AI_Applications_Industry/Code_Generation/AI_Code_Generation_2026|AI 代码生成]]

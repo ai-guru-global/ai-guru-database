@@ -5,7 +5,7 @@ tags: ["multimodal", "rag", "vision-language", "retrieval", "embedding", "synthe
 sources:
   - "05_NLP_LLMs/Multimodal_Models/Native_Multimodal_Architectures"
   - "05_NLP_LLMs/Multimodal_Models/Modality_Fusion_Mechanisms"
-  - "14_RAG_Systems/RAG_Advanced_2026"
+  - "14_RAG_Systems/Advanced_RAG/RAG_Advanced_2026"
   - "14_RAG_Systems/Vector_Database_for_dummy"
 created: 2026-06-01
 updated: 2026-06-01
@@ -73,6 +73,6 @@ lifecycle_changed: 2026-06-01
 
 - [[05_NLP_LLMs/Multimodal_Models/Native_Multimodal_Architectures]]
 - [[05_NLP_LLMs/Multimodal_Models/Modality_Fusion_Mechanisms]]
-- [[14_RAG_Systems/RAG_Advanced_2026]]
+- [[14_RAG_Systems/Advanced_RAG/RAG_Advanced_2026]]
 - [[14_RAG_Systems/Vector_Database_for_dummy]]
 - [[_concepts/multimodal-vision]]

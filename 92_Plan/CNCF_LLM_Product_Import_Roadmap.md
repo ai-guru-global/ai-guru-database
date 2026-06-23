@@ -304,8 +304,8 @@ updated: "YYYY-MM-DD"
 
 | 产品 | 深度文档 | 入门文档 | 概念卡片 |
 |------|---------|---------|---------|
-| KServe | `10_Deployment_Inference/KServe_Deep_Dive.md` | `10_Deployment_Inference/KServe_for_dummy.md` | `_concepts/kserve.md` |
-| Ray | `07_Model_Training/Ray_Deep_Dive.md` | `07_Model_Training/Ray_for_dummy.md` | `_concepts/ray.md` |
+| KServe | `10_Deployment_Inference/Inference_Engines/KServe_Deep_Dive.md` | `10_Deployment_Inference/KServe_for_dummy.md` | `_concepts/kserve.md` |
+| Ray | `07_Model_Training/Distributed_Training/Ray_Deep_Dive.md` | `07_Model_Training/Ray_for_dummy.md` | `_concepts/ray.md` |
 | Prometheus | `13_AI_Ops/Prometheus_Deep_Dive.md` | `13_AI_Ops/Prometheus_for_dummy.md` | `_concepts/prometheus.md` |
 
 ---

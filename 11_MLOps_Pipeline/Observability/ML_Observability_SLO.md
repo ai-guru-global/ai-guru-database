@@ -193,9 +193,9 @@ BAD_ALERT = {
 ## 7. 相关文档
 
 ### 本章内
-- [[11_MLOps_Pipeline/Model_Monitoring_and_Drift_Detection_2026]] — 模型质量监控（本文是系统层）
-- [[11_MLOps_Pipeline/LLM_Observability]] — LLM 专属可观测
-- [[11_MLOps_Pipeline/Cost_Optimization_MLOps]] — 成本也是可观测维度
+- [[11_MLOps_Pipeline/Observability/Model_Monitoring_and_Drift_Detection_2026]] — 模型质量监控（本文是系统层）
+- [[11_MLOps_Pipeline/Observability/LLM_Observability]] — LLM 专属可观测
+- [[11_MLOps_Pipeline/Cost/Cost_Optimization_MLOps]] — 成本也是可观测维度
 
 ### 跨章
 - [[13_AI_Ops/README]] — AI 运维（基础设施层）

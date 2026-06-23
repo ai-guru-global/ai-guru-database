@@ -5,8 +5,8 @@ tags: ["moe", "inference-optimization", "deepseek", "speculative-decoding", "rou
 sources:
   - "05_NLP_LLMs/LLM_Architectures/MoE_Routing_and_Load_Balancing"
   - "05_NLP_LLMs/LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral"
-  - "10_Deployment_Inference/Speculative_Decoding_Advanced_2026"
-  - "10_Deployment_Inference/Prompt_Caching_and_KV_Cache_Optimization"
+  - "10_Deployment_Inference/Caching/Speculative_Decoding_Advanced_2026"
+  - "10_Deployment_Inference/Caching/Prompt_Caching_and_KV_Cache_Optimization"
 created: 2026-06-01
 updated: 2026-06-01
 summary: "MoE 模型以激活参数少、总参数大的特性著称，但推理阶段面临专家路由开销、负载不均衡、KV Cache 膨胀等独特挑战——需要专门的推理优化策略。"
@@ -82,5 +82,5 @@ Prompt Caching 在 MoE 中的特殊价值：由于 MoE 的 Prefix 阶段通常�
 
 - [[05_NLP_LLMs/LLM_Architectures/MoE_Routing_and_Load_Balancing]]
 - [[05_NLP_LLMs/LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral]]
-- [[10_Deployment_Inference/Speculative_Decoding_Advanced_2026]]
-- [[10_Deployment_Inference/Prompt_Caching_and_KV_Cache_Optimization]]
+- [[10_Deployment_Inference/Caching/Speculative_Decoding_Advanced_2026]]
+- [[10_Deployment_Inference/Caching/Prompt_Caching_and_KV_Cache_Optimization]]

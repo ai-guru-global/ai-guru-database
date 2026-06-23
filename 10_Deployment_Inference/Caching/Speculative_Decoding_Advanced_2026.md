@@ -613,8 +613,8 @@ Node 1 (2× A100): 运行 Draft 模型
 
 ## Related
 
-- [[10_Deployment_Inference/vLLM_Deep_Dive]]
-- [[10_Deployment_Inference/Prompt_Caching_and_KV_Cache_Optimization]]
+- [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive]]
+- [[10_Deployment_Inference/Caching/Prompt_Caching_and_KV_Cache_Optimization]]
 - [[_concepts/model-serving]]
 - [[05_NLP_LLMs/LLM_Architectures/LLM_Architectures]]
 - [[10_Deployment_Inference/Deployment_Inference_2026]]

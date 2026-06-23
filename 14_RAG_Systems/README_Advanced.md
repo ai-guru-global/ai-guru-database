@@ -77,7 +77,7 @@ updated: 2026-05-31
 
 - [[14_RAG_Systems/RAG-in-nutshell]] — RAG (检索增强生成) 速成指南 (共享: embedding, rag, retrieval, vector-database)
 - [[14_RAG_Systems/RAG_Systems]] — RAG 系统 (RAG Systems) (共享: embedding, rag, retrieval, vector-database)
-- [[14_RAG_Systems/Spring_AI_RAG_Deep_Dive]] — Spring AI RAG 深度解析 (共享: embedding, rag, retrieval, vector-database)
+- [[14_RAG_Systems/RAG_Frameworks/Spring_AI_RAG_Deep_Dive]] — Spring AI RAG 深度解析 (共享: embedding, rag, retrieval, vector-database)
 - [[_synthesis/rag-vector-database]] — RAG 系统 × 向量数据库 (共享: embedding, rag, retrieval, vector-database)
 - [[14_RAG_Systems/README.md|README]]
 - [[14_RAG_Systems/Vector_Database_for_dummy.md|Vector_Database_for_dummy]]

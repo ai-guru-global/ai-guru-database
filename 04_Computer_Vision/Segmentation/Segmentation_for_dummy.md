@@ -439,5 +439,5 @@ AI辅助(U-Net):
 
 - [[04_Computer_Vision/README]] — 05 计算机视觉 (Computer Vision) (共享: cnn, computer-vision, cv, image-processing)
 - [[04_Computer_Vision/Video_Generation/README]] — AI视频生成 (Video Generation) (共享: cnn, computer-vision, cv, image-processing)
-- [[20_Papers/ResNet_Deep_Dive]] — ResNet 深度解读 (Deep Residual Learning for Image Recognition) (共享: cnn, cv)
+- [[20_Papers/Vision/ResNet_Deep_Dive]] — ResNet 深度解读 (Deep Residual Learning for Image Recognition) (共享: cnn, cv)
 - [[_concepts/computer-vision]] — 计算机视觉 (共享: cnn, cv)

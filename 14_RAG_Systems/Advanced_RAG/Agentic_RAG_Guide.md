@@ -112,11 +112,11 @@ graph.add_node("grade", grade_docs)
 
 Agentic RAG 涉及多次 LLM 调用，低延迟和高吞吐至关重要：
 
-- **多轮推理 + 前缀缓存**: [[10_Deployment_Inference/SGLang_Deep_Dive|SGLang]]
-- **通用生产环境**: [[10_Deployment_Inference/vLLM_Deep_Dive|vLLM]]
-- **极低延迟云 API**: [[10_Deployment_Inference/Groq_Deep_Dive|Groq]]
-- **推理引擎统一选型**: [[10_Deployment_Inference/LLM_Inference_Engine_Selection_Guide|LLM 推理引擎选型指南]]
-- **迁移与基准测试**: [[10_Deployment_Inference/LLM_Inference_Engine_Migration_Guide|迁移指南]] / [[10_Deployment_Inference/LLM_Inference_Benchmarking_Guide|基准测试指南]]
+- **多轮推理 + 前缀缓存**: [[10_Deployment_Inference/Inference_Engines/SGLang_Deep_Dive|SGLang]]
+- **通用生产环境**: [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive|vLLM]]
+- **极低延迟云 API**: [[10_Deployment_Inference/Inference_Engines/Groq_Deep_Dive|Groq]]
+- **推理引擎统一选型**: [[10_Deployment_Inference/Inference_Engines/LLM_Inference_Engine_Selection_Guide|LLM 推理引擎选型指南]]
+- **迁移与基准测试**: [[10_Deployment_Inference/Inference_Engines/LLM_Inference_Engine_Migration_Guide|迁移指南]] / [[10_Deployment_Inference/Inference_Engines/LLM_Inference_Benchmarking_Guide|基准测试指南]]
 
 > **关联**: -> [[14_RAG_Systems|RAG 系统]] | [[15_Agent_Production|Agent 生产]] | [[_synthesis/rag-agents|RAG x Agent 合成]]
 

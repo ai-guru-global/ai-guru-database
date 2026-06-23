@@ -11,7 +11,7 @@ relationships:
     type: compares_with
 sources:
   - 14_RAG_Systems/README.md
-  - 14_RAG_Systems/RAG_Advanced_2026.md
+  - 14_RAG_Systems/Advanced_RAG/RAG_Advanced_2026.md
 summary: "RAG 模式分类把检索增强生成按架构复杂度分为四级：Naive RAG（检索-拼接）、Advanced/Modular RAG（查询改写+重排序）、Agentic RAG（自主检索迭代）、Graph RAG（知识图谱检索）。从简单到复杂，按任务难度选型。"
 provenance:
   extracted: 0.75

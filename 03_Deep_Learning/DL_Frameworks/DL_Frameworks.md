@@ -41,4 +41,4 @@ updated: 2026-06-15
 - [[03_Deep_Learning/DL_Frameworks/pytorch_overview]] — PyTorch 概览
 - [[03_Deep_Learning/DL_Frameworks/tensorflow_overview]] — TensorFlow 概览
 - [[03_Deep_Learning/DL_Frameworks/keras_overview]] — Keras 概览
-- [[07_Model_Training/Distributed_Training_for_dummy]] — 分布式训练入门
+- [[07_Model_Training/Distributed_Training/Distributed_Training_for_dummy]] — 分布式训练入门

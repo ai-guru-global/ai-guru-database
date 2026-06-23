@@ -320,9 +320,9 @@ WHERE user_id = 'X' AND consent_status = 'consented';
 
 ### 本章内
 - [[11_MLOps_Pipeline/MLOps_Pipeline]] — 全流水线（合规是横切关注点）
-- [[11_MLOps_Pipeline/Model_Registry_and_Cards_Deep_Dive]] — 模型卡
-- [[11_MLOps_Pipeline/Data_Versioning_DVC_LakeFS]] — 数据血源基础
-- [[11_MLOps_Pipeline/LLM_Observability]] — PII 在线检测
+- [[11_MLOps_Pipeline/Experiment_Tracking/Model_Registry_and_Cards_Deep_Dive]] — 模型卡
+- [[11_MLOps_Pipeline/Orchestration/Data_Versioning_DVC_LakeFS]] — 数据血源基础
+- [[11_MLOps_Pipeline/Observability/LLM_Observability]] — PII 在线检测
 
 ### 跨章
 - [[17_Ethics_Safety/README]] — 伦理与安全

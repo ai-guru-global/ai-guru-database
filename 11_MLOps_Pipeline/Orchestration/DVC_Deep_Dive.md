@@ -11,7 +11,7 @@ updated: "2026-05-31"
 
 > **一句话理解**: DVC 是数据版本控制工具——用 Git 的工作流管理数据和模型，追踪数据集变化、支持数据管道、连接云存储，ML 数据的 Git。
 
-> 📐 **概念与选型方法论**: 数据版本控制的原理、DVC vs LakeFS vs Delta Lake 对比，见 [[11_MLOps_Pipeline/Data_Versioning_DVC_LakeFS]]。本文聚焦 DVC 工具用法。
+> 📐 **概念与选型方法论**: 数据版本控制的原理、DVC vs LakeFS vs Delta Lake 对比，见 [[11_MLOps_Pipeline/Orchestration/Data_Versioning_DVC_LakeFS]]。本文聚焦 DVC 工具用法。
 
 ---
 

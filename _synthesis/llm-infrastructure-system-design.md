@@ -67,6 +67,6 @@ LLM 基础设施不是从零发明的——它大量借鉴了传统 Web 服务�
 - [[12_Architecture_Infrastructure/AI_Infrastructure_2026]] — AI 基础设施 2026
 - [[12_Architecture_Infrastructure/AI_System_Architecture_2026]] — AI 系统架构
 - [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI 技术栈深度解读
-- [[10_Deployment_Inference/vLLM_Deep_Dive]] — vLLM 推理引擎
+- [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive]] — vLLM 推理引擎
 - [[14_AI_Gateway/AI_Gateway_2026]] — AI Gateway 2026
 - [[_synthesis/serving-deployment]] — 服务化 × 部署

@@ -174,4 +174,4 @@ t0: [A, B, C] 进入 batch
 - [[10_Deployment_Inference/Inference_Performance/README|推理性能专题]]
 - [[10_Deployment_Inference/Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]]
 - [[10_Deployment_Inference/Inference_Performance/Prefill_Decode_Disaggregation|Prefill-Decode 分离]]
-- [[10_Deployment_Inference/vLLM_Deep_Dive|vLLM Deep Dive]]
+- [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive|vLLM Deep Dive]]

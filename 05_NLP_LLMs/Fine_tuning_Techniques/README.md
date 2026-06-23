@@ -65,7 +65,7 @@ PEFT (参数高效微调):
 - [[05_NLP_LLMs/Multimodal_Models/Multimodal_Architectures_2026]] — 多模态模型架构 2026：从 GPT-4V 到原生多模态 AGI (共享: bert, gpt, llm, nlp, transformer)
 - [[05_NLP_LLMs/Prompt_Engineering/Prompt-Engineering-in-nutshell]] — Prompt Engineering 速成指南 (共享: bert, gpt, llm, nlp, transformer)
 - [[05_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/PEFT_2026]] — PEFT_2026
-- [[07_Model_Training/ms_swift_Deep_Dive|ms-swift 深度解析：魔搭大模型训练推理全链路框架]]
-- [[07_Model_Training/ms_swift_Command_Line_Parameters|ms-swift 命令行参数完全参考手册]]
+- [[07_Model_Training/Distributed_Training/ms_swift_Deep_Dive|ms-swift 深度解析：魔搭大模型训练推理全链路框架]]
+- [[07_Model_Training/Distributed_Training/ms_swift_Command_Line_Parameters|ms-swift 命令行参数完全参考手册]]
 - [[05_NLP_LLMs/README_for_dummy.md|README_for_dummy]]
 - [[05_NLP_LLMs/Sequence_Models/Sequence_Models.md|Sequence_Models]]

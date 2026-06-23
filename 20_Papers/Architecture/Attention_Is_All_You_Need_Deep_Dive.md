@@ -408,7 +408,7 @@ flowchart TB
 
 ## Related
 
-- [[20_Papers/BERT_Deep_Dive]] — BERT 深度解读 (Bidirectional Encoder Representations from Transformers) (共享: google, nlp, transformer)
+- [[20_Papers/Architecture/BERT_Deep_Dive]] — BERT 深度解读 (Bidirectional Encoder Representations from Transformers) (共享: google, nlp, transformer)
 - [[_synthesis/transformer-llm-architecture]] — Transformer 架构 × LLM 架构 (共享: attention, nlp, transformer)
 - [[05_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/README]] — PEFT 2026 (参数高效微调) (共享: nlp, transformer)
 - [[_concepts/long-context-models.md|long-context-models]]

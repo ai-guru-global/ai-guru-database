@@ -81,7 +81,7 @@ source_url: "https://github.com/microsoft/generative-ai-for-beginners/blob/main/
 
 | 课号 | 课程名称 | 本库建议配合阅读 | 页面链接 |
 |------|----------|------------------|----------|
-| 15 | 检索增强生成（RAG）与向量数据库 | [[14_RAG_Systems/RAG_Systems]]、[[14_RAG_Systems/RAG_Advanced_2026]] | [[14_RAG_Systems/GenAI_L15_RAG_and_Vector_Databases]] |
+| 15 | 检索增强生成（RAG）与向量数据库 | [[14_RAG_Systems/RAG_Systems]]、[[14_RAG_Systems/Advanced_RAG/RAG_Advanced_2026]] | [[14_RAG_Systems/GenAI_L15_RAG_and_Vector_Databases]] |
 | 16 | 开源模型与 Hugging Face | [[05_NLP_LLMs/Global_LLM_Ecosystem/README]]、[[90_Learn/courses/hugging_face/official_courses]] | [[05_NLP_LLMs/GenAI_L16_Open_Source_Models_and_Hugging_Face]] |
 
 ### AI 代理（L17）

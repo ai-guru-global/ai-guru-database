@@ -327,5 +327,5 @@ L_total = λ₁·L_next_token_text + λ₂·L_next_token_image + λ₃·L_cross_
 - [[_concepts/multimodal-models]]
 - [[_concepts/transformer-architecture]]
 - [[05_NLP_LLMs/LLM_Architectures/LLM_Architectures]]
-- [[20_Papers/Attention_Is_All_You_Need_Deep_Dive]]
+- [[20_Papers/Architecture/Attention_Is_All_You_Need_Deep_Dive]]
 - [[_synthesis/multimodal-rag|多模态 × RAG]] — 多模态内容与 RAG 系统的融合

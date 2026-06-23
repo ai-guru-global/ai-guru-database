@@ -24,7 +24,8 @@ Web/.eval-history
 .idea
 .DS_Store
 
-# 同步工具重复文件防护（iCloud/编辑器产生的 "* 2.ext" 副本）
+# 同步工具重复文件防护（iCloud/编辑器产生的副本）
+# 覆盖 "* 2.md" / "file 2" / "pre-commit 3" / "*conflicted copy*" / "*.copy" 等
 * 2.md
 * 2.json
 * 2.txt
@@ -32,6 +33,9 @@ Web/.eval-history
 * 2.svg
 * 2.html
 * 2.xml
+* [0-9]
+* [0-9].*
+*.copy
 *.copy.md
 *conflicted copy*
 *.suo

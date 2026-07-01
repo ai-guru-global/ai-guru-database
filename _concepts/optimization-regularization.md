@@ -142,4 +142,4 @@ FP16 加速计算 + FP32 保证精度。损失缩放避免 FP16 下溢，主权�
 - Goyal et al. (2017) 大 batch 训练技巧
 ## Related
 
-- [[20_Papers/Vision/ResNet_Deep_Dive.md]] — ResNet 深度解读
+- [[20_Papers_and_Research/Vision/ResNet_Deep_Dive.md]] — ResNet 深度解读

@@ -4,9 +4,14 @@ category: 21-interviews-ai-data-analyst
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "**数据分析与洞察**: 指标体系、用户行为与业务分析。"
 created: 2026-05-31
-updated: 2026-05-31
----
+updated: 2026-06-04
+tier: supporting
+aliases:
+  - "Interview Preparing"
+  - "interview preparing"
+  - interview_preparing
 
+---
 # AI Data Analyst 面试准备
 
 ## 核心职责
@@ -33,13 +38,12 @@ updated: 2026-05-31
 - **方法论清晰**: 分析框架与推理链路。
 
 ---
-*Last updated: 2026-02-26*
+*Last updated: 2026-06-04*
 
 ## Related
 
-- [[21_Interviews/AI_Data_Analyst/company_level_question_bank]] — AI Data Analyst 按公司/级别区分的题库 (共享: career, experience, interviews, practitioners)
-- [[21_Interviews/AI_Data_Analyst/interview_answers]] — AI Data Analyst 面试题实例答案 (共享: career, experience, interviews, practitioners)
-- [[21_Interviews/AI_Data_Analyst/question_bank]] — AI Data Analyst 题库 (共享: career, experience, interviews, practitioners)
-- [[21_Interviews/AI_Evaluation_Engineer/company_level_question_bank]] — AI Evaluation Engineer 按公司/级别区分的题库 (共享: career, experience, interviews, practitioners)
-- [[21_Interviews/README_for_dummy.md|README_for_dummy]]
-- [[21_Interviews/AI_Policy_Specialist/interview_preparing.md|interview_preparing]]
+- [[21_Interviews/AI_Data_Analyst/company_level_question_bank|AI Data Analyst 按公司/级别区分的题库]]
+- [[21_Interviews/AI_Data_Analyst/interview_answers|AI Data Analyst 面试题实例答案]]
+- [[21_Interviews/AI_Data_Analyst/question_bank|AI Data Analyst 题库]]
+- [[21_Interviews/README|AI 面试准备 (Interviews)]]
+- [[21_Interviews/jobs|AI 相关岗位与工种清单]]

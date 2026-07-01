@@ -5,8 +5,9 @@ tags: ["self-supervised-learning", "contrastive-learning", "masked-modeling"]
 summary: "自监督学习从未标注数据中构造监督信号，是现代 AI 预训练的核心范式。"
 created: 2026-06-04
 updated: 2026-06-04
----
+tier: supporting
 
+---
 # 自监督学习 (Self-Supervised Learning)
 
 > **一句话理解**: 不需要人工标注，让数据自己「教」模型——通过构造预测任务（遮住一部分预测另一部分），从海量无标注数据中学习通用表示。

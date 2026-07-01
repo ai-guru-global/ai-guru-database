@@ -18,8 +18,13 @@ tags:
 created: 2026-06-12
 category: 15-agent-production-agent-harness
 summary: ""
----
+tier: peripheral
+aliases:
+  - "The Anatomy Of An Agent Harness"
+  - "The Anatomy of an Agent Harness"
+  - The_Anatomy_of_an_Agent_Harness
 
+---
 ## TLDR
 
 Agent = Model + Harness. Harness engineering is how we build systems around models to turn them into work engines. The model contains the intelligence and the harness makes that intelligence useful.

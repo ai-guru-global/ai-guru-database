@@ -8,8 +8,13 @@ updated: "2026-06-12"
 source_url: "https://raw.githubusercontent.com/microsoft/generative-ai-for-beginners/main/translations/zh-CN/00-course-setup/README.md"
 course: "Microsoft Generative AI for Beginners"
 lesson_number: 0
----
+tier: supporting
+aliases:
+  - "Genai L00 Course Setup"
+  - "GenAI L00 Course Setup"
+  - GenAI_L00_Course_Setup
 
+---
 ## 学习目标
 
 完成本课后，你将能够：

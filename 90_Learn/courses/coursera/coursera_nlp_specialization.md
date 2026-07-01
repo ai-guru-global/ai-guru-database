@@ -8,8 +8,13 @@ sources:
 created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
----
+tier: peripheral
+aliases:
+  - "Coursera Nlp Specialization"
+  - "coursera nlp specialization"
+  - coursera_nlp_specialization
 
+---
 # NLP 专项课程 (Coursera)
 
 > **一句话理解**: Coursera NLP 专项课程(DeepLearning.AI),覆盖情感分析、机器翻译、注意力机制、Transformer 等 NLP 核心技术。
@@ -36,5 +41,5 @@ lifecycle: reviewed
 - 想系统学习 NLP 的工程师
 - 有 Python/ML 基础想进入 NLP 领域的开发者
 
-> **关联**: -> [[05_NLP_LLMs|NLP/LLM]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[05_NLP_LLMs/README|NLP/LLM]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
 

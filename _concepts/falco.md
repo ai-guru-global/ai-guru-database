@@ -23,8 +23,10 @@ lifecycle: stable
 tier: core
 created: 2026-06-16
 updated: 2026-06-16
----
+aliases:
+  - Falco
 
+---
 # Falco
 
 > 容器运行时的「安全摄像头」——通过系统调用发现异常行为。

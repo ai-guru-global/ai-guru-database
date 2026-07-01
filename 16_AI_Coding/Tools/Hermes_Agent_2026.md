@@ -5,8 +5,12 @@ tags: ["ai-coding", "code-generation", "cursor", "github-copilot", "ai-agents"]
 summary: "> **一句话理解**: Hermes Agent是Nous Research推出的开源、多平台、多模型AI代理——它不只是一个CLI编码工具，而是一个跨终端、消息平台、浏览器、语音的全能型自主助手。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Hermes Agent 2026"
+  - Hermes_Agent_2026
 
+---
 # Hermes Agent 2026 年专业指南
 
 > **一句话理解**: Hermes Agent 是 Nous Research 推出的开源、多平台、多模型 AI 代理——它不只是一个 CLI 编码工具，而是一个跨终端、消息平台、浏览器、语音的全能型自主助手。

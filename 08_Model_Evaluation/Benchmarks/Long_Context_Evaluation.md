@@ -5,8 +5,12 @@ tags: [evaluation, long-context, needle-in-haystack, ruler, longbench, needle-te
 summary: 系统梳理长上下文理解评测方法，从 Needle-in-a-Haystack 到 RULER、LongBench 和 InfiniteBench，解析不同评测维度的设计原理和工程实践。
 date: 2026-06-01
 created: 2026-06-12
----
+tier: peripheral
+aliases:
+  - "Long Context Evaluation"
+  - Long_Context_Evaluation
 
+---
 # 长上下文评测深度解析
 
 ## 一句话理解
@@ -414,8 +418,8 @@ Layer 4 (归档记忆): 100K+ tokens，只保留关键事件和实体
 
 ## Related
 
-- [[08_Model_Evaluation/Multimodal_Evaluation_Benchmarks]]
+- [[08_Model_Evaluation/Benchmarks/Multimodal_Evaluation_Benchmarks]]
 - [[08_Model_Evaluation/Model_Evaluation]]
-- [[05_NLP_LLMs/Long_Context_Models_2026]]
+- [[05_NLP_LLMs/LLM_Architectures/Long_Context_Models_2026]]
 - [[_concepts/transformer-architecture]]
 - [[05_NLP_LLMs/LLM_Architectures/LLM_Architectures]]

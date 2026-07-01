@@ -16,8 +16,12 @@ updated: 2026-06-12
 lifecycle: draft
 tier: supporting
 base_confidence: 0.82
----
+aliases:
+  - "Hello Agents"
+  - "hello agents"
+  - hello_agents
 
+---
 # Hello-Agents (Datawhale) 课程映射：从零开始构建智能体
 
 > **一句话理解**: [Hello-Agents](https://github.com/datawhalechina/hello-agents) 是 Datawhale 出品的开源中文 AI Agent 系统教程，强调“AI Native Agent”而非流程驱动型低代码 Agent。全书 16 章正课 + 13 个 Extra-Chapter，从 Agent 基础到自研 HelloAgents 框架，再到记忆、RAG、协议、Agentic RL、评估与综合项目。本页将课程完整课表映射到 `ai-guru-database` 的对应章节。
@@ -79,7 +83,7 @@ base_confidence: 0.82
 | 09 | 上下文工程 | Prompt Engineering vs Context Engineering、上下文腐蚀、JIT 上下文、GSSC 流水线、压缩整合、结构化笔记、子代理架构 | [[05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering]]、[[15_Agent_Production/Agent_Workflow/Workflow-in-nutshell]] | [[05_NLP_LLMs/Prompt_Engineering/Hello_Agents_L09_Context_Engineering]] |
 | 10 | 智能体通信协议 | MCP、A2A、ANP、FastMCP、a2a-sdk、服务发现、去中心化网络 | [[15_Agent_Production/Agent_Protocols/A2A_Protocol_Deep_Dive]]、[[_references/awesome-mcp-servers]] | [[15_Agent_Production/Hello_Agents_L10_Agent_Protocols]] |
 | 11 | Agentic-RL | 预训练、SFT、奖励建模、PPO、RLHF/RLAIF、Agentic RL、MDP、GRPO、推理与工具使用训练 | [[07_Model_Training/Alignment/GRPO_and_New_Alignment_Methods]]、[[07_Model_Training/Alignment/TRL_RLHF_DPO_Guide]]、[[06_Reinforcement_Learning/RL_Fundamentals]] | [[07_Model_Training/Hello_Agents_L11_Agentic_RL]] |
-| 12 | 智能体性能评估 | BFCL、GAIA、ToolBench、API-Bank、AgentBench、WebArena、LLM Judge、准精确匹配、Win Rate | [[08_Model_Evaluation/Agentic_Benchmark_Guide]]、[[08_Model_Evaluation/LLM_as_Judge_Guide]]、[[08_Model_Evaluation/LLM_Benchmark_Suite_2026]] | [[08_Model_Evaluation/Agentic_Benchmark_Guide]] |
+| 12 | 智能体性能评估 | BFCL、GAIA、ToolBench、API-Bank、AgentBench、WebArena、LLM Judge、准精确匹配、Win Rate | [[08_Model_Evaluation/Benchmarks/Agentic_Benchmark_Guide]]、[[08_Model_Evaluation/Evaluation_Tools/LLM_as_Judge_Guide]]、[[08_Model_Evaluation/Benchmarks/LLM_Benchmark_Suite_2026]] | [[08_Model_Evaluation/Benchmarks/Agentic_Benchmark_Guide]] |
 
 ### 第四部分：综合案例进阶
 

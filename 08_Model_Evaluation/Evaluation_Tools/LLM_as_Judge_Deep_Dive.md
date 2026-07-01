@@ -5,8 +5,13 @@ tags: ["llm-as-judge", "evaluation", "gpt-4", "claude", "pairwise", "rubric"]
 summary: "> 系统讲解 LLM-as-Judge 评估范式：单点评分、成对比较、Rubric 评估三大模式，评委选择策略，偏差缓解技术，以及生产级评估流水线设计。"
 created: 2026-06-03
 updated: 2026-06-03
----
+tier: supporting
+aliases:
+  - "Llm As Judge Deep Dive"
+  - "LLM as Judge Deep Dive"
+  - LLM_as_Judge_Deep_Dive
 
+---
 # LLM-as-Judge 深度解析
 
 > **一句话理解**: 用最强的 LLM 当"考官"，用结构化评分标准给其他模型的输出打分——比人工评估便宜 100 倍，比 BLEU/ROUGE 准 3 倍，是当前模型评估的最佳折中方案。
@@ -439,7 +444,7 @@ evaluation:
 
 - [[08_Model_Evaluation/Model_Evaluation|模型评估]] — 评估方法论全景
 - [[08_Model_Evaluation/Evaluation_Automation_2026|评估自动化]] — 自动化评估流水线
-- [[08_Model_Evaluation/Multimodal_Evaluation_Benchmarks|多模态评测]] — 多模态模型评估
+- [[08_Model_Evaluation/Benchmarks/Multimodal_Evaluation_Benchmarks|多模态评测]] — 多模态模型评估
 - [[_synthesis/safety-evaluation-red-teaming|安全评测 × 红队测试]] — 安全评估的综合分析
 
 - [[_synthesis/benchmark-evaluation|评测基准 × 评测方法论：从分数到可信评估]]

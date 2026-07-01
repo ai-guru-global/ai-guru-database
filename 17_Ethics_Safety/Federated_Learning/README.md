@@ -5,8 +5,9 @@ tags: ["federated-learning", "privacy", "distributed-training", "FedAvg"]
 summary: "联邦学习让多个参与方在不共享原始数据的前提下协作训练模型，是隐私保护 AI 的核心技术。"
 created: 2026-06-04
 updated: 2026-06-04
----
+tier: supporting
 
+---
 # 联邦学习 (Federated Learning)
 
 > **一句话理解**: 数据不动模型动——多个参与方在本地训练模型，只上传模型更新（而非原始数据），实现隐私保护下的协作学习。

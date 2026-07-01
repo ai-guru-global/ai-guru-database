@@ -4,8 +4,12 @@ category: -synthesis
 tags: [synthesis, ai-applications, industry, finance, healthcare, manufacturing]
 summary: AI 技术从实验室走向产业落地的共性模式、垂直行业差异和变革阻力分析。
 created: 2026-06-12
----
+tier: core
+aliases:
+  - "Ai Industry Applications"
+  - "ai industry applications"
 
+---
 # AI 行业应用与产业变革
 
 ## The Connection
@@ -51,5 +55,5 @@ AI 技术本身是中性的，但其产业价值只在特定场景中释放。�
 
 - [[18_AI_Applications_Industry/README]]
 - [[_concepts/ai-technology-landscape]]
-- [[12_Architecture_Infrastructure/AI_Infrastructure_2026]]
+- [[12_Architecture_Infrastructure/Architecture_Overview/AI_Infrastructure_2026]]
 - [[17_Ethics_Safety/AI_Governance_Compliance_2026]]

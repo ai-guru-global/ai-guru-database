@@ -5,8 +5,11 @@ tags: ["talks", "speeches", "insights", "leaders"]
 summary: "1. **“Accelerated computing and generative AI mark a new industrial revolution.” / “加速计算与生成式 AI 代表新的工业革命。”**"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - Sayings
 
+---
 # Jensen Huang 关于 AI 的观点 (Jensen Huang on AI)
 
 1. **“Accelerated computing and generative AI mark a new industrial revolution.” / “加速计算与生成式 AI 代表新的工业革命。”** 

@@ -24,8 +24,11 @@ lifecycle: stable
 tier: core
 created: 2026-06-16
 updated: 2026-06-16
----
+aliases:
+  - "Cot React Reasoning Prompt"
+  - "cot react reasoning prompt"
 
+---
 # CoT / ReAct / ToT — 推理时 Prompt 技巧
 
 > **一句话理解**：CoT 让模型"动笔算",ReAct 让模型"边想边用工具",ToT 让模型"试错回溯"——三个档位的"思考技巧",不动参数就能解锁推理能力。
@@ -236,3 +239,4 @@ CoT 是单路径推理,ToT 让模型**同时探索多条推理路径**,用评估
 - [[_concepts/rag-systems]] — RAG(ReAct 决定何时检索)
 - [[05_NLP_LLMs/Prompt_Engineering]] — Prompt 详解
 - [[05_NLP_LLMs/Reasoning_Models]] — Reasoning Models 详解
+- [[_concepts/reflexion]] — 自我反思

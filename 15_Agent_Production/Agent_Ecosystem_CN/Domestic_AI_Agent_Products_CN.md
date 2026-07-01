@@ -5,8 +5,13 @@ tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> **一句话理解**: 从通义千问到 Kimi，从文心一言到豆包，国内 AI Agent 产品正在快速发展——它们在中文理解、多模态、企业应用等维度各有特色，形成了一个完整的 AI 生态。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Domestic Ai Agent Products Cn"
+  - "Domestic AI Agent Products CN"
+  - Domestic_AI_Agent_Products_CN
 
+---
 # 国内顶级 AI Agent 产品
 
 > **一句话理解**: 从通义千问到 Kimi，从文心一言到豆包，国内 AI Agent 产品正在快速发展——它们在中文理解、多模态、企业应用等维度各有特色，形成了一个完整的 AI 生态。

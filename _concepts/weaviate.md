@@ -25,8 +25,10 @@ lifecycle: stable
 tier: core
 created: 2026-06-16
 updated: 2026-06-16
----
+aliases:
+  - Weaviate
 
+---
 # Weaviate
 
 > 内置 AI 能力的「AI 原生向量数据库」——不只是存向量，还能自动做向量化。
@@ -92,7 +94,7 @@ updated: 2026-06-16
 
 - [[14_RAG_Systems/Vector_Databases/Weaviate_Deep_Dive]] — Weaviate 深度解析
 - [[_concepts/vector-database]] — 向量数据库
-- [[_concepts/rag]] — RAG
+- [[_concepts/rag-patterns]] — RAG
 - [[_concepts/embedding]] — Embedding
 - [[_concepts/milvus]] — Milvus
 - [[_concepts/qdrant]] — Qdrant

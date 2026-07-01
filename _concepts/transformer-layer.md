@@ -14,8 +14,11 @@ lifecycle: draft
 tier: core
 created: 2026-06-15T00:00:00Z
 updated: 2026-06-15T00:00:00Z
----
+aliases:
+  - "Transformer Layer"
+  - "transformer layer"
 
+---
 # Transformer Layer（层）大白话
 
 > 一句话：**Layer 就是大模型里的一道“加工工序”。模型把输入反复过很多道工序，每道工序都让理解更深一层。**
@@ -117,6 +120,7 @@ FFN 就像一个全连接神经网络，把 Attention 出来的结果再做一�
 ## Related
 
 - [[_concepts/transformer-architecture]] — Transformer 架构总览
+- [[_concepts/transformer-architecture-plain]] — Transformer 大白话解释
 - [[_concepts/kv-cache]] — KV Cache 技术深潜
 - [[_concepts/kv-cache-plain]] — KV Cache 大白话解释
 - [[_concepts/attention-variants]] — Attention 的各种变体

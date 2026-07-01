@@ -5,8 +5,12 @@ tags: [transformer-alternative, rwkv, retnet, mamba, state-space-model, linear-a
 summary: 深度解析 RWKV、RetNet、Mamba 等 Transformer 替代架构的设计原理、效率优势和适用场景，以及线性注意力的技术演进脉络。
 date: 2026-06-01
 created: 2026-06-12
----
+tier: peripheral
+aliases:
+  - "Transformer Alternatives"
+  - Transformer_Alternatives
 
+---
 # Transformer 替代架构深度解析
 
 ## 一句话理解
@@ -497,5 +501,5 @@ Mamba/SSM 提供了"短期记忆"的技术基础，但如何与 Transformer 的"
 - [[_concepts/transformer-architecture]]
 - [[05_NLP_LLMs/LLM_Architectures/LLM_Architectures]]
 - [[03_Deep_Learning/State_Space_Models_2026]]
-- [[05_NLP_LLMs/Long_Context_Models_2026]]
+- [[05_NLP_LLMs/LLM_Architectures/Long_Context_Models_2026]]
 - [[03_Deep_Learning/Neural_Network_Core/Neural_Network_Core]]

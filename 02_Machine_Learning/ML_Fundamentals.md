@@ -5,8 +5,13 @@ tags: ["machine-learning", "supervised", "unsupervised", "bias-variance", "cross
 summary: "> **一句话理解**: 机器学习的核心是从数据中学习规律并泛化到新数据——理解监督/无监督范式、偏差-方差权衡、交叉验证和模型选择，就掌握了 ML 的 80%。"
 created: 2026-06-12
 updated: 2026-06-12
----
+tier: supporting
+aliases:
+  - "Ml Fundamentals"
+  - "ML Fundamentals"
+  - ML_Fundamentals
 
+---
 # 机器学习基础 (Machine Learning Fundamentals)
 
 > **一句话理解**: 机器学习的核心是从数据中学习规律并泛化到新数据——理解监督/无监督范式、偏差-方差权衡、交叉验证和模型选择，就掌握了 ML 的 80%。

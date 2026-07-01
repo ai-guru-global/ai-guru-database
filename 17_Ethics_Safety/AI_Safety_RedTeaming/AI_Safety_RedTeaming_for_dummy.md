@@ -5,8 +5,13 @@ tags: ["ai-ethics", "safety", "alignment", "red-teaming"]
 summary: '> **一句话秒懂**: 就像雇佣白帽黑客测试网站漏洞一样,红队测试是"好人扮演坏人",在真正的攻击者出手前找出 AI 的安全弱点!'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Ai Safety Redteaming For Dummy"
+  - "AI Safety RedTeaming for dummy"
+  - AI_Safety_RedTeaming_for_dummy
 
+---
 # AI 安全与红队测试 - 小白版
 
 > **一句话秒懂**: 就像雇佣白帽黑客测试网站漏洞一样,红队测试是"好人扮演坏人",在真正的攻击者出手前找出 AI 的安全弱点!

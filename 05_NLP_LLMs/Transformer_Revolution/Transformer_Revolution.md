@@ -5,8 +5,12 @@ tags: ["nlp", "llm", "transformer", "gpt", "bert"]
 summary: '> **一句话理解**: Transformer 就像全班同学互相讨论问题——每个人都能关注到其他所有人的发言，而不是只听前后左右的同学（传统 RNN 的局限），这种"全局视野"让理解更深刻。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Transformer Revolution"
+  - Transformer_Revolution
 
+---
 # Transformer 革命 (Transformer Revolution)
 
 > **一句话理解**: Transformer 就像全班同学互相讨论问题——每个人都能关注到其他所有人的发言，而不是只听前后左右的同学（传统 RNN 的局限），这种"全局视野"让理解更深刻。

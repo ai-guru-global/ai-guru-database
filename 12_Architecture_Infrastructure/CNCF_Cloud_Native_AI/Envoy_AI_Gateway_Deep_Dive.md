@@ -5,8 +5,13 @@ tags: ["cncf", "envoy", "ai-gateway", "kubernetes", "llm", "gateway-api"]
 summary: "> **一句话理解**: Envoy AI Gateway 是架在 Envoy Gateway 之上的 LLM 扩展——用 Kubernetes Gateway API + AIGatewayRoute CRD，把企业级 L7 能力(限流/鉴权/可观测/mTLS)和大模型路由(多 provider/失败转移/Token 限流/模型别名)合二为一。"
 created: "2026-06-16"
 updated: "2026-06-16"
----
+tier: supporting
+aliases:
+  - "Envoy Ai Gateway Deep Dive"
+  - "Envoy AI Gateway Deep Dive"
+  - Envoy_AI_Gateway_Deep_Dive
 
+---
 # Envoy AI Gateway: 基于 Envoy 的 GenAI 统一入口
 
 > **一句话理解**: Envoy AI Gateway 是架在 Envoy Gateway 之上的 LLM 扩展——用 Kubernetes Gateway API + AIGatewayRoute CRD，把企业级 L7 能力(限流/鉴权/可观测/mTLS)和大模型路由(多 provider/失败转移/Token 限流/模型别名)合二为一。

@@ -5,8 +5,12 @@ tags: [multimodal, native-multimodal, architecture, vision-language, gpt-4v, gem
 summary: 从拼接式多模态到原生多模态的架构演进，深度解析 GPT-4V、Gemini、Flamingo 等主流架构的模态融合机制与设计哲学。
 date: 2026-06-01
 created: 2026-06-12
----
+tier: peripheral
+aliases:
+  - "Native Multimodal Architectures"
+  - Native_Multimodal_Architectures
 
+---
 # 原生多模态架构深度解析
 
 ## 一句话理解
@@ -327,5 +331,5 @@ L_total = λ₁·L_next_token_text + λ₂·L_next_token_image + λ₃·L_cross_
 - [[_concepts/multimodal-models]]
 - [[_concepts/transformer-architecture]]
 - [[05_NLP_LLMs/LLM_Architectures/LLM_Architectures]]
-- [[20_Papers/Architecture/Attention_Is_All_You_Need_Deep_Dive]]
+- [[20_Papers_and_Research/Architecture/Attention_Is_All_You_Need_Deep_Dive]]
 - [[_synthesis/multimodal-rag|多模态 × RAG]] — 多模态内容与 RAG 系统的融合

@@ -5,8 +5,13 @@ tags: ["computer-vision", "cnn", "image-processing"]
 summary: '> **一句话秒懂**: 多模态视觉就是让AI同时拥有"眼睛"和"大脑"——既能看图片,又能读文字,还能把两者联系起来理解!'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Multimodal Vision For Dummy"
+  - "Multimodal Vision for dummy"
+  - Multimodal_Vision_for_dummy
 
+---
 # 多模态视觉 - 小白版 🔗
 
 > **一句话秒懂**: 多模态视觉就是让 AI 同时拥有"眼睛"和"大脑"——既能看图片,又能读文字,还能把两者联系起来理解!

@@ -5,8 +5,13 @@ tags: ["ai", "glossary", "terminology", "reference"]
 summary: "## A"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Ai Glossary"
+  - "AI Glossary"
+  - AI_Glossary
 
+---
 # AI 术语表与概念词典
 
 > 本术语表收录人工智能领域核心概念，按字母顺序排列，提供简明定义和深度解释，适合通识课教学使用。

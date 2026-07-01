@@ -5,8 +5,12 @@ tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> 🎯 **目标**：理解如何将 AI 组件编排成可靠运行的生产流水线和自动化工作流。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Workflow In Nutshell"
+  - "Workflow in nutshell"
 
+---
 # AI 工作流速成指南
 
 > 🎯 **目标**：理解如何将 AI 组件编排成可靠运行的生产流水线和自动化工作流。

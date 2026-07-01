@@ -5,8 +5,12 @@ tags: ["computer-vision", "cnn", "image-processing"]
 summary: '> **一句话理解**: 计算机视觉让机器拥有"眼睛"——从照片中识别物体、理解场景、甚至生成以假乱真的图像。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Cv In Nutshell"
+  - "CV in nutshell"
 
+---
 # 计算机视觉速成指南 (Computer Vision in a Nutshell)
 
 > **一句话理解**: 计算机视觉让机器拥有"眼睛"——从照片中识别物体、理解场景、甚至生成以假乱真的图像。

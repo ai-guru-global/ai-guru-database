@@ -9,8 +9,11 @@ created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
 tier: supporting
----
+aliases:
+  - "Anthropic Courses"
+  - "anthropic courses"
 
+---
 # Anthropic 官方教程
 
 > **一句话理解**: Anthropic 官方提供的 Claude API 教程,覆盖提示工程、工具使用、RAG 等主题。

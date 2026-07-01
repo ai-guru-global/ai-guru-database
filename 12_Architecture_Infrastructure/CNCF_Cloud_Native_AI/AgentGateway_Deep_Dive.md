@@ -5,8 +5,13 @@ tags: ["cncf", "agentgateway", "mcp", "agent", "gateway", "rust", "llm"]
 summary: "> **一句话理解**: AgentGateway 是专门给 AI Agent 和 MCP 工具服务器做的反向代理网关(Rust 实现)——把 agent 调用众多工具时的鉴权/路由/限流/沙箱/可观测/协议转换(MCP↔REST↔A2A)集中起来,补齐传统 API 网关不懂 Agent 语义的短板。"
 created: "2026-06-16"
 updated: "2026-06-16"
----
+tier: supporting
+aliases:
+  - "Agentgateway Deep Dive"
+  - "AgentGateway Deep Dive"
+  - AgentGateway_Deep_Dive
 
+---
 # AgentGateway: AI Agent 与 MCP 服务器的代理网关
 
 > **一句话理解**: AgentGateway 是专门给 AI Agent 和 MCP 工具服务器做的反向代理网关(Rust 实现)——把 agent 调用众多工具时的鉴权/路由/限流/沙箱/可观测/协议转换(MCP↔REST↔A2A)集中起来,补齐传统 API 网关不懂 Agent 语义的短板。

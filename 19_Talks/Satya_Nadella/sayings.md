@@ -5,8 +5,11 @@ tags: ["talks", "speeches", "insights", "leaders"]
 summary: "1. **“AI is the runtime for the new world.” / “AI 是新时代的运行时。”**"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - Sayings
 
+---
 # Satya Nadella 关于 AI 的观点 (Satya Nadella on AI)
 
 1. **“AI is the runtime for the new world.” / “AI 是新时代的运行时。”** 

@@ -22,7 +22,7 @@ relationships:
   type: enables
 sources:
 - 01_Fundamentals/AI_Hardware/NVIDIA_AMD_GPU_Deep_Dive.md
-- 12_Architecture_Infrastructure/CDI_Deep_Dive.md
+- 12_Architecture_Infrastructure/Hardware_Compute/CDI_Deep_Dive.md
 - 12_Architecture_Infrastructure/CDI_for_dummy.md
 summary: NVIDIA GPU Operator 是管理 Kubernetes 上 NVIDIA GPU 全栈软件的开源 Operator——以 DaemonSet 形式自动化部署驱动、nvidia-container-toolkit(生成 CDI spec)、device-plugin、DCGM 监控、MIG 管理器等组件，把 GPU 节点的 Day-0 安装与 Day-2 运维变成声明式配置。它是 CDI/DRA 在 NVIDIA 生态里的「实操入口」。
 provenance:
@@ -35,8 +35,11 @@ lifecycle_changed: 2026-06-15
 tier: supporting
 created: 2026-06-15 00:00:00+00:00
 updated: 2026-06-15 00:00:00+00:00
----
+aliases:
+  - "Gpu Operator"
+  - "gpu operator"
 
+---
 # NVIDIA GPU Operator
 
 ## 核心要点
@@ -115,7 +118,7 @@ GPU Operator (运维层)
 - [[_concepts/cdi|CDI 容器设备接口（Operator 生成其 spec）]]
 - [[_concepts/dra|DRA（Operator 可部署其驱动）]]
 - [[_concepts/gpu-virtualization|GPU 虚拟化（MIG 经 Operator 管理）]]
-- [[12_Architecture_Infrastructure/CDI_Deep_Dive|CDI 深度解析]]
-- [[12_Architecture_Infrastructure/DRA_Deep_Dive|DRA 深度解析]]
+- [[12_Architecture_Infrastructure/Hardware_Compute/CDI_Deep_Dive|CDI 深度解析]]
+- [[12_Architecture_Infrastructure/Hardware_Compute/DRA_Deep_Dive|DRA 深度解析]]
 - [[01_Fundamentals/AI_Hardware/NVIDIA_AMD_GPU_Deep_Dive|NVIDIA/AMD GPU 深度解析]]
 - [[_concepts/llm-infrastructure|LLM 基础设施]]

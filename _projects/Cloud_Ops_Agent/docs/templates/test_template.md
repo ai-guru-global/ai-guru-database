@@ -5,6 +5,7 @@ tags: ["cloud-ops", "devops", "sre", "automation"]
 summary: "> 🎯 **目标**: 为测试人员提供基于 Agent Harness 的[组件/功能]全自动化评估体系，确保单篇文档作为唯一可信源。"
 created: 2026-05-31
 updated: 2026-05-31
+tier: supporting
 ---
 
 # [文档标题]

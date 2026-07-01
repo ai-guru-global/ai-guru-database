@@ -5,8 +5,12 @@ tags: ["nlp", "llm", "transformer", "gpt", "bert"]
 summary: '> **一句话理解**: 模型合并就像"炼金术"——把多个已经训练好的模型像调色一样混合在一起，不需要重新训练就能得到一个兼具多家之长的新模型。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: core
+aliases:
+  - "Model Merging 2026"
+  - Model_Merging_2026
 
+---
 # 模型合并技术 2026 (Model Merging)
 
 > **一句话理解**: 模型合并就像"炼金术"——把多个已经训练好的模型像调色一样混合在一起，不需要重新训练就能得到一个兼具多家之长的新模型。
@@ -293,7 +297,7 @@ flowchart TB
 
 ## 6. 与其他章节的关联
 
-- [Fine-tuning 策略](../../07_Model_Training/Fine_tuning_Strategies.md) — 模型合并 vs 参数高效微调
+- [Fine-tuning 策略](../../05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Strategies.md) — 模型合并 vs 参数高效微调
 - [LLaMA 模型](../../05_NLP_LLMs/LLM_Architectures/) — 最常用的合并基础模型
 - [模型评估](../../08_Model_Evaluation/) — 合并后如何评估模型质量
 - [开源项目概览](../../15_Agent_Production/AI_OpenSource_Projects_Overview.md) — 开源社区的热门合并模型

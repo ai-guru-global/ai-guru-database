@@ -4,7 +4,7 @@ category: -synthesis
 tags: [llm-infrastructure, ai-infrastructure, system-design, gpu, serving, architecture]
 sources:
   - "[[_concepts/llm-infrastructure]]"
-  - "[[12_Architecture_Infrastructure/AI_Infrastructure_2026]]"
+  - "[[12_Architecture_Infrastructure/Architecture_Overview/AI_Infrastructure_2026]]"
   - "[[12_Architecture_Infrastructure/AI_System_Architecture_2026]]"
   - "[[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]]"
 created: 2026-06-05
@@ -16,8 +16,12 @@ provenance:
   ambiguous: 0.1
 lifecycle: draft
 lifecycle_changed: 2026-06-05
----
+tier: core
+aliases:
+  - "Llm Infrastructure System Design"
+  - "llm infrastructure system design"
 
+---
 # LLM 基础设施 × 传统系统架构 — 从 Web 服务到 Token 工厂
 
 ## The Connection
@@ -64,9 +68,9 @@ LLM 基础设施不是从零发明的——它大量借鉴了传统 Web 服务�
 ## Related
 
 - [[_concepts/llm-infrastructure]] — LLM 基础设施概念
-- [[12_Architecture_Infrastructure/AI_Infrastructure_2026]] — AI 基础设施 2026
+- [[12_Architecture_Infrastructure/Architecture_Overview/AI_Infrastructure_2026]] — AI 基础设施 2026
 - [[12_Architecture_Infrastructure/AI_System_Architecture_2026]] — AI 系统架构
 - [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI 技术栈深度解读
 - [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive]] — vLLM 推理引擎
-- [[14_AI_Gateway/AI_Gateway_2026]] — AI Gateway 2026
+- [[12_Architecture_Infrastructure/AI_Gateway/AI_Gateway_2026]] — AI Gateway 2026
 - [[_synthesis/serving-deployment]] — 服务化 × 部署

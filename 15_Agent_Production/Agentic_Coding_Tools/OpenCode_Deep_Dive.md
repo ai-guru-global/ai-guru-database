@@ -5,8 +5,13 @@ tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> **一句话理解**: OpenCode 是一款基于多模型协作的自主执行式 AI 编程 Agent，能够直接操作文件系统、执行命令、浏览代码库，实现从任务描述到代码实现的全自动闭环。"
 created: "2026-05-31"
 updated: "2026-05-31"
----
+tier: supporting
+aliases:
+  - "Opencode Deep Dive"
+  - "OpenCode Deep Dive"
+  - OpenCode_Deep_Dive
 
+---
 # OpenCode: 自主执行式 AI 编程 Agent
 
 > **一句话理解**: OpenCode 是一款基于多模型协作的自主执行式 AI 编程 Agent，能够直接操作文件系统、执行命令、浏览代码库，实现从任务描述到代码实现的全自动闭环。

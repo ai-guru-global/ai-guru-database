@@ -5,8 +5,13 @@ tags: ["chinese-llm", "comparison", "benchmark", "moe", "multimodal", "open-sour
 summary: "中国 15 家大模型厂商的全面横向对比：技术架构、参数规模、Benchmark 性能、API 定价、开源策略、特色能力一览。(2026-06-17 更新 GLM-5.2: 1M 上下文 / IndexShare / Day 0 八家国产算力适配)"
 created: "2026-06-12"
 updated: "2026-06-17"
----
+tier: supporting
+aliases:
+  - "Chinese Llm Comparison Matrix"
+  - "Chinese LLM Comparison Matrix"
+  - Chinese_LLM_Comparison_Matrix
 
+---
 # 中国大模型全厂商对比矩阵 (Chinese LLM Comparison Matrix)
 
 > **一句话理解**: 一张表看懂中国大模型全貌——从 DeepSeek 到字节豆包，15 家厂商的技术架构、性能、价格、开源策略全面对比。

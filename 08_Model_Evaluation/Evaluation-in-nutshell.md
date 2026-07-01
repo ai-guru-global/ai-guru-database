@@ -5,8 +5,12 @@ tags: ["model-evaluation", "metrics", "ab-testing", "benchmark"]
 summary: '> **一句话理解**: 模型评估就像"给AI考试打分"——不仅要看总分，还要看各科目表现、答题稳定性，以及面对新题型时的真实水平。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Evaluation In Nutshell"
+  - "Evaluation in nutshell"
 
+---
 # 模型评估速成指南
 
 > **一句话理解**: 模型评估就像"给 AI 考试打分"——不仅要看总分，还要看各科目表现、答题稳定性，以及面对新题型时的真实水平。
@@ -493,9 +497,9 @@ flowchart TB
 
 - [模型训练速成指南](../07_Model_Training/Model-Training-in-nutshell.md) —— 如何训练模型
 - [RAG 速成指南](../14_RAG_Systems/RAG-in-nutshell.md) —— LLM 应用评估
-- [模型评估完整版](Model_Evaluation.md) —— 深入评估方法论
-- [模型评估 - 小白版](Model_Evaluation_for_dummy.md) —— 零基础入门
-- [自动化评估](Evaluation_Automation_2026.md) —— 2026 自动化评估趋势
+- [模型评估完整版](./Model_Evaluation.md) —— 深入评估方法论
+- [模型评估 - 小白版](./Model_Evaluation_for_dummy.md) —— 零基础入门
+- [自动化评估](./Evaluation_Automation_2026.md) —— 2026 自动化评估趋势
 
 ---
 

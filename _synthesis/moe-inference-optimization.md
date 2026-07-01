@@ -17,8 +17,12 @@ provenance:
 base_confidence: 0.78
 lifecycle: draft
 lifecycle_changed: 2026-06-01
----
+tier: core
+aliases:
+  - "Moe Inference Optimization"
+  - "moe inference optimization"
 
+---
 # MoE × 推理优化: 专家混合架构的推理加速挑战
 
 ## The Connection

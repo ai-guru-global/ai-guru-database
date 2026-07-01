@@ -8,8 +8,13 @@ sources:
 created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
----
+tier: supporting
+aliases:
+  - "Lightgbm Overview"
+  - "lightgbm overview"
+  - lightgbm_overview
 
+---
 # LightGBM 概览
 
 > **一句话理解**: 微软出品的高性能 GBDT 框架，训练速度快、内存占用低
@@ -33,5 +38,5 @@ LightGBM 是机器学习领域的重要工具/框架。
 | LightGBM | 速度快、内存低 | 大规模数据 |
 | CatBoost | 类别特征原生支持 | 高基数类别数据 |
 
-> **关联**: → [[02_Machine_Learning|机器学习]]
+> **关联**: → [[02_Machine_Learning/README|机器学习]]
 

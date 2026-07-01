@@ -8,8 +8,13 @@ updated: "2026-06-12"
 source_url: "https://raw.githubusercontent.com/microsoft/generative-ai-for-beginners/main/translations/zh-CN/08-building-search-applications/README.md"
 course: "Microsoft Generative AI for Beginners"
 lesson_number: 8
----
+tier: supporting
+aliases:
+  - "Genai L08 Building Search Applications"
+  - "GenAI L08 Building Search Applications"
+  - GenAI_L08_Building_Search_Applications
 
+---
 ## 学习目标
 
 完成本课后，你将能够：

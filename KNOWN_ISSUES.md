@@ -5,8 +5,13 @@ tags: ["overview"]
 summary: "> 本文档记录项目中的已知问题、限制、解决方案和进展状态。用于问题复现规避、知识沉淀和持续改进。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Known Issues"
+  - "KNOWN ISSUES"
+  - KNOWN_ISSUES
 
+---
 # AI Guru 知识库 - 已知问题追踪 (Known Issues)
 
 > 本文档记录项目中的已知问题、限制、解决方案和进展状态。用于问题复现规避、知识沉淀和持续改进。

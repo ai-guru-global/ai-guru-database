@@ -6,8 +6,12 @@ summary: "介绍如何开始使用 Microsoft AI For Beginners（微软 AI 入门
 source_url: "https://raw.githubusercontent.com/microsoft/AI-For-Beginners/main/lessons/0-course-setup/setup.md"
 created: "2026-06-12"
 updated: "2026-06-12"
----
+tier: supporting
+aliases:
+  - "L00 Course Setup"
+  - L00_Course_Setup
 
+---
 # L00 - 课程环境设置
 
 > **一句话理解**：本课不是讲 AI 算法，而是告诉你如何“进入”这门 12 周课程——学生如何利用微软资源、自学者如何 fork（复刻/分叉）仓库并运行 Jupyter Notebook（Jupyter 交互式笔记本）、教师如何备课，以及没有网络时怎样离线阅读全部材料。

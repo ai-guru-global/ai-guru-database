@@ -5,8 +5,13 @@ tags: ["colossal-ai", "distributed-training", "parallelism", "llm", "training", 
 summary: "> **一句话理解**: Colossal-AI 是潞晨科技开源的统一分布式 AI 系统，整合数据并行、张量并行、流水线并行、序列并行、ZeRO 和 Gemini 内存管理等技术，目标是降低大模型训练、微调和推理成本。"
 created: "2026-06-16"
 updated: "2026-06-16"
----
+tier: supporting
+aliases:
+  - "Colossal Ai Deep Dive"
+  - "Colossal AI Deep Dive"
+  - Colossal_AI_Deep_Dive
 
+---
 # Colossal-AI 深度解析：统一分布式 AI 训练与推理系统
 
 > **一句话理解**: Colossal-AI 是潞晨科技开源的统一分布式 AI 系统，整合数据并行、张量并行、流水线并行、序列并行、ZeRO 和 Gemini 内存管理等技术，目标是降低大模型训练、微调和推理成本。

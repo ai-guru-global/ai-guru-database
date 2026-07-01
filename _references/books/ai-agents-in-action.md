@@ -9,8 +9,11 @@ created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
 tier: supporting
----
+aliases:
+  - "Ai Agents In Action"
+  - "ai agents in action"
 
+---
 # AI Agents in Action
 
 > **一句话理解**: AI Agent 实战,从基础到高级.作者:Manning.

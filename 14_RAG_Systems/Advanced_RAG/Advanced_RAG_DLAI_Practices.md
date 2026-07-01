@@ -5,8 +5,13 @@ tags: ["rag", "deeplearning-ai", "llamaindex", "chroma", "advanced-rag", "retrie
 summary: "> **一句话理解**: 基础的“分块->向量化->余弦相似度检索”在面对真实复杂的业务文档时效果极差。本文不仅总结了 DLAI 课程中推崇的四大高阶 RAG 优化技巧，还提供了基于 LlamaIndex 的完整本地可运行代码。"
 created: "2026-06-12"
 updated: "2026-06-12"
----
+tier: supporting
+aliases:
+  - "Advanced Rag Dlai Practices"
+  - "Advanced RAG DLAI Practices"
+  - Advanced_RAG_DLAI_Practices
 
+---
 # 高阶 RAG 实战：来自 DeepLearning.AI 的四个落地技巧 (含完整代码)
 
 > **一句话理解**: 基础的“分块(Chunking) -> 向量化(Embedding) -> 余弦相似度检索(Cosine Similarity)”在面对真实复杂的业务长文档时经常会遇到“找不到”或“上下文割裂”的问题。本文总结了 DLAI 《Building and Evaluating Advanced RAG》等课程中推崇的四大高阶落地技巧，并提供了**不依赖任何外部网络搜寻、可直接在内部代理运行时复制执行的完整 LlamaIndex Python 代码。**

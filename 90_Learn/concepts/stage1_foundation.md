@@ -5,8 +5,13 @@ tags: ["learning", "education", "courses", "study-path"]
 summary: '> **"AI 的地基——不懂这些词，后面所有技术文档都是天书。"**'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Stage1 Foundation"
+  - "stage1 foundation"
+  - stage1_foundation
 
+---
 # Stage 1: 基础概念
 
 > **"AI 的地基——不懂这些词，后面所有技术文档都是天书。"**

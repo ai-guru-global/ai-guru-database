@@ -5,6 +5,7 @@ tags: ["cloud-ops", "devops", "sre", "automation"]
 summary: "> 📚 **Spring AI 基础**: 如果你还不熟悉 Spring AI 的核心概念，请先阅读 [Spring AI 深度解析](../01_Fundamentals/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md)。"
 created: 2026-05-31
 updated: 2026-05-31
+tier: supporting
 ---
 
 # Java Cloud SDK AI 集成指南

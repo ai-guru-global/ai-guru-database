@@ -109,7 +109,7 @@ updated: 2026-05-31
 #### 整改方案
 
 **1. 扩展长上下文技术专题**
-- 文件: `05_NLP_LLMs/Long_Context_Models_2026.md`
+- 文件: `05_NLP_LLMs/LLM_Architectures/Long_Context_Models_2026.md`
 - 扩展内容:
   - Ring Attention / Striped Attention
   - 上下文压缩技术 (H2O, StreamingLLM)
@@ -419,6 +419,6 @@ updated: 2026-05-31
 
 ## Related
 
-- [[92_Plan/Content_Evaluation_2026]] — AI Guru Database - 内容全面评估 2026 (共享: goals, model-evaluation, planning, roadmap, strategy)
-- [[92_Plan/Project_Structure_Evaluation_2026]] — AI Guru 知识库 — 全项目结构评估与改进建议 (共享: goals, model-evaluation, planning, roadmap, strategy)
-- [[92_Plan/Implementation_Plan_2026]] — AI Guru 知识库整改执行计划 (共享: goals, planning, roadmap, strategy)
+- [[_meta/plan/Content_Evaluation_2026]] — AI Guru Database - 内容全面评估 2026 (共享: goals, model-evaluation, planning, roadmap, strategy)
+- [[_meta/plan/Project_Structure_Evaluation_2026]] — AI Guru 知识库 — 全项目结构评估与改进建议 (共享: goals, model-evaluation, planning, roadmap, strategy)
+- [[_meta/plan/Implementation_Plan_2026]] — AI Guru 知识库整改执行计划 (共享: goals, planning, roadmap, strategy)

@@ -5,8 +5,13 @@ tags: ["reinforcement-learning", "agent", "mdp"]
 summary: "> **一句话秒懂**: 强化学习就像训练小狗做动作——做对了给零食奖励🦴,做错了不给,小狗通过反复尝试学会什么行为能获得最多零食!"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Rl Foundations For Dummy"
+  - "RL Foundations for dummy"
+  - RL_Foundations_for_dummy
 
+---
 # 强化学习基础 - 小白版 🎲
 
 > **一句话秒懂**: 强化学习就像训练小狗做动作——做对了给零食奖励🦴,做错了不给,小狗通过反复尝试学会什么行为能获得最多零食!

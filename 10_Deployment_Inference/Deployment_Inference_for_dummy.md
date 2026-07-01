@@ -5,8 +5,13 @@ tags: ["deployment", "inference", "serving", "vllm", "model-deployment"]
 summary: "> **一句话秒懂**: 就像把实验室的发明变成能在工厂量产的产品——不仅要好用,还要快、省钱、稳定!"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: core
+aliases:
+  - "Deployment Inference For Dummy"
+  - "Deployment Inference for dummy"
+  - Deployment_Inference_for_dummy
 
+---
 # 模型部署与推理加速 - 小白版
 
 > **一句话秒懂**: 就像把实验室的发明变成能在工厂量产的产品——不仅要好用,还要快、省钱、稳定!

@@ -6,8 +6,12 @@ summary: "从协作架构到角色分工、通信协议、社会模拟、博弈�
 created: 2026-06-16
 updated: 2026-06-16
 source: "_sources/yeasy/agentic_ai_guide/ (Ch5-7)"
----
+tier: supporting
+aliases:
+  - "Multi Agent Systems Guide"
+  - Multi_Agent_Systems_Guide
 
+---
 # 智能体 AI 权威指南 Part 2: 多智能体系统全解
 
 > Source: 智能体 AI 权威指南 (yeasy) Part 2, Ch5-7

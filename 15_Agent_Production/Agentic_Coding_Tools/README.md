@@ -5,8 +5,9 @@ tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> 从代码补全到完全自主执行，AI Agent 编程工具正在重塑软件开发的每个环节。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
 
+---
 # Agentic Coding 工具
 
 > 从代码补全到完全自主执行，AI Agent 编程工具正在重塑软件开发的每个环节。
@@ -58,3 +59,5 @@ Codeium             Claude Code
 - [[15_Agent_Production/Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
 - [[15_Agent_Production/Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)
 
+
+- [[15_Agent_Production/README|Agent 生产部署 (Agent Production)]]

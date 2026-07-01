@@ -5,8 +5,12 @@ tags: ["model-evaluation", "metrics", "ab-testing", "benchmark"]
 summary: '> **一句话理解**: 自动化评估就像给模型装上"自动驾驶仪"——每次代码或模型变更都自动跑一遍"考试"，确保新版本不会比旧版本差，让评估从手工作坊变成工业流水线。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Evaluation Automation 2026"
+  - Evaluation_Automation_2026
 
+---
 # 自动化模型评估 2026 (Evaluation Automation)
 
 > **一句话理解**: 自动化评估就像给模型装上"自动驾驶仪"——每次代码或模型变更都自动跑一遍"考试"，确保新版本不会比旧版本差，让评估从手工作坊变成工业流水线。
@@ -1350,7 +1354,7 @@ flowchart TD
 - [AI 测试框架](../09_Testing/README.md) — 测试框架与评估工具链
 - [MLOps 流水线](../11_MLOps_Pipeline/MLOps_Pipeline.md) — CI/CD 集成与模型生命周期
 - [AI Ops 监控](../13_AI_Ops/AI_Ops_2026.md) — 生产环境模型监控与自动告警
-- [在线评估](./Online_Evaluation.md) — 上线后的真实效果评估
+- [在线评估](./Evaluation_Tools/Online_Evaluation.md) — 上线后的真实效果评估
 
 ---
 

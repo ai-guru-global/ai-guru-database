@@ -5,8 +5,13 @@ tags: ["model-evaluation", "metrics", "ab-testing", "benchmark"]
 summary: '> **一句话秒懂**: AI 公平性评估就是给 AI 做"人品考核"——确保它对所有人都一视同仁，不会因为你的性别、肤色或年龄就区别对待。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Fairness Evaluation For Dummy"
+  - "Fairness Evaluation for dummy"
+  - Fairness_Evaluation_for_dummy
 
+---
 # 公平性评估 - 小白版
 
 > **一句话秒懂**: AI 公平性评估就是给 AI 做"人品考核"——确保它对所有人都一视同仁，不会因为你的性别、肤色或年龄就区别对待。

@@ -5,8 +5,13 @@ tags: ["nlp", "llm", "iflytek", "spark", "chinese-llm", "speech-ai", "education"
 summary: "> **一句话理解**: 科大讯飞以语音 AI 起家，星火大模型融合语音与文本双模态，在教育、医疗场景深耕，并与华为昇腾生态深度合作构建国产算力链路。"
 created: "2026-06-12"
 updated: "2026-06-12"
----
+tier: supporting
+aliases:
+  - "Iflytek Spark Deep Dive"
+  - "iFlytek Spark Deep Dive"
+  - iFlytek_Spark_Deep_Dive
 
+---
 # 讯飞星火 (Spark): 语音AI龙头的大语言模型之路
 
 > **一句话理解**: 科大讯飞以语音 AI 起家，星火大模型融合语音与文本双模态，在教育、医疗场景深耕，并与华为昇腾生态深度合作构建国产算力链路。

@@ -5,8 +5,13 @@ tags: ["nlp", "tokenization", "word-embedding", "text-classification", "sequence
 summary: '> **一句话理解**: NLP 是让机器"读懂"人类语言的学科——从分词、词嵌入到序列模型，每一步都在把非结构化的文本转化为机器可理解的数学表示。'
 created: 2026-06-12
 updated: 2026-06-12
----
+tier: supporting
+aliases:
+  - "Nlp Fundamentals"
+  - "NLP Fundamentals"
+  - NLP_Fundamentals
 
+---
 # NLP 基础 (NLP Fundamentals)
 
 > **一句话理解**: NLP 是让机器"读懂"人类语言的学科——从分词、词嵌入到序列模型，每一步都在把非结构化的文本转化为机器可理解的数学表示。

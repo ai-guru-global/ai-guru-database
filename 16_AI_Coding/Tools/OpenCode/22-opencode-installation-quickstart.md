@@ -7,7 +7,13 @@ tags:
 - configuration
 created: 2026-06-12
 category: 16-ai-coding-tools-opencode
-summary: ""
+tier: peripheral
+aliases:
+  - "Opencode Installation Quickstart"
+  - "opencode installation quickstart"
+
+updated: 2026-06-30
+summary: "安装部署与快速入门 — 专题文档"
 ---
 title: 安装部署与快速入门
 description: '# 安装部署与快速入门'

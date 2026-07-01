@@ -5,8 +5,13 @@ tags: ["model-evaluation", "metrics", "ab-testing", "benchmark"]
 summary: '> **一句话秒懂**: 模型评估就是给 AI "打分"——用各种指标判断 AI 学得好不好，就像考试一样，有选择题、填空题、应用题，AI 成绩好才能上岗！'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Readme For Dummy"
+  - "README for dummy"
+  - README_for_dummy
 
+---
 # 08 模型评估 — 小白版 📝
 
 > **一句话秒懂**: 模型评估就是给 AI "打分"——用各种指标判断 AI 学得好不好，就像考试一样，有选择题、填空题、应用题，AI 成绩好才能上岗！

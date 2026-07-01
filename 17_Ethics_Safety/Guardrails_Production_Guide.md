@@ -9,9 +9,12 @@ sources:
 created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
-tier: core
----
+tier: supporting
+aliases:
+  - "Guardrails Production Guide"
+  - Guardrails_Production_Guide
 
+---
 # AI 护栏 (Guardrails) 生产实践指南
 
 > **一句话理解**: 在生产环境中为 LLM 应用添加安全护栏:输入过滤、输出验证、主题限制、事实检查等技术方案与工具。
@@ -117,5 +120,5 @@ define flow
 5. **人工兜底**: 高风险场景必须有人工审核
 6. **测试红队**: 定期用红队测试验证护栏效果
 
-> **关联**: -> [[17_Ethics_Safety|伦理安全]] | [[13_AI_Ops/Guardrails_Deep_Dive|Guardrails 深度解读]] | [[09_Testing|测试]]
+> **关联**: -> [[17_Ethics_Safety/README|伦理安全]] | [[13_AI_Ops/Guardrails_Deep_Dive|Guardrails 深度解读]] | [[09_Testing/README|测试]]
 

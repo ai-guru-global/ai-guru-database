@@ -5,8 +5,13 @@ tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: '> **一句话理解**: AgentScope 是阿里巴巴开源的多智能体(Multi-Agent)开发平台，以"演员-舞台"为核心隐喻，提供丰富的环境交互能力和一键部署支持，让分布式多Agent应用的构建像编排剧本一样简单。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Agentscope Deep Dive"
+  - "AgentScope Deep Dive"
+  - AgentScope_Deep_Dive
 
+---
 # AgentScope: 阿里巴巴多智能体开发平台
 
 > **一句话理解**: AgentScope 是阿里巴巴开源的多智能体(Multi-Agent)开发平台，以"演员-舞台"为核心隐喻，提供丰富的环境交互能力和一键部署支持，让分布式多 Agent 应用的构建像编排剧本一样简单。

@@ -9,8 +9,11 @@ created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
 tier: supporting
----
+aliases:
+  - "Llm Engineers Handbook"
+  - "llm engineers handbook"
 
+---
 # LLM Engineer's Handbook
 
 > **一句话理解**: LLM 工程师手册,端到端 LLM 应用设计到部署.作者:Maxime Labonne.

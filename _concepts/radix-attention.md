@@ -21,8 +21,11 @@ lifecycle_changed: 2026-06-03
 tier: core
 created: 2026-06-03 00:00:00+00:00
 updated: 2026-06-03 00:00:00+00:00
----
+aliases:
+  - "Radix Attention"
+  - "radix attention"
 
+---
 # RadixAttention
 
 ## 核心要点

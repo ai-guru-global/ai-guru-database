@@ -5,8 +5,12 @@ tags: ["ai-coding", "code-generation", "cursor", "github-copilot"]
 summary: "> **一句话**: 百度 Comate 是基于文心大模型的 AI 编程助手，个人专业版提供月度额度，适合多项目并行开发。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Comate Guide"
+  - Comate_Guide
 
+---
 # Comate 使用指南
 
 > **一句话**: 百度 Comate 是基于文心大模型的 AI 编程助手，个人专业版提供月度额度，适合多项目并行开发。

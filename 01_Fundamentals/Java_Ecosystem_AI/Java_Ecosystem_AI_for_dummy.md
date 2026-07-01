@@ -5,8 +5,13 @@ tags: ["fundamentals", "math", "algorithms", "basics", "java"]
 summary: '> **一句话理解**: Java AI 生态就像给企业软件装上了"智能大脑"——让原本用 Java 写的银行系统、电商网站也能跑 AI，而不需要推倒重来。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Java Ecosystem Ai For Dummy"
+  - "Java Ecosystem AI for dummy"
+  - Java_Ecosystem_AI_for_dummy
 
+---
 # Java AI 生态小白指南 (Java Ecosystem AI for Dummy)
 
 > **一句话理解**: Java AI 生态就像给企业软件装上了"智能大脑"——让原本用 Java 写的银行系统、电商网站也能跑 AI，而不需要推倒重来。
@@ -214,7 +219,7 @@ flowchart TB
 
 - [Spring AI 深度解析](./Spring_AI_Deep_Dive.md) — 完整技术细节
 - [Java Ecosystem AI Overview](./Java_Ecosystem_AI_Overview.md) — 生态全景
-- [部署推理](../../10_Deployment_Inference/JVM_AI_Deployment.md) — Java 模型部署
+- [部署推理](../../10_Deployment_Inference/Inference_Engines/JVM_AI_Deployment.md) — Java 模型部署
 
 ---
 

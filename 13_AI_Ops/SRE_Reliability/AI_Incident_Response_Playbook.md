@@ -5,8 +5,13 @@ tags: ["ai-ops", "observability", "monitoring", "incident-response"]
 summary: "> 🎯 **目标**：建立 AI/LLM 生产系统的事故响应体系 —— 从 Runbook 模板、War Room 流程、分诊决策树到自动化修复脚本，确保团队在高压下一致、高效地处理故障。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Ai Incident Response Playbook"
+  - "AI Incident Response Playbook"
+  - AI_Incident_Response_Playbook
 
+---
 # AI 系统事故响应手册
 
 > 🎯 **目标**：建立 AI/LLM 生产系统的事故响应体系 —— 从 Runbook 模板、War Room 流程、分诊决策树到自动化修复脚本，确保团队在高压下一致、高效地处理故障。
@@ -718,20 +723,20 @@ MTTR_DISTRIBUTION = {
 ## 🔗 相关主题
 
 - [SRE for AI Systems](./SRE_for_AI_Systems.md) — SLI/SLO 设计与错误预算
-- [AI Ops 2026](./AI_Ops_2026.md) — 智能运维完整体系
-- [Cloud Ops 2026](../18_Cloud_Ops_Agent/Cloud_Product_Ops_2026.md) — 云产品运维 Agent
-- [部署与推理](../10_Deployment_Inference/Inference-in-nutshell.md) — 推理优化
-- [AI 测试](../09_Testing/AI-Testing-in-nutshell.md) — AI 测试体系
+- [AI Ops 2026](13_AI_Ops/AI_Ops_2026.md) — 智能运维完整体系
+- [Cloud Ops 2026](_projects/Cloud_Ops_Agent/Cloud_Product_Ops_2026.md) — 云产品运维 Agent
+- [部署与推理](10_Deployment_Inference/Inference-in-nutshell.md) — 推理优化
+- [AI 测试](09_Testing/AI-Testing-in-nutshell.md) — AI 测试体系
 
 > 📅 **最后更新**：2026-04-11 | **方法论**：PagerDuty Incident Response + Google SRE + AI 生产实践
 
 ## Related
 
-- [[13_AI_Ops/AIOps-in-nutshell]] — AI Ops 速成指南 (共享: ai-ops, incident-response, monitoring, observability)
-- [[13_AI_Ops/AI_Ops_for_dummy]] — AI Ops 入门指南 (for Dummies) (共享: ai-ops, incident-response, monitoring, observability)
+- [[13_AI_Ops/AIOps-in-nutshell.md]] — AI Ops 速成指南 (共享: ai-ops, incident-response, monitoring, observability)
+- [[13_AI_Ops/AI_Ops_for_dummy.md]] — AI Ops 入门指南 (for Dummies) (共享: ai-ops, incident-response, monitoring, observability)
 - [[13_AI_Ops/README]] — AI 运维与可观测性 (AI Ops) (共享: ai-ops, incident-response, monitoring, observability)
 - [[13_AI_Ops/README_for_dummy]] — 16 AI Ops — 小白版 📡 (共享: ai-ops, incident-response, monitoring, observability)
-- [[13_AI_Ops/AI_Observability_Guide.md|AI_Observability_Guide]]
-- [[13_AI_Ops/Helicone_Deep_Dive.md|Helicone_Deep_Dive]]
-- [[13_AI_Ops/Prefect_Deep_Dive.md|Prefect_Deep_Dive]]
-- [[13_AI_Ops/DVC_Deep_Dive.md|DVC_Deep_Dive]]
+- [[11_MLOps_Pipeline/Observability/AI_Observability_Guide.md|AI_Observability_Guide]]
+- [[11_MLOps_Pipeline/Observability/Helicone_Deep_Dive.md|Helicone_Deep_Dive]]
+- [[11_MLOps_Pipeline/Orchestration/Prefect_Deep_Dive.md|Prefect_Deep_Dive]]
+- [[11_MLOps_Pipeline/Orchestration/DVC_Deep_Dive.md|DVC_Deep_Dive]]

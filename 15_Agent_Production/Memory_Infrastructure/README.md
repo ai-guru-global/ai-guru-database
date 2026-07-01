@@ -5,8 +5,9 @@ tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: '> Agent 的"智商"不仅取决于 LLM，还取决于 RAG 检索质量、记忆系统设计和知识管理架构。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
 
+---
 # 记忆与基础设施
 
 > Agent 的"智商"不仅取决于 LLM，还取决于 RAG 检索质量、记忆系统设计和知识管理架构。
@@ -54,3 +55,5 @@ updated: '2026-05-31'
 - [[15_Agent_Production/Agent_Evaluation/Assessment/Production_Assessment.md|Production_Assessment]]
 - [[15_Agent_Production/Agent_Evaluation/Benchmarking/Benchmarking_Criteria.md|Benchmarking_Criteria]]
 
+
+- [[15_Agent_Production/README|Agent 生产部署 (Agent Production)]]

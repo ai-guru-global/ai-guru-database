@@ -5,8 +5,9 @@ tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> 本文件夹收录 Agent Skills 开放标准的完整知识体系，覆盖从入门到生产、从个人到团队的全部场景。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
 
+---
 # Agent Skills 文档索引
 
 > 本文件夹收录 Agent Skills 开放标准的完整知识体系，覆盖从入门到生产、从个人到团队的全部场景。
@@ -57,13 +58,13 @@ Agent_Skills_Ecosystem_Catalog.md → 按领域或团队查找
 
 | 文档 | 定位 | 适合读者 | 预估阅读时间 |
 |------|------|---------|-------------|
-| **[Skills-in-nutshell.md](Skills-in-nutshell.md)** | 速览版 / 书写速查手册 | 所有写 Skill 的人 | 30 分钟 |
-| **[Agent_Skills_Practical_Guide.md](Agent_Skills_Practical_Guide.md)** | 实战操作手册 | 需要案例和步骤的开发者 | 1 小时 |
-| **[Agent_Skills_Deep_Dive.md](Agent_Skills_Deep_Dive.md)** | 理论规范大全 | 需要全面掌握标准的人 | 2-3 小时 |
-| **[Agent_Skills_Multi_Role_Analysis.md](Agent_Skills_Multi_Role_Analysis.md)** | 团队协作视角 | 团队 Lead、架构师、PM | 1-2 小时 |
-| **[Agent_Skills_Ecosystem_Catalog.md](Agent_Skills_Ecosystem_Catalog.md)** | 生态选型索引 | 需要找现成 Skill 的人 | 20 分钟 |
-| **[Skill_Versioning_Guide.md](Skill_Versioning_Guide.md)** | 团队治理指南 | 组织级 Skill 库管理者 | 30 分钟 |
-| **[Spring_AI_Skills_Integration.md](Spring_AI_Skills_Integration.md)** | Spring AI 集成 | Java + Spring AI 开发者 | 15 分钟 |
+| **[Skills-in-nutshell.md](15_Agent_Production/Agent_Skills/Skills-in-nutshell.md)** | 速览版 / 书写速查手册 | 所有写 Skill 的人 | 30 分钟 |
+| **[Agent_Skills_Practical_Guide.md](15_Agent_Production/Agent_Skills/Agent_Skills_Practical_Guide.md)** | 实战操作手册 | 需要案例和步骤的开发者 | 1 小时 |
+| **[Agent_Skills_Deep_Dive.md](15_Agent_Production/Agent_Skills/Agent_Skills_Deep_Dive.md)** | 理论规范大全 | 需要全面掌握标准的人 | 2-3 小时 |
+| **[Agent_Skills_Multi_Role_Analysis.md](15_Agent_Production/Agent_Skills/Agent_Skills_Multi_Role_Analysis.md)** | 团队协作视角 | 团队 Lead、架构师、PM | 1-2 小时 |
+| **[Agent_Skills_Ecosystem_Catalog.md](15_Agent_Production/Agent_Skills/Agent_Skills_Ecosystem_Catalog.md)** | 生态选型索引 | 需要找现成 Skill 的人 | 20 分钟 |
+| **[Skill_Versioning_Guide.md](15_Agent_Production/Agent_Skills/Skill_Versioning_Guide.md)** | 团队治理指南 | 组织级 Skill 库管理者 | 30 分钟 |
+| **[Spring_AI_Skills_Integration.md](15_Agent_Production/Agent_Skills/Spring_AI_Skills_Integration.md)** | Spring AI 集成 | Java + Spring AI 开发者 | 15 分钟 |
 
 ---
 
@@ -131,3 +132,5 @@ Agent_Skills_Ecosystem_Catalog.md → 按领域或团队查找
 - [[15_Agent_Production/Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
 - [[15_Agent_Production/Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)
 
+
+- [[15_Agent_Production/README|Agent 生产部署 (Agent Production)]]

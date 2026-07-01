@@ -5,8 +5,9 @@ tags: ["causal-inference", "causality", "do-calculus", "SCM"]
 summary: "> 从「相关」到「因果」——do-演算、因果图、因果发现，让AI真正理解世界。"
 created: 2026-06-04
 updated: 2026-06-04
----
+tier: supporting
 
+---
 # 因果推断 (Causal Inference)
 
 > **核心定位**: 超越相关性的因果分析，让 AI 能回答「如果我做 X，会发生什么？」的干预性问题。

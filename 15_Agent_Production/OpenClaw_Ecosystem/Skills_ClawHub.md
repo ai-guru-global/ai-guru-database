@@ -5,8 +5,13 @@ tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "**Skills** are the extensible capability modules that transform OpenClaw agents from simple chatbots into powerful task executors. **ClawHub** is the official marketplace for disco"
 created: "2026-05-31"
 updated: "2026-05-31"
----
+tier: supporting
+aliases:
+  - "Skills Clawhub"
+  - "Skills ClawHub"
+  - Skills_ClawHub
 
+---
 # Skills & ClawHub: The OpenClaw Skill Ecosystem
 
 ## Overview

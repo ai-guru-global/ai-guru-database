@@ -25,8 +25,10 @@ lifecycle: stable
 tier: core
 created: 2026-06-16
 updated: 2026-06-16
----
+aliases:
+  - Qdrant
 
+---
 # Qdrant
 
 > Rust 写的「高性能向量数据库」——部署简单、延迟低，RAG 中型场景的热门选择。
@@ -91,7 +93,7 @@ updated: 2026-06-16
 
 - [[14_RAG_Systems/Vector_Databases/Qdrant_Deep_Dive]] — Qdrant 深度解析
 - [[_concepts/vector-database]] — 向量数据库
-- [[_concepts/rag]] — RAG
+- [[_concepts/rag-patterns]] — RAG
 - [[_concepts/embedding]] — Embedding
 - [[_concepts/milvus]] — Milvus
 - [[_concepts/weaviate]] — Weaviate

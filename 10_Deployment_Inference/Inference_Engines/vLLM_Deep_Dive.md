@@ -5,8 +5,13 @@ tags: ["deployment", "inference", "serving", "vllm", "llm", "paged-attention", "
 summary: "> **一句话理解**: vLLM 是 UC Berkeley 出品的生产级 LLM 推理引擎——PagedAttention 技术让显存利用率从 20% 提升到 90%+，吞吐量行业标杆。"
 created: "2026-05-31"
 updated: "2026-06-15"
----
+tier: core
+aliases:
+  - "Vllm Deep Dive"
+  - "vLLM Deep Dive"
+  - vLLM_Deep_Dive
 
+---
 # vLLM: 生产级 LLM 推理引擎
 
 > **一句话理解**: vLLM 是 UC Berkeley 出品的生产级 LLM 推理引擎——PagedAttention 技术让显存利用率从 20% 提升到 90%+，吞吐量行业标杆。
@@ -575,4 +580,5 @@ Decode 节点:  高显存带宽，专注 token 生成
 - [[10_Deployment_Inference/Inference_Engines/TensorRT_LLM_Deep_Dive.md|TensorRT_LLM_Deep_Dive]]
 - [[10_Deployment_Inference/Inference_Engines/TGI_Deep_Dive.md|TGI_Deep_Dive]]
 - [[10_Deployment_Inference/Inference_Engines/LMDeploy_Deep_Dive.md|LMDeploy_Deep_Dive]]
-- [[12_Architecture_Infrastructure/CDI_Deep_Dive.md|CDI 容器设备接口（GPU 容器接入）]]
+- [[12_Architecture_Infrastructure/Hardware_Compute/CDI_Deep_Dive.md|CDI 容器设备接口（GPU 容器接入）]]
+- [[_synthesis/chinese-chips-inference|国产 AI 芯片 × 推理引擎: 硬件约束下的推理软件栈适配]]

@@ -21,8 +21,11 @@ lifecycle: stable
 tier: core
 created: 2026-06-04
 updated: 2026-06-04
----
+aliases:
+  - "Speech Audio Ai"
+  - "speech audio ai"
 
+---
 # 语音与音频 AI (Speech & Audio AI)
 
 > AI 感知层的核心模态——让机器「听懂」和「说出」人类语言及所有声音。

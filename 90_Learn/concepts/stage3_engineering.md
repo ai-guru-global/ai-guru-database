@@ -5,8 +5,13 @@ tags: ["learning", "education", "courses", "study-path"]
 summary: '> **"从实验室模型到线上产品——这一步的差距，淘汰了 90% 的 AI 项目。"**'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Stage3 Engineering"
+  - "stage3 engineering"
+  - stage3_engineering
 
+---
 # Stage 3: 工程实践
 
 > **"从实验室模型到线上产品——这一步的差距，淘汰了 90% 的 AI 项目。"**

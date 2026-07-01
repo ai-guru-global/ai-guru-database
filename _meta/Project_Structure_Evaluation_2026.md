@@ -201,7 +201,7 @@ updated: 2026-05-31
 | 章节 | 链接密度 | 状态 |
 |------|---------|------|
 | 90_Learn | **22.9** | 🟢 极佳（pathways 设计良好） |
-| 91_Notes | **14.7** | 🟢 良好 |
+| _meta/notes | **14.7** | 🟢 良好 |
 | 17_AI_Coding | **10.6** | 🟢 良好 |
 | 13_Agent_Production | **7.5** | 🟢 良好（刚完成优化） |
 | 12_Architecture_Infrastructure | **7.4** | 🟢 良好 |
@@ -247,7 +247,7 @@ updated: 2026-05-31
 15_Agent_Production/Agent_Skills/README.md
 15_Agent_Production/Agent_Skills/Agent_Skills_Deep_Dive.md
 14_AI_Gateway/Spring_AI_Gateway_Security.md
-09_Testing/Java_AI_Testing.md
+09_Testing/Testing_Frameworks/Java_AI_Testing.md
 18_Cloud_Ops_Agent/Java_Cloud_SDK_Guide.md
 ROADMAP.md
 90_Learn/pathways/java-developer.md
@@ -409,9 +409,9 @@ ROADMAP.md
 18_Cloud_Ops_Agent/README.md
 19_Talks/README.md
 21_Interviews/README.md
-91_Notes/README.md
-92_Plan/README.md
-93_Tools/README.md
+_meta/notes/README.md
+_meta/plan/README.md
+93_Templates/README.md
 94_Visualization/README.md
 ```
 
@@ -504,13 +504,13 @@ ROADMAP.md
 
 **22_Papers 建议**：
 - 选择 Top 10 最具影响力论文，在对应章节中撰写深度解读（如 Attention Is All You Need 在 `05_NLP_LLMs/Transformer_Revolution/` 中扩充）
-- `20_Papers/README.md` 改为"论文索引 + 对应章节链接"，而非纯外链列表
+- `20_Papers_and_Research/README.md` 改为"论文索引 + 对应章节链接"，而非纯外链列表
 
 ### 7.3 中期规划（2-4 周）
 
 #### 7. 建立统一文档模板
 
-在 `93_Tools/` 或 `.qoder/skills/` 中创建 `DOCUMENT_TEMPLATE.md`：
+在 `93_Templates/` 或 `.qoder/skills/` 中创建 `DOCUMENT_TEMPLATE.md`：
 
 ```markdown
 # [主题名]
@@ -631,6 +631,6 @@ ROADMAP.md
 
 ## Related
 
-- [[92_Plan/Content_Evaluation_2026]] — AI Guru Database - 内容全面评估 2026 (共享: goals, model-evaluation, planning, roadmap, strategy)
-- [[92_Plan/Project_Comprehensive_Evaluation_2026]] — AI Guru 知识库项目全面评估报告 (共享: goals, model-evaluation, planning, roadmap, strategy)
-- [[92_Plan/Implementation_Plan_2026]] — AI Guru 知识库整改执行计划 (共享: goals, planning, roadmap, strategy)
+- [[_meta/plan/Content_Evaluation_2026]] — AI Guru Database - 内容全面评估 2026 (共享: goals, model-evaluation, planning, roadmap, strategy)
+- [[_meta/plan/Project_Comprehensive_Evaluation_2026]] — AI Guru 知识库项目全面评估报告 (共享: goals, model-evaluation, planning, roadmap, strategy)
+- [[_meta/plan/Implementation_Plan_2026]] — AI Guru 知识库整改执行计划 (共享: goals, planning, roadmap, strategy)

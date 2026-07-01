@@ -8,8 +8,13 @@ sources:
 created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
----
+tier: supporting
+aliases:
+  - "Catboost Overview"
+  - "catboost overview"
+  - catboost_overview
 
+---
 # CatBoost 概览
 
 > **一句话理解**: Yandex 出品的梯度提升框架，原生支持类别特征，无需额外编码
@@ -33,5 +38,5 @@ CatBoost 是机器学习领域的重要工具/框架。
 | LightGBM | 速度快、内存低 | 大规模数据 |
 | CatBoost | 类别特征原生支持 | 高基数类别数据 |
 
-> **关联**: → [[02_Machine_Learning|机器学习]]
+> **关联**: → [[02_Machine_Learning/README|机器学习]]
 

@@ -5,8 +5,12 @@ tags: ["ai-coding", "code-generation", "cursor", "github-copilot"]
 summary: "> **一句话**: 阿里通义千问提供 Token Plan 团队版，¥198/座席/月，25,000 Credits，通过 OpenClaw + Qwen 组合进行 AI 编程。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Qwen Guide"
+  - Qwen_Guide
 
+---
 # Qwen (通义千问) 使用指南
 
 > **一句话**: 阿里通义千问提供 Token Plan 团队版，¥198/座席/月，25,000 Credits，通过 OpenClaw + Qwen 组合进行 AI 编程。

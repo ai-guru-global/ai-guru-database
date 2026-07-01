@@ -3,8 +3,13 @@ title: "大语言模型入门：从文字接龙到推理部署"
 tags: [llm, large-language-model, transformer, attention, pretraining, finetuning, rlhf, inference, token, beginner]
 source: yeasy/ai_beginner_guide
 created: 2026-06-19
----
+tier: peripheral
+aliases:
+  - "Llm For Beginners"
+  - "LLM For Beginners"
+  - LLM_For_Beginners
 
+---
 # 大语言模型入门：从文字接龙到推理部署
 
 > **一句话理解**: 大语言模型（LLM）干的事情看似简单——根据上文预测下一个词（Next Token Prediction）；但当模型规模、数据规模、训练算力同时上去，能力就会发生跃迁；它的诞生走完"预训练（上大学）→ 微调（岗前培训）→ RLHF（实习）"三步，而让这个巨兽"跑起来"的推理工程，是一场关于显存与带宽的精密接力赛。
@@ -250,3 +255,7 @@ Transformer 一次性并行处理全部词，本身没有"顺序"概念，所以
 - 提示与上下文：[[Context_Engineering_Guide]]、[[Structured_Output_Guide]]
 - 生态：[[Chinese_LLM_Ecosystem]]、[[Global_LLM_Ecosystem]]、[[Long_Context_Models_2026]]
 - 同源进阶：[[AI_Reasoning_Models_Guide]]、[[AI_New_Architectures]]、[[AI_Multimodal_GenAI]]
+
+## Related
+
+- [[token-plain]]

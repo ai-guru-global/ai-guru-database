@@ -6,7 +6,13 @@ tags:
 - ai-coding
 created: 2026-06-12
 category: 16-ai-coding-tools-opencode
-summary: ""
+tier: peripheral
+aliases:
+  - "Opencode Github Automation"
+  - "opencode github automation"
+
+updated: 2026-06-30
+summary: "GitHub 集成与 CI/CD 自动化 — 专题文档"
 ---
 title: GitHub 集成与 CI/CD 自动化
 description: '**文档类型**: 自动化集成专题 | **最后更新**: 2026-03 | **关键词**: OpenCode, GitHub, GitHub

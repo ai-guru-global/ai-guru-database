@@ -6,8 +6,13 @@ summary: "> 追踪 Transformer 架构的三条演化路线：编码器模型（B
 source: "_sources/yeasy/llm_internals/ (Ch12-14)"
 created: 2026-06-17
 updated: 2026-06-17
----
+tier: supporting
+aliases:
+  - "Llm Architecture Evolution"
+  - "LLM Architecture Evolution"
+  - LLM_Architecture_Evolution
 
+---
 # LLM 架构演进：从 BERT 到 MoE/Mamba 与 Agent 时代
 
 > **演化主线**: 编码器（双向理解）→ 解码器（自回归生成，当前主流）→ 混合架构（MoE + SSM + 多模态 + Agent）

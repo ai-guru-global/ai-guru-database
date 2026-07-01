@@ -9,8 +9,12 @@ created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
 tier: supporting
----
+aliases:
+  - "Perplexity Overview"
+  - "perplexity overview"
+  - perplexity_overview
 
+---
 # Perplexity AI 概览
 
 > **一句话理解**: 结合 LLM 与实时网络搜索的 AI 搜索引擎,提供带引用来源的精准回答。
@@ -39,4 +43,8 @@ tier: supporting
 | 交互 | 一次性 | 多轮追问 |
 | 深度 | 表面 | Pro Search 深入 |
 
-> **关联**: -> [[05_NLP_LLMs|NLP/LLM]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[05_NLP_LLMs/README|NLP/LLM]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
+
+## Related
+
+- [[05_NLP_LLMs/README|04 自然语言处理与大模型 (NLP & LLMs)]]

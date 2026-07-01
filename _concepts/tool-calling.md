@@ -24,8 +24,11 @@ lifecycle_changed: 2026-06-16
 tier: core
 created: 2026-06-16
 updated: 2026-06-16
----
+aliases:
+  - "Tool Calling"
+  - "tool calling"
 
+---
 # 工具调用
 
 ## 核心要点

@@ -3,8 +3,13 @@ title: "AI 多模态与生成式 AI"
 tags: [ai, multimodal, diffusion-model, image-generation, video-generation, audio-generation, embodied-ai, genai]
 source: yeasy/ai_beginner_guide
 created: 2026-06-16
----
+tier: peripheral
+aliases:
+  - "Ai Multimodal Genai"
+  - "AI Multimodal GenAI"
+  - AI_Multimodal_GenAI
 
+---
 # AI 多模态与生成式 AI
 
 > **一句话理解**: 多模态 AI 让模型同时具备"看、听、说"的能力，扩散模型（Diffusion Model）实现了从噪声中"雕刻"出图像和视频的魔法，而具身智能（Embodied AI）正在将 AI 从数字世界带入物理世界。

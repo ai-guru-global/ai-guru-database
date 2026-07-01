@@ -5,8 +5,13 @@ tags: ["testing", "ai-safety", "red-teaming", "jailbreak", "adversarial", "owasp
 summary: '> **一句话理解**: LLM 安全测试就是"主动攻击自己的模型"——用红队测试找越狱漏洞、用对抗样本测鲁棒性、用幻觉检测查事实性、用有害内容分类器拦输出，四道防线让模型在被恶意用户攻击前先暴露弱点。'
 created: '2026-06-22'
 updated: '2026-06-22'
----
+tier: supporting
+aliases:
+  - "Llm Safety Testing Deep Dive"
+  - "LLM Safety Testing Deep Dive"
+  - LLM_Safety_Testing_Deep_Dive
 
+---
 # LLM 安全测试深度指南 - 红队、越狱与对抗防御
 
 > **一句话理解**: LLM 安全测试就是"主动攻击自己的模型"——用红队测试找越狱漏洞、用对抗样本测鲁棒性、用幻觉检测查事实性、用有害内容分类器拦输出，四道防线让模型在被恶意用户攻击前先暴露弱点。

@@ -6,8 +6,13 @@ summary: "从注意力机制出发，理解 Transformer 如何取代 RNN 成为�
 source_url: "https://raw.githubusercontent.com/microsoft/AI-For-Beginners/main/lessons/5-NLP/18-Transformers/README.md"
 created: "2026-06-12"
 updated: "2026-06-12"
----
+tier: supporting
+aliases:
+  - "L18 Transformers And Bert"
+  - "L18 Transformers and BERT"
+  - L18_Transformers_and_BERT
 
+---
 # L18 - Transformer 与 BERT
 
 > **一句话理解**：本课讲解注意力机制（Attention Mechanism）如何解决 RNN 编解码器在序列翻译中的记忆瓶颈，并引出可并行训练的 Transformer 架构，以及基于 Transformer 编码器的预训练模型 BERT。

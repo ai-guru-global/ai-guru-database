@@ -11,6 +11,10 @@ relationships:
     type: enables
   - target: "_concepts/llama-cpp"
     type: used_by
+  - target: "_concepts/llama-box"
+    type: used_by
+  - target: "_concepts/model-formats"
+    type: belongs_to
 sources:
   - 10_Deployment_Inference/Inference_Engines/llama_cpp_Deep_Dive.md
   - 10_Deployment_Inference/Quantization/Quantization_Techniques_2026.md
@@ -25,9 +29,11 @@ lifecycle: stable
 lifecycle_changed: 2026-06-16
 tier: core
 created: 2026-06-16
-updated: 2026-06-16
----
+updated: 2026-06-25
+aliases:
+  - Gguf
 
+---
 # GGUF
 
 ## 核心要点
@@ -64,14 +70,48 @@ GGUF 把这一切打包成一个文件，并预先量化好，方便在 llama.cp
 
 > 带 `_K` 的表示使用 K-quants，对重要层用更高精度，对非重要层用更低精度，平衡体积和效果。
 
-### GGUF vs Safetensors vs ONNX
+### 常见使用场景
 
-| 格式 | 特点 | 主要用途 |
-|------|------|----------|
-| **Safetensors** | HF 标准格式，安全、加载快 | 训练、HF 生态推理 |
-| **GGUF** | 单文件、多量化、llama.cpp 原生 | 本地/边缘/CPU 推理 |
-| **ONNX** | 跨框架标准 | 通用推理引擎 |
-| **TensorRT** | NVIDIA 优化格式 | NVIDIA GPU 高性能 |
+| 场景 | 推荐格式 | 原因 |
+|------|----------|------|
+| 本地跑 7B/13B 大模型 | **GGUF Q4_K_M** | 单文件、4-8GB 显存/内存即可跑 |
+| 边缘设备/CPU 推理 | **GGUF Q4_K_M / Q5_K_M** | llama.cpp 对 CPU 优化好 |
+| 通过 Ollama 使用 | **GGUF** | Ollama 内部使用 llama.cpp + GGUF |
+| HuggingFace 分发 | **Safetensors** | 安全、加载快、社区标准 |
+| 跨框架部署 | **ONNX** | 框架无关、工具链成熟 |
+| NVIDIA GPU 生产推理 | **TensorRT** | 图优化和 kernel 融合带来更高吞吐 |
+
+### GGUF 与 llama-box / PPU
+
+在一些特定硬件或运行环境（如 PPU）中，实际执行推理的后端往往不是直接调用 llama.cpp，而是通过 **llama-box** 这类基于 llama.cpp 封装的服务层：
+
+```
+用户请求 ──▶ llama-box 推理后端 ──▶ llama.cpp 引擎 ──▶ PPU 硬件执行
+                    │
+                    ▼
+              GGUF 量化模型文件
+```
+
+**为什么是 GGUF？**
+
+- PPU 当前主要跑 **GGUF 量化模型**。
+- GGUF 是 llama.cpp 的原生格式，单文件、量化参数内置。
+- 所以 PPU 上的推理链路自然选择 **llama-box（基于 llama.cpp）** 作为后端。
+
+换句话说：**因为模型是 GGUF，所以后端用 llama.cpp 这套（llama-box）。**
+
+### GGUF 与其他模型格式对比
+
+| 格式 | 特点 | 主要生态 | 量化能力 | 主要用途 |
+|------|------|----------|----------|----------|
+| **GGUF** | 单文件、内置 tokenizer/元数据 | llama.cpp / Ollama / llama-box | Q2/Q4/Q5/Q8/FP16 | 本地/边缘/CPU 推理 |
+| **Safetensors** | HF 标准格式，安全、加载快 | HuggingFace / vLLM / SGLang | FP16/BF16/FP8/INT8 | 模型分发、训练、服务推理 |
+| **ONNX** | 跨框架标准 | ONNX Runtime / TensorRT / OpenVINO | INT8/FP16 | 跨平台部署、C++/移动端 |
+| **TensorRT** | NVIDIA 图优化格式 | NVIDIA GPU | INT8/FP16/FP8 | NVIDIA GPU 高性能推理 |
+| **OpenVINO IR** | Intel 优化格式 | Intel CPU/iGPU/NPU | INT8/FP16 | Intel 硬件加速 |
+| **Core ML** | Apple 生态格式 | iOS/macOS | 多种量化 | Apple 设备端推理 |
+| **TFLite** | 移动端轻量格式 | Android/嵌入式 | INT8/FP16 | 手机、IoT、MCU |
+| **GGML** | GGUF 的前身 | 早期 llama.cpp | Q4/Q5 等 | 已被 GGUF 逐步替代 |
 
 ### 典型使用流程
 
@@ -95,5 +135,9 @@ llama-server -m model.gguf --port 8080
 - [[_concepts/quantization]] — 量化
 - [[_concepts/edge-llm]] — 边缘 LLM
 - [[_concepts/llama-cpp]] — llama.cpp
+- [[_concepts/llama-box]] — llama-box 推理后端
+- [[_concepts/model-formats]] — 模型格式全景
+- [[_concepts/safetensors]] — Safetensors 安全模型格式
+- [[_concepts/onnx]] — ONNX 开放神经网络交换格式
 - [[10_Deployment_Inference/Inference_Engines/llama_cpp_Deep_Dive]] — llama.cpp 深度解析
 - [[10_Deployment_Inference/Quantization/Quantization_Techniques_2026]] — 量化技术 2026

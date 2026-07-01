@@ -5,8 +5,13 @@ tags: ["reinforcement-learning", "agent", "mdp"]
 summary: '> **一句话秒懂**: 强化学习就是训练AI"边玩边学"——就像训练小狗做动作,做对了给零食奖励,做错了不给,AI通过反复尝试学会玩游戏、下棋、甚至控制机器人!'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Readme For Dummy"
+  - "README for dummy"
+  - README_for_dummy
 
+---
 # 06 强化学习与智能体 - 小白版 🎮
 
 > **一句话秒懂**: 强化学习就是训练 AI"边玩边学"——就像训练小狗做动作,做对了给零食奖励,做错了不给,AI 通过反复尝试学会玩游戏、下棋、甚至控制机器人!
@@ -44,15 +49,15 @@ updated: '2026-05-31'
 
 | 主题 | 难度 | 你会学到什么 | 文档链接 |
 |------|------|------------|---------|
-| 强化学习基础 | ⭐⭐ | AI 如何像训狗一样通过奖惩学习,探索与利用的平衡 | [点这里](./RL_Foundations/RL_Foundations_for_dummy.md) |
-| 深度强化学习 | ⭐⭐⭐ | DQN 如何玩 Atari,PPO 如何训练 ChatGPT | [点这里](./Deep_RL/Deep_RL_for_dummy.md) |
-| AI 智能体 | ⭐⭐⭐⭐ | 像员工一样工作的 AI,能规划、记忆、用工具 | [点这里](../15_Agent_Production/Agent_Foundations/AI_Agents_for_dummy.md) |
+| 强化学习基础 | ⭐⭐ | AI 如何像训狗一样通过奖惩学习,探索与利用的平衡 | [点这里](06_Reinforcement_Learning/RL_Foundations/RL_Foundations_for_dummy.md) |
+| 深度强化学习 | ⭐⭐⭐ | DQN 如何玩 Atari,PPO 如何训练 ChatGPT | [点这里](06_Reinforcement_Learning/Deep_RL/Deep_RL_for_dummy.md) |
+| AI 智能体 | ⭐⭐⭐⭐ | 像员工一样工作的 AI,能规划、记忆、用工具 | [点这里](15_Agent_Production/Agent_Foundations/AI_Agents_for_dummy.md) |
 
 ## 开始之前你需要知道
 
 **必备基础** (建议先看这些):
-- [神经网络核心 - 小白版](../03_Deep_Learning/Neural_Network_Core/Neural_Network_Core_for_dummy.md) - 理解 AI 的大脑
-- [概率统计 - 小白版](../01_Fundamentals/Probability_Statistics/Probability_Statistics_for_dummy.md) - 理解奖励和期望
+- [神经网络核心 - 小白版](03_Deep_Learning/Neural_Network_Core/Neural_Network_Core_for_dummy.md) - 理解 AI 的大脑
+- [概率统计 - 小白版](01_Fundamentals/Probability_Statistics/Probability_Statistics_for_dummy.md) - 理解奖励和期望
 
 **不需要的基础**:
 - ❌ 不需要会编程
@@ -144,7 +149,7 @@ AI: "我学到了:往右走好,往左走不好"
 ## Related
 
 - [[06_Reinforcement_Learning/README.md|06_Reinforcement_Learning README]]
-- [[06_Reinforcement_Learning/AI_Agents/AI_Agents.md|AI_Agents]]
-- [[06_Reinforcement_Learning/AI_Agents/AI_Agents_for_dummy.md|AI_Agents_for_dummy]]
-- [[06_Reinforcement_Learning/AI_Agents/Agent-in-nutshell.md|Agent-in-nutshell]]
-- [[06_Reinforcement_Learning/AI_Agents/Agent_Future_Roadmap_2026_2030.md|Agent_Future_Roadmap_2026_2030]]
+- [[15_Agent_Production/Agent_Foundations/AI_Agents.md|AI_Agents]]
+- [[15_Agent_Production/Agent_Foundations/AI_Agents_for_dummy.md|AI_Agents_for_dummy]]
+- [[15_Agent_Production/Agent_Foundations/Agent-in-nutshell.md|Agent-in-nutshell]]
+- [[15_Agent_Production/Agent_Foundations/Agent_Future_Roadmap_2026_2030.md|Agent_Future_Roadmap_2026_2030]]

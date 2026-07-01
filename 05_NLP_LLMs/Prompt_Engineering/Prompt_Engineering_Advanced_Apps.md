@@ -3,8 +3,12 @@ title: "提示词工程高级应用：RAG、多模态、安全与自动化运维
 tags: [prompt-engineering, llm, rag, multimodal, safety, automated-pe, promptops, agent]
 source: yeasy/prompt_engineering_guide
 created: 2026-06-16
----
+tier: peripheral
+aliases:
+  - "Prompt Engineering Advanced Apps"
+  - Prompt_Engineering_Advanced_Apps
 
+---
 # 提示词工程高级应用：RAG、多模态、安全与自动化运维
 
 本文融合《大模型提示词工程指南》第 8-14 章的高级知识，覆盖 ReAct 与工具调用、RAG 提示词设计、多模态提示工程、安全防护、自动化提示词工程、平台策略与 PromptOps 运维实践。

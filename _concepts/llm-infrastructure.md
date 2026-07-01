@@ -25,8 +25,11 @@ lifecycle_changed: 2026-05-31
 tier: supporting
 created: 2026-05-31T00:00:00Z
 updated: 2026-05-31T00:00:00Z
----
+aliases:
+  - "Llm Infrastructure"
+  - "llm infrastructure"
 
+---
 # LLM 基础设施
 
 ## 核心要点
@@ -98,7 +101,7 @@ AI服务容量规划的特殊性：资源维度新增GPU显存和Token配额、�
 
 ## 来源
 
-- 12_Architecture_Infrastructure/AI_Infrastructure_2026.md — 五层架构、硬件选型、推理引擎对比
+- 12_Architecture_Infrastructure/Architecture_Overview/AI_Infrastructure_2026 — 五层架构、硬件选型、推理引擎对比
 - 12_Architecture_Infrastructure/Edge_AI_2026.md — 边缘AI硬件、模型优化、云端协同
 - 12_Architecture_Infrastructure/AI_Cost_Optimization_2026.md — Token经济学、路由优化、FinOps
 - 12_Architecture_Infrastructure/Capacity_Planning_2026.md — 负载建模、GPU容量规划

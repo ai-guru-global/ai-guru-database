@@ -5,8 +5,13 @@ tags: ["machine-learning", "supervised", "unsupervised"]
 summary: '> **一句话概括**: 这一章教你 AI 是怎么从数据中"学东西"的——就像学生通过做题来掌握解题方法。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Readme For Dummy"
+  - "README for dummy"
+  - README_for_dummy
 
+---
 # 经典机器学习 - 新手导航
 
 > **一句话概括**: 这一章教你 AI 是怎么从数据中"学东西"的——就像学生通过做题来掌握解题方法。

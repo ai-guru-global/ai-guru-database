@@ -5,8 +5,12 @@ tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> Automated and manual methods for collecting evaluation metrics"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Metrics Collection"
+  - Metrics_Collection
 
+---
 # Metrics Collection
 
 > Automated and manual methods for collecting evaluation metrics

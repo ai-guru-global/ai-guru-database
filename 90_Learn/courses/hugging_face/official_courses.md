@@ -5,8 +5,13 @@ tags: ["learning-paths", "huggingface", "nlp", "rl", "audio", "course", "knowled
 summary: "> **一句话理解**: 针对无法直接观看视频的离线内网环境，本文档将 Hugging Face 官方三大课程（NLP, 强化学习, 音频）中最底层的硬核数学直觉、算法原理与特征工程逻辑进行了文字化的提取与整理。"
 created: "2026-06-12"
 updated: "2026-06-12"
----
+tier: supporting
+aliases:
+  - "Official Courses"
+  - "official courses"
+  - official_courses
 
+---
 # Hugging Face 官方系统化课程：离线硬核知识点提取
 
 > **一句话理解**: 针对无法直接观看视频或访问 HF 网站的离线内网环境，本文档将 Hugging Face 官方三大金牌课程（NLP、强化学习、音频处理）中最底层的硬核数学直觉、算法原理与特征工程逻辑，进行了文字化的提取与整理。

@@ -5,8 +5,12 @@ tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> Industry standards and internal benchmarks for agent evaluation"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Performance Benchmarks"
+  - Performance_Benchmarks
 
+---
 # Performance Benchmarks
 
 > Industry standards and internal benchmarks for agent evaluation

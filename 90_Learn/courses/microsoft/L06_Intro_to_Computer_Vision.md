@@ -6,8 +6,13 @@ summary: "介绍计算机视觉的核心任务与典型流程，重点讲解使�
 source_url: "https://raw.githubusercontent.com/microsoft/AI-For-Beginners/main/lessons/4-ComputerVision/06-IntroCV/README.md"
 created: "2026-06-12"
 updated: "2026-06-12"
----
+tier: supporting
+aliases:
+  - "L06 Intro To Computer Vision"
+  - "L06 Intro to Computer Vision"
+  - L06_Intro_to_Computer_Vision
 
+---
 # L06 - 计算机视觉简介与 OpenCV
 
 > **一句话理解**：在把图像交给神经网络之前，先学会用 OpenCV 等工具对图像进行读取、变换与增强，是计算机视觉工程流程中的第一步。

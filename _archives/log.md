@@ -7,8 +7,8 @@ title: Wiki Log
 - [2026-06-15T15:10:00+08:00] MRL_DEEP_DIVE 新增 Matryoshka Representation Learning 深度专题:
   - 创建主章节深度解析: 14_RAG_Systems/Embeddings/Matryoshka_Representation_Learning_Deep_Dive.md
   - 创建小白版: 14_RAG_Systems/Matryoshka_Representation_Learning_for_dummy.md
-  - 创建论文深度解读: 20_Papers/Efficiency/Matryoshka_Representation_Learning_Deep_Dive.md
-  - 更新 14_RAG_Systems/README.md、_concepts/matryoshka-representation-learning.md、_concepts/embedding-models.md、20_Papers/README.md、index.md
+  - 创建论文深度解读: 20_Papers_and_Research/Efficiency/Matryoshka_Representation_Learning_Deep_Dive.md
+  - 更新 14_RAG_Systems/README.md、_concepts/matryoshka-representation-learning.md、_concepts/embedding-models.md、20_Papers_and_Research/README.md、index.md
 - [2026-05-31T00:00:00Z] INIT
 - [2026-05-31T21:30:00+08:00] CROSS_LINK _concepts/ core layer
 - [2026-05-31T21:30:00+08:00] WIKI_SYNTHESIZE 5 pages
@@ -157,8 +157,8 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
 - [[05_NLP_LLMs/Reasoning_Models/Process_Reward_Models|Process Reward Models]] — 7.0 KB
 
 ### 多模态与长上下文评估 (P1)
-- [[08_Model_Evaluation/Multimodal_Evaluation_Benchmarks|Multimodal Evaluation Benchmarks]] — 11.7 KB
-- [[08_Model_Evaluation/Long_Context_Evaluation|Long Context Evaluation]] — 12.9 KB
+- [[08_Model_Evaluation/Benchmarks/Multimodal_Evaluation_Benchmarks|Multimodal Evaluation Benchmarks]] — 11.7 KB
+- [[08_Model_Evaluation/Benchmarks/Long_Context_Evaluation|Long Context Evaluation]] — 12.9 KB
 
 ### 推理优化前沿 (P2)
 - [[10_Deployment_Inference/Caching/Speculative_Decoding_Advanced_2026|Speculative Decoding Advanced]] — 14.8 KB
@@ -582,7 +582,7 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
 ### 高级主题页面(7 个)
 - `15_Agent_Production/Agent_Protocols/A2A_Protocol_Deep_Dive.md` — Agent-to-Agent 协议,含 A2A vs MCP 对比
 - `05_NLP_LLMs/Structured_Output_Guide.md` — 结构化输出完全指南(Instructor/PydanticAI/Outlines)
-- `08_Model_Evaluation/LLM_as_Judge_Guide.md` — LLM-as-Judge 评估指南(Ragas/DeepEval/Promptfoo)
+- `08_Model_Evaluation/Evaluation_Tools/LLM_as_Judge_Guide.md` — LLM-as-Judge 评估指南(Ragas/DeepEval/Promptfoo)
 - `_concepts/long-context-vs-rag.md` — 长上下文 vs RAG 技术选型决策框架
 - `16_AI_Coding/AI_Coding_2026_Guide.md` — AI 编程全景指南(Cursor/Claude Code/Codex)
 - `10_Deployment_Inference/Caching/Prompt_Caching_Advanced.md` — Prompt 缓存高级技术
@@ -981,7 +981,7 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
 ## 2026-06-15 — 新增 CDI (Container Device Interface) 专题
 
 - 新增页面:
-  - `12_Architecture_Infrastructure/CDI_Deep_Dive.md` — CDI 容器设备接口标准深度解析 (13,226 bytes)
+  - `12_Architecture_Infrastructure/Hardware_Compute/CDI_Deep_Dive.md` — CDI 容器设备接口标准深度解析 (13,226 bytes)
 - 更新页面:
   - `12_Architecture_Infrastructure/README.md` — 新增 CDI 导航行、学习路径项、Related 链接
   - `index.md` — 新增「容器与设备接入」分组并登记 CDI 索引
@@ -1026,7 +1026,7 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
 
 - 新增页面:
   - `_concepts/dra.md` — DRA 动态资源分配概念卡（核心 tier，与 CDI 配对）
-  - `12_Architecture_Infrastructure/DRA_Deep_Dive.md` — DRA 深度解析（与 CDI_Deep_Dive 对称，8 节）
+  - `12_Architecture_Infrastructure/Hardware_Compute/DRA_Deep_Dive.md` — DRA 深度解析（与 CDI_Deep_Dive 对称，8 节）
   - `_concepts/gpu-operator.md` — NVIDIA GPU Operator 概念卡（运维层入口）
   - `_concepts/oci-runtime.md` — OCI Runtime Spec 概念卡（运行时标准，CDI 注入落点）
 - 反向链接（消除单向 + 闭合旧卡片）:
@@ -1058,7 +1058,7 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
 
 ## 2026-06-15 — CDI 大白话沉淀 + 官方资源补录
 
-- 更新 `12_Architecture_Infrastructure/CDI_Deep_Dive.md`:
+- 更新 `12_Architecture_Infrastructure/Hardware_Compute/CDI_Deep_Dive.md`:
   - 新增 §9「训练与推理中的位置（大白话定位）」——车间/机床/电源插座比喻，讲清 CDI 在训练 vs 推理中都是同一个「接线员」，附全栈定位图与训练/推理对比表（241→336 行）
   - 新增「官方资源」段——经 WebFetch 核实：规范仓库 `github.com/cncf-tags/container-device-interface`，Apache-2.0 开源，CNCF Tags 治理，最新 v1.1.0(2025-12)；列出 containerd/CRI-O/Docker(25+/28.2默认)/Podman(4.1+) 支持版本与 `cdi`/`nvidia-ctk` CLI
   - 目录新增 §9、§10 两个条目
@@ -1069,7 +1069,7 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
 ## 2026-06-15 — CDI 官方源引用页 + 常见问题与排错
 
 - 新增 `_references/cdi-spec.md` — CDI 规范官方源引用索引（references 层；仓库/Apache-2.0/CNCF Tags/spec 版本/运行时支持矩阵/CLI 工具，含本地文档反链）
-- 更新 `12_Architecture_Infrastructure/CDI_Deep_Dive.md`:
+- 更新 `12_Architecture_Infrastructure/Hardware_Compute/CDI_Deep_Dive.md`:
   - 新增 §10「常见问题与排错」—— 6 大类（配置发现 / 生成同步 / 版本兼容 / 注入冲突 / 排查 / 安全）+ 排错决策树，覆盖 spec 找不到、忘重启 runtime、MIG 不同步、Docker feature flag、hooks 报错隐晦、隔离失效等真实坑
   - 「官方资源」段加引向 [[_references/cdi-spec]] 的 wiki 链接
   - 目录更新为 §1–§11
@@ -1082,5 +1082,5 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
 ## 2026-06-15 — 「CDI 非电源开关」误解澄清沉淀
 
 - `_concepts/cdi.md` 新增「常见误解（CDI 是什么 / 不是什么）」节：四步链(驱动→spec→enable_cdi→容器申请) + 三大误解表（概念层身份认知）
-- `12_Architecture_Infrastructure/CDI_Deep_Dive.md` §10 新增 10.0「先纠正一个根本性误解」FAQ（开 enable_cidi≠看到 GPU），作为排错章的开篇
+- `12_Architecture_Infrastructure/Hardware_Compute/CDI_Deep_Dive.md` §10 新增 10.0「先纠正一个根本性误解」FAQ（开 enable_cidi≠看到 GPU），作为排错章的开篇
 - 校验: 两文件 wikilink 全部解析通过

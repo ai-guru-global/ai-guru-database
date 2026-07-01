@@ -6,8 +6,12 @@ summary: "本课介绍如何用低维稠密向量表示词语，从可学习的 
 source_url: "https://raw.githubusercontent.com/microsoft/AI-For-Beginners/main/lessons/5-NLP/14-Embeddings/README.md"
 created: "2026-06-12"
 updated: "2026-06-12"
----
+tier: supporting
+aliases:
+  - "L14 Semantic Word Embeddings"
+  - L14_Semantic_Word_Embeddings
 
+---
 # L14 - 语义词嵌入：Word2Vec 与 GloVe
 
 > **一句话理解**：把词语从稀疏高维的 one-hot 向量压缩成低维稠密向量，让语义相近的词在向量空间中彼此靠近。

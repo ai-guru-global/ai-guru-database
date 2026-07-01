@@ -23,8 +23,11 @@ lifecycle: stable
 tier: core
 created: 2026-06-16
 updated: 2026-06-16
----
+aliases:
+  - "Vertex Ai"
+  - "vertex ai"
 
+---
 # Google Vertex AI
 
 > GCP 的「统一 AI 工作台」——从数据准备、模型训练到推理部署和 MLOps 全流程覆盖。

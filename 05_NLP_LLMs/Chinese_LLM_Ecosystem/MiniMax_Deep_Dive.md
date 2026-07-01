@@ -5,8 +5,13 @@ tags: ["nlp", "llm", "minimax", "lightning-attention", "moe", "chinese-llm", "vi
 summary: "> **一句话理解**: MiniMax 就像一支拥有「闪电侠速度」的 AI 军团——从 Lightning Attention (O(n) 复杂度) 到 MiniMax-M3 旗舰 (原生多模态 + MSA 稀疏注意力 + 1M 上下文 + ~428B/~23B MoE)，让百万 token 长程 Agent 与 coding/cowork 成为现实，同时在文本、视频、语音、音乐四大战场全面出击。"
 created: "2026-06-01"
 updated: "2026-06-16"
----
+tier: supporting
+aliases:
+  - "Minimax Deep Dive"
+  - "MiniMax Deep Dive"
+  - MiniMax_Deep_Dive
 
+---
 # MiniMax (稀宇科技): Lightning Attention 驱动的 AI 全栈平台
 
 > **一句话理解**: MiniMax 就像一支拥有「闪电侠速度」的 AI 军团——用 Lightning Attention 将注意力计算从 O(n²) 降到 O(n)，让百万 token 上下文成为现实，同时在文本、视频、语音、音乐四大战场全面出击。
@@ -114,7 +119,7 @@ MiniMax 是中国 AI 领域 "六小龙" (AI 六小龙) 成员之一。这六家�
 
 MiniMax 的差异化优势在于：**唯一同时拥有底层注意力机制创新 (Lightning Attention) + 全模态产品线 (文本/视频/语音/音乐) 的公司**。
 
-> **📎 相关阅读**: [长上下文模型 2026](../Long_Context_Models_2026.md) 中对各大长上下文方案进行了横向对比，MiniMax 的 Lightning Attention 是最具创新性的方案之一。
+> **📎 相关阅读**: [长上下文模型 2026](../LLM_Architectures/Long_Context_Models_2026.md) 中对各大长上下文方案进行了横向对比，MiniMax 的 Lightning Attention 是最具创新性的方案之一。
 
 ---
 
@@ -821,7 +826,7 @@ MSA (MiniMax Sparse Attention):
   • 算子已单独开源: https://github.com/MiniMax-AI/MSA
 ```
 
-> **📎 关联阅读**: MSA 与 Lightning Attention、DeepSeek MLA / DSA、GLM IndexShare 同属 2026 年长上下文注意力的主流稀疏化路线，详见 [[_concepts/long-context-models]] 与 [长上下文模型 2026](../Long_Context_Models_2026.md) 的横向对比。
+> **📎 关联阅读**: MSA 与 Lightning Attention、DeepSeek MLA / DSA、GLM IndexShare 同属 2026 年长上下文注意力的主流稀疏化路线，详见 [[_concepts/long-context-models]] 与 [长上下文模型 2026](../LLM_Architectures/Long_Context_Models_2026.md) 的横向对比。
 
 #### 5.6.4 三种思考模式 (thinking)
 
@@ -1556,7 +1561,7 @@ MiniMax 给我们的技术启示:
 
 ### 10.4 延伸阅读
 
-- [长上下文模型 2026: 万级 Token 处理](../Long_Context_Models_2026.md) — 各大长上下文方案的全面对比，包括 Lightning Attention 在长上下文生态中的定位
+- [长上下文模型 2026: 万级 Token 处理](../LLM_Architectures/Long_Context_Models_2026.md) — 各大长上下文方案的全面对比，包括 Lightning Attention 在长上下文生态中的定位
 - [LLM 架构详解](../LLM_Architectures/LLM_Architectures.md) — Transformer 架构基础、MoE 路由机制、注意力变体的系统性讲解
 - [多模态架构 2026](../Multimodal_Models/Multimodal_Architectures_2026.md) — 多模态模型架构范式演进，视觉-语言融合技术详解
 

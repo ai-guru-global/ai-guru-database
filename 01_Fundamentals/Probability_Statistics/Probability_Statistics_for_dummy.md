@@ -5,8 +5,13 @@ tags: ["fundamentals", "math", "algorithms", "basics"]
 summary: '> **一句话秒懂**: 概率统计就是教 AI 怎么在"不确定"的情况下做出最靠谱的判断——就像你根据天气预报决定要不要带伞一样。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Probability Statistics For Dummy"
+  - "Probability Statistics for dummy"
+  - Probability_Statistics_for_dummy
 
+---
 # 概率统计 - 小白版
 
 > **一句话秒懂**: 概率统计就是教 AI 怎么在"不确定"的情况下做出最靠谱的判断——就像你根据天气预报决定要不要带伞一样。

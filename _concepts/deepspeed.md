@@ -25,8 +25,10 @@ lifecycle: stable
 tier: core
 created: 2026-06-16
 updated: 2026-06-16
----
+aliases:
+  - Deepspeed
 
+---
 # DeepSpeed
 
 > 微软出品的「大模型训练加速器」——用 ZeRO 优化把千亿参数模型塞进有限 GPU。

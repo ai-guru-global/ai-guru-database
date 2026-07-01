@@ -31,8 +31,11 @@ lifecycle_changed: 2026-06-03
 tier: core
 created: 2026-06-03 00:00:00+00:00
 updated: 2026-06-03 00:00:00+00:00
----
+aliases:
+  - "Multi Head Latent Attention"
+  - "multi head latent attention"
 
+---
 # Multi-head Latent Attention (MLA)
 
 ## 大白话

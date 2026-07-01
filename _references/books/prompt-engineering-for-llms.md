@@ -9,8 +9,11 @@ created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
 tier: supporting
----
+aliases:
+  - "Prompt Engineering For Llms"
+  - "prompt engineering for llms"
 
+---
 # Prompt Engineering for LLMs
 
 > **一句话理解**: 提示工程权威指南.作者:O'Reilly.

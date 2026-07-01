@@ -5,8 +5,9 @@ tags: ["edge-llm", "small-language-model", "on-device", "quantization", "efficie
 summary: "小模型与端侧 LLM 覆盖 Phi/Gemma/Qwen 等高效小模型及端侧部署方案 (ONNX/MLC-LLM/MediaPipe)。"
 created: 2026-06-04
 updated: 2026-06-04
----
+tier: supporting
 
+---
 # 小模型与端侧 LLM (Edge LLM)
 
 > **一句话理解**: 让 LLM 跑在手机/PC/嵌入式设备上——通过小模型设计 + 量化压缩 + 高效推理引擎，实现离线可用、隐私安全、低延迟的端侧 AI。

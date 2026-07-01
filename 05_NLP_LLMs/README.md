@@ -5,8 +5,9 @@ tags: ["nlp", "llm", "transformer", "gpt", "bert"]
 summary: "本章系统讲解自然语言处理的现代范式，从序列模型（RNN/LSTM）演进到 Transformer 架构，再到大语言模型（GPT/BERT）、微调技术（LoRA/QLoRA）和提示词工程。这是当前 AI 应用最活跃的领域。"
 created: 2026-05-31
 updated: 2026-06-16
----
+tier: supporting
 
+---
 # 04 自然语言处理与大模型 (NLP & LLMs)
 
 本章系统讲解自然语言处理的现代范式，从序列模型（RNN/LSTM）演进到 Transformer 架构，再到大语言模型（GPT/BERT）、微调技术（LoRA/QLoRA）和提示词工程。这是当前 AI 应用最活跃的领域。
@@ -68,7 +69,7 @@ flowchart LR
 | Transformer 革命 (Transformer Revolution) | 进阶 | Self-Attention、多头注意力、位置编码，现代 NLP 核心架构 | [Transformer_Revolution.md](./Transformer_Revolution/Transformer_Revolution.md) |
 | 大语言模型架构 (LLM Architectures) | 进阶 | GPT（Decoder-only）、BERT（Encoder-only）、MoE，预训练范式 | [LLM_Architectures.md](./LLM_Architectures/LLM_Architectures.md) |
 | **推理模型 2026 (Reasoning Models)** | **2026 新增** | **o1/o3 推理模型、思维链进化、Test-Time Compute Scaling** | **[Reasoning_Models_2026.md](./LLM_Architectures/Reasoning_Models_2026.md)** |
-| **长上下文模型 2026 (Long Context)** | **2026 新增** | **100K-1M Token处理、稀疏注意力、KV Cache优化** | **[Long_Context_Models_2026.md](./Long_Context_Models_2026.md)** |
+| **长上下文模型 2026 (Long Context)** | **2026 新增** | **100K-1M Token处理、稀疏注意力、KV Cache优化** | **[Long_Context_Models_2026.md](./LLM_Architectures/Long_Context_Models_2026.md)** |
 | **架构演进大白话 (Architecture Evolution for Dummy)** | **2026 新增** | **KV 压缩、Mamba、RetNet 大白话解释** | **[Architecture_Evolution_for_dummy.md](./Architecture_Evolution_for_dummy.md)** |
 | **多模态模型 (Multimodal)** | 进阶 | **视觉-语言统一架构、GPT-4V/Gemini/LLaVA** | **[Multimodal_Architectures_2026.md](./Multimodal_Models/Multimodal_Architectures_2026.md)** |
 | 微调技术 (Fine-tuning Techniques) | 实战 | LoRA、QLoRA、Prefix Tuning，参数高效微调方法 | [Fine_tuning_Techniques.md](./Fine_tuning_Techniques/Fine_tuning_Techniques.md) |
@@ -115,7 +116,7 @@ flowchart LR
 - [[05_NLP_LLMs/Sequence_Models/Sequence_Models|序列模型 (Sequence Models)]]
 - [[05_NLP_LLMs/README_for_dummy|04 自然语言处理与大模型 - 小白版]]
 
-- [[05_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/README]] — PEFT 2026 (参数高效微调) (共享: bert, gpt, llm, nlp, transformer)
+- [[05_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026]] — PEFT 2026 (参数高效微调) (共享: bert, gpt, llm, nlp, transformer)
 - [[05_NLP_LLMs/Fine_tuning_Techniques/README]] — 微调技术 (Fine-tuning Techniques) (共享: bert, gpt, llm, nlp, transformer)
 - [[05_NLP_LLMs/LLM_Architectures/LLM-Basics-in-nutshell]] — 大语言模型基础速成指南 (共享: bert, gpt, llm, nlp, transformer)
 - [[05_NLP_LLMs/Multimodal_Models/Multimodal_Architectures_2026]] — 多模态模型架构 2026：从 GPT-4V 到原生多模态 AGI (共享: bert, gpt, llm, nlp, transformer)
@@ -136,6 +137,15 @@ flowchart LR
 - [[05_NLP_LLMs/Prompt_Engineering/Prompt-Engineering-in-nutshell]] — Prompt Engineering 速成指南
 - [[05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering_for_dummy]] — Prompt_Engineering_for_dummy
 - [[_synthesis/llm-nlp|Llm Nlp]]
+
+- [[05_NLP_LLMs/LLM_Architectures/README|LLM 架构目录]]
+- [[instructor_overview|Instructor 结构化输出库概览]]
+- [[outlines_overview|Outlines 受控生成框架概览]]
+- [[perplexity_overview|Perplexity AI 概览]]
+- [[05_NLP_LLMs/Multimodal_Models/README|多模态模型目录]]
+- [[05_NLP_LLMs/Prompt_Engineering/README|提示词工程与结构化输出 (Prompt Engineering & Structured Output)]]
+- [[05_NLP_LLMs/Reasoning_Models/README|推理模型目录]]
+- [[Transformer_Training_vs_Inference|Transformer 在大模型训练与推理中的应用]]
 
 ## 本期新增
 

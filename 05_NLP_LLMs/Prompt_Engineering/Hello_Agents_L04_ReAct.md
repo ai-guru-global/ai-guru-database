@@ -22,8 +22,12 @@ lifecycle: draft
 tier: supporting
 created: 2026-06-12
 updated: 2026-06-12
----
+aliases:
+  - "Hello Agents L04 React"
+  - "Hello Agents L04 ReAct"
+  - Hello_Agents_L04_ReAct
 
+---
 # Hello-Agents L04：智能体经典范式构建
 
 > **一句话理解**: 本章通过原生 Python 代码（基于 HelloAgentsLLM 客户端）实现三种经典 Agent 范式——**ReAct**（边想边做）、**Plan-and-Solve**（先规划后执行）、**Reflection**（自我反思修正），帮助学习者穿透框架表象，理解 Agent 内部循环机制。

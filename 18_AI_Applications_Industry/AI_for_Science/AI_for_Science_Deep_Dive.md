@@ -5,8 +5,13 @@ tags: ["ai-for-science", "alphafold", "drug-discovery", "weather-prediction", "m
 summary: "> **一句话理解**: AI for Science 是用深度学习解决自然科学的核心问题——预测蛋白质结构、发现新药、模拟天气、设计新材料，它正在重塑科学研究的方式，从「实验驱动」走向「AI 驱动的科学发现」。"
 created: 2026-06-04
 updated: 2026-06-04
----
+tier: supporting
+aliases:
+  - "Ai For Science Deep Dive"
+  - "AI for Science Deep Dive"
+  - AI_for_Science_Deep_Dive
 
+---
 # AI for Science 深度解读: 从 AlphaFold 到科学基础模型
 
 > **一句话理解**: AI for Science 是用深度学习解决自然科学的核心问题——预测蛋白质结构、发现新药、模拟天气、设计新材料，它正在重塑科学研究的方式，从「实验驱动」走向「AI 驱动的科学发现」。

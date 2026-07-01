@@ -5,8 +5,13 @@ tags: [inference, autoscaling, load-balancing, kubernetes, gpu, performance]
 summary: "> 推理流量波动大、成本高，弹性扩缩容和智能路由是控制成本与保障 SLO 的关键。"
 created: 2026-06-15
 updated: 2026-06-15
----
+tier: supporting
+aliases:
+  - "Inference Autoscaling And Load Balancing"
+  - "Inference Autoscaling and Load Balancing"
+  - Inference_Autoscaling_and_Load_Balancing
 
+---
 # 推理弹性扩缩容与负载均衡
 
 > LLM 推理的流量像海浪——平时很低，高峰时几倍，弹性扩缩容就是不被浪打翻的船。

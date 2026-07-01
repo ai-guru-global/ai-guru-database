@@ -6,8 +6,12 @@ tags: [pretraining-data, synthetic-data, data-engineering, llm-training, data-cu
 category: -synthesis
 created: 2026-06-12
 summary: ""
----
+tier: core
+aliases:
+  - "Pretraining Synthetic Data"
+  - "pretraining synthetic data"
 
+---
 # 预训练数据 × 合成数据：从规模到质量的范式转移
 
 ## 核心论点

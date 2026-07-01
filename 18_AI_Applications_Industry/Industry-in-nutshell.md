@@ -5,8 +5,12 @@ tags: ["ai-applications", "industry", "finance", "healthcare"]
 summary: '> **一句话理解**: AI 在行业中就像"智能杠杆"——找准支点（痛点），用最小的技术投入撬动最大的业务价值。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Industry In Nutshell"
+  - "Industry in nutshell"
 
+---
 # AI 行业应用速成指南
 
 > **一句话理解**: AI 在行业中就像"智能杠杆"——找准支点（痛点），用最小的技术投入撬动最大的业务价值。
@@ -418,8 +422,8 @@ flowchart TB
 
 ## 🔗 相关主题
 
-- [行业应用完整版](AI_Applications_Industry.md) —— 深入各行业案例
-- [行业应用 - 小白版](AI_Applications_Industry_for_dummy.md) —— 零基础入门
+- [行业应用完整版](./AI_Applications_Industry.md) —— 深入各行业案例
+- [行业应用 - 小白版](./AI_Applications_Industry_for_dummy.md) —— 零基础入门
 - [医疗 AI](Healthcare/) —— 医疗行业深度
 - [金融 AI](Finance/) —— 金融行业深度
 - [自动驾驶](Autonomous_Driving/) —— 自动驾驶深度

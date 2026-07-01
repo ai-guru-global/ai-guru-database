@@ -5,6 +5,7 @@ tags: ["cloud-ops", "devops", "sre", "automation", "ai-agents"]
 summary: "> 🎯 **目标**：理解云产品运维 Agent 的核心概念、架构和典型应用场景。"
 created: 2026-05-31
 updated: 2026-05-31
+tier: core
 ---
 
 # 云产品运维 Agent 速成指南

@@ -3,8 +3,12 @@ title: "大模型安全全链路：从训练投毒到推理防御"
 tags: [synthesis, llm-security, threat-landscape, defense-in-depth, prompt-injection, rag-security, agent-security, owasp]
 type: synthesis
 created: 2026-06-17
----
+tier: core
+aliases:
+  - "Synthesis Llm Security Pipeline"
+  - "synthesis llm security pipeline"
 
+---
 # 大模型安全全链路：从训练投毒到推理防御
 
 > **核心洞察**：大模型安全不是一个单点问题，而是一条从训练数据到推理部署的全链路攻防。攻击者只需突破一个环节，防御者必须在每个环节都建立纵深防线。

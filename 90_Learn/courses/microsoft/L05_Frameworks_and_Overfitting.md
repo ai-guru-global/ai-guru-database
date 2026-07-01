@@ -6,8 +6,13 @@ summary: "介绍 PyTorch 与 TensorFlow/Keras 的高低层 API 区别，以及�
 source_url: "https://raw.githubusercontent.com/microsoft/AI-For-Beginners/main/lessons/3-NeuralNetworks/05-Frameworks/README.md"
 created: "2026-06-12"
 updated: "2026-06-12"
----
+tier: supporting
+aliases:
+  - "L05 Frameworks And Overfitting"
+  - "L05 Frameworks and Overfitting"
+  - L05_Frameworks_and_Overfitting
 
+---
 # L05 - 框架简介与过拟合
 
 > **一句话理解**：真正动手训练神经网络时，你需要一个能自动求导、能在 GPU 上并行计算的框架；同时，你必须学会识别并控制过拟合——这是让模型从“背答案”变成“学规律”的关键一课。

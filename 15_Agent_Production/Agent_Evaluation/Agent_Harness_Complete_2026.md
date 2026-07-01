@@ -5,8 +5,12 @@ tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> 全面解析 Agent 评估体系：从 Agent Harness 到 GAIA、OSWorld、SWE-bench，构建可靠的 Agent 能力评估标准，并补充安全评估、多 Agent 协作、协议级测试与生产落地方法。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: core
+aliases:
+  - "Agent Harness Complete 2026"
+  - Agent_Harness_Complete_2026
 
+---
 # Agent Harness 完整指南：生产级 Agent 评估框架
 
 > 全面解析 Agent 评估体系：从 Agent Harness 到 GAIA、OSWorld、SWE-bench，构建可靠的 Agent 能力评估标准，并补充安全评估、多 Agent 协作、协议级测试与生产落地方法。

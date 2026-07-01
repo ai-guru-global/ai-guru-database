@@ -5,8 +5,13 @@ tags: ["deployment", "inference", "serving", "llm", "selection", "decision-guide
 summary: "> **一句话理解**: 面向生产环境的 LLM 推理引擎选型指南——通过统一对比维度、场景决策树和成本模型，帮助你在 vLLM、SGLang、TensorRT-LLM、TGI、Groq、llama.cpp 等引擎中做出最优选择。"
 created: "2026-06-15"
 updated: "2026-06-15"
----
+tier: core
+aliases:
+  - "Llm Inference Engine Selection Guide"
+  - "LLM Inference Engine Selection Guide"
+  - LLM_Inference_Engine_Selection_Guide
 
+---
 # LLM 推理引擎选型指南
 
 > **一句话理解**: 面向生产环境的 LLM 推理引擎选型指南——通过统一对比维度、场景决策树和成本模型，帮助你在 vLLM、SGLang、TensorRT-LLM、TGI、Groq、llama.cpp 等引擎中做出最优选择。
@@ -519,7 +524,7 @@ LLM 推理引擎选型 Checklist
 - [[10_Deployment_Inference/Inference_Engines/LMDeploy_Deep_Dive|LMDeploy 深度解析]]
 - [[10_Deployment_Inference/Inference_Engines/BentoML_Deep_Dive|BentoML 深度解析]]
 - [[10_Deployment_Inference/Inference_Engines/LiteRT_Deep_Dive|LiteRT 深度解析]]
-- [[14_AI_Gateway/LiteLLM_Deep_Dive|LiteLLM 深度解析]]
+- [[12_Architecture_Infrastructure/AI_Gateway/LiteLLM_Deep_Dive|LiteLLM 深度解析]]
 
 ---
 
@@ -531,4 +536,4 @@ LLM 推理引擎选型 Checklist
 - [[10_Deployment_Inference/README|模型部署与推理目录]]
 - [[10_Deployment_Inference/Deployment_Inference_2026|部署推理 2026 趋势]]
 - [[10_Deployment_Inference/Cost/LLM_Cost_Optimization|LLM 成本优化]]
-- [[14_AI_Gateway/AI_Gateway_2026|AI Gateway 2026]]
+- [[12_Architecture_Infrastructure/AI_Gateway/AI_Gateway_2026|AI Gateway 2026]]

@@ -5,8 +5,13 @@ tags: ["fundamentals", "math", "algorithms", "basics"]
 summary: '> **一句话秒懂**: 线性代数就是教你怎么把现实世界的东西（图片、文字、声音）变成一堆数字，然后对这些数字进行"变形"和"加工"。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Linear Algebra For Dummy"
+  - "Linear Algebra for dummy"
+  - Linear_Algebra_for_dummy
 
+---
 # 线性代数 - 小白版
 
 > **一句话秒懂**: 线性代数就是教你怎么把现实世界的东西（图片、文字、声音）变成一堆数字，然后对这些数字进行"变形"和"加工"。

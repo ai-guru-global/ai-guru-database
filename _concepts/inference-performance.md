@@ -28,8 +28,11 @@ lifecycle: draft
 tier: core
 created: 2026-06-15
 updated: 2026-06-15
----
+aliases:
+  - "Inference Performance"
+  - "inference performance"
 
+---
 # Inference Performance（推理性能）
 
 ## 核心要点

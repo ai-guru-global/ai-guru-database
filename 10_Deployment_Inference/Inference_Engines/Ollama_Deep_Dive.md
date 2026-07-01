@@ -5,8 +5,12 @@ tags: ["deployment", "inference", "serving", "ollama", "llama.cpp", "local", "gg
 summary: "> **一句话理解**: Ollama 让在本地运行大模型变得超级简单——一条命令就能跑 Llama、Mistral、Qwen 等模型，是开发者和个人用户本地原型与轻量生产的首选。"
 created: "2026-05-31"
 updated: "2026-06-15"
----
+tier: core
+aliases:
+  - "Ollama Deep Dive"
+  - Ollama_Deep_Dive
 
+---
 # Ollama: 本地大模型部署平台
 
 > **一句话理解**: Ollama 让在本地运行大模型变得超级简单——一条命令就能跑 Llama、Mistral、Qwen 等模型，是开发者和个人用户本地原型与轻量生产的首选。

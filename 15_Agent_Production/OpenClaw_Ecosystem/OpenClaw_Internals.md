@@ -6,8 +6,13 @@ summary: "从《OpenClaw 从入门到精通》第三、四部分（Ch9-16）提�
 source: "yeasy/openclaw_guide (Ch9-16)"
 created: "2026-06-16"
 updated: "2026-06-16"
----
+tier: supporting
+aliases:
+  - "Openclaw Internals"
+  - "OpenClaw Internals"
+  - OpenClaw_Internals
 
+---
 # OpenClaw 内部机制与生产优化
 
 > 本页提炼自《OpenClaw 从入门到精通》第三、四部分（第 9-16 章），聚焦底层原理与生产实战。基础使用与配置详见 [[OpenClaw_Complete_Guide]]。

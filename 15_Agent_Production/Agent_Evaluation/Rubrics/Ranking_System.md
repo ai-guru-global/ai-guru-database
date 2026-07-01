@@ -5,8 +5,12 @@ tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> Methodology for comparing and ranking AI agents"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Ranking System"
+  - Ranking_System
 
+---
 # Ranking System
 
 > Methodology for comparing and ranking AI agents

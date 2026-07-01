@@ -4,9 +4,14 @@ category: 21-interviews-ai-infrastructure-engineer
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "**训练基础设施**: 计算资源调度与集群管理。"
 created: 2026-05-31
-updated: 2026-05-31
----
+updated: 2026-06-04
+tier: supporting
+aliases:
+  - "Interview Preparing"
+  - "interview preparing"
+  - interview_preparing
 
+---
 # AI Infrastructure Engineer 面试准备
 
 ## 核心职责
@@ -33,11 +38,12 @@ updated: 2026-05-31
 - **性能与稳定性**: SLA 与成本指标。
 
 ---
-*Last updated: 2026-02-26*
+*Last updated: 2026-06-04*
 
 ## Related
 
-- [[21_Interviews/AI_Data_Analyst/company_level_question_bank]] — AI Data Analyst 按公司/级别区分的题库 (共享: career, experience, interviews, practitioners)
-- [[21_Interviews/AI_Data_Analyst/interview_answers]] — AI Data Analyst 面试题实例答案 (共享: career, experience, interviews, practitioners)
-- [[21_Interviews/AI_Data_Analyst/interview_preparing]] — AI Data Analyst 面试准备 (共享: career, experience, interviews, practitioners)
-- [[21_Interviews/AI_Data_Analyst/question_bank]] — AI Data Analyst 题库 (共享: career, experience, interviews, practitioners)
+- [[21_Interviews/AI_Infrastructure_Engineer/company_level_question_bank|AI Infrastructure Engineer 按公司/级别区分的题库]]
+- [[21_Interviews/AI_Infrastructure_Engineer/interview_answers|AI Infrastructure Engineer 面试题实例答案]]
+- [[21_Interviews/AI_Infrastructure_Engineer/question_bank|AI Infrastructure Engineer 题库]]
+- [[21_Interviews/README|AI 面试准备 (Interviews)]]
+- [[21_Interviews/jobs|AI 相关岗位与工种清单]]

@@ -17,8 +17,12 @@ provenance:
 base_confidence: 0.80
 lifecycle: draft
 lifecycle_changed: 2026-06-01
----
+tier: core
+aliases:
+  - "Python Data Science Pipeline"
+  - "python data science pipeline"
 
+---
 # Python 基础 × 数据科学: AI 入门者的完整工具链
 
 ## The Connection

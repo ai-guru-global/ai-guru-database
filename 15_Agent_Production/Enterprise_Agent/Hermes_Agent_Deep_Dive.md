@@ -5,8 +5,12 @@ tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> **一句话理解**: Hermes Agent 是专为生产环境设计的企业级 Agent 运行时框架，以安全、可靠、可审计为核心，提供完整的生命周期管理、权限控制和合规保障。"
 created: "2026-05-31"
 updated: "2026-05-31"
----
+tier: supporting
+aliases:
+  - "Hermes Agent Deep Dive"
+  - Hermes_Agent_Deep_Dive
 
+---
 # Hermes Agent: 面向企业级的 AI Agent 运行时框架
 
 > **一句话理解**: Hermes Agent 是专为生产环境设计的企业级 Agent 运行时框架，以安全、可靠、可审计为核心，提供完整的生命周期管理、权限控制和合规保障。

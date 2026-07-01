@@ -5,8 +5,12 @@ tags: ["transformer", "architecture", "encoder-decoder", "positional-encoding"]
 summary: "> **一句话理解**: Transformer 用 Self-Attention 取代循环和卷积，让序列中任意两个位置都能直接交互——并行训练、全局感知、高度可扩展，成为当代 AI 的统一基础架构。"
 created: 2026-06-12
 updated: 2026-06-12
----
+tier: supporting
+aliases:
+  - "Transformer Architecture"
+  - Transformer_Architecture
 
+---
 # Transformer 架构详解
 
 > **一句话理解**: Transformer 用 Self-Attention 取代循环和卷积，让序列中任意两个位置都能直接交互——并行训练、全局感知、高度可扩展，成为当代 AI 的统一基础架构。
@@ -28,7 +32,7 @@ updated: 2026-06-12
 
 - [[05_NLP_LLMs/Transformer_Revolution/Self_Attention_Mechanism]] — Self-Attention 机制深入剖析
 - [[05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution]] — Transformer 革命全景
-- [[20_Papers/Architecture/Attention_Is_All_You_Need_Deep_Dive]] — 原始论文深度解读
+- [[20_Papers_and_Research/Architecture/Attention_Is_All_You_Need_Deep_Dive]] — 原始论文深度解读
 
 ---
 
@@ -207,4 +211,4 @@ class MultiHeadAttention(nn.Module):
 - [[05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution]] — Transformer 革命全景
 - [[05_NLP_LLMs/NLP_Fundamentals]] — NLP 基础知识
 - [[05_NLP_LLMs/LLM_Fundamentals]] — 大语言模型基础
-- [[20_Papers/Architecture/Attention_Is_All_You_Need_Deep_Dive]] — "Attention Is All You Need" 论文深度解读
+- [[20_Papers_and_Research/Architecture/Attention_Is_All_You_Need_Deep_Dive]] — "Attention Is All You Need" 论文深度解读

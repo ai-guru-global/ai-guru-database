@@ -5,8 +5,12 @@ tags: ["fundamentals", "math", "algorithms", "basics"]
 summary: '> **一句话理解**: 分布式训练就像"工厂流水线" —— 数据并行是开多条产线同时生产，模型并行是把大机器拆成多个零件分别组装，流水线并行则是按工序分段加工。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Distributed Systems"
+  - Distributed_Systems
 
+---
 # 分布式系统 (Distributed Systems)
 
 > **一句话理解**: 分布式训练就像"工厂流水线" —— 数据并行是开多条产线同时生产，模型并行是把大机器拆成多个零件分别组装，流水线并行则是按工序分段加工。

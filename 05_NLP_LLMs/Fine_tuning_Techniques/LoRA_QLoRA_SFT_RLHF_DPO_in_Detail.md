@@ -5,8 +5,13 @@ tags: ["nlp", "llm", "lora", "qlora", "sft", "rlhf", "dpo", "fine-tuning", "alig
 summary: "> **一句话理解**: 把大模型微调的五个核心概念串成一条线——SFT 教它说话，RLHF/DPO 教它讨人喜欢，LoRA/QLoRA 让这一切能在普通显卡上跑起来。"
 created: "2026-06-16"
 updated: "2026-06-16"
----
+tier: supporting
+aliases:
+  - "Lora Qlora Sft Rlhf Dpo In Detail"
+  - "LoRA QLoRA SFT RLHF DPO in Detail"
+  - LoRA_QLoRA_SFT_RLHF_DPO_in_Detail
 
+---
 # LoRA / QLoRA / SFT / RLHF / DPO 大白话详解
 
 > **一句话理解**：训练 ChatGPT 这类模型，本质上分三步——先用 **SFT** 教会它听懂人话，再用 **RLHF/DPO** 让它回答得更讨喜，而 **LoRA/QLoRA** 是让你能用普通电脑跑完这两步的省钱技巧。
@@ -588,10 +593,10 @@ print(tokenizer.decode(outputs[0], skip_special_tokens=True))
 ### 主章节深度文档
 
 - [Fine_tuning_Techniques_for_dummy.md](./Fine_tuning_Techniques_for_dummy.md) — 微调技术小白版
-- [PEFT_2026/PEFT_2026.md](./PEFT_2026/PEFT_2026.md) — PEFT 2026 完全指南
-- [Fine_tuning_Strategies.md](../../07_Model_Training/Fine_tuning_Strategies.md) — 微调策略完全指南
-- [TRL_RLHF_DPO_Guide.md](../../07_Model_Training/TRL_RLHF_DPO_Guide.md) — TRL 实战：RLHF 与 DPO
-- [GRPO_and_New_Alignment_Methods.md](../../07_Model_Training/GRPO_and_New_Alignment_Methods.md) — GRPO 与新一代对齐方法
+- [PEFT_2026.md](./PEFT_2026.md) — PEFT 2026 完全指南
+- [Fine_tuning_Strategies.md](../../05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Strategies.md) — 微调策略完全指南
+- [TRL_RLHF_DPO_Guide.md](../../07_Model_Training/Alignment/TRL_RLHF_DPO_Guide.md) — TRL 实战：RLHF 与 DPO
+- [GRPO_and_New_Alignment_Methods.md](../../07_Model_Training/Alignment/GRPO_and_New_Alignment_Methods.md) — GRPO 与新一代对齐方法
 
 ### 关键论文
 

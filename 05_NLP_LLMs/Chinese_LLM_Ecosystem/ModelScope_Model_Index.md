@@ -6,8 +6,13 @@ summary: "ModelScope 上 15 家中国大模型厂商全部 1,621 个官方模型
 created: 2026-06-19
 updated: 2026-06-23
 source: https://modelscope.cn/
----
+tier: supporting
+aliases:
+  - "Modelscope Model Index"
+  - "ModelScope Model Index"
+  - ModelScope_Model_Index
 
+---
 # ModelScope 全量模型索引 (ModelScope Model Index)
 
 > **一句话理解**: 本页是 ModelScope 魔搭社区上 15 家中国大模型厂商全部 **1,621 个官方模型** 的完整索引——按厂商分组、按下载量排序，便于检索与选型。

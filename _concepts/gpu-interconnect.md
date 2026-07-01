@@ -26,8 +26,11 @@ lifecycle: stable
 tier: core
 created: 2026-06-04
 updated: 2026-06-04
----
+aliases:
+  - "Gpu Interconnect"
+  - "gpu interconnect"
 
+---
 # NVLink 与 GPU 互联技术 (GPU Interconnect)
 
 > GPU 的算力再强，如果彼此之间无法高效通信，整体性能就上不去。

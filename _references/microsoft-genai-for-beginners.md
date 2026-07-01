@@ -6,8 +6,12 @@ summary: "Microsoft 官方开源的 21 课生成式 AI 初学者课程引用索�
 created: "2026-06-12"
 updated: "2026-06-12"
 source_url: "https://github.com/microsoft/generative-ai-for-beginners/blob/main/translations/zh-CN/README.md"
----
+tier: peripheral
+aliases:
+  - "Microsoft Genai For Beginners"
+  - "microsoft genai for beginners"
 
+---
 # Microsoft Generative AI For Beginners
 
 这是 Microsoft 官方开源课程 **Generative AI for Beginners**（版本 3）的外部源引用索引。

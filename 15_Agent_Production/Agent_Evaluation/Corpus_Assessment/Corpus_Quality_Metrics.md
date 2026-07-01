@@ -5,8 +5,12 @@ tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> 量化评估语料库质量的完整指标体系，从准确性、完整性、一致性、时效性四个角度全面衡量"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Corpus Quality Metrics"
+  - Corpus_Quality_Metrics
 
+---
 # 语料库质量指标体系
 
 > 量化评估语料库质量的完整指标体系，从准确性、完整性、一致性、时效性四个角度全面衡量

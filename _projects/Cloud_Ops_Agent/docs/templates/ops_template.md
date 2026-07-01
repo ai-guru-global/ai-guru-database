@@ -5,6 +5,7 @@ tags: ["cloud-ops", "devops", "sre", "automation"]
 summary: "> 🎯 **目标**: 为运维工程师提供日常管理 Cloud Ops Agent [组件/功能]的实操指南，涵盖策略配置、权限管理、异常处理与监控。"
 created: 2026-05-31
 updated: 2026-05-31
+tier: supporting
 ---
 
 # [文档标题]

@@ -22,8 +22,12 @@ lifecycle: draft
 tier: supporting
 created: 2026-06-12
 updated: 2026-06-12
----
+aliases:
+  - "Hello Agents L08 Memory Rag"
+  - "Hello Agents L08 Memory RAG"
+  - Hello_Agents_L08_Memory_RAG
 
+---
 # Hello-Agents L08：记忆与检索
 
 > **一句话理解**: 本章为 HelloAgents 框架引入 **记忆系统** 与 **RAG（检索增强生成）**，借鉴人类记忆分层（感觉/工作/长期记忆）解决 LLM 无状态遗忘与内置知识静态有限的问题。

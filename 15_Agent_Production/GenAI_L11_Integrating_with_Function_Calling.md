@@ -8,8 +8,13 @@ updated: "2026-06-12"
 source_url: "https://raw.githubusercontent.com/microsoft/generative-ai-for-beginners/main/translations/zh-CN/11-integrating-with-function-calling/README.md"
 course: "Microsoft Generative AI for Beginners"
 lesson_number: 11
----
+tier: supporting
+aliases:
+  - "Genai L11 Integrating With Function Calling"
+  - "GenAI L11 Integrating with Function Calling"
+  - GenAI_L11_Integrating_with_Function_Calling
 
+---
 ## 学习目标
 
 完成本课程后，你将能够：

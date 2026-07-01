@@ -5,8 +5,13 @@ tags: ["cncf", "kubernetes", "kagent", "agent", "aiops", "devops", "llm"]
 summary: "> **一句话理解**: kagent 是 CNCF 沙箱级的「在 Kubernetes 里声明式运行 AI Agent」的框架——把 Agent 变成 K8s CRD(配模型+工具+指令),由控制器跑 Agent 循环,天生支持 GitOps/RBAC/多租户,专为 DevOps 自动化设计。"
 created: "2026-06-16"
 updated: "2026-06-16"
----
+tier: supporting
+aliases:
+  - "Kagent Deep Dive"
+  - "kagent Deep Dive"
+  - kagent_Deep_Dive
 
+---
 # kagent: Kubernetes 原生的 DevOps AI Agent 框架
 
 > **一句话理解**: kagent 是 CNCF 沙箱级的「在 Kubernetes 里声明式运行 AI Agent」的框架——把 Agent 变成 K8s CRD(配模型+工具+指令),由控制器跑 Agent 循环,天生支持 GitOps/RBAC/多租户,专为 DevOps 自动化设计。

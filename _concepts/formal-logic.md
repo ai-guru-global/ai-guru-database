@@ -5,8 +5,25 @@ tags: ["formal-logic", "reasoning", "symbolic-ai", "knowledge-representation"]
 summary: "形式逻辑是 AI 推理能力的数学基础——从命题逻辑到一阶逻辑，再到现代 LLM 的神经符号推理。"
 created: 2026-06-12
 updated: 2026-06-12
+tier: core
+aliases:
+  - "Formal Logic"
+  - "formal logic"
+lifecycle: stable
+provenance:
+  extracted: 0.70
+  inferred: 0.25
+  ambiguous: 0.05
+base_confidence: 0.8
+sources:
+  - 05_NLP_LLMs/Reasoning_Models/o1_Class_Reasoning_Models.md
+  - 05_NLP_LLMs/Reasoning_Models/Process_Reward_Models.md
+relationships:
+  - target: "_concepts/cot-react-reasoning-prompt"
+    type: related_to
+  - target: "_concepts/reasoning-models"
+    type: related_to
 ---
-
 # 形式逻辑 (Formal Logic)
 
 > 形式逻辑是 AI 推理能力的数学基础——从命题逻辑到一阶逻辑，再到现代 LLM 的神经符号推理。

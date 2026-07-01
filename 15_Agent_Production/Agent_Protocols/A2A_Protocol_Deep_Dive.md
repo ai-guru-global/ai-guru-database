@@ -8,9 +8,13 @@ sources:
 created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
-tier: core
----
+tier: supporting
+aliases:
+  - "A2a Protocol Deep Dive"
+  - "A2A Protocol Deep Dive"
+  - A2A_Protocol_Deep_Dive
 
+---
 # Agent-to-Agent 协议 (A2A) 深度解读
 
 > **一句话理解**: Google 提出的 Agent-to-Agent (A2A) 协议,定义了 AI Agent 之间互操作的开放标准,是多 Agent 系统的通信基石。
@@ -70,5 +74,5 @@ submitted -> working -> completed/failed
 2. **专家委托**: 通用 Agent 将专业任务委托给领域专家 Agent
 3. **工作流编排**: 多个 Agent 协作完成复杂业务流程
 
-> **关联**: -> [[06_Reinforcement_Learning/AI_Agents/MCP_Implementation_Guide|MCP 实现指南]] | [[15_Agent_Production|Agent 生产]] | [[14_AI_Gateway|AI 网关]]
+> **关联**: -> [[06_Reinforcement_Learning/AI_Agents/MCP_Implementation_Guide|MCP 实现指南]] | [[15_Agent_Production/README|Agent 生产]] | [[12_Architecture_Infrastructure/AI_Gateway|AI 网关]]
 

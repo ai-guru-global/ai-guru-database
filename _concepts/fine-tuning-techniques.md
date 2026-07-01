@@ -20,7 +20,7 @@ relationships:
   type: related_to
 sources:
 - 05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques.md
-- 05_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/PEFT_2026.md
+- 05_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026.md
 - 05_NLP_LLMs/Fine_tuning_Techniques/LoRA_QLoRA_SFT_RLHF_DPO_in_Detail.md
 summary: 微调技术从全参数微调发展到参数高效微调（LoRA/QLoRA/DoRA）和基于人类反馈的对齐（RLHF/DPO）。QLoRA可在单张消费级ai-hardware上微调70B模型，DPO绕过奖励模型简化对齐流程。2026年DoRA、PiSSA等新变体持续提升微调质量。
 provenance:
@@ -33,8 +33,11 @@ lifecycle_changed: 2026-06-16
 tier: core
 created: 2026-05-31 00:00:00+00:00
 updated: 2026-06-16 00:00:00+00:00
----
+aliases:
+  - "Fine Tuning Techniques"
+  - "fine tuning techniques"
 
+---
 # 微调技术
 
 ## 概述

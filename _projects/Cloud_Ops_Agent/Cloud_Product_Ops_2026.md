@@ -5,6 +5,7 @@ tags: ["cloud-ops", "devops", "sre", "automation", "ai-agents"]
 summary: "> **一句话理解**: 云产品运维 Agent 是专门为云服务提供商设计的 AI Agent，能够自主执行产品监控、问题诊断、容量管理、变更操作等运维任务，通过 Agent Harness 体系确保安全可靠地运营云产品。"
 created: "2026-05-31"
 updated: "2026-05-31"
+tier: core
 ---
 
 # Cloud Product Ops 2026: 云产品运维 Agent 体系

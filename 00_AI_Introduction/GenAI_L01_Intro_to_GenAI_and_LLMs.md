@@ -8,8 +8,13 @@ updated: "2026-06-12"
 source_url: "https://raw.githubusercontent.com/microsoft/generative-ai-for-beginners/main/translations/zh-CN/01-introduction-to-genai/README.md"
 course: "Microsoft Generative AI for Beginners"
 lesson_number: 1
----
+tier: supporting
+aliases:
+  - "Genai L01 Intro To Genai And Llms"
+  - "GenAI L01 Intro to GenAI and LLMs"
+  - GenAI_L01_Intro_to_GenAI_and_LLMs
 
+---
 ## 学习目标
 
 完成本课后，你将了解：

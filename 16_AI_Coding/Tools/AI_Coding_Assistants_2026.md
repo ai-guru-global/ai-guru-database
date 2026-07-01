@@ -5,8 +5,13 @@ tags: ["ai-coding", "code-generation", "cursor", "github-copilot"]
 summary: '> **一句话理解**: AI编程已从"代码补全"进化为"结对编程伙伴"——Cursor以72%代码接受率领跑，Claude Code在复杂任务中表现卓越，而Devin代表完全自主编码的未来。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Ai Coding Assistants 2026"
+  - "AI Coding Assistants 2026"
+  - AI_Coding_Assistants_2026
 
+---
 # AI 编程助手 2026 年全景报告
 
 > **一句话理解**: AI 编程已从"代码补全"进化为"结对编程伙伴"——Cursor 以 72% 代码接受率领跑，Claude Code 在复杂任务中表现卓越，而 Devin 代表完全自主编码的未来。

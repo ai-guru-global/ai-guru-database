@@ -5,8 +5,9 @@ tags: ["chinese-llm", "deepseek", "qwen", "glm", "kimi", "minimax", "baidu", "ba
 summary: "系统梳理中国 15 家大模型厂商的技术路线、模型矩阵、核心创新与 Benchmark 对比，覆盖第一梯队（DeepSeek/Qwen/GLM/Kimi/MiniMax/MiMo）和第二梯队（百度/百川/零一万物/阶跃星辰/腾讯/讯飞/商汤/InternLM/字节跳动）。"
 created: 2026-06-01
 updated: 2026-06-19
----
+tier: supporting
 
+---
 # 中国大模型生态全景 (Chinese LLM Ecosystem)
 
 > **一句话理解**: 中国大模型已经从"百模大战"进入"十五强格局"——DeepSeek 用最低成本打败巨头，Qwen 打造最全开源舰队，百度文心依托搜索生态，腾讯混元凭借视频生成，讯飞星火融合语音基因，字节豆包靠超级App分发——它们共同构成了全球第二活跃的大模型创新生态。

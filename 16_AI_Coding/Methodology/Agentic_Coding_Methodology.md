@@ -5,8 +5,12 @@ tags: ["ai-coding", "agentic-coding", "multi-agent-systems", "software-engineeri
 summary: "> **一句话理解**: Agentic Coding 是软件工程的范式转移——从“人编写代码”转变为“人指挥一个由多个 AI 专家组成的团队协作编写代码”。"
 created: 2026-06-04
 updated: 2026-06-04
----
+tier: supporting
+aliases:
+  - "Agentic Coding Methodology"
+  - Agentic_Coding_Methodology
 
+---
 # Agentic Coding Methodology 2026: Multi-Agent Software Engineering
 
 > **一句话理解**: Agentic Coding 是软件工程的范式转移——从“人编写代码”转变为“人指挥一个由多个 AI 专家组成的团队协作编写代码”。

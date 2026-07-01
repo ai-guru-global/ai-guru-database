@@ -25,8 +25,10 @@ lifecycle: stable
 tier: core
 created: 2026-06-16
 updated: 2026-06-16
----
+aliases:
+  - Kserve
 
+---
 # KServe
 
 > Kubernetes 上的「模型服务机场」——让模型推理服务的部署、扩缩、灰度、观测像航班一样标准化。

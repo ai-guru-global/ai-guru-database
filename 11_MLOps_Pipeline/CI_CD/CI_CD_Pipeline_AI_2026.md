@@ -5,8 +5,13 @@ tags: ["ai-ops", "observability", "monitoring", "incident-response"]
 summary: '> **一句话理解**: AI 系统的 CI/CD 就像"智能工厂的生产线"——不仅自动测试和部署代码，还要自动训练模型、评估质量、监控性能，确保每次更新都是安全可靠的。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Ci Cd Pipeline Ai 2026"
+  - "CI CD Pipeline AI 2026"
+  - CI_CD_Pipeline_AI_2026
 
+---
 # AI 系统 CI/CD 流水线 2026 (CI/CD Pipeline for AI)
 
 > **一句话理解**: AI 系统的 CI/CD 就像"智能工厂的生产线"——不仅自动测试和部署代码，还要自动训练模型、评估质量、监控性能，确保每次更新都是安全可靠的。
@@ -363,11 +368,11 @@ git tag -a data-v2.1 -m "Training data version 2.1"
 
 ## 7. 与其他章节的关联
 
-- [MLOps 流水线](README.md) — 训练到部署的完整流程
-- [模型评估](../08_Model_Evaluation/README.md) — 质量门禁的评估方法
-- [部署推理](../10_Deployment_Inference/README.md) — 模型服务化技术
-- [混沌工程](../13_AI_Ops/Chaos_Engineering_AI.md) — 故障注入测试
-- [AI Ops 概述](../13_AI_Ops/AI_Ops_2026.md) — 运维监控体系
+- [MLOps 流水线](./README.md) — 训练到部署的完整流程
+- [模型评估](../../08_Model_Evaluation/README.md) — 质量门禁的评估方法
+- [部署推理](../../10_Deployment_Inference/README.md) — 模型服务化技术
+- [混沌工程](../../13_AI_Ops/SRE_Reliability/Chaos_Engineering_AI.md) — 故障注入测试
+- [AI Ops 概述](13_AI_Ops/AI_Ops_2026.md) — 运维监控体系
 
 ---
 
@@ -376,7 +381,9 @@ git tag -a data-v2.1 -m "Training data version 2.1"
 ## Related
 
 - [[13_AI_Ops/AIOps-in-nutshell.md|AIOps-in-nutshell]]
-- [[13_AI_Ops/AI_Incident_Response_Playbook.md|AI_Incident_Response_Playbook]]
+- [[13_AI_Ops/SRE_Reliability/AI_Incident_Response_Playbook|AI_Incident_Response_Playbook]]
 - [[13_AI_Ops/AI_Ops_for_dummy.md|AI_Ops_for_dummy]]
 - [[13_AI_Ops/README.md|13_AI_Ops README]]
 - [[13_AI_Ops/README_for_dummy.md|README_for_dummy]]
+- [[tekton]]
+- [[argo-rollouts]]

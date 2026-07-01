@@ -1,0 +1,152 @@
+---
+title: "训练任务诊断工作流"
+category: 07-model-training
+subcategory: monitoring
+tags: ["training", "troubleshooting", "workflow", "pytorch", "kubernetes", "k8s", "alibaba-cloud"]
+summary: "一份可落地的 AI 训练任务诊断工作流：从告警触发到根因定位，附带每个环节的具体命令与判断标准。"
+created: 2026-06-26
+updated: 2026-06-26
+tier: supporting
+---
+
+# 训练任务诊断工作流
+
+> **一句话理解**: 训练任务出问题时，按这个工作流从「K8s 层 → 框架层 → 代码层」逐层下钻，避免盲目翻日志。
+
+---
+
+## 总线
+
+```text
+告警/用户反馈
+  ↓
+1. 确认 Job/Pod 状态
+  ├── Pending → 调度/资源问题
+  ├── Running 但无进展 → 通信/代码问题
+  ├── Failed → 查看日志定位
+  └── OOMKilled → 显存/内存问题
+  ↓
+2. 查看日志与事件
+  ├── 镜像/启动错误
+  ├── NCCL/通信错误
+  ├── CUDA/显存错误
+  ├── 数据/代码错误
+  └── .NaN/loss 异常
+  ↓
+3. 采集指标
+  ├── GPU 利用率
+  ├── 显存
+  ├── 网络带宽
+  └── 磁盘 IO
+  ↓
+4. 根因定位与修复
+```
+
+---
+
+## 步骤 1：确认状态
+
+```bash
+# 查看 Job
+kubectl get pytorchjob <job> -n <ns>
+
+# 查看 Pod
+kubectl get pods -n <ns> -l training.kubeflow.org/job-name=<job>
+
+# 查看事件
+kubectl describe pytorchjob <job> -n <ns>
+```
+
+| 状态 | 下一步 |
+|------|--------|
+| Pending | 检查资源、节点、镜像拉取 |
+| ContainerCreating | 检查 PVC/镜像/Secret |
+| Running 但 loss 不更新 | 检查 NCCL/数据加载 |
+| OOMKilled | 跳到显存排查 |
+| Error | 查看完整日志 |
+
+---
+
+## 步骤 2：查看日志
+
+```bash
+# 查看 master/leader 日志
+kubectl logs <pod> -n <ns> --tail=500
+
+# 查看所有 worker 最后 100 行
+kubectl logs -n <ns> -l training.kubeflow.org/job-name=<job> --tail=100
+
+# 查看之前崩溃的容器日志
+kubectl logs <pod> -n <ns> --previous
+```
+
+**常见关键字**:
+- `RuntimeError: CUDA out of memory`
+- `NCCL timeout`
+- `Connection refused`
+- `No such file or directory`
+- `loss is nan`
+- `KeyboardInterrupt` / `SIGTERM`
+
+---
+
+## 步骤 3：检查资源指标
+
+```bash
+# GPU 利用率
+kubectl exec -it <pod> -n <ns> -- nvidia-smi dmon
+
+# 显存
+kubectl exec -it <pod> -n <ns> -- nvidia-smi -q -d MEMORY
+
+# 进程
+kubectl exec -it <pod> -n <ns> -- ps aux | grep python
+
+# 网络
+kubectl exec -it <pod> -n <ns> -- ibstat
+
+# 磁盘
+kubectl exec -it <pod> -n <ns> -- df -h
+```
+
+---
+
+## 步骤 4：NCCL 通信排查
+
+```bash
+# 开启 NCCL 调试
+kubectl exec -it <pod> -n <ns> -- env NCCL_DEBUG=INFO torchrun ...
+
+# 测试 IB 带宽
+kubectl exec -it <pod> -n <ns> -- ib_write_bw -d mlx5_0
+
+# 查看 NCCL 拓扑
+NCCL_TOPO_DUMP_FILE=topo.xml torchrun ...
+```
+
+| 现象 | 根因 | 处理 |
+|------|------|------|
+| `NCCL timeout` | 网络不通 / 防火墙 | 检查 IB/RoCE、NetworkPolicy |
+| `NCCL internal error` | 驱动/库版本不匹配 | 升级 NCCL/CUDA/驱动 |
+| 速度远低于理论 | 收敛比 / PFC | 检查交换机配置 |
+
+---
+
+## 步骤 5：数据与代码排查
+
+```bash
+# 进入容器检查数据
+kubectl exec -it <pod> -n <ns> -- ls /data
+kubectl exec -it <pod> -n <ns> -- python -c "import datasets; print(datasets.load_dataset(...))"
+
+# 单卡小批量验证
+kubectl exec -it <pod> -n <ns> -- python train.py --batch_size 1 --max_steps 10
+```
+
+---
+
+## Related
+
+- [[07_Model_Training/Monitoring/LLM_Fine_Tuning_Job_Failure_Runbook_on_K8s|LLM 微调任务 K8s 失败排障]]
+- [[07_Model_Training/Distributed_Training/Distributed_Training_Hang_Runbook|分布式训练 Hang 排障]]
+- [[13_AI_Ops/SRE_Reliability/K8s_AI_Troubleshooting_Cheat_Sheet|K8s for AI 排查速查表]]

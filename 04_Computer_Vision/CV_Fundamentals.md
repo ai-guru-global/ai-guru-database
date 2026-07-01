@@ -5,8 +5,13 @@ tags: ["computer-vision", "cnn", "object-detection", "image-segmentation", "imag
 summary: "> **一句话理解**: 计算机视觉赋予机器'眼睛'——从分类、检测到分割、生成，核心骨干从 CNN 演进到 Vision Transformer，而 YOLO 系列让实时目标检测走进千家万户。"
 created: 2026-06-12
 updated: 2026-06-12
----
+tier: supporting
+aliases:
+  - "Cv Fundamentals"
+  - "CV Fundamentals"
+  - CV_Fundamentals
 
+---
 # 计算机视觉基础 (Computer Vision Fundamentals)
 
 > **一句话理解**: 计算机视觉赋予机器"眼睛"——从分类、检测到分割、生成，核心骨干从 CNN 演进到 Vision Transformer，而 YOLO 系列让实时目标检测走进千家万户。

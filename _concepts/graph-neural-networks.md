@@ -21,8 +21,11 @@ lifecycle: stable
 tier: core
 created: 2026-06-04
 updated: 2026-06-04
----
+aliases:
+  - "Graph Neural Networks"
+  - "graph neural networks"
 
+---
 # 图神经网络 (Graph Neural Networks)
 
 > 深度学习三大架构之一（CNN/RNN/GNN），处理万物之间的连接。

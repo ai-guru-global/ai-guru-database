@@ -15,9 +15,13 @@ sources:
 created: 2026-06-15
 updated: 2026-06-16
 lifecycle: reviewed
-tier: core
----
+tier: supporting
+aliases:
+  - "T Head Ppu Deep Dive"
+  - "T Head PPU Deep Dive"
+  - T_Head_PPU_Deep_Dive
 
+---
 # 平头哥 T-Head 真武 PPU 深度解析 2026
 
 > **一句话理解**: 平头哥是阿里巴巴旗下的芯片公司，其 2026 年主推的「真武」PPU 系列已跻身国产 AI 芯片第一梯队，在训练/推理一体化、万卡集群部署和生态兼容性上直接对标 NVIDIA H20/A800。
@@ -387,4 +391,4 @@ IoT / 端侧芯片:
 
 ### 关联 Wiki 页面
 
-> **关联**: -> [[01_Fundamentals/AI_Hardware/Chinese_AI_Chips_Deep_Dive|国产 AI 芯片深度解析]] | [[01_Fundamentals/AI_Hardware/AI_Hardware_2026|AI 硬件与芯片 2026 年全景报告]] | [[01_Fundamentals/AI_Hardware/NVIDIA_AMD_GPU_Deep_Dive|NVIDIA & AMD GPU 深度解析]] | [[12_Architecture_Infrastructure/AI_Infrastructure_2026|AI 基础设施 2026]] | [[07_Model_Training/Distributed_Training/Distributed_Training_2026|分布式训练 2026]] | [[01_Fundamentals/AI_Hardware/T_Head_PPU_for_dummy|平头哥 PPU 大白话解读]]
+> **关联**: -> [[01_Fundamentals/AI_Hardware/Chinese_AI_Chips_Deep_Dive|国产 AI 芯片深度解析]] | [[01_Fundamentals/AI_Hardware/AI_Hardware_2026|AI 硬件与芯片 2026 年全景报告]] | [[01_Fundamentals/AI_Hardware/NVIDIA_AMD_GPU_Deep_Dive|NVIDIA & AMD GPU 深度解析]] | [[12_Architecture_Infrastructure/Architecture_Overview/AI_Infrastructure_2026|AI 基础设施 2026]] | [[07_Model_Training/Distributed_Training/Distributed_Training_2026|分布式训练 2026]] | [[01_Fundamentals/AI_Hardware/T_Head_PPU_for_dummy|平头哥 PPU 大白话解读]]

@@ -5,8 +5,13 @@ tags: ["machine-learning", "supervised", "unsupervised"]
 summary: '> **一句话秒懂**: AutoML 就像"AI 自动调参机器人"——你把数据丢进去，它帮你自动选模型、调参数、做特征，最后给你一个能用的结果。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Automl For Dummy"
+  - "AutoML for dummy"
+  - AutoML_for_dummy
 
+---
 # AutoML - 小白版
 
 > **一句话秒懂**: AutoML 就像"AI 自动调参机器人"——你把数据丢进去，它帮你自动选模型、调参数、做特征，最后给你一个能用的结果。

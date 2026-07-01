@@ -8,8 +8,13 @@ updated: "2026-06-12"
 source_url: "https://raw.githubusercontent.com/microsoft/generative-ai-for-beginners/main/translations/zh-CN/20-mistral/README.md"
 course: "Microsoft Generative AI for Beginners"
 lesson_number: 20
----
+tier: supporting
+aliases:
+  - "Genai L20 Building With Mistral"
+  - "GenAI L20 Building with Mistral"
+  - GenAI_L20_Building_with_Mistral
 
+---
 ## 学习目标
 
 本课程将涵盖以下内容：

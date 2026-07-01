@@ -5,8 +5,12 @@ tags: ["ai-coding", "code-generation", "cursor", "github-copilot"]
 summary: "> **一句话**: Kilo 提供 Starter 月度套餐（$19 + $2.85 免费积分），KiloClaw 是其编程工具，适合轻量级项目开发。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Kilo Guide"
+  - Kilo_Guide
 
+---
 # Kilo / KiloClaw 使用指南
 
 > **一句话**: Kilo 提供 Starter 月度套餐（$19 + $2.85 免费积分），KiloClaw 是其编程工具，适合轻量级项目开发。

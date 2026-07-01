@@ -5,8 +5,11 @@ tags: ["talks", "speeches", "insights", "leaders"]
 summary: "**身份**: Stability AI 创始人兼 CEO。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - About
 
+---
 # Emad Mostaque 简介 (Emad Mostaque)
 
 - **身份**: Stability AI 创始人兼 CEO。

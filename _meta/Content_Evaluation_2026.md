@@ -33,7 +33,7 @@ updated: 2026-05-31
 | 12 | 15_Testing | 17,724 | 10 |
 | 13 | 03_Deep_Learning | 16,661 | 11 |
 | 14 | 09_Deployment_Inference | 15,590 | 13 |
-| 15 | 91_Notes | 15,474 | 4 |
+| 15 | _meta/notes | 15,474 | 4 |
 | 16 | 08_Model_Evaluation | 14,846 | 6 |
 | 17 | 20_AI_Applications_Industry | 13,248 | 15 |
 | 18 | 05_Computer_Vision | 12,617 | 13 |
@@ -44,9 +44,9 @@ updated: 2026-05-31
 | 23 | 22_Papers | 7,096 | 4 |
 | 24 | 23_Interviews | 5,618 | 87 |
 | 25 | 21_Talks | 5,288 | 45 |
-| 26 | 92_Plan | 5,238 | 4 |
+| 26 | _meta/plan | 5,238 | 4 |
 | 27 | 10_MLOps_Pipeline | 4,479 | 4 |
-| 28 | 93_Tools | 3,141 | 3 |
+| 28 | 93_Templates | 3,141 | 3 |
 | 29 | Web | 1,900 | 7 |
 | 30 | mkdocs-docs | 1,311 | 1 |
 | 31 | 94_Visualization | 197 | 3 |
@@ -119,7 +119,7 @@ updated: 2026-05-31
 ### 3.4 14_AI_Gateway（12,105字 / 8文件）
 - 缺少：Kong AI Gateway、AWS Bedrock Proxy、OneAPI、OpenRouter 对比
 
-### 3.5 93_Tools（3,141字 / 3文件）
+### 3.5 93_Templates（3,141字 / 3文件）
 - 缺少：文档生成工具、API 设计工具、Prompt 管理平台
 
 ---
@@ -156,7 +156,7 @@ updated: 2026-05-31
 4. 02_Machine_Learning
 
 ### P1 - 重要（内容偏少或缺失关键子主题）
-5. 93_Tools
+5. 93_Templates
 6. 05_Computer_Vision
 7. 08_Model_Evaluation
 8. 09_Deployment_Inference
@@ -175,7 +175,7 @@ updated: 2026-05-31
 
 ## Related
 
-- [[92_Plan/Project_Comprehensive_Evaluation_2026]] — AI Guru 知识库项目全面评估报告 (共享: goals, model-evaluation, planning, roadmap, strategy)
-- [[92_Plan/Project_Structure_Evaluation_2026]] — AI Guru 知识库 — 全项目结构评估与改进建议 (共享: goals, model-evaluation, planning, roadmap, strategy)
-- [[92_Plan/Implementation_Plan_2026]] — AI Guru 知识库整改执行计划 (共享: goals, planning, roadmap, strategy)
-- [[92_Plan/README.md|README]]
+- [[_meta/plan/Project_Comprehensive_Evaluation_2026]] — AI Guru 知识库项目全面评估报告 (共享: goals, model-evaluation, planning, roadmap, strategy)
+- [[_meta/plan/Project_Structure_Evaluation_2026]] — AI Guru 知识库 — 全项目结构评估与改进建议 (共享: goals, model-evaluation, planning, roadmap, strategy)
+- [[_meta/plan/Implementation_Plan_2026]] — AI Guru 知识库整改执行计划 (共享: goals, planning, roadmap, strategy)
+- [[_meta/plan/README.md|README]]

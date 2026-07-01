@@ -5,8 +5,12 @@ tags: ["ai-coding", "code-generation", "cursor", "github-copilot"]
 summary: "> **一句话理解**: 从 STAR 框架到规则文件模板，从场景模板到反面教材——你的一站式提示工程工具箱。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Vibe Coding Prompt Templates"
+  - Vibe_Coding_Prompt_Templates
 
+---
 # Vibe Coding 提示词模板库
 
 > **一句话理解**: 从 STAR 框架到规则文件模板，从场景模板到反面教材——你的一站式提示工程工具箱。

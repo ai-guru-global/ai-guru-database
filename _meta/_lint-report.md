@@ -16,9 +16,9 @@ updated: 2026-06-01T09:55:00.143817
 - 14_AI_Gateway/AI_Gateway_Comparison_2026.md
 - 14_AI_Gateway/LiteLLM_Deep_Dive.md
 - 03_Deep_Learning/State_Space_Models_2026.md
-- 09_Testing/Promptfoo_Deep_Dive.md
+- 09_Testing/Testing_Frameworks/Promptfoo_Deep_Dive.md
 - 09_Testing/Weights_Biases_Deep_Dive.md
-- 09_Testing/DeepEval_Deep_Dive.md
+- 09_Testing/Testing_Frameworks/DeepEval_Deep_Dive.md
 - 09_Testing/Test_Data_Management.md
 - 09_Testing/Contract_Testing.md
 - 09_Testing/AI_Test_Framework_2026.md

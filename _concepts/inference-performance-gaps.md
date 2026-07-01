@@ -14,8 +14,11 @@ lifecycle: draft
 tier: core
 created: 2026-06-15
 updated: 2026-06-15
----
+aliases:
+  - "Inference Performance Gaps"
+  - "inference performance gaps"
 
+---
 # Inference Performance Gaps（推理性能缺口）
 
 ## 核心要点

@@ -5,8 +5,13 @@ tags: ["optimization", "gradient-descent", "learning-rate", "adam", "sgd", "trai
 summary: '> **一句话秒懂**: 优化就是给模型找一条"下山的路"——用最少的步数、最快的速度走到最低点（损失最小），就像闭眼下山，每一步都要踩对方向。'
 created: 2026-06-12
 updated: 2026-06-12
----
+tier: supporting
+aliases:
+  - "Optimization For Dummy"
+  - "Optimization for dummy"
+  - Optimization_for_dummy
 
+---
 # 优化基础 - 小白版
 
 > **一句话秒懂**: 优化就是给模型找一条"下山的路"——用最少的步数、最快的速度走到最低点（损失最小），就像闭眼下山，每一步都要踩对方向。

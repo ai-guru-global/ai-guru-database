@@ -5,8 +5,13 @@ tags: ["ai-applications", "industry", "finance", "healthcare"]
 summary: '> **一句话理解**: 2026年AI正在重塑教育范式——Khan Academy的Khanmigo已服务数百万学生并提升学习效果30%，AI从"辅助工具"升级为"个性化导师"，教育从标准化走向真正的因材施教。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Ai Education 2026"
+  - "AI Education 2026"
+  - AI_Education_2026
 
+---
 # AI 教育行业应用 (2025-2026)
 
 > **一句话理解**: 2026 年 AI 正在重塑教育范式——Khan Academy 的 Khanmigo 已服务数百万学生并提升学习效果 30%，AI 从"辅助工具"升级为"个性化导师"，教育从标准化走向真正的因材施教。

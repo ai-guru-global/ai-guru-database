@@ -5,8 +5,12 @@ tags: ["groq", "lpu", "inference", "low-latency", "cloud-api", "deployment"]
 summary: "> **一句话理解**: Groq 是基于自研 LPU (Language Processing Unit) 芯片的高速 LLM 推理云平台，以极低延迟和极具竞争力的价格提供 OpenAI 兼容 API。"
 created: "2026-06-15"
 updated: "2026-06-15"
----
+tier: core
+aliases:
+  - "Groq Deep Dive"
+  - Groq_Deep_Dive
 
+---
 # Groq: LPU 高速推理云平台
 
 > **一句话理解**: Groq 是基于自研 LPU (Language Processing Unit) 芯片的高速 LLM 推理云平台，以极低延迟和极具竞争力的价格提供 OpenAI 兼容 API。
@@ -489,5 +493,5 @@ Groq 生产使用 checklist
 - [[10_Deployment_Inference/Inference_Engines/TensorRT_LLM_Deep_Dive.md|TensorRT_LLM_Deep_Dive]]
 - [[10_Deployment_Inference/Cost/LLM_Cost_Optimization.md|LLM_Cost_Optimization]]
 - [[10_Deployment_Inference/Deployment_Inference_2026.md|Deployment_Inference_2026]]
-- [[14_AI_Gateway/AI_Gateway_2026.md|AI_Gateway_2026]]
-- [[14_AI_Gateway/LiteLLM_Deep_Dive.md|LiteLLM_Deep_Dive]]
+- [[12_Architecture_Infrastructure/AI_Gateway/AI_Gateway_2026|AI_Gateway_2026]]
+- [[12_Architecture_Infrastructure/AI_Gateway/LiteLLM_Deep_Dive|LiteLLM_Deep_Dive]]

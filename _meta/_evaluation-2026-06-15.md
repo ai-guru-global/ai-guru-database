@@ -48,7 +48,7 @@ quality: final
 
 - **README.md 覆盖**: 29/29 ✅
 - **README_for_dummy.md 覆盖**: 29/29 ✅
-- **in-nutshell 速成指南**: 约 18/29（62%），应用/资源型章节（19_Talks/20_Papers/23_Interviews 等）缺速成入口，按体裁可接受 🟡
+- **in-nutshell 速成指南**: 约 18/29（62%），应用/资源型章节（19_Talks/20_Papers_and_Research/23_Interviews 等）缺速成入口，按体裁可接受 🟡
 
 ### 2.3 章节体量分布
 

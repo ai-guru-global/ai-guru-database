@@ -5,8 +5,12 @@ tags: ["model-evaluation", "metrics", "accuracy", "precision", "recall", "f1", "
 summary: "> **一句话理解**: 评估指标是衡量模型性能的标尺——不同任务需要不同的标尺，选错指标就像用体温计量体重，数字再精确也毫无意义。"
 created: 2026-06-12
 updated: 2026-06-12
----
+tier: supporting
+aliases:
+  - "Evaluation Metrics"
+  - Evaluation_Metrics
 
+---
 # 评估指标体系 (Evaluation Metrics)
 
 > **一句话理解**: 评估指标是衡量模型性能的标尺——不同任务需要不同的标尺，选错指标就像用体温计量体重，数字再精确也毫无意义。
@@ -238,7 +242,7 @@ evaluation_dashboard = {
 ## 相关阅读
 
 - [[08_Model_Evaluation/Model_Evaluation]] — 模型评估全景
-- [[08_Model_Evaluation/LLM_as_Judge_Deep_Dive]] — LLM 评估深度解读
+- [[08_Model_Evaluation/Evaluation_Tools/LLM_as_Judge_Deep_Dive]] — LLM 评估深度解读
 - [[08_Model_Evaluation/Model_Evaluation_for_dummy]] — 模型评估入门版
-- [[08_Model_Evaluation/HF_Leaderboard_Eval_Guide]] — HuggingFace 排行榜实战
+- [[08_Model_Evaluation/Benchmarks/HF_Leaderboard_Eval_Guide]] — HuggingFace 排行榜实战
 - [[08_Model_Evaluation/Fairness_Evaluation_for_dummy]] — 公平性评估入门

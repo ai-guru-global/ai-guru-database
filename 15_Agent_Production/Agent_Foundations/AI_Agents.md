@@ -5,8 +5,13 @@ tags: ["reinforcement-learning", "agent", "mdp", "ai-agents"]
 summary: '> **一句话理解**: AI智能体就像一个有自主判断能力的"AI员工"——能理解任务、制定计划、调用工具、自我反思，并持续执行直到完成目标，而不需要人类一步步指挥。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Ai Agents"
+  - "AI Agents"
+  - AI_Agents
 
+---
 # AI 智能体 (AI Agents)
 > **一句话理解**: AI 智能体就像一个有自主判断能力的"AI 员工"——能理解任务、制定计划、调用工具、自我反思，并持续执行直到完成目标，而不需要人类一步步指挥。
 
@@ -1604,7 +1609,7 @@ async def list_tools():
 | MCP | 97M+ | OpenAI, Google, Microsoft, AWS |
 | A2A | 25M+ | Google + 50+合作伙伴 |
 
-**参考**: [Agent Protocols 2026深度解析](./Agent_Protocols_2026.md)
+**参考**: [Agent Protocols 2026深度解析](15_Agent_Production/Agent_Foundations/Agent_Protocols_2026.md)
 
 ## 9. Agent 基础设施架构 (2026)
 
@@ -1915,24 +1920,24 @@ jobs:
 □ 访问控制生效
 ```
 
-**参考**: [AI Infrastructure 2026深度解析](../../12_Architecture_Infrastructure/AI_Infrastructure_2026.md)
+**参考**: [AI Infrastructure 2026深度解析](12_Architecture_Infrastructure/Architecture_Overview/AI_Infrastructure_2026)
 
 ## 10. 与其他主题的关联 (Connections)
 
 ### 10.1 前置知识
-- **大语言模型**: [LLM架构](../../05_NLP_LLMs/LLM_Architectures/LLM_Architectures.md) —— Agent 的"大脑"
-- **提示工程**: [Prompt Engineering](../../05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering.md) —— 设计 Agent 的系统提示
-- **强化学习**: [RL Foundations](../../06_Reinforcement_Learning/RL_Foundations/RL_Foundations.md) —— Agent 的决策理论基础
-- **深度强化学习**: [Deep RL](../../06_Reinforcement_Learning/Deep_RL/Deep_RL.md) —— RLHF 训练 Agent
+- **大语言模型**: [LLM架构](05_NLP_LLMs/LLM_Architectures/LLM_Architectures.md) —— Agent 的"大脑"
+- **提示工程**: [Prompt Engineering](05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering.md) —— 设计 Agent 的系统提示
+- **强化学习**: [RL Foundations](06_Reinforcement_Learning/RL_Foundations/RL_Foundations.md) —— Agent 的决策理论基础
+- **深度强化学习**: [Deep RL](06_Reinforcement_Learning/Deep_RL/Deep_RL.md) —— RLHF 训练 Agent
 
 ### 10.2 相关技术
 - **RAG**: [检索增强生成] —— Agent 的记忆系统基础
-- **Fine-tuning**: [Fine-tuning Techniques](../../05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques.md) —— 定制化 Agent 能力
-- **多模态**: [Multimodal Vision](../../04_Computer_Vision/Multimodal_Vision/Multimodal_Vision.md) —— 视觉感知能力
+- **Fine-tuning**: [Fine-tuning Techniques](05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques.md) —— 定制化 Agent 能力
+- **多模态**: [Multimodal Vision](04_Computer_Vision/Multimodal_Vision/Multimodal_Vision.md) —— 视觉感知能力
 
 ### 10.3 应用领域
-- **软件工程**: [Deployment & Inference](../../10_Deployment_Inference/Deployment_Inference.md)
-- **MLOps**: [MLOps Pipeline](../../11_MLOps_Pipeline/MLOps_Pipeline.md) —— Agent 在 CI/CD 中的应用
+- **软件工程**: [Deployment & Inference](10_Deployment_Inference/Deployment_Inference.md)
+- **MLOps**: [MLOps Pipeline](11_MLOps_Pipeline/MLOps_Pipeline.md) —— Agent 在 CI/CD 中的应用
 
 ## 12. 面试高频问题 (Interview FAQs)
 
@@ -2131,17 +2136,17 @@ def no_progress_detector(state_history):
 ### 10.1 核心论文
 
 **Agent 架构**:
-- **ReAct**: Yao et al. (2023). ReAct: Synergizing Reasoning and Acting in Language Models. `[[arxiv]]`(https://arxiv.org/abs/2210.03629)
-- **Reflexion**: Shinn et al. (2023). Reflexion: Language Agents with Verbal Reinforcement Learning. `[[arxiv]]`(https://arxiv.org/abs/2303.11366)
-- **Generative Agents**: Park et al. (2023). Generative Agents: Interactive Simulacra of Human Behavior. `[[arxiv]]`(https://arxiv.org/abs/2304.03442)
+- **ReAct**: Yao et al. (2023). ReAct: Synergizing Reasoning and Acting in Language Models. `[arXiv](https://arxiv.org)`(https://arxiv.org/abs/2210.03629)
+- **Reflexion**: Shinn et al. (2023). Reflexion: Language Agents with Verbal Reinforcement Learning. `[arXiv](https://arxiv.org)`(https://arxiv.org/abs/2303.11366)
+- **Generative Agents**: Park et al. (2023). Generative Agents: Interactive Simulacra of Human Behavior. `[arXiv](https://arxiv.org)`(https://arxiv.org/abs/2304.03442)
 
 **工具使用**:
-- **Toolformer**: Schick et al. (2023). Toolformer: Language Models Can Teach Themselves to Use Tools. `[[arxiv]]`(https://arxiv.org/abs/2302.04761)
-- **ToolLLM**: Qin et al. (2023). ToolLLM: Facilitating Large Language Models to Master 16000+ Real-world APIs. `[[arxiv]]`(https://arxiv.org/abs/2307.16789)
+- **Toolformer**: Schick et al. (2023). Toolformer: Language Models Can Teach Themselves to Use Tools. `[arXiv](https://arxiv.org)`(https://arxiv.org/abs/2302.04761)
+- **ToolLLM**: Qin et al. (2023). ToolLLM: Facilitating Large Language Models to Master 16000+ Real-world APIs. `[arXiv](https://arxiv.org)`(https://arxiv.org/abs/2307.16789)
 
 **多智能体**:
-- **AutoGen**: Wu et al. (2023). AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation. `[[arxiv]]`(https://arxiv.org/abs/2308.08155)
-- **ChatDev**: Qian et al. (2023). Communicative Agents for Software Development. `[[arxiv]]`(https://arxiv.org/abs/2307.07924)
+- **AutoGen**: Wu et al. (2023). AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation. `[arXiv](https://arxiv.org)`(https://arxiv.org/abs/2308.08155)
+- **ChatDev**: Qian et al. (2023). Communicative Agents for Software Development. `[arXiv](https://arxiv.org)`(https://arxiv.org/abs/2307.07924)
 
 ### 10.2 综述与博客
 - **Lilian Weng 的 Agent 博客**: [LLM Powered Autonomous Agents](https://lilianweng.github.io/posts/2023-06-23-agent/) —— 最全面的 Agent 综述
@@ -2186,4 +2191,4 @@ def no_progress_detector(state_history):
 
 ## Related
 
-- [[18_Cloud_Ops_Agent/docs/operations/index.md|index]]
+- [[index.md|index]]

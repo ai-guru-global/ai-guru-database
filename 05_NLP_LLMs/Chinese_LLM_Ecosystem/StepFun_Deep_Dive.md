@@ -5,8 +5,13 @@ tags: ["nlp", "llm", "stepfun", "step", "chinese-llm", "moe", "multimodal", "lon
 summary: "> **一句话理解**: 阶跃星辰由前微软亚洲互联网工程院副院长姜大昕创立，Step-2 万亿参数 MoE 模型和 Step-1.5V 多模态能力是其核心差异化，在图像理解和长上下文处理方面表现突出。"
 created: "2026-06-12"
 updated: "2026-06-12"
----
+tier: supporting
+aliases:
+  - "Stepfun Deep Dive"
+  - "StepFun Deep Dive"
+  - StepFun_Deep_Dive
 
+---
 # 阶跃星辰 (StepFun): 万亿参数 MoE 驱动的多模态新锐
 
 > **一句话理解**: 阶跃星辰由前微软亚洲互联网工程院副院长姜大昕创立，Step-2 万亿参数 MoE 模型和 Step-1.5V 多模态能力是其核心差异化，在图像理解和长上下文处理方面表现突出。

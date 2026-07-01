@@ -5,8 +5,13 @@ tags: ["fireworks-ai", "inference", "cloud-api", "open-source", "llm", "deployme
 summary: "> **一句话理解**: Fireworks AI 是专注于快速推理和模型微调的云端 AI 平台——以 State Space Model (SSM) 和快速投机解码著称，高性价比，适合批量处理和企业级部署。"
 created: "2026-06-15"
 updated: "2026-06-15"
----
+tier: supporting
+aliases:
+  - "Fireworks Ai Deep Dive"
+  - "Fireworks AI Deep Dive"
+  - Fireworks_AI_Deep_Dive
 
+---
 # Fireworks AI: 快速推理云平台
 
 > **一句话理解**: Fireworks AI 是专注于快速推理和模型微调的云端 AI 平台——以 State Space Model (SSM) 和快速投机解码著称，高性价比，适合批量处理和企业级部署。
@@ -461,5 +466,5 @@ Fireworks AI 生产使用 checklist
 - [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive.md|vLLM_Deep_Dive]]
 - [[10_Deployment_Inference/Inference_Engines/LLM_Inference_Engine_Selection_Guide.md|LLM_Inference_Engine_Selection_Guide]]
 - [[10_Deployment_Inference/Cost/LLM_Cost_Optimization.md|LLM_Cost_Optimization]]
-- [[14_AI_Gateway/LiteLLM_Deep_Dive.md|LiteLLM_Deep_Dive]]
-- [[14_AI_Gateway/AI_Gateway_2026.md|AI_Gateway_2026]]
+- [[12_Architecture_Infrastructure/AI_Gateway/LiteLLM_Deep_Dive|LiteLLM_Deep_Dive]]
+- [[12_Architecture_Infrastructure/AI_Gateway/AI_Gateway_2026|AI_Gateway_2026]]

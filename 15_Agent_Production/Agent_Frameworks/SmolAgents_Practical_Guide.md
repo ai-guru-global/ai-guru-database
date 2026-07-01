@@ -5,8 +5,13 @@ tags: ["ai-agents", "smolagents", "huggingface", "code-agent", "practical-guide"
 summary: "> **一句话理解**: SmolAgents 用 Python 代码代替 JSON 作为 Agent 的思考与行动载体，极大简化了多工具调用、错误恢复和逻辑推理的复杂度。本文将带你从零实现生产级的 SmolAgents 工作流。"
 created: "2026-06-12"
 updated: "2026-06-12"
----
+tier: supporting
+aliases:
+  - "Smolagents Practical Guide"
+  - "SmolAgents Practical Guide"
+  - SmolAgents_Practical_Guide
 
+---
 # SmolAgents 实战指南：用 50 行代码构建多模态 Code Agent
 
 > **一句话理解**: SmolAgents 用 Python 代码代替 JSON 作为 Agent 的思考与行动载体（Code Agent 范式），极大简化了多工具调用、数据传递和逻辑推理的复杂度。本文将带你从零实现生产级的 SmolAgents 工作流。

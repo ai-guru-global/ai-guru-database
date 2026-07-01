@@ -5,8 +5,13 @@ tags: [glm, zhipu-ai, chatglm, cogvlm, cogagent, codegeex, autoglm, moe, chinese
 summary: 从 GLM-130B 到 GLM-5.2 (744B-A40B MoE + MLA + DSA + 1M 上下文)，全面解析智谱AI/zai-org 的模型演进、架构创新、长程 Agent 能力与 MIT 纯开源生态。
 created: 2026-06-01
 updated: 2026-06-17
----
+tier: supporting
+aliases:
+  - "Glm Zhipu Deep Dive"
+  - "GLM Zhipu Deep Dive"
+  - GLM_Zhipu_Deep_Dive
 
+---
 # GLM / 智谱 AI (Zhipu AI) 技术深度剖析
 
 ## 一句话理解

@@ -5,8 +5,13 @@ tags: ["ai-gateway", "api-management", "routing", "litellm"]
 summary: '> **一句话秒懂**: AI Gateway 就是 AI 系统的"智能路由器"——管理 AI 请求的路由、限流、认证、监控，让多个 AI 模型和服务像一个整体一样高效运行。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Ai Gateway For Dummy Overview"
+  - "AI Gateway for dummy overview"
+  - AI_Gateway_for_dummy_overview
 
+---
 # 14 AI Gateway — 小白版 🚪
 
 > **一句话秒懂**: AI Gateway 就是 AI 系统的"智能路由器"——管理 AI 请求的路由、限流、认证、监控，让多个 AI 模型和服务像一个整体一样高效运行。
@@ -159,17 +164,19 @@ Gateway 能力:
 ## 下一步
 
 - 想深入技术？→ 查看子目录具体文档
-- 想学架构？→ [12_Architecture_Infrastructure/README_for_dummy.md](../README_for_dummy.md)
-- 想学部署？→ [10_Deployment_Inference/README_for_dummy.md](../../10_Deployment_Inference/README_for_dummy.md)
+- 想学架构？→ [12_Architecture_Infrastructure/README_for_dummy.md](17_Ethics_Safety/README_for_dummy.md)
+- 想学部署？→ [10_Deployment_Inference/README_for_dummy.md](17_Ethics_Safety/README_for_dummy.md)
 
 ---
 
-*本文是 [README.md](./README.md) 的简化版，适合零基础读者。*
+*本文是 [README.md](../../README.md) 的简化版，适合零基础读者。*
 
 ## Related
 
-- [[14_AI_Gateway/AI_Gateway_2026.md|AI_Gateway_2026]]
-- [[14_AI_Gateway/AI_Gateway_for_dummy.md|AI_Gateway_for_dummy]]
-- [[14_AI_Gateway/Cohere_Deep_Dive.md|Cohere_Deep_Dive]]
-- [[14_AI_Gateway/Gateway-in-nutshell.md|Gateway-in-nutshell]]
-- [[14_AI_Gateway/Kong_AI_Gateway_Deep_Dive.md|Kong_AI_Gateway_Deep_Dive]]
+- [[12_Architecture_Infrastructure/AI_Gateway/AI_Gateway_2026.md|AI_Gateway_2026]]
+- [[12_Architecture_Infrastructure/AI_Gateway/AI_Gateway_for_dummy.md|AI_Gateway_for_dummy]]
+- [[12_Architecture_Infrastructure/AI_Gateway/Cohere_Deep_Dive.md|Cohere_Deep_Dive]]
+- [[12_Architecture_Infrastructure/AI_Gateway/Gateway-in-nutshell.md|Gateway-in-nutshell]]
+- [[12_Architecture_Infrastructure/AI_Gateway/Kong_AI_Gateway_Deep_Dive.md|Kong_AI_Gateway_Deep_Dive]]
+
+- [[12_Architecture_Infrastructure/README|架构与基础设施 (Architecture & Infrastructure)]]

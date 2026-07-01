@@ -5,8 +5,13 @@ tags: ["ai-ethics", "safety", "alignment", "red-teaming"]
 summary: '> **一句话理解**: AI安全已经从"可选配置"变为"生死存亡"——OWASP LLM Top 10 2026和全新的Agentic AI Security框架定义了生产级AI系统的安全基线，一次提示注入攻击可能导致数百万美元损失。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Ai Security 2026"
+  - "AI Security 2026"
+  - AI_Security_2026
 
+---
 # AI 安全 2026 年完全指南
 
 > **一句话理解**: AI 安全已经从"可选配置"变为"生死存亡"——OWASP LLM Top 10 2026 和全新的 Agentic AI Security 框架定义了生产级 AI 系统的安全基线，一次提示注入攻击可能导致数百万美元损失。

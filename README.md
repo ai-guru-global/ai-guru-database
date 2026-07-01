@@ -5,8 +5,9 @@ tags: ["documentation", "docs-as-code", "ai-knowledge", "llmops", "mlops"]
 summary: "GitHub 上最全面的 AI 全栈中文知识库——从数学基础到 Agent 生产部署，含 LLMOps 完整主线。"
 created: 2026-05-31
 updated: 2026-06-15
----
+tier: supporting
 
+---
 <div align="center">
 
 <h1>🧠 AI Guru 知识库</h1>
@@ -26,7 +27,7 @@ updated: 2026-06-15
 <p>
  <img src="https://img.shields.io/badge/文档-2200%2B-blue?style=flat-square&logo=bookstack" alt="Docs">
  <img src="https://img.shields.io/badge/字数-1600万%2B-green?style=flat-square" alt="Content">
- <img src="https://img.shields.io/badge/章节-27-orange?style=flat-square" alt="Chapters">
+ <img src="https://img.shields.io/badge/章节-28-orange?style=flat-square" alt="Chapters">
  <img src="https://img.shields.io/badge/速成指南-26-purple?style=flat-square" alt="Guides">
  <img src="https://img.shields.io/badge/LLMOps-完整主线-critical?style=flat-square" alt="LLMOps">
  <img src="https://img.shields.io/badge/更新-2026--06-red?style=flat-square" alt="Updated">
@@ -96,7 +97,7 @@ updated: 2026-06-15
 
 ```
 📁 2,200+ 个 Markdown 文件  📄 1,600 万+ 字符（约 2,700 页 A4）
-📚 27 个知识章节            ⚡ 26 个速成指南 (in-nutshell)
+📚 28 个知识章节            ⚡ 26 个速成指南 (in-nutshell)
 🎓 99 篇入门指南 (for_dummy)  🔬 102 个 2026 专题 (_2026)
 🏢 8 大行业应用             👔 21 个岗位面试指南
 🧪 8 个动手实验             📖 6 个经典案例
@@ -221,7 +222,7 @@ curl -L -o ai-guru.zip https://github.com/your-org/ai-guru-knowledge-base/archiv
 
 ⏱️ 自主学习
 
-[必读论文 →](./20_Papers/)
+[必读论文 →](./20_Papers_and_Research/)
 
 </td>
 </tr>
@@ -285,16 +286,16 @@ graph LR
 
 | 文档 | 内容 |
 |------|------|
-| ⭐ [LLMOps 2026](./11_MLOps_Pipeline/LLMOps_2026.md) | 主线：传统 MLOps 失效的 7 大原因、三层架构、成熟度模型、事故复盘 |
-| [Prompt 工程化运维](./11_MLOps_Pipeline/Prompt_Engineering_Ops.md) | Prompt 即代码、版本化、A/B 测试、CI 门禁、DSPy 自动优化 |
-| [LLM 评估流水线](./11_MLOps_Pipeline/LLM_Evaluation_Pipeline.md) | LLM-as-Judge、人审闭环、Eval-Driven Development、评估陷阱 |
-| [RAG 流水线运维](./11_MLOps_Pipeline/RAG_Pipeline_Ops.md) | 四维可变性、Embedding 升级迁移、索引重建灰度 |
-| [LLM 成本与延迟 SLO](./11_MLOps_Pipeline/LLM_Cost_Latency_SLO.md) | 三层缓存、智能路由、Token 预算熔断、FinOps |
-| [LLM 可观测性](./11_MLOps_Pipeline/LLM_Observability.md) | 五层监控、Trace 分布式追踪、幻觉/毒性/PII 在线检测 |
+| ⭐ [LLMOps 2026](11_MLOps_Pipeline/LLMOps_2026.md) | 主线：传统 MLOps 失效的 7 大原因、三层架构、成熟度模型、事故复盘 |
+| [Prompt 工程化运维](11_MLOps_Pipeline/Prompt_Engineering_Ops.md) | Prompt 即代码、版本化、A/B 测试、CI 门禁、DSPy 自动优化 |
+| [LLM 评估流水线](11_MLOps_Pipeline/Evaluation/LLM_Evaluation_Pipeline.md) | LLM-as-Judge、人审闭环、Eval-Driven Development、评估陷阱 |
+| [RAG 流水线运维](11_MLOps_Pipeline/Orchestration/RAG_Pipeline_Ops.md) | 四维可变性、Embedding 升级迁移、索引重建灰度 |
+| [LLM 成本与延迟 SLO](11_MLOps_Pipeline/Cost/LLM_Cost_Latency_SLO.md) | 三层缓存、智能路由、Token 预算熔断、FinOps |
+| [LLM 可观测性](11_MLOps_Pipeline/Observability/LLM_Observability.md) | 五层监控、Trace 分布式追踪、幻觉/毒性/PII 在线检测 |
 
 > 加上横切关注点（数据版本/再训练/系统 SLO/成本/合规）与 16 个工具深度解析，10_MLOps_Pipeline 共 41 篇文档。
 
-### 🔬 27 大系统章节
+### 🔬 28 大系统章节
 
 从数学基础到生产部署的完整路径：
 
@@ -333,11 +334,12 @@ graph LR
 | **L6 资源层** | | |
 | **18** [行业应用](./18_AI_Applications_Industry/) | 行业融合：医疗/金融/制造/零售核心应用 | ⭐⭐ |
 | **19** [业界观点](./19_Talks/) | 领袖洞见：21 位 AI 领袖演讲与观点 | ⭐⭐ |
-| **20** [必读论文](./20_Papers/) | 经典文献：Transformer、GPT、BERT 等里程碑 | ⭐⭐⭐⭐ |
+| **20** [必读论文](./20_Papers_and_Research/) | 经典文献：Transformer、GPT、BERT 等里程碑 | ⭐⭐⭐⭐ |
 | **21** [面试与岗位](./21_Interviews/) | 职业发展：21 个 AI 岗位面试指南 | ⭐⭐ |
+| **22** [课题研究](./20_Papers_and_Research/Methodology/) | 系统性研究：问题定义/文献调研/分析论证/结论产出 | ⭐⭐⭐ |
 | **拓展** | | |
 | **90** [学习资源](./90_Learn/) | 课程映射：微软/Datawhale/HuggingFace 等课程 | ⭐⭐ |
-| **91** [笔记](./91_Notes/) | 知识图谱：AI 全栈概念图 | ⭐⭐⭐ |
+| **91** [笔记](./_meta/notes/) | 知识图谱：AI 全栈概念图 | ⭐⭐⭐ |
 
 </details>
 
@@ -351,20 +353,20 @@ graph LR
 
 - [中国大模型生态全景](./05_NLP_LLMs/Chinese_LLM_Ecosystem/README.md) - DeepSeek/Qwen/GLM/Kimi/MiniMax/MiMo 六大厂商
 - [国际大模型生态全景](./05_NLP_LLMs/Global_LLM_Ecosystem/README.md) - OpenAI/Google/Anthropic/Meta/Mistral 五大厂商
-- [LLMOps 2026](./11_MLOps_Pipeline/LLMOps_2026.md) - 大模型时代的 MLOps 升级（⭐ 独家主线）
-- [模型问题排查手册](./07_Model_Training/Model_Troubleshooting_Guide.md) - 预训练/微调/推理全链路故障诊断
-- [LLM 基准测试全景](./08_Model_Evaluation/LLM_Benchmark_Suite_2026.md) - MMLU/SWE-bench/AIME/GPQA 全基准解读
-- [量化技术深度 2026](./10_Deployment_Inference/Quantization_Techniques_2026.md) - GPTQ/AWQ/GGUF/NF4/FP8
+- [LLMOps 2026](11_MLOps_Pipeline/LLMOps_2026.md) - 大模型时代的 MLOps 升级（⭐ 独家主线）
+- [模型问题排查手册](07_Model_Training/Monitoring/Model_Troubleshooting_Guide.md) - 预训练/微调/推理全链路故障诊断
+- [LLM 基准测试全景](08_Model_Evaluation/Benchmarks/LLM_Benchmark_Suite_2026.md) - MMLU/SWE-bench/AIME/GPQA 全基准解读
+- [量化技术深度 2026](10_Deployment_Inference/Quantization/Quantization_Techniques_2026.md) - GPTQ/AWQ/GGUF/NF4/FP8
 
 </td>
 <td>
 
-- [LLM 架构 2026](./05_NLP_LLMs/LLM_Architectures/LLM_Architectures.md) - GPT-5.2, Claude 4.5, 推理模型
-- [AI 硬件 2026](./01_Fundamentals/AI_Hardware/AI_Hardware_2026.md) - H100/H200/B200, GPU 选型
-- [Scaling Laws 与训练动力学](./07_Model_Training/Scaling_Laws_and_Training_Dynamics.md) - Chinchilla/Kaplan/涌现能力
-- [GRPO 与新对齐方法](./07_Model_Training/GRPO_and_New_Alignment_Methods.md) - GRPO/DPO/RLHF/RLOO
+- [LLM 架构 2026](05_NLP_LLMs/LLM_Architectures/LLM_Architectures.md) - GPT-5.2, Claude 4.5, 推理模型
+- [AI 硬件 2026](01_Fundamentals/AI_Hardware/AI_Hardware_2026.md) - H100/H200/B200, GPU 选型
+- [Scaling Laws 与训练动力学](07_Model_Training/Optimization/Scaling_Laws_and_Training_Dynamics.md) - Chinchilla/Kaplan/涌现能力
+- [GRPO 与新对齐方法](07_Model_Training/Alignment/GRPO_and_New_Alignment_Methods.md) - GRPO/DPO/RLHF/RLOO
 - [Agent 协议 2026](15_Agent_Production/Agent_Foundations/Agent_Protocols_2026.md) - MCP/A2A/UCP
-- [AI 基础设施](./12_Architecture_Infrastructure/AI_Infrastructure_2026.md) - SGLang, AI Gateway
+- [AI 基础设施](12_Architecture_Infrastructure/Architecture_Overview/AI_Infrastructure_2026) - SGLang, AI Gateway
 
 </td>
 </tr>
@@ -516,14 +518,14 @@ git push origin feature/your-feature
 
 ## Related
 
-- [[ROADMAP]] — AI Guru 知识库路线图
-- [[KNOWN_ISSUES]] — 已知问题追踪
+- [[ROADMAP.md]] — AI Guru 知识库路线图
+- [[KNOWN_ISSUES.md]] — 已知问题追踪
 - [[README_EN]] — English Version
 - [[CONTRIBUTING]] — 贡献指南
 - [[README_for_dummy]] — 入门版 README
 - [[index]] — 知识库索引
-- [[hot]] — 热门页面
-- [[92_Plan/MLOps_Section_Enhancement_Plan_2026]] — MLOps 章节加强计划
-- [[11_MLOps_Pipeline/Boundary_with_16]] — 10 与 16 边界声明
+- [[hot.md]] — 热门页面
+- [[_meta/plan/README]] — 项目规划与评估报告
+- [[11_MLOps_Pipeline/Boundary_with_16.md]] — 10 与 16 边界声明
 - [[_synthesis/README]] — 跨域综合文档索引
-- [[00_AI_Introduction/AI_Fundamentals]] — 知识库入门索引
+- [[00_AI_Introduction/AI_Fundamentals.md]] — 知识库入门索引

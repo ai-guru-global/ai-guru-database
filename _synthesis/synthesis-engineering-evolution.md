@@ -3,8 +3,12 @@ title: "从提示词工程到上下文工程到 Harness 工程的三阶演进"
 tags: [synthesis, prompt-engineering, context-engineering, harness-engineering, agent-paradigm, engineering-evolution]
 type: synthesis
 created: 2026-06-17
----
+tier: core
+aliases:
+  - "Synthesis Engineering Evolution"
+  - "synthesis engineering evolution"
 
+---
 # 从提示词工程到上下文工程到 Harness 工程的三阶演进
 
 > **核心洞察**：AI 工程正在经历从"如何写好一条指令"到"如何构建一个可靠系统"的范式跃迁。三阶演进不是替代关系，而是层层递进、层层包含的关系——每一层都将前一层作为子系统内化。

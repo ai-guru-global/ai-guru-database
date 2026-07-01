@@ -6,7 +6,13 @@ tags:
 - ai-coding
 created: 2026-06-12
 category: 16-ai-coding-tools-opencode
-summary: ""
+tier: peripheral
+aliases:
+  - "Opencode Tui Customization"
+  - "opencode tui customization"
+
+updated: 2026-06-30
+summary: "TUI 定制：快捷键、主题与界面 — 专题文档"
 ---
 title: TUI 定制：快捷键、主题与界面
 description: '**文档类型**: 定制指南 | **最后更新**: 2026-03 | **关键词**: OpenCode, TUI, Keybinds,

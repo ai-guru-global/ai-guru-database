@@ -5,8 +5,13 @@ tags: ["model-registry", "model-cards", "mlops", "model-versioning", "metadata"]
 summary: "> 从 MLflow Model Registry 到 Hugging Face Hub，系统讲解模型注册、版本管理、阶段转换与 Model Cards 文档化最佳实践。"
 created: 2026-06-03
 updated: 2026-06-03
----
+tier: supporting
+aliases:
+  - "Model Registry And Cards Deep Dive"
+  - "Model Registry and Cards Deep Dive"
+  - Model_Registry_and_Cards_Deep_Dive
 
+---
 # 模型注册与模型卡片深度解析
 
 > **一句话理解**: Model Registry 是模型的"图书馆管理系统"——负责编目、版本控制和发布审批；Model Card 是每本书的"封面和目录"——告诉使用者这个模型是什么、能做什么、有什么限制。

@@ -6,8 +6,13 @@ summary: "本课介绍自编码器（Autoencoder, AE）与变分自编码器（V
 source_url: "https://raw.githubusercontent.com/microsoft/AI-For-Beginners/main/lessons/4-ComputerVision/09-Autoencoders/README.md"
 created: "2026-06-12"
 updated: "2026-06-12"
----
+tier: supporting
+aliases:
+  - "L09 Autoencoders And Vaes"
+  - "L09 Autoencoders and VAEs"
+  - L09_Autoencoders_and_VAEs
 
+---
 # L09 - 自编码器与变分自编码器VAE
 
 > **一句话理解**：自编码器用“编码器 → 瓶颈（latent space） → 解码器”的结构让神经网络自己学会图像的紧凑表达；VAE 进一步让隐空间（latent space）服从可采样的概率分布，从而能够连续、可控地生成新图像。

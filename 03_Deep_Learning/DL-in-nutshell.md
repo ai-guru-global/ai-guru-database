@@ -5,8 +5,12 @@ tags: ["deep-learning", "neural-networks", "backpropagation"]
 summary: "> **一句话理解**: 深度学习就是用多层神经网络自动从数据中逐层提取特征，最终完成复杂任务——本质是大规模参数优化问题。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Dl In Nutshell"
+  - "DL in nutshell"
 
+---
 # 深度学习速成指南
 
 > **一句话理解**: 深度学习就是用多层神经网络自动从数据中逐层提取特征，最终完成复杂任务——本质是大规模参数优化问题。

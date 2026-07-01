@@ -5,8 +5,13 @@ tags: ["ai-applications", "industry", "finance", "healthcare"]
 summary: "> **一句话理解**: 2026年AI已成为能源转型和气候行动的核心引擎——Google用AI将数据中心能耗降低30%，AI加速核聚变研究、优化电网调度、预测极端天气，同时AI自身的能源消耗也引发关注。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Ai Energy Climate 2026"
+  - "AI Energy Climate 2026"
+  - AI_Energy_Climate_2026
 
+---
 # AI 能源与气候行业应用 (2025-2026)
 
 > **一句话理解**: 2026 年 AI 已成为能源转型和气候行动的核心引擎——Google 用 AI 将数据中心能耗降低 30%，AI 加速核聚变研究、优化电网调度、预测极端天气，同时 AI 自身的能源消耗也引发关注。

@@ -8,8 +8,13 @@ updated: "2026-06-12"
 source_url: "https://raw.githubusercontent.com/microsoft/generative-ai-for-beginners/main/translations/zh-CN/02-exploring-and-comparing-different-llms/README.md"
 course: "Microsoft Generative AI for Beginners"
 lesson_number: 2
----
+tier: supporting
+aliases:
+  - "Genai L02 Exploring And Comparing Llms"
+  - "GenAI L02 Exploring and Comparing LLMs"
+  - GenAI_L02_Exploring_and_Comparing_LLMs
 
+---
 ## 学习目标
 
 完成本课后，你将能够：

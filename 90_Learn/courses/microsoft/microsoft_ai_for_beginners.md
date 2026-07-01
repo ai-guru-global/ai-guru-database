@@ -6,8 +6,13 @@ summary: "> **一句话理解**: Microsoft 官方出品的 12 周 24 课 AI 入�
 created: "2026-06-12"
 updated: "2026-06-12"
 source_url: "https://github.com/microsoft/AI-For-Beginners/blob/main/translations/zh-CN/README.md"
----
+tier: core
+aliases:
+  - "Microsoft Ai For Beginners"
+  - "microsoft ai for beginners"
+  - microsoft_ai_for_beginners
 
+---
 # Microsoft AI For Beginners：12 周初学者课程映射
 
 > **一句话理解**: [Microsoft AI For Beginners](https://microsoft.github.io/AI-For-Beginners/) 是微软开源的 12 周、24 课 AI 入门课程。它涵盖符号 AI、神经网络、计算机视觉、自然语言处理、强化学习、AI 伦理等核心主题，并为每节课提供 **PyTorch / TensorFlow 双框架可运行 Notebook** 与部分实验。本页将课程的完整课表映射到 `ai-guru-database` 的对应章节，方便你在阅读本库理论后，通过官方 Notebook 动手实践。
@@ -60,7 +65,7 @@ source_url: "https://github.com/microsoft/AI-For-Beginners/blob/main/translation
 | | 05 | [[90_Learn/courses/microsoft/L05_Frameworks_and_Overfitting|框架简介与过拟合]] | [[03_Deep_Learning/Optimization/Optimization]]、[[02_Machine_Learning/Supervised_Learning/Supervised_Learning]] | [GitHub](https://github.com/microsoft/AI-For-Beginners/tree/main/lessons/3-NeuralNetworks/05-Frameworks) |
 | **IV. 计算机视觉** | 06 | [[90_Learn/courses/microsoft/L06_Intro_to_Computer_Vision|计算机视觉简介与 OpenCV]] | [[04_Computer_Vision/README]]、[[04_Computer_Vision/Image_Classification_Detection/Image_Classification_Detection]] | [GitHub](https://github.com/microsoft/AI-For-Beginners/tree/main/lessons/4-ComputerVision/06-IntroCV) |
 | | 07 | [[90_Learn/courses/microsoft/L07_CNN_and_Architectures|卷积神经网络与 CNN 架构]] | [[04_Computer_Vision/Image_Classification_Detection/Image_Classification_Detection]]、[[04_Computer_Vision/CV-in-nutshell]] | [GitHub](https://github.com/microsoft/AI-For-Beginners/tree/main/lessons/4-ComputerVision/07-ConvNets) |
-| | 08 | [[90_Learn/courses/microsoft/L08_Transfer_Learning_and_Training_Tricks|预训练网络、迁移学习与训练技巧]] | [[04_Computer_Vision/Image_Classification_Detection/Image_Classification_Detection]]、[[07_Model_Training/Fine_tuning_Strategies]] | [GitHub](https://github.com/microsoft/AI-For-Beginners/tree/main/lessons/4-ComputerVision/08-TransferLearning) |
+| | 08 | [[90_Learn/courses/microsoft/L08_Transfer_Learning_and_Training_Tricks|预训练网络、迁移学习与训练技巧]] | [[04_Computer_Vision/Image_Classification_Detection/Image_Classification_Detection]]、[[05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Strategies]] | [GitHub](https://github.com/microsoft/AI-For-Beginners/tree/main/lessons/4-ComputerVision/08-TransferLearning) |
 | | 09 | [[90_Learn/courses/microsoft/L09_Autoencoders_and_VAEs|自编码器与变分自编码器（VAE）]] | [[04_Computer_Vision/Generative_Models/Generative_Models]] | [GitHub](https://github.com/microsoft/AI-For-Beginners/tree/main/lessons/4-ComputerVision/09-Autoencoders) |
 | | 10 | [[90_Learn/courses/microsoft/L10_GANs_and_Style_Transfer|生成对抗网络与艺术风格迁移]] | [[04_Computer_Vision/Generative_Models/Generative_Models]] | [GitHub](https://github.com/microsoft/AI-For-Beginners/tree/main/lessons/4-ComputerVision/10-GANs) |
 | | 11 | [[90_Learn/courses/microsoft/L11_Object_Detection|目标检测]] | [[04_Computer_Vision/Image_Classification_Detection/Image_Classification_Detection]] | [GitHub](https://github.com/microsoft/AI-For-Beginners/tree/main/lessons/4-ComputerVision/11-ObjectDetection) |

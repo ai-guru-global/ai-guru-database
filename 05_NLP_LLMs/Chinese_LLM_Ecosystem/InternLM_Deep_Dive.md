@@ -5,8 +5,13 @@ tags: ["nlp", "llm", "internlm", "shanghai-ai-lab", "chinese-llm", "open-source"
 summary: "> **一句话理解**: 上海AI Lab 的书生·浦语 (InternLM) 系列以开源为核心策略，配套 LMDeploy 推理引擎和 OpenCompass 评测体系，构建了完整的大模型开源工具链生态。"
 created: "2026-06-12"
 updated: "2026-06-12"
----
+tier: supporting
+aliases:
+  - "Internlm Deep Dive"
+  - "InternLM Deep Dive"
+  - InternLM_Deep_Dive
 
+---
 # 书生·浦语 (InternLM): 上海AI Lab 的开源大模型生态
 
 > **一句话理解**: 上海AI Lab 的书生·浦语 (InternLM) 系列以开源为核心策略，配套 LMDeploy 推理引擎和 OpenCompass 评测体系，构建了完整的大模型开源工具链生态。

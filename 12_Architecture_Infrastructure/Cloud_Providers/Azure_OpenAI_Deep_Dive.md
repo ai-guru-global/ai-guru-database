@@ -5,8 +5,13 @@ tags: ["azure-openai", "microsoft", "azure", "cloud", "openai", "gpt", "enterpri
 summary: "> **一句话理解**: Azure OpenAI 是微软在 Azure 云上提供的企业级 OpenAI 服务，支持 GPT-4o、DALL-E、Whisper 等模型，强调数据隐私、区域部署和企业合规，与 M365/Azure 生态深度集成。"
 created: "2026-06-16"
 updated: "2026-06-16"
----
+tier: supporting
+aliases:
+  - "Azure Openai Deep Dive"
+  - "Azure OpenAI Deep Dive"
+  - Azure_OpenAI_Deep_Dive
 
+---
 # Azure OpenAI 深度解析：企业级 GPT 服务
 
 > **一句话理解**: Azure OpenAI 是微软在 Azure 云上提供的企业级 OpenAI 服务，支持 GPT-4o、DALL-E、Whisper 等模型，强调数据隐私、区域部署和企业合规，与 M365/Azure 生态深度集成。

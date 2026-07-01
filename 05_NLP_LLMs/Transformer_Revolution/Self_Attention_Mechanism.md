@@ -5,8 +5,12 @@ tags: ["transformer", "self-attention", "multi-head-attention", "mechanism"]
 summary: "> **一句话理解**: Self-Attention 让序列中的每个位置都能'看到'其他所有位置——通过 Query-Key-Value 机制计算注意力权重，实现全局信息融合。"
 created: 2026-06-12
 updated: 2026-06-12
----
+tier: supporting
+aliases:
+  - "Self Attention Mechanism"
+  - Self_Attention_Mechanism
 
+---
 # Self-Attention 机制详解
 
 > **一句话理解**: Self-Attention 让序列中的每个位置都能"看到"其他所有位置——通过 Query-Key-Value 机制计算注意力权重，实现全局信息融合。
@@ -85,5 +89,5 @@ class MultiHeadAttention(torch.nn.Module):
 
 - [[05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution]] — Transformer 革命
 - [[05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution_for_dummy]] — Transformer 入门
-- [[20_Papers/Architecture/Attention_Is_All_You_Need_Deep_Dive]] — Attention Is All You Need 深度解读
+- [[20_Papers_and_Research/Architecture/Attention_Is_All_You_Need_Deep_Dive]] — Attention Is All You Need 深度解读
 - [[05_NLP_LLMs/LLM_Architectures/LLM_Architectures]] — LLM 架构 2026

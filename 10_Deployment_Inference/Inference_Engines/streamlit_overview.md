@@ -9,8 +9,12 @@ created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
 tier: supporting
----
+aliases:
+  - "Streamlit Overview"
+  - "streamlit overview"
+  - streamlit_overview
 
+---
 # Streamlit 概览
 
 > **一句话理解**: 用 Python 快速构建数据应用,无需前端经验,几分钟即可将脚本变为可分享的 Web 应用。
@@ -63,4 +67,8 @@ st.line_chart(df)
 - Stitch Fix: 分享 ML 模型和分析
 - Uber: 数据应用民主化
 
-> **关联**: -> [[10_Deployment_Inference|部署推理]] | [[15_Agent_Production/Gradio_Deep_Dive|Gradio]]
+> **关联**: -> [[10_Deployment_Inference/README|部署推理]] | [[15_Agent_Production/Gradio_Deep_Dive|Gradio]]
+
+## Related
+
+- [[10_Deployment_Inference/README|模型部署与推理]]

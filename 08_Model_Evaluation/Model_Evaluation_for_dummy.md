@@ -5,8 +5,13 @@ tags: ["model-evaluation", "metrics", "ab-testing", "benchmark"]
 summary: '> **一句话秒懂**: 就像给学生打分,不能只看数学成绩,还要看语文、体育、品德——评估 AI 也需要多个维度的"成绩单"!'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Model Evaluation For Dummy"
+  - "Model Evaluation for dummy"
+  - Model_Evaluation_for_dummy
 
+---
 # 模型评估 - 小白版
 
 > **一句话秒懂**: 就像给学生打分,不能只看数学成绩,还要看语文、体育、品德——评估 AI 也需要多个维度的"成绩单"!

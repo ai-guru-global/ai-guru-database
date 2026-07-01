@@ -5,8 +5,12 @@ tags: [chinese-llm, open-source, ecosystem, foundation, top100, 2026]
 created: 2026-06-15
 updated: 2026-06-15
 lifecycle: active
----
+tier: supporting
+aliases:
+  - "Chinese Open Source Top100"
+  - Chinese_Open_Source_Top100
 
+---
 # 中国开源大模型生态 Top 100 项目全景 (2026 最新)
 
 > **一句话理解**: 2026 年中国 AI 开源生态进入"四代同堂"阶段——DeepSeek-V4/Qwen3.6/GLM-5/Kimi-K2.7 四大旗舰同台竞技，Any-to-Any 全模态模型成为新战场，视频生成与语音克隆领跑全球，GitHub 星标总量突破 200 万。

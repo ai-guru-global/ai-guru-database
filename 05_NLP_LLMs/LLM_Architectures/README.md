@@ -4,8 +4,9 @@ category: 05-nlp-llms-llm-architectures
 tags: ['llm-architecture', 'overview', 'index']
 summary: 大语言模型架构 相关内容的索引和概览。
 created: 2026-06-12
----
+tier: peripheral
 
+---
 # 大语言模型架构
 
 本目录包含 大语言模型架构 相关的深度技术内容。
@@ -21,3 +22,7 @@ created: 2026-06-12
 ## 相关页面
 
 - [[05_NLP_LLMs/LLM_Architectures/README|LLM 架构目录]]
+
+## Related
+
+- [[05_NLP_LLMs/README|04 自然语言处理与大模型 (NLP & LLMs)]]

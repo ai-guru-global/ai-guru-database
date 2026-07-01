@@ -6,8 +6,12 @@ summary: "本课介绍如何将图像分割任务转化为逐像素分类，讲�
 source_url: "https://raw.githubusercontent.com/microsoft/AI-For-Beginners/main/lessons/4-ComputerVision/12-Segmentation/README.md"
 created: "2026-06-12"
 updated: "2026-06-12"
----
+tier: supporting
+aliases:
+  - "L12 Semantic Segmentation"
+  - L12_Semantic_Segmentation
 
+---
 # L12 - 语义分割与U-Net
 
 > **一句话理解**：语义分割（Semantic Segmentation）把图像的每个像素都归到一个类别，实现比目标检测更精细的像素级定位；U-Net 通过编码器-解码器加跳跃连接，成为医学图像分割等场景的经典网络。

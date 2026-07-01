@@ -3,8 +3,12 @@ title: "大模型上下文工程权威指南"
 tags: [context-engineering, prompt-engineering, llm, rag, ai-agents, memory-architecture]
 source: yeasy/context_engineering_guide
 created: 2026-06-16
----
+tier: peripheral
+aliases:
+  - "Context Engineering Guide"
+  - Context_Engineering_Guide
 
+---
 # 大模型上下文工程权威指南
 
 > **核心命题**：如何在正确的时间，将正确的信息，以正确的格式，提供给模型？

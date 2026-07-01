@@ -5,8 +5,13 @@ tags: ["ai-stack", "kubernetes", "kubectl", "helm", "k8s", "orchestration"]
 summary: "> **一句话理解**: AI Stack 内部通过 K8s 编排工作负载，kubectl 用于集群管理排障，helm 用于安装 GPUStack 等 K8s 包；日常优先通过平台层操作，不直接修改集群。"
 created: "2026-06-16"
 updated: "2026-06-16"
----
+tier: supporting
+aliases:
+  - "Ai Stack K8s Operations Guide"
+  - "AI Stack K8s Operations Guide"
+  - AI_Stack_K8s_Operations_Guide
 
+---
 # AI Stack K8s 编排指南
 
 > **一句话理解**: AI Stack 内部通过 K8s 编排工作负载，`kubectl` 用于集群管理排障，`helm` 用于安装 GPUStack 等 K8s 包；日常优先通过平台层操作，不直接修改集群。
@@ -124,6 +129,6 @@ helm show values gpustack/gpustack
 - [[12_Architecture_Infrastructure/AI_Stack_Production_Toolchain|AI Stack 生产工具链总览]]
 - [[12_Architecture_Infrastructure/AI_Stack_Container_Runtime_Guide|AI Stack 容器与运行时指南]]
 - [[12_Architecture_Infrastructure/AI_Stack_Exclusive_Tools_Guide|AI Stack 专属运维工具指南]]
-- [[12_Architecture_Infrastructure/CDI_Deep_Dive|CDI: 容器设备接口标准]]
-- [[12_Architecture_Infrastructure/DRA_Deep_Dive|DRA: 动态资源分配]]
+- [[12_Architecture_Infrastructure/Hardware_Compute/CDI_Deep_Dive|CDI: 容器设备接口标准]]
+- [[12_Architecture_Infrastructure/Hardware_Compute/DRA_Deep_Dive|DRA: 动态资源分配]]
 - [[13_AI_Ops/AI_Ops_2026|AI Ops 2026: 智能运维体系与实践]]

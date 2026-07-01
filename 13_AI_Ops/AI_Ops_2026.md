@@ -5,8 +5,13 @@ tags: ["ai-ops", "observability", "monitoring", "incident-response"]
 summary: "> **一句话理解**: AI Ops 是将 AI 能力应用于运维领域，通过智能化监控、自动化诊断、根因分析和预测性维护，从被动响应转变为主动预防，实现运维效率的质的飞跃。"
 created: "2026-05-31"
 updated: "2026-05-31"
----
+tier: supporting
+aliases:
+  - "Ai Ops 2026"
+  - "AI Ops 2026"
+  - AI_Ops_2026
 
+---
 # AI Ops 2026: 智能运维体系与实践
 
 > **一句话理解**: AI Ops 是将 AI 能力应用于运维领域，通过智能化监控、自动化诊断、根因分析和预测性维护，从被动响应转变为主动预防，实现运维效率的质的飞跃。
@@ -1934,19 +1939,19 @@ Phase 5: 持续优化 (持续)
 - [Thanos](https://thanos.io/) - 长存储
 - [Opentelemetry](https://opentelemetry.io/) - 可观测性
 - [Alerta](https://alerta.io/) - 告警管理
-- [MLflow](../11_MLOps_Pipeline/MLflow_Deep_Dive.md) - 机器学习生命周期管理
-- [DVC](../11_MLOps_Pipeline/DVC_Deep_Dive.md) - 数据版本控制
-- [PromptLayer](./PromptLayer_Deep_Dive.md) - 提示词管理与追踪
-- [Phoenix](../11_MLOps_Pipeline/Phoenix_Deep_Dive.md) - LLM 可观测性
-- [LangSmith](../11_MLOps_Pipeline/LangSmith_Deep_Dive.md) - LLM 应用调试与监控
-- [Kubeflow](../11_MLOps_Pipeline/Kubeflow_Deep_Dive.md) - 云原生 ML 平台
-- [LakeFS](../11_MLOps_Pipeline/LakeFS_Deep_Dive.md) - 数据湖版本控制
-- [Feast](../11_MLOps_Pipeline/Feast_Deep_Dive.md) - 特征存储平台
-- [Guardrails](./Guardrails_Deep_Dive.md) - LLM 安全护栏
-- [Helicone](../11_MLOps_Pipeline/Helicone_Deep_Dive.md) - LLM 可观测性平台
-- [Braintrust](../11_MLOps_Pipeline/Braintrust_Deep_Dive.md) - LLM 评估平台
-- [Prefect](../11_MLOps_Pipeline/Prefect_Deep_Dive.md) - Python 工作流编排
-- [ClearML](../11_MLOps_Pipeline/ClearML_Deep_Dive.md) - 一站式 ML 平台
+- [MLflow](11_MLOps_Pipeline/Experiment_Tracking/MLflow_Deep_Dive.md) - 机器学习生命周期管理
+- [DVC](11_MLOps_Pipeline/Orchestration/DVC_Deep_Dive.md) - 数据版本控制
+- [PromptLayer](../11_MLOps_Pipeline/Observability/PromptLayer_Deep_Dive.md) - 提示词管理与追踪
+- [Phoenix](11_MLOps_Pipeline/Observability/Phoenix_Deep_Dive.md) - LLM 可观测性
+- [LangSmith](11_MLOps_Pipeline/Observability/LangSmith_Deep_Dive.md) - LLM 应用调试与监控
+- [Kubeflow](11_MLOps_Pipeline/Orchestration/Kubeflow_Deep_Dive.md) - 云原生 ML 平台
+- [LakeFS](11_MLOps_Pipeline/Orchestration/LakeFS_Deep_Dive.md) - 数据湖版本控制
+- [Feast](11_MLOps_Pipeline/Experiment_Tracking/Feast_Deep_Dive.md) - 特征存储平台
+- [Guardrails](./SRE_Reliability/Guardrails_Deep_Dive.md) - LLM 安全护栏
+- [Helicone](11_MLOps_Pipeline/Observability/Helicone_Deep_Dive.md) - LLM 可观测性平台
+- [Braintrust](11_MLOps_Pipeline/Observability/Braintrust_Deep_Dive.md) - LLM 评估平台
+- [Prefect](11_MLOps_Pipeline/Orchestration/Prefect_Deep_Dive.md) - Python 工作流编排
+- [ClearML](11_MLOps_Pipeline/Experiment_Tracking/ClearML_Deep_Dive.md) - 一站式 ML 平台
 
 ### 学习资源
 - [Gartner AIOps Guide](https://www.gartner.com/)
@@ -1960,7 +1965,7 @@ Phase 5: 持续优化 (持续)
 ## Related
 
 - [[13_AI_Ops/AIOps-in-nutshell.md|AIOps-in-nutshell]]
-- [[13_AI_Ops/AI_Incident_Response_Playbook.md|AI_Incident_Response_Playbook]]
+- [[13_AI_Ops/SRE_Reliability/AI_Incident_Response_Playbook|AI_Incident_Response_Playbook]]
 - [[13_AI_Ops/AI_Ops_for_dummy.md|AI_Ops_for_dummy]]
 - [[13_AI_Ops/README.md|13_AI_Ops README]]
 - [[13_AI_Ops/README_for_dummy.md|README_for_dummy]]

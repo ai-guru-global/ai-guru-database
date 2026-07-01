@@ -6,8 +6,12 @@ summary: "本课讲解如何让模型同时回答图像中‘有什么’和‘�
 source_url: "https://raw.githubusercontent.com/microsoft/AI-For-Beginners/main/lessons/4-ComputerVision/11-ObjectDetection/README.md"
 created: "2026-06-12"
 updated: "2026-06-12"
----
+tier: supporting
+aliases:
+  - "L11 Object Detection"
+  - L11_Object_Detection
 
+---
 # L11 - 目标检测
 
 > **一句话理解**：目标检测（Object Detection）不仅是给整张图贴一个类别标签，而是要为图中每个感兴趣物体标出类别并画出边界框（Bounding Box）。
@@ -116,7 +120,7 @@ updated: "2026-06-12"
 - **延伸**：
   - 想了解计算机视觉整体脉络：[[04_Computer_Vision/README]]
   - 想深入图像分类与检测基础：[[04_Computer_Vision/Image_Classification_Detection/Image_Classification_Detection]]
-  - 想学习模型训练与微调：[[07_Model_Training/Fine_tuning_Strategies]]
+  - 想学习模型训练与微调：[[05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Strategies]]
   - 想了解目标检测的工业部署：[[10_Deployment_Inference/README]]
 
 ## 相关阅读

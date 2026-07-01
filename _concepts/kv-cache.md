@@ -29,8 +29,11 @@ lifecycle_changed: 2026-06-03
 tier: core
 created: 2026-06-03 00:00:00+00:00
 updated: 2026-06-15 00:00:00+00:00
----
+aliases:
+  - "Kv Cache"
+  - "kv cache"
 
+---
 # KV Cache (Key-Value Cache)
 
 ## 核心要点

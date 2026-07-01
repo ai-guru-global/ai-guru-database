@@ -6,9 +6,13 @@ summary: "> **一句话理解**: Batch API 是 LLM 成本优化的最大杠杆�
 created: 2026-06-15
 updated: 2026-06-15
 lifecycle: reviewed
-tier: deep-dive
----
+tier: supporting
+aliases:
+  - "Batch Api Comparison 2026"
+  - "Batch API Comparison 2026"
+  - Batch_API_Comparison_2026
 
+---
 # LLM Batch API 完全指南: 批量推理的成本优化利器
 
 > **一句话理解**: Batch API 是 LLM 成本优化的最大杠杆——用 50% 的价格处理非实时任务，覆盖数据标注、评估、批量嵌入等场景，是生产系统降本的核心武器。

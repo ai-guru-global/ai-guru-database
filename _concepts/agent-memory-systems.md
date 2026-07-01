@@ -23,8 +23,11 @@ lifecycle_changed: 2026-06-23
 tier: core
 created: 2026-06-23
 updated: 2026-06-23
----
+aliases:
+  - "Agent Memory Systems"
+  - "agent memory systems"
 
+---
 # Agent 记忆系统（Memory）
 
 ## 核心要点

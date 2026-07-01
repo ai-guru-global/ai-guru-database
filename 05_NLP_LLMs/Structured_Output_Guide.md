@@ -10,9 +10,12 @@ sources:
 created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
-tier: core
----
+tier: supporting
+aliases:
+  - "Structured Output Guide"
+  - Structured_Output_Guide
 
+---
 # LLM 结构化输出完全指南
 
 > **一句话理解**: 让 LLM 返回可靠结构化数据的技术全景:Function Calling、JSON Mode、Instructor、PydanticAI、Outlines 等方案对比与实践。

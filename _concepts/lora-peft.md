@@ -28,8 +28,11 @@ lifecycle: stable
 tier: core
 created: 2026-06-04
 updated: 2026-06-16
----
+aliases:
+  - "Lora Peft"
+  - "lora peft"
 
+---
 # LoRA 与参数高效微调 (PEFT)
 
 > 用 1% 的参数改动，获得 90% 的全量微调效果。

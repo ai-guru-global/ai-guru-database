@@ -5,10 +5,13 @@ tags: ["llmops", "prompt-engineering", "version-control", "ab-testing", "ci-cd",
 summary: "> **一句话理解**: Prompt 不是文案，是代码——任何一行改动都可能让线上 LLM 应用从 95 分掉到 40 分，必须用工程化方式版本化、测试、灰度。"
 created: 2026-06-15
 updated: 2026-06-15
-tier: core
+tier: supporting
 parent: "[[11_MLOps_Pipeline/LLMOps_2026]]"
----
+aliases:
+  - "Prompt Engineering Ops"
+  - Prompt_Engineering_Ops
 
+---
 # Prompt 工程化运维
 
 > **一句话理解**: Prompt 不是文案，是代码——任何一行改动都可能让线上 LLM 应用从 95 分掉到 40 分，必须用工程化方式版本化、测试、灰度。
@@ -385,7 +388,7 @@ optimized = dspy.BootstrapFewShot().compile(RAGModule(), trainset=trainset)
 本文讲 Prompt 工程化的**方法论**。具体 Prompt 管理工具的用法：
 
 - [[13_AI_Ops/PromptLayer_Deep_Dive]] — PromptLayer：Prompt 版本管理与追踪
-- [[09_Testing/Promptfoo_Deep_Dive]] — Promptfoo：Prompt 对比与红队
+- [[09_Testing/Testing_Frameworks/Promptfoo_Deep_Dive]] — Promptfoo：Prompt 对比与红队
 
 ---
 
@@ -400,7 +403,7 @@ optimized = dspy.BootstrapFewShot().compile(RAGModule(), trainset=trainset)
 ### 跨章
 - [[05_NLP_LLMs/Prompt_Engineering/README]] — Prompt 写作技巧（本文是工程化，那章是艺术化）
 - [[05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering_for_dummy]] — Prompt 入门
-- [[09_Testing/Promptfoo_Deep_Dive]] — Promptfoo 工具详解
+- [[09_Testing/Testing_Frameworks/Promptfoo_Deep_Dive]] — Promptfoo 工具详解
 - [[17_Ethics_Safety/AI_Security_2026/README]] — Prompt 安全与红队
 - [[_concepts/mlops]] — MLOps 概念页
 

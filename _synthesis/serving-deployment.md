@@ -13,8 +13,12 @@ provenance:
 base_confidence: 0.73
 lifecycle: draft
 lifecycle_changed: 2026-05-31
----
+tier: core
+aliases:
+  - "Serving Deployment"
+  - "serving deployment"
 
+---
 # 模型服务 × 模型部署
 
 ## The Connection

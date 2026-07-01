@@ -5,8 +5,12 @@ tags: ["model-training", "distributed-training", "optimization", "fsdp"]
 summary: '> **一句话理解**: 训练监控与实验追踪是 AI 工程化的"黑匣子"，让每一次实验都可观测、可复现、可比较，从"炼丹"走向"科学"。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Training Monitoring 2026"
+  - Training_Monitoring_2026
 
+---
 # Training Monitoring & Experiment Tracking 2026
 
 > **一句话理解**: 训练监控与实验追踪是 AI 工程化的"黑匣子"，让每一次实验都可观测、可复现、可比较，从"炼丹"走向"科学"。
@@ -580,7 +584,7 @@ def log_distributed_metrics(logger, metrics: dict, step: int, rank: int = 0):
             }, step=step)
 ```
 
-详见 [./Distributed_Training_2026.md](./Distributed_Training_2026.md) 获取更完整的分布式训练监控方案。
+详见 [./Distributed_Training_2026.md](../Distributed_Training/Distributed_Training_2026.md) 获取更完整的分布式训练监控方案。
 
 ### 8.2 异常检测与自动告警
 
@@ -845,9 +849,9 @@ loss_tensor = all_reduce_average(loss_tensor)
 
 ## 相关章节
 
-- **分布式训练监控**: 详见 [./Distributed_Training_2026.md](./Distributed_Training_2026.md)
+- **分布式训练监控**: 详见 [./Distributed_Training_2026.md](../Distributed_Training/Distributed_Training_2026.md)
 - **MLOps 流水线集成**: 详见 [../11_MLOps_Pipeline/](../11_MLOps_Pipeline/)
-- **生产环境可观测性**: 详见 [../13_AI_Ops/AI_Observability_Guide.md](../11_MLOps_Pipeline/AI_Observability_Guide.md)
+- **生产环境可观测性**: 详见 [../13_AI_Ops/AI_Observability_Guide.md](../../11_MLOps_Pipeline/Observability/AI_Observability_Guide.md)
 
 ---
 

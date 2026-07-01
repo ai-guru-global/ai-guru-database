@@ -5,8 +5,12 @@ tags: [inference, flash-attention, flashinfer, flashmla, flashdecoding, kernels,
 summary: "> FlashAttention、FlashDecoding、FlashInfer、FlashMLA 等内核如何把 Attention 的显存访问降到接近理论下限。"
 created: 2026-06-15
 updated: 2026-06-15
----
+tier: supporting
+aliases:
+  - "Flash Kernels Deep Dive"
+  - Flash_Kernels_Deep_Dive
 
+---
 # Flash 系列 Kernel 深潜
 
 > 现代 LLM 推理的 attention 算子已经把显存墙利用到极致——核心思路是“算得多、写得少”。
@@ -200,3 +204,5 @@ FlashMLA 专门为 MLA 设计：
 - [[10_Deployment_Inference/Inference_Performance/README|推理性能专题]]
 - [[10_Deployment_Inference/Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]]
 - [[10_Deployment_Inference/Caching/KV_Cache_Deep_Dive|KV Cache Deep Dive]]
+
+- [[10_Deployment_Inference/README|模型部署与推理]]

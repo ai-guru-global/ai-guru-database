@@ -5,8 +5,12 @@ tags: ["deep-learning", "neural-network", "pytorch", "beginner", "tutorial", "cn
 summary: "从感知机到卷积神经网络的动手实战。使用 PyTorch 搭建并训练一个能识别手写数字 (MNIST) 的神经网络，理解前向传播、反向传播、损失函数和优化器的本质。"
 created: 2026-06-01
 updated: 2026-06-01
----
+tier: supporting
+aliases:
+  - "Your First Neural Network"
+  - Your_First_Neural_Network
 
+---
 # 你的第一个神经网络: 用 PyTorch 训练图像分类器
 
 > **一句话理解**: 神经网络就是一个有很多旋钮（参数）的函数——训练就是不断调整这些旋钮，让输出越来越接近正确答案。

@@ -5,8 +5,13 @@ tags: ["testing", "ai-testing", "prompt-testing", "evaluation"]
 summary: '> **一句话秒懂**: AI 测试就是给 AI "出考题"——设计各种测试用例验证 AI 的能力，就像考试一样，有选择题、简答题、应用题，让 AI 答题然后评分，判断 AI 是否真正学会了。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Readme For Dummy"
+  - "README for dummy"
+  - README_for_dummy
 
+---
 # 15 AI 测试 — 小白版 🧪
 
 > **一句话秒懂**: AI 测试就是给 AI "出考题"——设计各种测试用例验证 AI 的能力，就像考试一样，有选择题、简答题、应用题，让 AI 答题然后评分，判断 AI 是否真正学会了。
@@ -155,6 +160,6 @@ AI 翻译 "Hello" → "你好" ✓
 
 - [[09_Testing/AI-Testing-in-nutshell.md|AI-Testing-in-nutshell]]
 - [[09_Testing/AI_Testing_for_dummy.md|AI_Testing_for_dummy]]
-- [[09_Testing/Java_AI_Testing.md|Java_AI_Testing]]
+- [[09_Testing/Testing_Frameworks/Java_AI_Testing.md|Java_AI_Testing]]
 - [[09_Testing/README.md|09_Testing README]]
 - [[15_Agent_Production/Agent_Evaluation/Testing_Methodologies/Testing_Framework.md|Testing_Framework]]

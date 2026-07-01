@@ -10,9 +10,13 @@ sources:
 created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
-tier: core
----
+tier: supporting
+aliases:
+  - "Ai Coding 2026 Guide"
+  - "AI Coding 2026 Guide"
+  - AI_Coding_2026_Guide
 
+---
 # AI 编程 2026 全景指南
 
 > **一句话理解**: 2026 年 AI 编程工具全景:从代码补全到自主编程 Agent,对比 Cursor、Windsurf、Claude Code、Codex、GitHub Copilot 等主流方案。
@@ -108,5 +112,5 @@ tier: core
 | 复杂架构设计 | 中 | 需要人工主导 |
 | 安全关键代码 | 差 | 必须人工审查 |
 
-> **关联**: -> [[16_AI_Coding|AI 编程]] | [[16_AI_Coding/Tools|编程工具]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[16_AI_Coding/README|AI 编程]] | [[16_AI_Coding/Tools|编程工具]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
 

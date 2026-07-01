@@ -11,7 +11,10 @@ aliases:
 - 参考资料
 created: 2026-06-12
 category: 16-ai-coding-tools-openrouter
-summary: ""
+tier: peripheral
+
+updated: 2026-06-30
+summary: "API 参考与请求/响应规范 — 专题文档"
 ---
 title: API 参考与请求/响应规范
 description: '## 概述'

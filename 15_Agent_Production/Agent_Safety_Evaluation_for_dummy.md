@@ -5,8 +5,13 @@ tags: ["agent", "tool-calling", "safety", "evaluation", "benchmark", "for-dummy"
 summary: "> **一句话理解**: Agent 能调用工具干活，但也会闯祸——工具调用安全就是给它加护栏；Agent 评估基准就是出题考它会不会规划、会不会用工具、会不会纠错。"
 created: "2026-06-16"
 updated: "2026-06-16"
----
+tier: supporting
+aliases:
+  - "Agent Safety Evaluation For Dummy"
+  - "Agent Safety Evaluation for dummy"
+  - Agent_Safety_Evaluation_for_dummy
 
+---
 # Agent 安全与评估大白话：工具调用安全、Agent 评估基准
 
 > **一句话理解**: Agent 能调用工具干活，但也会闯祸——工具调用安全就是给它加护栏；Agent 评估基准就是出题考它会不会规划、会不会用工具、会不会纠错。

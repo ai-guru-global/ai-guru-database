@@ -13,7 +13,10 @@ aliases:
 - 概述
 created: 2026-06-12
 category: 16-ai-coding-tools-opencode
-summary: ""
+tier: peripheral
+
+updated: 2026-06-30
+summary: "OpenCode 概述与核心架构 — 专题文档"
 ---
 title: OpenCode 概述与核心架构
 description: '# OpenCode 概述与核心架构'

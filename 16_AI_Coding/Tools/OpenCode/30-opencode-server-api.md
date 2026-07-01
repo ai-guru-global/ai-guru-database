@@ -6,7 +6,13 @@ tags:
 - ai-coding
 created: 2026-06-12
 category: 16-ai-coding-tools-opencode
-summary: ""
+tier: peripheral
+aliases:
+  - "Opencode Server Api"
+  - "opencode server api"
+
+updated: 2026-06-30
+summary: "Server 模式与 HTTP API — 专题文档"
 ---
 title: Server 模式与 HTTP API
 description: '**文档类型**: 平台集成专题 | **最后更新**: 2026-03 | **关键词**: OpenCode, Server, HTTP

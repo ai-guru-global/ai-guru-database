@@ -5,8 +5,13 @@ tags: ["ai-agents", "agent-framework", "production", "langgraph", "spring-ai"]
 summary: "> Spring AI 是支持 Agent Skills 开放标准的 Java AI 应用框架之一。本文档说明如何在 Spring AI 项目中使用 Agent Skills。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Spring Ai Skills Integration"
+  - "Spring AI Skills Integration"
+  - Spring_AI_Skills_Integration
 
+---
 # Spring AI 与 Agent Skills 集成
 
 > Spring AI 是支持 Agent Skills 开放标准的 Java AI 应用框架之一。本文档说明如何在 Spring AI 项目中使用 Agent Skills。
@@ -144,8 +149,8 @@ Spring AI 框架的深度技术文档（ChatClient、Advisor、RAG、MCP、Obser
 
 - [Agent Skills 深度解析](./Agent_Skills_Deep_Dive.md) — Agent Skills 完整规范
 - [Agent Skills 实战指南](./Agent_Skills_Practical_Guide.md) — 创建和优化 Skill
-- [Spring AI 架构设计](../../12_Architecture_Infrastructure/Spring_AI_Architecture.md)
-- [Spring AI RAG 深度解析](../../14_RAG_Systems/Spring_AI_RAG_Deep_Dive.md)
+- [Spring AI 架构设计](../../12_Architecture_Infrastructure/Architecture_Overview/Spring_AI_Architecture)
+- [Spring AI RAG 深度解析](../../14_RAG_Systems/RAG_Frameworks/Spring_AI_RAG_Deep_Dive.md)
 
 ## Related
 

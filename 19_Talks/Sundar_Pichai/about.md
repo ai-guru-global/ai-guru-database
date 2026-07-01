@@ -5,8 +5,11 @@ tags: ["talks", "speeches", "insights", "leaders"]
 summary: "**身份**: Google/Alphabet CEO。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - About
 
+---
 # Sundar Pichai 简介 (Sundar Pichai)
 
 - **身份**: Google/Alphabet CEO。

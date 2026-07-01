@@ -3,8 +3,13 @@ title: "AI 推理模型与推理计算指南"
 tags: [ai, reasoning, inference-compute, system1-system2, chain-of-thought, deepseek-r1]
 source: yeasy/ai_beginner_guide
 created: 2026-06-16
----
+tier: peripheral
+aliases:
+  - "Ai Reasoning Models Guide"
+  - "AI Reasoning Models Guide"
+  - AI_Reasoning_Models_Guide
 
+---
 # AI 推理模型与推理计算指南
 
 > **一句话理解**: 推理模型让 AI 从"快速直觉反应"进化到"深入思考后作答"——通过 Inference-Time Compute（推理计算），模型可以在回答时动态分配计算资源，而非仅依赖训练时编码的知识。

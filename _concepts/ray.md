@@ -26,8 +26,10 @@ lifecycle: stable
 tier: core
 created: 2026-06-16
 updated: 2026-06-16
----
+aliases:
+  - Ray
 
+---
 # Ray / KubeRay
 
 > Python 生态的「分布式操作系统」——让单机脚本几乎无修改地扩展到千核集群。

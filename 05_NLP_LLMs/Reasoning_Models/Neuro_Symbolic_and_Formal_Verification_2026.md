@@ -5,8 +5,13 @@ tags: ["neuro-symbolic", "formal-verification", "lean4", "coq", "automated-theor
 summary: "> **一句话理解**: 神经符号 AI 是将 LLM 的“直觉”与形式逻辑的“严谨”相结合——让模型不仅能猜出答案，还能给出数学上绝对正确的证明。"
 created: 2026-06-04
 updated: 2026-06-04
----
+tier: supporting
+aliases:
+  - "Neuro Symbolic And Formal Verification 2026"
+  - "Neuro Symbolic and Formal Verification 2026"
+  - Neuro_Symbolic_and_Formal_Verification_2026
 
+---
 # Neuro-symbolic AI & Formal Verification 2026
 
 > **一句话理解**: 神经符号 AI 是将 LLM 的“直觉”与形式逻辑的“严谨”相结合——让模型不仅能猜出答案，还能给出数学上绝对正确的证明。

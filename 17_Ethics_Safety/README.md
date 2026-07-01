@@ -5,8 +5,9 @@ tags: ["ai-ethics", "safety", "alignment", "red-teaming"]
 summary: "本章探讨 AI 系统的可信度与责任性，涵盖价值对齐技术（RLHF/DPO）、AI 安全与红队测试（对抗攻击/提示词注入）。随着 AI 能力增强，确保系统安全、公平、可控变得至关重要。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
 
+---
 # 08 AI 伦理、安全与对齐 (Ethics, Safety & Alignment)
 
 本章探讨 AI 系统的可信度与责任性，涵盖价值对齐技术（RLHF/DPO）、AI 安全与红队测试（对抗攻击/提示词注入）。随着 AI 能力增强，确保系统安全、公平、可控变得至关重要。
@@ -72,6 +73,9 @@ updated: 2026-05-31
 | 主题 | 难度 | 描述 | 文档链接 |
 |------|------|------|---------|
 | AI 安全 2026 (AI Security 2026) | 实战 | OWASP LLM Top 10 + ASI Agentic AI 安全框架，生产级防御 | [AI_Security_2026.md](./AI_Security_2026/AI_Security_2026.md) |
+| K8s 策略引擎 — OPA/Gatekeeper | 实战 | 通用策略即代码：Rgo 语言、K8s 准入控制、API 授权 | [OPA_Deep_Dive.md](./AI_Security_2026/OPA_Deep_Dive.md) |
+| K8s 原生策略 — Kyverno | 实战 | YAML 策略引擎：验证、变更、生成、镜像签名 | [Kyverno_Deep_Dive.md](./AI_Security_2026/Kyverno_Deep_Dive.md) |
+| 运行时安全 — Falco | 实战 | 容器系统调用监控：逃逸检测、敏感文件访问、异常网络 | [Falco_Deep_Dive.md](./AI_Security_2026/Falco_Deep_Dive.md) |
 | AI 监管工程化 2026 | 实战 | 欧盟 AI 法案、监管即代码、合规生命周期管理、可审计性 | [AI_Regulatory_Engineering_2026.md](./AI_Regulatory_Engineering_2026.md) |
 | AI 安全评测框架 (Safety Evaluation) | 实战 | 毒性/偏见/幻觉评测、对抗鲁棒性、红队测试方法论与基准 | [Safety_Evaluation_Framework.md](./Safety_Evaluation_Framework.md) |
 
@@ -158,6 +162,9 @@ updated: 2026-05-31
 - [[17_Ethics_Safety/README_for_dummy.md|README_for_dummy]]
 - [[_synthesis/ai-ethics-future|Ai Ethics Future]]
 - [[17_Ethics_Safety/Safety_Evaluation_Framework|AI 安全评测框架]] — 安全评测基准与红队测试方法论
+
+- [[AI_Ethics_Safety_Future|AI 伦理、安全与未来]]
+- [[Agent_Security_Ethics_AGI|智能体安全、价值对齐与 AGI 路径]]
 
 ## 新增页面
 

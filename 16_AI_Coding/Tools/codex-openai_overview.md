@@ -9,9 +9,13 @@ sources:
 created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
-tier: core
----
+tier: supporting
+aliases:
+  - "Codex Openai Overview"
+  - "codex openai overview"
+  - codex-openai_overview
 
+---
 # OpenAI Codex 概览
 
 > **一句话理解**: OpenAI 出品的轻量级编程 Agent,可在终端本地运行,也可在云端异步执行代码任务。
@@ -59,4 +63,8 @@ brew install --cask codex
 | 云执行 | Codex Web | 无 | 无 |
 | 定价 | ChatGPT 订阅/API | 按 token | 免费额度大 |
 
-> **关联**: -> [[16_AI_Coding|AI 编程]] | [[16_AI_Coding/AI_Coding_2026_Guide|AI 编程 2026 全景指南]]
+> **关联**: -> [[16_AI_Coding/README|AI 编程]] | [[16_AI_Coding/AI_Coding_2026_Guide|AI 编程 2026 全景指南]]
+
+## Related
+
+- [[16_AI_Coding/README|AI编程 (AI Coding)]]

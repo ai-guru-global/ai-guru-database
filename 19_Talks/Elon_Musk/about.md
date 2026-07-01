@@ -5,8 +5,11 @@ tags: ["talks", "speeches", "insights", "leaders"]
 summary: "**身份**: SpaceX/特斯拉/ X (Twitter) CEO，OpenAI 联合创始人之一（已离开）。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - About
 
+---
 # Elon Musk 简介 (Elon Musk)
 
 - **身份**: SpaceX/特斯拉/ X (Twitter) CEO，OpenAI 联合创始人之一（已离开）。

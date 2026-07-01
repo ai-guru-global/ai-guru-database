@@ -5,8 +5,12 @@ tags: ["diffusion-models", "generative-models", "stable-diffusion", "ddpm", "sco
 summary: "> **一句话理解**: 扩散模型通过逐步去噪来生成高质量图像——就像雕塑家从一块大理石中'去掉多余的部分'，每一步都在让图像变得更清晰。"
 created: 2026-06-12
 updated: 2026-06-12
----
+tier: supporting
+aliases:
+  - "Diffusion Models Deep Dive"
+  - Diffusion_Models_Deep_Dive
 
+---
 # 扩散模型深度解读 (Diffusion Models Deep Dive)
 
 > **一句话理解**: 扩散模型通过逐步去噪来生成高质量图像——就像雕塑家从一块大理石中"去掉多余的部分"，每一步都在让图像变得更清晰。

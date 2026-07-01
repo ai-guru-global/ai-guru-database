@@ -5,8 +5,13 @@ tags: ["ai-applications", "industry", "finance", "healthcare"]
 summary: '> **一句话理解**: 2026年零售AI进入"超个性化+自主运营"时代——Lowe''s用AI数字孪生管理1750+门店，37%零售商报告AI降本超10%，AI购物助手正重塑消费者决策链路。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Ai Retail Ecommerce 2026"
+  - "AI Retail Ecommerce 2026"
+  - AI_Retail_Ecommerce_2026
 
+---
 # AI 零售与电商行业应用 (2025-2026)
 
 > **一句话理解**: 2026 年零售 AI 进入"超个性化+自主运营"时代——Lowe's 用 AI 数字孪生管理 1750+门店，37% 零售商报告 AI 降本超 10%，AI 购物助手正重塑消费者决策链路。

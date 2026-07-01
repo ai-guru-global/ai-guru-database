@@ -5,8 +5,12 @@ tags: ["bayesian", "probabilistic-programming", "MCMC", "variational-inference",
 summary: "> **一句话理解**: 贝叶斯方法让AI不仅给出答案，还告诉你「有多不确定」——先验信念 + 观测数据 = 后验更新，这是从「点估计」到「概率思维」的范式转变，也是量化不确定性、做安全AI的数学基础。"
 created: 2026-06-04
 updated: 2026-06-04
----
+tier: supporting
+aliases:
+  - "Bayesian Methods Deep Dive"
+  - Bayesian_Methods_Deep_Dive
 
+---
 # 贝叶斯方法深度解读: 从贝叶斯定理到概率编程
 
 > **一句话理解**: 贝叶斯方法让 AI 不仅给出答案，还告诉你「有多不确定」——先验信念 + 观测数据 = 后验更新，这是从「点估计」到「概率思维」的范式转变，也是量化不确定性、做安全 AI 的数学基础。

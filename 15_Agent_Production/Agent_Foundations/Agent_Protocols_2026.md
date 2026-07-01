@@ -5,8 +5,12 @@ tags: ["reinforcement-learning", "agent", "mdp", "ai-agents"]
 summary: '> **一句话理解**: 2026年是AI Agent协议标准化的元年——MCP让Agent拥有"万能工具接口"，A2A让Agent之间能够"自由对话"，两者结合构成了企业级Agent系统的通信基础设施。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Agent Protocols 2026"
+  - Agent_Protocols_2026
 
+---
 # AI Agent 协议栈 2026 完全指南
 
 > **一句话理解**: 2026 年是 AI Agent 协议标准化的元年——MCP 让 Agent 拥有"万能工具接口"，A2A 让 Agent 之间能够"自由对话"，两者结合构成了企业级 Agent 系统的通信基础设施。

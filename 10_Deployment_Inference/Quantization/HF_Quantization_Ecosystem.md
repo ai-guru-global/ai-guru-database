@@ -5,8 +5,13 @@ tags: ["quantization", "huggingface", "llm-inference", "bitsandbytes", "awq", "g
 summary: "> **一句话理解**: Hugging Face 通过统一的 `quantization_config` 接口，将大模型领域碎片化的量化技术（INT8/INT4/FP4）完美整合。无论你是要动态加载、高性能推理还是部署到边缘设备，都能轻松配置。"
 created: "2026-06-12"
 updated: "2026-06-12"
----
+tier: supporting
+aliases:
+  - "Hf Quantization Ecosystem"
+  - "HF Quantization Ecosystem"
+  - HF_Quantization_Ecosystem
 
+---
 # Hugging Face 量化生态：BitsAndBytes, AWQ, GPTQ 与 GGUF
 
 > **一句话理解**: 模型尺寸呈指数级增长，显存却成了最大的瓶颈。Hugging Face 通过 `transformers` 库的 `quantization_config` 参数，将底层碎片化、各自为战的量化后端完美统一。只需更改配置参数，即可在精度、显存与速度之间灵活取舍。
@@ -125,3 +130,7 @@ model = AutoModelForCausalLM.from_pretrained(
 - [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive]]
 - [[05_NLP_LLMs/Fine_tuning_Techniques/PEFT_Advanced_2026]]
 - [[01_Fundamentals/AI_Hardware/AI_Hardware_2026]]
+
+## Related
+
+- [[10_Deployment_Inference/README|模型部署与推理]]

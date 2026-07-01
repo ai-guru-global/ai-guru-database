@@ -24,8 +24,11 @@ lifecycle: stable
 tier: core
 created: 2026-06-04
 updated: 2026-06-04
----
+aliases:
+  - "Mixed Precision"
+  - "mixed precision"
 
+---
 # 混合精度训练与推理 (Mixed Precision)
 
 > 用一半的显存，跑两倍的 batch size——速度与精度的完美平衡。

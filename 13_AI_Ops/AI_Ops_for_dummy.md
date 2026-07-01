@@ -5,8 +5,13 @@ tags: ["ai-ops", "observability", "monitoring", "incident-response"]
 summary: "> 用最简单的语言解释什么是 AI Ops，以及它如何让运维工作变得更轻松。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: core
+aliases:
+  - "Ai Ops For Dummy"
+  - "AI Ops for dummy"
+  - AI_Ops_for_dummy
 
+---
 # AI Ops 入门指南 (for Dummies)
 
 > 用最简单的语言解释什么是 AI Ops，以及它如何让运维工作变得更轻松。
@@ -343,11 +348,11 @@ AI Ops 不是单一工具，而是一整套解决方案！
 ## Related
 
 - [[13_AI_Ops/AIOps-in-nutshell]] — AI Ops 速成指南 (共享: ai-ops, incident-response, monitoring, observability)
-- [[13_AI_Ops/AI_Incident_Response_Playbook]] — AI 系统事故响应手册 (共享: ai-ops, incident-response, monitoring, observability)
+- [[13_AI_Ops/SRE_Reliability/AI_Incident_Response_Playbook]] — AI 系统事故响应手册 (共享: ai-ops, incident-response, monitoring, observability)
 - [[13_AI_Ops/README]] — AI 运维与可观测性 (AI Ops) (共享: ai-ops, incident-response, monitoring, observability)
 - [[13_AI_Ops/README_for_dummy]] — 16 AI Ops — 小白版 📡 (共享: ai-ops, incident-response, monitoring, observability)
-- [[13_AI_Ops/PromptLayer_Deep_Dive.md|PromptLayer_Deep_Dive]]
-- [[13_AI_Ops/MLflow_Deep_Dive.md|MLflow_Deep_Dive]]
-- [[13_AI_Ops/Braintrust_Deep_Dive.md|Braintrust_Deep_Dive]]
-- [[13_AI_Ops/ClearML_Deep_Dive.md|ClearML_Deep_Dive]]
-- [[13_AI_Ops/SRE_for_AI_Systems.md|SRE_for_AI_Systems]]
+- [[PromptLayer_Deep_Dive|PromptLayer_Deep_Dive]]
+- [[MLflow_Deep_Dive|MLflow_Deep_Dive]]
+- [[Braintrust_Deep_Dive|Braintrust_Deep_Dive]]
+- [[ClearML_Deep_Dive|ClearML_Deep_Dive]]
+- [[SRE_for_AI_Systems|SRE_for_AI_Systems]]

@@ -6,8 +6,12 @@ summary: "从单层感知器扩展到多层感知器（MLP），并用手写 Num
 source_url: "https://raw.githubusercontent.com/microsoft/AI-For-Beginners/main/lessons/3-NeuralNetworks/04-OwnFramework/README.md"
 created: "2026-06-12"
 updated: "2026-06-12"
----
+tier: supporting
+aliases:
+  - "L04 Multi Layered Perceptron"
+  - L04_Multi_Layered_Perceptron
 
+---
 # L04 - 多层感知器及创建自己的框架
 
 > 一句话理解：把线性感知器堆叠成非线性多层网络，并通过“反向传播”自动计算梯度，最终亲手搭建一个可训练的小型神经网络框架。

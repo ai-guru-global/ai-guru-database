@@ -5,8 +5,12 @@ tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> **一句话理解**: 将AI Agent从Demo部署到生产环境，需要的不仅是代码——而是一套涵盖架构设计、基础设施、监控治理的完整工程体系。本指南总结了2026年企业级Agent部署的最新模式和反模式。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Agent Production 2026"
+  - Agent_Production_2026
 
+---
 # AI Agent 生产部署最佳实践 2026
 
 > **一句话理解**: 将 AI Agent 从 Demo 部署到生产环境，需要的不仅是代码——而是一套涵盖架构设计、基础设施、监控治理的完整工程体系。本指南总结了 2026 年企业级 Agent 部署的最新模式和反模式。

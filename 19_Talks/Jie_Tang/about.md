@@ -5,8 +5,11 @@ tags: [jie-tang, zhipu-ai, glm, chatglm, cogvlm, tsinghua, chinese-ai, academic-
 summary: "唐杰是清华大学教授、智谱 AI 联合创始人，GLM 预训练框架发明人，从学术论文到千亿参数模型的产学研典范。"
 created: 2026-06-12
 updated: 2026-06-12
----
+tier: supporting
+aliases:
+  - About
 
+---
 # 唐杰 (Jie Tang) — 智谱 AI 联合创始人
 
 > **一句话概括**: 清华大学教授创办智谱 AI，从 GLM-130B 到 GLM-5.2 (744B MoE)，打造了中国最具学术底蕴的大模型生态。
@@ -86,3 +89,5 @@ updated: 2026-06-12
 ---
 
 *Last updated: 2026-06-12*
+
+- [[19_Talks/README|AI 名人演讲与观点 (Talks)]]

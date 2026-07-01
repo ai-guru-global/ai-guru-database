@@ -3,8 +3,13 @@ title: "大模型架构核心：从注意力到完整 Transformer"
 tags: [llm, transformer, attention, positional-encoding, layer-norm, architecture]
 source: yeasy/llm_internals
 created: 2026-06-19
----
+tier: peripheral
+aliases:
+  - "Llm Internals Architecture"
+  - "LLM Internals Architecture"
+  - LLM_Internals_Architecture
 
+---
 # 大模型架构核心：从注意力到完整 Transformer
 
 > **核心命题**：Transformer 为何用纯注意力取代 RNN/CNN？注意力、位置编码、残差、归一化等组件各自解决了什么根本问题？

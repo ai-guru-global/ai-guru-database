@@ -5,13 +5,18 @@ tags: ["architecture", "infrastructure", "kubernetes", "high-availability"]
 summary: '> **一句话理解**: 系统架构全景图是 AI 系统的"设计蓝图"——展示从用户请求到模型响应的完整链路，帮助理解各组件如何协作、数据如何流动、系统如何扩展。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Ai System Architecture 2026"
+  - "AI System Architecture 2026"
+  - AI_System_Architecture_2026
 
+---
 # AI 系统架构全景图 (AI System Architecture 2026)
 
 > **一句话理解**: 系统架构全景图是 AI 系统的"设计蓝图"——展示从用户请求到模型响应的完整链路，帮助理解各组件如何协作、数据如何流动、系统如何扩展。
 
-> **相关文档**: [AI 基础设施完全指南](./AI_Infrastructure_2026.md) | [多租户架构](./Multi_Tenant_Architecture.md) | [容量规划](./Capacity_Planning_2026.md) | [成本优化](./AI_Cost_Optimization_2026.md) | [高可用设计](./High_Availability_2026.md) | [边缘 AI](./Edge_AI_2026.md)
+> **相关文档**: [AI 基础设施完全指南](./AI_Infrastructure_2026.md) | [多租户架构](./Multi_Tenant_Architecture.md) | [容量规划](./Capacity_Planning_2026.md) | [成本优化](./AI_Cost_Optimization_2026.md) | [高可用设计](./High_Availability_2026.md) | [边缘 AI](../Hardware_Compute/Edge_AI_2026.md)
 
 ---
 
@@ -982,7 +987,7 @@ flowchart TD
 | **容量规划** | GPU 显存计算、QPS 预测、弹性扩缩容 | [容量规划指南](./Capacity_Planning_2026.md) |
 | **成本管理** | Token 经济学、智能路由、FinOps | [成本优化](./AI_Cost_Optimization_2026.md) |
 | **高可用** | 多 AZ 部署、故障自动恢复、数据一致性 | [高可用设计](./High_Availability_2026.md) |
-| **边缘部署** | 云边协同、模型量化、隐私保护 | [边缘 AI](./Edge_AI_2026.md) |
+| **边缘部署** | 云边协同、模型量化、隐私保护 | [边缘 AI](../Hardware_Compute/Edge_AI_2026.md) |
 | **多租户** | 租户隔离、资源配额、计费计量 | [多租户架构](./Multi_Tenant_Architecture.md) |
 
 ---
@@ -1001,8 +1006,8 @@ flowchart TD
 
 ## Related
 
-- [[12_Architecture_Infrastructure/AI_Infrastructure_2026.md|AI_Infrastructure_2026]]
+- [[12_Architecture_Infrastructure/Architecture_Overview/AI_Infrastructure_2026|AI_Infrastructure_2026]]
 - [[12_Architecture_Infrastructure/Architecture-in-nutshell.md|Architecture-in-nutshell]]
 - [[12_Architecture_Infrastructure/Architecture_Infrastructure_for_dummy.md|Architecture_Infrastructure_for_dummy]]
-- [[12_Architecture_Infrastructure/Spring_AI_Architecture.md|Spring_AI_Architecture]]
+- [[12_Architecture_Infrastructure/Architecture_Overview/Spring_AI_Architecture|Spring_AI_Architecture]]
 - [[_concepts/llm-infrastructure.md|llm-infrastructure]]

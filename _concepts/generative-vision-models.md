@@ -99,4 +99,4 @@ AI艺术创作（Midjourney、DALL-E 3）、图像编辑（Inpainting、超分�
 
 ## Related
 
-- [[20_Papers/Vision/Diffusion_Models_Deep_Dive]] — Diffusion Models 深度解读 (从 DDPM 到 Stable Diffusion 再到 DiT) (共享: cv, diffusion, generative-models, stable-diffusion)
+- [[20_Papers_and_Research/Vision/Diffusion_Models_Deep_Dive]] — Diffusion Models 深度解读 (从 DDPM 到 Stable Diffusion 再到 DiT) (共享: cv, diffusion, generative-models, stable-diffusion)

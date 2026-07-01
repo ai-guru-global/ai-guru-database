@@ -5,8 +5,9 @@ tags: ["hardware", "gpu", "ai-chip", "infrastructure", "t-head", "ppu", "chinese
 summary: "AI 计算硬件基础设施总览，覆盖 GPU、AI 加速卡、国产芯片（含平头哥真武 PPU）等硬件选型和部署方案。"
 created: 2026-06-12
 updated: 2026-06-15
----
+tier: supporting
 
+---
 # AI 硬件基础设施
 
 > **一句话理解**: AI 计算的物理基础——从 GPU 到专用加速卡，硬件选型决定了训练和推理的效率与成本。
@@ -72,4 +73,8 @@ updated: 2026-06-15
 └── 边缘 → 地平线 J6 (车载) / 算能 BM1688 / 寒武纪 220
 ```
 
-> **关联**: -> [[01_Fundamentals|基础]] | [[07_Model_Training|模型训练]] | [[10_Deployment_Inference|部署推理]] | [[12_Architecture_Infrastructure|架构基础]]
+> **关联**: -> [[01_Fundamentals/README|基础]] | [[07_Model_Training/README|模型训练]] | [[10_Deployment_Inference/README|部署推理]] | [[12_Architecture_Infrastructure/README|架构基础]]
+
+## Related
+
+- [[01_Fundamentals/AI_Hardware/AI_Hardware_Quantum_for_Beginners|AI 芯片与量子计算入门]]

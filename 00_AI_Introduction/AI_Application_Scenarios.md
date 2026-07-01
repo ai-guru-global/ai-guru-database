@@ -3,8 +3,13 @@ title: "AI 应用实战：从提示词到智能体的入门指南"
 tags: [prompt-engineering, ai-tools, application-scenarios, agents, react, broke, context-engineering, beginner]
 source: yeasy/ai_beginner_guide
 created: 2026-06-19
----
+tier: peripheral
+aliases:
+  - "Ai Application Scenarios"
+  - "AI Application Scenarios"
+  - AI_Application_Scenarios
 
+---
 # AI 应用实战：从提示词到智能体的入门指南
 
 > **一句话理解**: 学了原理之后，普通人最该掌握的是"怎么用好 AI"——管理 AI 就是管理学：用 BROKE 框架（背景+角色+目标+关键结果+例子）下指令、用少样本/思维链/指定格式做约束、用上下文工程注入知识、用 ReAct 智能体把"聊天"升级为"办事"。

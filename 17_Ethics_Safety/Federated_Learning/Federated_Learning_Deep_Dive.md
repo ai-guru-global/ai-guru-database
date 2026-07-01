@@ -5,8 +5,12 @@ tags: ["federated-learning", "FedAvg", "FedProx", "privacy", "differential-priva
 summary: "联邦学习让数据不动模型动——多个参与方在本地训练，只上传模型更新。覆盖核心算法(FedAvg/FedProx/SCAFFOLD)、隐私保护(差分隐私/安全聚合)、通信优化、联邦LLM微调。"
 created: 2026-06-04
 updated: 2026-06-04
----
+tier: supporting
+aliases:
+  - "Federated Learning Deep Dive"
+  - Federated_Learning_Deep_Dive
 
+---
 # 联邦学习深度解读: 从 FedAvg 到联邦 LLM 微调
 
 > **一句话理解**: 数据不动模型动——多个参与方在本地训练模型，只上传模型更新（而非原始数据），实现隐私保护下的协作学习。Google 用联邦学习改进 Gboard 输入法推荐，无需上传用户击键数据。

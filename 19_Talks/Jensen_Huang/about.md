@@ -5,8 +5,11 @@ tags: ["talks", "speeches", "insights", "leaders", "NVIDIA", "GPU", "accelerated
 summary: "NVIDIA 联合创始人兼 CEO，用 GPU 重新定义了 AI 计算基础设施的芯片 visionary。"
 created: 2026-05-31
 updated: 2026-06-05
----
+tier: supporting
+aliases:
+  - About
 
+---
 # Jensen Huang 简介 (Jensen Huang)
 
 ## 一句话概括
@@ -121,17 +124,17 @@ Huang 将数据中心视为 AI 时代的"工厂"，其核心产品不仅是 GPU 
 
 ## 交叉引用 (Cross-References)
 
-- [Talks 主题合成 2026](../Talks_Synthesis_2026.md) -- Scaling Laws、AI 安全、中国 AI 与全球格局等主题中 Huang 的立场
-- [Jensen Huang 金句集](./sayings.md) -- 更多金句与权威来源链接
-- [AI 历史时间线](../../00_AI_Introduction/AI_History_Timeline.md) -- CUDA 发布与 GPU 计算革命
-- [AI 未来趋势](../../00_AI_Introduction/AI_Future_Trends.md) -- "AI 工厂"与"物理 AI"趋势预判
+- [Talks 主题合成 2026](19_Talks/Talks_Synthesis_2026.md) -- Scaling Laws、AI 安全、中国 AI 与全球格局等主题中 Huang 的立场
+- [Jensen Huang 金句集](19_Talks/Jensen_Huang/sayings.md) -- 更多金句与权威来源链接
+- [AI 历史时间线](00_AI_Introduction/AI_History_Timeline.md) -- CUDA 发布与 GPU 计算革命
+- [AI 未来趋势](00_AI_Introduction/AI_Future_Trends.md) -- "AI 工厂"与"物理 AI"趋势预判
 - [架构与基础设施](../../12_Architecture_Infrastructure/README.md) -- GPU 集群、数据中心与 AI 计算架构
 - [模型训练](../../07_Model_Training/README.md) -- 大规模分布式训练与 GPU 算力需求
 - [部署与推理](../../10_Deployment_Inference/README.md) -- 推理优化与 GPU 推理引擎
-- [机器人系统](../15_Robotics_Systems/README.md) -- Physical AI、Isaac 平台与机器人仿真
-- [Sam Altman](./Sam_Altman/about.md) -- Scaling Laws 信仰与算力需求共识
-- [Demis Hassabis](./Demis_Hassabis/about.md) -- AI for Science 与 GPU 算力支撑
-- [Yann LeCun](./Yann_LeCun/about.md) -- 开源模型生态与 CUDA 开发者平台
+- [机器人系统](../../11_MLOps_Pipeline/README.md) -- Physical AI、Isaac 平台与机器人仿真
+- [Sam Altman](19_Talks/Jensen_Huang/about.md) -- Scaling Laws 信仰与算力需求共识
+- [Demis Hassabis](19_Talks/Jensen_Huang/about.md) -- AI for Science 与 GPU 算力支撑
+- [Yann LeCun](19_Talks/Jensen_Huang/about.md) -- 开源模型生态与 CUDA 开发者平台
 
 ---
 

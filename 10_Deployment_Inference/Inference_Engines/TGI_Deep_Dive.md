@@ -5,8 +5,13 @@ tags: ["tgi", "huggingface", "inference", "llm", "text-generation", "continuous-
 summary: "> **一句话理解**: TGI 是 HuggingFace 开源的 LLM 生产级推理引擎，通过 Rust 路由层 + Python 模型层的分离架构、连续批处理和丰富的量化支持，把 HuggingFace 生态模型快速部署为高吞吐、低延迟的文本生成服务。"
 created: "2026-06-16"
 updated: "2026-06-16"
----
+tier: core
+aliases:
+  - "Tgi Deep Dive"
+  - "TGI Deep Dive"
+  - TGI_Deep_Dive
 
+---
 # TGI 深度解析：HuggingFace 生产级 LLM 推理引擎
 
 > **一句话理解**: TGI 是 HuggingFace 开源的 LLM 生产级推理引擎，通过 Rust 路由层 + Python 模型层的分离架构、连续批处理和丰富的量化支持，把 HuggingFace 生态模型快速部署为高吞吐、低延迟的文本生成服务。
@@ -350,3 +355,4 @@ TGI 暴露 Prometheus 指标：
 - [[10_Deployment_Inference/Inference_Engines/KServe_Deep_Dive]] — KServe
 - [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive]] — vLLM
 - [[12_Architecture_Infrastructure/CNCF_Cloud_Native_AI/README]] — CNCF 云原生大模型全景
+- [[_synthesis/chinese-chips-inference|国产 AI 芯片 × 推理引擎: 硬件约束下的推理软件栈适配]]

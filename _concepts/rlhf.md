@@ -102,5 +102,5 @@ RLHF训练后的模型表现出明显的"对齐效应"：拒绝有害请求的�
 ## Related
 
 - [[_concepts/lora-qlora-sft-rlhf-dpo]] — LoRA / QLoRA / SFT / RLHF / DPO 大白话串讲
-- [[20_Papers/Alignment/RLHF_DPO_Deep_Dive]] — RLHF 与 DPO 深度解读 (从 InstructGPT 到 Direct Preference Optimization) (共享: alignment, rl, rlhf)
+- [[20_Papers_and_Research/Alignment/RLHF_DPO_Deep_Dive]] — RLHF 与 DPO 深度解读 (从 InstructGPT 到 Direct Preference Optimization) (共享: alignment, rl, rlhf)
 - [[_concepts/deep-reinforcement-learning]] — 深度强化学习 (共享: ppo, rl)

@@ -5,8 +5,12 @@ tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> Example evaluation reports and templates for different scenarios"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Sample Reports"
+  - Sample_Reports
 
+---
 # Sample Reports
 
 > Example evaluation reports and templates for different scenarios

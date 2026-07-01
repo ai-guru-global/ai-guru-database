@@ -5,6 +5,7 @@ tags: ["cloud-ops", "devops", "sre", "automation", "ai-agents"]
 summary: "> 用最简单的语言解释什么是云产品运维 Agent，以及它如何帮你管理云服务。"
 created: 2026-05-31
 updated: 2026-05-31
+tier: core
 ---
 
 # 云产品运维 Agent 入门指南 (for Dummies)

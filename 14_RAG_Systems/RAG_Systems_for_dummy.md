@@ -5,8 +5,13 @@ tags: ["rag", "retrieval", "vector-database", "embedding"]
 summary: '> **一句话秒懂**: 就像开卷考试,AI 可以先翻书查资料再回答问题,而不是只靠记忆硬答——既准确又不会"胡说八道"!'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Rag Systems For Dummy"
+  - "RAG Systems for dummy"
+  - RAG_Systems_for_dummy
 
+---
 # RAG 系统 - 小白版
 
 > **一句话秒懂**: 就像开卷考试,AI 可以先翻书查资料再回答问题,而不是只靠记忆硬答——既准确又不会"胡说八道"!

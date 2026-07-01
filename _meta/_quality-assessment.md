@@ -83,10 +83,10 @@ baseline: _project-evaluation.md
 | concepts | 94 | 39,773 | ⭐⭐⭐⭐☆ | 概念词典质量高 |
 | synthesis | 28 | 11,016 | ⭐⭐⭐☆☆ | 跨域合成页字数偏低 |
 | references | 21 | 3,688 | ⭐⭐☆☆☆ | 索引页为主 |
-| 93_Tools | 7 | 12,686 | ⭐⭐⭐☆☆ | |
+| 93_Templates | 7 | 12,686 | ⭐⭐⭐☆☆ | |
 | 94_Visualization | 11 md + 562 资源 | 4,814 | — | 含 atlas 可视化项目 |
-| 92_Plan | 9 | 7,798 | ⭐⭐⭐⭐☆ | 治理体系完善 |
-| 91_Notes | 5 | 16,363 | ⭐⭐⭐⭐☆ | 概念图长文 |
+| _meta/plan | 9 | 7,798 | ⭐⭐⭐⭐☆ | 治理体系完善 |
+| _meta/notes | 5 | 16,363 | ⭐⭐⭐⭐☆ | 概念图长文 |
 
 ### 2.2 入口覆盖矩阵
 
@@ -95,9 +95,9 @@ baseline: _project-evaluation.md
 | 00–09 (核心) | ✅ 全 | ✅ 全 | ✅ 全 | ✅ |
 | 10_MLOps | ✅ | ✅ | ✅ | ⚠️ 偏少 |
 | 11–20 (工程) | ✅ 全 | ✅ 全 | 7/10 | ✅ |
-| 19_Talks/20_Papers/23_Interviews | ✅ 全 | ✅ 全 | ❌ 全缺 | — (按体裁合理) |
-| 90_Learn/91_Notes | ✅ | ✅ | ❌ | — |
-| 92_Plan/93_Tools/94_Visualization | ✅ 全 | ✅ 全 | ❌ | — |
+| 19_Talks/20_Papers_and_Research/23_Interviews | ✅ 全 | ✅ 全 | ❌ 全缺 | — (按体裁合理) |
+| 90_Learn/_meta/notes | ✅ | ✅ | ❌ | — |
+| _meta/plan/93_Templates/94_Visualization | ✅ 全 | ✅ 全 | ❌ | — |
 
 **结论**: 主体知识章节（00-20）入口体系完整；后段章节（21+）按体裁不强制要求 nutshell，合理。
 
@@ -209,14 +209,14 @@ baseline: _project-evaluation.md
 
 | 文件 | 字数 |
 |------|------|
-| 91_Notes/AI_Concept_Knowledge_Graph.md | 7,918 |
+| _meta/notes/AI_Concept_Knowledge_Graph.md | 7,918 |
 | 10_Deployment_Inference/Quantization/Quantization_Techniques_2026.md | 6,859 |
 | 07_Model_Training/Data/Tokenizer_Design_2026.md | 6,769 |
 | 05_NLP_LLMs/Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive.md | 6,761 |
 | 07_Model_Training/Data/Data_Curation_and_Mixture_2026.md | 6,695 |
 | 05_NLP_LLMs/Global_LLM_Ecosystem/OpenAI_Deep_Dive.md | 6,694 |
 | 01_Fundamentals/AI_Hardware/NVIDIA_AMD_GPU_Deep_Dive.md | 6,612 |
-| 91_Notes/AI_Full_Stack_Concepts.md | 6,514 |
+| _meta/notes/AI_Full_Stack_Concepts.md | 6,514 |
 | 07_Model_Training/Alignment/GRPO_and_New_Alignment_Methods.md | 5,895 |
 | 05_NLP_LLMs/Global_LLM_Ecosystem/Anthropic_Claude_Deep_Dive.md | 5,824 |
 

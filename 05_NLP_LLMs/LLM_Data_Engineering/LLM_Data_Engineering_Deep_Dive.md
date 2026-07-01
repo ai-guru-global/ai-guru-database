@@ -5,8 +5,13 @@ tags: ["llm", "data-engineering", "pretraining-data", "sft-data", "synthetic-dat
 summary: "LLM 训练中最被低估但最影响质量的环节。覆盖万亿token预训练数据清洗、SFT数据质量工程、RLHF偏好数据构建、合成数据飞轮。"
 created: 2026-06-04
 updated: 2026-06-04
----
+tier: supporting
+aliases:
+  - "Llm Data Engineering Deep Dive"
+  - "LLM Data Engineering Deep Dive"
+  - LLM_Data_Engineering_Deep_Dive
 
+---
 # LLM 数据工程深度解读: 从预训练数据到合成数据
 
 > **一句话理解**: 数据是 LLM 的燃料——同样的模型架构和算力，数据质量/数量/配比的差异，可以决定一个模型是「废铁」还是「SOTA」。LLaMA 用 15T 精选 token 训练，性能超越用 300T 粗糙数据训练的模型。

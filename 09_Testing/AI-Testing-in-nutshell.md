@@ -5,8 +5,12 @@ tags: ["testing", "ai-testing", "prompt-testing", "evaluation"]
 summary: "> 🎯 **目标**：掌握如何测试、评估和验证 AI 系统，确保生产环境的可靠性。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: core
+aliases:
+  - "Ai Testing In Nutshell"
+  - "AI Testing in nutshell"
 
+---
 # AI 测试与评估速成指南
 
 > 🎯 **目标**：掌握如何测试、评估和验证 AI 系统，确保生产环境的可靠性。
@@ -842,8 +846,8 @@ flowchart TB
 ## Related
 
 - [[09_Testing/AI_Testing_for_dummy]] — AI 测试 - 小白版 (共享: ai-testing, evaluation, prompt-testing, testing)
-- [[09_Testing/Java_AI_Testing]] — Java AI 测试实践 (共享: ai-testing, evaluation, prompt-testing, testing)
+- [[09_Testing/Testing_Frameworks/Java_AI_Testing]] — Java AI 测试实践 (共享: ai-testing, evaluation, prompt-testing, testing)
 - [[09_Testing/README]] — AI 测试与评估 (AI Testing) (共享: ai-testing, evaluation, prompt-testing, testing)
-- [[09_Testing/Promptfoo_Deep_Dive.md|Promptfoo_Deep_Dive]]
-- [[09_Testing/DeepEval_Deep_Dive.md|DeepEval_Deep_Dive]]
+- [[09_Testing/Testing_Frameworks/Promptfoo_Deep_Dive.md|Promptfoo_Deep_Dive]]
+- [[09_Testing/Testing_Frameworks/DeepEval_Deep_Dive.md|DeepEval_Deep_Dive]]
 - [[09_Testing/AI_Test_Framework_2026.md|AI_Test_Framework_2026]]

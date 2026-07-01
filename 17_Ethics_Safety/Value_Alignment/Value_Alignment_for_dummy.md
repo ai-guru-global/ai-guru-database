@@ -5,8 +5,13 @@ tags: ["ai-ethics", "safety", "alignment", "red-teaming"]
 summary: "> **一句话秒懂**: 就像教育孩子懂对错、守规矩一样,价值对齐是教 AI 理解人类价值观,不做坏事、不说假话、不伤害人!"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Value Alignment For Dummy"
+  - "Value Alignment for dummy"
+  - Value_Alignment_for_dummy
 
+---
 # 价值对齐 - 小白版
 
 > **一句话秒懂**: 就像教育孩子懂对错、守规矩一样,价值对齐是教 AI 理解人类价值观,不做坏事、不说假话、不伤害人!

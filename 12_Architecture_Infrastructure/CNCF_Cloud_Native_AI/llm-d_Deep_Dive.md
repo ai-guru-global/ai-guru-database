@@ -5,8 +5,13 @@ tags: ["cncf", "kubernetes", "inference", "llm-d", "distributed", "kv-cache"]
 summary: "> **一句话理解**: llm-d 把「大模型推理」拆成 Gateway + KV Cache 协调 + vLLM Worker 三层——可以让多个推理 Pod 共享 KV Cache、独立扩缩 prefill/decode，是目前 K8s 上规模最大的开源 LLM 推理框架之一。"
 created: "2026-06-16"
 updated: "2026-06-16"
----
+tier: supporting
+aliases:
+  - "Llm D Deep Dive"
+  - "llm d Deep Dive"
+  - llm-d_Deep_Dive
 
+---
 # llm-d: Kubernetes 原生分布式大模型推理框架
 
 > **一句话理解**: llm-d 把「大模型推理」拆成 Gateway + KV Cache 协调 + vLLM Worker 三层——可以让多个推理 Pod 共享 KV Cache、独立扩缩 prefill/decode，是目前 K8s 上规模最大的开源 LLM 推理框架之一。
@@ -695,4 +700,4 @@ kubectl logs <worker-pod> -n llm-d-system | grep -E "OOM|out of memory|KV cache"
 - [[CNCF_Cloud_Native_AI/KServe_Deep_Dive]] — 推理 CRD 另一主流方案，与 llm-d 互补
 - [[10_Deployment_Inference/Caching/KV_Cache_Deep_Dive]] — 理解 llm-d 杀手特性的前提：KV Cache 物理本质
 - [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive]] — llm-d worker 引擎的底层
-- [[12_Architecture_Infrastructure/AI_Infrastructure_2026]] — 2026 年 AI 基础设施全景，llm-d 是推理侧关键拼图
+- [[12_Architecture_Infrastructure/Architecture_Overview/AI_Infrastructure_2026]] — 2026 年 AI 基础设施全景，llm-d 是推理侧关键拼图

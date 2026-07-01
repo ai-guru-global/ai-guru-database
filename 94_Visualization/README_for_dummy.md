@@ -5,8 +5,13 @@ tags: ["visualization", "charts", "dashboards", "data-viz"]
 summary: '> **一句话秒懂**: 可视化就是让 AI 的"思考过程"看得见——把 AI 怎么处理数据、做出决策的过程用图表的方式展示出来，让你不仅知道 AI 说了什么，还知道它为什么这么说。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: core
+aliases:
+  - "Readme For Dummy"
+  - "README for dummy"
+  - README_for_dummy
 
+---
 # 94 Visualization — 小白版 📊
 
 > **一句话秒懂**: 可视化就是让 AI 的"思考过程"看得见——把 AI 怎么处理数据、做出决策的过程用图表的方式展示出来，让你不仅知道 AI 说了什么，还知道它为什么这么说。
@@ -120,5 +125,5 @@ AI 说："这笔交易有风险"
 ## Related
 
 - [[94_Visualization/README.md|94_Visualization README]]
-- [[94_Visualization/atlas/README.md|atlas README]]
-- [[94_Visualization/atlas/docs/performance.md|performance]]
+- [[_projects/atlas/README.md|atlas README]]
+- [[_projects/atlas/docs/performance.md|performance]]

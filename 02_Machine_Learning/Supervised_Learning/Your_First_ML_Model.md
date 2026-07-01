@@ -5,8 +5,13 @@ tags: ["machine-learning", "scikit-learn", "beginner", "tutorial", "first-model"
 summary: "零基础动手训练第一个真实机器学习模型。从加载数据、预处理、训练、评估到预测新样本，完整走通 ML 全流程。使用 scikit-learn 和经典 Titanic 数据集。"
 created: 2026-06-01
 updated: 2026-06-01
----
+tier: supporting
+aliases:
+  - "Your First Ml Model"
+  - "Your First ML Model"
+  - Your_First_ML_Model
 
+---
 # 你的第一个 ML 模型: 从数据到预测（30 分钟实战）
 
 > **一句话理解**: 读完本文，你将亲手训练一个能预测"泰坦尼克号乘客是否生还"的 AI 模型——从零开始，只需 30 分钟。

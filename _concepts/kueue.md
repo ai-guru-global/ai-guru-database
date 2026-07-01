@@ -25,8 +25,10 @@ lifecycle: stable
 tier: core
 created: 2026-06-16
 updated: 2026-06-16
----
+aliases:
+  - Kueue
 
+---
 # Kueue
 
 > K8s 原生的「作业排队与配额管家」——不替换调度器，也能做多租户资源公平共享。

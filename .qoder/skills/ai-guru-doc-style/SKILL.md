@@ -11,7 +11,7 @@
 
 ## 文档类型与模板
 
-详见 `93_Tools/DOCUMENT_TEMPLATES.md`，包含 8 种文档类型的完整模板：
+详见 `93_Templates/DOCUMENT_TEMPLATES.md`，包含 8 种文档类型的完整模板：
 
 | 类型 | 文件模式 | 目标字数 |
 |------|---------|---------|
@@ -127,13 +127,13 @@
 22_Papers/             # 经典论文解读
 23_Interviews/         # 岗位面试准备
 90_Learn/              # 学习路径
-91_Notes/              # 知识图谱
-92_Plan/               # 项目规划与评估
-93_Tools/              # 工具与模板
+_meta/notes/              # 知识图谱
+_meta/plan/               # 项目规划与评估
+93_Templates/              # 工具与模板
 94_Visualization/      # 知识图谱可视化
 ```
 
 ## 关联文档
 
-- [完整模板文档](../../93_Tools/DOCUMENT_TEMPLATES.md) — 含 8 种模板、反模式清单、自动化检查脚本
-- [项目结构评估报告](../../92_Plan/Project_Structure_Evaluation_2026.md)
+- [完整模板文档](../../93_Templates/DOCUMENT_TEMPLATES.md) — 含 8 种模板、反模式清单、自动化检查脚本
+- [项目结构评估报告](../../_meta/plan/Project_Structure_Evaluation_2026.md)

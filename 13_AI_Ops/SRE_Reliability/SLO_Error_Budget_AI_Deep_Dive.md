@@ -5,8 +5,13 @@ tags: ["ai-ops", "sre", "slo", "error-budget", "sla", "monitoring"]
 summary: '> **一句话理解**: 传统 SRE 的 SLO 只管"可用性"（请求成功了吗），但 AI 系统的 SLO 是"可用性+质量+成本"三元组——首 token 延迟决定体验、幻觉率决定可信、token 成本决定生存，三者用错误预算统一权衡，让发布决策从"拍脑袋"变成"看预算条"。'
 created: '2026-06-22'
 updated: '2026-06-22'
----
+tier: supporting
+aliases:
+  - "Slo Error Budget Ai Deep Dive"
+  - "SLO Error Budget AI Deep Dive"
+  - SLO_Error_Budget_AI_Deep_Dive
 
+---
 # AI 系统 SLO 与错误预算深度指南 - 传统 SRE 如何适配 LLM
 
 > **一句话理解**: 传统 SRE 的 SLO 只管"可用性"（请求成功了吗），但 AI 系统的 SLO 是"可用性+质量+成本"三元组——首 token 延迟决定体验、幻觉率决定可信、token 成本决定生存，三者用错误预算统一权衡，让发布决策从"拍脑袋"变成"看预算条"。
@@ -386,9 +391,9 @@ AI SLO 仪表板（单页总览）
 
 - [[13_AI_Ops/AI_Ops_2026|AI 运维 2026]] — 运维全栈
 - [[13_AI_Ops/SRE_for_AI_Systems|AI 系统 SRE]] — SRE 实践
-- [[13_AI_Ops/AI_Incident_Response_Playbook|事故响应手册]] — 预算违约时的响应
+- [[13_AI_Ops/SRE_Reliability/AI_Incident_Response_Playbook|事故响应手册]] — 预算违约时的响应
 - [[13_AI_Ops/Cost_Optimization_AI_Deep_Dive|成本优化]] — 成本 SLO 的优化手段
-- [[13_AI_Ops/Prometheus_Grafana_Deep_Dive|Prometheus + Grafana]] — SLI 监控工具
+- [[11_MLOps_Pipeline/Observability/Prometheus_Grafana_Deep_Dive|Prometheus + Grafana]] — SLI 监控工具
 - [[_concepts/ab-testing-framework|A/B 测试]] — SLO 验证方法
 
 ---

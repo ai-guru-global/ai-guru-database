@@ -30,8 +30,11 @@ lifecycle_changed: 2026-05-31
 tier: supporting
 created: 2026-05-31 00:00:00+00:00
 updated: 2026-05-31 00:00:00+00:00
----
+aliases:
+  - "Ai Architecture"
+  - "ai architecture"
 
+---
 # AI 系统架构
 
 ## 核心要点
@@ -100,13 +103,13 @@ AI系统高可用的特殊挑战：GPU故障率比CPU高一个数量级（MTBF�
 ## 来源
 
 - 12_Architecture_Infrastructure/AI_System_Architecture_2026.md — 四层架构全景图、服务设计、可观测性
-- 12_Architecture_Infrastructure/Spring_AI_Architecture.md — Spring AI企业级架构、Advisor模式
+- 12_Architecture_Infrastructure/Architecture_Overview/Spring_AI_Architecture — Spring AI企业级架构、Advisor模式
 - 12_Architecture_Infrastructure/High_Availability_2026.md — 多AZ部署、故障恢复、健康检查
 - 12_Architecture_Infrastructure/Multi_Tenant_Architecture.md — 隔离模型、资源管理、计费计量
 
 ## Related
 
-- [[12_Architecture_Infrastructure/AI_Infrastructure_2026]] — AI Infrastructure 2026 完全指南 (共享: high-availability, kubernetes)
+- [[12_Architecture_Infrastructure/Architecture_Overview/AI_Infrastructure_2026]] — AI Infrastructure 2026 完全指南 (共享: high-availability, kubernetes)
 - [[12_Architecture_Infrastructure/Architecture-in-nutshell]] — AI 架构速成指南 (共享: high-availability, kubernetes)
 - [[12_Architecture_Infrastructure/Architecture_Infrastructure_for_dummy]] — AI 架构基础设施 - 小白版 (共享: high-availability, kubernetes)
-- [[12_Architecture_Infrastructure/Spring_AI_Architecture]] — Spring AI 系统架构设计 (共享: high-availability, kubernetes)
+- [[12_Architecture_Infrastructure/Architecture_Overview/Spring_AI_Architecture]] — Spring AI 系统架构设计 (共享: high-availability, kubernetes)

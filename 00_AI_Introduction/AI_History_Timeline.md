@@ -5,8 +5,13 @@ tags: ["ai", "history", "timeline", "milestones"]
 summary: "人工智能的75年历史是一部\"希望-失望-突破\"的循环史诗——从1950年图灵测试到2026年的Agentic AI，每一次\"寒冬\"后都迎来了更强大的技术复苏。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Ai History Timeline"
+  - "AI History Timeline"
+  - AI_History_Timeline
 
+---
 # 人工智能历史与发展时间线
 
 > **一句话理解**: 人工智能的 75 年历史是一部"希望-失望-突破"的循环史诗——从 1950 年图灵测试到 2026 年的 Agentic AI，每一次"寒冬"后都迎来了更强大的技术复苏。

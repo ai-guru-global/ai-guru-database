@@ -5,8 +5,13 @@ tags: ["incident-response", "on-call", "runbook", "post-mortem", "ai-ops"]
 summary: "面向 AI/LLM 生产系统的故障响应体系：AI 特有故障模式分类 (模型漂移、幻觉激增、Prompt 注入、数据管线故障)、事故分级、Runbook 模板、升级流程和 Post-Mortem 方法论。"
 created: "2026-06-12"
 updated: "2026-06-12"
----
+tier: supporting
+aliases:
+  - "Incident Response For Ai Systems"
+  - "Incident Response for AI Systems"
+  - Incident_Response_for_AI_Systems
 
+---
 # AI 系统故障响应 (Incident Response for AI)
 
 > **TL;DR**: AI 系统的故障与传统软件不同——模型漂移是渐进的、幻觉是概率性的、Prompt 注入是人为攻击。建立 AI 专属的故障分类体系、标准化 Runbook、明确升级路径和 Blameless Post-Mortem 流程，是保障 AI 系统生产可靠性的关键。

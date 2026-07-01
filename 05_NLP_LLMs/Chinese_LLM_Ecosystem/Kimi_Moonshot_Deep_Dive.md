@@ -5,8 +5,12 @@ tags: ["nlp", "llm", "transformer", "moe", "reasoning", "long-context", "kimi", 
 summary: '> **一句话理解**: Kimi/Moonshot AI 是中国长上下文 AI 的开拓者——从 200K 上下文先驱到万亿参数 MoE 架构，用 RL scaling 和 MuonClip 优化器走出一条"长上下文 → 深度推理 → Agentic"的技术路径，堪比中国版 Anthropic。'
 created: "2026-06-01"
 updated: "2026-06-01"
----
+tier: supporting
+aliases:
+  - "Kimi Moonshot Deep Dive"
+  - Kimi_Moonshot_Deep_Dive
 
+---
 # Kimi / Moonshot AI (月之暗面): 长上下文与推理的技术深潜
 
 > **一句话理解**: Kimi/Moonshot AI 是中国长上下文 AI 的开拓者——从 200K 上下文先驱到万亿参数 MoE 架构，用 RL scaling 和 MuonClip 优化器走出一条"长上下文 → 深度推理 → Agentic"的技术路径，堪比中国版 Anthropic。
@@ -1318,7 +1322,7 @@ flowchart TB
 
 - [DeepSeek R1 技术分析](../Reasoning_Models/DeepSeek_R1_Technical_Analysis.md) — 推理模型的 RL 训练方法对比
 - [MoE 案例研究：DeepSeek 与 Mixtral](../LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md) — MoE 架构设计与路由策略详解
-- [长上下文模型 2026 全景](../Long_Context_Models_2026.md) — 长上下文技术发展趋势
+- [长上下文模型 2026 全景](../LLM_Architectures/Long_Context_Models_2026.md) — 长上下文技术发展趋势
 
 ---
 

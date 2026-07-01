@@ -5,8 +5,13 @@ tags: ["ai", "labs", "practice", "hands-on"]
 summary: "## 实验概览"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Ai Practical Labs"
+  - "AI Practical Labs"
+  - AI_Practical_Labs
 
+---
 # AI 课堂实验与实践指导
 
 > 本指南为 AI 通识课提供动手实践项目，无需编程基础即可完成，帮助学生直观理解 AI 原理和应用。

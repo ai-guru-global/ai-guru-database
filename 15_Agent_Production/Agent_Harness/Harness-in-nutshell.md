@@ -5,8 +5,12 @@ tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> 一句话：**Agent = Model + Harness**。Harness 是模型之外的一切——让裸模型变成可工作的 Agent 的工程系统。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Harness In Nutshell"
+  - "Harness in nutshell"
 
+---
 # Agent Harness 速览
 
 > 一句话：**Agent = Model + Harness**。Harness 是模型之外的一切——让裸模型变成可工作的 Agent 的工程系统。

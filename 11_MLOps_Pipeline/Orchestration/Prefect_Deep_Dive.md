@@ -5,8 +5,12 @@ tags: ["ai-ops", "observability", "monitoring", "incident-response"]
 summary: "> **一句话理解**: Prefect 是 Python 原生的数据流水线编排——任务调度、错误重试、可视化监控，ML 数据的 workflow 引擎。"
 created: "2026-05-31"
 updated: "2026-05-31"
----
+tier: supporting
+aliases:
+  - "Prefect Deep Dive"
+  - Prefect_Deep_Dive
 
+---
 # Prefect: ML 数据流水线编排
 
 > **一句话理解**: Prefect 是 Python 原生的数据流水线编排——任务调度、错误重试、可视化监控，ML 数据的 workflow 引擎。
@@ -311,7 +315,7 @@ def unstable_task():
 ## Related
 
 - [[13_AI_Ops/AIOps-in-nutshell.md|AIOps-in-nutshell]]
-- [[13_AI_Ops/AI_Incident_Response_Playbook.md|AI_Incident_Response_Playbook]]
+- [[13_AI_Ops/SRE_Reliability/AI_Incident_Response_Playbook|AI_Incident_Response_Playbook]]
 - [[13_AI_Ops/AI_Ops_for_dummy.md|AI_Ops_for_dummy]]
 - [[13_AI_Ops/README.md|13_AI_Ops README]]
 - [[13_AI_Ops/README_for_dummy.md|README_for_dummy]]

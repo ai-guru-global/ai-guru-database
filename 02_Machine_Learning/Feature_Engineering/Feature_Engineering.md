@@ -5,8 +5,12 @@ tags: ["machine-learning", "supervised", "unsupervised"]
 summary: "> **一句话理解**: 特征工程就像厨师备料——原始食材（原始数据）需要经过清洗、切割、调味（特征处理）才能做出美味佳肴（高性能模型）。模型的上限由数据和特征决定，算法只是逼近这个上限。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Feature Engineering"
+  - Feature_Engineering
 
+---
 # 特征工程 (Feature Engineering)
 
 > **一句话理解**: 特征工程就像厨师备料——原始食材（原始数据）需要经过清洗、切割、调味（特征处理）才能做出美味佳肴（高性能模型）。模型的上限由数据和特征决定，算法只是逼近这个上限。

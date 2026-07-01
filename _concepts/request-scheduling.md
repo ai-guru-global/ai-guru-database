@@ -18,8 +18,11 @@ lifecycle: draft
 tier: core
 created: 2026-06-15
 updated: 2026-06-15
----
+aliases:
+  - "Request Scheduling"
+  - "request scheduling"
 
+---
 # Request Scheduling for LLMs（LLM 请求调度）
 
 ## 核心要点

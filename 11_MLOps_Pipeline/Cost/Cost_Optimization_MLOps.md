@@ -5,9 +5,13 @@ tags: ["mlops", "cost-optimization", "finops", "gpu", "spot-instance", "autoscal
 summary: "> **一句话理解**: 模型训练和推理的算力成本是 MLOps 最大的可控开销——GPU 调度、Spot 实例、弹性伸缩、FinOps 分摊，是把月账单砍掉 50% 的四把刀。"
 created: 2026-06-15
 updated: 2026-06-15
-tier: core
----
+tier: supporting
+aliases:
+  - "Cost Optimization Mlops"
+  - "Cost Optimization MLOps"
+  - Cost_Optimization_MLOps
 
+---
 # MLOps 成本优化
 
 > **一句话理解**: 模型训练和推理的算力成本是 MLOps 最大的可控开销——GPU 调度、Spot 实例、弹性伸缩、FinOps 分摊，是把月账单砍掉 50% 的四把刀。
@@ -205,7 +209,7 @@ spec:
 | **LoRA / QLoRA** | 90%（微调） | 微小 |
 | **早停** | 10–30% | 无 |
 
-详见 [[07_Model_Training/Optimization/Mixed_Precision_Training]]、[[07_Model_Training/Fine_tuning_Strategies]]。
+详见 [[07_Model_Training/Optimization/Mixed_Precision_Training]]、[[05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Strategies]]。
 
 ---
 

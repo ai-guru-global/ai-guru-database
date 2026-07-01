@@ -23,8 +23,10 @@ lifecycle: stable
 tier: core
 created: 2026-06-16
 updated: 2026-06-16
----
+aliases:
+  - Modal
 
+---
 # Modal
 
 > Python 开发者的「无服务器 GPU 云」——用装饰器把函数变成弹性 GPU 服务。

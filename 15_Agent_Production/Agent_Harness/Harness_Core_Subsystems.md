@@ -8,8 +8,12 @@ tags:
   - memory-system
   - model-integration
 source: "_sources/yeasy/harness_engineering_guide/"
----
+tier: peripheral
+aliases:
+  - "Harness Core Subsystems"
+  - Harness_Core_Subsystems
 
+---
 # Harness Core Subsystems (Harness 核心子系统深度解析)
 
 > 本文从《智能体 Harness 工程指南》Part 2（第 4-7 章）提炼运行时引擎、工具层、记忆子系统和模型集成四大核心子系统的工程实现细节。

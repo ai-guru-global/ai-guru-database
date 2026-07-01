@@ -21,8 +21,11 @@ lifecycle: stable
 tier: core
 created: 2026-06-04
 updated: 2026-06-04
----
+aliases:
+  - "Self Supervised Learning"
+  - "self supervised learning"
 
+---
 # 自监督学习 (Self-Supervised Learning)
 
 > 不需要人工标注，让数据自己「教」模型——现代 AI 预训练的核心范式。

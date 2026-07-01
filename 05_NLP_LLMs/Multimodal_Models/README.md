@@ -4,8 +4,9 @@ category: 05-nlp-llms-multimodal-models
 tags: ['multimodal', 'overview', 'index']
 summary: 多模态模型 相关内容的索引和概览。
 created: 2026-06-12
----
+tier: peripheral
 
+---
 # 多模态模型
 
 本目录包含 多模态模型 相关的深度技术内容。
@@ -23,3 +24,7 @@ created: 2026-06-12
 - [[05_NLP_LLMs/Multimodal_Models/Multimodal_Models_for_dummy|多模态模型小白指南 (Multimodal Models for Dummy)]]
 - [[05_NLP_LLMs/Multimodal_Models/README|多模态模型目录]]
 - [[05_NLP_LLMs/Multimodal_Models/LLaVA_Deep_Dive|LLaVA: 开源多模态大模型]]
+
+## Related
+
+- [[05_NLP_LLMs/README|04 自然语言处理与大模型 (NLP & LLMs)]]

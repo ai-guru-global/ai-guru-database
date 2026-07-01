@@ -32,9 +32,11 @@ lifecycle: draft
 lifecycle_changed: 2026-06-15
 tier: supporting
 created: 2026-06-15 00:00:00+00:00
-updated: 2026-06-15 00:00:00+00:00
----
+updated: 2026-06-25 00:00:00+00:00
+aliases:
+  - Gpustack
 
+---
 # GPUStack
 
 ## 核心要点
@@ -45,6 +47,8 @@ updated: 2026-06-15 00:00:00+00:00
 - 支持 **单节点多卡** 与 **多节点分布式** 推理，覆盖从桌面开发到生产集群的完整生命周期
 - 提供 **OpenAI 兼容 API**，可无缝对接 Dify、RAGFlow、LangChain、LlamaIndex 等应用框架
 - 内置 **模型目录 (Model Catalog)**、智能调度、认证鉴权、负载均衡、自动故障恢复、Prometheus/Grafana 监控等企业级特性
+- **底座不是 Kubernetes**: GPUStack 有自己的 Server-Worker 控制平面, 但可以纳管 K8s 集群作为 GPU 资源池
+- **PPU 等国产芯片纳管**: 通过本机驱动 + GPUStack Runtime 硬件探测实现, 通常配合 llama-box 后端跑 GGUF 量化模型
 
 ## 关键组件
 

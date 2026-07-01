@@ -22,8 +22,10 @@ lifecycle: stable
 tier: core
 created: 2026-06-04
 updated: 2026-06-04
----
+aliases:
+  - Tokenization
 
+---
 # 分词与 Tokenization
 
 > LLM 的第一步——将人类文字转化为模型可消化的 token 序列。

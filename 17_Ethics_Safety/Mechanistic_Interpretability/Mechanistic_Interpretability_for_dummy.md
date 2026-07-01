@@ -5,8 +5,13 @@ tags: ["ai-ethics", "safety", "alignment", "red-teaming"]
 summary: '> **一句话理解**: 机制可解释性就像"打开 AI 的脑子看它在想什么"——不再把 AI 当黑盒，而是解剖它的神经元，看看它是怎么理解"狗"和"猫"的。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Mechanistic Interpretability For Dummy"
+  - "Mechanistic Interpretability for dummy"
+  - Mechanistic_Interpretability_for_dummy
 
+---
 # 机制可解释性小白指南 (Mechanistic Interpretability for Dummy)
 
 > **一句话理解**: 机制可解释性就像"打开 AI 的脑子看它在想什么"——不再把 AI 当黑盒，而是解剖它的神经元，看看它是怎么理解"狗"和"猫"的。

@@ -5,8 +5,11 @@ tags: ["talks", "speeches", "insights", "leaders"]
 summary: "**身份**: OpenAI CTO。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - About
 
+---
 # Mira Murati 简介 (Mira Murati)
 
 - **身份**: OpenAI CTO。

@@ -5,8 +5,13 @@ tags: ["ai-ops", "observability", "monitoring", "incident-response"]
 summary: "> **一句话理解**: LakeFS 是数据湖版本控制——用 Git 工作流管理数据，支持快照、分支、跨环境同步，像 Git 一样管理你的数据湖。"
 created: "2026-05-31"
 updated: "2026-05-31"
----
+tier: supporting
+aliases:
+  - "Lakefs Deep Dive"
+  - "LakeFS Deep Dive"
+  - LakeFS_Deep_Dive
 
+---
 # LakeFS: 数据湖版本控制
 
 > **一句话理解**: LakeFS 是数据湖版本控制——用 Git 工作流管理数据，支持快照、分支、跨环境同步，像 Git 一样管理你的数据湖。
@@ -345,7 +350,7 @@ prod_repo.branches["main"].merge(
 ## Related
 
 - [[13_AI_Ops/AIOps-in-nutshell.md|AIOps-in-nutshell]]
-- [[13_AI_Ops/AI_Incident_Response_Playbook.md|AI_Incident_Response_Playbook]]
+- [[13_AI_Ops/SRE_Reliability/AI_Incident_Response_Playbook|AI_Incident_Response_Playbook]]
 - [[13_AI_Ops/AI_Ops_for_dummy.md|AI_Ops_for_dummy]]
 - [[13_AI_Ops/README.md|13_AI_Ops README]]
 - [[13_AI_Ops/README_for_dummy.md|README_for_dummy]]

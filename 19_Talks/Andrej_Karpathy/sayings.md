@@ -5,8 +5,11 @@ tags: ["talks", "speeches", "insights", "leaders"]
 summary: '1. **"Neural networks are Software 2.0." / "神经网络就是软件 2.0。"**'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - Sayings
 
+---
 # Andrej Karpathy 关于 AI 的观点 (Andrej Karpathy on AI)
 
 1. **"Neural networks are Software 2.0." / "神经网络就是软件 2.0。"** 

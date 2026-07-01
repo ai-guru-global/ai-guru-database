@@ -5,8 +5,13 @@ tags: ["machine-learning", "algorithms", "cheatsheet", "supervised", "unsupervis
 summary: "用一张表+直观类比，快速理解 12 个最经典机器学习算法的核心思想、适用场景、优缺点。适合初学者建立算法选择的直觉。"
 created: 2026-06-01
 updated: 2026-06-01
----
+tier: supporting
+aliases:
+  - "Ml Algorithms Cheatsheet"
+  - "ML Algorithms Cheatsheet"
+  - ML_Algorithms_Cheatsheet
 
+---
 # 经典机器学习算法速查表: 10 分钟建立算法直觉
 
 > **一句话理解**: 选对算法就像选对工具——用锤子钉钉子，用螺丝刀拧螺丝。本文帮你建立"看到问题就知道该用什么算法"的直觉。

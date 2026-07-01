@@ -5,8 +5,13 @@ tags: ["course", "deeplearning-ai", "andrew-ng", "deep-learning"]
 summary: "Andrew Ng 的 5 门深度学习课程——神经网络、超参调优、结构化机器学习、CNN、序列模型。"
 created: "2026-06-12"
 updated: "2026-06-12"
----
+tier: peripheral
+aliases:
+  - "Coursera Deep Learning Specialization"
+  - "coursera deep learning specialization"
+  - coursera_deep_learning_specialization
 
+---
 # Coursera 深度学习专项课程 (Deep Learning Specialization)
 
 > Andrew Ng 的 5 门深度学习课程——神经网络、超参调优、结构化机器学习、CNN、序列模型。

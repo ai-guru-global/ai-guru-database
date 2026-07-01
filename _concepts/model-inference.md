@@ -28,8 +28,11 @@ lifecycle_changed: 2026-06-15
 tier: core
 created: 2026-06-15 00:00:00+00:00
 updated: 2026-06-15 00:00:00+00:00
----
+aliases:
+  - "Model Inference"
+  - "model inference"
 
+---
 # 模型推理原理 (Model Inference)
 
 ## 核心要点
@@ -109,11 +112,11 @@ Attention 解决的是"指代消解"问题——当模型看到"它"时，需要
 
 | 优化技术 | 解决什么问题 | 效果 |
 |----------|------------|------|
-| [[_concepts/kv-cache\|KV Cache]] | 避免每步重算已有 token 的注意力 | 将复杂度从 O(T²) 降至 O(T) |
-| [[_concepts/paged-attention\|PagedAttention]] | KV Cache 显存碎片化浪费 | 显存利用率接近 100% |
-| [[_concepts/speculative-decoding\|投机解码]] | 自回归逐 token 生成太慢 | 2-3× 延迟降低，输出分布不变 |
-| [[_concepts/model-compression\|量化]] | FP16 参数太大，显存装不下 | INT4 量化后模型体积缩小 4× |
-| [[_concepts/continuous-batching\|连续批处理]] | 单请求 GPU 利用率低 | 多请求动态拼批，吞吐提升数倍 |
+| [[_concepts/kv-cache|KV Cache]] | 避免每步重算已有 token 的注意力 | 将复杂度从 O(T²) 降至 O(T) |
+| [[_concepts/paged-attention|PagedAttention]] | KV Cache 显存碎片化浪费 | 显存利用率接近 100% |
+| [[_concepts/speculative-decoding|投机解码]] | 自回归逐 token 生成太慢 | 2-3× 延迟降低，输出分布不变 |
+| [[_concepts/model-compression|量化]] | FP16 参数太大，显存装不下 | INT4 量化后模型体积缩小 4× |
+| [[_concepts/continuous-batching|连续批处理]] | 单请求 GPU 利用率低 | 多请求动态拼批，吞吐提升数倍 |
 
 ### Pre-fill vs Decode 两阶段
 
@@ -136,7 +139,18 @@ Attention 解决的是"指代消解"问题——当模型看到"它"时，需要
 
 ## Related
 
+- [[_concepts/decoding-strategies]] — 解码策略总览
+- [[_concepts/greedy-decoding]] — 贪心解码
+- [[_concepts/sampling-decoding]] — 随机采样解码
+- [[_concepts/temperature-scaling]] — 温度缩放
+- [[_concepts/top-p-sampling]] — Top-p 采样
+- [[_concepts/top-k-sampling]] — Top-k 采样
+- [[_concepts/beam-search]] — 束搜索
+- [[_concepts/autoregressive-generation]] — 自回归生成
+- [[_concepts/ttft]] — 首 token 延迟
+- [[_concepts/tpot]] — 每 token 延迟
 - [[_concepts/kv-cache]] — KV Cache 推理优化核心
+- [[_concepts/llm-inference-checklist]] — LLM 推理上线检查清单
 - [[_concepts/model-deployment]] — 模型部署（推理的生产落地）
 - [[_concepts/model-serving]] — 推理引擎选型（vLLM/SGLang/TensorRT-LLM）
 - [[_concepts/speculative-decoding]] — 投机解码加速

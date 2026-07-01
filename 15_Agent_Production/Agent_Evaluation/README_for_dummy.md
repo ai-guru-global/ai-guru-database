@@ -5,8 +5,13 @@ tags: ["ai-agents", "agent-framework", "production", "langgraph", "model-evaluat
 summary: "> A simple guide to understanding how we test and compare AI agents"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Readme For Dummy"
+  - "README for dummy"
+  - README_for_dummy
 
+---
 # Agent Benchmarking Evaluation Framework - Beginner's Guide
 
 > A simple guide to understanding how we test and compare AI agents
@@ -279,3 +284,5 @@ Happy evaluating!
 - [[15_Agent_Production/Agent_Evaluation/Cloud_Agent_Evaluation/README]] — Cloud Agent Evaluation (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
 - [[15_Agent_Production/Agent_Evaluation/Cloud_Agent_Evaluation_System_2026]] — Cloud Agent Evaluation System 2026 (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
 - [[15_Agent_Production/Agent_Evaluation/Metrics/Evaluation_Metrics]] — Evaluation Metrics (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
+
+- [[15_Agent_Production/README|Agent 生产部署 (Agent Production)]]

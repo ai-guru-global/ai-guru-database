@@ -5,8 +5,12 @@ tags: ["air-gapped", "offline", "huggingface", "deployment", "infrastructure", "
 summary: "> **一句话理解**: 针对断网的内部 / 企业私有云环境，本文档提供了一整套方案，教你如何将 Hugging Face 的模型、数据集、TGI 推理引擎以及 Agent 框架完全离线打包、迁移和闭环运行。"
 created: "2026-06-12"
 updated: "2026-06-12"
----
+tier: supporting
+aliases:
+  - "Airgapped Offline Deployment 2026"
+  - Airgapped_Offline_Deployment_2026
 
+---
 # Air-gapped 离线内网环境：Hugging Face 生态全量本地化部署指南
 
 > **一句话理解**: 对于高保密级别的企业内网（金融、政务、军工），服务器是完全断网的（Air-gapped）。本知识库的 Agent 运行时也处于内部环境中。本文档提供了一整套“无网求生”指南，教你如何将 Hugging Face (HF) 庞大的开源生态搬进内网并全功能运行。

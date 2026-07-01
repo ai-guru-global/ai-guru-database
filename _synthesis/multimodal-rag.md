@@ -17,8 +17,12 @@ provenance:
 base_confidence: 0.75
 lifecycle: draft
 lifecycle_changed: 2026-06-01
----
+tier: core
+aliases:
+  - "Multimodal Rag"
+  - "multimodal rag"
 
+---
 # 多模态 × RAG: 当检索增强遇上图文音视频
 
 ## The Connection

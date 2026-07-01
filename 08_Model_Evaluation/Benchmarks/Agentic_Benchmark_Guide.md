@@ -5,8 +5,12 @@ tags: ["agent-evaluation", "benchmark", "swe-bench", "tau-bench", "bfcl", "webar
 summary: "> 系统梳理 AI Agent 评测基准：从 SWE-bench 到 τ-bench、BFCL、WebArena、GAIA，解析 Agent 评估的核心维度、主流 Benchmark 设计与最新 SOTA 成绩。"
 created: 2026-06-04
 updated: 2026-06-04
----
+tier: supporting
+aliases:
+  - "Agentic Benchmark Guide"
+  - Agentic_Benchmark_Guide
 
+---
 # Agentic Benchmarks — AI Agent 评测全景指南
 
 > **一句话理解**: Agent 评测就像给 AI 安排一场"实习考核"——不是考它背了多少知识（标准 Benchmark），而是看它能不能在真实环境中独立完成工作：读需求、用工具、做决策、遇到错误能自救。
@@ -16,8 +20,8 @@ updated: 2026-06-04
 ## 相关阅读
 
 - [LLM Benchmark Suite 2026](./LLM_Benchmark_Suite_2026.md) — 通用 LLM 评测基准全景
-- [Agent 生产化部署](../15_Agent_Production/README.md) — Agent 从评测到生产的完整路径
-- [全球 LLM 生态总览](../05_NLP_LLMs/Global_LLM_Ecosystem/README.md) — 各模型家族与能力对比
+- [Agent 生产化部署](../../15_Agent_Production/README.md) — Agent 从评测到生产的完整路径
+- [全球 LLM 生态总览](../../05_NLP_LLMs/Global_LLM_Ecosystem/README.md) — 各模型家族与能力对比
 
 ---
 

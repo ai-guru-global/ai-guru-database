@@ -5,8 +5,12 @@ tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> Comprehensive methodology for calculating and comparing agent scores"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Scoring System"
+  - Scoring_System
 
+---
 # Scoring System
 
 > Comprehensive methodology for calculating and comparing agent scores

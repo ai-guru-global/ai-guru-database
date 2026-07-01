@@ -13,8 +13,12 @@ provenance:
 base_confidence: 0.68
 lifecycle: draft
 lifecycle_changed: 2026-05-31
----
+tier: core
+aliases:
+  - "Agents Reinforcement Learning"
+  - "agents reinforcement learning"
 
+---
 # AI 智能体 × 强化学习
 
 ## The Connection

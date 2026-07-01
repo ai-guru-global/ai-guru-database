@@ -22,8 +22,11 @@ lifecycle: stable
 tier: core
 created: 2026-06-04
 updated: 2026-06-04
----
+aliases:
+  - "Knowledge Distillation"
+  - "knowledge distillation"
 
+---
 # 知识蒸馏 (Knowledge Distillation)
 
 > 让小学生学会专家的思维方式，而不只是背答案。

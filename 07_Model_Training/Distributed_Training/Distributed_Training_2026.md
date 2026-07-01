@@ -5,8 +5,12 @@ tags: ["model-training", "distributed-training", "optimization", "fsdp"]
 summary: "> **一句话理解**: 分布式训练通过将数据和模型切分到多个 GPU/节点并行计算，使得原本无法在单卡上完成的大规模模型训练成为可能，是 2026 年训练百亿到万亿参数模型的核心基础设施。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Distributed Training 2026"
+  - Distributed_Training_2026
 
+---
 # Distributed Training 2026
 
 > **一句话理解**: 分布式训练通过将数据和模型切分到多个 GPU/节点并行计算，使得原本无法在单卡上完成的大规模模型训练成为可能，是 2026 年训练百亿到万亿参数模型的核心基础设施。
@@ -1505,11 +1509,11 @@ if rank == 0:
 
 ### 交叉引用
 
-- 神经网络基础与反向传播原理，请参阅 [`../03_Deep_Learning/README.md`](../03_Deep_Learning/README.md)
-- 模型推理优化与部署，请参阅 [`../10_Deployment_Inference/README.md`](../10_Deployment_Inference/README.md)
-- GPU 集群硬件配置与网络拓扑，请参阅 [`../12_Architecture_Infrastructure/AI_Infrastructure_2026.md`](../12_Architecture_Infrastructure/AI_Infrastructure_2026.md)
-- 模型评估方法，请参阅 [`../08_Model_Evaluation/Model_Evaluation.md`](../08_Model_Evaluation/Model_Evaluation.md)
-- MLOps 训练流水线，请参阅 [`../11_MLOps_Pipeline/MLOps_Pipeline.md`](../11_MLOps_Pipeline/MLOps_Pipeline.md)
+- 神经网络基础与反向传播原理，请参阅 [`../03_Deep_Learning/README.md`](../../03_Deep_Learning/README.md)
+- 模型推理优化与部署，请参阅 [`../10_Deployment_Inference/README.md`](../../10_Deployment_Inference/README.md)
+- GPU 集群硬件配置与网络拓扑，请参阅 [`../12_Architecture_Infrastructure/Architecture_Overview/AI_Infrastructure_2026`](12_Architecture_Infrastructure/Architecture_Overview/AI_Infrastructure_2026)
+- 模型评估方法，请参阅 [`../08_Model_Evaluation/Model_Evaluation.md`](08_Model_Evaluation/Model_Evaluation.md)
+- MLOps 训练流水线，请参阅 [`../11_MLOps_Pipeline/MLOps_Pipeline.md`](11_MLOps_Pipeline/MLOps_Pipeline.md)
 
 ### 核心论文
 

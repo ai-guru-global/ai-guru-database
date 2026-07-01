@@ -5,8 +5,12 @@ tags: ["ai-agents", "protocols", "mcp", "a2a", "interoperability", "standardizat
 summary: "> **一句话理解**: 协议是智能体的“通用语言”——它决定了不同厂商的 AI 之间能否像人类发邮件一样互通，以及 AI 能否顺畅地使用全球各地的工具。"
 created: 2026-06-04
 updated: 2026-06-04
----
+tier: supporting
+aliases:
+  - "Agent Protocols Comparison 2026"
+  - Agent_Protocols_Comparison_2026
 
+---
 # Agent Protocols Comparison 2026: MCP, A2A, UCP, and Beyond
 
 > **一句话理解**: 协议是智能体的“通用语言”——它决定了不同厂商的 AI 之间能否像人类发邮件一样互通，以及 AI 能否顺畅地使用全球各地的工具。
@@ -90,7 +94,7 @@ updated: 2026-06-04
 - [[06_Reinforcement_Learning/AI_Agents/MCP_Implementation_Guide]] — MCP 协议开发实战
 - [[06_Reinforcement_Learning/AI_Agents/Agent_Protocols_Detail]] — 各类协议的底层报文分析
 - [[15_Agent_Production/Agent_Frameworks/README]] — 框架对协议的支持情况
-- [[12_Architecture_Infrastructure/AI_Infrastructure_2026]] — 协议对硬件架构的要求
+- [[12_Architecture_Infrastructure/Architecture_Overview/AI_Infrastructure_2026]] — 协议对硬件架构的要求
 
 ---
 

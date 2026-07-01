@@ -9,8 +9,12 @@ created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
 tier: supporting
----
+aliases:
+  - "Ai Finance Applications 2026"
+  - "AI Finance Applications 2026"
+  - AI_Finance_Applications_2026
 
+---
 # AI 金融应用场景深度解析
 
 > **一句话理解**: AI 在金融领域的核心应用:智能投顾、风控、反欺诈、量化交易、合规审查等场景的技术方案与落地实践。
@@ -63,5 +67,5 @@ tier: supporting
 - 人工兜底: 关键决策必须有人工审核
 - 模型验证: 定期评估模型偏见和公平性
 
-> **关联**: -> [[18_AI_Applications_Industry/Finance|金融 AI]] | [[17_Ethics_Safety|伦理安全]]
+> **关联**: -> [[18_AI_Applications_Industry/Finance|金融 AI]] | [[17_Ethics_Safety/README|伦理安全]]
 

@@ -6,8 +6,12 @@ tags: [alignment, rlhf, value-alignment, reinforcement-learning, llm-training, s
 category: -synthesis
 created: 2026-06-12
 summary: ""
----
+tier: core
+aliases:
+  - "Alignment Rlhf"
+  - "alignment rlhf"
 
+---
 # 价值对齐 × RLHF：从人类反馈到可扩展监督
 
 ## 核心论点
@@ -33,8 +37,8 @@ summary: ""
 ## 跨域连接
 
 - [[05_NLP_LLMs/Reasoning_Models/o1_Class_Reasoning_Models|推理模型]] — o1-class 模型的思维链与对齐目标的张力
-- [[07_Model_Training/Fine_tuning_Strategies|微调策略]] — SFT → RLHF → DPO 的完整流水线
-- [[20_Papers/Alignment/RLHF_DPO_Deep_Dive|RLHF 与 DPO 深度解读]] — 从 PPO 到 Direct Preference Optimization
+- [[05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Strategies|微调策略]] — SFT → RLHF → DPO 的完整流水线
+- [[20_Papers_and_Research/Alignment/RLHF_DPO_Deep_Dive|RLHF 与 DPO 深度解读]] — 从 PPO 到 Direct Preference Optimization
 - [[17_Ethics_Safety/Value_Alignment|价值对齐]] — 对齐的理论基础与伦理框架
 - [[17_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming|红队测试]] — 对齐后的对抗验证
 

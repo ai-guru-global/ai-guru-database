@@ -5,8 +5,13 @@ tags: ["deployment", "inference", "migration", "llm", "vllm", "sglang", "tgi", "
 summary: "> **一句话理解**: LLM 推理引擎迁移指南——覆盖 vLLM、SGLang、TGI、TensorRT-LLM 之间的 API、配置、量化、部署迁移方法，以及自建到云 API 的切换策略。"
 created: "2026-06-15"
 updated: "2026-06-15"
----
+tier: supporting
+aliases:
+  - "Llm Inference Engine Migration Guide"
+  - "LLM Inference Engine Migration Guide"
+  - LLM_Inference_Engine_Migration_Guide
 
+---
 # LLM 推理引擎迁移指南
 
 > **一句话理解**: LLM 推理引擎迁移指南——覆盖 vLLM、SGLang、TGI、TensorRT-LLM 之间的 API、配置、量化、部署迁移方法，以及自建到云 API 的切换策略。
@@ -535,4 +540,4 @@ router_settings:
 - [[10_Deployment_Inference/Inference_Engines/TGI_Deep_Dive|TGI_Deep_Dive]]
 - [[10_Deployment_Inference/Inference_Engines/TensorRT_LLM_Deep_Dive|TensorRT_LLM_Deep_Dive]]
 - [[10_Deployment_Inference/Inference_Engines/Groq_Deep_Dive|Groq_Deep_Dive]]
-- [[14_AI_Gateway/LiteLLM_Deep_Dive|LiteLLM_Deep_Dive]]
+- [[12_Architecture_Infrastructure/AI_Gateway/LiteLLM_Deep_Dive|LiteLLM_Deep_Dive]]

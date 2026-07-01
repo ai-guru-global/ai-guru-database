@@ -25,8 +25,10 @@ lifecycle: stable
 tier: core
 created: 2026-06-16
 updated: 2026-06-16
----
+aliases:
+  - Volcano
 
+---
 # Volcano
 
 > K8s 上的「批处理调度专家」——让分布式训练作业不再因为资源碎片而卡住。

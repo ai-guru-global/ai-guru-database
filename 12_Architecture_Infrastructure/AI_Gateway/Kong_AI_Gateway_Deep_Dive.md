@@ -5,8 +5,13 @@ tags: ["ai-gateway", "api-management", "routing", "litellm"]
 summary: "> **一句话秒懂**: Kong AI Gateway 是建立在 Kong 网关之上的 AI 专属代理层，为 LLM API 提供限流、缓存、安全、可观测等企业级能力。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Kong Ai Gateway Deep Dive"
+  - "Kong AI Gateway Deep Dive"
+  - Kong_AI_Gateway_Deep_Dive
 
+---
 # Kong AI Gateway 深度解析
 
 > **一句话秒懂**: Kong AI Gateway 是建立在 Kong 网关之上的 AI 专属代理层，为 LLM API 提供限流、缓存、安全、可观测等企业级能力。
@@ -874,14 +879,14 @@ curl http://localhost:8000/v1/chat/completions \
 ### 相关文档
 
 - [AI Gateway 对比 2026](./AI_Gateway_Comparison_2026.md)
-- [API 设计 for AI](../../93_Tools/API_Design_for_AI.md)
-- [Prompt 管理平台](../../93_Tools/Prompt_Management_Platform.md)
+- [API 设计 for AI](../../93_Templates/API_Design_for_AI.md)
+- [Prompt 管理平台](../../93_Templates/Prompt_Management_Platform.md)
 - [Portkey 深度解析](./Portkey_Deep_Dive.md)
 - [LiteLLM 深度解析](./LiteLLM_Deep_Dive.md)
 
 ## Related
 
-- [[14_AI_Gateway/AI_Gateway_for_dummy]] — AI Gateway 入门指南 (for Dummies) (共享: ai-gateway, api-management, litellm, routing)
-- [[14_AI_Gateway/Gateway-in-nutshell]] — AI 网关速成指南 (共享: ai-gateway, api-management, litellm, routing)
-- [[14_AI_Gateway/README]] — AI Gateway (共享: ai-gateway, api-management, litellm, routing)
-- [[14_AI_Gateway/Spring_AI_Gateway_Security]] — Spring AI 网关与安全 (共享: ai-gateway, api-management, litellm, routing)
+- [[12_Architecture_Infrastructure/AI_Gateway/AI_Gateway_for_dummy]] — AI Gateway 入门指南 (for Dummies) (共享: ai-gateway, api-management, litellm, routing)
+- [[12_Architecture_Infrastructure/AI_Gateway/Gateway-in-nutshell]] — AI 网关速成指南 (共享: ai-gateway, api-management, litellm, routing)
+- [[12_Architecture_Infrastructure/AI_Gateway/README]] — AI Gateway (共享: ai-gateway, api-management, litellm, routing)
+- [[12_Architecture_Infrastructure/AI_Gateway/Spring_AI_Gateway_Security]] — Spring AI 网关与安全 (共享: ai-gateway, api-management, litellm, routing)

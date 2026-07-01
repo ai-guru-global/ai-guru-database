@@ -25,8 +25,11 @@ lifecycle_changed: 2026-05-31
 tier: core
 created: 2026-05-31T00:00:00Z
 updated: 2026-05-31T00:00:00Z
----
+aliases:
+  - "Long Context Models"
+  - "long context models"
 
+---
 # 长上下文模型
 
 ## 概述
@@ -122,7 +125,7 @@ updated: 2026-05-31T00:00:00Z
 
 ## Related
 
-- [[20_Papers/Architecture/Attention_Is_All_You_Need_Deep_Dive]] — Attention Is All You Need 深度解读 (共享: attention, nlp)
+- [[20_Papers_and_Research/Architecture/Attention_Is_All_You_Need_Deep_Dive]] — Attention Is All You Need 深度解读 (共享: attention, nlp)
 - [[_concepts/transformer-architecture]] — Transformer 架构 (共享: attention, nlp)
 - [[_synthesis/transformer-llm-architecture]] — Transformer 架构 × LLM 架构 (共享: attention, nlp)
 - [[_concepts/multi-head-latent-attention]] — Multi-head Latent Attention (MLA): DeepSeek 提出的 KV Cache 压缩架构，128K 上下文从 213GB 降至 7.6GB

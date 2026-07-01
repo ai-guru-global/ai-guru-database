@@ -5,8 +5,12 @@ tags: ["ai-ops", "observability", "monitoring", "incident-response"]
 summary: "> 🎯 **目标**：理解 AI Ops 的核心概念、智能监控、异常检测和自动修复能力。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: core
+aliases:
+  - "Aiops In Nutshell"
+  - "AIOps in nutshell"
 
+---
 # AI Ops 速成指南
 
 > 🎯 **目标**：理解 AI Ops 的核心概念、智能监控、异常检测和自动修复能力。
@@ -208,11 +212,11 @@ flowchart LR
 
 | 主题 | 文档 |
 |------|------|
-| 完整架构 | [AI_Ops_2026.md](./AI_Ops_2026.md) |
-| 入门指南 | [AI_Ops_for_dummy.md](./AI_Ops_for_dummy.md) |
-| SRE 实践 | [SRE_for_AI_Systems.md](./SRE_for_AI_Systems.md) |
-| 事故响应 | [AI_Incident_Response_Playbook.md](./AI_Incident_Response_Playbook.md) |
-| 可观测性 | [AI_Observability_Guide.md](../11_MLOps_Pipeline/AI_Observability_Guide.md) |
+| 完整架构 | [AI_Ops_2026.md](13_AI_Ops/AI_Ops_2026.md) |
+| 入门指南 | [AI_Ops_for_dummy.md](13_AI_Ops/AI_Ops_for_dummy.md) |
+| SRE 实践 | [SRE_for_AI_Systems.md](./SRE_Reliability/SRE_for_AI_Systems.md) |
+| 事故响应 | [AI_Incident_Response_Playbook.md](13_AI_Ops/SRE_Reliability/AI_Incident_Response_Playbook) |
+| 可观测性 | [AI_Observability_Guide.md](11_MLOps_Pipeline/Observability/AI_Observability_Guide.md) |
 
 ---
 
@@ -220,11 +224,12 @@ flowchart LR
 
 ## Related
 
-- [[13_AI_Ops/AI_Incident_Response_Playbook]] — AI 系统事故响应手册 (共享: ai-ops, incident-response, monitoring, observability)
+- [[13_AI_Ops/SRE_Reliability/AI_Incident_Response_Playbook]] — AI 系统事故响应手册 (共享: ai-ops, incident-response, monitoring, observability)
 - [[13_AI_Ops/AI_Ops_for_dummy]] — AI Ops 入门指南 (for Dummies) (共享: ai-ops, incident-response, monitoring, observability)
 - [[13_AI_Ops/README]] — AI 运维与可观测性 (AI Ops) (共享: ai-ops, incident-response, monitoring, observability)
 - [[13_AI_Ops/README_for_dummy]] — 16 AI Ops — 小白版 📡 (共享: ai-ops, incident-response, monitoring, observability)
-- [[13_AI_Ops/Phoenix_Deep_Dive.md|Phoenix_Deep_Dive]]
-- [[13_AI_Ops/Feast_Deep_Dive.md|Feast_Deep_Dive]]
-- [[13_AI_Ops/LakeFS_Deep_Dive.md|LakeFS_Deep_Dive]]
-- [[13_AI_Ops/LangSmith_Deep_Dive.md|LangSmith_Deep_Dive]]
+- [[11_MLOps_Pipeline/Observability/Phoenix_Deep_Dive.md|Phoenix_Deep_Dive]]
+- [[11_MLOps_Pipeline/Experiment_Tracking/Feast_Deep_Dive.md|Feast_Deep_Dive]]
+- [[11_MLOps_Pipeline/Orchestration/LakeFS_Deep_Dive.md|LakeFS_Deep_Dive]]
+- [[11_MLOps_Pipeline/Observability/LangSmith_Deep_Dive.md|LangSmith_Deep_Dive]]
+- [[_synthesis/llm-observability-aiops|LLM 可观测性 × AIOps: 从系统监控到语义监控的范式跃迁]]

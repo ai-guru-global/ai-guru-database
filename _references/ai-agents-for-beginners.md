@@ -14,8 +14,11 @@ created: 2026-06-12
 updated: 2026-06-12
 lifecycle: draft
 tier: supporting
----
+aliases:
+  - "Ai Agents For Beginners"
+  - "ai agents for beginners"
 
+---
 # Microsoft AI Agents for Beginners
 
 这是 Microsoft 官方开源课程 **AI Agents for Beginners** 的外部源引用索引。课程面向希望从零开始构建 AI Agent 的开发者，使用 **Microsoft Agent Framework (MAF)** 与 **Azure AI Foundry Agent Service V2** 作为主力技术栈，并为每节课提供 Python / .NET 代码示例。

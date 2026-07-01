@@ -9,8 +9,11 @@ created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
 tier: supporting
----
+aliases:
+  - "Embedding Models Guide"
+  - Embedding_Models_Guide
 
+---
 # Embedding 模型选型与实践指南 2026
 
 > **一句话理解**: Embedding 模型是 RAG 和语义搜索的核心,本文对比主流 Embedding 模型的性能、维度、成本,提供选型建议。
@@ -80,5 +83,5 @@ Embedding 是将文本转换为高维向量的模型,语义相似的文本在向
 - **过长截断**: 超过最大 token 的文本会被截断
 - **归一化**: 有些模型需要 L2 归一化才能正确计算相似度
 
-> **关联**: -> [[14_RAG_Systems|RAG 系统]] | [[14_RAG_Systems/Embeddings/Sentence_Transformers_Deep_Dive|Sentence Transformers]] | [[14_RAG_Systems/Vector_Database_for_dummy|向量数据库]]
+> **关联**: -> [[14_RAG_Systems/README|RAG 系统]] | [[14_RAG_Systems/Embeddings/Sentence_Transformers_Deep_Dive|Sentence Transformers]] | [[14_RAG_Systems/Vector_Database_for_dummy|向量数据库]]
 

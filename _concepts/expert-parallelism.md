@@ -16,8 +16,11 @@ lifecycle: draft
 tier: core
 created: 2026-06-15
 updated: 2026-06-15
----
+aliases:
+  - "Expert Parallelism"
+  - "expert parallelism"
 
+---
 # Expert Parallelism（专家并行）
 
 ## 核心要点

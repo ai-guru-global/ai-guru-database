@@ -5,8 +5,12 @@ tags: [prm, process-reward-model, reward-model, reasoning, verification, step-le
 summary: 深度解析过程奖励模型（PRM）与结果奖励模型（ORM）的设计原理、训练方法、信用分配问题，以及在推理模型训练中的关键作用。
 date: 2026-06-01
 created: 2026-06-12
----
+tier: peripheral
+aliases:
+  - "Process Reward Models"
+  - Process_Reward_Models
 
+---
 # Process Reward Models (PRM) 深度解析
 
 ## 一句话理解

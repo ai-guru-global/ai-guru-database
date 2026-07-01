@@ -5,8 +5,13 @@ tags: ["ai-coding", "code-generation", "cursor", "github-copilot"]
 summary: "> **一句话**: DeepSeek 提供高性价比的 AI 编程辅助，余额 ¥68，月消费约 ¥36，通过 deepseek-tio 工具接入。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Deepseek Guide"
+  - "DeepSeek Guide"
+  - DeepSeek_Guide
 
+---
 # DeepSeek 使用指南
 
 > **一句话**: DeepSeek 提供高性价比的 AI 编程辅助，余额 ¥68，月消费约 ¥36，通过 deepseek-tio 工具接入。

@@ -5,8 +5,13 @@ tags: ["testing", "regression-testing", "ci-cd", "snapshot", "golden-set", "eval
 summary: '> **一句话理解**: LLM 回归测试的核心矛盾是"输出非确定性"——传统断言"等于期望值"会一直失败，解法是用语义相似度代替精确匹配、用黄金集做回归基线、用统计阈值而非布尔判定，让 CI 在模型更新时既能抓住质量退步又不被随机抖动淹没。'
 created: '2026-06-22'
 updated: '2026-06-22'
----
+tier: supporting
+aliases:
+  - "Regression Testing Llm Deep Dive"
+  - "Regression Testing LLM Deep Dive"
+  - Regression_Testing_LLM_Deep_Dive
 
+---
 # LLM 回归测试深度指南 - 非确定性输出的质量守护
 
 > **一句话理解**: LLM 回归测试的核心矛盾是"输出非确定性"——传统断言"等于期望值"会一直失败，解法是用语义相似度代替精确匹配、用黄金集做回归基线、用统计阈值而非布尔判定，让 CI 在模型更新时既能抓住质量退步又不被随机抖动淹没。
@@ -385,8 +390,8 @@ Tier 3: 深度评估（200-500 题，每周/版本前跑）
 ## Related
 
 - [[09_Testing/AI_Test_Framework_2026|AI 测试框架 2026]] — 测试全栈框架
-- [[09_Testing/Promptfoo_Deep_Dive|Promptfoo]] — 回归测试主力工具
-- [[09_Testing/LLM_Safety_Testing_Deep_Dive|LLM 安全测试]] — 安全回归测试
+- [[09_Testing/Testing_Frameworks/Promptfoo_Deep_Dive|Promptfoo]] — 回归测试主力工具
+- [[09_Testing/Testing_Frameworks/LLM_Safety_Testing_Deep_Dive|LLM 安全测试]] — 安全回归测试
 - [[09_Testing/Contract_Testing|契约测试]] — API 格式稳定性
 - [[13_AI_Ops/AI_Ops_2026|AI 运维]] — 线上质量监控
 - [[_concepts/ci-integrated-evaluation|CI 集成评估]] — 概念卡
@@ -399,3 +404,5 @@ Tier 3: 深度评估（200-500 题，每周/版本前跑）
 > - Braintrust: AI Evaluation Platform
 > - DeepEval: Pytest for LLMs
 > - "Evaluating LLMs is Hard" (Ham et al., 2024)
+
+- [[09_Testing/README|AI 测试与评估 (AI Testing)]]

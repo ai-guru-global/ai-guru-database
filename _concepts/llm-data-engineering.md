@@ -19,8 +19,11 @@ lifecycle: stable
 tier: core
 created: 2026-06-04
 updated: 2026-06-04
----
+aliases:
+  - "Llm Data Engineering"
+  - "llm data engineering"
 
+---
 # LLM 数据工程 (LLM Data Engineering)
 
 > 数据是 LLM 的燃料——同样的架构和算力，数据质量/数量/配比决定模型是「废铁」还是「SOTA」。

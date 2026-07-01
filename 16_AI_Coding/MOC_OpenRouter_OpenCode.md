@@ -10,9 +10,13 @@ moc_coverage:
 last_created: 2026-06-12
 updated: "2026-05-21"
 tier: core
-summary: ""
----
+aliases:
+  - "Moc Openrouter Opencode"
+  - "MOC OpenRouter OpenCode"
+  - MOC_OpenRouter_OpenCode
 
+summary: "topic-ai-coding MOC — 专题文档"
+---
 # topic-ai-coding MOC
 
 > **MOC 版本**: 1.0

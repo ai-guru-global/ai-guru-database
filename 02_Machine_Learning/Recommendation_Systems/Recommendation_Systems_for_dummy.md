@@ -5,8 +5,13 @@ tags: ["machine-learning", "supervised", "unsupervised"]
 summary: '> **一句话秒懂**: 推荐系统就像"一个超聪明的导购员"——它观察你看了什么、买了什么，然后猜出你可能还想要什么，并且猜得特别准。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Recommendation Systems For Dummy"
+  - "Recommendation Systems for dummy"
+  - Recommendation_Systems_for_dummy
 
+---
 # 推荐系统 - 小白版
 
 > **一句话秒懂**: 推荐系统就像"一个超聪明的导购员"——它观察你看了什么、买了什么，然后猜出你可能还想要什么，并且猜得特别准。

@@ -5,8 +5,13 @@ tags: ["nlp", "llm", "transformer", "gpt", "bert"]
 summary: '> **一句话理解**: 多模态模型就像一个有"眼睛和耳朵"的 AI——不仅能读文字，还能看图片、听声音，然后综合所有信息来回答你。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Multimodal Models For Dummy"
+  - "Multimodal Models for dummy"
+  - Multimodal_Models_for_dummy
 
+---
 # 多模态模型小白指南 (Multimodal Models for Dummy)
 
 > **一句话理解**: 多模态模型就像一个有"眼睛和耳朵"的 AI——不仅能读文字，还能看图片、听声音，然后综合所有信息来回答你。

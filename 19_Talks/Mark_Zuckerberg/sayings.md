@@ -5,8 +5,11 @@ tags: ["talks", "speeches", "insights", "leaders"]
 summary: "1. **“Open source is the best way to safely build AI together.” / “开源是安全共建 AI 的最佳方式。”**"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - Sayings
 
+---
 # Mark Zuckerberg 关于 AI 的观点 (Mark Zuckerberg on AI)
 
 1. **“Open source is the best way to safely build AI together.” / “开源是安全共建 AI 的最佳方式。”** 

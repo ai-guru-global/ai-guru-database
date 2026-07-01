@@ -5,8 +5,12 @@ tags: ["machine-learning", "supervised", "unsupervised"]
 summary: "> **一句话理解**: 机器学习就是让计算机从数据中找到规律，然后用这些规律对新数据做出预测或决策，而无需显式编程。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Ml In Nutshell"
+  - "ML in nutshell"
 
+---
 # 机器学习速成指南
 
 > **一句话理解**: 机器学习就是让计算机从数据中找到规律，然后用这些规律对新数据做出预测或决策，而无需显式编程。

@@ -23,8 +23,11 @@ lifecycle: stable
 tier: core
 created: 2026-06-16
 updated: 2026-06-16
----
+aliases:
+  - "Azure Openai"
+  - "azure openai"
 
+---
 # Azure OpenAI
 
 > 企业版的「ChatGPT API」——在 Azure 云上安全合规地使用 GPT 和 Embedding。

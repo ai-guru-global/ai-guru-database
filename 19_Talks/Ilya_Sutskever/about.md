@@ -5,8 +5,11 @@ tags: ["talks", "speeches", "insights", "leaders"]
 summary: "**身份**: OpenAI 联合创始人兼前首席科学家；深度学习顶尖研究者。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - About
 
+---
 # Ilya Sutskever 简介 (Ilya Sutskever)
 
 - **身份**: OpenAI 联合创始人兼前首席科学家；深度学习顶尖研究者。

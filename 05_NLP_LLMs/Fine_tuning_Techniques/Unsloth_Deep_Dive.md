@@ -5,8 +5,12 @@ tags: ["nlp", "llm", "transformer", "gpt", "bert"]
 summary: "> **一句话理解**: Unsloth 让大模型微调快 2-5 倍、显存减半——使用优化过的反向传播和量化，在消费级 GPU 上也能微调 70B 模型。"
 created: "2026-05-31"
 updated: "2026-05-31"
----
+tier: supporting
+aliases:
+  - "Unsloth Deep Dive"
+  - Unsloth_Deep_Dive
 
+---
 # Unsloth: 快速 LLM 微调框架
 
 > **一句话理解**: Unsloth 让大模型微调快 2-5 倍、显存减半——使用优化过的反向传播和量化，在消费级 GPU 上也能微调 70B 模型。

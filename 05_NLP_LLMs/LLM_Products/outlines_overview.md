@@ -9,8 +9,12 @@ created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
 tier: supporting
----
+aliases:
+  - "Outlines Overview"
+  - "outlines overview"
+  - outlines_overview
 
+---
 # Outlines 受控生成框架概览
 
 > **一句话理解**: 通过正则表达式和 JSON Schema 约束 LLM 输出,特别适合本地模型的受控生成。
@@ -34,3 +38,7 @@ tier: supporting
 | 依赖 | 需要 GPU | 只需 API |
 
 > **关联**: -> [[05_NLP_LLMs/Structured_Output_Guide|结构化输出指南]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
+
+## Related
+
+- [[05_NLP_LLMs/README|04 自然语言处理与大模型 (NLP & LLMs)]]

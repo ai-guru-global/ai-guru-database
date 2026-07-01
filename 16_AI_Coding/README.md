@@ -5,8 +5,9 @@ tags: ["ai-coding", "code-generation", "cursor", "github-copilot"]
 summary: '> AI编程已从"代码补全"进化为"结对编程伙伴"——本目录构建涵盖理论、工具、实战、方法论的完整知识体系。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
 
+---
 # AI 编程 (AI Coding)
 
 > AI 编程已从"代码补全"进化为"结对编程伙伴"——本目录构建涵盖理论、工具、实战、方法论的完整知识体系。
@@ -133,6 +134,11 @@ updated: '2026-05-31'
 - [[16_AI_Coding/Tools/Ima_Guide]] — Ima 使用指南
 - [[16_AI_Coding/Tools/Coze_Guide]] — Coze 使用指南
 - [[16_AI_Coding/Tools/Pending_Tools_Catalog]] — 待探索工具目录
+
+- [[Claude_Enterprise_Use_Cases|Claude 企业实践案例]]
+- [[Claude_Cost_Optimization|Claude 成本优化与性能调优]]
+- [[codex-openai_overview|OpenAI Codex 概览]]
+- [[github-copilot_overview|GitHub Copilot 概览]]
 
 ## 新增页面
 

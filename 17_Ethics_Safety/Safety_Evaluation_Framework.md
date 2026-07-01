@@ -5,8 +5,12 @@ tags: ["ai-safety", "evaluation", "red-teaming", "toxicity", "bias", "robustness
 summary: "系统性梳理 AI 安全评测的完整方法论，涵盖内容安全（毒性/偏见/幻觉）、对抗鲁棒性（越狱/提示注入）、红队测试流程，以及主流评测基准（ToxiGen、BBQ、TruthfulQA、HarmBench）的工程实践。"
 created: 2026-06-01
 updated: 2026-06-01
----
+tier: supporting
+aliases:
+  - "Safety Evaluation Framework"
+  - Safety_Evaluation_Framework
 
+---
 # AI 安全评测框架 2026: 从基准测试到红队实战
 
 > **一句话理解**: 模型能力评测告诉你"它能做什么"，安全评测告诉你"它不应该做什么"——安全评测是 LLM 从实验室走向生产的门禁系统。

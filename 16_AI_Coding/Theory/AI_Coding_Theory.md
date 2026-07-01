@@ -5,8 +5,13 @@ tags: ["ai-coding", "code-generation", "cursor", "github-copilot"]
 summary: "> **一句话理解**: 理解 AI 编程的底层原理——从编程范式的演进到 LLM 如何理解代码，从代码幻觉的成因到 Agentic Coding 的架构跃迁，为实践提供理论根基。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Ai Coding Theory"
+  - "AI Coding Theory"
+  - AI_Coding_Theory
 
+---
 # AI 辅助编程理论基础
 
 > **一句话理解**: 理解 AI 编程的底层原理——从编程范式的演进到 LLM 如何理解代码，从代码幻觉的成因到 Agentic Coding 的架构跃迁，为实践提供理论根基。

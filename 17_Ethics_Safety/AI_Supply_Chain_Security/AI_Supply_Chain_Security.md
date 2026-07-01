@@ -5,8 +5,13 @@ tags: ["ai-ethics", "safety", "alignment", "red-teaming"]
 summary: "> **一句话理解**: AI供应链如同软件供应链一样脆弱——从训练数据到模型权重，从API调用到第三方SDK，每一个环节都可能成为攻击向量。2026年的AI系统安全必须从「模型安全」扩展到「全链路供应链安全」。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Ai Supply Chain Security"
+  - "AI Supply Chain Security"
+  - AI_Supply_Chain_Security
 
+---
 # AI 供应链安全 2026
 
 > **一句话理解**: AI 供应链如同软件供应链一样脆弱——从训练数据到模型权重，从 API 调用到第三方 SDK，每一个环节都可能成为攻击向量。2026 年的 AI 系统安全必须从「模型安全」扩展到「全链路供应链安全」。

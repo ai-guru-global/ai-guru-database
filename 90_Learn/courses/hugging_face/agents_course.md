@@ -5,8 +5,13 @@ tags: ["course", "huggingface", "ai-agents", "smolagents"]
 summary: "HuggingFace 官方 AI Agents 课程——使用 smolagents 构建生产级智能体。"
 created: "2026-06-12"
 updated: "2026-06-12"
----
+tier: peripheral
+aliases:
+  - "Agents Course"
+  - "agents course"
+  - agents_course
 
+---
 # HuggingFace AI Agents 课程
 
 > HuggingFace 官方 AI Agents 课程——使用 smolagents 构建生产级智能体。

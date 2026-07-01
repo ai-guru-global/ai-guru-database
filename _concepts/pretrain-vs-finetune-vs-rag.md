@@ -16,7 +16,7 @@ relationships:
 sources:
   - 05_NLP_LLMs/LLM_Fundamentals.md
   - 14_RAG_Systems/README.md
-  - 07_Model_Training/Fine_tuning_Strategies.md
+  - 05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Strategies.md
 summary: "在已有 LLM 基础上做定制,有四条路:Prompt Engineering → RAG → 微调 → 预训练。选型原则:优先用最便宜的方案解决 80% 的问题,只在该方案搞不定时才升级。本文档给出明确的决策树、对比表、典型场景与选型 checklist。"
 provenance:
   extracted: 0.70
@@ -27,8 +27,11 @@ lifecycle: stable
 tier: core
 created: 2026-06-16
 updated: 2026-06-16
----
+aliases:
+  - "Pretrain Vs Finetune Vs Rag"
+  - "pretrain vs finetune vs rag"
 
+---
 # 预训练 vs 微调 vs RAG — 三种 LLM 定制方案选型
 
 > **一句话理解**:让大模型"按你的需求输出",有 4 个档位的工具,从便宜到贵、从浅到深:Prompt → RAG → 微调 → 预训练。**够用就好,别一上来就最贵**。

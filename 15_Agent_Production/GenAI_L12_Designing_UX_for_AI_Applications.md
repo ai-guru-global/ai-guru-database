@@ -8,8 +8,13 @@ updated: "2026-06-12"
 source_url: "https://raw.githubusercontent.com/microsoft/generative-ai-for-beginners/main/translations/zh-CN/12-designing-ux-for-ai-applications/README.md"
 course: "Microsoft Generative AI for Beginners"
 lesson_number: 12
----
+tier: supporting
+aliases:
+  - "Genai L12 Designing Ux For Ai Applications"
+  - "GenAI L12 Designing UX for AI Applications"
+  - GenAI_L12_Designing_UX_for_AI_Applications
 
+---
 ## 学习目标
 
 完成本课后，你将能够：

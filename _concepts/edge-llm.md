@@ -19,8 +19,11 @@ lifecycle: stable
 tier: core
 created: 2026-06-04
 updated: 2026-06-04
----
+aliases:
+  - "Edge Llm"
+  - "edge llm"
 
+---
 # 端侧 LLM (Edge LLM)
 
 > 让 LLM 跑在手机/PC/嵌入式设备上——离线可用、隐私安全、低延迟。

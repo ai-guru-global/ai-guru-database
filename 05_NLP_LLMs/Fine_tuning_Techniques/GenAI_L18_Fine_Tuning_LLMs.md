@@ -8,8 +8,13 @@ updated: "2026-06-12"
 source_url: "https://raw.githubusercontent.com/microsoft/generative-ai-for-beginners/main/translations/zh-CN/18-fine-tuning/README.md"
 course: "Microsoft Generative AI for Beginners"
 lesson_number: 18
----
+tier: supporting
+aliases:
+  - "Genai L18 Fine Tuning Llms"
+  - "GenAI L18 Fine Tuning LLMs"
+  - GenAI_L18_Fine_Tuning_LLMs
 
+---
 ## 学习目标
 
 本课程介绍预训练语言模型的微调概念，探讨该方法的优点和挑战，并就何时以及如何使用微调来提升生成式人工智能模型的性能提供指导。
@@ -328,3 +333,7 @@ Unsloth 是一个开源框架，专注于简化和加速大型语言模型的微
 | 上一课 | 下一课 |
 |--------|--------|
 | [[15_Agent_Production/GenAI_L17_AI_Agents|L17 AI代理]] | [[05_NLP_LLMs/Edge_LLM/GenAI_L19_Building_with_SLMs|L19 使用小型语言模型构建]] |
+
+## Related
+
+- [[_synthesis/finetuning-rag-decision|微调 × RAG: LLM 应用知识注入的两条路径]]

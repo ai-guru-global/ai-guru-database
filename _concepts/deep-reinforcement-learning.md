@@ -105,7 +105,7 @@ ChatGPT rlhf（PPO优化奖励模型）、AlphaGo（MCTS+Deep RL）、OpenAI Fiv
 
 ## Related
 
-- [[20_Papers/RL/DQN_Deep_Dive]] — DQN 深度解读 (Playing Atari with Deep Reinforcement Learning) (共享: deep-rl, dqn, rl)
+- [[20_Papers_and_Research/RL/DQN_Deep_Dive]] — DQN 深度解读 (Playing Atari with Deep Reinforcement Learning) (共享: deep-rl, dqn, rl)
 - [[06_Reinforcement_Learning/AI_Agents/AI_Agents_for_dummy]] — AI智能体 - 小白版 🤖 (共享: reinforcement-learning, rl)
 - [[06_Reinforcement_Learning/AI_Agents/Agent-in-nutshell]] — AI 智能体速成指南 (共享: reinforcement-learning, rl)
 - [[06_Reinforcement_Learning/AI_Agents/Agent_Future_Roadmap_2026_2030]] — Agent 未来发展路线图 2026-2030 (共享: reinforcement-learning, rl)

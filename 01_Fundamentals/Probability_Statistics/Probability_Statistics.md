@@ -5,8 +5,12 @@ tags: ["fundamentals", "math", "algorithms", "basics"]
 summary: '> **一句话理解**: 概率论是 AI 的"不确定性指南针" —— 就像天气预报用百分比表达未来，AI 模型用概率分布建模世界的随机性。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Probability Statistics"
+  - Probability_Statistics
 
+---
 # 概率论与数理统计 (Probability & Statistics)
 
 > **一句话理解**: 概率论是 AI 的"不确定性指南针" —— 就像天气预报用百分比表达未来，AI 模型用概率分布建模世界的随机性。

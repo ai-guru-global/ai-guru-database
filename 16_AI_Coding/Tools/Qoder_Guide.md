@@ -5,8 +5,12 @@ tags: ["ai-coding", "code-generation", "cursor", "github-copilot"]
 summary: "> **一句话**: Qoder 是面向全栈开发的 AI 编程平台，集成 QoderWork（协作工作台）与 QoderWake（唤醒式 Agent），支持从 miniapp 到 agent project 的快速交付。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Qoder Guide"
+  - Qoder_Guide
 
+---
 # Qoder / QoderWork / QoderWake 使用指南
 
 > **一句话**: Qoder 是面向全栈开发的 AI 编程平台，集成 QoderWork（协作工作台）与 QoderWake（唤醒式 Agent），支持从 miniapp 到 agent project 的快速交付。

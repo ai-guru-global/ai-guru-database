@@ -6,8 +6,13 @@ summary: "> 明确 10（建设方法论+工具实现）与 16（运维实践）�
 created: 2026-06-15
 updated: 2026-06-15
 type: governance
----
+tier: supporting
+aliases:
+  - "Boundary With 16"
+  - "Boundary with 16"
+  - Boundary_with_16
 
+---
 # 10_MLOps_Pipeline 与 16_AI_Ops 边界声明
 
 > **核心原则**: 10 是「**ML 建设**」（概念 + 工具实现），16 是「**AI 运维**」（线上运营 + 应急响应）。
@@ -81,7 +86,7 @@ graph TB
 | 主题 | 权威页 |
 |------|--------|
 | **AI 运维总览** | [[13_AI_Ops/AI_Ops_2026]] |
-| **事故响应** | [[13_AI_Ops/AI_Incident_Response_Playbook]]、[[13_AI_Ops/Incident_Response_for_AI_Systems]] |
+| **事故响应** | [[13_AI_Ops/SRE_Reliability/AI_Incident_Response_Playbook]]、[[13_AI_Ops/Incident_Response_for_AI_Systems]] |
 | **SRE 实践** | [[13_AI_Ops/SRE_for_AI_Systems]] |
 | **混沌工程** | [[13_AI_Ops/Chaos_Engineering_AI]] |
 | **安全护栏（工具）** | [[13_AI_Ops/Guardrails_Deep_Dive]]（未迁移，留 16） |
@@ -146,7 +151,7 @@ graph TB
 
 ## 六、Related
 
-- [[92_Plan/MLOps_Section_Enhancement_Plan_2026|章节加强计划 2026]] — 含本声明的背景与后续路线图
+- [[11_MLOps_Pipeline/README|章节导航]] — MLOps Pipeline 目录导航
 - [[README]] — 10 章节导航
 - [[13_AI_Ops/README]] — 16 章节导航
 

@@ -5,8 +5,13 @@ tags: ["deep-learning", "neural-networks", "backpropagation"]
 summary: '> **一句话秒懂**: 神经网络就像"一群决策者手拉手传话"——第一排看到图片说"我看到圆圆的耳朵",第二排说"可能是猫",最后一排说"是猫!",通过层层传递信息,最终做出判断!'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Neural Network Core For Dummy"
+  - "Neural Network Core for dummy"
+  - Neural_Network_Core_for_dummy
 
+---
 # 神经网络核心 - 小白版
 
 > **一句话秒懂**: 神经网络就像"一群决策者手拉手传话"——第一排看到图片说"我看到圆圆的耳朵",第二排说"可能是猫",最后一排说"是猫!",通过层层传递信息,最终做出判断!

@@ -5,8 +5,13 @@ tags: ["learning", "education", "courses", "study-path"]
 summary: '> **一句话秒懂**: 这一章是 AI Guru 知识库的"学习导航中心"——帮你找到最适合自己的学习路径。不管你是零基础小白还是 AI 专家，都能在这里找到适合你的路线。'
 created: '2026-05-31'
 updated: '2026-06-15'
----
+tier: supporting
+aliases:
+  - "Readme For Dummy"
+  - "README for dummy"
+  - README_for_dummy
 
+---
 # 90 Learn — 小白版 🚀
 
 > **一句话秒懂**: 这一章是 AI Guru 知识库的"学习导航中心"——帮你找到最适合自己的学习路径。不管你是零基础小白还是 AI 专家，都能在这里找到适合你的路线。
@@ -97,7 +102,7 @@ Stage 0: AI 觉醒 ─── AI 定义 · 三大类型 · 能力边界 · 经典
 | [外部课程映射](./courses/) | 18 门外部课程章节映射 |
 | [概念层次卡片](./_concepts/) | Stage 0-4 核心概念卡片 |
 | [里程碑自测](./guides/milestones.md) | 每个 Stage 的自测问题 |
-| [概念知识图谱](../91_Notes/AI_Concept_Knowledge_Graph.md) | 1300+ 概念的依赖关系图 |
+| [概念知识图谱](../_meta/notes/AI_Concept_Knowledge_Graph.md) | 1300+ 概念的依赖关系图 |
 
 ## 常见问题
 
@@ -111,7 +116,7 @@ Stage 0: AI 觉醒 ─── AI 定义 · 三大类型 · 能力边界 · 经典
 
 ### Q: 路上卡住了怎么办？
 
-**A**: 查看 [概念知识图谱](../91_Notes/AI_Concept_Knowledge_Graph.md) 找出缺失的前置知识。
+**A**: 查看 [概念知识图谱](../_meta/notes/AI_Concept_Knowledge_Graph.md) 找出缺失的前置知识。
 
 ### Q: 学完一条路径后做什么？
 

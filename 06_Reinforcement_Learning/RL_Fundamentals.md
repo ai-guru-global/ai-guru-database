@@ -5,8 +5,13 @@ tags: ["reinforcement-learning", "mdp", "bellman", "q-learning", "policy-gradien
 summary: "> **一句话理解**: 强化学习就是让 AI 通过试错来学习最优策略——像一只小狗通过奖励学会坐下、握手、翻滚，只不过这里的'小狗'是算法，'奖励'是数学函数。"
 created: 2026-06-12
 updated: 2026-06-12
----
+tier: supporting
+aliases:
+  - "Rl Fundamentals"
+  - "RL Fundamentals"
+  - RL_Fundamentals
 
+---
 # 强化学习基础 (RL Fundamentals)
 
 > **一句话理解**: 强化学习就是让 AI 通过试错来学习最优策略——像一只小狗通过奖励学会坐下、握手、翻滚，只不过这里的"小狗"是算法，"奖励"是数学函数。
@@ -324,5 +329,5 @@ DeepSeek 的创新：用组内相对排名替代奖励模型
 - [[06_Reinforcement_Learning/README_for_dummy]] — 强化学习入门
 - [[06_Reinforcement_Learning/Deep_RL/Deep_RL]] — 深度强化学习
 - [[07_Model_Training/Alignment/TRL_RLHF_DPO_Guide]] — RLHF/DPO 微调指南
-- [[20_Papers/RL/DQN_Deep_Dive]] — DQN 论文深度解读
-- [[20_Papers/Alignment/RLHF_DPO_Deep_Dive]] — RLHF 与 DPO 深度解读
+- [[20_Papers_and_Research/RL/DQN_Deep_Dive]] — DQN 论文深度解读
+- [[20_Papers_and_Research/Alignment/RLHF_DPO_Deep_Dive]] — RLHF 与 DPO 深度解读

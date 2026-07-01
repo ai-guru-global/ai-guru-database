@@ -9,8 +9,11 @@ created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
 tier: supporting
----
+aliases:
+  - "Nlp With Transformers"
+  - "nlp with transformers"
 
+---
 # NLP with Transformers
 
 > **一句话理解**: Hugging Face 团队的 Transformers 实战指南.作者:Lewis Tunstall 等.

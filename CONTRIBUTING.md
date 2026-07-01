@@ -5,8 +5,11 @@ tags: ["overview"]
 summary: "We welcome contributions!"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - Contributing
 
+---
 # Contributing to AI Guru
 
 We welcome contributions!

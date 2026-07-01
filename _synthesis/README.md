@@ -5,8 +5,9 @@ tags: [synthesis, knowledge-graph, cross-domain]
 summary: 18 篇跨领域综合分析文档，连接不同章节的概念，发现知识间的隐藏关联。
 created: 2026-06-03
 updated: 2026-06-15
----
+tier: core
 
+---
 # 跨域综合文档索引 (Synthesis Index)
 
 > **定位**: 跨领域综合分析层（每篇 1.7-4.5KB），连接来自不同章节的概念，揭示知识间的隐藏关联。

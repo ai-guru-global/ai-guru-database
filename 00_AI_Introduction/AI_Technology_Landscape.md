@@ -5,8 +5,13 @@ tags: ["ai", "landscape", "overview", "ecosystem"]
 summary: "AI技术生态像一座冰山——你看到的ChatGPT只是水面上的尖端，水面下是数十年积累的数学理论、算法创新、工程实践和基础设施。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Ai Technology Landscape"
+  - "AI Technology Landscape"
+  - AI_Technology_Landscape
 
+---
 # AI 技术全景概览
 
 > **一句话理解**: AI 技术生态像一座冰山——你看到的 ChatGPT 只是水面上的尖端，水面下是数十年积累的数学理论、算法创新、工程实践和基础设施。

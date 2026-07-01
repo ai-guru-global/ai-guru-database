@@ -5,8 +5,9 @@ tags: ["testing", "ai-testing", "prompt-testing", "evaluation"]
 summary: "> AI 测试是保障 LLM 应用质量的关键环节，覆盖 Prompt 测试、RAG 评估、Agent 评估、合同测试等多个维度。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: core
 
+---
 # AI 测试与评估 (AI Testing)
 
 > AI 测试是保障 LLM 应用质量的关键环节，覆盖 Prompt 测试、RAG 评估、Agent 评估、合同测试等多个维度。
@@ -28,16 +29,16 @@ updated: 2026-05-31
 
 | 文档 | 内容 | 适用角色 |
 |------|------|----------|
-| [Promptfoo Deep Dive](./Promptfoo_Deep_Dive.md) | Prompt 测试框架：批量测试、版本对比 | 开发者、Prompt 工程师 |
+| [Promptfoo Deep Dive](./Testing_Frameworks/Promptfoo_Deep_Dive.md) | Prompt 测试框架：批量测试、版本对比 | 开发者、Prompt 工程师 |
 | [RAGAS Deep Dive](./RAGAS_Deep_Dive.md) | RAG 评估框架：答案质量、召回率 | RAG 开发者 |
-| [DeepEval Deep Dive](./DeepEval_Deep_Dive.md) | LLM 评估框架：单元测试、集成测试 | 开发者、QA |
+| [DeepEval Deep Dive](./Testing_Frameworks/DeepEval_Deep_Dive.md) | LLM 评估框架：单元测试、集成测试 | 开发者、QA |
 
 ### 安全测试
 
 | 文档 | 内容 | 适用角色 |
 |------|------|----------|
-| [LLM 安全测试](./LLM_Safety_Testing_Deep_Dive.md) | 红队、越狱、对抗防御、OWASP LLM Top 10 | 安全工程师、QA |
-| [回归测试](./Regression_Testing_LLM_Deep_Dive.md) | 非确定性输出的回归策略、黄金集、CI 门控 | QA、平台工程师 |
+| [LLM 安全测试](./Testing_Frameworks/LLM_Safety_Testing_Deep_Dive.md) | 红队、越狱、对抗防御、OWASP LLM Top 10 | 安全工程师、QA |
+| [回归测试](./Testing_Frameworks/Regression_Testing_LLM_Deep_Dive.md) | 非确定性输出的回归策略、黄金集、CI 门控 | QA、平台工程师 |
 
 ### 实验追踪
 
@@ -104,7 +105,7 @@ AI 测试类型
 *Last updated: 2026-04-26*
 
 ## Related
-- [[09_Testing/Promptfoo_Deep_Dive|Promptfoo: LLM Prompt 测试框架]]
+- [[09_Testing/Testing_Frameworks/Promptfoo_Deep_Dive|Promptfoo: LLM Prompt 测试框架]]
 - [[09_Testing/Weights_Biases_Deep_Dive|Weights & Biases: ML 实验追踪平台]]
 - [[09_Testing/Test_Data_Management|测试数据管理 (Test Data Management)]]
 - [[09_Testing/Contract_Testing|契约测试 (Contract Testing for AI Systems)]]
@@ -114,10 +115,10 @@ AI 测试类型
 
 - [[09_Testing/AI-Testing-in-nutshell]] — AI 测试与评估速成指南 (共享: ai-testing, evaluation, prompt-testing, testing)
 - [[09_Testing/AI_Testing_for_dummy]] — AI 测试 - 小白版 (共享: ai-testing, evaluation, prompt-testing, testing)
-- [[09_Testing/Java_AI_Testing]] — Java AI 测试实践 (共享: ai-testing, evaluation, prompt-testing, testing)
+- [[09_Testing/Testing_Frameworks/Java_AI_Testing]] — Java AI 测试实践 (共享: ai-testing, evaluation, prompt-testing, testing)
 - [[09_Testing/README_for_dummy.md|README_for_dummy]]
 
-- [[09_Testing/Promptfoo_Deep_Dive|Promptfoo: LLM Prompt 测试框架]]
+- [[09_Testing/Testing_Frameworks/Promptfoo_Deep_Dive|Promptfoo: LLM Prompt 测试框架]]
 - [[09_Testing/Weights_Biases_Deep_Dive|Weights & Biases: ML 实验追踪平台]]
 - [[09_Testing/Test_Data_Management|测试数据管理 (Test Data Management)]]
 - [[09_Testing/Contract_Testing|契约测试 (Contract Testing for AI Systems)]]
@@ -125,3 +126,5 @@ AI 测试类型
 - [[09_Testing/AI_Test_Framework_2026|AI 系统测试框架 (AI Test Framework 2026)]]
 - [[09_Testing/RAGAS_Deep_Dive|RAGAS: RAG 评估框架]]
 
+
+- [[Regression_Testing_LLM_Deep_Dive|LLM 回归测试深度指南 - 非确定性输出的质量守护]]

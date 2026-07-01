@@ -19,8 +19,11 @@ lifecycle: stable
 tier: core
 created: 2026-06-04
 updated: 2026-06-04
----
+aliases:
+  - "Federated Learning"
+  - "federated learning"
 
+---
 # 联邦学习 (Federated Learning)
 
 > 数据不动模型动——在隐私保护下实现多方协作训练。

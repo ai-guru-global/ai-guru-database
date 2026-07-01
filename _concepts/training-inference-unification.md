@@ -20,8 +20,11 @@ lifecycle_changed: 2026-06-03
 tier: supporting
 created: 2026-06-03 00:00:00+00:00
 updated: 2026-06-03 00:00:00+00:00
----
+aliases:
+  - "Training Inference Unification"
+  - "training inference unification"
 
+---
 # 训推一体 (Training-Inference Unification)
 
 ## 核心要点

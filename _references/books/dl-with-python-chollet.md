@@ -9,8 +9,11 @@ created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
 tier: supporting
----
+aliases:
+  - "Dl With Python Chollet"
+  - "dl with python chollet"
 
+---
 # Deep Learning with Python
 
 > **一句话理解**: Keras 作者的深度学习教程,实战导向.作者:Francois Chollet.

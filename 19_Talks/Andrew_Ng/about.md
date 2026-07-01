@@ -5,8 +5,11 @@ tags: ["talks", "speeches", "insights", "leaders"]
 summary: "**身份**: Deeplearning.AI 与 Landing AI 创始人，Coursera 联合创始人，斯坦福大学兼职教授。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - About
 
+---
 # Andrew Ng 简介 (Andrew Ng)
 
 - **身份**: Deeplearning.AI 与 Landing AI 创始人，Coursera 联合创始人，斯坦福大学兼职教授。

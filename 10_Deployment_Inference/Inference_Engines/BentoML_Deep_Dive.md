@@ -5,8 +5,13 @@ tags: ["deployment", "inference", "serving", "bentoml", "model-serving", "kubern
 summary: "> **一句话理解**: BentoML 是开源 AI 模型服务框架——一键将任意模型打包为生产级 API，支持多框架、自动扩缩容、A/B 测试，并能与 vLLM/TGI/TensorRT-LLM 等推理引擎无缝集成。"
 created: "2026-05-31"
 updated: "2026-06-15"
----
+tier: supporting
+aliases:
+  - "Bentoml Deep Dive"
+  - "BentoML Deep Dive"
+  - BentoML_Deep_Dive
 
+---
 # BentoML: AI 模型服务框架
 
 > **一句话理解**: BentoML 是开源 AI 模型服务框架——一键将任意模型打包为生产级 API，支持多框架、自动扩缩容、A/B 测试，并能与 vLLM/TGI/TensorRT-LLM 等推理引擎无缝集成。
@@ -713,4 +718,4 @@ class ObservableService:
 - [[10_Deployment_Inference/Deployment_Inference_for_dummy.md|Deployment_Inference_for_dummy]]
 - [[10_Deployment_Inference/Inference-in-nutshell.md|Inference-in-nutshell]]
 - [[10_Deployment_Inference/Inference_Engines/LLM_Inference_Engine_Selection_Guide.md|LLM_Inference_Engine_Selection_Guide]]
-- [[14_AI_Gateway/LiteLLM_Deep_Dive.md|LiteLLM_Deep_Dive]]
+- [[12_Architecture_Infrastructure/AI_Gateway/LiteLLM_Deep_Dive|LiteLLM_Deep_Dive]]

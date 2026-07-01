@@ -6,9 +6,12 @@ summary: "> **一句话理解**: MRL（俄罗斯套娃表示学习）让一组�
 created: "2026-06-15"
 updated: "2026-06-15"
 lifecycle: "reviewed"
-tier: "core"
----
+tier: "supporting"
+aliases:
+  - "Matryoshka Representation Learning Deep Dive"
+  - Matryoshka_Representation_Learning_Deep_Dive
 
+---
 # Matryoshka Representation Learning 深度解析
 
 > **一句话理解**: MRL（俄罗斯套娃表示学习）让一组向量具备"可截断"能力——前 64 维做粗排、前 256 维做精排、全量 768/1024 维做最终匹配，同一模型按需取前缀即可兼顾检索精度与存储/计算成本。
@@ -455,7 +458,7 @@ def adaptive_retrieve(query_embedding, index, latency_budget_ms):
 ## 10. 延伸阅读
 
 - 论文: *Matryoshka Representation Learning* (Kusupati et al., NeurIPS 2022)
-- 论文解读: [[20_Papers/Efficiency/Matryoshka_Representation_Learning_Deep_Dive]]
+- 论文解读: [[20_Papers_and_Research/Efficiency/Matryoshka_Representation_Learning_Deep_Dive]]
 - 概念卡片: [[_concepts/matryoshka-representation-learning]]
 - 相关主题:
   - [[14_RAG_Systems/Embeddings/Embedding_Models_Guide|Embedding 模型选型]]

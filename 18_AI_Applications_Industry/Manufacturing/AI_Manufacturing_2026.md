@@ -5,8 +5,13 @@ tags: ["ai-applications", "industry", "finance", "healthcare"]
 summary: '> **一句话理解**: 2026年制造业AI已进入"数字孪生+Agentic"阶段——PepsiCo用AI数字孪生提升产能20%，视觉质检漏检率降低90%，"黑灯工厂"从概念走向规模化落地。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Ai Manufacturing 2026"
+  - "AI Manufacturing 2026"
+  - AI_Manufacturing_2026
 
+---
 # AI 智能制造行业应用 (2025-2026)
 
 > **一句话理解**: 2026 年制造业 AI 已进入"数字孪生+Agentic"阶段——PepsiCo 用 AI 数字孪生提升产能 20%，视觉质检漏检率降低 90%，"黑灯工厂"从概念走向规模化落地。

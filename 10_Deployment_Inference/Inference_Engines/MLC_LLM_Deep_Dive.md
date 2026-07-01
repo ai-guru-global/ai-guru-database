@@ -5,8 +5,13 @@ tags: ["deployment", "inference", "serving", "mlc-llm", "mobile", "edge", "npu",
 summary: "> **一句话理解**: MLC LLM 是 CMU 团队出品的端侧 LLM 推理框架——基于 Apache TVM 编译，支持手机 NPU/GPU、游戏主机和浏览器，让大模型在消费级设备上高速运行。"
 created: "2026-06-15"
 updated: "2026-06-15"
----
+tier: supporting
+aliases:
+  - "Mlc Llm Deep Dive"
+  - "MLC LLM Deep Dive"
+  - MLC_LLM_Deep_Dive
 
+---
 # MLC LLM: 移动端/异构设备 LLM 推理框架
 
 > **一句话理解**: MLC LLM 是 CMU 团队出品的端侧 LLM 推理框架——基于 Apache TVM 编译，支持手机 NPU/GPU、游戏主机和浏览器，让大模型在消费级设备上高速运行。

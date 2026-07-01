@@ -5,8 +5,12 @@ tags: ["ai-ops", "observability", "monitoring", "incident-response"]
 summary: "> **一句话理解**: Kubeflow 是云原生机器学习平台——在 K8s 上运行 ML 工作流、分布式训练、超参数调优、模型服务，开源 ML Platform。"
 created: "2026-05-31"
 updated: "2026-05-31"
----
+tier: supporting
+aliases:
+  - "Kubeflow Deep Dive"
+  - Kubeflow_Deep_Dive
 
+---
 # Kubeflow: 云原生 ML 平台
 
 > **一句话理解**: Kubeflow 是云原生机器学习平台——在 K8s 上运行 ML 工作流、分布式训练、超参数调优、模型服务，开源 ML Platform。
@@ -375,7 +379,7 @@ if __name__ == "__main__":
 ## Related
 
 - [[13_AI_Ops/AIOps-in-nutshell.md|AIOps-in-nutshell]]
-- [[13_AI_Ops/AI_Incident_Response_Playbook.md|AI_Incident_Response_Playbook]]
+- [[13_AI_Ops/SRE_Reliability/AI_Incident_Response_Playbook|AI_Incident_Response_Playbook]]
 - [[13_AI_Ops/AI_Ops_for_dummy.md|AI_Ops_for_dummy]]
 - [[13_AI_Ops/README.md|13_AI_Ops README]]
 - [[13_AI_Ops/README_for_dummy.md|README_for_dummy]]

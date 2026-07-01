@@ -5,8 +5,13 @@ tags: ["accelerate", "deepspeed", "distributed-training", "huggingface", "multi-
 summary: "> **一句话理解**: `accelerate` 库让你只需要改动 4 行原生 PyTorch 代码，就能在单机单卡、多卡 DDP、甚至跨机器 DeepSpeed 之间无缝切换，消除了底层分布式通信的噩梦。"
 created: "2026-06-12"
 updated: "2026-06-12"
----
+tier: supporting
+aliases:
+  - "Hf Accelerate Deepspeed Guide"
+  - "HF Accelerate DeepSpeed Guide"
+  - HF_Accelerate_DeepSpeed_Guide
 
+---
 # Hugging Face Accelerate 与 DeepSpeed：分布式训练极简指南
 
 > **一句话理解**: 过去配置 PyTorch 分布式训练（DDP）和微软 DeepSpeed 需要写大量冗杂的通信与初始化代码。Hugging Face `accelerate` 库让你只需要改动 4 行代码，就能在单机单卡、多机多卡、DeepSpeed 之间无缝切换。
@@ -151,4 +156,4 @@ accelerate launch --num_processes=4 my_script.py
 ## 相关阅读
 - [[07_Model_Training/Optimization/Optimization_for_dummy]]
 - [[05_NLP_LLMs/Fine_tuning_Techniques/PEFT_Advanced_2026]]
-- [[12_Architecture_Infrastructure/AI_Infrastructure_2026]]
+- [[12_Architecture_Infrastructure/Architecture_Overview/AI_Infrastructure_2026]]

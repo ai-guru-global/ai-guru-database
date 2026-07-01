@@ -5,8 +5,13 @@ tags: ["fundamentals", "math", "algorithms", "basics", "java"]
 summary: "> **一句话理解**: Java 生态正在通过 Spring AI、GraalVM、LangChain4j 等项目全面拥抱 AI —— 从企业级后端到边缘推理，JVM 平台为 AI 应用提供了成熟的工程化基础设施。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Java Ecosystem Ai Overview"
+  - "Java Ecosystem AI Overview"
+  - Java_Ecosystem_AI_Overview
 
+---
 # Java 生态与 AI：全景概览
 
 > **一句话理解**: Java 生态正在通过 Spring AI、GraalVM、LangChain4j 等项目全面拥抱 AI —— 从企业级后端到边缘推理，JVM 平台为 AI 应用提供了成熟的工程化基础设施。

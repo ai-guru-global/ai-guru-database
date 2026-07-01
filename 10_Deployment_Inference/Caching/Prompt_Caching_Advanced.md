@@ -9,9 +9,12 @@ sources:
 created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
-tier: core
----
+tier: supporting
+aliases:
+  - "Prompt Caching Advanced"
+  - Prompt_Caching_Advanced
 
+---
 # Prompt 缓存高级技术
 
 > **一句话理解**: Prompt 缓存是降低 LLM 推理成本和延迟的关键技术,本文覆盖前缀缓存、语义缓存、KV Cache 优化等高级方案。
@@ -94,5 +97,5 @@ response2 = llm("ML 是什么?")  # 缓存命中(语义相似)
 4. **设置合理的 TTL**: 平衡新鲜度和成本
 5. **语义缓存仅用于容错场景**: 精确答案需要精确缓存
 
-> **关联**: -> [[10_Deployment_Inference|部署推理]] | [[10_Deployment_Inference/Caching/Prompt_Caching_and_KV_Cache_Optimization|Prompt Caching 优化]] | [[14_AI_Gateway|AI 网关]]
+> **关联**: -> [[10_Deployment_Inference/README|部署推理]] | [[10_Deployment_Inference/Caching/Prompt_Caching_and_KV_Cache_Optimization|Prompt Caching 优化]] | [[12_Architecture_Infrastructure/AI_Gateway|AI 网关]]
 

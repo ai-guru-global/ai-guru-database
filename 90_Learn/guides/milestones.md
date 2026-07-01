@@ -5,8 +5,11 @@ tags: ["learning", "education", "courses", "study-path"]
 summary: "> **用这些问题检验你对每个 Stage 的理解程度。如果能回答大部分问题，说明你已经达到了该阶段的学习目标。**"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - Milestones
 
+---
 # 里程碑自测
 
 > **用这些问题检验你对每个 Stage 的理解程度。如果能回答大部分问题，说明你已经达到了该阶段的学习目标。**
@@ -242,7 +245,7 @@ updated: 2026-05-31
 
 ---
 
-*本文档是 AI Guru 知识库概念入门路径的里程碑自测系统。每个 Stage 的问题设计参考了 [AI 概念知识图谱](../../91_Notes/AI_Concept_Knowledge_Graph.md) 中的概念依赖关系。*
+*本文档是 AI Guru 知识库概念入门路径的里程碑自测系统。每个 Stage 的问题设计参考了 [AI 概念知识图谱](../../_meta/notes/AI_Concept_Knowledge_Graph.md) 中的概念依赖关系。*
 
 ## Related
 

@@ -8,8 +8,13 @@ updated: "2026-06-12"
 source_url: "https://raw.githubusercontent.com/microsoft/generative-ai-for-beginners/main/translations/zh-CN/15-rag-and-vector-databases/README.md"
 course: "Microsoft Generative AI for Beginners"
 lesson_number: 15
----
+tier: supporting
+aliases:
+  - "Genai L15 Rag And Vector Databases"
+  - "GenAI L15 RAG and Vector Databases"
+  - GenAI_L15_RAG_and_Vector_Databases
 
+---
 ## 学习目标
 
 完成本课后，你将能够：
@@ -455,3 +460,7 @@ RAG和向量数据库可以应用于多种场景：
 | 上一课 | 下一课 |
 |--------|--------|
 | [[11_MLOps_Pipeline/GenAI_L14_GenAI_Application_Lifecycle|L14 GenAI应用生命周期]] | [[05_NLP_LLMs/GenAI_L16_Open_Source_Models_and_Hugging_Face|L16 开源模型与Hugging Face]] |
+
+## Related
+
+- [[_synthesis/finetuning-rag-decision|微调 × RAG: LLM 应用知识注入的两条路径]]

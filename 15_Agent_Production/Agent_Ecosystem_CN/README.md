@@ -5,8 +5,9 @@ tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> 国内 AI Agent 产品和开源项目正在快速崛起，在中文理解、多模态、企业应用等维度各有特色。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
 
+---
 # 国内 AI Agent 生态
 
 > 国内 AI Agent 产品和开源项目正在快速崛起，在中文理解、多模态、企业应用等维度各有特色。
@@ -55,3 +56,5 @@ updated: 2026-05-31
 - [[15_Agent_Production/Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
 - [[15_Agent_Production/Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)
 
+
+- [[15_Agent_Production/README|Agent 生产部署 (Agent Production)]]

@@ -9,8 +9,12 @@ created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
 tier: supporting
----
+aliases:
+  - "Ai Education Applications 2026"
+  - "AI Education Applications 2026"
+  - AI_Education_Applications_2026
 
+---
 # AI 教育应用场景深度解析
 
 > **一句话理解**: AI 在教育领域的核心应用:个性化辅导、自动评分、内容生成、学习分析等场景的技术方案与实践。
@@ -58,5 +62,5 @@ tier: supporting
 - **数字鸿沟**: AI 教育工具的可及性
 - **过度依赖**: 保持人类教师的核心角色
 
-> **关联**: -> [[18_AI_Applications_Industry/Education|教育 AI]] | [[17_Ethics_Safety|伦理安全]]
+> **关联**: -> [[18_AI_Applications_Industry/Education|教育 AI]] | [[17_Ethics_Safety/README|伦理安全]]
 

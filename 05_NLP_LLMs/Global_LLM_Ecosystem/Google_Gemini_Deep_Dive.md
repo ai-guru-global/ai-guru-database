@@ -5,8 +5,12 @@ tags: [google, gemini, deepmind, palm, lama, gemma, multimodal, moe, long-contex
 summary: "全面剖析 Google DeepMind 从 LaMDA 到 Gemini 2.5 的完整技术演进：Pathways 分布式训练系统、原生多模态架构 (Natively Multimodal)、Mixture-of-Experts + 百万级上下文、Thinking Mode 可控推理、Gemma 开源模型族、TPU 自研芯片基础设施，以及 Project Astra / Mariner 智能体生态。"
 created: 2026-06-02
 updated: 2026-06-02
----
+tier: supporting
+aliases:
+  - "Google Gemini Deep Dive"
+  - Google_Gemini_Deep_Dive
 
+---
 # Google Gemini 技术深度解析
 
 ## 一句话理解
@@ -649,7 +653,7 @@ Agent 能力:            完整              完整             基础
   └── 端侧部署         ✗                ✗                ✗
 ```
 
-> **相关文档**: 关于推理模型的技术原理，参见 [Long Context Models 2026](../Long_Context_Models_2026.md) 和 [LLM Architectures](../LLM_Architectures/LLM_Architectures.md)
+> **相关文档**: 关于推理模型的技术原理，参见 [Long Context Models 2026](../LLM_Architectures/Long_Context_Models_2026.md) 和 [LLM Architectures](../LLM_Architectures/LLM_Architectures.md)
 
 ---
 
@@ -1478,7 +1482,7 @@ graph TD
 ### 多模态与长上下文
 
 - [Native Multimodal Architectures (原生多模态架构)](../Multimodal_Models/Native_Multimodal_Architectures.md) — 从拼接式到原生多模态的架构演进深度解析
-- [Long Context Models 2026 (长上下文模型)](../Long_Context_Models_2026.md) — 万级到百万级 token 处理技术的全面分析
+- [Long Context Models 2026 (长上下文模型)](../LLM_Architectures/Long_Context_Models_2026.md) — 万级到百万级 token 处理技术的全面分析
 - [Multimodal Architectures 2026](../Multimodal_Models/Multimodal_Architectures_2026.md) — 多模态模型的最新架构进展
 
 ### 推理模型

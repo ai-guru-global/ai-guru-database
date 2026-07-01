@@ -8,8 +8,13 @@ updated: "2026-06-12"
 source_url: "https://raw.githubusercontent.com/microsoft/generative-ai-for-beginners/main/translations/zh-CN/09-building-image-applications/README.md"
 course: "Microsoft Generative AI for Beginners"
 lesson_number: 9
----
+tier: supporting
+aliases:
+  - "Genai L09 Building Image Applications"
+  - "GenAI L09 Building Image Applications"
+  - GenAI_L09_Building_Image_Applications
 
+---
 ## 学习目标
 
 完成本课后，你将能够：

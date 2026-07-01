@@ -5,8 +5,9 @@ tags: ["references", "external-sources", "courses", "books", "papers"]
 summary: "外部学习资源的结构化索引——课程、书籍、教程、数据集的引用与映射。"
 created: 2026-06-12
 updated: 2026-06-12
----
+tier: supporting
 
+---
 # 参考资料索引 (References)
 
 > **定位**: 外部学习资源的结构化索引，将高质量外部内容映射到知识库内部章节。
@@ -15,7 +16,7 @@ updated: 2026-06-12
 
 | 资源 | 类型 | 映射 |
 |------|------|------|
-| [Microsoft AI For Beginners](microsoft-ai-for-beginners.md) | 课程 | → [[90_Learn/courses/microsoft/microsoft_ai_for_beginners]] |
+| [Microsoft AI For Beginners](./microsoft-ai-for-beginners.md) | 课程 | → [[90_Learn/courses/microsoft/microsoft_ai_for_beginners]] |
 
 ## 规划中的资源索引
 
@@ -44,6 +45,6 @@ internal_mappings: 映射到的内部章节列表
 
 ## 相关目录
 
-- [[20_Papers/README]] — 必读论文
+- [[20_Papers_and_Research/README]] — 必读论文
 - [[90_Learn/README]] — 学习路径
 - [[00_AI_Introduction/AI_Learning_Resources]] — AI 学习资源

@@ -5,8 +5,13 @@ tags: ["testing", "ai-testing", "prompt-testing", "evaluation"]
 summary: "> **一句话秒懂**: AI 测试就像新车上市前的安全碰撞测试——不测不知道，一测吓一跳，测完才敢放心上路。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: core
+aliases:
+  - "Ai Testing For Dummy"
+  - "AI Testing for dummy"
+  - AI_Testing_for_dummy
 
+---
 # AI 测试 - 小白版
 
 > **一句话秒懂**: AI 测试就像新车上市前的安全碰撞测试——不测不知道，一测吓一跳，测完才敢放心上路。
@@ -453,7 +458,7 @@ AI 在训练时没见过"特殊场景"
 建议接下来：
 1. **动手试试**：拿 ChatGPT 做一次简单的测试，用上面学到的方法
 2. **深入学习**：阅读 [AI 测试框架](./AI_Test_Framework_2026.md) 了解专业测试方法
-3. **工具实践**：试试 [Promptfoo](./Promptfoo_Deep_Dive.md) 这样的测试工具
+3. **工具实践**：试试 [Promptfoo](./Testing_Frameworks/Promptfoo_Deep_Dive.md) 这样的测试工具
 
 > 记住：测试不是挑毛病，而是让 AI 变得更好。每一次测试都是在帮 AI 进步！
 
@@ -464,7 +469,7 @@ AI 在训练时没见过"特殊场景"
 ## Related
 
 - [[09_Testing/AI-Testing-in-nutshell]] — AI 测试与评估速成指南 (共享: ai-testing, evaluation, prompt-testing, testing)
-- [[09_Testing/Java_AI_Testing]] — Java AI 测试实践 (共享: ai-testing, evaluation, prompt-testing, testing)
+- [[09_Testing/Testing_Frameworks/Java_AI_Testing]] — Java AI 测试实践 (共享: ai-testing, evaluation, prompt-testing, testing)
 - [[09_Testing/README]] — AI 测试与评估 (AI Testing) (共享: ai-testing, evaluation, prompt-testing, testing)
 - [[09_Testing/Weights_Biases_Deep_Dive.md|Weights_Biases_Deep_Dive]]
 - [[09_Testing/Contract_Testing.md|Contract_Testing]]

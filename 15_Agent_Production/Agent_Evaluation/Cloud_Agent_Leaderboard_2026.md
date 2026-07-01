@@ -5,8 +5,12 @@ tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> 基于综合测评框架的权威排名，覆盖 15+ 款云产品智能体"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Cloud Agent Leaderboard 2026"
+  - Cloud_Agent_Leaderboard_2026
 
+---
 # 云产品智能体排行榜 2026
 
 > 基于综合测评框架的权威排名，覆盖 15+ 款云产品智能体
@@ -273,7 +277,7 @@ Step 5: 下季度测评验证提升效果
 
 - 所有测评数据基于标准化的测试环境和题库
 - 评分由自动化测评（60%）+ 人工测评（25%）+ 用户反馈（15%）综合得出
-- 测评方法学详见 [云产品 Agent 测评框架](Cloud_Agent_Evaluation/Cloud_Agent_Benchmark_2026.md)
+- 测评方法学详见 [云产品 Agent 测评框架](./Cloud_Agent_Evaluation/Cloud_Agent_Benchmark_2026.md)
 - 语料库评估方法详见 [语料库覆盖度框架](./Corpus_Assessment/Corpus_Coverage_Framework.md)
 - 本排行榜每季度更新一次，重大版本发布后进行专项更新
 

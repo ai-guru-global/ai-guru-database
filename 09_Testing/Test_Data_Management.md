@@ -5,8 +5,12 @@ tags: ["testing", "ai-testing", "prompt-testing", "evaluation"]
 summary: '> **一句话理解**: 测试数据管理是 AI 系统测试的"后勤保障"——系统化地创建、维护、版本化测试数据，确保测试可重复、结果可信、回归高效。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Test Data Management"
+  - Test_Data_Management
 
+---
 # 测试数据管理 (Test Data Management)
 
 > **一句话理解**: 测试数据管理是 AI 系统测试的"后勤保障"——系统化地创建、维护、版本化测试数据，确保测试可重复、结果可信、回归高效。
@@ -1474,6 +1478,6 @@ flowchart LR
 
 - [[09_Testing/AI-Testing-in-nutshell.md|AI-Testing-in-nutshell]]
 - [[09_Testing/AI_Testing_for_dummy.md|AI_Testing_for_dummy]]
-- [[09_Testing/Java_AI_Testing.md|Java_AI_Testing]]
+- [[09_Testing/Testing_Frameworks/Java_AI_Testing.md|Java_AI_Testing]]
 - [[09_Testing/README.md|09_Testing README]]
 - [[15_Agent_Production/Agent_Evaluation/Testing_Methodologies/Testing_Framework.md|Testing_Framework]]

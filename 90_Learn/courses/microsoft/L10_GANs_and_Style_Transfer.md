@@ -6,8 +6,13 @@ summary: "学习生成对抗网络（GAN）的生成器-判别器对抗训练原
 source_url: "https://raw.githubusercontent.com/microsoft/AI-For-Beginners/main/lessons/4-ComputerVision/10-GANs/README.md"
 created: "2026-06-12"
 updated: "2026-06-12"
----
+tier: supporting
+aliases:
+  - "L10 Gans And Style Transfer"
+  - "L10 GANs and Style Transfer"
+  - L10_GANs_and_Style_Transfer
 
+---
 # L10 - 生成对抗网络与艺术风格迁移
 
 > **一句话理解**：用两个神经网络互相“博弈”，让一个网络学会生成足以骗过另一个网络的逼真图像；同时，也可以把一张图片的内容用另一张图片的风格重新绘制出来。

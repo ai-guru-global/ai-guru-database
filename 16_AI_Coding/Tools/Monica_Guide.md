@@ -5,8 +5,12 @@ tags: ["ai-coding", "code-generation", "cursor", "github-copilot"]
 summary: "> **一句话**: Monica 是全能型 AI 助手，MAX 套餐 $16.6/月（$199/年），高级查询不限量，适合深度研究与日常 AI 辅助。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Monica Guide"
+  - Monica_Guide
 
+---
 # Monica 使用指南
 
 > **一句话**: Monica 是全能型 AI 助手，MAX 套餐 $16.6/月（$199/年），高级查询不限量，适合深度研究与日常 AI 辅助。

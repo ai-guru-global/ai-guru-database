@@ -5,8 +5,13 @@ tags: ["ai-governance", "compliance", "eu-ai-act", "regulatory-engineering", "sa
 summary: "> **一句话理解**: 监管工程化是将法律条文转化为可执行的代码逻辑和自动化审计流程，确保 AI 系统在不牺牲创新的前提下符合全球监管标准（如欧盟 AI 法案）。"
 created: 2026-06-04
 updated: 2026-06-04
----
+tier: supporting
+aliases:
+  - "Ai Regulatory Engineering 2026"
+  - "AI Regulatory Engineering 2026"
+  - AI_Regulatory_Engineering_2026
 
+---
 # AI Regulatory Engineering & EU AI Act Compliance 2026
 
 > **一句话理解**: 监管工程化是将法律条文转化为可执行的代码逻辑和自动化审计流程，确保 AI 系统在不牺牲创新的前提下符合全球监管标准（如欧盟 AI 法案）。

@@ -18,7 +18,7 @@ relationships:
   - target: "_concepts/kserve"
     type: runs_on
 sources:
-  - 12_Architecture_Infrastructure/AI_Infrastructure_2026.md
+  - 12_Architecture_Infrastructure/Architecture_Overview/AI_Infrastructure_2026
 summary: "Kubernetes 是 CNCF Graduated 的容器编排平台，提供自动化部署、扩缩容、负载均衡和自愈能力，是云原生 AI 工作负载（训练、推理、MLOps）的事实标准运行基座。"
 provenance:
   extracted: 0.8
@@ -29,8 +29,10 @@ lifecycle: stable
 tier: core
 created: 2026-06-16
 updated: 2026-06-16
----
+aliases:
+  - Kubernetes
 
+---
 # Kubernetes
 
 > 云原生世界的「操作系统」——把一堆容器编排成可扩展、可自愈的分布式应用。
@@ -108,4 +110,14 @@ Worker Node
 - [[_concepts/hami]] — HAMi GPU 虚拟化
 - [[_concepts/kubeflow]] — Kubeflow
 - [[_concepts/kserve]] — KServe
-- [[12_Architecture_Infrastructure/AI_Infrastructure_2026]] — AI 基础设施 2026
+- [[_concepts/pod]] — Pod
+- [[_concepts/deployment]] — Deployment
+- [[_concepts/service]] — Service
+- [[_concepts/cni]] — CNI
+- [[_concepts/csi]] — CSI
+- [[_concepts/rbac]] — RBAC
+- [[12_Architecture_Infrastructure/Architecture_Overview/AI_Infrastructure_2026]] — AI 基础设施 2026
+- [[12_Architecture_Infrastructure/Kubernetes_Core_Components_Deep_Dive]] — K8s 核心组件深度解析
+- [[12_Architecture_Infrastructure/Kubernetes_Networking_Deep_Dive]] — K8s 网络深度解析
+- [[12_Architecture_Infrastructure/Kubernetes_Storage_Deep_Dive]] — K8s 存储深度解析
+- [[13_AI_Ops/Kubernetes_Troubleshooting_Playbook]] — K8s 运维排障 Playbook

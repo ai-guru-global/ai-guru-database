@@ -21,8 +21,11 @@ lifecycle: stable
 tier: core
 created: 2026-06-04
 updated: 2026-06-04
----
+aliases:
+  - "Bayesian Methods"
+  - "bayesian methods"
 
+---
 # 贝叶斯方法 (Bayesian Methods)
 
 > 让 AI 不仅给出答案，还告诉你「有多不确定」——概率思维的数学框架。

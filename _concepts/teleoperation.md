@@ -5,8 +5,19 @@ tags: ["teleoperation", "robotics", "embodied-ai", "vla", "imitation-learning"]
 summary: "遥操作是具身智能数据采集的核心手段——人类远程控制机器人执行任务，记录操作轨迹用于模仿学习。"
 created: 2026-06-12
 updated: 2026-06-12
+tier: core
+aliases:
+  - Teleoperation
+lifecycle: stable
+provenance:
+  extracted: 0.70
+  inferred: 0.25
+  ambiguous: 0.05
+base_confidence: 0.75
+sources:
+  - 06_Reinforcement_Learning/Robotics_Embodied_AI/VLA_Embodied_AI_2026.md
+  - 06_Reinforcement_Learning/Robotics_Embodied_AI/Humanoid_Robot_2026.md
 ---
-
 # 遥操作 (Teleoperation)
 
 > 遥操作是具身智能数据采集的核心手段——人类远程控制机器人执行任务，记录操作轨迹用于模仿学习。

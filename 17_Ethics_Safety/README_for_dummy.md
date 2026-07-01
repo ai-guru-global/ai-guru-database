@@ -5,8 +5,13 @@ tags: ["ai-ethics", "safety", "alignment", "red-teaming"]
 summary: "> **一句话秒懂**: 就像教育孩子要懂对错、守规矩一样,AI 伦理与安全是教 AI 理解人类价值观、不作恶、保护用户安全!"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Readme For Dummy"
+  - "README for dummy"
+  - README_for_dummy
 
+---
 # 08 AI 伦理、安全与对齐 - 小白版
 
 > **一句话秒懂**: 就像教育孩子要懂对错、守规矩一样,AI 伦理与安全是教 AI 理解人类价值观、不作恶、保护用户安全!

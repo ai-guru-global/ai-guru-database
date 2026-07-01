@@ -5,8 +5,11 @@ tags: [junjie-yan, minimax, lightning-attention, hailuo, talkie, chinese-ai, mul
 summary: "闫俊杰是前商汤科技 VP，MiniMax 创始人，打造了 Lightning Attention 和 Hailuo 视频生成，以全模态产品线切入 AI 赛道。"
 created: 2026-06-12
 updated: 2026-06-12
----
+tier: supporting
+aliases:
+  - About
 
+---
 # 闫俊杰 (Junjie Yan) — MiniMax 创始人
 
 > **一句话概括**: 从商汤科技副总裁转身创业，用 Lightning Attention 实现百万 Token 上下文，打造了覆盖文本/视频/语音/音乐的 AI 全模态帝国。
@@ -82,8 +85,10 @@ updated: 2026-06-12
 
 - [MiniMax 技术全景](../../05_NLP_LLMs/Chinese_LLM_Ecosystem/MiniMax_Deep_Dive.md)
 - [中国大模型生态全景](../../05_NLP_LLMs/Chinese_LLM_Ecosystem/README.md)
-- [长上下文模型 2026](../../05_NLP_LLMs/Long_Context_Models_2026.md)
+- [长上下文模型 2026](../../05_NLP_LLMs/LLM_Architectures/Long_Context_Models_2026.md)
 
 ---
 
 *Last updated: 2026-06-12*
+
+- [[19_Talks/README|AI 名人演讲与观点 (Talks)]]

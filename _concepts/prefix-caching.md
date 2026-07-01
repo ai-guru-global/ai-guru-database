@@ -20,8 +20,11 @@ lifecycle_changed: 2026-06-03
 tier: core
 created: 2026-06-03 00:00:00+00:00
 updated: 2026-06-03 00:00:00+00:00
----
+aliases:
+  - "Prefix Caching"
+  - "prefix caching"
 
+---
 # Prefix Caching (前缀缓存)
 
 ## 核心要点

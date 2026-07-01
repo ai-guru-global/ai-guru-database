@@ -14,9 +14,13 @@ provenance:
 base_confidence: 0.8
 lifecycle: draft
 lifecycle_changed: 2026-06-05
-tier: supporting
----
+tier: core
+aliases:
+  - "Alibaba Cloud Ai Stack Deep Dive"
+  - "Alibaba Cloud AI Stack Deep Dive"
+  - Alibaba_Cloud_AI_Stack_Deep_Dive
 
+---
 # 阿里云 AI Stack 深度解读 — 专有云 AI 推理平台
 
 ## 1. 概述
@@ -233,7 +237,7 @@ API Key 与观测支持矩阵：
 - [[_concepts/llm-infrastructure]] — LLM 基础设施
 - [[10_Deployment_Inference/Deployment_Inference]] — 部署与推理系统全景
 - [[14_RAG_Systems/RAG_Systems]] — RAG 系统全景
-- [[12_Architecture_Infrastructure/AI_Infrastructure_2026]] — AI 基础设施 2026
-- [[14_AI_Gateway/AI_Gateway_2026]] — AI Gateway 2026
+- [[12_Architecture_Infrastructure/Architecture_Overview/AI_Infrastructure_2026]] — AI 基础设施 2026
+- [[12_Architecture_Infrastructure/AI_Gateway/AI_Gateway_2026]] — AI Gateway 2026
 - [[_synthesis/llm-infrastructure-system-design|LLM 基础设施 × 传统系统架构]] — 从 Web 服务到 Token 工厂
 - [[_synthesis/rag-vector-database|RAG × 向量数据库]] — RAG 系统合成

@@ -8,8 +8,12 @@ sources:
 created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
----
+tier: peripheral
+aliases:
+  - "Llms In Production"
+  - "llms in production"
 
+---
 # LLMs in Production
 
 > **一句话理解**: LLM 生产化实战指南,覆盖从原型到生产的全流程。

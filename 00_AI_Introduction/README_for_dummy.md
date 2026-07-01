@@ -5,8 +5,13 @@ tags: ["ai", "introduction"]
 summary: "## 什么是 AI？"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Readme For Dummy"
+  - "README for dummy"
+  - README_for_dummy
 
+---
 # 00 AI 简介与历史 — 小白版 🚀
 
 > **一句话秒懂**: 这一章是 AI 学习的起点——告诉你 AI 到底是什么、有哪些类型、能做什么、是怎么发展过来的，让你从"完全不懂"到"有基本概念"。

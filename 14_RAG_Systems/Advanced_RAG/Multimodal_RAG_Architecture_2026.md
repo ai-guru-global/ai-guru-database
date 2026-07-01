@@ -5,8 +5,13 @@ tags: ["rag", "multimodal", "image-rag", "video-rag", "colpali", "vision-languag
 summary: "> **一句话理解**: 多模态 RAG 让 AI 不再仅仅“读懂”文字，还能“看懂”复杂的 PDF 布局、图表、视频帧，并将其作为事实来源进行检索和回答。"
 created: 2026-06-04
 updated: 2026-06-04
----
+tier: supporting
+aliases:
+  - "Multimodal Rag Architecture 2026"
+  - "Multimodal RAG Architecture 2026"
+  - Multimodal_RAG_Architecture_2026
 
+---
 # Multimodal RAG Architecture 2026: Image, Video, and Complex Layouts
 
 > **一句话理解**: 多模态 RAG 让 AI 不再仅仅“读懂”文字，还能“看懂”复杂的 PDF 布局、图表、视频帧，并将其作为事实来源进行检索和回答。

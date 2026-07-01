@@ -21,8 +21,11 @@ lifecycle: stable
 tier: core
 created: 2026-06-04
 updated: 2026-06-04
----
+aliases:
+  - "Gpu Virtualization"
+  - "gpu virtualization"
 
+---
 # GPU 虚拟化 (GPU Virtualization)
 
 > 一块 GPU 切给多个用户用——从独占到共享的资源效率革命。
@@ -154,5 +157,5 @@ GPU 共享模式决策树
 - [[_concepts/dra]] — DRA 动态资源分配（MIG 切片的属性化调度）
 - [[_concepts/gpu-operator]] — NVIDIA GPU Operator（MIG 经其动态管理）
 - [[_concepts/hami]] — HAMi（Kubernetes 异构 GPU 虚拟化中间件）
-- [[12_Architecture_Infrastructure/HAMi_Deep_Dive]] — HAMi 深度解析
+- [[12_Architecture_Infrastructure/AI_Stack/HAMi_Deep_Dive]] — HAMi 深度解析
 - [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack（GPU 共享模式）

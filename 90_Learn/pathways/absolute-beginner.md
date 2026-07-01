@@ -5,8 +5,12 @@ tags: ["learning", "education", "courses", "study-path"]
 summary: "> **面向：完全不了解 AI 的人 | 前置要求：无 | 预计时间：8-12 小时**"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Absolute Beginner"
+  - "absolute beginner"
 
+---
 # 零基础通识路径
 
 > **面向：完全不了解 AI 的人 | 前置要求：无 | 预计时间：8-12 小时**

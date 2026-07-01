@@ -3,8 +3,13 @@ title: "AI 新架构与创新：SSM、混合架构与 DeepSeek"
 tags: [ai, transformer, ssm, mamba, jamba, moe, mla, deepseek, architecture]
 source: yeasy/ai_beginner_guide
 created: 2026-06-16
----
+tier: peripheral
+aliases:
+  - "Ai New Architectures"
+  - "AI New Architectures"
+  - AI_New_Architectures
 
+---
 # AI 新架构与创新：SSM、混合架构与 DeepSeek
 
 > **一句话理解**: Transformer 的二次复杂度限制了长序列处理，SSM（状态空间模型）以线性复杂度提供了替代方案，而混合架构（Jamba/Titans）和 DeepSeek 的 MLA/MoE 创新代表了 AI 模型设计的多元化未来。

@@ -28,8 +28,11 @@ lifecycle_changed: 2026-06-16
 tier: core
 created: 2026-06-16
 updated: 2026-06-16
----
+aliases:
+  - "Red Teaming"
+  - "red teaming"
 
+---
 # 红队测试
 
 ## 核心要点

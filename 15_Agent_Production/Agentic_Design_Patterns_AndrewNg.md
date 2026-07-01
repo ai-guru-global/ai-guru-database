@@ -5,8 +5,13 @@ tags: ["ai-agents", "agentic-design-patterns", "andrew-ng", "deeplearning-ai", "
 summary: "> **一句话理解**: 吴恩达提出了推动 AI Agent 走向生产的四大核心模式：Reflection、Tool Use、Planning 和 Multi-agent。本文深入拆解这四大模式，并提供可以直接在内部环境运行的 Prompt 模板与 Python 控制流代码。"
 created: "2026-06-12"
 updated: "2026-06-12"
----
+tier: supporting
+aliases:
+  - "Agentic Design Patterns Andrewng"
+  - "Agentic Design Patterns AndrewNg"
+  - Agentic_Design_Patterns_AndrewNg
 
+---
 # 吴恩达：Agentic Design Patterns (智能体设计模式) 深度解析 (含 Prompt 与代码实现)
 
 > **一句话理解**: 即使是大语言模型在“Zero-shot (零样本直出)”下也会犯错。吴恩达 (Andrew Ng) 提出，通过赋予模型“智能体工作流 (Agentic Workflow)”，旧模型（如 GPT-3.5）甚至能战胜新一代的大模型（如 GPT-4）。

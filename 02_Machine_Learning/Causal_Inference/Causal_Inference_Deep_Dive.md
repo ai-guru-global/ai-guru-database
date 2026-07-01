@@ -5,8 +5,12 @@ tags: ["causal-inference", "causality", "do-calculus", "SCM", "pearl", "treatmen
 summary: "> **一句话理解**: 机器学习擅长发现「相关性」(下雨天雨伞多)，因果推断要回答「因果性」(下雨导致雨伞多)——前者观察世界，后者理解干预的后果，这是AI从「模式匹配」走向「真正理解」的关键一步。"
 created: 2026-06-04
 updated: 2026-06-04
----
+tier: supporting
+aliases:
+  - "Causal Inference Deep Dive"
+  - Causal_Inference_Deep_Dive
 
+---
 # 因果推断深度解读: 从相关到因果的 AI 新范式
 
 > **一句话理解**: 机器学习擅长发现「相关性」(下雨天雨伞多)，因果推断要回答「因果性」(下雨导致雨伞多)——前者观察世界，后者理解干预的后果，这是 AI 从「模式匹配」走向「真正理解」的关键一步。

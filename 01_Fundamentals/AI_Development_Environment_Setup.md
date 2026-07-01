@@ -5,8 +5,13 @@ tags: ["environment", "jupyter", "conda", "gpu", "cuda", "setup", "tools"]
 summary: "从安装 Python 到配置 GPU 训练环境的完整指南。覆盖 Conda 环境管理、Jupyter Notebook、VS Code、Google Colab，以及 CUDA/cuDNN 的排查方法。"
 created: 2026-06-01
 updated: 2026-06-01
----
+tier: supporting
+aliases:
+  - "Ai Development Environment Setup"
+  - "AI Development Environment Setup"
+  - AI_Development_Environment_Setup
 
+---
 # AI 开发环境配置: Jupyter + Conda + GPU 一步到位
 
 > **一句话理解**: 好的环境配置就像好的工作台——工具顺手，效率翻倍。本文帮你一次性搭好 AI 开发的全套工具链。

@@ -25,8 +25,11 @@ lifecycle: stable
 tier: core
 created: 2026-06-16
 updated: 2026-06-16
----
+aliases:
+  - "Megatron Lm"
+  - "megatron lm"
 
+---
 # Megatron-LM
 
 > NVIDIA 的「大模型训练并行神器」——用张量并行和流水线并行把 Transformer 扩展到千亿参数。

@@ -5,8 +5,11 @@ tags: ["talks", "speeches", "insights", "leaders", "DeepMind", "AGI", "AlphaGo",
 summary: "Google DeepMind CEO，用 AlphaGo 和 AlphaFold 证明 AI 可以攻克人类最复杂的智力与科学难题。"
 created: 2026-05-31
 updated: 2026-06-05
----
+tier: supporting
+aliases:
+  - About
 
+---
 # Demis Hassabis 简介 (Demis Hassabis)
 
 ## 一句话概括
@@ -129,9 +132,9 @@ Hassabis 的学术背景横跨神经科学与计算机科学，这深刻影响�
 - [强化学习](../../06_Reinforcement_Learning/README.md) -- AlphaGo/MuZero 的强化学习技术细节
 - [深度学习基础](../../03_Deep_Learning/README.md) -- 深度神经网络与多模态架构
 - [LLM 基础](../../05_NLP_LLMs/README.md) -- Gemini 系列模型架构
-- [Sam Altman](./Sam_Altman/about.md) -- AGI 路线之争：科学化 vs 产品化
-- [Jensen Huang](./Jensen_Huang/about.md) -- AI for Science 的算力基础设施支撑
-- [Dario Amodei](./Dario_Amodei/about.md) -- AI 安全治理的不同侧重
+- [Sam Altman](../Elon_Musk/about.md) -- AGI 路线之争：科学化 vs 产品化
+- [Jensen Huang](../Elon_Musk/about.md) -- AI for Science 的算力基础设施支撑
+- [Dario Amodei](../Elon_Musk/about.md) -- AI 安全治理的不同侧重
 
 ---
 

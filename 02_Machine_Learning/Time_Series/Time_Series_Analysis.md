@@ -5,8 +5,12 @@ tags: ["machine-learning", "supervised", "unsupervised"]
 summary: "[1. 时间序列概述](#1-时间序列概述)"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Time Series Analysis"
+  - Time_Series_Analysis
 
+---
 # 时间序列分析 (Time Series Analysis) - 完全指南
 
 ## 目录

@@ -5,8 +5,12 @@ tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> **一句话理解**: Continue 是开源 AI 代码助手——VS Code/JetBrains 插件、多模型支持、代码补全/搜索/生成，IDE 内置的 AI 编程工具。"
 created: "2026-05-31"
 updated: "2026-05-31"
----
+tier: supporting
+aliases:
+  - "Continue Deep Dive"
+  - Continue_Deep_Dive
 
+---
 # Continue: 开源 AI 代码助手
 
 > **一句话理解**: Continue 是开源 AI 代码助手——VS Code/JetBrains 插件、多模型支持、代码补全/搜索/生成，IDE 内置的 AI 编程工具。

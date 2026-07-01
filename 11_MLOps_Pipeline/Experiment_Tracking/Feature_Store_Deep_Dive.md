@@ -5,8 +5,12 @@ tags: ["mlops", "ci-cd", "pipeline", "feature-store"]
 summary: '> **一句话理解**: Feature Store 就像 AI 的"中央厨房"——统一管理所有食材（特征）的采购、加工、配送，确保训练和推理用的都是同一套标准化食材，杜绝"训练时吃大餐、上线后吃快餐"的偏差问题。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Feature Store Deep Dive"
+  - Feature_Store_Deep_Dive
 
+---
 # Feature Store 深度解析 (Feature Store Deep Dive)
 
 > **一句话理解**: Feature Store 就像 AI 的"中央厨房"——统一管理所有食材（特征）的采购、加工、配送，确保训练和推理用的都是同一套标准化食材，杜绝"训练时吃大餐、上线后吃快餐"的偏差问题。

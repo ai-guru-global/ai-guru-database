@@ -9,8 +9,11 @@ created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
 tier: supporting
----
+aliases:
+  - "Hands On Ml Geron"
+  - "hands on ml geron"
 
+---
 # Hands-On Machine Learning
 
 > **一句话理解**: ML/DL 实战圣经,使用 Scikit-learn、Keras 和 TensorFlow 构建智能系统.作者:Aurelien Geron.

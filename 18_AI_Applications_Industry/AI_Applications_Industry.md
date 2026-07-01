@@ -5,8 +5,13 @@ tags: ["ai-applications", "industry", "finance", "healthcare"]
 summary: '> **一句话理解**: AI正在从"实验室技术"转变为"行业基础设施"——2026年，医疗诊断、金融风控、智能制造等核心领域都已深度嵌入AI，AI与行业的融合已进入"生产级应用"阶段。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Ai Applications Industry"
+  - "AI Applications Industry"
+  - AI_Applications_Industry
 
+---
 # AI 应用与行业融合全景
 
 > **一句话理解**: AI 正在从"实验室技术"转变为"行业基础设施"——2026 年，医疗诊断、金融风控、智能制造等核心领域都已深度嵌入 AI，AI 与行业的融合已进入"生产级应用"阶段。

@@ -5,8 +5,12 @@ tags: ["synthesis", "mlops", "monitoring", "observability", "ai-ops", "model-dri
 summary: "MLOps 流水线与 AI 运维监控正在深度融合——模型监控从'事后告警'走向'自动化闭环'，成为 MLOps 不可或缺的一环。"
 created: 2026-06-12
 updated: 2026-06-12
----
+tier: core
+aliases:
+  - "Mlops Monitoring Convergence"
+  - "mlops monitoring convergence"
 
+---
 # MLOps 与监控的融合 (MLOps-Monitoring Convergence)
 
 > MLOps 流水线与 AI 运维监控正在深度融合——模型监控从"事后告警"走向"自动化闭环"，成为 MLOps 不可或缺的一环。

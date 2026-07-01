@@ -5,8 +5,11 @@ tags: ["talks", "speeches", "insights", "leaders"]
 summary: "**身份**: Inflection AI 联合创始人（前 DeepMind 联合创始人），《The Coming Wave》作者。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - About
 
+---
 # Mustafa Suleyman 简介 (Mustafa Suleyman)
 
 - **身份**: Inflection AI 联合创始人（前 DeepMind 联合创始人），《The Coming Wave》作者。

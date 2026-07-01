@@ -9,8 +9,12 @@ created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
 tier: supporting
----
+aliases:
+  - "Kaggle Overview"
+  - "kaggle overview"
+  - kaggle_overview
 
+---
 # Kaggle 数据科学竞赛平台概览
 
 > **一句话理解**: Google 旗下数据科学竞赛平台,提供海量数据集、免费 GPU Notebook 和百万级社区。
@@ -38,4 +42,8 @@ tier: supporting
 | House Prices | 入门 | 回归(房价预测) |
 | Digit Recognizer | 入门 | 图像分类(手写数字) |
 
-> **关联**: -> [[02_Machine_Learning|机器学习]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[02_Machine_Learning/README|机器学习]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
+
+## Related
+
+- [[02_Machine_Learning/README|机器学习概览]]

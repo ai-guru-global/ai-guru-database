@@ -5,8 +5,12 @@ tags: [anthropic, claude, constitutional-ai, safety, extended-thinking, computer
 summary: "全面剖析 Anthropic 从 Claude 1 到 Claude 4.5 的完整技术演进：Constitutional AI (CAI) 自监督对齐、Extended Thinking 混合推理、Computer Use 桌面智能体、Model Context Protocol (MCP) 开放协议以及 Responsible Scaling Policy 安全框架。"
 created: 2026-06-02
 updated: 2026-06-02
----
+tier: supporting
+aliases:
+  - "Anthropic Claude Deep Dive"
+  - Anthropic_Claude_Deep_Dive
 
+---
 # Anthropic Claude 技术深度解析
 
 ## 一句话理解
@@ -1635,7 +1639,7 @@ for block in response.content:
 
 ### 全球 LLM 生态
 
-- [Google Gemini Deep Dive](Google_Gemini_Deep_Dive.md) — Google Gemini 系列技术深度解析
+- [Google Gemini Deep Dive](./Google_Gemini_Deep_Dive.md) — Google Gemini 系列技术深度解析
 - [DeepSeek Deep Dive](../Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive.md) — DeepSeek 从 V1 到 V4 的完整技术演进
 - [Qwen Deep Dive (通义千问技术深度解析)](../Chinese_LLM_Ecosystem/Qwen_Deep_Dive.md) — 阿里 Qwen 系列全面分析
 

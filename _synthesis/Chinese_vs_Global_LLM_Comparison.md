@@ -11,8 +11,13 @@ sources:
 summary: "横切合成文档：从技术路线、模型规模、Benchmark、定价、上下文、开源、推理、多模态、Agent、训练成本、安全对齐、生态系统 12 个维度，全面对比中国 15 家与国际 5 大巨头的大模型生态。"
 created: 2026-06-15
 updated: 2026-06-15
----
+tier: core
+aliases:
+  - "Chinese Vs Global Llm Comparison"
+  - "Chinese vs Global LLM Comparison"
+  - Chinese_vs_Global_LLM_Comparison
 
+---
 # 中国 vs 国际大模型全面对比 (Chinese vs Global LLM Comparison)
 
 > **一句话理解**: 中国大模型走"效率优先、MoE 为重、开源普惠"路线，国际巨头走"规模优先、原生多模态、推理极限"路线——两条路线在 2025-2026 年加速收敛，差距从"代际"缩小到"半代"。
@@ -725,12 +730,12 @@ flowchart TD
 
 ### 相关论文
 
-- [[20_Papers/Scaling/Scaling_Laws_Deep_Dive|Scaling Laws 深度解读]]
-- [[20_Papers/Architecture/Mixture_of_Experts_Deep_Dive|MoE 深度解读]]
-- [[20_Papers/Frontier/DeepSeek_V3_Technical_Report|DeepSeek-V3 技术报告]]
-- [[20_Papers/Alignment/RLHF_DPO_Deep_Dive|RLHF 与 DPO 深度解读]]
-- [[20_Papers/Alignment/Chain_of_Thought_Deep_Dive|Chain-of-Thought 深度解读]]
-- [[20_Papers/Scaling/Chinchilla_Deep_Dive|Chinchilla 深度解读]]
+- [[20_Papers_and_Research/Scaling/Scaling_Laws_Deep_Dive|Scaling Laws 深度解读]]
+- [[20_Papers_and_Research/Architecture/Mixture_of_Experts_Deep_Dive|MoE 深度解读]]
+- [[20_Papers_and_Research/Frontier/DeepSeek_V3_Technical_Report|DeepSeek-V3 技术报告]]
+- [[20_Papers_and_Research/Alignment/RLHF_DPO_Deep_Dive|RLHF 与 DPO 深度解读]]
+- [[20_Papers_and_Research/Alignment/Chain_of_Thought_Deep_Dive|Chain-of-Thought 深度解读]]
+- [[20_Papers_and_Research/Scaling/Chinchilla_Deep_Dive|Chinchilla 深度解读]]
 
 ### 相关合成文档
 

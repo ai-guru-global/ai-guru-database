@@ -5,8 +5,11 @@ tags: ["talks", "speeches", "insights", "leaders", "Meta-AI", "CNN", "self-super
 summary: "**一句话概括**: Meta 首席 AI 科学家，CNN 之父与图灵奖得主，以世界模型和开源路线挑战 LLM 主导范式。"
 created: 2026-05-31
 updated: 2026-06-05
----
+tier: supporting
+aliases:
+  - About
 
+---
 # Yann LeCun 简介 (Yann LeCun)
 
 ## 一句话概括

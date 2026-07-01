@@ -6,7 +6,13 @@ tags:
 - ai-coding
 created: 2026-06-12
 category: 16-ai-coding-tools-openrouter
-summary: ""
+tier: peripheral
+aliases:
+  - "Openrouter Provider Routing"
+  - "openrouter provider routing"
+
+updated: 2026-06-30
+summary: "智能路由与 Provider 选择 — 专题文档"
 ---
 title: 智能路由与 Provider 选择
 description: '**文档类型**: 架构深度 | **最后更新**: 2026-03 | **关键词**: OpenRouter, Provider Routing,

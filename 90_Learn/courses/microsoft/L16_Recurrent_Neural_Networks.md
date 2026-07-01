@@ -6,8 +6,12 @@ summary: "学习循环神经网络（RNN）如何通过隐藏状态建模序列�
 source_url: "https://raw.githubusercontent.com/microsoft/AI-For-Beginners/main/lessons/5-NLP/16-RNN/README.md"
 created: "2026-06-12"
 updated: "2026-06-12"
----
+tier: supporting
+aliases:
+  - "L16 Recurrent Neural Networks"
+  - L16_Recurrent_Neural_Networks
 
+---
 # L16 - 循环神经网络RNN
 
 > **一句话理解**：RNN 通过在序列上维护一个“记忆状态”，让神经网络能够利用词的先后顺序来理解文本，而不是只看词袋统计。

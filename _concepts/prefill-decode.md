@@ -29,8 +29,11 @@ lifecycle: stable
 tier: core
 created: 2026-06-04
 updated: 2026-06-04
----
+aliases:
+  - "Prefill Decode"
+  - "prefill decode"
 
+---
 # Prefill/Decode 推理阶段 (Inference Phases)
 
 > 理解推理的两个阶段，才能分别优化它们。

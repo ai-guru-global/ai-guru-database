@@ -5,8 +5,12 @@ tags: ["ai-agents", "agent-framework", "production", "langgraph", "model-evaluat
 summary: "> **一句话理解**: Multi-Agent System (MAS) 评估框架专门针对多个 AI Agent 协作场景，评估 Agent 间的通信效率、任务协调、集体决策质量和系统整体稳定性。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Multi Agent Evaluation 2026"
+  - Multi_Agent_Evaluation_2026
 
+---
 # Multi-Agent System Evaluation Framework 2026
 
 > **一句话理解**: Multi-Agent System (MAS) 评估框架专门针对多个 AI Agent 协作场景，评估 Agent 间的通信效率、任务协调、集体决策质量和系统整体稳定性。

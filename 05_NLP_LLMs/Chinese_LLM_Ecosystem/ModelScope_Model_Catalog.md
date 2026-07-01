@@ -6,8 +6,13 @@ summary: "基于 ModelScope 官方 API 全量抓取的 15 家中国大模型厂�
 created: 2026-06-19
 updated: 2026-06-19
 source: https://modelscope.cn/
----
+tier: supporting
+aliases:
+  - "Modelscope Model Catalog"
+  - "ModelScope Model Catalog"
+  - ModelScope_Model_Catalog
 
+---
 # ModelScope 模型目录全景 (ModelScope Model Catalog)
 
 > **一句话理解**: ModelScope 魔搭社区上 15 家中国大模型厂商的**全量官方模型目录**——从 Qwen 的 437 个模型舰队到 DeepSeek 的 88 个开源模型，一张图看清各家在国产模型托管平台上的真实家底。

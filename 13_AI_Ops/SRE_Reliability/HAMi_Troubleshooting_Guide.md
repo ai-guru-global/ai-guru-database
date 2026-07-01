@@ -5,8 +5,13 @@ tags: ["hami", "troubleshooting", "gpu-virtualization", "kubernetes", "ops", "de
 summary: "> **一句话理解**: 本文档汇总 HAMi 在生产环境中最常见的安装、调度、隔离、兼容性问题，提供从症状识别、日志定位到修复措施的完整排查路径。"
 created: "2026-06-16"
 updated: "2026-06-16"
----
+tier: core
+aliases:
+  - "Hami Troubleshooting Guide"
+  - "HAMi Troubleshooting Guide"
+  - HAMi_Troubleshooting_Guide
 
+---
 # HAMi 问题排查与故障解决指南
 
 > **一句话理解**: 本文档汇总 HAMi 在生产环境中最常见的安装、调度、隔离、兼容性问题，提供从症状识别、日志定位到修复措施的完整排查路径。
@@ -522,8 +527,8 @@ kubectl exec -it <pod> -- cat /etc/ld.so.preload
 ## Related
 
 - [[_concepts/hami]] — HAMi 概念卡片
-- [[12_Architecture_Infrastructure/HAMi_Deep_Dive]] — HAMi 深度解析
-- [[12_Architecture_Infrastructure/HAMi_for_dummy]] — HAMi 入门
-- [[12_Architecture_Infrastructure/HAMi_Operation_Guide]] — HAMi 运维指南
+- [[12_Architecture_Infrastructure/AI_Stack/HAMi_Deep_Dive]] — HAMi 深度解析
+- [[12_Architecture_Infrastructure/AI_Stack/HAMi_for_dummy]] — HAMi 入门
+- [[12_Architecture_Infrastructure/AI_Stack/HAMi_Operation_Guide]] — HAMi 运维指南
 - [[_concepts/gpu-virtualization]] — GPU 虚拟化
 - [[_concepts/heterogeneous-gpu]] — 异构 GPU 集群

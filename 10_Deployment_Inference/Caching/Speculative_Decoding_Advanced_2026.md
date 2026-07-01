@@ -5,8 +5,12 @@ tags: [speculative-decoding, medusa, lookahead-decoding, draft-model, inference-
 summary: 深度解析投机解码及其变体（Medusa、Lookahead Decoding、REST）的技术原理、实现细节和工程实践，覆盖从标准投机解码到无 draft 模型方案的全谱系。
 date: 2026-06-01
 created: 2026-06-12
----
+tier: supporting
+aliases:
+  - "Speculative Decoding Advanced 2026"
+  - Speculative_Decoding_Advanced_2026
 
+---
 # 投机解码前沿技术 2026
 
 ## 一句话理解

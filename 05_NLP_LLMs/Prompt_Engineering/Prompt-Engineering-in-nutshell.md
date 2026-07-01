@@ -5,8 +5,12 @@ tags: ["nlp", "llm", "transformer", "gpt", "bert"]
 summary: "> 🎯 **目标**：掌握如何编写有效的提示词，让大语言模型产出高质量结果。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Prompt Engineering In Nutshell"
+  - "Prompt Engineering in nutshell"
 
+---
 # Prompt Engineering 速成指南
 
 > 🎯 **目标**：掌握如何编写有效的提示词，让大语言模型产出高质量结果。
@@ -744,7 +748,7 @@ flowchart TB
 
 ## Related
 
-- [[05_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/README]] — PEFT 2026 (参数高效微调) (共享: bert, gpt, llm, nlp, transformer)
+- [[05_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026]] — PEFT 2026 (参数高效微调) (共享: bert, gpt, llm, nlp, transformer)
 - [[05_NLP_LLMs/Fine_tuning_Techniques/README]] — 微调技术 (Fine-tuning Techniques) (共享: bert, gpt, llm, nlp, transformer)
 - [[05_NLP_LLMs/LLM_Architectures/LLM-Basics-in-nutshell]] — 大语言模型基础速成指南 (共享: bert, gpt, llm, nlp, transformer)
 - [[05_NLP_LLMs/Multimodal_Models/Multimodal_Architectures_2026]] — 多模态模型架构 2026：从 GPT-4V 到原生多模态 AGI (共享: bert, gpt, llm, nlp, transformer)

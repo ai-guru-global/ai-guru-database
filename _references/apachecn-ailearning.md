@@ -15,8 +15,11 @@ provenance: |
 base_confidence: "high"
 lifecycle: "draft"
 tier: "supporting"
----
+aliases:
+  - "Apachecn Ailearning"
+  - "apachecn ailearning"
 
+---
 # ApacheCN AiLearning
 
 > ApacheCN 维护的中文 AI 学习资料聚合仓库，以中文讲解 + 可运行代码为特色，覆盖从 Python 数据分析到深度学习框架的多个主线。

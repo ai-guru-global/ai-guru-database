@@ -14,8 +14,12 @@ provenance: |
 base_confidence: "high"
 lifecycle: "draft"
 tier: "supporting"
----
+aliases:
+  - "Apachecn Linear Algebra Track"
+  - "ApacheCN Linear Algebra Track"
+  - ApacheCN_Linear_Algebra_Track
 
+---
 # ApacheCN 线性代数主线
 
 > `docs/linalg/` 收录了 **MIT 18.06 线性代数** 课程的中文笔记，共 **35 讲**，从方程组的几何解释出发，逐步深入到 SVD、伪逆与线性变换，是理解 AI 矩阵运算的核心数学基础。

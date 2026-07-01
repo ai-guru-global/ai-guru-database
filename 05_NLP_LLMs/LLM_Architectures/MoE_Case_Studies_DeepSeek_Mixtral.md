@@ -5,8 +5,13 @@ tags: [moe, deepseek, mixtral, case-study, sparse-model, expert-routing, open-so
 summary: 深度剖析 DeepSeek-MoE 和 Mixtral 两大开源 MoE 标杆的架构设计、路由策略、训练方法和工程实践。
 date: 2026-06-01
 created: 2026-06-12
----
+tier: peripheral
+aliases:
+  - "Moe Case Studies Deepseek Mixtral"
+  - "MoE Case Studies DeepSeek Mixtral"
+  - MoE_Case_Studies_DeepSeek_Mixtral
 
+---
 # MoE 案例研究：DeepSeek-MoE 与 Mixtral
 
 ## 一句话理解

@@ -30,8 +30,11 @@ lifecycle_changed: 2026-05-31
 tier: core
 created: 2026-05-31 00:00:00+00:00
 updated: 2026-05-31 00:00:00+00:00
----
+aliases:
+  - "Model Deployment"
+  - "model deployment"
 
+---
 # 模型部署
 
 ## 核心要点

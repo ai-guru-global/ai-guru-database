@@ -22,8 +22,12 @@ lifecycle: draft
 tier: supporting
 created: 2026-06-12
 updated: 2026-06-12
----
+aliases:
+  - "Hello Agents L11 Agentic Rl"
+  - "Hello Agents L11 Agentic RL"
+  - Hello_Agents_L11_Agentic_RL
 
+---
 # Hello-Agents L11：Agentic-RL
 
 > **一句话理解**: Agentic RL 将 LLM 视为可学习策略，嵌入 Agent 的顺序决策循环，通过强化学习优化多步推理、工具使用与长期任务完成度。

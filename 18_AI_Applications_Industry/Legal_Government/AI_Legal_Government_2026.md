@@ -5,8 +5,13 @@ tags: ["ai-applications", "industry", "finance", "healthcare"]
 summary: '> **一句话理解**: 2026年AI法律助手已从"检索工具"进化为"初级律师"——Harvey AI服务全球前100大律所中的40+家，AI合同审查效率提升80%，智能政务覆盖全球50+国家。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Ai Legal Government 2026"
+  - "AI Legal Government 2026"
+  - AI_Legal_Government_2026
 
+---
 # AI 法律与政务行业应用 (2025-2026)
 
 > **一句话理解**: 2026 年 AI 法律助手已从"检索工具"进化为"初级律师"——Harvey AI 服务全球前 100 大律所中的 40+家，AI 合同审查效率提升 80%，智能政务覆盖全球 50+国家。

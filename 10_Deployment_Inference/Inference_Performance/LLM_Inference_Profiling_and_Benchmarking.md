@@ -5,8 +5,13 @@ tags: [inference, profiling, benchmarking, performance, latency, throughput]
 summary: "> 如何公平、可复现地测量 LLM 推理性能，并用工具定位真正的瓶颈。"
 created: 2026-06-15
 updated: 2026-06-15
----
+tier: supporting
+aliases:
+  - "Llm Inference Profiling And Benchmarking"
+  - "LLM Inference Profiling and Benchmarking"
+  - LLM_Inference_Profiling_and_Benchmarking
 
+---
 # 推理 Profiling 与 Benchmarking
 
 > 性能优化前先测对。本文讲清楚测什么、怎么测、以及常见的坑。
@@ -232,3 +237,5 @@ FP16 vs INT4 的吞吐对比不公平，要说明精度和速度 trade-off。
 - [[10_Deployment_Inference/Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]]
 - [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive|vLLM Deep Dive]]
 - [[10_Deployment_Inference/Inference_Engines/SGLang_Deep_Dive|SGLang Deep Dive]]
+
+- [[10_Deployment_Inference/README|模型部署与推理]]

@@ -9,8 +9,11 @@ created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
 tier: supporting
----
+aliases:
+  - "Build Llm From Scratch Raschka"
+  - "build llm from scratch raschka"
 
+---
 # Build a LLM from Scratch
 
 > **一句话理解**: 从零构建 LLM,使用 PyTorch 实现 GPT 风格模型.作者:Sebastian Raschka.

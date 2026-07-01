@@ -5,8 +5,13 @@ tags: ["nlp", "llm", "transformer", "gpt", "bert"]
 summary: '> **一句话秒懂**: Transformer 把"排队一个个发言"变成"全班一起讨论"——每个词都能同时关注其他所有词,这让 ChatGPT 成为可能!'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Transformer Revolution For Dummy"
+  - "Transformer Revolution for dummy"
+  - Transformer_Revolution_for_dummy
 
+---
 # Transformer 革命 - 小白版
 
 > **一句话秒懂**: Transformer 把"排队一个个发言"变成"全班一起讨论"——每个词都能同时关注其他所有词,这让 ChatGPT 成为可能!

@@ -5,8 +5,9 @@ tags: ["nlp", "llm", "transformer", "gpt", "bert"]
 summary: "> 提示词工程是优化 LLM 输入以获得更好输出的技术，结构化输出框架确保 LLM 返回格式正确的 JSON/类型数据。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
 
+---
 # 提示词工程与结构化输出 (Prompt Engineering & Structured Output)
 
 > 提示词工程是优化 LLM 输入以获得更好输出的技术，结构化输出框架确保 LLM 返回格式正确的 JSON/类型数据。
@@ -78,8 +79,10 @@ updated: 2026-05-31
 - [[05_NLP_LLMs/Prompt_Engineering/DSPy_Deep_Dive|DSPy: 可编程的 Prompt 优化框架]]
 - [[05_NLP_LLMs/Prompt_Engineering/Instructor_Deep_Dive|Instructor: 结构化输出框架]]
 
-- [[05_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/README]] — PEFT 2026 (参数高效微调) (共享: bert, gpt, llm, nlp, transformer)
+- [[05_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026]] — PEFT 2026 (参数高效微调) (共享: bert, gpt, llm, nlp, transformer)
 - [[05_NLP_LLMs/Fine_tuning_Techniques/README]] — 微调技术 (Fine-tuning Techniques) (共享: bert, gpt, llm, nlp, transformer)
 - [[05_NLP_LLMs/LLM_Architectures/LLM-Basics-in-nutshell]] — 大语言模型基础速成指南 (共享: bert, gpt, llm, nlp, transformer)
 - [[05_NLP_LLMs/Multimodal_Models/Multimodal_Architectures_2026]] — 多模态模型架构 2026：从 GPT-4V 到原生多模态 AGI (共享: bert, gpt, llm, nlp, transformer)
 
+
+- [[05_NLP_LLMs/README|04 自然语言处理与大模型 (NLP & LLMs)]]

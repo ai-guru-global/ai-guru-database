@@ -12,7 +12,7 @@ relationships:
   - target: "_concepts/tempo"
     type: related_to
 sources:
-  - 13_AI_Ops/Prometheus_Grafana_Deep_Dive.md
+  - 11_MLOps_Pipeline/Observability/Prometheus_Grafana_Deep_Dive.md
 summary: "Grafana 是开源的可视化与监控平台，支持 Prometheus、Loki、Tempo、Elasticsearch 等多种数据源，广泛用于构建 AI 系统和云原生基础设施的监控大盘。"
 provenance:
   extracted: 0.75
@@ -23,8 +23,10 @@ lifecycle: stable
 tier: core
 created: 2026-06-16
 updated: 2026-06-16
----
+aliases:
+  - Grafana
 
+---
 # Grafana
 
 > 监控数据的「仪表盘」——把时序指标变成一目了然的图表。
@@ -66,7 +68,7 @@ updated: 2026-06-16
 
 ## Related
 
-- [[13_AI_Ops/Prometheus_Grafana_Deep_Dive]] — Prometheus + Grafana 深度解析
+- [[11_MLOps_Pipeline/Observability/Prometheus_Grafana_Deep_Dive]] — Prometheus + Grafana 深度解析
 - [[_concepts/prometheus]] — Prometheus 监控系统
 - [[_concepts/observability]] — 可观测性
 - [[13_AI_Ops/AI_Observability_Guide_2026]] — AI 可观测指南 2026

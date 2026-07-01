@@ -23,8 +23,11 @@ lifecycle_changed: 2026-06-03
 tier: core
 created: 2026-06-03 00:00:00+00:00
 updated: 2026-06-03 00:00:00+00:00
----
+aliases:
+  - "Flash Attention Kernels"
+  - "flash attention kernels"
 
+---
 # Flash Attention 算子 (FlashMLA/FlashInfer)
 
 ## 核心要点

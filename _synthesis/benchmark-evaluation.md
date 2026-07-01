@@ -6,8 +6,12 @@ tags: [benchmark, evaluation, llm-evaluation, safety-evaluation, agent-evaluatio
 category: -synthesis
 created: 2026-06-12
 summary: ""
----
+tier: core
+aliases:
+  - "Benchmark Evaluation"
+  - "benchmark evaluation"
 
+---
 # 评测基准 × 评测方法论：从分数到可信评估
 
 ## 核心论点
@@ -32,10 +36,10 @@ summary: ""
 
 ## 跨域连接
 
-- [[08_Model_Evaluation/LLM_Benchmark_Suite_2026|LLM 评测基准套件 2026]] — 最新基准全景
-- [[08_Model_Evaluation/LLM_as_Judge_Deep_Dive|LLM-as-Judge 深度解读]] — 自动化评测的核心方法
-- [[08_Model_Evaluation/Agentic_Benchmark_Guide|Agent 评测指南]] — 从静态到动态的评测演进
-- [[08_Model_Evaluation/Online_Evaluation|在线评测]] — 生产环境的实时评估
+- [[08_Model_Evaluation/Benchmarks/LLM_Benchmark_Suite_2026|LLM 评测基准套件 2026]] — 最新基准全景
+- [[08_Model_Evaluation/Evaluation_Tools/LLM_as_Judge_Deep_Dive|LLM-as-Judge 深度解读]] — 自动化评测的核心方法
+- [[08_Model_Evaluation/Benchmarks/Agentic_Benchmark_Guide|Agent 评测指南]] — 从静态到动态的评测演进
+- [[08_Model_Evaluation/Evaluation_Tools/Online_Evaluation|在线评测]] — 生产环境的实时评估
 - [[17_Ethics_Safety/Safety_Evaluation_Framework|安全评测框架]] — 安全维度的专项评估
 - [[_synthesis/safety-evaluation-red-teaming|安全评测 × 红队测试]] — 对抗式安全评估
 

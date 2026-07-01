@@ -5,8 +5,12 @@ tags: ["model-training", "distributed-training", "optimization", "fsdp"]
 summary: "> 🎯 **目标**：用最简单的方式理解如何从零开始训练 AI/ML 模型。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Model Training In Nutshell"
+  - "Model Training in nutshell"
 
+---
 # 模型训练速成指南
 
 > 🎯 **目标**：用最简单的方式理解如何从零开始训练 AI/ML 模型。
@@ -383,4 +387,4 @@ flowchart TB
 - [[07_Model_Training/Distributed_Training/Distributed_Training_for_dummy]] — 分布式训练 - 小白版 (共享: distributed-training, fsdp, model-training, optimization)
 - [[07_Model_Training/Optimization/Mixed_Precision_Training]] — 混合精度训练 (Mixed Precision Training) (共享: distributed-training, fsdp, model-training, optimization)
 - [[07_Model_Training/Model_Training_for_dummy]] — 模型训练小白指南 (共享: distributed-training, fsdp, model-training, optimization)
-- [[07_Model_Training/Fine_tuning_Strategies.md|Fine_tuning_Strategies]]
+- [[05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Strategies.md|Fine_tuning_Strategies]]

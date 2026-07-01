@@ -5,8 +5,13 @@ tags: ["ai4s", "materials-science", "energy", "batteries", "catalysis", "superco
 summary: "> **一句话理解**: AI 正在加速寻找“奇迹材料”——从续航更久的电池到室温超导体，AI 通过模拟和预测，将数千年的试错过程压缩到了几天。"
 created: 2026-06-04
 updated: 2026-06-04
----
+tier: supporting
+aliases:
+  - "Materials Science And Energy 2026"
+  - "Materials Science and Energy 2026"
+  - Materials_Science_and_Energy_2026
 
+---
 # AI for Science: Materials Science and Energy 2026
 
 > **一句话理解**: AI 正在加速寻找“奇迹材料”——从续航更久的电池到室温超导体，AI 通过模拟和预测，将数千年的试错过程压缩到了几天。

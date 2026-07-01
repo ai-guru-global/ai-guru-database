@@ -5,8 +5,13 @@ tags: ["ai", "fundamentals", "introduction", "basics"]
 summary: "## 你将学到什么"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Ai Fundamentals For Dummy"
+  - "AI Fundamentals for dummy"
+  - AI_Fundamentals_for_dummy
 
+---
 # AI 基础入门 - 小白版
 
 > **一句话秒懂**: AI 就像教一个小孩子认东西——你给它看足够多的例子，它慢慢就"学会"了，不用你一条一条地写规则。

@@ -41,8 +41,11 @@ lifecycle_changed: 2026-05-31
 tier: core
 created: 2026-05-31 00:00:00+00:00
 updated: 2026-05-31 00:00:00+00:00
----
+aliases:
+  - "Model Compression"
+  - "model compression"
 
+---
 # 模型压缩
 
 ## 核心要点

@@ -6,8 +6,12 @@ summary: "从 Frank Rosenblatt 的 Mark-1 硬件到现代二分类模型，理�
 source_url: "https://raw.githubusercontent.com/microsoft/AI-For-Beginners/main/lessons/3-NeuralNetworks/03-Perceptron/README.md"
 created: "2026-06-12"
 updated: "2026-06-12"
----
+tier: supporting
+aliases:
+  - "L03 Perceptron"
+  - L03_Perceptron
 
+---
 # L03 - 感知器
 
 > **一句话理解**：感知器（Perceptron）是神经网络的“原子单元”，它通过可学习的权重对输入进行加权求和，再用阶跃函数输出二分类结果，并通过误分类样本不断修正权重。

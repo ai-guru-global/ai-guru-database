@@ -5,8 +5,13 @@ tags: ["deployment", "inference", "serving", "litert", "tensorflow-lite", "edge"
 summary: "> **一句话理解**: LiteRT (原 TensorFlow Lite) 是 Google 出品的跨平台边缘 AI 推理框架——Android/iOS/嵌入式全支持、多硬件委托加速、量化压缩，让模型在端侧低延迟、低功耗、完全离线运行。"
 created: "2026-05-31"
 updated: "2026-06-15"
----
+tier: supporting
+aliases:
+  - "Litert Deep Dive"
+  - "LiteRT Deep Dive"
+  - LiteRT_Deep_Dive
 
+---
 # LiteRT / TensorFlow Lite: 边缘 AI 推理
 
 > **一句话理解**: LiteRT (原 TensorFlow Lite) 是 Google 出品的跨平台边缘 AI 推理框架——Android/iOS/嵌入式全支持、多硬件委托加速、量化压缩，让模型在端侧低延迟、低功耗、完全离线运行。

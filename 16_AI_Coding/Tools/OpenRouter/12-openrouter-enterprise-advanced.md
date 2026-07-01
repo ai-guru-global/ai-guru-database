@@ -6,7 +6,13 @@ tags:
 - ai-coding
 created: 2026-06-12
 category: 16-ai-coding-tools-openrouter
-summary: ""
+tier: peripheral
+aliases:
+  - "Openrouter Enterprise Advanced"
+  - "openrouter enterprise advanced"
+
+updated: 2026-06-30
+summary: "企业级高级实践 — 专题文档"
 ---
 title: 企业级高级实践
 description: '# 企业级高级实践'

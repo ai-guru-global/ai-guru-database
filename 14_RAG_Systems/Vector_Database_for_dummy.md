@@ -5,8 +5,13 @@ tags: ["rag", "retrieval", "vector-database", "embedding"]
 summary: '> **一句话秒懂**: 向量数据库就是 AI 的超级图书馆——你说"我想找和这个差不多的东西"，它能在一秒内从几百万本书里找到最像的。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Vector Database For Dummy"
+  - "Vector Database for dummy"
+  - Vector_Database_for_dummy
 
+---
 # 向量数据库 - 小白版
 
 > **一句话秒懂**: 向量数据库就是 AI 的超级图书馆——你说"我想找和这个差不多的东西"，它能在一秒内从几百万本书里找到最像的。
@@ -419,7 +424,7 @@ AI 会自动学习每个词/句子的"数字表示"
 建议接下来：
 1. **了解 RAG 系统**：阅读 [RAG 系统入门](./RAG_Systems_for_dummy.md)，看看向量数据库怎么用在 AI 问答中
 2. **动手实践**：用 Chroma 做一个简单的文档搜索工具
-3. **深入学习**：阅读 [Milvus 深度指南](./Milvus_Deep_Dive.md) 或 [Chroma 深度指南](./Chroma_Deep_Dive.md)
+3. **深入学习**：阅读 [Milvus 深度指南](./Vector_Databases/Milvus_Deep_Dive.md) 或 [Chroma 深度指南](./Vector_Databases/Chroma_Deep_Dive.md)
 
 > 记住：向量数据库是 AI 应用的"记忆库"。没有它，AI 只能用训练时学到的知识；有了它，AI 可以查阅任何你给它的资料。
 

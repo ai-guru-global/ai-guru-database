@@ -23,8 +23,11 @@ lifecycle_changed: 2026-06-23
 tier: core
 created: 2026-06-23
 updated: 2026-06-23
----
+aliases:
+  - "Ai Coding Paradigms"
+  - "ai coding paradigms"
 
+---
 # AI 编程范式（AI Coding Paradigms）
 
 ## 核心要点

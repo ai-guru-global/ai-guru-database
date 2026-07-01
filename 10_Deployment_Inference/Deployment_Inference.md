@@ -5,8 +5,12 @@ tags: ["deployment", "inference", "serving", "vllm", "model-deployment"]
 summary: "> **一句话理解**: 就像把实验室里的发明变成能在工厂量产的产品，让AI模型从研究原型转变为高效稳定的生产服务。"
 created: 2026-05-31
 updated: 2026-06-15
----
+tier: core
+aliases:
+  - "Deployment Inference"
+  - Deployment_Inference
 
+---
 # 模型部署与推理加速 (Deployment & Inference)
 
 > **一句话理解**: 就像把实验室里的发明变成能在工厂量产的产品，让 AI 模型从研究原型转变为高效稳定的生产服务。

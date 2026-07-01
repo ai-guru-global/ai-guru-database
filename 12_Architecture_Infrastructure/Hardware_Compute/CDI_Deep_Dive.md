@@ -5,8 +5,13 @@ tags: ["cdi", "container-device-interface", "kubernetes", "gpu", "containerd", "
 summary: "> **一句话理解**: CDI 是容器运行时的「设备通用语」——用一份标准 JSON 描述 GPU/FPGA/RDMA/国产加速器如何接入容器，让 NVIDIA、华为昇腾、寒武纪等异构硬件都能以同一套方式被 vLLM/TGI 等 AI 工作负载透明使用。"
 created: "2026-06-15"
 updated: "2026-06-15"
----
+tier: supporting
+aliases:
+  - "Cdi Deep Dive"
+  - "CDI Deep Dive"
+  - CDI_Deep_Dive
 
+---
 # CDI (Container Device Interface): 容器设备接口标准深度解析
 
 > **一句话理解**: CDI 是容器运行时的「设备通用语」——用一份标准 JSON 描述 GPU/FPGA/RDMA/国产加速器如何接入容器，让 NVIDIA、华为昇腾、寒武纪等异构硬件都能以同一套方式被 vLLM/TGI 等 AI 工作负载透明使用。
@@ -200,7 +205,7 @@ spec:
 
 ## 6. MIG 切片、RDMA 与多厂商混合
 
-> 🔗 MIG 的完整原理（GI/CI/CE/CU、A100/H100 profile、ppu-smi/nvidia-smi 操作、K8s GPU Operator 策略）见专题 [[12_Architecture_Infrastructure/MIG_Deep_Dive]]；本节聚焦 MIG 切片如何通过 CDI 透传进容器。
+> 🔗 MIG 的完整原理（GI/CI/CE/CU、A100/H100 profile、ppu-smi/nvidia-smi 操作、K8s GPU Operator 策略）见专题 [[12_Architecture_Infrastructure/Hardware_Compute/MIG_Deep_Dive]]；本节聚焦 MIG 切片如何通过 CDI 透传进容器。
 
 CDI 的声明式模型尤其擅长三种场景：
 
@@ -223,7 +228,7 @@ CDI 的声明式模型尤其擅长三种场景：
 | **隔离级别** | 无（整卡独占） | 注入层，不保证隔离 | 分配层，依赖驱动 | 显存/算力硬隔离 |
 | **2026 推荐** | 旧集群过渡 | **必装基座** | 新集群首选 | 多租户/异构共享场景 |
 
-> **一句话**: CDI 不是用来替代设备插件、DRA 或 HAMi 的，而是**它们脚下共享的地基**。HAMi 可以在 Device Plugin 模式或 DRA 模式下运行，并把 vGPU 通过 CDI 注入容器。详见 [[12_Architecture_Infrastructure/HAMi_Deep_Dive]]。
+> **一句话**: CDI 不是用来替代设备插件、DRA 或 HAMi 的，而是**它们脚下共享的地基**。HAMi 可以在 Device Plugin 模式或 DRA 模式下运行，并把 vGPU 通过 CDI 注入容器。详见 [[12_Architecture_Infrastructure/AI_Stack/HAMi_Deep_Dive]]。
 
 ---
 
@@ -233,7 +238,7 @@ CDI 是连接「硬件层」与「推理服务层」的隐形纽带：
 
 - 向上支撑 [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive]]、[[10_Deployment_Inference/Inference_Engines/TensorRT_LLM_Deep_Dive]]、[[10_Deployment_Inference/Inference_Engines/TGI_Deep_Dive]] 等 GPU 推理引擎的容器化部署
 - 横向配合 [[01_Fundamentals/AI_Hardware/Chinese_AI_Chips_Deep_Dive]] 中国产加速器的统一接入
-- 与 [[12_Architecture_Infrastructure/AI_Infrastructure_2026]] 的 GPU 集群管理、[[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] 一体机的设备治理同属基础设施层
+- 与 [[12_Architecture_Infrastructure/Architecture_Overview/AI_Infrastructure_2026]] 的 GPU 集群管理、[[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] 一体机的设备治理同属基础设施层
 
 ---
 
@@ -428,9 +433,9 @@ CDI spec 是**某时刻的快照**，硬件变了 spec 没跟着变，就会引�
 
 ## 相关阅读
 
-- [[12_Architecture_Infrastructure/AI_Infrastructure_2026]] — GPU 集群与训练/推理基础设施
+- [[12_Architecture_Infrastructure/Architecture_Overview/AI_Infrastructure_2026]] — GPU 集群与训练/推理基础设施
 - [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — 软硬一体推理平台设备治理
-- [[12_Architecture_Infrastructure/HAMi_Deep_Dive]] — HAMi 异构 GPU 虚拟化（与 CDI 配合的共享方案）
+- [[12_Architecture_Infrastructure/AI_Stack/HAMi_Deep_Dive]] — HAMi 异构 GPU 虚拟化（与 CDI 配合的共享方案）
 - [[01_Fundamentals/AI_Hardware/Chinese_AI_Chips_Deep_Dive]] — 国产异构加速器（CDI 的核心受益者）
 - [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive]] — GPU 推理引擎的容器化落地
 - [[10_Deployment_Inference/Deployment_Inference_2026]] — 部署推理 2026 趋势

@@ -5,8 +5,13 @@ tags: ["reinforcement-learning", "agent", "mdp"]
 summary: "> 全面解析 Vision-Language-Action (VLA) 模型：从 RT-2 到 OpenVLA、π0，端到端机器人控制的技术演进与 2026 前沿进展"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Vla Models 2026"
+  - "VLA Models 2026"
+  - VLA_Models_2026
 
+---
 # VLA 模型 2026：视觉-语言-动作模型的技术突破与产业应用
 
 > 全面解析 Vision-Language-Action (VLA) 模型：从 RT-2 到 OpenVLA、π0，端到端机器人控制的技术演进与 2026 前沿进展

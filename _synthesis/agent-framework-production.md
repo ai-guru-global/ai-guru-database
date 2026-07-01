@@ -4,8 +4,12 @@ category: -synthesis
 tags: [synthesis, agent-framework, ai-agents, production, langgraph]
 summary: Agent 框架（如 LangGraph、AutoGen）与生产级部署实践之间的交叉领域分析。
 created: 2026-06-12
----
+tier: core
+aliases:
+  - "Agent Framework Production"
+  - "agent framework production"
 
+---
 # Agent 框架与生产部署
 
 ## The Connection

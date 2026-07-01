@@ -8,8 +8,13 @@ updated: "2026-06-12"
 source_url: "https://raw.githubusercontent.com/microsoft/generative-ai-for-beginners/main/translations/zh-CN/14-the-generative-ai-application-lifecycle/README.md"
 course: "Microsoft Generative AI for Beginners"
 lesson_number: 14
----
+tier: supporting
+aliases:
+  - "Genai L14 Genai Application Lifecycle"
+  - "GenAI L14 GenAI Application Lifecycle"
+  - GenAI_L14_GenAI_Application_Lifecycle
 
+---
 ## 学习目标
 
 完成本课后，你将：

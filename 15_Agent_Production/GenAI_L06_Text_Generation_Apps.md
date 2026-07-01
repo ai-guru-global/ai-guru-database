@@ -8,8 +8,13 @@ updated: "2026-06-12"
 source_url: "https://raw.githubusercontent.com/microsoft/generative-ai-for-beginners/main/translations/zh-CN/06-text-generation-apps/README.md"
 course: "Microsoft Generative AI for Beginners"
 lesson_number: 6
----
+tier: supporting
+aliases:
+  - "Genai L06 Text Generation Apps"
+  - "GenAI L06 Text Generation Apps"
+  - GenAI_L06_Text_Generation_Apps
 
+---
 ## 学习目标
 
 完成本课后，你将能够：

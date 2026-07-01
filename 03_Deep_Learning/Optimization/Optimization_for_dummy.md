@@ -5,8 +5,13 @@ tags: ["deep-learning", "neural-networks", "backpropagation"]
 summary: '> **一句话秒懂**: 训练优化就像"蒙着眼睛下山找山谷"——你看不到全局,只能摸索着一步步往下走,每次试探方向,调整步伐大小,慢慢找到最低点!'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Optimization For Dummy"
+  - "Optimization for dummy"
+  - Optimization_for_dummy
 
+---
 # 训练优化 - 小白版
 
 > **一句话秒懂**: 训练优化就像"蒙着眼睛下山找山谷"——你看不到全局,只能摸索着一步步往下走,每次试探方向,调整步伐大小,慢慢找到最低点!

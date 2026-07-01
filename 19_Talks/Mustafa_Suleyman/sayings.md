@@ -5,8 +5,11 @@ tags: ["talks", "speeches", "insights", "leaders"]
 summary: "1. **“We need a global regulatory structure for frontier AI.” / “前沿 AI 需要全球监管框架。”**"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - Sayings
 
+---
 # Mustafa Suleyman 关于 AI 的观点 (Mustafa Suleyman on AI)
 
 1. **“We need a global regulatory structure for frontier AI.” / “前沿 AI 需要全球监管框架。”** 

@@ -5,8 +5,12 @@ tags: ["nlp", "llm", "baichuan", "chinese-llm", "open-source", "search-augmented
 summary: "> **一句话理解**: 百川智能由前搜狗 CEO 王小川创立，以搜索增强生成和垂直领域深度优化为特色，Baichuan 系列从 7B 到万亿参数全面覆盖，在医疗、法律等中文场景表现突出。"
 created: "2026-06-12"
 updated: "2026-06-12"
----
+tier: supporting
+aliases:
+  - "Baichuan Deep Dive"
+  - Baichuan_Deep_Dive
 
+---
 # 百川智能 (Baichuan): 搜索增强驱动的开源大模型
 
 > **一句话理解**: 百川智能由前搜狗 CEO 王小川创立，以搜索增强生成和垂直领域深度优化为特色，Baichuan 系列从 7B 到万亿参数全面覆盖，在医疗、法律等中文场景表现突出。

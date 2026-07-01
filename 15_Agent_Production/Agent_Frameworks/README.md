@@ -5,8 +5,9 @@ tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> 多 Agent 开发框架是构建协作式 Agent 系统的核心基础设施，从对话式协作到状态机编排各有特色。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
 
+---
 # Agent 开发框架
 
 > 多 Agent 开发框架是构建协作式 Agent 系统的核心基础设施，从对话式协作到状态机编排各有特色。
@@ -73,3 +74,5 @@ updated: 2026-05-31
 - [[15_Agent_Production/Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
 - [[15_Agent_Production/Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)
 
+
+- [[15_Agent_Production/README|Agent 生产部署 (Agent Production)]]

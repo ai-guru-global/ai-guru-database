@@ -21,8 +21,11 @@ lifecycle: stable
 tier: core
 created: 2026-06-04
 updated: 2026-06-04
----
+aliases:
+  - "Information Theory"
+  - "information theory"
 
+---
 # 信息论 (Information Theory)
 
 > AI 的数学灵魂——交叉熵是分类损失函数，KL散度衡量分布距离，互信息发现特征关联。

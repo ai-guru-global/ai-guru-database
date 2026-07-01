@@ -5,8 +5,13 @@ tags: ["lm-evaluation-harness", "eleutherai", "evaluation", "benchmark", "llm", 
 summary: "> **一句话理解**: LM Evaluation Harness 是 EleutherAI 开源的 LLM 评测框架，用统一接口在数百个学术基准上评估模型，是科研和工业界复现、对比模型能力的事实标准工具。"
 created: "2026-06-16"
 updated: "2026-06-16"
----
+tier: supporting
+aliases:
+  - "Lm Evaluation Harness Deep Dive"
+  - "LM Evaluation Harness Deep Dive"
+  - LM_Evaluation_Harness_Deep_Dive
 
+---
 # LM Evaluation Harness 深度解析：EleutherAI 的 LLM 评测框架
 
 > **一句话理解**: LM Evaluation Harness 是 EleutherAI 开源的 LLM 评测框架，用统一接口在数百个学术基准上评估模型，是科研和工业界复现、对比模型能力的事实标准工具。
@@ -306,5 +311,5 @@ lm_eval --model local-completions \
 - [[_concepts/lm-evaluation-harness]] — LM Evaluation Harness 概念卡片
 - [[_concepts/opencompass]] — OpenCompass
 - [[_concepts/model-evaluation]] — 模型评估
-- [[08_Model_Evaluation/OpenCompass_Deep_Dive]] — OpenCompass 深度解析
-- [[08_Model_Evaluation/LLM_Benchmark_Suite_2026]] — LLM 基准套件 2026
+- [[08_Model_Evaluation/Evaluation_Tools/OpenCompass_Deep_Dive]] — OpenCompass 深度解析
+- [[08_Model_Evaluation/Benchmarks/LLM_Benchmark_Suite_2026]] — LLM 基准套件 2026

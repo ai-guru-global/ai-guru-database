@@ -9,8 +9,11 @@ created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
 tier: supporting
----
+aliases:
+  - "Designing Ml Systems Huyen"
+  - "designing ml systems huyen"
 
+---
 # Designing Machine Learning Systems
 
 > **一句话理解**: ML 系统设计权威指南,覆盖数据、训练、部署、监控全流程.作者:Chip Huyen.

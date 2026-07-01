@@ -5,8 +5,12 @@ tags: ["model-training", "tokenizer", "bpe", "wordpiece", "unigram", "sentencepi
 summary: "> **一句话理解**: Tokenizer 是 LLM 的\"翻译入口\"——就像人类阅读时需要把文字转化为大脑能理解的语义信号，LLM 需要通过 Tokenizer 将原始文本切割成离散的 token 序列，切分的质量直接决定了模型的表达能力、训练效率和多语言支持。"
 created: 2026-06-04
 updated: 2026-06-04
----
+tier: supporting
+aliases:
+  - "Tokenizer Design 2026"
+  - Tokenizer_Design_2026
 
+---
 # Tokenizer Design for LLMs
 
 > **一句话理解**: Tokenizer 是 LLM 的"翻译入口"——就像人类阅读时需要把文字转化为大脑能理解的语义信号，LLM 需要通过 Tokenizer 将原始文本切割成离散的 token 序列，切分的质量直接决定了模型的表达能力、训练效率和多语言支持。
@@ -140,7 +144,7 @@ flowchart LR
 | **Token 粒度** | 影响模型学习难度 | 过细的切分需要更多层来组合语义 |
 | **Byte fallback** | 避免 UNK 但增加序列长度 | 罕见字符退化为 1-4 个 byte token |
 
-> **延伸阅读**: Tokenizer 的设计与模型整体架构紧密相关，详见 [LLM Architectures](../05_NLP_LLMs/LLM_Architectures/LLM_Architectures.md)。
+> **延伸阅读**: Tokenizer 的设计与模型整体架构紧密相关，详见 [LLM Architectures](05_NLP_LLMs/LLM_Architectures/LLM_Architectures.md)。
 
 ---
 
@@ -345,7 +349,7 @@ GPT-2 使用了 **50,257** 个 token 的词表：
 | 特殊 token | 1 | `<\|endoftext\|>` |
 | **总计** | **50,257** | |
 
-GPT-2 tokenizer 的关键创新是 **Byte-level BPE**。关于 GPT 系列的更多技术细节，参见 [GPT-3 Deep Dive](../20_Papers/GPT3_Deep_Dive.md)。
+GPT-2 tokenizer 的关键创新是 **Byte-level BPE**。关于 GPT 系列的更多技术细节，参见 [GPT-3 Deep Dive](20_Papers_and_Research/Scaling/GPT3_Deep_Dive.md)。
 
 ### 2.6 Byte-level BPE
 
@@ -805,7 +809,7 @@ def sample_segmentation(sentence: str, probs: dict,
 | **ALBERT** | 30,000 | SentencePiece Unigram |
 | **XLNet** | 32,000 | SentencePiece Unigram |
 
-> **注意**: LLaMA 1/2 虽然使用 SentencePiece，但实际选择的是 BPE 模式而非 Unigram 模式。T5 和 mBART 是使用 Unigram 的典型代表。更多 LLaMA 系列的技术细节见 [LLaMA Deep Dive](../20_Papers/LLaMA_Deep_Dive.md)。
+> **注意**: LLaMA 1/2 虽然使用 SentencePiece，但实际选择的是 BPE 模式而非 Unigram 模式。T5 和 mBART 是使用 Unigram 的典型代表。更多 LLaMA 系列的技术细节见 [LLaMA Deep Dive](20_Papers_and_Research/Architecture/LLaMA_Deep_Dive.md)。
 
 ---
 
@@ -1785,8 +1789,8 @@ for model_name in model_names:
 ---
 
 > **相关文档**:
-> - [LLM Architectures](../05_NLP_LLMs/LLM_Architectures/LLM_Architectures.md) - 模型架构详解
-> - [GPT-3 Deep Dive](../20_Papers/GPT3_Deep_Dive.md) - GPT-3 论文深度解读
-> - [LLaMA Deep Dive](../20_Papers/LLaMA_Deep_Dive.md) - LLaMA 系列论文深度解读
+> - [LLM Architectures](05_NLP_LLMs/LLM_Architectures/LLM_Architectures.md) - 模型架构详解
+> - [GPT-3 Deep Dive](20_Papers_and_Research/Scaling/GPT3_Deep_Dive.md) - GPT-3 论文深度解读
+> - [LLaMA Deep Dive](20_Papers_and_Research/Architecture/LLaMA_Deep_Dive.md) - LLaMA 系列论文深度解读
 
 *Last updated: 2026-06-04*

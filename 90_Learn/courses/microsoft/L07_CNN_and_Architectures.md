@@ -6,8 +6,13 @@ summary: "本节课介绍卷积神经网络（Convolutional Neural Network, CNN�
 source_url: "https://raw.githubusercontent.com/microsoft/AI-For-Beginners/main/lessons/4-ComputerVision/07-ConvNets/README.md"
 created: "2026-06-12"
 updated: "2026-06-12"
----
+tier: supporting
+aliases:
+  - "L07 Cnn And Architectures"
+  - "L07 CNN and Architectures"
+  - L07_CNN_and_Architectures
 
+---
 # L07 - 卷积神经网络与 CNN 架构
 
 > **一句话理解**：CNN 让神经网络像“看图找特征”一样，用可学习的滑动窗口自动发现边缘、纹理、部件乃至整体对象，从而解决真实图像中目标位置不固定的问题。

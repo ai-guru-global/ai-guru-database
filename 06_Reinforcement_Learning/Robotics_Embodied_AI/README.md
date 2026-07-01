@@ -5,8 +5,9 @@ tags: ["reinforcement-learning", "agent", "mdp"]
 summary: "| 文档 | 内容 | 适用读者 |"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
 
+---
 # 具身智能与机器人 (Robotics & Embodied AI)
 
 ## 文档导航
@@ -53,3 +54,4 @@ updated: 2026-05-31
 - [[06_Reinforcement_Learning/AI_Agents/Agent_Future_Roadmap_2026_2030]] — Agent 未来发展路线图 2026-2030 (共享: agent, mdp, reinforcement-learning, rl)
 - [[06_Reinforcement_Learning/AI_Agents/Agent_Protocols_Detail]] — AI Agent 协议详解：MCP、A2A、UCP (共享: agent, mdp, reinforcement-learning, rl)
 
+- [[06_Reinforcement_Learning/Robotics_Embodied_AI/Robot_VLA_Training_Pipeline_2026|Robot VLA Training Pipeline 2026]]

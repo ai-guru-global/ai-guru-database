@@ -5,8 +5,13 @@ tags: ["ai-stack", "stackops", "aiocontroller", "operations", "systemctl"]
 summary: "> **一句话理解**: stackops 是 AI Stack 内置运维工具集，用于镜像 hash、版本查询等操作；aioController 是 AI Stack 控制引擎核心服务，通过 systemctl 管理其生命周期。"
 created: "2026-06-16"
 updated: "2026-06-16"
----
+tier: supporting
+aliases:
+  - "Ai Stack Exclusive Tools Guide"
+  - "AI Stack Exclusive Tools Guide"
+  - AI_Stack_Exclusive_Tools_Guide
 
+---
 # AI Stack 专属运维工具指南
 
 > **一句话理解**: `stackops` 是 AI Stack 内置运维工具集，用于镜像 hash、版本查询等操作；`aioController` 是 AI Stack 控制引擎核心服务，通过 `systemctl` 管理其生命周期。

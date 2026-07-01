@@ -5,10 +5,14 @@ tags: ["mlops", "llmops", "llm", "production-pipeline", "ci-cd", "deployment", "
 summary: "> **一句话理解**: LLM 生产流水线不是传统 ML Pipeline 的简单延伸，而是一套以 Prompt 为变更核心、以 Token 为成本单位、以 LLM-as-Judge 为质量门禁的全新工程体系——本文是这套体系的端到端实战蓝图。"
 created: 2026-06-15
 updated: 2026-06-15
-tier: core
+tier: supporting
 parent: "[[11_MLOps_Pipeline/LLMOps_2026]]"
----
+aliases:
+  - "Llm Production Pipeline 2026"
+  - "LLM Production Pipeline 2026"
+  - LLM_Production_Pipeline_2026
 
+---
 # LLM 生产流水线深度指南
 
 > **一句话理解**: LLM 生产流水线不是传统 ML Pipeline 的简单延伸，而是一套以 Prompt 为变更核心、以 Token 为成本单位、以 LLM-as-Judge 为质量门禁的全新工程体系——本文是这套体系的端到端实战蓝图。

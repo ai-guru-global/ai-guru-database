@@ -5,8 +5,13 @@ tags: ["model-evaluation", "huggingface", "llm", "benchmark", "lighteval"]
 summary: "> **一句话理解**: Hugging Face 的 Open LLM Leaderboard 是开源模型的“高考成绩单”。本文将拆解排行榜背后的测试集，并教你使用 `lighteval` 和 `lm-eval-harness` 在本地对自己微调的模型进行一样的标准化评测。"
 created: "2026-06-12"
 updated: "2026-06-12"
----
+tier: supporting
+aliases:
+  - "Hf Leaderboard Eval Guide"
+  - "HF Leaderboard Eval Guide"
+  - HF_Leaderboard_Eval_Guide
 
+---
 # Hugging Face 评估体系：从 Open LLM Leaderboard 到本地自动化评测
 
 > **一句话理解**: Hugging Face 的 Open LLM Leaderboard 是开源模型的“高考成绩单”。本文将拆解排行榜背后的测试集，并教你使用 `lighteval` 和 `lm-evaluation-harness` 在本地对自己的模型进行一样的标准化自动化评测。
@@ -153,5 +158,5 @@ lighteval accelerate \
 
 ## 相关阅读
 - [[08_Model_Evaluation/Evaluation_Metrics]]
-- [[08_Model_Evaluation/LLM_as_Judge_Deep_Dive]]
+- [[08_Model_Evaluation/Evaluation_Tools/LLM_as_Judge_Deep_Dive]]
 - [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive]]

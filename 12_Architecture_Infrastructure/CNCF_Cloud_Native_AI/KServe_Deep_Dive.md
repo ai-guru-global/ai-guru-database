@@ -5,8 +5,13 @@ tags: ["cncf", "kubernetes", "inference", "kserve", "llm"]
 summary: "> **一句话理解**: KServe 是 CNCF 孵化项目，把『模型 → Kubernetes 上可弹性、可灰度、可观测的推理 API』变成一个声明式 CRD，是云原生推理的事实标准底座。"
 created: "2026-06-16"
 updated: "2026-06-16"
----
+tier: supporting
+aliases:
+  - "Kserve Deep Dive"
+  - "KServe Deep Dive"
+  - KServe_Deep_Dive
 
+---
 # KServe: Kubernetes 原生标准化推理平台
 
 > **一句话理解**: KServe 是 CNCF 孵化项目，把「模型 → Kubernetes 上可弹性、可灰度、可观测的推理 API」变成一个声明式 CRD，是云原生推理的事实标准底座。

@@ -5,8 +5,12 @@ tags: [inference, performance, gaps, issues, future, edge, energy, observability
 summary: "> 评估当前推理性能专题已覆盖内容与仍未被系统讨论的缺口：边缘/异构、能耗、多租户隔离、编译开销、tokenizer 瓶颈等。"
 created: 2026-06-15
 updated: 2026-06-15
----
+tier: supporting
+aliases:
+  - "Remaining Performance Issues 2026"
+  - Remaining_Performance_Issues_2026
 
+---
 # 推理性能未解问题与缺口评估（2026）
 
 > 专题骨架已经搭完，但还有一些“角落里”的性能问题没有系统覆盖。本文做一份缺口清单，为后续补充指明方向。
@@ -215,3 +219,5 @@ updated: 2026-06-15
 - [[10_Deployment_Inference/Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]]
 - [[10_Deployment_Inference/Inference_Performance/Inference_Speed_Factors_for_dummy|决定模型推理速度的要素]]
 - [[10_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy|推理性能术语大白话解释]]
+
+- [[10_Deployment_Inference/README|模型部署与推理]]

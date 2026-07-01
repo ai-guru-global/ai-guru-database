@@ -5,8 +5,11 @@ tags: [jinze-bai, qwen, alibaba, open-source, multilingual, chinese-ai, moe, hyb
 summary: "白金泽领导阿里云通义千问团队，打造了 Qwen 系列从 7B 到 235B MoE 的完整模型家族，以 Apache 2.0 开源和 119 种语言覆盖闻名。"
 created: 2026-06-12
 updated: 2026-06-12
----
+tier: supporting
+aliases:
+  - About
 
+---
 # 白金泽 (Jinze Bai) — 通义千问团队负责人
 
 > **一句话概括**: 领导阿里云 Qwen 团队，从 Qwen-7B 到 Qwen3.7-Max (1M 上下文 + 256K 思考预算)，打造了全球最活跃的开源大模型生态之一。
@@ -90,3 +93,5 @@ updated: 2026-06-12
 ---
 
 *Last updated: 2026-06-12*
+
+- [[19_Talks/README|AI 名人演讲与观点 (Talks)]]

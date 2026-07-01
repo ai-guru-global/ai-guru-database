@@ -9,8 +9,11 @@ created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
 tier: supporting
----
+aliases:
+  - "Chip Huyen Agents Article"
+  - "chip huyen agents article"
 
+---
 # Chip Huyen: AI Agent 深度解析
 
 > **一句话理解**: Chip Huyen 关于 AI Agent 的深度技术文章,覆盖 Agent 架构、工具使用、记忆机制、生产部署等主题。

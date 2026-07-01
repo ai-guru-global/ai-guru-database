@@ -5,8 +5,13 @@ tags: [inference, glossary, beginner, moe, mla, gqa, flops, prefill, decode, ttf
 summary: "> 用大白话解释 MoE、MLA/GQA、FLOPS、Prefill、Decode、TTFT、量化、NVLink/IB、PD 分离等推理性能核心术语。"
 created: 2026-06-15
 updated: 2026-06-15
----
+tier: supporting
+aliases:
+  - "Inference Terms For Dummy"
+  - "Inference Terms for dummy"
+  - Inference_Terms_for_dummy
 
+---
 # 推理性能术语大白话解释
 
 > 把推理性能里最常出现的术语，用生活化的语言讲清楚。

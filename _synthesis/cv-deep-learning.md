@@ -4,8 +4,12 @@ category: -synthesis
 tags: [synthesis, computer-vision, cv, cnn, deep-learning, image-classification]
 summary: 从 CNN 到 Vision Transformer，深度学习如何彻底重塑计算机视觉的任务边界和性能上限。
 created: 2026-06-12
----
+tier: core
+aliases:
+  - "Cv Deep Learning"
+  - "cv deep learning"
 
+---
 # 深度学习驱动的计算机视觉
 
 ## The Connection
@@ -52,4 +56,4 @@ CV 领域的一个深层规律是**架构统一化趋势**：
 - [[_concepts/computer-vision]]
 - [[_concepts/neural-networks]]
 - [[03_Deep_Learning/Neural_Network_Core/Neural_Network_Core]]
-- [[20_Papers/Vision/ResNet_Deep_Dive]]
+- [[20_Papers_and_Research/Vision/ResNet_Deep_Dive]]

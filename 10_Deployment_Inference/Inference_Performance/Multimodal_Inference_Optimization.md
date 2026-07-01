@@ -5,8 +5,12 @@ tags: [inference, multimodal, vlm, vision-encoder, performance]
 summary: "> VLM 推理不仅要跑 LLM，还要跑视觉编码器，prefill 阶段压力大，需要专门的优化策略。"
 created: 2026-06-15
 updated: 2026-06-15
----
+tier: supporting
+aliases:
+  - "Multimodal Inference Optimization"
+  - Multimodal_Inference_Optimization
 
+---
 # 多模态推理优化
 
 > 一张图可能等于一千个 token——VLM 的推理瓶颈往往不在 LLM，而在视觉编码器和 image token 的 prefill。
@@ -133,3 +137,5 @@ VLM 的 prefill 阶段特别重，因为：
 - [[10_Deployment_Inference/Inference_Performance/README|推理性能专题]]
 - [[10_Deployment_Inference/Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]]
 - [[10_Deployment_Inference/Inference_Performance/Prefill_Decode_Disaggregation|Prefill-Decode 分离]]
+
+- [[10_Deployment_Inference/README|模型部署与推理]]

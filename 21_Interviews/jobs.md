@@ -5,8 +5,11 @@ tags: ["interviews", "career", "experience", "practitioners"]
 summary: "本清单面向“AI 方向求职/转岗/晋升”的学习与面试准备，覆盖研究、工程、数据、产品与安全方向。每个岗位均提供对应面试准备建议（见子目录）。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - Jobs
 
+---
 # AI 相关岗位与工种清单 (AI Roles & Jobs)
 
 本清单面向“AI 方向求职/转岗/晋升”的学习与面试准备，覆盖研究、工程、数据、产品与安全方向。每个岗位均提供对应面试准备建议（见子目录）。
@@ -47,6 +50,18 @@ updated: 2026-05-31
 ## Related
 
 - [[21_Interviews/AI_Data_Analyst/company_level_question_bank]] — AI Data Analyst 按公司/级别区分的题库 (共享: career, experience, interviews, practitioners)
-- [[21_Interviews/AI_Data_Analyst/interview_answers]] — AI Data Analyst 面试题实例答案 (共享: career, experience, interviews, practitioners)
-- [[21_Interviews/AI_Data_Analyst/interview_preparing]] — AI Data Analyst 面试准备 (共享: career, experience, interviews, practitioners)
-- [[21_Interviews/AI_Data_Analyst/question_bank]] — AI Data Analyst 题库 (共享: career, experience, interviews, practitioners)
+- [[21_Interviews/AI_Evaluation_Engineer/AI_Evaluation_Engineer]] — AI Evaluation Engineer 面试指南（评测方法论/LLM-as-Judge/RAG 评测）
+- [[21_Interviews/AI_Policy_Specialist/AI_Policy_Specialist]] — AI Policy Specialist 面试指南（AI 治理/合规/政策）
+- [[21_Interviews/AI_Product_Manager/AI_Product_Manager]] — AI Product Manager 面试指南（产品策略/用户洞察）
+- [[21_Interviews/AI_Reliability_Engineer/AI_Reliability_Engineer]] — AI Reliability Engineer 面试指南（模型监控/SLO/故障恢复）
+- [[21_Interviews/AI_Research_Engineer/AI_Research_Engineer]] — AI Research Engineer 面试指南（算法实现/实验设计）
+- [[21_Interviews/AI_Research_Scientist/AI_Research_Scientist]] — AI Research Scientist 面试指南（前沿研究/论文发表）
+- [[21_Interviews/AI_Security_Engineer/AI_Security_Engineer]] — AI Security Engineer 面试指南（对抗攻击/红队测试）
+- [[21_Interviews/AI_Solutions_Architect/AI_Solutions_Architect]] — AI Solutions Architect 面试指南（方案设计/技术选型）
+- [[21_Interviews/Applied_Scientist/Applied_Scientist]] — Applied Scientist 面试指南（业务建模/算法优化）
+- [[21_Interviews/Data_Engineer/Data_Engineer]] — Data Engineer 面试指南（数据管道/ETL/数据仓库）
+- [[21_Interviews/MLOps_Engineer/MLOps_Engineer]] — MLOps Engineer 面试指南（流水线/CI-CD/模型监控）
+- [[21_Interviews/Prompt_Engineer/Prompt_Engineer]] — Prompt Engineer 面试指南（Prompt 设计/评估优化）
+- [[21_Interviews/Research_Scientist/Research_Scientist]] — Research Scientist 面试指南（基础理论/学术影响力）
+- [[21_Interviews/Robotics_Engineer/Robotics_Engineer]] — Robotics Engineer 面试指南（感知/规划/控制/仿真）
+- [[21_Interviews/Cloud_Ops_Engineer/Cloud_Ops_Engineer]] — Cloud Ops Engineer 面试指南（K8s/GPU 运维/事故响应）

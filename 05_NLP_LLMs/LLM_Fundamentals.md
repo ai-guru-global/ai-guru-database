@@ -5,8 +5,13 @@ tags: ["llm", "transformer", "pretraining", "fine-tuning", "inference"]
 summary: '> **一句话理解**: 大语言模型 (LLM) = Transformer 架构 + 海量文本预训练 + 人类反馈对齐——它不"理解"语言，但通过预测下一个 token 的概率分布，涌现出了翻译、推理、编程等惊人能力。'
 created: 2026-06-12
 updated: 2026-06-12
----
+tier: supporting
+aliases:
+  - "Llm Fundamentals"
+  - "LLM Fundamentals"
+  - LLM_Fundamentals
 
+---
 # 大语言模型基础 (LLM Fundamentals)
 
 > **一句话理解**: 大语言模型 (LLM) = Transformer 架构 + 海量文本预训练 + 人类反馈对齐——它不"理解"语言，但通过预测下一个 token 的概率分布，涌现出了翻译、推理、编程等惊人能力。
@@ -178,5 +183,5 @@ flowchart LR
 - [[05_NLP_LLMs/LLM_Architectures/LLM_Architectures]] — 主流 LLM 架构生态
 - [[05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering]] — 提示词工程实战
 - [[05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques]] — 微调技术全景
-- [[05_NLP_LLMs/Long_Context_Models_2026]] — 长上下文模型 2026
+- [[05_NLP_LLMs/LLM_Architectures/Long_Context_Models_2026]] — 长上下文模型 2026
 - [[05_NLP_LLMs/GenAI_L02_Exploring_and_Comparing_LLMs]] — LLM 对比与选型

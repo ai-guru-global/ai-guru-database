@@ -23,8 +23,10 @@ lifecycle: stable
 tier: core
 created: 2026-06-16
 updated: 2026-06-16
----
+aliases:
+  - Replicate
 
+---
 # Replicate
 
 > 开源模型的「一键 API 托管平台」——上传模型，自动生成可调用 API。

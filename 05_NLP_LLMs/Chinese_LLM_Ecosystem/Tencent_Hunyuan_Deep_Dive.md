@@ -5,8 +5,12 @@ tags: ["nlp", "llm", "tencent", "hunyuan", "chinese-llm", "moe", "video-generati
 summary: "> **一句话理解**: 腾讯混元依托腾讯生态，Hunyuan-Large 389B 开源 MoE 模型和 HunyuanVideo 视频生成技术为双核心，在社交、游戏、内容创作场景深度集成。"
 created: "2026-06-12"
 updated: "2026-06-12"
----
+tier: supporting
+aliases:
+  - "Tencent Hunyuan Deep Dive"
+  - Tencent_Hunyuan_Deep_Dive
 
+---
 # 腾讯混元 (Hunyuan): 腾讯生态驱动的大模型平台
 
 > **一句话理解**: 腾讯混元依托腾讯生态，Hunyuan-Large 389B 开源 MoE 模型和 HunyuanVideo 视频生成技术为双核心，在社交、游戏、内容创作场景深度集成。

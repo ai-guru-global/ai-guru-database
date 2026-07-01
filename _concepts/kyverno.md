@@ -23,8 +23,10 @@ lifecycle: stable
 tier: core
 created: 2026-06-16
 updated: 2026-06-16
----
+aliases:
+  - Kyverno
 
+---
 # Kyverno
 
 > Kubernetes 的「YAML 策略守门员」——用 K8s 原生方式写策略，无需学 Rego。

@@ -6,8 +6,12 @@ summary: "命名实体识别（NER）把文本中的每个词判定为实体类�
 source_url: "https://raw.githubusercontent.com/microsoft/AI-For-Beginners/main/lessons/5-NLP/19-NER/README.md"
 created: "2026-06-12"
 updated: "2026-06-12"
----
+tier: supporting
+aliases:
+  - "L19 Named Entity Recognition"
+  - L19_Named_Entity_Recognition
 
+---
 # L19 - 命名实体识别 NER
 
 > **一句话理解**：把“句子中哪些词属于哪类实体”这个问题，转化为对每个词元（token）进行分类，就能训练出能从文本里自动抽出人名、地点、疾病、化学物质等实体的模型。

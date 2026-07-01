@@ -5,8 +5,13 @@ tags: ["ai-applications", "industry", "finance", "healthcare"]
 summary: '> **一句话理解**: 2026年医疗AI已从辅助工具进化为临床"副驾驶"——FDA累计批准超1000款AI/ML医疗设备，AI诊断准确率在多个专科超越人类专家，药物研发周期被压缩50%。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Ai Healthcare 2026"
+  - "AI Healthcare 2026"
+  - AI_Healthcare_2026
 
+---
 # AI 医疗健康行业应用 (2025-2026)
 
 > **一句话理解**: 2026 年医疗 AI 已从辅助工具进化为临床"副驾驶"——FDA 累计批准超 1000 款 AI/ML 医疗设备，AI 诊断准确率在多个专科超越人类专家，药物研发周期被压缩 50%。

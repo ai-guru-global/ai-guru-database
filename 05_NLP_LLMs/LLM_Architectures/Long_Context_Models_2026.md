@@ -5,8 +5,12 @@ tags: ["nlp", "llm", "transformer", "gpt", "bert"]
 summary: '> **一句话理解**: 2026年的LLM已从"大海捞针"进化到"整本典籍"——100K-1M token的上下文窗口重新定义了AI能处理的问题规模，但随之而来的计算复杂度、内存管理、信息检索挑战催生了全新的工程范式。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Long Context Models 2026"
+  - Long_Context_Models_2026
 
+---
 # 长上下文模型 2026: 万级 Token 处理
 
 > **一句话理解**: 2026 年的 LLM 已从"大海捞针"进化到"整本典籍"——100K-1M token 的上下文窗口重新定义了 AI 能处理的问题规模，但随之而来的计算复杂度、内存管理、信息检索挑战催生了全新的工程范式。
@@ -1405,4 +1409,4 @@ class LongContextEvaluationPipeline:
 - [[05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques.md|Fine_tuning_Techniques]]
 - [[05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques_for_dummy.md|Fine_tuning_Techniques_for_dummy]]
 - [[05_NLP_LLMs/Fine_tuning_Techniques/Model_Merging_2026.md|Model_Merging_2026]]
-- [[05_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/PEFT_2026.md|PEFT_2026]]
+- [[05_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026.md|PEFT_2026]]

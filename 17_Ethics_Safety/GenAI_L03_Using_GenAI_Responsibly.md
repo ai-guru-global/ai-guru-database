@@ -8,8 +8,13 @@ updated: "2026-06-12"
 source_url: "https://raw.githubusercontent.com/microsoft/generative-ai-for-beginners/main/translations/zh-CN/03-using-generative-ai-responsibly/README.md"
 course: "Microsoft Generative AI for Beginners"
 lesson_number: 3
----
+tier: supporting
+aliases:
+  - "Genai L03 Using Genai Responsibly"
+  - "GenAI L03 Using GenAI Responsibly"
+  - GenAI_L03_Using_GenAI_Responsibly
 
+---
 ## 学习目标
 
 完成本课后，你将了解：

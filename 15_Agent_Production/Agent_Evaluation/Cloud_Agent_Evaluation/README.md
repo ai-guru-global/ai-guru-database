@@ -5,8 +5,9 @@ tags: ["ai-agents", "agent-framework", "production", "langgraph", "model-evaluat
 summary: "> 云产品智能体专项测评文档目录"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: core
 
+---
 # Cloud Agent Evaluation
 
 > 云产品智能体专项测评文档目录
@@ -42,7 +43,7 @@ updated: 2026-05-31
 - [[15_Agent_Production/Agent_Evaluation/Cloud_Agent_Evaluation_System_2026]] — Cloud Agent Evaluation System 2026 (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
 - [[15_Agent_Production/Agent_Evaluation/Metrics/Evaluation_Metrics]] — Evaluation Metrics (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
 - [[15_Agent_Production/Agent_Evaluation/Multi_Agent_Evaluation_2026]] — Multi-Agent System Evaluation Framework 2026 (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
-- [[18_Cloud_Ops_Agent/docs/product/index.md|index]]
+- [[_projects/Cloud_Ops_Agent/docs/index|index]]
 - [[15_Agent_Production/AI_OpenSource_Projects_Overview.md|AI_OpenSource_Projects_Overview]]
 - [[15_Agent_Production/Gradio_Deep_Dive.md|Gradio_Deep_Dive]]
 - [[15_Agent_Production/README.md|README]]
@@ -64,10 +65,10 @@ updated: 2026-05-31
 - [[15_Agent_Production/Agent_Ecosystem_CN/Chinese_OpenSource_Agent_Projects.md|Chinese_OpenSource_Agent_Projects]]
 - [[15_Agent_Production/Agent_Ecosystem_CN/Domestic_AI_Agent_Products_CN.md|Domestic_AI_Agent_Products_CN]]
 - [[15_Agent_Production/Memory_Infrastructure/Agent_Memory_Systems_2026.md|Agent_Memory_Systems_2026]]
-- [[15_Agent_Production/Agent_Evaluation/docs/architecture/system_architecture.md|system_architecture]]
-- [[15_Agent_Production/Agent_Evaluation/docs/guides/evaluation_guide.md|evaluation_guide]]
-- [[15_Agent_Production/Agent_Evaluation/docs/api/plugin_api_reference.md|plugin_api_reference]]
-- [[15_Agent_Production/Agent_Evaluation/docs/reports/k8s_evaluation_report.md|k8s_evaluation_report]]
+- [[15_Agent_Production/Agent_Evaluation/Agent_Evaluation_System_Architecture.md|system_architecture]]
+- [[15_Agent_Production/Agent_Evaluation/Agent_Evaluation_Guide.md|evaluation_guide]]
+- [[15_Agent_Production/Agent_Evaluation/Agent_Evaluation_Plugin_API.md|plugin_api_reference]]
+- [[15_Agent_Production/Agent_Evaluation/K8s_Agent_Evaluation_Report.md|k8s_evaluation_report]]
 - [[15_Agent_Production/Agent_Evaluation/Benchmarking/Scoring_System.md|Scoring_System]]
 - [[15_Agent_Production/Agent_Skills/Agent_Skills_Multi_Role_Analysis.md|Agent_Skills_Multi_Role_Analysis]]
 - [[15_Agent_Production/Agent_Skills/Skill_Versioning_Guide.md|Skill_Versioning_Guide]]

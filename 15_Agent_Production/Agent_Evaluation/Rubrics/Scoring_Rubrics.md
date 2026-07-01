@@ -5,8 +5,12 @@ tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> Detailed scoring guides for consistent agent evaluation"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Scoring Rubrics"
+  - Scoring_Rubrics
 
+---
 # Scoring Rubrics
 
 > Detailed scoring guides for consistent agent evaluation

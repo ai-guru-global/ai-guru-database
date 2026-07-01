@@ -5,8 +5,12 @@ tags: ["model-training", "distributed-training", "optimization", "fsdp"]
 summary: "> **一句话理解**: 2026年的模型训练优化已从单一技巧进化为系统工程——FlashAttention削减O(n²)内存墙、梯度检查点用计算换空间、流水线并行打破单卡边界，十二种核心技术的组合策略让大模型训练速度提升3-10倍、显存节省50-90%。"
 created: "2026-05-31"
 updated: "2026-05-31"
----
+tier: supporting
+aliases:
+  - "Training Optimization 2026"
+  - Training_Optimization_2026
 
+---
 # 训练优化技术 2026: 从显存到吞吐的全栈加速
 
 > **一句话理解**: 2026 年的模型训练优化已从单一技巧进化为系统工程——FlashAttention 削减 O(n²)内存墙、梯度检查点用计算换空间、流水线并行打破单卡边界，十二种核心技术的组合策略让大模型训练速度提升 3-10 倍、显存节省 50-90%。
@@ -177,7 +181,7 @@ class TransformerBlock(nn.Module):
 
 ## 3. 混合精度训练 (Mixed Precision)
 
-> **详细内容** → [./Mixed_Precision_Training.md](./Mixed_Precision_Training.md)
+> **详细内容** → [./Mixed_Precision_Training.md](07_Model_Training/Optimization/Mixed_Precision_Training.md)
 
 ### 3.1 快速概览
 
@@ -920,26 +924,26 @@ return checkpoint(forward_fn, x, use_reentrant=False)
 | CUDA Graphs | ⚠️ | ✅ | 推理 shape 固定 |
 | 序列并行 | ✅ | ✅ | 长上下文推理必需 |
 
-**推理专属优化** → [../10_Deployment_Inference/Inference-in-nutshell.md](../10_Deployment_Inference/Inference-in-nutshell.md)
+**推理专属优化** → [../10_Deployment_Inference/Inference-in-nutshell.md](10_Deployment_Inference/Inference-in-nutshell.md)
 
 ---
 
 ## 🔗 相关章节
 
 ### 前置知识
-- [优化器基础与原理](../03_Deep_Learning/Optimization/Optimization.md) — SGD/Adam/AdamW 数学基础
-- [神经网络核心](../03_Deep_Learning/Neural_Network_Core/Neural_Network_Core.md) — 反向传播、激活函数
+- [优化器基础与原理](03_Deep_Learning/Optimization/Optimization.md) — SGD/Adam/AdamW 数学基础
+- [神经网络核心](03_Deep_Learning/Neural_Network_Core/Neural_Network_Core.md) — 反向传播、激活函数
 
 ### 横向关联
-- [混合精度训练详解](./Mixed_Precision_Training.md) — FP16/BF16/FP8 深度解析
-- [分布式训练 2026](./Distributed_Training_2026.md) — DDP/FSDP/DeepSpeed/Megatron-LM
-- [长上下文模型](../05_NLP_LLMs/Long_Context_Models_2026.md) — Ring Attention、稀疏注意力
+- [混合精度训练详解](07_Model_Training/Optimization/Mixed_Precision_Training.md) — FP16/BF16/FP8 深度解析
+- [分布式训练 2026](07_Model_Training/Distributed_Training/Distributed_Training_2026.md) — DDP/FSDP/DeepSpeed/Megatron-LM
+- [长上下文模型](05_NLP_LLMs/LLM_Architectures/Long_Context_Models_2026.md) — Ring Attention、稀疏注意力
 
 ### 纵向进阶
-- [模型评估](../08_Model_Evaluation/Model_Evaluation.md) — 训练后验证模型质量
-- [部署推理优化](../10_Deployment_Inference/Inference-in-nutshell.md) — 模型上线推理加速
-- [MLOps 流水线](../11_MLOps_Pipeline/MLOps_Pipeline.md) — 自动化训练与监控
-- [AI 基础设施](../12_Architecture_Infrastructure/AI_Infrastructure_2026.md) — 集群网络与存储优化
+- [模型评估](08_Model_Evaluation/Model_Evaluation.md) — 训练后验证模型质量
+- [部署推理优化](10_Deployment_Inference/Inference-in-nutshell.md) — 模型上线推理加速
+- [MLOps 流水线](11_MLOps_Pipeline/MLOps_Pipeline.md) — 自动化训练与监控
+- [AI 基础设施](12_Architecture_Infrastructure/Architecture_Overview/AI_Infrastructure_2026) — 集群网络与存储优化
 
 ---
 

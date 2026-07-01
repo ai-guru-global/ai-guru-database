@@ -5,8 +5,12 @@ tags: ["cncf", "kubernetes", "knative", "serverless", "llm", "autoscaling"]
 summary: "> **一句话理解**: Knative Serving 是 CNCF 毕业级的 Serverless 层——靠 KPA 实现「按并发自动扩缩 + 闲时缩到 0 个 Pod」，让昂贵的 GPU 推理 Pod 不再空转，并能对模型版本做金丝雀流量切分。"
 created: "2026-06-16"
 updated: "2026-06-16"
----
+tier: supporting
+aliases:
+  - "Knative Deep Dive"
+  - Knative_Deep_Dive
 
+---
 # Knative Serving: LLM 服务的弹性与 scale-to-zero
 
 > **一句话理解**: Knative Serving 是 CNCF 毕业级的 Serverless 层——靠 KPA 实现「按并发自动扩缩 + 闲时缩到 0 个 Pod」，让昂贵的 GPU 推理 Pod 不再空转，并能对模型版本做金丝雀流量切分。

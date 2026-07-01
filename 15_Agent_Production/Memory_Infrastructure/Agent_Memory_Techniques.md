@@ -10,8 +10,11 @@ created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
 tier: supporting
----
+aliases:
+  - "Agent Memory Techniques"
+  - Agent_Memory_Techniques
 
+---
 # AI Agent 记忆技术完全指南
 
 > **一句话理解**: Agent 记忆系统的架构与实现:短期记忆、长期记忆、工作记忆、情景记忆,含 Mem0、Zep、Graphiti 等工具。
@@ -108,5 +111,5 @@ results = m.search("编程语言偏好", user_id="alice")
 4. **记忆清理**: 定期清理过时和低价值记忆
 5. **个性化**: 基于记忆提供个性化响应
 
-> **关联**: -> [[15_Agent_Production|Agent 生产]] | [[15_Agent_Production/Memory_Infrastructure|记忆基础设施]] | [[14_RAG_Systems|RAG 系统]]
+> **关联**: -> [[15_Agent_Production/README|Agent 生产]] | [[15_Agent_Production/Memory_Infrastructure|记忆基础设施]] | [[14_RAG_Systems/README|RAG 系统]]
 

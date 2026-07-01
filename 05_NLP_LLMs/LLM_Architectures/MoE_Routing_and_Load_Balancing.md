@@ -5,8 +5,13 @@ tags: [moe, mixture-of-experts, routing, load-balancing, expert-selection, spars
 summary: 深度解析混合专家模型（MoE）的路由算法、负载均衡机制、专家选择策略和通信优化，涵盖 Top-K、Expert Choice 和 Noisy Top-Gating 等技术原理。
 date: 2026-06-01
 created: 2026-06-12
----
+tier: peripheral
+aliases:
+  - "Moe Routing And Load Balancing"
+  - "MoE Routing and Load Balancing"
+  - MoE_Routing_and_Load_Balancing
 
+---
 # MoE 路由与负载均衡深度解析
 
 ## 一句话理解

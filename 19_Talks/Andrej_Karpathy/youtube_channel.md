@@ -9,8 +9,12 @@ created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
 tier: supporting
----
+aliases:
+  - "Youtube Channel"
+  - "youtube channel"
+  - youtube_channel
 
+---
 # Andrej Karpathy YouTube 频道
 
 > **一句话理解**: 前 OpenAI/Tesla AI 负责人 Andrej Karpathy 的 YouTube 频道,深入浅出讲解 LLM、神经网络、GPT 等核心技术。
@@ -30,3 +34,7 @@ tier: supporting
 
 > **关联**: -> [[19_Talks/Andrej_Karpathy|Andrej Karpathy]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
 
+
+## Related
+
+- [[19_Talks/README|AI 名人演讲与观点 (Talks)]]

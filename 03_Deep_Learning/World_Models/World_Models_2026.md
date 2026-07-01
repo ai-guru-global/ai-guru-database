@@ -5,8 +5,12 @@ tags: ["deep-learning", "neural-networks", "backpropagation"]
 summary: '> **一句话理解**: 世界模型就像AI的"内部模拟器"——它不是生成像素来预测未来，而是在抽象的表征空间中学习世界的运行规律，让AI能够像人类一样进行想象、规划和推理。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "World Models 2026"
+  - World_Models_2026
 
+---
 # 世界模型 (World Models) - 2026 年完整指南
 
 > **一句话理解**: 世界模型就像 AI 的"内部模拟器"——它不是生成像素来预测未来，而是在抽象的表征空间中学习世界的运行规律，让 AI 能够像人类一样进行想象、规划和推理。

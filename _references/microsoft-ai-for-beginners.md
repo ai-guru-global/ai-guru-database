@@ -6,8 +6,12 @@ summary: "Microsoft 官方开源的 12 周 AI 初学者课程引用索引。完�
 created: "2026-06-12"
 updated: "2026-06-12"
 source_url: "https://github.com/microsoft/AI-For-Beginners/blob/main/translations/zh-CN/README.md"
----
+tier: peripheral
+aliases:
+  - "Microsoft Ai For Beginners"
+  - "microsoft ai for beginners"
 
+---
 # Microsoft AI For Beginners
 
 这是 Microsoft 官方开源课程 **AI For Beginners** 的外部源引用索引。

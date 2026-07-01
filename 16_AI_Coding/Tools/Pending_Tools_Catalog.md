@@ -5,8 +5,12 @@ tags: ["ai-coding", "code-generation", "cursor", "github-copilot"]
 summary: "> 已识别的 AI 编程工具，待后续探索使用，按类型分类。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Pending Tools Catalog"
+  - Pending_Tools_Catalog
 
+---
 # 待探索工具目录
 
 > 已识别的 AI 编程工具，待后续探索使用，按类型分类。

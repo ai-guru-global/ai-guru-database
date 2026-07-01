@@ -5,8 +5,13 @@ tags: ["reinforcement-learning", "agent", "mdp"]
 summary: '> **一句话理解**: 深度强化学习就像给强化学习装上了"深度学习大脑"——用神经网络处理复杂的图像、语音等高维输入，让AI能玩Atari游戏、控制机器人，甚至战胜人类围棋冠军。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Deep Rl"
+  - "Deep RL"
+  - Deep_RL
 
+---
 # 深度强化学习 (Deep RL)
 > **一句话理解**: 深度强化学习就像给强化学习装上了"深度学习大脑"——用神经网络处理复杂的图像、语音等高维输入，让 AI 能玩 Atari 游戏、控制机器人，甚至战胜人类围棋冠军。
 
@@ -735,21 +740,21 @@ Sutton 指出，以下三者同时存在会导致不稳定：
 ## 7. 与其他主题的关联 (Connections)
 
 ### 7.1 前置知识
-- **强化学习基础**: [RL Foundations](../RL_Foundations/RL_Foundations.md) —— MDP、贝尔曼方程、Q-Learning
+- **强化学习基础**: [RL Foundations](06_Reinforcement_Learning/RL_Foundations/RL_Foundations.md) —— MDP、贝尔曼方程、Q-Learning
 - **深度学习基础**:
- - [神经网络核心](../../03_Deep_Learning/Neural_Network_Core/Neural_Network_Core.md) —— MLP、CNN、RNN
- - [优化方法](../../03_Deep_Learning/Optimization/Optimization.md) —— SGD、Adam、学习率调度
-- **概率统计**: [概率统计基础](../../01_Fundamentals/Probability_Statistics/Probability_Statistics.md) —— 期望、方差、重要性采样
+ - [神经网络核心](03_Deep_Learning/Neural_Network_Core/Neural_Network_Core.md) —— MLP、CNN、RNN
+ - [优化方法](03_Deep_Learning/Optimization/Optimization.md) —— SGD、Adam、学习率调度
+- **概率统计**: [概率统计基础](01_Fundamentals/Probability_Statistics/Probability_Statistics.md) —— 期望、方差、重要性采样
 
 ### 7.2 后续进阶
-- **AI 智能体**: [AI Agents](../../15_Agent_Production/Agent_Foundations/AI_Agents.md) —— 结合 LLM 的自主规划系统
+- **AI 智能体**: [AI Agents](15_Agent_Production/Agent_Foundations/AI_Agents.md) —— 结合 LLM 的自主规划系统
 - **多智能体强化学习**: 博弈论、协作通信
 - **模仿学习**: Behavior Cloning, GAIL, IRL
 
 ### 7.3 相关领域
-- **自然语言处理**: [Transformer](../../05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution.md) —— RLHF 中的策略网络
-- **计算机视觉**: [图像分类检测](../../04_Computer_Vision/Image_Classification_Detection/Image_Classification_Detection.md) —— Atari 游戏的视觉编码
-- **生成模型**: [生成模型](../../04_Computer_Vision/Generative_Models/Generative_Models.md) —— 基于扩散模型的 RL
+- **自然语言处理**: [Transformer](05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution.md) —— RLHF 中的策略网络
+- **计算机视觉**: [图像分类检测](04_Computer_Vision/Image_Classification_Detection/Image_Classification_Detection.md) —— Atari 游戏的视觉编码
+- **生成模型**: [生成模型](04_Computer_Vision/Generative_Models/Generative_Models.md) —— 基于扩散模型的 RL
 
 ## 8. 面试高频问题 (Interview FAQs)
 
@@ -891,19 +896,19 @@ Sutton 指出，以下三者同时存在会导致不稳定：
 ### 9.1 经典论文
 
 **基础算法**:
-- **DQN**: Mnih et al. (2013). Playing Atari with Deep Reinforcement Learning. `[[arxiv]]`(https://arxiv.org/abs/1312.5602)
-- **A3C**: Mnih et al. (2016). Asynchronous Methods for Deep Reinforcement Learning. `[[arxiv]]`(https://arxiv.org/abs/1602.01783)
-- **DDPG**: Lillicrap et al. (2015). Continuous control with deep reinforcement learning. `[[arxiv]]`(https://arxiv.org/abs/1509.02971)
-- **PPO**: Schulman et al. (2017). Proximal Policy Optimization Algorithms. `[[arxiv]]`(https://arxiv.org/abs/1707.06347)
-- **SAC**: Haarnoja et al. (2018). Soft Actor-Critic. `[[arxiv]]`(https://arxiv.org/abs/1801.01290)
+- **DQN**: Mnih et al. (2013). Playing Atari with Deep Reinforcement Learning. `[arXiv](https://arxiv.org)`(https://arxiv.org/abs/1312.5602)
+- **A3C**: Mnih et al. (2016). Asynchronous Methods for Deep Reinforcement Learning. `[arXiv](https://arxiv.org)`(https://arxiv.org/abs/1602.01783)
+- **DDPG**: Lillicrap et al. (2015). Continuous control with deep reinforcement learning. `[arXiv](https://arxiv.org)`(https://arxiv.org/abs/1509.02971)
+- **PPO**: Schulman et al. (2017). Proximal Policy Optimization Algorithms. `[arXiv](https://arxiv.org)`(https://arxiv.org/abs/1707.06347)
+- **SAC**: Haarnoja et al. (2018). Soft Actor-Critic. `[arXiv](https://arxiv.org)`(https://arxiv.org/abs/1801.01290)
 
 **里程碑应用**:
 - **AlphaGo**: Silver et al. (2016). Mastering the game of Go with deep neural networks. Nature.
 - **AlphaZero**: Silver et al. (2018). A general reinforcement learning algorithm that masters chess, shogi, and Go. Science.
-- **OpenAI Five**: Berner et al. (2019). Dota 2 with Large Scale Deep Reinforcement Learning. `[[arxiv]]`(https://arxiv.org/abs/1912.06680)
+- **OpenAI Five**: Berner et al. (2019). Dota 2 with Large Scale Deep Reinforcement Learning. `[arXiv](https://arxiv.org)`(https://arxiv.org/abs/1912.06680)
 
 **前沿方向**:
-- **Offline RL**: Levine et al. (2020). Offline Reinforcement Learning: Tutorial. `[[arxiv]]`(https://arxiv.org/abs/2005.01643)
+- **Offline RL**: Levine et al. (2020). Offline Reinforcement Learning: Tutorial. `[arXiv](https://arxiv.org)`(https://arxiv.org/abs/2005.01643)
 - **MuZero**: Schrittwieser et al. (2020). Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model. Nature.
 
 ### 9.2 教程与课程

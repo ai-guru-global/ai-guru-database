@@ -5,8 +5,13 @@ tags: ["deepspeed", "microsoft", "distributed-training", "zero", "parallelism", 
 summary: "> **一句话理解**: DeepSpeed 是微软开源的深度学习优化库，通过 ZeRO 显存分片、Offload、DeepSpeed-Inference 和 MoE 等技术，让千亿参数大模型的训练与推理在有限 GPU 上成为可能。"
 created: "2026-06-16"
 updated: "2026-06-16"
----
+tier: supporting
+aliases:
+  - "Deepspeed Deep Dive"
+  - "DeepSpeed Deep Dive"
+  - DeepSpeed_Deep_Dive
 
+---
 # DeepSpeed 深度解析：微软大模型训练与推理优化库
 
 > **一句话理解**: DeepSpeed 是微软开源的深度学习优化库，通过 ZeRO 显存分片、Offload、DeepSpeed-Inference 和 MoE 等技术，让千亿参数大模型的训练与推理在有限 GPU 上成为可能。

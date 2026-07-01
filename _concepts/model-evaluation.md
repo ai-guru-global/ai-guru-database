@@ -25,7 +25,7 @@ relationships:
   type: implements
 sources:
 - 08_model-training_Evaluation/Model_Evaluation.md
-- 08_Model_Evaluation/Online_Evaluation.md
+- 08_Model_Evaluation/Evaluation_Tools/Online_Evaluation.md
 - 08_Model_Evaluation/Evaluation_Automation_2026.md
 summary: 模型评估涵盖离线指标体系（分类/回归/排序/llm-infrastructure基准）、在线评估（A/B测试/影子部署/金丝雀发布）和自动化评估流水线（CI/CD集成/质量门禁/回归测试）。核心原则：永远不在训练集上评估、选择与业务目标一致的指标、统计显著性检验不可或缺。
 provenance:
@@ -38,8 +38,11 @@ lifecycle_changed: 2026-05-31
 tier: core
 created: 2026-05-31 00:00:00+00:00
 updated: 2026-05-31 00:00:00+00:00
----
+aliases:
+  - "Model Evaluation"
+  - "model evaluation"
 
+---
 # 模型评估
 
 ## 核心要点
@@ -110,4 +113,4 @@ updated: 2026-05-31 00:00:00+00:00
 - [[_concepts/red-teaming]] — 红队测试
 - [[_concepts/ci-integrated-evaluation]] — CI 集成评估
 - [[_concepts/ab-testing-framework]] — A/B 测试框架
-- [[08_Model_Evaluation/LLM_Benchmarks_for_dummy]] — LLM 评估与测试大白话
+- [[08_Model_Evaluation/Benchmarks/LLM_Benchmarks_for_dummy]] — LLM 评估与测试大白话

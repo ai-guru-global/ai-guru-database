@@ -1,12 +1,118 @@
 ---
 title: NLP Engineer 题库
 category: 21-interviews-nlp-engineer
+tags: ["interviews", "career", "nlp", "llm", "transformer", "rag", "text-mining"]
+summary: "NLP Engineer 面试题库，覆盖 NLP 基础、LLM 应用、RAG 系统、训练微调和系统设计，含难度与频率标注。"
+created: 2026-05-31
+updated: 2026-06-04
+tier: supporting
+---
+
+# NLP Engineer 题库
+
+> **难度标注**: ⭐ Basic | ⭐⭐ Intermediate | ⭐⭐⭐ Advanced
+> **频率标注**: 🔴 高频 | 🟡 中频 | 🟢 低频
+
+---
+
+## NLP 基础理论 (12 题)
+
+| # | 问题 | 难度 | 频率 |
+|---|------|------|------|
+| 1 | 解释 Tokenization、Subword (BPE/WordPiece/Unigram) 和词表构建的关系 | ⭐ | 🔴 |
+| 2 | Transformer 的 Self-Attention 计算流程？为什么需要 Multi-Head？ | ⭐ | 🔴 |
+| 3 | BERT 和 GPT 的预训练目标有何不同？各自适用什么任务？ | ⭐ | 🔴 |
+| 4 | 解释位置编码 (Positional Encoding) 的作用，RoPE vs ALiBi 有何区别？ | ⭐⭐ | 🟡 |
+| 5 | Word2Vec vs BERT Embedding 的本质区别是什么？静态 vs 上下文化表示 | ⭐ | 🟡 |
+| 6 | 解释 Seq2Seq + Attention 到 Transformer 的演化路径 | ⭐ | 🟡 |
+| 7 | NLP 中常见的数据增强方法有哪些？回译、同义替换、EDA 的优劣 | ⭐ | 🟢 |
+| 8 | 解释困惑度 (Perplexity) 的含义，它和交叉熵的关系？ | ⭐ | 🟡 |
+| 9 | BLEU、ROUGE、BERTScore 各自的计算逻辑和局限性？ | ⭐⭐ | 🔴 |
+| 10 | 什么是 Tokenizer 的 "诅咒"？中英文混合分词有什么挑战？ | ⭐⭐ | 🟡 |
+| 11 | 解释 Layer Normalization vs Batch Normalization，Pre-Norm vs Post-Norm | ⭐ | 🟡 |
+| 12 | KV Cache 的原理？为什么对 LLM 推理如此重要？ | ⭐⭐ | 🔴 |
+
+## LLM 应用与 RAG (15 题)
+
+| # | 问题 | 难度 | 频率 |
+|---|------|------|------|
+| 1 | 描述一个完整 RAG 系统的架构：索引 → 检索 → 生成 | ⭐⭐ | 🔴 |
+| 2 | 向量检索 vs 关键词检索 (BM25) vs 混合检索的优劣？什么是 RRF？ | ⭐⭐ | 🔴 |
+| 3 | 如何解决 RAG 中的 "检索到了但没用" (低精度) 和 "没检索到" (低召回)？ | ⭐⭐ | 🔴 |
+| 4 | 分块策略 (Chunking) 有哪些方法？如何选择合适的块大小？ | ⭐⭐ | 🔴 |
+| 5 | Re-ranker 的作用和实现方式？Cross-Encoder vs ColBERT | ⭐⭐ | 🟡 |
+| 6 | 什么是 Self-RAG、CRAG、Agentic RAG？分别解决什么问题？ | ⭐⭐⭐ | 🟡 |
+| 7 | 如何评测 RAG 系统？RAGAS 框架包含哪些指标？ | ⭐⭐ | 🔴 |
+| 8 | Prompt Engineering 中 Few-shot vs Zero-shot CoT 的适用场景？ | ⭐ | 🔴 |
+| 9 | 如何检测和缓解 LLM 幻觉 (Hallucination)？ | ⭐⭐ | 🔴 |
+| 10 | 什么是 Prompt 注入攻击？如何防护？ | ⭐⭐ | 🟡 |
+| 11 | Function Calling / Tool Use 的工作原理和常见应用场景？ | ⭐⭐ | 🔴 |
+| 12 | 如何设计一个多轮对话系统的上下文管理策略？ | ⭐⭐ | 🟡 |
+| 13 | Embedding 模型的选型标准？如何评估 Embedding 质量？ | ⭐⭐ | 🟡 |
+| 14 | 如何构建领域特定的评测基准 (Benchmark)？ | ⭐⭐⭐ | 🟡 |
+| 15 | 模型输出不稳定 (非确定性) 的原因和解决方案？ | ⭐⭐ | 🔴 |
+
+## 训练与微调 (10 题)
+
+| # | 问题 | 难度 | 频率 |
+|---|------|------|------|
+| 1 | 全量微调 vs LoRA vs QLoRA 的区别？何时选择哪种方案？ | ⭐⭐ | 🔴 |
+| 2 | SFT 数据质量如何保证？数据格式和清洗流程？ | ⭐⭐ | 🔴 |
+| 3 | RLHF 的完整流程？PPO vs DPO 的区别？ | ⭐⭐⭐ | 🟡 |
+| 4 | 什么是灾难性遗忘？如何缓解？ | ⭐⭐ | 🟡 |
+| 5 | 解释知识蒸馏在 LLM 微调中的应用 (Orca/Phi 方法) | ⭐⭐⭐ | 🟢 |
+| 6 | SFT 数据配比 (Data Mixture) 如何设计？ | ⭐⭐⭐ | 🟡 |
+| 7 | 预训练 → SFT → RLHF 三阶段各自的目标和损失函数？ | ⭐⭐ | 🔴 |
+| 8 | 分布式训练中 ZeRO 的三个阶段分别优化什么？ | ⭐⭐⭐ | 🟡 |
+| 9 | Flash Attention 的核心优化思路是什么？ | ⭐⭐⭐ | 🟡 |
+| 10 | 如何判断微调是否过拟合？验证集设计有什么讲究？ | ⭐⭐ | 🟡 |
+
+## 系统设计与工程 (8 题)
+
+| # | 问题 | 难度 | 频率 |
+|---|------|------|------|
+| 1 | 设计一个企业级 RAG 系统：从数据摄取到高并发在线服务 | ⭐⭐⭐ | 🔴 |
+| 2 | 如何设计 LLM 应用的成本控制策略？(缓存/路由/模型降级) | ⭐⭐⭐ | 🔴 |
+| 3 | 设计一个多租户 LLM 服务平台的架构 | ⭐⭐⭐ | 🟡 |
+| 4 | 如何做 LLM 应用的延迟优化？(Speculative Decoding / 批处理 / PagedAttention) | ⭐⭐⭐ | 🟡 |
+| 5 | 设计一个自动化评测流水线：离线评测 + 在线监控 + 告警 | ⭐⭐⭐ | 🟡 |
+| 6 | 如何做 LLM 应用的灰度发布和 A/B 测试？ | ⭐⭐⭐ | 🟡 |
+| 7 | 向量数据库的选型对比 (Milvus/Qdrant/Chroma/Weaviate) | ⭐⭐ | 🔴 |
+| 8 | 设计一个安全的 LLM 网关：认证、限流、内容审核、审计日志 | ⭐⭐⭐ | 🟡 |
+
+## 编程与实战 (5 题)
+
+| # | 问题 | 难度 | 频率 |
+|---|------|------|------|
+| 1 | 手写一个简单的 Self-Attention 层 (PyTorch) | ⭐⭐ | 🔴 |
+| 2 | 用 HuggingFace Transformers 实现文本分类微调 pipeline | ⭐⭐ | 🔴 |
+| 3 | 实现一个基于 FAISS 的向量检索 + Re-ranker 管道 | ⭐⭐ | 🟡 |
+| 4 | 写一个简单的 Beam Search 解码器 | ⭐⭐⭐ | 🟢 |
+| 5 | 实现 LoRA 注入和训练的完整代码流程 | ⭐⭐ | 🟡 |
+
+---
+
+## Related
+
+- [[21_Interviews/NLP_Engineer/company_level_question_bank|NLP Engineer 按公司/级别区分的题库]]
+- [[21_Interviews/NLP_Engineer/interview_answers|NLP Engineer 面试题实例答案]]
+- [[21_Interviews/NLP_Engineer/interview_preparing|NLP Engineer 面试准备]]
+- [[21_Interviews/README|AI 面试准备 (Interviews)]]
+- [[21_Interviews/jobs|AI 相关岗位与工种清单]]
+---
+title: NLP Engineer 题库
+category: 21-interviews-nlp-engineer
 tags: ["interviews", "career", "experience", "practitioners", "nlp"]
 summary: "解释分词、子词与词表的差异。"
 created: 2026-05-31
-updated: 2026-05-31
----
+updated: 2026-06-04
+tier: supporting
+aliases:
+  - "Question Bank"
+  - "question bank"
+  - question_bank
 
+---
 # NLP Engineer 题库
 
 ## 基础
@@ -30,11 +136,12 @@ updated: 2026-05-31
 - 模型输出不稳定如何定位原因？
 
 ---
-*Last updated: 2026-02-26*
+*Last updated: 2026-06-04*
 
 ## Related
 
-- [[21_Interviews/NLP_Engineer/company_level_question_bank]] — NLP Engineer 按公司/级别区分的题库 (共享: career, experience, interviews, nlp, practitioners)
-- [[21_Interviews/NLP_Engineer/interview_answers]] — NLP Engineer 面试题实例答案 (共享: career, experience, interviews, nlp, practitioners)
-- [[21_Interviews/NLP_Engineer/interview_preparing]] — NLP Engineer 面试准备 (共享: career, experience, interviews, nlp, practitioners)
-- [[21_Interviews/AI_Data_Analyst/company_level_question_bank]] — AI Data Analyst 按公司/级别区分的题库 (共享: career, experience, interviews, practitioners)
+- [[21_Interviews/NLP_Engineer/company_level_question_bank|NLP Engineer 按公司/级别区分的题库]]
+- [[21_Interviews/NLP_Engineer/interview_answers|NLP Engineer 面试题实例答案]]
+- [[21_Interviews/NLP_Engineer/interview_preparing|NLP Engineer 面试准备]]
+- [[21_Interviews/README|AI 面试准备 (Interviews)]]
+- [[21_Interviews/jobs|AI 相关岗位与工种清单]]

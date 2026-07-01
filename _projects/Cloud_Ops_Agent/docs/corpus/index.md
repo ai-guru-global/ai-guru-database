@@ -5,6 +5,7 @@ tags: ["cloud-ops", "devops", "sre", "automation", "ai-agents"]
 summary: "> 🎯 **目标**: 为语料工程师提供运维 Agent 的训练语料设计、Prompt 工程、Fine-tuning 数据集构建、评估数据集维护的完整指南，确保 Agent 的运维决策能力达到行业领先水平。"
 created: 2026-05-31
 updated: 2026-05-31
+tier: core
 ---
 
 # 云产品运维 Agent 语料工程指南 (Corpus Engineering)
@@ -942,3 +943,7 @@ class CorpusLineage:
 - [[18_Cloud_Ops_Agent/docs/architecture/index]] — 云产品运维 Agent 架构设计指南 (Architecture) (共享: ai-agents, automation, cloud-ops, devops, sre)
 - [[18_Cloud_Ops_Agent/docs/development/index]] — 云产品运维 Agent 研发指南 (Development) (共享: ai-agents, automation, cloud-ops, devops, sre)
 - [[18_Cloud_Ops_Agent/docs/templates/test_template.md|test_template]]
+
+## 工单诊断入口
+
+- [[diagnosis-work-order-hub]] — 工单智能体远程诊断知识枢纽（Pod/网络/存储/GPU 四大决策树）

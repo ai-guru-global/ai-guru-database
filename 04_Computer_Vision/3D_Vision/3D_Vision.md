@@ -5,8 +5,13 @@ tags: ["computer-vision", "cnn", "image-processing"]
 summary: '> **一句话秒懂**: 3D 计算机视觉让机器不仅能"看"到平面图像，还能理解物体的深度、形状和三维空间关系。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "3d Vision"
+  - "3D Vision"
+  - 3D_Vision
 
+---
 # 3D 计算机视觉
 
 > **一句话秒懂**: 3D 计算机视觉让机器不仅能"看"到平面图像，还能理解物体的深度、形状和三维空间关系。

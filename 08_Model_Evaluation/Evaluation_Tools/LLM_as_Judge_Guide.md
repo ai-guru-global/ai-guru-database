@@ -10,9 +10,13 @@ sources:
 created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
-tier: core
----
+tier: supporting
+aliases:
+  - "Llm As Judge Guide"
+  - "LLM as Judge Guide"
+  - LLM_as_Judge_Guide
 
+---
 # LLM-as-Judge 评估完全指南
 
 > **一句话理解**: 使用 LLM 评估 LLM 输出质量的方法论,含评分框架、常用工具(Ragas/DeepEval/Promptfoo)、基准测试和最佳实践。
@@ -97,5 +101,5 @@ tier: core
 | AlpacaEval | 指令跟随 | Stanford |
 | Chatbot Arena | 人类偏好排名 | LMSYS |
 
-> **关联**: -> [[08_Model_Evaluation|模型评估]] | [[09_Testing/DeepEval_Deep_Dive|DeepEval]] | [[09_Testing/RAGAS_Deep_Dive|RAGAS]] | [[09_Testing/Promptfoo_Deep_Dive|Promptfoo]]
+> **关联**: -> [[08_Model_Evaluation/README|模型评估]] | [[09_Testing/Testing_Frameworks/DeepEval_Deep_Dive|DeepEval]] | [[09_Testing/RAGAS_Deep_Dive|RAGAS]] | [[09_Testing/Testing_Frameworks/Promptfoo_Deep_Dive|Promptfoo]]
 

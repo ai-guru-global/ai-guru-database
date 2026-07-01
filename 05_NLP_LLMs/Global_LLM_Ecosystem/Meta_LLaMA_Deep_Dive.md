@@ -5,8 +5,13 @@ tags: ["nlp", "llm", "meta", "llama", "moe", "open-source", "multimodal", "chinc
 summary: "> **一句话理解**: LLaMA 是 Meta 开源的 LLM 家族——从 7B Dense 模型到 400B MoE 架构，用 Chinchilla scaling law 和开放权重策略重塑了整个 AI 行业格局。"
 created: "2026-06-02"
 updated: "2026-06-02"
----
+tier: supporting
+aliases:
+  - "Meta Llama Deep Dive"
+  - "Meta LLaMA Deep Dive"
+  - Meta_LLaMA_Deep_Dive
 
+---
 # Meta LLaMA 深度技术解析：从 Dense 到 MoE 的开源 LLM 进化之路
 
 > **一句话理解**: LLaMA 是 Meta 开源的 LLM 家族——就像 Android 之于手机行业，LLaMA 用开放权重策略让全世界都能站在巨人的肩膀上构建 AI 应用，从 7B 小模型一路进化到 10M 上下文的 MoE 巨兽。
@@ -1415,7 +1420,7 @@ KV Cache for 10M tokens 需要巨大内存
 
 ### 11.1 关联文档
 
-- **LLaMA 论文深度解读** → [../../20_Papers/LLaMA_Deep_Dive.md](../../20_Papers/LLaMA_Deep_Dive.md)
+- **LLaMA 论文深度解读** → [../../20_Papers_and_Research/LLaMA_Deep_Dive.md](../../20_Papers_and_Research/Architecture/LLaMA_Deep_Dive.md)
  - LLaMA 1/2/3 论文的核心技术细节、训练方法和实验分析
 
 - **LLM 架构综述** → [../LLM_Architectures/LLM_Architectures.md](../LLM_Architectures/LLM_Architectures.md)

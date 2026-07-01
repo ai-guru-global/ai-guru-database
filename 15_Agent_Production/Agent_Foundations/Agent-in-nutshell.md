@@ -5,8 +5,12 @@ tags: ["reinforcement-learning", "agent", "mdp", "ai-agents"]
 summary: "> 🎯 **目标**：理解 AI 智能体如何工作，以及如何构建能够采取行动的自主 AI 系统。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Agent In Nutshell"
+  - "Agent in nutshell"
 
+---
 # AI 智能体速成指南
 
 > 🎯 **目标**：理解 AI 智能体如何工作，以及如何构建能够采取行动的自主 AI 系统。

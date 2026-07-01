@@ -5,8 +5,13 @@ tags: ["architecture", "infrastructure", "kubernetes", "high-availability"]
 summary: "> **一句话理解**: 2026年的AI基础设施是围绕高效推理、智能路由和成本优化构建的——从硬件芯片革新到软件栈演进，从训练集群到推理服务，每一层都在追求极致的效率和可靠性。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Ai Infrastructure 2026"
+  - "AI Infrastructure 2026"
+  - AI_Infrastructure_2026
 
+---
 # AI Infrastructure 2026 完全指南
 
 > **一句话理解**: 2026 年的 AI 基础设施是围绕高效推理、智能路由和成本优化构建的——从硬件芯片革新到软件栈演进，从训练集群到推理服务，每一层都在追求极致的效率和可靠性。
@@ -28,7 +33,7 @@ updated: 2026-05-31
 11. [行业案例研究](#11-行业案例研究)
 12. [未来趋势](#12-未来趋势)
 
-> **相关文档**: [AI 系统架构全景图](./AI_System_Architecture_2026.md) | [容量规划](./Capacity_Planning_2026.md) | [成本优化](./AI_Cost_Optimization_2026.md) | [边缘 AI](./Edge_AI_2026.md) | [高可用设计](./High_Availability_2026.md)
+> **相关文档**: [AI 系统架构全景图](./AI_System_Architecture_2026.md) | [容量规划](./Capacity_Planning_2026.md) | [成本优化](./AI_Cost_Optimization_2026.md) | [边缘 AI](../Hardware_Compute/Edge_AI_2026.md) | [高可用设计](./High_Availability_2026.md)
 
 ---
 
@@ -203,7 +208,7 @@ nerdctl run --device nvidia.com/gpu=0 vllm/vllm-openai:latest
 
 > 在 K8s 中，CDI 是设备插件（旧）与 DRA 动态资源分配（新，1.32+ beta）**共同脚下的地基**——无论上层用哪种分配机制，最终都翻译成 CDI 设备名交给运行时。
 
-> 详见 [[12_Architecture_Infrastructure/CDI_Deep_Dive|CDI 容器设备接口标准深度解析]]。
+> 详见 [[12_Architecture_Infrastructure/Hardware_Compute/CDI_Deep_Dive|CDI 容器设备接口标准深度解析]]。
 
 ---
 
@@ -968,8 +973,8 @@ Static Fallback
 
 - [[12_Architecture_Infrastructure/Architecture-in-nutshell]] — AI 架构速成指南 (共享: architecture, high-availability, infrastructure, kubernetes)
 - [[12_Architecture_Infrastructure/Architecture_Infrastructure_for_dummy]] — AI 架构基础设施 - 小白版 (共享: architecture, high-availability, infrastructure, kubernetes)
-- [[12_Architecture_Infrastructure/Spring_AI_Architecture]] — Spring AI 系统架构设计 (共享: architecture, high-availability, infrastructure, kubernetes)
-- [[12_Architecture_Infrastructure/Multi_Tenant_Architecture.md|Multi_Tenant_Architecture]]
+- [[12_Architecture_Infrastructure/Architecture_Overview/Spring_AI_Architecture]] — Spring AI 系统架构设计 (共享: architecture, high-availability, infrastructure, kubernetes)
+- [[Multi_Tenant_Architecture|Multi_Tenant_Architecture]]
 - [[12_Architecture_Infrastructure/README_for_dummy.md|README_for_dummy]]
 - [[_synthesis/llm-infrastructure-system-design|LLM 基础设施 × 传统系统架构]] — 从 Web 服务到 Token 工厂
 - [[01_Fundamentals/AI_Hardware/Chinese_AI_Chips_Deep_Dive]] — 国产 AI 芯片12家厂商深度解析 (昇腾/寒武纪/海光/壁仞等)

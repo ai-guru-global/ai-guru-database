@@ -1,7 +1,16 @@
 ---
+
 title: "Agent Harness (智能体驭具)"
 tags: [agent-harness, production-engineering, system-architecture, agent-loop, guardrails]
 created: 2026-06-17
+tier: core
+aliases:
+  - "Agent Harness"
+  - "agent harness"
+category: -concepts
+lifecycle: stable
+
+relationships:
 ---
 
 # Agent Harness (智能体驭具)

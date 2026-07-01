@@ -5,8 +5,12 @@ tags: ["prompt-engineering", "andrew-ng", "openai", "best-practices", "deeplearn
 summary: "> **一句话理解**: 抛开网上繁杂的“咒语大全”，吴恩达与 OpenAI 教员在 DLAI 课程中将 Prompt Engineering 总结为两条最底层的黄金法则：1. 写出清晰明确的指令；2. 给模型思考的时间。"
 created: "2026-06-12"
 updated: "2026-06-12"
----
+tier: supporting
+aliases:
+  - "Prompt Engineering Principles Ng"
+  - Prompt_Engineering_Principles_Ng
 
+---
 # 提示词工程的两大黄金法则 (吴恩达 & OpenAI 联合指南)
 
 > **一句话理解**: 抛开网上繁杂玄学的“咒语大全”，吴恩达 (Andrew Ng) 与 OpenAI 教员 Isa Fulford 在 DLAI 经典课程《ChatGPT Prompt Engineering for Developers》中，将 Prompt Engineering 总结为两条最底层、最实用的黄金法则。
@@ -117,4 +121,4 @@ updated: "2026-06-12"
 ## 相关阅读
 - [[05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering]]
 - [[15_Agent_Production/Agentic_Design_Patterns_AndrewNg]]
-- [[08_Model_Evaluation/LLM_as_Judge_Deep_Dive]]
+- [[08_Model_Evaluation/Evaluation_Tools/LLM_as_Judge_Deep_Dive]]

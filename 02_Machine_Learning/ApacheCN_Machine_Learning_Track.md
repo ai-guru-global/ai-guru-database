@@ -14,8 +14,12 @@ provenance: |
 base_confidence: "high"
 lifecycle: "draft"
 tier: "supporting"
----
+aliases:
+  - "Apachecn Machine Learning Track"
+  - "ApacheCN Machine Learning Track"
+  - ApacheCN_Machine_Learning_Track
 
+---
 # ApacheCN 机器学习（机器学习实战）主线
 
 > `docs/ml/` 基于《Machine Learning in Action》（《机器学习实战》），共 **16 章** 笔记与配套代码，用 Python 2.7/3.6 实现经典算法，覆盖分类、回归、聚类、频繁项集、降维与推荐系统。

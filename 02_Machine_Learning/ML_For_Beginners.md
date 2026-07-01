@@ -3,8 +3,13 @@ title: "机器学习入门：四大范式与归纳法的本质"
 tags: [machine-learning, supervised-learning, unsupervised-learning, reinforcement-learning, self-supervised-learning, beginner, rlhf]
 source: yeasy/ai_beginner_guide
 created: 2026-06-19
----
+tier: peripheral
+aliases:
+  - "Ml For Beginners"
+  - "ML For Beginners"
+  - ML_For_Beginners
 
+---
 # 机器学习入门：四大范式与归纳法的本质
 
 > **一句话理解**: 机器学习本质上是一种"归纳法"——所有的智慧都来自"过去"（历史数据），它假设未来会重复过去；根据"有没有老师教"，分化出监督、无监督、强化、自监督四大范式，其中自监督学习是 GPT 等大模型的预训练秘诀。

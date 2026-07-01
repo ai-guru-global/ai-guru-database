@@ -18,8 +18,11 @@ lifecycle: draft
 tier: core
 created: 2026-06-15
 updated: 2026-06-15
----
+aliases:
+  - "Grouped Query Attention"
+  - "grouped query attention"
 
+---
 # Grouped-Query Attention (GQA)
 
 ## 大白话

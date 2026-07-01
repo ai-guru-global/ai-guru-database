@@ -5,8 +5,12 @@ tags: ["ai-coding", "code-generation", "cursor", "github-copilot"]
 summary: "> **一句话**: Manus 是通用型 AI Agent 平台，Pro 订阅每月 12,000 积分，适合独立任务交付（如 FOMO 项目）。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Manus Guide"
+  - Manus_Guide
 
+---
 # Manus 使用指南
 
 > **一句话**: Manus 是通用型 AI Agent 平台，Pro 订阅每月 12,000 积分，适合独立任务交付（如 FOMO 项目）。

@@ -8,8 +8,13 @@ updated: "2026-06-12"
 source_url: "https://raw.githubusercontent.com/microsoft/generative-ai-for-beginners/main/translations/zh-CN/13-securing-ai-applications/README.md"
 course: "Microsoft Generative AI for Beginners"
 lesson_number: 13
----
+tier: supporting
+aliases:
+  - "Genai L13 Securing Ai Applications"
+  - "GenAI L13 Securing AI Applications"
+  - GenAI_L13_Securing_AI_Applications
 
+---
 ## 学习目标
 
 完成本课后，你将了解：

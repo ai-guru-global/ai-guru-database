@@ -5,8 +5,13 @@ tags: ["ai-coding", "code-generation", "cursor", "github-copilot"]
 summary: '> **一句话秒懂**: AI 编程就像手机输入法的"自动补全"进化成了超级版——你写一句话，它帮你写完整个程序。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Ai Coding For Dummy"
+  - "AI Coding for dummy"
+  - AI_Coding_for_dummy
 
+---
 # AI 编程 - 小白版
 
 > **一句话秒懂**: AI 编程就像手机输入法的"自动补全"进化成了超级版——你写一句话，它帮你写完整个程序。

@@ -5,8 +5,12 @@ tags: ["ai-agents", "governance", "enterprise", "security", "billing", "rbac", "
 summary: "> **一句话理解**: 企业智能体治理是确保公司内部成千上万个 AI Agent 在合规、安全、且成本可控的前提下运行的“交通指挥系统”。"
 created: 2026-06-04
 updated: 2026-06-04
----
+tier: supporting
+aliases:
+  - "Enterprise Agent Governance 2026"
+  - Enterprise_Agent_Governance_2026
 
+---
 # Enterprise Agent Governance 2026: Managing Thousands of Agents
 
 > **一句话理解**: 企业智能体治理是确保公司内部成千上万个 AI Agent 在合规、安全、且成本可控的前提下运行的“交通指挥系统”。
@@ -112,7 +116,7 @@ graph TD
 
 ## Related
 
-- [[14_AI_Gateway/AI_Gateway_2026]] — 治理逻辑的物理落地层
+- [[12_Architecture_Infrastructure/AI_Gateway/AI_Gateway_2026]] — 治理逻辑的物理落地层
 - [[15_Agent_Production/Enterprise_Agent/Agent_Production_2026]] — 生产级部署
 - [[17_Ethics_Safety/AI_Regulatory_Engineering_2026]] — 外部法律与内部治理的对接
 - [[11_MLOps_Pipeline/MLOps_Maturity_Model]] — 治理成熟度评估
@@ -120,3 +124,5 @@ graph TD
 ---
 
 *Last updated: 2026-06-04*
+
+- [[15_Agent_Production/README|Agent 生产部署 (Agent Production)]]

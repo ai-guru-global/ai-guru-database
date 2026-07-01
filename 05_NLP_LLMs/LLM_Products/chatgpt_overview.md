@@ -9,8 +9,12 @@ created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
 tier: supporting
----
+aliases:
+  - "Chatgpt Overview"
+  - "chatgpt overview"
+  - chatgpt_overview
 
+---
 # ChatGPT 概览
 
 > **一句话理解**: 全球用户量最大的 AI 对话产品,支持文本、图像、代码、搜索等多模态能力。

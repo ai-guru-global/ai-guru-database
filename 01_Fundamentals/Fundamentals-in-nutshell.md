@@ -5,8 +5,12 @@ tags: ["fundamentals", "math", "algorithms", "basics"]
 summary: "> **一句话理解**: AI 大厦的地基——数学、算法、硬件和工具链共同构成了让人工智能从理论变为现实的工程基础。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Fundamentals In Nutshell"
+  - "Fundamentals in nutshell"
 
+---
 # AI 基础速成指南
 
 > **一句话理解**: AI 大厦的地基——数学、算法、硬件和工具链共同构成了让人工智能从理论变为现实的工程基础。

@@ -5,8 +5,12 @@ tags: [inference, long-context, kv-cache, 128k, 1m, performance]
 summary: "> 128K 以上长上下文推理，KV Cache 显存超过模型参数，需要系统级的压缩、缓存与架构优化。"
 created: 2026-06-15
 updated: 2026-06-15
----
+tier: supporting
+aliases:
+  - "Long Context Inference 2026"
+  - Long_Context_Inference_2026
 
+---
 # 长上下文推理 2026
 
 > 上下文从 4K 拉到 1M，最大的变化不是模型能看多少字，而是 KV Cache 把显存吃光了。
@@ -125,3 +129,5 @@ KV Cache ≈ seq_len × n_layers × 2(K+V) × d_model × bytes
 - [[10_Deployment_Inference/Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]]
 - [[10_Deployment_Inference/Inference_Performance/Prefill_Decode_Disaggregation|Prefill-Decode 分离]]
 - [[10_Deployment_Inference/Caching/KV_Cache_Deep_Dive|KV Cache Deep Dive]]
+
+- [[10_Deployment_Inference/README|模型部署与推理]]

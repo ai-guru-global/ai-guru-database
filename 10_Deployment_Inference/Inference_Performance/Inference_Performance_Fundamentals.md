@@ -5,8 +5,12 @@ tags: [inference, performance, latency, throughput, roofline, benchmarking]
 summary: "> LLM 推理性能的核心指标、瓶颈分析框架与优化技术分类。"
 created: 2026-06-15
 updated: 2026-06-15
----
+tier: supporting
+aliases:
+  - "Inference Performance Fundamentals"
+  - Inference_Performance_Fundamentals
 
+---
 # 推理性能基础
 
 > 延迟花在哪里、吞吐上不去的根因是什么、优化手段又该从哪里下手。

@@ -5,8 +5,12 @@ tags: ["fundamentals", "math", "algorithms", "basics"]
 summary: '> **一句话理解**: 线性代数是 AI 的"空间变换工具箱" —— 数据是向量，模型是矩阵，训练就是找到最佳的空间变换方式。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Linear Algebra"
+  - Linear_Algebra
 
+---
 # 线性代数 (Linear Algebra)
 
 > **一句话理解**: 线性代数是 AI 的"空间变换工具箱" —— 数据是向量，模型是矩阵，训练就是找到最佳的空间变换方式。

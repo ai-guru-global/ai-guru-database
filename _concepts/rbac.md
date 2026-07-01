@@ -19,8 +19,10 @@ lifecycle: stable
 tier: core
 created: 2026-06-04
 updated: 2026-06-04
----
+aliases:
+  - Rbac
 
+---
 # RBAC 基于角色的访问控制 (Role-Based Access Control)
 
 > 不给任何人多余的权限——安全架构的基石。

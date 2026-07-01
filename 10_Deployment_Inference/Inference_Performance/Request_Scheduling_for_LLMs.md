@@ -5,8 +5,13 @@ tags: [inference, scheduling, continuous-batching, preemption, priority, perform
 summary: "> 请求调度决定谁先算、怎么拼 batch、被抢占了怎么办，是高并发推理服务的核心控制面。"
 created: 2026-06-15
 updated: 2026-06-15
----
+tier: supporting
+aliases:
+  - "Request Scheduling For Llms"
+  - "Request Scheduling for LLMs"
+  - Request_Scheduling_for_LLMs
 
+---
 # LLM 推理请求调度
 
 > 同样的 GPU 硬件，不同的调度策略能让吞吐差几倍，也能让 P99 延迟从 500ms 变 2s。

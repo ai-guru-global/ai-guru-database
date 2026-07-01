@@ -8,8 +8,13 @@ updated: "2026-06-12"
 source_url: "https://raw.githubusercontent.com/microsoft/generative-ai-for-beginners/main/translations/zh-CN/17-ai-agents/README.md"
 course: "Microsoft Generative AI for Beginners"
 lesson_number: 17
----
+tier: supporting
+aliases:
+  - "Genai L17 Ai Agents"
+  - "GenAI L17 AI Agents"
+  - GenAI_L17_AI_Agents
 
+---
 ## 学习目标
 
 完成本课后，你将能够：

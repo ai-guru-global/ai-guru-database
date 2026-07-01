@@ -6,8 +6,13 @@ summary: "从‘什么是智能’出发，区分弱 AI 与强 AI、符号推理
 source_url: "https://raw.githubusercontent.com/microsoft/AI-For-Beginners/main/lessons/1-Intro/README.md"
 created: "2026-06-12"
 updated: "2026-06-12"
----
+tier: supporting
+aliases:
+  - "L01 Introduction And History Of Ai"
+  - "L01 Introduction and History of AI"
+  - L01_Introduction_and_History_of_AI
 
+---
 # L01 - 人工智能介绍与历史
 
 > **一句话理解**: 人工智能研究的是如何让计算机表现出需要“智能”才能完成、但我们又难以用明确步骤描述的任务能力。

@@ -6,8 +6,12 @@ summary: "基于循环神经网络（RNN）学习字符级语言模型，并用�
 source_url: "https://raw.githubusercontent.com/microsoft/AI-For-Beginners/main/lessons/5-NLP/17-GenerativeNetworks/README.md"
 created: "2026-06-12"
 updated: "2026-06-12"
----
+tier: supporting
+aliases:
+  - "L17 Generative Recurrent Networks"
+  - L17_Generative_Recurrent_Networks
 
+---
 # L17 - 生成循环网络
 
 > **一句话理解**：把 RNN 从"读一句话给标签"改造成"读一段字符预测下一个字符"，就能让它学会写字、续写句子，甚至生成一整段文本。

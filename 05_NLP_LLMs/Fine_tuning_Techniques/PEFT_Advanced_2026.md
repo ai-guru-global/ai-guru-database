@@ -5,8 +5,13 @@ tags: ["peft", "lora", "dora", "pissa", "fine-tuning", "huggingface"]
 summary: "> **一句话理解**: 标准 LoRA 已经足够优秀，但 DoRA 和 PiSSA 等 2025/2026 年爆发的微调新星通过改进权重初始化和方向/幅度解耦，在同等参数量下逼近了全量微调（FFT）的极限能力。"
 created: "2026-06-12"
 updated: "2026-06-12"
----
+tier: supporting
+aliases:
+  - "Peft Advanced 2026"
+  - "PEFT Advanced 2026"
+  - PEFT_Advanced_2026
 
+---
 # PEFT 2026 高阶指南：从 LoRA 到 DoRA 与 PiSSA
 
 > **一句话理解**: 毫无疑问，LoRA (Low-Rank Adaptation) 是大模型微调时代的基石。但在 2025-2026 年，Hugging Face 的 `peft` 库集成了多项突破性变体——**DoRA** (解耦权重与方向) 与 **PiSSA** (主成分切分)。它们在不增加推理成本的前提下，将参数高效微调的性能推向了全量微调（FFT）的极限。

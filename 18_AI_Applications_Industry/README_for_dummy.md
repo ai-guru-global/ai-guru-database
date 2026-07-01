@@ -5,8 +5,13 @@ tags: ["ai-applications", "industry", "finance", "healthcare"]
 summary: "> **一句话秒懂**: 这一章告诉你 AI 在各行各业是怎么赚钱的——不只是科技公司用 AI，医院、金融、工厂、农场都在用 AI 变革，而且比你想象的更快！"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Readme For Dummy"
+  - "README for dummy"
+  - README_for_dummy
 
+---
 # AI 行业应用 — 小白版 🏭
 
 > **一句话秒懂**: 这一章告诉你 AI 在各行各业是怎么赚钱的——不只是科技公司用 AI，医院、金融、工厂、农场都在用 AI 变革，而且比你想象的更快！

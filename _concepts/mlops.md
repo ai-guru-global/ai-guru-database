@@ -27,8 +27,10 @@ lifecycle_changed: 2026-05-31
 tier: supporting
 created: 2026-05-31T00:00:00Z
 updated: 2026-05-31T00:00:00Z
----
+aliases:
+  - Mlops
 
+---
 # MLOps 流水线
 
 ## 核心要点
@@ -105,3 +107,4 @@ LLMOps面临新挑战：评估从固定指标转向LLM-as-Judge，版本管理�
 
 - [[11_MLOps_Pipeline/Orchestration/Data_Pipeline_Orchestration]] — 数据流水线编排 (Data Pipeline Orchestration) (共享: ci-cd, feature-store, mlops)
 - [[11_MLOps_Pipeline/MLOps-in-nutshell]] — MLOps 速成指南 (共享: ci-cd, feature-store, mlops)
+- [[_concepts/automl]] — 自动机器学习

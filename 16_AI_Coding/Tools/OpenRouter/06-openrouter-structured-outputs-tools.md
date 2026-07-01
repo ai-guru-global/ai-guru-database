@@ -6,7 +6,13 @@ tags:
 - ai-coding
 created: 2026-06-12
 category: 16-ai-coding-tools-openrouter
-summary: ""
+tier: peripheral
+aliases:
+  - "Openrouter Structured Outputs Tools"
+  - "openrouter structured outputs tools"
+
+updated: 2026-06-30
+summary: "Structured Outputs 与 Tool Calling — 专题文档"
 ---
 title: Structured Outputs 与 Tool Calling
 description: '**文档类型**: 功能详解 | **最后更新**: 2026-03 | **关键词**: OpenRouter, Structured

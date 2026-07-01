@@ -5,8 +5,12 @@ tags: ["model-evaluation", "metrics", "ab-testing", "benchmark"]
 summary: '> **一句话理解**: 在线评估就像"实战演习"——再完美的模拟考也无法替代真实战场，只有让模型真正面对用户、在真实流量中检验，才能知道它到底行不行。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Online Evaluation"
+  - Online_Evaluation
 
+---
 # 在线评估 (Online Evaluation)
 
 > **一句话理解**: 在线评估就像"实战演习"——再完美的模拟考也无法替代真实战场，只有让模型真正面对用户、在真实流量中检验，才能知道它到底行不行。
@@ -1289,14 +1293,14 @@ if __name__ == "__main__":
 ## 9. 与其他主题的关联 (Connections)
 
 ### 前置知识
-- [模型训练](../07_Model_Training/Model-Training-in-nutshell.md) — 训练过程中的验证集评估
-- [模型评估基础](./Model_Evaluation.md) — 离线评估指标与方法
-- [自动化评估](./Evaluation_Automation_2026.md) — CI/CD 中的自动化评估流程
+- [模型训练](../../07_Model_Training/Model-Training-in-nutshell.md) — 训练过程中的验证集评估
+- [模型评估基础](../Model_Evaluation.md) — 离线评估指标与方法
+- [自动化评估](../Evaluation_Automation_2026.md) — CI/CD 中的自动化评估流程
 
 ### 进阶方向
-- [MLOps 流水线](../11_MLOps_Pipeline/MLOps_Pipeline.md) — 模型发布与 CI/CD 集成
-- [AI 测试框架](../09_Testing/README.md) — 线上测试与质量保证
-- [AI Ops 监控](../13_AI_Ops/AI_Ops_2026.md) — 生产环境模型性能监控与告警
+- [MLOps 流水线](../../11_MLOps_Pipeline/MLOps_Pipeline.md) — 模型发布与 CI/CD 集成
+- [AI 测试框架](../../09_Testing/README.md) — 线上测试与质量保证
+- [AI Ops 监控](../../13_AI_Ops/AI_Ops_2026.md) — 生产环境模型性能监控与告警
 
 ---
 

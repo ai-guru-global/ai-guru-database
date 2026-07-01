@@ -5,8 +5,13 @@ tags: ["ai", "ethics", "society", "responsible-ai"]
 summary: "AI不仅是技术问题，更是社会问题——算法偏见可能加剧不平等，自动化可能重塑就业，隐私风险可能威胁自由，我们需要在技术进步与社会价值之间寻找平衡。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Ai Ethics Society"
+  - "AI Ethics Society"
+  - AI_Ethics_Society
 
+---
 # AI 伦理与社会影响
 
 > **一句话理解**: AI 不仅是技术问题，更是社会问题——算法偏见可能加剧不平等，自动化可能重塑就业，隐私风险可能威胁自由，我们需要在技术进步与社会价值之间寻找平衡。

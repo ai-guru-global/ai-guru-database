@@ -5,8 +5,13 @@ tags: ["deep-learning", "neural-network", "backpropagation", "activation-functio
 summary: "> **一句话理解**: 深度学习是多层神经网络的堆叠艺术——从感知机到 MLP、CNN、RNN 再到 Transformer，每一代架构都在逼近人脑的层次化特征提取能力，而反向传播 + 梯度下降是让这一切运转的引擎。"
 created: 2026-06-12
 updated: 2026-06-12
----
+tier: supporting
+aliases:
+  - "Dl Fundamentals"
+  - "DL Fundamentals"
+  - DL_Fundamentals
 
+---
 # 深度学习基础 (Deep Learning Fundamentals)
 
 > **一句话理解**: 深度学习是多层神经网络的堆叠艺术——从感知机到 MLP、CNN、RNN 再到 Transformer，每一代架构都在逼近人脑的层次化特征提取能力，而反向传播 + 梯度下降是让这一切运转的引擎。

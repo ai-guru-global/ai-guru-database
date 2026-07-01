@@ -10,8 +10,13 @@ sources:
 created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
----
+tier: supporting
+aliases:
+  - "Youtube Channel"
+  - "youtube channel"
+  - youtube_channel
 
+---
 # StatQuest Josh Starmer YouTube 频道
 
 > **一句话理解**: StatQuest 频道用简单直觉的方式讲解统计学和机器学习,Josh Starmer 的可视化教学让复杂数学变得易懂。
@@ -41,5 +46,5 @@ lifecycle: reviewed
 
 1. 统计学基础 -> 2. 机器学习 -> 3. 深度学习
 
-> **关联**: -> [[01_Fundamentals|数学基础]] | [[02_Machine_Learning|机器学习]] | [[03_Deep_Learning|深度学习]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[01_Fundamentals/README|数学基础]] | [[02_Machine_Learning/README|机器学习]] | [[03_Deep_Learning/README|深度学习]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
 

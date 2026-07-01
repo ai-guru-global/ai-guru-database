@@ -5,8 +5,13 @@ tags: ["ai-applications", "industry", "finance", "healthcare"]
 summary: '> **一句话理解**: 2026年金融AI已进入"Agentic时代"——AI不仅做风控和分析，还能自主执行交易策略、合规审查和客户服务全流程，88%的金融机构报告AI显著提升了年收入。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Ai Finance 2026"
+  - "AI Finance 2026"
+  - AI_Finance_2026
 
+---
 # AI 金融服务行业应用 (2025-2026)
 
 > **一句话理解**: 2026 年金融 AI 已进入"Agentic 时代"——AI 不仅做风控和分析，还能自主执行交易策略、合规审查和客户服务全流程，88% 的金融机构报告 AI 显著提升了年收入。

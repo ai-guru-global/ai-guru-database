@@ -5,8 +5,13 @@ tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> **一句话理解**: SmolAgents 是 Hugging Face 推出的轻量级 Agent 框架——用最少的代码实现 Tool Calling 和自主决策，让构建 Agent 变得简单高效。"
 created: "2026-05-31"
 updated: "2026-05-31"
----
+tier: supporting
+aliases:
+  - "Smolagents Deep Dive"
+  - "SmolAgents Deep Dive"
+  - SmolAgents_Deep_Dive
 
+---
 # SmolAgents: 轻量级 Agent 框架
 
 > **一句话理解**: SmolAgents 是 Hugging Face 推出的轻量级 Agent 框架——用最少的代码实现 Tool Calling 和自主决策，让构建 Agent 变得简单高效。

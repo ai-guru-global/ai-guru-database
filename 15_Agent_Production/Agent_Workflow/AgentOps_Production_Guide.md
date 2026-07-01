@@ -6,8 +6,13 @@ summary: "从框架生态选型到 AgentOps 设计模式、Harness 架构、可�
 created: 2026-06-16
 updated: 2026-06-16
 source: "_sources/yeasy/agentic_ai_guide/ (Ch8-10)"
----
+tier: supporting
+aliases:
+  - "Agentops Production Guide"
+  - "AgentOps Production Guide"
+  - AgentOps_Production_Guide
 
+---
 # 智能体 AI 权威指南 Part 3: AgentOps 与生产化落地
 
 > Source: 智能体 AI 权威指南 (yeasy) Part 3, Ch8-10

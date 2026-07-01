@@ -5,8 +5,13 @@ tags: ["mathematics", "reference", "formulas", "cheat-sheet"]
 summary: "> **速查手册**: AI 核心数学公式与一行应用场景——矩阵微积分、梯度法则、概率分布、信息论公式、优化方法，查阅即用。"
 created: 2026-06-12
 updated: 2026-06-12
----
+tier: supporting
+aliases:
+  - "Mathematics For Ai"
+  - "Mathematics for AI"
+  - Mathematics_for_AI
 
+---
 # AI 数学手册 (Mathematics for AI Reference)
 
 > **速查手册**: 本文是公式级参考，每个公式配一行 AI 应用说明。需要系统学习请移步 [[01_Fundamentals/Math_Foundations]]。

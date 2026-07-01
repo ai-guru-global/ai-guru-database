@@ -5,8 +5,13 @@ tags: ["ai-ethics", "safety", "alignment", "red-teaming"]
 summary: '> **一句话理解**: AI 供应链安全就像检查"AI 食物的来源"——确保训练数据、模型文件和依赖库没有被坏人投毒或篡改。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Ai Supply Chain Security For Dummy"
+  - "AI Supply Chain Security for dummy"
+  - AI_Supply_Chain_Security_for_dummy
 
+---
 # AI 供应链安全小白指南 (AI Supply Chain Security for Dummy)
 
 > **一句话理解**: AI 供应链安全就像检查"AI 食物的来源"——确保训练数据、模型文件和依赖库没有被坏人投毒或篡改。

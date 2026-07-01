@@ -5,8 +5,13 @@ tags: ["mlops", "monitoring", "data-drift", "concept-drift", "observability", "p
 summary: "> **一句话理解**: 模型监控是 AI 生产系统的“哨兵”——不仅要确保系统在运行，更要确保模型没有因为数据分布的变化而产生“幻觉”或性能退化。"
 created: 2026-06-04
 updated: 2026-06-04
----
+tier: supporting
+aliases:
+  - "Model Monitoring And Drift Detection 2026"
+  - "Model Monitoring and Drift Detection 2026"
+  - Model_Monitoring_and_Drift_Detection_2026
 
+---
 # Model Monitoring and Drift Detection 2026
 
 > **一句话理解**: 模型监控是 AI 生产系统的“哨兵”——不仅要确保系统在运行，更要确保模型没有因为数据分布的变化而产生“幻觉”或性能退化。
@@ -265,9 +270,9 @@ writer.write(file=profile.view())
 
 ### 项目内导航
 
-- [MLOps Pipeline](./MLOps_Pipeline.md) — MLOps 整体架构与成熟度模型
-- [AI Observability Guide](AI_Observability_Guide.md) — 基础设施与推理层面的实时监控
-- [Model Evaluation](../08_Model_Evaluation/Model_Evaluation.md) — 静态评估与基准测试方法
+- [MLOps Pipeline](11_MLOps_Pipeline/MLOps_Pipeline.md) — MLOps 整体架构与成熟度模型
+- [AI Observability Guide](11_MLOps_Pipeline/Observability/AI_Observability_Guide.md) — 基础设施与推理层面的实时监控
+- [Model Evaluation](08_Model_Evaluation/Model_Evaluation.md) — 静态评估与基准测试方法
 - [LLMOps 2026 Best Practices](./LLMOps_2026_Best_Practices.md) — 生成式 AI 专属运维实践
 
 ### 关键工具链

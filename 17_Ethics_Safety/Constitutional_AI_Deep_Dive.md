@@ -5,8 +5,13 @@ tags: ["constitutional-ai", "alignment", "anthropic", "rlaif", "safety", "ai-fee
 summary: "Constitutional AI 是 Anthropic 提出的对齐方法论——用一组明确的'宪法原则'取代大量人工标注，让 AI 自我批评、自我修正、自我训练，实现可扩展的 harmlessness 对齐。"
 created: 2026-06-15
 updated: 2026-06-15
----
+tier: supporting
+aliases:
+  - "Constitutional Ai Deep Dive"
+  - "Constitutional AI Deep Dive"
+  - Constitutional_AI_Deep_Dive
 
+---
 # Constitutional AI (CAI) 深度解读：Anthropic 的宪法式对齐方法
 
 > **一句话理解**: CAI 就像给 AI 一本"宪法"——不靠大量人类标注员手把手教什么是对错，而是让 AI 按照明确的原则自我批评、自我修正，再用 AI 自己的判断来训练自己，实现可扩展的安全对齐。
@@ -17,7 +22,7 @@ updated: 2026-06-15
 
 ### 1.1 起源与动机：RLHF 的天花板
 
-Constitutional AI (CAI) 由 Anthropic 于 2022 年提出，核心论文为 Bai et al. 的 *"Constitutional AI: Harmlessness from AI Feedback"*。要理解 CAI 的价值，必须先看 [[20_Papers/Alignment/RLHF_DPO_Deep_Dive|RLHF]] 的固有缺陷：
+Constitutional AI (CAI) 由 Anthropic 于 2022 年提出，核心论文为 Bai et al. 的 *"Constitutional AI: Harmlessness from AI Feedback"*。要理解 CAI 的价值，必须先看 [[20_Papers_and_Research/Alignment/RLHF_DPO_Deep_Dive|RLHF]] 的固有缺陷：
 
 | RLHF 痛点 | 具体问题 | CAI 的回应 |
 |-----------|---------|-----------|
@@ -250,7 +255,7 @@ flowchart LR
 | **典型应用** | InstructGPT, ChatGPT | Claude 系列 | 开源社区广泛使用 | DeepSeek 系列 |
 | **首次提出** | 2022 (OpenAI) | 2022 (Anthropic) | 2023 (Stanford) | 2024 (DeepSeek) |
 
-> **详细对比参考**：[[20_Papers/Alignment/RLHF_DPO_Deep_Dive|RLHF 与 DPO 深度解读]]、[[20_Papers/Alignment/DPO_Deep_Dive|DPO 深度解读]]、[[07_Model_Training/Alignment/GRPO_and_New_Alignment_Methods|GRPO 与新对齐方法]]
+> **详细对比参考**：[[20_Papers_and_Research/Alignment/RLHF_DPO_Deep_Dive|RLHF 与 DPO 深度解读]]、[[20_Papers_and_Research/Alignment/DPO_Deep_Dive|DPO 深度解读]]、[[07_Model_Training/Alignment/GRPO_and_New_Alignment_Methods|GRPO 与新对齐方法]]
 
 ---
 
@@ -479,7 +484,7 @@ flowchart LR
 - 相比 RLHF，CAI 在透明度、可扩展性、标注者心理健康方面有显著优势
 - 局限性包括原则偏见、模型能力依赖、"对齐税"等
 
-> **延伸阅读**：[[05_NLP_LLMs/Global_LLM_Ecosystem/Anthropic_Claude_Deep_Dive|Anthropic Claude 深度解读]]、[[20_Papers/Alignment/RLHF_DPO_Deep_Dive|RLHF 与 DPO 深度解读]]、[[07_Model_Training/Alignment/GRPO_and_New_Alignment_Methods|GRPO 与新对齐方法]]
+> **延伸阅读**：[[05_NLP_LLMs/Global_LLM_Ecosystem/Anthropic_Claude_Deep_Dive|Anthropic Claude 深度解读]]、[[20_Papers_and_Research/Alignment/RLHF_DPO_Deep_Dive|RLHF 与 DPO 深度解读]]、[[07_Model_Training/Alignment/GRPO_and_New_Alignment_Methods|GRPO 与新对齐方法]]
 
 ---
 

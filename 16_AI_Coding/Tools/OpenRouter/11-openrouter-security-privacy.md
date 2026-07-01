@@ -7,7 +7,13 @@ tags:
 - security
 created: 2026-06-12
 category: 16-ai-coding-tools-openrouter
-summary: ""
+tier: peripheral
+aliases:
+  - "Openrouter Security Privacy"
+  - "openrouter security privacy"
+
+updated: 2026-06-30
+summary: "安全、隐私与数据治理 — 专题文档"
 ---
 title: 安全、隐私与数据治理
 description: '# 安全、隐私与数据治理'

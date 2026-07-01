@@ -9,8 +9,18 @@ created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
 tier: core
+aliases:
+  - "Long Context Vs Rag"
+  - "long context vs rag"
+provenance:
+  extracted: 0.70
+  inferred: 0.25
+  ambiguous: 0.05
+base_confidence: 0.78
+relationships:
+  - target: "_concepts/rag-systems"
+    type: related_to
 ---
-
 # 长上下文 vs RAG: 技术选型指南
 
 > **一句话理解**: 当 LLM 支持 100K+ token 上下文窗口时,RAG 还有必要吗?本文对比两种方案的优劣,提供技术选型决策框架。
@@ -78,5 +88,5 @@ tier: core
 | RAG vs Long Context | RAG 在精确信息检索任务上始终优于长上下文 |
 | RAPTOR | 递归摘要 + 检索 = 最佳分层方案 |
 
-> **关联**: -> [[14_RAG_Systems|RAG 系统]] | [[05_NLP_LLMs|NLP/LLM]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[14_RAG_Systems/README|RAG 系统]] | [[05_NLP_LLMs/README|NLP/LLM]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
 

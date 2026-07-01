@@ -23,8 +23,11 @@ lifecycle_changed: 2026-06-23
 tier: core
 created: 2026-06-23
 updated: 2026-06-23
----
+aliases:
+  - "Rag Patterns"
+  - "rag patterns"
 
+---
 # RAG 模式分类（RAG Patterns）
 
 ## 核心要点

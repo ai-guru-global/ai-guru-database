@@ -5,8 +5,13 @@ tags: ["pruning", "distillation", "compression", "wanda", "sparsegpt", "knowledg
 summary: "> **一句话理解**: Pruning 是给模型\"减肥\"——把多余的脑细胞去掉；蒸馏是给模型\"请家教\"——让大模型教小模型做题。两者结合就能得到一个又小又聪明的模型。"
 created: 2026-06-04
 updated: 2026-06-04
----
+tier: supporting
+aliases:
+  - "Pruning And Knowledge Distillation"
+  - "Pruning and Knowledge Distillation"
+  - Pruning_and_Knowledge_Distillation
 
+---
 # Pruning 与知识蒸馏：LLM 压缩实战 (Pruning and Knowledge Distillation for LLMs)
 
 > **一句话理解**: Pruning 是给模型"减肥"——把多余的脑细胞去掉；蒸馏是给模型"请家教"——让大模型教小模型做题。两者结合就能得到一个又小又聪明的模型。
@@ -366,7 +371,7 @@ def enforce_2_4_sparsity(weight: torch.Tensor) -> torch.Tensor:
 # 工具链: NVIDIA ASP (自动 2:4 训练)、TensorRT (稀疏推理加速)、NeMo
 ```
 
-> **2:4 的关键价值**: 与纯非结构化剪枝不同，2:4 稀疏在 NVIDIA GPU 上有 **原生硬件加速**，无需特殊稀疏计算库，可直接获得约 2x 的计算加速。参见 [Quantization Techniques 2026](../10_Deployment_Inference/Quantization_Techniques_2026.md) 中关于稀疏+量化联合优化的讨论。
+> **2:4 的关键价值**: 与纯非结构化剪枝不同，2:4 稀疏在 NVIDIA GPU 上有 **原生硬件加速**，无需特殊稀疏计算库，可直接获得约 2x 的计算加速。参见 [Quantization Techniques 2026](10_Deployment_Inference/Quantization/Quantization_Techniques_2026.md) 中关于稀疏+量化联合优化的讨论。
 
 ---
 
@@ -992,7 +997,7 @@ flowchart LR
   70B → 蒸馏 14B (28GB) → 剪枝 20% (~22GB) → INT4 (~5.5GB)  |  25x | 15-25x 加速
 ```
 
-> **与 PEFT 的关系**: 蒸馏后的 Student 模型通常还需要进一步微调。PEFT 技术（如 LoRA）可以在蒸馏后以低成本适配下游任务，详见 [PEFT 2026](../05_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/PEFT_2026.md)。
+> **与 PEFT 的关系**: 蒸馏后的 Student 模型通常还需要进一步微调。PEFT 技术（如 LoRA）可以在蒸馏后以低成本适配下游任务，详见 [PEFT 2026](05_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026.md)。
 
 ---
 
@@ -1157,11 +1162,11 @@ flowchart LR
 
 ### 项目内关联文档
 
-- [**量化技术深度解析 2026**](../10_Deployment_Inference/Quantization_Techniques_2026.md) — 量化的完整方法论，与本文的剪枝+量化组合策略直接互补
-- [**PEFT 2026 参数高效微调**](../05_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/PEFT_2026.md) — 蒸馏后 Student 的低成本微调方法（LoRA、DoRA 等）
-- [**Meta LLaMA 深度解析**](../05_NLP_LLMs/Global_LLM_Ecosystem/Meta_LLaMA_Deep_Dive.md) — LLaMA 4 Behemoth→Scout/Maverick 蒸馏架构的详细分析
-- [**分布式训练 2026**](./Distributed_Training_2026.md) — 蒸馏训练中的大规模数据并行和 Teacher 推理并行
-- [**GRPO 与对齐方法**](./GRPO_and_New_Alignment_Methods.md) — 蒸馏后的对齐阶段（DPO/GRPO）方法详解
+- [**量化技术深度解析 2026**](10_Deployment_Inference/Quantization/Quantization_Techniques_2026.md) — 量化的完整方法论，与本文的剪枝+量化组合策略直接互补
+- [**PEFT 2026 参数高效微调**](05_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026.md) — 蒸馏后 Student 的低成本微调方法（LoRA、DoRA 等）
+- [**Meta LLaMA 深度解析**](05_NLP_LLMs/Global_LLM_Ecosystem/Meta_LLaMA_Deep_Dive.md) — LLaMA 4 Behemoth→Scout/Maverick 蒸馏架构的详细分析
+- [**分布式训练 2026**](07_Model_Training/Distributed_Training/Distributed_Training_2026.md) — 蒸馏训练中的大规模数据并行和 Teacher 推理并行
+- [**GRPO 与对齐方法**](07_Model_Training/Alignment/GRPO_and_New_Alignment_Methods.md) — 蒸馏后的对齐阶段（DPO/GRPO）方法详解
 
 ### 关键论文
 

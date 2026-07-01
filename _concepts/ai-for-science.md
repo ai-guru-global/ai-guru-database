@@ -21,8 +21,11 @@ lifecycle: stable
 tier: core
 created: 2026-06-04
 updated: 2026-06-04
----
+aliases:
+  - "Ai For Science"
+  - "ai for science"
 
+---
 # AI for Science (AI驱动的科学发现)
 
 > 从「实验驱动」到「AI驱动」的科学范式转变——预测蛋白质结构、发现新药、模拟天气、设计新材料。

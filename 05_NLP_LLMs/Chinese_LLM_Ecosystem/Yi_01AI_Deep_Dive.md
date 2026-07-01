@@ -5,8 +5,13 @@ tags: ["nlp", "llm", "yi", "01ai", "chinese-llm", "open-source", "apache-2", "mu
 summary: "> **一句话理解**: 零一万物由李开复创立，Yi-34B 曾创中文开源模型纪录，Yi-Lightning 以极致推理速度著称，全系列 Apache 2.0 开源，是国际化程度最高的中国 LLM 厂商之一。"
 created: "2026-06-12"
 updated: "2026-06-12"
----
+tier: supporting
+aliases:
+  - "Yi 01ai Deep Dive"
+  - "Yi 01AI Deep Dive"
+  - Yi_01AI_Deep_Dive
 
+---
 # 零一万物 (01.AI / Yi): 李开复带队的中国开源 LLM 标杆
 
 > **一句话理解**: 零一万物由李开复创立，Yi-34B 曾创中文开源模型纪录，Yi-Lightning 以极致推理速度著称，全系列 Apache 2.0 开源，是国际化程度最高的中国 LLM 厂商之一。

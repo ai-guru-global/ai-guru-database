@@ -8,8 +8,13 @@ sources:
 created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
----
+tier: peripheral
+aliases:
+  - "Coursera Math For Ml"
+  - "coursera math for ml"
+  - coursera_math_for_ml
 
+---
 # Mathematics for Machine Learning 专项课程
 
 > **一句话理解**: Coursera 数学 for ML 专项课程,覆盖线性代数、多元微积分、PCA 三大核心数学主题,是 ML 入门前的数学补课首选。
@@ -36,5 +41,5 @@ lifecycle: reviewed
 - 想从直觉理解线性代数的工程师
 - 需要补课数学基础再学 ML 的开发者
 
-> **关联**: -> [[01_Fundamentals|数学基础]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[01_Fundamentals/README|数学基础]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
 

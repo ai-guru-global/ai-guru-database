@@ -16,8 +16,10 @@ lifecycle: draft
 tier: core
 created: 2026-06-15
 updated: 2026-06-15
----
+aliases:
+  - Flops
 
+---
 # FLOPS（每秒浮点运算次数）
 
 ## 大白话

@@ -4,9 +4,14 @@ category: 21-interviews-nlp-engineer
 tags: ["interviews", "career", "experience", "practitioners", "nlp"]
 summary: "**LLM 应用**: RAG、工具调用、对话系统。"
 created: 2026-05-31
-updated: 2026-05-31
----
+updated: 2026-06-04
+tier: supporting
+aliases:
+  - "Interview Preparing"
+  - "interview preparing"
+  - interview_preparing
 
+---
 # NLP Engineer 面试准备
 
 ## 核心职责
@@ -33,12 +38,12 @@ updated: 2026-05-31
 - **可落地设计**: 架构与工程实现细节。
 
 ---
-*Last updated: 2026-02-26*
+*Last updated: 2026-06-04*
 
 ## Related
 
-- [[21_Interviews/NLP_Engineer/company_level_question_bank]] — NLP Engineer 按公司/级别区分的题库 (共享: career, experience, interviews, nlp, practitioners)
-- [[21_Interviews/NLP_Engineer/interview_answers]] — NLP Engineer 面试题实例答案 (共享: career, experience, interviews, nlp, practitioners)
-- [[21_Interviews/NLP_Engineer/question_bank]] — NLP Engineer 题库 (共享: career, experience, interviews, nlp, practitioners)
-- [[21_Interviews/AI_Data_Analyst/company_level_question_bank]] — AI Data Analyst 按公司/级别区分的题库 (共享: career, experience, interviews, practitioners)
-- [[21_Interviews/Research_Scientist/interview_preparing.md|interview_preparing]]
+- [[21_Interviews/NLP_Engineer/company_level_question_bank|NLP Engineer 按公司/级别区分的题库]]
+- [[21_Interviews/NLP_Engineer/interview_answers|NLP Engineer 面试题实例答案]]
+- [[21_Interviews/NLP_Engineer/question_bank|NLP Engineer 题库]]
+- [[21_Interviews/README|AI 面试准备 (Interviews)]]
+- [[21_Interviews/jobs|AI 相关岗位与工种清单]]

@@ -22,8 +22,11 @@ lifecycle: stable
 tier: core
 created: 2026-06-04
 updated: 2026-06-04
----
+aliases:
+  - "Distributed Parallelism"
+  - "distributed parallelism"
 
+---
 # 分布式并行策略 (Distributed Parallelism)
 
 > 当模型大到单卡装不下时——五种并行策略的排列组合艺术。

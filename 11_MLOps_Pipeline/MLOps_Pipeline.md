@@ -5,8 +5,13 @@ tags: ["mlops", "ci-cd", "pipeline", "feature-store"]
 summary: '> **一句话理解**: MLOps 就像 DevOps 的"AI 版"——如果说开发一个模型像造一辆车，MLOps 就是建造并运营整条汽车生产线，确保模型能持续、稳定、高效地在生产环境中运行。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Mlops Pipeline"
+  - "MLOps Pipeline"
+  - MLOps_Pipeline
 
+---
 # MLOps 流水线 (MLOps Pipeline)
 
 > **一句话理解**: MLOps 就像 DevOps 的"AI 版"——如果说开发一个模型像造一辆车，MLOps 就是建造并运营整条汽车生产线，确保模型能持续、稳定、高效地在生产环境中运行。
@@ -702,7 +707,7 @@ METRICS = {
 | **观测** | LangSmith, Langfuse | Agent 追踪、成本监控 |
 | **网关** | Portkey, Kong AI | 统一入口、治理 |
 
-**参考**: [AI Infrastructure 2026](../12_Architecture_Infrastructure/AI_Infrastructure_2026.md)
+**参考**: [AI Infrastructure 2026](../12_Architecture_Infrastructure/Architecture_Overview/AI_Infrastructure_2026)
 
 ---
 

@@ -25,8 +25,11 @@ lifecycle_changed: 2026-06-03
 tier: supporting
 created: 2026-06-03 00:00:00+00:00
 updated: 2026-06-03 00:00:00+00:00
----
+aliases:
+  - "Rdma Roce"
+  - "rdma roce"
 
+---
 # RDMA/RoCE (高速 GPU 网络)
 
 ## 大白话

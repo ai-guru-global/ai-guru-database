@@ -15,8 +15,11 @@ created: 2026-06-12
 updated: 2026-06-12
 lifecycle: draft
 tier: supporting
----
+aliases:
+  - "Hello Agents"
+  - "hello agents"
 
+---
 # Hello-Agents (Datawhale)：从零开始构建智能体
 
 这是 Datawhale 社区开源教程 **《从零开始构建智能体》** 的外部源引用索引。项目聚焦 AI Native Agent（而非 Dify/Coze/n8n 等流程驱动型低代码 Agent），强调从第一性原理出发，亲手实现并构建多智能体应用。

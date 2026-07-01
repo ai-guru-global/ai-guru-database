@@ -6,8 +6,13 @@ summary: "Microsoft 官方出品的 21 课生成式 AI 入门课程，覆盖 LLM
 created: "2026-06-12"
 updated: "2026-06-12"
 source_url: "https://github.com/microsoft/generative-ai-for-beginners/blob/main/translations/zh-CN/README.md"
----
+tier: supporting
+aliases:
+  - "Microsoft Genai For Beginners"
+  - "microsoft genai for beginners"
+  - microsoft_genai_for_beginners
 
+---
 # Microsoft Generative AI For Beginners：21 课生成式 AI 初学者课程映射
 
 > **一句话理解**: [Generative AI for Beginners](https://github.com/microsoft/generative-ai-for-beginners) 是微软开源的 21 课生成式 AI 入门课程（版本 3）。它覆盖生成式 AI 概念、LLM 选型、提示工程、文本/聊天/搜索/图像应用构建、RAG、AI 代理、微调、开源模型等核心主题，并为每节课提供 **Python / TypeScript** 代码示例。本页将课程完整课表映射到 `ai-guru-database` 的对应章节。
@@ -56,7 +61,7 @@ source_url: "https://github.com/microsoft/generative-ai-for-beginners/blob/main/
 | 课号 | 课程名称 | 本库建议配合阅读 | 页面链接 |
 |------|----------|------------------|----------|
 | 04 | 理解提示工程基础 | [[05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering]]、[[05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering_Principles_Ng]] | [[05_NLP_LLMs/Prompt_Engineering/GenAI_L04_Prompt_Engineering_Fundamentals]] |
-| 05 | 创建高级提示 | [[05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering]]、[[05_NLP_LLMs/god-tier-prompts_overview]] | [[05_NLP_LLMs/Prompt_Engineering/GenAI_L05_Advanced_Prompts]] |
+| 05 | 创建高级提示 | [[05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering]]、[[05_NLP_LLMs/LLM_Products/god-tier-prompts_overview]] | [[05_NLP_LLMs/Prompt_Engineering/GenAI_L05_Advanced_Prompts]] |
 
 ### 应用构建（L06-L11）
 
@@ -94,7 +99,7 @@ source_url: "https://github.com/microsoft/generative-ai-for-beginners/blob/main/
 
 | 课号 | 课程名称 | 本库建议配合阅读 | 页面链接 |
 |------|----------|------------------|----------|
-| 18 | 微调大型语言模型 | [[05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques]]、[[07_Model_Training/Fine_tuning_Strategies]] | [[05_NLP_LLMs/Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs]] |
+| 18 | 微调大型语言模型 | [[05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques]]、[[05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Strategies]] | [[05_NLP_LLMs/Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs]] |
 | 19 | 使用小型语言模型构建 | [[05_NLP_LLMs/Edge_LLM/Edge_LLM_Deep_Dive]] | [[05_NLP_LLMs/Edge_LLM/GenAI_L19_Building_with_SLMs]] |
 | 20 | 使用 Mistral 模型构建 | [[05_NLP_LLMs/Global_LLM_Ecosystem/Mistral_AI_Deep_Dive]] | [[05_NLP_LLMs/Global_LLM_Ecosystem/GenAI_L20_Building_with_Mistral]] |
 | 21 | 使用 Meta 模型构建 | [[05_NLP_LLMs/Global_LLM_Ecosystem/Meta_LLaMA_Deep_Dive]] | [[05_NLP_LLMs/Global_LLM_Ecosystem/GenAI_L21_Building_with_Meta]] |

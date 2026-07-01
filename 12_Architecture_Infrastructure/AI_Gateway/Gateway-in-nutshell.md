@@ -5,8 +5,12 @@ tags: ["ai-gateway", "api-management", "routing", "litellm"]
 summary: "> 🎯 **目标**：理解 AI Gateway 的核心概念、架构和关键功能。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Gateway In Nutshell"
+  - "Gateway in nutshell"
 
+---
 # AI 网关速成指南
 
 > 🎯 **目标**：理解 AI Gateway 的核心概念、架构和关键功能。
@@ -165,9 +169,9 @@ response = client.chat.completions.create(
 |------|------|
 | 完整架构 | [AI_Gateway_2026.md](./AI_Gateway_2026.md) |
 | 入门指南 | [AI_Gateway_for_dummy.md](./AI_Gateway_for_dummy.md) |
-| SRE 实践 | [../AI_Ops/SRE_for_AI_Systems.md](../../13_AI_Ops/SRE_for_AI_Systems.md) |
-| 可观测性 | [../AI_Ops/AI_Observability_Guide.md](../../11_MLOps_Pipeline/AI_Observability_Guide.md) |
-| 成本优化 | [../AI_Cost_Optimization_2026.md](../AI_Cost_Optimization_2026.md) |
+| SRE 实践 | [../AI_Ops/SRE_for_AI_Systems.md](../../13_AI_Ops/SRE_Reliability/SRE_for_AI_Systems.md) |
+| 可观测性 | [../AI_Ops/AI_Observability_Guide.md](../../11_MLOps_Pipeline/Observability/AI_Observability_Guide.md) |
+| 成本优化 | [../AI_Cost_Optimization_2026.md](../Architecture_Overview/AI_Cost_Optimization_2026.md) |
 
 ---
 
@@ -175,7 +179,7 @@ response = client.chat.completions.create(
 
 ## Related
 
-- [[14_AI_Gateway/AI_Gateway_for_dummy]] — AI Gateway 入门指南 (for Dummies) (共享: ai-gateway, api-management, litellm, routing)
-- [[14_AI_Gateway/Kong_AI_Gateway_Deep_Dive]] — Kong AI Gateway 深度解析 (共享: ai-gateway, api-management, litellm, routing)
-- [[14_AI_Gateway/README]] — AI Gateway (共享: ai-gateway, api-management, litellm, routing)
-- [[14_AI_Gateway/Spring_AI_Gateway_Security]] — Spring AI 网关与安全 (共享: ai-gateway, api-management, litellm, routing)
+- [[12_Architecture_Infrastructure/AI_Gateway/AI_Gateway_for_dummy]] — AI Gateway 入门指南 (for Dummies) (共享: ai-gateway, api-management, litellm, routing)
+- [[12_Architecture_Infrastructure/AI_Gateway/Kong_AI_Gateway_Deep_Dive]] — Kong AI Gateway 深度解析 (共享: ai-gateway, api-management, litellm, routing)
+- [[12_Architecture_Infrastructure/AI_Gateway/README]] — AI Gateway (共享: ai-gateway, api-management, litellm, routing)
+- [[12_Architecture_Infrastructure/AI_Gateway/Spring_AI_Gateway_Security]] — Spring AI 网关与安全 (共享: ai-gateway, api-management, litellm, routing)

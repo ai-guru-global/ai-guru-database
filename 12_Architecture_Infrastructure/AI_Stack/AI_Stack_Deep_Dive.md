@@ -5,8 +5,13 @@ tags: ["alibaba-cloud", "ai-stack", "inference", "private-deployment", "deepseek
 summary: "> **一句话理解**: 阿里云 AI Stack 是面向政企的软硬一体 AI 推理一体机——开箱即用部署 Qwen/DeepSeek 满血大模型，支持 APG/Ascend/Nvidia 三种 GPU，提供 A-Speed 加速推理、模型网关、RAG 应用等全链路能力。"
 created: "2026-06-03"
 updated: "2026-06-16"
----
+tier: core
+aliases:
+  - "Ai Stack Deep Dive"
+  - "AI Stack Deep Dive"
+  - AI_Stack_Deep_Dive
 
+---
 # 阿里云 AI Stack: 企业级软硬一体 AI 推理平台
 
 > **一句话理解**: 阿里云 AI Stack 是面向政企的软硬一体 AI 推理一体机——开箱即用部署 Qwen/DeepSeek 满血大模型，支持 APG/Ascend/Nvidia 三种 GPU，提供 A-Speed 加速推理、模型网关、RAG 应用等全链路能力。
@@ -814,12 +819,12 @@ AI Stack 一体机交付后，日常生产环境涉及容器运行时、GPU 监�
 
 ## Related
 
-- [[12_Architecture_Infrastructure/AI_Infrastructure_2026]] — AI 基础设施全景
+- [[12_Architecture_Infrastructure/Architecture_Overview/AI_Infrastructure_2026]] — AI 基础设施全景
 - [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive]] — vLLM 推理框架
 - [[10_Deployment_Inference/Inference_Engines/SGLang_Deep_Dive]] — SGLang 推理框架
-- [[07_Model_Training/Fine_tuning_Strategies]] — 模型微调策略
+- [[05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Strategies]] — 模型微调策略
 - [[14_RAG_Systems/Advanced_RAG/RAG_Advanced_2026]] — RAG 高级技术
-- [[05_NLP_LLMs/Chinese_LLM_Ecosystem]] — 中国大模型生态
+- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/README]] — 中国大模型生态
 - [[10_Deployment_Inference/Caching/Speculative_Decoding_Advanced_2026]] — 投机解码高级技术（MTP 相关）
 - [[10_Deployment_Inference/Caching/Prompt_Caching_and_KV_Cache_Optimization]] — KV Cache 优化全景
 
@@ -852,6 +857,13 @@ AI Stack 一体机交付后，日常生产环境涉及容器运行时、GPU 监�
 - [[_concepts/mixed-precision]] — 混合精度（BF16/FP8/AMP）
 - [[_concepts/gpu-interconnect]] — NVLink/GPU 互联（NVSwitch/HCCS）
 - [[_concepts/lora-peft]] — LoRA/PEFT 参数高效微调
+- [[_concepts/cuda-platform]] — CUDA 计算平台（Tensor Core/NVCC/cuDNN）
+- [[_concepts/checkpoint]] — Checkpoint 检查点（分布式训练容错）
+- [[_concepts/single-tenant-architecture]] — 单租户架构（物理级隔离）
+- [[_concepts/sso-saml]] — SSO/SAML2 企业身份认证（AzureAD）
+- [[_concepts/apsara-stack]] — 飞天企业版 Apsara Stack（全栈私有云）
+- [[_concepts/model-registry]] — 模型仓库（版本管理、一键部署）
+- [[_concepts/modelscope]] — ModelScope 魔搭（中文模型社区、SWIFT 微调）
 - [[12_Architecture_Infrastructure/AI_Stack_Production_Toolchain]] — AI Stack 生产工具链总览
 - [[12_Architecture_Infrastructure/AI_Stack_Container_Runtime_Guide]] — AI Stack 容器与运行时指南
 - [[12_Architecture_Infrastructure/AI_Stack_GPU_Monitoring_Guide]] — AI Stack GPU 监控指南
@@ -860,3 +872,5 @@ AI Stack 一体机交付后，日常生产环境涉及容器运行时、GPU 监�
 - [[12_Architecture_Infrastructure/AI_Stack_Training_Launchers_Guide]] — AI Stack 训练启动器指南
 - [[12_Architecture_Infrastructure/AI_Stack_K8s_Operations_Guide]] — AI Stack K8s 编排指南
 - [[12_Architecture_Infrastructure/AI_Stack_Exclusive_Tools_Guide]] — AI Stack 专属运维工具指南
+
+- [[12_Architecture_Infrastructure/README|架构与基础设施 (Architecture & Infrastructure)]]

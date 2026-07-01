@@ -13,8 +13,12 @@ provenance:
 base_confidence: 0.75
 lifecycle: draft
 lifecycle_changed: 2026-05-31
----
+tier: core
+aliases:
+  - "Rag Vector Database"
+  - "rag vector database"
 
+---
 # RAG 系统 × 向量数据库
 
 ## The Connection

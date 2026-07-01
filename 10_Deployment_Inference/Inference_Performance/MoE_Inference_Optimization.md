@@ -5,8 +5,13 @@ tags: [inference, moe, mixture-of-experts, expert-parallelism, all-to-all, perfo
 summary: "> MoE 模型用稀疏激活降低推理成本，但 All-to-All 通信和负载不均衡成为新的性能瓶颈。"
 created: 2026-06-15
 updated: 2026-06-15
----
+tier: supporting
+aliases:
+  - "Moe Inference Optimization"
+  - "MoE Inference Optimization"
+  - MoE_Inference_Optimization
 
+---
 # MoE 推理优化
 
 > MoE（Mixture of Experts）让大模型“看着很大，用着很小”，但推理时要搞定 All-to-All 通信和专家负载均衡。
@@ -178,3 +183,5 @@ GPU 3: Expert 12, 13, 14, 15
 - [[10_Deployment_Inference/Inference_Performance/README|推理性能专题]]
 - [[10_Deployment_Inference/Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]]
 - [[10_Deployment_Inference/Inference_Performance/Prefill_Decode_Disaggregation|Prefill-Decode 分离]]
+
+- [[10_Deployment_Inference/README|模型部署与推理]]

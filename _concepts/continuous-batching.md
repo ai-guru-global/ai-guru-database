@@ -27,8 +27,11 @@ lifecycle_changed: 2026-06-03
 tier: core
 created: 2026-06-03 00:00:00+00:00
 updated: 2026-06-03 00:00:00+00:00
----
+aliases:
+  - "Continuous Batching"
+  - "continuous batching"
 
+---
 # Continuous Batching (连续批处理)
 
 ## 核心要点

@@ -5,8 +5,13 @@ tags: ["model-training", "distributed-training", "optimization", "fsdp"]
 summary: "> **一句话理解**: 模型训练就像教小孩认东西——给例子、指出错误、反复练习，直到学会。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Model Training For Dummy"
+  - "Model Training for dummy"
+  - Model_Training_for_dummy
 
+---
 # 模型训练小白指南
 
 > **一句话理解**: 模型训练就像教小孩认东西——给例子、指出错误、反复练习，直到学会。

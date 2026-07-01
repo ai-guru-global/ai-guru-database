@@ -26,8 +26,10 @@ lifecycle: stable
 tier: core
 created: 2026-06-16
 updated: 2026-06-16
----
+aliases:
+  - Autogen
 
+---
 # AutoGen
 
 > 多 Agent 协作的「会议室」——让多个大模型角色分工、讨论、执行代码，共同解决复杂问题。
@@ -96,3 +98,4 @@ updated: 2026-06-16
 - [[_concepts/multi-agent]] — 多 Agent 系统
 - [[_concepts/langchain]] — LangChain
 - [[_concepts/llamaindex]] — LlamaIndex
+- [[_concepts/multi-agent-orchestration]] — Multi Agent Orchestration

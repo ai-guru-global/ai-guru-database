@@ -9,8 +9,11 @@ created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
 tier: supporting
----
+aliases:
+  - "Sebastian Raschka Articles"
+  - "sebastian raschka articles"
 
+---
 # Sebastian Raschka LLM 深度解析系列
 
 > **一句话理解**: Sebastian Raschka 的 LLM 深度解析系列文章,覆盖架构、训练、微调、推理等核心主题。

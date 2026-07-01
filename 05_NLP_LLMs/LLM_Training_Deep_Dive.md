@@ -6,8 +6,13 @@ summary: "> 从预训练目标（自回归/掩码 LM）到规模定律，从分�
 source: "_sources/yeasy/llm_internals/ (Ch5-8)"
 created: 2026-06-17
 updated: 2026-06-17
----
+tier: supporting
+aliases:
+  - "Llm Training Deep Dive"
+  - "LLM Training Deep Dive"
+  - LLM_Training_Deep_Dive
 
+---
 # LLM 训练深度剖析：预训练、分布式训练与对齐
 
 > **核心链路**: 预训练（学会语言）→ 分布式训练（解决规模问题）→ SFT（学会对话格式）→ RLHF/DPO（对齐人类偏好）→ PEFT/LoRA（降低微调门槛）

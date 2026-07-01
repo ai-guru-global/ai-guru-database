@@ -5,8 +5,13 @@ tags: [prompt-caching, kv-cache, prefix-caching, attention-optimization, inferen
 summary: 深度解析 LLM 推理中的 KV Cache 管理、Prefix Caching、Prompt Caching 和注意力优化技术，涵盖从内存管理到多轮对话缓存的全栈优化策略。
 date: 2026-06-01
 created: 2026-06-12
----
+tier: supporting
+aliases:
+  - "Prompt Caching And Kv Cache Optimization"
+  - "Prompt Caching and KV Cache Optimization"
+  - Prompt_Caching_and_KV_Cache_Optimization
 
+---
 # Prompt Caching 与 KV Cache 优化深度解析
 
 ## 一句话理解

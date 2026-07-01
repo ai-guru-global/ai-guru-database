@@ -5,8 +5,13 @@ tags: ["edge-llm", "small-language-model", "Phi", "Gemma", "Qwen", "quantization
 summary: "让LLM跑在手机/PC/嵌入式设备上。覆盖高效小模型设计(Phi/Gemma/Qwen)、量化压缩(GPTQ/AWQ/GGUF)、端侧推理引擎(llama.cpp/MLC-LLM/ONNX Runtime)。"
 created: 2026-06-04
 updated: 2026-06-04
----
+tier: supporting
+aliases:
+  - "Edge Llm Deep Dive"
+  - "Edge LLM Deep Dive"
+  - Edge_LLM_Deep_Dive
 
+---
 # 小模型与端侧 LLM 深度解读: 从高效模型到端侧部署
 
 > **一句话理解**: 让 LLM 跑在手机/PC/嵌入式设备上——通过小模型设计 + 量化压缩 + 高效推理引擎，实现离线可用、隐私安全、低延迟的端侧 AI。2025-2026 年 AI PC/手机的核心技术。

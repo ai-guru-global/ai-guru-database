@@ -5,8 +5,13 @@ tags: ["deployment", "inference", "serving", "llama.cpp", "gguf", "quantization"
 summary: "> **一句话理解**: llama.cpp 是纯 C/C++ 的轻量级 LLM 推理框架——无 Python 依赖、CPU 即可运行、GGUF 量化，覆盖从 MacBook 到树莓派再到服务器的全场景本地推理。"
 created: "2026-05-31"
 updated: "2026-06-15"
----
+tier: core
+aliases:
+  - "Llama Cpp Deep Dive"
+  - "llama cpp Deep Dive"
+  - llama_cpp_Deep_Dive
 
+---
 # llama.cpp: 纯 C/C++ 本地 LLM 推理
 
 > **一句话理解**: llama.cpp 是纯 C/C++ 的轻量级 LLM 推理框架——无 Python 依赖、CPU 即可运行、GGUF 量化，覆盖从 MacBook 到树莓派再到服务器的全场景本地推理。

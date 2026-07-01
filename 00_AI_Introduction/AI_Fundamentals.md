@@ -5,8 +5,13 @@ tags: ["ai", "fundamentals", "introduction", "basics"]
 summary: "人工智能(AI)是让机器模拟人类智能的科学——从识别猫狗照片到理解自然语言，从推荐视频到自动驾驶，AI正在重塑我们与技术的交互方式。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Ai Fundamentals"
+  - "AI Fundamentals"
+  - AI_Fundamentals
 
+---
 # AI 基础概念入门
 
 > **一句话理解**: 人工智能(AI)是让机器模拟人类智能的科学——从识别猫狗照片到理解自然语言，从推荐视频到自动驾驶，AI 正在重塑我们与技术的交互方式。

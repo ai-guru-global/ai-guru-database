@@ -9,8 +9,10 @@ created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
 tier: supporting
----
+aliases:
+  - Kaggle
 
+---
 # Kaggle 数据科学竞赛平台
 
 > **一句话理解**: Google 旗下数据科学竞赛平台,提供数据集、GPU Notebook 和社区,是 ML 实战练习的首选平台。

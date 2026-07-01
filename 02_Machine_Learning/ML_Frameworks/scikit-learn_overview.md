@@ -8,8 +8,13 @@ sources:
 created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
----
+tier: supporting
+aliases:
+  - "Scikit Learn Overview"
+  - "scikit learn overview"
+  - scikit-learn_overview
 
+---
 # Scikit-learn 概览
 
 > **一句话理解**: 经典 Python ML 框架，覆盖分类、回归、聚类、降维等算法，适合入门和快速原型
@@ -33,5 +38,5 @@ Scikit-learn 是机器学习领域的重要工具/框架。
 | LightGBM | 速度快、内存低 | 大规模数据 |
 | CatBoost | 类别特征原生支持 | 高基数类别数据 |
 
-> **关联**: → [[02_Machine_Learning|机器学习]]
+> **关联**: → [[02_Machine_Learning/README|机器学习]]
 

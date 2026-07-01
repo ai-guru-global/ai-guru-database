@@ -21,8 +21,11 @@ lifecycle: stable
 tier: core
 created: 2026-06-04
 updated: 2026-06-04
----
+aliases:
+  - "Causal Inference"
+  - "causal inference"
 
+---
 # 因果推断 (Causal Inference)
 
 > 从「相关」到「因果」——让 AI 理解干预的后果，而非仅仅是模式匹配。

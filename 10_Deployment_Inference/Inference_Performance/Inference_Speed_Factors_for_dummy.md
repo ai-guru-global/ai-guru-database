@@ -5,8 +5,13 @@ tags: [inference, performance, latency, throughput, beginner]
 summary: "> 用生活化的大白话解释：到底是什么决定了大模型推理快不快。"
 created: 2026-06-15
 updated: 2026-06-15
----
+tier: supporting
+aliases:
+  - "Inference Speed Factors For Dummy"
+  - "Inference Speed Factors for dummy"
+  - Inference_Speed_Factors_for_dummy
 
+---
 # 决定模型推理速度的要素（大白话版）
 
 > 一句话：模型推理速度，主要由“算得多快、读得多快、传得多快、管得多好”四件事决定。

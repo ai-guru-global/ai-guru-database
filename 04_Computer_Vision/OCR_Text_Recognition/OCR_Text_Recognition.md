@@ -5,8 +5,13 @@ tags: ["computer-vision", "cnn", "image-processing"]
 summary: '> **一句话秒懂**: OCR 就像给电脑装了一双"识字眼"，能看懂图片里的文字，把它变成可以编辑的文本。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Ocr Text Recognition"
+  - "OCR Text Recognition"
+  - OCR_Text_Recognition
 
+---
 # OCR 与文字识别
 
 > **一句话秒懂**: OCR 就像给电脑装了一双"识字眼"，能看懂图片里的文字，把它变成可以编辑的文本。

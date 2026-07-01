@@ -5,6 +5,7 @@ tags: ["cloud-ops", "devops", "sre", "automation", "ai-agents"]
 summary: "> 🎯 **目标**: 为架构师提供 Cloud Ops Agent 的完整架构设计视图，包括核心模块设计、数据流、扩展性设计、高可用架构、安全架构，确保系统满足企业级生产环境要求。"
 created: 2026-05-31
 updated: 2026-05-31
+tier: core
 ---
 
 # 云产品运维 Agent 架构设计指南 (Architecture)

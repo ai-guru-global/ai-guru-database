@@ -5,8 +5,13 @@ tags: ["reinforcement-learning", "rlhf", "dpo", "grpo", "alignment", "preference
 summary: '> **一句话理解**: RLHF 用"奖励模型打分+强化学习优化"让模型学会人类偏好，DPO 把它简化成"直接比较两个回答谁更好"，GRPO 则去掉批评家、用组内相对优势让推理模型自己进化——三种范式分别代表对齐训练的过去、现在与未来。'
 created: '2026-06-22'
 updated: '2026-06-22'
----
+tier: supporting
+aliases:
+  - "Rlhf Dpo Grpo Deep Dive"
+  - "RLHF DPO GRPO Deep Dive"
+  - RLHF_DPO_GRPO_Deep_Dive
 
+---
 # RLHF / DPO / GRPO 深度解读 - 大模型对齐训练三大范式
 
 > **一句话理解**: RLHF 用"奖励模型打分+强化学习优化"让模型学会人类偏好，DPO 把它简化成"直接比较两个回答谁更好"，GRPO 则去掉批评家、用组内相对优势让推理模型自己进化——三种范式分别代表对齐训练的过去、现在与未来。

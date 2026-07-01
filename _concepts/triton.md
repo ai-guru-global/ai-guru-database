@@ -23,8 +23,10 @@ lifecycle: stable
 tier: core
 created: 2026-06-16
 updated: 2026-06-16
----
+aliases:
+  - Triton
 
+---
 # Triton Inference Server
 
 > NVIDIA 的「多模型推理网关」——一个服务同时跑 TensorRT、PyTorch、ONNX 等多种模型。

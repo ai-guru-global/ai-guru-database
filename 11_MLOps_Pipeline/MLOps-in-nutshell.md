@@ -5,8 +5,12 @@ tags: ["mlops", "ci-cd", "pipeline", "feature-store"]
 summary: "> 🎯 **目标**：理解 MLOps 的核心概念、流水线架构和关键工具，掌握将 ML 模型从实验带到生产的工程实践。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: core
+aliases:
+  - "Mlops In Nutshell"
+  - "MLOps in nutshell"
 
+---
 # MLOps 速成指南
 
 > 🎯 **目标**：理解 MLOps 的核心概念、流水线架构和关键工具，掌握将 ML 模型从实验带到生产的工程实践。
@@ -354,8 +358,8 @@ flowchart TB
 | 入门指南 | [MLOps_Pipeline_for_dummy.md](./MLOps_Pipeline_for_dummy.md) |
 | 部署推理 | [../Deployment_Inference/Inference-in-nutshell.md](../10_Deployment_Inference/Inference-in-nutshell.md) |
 | AI Ops | [../AI_Ops/AI_Ops_2026.md](../13_AI_Ops/AI_Ops_2026.md) |
-| SRE 实践 | [../AI_Ops/SRE_for_AI_Systems.md](../13_AI_Ops/SRE_for_AI_Systems.md) |
-| 成本优化 | [../AI_Cost_Optimization_2026.md](../12_Architecture_Infrastructure/AI_Cost_Optimization_2026.md) |
+| SRE 实践 | [../AI_Ops/SRE_for_AI_Systems.md](../13_AI_Ops/SRE_Reliability/SRE_for_AI_Systems.md) |
+| 成本优化 | [../AI_Cost_Optimization_2026.md](../12_Architecture_Infrastructure/Architecture_Overview/AI_Cost_Optimization_2026.md) |
 
 ---
 

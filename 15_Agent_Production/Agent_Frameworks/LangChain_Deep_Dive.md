@@ -5,8 +5,13 @@ tags: ["ai-agents", "agent-framework", "production", "langgraph", "llm", "langch
 summary: '> **一句话理解**: LangChain 是 LLM 应用的"操作系统"——拼接大模型、提示词、记忆、工具、数据，构建复杂的 AI 应用。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Langchain Deep Dive"
+  - "LangChain Deep Dive"
+  - LangChain_Deep_Dive
 
+---
 # LangChain: LLM 应用开发框架
 
 > **一句话理解**: LangChain 是 LLM 应用的"操作系统"——拼接大模型、提示词、记忆、工具、数据，构建复杂的 AI 应用。

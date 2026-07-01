@@ -5,11 +5,16 @@ tags: ["dra", "dynamic-resource-allocation", "kubernetes", "gpu", "scheduling", 
 summary: "> **一句话理解**: DRA 是 Kubernetes 1.32+ 的现代设备分配机制——用声明式 ResourceClaim 替代 Device Plugin 的整数计数模型，支持拓扑亲和、设备共享与丰富属性匹配，与 CDI 共同构成下一代 GPU/加速器接入栈。"
 created: "2026-06-15"
 updated: "2026-06-15"
----
+tier: supporting
+aliases:
+  - "Dra Deep Dive"
+  - "DRA Deep Dive"
+  - DRA_Deep_Dive
 
+---
 # DRA (Dynamic Resource Allocation) 深度解析
 
-> **一句话理解**: DRA 是 Kubernetes 1.32+ 的现代设备分配机制——用声明式 `ResourceClaim` 替代 Device Plugin 的整数计数模型，支持拓扑亲和、设备共享与丰富属性匹配，与 [[12_Architecture_Infrastructure/CDI_Deep_Dive|CDI]] 共同构成下一代 GPU/加速器接入栈。
+> **一句话理解**: DRA 是 Kubernetes 1.32+ 的现代设备分配机制——用声明式 `ResourceClaim` 替代 Device Plugin 的整数计数模型，支持拓扑亲和、设备共享与丰富属性匹配，与 [[12_Architecture_Infrastructure/Hardware_Compute/CDI_Deep_Dive|CDI]] 共同构成下一代 GPU/加速器接入栈。
 
 > **成熟度**: 1.26 alpha → 1.32 beta（含结构化参数）| **KEP**: kubernetes/enhancements#3063
 
@@ -46,7 +51,7 @@ resources:
 | 要 70GB+ 显存的卡 | 无法表达属性，只能全集群手动打标签 |
 | MIG 切片调度 | 实例被当成独立设备硬塞进 ExtendedResource，调度器不懂切片语义 |
 | GPU + 网卡同 NUMA | 无法表达设备间拓扑关系 |
-| 多 Pod 共享一卡 | 计数模型天生独占，共享要靠 [[12_Architecture_Infrastructure/HAMi_Deep_Dive|HAMi]] 等外部方案 |
+| 多 Pod 共享一卡 | 计数模型天生独占，共享要靠 [[12_Architecture_Infrastructure/AI_Stack/HAMi_Deep_Dive|HAMi]] 等外部方案 |
 | 厂商做复杂分配逻辑 | 必须绕过调度器，在 kubelet 外自建 gRPC，调度器看不到真实状态 |
 
 > **根本矛盾**: 调度器对设备「一无所知」，只看到一个整数；真实的设备能力、拓扑、共享需求，调度器全看不见。
@@ -198,7 +203,7 @@ spec:
 - **分配层**决定「这块卡给谁」——可选 Device Plugin 或 DRA
 - **注入层**（CDI）是**两层共用的地基**——无论上层选谁，最终都翻译成 CDI 设备名
 
-> 详见 [[12_Architecture_Infrastructure/CDI_Deep_Dive|CDI 深度解析]] 与 [[_concepts/dra|DRA 概念卡片]]。
+> 详见 [[12_Architecture_Infrastructure/Hardware_Compute/CDI_Deep_Dive|CDI 深度解析]] 与 [[_concepts/dra|DRA 概念卡片]]。
 
 ---
 
@@ -230,12 +235,12 @@ spec:
 
 ## 相关阅读
 
-- [[12_Architecture_Infrastructure/CDI_Deep_Dive|CDI 容器设备接口标准(配对概念)]]
-- [[12_Architecture_Infrastructure/HAMi_Deep_Dive|HAMi 异构 GPU 虚拟化(Device Plugin 模式下的共享方案)]]
+- [[12_Architecture_Infrastructure/Hardware_Compute/CDI_Deep_Dive|CDI 容器设备接口标准(配对概念)]]
+- [[12_Architecture_Infrastructure/AI_Stack/HAMi_Deep_Dive|HAMi 异构 GPU 虚拟化(Device Plugin 模式下的共享方案)]]
 - [[_concepts/dra|DRA 概念卡片]]
 - [[_concepts/cdi|CDI 概念卡片]]
 - [[_concepts/hami|HAMi 概念卡片]]
 - [[_concepts/gpu-operator|NVIDIA GPU Operator(部署 DRA 驱动的载体)]]
 - [[_concepts/gpu-virtualization|GPU 虚拟化(MIG 切片调度)]]
 - [[_concepts/heterogeneous-gpu|异构 GPU 集群]]
-- [[12_Architecture_Infrastructure/AI_Infrastructure_2026|AI Infrastructure 2026]]
+- [[12_Architecture_Infrastructure/Architecture_Overview/AI_Infrastructure_2026|AI Infrastructure 2026]]

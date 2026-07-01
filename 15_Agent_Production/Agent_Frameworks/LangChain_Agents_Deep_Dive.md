@@ -5,8 +5,13 @@ tags: ["ai-agents", "agent-framework", "production", "langgraph", "langchain"]
 summary: "> **一句话理解**: LangChain Agents 是 LangChain 的工具调用框架——通过 ReAct/Plan-and-Execute 等策略让 LLM 调用工具、联网搜索、执行代码，实现自主决策。"
 created: "2026-05-31"
 updated: "2026-05-31"
----
+tier: supporting
+aliases:
+  - "Langchain Agents Deep Dive"
+  - "LangChain Agents Deep Dive"
+  - LangChain_Agents_Deep_Dive
 
+---
 # LangChain Agents: 工具调用框架
 
 > **一句话理解**: LangChain Agents 是 LangChain 的工具调用框架——通过 ReAct/Plan-and-Execute 等策略让 LLM 调用工具、联网搜索、执行代码，实现自主决策。

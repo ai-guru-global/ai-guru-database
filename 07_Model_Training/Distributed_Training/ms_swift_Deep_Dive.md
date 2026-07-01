@@ -17,8 +17,13 @@ tags:
   - 量化
 created: 2026-06-03
 updated: 2026-06-03
----
+tier: supporting
+aliases:
+  - "Ms Swift Deep Dive"
+  - "ms swift Deep Dive"
+  - ms_swift_Deep_Dive
 
+---
 # ms-swift 深度解析：魔搭大模型训练推理全链路框架
 
 ## 1. 框架概览

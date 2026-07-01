@@ -6,8 +6,13 @@ summary: "在大型图像数据集上预训练的卷积神经网络（CNN）可�
 source_url: "https://raw.githubusercontent.com/microsoft/AI-For-Beginners/main/lessons/4-ComputerVision/08-TransferLearning/README.md"
 created: "2026-06-12"
 updated: "2026-06-12"
----
+tier: supporting
+aliases:
+  - "L08 Transfer Learning And Training Tricks"
+  - "L08 Transfer Learning and Training Tricks"
+  - L08_Transfer_Learning_and_Training_Tricks
 
+---
 # L08 - 预训练网络、迁移学习与训练技巧
 
 > **一句话理解**：与其从零训练一个卷积神经网络（Convolutional Neural Network，CNN），不如借用已经在 ImageNet 等大规模数据上学到的通用视觉特征，再针对自己的任务做少量微调，从而省时、省数据、效果往往更好。
@@ -173,7 +178,7 @@ model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy']
 
 - **延伸**：
   - 若想系统了解图像分类与检测理论，可阅读本库 [[04_Computer_Vision/Image_Classification_Detection/Image_Classification_Detection]]。
-  - 若想深入微调策略（全量微调、参数高效微调 PEFT、LoRA 等），可阅读 [[07_Model_Training/Fine_tuning_Strategies]]。
+  - 若想深入微调策略（全量微调、参数高效微调 PEFT、LoRA 等），可阅读 [[05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Strategies]]。
   - 若想理解优化器进阶与训练动态，可参考 [[07_Model_Training/Optimization/Optimizer_Advanced_2026]]、[[07_Model_Training/Optimization/Training_Optimization_2026]]。
   - 对抗样本相关内容也是 AI 安全与可解释性的入口，可延伸阅读 [[17_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming]] 或 [[17_Ethics_Safety/AI_Security_2026/AI_Security_2026]]。
 
@@ -184,7 +189,7 @@ model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy']
 - 课程索引：[[90_Learn/courses/microsoft/microsoft_ai_for_beginners]]
 - 本库相关页面：
   - [[04_Computer_Vision/Image_Classification_Detection/Image_Classification_Detection]]
-  - [[07_Model_Training/Fine_tuning_Strategies]]
+  - [[05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Strategies]]
 - 官方课前测验：[Pre-lecture quiz](https://ff-quizzes.netlify.app/en/ai/quiz/15)
 - 官方课后测验：[Post-lecture quiz](https://ff-quizzes.netlify.app/en/ai/quiz/16)
 - 扩展阅读：[TrainingTricks.md（官方）](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/4-ComputerVision/08-TransferLearning/TrainingTricks.md)

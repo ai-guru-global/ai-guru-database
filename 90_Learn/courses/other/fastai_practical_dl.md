@@ -5,8 +5,13 @@ tags: ["course", "fastai", "jeremy-howard", "practical-dl"]
 summary: "fast.ai 的实战导向深度学习课程——从应用到理论，top-down 教学方法。"
 created: "2026-06-12"
 updated: "2026-06-12"
----
+tier: peripheral
+aliases:
+  - "Fastai Practical Dl"
+  - "fastai practical dl"
+  - fastai_practical_dl
 
+---
 # fast.ai 实用深度学习 (Practical Deep Learning for Coders)
 
 > fast.ai 的实战导向深度学习课程——从应用到理论，top-down 教学方法。

@@ -6,8 +6,12 @@ summary: "通过 OpenAI Gym 中的 CartPole 任务，理解强化学习『学习
 source_url: "https://raw.githubusercontent.com/microsoft/AI-For-Beginners/main/lessons/6-Other/22-DeepRL/README.md"
 created: "2026-06-12"
 updated: "2026-06-12"
----
+tier: supporting
+aliases:
+  - "L22 Deep Reinforcement Learning"
+  - L22_Deep_Reinforcement_Learning
 
+---
 # L22 - 深度强化学习
 
 > **一句话理解**：智能体（Agent）在没有标签指导的情况下，通过与环境反复交互、根据最终奖励调整行为，从而学会完成任务的机器学习方法。

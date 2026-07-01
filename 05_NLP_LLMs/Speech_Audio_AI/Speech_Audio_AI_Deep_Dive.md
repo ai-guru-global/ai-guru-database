@@ -5,8 +5,13 @@ tags: ["speech", "audio", "ASR", "TTS", "whisper", "cosyvoice", "audiolm", "musi
 summary: "> **一句话理解**: 语音AI让机器「听懂」和「说出」人类语言——Whisper 实现了通用语音识别，VITS/CosyVoice 让机器说话以假乱真，AudioLM 让 AI 理解所有声音（不只是人话），而音乐生成正在颠覆创作方式。"
 created: 2026-06-04
 updated: 2026-06-04
----
+tier: supporting
+aliases:
+  - "Speech Audio Ai Deep Dive"
+  - "Speech Audio AI Deep Dive"
+  - Speech_Audio_AI_Deep_Dive
 
+---
 # 语音与音频 AI 深度解读: 从 Whisper 到 CosyVoice 再到 AudioLM
 
 > **一句话理解**: 语音 AI 让机器「听懂」和「说出」人类语言——Whisper 实现了通用语音识别，VITS/CosyVoice 让机器说话以假乱真，AudioLM 让 AI 理解所有声音（不只是人话），而音乐生成正在颠覆创作方式。

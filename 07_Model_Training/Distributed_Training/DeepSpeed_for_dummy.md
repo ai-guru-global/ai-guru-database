@@ -5,8 +5,13 @@ tags: ["deepspeed", "distributed-training", "microsoft", "zero", "parallelism", 
 summary: "> **一句话理解**: DeepSpeed 是微软开源的「大模型训练加速器」，它能把模型权重、梯度和优化器状态切分成小块分散到多张 GPU 甚至电脑内存/硬盘上，让你在原来训练不了的超大模型上跑起来。"
 created: "2026-06-17"
 updated: "2026-06-17"
----
+tier: supporting
+aliases:
+  - "Deepspeed For Dummy"
+  - "DeepSpeed for dummy"
+  - DeepSpeed_for_dummy
 
+---
 # DeepSpeed 入门：用更少的 GPU 训练更大的模型
 
 > **一句话理解**: DeepSpeed 是微软开源的「大模型训练加速器」，它能把模型权重、梯度和优化器状态切分成小块分散到多张 GPU 甚至电脑内存/硬盘上，让你在原来训练不了的超大模型上跑起来。
@@ -246,3 +251,5 @@ model = deepspeed.init_inference(
 - [[07_Model_Training/Model_Training_for_dummy]] — 模型训练入门
 - [[07_Model_Training/Distributed_Training/HF_Accelerate_DeepSpeed_Guide]] — Accelerate + DeepSpeed 极简指南
 - [[_concepts/hami]] — HAMi GPU 虚拟化
+
+- [[07_Model_Training/README|模型训练 (Model Training)]]

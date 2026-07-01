@@ -5,8 +5,20 @@ tags: ["hci", "human-ai-interaction", "ux", "agentic-ui"]
 summary: "人机交互研究人类如何与 AI 系统有效协作——从传统的 GUI 到对话式 AI 再到 Agentic UI 的演进。"
 created: 2026-06-12
 updated: 2026-06-12
+tier: core
+aliases:
+  - "Human Ai Interaction"
+  - "human ai interaction"
+lifecycle: draft
+provenance:
+  extracted: 0.70
+  inferred: 0.25
+  ambiguous: 0.05
+base_confidence: 0.7
+sources:
+  - 15_Agent_Production/Agent_Workflow/Agentic_UI_UX_Design_2026.md
+  - 15_Agent_Production/GenAI_L12_Designing_UX_for_AI_Applications.md
 ---
-
 # 人机交互 (Human-AI Interaction)
 
 > 人机交互研究人类如何与 AI 系统有效协作——从传统的 GUI 到对话式 AI 再到 Agentic UI 的演进。

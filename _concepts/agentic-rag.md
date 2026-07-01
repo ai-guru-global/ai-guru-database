@@ -26,8 +26,11 @@ lifecycle_changed: 2026-06-16
 tier: core
 created: 2026-06-16
 updated: 2026-06-16
----
+aliases:
+  - "Agentic Rag"
+  - "agentic rag"
 
+---
 # Agentic RAG
 
 ## 核心要点
@@ -112,3 +115,6 @@ Agent 判断：需要检索吗？
 - [[_concepts/reasoning-models]] — 推理模型
 - [[14_RAG_Systems/Advanced_RAG/Agentic_RAG_Guide]] — Agentic RAG 指南
 - [[14_RAG_Systems/Advanced_RAG/RAG_Advanced_2026]] — RAG 高级技术 2026
+- [[_concepts/agent-memory-systems]] — Agent Memory Systems
+- [[_concepts/ai-coding-paradigms]] — Ai Coding Paradigms
+- [[_concepts/rag-patterns]] — Rag Patterns

@@ -5,8 +5,12 @@ tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> Ready-to-use configuration templates for agent evaluation"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Config Templates"
+  - Config_Templates
 
+---
 # Configuration Templates
 
 > Ready-to-use configuration templates for agent evaluation

@@ -5,8 +5,13 @@ tags: ["deep-learning", "neural-networks", "backpropagation"]
 summary: "> 全面解析 Joint Embedding Predictive Architecture (JEPA)：自监督学习的世界模型、视频理解的核心架构、通向 AGI 的关键路径"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Jepa Architecture 2026"
+  - "JEPA Architecture 2026"
+  - JEPA_Architecture_2026
 
+---
 # JEPA 架构深度解析：LeCun 的世界模型之路
 
 > 全面解析 Joint Embedding Predictive Architecture (JEPA)：自监督学习的世界模型、视频理解的核心架构、通向 AGI 的关键路径

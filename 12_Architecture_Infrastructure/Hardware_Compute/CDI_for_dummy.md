@@ -5,8 +5,13 @@ tags: ["cdi", "container-device-interface", "kubernetes", "gpu", "beginner", "fo
 summary: "> **一句话理解**: CDI 就像酒店的「标准化入住需求单」——每块 GPU/加速器填一张同样的表，写清自己需要在房间里准备什么，任何酒店（容器运行时）看懂这张表就能把它安顿好。"
 created: "2026-06-15"
 updated: "2026-06-15"
----
+tier: supporting
+aliases:
+  - "Cdi For Dummy"
+  - "CDI for dummy"
+  - CDI_for_dummy
 
+---
 # CDI 容器设备接口 - 小白版
 
 > **一句话理解**: CDI 就像酒店的「标准化入住需求单」——每块 GPU/加速器填一张同样的表，写清自己需要在房间里准备什么，任何酒店（容器运行时）看懂这张表就能把它安顿好。
@@ -117,11 +122,11 @@ flowchart LR
 
 入门看懂了，想要 spec 文件结构、MIG 切片、RDMA、与 DRA 的关系等完整内容：
 
-→ [[12_Architecture_Infrastructure/CDI_Deep_Dive|CDI 容器设备接口标准深度解析]]
+→ [[12_Architecture_Infrastructure/Hardware_Compute/CDI_Deep_Dive|CDI 容器设备接口标准深度解析]]
 
 ## Related
 
-- [[12_Architecture_Infrastructure/CDI_Deep_Dive|CDI 深度解析]]
+- [[12_Architecture_Infrastructure/Hardware_Compute/CDI_Deep_Dive|CDI 深度解析]]
 - [[12_Architecture_Infrastructure/Architecture_Infrastructure_for_dummy|架构基础设施 - 小白版]]
 - [[12_Architecture_Infrastructure/README|架构与基础设施]]
 - [[01_Fundamentals/AI_Hardware/Chinese_AI_Chips_Deep_Dive|国产 AI 芯片（CDI 的最大受益者）]]

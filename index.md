@@ -1,13 +1,18 @@
 ---
 title: Wiki Index
----
+tier: peripheral
+aliases:
+  - Index
 
+---
 # Wiki Index
 
 *This index is automatically maintained. Last updated: 2026-06-19*
 
 ## Concepts
 
+- [[_concepts/activation-value]] — 激活值：神经网络神经元的输出响应强度 ( #deep-learning #neural-network #activation-function)
+- [[_concepts/gradient-descent]] — 梯度下降：最小化模型误差的参数优化算法 ( #deep-learning #optimization #gradient-descent)
 - [[_concepts/matryoshka-representation-learning]] — Matryoshka 表示学习：可截断的多尺度嵌入 ( #embeddings #rag #vector-database #matryoshka)
 - [[_concepts/cdi]] — CDI 容器设备接口：GPU/异构加速器统一接入容器的标准 ( #cdi #kubernetes #gpu #containerd)
 - [[_concepts/dra]] — DRA 动态资源分配：K8s 设备分配的现代机制，与 CDI 配对 ( #dra #kubernetes #gpu #scheduling)
@@ -33,6 +38,22 @@ title: Wiki Index
 - [[_concepts/kueue]] — Kueue：K8s 原生作业排队与配额系统 ( #kueue #kubernetes #scheduling #quota)
 - [[_concepts/lm-evaluation-harness]] — LM Evaluation Harness：EleutherAI LLM 评测框架 ( #lm-evaluation-harness #evaluation #benchmark)
 - [[_concepts/opencompass]] — OpenCompass：一站式大模型评测平台 ( #opencompass #evaluation #benchmark #chinese-llm)
+- [[_concepts/containerd]] — containerd：Kubernetes CRI 容器运行时 ( #containerd #kubernetes #cri #cncf)
+- [[_concepts/kubernetes]] — Kubernetes：容器编排平台 ( #kubernetes #k8s #orchestration #cncf)
+- [[_concepts/helm]] — Helm：Kubernetes 包管理器 ( #helm #kubernetes #package-manager #cncf)
+- [[_concepts/etcd]] — etcd：分布式键值存储 ( #etcd #kubernetes #distributed #consensus)
+- [[_concepts/opa]] — OPA：Open Policy Agent 策略引擎 ( #opa #policy #kubernetes #security)
+- [[_concepts/kyverno]] — Kyverno：Kubernetes 原生策略引擎 ( #kyverno #kubernetes #policy #security)
+- [[_concepts/falco]] — Falco：容器运行时安全检测 ( #falco #runtime-security #kubernetes #security)
+- [[_concepts/aws-bedrock]] — AWS Bedrock：亚马逊云托管基础模型服务 ( #aws-bedrock #cloud #foundation-model)
+- [[_concepts/azure-openai]] — Azure OpenAI：微软企业级 GPT 服务 ( #azure-openai #cloud #openai)
+- [[_concepts/vertex-ai]] — Google Vertex AI：GCP 统一 AI 平台 ( #vertex-ai #google-cloud #ai-platform)
+- [[_concepts/megatron-lm]] — Megatron-LM：NVIDIA 大规模 Transformer 训练框架 ( #megatron-lm #distributed-training #nvidia)
+- [[_concepts/fsdp]] — FSDP：PyTorch 全分片数据并行 ( #fsdp #pytorch #distributed-training)
+- [[_concepts/colossal-ai]] — Colossal-AI：统一分布式 AI 系统 ( #colossal-ai #distributed-training #hpc)
+- [[_concepts/triton]] — Triton Inference Server：NVIDIA 多模型推理服务 ( #triton #nvidia #model-serving)
+- [[_concepts/modal]] — Modal：无服务器 GPU 云平台 ( #modal #serverless #gpu #cloud)
+- [[_concepts/replicate]] — Replicate：开源模型托管与 API 市场 ( #replicate #model-hosting #api #cloud)
 - [[_concepts/oci-runtime]] — OCI Runtime Spec：容器运行时标准，CDI 注入的最终落点 ( #oci #container-runtime #runc)
 - [[_concepts/gpustack]] — GPUStack：开源 GPU 集群管理与私有 MaaS 平台 ( #deployment #inference #gpu-cluster #maas)
 - [[_concepts/embeddings-vectors-mrl-plain]] — Embedding、向量与 MRL 大白话 ( #embedding #vector #matryoshka #for-dummy)
@@ -47,9 +68,29 @@ title: Wiki Index
 
 ## Deep Dives
 
+### 云平台
+- [[12_Architecture_Infrastructure/Cloud_Providers/AWS_Bedrock_Deep_Dive]] — AWS Bedrock 深度解析 ( #aws-bedrock #cloud #foundation-model)
+- [[12_Architecture_Infrastructure/Cloud_Providers/Azure_OpenAI_Deep_Dive]] — Azure OpenAI 深度解析 ( #azure-openai #cloud #openai)
+- [[12_Architecture_Infrastructure/Cloud_Providers/Google_Vertex_AI_Deep_Dive]] — Google Vertex AI 深度解析 ( #vertex-ai #google-cloud #ai-platform)
+
+### 训练框架
+- [[07_Model_Training/Distributed_Training/Megatron_LM_Deep_Dive]] — Megatron-LM 深度解析 ( #megatron-lm #distributed-training #nvidia)
+- [[07_Model_Training/Distributed_Training/FSDP_Deep_Dive]] — FSDP 深度解析 ( #fsdp #pytorch #distributed-training)
+- [[07_Model_Training/Distributed_Training/Colossal_AI_Deep_Dive]] — Colossal-AI 深度解析 ( #colossal-ai #distributed-training)
+
+### 模型服务
+- [[10_Deployment_Inference/Inference_Engines/Triton_Inference_Server_Deep_Dive]] — Triton Inference Server 深度解析 ( #triton #nvidia #model-serving)
+- [[10_Deployment_Inference/Inference_Engines/Modal_Deep_Dive]] — Modal 深度解析 ( #modal #serverless #gpu)
+
+### 安全策略
+- [[17_Ethics_Safety/AI_Security_2026/OPA_Deep_Dive]] — OPA / Gatekeeper 深度解析 ( #opa #policy #kubernetes)
+- [[17_Ethics_Safety/AI_Security_2026/Kyverno_Deep_Dive]] — Kyverno 深度解析 ( #kyverno #kubernetes #policy)
+- [[17_Ethics_Safety/AI_Security_2026/Falco_Deep_Dive]] — Falco 深度解析 ( #falco #runtime-security #kubernetes)
+
+### RAG 与 Embedding
 - [[14_RAG_Systems/Embeddings/Matryoshka_Representation_Learning_Deep_Dive]] — Matryoshka Representation Learning 深度解析 ( #embeddings #rag #matryoshka)
 - [[14_RAG_Systems/Matryoshka_Representation_Learning_for_dummy]] — Matryoshka Representation Learning — 小白版 ( #embeddings #for-dummy #matryoshka)
-- [[20_Papers/Efficiency/Matryoshka_Representation_Learning_Deep_Dive]] — 论文深度解读: Matryoshka Representation Learning ( #paper #matryoshka)
+- [[20_Papers_and_Research/Efficiency/Matryoshka_Representation_Learning_Deep_Dive]] — 论文深度解读: Matryoshka Representation Learning ( #paper #matryoshka)
 - [[_concepts/embeddings-vectors-mrl-plain]] — Embedding、向量与 MRL 大白话 ( #embedding #vector #matryoshka #for-dummy)
 
 ## Entities
@@ -85,13 +126,13 @@ title: Wiki Index
 - [[01_Fundamentals/AI_Hardware/Chinese_AI_Chips_Deep_Dive]] — 国产 AI 芯片12家厂商深度解析 ( #ai-chip #ascend #cambricon #biren #chinese-llm)
 
 ### 容器与设备接入
-- [[12_Architecture_Infrastructure/CDI_Deep_Dive]] — CDI 容器设备接口标准:GPU/异构加速器统一接入 K8s ( #cdi #kubernetes #gpu #containerd #device-plugin)
-- [[12_Architecture_Infrastructure/DRA_Deep_Dive]] — DRA 动态资源分配:K8s 设备分配的未来,与 CDI 配对 ( #dra #kubernetes #gpu #scheduling)
-- [[12_Architecture_Infrastructure/MIG_Deep_Dive]] — MIG (Multi-Instance GPU):A100/H100/PPU 硬件级切片,多租户强隔离推理 ( #mig #gpu-partitioning #multi-tenant #a100 #h100)
-- [[12_Architecture_Infrastructure/HAMi_Deep_Dive]] — HAMi 深度解析:CNCF Sandbox 异构 GPU 虚拟化与调度 ( #hami #cncf #gpu-virtualization #kubernetes #heterogeneous)
-- [[12_Architecture_Infrastructure/HAMi_for_dummy]] — HAMi 入门:让 Kubernetes GPU 像 CPU 一样共享 ( #hami #for-dummy #gpu-sharing)
-- [[12_Architecture_Infrastructure/HAMi_Operation_Guide]] — HAMi 运维指南:安装、配置、升级与监控 ( #hami #operations #kubernetes)
-- [[13_AI_Ops/HAMi_Troubleshooting_Guide]] — HAMi 问题排查与故障解决指南 ( #hami #troubleshooting #ops)
+- [[12_Architecture_Infrastructure/Hardware_Compute/CDI_Deep_Dive]] — CDI 容器设备接口标准:GPU/异构加速器统一接入 K8s ( #cdi #kubernetes #gpu #containerd #device-plugin)
+- [[12_Architecture_Infrastructure/Hardware_Compute/DRA_Deep_Dive]] — DRA 动态资源分配:K8s 设备分配的未来,与 CDI 配对 ( #dra #kubernetes #gpu #scheduling)
+- [[12_Architecture_Infrastructure/Hardware_Compute/MIG_Deep_Dive]] — MIG (Multi-Instance GPU):A100/H100/PPU 硬件级切片,多租户强隔离推理 ( #mig #gpu-partitioning #multi-tenant #a100 #h100)
+- [[12_Architecture_Infrastructure/AI_Stack/HAMi_Deep_Dive]] — HAMi 深度解析:CNCF Sandbox 异构 GPU 虚拟化与调度 ( #hami #cncf #gpu-virtualization #kubernetes #heterogeneous)
+- [[12_Architecture_Infrastructure/AI_Stack/HAMi_for_dummy]] — HAMi 入门:让 Kubernetes GPU 像 CPU 一样共享 ( #hami #for-dummy #gpu-sharing)
+- [[12_Architecture_Infrastructure/AI_Stack/HAMi_Operation_Guide]] — HAMi 运维指南:安装、配置、升级与监控 ( #hami #operations #kubernetes)
+- [[13_AI_Ops/SRE_Reliability/HAMi_Troubleshooting_Guide]] — HAMi 问题排查与故障解决指南 ( #hami #troubleshooting #ops)
 - [[_references/cdi-spec]] — CDI 规范官方源引用(CNCF/Apache-2.0/运行时支持矩阵) ( #cdi #cncf #references)
 
 ### CNCF 云原生大模型 (Cloud Native AI)
@@ -150,23 +191,23 @@ title: Wiki Index
 - [[_references/ai-agents-for-beginners]] — Microsoft AI Agents for Beginners 外部源引用索引 ( #references #microsoft #ai-agents)
 
 ### Microsoft AI Agents for Beginners — 17 课深度页面
-- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents/Microsoft_AI_Agents_L00_Course_Setup]] — L00 课程环境：Python/.NET/Azure CLI/Foundry 与 keyless 认证 ( #microsoft-ai-agents-course #setup #azure-foundry)
-- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents/Microsoft_AI_Agents_L01_Intro]] — L01 AI Agent 简介与七种类型 ( #microsoft-ai-agents-course #agent-types)
-- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents/Microsoft_AI_Agents_L02_Frameworks]] — L02 MAF 与 Azure AI Agent Service 框架选型 ( #microsoft-ai-agents-course #frameworks)
-- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents/Microsoft_AI_Agents_L03_Design_Principles]] — L03 Agentic 设计三原则：Space/Time/Core ( #microsoft-ai-agents-course #design-principles #hax)
-- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents/Microsoft_AI_Agents_L04_Tool_Use]] — L04 工具使用设计模式与函数调用 ( #microsoft-ai-agents-course #tool-use)
-- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents/Microsoft_AI_Agents_L05_Agentic_RAG]] — L05 Agentic RAG 迭代检索-评估-自纠 ( #microsoft-ai-agents-course #rag)
-- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents/Microsoft_AI_Agents_L06_Trustworthy_Agents]] — L06 系统消息框架+五类威胁+HITL ( #microsoft-ai-agents-course #trust #security)
-- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents/Microsoft_AI_Agents_L07_Planning_Design]] — L07 任务分解+结构化输出+迭代重规划 ( #microsoft-ai-agents-course #planning)
-- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents/Microsoft_AI_Agents_L08_Multi_Agent]] — L08 多 Agent 模式：组聊/Hand-off/协同过滤 ( #microsoft-ai-agents-course #multi-agent)
-- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents/Microsoft_AI_Agents_L09_Metacognition]] — L09 元认知+Corrective RAG+代码生成 ( #microsoft-ai-agents-course #metacognition #corrective-rag)
-- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents/Microsoft_AI_Agents_L10_Production]] — L10 可观测性+离线/在线评估+成本三策略 ( #microsoft-ai-agents-course #production #observability)
-- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents/Microsoft_AI_Agents_L11_Agentic_Protocols]] — L11 MCP/A2A/NLWeb 三大协议对比 ( #microsoft-ai-agents-course #mcp #a2a #nlweb #protocols)
-- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents/Microsoft_AI_Agents_L12_Context_Engineering]] — L12 上下文工程+四类上下文+四大失败模式 ( #microsoft-ai-agents-course #context-engineering)
-- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents/Microsoft_AI_Agents_L13_Agent_Memory]] — L13 七种记忆+Mem0/Cognee/Azure AI Search ( #microsoft-ai-agents-course #memory)
-- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents/Microsoft_AI_Agents_L14_Microsoft_Agent_Framework]] — L14 MAF 深度：Agents/Threads/Middleware/Workflows ( #microsoft-ai-agents-course #maf #workflows)
-- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents/Microsoft_AI_Agents_L15_Browser_Use]] — L15 浏览器 Agent：Browser-Use+Playwright+CDP ( #microsoft-ai-agents-course #cua #browser-use)
-- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents/Microsoft_AI_Agents_L18_Securing_AI_Agents]] — L18 加密审计收据：Ed25519+JCS+哈希链 ( #microsoft-ai-agents-course #security #cryptography #audit)
+- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents_L00_Course_Setup]] — L00 课程环境：Python/.NET/Azure CLI/Foundry 与 keyless 认证 ( #microsoft-ai-agents-course #setup #azure-foundry)
+- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents_L01_Intro]] — L01 AI Agent 简介与七种类型 ( #microsoft-ai-agents-course #agent-types)
+- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents_L02_Frameworks]] — L02 MAF 与 Azure AI Agent Service 框架选型 ( #microsoft-ai-agents-course #frameworks)
+- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents_L03_Design_Principles]] — L03 Agentic 设计三原则：Space/Time/Core ( #microsoft-ai-agents-course #design-principles #hax)
+- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents_L04_Tool_Use]] — L04 工具使用设计模式与函数调用 ( #microsoft-ai-agents-course #tool-use)
+- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents_L05_Agentic_RAG]] — L05 Agentic RAG 迭代检索-评估-自纠 ( #microsoft-ai-agents-course #rag)
+- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents_L06_Trustworthy_Agents]] — L06 系统消息框架+五类威胁+HITL ( #microsoft-ai-agents-course #trust #security)
+- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents_L07_Planning_Design]] — L07 任务分解+结构化输出+迭代重规划 ( #microsoft-ai-agents-course #planning)
+- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents_L08_Multi_Agent]] — L08 多 Agent 模式：组聊/Hand-off/协同过滤 ( #microsoft-ai-agents-course #multi-agent)
+- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents_L09_Metacognition]] — L09 元认知+Corrective RAG+代码生成 ( #microsoft-ai-agents-course #metacognition #corrective-rag)
+- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents_L10_Production]] — L10 可观测性+离线/在线评估+成本三策略 ( #microsoft-ai-agents-course #production #observability)
+- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents_L11_Agentic_Protocols]] — L11 MCP/A2A/NLWeb 三大协议对比 ( #microsoft-ai-agents-course #mcp #a2a #nlweb #protocols)
+- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents_L12_Context_Engineering]] — L12 上下文工程+四类上下文+四大失败模式 ( #microsoft-ai-agents-course #context-engineering)
+- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents_L13_Agent_Memory]] — L13 七种记忆+Mem0/Cognee/Azure AI Search ( #microsoft-ai-agents-course #memory)
+- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents_L14_Microsoft_Agent_Framework]] — L14 MAF 深度：Agents/Threads/Middleware/Workflows ( #microsoft-ai-agents-course #maf #workflows)
+- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents_L15_Browser_Use]] — L15 浏览器 Agent：Browser-Use+Playwright+CDP ( #microsoft-ai-agents-course #cua #browser-use)
+- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents_L18_Securing_AI_Agents]] — L18 加密审计收据：Ed25519+JCS+哈希链 ( #microsoft-ai-agents-course #security #cryptography #audit)
 - [[90_Learn/courses/share_ai/learn_claude_code]] — 20 课 Claude Code 式 Harness 工程教程映射 ( #learning-paths #claude-code #agent-harness #course)
 - [[_references/learn-claude-code]] — Learn Claude Code 外部源引用索引 ( #references #claude-code)
 
@@ -206,11 +247,16 @@ title: Wiki Index
 - [[15_Agent_Production/Agent_Frameworks/AutoGen_Deep_Dive]] — AutoGen 深度解析：微软多 Agent 对话框架 ( #autogen #agent #multi-agent)
 
 ### 模型评估
-- [[08_Model_Evaluation/LM_Evaluation_Harness_Deep_Dive]] — LM Evaluation Harness 深度解析：EleutherAI LLM 评测框架 ( #lm-evaluation-harness #evaluation #benchmark)
-- [[08_Model_Evaluation/OpenCompass_Deep_Dive]] — OpenCompass 深度解析：一站式大模型评测平台 ( #opencompass #evaluation #benchmark)
+- [[08_Model_Evaluation/Evaluation_Tools/LM_Evaluation_Harness_Deep_Dive]] — LM Evaluation Harness 深度解析：EleutherAI LLM 评测框架 ( #lm-evaluation-harness #evaluation #benchmark)
+- [[08_Model_Evaluation/Evaluation_Tools/OpenCompass_Deep_Dive]] — OpenCompass 深度解析：一站式大模型评测平台 ( #opencompass #evaluation #benchmark)
+
+### 课题研究
+- [[20_Papers_and_Research/Research_README]] — 课题研究主页 ( #research #study)
+- [[20_Papers_and_Research/Research_Template]] — 课题研究模板 ( #research #template)
+- [[20_Papers_and_Research/Methodology/LLM_Inference_Research/02_分析与论证]] — 大模型推理入门：学校类比 19 概念 ( #research #llm-inference #school-analogy #beginner)
 
 ### 可观测与监控
-- [[13_AI_Ops/Prometheus_Grafana_Deep_Dive]] — Prometheus + Grafana 深度解析：AI 系统监控与可视化基座 ( #prometheus #grafana #monitoring #observability)
+- [[11_MLOps_Pipeline/Observability/Prometheus_Grafana_Deep_Dive]] — Prometheus + Grafana 深度解析：AI 系统监控与可视化基座 ( #prometheus #grafana #monitoring #observability)
 
 ### 安全与对齐
 - [[17_Ethics_Safety/Constitutional_AI_Deep_Dive]] — Constitutional AI 深度解析：Anthropic 核心安全方法论 ( #constitutional-ai #alignment #anthropic #safety)
@@ -226,18 +272,18 @@ title: Wiki Index
 - [[05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering_Complete_Guide]] — 提示词工程核心技术：结构、最佳实践、少样本、CoT、ReAct ( #prompt-engineering #llm)
 - [[05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering_Advanced_Apps]] — 提示词高级应用：RAG、多模态、安全、PromptOps ( #prompt-engineering #rag #multimodal)
 - [[05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering_Templates_Patterns]] — 提示词模板库、反模式与决策树 ( #prompt-engineering #templates #anti-patterns)
-- [[05_NLP_LLMs/Context_Engineering_Guide]] — 上下文工程权威指南：写入/选择/压缩/隔离四大策略 ( #context-engineering #llm)
-- [[05_NLP_LLMs/Context_Engineering_Patterns]] — 上下文工程模式：记忆架构、Graph RAG、XML 标签、反模式 ( #context-engineering #graph-rag #memory)
+- [[05_NLP_LLMs/Prompt_Engineering/Context_Engineering_Guide]] — 上下文工程权威指南：写入/选择/压缩/隔离四大策略 ( #context-engineering #llm)
+- [[05_NLP_LLMs/Prompt_Engineering/Context_Engineering_Patterns]] — 上下文工程模式：记忆架构、Graph RAG、XML 标签、反模式 ( #context-engineering #graph-rag #memory)
 
 ### Yeasy AI 知识库系列 — LLM 原理与架构
 - [[05_NLP_LLMs/Transformer_Deep_Dive]] — Transformer 深度解析：QKV 注意力、位置编码（RoPE/ALiBi）、完整架构 ( #transformer #attention #position-encoding)
 - [[05_NLP_LLMs/LLM_Training_Deep_Dive]] — LLM 训练深度解析：预训练、分布式训练（ZeRO/3D 并行）、对齐（RLHF/DPO/LoRA） ( #llm-training #distributed #rlhf #lora)
 - [[05_NLP_LLMs/LLM_Inference_Deep_Dive]] — LLM 推理深度解析：解码策略、KV Cache、Flash Attention、投机解码、PagedAttention ( #llm-inference #kv-cache #flash-attention)
 - [[05_NLP_LLMs/LLM_Architecture_Evolution]] — LLM 架构演进：BERT/GPT/Llama/DeepSeek 家族、MoE、SSM/Mamba ( #llm-architecture #moe #ssm)
-- [[05_NLP_LLMs/LLM_Internals_Architecture]] — 大模型架构内幕：序列建模演进、注意力机制详解、Transformer 组件、位置编码设计 ( #transformer #attention #rope #alibi)
-- [[05_NLP_LLMs/LLM_Internals_Training]] — 大模型训练内幕：预训练范式与 Scaling Law、AdamW/学习率调度、分布式训练、对齐 SFT/RLHF/DPO/LoRA ( #llm-training #scaling-law #distributed #alignment)
-- [[05_NLP_LLMs/LLM_Internals_Inference]] — 大模型推理内幕：解码策略、KV Cache/GQA/MLA、Flash Attention、量化、投机解码、连续批处理 ( #llm-inference #kv-cache #quantization #speculative-decoding)
-- [[05_NLP_LLMs/LLM_Internals_Models_Frontiers]] — 大模型家族与前沿：BERT 编码器、GPT/Llama/DeepSeek/Gemini/Claude 解码器、MoE/SSM/测试时计算 ( #llm #moe #mamba #test-time-compute)
+- [[05_NLP_LLMs/LLM_Architectures/LLM_Internals_Architecture]] — 大模型架构内幕：序列建模演进、注意力机制详解、Transformer 组件、位置编码设计 ( #transformer #attention #rope #alibi)
+- [[05_NLP_LLMs/LLM_Architectures/LLM_Internals_Training]] — 大模型训练内幕：预训练范式与 Scaling Law、AdamW/学习率调度、分布式训练、对齐 SFT/RLHF/DPO/LoRA ( #llm-training #scaling-law #distributed #alignment)
+- [[05_NLP_LLMs/LLM_Architectures/LLM_Internals_Inference]] — 大模型推理内幕：解码策略、KV Cache/GQA/MLA、Flash Attention、量化、投机解码、连续批处理 ( #llm-inference #kv-cache #quantization #speculative-decoding)
+- [[05_NLP_LLMs/LLM_Architectures/LLM_Internals_Models_Frontiers]] — 大模型家族与前沿：BERT 编码器、GPT/Llama/DeepSeek/Gemini/Claude 解码器、MoE/SSM/测试时计算 ( #llm #moe #mamba #test-time-compute)
 
 ### Yeasy AI 知识库系列 — AI 入门
 - [[00_AI_Introduction/AI_Reasoning_Models_Guide]] — 推理模型指南：System 1/2、推理计算、主流推理模型对比 ( #reasoning-models #inference-compute)
@@ -273,13 +319,13 @@ title: Wiki Index
 - [[17_Ethics_Safety/Agent_RAG_Security]] — Agent 与 RAG 安全：攻击面、工具安全、多 Agent 安全、Rule of Two ( #agent-security #rag-security)
 
 ### Yeasy 深度蒸馏 — 综合页与速查表
-- [[_meta/_synthesis-engineering-evolution]] — 从提示词工程到上下文工程到 Harness 工程的三阶演进 ( #synthesis #engineering-evolution)
-- [[_meta/_synthesis-llm-security-pipeline]] — 大模型安全全链路：从训练投毒到推理防御 ( #synthesis #security)
-- [[_meta/_synthesis-architecture-selection-guide]] — AI 系统架构选型决策树：从任务类型到技术栈 ( #synthesis #architecture #decision-tree)
-- [[_meta/_synthesis-memory-systems]] — AI 系统记忆体系全景：从 KV Cache 到长期知识图谱 ( #synthesis #memory)
-- [[_meta/cheatsheet-llm-inference]] — LLM 推理技术速查表：模型选型、优化技术、解码策略、引擎对比 ( #cheatsheet #inference)
-- [[_meta/cheatsheet-agent-design]] — 智能体架构设计速查表：认知层级、推理技术、记忆、框架选型 ( #cheatsheet #agent)
-- [[_meta/cheatsheet-security-defense]] — LLM 安全防御速查表：攻击映射、OWASP Top 10、分层检查清单 ( #cheatsheet #security)
+- [[_synthesis/synthesis-engineering-evolution]] — 从提示词工程到上下文工程到 Harness 工程的三阶演进 ( #synthesis #engineering-evolution)
+- [[_synthesis/synthesis-llm-security-pipeline]] — 大模型安全全链路：从训练投毒到推理防御 ( #synthesis #security)
+- [[_synthesis/synthesis-architecture-selection-guide]] — AI 系统架构选型决策树：从任务类型到技术栈 ( #synthesis #architecture #decision-tree)
+- [[_synthesis/synthesis-memory-systems]] — AI 系统记忆体系全景：从 KV Cache 到长期知识图谱 ( #synthesis #memory)
+- [[_meta/cheatsheets/cheatsheet-llm-inference]] — LLM 推理技术速查表：模型选型、优化技术、解码策略、引擎对比 ( #cheatsheet #inference)
+- [[_meta/cheatsheets/cheatsheet-agent-design]] — 智能体架构设计速查表：认知层级、推理技术、记忆、框架选型 ( #cheatsheet #agent)
+- [[_meta/cheatsheets/cheatsheet-security-defense]] — LLM 安全防御速查表：攻击映射、OWASP Top 10、分层检查清单 ( #cheatsheet #security)
 
 ## Synthesis
 

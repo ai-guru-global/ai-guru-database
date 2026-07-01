@@ -19,8 +19,11 @@ lifecycle: draft
 tier: core
 created: 2026-06-15
 updated: 2026-06-15
----
+aliases:
+  - "Prefill Decode Disaggregation"
+  - "prefill decode disaggregation"
 
+---
 # Prefill-Decode Disaggregation（PD 分离）
 
 ## 大白话

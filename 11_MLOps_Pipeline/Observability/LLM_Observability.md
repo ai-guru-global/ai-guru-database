@@ -5,10 +5,14 @@ tags: ["llmops", "observability", "trace", "hallucination", "toxicity", "pii", "
 summary: "> **一句话理解**: 传统 MLOps 监控漂移就够，LLM 应用要监控语义级失败——幻觉、毒性、PII 泄露、越狱，还要能在多步调用链里定位失败点。"
 created: 2026-06-15
 updated: 2026-06-15
-tier: core
+tier: supporting
 parent: "[[11_MLOps_Pipeline/LLMOps_2026]]"
----
+aliases:
+  - "Llm Observability"
+  - "LLM Observability"
+  - LLM_Observability
 
+---
 # LLM 可观测性
 
 > **一句话理解**: 传统 MLOps 监控漂移就够，LLM 应用要监控语义级失败——幻觉、毒性、PII 泄露、越狱，还要能在多步调用链里定位失败点。
@@ -304,6 +308,7 @@ graph TD
 - [[17_Ethics_Safety/Privacy_Preserving_AI/README]] — 隐私保护
 - [[15_Agent_Production/Agent_Evaluation/README]] — Agent 调用链评估
 - [[09_Testing/Weights_Biases_Deep_Dive]] — W&B 实验追踪
+- [[_synthesis/llm-observability-aiops|LLM 可观测性 × AIOps: 从系统监控到语义监控的范式跃迁]]
 
 ---
 

@@ -5,8 +5,13 @@ tags: ["ai-coding", "code-generation", "cursor", "github-copilot"]
 summary: "> **一句话**: MiniMax 提供高性价比的模型 API 和编程辅助，MiniClaw（VS Code + Cline + MiniMax）是稳定的 AI 编程组合。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Minimax Guide"
+  - "MiniMax Guide"
+  - MiniMax_Guide
 
+---
 # MiniMax / MiniClaw 使用指南
 
 > **一句话**: MiniMax 提供高性价比的模型 API 和编程辅助，MiniClaw（VS Code + Cline + MiniMax）是稳定的 AI 编程组合。

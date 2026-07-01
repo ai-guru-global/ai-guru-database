@@ -5,8 +5,13 @@ tags: ["nlp", "llm", "transformer", "gpt", "bert"]
 summary: '> **一句话秒懂**: 微调就像大学毕业生的专业培训——AI 已经上完"通识大学"(预训练),现在要针对具体工作(客服、医疗)进行"岗前培训"!'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: core
+aliases:
+  - "Fine Tuning Techniques For Dummy"
+  - "Fine tuning Techniques for dummy"
+  - Fine_tuning_Techniques_for_dummy
 
+---
 # 微调技术 - 小白版
 
 > **一句话秒懂**: 微调就像大学毕业生的专业培训——AI 已经上完"通识大学"(预训练),现在要针对具体工作(客服、医疗)进行"岗前培训"!

@@ -5,8 +5,9 @@ tags: ["visualization", "charts", "dashboards", "data-viz"]
 summary: "> **一句话理解**: 本章节提供 AI Guru 知识库的交互式可视化界面，将 22 个章节、500+ 文档的知识网络以图谱形式呈现，支持直观浏览和探索。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
 
+---
 # 知识图谱可视化 (Visualization)
 
 > **一句话理解**: 本章节提供 AI Guru 知识库的交互式可视化界面，将 22 个章节、500+ 文档的知识网络以图谱形式呈现，支持直观浏览和探索。
@@ -55,7 +56,7 @@ python -m http.server 8080
 
 ## 与其他章节的关联
 
-- [91_Notes](../91_Notes/AI_Concept_Knowledge_Graph.md) — 概念知识图谱的数据来源
+- [_meta/notes](../_meta/notes/AI_Concept_Knowledge_Graph.md) — 概念知识图谱的数据来源
 - [90_Learn](../90_Learn/README.md) — 学习路径的可视化呈现
 
 ---
@@ -69,8 +70,8 @@ python -m http.server 8080
 - [[94_Visualization/README_for_dummy|94 Visualization — 小白版 📊]]
 - [[94_Visualization/Model_Interpretability_Visualization|模型可解释性可视化]]
 
-- [[94_Visualization/atlas/README]] — AI Guru Knowledge Atlas（D3） (共享: charts, dashboards, data-viz, visualization)
-- [[94_Visualization/atlas/docs/performance]] — 性能审计报告（Lighthouse） (共享: charts, dashboards, data-viz, visualization)
+- [[_projects/atlas/README]] — AI Guru Knowledge Atlas（D3） (共享: charts, dashboards, data-viz, visualization)
+- [[_projects/atlas/docs/performance]] — 性能审计报告（Lighthouse） (共享: charts, dashboards, data-viz, visualization)
 - [[94_Visualization/Training_Monitoring_Visualization.md|Training_Monitoring_Visualization]]
 - [[94_Visualization/Visualization_for_dummy.md|Visualization_for_dummy]]
 - [[94_Visualization/AI_System_Dashboard.md|AI_System_Dashboard]]

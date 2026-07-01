@@ -5,8 +5,12 @@ tags: ["rag", "retrieval", "vector-database", "embedding"]
 summary: "> 🎯 **目标**：理解如何让 AI 模型访问你自己的数据，而无需重新训练。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: core
+aliases:
+  - "Rag In Nutshell"
+  - "RAG in nutshell"
 
+---
 # RAG (检索增强生成) 速成指南
 
 > 🎯 **目标**：理解如何让 AI 模型访问你自己的数据，而无需重新训练。

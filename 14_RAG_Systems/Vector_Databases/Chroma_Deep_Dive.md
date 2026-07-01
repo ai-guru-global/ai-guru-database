@@ -5,8 +5,12 @@ tags: ["rag", "retrieval", "vector-database", "embedding"]
 summary: "> **一句话理解**: Chroma 是最小的嵌入式向量数据库——专为 AI 应用设计，零配置、易上手、本地优先，LLM 时代的向量存储入门首选。"
 created: "2026-05-31"
 updated: "2026-05-31"
----
+tier: supporting
+aliases:
+  - "Chroma Deep Dive"
+  - Chroma_Deep_Dive
 
+---
 # Chroma: 轻量级向量数据库
 
 > **一句话理解**: Chroma 是最小的嵌入式向量数据库——专为 AI 应用设计，零配置、易上手、本地优先，LLM 时代的向量存储入门首选。

@@ -5,8 +5,9 @@ tags: ["learning", "education", "courses", "study-path"]
 summary: '> **从"AI是什么"到"如何构建AI系统"，按概念递进，因人施教。**'
 created: '2026-05-31'
 updated: '2026-06-15'
----
+tier: supporting
 
+---
 # Learn — AI Guru 概念入门路径
 
 > **从"AI 是什么"到"如何构建 AI 系统"，按概念递进，因人施教。**
@@ -127,7 +128,7 @@ Stage 0: AI 觉醒 ────────────────────�
 | [外部课程映射](./courses/) | 18 门外部课程的章节映射（微软、HF、Datawhale 等） |
 | [概念层次卡片](./_concepts/) | Stage 0-4 每个阶段的核心概念卡片 |
 | [里程碑自测](./guides/milestones.md) | 每个 Stage 的自测问题与检查点 |
-| [概念知识图谱](../91_Notes/AI_Concept_Knowledge_Graph.md) | 800+ 概念的完整依赖关系图 |
+| [概念知识图谱](../_meta/notes/AI_Concept_Knowledge_Graph.md) | 800+ 概念的完整依赖关系图 |
 | [新手导航（章节版）](../README_for_dummy.md) | 按章节组织的入门指南 |
 | [500+ AI Projects](../_references/500-ai-projects.md) | 500+ AI/ML/DL/CV/NLP 实战项目合集索引 |
 

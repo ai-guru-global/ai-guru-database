@@ -5,8 +5,13 @@ tags: ["ai4s", "biology", "protein-folding", "drug-discovery", "alphafold", "gen
 summary: "> **一句话理解**: AI 正在将生物学从一门“观察学科”变为一门“预测学科”——如果说显微镜让我们看见了生命，那么 AI 正在让我们理解生命的“源代码”并能够重新编写它。"
 created: 2026-06-04
 updated: 2026-06-04
----
+tier: supporting
+aliases:
+  - "Protein Folding And Drug Discovery 2026"
+  - "Protein Folding and Drug Discovery 2026"
+  - Protein_Folding_and_Drug_Discovery_2026
 
+---
 # AI for Science: Protein Folding and Drug Discovery 2026
 
 > **一句话理解**: AI 正在将生物学从一门“观察学科”变为一门“预测学科”——如果说显微镜让我们看见了生命，那么 AI 正在让我们理解生命的“源代码”并能够重新编写它。

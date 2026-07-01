@@ -5,8 +5,13 @@ tags: ["learning", "education", "courses", "study-path"]
 summary: '> **"在你学习如何建造之前，先理解你在建造什么。"**'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Stage0 Awakening"
+  - "stage0 awakening"
+  - stage0_awakening
 
+---
 # Stage 0: AI 觉醒
 
 > **"在你学习如何建造之前，先理解你在建造什么。"**

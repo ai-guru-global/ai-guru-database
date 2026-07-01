@@ -4,8 +4,12 @@ category: -synthesis
 tags: [synthesis, career, interviews, experience, practitioners]
 summary: AI 岗位面试准备与长期职业发展的交叉视角，从应试策略到能力沉淀。
 created: 2026-06-12
----
+tier: core
+aliases:
+  - "Career Interviews"
+  - "career interviews"
 
+---
 # AI 面试与职业发展
 
 ## The Connection

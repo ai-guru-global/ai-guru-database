@@ -5,8 +5,13 @@ tags: ["fundamentals", "math", "algorithms", "basics"]
 summary: '> **一句话概括**: 这一章帮你打好地基——了解 AI 背后需要用到的基本"常识"。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Readme For Dummy"
+  - "README for dummy"
+  - README_for_dummy
 
+---
 # 基础理论 - 新手导航
 
 > **一句话概括**: 这一章帮你打好地基——了解 AI 背后需要用到的基本"常识"。

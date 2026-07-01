@@ -5,8 +5,12 @@ tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> 🎯 **目标**：完整收录 38 家开发团队、451+ 个 Agent Skills 的生态全景，作为快速查找和选型参考。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Agent Skills Ecosystem Catalog"
+  - Agent_Skills_Ecosystem_Catalog
 
+---
 # Agent Skills 生态目录
 
 > 🎯 **目标**：完整收录 38 家开发团队、451+ 个 Agent Skills 的生态全景，作为快速查找和选型参考。

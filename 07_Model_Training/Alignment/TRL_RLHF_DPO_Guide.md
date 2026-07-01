@@ -5,8 +5,13 @@ tags: ["model-training", "rlhf", "dpo", "trl", "alignment", "huggingface"]
 summary: "> **一句话理解**: Hugging Face TRL 库是将基础模型转化为符合人类偏好的 Chat 模型的瑞士军刀，它集成了 SFT、RM、PPO 和当前最流行的 DPO 训练流水线。"
 created: "2026-06-12"
 updated: "2026-06-12"
----
+tier: supporting
+aliases:
+  - "Trl Rlhf Dpo Guide"
+  - "TRL RLHF DPO Guide"
+  - TRL_RLHF_DPO_Guide
 
+---
 # TRL 实战：基于 Hugging Face 的 RLHF 与 DPO 模型对齐
 
 > **一句话理解**: Hugging Face `trl` (Transformer Reinforcement Learning) 库是将基础大模型（Base Model）转化为符合人类偏好的对话模型（Chat/Instruct Model）的“瑞士军刀”。它不仅支持传统的 PPO 强化学习方案，还高度集成了当前轻量高效的 DPO、ORPO 等新一代对齐算法。
@@ -183,5 +188,5 @@ DPO 会最大化模型对 `chosen` 回答的生成概率，同时极力惩罚 `r
 
 ## 相关阅读
 - [[05_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026]]
-- [[20_Papers/Alignment/RLHF_DPO_Deep_Dive]]
+- [[20_Papers_and_Research/Alignment/RLHF_DPO_Deep_Dive]]
 - [[07_Model_Training/Optimization/Optimization_for_dummy]]

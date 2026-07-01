@@ -5,8 +5,13 @@ tags: ["ai-coding", "code-generation", "cursor", "github-copilot"]
 summary: "> **一句话**: 智谱 GLM 系列模型通过 OpenCode 和 Crush 接入，是高性价比的国产编程辅助工具，需注意周额度刷新周期。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Glm Guide"
+  - "GLM Guide"
+  - GLM_Guide
 
+---
 # GLM 使用指南
 
 > **一句话**: 智谱 GLM 系列模型通过 OpenCode 和 Crush 接入，是高性价比的国产编程辅助工具，需注意周额度刷新周期。

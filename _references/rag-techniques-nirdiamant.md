@@ -9,8 +9,11 @@ created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
 tier: core
----
+aliases:
+  - "Rag Techniques Nirdiamant"
+  - "rag techniques nirdiamant"
 
+---
 # RAG 技术大全 (27.9k)
 
 > **一句话理解**: 社区驱动的 RAG 技术集合(27.9k star),含 42+ 可运行 Notebook,覆盖从基础到前沿的全部 RAG 技术。
@@ -79,5 +82,5 @@ tier: core
 | 34 | Corrective RAG | 纠正性 RAG |
 | 35 | Sophisticated Controllable Agent | 复杂可控 Agent |
 
-> **关联**: -> [[14_RAG_Systems|RAG 系统]] | [[20_Papers/Retrieval/RAG_Deep_Dive|RAG 论文]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[14_RAG_Systems|RAG 系统]] | [[20_Papers_and_Research/Retrieval/RAG_Deep_Dive|RAG 论文]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
 

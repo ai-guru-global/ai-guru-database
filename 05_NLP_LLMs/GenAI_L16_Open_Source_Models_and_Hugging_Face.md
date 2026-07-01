@@ -8,8 +8,13 @@ updated: "2026-06-12"
 source_url: "https://raw.githubusercontent.com/microsoft/generative-ai-for-beginners/main/translations/zh-CN/16-open-source-models/README.md"
 course: "Microsoft Generative AI for Beginners"
 lesson_number: 16
----
+tier: supporting
+aliases:
+  - "Genai L16 Open Source Models And Hugging Face"
+  - "GenAI L16 Open Source Models and Hugging Face"
+  - GenAI_L16_Open_Source_Models_and_Hugging_Face
 
+---
 ## 学习目标
 
 完成本课后，你将：

@@ -1,6 +1,10 @@
 ---
 title: RAG 检索增强生成
 category: -concepts
+aliases:
+  - RAG
+  - Retrieval-Augmented Generation
+  - 检索增强生成
 tags:
 - rag
 - retrieval
@@ -123,6 +127,7 @@ Dify适合企业内部平台（功能完整、可视化），Haystack适合企�
 - [[_concepts/agentic-rag]] — Agentic RAG
 - [[_concepts/text2sql]] — Text2SQL
 - [[14_RAG_Systems/Agentic_RAG_Applications_for_dummy]] — Agentic RAG 应用大白话
+- [[_concepts/rag-patterns]] — Rag Patterns
 
 ---
 

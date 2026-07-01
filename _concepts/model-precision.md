@@ -29,8 +29,11 @@ lifecycle_changed: 2026-06-16
 tier: core
 created: 2026-06-16 00:00:00+00:00
 updated: 2026-06-16 00:00:00+00:00
----
+aliases:
+  - "Model Precision"
+  - "model precision"
 
+---
 # 模型精度 (Model Precision & Accuracy)
 
 ## 核心要点

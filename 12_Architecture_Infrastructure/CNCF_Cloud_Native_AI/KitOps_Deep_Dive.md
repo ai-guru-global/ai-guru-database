@@ -5,8 +5,13 @@ tags: ["cncf", "kitops", "modelkit", "oci", "mlops", "packaging", "llm"]
 summary: "> **一句话理解**: KitOps 定义了 ModelKit——把大模型权重/代码/数据集/配置/文档打成一个 OCI 制品(可签名、可版本、可推任意镜像仓库),解决「模型在生产环境的散装搬运」和供应链安全问题。"
 created: "2026-06-16"
 updated: "2026-06-16"
----
+tier: supporting
+aliases:
+  - "Kitops Deep Dive"
+  - "KitOps Deep Dive"
+  - KitOps_Deep_Dive
 
+---
 # KitOps (ModelKit): 大模型制品打包标准
 
 > **一句话理解**: KitOps 定义了 ModelKit——把大模型权重/代码/数据集/配置/文档打成一个 OCI 制品(可签名、可版本、可推任意镜像仓库),解决「模型在生产环境的散装搬运」和供应链安全问题。

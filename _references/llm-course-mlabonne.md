@@ -9,8 +9,11 @@ created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
 tier: core
----
+aliases:
+  - "Llm Course Mlabonne"
+  - "llm course mlabonne"
 
+---
 # MLabonne LLM 课程 (80k)
 
 > **一句话理解**: GitHub 最受欢迎的 LLM 学习路线(80k star),含三大部分:LLM 基础、LLM 科学家、LLM 工程师,附带 Colab 实战 Notebook。

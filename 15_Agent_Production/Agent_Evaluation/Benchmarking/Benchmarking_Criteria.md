@@ -5,8 +5,12 @@ tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> Comprehensive evaluation criteria for AI agent assessment"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: core
+aliases:
+  - "Benchmarking Criteria"
+  - Benchmarking_Criteria
 
+---
 # Benchmarking Criteria
 
 > Comprehensive evaluation criteria for AI agent assessment

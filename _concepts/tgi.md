@@ -23,8 +23,10 @@ lifecycle: stable
 tier: core
 created: 2026-06-16
 updated: 2026-06-16
----
+aliases:
+  - Tgi
 
+---
 # TGI (Text Generation Inference)
 
 > HuggingFace 出品的 LLM 推理「发动机」——专为生产级文本生成服务优化。

@@ -11,8 +11,12 @@ created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
 tier: supporting
----
+aliases:
+  - "Llm Gateway Comparison 2026"
+  - "LLM Gateway Comparison 2026"
+  - LLM_Gateway_Comparison_2026
 
+---
 # LLM 网关对比 2026: LiteLLM vs Portkey vs Kong
 
 > **一句话理解**: LLM 网关是统一管理多 LLM 供应商的关键基础设施,本文对比 LiteLLM、Portkey、Kong 等主流方案的架构与适用场景。
@@ -82,5 +86,5 @@ response = completion(
 | 大型企业 | Kong AI Gateway (企业级管控) |
 | 已有 API 网关 | 在现有网关上加 LLM 插件 |
 
-> **关联**: -> [[14_AI_Gateway|AI 网关]] | [[14_AI_Gateway/LiteLLM_Deep_Dive|LiteLLM]] | [[14_AI_Gateway/Portkey_Deep_Dive|Portkey]] | [[14_AI_Gateway/Kong_AI_Gateway_Deep_Dive|Kong]]
+> **关联**: -> [[12_Architecture_Infrastructure/AI_Gateway|AI 网关]] | [[12_Architecture_Infrastructure/AI_Gateway/LiteLLM_Deep_Dive|LiteLLM]] | [[12_Architecture_Infrastructure/AI_Gateway/Portkey_Deep_Dive|Portkey]] | [[12_Architecture_Infrastructure/AI_Gateway/Kong_AI_Gateway_Deep_Dive|Kong]]
 

@@ -5,6 +5,7 @@ tags: ["cloud-ops", "devops", "sre", "automation"]
 summary: '> **产品定位**: 利用 Google Edge Gallery 生态系统，在移动设备上本地运行 Gemma4 等模型，实现"拍照即运维"——拍摄错误页面/日志，本地执行 Skills 完成诊断、分析、操作。'
 created: '2026-05-31'
 updated: '2026-05-31'
+tier: supporting
 ---
 
 # Mobile AI Ops: 基于 Google Edge Gallery 的手拍即运维产品设计

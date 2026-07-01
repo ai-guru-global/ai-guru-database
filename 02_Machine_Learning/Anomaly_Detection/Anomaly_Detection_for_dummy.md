@@ -5,8 +5,13 @@ tags: ["machine-learning", "supervised", "unsupervised"]
 summary: '> **一句话秒懂**: 异常检测就像"在班里找出与众不同的人"——大部分同学成绩在 60~90 分之间，突然有个人考了 0 分或 100 分，那就是"异常"。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Anomaly Detection For Dummy"
+  - "Anomaly Detection for dummy"
+  - Anomaly_Detection_for_dummy
 
+---
 # 异常检测 - 小白版
 
 > **一句话秒懂**: 异常检测就像"在班里找出与众不同的人"——大部分同学成绩在 60~90 分之间，突然有个人考了 0 分或 100 分，那就是"异常"。

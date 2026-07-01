@@ -3,8 +3,13 @@ title: "AI 伦理、安全与未来：从偏见到 AGI 与量子硬件"
 tags: [ai-ethics, ai-safety, bias, alignment, deepfake, employment, agi, hardware, gpu, tpu, npu, quantum-computing, beginner]
 source: yeasy/ai_beginner_guide
 created: 2026-06-19
----
+tier: peripheral
+aliases:
+  - "Ai Ethics And Future For Beginners"
+  - "AI Ethics And Future For Beginners"
+  - AI_Ethics_And_Future_For_Beginners
 
+---
 # AI 伦理、安全与未来：从偏见到 AGI 与量子硬件
 
 > **一句话理解**: AI 就像一面镜子照出人类社会的偏见——它会"歧视"、会"换脸"、会"抢饭碗"；同时它的大脑是芯片（GPU/TPU/NPU），而量子计算可能在密码、药物、优化上带来范式变化；面对这些，理性的姿态是：理解风险边界、拥抱人机协作、参与塑造我们想要的 AI 未来。

@@ -5,8 +5,13 @@ tags: ["reinforcement-learning", "agent", "mdp"]
 summary: '> **一句话理解**: PPO 就像"安全的学习步伐"——它限制每次更新的幅度，防止策略变化太大导致性能崩溃，同时保持样本效率，是工程上最实用的策略梯度算法。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Ppo Deep Dive"
+  - "PPO Deep Dive"
+  - PPO_Deep_Dive
 
+---
 # PPO 深度解读 - OpenAI 默认强化学习算法
 
 > **一句话理解**: PPO 就像"安全的学习步伐"——它限制每次更新的幅度，防止策略变化太大导致性能崩溃，同时保持样本效率，是工程上最实用的策略梯度算法。

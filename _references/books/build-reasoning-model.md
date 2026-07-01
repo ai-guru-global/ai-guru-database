@@ -9,8 +9,11 @@ created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
 tier: supporting
----
+aliases:
+  - "Build Reasoning Model"
+  - "build reasoning model"
 
+---
 # Build a Reasoning Model
 
 > **一句话理解**: 从零构建推理模型.作者:Manning.

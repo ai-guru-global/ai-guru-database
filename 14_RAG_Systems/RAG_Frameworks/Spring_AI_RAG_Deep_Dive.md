@@ -2,18 +2,23 @@
 title: Spring AI RAG 深度解析
 category: 14-rag-systems
 tags: ["rag", "retrieval", "vector-database", "embedding"]
-summary: "> 📚 **Spring AI 基础**: 如果你还不熟悉 Spring AI 的核心概念，请先阅读 [Spring AI 深度解析](../01_Fundamentals/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md)。"
+summary: "> 📚 **Spring AI 基础**: 如果你还不熟悉 Spring AI 的核心概念，请先阅读 [Spring AI 深度解析](01_Fundamentals/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md)。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: core
+aliases:
+  - "Spring Ai Rag Deep Dive"
+  - "Spring AI RAG Deep Dive"
+  - Spring_AI_RAG_Deep_Dive
 
+---
 # Spring AI RAG 深度解析
 
-> 📚 **Spring AI 基础**: 如果你还不熟悉 Spring AI 的核心概念，请先阅读 [Spring AI 深度解析](../01_Fundamentals/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md)。
+> 📚 **Spring AI 基础**: 如果你还不熟悉 Spring AI 的核心概念，请先阅读 [Spring AI 深度解析](01_Fundamentals/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md)。
 >
 > **一句话理解**: Spring AI RAG 是用 Spring 的方式构建检索增强生成系统 —— 从文档加载、分块策略、向量存储到检索增强的完整 Pipeline，让 Java 企业应用拥有知识库问答能力。
 
-> **相关文档**: [Spring AI 深度解析](../01_Fundamentals/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md) | [Spring AI 架构设计](../12_Architecture_Infrastructure/Spring_AI_Architecture.md) | [Milvus 深度解析](./Milvus_Deep_Dive.md) | [RAG 高级专题](./RAG_Advanced_2026.md) | [RAG 基础入门](./RAG_Systems_for_dummy.md)
+> **相关文档**: [Spring AI 深度解析](01_Fundamentals/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md) | [Spring AI 架构设计](12_Architecture_Infrastructure/Architecture_Overview/Spring_AI_Architecture) | [Milvus 深度解析](14_RAG_Systems/Vector_Databases/Milvus_Deep_Dive.md) | [RAG 高级专题](14_RAG_Systems/Advanced_RAG/RAG_Advanced_2026.md) | [RAG 基础入门](14_RAG_Systems/RAG_Systems_for_dummy.md)
 
 ---
 

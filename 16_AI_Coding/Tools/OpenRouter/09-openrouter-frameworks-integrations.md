@@ -6,7 +6,13 @@ tags:
 - ai-coding
 created: 2026-06-12
 category: 16-ai-coding-tools-openrouter
-summary: ""
+tier: peripheral
+aliases:
+  - "Openrouter Frameworks Integrations"
+  - "openrouter frameworks integrations"
+
+updated: 2026-06-30
+summary: "框架集成与生态系统 — 专题文档"
 ---
 title: 框架集成与生态系统
 description: '**文档类型**: 集成指南 | **最后更新**: 2026-03 | **关键词**: OpenRouter, Frameworks,

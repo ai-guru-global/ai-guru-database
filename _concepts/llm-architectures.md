@@ -21,8 +21,11 @@ lifecycle_changed: 2026-05-31
 tier: core
 created: 2026-05-31T00:00:00Z
 updated: 2026-05-31T00:00:00Z
----
+aliases:
+  - "Llm Architectures"
+  - "llm architectures"
 
+---
 # LLM架构
 
 ## 概述
@@ -111,7 +114,7 @@ MHA每头独立KV（精度高但内存大），MQA所有头共享一组KV（省�
 
 ## Related
 
-- [[05_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/README]] — PEFT 2026 (参数高效微调) (共享: bert, gpt, llm, nlp)
+- [[05_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026]] — PEFT 2026 (参数高效微调) (共享: bert, gpt, llm, nlp)
 - [[05_NLP_LLMs/Fine_tuning_Techniques/README]] — 微调技术 (Fine-tuning Techniques) (共享: bert, gpt, llm, nlp)
 - [[05_NLP_LLMs/LLM_Architectures/LLM-Basics-in-nutshell]] — 大语言模型基础速成指南 (共享: bert, gpt, llm, nlp)
 - [[05_NLP_LLMs/Multimodal_Models/Multimodal_Architectures_2026]] — 多模态模型架构 2026：从 GPT-4V 到原生多模态 AGI (共享: bert, gpt, llm, nlp)

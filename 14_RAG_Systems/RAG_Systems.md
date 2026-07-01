@@ -5,8 +5,13 @@ tags: ["rag", "retrieval", "vector-database", "embedding"]
 summary: "> **一句话理解**: 就像开卷考试,LLM 可以先翻书查资料再回答问题,而不是只靠记忆硬答。"
 created: 2026-05-31
 updated: 2026-06-15
----
+tier: core
+aliases:
+  - "Rag Systems"
+  - "RAG Systems"
+  - RAG_Systems
 
+---
 # RAG 系统 (RAG Systems)
 
 > **一句话理解**: 就像开卷考试,LLM 可以先翻书查资料再回答问题,而不是只靠记忆硬答。
@@ -503,9 +508,9 @@ evaluation_prompt = f"""
 
 ### 进阶推荐
 
-- [LLM 推理引擎选型指南](../10_Deployment_Inference/LLM_Inference_Engine_Selection_Guide.md) - RAG 系统的推理引擎选型
-- [vLLM Deep Dive](../10_Deployment_Inference/vLLM_Deep_Dive.md) - 通用生产级 RAG 推理引擎
-- [SGLang Deep Dive](../10_Deployment_Inference/SGLang_Deep_Dive.md) - 多轮 / RAG 前缀缓存优化
+- [LLM 推理引擎选型指南](../10_Deployment_Inference/Inference_Engines/LLM_Inference_Engine_Selection_Guide.md) - RAG 系统的推理引擎选型
+- [vLLM Deep Dive](../10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive.md) - 通用生产级 RAG 推理引擎
+- [SGLang Deep Dive](../10_Deployment_Inference/Inference_Engines/SGLang_Deep_Dive.md) - 多轮 / RAG 前缀缓存优化
 - [模型部署与推理](../10_Deployment_Inference/Deployment_Inference.md) - RAG 系统的生产环境部署
 - [Prompt 工程](../05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering.md) - 优化 RAG 的 Prompt 设计
 - [模型评估](../08_Model_Evaluation/Model_Evaluation.md) - RAG 系统的效果评估方法

@@ -5,8 +5,13 @@ tags: ["ai-agents", "huggingface", "tools", "agent-skills", "spaces"]
 summary: "> **一句话理解**: Hugging Face 的 Tool 生态允许 AI Agent 直接将 Hub 上的数十万个视觉、音频、文本模型当作普通的 Python 函数调用，极大扩展了 Agent 的多模态能力边界。"
 created: "2026-06-12"
 updated: "2026-06-12"
----
+tier: supporting
+aliases:
+  - "Huggingface Hub Tools"
+  - "HuggingFace Hub Tools"
+  - HuggingFace_Hub_Tools
 
+---
 # Hugging Face Hub Tools: 将十万模型化为 Agent 技能
 
 > **一句话理解**: Hugging Face 的 Tool 生态允许 AI Agent 直接将 Hub 上的数十万个视觉、音频、文本模型当作普通的 Python 函数调用，极大扩展了 Agent 的多模态能力边界。

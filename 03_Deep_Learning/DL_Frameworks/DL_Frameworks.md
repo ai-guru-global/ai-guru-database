@@ -5,8 +5,13 @@ tags: ["deep-learning", "frameworks", "pytorch", "tensorflow", "jax"]
 summary: "主流深度学习框架的对比与选型指南——PyTorch、TensorFlow、JAX、Keras 各有生态和适用场景。"
 created: 2026-06-15
 updated: 2026-06-15
----
+tier: supporting
+aliases:
+  - "Dl Frameworks"
+  - "DL Frameworks"
+  - DL_Frameworks
 
+---
 # 深度学习框架概览 (DL Frameworks)
 
 > 主流深度学习框架的对比与选型指南——PyTorch、TensorFlow、JAX、Keras 各有生态和适用场景。

@@ -26,8 +26,11 @@ lifecycle_changed: 2026-06-16
 tier: core
 created: 2026-06-16
 updated: 2026-06-16
----
+aliases:
+  - "Tool Calling Safety"
+  - "tool calling safety"
 
+---
 # 工具调用安全
 
 ## 核心要点

@@ -5,8 +5,11 @@ tags: ["talks", "speeches", "insights", "leaders"]
 summary: "1. **“Doomsday predictions are just ridiculous.” / “末日论很荒谬。”**"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - Sayings
 
+---
 # Yann LeCun 关于 AI 的观点 (Yann LeCun on AI)
 
 1. **“Doomsday predictions are just ridiculous.” / “末日论很荒谬。”** 

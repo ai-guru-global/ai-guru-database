@@ -5,8 +5,13 @@ tags: ["computer-vision", "cnn", "image-processing"]
 summary: '> **一句话秒懂**: 图像分类就像玩"你画我猜"——让电脑看图猜是猫还是狗;而目标检测更厉害,不仅要猜对,还要指出"猫在左上角,狗在右下角"!'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Image Classification Detection For Dummy"
+  - "Image Classification Detection for dummy"
+  - Image_Classification_Detection_for_dummy
 
+---
 # 图像分类与检测 - 小白版 👀
 
 > **一句话秒懂**: 图像分类就像玩"你画我猜"——让电脑看图猜是猫还是狗;而目标检测更厉害,不仅要猜对,还要指出"猫在左上角,狗在右下角"!

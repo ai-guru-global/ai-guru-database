@@ -6,8 +6,12 @@ summary: "> 从序列建模的根本挑战出发，逐层拆解 Transformer 的�
 source: "_sources/yeasy/llm_internals/ (Ch1-4)"
 created: 2026-06-17
 updated: 2026-06-17
----
+tier: supporting
+aliases:
+  - "Transformer Deep Dive"
+  - Transformer_Deep_Dive
 
+---
 # Transformer 深度剖析：从 QKV 到完整架构
 
 > **核心命题**: Transformer 完全抛弃循环和卷积结构，仅用注意力机制 + 前馈网络 + 位置编码构建整个模型，同时解决了序列建模的三大根本难题——变长输入、长距离依赖、计算效率。

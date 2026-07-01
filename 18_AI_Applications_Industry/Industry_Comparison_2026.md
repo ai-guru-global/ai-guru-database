@@ -5,8 +5,12 @@ tags: ["ai-applications", "industry", "finance", "healthcare"]
 summary: "> **一句话理解**: 本章节横向对比 10 大行业的 AI 应用现状——从成熟度、数据特点、技术方案到合规要求，帮助你快速判断哪个行业的 AI 机会最适合你。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Industry Comparison 2026"
+  - Industry_Comparison_2026
 
+---
 # AI 行业应用对比 2026 (Industry Comparison)
 
 > **一句话理解**: 本章节横向对比 10 大行业的 AI 应用现状——从成熟度、数据特点、技术方案到合规要求，帮助你快速判断哪个行业的 AI 机会最适合你。

@@ -8,9 +8,13 @@ sources:
 created: 2026-06-12
 updated: 2026-06-15
 lifecycle: reviewed
-tier: core
----
+tier: supporting
+aliases:
+  - "Agentic Rag Guide"
+  - "Agentic RAG Guide"
+  - Agentic_RAG_Guide
 
+---
 # Agentic RAG: Agent 驱动的智能检索
 
 > **一句话理解**: 将 Agent 能力融入 RAG 系统,实现自适应检索、多步推理、自我纠正的智能 RAG 架构。
@@ -118,5 +122,5 @@ Agentic RAG 涉及多次 LLM 调用，低延迟和高吞吐至关重要：
 - **推理引擎统一选型**: [[10_Deployment_Inference/Inference_Engines/LLM_Inference_Engine_Selection_Guide|LLM 推理引擎选型指南]]
 - **迁移与基准测试**: [[10_Deployment_Inference/Inference_Engines/LLM_Inference_Engine_Migration_Guide|迁移指南]] / [[10_Deployment_Inference/Inference_Engines/LLM_Inference_Benchmarking_Guide|基准测试指南]]
 
-> **关联**: -> [[14_RAG_Systems|RAG 系统]] | [[15_Agent_Production|Agent 生产]] | [[_synthesis/rag-agents|RAG x Agent 合成]]
+> **关联**: -> [[14_RAG_Systems/README|RAG 系统]] | [[15_Agent_Production/README|Agent 生产]] | [[_synthesis/rag-agents|RAG x Agent 合成]]
 

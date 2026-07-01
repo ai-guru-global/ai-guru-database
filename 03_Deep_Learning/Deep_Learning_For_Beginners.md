@@ -3,8 +3,12 @@ title: "深度学习入门：神经网络、训练与架构演进"
 tags: [deep-learning, neural-network, cnn, rnn, transformer, gradient-descent, backpropagation, beginner]
 source: yeasy/ai_beginner_guide
 created: 2026-06-19
----
+tier: peripheral
+aliases:
+  - "Deep Learning For Beginners"
+  - Deep_Learning_For_Beginners
 
+---
 # 深度学习入门：神经网络、训练与架构演进
 
 > **一句话理解**: 深度学习模仿大脑用人工神经元构建分层网络——"深度"就是层数多；不同架构负责不同数据（看图用 CNN，听话用 RNN，万事不决转 Transformer）；它有黑箱、能耗、数据饥渴、幻觉等死穴，但"大力出奇迹"让它成为当下 AI 的绝对核心。

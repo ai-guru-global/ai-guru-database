@@ -2,18 +2,23 @@
 title: Spring AI 系统架构设计
 category: 12-architecture-infrastructure
 tags: ["architecture", "infrastructure", "kubernetes", "high-availability"]
-summary: "> 📚 **Spring AI 基础**: 如果你还不熟悉 Spring AI 的核心概念，请先阅读 [Spring AI 深度解析](../01_Fundamentals/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md)。"
+summary: "> 📚 **Spring AI 基础**: 如果你还不熟悉 Spring AI 的核心概念，请先阅读 [Spring AI 深度解析](../../01_Fundamentals/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md)。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Spring Ai Architecture"
+  - "Spring AI Architecture"
+  - Spring_AI_Architecture
 
+---
 # Spring AI 系统架构设计
 
-> 📚 **Spring AI 基础**: 如果你还不熟悉 Spring AI 的核心概念，请先阅读 [Spring AI 深度解析](../01_Fundamentals/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md)。
+> 📚 **Spring AI 基础**: 如果你还不熟悉 Spring AI 的核心概念，请先阅读 [Spring AI 深度解析](../../01_Fundamentals/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md)。
 >
 > **一句话理解**: Spring AI 架构是 Java 企业级 AI 应用的设计蓝图 —— 用 Spring 的方式将 LLM、向量存储、RAG Pipeline 和 Agent 编排整合到统一的企业架构中。
 
-> **相关文档**: [AI 系统架构全景图](./AI_System_Architecture_2026.md) | [Spring AI 深度解析](../01_Fundamentals/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md) | [多租户架构](./Multi_Tenant_Architecture.md) | [高可用设计](./High_Availability_2026.md)
+> **相关文档**: [AI 系统架构全景图](./AI_System_Architecture_2026.md) | [Spring AI 深度解析](../../01_Fundamentals/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md) | [多租户架构](./Multi_Tenant_Architecture.md) | [高可用设计](./High_Availability_2026.md)
 
 ---
 
@@ -1289,8 +1294,8 @@ PostgreSQL 是 AI 应用的最佳默认选择:
 
 ## Related
 
-- [[12_Architecture_Infrastructure/AI_Infrastructure_2026]] — AI Infrastructure 2026 完全指南 (共享: architecture, high-availability, infrastructure, kubernetes)
+- [[12_Architecture_Infrastructure/Architecture_Overview/AI_Infrastructure_2026]] — AI Infrastructure 2026 完全指南 (共享: architecture, high-availability, infrastructure, kubernetes)
 - [[12_Architecture_Infrastructure/Architecture-in-nutshell]] — AI 架构速成指南 (共享: architecture, high-availability, infrastructure, kubernetes)
 - [[12_Architecture_Infrastructure/Architecture_Infrastructure_for_dummy]] — AI 架构基础设施 - 小白版 (共享: architecture, high-availability, infrastructure, kubernetes)
-- [[12_Architecture_Infrastructure/Edge_AI_2026.md|Edge_AI_2026]]
-- [[12_Architecture_Infrastructure/Capacity_Planning_2026.md|Capacity_Planning_2026]]
+- [[Edge_AI_2026|Edge_AI_2026]]
+- [[Capacity_Planning_2026|Capacity_Planning_2026]]

@@ -5,8 +5,12 @@ tags: ["rag", "retrieval", "vector-database", "embedding"]
 summary: "> **一句话理解**: Weaviate 是一个开源的向量数据库——支持语义搜索、混合搜索、知识图谱，专门为 LLM 时代设计，支持文本、图片等多模态数据。"
 created: "2026-05-31"
 updated: "2026-05-31"
----
+tier: supporting
+aliases:
+  - "Weaviate Deep Dive"
+  - Weaviate_Deep_Dive
 
+---
 # Weaviate: 开源向量数据库
 
 > **一句话理解**: Weaviate 是一个开源的向量数据库——支持语义搜索、混合搜索、知识图谱，专门为 LLM 时代设计，支持文本、图片等多模态数据。

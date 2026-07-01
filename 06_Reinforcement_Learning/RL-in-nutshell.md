@@ -5,8 +5,12 @@ tags: [rl, reinforcement-learning, q-learning, ppo, rlhf, dpo, grpo, dqn]
 summary: "从 MDP 数学基础到 DQN/PPO 深度算法，再到 RLHF/DPO/GRPO 大模型对齐——一文速览强化学习全栈知识图谱。"
 created: 2026-06-05
 updated: 2026-06-05
----
+tier: supporting
+aliases:
+  - "Rl In Nutshell"
+  - "RL in nutshell"
 
+---
 # 强化学习速览 (Reinforcement Learning in a Nutshell)
 
 > **一句话理解**: 强化学习就像训练一只小狗——做对了给奖励，做错了不给，它慢慢学会了什么行为能拿到最多零食。
@@ -263,7 +267,7 @@ $$
 | 训练稳定性 | 依赖 Critic 质量 | Group 估计更鲁棒 |
 | 计算开销 | 高 | 中 |
 
-> 更多 GRPO 细节参见 [GRPO 与新对齐方法](../07_Model_Training/GRPO_and_New_Alignment_Methods.md)
+> 更多 GRPO 细节参见 [GRPO 与新对齐方法](../07_Model_Training/Alignment/GRPO_and_New_Alignment_Methods.md)
 
 ---
 
@@ -643,7 +647,7 @@ flowchart TB
 | PPO 深入 | PPO 论文解读 | [PPO_Deep_Dive.md](./Deep_RL/PPO_Deep_Dive.md) |
 | DQN 深入 | DQN 论文解读 | [DQN_Deep_Dive.md](./Deep_RL/DQN_Deep_Dive.md) |
 | AI Agents | 智能体架构与工具使用 | [Agent-in-nutshell.md](../15_Agent_Production/Agent_Foundations/Agent-in-nutshell.md) |
-| GRPO/对齐 | 新一代对齐方法详解 | [GRPO 详解](../07_Model_Training/GRPO_and_New_Alignment_Methods.md) |
+| GRPO/对齐 | 新一代对齐方法详解 | [GRPO 详解](../07_Model_Training/Alignment/GRPO_and_New_Alignment_Methods.md) |
 | 推理模型 | o1/R1 推理 RL | [DeepSeek-R1](../05_NLP_LLMs/Reasoning_Models/DeepSeek_R1_Technical_Analysis.md) |
 | RLHF 概念 | RLHF 核心概念 | [RLHF 概念](../_concepts/rlhf.md) |
 

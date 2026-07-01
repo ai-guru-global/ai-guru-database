@@ -3,8 +3,12 @@ title: "Claude Agent 架构：设计模式、上下文管理与多智能体协�
 tags: [claude, anthropic, ai-coding, agent, multi-agent, architecture]
 source: yeasy/claude_guide
 created: 2026-06-16
----
+tier: peripheral
+aliases:
+  - "Claude Agent Architecture"
+  - Claude_Agent_Architecture
 
+---
 # Claude Agent 架构：设计模式、上下文管理与多智能体协作
 
 > 本页面提炼自《Claude 技术指南》第八章，覆盖 Agent 设计模式、上下文管理、Extended Thinking、多 Agent 协作、Agent SDK 和 Managed Agents。

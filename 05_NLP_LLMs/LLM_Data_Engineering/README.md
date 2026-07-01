@@ -5,8 +5,9 @@ tags: ["llm", "data-engineering", "pretraining-data", "sft-data", "synthetic-dat
 summary: "LLM 数据工程覆盖预训练数据收集清洗、SFT数据构建、合成数据生成等全链路数据管理。"
 created: 2026-06-04
 updated: 2026-06-04
----
+tier: supporting
 
+---
 # LLM 数据工程 (LLM Data Engineering)
 
 > **一句话理解**: 数据是 LLM 的燃料——同样的模型架构，数据质量/数量/配比的差异，可以决定一个模型是「废铁」还是「SOTA」。

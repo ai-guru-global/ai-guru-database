@@ -23,8 +23,10 @@ lifecycle: stable
 tier: core
 created: 2026-06-16
 updated: 2026-06-16
----
+aliases:
+  - Opa
 
+---
 # OPA (Open Policy Agent)
 
 > 云原生世界的「策略大脑」——用 Rego 语言统一管理谁能做什么。

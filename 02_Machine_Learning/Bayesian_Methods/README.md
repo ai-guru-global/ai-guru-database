@@ -5,8 +5,9 @@ tags: ["bayesian", "probabilistic-programming", "MCMC", "variational-inference"]
 summary: "> 贝叶斯方法让AI量化不确定性——先验+似然=后验，从点估计到概率思维的范式转变。"
 created: 2026-06-04
 updated: 2026-06-04
----
+tier: supporting
 
+---
 # 贝叶斯方法 (Bayesian Methods)
 
 > **核心定位**: 概率机器学习的核心框架，覆盖贝叶斯定理、MCMC、变分推断、贝叶斯神经网络、贝叶斯优化。

@@ -5,8 +5,13 @@ tags: ["bbh", "arena", "red-teaming", "ci-evaluation", "ab-testing", "benchmark"
 summary: "> **一句话理解**: BBH 考智力题，Arena 让人类投票，红队测试找安全漏洞，CI 集成评估自动防退化，A/B 测试框架在线比效果——五者从不同维度回答‘这个模型到底行不行’。"
 created: "2026-06-16"
 updated: "2026-06-16"
----
+tier: supporting
+aliases:
+  - "Llm Benchmarks For Dummy"
+  - "LLM Benchmarks for dummy"
+  - LLM_Benchmarks_for_dummy
 
+---
 # LLM 评估与测试大白话：BBH、Arena、红队测试、CI 集成评估、A/B 测试框架
 
 > **一句话理解**: BBH 考智力题，Arena 让人类投票，红队测试找安全漏洞，CI 集成评估自动防退化，A/B 测试框架在线比效果——五者从不同维度回答“这个模型到底行不行”。
@@ -168,5 +173,5 @@ A/B 测试框架就像一场“公平对决”：随机抽一群人用新产品�
 - [[_concepts/ci-integrated-evaluation|CI 集成评估]]
 - [[_concepts/ab-testing-framework|A/B 测试框架]]
 - [[_concepts/model-evaluation|模型评估]]
-- [[08_Model_Evaluation/LLM_Benchmark_Suite_2026|LLM 基准套件 2026]]
+- [[08_Model_Evaluation/Benchmarks/LLM_Benchmark_Suite_2026|LLM 基准套件 2026]]
 - [[08_Model_Evaluation/Evaluation_Automation_2026|评估自动化 2026]]

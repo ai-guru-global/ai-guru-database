@@ -5,8 +5,13 @@ tags: ["python", "programming", "basics", "ai-basics", "for-beginners"]
 summary: "面向 AI 学习者的 Python 速成指南。不需要编程背景，从安装到语法、数据结构、函数、文件操作，全部用 AI 场景举例。读完即可看懂并修改机器学习代码。"
 created: 2026-06-01
 updated: 2026-06-01
----
+tier: supporting
+aliases:
+  - "Python For Ai Basics"
+  - "Python for AI Basics"
+  - Python_for_AI_Basics
 
+---
 # Python for AI: 零基础到能写 AI 代码
 
 > **一句话理解**: Python 是 AI 领域的"通用语"——就像学英语是为了读论文，学 Python 是为了让 AI 听你的指令。

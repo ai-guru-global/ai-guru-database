@@ -5,9 +5,13 @@ tags: ["mlops", "llmops", "llm", "prompt-engineering", "rag", "evaluation", "obs
 summary: "> **一句话理解**: LLMOps 是 MLOps 在大模型时代的升级版——当模型从「固定权重的预测器」变成「由 Prompt + 模型 + RAG 三层动态组合的系统」，运维对象、评估方式、成本结构都发生了根本性变化。"
 created: 2026-06-15
 updated: 2026-06-15
-tier: core
----
+tier: supporting
+aliases:
+  - "Llmops 2026"
+  - "LLMOps 2026"
+  - LLMOps_2026
 
+---
 # LLMOps 2026：大模型时代的 MLOps 升级
 
 > **一句话理解**: LLMOps 是 MLOps 在大模型时代的升级版——当模型从「固定权重的预测器」变成「由 Prompt + 模型 + RAG 三层动态组合的系统」，运维对象、评估方式、成本结构都发生了根本性变化。
@@ -247,7 +251,7 @@ Eval 数据集本身也是代码资产，必须版本化：
 | **LangSmith** | 商业 | 全栈（数据集+Judge+Trace） | 与 LangChain 深度集成 | LangChain 用户 |
 | **Arize Phoenix** | 商业 | 可观测+评估一体 | 开源版功能完整 | 重度可观测需求 |
 
-详见 [[09_Testing/RAGAS_Deep_Dive]]、[[09_Testing/DeepEval_Deep_Dive]]、[[09_Testing/Promptfoo_Deep_Dive]]。
+详见 [[09_Testing/RAGAS_Deep_Dive]]、[[09_Testing/Testing_Frameworks/DeepEval_Deep_Dive]]、[[09_Testing/Testing_Frameworks/Promptfoo_Deep_Dive]]。
 
 ---
 
@@ -482,14 +486,18 @@ def rag_answer(question):
 - [[10_Deployment_Inference/Cost/LLM_Cost_Optimization]] — 成本优化细节
 - [[10_Deployment_Inference/Caching/Prompt_Caching_Advanced]] — Prompt 缓存工程实现
 - [[14_RAG_Systems/README]] — RAG 系统架构（本文 §6 侧重其 Ops）
-- [[09_Testing/Promptfoo_Deep_Dive]] — Prompt 红队与测试
+- [[09_Testing/Testing_Frameworks/Promptfoo_Deep_Dive]] — Prompt 红队与测试
 - [[09_Testing/RAGAS_Deep_Dive]] — RAG 评估事实标准
 - [[13_AI_Ops/README]] — AI 系统运维（基础设施层）
 - [[17_Ethics_Safety/AI_Security_2026/README]] — 安全与红队
-- [[14_AI_Gateway/README]] — AI 网关（路由/限流/计费）
+- [[12_Architecture_Infrastructure/AI_Gateway/README]] — AI 网关（路由/限流/计费）
 
 ---
 
 > **本文是 10_MLOps_Pipeline 章节的 LLM 时代主线**。传统 MLOps 内容见 [[MLOps_Pipeline]]，本文不重复，专注于 LLM 带来的新挑战。后续将围绕本文展开 [[Prompt_Engineering_Ops]]、[[RAG_Pipeline_Ops]]、[[LLM_Evaluation_Pipeline]] 等专题深扩。
 
 *最后更新：2026-06-15*
+
+## Related
+
+- [[llmops]]

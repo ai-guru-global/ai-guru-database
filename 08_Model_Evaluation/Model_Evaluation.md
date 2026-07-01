@@ -5,8 +5,12 @@ tags: ["model-evaluation", "metrics", "ab-testing", "benchmark"]
 summary: "> **一句话理解**: 模型评估就像考试——你需要出不同类型的考题（评估指标），用合理的考试规则（评估方法），才能判断学生（模型）是否真的学好了，而不是只会背答案（过拟合）。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: core
+aliases:
+  - "Model Evaluation"
+  - Model_Evaluation
 
+---
 # 模型评估 (Model Evaluation)
 
 > **一句话理解**: 模型评估就像考试——你需要出不同类型的考题（评估指标），用合理的考试规则（评估方法），才能判断学生（模型）是否真的学好了，而不是只会背答案（过拟合）。
@@ -1384,7 +1388,7 @@ class LLMEvaluationPipeline:
 
 ### 进阶方向
 - [自动化评估](./Evaluation_Automation_2026.md) — CI/CD 中的评估自动化
-- [在线评估](./Online_Evaluation.md) — 上线后的真实效果评估
+- [在线评估](./Evaluation_Tools/Online_Evaluation.md) — 上线后的真实效果评估
 - [MLOps Pipeline](../11_MLOps_Pipeline/MLOps_Pipeline.md) — 评估自动化和持续监控
 - [价值对齐](../17_Ethics_Safety/Value_Alignment/Value_Alignment.md) — 公平性评估
 - [AI 测试框架](../09_Testing/README.md) — 系统化的 AI 测试方法

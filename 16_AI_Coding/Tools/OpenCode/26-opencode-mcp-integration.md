@@ -6,7 +6,13 @@ tags:
 - ai-coding
 created: 2026-06-12
 category: 16-ai-coding-tools-opencode
-summary: ""
+tier: peripheral
+aliases:
+  - "Opencode Mcp Integration"
+  - "opencode mcp integration"
+
+updated: 2026-06-30
+summary: "MCP 协议集成指南 — 专题文档"
 ---
 title: [[_concepts/ai-agents|MCP]] 协议集成指南
 description: '# MCP 协议集成指南'

@@ -76,8 +76,8 @@ summary: 基于关键词扫描和深度检测的 LLM 全生命周期内容覆盖
 - 多模态幻觉评测：POPE、MMHal-Bench
 
 **建议新建页面**:
-- ✅ `08_Model_Evaluation/Multimodal_Evaluation_Benchmarks.md` — 已创建 (11.7 KB)
-- ✅ `08_Model_Evaluation/Long_Context_Evaluation.md` — 已创建 (12.9 KB)
+- ✅ `08_Model_Evaluation/Benchmarks/Multimodal_Evaluation_Benchmarks.md` — 已创建 (11.7 KB)
+- ✅ `08_Model_Evaluation/Benchmarks/Long_Context_Evaluation.md` — 已创建 (12.9 KB)
 
 ---
 

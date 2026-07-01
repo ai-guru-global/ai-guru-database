@@ -5,8 +5,13 @@ tags: ["computer-vision", "cnn", "image-processing"]
 summary: '> **一句话理解**: CLIP 像是一位"双语翻译官"——它同时学习图像和文字，让 AI 看到一张图就能"说出"它的描述，或者根据文字"找出"匹配的图像，从此 AI 理解了"图和文是一回事"。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Clip Deep Dive"
+  - "CLIP Deep Dive"
+  - CLIP_Deep_Dive
 
+---
 # CLIP 深度解读 - 多模态学习的里程碑
 
 > **一句话理解**: CLIP 像是一位"双语翻译官"——它同时学习图像和文字，让 AI 看到一张图就能"说出"它的描述，或者根据文字"找出"匹配的图像，从此 AI 理解了"图和文是一回事"。

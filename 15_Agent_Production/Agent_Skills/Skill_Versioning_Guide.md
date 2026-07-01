@@ -5,8 +5,12 @@ tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> 当团队有 5 个以上的 Agent Skills 时，就需要建立版本管理、评审流程和治理规范。本文档提供一套可直接落地的团队 Skill 库治理方案。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Skill Versioning Guide"
+  - Skill_Versioning_Guide
 
+---
 # Skill 版本管理与团队治理
 
 > 当团队有 5 个以上的 Agent Skills 时，就需要建立版本管理、评审流程和治理规范。本文档提供一套可直接落地的团队 Skill 库治理方案。

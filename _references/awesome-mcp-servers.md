@@ -9,8 +9,11 @@ created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
 tier: supporting
----
+aliases:
+  - "Awesome Mcp Servers"
+  - "awesome mcp servers"
 
+---
 # Awesome MCP Servers 集合 (15k)
 
 > **一句话理解**: 社区维护的 MCP 服务器集合,涵盖文件系统、数据库、搜索、开发工具等各类 MCP 服务。

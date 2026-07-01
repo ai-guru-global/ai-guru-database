@@ -5,8 +5,13 @@ tags: ["machine-learning", "supervised", "unsupervised"]
 summary: '> **一句话秒懂**: 监督学习就像用练习册学习——AI 看大量的"题目+答案"，慢慢学会自己解题。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Supervised Learning For Dummy"
+  - "Supervised Learning for dummy"
+  - Supervised_Learning_for_dummy
 
+---
 # 监督学习 - 小白版
 
 > **一句话秒懂**: 监督学习就像用练习册学习——AI 看大量的"题目+答案"，慢慢学会自己解题。

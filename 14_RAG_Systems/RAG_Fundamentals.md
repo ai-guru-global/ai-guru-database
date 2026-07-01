@@ -5,8 +5,13 @@ tags: ["rag", "retrieval-augmented-generation", "vector-database", "embedding", 
 summary: "> **一句话理解**: RAG = 检索 + 生成——让 LLM 从外部知识库中'查资料'后回答问题，不再只靠训练时记住的知识。"
 created: 2026-06-15
 updated: 2026-06-15
----
+tier: supporting
+aliases:
+  - "Rag Fundamentals"
+  - "RAG Fundamentals"
+  - RAG_Fundamentals
 
+---
 # RAG 基础 (RAG Fundamentals)
 
 > **一句话理解**: RAG = 检索 + 生成——让 LLM 从外部知识库中"查资料"后回答问题，不再只靠训练时记住的知识。

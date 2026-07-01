@@ -5,8 +5,11 @@ tags: ["talks", "speeches", "insights", "leaders"]
 summary: "1. **“AI is more profound than fire or electricity.” / “AI 的意义比火或电更深远。”**"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - Sayings
 
+---
 # Sundar Pichai 关于 AI 的观点 (Sundar Pichai on AI)
 
 1. **“AI is more profound than fire or electricity.” / “AI 的意义比火或电更深远。”** 

@@ -5,8 +5,9 @@ tags: ["speech", "audio", "ASR", "TTS", "whisper", "cosyvoice"]
 summary: "> 语音 AI 让机器「听懂」和「说出」——涵盖 ASR、TTS、音频理解、音乐生成、实时对话。"
 created: 2026-06-04
 updated: 2026-06-04
----
+tier: supporting
 
+---
 # 语音与音频 AI (Speech & Audio AI)
 
 > **核心定位**: AI 感知层的核心模态之一，覆盖语音识别(ASR)、语音合成(TTS)、音频理解、音乐生成、实时语音对话。

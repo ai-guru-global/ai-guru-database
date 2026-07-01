@@ -5,8 +5,12 @@ tags: ["deep-learning", "neural-networks", "backpropagation", "transformer"]
 summary: "> **一句话理解**: Transformer统治了AI 7年，但2026年状态空间模型(SSM)开始挑战它的霸主地位——Mamba、S4、RetNet等新架构承诺O(n)线性复杂度、超长上下文处理能力，以及在某些任务上媲美Transformer的性能，被认为是AGI之路的下一个里程碑。"
 created: "2026-05-31"
 updated: "2026-05-31"
----
+tier: supporting
+aliases:
+  - "State Space Models 2026"
+  - State_Space_Models_2026
 
+---
 # 状态空间模型 2026: Mamba 与 Transformer 后继者
 
 > **一句话理解**: Transformer 统治了 AI 7 年，但 2026 年状态空间模型(SSM)开始挑战它的霸主地位——Mamba、S4、RetNet 等新架构承诺 O(n)线性复杂度、超长上下文处理能力，以及在某些任务上媲美 Transformer 的性能，被认为是 AGI 之路的下一个里程碑。

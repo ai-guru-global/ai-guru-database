@@ -5,8 +5,13 @@ tags: ["ai-agents", "ui-ux", "hci", "human-agent-interaction", "artifacts", "can
 summary: "> **一句话理解**: 好的智能体 UI 不仅仅是一个聊天框，而是一个让“人”与“AI”能够像同事一样协作的数字化动态空间。"
 created: 2026-06-04
 updated: 2026-06-04
----
+tier: supporting
+aliases:
+  - "Agentic Ui Ux Design 2026"
+  - "Agentic UI UX Design 2026"
+  - Agentic_UI_UX_Design_2026
 
+---
 # Agentic UI/UX Design 2026: Designing for AI Agents
 
 > **一句话理解**: 好的智能体 UI 不仅仅是一个聊天框，而是一个让“人”与“AI”能够像同事一样协作的数字化动态空间。

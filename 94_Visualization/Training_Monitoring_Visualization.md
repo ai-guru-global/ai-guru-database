@@ -5,8 +5,12 @@ tags: ["visualization", "charts", "dashboards", "data-viz", "model-training"]
 summary: '> **一句话理解**: 训练监控可视化是 AI 开发的"黑匣子仪表盘"——实时追踪 Loss、梯度、学习率、GPU 利用率等关键指标，让每一次实验可观测、可诊断、可复现。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: core
+aliases:
+  - "Training Monitoring Visualization"
+  - Training_Monitoring_Visualization
 
+---
 # 训练监控可视化 (Training Monitoring Visualization)
 
 > **一句话理解**: 训练监控可视化是 AI 开发的"黑匣子仪表盘"——实时追踪 Loss、梯度、学习率、GPU 利用率等关键指标，让每一次实验可观测、可诊断、可复现。
@@ -1038,7 +1042,7 @@ W&B 适合:
 - [可视化入门](./Visualization_for_dummy.md) - 可视化基础概念
 - [模型训练 - 小白版](../07_Model_Training/Model_Training_for_dummy.md) - 训练基础
 - [模型评估 - 小白版](../08_Model_Evaluation/Model_Evaluation_for_dummy.md) - 评估指标
-- [Training Monitoring 2026](../07_Model_Training/Training_Monitoring_2026.md) - 训练监控进阶
+- [Training Monitoring 2026](../07_Model_Training/Monitoring/Training_Monitoring_2026.md) - 训练监控进阶
 
 ---
 
@@ -1047,7 +1051,7 @@ W&B 适合:
 ## Related
 
 - [[94_Visualization/README.md|94_Visualization README]]
-- [[94_Visualization/atlas/README.md|atlas README]]
-- [[94_Visualization/atlas/docs/performance.md|performance]]
+- [[_projects/atlas/README.md|atlas README]]
+- [[_projects/atlas/docs/performance.md|performance]]
 - [[07_Model_Training/Distributed_Training/Distributed_Training_2026.md|Distributed_Training_2026]]
 - [[07_Model_Training/Distributed_Training/Distributed_Training_for_dummy.md|Distributed_Training_for_dummy]]

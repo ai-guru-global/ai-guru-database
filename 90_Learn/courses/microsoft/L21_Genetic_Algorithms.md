@@ -6,8 +6,12 @@ summary: "通过模拟种群进化中的选择、交叉与变异，在复杂搜�
 source_url: "https://raw.githubusercontent.com/microsoft/AI-For-Beginners/main/lessons/6-Other/21-GeneticAlgorithms/README.md"
 created: "2026-06-12"
 updated: "2026-06-12"
----
+tier: supporting
+aliases:
+  - "L21 Genetic Algorithms"
+  - L21_Genetic_Algorithms
 
+---
 # L21 - 遗传算法
 
 > **一句话理解**：把问题的潜在解看作“基因”，让一群解在适应度（fitness）压力下不断选择、交叉、变异，最终收敛到优质解。

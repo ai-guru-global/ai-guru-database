@@ -5,8 +5,13 @@ tags: ["deployment", "inference", "serving", "ctranslate2", "cpu", "gpu", "quant
 summary: "> **一句话理解**: CTranslate2 是 OpenNMT 团队出品的轻量级跨平台推理引擎——C++ 核心、Python API、支持 INT8/INT16/FP16 量化，在 CPU 和 GPU 上都能高效运行 Transformer 模型。"
 created: "2026-06-15"
 updated: "2026-06-15"
----
+tier: supporting
+aliases:
+  - "Ctranslate2 Deep Dive"
+  - "CTranslate2 Deep Dive"
+  - CTranslate2_Deep_Dive
 
+---
 # CTranslate2: 轻量级跨平台 LLM 推理引擎
 
 > **一句话理解**: CTranslate2 是 OpenNMT 团队出品的轻量级跨平台推理引擎——C++ 核心、Python API、支持 INT8/INT16/FP16 量化，在 CPU 和 GPU 上都能高效运行 Transformer 模型。

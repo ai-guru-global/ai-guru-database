@@ -9,8 +9,11 @@ created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
 tier: supporting
----
+aliases:
+  - "Why Machines Learn"
+  - "why machines learn"
 
+---
 # Why Machines Learn
 
 > **一句话理解**: ML 背后的数学直觉,科普风格.作者:Anil Ananthaswamy.

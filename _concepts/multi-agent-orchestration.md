@@ -23,8 +23,11 @@ lifecycle_changed: 2026-06-23
 tier: core
 created: 2026-06-23
 updated: 2026-06-23
----
+aliases:
+  - "Multi Agent Orchestration"
+  - "multi agent orchestration"
 
+---
 # 多 Agent 编排（Multi-Agent Orchestration）
 
 ## 核心要点

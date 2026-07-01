@@ -5,8 +5,13 @@ tags: ["ai-stack", "inference", "vllm", "sglang", "ollama", "llama-cpp", "servin
 summary: "> **一句话理解**: AI Stack 推理层提供 vLLM、SGLang、Ollama、llama.cpp 四种典型服务方式，分别覆盖生产高并发、极致性能、本地一键运行和边缘轻量部署场景。"
 created: "2026-06-16"
 updated: "2026-06-16"
----
+tier: supporting
+aliases:
+  - "Ai Stack Inference Serving Guide"
+  - "AI Stack Inference Serving Guide"
+  - AI_Stack_Inference_Serving_Guide
 
+---
 # AI Stack 推理服务指南
 
 > **一句话理解**: AI Stack 推理层提供 `vLLM`、`SGLang`、`Ollama`、`llama.cpp` 四种典型服务方式，分别覆盖生产高并发、极致性能、本地一键运行和边缘轻量部署场景。

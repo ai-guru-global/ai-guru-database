@@ -5,8 +5,11 @@ tags: ["talks", "speeches", "insights", "leaders"]
 summary: "**身份**: 蒙特利尔大学教授，Mila 研究院创始人，图灵奖得主（2018）。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - About
 
+---
 # Yoshua Bengio 简介 (Yoshua Bengio)
 
 - **身份**: 蒙特利尔大学教授，Mila 研究院创始人，图灵奖得主（2018）。

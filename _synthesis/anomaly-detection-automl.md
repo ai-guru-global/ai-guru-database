@@ -16,8 +16,12 @@ provenance:
   ambiguous: 0.1
 lifecycle: draft
 lifecycle_changed: 2026-06-05
----
+tier: core
+aliases:
+  - "Anomaly Detection Automl"
+  - "anomaly detection automl"
 
+---
 # 异常检测 × AutoML — 自动化异常发现
 
 ## The Connection

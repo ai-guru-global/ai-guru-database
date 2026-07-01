@@ -5,8 +5,13 @@ tags: ["benchmark", "evaluation", "mmlu", "humaneval", "gsm8k", "swe-bench", "gp
 summary: '系统梳理 2024–2026 年所有主流 LLM 评测基准，涵盖通用知识、数学推理、代码能力、抽象推理、人类偏好评估五大维度，并深入分析基准污染与可靠性问题，提供基准选择决策矩阵。'
 created: '2026-06-04'
 updated: '2026-06-04'
----
+tier: supporting
+aliases:
+  - "Llm Benchmark Suite 2026"
+  - "LLM Benchmark Suite 2026"
+  - LLM_Benchmark_Suite_2026
 
+---
 # LLM Benchmark Suite 2026 — 大语言模型评测基准全览
 
 ## 一句话理解
@@ -115,7 +120,7 @@ mindmap
 | **LLM-as-Judge** | AlpacaEval, WildBench | GPT-4 评分 | 灵活但有评委偏差 |
 | **人类偏好** | LMArena | ELO 排名 | 金标准，但成本极高 |
 
-> **相关文档**: 有关 LLM-as-Judge 评估范式的详细解析，请参阅 [LLM_as_Judge_Deep_Dive.md](./LLM_as_Judge_Deep_Dive.md)。
+> **相关文档**: 有关 LLM-as-Judge 评估范式的详细解析，请参阅 [LLM_as_Judge_Deep_Dive.md](../Evaluation_Tools/LLM_as_Judge_Deep_Dive.md)。
 
 ---
 
@@ -787,7 +792,7 @@ SWE-bench 是目前最贴近真实软件工程的代码评测基准。
 | Claude 3.5 Sonnet + Agent | ~49% | ~72% | 2024-10 |
 | o3 + SWE-Agent | — | ~76% | 2025-01 |
 
-> **相关文档**: 关于代码生成模型的详细评测，请参阅 [Global_LLM_Ecosystem/README.md](../05_NLP_LLMs/Global_LLM_Ecosystem/README.md)。
+> **相关文档**: 关于代码生成模型的详细评测，请参阅 [Global_LLM_Ecosystem/README.md](../../05_NLP_LLMs/Global_LLM_Ecosystem/README.md)。
 
 ---
 
@@ -1084,7 +1089,7 @@ ELO Rating: R_A' = R_A + K × (S_A - E_A)
 | 持续更新 | 受 "网红效应" 影响 |
 | 难以作弊 | 不同类别的投票者不同 |
 
-> **关于 LLM-as-Judge 的替代方案**: 由于 LMArena 需要大量人类投票，成本高、周期长。[LLM_as_Judge_Deep_Dive.md](./LLM_as_Judge_Deep_Dive.md) 探讨了用 LLM 模拟人类偏好的方法。
+> **关于 LLM-as-Judge 的替代方案**: 由于 LMArena 需要大量人类投票，成本高、周期长。[LLM_as_Judge_Deep_Dive.md](../Evaluation_Tools/LLM_as_Judge_Deep_Dive.md) 探讨了用 LLM 模拟人类偏好的方法。
 
 ---
 
@@ -1504,9 +1509,9 @@ settings:
 |------|------|------|
 | 长上下文评测 | [Long_Context_Evaluation.md](./Long_Context_Evaluation.md) | Needle-in-Haystack, RULER, LongBench 等长窗口专项评测 |
 | 多模态评测 | [Multimodal_Evaluation_Benchmarks.md](./Multimodal_Evaluation_Benchmarks.md) | MMMU, MathVista, ChartQA 等视觉+语言基准 |
-| LLM-as-Judge | [LLM_as_Judge_Deep_Dive.md](./LLM_as_Judge_Deep_Dive.md) | GPT-4 评委、Pairwise Comparison、评委偏差分析 |
-| 全球 LLM 生态 | [Global_LLM_Ecosystem/README.md](../05_NLP_LLMs/Global_LLM_Ecosystem/README.md) | GPT-4, Claude, Gemini 等模型的全面对比 |
-| 中国 LLM 生态 | [Chinese_LLM_Ecosystem/README.md](../05_NLP_LLMs/Chinese_LLM_Ecosystem/README.md) | 通义千问、DeepSeek、GLM 等中国模型评测 |
+| LLM-as-Judge | [LLM_as_Judge_Deep_Dive.md](../Evaluation_Tools/LLM_as_Judge_Deep_Dive.md) | GPT-4 评委、Pairwise Comparison、评委偏差分析 |
+| 全球 LLM 生态 | [Global_LLM_Ecosystem/README.md](../../05_NLP_LLMs/Global_LLM_Ecosystem/README.md) | GPT-4, Claude, Gemini 等模型的全面对比 |
+| 中国 LLM 生态 | [Chinese_LLM_Ecosystem/README.md](../../05_NLP_LLMs/Chinese_LLM_Ecosystem/README.md) | 通义千问、DeepSeek、GLM 等中国模型评测 |
 
 ---
 

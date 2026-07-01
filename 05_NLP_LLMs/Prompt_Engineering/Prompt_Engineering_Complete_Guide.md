@@ -3,8 +3,12 @@ title: "提示词工程完整指南：核心技术与设计模式"
 tags: [prompt-engineering, llm, chain-of-thought, few-shot, react, system-prompt]
 source: yeasy/prompt_engineering_guide
 created: 2026-06-16
----
+tier: peripheral
+aliases:
+  - "Prompt Engineering Complete Guide"
+  - Prompt_Engineering_Complete_Guide
 
+---
 # 提示词工程完整指南：核心技术与设计模式
 
 本文融合《大模型提示词工程指南》第 1-7 章的核心知识，系统讲解提示词的结构设计、最佳实践、少样本学习、思维链推理、提示词链与任务分解等核心技术。

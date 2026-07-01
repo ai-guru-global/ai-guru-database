@@ -5,8 +5,13 @@ tags: ["ai-stack", "gpu", "monitoring", "nvidia-smi", "ppu-smi", "rocm-smi", "pm
 summary: "> **一句话理解**: AI Stack 支持 NVIDIA、国产 PPU（平头哥）、AMD 等多种加速器，分别使用 nvidia-smi、ppu-smi、rocm-smi 做卡级监控，pmon 做进程级细粒度监控。"
 created: "2026-06-16"
 updated: "2026-06-16"
----
+tier: supporting
+aliases:
+  - "Ai Stack Gpu Monitoring Guide"
+  - "AI Stack GPU Monitoring Guide"
+  - AI_Stack_GPU_Monitoring_Guide
 
+---
 # AI Stack GPU 监控指南
 
 > **一句话理解**: AI Stack 支持 NVIDIA、国产 PPU（平头哥）、AMD 等多种加速器，分别使用 `nvidia-smi`、`ppu-smi`、`rocm-smi` 做卡级监控，`pmon` 做进程级细粒度监控。

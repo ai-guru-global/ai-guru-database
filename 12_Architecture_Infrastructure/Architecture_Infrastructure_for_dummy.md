@@ -5,8 +5,13 @@ tags: ["architecture", "infrastructure", "kubernetes", "high-availability"]
 summary: "> **一句话理解**: AI 架构就像盖房子——地基（服务器）、水管电线（网络）、房间布局（服务层）、家具摆设（应用层），每层都要规划好，房子才能住得舒服。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: core
+aliases:
+  - "Architecture Infrastructure For Dummy"
+  - "Architecture Infrastructure for dummy"
+  - Architecture_Infrastructure_for_dummy
 
+---
 # AI 架构基础设施 - 小白版
 
 > **一句话理解**: AI 架构就像盖房子——地基（服务器）、水管电线（网络）、房间布局（服务层）、家具摆设（应用层），每层都要规划好，房子才能住得舒服。
@@ -370,7 +375,7 @@ flowchart LR
 
 ## 🔗 想深入了解？
 
-- [AI 架构速成指南](Architecture-in-nutshell.md) —— 技术细节版
+- [AI 架构速成指南](./Architecture-in-nutshell.md) —— 技术细节版
 - [RAG 速成指南](../14_RAG_Systems/RAG-in-nutshell.md) —— 知识库怎么搭
 - [推理速成指南](../10_Deployment_Inference/Inference-in-nutshell.md) —— 模型怎么跑
 - [MLOps 速成指南](../11_MLOps_Pipeline/MLOps-in-nutshell.md) —— 自动化运维
@@ -381,8 +386,8 @@ flowchart LR
 
 ## Related
 
-- [[12_Architecture_Infrastructure/AI_Infrastructure_2026]] — AI Infrastructure 2026 完全指南 (共享: architecture, high-availability, infrastructure, kubernetes)
+- [[12_Architecture_Infrastructure/Architecture_Overview/AI_Infrastructure_2026]] — AI Infrastructure 2026 完全指南 (共享: architecture, high-availability, infrastructure, kubernetes)
 - [[12_Architecture_Infrastructure/Architecture-in-nutshell]] — AI 架构速成指南 (共享: architecture, high-availability, infrastructure, kubernetes)
-- [[12_Architecture_Infrastructure/Spring_AI_Architecture]] — Spring AI 系统架构设计 (共享: architecture, high-availability, infrastructure, kubernetes)
-- [[12_Architecture_Infrastructure/AI_Cost_Optimization_2026.md|AI_Cost_Optimization_2026]]
-- [[12_Architecture_Infrastructure/High_Availability_2026.md|High_Availability_2026]]
+- [[12_Architecture_Infrastructure/Architecture_Overview/Spring_AI_Architecture]] — Spring AI 系统架构设计 (共享: architecture, high-availability, infrastructure, kubernetes)
+- [[AI_Cost_Optimization_2026|AI_Cost_Optimization_2026]]
+- [[High_Availability_2026|High_Availability_2026]]

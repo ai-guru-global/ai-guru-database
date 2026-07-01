@@ -5,8 +5,13 @@ tags: ["opencompass", "evaluation", "benchmark", "llm", "chinese-llm", "mmbench"
 summary: "> **一句话理解**: OpenCompass 是上海人工智能实验室开源的一站式大模型评测平台，支持学科、知识、推理、多语言、多模态等丰富基准，是国内大模型能力评估和社区打榜的核心工具。"
 created: "2026-06-16"
 updated: "2026-06-16"
----
+tier: supporting
+aliases:
+  - "Opencompass Deep Dive"
+  - "OpenCompass Deep Dive"
+  - OpenCompass_Deep_Dive
 
+---
 # OpenCompass 深度解析：一站式大模型评测平台
 
 > **一句话理解**: OpenCompass 是上海人工智能实验室开源的一站式大模型评测平台，支持学科、知识、推理、多语言、多模态等丰富基准，是国内大模型能力评估和社区打榜的核心工具。
@@ -332,5 +337,5 @@ opencompass --summarize ./outputs
 - [[_concepts/opencompass]] — OpenCompass 概念卡片
 - [[_concepts/lm-evaluation-harness]] — LM Evaluation Harness
 - [[_concepts/model-evaluation]] — 模型评估
-- [[08_Model_Evaluation/LM_Evaluation_Harness_Deep_Dive]] — LM Evaluation Harness 深度解析
-- [[08_Model_Evaluation/LLM_Benchmark_Suite_2026]] — LLM 基准套件 2026
+- [[08_Model_Evaluation/Evaluation_Tools/LM_Evaluation_Harness_Deep_Dive]] — LM Evaluation Harness 深度解析
+- [[08_Model_Evaluation/Benchmarks/LLM_Benchmark_Suite_2026]] — LLM 基准套件 2026

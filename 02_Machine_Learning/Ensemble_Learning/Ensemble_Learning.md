@@ -5,8 +5,12 @@ tags: ["machine-learning", "supervised", "unsupervised"]
 summary: "[1. 集成学习概述](#1-集成学习概述)"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Ensemble Learning"
+  - Ensemble_Learning
 
+---
 # 集成学习 (Ensemble Learning) - 完全指南
 
 ## 目录

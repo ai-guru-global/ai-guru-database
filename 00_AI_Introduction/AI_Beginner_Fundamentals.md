@@ -3,8 +3,13 @@ title: "零基础学 AI：从概念到生态的入门全景"
 tags: [ai-fundamentals, ai-history, machine-learning, deep-learning, ecosystem, beginner, tech-stack]
 source: yeasy/ai_beginner_guide
 created: 2026-06-19
----
+tier: peripheral
+aliases:
+  - "Ai Beginner Fundamentals"
+  - "AI Beginner Fundamentals"
+  - AI_Beginner_Fundamentals
 
+---
 # 零基础学 AI：从概念到生态的入门全景
 
 > **一句话理解**: AI 是愿景（让机器像人）、机器学习是手段（用数据而非规则）、深度学习是具体工具（神经网络）；这三者层层嵌套，而驱动它们运转的，是算力、数据、算法三要素，以及一张从芯片到应用的"倒金字塔"产业地图。

@@ -3,8 +3,12 @@ title: "AI 系统记忆体系全景：从 KV Cache 到长期知识图谱"
 tags: [synthesis, memory-systems, kv-cache, conversation-history, working-memory, long-term-memory, knowledge-graph, vector-db, claude-code, openclaw, harness]
 type: synthesis
 created: 2026-06-17
----
+tier: core
+aliases:
+  - "Synthesis Memory Systems"
+  - "synthesis memory systems"
 
+---
 # AI 系统记忆体系全景：从 KV Cache 到长期知识图谱
 
 > **核心洞察**：记忆不是一个组件，而是一个从纳秒级 KV Cache 到永久知识图谱的连续谱系。不同层级的记忆在延迟、容量、精度、成本上有本质不同的权衡。真正优秀的 AI 系统不是记住一切，而是**在正确的时刻回忆正确的信息**。

@@ -6,7 +6,13 @@ tags:
 - ai-coding
 created: 2026-06-12
 category: 16-ai-coding-tools-opencode
-summary: ""
+tier: peripheral
+aliases:
+  - "Opencode Tools Permissions"
+  - "opencode tools permissions"
+
+updated: 2026-06-30
+summary: "工具体系与权限模型 — 专题文档"
 ---
 title: 工具体系与权限模型
 description: '**文档类型**: 核心能力专题 | **最后更新**: 2026-03 | **关键词**: OpenCode, Tools, Permissions,

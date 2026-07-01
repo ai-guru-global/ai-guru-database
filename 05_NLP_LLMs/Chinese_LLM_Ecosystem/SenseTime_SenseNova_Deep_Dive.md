@@ -5,8 +5,13 @@ tags: ["nlp", "llm", "sensetime", "sensenova", "chinese-llm", "computer-vision",
 summary: "> **一句话理解**: 商汤科技从计算机视觉四小龙转型为 AI 大模型平台，日日新融合大模型结合大装置算力基础设施，在数字人生成、图像视频和多模态领域布局全面。"
 created: "2026-06-12"
 updated: "2026-06-12"
----
+tier: supporting
+aliases:
+  - "Sensetime Sensenova Deep Dive"
+  - "SenseTime SenseNova Deep Dive"
+  - SenseTime_SenseNova_Deep_Dive
 
+---
 # 商汤日日新 (SenseNova): 视觉AI巨头的大模型转型
 
 > **一句话理解**: 商汤科技从计算机视觉四小龙转型为 AI 大模型平台，日日新融合大模型结合大装置算力基础设施，在数字人生成、图像视频和多模态领域布局全面。

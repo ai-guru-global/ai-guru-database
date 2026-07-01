@@ -6,7 +6,13 @@ tags:
 - ai-coding
 created: 2026-06-12
 category: 16-ai-coding-tools-openrouter
-summary: ""
+tier: peripheral
+aliases:
+  - "Openrouter Streaming Multimedia"
+  - "openrouter streaming multimedia"
+
+updated: 2026-06-30
+summary: "流式传输与多模态输入 — 专题文档"
 ---
 title: 流式传输与多模态输入
 description: '**文档类型**: 功能详解 | **最后更新**: 2026-03 | **关键词**: OpenRouter, Streaming,

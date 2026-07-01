@@ -5,8 +5,13 @@ tags: ["vertex-ai", "google-cloud", "gcp", "ai-platform", "mlops", "gemini", "tp
 summary: "> **一句话理解**: Google Vertex AI 是 GCP 统一的机器学习和生成式 AI 平台，提供模型训练、微调、部署、MLOps 和 Gemini 等基础模型 API，深度集成 TPU、BigQuery 和 Google 生态。"
 created: "2026-06-16"
 updated: "2026-06-16"
----
+tier: supporting
+aliases:
+  - "Google Vertex Ai Deep Dive"
+  - "Google Vertex AI Deep Dive"
+  - Google_Vertex_AI_Deep_Dive
 
+---
 # Google Vertex AI 深度解析：GCP 统一 AI 平台
 
 > **一句话理解**: Google Vertex AI 是 GCP 统一的机器学习和生成式 AI 平台，提供模型训练、微调、部署、MLOps 和 Gemini 等基础模型 API，深度集成 TPU、BigQuery 和 Google 生态。

@@ -5,8 +5,13 @@ tags: ["hami", "gpu-virtualization", "kubernetes", "operations", "helm", "monito
 summary: "> **一句话理解**: 本文档覆盖 HAMi 在生产环境中的完整运维路径——从 Helm 安装、节点标签、调度策略配置，到升级、监控、告警、WebUI 部署与日常排障前置检查。"
 created: "2026-06-16"
 updated: "2026-06-16"
----
+tier: supporting
+aliases:
+  - "Hami Operation Guide"
+  - "HAMi Operation Guide"
+  - HAMi_Operation_Guide
 
+---
 # HAMi 运维指南：安装、配置、升级与监控
 
 > **一句话理解**: 本文档覆盖 HAMi 在生产环境中的完整运维路径——从 Helm 安装、节点标签、调度策略配置，到升级、监控、告警、WebUI 部署与日常排障前置检查。
@@ -467,8 +472,8 @@ helm uninstall hami -n kube-system
 ## Related
 
 - [[_concepts/hami]] — HAMi 概念卡片
-- [[12_Architecture_Infrastructure/HAMi_Deep_Dive]] — HAMi 深度解析
-- [[12_Architecture_Infrastructure/HAMi_for_dummy]] — HAMi 入门
-- [[13_AI_Ops/HAMi_Troubleshooting_Guide]] — HAMi 问题排查
+- [[12_Architecture_Infrastructure/AI_Stack/HAMi_Deep_Dive]] — HAMi 深度解析
+- [[12_Architecture_Infrastructure/AI_Stack/HAMi_for_dummy]] — HAMi 入门
+- [[13_AI_Ops/SRE_Reliability/HAMi_Troubleshooting_Guide]] — HAMi 问题排查
 - [[_concepts/gpu-virtualization]] — GPU 虚拟化
 - [[_concepts/dra]] — DRA 动态资源分配

@@ -5,8 +5,11 @@ tags: ["overview"]
 summary: "> **最后更新**: 2026-04-30"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - Roadmap
 
+---
 # AI Guru 知识库路线图
 
 > **最后更新**: 2026-06-03 

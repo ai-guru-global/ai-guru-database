@@ -9,8 +9,11 @@ created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
 tier: supporting
----
+aliases:
+  - "Maarten Grootendorst Visual Guides"
+  - "maarten grootendorst visual guides"
 
+---
 # Maarten Grootendorst 图解 AI 系列
 
 > **一句话理解**: Maarten Grootendorst 的图解 AI 系列文章,用精美可视化解释 LLM Agent、MoE、推理模型等前沿概念。

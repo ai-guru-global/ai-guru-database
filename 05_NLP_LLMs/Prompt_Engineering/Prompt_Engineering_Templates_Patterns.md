@@ -3,8 +3,12 @@ title: "提示词模板库、反模式与技术分类索引"
 tags: [prompt-engineering, llm, templates, anti-patterns, taxonomy, decision-tree]
 source: yeasy/prompt_engineering_guide
 created: 2026-06-16
----
+tier: peripheral
+aliases:
+  - "Prompt Engineering Templates Patterns"
+  - Prompt_Engineering_Templates_Patterns
 
+---
 # 提示词模板库、反模式与技术分类索引
 
 本文融合《大模型提示词工程指南》附录 A/E/F 的核心内容，提供可直接复用的模板库、常见反模式与排错指南、技术分类体系与决策树。

@@ -5,8 +5,12 @@ tags: ["ai-coding", "code-generation", "cursor", "github-copilot"]
 summary: "> **一句话**: Cursor 是 2026 年最佳全能 AI IDE，Pro 版 $20/月，代码接受率 72% 行业最高，适合大型项目开发。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Cursor Guide"
+  - Cursor_Guide
 
+---
 # Cursor 使用指南
 
 > **一句话**: Cursor 是 2026 年最佳全能 AI IDE，Pro 版 $20/月，代码接受率 72% 行业最高，适合大型项目开发。

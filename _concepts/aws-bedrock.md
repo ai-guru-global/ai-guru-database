@@ -23,8 +23,11 @@ lifecycle: stable
 tier: core
 created: 2026-06-16
 updated: 2026-06-16
----
+aliases:
+  - "Aws Bedrock"
+  - "aws bedrock"
 
+---
 # AWS Bedrock
 
 > 亚马逊云的「模型百货商店」——一个 API 调用多个顶尖基础模型。

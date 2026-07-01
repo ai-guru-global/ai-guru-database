@@ -6,7 +6,7 @@ sources:
   - "17_Ethics_Safety/Safety_Evaluation_Framework"
   - "17_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming"
   - "08_Model_Evaluation/Model_Evaluation"
-  - "09_Testing/DeepEval_Deep_Dive"
+  - "09_Testing/Testing_Frameworks/DeepEval_Deep_Dive"
 created: 2026-06-01
 updated: 2026-06-01
 summary: "安全评测告诉你模型'有多脆弱'，红队测试告诉你'怎么攻破它'——两者结合形成 AI 安全的持续改进闭环。"
@@ -17,8 +17,12 @@ provenance:
 base_confidence: 0.73
 lifecycle: draft
 lifecycle_changed: 2026-06-01
----
+tier: core
+aliases:
+  - "Safety Evaluation Red Teaming"
+  - "safety evaluation red teaming"
 
+---
 # 安全评测 × 红队测试: 构建 AI 安全的攻防闭环
 
 ## The Connection
@@ -90,5 +94,5 @@ AI 安全有两个经典问题：
 - [[17_Ethics_Safety/Safety_Evaluation_Framework]]
 - [[17_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming]]
 - [[08_Model_Evaluation/Model_Evaluation]]
-- [[09_Testing/DeepEval_Deep_Dive]]
+- [[09_Testing/Testing_Frameworks/DeepEval_Deep_Dive]]
 - [[_synthesis/ai-ethics-future]]

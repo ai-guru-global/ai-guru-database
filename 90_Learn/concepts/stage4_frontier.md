@@ -5,8 +5,13 @@ tags: ["learning", "education", "courses", "study-path"]
 summary: '> **"2026 年的 AI 边界——这里的问题还没有标准答案，这里是未来的起点。"**'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Stage4 Frontier"
+  - "stage4 frontier"
+  - stage4_frontier
 
+---
 # Stage 4: 前沿探索
 
 > **"2026 年的 AI 边界——这里的问题还没有标准答案，这里是未来的起点。"**
@@ -176,7 +181,7 @@ updated: '2026-05-31'
   - **推理优化**：vLLM、TensorRT-LLM、FlashAttention 让推理成本大幅下降
   - **边缘 AI**：端侧模型（Phi-4、Gemma 2B）让手机/PC 也能跑 LLM
 - **入门阅读**：[AI 硬件](../../01_Fundamentals/AI_Hardware/AI_Hardware_2026.md)
-- **深入学习**：[AI 基础设施趋势 2026](../../12_Architecture_Infrastructure/AI_Infrastructure_2026.md)
+- **深入学习**：[AI 基础设施趋势 2026](../../12_Architecture_Infrastructure/Architecture_Overview/AI_Infrastructure_2026)
 - **关联概念**：GPU、分布式训练、量化
 
 ---

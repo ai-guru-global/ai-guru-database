@@ -5,8 +5,11 @@ tags: ["talks", "speeches", "insights", "leaders"]
 summary: "**身份**: Google X 创始人、Udacity 联合创始人，自动驾驶先驱。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - About
 
+---
 # Sebastian Thrun 简介 (Sebastian Thrun)
 
 - **身份**: Google X 创始人、Udacity 联合创始人，自动驾驶先驱。

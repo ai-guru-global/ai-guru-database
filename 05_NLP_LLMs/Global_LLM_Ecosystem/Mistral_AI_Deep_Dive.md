@@ -5,8 +5,13 @@ tags: [mistral-ai, mixtral, moe, sliding-window-attention, gqa, codestral, pixtr
 summary: "全面剖析 Mistral AI 从 7B Dense 到 Mistral 3 旗舰 675B MoE 的完整技术演进：Sliding Window Attention (SWA)、Grouped Query Attention (GQA)、开源 MoE 革命 (Mixtral)、Codestral 代码模型、Mamba/SSM 架构探索以及多模态生态 (Pixtral, Voxtral, OCR)。"
 created: 2026-06-02
 updated: 2026-06-02
----
+tier: supporting
+aliases:
+  - "Mistral Ai Deep Dive"
+  - "Mistral AI Deep Dive"
+  - Mistral_AI_Deep_Dive
 
+---
 # Mistral AI 技术深度解析
 
 ## 一句话理解
@@ -1456,7 +1461,7 @@ curl http://localhost:11434/api/generate -d '{
 
 ### MoE 深度研究
 
-- [Mixture of Experts Deep Dive](../../20_Papers/Mixture_of_Experts_Deep_Dive.md) — MoE 从理论到实践的完整剖析，涵盖 Mixtral 和 DeepSeek
+- [Mixture of Experts Deep Dive](../../20_Papers_and_Research/Architecture/Mixture_of_Experts_Deep_Dive.md) — MoE 从理论到实践的完整剖析，涵盖 Mixtral 和 DeepSeek
 
 ### 中国 LLM 生态
 

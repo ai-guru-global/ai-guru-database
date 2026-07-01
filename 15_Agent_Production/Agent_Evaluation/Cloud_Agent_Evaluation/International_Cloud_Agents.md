@@ -5,8 +5,12 @@ tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> AWS、Azure、GCP、Databricks、Snowflake 五大国际云产品智能体的深度测评"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "International Cloud Agents"
+  - International_Cloud_Agents
 
+---
 # 国际云厂商 Agent 测评详情
 
 > AWS、Azure、GCP、Databricks、Snowflake 五大国际云产品智能体的深度测评

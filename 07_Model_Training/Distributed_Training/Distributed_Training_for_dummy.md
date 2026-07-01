@@ -5,8 +5,13 @@ tags: ["model-training", "distributed-training", "optimization", "fsdp"]
 summary: "> **一句话秒懂**: 分布式训练就像盖房子——一个工人盖太慢了，请一百个工人一起干，房子很快就盖好了。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Distributed Training For Dummy"
+  - "Distributed Training for dummy"
+  - Distributed_Training_for_dummy
 
+---
 # 分布式训练 - 小白版
 
 > **一句话秒懂**: 分布式训练就像盖房子——一个工人盖太慢了，请一百个工人一起干，房子很快就盖好了。
@@ -418,7 +423,7 @@ FSDP 是 PyTorch 版本的 ZeRO-3
 你已经了解了分布式训练的基础知识！🎉
 
 建议接下来：
-1. **了解训练基础**：阅读 [模型训练入门](./Model_Training_for_dummy.md)
+1. **了解训练基础**：阅读 [模型训练入门](../Model_Training_for_dummy.md)
 2. **深入学习**：阅读 [分布式训练专业版](./Distributed_Training_2026.md)
 3. **动手实践**：用 Hugging Face `accelerate` 库体验简单的分布式训练
 

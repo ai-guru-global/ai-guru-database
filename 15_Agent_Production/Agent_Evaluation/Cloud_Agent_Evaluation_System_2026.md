@@ -5,8 +5,12 @@ tags: ["ai-agents", "agent-framework", "production", "langgraph", "model-evaluat
 summary: "> 云产品智能体能力评估系统 - 基于 CAPER 五维模型的全面评估框架"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: core
+aliases:
+  - "Cloud Agent Evaluation System 2026"
+  - Cloud_Agent_Evaluation_System_2026
 
+---
 # Cloud Agent Evaluation System 2026
 
 > 云产品智能体能力评估系统 - 基于 CAPER 五维模型的全面评估框架

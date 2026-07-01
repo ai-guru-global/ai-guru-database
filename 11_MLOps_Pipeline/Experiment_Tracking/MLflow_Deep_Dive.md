@@ -5,8 +5,13 @@ tags: ["ai-ops", "observability", "monitoring", "incident-response"]
 summary: "> **一句话理解**: MLflow 是 Databricks 的机器学习生命周期管理平台——实验追踪、模型注册、特征存储、模型服务，开源 ML 平台的事实标准。"
 created: "2026-05-31"
 updated: "2026-05-31"
----
+tier: supporting
+aliases:
+  - "Mlflow Deep Dive"
+  - "MLflow Deep Dive"
+  - MLflow_Deep_Dive
 
+---
 # MLflow: 机器学习生命周期管理
 
 > **一句话理解**: MLflow 是 Databricks 的机器学习生命周期管理平台——实验追踪、模型注册、特征存储、模型服务，开源 ML 平台的事实标准。
@@ -379,7 +384,7 @@ mlflow.log_feature_store(
 ## Related
 
 - [[13_AI_Ops/AIOps-in-nutshell.md|AIOps-in-nutshell]]
-- [[13_AI_Ops/AI_Incident_Response_Playbook.md|AI_Incident_Response_Playbook]]
+- [[13_AI_Ops/SRE_Reliability/AI_Incident_Response_Playbook|AI_Incident_Response_Playbook]]
 - [[13_AI_Ops/AI_Ops_for_dummy.md|AI_Ops_for_dummy]]
 - [[13_AI_Ops/README.md|13_AI_Ops README]]
 - [[13_AI_Ops/README_for_dummy.md|README_for_dummy]]

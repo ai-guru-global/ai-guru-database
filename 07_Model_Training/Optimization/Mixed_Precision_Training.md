@@ -5,8 +5,12 @@ tags: ["model-training", "distributed-training", "optimization", "fsdp"]
 summary: "> **一句话理解**: 混合精度训练是在保持模型精度的前提下，用 FP16/BF16/FP8 等低精度格式存储和计算大部分张量，从而显著降低显存占用、提升计算吞吐量的工程艺术。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Mixed Precision Training"
+  - Mixed_Precision_Training
 
+---
 # 混合精度训练 (Mixed Precision Training)
 
 > **一句话理解**: 混合精度训练是在保持模型精度的前提下，用 FP16/BF16/FP8 等低精度格式存储和计算大部分张量，从而显著降低显存占用、提升计算吞吐量的工程艺术。
@@ -809,10 +813,10 @@ training_args = TrainingArguments(
 ## 🔗 相关章节
 
 - 更多训练优化技巧 → [训练优化 2026](./Training_Optimization_2026.md)
-- 分布式训练中的混合精度 → [分布式训练 2026](./Distributed_Training_2026.md)
-- 优化器基础与原理 → [../03_Deep_Learning/Optimization/Optimization.md](../03_Deep_Learning/Optimization/Optimization.md)
-- 模型评估指标 → [../08_Model_Evaluation/Model_Evaluation.md](../08_Model_Evaluation/Model_Evaluation.md)
-- 部署推理优化 → [../10_Deployment_Inference/Inference-in-nutshell.md](../10_Deployment_Inference/Inference-in-nutshell.md)
+- 分布式训练中的混合精度 → [分布式训练 2026](../Distributed_Training/Distributed_Training_2026.md)
+- 优化器基础与原理 → [../03_Deep_Learning/Optimization/Optimization.md](../../03_Deep_Learning/Optimization/Optimization.md)
+- 模型评估指标 → [../08_Model_Evaluation/Model_Evaluation.md](../../08_Model_Evaluation/Model_Evaluation.md)
+- 部署推理优化 → [../10_Deployment_Inference/Inference-in-nutshell.md](../../10_Deployment_Inference/Inference-in-nutshell.md)
 
 ---
 

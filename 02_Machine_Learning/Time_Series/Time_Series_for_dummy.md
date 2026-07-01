@@ -5,8 +5,13 @@ tags: ["machine-learning", "supervised", "unsupervised"]
 summary: '> **一句话秒懂**: 时间序列就像看股票走势图 —— 通过研究过去的"涨涨跌跌"，来猜未来会怎么走！'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Time Series For Dummy"
+  - "Time Series for dummy"
+  - Time_Series_for_dummy
 
+---
 # 时间序列分析 - 小白版
 
 > **一句话秒懂**: 时间序列就像看股票走势图 —— 通过研究过去的"涨涨跌跌"，来猜未来会怎么走！

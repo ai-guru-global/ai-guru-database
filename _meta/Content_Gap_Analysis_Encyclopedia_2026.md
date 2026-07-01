@@ -53,13 +53,13 @@ ASR（Whisper）、TTS（VITS/CosyVoice）、音频理解（AudioLM）、音乐�
 |------|--------|------|
 | GAN（Goodfellow 2014） | 生成式 AI 奠基之作 | ✅ 已创建 |
 | VAE（Kingma 2014） | 变分自编码器，扩散模型前身 | ✅ 已创建 |
-| ImageNet / AlexNet（2012） | 深度学习革命起点 | 待创建 |
-| Word2Vec（2013）/ GloVe | NLP 分布式表示的开端 | 待创建 |
+| ImageNet / AlexNet（2012） | 深度学习革命起点 | ✅ 已创建 |
+| Word2Vec（2013）/ GloVe | NLP 分布式表示的开端 | ✅ 已创建 |
 | CLIP（OpenAI 2021） | 视觉-语言多模态对齐基石 | ✅ 已创建 |
 | LoRA（Hu 2022） | PEFT 微调的里程碑 | ✅ 已创建 |
 | RAG（Lewis 2020） | 检索增强生成原始论文 | ✅ 已创建 |
 | Chain-of-Thought（Wei 2022） | 推理链的开创性工作 | ✅ 已创建 |
-| U-Net（2015） | 分割与扩散模型骨架网络 | 待创建 |
+| U-Net（2015） | 分割与扩散模型骨架网络 | ✅ 已创建 |
 
 ---
 
@@ -84,19 +84,19 @@ ASR（Whisper）、TTS（VITS/CosyVoice）、音频理解（AudioLM）、音乐�
 4. ✅ 信息论基础 → `01_Fundamentals/Information_Theory/`
 5. ✅ 因果推断 → `02_Machine_Learning/Causal_Inference/`
 6. ✅ 贝叶斯方法 → `02_Machine_Learning/Bayesian_Methods/`
-7. ✅ 核心论文补充 → `20_Papers/` (GAN/VAE/CLIP/LoRA/CoT)
+7. ✅ 核心论文补充 → `20_Papers_and_Research/` (GAN/VAE/CLIP/LoRA/CoT)
 
 ### P1 - 理论深度提升
 8. ✅ 自监督学习专题 → `03_Deep_Learning/Self_Supervised_Learning/`
 9. ✅ LLM 数据工程 → `05_NLP_LLMs/LLM_Data_Engineering/`
 10. ✅ 小模型/端侧 LLM → `05_NLP_LLMs/Edge_LLM/`
 11. ✅ 联邦学习独立章节 → `17_Ethics_Safety/Federated_Learning/`
-12. ✅ 论文补充: VAE/CoT/RAG → `20_Papers/`
+12. ✅ 论文补充: VAE/CoT/RAG → `20_Papers_and_Research/`
 
 ### P2 - 实践价值增强
-13. 统一 Benchmark 对比表
-14. 各章节配套实验
-15. 概念间依赖关系图谱
+13. ✅ 统一 Benchmark 对比表 → `08_Model_Evaluation/Unified_Benchmark_Comparison.md`
+14. ✅ 各章节配套实验 → `00_AI_Introduction/Hands_On_Experiments_Guide.md`
+15. ✅ 概念间依赖关系图谱 → `_concepts/concept-dependency-graph.md`
 
 ---
 
@@ -112,4 +112,4 @@ ASR（Whisper）、TTS（VITS/CosyVoice）、音频理解（AudioLM）、音乐�
 
 ---
 
-*本分析于 2026-06-04 生成，P0 和 P1 级任务均已完成（2026-06-04），仅 P2 级和部分论文待补充。*
+*本分析于 2026-06-04 生成，P0、P1、P2 级任务均已完成（2026-06-04），所有计划内任务已交付。*

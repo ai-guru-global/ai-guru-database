@@ -5,8 +5,12 @@ tags: ["python", "numpy", "pandas", "matplotlib", "scikit-learn", "data-science"
 summary: "AI 开发者必备的四大利器速成。NumPy 做矩阵运算，Pandas 处理表格数据，Matplotlib 画可视化，Scikit-learn 训练第一个模型。全部用 AI 真实场景举例。"
 created: 2026-06-01
 updated: 2026-06-01
----
+tier: supporting
+aliases:
+  - "Python Data Science Toolkit"
+  - Python_Data_Science_Toolkit
 
+---
 # Python 数据科学工具链: NumPy + Pandas + Matplotlib + Scikit-learn
 
 > **一句话理解**: NumPy 是计算器，Pandas 是 Excel，Matplotlib 是画笔，Scikit-learn 是模型工厂——四者组合，就能完成 80% 的 AI 数据工作。

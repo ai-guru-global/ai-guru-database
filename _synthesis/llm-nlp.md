@@ -4,8 +4,12 @@ category: -synthesis
 tags: [synthesis, llm, nlp, transformer, gpt, bert]
 summary: 从传统 NLP 到现代大语言模型的技术演进脉络，以及 LLM 如何重新定义自然语言处理的任务范式。
 created: 2026-06-12
----
+tier: core
+aliases:
+  - "Llm Nlp"
+  - "llm nlp"
 
+---
 # LLM 与 NLP 的融合与演进
 
 ## The Connection
@@ -46,5 +50,5 @@ LLM 对 NLP 的最大改变不是性能提升，而是**问题定义权的转移
 - [[05_NLP_LLMs/README]]
 - [[_concepts/transformer-architecture]]
 - [[_concepts/llm-architectures]]
-- [[20_Papers/Architecture/BERT_Deep_Dive]]
-- [[20_Papers/Scaling/GPT3_Deep_Dive]]
+- [[20_Papers_and_Research/Architecture/BERT_Deep_Dive]]
+- [[20_Papers_and_Research/Scaling/GPT3_Deep_Dive]]

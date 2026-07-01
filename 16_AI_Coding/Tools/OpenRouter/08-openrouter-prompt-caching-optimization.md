@@ -6,7 +6,13 @@ tags:
 - ai-coding
 created: 2026-06-12
 category: 16-ai-coding-tools-openrouter
-summary: ""
+tier: peripheral
+aliases:
+  - "Openrouter Prompt Caching Optimization"
+  - "openrouter prompt caching optimization"
+
+updated: 2026-06-30
+summary: "Prompt Caching 与成本优化 — 专题文档"
 ---
 title: Prompt Caching 与成本优化
 description: '# Prompt Caching 与成本优化'

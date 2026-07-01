@@ -5,8 +5,13 @@ tags: ["reinforcement-learning", "agent", "mdp"]
 summary: "> 从理论到实践：具身智能的技术栈、人形机器人、VLA 应用、仿真到真实的全链路解析"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Embodied Ai Complete 2026"
+  - "Embodied AI Complete 2026"
+  - Embodied_AI_Complete_2026
 
+---
 # 具身智能 (Embodied AI) 2026 完整指南
 
 > 从理论到实践：具身智能的技术栈、人形机器人、VLA 应用、仿真到真实的全链路解析

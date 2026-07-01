@@ -5,8 +5,13 @@ tags: ["nlp", "llm", "transformer", "gpt", "bert"]
 summary: "> **一句话理解**: LLaVA 是开源多模态大模型——连接视觉编码器与 LLM 实现图文对话，在 GPT-4V 开源替代中性能领先。"
 created: "2026-05-31"
 updated: "2026-05-31"
----
+tier: supporting
+aliases:
+  - "Llava Deep Dive"
+  - "LLaVA Deep Dive"
+  - LLaVA_Deep_Dive
 
+---
 # LLaVA: 开源多模态大模型
 
 > **一句话理解**: LLaVA 是开源多模态大模型——连接视觉编码器与 LLM 实现图文对话，在 GPT-4V 开源替代中性能领先。

@@ -23,8 +23,11 @@ lifecycle: stable
 tier: core
 created: 2026-06-16
 updated: 2026-06-16
----
+aliases:
+  - "Colossal Ai"
+  - "colossal ai"
 
+---
 # Colossal-AI
 
 > 国产的「大模型训练一体化系统」——把多种并行和优化技术打包，降低训练和推理成本。

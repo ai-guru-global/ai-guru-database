@@ -5,8 +5,12 @@ tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> **一句话理解**: Aider 是开源 AI 代码编辑 CLI——终端内直接编辑代码、Git 集成、多文件重构、快速迭代，程序员爱用的命令行 AI 助手。"
 created: "2026-05-31"
 updated: "2026-05-31"
----
+tier: supporting
+aliases:
+  - "Aider Deep Dive"
+  - Aider_Deep_Dive
 
+---
 # Aider: AI 代码编辑工具
 
 > **一句话理解**: Aider 是开源 AI 代码编辑 CLI——终端内直接编辑代码、Git 集成、多文件重构、快速迭代，程序员爱用的命令行 AI 助手。

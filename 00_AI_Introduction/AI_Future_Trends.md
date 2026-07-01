@@ -5,8 +5,13 @@ tags: ["ai", "trends", "future", "agi"]
 summary: "我们正处于AI发展的历史转折点——从狭义AI向通用AI过渡的关键十年，技术突破、商业应用和社会适应将同步加速，塑造人类文明的下一个世纪。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Ai Future Trends"
+  - "AI Future Trends"
+  - AI_Future_Trends
 
+---
 # AI 未来趋势展望
 
 > **一句话理解**: 我们正处于 AI 发展的历史转折点——从狭义 AI 向通用 AI 过渡的关键十年，技术突破、商业应用和社会适应将同步加速，塑造人类文明的下一个世纪。

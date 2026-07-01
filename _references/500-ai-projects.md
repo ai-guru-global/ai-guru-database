@@ -9,8 +9,11 @@ created: 2026-06-12
 updated: 2026-06-12
 lifecycle: draft
 tier: supporting
----
+aliases:
+  - "Ai Projects"
+  - "ai projects"
 
+---
 # 500 AI / ML / DL / CV / NLP Projects with Code
 
 A curated, continuously-updated list of hands-on projects across artificial intelligence, machine learning, deep learning, computer vision, and NLP. Each entry links to code repositories, tutorials, or project collections.

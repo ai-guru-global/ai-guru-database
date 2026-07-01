@@ -5,8 +5,11 @@ tags: ["talks", "speeches", "insights", "leaders"]
 summary: "> 说明：以下整理李飞飞教授在公开场合关于 AI 的代表性言论，提供中英文对照与出处链接。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - Sayings
 
+---
 # 李飞飞 (Fei-Fei Li) 关于 AI 的观点与格言
 
 > 说明：以下整理李飞飞教授在公开场合关于 AI 的代表性言论，提供中英文对照与出处链接。

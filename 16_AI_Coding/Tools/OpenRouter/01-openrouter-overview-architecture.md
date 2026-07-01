@@ -13,7 +13,10 @@ aliases:
 - 概述
 created: 2026-06-12
 category: 16-ai-coding-tools-openrouter
-summary: ""
+tier: peripheral
+
+updated: 2026-06-30
+summary: "OpenRouter 概述与核心架构 — 专题文档"
 ---
 title: OpenRouter 概述与核心架构
 description: '# OpenRouter 概述与核心架构'

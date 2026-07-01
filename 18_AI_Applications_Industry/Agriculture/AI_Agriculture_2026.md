@@ -5,8 +5,13 @@ tags: ["ai-applications", "industry", "finance", "healthcare"]
 summary: '> **一句话理解**: 2026年农业AI正从"精准农业"迈向"自主农业"——AI+卫星遥感实现全球作物监测，农业机器人开始规模化田间作业，气候智能农业成为粮食安全的关键工具。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Ai Agriculture 2026"
+  - "AI Agriculture 2026"
+  - AI_Agriculture_2026
 
+---
 # AI 农业行业应用 (2025-2026)
 
 > **一句话理解**: 2026 年农业 AI 正从"精准农业"迈向"自主农业"——AI+卫星遥感实现全球作物监测，农业机器人开始规模化田间作业，气候智能农业成为粮食安全的关键工具。

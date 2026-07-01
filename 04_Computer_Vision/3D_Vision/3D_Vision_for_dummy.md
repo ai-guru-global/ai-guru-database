@@ -5,8 +5,13 @@ tags: ["computer-vision", "cnn", "image-processing"]
 summary: '> **一句话秒懂**: 3D 视觉就是让 AI "看懂"立体世界——不仅识别这是什么物体，还能知道它在 3D 空间里的位置、形状、朝向，就像人类用两只眼睛看世界一样！'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "3d Vision For Dummy"
+  - "3D Vision for dummy"
+  - 3D_Vision_for_dummy
 
+---
 # 3D 视觉 - 小白版 🏗️
 
 > **一句话秒懂**: 3D 视觉就是让 AI "看懂"立体世界——不仅识别这是什么物体，还能知道它在 3D 空间里的位置、形状、朝向，就像人类用两只眼睛看世界一样！

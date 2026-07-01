@@ -3,8 +3,13 @@ title: "大模型推理与部署：从解码到生产引擎"
 tags: [llm, inference, kv-cache, flash-attention, quantization, speculative-decoding, vllm, serving]
 source: yeasy/llm_internals
 created: 2026-06-19
----
+tier: peripheral
+aliases:
+  - "Llm Internals Inference"
+  - "LLM Internals Inference"
+  - LLM_Internals_Inference
 
+---
 # 大模型推理与部署：从解码到生产引擎
 
 > **核心命题**：推理的瓶颈到底在哪？如何用 KV 缓存、Flash Attention、量化、连续批处理把吞吐量提升数十倍？

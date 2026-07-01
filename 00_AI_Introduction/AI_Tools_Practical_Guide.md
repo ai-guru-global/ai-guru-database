@@ -5,8 +5,13 @@ tags: ["ai", "tools", "guide", "practical"]
 summary: "掌握AI工具是现代数字素养的核心——从日常效率提升到专业技能增强，学会与AI协作将成为像使用搜索引擎一样的基本能力。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Ai Tools Practical Guide"
+  - "AI Tools Practical Guide"
+  - AI_Tools_Practical_Guide
 
+---
 # AI 工具与实践指南
 
 > **一句话理解**: 掌握 AI 工具是现代数字素养的核心——从日常效率提升到专业技能增强，学会与 AI 协作将成为像使用搜索引擎一样的基本能力。

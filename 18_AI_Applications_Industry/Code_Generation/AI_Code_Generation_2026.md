@@ -9,8 +9,12 @@ created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
 tier: supporting
----
+aliases:
+  - "Ai Code Generation 2026"
+  - "AI Code Generation 2026"
+  - AI_Code_Generation_2026
 
+---
 # AI 代码生成应用场景深度解析
 
 > **一句话理解**: AI 代码生成从辅助补全到自主开发的演进,覆盖 GitHub Copilot、Cursor、Claude Code 等工具在企业中的落地实践。
@@ -52,5 +56,5 @@ tier: supporting
 - **知识产权**: 训练数据的版权问题
 - **技能退化**: 过度依赖可能降低编程能力
 
-> **关联**: -> [[16_AI_Coding|AI 编程]] | [[09_Testing|测试]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[16_AI_Coding/README|AI 编程]] | [[09_Testing/README|测试]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
 

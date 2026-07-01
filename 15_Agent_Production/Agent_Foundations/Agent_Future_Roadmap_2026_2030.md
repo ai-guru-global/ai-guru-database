@@ -5,8 +5,12 @@ tags: ["reinforcement-learning", "agent", "mdp", "ai-agents"]
 summary: "> 从当前状态到 AGI Agent：技术演进、产业变革、社会影响的全景预测"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Agent Future Roadmap 2026 2030"
+  - Agent_Future_Roadmap_2026_2030
 
+---
 # Agent 未来发展路线图 2026-2030
 
 > 从当前状态到 AGI Agent：技术演进、产业变革、社会影响的全景预测

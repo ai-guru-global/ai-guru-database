@@ -5,8 +5,13 @@ tags: ["deployment", "inference", "serving", "tensorrt-llm", "nvidia", "llm", "f
 summary: "> **一句话理解**: TensorRT-LLM 是 NVIDIA 的高性能 LLM 推理库——TensorRT 加速 + 定制 kernel，单请求延迟最低，H100/H200 推理性能标杆。"
 created: "2026-05-31"
 updated: "2026-06-15"
----
+tier: core
+aliases:
+  - "Tensorrt Llm Deep Dive"
+  - "TensorRT LLM Deep Dive"
+  - TensorRT_LLM_Deep_Dive
 
+---
 # TensorRT-LLM: NVIDIA 生产级 LLM 推理
 
 > **一句话理解**: TensorRT-LLM 是 NVIDIA 的高性能 LLM 推理库——TensorRT 加速 + 定制 kernel，单请求延迟最低，H100/H200 推理性能标杆。
@@ -632,4 +637,5 @@ trtllm-build \
 - [[10_Deployment_Inference/Inference_Engines/SGLang_Deep_Dive.md|SGLang_Deep_Dive]]
 - [[10_Deployment_Inference/Inference_Engines/TGI_Deep_Dive.md|TGI_Deep_Dive]]
 - [[10_Deployment_Inference/Inference_Engines/LMDeploy_Deep_Dive.md|LMDeploy_Deep_Dive]]
-- [[12_Architecture_Infrastructure/CDI_Deep_Dive.md|CDI 容器设备接口（GPU 容器接入）]]
+- [[12_Architecture_Infrastructure/Hardware_Compute/CDI_Deep_Dive.md|CDI 容器设备接口（GPU 容器接入）]]
+- [[_synthesis/chinese-chips-inference|国产 AI 芯片 × 推理引擎: 硬件约束下的推理软件栈适配]]

@@ -5,8 +5,13 @@ tags: ["ai-stack", "model-management", "huggingface", "modelscope", "git-lfs", "
 summary: "> **一句话理解**: AI Stack 模型管理需要兼顾国内网络环境和 HuggingFace 生态，分别使用 modelscope（国内首选）、huggingface-cli（海外/官方）和 git-lfs（通用大文件下载）。"
 created: "2026-06-16"
 updated: "2026-06-16"
----
+tier: supporting
+aliases:
+  - "Ai Stack Model Management Guide"
+  - "AI Stack Model Management Guide"
+  - AI_Stack_Model_Management_Guide
 
+---
 # AI Stack 模型下载与管理指南
 
 > **一句话理解**: AI Stack 模型管理需要兼顾国内网络环境和 HuggingFace 生态，分别使用 `modelscope`（国内首选）、`huggingface-cli`（海外/官方）和 `git-lfs`（通用大文件下载）。
@@ -132,6 +137,6 @@ git lfs ls-files
 - [[12_Architecture_Infrastructure/AI_Stack_Production_Toolchain|AI Stack 生产工具链总览]]
 - [[12_Architecture_Infrastructure/AI_Stack_Inference_Serving_Guide|AI Stack 推理服务指南]]
 - [[12_Architecture_Infrastructure/AI_Stack_Training_Launchers_Guide|AI Stack 训练启动器指南]]
-- [[05_NLP_LLMs/Chinese_LLM_Ecosystem|中国大模型生态]]
+- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/README|中国大模型生态]]
 - [[07_Model_Training/Distributed_Training/ms_swift_Deep_Dive|ms-swift 深度解析]]
 - [[_concepts/model-deployment|LLM 部署]]

@@ -5,8 +5,13 @@ tags: [deepseek, r1, reasoning, grpo, reinforcement-learning, cold-start, self-e
 summary: 深度剖析 DeepSeek-R1 的训练全流程、GRPO 算法、冷启动策略、自我进化现象和开源工程实践。
 date: 2026-06-01
 created: 2026-06-12
----
+tier: peripheral
+aliases:
+  - "Deepseek R1 Technical Analysis"
+  - "DeepSeek R1 Technical Analysis"
+  - DeepSeek_R1_Technical_Analysis
 
+---
 # DeepSeek-R1 技术深度解析
 
 ## 一句话理解

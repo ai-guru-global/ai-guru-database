@@ -5,8 +5,13 @@ tags: ["datasets", "huggingface", "data-processing", "streaming", "rag"]
 summary: "> **一句话理解**: 面对 TB 级的大模型预训练/RAG 语料，`datasets` 库的 Streaming 模式允许你在一台只有 8GB 内存的笔记本上处理海量数据而不会 OOM。"
 created: "2026-06-12"
 updated: "2026-06-12"
----
+tier: supporting
+aliases:
+  - "Hf Datasets Streaming"
+  - "HF Datasets Streaming"
+  - HF_Datasets_Streaming
 
+---
 # Hugging Face Datasets 流式处理与大规模语料加工指南
 
 > **一句话理解**: 面对 TB 级的大模型预训练或庞大的 RAG 语料库，Hugging Face 的 `datasets` 库提供了强大的 **Streaming (流式加载)** 模式，允许你在一台只有 8GB 内存的笔记本上飞速处理海量数据而不会 OOM。

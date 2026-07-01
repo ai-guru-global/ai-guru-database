@@ -24,8 +24,11 @@ lifecycle_changed: 2026-06-12
 tier: supporting
 created: 2026-06-12
 updated: 2026-06-12
----
+aliases:
+  - "Hands On Llms Alammar"
+  - "hands on llms alammar"
 
+---
 # Hands-On Large Language Models
 
 > **一句话理解**: 被誉为“图解版 LLM 教程”的实战书籍，用近 300 张定制图表和可运行的 Jupyter Notebook，系统讲解从 Token 处理到 BERT/生成模型微调的全栈 LLM 知识。所有示例可在 Google Colab 免费运行。

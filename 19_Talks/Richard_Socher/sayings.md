@@ -5,8 +5,11 @@ tags: ["talks", "speeches", "insights", "leaders"]
 summary: "1. **“The next interface is natural language.” / “下一代界面是自然语言。”**"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - Sayings
 
+---
 # Richard Socher 关于 AI 的观点 (Richard Socher on AI)
 
 1. **“The next interface is natural language.” / “下一代界面是自然语言。”** 

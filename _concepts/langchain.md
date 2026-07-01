@@ -28,8 +28,10 @@ lifecycle: stable
 tier: core
 created: 2026-06-16
 updated: 2026-06-16
----
+aliases:
+  - Langchain
 
+---
 # LangChain
 
 > LLM 应用开发的「瑞士军刀」——把模型、提示、工具、记忆串成可复用组件。
@@ -96,6 +98,6 @@ updated: 2026-06-16
 - [[15_Agent_Production/Agent_Frameworks/LangChain_Deep_Dive]] — LangChain 深度解析
 - [[15_Agent_Production/Agent_Frameworks/LangChain_Agents_Deep_Dive]] — LangChain Agents 深度解析
 - [[_concepts/agent-framework]] — Agent 框架
-- [[_concepts/rag]] — RAG
+- [[_concepts/rag-patterns]] — RAG
 - [[_concepts/llamaindex]] — LlamaIndex
 - [[_concepts/autogen]] — AutoGen

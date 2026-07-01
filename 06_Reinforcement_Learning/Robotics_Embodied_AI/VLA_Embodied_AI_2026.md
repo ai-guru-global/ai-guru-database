@@ -5,8 +5,13 @@ tags: ["vla", "embodied-ai", "robotics", "vision-language-action", "rt-2", "pi0"
 summary: "从 RT-2 到 pi-0，Vision-Language-Action (VLA) 模型如何将视觉理解、语言推理与物理动作统一到一个端到端架构中，驱动具身智能在 2026 年进入通用化阶段。"
 created: "2026-06-12"
 updated: "2026-06-12"
----
+tier: supporting
+aliases:
+  - "Vla Embodied Ai 2026"
+  - "VLA Embodied AI 2026"
+  - VLA_Embodied_AI_2026
 
+---
 # VLA 具身智能 2026
 
 > **TL;DR**: VLA (Vision-Language-Action) 模型 = 视觉编码器 + LLM 骨干 + 动作解码器，一个模型同时完成"看懂 → 理解 → 行动"。RT-2 开创范式，pi-0/OpenVLA 推动开源，2026 年 VLA 正在从实验室走向工厂级通用机器人。

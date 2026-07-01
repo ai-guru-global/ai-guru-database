@@ -5,8 +5,9 @@ tags: ["ai-applications", "industry", "finance", "healthcare"]
 summary: "本章节提供人工智能在各行业的应用现状、案例分析和融合趋势，覆盖10大行业的2025-2026最新数据与标杆案例。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
 
+---
 # 13 - AI 应用与行业融合
 
 本章节提供人工智能在各行业的应用现状、案例分析和融合趋势，覆盖 10 大行业的 2025-2026 最新数据与标杆案例。

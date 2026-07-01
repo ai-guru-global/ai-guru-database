@@ -5,8 +5,12 @@ tags: ["machine-learning", "supervised", "unsupervised"]
 summary: '> **一句话理解**: 监督学习就像"有老师的学习"——给模型展示大量的"问题-答案"配对（如图片→类别、房屋特征→价格），让它学会从输入推测正确输出，就像学生通过习题册学习解题规律一样。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Supervised Learning"
+  - Supervised_Learning
 
+---
 # 监督学习 (Supervised Learning)
 
 > **一句话理解**: 监督学习就像"有老师的学习"——给模型展示大量的"问题-答案"配对（如图片→类别、房屋特征→价格），让它学会从输入推测正确输出，就像学生通过习题册学习解题规律一样。

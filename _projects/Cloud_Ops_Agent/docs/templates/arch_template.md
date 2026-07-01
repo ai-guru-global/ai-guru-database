@@ -5,6 +5,7 @@ tags: ["cloud-ops", "devops", "sre", "automation"]
 summary: "> 🎯 **目标**: 为架构师提供 Cloud Ops Agent [组件/功能]的顶层设计视图，基于 Agent Harness 的模块化、可观测、可插拔原则，确保系统高可用与安全性。"
 created: 2026-05-31
 updated: 2026-05-31
+tier: supporting
 ---
 
 # [文档标题]

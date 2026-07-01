@@ -19,8 +19,11 @@ lifecycle_changed: 2026-05-31
 tier: core
 created: 2026-05-31T00:00:00Z
 updated: 2026-05-31T00:00:00Z
----
+aliases:
+  - "Sequence Models"
+  - "sequence models"
 
+---
 # 序列模型
 
 ## 概述

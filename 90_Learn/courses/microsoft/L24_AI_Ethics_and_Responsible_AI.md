@@ -6,8 +6,13 @@ summary: "微软 AI For Beginners 第 24 课：AI 是强大工具，既可造福
 source_url: "https://raw.githubusercontent.com/microsoft/AI-For-Beginners/main/lessons/7-Ethics/README.md"
 created: "2026-06-12"
 updated: "2026-06-12"
----
+tier: supporting
+aliases:
+  - "L24 Ai Ethics And Responsible Ai"
+  - "L24 AI Ethics and Responsible AI"
+  - L24_AI_Ethics_and_Responsible_AI
 
+---
 # L24 - AI 伦理与负责任的 AI
 
 > **一句话理解**：AI 本质上仍是基于数据与矩阵运算的强大工具，它不会“反叛”，但可能被误用或产生意料之外的伤害；构建负责任的 AI 需要在公平性、可靠性、隐私、包容性、透明性和可问责性六个维度上持续投入。

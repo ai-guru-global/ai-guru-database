@@ -5,8 +5,13 @@ tags: ["machine-learning", "supervised", "unsupervised"]
 summary: "> **一句话秒懂**: 特征工程就像做饭前的备菜——再好的厨师也做不好没洗没切的菜。同样，再强的 AI 也需要经过精心处理的数据。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Feature Engineering For Dummy"
+  - "Feature Engineering for dummy"
+  - Feature_Engineering_for_dummy
 
+---
 # 特征工程 - 小白版
 
 > **一句话秒懂**: 特征工程就像做饭前的备菜——再好的厨师也做不好没洗没切的菜。同样，再强的 AI 也需要经过精心处理的数据。

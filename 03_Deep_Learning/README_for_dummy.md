@@ -5,8 +5,13 @@ tags: ["deep-learning", "neural-networks", "backpropagation"]
 summary: '> **一句话秒懂**: 深度学习就像教电脑"自己学习认东西"——不用人告诉它怎么识别猫,它通过看大量图片,像婴儿一样慢慢学会区分猫和狗!'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Readme For Dummy"
+  - "README for dummy"
+  - README_for_dummy
 
+---
 # 03 深度学习基础 - 小白版
 
 > **一句话秒懂**: 深度学习就像教电脑"自己学习认东西"——不用人告诉它怎么识别猫,它通过看大量图片,像婴儿一样慢慢学会区分猫和狗!

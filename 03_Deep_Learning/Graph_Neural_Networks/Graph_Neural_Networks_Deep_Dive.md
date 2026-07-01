@@ -5,8 +5,12 @@ tags: ["deep-learning", "graph-neural-networks", "GNN", "GCN", "GAT", "graph-tra
 summary: "> **一句话理解**: 图神经网络(GNN)是让AI理解「关系」的钥匙——社交网络中谁认识谁、分子中原子如何连接、知识图谱里概念怎样关联，CNN处理像素、Transformer处理序列，而GNN处理万物之间的连接。"
 created: 2026-06-04
 updated: 2026-06-04
----
+tier: supporting
+aliases:
+  - "Graph Neural Networks Deep Dive"
+  - Graph_Neural_Networks_Deep_Dive
 
+---
 # 图神经网络深度解读: 从 GCN 到 GAT 再到 Graph Transformer
 
 > **一句话理解**: 图神经网络(GNN)是让 AI 理解「关系」的钥匙——社交网络中谁认识谁、分子中原子如何连接、知识图谱里概念怎样关联，CNN 处理像素、Transformer 处理序列，而 GNN 处理万物之间的连接。

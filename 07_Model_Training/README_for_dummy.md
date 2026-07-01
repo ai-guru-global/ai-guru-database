@@ -5,8 +5,13 @@ tags: ["model-training", "distributed-training", "optimization", "fsdp"]
 summary: '> **一句话秒懂**: 模型训练就是 AI 的"学习过程"——把海量数据喂给算法，让算法不断调整自己，直到学会做某件事，就像学生刷题一样，做错了就反思，做对了就继续！'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Readme For Dummy"
+  - "README for dummy"
+  - README_for_dummy
 
+---
 # 07 模型训练 — 小白版 🏋️
 
 > **一句话秒懂**: 模型训练就是 AI 的"学习过程"——把海量数据喂给算法，让算法不断调整自己，直到学会做某件事，就像学生刷题一样，做错了就反思，做对了就继续！

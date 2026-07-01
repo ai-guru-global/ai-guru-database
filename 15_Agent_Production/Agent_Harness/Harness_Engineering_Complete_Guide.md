@@ -7,8 +7,12 @@ tags:
   - production-engineering
   - design-principles
 source: "_sources/yeasy/harness_engineering_guide/"
----
+tier: peripheral
+aliases:
+  - "Harness Engineering Complete Guide"
+  - Harness_Engineering_Complete_Guide
 
+---
 # Harness Engineering Complete Guide (智能体 Harness 工程完整指南)
 
 > 本文从《智能体 Harness 工程指南》全书 14 章中提炼 Harness 的核心定义、参考架构、五大子系统总览和五大设计原则。

@@ -12,7 +12,7 @@ relationships:
   - target: "_concepts/red-teaming"
     type: differs_from
 sources:
-  - 08_Model_Evaluation/LLM_Benchmark_Suite_2026.md
+  - 08_Model_Evaluation/Benchmarks/LLM_Benchmark_Suite_2026.md
   - 08_Model_Evaluation/Model_Evaluation.md
   - 08_Model_Evaluation/Evaluation-in-nutshell.md
 summary: "BBH（Big-Bench Hard）是从 Google Big-Bench 中挑选的 23 个困难任务子集，专门测试大模型在复杂推理、多步思考和少样本学习上的能力。它被认为是衡量模型‘聪明程度’的重要基准之一。"
@@ -26,8 +26,10 @@ lifecycle_changed: 2026-06-16
 tier: core
 created: 2026-06-16
 updated: 2026-06-16
----
+aliases:
+  - Bbh
 
+---
 # BBH
 
 ## 核心要点
@@ -91,4 +93,4 @@ Big-Bench 是 Google 发布的超大规模 LLM 基准，包含 200+ 任务，覆
 - [[_concepts/reasoning-models]] — 推理模型
 - [[_concepts/llm-arena]] — LLM Arena
 - [[_concepts/red-teaming]] — 红队测试
-- [[08_Model_Evaluation/LLM_Benchmark_Suite_2026]] — LLM 基准套件 2026
+- [[08_Model_Evaluation/Benchmarks/LLM_Benchmark_Suite_2026]] — LLM 基准套件 2026

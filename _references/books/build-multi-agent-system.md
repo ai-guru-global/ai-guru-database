@@ -9,8 +9,11 @@ created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
 tier: supporting
----
+aliases:
+  - "Build Multi Agent System"
+  - "build multi agent system"
 
+---
 # Build a Multi-Agent System
 
 > **一句话理解**: 从零构建多 Agent 系统.作者:Manning.

@@ -5,8 +5,13 @@ tags: ["megatron-lm", "nvidia", "distributed-training", "tensor-parallelism", "p
 summary: "> **一句话理解**: Megatron-LM 是 NVIDIA 开源的大规模 Transformer 训练框架，以张量并行、流水线并行、序列并行和上下文并行著称，是千亿参数 GPT/BERT/T5 模型预训练的行业标准底座。"
 created: "2026-06-16"
 updated: "2026-06-16"
----
+tier: supporting
+aliases:
+  - "Megatron Lm Deep Dive"
+  - "Megatron LM Deep Dive"
+  - Megatron_LM_Deep_Dive
 
+---
 # Megatron-LM 深度解析：NVIDIA 大规模 Transformer 训练框架
 
 > **一句话理解**: Megatron-LM 是 NVIDIA 开源的大规模 Transformer 训练框架，以张量并行、流水线并行、序列并行和上下文并行著称，是千亿参数 GPT/BERT/T5 模型预训练的行业标准底座。

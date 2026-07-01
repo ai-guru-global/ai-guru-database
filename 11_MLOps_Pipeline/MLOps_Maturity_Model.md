@@ -5,8 +5,13 @@ tags: ["mlops", "ci-cd", "pipeline", "feature-store"]
 summary: '> **一句话理解**: MLOps 成熟度模型就像 AI 团队的"段位系统"——从青铜（全手动）到王者（全自动闭环），帮你评估当前水平并规划升级路径。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Mlops Maturity Model"
+  - "MLOps Maturity Model"
+  - MLOps_Maturity_Model
 
+---
 # MLOps 成熟度模型与最佳实践 (MLOps Maturity Model)
 
 > **一句话理解**: MLOps 成熟度模型就像 AI 团队的"段位系统"——从青铜（全手动）到王者（全自动闭环），帮你评估当前水平并规划升级路径。

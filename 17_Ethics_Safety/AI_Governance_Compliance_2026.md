@@ -5,8 +5,13 @@ tags: ["ai-ethics", "safety", "alignment", "red-teaming"]
 summary: '> **一句话理解**: 2026年是AI监管从"纸上谈兵"到"落地执法"的转折点——EU AI Act正式生效，中国生成式AI管理办法全面执行，AI合规官(CAIO)成为热门岗位，企业必须从"事后补救"转向"从设计开始的合规"(Privacy by Design)。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Ai Governance Compliance 2026"
+  - "AI Governance Compliance 2026"
+  - AI_Governance_Compliance_2026
 
+---
 # AI 治理与合规 2026
 
 > **一句话理解**: 2026 年是 AI 监管从"纸上谈兵"到"落地执法"的转折点——EU AI Act 正式生效，中国生成式 AI 管理办法全面执行，AI 合规官(CAIO)成为热门岗位，企业必须从"事后补救"转向"从设计开始的合规"(Privacy by Design)。

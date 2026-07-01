@@ -5,8 +5,13 @@ tags: [ai-coding, copilot, cursor, claude-code, aider, coding-agent]
 summary: "从代码补全到 Agentic Coding——一张图、一张表、一份决策清单，搞懂 2026 年 AI 编程全景。"
 created: 2026-06-05
 updated: 2026-06-05
----
+tier: supporting
+aliases:
+  - "Ai Coding In Nutshell"
+  - "AI Coding in nutshell"
+  - AI_Coding-in-nutshell
 
+---
 # AI 辅助编程速览 (AI-Assisted Coding in a Nutshell)
 
 > **一句话理解**: AI 编程之于开发者，就像 GPS 之于司机——你仍然掌控方向盘，但 AI 帮你找路、避堵、甚至自动泊车。

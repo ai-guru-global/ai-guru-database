@@ -5,8 +5,12 @@ tags: ["ai-ops", "observability", "monitoring", "incident-response"]
 summary: "> **一句话理解**: Phoenix 是 Arize AI 的开源可观测性工具——追踪 LLM 应用从 Prompt 到 Response 的完整链路，帮你发现和修复问题。"
 created: "2026-05-31"
 updated: "2026-05-31"
----
+tier: supporting
+aliases:
+  - "Phoenix Deep Dive"
+  - Phoenix_Deep_Dive
 
+---
 # Phoenix: Arize AI 可观测性平台
 
 > **一句话理解**: Phoenix 是 Arize AI 的开源可观测性工具——追踪 LLM 应用从 Prompt 到 Response 的完整链路，帮你发现和修复问题。
@@ -351,7 +355,7 @@ Phoenix Metrics
 ## Related
 
 - [[13_AI_Ops/AIOps-in-nutshell.md|AIOps-in-nutshell]]
-- [[13_AI_Ops/AI_Incident_Response_Playbook.md|AI_Incident_Response_Playbook]]
+- [[13_AI_Ops/SRE_Reliability/AI_Incident_Response_Playbook|AI_Incident_Response_Playbook]]
 - [[13_AI_Ops/AI_Ops_for_dummy.md|AI_Ops_for_dummy]]
 - [[13_AI_Ops/README.md|13_AI_Ops README]]
 - [[13_AI_Ops/README_for_dummy.md|README_for_dummy]]

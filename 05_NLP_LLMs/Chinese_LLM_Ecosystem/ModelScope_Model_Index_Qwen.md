@@ -7,8 +7,13 @@ created: 2026-06-23
 updated: 2026-06-23
 source: https://modelscope.cn/
 parent: "[[ModelScope_Model_Index]]"
----
+tier: supporting
+aliases:
+  - "Modelscope Model Index Qwen"
+  - "ModelScope Model Index Qwen"
+  - ModelScope_Model_Index_Qwen
 
+---
 ## 阿里 · 通义千问 (Qwen)
 
 Namespace: `qwen` · 组织主页: [https://modelscope.cn/organization/qwen](https://modelscope.cn/organization/qwen) · 模型数: **437**

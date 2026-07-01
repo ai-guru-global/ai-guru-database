@@ -135,9 +135,15 @@ Transformer 训练 的标配配置：
 
 ## Related
 
+- [[_concepts/transformer-architecture-plain]] — Transformer 大白话解释
 - [[_concepts/transformer-layer]] — Transformer Layer（层）大白话解释
+- [[_concepts/causal-mask|因果掩码]]
+- [[_concepts/next-token-prediction|下一个 Token 预测]]
+- [[_concepts/attention-variants|Attention 变体]]
+- [[_concepts/rope|RoPE]]
+- [[_concepts/alibi|ALiBi]]
 - [[_synthesis/transformer-llm-architecture]] — Transformer 架构 × LLM 架构 (共享: attention, bert, gpt, nlp, transformer)
-- [[05_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/README]] — PEFT 2026 (参数高效微调) (共享: bert, gpt, nlp, transformer)
+- [[05_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026]] — PEFT 2026 (参数高效微调) (共享: bert, gpt, nlp, transformer)
 - [[05_NLP_LLMs/Fine_tuning_Techniques/README]] — 微调技术 (Fine-tuning Techniques) (共享: bert, gpt, nlp, transformer)
 - [[05_NLP_LLMs/LLM_Architectures/LLM-Basics-in-nutshell]] — 大语言模型基础速成指南 (共享: bert, gpt, nlp, transformer)
 - [[_concepts/multimodal-models.md|multimodal-models]]

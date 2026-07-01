@@ -16,8 +16,11 @@ lifecycle: draft
 tier: core
 created: 2026-06-15
 updated: 2026-06-15
----
+aliases:
+  - "Inference Autoscaling"
+  - "inference autoscaling"
 
+---
 # Inference Autoscaling and Load Balancing（推理扩缩容与负载均衡）
 
 ## 核心要点
@@ -36,3 +39,5 @@ updated: 2026-06-15
 - [[_concepts/model-serving]] — 模型服务
 - [[_concepts/model-gateway]] — AI Gateway
 - [[10_Deployment_Inference/Inference_Performance/Inference_Autoscaling_and_Load_Balancing|弹性扩缩容与负载均衡]]
+- [[_concepts/cuda-graph]] — Cuda Graph
+- [[_concepts/request-scheduling]] — Request Scheduling

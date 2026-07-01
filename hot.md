@@ -1,10 +1,55 @@
 ---
 title: Hot Pages
----
+tier: peripheral
+aliases:
+  - Hot
 
+---
 # Hot Pages — 最近新增与高价值页面
 
-*Last updated: 2026-06-19*
+*Last updated: 2026-06-25T15:59:34+08:00*
+
+## 2026-06-25 21 个概念大白话 + 26 张概念卡片
+
+> 把架构、训练、推理、优化、应用、Agentic、评估、Harness 八大类 21 个核心概念用大白话讲清楚，并沉淀为 `_concepts/` 概念卡片 + 6 张主章节 for_dummy 专题页。
+
+### 补充：2 个深度学习基础概念卡片
+- [[_concepts/activation-value|激活值]] — 神经网络神经元的输出响应强度
+- [[_concepts/gradient-descent|梯度下降]] — 最小化模型误差的参数优化算法
+
+### 主章节大白话专题页
+- [[05_NLP_LLMs/Architecture_Evolution_for_dummy|LLM 架构演进大白话]] — KV 压缩、Mamba、RetNet
+- [[07_Model_Training/Data_and_FineTuning_for_dummy|数据与微调大白话]] — 数据清洗 Pipeline、DoRA、RS-LoRA
+- [[10_Deployment_Inference/Inference_Optimization_for_dummy|推理优化大白话]] — SGLang、动态批调度、GGUF、SmoothQuant、TensorRT-LLM
+- [[14_RAG_Systems/Agentic_RAG_Applications_for_dummy|Agentic RAG 应用大白话]] — Agentic RAG、Text2SQL、代码生成工作流
+- [[15_Agent_Production/Agent_Safety_Evaluation_for_dummy|Agent 安全与评估大白话]] — 工具调用安全、Agent 评估基准
+- [[08_Model_Evaluation/Benchmarks/LLM_Benchmarks_for_dummy|LLM 评估与测试大白话]] — BBH、Arena、红队测试、CI 集成评估、A/B 测试框架
+
+### 新增概念卡片（26 张）
+- 架构：[[_concepts/kv-cache-compression|KV Cache 压缩]]、[[_concepts/mamba|Mamba]]、[[_concepts/retnet|RetNet]]
+- 训练：[[_concepts/data-cleaning-pipeline|数据清洗 Pipeline]]、[[_concepts/dora|DoRA]]、[[_concepts/rs-lora|RS-LoRA]]
+- 推理：[[_concepts/sglang|SGLang]]、[[_concepts/dynamic-batch-scheduling|动态批调度]]
+- 优化：[[_concepts/gguf|GGUF]]、[[_concepts/smoothquant|SmoothQuant]]、[[_concepts/tensorrt-llm|TensorRT-LLM]]
+- 应用：[[_concepts/agentic-rag|Agentic RAG]]、[[_concepts/text2sql|Text2SQL]]、[[_concepts/code-generation-workflow|代码生成工作流]]
+- Agentic：[[_concepts/tool-calling|工具调用]]、[[_concepts/tool-calling-safety|工具调用安全]]、[[_concepts/agent-evaluation-benchmarks|Agent 评估基准]]
+- 评估：[[_concepts/bbh|BBH]]、[[_concepts/llm-arena|LLM Arena]]、[[_concepts/red-teaming|红队测试]]
+- Harness：[[_concepts/ci-integrated-evaluation|CI 集成评估]]、[[_concepts/ab-testing-framework|A/B 测试框架]]、[[_concepts/online-evaluation|在线评估]]
+- 基础：[[_concepts/code-generation|代码生成]]、[[_concepts/llm-safety|LLM 安全]]、[[_concepts/llm-production-pipeline|LLM 生产流水线]]
+
+## 2026-06-25 GPUStack 专题补完 FAQ
+
+> 在 GPUStack 深度解析和入门指南中新增两个高频问题的大白话解答。
+
+- [[10_Deployment_Inference/GPU_Infrastructure/GPUStack_Deep_Dive|GPUStack 深度解析]] — 新增 14.4 大白话 FAQ: GPUStack 底座不是 K8s; PPU 通过驱动 + Runtime 探测纳管
+- [[10_Deployment_Inference/GPU_Infrastructure/GPUStack_for_dummy|GPUStack 入门指南]] — 新增“常见问题（大白话）”节, 解释 K8s 关系与 PPU 纳管
+- [[_concepts/gpustack|GPUStack 概念卡片]] — 补充“底座不是 K8s”和“PPU 国产芯片纳管”要点
+
+## 2026-06-15 大白话概念系列（2 页）
+
+> 用生活化语言拆解 AI 核心概念，降低理解门槛。
+
+- [[_concepts/embeddings-vectors-mrl-plain]] — Embedding、向量与 MRL 大白话
+- [[_concepts/how-llm-answers-plain]] — 大模型回答问题是一道数学题吗？大白话
 
 ## 2026-06-19 ModelScope 全量厂商模型导入（15 厂商 / 1,621 模型）
 
@@ -25,10 +70,10 @@ title: Hot Pages
 > 完成最后两本未蒸馏书（llm_internals、ai_beginner_guide 剩余章节），yeasy 9 本书全部融入 wiki。
 
 ### LLM 原理与架构（4 页，05_NLP_LLMs/）
-- [[05_NLP_LLMs/LLM_Internals_Architecture]] — 序列建模演进、注意力机制、Transformer 组件、位置编码
-- [[05_NLP_LLMs/LLM_Internals_Training]] — 预训练/Scaling Law、AdamW、分布式训练、对齐 SFT/RLHF/DPO/LoRA
-- [[05_NLP_LLMs/LLM_Internals_Inference]] — 解码策略、KV Cache/GQA/MLA、Flash Attention、量化、投机解码
-- [[05_NLP_LLMs/LLM_Internals_Models_Frontiers]] — BERT/GPT/Llama/DeepSeek 家族、MoE/SSM/测试时计算
+- [[05_NLP_LLMs/LLM_Architectures/LLM_Internals_Architecture]] — 序列建模演进、注意力机制、Transformer 组件、位置编码
+- [[05_NLP_LLMs/LLM_Architectures/LLM_Internals_Training]] — 预训练/Scaling Law、AdamW、分布式训练、对齐 SFT/RLHF/DPO/LoRA
+- [[05_NLP_LLMs/LLM_Architectures/LLM_Internals_Inference]] — 解码策略、KV Cache/GQA/MLA、Flash Attention、量化、投机解码
+- [[05_NLP_LLMs/LLM_Architectures/LLM_Internals_Models_Frontiers]] — BERT/GPT/Llama/DeepSeek 家族、MoE/SSM/测试时计算
 
 ### AI 入门基础（6 页，跨目录）
 - [[00_AI_Introduction/AI_Beginner_Fundamentals]] — AI 定义/历史/强vs弱、AI⊃ML⊃DL、技术生态
@@ -55,15 +100,15 @@ title: Hot Pages
 - [[_concepts/guardrails]] — AI 护栏体系
 
 ### 跨书综合页（4 页，_meta/）
-- [[_meta/_synthesis-engineering-evolution]] — 提示词→上下文→Harness 三阶演进
-- [[_meta/_synthesis-llm-security-pipeline]] — 安全全链路：训练投毒到推理防御
-- [[_meta/_synthesis-architecture-selection-guide]] — 架构选型决策树
-- [[_meta/_synthesis-memory-systems]] — 记忆体系全景：KV Cache 到知识图谱
+- [[_synthesis/synthesis-engineering-evolution]] — 提示词→上下文→Harness 三阶演进
+- [[_synthesis/synthesis-llm-security-pipeline]] — 安全全链路：训练投毒到推理防御
+- [[_synthesis/synthesis-architecture-selection-guide]] — 架构选型决策树
+- [[_synthesis/synthesis-memory-systems]] — 记忆体系全景：KV Cache 到知识图谱
 
 ### 速查表（3 页，_meta/）
-- [[_meta/cheatsheet-llm-inference]] — LLM 推理技术速查
-- [[_meta/cheatsheet-agent-design]] — 智能体架构设计速查
-- [[_meta/cheatsheet-security-defense]] — LLM 安全防御速查
+- [[_meta/cheatsheets/cheatsheet-llm-inference]] — LLM 推理技术速查
+- [[_meta/cheatsheets/cheatsheet-agent-design]] — 智能体架构设计速查
+- [[_meta/cheatsheets/cheatsheet-security-defense]] — LLM 安全防御速查
 
 ### 去重精简（5 页，共减少 198 行）
 - Prompt_Engineering_Advanced_Apps (-112 行): ReAct/提示注入/MCP 压缩为引用
@@ -105,8 +150,8 @@ title: Hot Pages
 - [[05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering_Complete_Guide]] — 提示词工程核心技术
 - [[05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering_Advanced_Apps]] — 提示词高级应用
 - [[05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering_Templates_Patterns]] — 模板库与反模式
-- [[05_NLP_LLMs/Context_Engineering_Guide]] — 上下文工程权威指南
-- [[05_NLP_LLMs/Context_Engineering_Patterns]] — 上下文工程模式
+- [[05_NLP_LLMs/Prompt_Engineering/Context_Engineering_Guide]] — 上下文工程权威指南
+- [[05_NLP_LLMs/Prompt_Engineering/Context_Engineering_Patterns]] — 上下文工程模式
 
 ### LLM 原理与架构
 - [[05_NLP_LLMs/Transformer_Deep_Dive]] — Transformer 深度解析

@@ -6,7 +6,13 @@ tags:
 - ai-coding
 created: 2026-06-12
 category: 16-ai-coding-tools-opencode
-summary: ""
+tier: peripheral
+aliases:
+  - "Opencode Providers Models"
+  - "opencode providers models"
+
+updated: 2026-06-30
+summary: "Provider 与模型管理 — 专题文档"
 ---
 title: Provider 与模型管理
 description: '# Provider 与模型管理'

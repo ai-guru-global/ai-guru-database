@@ -8,8 +8,13 @@ updated: "2026-06-12"
 source_url: "https://raw.githubusercontent.com/microsoft/generative-ai-for-beginners/main/translations/zh-CN/19-slm/README.md"
 course: "Microsoft Generative AI for Beginners"
 lesson_number: 19
----
+tier: supporting
+aliases:
+  - "Genai L19 Building With Slms"
+  - "GenAI L19 Building with SLMs"
+  - GenAI_L19_Building_with_SLMs
 
+---
 ## 学习目标
 
 在本课程中，我们将介绍小型语言模型（SLM）的知识，并结合微软的 Phi-3 模型，学习文本内容、视觉和 MoE 等不同场景的应用。

@@ -5,8 +5,12 @@ tags: [evaluation, multimodal, benchmark, mmmu, mathvista, chartqa, docvqa, vide
 summary: 系统梳理多模态理解评测基准，涵盖图像问答、文档理解、视频分析、跨模态推理和幻觉检测的评测方法与指标体系。
 date: 2026-06-01
 created: 2026-06-12
----
+tier: peripheral
+aliases:
+  - "Multimodal Evaluation Benchmarks"
+  - Multimodal_Evaluation_Benchmarks
 
+---
 # 多模态评测基准深度解析
 
 ## 一句话理解
@@ -389,7 +393,7 @@ def multimodal_llm_judge(image, question, model_answer, ground_truth):
 ## Related
 
 - [[08_Model_Evaluation/Model_Evaluation]]
-- [[08_Model_Evaluation/Long_Context_Evaluation]]
+- [[08_Model_Evaluation/Benchmarks/Long_Context_Evaluation]]
 - [[_concepts/model-evaluation]]
 - [[05_NLP_LLMs/Multimodal_Models/Native_Multimodal_Architectures]]
 - [[05_NLP_LLMs/Multimodal_Models/Multimodal_Architectures_2026]]

@@ -12,7 +12,7 @@ relationships:
   - target: "_concepts/llm"
     type: evaluates
 sources:
-  - 08_Model_Evaluation/OpenCompass_Deep_Dive.md
+  - 08_Model_Evaluation/Evaluation_Tools/OpenCompass_Deep_Dive.md
 summary: "OpenCompass 是上海人工智能实验室开源的一站式 LLM 评测平台，支持学科、知识、推理、多语言、多模态等丰富基准，是国内大模型评测的重要工具。"
 provenance:
   extracted: 0.8
@@ -23,8 +23,10 @@ lifecycle: stable
 tier: core
 created: 2026-06-16
 updated: 2026-06-16
----
+aliases:
+  - Opencompass
 
+---
 # OpenCompass
 
 > 国产 LLM 评测的「一站式平台」——从学科考试到多模态，全面评估中文大模型。
@@ -86,8 +88,8 @@ updated: 2026-06-16
 
 ## Related
 
-- [[08_Model_Evaluation/OpenCompass_Deep_Dive]] — OpenCompass 深度解析
+- [[08_Model_Evaluation/Evaluation_Tools/OpenCompass_Deep_Dive]] — OpenCompass 深度解析
 - [[_concepts/model-evaluation]] — 模型评估
 - [[_concepts/benchmark]] — 基准测试
 - [[_concepts/lm-evaluation-harness]] — LM Evaluation Harness
-- [[08_Model_Evaluation/LLM_Benchmark_Suite_2026]] — LLM 基准套件 2026
+- [[08_Model_Evaluation/Benchmarks/LLM_Benchmark_Suite_2026]] — LLM 基准套件 2026

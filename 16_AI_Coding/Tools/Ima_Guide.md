@@ -5,8 +5,12 @@ tags: ["ai-coding", "code-generation", "cursor", "github-copilot"]
 summary: "> **一句话**: Ima 是会员制 AI 研究工具，适合基于公众号和知识库的深度研究。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Ima Guide"
+  - Ima_Guide
 
+---
 # Ima 使用指南
 
 > **一句话**: Ima 是会员制 AI 研究工具，适合基于公众号和知识库的深度研究。

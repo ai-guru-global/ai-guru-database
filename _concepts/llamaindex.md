@@ -25,8 +25,10 @@ lifecycle: stable
 tier: core
 created: 2026-06-16
 updated: 2026-06-16
----
+aliases:
+  - Llamaindex
 
+---
 # LlamaIndex
 
 > LLM 应用的数据「连接器」——把任意数据源变成大模型可理解、可检索的知识。
@@ -89,7 +91,7 @@ updated: 2026-06-16
 ## Related
 
 - [[14_RAG_Systems/RAG_Frameworks/LlamaIndex_Deep_Dive]] — LlamaIndex 深度解析
-- [[_concepts/rag]] — RAG
+- [[_concepts/rag-patterns]] — RAG
 - [[_concepts/vector-database]] — 向量数据库
 - [[_concepts/langchain]] — LangChain
 - [[_concepts/autogen]] — AutoGen

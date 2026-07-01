@@ -5,9 +5,13 @@ tags: ["mlops", "data-versioning", "dvc", "lakefs", "reproducibility", "git"]
 summary: "> **一句话理解**: 代码用 Git 管，但 GB–TB 级的数据塞不进 Git——DVC 和 LakeFS 用「指针入 Git，数据入对象存储」的方式，让数据集也能版本化、可 diff、可回滚。"
 created: 2026-06-15
 updated: 2026-06-15
-tier: core
----
+tier: supporting
+aliases:
+  - "Data Versioning Dvc Lakefs"
+  - "Data Versioning DVC LakeFS"
+  - Data_Versioning_DVC_LakeFS
 
+---
 # 数据版本控制：DVC 与 LakeFS
 
 > **一句话理解**: 代码用 Git 管，但 GB–TB 级的数据塞不进 Git——DVC 和 LakeFS 用「指针入 Git，数据入对象存储」的方式，让数据集也能版本化、可 diff、可回滚。

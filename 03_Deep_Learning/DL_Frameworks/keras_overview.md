@@ -8,8 +8,13 @@ sources:
 created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
----
+tier: supporting
+aliases:
+  - "Keras Overview"
+  - "keras overview"
+  - keras_overview
 
+---
 # Keras 概览
 
 > **一句话理解**: François Chollet 创建的高层神经网络 API，现已集成进 TensorFlow
@@ -32,5 +37,5 @@ Keras 是深度学习领域的核心框架。
 | TensorFlow | 静态/动态 | 生产部署、TF Lite/JS | TF Serving |
 | Keras | 抽象层 | API 简洁、快速原型 | TF 集成 |
 
-> **关联**: → [[03_Deep_Learning|深度学习]]
+> **关联**: → [[03_Deep_Learning/README|深度学习]]
 

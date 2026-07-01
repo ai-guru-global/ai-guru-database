@@ -5,8 +5,13 @@ tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "Imagine having a super-smart assistant who doesn't just answer questions—they actually DO things for you. That's OpenClaw!"
 created: "2026-05-31"
 updated: "2026-05-31"
----
+tier: supporting
+aliases:
+  - "Openclaw Ecosystem For Dummy"
+  - "OpenClaw Ecosystem for dummy"
+  - OpenClaw_Ecosystem_for_dummy
 
+---
 # OpenClaw Ecosystem for Beginners: Your AI Assistant That Actually Does Things
 
 ## What is OpenClaw? (The Simple Version)

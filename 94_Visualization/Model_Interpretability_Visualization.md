@@ -5,8 +5,12 @@ tags: ["visualization", "charts", "dashboards", "data-viz"]
 summary: '> **一句话秒懂**: 模型可解释性可视化就是给"黑箱模型"装上 X 光机——让你看到模型到底在看什么、学了什么、为什么做出这个决定。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: core
+aliases:
+  - "Model Interpretability Visualization"
+  - Model_Interpretability_Visualization
 
+---
 # 模型可解释性可视化
 
 > **一句话秒懂**: 模型可解释性可视化就是给"黑箱模型"装上 X 光机——让你看到模型到底在看什么、学了什么、为什么做出这个决定。
@@ -1100,5 +1104,5 @@ flowchart TD
 ## Related
 
 - [[94_Visualization/README.md|94_Visualization README]]
-- [[94_Visualization/atlas/README.md|atlas README]]
-- [[94_Visualization/atlas/docs/performance.md|performance]]
+- [[_projects/atlas/README.md|atlas README]]
+- [[_projects/atlas/docs/performance.md|performance]]

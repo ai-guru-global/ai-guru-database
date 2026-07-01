@@ -5,8 +5,13 @@ tags: ["matryoshka", "mrl", "embedding", "rag", "vector-database", "for-dummy"]
 summary: "> **一句话秒懂**: MRL 就像一套俄罗斯套娃——大娃娃里面套着小娃娃，而且每个娃娃都是完整的。对应到 AI，一个 768 维的向量，前 64 维、前 256 维也都能独立用来找相似内容，想快就快、想准就准。"
 created: "2026-06-15"
 updated: "2026-06-15"
----
+tier: supporting
+aliases:
+  - "Matryoshka Representation Learning For Dummy"
+  - "Matryoshka Representation Learning for dummy"
+  - Matryoshka_Representation_Learning_for_dummy
 
+---
 # Matryoshka Representation Learning — 小白版
 
 > **一句话秒懂**: MRL 就像一套俄罗斯套娃——大娃娃里面套着小娃娃，而且每个娃娃都是完整的。对应到 AI，一个 768 维的向量，前 64 维、前 256 维也都能独立用来找相似内容，想快就快、想准就准。

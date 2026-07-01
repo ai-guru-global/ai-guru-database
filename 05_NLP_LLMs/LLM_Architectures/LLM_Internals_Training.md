@@ -3,8 +3,13 @@ title: "大模型训练全景：从预训练到对齐"
 tags: [llm, training, pretraining, distributed-training, alignment, rlhf, dpo, lora, peft]
 source: yeasy/llm_internals
 created: 2026-06-19
----
+tier: peripheral
+aliases:
+  - "Llm Internals Training"
+  - "LLM Internals Training"
+  - LLM_Internals_Training
 
+---
 # 大模型训练全景：从预训练到对齐
 
 > **核心命题**：为什么"预测下一个词"能学到知识？如何在数千张 GPU 上稳定训练千亿参数？如何让模型有用且安全？

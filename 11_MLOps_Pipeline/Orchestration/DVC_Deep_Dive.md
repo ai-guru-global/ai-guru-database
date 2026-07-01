@@ -5,8 +5,13 @@ tags: ["ai-ops", "observability", "monitoring", "incident-response"]
 summary: "> **一句话理解**: DVC 是数据版本控制工具——用 Git 的工作流管理数据和模型，追踪数据集变化、支持数据管道、连接云存储，ML 数据的 Git。"
 created: "2026-05-31"
 updated: "2026-05-31"
----
+tier: supporting
+aliases:
+  - "Dvc Deep Dive"
+  - "DVC Deep Dive"
+  - DVC_Deep_Dive
 
+---
 # DVC: 数据版本控制
 
 > **一句话理解**: DVC 是数据版本控制工具——用 Git 的工作流管理数据和模型，追踪数据集变化、支持数据管道、连接云存储，ML 数据的 Git。
@@ -384,7 +389,7 @@ jobs:
 ## Related
 
 - [[13_AI_Ops/AIOps-in-nutshell.md|AIOps-in-nutshell]]
-- [[13_AI_Ops/AI_Incident_Response_Playbook.md|AI_Incident_Response_Playbook]]
+- [[13_AI_Ops/SRE_Reliability/AI_Incident_Response_Playbook|AI_Incident_Response_Playbook]]
 - [[13_AI_Ops/AI_Ops_for_dummy.md|AI_Ops_for_dummy]]
 - [[13_AI_Ops/README.md|13_AI_Ops README]]
 - [[13_AI_Ops/README_for_dummy.md|README_for_dummy]]

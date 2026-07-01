@@ -5,8 +5,12 @@ tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> 🎯 **目标**：通过手把手教程和真实案例，从零创建、测试、优化和发布一个生产级 Agent Skill。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Agent Skills Practical Guide"
+  - Agent_Skills_Practical_Guide
 
+---
 # Agent Skills 实战指南
 
 > 🎯 **目标**：通过手把手教程和真实案例，从零创建、测试、优化和发布一个生产级 Agent Skill。

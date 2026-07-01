@@ -5,8 +5,12 @@ tags: ["talks", "speeches", "insights", "leaders"]
 summary: '> **一句话理解**: 本章节横向整合 20+ 位 AI 领袖的核心观点，按主题分类呈现，帮助你从"辩论双方"的视角理解 AI 发展中的关键分歧与共识。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Talks Synthesis 2026"
+  - Talks_Synthesis_2026
 
+---
 # AI 领袖观点合成 2026 (Talks Synthesis)
 
 > **一句话理解**: 本章节横向整合 20+ 位 AI 领袖的核心观点，按主题分类呈现，帮助你从"辩论双方"的视角理解 AI 发展中的关键分歧与共识。

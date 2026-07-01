@@ -4,8 +4,9 @@ category: 05-nlp-llms-reasoning-models
 tags: ['reasoning', 'overview', 'index']
 summary: 推理模型 相关内容的索引和概览。
 created: 2026-06-12
----
+tier: peripheral
 
+---
 # 推理模型
 
 本目录包含 推理模型 相关的深度技术内容。
@@ -22,3 +23,7 @@ created: 2026-06-12
 ## 相关页面
 
 - [[05_NLP_LLMs/Reasoning_Models/README|推理模型目录]]
+
+## Related
+
+- [[05_NLP_LLMs/README|04 自然语言处理与大模型 (NLP & LLMs)]]

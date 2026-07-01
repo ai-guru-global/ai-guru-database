@@ -4,9 +4,14 @@ category: "10-deployment-inference"
 tags: ["deployment", "inference", "serving", "gpustack", "gpu-cluster", "maas", "vllm", "llama.cpp"]
 summary: "GPUStack 是面向企业级 AI 模型部署的开源 GPU 集群管理器（MaaS 平台），支持 NVIDIA/AMD/昇腾/摩尔线程等异构 GPU，通过 vLLM、SGLang、llama-box 等可插拔推理引擎提供 OpenAI 兼容的模型服务。"
 created: "2026-06-15"
-updated: "2026-06-15"
----
+updated: "2026-06-25"
+tier: supporting
+aliases:
+  - "Gpustack Deep Dive"
+  - "GPUStack Deep Dive"
+  - GPUStack_Deep_Dive
 
+---
 # GPUStack: 开源 GPU 集群管理与模型服务平台
 
 > **一句话理解**: GPUStack 是一个开源的 GPU 集群管理器 / 模型即服务（MaaS）平台，让你像使用 OpenAI API 一样，在私有或异构 GPU 集群上一键部署和运行 LLM、VLM、Embedding、Reranker、文生图、语音等 AI 模型。
@@ -624,6 +629,65 @@ GPUStack 可同时提供 LLM、Embedding、Reranker、TTS、STT, 成为企业 AI
 | Windows Worker 无法使用 vLLM | vLLM 后端在 Windows 上受限, 改用 llama-box |
 | GLIBC 版本过低 | 使用 Docker 方式部署 |
 
+### 14.4 大白话 FAQ
+
+#### Q1: GPUStack 是 Kubernetes 吗? 它的底座是 K8s 吗?
+
+**不是。** GPUStack 的底座不是 Kubernetes, 它有自己的独立控制平面:
+
+```
+GPUStack 自身架构
+═══════════════════════════════════════════════════════════════════
+GPUStack Server ──→ 自己的 Scheduler / API Server / AI Gateway
+         ↓
+GPUStack Worker ──→ 自己的 Runtime / Serving Manager / Metric Exporter
+         ↓
+Inference Server ──→ vLLM / SGLang / llama-box / MindIE 等
+```
+
+它和 K8s 的关系:
+
+| 关系 | 说明 |
+|------|------|
+| **可管理 K8s 集群** | GPUStack 可以把已有的 Kubernetes GPU 集群作为其中一个“集群”纳管进来 |
+| **可在 K8s 上部署** | 可以用 K8s Deployment / Pod 来跑 GPUStack Server 或 Worker |
+| **底座不依赖 K8s** | 即使不用 K8s, 直接在 Linux 裸机或 Docker 上也能跑完整 GPUStack |
+| **不是 K8s Operator** | 它不像 Volcano、kube-scheduler 那样作为 K8s 插件存在 |
+
+**一句话总结**: GPUStack 不是基于 K8s 构建的, 它有自己的底座; 但它可以把 K8s 集群当作被管理的 GPU 资源池之一。
+
+#### Q2: GPUStack 如何纳管 PPU (玄铁 / T-Head)?
+
+PPU 是 GPUStack 官方列出的**支持的加速器**之一。纳管方式靠 **驱动 + GPUStack 自己的 Runtime 探测**, 而不是 K8s 插件:
+
+```
+PPU 纳管流程
+═══════════════════════════════════════════════════════════════════
+1. 物理机上装好 PPU 驱动和运行时 (T-Head PPU SDK)
+2. 在这台机器上安装 GPUStack Worker
+3. Worker 启动后, GPUStack Runtime 扫描本机硬件
+   → 识别出 PPU 的型号、显存、驱动版本
+4. Worker 把信息上报给 GPUStack Server
+5. Server 的 Scheduler 在部署模型时把任务调度到 PPU 上
+```
+
+PPU 上的推理通常由 **llama-box** 后端执行 (基于 llama.cpp), 因为 PPU 目前主要跑 GGUF 量化模型。
+
+| 步骤 | 内容 |
+|------|------|
+| **1. 驱动/运行时** | 安装 T-Head PPU 的驱动和 SDK |
+| **2. 装 GPUStack Worker** | 在 PPU 机器上执行安装脚本或 Docker 启动 Worker |
+| **3. 连 Server** | Worker 用 `--server-url` 和 `--token` 加入集群 |
+| **4. 部署模型** | 在 UI 选模型, 后端通常自动或手动指定为 llama-box |
+| **5. 调参数** | 使用 GGUF 量化模型, 调整 CPU/GPU offloading 比例 |
+
+与 K8s + Device Plugin 方案对比:
+
+| 方案 | 说明 | 适合谁 |
+|------|------|--------|
+| **GPUStack 纳管 PPU** | 自己探测硬件、调度模型实例, 简单直接 | 想快速把 PPU 用起来跑模型 |
+| **K8s + PPU Device Plugin** | 把 PPU 暴露成 K8s 资源, 自己写 Pod YAML 跑推理容器 | 已深度使用 K8s, 想统一基础设施 |
+
 ---
 
 ## 15. 相关资源
@@ -635,7 +699,7 @@ GPUStack 可同时提供 LLM、Embedding、Reranker、TTS、STT, 成为企业 AI
 
 ---
 
-*Last updated: 2026-06-15*
+*Last updated: 2026-06-25*
 
 ## Related
 - [[10_Deployment_Inference/README|模型部署与推理]]
@@ -646,5 +710,5 @@ GPUStack 可同时提供 LLM、Embedding、Reranker、TTS、STT, 成为企业 AI
 - [[10_Deployment_Inference/Inference_Engines/llama_cpp_Deep_Dive|llama.cpp: 纯 C/C++ 本地 LLM 推理]]
 - [[10_Deployment_Inference/Deployment_Inference_2026|部署推理 2026 趋势]]
 - [[_concepts/gpustack|GPUStack 概念卡片]]
-- [[14_AI_Gateway/AI_Gateway_2026|AI Gateway 2026]]
+- [[12_Architecture_Infrastructure/AI_Gateway/AI_Gateway_2026|AI Gateway 2026]]
 - [[14_RAG_Systems/Advanced_RAG/Agentic_RAG_Guide|Agentic RAG 指南]]

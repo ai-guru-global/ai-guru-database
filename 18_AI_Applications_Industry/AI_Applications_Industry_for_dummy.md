@@ -5,8 +5,13 @@ tags: ["ai-applications", "industry", "finance", "healthcare"]
 summary: '> **一句话理解**: AI 在行业中就像"智能员工"——它不会取代所有人类，但会用数据分析和自动化帮助每个行业做得更好、更快、更省钱。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Ai Applications Industry For Dummy"
+  - "AI Applications Industry for dummy"
+  - AI_Applications_Industry_for_dummy
 
+---
 # AI 行业应用 - 小白版
 
 > **一句话理解**: AI 在行业中就像"智能员工"——它不会取代所有人类，但会用数据分析和自动化帮助每个行业做得更好、更快、更省钱。
@@ -346,7 +351,7 @@ flowchart LR
 | 医疗 AI | [Healthcare 文件夹](Healthcare/) |
 | 金融 AI | [Finance 文件夹](Finance/) |
 | 自动驾驶 | [Autonomous_Driving 文件夹](Autonomous_Driving/) |
-| 行业全景 | [行业应用速成指南](Industry-in-nutshell.md) |
+| 行业全景 | [行业应用速成指南](./Industry-in-nutshell.md) |
 | 技术基础 | [AI 基础 - 小白版](../01_Fundamentals/README_for_dummy.md) |
 
 ---

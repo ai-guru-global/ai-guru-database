@@ -8,8 +8,13 @@ updated: "2026-06-12"
 source_url: "https://raw.githubusercontent.com/microsoft/generative-ai-for-beginners/main/translations/zh-CN/07-building-chat-applications/README.md"
 course: "Microsoft Generative AI for Beginners"
 lesson_number: 7
----
+tier: supporting
+aliases:
+  - "Genai L07 Building Chat Applications"
+  - "GenAI L07 Building Chat Applications"
+  - GenAI_L07_Building_Chat_Applications
 
+---
 ## 学习目标
 
 完成本课后，你将能够：

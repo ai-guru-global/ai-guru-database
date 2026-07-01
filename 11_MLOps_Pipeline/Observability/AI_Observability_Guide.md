@@ -5,8 +5,13 @@ tags: ["ai-ops", "observability", "monitoring", "incident-response"]
 summary: '> 🎯 **目标**：建立 AI/LLM 生产系统的完整可观测性体系 —— 从传统三支柱到 LLM 专属指标、全链路追踪、Token 粒度成本核算，实现"看见一切，理解一切"。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Ai Observability Guide"
+  - "AI Observability Guide"
+  - AI_Observability_Guide
 
+---
 # AI 系统可观测性实践指南
 
 > 🎯 **目标**：建立 AI/LLM 生产系统的完整可观测性体系 —— 从传统三支柱到 LLM 专属指标、全链路追踪、Token 粒度成本核算，实现"看见一切，理解一切"。
@@ -743,18 +748,18 @@ groups:
 
 ## 🔗 相关主题
 
-- [SRE for AI Systems](../13_AI_Ops/SRE_for_AI_Systems.md) — SLI/SLO 设计与错误预算
-- [事故响应手册](../13_AI_Ops/AI_Incident_Response_Playbook.md) — Runbook 与事故处理
-- [AI Ops 2026](../13_AI_Ops/AI_Ops_2026.md) — 智能运维完整体系
-- [部署与推理](../10_Deployment_Inference/Inference-in-nutshell.md) — 推理性能优化
-- [AI 成本优化](../12_Architecture_Infrastructure/AI_Cost_Optimization_2026.md) — Token 经济学与 FinOps
+- [SRE for AI Systems](../../13_AI_Ops/SRE_Reliability/SRE_for_AI_Systems.md) — SLI/SLO 设计与错误预算
+- [事故响应手册](13_AI_Ops/SRE_Reliability/AI_Incident_Response_Playbook) — Runbook 与事故处理
+- [AI Ops 2026](13_AI_Ops/AI_Ops_2026.md) — 智能运维完整体系
+- [部署与推理](10_Deployment_Inference/Inference-in-nutshell.md) — 推理性能优化
+- [AI 成本优化](../../12_Architecture_Infrastructure/Architecture_Overview/AI_Cost_Optimization_2026.md) — Token 经济学与 FinOps
 
 > 📅 **最后更新**：2026-04-11 | **方法论**：OpenTelemetry + Google SRE + AI 生产实践
 
 ## Related
 
 - [[13_AI_Ops/AIOps-in-nutshell.md|AIOps-in-nutshell]]
-- [[13_AI_Ops/AI_Incident_Response_Playbook.md|AI_Incident_Response_Playbook]]
+- [[13_AI_Ops/SRE_Reliability/AI_Incident_Response_Playbook|AI_Incident_Response_Playbook]]
 - [[13_AI_Ops/AI_Ops_for_dummy.md|AI_Ops_for_dummy]]
 - [[13_AI_Ops/README.md|13_AI_Ops README]]
 - [[13_AI_Ops/README_for_dummy.md|README_for_dummy]]

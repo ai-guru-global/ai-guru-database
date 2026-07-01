@@ -5,8 +5,13 @@ tags: ["fundamentals", "ai-hardware", "gpu", "chinese-chip", "t-head", "ppu", "n
 summary: '> **一句话理解**: AI芯片是AI革命的"引擎"——2026年NVIDIA H200成为推理新标杆，Blackwell B200开始交付，AMD MI350紧追不舍，平头哥真武PPU跻身国产AI芯片第一梯队，而定制ASIC和边缘AI芯片正在分化市场。'
 created: '2026-05-31'
 updated: '2026-06-15'
----
+tier: supporting
+aliases:
+  - "Ai Hardware 2026"
+  - "AI Hardware 2026"
+  - AI_Hardware_2026
 
+---
 # AI 硬件与芯片 2026 年全景报告
 
 > **一句话理解**: AI 芯片是 AI 革命的"引擎"——2026 年 NVIDIA H200 成为推理新标杆，Blackwell B200 开始交付，AMD MI350 紧追不舍，而定制 ASIC 和边缘 AI 芯片正在分化市场。
@@ -408,7 +413,7 @@ AI硬件选型决策树 2026:
 - [[10_Deployment_Inference/Deployment_Inference]] — 部署与推理系统全景
 - [[01_Fundamentals/AI_Hardware/T_Head_PPU_Deep_Dive]] — 平头哥真武 PPU 深度解析
 - [[01_Fundamentals/AI_Hardware/T_Head_PPU_for_dummy]] — 平头哥 PPU 大白话解读
-- [[12_Architecture_Infrastructure/AI_Infrastructure_2026]] — AI 基础设施 2026
+- [[12_Architecture_Infrastructure/Architecture_Overview/AI_Infrastructure_2026]] — AI 基础设施 2026
 - [[07_Model_Training/Distributed_Training/Distributed_Training_2026]] — 分布式训练与 GPU 集群调度
 - [[01_Fundamentals/AI_Hardware/Chinese_AI_Chips_Deep_Dive]] — 国产 AI 芯片12家厂商深度解析
 - [[_concepts/heterogeneous-gpu]] — 异构 GPU 集群统一纳管

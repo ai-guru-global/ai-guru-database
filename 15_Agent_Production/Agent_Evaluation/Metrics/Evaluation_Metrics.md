@@ -5,8 +5,12 @@ tags: ["ai-agents", "agent-framework", "production", "langgraph", "model-evaluat
 summary: "> Comprehensive catalog of metrics for AI agent evaluation"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Evaluation Metrics"
+  - Evaluation_Metrics
 
+---
 # Evaluation Metrics
 
 > Comprehensive catalog of metrics for AI agent evaluation

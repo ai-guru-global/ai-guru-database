@@ -4,9 +4,14 @@ category: 21-interviews-machine-learning-engineer
 tags: ["interviews", "career", "experience", "practitioners"]
 summary: "**模型训练与评估**: 数据清洗、特征工程、训练与离线评估。"
 created: 2026-05-31
-updated: 2026-05-31
----
+updated: 2026-06-04
+tier: supporting
+aliases:
+  - "Interview Preparing"
+  - "interview preparing"
+  - interview_preparing
 
+---
 # Machine Learning Engineer 面试准备
 
 ## 核心职责
@@ -33,11 +38,12 @@ updated: 2026-05-31
 - **可复现与可落地**: 明确数据规模、模型规模与工程链路。
 
 ---
-*Last updated: 2026-02-26*
+*Last updated: 2026-06-04*
 
 ## Related
 
-- [[21_Interviews/AI_Data_Analyst/company_level_question_bank]] — AI Data Analyst 按公司/级别区分的题库 (共享: career, experience, interviews, practitioners)
-- [[21_Interviews/AI_Data_Analyst/interview_answers]] — AI Data Analyst 面试题实例答案 (共享: career, experience, interviews, practitioners)
-- [[21_Interviews/AI_Data_Analyst/interview_preparing]] — AI Data Analyst 面试准备 (共享: career, experience, interviews, practitioners)
-- [[21_Interviews/AI_Data_Analyst/question_bank]] — AI Data Analyst 题库 (共享: career, experience, interviews, practitioners)
+- [[21_Interviews/Machine_Learning_Engineer/company_level_question_bank|Machine Learning Engineer 按公司/级别区分的题库]]
+- [[21_Interviews/Machine_Learning_Engineer/interview_answers|Machine Learning Engineer 面试题实例答案]]
+- [[21_Interviews/Machine_Learning_Engineer/question_bank|Machine Learning Engineer 题库]]
+- [[21_Interviews/README|AI 面试准备 (Interviews)]]
+- [[21_Interviews/jobs|AI 相关岗位与工种清单]]

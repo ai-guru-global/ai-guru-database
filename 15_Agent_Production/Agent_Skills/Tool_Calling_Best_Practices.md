@@ -5,8 +5,12 @@ tags: ["ai-agents", "tool-calling", "function-calling", "mcp", "agent-skills", "
 summary: "> **一句话理解**: Tool Calling 就是让 AI 从'只会说话'变成'能动手做事'——通过函数调用连接 LLM 的语言理解能力和外部工具的执行能力。"
 created: 2026-06-12
 updated: 2026-06-12
----
+tier: supporting
+aliases:
+  - "Tool Calling Best Practices"
+  - Tool_Calling_Best_Practices
 
+---
 # Tool Calling 最佳实践
 
 > **一句话理解**: Tool Calling 就是让 AI 从"只会说话"变成"能动手做事"——通过函数调用连接 LLM 的语言理解能力和外部工具的执行能力。

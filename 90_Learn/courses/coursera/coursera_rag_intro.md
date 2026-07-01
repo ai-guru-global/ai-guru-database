@@ -8,8 +8,13 @@ sources:
 created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
----
+tier: peripheral
+aliases:
+  - "Coursera Rag Intro"
+  - "coursera rag intro"
+  - coursera_rag_intro
 
+---
 # RAG 入门实践项目 (Coursera)
 
 > **一句话理解**: Coursera RAG 入门实践项目,通过动手项目学习检索增强生成的基础知识和实现方法。
@@ -35,5 +40,5 @@ lifecycle: reviewed
 - 想快速上手 RAG 的开发者
 - 需要实操经验的工程师
 
-> **关联**: -> [[14_RAG_Systems|RAG 系统]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[14_RAG_Systems/README|RAG 系统]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
 

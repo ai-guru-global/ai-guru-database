@@ -5,8 +5,13 @@ tags: ["ai-gateway", "api-management", "routing", "litellm"]
 summary: '> **一句话秒懂**: AI Gateway 是调用大模型 API 的"中间人"，帮你统一管理多模型路由、限流、缓存、安全和成本，是 AI 工程化的基础设施。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Ai Gateway Comparison 2026"
+  - "AI Gateway Comparison 2026"
+  - AI_Gateway_Comparison_2026
 
+---
 # AI Gateway 对比 2026
 
 > **一句话秒懂**: AI Gateway 是调用大模型 API 的"中间人"，帮你统一管理多模型路由、限流、缓存、安全和成本，是 AI 工程化的基础设施。
@@ -705,17 +710,17 @@ Phase 4: 高级功能
 
 ### 相关文档
 
-- [Kong AI Gateway 深度解析](./Kong_AI_Gateway_Deep_Dive.md)
-- [Portkey 深度解析](./Portkey_Deep_Dive.md)
-- [LiteLLM 深度解析](./LiteLLM_Deep_Dive.md)
-- [AI Gateway 2026 概述](./AI_Gateway_2026.md)
-- [API 设计 for AI](../../93_Tools/API_Design_for_AI.md)
-- [部署推理 2026](../../10_Deployment_Inference/Deployment_Inference_2026.md)
+- [Kong AI Gateway 深度解析](12_Architecture_Infrastructure/AI_Gateway/Kong_AI_Gateway_Deep_Dive.md)
+- [Portkey 深度解析](12_Architecture_Infrastructure/AI_Gateway/Portkey_Deep_Dive.md)
+- [LiteLLM 深度解析](12_Architecture_Infrastructure/AI_Gateway/LiteLLM_Deep_Dive.md)
+- [AI Gateway 2026 概述](12_Architecture_Infrastructure/AI_Gateway/AI_Gateway_2026.md)
+- [API 设计 for AI](93_Templates/API_Design_for_AI.md)
+- [部署推理 2026](10_Deployment_Inference/Deployment_Inference_2026.md)
 
 ## Related
 
-- [[14_AI_Gateway/AI_Gateway_2026.md|AI_Gateway_2026]]
-- [[14_AI_Gateway/AI_Gateway_for_dummy.md|AI_Gateway_for_dummy]]
-- [[14_AI_Gateway/Cohere_Deep_Dive.md|Cohere_Deep_Dive]]
-- [[14_AI_Gateway/Gateway-in-nutshell.md|Gateway-in-nutshell]]
-- [[14_AI_Gateway/Kong_AI_Gateway_Deep_Dive.md|Kong_AI_Gateway_Deep_Dive]]
+- [[12_Architecture_Infrastructure/AI_Gateway/AI_Gateway_2026.md|AI_Gateway_2026]]
+- [[12_Architecture_Infrastructure/AI_Gateway/AI_Gateway_for_dummy.md|AI_Gateway_for_dummy]]
+- [[12_Architecture_Infrastructure/AI_Gateway/Cohere_Deep_Dive.md|Cohere_Deep_Dive]]
+- [[12_Architecture_Infrastructure/AI_Gateway/Gateway-in-nutshell.md|Gateway-in-nutshell]]
+- [[12_Architecture_Infrastructure/AI_Gateway/Kong_AI_Gateway_Deep_Dive.md|Kong_AI_Gateway_Deep_Dive]]

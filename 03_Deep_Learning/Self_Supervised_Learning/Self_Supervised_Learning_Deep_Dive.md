@@ -5,8 +5,12 @@ tags: ["self-supervised-learning", "contrastive-learning", "SimCLR", "MoCo", "MA
 summary: "自监督学习是现代AI预训练的核心范式，通过构造预测任务从无标注数据中学习通用表示。"
 created: 2026-06-04
 updated: 2026-06-04
----
+tier: supporting
+aliases:
+  - "Self Supervised Learning Deep Dive"
+  - Self_Supervised_Learning_Deep_Dive
 
+---
 # 自监督学习深度解读: 从对比学习到掩码建模
 
 > **一句话理解**: 自监督学习是现代 AI 预训练的「免费午餐」——不需要人工标注，通过巧妙设计预测任务，让数据自己提供监督信号，从海量无标注数据中学习通用表示。

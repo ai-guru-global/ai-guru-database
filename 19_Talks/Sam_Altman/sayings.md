@@ -5,8 +5,11 @@ tags: ["talks", "speeches", "insights", "leaders"]
 summary: "1. **“AI will amplify both the good and the bad; we have to manage the bad.” / “AI 会放大好与坏，我们必须管控坏的部分。”**"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - Sayings
 
+---
 # Sam Altman 关于 AI 的观点 (Sam Altman on AI)
 
 1. **“AI will amplify both the good and the bad; we have to manage the bad.” / “AI 会放大好与坏，我们必须管控坏的部分。”** 

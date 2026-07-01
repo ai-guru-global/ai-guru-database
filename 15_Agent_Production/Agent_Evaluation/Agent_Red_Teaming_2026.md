@@ -5,8 +5,12 @@ tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> **一句话理解**: Agent Red Teaming 是通过模拟真实攻击者视角，系统性地发现和评估 AI Agent 安全漏洞的能力评估方法，涵盖提示词注入、权限提升、数据窃取、社会工程等核心攻击向量。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: core
+aliases:
+  - "Agent Red Teaming 2026"
+  - Agent_Red_Teaming_2026
 
+---
 # Agent Red Teaming Framework 2026
 
 > **一句话理解**: Agent Red Teaming 是通过模拟真实攻击者视角，系统性地发现和评估 AI Agent 安全漏洞的能力评估方法，涵盖提示词注入、权限提升、数据窃取、社会工程等核心攻击向量。

@@ -5,8 +5,13 @@ tags: ["mlops", "ci-cd", "pipeline", "feature-store"]
 summary: '> **一句话秒懂**: MLOps 就是 AI 版的"自动化工厂流水线"——从数据处理、模型训练、测试到部署，全流程自动化，让 AI 系统像正规产品一样持续迭代、稳定运行。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Readme For Dummy"
+  - "README for dummy"
+  - README_for_dummy
 
+---
 # 10 MLOps 流水线 — 小白版 🔄
 
 > **一句话秒懂**: MLOps 就是 AI 版的"自动化工厂流水线"——从数据处理、模型训练、测试到部署，全流程自动化，让 AI 系统像正规产品一样持续迭代、稳定运行。

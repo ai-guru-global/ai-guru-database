@@ -5,8 +5,13 @@ tags: ["computer-vision", "cnn", "image-processing"]
 summary: "> **一句话秒懂**: 图像分割就像给涂色书的每个区域涂上不同颜色——AI要把图片里的每一个像素都分类,哪里是天空、哪里是树、哪里是人!"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Segmentation For Dummy"
+  - "Segmentation for dummy"
+  - Segmentation_for_dummy
 
+---
 # 图像分割 - 小白版 ✂️
 
 > **一句话秒懂**: 图像分割就像给涂色书的每个区域涂上不同颜色——AI 要把图片里的每一个像素都分类,哪里是天空、哪里是树、哪里是人!
@@ -439,5 +444,5 @@ AI辅助(U-Net):
 
 - [[04_Computer_Vision/README]] — 05 计算机视觉 (Computer Vision) (共享: cnn, computer-vision, cv, image-processing)
 - [[04_Computer_Vision/Video_Generation/README]] — AI视频生成 (Video Generation) (共享: cnn, computer-vision, cv, image-processing)
-- [[20_Papers/Vision/ResNet_Deep_Dive]] — ResNet 深度解读 (Deep Residual Learning for Image Recognition) (共享: cnn, cv)
+- [[20_Papers_and_Research/Vision/ResNet_Deep_Dive]] — ResNet 深度解读 (Deep Residual Learning for Image Recognition) (共享: cnn, cv)
 - [[_concepts/computer-vision]] — 计算机视觉 (共享: cnn, cv)

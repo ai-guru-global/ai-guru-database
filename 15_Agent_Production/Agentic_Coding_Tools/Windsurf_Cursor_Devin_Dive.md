@@ -5,8 +5,12 @@ tags: ["ai-agents", "agent-framework", "production", "langgraph", "cursor"]
 summary: '> **一句话理解**: 从 Claude Code 到 Devin，Agentic Coding 工具正在重新定义编程边界——从"代码补全"到"自主执行"，从"单-Agent"到"多-Agent协作"，每款工具都在不同的维度推动 AI 编程的极限。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Windsurf Cursor Devin Dive"
+  - Windsurf_Cursor_Devin_Dive
 
+---
 # Agentic Coding CLI 工具全景对比
 
 > **一句话理解**: 从 Claude Code 到 Devin，Agentic Coding 工具正在重新定义编程边界——从"代码补全"到"自主执行"，从"单-Agent"到"多-Agent 协作"，每款工具都在不同的维度推动 AI 编程的极限。

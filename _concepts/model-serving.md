@@ -32,8 +32,11 @@ lifecycle_changed: 2026-05-31
 tier: core
 created: 2026-05-31T00:00:00Z
 updated: 2026-05-31T00:00:00Z
----
+aliases:
+  - "Model Serving"
+  - "model serving"
 
+---
 # 模型服务
 
 ## 核心要点

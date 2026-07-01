@@ -21,8 +21,11 @@ lifecycle_changed: 2026-05-31
 tier: core
 created: 2026-05-31T00:00:00Z
 updated: 2026-05-31T00:00:00Z
----
+aliases:
+  - "Prompt Engineering"
+  - "prompt engineering"
 
+---
 # 提示工程
 
 ## 概述
@@ -132,8 +135,8 @@ Prefix Caching缓存共享的System Prompt前缀；LLMLingua等工具压缩长Pr
 - 推理模型：CoT/ToT是推理模型的核心策略
 ## Related
 
-- [[20_Papers/Architecture/BERT_Deep_Dive.md]] — BERT 深度解读
-- [[20_Papers/Scaling/GPT3_Deep_Dive.md]] — GPT-3 深度解读
+- [[20_Papers_and_Research/Architecture/BERT_Deep_Dive.md]] — BERT 深度解读
+- [[20_Papers_and_Research/Scaling/GPT3_Deep_Dive.md]] — GPT-3 深度解读
 - [[00_AI_Introduction/AI_Practical_Labs.md]] — AI 实践实验室
 - [[00_AI_Introduction/AI_Tools_Practical_Guide.md]] — AI 工具实战指南
 - [[_concepts/sequence-models.md|sequence-models]]

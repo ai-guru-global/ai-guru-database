@@ -5,8 +5,13 @@ tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: '**CoPaw** ("Works for you, grows with you") is Alibaba''s flagship open-source AI agent implementation built on the **AgentScope** framework. It represents one of the most sophistic'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Copaw Deep Dive"
+  - "CoPaw Deep Dive"
+  - CoPaw_Deep_Dive
 
+---
 # CoPaw Deep Dive: Alibaba's Personal AI Agent Workstation
 
 ## Overview

@@ -5,8 +5,13 @@ tags: ["visualization", "charts", "dashboards", "data-viz"]
 summary: '> **一句话秒懂**: 可视化就是给 AI 装"透视眼"——让你看见模型在想什么、学得怎样、哪里出了问题，就像给汽车装仪表盘，不用掀开引擎盖也能知道一切！'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: core
+aliases:
+  - "Visualization For Dummy"
+  - "Visualization for dummy"
+  - Visualization_for_dummy
 
+---
 # AI 可视化 - 小白版
 
 > **一句话秒懂**: 可视化就是给 AI 装"透视眼"——让你看见模型在想什么、学得怎样、哪里出了问题，就像给汽车装仪表盘，不用掀开引擎盖也能知道一切！
@@ -649,5 +654,5 @@ tensorboard --logdir=runs
 ## Related
 
 - [[94_Visualization/README.md|94_Visualization README]]
-- [[94_Visualization/atlas/README.md|atlas README]]
-- [[94_Visualization/atlas/docs/performance.md|performance]]
+- [[_projects/atlas/README.md|atlas README]]
+- [[_projects/atlas/docs/performance.md|performance]]

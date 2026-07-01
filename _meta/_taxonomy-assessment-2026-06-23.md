@@ -100,7 +100,7 @@ status: active
 
 抽查无明显"放错章节"的文件。少数边界案例：
 - `06_Reinforcement_Learning/RLHF_DPO_GRPO_Deep_Dive.md` —— 与 `07_Model_Training` 的对齐训练有交叉，但放 RL 章（算法视角）合理
-- `05_NLP_LLMs/Context_Engineering_Guide.md` —— 与 `_concepts/context-engineering` 有重叠，但章节版更详细，合理
+- `05_NLP_LLMs/Prompt_Engineering/Context_Engineering_Guide.md` —— 与 `_concepts/context-engineering` 有重叠，但章节版更详细，合理
 
 ---
 

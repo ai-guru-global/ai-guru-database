@@ -6,8 +6,13 @@ summary: "从范式革命到认知层级、推理规划、记忆系统到工具�
 created: 2026-06-16
 updated: 2026-06-16
 source: "_sources/yeasy/agentic_ai_guide/ (Ch1-4)"
----
+tier: supporting
+aliases:
+  - "Agentic Ai Complete Guide"
+  - "Agentic AI Complete Guide"
+  - Agentic_AI_Complete_Guide
 
+---
 # 智能体 AI 权威指南 Part 1: 单体智能架构全解
 
 > Source: 智能体 AI 权威指南 (yeasy) Part 1, Ch1-4

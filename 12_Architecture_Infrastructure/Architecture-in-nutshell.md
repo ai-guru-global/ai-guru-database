@@ -5,8 +5,12 @@ tags: ["architecture", "infrastructure", "kubernetes", "high-availability"]
 summary: "> **一句话理解**: AI 架构就像设计一座智能工厂——从原材料（数据）到生产线（模型服务）再到出货口（应用接口），每一层都需要合理规划才能高效运转。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: core
+aliases:
+  - "Architecture In Nutshell"
+  - "Architecture in nutshell"
 
+---
 # AI 架构速成指南
 
 > **一句话理解**: AI 架构就像设计一座智能工厂——从原材料（数据）到生产线（模型服务）再到出货口（应用接口），每一层都需要合理规划才能高效运转。
@@ -520,9 +524,9 @@ flowchart TB
 
 - [RAG 速成指南](../14_RAG_Systems/RAG-in-nutshell.md) —— 检索增强生成
 - [推理速成指南](../10_Deployment_Inference/Inference-in-nutshell.md) —— 模型部署推理
-- [成本优化完整版](AI_Cost_Optimization_2026.md) —— 深入成本策略
-- [高可用完整版](High_Availability_2026.md) —— 深入 HA 设计
-- [架构基础设施 - 小白版](Architecture_Infrastructure_for_dummy.md) —— 零基础入门
+- [成本优化完整版](./Architecture_Overview/AI_Cost_Optimization_2026.md) —— 深入成本策略
+- [高可用完整版](./Architecture_Overview/High_Availability_2026.md) —— 深入 HA 设计
+- [架构基础设施 - 小白版](./Architecture_Infrastructure_for_dummy.md) —— 零基础入门
 
 ---
 
@@ -530,8 +534,8 @@ flowchart TB
 
 ## Related
 
-- [[12_Architecture_Infrastructure/AI_Infrastructure_2026]] — AI Infrastructure 2026 完全指南 (共享: architecture, high-availability, infrastructure, kubernetes)
+- [[12_Architecture_Infrastructure/Architecture_Overview/AI_Infrastructure_2026]] — AI Infrastructure 2026 完全指南 (共享: architecture, high-availability, infrastructure, kubernetes)
 - [[12_Architecture_Infrastructure/Architecture_Infrastructure_for_dummy]] — AI 架构基础设施 - 小白版 (共享: architecture, high-availability, infrastructure, kubernetes)
-- [[12_Architecture_Infrastructure/Spring_AI_Architecture]] — Spring AI 系统架构设计 (共享: architecture, high-availability, infrastructure, kubernetes)
+- [[12_Architecture_Infrastructure/Architecture_Overview/Spring_AI_Architecture]] — Spring AI 系统架构设计 (共享: architecture, high-availability, infrastructure, kubernetes)
 - [[12_Architecture_Infrastructure/README.md|README]]
-- [[12_Architecture_Infrastructure/AI_System_Architecture_2026.md|AI_System_Architecture_2026]]
+- [[AI_System_Architecture_2026|AI_System_Architecture_2026]]

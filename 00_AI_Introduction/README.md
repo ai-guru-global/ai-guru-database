@@ -5,8 +5,9 @@ tags: ["ai", "introduction"]
 summary: "本章节提供人工智能的全面入门知识，适合大专院校AI通识课教材使用。内容涵盖AI基础概念、技术全景、历史发展、工具实践、伦理影响、未来趋势和学习方法，为零基础读者建立完整的AI认知框架。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
 
+---
 # 00 - AI 简介与历史
 
 本章节提供人工智能的全面入门知识，适合大专院校 AI 通识课教材使用。内容涵盖 AI 基础概念、技术全景、历史发展、工具实践、伦理影响、未来趋势和学习方法，为零基础读者建立完整的 AI 认知框架。
@@ -32,6 +33,7 @@ updated: 2026-05-31
 | [AI术语表与概念词典](./AI_Glossary.md) | 快速查阅 | 100+核心术语，从 A-Z 排序，含定义、示例、关联概念 |
 | [AI经典案例分析集](./AI_Classic_Cases.md) | 案例教学 | 6 个深度案例：AlphaGo、ChatGPT、ImageNet、自动驾驶、人脸识别、GPT 系列 |
 | [AI课堂实验与实践指导](./AI_Practical_Labs.md) | 实验教学 | 8 个动手实验 + 期末项目建议，无需编程基础 |
+| [**AI 配套实验指南**](./Hands_On_Experiments_Guide.md) | 技术实验 | 10 个可运行实验: CNN/SimCLR/BERT微调/DQN/RAG/vLLM 等 |
 
 ### 教学大纲建议
 
@@ -215,3 +217,4 @@ updated: 2026-05-31
 - [[00_AI_Introduction/AI_Fundamentals_for_dummy]] — AI 基础入门 - 小白版 (共享: ai, introduction)
 - [[00_AI_Introduction/README_for_dummy]] — 00 AI 简介与历史 — 小白版 🚀 (共享: ai, introduction)
 
+- [[00_AI_Introduction/Hands_On_Experiments_Guide|AI 知识库配套实验指南]]

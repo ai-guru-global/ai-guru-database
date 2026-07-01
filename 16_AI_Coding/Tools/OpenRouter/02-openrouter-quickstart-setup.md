@@ -7,7 +7,13 @@ tags:
 - configuration
 created: 2026-06-12
 category: 16-ai-coding-tools-openrouter
-summary: ""
+tier: peripheral
+aliases:
+  - "Openrouter Quickstart Setup"
+  - "openrouter quickstart setup"
+
+updated: 2026-06-30
+summary: "快速接入与环境配置 — 专题文档"
 ---
 title: 快速接入与环境配置
 description: '# 快速接入与环境配置'

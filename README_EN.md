@@ -3,8 +3,13 @@ title: AI Guru Knowledge Base (English)
 category: meta
 tags: [readme, en, overview]
 summary: English README for the AI Guru comprehensive AI learning resource repository.
----
+tier: peripheral
+aliases:
+  - "Readme En"
+  - "README EN"
+  - README_EN
 
+---
 <div align="center">
 
 <h1>🧠 AI Guru Knowledge Base</h1>
@@ -183,7 +188,7 @@ Track cutting-edge technologies
 
 ⏱️ Self-paced
 
-[Essential Papers →](./20_Papers/)
+[Essential Papers →](./20_Papers_and_Research/)
 
 </td>
 </tr>
@@ -253,7 +258,7 @@ Complete path from math to production:
 | **11** [RAG Systems](./14_RAG_Systems/) | Retrieval augmented: Vector DBs, hybrid search, Agentic RAG | ⭐⭐⭐ |
 | **12** [Architecture & Infrastructure](./12_Architecture_Infrastructure/) | System design: Multi-tenant, SGLang, HA, edge AI | ⭐⭐⭐⭐ |
 | **13** [Agent Production](./15_Agent_Production/) | Agent engineering: Frameworks, skills, workflows, evaluation | ⭐⭐⭐⭐ |
-| **14** [AI Gateway](./14_AI_Gateway/) | Gateway: Routing, rate limiting, model gateway | ⭐⭐⭐ |
+| **14** [AI Gateway](./12_Architecture_Infrastructure/AI_Gateway/) | Gateway: Routing, rate limiting, model gateway | ⭐⭐⭐ |
 | **15** [AI Testing](./09_Testing/) | Testing: Test frameworks, contract testing, data management | ⭐⭐⭐ |
 | **16** [AI Ops](./13_AI_Ops/) | AIOps: Observability, incident response, chaos engineering | ⭐⭐⭐⭐ |
 | **17** [AI Coding](./16_AI_Coding/) | Coding tools & methodology: Cursor, Claude Code, Vibe Coding | ⭐⭐ |
@@ -261,7 +266,7 @@ Complete path from math to production:
 | **19** [Ethics & Safety](./17_Ethics_Safety/) | AI safety: Alignment, red teaming, OWASP LLM | ⭐⭐⭐ |
 | **20** [Industry Apps](./18_AI_Applications_Industry/) | Verticals: Healthcare/Finance/Manufacturing | ⭐⭐ |
 | **21** [Industry Insights](./19_Talks/) | Leader insights: 21 AI pioneers | ⭐⭐ |
-| **22** [Essential Papers](./20_Papers/) | Classic papers: Transformer, GPT, BERT | ⭐⭐⭐⭐ |
+| **22** [Essential Papers](./20_Papers_and_Research/) | Classic papers: Transformer, GPT, BERT | ⭐⭐⭐⭐ |
 | **23** [Interviews](./21_Interviews/) | Career guides: 21 AI role interviews | ⭐⭐ |
 
 </details>
@@ -272,7 +277,7 @@ Latest tech trends and industry insights:
 
 - [LLM Architectures 2026](./05_NLP_LLMs/LLM_Architectures/LLM_Architectures.md) - GPT-5.2, Claude 4.5, reasoning models
 - [AI Hardware 2026](./01_Fundamentals/AI_Hardware/AI_Hardware_2026.md) - H100/H200/B200 comparison
-- [PEFT Fine-tuning 2026](./05_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/) - LoRA/QLoRA/DoRA, 70B on single GPU
+- [PEFT Fine-tuning 2026](./05_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026.md) - LoRA/QLoRA/DoRA, 70B on single GPU
 - [Advanced RAG](./14_RAG_Systems/) - Hybrid search, Agentic RAG
 - [AI Coding Assistants](./16_AI_Coding/) - Cursor, Claude Code, Devin
 - [Vibe Coding Methodology](./16_AI_Coding/) - Natural language driven dev, DGRV loop, production practices

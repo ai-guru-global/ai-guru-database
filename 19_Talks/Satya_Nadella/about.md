@@ -5,8 +5,11 @@ tags: ["talks", "speeches", "insights", "leaders"]
 summary: "**身份**: Microsoft CEO。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - About
 
+---
 # Satya Nadella 简介 (Satya Nadella)
 
 - **身份**: Microsoft CEO。

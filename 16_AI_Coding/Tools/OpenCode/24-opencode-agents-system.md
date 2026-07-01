@@ -6,7 +6,13 @@ tags:
 - ai-coding
 created: 2026-06-12
 category: 16-ai-coding-tools-opencode
-summary: ""
+tier: peripheral
+aliases:
+  - "Opencode Agents System"
+  - "opencode agents system"
+
+updated: 2026-06-30
+summary: "Agent 系统深度指南 — 专题文档"
 ---
 title: Agent 系统深度指南
 description: '# Agent 系统深度指南'

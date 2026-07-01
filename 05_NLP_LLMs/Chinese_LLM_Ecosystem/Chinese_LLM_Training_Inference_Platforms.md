@@ -5,8 +5,13 @@ tags: ["chinese-llm", "training", "inference", "distributed-training", "moe-trai
 summary: "面向模型训推平台工程师的实战参考：中国 15 家大模型厂商的训练基础设施、分布式训练策略、数据工程流水线、对齐训练方案、推理优化技术、服务化部署架构、硬件选型与成本分析。"
 created: "2026-06-12"
 updated: "2026-06-12"
----
+tier: supporting
+aliases:
+  - "Chinese Llm Training Inference Platforms"
+  - "Chinese LLM Training Inference Platforms"
+  - Chinese_LLM_Training_Inference_Platforms
 
+---
 # 中国大模型训练与推理平台实战参考 (Training & Inference Platforms)
 
 > **一句话理解**: 从 DeepSeek 的 2048 卡 H800 训练到讯飞星火的昇腾 NPU 全栈，从 MoE 专家并行到 RLHF 对齐流水线，从 FP8 量化到 Continuous Batching——中国大模型训推全链路技术参考。
@@ -880,8 +885,8 @@ print(state["answer"])
 - [[05_NLP_LLMs/LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral]] — MoE 案例研究
 - [[05_NLP_LLMs/Reasoning_Models/DeepSeek_R1_Technical_Analysis]] — DeepSeek R1 GRPO 训练
 - [[05_NLP_LLMs/Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs]] — LLM 微调技术
-- [[20_Papers/Efficiency/LoRA_Deep_Dive]] — LoRA 低秩适配
-- [[20_Papers/Architecture/Mixture_of_Experts_Deep_Dive]] — MoE 论文解读
+- [[20_Papers_and_Research/Efficiency/LoRA_Deep_Dive]] — LoRA 低秩适配
+- [[20_Papers_and_Research/Architecture/Mixture_of_Experts_Deep_Dive]] — MoE 论文解读
 
 ### 推理相关
 

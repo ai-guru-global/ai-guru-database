@@ -11,7 +11,7 @@ relationships:
     type: builds_on
 sources:
   - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
-  - 14_AI_Gateway/AI_Gateway_2026.md
+  - 12_Architecture_Infrastructure/AI_Gateway/AI_Gateway_2026
 summary: 模型网关是 LLM 服务的统一入口层，负责流量路由、负载均衡、API-Key 鉴权、模型版本管理与可观测性。
 provenance:
   extracted: 0.55
@@ -21,8 +21,11 @@ base_confidence: 0.88
 lifecycle: stable
 tier: core
 created: 2026-06-12
----
+aliases:
+  - "Model Gateway"
+  - "model gateway"
 
+---
 # 模型网关 (Model Gateway)
 
 ## 1. 定义
@@ -139,10 +142,10 @@ created: 2026-06-12
 
 ## Related
 
-- [[14_AI_Gateway/AI_Gateway_2026]] — AI Gateway 全景
-- [[14_AI_Gateway/LiteLLM_Deep_Dive]] — LiteLLM 深度解析
-- [[14_AI_Gateway/Kong_AI_Gateway_Deep_Dive]] — Kong AI Gateway
-- [[14_AI_Gateway/Portkey_Deep_Dive]] — Portkey 深度解析
+- [[12_Architecture_Infrastructure/AI_Gateway/AI_Gateway_2026]] — AI Gateway 全景
+- [[12_Architecture_Infrastructure/AI_Gateway/LiteLLM_Deep_Dive]] — LiteLLM 深度解析
+- [[12_Architecture_Infrastructure/AI_Gateway/Kong_AI_Gateway_Deep_Dive]] — Kong AI Gateway
+- [[12_Architecture_Infrastructure/AI_Gateway/Portkey_Deep_Dive]] — Portkey 深度解析
 - [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack 深度解析
 - [[_concepts/llm-infrastructure]] — LLM 基础设施
 - [[_concepts/model-serving]] — 模型服务

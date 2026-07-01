@@ -3,8 +3,13 @@ title: "大模型家族与前沿架构：从 BERT 到推理模型"
 tags: [llm, bert, gpt, llama, deepseek, moe, ssm, mamba, multimodal, reasoning, long-context]
 source: yeasy/llm_internals
 created: 2026-06-19
----
+tier: peripheral
+aliases:
+  - "Llm Internals Models Frontiers"
+  - "LLM Internals Models Frontiers"
+  - LLM_Internals_Models_Frontiers
 
+---
 # 大模型家族与前沿架构：从 BERT 到推理模型
 
 > **核心命题**：编码器、解码器、编码器-解码器三条路线如何演化？MoE、SSM、推理时计算扩展如何重塑大模型格局？

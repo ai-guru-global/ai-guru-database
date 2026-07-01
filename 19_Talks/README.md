@@ -5,8 +5,9 @@ tags: ["talks", "speeches", "insights", "leaders"]
 summary: "> **一句话理解**: 本章节收录 AI 领域最具影响力的领袖人物的核心观点、演讲精华与思想演进，帮助你从技术先驱的视角理解 AI 发展的脉络与未来方向。"
 created: 2026-05-31
 updated: 2026-06-15
----
+tier: supporting
 
+---
 # AI 名人演讲与观点 (Talks)
 
 > **一句话理解**: 本章节收录 AI 领域最具影响力的领袖人物的核心观点、演讲精华与思想演进，帮助你从技术先驱的视角理解 AI 发展的脉络与未来方向。
@@ -152,3 +153,18 @@ updated: 2026-06-15
 
 
 
+
+- [[19_Talks/Andrej_Karpathy/youtube_channel|Andrej Karpathy YouTube 频道]]
+- [[19_Talks/Bill_Gates/sayings|Bill Gates 关于 AI 的观点 (Bill Gates on AI)]]
+- [[19_Talks/Jie_Tang/about|唐杰 (Jie Tang) — 智谱 AI 联合创始人/首席科学家]]
+- [[19_Talks/Jie_Tang/sayings|唐杰关于 AI 的观点 (Jie Tang on AI)]]
+- [[19_Talks/Jinze_Bai/about|白金泽 (Jinze Bai) — 通义千问/Qwen 团队负责人]]
+- [[19_Talks/Jinze_Bai/sayings|白金泽关于 AI 的观点 (Jinze Bai on AI)]]
+- [[19_Talks/Josh_Starmer/about|Josh Starmer (StatQuest) — 统计学与 AI 教育界的清晰之声]]
+- [[19_Talks/Junjie_Yan/about|闫俊杰 (Junjie Yan) — MiniMax 创始人]]
+- [[19_Talks/Junjie_Yan/sayings|闫俊杰关于 AI 的观点 (Junjie Yan on AI)]]
+- [[19_Talks/Wenfeng_Liang/about|梁文锋 (Wenfeng Liang) — DeepSeek 创始人]]
+- [[19_Talks/Wenfeng_Liang/sayings|梁文锋关于 AI 的观点 (Wenfeng Liang on AI)]]
+- [[19_Talks/Zhilin_Yang/about|杨植麟 (Zhilin Yang) — 月之暗面/Moonshot AI 创始人]]
+- [[19_Talks/Zhilin_Yang/sayings|杨植麟关于 AI 的观点 (Zhilin Yang on AI)]]
+- [[19_Talks/3Blue1Brown/about|Grant Sanderson (3Blue1Brown)]]

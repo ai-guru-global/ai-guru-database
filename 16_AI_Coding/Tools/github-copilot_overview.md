@@ -9,8 +9,12 @@ created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
 tier: supporting
----
+aliases:
+  - "Github Copilot Overview"
+  - "github copilot overview"
+  - github-copilot_overview
 
+---
 # GitHub Copilot 概览
 
 > **一句话理解**: 全球使用最广泛的 AI 编程助手,提供实时代码补全、Chat 对话和 Agent 模式。
@@ -59,4 +63,8 @@ tier: supporting
 | Agent | 基础 | 强 | 极强 |
 | 价格 | $10/月 | $20/月 | 按 token |
 
-> **关联**: -> [[16_AI_Coding|AI 编程]] | [[16_AI_Coding/AI_Coding_2026_Guide|AI 编程 2026 全景指南]]
+> **关联**: -> [[16_AI_Coding/README|AI 编程]] | [[16_AI_Coding/AI_Coding_2026_Guide|AI 编程 2026 全景指南]]
+
+## Related
+
+- [[16_AI_Coding/README|AI编程 (AI Coding)]]

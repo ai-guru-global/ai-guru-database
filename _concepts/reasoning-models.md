@@ -28,8 +28,11 @@ lifecycle_changed: 2026-05-31
 tier: core
 created: 2026-05-31 00:00:00+00:00
 updated: 2026-05-31 00:00:00+00:00
----
+aliases:
+  - "Reasoning Models"
+  - "reasoning models"
 
+---
 # 推理模型
 
 ## 概述

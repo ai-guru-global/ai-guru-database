@@ -9,8 +9,11 @@ created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
 tier: core
----
+aliases:
+  - "Genai Agents Nirdiamant"
+  - "genai agents nirdiamant"
 
+---
 # GenAI Agent 实现集合 (22.5k)
 
 > **一句话理解**: 50+ 个 GenAI Agent 教程与实现(22.5k star),从简单对话机器人到复杂多 Agent 系统。

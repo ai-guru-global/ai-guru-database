@@ -9,8 +9,11 @@ created: "2026-06-12"
 updated: "2026-06-12"
 lifecycle: draft
 tier: supporting
----
+aliases:
+  - "Learn Claude Code"
+  - "learn claude code"
 
+---
 # Learn Claude Code (shareAI-lab)
 
 > 外部源引用索引。完整课程映射与每课的概念链接见 **[[90_Learn/courses/share_ai/learn_claude_code]]**。

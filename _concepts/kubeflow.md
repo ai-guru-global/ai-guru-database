@@ -25,8 +25,10 @@ lifecycle: stable
 tier: core
 created: 2026-06-16
 updated: 2026-06-16
----
+aliases:
+  - Kubeflow
 
+---
 # Kubeflow
 
 > Kubernetes 上的「机器学习全家桶」——从 Jupyter 到训练流水线再到模型服务的一站式 MLOps 平台。

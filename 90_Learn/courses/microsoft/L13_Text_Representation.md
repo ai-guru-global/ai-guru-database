@@ -6,8 +6,12 @@ summary: "本课介绍如何将文本转换为神经网络可处理的张量，�
 source_url: "https://raw.githubusercontent.com/microsoft/AI-For-Beginners/main/lessons/5-NLP/13-TextRep/README.md"
 created: "2026-06-12"
 updated: "2026-06-12"
----
+tier: supporting
+aliases:
+  - "L13 Text Representation"
+  - L13_Text_Representation
 
+---
 # L13 - 文本表示：词袋模型与 TF-IDF
 
 > **一句话理解**：在让神经网络理解文字之前，我们需要先把文本变成数字向量；本课从最简单的字符/词 one-hot 编码出发，过渡到词袋模型与 TF-IDF，为后续词嵌入与语言模型打基础。

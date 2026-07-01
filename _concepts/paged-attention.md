@@ -21,8 +21,11 @@ lifecycle_changed: 2026-06-03
 tier: core
 created: 2026-06-03 00:00:00+00:00
 updated: 2026-06-15 00:00:00+00:00
----
+aliases:
+  - "Paged Attention"
+  - "paged attention"
 
+---
 # PagedAttention
 
 ## 核心要点
@@ -140,6 +143,8 @@ Block Table: A→[1,5,8]  B→[2,6]  C→[3,7]
 - [[_concepts/model-deployment]] — 模型部署全景
 - [[_concepts/multi-head-latent-attention]] — MLA（架构层压缩 KV Cache）
 - [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive]] — vLLM（PagedAttention 首发实现）
+- [[10_Deployment_Inference/Inference_Engines/vLLM_for_dummy]] — vLLM 大白话解释
+- [[10_Deployment_Inference/Inference_Engines/vLLM_PagedAttention_Architecture]] — vLLM + PagedAttention 架构链路图
 - [[10_Deployment_Inference/Inference_Engines/SGLang_Deep_Dive]] — SGLang（结合 RadixAttention 的内存管理）
 - [[10_Deployment_Inference/Inference_Engines/LMDeploy_Deep_Dive]] — LMDeploy（TurboMind Paging KV Cache）
 - [[10_Deployment_Inference/Inference_Engines/TensorRT_LLM_Deep_Dive]] — TensorRT-LLM（In-Flight Batching + Paged KV）

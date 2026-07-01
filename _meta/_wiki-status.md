@@ -140,8 +140,8 @@ _4 chars/token heuristic_
 | 15_Testing | 12 |
 | 14_AI_Gateway | 11 |
 | 10_MLOps_Pipeline | 11 |
-| 91_Notes | 5 |
+| _meta/notes | 5 |
 | 94_Visualization | 5 |
-| 93_Tools | 7 |
+| 93_Templates | 7 |
 
 _Last updated: 2026-06-05_

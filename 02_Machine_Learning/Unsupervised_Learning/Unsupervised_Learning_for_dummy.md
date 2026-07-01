@@ -5,8 +5,13 @@ tags: ["machine-learning", "supervised", "unsupervised"]
 summary: "> **一句话秒懂**: 无监督学习就像自己整理房间——没人告诉你怎么分类，但你会自然地把衣服放一堆、书放一堆、玩具放一堆。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Unsupervised Learning For Dummy"
+  - "Unsupervised Learning for dummy"
+  - Unsupervised_Learning_for_dummy
 
+---
 # 无监督学习 - 小白版
 
 > **一句话秒懂**: 无监督学习就像自己整理房间——没人告诉你怎么分类，但你会自然地把衣服放一堆、书放一堆、玩具放一堆。

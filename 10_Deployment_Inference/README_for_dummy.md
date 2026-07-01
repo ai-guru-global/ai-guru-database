@@ -5,8 +5,13 @@ tags: ["deployment", "inference", "serving", "vllm"]
 summary: '> **一句话秒懂**: 部署就是让 AI "上岗"——训练好的模型怎么变成服务，让大家都能用，同时要快、稳、省钱！'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Readme For Dummy"
+  - "README for dummy"
+  - README_for_dummy
 
+---
 # 09 部署与推理 — 小白版 🚀
 
 > **一句话秒懂**: 部署就是让 AI "上岗"——训练好的模型怎么变成服务，让大家都能用，同时要快、稳、省钱！

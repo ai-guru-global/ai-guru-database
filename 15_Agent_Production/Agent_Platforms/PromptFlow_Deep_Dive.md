@@ -5,8 +5,13 @@ tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> **一句话理解**: PromptFlow 是微软的提示词工程平台——可视化构建、测试、部署 LLM 应用，支持 RAG、Agent 和多模型编排。"
 created: "2026-05-31"
 updated: "2026-05-31"
----
+tier: supporting
+aliases:
+  - "Promptflow Deep Dive"
+  - "PromptFlow Deep Dive"
+  - PromptFlow_Deep_Dive
 
+---
 # PromptFlow: 微软提示词工作流平台
 
 > **一句话理解**: PromptFlow 是微软的提示词工程平台——可视化构建、测试、部署 LLM 应用，支持 RAG、Agent 和多模型编排。

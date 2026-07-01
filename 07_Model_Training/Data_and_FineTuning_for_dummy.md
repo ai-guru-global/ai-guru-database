@@ -5,8 +5,13 @@ tags: ["data-cleaning", "dora", "rs-lora", "fine-tuning", "peft", "for-dummy"]
 summary: "> **一句话理解**: 训练大模型就像养孩子——先给干净、均衡的‘食物’（数据清洗 Pipeline），再用省力的方法教它新技能（DoRA、RS-LoRA），不用把全身神经都重写一遍。"
 created: "2026-06-16"
 updated: "2026-06-16"
----
+tier: supporting
+aliases:
+  - "Data And Finetuning For Dummy"
+  - "Data and FineTuning for dummy"
+  - Data_and_FineTuning_for_dummy
 
+---
 # 数据与微调大白话：数据清洗 Pipeline、DoRA、RS-LoRA
 
 > **一句话理解**: 训练大模型就像养孩子——先给干净、均衡的“食物”（数据清洗 Pipeline），再用省力的方法教它新技能（DoRA、RS-LoRA），不用把全身神经都重写一遍。

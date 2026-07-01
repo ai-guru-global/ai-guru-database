@@ -6,8 +6,12 @@ summary: >
   深入剖析量化对 LLM 输出质量的影响机制：三种退化模式（长尾知识丢失、重复生成、格式退化）、层敏感度分析（Attention Q/K/V 极敏感，FFN 中间层鲁棒）、激活值离群点问题（LLM.int8()/SmoothQuant 解决方案）、校准数据选择策略、困惑度作为量化体温计、KV Cache 量化第二战场。提供完整的量化质量评估工作流。
 created: "2026-06-16"
 updated: "2026-06-16"
----
+tier: supporting
+aliases:
+  - "Quantization Precision Deep Dive"
+  - Quantization_Precision_Deep_Dive
 
+---
 # 量化精度深度解析 (Quantization Precision Deep Dive)
 
 > **核心问题**：量化把模型"压小"了，但它到底"变傻"了多少？哪些能力先退化？怎么量化地评估和缓解？
@@ -538,3 +542,7 @@ Step 3: 人工抽样验证（1-2 小时）
 - [[_concepts/kv-cache]] — KV Cache 优化
 - [[vLLM_Deep_Dive]] — vLLM 中的量化配置
 - [[llama_cpp_Deep_Dive]] — llama.cpp GGUF 量化详解
+
+## Related
+
+- [[10_Deployment_Inference/README|模型部署与推理]]

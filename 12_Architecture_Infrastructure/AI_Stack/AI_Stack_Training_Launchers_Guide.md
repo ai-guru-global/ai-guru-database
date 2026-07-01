@@ -5,8 +5,13 @@ tags: ["ai-stack", "training", "torchrun", "accelerate", "deepspeed", "swift", "
 summary: "> **一句话理解**: AI Stack 训练层提供 torchrun、accelerate、deepspeed、swift 四种启动方式，覆盖 PyTorch 原生、HuggingFace 生态、大模型分布式和国产魔搭框架。"
 created: "2026-06-16"
 updated: "2026-06-16"
----
+tier: supporting
+aliases:
+  - "Ai Stack Training Launchers Guide"
+  - "AI Stack Training Launchers Guide"
+  - AI_Stack_Training_Launchers_Guide
 
+---
 # AI Stack 训练启动器指南
 
 > **一句话理解**: AI Stack 训练层提供 `torchrun`、`accelerate`、`deepspeed`、`swift` 四种启动方式，覆盖 PyTorch 原生、HuggingFace 生态、大模型分布式和国产魔搭框架。

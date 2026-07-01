@@ -8,8 +8,13 @@ updated: "2026-06-12"
 source_url: "https://raw.githubusercontent.com/microsoft/generative-ai-for-beginners/main/translations/zh-CN/21-meta/README.md"
 course: "Microsoft Generative AI for Beginners"
 lesson_number: 21
----
+tier: supporting
+aliases:
+  - "Genai L21 Building With Meta"
+  - "GenAI L21 Building with Meta"
+  - GenAI_L21_Building_with_Meta
 
+---
 ## 学习目标
 
 本课程将涵盖以下内容：

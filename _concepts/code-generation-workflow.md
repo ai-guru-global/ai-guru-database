@@ -26,8 +26,11 @@ lifecycle_changed: 2026-06-16
 tier: core
 created: 2026-06-16
 updated: 2026-06-16
----
+aliases:
+  - "Code Generation Workflow"
+  - "code generation workflow"
 
+---
 # 代码生成工作流
 
 ## 核心要点

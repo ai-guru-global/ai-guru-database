@@ -5,8 +5,11 @@ tags: ["talks", "speeches", "insights", "leaders"]
 summary: "**身份**: Meta 创始人兼 CEO。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - About
 
+---
 # Mark Zuckerberg 简介 (Mark Zuckerberg)
 
 - **身份**: Meta 创始人兼 CEO。

@@ -5,8 +5,13 @@ tags: ["ai-stack", "container", "containerd", "nerdctl", "docker", "kubernetes",
 summary: "> **一句话理解**: AI Stack 以 containerd 为容器运行时，nerdctl/crictl/ctr 分别用于日常运维、K8s 调试和底层排障，docker/podman 用于开发或安全敏感场景。"
 created: "2026-06-16"
 updated: "2026-06-16"
----
+tier: supporting
+aliases:
+  - "Ai Stack Container Runtime Guide"
+  - "AI Stack Container Runtime Guide"
+  - AI_Stack_Container_Runtime_Guide
 
+---
 # AI Stack 容器与运行时指南
 
 > **一句话理解**: AI Stack 以 containerd 为容器运行时，`nerdctl`/`crictl`/`ctr` 分别用于日常运维、K8s 调试和底层排障，`docker`/`podman` 用于开发或安全敏感场景。
@@ -148,6 +153,6 @@ podman run -d --name qwen3-8b \
 - [[12_Architecture_Infrastructure/AI_Stack_Production_Toolchain|AI Stack 生产工具链总览]]
 - [[12_Architecture_Infrastructure/AI_Stack_K8s_Operations_Guide|AI Stack K8s 编排指南]]
 - [[12_Architecture_Infrastructure/AI_Stack_Exclusive_Tools_Guide|AI Stack 专属运维工具指南]]
-- [[12_Architecture_Infrastructure/CDI_Deep_Dive|CDI: 容器设备接口标准]]
+- [[12_Architecture_Infrastructure/Hardware_Compute/CDI_Deep_Dive|CDI: 容器设备接口标准]]
 - [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive|阿里云 AI Stack 软硬一体推理平台]]
 - [[_concepts/oci-runtime|OCI Runtime]]

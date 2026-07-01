@@ -5,8 +5,13 @@ tags: ["together-ai", "inference", "cloud-api", "open-source", "llm", "deploymen
 summary: "> **一句话理解**: Together AI 是专注于开源大模型的云端推理平台——模型选择最广、价格有竞争力、OpenAI 兼容，是开源模型云端部署的重要选择。"
 created: "2026-06-15"
 updated: "2026-06-15"
----
+tier: supporting
+aliases:
+  - "Together Ai Deep Dive"
+  - "Together AI Deep Dive"
+  - Together_AI_Deep_Dive
 
+---
 # Together AI: 开源模型推理云平台
 
 > **一句话理解**: Together AI 是专注于开源大模型的云端推理平台——模型选择最广、价格有竞争力、OpenAI 兼容，是开源模型云端部署的重要选择。
@@ -430,5 +435,5 @@ Together AI 生产使用 checklist
 - [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive.md|vLLM_Deep_Dive]]
 - [[10_Deployment_Inference/Inference_Engines/LLM_Inference_Engine_Selection_Guide.md|LLM_Inference_Engine_Selection_Guide]]
 - [[10_Deployment_Inference/Cost/LLM_Cost_Optimization.md|LLM_Cost_Optimization]]
-- [[14_AI_Gateway/LiteLLM_Deep_Dive.md|LiteLLM_Deep_Dive]]
-- [[14_AI_Gateway/AI_Gateway_2026.md|AI_Gateway_2026]]
+- [[12_Architecture_Infrastructure/AI_Gateway/LiteLLM_Deep_Dive|LiteLLM_Deep_Dive]]
+- [[12_Architecture_Infrastructure/AI_Gateway/AI_Gateway_2026|AI_Gateway_2026]]

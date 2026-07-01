@@ -5,8 +5,23 @@ tags: ["computer-architecture", "gpu", "cpu", "tpu", "ai-hardware"]
 summary: "计算机体系结构是 AI 训练与推理的物理基础——从 CPU 到 GPU 到 TPU，硬件架构决定了 AI 系统的性能天花板。"
 created: 2026-06-12
 updated: 2026-06-12
+tier: core
+aliases:
+  - "Computer Architecture"
+  - "computer architecture"
+lifecycle: stable
+provenance:
+  extracted: 0.70
+  inferred: 0.25
+  ambiguous: 0.05
+base_confidence: 0.75
+sources:
+  - 01_Fundamentals/AI_Hardware/AI_Hardware_2026.md
+  - 12_Architecture_Infrastructure/Architecture_Overview/AI_Infrastructure_2026
+relationships:
+  - target: "_concepts/ai-hardware"
+    type: related_to
 ---
-
 # 计算机体系结构 (Computer Architecture)
 
 > 计算机体系结构是 AI 训练与推理的物理基础——从 CPU 到 GPU 到 TPU，硬件架构决定了 AI 系统的性能天花板。
@@ -39,4 +54,4 @@ CPU (通用计算) → GPU (并行矩阵运算) → TPU (张量专用) → NPU (
 
 - [[01_Fundamentals/AI_Hardware/AI_Hardware_2026]] — AI 硬件 2026
 - [[10_Deployment_Inference/Quantization_Techniques]] — 量化技术
-- [[12_Architecture_Infrastructure/AI_Infrastructure_2026]] — AI 基础设施 2026
+- [[12_Architecture_Infrastructure/Architecture_Overview/AI_Infrastructure_2026]] — AI 基础设施 2026

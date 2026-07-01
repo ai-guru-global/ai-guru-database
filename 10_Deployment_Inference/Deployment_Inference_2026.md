@@ -5,8 +5,12 @@ tags: ["deployment", "inference", "serving", "vllm", "model-deployment"]
 summary: "> **一句话秒懂**: 2026 年的 AI 推理部署 = 高性能推理引擎 + 极致压缩 + 智能调度 + 边缘部署，让大模型跑得快、跑得省、跑得稳。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: core
+aliases:
+  - "Deployment Inference 2026"
+  - Deployment_Inference_2026
 
+---
 # 部署推理 2026 趋势
 
 > **一句话秒懂**: 2026 年的 AI 推理部署 = 高性能推理引擎 + 极致压缩 + 智能调度 + 边缘部署，让大模型跑得快、跑得省、跑得稳。
@@ -1188,12 +1192,12 @@ kubectl logs -f deployment/vllm-deployment -n llm
 
 ### 相关文档
 
-- [vLLM 深度解析](./vLLM_Deep_Dive.md)
-- [TensorRT-LLM 深度解析](./TensorRT_LLM_Deep_Dive.md)
-- [Ollama 深度解析](./Ollama_Deep_Dive.md)
-- [llama.cpp 深度解析](./llama_cpp_Deep_Dive.md)
-- [AI Gateway 对比 2026](../12_Architecture_Infrastructure/AI_Gateway/AI_Gateway_Comparison_2026.md)
-- [API 设计 for AI](../93_Tools/API_Design_for_AI.md)
+- [vLLM 深度解析](10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive.md)
+- [TensorRT-LLM 深度解析](10_Deployment_Inference/Inference_Engines/TensorRT_LLM_Deep_Dive.md)
+- [Ollama 深度解析](10_Deployment_Inference/Inference_Engines/Ollama_Deep_Dive.md)
+- [llama.cpp 深度解析](10_Deployment_Inference/Inference_Engines/llama_cpp_Deep_Dive.md)
+- [AI Gateway 对比 2026](12_Architecture_Infrastructure/AI_Gateway/AI_Gateway_Comparison_2026.md)
+- [API 设计 for AI](93_Templates/API_Design_for_AI.md)
 
 ## Related
 

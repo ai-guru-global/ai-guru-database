@@ -9,8 +9,11 @@ created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
 tier: supporting
----
+aliases:
+  - "Illustrated Transformer"
+  - "illustrated transformer"
 
+---
 # 图解 Transformer (Jay Alammar)
 
 > **一句话理解**: Jay Alammar 的经典图解 Transformer 文章,用可视化方式解释自注意力、编码器-解码器等核心概念,Transformer 入门必读。
@@ -33,5 +36,5 @@ tier: supporting
 
 这篇文章是理解 Transformer 的最佳入门资料之一,被全球 AI 课程广泛引用。作者的可视化风格让复杂的数学概念变得直观易懂。
 
-> **关联**: -> [[20_Papers/Architecture/Attention_Is_All_You_Need_Deep_Dive|Attention 论文精读]] | [[05_NLP_LLMs/Transformer_Architecture|Transformer 架构]]
+> **关联**: -> [[20_Papers_and_Research/Architecture/Attention_Is_All_You_Need_Deep_Dive|Attention 论文精读]] | [[05_NLP_LLMs/Transformer_Architecture|Transformer 架构]]
 

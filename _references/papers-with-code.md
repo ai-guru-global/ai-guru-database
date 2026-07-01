@@ -9,8 +9,11 @@ created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
 tier: supporting
----
+aliases:
+  - "Papers With Code"
+  - "papers with code"
 
+---
 # Papers with Code
 
 > **一句话理解**: 论文+代码+排行榜的综合平台,追踪各领域 SOTA 结果,是 AI 研究者的核心工具。

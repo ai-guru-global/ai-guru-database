@@ -6,7 +6,13 @@ tags:
 - ai-coding
 created: 2026-06-12
 category: 16-ai-coding-tools-opencode
-summary: ""
+tier: peripheral
+aliases:
+  - "Opencode Advanced Topics"
+  - "opencode advanced topics"
+
+updated: 2026-06-30
+summary: "进阶话题与生产最佳实践 — 专题文档"
 ---
 title: 进阶话题与生产最佳实践
 description: '# 进阶话题与生产最佳实践'

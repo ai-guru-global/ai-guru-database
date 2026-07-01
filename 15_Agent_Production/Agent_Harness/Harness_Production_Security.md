@@ -9,8 +9,12 @@ tags:
   - security
   - evaluation
 source: "_sources/yeasy/harness_engineering_guide/"
----
+tier: peripheral
+aliases:
+  - "Harness Production Security"
+  - Harness_Production_Security
 
+---
 # Harness Production & Security (Harness 生产加固与安全体系)
 
 > 本文从《智能体 Harness 工程指南》Part 3-4（第 8-14 章）提炼编排引擎、MCP 集成、生产加固、可靠性工程、安全体系和评估方法论的工程实践。

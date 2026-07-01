@@ -5,8 +5,12 @@ tags: ["mathematics", "linear-algebra", "calculus", "probability", "optimization
 summary: "> **一句话理解**: 线性代数提供数据表示，微积分驱动优化，概率论处理不确定性，信息论度量信息，优化理论串联一切——这五大数学支柱共同支撑起现代 AI 的全部算法。"
 created: 2026-06-12
 updated: 2026-06-12
----
+tier: supporting
+aliases:
+  - "Math Foundations"
+  - Math_Foundations
 
+---
 # AI 数学基础 (Mathematics for AI)
 
 > **一句话理解**: 线性代数提供数据表示，微积分驱动优化，概率论处理不确定性，信息论度量信息，优化理论串联一切——这五大数学支柱共同支撑起现代 AI 的全部算法。

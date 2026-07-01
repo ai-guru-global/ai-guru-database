@@ -5,8 +5,13 @@ tags: ["diffusers", "computer-vision", "huggingface", "stable-diffusion", "flux"
 summary: "> **一句话理解**: `diffusers` 是计算机视觉生成领域的“Transformers 库”。无论是经典的 Stable Diffusion、最强的 FLUX.1，还是类似 Sora 的视频生成模型，都基于这套 API 运行。"
 created: "2026-06-12"
 updated: "2026-06-12"
----
+tier: supporting
+aliases:
+  - "Hf Diffusers Practical Guide"
+  - "HF Diffusers Practical Guide"
+  - HF_Diffusers_Practical_Guide
 
+---
 # Hugging Face Diffusers 实战：从图像到视频生成的底层引擎
 
 > **一句话理解**: 就像 `transformers` 库统治了 NLP 一样，`diffusers` 是计算机视觉生成（图像/视频）领域的绝对霸主。无论是经典的 Stable Diffusion (SD 1.5, SDXL)、开源天花板 FLUX.1，还是类似 Sora 的架构（如 LTX-Video），都通过这套统一的 API 运行。

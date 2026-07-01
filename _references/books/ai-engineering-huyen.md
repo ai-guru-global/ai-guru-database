@@ -9,8 +9,11 @@ created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
 tier: supporting
----
+aliases:
+  - "Ai Engineering Huyen"
+  - "ai engineering huyen"
 
+---
 # AI Engineering
 
 > **一句话理解**: AI 工程实践指南,基于基础模型构建应用.作者:Chip Huyen.

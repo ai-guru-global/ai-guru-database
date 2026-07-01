@@ -3,8 +3,12 @@ title: "Claude Code 深度解析：CLI、SDK、IDE 与自动化工作流"
 tags: [claude, anthropic, ai-coding, claude-code, agent, sdk]
 source: yeasy/claude_guide
 created: 2026-06-16
----
+tier: peripheral
+aliases:
+  - "Claude Code Deep Dive"
+  - Claude_Code_Deep_Dive
 
+---
 # Claude Code 深度解析：CLI、SDK、IDE 与自动化工作流
 
 > 本页面提炼自《Claude 技术指南》第七章，覆盖 Claude Code 的安装运维、SDK 集成、IDE 工作流、自主编码实践、高阶特性、Routines 和 Cowork。

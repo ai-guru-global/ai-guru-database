@@ -9,8 +9,12 @@ created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
 tier: supporting
----
+aliases:
+  - "Instructor Overview"
+  - "instructor overview"
+  - instructor_overview
 
+---
 # Instructor 结构化输出库概览
 
 > **一句话理解**: 最流行的 LLM 结构化输出库,用 Pydantic 定义输出 schema,自动重试确保可靠。
@@ -54,3 +58,7 @@ user = client.chat.completions.create(
 | 表单填写 | 自然语言 -> 结构化表单 |
 
 > **关联**: -> [[05_NLP_LLMs/Structured_Output_Guide|结构化输出指南]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
+
+## Related
+
+- [[05_NLP_LLMs/README|04 自然语言处理与大模型 (NLP & LLMs)]]

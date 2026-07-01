@@ -10,9 +10,13 @@ sources:
 created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
-tier: core
----
+tier: supporting
+aliases:
+  - "Ai Observability Guide 2026"
+  - "AI Observability Guide 2026"
+  - AI_Observability_Guide_2026
 
+---
 # AI 可观测性 2026 完全指南
 
 > **一句话理解**: LLM 应用的可观测性体系:追踪、监控、评估、成本分析,含 Langfuse/LangSmith/Helicone 等工具对比。
@@ -113,5 +117,5 @@ LLM 应用
 4. **定期审查**: 每周审查低分和高成本的请求
 5. **关联业务指标**: 将 LLM 指标与业务指标关联
 
-> **关联**: -> [[13_AI_Ops|AI Ops]] | [[13_AI_Ops/LangSmith_Deep_Dive|LangSmith]] | [[13_AI_Ops/Helicone_Deep_Dive|Helicone]] | [[13_AI_Ops/Phoenix_Deep_Dive|Phoenix]]
+> **关联**: -> [[13_AI_Ops/README|AI Ops]] | [[13_AI_Ops/LangSmith_Deep_Dive|LangSmith]] | [[13_AI_Ops/Helicone_Deep_Dive|Helicone]] | [[13_AI_Ops/Phoenix_Deep_Dive|Phoenix]]
 

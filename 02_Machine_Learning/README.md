@@ -5,8 +5,9 @@ tags: ["machine-learning", "supervised", "unsupervised"]
 summary: "本章介绍深度学习之前的主流机器学习方法，包括监督学习（分类/回归/集成）、无监督学习（聚类/降维）和特征工程。这些技术至今仍在工业界广泛应用，是理解 AI 建模思路的重要基础。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
 
+---
 # 02 经典机器学习 (Classical Machine Learning)
 
 本章介绍深度学习之前的主流机器学习方法，包括监督学习（分类/回归/集成）、无监督学习（聚类/降维）和特征工程。这些技术至今仍在工业界广泛应用，是理解 AI 建模思路的重要基础。
@@ -136,3 +137,4 @@ updated: 2026-05-31
 - [[02_Machine_Learning/ML_Frameworks/xgboost_overview|XGBoost]]
 - [[02_Machine_Learning/ML_Frameworks/lightgbm_overview|LightGBM]]
 - [[02_Machine_Learning/ML_Frameworks/catboost_overview|CatBoost]]
+- [[02_Machine_Learning/kaggle_overview|Kaggle 数据科学竞赛平台概览]]

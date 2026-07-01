@@ -3,8 +3,12 @@ title: "上下文工程技术模式与深度实践"
 tags: [context-engineering, prompt-engineering, llm, rag, memory-architecture, graph-rag, anti-patterns]
 source: yeasy/context_engineering_guide
 created: 2026-06-16
----
+tier: peripheral
+aliases:
+  - "Context Engineering Patterns"
+  - Context_Engineering_Patterns
 
+---
 # 上下文工程技术模式与深度实践
 
 > 本页是 [[Context_Engineering_Guide]] 的技术深度补充，聚焦具体实现模式、架构决策和反模式治理。

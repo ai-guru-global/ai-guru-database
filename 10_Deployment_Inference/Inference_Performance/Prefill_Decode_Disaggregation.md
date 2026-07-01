@@ -5,8 +5,12 @@ tags: [inference, prefill, decode, disaggregated-serving, kv-cache, performance]
 summary: "> 把 LLM 推理的 Prefill 和 Decode 阶段拆到不同资源上执行，是长上下文与高并发场景的关键优化。"
 created: 2026-06-15
 updated: 2026-06-15
----
+tier: supporting
+aliases:
+  - "Prefill Decode Disaggregation"
+  - Prefill_Decode_Disaggregation
 
+---
 # Prefill-Decode 分离（Disaggregated Serving）
 
 > 把 prefill 和 decode 拆到不同的 GPU/实例上，让两个阶段各自用最合适的资源配置。

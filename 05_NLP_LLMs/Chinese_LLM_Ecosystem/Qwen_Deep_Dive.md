@@ -5,8 +5,12 @@ tags: [qwen, alibaba, chinese-llm, moe, hybrid-thinking, multimodal, open-source
 summary: "全面剖析阿里通义千问 Qwen 系列从 Qwen-7B 到 Qwen3-235B-A22B 的完整技术演进：架构设计、混合思维模式、M-RoPE 多模态位置编码、动态分辨率、后训练四阶段及开源生态。2026 年 6 月更新补充 Qwen3-2507 开源系列 (1M 上下文、Instruct/Thinking 双变体) 与 Qwen3.7-Max 2026 闭源旗舰 (数学基准 HMMT Feb 2026 领先)。"
 created: 2026-06-01
 updated: 2026-06-16
----
+tier: supporting
+aliases:
+  - "Qwen Deep Dive"
+  - Qwen_Deep_Dive
 
+---
 # Qwen (通义千问) 技术深度解析
 
 ## 一句话理解
@@ -1859,7 +1863,7 @@ Qwen 3.7 系列全面支持以下高级功能：
 ### 训练与微调
 
 - [Fine-tuning Techniques (微调技术)](../Fine_tuning_Techniques/Fine_tuning_Techniques.md) — LoRA, QLoRA, PEFT 等微调方法
-- [PEFT 2026](../Fine_tuning_Techniques/PEFT_2026/PEFT_2026.md) — 参数高效微调最新进展
+- [PEFT 2026](../Fine_tuning_Techniques/PEFT_2026.md) — 参数高效微调最新进展
 
 ---
 

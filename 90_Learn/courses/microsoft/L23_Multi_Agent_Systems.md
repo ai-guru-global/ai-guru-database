@@ -6,8 +6,12 @@ summary: "从简单个体如何通过交互涌现出复杂集体行为的角度�
 source_url: "https://raw.githubusercontent.com/microsoft/AI-For-Beginners/main/lessons/6-Other/23-MultiagentSystems/README.md"
 created: "2026-06-12"
 updated: "2026-06-12"
----
+tier: supporting
+aliases:
+  - "L23 Multi Agent Systems"
+  - L23_Multi_Agent_Systems
 
+---
 # L23 - 多智能体系统
 
 > **一句话理解**: 复杂智能或复杂行为不一定来自单个复杂大脑，也可以由许多简单个体（智能体，Agent）在环境中交互而**涌现**出来。

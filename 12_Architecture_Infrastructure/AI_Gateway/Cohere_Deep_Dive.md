@@ -5,8 +5,12 @@ tags: ["ai-gateway", "api-management", "routing", "litellm"]
 summary: "> **一句话理解**: Cohere 是企业 AI 平台——顶级 embedding 模型、多语言支持、语义搜索、Rerank 排序，企业级 AI 基础设施。"
 created: "2026-05-31"
 updated: "2026-05-31"
----
+tier: supporting
+aliases:
+  - "Cohere Deep Dive"
+  - Cohere_Deep_Dive
 
+---
 # Cohere: 企业 AI 平台
 
 > **一句话理解**: Cohere 是企业 AI 平台——顶级 embedding 模型、多语言支持、语义搜索、Rerank 排序，企业级 AI 基础设施。

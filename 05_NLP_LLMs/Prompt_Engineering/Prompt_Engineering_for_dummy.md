@@ -5,8 +5,13 @@ tags: ["nlp", "llm", "transformer", "gpt", "bert"]
 summary: '> **一句话秒懂**: 提示词工程就像学会"问对问题"——你问得越清楚,AI 回答得越好。这是零成本让 ChatGPT 变聪明的技巧!'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Prompt Engineering For Dummy"
+  - "Prompt Engineering for dummy"
+  - Prompt_Engineering_for_dummy
 
+---
 # 提示词工程 - 小白版
 
 > **一句话秒懂**: 提示词工程就像学会"问对问题"——你问得越清楚,AI 回答得越好。这是零成本让 ChatGPT 变聪明的技巧!

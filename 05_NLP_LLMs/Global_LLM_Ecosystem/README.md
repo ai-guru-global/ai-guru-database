@@ -5,8 +5,9 @@ tags: ["openai", "google", "gemini", "anthropic", "claude", "meta", "llama", "mi
 summary: "系统梳理国际五大前沿大模型厂商（OpenAI、Google DeepMind、Anthropic、Meta、Mistral AI）的技术路线、模型矩阵、核心创新与 Benchmark 对比，对标 HuggingFace 和 ModelScope 信息量。"
 created: 2026-06-02
 updated: 2026-06-02
----
+tier: supporting
 
+---
 # 国际大模型生态全景 (Global LLM Ecosystem)
 
 > **一句话理解**: 国际五大 AI 巨头就像五大学派——OpenAI 靠 RLHF 开创了 ChatGPT 时代，Google 用原生多模态和百万 Token 上下文构筑 Gemini 帝国，Anthropic 以安全为信仰打造 Constitutional AI，Meta 用开源 LLaMA 点燃社区革命，Mistral 用欧洲工匠精神以小博大——它们共同定义了全球大模型的技术天花板。
@@ -190,8 +191,8 @@ flowchart TD
 - **必修**: [../LLM_Architectures/LLM_Architectures.md](../LLM_Architectures/LLM_Architectures.md) — Transformer、MoE、GQA 基础
 - **推荐**: [../Reasoning_Models/o1_Class_Reasoning_Models.md](../Reasoning_Models/o1_Class_Reasoning_Models.md) — 推理模型原理
 - **推荐**: [../LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md](../LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md) — MoE 架构详解
-- **可选**: [../../20_Papers/GPT3_Deep_Dive.md](../../20_Papers/GPT3_Deep_Dive.md) — GPT-3 论文解读
-- **可选**: [../../20_Papers/LLaMA_Deep_Dive.md](../../20_Papers/LLaMA_Deep_Dive.md) — LLaMA 论文解读
+- **可选**: [../../20_Papers_and_Research/GPT3_Deep_Dive.md](../../20_Papers_and_Research/Scaling/GPT3_Deep_Dive.md) — GPT-3 论文解读
+- **可选**: [../../20_Papers_and_Research/LLaMA_Deep_Dive.md](../../20_Papers_and_Research/Architecture/LLaMA_Deep_Dive.md) — LLaMA 论文解读
 
 ---
 

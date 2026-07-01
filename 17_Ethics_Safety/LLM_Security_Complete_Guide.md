@@ -14,8 +14,13 @@ tags:
   - Privacy-Attacks
 source: yeasy/ai_security_guide
 created: 2026-06-16
----
+tier: peripheral
+aliases:
+  - "Llm Security Complete Guide"
+  - "LLM Security Complete Guide"
+  - LLM_Security_Complete_Guide
 
+---
 # LLM 安全完全指南：威胁全景与攻击技术
 
 > 本文从 [[大模型安全权威指南]] 第一、二部分蒸馏而来，覆盖 LLM 安全基础、威胁全景、安全框架（OWASP / NIST / MITRE ATLAS）、以及核心攻击技术（Prompt Injection、Jailbreak、Data Poisoning、Backdoor、Model Extraction、Privacy Attacks、Adversarial Robustness、PEFT Security、Malicious Artifacts）。

@@ -5,8 +5,12 @@ tags: ["architecture", "infrastructure", "kubernetes", "high-availability"]
 summary: '> **一句话理解**: 多租户架构是 AI 服务的"公寓楼"——在共享基础设施上为不同租户提供隔离、安全、可计费的服务，实现资源效率与租户隔离的平衡。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Multi Tenant Architecture"
+  - Multi_Tenant_Architecture
 
+---
 # AI 系统多租户架构 (Multi-Tenant Architecture for AI Systems)
 
 > **一句话理解**: 多租户架构是 AI 服务的"公寓楼"——在共享基础设施上为不同租户提供隔离、安全、可计费的服务，实现资源效率与租户隔离的平衡。
@@ -1160,8 +1164,8 @@ class TenantAccessControl:
 
 ## Related
 
-- [[12_Architecture_Infrastructure/AI_Infrastructure_2026.md|AI_Infrastructure_2026]]
+- [[12_Architecture_Infrastructure/Architecture_Overview/AI_Infrastructure_2026|AI_Infrastructure_2026]]
 - [[12_Architecture_Infrastructure/Architecture-in-nutshell.md|Architecture-in-nutshell]]
 - [[12_Architecture_Infrastructure/Architecture_Infrastructure_for_dummy.md|Architecture_Infrastructure_for_dummy]]
-- [[12_Architecture_Infrastructure/Spring_AI_Architecture.md|Spring_AI_Architecture]]
+- [[12_Architecture_Infrastructure/Architecture_Overview/Spring_AI_Architecture|Spring_AI_Architecture]]
 - [[_concepts/llm-infrastructure.md|llm-infrastructure]]

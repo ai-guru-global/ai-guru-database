@@ -9,9 +9,13 @@ sources:
 created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
-tier: core
----
+tier: supporting
+aliases:
+  - "Nvidia Amd Gpu Deep Dive"
+  - "NVIDIA AMD GPU Deep Dive"
+  - NVIDIA_AMD_GPU_Deep_Dive
 
+---
 # NVIDIA & AMD 数据中心 GPU 深度解析 2026
 
 > **一句话理解**: NVIDIA H200/B200 主导训练和推理市场，AMD MI300X/MI350 以显存优势切入超大模型推理和性价比训练场景。
@@ -1080,4 +1084,4 @@ AMD 已公布 CDNA 架构路线图, 但 MI400/MI500 系列尚未正式发布:
 
 **结论**: MI350X 在性价比上全面领先, 但 B200 生态更成熟
 
-> **关联**: -> [[01_Fundamentals/AI_Hardware/Chinese_AI_Chips_Deep_Dive|国产 AI 芯片]] | [[07_Model_Training|模型训练]] | [[10_Deployment_Inference|部署推理]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[01_Fundamentals/AI_Hardware/Chinese_AI_Chips_Deep_Dive|国产 AI 芯片]] | [[07_Model_Training/README|模型训练]] | [[10_Deployment_Inference/README|部署推理]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]

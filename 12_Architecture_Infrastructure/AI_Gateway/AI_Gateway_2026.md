@@ -5,8 +5,13 @@ tags: ["ai-gateway", "api-management", "routing", "litellm"]
 summary: "> **一句话理解**: AI Gateway 是企业 AI 能力的统一入口，通过智能路由、安全管控、成本优化和可观测性，将分散的 AI 模型服务整合为可管控的生产系统。"
 created: "2026-05-31"
 updated: "2026-05-31"
----
+tier: supporting
+aliases:
+  - "Ai Gateway 2026"
+  - "AI Gateway 2026"
+  - AI_Gateway_2026
 
+---
 # AI Gateway 2026: 企业级 AI 网关架构与实践
 
 > **一句话理解**: AI Gateway 是企业 AI 能力的统一入口，通过智能路由、安全管控、成本优化和可观测性，将分散的 AI 模型服务整合为可管控的生产系统。
@@ -1873,4 +1878,4 @@ Phase 5: 高级特性 (持续)
 
 ## Related
 
-- [[14_AI_Gateway/LiteLLM_Deep_Dive.md|LiteLLM_Deep_Dive]]
+- [[12_Architecture_Infrastructure/AI_Gateway/LiteLLM_Deep_Dive|LiteLLM_Deep_Dive]]

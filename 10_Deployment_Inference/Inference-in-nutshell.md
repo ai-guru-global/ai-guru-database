@@ -5,8 +5,12 @@ tags: ["deployment", "inference", "serving", "vllm"]
 summary: "> 🎯 **目标**：理解如何在生产环境中使用训练好的 AI 模型进行预测。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: core
+aliases:
+  - "Inference In Nutshell"
+  - "Inference in nutshell"
 
+---
 # 模型推理速成指南
 
 > 🎯 **目标**：理解如何在生产环境中使用训练好的 AI 模型进行预测。
@@ -640,8 +644,8 @@ response = client.chat.completions.create(
 - [模型训练](../07_Model_Training/Model-Training-in-nutshell.md) - 模型是如何训练的
 - [RAG 系统](../14_RAG_Systems/RAG-in-nutshell.md) - 带检索的推理
 - [MLOps 流水线](../MLOps_Pipeline/) - 自动化部署
-- [SRE 实践](../13_AI_Ops/SRE_for_AI_Systems.md) - SLI/SLO 与可靠性工程
-- [可观测性](../11_MLOps_Pipeline/AI_Observability_Guide.md) - AI 系统监控与追踪
+- [SRE 实践](../13_AI_Ops/SRE_Reliability/SRE_for_AI_Systems.md) - SLI/SLO 与可靠性工程
+- [可观测性](../11_MLOps_Pipeline/Observability/AI_Observability_Guide.md) - AI 系统监控与追踪
 
 ## Related
 

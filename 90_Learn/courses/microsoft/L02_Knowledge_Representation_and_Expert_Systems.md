@@ -6,8 +6,13 @@ summary: "本课介绍符号 AI 的核心：如何将人类知识编码为计算
 source_url: "https://raw.githubusercontent.com/microsoft/AI-For-Beginners/main/lessons/2-Symbolic/README.md"
 created: "2026-06-12"
 updated: "2026-06-12"
----
+tier: supporting
+aliases:
+  - "L02 Knowledge Representation And Expert Systems"
+  - "L02 Knowledge Representation and Expert Systems"
+  - L02_Knowledge_Representation_and_Expert_Systems
 
+---
 # L02 - 知识表示与专家系统
 
 > **一句话理解**：AI 不仅要靠数据学习，也可以把人类已经总结好的知识显式表示出来，让计算机像专家一样推理、解释和决策。

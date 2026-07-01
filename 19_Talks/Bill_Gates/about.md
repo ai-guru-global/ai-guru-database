@@ -5,8 +5,11 @@ tags: ["talks", "speeches", "insights", "leaders"]
 summary: "**身份**: 微软联合创始人、慈善家。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - About
 
+---
 # Bill Gates 简介 (Bill Gates)
 
 - **身份**: 微软联合创始人、慈善家。

@@ -23,8 +23,10 @@ lifecycle: stable
 tier: core
 created: 2026-06-16
 updated: 2026-06-16
----
+aliases:
+  - Lmdeploy
 
+---
 # LMDeploy
 
 > 国产 LLM 推理的「双引擎跑车」——TurboMind 高性能 + PyTorch 灵活，中文场景友好。

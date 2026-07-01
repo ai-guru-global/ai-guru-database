@@ -17,8 +17,12 @@ provenance:
 base_confidence: 0.72
 lifecycle: draft
 lifecycle_changed: 2026-06-01
----
+tier: core
+aliases:
+  - "Reasoning Models Agents"
+  - "reasoning models agents"
 
+---
 # 推理模型 × Agent: 当慢思考遇上自主行动
 
 ## The Connection

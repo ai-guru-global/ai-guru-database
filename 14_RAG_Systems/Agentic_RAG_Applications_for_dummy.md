@@ -5,8 +5,13 @@ tags: ["agentic-rag", "text2sql", "code-generation", "rag", "agent", "for-dummy"
 summary: "> **一句话理解**: Agentic RAG 让 AI 像侦探一样反复查资料再回答，Text2SQL 让 AI 当数据库翻译官，代码生成工作流让 AI 参与从需求到上线的全过程——三者都是把大模型从‘聊天工具’变成‘能干活的助手’。"
 created: "2026-06-16"
 updated: "2026-06-16"
----
+tier: supporting
+aliases:
+  - "Agentic Rag Applications For Dummy"
+  - "Agentic RAG Applications for dummy"
+  - Agentic_RAG_Applications_for_dummy
 
+---
 # Agentic RAG 应用大白话：Agentic RAG、Text2SQL、代码生成工作流
 
 > **一句话理解**: Agentic RAG 让 AI 像侦探一样反复查资料再回答，Text2SQL 让 AI 当数据库翻译官，代码生成工作流让 AI 参与从需求到上线的全过程——三者都是把大模型从“聊天工具”变成“能干活的助手”。

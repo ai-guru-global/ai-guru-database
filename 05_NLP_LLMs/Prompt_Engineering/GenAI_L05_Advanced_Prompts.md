@@ -8,8 +8,13 @@ updated: "2026-06-12"
 source_url: "https://raw.githubusercontent.com/microsoft/generative-ai-for-beginners/main/translations/zh-CN/05-advanced-prompts/README.md"
 course: "Microsoft Generative AI for Beginners"
 lesson_number: 5
----
+tier: supporting
+aliases:
+  - "Genai L05 Advanced Prompts"
+  - "GenAI L05 Advanced Prompts"
+  - GenAI_L05_Advanced_Prompts
 
+---
 ## 学习目标
 
 完成本课后，你将能够：
@@ -723,7 +728,7 @@ if __name__ == '__main__':
 - [[90_Learn/courses/microsoft/microsoft_genai_for_beginners]] — 课程总览与章节映射
 - [[05_NLP_LLMs/Prompt_Engineering/GenAI_L04_Prompt_Engineering_Fundamentals]] — 第 4 课：提示工程基础
 - [[05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering]] — 提示工程深度指南
-- [[05_NLP_LLMs/god-tier-prompts_overview]] — 高级提示模式概览
+- [[05_NLP_LLMs/LLM_Products/god-tier-prompts_overview]] — 高级提示模式概览
 
 ## 课程导航
 

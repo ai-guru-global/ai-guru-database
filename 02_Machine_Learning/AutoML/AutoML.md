@@ -5,8 +5,11 @@ tags: ["machine-learning", "supervised", "unsupervised"]
 summary: '> **一句话秒懂**: AutoML 就是让机器学习自己学会怎么学——自动选模型、调参数、做特征工程，让你从"炼丹师"变成"指挥官"。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - Automl
 
+---
 # AutoML - 自动化机器学习
 
 > **一句话秒懂**: AutoML 就是让机器学习自己学会怎么学——自动选模型、调参数、做特征工程，让你从"炼丹师"变成"指挥官"。
@@ -898,5 +901,5 @@ study.optimize(
 - [[_concepts/automl]] — AutoML 概念总览
 - [[02_Machine_Learning/Supervised_Learning/Supervised_Learning]] — 监督学习：AutoML 自动选择的模型空间
 - [[02_Machine_Learning/Feature_Engineering/Feature_Engineering]] — 特征工程：自动化特征构造方法
-- [[07_Model_Training/Fine_tuning_Strategies]] — 微调策略：神经架构搜索 (NAS) 的应用
+- [[05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Strategies]] — 微调策略：神经架构搜索 (NAS) 的应用
 - [[11_MLOps_Pipeline/Experiment_Tracking/Experiment_Tracking_Deep_Dive]] — 实验追踪：AutoML 搜索过程管理

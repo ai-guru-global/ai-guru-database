@@ -5,8 +5,13 @@ tags: ["robotics", "vla", "embodied-ai", "training-pipeline", "sim-to-real", "da
 summary: "> **一句话理解**: VLA (Vision-Language-Action) 训练流水线是具身智能的“炼丹炉”——它将海量的视频数据、人类示范数据和仿真环境经验转化为机器人可执行的连贯动作指令。"
 created: 2026-06-04
 updated: 2026-06-04
----
+tier: supporting
+aliases:
+  - "Robot Vla Training Pipeline 2026"
+  - "Robot VLA Training Pipeline 2026"
+  - Robot_VLA_Training_Pipeline_2026
 
+---
 # Robot VLA Training Pipeline 2026: End-to-End Robotic Foundation Models
 
 > **一句话理解**: VLA (Vision-Language-Action) 训练流水线是具身智能的“炼丹炉”——它将海量的视频数据、人类示范数据和仿真环境经验转化为机器人可执行的连贯动作指令。
@@ -103,3 +108,4 @@ graph TD
 ---
 
 *Last updated: 2026-06-04*
+- [[06_Reinforcement_Learning/Robotics_Embodied_AI/README|具身智能与机器人概览]]

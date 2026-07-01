@@ -6,8 +6,12 @@ summary: "本课介绍预训练大语言模型（GPT 系列）的核心思想：
 source_url: "https://raw.githubusercontent.com/microsoft/AI-For-Beginners/main/lessons/5-NLP/20-LangModels/README.md"
 created: "2026-06-12"
 updated: "2026-06-12"
----
+tier: supporting
+aliases:
+  - "L20 Large Language Models"
+  - L20_Large_Language_Models
 
+---
 # L20 - 大语言模型提示编程与少样本任务
 
 > **一句话理解**：当模型在海量文本上学会“预测下一个词”，它也就学会了理解语言、知识与常识；我们只需写好提示，就能让它完成翻译、摘要、问答等多种任务。
@@ -117,7 +121,7 @@ print(tokenizer.decode(outputs[0], skip_special_tokens=True))
 
 - **不覆盖**：
   - Transformer 内部自注意力机制细节（见第 18 课与本库 [[05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution]]）。
-  - 大语言模型的微调、量化、部署与推理优化（见本库 [[07_Model_Training/Fine_tuning_Strategies]]、[[10_Deployment_Inference/Deployment_Inference_2026]]）。
+  - 大语言模型的微调、量化、部署与推理优化（见本库 [[05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Strategies]]、[[10_Deployment_Inference/Deployment_Inference_2026]]）。
   - 提示工程的高级技巧（链式思考、思维树、提示注入防御等，见本库 [[05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering]]）。
 
 - **延伸**：

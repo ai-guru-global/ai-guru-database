@@ -5,8 +5,11 @@ tags: ["talks", "speeches", "insights", "leaders"]
 summary: "**身份**: You.com 创始人，前 Salesforce 首席科学家，斯坦福 NLP 博士。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - About
 
+---
 # Richard Socher 简介 (Richard Socher)
 
 - **身份**: You.com 创始人，前 Salesforce 首席科学家，斯坦福 NLP 博士。

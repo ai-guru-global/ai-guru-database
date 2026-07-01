@@ -5,8 +5,12 @@ tags: ["hardware", "silicon-photonics", "npu", "gpu-evolution", "lpu", "bio-comp
 summary: "> **一句话理解**: 2026 年的 AI 硬件正在突破“电信号”和“冯诺依曼架构”的极限——通过光子互联解决通信带宽问题，通过专用加速器 LPU/NPU 实现推理效率的指数级提升。"
 created: 2026-06-04
 updated: 2026-06-04
----
+tier: supporting
+aliases:
+  - "Future Computing Hardware 2026"
+  - Future_Computing_Hardware_2026
 
+---
 # Future AI Hardware 2026: Silicon Photonics, LPUs, and Bio-computing
 
 > **一句话理解**: 2026 年的 AI 硬件正在突破“电信号”和“冯诺依曼架构”的极限——通过光子互联解决通信带宽问题，通过专用加速器 LPU/NPU 实现推理效率的指数级提升。
@@ -85,7 +89,7 @@ GPU 虽然强大，但并非为 LLM 的串行 Token 生成设计的。
 
 ## Related
 
-- [[12_Architecture_Infrastructure/AI_Infrastructure_2026]] — 基础设施现状
+- [[12_Architecture_Infrastructure/Architecture_Overview/AI_Infrastructure_2026]] — 基础设施现状
 - [[10_Deployment_Inference/Quantization/Quantization_Techniques_2026]] — 软件量化如何配合硬件优化
 - [[18_AI_Applications_Industry/AI_for_Science/Materials_Science_and_Energy_2026]] — AI 如何反哺新一代半导体材料研发
 - [[_concepts/computer-architecture]] — 计算机体系结构基础

@@ -5,8 +5,12 @@ tags: ["ai-coding", "code-generation", "cursor", "github-copilot", "coze"]
 summary: "> **一句话**: Coze 是字节跳动推出的 AI Bot 构建平台，支持基于公众号和知识库进行深度课题研究。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Coze Guide"
+  - Coze_Guide
 
+---
 # Coze 使用指南
 
 > **一句话**: Coze 是字节跳动推出的 AI Bot 构建平台，支持基于公众号和知识库进行深度课题研究。

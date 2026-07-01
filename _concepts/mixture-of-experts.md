@@ -28,8 +28,11 @@ lifecycle: stable
 tier: core
 created: 2026-06-04
 updated: 2026-06-04
----
+aliases:
+  - "Mixture Of Experts"
+  - "mixture of experts"
 
+---
 # 混合专家模型 (Mixture of Experts, MoE)
 
 > 参数规模爆炸但计算成本不变的秘密武器——用稀疏激活实现「大象的身材，猎豹的速度」。

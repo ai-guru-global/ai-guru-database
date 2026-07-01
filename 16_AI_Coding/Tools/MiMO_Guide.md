@@ -5,8 +5,13 @@ tags: ["ai-coding", "code-generation", "cursor", "github-copilot"]
 summary: "> **一句话**: MiMO 是高性价比的 AI 模型平台，年度 Standard 套餐 ¥1,045，与 Hermes Agent 搭配是极速优质编程组合，但年度额度已消耗三分之一需控制节奏。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Mimo Guide"
+  - "MiMO Guide"
+  - MiMO_Guide
 
+---
 # MiMO 使用指南
 
 > **一句话**: MiMO 是高性价比的 AI 模型平台，年度 Standard 套餐 ¥1,045，与 Hermes Agent 搭配是极速优质编程组合，但年度额度已消耗三分之一需控制节奏。

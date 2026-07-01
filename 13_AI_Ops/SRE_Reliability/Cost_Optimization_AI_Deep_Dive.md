@@ -5,8 +5,13 @@ tags: ["ai-ops", "cost-optimization", "finops", "inference", "quantization", "ca
 summary: '> **一句话理解**: LLM 推理成本优化的本质是在"质量、延迟、成本"三角中找最优解——用连续批处理榨干 GPU、用量化砍掉冗余精度、用缓存挡住重复请求、用模型路由让简单问题走小模型，四板斧组合通常能把单次推理成本压低 60-80%。'
 created: '2026-06-22'
 updated: '2026-06-22'
----
+tier: supporting
+aliases:
+  - "Cost Optimization Ai Deep Dive"
+  - "Cost Optimization AI Deep Dive"
+  - Cost_Optimization_AI_Deep_Dive
 
+---
 # LLM 推理成本优化深度指南 - 从 Token 到 GPU 的全方位降本
 
 > **一句话理解**: LLM 推理成本优化的本质是在"质量、延迟、成本"三角中找最优解——用连续批处理榨干 GPU、用量化砍掉冗余精度、用缓存挡住重复请求、用模型路由让简单问题走小模型，四板斧组合通常能把单次推理成本压低 60-80%。

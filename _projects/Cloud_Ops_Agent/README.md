@@ -5,6 +5,7 @@ tags: ["cloud-ops", "devops", "sre", "automation"]
 summary: '> **一句话理解**: 云运维 Agent 是专为云服务设计的"自动驾驶系统"——自主监控产品健康、诊断问题根因、执行变更操作，让云产品 7×24 小时稳定运行。'
 created: '2026-05-31'
 updated: '2026-05-31'
+tier: core
 ---
 
 # 云运维 Agent (Cloud Ops Agent)
@@ -79,3 +80,7 @@ updated: '2026-05-31'
 
 
 
+
+## 工单诊断入口
+
+- [[diagnosis-work-order-hub]] — 工单智能体远程诊断知识枢纽（Pod/网络/存储/GPU 四大决策树）

@@ -5,8 +5,12 @@ tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> ChatGPT、Claude、Gemini、Kimi、通义千问、DeepSeek 六大通用对话 Agent 的深度测评"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "General Chat Agent Benchmark"
+  - General_Chat_Agent_Benchmark
 
+---
 # 通用对话/知识 Agent 测评详情
 
 > ChatGPT、Claude、Gemini、Kimi、通义千问、DeepSeek 六大通用对话 Agent 的深度测评

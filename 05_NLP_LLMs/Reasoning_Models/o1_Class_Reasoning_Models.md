@@ -5,8 +5,13 @@ tags: [reasoning, o1, test-time-compute, inference-time-compute, chain-of-though
 summary: 深度解析 OpenAI o1/o3 类推理模型的技术原理，包括测试时计算扩展、隐式思维链、强化学习训练和推理时搜索策略。
 date: 2026-06-01
 created: 2026-06-12
----
+tier: peripheral
+aliases:
+  - "O1 Class Reasoning Models"
+  - "o1 Class Reasoning Models"
+  - o1_Class_Reasoning_Models
 
+---
 # o1-class Reasoning Models 深度解析
 
 ## 一句话理解

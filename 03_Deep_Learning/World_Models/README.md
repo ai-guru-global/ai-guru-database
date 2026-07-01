@@ -5,8 +5,9 @@ tags: ["deep-learning", "neural-networks", "backpropagation"]
 summary: "| 文档 | 内容 | 适用读者 |"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
 
+---
 # 世界模型 (World Models)
 
 ## 文档导航

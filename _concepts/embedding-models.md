@@ -1,6 +1,10 @@
 ---
 title: "嵌入模型 (Embedding Models)"
 category: -concepts
+aliases:
+  - "Embedding"
+  - "embedding-models"
+  - "嵌入模型"
 tags: ["embedding", "vector-representation", "semantic-search", "sentence-transformers", "reranking"]
 relationships:
   - target: "_concepts/rag-systems"
@@ -19,7 +23,7 @@ sources:
   - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
   - 14_RAG_Systems/Advanced_RAG/RAG_Advanced_2026.md
   - 14_RAG_Systems/Embeddings/Matryoshka_Representation_Learning_Deep_Dive.md
-  - 20_Papers/Efficiency/Matryoshka_Representation_Learning_Deep_Dive.md
+  - 20_Papers_and_Research/Efficiency/Matryoshka_Representation_Learning_Deep_Dive.md
   - 10_Deployment_Inference/Inference_Performance/Embedding_Model_Serving.md
   - _concepts/embeddings-vectors-mrl-plain.md
 summary: "嵌入模型将文本/图像映射为高维稠密向量，是语义搜索、RAG、聚类的基础。2026年主流方案包括 GTE、bge、E5-Mistral 等，维度从 384 到 4096。"

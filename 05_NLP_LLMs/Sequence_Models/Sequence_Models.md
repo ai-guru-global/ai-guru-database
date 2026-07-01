@@ -5,8 +5,12 @@ tags: ["nlp", "llm", "transformer", "gpt", "bert"]
 summary: '> **一句话理解**: 序列模型就像人类阅读文字——逐字逐句地读，并且记住前文来理解后文。RNN/LSTM/GRU 就是让计算机拥有这种"边读边记"能力的技术，是 Transformer 出现之前 NLP 的绝对主力。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Sequence Models"
+  - Sequence_Models
 
+---
 # 序列模型 (Sequence Models)
 
 > **一句话理解**: 序列模型就像人类阅读文字——逐字逐句地读，并且记住前文来理解后文。RNN/LSTM/GRU 就是让计算机拥有这种"边读边记"能力的技术，是 Transformer 出现之前 NLP 的绝对主力。
@@ -416,4 +420,4 @@ class Seq2SeqDecoder(nn.Module):
 - [[05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques.md|Fine_tuning_Techniques]]
 - [[05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques_for_dummy.md|Fine_tuning_Techniques_for_dummy]]
 - [[05_NLP_LLMs/Fine_tuning_Techniques/Model_Merging_2026.md|Model_Merging_2026]]
-- [[05_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/PEFT_2026.md|PEFT_2026]]
+- [[05_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026.md|PEFT_2026]]

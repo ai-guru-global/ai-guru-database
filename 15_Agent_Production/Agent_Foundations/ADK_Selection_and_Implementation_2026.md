@@ -5,8 +5,13 @@ tags: ["ai-agents", "adk", "sdk", "mcp", "a2a", "ucp", "implementation"]
 summary: "> **一句话理解**: 如果说协议（Protocol）是蓝图，那么 ADK（Agent Development Kit）就是施工工具箱——它让开发者无需从零编写网络报文，即可快速构建符合标准的智能体。"
 created: 2026-06-04
 updated: 2026-06-04
----
+tier: supporting
+aliases:
+  - "Adk Selection And Implementation 2026"
+  - "ADK Selection and Implementation 2026"
+  - ADK_Selection_and_Implementation_2026
 
+---
 # Agent Development Kits (ADK) 2026: Building with MCP, A2A, and UCP
 
 > **一句话理解**: 如果说协议（Protocol）是蓝图，那么 ADK（Agent Development Kit）就是施工工具箱——它让开发者无需从零编写网络报文，即可快速构建符合标准的智能体。
@@ -174,3 +179,5 @@ compute_job = UCPClient.submit(
 ---
 
 *Last updated: 2026-06-04*
+
+- [[15_Agent_Production/README|Agent 生产部署 (Agent Production)]]

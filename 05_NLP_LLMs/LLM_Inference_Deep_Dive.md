@@ -6,8 +6,13 @@ summary: "> 系统覆盖 LLM 推理全链路：解码策略（贪心/束搜索/�
 source: "_sources/yeasy/llm_internals/ (Ch9-11)"
 created: 2026-06-17
 updated: 2026-06-17
----
+tier: supporting
+aliases:
+  - "Llm Inference Deep Dive"
+  - "LLM Inference Deep Dive"
+  - LLM_Inference_Deep_Dive
 
+---
 # LLM 推理深度剖析：解码策略、推理优化与服务引擎
 
 > **推理三层次**: 解码策略决定"如何选词" → 推理优化决定"如何加速计算" → 服务引擎决定"如何高效调度请求"

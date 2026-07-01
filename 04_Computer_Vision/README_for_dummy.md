@@ -5,8 +5,13 @@ tags: ["computer-vision", "cnn", "image-processing"]
 summary: '> **一句话秒懂**: 计算机视觉就是让电脑"看懂"图片和视频——就像给机器装上了眼睛,能识别照片里有什么东西、在哪个位置、甚至还能自己画出新图片!'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Readme For Dummy"
+  - "README for dummy"
+  - README_for_dummy
 
+---
 # 05 计算机视觉 - 小白版 🖼️
 
 > **一句话秒懂**: 计算机视觉就是让电脑"看懂"图片和视频——就像给机器装上了眼睛,能识别照片里有什么东西、在哪个位置、甚至还能自己画出新图片!

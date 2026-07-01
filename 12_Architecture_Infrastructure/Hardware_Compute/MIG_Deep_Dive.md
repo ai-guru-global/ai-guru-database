@@ -5,8 +5,13 @@ tags: ["mig", "multi-instance-gpu", "gpu-partitioning", "nvidia", "a100", "h100"
 summary: "> **一句话理解**: MIG 是 GPU 的「硬件级刀片」——把一张 A100/H100 在硅片层面切成最多 7 个互相隔离的实例（GI/CI），每个实例独享显存与算力、故障互不影响，是大模型推理做多租户细粒度切分、榨干单卡利用率的事实标准。"
 created: "2026-06-17"
 updated: "2026-06-17"
----
+tier: supporting
+aliases:
+  - "Mig Deep Dive"
+  - "MIG Deep Dive"
+  - MIG_Deep_Dive
 
+---
 # MIG (Multi-Instance GPU): GPU 空间分片与多租户隔离深度解析
 
 > **一句话理解**: MIG 是 GPU 的「硬件级刀片」——把一张 A100/H100 在硅片层面切成最多 7 个互相隔离的实例（GI/CI），每个实例独享显存与算力、故障互不影响，是大模型推理做多租户细粒度切分、榨干单卡利用率的事实标准。
@@ -193,7 +198,7 @@ export CUDA_VISIBLE_DEVICES=MIG-4416c2c4-534e-4236-b26a-24692af597a1
 
 ### 5.2 容器中运行（透传 MIG）
 
-把单个 MIG 设备透传到容器，本质是把 `/dev/nvidia<id>` + 对应 CDI Spec 注入容器。**推荐走 CDI**（见 [[12_Architecture_Infrastructure/CDI_Deep_Dive]] §6）：
+把单个 MIG 设备透传到容器，本质是把 `/dev/nvidia<id>` + 对应 CDI Spec 注入容器。**推荐走 CDI**（见 [[12_Architecture_Infrastructure/Hardware_Compute/CDI_Deep_Dive]] §6）：
 
 ```bash
 # containerd / nerdctl via CDI（最现代、最干净）
@@ -276,7 +281,7 @@ spec:
 
 调度器只会把 Pod 放到还有该切片余量的节点。`mig-1g.10gb` 这种命名让 K8s 天然实现按规格排队与配额。
 
-> DRA（Dynamic Resource Allocation）是 MIG 在 K8s 上的未来形态——DRA 可表达「我要一张卡的某切片并声明其拓扑诉求」，比 device-plugin 的整数 extended resource 更灵活。见 [[12_Architecture_Infrastructure/DRA_Deep_Dive]]。
+> DRA（Dynamic Resource Allocation）是 MIG 在 K8s 上的未来形态——DRA 可表达「我要一张卡的某切片并声明其拓扑诉求」，比 device-plugin 的整数 extended resource 更灵活。见 [[12_Architecture_Infrastructure/Hardware_Compute/DRA_Deep_Dive]]。
 
 ---
 
@@ -329,7 +334,7 @@ CUDA_VISIBLE_DEVICES=4,2,MIG-${UUID},3,PPU-${UUID}  # 生效：GPU4,GPU2
 | 硬件要求 | A100/A30/H100/H200/B200 | 任意 | 特定卡 + license | 任意（NVIDIA/昇腾/海光） |
 | 典型场景 | 多租户强隔离推理、合规 | 内部团队共享 | 传统虚拟化 | 开发测试、提高 GPU 利用率 |
 
-**选型一句话**：**要强隔离 + 合规 → MIG；要超卖提利用率 → HAMi；要细粒度配额 → 两者可叠加（HAMi 在 MIG 切片之上再做多租户配额）。** HAMi 深度见 [[12_Architecture_Infrastructure/HAMi_Deep_Dive]]。
+**选型一句话**：**要强隔离 + 合规 → MIG；要超卖提利用率 → HAMi；要细粒度配额 → 两者可叠加（HAMi 在 MIG 切片之上再做多租户配额）。** HAMi 深度见 [[12_Architecture_Infrastructure/AI_Stack/HAMi_Deep_Dive]]。
 
 ---
 
@@ -337,9 +342,9 @@ CUDA_VISIBLE_DEVICES=4,2,MIG-${UUID},3,PPU-${UUID}  # 生效：GPU4,GPU2
 
 | 关联文档 | 关联点 |
 |---------|-------|
-| [[12_Architecture_Infrastructure/CDI_Deep_Dive]] | CDI 是把 MIG 切片透传进容器的标准 JSON 接口（§6 专讲 MIG 切片） |
-| [[12_Architecture_Infrastructure/DRA_Deep_Dive]] | DRA 是 MIG 在 K8s 的未来声明式分配方式 |
-| [[12_Architecture_Infrastructure/HAMi_Deep_Dive]] | HAMi 可在 MIG 之上做多租户 oversubscribe，互补 |
+| [[12_Architecture_Infrastructure/Hardware_Compute/CDI_Deep_Dive]] | CDI 是把 MIG 切片透传进容器的标准 JSON 接口（§6 专讲 MIG 切片） |
+| [[12_Architecture_Infrastructure/Hardware_Compute/DRA_Deep_Dive]] | DRA 是 MIG 在 K8s 的未来声明式分配方式 |
+| [[12_Architecture_Infrastructure/AI_Stack/HAMi_Deep_Dive]] | HAMi 可在 MIG 之上做多租户 oversubscribe，互补 |
 | [[_concepts/gpu-virtualization]] | MIG 在 GPU 虚拟化全景中的定位 |
 | [[_concepts/cdi]] / [[_concepts/dra]] / [[_concepts/gpu-operator]] | MIG 落地 K8s 的概念链 |
 | [[_synthesis/hami-cdi-dra]] | HAMi + CDI + DRA + MIG 的综合选型 |
@@ -351,9 +356,9 @@ CUDA_VISIBLE_DEVICES=4,2,MIG-${UUID},3,PPU-${UUID}  # 生效：GPU4,GPU2
 
 ## Related
 
-- [[12_Architecture_Infrastructure/CDI_Deep_Dive]] — MIG 切片如何被容器消费
-- [[12_Architecture_Infrastructure/DRA_Deep_Dive]] — K8s 设备分配的未来（含 MIG）
-- [[12_Architecture_Infrastructure/HAMi_Deep_Dive]] — GPU 超卖与多租户（与 MIG 互补）
+- [[12_Architecture_Infrastructure/Hardware_Compute/CDI_Deep_Dive]] — MIG 切片如何被容器消费
+- [[12_Architecture_Infrastructure/Hardware_Compute/DRA_Deep_Dive]] — K8s 设备分配的未来（含 MIG）
+- [[12_Architecture_Infrastructure/AI_Stack/HAMi_Deep_Dive]] — GPU 超卖与多租户（与 MIG 互补）
 - [[_concepts/gpu-virtualization]] — GPU 虚拟化全景
 - [[_synthesis/hami-cdi-dra]] — GPU 共享技术栈综合
 - [[_sources/aliyun/MIG使用指南_v2.1]] — 原始信源归档（阿里云 PPU MIG 指南 v2.1）

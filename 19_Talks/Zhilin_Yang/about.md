@@ -5,8 +5,11 @@ tags: [zhilin-yang, moonshot-ai, kimi, long-context, transformer-xl, xlnet, chin
 summary: "杨植麟是月之暗面创始人，Transformer-XL 和 XLNet 共同发明人，29 岁创业，坚信长上下文是通往 AGI 的关键。"
 created: 2026-06-12
 updated: 2026-06-12
----
+tier: supporting
+aliases:
+  - About
 
+---
 # 杨植麟 (Zhilin Yang) — 月之暗面创始人
 
 > **一句话概括**: 29 岁创办月之暗面，Transformer-XL 共同发明人，用"长上下文是 AGI 关键"的信念，打造了 Kimi 这款改变中国 AI 格局的产品。
@@ -83,3 +86,5 @@ updated: 2026-06-12
 ---
 
 *Last updated: 2026-06-12*
+
+- [[19_Talks/README|AI 名人演讲与观点 (Talks)]]

@@ -5,8 +5,12 @@ tags: ["ai-agents", "agent-framework", "production", "langgraph", "model-evaluat
 summary: "> Step-by-step process for comprehensive agent evaluation"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: core
+aliases:
+  - "Evaluation Workflow"
+  - Evaluation_Workflow
 
+---
 # Evaluation Workflow
 
 > Step-by-step process for comprehensive agent evaluation

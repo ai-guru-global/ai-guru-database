@@ -13,8 +13,13 @@ tags:
   - 训练配置
 created: 2026-06-03
 updated: 2026-06-03
----
+tier: supporting
+aliases:
+  - "Ms Swift Command Line Parameters"
+  - "ms swift Command Line Parameters"
+  - ms_swift_Command_Line_Parameters
 
+---
 # ms-swift 命令行参数完全参考手册
 
 > 本文档基于 ms-swift v4.x 官方文档，涵盖所有命令行参数。带🔥的为重要参数。
@@ -519,6 +524,6 @@ ENV:
 ## 相关文档
 
 - [[07_Model_Training/Distributed_Training/ms_swift_Deep_Dive|ms-swift 深度解析：魔搭大模型训练推理全链路框架]]
-- [[07_Model_Training/Fine_tuning_Strategies|微调策略完全指南]]
+- [[05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Strategies|微调策略完全指南]]
 - [[07_Model_Training/Distributed_Training/Distributed_Training_2026|分布式训练技术]]
 - [[07_Model_Training/Optimization/Training_Optimization_2026|训练优化技术]]

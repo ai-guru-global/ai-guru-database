@@ -5,9 +5,12 @@ tags: ["mlops", "retraining", "automation", "drift", "cicd", "continuous-trainin
 summary: "> **一句话理解**: 模型上线不是终点而是起点——当数据漂移让模型性能下降时，自动化再训练流水线能在人介入前，自动触发、训练、评估、灰度上线新模型。"
 created: 2026-06-15
 updated: 2026-06-15
-tier: core
----
+tier: supporting
+aliases:
+  - "Automated Retraining"
+  - Automated_Retraining
 
+---
 # 自动化再训练（Automated Retraining）
 
 > **一句话理解**: 模型上线不是终点而是起点——当数据漂移让模型性能下降时，自动化再训练流水线能在人介入前，自动触发、训练、评估、灰度上线新模型。

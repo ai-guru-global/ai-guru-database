@@ -5,8 +5,12 @@ tags: ["mlops", "ci-cd", "pipeline", "feature-store"]
 summary: "> **一句话理解**: 数据流水线编排就像铁路调度中心——协调各列火车（任务）的运行顺序、到站时间、异常处理，确保原材料（数据）按时、保质到达目的地（模型训练/推理）。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: core
+aliases:
+  - "Data Pipeline Orchestration"
+  - Data_Pipeline_Orchestration
 
+---
 # 数据流水线编排 (Data Pipeline Orchestration)
 
 > **一句话理解**: 数据流水线编排就像铁路调度中心——协调各列火车（任务）的运行顺序、到站时间、异常处理，确保原材料（数据）按时、保质到达目的地（模型训练/推理）。

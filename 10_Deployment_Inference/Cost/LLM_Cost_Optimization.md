@@ -8,9 +8,13 @@ sources:
 created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
-tier: supporting
----
+tier: core
+aliases:
+  - "Llm Cost Optimization"
+  - "LLM Cost Optimization"
+  - LLM_Cost_Optimization
 
+---
 # LLM 成本优化完全指南
 
 > **一句话理解**: 降低 LLM 应用成本的系统性方法:模型路由、Prompt 缓存、量化、批处理、供应商选择等策略。
@@ -104,5 +108,5 @@ OpenAI Batch API 享受 50% 折扣:
 4. **定期审计**: 每月分析成本构成,找出优化点
 5. **设置上限**: 防止异常请求导致成本飙升
 
-> **关联**: -> [[10_Deployment_Inference|部署推理]] | [[14_AI_Gateway|AI 网关]] | [[10_Deployment_Inference/Caching/Prompt_Caching_and_KV_Cache_Optimization|Prompt Caching]]
+> **关联**: -> [[10_Deployment_Inference/README|部署推理]] | [[12_Architecture_Infrastructure/AI_Gateway|AI 网关]] | [[10_Deployment_Inference/Caching/Prompt_Caching_and_KV_Cache_Optimization|Prompt Caching]]
 

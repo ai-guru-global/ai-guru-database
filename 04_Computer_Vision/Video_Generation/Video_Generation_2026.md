@@ -5,8 +5,12 @@ tags: ["computer-vision", "cnn", "image-processing"]
 summary: '> **一句话理解**: AI视频生成已经从"实验室玩具"进化为"生产力工具"——OpenAI的Sora在2026年3月停止服务，但Google Veo3、快手Kling 3.0、字节Seedance 2.0等竞品已经超越Sora，在质量、速度和成本上全面领先。'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Video Generation 2026"
+  - Video_Generation_2026
 
+---
 # AI 视频生成 2026 年全景报告
 
 > **一句话理解**: AI 视频生成已经从"实验室玩具"进化为"生产力工具"——OpenAI 的 Sora 在 2026 年 3 月停止服务，但 Google Veo3、快手 Kling 3.0、字节 Seedance 2.0 等竞品已经超越 Sora，在质量、速度和成本上全面领先。

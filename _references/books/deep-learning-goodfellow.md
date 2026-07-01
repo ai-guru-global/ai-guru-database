@@ -9,8 +9,11 @@ created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
 tier: supporting
----
+aliases:
+  - "Deep Learning Goodfellow"
+  - "deep learning goodfellow"
 
+---
 # Deep Learning
 
 > **一句话理解**: 深度学习花书,系统覆盖数学基础、深度网络、正则化、优化等.作者:Ian Goodfellow 等.

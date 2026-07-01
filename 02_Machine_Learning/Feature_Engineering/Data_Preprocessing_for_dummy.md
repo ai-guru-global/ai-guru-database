@@ -5,8 +5,13 @@ tags: ["data-preprocessing", "cleaning", "missing-values", "normalization", "beg
 summary: "面向初学者的数据预处理完整指南。从缺失值处理、异常值检测、数据类型转换到特征缩放，全部用生活化比喻和代码示例讲解。"
 created: 2026-06-01
 updated: 2026-06-01
----
+tier: supporting
+aliases:
+  - "Data Preprocessing For Dummy"
+  - "Data Preprocessing for dummy"
+  - Data_Preprocessing_for_dummy
 
+---
 # 数据预处理入门: 清洗、转换、标准化
 
 > **一句话理解**: 数据预处理就像洗菜切菜——再好的厨师（模型），用发霉的食材（脏数据）也做不出好菜。

@@ -13,8 +13,12 @@ provenance:
 base_confidence: 0.72
 lifecycle: draft
 lifecycle_changed: 2026-05-31
----
+tier: core
+aliases:
+  - "Training Fine Tuning"
+  - "training fine tuning"
 
+---
 # 模型训练 × 微调技术
 
 ## The Connection

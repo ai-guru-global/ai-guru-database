@@ -17,9 +17,13 @@ sources:
 created: 2026-06-12
 updated: 2026-06-15
 lifecycle: reviewed
-tier: core
----
+tier: supporting
+aliases:
+  - "Chinese Ai Chips Deep Dive"
+  - "Chinese AI Chips Deep Dive"
+  - Chinese_AI_Chips_Deep_Dive
 
+---
 # 国产 AI 芯片深度解析 2026
 
 > **一句话理解**: 全面解析中国 12 家国产 AI 芯片厂商——从华为昇腾到摩尔线程，覆盖技术架构、软件生态、训练验证和选型决策。
@@ -783,4 +787,8 @@ FlashMLA 是 DeepSeek 开源的 MLA (Multi-Latent Attention) 高效实现，是�
 
 ### Wiki 内部链接
 
-> **关联**: -> [[01_Fundamentals/README|数学基础]] | [[05_NLP_LLMs/Chinese_LLM_Ecosystem/README|中国大模型生态]] | [[10_Deployment_Inference/README|部署推理]] | [[12_Architecture_Infrastructure/README|架构基础设施]] | [[12_Architecture_Infrastructure/CDI_Deep_Dive|CDI 容器设备接口(异构芯片统一接入)]] | [[07_Model_Training/README|模型训练]] | [[14_AI_Gateway/README|AI 网关]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]] | [[20_Papers/Architecture/Mixture_of_Experts_Deep_Dive|MoE 深度解读]] | [[01_Fundamentals/AI_Hardware/T_Head_PPU_Deep_Dive|平头哥真武 PPU 深度解析]] | [[01_Fundamentals/AI_Hardware/T_Head_PPU_for_dummy|平头哥 PPU 大白话解读]]
+> **关联**: -> [[01_Fundamentals/README|数学基础]] | [[05_NLP_LLMs/Chinese_LLM_Ecosystem/README|中国大模型生态]] | [[10_Deployment_Inference/README|部署推理]] | [[12_Architecture_Infrastructure/README|架构基础设施]] | [[12_Architecture_Infrastructure/Hardware_Compute/CDI_Deep_Dive|CDI 容器设备接口(异构芯片统一接入)]] | [[07_Model_Training/README|模型训练]] | [[12_Architecture_Infrastructure/AI_Gateway/README|AI 网关]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]] | [[20_Papers_and_Research/Architecture/Mixture_of_Experts_Deep_Dive|MoE 深度解读]] | [[01_Fundamentals/AI_Hardware/T_Head_PPU_Deep_Dive|平头哥真武 PPU 深度解析]] | [[01_Fundamentals/AI_Hardware/T_Head_PPU_for_dummy|平头哥 PPU 大白话解读]]
+
+## Related
+
+- [[_synthesis/chinese-chips-inference|国产 AI 芯片 × 推理引擎: 硬件约束下的推理软件栈适配]]

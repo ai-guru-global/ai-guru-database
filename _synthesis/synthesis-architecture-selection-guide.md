@@ -3,8 +3,12 @@ title: "AI 系统架构选型决策树：从任务类型到技术栈"
 tags: [synthesis, architecture, model-selection, inference-engine, agent-framework, decision-tree, routing, multi-agent]
 type: synthesis
 created: 2026-06-17
----
+tier: core
+aliases:
+  - "Synthesis Architecture Selection Guide"
+  - "synthesis architecture selection guide"
 
+---
 # AI 系统架构选型决策树：从任务类型到技术栈
 
 > **核心洞察**：没有银弹架构。选型的关键不是追求"最强"，而是在任务类型、延迟要求、成本预算、可靠性需求四个维度上找到最优匹配点。"中等模型 + 精心设计的系统" 永远优于 "顶级模型 + 混乱的架构"。

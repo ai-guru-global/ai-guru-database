@@ -4,9 +4,14 @@ category: '10-deployment-inference'
 tags: ["deployment", "inference", "serving", "gpustack", "maas", "for-dummy"]
 summary: '> **一句话秒懂**: GPUStack 就像一个"AI 模型应用商店 + 机房管家"——把各种 GPU 统一管理起来, 点几下就能部署大模型, 还能用 OpenAI 一样的 API 调用。'
 created: '2026-06-15'
-updated: '2026-06-15'
----
+updated: '2026-06-25'
+tier: supporting
+aliases:
+  - "Gpustack For Dummy"
+  - "GPUStack for dummy"
+  - GPUStack_for_dummy
 
+---
 # GPUStack 入门指南 🚀
 
 > **一句话秒懂**: GPUStack 就像一个"AI 模型应用商店 + 机房管家"——把各种 GPU 统一管理起来, 点几下就能部署大模型, 还能用 OpenAI 一样的 API 调用。
@@ -276,6 +281,53 @@ GPUStack 可以同时提供这 3 种服务。
 | **显存要够** | 部署前看看模型需要多少显存 |
 | **网络通畅** | 默认从 Hugging Face / ModelScope 下载模型 |
 | **共享存储** | 多节点分布式推理需要模型文件在所有机器上可访问 |
+
+---
+
+## 常见问题（大白话）
+
+### GPUStack 是 Kubernetes 吗?
+
+**不是。**
+
+```
+Kubernetes  = 通用容器编排平台（什么容器都能管）
+GPUStack    = 专门管 AI 模型推理的 GPU 集群管家
+```
+
+它们不是一回事:
+
+| 对比 | Kubernetes | GPUStack |
+|------|------------|----------|
+| 定位 | 通用容器编排 | AI 模型推理的 GPU 管理 |
+| 安装 | 需要搭一整套集群 | 一条命令就能跑 |
+| 用法 | 写 YAML、kubectl | Web UI 点几下 |
+| 关系 | K8s 可以被 GPUStack 管理 | GPUStack 不是 K8s 插件 |
+
+**一句话**: GPUStack 自己就能跑, 不需要 K8s; 但它也可以把已有的 K8s GPU 集群纳管进来。
+
+### GPUStack 怎么纳管 PPU (玄铁芯片)?
+
+**靠驱动 + GPUStack Worker 自动探测, 不是 K8s 插件。**
+
+流程:
+
+```
+1. PPU 机器上装好 T-Head 驱动和 SDK
+2. 安装 GPUStack Worker
+3. Worker 自动识别 PPU 型号、显存
+4. 上报给 GPUStack Server
+5. 部署模型时调度到 PPU 上
+```
+
+PPU 上目前主要跑 **llama-box** 后端 + **GGUF 量化模型**。
+
+**和 K8s 方案对比**:
+
+| 方案 | 适合谁 |
+|------|--------|
+| GPUStack 纳管 PPU | 想快速把 PPU 用起来跑模型 |
+| K8s + PPU Device Plugin | 公司已经深度用 K8s |
 
 ---
 

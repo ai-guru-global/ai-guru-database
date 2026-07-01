@@ -5,8 +5,12 @@ tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: '**Manus** is a general-purpose AI agent that was acquired by Meta in December 2025, marking one of the most significant AI acquisitions of the decade. The "My Computer" feature, la'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Manus My Computer"
+  - Manus_My_Computer
 
+---
 # Manus "My Computer": Meta's Desktop AI Agent Revolution
 
 ## Overview

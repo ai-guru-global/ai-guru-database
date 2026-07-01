@@ -5,8 +5,13 @@ tags: ["observability", "monitoring", "tracing", "metrics", "llm-ops", "langsmit
 summary: "从传统三大支柱 (Metrics/Traces/Logs) 到 LLM 专属可观测性：深入解析 AI 应用的追踪体系、成本分析、延迟优化、幻觉监控，以及 LangSmith/LangFuse/Helicone 等工具的选型策略。"
 created: "2026-06-12"
 updated: "2026-06-12"
----
+tier: supporting
+aliases:
+  - "Ai Observability Deep Dive"
+  - "AI Observability Deep Dive"
+  - AI_Observability_Deep_Dive
 
+---
 # AI 可观测性深度解读 (AI Observability)
 
 > **TL;DR**: AI 可观测性 = 传统 APM 三大支柱 + LLM 专属维度 (token 追踪、幻觉检测、成本归因)。LangSmith 适合 LangChain 生态，LangFuse 适合开源自建，Helicone 适合轻量代理。选对工具只是开始，关键是建立 "监控 → 告警 → 定位 → 修复" 的闭环。

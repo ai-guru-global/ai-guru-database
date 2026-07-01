@@ -5,8 +5,13 @@ tags: ["deployment", "huggingface", "serverless", "inference-endpoints", "api"]
 summary: "> **一句话理解**: Hugging Face Inference Endpoints 是专为大模型设计的托管服务（PaaS），它让你只需点几下鼠标，就能把 Hub 上几百 GB 的开源模型变成高可用的生产级 API，按秒计费，免去运维 K8s 集群的折磨。"
 created: "2026-06-12"
 updated: "2026-06-12"
----
+tier: supporting
+aliases:
+  - "Hf Inference Endpoints Guide"
+  - "HF Inference Endpoints Guide"
+  - HF_Inference_Endpoints_Guide
 
+---
 # Hugging Face Inference Endpoints：一键 Serverless 部署开源大模型
 
 > **一句话理解**: Hugging Face Inference Endpoints 是专为大模型设计的托管服务（PaaS）。它让你只需点几下鼠标，就能把 Hub 上几百 GB 的开源模型变成高可用、可自动扩缩容的生产级 API，按秒计费，免去团队自建和运维 GPU 集群的折磨。
@@ -134,4 +139,8 @@ print(response.choices[0].message.content)
 ## 相关阅读
 - [[10_Deployment_Inference/Inference_Engines/TGI_Deep_Dive]]
 - [[12_Architecture_Infrastructure/Capacity_Planning]]
-- [[14_AI_Gateway/AI_Gateway_2026]]
+- [[12_Architecture_Infrastructure/AI_Gateway/AI_Gateway_2026]]
+
+## Related
+
+- [[10_Deployment_Inference/README|模型部署与推理]]

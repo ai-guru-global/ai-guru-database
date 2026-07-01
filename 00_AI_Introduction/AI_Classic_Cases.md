@@ -5,8 +5,13 @@ tags: ["ai", "cases", "classic", "history"]
 summary: "## 案例1: AlphaGo vs 李世石 —— AI超越人类专家的里程碑"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Ai Classic Cases"
+  - "AI Classic Cases"
+  - AI_Classic_Cases
 
+---
 # AI 经典案例分析集
 
 > 本案例集深度剖析人工智能发展史上的里程碑事件，通过真实案例理解 AI 技术演进、社会影响和未来启示。

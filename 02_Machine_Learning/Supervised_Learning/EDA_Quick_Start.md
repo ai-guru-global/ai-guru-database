@@ -5,8 +5,13 @@ tags: ["eda", "exploratory-data-analysis", "visualization", "pandas", "beginner"
 summary: "教会初学者用 5 个核心步骤快速理解数据集：概览统计、分布可视化、相关性分析、异常检测、洞察提炼。全部使用 Pandas + Matplotlib/Seaborn，附完整代码模板。"
 created: 2026-06-01
 updated: 2026-06-01
----
+tier: supporting
+aliases:
+  - "Eda Quick Start"
+  - "EDA Quick Start"
+  - EDA_Quick_Start
 
+---
 # 探索性数据分析 (EDA) 快速入门: 10 分钟读懂你的数据
 
 > **一句话理解**: EDA 就像相亲前的"背景调查"——在投入感情（训练模型）之前，先了解对方（数据）的基本情况、性格特点（分布）、和潜在风险（异常值）。

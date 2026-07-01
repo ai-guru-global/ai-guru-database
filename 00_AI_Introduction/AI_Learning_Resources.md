@@ -5,8 +5,13 @@ tags: ["ai", "learning", "resources", "education"]
 summary: "在AI知识爆炸的时代，知道学什么、怎么学、去哪里学，比单纯积累知识更重要——这套方法论将帮助你建立高效的AI学习体系。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Ai Learning Resources"
+  - "AI Learning Resources"
+  - AI_Learning_Resources
 
+---
 # AI 学习资源与方法论
 
 > **一句话理解**: 在 AI 知识爆炸的时代，知道学什么、怎么学、去哪里学，比单纯积累知识更重要——这套方法论将帮助你建立高效的 AI 学习体系。

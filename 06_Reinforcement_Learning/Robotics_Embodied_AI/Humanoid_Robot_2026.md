@@ -5,8 +5,12 @@ tags: ["humanoid-robot", "embodied-ai", "tesla-optimus", "figure", "robotics"]
 summary: "2026 年全球人形机器人全景：从 Tesla Optimus 到 Figure 02、Unitree、Boston Dynamics，覆盖运动控制、操作能力、商业落地与市场格局。"
 created: "2026-06-12"
 updated: "2026-06-12"
----
+tier: supporting
+aliases:
+  - "Humanoid Robot 2026"
+  - Humanoid_Robot_2026
 
+---
 # 人形机器人 2026 (Humanoid Robots)
 
 > **TL;DR**: 人形机器人是具身智能的"终极形态"——2026 年，Tesla Optimus 进入工厂试用，Figure 02 完成融资并展示灵巧操作，Unitree 以低成本路线抢占研究市场，Boston Dynamics Atlas 转型电动版。行业正从"炫技 demo"走向"可量产、能干活"的商业化拐点。

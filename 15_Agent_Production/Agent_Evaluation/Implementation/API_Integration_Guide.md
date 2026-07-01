@@ -5,8 +5,13 @@ tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> 各云产品智能体 API 调用方式与集成规范"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Api Integration Guide"
+  - "API Integration Guide"
+  - API_Integration_Guide
 
+---
 # API 集成指南
 
 > 各云产品智能体 API 调用方式与集成规范
@@ -464,4 +469,4 @@ class BenchmarkScheduler:
 - [[15_Agent_Production/Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
 - [[15_Agent_Production/Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
 - [[15_Agent_Production/Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)
-- [[15_Agent_Production/Agent_Evaluation/demo/README.md|README]]
+- [[_projects/Agent_Evaluation/demo/README|README]]

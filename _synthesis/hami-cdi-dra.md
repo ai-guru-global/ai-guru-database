@@ -3,9 +3,9 @@ title: "HAMi × CDI × DRA: 异构 GPU 共享与设备注入的协作关系"
 category: -synthesis
 tags: ["hami", "cdi", "dra", "gpu-virtualization", "kubernetes", "heterogeneous-computing", "synthesis"]
 sources:
-  - "12_Architecture_Infrastructure/HAMi_Deep_Dive"
-  - "12_Architecture_Infrastructure/CDI_Deep_Dive"
-  - "12_Architecture_Infrastructure/DRA_Deep_Dive"
+  - "12_Architecture_Infrastructure/AI_Stack/HAMi_Deep_Dive"
+  - "12_Architecture_Infrastructure/Hardware_Compute/CDI_Deep_Dive"
+  - "12_Architecture_Infrastructure/Hardware_Compute/DRA_Deep_Dive"
   - "_concepts/hami"
   - "_concepts/cdi"
   - "_concepts/dra"
@@ -19,8 +19,12 @@ provenance:
 base_confidence: 0.85
 lifecycle: draft
 lifecycle_changed: 2026-06-16
----
+tier: core
+aliases:
+  - "Hami Cdi Dra"
+  - "hami cdi dra"
 
+---
 # HAMi × CDI × DRA: 异构 GPU 共享与设备注入的协作关系
 
 ## The Connection
@@ -91,9 +95,9 @@ lifecycle_changed: 2026-06-16
 
 ## Related
 
-- [[12_Architecture_Infrastructure/HAMi_Deep_Dive]] — HAMi 深度解析
-- [[12_Architecture_Infrastructure/CDI_Deep_Dive]] — CDI 容器设备接口标准
-- [[12_Architecture_Infrastructure/DRA_Deep_Dive]] — DRA 动态资源分配
+- [[12_Architecture_Infrastructure/AI_Stack/HAMi_Deep_Dive]] — HAMi 深度解析
+- [[12_Architecture_Infrastructure/Hardware_Compute/CDI_Deep_Dive]] — CDI 容器设备接口标准
+- [[12_Architecture_Infrastructure/Hardware_Compute/DRA_Deep_Dive]] — DRA 动态资源分配
 - [[_concepts/hami]] — HAMi 概念卡片
 - [[_concepts/cdi]] — CDI 概念卡片
 - [[_concepts/dra]] — DRA 概念卡片

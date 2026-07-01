@@ -5,8 +5,13 @@ tags: ["computer-vision", "cnn", "image-processing"]
 summary: '> **一句话秒懂**: AI视频生成就是让AI当"导演"——你给一段文字描述，AI就能生成对应的视频，就像有个好莱坞特效团队在你电脑里，24小时待命！'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Video Generation For Dummy"
+  - "Video Generation for dummy"
+  - Video_Generation_for_dummy
 
+---
 # AI 视频生成 - 小白版 🎬
 
 > **一句话秒懂**: AI 视频生成就是让 AI 当"导演"——你给一段文字描述，AI 就能生成对应的视频，就像有个好莱坞特效团队在你电脑里，24 小时待命！

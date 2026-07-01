@@ -12,16 +12,22 @@ relationships:
     type: "related_to"
   - target: "_concepts/rag-systems"
     type: "related_to"
+  - target: "_concepts/how-llm-answers-plain"
+    type: "related_to"
 sources:
   - "_concepts/embedding-models.md"
   - "_concepts/matryoshka-representation-learning.md"
   - "14_RAG_Systems/Matryoshka_Representation_Learning_for_dummy.md"
+  - "_concepts/how-llm-answers-plain.md"
 lifecycle: stable
 tier: supporting
 created: "2026-06-15"
-updated: "2026-06-15T08:00:00+08:00"
----
+updated: "2026-06-15T08:05:00+08:00"
+aliases:
+  - "Embeddings Vectors Mrl Plain"
+  - "embeddings vectors mrl plain"
 
+---
 # Embedding、向量与 MRL 大白话
 
 > 本文用生活化的语言解释三个 AI 核心概念：**Embedding**、**向量** 和 **MRL**。不需要数学基础，读完就能跟人聊明白。
@@ -295,6 +301,7 @@ MRL 的解决办法：**只训练一个模型，输出一个向量，按需截�
 
 - [[_concepts/embedding-models]] — 嵌入模型概念卡片
 - [[_concepts/matryoshka-representation-learning]] — MRL 概念卡片
+- [[_concepts/how-llm-answers-plain]] — 大模型回答问题是一道数学题吗？大白话
 - [[14_RAG_Systems/Matryoshka_Representation_Learning_for_dummy]] — MRL 小白版
 - [[14_RAG_Systems/Embeddings/Matryoshka_Representation_Learning_Deep_Dive]] — MRL 深度解析
 - [[_concepts/vector-database]] — 向量数据库

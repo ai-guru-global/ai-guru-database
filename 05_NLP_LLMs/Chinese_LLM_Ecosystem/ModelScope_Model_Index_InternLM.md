@@ -7,8 +7,13 @@ created: 2026-06-23
 updated: 2026-06-23
 source: https://modelscope.cn/
 parent: "[[ModelScope_Model_Index]]"
----
+tier: supporting
+aliases:
+  - "Modelscope Model Index Internlm"
+  - "ModelScope Model Index InternLM"
+  - ModelScope_Model_Index_InternLM
 
+---
 ## 上海 AI 实验室 · 书生 (InternLM)
 
 Namespace: `Shanghai_AI_Laboratory` · 组织主页: [https://modelscope.cn/brand/view/internlm](https://modelscope.cn/brand/view/internlm) · 模型数: **443**

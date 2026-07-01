@@ -5,8 +5,13 @@ tags: ["ai-ethics", "safety", "alignment", "red-teaming"]
 summary: "> **一句话理解**: 就像雇佣白帽黑客找系统漏洞一样,AI红队通过模拟攻击来发现和修复AI系统的安全弱点。"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Ai Safety Redteaming"
+  - "AI Safety RedTeaming"
+  - AI_Safety_RedTeaming
 
+---
 # AI 安全与红队 (AI Safety & Red Teaming)
 
 > **一句话理解**: 就像雇佣白帽黑客找系统漏洞一样,AI 红队通过模拟攻击来发现和修复 AI 系统的安全弱点。

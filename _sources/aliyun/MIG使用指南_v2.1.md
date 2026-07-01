@@ -8,13 +8,13 @@ source_url: "https://help.aliyun.com/zh/document_detail/3031169.html"
 source_type: vendor-doc
 publisher: "阿里云帮助文档"
 captured_at: "2026-06-17T00:00:00Z"
-summary: "阿里云关于 PPU（国产加速器，兼容 NVIDIA A100 MIG 语义）Multi-Instance GPU 的使用指南 v2.1。涵盖 MIG 概念（GI/CI/CE/CU）、ppu-smi 开启/创建/查询/复位/销毁 GI 与 CI、Host 与容器中使用 MIG 设备、CUDA_VISIBLE_DEVICES 注意事项。本文档为原始信源；知识库蒸馏版见 12_Architecture_Infrastructure/MIG_Deep_Dive.md。"
+summary: "阿里云关于 PPU（国产加速器，兼容 NVIDIA A100 MIG 语义）Multi-Instance GPU 的使用指南 v2.1。涵盖 MIG 概念（GI/CI/CE/CU）、ppu-smi 开启/创建/查询/复位/销毁 GI 与 CI、Host 与容器中使用 MIG 设备、CUDA_VISIBLE_DEVICES 注意事项。本文档为原始信源；知识库蒸馏版见 12_Architecture_Infrastructure/Hardware_Compute/MIG_Deep_Dive.md。"
 related_pages:
-  - "12_Architecture_Infrastructure/MIG_Deep_Dive.md"
-  - "12_Architecture_Infrastructure/CDI_Deep_Dive.md"
+  - "12_Architecture_Infrastructure/Hardware_Compute/MIG_Deep_Dive.md"
+  - "12_Architecture_Infrastructure/Hardware_Compute/CDI_Deep_Dive.md"
 ---
 
-> 本文件是原始 web clipping 归档，保留原文（含 HTML 表与图片占位）以保证信源可追溯。**生产使用请阅读蒸馏版**：[[12_Architecture_Infrastructure/MIG_Deep_Dive]]。
+> 本文件是原始 web clipping 归档，保留原文（含 HTML 表与图片占位）以保证信源可追溯。**生产使用请阅读蒸馏版**：[[12_Architecture_Infrastructure/Hardware_Compute/MIG_Deep_Dive]]。
 
 **名称解释**
 

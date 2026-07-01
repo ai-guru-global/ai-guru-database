@@ -5,8 +5,12 @@ tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> 覆盖国内外 15+ 款云产品智能体的全方位基准测试与排名体系"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
+aliases:
+  - "Cloud Agent Benchmark 2026"
+  - Cloud_Agent_Benchmark_2026
 
+---
 # 云产品智能体综合测评框架 2026
 
 > 覆盖国内外 15+ 款云产品智能体的全方位基准测试与排名体系

@@ -5,8 +5,13 @@ tags: ["ai-agents", "agent-framework", "production", "langgraph", "autogen"]
 summary: "> **一句话理解**: AutoGen 是微软出品的对话式多 Agent 框架——通过自然对话让 Agent 协作，支持 Group Chat、Human-in-the-loop 和代码执行。"
 created: "2026-05-31"
 updated: "2026-05-31"
----
+tier: supporting
+aliases:
+  - "Autogen Deep Dive"
+  - "AutoGen Deep Dive"
+  - AutoGen_Deep_Dive
 
+---
 # AutoGen: 微软多 Agent 框架
 
 > **一句话理解**: AutoGen 是微软出品的对话式多 Agent 框架——通过自然对话让 Agent 协作，支持 Group Chat、Human-in-the-loop 和代码执行。

@@ -5,8 +5,13 @@ tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "This document provides an in-depth technical analysis of OpenClaw's architecture, internal mechanisms, and implementation details. It is intended for software architects, developer"
 created: "2026-05-31"
 updated: "2026-05-31"
----
+tier: supporting
+aliases:
+  - "Openclaw Technical Deep Dive"
+  - "OpenClaw Technical Deep Dive"
+  - OpenClaw_Technical_Deep_Dive
 
+---
 # OpenClaw Technical Deep Dive: Architecture, Internals & Implementation
 
 ## Overview

@@ -5,8 +5,13 @@ tags: [kv-cache, attention, inference-optimization, long-context, quantization]
 summary: 由浅入深拆解 LLM 推理中的 KV Cache：从自回归冗余、显存公式、生命周期，到 PagedAttention、MQA/GQA/MLA、KV 量化、Token 驱逐与生产框架实现。
 created: 2026-06-15
 updated: 2026-06-15
----
+tier: supporting
+aliases:
+  - "Kv Cache Deep Dive"
+  - "KV Cache Deep Dive"
+  - KV_Cache_Deep_Dive
 
+---
 # KV Cache 深度研究：从原理到工程实践
 
 > **一句话秒懂**：KV Cache 是自回归 LLM 推理的“记忆体”——把已经算过的 Key/Value 存下来，让模型每次生成只聚焦新 token，避免重复劳动。

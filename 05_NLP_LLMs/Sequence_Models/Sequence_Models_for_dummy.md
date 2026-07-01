@@ -5,8 +5,13 @@ tags: ["nlp", "llm", "transformer", "gpt", "bert"]
 summary: '> **一句话秒懂**: 序列模型就像你读小说时边读边记住前面的情节——AI 也要学会"边读边记"才能理解句子的意思!'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Sequence Models For Dummy"
+  - "Sequence Models for dummy"
+  - Sequence_Models_for_dummy
 
+---
 # 序列模型 - 小白版
 
 > **一句话秒懂**: 序列模型就像你读小说时边读边记住前面的情节——AI 也要学会"边读边记"才能理解句子的意思!
@@ -282,4 +287,4 @@ GRU 是 LSTM 的"减肥版"——少了一些零件,但大部分时候效果差�
 - [[05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques.md|Fine_tuning_Techniques]]
 - [[05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques_for_dummy.md|Fine_tuning_Techniques_for_dummy]]
 - [[05_NLP_LLMs/Fine_tuning_Techniques/Model_Merging_2026.md|Model_Merging_2026]]
-- [[05_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/PEFT_2026.md|PEFT_2026]]
+- [[05_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026.md|PEFT_2026]]

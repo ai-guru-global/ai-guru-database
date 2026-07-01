@@ -12,8 +12,11 @@ lifecycle: draft
 tier: core
 created: 2026-06-15
 updated: 2026-06-15T07:55:28.435Z
----
+aliases:
+  - "Kv Cache Plain"
+  - "kv cache plain"
 
+---
 # KV Cache 大白话解释
 
 > 一句话：KV Cache 是大模型生成文字时，把已经算过的内容的“精华”存起来，避免重复劳动，让生成速度更快。
@@ -108,3 +111,4 @@ KV Cache 就放在 **每个车间的 Attention 工位旁边**，是一本不断�
 - [[_concepts/kv-cache]] — KV Cache 技术深潜与优化全景
 - [[_concepts/transformer-layer]] — Transformer Layer（层）大白话解释
 - [[_concepts/transformer-architecture]] — Transformer 架构简介
+- [[_concepts/transformer-architecture-plain]] — Transformer 大白话解释

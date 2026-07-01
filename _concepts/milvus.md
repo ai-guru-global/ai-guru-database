@@ -25,8 +25,10 @@ lifecycle: stable
 tier: core
 created: 2026-06-16
 updated: 2026-06-16
----
+aliases:
+  - Milvus
 
+---
 # Milvus
 
 > 面向十亿级向量的「分布式语义搜索引擎」——RAG 和企业知识库的常见底座。
@@ -105,7 +107,7 @@ Milvus Cluster
 
 - [[14_RAG_Systems/Vector_Databases/Milvus_Deep_Dive]] — Milvus 深度解析
 - [[_concepts/vector-database]] — 向量数据库
-- [[_concepts/rag]] — RAG
+- [[_concepts/rag-patterns]] — RAG
 - [[_concepts/embedding]] — Embedding
 - [[_concepts/qdrant]] — Qdrant
 - [[_concepts/weaviate]] — Weaviate

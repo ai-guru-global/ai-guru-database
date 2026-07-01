@@ -19,8 +19,9 @@ provenance:
   inferred: '0.15'
   ambiguous: '0.05'
 created: 2026-06-12
----
+tier: core
 
+---
 # 多模态视觉
 
 多模态视觉（Multimodal Vision）将视觉信息与语言信息融合理解，让AI同时"看"和"说"。CLIP在4亿图文对上通过对比学习实现零样本分类，LLaVA用线性投影将视觉long-context-models注入LLM，BLIP-2通过Q-Former高效桥接冻结的视觉编码器和语言模型。多模态视觉是AI智能体视觉感知能力的基础。

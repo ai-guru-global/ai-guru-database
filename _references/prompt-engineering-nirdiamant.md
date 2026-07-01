@@ -9,8 +9,11 @@ created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
 tier: supporting
----
+aliases:
+  - "Prompt Engineering Nirdiamant"
+  - "prompt engineering nirdiamant"
 
+---
 # Prompt 工程技术大全 (5k)
 
 > **一句话理解**: 从基础到高级的提示工程技术集合,含详细教程和实现。

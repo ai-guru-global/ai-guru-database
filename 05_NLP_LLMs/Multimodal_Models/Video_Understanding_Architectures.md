@@ -5,8 +5,12 @@ tags: [multimodal, video-understanding, temporal-modeling, video-llm, sora, acti
 summary: 从帧级图像理解到真正视频理解的架构演进，涵盖时序建模、视频-语言预训练、动作识别和生成式视频理解的最新技术。
 date: 2026-06-01
 created: 2026-06-12
----
+tier: peripheral
+aliases:
+  - "Video Understanding Architectures"
+  - Video_Understanding_Architectures
 
+---
 # 视频理解架构深度解析
 
 ## 一句话理解

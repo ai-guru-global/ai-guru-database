@@ -16,8 +16,10 @@ lifecycle: draft
 tier: core
 created: 2026-06-15
 updated: 2026-06-15
----
+aliases:
+  - Quantization
 
+---
 # Quantization（量化）
 
 ## 大白话
@@ -51,3 +53,4 @@ updated: 2026-06-15
 - [[_concepts/kv-cache]] — KV Cache
 - [[10_Deployment_Inference/Quantization/Quantization_Techniques_2026|Quantization Techniques 2026]]
 - [[10_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy|推理性能术语大白话解释]]
+- [[_concepts/pruning]] — 剪枝

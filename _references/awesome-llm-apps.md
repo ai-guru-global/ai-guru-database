@@ -9,8 +9,11 @@ created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
 tier: supporting
----
+aliases:
+  - "Awesome Llm Apps"
+  - "awesome llm apps"
 
+---
 # Awesome LLM Apps 集合 (10k)
 
 > **一句话理解**: LLM 应用案例集合,含 RAG、Agent、聊天机器人等各类实际应用实现。

@@ -5,8 +5,24 @@ tags: ["crystal-lattice", "materials-science", "ai-for-science", "gnn"]
 summary: "晶体点阵是材料科学的基础概念——原子在空间中的周期性排列结构，GNN 和图神经网络常用于建模晶体结构。"
 created: 2026-06-12
 updated: 2026-06-12
+tier: core
+aliases:
+  - "Crystal Lattice"
+  - "crystal lattice"
+lifecycle: draft
+provenance:
+  extracted: 0.70
+  inferred: 0.25
+  ambiguous: 0.05
+base_confidence: 0.7
+sources:
+  - 18_AI_Applications_Industry/AI_for_Science/Materials_Science_and_Energy_2026.md
+relationships:
+  - target: "_concepts/ai-for-science"
+    type: related_to
+  - target: "_concepts/graph-neural-networks"
+    type: related_to
 ---
-
 # 晶体点阵 (Crystal Lattice)
 
 > 晶体点阵是材料科学的基础概念——原子在空间中的周期性排列结构，GNN 和图神经网络常用于建模晶体结构。

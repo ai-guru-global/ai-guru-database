@@ -11,9 +11,13 @@ sources:
 created: 2026-06-12
 updated: 2026-06-12
 lifecycle: reviewed
-tier: core
----
+tier: supporting
+aliases:
+  - "Google Tpu Deep Dive"
+  - "Google TPU Deep Dive"
+  - Google_TPU_Deep_Dive
 
+---
 # Google TPU 深度解析 2026
 
 > **一句话理解**: Google TPU 是全球最早量产的 AI 专用芯片，第七代 Ironwood (TPU7x) 以 192GB HBM、4,614 TFLOPS FP8 和 9,216 芯片 Pod 规模重新定义大规模 AI 计算。
@@ -392,4 +396,4 @@ Gemini 2.0 训练配置:
 └── ROCm 生态 → 可接受迁移成本
 ```
 
-> **关联**: -> [[01_Fundamentals/AI_Hardware/NVIDIA_AMD_GPU_Deep_Dive|NVIDIA & AMD GPU]] | [[01_Fundamentals/AI_Hardware/Chinese_AI_Chips_Deep_Dive|国产 AI 芯片]] | [[07_Model_Training|模型训练]] | [[10_Deployment_Inference|部署推理]]
+> **关联**: -> [[01_Fundamentals/AI_Hardware/NVIDIA_AMD_GPU_Deep_Dive|NVIDIA & AMD GPU]] | [[01_Fundamentals/AI_Hardware/Chinese_AI_Chips_Deep_Dive|国产 AI 芯片]] | [[07_Model_Training/README|模型训练]] | [[10_Deployment_Inference/README|部署推理]]

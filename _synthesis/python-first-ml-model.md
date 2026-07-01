@@ -16,8 +16,12 @@ provenance:
   ambiguous: 0.1
 lifecycle: draft
 lifecycle_changed: 2026-06-05
----
+tier: core
+aliases:
+  - "Python First Ml Model"
+  - "python first ml model"
 
+---
 # Python 基础 × 第一个 ML 模型 — 从零到一的实战桥梁
 
 ## The Connection

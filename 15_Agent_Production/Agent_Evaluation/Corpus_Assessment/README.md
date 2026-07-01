@@ -5,8 +5,9 @@ tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> 语料库/知识库质量评估文档目录"
 created: 2026-05-31
 updated: 2026-05-31
----
+tier: supporting
 
+---
 # Corpus Assessment
 
 > 语料库/知识库质量评估文档目录
@@ -42,3 +43,5 @@ COVR 四维模型：
 - [[15_Agent_Production/Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
 - [[15_Agent_Production/Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)
 
+
+- [[15_Agent_Production/README|Agent 生产部署 (Agent Production)]]

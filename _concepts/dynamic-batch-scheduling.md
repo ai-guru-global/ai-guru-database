@@ -26,8 +26,11 @@ lifecycle_changed: 2026-06-16
 tier: core
 created: 2026-06-16
 updated: 2026-06-16
----
+aliases:
+  - "Dynamic Batch Scheduling"
+  - "dynamic batch scheduling"
 
+---
 # 动态批调度
 
 ## 核心要点

@@ -5,8 +5,13 @@ tags: ["reinforcement-learning", "agent", "mdp"]
 summary: '> **一句话秒懂**: 深度强化学习就是给强化学习装上"深度学习大脑"——让AI能玩复杂的Atari游戏、下围棋战胜世界冠军,甚至控制机器人!'
 created: '2026-05-31'
 updated: '2026-05-31'
----
+tier: supporting
+aliases:
+  - "Deep Rl For Dummy"
+  - "Deep RL for dummy"
+  - Deep_RL_for_dummy
 
+---
 # 深度强化学习 - 小白版 🎮
 
 > **一句话秒懂**: 深度强化学习就是给强化学习装上"深度学习大脑"——让 AI 能玩复杂的 Atari 游戏、下围棋战胜世界冠军,甚至控制机器人!

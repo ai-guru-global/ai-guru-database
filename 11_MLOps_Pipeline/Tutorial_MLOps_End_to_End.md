@@ -11,6 +11,10 @@ aliases:
   - Tutorial_MLOps_End_to_End
 
 ---
+
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
 # MLOps 端到端教程
 
 > **目标**: 从零构建一条生产级 ML 流水线，涵盖数据版本、实验追踪、自动化训练、模型注册、部署和监控。

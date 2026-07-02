@@ -24,7 +24,7 @@ aliases:
 |------|---|
 | 包含核心概念 | 10 个 |
 | 预计学习时间 | 5-8 小时 |
-| 前置依赖 | [Stage 0: AI 觉醒](./stage-0-awakening.md) |
+| 前置依赖 | [Stage 0: AI 觉醒](./stage0_awakening.md) |
 | 适合人群 | 准备进入技术细节的学习者 |
 
 ---
@@ -185,7 +185,7 @@ aliases:
   - **自监督学习 (Self-Supervised)**：从数据自身生成标签（如把句子遮住一部分让模型补全）—— GPT/BERT 的基础
   - **半监督学习 (Semi-Supervised)**：少量标注 + 大量无标注数据混合使用
 
-- **入门阅读**：[监督学习](../../02_Machine_Learning/Supervised_Learning/Supervised_Learning_for_dummy.md) | [无监督学习](../02_Machine_Learning/Unsupervised_Learning/Unsupervised_learning_for_dummy.md) | [强化学习基础](../../06_Reinforcement_Learning/RL_Foundations/RL_Foundations_for_dummy.md)
+- **入门阅读**：[监督学习](../../02_Machine_Learning/Supervised_Learning/Supervised_Learning_for_dummy.md) | [无监督学习](../../02_Machine_Learning/Unsupervised_Learning/Unsupervised_Learning_for_dummy.md) | [强化学习基础](../../06_Reinforcement_Learning/RL_Foundations/RL_Foundations_for_dummy.md)
 - **关联概念**：标注数据、预训练、奖励函数
 
 ---
@@ -203,5 +203,5 @@ aliases:
 ## 下一步
 
 完成 Stage 1 后：
-- **进入技术核心** → [Stage 2: 核心技术](./stage2-core-tech.md)
+- **进入技术核心** → [Stage 2: 核心技术](./stage2_core_tech.md)
 - **补充数学基础** → [01_Fundamentals](../../01_Fundamentals/README_for_dummy.md)（线性代数、概率统计）

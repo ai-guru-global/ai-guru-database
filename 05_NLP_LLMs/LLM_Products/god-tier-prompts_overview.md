@@ -69,4 +69,4 @@ God Tier Prompts 处于"实践模板"端——适合**快速获得可用提示�
 
 - [[05_NLP_LLMs/Prompt_Engineering|提示词工程]] — 系统学习提示词原理与方法
 - [[_references/prompt-engineering-nirdiamant|Prompt 工程技术大全]] — 综合技术参考
-- [[05_NLP_LLMs/Prompt_Engineering/god-tier-prompts|God Tier Prompts 索引]] — 详细条目
+- [[05_NLP_LLMs/Prompt_Engineering/README|God Tier Prompts 索引]] — 详细条目

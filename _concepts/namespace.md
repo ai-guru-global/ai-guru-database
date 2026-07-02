@@ -22,6 +22,10 @@ relationships:
     type: related_to
 ---
 
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
+
 # Namespace
 
 > **一句话理解**: Namespace 是 K8s 集群里的「虚拟文件夹」，把 Pod、Service、ConfigMap 等资源按团队或项目分组，实现逻辑隔离与权限边界的软隔离。

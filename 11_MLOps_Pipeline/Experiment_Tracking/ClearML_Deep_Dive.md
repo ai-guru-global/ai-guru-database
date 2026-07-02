@@ -12,6 +12,10 @@ aliases:
   - ClearML_Deep_Dive
 
 ---
+
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
 # ClearML: 开源 ML 平台
 
 > **一句话理解**: ClearML 是开源 ML 平台——实验追踪、MLOps、自动化机器学习、模型服务，一站式 ML 解决方案。

@@ -9,6 +9,10 @@ updated: 2026-06-26
 tier: supporting
 ---
 
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
+
 # AI Stack + MLflow + ACK 私有化 MLOps 参考架构
 
 > **一句话理解**: 把 AI Stack 当成私有化 AI 底座，ACK 当调度层，MLflow 当模型与实验中枢，组合成一条端到端的 MLOps 流水线。

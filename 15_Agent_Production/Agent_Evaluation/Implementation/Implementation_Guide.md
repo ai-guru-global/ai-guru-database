@@ -11,6 +11,10 @@ aliases:
   - Implementation_Guide
 
 ---
+
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
 # Implementation Guide
 
 > Practical guide for deploying the agent evaluation framework
@@ -1021,7 +1025,7 @@ RUN apt-get update && apt-get install -y \
     git \
     curl \
     jq \
-    && rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/*  # ⚠️ HIGH-RISK — 递归强制删除，不可逆 [回滚：见文档/备份]
 
 # 安装Python依赖
 COPY requirements.txt /tmp/

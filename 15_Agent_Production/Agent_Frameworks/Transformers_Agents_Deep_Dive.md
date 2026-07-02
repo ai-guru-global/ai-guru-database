@@ -11,6 +11,10 @@ aliases:
   - Transformers_Agents_Deep_Dive
 
 ---
+
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
 # Transformers Agents: HuggingFace Agent 框架
 
 > **一句话理解**: Transformers Agents 是 HuggingFace 的 Agent 开发框架——基于 Transformers 模型，支持多工具调用、代码生成、视觉理解，原生集成 HuggingFace 生态。

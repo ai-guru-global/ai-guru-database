@@ -28,6 +28,7 @@ tier: supporting
 | 文档 | 内容 | 适用读者 |
 |------|------|----------|
 | [RAG Systems](14_RAG_Systems/RAG_Systems.md) | RAG 完整技术体系：索引、检索、生成、评估 | 系统学习 |
+| [RAG 生产架构深度解析](14_RAG_Systems/RAG_Production_Architecture_Deep_Dive.md) | 经典/Advanced/Agentic RAG 演进、生产管线、检索/生成/评估/合规 | RAG 架构师 |
 | [RAG Advanced 2026](14_RAG_Systems/Advanced_RAG/RAG_Advanced_2026.md) | 混合检索、重排序、Agentic RAG | 进阶学习 |
 | [RAG 检索延迟优化](14_RAG_Systems/Advanced_RAG/RAG_Retrieval_Latency_Optimization.md) | HNSW/IVF、hybrid search、reranker 成本、向量索引调参 | RAG 性能工程师 |
 | [RAG 调试速查表](14_RAG_Systems/Advanced_RAG/RAG_Debugging_Cheat_Sheet.md) | Query/检索/重排序/生成四环节诊断与评估指标 | RAG 工程师 |

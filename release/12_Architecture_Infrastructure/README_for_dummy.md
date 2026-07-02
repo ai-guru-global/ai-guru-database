@@ -1,0 +1,198 @@
+---
+title: '12 架构与基础设施 — 小白版 🏗️'
+category: '12-architecture-infrastructure'
+tags: ["architecture", "infrastructure", "kubernetes", "high-availability"]
+summary: '> **一句话秒懂**: 这一章告诉你怎么把 AI 系统"搭起来"——怎么设计高可用、可扩展的 AI 架构，怎么选型、怎么部署，让 AI 系统能够支撑百万用户同时使用。'
+created: '2026-05-31'
+updated: '2026-05-31'
+tier: supporting
+aliases:
+  - "Readme For Dummy"
+  - "README for dummy"
+  - README_for_dummy
+
+---
+# 12 架构与基础设施 — 小白版 🏗️
+
+> **一句话秒懂**: 这一章告诉你怎么把 AI 系统"搭起来"——怎么设计高可用、可扩展的 AI 架构，怎么选型、怎么部署，让 AI 系统能够支撑百万用户同时使用。
+
+## 为什么要学架构？
+
+想象一下：
+- 🏗️ 你要搭建一个 AI 服务，怎么设计架构？
+- 📈 用户从 100 增长到 100 万，怎么扩展？
+- 🔒 系统怎么保证 7×24 小时稳定运行？
+
+**架构设计 = 让 AI 系统稳定、高效、可靠的基础**
+
+## 核心概念
+
+### 1. 高可用架构
+
+```
+【问题】单个服务器挂了怎么办？
+
+【解决】多副本 + 负载均衡
+
+         用户请求
+             ↓
+      ┌──────────────┐
+      │  负载均衡器   │
+      └──────┬───────┘
+             ↓
+    ┌─────┐ ┌─────┐ ┌─────┐
+    │Server│ │Server│ │Server│
+    │  A  │ │  B  │ │  C  │
+    └──┬──┘ └──┬──┘ └──┬──┘
+       └───────┴───────┘
+       任意一个挂了，
+       其他继续服务
+```
+
+### 2. 可扩展架构
+
+```
+【问题】用户从 100 增长到 100 万？
+
+【解决】水平扩展
+
+用户少时:
+┌─────┐
+│ AI  │
+└─────┘
+
+用户多时:
+┌─────┐ ┌─────┐ ┌─────┐
+│ AI1 │ │ AI2 │ │ AI3 │
+└─────┘ └─────┘ └─────┘
+```
+
+### 3. 推理优化
+
+```
+【问题】模型推理太慢、太贵？
+
+【解决】多种优化手段
+
+优化手段:
+✓ 模型量化 (FP16 → INT8)
+✓ 批量推理
+✓ 缓存
+✓ 模型蒸溜
+✓ 专用硬件 (GPU/TPU)
+```
+
+## 架构模式
+
+### 1. 四层模型
+
+```
+┌─────────────────────────────────────────────────────────┐
+│                     四层 AI 架构                        │
+├─────────────────────────────────────────────────────────┤
+│                                                         │
+│  接入层 ─── API 网关、认证、限流                        │
+│     ↓                                                   │
+│  调度层 ─── 请求路由、负载均衡                         │
+│     ↓                                                   │
+│  模型层 ─── 推理服务、模型管理                         │
+│     ↓                                                   │
+│  数据层 ─── 向量数据库、特征存储                       │
+│                                                         │
+└─────────────────────────────────────────────────────────┘
+```
+
+### 2. 云原生架构
+
+```
+Kubernetes (K8s) 部署:
+
+┌─────────────────────────────────────┐
+│           K8s Cluster               │
+├─────────────────────────────────────┤
+│                                     │
+│  Pod: AI 推理服务                   │
+│  HPA: 自动扩缩容                    │
+│  Service: 服务发现                   │
+│  Ingress: 外部访问                   │
+│                                     │
+└─────────────────────────────────────┘
+```
+
+## 基础设施组件
+
+| 组件 | 作用 | 常见选型 |
+|------|------|---------|
+| 容器编排 | 管理 AI 服务 | Kubernetes |
+| 服务网格 | 服务间通信 | Istio, Linkerd |
+| API 网关 | 统一入口 | Kong, APISIX |
+| 消息队列 | 异步任务 | Kafka, RabbitMQ |
+| 对象存储 | 模型/数据存储 | S3, MinIO |
+| 向量数据库 | 语义检索 | Milvus, Pinecone |
+
+## 关键设计决策
+
+### 1. 在线 vs 离线
+
+```
+【在线推理】
+场景: 实时对话、搜索
+要求: 毫秒级响应
+架构: 同步调用，低延迟优化
+
+【离线推理】
+场景: 批量处理、训练
+要求: 高吞吐量
+架构: 异步任务，批处理
+```
+
+### 2. 单域 vs 多租户
+
+```
+【单租户】
+每个客户独立部署
+✓ 隔离性好
+✗ 成本高
+
+【多租户】
+多个客户共享资源
+✓ 成本低
+✗ 隔离性要求高
+```
+
+## 性能指标
+
+```
+【关键指标】
+
+延迟:
+- P50: 50% 请求的延迟
+- P99: 99% 请求的延迟
+- 目标: P99 < 200ms
+
+吞吐:
+- QPS: 每秒请求数
+- 目标: 根据业务需求
+
+可用性:
+- SLA: 99.9% = 每月 < 8.7 小时宕机
+- 目标: 核心服务 99.99%
+```
+
+## 下一步
+
+- 想学部署？→ [10_Deployment_Inference/README_for_dummy.md](../10_Deployment_Inference/README_for_dummy.md)
+- 想学 MLOps？→ [11_MLOps_Pipeline/README_for_dummy.md](../11_MLOps_Pipeline/README_for_dummy.md)
+- 想学监控？→ [13_AI_Ops/README_for_dummy.md](../13_AI_Ops/README_for_dummy.md)
+
+---
+
+*本文是 [README.md](./README.md) 的简化版，适合零基础读者。*
+
+## Related
+
+- [[12_Architecture_Infrastructure/Architecture_Overview/AI_Infrastructure_2026|AI_Infrastructure_2026]]
+- [[12_Architecture_Infrastructure/Architecture-in-nutshell.md|Architecture-in-nutshell]]
+- [[12_Architecture_Infrastructure/Architecture_Infrastructure_for_dummy.md|Architecture_Infrastructure_for_dummy]]
+- [[12_Architecture_Infrastructure/Architecture_Overview/Spring_AI_Architecture|Spring_AI_Architecture]]
+- [[_concepts/llm-infrastructure.md|llm-infrastructure]]

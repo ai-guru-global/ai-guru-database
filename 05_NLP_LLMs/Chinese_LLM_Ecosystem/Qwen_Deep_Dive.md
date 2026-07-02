@@ -533,7 +533,7 @@ Agent / 工具调用 (Agentic)
 | 开源对照参考 | Qwen3-235B-A22B-2507 | 无 | 无 | 无 | GLM-5.2 开源版 |
 | 接入入口 | chat.qwen.ai / 百炼 | Anthropic API | OpenAI API | Google API | 智谱 API |
 
-> **相关文档**: 跨厂商基准与 GLM-5.2 的全面对比，参见 [[GLM-5.2]] 及 [[05_NLP_LLMs/Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]]。
+> **相关文档**: 跨厂商基准与 GLM-5.2 的全面对比，参见 [[05_NLP_LLMs/Chinese_LLM_Ecosystem/GLM_Zhipu_Deep_Dive]] 及 [[05_NLP_LLMs/Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]]。
 
 #### 3.5.5 Hybrid Thinking 架构回顾
 

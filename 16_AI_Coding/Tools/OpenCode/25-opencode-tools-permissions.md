@@ -14,6 +14,10 @@ aliases:
 updated: 2026-06-30
 summary: "工具体系与权限模型 — 专题文档"
 ---
+
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
 title: 工具体系与权限模型
 description: '**文档类型**: 核心能力专题 | **最后更新**: 2026-03 | **关键词**: OpenCode, Tools, Permissions,
  Custom Tools, bash, edit, read, grep, Security, TypeScript'
@@ -326,7 +330,7 @@ export default tool({
   description: "Restricted bash wrapper",
   args: { command: tool.schema.string() },
   async execute(args) {
-    if (args.command.includes("rm -rf")) return "blocked: dangerous command"
+    if (args.command.includes("rm -rf")) return "blocked: dangerous command"  # ⚠️ HIGH-RISK — 递归强制删除，不可逆 [回滚：见文档/备份]
     // 安全命令可执行
     return `blocked: ${args.command}`
   },
@@ -353,9 +357,9 @@ export default tool({
 
 | 文档 | 关系 |
 |------|------|
-| [04 - Agent 系统](./04-opencode-agents-system.md) | Per-Agent 权限配置 |
-| [06 - MCP 集成](./06-opencode-mcp-integration.md) | MCP 工具的权限管理 |
-| [12 - 进阶话题](./12-opencode-advanced-topics.md) | 安全加固策略 |
+| [04 - Agent 系统](./24-opencode-agents-system.md) | Per-Agent 权限配置 |
+| [06 - MCP 集成](./26-opencode-mcp-integration.md) | MCP 工具的权限管理 |
+| [12 - 进阶话题](./32-opencode-advanced-topics.md) | 安全加固策略 |
 
 ---
 

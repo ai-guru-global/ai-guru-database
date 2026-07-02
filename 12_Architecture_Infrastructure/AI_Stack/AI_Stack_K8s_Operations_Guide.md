@@ -12,6 +12,10 @@ aliases:
   - AI_Stack_K8s_Operations_Guide
 
 ---
+
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
 # AI Stack K8s 编排指南
 
 > **一句话理解**: AI Stack 内部通过 K8s 编排工作负载，`kubectl` 用于集群管理排障，`helm` 用于安装 GPUStack 等 K8s 包；日常优先通过平台层操作，不直接修改集群。

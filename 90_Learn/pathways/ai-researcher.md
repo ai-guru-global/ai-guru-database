@@ -213,7 +213,7 @@ Phase 6: 前沿专题（多模态 / Agent / 世界模型）
 - 核心论文：V-JEPA、GAIA-1、World Models Survey
 
 **专题 B: VLA 与具身智能**
-- [机器人与具身智能（2026）](../../06_Reinforcement_Learning/Robotics_Embodied_AI/Robotics_Embodied_AI_2026.md)
+- [机器人与具身智能（2026）](../../06_Reinforcement_Learning/Robotics_Embodied_AI/Embodied_AI_2026.md)
 - 核心论文：RT-2、OpenVLA、Figure AI 相关工作
 
 **专题 C: AI Safety 与对齐**

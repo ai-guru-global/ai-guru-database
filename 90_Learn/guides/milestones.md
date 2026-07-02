@@ -42,7 +42,7 @@ aliases:
 
 | 问题 | 补救建议 |
 |------|---------|
-| Q1-Q3 | 回到 [Stage 0 概念卡](./_concepts/stage-0-awakening.md)，重点阅读 AI 定义、AI 能力边界、历史部分 |
+| Q1-Q3 | 回到 [Stage 0 概念卡](../concepts/stage0_awakening.md)，重点阅读 AI 定义、AI 能力边界、历史部分 |
 | Q4 | 阅读 [AI 伦理与社会影响](../../00_AI_Introduction/AI_Ethics_Society.md) |
 | Q5-Q6 | 阅读 [监督学习入门](../../02_Machine_Learning/Supervised_Learning/Supervised_Learning_for_dummy.md) |
 
@@ -193,7 +193,7 @@ aliases:
 | Q3 | 阅读 [机器人与具身智能 2026](../../06_Reinforcement_Learning/Robotics_Embodied_AI/Embodied_AI_2026.md) |
 | Q4 | 阅读 [AI 未来趋势](../../00_AI_Introduction/AI_Future_Trends.md) |
 | Q5 | 阅读 [AI 安全与红队（小白版）](../../17_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming_for_dummy.md) |
-| Q6 | 回到 [Stage 4 概念卡](./_concepts/stage4-frontier.md) 的 Scaling Law 部分 |
+| Q6 | 回到 [Stage 4 概念卡](../concepts/stage4_frontier.md) 的 Scaling Law 部分 |
 
 ---
 

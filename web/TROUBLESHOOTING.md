@@ -7,6 +7,10 @@ created: 2026-05-31
 updated: 2026-05-31
 ---
 
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
+
 # Troubleshooting Guide
 
 ## Common Issues
@@ -36,7 +40,7 @@ start.bat
 **Solution C: Manual Start**
 ```bash
 # 1. Clean old cache
-rm -rf .parcel-cache
+rm -rf .parcel-cache  # ⚠️ HIGH-RISK — 递归强制删除，不可逆 [回滚：见文档/备份]
 
 # 2. Install dependencies
 npm install
@@ -55,7 +59,7 @@ On macOS/Linux:
 lsof -i :3055
 
 # Kill it (replace <PID> with the actual process ID)
-kill -9 <PID>
+kill -9 <PID>  # ⚠️ HIGH-RISK — 强杀进程，数据可能损坏 [回滚：见文档/备份]
 ```
 
 On Windows:
@@ -80,7 +84,7 @@ server: {
 **Solution:**
 ```bash
 # Clear node_modules and reinstall
-rm -rf node_modules package-lock.json
+rm -rf node_modules package-lock.json  # ⚠️ HIGH-RISK — 递归强制删除，不可逆 [回滚：见文档/备份]
 npm install
 ```
 
@@ -164,7 +168,7 @@ After starting the server, verify:
 
 3. Reinstall everything:
    ```bash
-   rm -rf node_modules .parcel-cache dist
+   rm -rf node_modules .parcel-cache dist  # ⚠️ HIGH-RISK — 递归强制删除，不可逆 [回滚：见文档/备份]
    npm install
    npm run dev
    ```

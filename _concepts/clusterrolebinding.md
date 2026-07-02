@@ -16,6 +16,10 @@ relationships:
     type: part_of
 ---
 
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
+
 # ClusterRoleBinding
 
 > **一句话理解**: ClusterRoleBinding 是 Kubernetes RBAC 的「全局授权书」——把 ClusterRole 的集群级权限授予用户、组或 ServiceAccount。
@@ -58,7 +62,7 @@ kubectl auth can-i list nodes \
   --as=system:serviceaccount:kube-system:node-reader
 
 # 删除不再需要的绑定
-kubectl delete clusterrolebinding read-nodes-binding
+kubectl delete clusterrolebinding read-nodes-binding  # ⚠️ HIGH-RISK — 删除 K8s 资源，服务可能中断 [回滚：见文档/备份]
 ```
 
 ## 常见场景

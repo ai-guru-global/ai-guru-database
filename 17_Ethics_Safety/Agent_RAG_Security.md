@@ -22,7 +22,7 @@ aliases:
 ---
 # Agent 与 RAG 安全：智能体风险、工具安全与多智能体架构
 
-> 本文从 [[大模型安全权威指南]] 第七章蒸馏而来，覆盖智能体系统安全风险（过度自主权、控制流劫持、幻觉驱动工具调用、记忆污染）、RAG 攻击面（知识库投毒、检索操纵、上下文注入）、工具调用安全（参数注入、MCP 协议、工具链权限提升）、技能与生态安全（描述投毒、混淆抢注、供应链污染）、多智能体协作安全（零信任架构、信任链破坏、权限提升链）以及 Agents Rule of Two 安全设计原则。
+> 本文从 [[https://github.com/yeasy/ai_security_guide]] 第七章蒸馏而来，覆盖智能体系统安全风险（过度自主权、控制流劫持、幻觉驱动工具调用、记忆污染）、RAG 攻击面（知识库投毒、检索操纵、上下文注入）、工具调用安全（参数注入、MCP 协议、工具链权限提升）、技能与生态安全（描述投毒、混淆抢注、供应链污染）、多智能体协作安全（零信任架构、信任链破坏、权限提升链）以及 Agents Rule of Two 安全设计原则。
 
 Related: [[LLM_Security_Complete_Guide]], [[LLM_Security_Defense_Guide]], [[Constitutional_AI_Deep_Dive]], [[AI_Red_Teaming_Guide]], [[Guardrails_Production_Guide]]
 

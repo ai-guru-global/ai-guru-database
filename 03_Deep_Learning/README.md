@@ -39,6 +39,9 @@ tier: supporting
 | **图神经网络 (GNN)** | **2026 新增** | **GCN/GAT/GraphSAGE/Graph Transformer、消息传递范式、分子预测** | **[Graph_Neural_Networks/](./Graph_Neural_Networks/)** |
 | **自监督学习 (SSL)** | **2026 新增** | **对比学习(SimCLR/MoCo)、掩码建模(MAE/BEiT)、自蒸馏(DINO)** | **[Self_Supervised_Learning/](./Self_Supervised_Learning/)** |
 | **你的第一个神经网络** | **入门** | **PyTorch 搭建 CNN，训练 MNIST 手写数字识别，理解反向传播** | **[Your_First_Neural_Network.md](./Neural_Network_Core/Your_First_Neural_Network.md)** |
+| **注意力机制 (Attention Mechanisms)** | **核心** | **自注意力、多头注意力、Flash Attention、GQA/MQA，现代 AI 的核心计算原语** | **[Attention_Mechanisms_Deep_Dive.md](./Neural_Network_Core/Attention_Mechanisms_Deep_Dive.md)** |
+| **迁移学习 (Transfer Learning)** | **核心** | **预训练-微调范式、特征迁移、参数高效微调(LoRA)、域适应** | **[Transfer_Learning.md](./Transfer_Learning.md)** |
+| **深度学习概览 (DL Overview)** | **入门** | **全景概览：从神经网络基础到现代架构，从训练技巧到工程实践** | **[DL_Overview.md](./DL_Overview.md)** |
 | 世界模型 (World Models) | 前沿 | JEPA/V-JEPA/LeJEPA，自监督世界建模，通往 AGI 路径 | [World_Models_2026.md](./World_Models/World_Models_2026.md) |
 
 ## 前置知识 (Prerequisites)

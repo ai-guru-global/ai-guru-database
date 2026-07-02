@@ -12,6 +12,10 @@ aliases:
   - LLM_Inference_Profiling_and_Benchmarking
 
 ---
+
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
 # 推理 Profiling 与 Benchmarking
 
 > 性能优化前先测对。本文讲清楚测什么、怎么测、以及常见的坑。

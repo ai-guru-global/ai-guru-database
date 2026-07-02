@@ -115,7 +115,7 @@ Stage 0: AI 觉醒 ────────────────────�
 | 系统 | 位置 | 路径数 | 组织逻辑 | 适合场景 |
 |------|------|---------|---------|----------|
 | **认知层次路径** | [`pathways/`](./pathways/) | 6 条 | 按 Stage 0-4 认知递进 | 第一次学 AI，想知道“从哪里开始” |
-| **职业角色路径** | [`Learning_Paths_2026.md`](./Learning_Paths_2026.md) | 5 条 | 按 ML/LLM/PM/MLOps/Research 职业角色 | 已有方向，想知道“学哪些章节” |
+| **职业角色路径** | [`Learning_Paths_2026.md`](./guides/learning_paths_2026.md) | 5 条 | 按 ML/LLM/PM/MLOps/Research 职业角色 | 已有方向，想知道“学哪些章节” |
 
 > **建议**: 新手先用 `pathways/` 建立全局认知，确定方向后切换到 `Learning_Paths_2026.md` 获得具体的章节序列和时间估算。
 

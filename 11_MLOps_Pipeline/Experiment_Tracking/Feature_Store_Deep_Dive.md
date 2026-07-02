@@ -11,6 +11,10 @@ aliases:
   - Feature_Store_Deep_Dive
 
 ---
+
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
 # Feature Store 深度解析 (Feature Store Deep Dive)
 
 > **一句话理解**: Feature Store 就像 AI 的"中央厨房"——统一管理所有食材（特征）的采购、加工、配送，确保训练和推理用的都是同一套标准化食材，杜绝"训练时吃大餐、上线后吃快餐"的偏差问题。

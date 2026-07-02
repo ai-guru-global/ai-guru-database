@@ -23,6 +23,10 @@ lifecycle: stable
 tier: supporting
 ---
 
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
+
 # kubectl Kubernetes CLI
 
 > **一句话理解**: kubectl 是 K8s 的"遥控器"——所有容器编排操作都通过它执行，AI Stack 底层基于 K8s，运维必会。
@@ -100,7 +104,7 @@ kubectl logs <pod-name> -n <namespace> -f
 kubectl exec -it <pod-name> -n <namespace> -- /bin/bash
 
 # 重启 Pod（通过删除触发重建）
-kubectl delete pod <pod-name> -n <namespace>
+kubectl delete pod <pod-name> -n <namespace>  # ⚠️ HIGH-RISK — 删除 K8s 资源，服务可能中断 [回滚：见文档/备份]
 
 # 查看 Pod 详情（故障排查）
 kubectl describe pod <pod-name> -n <namespace>

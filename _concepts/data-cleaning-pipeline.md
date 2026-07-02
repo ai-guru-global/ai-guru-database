@@ -97,4 +97,4 @@ aliases:
 - [[_concepts/model-training]] — 模型训练
 - [[_concepts/synthetic-data]] — 合成数据
 - [[07_Model_Training/Data/Data_Curation_and_Mixture_2026]] — 数据策展与配比 2026
-- [[05_NLP_LLMs/LLM_Data_Engineering]] — 大模型数据工程
+- [[05_NLP_LLMs/LLM_Data_Engineering/README]] — 大模型数据工程

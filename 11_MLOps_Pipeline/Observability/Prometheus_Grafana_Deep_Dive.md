@@ -11,6 +11,10 @@ aliases:
   - Prometheus_Grafana_Deep_Dive
 
 ---
+
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
 # Prometheus + Grafana 深度解析：AI 系统监控与可视化基座
 
 > **一句话理解**: Prometheus 负责拉取、存储和告警时序指标；Grafana 负责把指标可视化成交互式大盘。二者是 AI 训练、推理和基础设施监控的事实标准组合。

@@ -115,7 +115,7 @@ aliases:
 | Extra08 | 如何写出好的 Skill | Skill 写作最佳实践 | [[15_Agent_Production/Agent_Skills/Agent_Skills_Practical_Guide]] |
 | Extra09 | Agent 应用开发实践踩坑与经验分享 | Code Agent 踩坑总结 | [[15_Agent_Production/README]] |
 | Extra10 | Agent Self-Evolution 智能体自进化 | 自进化四类闭环与代表项目 | [[15_Agent_Production/Agentic_Design_Patterns_AndrewNg]] |
-| Extra11 | WebAgent 科普与实战 | Web Agent 原理与反爬实战 | [[15_Agent_Production/OpenClaw_Ecosystem/WebAgent_Guide]] |
+| Extra11 | WebAgent 科普与实战 | Web Agent 原理与反爬实战 | [[15_Agent_Production/OpenClaw_Ecosystem/README]] |
 | Extra12 | 旅行助手后训练实战 | 旅行助手 Demo 打磨成 Planner | [[15_Agent_Production/Hello_Agents_L13_Travel_Assistant]] |
 | Extra13 | Hello-Agents 视频课录制共创 | 视频课程共创资源 | [[_references/hello-agents]] |
 

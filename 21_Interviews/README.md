@@ -34,6 +34,7 @@ tier: supporting
 | [[21_Interviews/NLP_Engineer/question_bank|NLP Engineer]] | 文本处理、LLM 应用、RAG | 面试准备 + 题库 |
 | [[21_Interviews/Prompt_Engineer/Prompt_Engineer|Prompt Engineer]] | Prompt 设计、评估优化、应用落地 | 面试准备 + 题库 |
 | [[21_Interviews/Robotics_Engineer/Robotics_Engineer|Robotics Engineer]] | 感知、规划、控制、仿真 | 面试准备 + 题库 |
+| [[21_Interviews/Agent_Engineer_2026|Agent Engineer 2026]] | ReAct/Plan-and-Execute/Multi-Agent/Memory/Tool Use、系统设计、代码题 | 面试准备 + 题库 |
 
 ### 研究类
 

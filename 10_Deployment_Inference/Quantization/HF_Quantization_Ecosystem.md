@@ -12,6 +12,10 @@ aliases:
   - HF_Quantization_Ecosystem
 
 ---
+
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
 # Hugging Face 量化生态：BitsAndBytes, AWQ, GPTQ 与 GGUF
 
 > **一句话理解**: 模型尺寸呈指数级增长，显存却成了最大的瓶颈。Hugging Face 通过 `transformers` 库的 `quantization_config` 参数，将底层碎片化、各自为战的量化后端完美统一。只需更改配置参数，即可在精度、显存与速度之间灵活取舍。

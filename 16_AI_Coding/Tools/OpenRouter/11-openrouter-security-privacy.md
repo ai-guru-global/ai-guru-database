@@ -15,6 +15,10 @@ aliases:
 updated: 2026-06-30
 summary: "安全、隐私与数据治理 — 专题文档"
 ---
+
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
 title: 安全、隐私与数据治理
 description: '# 安全、隐私与数据治理'
 category: 16-ai-coding-tools-openrouter
@@ -316,7 +320,7 @@ DELETE /api/v1/keys/{key_id}
 | 文档 | 关系 |
 |------|------|
 | [04 - 智能路由](./04-openrouter-provider-routing.md) | ZDR 与 data_collection 路由参数 |
-| [08 - Prompt Caching](./08-openrouter-prompt-caching-[[_concepts/model-training|optimization]].md) | BYOK 与成本控制 |
+| [08 - Prompt Caching](16_AI_Coding/Tools/OpenRouter/08-openrouter-prompt-caching-optimization.md) | BYOK 与成本控制 |
 | [12 - 企业级实践](./12-openrouter-enterprise-advanced.md) | Provisioning Keys 与 Key 管理 |
 | [02 - 快速接入](./02-openrouter-quickstart-setup.md) | API Key 创建与配置 |
 

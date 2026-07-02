@@ -12,6 +12,10 @@ aliases:
   - llama_cpp_Deep_Dive
 
 ---
+
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
 # llama.cpp: 纯 C/C++ 本地 LLM 推理
 
 > **一句话理解**: llama.cpp 是纯 C/C++ 的轻量级 LLM 推理框架——无 Python 依赖、CPU 即可运行、GGUF 量化，覆盖从 MacBook 到树莓派再到服务器的全场景本地推理。

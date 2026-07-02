@@ -27,6 +27,10 @@ aliases:
   - Learn_Claude_Code_L03_Permission_System
 
 ---
+
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
 # Learn Claude Code L03：Permission — 执行前做权限判断
 
 > **一句话理解**: 安全不能靠信任模型，要靠代码——在工具执行前插入 `check_permission()`，三道闸门决定放行、拒绝还是问用户。

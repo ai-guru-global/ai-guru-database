@@ -11,6 +11,10 @@ aliases:
   - Agent_Harness_Complete_2026
 
 ---
+
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
 # Agent Harness 完整指南：生产级 Agent 评估框架
 
 > 全面解析 Agent 评估体系：从 Agent Harness 到 GAIA、OSWorld、SWE-bench，构建可靠的 Agent 能力评估标准，并补充安全评估、多 Agent 协作、协议级测试与生产落地方法。

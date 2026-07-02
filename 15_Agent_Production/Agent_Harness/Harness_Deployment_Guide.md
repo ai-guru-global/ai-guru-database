@@ -11,6 +11,10 @@ aliases:
   - Harness_Deployment_Guide
 
 ---
+
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
 # Agent Harness 部署与运维指南
 
 > 从开发环境到生产环境的完整部署路径，涵盖容器化、K8s 编排、监控告警和运维最佳实践。
@@ -34,7 +38,7 @@ RUN useradd -m -s /bin/bash agent
 RUN apt-get update && apt-get install -y \
     git \
     docker.io \
-    && rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/*  # ⚠️ HIGH-RISK — 递归强制删除，不可逆 [回滚：见文档/备份]
 
 # Python 依赖
 COPY requirements.txt .

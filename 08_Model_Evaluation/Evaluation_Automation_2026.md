@@ -11,6 +11,10 @@ aliases:
   - Evaluation_Automation_2026
 
 ---
+
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
 # 自动化模型评估 2026 (Evaluation Automation)
 
 > **一句话理解**: 自动化评估就像给模型装上"自动驾驶仪"——每次代码或模型变更都自动跑一遍"考试"，确保新版本不会比旧版本差，让评估从手工作坊变成工业流水线。

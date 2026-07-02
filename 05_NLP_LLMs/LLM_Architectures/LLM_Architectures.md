@@ -609,10 +609,10 @@ if __name__ == "__main__":
 
 ### 前置知识
 - [Transformer 革命](../Transformer_Revolution/Transformer_Revolution.md): Self-Attention 机制
-- [注意力机制](../Attention_Mechanism/Attention_Mechanism.md): Seq2Seq Attention
+- [注意力机制](../Transformer_Revolution/Transformer_Revolution.md): Seq2Seq Attention
 
 ### 后续推荐
-- [预训练方法](../Pre_training_Methods/Pre_training_Methods.md): MLM, CLM, T5 的 Span Corruption
+- [预训练方法](../LLM_Architectures/LLM_Architectures.md): MLM, CLM, T5 的 Span Corruption
 - [微调技术](../Fine_tuning_Techniques/Fine_tuning_Techniques.md): LoRA, RLHF
 - [提示工程](../Prompt_Engineering/Prompt_Engineering.md): Few-shot, Chain-of-Thought
 

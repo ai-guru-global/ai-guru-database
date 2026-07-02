@@ -12,6 +12,10 @@ aliases:
   - K8sGPT_Deep_Dive
 
 ---
+
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
 # K8sGPT: 给 K8s 集群装一个 AI SRE
 
 > **一句话理解**: K8sGPT 是 CNCF 沙箱级的"AI SRE"——用一组分析器扫集群里的失败信号，再交给 LLM（可本地 Ollama）翻译成"哪里坏了、怎么修"的人话，支持 CLI 和常驻 Operator 两种模式。

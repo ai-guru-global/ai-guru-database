@@ -153,7 +153,7 @@ BPE 不是最优的（贪心算法），但在实践中是计算效率与压缩�
 
 ## Related
 
-- [[01_Fundamentals/Information_Theory]] — 信息论基础
+- [[01_Fundamentals/Information_Theory/README]] — 信息论基础
 - [[_concepts/probability-statistics]] — 概率统计基础
 - [[_concepts/llm-architectures]] — LLM 架构（交叉熵与困惑度）
 - [[_concepts/model-evaluation]] — 模型评估（PPL、信息准则）

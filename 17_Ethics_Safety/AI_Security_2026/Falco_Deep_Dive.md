@@ -8,6 +8,10 @@ created: "2026-06-16"
 updated: "2026-06-16"
 ---
 
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
+
 # Falco 深度解析：容器运行时安全检测
 
 > **一句话理解**: Falco 是 CNCF Incubating 的运行时安全检测工具，通过 eBPF 或内核模块监控系统调用和 K8s 审计日志，发现容器逃逸、权限提升、敏感文件访问等运行时威胁。

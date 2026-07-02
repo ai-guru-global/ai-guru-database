@@ -8,6 +8,10 @@ updated: 2026-06-26
 tier: core
 ---
 
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
+
 # Kubernetes 运维排障 Playbook
 
 > **一句话理解**: 这是一本按「现象 → 定位 → 命令 → 修复」组织的 K8s 排障手册，目标是让工单智能体或运维工程师能在阿里云专有云环境中快速收敛根因。
@@ -170,7 +174,7 @@ kubectl describe node <node-name> | grep -A 10 "Conditions"
 
 ```bash
 # 强制删除（慎用）
-kubectl delete pod <pod-name> -n <ns> --grace-period=0 --force
+kubectl delete pod <pod-name> -n <ns> --grace-period=0 --force  # ⚠️ HIGH-RISK — 删除 K8s 资源，服务可能中断 [回滚：见文档/备份]
 
 # 如果还有 finalizer
 kubectl patch pod <pod-name> -n <ns> -p '{"metadata":{"finalizers":[]}}' --type=merge
@@ -301,7 +305,7 @@ kubectl get ingress <name> -n <ns> -o yaml
 kubectl get networkpolicy --all-namespaces
 
 # 临时测试：删除 policy（仅在测试环境）
-kubectl delete networkpolicy <name> -n <ns>
+kubectl delete networkpolicy <name> -n <ns>  # ⚠️ HIGH-RISK — 删除 K8s 资源，服务可能中断 [回滚：见文档/备份]
 ```
 
 ---

@@ -12,6 +12,10 @@ aliases:
   - Data_Versioning_DVC_LakeFS
 
 ---
+
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
 # 数据版本控制：DVC 与 LakeFS
 
 > **一句话理解**: 代码用 Git 管，但 GB–TB 级的数据塞不进 Git——DVC 和 LakeFS 用「指针入 Git，数据入对象存储」的方式，让数据集也能版本化、可 diff、可回滚。

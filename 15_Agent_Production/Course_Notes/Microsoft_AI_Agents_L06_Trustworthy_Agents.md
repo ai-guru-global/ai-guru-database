@@ -118,7 +118,7 @@ else:
     print("Response rejected. Revising...")
 ```
 
-HITL 适合高风险动作（取消订单、转账、删除数据），不适合低风险高频动作（查询、推荐）^[[inferred]]。
+HITL 适合高风险动作（取消订单、转账、删除数据），不适合低风险高频动作（查询、推荐）^[[15_Agent_Production/Agent_Foundations/AI_Agents]]。
 
 ---
 

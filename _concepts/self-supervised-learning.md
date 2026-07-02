@@ -83,6 +83,6 @@ aliases:
 
 ## Related
 
-- [[03_Deep_Learning/Self_Supervised_Learning]] — 自监督学习深度解析
+- [[03_Deep_Learning/Self_Supervised_Learning/README]] — 自监督学习深度解析
 - [[_concepts/neural-networks]] — 神经网络基础
 - [[_concepts/llm-architectures]] — LLM 架构（自监督预训练）

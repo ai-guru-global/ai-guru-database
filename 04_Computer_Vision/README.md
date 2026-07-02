@@ -44,12 +44,14 @@ tier: supporting
 | 主题 | 难度 | 描述 | 文档链接 |
 |------|------|------|---------|
 | 图像分类与检测 (Image Classification & Detection) | 入门 | CNN、ResNet、ViT、YOLO 系列，掌握图像识别基础 | [Image_Classification_Detection.md](./Image_Classification_Detection/Image_Classification_Detection.md) |
+| **目标检测深度解析 (Object Detection)** | **核心** | **R-CNN、YOLO 系列、DETR、DINO，工业级目标检测技术全景** | **[Object_Detection_Deep_Dive.md](./Image_Classification_Detection/Object_Detection_Deep_Dive.md)** |
 | 图像分割 (Segmentation) | 进阶 | 语义分割（U-Net）、实例分割（Mask R-CNN），像素级理解 | [Segmentation/](./Segmentation/) |
 | 多模态视觉 (Multimodal Vision) | 进阶 | CLIP、ALIGN，视觉-语言联合表示学习 | [Multimodal_Vision/](./Multimodal_Vision/) |
 | 生成模型 (Generative Models) | 实战 | GAN、DDPM、Stable Diffusion，图像生成与编辑 | [Generative_Models.md](./Generative_Models/Generative_Models.md) |
 | AI 视频生成 (Video Generation) | 前沿 | 2026 年视频生成格局，Veo3/Kling/Seedance/Sora 后时代 | [Video_Generation/](./Video_Generation/) |
 | 3D 视觉 (3D Vision) | 进阶 | 深度估计、点云分割、NeRF、3D 检测 | [3D_Vision.md](./3D_Vision/3D_Vision.md) |
 | OCR 文字识别 (OCR) | 入门 | 文本检测、文本识别、端到端 OCR | [OCR_Text_Recognition.md](./OCR_Text_Recognition/OCR_Text_Recognition.md) |
+| **CV 生产部署与推理 2026** | **生产必备** | **ONNX/TensorRT/OpenVINO 服务化、量化剪枝、边缘部署与工业案例** | **[CV_Deployment_and_Inference_2026.md](./CV_Deployment_and_Inference_2026.md)** |
 
 ### 深度解读 (Deep Dive)
 

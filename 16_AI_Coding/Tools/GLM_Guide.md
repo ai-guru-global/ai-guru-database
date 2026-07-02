@@ -12,6 +12,10 @@ aliases:
   - GLM_Guide
 
 ---
+
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
 # GLM 使用指南
 
 > **一句话**: 智谱 GLM 系列模型通过 OpenCode 和 Crush 接入，是高性价比的国产编程辅助工具，需注意周额度刷新周期。

@@ -160,6 +160,32 @@ def classify_target(target):
     return 'missing_file'
 
 
+def strip_code_blocks(content):
+    """Remove fenced code blocks so links inside them aren't checked."""
+    lines = content.split('\n')
+    result = []
+    in_block = False
+    fence_len = 0
+    for line in lines:
+        stripped = line.lstrip()
+        if not in_block:
+            m = re.match(r'`{3,}', stripped)
+            if m:
+                in_block = True
+                fence_len = len(m.group(0))
+            else:
+                result.append(line)
+        else:
+            m = re.match(r'`{3,}', stripped)
+            if m and len(m.group(0)) >= fence_len:
+                in_block = False
+                fence_len = 0
+    content = '\n'.join(result)
+    # Remove inline `...` backtick content
+    content = re.sub(r'`[^`\n]+`', '', content)
+    return content
+
+
 def find_all_links(base, strict=False):
     """Walk content files, find all wikilinks and md-style internal links, classify broken ones."""
     basename_lower, basename_norm, alias_to_file = build_resolution_index(base)
@@ -173,9 +199,10 @@ def find_all_links(base, strict=False):
 
     for f in content_files:
         try:
-            content = open(f, 'r', encoding='utf-8', errors='ignore').read()
+            raw_content = open(f, 'r', encoding='utf-8', errors='ignore').read()
         except Exception:
             continue
+        content = strip_code_blocks(raw_content)
         rel = os.path.relpath(f, base)
 
         # Find wikilinks

@@ -9,6 +9,10 @@ updated: 2026-06-26
 tier: core
 ---
 
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
+
 # LLM 微调任务 K8s 失败排障 Runbook
 
 > **一句话理解**: 这本 Runbook 教你把「微调任务为什么失败」从框架报错（LoRA/数据/优化器）翻译到 K8s 运行信号（OOM、镜像拉取、Pending、重启），再给出修复动作。

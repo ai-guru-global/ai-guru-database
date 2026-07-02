@@ -8,6 +8,10 @@ updated: 2026-06-26
 tier: core
 ---
 
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
+
 # Kubernetes 核心组件深度解析
 
 > **一句话理解**: Kubernetes 是一套以声明式 API 为核心的分布式操作系统，控制平面组件负责"决策与记忆"，节点组件负责"执行与汇报"——工单里 80% 的异常都可归因到这两类组件的通信、状态或资源故障。
@@ -276,7 +280,7 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    A[kubectl delete pod] --> B[apiserver 设置 DeletionTimestamp]
+    A[kubectl delete pod] --> B[apiserver 设置 DeletionTimestamp]  # ⚠️ HIGH-RISK — 删除 K8s 资源，服务可能中断 [回滚：见文档/备份]
     B --> C[etcd 更新]
     C --> D[kubelet 收到删除事件]
     D --> E[发送 SIGTERM]

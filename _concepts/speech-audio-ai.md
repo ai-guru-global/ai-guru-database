@@ -173,7 +173,7 @@ aliases:
 
 ## Related
 
-- [[05_NLP_LLMs/Speech_Audio_AI]] — 语音与音频 AI 深度解析
+- [[05_NLP_LLMs/Speech_Audio_AI/README]] — 语音与音频 AI 深度解析
 - [[_concepts/llm-architectures]] — LLM 架构（语音 LLM 基础）
 - [[_concepts/multimodal-models]] — 多模态模型（音频多模态）
 - [[_concepts/transformer-architecture]] — Transformer（语音模型基础架构）

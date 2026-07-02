@@ -9,6 +9,10 @@ updated: 2026-06-26
 tier: core
 ---
 
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
+
 # 分布式训练 Hang 排障 Runbook
 
 > **一句话理解**: 分布式训练 Hang 通常不是代码 bug，而是 **NCCL 通信、网络拓扑、GPU 互联** 出了问题；本手册按「现象 → 日志 → 命令 → 修复」帮你定位。

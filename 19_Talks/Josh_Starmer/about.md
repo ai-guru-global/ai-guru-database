@@ -78,7 +78,7 @@ aliases:
 - [[19_Talks/Josh_Starmer/youtube_channel]] — StatQuest 必看系列
 - [[01_Fundamentals/Probability_Statistics]] — 概率统计知识库
 - [[02_Machine_Learning/README|02_Machine_Learning]] — 机器学习知识库
-- [[90_Learn/Courses/other/statquest]] — StatQuest 课程笔记
+- [[90_Learn/Courses/other/statquest.md]] — StatQuest 课程笔记
 
 ---
 

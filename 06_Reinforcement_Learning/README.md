@@ -46,6 +46,7 @@ tier: supporting
 |------|------|------|---------|
 | 强化学习基础 (RL Foundations) | 入门 | MDP、贝尔曼方程、策略梯度、价值函数，RL 数学框架 | [RL_Foundations.md](./RL_Foundations/RL_Foundations.md) |
 | 深度强化学习 (Deep RL) | 进阶 | DQN、PPO、SAC、离线 RL，结合神经网络的 RL 算法 | [Deep_RL.md](./Deep_RL/Deep_RL.md) |
+| **多智能体系统 (Multi-Agent Systems)** | **进阶** | **合作/竞争/混合场景、CTDE、QMIX、MAPPO、涌现行为** | **[Multi_Agent_Systems.md](./Multi_Agent_Systems.md)** |
 | 具身智能 (Embodied AI) | 前沿 | 机器人基础模型、VLA架构、Sim-to-Real、人形机器人产业 | [Embodied_AI_2026.md](./Robotics_Embodied_AI/Embodied_AI_2026.md) |
 
 ### 深度解读 (Deep Dive)
@@ -55,6 +56,7 @@ tier: supporting
 | DQN | 深度强化学习开山之作，Atari 游戏与经验回放 | [DQN_Deep_Dive.md](./Deep_RL/DQN_Deep_Dive.md) |
 | PPO | OpenAI 默认 RL 算法，裁剪更新稳定训练 | [PPO_Deep_Dive.md](./Deep_RL/PPO_Deep_Dive.md) |
 | RLHF/DPO/GRPO | 大模型对齐训练三大范式（GPT/DPO/DeepSeek-R1 路线） | [RLHF_DPO_GRPO_Deep_Dive.md](./RLHF_DPO_GRPO_Deep_Dive.md) |
+| **GRPO 训练深度解析** | **生产必备** | **Group Relative Policy Optimization 原理、Reward 设计、显存优化与 DeepSeek-R1/Qwen3 复现** | **[GRPO_Training_Deep_Dive.md](./GRPO_Training_Deep_Dive.md)** |
 
 ### 小白版入门 (for_dummy)
 

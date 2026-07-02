@@ -138,4 +138,4 @@ Agentic RAG 遇到死胡同时可采取：
 - [[_concepts/rag-systems]] — RAG 检索增强生成
 - [[14_RAG_Systems/Advanced_RAG/RAG_Advanced_2026]] — 高级 RAG 技术
 - [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents_L04_Tool_Use]] — 工具使用设计模式
-- [[15_Agent_Production/Microsoft_AI_Agents_L07_Planning]] — 规划设计模式
+- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents_L07_Planning_Design]] — 规划设计模式

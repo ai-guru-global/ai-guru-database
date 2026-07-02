@@ -12,6 +12,10 @@ aliases:
   - MLC_LLM_Deep_Dive
 
 ---
+
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
 # MLC LLM: 移动端/异构设备 LLM 推理框架
 
 > **一句话理解**: MLC LLM 是 CMU 团队出品的端侧 LLM 推理框架——基于 Apache TVM 编译，支持手机 NPU/GPU、游戏主机和浏览器，让大模型在消费级设备上高速运行。

@@ -153,4 +153,4 @@ modifier.apply(model)
 - [[_concepts/awq]] / [[_concepts/gptq]] / [[_concepts/nf4]] — 量化方法
 - [[_concepts/knowledge-distillation]] — 知识蒸馏
 - [[10_Deployment_Inference/Quantization]] — 量化章节
-- [[07_Model_Training/Compression]] — 压缩章节
+- [[07_Model_Training/Compression/README]] — 压缩章节

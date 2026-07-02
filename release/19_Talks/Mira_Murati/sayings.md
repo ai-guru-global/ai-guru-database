@@ -1,0 +1,32 @@
+---
+title: Mira Murati 关于 AI 的观点 (Mira Murati on AI)
+category: 19-talks-mira-murati
+tags: ["talks", "speeches", "insights", "leaders"]
+summary: "1. **“We should be a little bit scared; it’s important to get it right.” / “我们应该有些敬畏，把事情做好很重要。”**"
+created: 2026-05-31
+updated: 2026-05-31
+tier: supporting
+aliases:
+  - Sayings
+
+---
+# Mira Murati 关于 AI 的观点 (Mira Murati on AI)
+
+1. **“We should be a little bit scared; it’s important to get it right.” / “我们应该有些敬畏，把事情做好很重要。”** 
+ - **来源**: [Time 采访，2023](https://time.com/6255952/openai-chatgpt-mira-murati-interview/)
+
+2. **“AI should be regulated.” / “AI 应该被监管。”** 
+ - **来源**: [同上 Time 采访，2023](https://time.com/6255952/openai-chatgpt-mira-murati-interview/)
+
+## 近期动态与更新入口 (Recent Updates & Sources)
+- **官方动态入口 (OpenAI)**: [openai.com](https://openai.com/)
+
+---
+*Last updated: 2026-02-08*
+
+## Related
+
+- [[19_Talks/Andrej_Karpathy/about]] — Andrej Karpathy 简介 (Andrej Karpathy) (共享: insights, leaders, speeches, talks)
+- [[19_Talks/Andrew_Ng/about]] — Andrew Ng 简介 (Andrew Ng) (共享: insights, leaders, speeches, talks)
+- [[19_Talks/Andrew_Ng/sayings]] — Andrew Ng 关于 AI 的观点与格言 (共享: insights, leaders, speeches, talks)
+- [[19_Talks/Bill_Gates/about]] — Bill Gates 简介 (Bill Gates) (共享: insights, leaders, speeches, talks)

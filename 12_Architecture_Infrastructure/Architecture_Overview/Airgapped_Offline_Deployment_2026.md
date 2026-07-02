@@ -11,6 +11,10 @@ aliases:
   - Airgapped_Offline_Deployment_2026
 
 ---
+
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
 # Air-gapped 离线内网环境：Hugging Face 生态全量本地化部署指南
 
 > **一句话理解**: 对于高保密级别的企业内网（金融、政务、军工），服务器是完全断网的（Air-gapped）。本知识库的 Agent 运行时也处于内部环境中。本文档提供了一整套“无网求生”指南，教你如何将 Hugging Face (HF) 庞大的开源生态搬进内网并全功能运行。

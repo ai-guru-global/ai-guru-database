@@ -8,6 +8,10 @@ updated: 2026-05-31
 tier: supporting
 ---
 
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../../../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
+
 # 云产品运维 Agent 运维指南 (Operations)
 
 > 🎯 **目标**: 为运维工程师提供 Cloud Ops Agent 的日常运维、监控告警、故障处理、性能调优、安全运维的完整实操指南，确保系统稳定高效运行。
@@ -321,7 +325,7 @@ class IncidentHandler:
 **修复步骤**:
 ```bash
 # 1. 重启 Pod
-kubectl delete pod <pod-name> -n cloud-ops
+kubectl delete pod <pod-name> -n cloud-ops  # ⚠️ HIGH-RISK — 删除 K8s 资源，服务可能中断 [回滚：见文档/备份]
 
 # 2. 如果频繁重启，检查资源限制
 kubectl edit deployment cloud-ops-agent -n cloud-ops
@@ -777,12 +781,12 @@ automations:
     action: |
       kubectl get pods -n cloud-ops -o json | jq -r '.items[] |
         select(.status.phase != "Running") |
-        .metadata.name' | xargs -r kubectl delete pod -n cloud-ops
+        .metadata.name' | xargs -r kubectl delete pod -n cloud-ops  # ⚠️ HIGH-RISK — 删除 K8s 资源，服务可能中断 [回滚：见文档/备份]
 
   - name: "auto_cleanup_old_logs"
     schedule: "0 2 * * *"  # 每天凌晨 2 点
     action: |
-      find /var/log/cloud-ops -mtime +30 -delete
+      find /var/log/cloud-ops -mtime +30 -delete  # ⚠️ HIGH-RISK — find 删除文件，不可逆 [回滚：见文档/备份]
 
   - name: "auto_scale_on_load"
     trigger: "cpu_usage > 80%"

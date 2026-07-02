@@ -12,6 +12,10 @@ aliases:
   - LlamaIndex_Deep_Dive
 
 ---
+
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
 # LlamaIndex: 数据连接框架
 
 > **一句话理解**: LlamaIndex 是 LLM 应用的数据连接器——把私有数据接入大模型，让模型"阅读"并"理解"你的文档。

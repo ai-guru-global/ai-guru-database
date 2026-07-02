@@ -29,6 +29,7 @@ tier: supporting
 | [**数据策展与配比 2026**](07_Model_Training/Data/Data_Curation_and_Mixture_2026.md) | 数据清洗/去重/配比/合成数据/多语言 | 数据工程 |
 | [**GRPO 与新对齐方法**](07_Model_Training/Alignment/GRPO_and_New_Alignment_Methods.md) | PPO/DPO/KTO/GRPO/RLOO/Reasoning RL | 对齐训练 |
 | [**剪枝与知识蒸馏**](07_Model_Training/Compression/Pruning_and_Knowledge_Distillation.md) | Wanda/SparseGPT/LLM-Pruner/SFT 蒸馏 | 模型压缩 |
+| [**训练成本优化与 FinOps 2026**](07_Model_Training/Training_Cost_Optimization_and_FinOps_2026.md) | GPU 利用率、Spot 实例、Checkpoint、成本归因与预算告警 | 训练 FinOps |
 | [**Ray Deep Dive**](07_Model_Training/Distributed_Training/Ray_Deep_Dive.md) | 分布式 AI 计算框架：Train/Serve/Data/Tune | 分布式训练与推理 |
 | [**DeepSpeed Deep Dive**](07_Model_Training/Distributed_Training/DeepSpeed_Deep_Dive.md) | 微软大模型训练与推理优化：ZeRO / Offload / MoE | 大模型训练优化 |
 | [**Megatron-LM Deep Dive**](07_Model_Training/Distributed_Training/Megatron_LM_Deep_Dive.md) | NVIDIA 大规模 Transformer 训练：TP / PP / 3D 并行 | 超大规模预训练 |
@@ -36,6 +37,8 @@ tier: supporting
 | [**Colossal-AI Deep Dive**](07_Model_Training/Distributed_Training/Colossal_AI_Deep_Dive.md) | 统一分布式 AI 系统：Gemini 内存管理、多维并行 | 低成本大模型训练 |
 | [**ms-swift Deep Dive**](07_Model_Training/Distributed_Training/ms_swift_Deep_Dive.md) | 魔搭大模型训练推理全链路框架 | 框架实战 |
 | [**ms-swift 命令行参数参考**](07_Model_Training/Distributed_Training/ms_swift_Command_Line_Parameters.md) | 200+ 命令行参数全量速查 | 参数手册 |
+| [**数据增强完全指南**](07_Model_Training/Data/Data_Augmentation.md) | 图像/文本/音频增强、MixUp/CutMix/Mosaic、合成数据生成 | 数据工程师 |
+| [**超参数优化完全指南**](07_Model_Training/Optimization/Hyperparameter_Tuning.md) | 网格搜索、贝叶斯优化、Optuna/W&B、LLM 训练超参数 | 训练工程师 |
 | [**数据与微调大白话**](07_Model_Training/Data_and_FineTuning_for_dummy.md) | 数据清洗 Pipeline、DoRA、RS-LoRA 大白话解释 | 初学者 |
 
 > ⚠️ **注意**: 本章内容正在全面扩充中。当前仅包含速览指南，深度专题（分布式训练、混合精度、训练优化）即将上线。

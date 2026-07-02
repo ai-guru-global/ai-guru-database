@@ -1,0 +1,17 @@
+---
+title: Cost Management
+type: index
+created: 2026-07-02
+updated: 2026-07-02
+---
+
+# Cost Management
+
+This page indexes the contents of `13_AI_Ops/Cost_Management`.
+
+## Files
+
+- [[13_AI_Ops/Cost_Management/FinOps_for_AI 2|Finops For AI 2]]
+- [[13_AI_Ops/Cost_Management/FinOps_for_AI|Finops For AI]]
+- [[13_AI_Ops/Cost_Management/GPU_Cost_Optimization 2|GPU Cost Optimization 2]]
+- [[13_AI_Ops/Cost_Management/GPU_Cost_Optimization|GPU Cost Optimization]]

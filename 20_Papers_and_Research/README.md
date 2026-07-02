@@ -194,7 +194,7 @@ flowchart TB
 
 - [x] 论文清单与核心贡献摘要
 - [ ] 论文深度解读系列（持续更新）
-- [ ] 论文代码复现指南
+- [x] [[20_Papers_and_Research/Paper_Reading_and_Reproduction_Guide|论文阅读与复现工程指南]]
 - [ ] 论文阅读路径推荐（按角色：研究者/工程师/产品经理）
 
 ---

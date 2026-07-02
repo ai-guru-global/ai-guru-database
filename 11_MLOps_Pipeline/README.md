@@ -72,6 +72,7 @@ graph LR
 | [RAG 流水线运维](11_MLOps_Pipeline/Orchestration/RAG_Pipeline_Ops.md) | 切块版本化、Embedding 升级策略、索引重建、检索质量监控（侧重 Ops） | RAG 系统工程师 |
 | [LLM 成本与延迟 SLO](11_MLOps_Pipeline/Cost/LLM_Cost_Latency_SLO.md) | 三层缓存、智能路由、级联、Token 预算熔断、FinOps | LLM 平台工程师 |
 | [LLM 可观测性](11_MLOps_Pipeline/Observability/LLM_Observability.md) | 五层监控、Trace 分布式追踪、幻觉/毒性/PII 在线检测、Runbook | SRE / LLM 平台 |
+| [LLM 护栏与安全运维 2026](11_MLOps_Pipeline/LLM_Guardrails_and_Safety_Ops_2026.md) | Prompt Injection/PII/毒性检测、Guardrails 编排、审计合规 | AI 安全工程师 / MLOps |
 
 ### 传统 MLOps 主线
 

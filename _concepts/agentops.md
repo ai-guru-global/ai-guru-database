@@ -21,6 +21,10 @@ lifecycle: stable
 tier: supporting
 ---
 
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
+
 # AgentOps
 
 [AgentOps](https://github.com/AgentOps-AI/agentops) 是一个专注于 **AI Agent 可观测性**的平台，提供 Agent 决策链路追踪、工具调用监控、成本分析和性能评估。与 LangSmith/Langfuse 等通用 LLM 可观测性平台不同，AgentOps 特别关注 **Agent 特有的行为模式**——多步决策、工具使用、自我修正、Agent 间通信等。

@@ -323,7 +323,7 @@ curl "https://openrouter.ai/api/v1/models/count?output_modalities=image"
 |------|------|
 | [02 - 快速接入](./02-openrouter-quickstart-setup.md) | 模型切换快速入门 |
 | [04 - 智能路由](./04-openrouter-provider-routing.md) | Provider 选择与路由策略 |
-| [08 - Prompt Caching](./08-openrouter-prompt-caching-[[_concepts/model-training|optimization]].md) | 模型级缓存与成本优化 |
+| [08 - Prompt Caching](16_AI_Coding/Tools/OpenRouter/08-openrouter-prompt-caching-optimization.md) | 模型级缓存与成本优化 |
 | [12 - 企业级高级实践](./12-openrouter-enterprise-advanced.md) | 成本控制策略 |
 
 ---

@@ -227,4 +227,4 @@ GPU 3: Layer 24-31 ──► 输出
 
 ---
 
-**参见**：[[Ray_Deep_Dive]] · [[FSDP_Deep_Dive]] · [[Megatron_LM_Deep_Dive]] · [[_concepts/distributed-parallelism]] · [[07_Model_Training/README|07_Model_Training]] · [[Distributed_Training]]
+**参见**：[[Ray_Deep_Dive]] · [[FSDP_Deep_Dive]] · [[Megatron_LM_Deep_Dive]] · [[_concepts/distributed-parallelism]] · [[07_Model_Training/README|07_Model_Training]] · [[07_Model_Training/Distributed_Training/index]]

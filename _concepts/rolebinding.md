@@ -18,6 +18,10 @@ relationships:
     type: related_to
 ---
 
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
+
 # RoleBinding
 
 > **一句话理解**: RoleBinding 是 K8s 的「授权通知书」——把某个 Role 或 ClusterRole 的权限授予用户、用户组或 ServiceAccount，且只在指定 Namespace 内生效。

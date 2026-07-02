@@ -98,7 +98,7 @@ aliases:
 
 | 课号 | 课程名称 | 关键概念 | 本库建议配合阅读 | 页面链接 |
 |------|----------|----------|------------------|----------|
-| 07 | 规划设计模式 | 目标定义、任务分解、结构化输出、Planner Agent、迭代重规划 | [[15_Agent_Production/Agent_Workflow/Workflow-in-nutshell]]、[[15_Agent_Production/Agent_Workflow/LangGraph_Deep_Dive]]、[[_concepts/ai-agents]] | [[15_Agent_Production/Microsoft_AI_Agents_L07_Planning]] |
+| 07 | 规划设计模式 | 目标定义、任务分解、结构化输出、Planner Agent、迭代重规划 | [[15_Agent_Production/Agent_Workflow/Workflow-in-nutshell]]、[[15_Agent_Production/Agent_Workflow/LangGraph_Deep_Dive]]、[[_concepts/ai-agents]] | [[15_Agent_Production/Agent_Workflow/Workflow-in-nutshell|规划设计模式]] |
 | 08 | 多代理设计模式 | 通信、协调、Agent 架构、可见性、Group Chat / Hand-off / Collaborative Filtering | [[15_Agent_Production/Agent_Frameworks/AutoGen_Deep_Dive]]、[[15_Agent_Production/Agent_Workflow/Agentic_Workflow_Design_Patterns_2026]]、[[15_Agent_Production/Agent_Protocols/A2A_Protocol_Deep_Dive]] | [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents_L08_Multi_Agent]] |
 | 09 | 元认知设计模式 | 自我反思、Corrective RAG、预加载上下文、LLM 重排序、代码生成 | [[15_Agent_Production/Agentic_Design_Patterns_AndrewNg]]、[[14_RAG_Systems/Advanced_RAG/RAG_Advanced_2026]] | — |
 
@@ -116,10 +116,10 @@ aliases:
 |------|----------|----------|------------------|----------|
 | 13 | 管理 Agentic 记忆 | 工作/短期/长期记忆、Persona/Episodic/Entity Memory、Mem0、Cognee、Structured RAG | [[15_Agent_Production/Memory_Infrastructure/Agent_Memory_Systems_2026]]、[[15_Agent_Production/Memory_Infrastructure/Agent_Memory_Techniques]]、[[14_RAG_Systems/RAG_Systems]] | [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents_L13_Agent_Memory]] |
 | 14 | 探索 Microsoft Agent Framework | MAF 编排模式、Agent/Thread/Middleware、Workflows、OpenTelemetry | [[15_Agent_Production/Agent_Frameworks/README]]、[[15_Agent_Production/Agent_Workflow/Workflow-in-nutshell]]、[[13_AI_Ops/AI_Observability_Guide_2026]] | — |
-| 15 | 构建计算机使用代理（CUA） | Browser-Use + Playwright + CDP、Vision、结构化输出、Agent vs Actor | [[15_Agent_Production/Agent_Skills/Agent_Skills_Ecosystem_Catalog]]、[[15_Agent_Production/Agent_Skills/Agent_Skills_Deep_Dive]]、[[04_Computer_Vision/Multimodal_Vision/Multimodal_Vision_Models_2026]] | — |
+| 15 | 构建计算机使用代理（CUA） | Browser-Use + Playwright + CDP、Vision、结构化输出、Agent vs Actor | [[15_Agent_Production/Agent_Skills/Agent_Skills_Ecosystem_Catalog]]、[[15_Agent_Production/Agent_Skills/Agent_Skills_Deep_Dive]]、[[04_Computer_Vision/Multimodal_Vision/Multimodal_Vision|多模态视觉模型]] | — |
 | 16 | 部署可扩展代理 | *Coming Soon* | [[12_Architecture_Infrastructure/Architecture_Overview/AI_Infrastructure_2026]]、[[10_Deployment_Inference/Deployment_Inference_2026]] | — |
 | 17 | 创建本地 AI 代理 | *Coming Soon* | [[05_NLP_LLMs/Edge_LLM/Edge_LLM_Deep_Dive]]、[[10_Deployment_Inference/Inference_Engines/LiteRT_Deep_Dive]] | — |
-| 18 | 使用加密收据保护 AI 代理 | Ed25519 签名、JCS 规范化、SHA-256 哈希链、离线验证、审计边界 | [[17_Ethics_Safety/AI_Security_2026/AI_Security_2026]]、[[17_Ethics_Safety/AI_Governance_Compliance_2026]]、[[17_Ethics_Safety/Guardrails_Production_Guide]] | [[15_Agent_Production/Microsoft_AI_Agents_L18_Securing_Agents]] |
+| 18 | 使用加密收据保护 AI 代理 | Ed25519 签名、JCS 规范化、SHA-256 哈希链、离线验证、审计边界 | [[17_Ethics_Safety/AI_Security_2026/AI_Security_2026]]、[[17_Ethics_Safety/AI_Governance_Compliance_2026]]、[[17_Ethics_Safety/Guardrails_Production_Guide]] | [[17_Ethics_Safety/AI_Security_2026/AI_Security_2026|AI 代理安全]] |
 
 ---
 

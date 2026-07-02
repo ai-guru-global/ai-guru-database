@@ -33,6 +33,8 @@ tier: core
 | [OpenCompass Deep Dive](./Evaluation_Tools/OpenCompass_Deep_Dive.md) | 上海 AI Lab 一站式评测平台：中文/多模态/CompassRank | 进阶 |
 | [Fairness Evaluation](./Fairness_Evaluation_for_dummy.md) | 公平性评估入门 | 初学者 |
 | [LLM 评估与测试大白话](./Benchmarks/LLM_Benchmarks_for_dummy.md) | BBH、Arena、红队测试、CI 集成评估、A/B 测试框架大白话 | 初学者 |
+| [**LLM 评估方法论 2026**](./LLM_Evaluation_2026.md) | 自动化基准、人工评估、LLM-as-Judge、评估流水线 | 所有从业者 |
+| [**RAG 评估深度解析**](./RAG_Evaluation_Deep_Dive.md) | 检索/生成评估、RAGAS/Ares/TruLens、LLM-as-Judge 偏见控制、A/B 测试 | RAG 开发者 |
 
 ---
 

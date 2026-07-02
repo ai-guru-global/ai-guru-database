@@ -12,6 +12,10 @@ aliases:
   - CI_CD_Pipeline_AI_2026
 
 ---
+
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
 # AI 系统 CI/CD 流水线 2026 (CI/CD Pipeline for AI)
 
 > **一句话理解**: AI 系统的 CI/CD 就像"智能工厂的生产线"——不仅自动测试和部署代码，还要自动训练模型、评估质量、监控性能，确保每次更新都是安全可靠的。
@@ -368,7 +372,7 @@ git tag -a data-v2.1 -m "Training data version 2.1"
 
 ## 7. 与其他章节的关联
 
-- [MLOps 流水线](./README.md) — 训练到部署的完整流程
+- [MLOps 流水线](../README.md) — 训练到部署的完整流程
 - [模型评估](../../08_Model_Evaluation/README.md) — 质量门禁的评估方法
 - [部署推理](../../10_Deployment_Inference/README.md) — 模型服务化技术
 - [混沌工程](../../13_AI_Ops/SRE_Reliability/Chaos_Engineering_AI.md) — 故障注入测试

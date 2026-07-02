@@ -124,4 +124,4 @@ P(A ≻ B) = A 比 B 更好的概率
 - [[_concepts/rlhf]] — RLHF 总览
 - [[_concepts/dpo]] / [[_concepts/ppo]] / [[_concepts/kto]] / [[_concepts/ipo]] / [[_concepts/orpo]] / [[_concepts/grpo]]
 - [[_concepts/sft]] — SFT（偏好学习的前置阶段）
-- [[07_Model_Training/Alignment]] — 对齐章节
+- [[07_Model_Training/Alignment/index]] — 对齐章节

@@ -10,6 +10,10 @@ aliases:
   - "CrashLoopBackOff 诊断"
 
 ---
+
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
 # K8s Pod 故障远程诊断决策树
 
 > **核心洞察**：Pod 故障占 K8s 工单的 40%+。远程诊断的关键不是直接修复，而是通过**分层提问 + 指导用户验证**快速收敛根因。80% 的 Pod 故障可以通过 `kubectl describe pod` 的 Events 段和 `kubectl logs` 定位。

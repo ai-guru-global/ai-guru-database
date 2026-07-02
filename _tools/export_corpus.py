@@ -1,400 +1,551 @@
 #!/usr/bin/env python3
-"""Export work-order agent corpus for AgentScope NAS mount.
+"""Export the ai-guru-database wiki as a self-contained AgentScope corpus.
 
-Selects the relevant subset of the LLM-Wiki, cleans duplicates,
-preserves wikilink structure, and outputs a self-contained corpus
-directory that an AgentScope agent can load as its knowledge base.
+Single canonical exporter with two scopes:
+
+  --scope full     every non-excluded .md in the vault (transitive closure
+                   from the diagnosis hub is computed for reachability stats)
+  --scope subset   only K8s / GPU / ops-relevant directories (token-budget
+                   subset); everything else is link-rewritten away
+
+Both scopes:
+  * Resolve [[wikilinks]] with a robust resolver (exact path → space/underscore
+    variant → directory→README → relative walk-up → unique basename).
+  * REWRITE unresolved links to plain display text so the agent never follows
+    a dead link (disable with --no-rewrite).
+  * Generate corpus_manifest.json, index.md, hot.md, README.md.
 
 Usage:
-    python3 _tools/export_corpus.py --output /nas/agent-corpus
-    python3 _tools/export_corpus.py --output /nas/agent-corpus --clean  # remove existing first
-    python3 _tools/export_corpus.py --output /nas/agent-corpus --dry-run  # preview only
+    python3 _tools/export_corpus.py --scope full   --output release --clean
+    python3 _tools/export_corpus.py --scope subset --output release --clean
+    python3 _tools/export_corpus.py --scope full --dry-run
 """
-import os, re, sys, json, shutil, hashlib, argparse
+import os, re, sys, json, shutil, argparse
 from pathlib import Path
 from datetime import datetime
+from collections import deque, Counter, defaultdict
 
-# ── Corpus selection rules ──────────────────────────────────────────
+BASE_DIR = Path(__file__).resolve().parent.parent
 
-# Directories whose content is relevant to the work-order agent
+# ── Scope: full ─────────────────────────────────────────────────────
+# Directory names never exported (tooling / hidden / caches / raw sources)
+EXCLUDE_DIR_NAMES = {
+    "_raw", "_sources", "_archives", "_tools",
+    "Web", "node_modules", "release",
+    ".git", ".obsidian", ".claude", ".venv", ".qoder", ".qwen",
+    ".comate", ".crush", ".pytest_cache", "__pycache__", ".github",
+    ".githooks", "dist", "site", "test-results", ".lighthouseci",
+}
+
+# Root-level meta files always included in full scope
+EXTRA_ROOT_FILES = [
+    "README.md", "README_EN.md", "README_for_dummy.md",
+    "ROADMAP.md", "KNOWN_ISSUES.md", "CONTRIBUTING.md",
+]
+
+# ── Scope: subset ───────────────────────────────────────────────────
 CORPUS_DIRS = [
-    "_concepts",
-    "_synthesis",
-    "12_Architecture_Infrastructure",
-    "13_AI_Ops",
-    "07_Model_Training",
-    "10_Deployment_Inference",
-    "11_MLOps_Pipeline",
-    "14_RAG_Systems",
+    "_concepts", "_synthesis",
+    "12_Architecture_Infrastructure", "13_AI_Ops",
+    "07_Model_Training", "10_Deployment_Inference",
+    "11_MLOps_Pipeline", "14_RAG_Systems",
     "15_Agent_Production/Agent_Evaluation",
     "15_Agent_Production/Agent_Harness",
     "15_Agent_Production/Agent_Foundations",
     "_projects/Cloud_Ops_Agent",
 ]
-
-# Specific files outside CORPUS_DIRS that are needed
-EXTRA_FILES = [
-    "index.md",
-    "hot.md",
-    "README.md",
-]
-
-# Directories to always exclude (even if inside a CORPUS_DIR)
-EXCLUDE_PATTERNS = [
+TIER_FILTER = {"core", "supporting"}
+# segment names excluded even inside CORPUS_DIRS
+EXCLUDE_SEGMENTS = {
     "_raw", "_sources", "_archives", "_tools", "Web", "node_modules",
     ".git", ".obsidian", ".claude", ".venv", ".qoder", ".qwen",
     ".comate", ".crush", ".pytest_cache", "__pycache__", ".github",
-    "dist", "site", "test-results", ".lighthouseci", "assets",
-    "demo", "__pycache__",
-]
+    "dist", "site", "test-results", ".lighthouseci", "assets", "demo",
+}
 
-# File patterns to exclude
-def should_exclude(filepath):
-    """Return True if file should be excluded from export."""
-    # macOS duplicates
-    if " 2.md" in filepath or " 3.md" in filepath:
-        return True
-    # Hidden files
-    if os.path.basename(filepath).startswith("."):
-        return True
-    # Non-md files (we only export markdown)
-    if not filepath.endswith(".md"):
-        return True
-    # Exclude test/template files
-    lower = filepath.lower()
-    if any(p in lower for p in EXCLUDE_PATTERNS):
+ENTRY = "_synthesis/diagnosis-work-order-hub.md"
+
+LINK_RE = re.compile(r"\[\[([^\[\]]+)\]\]")
+FRONTMATTER_RE = re.compile(r"^---\s*\n(.*?)\n---", re.DOTALL)
+FIELD_RE = re.compile(r"^([A-Za-z_][\w-]*)\s*:\s*(.+)$", re.MULTILINE)
+
+
+# ── Frontmatter / wikilink parsing ──────────────────────────────────
+
+def parse_frontmatter(text):
+    m = FRONTMATTER_RE.match(text)
+    if not m:
+        return {}
+    fm = {}
+    for mm in FIELD_RE.finditer(m.group(1)):
+        fm[mm.group(1)] = mm.group(2).strip().strip("\"'")
+    return fm
+
+def extract_wikilinks(text):
+    out = []
+    for m in LINK_RE.finditer(text):
+        raw = m.group(1)
+        t = raw.split("|")[0].split("#")[0].strip()
+        if t and not t.startswith("http"):
+            out.append(t)
+    return out
+
+
+# ── Exclusion helpers ───────────────────────────────────────────────
+
+def is_macos_dup(name):
+    return bool(re.search(r"\s[2345]\.md$", name))
+
+def exclude_full_dir(name):
+    return name in EXCLUDE_DIR_NAMES or name.startswith(".")
+
+def exclude_full_file(name):
+    if not name.endswith(".md") or name.startswith(".") or is_macos_dup(name):
         return True
     return False
 
-# Tier filter: only export core + supporting (skip peripheral for token budget)
-TIER_FILTER = {"core", "supporting"}
+def should_exclude_subset(rel):
+    if is_macos_dup(rel) or not rel.endswith(".md"):
+        return True
+    if os.path.basename(rel).startswith("."):
+        return True
+    segments = {s.lower() for s in re.split(r"[\\/]", rel)}
+    return any(p.lower() in segments for p in EXCLUDE_SEGMENTS)
 
-def parse_frontmatter(content):
-    """Extract frontmatter fields."""
-    fm = {}
-    m = re.match(r'^---\s*\n(.*?)\n---', content, re.DOTALL)
-    if not m:
-        return fm
-    block = m.group(1)
-    for field in ["title", "summary", "tier", "category", "tags", "created", "updated"]:
-        m2 = re.search(rf'^{field}\s*:\s*(.+)$', block, re.MULTILINE)
-        if m2:
-            val = m2.group(1).strip().strip('"').strip("'")
-            fm[field] = val
-    # Parse aliases
-    alias_m = re.search(r'^aliases?\s*:\s*\n((?:^\s+-\s+.+\n)+)', block, re.MULTILINE)
-    if alias_m:
-        aliases = re.findall(r'-\s+"?([^"\n]+?)"?\s*$', alias_m.group(1), re.MULTILINE)
-        fm["aliases"] = aliases
-    return fm
 
-def extract_wikilinks(content):
-    """Extract all [[wikilink]] targets."""
-    targets = set()
-    for m in re.finditer(r'\[\[([^\]]+)\]\]', content):
-        t = m.group(1).split("|")[0].split("#")[0].strip()
-        if t and not t.startswith("http"):
-            targets.add(t)
-    return targets
+# ── Scanning / selection ────────────────────────────────────────────
 
-def select_corpus(base_dir):
-    """Select the files to export."""
-    base = Path(base_dir)
-    selected = []
-    stats = {"total_scanned": 0, "selected": 0, "excluded_dup": 0,
-             "excluded_pattern": 0, "excluded_tier": 0, "excluded_dir": 0}
+def _page(rel, abs_p, text=None, tier_override=None):
+    text = text if text is not None else abs_p.read_text(encoding="utf-8", errors="ignore")
+    fm = parse_frontmatter(text)
+    return {
+        "path": rel,
+        "abs_path": str(abs_p),
+        "title": fm.get("title", Path(rel).stem),
+        "tier": tier_override or fm.get("tier", "supporting"),
+        "summary": (fm.get("summary") or "")[:240],
+        "size": abs_p.stat().st_size,
+        "links": extract_wikilinks(text),
+    }
 
-    # Scan CORPUS_DIRS
+def select_full(root):
+    pages = {}
+    for dirpath, dirnames, filenames in os.walk(root):
+        dirnames[:] = [d for d in dirnames if not exclude_full_dir(d)]
+        for fn in filenames:
+            if exclude_full_file(fn):
+                continue
+            abs_p = Path(dirpath) / fn
+            rel = abs_p.relative_to(root).as_posix()
+            pages[rel] = _page(rel, abs_p)
+    for extra in EXTRA_ROOT_FILES:
+        fp = root / extra
+        if fp.exists() and fp.is_file():
+            pages[extra] = _page(extra, fp)
+    return list(pages.values())
+
+def select_subset(base):
+    pages = {}
     for corpus_dir in CORPUS_DIRS:
         full_dir = base / corpus_dir
         if not full_dir.exists():
             continue
-        for filepath in sorted(full_dir.rglob("*.md")):
-            stats["total_scanned"] += 1
-            rel = filepath.relative_to(base)
-            rel_str = str(rel)
-
-            if should_exclude(rel_str):
-                if " 2.md" in rel_str:
-                    stats["excluded_dup"] += 1
-                else:
-                    stats["excluded_pattern"] += 1
+        for fp in sorted(full_dir.rglob("*.md")):
+            rel = fp.relative_to(base).as_posix()
+            if should_exclude_subset(rel):
                 continue
-
-            # Read and check tier
-            try:
-                content = filepath.read_text(encoding="utf-8", errors="ignore")
-            except:
-                continue
-            fm = parse_frontmatter(content)
-            tier = fm.get("tier", "supporting")
+            text = fp.read_text(encoding="utf-8", errors="ignore")
+            tier = parse_frontmatter(text).get("tier", "supporting")
             if tier not in TIER_FILTER:
-                stats["excluded_tier"] += 1
                 continue
+            pages[rel] = _page(rel, fp, text, tier_override=tier)
+    return list(pages.values())
 
-            selected.append({
-                "path": rel_str,
-                "abs_path": str(filepath),
-                "tier": tier,
-                "title": fm.get("title", filepath.stem),
-                "summary": fm.get("summary", "")[:200],
-                "tags": fm.get("tags", ""),
-                "size": filepath.stat().st_size,
-                "wikilinks": list(extract_wikilinks(content)),
-            })
-            stats["selected"] += 1
 
-    # Add EXTRA_FILES from root
-    for extra in EXTRA_FILES:
-        fp = base / extra
-        if fp.exists() and not should_exclude(extra):
-            try:
-                content = fp.read_text(encoding="utf-8", errors="ignore")
-            except:
-                continue
-            fm = parse_frontmatter(content)
-            selected.append({
-                "path": extra,
-                "abs_path": str(fp),
-                "tier": fm.get("tier", "supporting"),
-                "title": fm.get("title", extra),
-                "summary": fm.get("summary", "")[:200],
-                "tags": fm.get("tags", ""),
-                "size": fp.stat().st_size,
-                "wikilinks": list(extract_wikilinks(content)),
-            })
-            stats["selected"] += 1
+# ── Robust resolver (shared by stats + rewriting) ───────────────────
 
-    return selected, stats
+def build_index(pages):
+    all_paths = {p["path"] for p in pages}
+    basename_index = defaultdict(set)
+    for p in pages:
+        basename_index[Path(p["path"]).stem].add(p["path"])
+    return all_paths, basename_index
 
-def build_link_index(selected):
-    """Build a wikilink resolution index for the exported corpus."""
-    # basename -> exported path
-    basename_map = {}
-    for item in selected:
-        bn = Path(item["path"]).stem
-        basename_map[bn] = item["path"]
-        # Also map aliases
-        # (parse from frontmatter in the actual file)
-    return basename_map
+def resolve_target(target, all_paths, basename_index, source_path=""):
+    """Resolve a wikilink target to a real path, or None.
 
-def export_corpus(selected, output_dir, base_dir, dry_run=False):
-    """Copy selected files to output directory."""
+    Order: exact path → space/underscore variant → dir→README →
+    relative-to-source walk-up → unique basename.
+    """
+    if not target or target.startswith("http"):
+        return target  # external / empty: treat as resolved (leave untouched)
+    raw = target.rstrip("/").lstrip("./")
+    cand = raw if raw.endswith(".md") else raw + ".md"
+
+    if cand in all_paths:
+        return cand
+    for v in (cand.replace(" ", "_"), cand.replace("_", " ")):
+        if v in all_paths:
+            return v
+    for d in (raw, raw.replace(" ", "_"), raw.replace("_", " ")):
+        if f"{d}/README.md" in all_paths:
+            return f"{d}/README.md"
+    if source_path:
+        src_dir = Path(source_path).parent
+        for ancestor in (src_dir, *src_dir.parents):
+            pre = "" if str(ancestor) == "." else f"{ancestor}/"
+            for d in (raw, raw.replace(" ", "_"), raw.replace("_", " ")):
+                c = f"{pre}{d if d.endswith('.md') else d+'.md'}"
+                if c in all_paths:
+                    return c
+                r = f"{pre}{d}/README.md"
+                if r in all_paths:
+                    return r
+    stem = Path(cand).stem
+    hits = basename_index.get(stem)
+    if hits and len(hits) == 1:
+        return next(iter(hits))
+    return None
+
+
+# ── Link rewriting ──────────────────────────────────────────────────
+
+def rewrite_wikilinks(text, all_paths, basename_index, source_path):
+    """Keep resolved links; convert unresolved ones to plain display text."""
+    rewritten = 0
+
+    def repl(m):
+        nonlocal rewritten
+        inner = m.group(1)
+        parts = inner.split("|", 1)
+        target = parts[0].split("#")[0].strip()
+        alias = parts[1].split("#")[0].strip() if len(parts) > 1 else ""
+        resolved = resolve_target(target, all_paths, basename_index, source_path)
+        if resolved is not None:
+            return m.group(0)
+        rewritten += 1
+        if alias:
+            return alias
+        stem = os.path.splitext(os.path.basename(target))[0]
+        return stem.replace("-", " ").replace("_", " ")
+
+    new_text = LINK_RE.sub(repl, text)
+    return new_text, rewritten
+
+
+# ── Reachability (BFS from entry) ───────────────────────────────────
+
+def compute_reachable(pages, all_paths, basename_index):
+    by_path = {p["path"]: p for p in pages}
+    if ENTRY not in by_path:
+        return set()
+    seen = {ENTRY}
+    queue = deque([ENTRY])
+    while queue:
+        cur = queue.popleft()
+        for t in by_path[cur]["links"]:
+            r = resolve_target(t, all_paths, basename_index, source_path=cur)
+            if r in by_path and r not in seen:
+                seen.add(r)
+                queue.append(r)
+    return seen
+
+
+# ── Export (write with rewriting) ───────────────────────────────────
+
+def export_files(pages, output_dir, all_paths, basename_index, rewrite, dry_run):
     out = Path(output_dir)
-    base = Path(base_dir)
-
     if not dry_run:
-        # Create output directory
         out.mkdir(parents=True, exist_ok=True)
-
-    exported = []
     total_size = 0
+    total_rewritten = 0
+    resolved_count = 0
+    broken_count = 0
+    per_page_status = {}  # path -> (resolved_links, broken_links)
 
-    for item in selected:
-        src = Path(item["abs_path"])
-        dst = out / item["path"]
+    for p in pages:
+        text = Path(p["abs_path"]).read_text(encoding="utf-8", errors="ignore")
+        res, brk = [], []
+        for t in p["links"]:
+            r = resolve_target(t, all_paths, basename_index, source_path=p["path"])
+            (res if r else brk).append(t)
+        resolved_count += len(res)
+        broken_count += len(brk)
+        per_page_status[p["path"]] = (res, brk)
+
+        if rewrite:
+            text, rw = rewrite_wikilinks(text, all_paths, basename_index, p["path"])
+            total_rewritten += rw
 
         if not dry_run:
+            dst = out / p["path"]
             dst.parent.mkdir(parents=True, exist_ok=True)
-            shutil.copy2(src, dst)
+            dst.write_text(text, encoding="utf-8")
+        total_size += p["size"]
 
-        exported.append({
-            "path": item["path"],
-            "tier": item["tier"],
-            "title": item["title"],
-            "size": item["size"],
-        })
-        total_size += item["size"]
+    stats = {
+        "total_internal_links": resolved_count + broken_count,
+        "resolved_internal_links": resolved_count,
+        "broken_internal_links": broken_count,
+        "unique_broken_targets": len({t for _, (r, b) in per_page_status.items() for t in b}),
+        "links_rewritten": total_rewritten,
+    }
+    return total_size, stats, per_page_status
 
-    return exported, total_size
 
-def write_corpus_manifest(selected, output_dir, stats):
-    """Write a corpus_manifest.json for AgentScope to load."""
+# ── Manifest / index / hot / README ─────────────────────────────────
+
+def write_manifest(pages, stats, reachable, per_page_status, scope, total_size, output_dir):
+    tier_stats = {}
+    for p in pages:
+        tier_stats.setdefault(p["tier"], {"count": 0, "size": 0})
+        tier_stats[p["tier"]]["count"] += 1
+        tier_stats[p["tier"]]["size"] += p["size"]
+
+    categories = {
+        "diagnosis_hub": ENTRY,
+        "pod_failure": "_synthesis/diagnosis-k8s-pod-failure.md",
+        "network_failure": "_synthesis/diagnosis-k8s-network-failure.md",
+        "storage_failure": "_synthesis/diagnosis-k8s-storage-failure.md",
+        "gpu_failure": "_synthesis/diagnosis-gpu-ai-workload-failure.md",
+    }
+    present = {p["path"] for p in pages}
+    categories = {k: (v if v in present else None) for k, v in categories.items()}
+
     manifest = {
-        "name": "k8s-work-order-agent-corpus",
-        "description": "阿里云专有云 K8s 工单智能体远程诊断语料",
-        "version": "1.0.0",
-        "exported_at": datetime.now().isoformat(),
+        "name": f"ai-guru-corpus-{scope}",
+        "description": "AI Guru 知识库语料（AgentScope 智能体 NAS 挂载，LLM-Wiki 模式）",
+        "scope": scope,
+        "version": "3.0.0",
+        "exported_at": datetime.now().isoformat(timespec="seconds"),
         "source_repo": "ai-guru-global/ai-guru-database",
         "usage": {
             "mode": "llm-wiki",
-            "description": "智能体通过 wiki-query / wiki-context-pack 方式使用本语料，非 RAG 向量检索",
-            "entry_point": "_synthesis/diagnosis-work-order-hub.md",
-            "tier_priority": ["core", "supporting"],
+            "entry_point": ENTRY,
+            "link_resolution": "basename + relative path (spaces/underscores interchangeable); unresolved links rewritten to plain text",
         },
         "stats": {
-            "total_pages": len(selected),
-            "total_size_bytes": sum(item["size"] for item in selected),
-            "total_size_mb": round(sum(item["size"] for item in selected) / 1024 / 1024, 2),
-            "by_tier": {},
+            "total_pages": len(pages),
+            "total_size_bytes": total_size,
+            "total_size_mb": round(total_size / 1024 / 1024, 2),
+            "reachable_from_entry": len(reachable),
+            "total_internal_links": stats["total_internal_links"],
+            "resolved_internal_links": stats["resolved_internal_links"],
+            "broken_internal_links": stats["broken_internal_links"],
+            "unique_broken_targets": stats["unique_broken_targets"],
+            "links_rewritten": stats["links_rewritten"],
+            "by_tier": tier_stats,
         },
-        "categories": {
-            "diagnosis_hub": "_synthesis/diagnosis-work-order-hub.md",
-            "pod_failure": "_synthesis/diagnosis-k8s-pod-failure.md",
-            "network_failure": "_synthesis/diagnosis-k8s-network-failure.md",
-            "storage_failure": "_synthesis/diagnosis-k8s-storage-failure.md",
-            "gpu_failure": "_synthesis/diagnosis-gpu-ai-workload-failure.md",
-            "troubleshooting": "13_AI_Ops/Kubernetes_Troubleshooting_Playbook.md",
-            "alicloud_context": "12_Architecture_Infrastructure/Alibaba_Cloud_Proprietary_K8s_Context.md",
-        },
-        "pages": [],
+        "categories": categories,
+        "pages": [
+            {
+                "path": p["path"],
+                "title": p["title"],
+                "tier": p["tier"],
+                "summary": p["summary"],
+                "size_bytes": p["size"],
+                "reachable_from_entry": p["path"] in reachable,
+                "broken_links": per_page_status[p["path"]][1],
+            }
+            for p in pages
+        ],
     }
-
-    # Stats by tier
-    tier_stats = {}
-    for item in selected:
-        t = item["tier"]
-        if t not in tier_stats:
-            tier_stats[t] = {"count": 0, "size": 0}
-        tier_stats[t]["count"] += 1
-        tier_stats[t]["size"] += item["size"]
-    manifest["stats"]["by_tier"] = tier_stats
-
-    # Page list
-    for item in selected:
-        manifest["pages"].append({
-            "path": item["path"],
-            "title": item["title"],
-            "tier": item["tier"],
-            "summary": item["summary"],
-            "size_bytes": item["size"],
-        })
-
-    out_path = Path(output_dir) / "corpus_manifest.json"
-    out_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
+    Path(output_dir, "corpus_manifest.json").write_text(
+        json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
     return manifest
 
-def write_corpus_readme(selected, output_dir):
-    """Write a README for the exported corpus."""
-    core_pages = [p for p in selected if p["tier"] == "core"]
-    readme = f"""# K8s 工单智能体远程诊断语料
+def _wikilink_for(path, title, basename_index):
+    """Unambiguous wikilink: path-form always resolves; bare stem only if unique."""
+    stem = Path(path).stem
+    if len(basename_index.get(stem, set())) == 1:
+        return f"[[{stem}|{title}]]"
+    return f"[[{Path(path).with_suffix('').as_posix()}|{title}]]"
 
-> 本语料库为阿里云专有云 K8s 工单智能体的知识库，采用 LLM-Wiki 模式使用。
+def write_index(pages, output_dir, basename_index, reachable):
+    indegree = Counter()
+    all_paths, _ = build_index(pages)
+    for p in pages:
+        for t in p["links"]:
+            r = resolve_target(t, all_paths, basename_index, source_path=p["path"])
+            if r and r != p["path"]:
+                indegree[r] += 1
 
-## 语料结构
+    by_dir = defaultdict(list)
+    for p in pages:
+        by_dir[p["path"].split("/")[0]].append(p)
+    order = sorted(by_dir, key=lambda d: (d.isdigit() is False, d))
 
-```
-corpus/
-├── corpus_manifest.json          ← 语料清单（AgentScope 加载入口）
-├── README.md                     ← 本文件
-├── _synthesis/                   ← 诊断决策树（智能体入口）
-│   ├── diagnosis-work-order-hub.md       ← 工单诊断总入口
-│   ├── diagnosis-k8s-pod-failure.md      ← Pod 故障决策树
-│   ├── diagnosis-k8s-network-failure.md  ← 网络故障决策树
-│   ├── diagnosis-k8s-storage-failure.md  ← 存储故障决策树
-│   └── diagnosis-gpu-ai-workload-failure.md ← GPU/AI 负载决策树
-├── _concepts/                    ← K8s/GPU/云 原子概念页
-├── 12_Architecture_Infrastructure/ ← K8s 深度页 + 专有云上下文
-├── 13_AI_Ops/                    ← 排障 Playbook + Runbook
-├── 07_Model_Training/            ← 训练故障 Runbook
-├── 10_Deployment_Inference/      ← 推理部署 Runbook
-├── 11_MLOps_Pipeline/            ← MLOps 排障
-├── 14_RAG_Systems/               ← RAG 系统
-├── 15_Agent_Production/          ← Agent 评估与 Harness
-└── _projects/Cloud_Ops_Agent/    ← 云运维 Agent 项目
-```
+    lines = [
+        f"# AI Guru 语料 · 目录（{len(pages)} 页）",
+        "",
+        f"- 智能体入口：[[{Path(ENTRY).stem}|diagnosis-work-order-hub]]",
+        "- 热点页：见 [hot.md](hot.md)",
+        "",
+    ]
+    for top in order:
+        items = sorted(by_dir[top], key=lambda x: x["path"])
+        lines.append(f"## {top}（{len(items)}）\n")
+        for it in items:
+            star = "⭐ " if it["tier"] == "core" else ""
+            deg = f" `{indegree[it['path']]}`" if indegree[it["path"]] else ""
+            orb = " 🔒" if it["path"] not in reachable else ""
+            lines.append(f"- {star}{_wikilink_for(it['path'], it['title'] or Path(it['path']).stem, basename_index)}{deg}{orb}")
+        lines.append("")
+    Path(output_dir, "index.md").write_text("\n".join(lines), encoding="utf-8")
 
-## 使用方式
+def write_hot(pages, output_dir, basename_index, reachable):
+    all_paths, _ = build_index(pages)
+    indegree = Counter()
+    for p in pages:
+        for t in p["links"]:
+            r = resolve_target(t, all_paths, basename_index, source_path=p["path"])
+            if r and r != p["path"]:
+                indegree[r] += 1
 
-### AgentScope 加载
+    GENERIC = {"README", "index", "INDEX", "Readme"}
+    seen, ranked = set(), []
+    for p in sorted(pages, key=lambda x: (-indegree[x["path"]], x["path"])):
+        if p["tier"] != "core":
+            continue
+        stem = Path(p["path"]).stem
+        if stem in GENERIC or p["path"] in seen:
+            continue
+        seen.add(p["path"])
+        ranked.append(p)
+        if len(ranked) >= 30:
+            break
 
-```python
-import json
+    core_n = sum(1 for p in pages if p["tier"] == "core")
+    lines = [
+        "# 语料热点页（Core，按语料内被引用排序）",
+        "",
+        f"> 共 {core_n} 个 Core 页，下表为被引用最多的前 {len(ranked)} 个。",
+        "",
+        "| # | 页面 | 被引用 |",
+        "|---|------|-------|",
+    ]
+    for i, p in enumerate(ranked, 1):
+        lines.append(f"| {i} | {_wikilink_for(p['path'], p['title'], basename_index)} | {indegree[p['path']]} |")
+    lines += ["", "## 诊断决策树入口", ""]
+    for hub in ["diagnosis-work-order-hub", "diagnosis-k8s-pod-failure",
+                "diagnosis-k8s-network-failure", "diagnosis-k8s-storage-failure",
+                "diagnosis-gpu-ai-workload-failure"]:
+        hits = [p for p in pages if Path(p["path"]).stem == hub]
+        if hits:
+            lines.append(f"- [[{hub}]]")
+    # Surface unreachable core pages (orphans) so they are not silently lost
+    orphans = [p for p in pages if p["tier"] == "core" and p["path"] not in reachable]
+    if orphans:
+        lines += ["", f"## ⚠ 入口不可达的 Core 页（{len(orphans)}，需手动链入）", ""]
+        for p in orphans[:25]:
+            lines.append(f"- {_wikilink_for(p['path'], p['title'], basename_index)}")
+    Path(output_dir, "hot.md").write_text("\n".join(lines), encoding="utf-8")
 
-# 加载语料清单
-with open("corpus_manifest.json") as f:
-    manifest = json.load(f)
+def write_readme(manifest, scope, output_dir):
+    s = manifest["stats"]
+    rate = s["resolved_internal_links"] / max(1, s["total_internal_links"]) * 100
+    root_name = os.path.basename(os.path.abspath(output_dir)) or "corpus"
+    scope_note = ("完整知识库（全量）" if scope == "full"
+                  else "K8s/GPU/运维子集（token 预算优化）")
+    readme = f"""# AI Guru 语料（{scope_note}）
 
-# 诊断入口（智能体应从此页开始）
-entry = manifest["categories"]["diagnosis_hub"]
-# → _synthesis/diagnosis-work-order-hub.md
-
-# 按工单类型路由
-categories = manifest["categories"]
-# categories["pod_failure"] → Pod 故障决策树
-# categories["network_failure"] → 网络故障决策树
-# categories["storage_failure"] → 存储故障决策树
-# categories["gpu_failure"] → GPU 故障决策树
-```
-
-### 智能体工作流
-
-1. 收到工单 → 读取 `diagnosis-work-order-hub.md`
-2. 按工单现象分类 → 进入对应诊断决策树
-3. 沿 wikilink 遍历 → 读取关联 Runbook + 概念页
-4. 给出远程排查建议（含安全分级）
+> AgentScope 智能体 NAS 挂载语料。LLM-Wiki 模式：沿双括号 wikilink 遍历，非 RAG。
+> scope = `{scope}` ｜ 导出脚本：`_tools/export_corpus.py`
 
 ## 统计
 
-- 总页面数: {len(selected)}
-- Core 页面: {len(core_pages)}
-- 总大小: {round(sum(p['size'] for p in selected) / 1024 / 1024, 2)} MB
+| 指标 | 值 |
+| --- | --- |
+| 总页面 | {s['total_pages']} |
+| 入口可达 | {s['reachable_from_entry']} |
+| Core / Supporting | {s['by_tier'].get('core', {}).get('count', 0)} / {s['by_tier'].get('supporting', {}).get('count', 0)} |
+| 总大小 | {s['total_size_mb']} MB |
+| 内部链接 | {s['total_internal_links']}（已解析 {s['resolved_internal_links']}，断链 {s['broken_internal_links']}） |
+| 链接解析率 | {rate:.1f}% |
+| 已重写为纯文本的死链 | {s['links_rewritten']} |
+
+## 使用
+
+```python
+import json
+from pathlib import Path
+root = Path("{root_name}")
+manifest = json.load(open(root / "corpus_manifest.json"))
+entry = root / manifest["categories"]["diagnosis_hub"]   # 诊断总入口
+# 按 basename 解析双括号 wikilink（空格/下划线可互换）；未解析链接已被改写为纯文本
+```
+
+## 智能体工作流
+1. 收到工单 → 读 `diagnosis-work-order-hub.md`
+2. 按现象分类 → Pod / Network / Storage / GPU 决策树
+3. 沿双括号 wikilink 遍历 → Runbook + 概念页
+4. 输出远程排查建议（含安全分级）
 
 ## 来源
-
 - 源仓库: ai-guru-global/ai-guru-database
 - 导出时间: {datetime.now().strftime('%Y-%m-%d %H:%M')}
-- 使用 LLM-Wiki 模式（非 RAG 向量检索）
 """
-    out_path = Path(output_dir) / "README.md"
-    out_path.write_text(readme, encoding="utf-8")
+    Path(output_dir, "README.md").write_text(readme, encoding="utf-8")
+
+
+# ── Main ────────────────────────────────────────────────────────────
 
 def main():
-    parser = argparse.ArgumentParser(description="Export work-order agent corpus")
-    parser.add_argument("--output", "-o", required=True, help="Output directory (NAS mount)")
-    parser.add_argument("--clean", action="store_true", help="Remove existing output first")
-    parser.add_argument("--dry-run", action="store_true", help="Preview without copying")
-    args = parser.parse_args()
+    ap = argparse.ArgumentParser(description="Export ai-guru corpus (unified)")
+    ap.add_argument("--scope", choices=["full", "subset"], default="full")
+    ap.add_argument("--output", "-o", default="release")
+    ap.add_argument("--clean", action="store_true")
+    ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--no-rewrite", action="store_true",
+                    help="Do not rewrite unresolved links (ship verbatim)")
+    args = ap.parse_args()
 
-    base_dir = os.getcwd()
+    root = BASE_DIR
+    output_dir = (root / args.output).resolve() if not os.path.isabs(args.output) \
+        else Path(args.output).resolve()
 
-    print(f"Selecting corpus from {base_dir}...")
-    selected, stats = select_corpus(base_dir)
+    # Safety guard: never allow --clean to wipe the repo root or a parent
+    if args.clean and output_dir.resolve() in (root.resolve(), *root.resolve().parents):
+        sys.exit(f"[abort] --clean target {output_dir} is the repo root or above; refusing.")
 
-    print(f"\nSelection stats:")
-    print(f"  Scanned:      {stats['total_scanned']}")
-    print(f"  Selected:     {stats['selected']}")
-    print(f"  Excluded dup: {stats['excluded_dup']}")
-    print(f"  Excluded pat: {stats['excluded_pattern']}")
-    print(f"  Excluded tier:{stats['excluded_tier']}")
+    print(f"[export] scope={args.scope}  base={root}  out={output_dir}")
+    pages = select_full(root) if args.scope == "full" else select_subset(root)
+    print(f"  selected: {len(pages)} pages")
 
-    total_size = sum(item["size"] for item in selected)
-    print(f"  Total size:   {total_size / 1024 / 1024:.2f} MB")
+    all_paths, basename_index = build_index(pages)
+    reachable = compute_reachable(pages, all_paths, basename_index)
+    print(f"  reachable from entry: {len(reachable)}")
 
-    # Tier breakdown
-    tier_counts = {}
-    for item in selected:
-        tier_counts[item["tier"]] = tier_counts.get(item["tier"], 0) + 1
-    print(f"  By tier:      {tier_counts}")
+    if not args.dry_run and args.clean and output_dir.exists():
+        print(f"  cleaning {output_dir} ...")
+        shutil.rmtree(output_dir)
+
+    rewrite = not args.no_rewrite
+    # NOTE: link stats are computed against the SOURCE (pre-rewrite) links so
+    # the manifest faithfully reports original resolution quality.
+    total_size, stats, per_page_status = export_files(
+        pages, output_dir, all_paths, basename_index, rewrite, args.dry_run)
+
+    print(f"  links: {stats['resolved_internal_links']}/{stats['total_internal_links']} "
+          f"resolved ({stats['broken_internal_links']} broken)")
+    if rewrite:
+        print(f"  rewritten to plain text: {stats['links_rewritten']}")
 
     if args.dry_run:
-        print(f"\n[DRY RUN] Would export {len(selected)} files to {args.output}")
-        print("\nSample files:")
-        for item in selected[:15]:
-            print(f"  [{item['tier']:10s}] {item['path']}")
-        if len(selected) > 15:
-            print(f"  ... +{len(selected)-15} more")
+        print("\n[DRY RUN] no files written.")
         return
 
-    # Clean if requested
-    if args.clean and os.path.exists(args.output):
-        print(f"\nCleaning {args.output}...")
-        shutil.rmtree(args.output)
+    # Write manifest / index / hot / README (computed above, written now)
+    manifest = write_manifest(pages, stats, reachable, per_page_status,
+                              args.scope, total_size, output_dir)
+    write_index(pages, output_dir, basename_index, reachable)
+    write_hot(pages, output_dir, basename_index, reachable)
+    write_readme(manifest, args.scope, output_dir)
 
-    # Export
-    print(f"\nExporting to {args.output}...")
-    exported, total_exported = export_corpus(selected, args.output, base_dir)
-    print(f"  Exported {len(exported)} files ({total_exported / 1024 / 1024:.2f} MB)")
+    print(f"\n✅ Export complete → {output_dir}")
+    print(f"   pages={len(pages)}  size={manifest['stats']['total_size_mb']} MB  "
+          f"scope={args.scope}")
 
-    # Write manifest and README
-    manifest = write_corpus_manifest(selected, args.output, stats)
-    write_corpus_readme(selected, args.output)
-
-    print(f"\n✅ Export complete:")
-    print(f"   {len(exported)} pages, {total_exported / 1024 / 1024:.2f} MB")
-    print(f"   Manifest: {args.output}/corpus_manifest.json")
-    print(f"   README:   {args.output}/README.md")
-    print(f"   Entry:    {args.output}/{manifest['categories']['diagnosis_hub']}")
 
 if __name__ == "__main__":
     main()

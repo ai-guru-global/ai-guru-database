@@ -35,6 +35,7 @@ tier: supporting
 | [[93_Templates/API_Design_for_AI]] | 1368 | AI 系统 API 设计权威指南：RESTful / GraphQL / gRPC 选型、版本管理、OpenAPI 规范 |
 | [[93_Templates/Documentation_Automation]] | 1068 | AI 文档自动化工具全景：Sphinx / MkDocs / Docusaurus / Vale / Vale 对比 |
 | [[93_Templates/Prompt_Management_Platform]] | 1199 | Prompt 管理平台调研：LangSmith / PromptLayer / Helicone / Langfuse 深度对比 |
+| [[93_Templates/LLM_Gateway_Deep_Dive]] | 572 | LLM Gateway 设计、实现与运维模板：路由、Fallback、限流、成本归因、Terraform/Helm |
 
 ### 项目运维指南
 

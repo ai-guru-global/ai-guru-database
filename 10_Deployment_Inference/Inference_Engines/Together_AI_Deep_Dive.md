@@ -12,6 +12,10 @@ aliases:
   - Together_AI_Deep_Dive
 
 ---
+
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
 # Together AI: 开源模型推理云平台
 
 > **一句话理解**: Together AI 是专注于开源大模型的云端推理平台——模型选择最广、价格有竞争力、OpenAI 兼容，是开源模型云端部署的重要选择。

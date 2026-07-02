@@ -12,6 +12,10 @@ aliases:
   - LMDeploy_Deep_Dive
 
 ---
+
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
 # LMDeploy: InternLM 高性能推理引擎
 
 > **一句话理解**: LMDeploy 是上海人工智能实验室出品的高性能 LLM 推理引擎——TurboMind 加速、中文场景优化、AWQ 量化，是中文业务与国产硬件部署的重要选择。

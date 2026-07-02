@@ -9,6 +9,10 @@ updated: 2026-06-26
 tier: supporting
 ---
 
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
+
 # LLM 推理可观测性栈
 
 > **一句话理解**: LLM 推理可观测性就是盯着「首 token 多久回来、每个 token 多快、排队长不长、KV Cache 满没满」这几件事，及时发现和定位问题。

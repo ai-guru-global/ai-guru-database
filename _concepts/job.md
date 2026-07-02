@@ -19,6 +19,10 @@ relationships:
     type: part_of
 ---
 
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
+
 # Job
 
 > **一句话理解**: Job 是 Kubernetes 中负责把「跑一次就结束」的批处理任务可靠地跑完的调度器——Pod 成功退出即算完成，失败则按策略重试。
@@ -72,7 +76,7 @@ kubectl get jobs -w
 kubectl logs -l job-name=data-migration
 
 # 删除 Job（级联删除其 Pod）
-kubectl delete job data-migration
+kubectl delete job data-migration  # ⚠️ HIGH-RISK — 删除 K8s 资源，服务可能中断 [回滚：见文档/备份]
 ```
 
 ## 常见场景

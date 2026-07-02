@@ -1,0 +1,58 @@
+---
+title: '课题研究 — 小白版 (Research for Beginners)'
+category: '22-research'
+tags: ["research", "beginner", "study-guide"]
+summary: '> **一句话理解**: 这里是你深入研究某个 AI 话题的工作台——带着问题来，带着结论走。'
+created: '2026-06-25'
+updated: '2026-06-25'
+tier: supporting
+---
+# 课题研究 — 小白版 🔬
+
+> **一句话理解**: 这里是你深入研究某个 AI 话题的工作台——带着问题来，带着结论走。
+
+---
+
+## 什么是"课题研究"？
+
+课题研究就是**有目的地深挖一个问题**：
+
+1. 先问一个好问题（比如：RAG 为什么比微调更适合企业知识库？）
+2. 找到相关资料和论文
+3. 分析、对比、做实验
+4. 得出自己的结论
+
+## 怎么用？
+
+### 第一步：选一个你感兴趣的课题
+在 [20_Papers_and_Research](./README.md) 目录下新建一个子目录，比如 `RAG_vs_FineTuning/`。
+
+### 第二步：套模板
+把 [Research_Template.md](./Research_Template.md) 的内容复制到你的目录里，按章节填写。
+
+### 第三步：做调研
+去 [20_Papers](../20_Papers_and_Research/README.md) 找论文，去知识库各章节找背景知识。
+
+### 第四步：写结论
+把你的发现写下来，并关联到知识库的其他部分。
+
+---
+
+## 和"学习"的区别
+
+| 维度 | 学习 (90_Learn) | 课题研究 (20_Papers_and_Research/Methodology) |
+|------|-----------------|----------------------|
+| 目标 | 掌握已有知识 | 探索未知、产出新见解 |
+| 方法 | 跟着课程/路径走 | 提出问题、查文献、做分析 |
+| 产出 | 笔记、概念理解 | 研究报告、对比结论 |
+
+---
+
+*祝你研究顺利！🔬*
+
+## Related
+- [[20_Papers_and_Research/Research_README|课题研究主页 🔬]]
+- [[20_Papers_and_Research/Research_Template|课题研究模板]]
+- [[90_Learn/README|学习路径]]
+
+- [[20_Papers_and_Research/README|22 经典与必读 AI 论文清单 (Essential AI Papers)]]

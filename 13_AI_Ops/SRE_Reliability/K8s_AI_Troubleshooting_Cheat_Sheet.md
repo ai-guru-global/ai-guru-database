@@ -9,6 +9,10 @@ updated: 2026-06-26
 tier: core
 ---
 
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
+
 # K8s for AI 排查速查表
 
 > **使用方式**: 先看现象，再按命令顺序排查。

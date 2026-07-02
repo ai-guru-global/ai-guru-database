@@ -1,0 +1,101 @@
+---
+title: "Prompt 缓存高级技术"
+category: "10-deployment-inference"
+tags: ["prompt-caching", "inference", "optimization", "cost", "latency"]
+summary: "Prompt 缓存是降低 LLM 推理成本和延迟的关键技术,本文覆盖前缀缓存、语义缓存、KV Cache 优化等高级方案。"
+sources:
+  - "https://docs.anthropic.com/en/docs/build-with-claude/prompt-caching"
+  - "https://platform.openai.com/docs/guides/prompt-caching"
+created: 2026-06-12
+updated: 2026-06-12
+lifecycle: reviewed
+tier: supporting
+aliases:
+  - "Prompt Caching Advanced"
+  - Prompt_Caching_Advanced
+
+---
+# Prompt 缓存高级技术
+
+> **一句话理解**: Prompt 缓存是降低 LLM 推理成本和延迟的关键技术,本文覆盖前缀缓存、语义缓存、KV Cache 优化等高级方案。
+
+## 为什么 Prompt 缓存重要?
+
+在 RAG 和 Agent 场景中,大量请求共享相似的系统提示和上下文。缓存可以:
+- **降低成本**: 避免重复计算相同 token
+- **降低延迟**: 缓存命中时响应更快
+- **提升吞吐**: 减少 GPU 计算压力
+
+## 缓存技术分类
+
+### 1. 前缀缓存 (Prefix Caching)
+- **原理**: 缓存 prompt 前缀的 KV Cache
+- **适用**: 系统提示、RAG 上下文
+- **代表**: Anthropic Prompt Caching、vLLM Prefix Caching
+
+### 2. 语义缓存 (Semantic Cache)
+- **原理**: 语义相似的查询命中同一缓存
+- **适用**: FAQ、客服等高频相似查询
+- **代表**: GPTCache、Zilliz
+
+### 3. KV Cache 优化
+- **MQA (Multi-Query Attention)**: 多头共享 KV
+- **GQA (Grouped-Query Attention)**: 分组共享 KV
+- **MLA (Multi-Latent Attention)**: DeepSeek 的压缩方案
+
+## 主流 API 缓存支持
+
+| API | 缓存类型 | 节省比例 | 最低 token |
+|-----|---------|---------|-----------|
+| Anthropic | 前缀缓存 | 90% 输入费 | 1024 |
+| OpenAI | 自动前缀缓存 | 50% 输入费 | 自动 |
+| Google | Context Caching | 按分钟计费 | 32K |
+
+## 实践策略
+
+### 系统提示缓存
+```
+[系统提示(缓存)] + [用户消息(不缓存)]
+-> 系统提示只计算一次
+```
+
+### RAG 上下文缓存
+```
+[系统提示(缓存)] + [检索文档(缓存)] + [用户查询(不缓存)]
+-> 相同文档的多次查询只计算一次
+```
+
+### Agent 上下文缓存
+```
+[系统提示(缓存)] + [工具定义(缓存)] + [对话历史(增量缓存)]
+-> Agent 多轮对话中减少重复计算
+```
+
+## 语义缓存实现
+
+```python
+from gptcache import cache
+from gptcache.embedding import Onnx
+
+# 初始化语义缓存
+cache.init(
+    embedding_func=Onnx().to_embeddings,
+    data_manager=manager_factory("sqlite", "map"),
+    similarity_evaluation=SearchDistanceEvaluation()
+)
+
+# 相似查询自动命中缓存
+response1 = llm("什么是机器学习?")  # 计算
+response2 = llm("ML 是什么?")  # 缓存命中(语义相似)
+```
+
+## 最佳实践
+
+1. **将稳定内容放在 prompt 前部**: 系统提示、工具定义
+2. **将变化内容放在后部**: 用户消息、时间戳
+3. **监控缓存命中率**: 低于 30% 需要优化 prompt 结构
+4. **设置合理的 TTL**: 平衡新鲜度和成本
+5. **语义缓存仅用于容错场景**: 精确答案需要精确缓存
+
+> **关联**: -> [[10_Deployment_Inference/README|部署推理]] | [[10_Deployment_Inference/Caching/Prompt_Caching_and_KV_Cache_Optimization|Prompt Caching 优化]] | AI 网关
+

@@ -8,6 +8,10 @@ updated: 2026-06-26
 tier: core
 ---
 
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
+
 # LLM 模型热加载与回滚 Runbook
 
 > **一句话理解**: 模型上线不是「替换文件就完事」——权重、tokenizer、LoRA 适配器、量化配置任何一项不匹配都会导致服务异常；本手册教你如何安全热加载和回滚。

@@ -12,6 +12,10 @@ aliases:
   - AI_Security_2026
 
 ---
+
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
 # AI 安全 2026 年完全指南
 
 > **一句话理解**: AI 安全已经从"可选配置"变为"生死存亡"——OWASP LLM Top 10 2026 和全新的 Agentic AI Security 框架定义了生产级 AI 系统的安全基线，一次提示注入攻击可能导致数百万美元损失。

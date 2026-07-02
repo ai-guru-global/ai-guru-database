@@ -23,7 +23,7 @@ aliases:
 ---
 # LLM 安全完全指南：威胁全景与攻击技术
 
-> 本文从 [[大模型安全权威指南]] 第一、二部分蒸馏而来，覆盖 LLM 安全基础、威胁全景、安全框架（OWASP / NIST / MITRE ATLAS）、以及核心攻击技术（Prompt Injection、Jailbreak、Data Poisoning、Backdoor、Model Extraction、Privacy Attacks、Adversarial Robustness、PEFT Security、Malicious Artifacts）。
+> 本文从 [[https://github.com/yeasy/ai_security_guide]] 第一、二部分蒸馏而来，覆盖 LLM 安全基础、威胁全景、安全框架（OWASP / NIST / MITRE ATLAS）、以及核心攻击技术（Prompt Injection、Jailbreak、Data Poisoning、Backdoor、Model Extraction、Privacy Attacks、Adversarial Robustness、PEFT Security、Malicious Artifacts）。
 
 Related: [[Constitutional_AI_Deep_Dive]], [[AI_Red_Teaming_Guide]], [[Guardrails_Production_Guide]], [[LLM_Security_Defense_Guide]], [[Agent_RAG_Security]]
 

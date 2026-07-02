@@ -12,6 +12,10 @@ aliases:
   - MCP_Implementation_Guide
 
 ---
+
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
 # MCP 协议实现指南 (MCP Implementation Guide)
 
 > **一句话理解**: MCP 是 AI Agent 的"USB 接口"——让任何 Agent 都能即插即用地调用任何工具，无需为每个工具单独开发集成代码。
@@ -1171,7 +1175,7 @@ class QueryParams(BaseModel):
             raise ValueError("Only SELECT queries are allowed")
         
         # 禁止危险操作
-        forbidden = ["DROP", "DELETE", "TRUNCATE", "ALTER", "CREATE"]
+        forbidden = ["DROP", "DELETE", "TRUNCATE", "ALTER", "CREATE"]  # ⚠️ HIGH-RISK — 清空表数据，不可逆 [回滚：见文档/备份]
         for word in forbidden:
             if word in normalized:
                 raise ValueError(f"Forbidden SQL keyword: {word}")

@@ -12,6 +12,10 @@ aliases:
   - Java_AI_Testing
 
 ---
+
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
 # Java AI 测试实践
 
 > 📚 **Spring AI 基础**: 如果你还不熟悉 Spring AI 的核心概念，请先阅读 [Spring AI 深度解析](../../01_Fundamentals/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md)。
@@ -1159,7 +1163,7 @@ public class LlmOutputDeterminismTest {
             "a".repeat(10000),          // 超长输入
             "😀😀😀👍👍👍",              // 纯表情
             "<script>alert(1)</script>", // XSS
-            "DROP TABLE users;",        // SQL 注入
+            "DROP TABLE users;",        // SQL 注入  # ⚠️ HIGH-RISK — 删除表/库，数据丢失 [回滚：见文档/备份]
             "\0\0\0",                   // 空字符
             "日本語テスト"              // 多语言
         );

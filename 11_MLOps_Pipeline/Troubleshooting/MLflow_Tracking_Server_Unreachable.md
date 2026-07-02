@@ -9,6 +9,10 @@ updated: 2026-06-26
 tier: supporting
 ---
 
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
+
 # MLflow Tracking Server 不可达排障
 
 > **一句话理解**: MLflow Tracking 连不上，通常不是 MLflow 本身坏了，而是「客户端配置的地址到服务端之间的某一层断了」——本手册按链路逐层排查。

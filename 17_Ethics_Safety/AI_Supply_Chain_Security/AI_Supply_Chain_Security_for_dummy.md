@@ -12,6 +12,10 @@ aliases:
   - AI_Supply_Chain_Security_for_dummy
 
 ---
+
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
 # AI 供应链安全小白指南 (AI Supply Chain Security for Dummy)
 
 > **一句话理解**: AI 供应链安全就像检查"AI 食物的来源"——确保训练数据、模型文件和依赖库没有被坏人投毒或篡改。

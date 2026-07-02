@@ -11,6 +11,10 @@ aliases:
   - Triton_Inference_Server_Deep_Dive
 
 ---
+
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
 # Triton Inference Server 深度解析：NVIDIA 多模型推理服务平台
 
 > **一句话理解**: Triton Inference Server 是 NVIDIA 开源的高性能推理服务框架，支持 TensorRT、PyTorch、ONNX、TensorFlow 等多种后端，提供动态批处理、并发模型执行、模型集成和企业级可观测，是多模型统一服务的主流选择。

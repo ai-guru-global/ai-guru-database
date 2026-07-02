@@ -11,6 +11,10 @@ aliases:
   - Harness_Security_Guide
 
 ---
+
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
 # Agent Harness 安全深度指南
 
 > 生产级 Agent Harness 面临独特的安全挑战：Agent 可以执行代码、访问文件、调用外部 API。本文档提供系统化的 Harness 安全设计方法，从威胁建模到防御实现。
@@ -71,7 +75,7 @@ class InputSanitizer:
         r"ignore all (above|previous)",
         r"you are now .* mode",           # 角色劫持
         r"sudo .*",                        # 权限提升尝试
-        r"rm -rf /",                       # 破坏性命令
+        r"rm -rf /",                       # 破坏性命令  # ⚠️ HIGH-RISK — 递归强制删除，不可逆 [回滚：见文档/备份]
         r"<script.*>",                    # XSS 尝试
     ]
     
@@ -111,7 +115,7 @@ class SecureModelRouter:
     """安全模型路由器"""
     
     SENSITIVE_TASKS = [
-        "delete", "remove", "drop", "truncate",
+        "delete", "remove", "drop", "truncate",  # ⚠️ HIGH-RISK — 清空表数据，不可逆 [回滚：见文档/备份]
         "grant", "revoke", "password", "secret"
     ]
     
@@ -163,7 +167,7 @@ WORKDIR /workspace
 # 最小化安装
 RUN apt-get update && apt-get install -y \
     python3 python3-pip git \
-    && rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/*  # ⚠️ HIGH-RISK — 递归强制删除，不可逆 [回滚：见文档/备份]
 
 # 禁止网络（在运行时通过 --network=none 指定）
 # 只读挂载系统目录
@@ -208,13 +212,13 @@ class CommandFilter:
     """命令过滤器"""
     
     BLACKLIST = [
-        "rm -rf /", "rm -rf /*",
+        "rm -rf /", "rm -rf /*",  # ⚠️ HIGH-RISK — 递归强制删除，不可逆 [回滚：见文档/备份]
         "> /dev/sda", "dd if=/dev/zero",
         "mkfs", "fdisk",
         "wget", "curl",  # 无网络时
         "nc", "netcat", "telnet",
         "sudo", "su -",
-        "chmod 777 /",
+        "chmod 777 /",  # ⚠️ HIGH-RISK — 放开全部权限，安全隐患 [回滚：见文档/备份]
         ":(){ :|:& };:"  # Fork bomb
     ]
     

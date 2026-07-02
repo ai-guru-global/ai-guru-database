@@ -12,6 +12,10 @@ aliases:
   - AI_Stack_GPU_Monitoring_Guide
 
 ---
+
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
 # AI Stack GPU 监控指南
 
 > **一句话理解**: AI Stack 支持 NVIDIA、国产 PPU（平头哥）、AMD 等多种加速器，分别使用 `nvidia-smi`、`ppu-smi`、`rocm-smi` 做卡级监控，`pmon` 做进程级细粒度监控。

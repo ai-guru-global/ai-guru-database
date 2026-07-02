@@ -159,7 +159,7 @@ q^*(\theta) = \arg\min_{q \in \mathcal{Q}} D_{KL}(q(\theta) \| P(\theta|\mathcal
 
 ## Related
 
-- [[02_Machine_Learning/Bayesian_Methods]] — 贝叶斯方法深度解析
+- [[02_Machine_Learning/Bayesian_Methods/README]] — 贝叶斯方法深度解析
 - [[_concepts/probability-statistics]] — 概率统计基础
 - [[_concepts/information-theory]] — 信息论（KL 散度与变分推断）
 - [[_concepts/optimization-regularization]] — 优化与正则化（贝叶斯视角下的正则化）

@@ -143,7 +143,7 @@ Weisfeiler-Lehman (WL) 图同构测试是 GNN 表达能力的理论上限：
 
 ## Related
 
-- [[03_Deep_Learning/Graph_Neural_Networks]] — 图神经网络深度解析
+- [[03_Deep_Learning/Graph_Neural_Networks/README]] — 图神经网络深度解析
 - [[_concepts/neural-networks]] — 神经网络基础
 - [[_concepts/transformer-architecture]] — Transformer（Graph Transformer 基础）
 - [[_concepts/ai-for-science]] — AI for Science（GNN 在分子/材料中的核心应用）

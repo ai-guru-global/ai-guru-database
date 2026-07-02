@@ -12,6 +12,10 @@ aliases:
   - AI_Incident_Response_Playbook
 
 ---
+
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
 # AI 系统事故响应手册
 
 > 🎯 **目标**：建立 AI/LLM 生产系统的事故响应体系 —— 从 Runbook 模板、War Room 流程、分诊决策树到自动化修复脚本，确保团队在高压下一致、高效地处理故障。
@@ -247,7 +251,7 @@ kubectl scale deployment llm-serving --replicas=8 -n inference
 ### 方案 B: 驱逐非推理任务
 ```bash
 # 驱逐 Batch 任务
-kubectl delete job batch-training-xxx -n inference
+kubectl delete job batch-training-xxx -n inference  # ⚠️ HIGH-RISK — 删除 K8s 资源，服务可能中断 [回滚：见文档/备份]
 ```
 
 ### 方案 C: 降级到轻量模型

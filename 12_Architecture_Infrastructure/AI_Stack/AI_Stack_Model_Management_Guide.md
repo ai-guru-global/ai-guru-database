@@ -12,6 +12,10 @@ aliases:
   - AI_Stack_Model_Management_Guide
 
 ---
+
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
 # AI Stack 模型下载与管理指南
 
 > **一句话理解**: AI Stack 模型管理需要兼顾国内网络环境和 HuggingFace 生态，分别使用 `modelscope`（国内首选）、`huggingface-cli`（海外/官方）和 `git-lfs`（通用大文件下载）。

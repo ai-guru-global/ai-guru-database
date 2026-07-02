@@ -179,7 +179,7 @@ AI 加速后:
 
 ## Related
 
-- [[18_AI_Applications_Industry/AI_for_Science]] — AI for Science 深度解析
+- [[18_AI_Applications_Industry/AI_for_Science/README]] — AI for Science 深度解析
 - [[_concepts/graph-neural-networks]] — GNN（AlphaFold/GNoMe 核心技术）
 - [[_concepts/generative-vision-models]] — 生成模型（扩散模型在分子生成中的应用）
 - [[_concepts/neural-networks]] — 神经网络基础

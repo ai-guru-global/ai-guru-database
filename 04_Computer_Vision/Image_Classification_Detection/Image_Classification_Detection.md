@@ -556,7 +556,7 @@ car (0.75) at [50, 300, 150, 380]
 ## 7. 与其他主题的关联 (Connections)
 
 ### 前置知识
-- [卷积神经网络基础](../../01_Fundamentals/Deep_Learning_Basics/Deep_Learning_Basics.md)
+- [卷积神经网络基础](../../03_Deep_Learning/Neural_Network_Core/Neural_Network_Core.md)
 - [优化算法](../../03_Deep_Learning/Optimization/Optimization.md): SGD, Adam
 
 ### 后续推荐
@@ -565,7 +565,7 @@ car (0.75) at [50, 300, 150, 380]
 - [多模态视觉](../Multimodal_Vision/Multimodal_Vision.md): CLIP, BLIP
 
 ### 跨领域应用
-- [迁移学习](../../02_Machine_Learning/Transfer_Learning/Transfer_Learning.md): 预训练模型微调
+- [迁移学习](../../03_Deep_Learning/Transfer_Learning/Transfer_Learning.md): 预训练模型微调
 - [模型评估](../../08_Model_Evaluation/Model_Evaluation.md): 混淆矩阵、ROC 曲线
 
 ---

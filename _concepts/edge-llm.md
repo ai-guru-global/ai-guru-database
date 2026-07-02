@@ -71,6 +71,6 @@ aliases:
 
 ## Related
 
-- [[05_NLP_LLMs/Edge_LLM]] — 端侧 LLM 深度解析
+- [[05_NLP_LLMs/Edge_LLM/README]] — 端侧 LLM 深度解析
 - [[_concepts/llm-architectures]] — LLM 架构
 - [[_concepts/llm-infrastructure]] — LLM 基础设施

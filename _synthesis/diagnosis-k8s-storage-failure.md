@@ -10,6 +10,10 @@ aliases:
   - "存储排障"
 
 ---
+
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
 # K8s 存储故障远程诊断决策树
 
 > **核心洞察**：K8s 存储工单的核心矛盾在三层抽象的「衔接处」——用户声明 PVC，StorageClass 匹配 PV，CSI Driver 创建底层卷。远程诊断的关键是判断卡在哪一层。80% 的存储问题表现为 Pod 卡在 `ContainerCreating`，Events 显示 `volume mount failed` 或 `AttachVolume failed`。

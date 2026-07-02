@@ -54,7 +54,7 @@ Stage 1: 基础概念（轻量浏览，重点理解概念名称）
 
 **🎯 目标**：理解 AI 是什么，它和普通软件有什么区别，为什么 ChatGPT 这么特别。
 
-**📚 核心概念**：[Stage 0: AI 觉醒](../_concepts/stage-0-awakening.md)
+**📚 核心概念**：[Stage 0: AI 觉醒](../concepts/stage0_awakening.md)
 
 **🔗 深入阅读**：
 - [AI 基础概念入门](../../00_AI_Introduction/AI_Fundamentals.md) — 最推荐的起点
@@ -72,7 +72,7 @@ Stage 1: 基础概念（轻量浏览，重点理解概念名称）
 
 **🎯 目标**：掌握 AI 领域的核心术语，知道"模型"、"训练"、"推理"这些词是什么意思。
 
-**📚 核心概念**：[Stage 1: 基础概念](../_concepts/stage1-foundation.md)（浏览为主，不需要深入细节）
+**📚 核心概念**：[Stage 1: 基础概念](../concepts/stage1_foundation.md)（浏览为主，不需要深入细节）
 
 **🔗 深入阅读**：
 - [README_for_dummy.md](../../README_for_dummy.md) — 新手导航，章节级别的概览

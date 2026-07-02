@@ -136,7 +136,7 @@ aliases:
 ## 下一步
 
 完成 Stage 0 后：
-- **想系统学技术** → 进入 [Stage 1: 基础概念](./stage1-foundation.md)
+- **想系统学技术** → 进入 [Stage 1: 基础概念](./stage1_foundation.md)
 - **只想通识了解** → 进入 [零基础通识路径](../pathways/absolute-beginner.md)
 - **想做产品/管理** → 进入 [AI 产品经理路径](../pathways/product-manager.md)
 

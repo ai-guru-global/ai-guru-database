@@ -277,7 +277,7 @@ for epoch in range(num_epochs):
 
 ## 相关阅读
 
-- [[07_Model_Training/Model_Training]] — 模型训练全景
+- [[07_Model_Training/README]] — 模型训练全景
 - [[07_Model_Training/Model_Training_for_dummy]] — 模型训练入门版
 - [[07_Model_Training/Distributed_Training/Distributed_Training_for_dummy]] — 分布式训练入门
 - [[07_Model_Training/Optimization/Training_Optimization_2026]] — 2026 训练优化进阶

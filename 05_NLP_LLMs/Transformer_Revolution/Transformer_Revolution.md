@@ -432,17 +432,17 @@ Transformer 的计算复杂度为 $O(n^2 d)$,内存复杂度为 $O(n^2)$,在长�
 ## 7. 与其他主题的关联 (Connections)
 
 ### 前置知识
-- [深度学习基础](../../01_Fundamentals/Deep_Learning_Basics/Deep_Learning_Basics.md): 反向传播、优化器
-- [注意力机制](../../05_NLP_LLMs/Attention_Mechanism/Attention_Mechanism.md): Seq2Seq Attention
+- [深度学习基础](../../03_Deep_Learning/Neural_Network_Core/Neural_Network_Core.md): 反向传播、优化器
+- [注意力机制](../../05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution.md): Seq2Seq Attention
 
 ### 后续推荐
 - [大语言模型架构](../LLM_Architectures/LLM_Architectures.md): GPT/BERT/T5 详解
 - [微调技术](../Fine_tuning_Techniques/Fine_tuning_Techniques.md): LoRA, RLHF
-- [预训练方法](../Pre_training_Methods/Pre_training_Methods.md): MLM, CLM, Seq2Seq
+- [预训练方法](../LLM_Architectures/LLM_Architectures.md): MLM, CLM, Seq2Seq
 - [提示工程](../Prompt_Engineering/Prompt_Engineering.md): Few-shot, CoT
 
 ### 跨领域应用
-- [Vision Transformer](../../04_Computer_Vision/Vision_Transformer/Vision_Transformer.md): Transformer 在 CV 的应用
+- [Vision Transformer](../../04_Computer_Vision/ViT_Deep_Dive.md): Transformer 在 CV 的应用
 - [多模态模型](../../04_Computer_Vision/Multimodal_Vision/Multimodal_Vision.md): CLIP, Flamingo
 
 ---

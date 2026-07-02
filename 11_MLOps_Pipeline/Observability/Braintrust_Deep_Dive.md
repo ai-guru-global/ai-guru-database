@@ -11,6 +11,10 @@ aliases:
   - Braintrust_Deep_Dive
 
 ---
+
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
 # Braintrust: LLM 评估平台
 
 > **一句话理解**: Braintrust 是开源 LLM 评估平台——evals 数据集、A/B 测试、回归检测、成本追踪，开源的 LLM 质量保障工具。

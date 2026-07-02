@@ -12,6 +12,10 @@ aliases:
   - MiMO_Guide
 
 ---
+
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
 # MiMO 使用指南
 
 > **一句话**: MiMO 是高性价比的 AI 模型平台，年度 Standard 套餐 ¥1,045，与 Hermes Agent 搭配是极速优质编程组合，但年度额度已消耗三分之一需控制节奏。

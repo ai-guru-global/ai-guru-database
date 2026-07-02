@@ -80,6 +80,7 @@ flowchart LR
 | **语音与音频 AI** | **2026 新增** | **Whisper ASR、CosyVoice TTS、GPT-4o 实时对话、音乐生成** | **[Speech_Audio_AI/](./Speech_Audio_AI/)** |
 | **LLM 数据工程** | **2026 新增** | **预训练数据清洗、SFT 数据构建、合成数据飞轮、数据配比** | **[LLM_Data_Engineering/](./LLM_Data_Engineering/)** |
 | **小模型与端侧 LLM** | **2026 新增** | **Phi-3/Gemma/Qwen 小模型、GPTQ/AWQ 量化、llama.cpp/MLC-LLM 端侧部署** | **[Edge_LLM/](./Edge_LLM/)** |
+| **LLM 生产部署 Runbook** | **生产必备** | **vLLM/TGI/SGLang 推理引擎、KV Cache、量化、多模型路由、安全监控** | **[LLM_Production_Deployment_Runbook.md](./LLM_Production_Deployment_Runbook.md)** |
 
 ## 前置知识 (Prerequisites)
 

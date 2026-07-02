@@ -97,5 +97,5 @@ response2 = llm("ML 是什么?")  # 缓存命中(语义相似)
 4. **设置合理的 TTL**: 平衡新鲜度和成本
 5. **语义缓存仅用于容错场景**: 精确答案需要精确缓存
 
-> **关联**: -> [[10_Deployment_Inference/README|部署推理]] | [[10_Deployment_Inference/Caching/Prompt_Caching_and_KV_Cache_Optimization|Prompt Caching 优化]] | [[12_Architecture_Infrastructure/AI_Gateway|AI 网关]]
+> **关联**: -> [[10_Deployment_Inference/README|部署推理]] | [[10_Deployment_Inference/Caching/Prompt_Caching_and_KV_Cache_Optimization|Prompt Caching 优化]] | [[12_Architecture_Infrastructure/AI_Gateway/index|AI 网关]]
 

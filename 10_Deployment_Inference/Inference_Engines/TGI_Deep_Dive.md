@@ -12,6 +12,10 @@ aliases:
   - TGI_Deep_Dive
 
 ---
+
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
 # TGI 深度解析：HuggingFace 生产级 LLM 推理引擎
 
 > **一句话理解**: TGI 是 HuggingFace 开源的 LLM 生产级推理引擎，通过 Rust 路由层 + Python 模型层的分离架构、连续批处理和丰富的量化支持，把 HuggingFace 生态模型快速部署为高吞吐、低延迟的文本生成服务。

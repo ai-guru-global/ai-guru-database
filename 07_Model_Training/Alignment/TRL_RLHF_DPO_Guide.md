@@ -12,6 +12,10 @@ aliases:
   - TRL_RLHF_DPO_Guide
 
 ---
+
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
 # TRL 实战：基于 Hugging Face 的 RLHF 与 DPO 模型对齐
 
 > **一句话理解**: Hugging Face `trl` (Transformer Reinforcement Learning) 库是将基础大模型（Base Model）转化为符合人类偏好的对话模型（Chat/Instruct Model）的“瑞士军刀”。它不仅支持传统的 PPO 强化学习方案，还高度集成了当前轻量高效的 DPO、ORPO 等新一代对齐算法。

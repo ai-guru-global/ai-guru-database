@@ -12,6 +12,10 @@ aliases:
   - Agent_Safety_Evaluation_for_dummy
 
 ---
+
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
 # Agent 安全与评估大白话：工具调用安全、Agent 评估基准
 
 > **一句话理解**: Agent 能调用工具干活，但也会闯祸——工具调用安全就是给它加护栏；Agent 评估基准就是出题考它会不会规划、会不会用工具、会不会纠错。

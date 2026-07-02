@@ -66,5 +66,5 @@ aliases:
 - **责任归属**: AI 辅助诊断的法律责任
 - **人机协作**: AI 辅助而非替代医生决策
 
-> **关联**: -> [[18_AI_Applications_Industry/Healthcare|医疗 AI]] | [[18_AI_Applications_Industry/AI_for_Science/Protein_Folding_and_Drug_Discovery_2026|蛋白质折叠]]
+> **关联**: -> [[18_AI_Applications_Industry/Healthcare/index|医疗 AI]] | [[18_AI_Applications_Industry/AI_for_Science/Protein_Folding_and_Drug_Discovery_2026|蛋白质折叠]]
 

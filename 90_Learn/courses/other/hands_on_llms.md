@@ -71,13 +71,13 @@ aliases:
 | Ch 2 | Tokens and Embeddings | Tokenizer、子词切分、词嵌入、位置编码 | [[05_NLP_LLMs/Transformer_Architecture|Transformer 架构]], [[05_NLP_LLMs/NLP_Fundamentals|NLP 基础]] |
 | Ch 3 | Looking Inside Transformer LLMs | 自注意力、多头注意力、层归一化、前馈网络 | [[05_NLP_LLMs/Transformer_Revolution/Self_Attention_Mechanism|自注意力机制]], [[05_NLP_LLMs/Transformer_Architecture|Transformer 架构]] |
 | Ch 4 | Text Classification | 分类头、BERT 分类、Zero-shot 分类 | [[05_NLP_LLMs/Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs|微调 LLM]], [[08_Model_Evaluation/Model_Evaluation|模型评估]] |
-| Ch 5 | Text Clustering and Topic Modeling | 嵌入聚类、主题建模、BertTopic | [[02_Machine_Learning/Clustering|聚类]]（如存在）, [[05_NLP_LLMs/NLP_Fundamentals|NLP 基础]] |
+| Ch 5 | Text Clustering and Topic Modeling | 嵌入聚类、主题建模、BertTopic | [[02_Machine_Learning/Unsupervised_Learning/Unsupervised_Learning|聚类]]（如存在）, [[05_NLP_LLMs/NLP_Fundamentals|NLP 基础]] |
 | Ch 6 | Prompt Engineering | 提示模板、 few-shot、chain-of-thought、结构化输出 | [[05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering|提示工程总览]], [[05_NLP_LLMs/Prompt_Engineering/GenAI_L04_Prompt_Engineering_Fundamentals|提示工程基础]] |
 | Ch 7 | Advanced Text Generation Techniques and Tools | 采样策略、beam search、top-k/top-p、logit 处理 | [[05_NLP_LLMs/Prompt_Engineering/GenAI_L05_Advanced_Prompts|高级提示技术]], [[05_NLP_LLMs/LLM_Fundamentals|LLM 基础]] |
 | Ch 8 | Semantic Search and Retrieval-Augmented Generation | 向量搜索、RAG pipeline、重排序 | [[14_RAG_Systems/RAG_Systems|RAG 系统总览]], [[14_RAG_Systems/GenAI_L15_RAG_and_Vector_Databases|RAG 与向量数据库]] |
-| Ch 9 | Multimodal Large Language Models | CLIP、视觉编码器、多模态提示 | [[05_NLP_LLMs/Multimodal_Models/Multimodal_Models|多模态模型]], [[04_Computer_Vision/Multimodal_Vision/Multimodal_Vision|多模态视觉]] |
-| Ch 10 | Creating Text Embedding Models | 对比学习、sentence-transformers、Matryoshka 嵌入 | [[14_RAG_Systems/Embedding_Models|嵌入模型]]（如存在）, [[05_NLP_LLMs/LLM_Fundamentals|LLM 基础]] |
-| Ch 11 | Fine-tuning Representation Models for Classification | BERT 微调、LoRA、分类任务最佳实践 | [[05_NLP_LLMs/Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs|微调 LLM]], [[05_NLP_LLMs/Fine_tuning_Techniques/LoRA|LoRA]]（如存在） |
+| Ch 9 | Multimodal Large Language Models | CLIP、视觉编码器、多模态提示 | [[05_NLP_LLMs/Multimodal_Models/Multimodal_Architectures_2026|多模态模型]], [[04_Computer_Vision/Multimodal_Vision/Multimodal_Vision|多模态视觉]] |
+| Ch 10 | Creating Text Embedding Models | 对比学习、sentence-transformers、Matryoshka 嵌入 | [[14_RAG_Systems/Embeddings/Sentence_Transformers_Deep_Dive|嵌入模型]]（如存在）, [[05_NLP_LLMs/LLM_Fundamentals|LLM 基础]] |
+| Ch 11 | Fine-tuning Representation Models for Classification | BERT 微调、LoRA、分类任务最佳实践 | [[05_NLP_LLMs/Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs|微调 LLM]], [[05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques|LoRA]]（如存在） |
 | Ch 12 | Fine-tuning Generation Models | 指令微调、SFT、RLHF、DPO、奖励模型 | [[05_NLP_LLMs/Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs|微调 LLM]], [[07_Model_Training/Alignment/GRPO_and_New_Alignment_Methods|GRPO 与新对齐方法]] |
 
 ---

@@ -11,6 +11,10 @@ aliases:
   - Tool_Calling_Best_Practices
 
 ---
+
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
 # Tool Calling 最佳实践
 
 > **一句话理解**: Tool Calling 就是让 AI 从"只会说话"变成"能动手做事"——通过函数调用连接 LLM 的语言理解能力和外部工具的执行能力。
@@ -272,7 +276,7 @@ class PermissionGuard:
 ```python
 # 防止 Prompt Injection 通过工具参数注入
 DANGEROUS_PATTERNS = [
-    r";\s*(rm|del|drop|truncate)",    # SQL/Shell 注入
+    r";\s*(rm|del|drop|truncate)",    # SQL/Shell 注入  # ⚠️ HIGH-RISK — 清空表数据，不可逆 [回滚：见文档/备份]
     r"\$\{.*\}",                       # 模板注入
     r"<script>",                       # XSS
     r"\.\.\/",                         # 路径遍历

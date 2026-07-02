@@ -67,4 +67,4 @@ aliases:
 - [[_concepts/ai-agents]] — AI Agent
 - [[_concepts/text2sql]] — Text2SQL
 - [[16_AI_Coding/README]] — AI 编程工具
-- [[16_AI_Coding/GitHub_Copilot_Deep_Dive]] — GitHub Copilot 深度解析
+- [[16_AI_Coding/Tools/AI_Coding_Assistants_2026]] — GitHub Copilot 深度解析

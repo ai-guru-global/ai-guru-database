@@ -114,7 +114,7 @@ updated: 2026-06-24
 - [[_concepts/vllm]] — vLLM（最流行）
 - [[_concepts/inference-autoscaling]] — 推理扩缩容
 - [[_concepts/observability]] — 推理可观测性
-- [[10_Deployment_Inference/Inference_Engines]] — 推理引擎章节- [[_concepts/cuda-graph]] — Cuda Graph
+- [[10_Deployment_Inference/Inference_Engines/index]] — 推理引擎章节- [[_concepts/cuda-graph]] — Cuda Graph
 - [[_concepts/inference-performance-gaps]] — Inference Performance Gaps
 - [[_concepts/model-routing]] — Model Routing
 - [[_concepts/request-scheduling]] — Request Scheduling

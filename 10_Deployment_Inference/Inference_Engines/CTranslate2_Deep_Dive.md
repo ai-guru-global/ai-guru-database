@@ -12,6 +12,10 @@ aliases:
   - CTranslate2_Deep_Dive
 
 ---
+
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
 # CTranslate2: 轻量级跨平台 LLM 推理引擎
 
 > **一句话理解**: CTranslate2 是 OpenNMT 团队出品的轻量级跨平台推理引擎——C++ 核心、Python API、支持 INT8/INT16/FP16 量化，在 CPU 和 GPU 上都能高效运行 Transformer 模型。

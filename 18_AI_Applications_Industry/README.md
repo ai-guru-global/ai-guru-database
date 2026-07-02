@@ -16,6 +16,8 @@ tier: supporting
 
 ### 行业应用全景
 - [AI应用与行业融合全景](./AI_Applications_Industry.md) - 综合概览与跨行业趋势
+- [AI 生产架构 2026](./AI_Production_Architecture_2026.md) - 跨行业通用 AI 生产架构、模型治理、合规与 FinOps
+- [AI 平台选型 2026](./AI_Platform_Selection_2026.md) - 云 API、私有化、开源与企业级 AI 平台选型指南
 
 ### 按行业深度分析 (2025-2026)
 
@@ -31,6 +33,9 @@ tier: supporting
 | **法律与政务** | [AI_Legal_Government_2026](./Legal_Government/AI_Legal_Government_2026.md) | 45% | 合同审查、诉讼预测、智慧城市、智能政务 |
 | **农业** | [AI_Agriculture_2026](./Agriculture/AI_Agriculture_2026.md) | 30% | 精准农业、农业机器人、产量预测、智能畜牧 |
 | **能源与气候** | [AI_Energy_Climate_2026](./Energy_Climate/AI_Energy_Climate_2026.md) | 45% | 智能电网、天气预测、碳监测、核聚变 |
+| **网络安全** | [AI_Security_Cybersecurity_2026](./Security_Cybersecurity/AI_Security_Cybersecurity_2026.md) | 70% | 威胁检测、LLM 安全、渗透测试、零信任 |
+| **人力资源** | [AI_HR_Recruitment_2026](./HR_Recruitment/AI_HR_Recruitment_2026.md) | 50% | 智能招聘、人才分析、员工体验、组织发展 |
+| **供应链物流** | [AI_Supply_Chain_2026](./Supply_Chain_Logistics/AI_Supply_Chain_2026.md) | 55% | 需求预测、路径优化、仓储自动化、供应链韧性 |
 
 ## 2026 年行业应用特点
 

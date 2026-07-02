@@ -19,6 +19,10 @@ relationships:
     type: part_of
 ---
 
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
+
 # ReplicaSet
 
 > **一句话理解**: ReplicaSet 是 K8s 的「副本看守」——它通过 label selector 保证集群里始终有正确数量的 Pod 在运行，是 Deployment 实现自愈与扩缩容的底层机制。
@@ -82,7 +86,7 @@ kubectl get pods -l app=ai-inference
 kubectl scale rs ai-inference-rs --replicas=5
 
 # 删除 ReplicaSet（默认级联删除管理的 Pod）
-kubectl delete rs ai-inference-rs
+kubectl delete rs ai-inference-rs  # ⚠️ HIGH-RISK — 删除 K8s 资源，服务可能中断 [回滚：见文档/备份]
 ```
 
 ## 选型对比

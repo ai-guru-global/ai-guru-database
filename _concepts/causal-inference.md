@@ -155,7 +155,7 @@ P(Y|do(X=x)) = \sum_z P(Y|X=x, Z=z) \cdot P(Z=z)
 
 ## Related
 
-- [[02_Machine_Learning/Causal_Inference]] — 因果推断深度解析
+- [[02_Machine_Learning/Causal_Inference/README]] — 因果推断深度解析
 - [[_concepts/probability-statistics]] — 概率统计基础
 - [[_concepts/supervised-learning]] — 监督学习（相关 vs 因果）
 - [[_concepts/bayesian-methods]] — 贝叶斯方法（贝叶斯因果网络）

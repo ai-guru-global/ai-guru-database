@@ -12,6 +12,10 @@ aliases:
   - LLM_Inference_Engine_Migration_Guide
 
 ---
+
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
 # LLM 推理引擎迁移指南
 
 > **一句话理解**: LLM 推理引擎迁移指南——覆盖 vLLM、SGLang、TGI、TensorRT-LLM 之间的 API、配置、量化、部署迁移方法，以及自建到云 API 的切换策略。

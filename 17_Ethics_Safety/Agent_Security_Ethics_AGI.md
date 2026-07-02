@@ -149,7 +149,7 @@ L1 输入验证 → L2 模型鲁棒性 → L3 应用护栏 → L4 执行隔离 �
 - [[LLM_Security_Complete_Guide]] — LLM 安全完整指南
 - [[Agent_RAG_Security]] — Agent/RAG 安全
 - [[Constitutional_AI_Deep_Dive]] — 宪法 AI 深入
-- [[Value_Alignment/Value_Alignment_Deep_Dive]] — 价值对齐深入
+- [[17_Ethics_Safety/Value_Alignment/Value_Alignment]] — 价值对齐深入
 - [[AI_Red_Teaming_Guide]] — 红队测试指南
 - [[Agentic_AI_Complete_Guide]] — 智能体 AI 完整指南
 

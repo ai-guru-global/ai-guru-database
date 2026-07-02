@@ -24,7 +24,7 @@ aliases:
 |------|---|
 | 包含核心概念 | 8 个 |
 | 预计学习时间 | 5-8 小时 |
-| 前置依赖 | [Stage 3: 工程实践](./stage3-engineering.md) |
+| 前置依赖 | [Stage 3: 工程实践](./stage3_engineering.md) |
 | 适合人群 | 想把握 AI 发展方向的研究者/工程师/战略决策者 |
 
 ---
@@ -107,7 +107,7 @@ aliases:
 
 - **具身智能 (Embodied AI)**：让 AI 有一个"身体"，通过与物理世界交互来学习和推理
 - **关键挑战**：sim-to-real 迁移（模拟环境训练 → 真实世界部署）、长程任务规划、物理安全
-- **入门阅读**：[机器人与具身智能](../06_Reinforcement_Learning/Robotics_Embodied_AI/Robotics_Embodied_AI_2026.md)
+- **入门阅读**：[机器人与具身智能](../../06_Reinforcement_Learning/Robotics_Embodied_AI/Embodied_AI_2026.md)
 - **关联概念**：世界模型、强化学习、视觉导航
 
 ### 5. AGI 路径与当前进展

@@ -68,6 +68,6 @@ aliases:
 
 ## Related
 
-- [[17_Ethics_Safety/Federated_Learning]] — 联邦学习深度解析
+- [[17_Ethics_Safety/Federated_Learning/README]] — 联邦学习深度解析
 - [[_concepts/neural-networks]] — 神经网络基础
 - [[_concepts/bayesian-methods]] — 贝叶斯方法（不确定性量化）

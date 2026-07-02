@@ -303,9 +303,9 @@ find . -name "*.md" -path "./[0-9][0-9]_*" -exec grep -h "Last updated" {} + 2>/
 
 | 文档 | 内容 | 适用读者 |
 |------|------|----------|
-| [文件A](./fileA.md) | 一句话描述 | 快速入门 |
-| [文件B](./fileB.md) | 一句话描述 | 系统学习 |
-| [文件C](./subdir/fileC.md) | 一句话描述 | 进阶学习 |
+| [文件A](`./fileA.md`) | 一句话描述 | 快速入门 |
+| [文件B](`./fileB.md`) | 一句话描述 | 系统学习 |
+| [文件C](`./subdir/fileC.md`) | 一句话描述 | 进阶学习 |
 
 > ⚠️ **注意**: [如果有内容正在建设中，在此说明]
 
@@ -313,10 +313,10 @@ find . -name "*.md" -path "./[0-9][0-9]_*" -exec grep -h "Last updated" {} + 2>/
 
 ## 学习路径
 
-- **快速入门** → [Nutshell 文件](./chapter-in-nutshell.md)（30 分钟）
-- **系统学习** → [主文件](./main_topic.md)（2-3 小时）
-- **进阶实践** → [高级文件](./advanced.md)
-- **简化版** → [For Dummy 文件](./topic_for_dummy.md)
+- **快速入门** → [Nutshell 文件](`./chapter-in-nutshell.md`)（30 分钟）
+- **系统学习** → [主文件](`./main_topic.md`)（2-3 小时）
+- **进阶实践** → [高级文件](`./advanced.md`)
+- **简化版** → [For Dummy 文件](`./topic_for_dummy.md`)
 
 ---
 
@@ -544,8 +544,8 @@ flowchart TB
 
 ## 🔗 相关主题
 
-- [深度解析](./main_topic.md) — 完整技术细节
-- [前置基础](../11_MLOps_Pipeline/README.md) — 需要的基础知识
+- [深度解析](`./main_topic.md`) — 完整技术细节
+- [前置基础](`../11_MLOps_Pipeline/README.md`) — 需要的基础知识
 
 ---
 

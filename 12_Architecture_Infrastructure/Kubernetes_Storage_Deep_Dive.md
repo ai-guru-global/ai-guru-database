@@ -12,6 +12,10 @@ aliases:
   - "Kubernetes_Storage_Deep_Dive"
 ---
 
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
+
 # Kubernetes 存储深度解析
 
 > **一句话理解**: Kubernetes 存储是一套「声明式持久化」体系——Pod 通过 PVC 表达"我要多大、怎么读写的卷"，StorageClass + CSI Driver 在底层真正创建/挂载/回收卷，让有状态应用在容器编排里也能被声明式管理。
@@ -588,10 +592,10 @@ find /var/lib/kubelet/pods -type d -name "*<pvc-name>*"
 umount /var/lib/kubelet/pods/<pod-uid>/volumes/kubernetes.io~csi/<pv-name>/mount
 
 # 删除残留 VolumeAttachment
-kubectl delete volumeattachment csi-<hash>
+kubectl delete volumeattachment csi-<hash>  # ⚠️ HIGH-RISK — 删除 K8s 资源，服务可能中断 [回滚：见文档/备份]
 
 # 重启 CSI Node 插件
-kubectl delete pod -n kube-system -l app=csi-plugin --field-selector spec.nodeName=<node>
+kubectl delete pod -n kube-system -l app=csi-plugin --field-selector spec.nodeName=<node>  # ⚠️ HIGH-RISK — 删除 K8s 资源，服务可能中断 [回滚：见文档/备份]
 ```
 
 > ⚠️ 手动 umount 和删 VolumeAttachment 有风险，确认无活跃 Pod 使用该卷。

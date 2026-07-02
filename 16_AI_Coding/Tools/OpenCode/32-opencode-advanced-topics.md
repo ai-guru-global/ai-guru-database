@@ -14,6 +14,10 @@ aliases:
 updated: 2026-06-30
 summary: "进阶话题与生产最佳实践 — 专题文档"
 ---
+
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
 title: 进阶话题与生产最佳实践
 description: '# 进阶话题与生产最佳实践'
 category: 16-ai-coding-tools-opencode
@@ -191,7 +195,7 @@ opencode -p "Review staged changes for security issues. Exit with status 1 if cr
       "npm test *": "allow",
       "npm run lint *": "allow",
       "rm *": "deny",
-      "rm -rf *": "deny",
+      "rm -rf *": "deny",  # ⚠️ HIGH-RISK — 递归强制删除，不可逆 [回滚：见文档/备份]
       "sudo *": "deny",
       "chmod *": "deny",
       "chown *": "deny",
@@ -304,7 +308,7 @@ project-root/
     "confluence": { "type": "remote", "url": "https://wiki.example.com/mcp", "enabled": false }
   },
   "permission": {
-    "bash": { "rm -rf *": "deny", "sudo *": "deny" }
+    "bash": { "rm -rf *": "deny", "sudo *": "deny" }  # ⚠️ HIGH-RISK — 递归强制删除，不可逆 [回滚：见文档/备份]
   }
 }
 ```
@@ -413,11 +417,11 @@ curl -fsSL https://opencode.ai/install | bash
 
 | 文档 | 关系 |
 |------|------|
-| [01 - 概述与架构](./01-opencode-overview-architecture.md) | 架构基础 |
-| [05 - 工具与权限](./05-opencode-tools-permissions.md) | 安全权限详解 |
-| [06 - MCP 集成](./06-opencode-mcp-integration.md) | MCP 故障排查 |
-| [10 - Server API](./10-opencode-server-api.md) | Server 安全配置 |
-| [11 - GitHub CI/CD](./11-opencode-github-[[_concepts/model-evaluation|automation]].md) | CI/CD 自动化 |
+| [01 - 概述与架构](./21-opencode-overview-architecture.md) | 架构基础 |
+| [05 - 工具与权限](./25-opencode-tools-permissions.md) | 安全权限详解 |
+| [06 - MCP 集成](./26-opencode-mcp-integration.md) | MCP 故障排查 |
+| [10 - Server API](./30-opencode-server-api.md) | Server 安全配置 |
+| [11 - GitHub CI/CD](./31-opencode-github-automation.md) | CI/CD 自动化 |
 
 ---
 

@@ -24,7 +24,7 @@ aliases:
 |------|---|
 | 包含核心概念 | 10 个 |
 | 预计学习时间 | 10-15 小时 |
-| 前置依赖 | [Stage 1: 基础概念](./stage1-foundation.md) |
+| 前置依赖 | [Stage 1: 基础概念](./stage1_foundation.md) |
 | 适合人群 | 想深入理解 AI 原理的开发者/研究者 |
 
 ---
@@ -195,6 +195,6 @@ aliases:
 ## 下一步
 
 完成 Stage 2 后：
-- **想做工程落地** → [Stage 3: 工程实践](./stage3-engineering.md)
+- **想做工程落地** → [Stage 3: 工程实践](./stage3_engineering.md)
 - **想深入 LLM / Agent** → 进入 [LLM 工程师路径](../pathways/llm-engineer.md)
 - **想读论文做研究** → 进入 [AI 研究者路径](../pathways/ai-researcher.md)

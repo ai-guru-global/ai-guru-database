@@ -12,6 +12,10 @@ aliases:
   - HF_Diffusers_Practical_Guide
 
 ---
+
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
 # Hugging Face Diffusers 实战：从图像到视频生成的底层引擎
 
 > **一句话理解**: 就像 `transformers` 库统治了 NLP 一样，`diffusers` 是计算机视觉生成（图像/视频）领域的绝对霸主。无论是经典的 Stable Diffusion (SD 1.5, SDXL)、开源天花板 FLUX.1，还是类似 Sora 的架构（如 LTX-Video），都通过这套统一的 API 运行。

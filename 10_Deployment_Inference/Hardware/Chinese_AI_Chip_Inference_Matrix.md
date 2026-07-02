@@ -9,6 +9,10 @@ updated: 2026-06-26
 tier: supporting
 ---
 
+> [!warning] 生产安全提示 · Production Safety
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+<!-- op-safety-banner v1 -->
+
 # 国产 AI 芯片推理矩阵
 
 > **一句话理解**: 不同国产芯片有各自的强项——昇腾生态最完整、寒武纪推理卡密度高、海光兼容 CUDA、摩尔线程图形+AI 兼顾；选型要看模型、框架和运维成本。

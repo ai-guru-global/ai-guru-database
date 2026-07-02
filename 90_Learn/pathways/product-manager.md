@@ -53,7 +53,7 @@ Stage 3: 工程实践（理解 AI 产品的工程边界）
 
 **🎯 目标**：理解 AI 是什么，它能做什么、不能做什么，建立对 AI 能力的直觉。
 
-**📚 核心概念**：[Stage 0: AI 觉醒](../_concepts/stage-0-awakening.md)（全量）
+**📚 核心概念**：[Stage 0: AI 觉醒](../concepts/stage0_awakening.md)（全量）
 
 **🔗 深入阅读**：
 - [AI 基础概念入门](00_AI_Introduction/AI_Fundamentals.md)

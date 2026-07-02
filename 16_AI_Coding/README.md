@@ -44,6 +44,7 @@ tier: supporting
 | [Vibe_Coding_Methodology.md](./Methodology/Vibe_Coding_Methodology.md) | DGRV模型、五层能力模型、工作流模式、质量保障、团队协作 | 系统学习方法论 |
 | [Vibe_Coding_Production_Practices.md](./Methodology/Vibe_Coding_Production_Practices.md) | 安全工程、质量监控、技术债管理、组织变革、合规 | 生产环境落地 |
 | [Agentic_Coding_Methodology.md](./Methodology/Agentic_Coding_Methodology.md) | 多Agent协作架构、角色定义、环境沙箱、质量保障 | 进阶 |
+| [AI 代码安全审计 Runbook](./AI_Code_Security_Audit_Runbook.md) | AI 生成代码漏洞、SAST/SCA/Secret Scan、AI 代码审查、CI/CD 集成 | 安全工程师、AI 开发者 |
 
 ---
 

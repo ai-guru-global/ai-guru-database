@@ -24,7 +24,7 @@ aliases:
 |------|---|
 | 包含核心概念 | 10 个 |
 | 预计学习时间 | 8-12 小时 |
-| 前置依赖 | [Stage 2: 核心技术](./stage2-core-tech.md) |
+| 前置依赖 | [Stage 2: 核心技术](./stage2_core_tech.md) |
 | 适合人群 | 准备将 AI 落地的工程师、产品经理 |
 
 ---
@@ -233,6 +233,6 @@ aliases:
 ## 下一步
 
 完成 Stage 3 后：
-- **想深入前沿方向** → [Stage 4: 前沿探索](./stage4-frontier.md)
+- **想深入前沿方向** → [Stage 4: 前沿探索](./stage4_frontier.md)
 - **专注 LLM 应用开发** → 进入 [LLM 工程师路径](../pathways/llm-engineer.md)
 - **全面覆盖工程全链路** → 进入 [ML 从业者路径](../pathways/ml-practitioner.md)

@@ -8,6 +8,7 @@ updated: 2026-06-12
 tier: supporting
 aliases:
   - About
+sources: []
 
 ---
 # 唐杰 (Jie Tang) — 智谱 AI 联合创始人

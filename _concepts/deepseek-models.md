@@ -21,7 +21,7 @@ provenance:
   inferred: 0.30
   ambiguous: 0.10
 base_confidence: 0.85
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 ---
 
@@ -193,3 +193,4 @@ AI Stack V2.14.0 预置以下 DeepSeek 模型：
 - [[_concepts/llm-architectures]] — LLM 架构
 - [[_concepts/flash-attention-kernels]] — FlashMLA 算子
 - [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[_synthesis/modern-ai-training-stack|现代 AI 训练栈]] — 从预训练到推理扩展的统一视角

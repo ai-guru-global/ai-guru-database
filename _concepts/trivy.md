@@ -16,6 +16,7 @@ relationships:
     type: related_to
   - target: "_concepts/falco"
     type: related_to
+sources: []
 ---
 
 # Trivy

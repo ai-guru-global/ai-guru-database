@@ -14,7 +14,7 @@ sources:
   - 03_Deep_Learning/DL_Frameworks/pytorch_overview.md
   - _concepts/fsdp.md
 summary: "PyTorch 是 Meta 于 2016 年开源的深度学习框架，凭借动态图、Pythonic API、强大生态成为研究界和工业界事实标准；2026 年原生支持 FSDP、DDP、torch.compile、torch.distributed 等分布式训练能力。"
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 provenance:
   extracted: 0.90

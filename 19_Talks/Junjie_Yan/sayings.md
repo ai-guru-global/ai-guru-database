@@ -8,6 +8,7 @@ updated: 2026-06-24
 tier: supporting
 aliases:
   - Sayings
+sources: []
 
 ---
 # 闫俊杰关于 AI 的观点 (Junjie Yan on AI)

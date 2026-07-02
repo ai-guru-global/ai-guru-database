@@ -7,6 +7,7 @@ summary: "面向阿里云专有云 K8s 环境的 LLM 微调任务失败排障手
 created: 2026-06-26
 updated: 2026-06-26
 tier: core
+sources: []
 ---
 
 > [!warning] 生产安全提示 · Production Safety

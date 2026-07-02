@@ -10,6 +10,7 @@ tier: supporting
 aliases:
   - "L12 Semantic Segmentation"
   - L12_Semantic_Segmentation
+sources: []
 
 ---
 # L12 - 语义分割与U-Net

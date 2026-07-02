@@ -8,6 +8,7 @@ updated: 2026-06-24
 status: active
 baseline: _meta/_quality-assessment.md (2026-06-15, 8.5/10)
 related: [_meta/_project-evaluation.md, _meta/_content-assessment-2026-06-23.md, _meta/_taxonomy-assessment-2026-06-23.md, _meta/_post-restructure-2026-06-19.md, _meta/_governance-worklog-2026-06-22.md]
+sources: []
 ---
 
 # AI Guru 知识库整体评估报告（2026-06-24）

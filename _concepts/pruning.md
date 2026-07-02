@@ -18,7 +18,7 @@ sources:
   - 10_Deployment_Inference/Quantization/
   - 07_Model_Training/Compression/
 summary: "Model Pruning（模型剪枝）通过移除神经网络中不重要的权重 / 通道 / 层来压缩模型，与量化、知识蒸馏并列为模型压缩三大技术；2026 年 LLM 剪枝重点是结构化剪枝（如 SliceGPT、SparseGPT）。"
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 provenance:
   extracted: 0.85

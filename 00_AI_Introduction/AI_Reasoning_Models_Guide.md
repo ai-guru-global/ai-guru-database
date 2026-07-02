@@ -8,6 +8,7 @@ aliases:
   - "Ai Reasoning Models Guide"
   - "AI Reasoning Models Guide"
   - AI_Reasoning_Models_Guide
+sources: []
 
 ---
 # AI 推理模型与推理计算指南

@@ -8,6 +8,7 @@ updated: 2026-06-24
 tier: supporting
 aliases:
   - Sayings
+sources: []
 
 ---
 # 杨植麟关于 AI 的观点 (Zhilin Yang on AI)

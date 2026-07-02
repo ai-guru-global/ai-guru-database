@@ -7,6 +7,7 @@ summary: "面向 AI 训练与推理集群的网络基础知识：带宽、延迟
 created: 2026-06-26
 updated: 2026-06-26
 tier: supporting
+sources: []
 ---
 
 # AI 网络基础

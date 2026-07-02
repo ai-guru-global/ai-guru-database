@@ -6,6 +6,7 @@ summary: 从大模型技术生态角度全面分析知识库内容完整性，�
 created: 2026-06-15
 updated: 2026-06-15
 baseline: _quality-assessment.md
+sources: []
 ---
 
 # 大模型技术生态内容完整性分析

@@ -16,6 +16,7 @@ relationships:
     type: related_to
   - target: "_concepts/argocd"
     type: related_to
+sources: []
 ---
 
 # Argo Rollouts

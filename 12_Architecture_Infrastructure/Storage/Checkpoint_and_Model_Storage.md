@@ -7,6 +7,7 @@ summary: "系统讲解 AI 训练 Checkpoint 的设计原则、写入性能优化
 created: 2026-06-26
 updated: 2026-06-26
 tier: supporting
+sources: []
 ---
 
 # Checkpoint 与模型存储

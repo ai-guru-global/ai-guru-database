@@ -6,6 +6,7 @@ summary: "| 文档 | 内容 | 适用读者 |"
 created: 2026-05-31
 updated: 2026-05-31
 tier: supporting
+sources: []
 
 ---
 # 具身智能与机器人 (Robotics & Embodied AI)

@@ -10,6 +10,7 @@ aliases:
   - "Coursera Deep Learning Specialization"
   - "coursera deep learning specialization"
   - coursera_deep_learning_specialization
+sources: []
 
 ---
 # Coursera 深度学习专项课程 (Deep Learning Specialization)

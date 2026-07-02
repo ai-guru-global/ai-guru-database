@@ -11,6 +11,7 @@ aliases:
   - "L02 Knowledge Representation And Expert Systems"
   - "L02 Knowledge Representation and Expert Systems"
   - L02_Knowledge_Representation_and_Expert_Systems
+sources: []
 
 ---
 # L02 - 知识表示与专家系统

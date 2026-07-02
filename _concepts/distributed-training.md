@@ -20,7 +20,7 @@ relationships:
   - target: "_concepts/3d-parallelism"
     type: evolves_into
 summary: "分布式训练是通过数据并行、模型并行、流水线并行、张量并行等策略，将大模型训练任务分解到多个 GPU/节点上的工程体系，是训练 10B+ 参数模型的关键技术。"
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 provenance:
   extracted: 0.75

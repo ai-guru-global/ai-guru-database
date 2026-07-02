@@ -4,6 +4,7 @@ title: AI 伦理、安全与未来
 category: ethics
 tags: [ethics, safety, deepfake, privacy, alignment, agi, employment]
 source: yeasy/ai_beginner_guide/15_ethics_future
+sources: []
 ---
 
 # AI 伦理、安全与未来

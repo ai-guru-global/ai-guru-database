@@ -8,6 +8,7 @@ updated: 2026-06-24
 tier: supporting
 aliases:
   - About
+sources: []
 
 ---
 # Josh Starmer (StatQuest) — 统计学与 AI 教育界的清晰之声

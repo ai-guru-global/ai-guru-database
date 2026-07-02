@@ -10,6 +10,7 @@ aliases:
   - "Cursor Claudecode Comparison"
   - "Cursor ClaudeCode Comparison"
   - Cursor_ClaudeCode_Comparison
+sources: []
 
 ---
 # Cursor vs Claude Code 对比指南

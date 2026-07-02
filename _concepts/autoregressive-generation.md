@@ -23,10 +23,11 @@ relationships:
   - target: "_concepts/decoding-strategies"
     type: uses
 summary: 自回归生成是 LLM 推理的基本范式——每次只生成一个 token，然后将该 token 加入输入继续生成下一个。它与训练时的并行处理形成鲜明对比，也是 KV Cache 等优化技术的核心驱动力。
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 created: 2026-06-25
 updated: 2026-06-25
+sources: []
 ---
 
 # 自回归生成（Autoregressive Generation）

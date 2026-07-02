@@ -10,6 +10,7 @@ aliases:
   - "Document Templates"
   - "DOCUMENT TEMPLATES"
   - DOCUMENT_TEMPLATES
+sources: []
 
 ---
 # AI Guru 知识库 — 文档模板规范

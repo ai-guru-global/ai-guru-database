@@ -10,6 +10,7 @@ aliases:
   - "Value Alignment For Dummy"
   - "Value Alignment for dummy"
   - Value_Alignment_for_dummy
+sources: []
 
 ---
 # 价值对齐 - 小白版

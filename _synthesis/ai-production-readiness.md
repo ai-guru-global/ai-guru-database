@@ -9,6 +9,7 @@ tier: synthesis
 aliases:
   - "AI Production Readiness"
   - "ai production readiness"
+sources: []
 ---
 
 # AI 生产就绪：从单点 Runbook 到系统工程

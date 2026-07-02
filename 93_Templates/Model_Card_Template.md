@@ -9,6 +9,7 @@ tier: core
 aliases:
   - "Model Card Template"
   - "Model Documentation"
+sources: []
 ---
 
 # Model Card 模型卡片模板

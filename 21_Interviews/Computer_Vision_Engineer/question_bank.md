@@ -6,6 +6,7 @@ summary: "Computer Vision Engineer 面试题库，覆盖 CNN/ViT 基础、检测
 created: 2026-05-31
 updated: 2026-06-04
 tier: supporting
+sources: []
 ---
 
 # Computer Vision Engineer 题库

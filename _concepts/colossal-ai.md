@@ -19,7 +19,7 @@ provenance:
   inferred: 0.2
   ambiguous: 0.05
 base_confidence: 0.85
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 created: 2026-06-16
 updated: 2026-06-16
@@ -94,3 +94,4 @@ aliases:
 - [[_concepts/deepspeed]] — DeepSpeed
 - [[_concepts/megatron-lm]] — Megatron-LM
 - [[_concepts/fsdp]] — FSDP
+- [[_concepts/training-cost-optimization|训练成本优化]] — 分布式训练的成本治理

@@ -8,6 +8,7 @@ aliases:
   - "Llm For Beginners"
   - "LLM For Beginners"
   - LLM_For_Beginners
+sources: []
 
 ---
 # 大语言模型入门：从文字接龙到推理部署

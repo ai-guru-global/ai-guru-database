@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Graph Neural Networks Deep Dive"
   - Graph_Neural_Networks_Deep_Dive
+sources: []
 
 ---
 # 图神经网络深度解读: 从 GCN 到 GAT 再到 Graph Transformer

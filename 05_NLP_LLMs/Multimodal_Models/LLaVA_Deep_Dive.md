@@ -10,6 +10,7 @@ aliases:
   - "Llava Deep Dive"
   - "LLaVA Deep Dive"
   - LLaVA_Deep_Dive
+sources: []
 
 ---
 # LLaVA: 开源多模态大模型

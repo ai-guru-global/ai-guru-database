@@ -5,6 +5,7 @@ tags: ["gap-analysis", "ai-basics", "python", "education", "roadmap"]
 summary: "系统性分析 AI 知识库在入门阶段的覆盖缺口，识别从'零代码通识'到'动手实践'之间的断点，并提供优先级矩阵与补全建议。"
 created: 2026-06-01
 updated: 2026-06-01
+sources: []
 ---
 
 # AI 基础入门内容缺口分析报告

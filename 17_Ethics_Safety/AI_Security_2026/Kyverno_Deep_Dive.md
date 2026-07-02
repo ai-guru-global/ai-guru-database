@@ -6,6 +6,7 @@ tags: ["kyverno", "kubernetes", "policy", "security", "admission-control", "yaml
 summary: "> **一句话理解**: Kyverno 是专为 Kubernetes 设计的策略引擎，使用原生 YAML 定义验证、变更、生成和镜像验证策略，无需学习 Rego，是 K8s 安全基线和资源合规的轻量选择。"
 created: "2026-06-16"
 updated: "2026-06-16"
+sources: []
 ---
 
 # Kyverno 深度解析：Kubernetes 原生策略引擎

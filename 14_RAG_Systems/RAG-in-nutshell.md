@@ -9,6 +9,7 @@ tier: core
 aliases:
   - "Rag In Nutshell"
   - "RAG in nutshell"
+sources: []
 
 ---
 # RAG (检索增强生成) 速成指南

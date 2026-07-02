@@ -10,6 +10,7 @@ aliases:
   - "Jepa Architecture 2026"
   - "JEPA Architecture 2026"
   - JEPA_Architecture_2026
+sources: []
 
 ---
 # JEPA 架构深度解析：LeCun 的世界模型之路

@@ -16,6 +16,7 @@ lifecycle_changed: 2026-06-25
 tier: supporting
 created: 2026-06-25T16:01:28Z
 updated: 2026-06-25T16:01:28Z
+sources: []
 ---
 
 # 矩阵运算

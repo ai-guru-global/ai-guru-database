@@ -20,10 +20,11 @@ relationships:
   - target: "_concepts/long-context-llm"
     type: related_to
 summary: Qwen（通义千问）是阿里巴巴开源的大模型系列，从 Qwen-1 到 Qwen-2.5，在中文能力、代码、数学、长上下文和多模态等方面持续领先，是中文开源生态的重要基座。
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 created: 2026-06-25
 updated: 2026-06-25
+sources: []
 ---
 
 # Qwen 系列模型架构演进

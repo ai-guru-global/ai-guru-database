@@ -10,6 +10,7 @@ aliases:
   - "Readme For Dummy"
   - "README for dummy"
   - README_for_dummy
+sources: []
 
 ---
 # 08 AI 伦理、安全与对齐 - 小白版

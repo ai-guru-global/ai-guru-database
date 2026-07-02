@@ -6,6 +6,7 @@ summary: "联邦学习让多个参与方在不共享原始数据的前提下协�
 created: 2026-06-04
 updated: 2026-06-04
 tier: supporting
+sources: []
 
 ---
 # 联邦学习 (Federated Learning)

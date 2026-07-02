@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Agent Harness Architecture 2026"
   - Agent_Harness_Architecture_2026
+sources: []
 
 ---
 # Agent Harness 技术架构 2026

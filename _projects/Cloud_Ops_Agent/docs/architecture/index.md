@@ -6,6 +6,7 @@ summary: "> 🎯 **目标**: 为架构师提供 Cloud Ops Agent 的完整架构�
 created: 2026-05-31
 updated: 2026-05-31
 tier: core
+sources: []
 ---
 
 # 云产品运维 Agent 架构设计指南 (Architecture)

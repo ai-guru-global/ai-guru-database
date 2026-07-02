@@ -23,10 +23,11 @@ relationships:
   - target: "_concepts/paged-attention"
     type: optimized_by
 summary: TTFT 是从收到用户请求到模型返回第一个生成 token 的时间，主要消耗在 prompt 的预填充（prefill）阶段，是衡量 LLM 推理服务响应速度的关键指标。
-lifecycle: stable
+lifecycle: reviewed
 tier: supporting
 created: 2026-06-25
 updated: 2026-06-25
+sources: []
 ---
 
 # TTFT（Time To First Token）

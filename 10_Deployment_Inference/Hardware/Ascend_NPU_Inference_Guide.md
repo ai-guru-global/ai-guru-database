@@ -7,6 +7,7 @@ summary: "面向 K8s 环境的华为昇腾 NPU 大模型推理部署指南：覆
 created: 2026-06-26
 updated: 2026-06-26
 tier: supporting
+sources: []
 ---
 
 > [!warning] 生产安全提示 · Production Safety

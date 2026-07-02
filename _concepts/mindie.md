@@ -14,6 +14,7 @@ relationships:
     type: runs_on
   - target: "_concepts/cann"
     type: part_of
+sources: []
 ---
 
 # MindIE

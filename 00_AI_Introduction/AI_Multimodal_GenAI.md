@@ -8,6 +8,7 @@ aliases:
   - "Ai Multimodal Genai"
   - "AI Multimodal GenAI"
   - AI_Multimodal_GenAI
+sources: []
 
 ---
 # AI 多模态与生成式 AI

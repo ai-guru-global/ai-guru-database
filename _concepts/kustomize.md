@@ -13,7 +13,7 @@ relationships:
 sources:
   - _concepts/helm.md
 summary: "Kustomize 是 Kubernetes 原生的配置管理工具，通过叠加（overlay）方式管理多环境配置，无需模板渲染；与 Helm 是 K8s 配置管理的两大主流选择。"
-lifecycle: stable
+lifecycle: reviewed
 tier: supporting
 provenance:
   extracted: 0.80

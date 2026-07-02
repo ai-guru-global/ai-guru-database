@@ -7,6 +7,7 @@ created: 2026-06-24
 updated: 2026-06-24
 status: completed
 baseline: _meta/_improvement-execution-2026-06-24.md (2026-06-24)
+sources: []
 ---
 
 # 缺失概念页补全执行报告（2026-06-24）

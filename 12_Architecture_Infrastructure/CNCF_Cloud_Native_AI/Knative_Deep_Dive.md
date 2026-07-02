@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Knative Deep Dive"
   - Knative_Deep_Dive
+sources: []
 
 ---
 # Knative Serving: LLM 服务的弹性与 scale-to-zero

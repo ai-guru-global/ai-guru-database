@@ -3,6 +3,7 @@ title: Agentic Coding Tools
 type: index
 created: 2026-07-02
 updated: 2026-07-02
+sources: []
 ---
 
 # Agentic Coding Tools

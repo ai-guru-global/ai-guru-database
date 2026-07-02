@@ -6,6 +6,7 @@ summary: "> AI 测试是保障 LLM 应用质量的关键环节，覆盖 Prompt �
 created: 2026-05-31
 updated: 2026-05-31
 tier: core
+sources: []
 
 ---
 # AI 测试与评估 (AI Testing)

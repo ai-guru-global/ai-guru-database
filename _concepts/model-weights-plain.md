@@ -18,6 +18,7 @@ aliases:
   - "Model Weights"
   - "model weights"
   - "模型参数"
+sources: []
 
 ---
 # 模型权重大白话解释

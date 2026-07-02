@@ -13,6 +13,7 @@ aliases:
   - "Genai L12 Designing Ux For Ai Applications"
   - "GenAI L12 Designing UX for AI Applications"
   - GenAI_L12_Designing_UX_for_AI_Applications
+sources: []
 
 ---
 ## 学习目标

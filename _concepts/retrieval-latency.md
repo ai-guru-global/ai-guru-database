@@ -15,6 +15,7 @@ relationships:
     type: related_to
   - target: "_concepts/hnsw"
     type: mitigated_by
+sources: []
 ---
 
 # Retrieval Latency

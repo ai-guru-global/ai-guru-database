@@ -9,6 +9,7 @@ tier: core
 aliases:
   - "MLOps Engineer Path"
   - "MLOps Learning Path"
+sources: []
 ---
 
 # MLOps 工程师学习路径 (MLOps Engineer Learning Path)

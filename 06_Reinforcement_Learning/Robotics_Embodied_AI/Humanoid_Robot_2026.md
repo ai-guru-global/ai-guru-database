@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Humanoid Robot 2026"
   - Humanoid_Robot_2026
+sources: []
 
 ---
 # 人形机器人 2026 (Humanoid Robots)

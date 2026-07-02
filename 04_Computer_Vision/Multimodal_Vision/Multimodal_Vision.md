@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Multimodal Vision"
   - Multimodal_Vision
+sources: []
 
 ---
 # 多模态视觉 (Multimodal Vision)

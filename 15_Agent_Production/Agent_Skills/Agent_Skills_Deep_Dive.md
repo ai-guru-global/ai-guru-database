@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Agent Skills Deep Dive"
   - Agent_Skills_Deep_Dive
+sources: []
 
 ---
 # Agent Skills 深度解析
@@ -1384,3 +1385,5 @@ skills-ref validate .agents/skills/my-skill
 - [[15_Agent_Production/Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
 - [[15_Agent_Production/Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
 - [[15_Agent_Production/Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)
+- [[_references/REFERENCE|Agent Skill 通用参考规范]] — Skill 文档结构与元数据约定
+- [[_references/mapping|地理空间数据映射指南]] — Skill 中地理/空间数据建模参考

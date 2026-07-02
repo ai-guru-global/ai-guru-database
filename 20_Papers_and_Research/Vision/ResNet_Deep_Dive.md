@@ -10,6 +10,7 @@ aliases:
   - "Resnet Deep Dive"
   - "ResNet Deep Dive"
   - ResNet_Deep_Dive
+sources: []
 
 ---
 # ResNet 深度解读 (Deep Residual Learning for Image Recognition)

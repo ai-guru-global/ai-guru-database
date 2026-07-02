@@ -6,6 +6,7 @@ summary: "> 图神经网络是让AI理解「关系」的钥匙——处理社交
 created: 2026-06-04
 updated: 2026-06-04
 tier: supporting
+sources: []
 
 ---
 # 图神经网络 (Graph Neural Networks)

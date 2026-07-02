@@ -5,6 +5,7 @@ tags: ['llm-architecture', 'overview', 'index']
 summary: 大语言模型架构 相关内容的索引和概览。
 created: 2026-06-12
 tier: peripheral
+sources: []
 
 ---
 # 大语言模型架构

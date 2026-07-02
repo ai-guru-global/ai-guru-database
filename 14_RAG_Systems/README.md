@@ -6,6 +6,7 @@ summary: '> **一句话理解**: RAG（检索增强生成）就像给大模型�
 created: '2026-05-31'
 updated: '2026-06-15'
 tier: supporting
+sources: []
 
 ---
 # RAG 系统 (RAG Systems)

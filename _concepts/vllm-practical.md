@@ -25,10 +25,11 @@ relationships:
   - target: "_concepts/model-serving"
     type: related_to
 summary: vLLM 是专为高吞吐 LLM 推理设计的开源引擎，核心创新是 PagedAttention。本文覆盖安装、离线推理、在线服务、参数调优及与 Hugging Face 的对比。
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 created: 2026-06-25
 updated: 2026-06-25
+sources: []
 ---
 
 # vLLM 实战指南

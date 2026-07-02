@@ -6,6 +6,7 @@ summary: "微积分和优化是深度学习的数学基石。本页面已迁移�
 created: 2026-07-02
 updated: 2026-07-02
 tier: core
+sources: []
 ---
 
 # 微积分与优化基础 (Calculus & Optimization Foundations)

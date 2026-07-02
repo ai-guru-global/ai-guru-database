@@ -13,6 +13,7 @@ aliases:
 
 updated: 2026-06-30
 summary: "Structured Outputs 与 Tool Calling — 专题文档"
+sources: []
 ---
 title: Structured Outputs 与 Tool Calling
 description: '**文档类型**: 功能详解 | **最后更新**: 2026-03 | **关键词**: OpenRouter, Structured

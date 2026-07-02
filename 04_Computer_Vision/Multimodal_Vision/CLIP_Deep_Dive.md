@@ -10,6 +10,7 @@ aliases:
   - "Clip Deep Dive"
   - "CLIP Deep Dive"
   - CLIP_Deep_Dive
+sources: []
 
 ---
 # CLIP 深度解读 - 多模态学习的里程碑

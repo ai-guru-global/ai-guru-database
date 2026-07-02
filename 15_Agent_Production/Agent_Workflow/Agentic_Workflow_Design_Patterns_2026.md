@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Agentic Workflow Design Patterns 2026"
   - Agentic_Workflow_Design_Patterns_2026
+sources: []
 
 ---
 # Agentic Workflow Design Patterns 2026: Beyond Simple Chains

@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Agent Future Roadmap 2026 2030"
   - Agent_Future_Roadmap_2026_2030
+sources: []
 
 ---
 # Agent 未来发展路线图 2026-2030

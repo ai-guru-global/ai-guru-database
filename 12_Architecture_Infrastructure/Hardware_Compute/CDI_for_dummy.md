@@ -10,6 +10,7 @@ aliases:
   - "Cdi For Dummy"
   - "CDI for dummy"
   - CDI_for_dummy
+sources: []
 
 ---
 # CDI 容器设备接口 - 小白版

@@ -10,6 +10,7 @@ aliases:
   - "Vit Deep Dive"
   - "ViT Deep Dive"
   - ViT_Deep_Dive
+sources: []
 
 ---
 # Vision Transformer (ViT) 深度解读

@@ -13,6 +13,7 @@ relationships:
     type: managed_by
   - target: "_concepts/alibaba-cloud"
     type: incurred_on
+sources: []
 ---
 
 # Cloud Cost

@@ -8,9 +8,10 @@ aliases:
   - "Agent Loop"
   - "agent loop"
 category: -concepts
-lifecycle: stable
+lifecycle: reviewed
 
 relationships:
+sources: []
 ---
 
 # Agent Loop (智能体循环)

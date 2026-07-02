@@ -17,7 +17,7 @@ relationships:
 sources:
   - 07_Model_Training/Alignment/
 summary: "Preference Learning（偏好学习）是 RLHF / DPO / IPO / KTO 等所有基于人类偏好训练方法的总称；通过学习"哪个回答更好"而非绝对正确来对齐模型。"
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 provenance:
   extracted: 0.85

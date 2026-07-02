@@ -10,6 +10,7 @@ aliases:
   - "Vector Database For Dummy"
   - "Vector Database for dummy"
   - Vector_Database_for_dummy
+sources: []
 
 ---
 # 向量数据库 - 小白版

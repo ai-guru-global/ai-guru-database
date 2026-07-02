@@ -7,6 +7,7 @@ tier: peripheral
 aliases:
   - "Context Engineering Guide"
   - Context_Engineering_Guide
+sources: []
 
 ---
 # 大模型上下文工程权威指南

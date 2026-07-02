@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "World Models 2026"
   - World_Models_2026
+sources: []
 
 ---
 # 世界模型 (World Models) - 2026 年完整指南

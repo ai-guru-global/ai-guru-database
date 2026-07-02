@@ -9,6 +9,7 @@ tier: peripheral
 aliases:
   - "Multimodal Evaluation Benchmarks"
   - Multimodal_Evaluation_Benchmarks
+sources: []
 
 ---
 # 多模态评测基准深度解析

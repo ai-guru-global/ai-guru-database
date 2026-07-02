@@ -13,6 +13,7 @@ relationships:
     type: related_to
   - target: "_concepts/k3s"
     type: related_to
+sources: []
 ---
 
 # Karmada

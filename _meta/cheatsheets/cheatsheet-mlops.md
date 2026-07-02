@@ -6,6 +6,7 @@ created: 2026-06-24
 updated: 2026-06-24
 tier: core
 summary: "LLMOps 全栈速查：从 Prompt 管理、CI/CD、灰度发布、可观测性、成本优化到 SLO/Error Budget 的端到端生产级实践框架。"
+sources: []
 ---
 
 # LLMOps 速查表

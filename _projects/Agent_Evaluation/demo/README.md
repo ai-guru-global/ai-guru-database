@@ -6,6 +6,7 @@ summary: "> CAPER 五维评估框架的可运行 Demo，包含评估引擎、测
 created: 2026-05-31
 updated: 2026-05-31
 tier: supporting
+sources: []
 
 ---
 

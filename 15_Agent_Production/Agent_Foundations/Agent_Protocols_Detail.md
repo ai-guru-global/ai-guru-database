@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Agent Protocols Detail"
   - Agent_Protocols_Detail
+sources: []
 
 ---
 # AI Agent 协议详解：MCP、A2A、UCP

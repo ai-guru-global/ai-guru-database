@@ -10,10 +10,11 @@ aliases:
   - "Site Reliability Engineering"
   - "站点可靠性工程"
 relationships:
-  - target: "_concepts/devops"
+  - target: "_concepts/platform-engineering"
     type: related_to
   - target: "_concepts/slo"
     type: uses
+sources: []
 ---
 
 # SRE

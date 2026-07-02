@@ -16,6 +16,7 @@ relationships:
     type: uses
   - target: "_concepts/vector-database"
     type: uses
+sources: []
 ---
 
 # Hybrid Search

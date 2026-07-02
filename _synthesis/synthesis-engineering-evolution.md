@@ -7,6 +7,7 @@ tier: core
 aliases:
   - "Synthesis Engineering Evolution"
   - "synthesis engineering evolution"
+sources: []
 
 ---
 # 从提示词工程到上下文工程到 Harness 工程的三阶演进

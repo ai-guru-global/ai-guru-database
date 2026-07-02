@@ -16,7 +16,7 @@ relationships:
 sources:
   - 10_Deployment_Inference/Quantization/
 summary: "GPTQ 是 2022 年提出的 LLM INT4 训练后量化方法，基于二阶信息（Hessian）的逐层优化实现高精度量化；与 AWQ 一起是 LLM 4-bit 量化的两大主流方案。"
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 provenance:
   extracted: 0.85

@@ -13,6 +13,7 @@ aliases:
   - "Genai L08 Building Search Applications"
   - "GenAI L08 Building Search Applications"
   - GenAI_L08_Building_Search_Applications
+sources: []
 
 ---
 ## 学习目标

@@ -10,6 +10,7 @@ aliases:
   - "Ai Safety Redteaming"
   - "AI Safety RedTeaming"
   - AI_Safety_RedTeaming
+sources: []
 
 ---
 # AI 安全与红队 (AI Safety & Red Teaming)

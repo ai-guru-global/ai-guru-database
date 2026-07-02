@@ -9,6 +9,7 @@ aliases:
   - "GPU 故障诊断"
   - "AI 工作负载排障"
   - "CUDA OOM 诊断"
+sources: []
 
 ---
 # AI 工作负载 GPU 故障远程诊断决策树

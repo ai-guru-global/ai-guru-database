@@ -10,6 +10,7 @@ aliases:
   - "Ai Legal Government 2026"
   - "AI Legal Government 2026"
   - AI_Legal_Government_2026
+sources: []
 
 ---
 # AI 法律与政务行业应用 (2025-2026)

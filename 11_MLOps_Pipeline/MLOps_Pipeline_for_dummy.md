@@ -10,6 +10,7 @@ aliases:
   - "Mlops Pipeline For Dummy"
   - "MLOps Pipeline for dummy"
   - MLOps_Pipeline_for_dummy
+sources: []
 
 ---
 # MLOps 流水线 - 小白版

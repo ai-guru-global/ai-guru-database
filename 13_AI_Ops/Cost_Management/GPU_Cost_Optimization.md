@@ -7,6 +7,7 @@ summary: "系统讲解 GPU 集群成本优化的方法论：利用率提升、�
 created: 2026-06-26
 updated: 2026-06-26
 tier: supporting
+sources: []
 ---
 
 # GPU 成本优化

@@ -9,6 +9,7 @@ tier: core
 aliases:
   - "Architecture In Nutshell"
   - "Architecture in nutshell"
+sources: []
 
 ---
 # AI 架构速成指南

@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Enterprise Agent Governance 2026"
   - Enterprise_Agent_Governance_2026
+sources: []
 
 ---
 # Enterprise Agent Governance 2026: Managing Thousands of Agents

@@ -16,7 +16,7 @@ sources:
   - 08_Model_Evaluation/Evaluation_Tools/LLM_as_Judge_Guide.md
   - _concepts/llm-arena.md
 summary: "LLM-as-Judge 是用强 LLM（GPT-4 / Claude Opus）作为"裁判"自动评估其他 LLM 输出的范式；2026 年是 RAG、对话、Agent 评测的主流方法，但需警惕位置偏差、长度偏差等系统性问题。"
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 provenance:
   extracted: 0.85

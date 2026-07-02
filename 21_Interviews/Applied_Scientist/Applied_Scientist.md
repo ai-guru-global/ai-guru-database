@@ -10,6 +10,7 @@ aliases:
   - "Applied_Scientist"
   - "Applied Scientist 面试指南"
   - "Applied_Scientist Interview Guide"
+sources: []
 ---
 
 # Applied Scientist 面试指南

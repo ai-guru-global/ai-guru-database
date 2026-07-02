@@ -9,6 +9,7 @@ tier: core
 aliases:
   - "Model Merging 2026"
   - Model_Merging_2026
+sources: []
 
 ---
 # 模型合并技术 2026 (Model Merging)

@@ -10,6 +10,7 @@ aliases:
   - "Agentic Ui Ux Design 2026"
   - "Agentic UI UX Design 2026"
   - Agentic_UI_UX_Design_2026
+sources: []
 
 ---
 # Agentic UI/UX Design 2026: Designing for AI Agents

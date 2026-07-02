@@ -5,6 +5,7 @@ tags: ["agent", "skill", "spec", "reference", "best-practices"]
 summary: "Agent Skill 文档的文件结构、元数据、引用约定与最佳实践参考。"
 created: 2026-07-02
 updated: 2026-07-02
+sources: []
 ---
 
 # Agent Skill 通用参考规范

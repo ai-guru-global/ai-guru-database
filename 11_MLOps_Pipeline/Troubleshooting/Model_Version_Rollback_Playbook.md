@@ -7,6 +7,7 @@ summary: "面向 K8s 上 ML/LLM 推理服务的模型版本回滚：结合 MLflo
 created: 2026-06-26
 updated: 2026-06-26
 tier: supporting
+sources: []
 ---
 
 > [!warning] 生产安全提示 · Production Safety

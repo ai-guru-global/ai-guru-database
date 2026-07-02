@@ -6,6 +6,7 @@ summary: "小模型与端侧 LLM 覆盖 Phi/Gemma/Qwen 等高效小模型及端�
 created: 2026-06-04
 updated: 2026-06-04
 tier: supporting
+sources: []
 
 ---
 # 小模型与端侧 LLM (Edge LLM)

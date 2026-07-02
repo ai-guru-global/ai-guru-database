@@ -3,7 +3,7 @@ title: "LiteLLM 统一 LLM API 代理 (LiteLLM Unified LLM Gateway)"
 category: -concepts
 tags: ["litellm", "llm-proxy", "unified-api", "cost-tracking", "load-balancing", "multi-provider"]
 relationships:
-  - target: "_concepts/ai-gateway"
+  - target: "_concepts/synapse-gateway"
     type: related_to
   - target: "_concepts/opik"
     type: related_to
@@ -15,7 +15,7 @@ provenance:
   inferred: 0.70
   ambiguous: 0.10
 base_confidence: 0.88
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 ---
 

@@ -9,6 +9,7 @@ tier: core
 aliases:
   - "Aiops In Nutshell"
   - "AIOps in nutshell"
+sources: []
 
 ---
 # AI Ops 速成指南

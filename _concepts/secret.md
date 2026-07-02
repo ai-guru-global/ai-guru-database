@@ -12,7 +12,7 @@ relationships:
     type: part_of
   - target: "_concepts/apsara-stack"
     type: related_to
-lifecycle: stable
+lifecycle: reviewed
 tier: supporting
 created: 2026-06-26
 updated: 2026-06-26
@@ -20,6 +20,7 @@ aliases:
   - "Secret"
   - "K8s Secret"
   - "Kubernetes Secret"
+sources: []
 ---
 
 # Secret

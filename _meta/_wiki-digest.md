@@ -3,6 +3,7 @@ title: Wiki Digest — 本周知识动态
 category: meta
 tags: [meta, digest, weekly, changelog]
 summary: 本周 Wiki 更新摘要，涵盖标签规范化、链接网络构建、合成页面创建和 frontmatter 修复。
+sources: []
 ---
 
 # Wiki Digest — 2026 年 06 月 01 日

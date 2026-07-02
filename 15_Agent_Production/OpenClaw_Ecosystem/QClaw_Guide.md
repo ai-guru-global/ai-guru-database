@@ -10,6 +10,7 @@ aliases:
   - "Qclaw Guide"
   - "QClaw Guide"
   - QClaw_Guide
+sources: []
 
 ---
 # QClaw Complete Guide: Tencent's WeChat-First AI Agent

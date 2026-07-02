@@ -10,6 +10,7 @@ aliases:
   - "Interview Preparing"
   - "interview preparing"
   - interview_preparing
+sources: []
 
 ---
 # AI Data Analyst 面试准备

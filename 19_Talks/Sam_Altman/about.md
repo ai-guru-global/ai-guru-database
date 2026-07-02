@@ -8,6 +8,7 @@ updated: 2026-06-05
 tier: supporting
 aliases:
   - About
+sources: []
 
 ---
 # Sam Altman 简介 (Sam Altman)

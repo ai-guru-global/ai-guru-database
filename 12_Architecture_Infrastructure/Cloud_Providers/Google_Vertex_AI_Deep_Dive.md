@@ -10,6 +10,7 @@ aliases:
   - "Google Vertex Ai Deep Dive"
   - "Google Vertex AI Deep Dive"
   - Google_Vertex_AI_Deep_Dive
+sources: []
 
 ---
 # Google Vertex AI 深度解析：GCP 统一 AI 平台

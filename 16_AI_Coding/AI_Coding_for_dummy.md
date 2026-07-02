@@ -10,6 +10,7 @@ aliases:
   - "Ai Coding For Dummy"
   - "AI Coding for dummy"
   - AI_Coding_for_dummy
+sources: []
 
 ---
 # AI 编程 - 小白版

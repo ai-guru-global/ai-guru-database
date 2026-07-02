@@ -21,10 +21,11 @@ relationships:
   - target: "_concepts/temperature-scaling"
     type: often_used_with
 summary: Top-k 采样只从概率最高的前 k 个 token 中随机选择下一个 token。它是最早广泛使用的随机解码策略之一，实现简单，但灵活性不如 Top-p。
-lifecycle: stable
+lifecycle: reviewed
 tier: supporting
 created: 2026-06-25
 updated: 2026-06-25
+sources: []
 ---
 
 # Top-k 采样

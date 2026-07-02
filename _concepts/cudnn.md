@@ -13,6 +13,7 @@ relationships:
     type: part_of
   - target: "_concepts/nvidia-gpu"
     type: runs_on
+sources: []
 ---
 
 # cuDNN

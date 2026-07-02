@@ -6,6 +6,7 @@ summary: 18 篇跨领域综合分析文档，连接不同章节的概念，发�
 created: 2026-06-03
 updated: 2026-06-15
 tier: core
+sources: []
 
 ---
 # 跨域综合文档索引 (Synthesis Index)

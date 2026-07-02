@@ -10,6 +10,7 @@ aliases:
   - "Python For Ai Basics"
   - "Python for AI Basics"
   - Python_for_AI_Basics
+sources: []
 
 ---
 # Python for AI: 零基础到能写 AI 代码

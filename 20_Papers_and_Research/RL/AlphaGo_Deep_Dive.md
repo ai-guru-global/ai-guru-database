@@ -10,6 +10,7 @@ aliases:
   - "Alphago Deep Dive"
   - "AlphaGo Deep Dive"
   - AlphaGo_Deep_Dive
+sources: []
 
 ---
 # AlphaGo 深度解读 (Mastering the Game of Go)

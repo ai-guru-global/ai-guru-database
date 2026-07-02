@@ -7,9 +7,10 @@ tier: core
 aliases:
   - Mcp
 category: -concepts
-lifecycle: stable
+lifecycle: reviewed
 
 relationships:
+sources: []
 ---
 
 # Model Context Protocol (MCP)

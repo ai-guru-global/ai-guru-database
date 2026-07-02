@@ -11,6 +11,7 @@ aliases:
   - "L08 Transfer Learning And Training Tricks"
   - "L08 Transfer Learning and Training Tricks"
   - L08_Transfer_Learning_and_Training_Tricks
+sources: []
 
 ---
 # L08 - 预训练网络、迁移学习与训练技巧

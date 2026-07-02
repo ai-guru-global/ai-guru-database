@@ -10,6 +10,7 @@ aliases:
   - "Spring Ai Skills Integration"
   - "Spring AI Skills Integration"
   - Spring_AI_Skills_Integration
+sources: []
 
 ---
 # Spring AI 与 Agent Skills 集成

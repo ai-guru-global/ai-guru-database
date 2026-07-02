@@ -10,6 +10,7 @@ tier: peripheral
 aliases:
   - "Microsoft Genai For Beginners"
   - "microsoft genai for beginners"
+sources: []
 
 ---
 # Microsoft Generative AI For Beginners

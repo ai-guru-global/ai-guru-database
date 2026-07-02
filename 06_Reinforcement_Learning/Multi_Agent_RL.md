@@ -3,6 +3,7 @@ title: "Multi-Agent Reinforcement Learning"
 tags: [reinforcement-learning, multi-agent, MARL, cooperative, competitive, production]
 status: complete
 last_updated: 2026-07-02
+sources: []
 ---
 
 # Multi-Agent Reinforcement Learning (MARL)

@@ -9,6 +9,7 @@ tier: core
 aliases:
   - "Axolotl Deep Dive"
   - Axolotl_Deep_Dive
+sources: []
 
 ---
 # Axolotl: 开源微调工具

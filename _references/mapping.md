@@ -10,6 +10,7 @@ tags:
 summary: 为 Agent Skill 提供地理/空间数据建模、坐标转换、常见地图可视化形式与最佳实践的参考指南。
 created: 2026-07-02
 updated: 2026-07-02
+sources: []
 ---
 
 # Skill 中地理/空间数据映射与可视化指南

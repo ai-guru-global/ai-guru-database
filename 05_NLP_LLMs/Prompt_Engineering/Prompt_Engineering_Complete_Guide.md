@@ -7,6 +7,7 @@ tier: peripheral
 aliases:
   - "Prompt Engineering Complete Guide"
   - Prompt_Engineering_Complete_Guide
+sources: []
 
 ---
 # 提示词工程完整指南：核心技术与设计模式

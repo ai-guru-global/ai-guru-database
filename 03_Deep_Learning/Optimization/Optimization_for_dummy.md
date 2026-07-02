@@ -10,6 +10,7 @@ aliases:
   - "Optimization For Dummy"
   - "Optimization for dummy"
   - Optimization_for_dummy
+sources: []
 
 ---
 # 训练优化 - 小白版

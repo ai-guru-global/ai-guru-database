@@ -7,6 +7,7 @@ summary: "系统讲解阿里云 PAI 平台的核心产品（DSW/DLC/EAS）、与
 created: 2026-06-26
 updated: 2026-06-26
 tier: core
+sources: []
 ---
 
 # 阿里云 PAI 深度解析

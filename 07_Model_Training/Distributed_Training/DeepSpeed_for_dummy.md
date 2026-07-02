@@ -10,6 +10,7 @@ aliases:
   - "Deepspeed For Dummy"
   - "DeepSpeed for dummy"
   - DeepSpeed_for_dummy
+sources: []
 
 ---
 # DeepSpeed 入门：用更少的 GPU 训练更大的模型

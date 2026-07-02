@@ -10,6 +10,7 @@ aliases:
   - "Interviews For Dummy"
   - "Interviews for dummy"
   - Interviews_for_dummy
+sources: []
 
 ---
 # AI 面试准备 - 小白版

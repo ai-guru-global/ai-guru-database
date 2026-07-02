@@ -10,6 +10,7 @@ tier: peripheral
 aliases:
   - "Microsoft Ai For Beginners"
   - "microsoft ai for beginners"
+sources: []
 
 ---
 # Microsoft AI For Beginners

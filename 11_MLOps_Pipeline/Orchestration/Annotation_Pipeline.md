@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Annotation Pipeline"
   - Annotation_Pipeline
+sources: []
 
 ---
 # 标注流水线 (Annotation Pipeline)

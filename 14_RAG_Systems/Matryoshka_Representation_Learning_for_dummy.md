@@ -10,6 +10,7 @@ aliases:
   - "Matryoshka Representation Learning For Dummy"
   - "Matryoshka Representation Learning for dummy"
   - Matryoshka_Representation_Learning_for_dummy
+sources: []
 
 ---
 # Matryoshka Representation Learning — 小白版

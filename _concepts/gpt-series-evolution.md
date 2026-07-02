@@ -20,10 +20,11 @@ relationships:
   - target: "_concepts/multimodal-llm"
     type: related_to
 summary: GPT 系列从 GPT-1 的预训练探索，到 GPT-3 的上下文学习爆发，再到 GPT-4 的多模态与推理能力，引领了生成式 AI 的发展，并催生了 ChatGPT、GPT-4o 等现象级产品。
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 created: 2026-06-25
 updated: 2026-06-25
+sources: []
 ---
 
 # GPT 系列模型演进

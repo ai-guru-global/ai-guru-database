@@ -19,7 +19,7 @@ sources:
   - 12_Architecture_Infrastructure/Google_Vertex_AI_Deep_Dive.md
   - 05_NLP_LLMs/Global_LLM_Ecosystem/Google_Gemini_Deep_Dive.md
 summary: "Gemini 是 Google DeepMind 于 2023 年底发布的多模态大模型系列（Nano / Flash / Pro / Ultra），原生支持文本/图像/视频/音频/代码多模态输入，是 Google Vertex AI 平台的旗舰模型。"
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 provenance:
   extracted: 0.80

@@ -22,10 +22,11 @@ relationships:
   - target: "_concepts/kv-cache"
     type: related_to
 summary: 本页汇总 LLM 推理服务上线前需要检查的技术点，包括解码参数、性能优化、稳定性、安全性和可观测性。
-lifecycle: stable
+lifecycle: reviewed
 tier: supporting
 created: 2026-06-25
 updated: 2026-06-25
+sources: []
 ---
 
 # LLM 推理上线检查清单

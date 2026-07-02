@@ -10,6 +10,7 @@ aliases:
   - "Baidu Ernie Deep Dive"
   - "Baidu ERNIE Deep Dive"
   - Baidu_ERNIE_Deep_Dive
+sources: []
 
 ---
 # 百度文心 (ERNIE): 知识增强驱动的中文大模型先驱

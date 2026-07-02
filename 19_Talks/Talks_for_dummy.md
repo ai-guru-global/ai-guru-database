@@ -10,6 +10,7 @@ aliases:
   - "Talks For Dummy"
   - "Talks for dummy"
   - Talks_for_dummy
+sources: []
 
 ---
 # AI 名人演讲与观点 - 小白版

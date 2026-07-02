@@ -13,6 +13,7 @@ aliases:
   - "Genai L00 Course Setup"
   - "GenAI L00 Course Setup"
   - GenAI_L00_Course_Setup
+sources: []
 
 ---
 

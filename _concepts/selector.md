@@ -16,6 +16,7 @@ relationships:
     type: related_to
   - target: "_concepts/deployment"
     type: part_of
+sources: []
 ---
 
 # Selector
@@ -116,7 +117,7 @@ spec:
 | **流量路由** | Service | `spec.selector` 匹配后端 Pod，决定哪些 Pod 接收请求。 |
 | **副本控制** | Deployment / ReplicaSet / StatefulSet | `spec.selector` 匹配并管理相同 Label 的 Pod。 |
 | **调度约束** | Pod | `nodeSelector` 限制 Pod 只能跑在带特定 Label 的 Node 上。 |
-| **批量运维** | kubectl | `-l` 快速筛选出一批 Pod 做日志、删除、重启。 |
+| **批量运维** | [[_concepts/kubectl|kubectl]] | `-l` 快速筛选出一批 Pod 做日志、删除、重启。 |
 | **灰度发布** | Deployment | 利用 `version` Label 与不同 Selector 组合，实现金丝雀/蓝绿发布。 |
 
 ## 选型对比

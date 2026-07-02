@@ -6,6 +6,7 @@ summary: '> **一句话理解**: AI 系统架构是智能应用的"骨架与神�
 created: '2026-05-31'
 updated: '2026-06-16'
 tier: supporting
+sources: []
 
 ---
 # 架构与基础设施 (Architecture & Infrastructure)

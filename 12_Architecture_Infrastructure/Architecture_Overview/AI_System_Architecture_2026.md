@@ -10,6 +10,7 @@ aliases:
   - "Ai System Architecture 2026"
   - "AI System Architecture 2026"
   - AI_System_Architecture_2026
+sources: []
 
 ---
 # AI 系统架构全景图 (AI System Architecture 2026)

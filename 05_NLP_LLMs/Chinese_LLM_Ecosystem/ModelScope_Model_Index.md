@@ -11,6 +11,7 @@ aliases:
   - "Modelscope Model Index"
   - "ModelScope Model Index"
   - ModelScope_Model_Index
+sources: []
 
 ---
 # ModelScope 全量模型索引 (ModelScope Model Index)

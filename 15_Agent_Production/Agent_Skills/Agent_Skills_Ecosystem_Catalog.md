@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Agent Skills Ecosystem Catalog"
   - Agent_Skills_Ecosystem_Catalog
+sources: []
 
 ---
 # Agent Skills 生态目录

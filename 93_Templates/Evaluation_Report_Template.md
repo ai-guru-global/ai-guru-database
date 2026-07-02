@@ -9,6 +9,7 @@ tier: core
 aliases:
   - "Evaluation Report Template"
   - "Model Evaluation Report"
+sources: []
 ---
 
 # 模型评估报告模板 (Model Evaluation Report Template)

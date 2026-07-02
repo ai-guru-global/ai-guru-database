@@ -18,7 +18,7 @@ sources:
   - 15_Agent_Production/Agent_Foundations/Multi_Agent_Systems_Guide.md
   - _concepts/autogen.md
 summary: "Multi-Agent System（MAS）是多个 LLM Agent 通过协作 / 竞争 / 角色扮演完成复杂任务的系统；2026 年通过 A2A 协议标准化、CrewAI / AutoGen 等框架普及，成为企业级 Agent 应用的主流范式。"
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 provenance:
   extracted: 0.80

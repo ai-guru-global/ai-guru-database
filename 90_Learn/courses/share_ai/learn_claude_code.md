@@ -108,3 +108,5 @@ aliases:
 - [[15_Agent_Production/Agentic_Coding_Tools/Claude_Code_Deep_Dive]] — Claude Code 产品解析
 - [[90_Learn/guides/ai_engineering_roadmap_2026]] — AI 工程师学习路线
 - [[90_Learn/guides/learning_paths_2026]] — 本库 6 条学习路径总览
+- [[15_Agent_Production/Course_Notes/Learn_Claude_Code_L07_Skill_Loading]] — L07: Skill 两级加载机制
+- [[15_Agent_Production/Course_Notes/Learn_Claude_Code_L19_MCP_Plugin]] — L19: MCP Plugin 工具发现

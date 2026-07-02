@@ -8,6 +8,7 @@ updated: 2026-06-12
 tier: supporting
 aliases:
   - About
+sources: []
 
 ---
 # 白金泽 (Jinze Bai) — 通义千问团队负责人

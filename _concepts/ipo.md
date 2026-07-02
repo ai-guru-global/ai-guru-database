@@ -14,7 +14,7 @@ relationships:
 sources:
   - 07_Model_Training/Alignment/
 summary: "IPO（Identity Preference Optimization）是 DPO 的改进版，通过正则化防止 overfitting，在小数据集和重复偏好对场景下比 DPO 更稳定。"
-lifecycle: stable
+lifecycle: reviewed
 tier: supporting
 provenance:
   extracted: 0.80

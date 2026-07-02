@@ -4,6 +4,7 @@ category: meta
 visibility: internal
 tags: [meta, safety, production, policy]
 last_updated: 2026-07-02
+sources: []
 ---
 
 # 生产安全策略 · Production Safety Policy

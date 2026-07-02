@@ -10,6 +10,7 @@ aliases:
   - "Ai Autonomous Driving 2026"
   - "AI Autonomous Driving 2026"
   - AI_Autonomous_Driving_2026
+sources: []
 
 ---
 # AI 自动驾驶与智能交通应用 (2025-2026)

@@ -6,6 +6,7 @@ tags: ["paper", "word2vec", "nlp", "embedding", "word-representation", "distribu
 summary: "Word2Vec (2013) 用浅层神经网络高效学习词向量，发现 king-man+woman≈queen 等语义关系，开创了分布式表示时代，是 GPT/BERT 等所有现代语言模型的共同祖先。"
 created: 2026-06-04
 updated: 2026-06-04
+sources: []
 ---
 
 # 论文深度解读: Word2Vec — Efficient Estimation of Word Representations in Vector Space

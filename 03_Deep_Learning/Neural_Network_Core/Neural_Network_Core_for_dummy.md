@@ -10,6 +10,7 @@ aliases:
   - "Neural Network Core For Dummy"
   - "Neural Network Core for dummy"
   - Neural_Network_Core_for_dummy
+sources: []
 
 ---
 # 神经网络核心 - 小白版

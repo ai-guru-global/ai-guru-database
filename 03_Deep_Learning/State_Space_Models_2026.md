@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "State Space Models 2026"
   - State_Space_Models_2026
+sources: []
 
 ---
 # 状态空间模型 2026: Mamba 与 Transformer 后继者

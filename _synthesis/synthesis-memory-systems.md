@@ -7,6 +7,7 @@ tier: core
 aliases:
   - "Synthesis Memory Systems"
   - "synthesis memory systems"
+sources: []
 
 ---
 # AI 系统记忆体系全景：从 KV Cache 到长期知识图谱

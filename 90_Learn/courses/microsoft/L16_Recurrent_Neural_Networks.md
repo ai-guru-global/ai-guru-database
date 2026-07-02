@@ -10,6 +10,7 @@ tier: supporting
 aliases:
   - "L16 Recurrent Neural Networks"
   - L16_Recurrent_Neural_Networks
+sources: []
 
 ---
 # L16 - 循环神经网络RNN

@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Agent Observability 2026"
   - Agent_Observability_2026
+sources: []
 
 ---
 # Agent 可观测性与调试 (Agent Observability & Debugging 2026)

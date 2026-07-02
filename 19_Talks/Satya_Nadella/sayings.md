@@ -8,6 +8,7 @@ updated: 2026-05-31
 tier: supporting
 aliases:
   - Sayings
+sources: []
 
 ---
 # Satya Nadella 关于 AI 的观点 (Satya Nadella on AI)

@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Bayesian Methods Deep Dive"
   - Bayesian_Methods_Deep_Dive
+sources: []
 
 ---
 # 贝叶斯方法深度解读: 从贝叶斯定理到概率编程

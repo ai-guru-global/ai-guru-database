@@ -6,6 +6,7 @@ summary: "本章涵盖强化学习的完整技术栈，从数学基础（MDP/贝
 created: 2026-05-31
 updated: 2026-05-31
 tier: supporting
+sources: []
 
 ---
 # 06 强化学习 (Reinforcement Learning)

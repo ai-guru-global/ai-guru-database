@@ -18,7 +18,7 @@ relationships:
 sources:
   - 07_Model_Training/Alignment/GRPO_and_New_Alignment_Methods.md
 summary: "GRPO（Group Relative Policy Optimization）是 DeepSeek 在 R1 模型中提出的对齐算法，无需 Critic 模型，通过组内多个采样响应的相对优势进行策略优化，比 PPO 更简单高效。"
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 provenance:
   extracted: 0.90

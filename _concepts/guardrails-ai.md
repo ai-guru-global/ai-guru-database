@@ -17,7 +17,7 @@ provenance:
   inferred: 0.35
   ambiguous: 0.10
 base_confidence: 0.82
-lifecycle: stable
+lifecycle: reviewed
 tier: supporting
 ---
 
@@ -259,3 +259,4 @@ spec:
 - [[_concepts/helicone]] — Helicone LLM API 监控
 - [[_concepts/opik]] — Opik LLM 可观测性平台
 - [[_concepts/llm-guard]] — LLM Guard 安全防护
+- [[_concepts/llm-production-deployment|LLM 生产部署]] — 护栏在生产部署中的集成

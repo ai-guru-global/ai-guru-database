@@ -6,6 +6,7 @@ summary: '> Agent 的"智商"不仅取决于 LLM，还取决于 RAG 检索质量
 created: '2026-05-31'
 updated: '2026-05-31'
 tier: supporting
+sources: []
 
 ---
 # 记忆与基础设施

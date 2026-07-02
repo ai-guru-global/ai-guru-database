@@ -16,7 +16,7 @@ relationships:
 sources:
   - 10_Deployment_Inference/Quantization/
 summary: "NF4（4-bit NormalFloat）是 bitsandbytes 库提出的 4-bit 数据类型，针对正态分布权重做了优化设计；QLoRA 用 NF4 实现单卡 24GB 量化微调 65B 模型。"
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 provenance:
   extracted: 0.85

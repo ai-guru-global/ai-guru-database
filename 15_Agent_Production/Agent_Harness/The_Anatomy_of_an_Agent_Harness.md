@@ -23,6 +23,7 @@ aliases:
   - "The Anatomy Of An Agent Harness"
   - "The Anatomy of an Agent Harness"
   - The_Anatomy_of_an_Agent_Harness
+sources: []
 
 ---
 ## TLDR

@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Vibe Coding Prompt Templates"
   - Vibe_Coding_Prompt_Templates
+sources: []
 
 ---
 # Vibe Coding 提示词模板库

@@ -5,6 +5,7 @@ tags: [claude-code, agent-skills, skill-loading, course-notes]
 summary: Claude Code 课程第 07 课笔记：Skill 的两级加载机制、SYSTEM 目录与按需注入。
 created: 2026-07-02
 updated: 2026-07-02
+sources: []
 ---
 
 # Learn Claude Code L07 - Skill Loading

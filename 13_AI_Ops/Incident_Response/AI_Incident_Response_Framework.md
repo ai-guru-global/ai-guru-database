@@ -7,6 +7,7 @@ summary: "面向 AI 系统的事故响应框架：事件分级、响应流程、
 created: 2026-06-26
 updated: 2026-06-26
 tier: supporting
+sources: []
 ---
 
 # AI 事故响应框架

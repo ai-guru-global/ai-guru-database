@@ -6,6 +6,7 @@ summary: "> 本文件夹收录 Agent Skills 开放标准的完整知识体系，
 created: 2026-05-31
 updated: 2026-05-31
 tier: supporting
+sources: []
 
 ---
 # Agent Skills 文档索引

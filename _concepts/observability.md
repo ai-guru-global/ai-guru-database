@@ -20,7 +20,7 @@ relationships:
   - target: "_concepts/agent-eval"
     type: belongs_to
 summary: "AI 可观测性是对 LLM 应用进行全链路监控、追踪和日志采集的能力，覆盖 token 成本、推理延迟、提示/响应质量、用户反馈、幻觉率、安全事件等维度，是生产级 LLM 应用的核心保障。"
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 provenance:
   extracted: 0.75

@@ -20,6 +20,7 @@ relationships:
     type: related_to
   - target: "_concepts/service"
     type: related_to
+sources: []
 ---
 
 # Label

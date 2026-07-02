@@ -10,6 +10,7 @@ aliases:
   - "LLM Evaluation"
   - "LLM Evaluation 2026"
   - LLM_Evaluation_2026
+sources: []
 
 ---
 # LLM 评估方法论 2026 (LLM Evaluation Methodology 2026)

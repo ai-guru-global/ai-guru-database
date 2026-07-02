@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Cloud Agent Benchmark 2026"
   - Cloud_Agent_Benchmark_2026
+sources: []
 
 ---
 # 云产品智能体综合测评框架 2026

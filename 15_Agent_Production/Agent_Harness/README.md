@@ -6,6 +6,7 @@ summary: "> **核心公式**: Agent = Model + Harness。Harness 是围绕模型�
 created: 2026-05-31
 updated: 2026-05-31
 tier: supporting
+sources: []
 
 ---
 # Agent Harness 工程

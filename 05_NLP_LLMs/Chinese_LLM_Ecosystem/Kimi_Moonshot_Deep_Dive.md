@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Kimi Moonshot Deep Dive"
   - Kimi_Moonshot_Deep_Dive
+sources: []
 
 ---
 # Kimi / Moonshot AI (月之暗面): 长上下文与推理的技术深潜

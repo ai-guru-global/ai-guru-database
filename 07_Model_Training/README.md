@@ -6,6 +6,7 @@ summary: '> **一句话理解**: 模型训练是 AI 系统的"锻造车间"—�
 created: '2026-05-31'
 updated: '2026-06-16'
 tier: supporting
+sources: []
 
 ---
 # 模型训练 (Model Training)

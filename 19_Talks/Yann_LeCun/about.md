@@ -8,6 +8,7 @@ updated: 2026-06-05
 tier: supporting
 aliases:
   - About
+sources: []
 
 ---
 # Yann LeCun 简介 (Yann LeCun)

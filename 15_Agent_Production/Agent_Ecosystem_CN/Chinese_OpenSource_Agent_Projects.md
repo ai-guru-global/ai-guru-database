@@ -10,6 +10,7 @@ aliases:
   - "Chinese Opensource Agent Projects"
   - "Chinese OpenSource Agent Projects"
   - Chinese_OpenSource_Agent_Projects
+sources: []
 
 ---
 # 国内开源 AI Agent 项目

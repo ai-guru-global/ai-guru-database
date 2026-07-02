@@ -14,6 +14,7 @@ aliases:
 
 updated: 2026-06-30
 summary: "安装部署与快速入门 — 专题文档"
+sources: []
 ---
 
 > [!warning] 生产安全提示 · Production Safety

@@ -8,6 +8,7 @@ updated: 2026-06-12
 tier: supporting
 aliases:
   - About
+sources: []
 
 ---
 # 梁文锋 (Wenfeng Liang) — DeepSeek 创始人

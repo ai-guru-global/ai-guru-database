@@ -21,10 +21,11 @@ relationships:
   - target: "_concepts/agent-framework"
     type: related_to
 summary: Tool Use 指大模型调用外部工具（API、数据库、计算器等）扩展自身能力，是构建实用 Agent 的核心技术，涵盖函数调用、代码执行、检索增强等多种形式。
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 created: 2026-06-25
 updated: 2026-06-25
+sources: []
 ---
 
 # 大模型 Tool Use（工具使用）

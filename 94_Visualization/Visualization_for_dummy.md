@@ -10,6 +10,7 @@ aliases:
   - "Visualization For Dummy"
   - "Visualization for dummy"
   - Visualization_for_dummy
+sources: []
 
 ---
 # AI 可视化 - 小白版
@@ -656,3 +657,6 @@ tensorboard --logdir=runs
 - [[94_Visualization/README.md|94_Visualization README]]
 - [[_projects/atlas/README.md|atlas README]]
 - [[_projects/atlas/docs/performance.md|performance]]
+- [[94_Visualization/Data_Visualization_Best_Practices|数据可视化最佳实践]] — 图表选择与配色指南
+- [[94_Visualization/Knowledge_Graph_Visualization|知识图谱可视化]] — 实体关系可视化工具
+- [[94_Visualization/Neural_Network_Visualization_Guide|神经网络可视化指南]] — 特征图、注意力热力图

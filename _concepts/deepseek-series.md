@@ -23,10 +23,11 @@ relationships:
   - target: "_concepts/grpo"
     type: uses
 summary: DeepSeek 系列以高性价比训练和高性能推理著称，从 DeepSeek-V2 的 MLA 压缩到 DeepSeek-V3 的 MoE 架构，再到 R1 的推理强化学习，代表了开源模型在效率和性能上的前沿探索。
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 created: 2026-06-25
 updated: 2026-06-25
+sources: []
 ---
 
 # DeepSeek 系列模型架构演进

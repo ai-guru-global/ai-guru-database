@@ -6,6 +6,7 @@ summary: "> **一句话理解**: 本章节为 AI/ML 相关岗位面试提供系�
 created: 2026-05-31
 updated: 2026-05-31
 tier: supporting
+sources: []
 
 ---
 # AI 面试准备 (Interviews)

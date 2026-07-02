@@ -25,10 +25,11 @@ relationships:
   - target: "_concepts/attention-variants"
     type: related_to
 summary: 长上下文 LLM 面临 Attention 复杂度平方增长、KV Cache 显存爆炸、位置编码外推等挑战。本文覆盖长文本训练、上下文窗口扩展、推理优化等核心技术与实践。
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 created: 2026-06-25
 updated: 2026-06-25
+sources: []
 ---
 
 # 长上下文 LLM：训练与推理

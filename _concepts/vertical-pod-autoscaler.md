@@ -17,6 +17,7 @@ relationships:
     type: related_to
   - target: "_concepts/deployment"
     type: part_of
+sources: []
 ---
 
 # Vertical Pod Autoscaler（VPA）

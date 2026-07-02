@@ -4,6 +4,7 @@ title: 智能体安全、价值对齐与 AGI 路径
 category: agent-safety
 tags: [agent-security, prompt-injection, alignment, red-team, agi, legal, ethics]
 source: yeasy/agentic_ai_guide/11_future
+sources: []
 ---
 
 # 智能体安全、价值对齐与 AGI 路径

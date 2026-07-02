@@ -13,6 +13,7 @@ aliases:
   - "Genai L05 Advanced Prompts"
   - "GenAI L05 Advanced Prompts"
   - GenAI_L05_Advanced_Prompts
+sources: []
 
 ---
 ## 学习目标

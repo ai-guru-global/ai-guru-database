@@ -10,6 +10,7 @@ aliases:
   - "Ai Manufacturing 2026"
   - "AI Manufacturing 2026"
   - AI_Manufacturing_2026
+sources: []
 
 ---
 # AI 智能制造行业应用 (2025-2026)

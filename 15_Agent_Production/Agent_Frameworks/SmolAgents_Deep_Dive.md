@@ -10,6 +10,7 @@ aliases:
   - "Smolagents Deep Dive"
   - "SmolAgents Deep Dive"
   - SmolAgents_Deep_Dive
+sources: []
 
 ---
 # SmolAgents: 轻量级 Agent 框架

@@ -21,10 +21,11 @@ relationships:
   - target: "_concepts/autoregressive-generation"
     type: enforces
 summary: 因果掩码通过将未来位置的注意力分数置为负无穷，确保模型在预测当前 token 时只能看到之前的 token，是自回归语言模型训练和推理的核心机制。
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 created: 2026-06-25
 updated: 2026-06-25
+sources: []
 ---
 
 # 因果掩码（Causal Mask）

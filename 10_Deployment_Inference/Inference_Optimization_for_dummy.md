@@ -10,6 +10,7 @@ aliases:
   - "Inference Optimization For Dummy"
   - "Inference Optimization for dummy"
   - Inference_Optimization_for_dummy
+sources: []
 
 ---
 # 推理优化大白话：SGLang、动态批调度、GGUF、SmoothQuant、TensorRT-LLM

@@ -7,6 +7,7 @@ summary: "面向 AI 工作负载的 Kubernetes 排查速查表：Pod/Job/节点/
 created: 2026-06-26
 updated: 2026-06-26
 tier: core
+sources: []
 ---
 
 > [!warning] 生产安全提示 · Production Safety

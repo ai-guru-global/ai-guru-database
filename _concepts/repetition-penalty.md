@@ -21,10 +21,11 @@ relationships:
   - target: "_concepts/greedy-decoding"
     type: often_used_with
 summary: 重复惩罚通过降低已生成 token 的采样概率来减少模型输出中的重复现象，是改善生成文本多样性和自然度的常用后处理技术。
-lifecycle: stable
+lifecycle: reviewed
 tier: supporting
 created: 2026-06-25
 updated: 2026-06-25
+sources: []
 ---
 
 # 重复惩罚（Repetition Penalty）

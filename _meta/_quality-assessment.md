@@ -6,6 +6,7 @@ summary: 2026-06-15 全库内容完整性评估，对比 06-03 基线，识别�
 created: 2026-06-15
 updated: 2026-06-15
 baseline: _project-evaluation.md
+sources: []
 ---
 
 # AI Guru 知识库内容完整性评估

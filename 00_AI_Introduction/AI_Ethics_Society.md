@@ -10,6 +10,7 @@ aliases:
   - "Ai Ethics Society"
   - "AI Ethics Society"
   - AI_Ethics_Society
+sources: []
 
 ---
 # AI 伦理与社会影响

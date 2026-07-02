@@ -7,9 +7,10 @@ tier: core
 aliases:
   - Hallucination
 category: -concepts
-lifecycle: stable
+lifecycle: reviewed
 
 relationships:
+sources: []
 ---
 
 # Hallucination (幻觉)

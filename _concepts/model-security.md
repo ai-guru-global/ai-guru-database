@@ -9,10 +9,11 @@ tier: supporting
 aliases:
   - "模型安全"
 relationships:
-  - target: "_concepts/security"
+  - target: "_concepts/runtime-security"
     type: part_of
   - target: "_concepts/adversarial-attack"
     type: related_to
+sources: []
 ---
 
 # Model Security
@@ -43,7 +44,7 @@ relationships:
 
 ## Related
 
-- [[_concepts/security|Security]]
+- [[_concepts/runtime-security|Runtime Security]]
 - [[_concepts/adversarial-attack|Adversarial Attack]]
 - [[_concepts/prompt-injection|Prompt Injection]]
 - [[12_Architecture_Infrastructure/Security/AI_Security_Fundamentals|AI 安全基础]]

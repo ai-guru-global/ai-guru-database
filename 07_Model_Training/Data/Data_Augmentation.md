@@ -10,6 +10,7 @@ aliases:
   - "Data Augmentation"
   - "Data Augmentation Complete Guide"
   - Data_Augmentation
+sources: []
 
 ---
 # 数据增强完全指南 (Data Augmentation Complete Guide)

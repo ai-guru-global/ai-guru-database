@@ -8,7 +8,7 @@ updated: 2026-06-12
 tier: core
 aliases:
   - Teleoperation
-lifecycle: stable
+lifecycle: reviewed
 provenance:
   extracted: 0.70
   inferred: 0.25

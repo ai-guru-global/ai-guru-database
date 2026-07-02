@@ -7,6 +7,7 @@ summary: "面向 AI 训练与推理平台的混沌工程方法：设计故障注
 created: 2026-06-26
 updated: 2026-06-26
 tier: supporting
+sources: []
 ---
 
 # AI 系统混沌工程

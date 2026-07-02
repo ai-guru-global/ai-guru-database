@@ -6,6 +6,7 @@ summary: "系统讲解 Kubernetes 控制平面与节点组件的工作原理、�
 created: 2026-06-26
 updated: 2026-06-26
 tier: core
+sources: []
 ---
 
 > [!warning] 生产安全提示 · Production Safety

@@ -23,10 +23,11 @@ relationships:
   - target: "_concepts/causal-mask"
     type: requires
 summary: 下一个 Token 预测是自回归语言模型的核心任务：给定前文，预测下一个最可能出现的 token。它是 GPT 类模型预训练和推理的基础范式。
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 created: 2026-06-25
 updated: 2026-06-25
+sources: []
 ---
 
 # 下一个 Token 预测（Next Token Prediction）

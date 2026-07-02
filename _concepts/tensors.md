@@ -5,6 +5,7 @@ tags: [tensors, linear-algebra, deep-learning, matrix-operations, ai-fundamental
 summary: 张量（Tensor）是标量、向量、矩阵在任意维度上的统一推广，是深度学习中表示数据、参数和梯度的核心数据结构。
 created: 2026-07-02
 updated: 2026-07-02
+sources: []
 ---
 
 # Tensors

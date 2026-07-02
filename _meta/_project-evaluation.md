@@ -5,6 +5,7 @@ tags: [meta, audit, evaluation, project-health]
 summary: 2026-06-03 项目整体评估报告，覆盖规模、结构、内容质量、工程化水平及改进建议。
 created: 2026-06-03
 updated: 2026-06-03
+sources: []
 ---
 
 # AI Guru 知识库项目整体评估

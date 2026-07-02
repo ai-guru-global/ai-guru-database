@@ -10,6 +10,7 @@ aliases:
   - "Data Curation And Mixture 2026"
   - "Data Curation and Mixture 2026"
   - Data_Curation_and_Mixture_2026
+sources: []
 
 ---
 # Data Curation and Mixture for LLM Pretraining 2026

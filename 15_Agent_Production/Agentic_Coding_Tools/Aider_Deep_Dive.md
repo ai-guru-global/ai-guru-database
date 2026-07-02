@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Aider Deep Dive"
   - Aider_Deep_Dive
+sources: []
 
 ---
 # Aider: AI 代码编辑工具

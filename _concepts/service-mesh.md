@@ -16,6 +16,7 @@ relationships:
     type: implemented_by
   - target: "_concepts/linkerd"
     type: implemented_by
+sources: []
 ---
 
 # Service Mesh

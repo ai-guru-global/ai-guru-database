@@ -10,6 +10,7 @@ aliases:
   - "Ai Hardware 2026"
   - "AI Hardware 2026"
   - AI_Hardware_2026
+sources: []
 
 ---
 # AI 硬件与芯片 2026 年全景报告

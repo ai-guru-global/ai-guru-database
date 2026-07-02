@@ -13,6 +13,7 @@ aliases:
   - "Genai L04 Prompt Engineering Fundamentals"
   - "GenAI L04 Prompt Engineering Fundamentals"
   - GenAI_L04_Prompt_Engineering_Fundamentals
+sources: []
 
 ---
 ## 学习目标

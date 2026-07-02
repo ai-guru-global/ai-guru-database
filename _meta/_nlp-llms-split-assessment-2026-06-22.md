@@ -6,6 +6,7 @@ summary: 评估 05_NLP_LLMs（209 文件）是否应拆分 Multimodal 为独立�
 created: 2026-06-22
 updated: 2026-06-22
 status: decided
+sources: []
 ---
 
 # 05_NLP_LLMs 章节拆分评估

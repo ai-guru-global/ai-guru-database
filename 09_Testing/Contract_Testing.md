@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Contract Testing"
   - Contract_Testing
+sources: []
 
 ---
 # 契约测试 (Contract Testing for AI Systems)

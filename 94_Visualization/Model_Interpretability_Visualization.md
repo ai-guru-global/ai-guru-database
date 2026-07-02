@@ -9,6 +9,7 @@ tier: core
 aliases:
   - "Model Interpretability Visualization"
   - Model_Interpretability_Visualization
+sources: []
 
 ---
 # 模型可解释性可视化
@@ -1106,3 +1107,4 @@ flowchart TD
 - [[94_Visualization/README.md|94_Visualization README]]
 - [[_projects/atlas/README.md|atlas README]]
 - [[_projects/atlas/docs/performance.md|performance]]
+- [[94_Visualization/Neural_Network_Visualization_Guide|神经网络可视化指南]] — 架构图、特征图与注意力可视化

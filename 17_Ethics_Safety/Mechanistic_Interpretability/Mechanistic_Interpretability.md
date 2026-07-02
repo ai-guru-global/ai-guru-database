@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Mechanistic Interpretability"
   - Mechanistic_Interpretability
+sources: []
 
 ---
 # 机械可解释性 (Mechanistic Interpretability) 2026

@@ -5,6 +5,7 @@ tags: [agent-framework, multi-agent, crewai, role-playing, task-orchestration]
 summary: "CrewAI 是一个基于角色扮演的多 Agent 协作框架，通过 Crew、Agent、Task 三个核心抽象让多个 LLM 角色按 SOP 分工完成复杂任务。"
 created: 2026-07-02
 updated: 2026-07-02
+sources: []
 ---
 
 # CrewAI

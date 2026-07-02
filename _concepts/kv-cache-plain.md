@@ -15,6 +15,7 @@ updated: 2026-06-15T07:55:28.435Z
 aliases:
   - "Kv Cache Plain"
   - "kv cache plain"
+sources: []
 
 ---
 # KV Cache 大白话解释

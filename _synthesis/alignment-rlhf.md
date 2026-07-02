@@ -10,6 +10,7 @@ tier: core
 aliases:
   - "Alignment Rlhf"
   - "alignment rlhf"
+sources: []
 
 ---
 # 价值对齐 × RLHF：从人类反馈到可扩展监督

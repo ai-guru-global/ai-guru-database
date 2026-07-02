@@ -6,6 +6,7 @@ summary: "本章探讨 AI 系统的可信度与责任性，涵盖价值对齐技
 created: 2026-05-31
 updated: 2026-05-31
 tier: supporting
+sources: []
 
 ---
 # 08 AI 伦理、安全与对齐 (Ethics, Safety & Alignment)

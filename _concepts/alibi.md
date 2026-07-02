@@ -18,10 +18,11 @@ relationships:
   - target: "_concepts/transformer-architecture"
     type: part_of
 summary: ALiBi 是一种无需显式位置编码的位置编码方案，通过给注意力分数添加与距离成正比的负偏置，让模型天然具备外推长序列的能力。
-lifecycle: stable
+lifecycle: reviewed
 tier: supporting
 created: 2026-06-25
 updated: 2026-06-25
+sources: []
 ---
 
 # ALiBi（Attention with Linear Biases）

@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Vibe Coding Real World Cases"
   - Vibe_Coding_Real_World_Cases
+sources: []
 
 ---
 # Vibe Coding 实战案例集

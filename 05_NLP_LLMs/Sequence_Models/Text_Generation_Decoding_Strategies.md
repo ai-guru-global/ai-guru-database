@@ -3,6 +3,7 @@ title: "Text Generation & Decoding Strategies"
 tags: [nlp, llm, text-generation, decoding, sampling, production]
 status: complete
 last_updated: 2026-07-02
+sources: []
 ---
 
 # Text Generation & Decoding Strategies

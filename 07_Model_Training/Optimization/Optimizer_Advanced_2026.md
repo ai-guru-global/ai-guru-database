@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Optimizer Advanced 2026"
   - Optimizer_Advanced_2026
+sources: []
 
 ---
 # Advanced Optimizers for LLM Training 2026

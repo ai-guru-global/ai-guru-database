@@ -11,6 +11,7 @@ aliases:
   - "Microsoft Genai For Beginners"
   - "microsoft genai for beginners"
   - microsoft_genai_for_beginners
+sources: []
 
 ---
 # Microsoft Generative AI For Beginners：21 课生成式 AI 初学者课程映射

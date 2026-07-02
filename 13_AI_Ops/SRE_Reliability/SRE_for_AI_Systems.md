@@ -10,6 +10,7 @@ aliases:
   - "Sre For Ai Systems"
   - "SRE for AI Systems"
   - SRE_for_AI_Systems
+sources: []
 
 ---
 # AI 系统的 SRE 实践指南

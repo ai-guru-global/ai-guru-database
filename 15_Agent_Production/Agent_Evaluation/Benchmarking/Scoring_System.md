@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Scoring System"
   - Scoring_System
+sources: []
 
 ---
 # Scoring System

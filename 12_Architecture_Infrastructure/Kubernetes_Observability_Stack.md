@@ -6,6 +6,7 @@ summary: "系统讲解 Kubernetes 环境下的指标、日志、链路三大支�
 created: 2026-06-26
 updated: 2026-06-26
 tier: core
+sources: []
 ---
 
 # Kubernetes 可观测性栈

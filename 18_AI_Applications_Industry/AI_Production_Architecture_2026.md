@@ -5,6 +5,7 @@ tags: [production-architecture, industry-ai, model-governance, compliance, finop
 summary: 面向金融、医疗、自动驾驶、零售电商与智能制造等关键行业的 AI 生产架构通用模式、关键工程决策、模型治理、合规 checklist 与 FinOps 实践指南。
 created: 2026-07-01
 updated: 2026-07-01
+sources: []
 ---
 
 # AI 生产架构 2026

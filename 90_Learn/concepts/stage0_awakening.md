@@ -10,6 +10,7 @@ aliases:
   - "Stage0 Awakening"
   - "stage0 awakening"
   - stage0_awakening
+sources: []
 
 ---
 # Stage 0: AI 觉醒

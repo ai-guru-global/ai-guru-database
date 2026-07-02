@@ -10,6 +10,7 @@ aliases:
   - "Adk Selection And Implementation 2026"
   - "ADK Selection and Implementation 2026"
   - ADK_Selection_and_Implementation_2026
+sources: []
 
 ---
 # Agent Development Kits (ADK) 2026: Building with MCP, A2A, and UCP

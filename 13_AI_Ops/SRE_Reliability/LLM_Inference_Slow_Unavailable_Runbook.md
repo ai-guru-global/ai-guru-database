@@ -7,6 +7,7 @@ summary: "面向 K8s 上 LLM 推理服务的延迟/不可用排障手册：从 T
 created: 2026-06-26
 updated: 2026-06-26
 tier: core
+sources: []
 ---
 
 > [!warning] 生产安全提示 · Production Safety

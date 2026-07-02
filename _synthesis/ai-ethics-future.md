@@ -8,6 +8,7 @@ tier: core
 aliases:
   - "Ai Ethics Future"
   - "ai ethics future"
+sources: []
 
 ---
 # AI 伦理与未来趋势的交叉审视

@@ -10,6 +10,7 @@ aliases:
   - "Ai For Science Deep Dive"
   - "AI for Science Deep Dive"
   - AI_for_Science_Deep_Dive
+sources: []
 
 ---
 # AI for Science 深度解读: 从 AlphaFold 到科学基础模型

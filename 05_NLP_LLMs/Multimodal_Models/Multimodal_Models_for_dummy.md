@@ -10,6 +10,7 @@ aliases:
   - "Multimodal Models For Dummy"
   - "Multimodal Models for dummy"
   - Multimodal_Models_for_dummy
+sources: []
 
 ---
 # 多模态模型小白指南 (Multimodal Models for Dummy)

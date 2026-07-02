@@ -6,6 +6,7 @@ summary: "AI Infrastructure Engineer 高频面试题深度参考答案，覆盖 
 created: 2026-05-31
 updated: 2026-06-04
 tier: supporting
+sources: []
 ---
 
 # AI Infrastructure Engineer 面试题实例答案

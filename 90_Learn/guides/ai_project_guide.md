@@ -9,6 +9,7 @@ tier: core
 aliases:
   - "AI Project Guide"
   - "Hands-on Projects"
+sources: []
 ---
 
 # AI 实战项目指南 (AI Hands-on Project Guide)

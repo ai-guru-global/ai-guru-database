@@ -6,6 +6,7 @@ summary: 118 张 AI 概念卡片，每张 5-9KB，覆盖 AI 全栈核心概念�
 created: 2026-06-03
 updated: 2026-06-15
 tier: core
+sources: []
 
 ---
 # 概念卡片索引 (Concept Cards)

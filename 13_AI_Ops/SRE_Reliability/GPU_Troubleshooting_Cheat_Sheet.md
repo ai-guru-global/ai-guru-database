@@ -7,6 +7,7 @@ summary: "面向 AI 平台的 GPU 故障排查速查表：涵盖 nvidia-smi、CU
 created: 2026-06-26
 updated: 2026-06-26
 tier: supporting
+sources: []
 ---
 
 > [!warning] 生产安全提示 · Production Safety

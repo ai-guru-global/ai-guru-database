@@ -22,6 +22,7 @@ aliases:
   - "Ms Swift Deep Dive"
   - "ms swift Deep Dive"
   - ms_swift_Deep_Dive
+sources: []
 
 ---
 # ms-swift 深度解析：魔搭大模型训练推理全链路框架

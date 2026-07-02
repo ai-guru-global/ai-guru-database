@@ -6,6 +6,7 @@ summary: "面向阿里云专有云 K8s 工单的系统排障手册：从 Pod、�
 created: 2026-06-26
 updated: 2026-06-26
 tier: core
+sources: []
 ---
 
 > [!warning] 生产安全提示 · Production Safety

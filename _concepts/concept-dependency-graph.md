@@ -6,6 +6,7 @@ summary: "以 Mermaid 图谱展示 AI 知识库中 240+ 概念之间的依赖关
 created: 2026-06-04
 updated: 2026-06-04
 tier: core
+sources: []
 ---
 
 # 概念间依赖关系图谱 — AI 知识体系的拓扑结构
@@ -439,3 +440,4 @@ L1 数学基础 (深度)
 - [[_concepts/README|概念卡片索引]] — 所有概念卡片列表
 - [[90_Learn/concepts/stage0_awakening|学习路径 Stage 0-4]] — 按阶段的学习路径
 - [[20_Papers_and_Research/README|论文清单]] — 论文与概念的关联
+- [[94_Visualization/Knowledge_Graph_Visualization|知识图谱可视化]] — 图谱可视化工具与实践

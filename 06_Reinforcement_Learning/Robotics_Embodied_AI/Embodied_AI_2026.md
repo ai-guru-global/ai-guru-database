@@ -10,6 +10,7 @@ aliases:
   - "Embodied Ai 2026"
   - "Embodied AI 2026"
   - Embodied_AI_2026
+sources: []
 
 ---
 # 具身智能 (Embodied AI) - 2026 年完整指南

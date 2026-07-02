@@ -6,6 +6,7 @@ tags: ["falco", "runtime-security", "kubernetes", "syscall", "threat-detection",
 summary: "> **一句话理解**: Falco 是 CNCF Incubating 的运行时安全检测工具，通过 eBPF 或内核模块监控系统调用和 K8s 审计日志，发现容器逃逸、权限提升、敏感文件访问等运行时威胁。"
 created: "2026-06-16"
 updated: "2026-06-16"
+sources: []
 ---
 
 > [!warning] 生产安全提示 · Production Safety

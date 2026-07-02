@@ -18,10 +18,11 @@ relationships:
   - target: "05_NLP_LLMs/Transformer_Training_vs_Inference"
     type: related_to
 summary: 本页汇总 LLM 领域的经典论文、重要技术报告和优质课程资源，按主题分类，方便系统学习和查阅。
-lifecycle: stable
+lifecycle: reviewed
 tier: supporting
 created: 2026-06-25
 updated: 2026-06-25
+sources: []
 ---
 
 # LLM 论文与课程资源索引

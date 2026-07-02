@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Agentic Coding Tools Overview"
   - Agentic_Coding_Tools_Overview
+sources: []
 
 ---
 # AI Agent 全景图 2026

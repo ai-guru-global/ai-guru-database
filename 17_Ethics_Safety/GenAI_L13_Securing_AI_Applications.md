@@ -13,6 +13,7 @@ aliases:
   - "Genai L13 Securing Ai Applications"
   - "GenAI L13 Securing AI Applications"
   - GenAI_L13_Securing_AI_Applications
+sources: []
 
 ---
 ## 学习目标

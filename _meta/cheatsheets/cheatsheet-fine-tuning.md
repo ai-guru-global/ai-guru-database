@@ -6,6 +6,7 @@ created: 2026-06-24
 updated: 2026-06-24
 tier: core
 summary: "从 SFT 到 RLHF/DPO/GRPO 的完整后训练技术栈、PEFT 选型、数据准备规范、显存优化技巧与对齐训练最佳实践。"
+sources: []
 ---
 
 # 模型微调技术速查表

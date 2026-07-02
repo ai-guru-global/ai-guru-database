@@ -5,6 +5,7 @@ tags: [skill, statistics, ab-testing, regression, hypothesis-testing, data-analy
 summary: Agent Skill 开发中常用的描述统计、假设检验、回归与 A/B 测试基础速查表，帮助在 Skill schema、评估指标与数据管道中正确选型与解释。
 created: 2026-07-02
 updated: 2026-07-02
+sources: []
 ---
 
 # Skill 中常用统计方法速查

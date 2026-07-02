@@ -8,6 +8,7 @@ updated: 2026-06-05
 tier: supporting
 aliases:
   - About
+sources: []
 
 ---
 # Jensen Huang 简介 (Jensen Huang)

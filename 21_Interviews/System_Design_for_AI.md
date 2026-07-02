@@ -3,6 +3,7 @@ title: "System Design for AI Interviews"
 tags: [interviews, system-design, ai, ml, architecture]
 status: complete
 last_updated: 2026-07-02
+sources: []
 ---
 
 # System Design for AI Interviews

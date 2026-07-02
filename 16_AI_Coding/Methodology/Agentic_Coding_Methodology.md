@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Agentic Coding Methodology"
   - Agentic_Coding_Methodology
+sources: []
 
 ---
 # Agentic Coding Methodology 2026: Multi-Agent Software Engineering

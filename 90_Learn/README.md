@@ -6,6 +6,7 @@ summary: '> **从"AI是什么"到"如何构建AI系统"，按概念递进，因�
 created: '2026-05-31'
 updated: '2026-06-15'
 tier: supporting
+sources: []
 
 ---
 # Learn — AI Guru 概念入门路径
@@ -153,3 +154,6 @@ Stage 0: AI 觉醒 ────────────────────�
 - [[90_Learn/pathways/ai-researcher]] — AI 研究者路径
 - [[90_Learn/pathways/product-manager]] — AI 产品经理路径
 - [[90_Learn/pathways/java-developer]] — Java 开发者 AI 路径
+- [[90_Learn/pathways/data-scientist|数据科学家学习路径]] — 数据科学家成长路径
+- [[90_Learn/guides/skills_self_assessment|AI 技能自评清单]] — 定位水平与学习缺口
+- [[90_Learn/guides/ai_project_guide|AI 实战项目指南]] — 端到端实战项目指引

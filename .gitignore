@@ -48,6 +48,20 @@ Web/.eval-history
 .venv
 __pycache__
 *.pyc
+.pytest_cache/
+
+# AI 工具配置目录（不需要入库）
+.comate/
+.crush/
+.qoder/
+.qwen/
+.mimocode/
+
+# 备份文件
+*.bak
+
+# macOS 系统文件
+.DS_Store
 
 
 # ============================================================

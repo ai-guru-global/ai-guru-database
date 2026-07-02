@@ -10,6 +10,7 @@ aliases:
   - "Hami Deep Dive"
   - "HAMi Deep Dive"
   - HAMi_Deep_Dive
+sources: []
 
 ---
 # HAMi 深度解析: Kubernetes 异构算力虚拟化中间件

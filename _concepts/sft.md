@@ -20,7 +20,7 @@ sources:
   - 07_Model_Training/Fine_tuning_Techniques/
   - _concepts/lora-qlora-sft-rlhf-dpo.md
 summary: "SFT（Supervised Fine-Tuning）是让预训练 LLM 学会"按指令回答"的关键步骤，用 (prompt, response) 对训练模型，是 RLHF / DPO 等对齐方法的前置阶段。"
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 provenance:
   extracted: 0.92

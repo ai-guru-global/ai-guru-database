@@ -20,10 +20,11 @@ relationships:
   - target: "_concepts/multimodal-llm"
     type: related_to
 summary: 世界模型指智能体对外部环境的内部表征，能够基于当前状态预测未来状态，从而支持规划、推理和决策。在 LLM 时代，世界模型与语言推理、具身智能和视频生成等领域深度融合。
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 created: 2026-06-25
 updated: 2026-06-25
+sources: []
 ---
 
 # World Models（世界模型）

@@ -10,6 +10,7 @@ aliases:
   - "Advanced Rag Dlai Practices"
   - "Advanced RAG DLAI Practices"
   - Advanced_RAG_DLAI_Practices
+sources: []
 
 ---
 # 高阶 RAG 实战：来自 DeepLearning.AI 的四个落地技巧 (含完整代码)

@@ -8,6 +8,7 @@ updated: 2026-06-24
 tier: supporting
 aliases:
   - Sayings
+sources: []
 
 ---
 # 唐杰关于 AI 的观点 (Jie Tang on AI)

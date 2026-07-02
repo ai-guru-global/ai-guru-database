@@ -6,6 +6,7 @@ summary: "本清单精选 22 篇\"改变 AI 历史\"的核心论文（含 22 篇
 created: 2026-05-31
 updated: 2026-06-15
 tier: supporting
+sources: []
 
 ---
 # 22 经典与必读 AI 论文清单 (Essential AI Papers)

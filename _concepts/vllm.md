@@ -20,7 +20,7 @@ relationships:
   - target: "_concepts/model-serving"
     type: belongs_to
 summary: "vLLM 是 UC Berkeley 主导开源的高吞吐 LLM 推理引擎，通过 PagedAttention 与连续批处理将吞吐量较传统方案提升 14-24 倍，已成为开源 LLM 服务的事实标准。"
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 provenance:
   extracted: 0.65
@@ -35,7 +35,7 @@ updated: 2026-06-24
 
 ## 一句话定义
 
-**vLLM = PagedAttention + 连续批处理 + 分布式推理** —— 由 UC Berkeley Sky Computing Lab 于 2023 年开源的 LLM 推理引擎，针对 Transformer KV Cache 的内存浪费问题引入操作系统虚拟内存式的"分页管理"思路，把 LLM 服务的吞吐量较 HuggingFace Transformers 提升 **14-24 倍**，现已成为开源 LLM 部署的事实标准（v0.1 → v0.7 已迭代多个版本）。
+**vLLM = [[_concepts/paged-attention|PagedAttention]] + 连续批处理 + 分布式推理** —— 由 UC Berkeley Sky Computing Lab 于 2023 年开源的 LLM 推理引擎，针对 Transformer KV Cache 的内存浪费问题引入操作系统虚拟内存式的"分页管理"思路，把 LLM 服务的吞吐量较 HuggingFace Transformers 提升 **14-24 倍**，现已成为开源 LLM 部署的事实标准（v0.1 → v0.7 已迭代多个版本）。
 
 ## 核心创新：PagedAttention
 

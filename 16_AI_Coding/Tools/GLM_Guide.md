@@ -10,6 +10,7 @@ aliases:
   - "Glm Guide"
   - "GLM Guide"
   - GLM_Guide
+sources: []
 
 ---
 

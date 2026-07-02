@@ -12,6 +12,7 @@ tier: peripheral
 aliases:
   - "Harness Core Subsystems"
   - Harness_Core_Subsystems
+sources: []
 
 ---
 

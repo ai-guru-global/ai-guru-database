@@ -7,6 +7,7 @@ summary: "聚焦 AI 工作负载的容器安全与供应链安全：镜像构建
 created: 2026-06-26
 updated: 2026-06-26
 tier: supporting
+sources: []
 ---
 
 > [!warning] 生产安全提示 · Production Safety

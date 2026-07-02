@@ -9,6 +9,7 @@ tier: core
 aliases:
   - "NLP Engineer Path"
   - "NLP Learning Path"
+sources: []
 ---
 
 # NLP 工程师学习路径 (NLP Engineer Learning Path)
@@ -88,6 +89,7 @@ aliases:
 - [[ai-engineer]]: 偏应用集成
 - [[cv-engineer]]: 视觉方向
 - [[ai-researcher]]: 偏算法创新
+- [[data-scientist]]: 偏分析与数据科学
 
 ---
 

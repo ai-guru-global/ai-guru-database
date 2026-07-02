@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Weaviate Deep Dive"
   - Weaviate_Deep_Dive
+sources: []
 
 ---
 # Weaviate: 开源向量数据库

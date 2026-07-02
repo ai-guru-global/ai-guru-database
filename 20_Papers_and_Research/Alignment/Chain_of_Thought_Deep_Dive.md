@@ -10,6 +10,7 @@ aliases:
   - "Chain Of Thought Deep Dive"
   - "Chain of Thought Deep Dive"
   - Chain_of_Thought_Deep_Dive
+sources: []
 
 ---
 # 论文深度解读: Chain-of-Thought — 让 LLM 逐步推理

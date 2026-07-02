@@ -9,6 +9,7 @@ tier: core
 aliases:
   - "Agent Production Deployment Runbook"
   - Agent_Production_Deployment_Runbook
+sources: []
 ---
 
 # Agent 生产环境部署 Runbook
@@ -665,3 +666,4 @@ Agent 系统的灾备不仅要恢复服务，还要恢复用户的会话状态�
 - [[15_Agent_Production/Agent_Harness/Agent_Harness_Architecture_2026|Agent Harness 技术架构 2026]]
 - [[12_Architecture_Infrastructure/AI_SRE_Runbook|AI SRE Runbook]]
 - [[10_Deployment_Inference/Inference_Engines/LLM_Inference_Engine_Selection_Guide|LLM 推理引擎选型指南]]
+- [[_synthesis/ai-production-readiness|AI 生产就绪]] — 跨 LLM/RAG/Agent/SRE 的综合治理体系

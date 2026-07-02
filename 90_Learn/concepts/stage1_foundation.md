@@ -10,6 +10,7 @@ aliases:
   - "Stage1 Foundation"
   - "stage1 foundation"
   - stage1_foundation
+sources: []
 
 ---
 # Stage 1: 基础概念

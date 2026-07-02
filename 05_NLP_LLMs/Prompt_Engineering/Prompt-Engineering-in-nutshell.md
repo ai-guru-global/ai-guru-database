@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Prompt Engineering In Nutshell"
   - "Prompt Engineering in nutshell"
+sources: []
 
 ---
 # Prompt Engineering 速成指南
@@ -19,7 +20,7 @@ aliases:
 
 ## 🤔 什么是 Prompt Engineering？
 
-**Prompt Engineering** = 设计输入文本，引导 AI 产出期望结果的技术。
+**[[05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering|Prompt Engineering]]** = 设计输入文本，引导 AI 产出期望结果的技术。
 
 ```mermaid
 flowchart LR

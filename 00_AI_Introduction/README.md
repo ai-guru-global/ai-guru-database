@@ -6,6 +6,7 @@ summary: "本章节提供人工智能的全面入门知识，适合大专院校A
 created: 2026-05-31
 updated: 2026-05-31
 tier: supporting
+sources: []
 
 ---
 # 00 - AI 简介与历史

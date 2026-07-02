@@ -6,6 +6,7 @@ summary: "LLM 数据工程覆盖预训练数据收集清洗、SFT数据构建、
 created: 2026-06-04
 updated: 2026-06-04
 tier: supporting
+sources: []
 
 ---
 # LLM 数据工程 (LLM Data Engineering)

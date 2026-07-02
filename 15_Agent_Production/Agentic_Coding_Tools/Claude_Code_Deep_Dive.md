@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Claude Code Deep Dive"
   - Claude_Code_Deep_Dive
+sources: []
 
 ---
 

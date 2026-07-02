@@ -18,7 +18,7 @@ sources:
   - _concepts/lm-evaluation-harness.md
   - _concepts/opencompass.md
 summary: "Benchmark（基准测试）是用标准化任务集评估 LLM 能力的方法；2026 年 LLM 评测已从单一基准（MMLU）演进到多维矩阵（推理/代码/Agent/安全/多模态），单一分数已无法反映真实能力。"
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 provenance:
   extracted: 0.80

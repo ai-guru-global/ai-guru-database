@@ -21,10 +21,11 @@ relationships:
   - target: "_concepts/agent-framework"
     type: related_to
 summary: Function Calling 让 LLM 能够识别需要调用外部工具的场景，并生成结构化的函数调用参数，是构建 Agent 和扩展 LLM 能力的关键机制。
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 created: 2026-06-25
 updated: 2026-06-25
+sources: []
 ---
 
 # 大模型 Function Calling（函数调用）

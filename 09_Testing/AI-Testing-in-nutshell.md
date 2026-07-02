@@ -9,6 +9,7 @@ tier: core
 aliases:
   - "Ai Testing In Nutshell"
   - "AI Testing in nutshell"
+sources: []
 
 ---
 # AI 测试与评估速成指南

@@ -5,6 +5,7 @@ tags: ["planning", "roadmap", "strategy", "goals", "model-evaluation"]
 summary: "> 评估日期：2026-05-17"
 created: 2026-05-31
 updated: 2026-05-31
+sources: []
 ---
 
 # AI Guru Database - 内容全面评估 2026

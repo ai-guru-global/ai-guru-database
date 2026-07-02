@@ -10,6 +10,7 @@ aliases:
   - "Ai Concept Knowledge Graph"
   - "AI Concept Knowledge Graph"
   - AI_Concept_Knowledge_Graph
+sources: []
 
 ---
 # AI 概念知识图谱

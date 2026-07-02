@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "High Availability 2026"
   - High_Availability_2026
+sources: []
 
 ---
 # AI 系统高可用架构设计 (High Availability 2026)

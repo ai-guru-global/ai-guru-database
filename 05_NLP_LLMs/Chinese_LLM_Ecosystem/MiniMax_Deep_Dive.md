@@ -10,6 +10,7 @@ aliases:
   - "Minimax Deep Dive"
   - "MiniMax Deep Dive"
   - MiniMax_Deep_Dive
+sources: []
 
 ---
 # MiniMax (稀宇科技): Lightning Attention 驱动的 AI 全栈平台

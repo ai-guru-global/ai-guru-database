@@ -10,6 +10,7 @@ aliases:
   - "Ai Ops 2026"
   - "AI Ops 2026"
   - AI_Ops_2026
+sources: []
 
 ---
 # AI Ops 2026: 智能运维体系与实践

@@ -10,6 +10,7 @@ aliases:
   - "Grpo And New Alignment Methods"
   - "GRPO and New Alignment Methods"
   - GRPO_and_New_Alignment_Methods
+sources: []
 
 ---
 # GRPO 与新一代对齐方法 (GRPO and New Alignment Methods)

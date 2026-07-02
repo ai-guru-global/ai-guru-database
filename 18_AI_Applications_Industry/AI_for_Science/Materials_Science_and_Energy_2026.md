@@ -10,6 +10,7 @@ aliases:
   - "Materials Science And Energy 2026"
   - "Materials Science and Energy 2026"
   - Materials_Science_and_Energy_2026
+sources: []
 
 ---
 # AI for Science: Materials Science and Energy 2026

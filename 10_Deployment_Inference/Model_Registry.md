@@ -10,6 +10,7 @@ aliases:
   - "Model Registry"
   - "Model Registry Complete Guide"
   - Model_Registry
+sources: []
 
 ---
 # 模型注册中心完全指南 (Model Registry Complete Guide)

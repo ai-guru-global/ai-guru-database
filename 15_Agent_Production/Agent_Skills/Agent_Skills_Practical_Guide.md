@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Agent Skills Practical Guide"
   - Agent_Skills_Practical_Guide
+sources: []
 
 ---
 

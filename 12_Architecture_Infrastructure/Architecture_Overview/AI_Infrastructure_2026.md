@@ -10,6 +10,7 @@ aliases:
   - "Ai Infrastructure 2026"
   - "AI Infrastructure 2026"
   - AI_Infrastructure_2026
+sources: []
 
 ---
 # AI Infrastructure 2026 完全指南

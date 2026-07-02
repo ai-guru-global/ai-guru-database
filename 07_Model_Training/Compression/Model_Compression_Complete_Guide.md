@@ -3,6 +3,7 @@ title: "Model Compression & Optimization"
 tags: [model-training, compression, quantization, pruning, distillation, production]
 status: complete
 last_updated: 2026-07-02
+sources: []
 ---
 
 # Model Compression & Optimization

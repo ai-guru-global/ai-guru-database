@@ -14,7 +14,7 @@ relationships:
 sources:
   - _concepts/etcd.md
 summary: "Consensus（共识）算法让分布式系统中的多个节点就某个值达成一致；常见实现包括 Raft（etcd/Consul 用）、Paxos、PBFT 等；etcd 是 K8s 用 Raft 实现强一致 KV 存储的代表。"
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 provenance:
   extracted: 0.80

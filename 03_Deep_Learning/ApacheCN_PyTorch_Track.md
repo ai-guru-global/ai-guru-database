@@ -5,6 +5,7 @@ tags: [pytorch, apachecn, deep-learning, learning-path]
 summary: ApacheCN 中文 PyTorch 学习路线索引，覆盖张量、自动微分、CNN、RNN、GAN 与部署实践。
 created: 2026-07-02
 updated: 2026-07-02
+sources: []
 ---
 
 # ApacheCN PyTorch 学习路径

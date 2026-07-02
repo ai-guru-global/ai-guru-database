@@ -13,6 +13,7 @@ aliases:
   - "Genai L09 Building Image Applications"
   - "GenAI L09 Building Image Applications"
   - GenAI_L09_Building_Image_Applications
+sources: []
 
 ---
 ## 学习目标

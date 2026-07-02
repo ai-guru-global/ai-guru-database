@@ -13,6 +13,7 @@ aliases:
   - "Genai L16 Open Source Models And Hugging Face"
   - "GenAI L16 Open Source Models and Hugging Face"
   - GenAI_L16_Open_Source_Models_and_Hugging_Face
+sources: []
 
 ---
 ## 学习目标

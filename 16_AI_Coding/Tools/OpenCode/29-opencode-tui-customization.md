@@ -13,6 +13,7 @@ aliases:
 
 updated: 2026-06-30
 summary: "TUI 定制：快捷键、主题与界面 — 专题文档"
+sources: []
 ---
 title: TUI 定制：快捷键、主题与界面
 description: '**文档类型**: 定制指南 | **最后更新**: 2026-03 | **关键词**: OpenCode, TUI, Keybinds,

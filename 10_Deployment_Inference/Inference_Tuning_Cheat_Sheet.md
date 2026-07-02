@@ -7,6 +7,7 @@ summary: "面向 LLM 推理服务的调优速查表：覆盖 vLLM/SGLang/TGI/TRT
 created: 2026-06-26
 updated: 2026-06-26
 tier: supporting
+sources: []
 ---
 
 > [!warning] 生产安全提示 · Production Safety

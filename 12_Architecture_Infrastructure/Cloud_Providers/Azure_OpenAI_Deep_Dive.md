@@ -10,6 +10,7 @@ aliases:
   - "Azure Openai Deep Dive"
   - "Azure OpenAI Deep Dive"
   - Azure_OpenAI_Deep_Dive
+sources: []
 
 ---
 # Azure OpenAI 深度解析：企业级 GPT 服务

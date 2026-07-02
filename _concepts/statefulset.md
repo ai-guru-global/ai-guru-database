@@ -19,6 +19,7 @@ relationships:
     type: part_of
   - target: "_concepts/service"
     type: related_to
+sources: []
 ---
 
 # StatefulSet

@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Industry Comparison 2026"
   - Industry_Comparison_2026
+sources: []
 
 ---
 # AI 行业应用对比 2026 (Industry Comparison)

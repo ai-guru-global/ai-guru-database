@@ -11,6 +11,7 @@ aliases:
   - "Llm Training Deep Dive"
   - "LLM Training Deep Dive"
   - LLM_Training_Deep_Dive
+sources: []
 
 ---
 # LLM 训练深度剖析：预训练、分布式训练与对齐

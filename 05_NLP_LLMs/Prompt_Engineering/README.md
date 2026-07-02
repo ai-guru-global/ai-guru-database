@@ -6,6 +6,7 @@ summary: "> 提示词工程是优化 LLM 输入以获得更好输出的技术，
 created: 2026-05-31
 updated: 2026-05-31
 tier: supporting
+sources: []
 
 ---
 # 提示词工程与结构化输出 (Prompt Engineering & Structured Output)

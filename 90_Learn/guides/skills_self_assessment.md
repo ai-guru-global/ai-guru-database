@@ -9,6 +9,7 @@ tier: core
 aliases:
   - "AI Skills Assessment"
   - "Self Assessment"
+sources: []
 ---
 
 # AI 技能自评清单 (AI Skills Self-Assessment)

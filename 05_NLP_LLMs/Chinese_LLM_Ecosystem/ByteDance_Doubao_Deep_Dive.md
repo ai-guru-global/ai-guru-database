@@ -10,6 +10,7 @@ aliases:
   - "Bytedance Doubao Deep Dive"
   - "ByteDance Doubao Deep Dive"
   - ByteDance_Doubao_Deep_Dive
+sources: []
 
 ---
 # 字节豆包 (Doubao): 超级App生态驱动的大模型平台

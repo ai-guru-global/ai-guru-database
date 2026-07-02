@@ -21,10 +21,11 @@ relationships:
   - target: "_concepts/vision-language-model"
     type: includes
 summary: 多模态大语言模型将文本、图像、音频等多种模态信息统一编码到语言模型的语义空间中，实现跨模态理解、生成和推理。
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 created: 2026-06-25
 updated: 2026-06-25
+sources: []
 ---
 
 # 多模态大语言模型（Multimodal LLM）

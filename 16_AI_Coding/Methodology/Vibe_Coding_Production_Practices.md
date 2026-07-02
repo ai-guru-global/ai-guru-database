@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Vibe Coding Production Practices"
   - Vibe_Coding_Production_Practices
+sources: []
 
 ---
 # Vibe Coding 生产环境实践指南

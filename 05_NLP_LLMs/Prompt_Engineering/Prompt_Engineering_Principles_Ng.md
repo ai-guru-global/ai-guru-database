@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Prompt Engineering Principles Ng"
   - Prompt_Engineering_Principles_Ng
+sources: []
 
 ---
 # 提示词工程的两大黄金法则 (吴恩达 & OpenAI 联合指南)

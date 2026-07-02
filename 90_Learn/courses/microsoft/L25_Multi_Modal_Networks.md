@@ -10,6 +10,7 @@ tier: supporting
 aliases:
   - "L25 Multi Modal Networks"
   - L25_Multi_Modal_Networks
+sources: []
 
 ---
 # L25 - 多模态网络 CLIP 与 VQGAN

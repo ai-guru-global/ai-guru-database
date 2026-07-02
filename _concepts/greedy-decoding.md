@@ -19,10 +19,11 @@ relationships:
   - target: "_concepts/beam-search"
     type: contrasted_with
 summary: 贪心解码每一步都选择条件概率最高的 token，是最简单、最确定性的解码策略。优点是稳定高效，缺点是容易陷入局部最优、产生重复单调的文本。
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 created: 2026-06-25
 updated: 2026-06-25
+sources: []
 ---
 
 # 贪心解码（Greedy Decoding）

@@ -16,6 +16,7 @@ relationships:
     type: is_a
   - target: "_concepts/hami"
     type: related_to
+sources: []
 ---
 
 # MIG

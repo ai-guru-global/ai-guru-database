@@ -6,6 +6,7 @@ summary: "> **一句话理解**: 模型评估就像考试——你需要设计�
 created: 2026-05-31
 updated: 2026-05-31
 tier: core
+sources: []
 
 ---
 # 模型评估 (Model Evaluation)

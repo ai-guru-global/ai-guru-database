@@ -10,6 +10,7 @@ aliases:
   - "Gpt3 Deep Dive"
   - "GPT3 Deep Dive"
   - GPT3_Deep_Dive
+sources: []
 
 ---
 # GPT-3 深度解读 (Language Models are Few-Shot Learners)

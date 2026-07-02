@@ -10,6 +10,7 @@ tier: core
 aliases:
   - "Pretraining Synthetic Data"
   - "pretraining synthetic data"
+sources: []
 
 ---
 # 预训练数据 × 合成数据：从规模到质量的范式转移

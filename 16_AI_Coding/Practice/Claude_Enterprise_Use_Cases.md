@@ -4,6 +4,7 @@ title: Claude 企业实践案例
 category: ai-coding
 tags: [claude, enterprise, customer-service, idp, text-to-sql, qa, rag]
 source: yeasy/claude_guide/09_practical
+sources: []
 ---
 
 # Claude 企业实践案例

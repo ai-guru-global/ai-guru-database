@@ -17,6 +17,7 @@ tier: peripheral
 
 updated: 2026-06-30
 summary: "OpenRouter 概述与核心架构 — 专题文档"
+sources: []
 ---
 title: OpenRouter 概述与核心架构
 description: '# OpenRouter 概述与核心架构'

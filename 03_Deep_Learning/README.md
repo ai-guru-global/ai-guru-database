@@ -6,6 +6,7 @@ summary: "本章聚焦神经网络的核心机制，涵盖网络架构组件（�
 created: 2026-05-31
 updated: 2026-05-31
 tier: supporting
+sources: []
 
 ---
 # 03 深度学习基础 (Deep Learning Foundations)

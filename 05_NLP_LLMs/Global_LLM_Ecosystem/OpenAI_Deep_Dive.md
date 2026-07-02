@@ -10,6 +10,7 @@ aliases:
   - "Openai Deep Dive"
   - "OpenAI Deep Dive"
   - OpenAI_Deep_Dive
+sources: []
 
 ---
 # OpenAI 技术深度解析 — 从 GPT-3 到 o3 的完整演进之路

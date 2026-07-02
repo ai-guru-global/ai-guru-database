@@ -16,6 +16,7 @@ relationships:
     type: related_to
   - target: "_concepts/opentelemetry"
     type: related_to
+sources: []
 ---
 
 # Fluent Bit

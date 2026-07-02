@@ -1,37 +1,58 @@
-# AI Guru 语料（完整知识库（全量））
+# AI Guru Corpus — Release Packages
 
-> AgentScope 智能体 NAS 挂载语料。LLM-Wiki 模式：沿双括号 wikilink 遍历，非 RAG。
-> scope = `full` ｜ 导出脚本：`_tools/export_corpus.py`
+Production-ready corpus exports for AgentScope NAS mount (LLM-Wiki mode).
 
-## 统计
+## Directory Structure
 
-| 指标 | 值 |
-| --- | --- |
-| 总页面 | 2147 |
-| 入口可达 | 1742 |
-| Core / Supporting | 455 / 1604 |
-| 总大小 | 20.79 MB |
-| 内部链接 | 14800（已解析 13850，断链 950） |
-| 链接解析率 | 93.6% |
-| 已重写为纯文本的死链 | 950 |
-
-## 使用
-
-```python
-import json
-from pathlib import Path
-root = Path("release")
-manifest = json.load(open(root / "corpus_manifest.json"))
-entry = root / manifest["categories"]["diagnosis_hub"]   # 诊断总入口
-# 按 basename 解析双括号 wikilink（空格/下划线可互换）；未解析链接已被改写为纯文本
+```
+release/
+├── scripts/
+│   └── export.sh          # Production export wrapper
+└── package/
+    ├── 2026-07-02_1926/         # Latest production export
+    │   ├── corpus_manifest.json # Machine-readable metadata
+    │   ├── index.md             # Table of contents (2,193 pages)
+    │   ├── hot.md               # High-traffic pages
+    │   ├── README.md            # Agent-facing usage guide
+    │   └── ...                  # Wiki pages by directory
+    └── 2026-07-02_1926_legacy/  # Previous export (archived)
 ```
 
-## 智能体工作流
-1. 收到工单 → 读 `diagnosis-work-order-hub.md`
-2. 按现象分类 → Pod / Network / Storage / GPU 决策树
-3. 沿双括号 wikilink 遍历 → Runbook + 概念页
-4. 输出远程排查建议（含安全分级）
+## Quick Start
 
-## 来源
-- 源仓库: ai-guru-global/ai-guru-database
-- 导出时间: 2026-07-02 14:54
+```bash
+# Full vault export (all 2,193 pages)
+release/scripts/export.sh full
+
+# Subset export (K8s/GPU/ops only, token-budget friendly)
+release/scripts/export.sh subset
+
+# Dry run (no files written)
+release/scripts/export.sh full --dry-run
+```
+
+## Package Contents
+
+Each package contains:
+- **corpus_manifest.json** — page inventory, link stats, tier distribution
+- **index.md** — human-readable table of contents with wikilinks
+- **hot.md** — top 20 most-referenced pages
+- **README.md** — agent-facing instructions for LLM-Wiki consumption
+- All wiki pages with unresolved `[[wikilinks]]` rewritten to plain text
+
+## Link Resolution Guarantee
+
+The export pipeline uses a double-pass verification:
+1. First pass: rewrite unresolved wikilinks to display text
+2. Second pass: force-rewrite any remaining broken links from disk
+3. Final assertion: **zero unresolved wikilinks** in shipped corpus
+
+## Agent Usage
+
+Mount the package directory as NAS read-only. The agent entry point is:
+
+```
+_synthesis/diagnosis-work-order-hub.md
+```
+
+From there, follow `[[wikilinks]]` — all resolvable links point to real files, all unresolvable links have been converted to plain text.

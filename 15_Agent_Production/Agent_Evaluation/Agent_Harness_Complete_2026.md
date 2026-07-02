@@ -9,6 +9,7 @@ tier: core
 aliases:
   - "Agent Harness Complete 2026"
   - Agent_Harness_Complete_2026
+sources: []
 
 ---
 

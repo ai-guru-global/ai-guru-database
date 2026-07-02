@@ -10,6 +10,7 @@ aliases:
   - "Hami For Dummy"
   - "HAMi for dummy"
   - HAMi_for_dummy
+sources: []
 
 ---
 # HAMi 入门：让 Kubernetes GPU 像 CPU 一样共享

@@ -10,6 +10,7 @@ aliases:
   - "Ai Applications Industry"
   - "AI Applications Industry"
   - AI_Applications_Industry
+sources: []
 
 ---
 # AI 应用与行业融合全景

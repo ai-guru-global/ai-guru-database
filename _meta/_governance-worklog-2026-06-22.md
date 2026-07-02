@@ -6,6 +6,7 @@ summary: 记录目录重构后三轮治理（结构重构→P0/P1质量治理→
 created: 2026-06-22
 updated: 2026-06-22
 status: active
+sources: []
 ---
 
 # 知识库治理工作记录（2026-06-22）

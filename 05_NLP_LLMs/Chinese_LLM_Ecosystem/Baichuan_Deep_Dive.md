@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Baichuan Deep Dive"
   - Baichuan_Deep_Dive
+sources: []
 
 ---
 # 百川智能 (Baichuan): 搜索增强驱动的开源大模型

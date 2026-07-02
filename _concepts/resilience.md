@@ -14,6 +14,7 @@ relationships:
     type: part_of
   - target: "_concepts/chaos-engineering"
     type: verified_by
+sources: []
 ---
 
 # Resilience

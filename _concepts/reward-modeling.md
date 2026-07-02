@@ -23,10 +23,11 @@ relationships:
   - target: "_concepts/sft"
     type: follows
 summary: 奖励模型是 RLHF 流程中的核心组件，它学习人类对模型回答的偏好，为强化学习提供可优化的标量奖励信号。
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 created: 2026-06-25
 updated: 2026-06-25
+sources: []
 ---
 
 # 奖励模型（Reward Modeling）

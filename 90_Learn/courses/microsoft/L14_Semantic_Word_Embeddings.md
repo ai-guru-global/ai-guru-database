@@ -10,6 +10,7 @@ tier: supporting
 aliases:
   - "L14 Semantic Word Embeddings"
   - L14_Semantic_Word_Embeddings
+sources: []
 
 ---
 # L14 - 语义词嵌入：Word2Vec 与 GloVe

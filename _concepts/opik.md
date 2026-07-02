@@ -3,7 +3,7 @@ title: "Opik LLM 可观测性平台 (Opik by Comet)"
 category: -concepts
 tags: ["opik", "comet", "llm-observability", "tracing", "evaluation", "monitoring"]
 relationships:
-  - target: "_concepts/llm-monitoring"
+  - target: "_concepts/observability"
     type: related_to
   - target: "_concepts/agent-evaluation"
     type: related_to
@@ -15,7 +15,7 @@ provenance:
   inferred: 0.75
   ambiguous: 0.10
 base_confidence: 0.82
-lifecycle: stable
+lifecycle: reviewed
 tier: supporting
 ---
 

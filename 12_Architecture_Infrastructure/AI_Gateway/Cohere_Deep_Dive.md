@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Cohere Deep Dive"
   - Cohere_Deep_Dive
+sources: []
 
 ---
 # Cohere: 企业 AI 平台

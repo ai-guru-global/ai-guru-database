@@ -10,6 +10,7 @@ aliases:
   - "Dpo Deep Dive"
   - "DPO Deep Dive"
   - DPO_Deep_Dive
+sources: []
 
 ---
 # Direct Preference Optimization (DPO) 深度解读

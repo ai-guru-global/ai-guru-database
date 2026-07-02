@@ -10,6 +10,7 @@ aliases:
   - "AI_Product_Manager"
   - "AI Product Manager 面试指南"
   - "AI_Product_Manager Interview Guide"
+sources: []
 ---
 
 # AI Product Manager 面试指南

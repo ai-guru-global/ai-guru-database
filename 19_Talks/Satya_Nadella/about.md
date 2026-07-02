@@ -8,6 +8,7 @@ updated: 2026-05-31
 tier: supporting
 aliases:
   - About
+sources: []
 
 ---
 # Satya Nadella 简介 (Satya Nadella)

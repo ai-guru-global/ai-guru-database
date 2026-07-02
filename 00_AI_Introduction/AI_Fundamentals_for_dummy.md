@@ -10,6 +10,7 @@ aliases:
   - "Ai Fundamentals For Dummy"
   - "AI Fundamentals for dummy"
   - AI_Fundamentals_for_dummy
+sources: []
 
 ---
 # AI 基础入门 - 小白版

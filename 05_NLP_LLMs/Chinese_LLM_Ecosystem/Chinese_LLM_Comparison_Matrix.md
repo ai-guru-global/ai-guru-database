@@ -10,6 +10,7 @@ aliases:
   - "Chinese Llm Comparison Matrix"
   - "Chinese LLM Comparison Matrix"
   - Chinese_LLM_Comparison_Matrix
+sources: []
 
 ---
 # 中国大模型全厂商对比矩阵 (Chinese LLM Comparison Matrix)

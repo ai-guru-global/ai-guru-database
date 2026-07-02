@@ -21,10 +21,11 @@ relationships:
   - target: "_concepts/agent-framework"
     type: example_of
 summary: ReAct 是一种将推理（Reasoning）和行动（Acting）结合的 Agent 范式，让 LLM 通过“思考 → 行动 → 观察”的循环解决复杂任务，提高了可解释性和任务完成率。
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 created: 2026-06-25
 updated: 2026-06-25
+sources: []
 ---
 
 # ReAct 智能体（Reasoning + Acting）

@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Hermes Agent Deep Dive"
   - Hermes_Agent_Deep_Dive
+sources: []
 
 ---
 # Hermes Agent: 面向企业级的 AI Agent 运行时框架

@@ -8,6 +8,7 @@ tier: core
 aliases:
   - "Talks Insights"
   - "talks insights"
+sources: []
 
 ---
 # AI 领袖演讲与行业洞察

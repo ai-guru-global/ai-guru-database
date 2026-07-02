@@ -10,6 +10,7 @@ aliases:
   - "Data And Finetuning For Dummy"
   - "Data and FineTuning for dummy"
   - Data_and_FineTuning_for_dummy
+sources: []
 
 ---
 # 数据与微调大白话：数据清洗 Pipeline、DoRA、RS-LoRA

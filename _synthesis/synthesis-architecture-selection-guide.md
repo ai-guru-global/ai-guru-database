@@ -7,6 +7,7 @@ tier: core
 aliases:
   - "Synthesis Architecture Selection Guide"
   - "synthesis architecture selection guide"
+sources: []
 
 ---
 # AI 系统架构选型决策树：从任务类型到技术栈

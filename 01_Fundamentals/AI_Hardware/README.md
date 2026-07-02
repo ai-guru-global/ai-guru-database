@@ -6,6 +6,7 @@ summary: "AI 计算硬件基础设施总览，覆盖 GPU、AI 加速卡、国产
 created: 2026-06-12
 updated: 2026-06-15
 tier: supporting
+sources: []
 
 ---
 # AI 硬件基础设施

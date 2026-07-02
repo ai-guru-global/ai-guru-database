@@ -8,6 +8,7 @@ updated: 2026-05-31
 tier: supporting
 aliases:
   - Sayings
+sources: []
 
 ---
 # Emad Mostaque 关于 AI 的观点 (Emad Mostaque on AI)

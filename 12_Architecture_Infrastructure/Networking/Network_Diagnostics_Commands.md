@@ -7,6 +7,7 @@ summary: "面向 AI 集群的网络诊断命令集：覆盖 IB/RoCE/以太网的
 created: 2026-06-26
 updated: 2026-06-26
 tier: supporting
+sources: []
 ---
 
 > [!warning] 生产安全提示 · Production Safety

@@ -8,6 +8,7 @@ updated: 2026-06-12
 tier: supporting
 aliases:
   - About
+sources: []
 
 ---
 # 杨植麟 (Zhilin Yang) — 月之暗面创始人

@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Multi Tenant Architecture"
   - Multi_Tenant_Architecture
+sources: []
 
 ---
 # AI 系统多租户架构 (Multi-Tenant Architecture for AI Systems)

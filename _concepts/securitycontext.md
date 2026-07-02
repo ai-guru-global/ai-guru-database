@@ -5,6 +5,7 @@ tags: ["kubernetes", "security", "container", "k8s", "cloud-native"]
 summary: "SecurityContext 是 Kubernetes Pod/Container 级别的安全配置字段，用于声明运行身份、权限提升、Capabilities、文件系统访问等安全属性。"
 created: 2026-07-02
 updated: 2026-07-02
+sources: []
 ---
 
 # SecurityContext

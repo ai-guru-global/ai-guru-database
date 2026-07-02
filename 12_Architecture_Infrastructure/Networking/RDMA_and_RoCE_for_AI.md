@@ -7,6 +7,7 @@ summary: "深入讲解 RDMA 技术原理、RoCEv1/v2 的区别、在 AI 训练�
 created: 2026-06-26
 updated: 2026-06-26
 tier: supporting
+sources: []
 ---
 
 # RDMA 与 RoCE 在 AI 集群中的应用

@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Agent Protocols 2026"
   - Agent_Protocols_2026
+sources: []
 
 ---
 # AI Agent 协议栈 2026 完全指南

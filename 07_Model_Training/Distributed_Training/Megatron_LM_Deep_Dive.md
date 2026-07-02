@@ -10,6 +10,7 @@ aliases:
   - "Megatron Lm Deep Dive"
   - "Megatron LM Deep Dive"
   - Megatron_LM_Deep_Dive
+sources: []
 
 ---
 # Megatron-LM 深度解析：NVIDIA 大规模 Transformer 训练框架

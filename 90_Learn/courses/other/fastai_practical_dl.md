@@ -10,6 +10,7 @@ aliases:
   - "Fastai Practical Dl"
   - "fastai practical dl"
   - fastai_practical_dl
+sources: []
 
 ---
 # fast.ai 实用深度学习 (Practical Deep Learning for Coders)

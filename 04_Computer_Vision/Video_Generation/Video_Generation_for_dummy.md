@@ -10,6 +10,7 @@ aliases:
   - "Video Generation For Dummy"
   - "Video Generation for dummy"
   - Video_Generation_for_dummy
+sources: []
 
 ---
 # AI 视频生成 - 小白版 🎬

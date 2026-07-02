@@ -5,6 +5,7 @@ tags: ["llm", "quantization", "model-compression", "inference", "edge-deployment
 summary: 将大语言模型权重和/或激活值从高精度浮点数映射到低精度整数或更窄浮点格式的技术，以降低显存占用、提升推理吞吐并支持边缘部署。
 created: 2026-07-02T00:00:00Z
 updated: 2026-07-02T00:00:00Z
+sources: []
 ---
 
 # LLM Quantization

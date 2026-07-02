@@ -19,7 +19,7 @@ sources:
   - "_concepts/matryoshka-representation-learning.md"
   - "14_RAG_Systems/Matryoshka_Representation_Learning_for_dummy.md"
   - "_concepts/how-llm-answers-plain.md"
-lifecycle: stable
+lifecycle: reviewed
 tier: supporting
 created: "2026-06-15"
 updated: "2026-06-15T08:05:00+08:00"

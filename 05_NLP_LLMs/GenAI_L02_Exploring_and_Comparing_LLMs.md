@@ -13,6 +13,7 @@ aliases:
   - "Genai L02 Exploring And Comparing Llms"
   - "GenAI L02 Exploring and Comparing LLMs"
   - GenAI_L02_Exploring_and_Comparing_LLMs
+sources: []
 
 ---
 ## 学习目标

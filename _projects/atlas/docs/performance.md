@@ -5,6 +5,7 @@ tags: ["visualization", "charts", "dashboards", "data-viz"]
 summary: "在 [package.json](file:///Users/ai-guru/Documents/GitHub/ai-guru-global/ai-guru-database/visualization/atlas/package.json) 中执行 `perf:lhci`"
 created: 2026-05-31
 updated: 2026-05-31
+sources: []
 ---
 
 # 性能审计报告（Lighthouse）

@@ -10,6 +10,7 @@ aliases:
   - "Constitutional Ai Deep Dive"
   - "Constitutional AI Deep Dive"
   - Constitutional_AI_Deep_Dive
+sources: []
 
 ---
 # Constitutional AI (CAI) 深度解读：Anthropic 的宪法式对齐方法

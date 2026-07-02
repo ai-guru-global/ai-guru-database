@@ -37,6 +37,7 @@ aliases:
   - OpenRouter_OpenCode_Guide
 
 summary: "AI 编程与 LLM 网关专题 — OpenRouter & OpenCode 全量指南 — 专题文档"
+sources: []
 ---
 # AI 编程与 LLM 网关专题 — OpenRouter & OpenCode 全量指南
 

@@ -8,6 +8,7 @@ aliases:
   - "Ai Ethics And Future For Beginners"
   - "AI Ethics And Future For Beginners"
   - AI_Ethics_And_Future_For_Beginners
+sources: []
 
 ---
 # AI 伦理、安全与未来：从偏见到 AGI 与量子硬件

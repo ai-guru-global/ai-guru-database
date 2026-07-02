@@ -10,6 +10,7 @@ aliases:
   - "Scaling Laws And Training Dynamics"
   - "Scaling Laws and Training Dynamics"
   - Scaling_Laws_and_Training_Dynamics
+sources: []
 
 ---
 # Scaling Laws and Training Dynamics (LLM 缩放法则与训练动态)

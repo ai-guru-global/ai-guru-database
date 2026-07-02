@@ -8,6 +8,7 @@ aliases:
   - "Llm Internals Architecture"
   - "LLM Internals Architecture"
   - LLM_Internals_Architecture
+sources: []
 
 ---
 # 大模型架构核心：从注意力到完整 Transformer

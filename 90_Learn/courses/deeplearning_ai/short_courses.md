@@ -10,6 +10,7 @@ aliases:
   - "Short Courses"
   - "short courses"
   - short_courses
+sources: []
 
 ---
 # DeepLearning.AI 短课程 (Short Courses) 核心知识库提炼

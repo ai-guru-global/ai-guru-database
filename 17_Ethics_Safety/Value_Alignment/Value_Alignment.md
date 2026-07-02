@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Value Alignment"
   - Value_Alignment
+sources: []
 
 ---
 # 价值对齐 (Value Alignment)

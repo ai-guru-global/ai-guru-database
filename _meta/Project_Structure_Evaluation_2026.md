@@ -5,6 +5,7 @@ tags: ["planning", "roadmap", "strategy", "goals", "model-evaluation"]
 summary: "> **评估日期**: 2026-05-07"
 created: 2026-05-31
 updated: 2026-05-31
+sources: []
 ---
 
 # AI Guru 知识库 — 全项目结构评估与改进建议

@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Cv In Nutshell"
   - "CV in nutshell"
+sources: []
 
 ---
 # 计算机视觉速成指南 (Computer Vision in a Nutshell)

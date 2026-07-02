@@ -10,6 +10,7 @@ aliases:
   - "Ocr For Dummy"
   - "OCR for dummy"
   - OCR_for_dummy
+sources: []
 
 ---
 # OCR 与文字识别 - 小白版 🔤

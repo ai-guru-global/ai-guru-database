@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Trae Guide"
   - Trae_Guide
+sources: []
 
 ---
 # Trae 使用指南

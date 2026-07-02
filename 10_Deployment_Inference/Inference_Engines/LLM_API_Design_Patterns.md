@@ -3,6 +3,7 @@ title: "LLM API Design Patterns"
 tags: [deployment, api, llm, rest, streaming, production]
 status: complete
 last_updated: 2026-07-02
+sources: []
 ---
 
 # LLM API Design Patterns

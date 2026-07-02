@@ -9,6 +9,7 @@ tier: peripheral
 aliases:
   - "Transformer Alternatives"
   - Transformer_Alternatives
+sources: []
 
 ---
 # Transformer 替代架构深度解析

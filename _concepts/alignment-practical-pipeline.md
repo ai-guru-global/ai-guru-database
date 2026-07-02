@@ -26,10 +26,11 @@ relationships:
   - target: "_concepts/reward-modeling"
     type: uses
 summary: 本文给出 LLM 安全对齐的完整实战流程，从数据准备、SFT、奖励模型训练到 RLHF 或 DPO 微调，并覆盖评估、安全测试和常见陷阱。
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 created: 2026-06-25
 updated: 2026-06-25
+sources: []
 ---
 
 # LLM 安全对齐实战 Pipeline：SFT → RLHF/DPO

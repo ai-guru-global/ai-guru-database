@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Linear Algebra"
   - Linear_Algebra
+sources: []
 
 ---
 # 线性代数 (Linear Algebra)

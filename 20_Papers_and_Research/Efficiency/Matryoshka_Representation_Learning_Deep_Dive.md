@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Matryoshka Representation Learning Deep Dive"
   - Matryoshka_Representation_Learning_Deep_Dive
+sources: []
 
 ---
 # 论文深度解读: Matryoshka Representation Learning

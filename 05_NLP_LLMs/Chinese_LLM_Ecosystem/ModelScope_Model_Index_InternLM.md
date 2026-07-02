@@ -12,6 +12,7 @@ aliases:
   - "Modelscope Model Index Internlm"
   - "ModelScope Model Index InternLM"
   - ModelScope_Model_Index_InternLM
+sources: []
 
 ---
 ## 上海 AI 实验室 · 书生 (InternLM)

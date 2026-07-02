@@ -8,9 +8,10 @@ aliases:
   - "Prompt Injection"
   - "prompt injection"
 category: -concepts
-lifecycle: stable
+lifecycle: reviewed
 
 relationships:
+sources: []
 ---
 
 # Prompt Injection (提示注入攻击)

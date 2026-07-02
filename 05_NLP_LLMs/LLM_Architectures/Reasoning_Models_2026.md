@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Reasoning Models 2026"
   - Reasoning_Models_2026
+sources: []
 
 ---
 # LLM 推理模型 2026: o1/o3 与思维链进化

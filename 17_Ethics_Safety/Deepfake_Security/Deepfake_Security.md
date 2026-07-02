@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Deepfake Security"
   - Deepfake_Security
+sources: []
 
 ---
 # Deepfake 安全 2026

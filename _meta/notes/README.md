@@ -6,6 +6,7 @@ summary: '> **一句话理解**: 本章节是 AI 全栈知识的"底层数据库
 created: '2026-05-31'
 updated: '2026-05-31'
 tier: supporting
+sources: []
 
 ---
 # 笔记与知识沉淀 (Notes)

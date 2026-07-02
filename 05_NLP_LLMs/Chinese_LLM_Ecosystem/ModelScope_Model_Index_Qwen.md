@@ -12,6 +12,7 @@ aliases:
   - "Modelscope Model Index Qwen"
   - "ModelScope Model Index Qwen"
   - ModelScope_Model_Index_Qwen
+sources: []
 
 ---
 ## 阿里 · 通义千问 (Qwen)

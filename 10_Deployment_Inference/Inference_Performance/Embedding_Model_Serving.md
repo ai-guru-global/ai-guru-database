@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Embedding Model Serving"
   - Embedding_Model_Serving
+sources: []
 
 ---
 # Embedding 与 Reranker 模型服务

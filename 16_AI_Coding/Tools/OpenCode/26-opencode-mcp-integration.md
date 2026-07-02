@@ -13,6 +13,7 @@ aliases:
 
 updated: 2026-06-30
 summary: "MCP 协议集成指南 — 专题文档"
+sources: []
 ---
 title: [[_concepts/ai-agents|MCP]] 协议集成指南
 description: '# MCP 协议集成指南'

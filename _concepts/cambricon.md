@@ -14,6 +14,7 @@ relationships:
     type: part_of
   - target: "_concepts/magicmind"
     type: uses
+sources: []
 ---
 
 # Cambricon

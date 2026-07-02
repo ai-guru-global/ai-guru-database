@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Agent Protocols Comparison 2026"
   - Agent_Protocols_Comparison_2026
+sources: []
 
 ---
 # Agent Protocols Comparison 2026: MCP, A2A, UCP, and Beyond

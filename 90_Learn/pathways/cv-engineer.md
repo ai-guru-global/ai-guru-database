@@ -9,6 +9,7 @@ tier: core
 aliases:
   - "CV Engineer Path"
   - "Computer Vision Learning Path"
+sources: []
 ---
 
 # CV 工程师学习路径 (Computer Vision Engineer Learning Path)

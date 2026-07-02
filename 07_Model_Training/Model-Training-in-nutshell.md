@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Model Training In Nutshell"
   - "Model Training in nutshell"
+sources: []
 
 ---
 # 模型训练速成指南

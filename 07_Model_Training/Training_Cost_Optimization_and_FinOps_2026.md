@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Training Cost Optimization and FinOps 2026"
   - Training_Cost_Optimization_and_FinOps_2026
+sources: []
 ---
 
 # 大模型训练成本优化与 FinOps 实践 2026
@@ -105,7 +106,7 @@ python -c "import torch; print(torch.utils.data.get_worker_info())"
 诊断工具：
 
 - PyTorch Profiler + NVIDIA Nsight Systems
-- DeepSpeed Wall Clock Breakdown
+- [[_concepts/deepspeed|DeepSpeed]] Wall Clock Breakdown
 - Megatron-LM `log_throughput`
 
 优化措施：
@@ -427,3 +428,4 @@ flowchart LR
 - [[07_Model_Training/Monitoring/Training_Monitoring_2026.md|Training Monitoring & Experiment Tracking 2026]]
 - [[07_Model_Training/Compression/Pruning_and_Knowledge_Distillation.md|剪枝与知识蒸馏]]
 - [[12_Architecture_Infrastructure/AI_SRE_Runbook.md|AI SRE Runbook]]
+- [[_concepts/training-cost-optimization|训练成本优化]] — 概念层总览

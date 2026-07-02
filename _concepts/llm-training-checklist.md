@@ -22,10 +22,11 @@ relationships:
   - target: "_concepts/distributed-training"
     type: related_to
 summary: 本页汇总 LLM 训练（预训练、SFT、对齐）过程中需要关注的数据、超参、稳定性、评估和工程 checklist。
-lifecycle: stable
+lifecycle: reviewed
 tier: supporting
 created: 2026-06-25
 updated: 2026-06-25
+sources: []
 ---
 
 # LLM 训练检查清单

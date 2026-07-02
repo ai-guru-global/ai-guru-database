@@ -10,6 +10,7 @@ aliases:
   - "Hami Operation Guide"
   - "HAMi Operation Guide"
   - HAMi_Operation_Guide
+sources: []
 
 ---
 

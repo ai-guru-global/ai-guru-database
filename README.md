@@ -6,6 +6,7 @@ summary: "GitHub 上最全面的 AI 全栈中文知识库——从数学基础�
 created: 2026-05-31
 updated: 2026-06-15
 tier: supporting
+sources: []
 
 ---
 <div align="center">

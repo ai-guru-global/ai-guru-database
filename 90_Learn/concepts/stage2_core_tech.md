@@ -10,6 +10,7 @@ aliases:
   - "Stage2 Core Tech"
   - "stage2 core tech"
   - stage2_core_tech
+sources: []
 
 ---
 # Stage 2: 核心技术

@@ -21,7 +21,7 @@ provenance:
   inferred: 0.2
   ambiguous: 0.05
 base_confidence: 0.82
-lifecycle: stable
+lifecycle: reviewed
 lifecycle_changed: 2026-06-16
 tier: core
 created: 2026-06-16
@@ -104,3 +104,5 @@ aliases:
 - [[_concepts/red-teaming]] — 红队测试
 - [[17_Ethics_Safety/LLM_Security_Defense_Guide]] — LLM 安全防御指南
 - [[15_Agent_Production/Agent_Skills/Agent_Skills_Multi_Role_Analysis]] — Agent 技能多角色分析
+- [[_concepts/agent-production-deployment|Agent 生产部署]] — 工具安全在生产部署中的落地
+- [[_meta/Production_Safety_Policy|生产安全策略]] — 风险评估与操作安全规范

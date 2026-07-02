@@ -10,6 +10,7 @@ aliases:
   - "Model Training For Dummy"
   - "Model Training for dummy"
   - Model_Training_for_dummy
+sources: []
 
 ---
 # 模型训练小白指南

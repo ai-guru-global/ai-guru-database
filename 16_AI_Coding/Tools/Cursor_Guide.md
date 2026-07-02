@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Cursor Guide"
   - Cursor_Guide
+sources: []
 
 ---
 # Cursor 使用指南

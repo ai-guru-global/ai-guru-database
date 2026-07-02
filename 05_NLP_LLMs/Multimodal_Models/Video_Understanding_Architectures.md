@@ -9,6 +9,7 @@ tier: peripheral
 aliases:
   - "Video Understanding Architectures"
   - Video_Understanding_Architectures
+sources: []
 
 ---
 # 视频理解架构深度解析

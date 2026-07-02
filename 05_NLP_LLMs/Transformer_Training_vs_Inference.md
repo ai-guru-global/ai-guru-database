@@ -17,6 +17,7 @@ tags:
   - grpo
 created: 2026-06-25
 updated: 2026-06-25
+sources: []
 ---
 
 # Transformer 在大模型训练与推理中的应用
@@ -75,7 +76,7 @@ L = - sum_t log P(t_t | t_1, t_2, ..., t_{t-1}; θ)
 2. 将生成的 token 拼回输入，继续生成下一个 token；
 3. 重复直到遇到结束符 `<|endoftext|>`、`<|im_end|>` 或达到最大生成长度。
 
-为了加速，推理时通常使用 **KV Cache**，避免对已经计算过的 token 重复计算 key/value。
+为了加速，推理时通常使用 **[[_concepts/kv-cache|KV Cache]]**，避免对已经计算过的 token 重复计算 key/value。
 
 ---
 
@@ -276,7 +277,7 @@ Cache ≈ 2 × num_layers × num_heads × head_dim × batch_size × seq_len × b
 ```
 
 - 长上下文推理时，KV Cache 可能成为显存瓶颈。
-- 优化方向：**PagedAttention**（vLLM）、**MQA（Multi-Query Attention）**、**GQA（Grouped-Query Attention）**。
+- 优化方向：**[[_concepts/paged-attention|PagedAttention]]**（vLLM）、**MQA（Multi-Query Attention）**、**GQA（Grouped-Query Attention）**。
 
 ### 3. 推理中的关键指标
 

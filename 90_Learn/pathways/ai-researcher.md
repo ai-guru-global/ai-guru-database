@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Ai Researcher"
   - "ai researcher"
+sources: []
 
 ---
 # AI 研究者路径

@@ -19,7 +19,7 @@ provenance:
   inferred: 0.15
   ambiguous: 0.05
 base_confidence: 0.90
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 ---
 

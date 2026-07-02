@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Multimodal Architectures 2026"
   - Multimodal_Architectures_2026
+sources: []
 
 ---
 # 多模态模型架构 2026：从 GPT-4V 到原生多模态 AGI

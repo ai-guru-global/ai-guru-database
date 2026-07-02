@@ -6,6 +6,7 @@ tags: ["paper", "u-net", "segmentation", "encoder-decoder", "skip-connection", "
 summary: "U-Net (2015) 是编码器-解码器 + 跳跃连接的分割架构，不仅统治了医学图像分割，还成为 Stable Diffusion 的去噪骨干网络。本文深度解读其架构设计、训练策略和从分割到生成模型的演化路径。"
 created: 2026-06-04
 updated: 2026-06-04
+sources: []
 ---
 
 # 论文深度解读: U-Net — Convolutional Networks for Biomedical Image Segmentation

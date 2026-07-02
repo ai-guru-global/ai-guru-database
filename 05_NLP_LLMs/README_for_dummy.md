@@ -10,6 +10,7 @@ aliases:
   - "Readme For Dummy"
   - "README for dummy"
   - README_for_dummy
+sources: []
 
 ---
 # 04 自然语言处理与大模型 - 小白版

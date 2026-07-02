@@ -10,6 +10,7 @@ aliases:
   - "Rlhf Dpo Deep Dive"
   - "RLHF DPO Deep Dive"
   - RLHF_DPO_Deep_Dive
+sources: []
 
 ---
 # RLHF 与 DPO 深度解读 (从 InstructGPT 到 Direct Preference Optimization)

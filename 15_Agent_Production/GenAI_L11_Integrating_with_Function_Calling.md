@@ -13,6 +13,7 @@ aliases:
   - "Genai L11 Integrating With Function Calling"
   - "GenAI L11 Integrating with Function Calling"
   - GenAI_L11_Integrating_with_Function_Calling
+sources: []
 
 ---
 ## 学习目标

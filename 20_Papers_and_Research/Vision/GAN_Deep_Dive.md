@@ -10,6 +10,7 @@ aliases:
   - "Gan Deep Dive"
   - "GAN Deep Dive"
   - GAN_Deep_Dive
+sources: []
 
 ---
 # GAN 深度解读 (Generative Adversarial Networks)

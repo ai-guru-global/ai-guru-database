@@ -10,6 +10,7 @@ aliases:
   - "Kitops Deep Dive"
   - "KitOps Deep Dive"
   - KitOps_Deep_Dive
+sources: []
 
 ---
 

@@ -8,6 +8,7 @@ aliases:
   - "Ai Beginner Fundamentals"
   - "AI Beginner Fundamentals"
   - AI_Beginner_Fundamentals
+sources: []
 
 ---
 # 零基础学 AI：从概念到生态的入门全景

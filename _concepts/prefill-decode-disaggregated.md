@@ -24,10 +24,11 @@ relationships:
   - target: "_concepts/vllm-practical"
     type: related_to
 summary: Prefill-Decode 分离将 LLM 推理的两个阶段部署到不同硬件上：Prefill 阶段需要高算力，Decode 阶段需要高内存带宽。通过分离可以分别优化 TTFT 和 TPOT，提升整体服务效率。
-lifecycle: stable
+lifecycle: reviewed
 tier: supporting
 created: 2026-06-25
 updated: 2026-06-25
+sources: []
 ---
 
 # Prefill-Decode 分离部署架构

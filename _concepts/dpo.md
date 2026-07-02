@@ -21,7 +21,7 @@ sources:
   - 07_Model_Training/Alignment/TRL_RLHF_DPO_Guide.md
   - 07_Model_Training/Alignment/GRPO_and_New_Alignment_Methods.md
 summary: "DPO（Direct Preference Optimization）是 Rafailov et al. 2023 提出的简化对齐方法，将 PPO 的两阶段（SFT + RM + PPO）合并为单阶段，直接用偏好数据训练，无需训练 Reward Model 和 Critic。"
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 provenance:
   extracted: 0.92

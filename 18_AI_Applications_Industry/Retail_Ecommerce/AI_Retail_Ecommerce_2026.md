@@ -10,6 +10,7 @@ aliases:
   - "Ai Retail Ecommerce 2026"
   - "AI Retail Ecommerce 2026"
   - AI_Retail_Ecommerce_2026
+sources: []
 
 ---
 # AI 零售与电商行业应用 (2025-2026)

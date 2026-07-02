@@ -19,7 +19,7 @@ provenance:
   inferred: 0.65
   ambiguous: 0.10
 base_confidence: 0.85
-lifecycle: stable
+lifecycle: reviewed
 tier: supporting
 ---
 
@@ -230,3 +230,4 @@ kubectl config get-contexts
 - [[_concepts/containerd]] — containerd 运行时
 - [[_concepts/kustomize]] — Kustomize 配置管理
 - [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[_meta/Production_Safety_Policy|生产安全策略]] — 集群操作风险评估规范

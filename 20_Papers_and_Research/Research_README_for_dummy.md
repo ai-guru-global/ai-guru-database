@@ -6,6 +6,7 @@ summary: '> **一句话理解**: 这里是你深入研究某个 AI 话题的工�
 created: '2026-06-25'
 updated: '2026-06-25'
 tier: supporting
+sources: []
 ---
 # 课题研究 — 小白版 🔬
 

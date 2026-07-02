@@ -5,6 +5,7 @@ tags: [meta, plan, content-gap, production, 2026]
 summary: 基于 _content-audit-2026-07-01.md 的审计结果，制定分批次内容补充计划，优先补齐跨章节引用频率最高的生产环境必备（P0）文档。
 created: 2026-07-01
 updated: 2026-07-01
+sources: []
 ---
 
 # 内容补充执行计划 (2026-07-01)

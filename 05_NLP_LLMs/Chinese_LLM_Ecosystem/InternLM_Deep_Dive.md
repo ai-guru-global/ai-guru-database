@@ -10,6 +10,7 @@ aliases:
   - "Internlm Deep Dive"
   - "InternLM Deep Dive"
   - InternLM_Deep_Dive
+sources: []
 
 ---
 # 书生·浦语 (InternLM): 上海AI Lab 的开源大模型生态

@@ -10,6 +10,7 @@ aliases:
   - "Deployment Inference For Dummy"
   - "Deployment Inference for dummy"
   - Deployment_Inference_for_dummy
+sources: []
 
 ---
 # 模型部署与推理加速 - 小白版

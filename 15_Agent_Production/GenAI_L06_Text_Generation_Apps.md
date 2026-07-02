@@ -13,6 +13,7 @@ aliases:
   - "Genai L06 Text Generation Apps"
   - "GenAI L06 Text Generation Apps"
   - GenAI_L06_Text_Generation_Apps
+sources: []
 
 ---
 ## 学习目标

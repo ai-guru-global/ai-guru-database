@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Agent Skills Multi Role Analysis"
   - Agent_Skills_Multi_Role_Analysis
+sources: []
 
 ---
 # Agent Skills 多角色全景分析

@@ -10,6 +10,7 @@ aliases:
   - "Mathematics For Ai"
   - "Mathematics for AI"
   - Mathematics_for_AI
+sources: []
 
 ---
 # AI 数学手册 (Mathematics for AI Reference)

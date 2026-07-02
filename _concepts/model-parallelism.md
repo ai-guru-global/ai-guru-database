@@ -15,6 +15,7 @@ relationships:
     type: is_a
   - target: "_concepts/pipeline-parallelism"
     type: is_a
+sources: []
 ---
 
 # Model Parallelism

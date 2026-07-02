@@ -6,6 +6,7 @@ summary: "> 语音 AI 让机器「听懂」和「说出」——涵盖 ASR、TTS
 created: 2026-06-04
 updated: 2026-06-04
 tier: supporting
+sources: []
 
 ---
 # 语音与音频 AI (Speech & Audio AI)

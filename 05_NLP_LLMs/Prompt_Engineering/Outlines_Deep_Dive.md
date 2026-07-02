@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Outlines Deep Dive"
   - Outlines_Deep_Dive
+sources: []
 
 ---
 # Outlines: 结构化输出框架

@@ -23,10 +23,11 @@ relationships:
   - target: "_concepts/top-p-sampling"
     type: modified_by
 summary: 随机采样解码按照模型输出的概率分布随机抽取下一个 token，使生成结果更自然、更多样，是现代 LLM 最常用的基础解码方式之一。
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 created: 2026-06-25
 updated: 2026-06-25
+sources: []
 ---
 
 # 随机采样解码（Sampling Decoding）

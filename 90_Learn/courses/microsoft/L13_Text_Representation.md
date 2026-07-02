@@ -10,6 +10,7 @@ tier: supporting
 aliases:
   - "L13 Text Representation"
   - L13_Text_Representation
+sources: []
 
 ---
 # L13 - 文本表示：词袋模型与 TF-IDF

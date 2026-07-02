@@ -8,6 +8,7 @@ updated: 2026-05-31
 tier: supporting
 aliases:
   - Sayings
+sources: []
 
 ---
 # Sundar Pichai 关于 AI 的观点 (Sundar Pichai on AI)

@@ -10,6 +10,7 @@ aliases:
   - "Linear Algebra For Dummy"
   - "Linear Algebra for dummy"
   - Linear_Algebra_for_dummy
+sources: []
 
 ---
 # 线性代数 - 小白版

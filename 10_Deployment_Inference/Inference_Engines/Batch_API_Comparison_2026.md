@@ -11,6 +11,7 @@ aliases:
   - "Batch Api Comparison 2026"
   - "Batch API Comparison 2026"
   - Batch_API_Comparison_2026
+sources: []
 
 ---
 # LLM Batch API 完全指南: 批量推理的成本优化利器

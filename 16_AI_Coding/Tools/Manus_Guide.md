@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Manus Guide"
   - Manus_Guide
+sources: []
 
 ---
 # Manus 使用指南

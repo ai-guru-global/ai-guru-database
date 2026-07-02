@@ -10,6 +10,7 @@ aliases:
   - "Ai Coding In Nutshell"
   - "AI Coding in nutshell"
   - AI_Coding-in-nutshell
+sources: []
 
 ---
 # AI 辅助编程速览 (AI-Assisted Coding in a Nutshell)

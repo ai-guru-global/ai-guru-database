@@ -10,6 +10,7 @@ aliases:
   - "Sensetime Sensenova Deep Dive"
   - "SenseTime SenseNova Deep Dive"
   - SenseTime_SenseNova_Deep_Dive
+sources: []
 
 ---
 # 商汤日日新 (SenseNova): 视觉AI巨头的大模型转型

@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Vibe Coding Getting Started"
   - Vibe_Coding_Getting_Started
+sources: []
 
 ---
 # Vibe Coding 傻瓜指南 (Vibe Coding for Dummies)

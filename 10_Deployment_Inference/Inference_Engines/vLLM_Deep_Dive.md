@@ -10,6 +10,7 @@ aliases:
   - "Vllm Deep Dive"
   - "vLLM Deep Dive"
   - vLLM_Deep_Dive
+sources: []
 
 ---
 
@@ -58,7 +59,7 @@ vLLM: 生产级 LLM 推理引擎
 
 | 特性 | 说明 |
 |------|------|
-| **PagedAttention** | 虚拟显存管理，消除 KV Cache 碎片 |
+| **[[_concepts/paged-attention|PagedAttention]]** | 虚拟显存管理，消除 KV Cache 碎片 |
 | **Continuous Batching** | 动态批处理，最大化 GPU 利用率 |
 | **Chunked Prefill** | 大 prompt 分块，降低 TTFT 抖动 |
 | **Prefix Caching** | 自动缓存共享前缀，多轮/RAG 加速 |

@@ -9,7 +9,7 @@ tier: core
 aliases:
   - "Formal Logic"
   - "formal logic"
-lifecycle: stable
+lifecycle: reviewed
 provenance:
   extracted: 0.70
   inferred: 0.25

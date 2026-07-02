@@ -10,6 +10,7 @@ aliases:
   - "Ctranslate2 Deep Dive"
   - "CTranslate2 Deep Dive"
   - CTranslate2_Deep_Dive
+sources: []
 
 ---
 

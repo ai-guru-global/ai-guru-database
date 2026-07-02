@@ -15,6 +15,7 @@ tier: peripheral
 
 updated: 2026-06-30
 summary: "API 参考与请求/响应规范 — 专题文档"
+sources: []
 ---
 title: API 参考与请求/响应规范
 description: '## 概述'

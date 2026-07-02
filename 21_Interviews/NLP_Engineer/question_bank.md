@@ -6,6 +6,7 @@ summary: "NLP Engineer 面试题库，覆盖 NLP 基础、LLM 应用、RAG 系�
 created: 2026-05-31
 updated: 2026-06-04
 tier: supporting
+sources: []
 ---
 
 # NLP Engineer 题库

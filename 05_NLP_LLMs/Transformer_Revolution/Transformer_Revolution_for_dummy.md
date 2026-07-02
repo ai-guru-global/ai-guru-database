@@ -10,6 +10,7 @@ aliases:
   - "Transformer Revolution For Dummy"
   - "Transformer Revolution for dummy"
   - Transformer_Revolution_for_dummy
+sources: []
 
 ---
 # Transformer 革命 - 小白版

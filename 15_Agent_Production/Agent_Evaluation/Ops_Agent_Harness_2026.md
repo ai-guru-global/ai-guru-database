@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Ops Agent Harness 2026"
   - Ops_Agent_Harness_2026
+sources: []
 
 ---
 

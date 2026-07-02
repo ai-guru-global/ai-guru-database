@@ -10,6 +10,7 @@ aliases:
   - "Ai Glossary"
   - "AI Glossary"
   - AI_Glossary
+sources: []
 
 ---
 # AI 术语表与概念词典

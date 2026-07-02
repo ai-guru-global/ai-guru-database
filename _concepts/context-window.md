@@ -5,6 +5,7 @@ tags: [context-window, llm, attention, tokenization, long-context]
 summary: 上下文窗口（Context Window）指语言模型在生成下一个 token 时能够同时参考的前文 token 数量上限，是决定模型记忆范围与推理能力的关键超参数。
 created: 2026-07-02
 updated: 2026-07-02
+sources: []
 ---
 
 上下文窗口（Context Window）是 Transformer 类语言模型在单次前向传播中能够“看到”的 token 序列长度上限。它通常以 token 数量计量，例如 4K、128K 甚至 1M tokens。窗口内的文本（包括用户输入、系统提示和历史对话）会被编码为嵌入向量，经过自注意力机制计算，从而影响下一个 token 的生成。

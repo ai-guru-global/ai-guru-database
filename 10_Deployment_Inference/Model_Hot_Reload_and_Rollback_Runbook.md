@@ -6,6 +6,7 @@ summary: "面向 K8s 上 LLM 推理服务：覆盖模型热加载失败、版本
 created: 2026-06-26
 updated: 2026-06-26
 tier: core
+sources: []
 ---
 
 > [!warning] 生产安全提示 · Production Safety

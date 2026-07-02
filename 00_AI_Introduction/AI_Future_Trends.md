@@ -10,6 +10,7 @@ aliases:
   - "Ai Future Trends"
   - "AI Future Trends"
   - AI_Future_Trends
+sources: []
 
 ---
 # AI 未来趋势展望

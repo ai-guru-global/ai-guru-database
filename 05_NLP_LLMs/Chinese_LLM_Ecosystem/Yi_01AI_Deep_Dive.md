@@ -10,6 +10,7 @@ aliases:
   - "Yi 01ai Deep Dive"
   - "Yi 01AI Deep Dive"
   - Yi_01AI_Deep_Dive
+sources: []
 
 ---
 # 零一万物 (01.AI / Yi): 李开复带队的中国开源 LLM 标杆

@@ -8,9 +8,10 @@ aliases:
   - "A2a Protocol"
   - "a2a protocol"
 category: -concepts
-lifecycle: stable
+lifecycle: reviewed
 
 relationships:
+sources: []
 ---
 
 # Agent-to-Agent Protocol (A2A)

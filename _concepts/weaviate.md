@@ -21,7 +21,7 @@ provenance:
   inferred: 0.2
   ambiguous: 0.05
 base_confidence: 0.85
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 created: 2026-06-16
 updated: 2026-06-16
@@ -98,3 +98,4 @@ aliases:
 - [[_concepts/embedding]] — Embedding
 - [[_concepts/milvus]] — Milvus
 - [[_concepts/qdrant]] — Qdrant
+- [[_concepts/rag-production-architecture|RAG 生产架构]] — 向量库在生产 RAG 管线中的定位

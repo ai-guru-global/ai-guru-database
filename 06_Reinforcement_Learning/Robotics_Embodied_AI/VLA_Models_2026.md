@@ -10,6 +10,7 @@ aliases:
   - "Vla Models 2026"
   - "VLA Models 2026"
   - VLA_Models_2026
+sources: []
 
 ---
 # VLA 模型 2026：视觉-语言-动作模型的技术突破与产业应用

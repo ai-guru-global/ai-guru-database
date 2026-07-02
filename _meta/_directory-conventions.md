@@ -5,6 +5,7 @@ tags: [conventions, directory-structure, governance]
 summary: 项目所有目录的定位、用途和治理规范，覆盖主章节、辅助目录、知识图谱层和元文件。
 created: 2026-06-03
 updated: 2026-06-03
+sources: []
 ---
 
 # 目录结构与命名规范

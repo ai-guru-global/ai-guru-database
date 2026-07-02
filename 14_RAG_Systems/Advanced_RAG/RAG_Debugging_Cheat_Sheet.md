@@ -7,6 +7,7 @@ summary: "面向 RAG 系统的调试速查表：覆盖检索、重排序、生�
 created: 2026-06-26
 updated: 2026-06-26
 tier: supporting
+sources: []
 ---
 
 > [!warning] 生产安全提示 · Production Safety

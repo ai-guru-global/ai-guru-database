@@ -6,6 +6,7 @@ summary: "AI Data Analyst 面试题库，按公司类型和级别区分，含具
 created: 2026-05-31
 updated: 2026-06-04
 tier: supporting
+sources: []
 ---
 
 # AI Data Analyst 按公司/级别区分的题库

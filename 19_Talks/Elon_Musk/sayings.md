@@ -8,6 +8,7 @@ updated: 2026-05-31
 tier: supporting
 aliases:
   - Sayings
+sources: []
 
 ---
 # Elon Musk 关于 AI 的观点与格言 (Elon Musk on AI)

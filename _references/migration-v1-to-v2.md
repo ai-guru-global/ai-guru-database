@@ -10,6 +10,7 @@ tags:
 summary: "Agent Skills 从 v1 迁移到 v2 的完整变更清单与操作步骤，覆盖文件结构、元数据、工具声明、权限模型和验证要点的升级。"
 created: 2026-07-02
 updated: 2026-07-02
+sources: []
 ---
 
 # Agent Skills v1 到 v2 迁移指南

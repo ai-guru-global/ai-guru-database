@@ -11,6 +11,7 @@ aliases:
   - "Agentic Ai Complete Guide"
   - "Agentic AI Complete Guide"
   - Agentic_AI_Complete_Guide
+sources: []
 
 ---
 # 智能体 AI 权威指南 Part 1: 单体智能架构全解

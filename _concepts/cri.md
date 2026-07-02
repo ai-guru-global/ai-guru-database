@@ -12,7 +12,7 @@ relationships:
 sources:
   - _concepts/containerd.md
 summary: "CRI（Container Runtime Interface）是 Kubernetes 定义的容器运行时标准接口，containerd 和 CRI-O 是其两个主流实现；kubelet 通过 CRI 与底层容器运行时通信。"
-lifecycle: stable
+lifecycle: reviewed
 tier: supporting
 provenance:
   extracted: 0.80

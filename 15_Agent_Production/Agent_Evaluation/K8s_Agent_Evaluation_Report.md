@@ -6,6 +6,7 @@ tags: ["ai-agents", "agent-framework", "production", "langgraph", "kubernetes", 
 summary: "> 评测日期: 2026-04-13 | 测试题数: 80 | 评测版本: 2026 Q2"
 created: 2026-05-31
 updated: 2026-05-31
+sources: []
 ---
 
 # Kubernetes 领域专项评测报告

@@ -8,6 +8,7 @@ aliases:
   - "Pod Failure Diagnosis"
   - "Pod 故障诊断"
   - "CrashLoopBackOff 诊断"
+sources: []
 
 ---
 

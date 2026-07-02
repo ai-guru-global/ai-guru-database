@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Speculative Decoding Advanced 2026"
   - Speculative_Decoding_Advanced_2026
+sources: []
 
 ---
 # 投机解码前沿技术 2026

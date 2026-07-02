@@ -10,6 +10,7 @@ aliases:
   - "Llm As Judge Templates"
   - "LLM as Judge Templates"
   - LLM_as_Judge_Templates
+sources: []
 
 ---
 # LLM-as-Judge 评估提示词模板

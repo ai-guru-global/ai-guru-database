@@ -9,6 +9,7 @@ tier: core
 aliases:
   - "Data Scientist Path"
   - "Data Scientist Learning Path"
+sources: []
 ---
 
 # 数据科学家学习路径 (Data Scientist Learning Path)

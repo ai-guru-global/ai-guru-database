@@ -17,7 +17,7 @@ provenance:
   inferred: 0.70
   ambiguous: 0.10
 base_confidence: 0.85
-lifecycle: stable
+lifecycle: reviewed
 tier: supporting
 ---
 
@@ -159,3 +159,10 @@ result = pipe.run({
 3. **Haystack 2.x 是重写**：架构更现代，组件更独立，推荐新项目使用 2.x
 4. **企业级 RAG**：内置评估、监控、缓存等生产特性
 5. **deepset 生态**：配合 deepset Cloud 可实现托管部署
+
+---
+
+## Related
+
+- [[_concepts/rag-patterns|RAG 模式分类]] — RAG 架构选型
+- [[_concepts/rag-production-architecture|RAG 生产架构]] — 从原型到企业级服务的工程体系

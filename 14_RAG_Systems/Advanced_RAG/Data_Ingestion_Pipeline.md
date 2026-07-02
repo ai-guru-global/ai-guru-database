@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Data Ingestion Pipeline"
   - Data_Ingestion_Pipeline
+sources: []
 
 ---
 # 数据摄入管道 (Data Ingestion Pipeline)

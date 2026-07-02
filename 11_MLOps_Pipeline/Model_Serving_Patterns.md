@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Model Serving Patterns"
   - Model_Serving_Patterns
+sources: []
 
 ---
 # 模型服务模式 (Model Serving Patterns)

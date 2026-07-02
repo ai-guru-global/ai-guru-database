@@ -20,10 +20,11 @@ relationships:
   - target: "_concepts/autoregressive-generation"
     type: used_in
 summary: 束搜索在解码的每一步保留概率最高的 k 个候选序列，逐步扩展并选择最优整体序列。它比贪心解码更能找到全局较优解，但计算成本更高。
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 created: 2026-06-25
 updated: 2026-06-25
+sources: []
 ---
 
 # 束搜索（Beam Search）

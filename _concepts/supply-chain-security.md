@@ -9,10 +9,11 @@ tier: supporting
 aliases:
   - "软件供应链安全"
 relationships:
-  - target: "_concepts/security"
+  - target: "_concepts/runtime-security"
     type: part_of
   - target: "_concepts/container-security"
     type: related_to
+sources: []
 ---
 
 # Supply Chain Security

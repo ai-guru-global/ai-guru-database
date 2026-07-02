@@ -6,6 +6,7 @@ tags: ["paper", "alexnet", "cnn", "deep-learning", "imagenet", "gpu"]
 summary: "AlexNet 是 2012 年 ImageNet 竞赛冠军，用 ReLU + Dropout + GPU 并行训练的深度卷积网络将 top-5 错误率从 26.2% 降至 15.3%，引爆了深度学习革命。本文深度解读其架构设计、训练技巧和历史意义。"
 created: 2026-06-04
 updated: 2026-06-04
+sources: []
 ---
 
 # 论文深度解读: AlexNet — ImageNet Classification with Deep Convolutional Neural Networks

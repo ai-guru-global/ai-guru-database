@@ -10,6 +10,7 @@ aliases:
   - "Blue Green Canary Deployment"
   - "Progressive Delivery"
   - Blue_Green_Canary_Deployment
+sources: []
 
 ---
 # 蓝绿部署与金丝雀发布完全指南 (Blue-Green & Canary Deployment)

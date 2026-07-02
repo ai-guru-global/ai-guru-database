@@ -21,10 +21,11 @@ relationships:
   - target: "_concepts/model-evaluation"
     type: belongs_to
 summary: 困惑度（PPL）衡量语言模型对测试数据的预测能力，越低表示模型对文本的建模越好。它等价于模型交叉熵损失的几何平均的指数。
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 created: 2026-06-25
 updated: 2026-06-25
+sources: []
 ---
 
 # 困惑度（Perplexity, PPL）

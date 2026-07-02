@@ -17,6 +17,7 @@ relationships:
     type: used_by
   - target: "_concepts/statefulset"
     type: used_by
+sources: []
 ---
 
 # PersistentVolumeClaim（PVC）

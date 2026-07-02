@@ -3,6 +3,7 @@ title: "Docker & Containerization for AI"
 tags: [infrastructure, docker, containers, kubernetes, gpu, production]
 status: complete
 last_updated: 2026-07-02
+sources: []
 ---
 
 # Docker & Containerization for AI

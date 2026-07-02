@@ -20,7 +20,7 @@ provenance:
   inferred: 0.2
   ambiguous: 0.05
 base_confidence: 0.82
-lifecycle: stable
+lifecycle: reviewed
 lifecycle_changed: 2026-06-16
 tier: core
 created: 2026-06-16
@@ -84,3 +84,4 @@ LLM 生产流水线就像一条造车的总装线：从原材料到整车下线�
 - [[_concepts/model-deployment]] — 模型部署
 - [[_concepts/ab-testing-framework]] — A/B 测试框架
 - [[11_MLOps_Pipeline/LLM_Production_Pipeline_2026]] — LLM 生产流水线 2026
+- [[_concepts/llm-production-deployment|LLM 生产部署]] — 推理服务化与上线治理

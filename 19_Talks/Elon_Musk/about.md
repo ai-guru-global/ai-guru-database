@@ -8,6 +8,7 @@ updated: 2026-05-31
 tier: supporting
 aliases:
   - About
+sources: []
 
 ---
 # Elon Musk 简介 (Elon Musk)

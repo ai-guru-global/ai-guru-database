@@ -6,6 +6,7 @@ summary: "自监督学习从未标注数据中构造监督信号，是现代 AI 
 created: 2026-06-04
 updated: 2026-06-04
 tier: supporting
+sources: []
 
 ---
 # 自监督学习 (Self-Supervised Learning)

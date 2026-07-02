@@ -16,7 +16,7 @@ relationships:
 sources:
   - 07_Model_Training/Alignment/
 summary: "ORPO 将 SFT 与偏好对齐统一为单阶段训练，无需参考模型即可获得比 DPO 更好的对齐效果，是 2024 年轻量级对齐的代表性方法。"
-lifecycle: stable
+lifecycle: reviewed
 tier: supporting
 provenance:
   extracted: 0.80

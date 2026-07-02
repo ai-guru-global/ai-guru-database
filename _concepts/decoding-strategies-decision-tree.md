@@ -24,10 +24,11 @@ relationships:
   - target: "_concepts/beam-search"
     type: related_to
 summary: 本页通过决策树和场景矩阵，帮助根据任务类型、质量要求和延迟约束快速选择合适的 LLM 解码策略与超参数。
-lifecycle: stable
+lifecycle: reviewed
 tier: supporting
 created: 2026-06-25
 updated: 2026-06-25
+sources: []
 ---
 
 # 解码策略选择决策树

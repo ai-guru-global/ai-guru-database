@@ -10,6 +10,7 @@ aliases:
   - "Distributed Training For Dummy"
   - "Distributed Training for dummy"
   - Distributed_Training_for_dummy
+sources: []
 
 ---
 # 分布式训练 - 小白版

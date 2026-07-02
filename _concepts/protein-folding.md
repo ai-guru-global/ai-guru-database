@@ -9,7 +9,7 @@ tier: core
 aliases:
   - "Protein Folding"
   - "protein folding"
-lifecycle: stable
+lifecycle: reviewed
 provenance:
   extracted: 0.70
   inferred: 0.25

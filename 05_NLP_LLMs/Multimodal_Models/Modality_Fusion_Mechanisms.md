@@ -9,6 +9,7 @@ tier: peripheral
 aliases:
   - "Modality Fusion Mechanisms"
   - Modality_Fusion_Mechanisms
+sources: []
 
 ---
 # 模态融合机制深度解析

@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Quantization Techniques 2026"
   - Quantization_Techniques_2026
+sources: []
 
 ---
 
@@ -17,7 +18,7 @@ aliases:
 <!-- op-safety-banner v1 -->
 # LLM 量化技术深度解析 2026
 
-> **一句话理解**: 量化是把 LLM 的"高精度浮点体重"压缩成"低精度整数身材"——就像把 4K 视频压成 1080p，肉眼几乎看不出差别，但文件小了 4 倍，播放速度快了 3 倍。
+> **一句话理解**: [[_concepts/quantization|量化]]是把 LLM 的"高精度浮点体重"压缩成"低精度整数身材"——就像把 4K 视频压成 1080p，肉眼几乎看不出差别，但文件小了 4 倍，播放速度快了 3 倍。
 
 ---
 

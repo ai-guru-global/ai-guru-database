@@ -7,9 +7,10 @@ tier: core
 aliases:
   - Guardrails
 category: -concepts
-lifecycle: stable
+lifecycle: reviewed
 
 relationships:
+sources: []
 ---
 
 # AI Guardrails (AI 护栏)

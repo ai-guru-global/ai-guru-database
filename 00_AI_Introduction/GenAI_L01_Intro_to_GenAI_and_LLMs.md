@@ -13,6 +13,7 @@ aliases:
   - "Genai L01 Intro To Genai And Llms"
   - "GenAI L01 Intro to GenAI and LLMs"
   - GenAI_L01_Intro_to_GenAI_and_LLMs
+sources: []
 
 ---
 ## 学习目标

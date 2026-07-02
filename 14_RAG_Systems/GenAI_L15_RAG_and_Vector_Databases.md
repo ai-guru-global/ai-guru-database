@@ -13,6 +13,7 @@ aliases:
   - "Genai L15 Rag And Vector Databases"
   - "GenAI L15 RAG and Vector Databases"
   - GenAI_L15_RAG_and_Vector_Databases
+sources: []
 
 ---
 ## 学习目标

@@ -7,6 +7,7 @@ summary: "面向阿里云专有云的 AI Stack MLOps 私有化参考架构，覆
 created: 2026-06-26
 updated: 2026-06-26
 tier: supporting
+sources: []
 ---
 
 > [!warning] 生产安全提示 · Production Safety

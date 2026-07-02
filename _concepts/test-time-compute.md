@@ -22,10 +22,11 @@ relationships:
   - target: "_concepts/decoding-strategies"
     type: alternative_to
 summary: Test-Time Compute 指在推理阶段投入更多计算资源（如更多采样、更长思考、自我修正）来提升模型输出质量，是突破预训练 Scaling Law 的重要方向。
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 created: 2026-06-25
 updated: 2026-06-25
+sources: []
 ---
 
 # Test-Time Compute（测试时计算）

@@ -10,6 +10,7 @@ aliases:
   - "Kserve Deep Dive"
   - "KServe Deep Dive"
   - KServe_Deep_Dive
+sources: []
 
 ---
 # KServe: Kubernetes 原生标准化推理平台

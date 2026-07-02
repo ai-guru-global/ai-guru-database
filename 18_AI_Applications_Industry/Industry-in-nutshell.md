@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Industry In Nutshell"
   - "Industry in nutshell"
+sources: []
 
 ---
 # AI 行业应用速成指南

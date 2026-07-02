@@ -10,6 +10,7 @@ aliases:
   - "K8sgpt Deep Dive"
   - "K8sGPT Deep Dive"
   - K8sGPT_Deep_Dive
+sources: []
 
 ---
 
@@ -18,7 +19,7 @@ aliases:
 <!-- op-safety-banner v1 -->
 # K8sGPT: 给 K8s 集群装一个 AI SRE
 
-> **一句话理解**: K8sGPT 是 CNCF 沙箱级的"AI SRE"——用一组分析器扫集群里的失败信号，再交给 LLM（可本地 Ollama）翻译成"哪里坏了、怎么修"的人话，支持 CLI 和常驻 Operator 两种模式。
+> **一句话理解**: K8sGPT 是 CNCF 沙箱级的"[[_concepts/ai-sre|AI SRE]]"——用一组分析器扫集群里的失败信号，再交给 LLM（可本地 Ollama）翻译成"哪里坏了、怎么修"的人话，支持 CLI 和常驻 Operator 两种模式。
 
 > 📐 **概念方法论**: K8sGPT 把 SRE 的"读告警 → 读 Event/Pod 日志 → 在脑子里推理根因 → 写处置建议"这条认知链路，拆成**确定性**（Analyzers 提取结构化失败信号）+ **概率性**（LLM 翻译成自然语言）两段。这种"用 LLM 操作 LLM 基础设施"的范式与 [[13_AI_Ops/SRE_for_AI_Systems]] 一脉相承；与同类项目 [[CNCF_Cloud_Native_AI/HolmesGPT_Deep_Dive]] 相比，K8sGPT 更偏"集群健康扫描器"，HolmesGPT 更偏"告警分诊员"。
 

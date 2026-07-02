@@ -6,6 +6,7 @@ summary: '> **一句话理解**: 本模板为课题研究提供标准化结构�
 created: '2026-06-25'
 updated: '2026-06-25'
 tier: supporting
+sources: []
 ---
 # 课题研究模板
 

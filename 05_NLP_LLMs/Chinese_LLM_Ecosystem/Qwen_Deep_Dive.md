@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Qwen Deep Dive"
   - Qwen_Deep_Dive
+sources: []
 
 ---
 # Qwen (通义千问) 技术深度解析

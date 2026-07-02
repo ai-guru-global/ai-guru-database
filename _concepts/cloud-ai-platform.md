@@ -21,7 +21,7 @@ relationships:
   - target: "_concepts/managed-llm-service"
     type: belongs_to
 summary: "云厂商 AI 平台 (AWS Bedrock / Azure OpenAI / Google Vertex AI / 阿里云 PAI / 腾讯 TI) 是托管式大模型服务 (MaaS) 的主流形态，提供模型市场、统一推理网关、企业级安全和合规能力。"
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 provenance:
   extracted: 0.70

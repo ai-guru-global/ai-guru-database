@@ -10,11 +10,12 @@ aliases:
   - "Test Time Compute Scaling 2026"
   - "Test-Time Compute Scaling"
   - "推理时计算扩展"
+sources: []
 ---
 
 # Test-Time Compute Scaling 2026: 推理时计算扩展的生产实践
 
-> **一句话定位**: Test-Time Compute Scaling（TTC Scaling）不是简单的"让模型多想想"，而是一套在推理阶段动态投入更多计算资源以提升输出质量的系统工程方法。它正在重塑大模型落地的成本结构、延迟基线和服务架构。
+> **一句话定位**: [[_concepts/test-time-compute-scaling|Test-Time Compute Scaling]]（TTC Scaling）不是简单的"让模型多想想"，而是一套在推理阶段动态投入更多计算资源以提升输出质量的系统工程方法。它正在重塑大模型落地的成本结构、延迟基线和服务架构。
 
 ---
 

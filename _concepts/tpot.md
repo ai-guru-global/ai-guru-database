@@ -25,10 +25,11 @@ relationships:
   - target: "_concepts/speculative-decoding"
     type: optimized_by
 summary: TPOT 是模型生成阶段每输出一个 token 的平均时间，主要受内存带宽和 KV Cache 影响，是衡量 LLM 推理服务流畅度的核心指标。
-lifecycle: stable
+lifecycle: reviewed
 tier: supporting
 created: 2026-06-25
 updated: 2026-06-25
+sources: []
 ---
 
 # TPOT（Time Per Output Token）

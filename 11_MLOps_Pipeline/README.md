@@ -6,6 +6,7 @@ summary: '> **一句话理解**: MLOps 是 DevOps 的"AI 版"——如果说开�
 created: '2026-05-31'
 updated: '2026-06-15'
 tier: supporting
+sources: []
 
 ---
 # MLOps 流水线 (MLOps Pipeline)

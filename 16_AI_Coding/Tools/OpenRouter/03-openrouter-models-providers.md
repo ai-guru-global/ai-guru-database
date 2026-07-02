@@ -13,6 +13,7 @@ aliases:
 
 updated: 2026-06-30
 summary: "模型与 Provider 生态 — 专题文档"
+sources: []
 ---
 title: 模型与 Provider 生态
 description: '**文档类型**: 功能详解 | **最后更新**: 2026-03 | **关键词**: OpenRouter, Models, Providers,

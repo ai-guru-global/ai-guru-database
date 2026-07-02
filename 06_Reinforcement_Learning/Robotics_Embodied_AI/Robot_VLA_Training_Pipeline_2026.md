@@ -10,6 +10,7 @@ aliases:
   - "Robot Vla Training Pipeline 2026"
   - "Robot VLA Training Pipeline 2026"
   - Robot_VLA_Training_Pipeline_2026
+sources: []
 
 ---
 # Robot VLA Training Pipeline 2026: End-to-End Robotic Foundation Models

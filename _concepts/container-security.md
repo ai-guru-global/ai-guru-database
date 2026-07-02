@@ -9,10 +9,11 @@ tier: supporting
 aliases:
   - "容器安全"
 relationships:
-  - target: "_concepts/security"
+  - target: "_concepts/runtime-security"
     type: part_of
   - target: "_concepts/supply-chain-security"
     type: related_to
+sources: []
 ---
 
 # Container Security

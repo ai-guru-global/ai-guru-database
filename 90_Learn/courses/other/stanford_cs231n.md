@@ -10,6 +10,7 @@ aliases:
   - "Stanford Cs231n"
   - "stanford cs231n"
   - stanford_cs231n
+sources: []
 
 ---
 # Stanford CS231n: 计算机视觉与深度学习

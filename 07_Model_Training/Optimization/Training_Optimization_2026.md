@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Training Optimization 2026"
   - Training_Optimization_2026
+sources: []
 
 ---
 # 训练优化技术 2026: 从显存到吞吐的全栈加速
@@ -298,7 +299,7 @@ flowchart LR
 | **气泡 (Bubble)** | 大 | 小 |
 | **权重版本** | 统一 | 多版本 (Weight Stashing) |
 | **收敛稳定性** | **高** | 中 |
-| **代表框架** | DeepSpeed Pipe | Megatron-LM Pipe |
+| **代表框架** | [[_concepts/deepspeed|DeepSpeed]] Pipe | Megatron-LM Pipe |
 
 ### 5.3 1F1B (One Forward One Backward) 气泡优化
 

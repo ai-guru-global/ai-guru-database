@@ -4,6 +4,7 @@ category: meta
 tags: [meta, status, audit, health]
 summary: Wiki 全库健康度审计报告，包含页面统计、链接健康、Token 用量和待办建议。
 updated: 2026-06-05
+sources: []
 ---
 
 # Wiki Status

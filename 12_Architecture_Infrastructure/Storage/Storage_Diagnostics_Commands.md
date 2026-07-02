@@ -7,6 +7,7 @@ summary: "面向 AI 训练与推理的存储诊断命令集：覆盖本地磁盘
 created: 2026-06-26
 updated: 2026-06-26
 tier: supporting
+sources: []
 ---
 
 > [!warning] 生产安全提示 · Production Safety

@@ -10,6 +10,7 @@ aliases:
   - "Slo Error Budget Ai Deep Dive"
   - "SLO Error Budget AI Deep Dive"
   - SLO_Error_Budget_AI_Deep_Dive
+sources: []
 
 ---
 # AI 系统 SLO 与错误预算深度指南 - 传统 SRE 如何适配 LLM

@@ -7,6 +7,7 @@ tier: peripheral
 aliases:
   - "Prompt Engineering Advanced Apps"
   - Prompt_Engineering_Advanced_Apps
+sources: []
 
 ---
 # 提示词工程高级应用：RAG、多模态、安全与自动化运维

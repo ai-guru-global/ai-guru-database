@@ -6,6 +6,7 @@ summary: "> 云产品智能体专项测评文档目录"
 created: 2026-05-31
 updated: 2026-05-31
 tier: core
+sources: []
 
 ---
 # Cloud Agent Evaluation
@@ -38,6 +39,7 @@ tier: core
 - [[15_Agent_Production/Agent_Evaluation/Cloud_Agent_Evaluation/DevOps_Agent_Benchmark|云运维/DevOps Agent 专项测评]]
 - [[15_Agent_Production/Agent_Evaluation/Cloud_Agent_Evaluation/Domestic_Cloud_Agents|国内云厂商 Agent 测评详情]]
 - [[15_Agent_Production/Agent_Evaluation/Cloud_Agent_Evaluation/Continuous_Monitoring_Guide|持续监控与优化指南]]
+- [[_projects/Cloud_Ops_Agent/docs/agentscope_corpus_loading|AgentScope 语料加载]] — 语料库挂载与知识库接入
 
 - [[15_Agent_Production/Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
 - [[15_Agent_Production/Agent_Evaluation/Cloud_Agent_Evaluation_System_2026]] — Cloud Agent Evaluation System 2026 (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)

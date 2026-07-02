@@ -10,6 +10,7 @@ aliases:
   - "Ai System Dashboard"
   - "AI System Dashboard"
   - AI_System_Dashboard
+sources: []
 
 ---
 # AI 系统监控仪表盘

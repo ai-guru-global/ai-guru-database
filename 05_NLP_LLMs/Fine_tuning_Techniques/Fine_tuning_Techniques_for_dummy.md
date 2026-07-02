@@ -10,6 +10,7 @@ aliases:
   - "Fine Tuning Techniques For Dummy"
   - "Fine tuning Techniques for dummy"
   - Fine_tuning_Techniques_for_dummy
+sources: []
 
 ---
 # 微调技术 - 小白版

@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Llm Basics In Nutshell"
   - "LLM Basics in nutshell"
+sources: []
 
 ---
 # 大语言模型基础速成指南

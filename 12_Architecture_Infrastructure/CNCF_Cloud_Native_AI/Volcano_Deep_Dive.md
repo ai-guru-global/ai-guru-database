@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Volcano Deep Dive"
   - Volcano_Deep_Dive
+sources: []
 
 ---
 # Volcano 深度解析
@@ -37,7 +38,7 @@ aliases:
 
 ### 1.1 定位
 
-Volcano 是华为开源、捐赠给 CNCF 的 Kubernetes **批处理调度器**，定位在原生 kube-scheduler 之上、解决"高性能计算 / 大数据 / AI 训练 / EDA / 渲染"等场景的调度痛点。它不是又一个"通用调度器替代品"，而是把 Slurm、Yarn、Mesos 多年沉淀的 **gang / queue / fair-share / preemption** 语义移植到 K8s 生态。
+Volcano 是华为开源、捐赠给 CNCF 的 [[_concepts/kubernetes|Kubernetes]] **批处理调度器**，定位在原生 kube-scheduler 之上、解决"高性能计算 / 大数据 / AI 训练 / EDA / 渲染"等场景的调度痛点。它不是又一个"通用调度器替代品"，而是把 Slurm、Yarn、Mesos 多年沉淀的 **gang / queue / fair-share / preemption** 语义移植到 K8s 生态。
 
 ```
 ┌────────────────────────────────────────────────────────────────┐

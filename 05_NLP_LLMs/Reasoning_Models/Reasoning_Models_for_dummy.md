@@ -10,6 +10,7 @@ aliases:
   - "Reasoning Models For Dummy"
   - "Reasoning Models for dummy"
   - Reasoning_Models_for_dummy
+sources: []
 
 ---
 # 推理模型小白指南 (Reasoning Models for Dummy)

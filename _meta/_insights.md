@@ -3,6 +3,7 @@ title: Wiki Insights
 description: Structural analysis of the Obsidian wiki knowledge graph
 date: 2026-06-05
 updated: 2026-06-05
+sources: []
 ---
 
 # Wiki Insights — 2026-06-05

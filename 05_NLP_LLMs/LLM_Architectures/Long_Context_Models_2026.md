@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Long Context Models 2026"
   - Long_Context_Models_2026
+sources: []
 
 ---
 # 长上下文模型 2026: 万级 Token 处理

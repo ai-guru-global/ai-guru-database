@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Typesense Deep Dive"
   - Typesense_Deep_Dive
+sources: []
 
 ---
 # Typesense: 快速矢量搜索

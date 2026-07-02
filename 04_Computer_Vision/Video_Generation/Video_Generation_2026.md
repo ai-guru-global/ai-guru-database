@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Video Generation 2026"
   - Video_Generation_2026
+sources: []
 
 ---
 # AI 视频生成 2026 年全景报告

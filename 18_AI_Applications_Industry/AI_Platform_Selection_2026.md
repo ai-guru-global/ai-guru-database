@@ -9,6 +9,7 @@ tier: advanced
 aliases:
   - "AI Platform Selection 2026"
   - AI_Platform_Selection_2026
+sources: []
 ---
 
 # AI 平台选型 2026

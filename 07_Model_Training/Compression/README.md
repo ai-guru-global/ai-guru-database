@@ -3,6 +3,7 @@ title: "Compression Techniques for Model Training"
 tags: [model-training, compression, quantization, pruning, distillation]
 status: complete
 last_updated: 2026-07-02
+sources: []
 ---
 
 # Compression Techniques for Model Training

@@ -10,6 +10,7 @@ aliases:
   - "Sequence Models For Dummy"
   - "Sequence Models for dummy"
   - Sequence_Models_for_dummy
+sources: []
 
 ---
 # 序列模型 - 小白版
@@ -275,7 +276,7 @@ GRU 是 LSTM 的"减肥版"——少了一些零件,但大部分时候效果差�
 
 **🎉 恭喜你!** 你现在知道了 AI 如何"边读边记"来理解语言。下一步,去看看 Transformer 如何革命性地改进这个过程吧!
 
-*本文是 [Sequence_Models.md](./Sequence_Models.md) 的简化版,适合零基础读者。*
+*本文是 [[05_NLP_LLMs/Sequence_Models/Sequence_Models|Sequence_Models.md]] 的简化版,适合零基础读者。*
 
 ---
 

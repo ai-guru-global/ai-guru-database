@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Kimi Guide"
   - Kimi_Guide
+sources: []
 
 ---
 

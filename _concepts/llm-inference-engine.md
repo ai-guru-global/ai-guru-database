@@ -14,7 +14,7 @@ relationships:
 sources:
   - 10_Deployment_Inference/Inference_Engines/
 summary: "LLM Inference Engine（推理引擎）是优化 LLM 推理性能与吞吐的服务系统，通过 PagedAttention、连续批处理、推测解码等技术将吞吐量提升数倍到数十倍，是 LLM 生产部署的核心组件。"
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 provenance:
   extracted: 0.85

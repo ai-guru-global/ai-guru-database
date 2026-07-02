@@ -13,6 +13,7 @@ aliases:
 
 updated: 2026-06-30
 summary: "LSP 代码智能与 Formatter — 专题文档"
+sources: []
 ---
 title: LSP 代码智能与 Formatter
 description: '**文档类型**: 技术深度专题 | **最后更新**: 2026-03 | **关键词**: OpenCode, LSP, Language

@@ -4,6 +4,7 @@ title: Claude 成本优化与性能调优
 category: ai-coding
 tags: [claude, cost-optimization, token, prompt-caching, context-management, routing]
 source: yeasy/claude_guide/10_optimization
+sources: []
 ---
 
 # Claude 成本优化与性能调优

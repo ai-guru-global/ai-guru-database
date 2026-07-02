@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Harness Testing Guide"
   - Harness_Testing_Guide
+sources: []
 
 ---
 # Agent Harness 测试指南

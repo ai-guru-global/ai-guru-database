@@ -3,6 +3,7 @@ title: "Object Detection Complete Guide"
 tags: [computer-vision, object-detection, deep-learning, yolo, production]
 status: complete
 last_updated: 2026-07-02
+sources: []
 ---
 
 # Object Detection Complete Guide

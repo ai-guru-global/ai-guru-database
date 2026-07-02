@@ -6,6 +6,7 @@ summary: "AI Infrastructure Engineer 面试题库，覆盖 GPU/集群、分布�
 created: 2026-05-31
 updated: 2026-06-04
 tier: supporting
+sources: []
 ---
 
 # AI Infrastructure Engineer 题库

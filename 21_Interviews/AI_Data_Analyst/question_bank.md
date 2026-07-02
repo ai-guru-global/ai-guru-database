@@ -6,6 +6,7 @@ summary: "AI Data Analyst 面试题库，覆盖统计基础、实验设计、业
 created: 2026-05-31
 updated: 2026-06-04
 tier: supporting
+sources: []
 ---
 
 # AI Data Analyst 题库

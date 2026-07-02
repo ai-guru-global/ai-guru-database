@@ -10,6 +10,7 @@ aliases:
   - "Aws Bedrock Deep Dive"
   - "AWS Bedrock Deep Dive"
   - AWS_Bedrock_Deep_Dive
+sources: []
 
 ---
 # AWS Bedrock 深度解析：亚马逊云托管基础模型服务

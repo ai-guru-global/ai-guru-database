@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Fundamentals In Nutshell"
   - "Fundamentals in nutshell"
+sources: []
 
 ---
 # AI 基础速成指南

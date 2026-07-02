@@ -9,6 +9,7 @@ tier: core
 aliases:
   - "Deployment Inference"
   - Deployment_Inference
+sources: []
 
 ---
 # 模型部署与推理加速 (Deployment & Inference)

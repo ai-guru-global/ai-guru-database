@@ -7,6 +7,7 @@ summary: "一份可落地的 AI 训练任务诊断工作流：从告警触发到
 created: 2026-06-26
 updated: 2026-06-26
 tier: supporting
+sources: []
 ---
 
 # 训练任务诊断工作流

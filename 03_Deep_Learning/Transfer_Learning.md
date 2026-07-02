@@ -6,6 +6,7 @@ summary: "迁移学习是现代 AI 的核心范式。本页面已迁移至子目
 created: 2026-07-02
 updated: 2026-07-02
 tier: core
+sources: []
 ---
 
 # 迁移学习完全指南 (Transfer Learning Complete Guide)

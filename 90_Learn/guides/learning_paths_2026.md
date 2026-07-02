@@ -10,6 +10,7 @@ aliases:
   - "Learning Paths 2026"
   - "learning paths 2026"
   - learning_paths_2026
+sources: []
 
 ---
 # AI Guru 学习路径指南 (Learning Paths Guide 2026)
@@ -642,6 +643,8 @@ flowchart TB
 - [[90_Learn/pathways/product-manager.md|AI 产品经理路径 (原版)]]
 - [[90_Learn/pathways/java-developer.md|Java 开发者 AI 路径 (原版)]]
 - [[90_Learn/pathways/absolute-beginner.md|零基础通识路径 (原版)]]
+- [[90_Learn/pathways/data-scientist.md|数据科学家路径 (原版)]]
+- [[90_Learn/guides/skills_self_assessment|AI 技能自评清单]] — 配合路径使用的技能自评工具
 
 ---
 

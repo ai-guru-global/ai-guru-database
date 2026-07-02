@@ -10,6 +10,7 @@ aliases:
   - "Multimodal Rag Architecture 2026"
   - "Multimodal RAG Architecture 2026"
   - Multimodal_RAG_Architecture_2026
+sources: []
 
 ---
 # Multimodal RAG Architecture 2026: Image, Video, and Complex Layouts

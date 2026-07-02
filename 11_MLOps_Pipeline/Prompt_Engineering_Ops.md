@@ -10,6 +10,7 @@ parent: "[[11_MLOps_Pipeline/LLMOps_2026]]"
 aliases:
   - "Prompt Engineering Ops"
   - Prompt_Engineering_Ops
+sources: []
 
 ---
 # Prompt 工程化运维

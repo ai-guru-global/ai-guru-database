@@ -10,6 +10,7 @@ aliases:
   - "Bert Deep Dive"
   - "BERT Deep Dive"
   - BERT_Deep_Dive
+sources: []
 
 ---
 # BERT 深度解读 (Bidirectional Encoder Representations from Transformers)

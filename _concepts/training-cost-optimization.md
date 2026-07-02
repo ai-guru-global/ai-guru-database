@@ -19,6 +19,7 @@ tier: concept
 aliases:
   - "Training Cost Optimization"
   - "训练成本优化"
+sources: []
 ---
 
 # 训练成本优化（Training Cost Optimization）

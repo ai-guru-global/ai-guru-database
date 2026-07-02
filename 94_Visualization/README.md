@@ -6,6 +6,7 @@ summary: "> **一句话理解**: 本章节提供 AI Guru 知识库的交互式�
 created: 2026-05-31
 updated: 2026-05-31
 tier: supporting
+sources: []
 
 ---
 # 知识图谱可视化 (Visualization)

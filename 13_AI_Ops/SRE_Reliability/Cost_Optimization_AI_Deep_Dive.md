@@ -10,6 +10,7 @@ aliases:
   - "Cost Optimization Ai Deep Dive"
   - "Cost Optimization AI Deep Dive"
   - Cost_Optimization_AI_Deep_Dive
+sources: []
 
 ---
 # LLM 推理成本优化深度指南 - 从 Token 到 GPU 的全方位降本

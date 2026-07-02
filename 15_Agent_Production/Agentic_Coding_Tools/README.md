@@ -6,6 +6,7 @@ summary: "> 从代码补全到完全自主执行，AI Agent 编程工具正在�
 created: 2026-05-31
 updated: 2026-05-31
 tier: supporting
+sources: []
 
 ---
 # Agentic Coding 工具

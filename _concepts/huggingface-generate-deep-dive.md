@@ -24,10 +24,11 @@ relationships:
   - target: "_concepts/vllm-practical"
     type: alternative_to
 summary: 本文深度解析 Hugging Face transformers 库中 model.generate() 的核心参数、解码策略组合、高级特性（约束解码、cache 配置、多 GPU）及常见坑点。
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 created: 2026-06-25
 updated: 2026-06-25
+sources: []
 ---
 
 # Hugging Face `generate()` 深度使用

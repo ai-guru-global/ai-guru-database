@@ -6,6 +6,7 @@ summary: "本章节提供人工智能在各行业的应用现状、案例分析�
 created: 2026-05-31
 updated: 2026-05-31
 tier: supporting
+sources: []
 
 ---
 # 13 - AI 应用与行业融合

@@ -5,6 +5,7 @@ tags: [nlp, apachecn, nlp-learning, learning-path]
 summary: ApacheCN 中文 NLP 学习路线索引，覆盖文本预处理、经典模型、Transformer、预训练与下游任务。
 created: 2026-07-02
 updated: 2026-07-02
+sources: []
 ---
 
 # ApacheCN 自然语言处理学习路径

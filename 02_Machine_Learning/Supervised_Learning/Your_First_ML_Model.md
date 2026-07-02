@@ -10,6 +10,7 @@ aliases:
   - "Your First Ml Model"
   - "Your First ML Model"
   - Your_First_ML_Model
+sources: []
 
 ---
 # 你的第一个 ML 模型: 从数据到预测（30 分钟实战）

@@ -7,6 +7,7 @@ summary: "横向对比昇腾、寒武纪、海光、摩尔线程等国产 AI 芯
 created: 2026-06-26
 updated: 2026-06-26
 tier: supporting
+sources: []
 ---
 
 > [!warning] 生产安全提示 · Production Safety

@@ -10,6 +10,7 @@ aliases:
   - "Ai Finance 2026"
   - "AI Finance 2026"
   - AI_Finance_2026
+sources: []
 
 ---
 # AI 金融服务行业应用 (2025-2026)

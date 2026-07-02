@@ -10,6 +10,7 @@ aliases:
   - "Codebuddy Guide"
   - "CodeBuddy Guide"
   - CodeBuddy_Guide
+sources: []
 
 ---
 # CodeBuddy / WorkBuddy 使用指南

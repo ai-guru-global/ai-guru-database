@@ -17,6 +17,7 @@ relationships:
     type: related_to
   - target: "_concepts/opa"
     type: related_to
+sources: []
 ---
 
 # Pod Security Standards

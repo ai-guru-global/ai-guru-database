@@ -18,7 +18,7 @@ provenance:
   inferred: 0.3
   ambiguous: 0.05
 base_confidence: 0.76
-lifecycle: stable
+lifecycle: reviewed
 lifecycle_changed: 2026-06-23
 tier: core
 created: 2026-06-23
@@ -100,3 +100,4 @@ aliases:
 - [[_concepts/agent-loop|Agent Loop]] — 单 Agent 的执行循环
 - [[15_Agent_Production/README|Agent 生产部署]] — 编排实践
 - [[_concepts/autogen|AutoGen]] — 编排框架
+- [[_concepts/agent-production-deployment|Agent 生产部署]] — 编排后的生产交付

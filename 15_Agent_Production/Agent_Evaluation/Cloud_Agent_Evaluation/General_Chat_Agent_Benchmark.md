@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "General Chat Agent Benchmark"
   - General_Chat_Agent_Benchmark
+sources: []
 
 ---
 # 通用对话/知识 Agent 测评详情

@@ -6,6 +6,7 @@ summary: '> **产品定位**: 利用 Google Edge Gallery 生态系统，在移�
 created: '2026-05-31'
 updated: '2026-05-31'
 tier: supporting
+sources: []
 ---
 
 # Mobile AI Ops: 基于 Google Edge Gallery 的手拍即运维产品设计

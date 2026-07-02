@@ -22,7 +22,7 @@ provenance:
   inferred: 0.2
   ambiguous: 0.05
 base_confidence: 0.88
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 created: 2026-06-16
 updated: 2026-06-16
@@ -38,7 +38,7 @@ aliases:
 
 ## 1. 一句话定义
 
-**Ray** 是面向 Python 的通用分布式计算框架，通过 `@ray.remote` 装饰器将函数（Task）和类（Actor）透明地分发到集群执行。**KubeRay** 是 CNCF Sandbox 项目，提供 Kubernetes Operator 用于部署、扩缩和管理 Ray 集群。
+**Ray** 是面向 Python 的通用分布式计算框架，通过 `@ray.remote` 装饰器将函数（Task）和类（Actor）透明地分发到集群执行。**KubeRay** 是 CNCF Sandbox 项目，提供 [[_concepts/kubernetes|Kubernetes]] Operator 用于部署、扩缩和管理 Ray 集群。
 
 ---
 

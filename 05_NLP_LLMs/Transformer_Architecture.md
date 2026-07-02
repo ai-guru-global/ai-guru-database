@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Transformer Architecture"
   - Transformer_Architecture
+sources: []
 
 ---
 # Transformer 架构详解

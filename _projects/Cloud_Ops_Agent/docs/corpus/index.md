@@ -6,6 +6,7 @@ summary: "> 🎯 **目标**: 为语料工程师提供运维 Agent 的训练语�
 created: 2026-05-31
 updated: 2026-05-31
 tier: core
+sources: []
 ---
 
 # 云产品运维 Agent 语料工程指南 (Corpus Engineering)

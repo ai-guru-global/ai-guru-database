@@ -16,6 +16,7 @@ relationships:
     type: related_to
   - target: "_concepts/vault"
     type: related_to
+sources: []
 ---
 
 # External Secrets Operator

@@ -23,10 +23,11 @@ relationships:
   - target: "_concepts/inference-cluster-scheduling"
     type: uses
 summary: LLM 推理成本主要由 GPU 租赁、电力、网络和运维组成。通过量化、缓存、推测解码、请求合并、Prefill-Decode 分离等手段，可以显著降低单位 token 成本。
-lifecycle: stable
+lifecycle: reviewed
 tier: supporting
 created: 2026-06-25
 updated: 2026-06-25
+sources: []
 ---
 
 # LLM 推理成本优化

@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Talks Synthesis 2026"
   - Talks_Synthesis_2026
+sources: []
 
 ---
 # AI 领袖观点合成 2026 (Talks Synthesis)

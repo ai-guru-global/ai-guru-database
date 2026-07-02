@@ -6,6 +6,7 @@ summary: "本章涵盖图像理解与生成的核心技术，从经典 CNN 架�
 created: 2026-05-31
 updated: 2026-05-31
 tier: supporting
+sources: []
 
 ---
 # 05 计算机视觉 (Computer Vision)

@@ -10,6 +10,7 @@ aliases:
   - "Spring Ai Architecture"
   - "Spring AI Architecture"
   - Spring_AI_Architecture
+sources: []
 
 ---
 # Spring AI 系统架构设计

@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Scaling Laws Deep Dive"
   - Scaling_Laws_Deep_Dive
+sources: []
 
 ---
 # Scaling Laws for Neural Language Models (Kaplan et al.) 深度解读

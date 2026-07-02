@@ -9,6 +9,7 @@ tags:
 summary: 本文定义 Agent Skill 规范中常见的字段类型、命名规则与取值约定，供 Skill 作者在设计输入/输出、配置项和元数据时参考。
 created: 2026-07-02
 updated: 2026-07-02
+sources: []
 ---
 
 # 常见 Skill 字段类型与命名约定

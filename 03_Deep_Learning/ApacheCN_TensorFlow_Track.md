@@ -5,6 +5,7 @@ tags: [tensorflow, apachecn, deep-learning, learning-path]
 summary: ApacheCN 中文 TensorFlow 2.x 学习路线索引，覆盖 Keras 高层 API、自定义训练、SavedModel 与生产部署。
 created: 2026-07-02
 updated: 2026-07-02
+sources: []
 ---
 
 # ApacheCN TensorFlow 2.x 学习路径

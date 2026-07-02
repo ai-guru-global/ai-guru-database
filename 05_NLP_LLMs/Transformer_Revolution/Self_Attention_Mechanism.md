@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Self Attention Mechanism"
   - Self_Attention_Mechanism
+sources: []
 
 ---
 # Self-Attention 机制详解

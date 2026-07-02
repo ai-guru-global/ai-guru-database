@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Future Computing Hardware 2026"
   - Future_Computing_Hardware_2026
+sources: []
 
 ---
 # Future AI Hardware 2026: Silicon Photonics, LPUs, and Bio-computing

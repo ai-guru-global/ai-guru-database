@@ -5,6 +5,7 @@ tags: [llm, nlp, transformer, foundation-model, generative-ai]
 summary: "大语言模型（LLM）是基于 Transformer 架构、通过海量文本预训练得到的超大规模神经网络，能够理解、生成和推理自然语言，是当前生成式 AI 与智能代理的核心底座。"
 created: 2026-07-02
 updated: 2026-07-02
+sources: []
 ---
 
 # Large Language Model（大语言模型）

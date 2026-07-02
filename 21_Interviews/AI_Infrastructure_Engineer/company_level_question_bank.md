@@ -6,6 +6,7 @@ summary: "AI Infrastructure Engineer 面试题库，按公司类型（大厂/创
 created: 2026-05-31
 updated: 2026-06-04
 tier: supporting
+sources: []
 ---
 
 # AI Infrastructure Engineer 按公司/级别区分的题库

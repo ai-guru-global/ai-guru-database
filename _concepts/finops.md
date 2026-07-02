@@ -14,6 +14,7 @@ relationships:
     type: related_to
   - target: "_concepts/gpu-sharing"
     type: related_to
+sources: []
 ---
 
 # FinOps

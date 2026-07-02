@@ -19,10 +19,11 @@ relationships:
   - target: "_concepts/model-evaluation"
     type: part_of
 summary: 本文深入解析 MMLU、GSM8K、HumanEval、MT-Bench、AlpacaEval 等主流 LLM 评估基准的任务形式、评分方式和实战使用建议。
-lifecycle: stable
+lifecycle: reviewed
 tier: supporting
 created: 2026-06-25
 updated: 2026-06-25
+sources: []
 ---
 
 # 主流 LLM Benchmark 详解

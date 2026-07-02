@@ -10,6 +10,7 @@ aliases:
   - "Modern AI Training Stack"
   - "modern ai training stack"
   - "AI 训练栈"
+sources: []
 ---
 
 # 现代 AI 训练栈：从预训练到推理扩展的统一视角

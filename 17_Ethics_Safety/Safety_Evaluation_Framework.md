@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Safety Evaluation Framework"
   - Safety_Evaluation_Framework
+sources: []
 
 ---
 # AI 安全评测框架 2026: 从基准测试到红队实战

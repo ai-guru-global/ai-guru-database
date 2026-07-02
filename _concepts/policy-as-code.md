@@ -17,7 +17,7 @@ sources:
   - _concepts/opa.md
   - _concepts/kyverno.md
 summary: "Policy as Code（策略即代码）把安全、合规、运维策略以代码形式声明（Rego / YAML / CEL），版本化管理、可测试、可审计，是 Kubernetes 和云原生时代治理的标准范式。"
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 provenance:
   extracted: 0.80

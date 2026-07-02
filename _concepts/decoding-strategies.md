@@ -30,10 +30,11 @@ relationships:
   - target: "_concepts/autoregressive-generation"
     type: related_to
 summary: 解码策略决定 LLM 如何从模型输出的概率分布中选择下一个 token。常见策略包括贪心解码、束搜索、温度缩放、Top-k/Top-p 采样等，各自在确定性、多样性和计算成本之间取得不同平衡。
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 created: 2026-06-25
 updated: 2026-06-25
+sources: []
 ---
 
 # LLM 推理解码策略

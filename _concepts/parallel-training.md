@@ -5,6 +5,7 @@ tags: ["distributed-training", "gpu", "llm", "model-parallelism", "deepspeed"]
 summary: "Parallel Training（并行训练）是利用数据并行、模型并行、流水线并行、张量并行等策略，将模型训练任务拆分到多张 GPU 或多个节点上同时执行的工程技术，用于突破单卡显存与算力瓶颈。"
 created: 2026-07-02
 updated: 2026-07-02
+sources: []
 ---
 
 # Parallel Training

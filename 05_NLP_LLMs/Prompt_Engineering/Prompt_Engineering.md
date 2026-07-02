@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Prompt Engineering"
   - Prompt_Engineering
+sources: []
 
 ---
 # 提示词工程 (Prompt Engineering)

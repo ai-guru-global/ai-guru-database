@@ -10,6 +10,7 @@ aliases:
   - "Ai Practical Labs"
   - "AI Practical Labs"
   - AI_Practical_Labs
+sources: []
 
 ---
 # AI 课堂实验与实践指导

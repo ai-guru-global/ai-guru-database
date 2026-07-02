@@ -10,6 +10,7 @@ aliases:
   - "Agents Course"
   - "agents course"
   - agents_course
+sources: []
 
 ---
 # HuggingFace AI Agents 课程

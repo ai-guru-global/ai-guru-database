@@ -8,6 +8,7 @@ tier: core
 aliases:
   - "Career Interviews"
   - "career interviews"
+sources: []
 
 ---
 # AI 面试与职业发展

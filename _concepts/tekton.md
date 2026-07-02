@@ -16,6 +16,7 @@ relationships:
     type: related_to
   - target: "_concepts/gitops"
     type: related_to
+sources: []
 ---
 
 # Tekton

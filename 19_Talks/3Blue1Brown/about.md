@@ -8,6 +8,7 @@ updated: 2026-06-24
 tier: supporting
 aliases:
   - About
+sources: []
 
 ---
 # Grant Sanderson (3Blue1Brown) — 数学可视化教育革命者

@@ -8,6 +8,7 @@ aliases:
   - "K8s Storage Diagnosis"
   - "PVC 挂载失败诊断"
   - "存储排障"
+sources: []
 
 ---
 

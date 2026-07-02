@@ -11,6 +11,7 @@ aliases:
   - "Modelscope Model Catalog"
   - "ModelScope Model Catalog"
   - ModelScope_Model_Catalog
+sources: []
 
 ---
 # ModelScope 模型目录全景 (ModelScope Model Catalog)

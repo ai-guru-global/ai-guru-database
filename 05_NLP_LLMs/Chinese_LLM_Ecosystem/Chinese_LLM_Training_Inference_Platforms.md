@@ -10,6 +10,7 @@ aliases:
   - "Chinese Llm Training Inference Platforms"
   - "Chinese LLM Training Inference Platforms"
   - Chinese_LLM_Training_Inference_Platforms
+sources: []
 
 ---
 # 中国大模型训练与推理平台实战参考 (Training & Inference Platforms)

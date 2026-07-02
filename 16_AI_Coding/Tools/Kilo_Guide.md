@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Kilo Guide"
   - Kilo_Guide
+sources: []
 
 ---
 # Kilo / KiloClaw 使用指南

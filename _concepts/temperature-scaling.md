@@ -22,10 +22,11 @@ relationships:
   - target: "_concepts/sampling-decoding"
     type: modifies
 summary: 温度缩放通过在 softmax 前对 logits 除以温度参数 T 来调节概率分布的尖锐程度。T 越小输出越确定，T 越大输出越随机，是控制 LLM 创造性与稳定性的核心旋钮。
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 created: 2026-06-25
 updated: 2026-06-25
+sources: []
 ---
 
 # 温度缩放（Temperature Scaling）

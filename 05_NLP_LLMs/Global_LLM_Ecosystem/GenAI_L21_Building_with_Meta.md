@@ -13,6 +13,7 @@ aliases:
   - "Genai L21 Building With Meta"
   - "GenAI L21 Building with Meta"
   - GenAI_L21_Building_with_Meta
+sources: []
 
 ---
 ## 学习目标

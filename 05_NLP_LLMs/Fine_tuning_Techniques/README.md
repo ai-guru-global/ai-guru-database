@@ -6,6 +6,7 @@ summary: "| 文档 | 内容 | 适用读者 |"
 created: 2026-05-31
 updated: 2026-06-16
 tier: supporting
+sources: []
 
 ---
 # 微调技术 (Fine-tuning Techniques)

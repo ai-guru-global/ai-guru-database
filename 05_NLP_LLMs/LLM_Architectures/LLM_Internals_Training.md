@@ -8,6 +8,7 @@ aliases:
   - "Llm Internals Training"
   - "LLM Internals Training"
   - LLM_Internals_Training
+sources: []
 
 ---
 # 大模型训练全景：从预训练到对齐

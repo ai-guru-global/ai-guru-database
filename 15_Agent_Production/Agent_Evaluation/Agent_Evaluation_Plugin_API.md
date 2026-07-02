@@ -6,6 +6,7 @@ tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> Agent Plugin 接口定义和使用指南"
 created: 2026-05-31
 updated: 2026-05-31
+sources: []
 ---
 
 # 插件 API 参考文档

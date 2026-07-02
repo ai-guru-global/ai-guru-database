@@ -10,6 +10,7 @@ aliases:
   - "Ocr Text Recognition"
   - "OCR Text Recognition"
   - OCR_Text_Recognition
+sources: []
 
 ---
 # OCR 与文字识别

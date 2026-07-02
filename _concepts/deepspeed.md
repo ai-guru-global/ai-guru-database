@@ -21,7 +21,7 @@ provenance:
   inferred: 0.15
   ambiguous: 0.05
 base_confidence: 0.9
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 created: 2026-06-16
 updated: 2026-06-16
@@ -116,3 +116,4 @@ Data Parallel Group
 - [[_concepts/megatron-lm]] — Megatron-LM
 - [[_concepts/hami]] — HAMi GPU 虚拟化
 - [[_concepts/ray]] — Ray 分布式框架
+- [[_concepts/training-cost-optimization|训练成本优化]] — ZeRO 在 FinOps 体系中的角色

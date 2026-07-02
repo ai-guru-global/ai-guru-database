@@ -8,6 +8,7 @@ updated: 2026-06-24
 tier: supporting
 aliases:
   - Sayings
+sources: []
 
 ---
 # 白金泽关于 AI 的观点 (Jinze Bai on AI)

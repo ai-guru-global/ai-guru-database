@@ -10,6 +10,7 @@ aliases:
   - "Anomaly Detection For Dummy"
   - "Anomaly Detection for dummy"
   - Anomaly_Detection_for_dummy
+sources: []
 
 ---
 # 异常检测 - 小白版

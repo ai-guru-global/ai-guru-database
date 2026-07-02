@@ -3,6 +3,7 @@ title: "Transfer Learning Complete Guide"
 tags: [deep-learning, transfer-learning, fine-tuning, pre-training, production]
 status: complete
 last_updated: 2026-07-02
+sources: []
 ---
 
 # Transfer Learning Complete Guide

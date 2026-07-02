@@ -3,6 +3,7 @@ title: "Agent Authentication & Authorization"
 tags: [agents, security, authentication, authorization, enterprise, production]
 status: complete
 last_updated: 2026-07-02
+sources: []
 ---
 
 # Agent Authentication & Authorization

@@ -3,6 +3,7 @@ title: "AI Incident Post-Mortem Template"
 tags: [ai-ops, incident-response, post-mortem, sre, production]
 status: complete
 last_updated: 2026-07-02
+sources: []
 ---
 
 # AI Incident Post-Mortem Template

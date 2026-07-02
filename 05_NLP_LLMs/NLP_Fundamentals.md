@@ -10,6 +10,7 @@ aliases:
   - "Nlp Fundamentals"
   - "NLP Fundamentals"
   - NLP_Fundamentals
+sources: []
 
 ---
 # NLP 基础 (NLP Fundamentals)

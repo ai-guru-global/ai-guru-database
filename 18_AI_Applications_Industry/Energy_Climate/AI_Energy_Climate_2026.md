@@ -10,6 +10,7 @@ aliases:
   - "Ai Energy Climate 2026"
   - "AI Energy Climate 2026"
   - AI_Energy_Climate_2026
+sources: []
 
 ---
 # AI 能源与气候行业应用 (2025-2026)

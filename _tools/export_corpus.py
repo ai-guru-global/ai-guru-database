@@ -20,7 +20,7 @@ Usage:
     python3 _tools/export_corpus.py --scope subset --output release --clean
     python3 _tools/export_corpus.py --scope full --dry-run
 """
-import os, re, sys, json, shutil, argparse
+import os, re, sys, json, shutil, argparse, subprocess
 from pathlib import Path
 from datetime import datetime
 from collections import deque, Counter, defaultdict
@@ -33,7 +33,7 @@ EXCLUDE_DIR_NAMES = {
     "_raw", "_sources", "_archives", "_tools",
     "Web", "node_modules", "release",
     ".git", ".obsidian", ".claude", ".venv", ".qoder", ".qwen",
-    ".comate", ".crush", ".pytest_cache", "__pycache__", ".github",
+    ".comate", ".crush", ".mimocode", ".pytest_cache", "__pycache__", ".github",
     ".githooks", "dist", "site", "test-results", ".lighthouseci",
 }
 
@@ -171,36 +171,62 @@ def build_index(pages):
         basename_index[Path(p["path"]).stem].add(p["path"])
     return all_paths, basename_index
 
-def resolve_target(target, all_paths, basename_index, source_path=""):
-    """Resolve a wikilink target to a real path, or None.
+def _norm(p):
+    """Normalize a wikilink path for matching: backslash→/, collapse //,
+    strip leading ./, strip trailing /."""
+    p = p.replace("\\", "/")
+    p = re.sub(r"/{2,}", "/", p)
+    while p.startswith("./"):
+        p = p[2:]
+    return p.rstrip("/")
 
-    Order: exact path → space/underscore variant → dir→README →
-    relative-to-source walk-up → unique basename.
+def resolve_target(target, all_paths, basename_index, source_path=""):
+    """Resolve a wikilink target to a real exported path, or None.
+
+    Resolution (path is normalized first, so 'a//b', './a/b', 'a\\b' all work):
+      1. exact path (+ space/underscore variant)
+      2. directory hub: dir/index.md then dir/README.md
+      3. relative-to-source walk-up (exact + hub)
+      4. unique basename (only when exactly one file shares that stem)
     """
     if not target or target.startswith("http"):
         return target  # external / empty: treat as resolved (leave untouched)
-    raw = target.rstrip("/").lstrip("./")
+    raw = _norm(target)
+    if not raw:
+        return None
     cand = raw if raw.endswith(".md") else raw + ".md"
 
-    if cand in all_paths:
-        return cand
-    for v in (cand.replace(" ", "_"), cand.replace("_", " ")):
-        if v in all_paths:
-            return v
-    for d in (raw, raw.replace(" ", "_"), raw.replace("_", " ")):
-        if f"{d}/README.md" in all_paths:
-            return f"{d}/README.md"
+    def try_path(p):
+        if p in all_paths:
+            return p
+        for v in (p.replace(" ", "_"), p.replace("_", " ")):
+            if v in all_paths:
+                return v
+        return None
+
+    # 1. exact path
+    r = try_path(cand)
+    if r:
+        return r
+    # 2. directory → index.md / README.md
+    for d in {raw, raw.replace(" ", "_"), raw.replace("_", " ")}:
+        for hub in ("index.md", "README.md"):
+            r = try_path(f"{d}/{hub}")
+            if r:
+                return r
+    # 3. relative-to-source walk-up
     if source_path:
         src_dir = Path(source_path).parent
         for ancestor in (src_dir, *src_dir.parents):
             pre = "" if str(ancestor) == "." else f"{ancestor}/"
-            for d in (raw, raw.replace(" ", "_"), raw.replace("_", " ")):
-                c = f"{pre}{d if d.endswith('.md') else d+'.md'}"
-                if c in all_paths:
-                    return c
-                r = f"{pre}{d}/README.md"
-                if r in all_paths:
+            r = try_path(f"{pre}{cand}")
+            if r:
+                return r
+            for hub in ("index.md", "README.md"):
+                r = try_path(f"{pre}{raw}/{hub}")
+                if r:
                     return r
+    # 4. unique basename
     stem = Path(cand).stem
     hits = basename_index.get(stem)
     if hits and len(hits) == 1:
@@ -231,6 +257,58 @@ def rewrite_wikilinks(text, all_paths, basename_index, source_path):
 
     new_text = LINK_RE.sub(repl, text)
     return new_text, rewritten
+
+
+# ── Post-export verification (hard guarantee) ───────────────────────
+
+def verify_output(output_dir, all_paths, basename_index, source_pages):
+    """Second pass over the WRITTEN files: force-rewrite any [[wikilink]]
+    that still does not resolve, then assert zero unresolved remain.
+
+    This is the hard guarantee — independent of whatever the first rewriting
+    pass did (which can miss links if the source changed mid-export or the
+    resolver had a gap). Reads ground truth from disk.
+    """
+    out = Path(output_dir)
+    # Resolvable set must include every shipped page (so self-links / links to
+    # generated index/hot/readme also count).
+    shipped = {p.relative_to(out).as_posix() for p in out.rglob("*.md")}
+    local_paths = all_paths | shipped
+    fixed = 0
+
+    def force_repl(m):
+        nonlocal fixed
+        inner = m.group(1)
+        parts = inner.split("|", 1)
+        target = parts[0].split("#")[0].strip()
+        alias = parts[1].split("#")[0].strip() if len(parts) > 1 else ""
+        if target.startswith("http") or not target:
+            return m.group(0)
+        if resolve_target(target, local_paths, basename_index, source_path="") is not None:
+            return m.group(0)
+        fixed += 1
+        if alias:
+            return alias
+        stem = os.path.splitext(os.path.basename(target))[0]
+        return stem.replace("-", " ").replace("_", " ")
+
+    # Pass 1: force-rewrite unresolved links in every written file
+    for f in out.rglob("*.md"):
+        text = f.read_text(encoding="utf-8", errors="ignore")
+        new_text = LINK_RE.sub(force_repl, text)
+        if new_text != text:
+            f.write_text(new_text, encoding="utf-8")
+
+    # Pass 2: assertion — count any remaining unresolved (must be 0)
+    remaining = []
+    for f in out.rglob("*.md"):
+        rel = f.relative_to(out).as_posix()
+        for m in LINK_RE.finditer(f.read_text(encoding="utf-8", errors="ignore")):
+            t = m.group(1).split("|")[0].split("#")[0].strip()
+            if t and not t.startswith("http"):
+                if resolve_target(t, local_paths, basename_index, source_path=rel) is None:
+                    remaining.append((rel, t))
+    return fixed, remaining
 
 
 # ── Reachability (BFS from entry) ───────────────────────────────────
@@ -498,11 +576,26 @@ def main():
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--no-rewrite", action="store_true",
                     help="Do not rewrite unresolved links (ship verbatim)")
+    ap.add_argument("--allow-dirty", action="store_true",
+                    help="Proceed even if the git working tree has uncommitted changes")
     args = ap.parse_args()
 
     root = BASE_DIR
     output_dir = (root / args.output).resolve() if not os.path.isabs(args.output) \
         else Path(args.output).resolve()
+
+    # Reproducibility guard: exporting a live-edited wiki yields an inconsistent
+    # snapshot. Warn loudly; require --allow-dirty to proceed when dirty.
+    if not args.allow_dirty and (root / ".git").exists():
+        dirty = subprocess.run(
+            ["git", "-C", str(root), "status", "--porcelain"],
+            capture_output=True, text=True).stdout.strip()
+        if dirty:
+            n = len([ln for ln in dirty.splitlines() if ln.strip()])
+            sys.exit(
+                f"[abort] working tree has {n} uncommitted change(s).\n"
+                f"  Exporting now would produce a non-reproducible snapshot.\n"
+                f"  Commit/stash first, or rerun with --allow-dirty.")
 
     # Safety guard: never allow --clean to wipe the repo root or a parent
     if args.clean and output_dir.resolve() in (root.resolve(), *root.resolve().parents):
@@ -541,6 +634,19 @@ def main():
     write_index(pages, output_dir, basename_index, reachable)
     write_hot(pages, output_dir, basename_index, reachable)
     write_readme(manifest, args.scope, output_dir)
+
+    # Hard guarantee: verify written files, force-rewrite any link that still
+    # does not resolve, then assert zero unresolved remain.
+    if not args.no_rewrite:
+        fixed, remaining = verify_output(output_dir, all_paths, basename_index, pages)
+        if fixed:
+            print(f"  verify pass force-rewrote {fixed} additional link(s)")
+        if remaining:
+            print(f"\n[FAIL] {len(remaining)} unresolved wikilink(s) survived in output:")
+            for rel, t in remaining[:20]:
+                print(f"     {t}  <- {rel}")
+            sys.exit(1)
+        print("  verify: 0 unresolved wikilinks in shipped corpus ✓")
 
     print(f"\n✅ Export complete → {output_dir}")
     print(f"   pages={len(pages)}  size={manifest['stats']['total_size_mb']} MB  "

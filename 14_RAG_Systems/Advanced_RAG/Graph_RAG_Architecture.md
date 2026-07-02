@@ -3,6 +3,7 @@ title: "Graph RAG Architecture"
 tags: [rag, graph-database, knowledge-graph, neo4j, production]
 status: complete
 last_updated: 2026-07-02
+sources: []
 ---
 
 # Graph RAG Architecture

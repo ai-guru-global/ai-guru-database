@@ -11,6 +11,7 @@ aliases:
   - "L06 Intro To Computer Vision"
   - "L06 Intro to Computer Vision"
   - L06_Intro_to_Computer_Vision
+sources: []
 
 ---
 # L06 - 计算机视觉简介与 OpenCV

@@ -7,6 +7,7 @@ tier: peripheral
 aliases:
   - "Prompt Engineering Templates Patterns"
   - Prompt_Engineering_Templates_Patterns
+sources: []
 
 ---
 # 提示词模板库、反模式与技术分类索引

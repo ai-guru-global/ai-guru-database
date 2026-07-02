@@ -10,6 +10,7 @@ aliases:
   - "Tgi Deep Dive"
   - "TGI Deep Dive"
   - TGI_Deep_Dive
+sources: []
 
 ---
 
@@ -292,7 +293,7 @@ resources:
 - 使用 FlashAttention 支持的模型。
 - 根据平均输入/输出长度调整 batch 参数。
 - GPU 利用率低时尝试增大 `--max-batch-total-tokens`。
-- 使用 AWQ/GPTQ 量化降低显存占用，提升 batch size。
+- 使用 AWQ/GPTQ [[_concepts/quantization|量化]]降低显存占用，提升 batch size。
 
 ### 9.4 可观测
 

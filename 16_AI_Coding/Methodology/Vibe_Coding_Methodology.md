@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Vibe Coding Methodology"
   - Vibe_Coding_Methodology
+sources: []
 
 ---
 # Vibe Coding 方法论 2026 完整指南

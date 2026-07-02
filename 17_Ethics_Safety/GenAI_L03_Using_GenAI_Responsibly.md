@@ -13,6 +13,7 @@ aliases:
   - "Genai L03 Using Genai Responsibly"
   - "GenAI L03 Using GenAI Responsibly"
   - GenAI_L03_Using_GenAI_Responsibly
+sources: []
 
 ---
 ## 学习目标

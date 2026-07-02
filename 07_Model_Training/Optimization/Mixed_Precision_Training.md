@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Mixed Precision Training"
   - Mixed_Precision_Training
+sources: []
 
 ---
 # 混合精度训练 (Mixed Precision Training)

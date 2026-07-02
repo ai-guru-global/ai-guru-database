@@ -16,6 +16,7 @@ relationships:
     type: related_to
   - target: "_concepts/gpu-oom"
     type: related_to
+sources: []
 ---
 
 # GPU

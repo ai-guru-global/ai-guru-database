@@ -10,6 +10,7 @@ aliases:
   - "AI HR Recruitment"
   - "AI for HR 2026"
   - AI_HR_Recruitment
+sources: []
 
 ---
 # AI 人才招聘应用 2026 (AI for HR & Recruitment 2026)

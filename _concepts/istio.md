@@ -15,6 +15,7 @@ relationships:
     type: related_to
   - target: "_concepts/service-mesh"
     type: related_to
+sources: []
 ---
 
 # Istio

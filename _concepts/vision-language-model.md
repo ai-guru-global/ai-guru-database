@@ -20,10 +20,11 @@ relationships:
   - target: "_concepts/qwen-series"
     type: example_of
 summary: 视觉语言模型（VLM）融合视觉编码器与大语言模型，实现图像理解、视觉问答和图文交互。本文覆盖 VLM 的训练流程、推理优化和主流实现。
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 created: 2026-06-25
 updated: 2026-06-25
+sources: []
 ---
 
 # 视觉语言模型（Vision-Language Model）训练与推理

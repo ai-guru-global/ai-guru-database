@@ -13,6 +13,7 @@ aliases:
 
 updated: 2026-06-30
 summary: "Prompt Caching 与成本优化 — 专题文档"
+sources: []
 ---
 title: Prompt Caching 与成本优化
 description: '# Prompt Caching 与成本优化'

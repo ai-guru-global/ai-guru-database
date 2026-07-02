@@ -17,7 +17,7 @@ provenance:
   inferred: 0.40
   ambiguous: 0.10
 base_confidence: 0.82
-lifecycle: stable
+lifecycle: reviewed
 tier: supporting
 ---
 
@@ -124,7 +124,7 @@ python -m vllm.entrypoints.openai.api_server \
 | Llama-3-405B | 405B | 8+PP | 8×H100 + PP |
 | Mixtral-8x22B | 141B | 8 | 8×H100 |
 
-## TP 与 KV Cache 的关系
+## TP 与 [[_concepts/kv-cache|KV Cache]] 的关系
 
 ```
 张量并行下的 KV Cache:

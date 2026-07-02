@@ -13,6 +13,7 @@ relationships:
     type: threatens
   - target: "_concepts/adversarial-training"
     type: mitigated_by
+sources: []
 ---
 
 # Adversarial Attack

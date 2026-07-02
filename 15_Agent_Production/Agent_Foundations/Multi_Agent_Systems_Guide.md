@@ -10,6 +10,7 @@ tier: supporting
 aliases:
   - "Multi Agent Systems Guide"
   - Multi_Agent_Systems_Guide
+sources: []
 
 ---
 # 智能体 AI 权威指南 Part 2: 多智能体系统全解

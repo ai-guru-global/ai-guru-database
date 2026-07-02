@@ -6,6 +6,7 @@ summary: 目录重构后的整体项目评估——规模、结构、质量、�
 created: 2026-06-22
 updated: 2026-06-22
 status: active
+sources: []
 ---
 
 # AI Guru 知识库整体评估报告

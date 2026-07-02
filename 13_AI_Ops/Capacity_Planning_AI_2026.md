@@ -3,6 +3,7 @@ title: "Capacity Planning for AI Systems 2026"
 tags: [ai-ops, capacity-planning, gpu, scaling, production, cost]
 status: complete
 last_updated: 2026-07-02
+sources: []
 ---
 
 # Capacity Planning for AI Systems 2026

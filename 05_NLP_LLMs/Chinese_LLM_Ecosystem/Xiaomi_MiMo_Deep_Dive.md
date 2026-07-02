@@ -10,6 +10,7 @@ aliases:
   - "Xiaomi Mimo Deep Dive"
   - "Xiaomi MiMo Deep Dive"
   - Xiaomi_MiMo_Deep_Dive
+sources: []
 
 ---
 # 小米 MiMo 技术深度解析
@@ -125,7 +126,7 @@ MiMo (Mind in Motion) 就像小米为 AI 时代打造的一台"智能发动机"�
 └──────────────────────────────────────────────────────┘
 ```
 
-MiMo 是中国大模型赛道的"后来者"，但选择了差异化路线：**不做通用对话模型的竞争，而是聚焦 Agent 场景的基础设施**。这一策略让 MiMo 避开了与 DeepSeek、Qwen 在通用能力上的正面交锋，开辟了 "Agent-First" 的独特定位。
+MiMo 是中国大模型赛道的"后来者"，但选择了差异化路线：**不做通用对话模型的竞争，而是聚焦 Agent 场景的基础设施**。这一策略让 MiMo 避开了与 [[05_NLP_LLMs/Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive|DeepSeek]]、[[05_NLP_LLMs/Chinese_LLM_Ecosystem/Qwen_Deep_Dive|Qwen]] 在通用能力上的正面交锋，开辟了 "Agent-First" 的独特定位。
 
 > **相关文档**: 关于中国 LLM 生态的全面介绍，参见 [Qwen Deep Dive](./Qwen_Deep_Dive.md) 和 [DeepSeek Deep Dive](./DeepSeek_Deep_Dive.md)
 

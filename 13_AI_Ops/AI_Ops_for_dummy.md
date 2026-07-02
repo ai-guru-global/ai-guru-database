@@ -10,6 +10,7 @@ aliases:
   - "Ai Ops For Dummy"
   - "AI Ops for dummy"
   - AI_Ops_for_dummy
+sources: []
 
 ---
 # AI Ops 入门指南 (for Dummies)

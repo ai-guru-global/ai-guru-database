@@ -10,6 +10,7 @@ aliases:
   - "Ml Algorithms Cheatsheet"
   - "ML Algorithms Cheatsheet"
   - ML_Algorithms_Cheatsheet
+sources: []
 
 ---
 # 经典机器学习算法速查表: 10 分钟建立算法直觉

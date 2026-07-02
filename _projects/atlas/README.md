@@ -6,6 +6,7 @@ summary: "新版：`visualization/atlas/index.html`（Vite 开发/构建）"
 created: 2026-05-31
 updated: 2026-05-31
 tier: supporting
+sources: []
 
 ---
 # AI Guru Knowledge Atlas（D3）

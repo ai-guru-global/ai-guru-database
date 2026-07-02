@@ -3,6 +3,7 @@ title: "LLM 安全防御速查表"
 tags: [cheatsheet, llm-security, defense-in-depth, red-teaming, prompt-injection, owasp]
 type: cheatsheet
 created: 2026-06-17
+sources: []
 ---
 
 # LLM 安全防御速查表

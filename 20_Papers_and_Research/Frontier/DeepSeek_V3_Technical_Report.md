@@ -10,6 +10,7 @@ aliases:
   - "Deepseek V3 Technical Report"
   - "DeepSeek V3 Technical Report"
   - DeepSeek_V3_Technical_Report
+sources: []
 
 ---
 # DeepSeek-V3 Technical Report 深度解读

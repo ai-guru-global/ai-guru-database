@@ -10,6 +10,7 @@ aliases:
   - "Pruning And Knowledge Distillation"
   - "Pruning and Knowledge Distillation"
   - Pruning_and_Knowledge_Distillation
+sources: []
 
 ---
 # Pruning 与知识蒸馏：LLM 压缩实战 (Pruning and Knowledge Distillation for LLMs)

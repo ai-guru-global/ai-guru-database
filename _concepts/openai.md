@@ -17,7 +17,7 @@ sources:
   - 05_NLP_LLMs/Global_LLM_Ecosystem/OpenAI_Deep_Dive.md
   - 12_Architecture_Infrastructure/Azure_OpenAI_Deep_Dive.md
 summary: "OpenAI 是 ChatGPT 与 GPT 系列模型的开发公司，GPT-5 / GPT-4o 系列定义了闭源 LLM 的 API 范式，是全球使用最广的 LLM 商业服务。"
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 provenance:
   extracted: 0.80

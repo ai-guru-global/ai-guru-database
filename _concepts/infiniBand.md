@@ -16,6 +16,7 @@ relationships:
     type: related_to
   - target: "_concepts/distributed-training"
     type: related_to
+sources: []
 ---
 
 # InfiniBand

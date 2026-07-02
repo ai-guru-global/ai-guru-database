@@ -9,6 +9,7 @@ tier: peripheral
 aliases:
   - "Native Multimodal Architectures"
   - Native_Multimodal_Architectures
+sources: []
 
 ---
 # 原生多模态架构深度解析

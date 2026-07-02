@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Test Time Compute 2026"
   - Test_Time_Compute_2026
+sources: []
 
 ---
 # 测试时计算 (Test-Time Compute 2026)
@@ -1422,3 +1423,7 @@ flowchart TB
 
 *文档版本: 1.0.0* 
 *最后更新: 2026-04-13*
+
+## Related
+
+- [[_synthesis/modern-ai-training-stack|现代 AI 训练栈]] — Test-Time Compute 在训练全栈中的定位

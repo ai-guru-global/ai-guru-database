@@ -17,6 +17,7 @@ aliases:
   - "Test-Time Compute Scaling"
   - "测试时计算扩展"
   - "推理时计算扩展"
+sources: []
 ---
 
 # Test-Time Compute Scaling / 测试时计算扩展

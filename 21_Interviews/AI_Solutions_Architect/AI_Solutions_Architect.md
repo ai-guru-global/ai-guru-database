@@ -10,6 +10,7 @@ aliases:
   - "AI_Solutions_Architect"
   - "AI Solutions Architect 面试指南"
   - "AI_Solutions_Architect Interview Guide"
+sources: []
 ---
 
 # AI Solutions Architect 面试指南

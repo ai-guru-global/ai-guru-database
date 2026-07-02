@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Safetensors Hub Management"
   - Safetensors_Hub_Management
+sources: []
 
 ---
 # Safetensors 与 Hub 治理：下一代模型存储与分发标准

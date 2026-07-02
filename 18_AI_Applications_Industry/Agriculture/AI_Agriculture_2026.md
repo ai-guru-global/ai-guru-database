@@ -10,6 +10,7 @@ aliases:
   - "Ai Agriculture 2026"
   - "AI Agriculture 2026"
   - AI_Agriculture_2026
+sources: []
 
 ---
 # AI 农业行业应用 (2025-2026)

@@ -10,6 +10,7 @@ aliases:
   - "Official Courses"
   - "official courses"
   - official_courses
+sources: []
 
 ---
 # Hugging Face 官方系统化课程：离线硬核知识点提取

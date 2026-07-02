@@ -16,6 +16,7 @@ relationships:
     type: "part_of"
   - target: "_concepts/limit-range"
     type: "related_to"
+sources: []
 ---
 
 # Resource Quota

@@ -10,6 +10,7 @@ aliases:
   - "AI Engineer Path"
   - "AI Engineer Learning Path"
   - ai-engineer-path
+sources: []
 
 ---
 # AI 工程师学习路径 (AI Engineer Learning Path)

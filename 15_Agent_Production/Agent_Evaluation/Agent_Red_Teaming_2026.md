@@ -9,6 +9,7 @@ tier: core
 aliases:
   - "Agent Red Teaming 2026"
   - Agent_Red_Teaming_2026
+sources: []
 
 ---
 # Agent Red Teaming Framework 2026

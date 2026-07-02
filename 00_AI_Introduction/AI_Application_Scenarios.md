@@ -8,6 +8,7 @@ aliases:
   - "Ai Application Scenarios"
   - "AI Application Scenarios"
   - AI_Application_Scenarios
+sources: []
 
 ---
 # AI 应用实战：从提示词到智能体的入门指南

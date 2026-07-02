@@ -18,7 +18,7 @@ provenance:
   inferred: 0.2
   ambiguous: 0.05
 base_confidence: 0.82
-lifecycle: stable
+lifecycle: reviewed
 lifecycle_changed: 2026-06-23
 tier: core
 created: 2026-06-23
@@ -99,3 +99,4 @@ Level 4: Graph / Structured RAG（图结构 RAG）
 - [[_concepts/long-context-vs-rag|长上下文 vs RAG]] — 选型对比
 - [[_concepts/vector-database|向量数据库]] — RAG 存储基础
 - [[14_RAG_Systems/README|RAG 系统]] — 章节主页
+- [[_concepts/rag-production-architecture|RAG 生产架构]] — 从模式到生产落地的工程体系

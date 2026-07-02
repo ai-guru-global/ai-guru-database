@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Sentence Transformers Deep Dive"
   - Sentence_Transformers_Deep_Dive
+sources: []
 
 ---
 # Sentence-Transformers: 嵌入模型框架

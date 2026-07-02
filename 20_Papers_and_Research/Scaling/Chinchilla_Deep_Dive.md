@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Chinchilla Deep Dive"
   - Chinchilla_Deep_Dive
+sources: []
 
 ---
 # Training Compute-Optimal Large Language Models (Chinchilla) 深度解读

@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Product Manager"
   - "product manager"
+sources: []
 
 ---
 # AI 产品经理路径

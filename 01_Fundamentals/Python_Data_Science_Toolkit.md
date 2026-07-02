@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Python Data Science Toolkit"
   - Python_Data_Science_Toolkit
+sources: []
 
 ---
 # Python 数据科学工具链: NumPy + Pandas + Matplotlib + Scikit-learn
@@ -336,3 +337,4 @@ pip install jupyter notebook  # 交互式编程环境
 - [[02_Machine_Learning/ML_Algorithms_Cheatsheet]] — 经典算法速查表
 - [[_synthesis/python-data-science-pipeline|Python × 数据科学]] — 从语法到实战
 - [[_synthesis/python-first-ml-model|Python 基础 × 第一个 ML 模型]] — 从零到一的实战桥梁
+- [[94_Visualization/Data_Visualization_Best_Practices|数据可视化最佳实践]] — 图表选择、配色与交互式可视化

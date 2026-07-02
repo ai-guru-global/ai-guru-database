@@ -10,6 +10,7 @@ aliases:
   - "Ai Safety Redteaming For Dummy"
   - "AI Safety RedTeaming for dummy"
   - AI_Safety_RedTeaming_for_dummy
+sources: []
 
 ---
 # AI 安全与红队测试 - 小白版

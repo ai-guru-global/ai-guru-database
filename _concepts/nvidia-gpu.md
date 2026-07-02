@@ -16,6 +16,7 @@ relationships:
     type: uses
   - target: "_concepts/nvidia-smi"
     type: managed_by
+sources: []
 ---
 
 # NVIDIA GPU

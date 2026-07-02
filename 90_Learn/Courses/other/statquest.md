@@ -5,6 +5,7 @@ tags: [statquest, statistics, ml, learning-resource]
 summary: StatQuest 统计学与机器学习视频课程索引。
 created: 2026-07-02
 updated: 2026-07-02
+sources: []
 ---
 
 # StatQuest 学习资源

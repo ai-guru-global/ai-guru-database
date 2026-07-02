@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Manus My Computer"
   - Manus_My_Computer
+sources: []
 
 ---
 # Manus "My Computer": Meta's Desktop AI Agent Revolution

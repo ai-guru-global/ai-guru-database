@@ -7,6 +7,7 @@ summary: "为 LLM 推理服务定义和运营 SLO：覆盖可用性、TTFT、TPO
 created: 2026-06-26
 updated: 2026-06-26
 tier: supporting
+sources: []
 ---
 
 # LLM 推理 SLO 实践指南

@@ -6,6 +6,7 @@ summary: "本章系统讲解自然语言处理的现代范式，从序列模型�
 created: 2026-05-31
 updated: 2026-06-16
 tier: supporting
+sources: []
 
 ---
 # 04 自然语言处理与大模型 (NLP & LLMs)

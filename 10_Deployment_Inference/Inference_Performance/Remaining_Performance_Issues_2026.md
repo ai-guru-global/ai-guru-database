@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Remaining Performance Issues 2026"
   - Remaining_Performance_Issues_2026
+sources: []
 
 ---
 # 推理性能未解问题与缺口评估（2026）

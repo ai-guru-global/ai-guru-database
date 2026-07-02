@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Chinese Open Source Top100"
   - Chinese_Open_Source_Top100
+sources: []
 
 ---
 # 中国开源大模型生态 Top 100 项目全景 (2026 最新)

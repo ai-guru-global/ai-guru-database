@@ -15,7 +15,7 @@ relationships:
 sources:
   - "05_NLP_LLMs/LLM_For_Beginners.md"
   - "_concepts/embeddings-vectors-mrl-plain.md"
-lifecycle: stable
+lifecycle: reviewed
 tier: supporting
 created: "2026-06-15"
 updated: "2026-06-15"

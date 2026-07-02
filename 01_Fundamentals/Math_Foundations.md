@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Math Foundations"
   - Math_Foundations
+sources: []
 
 ---
 # AI 数学基础 (Mathematics for AI)

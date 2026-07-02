@@ -10,6 +10,7 @@ aliases:
   - "Edge Ai 2026"
   - "Edge AI 2026"
   - Edge_AI_2026
+sources: []
 
 ---
 # 边缘 AI / 设备端 AI 2026

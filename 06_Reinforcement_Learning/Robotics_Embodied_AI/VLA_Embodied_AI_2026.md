@@ -10,6 +10,7 @@ aliases:
   - "Vla Embodied Ai 2026"
   - "VLA Embodied AI 2026"
   - VLA_Embodied_AI_2026
+sources: []
 
 ---
 # VLA 具身智能 2026

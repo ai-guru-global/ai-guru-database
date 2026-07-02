@@ -6,6 +6,7 @@ summary: "本章节涵盖人工智能与机器学习最底层的科学支柱，�
 created: 2026-05-31
 updated: 2026-05-31
 tier: supporting
+sources: []
 
 ---
 # 01 基础理论 (Fundamentals)

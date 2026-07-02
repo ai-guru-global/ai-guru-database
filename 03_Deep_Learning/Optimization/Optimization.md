@@ -6,6 +6,7 @@ summary: '> **一句话理解**: 训练优化就像"下山找谷底"——在高
 created: '2026-05-31'
 updated: '2026-05-31'
 tier: supporting
+sources: []
 
 ---
 # 训练优化 (Optimization)

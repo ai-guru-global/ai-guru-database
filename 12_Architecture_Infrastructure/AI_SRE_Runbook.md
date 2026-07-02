@@ -9,6 +9,7 @@ tier: production
 aliases:
   - "AI SRE Runbook"
   - AI_SRE_Runbook
+sources: []
 ---
 
 # AI 系统 SRE Runbook (AI SRE Runbook)
@@ -37,7 +38,7 @@ aliases:
 
 AI 服务将传统 SRE 的复杂度从"请求-响应"扩展到了"模型-加速器-长上下文-成本"四维空间。以下是关键差异：
 
-| 维度 | 传统 Web SRE | AI SRE |
+| 维度 | 传统 Web SRE | [[_concepts/ai-sre|AI SRE]] |
 |------|-------------|--------|
 | **核心资源** | CPU、内存、带宽 | GPU、显存、HBM、NVLink/RDMA 带宽 |
 | **启动时间** | 秒级 | 分钟级（大模型权重加载、KV Cache 预热） |
@@ -629,3 +630,4 @@ AI 服务的高维度标签（如 user_id、model_version、gpu_node）容易导
 - [[12_Architecture_Infrastructure/Architecture_Overview/Capacity_Planning_2026|AI 系统容量规划指南]]
 - [[12_Architecture_Infrastructure/Architecture_Overview/High_Availability_2026|AI 系统高可用架构设计]]
 - [[12_Architecture_Infrastructure/Kubernetes_Observability_Stack|Kubernetes 可观测性栈]]
+- [[_meta/Production_Safety_Policy|生产安全策略]] — 操作风险评估与安全规范

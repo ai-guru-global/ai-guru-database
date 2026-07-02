@@ -10,6 +10,7 @@ aliases:
   - "Rlhf Dpo Grpo Deep Dive"
   - "RLHF DPO GRPO Deep Dive"
   - RLHF_DPO_GRPO_Deep_Dive
+sources: []
 
 ---
 # RLHF / DPO / GRPO 深度解读 - 大模型对齐训练三大范式

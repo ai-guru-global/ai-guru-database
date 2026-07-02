@@ -10,6 +10,7 @@ aliases:
   - "Agentic Design Patterns Andrewng"
   - "Agentic Design Patterns AndrewNg"
   - Agentic_Design_Patterns_AndrewNg
+sources: []
 
 ---
 # 吴恩达：Agentic Design Patterns (智能体设计模式) 深度解析 (含 Prompt 与代码实现)

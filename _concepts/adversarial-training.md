@@ -13,6 +13,7 @@ relationships:
     type: mitigates
   - target: "_concepts/model-security"
     type: improves
+sources: []
 ---
 
 # Adversarial Training

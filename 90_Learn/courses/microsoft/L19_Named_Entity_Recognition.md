@@ -10,6 +10,7 @@ tier: supporting
 aliases:
   - "L19 Named Entity Recognition"
   - L19_Named_Entity_Recognition
+sources: []
 
 ---
 # L19 - 命名实体识别 NER

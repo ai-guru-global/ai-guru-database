@@ -10,6 +10,7 @@ aliases:
   - "Readme For Dummy"
   - "README for dummy"
   - README_for_dummy
+sources: []
 
 ---
 # 17 AI 编程 — 小白版 💻

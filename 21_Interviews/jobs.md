@@ -8,6 +8,7 @@ updated: 2026-05-31
 tier: supporting
 aliases:
   - Jobs
+sources: []
 
 ---
 # AI 相关岗位与工种清单 (AI Roles & Jobs)

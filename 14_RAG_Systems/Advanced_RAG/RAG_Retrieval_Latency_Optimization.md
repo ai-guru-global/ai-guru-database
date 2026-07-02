@@ -7,6 +7,7 @@ summary: "系统讲解 RAG 检索延迟的优化方法：向量索引选型、hy
 created: 2026-06-26
 updated: 2026-06-26
 tier: supporting
+sources: []
 ---
 
 # RAG 检索延迟优化

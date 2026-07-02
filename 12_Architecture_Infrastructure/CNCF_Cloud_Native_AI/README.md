@@ -6,6 +6,7 @@ summary: "> **一句话理解**: 这是 CNCF 生态中与大模型 (LLM/GenAI) �
 created: "2026-06-16"
 updated: "2026-06-16"
 tier: supporting
+sources: []
 
 ---
 # CNCF 云原生大模型 (LLM) 项目全景导览

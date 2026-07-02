@@ -16,7 +16,7 @@ relationships:
 sources:
   - _concepts/helm.md
 summary: "ArgoCD 是 CNCF 毕业项目，Kubernetes 原生的 GitOps 持续部署工具；通过监听 Git 仓库变化自动同步到 K8s 集群，是声明式、版本化、可审计部署的事实标准。"
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 provenance:
   extracted: 0.85

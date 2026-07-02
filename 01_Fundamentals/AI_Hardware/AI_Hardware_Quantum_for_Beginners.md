@@ -4,6 +4,7 @@ title: AI 芯片与量子计算入门
 category: hardware
 tags: [gpu, tpu, npu, quantum, beginner, ai-chips]
 source: yeasy/ai_beginner_guide/16_ai_hardware_quantum
+sources: []
 ---
 
 # AI 芯片与量子计算入门

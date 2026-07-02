@@ -6,6 +6,7 @@ summary: "> 从「相关」到「因果」——do-演算、因果图、因果�
 created: 2026-06-04
 updated: 2026-06-04
 tier: supporting
+sources: []
 
 ---
 # 因果推断 (Causal Inference)

@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Dl In Nutshell"
   - "DL in nutshell"
+sources: []
 
 ---
 # 深度学习速成指南

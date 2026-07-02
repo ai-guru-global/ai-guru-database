@@ -10,6 +10,7 @@ aliases:
   - "Edge Llm Deep Dive"
   - "Edge LLM Deep Dive"
   - Edge_LLM_Deep_Dive
+sources: []
 
 ---
 # 小模型与端侧 LLM 深度解读: 从高效模型到端侧部署

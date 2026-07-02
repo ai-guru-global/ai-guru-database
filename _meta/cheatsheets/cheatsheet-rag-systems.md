@@ -6,6 +6,7 @@ created: 2026-06-24
 updated: 2026-06-24
 tier: core
 summary: "RAG 全栈速查：从基础 Naive RAG 到 Modular/Agentic RAG 的架构演进、主流向量数据库、检索策略、评估指标与生产级 SLO。"
+sources: []
 ---
 
 # RAG 检索增强生成速查表

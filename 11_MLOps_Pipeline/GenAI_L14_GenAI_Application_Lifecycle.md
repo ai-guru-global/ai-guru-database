@@ -13,6 +13,7 @@ aliases:
   - "Genai L14 Genai Application Lifecycle"
   - "GenAI L14 GenAI Application Lifecycle"
   - GenAI_L14_GenAI_Application_Lifecycle
+sources: []
 
 ---
 ## 学习目标

@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Ethics In Nutshell"
   - "Ethics in nutshell"
+sources: []
 
 ---
 # AI 伦理与安全速成指南

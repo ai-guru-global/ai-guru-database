@@ -8,6 +8,7 @@ updated: 2026-05-31
 tier: supporting
 aliases:
   - Contributing
+sources: []
 
 ---
 # Contributing to AI Guru

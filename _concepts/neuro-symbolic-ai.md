@@ -20,10 +20,11 @@ relationships:
   - target: "_concepts/tool-use"
     type: related_to
 summary: Neuro-Symbolic AI 结合神经网络的感知学习能力和符号系统的可解释推理能力，旨在解决纯神经网络在精确推理、可解释性和知识组合上的局限。
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 created: 2026-06-25
 updated: 2026-06-25
+sources: []
 ---
 
 # Neuro-Symbolic AI（神经符号 AI）

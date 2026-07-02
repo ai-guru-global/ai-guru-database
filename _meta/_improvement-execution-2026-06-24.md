@@ -7,6 +7,7 @@ created: 2026-06-24
 updated: 2026-06-24
 status: completed
 baseline: _meta/_evaluation-2026-06-24.md (2026-06-24, 8.5/10)
+sources: []
 ---
 
 # AI Guru 知识库改进执行报告（2026-06-24）

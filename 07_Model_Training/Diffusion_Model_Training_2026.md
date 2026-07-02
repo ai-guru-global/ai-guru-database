@@ -9,6 +9,7 @@ tier: advanced
 aliases:
   - "Diffusion Model Training 2026"
   - Diffusion_Model_Training_2026
+sources: []
 ---
 
 # 扩散模型训练实战 2026 (Diffusion Model Training 2026)

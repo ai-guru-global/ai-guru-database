@@ -7,6 +7,7 @@ summary: "面向 AI 训练与推理的成本治理方法：成本分摊、利用
 created: 2026-06-26
 updated: 2026-06-26
 tier: supporting
+sources: []
 ---
 
 # AI 场景 FinOps

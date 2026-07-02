@@ -10,6 +10,7 @@ aliases:
   - "Opencompass Deep Dive"
   - "OpenCompass Deep Dive"
   - OpenCompass_Deep_Dive
+sources: []
 
 ---
 

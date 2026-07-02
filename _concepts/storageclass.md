@@ -16,6 +16,7 @@ relationships:
     type: related_to
   - target: "_concepts/kubernetes"
     type: part_of
+sources: []
 ---
 
 # StorageClass

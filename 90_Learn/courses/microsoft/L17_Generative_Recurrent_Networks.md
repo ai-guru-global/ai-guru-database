@@ -10,6 +10,7 @@ tier: supporting
 aliases:
   - "L17 Generative Recurrent Networks"
   - L17_Generative_Recurrent_Networks
+sources: []
 
 ---
 # L17 - 生成循环网络

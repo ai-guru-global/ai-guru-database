@@ -17,7 +17,7 @@ sources:
   - 12_Architecture_Infrastructure/AWS_Bedrock_Deep_Dive.md
   - 05_NLP_LLMs/Global_LLM_Ecosystem/
 summary: "Foundation Model（基础模型）是大规模预训练、可适配多种下游任务的通用模型（如 GPT-5 / Claude Opus 4.8 / Gemini 3 / Llama 4），是当前 LLM 产业的核心资产。"
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 provenance:
   extracted: 0.85

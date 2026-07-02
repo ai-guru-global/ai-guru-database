@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Java Developer"
   - "java developer"
+sources: []
 
 ---
 # Java 开发者 AI 路径

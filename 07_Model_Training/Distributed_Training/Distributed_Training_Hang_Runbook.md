@@ -7,6 +7,7 @@ summary: "面向 K8s 上 LLM 分布式训练的 Hang/卡死/初始化失败排�
 created: 2026-06-26
 updated: 2026-06-26
 tier: core
+sources: []
 ---
 
 > [!warning] 生产安全提示 · Production Safety

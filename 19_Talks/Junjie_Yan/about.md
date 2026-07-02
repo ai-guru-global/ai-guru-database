@@ -8,6 +8,7 @@ updated: 2026-06-12
 tier: supporting
 aliases:
   - About
+sources: []
 
 ---
 # 闫俊杰 (Junjie Yan) — MiniMax 创始人

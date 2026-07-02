@@ -6,6 +6,7 @@ tags: ["ai-agents", "agent-framework", "production", "langgraph"]
 summary: "> 基于 CAPER 五维模型的四层 Harness 架构"
 created: 2026-05-31
 updated: 2026-05-31
+sources: []
 ---
 
 # 云产品智能体评估系统 - 系统架构文档

@@ -6,6 +6,7 @@ summary: "> AI for Science 正在重塑科学研究——从蛋白质结构预�
 created: 2026-06-04
 updated: 2026-06-04
 tier: supporting
+sources: []
 
 ---
 # AI for Science (AI 驱动的科学发现)

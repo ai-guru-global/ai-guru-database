@@ -6,6 +6,7 @@ summary: "为 AI 知识库 10 大核心领域提供可运行的配套实验，�
 created: 2026-06-04
 updated: 2026-06-04
 tier: supporting
+sources: []
 ---
 
 > [!warning] 生产安全提示 · Production Safety

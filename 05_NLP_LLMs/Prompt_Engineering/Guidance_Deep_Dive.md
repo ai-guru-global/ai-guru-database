@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Guidance Deep Dive"
   - Guidance_Deep_Dive
+sources: []
 
 ---
 # Guidance: 结构化生成控制语言

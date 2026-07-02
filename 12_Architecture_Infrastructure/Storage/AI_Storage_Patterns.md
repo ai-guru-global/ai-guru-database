@@ -7,6 +7,7 @@ summary: "面向 AI 训练与推理的存储模式：本地 NVMe、并行文件�
 created: 2026-06-26
 updated: 2026-06-26
 tier: supporting
+sources: []
 ---
 
 # AI 存储模式

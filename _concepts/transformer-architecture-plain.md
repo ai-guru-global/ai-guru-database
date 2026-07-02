@@ -19,6 +19,7 @@ updated: 2026-06-15T00:00:00Z
 aliases:
   - "Transformer"
   - "transformer"
+sources: []
 ---
 
 # Transformer 大白话解释

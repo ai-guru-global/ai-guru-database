@@ -6,6 +6,7 @@ summary: "跨领域 AI 基准对比表: 覆盖 LLM、计算机视觉、语音音
 created: 2026-06-04
 updated: 2026-06-04
 tier: supporting
+sources: []
 ---
 
 # 统一 Benchmark 对比表 — 跨领域 AI 基准全景

@@ -4,6 +4,7 @@ tags: [cloud-ops, agentScope, corpus, nas, deployment]
 summary: "> AgentScope Agent 如何加载本语料库作为工单诊断知识库。"
 created: 2026-07-01
 tier: core
+sources: []
 ---
 
 > [!warning] 生产安全提示 · Production Safety

@@ -10,6 +10,7 @@ aliases:
   - "Ai Learning Resources"
   - "AI Learning Resources"
   - AI_Learning_Resources
+sources: []
 
 ---
 # AI 学习资源与方法论

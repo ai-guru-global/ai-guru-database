@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Attention Is All You Need Deep Dive"
   - Attention_Is_All_You_Need_Deep_Dive
+sources: []
 
 ---
 # Attention Is All You Need 深度解读

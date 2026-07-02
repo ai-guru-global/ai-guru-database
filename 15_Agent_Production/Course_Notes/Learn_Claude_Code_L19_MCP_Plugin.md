@@ -5,6 +5,7 @@ tags: [claude-code, mcp, plugin, course-notes]
 summary: Claude Code 课程第 19 课笔记：MCP 外部工具发现、命名空间与动态工具池。
 created: 2026-07-02
 updated: 2026-07-02
+sources: []
 ---
 
 # Learn Claude Code L19 - MCP Plugin

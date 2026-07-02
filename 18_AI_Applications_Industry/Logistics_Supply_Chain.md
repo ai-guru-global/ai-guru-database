@@ -3,6 +3,7 @@ title: "AI Applications in Logistics & Supply Chain"
 tags: [industry, logistics, supply-chain, optimization, production]
 status: complete
 last_updated: 2026-07-02
+sources: []
 ---
 
 # AI Applications in Logistics & Supply Chain

@@ -25,10 +25,11 @@ relationships:
   - target: "_concepts/transformer-architecture"
     type: built_on
 summary: 大模型预训练是在大规模无标注文本上进行自监督学习的过程，目标是让模型掌握语言结构、世界知识和推理能力，是后续 SFT、RLHF 等对齐阶段的基础。
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 created: 2026-06-25
 updated: 2026-06-25
+sources: []
 ---
 
 # 大模型预训练（Pre-training）

@@ -10,6 +10,7 @@ aliases:
   - "Peft Advanced 2026"
   - "PEFT Advanced 2026"
   - PEFT_Advanced_2026
+sources: []
 
 ---
 # PEFT 2026 高阶指南：从 LoRA 到 DoRA 与 PiSSA

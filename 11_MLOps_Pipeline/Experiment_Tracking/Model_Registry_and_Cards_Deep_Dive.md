@@ -10,6 +10,7 @@ aliases:
   - "Model Registry And Cards Deep Dive"
   - "Model Registry and Cards Deep Dive"
   - Model_Registry_and_Cards_Deep_Dive
+sources: []
 
 ---
 # 模型注册与模型卡片深度解析

@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Capacity Planning 2026"
   - Capacity_Planning_2026
+sources: []
 
 ---
 # AI 系统容量规划指南 (Capacity Planning 2026)

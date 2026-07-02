@@ -3,6 +3,7 @@ title: "GPU Programming & CUDA Basics"
 tags: [gpu, cuda, parallel-computing, ai-hardware, performance]
 status: complete
 last_updated: 2026-07-02
+sources: []
 ---
 
 # GPU Programming & CUDA Basics

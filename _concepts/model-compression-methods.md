@@ -26,10 +26,11 @@ relationships:
   - target: "_concepts/model-inference"
     type: optimizes
 summary: 模型压缩是降低 LLM 部署成本的关键技术。本文系统对比量化、剪枝、蒸馏三种主流方法的原理、优缺点、适用场景及实战选择建议。
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 created: 2026-06-25
 updated: 2026-06-25
+sources: []
 ---
 
 # LLM 模型压缩方法对比：量化、剪枝、蒸馏

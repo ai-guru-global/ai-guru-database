@@ -10,6 +10,7 @@ aliases:
   - "Ai Fundamentals"
   - "AI Fundamentals"
   - AI_Fundamentals
+sources: []
 
 ---
 # AI 基础概念入门

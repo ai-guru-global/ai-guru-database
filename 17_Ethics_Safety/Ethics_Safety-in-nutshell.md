@@ -10,6 +10,7 @@ aliases:
   - "Ethics Safety In Nutshell"
   - "Ethics Safety in nutshell"
   - Ethics_Safety-in-nutshell
+sources: []
 
 ---
 # AI 伦理与安全速览 (AI Ethics & Safety in a Nutshell)

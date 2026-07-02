@@ -10,6 +10,7 @@ aliases:
   - "Api Design For Ai"
   - "API Design for AI"
   - API_Design_for_AI
+sources: []
 
 ---
 # AI API 设计指南

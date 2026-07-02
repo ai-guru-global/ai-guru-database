@@ -10,6 +10,7 @@ tier: supporting
 aliases:
   - "Transformer Deep Dive"
   - Transformer_Deep_Dive
+sources: []
 
 ---
 # Transformer 深度剖析：从 QKV 到完整架构

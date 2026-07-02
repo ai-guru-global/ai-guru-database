@@ -13,6 +13,7 @@ aliases:
   - "Genai L07 Building Chat Applications"
   - "GenAI L07 Building Chat Applications"
   - GenAI_L07_Building_Chat_Applications
+sources: []
 
 ---
 ## 学习目标

@@ -6,6 +6,7 @@ summary: "> 信息论是 AI 的数学灵魂——熵、交叉熵、KL散度、�
 created: 2026-06-04
 updated: 2026-06-04
 tier: supporting
+sources: []
 
 ---
 # 信息论基础 (Information Theory)

@@ -8,6 +8,7 @@ updated: 2026-06-05
 tier: supporting
 aliases:
   - About
+sources: []
 
 ---
 # Dario Amodei 简介 (Dario Amodei)

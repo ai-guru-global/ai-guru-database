@@ -21,10 +21,11 @@ relationships:
   - target: "_concepts/llm-inference-cost-optimization"
     type: related_to
 summary: LLM 推理集群调度负责将用户请求分配到合适的 GPU 实例上执行，目标是在满足延迟约束的同时最大化资源利用率和吞吐，涉及负载均衡、自动扩缩容、异构 GPU 管理等。
-lifecycle: stable
+lifecycle: reviewed
 tier: supporting
 created: 2026-06-25
 updated: 2026-06-25
+sources: []
 ---
 
 # LLM 推理集群调度
@@ -134,3 +135,4 @@ flowchart LR
 - [[_concepts/prefill-decode-disaggregated|Prefill-Decode 分离]]
 - [[_concepts/llm-inference-cost-optimization|推理成本优化]]
 - [[_concepts/llm-inference-checklist|推理上线检查清单]]
+- [[_concepts/llm-production-deployment|LLM 生产部署]] — 推理服务的全链路生产治理

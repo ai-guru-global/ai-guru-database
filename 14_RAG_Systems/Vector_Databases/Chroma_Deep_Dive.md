@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Chroma Deep Dive"
   - Chroma_Deep_Dive
+sources: []
 
 ---
 # Chroma: 轻量级向量数据库

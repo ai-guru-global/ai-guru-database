@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Hermes Agent 2026"
   - Hermes_Agent_2026
+sources: []
 
 ---
 # Hermes Agent 2026 年专业指南

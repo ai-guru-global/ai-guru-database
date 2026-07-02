@@ -7,6 +7,7 @@ tier: peripheral
 aliases:
   - "Deep Learning For Beginners"
   - Deep_Learning_For_Beginners
+sources: []
 
 ---
 # 深度学习入门：神经网络、训练与架构演进

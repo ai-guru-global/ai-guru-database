@@ -10,6 +10,7 @@ tier: core
 aliases:
   - "RAG Production Architecture Deep Dive"
   - RAG_Production_Architecture_Deep_Dive
+sources: []
 ---
 
 # RAG 生产架构深度解析

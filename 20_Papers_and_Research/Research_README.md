@@ -6,6 +6,7 @@ summary: '> **一句话理解**: 本章节用于系统性课题研究，每个�
 created: '2026-06-25'
 updated: '2026-06-25'
 tier: supporting
+sources: []
 ---
 # 课题研究 (Research)
 

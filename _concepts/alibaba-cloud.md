@@ -16,6 +16,7 @@ relationships:
     type: provides
   - target: "_concepts/apsara-stack"
     type: provides
+sources: []
 ---
 
 # Alibaba Cloud

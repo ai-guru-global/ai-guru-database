@@ -16,7 +16,7 @@ relationships:
 sources:
   - 05_NLP_LLMs/Reasoning_Models/
 summary: "ToT（Tree of Thoughts）是 Chain-of-Thought 的扩展，将推理过程建模为树形搜索（BFS/DFS），结合 LLM 评估每个节点的可行性，适合复杂逻辑 / 规划 / 代码生成任务。"
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 provenance:
   extracted: 0.85

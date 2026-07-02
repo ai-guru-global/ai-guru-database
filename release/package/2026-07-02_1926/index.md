@@ -1,0 +1,2311 @@
+# AI Guru 语料 · 目录（2193 页）
+
+- 智能体入口：[[diagnosis-work-order-hub|diagnosis-work-order-hub]]
+- 热点页：见 [hot.md](hot.md)
+
+## 00_AI_Introduction（21）
+
+- [[AI_Application_Scenarios|AI 应用实战：从提示词到智能体的入门指南]] `5`
+- [[AI_Beginner_Fundamentals|零基础学 AI：从概念到生态的入门全景]] `8`
+- [[AI_Classic_Cases|AI经典案例分析集]] `2`
+- [[AI_Ethics_Society|AI伦理与社会影响]] `5`
+- [[AI_Fundamentals|AI基础概念入门]] `19`
+- [[AI_Fundamentals_for_dummy|AI 基础入门 - 小白版]] `6`
+- [[AI_Future_Trends|AI未来趋势展望]] `8`
+- [[AI_Glossary|AI术语表与概念词典]] `3`
+- [[AI_History_Timeline|人工智能历史与发展时间线]] `9`
+- [[AI_Learning_Resources|AI学习资源与方法论]] `14`
+- [[AI_Multimodal_GenAI|AI 多模态与生成式 AI]] `8`
+- [[AI_New_Architectures|AI 新架构与创新：SSM、混合架构与 DeepSeek]] `17`
+- [[AI_Practical_Labs|AI课堂实验与实践指导]] `4`
+- [[AI_Reasoning_Models_Guide|AI 推理模型与推理计算指南]] `14`
+- [[AI_Technology_Landscape|AI技术全景概览]] `7`
+- [[AI_Tools_Practical_Guide|AI工具与实践指南]] `13`
+- [[GenAI_L01_Intro_to_GenAI_and_LLMs|生成式人工智能和大型语言模型简介]] `8`
+- [[Hands_On_Experiments_Guide|AI 知识库配套实验指南 — 从理论到可运行代码]] `2`
+- [[00_AI_Introduction/README|00 - AI 简介与历史]] `5`
+- [[00_AI_Introduction/README_for_dummy|00 AI 简介与历史 — 小白版 🚀]] `4`
+- [[00_AI_Introduction/index|AI Introduction]] 🔒
+
+## 01_Fundamentals（43）
+
+- [[AI_Development_Environment_Setup|AI 开发环境配置: Jupyter + Conda + GPU 一步到位]] `20`
+- [[AI_Hardware_2026|AI硬件与芯片 2026年全景报告]] `12`
+- [[AI_Hardware_Quantum_for_Beginners|AI 芯片与量子计算入门]] `2`
+- [[Chinese_AI_Chips_Deep_Dive|国产 AI 芯片深度解析 2026]] `26`
+- [[Google_TPU_Deep_Dive|Google TPU 深度解析 2026]] `3`
+- [[NVIDIA_AMD_GPU_Deep_Dive|NVIDIA & AMD 数据中心 GPU 深度解析 2026]] `8`
+- [[01_Fundamentals/AI_Hardware/README|AI 硬件基础设施]] `12`
+- [[T_Head_PPU_Deep_Dive|平头哥 T-Head 真武 PPU 深度解析 2026]] `9`
+- [[T_Head_PPU_for_dummy|平头哥 PPU 大白话解读]] `5`
+- [[01_Fundamentals/AI_Hardware/index|AI Hardware]] `1` 🔒
+- [[ApacheCN_Data_Analysis_Track|ApacheCN 数据分析主线]] `4`
+- [[ApacheCN_Linear_Algebra_Track|ApacheCN 线性代数主线]] `4`
+- ⭐ [[01_Fundamentals/Calculus_Optimization|微积分与优化基础 (Calculus & Optimization Foundations)]] `1` 🔒
+- ⭐ [[01_Fundamentals/Calculus_Optimization/Calculus_Optimization|微积分与优化 (Calculus & Optimization)]] `1` 🔒
+- [[Data_Structures_Algorithms|数据结构与算法 (Data Structures & Algorithms)]] `7`
+- [[Data_Structures_Algorithms_for_dummy|数据结构与算法 - 小白版]] `3`
+- [[01_Fundamentals/Data_Structures_Algorithms/index|Data Structures Algorithms]] `1` 🔒
+- [[Distributed_Systems|分布式系统 (Distributed Systems)]] `4`
+- [[Distributed_Systems_for_dummy|分布式系统 - 小白版]] `2`
+- [[01_Fundamentals/Distributed_Systems/index|Distributed Systems]] `1` 🔒
+- [[Fundamentals-in-nutshell|AI 基础速成指南]] `7`
+- [[GPU_Programming_CUDA_Basics|GPU Programming & CUDA Basics]] `1` 🔒
+- [[GenAI_L00_Course_Setup|课程设置与环境配置]] `4`
+- [[Information_Theory_Fundamentals|信息论基础: 从香农熵到 LLM 的交叉熵损失]] `7`
+- [[01_Fundamentals/Information_Theory/README|信息论基础 (Information Theory)]] `3`
+- [[01_Fundamentals/Information_Theory/index|Information Theory]] `1` 🔒
+- [[Java_Ecosystem_AI_Overview|Java 生态与 AI：全景概览]] `4`
+- [[Java_Ecosystem_AI_for_dummy|Java AI 生态小白指南 (Java Ecosystem AI for Dummy)]] `2`
+- [[Spring_AI_Deep_Dive|Spring AI 深度解析]] `4`
+- [[01_Fundamentals/Java_Ecosystem_AI/index|Java Ecosystem AI]] `1` 🔒
+- [[Linear_Algebra|线性代数 (Linear Algebra)]] `13`
+- [[Linear_Algebra_for_dummy|线性代数 - 小白版]] `4`
+- [[01_Fundamentals/Linear_Algebra/index|Linear Algebra]] `4`
+- [[Math_Foundations|AI 数学基础 (Mathematics for AI)]] `6`
+- [[Mathematics_for_AI|AI 数学手册 (Mathematics for AI Reference)]] `4`
+- [[Probability_Statistics|概率论与数理统计 (Probability & Statistics)]] `12`
+- [[Probability_Statistics_for_dummy|概率统计 - 小白版]] `3`
+- [[01_Fundamentals/Probability_Statistics/index|Probability Statistics]] `3`
+- [[Python_Data_Science_Toolkit|Python 数据科学工具链: NumPy + Pandas + Matplotlib + Scikit-learn]] `14`
+- [[Python_for_AI_Basics|Python for AI: 零基础到能写 AI 代码]] `13`
+- [[01_Fundamentals/README|01 基础理论 (Fundamentals)]] `12`
+- [[01_Fundamentals/README_for_dummy|基础理论 - 新手导航]] `3`
+- [[01_Fundamentals/index|Fundamentals]] 🔒
+
+## 02_Machine_Learning（49）
+
+- [[Anomaly_Detection|异常检测 (Anomaly Detection)]] `12`
+- [[Anomaly_Detection_for_dummy|异常检测 - 小白版]] `9`
+- [[02_Machine_Learning/Anomaly_Detection/index|Anomaly Detection]] `2`
+- [[ApacheCN_Machine_Learning_Track|ApacheCN 机器学习（机器学习实战）主线]] `4`
+- [[AutoML|AutoML - 自动化机器学习]] `12`
+- [[AutoML_for_dummy|AutoML - 小白版]] `2`
+- [[02_Machine_Learning/AutoML/index|Automl]] `1`
+- [[Bayesian_Methods_Deep_Dive|贝叶斯方法深度解读: 从贝叶斯定理到概率编程]] `3`
+- [[02_Machine_Learning/Bayesian_Methods/README|贝叶斯方法 (Bayesian Methods)]] `3`
+- [[02_Machine_Learning/Bayesian_Methods/index|Bayesian Methods]] `1`
+- [[Causal_Inference_Deep_Dive|因果推断深度解读: 从相关到因果的 AI 新范式]] `3`
+- [[02_Machine_Learning/Causal_Inference/README|因果推断 (Causal Inference)]] `3`
+- [[02_Machine_Learning/Causal_Inference/index|Causal Inference]] `1`
+- [[Ensemble_Learning|集成学习 (Ensemble Learning) - 完全指南]] `14`
+- [[Ensemble_Learning_for_dummy|集成学习 - 小白版]] `2`
+- [[02_Machine_Learning/Ensemble_Learning/index|Ensemble Learning]] `1`
+- [[Data_Preprocessing_for_dummy|数据预处理入门: 清洗、转换、标准化]] `3`
+- [[Feature_Engineering|特征工程 (Feature Engineering)]] `18`
+- [[Feature_Engineering_for_dummy|特征工程 - 小白版]] `12`
+- [[02_Machine_Learning/Feature_Engineering/index|Feature Engineering]] `2`
+- [[ML-in-nutshell|机器学习速成指南]] `15`
+- [[ML_Algorithms_Cheatsheet|经典机器学习算法速查表: 10 分钟建立算法直觉]] `8`
+- [[ML_For_Beginners|机器学习入门：四大范式与归纳法的本质]] `7`
+- [[ML_Frameworks|ML 框架概览 (ML Frameworks)]] `2`
+- [[catboost_overview|CatBoost 概览]] `5`
+- [[02_Machine_Learning/ML_Frameworks/index|ML Frameworks]] `1`
+- [[lightgbm_overview|LightGBM 概览]] `5`
+- [[scikit-learn_overview|Scikit-learn 概览]] `5`
+- [[xgboost_overview|XGBoost 概览]] `4`
+- [[ML_Fundamentals|机器学习基础 (Machine Learning Fundamentals)]] `9`
+- [[Model_Interpretability_Explainability|Model Interpretability & Explainability]] `3`
+- [[02_Machine_Learning/README|02 经典机器学习 (Classical Machine Learning)]] `28`
+- [[02_Machine_Learning/README_for_dummy|经典机器学习 - 新手导航]] `3`
+- [[Recommendation_Systems|推荐系统 (Recommendation Systems)]] `6`
+- [[Recommendation_Systems_for_dummy|推荐系统 - 小白版]] `2`
+- [[02_Machine_Learning/Recommendation_Systems/index|Recommendation Systems]] `2`
+- [[EDA_Quick_Start|探索性数据分析 (EDA) 快速入门: 10 分钟读懂你的数据]] `3`
+- [[Supervised_Learning|监督学习 (Supervised Learning)]] `11`
+- [[Supervised_Learning_for_dummy|监督学习 - 小白版]] `2`
+- [[Your_First_ML_Model|你的第一个 ML 模型: 从数据到预测（30 分钟实战）]] `13`
+- [[02_Machine_Learning/Supervised_Learning/index|Supervised Learning]] `1`
+- [[Time_Series_Analysis|时间序列分析 (Time Series Analysis) - 完全指南]] `6`
+- [[Time_Series_for_dummy|时间序列分析 - 小白版]] `2`
+- [[02_Machine_Learning/Time_Series/index|Time Series]] `1`
+- [[Unsupervised_Learning|无监督学习 (Unsupervised Learning)]] `10`
+- [[Unsupervised_Learning_for_dummy|无监督学习 - 小白版]] `2`
+- [[02_Machine_Learning/Unsupervised_Learning/index|Unsupervised Learning]] `1`
+- [[02_Machine_Learning/index|Machine Learning]] `4`
+- [[kaggle_overview|Kaggle 数据科学竞赛平台概览]] `3`
+
+## 03_Deep_Learning（37）
+
+- [[ApacheCN_PyTorch_Track|ApacheCN PyTorch 学习路径]] `3`
+- [[ApacheCN_TensorFlow_Track|ApacheCN TensorFlow 2.x 学习路径]] `3`
+- [[DL-in-nutshell|深度学习速成指南]] `9`
+- [[DL_Frameworks|深度学习框架概览 (DL Frameworks)]] `5`
+- [[03_Deep_Learning/DL_Frameworks/index|DL Frameworks]] `1` 🔒
+- [[keras_overview|Keras 概览]] `5`
+- [[pytorch_overview|PyTorch 概览]] `8`
+- [[tensorflow_overview|TensorFlow 概览]] `6`
+- [[DL_Fundamentals|深度学习基础 (Deep Learning Fundamentals)]] `8`
+- ⭐ [[DL_Overview|深度学习概览 (Deep Learning Overview)]] `1` 🔒
+- [[DeepSeek_Architecture_2026|DeepSeek 架构深度解析 2026]] `5`
+- [[Deep_Learning_For_Beginners|深度学习入门：神经网络、训练与架构演进]] `11`
+- [[Graph_Neural_Networks_Deep_Dive|图神经网络深度解读: 从 GCN 到 GAT 再到 Graph Transformer]] `7`
+- [[03_Deep_Learning/Graph_Neural_Networks/README|图神经网络 (Graph Neural Networks)]] `3`
+- [[03_Deep_Learning/Graph_Neural_Networks/index|Graph Neural Networks]] `1` 🔒
+- ⭐ [[Attention_Mechanisms_Deep_Dive|注意力机制深度解析 (Attention Mechanisms Deep Dive)]] `3`
+- [[Neural_Network_Core|神经网络核心 (Neural Network Core)]] `28`
+- [[Neural_Network_Core_for_dummy|神经网络核心 - 小白版]] `6`
+- [[Your_First_Neural_Network|你的第一个神经网络: 用 PyTorch 训练图像分类器]] `5`
+- [[03_Deep_Learning/Neural_Network_Core/index|Neural Network Core]] `4`
+- [[Optimization|训练优化 (Optimization)]] `16`
+- [[03_Deep_Learning/Optimization/Optimization_for_dummy|训练优化 - 小白版]] `3`
+- [[03_Deep_Learning/Optimization/index|Optimization]] `1` 🔒
+- [[03_Deep_Learning/README|03 深度学习基础 (Deep Learning Foundations)]] `22`
+- [[03_Deep_Learning/README_for_dummy|03 深度学习基础 - 小白版]] `4`
+- [[03_Deep_Learning/Self_Supervised_Learning/README|自监督学习 (Self-Supervised Learning)]] `3`
+- [[Self_Supervised_Learning_Deep_Dive|自监督学习深度解读: 从对比学习到掩码建模]] `6`
+- [[03_Deep_Learning/Self_Supervised_Learning/index|Self Supervised Learning]] `1` 🔒
+- [[State_Space_Models_2026|状态空间模型 2026: Mamba 与 Transformer 后继者]] `10`
+- ⭐ [[03_Deep_Learning/Transfer_Learning|迁移学习完全指南 (Transfer Learning Complete Guide)]] `2` 🔒
+- ⭐ [[03_Deep_Learning/Transfer_Learning/Transfer_Learning|迁移学习 (Transfer Learning)]] `1` 🔒
+- [[Transfer_Learning_Guide|Transfer Learning Complete Guide]] `1` 🔒
+- [[JEPA_Architecture_2026|JEPA 架构深度解析：LeCun 的世界模型之路]] `7`
+- [[03_Deep_Learning/World_Models/README|世界模型 (World Models)]] `8`
+- [[World_Models_2026|世界模型 (World Models) - 2026年完整指南]] `3`
+- [[03_Deep_Learning/World_Models/index|World Models]] `1` 🔒
+- [[03_Deep_Learning/index|Deep Learning]] 🔒
+
+## 04_Computer_Vision（34）
+
+- [[3D_Vision|3D 计算机视觉]] `11`
+- [[3D_Vision_for_dummy|3D 视觉 - 小白版 🏗️]] `6`
+- [[04_Computer_Vision/3D_Vision/index|3D Vision]] `2` 🔒
+- [[CV-in-nutshell|计算机视觉速成指南 (Computer Vision in a Nutshell)]] `9`
+- [[CV_Deployment_and_Inference_2026|CV 生产部署与推理优化实战指南 (2026)]] `3`
+- [[CV_Fundamentals|计算机视觉基础 (Computer Vision Fundamentals)]] `4`
+- [[04_Computer_Vision/Generative_Models/Diffusion_Models_Deep_Dive|扩散模型深度解读 (Diffusion Models Deep Dive)]] `7`
+- [[Generative_Models|生成模型 (Generative Models)]] `17`
+- [[Generative_Models_for_dummy|生成模型 - 小白版 🎨]] `6`
+- [[04_Computer_Vision/Generative_Models/index|Generative Models]] `2`
+- [[HF_Diffusers_Practical_Guide|Hugging Face Diffusers 实战：从图像到视频生成的底层引擎]] `3`
+- [[Image_Classification_Detection|图像分类与检测 (Image Classification & Detection)]] `19`
+- [[Image_Classification_Detection_for_dummy|图像分类与检测 - 小白版 👀]] `2`
+- [[Object_Detection_Complete_Guide|Object Detection Complete Guide]] `2` 🔒
+- ⭐ [[Object_Detection_Deep_Dive|目标检测深度解析 (Object Detection Deep Dive)]] `2`
+- [[04_Computer_Vision/Image_Classification_Detection/index|Image Classification Detection]] `1` 🔒
+- [[04_Computer_Vision/Multimodal_Vision/CLIP_Deep_Dive|CLIP 深度解读 - 多模态学习的里程碑]] `6`
+- [[Multimodal_Vision|多模态视觉 (Multimodal Vision)]] `7`
+- [[Multimodal_Vision_for_dummy|多模态视觉 - 小白版 🔗]] `2`
+- [[04_Computer_Vision/Multimodal_Vision/index|Multimodal Vision]] `2` 🔒
+- [[OCR_Text_Recognition|OCR 与文字识别]] `4`
+- [[OCR_for_dummy|OCR 与文字识别 - 小白版 🔤]] `2`
+- [[04_Computer_Vision/OCR_Text_Recognition/index|OCR Text Recognition]] `1` 🔒
+- [[04_Computer_Vision/README|05 计算机视觉 (Computer Vision)]] `15`
+- [[04_Computer_Vision/README_for_dummy|05 计算机视觉 - 小白版 🖼️]] `3`
+- [[Segmentation|图像分割 (Image Segmentation)]] `9`
+- [[Segmentation_for_dummy|图像分割 - 小白版 ✂️]] `6`
+- [[04_Computer_Vision/Segmentation/index|Segmentation]] `3`
+- [[ViT_Deep_Dive|Vision Transformer (ViT) 深度解读]] `8`
+- [[04_Computer_Vision/Video_Generation/README|AI视频生成 (Video Generation)]] `7`
+- [[Video_Generation_2026|AI视频生成 2026年全景报告]] `9`
+- [[Video_Generation_for_dummy|AI视频生成 - 小白版 🎬]] `3`
+- [[04_Computer_Vision/Video_Generation/index|Video Generation]] `1` 🔒
+- [[04_Computer_Vision/index|Computer Vision]] 🔒
+
+## 05_NLP_LLMs（143）
+
+- [[ApacheCN_NLP_Track|ApacheCN 自然语言处理学习路径]] `3`
+- [[Architecture_Evolution_for_dummy|LLM 架构演进大白话：KV 压缩、Mamba、RetNet]] `3`
+- [[Baichuan_Deep_Dive|百川智能 (Baichuan): 搜索增强驱动的开源大模型]] `5`
+- [[Baidu_ERNIE_Deep_Dive|百度文心 (ERNIE): 知识增强驱动的中文大模型先驱]] `10`
+- [[ByteDance_Doubao_Deep_Dive|字节豆包 (Doubao): 超级App生态驱动的大模型平台]] `6`
+- [[Chinese_LLM_Comparison_Matrix|中国大模型全厂商对比矩阵 (Chinese LLM Comparison Matrix)]] `30`
+- [[Chinese_LLM_Training_Inference_Platforms|中国大模型训练与推理平台实战参考 (Training & Inference Platforms)]] `15`
+- [[Chinese_Open_Source_Top100|中国开源大模型生态 Top 100 项目全景 (2026 最新)]] `4`
+- [[DeepSeek_Deep_Dive|DeepSeek (深度求索) 技术深度解析]] `27`
+- [[GLM_Zhipu_Deep_Dive|GLM / 智谱AI (Zhipu AI) 技术深度剖析]] `26`
+- [[InternLM_Deep_Dive|书生·浦语 (InternLM): 上海AI Lab 的开源大模型生态]] `8`
+- [[Kimi_Moonshot_Deep_Dive|Kimi / Moonshot AI (月之暗面): 长上下文与推理的技术深潜]] `11`
+- [[MiniMax_Deep_Dive|MiniMax (稀宇科技): Lightning Attention 驱动的 AI 全栈平台]] `11`
+- [[ModelScope_Model_Catalog|ModelScope 模型目录全景 (ModelScope Model Catalog)]] `5`
+- [[ModelScope_Model_Index|ModelScope 全量模型索引 (ModelScope Model Index)]] `20`
+- [[ModelScope_Model_Index_InternLM|ModelScope 模型索引 · 书生 InternLM]] `4`
+- [[ModelScope_Model_Index_Qwen|ModelScope 模型索引 · 通义千问 (Qwen)]] `4`
+- [[Qwen_Deep_Dive|Qwen (通义千问) 技术深度解析]] `25`
+- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/README|中国大模型生态全景 (Chinese LLM Ecosystem)]] `33`
+- [[SenseTime_SenseNova_Deep_Dive|商汤日日新 (SenseNova): 视觉AI巨头的大模型转型]] `6`
+- [[StepFun_Deep_Dive|阶跃星辰 (StepFun): 万亿参数 MoE 驱动的多模态新锐]] `5`
+- [[Tencent_Hunyuan_Deep_Dive|腾讯混元 (Hunyuan): 腾讯生态驱动的大模型平台]] `8`
+- [[Xiaomi_MiMo_Deep_Dive|小米 MiMo 技术深度解析]] `5`
+- [[Yi_01AI_Deep_Dive|零一万物 (01.AI / Yi): 李开复带队的中国开源 LLM 标杆]] `7`
+- [[iFlytek_Spark_Deep_Dive|讯飞星火 (Spark): 语音AI龙头的大语言模型之路]] `7`
+- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/index|Chinese LLM Ecosystem]] `1`
+- [[Edge_LLM_Deep_Dive|小模型与端侧 LLM 深度解读: 从高效模型到端侧部署]] `10`
+- [[GenAI_L19_Building_with_SLMs|使用小型语言模型构建应用]] `5`
+- [[05_NLP_LLMs/Edge_LLM/README|小模型与端侧 LLM (Edge LLM)]] `3`
+- [[05_NLP_LLMs/Edge_LLM/index|Edge LLM]] `1`
+- ⭐ [[Axolotl_Deep_Dive|Axolotl: 开源微调工具]] `15`
+- [[Fine_tuning_Strategies|微调策略完全指南 (Fine-tuning Strategies)]] `16`
+- ⭐ [[Fine_tuning_Techniques|微调技术 (Fine-tuning Techniques)]] `28`
+- ⭐ [[Fine_tuning_Techniques_for_dummy|微调技术 - 小白版]] `9`
+- [[GenAI_L18_Fine_Tuning_LLMs|微调大型语言模型]] `15`
+- [[LoRA_QLoRA_SFT_RLHF_DPO_in_Detail|LoRA / QLoRA / SFT / RLHF / DPO 大白话详解]] `6`
+- ⭐ [[Model_Merging_2026|模型合并技术 2026 (Model Merging)]] `8`
+- [[PEFT_2026|参数高效微调 (PEFT) 2026年完全指南]] `26`
+- [[PEFT_Advanced_2026|PEFT 2026 高阶指南：从 LoRA 到 DoRA 与 PiSSA]] `4`
+- [[05_NLP_LLMs/Fine_tuning_Techniques/README|微调技术 (Fine-tuning Techniques)]] `15`
+- [[Tool_Use_and_Agent_Fine_Tuning|Tool Use 与 Agent 微调 (Tool-Use and Agent Fine-Tuning)]] `2`
+- [[Unsloth_Deep_Dive|Unsloth: 快速 LLM 微调框架]] `4`
+- [[05_NLP_LLMs/Fine_tuning_Techniques/index|Fine Tuning Techniques]] `5`
+- [[GenAI_L02_Exploring_and_Comparing_LLMs|探索和比较不同的 LLM]] `8`
+- [[GenAI_L16_Open_Source_Models_and_Hugging_Face|开源模型与Hugging Face]] `6`
+- [[Anthropic_Claude_Deep_Dive|Anthropic Claude 技术深度解析]] `6`
+- [[GenAI_L20_Building_with_Mistral|使用Mistral模型构建应用]] `5`
+- [[GenAI_L21_Building_with_Meta|使用Meta家族模型构建应用]] `4`
+- [[Google_Gemini_Deep_Dive|Google Gemini 技术深度解析]] `4`
+- [[Meta_LLaMA_Deep_Dive|Meta LLaMA 深度技术解析：从 Dense 到 MoE 的开源 LLM 进化之路]] `7`
+- [[Mistral_AI_Deep_Dive|Mistral AI 技术深度解析]] `7`
+- [[OpenAI_Deep_Dive|OpenAI 技术深度解析 — 从 GPT-3 到 o3 的完整演进之路]] `4`
+- [[05_NLP_LLMs/Global_LLM_Ecosystem/README|国际大模型生态全景 (Global LLM Ecosystem)]] `13`
+- [[05_NLP_LLMs/Global_LLM_Ecosystem/index|Global LLM Ecosystem]] `1`
+- [[LLM_Architecture_Evolution|LLM 架构演进：从 BERT 到 MoE/Mamba 与 Agent 时代]] `16`
+- [[LLM-Basics-in-nutshell|大语言模型基础速成指南]] `14`
+- [[LLM_Architectures|大语言模型架构 (LLM Architectures)]] `38`
+- [[LLM_Architectures_for_dummy|大语言模型架构 - 小白版]] `2`
+- [[LLM_Internals_Architecture|大模型架构核心：从注意力到完整 Transformer]] `3`
+- [[LLM_Internals_Inference|大模型推理与部署：从解码到生产引擎]] `6`
+- [[LLM_Internals_Models_Frontiers|大模型家族与前沿架构：从 BERT 到推理模型]] `5`
+- [[LLM_Internals_Training|大模型训练全景：从预训练到对齐]] `4`
+- [[Long_Context_Models_2026|长上下文模型 2026: 万级 Token 处理]] `10`
+- [[MoE_Case_Studies_DeepSeek_Mixtral|MoE 案例研究：DeepSeek-MoE 与 Mixtral]] `11`
+- [[MoE_Routing_and_Load_Balancing|MoE 路由与负载均衡深度解析]] `10`
+- [[05_NLP_LLMs/LLM_Architectures/README|LLM 架构目录]] `2`
+- [[Reasoning_Models_2026|LLM 推理模型 2026: o1/o3 与思维链进化]] `4`
+- [[Transformer_Alternatives|Transformer 替代架构深度解析]] `4`
+- [[05_NLP_LLMs/LLM_Architectures/index|LLM Architectures]] `7`
+- [[LLM_Data_Engineering_Deep_Dive|LLM 数据工程深度解读: 从预训练数据到合成数据]] `12`
+- [[05_NLP_LLMs/LLM_Data_Engineering/README|LLM 数据工程 (LLM Data Engineering)]] `5`
+- [[05_NLP_LLMs/LLM_Data_Engineering/index|LLM Data Engineering]] `1`
+- [[LLM_For_Beginners|大语言模型入门：从文字接龙到推理部署]] `16`
+- [[LLM_Fundamentals|大语言模型基础 (LLM Fundamentals)]] `29`
+- [[LLM_Inference_Deep_Dive|LLM 推理深度剖析：解码策略、推理优化与服务引擎]] `31`
+- ⭐ [[LLM_Production_Deployment_Runbook|LLM 生产环境部署 Runbook：从模型文件到线上服务]] `14`
+- [[05_NLP_LLMs/LLM_Products/README|LLM Products Overview]] `1`
+- [[chatgpt_overview|ChatGPT 概览]] `6`
+- ⭐ [[claude_overview|Claude 深度解析 (Claude Deep Dive)]] `3`
+- ⭐ [[deepseek_overview|DeepSeek 深度解析 (DeepSeek Deep Dive)]] `2`
+- ⭐ [[gemini_overview|Gemini 深度解析 (Gemini Deep Dive)]] `1`
+- [[god-tier-prompts_overview|God Tier Prompts 概览]] `3`
+- [[05_NLP_LLMs/LLM_Products/index|LLM Products]] `1`
+- [[instructor_overview|Instructor 结构化输出库概览]] `2`
+- [[outlines_overview|Outlines 受控生成框架概览]] `2`
+- [[perplexity_overview|Perplexity AI 概览]] `2`
+- [[LLM_Training_Deep_Dive|LLM 训练深度剖析：预训练、分布式训练与对齐]] `10`
+- [[GenAI_L09_Building_Image_Applications|构建图像生成应用程序]] `9`
+- [[LLaVA_Deep_Dive|LLaVA: 开源多模态大模型]] `3`
+- [[Modality_Fusion_Mechanisms|模态融合机制深度解析]] `6`
+- [[Multimodal_Architectures_2026|多模态模型架构 2026：从 GPT-4V 到原生多模态 AGI]] `24`
+- [[Multimodal_Models_for_dummy|多模态模型小白指南 (Multimodal Models for Dummy)]] `10`
+- [[Native_Multimodal_Architectures|原生多模态架构深度解析]] `12`
+- [[05_NLP_LLMs/Multimodal_Models/README|多模态模型目录]] `3`
+- [[Video_Understanding_Architectures|视频理解架构深度解析]] `5`
+- [[05_NLP_LLMs/Multimodal_Models/index|Multimodal Models]] `1`
+- [[NLP_Fundamentals|NLP 基础 (NLP Fundamentals)]] `12`
+- [[Context_Engineering_Guide|大模型上下文工程权威指南]] `43`
+- [[Context_Engineering_Patterns|上下文工程技术模式与深度实践]] `18`
+- [[DSPy_Deep_Dive|DSPy: 可编程的 Prompt 优化框架]] `3`
+- [[GenAI_L04_Prompt_Engineering_Fundamentals|提示工程基础]] `11`
+- [[GenAI_L05_Advanced_Prompts|高级提示技术]] `8`
+- [[Guidance_Deep_Dive|Guidance: 结构化生成控制语言]] `3`
+- [[Hello_Agents_L04_ReAct|Hello-Agents L04：智能体经典范式构建（ReAct / Plan-and-Solve / Reflection）]] `4`
+- [[Hello_Agents_L09_Context_Engineering|Hello-Agents L09：上下文工程（Context Engineering）]] `4`
+- [[Instructor_Deep_Dive|Instructor: 结构化输出框架]] `3`
+- [[Outlines_Deep_Dive|Outlines: 结构化输出框架]] `5`
+- [[Prompt-Engineering-in-nutshell|Prompt Engineering 速成指南]] `8`
+- [[Prompt_Engineering|提示词工程 (Prompt Engineering)]] `37`
+- [[Prompt_Engineering_Advanced_Apps|提示词工程高级应用：RAG、多模态、安全与自动化运维]] `9`
+- [[Prompt_Engineering_Complete_Guide|提示词工程完整指南：核心技术与设计模式]] `20`
+- [[Prompt_Engineering_Principles_Ng|提示词工程的两大黄金法则 (吴恩达 & OpenAI 联合指南)]] `5`
+- [[Prompt_Engineering_Templates_Patterns|提示词模板库、反模式与技术分类索引]] `5`
+- [[Prompt_Engineering_for_dummy|提示词工程 - 小白版]] `7`
+- [[05_NLP_LLMs/Prompt_Engineering/README|提示词工程与结构化输出 (Prompt Engineering & Structured Output)]] `7`
+- [[05_NLP_LLMs/Prompt_Engineering/index|Prompt Engineering]] `10`
+- [[05_NLP_LLMs/README|04 自然语言处理与大模型 (NLP & LLMs)]] `25`
+- [[05_NLP_LLMs/README_for_dummy|04 自然语言处理与大模型 - 小白版]] `3`
+- [[DeepSeek_R1_Technical_Analysis|DeepSeek-R1 技术深度解析]] `14`
+- [[Neuro_Symbolic_and_Formal_Verification_2026|Neuro-symbolic AI & Formal Verification 2026]] `6`
+- [[Process_Reward_Models|Process Reward Models (PRM) 深度解析]] `8`
+- [[05_NLP_LLMs/Reasoning_Models/README|推理模型目录]] `4`
+- [[Reasoning_Models_for_dummy|推理模型小白指南 (Reasoning Models for Dummy)]] `3`
+- [[Test_Time_Compute_2026|测试时计算 (Test-Time Compute 2026)]] `4`
+- [[05_NLP_LLMs/Reasoning_Models/index|Reasoning Models]] `1`
+- [[o1_Class_Reasoning_Models|o1-class Reasoning Models 深度解析]] `13`
+- [[Sequence_Models|序列模型 (Sequence Models)]] `24`
+- [[Sequence_Models_for_dummy|序列模型 - 小白版]] `2`
+- [[Text_Generation_Decoding_Strategies|Text Generation & Decoding Strategies]] `1`
+- [[05_NLP_LLMs/Sequence_Models/index|Sequence Models]] `1`
+- [[05_NLP_LLMs/Speech_Audio_AI/README|语音与音频 AI (Speech & Audio AI)]] `3`
+- [[Speech_Audio_AI_Deep_Dive|语音与音频 AI 深度解读: 从 Whisper 到 CosyVoice 再到 AudioLM]] `3`
+- [[05_NLP_LLMs/Speech_Audio_AI/index|Speech Audio AI]] `1`
+- [[Structured_Output_Guide|LLM 结构化输出完全指南]] `9`
+- [[Test_Time_Compute_Scaling_2026|Test-Time Compute Scaling 2026: 推理时计算扩展的生产实践]] `6`
+- [[Transformer_Architecture|Transformer 架构详解]] `21`
+- [[Transformer_Deep_Dive|Transformer 深度剖析：从 QKV 到完整架构]] `14`
+- [[Self_Attention_Mechanism|Self-Attention 机制详解]] `6`
+- [[Transformer_Revolution|Transformer 革命 (Transformer Revolution)]] `17`
+- [[Transformer_Revolution_for_dummy|Transformer 革命 - 小白版]] `3`
+- [[05_NLP_LLMs/Transformer_Revolution/index|Transformer Revolution]] `3`
+- [[Transformer_Training_vs_Inference|Transformer 在大模型训练与推理中的应用]] `4`
+- [[05_NLP_LLMs/index|NLP Llms]] `6`
+
+## 06_Reinforcement_Learning（25）
+
+- [[06_Reinforcement_Learning/Deep_RL/DQN_Deep_Dive|DQN 深度解读 - 深度强化学习开山之作]] `2`
+- [[Deep_RL|深度强化学习 (Deep RL)]] `10`
+- [[Deep_RL_for_dummy|深度强化学习 - 小白版 🎮]] `2`
+- [[PPO_Deep_Dive|PPO 深度解读 - OpenAI 默认强化学习算法]] `5`
+- [[06_Reinforcement_Learning/Deep_RL/index|Deep RL]] `1` 🔒
+- [[GRPO_Training_Deep_Dive|GRPO 训练深度解读 - 推理模型生产级训练指南]] `7`
+- [[Multi_Agent_RL|Multi-Agent Reinforcement Learning]] `1` 🔒
+- ⭐ [[Multi_Agent_Systems|多智能体系统深度解析 (Multi-Agent Systems Deep Dive)]] `3`
+- [[06_Reinforcement_Learning/README|06 强化学习 (Reinforcement Learning)]] `8`
+- [[06_Reinforcement_Learning/README_for_dummy|06 强化学习与智能体 - 小白版 🎮]] `4`
+- [[RL-in-nutshell|强化学习速览 (Reinforcement Learning in a Nutshell)]] `7`
+- [[RLHF_DPO_GRPO_Deep_Dive|RLHF / DPO / GRPO 深度解读 - 大模型对齐训练三大范式]] `4`
+- [[RL_Foundations|强化学习基础 (RL Foundations)]] `6`
+- [[RL_Foundations_for_dummy|强化学习基础 - 小白版 🎲]] `2`
+- [[06_Reinforcement_Learning/RL_Foundations/index|RL Foundations]] `2` 🔒
+- [[RL_Fundamentals|强化学习基础 (RL Fundamentals)]] `6`
+- [[Embodied_AI_2026|具身智能 (Embodied AI) - 2026年完整指南]] `5`
+- [[Embodied_AI_Complete_2026|具身智能 (Embodied AI) 2026 完整指南]] `2`
+- [[Humanoid_Robot_2026|人形机器人 2026 (Humanoid Robots)]] `3`
+- [[06_Reinforcement_Learning/Robotics_Embodied_AI/README|具身智能与机器人 (Robotics & Embodied AI)]] `3`
+- [[Robot_VLA_Training_Pipeline_2026|Robot VLA Training Pipeline 2026: End-to-End Robotic Foundation Models]] `2`
+- [[VLA_Embodied_AI_2026|VLA 具身智能 2026]] `3`
+- [[VLA_Models_2026|VLA 模型 2026：视觉-语言-动作模型的技术突破与产业应用]] `3`
+- [[06_Reinforcement_Learning/Robotics_Embodied_AI/index|Robotics Embodied AI]] `1` 🔒
+- [[06_Reinforcement_Learning/index|Reinforcement Learning]] 🔒
+
+## 07_Model_Training（45）
+
+- [[GRPO_and_New_Alignment_Methods|GRPO 与新一代对齐方法 (GRPO and New Alignment Methods)]] `12`
+- [[TRL_RLHF_DPO_Guide|TRL 实战：基于 Hugging Face 的 RLHF 与 DPO 模型对齐]] `12`
+- [[07_Model_Training/Alignment/index|Alignment]] `2`
+- [[Model_Compression_Complete_Guide|Model Compression & Optimization]] `2`
+- [[Pruning_and_Knowledge_Distillation|Pruning 与知识蒸馏：LLM 压缩实战 (Pruning and Knowledge Distillation for LLMs)]] `7`
+- [[07_Model_Training/Compression/README|Compression Techniques for Model Training]] `2`
+- [[07_Model_Training/Compression/index|Compression]] `1`
+- ⭐ [[Data_Augmentation|数据增强完全指南 (Data Augmentation Complete Guide)]] `1`
+- [[Data_Curation_and_Mixture_2026|Data Curation and Mixture for LLM Pretraining 2026]] `8`
+- [[Tokenizer_Design_2026|Tokenizer Design for LLMs]] `4`
+- [[07_Model_Training/Data/index|Data]] `1`
+- [[Data_and_FineTuning_for_dummy|数据与微调大白话：数据清洗 Pipeline、DoRA、RS-LoRA]] `4`
+- [[Diffusion_Model_Training_2026|扩散模型训练实战 2026 (Diffusion Model Training 2026)]] `4`
+- [[Colossal_AI_Deep_Dive|Colossal-AI 深度解析: 统一分布式 AI 训练与推理系统]] `3`
+- [[DeepSpeed_Deep_Dive|DeepSpeed 深度解析: 微软大模型训练与推理优化库]] `14`
+- [[DeepSpeed_for_dummy|DeepSpeed 入门：用更少的 GPU 训练更大的模型]] `2`
+- [[Distributed_Training_2026|Distributed Training 2026]] `33`
+- ⭐ [[Distributed_Training_Hang_Runbook|分布式训练 Hang 排障 Runbook]] `14`
+- [[Distributed_Training_for_dummy|分布式训练 - 小白版]] `13`
+- [[FSDP_Deep_Dive|FSDP 深度解析: PyTorch 全分片数据并行]] `7`
+- [[HF_Accelerate_DeepSpeed_Guide|Hugging Face Accelerate 与 DeepSpeed：分布式训练极简指南]] `4`
+- [[Megatron_LM_Deep_Dive|Megatron-LM 深度解析: NVIDIA 大规模 Transformer 训练框架]] `7`
+- [[Ray_Deep_Dive|Ray 深度解析: Python 分布式 AI 计算框架]] `6`
+- [[07_Model_Training/Distributed_Training/index|Distributed Training]] `3`
+- [[ms_swift_Command_Line_Parameters|ms-swift 命令行参数完全参考手册]] `4`
+- [[ms_swift_Deep_Dive|ms-swift 深度解析：魔搭大模型训练推理全链路框架]] `6`
+- [[Hello_Agents_L11_Agentic_RL|Hello-Agents L11：Agentic-RL（从 SFT 到 GRPO 的 LLM 训练实战）]] `2`
+- [[Model-Training-in-nutshell|模型训练速成指南]] `9`
+- [[Model_Training_for_dummy|模型训练小白指南]] `12`
+- ⭐ [[LLM_Fine_Tuning_Job_Failure_Runbook_on_K8s|LLM 微调任务 K8s 失败排障 Runbook]] `11`
+- [[Model_Troubleshooting_Guide|模型问题排查手册 — 预训练/微调/推理全链路故障诊断]] `3`
+- [[Training_Job_Diagnosis_Workflow|训练任务诊断工作流]] `2`
+- [[Training_Monitoring_2026|Training Monitoring & Experiment Tracking 2026]] `9`
+- [[07_Model_Training/Monitoring/index|Monitoring]] `1`
+- ⭐ [[Hyperparameter_Tuning|超参数优化完全指南 (Hyperparameter Optimization Complete Guide)]] `1`
+- [[Mixed_Precision_Training|混合精度训练 (Mixed Precision Training)]] `21`
+- [[07_Model_Training/Optimization/Optimization_for_dummy|优化基础 - 小白版]] `3`
+- [[Optimizer_Advanced_2026|Advanced Optimizers for LLM Training 2026]] `4`
+- [[Scaling_Laws_and_Training_Dynamics|Scaling Laws and Training Dynamics (LLM 缩放法则与训练动态)]] `5`
+- [[Training_Optimization_2026|训练优化技术 2026: 从显存到吞吐的全栈加速]] `10`
+- [[07_Model_Training/Optimization/index|Optimization]] `2`
+- [[07_Model_Training/README|模型训练 (Model Training)]] `19`
+- [[07_Model_Training/README_for_dummy|07 模型训练 — 小白版 🏋️]] `3`
+- [[Training_Cost_Optimization_and_FinOps_2026|大模型训练成本优化与 FinOps 实践 2026]] `12`
+- [[07_Model_Training/index|Model Training]] `2`
+
+## 08_Model_Evaluation（26）
+
+- [[Agentic_Benchmark_Guide|Agentic Benchmarks — AI Agent 评测全景指南]] `9`
+- [[HF_Leaderboard_Eval_Guide|Hugging Face 评估体系：从 Open LLM Leaderboard 到本地自动化评测]] `2`
+- [[LLM_Benchmark_Suite_2026|LLM Benchmark Suite 2026 — 大语言模型评测基准全览]] `12`
+- [[LLM_Benchmarks_for_dummy|LLM 评估与测试大白话：BBH、Arena、红队测试、CI 集成评估、A/B 测试框架]] `4`
+- [[Long_Context_Evaluation|长上下文评测深度解析]] `4`
+- [[Multimodal_Evaluation_Benchmarks|多模态评测基准深度解析]] `7`
+- [[08_Model_Evaluation/Benchmarks/index|Benchmarks]] `2`
+- [[Evaluation-in-nutshell|模型评估速成指南]] `3`
+- [[Evaluation_Automation_2026|自动化模型评估 2026 (Evaluation Automation)]] `9`
+- [[08_Model_Evaluation/Evaluation_Metrics|评估指标体系 (Evaluation Metrics)]] `8`
+- [[LLM_as_Judge_Deep_Dive|LLM-as-Judge 深度解析 (LLM-as-Judge Deep Dive)]] `12`
+- [[LLM_as_Judge_Guide|LLM-as-Judge 评估完全指南]] `8`
+- [[LM_Evaluation_Harness_Deep_Dive|LM Evaluation Harness 深度解析: EleutherAI 的 LLM 评测框架]] `4`
+- [[Online_Evaluation|在线评估 (Online Evaluation)]] `9`
+- [[OpenCompass_Deep_Dive|OpenCompass 深度解析: 一站式大模型评测平台]] `4`
+- [[08_Model_Evaluation/Evaluation_Tools/index|Evaluation Tools]] `1`
+- [[Fairness_Evaluation_for_dummy|公平性评估 - 小白版]] `7`
+- ⭐ [[LLM_Evaluation_2026|LLM 评估方法论 2026 (LLM Evaluation Methodology 2026)]] `5`
+- ⭐ [[Model_Evaluation|模型评估 (Model Evaluation)]] `24`
+- [[Model_Evaluation_for_dummy|模型评估 - 小白版]] `5`
+- ⭐ [[RAG_Evaluation_Deep_Dive|RAG 系统评估深度解析 (RAG Evaluation Deep Dive)]] `8`
+- ⭐ [[08_Model_Evaluation/README|模型评估 (Model Evaluation)]] `20`
+- [[08_Model_Evaluation/README_for_dummy|08 模型评估 — 小白版 📝]] `3`
+- [[Statistical_Evaluation_Methods|Statistical Evaluation Methods for AI]] `3`
+- [[Unified_Benchmark_Comparison|统一 Benchmark 对比表 — 跨领域 AI 基准全景]] `4`
+- [[08_Model_Evaluation/index|Model Evaluation]] `3`
+
+## 09_Testing（18）
+
+- ⭐ [[AB_Testing_AI_Systems|AI 系统 A/B 测试完全指南 (A/B Testing for AI Systems)]] `4`
+- ⭐ [[AI-Testing-in-nutshell|AI 测试与评估速成指南]] `13`
+- [[AI_Test_Framework_2026|AI 系统测试框架 (AI Test Framework 2026)]] `9`
+- ⭐ [[AI_Testing_for_dummy|AI 测试 - 小白版]] `12`
+- [[Agent_Evaluation_Deep_Dive|Agent 评估深度解析 (Agent Evaluation Deep Dive)]] `8`
+- [[Contract_Testing|契约测试 (Contract Testing for AI Systems)]] `5`
+- [[RAGAS_Deep_Dive|RAGAS: RAG 评估框架]] `19`
+- ⭐ [[09_Testing/README|AI 测试与评估 (AI Testing)]] `19`
+- [[09_Testing/README_for_dummy|15 AI 测试 — 小白版 🧪]] `4`
+- [[Test_Data_Management|测试数据管理 (Test Data Management)]] `5`
+- [[DeepEval_Deep_Dive|DeepEval: LLM 测试框架]] `11`
+- ⭐ [[Java_AI_Testing|Java AI 测试实践]] `12`
+- [[LLM_Safety_Testing_Deep_Dive|LLM 安全测试深度指南 - 红队、越狱与对抗防御]] `4`
+- [[Promptfoo_Deep_Dive|Promptfoo: LLM Prompt 测试框架]] `13`
+- [[Regression_Testing_LLM_Deep_Dive|LLM 回归测试深度指南 - 非确定性输出的质量守护]] `3`
+- [[09_Testing/Testing_Frameworks/index|Testing Frameworks]] `1` 🔒
+- [[Weights_Biases_Deep_Dive|Weights & Biases: ML 实验追踪平台]] `5`
+- [[09_Testing/index|Testing]] 🔒
+
+## 10_Deployment_Inference（74）
+
+- ⭐ [[Blue_Green_Canary_Deployment|蓝绿部署与金丝雀发布完全指南 (Blue-Green & Canary Deployment)]] `1`
+- [[KV_Cache_Deep_Dive|KV Cache 深度研究：从原理到工程实践]] `12`
+- [[Prompt_Caching_Advanced|Prompt 缓存高级技术]] `8`
+- [[Prompt_Caching_and_KV_Cache_Optimization|Prompt Caching 与 KV Cache 优化深度解析]] `16`
+- [[Speculative_Decoding_Advanced_2026|投机解码前沿技术 2026]] `12`
+- [[10_Deployment_Inference/Caching/index|Caching]] `1`
+- ⭐ [[LLM_Cost_Optimization|LLM 成本优化完全指南]] `16`
+- [[10_Deployment_Inference/Cost/index|Cost]] `1`
+- ⭐ [[Deployment_Inference|模型部署与推理加速 (Deployment & Inference)]] `25`
+- ⭐ [[Deployment_Inference_2026|部署推理 2026 趋势]] `30`
+- ⭐ [[Deployment_Inference_for_dummy|模型部署与推理加速 - 小白版]] `18`
+- [[GPUStack_Deep_Dive|GPUStack: 开源 GPU 集群管理与模型服务平台]] `10`
+- [[GPUStack_for_dummy|GPUStack 入门指南 🚀]] `4`
+- [[10_Deployment_Inference/GPU_Infrastructure/index|GPU Infrastructure]] `1`
+- [[Ascend_NPU_Inference_Guide|昇腾 NPU LLM 推理部署指南]] `8`
+- [[Chinese_AI_Chip_Inference_Matrix|国产 AI 芯片推理矩阵]] `5`
+- [[10_Deployment_Inference/Hardware/index|Hardware]] `1`
+- ⭐ [[Inference-in-nutshell|模型推理速成指南]] `17`
+- [[Batch_API_Comparison_2026|LLM Batch API 完全指南: 批量推理的成本优化利器]] `3`
+- [[BentoML_Deep_Dive|BentoML: AI 模型服务框架]] `10`
+- [[CTranslate2_Deep_Dive|CTranslate2: 轻量级跨平台 LLM 推理引擎]] `4`
+- [[DeepSpeed_MII_Deep_Dive|DeepSpeed-MII: 微软高性能推理框架]] `2`
+- [[Fireworks_AI_Deep_Dive|Fireworks AI: 快速推理云平台]] `6`
+- ⭐ [[Groq_Deep_Dive|Groq: LPU 高速推理云平台]] `12`
+- [[HF_Inference_Endpoints_Guide|Hugging Face Inference Endpoints：一键 Serverless 部署开源大模型]] `2`
+- [[JVM_AI_Deployment|JVM AI 部署与推理]] `6`
+- [[10_Deployment_Inference/Inference_Engines/KServe_Deep_Dive|KServe 深度解析: Kubernetes 标准化模型服务平台]] `10`
+- [[LLM_API_Design_Patterns|LLM API Design Patterns]] `1`
+- [[LLM_Inference_Benchmarking_Guide|LLM 推理引擎基准测试指南]] `6`
+- [[LLM_Inference_Engine_Migration_Guide|LLM 推理引擎迁移指南]] `8`
+- ⭐ [[LLM_Inference_Engine_Selection_Guide|LLM 推理引擎选型指南]] `42`
+- ⭐ [[LMDeploy_Deep_Dive|LMDeploy: InternLM 高性能推理引擎]] `17`
+- [[LiteRT_Deep_Dive|LiteRT / TensorFlow Lite: 边缘 AI 推理]] `8`
+- [[MLC_LLM_Deep_Dive|MLC LLM: 移动端/异构设备 LLM 推理框架]] `4`
+- [[Modal_Deep_Dive|Modal 深度解析: 无服务器 GPU 云平台]] `4`
+- [[Novita_AI_Deep_Dive|Novita AI: 高性价比云推理平台]] `2`
+- ⭐ [[Ollama_Deep_Dive|Ollama: 本地大模型部署平台]] `18`
+- ⭐ [[SGLang_Deep_Dive|SGLang: 高性能 LLM 推理框架]] `44`
+- ⭐ [[TGI_Deep_Dive|TGI 深度解析: HuggingFace 生产级 LLM 推理引擎]] `30`
+- ⭐ [[TensorRT_LLM_Deep_Dive|TensorRT-LLM: NVIDIA 生产级 LLM 推理]] `29`
+- [[Together_AI_Deep_Dive|Together AI: 开源模型推理云平台]] `6`
+- [[Triton_Inference_Server_Deep_Dive|Triton Inference Server 深度解析: NVIDIA 多模型推理服务平台]] `3`
+- [[10_Deployment_Inference/Inference_Engines/index|Inference Engines]] `2`
+- ⭐ [[llama_cpp_Deep_Dive|llama.cpp: 纯 C/C++ 本地 LLM 推理]] `18`
+- [[streamlit_overview|Streamlit 概览]] `2`
+- ⭐ [[vLLM_Deep_Dive|vLLM: 生产级 LLM 推理引擎]] `86`
+- [[vLLM_PagedAttention_Architecture|vLLM + PagedAttention 架构链路图]] `3`
+- [[vLLM_for_dummy|vLLM 大白话解释]] `4`
+- [[Inference_Optimization_for_dummy|推理优化大白话：SGLang、动态批调度、GGUF、SmoothQuant、TensorRT-LLM]] `5`
+- [[Embedding_Model_Serving|Embedding 与 Reranker 模型服务]] `3`
+- [[Flash_Kernels_Deep_Dive|Flash 系列 Kernel 深潜]] `4`
+- [[Inference_Autoscaling_and_Load_Balancing|推理弹性扩缩容与负载均衡]] `3`
+- [[Inference_Performance_Fundamentals|推理性能基础]] `17`
+- [[Inference_Speed_Factors_for_dummy|决定模型推理速度的要素（大白话版）]] `4`
+- [[Inference_Terms_for_dummy|推理性能术语大白话解释]] `8`
+- [[LLM_Inference_Profiling_and_Benchmarking|推理 Profiling 与 Benchmarking]] `2`
+- [[Long_Context_Inference_2026|长上下文推理 2026]] `4`
+- [[MoE_Inference_Optimization|MoE 推理优化]] `4`
+- [[Multimodal_Inference_Optimization|多模态推理优化]] `3`
+- [[Prefill_Decode_Disaggregation|Prefill-Decode 分离（Disaggregated Serving）]] `9`
+- [[10_Deployment_Inference/Inference_Performance/README|推理性能专题]] `15`
+- [[Remaining_Performance_Issues_2026|推理性能未解问题与缺口评估（2026）]] `3`
+- [[Request_Scheduling_for_LLMs|LLM 推理请求调度]] `4`
+- [[10_Deployment_Inference/Inference_Performance/index|Inference Performance]] `2`
+- [[Inference_Tuning_Cheat_Sheet|LLM 推理调优速查表]] `2`
+- ⭐ [[Model_Hot_Reload_and_Rollback_Runbook|LLM 模型热加载与回滚 Runbook]] `8`
+- ⭐ [[Model_Registry|模型注册中心完全指南 (Model Registry Complete Guide)]] `2`
+- [[HF_Quantization_Ecosystem|Hugging Face 量化生态：BitsAndBytes, AWQ, GPTQ 与 GGUF]] `2`
+- [[Quantization_Precision_Deep_Dive|量化精度深度解析 (Quantization Precision Deep Dive)]] `3`
+- [[Quantization_Techniques_2026|LLM 量化技术深度解析 2026]] `18`
+- [[10_Deployment_Inference/Quantization/index|Quantization]] `4`
+- [[10_Deployment_Inference/README|模型部署与推理]] `42`
+- [[10_Deployment_Inference/README_for_dummy|09 部署与推理 — 小白版 🚀]] `3`
+- [[10_Deployment_Inference/index|Deployment Inference]] `5`
+
+## 11_MLOps_Pipeline（68）
+
+- [[Automated_Retraining|自动化再训练（Automated Retraining）]] `4`
+- [[Boundary_with_16|10_MLOps_Pipeline 与 16_AI_Ops 边界声明]] `8`
+- [[CI_CD_Pipeline_AI_2026|AI 系统 CI/CD 流水线 2026 (CI/CD Pipeline for AI)]] `7`
+- [[Deployment_Strategies|模型部署策略 (Deployment Strategies)]] `4`
+- [[ML_CI_CD|ML CI/CD 流水线 (ML CI/CD Pipeline)]] `19`
+- [[11_MLOps_Pipeline/CI_CD/index|CI CD]] `3`
+- [[Cost_Optimization_MLOps|MLOps 成本优化]] `8`
+- [[LLM_Cost_Latency_SLO|LLM 成本与延迟 SLO]] `8`
+- [[11_MLOps_Pipeline/Cost/index|Cost]] `1`
+- [[Data_Pipeline_for_ML|ML 数据流水线]] `4`
+- [[Data_Validation_and_Quality|数据验证与质量]] `2`
+- [[11_MLOps_Pipeline/Data_Engineering/index|Data Engineering]] `2`
+- [[LLM_Evaluation_Pipeline|LLM 评估流水线]] `24`
+- [[11_MLOps_Pipeline/Evaluation/index|Evaluation]] `1`
+- [[ClearML_Deep_Dive|ClearML: 开源 ML 平台]] `4`
+- [[Experiment_Tracking_Deep_Dive|实验追踪深度解析 (Experiment Tracking Deep Dive)]] `19`
+- [[Feast_Deep_Dive|Feast: 特征存储平台]] `5`
+- [[11_MLOps_Pipeline/Experiment_Tracking/Feature_Store_Deep_Dive|Feature Store 深度解析 (Feature Store Deep Dive)]] `9`
+- [[MLflow_Deep_Dive|MLflow: 机器学习生命周期管理]] `8`
+- [[Model_Registry_and_Cards_Deep_Dive|模型注册与模型卡片深度解析 (Model Registry & Model Cards Deep Dive)]] `15`
+- [[11_MLOps_Pipeline/Experiment_Tracking/index|Experiment Tracking]] `4`
+- ⭐ [[11_MLOps_Pipeline/Feature_Store/Feature_Store_Deep_Dive|Feature Store 深度解析 (Feature Store Deep Dive)]] `1`
+- [[Feature_Store_Fundamentals|特征平台基础]] `2`
+- [[11_MLOps_Pipeline/Feature_Store/index|Feature Store]] `1`
+- [[GenAI_L14_GenAI_Application_Lifecycle|生成式AI应用生命周期]] `9`
+- [[LLMOps_2026|LLMOps 2026：大模型时代的 MLOps 升级]] `35`
+- [[LLM_Guardrails_and_Safety_Ops_2026|LLM 护栏与安全运维 2026]] `13`
+- [[LLM_Production_Pipeline_2026|LLM 生产流水线深度指南]] `5`
+- ⭐ [[MLOps-in-nutshell|MLOps 速成指南]] `11`
+- [[MLOps_Maturity_Model|MLOps 成熟度模型与最佳实践 (MLOps Maturity Model)]] `12`
+- [[MLOps_Pipeline|MLOps 流水线 (MLOps Pipeline)]] `15`
+- [[MLOps_Pipeline_for_dummy|MLOps 流水线 - 小白版]] `5`
+- [[Model_Serving_Patterns|模型服务模式 (Model Serving Patterns)]] `5`
+- [[AI_Observability_Deep_Dive|AI 可观测性深度解读 (AI Observability)]] `5`
+- [[AI_Observability_Guide|AI 系统可观测性实践指南]] `4`
+- [[AI_Observability_Guide_2026|AI 可观测性 2026 完全指南]] `9`
+- [[Braintrust_Deep_Dive|Braintrust: LLM 评估平台]] `4`
+- [[Helicone_Deep_Dive|Helicone: LLM 可观测性平台]] `4`
+- [[LLM_Observability|LLM 可观测性]] `31`
+- [[LangSmith_Deep_Dive|LangSmith: LLM 应用调试与监控]] `7`
+- [[ML_Observability_SLO|ML 系统可观测性与 SLO]] `14`
+- [[Model_Monitoring_and_Drift_Detection_2026|Model Monitoring and Drift Detection 2026]] `21`
+- [[Phoenix_Deep_Dive|Phoenix: Arize AI 可观测性平台]] `4`
+- [[Prometheus_Grafana_Deep_Dive|Prometheus + Grafana 深度解析: AI 系统监控与可视化基座]] `7`
+- [[PromptLayer_Deep_Dive|PromptLayer: 提示词管理与追踪]] `5`
+- [[11_MLOps_Pipeline/Observability/index|Observability]] `1`
+- [[Annotation_Pipeline|标注流水线 (Annotation Pipeline)]] `2`
+- [[DVC_Deep_Dive|DVC: 数据版本控制]] `5`
+- ⭐ [[Data_Pipeline_Orchestration|数据流水线编排 (Data Pipeline Orchestration)]] `21`
+- [[Data_Quality_Management|数据质量管理 (Data Quality Management)]] `3`
+- [[Data_Versioning_DVC_LakeFS|数据版本控制：DVC 与 LakeFS]] `13`
+- [[Kubeflow_Deep_Dive|Kubeflow: 云原生 ML 平台]] `14`
+- [[LakeFS_Deep_Dive|LakeFS: 数据湖版本控制]] `4`
+- [[Prefect_Deep_Dive|Prefect: ML 数据流水线编排]] `4`
+- [[Privacy_Compliance_Pipeline|隐私与合规流水线]] `4`
+- [[RAG_Pipeline_Ops|RAG 流水线运维]] `5`
+- [[11_MLOps_Pipeline/Orchestration/index|Orchestration]] `1`
+- [[Prompt_Engineering_Ops|Prompt 工程化运维]] `8`
+- [[11_MLOps_Pipeline/README|MLOps 流水线 (MLOps Pipeline)]] `21`
+- [[11_MLOps_Pipeline/README_for_dummy|10 MLOps 流水线 — 小白版 🔄]] `3`
+- [[Data_Validation_Failure_Runbook|数据验证失败 Runbook]] `5`
+- [[MLOps_K8s_Cheat_Sheet|MLOps on K8s 排查速查表]] `1`
+- [[MLflow_Tracking_Server_Unreachable|MLflow Tracking Server 不可达排障]] `5`
+- [[Model_Version_Rollback_Playbook|模型版本回滚 Playbook]] `5`
+- [[11_MLOps_Pipeline/Troubleshooting/index|Troubleshooting]] `1`
+- [[Tutorial_LLMOps_End_to_End|LLMOps 端到端教程：Langfuse + Promptfoo + Ragas + LiteLLM]] `2`
+- [[Tutorial_MLOps_End_to_End|MLOps 端到端教程：DVC + MLflow + GitHub Actions + Evidently]] `2`
+- [[11_MLOps_Pipeline/index|Mlops Pipeline]] `4`
+
+## 12_Architecture_Infrastructure（95）
+
+- [[AI_Gateway_2026|AI Gateway 2026: 企业级 AI 网关架构与实践]] `23`
+- [[AI_Gateway_Comparison_2026|AI Gateway 对比 2026]] `8`
+- [[AI_Gateway_README|AI Gateway]] `2`
+- [[AI_Gateway_for_dummy|AI Gateway 入门指南 (for Dummies)]] `8`
+- [[AI_Gateway_for_dummy_overview|14 AI Gateway — 小白版 🚪]] `2`
+- [[Cohere_Deep_Dive|Cohere: 企业 AI 平台]] `4`
+- [[Gateway-in-nutshell|AI 网关速成指南]] `8`
+- [[Kong_AI_Gateway_Deep_Dive|Kong AI Gateway 深度解析]] `10`
+- [[LLM_Gateway_Comparison_2026|LLM 网关对比 2026: LiteLLM vs Portkey vs Kong]] `3`
+- [[LiteLLM_Deep_Dive|LiteLLM: 多模型统一 API 代理]] `13`
+- [[Portkey_Deep_Dive|Portkey: 企业级 AI Gateway]] `3`
+- [[Spring_AI_Gateway_Security|Spring AI 网关与安全]] `5`
+- [[12_Architecture_Infrastructure/AI_Gateway/index|AI Gateway]] `5`
+- [[AI_SRE_Runbook|AI 系统 SRE Runbook (AI SRE Runbook)]] `22`
+- [[AI_Stack_Container_Runtime_Guide|AI Stack 容器与运行时指南]] `13`
+- ⭐ [[12_Architecture_Infrastructure/AI_Stack/AI_Stack_Deep_Dive|阿里云 AI Stack: 企业级软硬一体 AI 推理平台]] `2`
+- [[AI_Stack_Exclusive_Tools_Guide|AI Stack 专属运维工具指南]] `8`
+- [[AI_Stack_GPU_Monitoring_Guide|AI Stack GPU 监控指南]] `10`
+- [[AI_Stack_Inference_Serving_Guide|AI Stack 推理服务指南]] `8`
+- [[AI_Stack_K8s_Operations_Guide|AI Stack K8s 编排指南]] `11`
+- [[AI_Stack_MLOps_Reference_Architecture|AI Stack + MLflow + ACK 私有化 MLOps 参考架构]] `3`
+- [[AI_Stack_Model_Management_Guide|AI Stack 模型下载与管理指南]] `9`
+- [[AI_Stack_Production_Toolchain|AI Stack 生产工具链总览]] `15`
+- [[AI_Stack_Training_Launchers_Guide|AI Stack 训练启动器指南]] `9`
+- ⭐ [[HAMi_Deep_Dive|HAMi 深度解析: Kubernetes 异构算力虚拟化中间件]] `21`
+- [[HAMi_Operation_Guide|HAMi 运维指南: 安装、配置、升级与监控]] `8`
+- [[HAMi_for_dummy|HAMi 入门: 让 Kubernetes GPU 像 CPU 一样共享]] `5`
+- [[Safetensors_Hub_Management|Safetensors 与 Hub 治理：下一代模型存储与分发标准]] `2`
+- [[12_Architecture_Infrastructure/AI_Stack/index|AI Stack]] `1`
+- [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive|阿里云 AI Stack: 企业级软硬一体 AI 推理平台]] `86`
+- ⭐ [[Alibaba_Cloud_Proprietary_K8s_Context|阿里云专有云 K8s 上下文]] `19`
+- ⭐ [[Architecture-in-nutshell|AI 架构速成指南]] `13`
+- ⭐ [[Architecture_Infrastructure_for_dummy|AI 架构基础设施 - 小白版]] `15`
+- [[AI_Cost_Optimization_2026|AI 成本优化与 FinOps 2026]] `6`
+- [[AI_Infrastructure_2026|AI Infrastructure 2026 完全指南]] `51`
+- [[AI_System_Architecture_2026|AI 系统架构全景图 (AI System Architecture 2026)]] `5`
+- [[Airgapped_Offline_Deployment_2026|Air-gapped 离线内网环境：Hugging Face 生态全量本地化部署指南]] `2`
+- [[Capacity_Planning_2026|AI 系统容量规划指南 (Capacity Planning 2026)]] `6`
+- [[High_Availability_2026|AI 系统高可用架构设计 (High Availability 2026)]] `5`
+- [[Hybrid_Multi_Cloud_AI|Hybrid & Multi-Cloud AI Architecture]] `1`
+- [[Multi_Tenant_Architecture|AI 系统多租户架构 (Multi-Tenant Architecture for AI Systems)]] `4`
+- [[Spring_AI_Architecture|Spring AI 系统架构设计]] `12`
+- [[12_Architecture_Infrastructure/Architecture_Overview/index|Architecture Overview]] `1`
+- [[AIBrix_Deep_Dive|AIBrix: 模块化的大模型推理基础设施组件]] `3`
+- [[AgentGateway_Deep_Dive|AgentGateway: AI Agent 与 MCP 服务器的代理网关]] `5`
+- [[Dragonfly_Deep_Dive|Dragonfly: 大模型权重 P2P 加速分发]] `6`
+- [[Envoy_AI_Gateway_Deep_Dive|Envoy AI Gateway: 基于 Envoy 的 GenAI 统一入口]] `9`
+- [[HolmesGPT_Deep_Dive|HolmesGPT: AI 事故调查员]] `7`
+- [[K8sGPT_Deep_Dive|K8sGPT: 给 K8s 集群装一个 AI SRE]] `9`
+- [[KAITO_Deep_Dive|KAITO (Kubernetes AI Toolchain Operator) 深度解析]] `8`
+- [[KAI_Scheduler_Deep_Dive|KAI Scheduler: 大规模 AI GPU 调度器]] `6`
+- [[12_Architecture_Infrastructure/CNCF_Cloud_Native_AI/KServe_Deep_Dive|KServe: Kubernetes 原生标准化推理平台]] `19`
+- [[Kgateway_Deep_Dive|Kgateway: Envoy 内核的 API 与 AI 双模网关]] `6`
+- [[KitOps_Deep_Dive|KitOps (ModelKit): 大模型制品打包标准]] `5`
+- [[Knative_Deep_Dive|Knative Serving: LLM 服务的弹性与 scale-to-zero]] `4`
+- [[KubeRay_Deep_Dive|KubeRay: 在 Kubernetes 上运行 Ray]] `6`
+- [[Kueue_Deep_Dive|Kueue: Kubernetes 原生作业排队系统]] `14`
+- [[12_Architecture_Infrastructure/CNCF_Cloud_Native_AI/README|CNCF 云原生大模型 (LLM) 项目全景导览]] `23`
+- [[Volcano_Deep_Dive|Volcano: Kubernetes 批处理与 AI 训练调度器]] `10`
+- [[12_Architecture_Infrastructure/CNCF_Cloud_Native_AI/index|CNCF Cloud Native AI]] `1`
+- [[kagent_Deep_Dive|kagent: Kubernetes 原生的 DevOps AI Agent 框架]] `12`
+- [[llm-d_Deep_Dive|llm-d: Kubernetes 原生分布式大模型推理框架]] `7`
+- [[llmaz_Deep_Dive|llmaz: 易用优先的 K8s 大模型推理平台]] `4`
+- [[AWS_Bedrock_Deep_Dive|AWS Bedrock 深度解析: 亚马逊云托管基础模型服务]] `5`
+- ⭐ [[Alibaba_Cloud_AI_Stack_Deep_Dive|阿里云 AI Stack 深度解读 — 专有云 AI 推理平台]] `6`
+- ⭐ [[Alibaba_PAI_Deep_Dive|阿里云 PAI 深度解析]] `4`
+- [[Azure_OpenAI_Deep_Dive|Azure OpenAI 深度解析: 企业级 GPT 服务]] `5`
+- [[Google_Vertex_AI_Deep_Dive|Google Vertex AI 深度解析: GCP 统一 AI 平台]] `5`
+- [[12_Architecture_Infrastructure/Cloud_Providers/index|Cloud Providers]] `1`
+- [[CDI_Deep_Dive|CDI (Container Device Interface): 容器设备接口标准深度解析]] `28`
+- [[CDI_for_dummy|CDI 容器设备接口 - 小白版]] `4`
+- [[DRA_Deep_Dive|DRA (Dynamic Resource Allocation) 深度解析:Kubernetes 设备分配的未来]] `17`
+- [[Edge_AI_2026|边缘 AI / 设备端 AI 2026]] `5`
+- [[Future_Computing_Hardware_2026|Future AI Hardware 2026: Silicon Photonics, LPUs, and Bio-computing]] `5`
+- [[MIG_Deep_Dive|MIG (Multi-Instance GPU): GPU 空间分片与多租户隔离深度解析]] `3`
+- [[12_Architecture_Infrastructure/Hardware_Compute/index|Hardware Compute]] `1`
+- ⭐ [[Kubernetes_Core_Components_Deep_Dive|Kubernetes 核心组件深度解析]] `11`
+- ⭐ [[Kubernetes_Networking_Deep_Dive|Kubernetes 网络深度解析]] `7`
+- ⭐ [[Kubernetes_Observability_Stack|Kubernetes 可观测性栈]] `5`
+- ⭐ [[Kubernetes_Storage_Deep_Dive|Kubernetes 存储深度解析]] `10`
+- [[AI_Networking_Fundamentals|AI 网络基础]] `3`
+- [[Docker_Containerization_for_AI|Docker & Containerization for AI]] `3`
+- [[Network_Diagnostics_Commands|AI 集群网络诊断命令集]] `1`
+- [[RDMA_and_RoCE_for_AI|RDMA 与 RoCE 在 AI 集群中的应用]] `3`
+- [[12_Architecture_Infrastructure/Networking/index|Networking]] `1`
+- [[12_Architecture_Infrastructure/README|架构与基础设施 (Architecture & Infrastructure)]] `18`
+- [[12_Architecture_Infrastructure/README_for_dummy|12 架构与基础设施 — 小白版 🏗️]] `3`
+- [[AI_Security_Fundamentals|AI 安全基础]] `5`
+- [[Container_and_Supply_Chain_Security_for_AI|容器与供应链安全 for AI]] `4`
+- [[12_Architecture_Infrastructure/Security/index|Security]] `1`
+- [[AI_Storage_Patterns|AI 存储模式]] `5`
+- [[Checkpoint_and_Model_Storage|Checkpoint 与模型存储]] `3`
+- [[Storage_Diagnostics_Commands|AI 存储诊断命令集]] `1`
+- [[12_Architecture_Infrastructure/Storage/index|Storage]] `1`
+- [[12_Architecture_Infrastructure/index|Architecture Infrastructure]] `1`
+
+## 13_AI_Ops（33）
+
+- ⭐ [[AIOps-in-nutshell|AI Ops 速成指南]] `25`
+- [[AI_Ops_2026|AI Ops 2026: 智能运维体系与实践]] `12`
+- ⭐ [[AI_Ops_for_dummy|AI Ops 入门指南 (for Dummies)]] `23`
+- [[Capacity_Planning_AI_2026|Capacity Planning for AI Systems 2026]] `1`
+- [[Chaos_Engineering_for_AI_Systems|AI 系统混沌工程]] `3`
+- [[13_AI_Ops/Chaos_Engineering/index|Chaos Engineering]] `1`
+- [[FinOps_for_AI|AI 场景 FinOps]] `5`
+- [[GPU_Cost_Optimization|GPU 成本优化]] `4`
+- [[13_AI_Ops/Cost_Management/index|Cost Management]] `1`
+- [[AI_Incident_Response_Framework|AI 事故响应框架]] `5`
+- [[On_Call_Runbook_Template|On-Call Runbook 模板]] `2`
+- [[Post_Mortem_Template|AI Incident Post-Mortem Template]] `1`
+- [[13_AI_Ops/Incident_Response/index|Incident Response]] `1`
+- ⭐ [[Kubernetes_Troubleshooting_Playbook|Kubernetes 运维排障 Playbook]] `15`
+- [[LLM_Inference_Observability_Stack|LLM 推理可观测性栈]] `3`
+- [[13_AI_Ops/Observability/index|Observability]] `2`
+- ⭐ [[13_AI_Ops/README|AI 运维与可观测性 (AI Ops)]] `40`
+- ⭐ [[13_AI_Ops/README_for_dummy|16 AI Ops — 小白版 📡]] `22`
+- [[AI_Incident_Response_Playbook|AI 系统事故响应手册]] `31`
+- [[Chaos_Engineering_AI|AI 系统混沌工程实践 (Chaos Engineering for AI Systems)]] `4`
+- [[Cost_Optimization_AI_Deep_Dive|LLM 推理成本优化深度指南 - 从 Token 到 GPU 的全方位降本]] `5`
+- ⭐ [[GPU_OOM_Troubleshooting_Guide|GPU OOM 排障指南]] `16`
+- [[GPU_Troubleshooting_Cheat_Sheet|GPU 故障排查速查表]] `3`
+- [[Guardrails_Deep_Dive|Guardrails AI: LLM 安全护栏]] `7`
+- ⭐ [[HAMi_Troubleshooting_Guide|HAMi 问题排查与故障解决指南]] `14`
+- [[Incident_Response_for_AI_Systems|AI 系统故障响应 (Incident Response for AI)]] `5`
+- ⭐ [[K8s_AI_Troubleshooting_Cheat_Sheet|K8s for AI 排查速查表]] `8`
+- [[LLM_Inference_SLO_Guide|LLM 推理 SLO 实践指南]] `9`
+- ⭐ [[LLM_Inference_Slow_Unavailable_Runbook|LLM 推理延迟/不可用 Runbook]] `12`
+- [[SLO_Error_Budget_AI_Deep_Dive|AI 系统 SLO 与错误预算深度指南 - 传统 SRE 如何适配 LLM]] `5`
+- [[SRE_for_AI_Systems|AI 系统的 SRE 实践指南]] `13`
+- [[13_AI_Ops/SRE_Reliability/index|SRE Reliability]] `1`
+- [[13_AI_Ops/index|AI Ops]] `4`
+
+## 14_RAG_Systems（42）
+
+- [[Advanced_RAG_DLAI_Practices|高阶 RAG 实战：来自 DeepLearning.AI 的四个落地技巧 (含完整代码)]] `5`
+- [[Agentic_RAG_Guide|Agentic RAG: Agent 驱动的智能检索]] `15`
+- [[Data_Ingestion_Pipeline|数据摄入管道 (Data Ingestion Pipeline)]] `4`
+- [[Graph_RAG_Architecture|Graph RAG Architecture]] `2`
+- [[Multimodal_RAG_Architecture_2026|Multimodal RAG Architecture 2026: Image, Video, and Complex Layouts]] `3`
+- [[RAG_Advanced_2026|RAG高级实践 2026年完全指南]] `20`
+- [[RAG_Debugging_Cheat_Sheet|RAG 调试速查表]] `2`
+- [[RAG_Retrieval_Latency_Optimization|RAG 检索延迟优化]] `8`
+- [[14_RAG_Systems/Advanced_RAG/index|Advanced RAG]] `1`
+- [[Agentic_RAG_Applications_for_dummy|Agentic RAG 应用大白话：Agentic RAG、Text2SQL、代码生成工作流]] `4`
+- [[Embedding_Models_Guide|Embedding 模型选型与实践指南 2026]] `8`
+- [[14_RAG_Systems/Embeddings/HF_Datasets_Streaming|Hugging Face Datasets 流式处理与大规模语料加工指南]] `3`
+- [[14_RAG_Systems/Embeddings/Matryoshka_Representation_Learning_Deep_Dive|Matryoshka Representation Learning 深度解析]] `10`
+- [[Sentence_Transformers_Deep_Dive|Sentence-Transformers: 嵌入模型框架]] `7`
+- [[14_RAG_Systems/Embeddings/index|Embeddings]] `1`
+- [[GenAI_L08_Building_Search_Applications|构建搜索应用程序]] `5`
+- [[GenAI_L15_RAG_and_Vector_Databases|检索增强生成(RAG)与向量数据库]] `12`
+- [[14_RAG_Systems/HF_Datasets_Streaming|HuggingFace Datasets Streaming 模式实战指南]] `2`
+- [[Matryoshka_Representation_Learning_for_dummy|Matryoshka Representation Learning — 小白版]] `6`
+- ⭐ [[RAG-in-nutshell|RAG (检索增强生成) 速成指南]] `26`
+- [[Dify_Deep_Dive|Dify: 开源 LLM 应用开发平台]] `7`
+- [[Flowise_Deep_Dive|Flowise: 低代码 LLM 应用平台]] `3`
+- [[Haystack_Deep_Dive|Haystack: 开源 RAG 框架]] `3`
+- [[LangFlow_Deep_Dive|LangFlow: 可视化 Agent/RAG 开发平台]] `3`
+- [[LlamaIndex_Deep_Dive|LlamaIndex: 数据连接框架]] `10`
+- ⭐ [[Spring_AI_RAG_Deep_Dive|Spring AI RAG 深度解析]] `20`
+- [[14_RAG_Systems/RAG_Frameworks/index|RAG Frameworks]] `1`
+- [[RAG_Fundamentals|RAG 基础 (RAG Fundamentals)]] `5`
+- ⭐ [[RAG_Production_Architecture_Deep_Dive|RAG 生产架构深度解析]] `10`
+- ⭐ [[RAG_Systems|RAG 系统 (RAG Systems)]] `44`
+- [[RAG_Systems_for_dummy|RAG 系统 - 小白版]] `6`
+- [[14_RAG_Systems/README|RAG 系统 (RAG Systems)]] `25`
+- ⭐ [[README_Advanced|RAG高级实践 2026]] `21`
+- [[14_RAG_Systems/README_for_dummy|11 RAG 系统 — 小白版 🔍]] `5`
+- [[Vector_Database_for_dummy|向量数据库 - 小白版]] `12`
+- [[Chroma_Deep_Dive|Chroma: 轻量级向量数据库]] `5`
+- [[Milvus_Deep_Dive|Milvus: 超大规模向量数据库]] `7`
+- [[Qdrant_Deep_Dive|Qdrant: 高性能向量数据库]] `8`
+- [[Typesense_Deep_Dive|Typesense: 快速矢量搜索]] `3`
+- [[Weaviate_Deep_Dive|Weaviate: 开源向量数据库]] `5`
+- [[14_RAG_Systems/Vector_Databases/index|Vector Databases]] `2`
+- [[14_RAG_Systems/index|RAG Systems]] `4`
+
+## 15_Agent_Production（206）
+
+- [[AI_OpenSource_Projects_Overview|AI 开源项目全景图]] `3`
+- [[Chinese_OpenSource_Agent_Projects|国内开源 AI Agent 项目]] `3`
+- [[Domestic_AI_Agent_Products_CN|国内顶级 AI Agent 产品]] `3`
+- [[15_Agent_Production/Agent_Ecosystem_CN/README|国内 AI Agent 生态]] `3`
+- [[15_Agent_Production/Agent_Ecosystem_CN/index|Agent Ecosystem CN]] `1`
+- [[Agent_Evaluation_Guide|评估执行指南]] `4`
+- [[Agent_Evaluation_Plugin_API|插件 API 参考文档]] `3`
+- [[Agent_Evaluation_System_Architecture|云产品智能体评估系统 - 系统架构文档]] `3`
+- ⭐ [[Agent_Harness_Complete_2026|Agent Harness 完整指南：生产级 Agent 评估框架]] `91`
+- [[Agent_Harness_Comprehensive_2026|Agent Harness 全面指南 2026]] `3`
+- [[Agent_Harness_Deep_Dive|Agent Harness 技术深度解析]] `5`
+- ⭐ [[Agent_Red_Teaming_2026|Agent Red Teaming Framework 2026]] `91`
+- ⭐ [[Evaluation_Workflow|Evaluation Workflow]] `110`
+- ⭐ [[Production_Assessment|Production Assessment]] `87`
+- [[15_Agent_Production/Agent_Evaluation/Assessment/index|Assessment]] `1`
+- ⭐ [[Benchmarking_Criteria|Benchmarking Criteria]] `26`
+- [[Scoring_System|Scoring System]] `3`
+- [[15_Agent_Production/Agent_Evaluation/Benchmarking/index|Benchmarking]] `1`
+- [[Cloud_Agent_Benchmark_2026|云产品智能体综合测评框架 2026]] `3`
+- [[Continuous_Monitoring_Guide|持续监控与优化指南]] `3`
+- [[DevOps_Agent_Benchmark|云运维/DevOps Agent 专项测评]] `3`
+- [[Domestic_Cloud_Agents|国内云厂商 Agent 测评详情]] `3`
+- [[General_Chat_Agent_Benchmark|通用对话/知识 Agent 测评详情]] `3`
+- [[International_Cloud_Agents|国际云厂商 Agent 测评详情]] `3`
+- ⭐ [[15_Agent_Production/Agent_Evaluation/Cloud_Agent_Evaluation/README|Cloud Agent Evaluation]] `17`
+- [[15_Agent_Production/Agent_Evaluation/Cloud_Agent_Evaluation/index|Cloud Agent Evaluation]] `1`
+- ⭐ [[Cloud_Agent_Evaluation_System_2026|Cloud Agent Evaluation System 2026]] `19`
+- [[Cloud_Agent_Leaderboard_2026|云产品智能体排行榜 2026]] `3`
+- [[Corpus_Coverage_Framework|语料库覆盖度评估框架]] `3`
+- [[Corpus_Improvement_Guide|语料库改进指南]] `2`
+- [[Corpus_Quality_Metrics|语料库质量指标体系]] `2`
+- [[15_Agent_Production/Agent_Evaluation/Corpus_Assessment/README|Corpus Assessment]] `3`
+- [[15_Agent_Production/Agent_Evaluation/Corpus_Assessment/index|Corpus Assessment]] `1`
+- [[API_Integration_Guide|API 集成指南]] `2`
+- [[Config_Templates|Configuration Templates]] `2`
+- [[Implementation_Guide|Implementation Guide]] `2`
+- [[LLM_as_Judge_Templates|LLM-as-Judge 评估提示词模板]] `3`
+- [[Sample_Reports|Sample Reports]] `2`
+- [[15_Agent_Production/Agent_Evaluation/Implementation/index|Implementation]] `1`
+- [[K8s_Agent_Evaluation_Report|Kubernetes 领域专项评测报告]] `3`
+- [[15_Agent_Production/Agent_Evaluation/Metrics/Evaluation_Metrics|Evaluation Metrics]] `10`
+- [[Metrics_Collection|Metrics Collection]] `2`
+- [[15_Agent_Production/Agent_Evaluation/Metrics/index|Metrics]] `1`
+- [[Multi_Agent_Evaluation_2026|Multi-Agent System Evaluation Framework 2026]] `8`
+- [[Ops_Agent_Harness_2026|Ops Agent Harness 2026: 运维 Agent 评估框架]] `3`
+- [[Performance_Benchmarks|Performance Benchmarks]] `2`
+- [[Quality_Assurance|Quality Assurance]] `2`
+- [[15_Agent_Production/Agent_Evaluation/QA/index|QA]] `1`
+- [[15_Agent_Production/Agent_Evaluation/README|Agent Benchmarking Evaluation Framework]] `9`
+- [[15_Agent_Production/Agent_Evaluation/README_for_dummy|Agent Benchmarking Evaluation Framework - Beginner's Guide]] `5`
+- [[Ranking_System|Ranking System]] `2`
+- [[Scoring_Rubrics|Scoring Rubrics]] `2`
+- [[15_Agent_Production/Agent_Evaluation/Rubrics/index|Rubrics]] `1`
+- [[15_Agent_Production/Agent_Evaluation/Test_Bank/README|Test Bank]] `3`
+- [[Test_Bank_Overview|测试题库总览]] `3`
+- [[15_Agent_Production/Agent_Evaluation/Test_Bank/index|Test Bank]] `1`
+- [[Test_Suites|Test Suites]] `2`
+- ⭐ [[Testing_Framework|Testing Framework]] `9`
+- [[15_Agent_Production/Agent_Evaluation/Testing_Methodologies/index|Testing Methodologies]] `1`
+- [[15_Agent_Production/Agent_Evaluation/index|Agent Evaluation]] `1`
+- [[ADK_Selection_and_Implementation_2026|Agent Development Kits (ADK) 2026: Building with MCP, A2A, and UCP]] `2`
+- [[AI_Agents|AI 智能体 (AI Agents)]] `11`
+- [[AI_Agents_for_Beginners|AI 智能体入门]] `2`
+- [[AI_Agents_for_dummy|AI智能体 - 小白版 🤖]] `14`
+- [[Agent-in-nutshell|AI 智能体速成指南]] `15`
+- [[Agent_Future_Roadmap_2026_2030|Agent 未来发展路线图 2026-2030]] `14`
+- [[Agent_Observability_2026|Agent 可观测性与调试 (Agent Observability & Debugging 2026)]] `3`
+- [[Agent_Protocols_2026|AI Agent 协议栈 2026 完全指南]] `5`
+- [[Agent_Protocols_Comparison_2026|Agent Protocols Comparison 2026: MCP, A2A, UCP, and Beyond]] `3`
+- [[Agent_Protocols_Detail|AI Agent 协议详解：MCP、A2A、UCP]] `11`
+- [[Agent_State_Management|Agent 状态管理 (Agent State Management)]] `3`
+- [[Agentic_AI_Complete_Guide|智能体 AI 权威指南 Part 1: 单体智能架构全解]] `32`
+- [[MCP_Implementation_Guide|MCP 协议实现指南 (MCP Implementation Guide)]] `7`
+- [[Multi_Agent_Systems_Guide|智能体 AI 权威指南 Part 2: 多智能体系统全解]] `13`
+- [[15_Agent_Production/Agent_Foundations/index|Agent Foundations]] `3`
+- [[AgentScope_Deep_Dive|AgentScope: 阿里巴巴多智能体开发平台]] `5`
+- [[Agno_Deep_Dive|agno: 现代 AI Agent 框架]] `3`
+- [[AutoGPT_Deep_Dive|AutoGPT: 自主任务执行 Agent]] `3`
+- [[AutoGen_CrewAI_LangGraph_Dive|多 Agent 开发框架: AutoGen / CrewAI / LangGraph]] `12`
+- [[AutoGen_Deep_Dive|AutoGen: 微软多 Agent 框架]] `13`
+- [[CrewAI_Deep_Dive|CrewAI: 多 Agent 协作框架]] `5`
+- [[LangChain_Agents_Deep_Dive|LangChain Agents: 工具调用框架]] `5`
+- [[LangChain_Deep_Dive|LangChain: LLM 应用开发框架]] `6`
+- [[15_Agent_Production/Agent_Frameworks/README|Agent 开发框架]] `28`
+- [[SmolAgents_Deep_Dive|SmolAgents: 轻量级 Agent 框架]] `4`
+- [[SmolAgents_Practical_Guide|SmolAgents 实战指南：用 50 行代码构建多模态 Code Agent]] `5`
+- [[Transformers_Agents_Deep_Dive|Transformers Agents: HuggingFace Agent 框架]] `3`
+- [[15_Agent_Production/Agent_Frameworks/index|Agent Frameworks]] `1`
+- [[Agent_Harness_Architecture_2026|Agent Harness 技术架构 2026]] `8`
+- [[Harness-in-nutshell|Agent Harness 速览]] `4`
+- [[Harness_Core_Subsystems|Harness Core Subsystems Deep Dive]] `20`
+- [[Harness_Deployment_Guide|Agent Harness 部署与运维指南]] `2`
+- [[Harness_Ecosystem_Catalog|Agent Harness 生态目录]] `2`
+- [[Harness_Engineering_Complete_Guide|Harness Engineering Complete Guide]] `20`
+- [[Harness_Implementation_Guide|Agent Harness 实现指南]] `3`
+- [[Harness_Production_Security|Harness Production & Security Engineering]] `12`
+- [[Harness_Security_Guide|Agent Harness 安全深度指南]] `3`
+- [[Harness_Testing_Guide|Agent Harness 测试指南]] `3`
+- [[Multi_Agent_Harness_Design|多 Agent Harness 设计模式]] `3`
+- [[15_Agent_Production/Agent_Harness/README|Agent Harness 工程]] `3`
+- [[The_Anatomy_of_an_Agent_Harness|The Anatomy of an Agent Harness]] `9`
+- [[15_Agent_Production/Agent_Harness/index|Agent Harness]] `1`
+- ⭐ [[Agent_Overview|AI Agent 全景概览 (AI Agent Overview)]] `2`
+- [[Dify_Coze_MLServe_Dive|Agent 平台与部署: Dify / Coze / LocalAI]] `5`
+- [[OpenRouter_Deep_Dive|OpenRouter: 统一 AI 模型网关与智能路由平台]] `2`
+- [[PromptFlow_Deep_Dive|PromptFlow: 微软提示词工作流平台]] `2`
+- [[15_Agent_Production/Agent_Platforms/README|Agent 平台与部署]] `5`
+- [[15_Agent_Production/Agent_Platforms/index|Agent Platforms]] `1`
+- ⭐ [[Agent_Production_Deployment_Runbook|Agent 生产环境部署 Runbook]] `15`
+- [[A2A_Protocol_Deep_Dive|Agent-to-Agent 协议 (A2A) 深度解读]] `12`
+- [[15_Agent_Production/Agent_Protocols/index|Agent Protocols]] `2`
+- [[Agent_Safety_Evaluation_for_dummy|Agent 安全与评估大白话：工具调用安全、Agent 评估基准]] `6`
+- [[Agent_Skills_Deep_Dive|Agent Skills 深度解析]] `8`
+- [[Agent_Skills_Ecosystem_Catalog|Agent Skills 生态目录]] `4`
+- [[Agent_Skills_Multi_Role_Analysis|Agent Skills 多角色全景分析]] `4`
+- [[Agent_Skills_Practical_Guide|Agent Skills 实战指南]] `7`
+- [[HuggingFace_Hub_Tools|Hugging Face Hub Tools: 将十万模型化为 Agent 技能]] `3`
+- [[15_Agent_Production/Agent_Skills/README|Agent Skills 文档索引]] `12`
+- [[Skill_Versioning_Guide|Skill 版本管理与团队治理]] `5`
+- [[Skills-in-nutshell|Agent Skills 书写速览]] `6`
+- [[Spring_AI_Skills_Integration|Spring AI 与 Agent Skills 集成]] `3`
+- [[Tool_Calling_Best_Practices|Tool Calling 最佳实践]] `9`
+- [[15_Agent_Production/Agent_Skills/index|Agent Skills]] `1`
+- [[AgentOps_Production_Guide|智能体 AI 权威指南 Part 3: AgentOps 与生产化落地]] `26`
+- [[Agentic_UI_UX_Design_2026|Agentic UI/UX Design 2026: Designing for AI Agents]] `4`
+- [[Agentic_Workflow_Design_Patterns_2026|Agentic Workflow Design Patterns 2026: Beyond Simple Chains]] `9`
+- [[LangGraph_Deep_Dive|LangGraph 深度解读]] `6`
+- [[Workflow-in-nutshell|AI 工作流速成指南]] `17`
+- [[15_Agent_Production/Agent_Workflow/index|Agent Workflow]] `2`
+- [[Agentic_Coding_Tools_Overview|AI Agent 全景图 2026]] `2`
+- [[Aider_Deep_Dive|Aider: AI 代码编辑工具]] `2`
+- [[15_Agent_Production/Agentic_Coding_Tools/Claude_Code_Deep_Dive|Claude Code: Anthropic 官方 Agent 编程 CLI]] `6`
+- [[Continue_Deep_Dive|Continue: 开源 AI 代码助手]] `2`
+- [[International_Agentic_Tools|国际顶级 Agentic Coding 工具]] `2`
+- [[OpenCode_Deep_Dive|OpenCode: 自主执行式 AI 编程 Agent]] `2`
+- [[15_Agent_Production/Agentic_Coding_Tools/README|Agentic Coding 工具]] `4`
+- [[Windsurf_Cursor_Devin_Dive|Agentic Coding CLI 工具全景对比]] `2`
+- [[15_Agent_Production/Agentic_Coding_Tools/index|Agentic Coding Tools]] `1`
+- [[Agentic_Design_Patterns_AndrewNg|吴恩达：Agentic Design Patterns 深度解析 (含 Prompt 与代码实现)]] `25`
+- [[Learn_Claude_Code_L01_Agent_Loop|Learn Claude Code L01：Agent Loop — 一个循环就够了]] `3`
+- [[Learn_Claude_Code_L03_Permission_System|Learn Claude Code L03：Permission — 执行前做权限判断]] `2`
+- [[Learn_Claude_Code_L06_Subagent|Learn Claude Code L06：Subagent — 大任务拆小，干净上下文]] `4`
+- [[Learn_Claude_Code_L07_Skill_Loading|Learn Claude Code L07 - Skill Loading]] `3`
+- [[Learn_Claude_Code_L08_Context_Compact|Learn Claude Code L08：Context Compact — 上下文总会满，要有办法腾地方]] `4`
+- [[Learn_Claude_Code_L09_Memory_System|Learn Claude Code L09：Memory — 压缩会丢细节，要有一层不丢的]] `3`
+- [[Learn_Claude_Code_L12_Task_System|Learn Claude Code L12：Task System — 目标太大，拆成小任务]] `3`
+- [[Learn_Claude_Code_L15_Agent_Teams|Learn Claude Code L15：Agent Teams — 一个搞不定，组队来]] `5`
+- [[Learn_Claude_Code_L17_Autonomous_Agents|Learn Claude Code L17：Autonomous Agents — 自己看板，自己认领]] `5`
+- [[Learn_Claude_Code_L19_MCP_Plugin|Learn Claude Code L19 - MCP Plugin]] `3`
+- [[Microsoft_AI_Agents_L00_Course_Setup|L00 课程环境设置：Microsoft AI Agents for Beginners]] `3`
+- [[Microsoft_AI_Agents_L01_Intro|L01 AI 代理简介与使用场景]] `7`
+- [[Microsoft_AI_Agents_L02_Frameworks|L02 探索 AI Agentic 框架]] `8`
+- [[Microsoft_AI_Agents_L03_Design_Principles|L03 Agentic 设计原则：Space / Time / Core 三维框架]] `3`
+- [[Microsoft_AI_Agents_L04_Tool_Use|L04 工具使用设计模式]] `7`
+- [[Microsoft_AI_Agents_L05_Agentic_RAG|L05 Agentic RAG]] `7`
+- [[Microsoft_AI_Agents_L06_Trustworthy_Agents|L06 构建可信 AI Agent：系统消息框架、威胁建模与人在回路]] `10`
+- [[Microsoft_AI_Agents_L07_Planning_Design|L07 规划设计模式：任务分解、结构化输出与迭代重规划]] `7`
+- [[Microsoft_AI_Agents_L08_Multi_Agent|L08 多 Agent 设计模式：组聊、Hand-off、协同过滤]] `7`
+- [[Microsoft_AI_Agents_L09_Metacognition|L09 AI Agent 元认知：自我反思、Corrective RAG 与代码生成]] `9`
+- [[Microsoft_AI_Agents_L10_Production|L10 生产化 AI Agent：可观测性与评估（Observability & Evaluation）]] `8`
+- [[Microsoft_AI_Agents_L11_Agentic_Protocols|L11 Agentic 协议：MCP / A2A / NLWeb 三件套]] `8`
+- [[Microsoft_AI_Agents_L12_Context_Engineering|L12 上下文工程：四类上下文、六大管理策略与四大失败模式]] `6`
+- [[Microsoft_AI_Agents_L13_Agent_Memory|L13 Agent 记忆：七种记忆类型、Mem0/Cognee/Azure AI Search 实现]] `7`
+- [[Microsoft_AI_Agents_L14_Microsoft_Agent_Framework|L14 Microsoft Agent Framework 深度：Agents / Threads / Middleware / Workflows]] `5`
+- [[Microsoft_AI_Agents_L15_Browser_Use|L15 浏览器使用 Agent (CUA)：Browser-Use + Playwright + CDP 混合架构]] `4`
+- [[Microsoft_AI_Agents_L18_Securing_AI_Agents|L18 用加密审计收据保障 AI Agent 安全：Ed25519 + JCS + 哈希链]] `5`
+- [[15_Agent_Production/Course_Notes/index|Course Notes]] `1`
+- [[Agent_Auth_Authorization|Agent Authentication & Authorization]] `1`
+- [[Agent_Production_2026|AI Agent 生产部署最佳实践 2026]] `7`
+- [[Enterprise_Agent_Governance_2026|Enterprise Agent Governance 2026: Managing Thousands of Agents]] `2`
+- [[Hermes_Agent_Deep_Dive|Hermes Agent: 面向企业级的 AI Agent 运行时框架]] `3`
+- [[15_Agent_Production/Enterprise_Agent/README|企业级 Agent]] `3`
+- [[15_Agent_Production/Enterprise_Agent/index|Enterprise Agent]] `1`
+- [[GenAI_L06_Text_Generation_Apps|构建文本生成应用程序]] `8`
+- [[GenAI_L07_Building_Chat_Applications|构建生成式 AI 驱动的聊天应用]] `8`
+- [[GenAI_L11_Integrating_with_Function_Calling|集成函数调用]] `13`
+- [[GenAI_L12_Designing_UX_for_AI_Applications|为人工智能应用设计用户体验]] `8`
+- [[GenAI_L17_AI_Agents|AI代理(Agents)]] `21`
+- [[Gradio_Deep_Dive|Gradio: 机器学习 Demo 框架]] `4`
+- [[Hello_Agents_L06_Frameworks_AutoGen_LangGraph|Hello-Agents L06：框架开发实践（AutoGen / AgentScope / CAMEL / LangGraph）]] `5`
+- [[Hello_Agents_L08_Memory_RAG|Hello-Agents L08：记忆与检索（Memory System + RAG）]] `7`
+- [[Hello_Agents_L10_Agent_Protocols|Hello-Agents L10：智能体通信协议（MCP / A2A / ANP）]] `5`
+- [[Hello_Agents_L13_Travel_Assistant|Hello-Agents L13：智能旅行助手（多 Agent + MCP 实战）]] `7`
+- [[Hello_Agents_L15_Cyber_Town|Hello-Agents L15：构建赛博小镇（AI NPC + 游戏引擎 + 记忆好感度）]] `3`
+- [[Agent_Memory_Systems_2026|AI Agent 记忆系统 2026]] `9`
+- [[Agent_Memory_Techniques|AI Agent 记忆技术完全指南]] `6`
+- [[RAG_Memory_Infrastructure_Tools|RAG、记忆与 Agent 基础设施]] `3`
+- [[15_Agent_Production/Memory_Infrastructure/README|记忆与基础设施]] `6`
+- [[15_Agent_Production/Memory_Infrastructure/index|Memory Infrastructure]] `1`
+- [[CoPaw_Deep_Dive|CoPaw Deep Dive: Alibaba''s Personal AI Agent Workstation]] `3`
+- [[Manus_My_Computer|Manus \"My Computer\": Meta''s Desktop AI Agent Revolution]] `4`
+- [[OpenClaw_Complete_Guide|OpenClaw 从入门到精通：完整运维与使用指南]] `6`
+- [[OpenClaw_Ecosystem|OpenClaw Ecosystem: The AI Agent Revolution (2026)]] `5`
+- [[OpenClaw_Ecosystem_for_dummy|OpenClaw Ecosystem for Beginners: Your AI Assistant That Actually Does Things]] `3`
+- [[OpenClaw_Internals|OpenClaw 内部机制与生产优化深度指南]] `6`
+- [[OpenClaw_Technical_Deep_Dive|OpenClaw Technical Deep Dive: Architecture, Internals & Implementation]] `5`
+- [[QClaw_Guide|QClaw Complete Guide: Tencent's WeChat-First AI Agent]] `3`
+- [[Skills_ClawHub|Skills & ClawHub: The OpenClaw Skill Ecosystem]] `3`
+- [[Wuying_AgentBay|Wuying AgentBay: Alibaba Cloud's AI Agent Infrastructure]] `3`
+- [[15_Agent_Production/OpenClaw_Ecosystem/index|Openclaw Ecosystem]] `1`
+- [[15_Agent_Production/README|Agent 生产部署 (Agent Production)]] `41`
+- [[15_Agent_Production/README_for_dummy|13 Agent 生产部署 — 小白版 🤖]] `4`
+- [[15_Agent_Production/assets/index|Assets]] `1`
+- [[15_Agent_Production/assets/the-anatomy-of-an-agent-harness.assets/index|The Anatomy Of An Agent Harness.assets]] `1`
+- [[15_Agent_Production/index|Agent Production]] `6`
+- [[15_Agent_Production/tests/index|Tests]] `1`
+
+## 16_AI_Coding（74）
+
+- [[AI_Code_Security_Audit_Runbook|AI 代码安全审计 Runbook]] `4`
+- [[AI_Coding-in-nutshell|AI 辅助编程速览 (AI-Assisted Coding in a Nutshell)]] `3`
+- [[AI_Coding_2026_Guide|AI 编程 2026 全景指南]] `6`
+- [[AI_Coding_for_dummy|AI 编程 - 小白版]] `4`
+- [[Cursor_ClaudeCode_Comparison|Cursor vs Claude Code 对比指南]] `2`
+- ⭐ [[MOC_OpenRouter_OpenCode|topic-ai-coding MOC]] `27`
+- [[Agentic_Coding_Methodology|Agentic Coding Methodology 2026: Multi-Agent Software Engineering]] `3`
+- [[Vibe_Coding_Methodology|Vibe Coding 方法论 2026 完整指南]] `4`
+- [[Vibe_Coding_Production_Practices|Vibe Coding 生产环境实践指南]] `3`
+- [[16_AI_Coding/Methodology/index|Methodology]] `1` 🔒
+- [[OpenRouter_OpenCode_Guide|AI 编程与 LLM 网关专题 — OpenRouter & OpenCode 全量指南]] `27`
+- [[Claude_Enterprise_Use_Cases|Claude 企业实践案例]] `2`
+- [[Vibe_Coding_Getting_Started|Vibe Coding 傻瓜指南 (Vibe Coding for Dummies)]] `4`
+- [[Vibe_Coding_Prompt_Templates|Vibe Coding 提示词模板库]] `4`
+- [[Vibe_Coding_Real_World_Cases|Vibe Coding 实战案例集]] `4`
+- [[16_AI_Coding/Practice/index|Practice]] `1` 🔒
+- [[16_AI_Coding/README|AI编程 (AI Coding)]] `18`
+- [[16_AI_Coding/README_for_dummy|17 AI 编程 — 小白版 💻]] `3`
+- [[AI_Coding_Theory|AI辅助编程理论基础]] `27`
+- [[Claude_Agent_Architecture|Claude Agent 架构：设计模式、上下文管理与多智能体协作]] `14`
+- [[Claude_Cost_Optimization|Claude 成本优化与性能调优]] `2`
+- [[16_AI_Coding/Theory/index|Theory]] `1` 🔒
+- [[AI_Coding_Assistants_2026|AI编程助手 2026年全景报告]] `8`
+- [[16_AI_Coding/Tools/Claude_Code_Deep_Dive|Claude Code 深度解析：CLI、SDK、IDE 与自动化工作流]] `4`
+- [[Claude_Complete_Guide|Claude 完整指南：模型、提示工程、工具与协议]] `13`
+- [[CodeBuddy_Guide|CodeBuddy / WorkBuddy 使用指南]] `25`
+- [[Comate_Guide|Comate 使用指南]] `26`
+- [[Coze_Guide|Coze 使用指南]] `26`
+- [[Cursor_Guide|Cursor 使用指南]] `8`
+- [[DeepSeek_Guide|DeepSeek 使用指南]] `3`
+- [[GLM_Guide|GLM 使用指南]] `2`
+- [[Grok_Guide|Grok / Grok Code 使用指南]] `2`
+- [[Hermes_Agent_2026|Hermes Agent 2026年专业指南]] `4`
+- [[Ima_Guide|Ima 使用指南]] `2`
+- [[Kilo_Guide|Kilo / KiloClaw 使用指南]] `2`
+- [[Kimi_Guide|Kimi Code / Kimi Chat 使用指南]] `2`
+- [[Manus_Guide|Manus 使用指南]] `2`
+- [[MiMO_Guide|MiMO 使用指南]] `2`
+- [[MiniMax_Guide|MiniMax / MiniClaw 使用指南]] `2`
+- [[Monica_Guide|Monica 使用指南]] `3`
+- [[21-opencode-overview-architecture|OpenCode 概述与核心架构]] `25`
+- [[22-opencode-installation-quickstart|安装部署与快速入门]] `25`
+- [[23-opencode-providers-models|Provider 与模型管理]] `25`
+- [[24-opencode-agents-system|Agent 系统深度指南]] `24`
+- [[25-opencode-tools-permissions|工具体系与权限模型]] `4`
+- [[26-opencode-mcp-integration|MCP 协议集成指南]] `3`
+- [[27-opencode-lsp-formatters|LSP 代码智能与 Formatter]] `3`
+- [[28-opencode-skills-commands|Agent Skill 与自定义命令]] `3`
+- [[29-opencode-tui-customization|TUI 定制：快捷键、主题与界面]] `3`
+- [[30-opencode-server-api|Server 模式与 HTTP API]] `3`
+- [[31-opencode-github-automation|GitHub 集成与 CI/CD 自动化]] `3`
+- [[32-opencode-advanced-topics|进阶话题与生产最佳实践]] `3`
+- [[16_AI_Coding/Tools/OpenCode/index|Opencode]] `1`
+- [[01-openrouter-overview-architecture|OpenRouter 概述与核心架构]] `26`
+- [[02-openrouter-quickstart-setup|快速接入与环境配置]] `26`
+- [[03-openrouter-models-providers|模型与 Provider 生态]] `25`
+- [[04-openrouter-provider-routing|智能路由与 Provider 选择]] `25`
+- [[05-openrouter-api-reference|API 参考与请求/响应规范]] `27`
+- [[06-openrouter-structured-outputs-tools|Structured Outputs 与 Tool Calling]] `25`
+- [[07-openrouter-plugins-web-search|插件体系与 Web Search]] `25`
+- [[08-openrouter-prompt-caching-optimization|Prompt Caching 与成本优化]] `26`
+- [[09-openrouter-frameworks-integrations|框架集成与生态系统]] `25`
+- [[10-openrouter-streaming-multimedia|流式传输与多模态输入]] `25`
+- [[11-openrouter-security-privacy|安全、隐私与数据治理]] `12`
+- [[12-openrouter-enterprise-advanced|企业级高级实践]] `3`
+- [[16_AI_Coding/Tools/OpenRouter/index|Openrouter]] `1`
+- [[Pending_Tools_Catalog|待探索工具目录]] `2`
+- [[Qoder_Guide|Qoder / QoderWork / QoderWake 使用指南]] `3`
+- [[Qwen_Guide|Qwen (通义千问) 使用指南]] `2`
+- [[Trae_Guide|Trae 使用指南]] `2`
+- [[codex-openai_overview|OpenAI Codex 概览]] `2`
+- [[github-copilot_overview|GitHub Copilot 概览]] `2`
+- [[16_AI_Coding/Tools/index|Tools]] `3`
+- [[16_AI_Coding/index|AI Coding]] 🔒
+
+## 17_Ethics_Safety（46）
+
+- [[AI_Ethics_And_Future_For_Beginners|AI 伦理、安全与未来：从偏见到 AGI 与量子硬件]] `7`
+- [[AI_Ethics_Safety_Future|AI 伦理、安全与未来]] `4`
+- [[AI_Governance_Compliance_2026|AI 治理与合规 2026]] `13`
+- [[AI_Red_Teaming_Guide|AI 红队测试完全指南]] `11`
+- [[AI_Regulatory_Engineering_2026|AI Regulatory Engineering & EU AI Act Compliance 2026]] `3`
+- [[AI_Safety_RedTeaming|AI 安全与红队 (AI Safety & Red Teaming)]] `16`
+- [[AI_Safety_RedTeaming_for_dummy|AI 安全与红队测试 - 小白版]] `3`
+- [[17_Ethics_Safety/AI_Safety_RedTeaming/index|AI Safety Redteaming]] `2`
+- [[AI_Security_2026|AI安全 2026年完全指南]] `10`
+- [[Falco_Deep_Dive|Falco 深度解析: 容器运行时安全检测]] `2`
+- [[Kyverno_Deep_Dive|Kyverno 深度解析: Kubernetes 原生策略引擎]] `2`
+- [[OPA_Deep_Dive|OPA / Gatekeeper 深度解析: 云原生策略即代码]] `2`
+- [[17_Ethics_Safety/AI_Security_2026/README|AI安全 2026 (AI Security)]] `19`
+- [[17_Ethics_Safety/AI_Security_2026/index|AI Security 2026]] `3`
+- [[AI_Supply_Chain_Security|AI 供应链安全 2026]] `8`
+- [[AI_Supply_Chain_Security_for_dummy|AI 供应链安全小白指南 (AI Supply Chain Security for Dummy)]] `2`
+- [[17_Ethics_Safety/AI_Supply_Chain_Security/index|AI Supply Chain Security]] `2`
+- [[Agent_RAG_Security|Agent & RAG Security - Agent Risks, Tool Safety, Multi-Agent Architecture & Rule of Two]] `19`
+- [[Agent_Security_Ethics_AGI|智能体安全、价值对齐与 AGI 路径]] `5`
+- [[Constitutional_AI_Deep_Dive|Constitutional AI (CAI) 深度解读：Anthropic 的宪法式对齐方法]] `12`
+- [[Deepfake_Security|Deepfake 安全 2026]] `2`
+- [[Deepfake_Security_for_dummy|深度伪造安全小白指南 (Deepfake Security for Dummy)]] `2`
+- [[17_Ethics_Safety/Deepfake_Security/index|Deepfake Security]] `2`
+- [[Ethics-in-nutshell|AI 伦理与安全速成指南]] `15`
+- [[Ethics_Safety-in-nutshell|AI 伦理与安全速览 (AI Ethics & Safety in a Nutshell)]] `3`
+- [[Federated_Learning_Deep_Dive|联邦学习深度解读: 从 FedAvg 到联邦 LLM 微调]] `2`
+- [[17_Ethics_Safety/Federated_Learning/README|联邦学习 (Federated Learning)]] `3`
+- [[17_Ethics_Safety/Federated_Learning/index|Federated Learning]] `1` 🔒
+- [[GenAI_L03_Using_GenAI_Responsibly|负责任地使用生成式人工智能]] `8`
+- [[GenAI_L13_Securing_AI_Applications|保护生成式AI应用程序]] `10`
+- [[Guardrails_Production_Guide|AI 护栏 (Guardrails) 生产实践指南]] `13`
+- [[LLM_Security_Complete_Guide|LLM Security Complete Guide - Attack Techniques & Threat Landscape]] `30`
+- [[LLM_Security_Defense_Guide|LLM Security Defense Guide - Architecture, I/O Protection, Operations & Governance]] `25`
+- [[Mechanistic_Interpretability|机械可解释性 (Mechanistic Interpretability) 2026]] `2`
+- [[Mechanistic_Interpretability_for_dummy|机制可解释性小白指南 (Mechanistic Interpretability for Dummy)]] `2`
+- [[17_Ethics_Safety/Mechanistic_Interpretability/index|Mechanistic Interpretability]] `2`
+- [[Privacy_Preserving_AI|隐私保护 AI (Privacy-Preserving AI) 2026]] `2`
+- [[Privacy_Preserving_AI_for_dummy|隐私保护 AI 小白指南 (Privacy Preserving AI for Dummy)]] `2`
+- [[17_Ethics_Safety/Privacy_Preserving_AI/index|Privacy Preserving AI]] `1` 🔒
+- [[17_Ethics_Safety/README|08 AI 伦理、安全与对齐 (Ethics, Safety & Alignment)]] `16`
+- [[17_Ethics_Safety/README_for_dummy|08 AI 伦理、安全与对齐 - 小白版]] `3`
+- [[Safety_Evaluation_Framework|AI 安全评测框架 2026: 从基准测试到红队实战]] `13`
+- [[Value_Alignment|价值对齐 (Value Alignment)]] `7`
+- [[Value_Alignment_for_dummy|价值对齐 - 小白版]] `2`
+- [[17_Ethics_Safety/Value_Alignment/index|Value Alignment]] `4`
+- [[17_Ethics_Safety/index|Ethics Safety]] 🔒
+
+## 18_AI_Applications_Industry（48）
+
+- [[AI_Applications_Industry|AI应用与行业融合全景]] `8`
+- [[AI_Applications_Industry_for_dummy|AI 行业应用 - 小白版]] `3`
+- [[AI_Platform_Selection_2026|AI 平台选型 2026]] `5`
+- [[AI_Production_Architecture_2026|AI 生产架构 2026]] `9`
+- [[AI_for_Science_Deep_Dive|AI for Science 深度解读: 从 AlphaFold 到科学基础模型]] `4`
+- [[Materials_Science_and_Energy_2026|AI for Science: Materials Science and Energy 2026]] `3`
+- [[Protein_Folding_and_Drug_Discovery_2026|AI for Science: Protein Folding and Drug Discovery 2026]] `4`
+- [[18_AI_Applications_Industry/AI_for_Science/README|AI for Science (AI 驱动的科学发现)]] `3`
+- [[18_AI_Applications_Industry/AI_for_Science/index|AI For Science]] `1` 🔒
+- [[AI_Agriculture_2026|AI 农业行业应用 (2025-2026)]] `5`
+- [[18_AI_Applications_Industry/Agriculture/index|Agriculture]] `1` 🔒
+- [[AI_Autonomous_Driving_2026|AI 自动驾驶与智能交通应用 (2025-2026)]] `6`
+- [[18_AI_Applications_Industry/Autonomous_Driving/index|Autonomous Driving]] `1` 🔒
+- [[AI_Code_Generation_2026|AI 代码生成应用场景深度解析]] `3`
+- [[18_AI_Applications_Industry/Code_Generation/index|Code Generation]] `1` 🔒
+- [[AI_Content_Media_2026|AI 内容创作与媒体行业应用 (2025-2026)]] `2`
+- [[18_AI_Applications_Industry/Content_Media/index|Content Media]] `1` 🔒
+- [[AI_Education_2026|AI 教育行业应用 (2025-2026)]] `3`
+- [[AI_Education_Applications_2026|AI 教育应用场景深度解析]] `4`
+- [[18_AI_Applications_Industry/Education/index|Education]] `2`
+- [[AI_Energy_Climate_2026|AI 能源与气候行业应用 (2025-2026)]] `6`
+- [[18_AI_Applications_Industry/Energy_Climate/index|Energy Climate]] `1` 🔒
+- [[AI_Finance_2026|AI 金融服务行业应用 (2025-2026)]] `4`
+- [[AI_Finance_Applications_2026|AI 金融应用场景深度解析]] `4`
+- [[18_AI_Applications_Industry/Finance/index|Finance]] `2`
+- [[GenAI_L10_Building_Low_Code_AI_Applications|构建低代码 AI 应用程序]] `6`
+- ⭐ [[AI_HR_Recruitment_2026|AI 人才招聘应用 2026 (AI for HR & Recruitment 2026)]] `1` 🔒
+- [[18_AI_Applications_Industry/HR_Recruitment/index|HR Recruitment]] `1` 🔒
+- [[AI_Healthcare_2026|AI 医疗健康行业应用 (2025-2026)]] `5`
+- [[AI_Healthcare_Applications_2026|AI 医疗健康应用场景深度解析]] `3`
+- [[18_AI_Applications_Industry/Healthcare/index|Healthcare]] `2`
+- [[Industry-in-nutshell|AI 行业应用速成指南]] `3`
+- [[Industry_Applications-in-nutshell|AI 行业应用速览 (AI Industry Applications in a Nutshell)]] `2`
+- [[Industry_Comparison_2026|AI 行业应用对比 2026 (Industry Comparison)]] `8`
+- [[AI_Legal_Government_2026|AI 法律与政务行业应用 (2025-2026)]] `4`
+- [[18_AI_Applications_Industry/Legal_Government/index|Legal Government]] `1` 🔒
+- [[Logistics_Supply_Chain|AI Applications in Logistics & Supply Chain]] `1` 🔒
+- [[AI_Manufacturing_2026|AI 智能制造行业应用 (2025-2026)]] `4`
+- [[18_AI_Applications_Industry/Manufacturing/index|Manufacturing]] `1` 🔒
+- [[18_AI_Applications_Industry/README|13 - AI应用与行业融合]] `10`
+- [[18_AI_Applications_Industry/README_for_dummy|AI 行业应用 — 小白版 🏭]] `7`
+- [[AI_Retail_Ecommerce_2026|AI 零售与电商行业应用 (2025-2026)]] `4`
+- [[18_AI_Applications_Industry/Retail_Ecommerce/index|Retail Ecommerce]] `1` 🔒
+- ⭐ [[AI_Security_Cybersecurity_2026|AI 网络安全应用 2026 (AI for Cybersecurity 2026)]] `1` 🔒
+- [[18_AI_Applications_Industry/Security_Cybersecurity/index|Security Cybersecurity]] `1` 🔒
+- ⭐ [[AI_Supply_Chain_2026|AI 供应链物流应用 2026 (AI for Supply Chain & Logistics 2026)]] `1` 🔒
+- [[18_AI_Applications_Industry/Supply_Chain_Logistics/index|Supply Chain Logistics]] `1` 🔒
+- [[18_AI_Applications_Industry/index|AI Applications Industry]] 🔒
+
+## 19_Talks（90）
+
+- [[19_Talks/3Blue1Brown/about|Grant Sanderson (3Blue1Brown) — 数学可视化教育革命者]] `2`
+- [[19_Talks/3Blue1Brown/index|3blue1brown]] `1` 🔒
+- [[19_Talks/3Blue1Brown/youtube_channel|3Blue1Brown YouTube 频道]] `4`
+- [[19_Talks/Andrej_Karpathy/about|Andrej Karpathy 简介 (Andrej Karpathy)]] `46`
+- [[19_Talks/Andrej_Karpathy/index|Andrej Karpathy]] `2`
+- [[19_Talks/Andrej_Karpathy/sayings|Andrej Karpathy 关于 AI 的观点 (Andrej Karpathy on AI)]] `3`
+- [[19_Talks/Andrej_Karpathy/youtube_channel|Andrej Karpathy YouTube 频道]] `3`
+- [[19_Talks/Andrew_Ng/about|Andrew Ng 简介 (Andrew Ng)]] `45`
+- [[19_Talks/Andrew_Ng/index|Andrew Ng]] `1` 🔒
+- [[19_Talks/Andrew_Ng/sayings|Andrew Ng 关于 AI 的观点与格言]] `41`
+- [[19_Talks/Bill_Gates/about|Bill Gates 简介 (Bill Gates)]] `44`
+- [[19_Talks/Bill_Gates/index|Bill Gates]] `1` 🔒
+- [[19_Talks/Bill_Gates/sayings|Bill Gates 关于 AI 的观点 (Bill Gates on AI)]] `9`
+- [[19_Talks/Dario_Amodei/about|Dario Amodei 简介 (Dario Amodei)]] `10`
+- [[19_Talks/Dario_Amodei/index|Dario Amodei]] `1` 🔒
+- [[19_Talks/Dario_Amodei/sayings|Dario Amodei 关于 AI 的观点 (Dario Amodei on AI)]] `4`
+- [[19_Talks/Demis_Hassabis/about|Demis Hassabis 简介 (Demis Hassabis)]] `4`
+- [[19_Talks/Demis_Hassabis/index|Demis Hassabis]] `1` 🔒
+- [[19_Talks/Demis_Hassabis/sayings|Demis Hassabis 关于 AI 的观点 (Demis Hassabis on AI)]] `3`
+- [[19_Talks/Elon_Musk/about|Elon Musk 简介 (Elon Musk)]] `2`
+- [[19_Talks/Elon_Musk/index|Elon Musk]] `1` 🔒
+- [[19_Talks/Elon_Musk/sayings|Elon Musk 关于 AI 的观点与格言 (Elon Musk on AI)]] `2`
+- [[19_Talks/Emad_Mostaque/about|Emad Mostaque 简介 (Emad Mostaque)]] `3`
+- [[19_Talks/Emad_Mostaque/index|Emad Mostaque]] `1` 🔒
+- [[19_Talks/Emad_Mostaque/sayings|Emad Mostaque 关于 AI 的观点 (Emad Mostaque on AI)]] `3`
+- [[19_Talks/Fei_Fei_Li/about|李飞飞简介 (Fei-Fei Li)]] `2`
+- [[19_Talks/Fei_Fei_Li/index|Fei Fei Li]] `1` 🔒
+- [[19_Talks/Fei_Fei_Li/sayings|李飞飞 (Fei-Fei Li) 关于 AI 的观点与格言]] `2`
+- [[19_Talks/Geoffrey_Hinton/about|Geoffrey Hinton 简介 (Geoffrey Hinton)]] `5`
+- [[19_Talks/Geoffrey_Hinton/index|Geoffrey Hinton]] `1` 🔒
+- [[19_Talks/Geoffrey_Hinton/sayings|Geoffrey Hinton 关于 AI 的观点 (Geoffrey Hinton on AI)]] `3`
+- [[19_Talks/Ilya_Sutskever/about|Ilya Sutskever 简介 (Ilya Sutskever)]] `4`
+- [[19_Talks/Ilya_Sutskever/index|Ilya Sutskever]] `1` 🔒
+- [[19_Talks/Ilya_Sutskever/sayings|Ilya Sutskever 关于 AI 的观点 (Ilya Sutskever on AI)]] `2`
+- [[19_Talks/Jensen_Huang/about|Jensen Huang 简介 (Jensen Huang)]] `4`
+- [[19_Talks/Jensen_Huang/index|Jensen Huang]] `1` 🔒
+- [[19_Talks/Jensen_Huang/sayings|Jensen Huang 关于 AI 的观点 (Jensen Huang on AI)]] `4`
+- [[19_Talks/Jie_Tang/about|唐杰 (Jie Tang) — 智谱 AI 联合创始人/首席科学家]] `3`
+- [[19_Talks/Jie_Tang/index|Jie Tang]] `1` 🔒
+- [[19_Talks/Jie_Tang/sayings|唐杰关于 AI 的观点 (Jie Tang on AI)]] `2`
+- [[19_Talks/Jinze_Bai/about|白金泽 (Jinze Bai) — 通义千问/Qwen 团队负责人]] `3`
+- [[19_Talks/Jinze_Bai/index|Jinze Bai]] `1` 🔒
+- [[19_Talks/Jinze_Bai/sayings|白金泽关于 AI 的观点 (Jinze Bai on AI)]] `2`
+- [[19_Talks/Josh_Starmer/about|Josh Starmer (StatQuest) — 统计学与 AI 教育界的清晰之声]] `2`
+- [[19_Talks/Josh_Starmer/index|Josh Starmer]] `1` 🔒
+- [[19_Talks/Josh_Starmer/youtube_channel|StatQuest Josh Starmer YouTube 频道]] `4`
+- [[19_Talks/Junjie_Yan/about|闫俊杰 (Junjie Yan) — MiniMax 创始人]] `3`
+- [[19_Talks/Junjie_Yan/index|Junjie Yan]] `1` 🔒
+- [[19_Talks/Junjie_Yan/sayings|闫俊杰关于 AI 的观点 (Junjie Yan on AI)]] `2`
+- [[19_Talks/Mark_Zuckerberg/about|Mark Zuckerberg 简介 (Mark Zuckerberg)]] `3`
+- [[19_Talks/Mark_Zuckerberg/index|Mark Zuckerberg]] `1` 🔒
+- [[19_Talks/Mark_Zuckerberg/sayings|Mark Zuckerberg 关于 AI 的观点 (Mark Zuckerberg on AI)]] `2`
+- [[19_Talks/Mira_Murati/about|Mira Murati 简介 (Mira Murati)]] `2`
+- [[19_Talks/Mira_Murati/index|Mira Murati]] `1` 🔒
+- [[19_Talks/Mira_Murati/sayings|Mira Murati 关于 AI 的观点 (Mira Murati on AI)]] `2`
+- [[19_Talks/Mustafa_Suleyman/about|Mustafa Suleyman 简介 (Mustafa Suleyman)]] `3`
+- [[19_Talks/Mustafa_Suleyman/index|Mustafa Suleyman]] `1` 🔒
+- [[19_Talks/Mustafa_Suleyman/sayings|Mustafa Suleyman 关于 AI 的观点 (Mustafa Suleyman on AI)]] `3`
+- [[19_Talks/README|AI 名人演讲与观点 (Talks)]] `17`
+- [[19_Talks/README_for_dummy|21 业界观点 — 小白版 🎤]] `3`
+- [[19_Talks/Richard_Socher/about|Richard Socher 简介 (Richard Socher)]] `3`
+- [[19_Talks/Richard_Socher/index|Richard Socher]] `1` 🔒
+- [[19_Talks/Richard_Socher/sayings|Richard Socher 关于 AI 的观点 (Richard Socher on AI)]] `3`
+- [[19_Talks/Sam_Altman/about|Sam Altman 简介 (Sam Altman)]] `8`
+- [[19_Talks/Sam_Altman/index|Sam Altman]] `1` 🔒
+- [[19_Talks/Sam_Altman/sayings|Sam Altman 关于 AI 的观点 (Sam Altman on AI)]] `3`
+- [[19_Talks/Satya_Nadella/about|Satya Nadella 简介 (Satya Nadella)]] `4`
+- [[19_Talks/Satya_Nadella/index|Satya Nadella]] `1` 🔒
+- [[19_Talks/Satya_Nadella/sayings|Satya Nadella 关于 AI 的观点 (Satya Nadella on AI)]] `3`
+- [[19_Talks/Sebastian_Thrun/about|Sebastian Thrun 简介 (Sebastian Thrun)]] `3`
+- [[19_Talks/Sebastian_Thrun/index|Sebastian Thrun]] `1` 🔒
+- [[19_Talks/Sebastian_Thrun/sayings|Sebastian Thrun 关于 AI 的观点 (Sebastian Thrun on AI)]] `3`
+- [[19_Talks/Sundar_Pichai/about|Sundar Pichai 简介 (Sundar Pichai)]] `3`
+- [[19_Talks/Sundar_Pichai/index|Sundar Pichai]] `1` 🔒
+- [[19_Talks/Sundar_Pichai/sayings|Sundar Pichai 关于 AI 的观点 (Sundar Pichai on AI)]] `3`
+- [[Talks_Synthesis_2026|AI 领袖观点合成 2026 (Talks Synthesis)]] `3`
+- [[Talks_for_dummy|AI 名人演讲与观点 - 小白版]] `3`
+- [[19_Talks/Wenfeng_Liang/about|梁文锋 (Wenfeng Liang) — DeepSeek 创始人]] `3`
+- [[19_Talks/Wenfeng_Liang/index|Wenfeng Liang]] `1` 🔒
+- [[19_Talks/Wenfeng_Liang/sayings|梁文锋关于 AI 的观点 (Wenfeng Liang on AI)]] `2`
+- [[19_Talks/Yann_LeCun/about|Yann LeCun 简介 (Yann LeCun)]] `8`
+- [[19_Talks/Yann_LeCun/index|Yann Lecun]] `1` 🔒
+- [[19_Talks/Yann_LeCun/sayings|Yann LeCun 关于 AI 的观点 (Yann LeCun on AI)]] `4`
+- [[19_Talks/Yoshua_Bengio/about|Yoshua Bengio 简介 (Yoshua Bengio)]] `5`
+- [[19_Talks/Yoshua_Bengio/index|Yoshua Bengio]] `1` 🔒
+- [[19_Talks/Yoshua_Bengio/sayings|Yoshua Bengio 关于 AI 的观点 (Yoshua Bengio on AI)]] `2`
+- [[19_Talks/Zhilin_Yang/about|杨植麟 (Zhilin Yang) — 月之暗面/Moonshot AI 创始人]] `3`
+- [[19_Talks/Zhilin_Yang/index|Zhilin Yang]] `1` 🔒
+- [[19_Talks/Zhilin_Yang/sayings|杨植麟关于 AI 的观点 (Zhilin Yang on AI)]] `2`
+- [[19_Talks/index|Talks]] 🔒
+
+## 20_Papers_and_Research（47）
+
+- [[Chain_of_Thought_Deep_Dive|论文深度解读: Chain-of-Thought — 让 LLM 逐步推理]] `5`
+- [[DPO_Deep_Dive|Direct Preference Optimization (DPO) 深度解读]] `2`
+- [[RLHF_DPO_Deep_Dive|RLHF 与 DPO 深度解读 (从 InstructGPT 到 Direct Preference Optimization)]] `10`
+- [[20_Papers_and_Research/Alignment/index|Alignment]] `1` 🔒
+- [[Attention_Is_All_You_Need_Deep_Dive|Attention Is All You Need 深度解读]] `12`
+- [[BERT_Deep_Dive|BERT 深度解读 (Bidirectional Encoder Representations from Transformers)]] `6`
+- [[LLaMA_Deep_Dive|LLaMA 深度解读 (Open and Efficient Foundation Language Models)]] `2`
+- [[Mixture_of_Experts_Deep_Dive|Mixture of Experts 深度解读 (从 Switch Transformers 到 Mixtral 和 DeepSeek)]] `4`
+- [[Word2Vec_Deep_Dive|论文深度解读: Word2Vec — Efficient Estimation of Word Representations in Vector Space]] `2`
+- [[20_Papers_and_Research/Architecture/index|Architecture]] `1` 🔒
+- [[LoRA_Deep_Dive|LoRA 深度解读 (Low-Rank Adaptation of Large Language Models)]] `3`
+- [[20_Papers_and_Research/Efficiency/Matryoshka_Representation_Learning_Deep_Dive|论文深度解读: Matryoshka Representation Learning]] `6`
+- [[20_Papers_and_Research/Efficiency/index|Efficiency]] `1` 🔒
+- [[DeepSeek_V3_Technical_Report|DeepSeek-V3 Technical Report 深度解读]] `3`
+- [[20_Papers_and_Research/Frontier/index|Frontier]] `1` 🔒
+- [[00_问题定义与范围|课题研究：大模型推理入门 — 问题定义与范围]] `2`
+- [[01_文献调研|课题研究：大模型推理入门 — 文献调研]] `2`
+- [[02_分析与论证|课题研究：大模型推理入门 — 分析与论证（学校类比）]] `2`
+- [[03_结论与产出|课题研究：大模型推理入门 — 结论与产出]] `2`
+- [[20_Papers_and_Research/Methodology/LLM_Inference_Research/index|LLM Inference Research]] `1` 🔒
+- [[20_Papers_and_Research/Methodology/index|Methodology]] `1` 🔒
+- [[Paper_Reading_and_Reproduction_Guide|论文阅读与复现工程指南]] `2`
+- [[20_Papers_and_Research/README|22 经典与必读 AI 论文清单 (Essential AI Papers)]] `17`
+- [[20_Papers_and_Research/README_for_dummy|22 Papers — 小白版 📚]] `2`
+- [[AlphaGo_Deep_Dive|AlphaGo 深度解读 (Mastering the Game of Go)]] `2`
+- [[20_Papers_and_Research/RL/DQN_Deep_Dive|DQN 深度解读 (Playing Atari with Deep Reinforcement Learning)]] `3`
+- [[20_Papers_and_Research/RL/index|RL]] `1` 🔒
+- [[Research_README|课题研究 (Research)]] `3`
+- [[Research_README_for_dummy|课题研究 — 小白版 (Research for Beginners)]] `2`
+- [[Research_Template|课题研究模板 (Research Template)]] `5`
+- [[RAG_Deep_Dive|论文深度解读: RAG — 检索增强生成 (Retrieval-Augmented Generation)]] `5`
+- [[20_Papers_and_Research/Retrieval/index|Retrieval]] `1` 🔒
+- [[Chinchilla_Deep_Dive|Training Compute-Optimal Large Language Models (Chinchilla) 深度解读]] `3`
+- [[GPT3_Deep_Dive|GPT-3 深度解读 (Language Models are Few-Shot Learners)]] `7`
+- [[GPT4_Deep_Dive|GPT-4 Technical Report 深度解读]] `2`
+- [[Scaling_Laws_Deep_Dive|Scaling Laws for Neural Language Models (Kaplan et al.) 深度解读]] `3`
+- [[20_Papers_and_Research/Scaling/index|Scaling]] `1` 🔒
+- [[AlexNet_Deep_Dive|论文深度解读: AlexNet — ImageNet Classification with Deep Convolutional Neural Networks]] `2`
+- [[20_Papers_and_Research/Vision/CLIP_Deep_Dive|CLIP 深度解读 (Learning Transferable Visual Models From Natural Language Supervision)]] `4`
+- [[20_Papers_and_Research/Vision/Diffusion_Models_Deep_Dive|Diffusion Models 深度解读 (从 DDPM 到 Stable Diffusion 再到 DiT)]] `6`
+- [[GAN_Deep_Dive|GAN 深度解读 (Generative Adversarial Networks)]] `4`
+- [[ResNet_Deep_Dive|ResNet 深度解读 (Deep Residual Learning for Image Recognition)]] `9`
+- [[UNet_Deep_Dive|论文深度解读: U-Net — Convolutional Networks for Biomedical Image Segmentation]] `2`
+- [[VAE_Deep_Dive|论文深度解读: VAE — 变分自编码器 (Auto-Encoding Variational Bayes)]] `2`
+- [[20_Papers_and_Research/Vision/index|Vision]] `1` 🔒
+- [[20_Papers_and_Research/index|Papers And Research]] 🔒
+- [[papers-with-code_overview|Papers with Code 概览]] `2`
+
+## 21_Interviews（73）
+
+- [[21_Interviews/AI_Data_Analyst/company_level_question_bank|AI Data Analyst 按公司/级别区分的题库]] `7`
+- [[21_Interviews/AI_Data_Analyst/index|AI Data Analyst]] `1` 🔒
+- [[21_Interviews/AI_Data_Analyst/interview_answers|AI Data Analyst 面试题实例答案]] `6`
+- [[21_Interviews/AI_Data_Analyst/interview_preparing|AI Data Analyst 面试准备]] `7`
+- [[21_Interviews/AI_Data_Analyst/question_bank|AI Data Analyst 题库]] `7`
+- [[AI_Evaluation_Engineer|AI Evaluation Engineer 面试指南]] `3`
+- [[21_Interviews/AI_Evaluation_Engineer/index|AI Evaluation Engineer]] `1` 🔒
+- [[21_Interviews/AI_Infrastructure_Engineer/company_level_question_bank|AI Infrastructure Engineer 按公司/级别区分的题库]] `6`
+- [[21_Interviews/AI_Infrastructure_Engineer/index|AI Infrastructure Engineer]] `1` 🔒
+- [[21_Interviews/AI_Infrastructure_Engineer/interview_answers|AI Infrastructure Engineer 面试题实例答案]] `6`
+- [[21_Interviews/AI_Infrastructure_Engineer/interview_preparing|AI Infrastructure Engineer 面试准备]] `7`
+- [[21_Interviews/AI_Infrastructure_Engineer/question_bank|AI Infrastructure Engineer 题库]] `9`
+- [[AI_Policy_Specialist|AI Policy Specialist 面试指南]] `3`
+- [[21_Interviews/AI_Policy_Specialist/index|AI Policy Specialist]] `1` 🔒
+- [[AI_Product_Manager|AI Product Manager 面试指南]] `3`
+- [[21_Interviews/AI_Product_Manager/index|AI Product Manager]] `3`
+- [[AI_Reliability_Engineer|AI Reliability Engineer 面试指南]] `3`
+- [[21_Interviews/AI_Reliability_Engineer/index|AI Reliability Engineer]] `1` 🔒
+- [[AI_Research_Engineer|AI Research Engineer 面试指南]] `3`
+- [[21_Interviews/AI_Research_Engineer/index|AI Research Engineer]] `1` 🔒
+- [[AI_Research_Scientist|AI Research Scientist 面试指南]] `3`
+- [[21_Interviews/AI_Research_Scientist/index|AI Research Scientist]] `1` 🔒
+- [[AI_Security_Engineer|AI Security Engineer 面试指南]] `3`
+- [[21_Interviews/AI_Security_Engineer/index|AI Security Engineer]] `1` 🔒
+- [[AI_Solutions_Architect|AI Solutions Architect 面试指南]] `3`
+- [[21_Interviews/AI_Solutions_Architect/index|AI Solutions Architect]] `2`
+- [[Agent_Engineer_2026|Agent Engineer 岗位面试指南 (2026)]] `3`
+- [[Applied_Scientist|Applied Scientist 面试指南]] `3`
+- [[21_Interviews/Applied_Scientist/index|Applied Scientist]] `1` 🔒
+- [[Cloud_Ops_Engineer|Cloud Ops Engineer 面试指南]] `4`
+- [[21_Interviews/Cloud_Ops_Engineer/index|Cloud Ops Engineer]] `1` 🔒
+- [[21_Interviews/Computer_Vision_Engineer/company_level_question_bank|Computer Vision Engineer 按公司/级别区分的题库]] `6`
+- [[21_Interviews/Computer_Vision_Engineer/index|Computer Vision Engineer]] `1` 🔒
+- [[21_Interviews/Computer_Vision_Engineer/interview_answers|Computer Vision Engineer 面试题实例答案]] `6`
+- [[21_Interviews/Computer_Vision_Engineer/interview_preparing|Computer Vision Engineer 面试准备]] `7`
+- [[21_Interviews/Computer_Vision_Engineer/question_bank|Computer Vision Engineer 题库]] `7`
+- [[Data_Engineer|Data Engineer 面试指南]] `3`
+- [[21_Interviews/Data_Engineer/index|Data Engineer]] `1` 🔒
+- [[21_Interviews/Data_Scientist/company_level_question_bank|Data Scientist 按公司/级别区分的题库]] `6`
+- [[21_Interviews/Data_Scientist/index|Data Scientist]] `1` 🔒
+- [[21_Interviews/Data_Scientist/interview_answers|Data Scientist 面试题实例答案]] `6`
+- [[21_Interviews/Data_Scientist/interview_preparing|Data Scientist 面试准备]] `7`
+- [[21_Interviews/Data_Scientist/question_bank|Data Scientist 题库]] `8`
+- [[Interviews_for_dummy|AI 面试准备 - 小白版]] `3`
+- [[21_Interviews/LLM_Platform_Engineer/company_level_question_bank|LLM Platform Engineer 按公司/级别区分的题库]] `6`
+- [[21_Interviews/LLM_Platform_Engineer/index|LLM Platform Engineer]] `1` 🔒
+- [[21_Interviews/LLM_Platform_Engineer/interview_answers|LLM Platform Engineer 面试题实例答案]] `6`
+- [[21_Interviews/LLM_Platform_Engineer/interview_preparing|LLM Platform Engineer 面试准备]] `7`
+- [[21_Interviews/LLM_Platform_Engineer/question_bank|LLM Platform Engineer 题库]] `7`
+- [[MLOps_Engineer|MLOps Engineer 面试指南]] `3`
+- [[21_Interviews/MLOps_Engineer/index|Mlops Engineer]] `1` 🔒
+- [[21_Interviews/Machine_Learning_Engineer/company_level_question_bank|Machine Learning Engineer 按公司/级别区分的题库]] `6`
+- [[21_Interviews/Machine_Learning_Engineer/index|Machine Learning Engineer]] `2`
+- [[21_Interviews/Machine_Learning_Engineer/interview_answers|Machine Learning Engineer 面试题实例答案]] `6`
+- [[21_Interviews/Machine_Learning_Engineer/interview_preparing|Machine Learning Engineer 面试准备]] `7`
+- [[21_Interviews/Machine_Learning_Engineer/question_bank|Machine Learning Engineer 题库]] `9`
+- [[21_Interviews/NLP_Engineer/company_level_question_bank|NLP Engineer 按公司/级别区分的题库]] `6`
+- [[21_Interviews/NLP_Engineer/index|NLP Engineer]] `1` 🔒
+- [[21_Interviews/NLP_Engineer/interview_answers|NLP Engineer 面试题实例答案]] `6`
+- [[21_Interviews/NLP_Engineer/interview_preparing|NLP Engineer 面试准备]] `7`
+- [[21_Interviews/NLP_Engineer/question_bank|NLP Engineer 题库]] `8`
+- [[Prompt_Engineer|Prompt Engineer 面试指南]] `3`
+- [[21_Interviews/Prompt_Engineer/index|Prompt Engineer]] `1` 🔒
+- [[21_Interviews/README|AI 面试准备 (Interviews)]] `70`
+- [[21_Interviews/README_for_dummy|AI 面试准备 — 小白版 🎯]] `2`
+- [[Research_Scientist|Research Scientist 面试指南]] `3`
+- [[21_Interviews/Research_Scientist/index|Research Scientist]] `1` 🔒
+- [[Robotics_Engineer|Robotics Engineer 面试指南]] `4`
+- [[21_Interviews/Robotics_Engineer/index|Robotics Engineer]] `1` 🔒
+- [[System_Design_for_AI|System Design for AI Interviews]] `2`
+- [[21_Interviews/index|Interviews]] 🔒
+- [[interview_notes_template|面试复盘模板 (Interview Notes Template)]] `4`
+- [[jobs|AI 相关岗位与工种清单 (AI Roles & Jobs)]] `66`
+
+## 90_Learn（80）
+
+- [[ailearning_guide|ApacheCN AiLearning 学习指南]] `7`
+- [[90_Learn/Courses/apachecn/index|Apachecn]] `1` 🔒
+- [[coursera_deep_learning_specialization|Coursera 深度学习专项课程 (Deep Learning Specialization)]] `2`
+- [[coursera_math_for_ml|Mathematics for Machine Learning 专项课程]] `2`
+- [[coursera_ml_specialization|Coursera 机器学习专项课程 (Machine Learning Specialization)]] `2`
+- [[coursera_nlp_specialization|NLP 专项课程 (Coursera)]] `2`
+- [[coursera_rag_intro|RAG 入门实践项目 (Coursera)]] `2`
+- [[90_Learn/Courses/coursera/index|Coursera]] `1` 🔒
+- [[90_Learn/Courses/deeplearning_ai/index|Deeplearning Ai]] `1` 🔒
+- [[short_courses|DeepLearning.AI 短课程 (Short Courses) 核心知识库提炼]] `5`
+- [[agents_course|HuggingFace AI Agents 课程]] `2`
+- [[deep_rl_course|HuggingFace 深度强化学习课程 (Deep RL Course)]] `2`
+- [[90_Learn/Courses/hugging_face/index|Hugging Face]] `1` 🔒
+- [[official_courses|Hugging Face 官方系统化课程：离线硬核知识点提取]] `6`
+- [[90_Learn/Courses/index|Courses]] `1` 🔒
+- [[L00_Course_Setup|L00 - 课程环境设置]] `2`
+- [[L01_Introduction_and_History_of_AI|L01 - 人工智能介绍与历史]] `2`
+- [[L02_Knowledge_Representation_and_Expert_Systems|L02 - 知识表示与专家系统]] `2`
+- [[L03_Perceptron|L03 - 感知器]] `2`
+- [[L04_Multi_Layered_Perceptron|L04 - 多层感知器及创建自己的框架]] `2`
+- [[L05_Frameworks_and_Overfitting|L05 - 框架简介与过拟合]] `2`
+- [[L06_Intro_to_Computer_Vision|L06 - 计算机视觉简介与 OpenCV]] `2`
+- [[L07_CNN_and_Architectures|L07 - 卷积神经网络与 CNN 架构]] `3`
+- [[L08_Transfer_Learning_and_Training_Tricks|L08 - 预训练网络、迁移学习与训练技巧]] `2`
+- [[L09_Autoencoders_and_VAEs|L09 - 自编码器与变分自编码器VAE]] `2`
+- [[L10_GANs_and_Style_Transfer|L10 - 生成对抗网络与艺术风格迁移]] `2`
+- [[L11_Object_Detection|L11 - 目标检测]] `2`
+- [[L12_Semantic_Segmentation|L12 - 语义分割与U-Net]] `2`
+- [[L13_Text_Representation|L13 - 文本表示：词袋模型与 TF-IDF]] `2`
+- [[L14_Semantic_Word_Embeddings|L14 - 语义词嵌入：Word2Vec 与 GloVe]] `2`
+- [[L15_Language_Modeling|L15 - 语言建模与自定义嵌入训练]] `2`
+- [[L16_Recurrent_Neural_Networks|L16 - 循环神经网络RNN]] `3`
+- [[L17_Generative_Recurrent_Networks|L17 - 生成循环网络]] `2`
+- [[L18_Transformers_and_BERT|L18 - Transformer 与 BERT]] `3`
+- [[L19_Named_Entity_Recognition|L19 - 命名实体识别 NER]] `2`
+- [[L20_Large_Language_Models|L20 - 大语言模型提示编程与少样本任务]] `2`
+- [[L21_Genetic_Algorithms|L21 - 遗传算法]] `2`
+- [[L22_Deep_Reinforcement_Learning|L22 - 深度强化学习]] `2`
+- [[L23_Multi_Agent_Systems|L23 - 多智能体系统]] `2`
+- [[L24_AI_Ethics_and_Responsible_AI|L24 - AI 伦理与负责任的 AI]] `2`
+- [[L25_Multi_Modal_Networks|L25 - 多模态网络 CLIP 与 VQGAN]] `2`
+- [[90_Learn/Courses/microsoft/index|Microsoft]] `1` 🔒
+- [[microsoft_ai_agents_for_beginners|Microsoft AI Agents for Beginners：16 课 AI 代理初学者课程映射]] `18`
+- ⭐ [[microsoft_ai_for_beginners|Microsoft AI For Beginners：12 周初学者课程映射]] `37`
+- [[microsoft_genai_for_beginners|Microsoft Generative AI For Beginners：21 课生成式 AI 初学者课程映射]] `42`
+- [[fastai_practical_dl|fast.ai 实用深度学习 (Practical Deep Learning for Coders)]] `3`
+- [[hands_on_llms|Hands-On Large Language Models：12 章课程映射]] `4`
+- [[hello_agents|Hello-Agents (Datawhale) 课程映射：从零开始构建智能体]] `5`
+- [[90_Learn/Courses/other/index|Other]] `1` 🔒
+- [[stanford_cs231n|Stanford CS231n: 计算机视觉与深度学习]] `2`
+- [[statquest|StatQuest 学习资源]] `1`
+- [[90_Learn/Courses/share_ai/index|Share Ai]] `1` 🔒
+- [[learn_claude_code|Learn Claude Code 课程映射：20 课 Harness 工程]] `14`
+- [[90_Learn/README|Learn — AI Guru 概念入门路径]] `13`
+- [[90_Learn/README_for_dummy|90 Learn — 小白版 🚀]] `3`
+- [[90_Learn/concepts/index|Concepts]] `1` 🔒
+- [[stage0_awakening|Stage 0: AI 觉醒]] `4`
+- [[stage1_foundation|Stage 1: 基础概念]] `3`
+- [[stage2_core_tech|Stage 2: 核心技术]] `3`
+- [[stage3_engineering|Stage 3: 工程实践]] `3`
+- [[stage4_frontier|Stage 4: 前沿探索]] `3`
+- [[ai_engineering_roadmap_2026|AI 工程学习路线图 2026（免费资源精选）]] `60`
+- ⭐ [[ai_project_guide|AI 实战项目指南]] `1`
+- [[90_Learn/guides/index|Guides]] `1` 🔒
+- [[learning_paths_2026|AI Guru 学习路径指南]] `12`
+- [[milestones|里程碑自测]] `11`
+- ⭐ [[skills_self_assessment|AI 技能自评清单]] `2`
+- [[90_Learn/index|Learn]] 🔒
+- [[absolute-beginner|零基础通识路径]] `11`
+- ⭐ [[ai-engineer|AI 工程师学习路径 (AI Engineer Learning Path)]] `5`
+- [[ai-researcher|AI 研究者路径]] `12`
+- ⭐ [[cv-engineer|CV 工程师学习路径]] `1` 🔒
+- ⭐ [[data-scientist|数据科学家学习路径]] `3`
+- [[90_Learn/pathways/index|Pathways]] `1` 🔒
+- [[java-developer|Java 开发者 AI 路径]] `10`
+- [[llm-engineer|LLM 工程师路径]] `8`
+- [[ml-practitioner|ML 从业者路径]] `8`
+- ⭐ [[mlops-engineer|MLOps 工程师学习路径]] `1`
+- ⭐ [[nlp-engineer|NLP 工程师学习路径]] `1` 🔒
+- [[product-manager|AI 产品经理路径]] `4`
+
+## 93_Templates（15）
+
+- ⭐ [[AB_Testing_Template|A/B 测试方案模板]] 🔒
+- [[API_Design_for_AI|AI API 设计指南]] `6`
+- [[DOCUMENT_TEMPLATES|AI Guru 知识库 — 文档模板规范]] `13`
+- ⭐ [[Datasheet_Template|数据集文档模板 (Datasheet)]] 🔒
+- ⭐ [[Deployment_Runbook_Template|部署 Runbook 模板]] 🔒
+- [[Documentation_Automation|AI 文档自动化]] `5`
+- ⭐ [[Evaluation_Report_Template|模型评估报告模板]] `2`
+- ⭐ [[Experiment_Tracking_Template|实验跟踪记录模板]] 🔒
+- ⭐ [[IMPORT_GUIDE|📥 导入指南]] `9`
+- [[LLM_Gateway_Deep_Dive|LLM Gateway 深度实战：设计、实现与运维模板]] `6`
+- ⭐ [[Model_Card_Template|Model Card 模型卡片模板]] `2`
+- [[Prompt_Management_Platform|Prompt 管理平台]] `6`
+- [[93_Templates/README|工具领域知识与项目工具指南 (Tools)]] `7`
+- [[93_Templates/README_for_dummy|93 Tools — 小白版 🛠️]] `4`
+- [[93_Templates/index|Templates]] 🔒
+
+## 94_Visualization（11）
+
+- ⭐ [[AI_System_Dashboard|AI 系统监控仪表盘]] `7`
+- ⭐ [[Data_Visualization_Best_Practices|数据可视化最佳实践]] `2`
+- ⭐ [[Evaluation_Visualization_Guide|评估结果可视化]] `1`
+- ⭐ [[Knowledge_Graph_Visualization|知识图谱可视化]] `2`
+- ⭐ [[Model_Interpretability_Visualization|模型可解释性可视化]] `4`
+- ⭐ [[Neural_Network_Visualization_Guide|神经网络可视化指南]] `2`
+- [[94_Visualization/README|知识图谱可视化 (Visualization)]] `8`
+- ⭐ [[94_Visualization/README_for_dummy|94 Visualization — 小白版 📊]] `3`
+- ⭐ [[Training_Monitoring_Visualization|训练监控可视化 (Training Monitoring Visualization)]] `5`
+- ⭐ [[Visualization_for_dummy|AI 可视化 - 小白版]] `3`
+- [[94_Visualization/index|Visualization]] 🔒
+
+## AGENTS.md（1）
+
+- [[AGENTS|AGENTS]] 🔒
+
+## CONTRIBUTING.md（1）
+
+- [[CONTRIBUTING|Contributing to AI Guru]] `1`
+
+## README.md（1）
+
+- [[README|AI Guru 知识库]] `6`
+
+## README_EN.md（1）
+
+- [[README_EN|AI Guru Knowledge Base (English)]] `1`
+
+## README_for_dummy.md（1）
+
+- [[README_for_dummy|AI Guru 知识库 - 新手导航]] `1`
+
+## _concepts（548）
+
+- [[3fs|3FS 分布式文件系统 (DeepSeek 3FS / Fire-Flyer File System)]] `2`
+- ⭐ [[_concepts/README|概念卡片索引 (Concept Cards Index)]] `2`
+- ⭐ [[a-speed|A-Speed 加速推理套件 (A-Speed Acceleration Suite)]] `8`
+- ⭐ [[a2a-protocol|Agent-to-Agent Protocol (A2A)]] `5`
+- ⭐ [[ab-testing-framework|A/B 测试框架]] `10`
+- [[accelerate|HuggingFace Accelerate 训练框架 (HF Accelerate)]] `3`
+- ⭐ [[ack|ACK]] `8`
+- [[activation-value|激活值 (Activation Value)]] `4`
+- [[adversarial-attack|Adversarial Attack]] `3`
+- [[adversarial-training|Adversarial Training]] `2`
+- [[affinity|Affinity（亲和性调度）]] `4`
+- ⭐ [[agent-evaluation-benchmarks|Agent 评估基准]] `6`
+- ⭐ [[agent-framework|AI Agent 框架总览]] `9`
+- ⭐ [[agent-harness|Agent Harness (智能体驭具)]] `5`
+- ⭐ [[agent-loop|Agent Loop (智能体循环)]] `12`
+- ⭐ [[agent-memory-systems|Agent 记忆系统（Memory）]] `3`
+- ⭐ [[agent-planning|Agent 规划（Planning）]] `5`
+- [[agent-production-deployment|Agent 生产部署 (Agent Production Deployment)]] `3`
+- ⭐ [[agent-reflection|Agent 反思（Reflection）]] `3`
+- ⭐ [[agentic-rag|Agentic RAG]] `17`
+- [[agentops|AgentOps (AI Agent 可观测性平台)]] `4`
+- [[ai-agents|AI智能体]] `53`
+- [[ai-architecture|AI 系统架构]] `10`
+- ⭐ [[ai-coding-paradigms|AI 编程范式（AI Coding Paradigms）]] `2`
+- ⭐ [[ai-ethics|AI伦理]] `11`
+- ⭐ [[ai-for-science|AI for Science (AI驱动的科学发现)]] `2`
+- ⭐ [[ai-fundamentals|AI基础概念]] `13`
+- ⭐ [[ai-future-trends|AI未来趋势]] `8`
+- [[ai-hardware|AI硬件]] `14`
+- ⭐ [[ai-history|AI历史]] `7`
+- [[ai-sre|AI SRE]] `2`
+- ⭐ [[ai-stack|AI Stack]] `3`
+- ⭐ [[ai-technology-landscape|AI技术全景]] `10`
+- ⭐ [[alibaba-cloud|Alibaba Cloud]] `6`
+- [[alibi|ALiBi（Attention with Linear Biases）]] `5`
+- ⭐ [[alignment-practical-pipeline|LLM 安全对齐实战 Pipeline：SFT → RLHF/DPO]] `4`
+- [[annotation|Annotation]] `2`
+- [[anomaly-detection|异常检测]] `7`
+- ⭐ [[apg-gpu|APG 自研加速卡 (Alibaba Proprietary GPU)]] `5`
+- ⭐ [[apsara-stack|飞天企业版 Apsara Stack]] `18`
+- [[argo-rollouts|Argo Rollouts]] `2`
+- ⭐ [[argocd|ArgoCD（GitOps 持续部署工具）]] `9`
+- [[arthur-ai|Arthur AI (LLM 安全与性能监控平台)]] `2`
+- ⭐ [[ascend-npu|华为昇腾 NPU (Huawei Ascend NPU)]] `15`
+- ⭐ [[attention-variants|Attention 变体 (GQA/MQA/SWA)]] `19`
+- [[autogen-studio|AutoGen Studio (多 Agent 可视化 IDE)]] `4`
+- ⭐ [[autogen|AutoGen]] `11`
+- [[automl|AutoML]] `7`
+- ⭐ [[autoregressive-generation|自回归生成（Autoregressive Generation）]] `9`
+- ⭐ [[awq|AWQ（Activation-aware Weight Quantization）]] `5`
+- ⭐ [[aws-bedrock|AWS Bedrock]] `9`
+- ⭐ [[azure-openai|Azure OpenAI]] `9`
+- [[backstage|Backstage]] `2`
+- ⭐ [[bailian-exclusive|百炼专属版 (Bailian Exclusive Edition)]] `2`
+- ⭐ [[bayesian-methods|贝叶斯方法 (Bayesian Methods)]] `4`
+- ⭐ [[bbh|BBH]] `6`
+- ⭐ [[beam-search|束搜索（Beam Search）]] `7`
+- ⭐ [[benchmark|Benchmark（基准测试）]] `4`
+- ⭐ [[bitsandbytes|bitsandbytes 量化优化库 (bitsandbytes Quantization Library)]] `3`
+- [[bm25|BM25]] `3`
+- [[cambricon|Cambricon]] `2`
+- [[cann|CANN]] `4`
+- ⭐ [[causal-inference|因果推断 (Causal Inference)]] `2`
+- ⭐ [[causal-mask|因果掩码（Causal Mask）]] `7`
+- [[cdi|CDI (Container Device Interface)]] `20`
+- [[cert-manager|cert-manager]] `2`
+- [[chainlit|Chainlit 生产级 AI 聊天界面 (Chainlit Production Chat UI)]] `3`
+- [[chaos-engineering|Chaos Engineering]] `3`
+- ⭐ [[checkpoint|Checkpoint 检查点]] `7`
+- [[chinese-ai-chips|Chinese AI Chips]] `3`
+- [[chroma|Chroma（嵌入式向量数据库）]] `5`
+- ⭐ [[ci-cd|CI/CD（持续集成 / 持续部署）]] `6`
+- ⭐ [[ci-integrated-evaluation|CI 集成评估]] `8`
+- ⭐ [[cloud-ai-platform|云厂商 AI 平台对比]] `10`
+- [[cloud-cost|Cloud Cost]] `2`
+- [[clusterrole|ClusterRole]] `2`
+- [[clusterrolebinding|ClusterRoleBinding]] `2`
+- [[cni|CNI（Container Network Interface）]] `10`
+- ⭐ [[code-generation-workflow|代码生成工作流]] `7`
+- ⭐ [[code-generation|代码生成]] `5`
+- ⭐ [[colossal-ai|Colossal-AI]] `3`
+- [[colossalai|ColossalAI 分布式训练框架 (ColossalAI Distributed Training)]] `5`
+- ⭐ [[computer-architecture|计算机体系结构 (Computer Architecture)]] `2`
+- [[computer-vision|计算机视觉]] `11`
+- ⭐ [[concept-dependency-graph|概念间依赖关系图谱 — AI 知识体系的拓扑结构]] `3`
+- [[configmap|ConfigMap]] `3`
+- ⭐ [[consensus|Consensus Algorithm（共识算法）]] `2`
+- [[container-security|Container Security]] `5`
+- ⭐ [[containerd|containerd]] `20`
+- ⭐ [[context-engineering|Context Engineering (上下文工程)]] `4`
+- [[context-window|Context Window]] `1`
+- ⭐ [[continuous-batching|Continuous Batching (连续批处理)]] `30`
+- ⭐ [[cot-react-reasoning-prompt|CoT / ReAct / ToT — 推理时 Prompt 技巧]] `7`
+- [[crewai-tools|CrewAI Tools (Agent 工具集生态)]] `5`
+- [[crewai|CrewAI]] `3`
+- [[cri|CRI（Container Runtime Interface）]] `10`
+- [[crictl|crictl 容器运行时调试工具 (CRI Container Runtime CLI)]] `3`
+- [[cronjob|CronJob]] `2`
+- [[cross-encoder|Cross-Encoder]] `3`
+- ⭐ [[crystal-lattice|晶体点阵 (Crystal Lattice)]] `2`
+- [[csi|CSI（Container Storage Interface）]] `7`
+- [[ctr|ctr containerd 原生 CLI (ctr - containerd CLI)]] `3`
+- ⭐ [[cuda-graph|CUDA Graph]] `4`
+- ⭐ [[cuda-platform|CUDA 计算平台 (CUDA Platform)]] `9`
+- ⭐ [[cuda|CUDA]] `4`
+- [[cudnn|cuDNN]] `2`
+- [[daemonset|DaemonSet]] `2`
+- ⭐ [[data-cleaning-pipeline|数据清洗 Pipeline]] `5`
+- [[data-pipeline|Data Pipeline]] `5`
+- [[data-structures-algorithms|数据结构与算法]] `2`
+- [[data-validation|Data Validation]] `8`
+- [[data-versioning|Data Versioning]] `3`
+- [[dataherald|DataHerald (自然语言转 SQL 引擎)]] `2`
+- [[decoding-strategies-decision-tree|解码策略选择决策树]] `6`
+- ⭐ [[decoding-strategies|LLM 推理解码策略]] `17`
+- [[deep-reinforcement-learning|深度强化学习]] `6`
+- [[deepeval|DeepEval LLM 评估框架 (DeepEval - LLM Evaluation)]] `4`
+- [[deepgemm|DeepGEMM FP8 算子库 (DeepGEMM FP8 Kernel Library)]] `5`
+- ⭐ [[deepseek-models|DeepSeek 模型系列 (DeepSeek Model Family)]] `10`
+- ⭐ [[deepseek-series|DeepSeek 系列模型架构演进]] `4`
+- ⭐ [[deepspeed|DeepSpeed]] `26`
+- [[deployment|Deployment]] `17`
+- [[detect-secrets|detect-secrets (Yelp 密钥泄露检测工具)]] `3`
+- [[dify|Dify 开源 LLM 应用平台 (Dify Open-Source LLM App Platform)]] `3`
+- [[distributed-filesystem|Distributed Filesystem]] `3`
+- ⭐ [[distributed-parallelism|分布式并行策略 (Distributed Parallelism)]] `12`
+- [[distributed-systems|分布式系统]] `7`
+- ⭐ [[distributed-training|分布式训练（Distributed Training）]] `30`
+- [[docker|Docker]] `1`
+- [[docling|Docling 文档解析工具 (Docling Document Parser)]] `3`
+- ⭐ [[dora|DoRA]] `6`
+- ⭐ [[dpo|DPO（Direct Preference Optimization）]] `15`
+- ⭐ [[dra|DRA (Dynamic Resource Allocation)]] `17`
+- ⭐ [[dspy|DSPy (Stanford LLM 编程框架)]] `2`
+- [[dualpipe|DualPipe 双向流水线并行 (DualPipe Bidirectional Pipeline Parallelism)]] `3`
+- [[dvc|DVC]] `5`
+- ⭐ [[dynamic-batch-scheduling|动态批调度]] `7`
+- ⭐ [[eagle|EAGLE 推测解码 (EAGLE Speculative Decoding)]] `3`
+- ⭐ [[edge-llm|端侧 LLM (Edge LLM)]] `8`
+- ⭐ [[embedding-models|嵌入模型 (Embedding Models)]] `22`
+- [[embeddings-vectors-mrl-plain|Embedding、向量与 MRL 大白话]] `9`
+- [[ensemble-learning|集成学习]] `3`
+- [[envoy|Envoy]] `3`
+- ⭐ [[error-budget|Error Budget]] `8`
+- ⭐ [[etcd|etcd]] `6`
+- [[evidently|Evidently]] `4`
+- [[exllama|ExLlamaV2 量化推理引擎 (ExLlamaV2 Quantized LLM Inference)]] `3`
+- ⭐ [[experiment-tracking|Experiment Tracking (实验追踪)]] `3`
+- ⭐ [[expert-parallelism|Expert Parallelism]] `2`
+- [[external-secrets-operator|External Secrets Operator]] `3`
+- ⭐ [[falco|Falco]] `9`
+- ⭐ [[feast|Feast (开源特征存储平台)]] `4`
+- [[feature-engineering|特征工程]] `3`
+- ⭐ [[feature-store|Feature Store (特征存储)]] `6`
+- ⭐ [[federated-learning|联邦学习 (Federated Learning)]] `2`
+- ⭐ [[fine-tuning-techniques|微调技术]] `11`
+- [[finops|FinOps]] `10`
+- ⭐ [[flash-attention-kernels|Flash Attention 算子 (FlashMLA/FlashInfer)]] `15`
+- ⭐ [[flash-attn|Flash Attention (高效注意力内核)]] `5`
+- ⭐ [[flashinfer|FlashInfer 算子库 (FlashInfer Kernel Library)]] `4`
+- ⭐ [[flashmla|FlashMLA 注意力加速 (FlashMLA Kernel Library)]] `2`
+- ⭐ [[flops|FLOPS]] `2`
+- [[flowise|Flowise 可视化 LLM 编排 (Flowise Visual LLM Orchestration)]] `3`
+- [[fluent-bit|Fluent Bit]] `3`
+- [[flux|Flux]] `3`
+- ⭐ [[formal-logic|形式逻辑 (Formal Logic)]] `2`
+- ⭐ [[foundation-model|Foundation Model（基础模型）]] `5`
+- ⭐ [[fp8|FP8 浮点精度格式 (FP8 Floating Point Precision)]] `3`
+- ⭐ [[fsdp|FSDP (Fully Sharded Data Parallel)]] `18`
+- ⭐ [[function-calling|大模型 Function Calling（函数调用）]] `8`
+- ⭐ [[gemini|Google Gemini 模型]] `4`
+- [[generative-vision-models|视觉生成模型]] `6`
+- ⭐ [[gguf|GGUF]] `11`
+- [[giskard|Giskard (AI 模型测试与评估平台)]] `3`
+- [[git-lfs|Git LFS 大文件存储 (Git Large File Storage)]] `4`
+- ⭐ [[gitops|GitOps]] `5`
+- ⭐ [[gpt-series-evolution|GPT 系列模型演进]] `5`
+- [[gptcache|GPTCache (LLM 语义缓存引擎)]] `3`
+- ⭐ [[gptq|GPTQ（Post-Training Quantization for GPT）]] `5`
+- [[gpu-direct|GPU Direct]] `4`
+- ⭐ [[gpu-interconnect|NVLink 与 GPU 互联技术]] `8`
+- [[gpu-oom|GPU OOM]] `8`
+- [[gpu-operator|NVIDIA GPU Operator]] `13`
+- [[gpu-sharing|GPU Sharing]] `7`
+- ⭐ [[gpu-virtualization|GPU 虚拟化 (GPU Virtualization)]] `15`
+- ⭐ [[gpu|GPU]] `8`
+- [[gpustack|GPUStack]] `5`
+- [[gradient-checkpointing|Gradient Checkpointing]] `7`
+- [[gradient-descent|梯度下降 (Gradient Descent)]] `4`
+- [[gradio|Gradio ML 应用框架 (Gradio ML Application Framework)]] `2`
+- ⭐ [[grafana|Grafana]] `9`
+- ⭐ [[graph-neural-networks|图神经网络 (Graph Neural Networks)]] `2`
+- [[graph-of-thoughts|GoT（Graph of Thoughts）]] `2`
+- [[great-expectations|Great Expectations]] `5`
+- ⭐ [[greedy-decoding|贪心解码（Greedy Decoding）]] `10`
+- ⭐ [[grouped-query-attention|Grouped-Query Attention (GQA)]] `4`
+- ⭐ [[grpo|GRPO（Group Relative Policy Optimization）]] `12`
+- [[guardrails-ai|Guardrails AI (AI 安全防护框架)]] `9`
+- ⭐ [[guardrails|AI Guardrails (AI 护栏)]] `9`
+- [[guidance|Guidance (Microsoft Guidance)]] `3`
+- ⭐ [[hallucination|Hallucination (幻觉)]] `4`
+- ⭐ [[hami|HAMi (Heterogeneous AI Computing Virtualization Middleware)]] `38`
+- [[haystack|Haystack RAG 框架 (Haystack by deepset)]] `2`
+- [[helicone|Helicone LLM 可观测性 (Helicone AI Observability)]] `6`
+- ⭐ [[helm|Helm]] `14`
+- [[heterogeneous-gpu|异构 GPU 集群 (Heterogeneous GPU Cluster)]] `19`
+- [[hnsw|HNSW]] `5`
+- [[horizontal-pod-autoscaler|Horizontal Pod Autoscaler（HPA）]] `3`
+- [[how-llm-answers-plain|大模型回答问题是一道数学题吗？大白话]] `3`
+- [[huggingface-cli|HuggingFace CLI 命令行工具 (HuggingFace Command Line Interface)]] `4`
+- ⭐ [[huggingface-generate-deep-dive|Hugging Face generate() 深度使用]] `5`
+- ⭐ [[huggingface-hub|Hugging Face Hub (AI 模型与数据集托管平台)]] `3`
+- ⭐ [[huggingface|Hugging Face（AI 开源生态）]] `7`
+- ⭐ [[human-ai-interaction|人机交互 (Human-AI Interaction)]] `2`
+- [[humanloop|Humanloop (LLM Prompt 工程与评估平台)]] `5`
+- [[hybrid-search|Hybrid Search]] `4`
+- [[hygon|海光 CPU (Hygon CPU)]] `5`
+- [[image-segmentation|图像分割]] `3`
+- [[incident-response|Incident Response]] `6`
+- [[_concepts/index|Concepts]] `2`
+- ⭐ [[inference-autoscaling|Inference Autoscaling and Load Balancing]] `3`
+- [[inference-cluster-scheduling|LLM 推理集群调度]] `4`
+- ⭐ [[inference-performance-gaps|Inference Performance Gaps]] `3`
+- ⭐ [[inference-performance|Inference Performance]] `10`
+- [[infiniBand|InfiniBand]] `10`
+- ⭐ [[information-theory|信息论 (Information Theory)]] `3`
+- [[ingress|Ingress]] `5`
+- [[ipo|IPO（Identity Preference Optimization）]] `7`
+- [[istio|Istio]] `5`
+- [[ivf|IVF]] `4`
+- [[jaeger|Jaeger]] `5`
+- [[job|Job]] `3`
+- [[k3s|K3s]] `2`
+- [[karmada|Karmada]] `2`
+- ⭐ [[knowledge-distillation|知识蒸馏 (Knowledge Distillation)]] `7`
+- ⭐ [[kserve|KServe]] `14`
+- [[kto|KTO（Kahneman-Tversky Optimization）]] `9`
+- [[kubectl|kubectl Kubernetes CLI (Kubernetes Command-Line Tool)]] `25`
+- ⭐ [[kubeflow|Kubeflow]] `5`
+- ⭐ [[kubernetes|Kubernetes]] `87`
+- ⭐ [[kueue|Kueue]] `5`
+- [[kustomize|Kustomize（K8s 配置管理工具）]] `8`
+- ⭐ [[kv-cache-compression|KV Cache 压缩]] `9`
+- ⭐ [[kv-cache-plain|KV Cache 大白话解释]] `5`
+- ⭐ [[kv-cache|KV Cache (Key-Value Cache)]] `63`
+- ⭐ [[kyverno|Kyverno]] `10`
+- ⭐ [[label-studio|Label Studio (开源数据标注平台)]] `4`
+- [[label|Label]] `4`
+- [[lakefs|LakeFS]] `4`
+- ⭐ [[langchain|LangChain]] `9`
+- [[langflow|LangFlow 可视化 LLM 编排 (LangFlow Visual LLM Orchestration)]] `3`
+- [[langfuse|Langfuse (开源 LLM 可观测性平台)]] `5`
+- [[langgraph|LangGraph]] `1`
+- [[langserve|LangServe (LangChain 一键部署服务)]] `2`
+- [[langsmith|LangSmith LLM 可观测性平台 (LangSmith by LangChain)]] `13`
+- [[large-language-model|Large Language Model]] `2`
+- [[lemix|LeMix 训推统一调度 (LeMix Unified Training-Inference Scheduling)]] `2`
+- [[letta|Letta (MemGPT Agent 框架)]] `2`
+- [[limit-range|LimitRange]] `3`
+- [[linear-algebra|线性代数]] `8`
+- [[linkerd|Linkerd]] `4`
+- [[lisa|LISA (Layerwise Importance Sampled Adam)]] `2`
+- ⭐ [[litellm|LiteLLM 统一 LLM API 代理 (LiteLLM Unified LLM Gateway)]] `4`
+- [[llama-box|llama-box]] `3`
+- ⭐ [[llama-cpp|llama.cpp（C++ LLM 推理引擎）]] `5`
+- [[llama-index|LlamaIndex 数据框架 (LlamaIndex Data Framework for LLM Apps)]] `2`
+- ⭐ [[llama-series|LLaMA 系列模型架构演进]] `3`
+- [[llamaindex-cloud|LlamaIndex Cloud (LlamaIndex 云端 RAG 平台)]] `2`
+- ⭐ [[llamaindex|LlamaIndex]] `7`
+- ⭐ [[llm-architectures|LLM架构]] `22`
+- ⭐ [[llm-arena|LLM Arena]] `7`
+- ⭐ [[llm-as-judge|LLM-as-Judge（LLM 评判员）]] `3`
+- [[llm-benchmarks-deep-dive|主流 LLM Benchmark 详解]] `4`
+- ⭐ [[llm-benchmarks|LLM 评估基准（Benchmarks）概览]] `4`
+- ⭐ [[llm-data-engineering|LLM 数据工程 (LLM Data Engineering)]] `6`
+- [[llm-guard|LLM Guard (LLM 安全防护中间件)]] `5`
+- [[llm-inference-checklist|LLM 推理上线检查清单]] `7`
+- [[llm-inference-cost-optimization|LLM 推理成本优化]] `5`
+- ⭐ [[llm-inference-engine|LLM Inference Engine（LLM 推理引擎）]] `5`
+- [[llm-infrastructure|LLM 基础设施]] `20`
+- [[llm-papers-courses-index|LLM 论文与课程资源索引]] `3`
+- [[llm-production-deployment|LLM 生产部署（LLM Production Deployment）]] `3`
+- ⭐ [[llm-production-pipeline|LLM 生产流水线]] `3`
+- [[llm-quantization|LLM Quantization]] `3`
+- ⭐ [[llm-safety|LLM 安全]] `3`
+- [[llm-training-checklist|LLM 训练检查清单]] `6`
+- ⭐ [[llm-training-inference-key-concepts|LLM 训练与推理关键概念索引]] `3`
+- ⭐ [[llmops|LLMOps]] `2`
+- ⭐ [[lm-eval-harness|LM Evaluation Harness (EleutherAI LLM 评估框架)]] `5`
+- ⭐ [[lm-evaluation-harness|LM Evaluation Harness]] `6`
+- [[lm-format-enforcer|LM Format Enforcer (LLM 输出格式约束库)]] `4`
+- ⭐ [[lmdeploy|LMDeploy]] `2`
+- [[loki|Loki]] `6`
+- ⭐ [[long-context-llm|长上下文 LLM：训练与推理]] `6`
+- ⭐ [[long-context-models|长上下文模型]] `13`
+- ⭐ [[long-context-vs-rag|长上下文 vs RAG: 技术选型指南]] `4`
+- ⭐ [[lora-peft|LoRA 与参数高效微调 (PEFT)]] `24`
+- ⭐ [[lora-qlora-sft-rlhf-dpo|LoRA / QLoRA / SFT / RLHF / DPO 大白话串讲]] `8`
+- ⭐ [[mamba|Mamba]] `6`
+- [[matrix-operations|矩阵运算]] `2`
+- ⭐ [[matryoshka-representation-learning|Matryoshka Representation Learning（MRL，俄罗斯套娃表示学习）]] `11`
+- ⭐ [[mcp|Model Context Protocol (MCP)]] `5`
+- ⭐ [[medusa|Medusa 多头推测解码 (Medusa Multi-Head Speculative Decoding)]] `2`
+- ⭐ [[megatron-lm|Megatron-LM]] `14`
+- [[mem0|Mem0 (AI 记忆层基础设施)]] `3`
+- [[mig|MIG]] `9`
+- ⭐ [[milvus|Milvus]] `9`
+- [[mindie|MindIE]] `4`
+- [[miniconda|Miniconda (轻量级 Python 环境管理)]] `3`
+- ⭐ [[mixed-precision|混合精度训练与推理 (Mixed Precision)]] `14`
+- ⭐ [[mixture-of-experts|混合专家模型 (Mixture of Experts, MoE)]] `15`
+- ⭐ [[mlflow|MLflow 实验追踪与模型管理 (MLflow)]] `12`
+- [[mlops|MLOps 流水线]] `32`
+- ⭐ [[modal|Modal]] `6`
+- ⭐ [[model-compression-methods|LLM 模型压缩方法对比：量化、剪枝、蒸馏]] `4`
+- ⭐ [[model-compression|模型压缩]] `23`
+- ⭐ [[model-deployment|模型部署]] `27`
+- ⭐ [[model-evaluation|模型评估]] `24`
+- ⭐ [[model-formats|模型格式 (Model Formats)]] `4`
+- ⭐ [[model-gateway|模型网关 (Model Gateway / AI Gateway)]] `12`
+- ⭐ [[model-inference|模型推理原理 (Model Inference)]] `11`
+- [[model-parallelism|Model Parallelism]] `3`
+- ⭐ [[model-precision|模型精度 (Model Precision & Accuracy)]] `6`
+- ⭐ [[model-registry|模型仓库 (Model Registry)]] `10`
+- [[model-rollback|Model Rollback]] `5`
+- ⭐ [[model-routing|模型路由（Model Routing）]] `2`
+- [[model-security|Model Security]] `5`
+- ⭐ [[model-serving|模型服务]] `43`
+- ⭐ [[model-training|模型训练]] `16`
+- ⭐ [[model-weights-plain|模型权重大白话解释]] `2`
+- ⭐ [[modelscope|ModelScope 魔搭社区]] `8`
+- [[moonshot-kimi|Moonshot AI / Kimi 模型系列 (Moonshot AI & Kimi Model Family)]] `3`
+- [[mthreads|Moore Threads]] `2`
+- ⭐ [[mtp|Multi-Token Prediction (MTP) 多 Token 预测]] `4`
+- ⭐ [[multi-agent-orchestration|多 Agent 编排（Multi-Agent Orchestration）]] `5`
+- ⭐ [[multi-agent|Multi-Agent System（多智能体系统）]] `4`
+- ⭐ [[multi-head-latent-attention|Multi-head Latent Attention (MLA)]] `24`
+- ⭐ [[multimodal-llm|多模态大语言模型（Multimodal LLM）]] `8`
+- ⭐ [[multimodal-models|多模态模型]] `8`
+- ⭐ [[multimodal-vision|多模态视觉]] `3`
+- [[namespace|Namespace]] `3`
+- [[nas|NAS]] `5`
+- [[nccl|NCCL]] `9`
+- ⭐ [[ne-mo|NeMo (NVIDIA NeMo 训练与推理框架)]] `5`
+- [[nemo-guardrails|NeMo Guardrails (NVIDIA 对话行为控制框架)]] `4`
+- [[nerdctl|nerdctl 容器管理 CLI (nerdctl Container CLI)]] `5`
+- [[network-policy|Network Policy]] `4`
+- [[neural-networks|神经网络]] `18`
+- ⭐ [[neuro-symbolic-ai|Neuro-Symbolic AI（神经符号 AI）]] `3`
+- ⭐ [[next-token-prediction|下一个 Token 预测（Next Token Prediction）]] `9`
+- ⭐ [[nf4|NF4（4-bit NormalFloat Quantization）]] `2`
+- [[node|Node]] `3`
+- ⭐ [[nvidia-gpu|NVIDIA GPU]] `7`
+- [[nvidia-smi|nvidia-smi GPU 监控工具 (NVIDIA System Management Interface)]] `7`
+- [[nvlink|NVLink]] `7`
+- [[object-detection|目标检测]] `3`
+- ⭐ [[observability|AI 可观测性（LLM Observability）]] `9`
+- [[oci-runtime|OCI Runtime Spec (开放容器倡议运行时规范)]] `9`
+- [[ollama|Ollama 本地 LLM 运行工具 (Ollama Local LLM Runtime)]] `4`
+- ⭐ [[online-evaluation|在线评估]] `3`
+- ⭐ [[onnx|ONNX 开放神经网络交换格式 (Open Neural Network Exchange)]] `8`
+- ⭐ [[opa|OPA (Open Policy Agent)]] `9`
+- ⭐ [[openai|OpenAI 与 GPT 系列]] `4`
+- ⭐ [[opencompass|OpenCompass]] `6`
+- [[opentelemetry|OpenTelemetry]] `6`
+- [[openvino|OpenVINO 推理优化工具包 (OpenVINO Toolkit by Intel)]] `4`
+- [[opik|Opik LLM 可观测性平台 (Opik by Comet)]] `7`
+- [[optimization-regularization|优化与正则化]] `5`
+- [[orpo|ORPO（Odds Ratio Preference Optimization）]] `5`
+- [[oss|OSS]] `7`
+- [[outlines|Outlines 结构化 LLM 生成 (Outlines Structured Generation)]] `4`
+- ⭐ [[paged-attention|PagedAttention]] `37`
+- ⭐ [[pai|PAI]] `3`
+- [[pandera|Pandera]] `5`
+- [[parallel-training|Parallel Training]] `1`
+- ⭐ [[peft|PEFT 参数高效微调库 (Parameter-Efficient Fine-Tuning)]] `5`
+- ⭐ [[perplexity|困惑度（Perplexity, PPL）]] `7`
+- [[persistent-volume-claim|PersistentVolumeClaim（PVC）]] `7`
+- [[persistent-volume|PersistentVolume]] `5`
+- [[phoenix-langsmith|Phoenix (Arize 开源 LLM 可观测性平台)]] `3`
+- ⭐ [[pipeline-parallelism|Pipeline Parallelism（流水线并行）]] `6`
+- [[pissa|PiSSA 奇异值适配 (Principal Singular Values and Singular Vectors Adaptation)]] `2`
+- ⭐ [[platform-engineering|Platform Engineering]] `2`
+- [[pod-disruption-budget|Pod Disruption Budget]] `3`
+- [[pod-security-standards|Pod Security Standards]] `3`
+- [[pod|Pod]] `31`
+- ⭐ [[policy-as-code|Policy as Code（策略即代码）]] `6`
+- ⭐ [[ppo|PPO（Proximal Policy Optimization）]] `5`
+- [[ppu-smi|ppu-smi APG GPU 监控工具 (APG GPU Monitoring CLI)]] `3`
+- ⭐ [[pre-training|大模型预训练（Pre-training）]] `6`
+- ⭐ [[preference-learning|Preference Learning（偏好学习）]] `2`
+- [[prefill-decode-disaggregated|Prefill-Decode 分离部署架构]] `5`
+- ⭐ [[prefill-decode-disaggregation|Prefill-Decode Disaggregation]] `2`
+- ⭐ [[prefill-decode|Prefill/Decode 推理阶段]] `20`
+- ⭐ [[prefix-caching|Prefix Caching (前缀缓存)]] `10`
+- [[presidio|Presidio (Microsoft PII 检测与脱敏引擎)]] `6`
+- ⭐ [[pretrain-vs-finetune-vs-rag|预训练 vs 微调 vs RAG — 三种 LLM 定制方案选型]] `3`
+- [[probability-statistics|概率论与数理统计]] `13`
+- ⭐ [[prometheus|Prometheus]] `13`
+- ⭐ [[prompt-engineering|提示工程]] `18`
+- ⭐ [[prompt-injection|Prompt Injection (提示注入攻击)]] `4`
+- [[promptfoo|Promptfoo Prompt 测试框架 (Promptfoo LLM Testing)]] `6`
+- [[promptlayer|Promptlayer (Prompt 版本管理与测试平台)]] `3`
+- ⭐ [[protein-folding|蛋白质折叠 (Protein Folding)]] `2`
+- ⭐ [[pruning|Model Pruning（模型剪枝）]] `5`
+- ⭐ [[pytorch|PyTorch（深度学习框架）]] `4`
+- ⭐ [[qdrant|Qdrant]] `4`
+- ⭐ [[qlora|QLoRA 量化 LoRA 微调 (Quantized LoRA Fine-tuning)]] `8`
+- ⭐ [[quantization|Quantization]] `26`
+- [[query|Query]] `1`
+- ⭐ [[qwen-series|Qwen 系列模型架构演进]] `5`
+- ⭐ [[qwen3-pro|Qwen3-Pro 专有优化模型 (Qwen3-Pro Optimized Model)]] `4`
+- [[qwq|QwQ 推理模型 (QwQ Reasoning Model)]] `2`
+- ⭐ [[radix-attention|RadixAttention]] `5`
+- ⭐ [[rag-patterns|RAG 模式分类（RAG Patterns）]] `11`
+- [[rag-production-architecture|RAG 生产架构]] `3`
+- ⭐ [[rag-systems|RAG 检索增强生成]] `34`
+- ⭐ [[ragas|Ragas RAG 评估框架 (Ragas - RAG Assessment)]] `4`
+- [[ragflow|RAGFlow 开源 RAG 引擎 (RAGFlow Deep Document Understanding)]] `2`
+- [[ray-tune|Ray Tune 分布式超参数调优 (Ray Tune Hyperparameter Tuning)]] `2`
+- ⭐ [[ray|Ray / KubeRay]] `7`
+- ⭐ [[rbac|RBAC 基于角色的访问控制]] `16`
+- [[rdma-roce|RDMA/RoCE (高速 GPU 网络)]] `11`
+- ⭐ [[react-agent|ReAct 智能体（Reasoning + Acting）]] `6`
+- ⭐ [[reasoning-models|推理模型]] `18`
+- [[recommendation-systems|推荐系统]] `3`
+- ⭐ [[red-teaming|红队测试]] `10`
+- ⭐ [[reflexion|Reflexion（自我反思）]] `4`
+- [[reinforcement-learning|强化学习]] `7`
+- [[repetition-penalty|重复惩罚（Repetition Penalty）]] `4`
+- [[replicaset|ReplicaSet]] `3`
+- ⭐ [[replicate|Replicate]] `6`
+- ⭐ [[request-scheduling|Request Scheduling for LLMs]] `5`
+- ⭐ [[reranker|重排序模型 Reranker (Cross-Encoder Reranking Model)]] `6`
+- [[resilience|Resilience]] `3`
+- [[resource-quota|Resource Quota]] `4`
+- ⭐ [[retnet|RetNet]] `6`
+- [[retrieval-latency|Retrieval Latency]] `8`
+- ⭐ [[reward-model|奖励模型 Reward Model (RLHF/GRPO 中的偏好评估器)]] `3`
+- ⭐ [[reward-modeling|奖励模型（Reward Modeling）]] `4`
+- [[rlhf|RLHF]] `24`
+- [[rocm-smi|rocm-smi AMD GPU 监控工具 (ROCm System Management Interface)]] `2`
+- [[role|Role]] `2`
+- [[rolebinding|RoleBinding]] `2`
+- ⭐ [[rope|RoPE 旋转位置编码 (Rotary Position Embedding)]] `9`
+- ⭐ [[rs-lora|RS-LoRA]] `6`
+- [[rslora|rsLoRA 秩稳定 LoRA (Rank-Stabilized LoRA)]] `2`
+- ⭐ [[runtime-security|Runtime Security（运行时安全）]] `5`
+- ⭐ [[safetensors|Safetensors 安全模型格式 (Safetensors Format)]] `7`
+- ⭐ [[sampling-decoding|随机采样解码（Sampling Decoding）]] `8`
+- [[scale-ai|Scale AI (AI 数据标注与 RLHF 平台)]] `3`
+- [[scheduler|Scheduler]] `3`
+- [[sealed-secrets|Sealed Secrets]] `2`
+- [[secret|Secret]] `7`
+- [[securitycontext|SecurityContext]] `1`
+- [[selector|Selector]] `5`
+- ⭐ [[self-supervised-learning|自监督学习 (Self-Supervised Learning)]] `2`
+- ⭐ [[sentencepiece|SentencePiece 分词库 (SentencePiece Tokenization Library)]] `2`
+- ⭐ [[sequence-models|序列模型]] `3`
+- [[serverless|无服务器 AI 推理（Serverless AI Inference）]] `5`
+- ⭐ [[service-mesh|Service Mesh]] `3`
+- [[service|Service]] `17`
+- [[serviceaccount|ServiceAccount]] `5`
+- ⭐ [[sft|SFT（Supervised Fine-Tuning）]] `8`
+- [[sglang-frontend|SGLang Frontend (SGLang API 服务层)]] `2`
+- ⭐ [[sglang|SGLang]] `13`
+- [[simpo|SimPO 简化偏好优化 (Simple Preference Optimization)]] `2`
+- ⭐ [[single-tenant-architecture|单租户架构 (Single-Tenant Architecture)]] `6`
+- ⭐ [[sla|SLA]] `2`
+- ⭐ [[sli|SLI]] `6`
+- ⭐ [[slo|SLO]] `8`
+- ⭐ [[smolagents|SmolAgents (HuggingFace 轻量级 Agent 框架)]] `4`
+- ⭐ [[smoothquant|SmoothQuant]] `6`
+- [[snorkel-ai|Snorkel AI (数据编程与弱监督学习平台)]] `2`
+- ⭐ [[speculative-decoding|Speculative Decoding (投机解码)]] `20`
+- ⭐ [[speech-audio-ai|语音与音频 AI (Speech & Audio AI)]] `2`
+- [[sre|SRE]] `5`
+- ⭐ [[sso-saml|SSO 与 SAML2 企业身份认证]] `3`
+- ⭐ [[stackops|stackops AI Stack 专属运维工具 (AI Stack Exclusive Ops Tools)]] `3`
+- [[state-space-models|状态空间模型]] `6`
+- [[statefulset|StatefulSet]] `7`
+- [[storage|Storage]] `4`
+- [[storageclass|StorageClass]] `4`
+- [[streamlit|Streamlit 数据应用框架 (Streamlit Data App Framework)]] `2`
+- [[supervised-learning|监督学习]] `16`
+- [[supply-chain-security|Supply Chain Security]] `4`
+- [[swift|SWIFT 微调框架 (ModelScope SWIFT Fine-tuning Framework)]] `3`
+- ⭐ [[synapse-gateway|Synapse 模型网关 (Synapse Model Gateway)]] `3`
+- ⭐ [[synthetic-data|Synthetic Data（合成数据）]] `2`
+- [[taint|Taint（污点）]] `4`
+- [[tekton|Tekton]] `2`
+- ⭐ [[teleoperation|遥操作 (Teleoperation)]] `4`
+- ⭐ [[temperature-scaling|温度缩放（Temperature Scaling）]] `11`
+- [[tempo|Tempo]] `3`
+- [[tensor-parallelism|Tensor Parallelism]] `7`
+- [[tensorrt-llm-practical|TensorRT-LLM 实战指南]] `3`
+- ⭐ [[tensorrt-llm|TensorRT-LLM]] `13`
+- [[tensorrt|TensorRT]] `4`
+- [[tensors|Tensors]] `1`
+- [[test-time-compute-scaling|Test-Time Compute Scaling]] `1`
+- ⭐ [[test-time-compute|Test-Time Compute（测试时计算）]] `5`
+- ⭐ [[text2sql|Text2SQL]] `6`
+- ⭐ [[tgi|TGI (Text Generation Inference)]] `3`
+- [[time-series-analysis|时间序列分析]] `3`
+- [[time-slicing|Time Slicing]] `4`
+- ⭐ [[token-plain|Token 大白话解释]] `2`
+- ⭐ [[tokenization|分词与 Tokenization]] `8`
+- [[toleration|Toleration（容忍）]] `2`
+- ⭐ [[tool-calling-safety|工具调用安全]] `8`
+- ⭐ [[tool-calling|工具调用]] `9`
+- ⭐ [[tool-use|大模型 Tool Use（工具使用）]] `6`
+- [[top-k-sampling|Top-k 采样]] `7`
+- ⭐ [[top-p-sampling|Top-p 采样（Nucleus Sampling）]] `10`
+- [[torch-tensorrt|Torch-TensorRT (PyTorch 到 TensorRT 编译器)]] `2`
+- [[torchrun|torchrun 分布式训练启动器 (PyTorch Distributed Launcher)]] `5`
+- ⭐ [[tot|ToT（Tree of Thoughts）]] `3`
+- [[tpot|TPOT（Time Per Output Token）]] `7`
+- [[training-cost-optimization|训练成本优化（Training Cost Optimization）]] `3`
+- [[training-inference-unification|训推一体 (Training-Inference Unification)]] `6`
+- ⭐ [[transformer-architecture-plain|Transformer 大白话解释]] `4`
+- [[transformer-architecture|Transformer 架构]] `50`
+- ⭐ [[transformer-layer|Transformer Layer（层）大白话]] `5`
+- [[transformers-js|Transformers.js (浏览器端 AI 推理库)]] `2`
+- [[triton-inference-server|Triton Inference Server]] `2`
+- ⭐ [[triton-server|Triton Inference Server (NVIDIA Triton Inference Server)]] `5`
+- ⭐ [[triton|Triton Inference Server]] `3`
+- [[trivy|Trivy]] `2`
+- [[trulens|TruLens LLM 评估与反馈 (TruLens by Snowflake)]] `2`
+- [[ttft|TTFT（Time To First Token）]] `9`
+- [[unsupervised-learning|无监督学习]] `8`
+- [[vault|Vault]] `3`
+- [[vector-database|向量数据库]] `33`
+- [[vector-index|Vector Index]] `4`
+- ⭐ [[vertex-ai|Google Vertex AI]] `8`
+- [[vertical-pod-autoscaler|Vertical Pod Autoscaler（VPA）]] `2`
+- [[video-generation|视频生成]] `2`
+- ⭐ [[vision-language-model|视觉语言模型（Vision-Language Model）训练与推理]] `4`
+- ⭐ [[vllm-practical|vLLM 实战指南]] `9`
+- [[vllm-tp-attention|vLLM TP Attention (张量并行注意力机制)]] `2`
+- ⭐ [[vllm|vLLM 高吞吐推理引擎]] `26`
+- ⭐ [[volcano|Volcano]] `5`
+- ⭐ [[wandb|Weights & Biases 实验追踪 (Weights & Biases / W&B)]] `6`
+- ⭐ [[weaviate|Weaviate]] `4`
+- [[whylogs|whylogs (数据质量与 ML 可观测性)]] `4`
+- [[world-models-jepa|世界模型与JEPA架构]] `3`
+- ⭐ [[world-models|World Models（世界模型）]] `3`
+- [[zep|Zep (LLM 长期记忆平台)]] `4`
+- [[zhipu-glm|智谱 AI / GLM 模型系列 (Zhipu AI & GLM Model Family)]] `3`
+
+## _insights.md（1）
+
+- [[_insights|_insights]] `1`
+
+## _meta（53）
+
+- [[AI_Basics_Gap_Analysis|AI 基础入门内容缺口分析报告]] `2`
+- [[Content_Evaluation_2026|AI Guru Database - 内容全面评估 2026]] `4`
+- [[Content_Gap_Analysis_Encyclopedia_2026|AI 百科全书视角 - 内容缺口分析与改进计划]] `1`
+- [[KNOWN_ISSUES|AI Guru 知识库 - 已知问题追踪 (Known Issues)]] `2`
+- [[Production_Safety_Policy|生产安全策略 · Production Safety Policy]] `3`
+- [[Project_Comprehensive_Evaluation_2026|AI Guru 知识库项目全面评估报告]] `5`
+- [[Project_Structure_Evaluation_2026|AI Guru 知识库 — 全项目结构评估与改进建议]] `5`
+- [[ROADMAP|AI Guru 知识库路线图]] `4`
+- [[_concept-completion-2026-06-24|缺失概念页补全执行报告（2026-06-24）]] `2`
+- [[_concept-strengthening-r2-2026-06-24|概念页加强执行报告（2026-06-24 Round 2）]] `1`
+- [[_content-assessment-2026-06-23|知识库内容层面评估报告（2026-06-23）]] `2`
+- [[_content-audit-2026-07-01|全章节内容审计与缺口分析报告 (2026-07-01)]] `2`
+- [[_content-gap-analysis|LLM 全生命周期内容缺口分析]] `5`
+- [[_content-supplement-plan-2026-07-01|内容补充执行计划 (2026-07-01)]] `1`
+- [[_directory-conventions|目录结构与命名规范 (Directory Conventions)]] `6`
+- [[_evaluation-2026-06-15|AI Guru 知识库整体内容完整性评估]] `2`
+- [[_evaluation-2026-06-24|AI Guru 知识库整体评估报告（2026-06-24）]] `4`
+- [[_governance-worklog-2026-06-22|知识库治理工作记录（2026-06-22）]] `4`
+- [[_improvement-execution-2026-06-24|AI Guru 知识库改进执行报告（2026-06-24）]] `4`
+- [[_meta/_insights|Wiki Insights]] `1`
+- [[_lint-report-2026-06-30|_lint-report-2026-06-30]] `1`
+- [[_lint-report|Wiki Lint 报告]] `3`
+- [[_llm-ecosystem-analysis-2026-06-15|大模型技术生态内容完整性分析]] `2`
+- [[_nlp-llms-split-assessment-2026-06-22|05_NLP_LLMs 章节拆分评估（2026-06-22）]] `2`
+- [[_post-restructure-2026-06-19|目录重构后验证报告]] `4`
+- [[_project-assessment-2026-06-22|知识库整体评估报告 2026-06-22]] `7`
+- [[_project-evaluation|AI Guru 知识库项目整体评估]] `4`
+- [[_quality-assessment|AI Guru 知识库内容完整性评估]] `3`
+- [[_tag-taxonomy-report|Tag Taxonomy Report]] `1`
+- [[_taxonomy-assessment-2026-06-23|一二三级目录与文件匹配合理性评估（2026-06-23）]] `1`
+- [[_wiki-digest|Wiki Digest — 本周知识动态]] `1`
+- [[_wiki-status|Wiki Status Report]] `3`
+- [[cheatsheet-agent-design|智能体架构设计速查表]] `3`
+- ⭐ [[cheatsheet-evaluation|LLM 评测速查表]] `3`
+- ⭐ [[cheatsheet-fine-tuning|模型微调技术速查表]] `1`
+- [[cheatsheet-llm-inference|LLM 推理技术速查表]] `4`
+- ⭐ [[cheatsheet-ml-algorithms|机器学习算法速查表]] `1`
+- ⭐ [[cheatsheet-mlops|LLMOps 速查表]] `2`
+- ⭐ [[cheatsheet-rag-systems|RAG 检索增强生成速查表]] `1`
+- [[cheatsheet-security-defense|LLM 安全防御速查表]] `3`
+- [[_meta/cheatsheets/index|Cheatsheets]] `1`
+- [[hot|Hot Pages]] `1`
+- [[_meta/index|Meta]] `1`
+- [[_meta/log|log]] 🔒
+- ⭐ [[AI_Concept_Knowledge_Graph|AI 概念知识图谱]] `5`
+- ⭐ [[AI_Full_Stack_Concepts|AI 全链路 Concept 清单]] `5`
+- ⭐ [[KNOWLEDGE_BASE|🧠 AI Guru Knowledge Base]] `5`
+- [[_meta/notes/README|笔记与知识沉淀 (Notes)]] `3`
+- ⭐ [[_meta/notes/README_for_dummy|91 Notes — 小白版 📚]] `3`
+- [[_meta/notes/index|Notes]] `1`
+- [[_meta/plan/README|项目规划 (Plan)]] `5`
+- ⭐ [[_meta/plan/README_for_dummy|92 Plan — 小白版 📋]] `2`
+- [[_meta/plan/index|Plan]] `1`
+
+## _projects（46）
+
+- [[_projects/Agent_Evaluation/demo/README|Cloud Agent Evaluation Framework - Demo]] `2`
+- [[_projects/Agent_Evaluation/demo/datasets/index|Datasets]] `1` 🔒
+- [[_projects/Agent_Evaluation/demo/evaluator/index|Evaluator]] `1` 🔒
+- [[_projects/Agent_Evaluation/demo/index|Demo]] `1` 🔒
+- [[_projects/Agent_Evaluation/demo/plugins/index|Plugins]] `1` 🔒
+- [[_projects/Agent_Evaluation/demo/results/index|Results]] `1` 🔒
+- [[_projects/Agent_Evaluation/index|Agent Evaluation]] `1` 🔒
+- ⭐ [[CloudOps-in-nutshell|云产品运维 Agent 速成指南]] `18`
+- ⭐ [[Cloud_Product_Ops_2026|Cloud Product Ops 2026: 云产品运维 Agent 体系]] `7`
+- ⭐ [[Cloud_Product_Ops_for_dummy|云产品运维 Agent 入门指南 (for Dummies)]] `18`
+- [[Java_Cloud_SDK_Guide|Java Cloud SDK AI 集成指南]] `7`
+- [[Mobile_AI_Ops_Design|Mobile AI Ops: 基于 Google Edge Gallery 的手拍即运维产品设计]] `4`
+- ⭐ [[_projects/Cloud_Ops_Agent/README|云运维 Agent (Cloud Ops Agent)]] `1` 🔒
+- [[_projects/Cloud_Ops_Agent/README_for_dummy|18 云运维 Agent — 小白版 ☁️]] `1` 🔒
+- ⭐ [[agentscope_corpus_loading|AgentScope 语料加载与挂载指南]] `4`
+- ⭐ [[_projects/Cloud_Ops_Agent/docs/architecture/index|云产品运维 Agent 架构设计指南 (Architecture)]] 🔒
+- ⭐ [[alicloud-proprietary-k8s-agent-corpus-plan|阿里云专有云 K8s 工单智能体语料建设规划]] `1`
+- ⭐ [[_projects/Cloud_Ops_Agent/docs/corpus/index|云产品运维 Agent 语料工程指南 (Corpus Engineering)]] 🔒
+- [[_projects/Cloud_Ops_Agent/docs/development/index|云产品运维 Agent 研发指南 (Development)]] 🔒
+- [[_projects/Cloud_Ops_Agent/docs/index|Cloud Ops Agent 知识库首页]] `2`
+- [[_projects/Cloud_Ops_Agent/docs/integration_testing/index|云产品运维 Agent 集成测试指南 (Integration Testing)]] 🔒
+- [[_projects/Cloud_Ops_Agent/docs/operations/index|云产品运维 Agent 运维指南 (Operations)]] 🔒
+- [[_projects/Cloud_Ops_Agent/docs/product/index|云产品运维 Agent 产品管理指南 (Product Management)]] 🔒
+- [[arch_template|[文档标题]]] `3`
+- [[dev_template|[文档标题]]] `3` 🔒
+- [[_projects/Cloud_Ops_Agent/docs/templates/index|Templates]] 🔒
+- [[ops_template|[文档标题]]] `3` 🔒
+- [[test_template|[文档标题]]] `3` 🔒
+- [[_projects/Cloud_Ops_Agent/docs/testing/index|云产品运维 Agent 评测指南 (Testing & Evaluation)]] 🔒
+- [[_projects/Cloud_Ops_Agent/index|Cloud Ops Agent]] `1` 🔒
+- [[_projects/Cloud_Ops_Agent/scripts/index|Scripts]] `1` 🔒
+- [[_projects/atlas/README|AI Guru Knowledge Atlas（D3）]] `7`
+- [[_projects/atlas/docs/index|Docs]] `1` 🔒
+- [[_projects/atlas/docs/lighthouse/index|Lighthouse]] `1` 🔒
+- [[performance|性能审计报告（Lighthouse）]] `8`
+- [[_projects/atlas/index|Atlas]] `1` 🔒
+- [[_projects/atlas/public/index|Public]] `1` 🔒
+- [[_projects/atlas/scripts/index|Scripts]] `1` 🔒
+- [[_projects/atlas/src/graph/index|Graph]] `1` 🔒
+- [[_projects/atlas/src/index|Src]] `1` 🔒
+- [[_projects/atlas/src/styles/components/index|Components]] `1` 🔒
+- [[_projects/atlas/src/styles/index|Styles]] `1` 🔒
+- [[_projects/atlas/src/ui/index|Ui]] `1` 🔒
+- [[_projects/atlas/tests/index|Tests]] `1` 🔒
+- [[_projects/atlas/tests/vrt.spec.ts-snapshots/index|Vrt.spec.ts Snapshots]] `1` 🔒
+- [[_projects/index|Projects]] 🔒
+
+## _references（44）
+
+- [[500-ai-projects|500 AI / ML / DL / CV / NLP Projects with Code]] `3`
+- [[_references/README|参考资料索引 (References)]] `1`
+- [[REFERENCE|Agent Skill 通用参考规范]] `3`
+- [[ai-agents-for-beginners|Microsoft AI Agents for Beginners]] `4`
+- [[anthropic-courses|Anthropic 官方教程]] `2`
+- [[apachecn-ailearning|ApacheCN AiLearning]] `9`
+- [[awesome-llm-apps|Awesome LLM Apps 集合 (10k)]] `2`
+- [[awesome-mcp-servers|Awesome MCP Servers 集合 (15k)]] `8`
+- [[ai-agents-in-action|AI Agents in Action]] `1`
+- [[ai-engineering-huyen|AI Engineering]] `2`
+- [[build-llm-from-scratch-raschka|Build a LLM from Scratch]] `2`
+- [[build-multi-agent-system|Build a Multi-Agent System]] `1`
+- [[build-reasoning-model|Build a Reasoning Model]] `1`
+- [[deep-learning-goodfellow|Deep Learning]] `2`
+- [[designing-ml-systems-huyen|Designing Machine Learning Systems]] `3`
+- [[dl-with-python-chollet|Deep Learning with Python]] `2`
+- [[hands-on-llms-alammar|Hands-On Large Language Models]] `4`
+- [[hands-on-ml-geron|Hands-On Machine Learning]] `2`
+- [[_references/books/index|Books]] `1`
+- [[llm-engineers-handbook|LLM Engineer's Handbook]] `2`
+- [[llms-in-production|LLMs in Production]] `1`
+- [[nlp-with-transformers|NLP with Transformers]] `3`
+- [[prompt-engineering-for-llms|Prompt Engineering for LLMs]] `1`
+- [[why-machines-learn|Why Machines Learn]] `1`
+- [[cdi-spec|CDI 规范 (Container Device Interface Spec) — 官方源引用]] `4`
+- [[chip-huyen-agents-article|Chip Huyen: AI Agent 深度解析]] `2`
+- [[common-field-types|常见 Skill 字段类型与命名约定]] `2`
+- ⭐ [[genai-agents-nirdiamant|GenAI Agent 实现集合 (22.5k)]] `2`
+- [[hello-agents|Hello-Agents (Datawhale)：从零开始构建智能体]] `5`
+- [[illustrated-transformer|图解 Transformer (Jay Alammar)]] `2`
+- [[_references/index|References]] `5`
+- [[kaggle|Kaggle 数据科学竞赛平台]] `2`
+- [[learn-claude-code|Learn Claude Code (shareAI-lab)]] `13`
+- ⭐ [[llm-course-mlabonne|MLabonne LLM 课程 (80k)]] `2`
+- [[maarten-grootendorst-visual-guides|Maarten Grootendorst 图解 AI 系列]] `2`
+- [[mapping|Skill 中地理/空间数据映射与可视化指南]] `2`
+- [[microsoft-ai-for-beginners|Microsoft AI For Beginners]] `5`
+- [[microsoft-genai-for-beginners|Microsoft Generative AI For Beginners]] `5`
+- [[migration-v1-to-v2|Agent Skills v1 到 v2 迁移指南]] `1`
+- [[papers-with-code|Papers with Code]] `3`
+- [[prompt-engineering-nirdiamant|Prompt 工程技术大全 (5k)]] `3`
+- ⭐ [[rag-techniques-nirdiamant|RAG 技术大全 (27.9k)]] `2`
+- [[sebastian-raschka-articles|Sebastian Raschka LLM 深度解析系列]] `2`
+- [[statistics|Skill 中常用统计方法速查]] `4`
+
+## _synthesis（51）
+
+- ⭐ [[Chinese_vs_Global_LLM_Comparison|中国 vs 国际大模型全面对比 (Chinese vs Global LLM Comparison)]] `1` 🔒
+- ⭐ [[_synthesis/README|跨域综合文档索引 (Cross-Domain Synthesis Index)]] `4`
+- ⭐ [[agent-evaluation-model-evaluation|Agent 评估 × 模型评估 — 从指标到行为的评估范式迁移]] `5`
+- ⭐ [[agent-framework-production|Agent 框架与生产部署]] `3`
+- ⭐ [[agents-reinforcement-learning|AI 智能体 × 强化学习]] `4`
+- ⭐ [[ai-ethics-future|AI 伦理与未来趋势的交叉审视]] `5`
+- ⭐ [[ai-industry-applications|AI 行业应用与产业变革]] `3`
+- [[ai-production-readiness|AI 生产就绪：从单点 Runbook 到系统工程]] `2`
+- ⭐ [[alignment-rlhf|价值对齐 × RLHF：从人类反馈到可扩展监督]] `7`
+- ⭐ [[anomaly-detection-automl|异常检测 × AutoML — 自动化异常发现]] `3`
+- ⭐ [[benchmark-evaluation|评测基准 × 评测方法论：从分数到可信评估]] `10`
+- ⭐ [[career-interviews|AI 面试与职业发展]] `3`
+- ⭐ [[chinese-chips-inference|国产 AI 芯片 × 推理引擎: 硬件约束下的推理软件栈适配]] `7`
+- ⭐ [[cv-deep-learning|深度学习驱动的计算机视觉]] `3`
+- ⭐ [[diagnosis-gpu-ai-workload-failure|AI 工作负载 GPU 故障远程诊断决策树]] `3`
+- ⭐ [[diagnosis-k8s-network-failure|K8s 网络故障远程诊断决策树]] `4`
+- ⭐ [[diagnosis-k8s-pod-failure|K8s Pod 故障远程诊断决策树]] `7`
+- ⭐ [[diagnosis-k8s-storage-failure|K8s 存储故障远程诊断决策树]] `4`
+- ⭐ [[diagnosis-work-order-hub|工单智能体远程诊断知识枢纽]] `7`
+- ⭐ [[finetuning-rag-decision|微调 × RAG: LLM 应用知识注入的两条路径]] `4`
+- ⭐ [[hami-cdi-dra|HAMi × CDI × DRA: 异构 GPU 共享与设备注入的协作关系]] `4`
+- [[_synthesis/index|Synthesis]] 🔒
+- ⭐ [[kubernetes-pod-orchestration|Kubernetes x Pod: 集群编排与工作负载生命周期的协同全景]] 🔒
+- ⭐ [[kv-cache-inference-optimization|KV Cache x Continuous Batching: 推理引擎的显存-调度协同优化]] `2` 🔒
+- ⭐ [[kv-cache-paged-attention|KV Cache x PagedAttention: 从显存碎片到虚拟内存的推理革命]] `2` 🔒
+- ⭐ [[llm-infrastructure-system-design|LLM 基础设施 × 传统系统架构 — 从 Web 服务到 Token 工厂]] `5`
+- ⭐ [[llm-nlp|LLM 与 NLP 的融合与演进]] `3`
+- ⭐ [[llm-observability-aiops|LLM 可观测性 × AIOps: 从系统监控到语义监控的范式跃迁]] `3`
+- [[llm-system-evaluation|LLM 系统评估：从模型能力到生产可信度的四层评估体系]] `1` 🔒
+- ⭐ [[mlops-monitoring-convergence|MLOps 与监控的融合 (MLOps-Monitoring Convergence)]] `3`
+- [[modern-ai-training-stack|现代 AI 训练栈：从预训练到推理扩展的统一视角]] `3`
+- ⭐ [[moe-inference-optimization|MoE × 推理优化: 专家混合架构的推理加速挑战]] `6`
+- ⭐ [[multimodal-rag|多模态 × RAG: 当检索增强遇上图文音视频]] `6`
+- ⭐ [[paged-attention-continuous-batching|PagedAttention x Continuous Batching: 内存效率与动态调度的双重引擎]] `2` 🔒
+- ⭐ [[pretraining-synthetic-data|预训练数据 × 合成数据：从规模到质量的范式转移]] `6`
+- ⭐ [[python-data-science-pipeline|Python 基础 × 数据科学: AI 入门者的完整工具链]] `7`
+- ⭐ [[python-first-ml-model|Python 基础 × 第一个 ML 模型 — 从零到一的实战桥梁]] `3`
+- ⭐ [[rag-agents|RAG 与 Agent 的融合 (RAG-Agents Synthesis)]] `3`
+- ⭐ [[rag-vector-database-pipeline|RAG x 向量数据库: 从 Embedding 到检索的端到端 Pipeline 工程]] 🔒
+- ⭐ [[rag-vector-database|RAG 系统 × 向量数据库]] `22`
+- ⭐ [[reasoning-models-agents|推理模型 × Agent: 当慢思考遇上自主行动]] `6`
+- ⭐ [[safety-evaluation-red-teaming|安全评测 × 红队测试: 构建 AI 安全的攻防闭环]] `7`
+- ⭐ [[serving-deployment|模型服务 × 模型部署]] `8`
+- ⭐ [[synthesis-architecture-selection-guide|AI 系统架构选型决策树：从任务类型到技术栈]] `4`
+- ⭐ [[synthesis-engineering-evolution|从提示词工程到上下文工程到 Harness 工程的三阶演进]] `3`
+- ⭐ [[synthesis-llm-security-pipeline|大模型安全全链路：从训练投毒到推理防御]] `3`
+- ⭐ [[synthesis-memory-systems|AI 系统记忆体系全景：从 KV Cache 到长期知识图谱]] `3`
+- ⭐ [[talks-insights|AI 领袖演讲与行业洞察]] `3`
+- ⭐ [[testing-agents|测试 × Agent: 非确定性系统的测试方法论冲突]] `4`
+- ⭐ [[training-fine-tuning|模型训练 × 微调技术]] `4`
+- ⭐ [[transformer-llm-architecture|Transformer 架构 × LLM 架构]] `4`
+
+## index.md（1）
+
+- [[index|Wiki Index]] `2`
+
+## log.md（1）
+
+- [[log|log]] 🔒

@@ -21,7 +21,7 @@ relationships:
   - target: "_concepts/auto-scaling"
     type: related_to
 summary: "无服务器 AI 推理是通过 Modal/Replicate/AWS Lambda/Cloud Run 等平台，按请求粒度自动扩缩 GPU/CPU 资源、按使用秒数计费的部署范式，无需管理服务器，适合低频/突发流量和原型验证。"
-lifecycle: stable
+lifecycle: reviewed
 tier: supporting
 provenance:
   extracted: 0.70

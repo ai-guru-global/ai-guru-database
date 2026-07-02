@@ -13,7 +13,7 @@ relationships:
 sources:
   - 14_RAG_Systems/Vector_Databases/Chroma_Deep_Dive.md
 summary: "Chroma 是面向 AI 应用的嵌入式向量数据库，以极简 API、原型友好、Python-first 设计著称；适合小型项目和原型，是 RAG 系统入门首选。"
-lifecycle: stable
+lifecycle: reviewed
 tier: supporting
 provenance:
   extracted: 0.80

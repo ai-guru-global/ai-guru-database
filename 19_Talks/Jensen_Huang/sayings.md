@@ -8,6 +8,7 @@ updated: 2026-05-31
 tier: supporting
 aliases:
   - Sayings
+sources: []
 
 ---
 # Jensen Huang 关于 AI 的观点 (Jensen Huang on AI)

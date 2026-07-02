@@ -16,6 +16,7 @@ aliases:
   - MOC_OpenRouter_OpenCode
 
 summary: "topic-ai-coding MOC — 专题文档"
+sources: []
 ---
 # topic-ai-coding MOC
 

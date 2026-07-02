@@ -16,7 +16,7 @@ relationships:
 sources:
   - _concepts/falco.md
 summary: "Runtime Security（运行时安全）通过监控运行时行为（系统调用、网络、文件访问）检测威胁；Falco 是 CNCF 毕业项目，用 eBPF/Kernel Module 捕获异常行为并告警，是云原生运行时安全的代表。"
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 provenance:
   extracted: 0.80

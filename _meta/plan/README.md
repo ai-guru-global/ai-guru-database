@@ -6,6 +6,7 @@ summary: '> **一句话理解**: 本章节记录 AI Guru 知识库的项目规�
 created: '2026-05-31'
 updated: '2026-06-25'
 tier: supporting
+sources: []
 
 ---
 # 项目规划 (Plan)

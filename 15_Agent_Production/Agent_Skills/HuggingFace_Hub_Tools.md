@@ -10,6 +10,7 @@ aliases:
   - "Huggingface Hub Tools"
   - "HuggingFace Hub Tools"
   - HuggingFace_Hub_Tools
+sources: []
 
 ---
 # Hugging Face Hub Tools: 将十万模型化为 Agent 技能

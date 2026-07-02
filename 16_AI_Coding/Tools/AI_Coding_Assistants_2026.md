@@ -10,6 +10,7 @@ aliases:
   - "Ai Coding Assistants 2026"
   - "AI Coding Assistants 2026"
   - AI_Coding_Assistants_2026
+sources: []
 
 ---
 # AI 编程助手 2026 年全景报告

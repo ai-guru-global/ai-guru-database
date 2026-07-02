@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Instructor Deep Dive"
   - Instructor_Deep_Dive
+sources: []
 
 ---
 # Instructor: 结构化输出框架

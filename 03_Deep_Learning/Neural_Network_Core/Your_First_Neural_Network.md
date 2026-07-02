@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Your First Neural Network"
   - Your_First_Neural_Network
+sources: []
 
 ---
 # 你的第一个神经网络: 用 PyTorch 训练图像分类器

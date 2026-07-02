@@ -10,6 +10,7 @@ aliases:
   - "Llm Data Engineering Deep Dive"
   - "LLM Data Engineering Deep Dive"
   - LLM_Data_Engineering_Deep_Dive
+sources: []
 
 ---
 # LLM 数据工程深度解读: 从预训练数据到合成数据

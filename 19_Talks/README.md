@@ -6,6 +6,7 @@ summary: "> **一句话理解**: 本章节收录 AI 领域最具影响力的领�
 created: 2026-05-31
 updated: 2026-06-15
 tier: supporting
+sources: []
 
 ---
 # AI 名人演讲与观点 (Talks)

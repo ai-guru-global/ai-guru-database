@@ -22,10 +22,11 @@ relationships:
   - target: "_concepts/quantization"
     type: related_to
 summary: LLaMA 是 Meta 开源的 Transformer Decoder 架构模型系列，从 LLaMA-1 到 LLaMA-3，在上下文长度、训练数据、安全对齐和多模态等方面持续演进，成为开源生态最重要的基座模型之一。
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 created: 2026-06-25
 updated: 2026-06-25
+sources: []
 ---
 
 # LLaMA 系列模型架构演进

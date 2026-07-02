@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Cloud Agent Leaderboard 2026"
   - Cloud_Agent_Leaderboard_2026
+sources: []
 
 ---
 # 云产品智能体排行榜 2026

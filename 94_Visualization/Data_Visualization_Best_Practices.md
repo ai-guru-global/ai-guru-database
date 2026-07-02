@@ -9,6 +9,7 @@ tier: core
 aliases:
   - "Data Visualization Best Practices"
   - "Visualization Guide"
+sources: []
 ---
 
 # 数据可视化最佳实践 (Data Visualization Best Practices)

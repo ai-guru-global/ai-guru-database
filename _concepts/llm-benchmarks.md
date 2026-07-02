@@ -19,10 +19,11 @@ relationships:
   - target: "_concepts/model-evaluation"
     type: part_of
 summary: LLM 评估基准是衡量大模型能力的标准化测试集，涵盖知识、推理、代码、对话、指令遵循等多个维度。本文系统介绍主流 benchmark 的分类、用途和选择建议。
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 created: 2026-06-25
 updated: 2026-06-25
+sources: []
 ---
 
 # LLM 评估基准（Benchmarks）概览

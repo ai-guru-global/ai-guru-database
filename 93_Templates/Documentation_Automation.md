@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Documentation Automation"
   - Documentation_Automation
+sources: []
 
 ---
 # AI 文档自动化

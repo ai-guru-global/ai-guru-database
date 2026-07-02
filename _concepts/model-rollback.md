@@ -15,6 +15,7 @@ relationships:
     type: related_to
   - target: "_concepts/kserve"
     type: related_to
+sources: []
 ---
 
 # Model Rollback

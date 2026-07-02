@@ -6,6 +6,7 @@ summary: '> **一句话理解**: 如果目标检测是告诉你"图中哪里有�
 created: '2026-05-31'
 updated: '2026-05-31'
 tier: supporting
+sources: []
 
 ---
 # 图像分割 (Image Segmentation)

@@ -21,17 +21,18 @@ relationships:
   - target: "_concepts/model-serving"
     type: related_to
 summary: TensorRT-LLM 是 NVIDIA 推出的高性能 LLM 推理 SDK，通过算子融合、量化、KV Cache 优化等技术，在 NVIDIA GPU 上实现极致推理性能。
-lifecycle: stable
+lifecycle: reviewed
 tier: supporting
 created: 2026-06-25
 updated: 2026-06-25
+sources: []
 ---
 
 # TensorRT-LLM 实战指南
 
 ## 一句话总结
 
-**TensorRT-LLM** 是 NVIDIA 专为自家 GPU 优化的高性能 LLM 推理 SDK，通过算子融合、FP8/INT8 量化、KV Cache 管理等技术实现极致吞吐。
+**TensorRT-LLM** 是 NVIDIA 专为自家 GPU 优化的高性能 LLM 推理 SDK，通过算子融合、FP8/INT8 量化、[[_concepts/kv-cache|KV Cache]] 管理等技术实现极致吞吐。
 
 ---
 

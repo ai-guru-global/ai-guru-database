@@ -16,7 +16,7 @@ relationships:
 sources:
   - 07_Model_Training/Distributed_Training/Megatron_LM_Deep_Dive.md
 summary: "流水线并行（PP）把模型按层切分到多张 GPU 形成"流水线"，不同卡负责不同层段，代价是流水线 bubble（部分卡空闲等待）与较复杂的调度（GPipe / 1F1B / Interleaved）。"
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 provenance:
   extracted: 0.85

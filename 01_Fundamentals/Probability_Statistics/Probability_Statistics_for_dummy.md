@@ -10,6 +10,7 @@ aliases:
   - "Probability Statistics For Dummy"
   - "Probability Statistics for dummy"
   - Probability_Statistics_for_dummy
+sources: []
 
 ---
 # 概率统计 - 小白版

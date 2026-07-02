@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Information Theory Fundamentals"
   - Information_Theory_Fundamentals
+sources: []
 
 ---
 # 信息论基础: 从香农熵到 LLM 的交叉熵损失

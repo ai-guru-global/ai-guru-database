@@ -10,6 +10,7 @@ aliases:
   - "Ml Ci Cd"
   - "ML CI CD"
   - ML_CI_CD
+sources: []
 
 ---
 # ML CI/CD 流水线 (ML CI/CD Pipeline)

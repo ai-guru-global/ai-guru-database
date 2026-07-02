@@ -16,6 +16,7 @@ relationships:
     type: used_by
   - target: "_concepts/retrieval-latency"
     type: mitigates
+sources: []
 ---
 
 # IVF

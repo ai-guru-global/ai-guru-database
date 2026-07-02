@@ -7,6 +7,7 @@ tier: peripheral
 aliases:
   - "Context Engineering Patterns"
   - Context_Engineering_Patterns
+sources: []
 
 ---
 # 上下文工程技术模式与深度实践

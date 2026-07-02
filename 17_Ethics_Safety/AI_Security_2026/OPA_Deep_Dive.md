@@ -6,6 +6,7 @@ tags: ["opa", "open-policy-agent", "gatekeeper", "policy", "security", "kubernet
 summary: "> **一句话理解**: OPA 是 CNCF Graduated 的通用策略引擎，使用 Rego 语言定义策略；Gatekeeper 是 OPA 在 Kubernetes 中的准入控制器实现，用于强制集群安全基线与合规。"
 created: "2026-06-16"
 updated: "2026-06-16"
+sources: []
 ---
 
 # OPA / Gatekeeper 深度解析：云原生策略即代码

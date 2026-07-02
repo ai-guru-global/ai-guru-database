@@ -16,6 +16,7 @@ relationships:
     type: part_of
   - target: "_concepts/serviceaccount"
     type: related_to
+sources: []
 ---
 
 # Role

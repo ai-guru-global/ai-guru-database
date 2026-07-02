@@ -13,6 +13,7 @@ aliases:
   - "Genai L10 Building Low Code Ai Applications"
   - "GenAI L10 Building Low Code AI Applications"
   - GenAI_L10_Building_Low_Code_AI_Applications
+sources: []
 
 ---
 ## 学习目标

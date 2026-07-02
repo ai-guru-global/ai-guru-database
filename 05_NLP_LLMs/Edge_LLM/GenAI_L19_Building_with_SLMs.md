@@ -13,6 +13,7 @@ aliases:
   - "Genai L19 Building With Slms"
   - "GenAI L19 Building with SLMs"
   - GenAI_L19_Building_with_SLMs
+sources: []
 
 ---
 ## 学习目标

@@ -25,10 +25,11 @@ relationships:
   - target: "_concepts/decoding-strategies"
     type: related_to
 summary: 本页是 LLM 训练与推理相关概念的索引中心，汇总 Transformer、预训练、SFT、RLHF、解码策略、KV Cache、推理优化等核心主题，并链接到各专题的详细解释。
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 created: 2026-06-25
 updated: 2026-06-25
+sources: []
 ---
 
 # LLM 训练与推理关键概念索引

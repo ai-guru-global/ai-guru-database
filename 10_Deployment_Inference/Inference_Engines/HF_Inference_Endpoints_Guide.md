@@ -10,6 +10,7 @@ aliases:
   - "Hf Inference Endpoints Guide"
   - "HF Inference Endpoints Guide"
   - HF_Inference_Endpoints_Guide
+sources: []
 
 ---
 # Hugging Face Inference Endpoints：一键 Serverless 部署开源大模型

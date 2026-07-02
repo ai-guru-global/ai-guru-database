@@ -10,6 +10,7 @@ aliases:
   - "Smolagents Practical Guide"
   - "SmolAgents Practical Guide"
   - SmolAgents_Practical_Guide
+sources: []
 
 ---
 

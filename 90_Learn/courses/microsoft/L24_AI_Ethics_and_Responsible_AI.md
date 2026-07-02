@@ -11,6 +11,7 @@ aliases:
   - "L24 Ai Ethics And Responsible Ai"
   - "L24 AI Ethics and Responsible AI"
   - L24_AI_Ethics_and_Responsible_AI
+sources: []
 
 ---
 # L24 - AI 伦理与负责任的 AI

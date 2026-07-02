@@ -7,6 +7,7 @@ tier: peripheral
 aliases:
   - "Claude Agent Architecture"
   - Claude_Agent_Architecture
+sources: []
 
 ---
 # Claude Agent 架构：设计模式、上下文管理与多智能体协作

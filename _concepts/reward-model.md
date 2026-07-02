@@ -17,7 +17,7 @@ provenance:
   inferred: 0.70
   ambiguous: 0.10
 base_confidence: 0.85
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 ---
 
@@ -113,3 +113,4 @@ DeepSeek-R1 使用 **GRPO (Group Relative Policy Optimization)**，**不训练�
 - [[_concepts/dpo]] — DPO 直接偏好优化
 - [[_concepts/knowledge-distillation]] — 知识蒸馏
 - [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[_synthesis/modern-ai-training-stack|现代 AI 训练栈]] — 后训练 RL 与推理扩展的统一视角

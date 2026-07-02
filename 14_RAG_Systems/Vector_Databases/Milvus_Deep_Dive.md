@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Milvus Deep Dive"
   - Milvus_Deep_Dive
+sources: []
 
 ---
 # Milvus: 超大规模向量数据库

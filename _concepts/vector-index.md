@@ -15,6 +15,7 @@ relationships:
     type: implemented_by
   - target: "_concepts/ivf"
     type: implemented_by
+sources: []
 ---
 
 # Vector Index

@@ -5,6 +5,7 @@ tags: ["content-gap", "encyclopedia", "improvement-plan", "2026"]
 summary: "> 从 AI 百科全书的完整性角度，系统性识别知识库的内容缺口，并制定分优先级的改进计划。"
 created: 2026-06-04
 updated: 2026-06-04
+sources: []
 ---
 
 # AI 百科全书视角 - 内容缺口分析与改进计划

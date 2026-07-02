@@ -10,6 +10,7 @@ aliases:
   - "AI Supply Chain Logistics"
   - "AI for Supply Chain 2026"
   - AI_Supply_Chain
+sources: []
 
 ---
 # AI 供应链物流应用 2026 (AI for Supply Chain & Logistics 2026)

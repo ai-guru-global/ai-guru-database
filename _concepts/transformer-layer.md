@@ -17,6 +17,7 @@ updated: 2026-06-15T00:00:00Z
 aliases:
   - "Transformer Layer"
   - "transformer layer"
+sources: []
 
 ---
 # Transformer Layer（层）大白话

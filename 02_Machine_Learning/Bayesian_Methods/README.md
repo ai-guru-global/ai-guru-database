@@ -6,6 +6,7 @@ summary: "> 贝叶斯方法让AI量化不确定性——先验+似然=后验，�
 created: 2026-06-04
 updated: 2026-06-04
 tier: supporting
+sources: []
 
 ---
 # 贝叶斯方法 (Bayesian Methods)

@@ -10,6 +10,7 @@ aliases:
   - "Ai Applications Industry For Dummy"
   - "AI Applications Industry for dummy"
   - AI_Applications_Industry_for_dummy
+sources: []
 
 ---
 # AI 行业应用 - 小白版

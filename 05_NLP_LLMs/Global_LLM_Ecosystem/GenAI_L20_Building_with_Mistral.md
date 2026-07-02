@@ -13,6 +13,7 @@ aliases:
   - "Genai L20 Building With Mistral"
   - "GenAI L20 Building with Mistral"
   - GenAI_L20_Building_with_Mistral
+sources: []
 
 ---
 ## 学习目标

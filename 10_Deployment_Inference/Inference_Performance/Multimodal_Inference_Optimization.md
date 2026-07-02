@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Multimodal Inference Optimization"
   - Multimodal_Inference_Optimization
+sources: []
 
 ---
 # 多模态推理优化

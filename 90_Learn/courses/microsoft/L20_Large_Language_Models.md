@@ -10,6 +10,7 @@ tier: supporting
 aliases:
   - "L20 Large Language Models"
   - L20_Large_Language_Models
+sources: []
 
 ---
 # L20 - 大语言模型提示编程与少样本任务

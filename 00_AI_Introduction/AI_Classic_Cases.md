@@ -10,6 +10,7 @@ aliases:
   - "Ai Classic Cases"
   - "AI Classic Cases"
   - AI_Classic_Cases
+sources: []
 
 ---
 # AI 经典案例分析集

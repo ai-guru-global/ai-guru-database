@@ -3,6 +3,7 @@ title: "Statistical Evaluation Methods for AI"
 tags: [evaluation, statistics, significance-testing, confidence-intervals, production]
 status: complete
 last_updated: 2026-07-02
+sources: []
 ---
 
 # Statistical Evaluation Methods for AI

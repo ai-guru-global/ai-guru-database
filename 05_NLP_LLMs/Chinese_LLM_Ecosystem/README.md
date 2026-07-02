@@ -6,6 +6,7 @@ summary: "系统梳理中国 15 家大模型厂商的技术路线、模型矩阵
 created: 2026-06-01
 updated: 2026-06-19
 tier: supporting
+sources: []
 
 ---
 # 中国大模型生态全景 (Chinese LLM Ecosystem)

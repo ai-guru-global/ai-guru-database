@@ -10,6 +10,7 @@ aliases:
   - "Industry Applications In Nutshell"
   - "Industry Applications in nutshell"
   - Industry_Applications-in-nutshell
+sources: []
 
 ---
 # AI 行业应用速览 (AI Industry Applications in a Nutshell)

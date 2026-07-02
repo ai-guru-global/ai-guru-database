@@ -13,6 +13,7 @@ aliases:
 
 updated: 2026-06-30
 summary: "框架集成与生态系统 — 专题文档"
+sources: []
 ---
 
 > [!warning] 生产安全提示 · Production Safety

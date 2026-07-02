@@ -5,6 +5,7 @@ tags: ["computer-vision", "deployment", "inference", "onnx", "tensorrt", "edge-a
 summary: 面向 2026 年生产环境的计算机视觉模型部署与推理优化全景指南，覆盖模型格式转换、服务化、量化剪枝蒸馏、边缘/移动端落地、可观测性、A/B 测试及工业质检与自动驾驶感知等关键案例。
 created: 2026-07-01
 updated: 2026-07-01
+sources: []
 ---
 
 # CV 生产部署与推理优化实战指南 (2026)

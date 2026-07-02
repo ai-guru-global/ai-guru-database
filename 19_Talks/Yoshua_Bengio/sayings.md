@@ -8,6 +8,7 @@ updated: 2026-05-31
 tier: supporting
 aliases:
   - Sayings
+sources: []
 
 ---
 # Yoshua Bengio 关于 AI 的观点 (Yoshua Bengio on AI)

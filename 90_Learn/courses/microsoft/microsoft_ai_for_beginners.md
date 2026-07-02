@@ -11,6 +11,7 @@ aliases:
   - "Microsoft Ai For Beginners"
   - "microsoft ai for beginners"
   - microsoft_ai_for_beginners
+sources: []
 
 ---
 # Microsoft AI For Beginners：12 周初学者课程映射

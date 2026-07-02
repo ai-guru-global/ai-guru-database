@@ -9,6 +9,7 @@ tier: supporting
 aliases:
   - "Transformer Revolution"
   - Transformer_Revolution
+sources: []
 
 ---
 # Transformer 革命 (Transformer Revolution)

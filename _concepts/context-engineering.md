@@ -8,9 +8,10 @@ aliases:
   - "Context Engineering"
   - "context engineering"
 category: -concepts
-lifecycle: stable
+lifecycle: reviewed
 
 relationships:
+sources: []
 ---
 
 # Context Engineering (上下文工程)

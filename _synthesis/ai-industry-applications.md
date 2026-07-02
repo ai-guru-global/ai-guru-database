@@ -8,6 +8,7 @@ tier: core
 aliases:
   - "Ai Industry Applications"
   - "ai industry applications"
+sources: []
 
 ---
 # AI 行业应用与产业变革

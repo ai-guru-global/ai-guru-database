@@ -10,6 +10,7 @@ aliases:
   - "Ai Healthcare 2026"
   - "AI Healthcare 2026"
   - AI_Healthcare_2026
+sources: []
 
 ---
 # AI 医疗健康行业应用 (2025-2026)

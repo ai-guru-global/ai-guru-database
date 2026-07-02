@@ -23,10 +23,11 @@ relationships:
   - target: "_concepts/top-k-sampling"
     type: contrasted_with
 summary: Top-p 采样从累积概率达到 p 的最小 token 集合（nucleus）中采样。它动态调整候选集大小，比 Top-k 更灵活，能在生成质量和多样性之间取得更好平衡。
-lifecycle: stable
+lifecycle: reviewed
 tier: core
 created: 2026-06-25
 updated: 2026-06-25
+sources: []
 ---
 
 # Top-p 采样（Nucleus Sampling）

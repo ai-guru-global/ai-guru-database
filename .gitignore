@@ -18,6 +18,11 @@ dist-ssr
 Web/.env
 Web/.eval-history
 
+# STAROps private config (contains credentials)
+.starops/config.json
+.starops/*.json
+!.starops/*.template
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

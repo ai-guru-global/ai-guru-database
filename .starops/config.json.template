@@ -1,0 +1,12 @@
+{
+  "employeeId": "<your-digital-employee-id>",
+  "workspace": "<your-starops-workspace-name>",
+  "uid": "<your-alibaba-cloud-account-uid>",
+  "endpoint": "starops.cn-beijing.aliyuncs.com",
+  "project": "",
+  "timeout": 1800,
+  "idleTimeout": 60,
+  "accessKeyId": "<optional-access-key-id>",
+  "accessKeySecret": "<optional-access-key-secret>",
+  "securityToken": "<optional-sts-token>"
+}

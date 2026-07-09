@@ -108,30 +108,30 @@ sources: []
 
 | 目录名称 | 文件数 | 字符数 | 占比 |
 |---------|--------|--------|------|
-| 15_Agent_Production | 172 | 230.95 万 | 20.8% |
-| 05_NLP_LLMs | 110 | 142.92 万 | 12.9% |
-| 12_Architecture_Infrastructure | 62 | 99.28 万 | 8.9% |
-| 10_Deployment_Inference | 53 | 60.13 万 | 5.4% |
-| 07_Model_Training | 25 | 53.11 万 | 4.8% |
-| 16_AI_Coding | 64 | 43.96 万 | 4.0% |
+| Agent | 172 | 230.95 万 | 20.8% |
+| 大模型 | 110 | 142.92 万 | 12.9% |
+| 架构基建 | 62 | 99.28 万 | 8.9% |
+| 部署推理 | 53 | 60.13 万 | 5.4% |
+| 模型训练 | 25 | 53.11 万 | 4.8% |
+| AI编程 | 64 | 43.96 万 | 4.0% |
 | _concepts | 123 | 42.98 万 | 3.9% |
-| 11_MLOps_Pipeline | 41 | 40.78 万 | 3.7% |
-| 02_Machine_Learning | 35 | 33.73 万 | 3.0% |
-| 17_Ethics_Safety | 31 | 33.68 万 | 3.0% |
-| 20_Papers | 25 | 33.05 万 | 3.0% |
+| MLOps | 41 | 40.78 万 | 3.7% |
+| 机器学习 | 35 | 33.73 万 | 3.0% |
+| 伦理安全 | 31 | 33.68 万 | 3.0% |
+| 论文精读 | 25 | 33.05 万 | 3.0% |
 | 90_Learn | 60 | 32.98 万 | 3.0% |
-| 01_Fundamentals | 31 | 32.86 万 | 3.0% |
-| 14_RAG_Systems | 31 | 30.53 万 | 2.7% |
-| 08_Model_Evaluation | 16 | 25.88 万 | 2.3% |
-| 09_Testing | 12 | 22.87 万 | 2.1% |
-| 03_Deep_Learning | 21 | 22.68 万 | 2.0% |
-| 04_Computer_Vision | 23 | 19.63 万 | 1.8% |
-| 13_AI_Ops | 13 | 19.51 万 | 1.8% |
-| 06_Reinforcement_Learning | 17 | 17.07 万 | 1.5% |
-| 00_AI_Introduction | 17 | 16.87 万 | 1.5% |
-| 18_AI_Applications_Industry | 26 | 15.92 万 | 1.4% |
-| 21_Interviews | 88 | 12.73 万 | 1.1% |
-| 19_Talks | 54 | 12.45 万 | 1.1% |
+| 数学基础 | 31 | 32.86 万 | 3.0% |
+| RAG系统 | 31 | 30.53 万 | 2.7% |
+| 模型评估 | 16 | 25.88 万 | 2.3% |
+| AI测试 | 12 | 22.87 万 | 2.1% |
+| 深度学习 | 21 | 22.68 万 | 2.0% |
+| 计算机视觉 | 23 | 19.63 万 | 1.8% |
+| AI运维 | 13 | 19.51 万 | 1.8% |
+| 强化学习 | 17 | 17.07 万 | 1.5% |
+| AI入门 | 17 | 16.87 万 | 1.5% |
+| 行业应用 | 26 | 15.92 万 | 1.4% |
+| 面试岗位 | 88 | 12.73 万 | 1.1% |
+| 业界观点 | 54 | 12.45 万 | 1.1% |
 | _synthesis | 29 | 8.55 万 | 0.8% |
 | _references | 37 | 5.88 万 | 0.5% |
 | **总计** | **1,216** | **1,110.97 万** | **100%** |
@@ -233,7 +233,7 @@ curl -L -o ai-guru.zip https://github.com/your-org/ai-guru-knowledge-base/archiv
 
 ## 📚 内容导航
 
-### 🎓 大学通识课程（00_AI_Introduction）
+### 🎓 大学通识课程（AI入门）
 
 完整的 AI 通识教育，支持 16 周学期制：
 
@@ -272,7 +272,7 @@ curl -L -o ai-guru.zip https://github.com/your-org/ai-guru-knowledge-base/archiv
 └── ⑪ AI 运维（可观测性、事故响应）
 ```
 
-### 🆕 LLMOps 完整主线（10_MLOps_Pipeline · 2026 新增）
+### 🆕 LLMOps 完整主线（MLOps · 2026 新增）
 
 本知识库独有的 **LLMOps 全栈主线**，覆盖大模型时代 MLOps 的所有关键环节：
 
@@ -294,7 +294,7 @@ graph LR
 | [LLM 成本与延迟 SLO](MLOps/Cost/LLM_Cost_Latency_SLO.md) | 三层缓存、智能路由、Token 预算熔断、FinOps |
 | [LLM 可观测性](MLOps/Observability/LLM_Observability.md) | 五层监控、Trace 分布式追踪、幻觉/毒性/PII 在线检测 |
 
-> 加上横切关注点（数据版本/再训练/系统 SLO/成本/合规）与 16 个工具深度解析，10_MLOps_Pipeline 共 41 篇文档。
+> 加上横切关注点（数据版本/再训练/系统 SLO/成本/合规）与 16 个工具深度解析，MLOps 共 41 篇文档。
 
 ### 🔬 28 大系统章节
 
@@ -380,13 +380,13 @@ graph LR
 
 | 趋势 | 关键洞察 | 从业者启示 |
 |------|----------|------------|
-| **🤖 Agentic AI 大规模落地** | Gartner 预测 2026 年近 50% 企业软件将内嵌自主 Agent 工具（2024 年不足 5%）；McKinsey 估算 Agent 技术年价值 $2.6-4.4 万亿；但 >40% Agentic AI 项目可能因治理不足被砍（Gartner 2027 预警）。([Gartner via Joget](https://joget.com/ai-agent-adoption-in-2026-what-the-analysts-data-shows/), [McKinsey](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai)) | 重点投入 Agent 编排、工具调用与可观测性；本知识库 15_Agent_Production 章节直接对应此趋势。 |
+| **🤖 Agentic AI 大规模落地** | Gartner 预测 2026 年近 50% 企业软件将内嵌自主 Agent 工具（2024 年不足 5%）；McKinsey 估算 Agent 技术年价值 $2.6-4.4 万亿；但 >40% Agentic AI 项目可能因治理不足被砍（Gartner 2027 预警）。([Gartner via Joget](https://joget.com/ai-agent-adoption-in-2026-what-the-analysts-data-shows/), [McKinsey](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai)) | 重点投入 Agent 编排、工具调用与可观测性；本知识库 Agent 章节直接对应此趋势。 |
 | **🧠 推理模型与推理时计算扩展** | OpenAI o3 系列与 DeepSeek-R1 开创 "推理时计算扩展"（Inference-Time Scaling）范式——DeepSeek-R1 的 RL 训练消耗约 6e23 FLOP，产出与 o1 相当的基准分数，仅为预训练预算的 1/5。RL 训练计算每数月增长 10 倍。（[Epoch AI](https://epoch.ai/gradient-updates/how-far-can-reasoning-models-scale), [arXiv](https://arxiv.org/html/2501.12948v1)） | 关注 GRPO/DPO 等新对齐方法（见 模型训练/Alignment）；推理优化与成本管控成为核心竞争力。 |
-| **⚡ 小模型与高效推理崛起** | 紧凑型语言模型（SLM）预计处理 60% 商业 AI 任务，基础设施成本降低最高 50%（Gleecus 2026 预测）。IBM 指出"效率即新的扩展策略"——专用芯片与边缘部署加速。（[IBM](https://www.ibm.com/think/news/ai-tech-trends-predictions-2026), [Gleecus](https://gleecus.com/blogs/ai-in-2026-trends-predictions/)） | 量化（INT4/FP8）、蒸馏、边缘部署技能需求上升；参见 10_Deployment_Inference 量化深度报告。 |
-| **🌐 多模态 + 具身智能加速** | 多模态模型融合视觉、语言与动作，驱动数字员工处理医疗影像等复杂场景。Deloitte 报告 58% 企业已使用物理机器人与传感器，预计两年内达 80%。具身智能被视为文本扩展边际效益递减后的下一创新前沿。（[IBM](https://www.ibm.com/think/news/ai-tech-trends-predictions-2026), [Gleecus](https://gleecus.com/blogs/ai-in-2026-trends-predictions/)） | VLA（Vision-Language-Action）模型、机器人操作系统成为新技能点；参见 04_Computer_Vision 与 06_Reinforcement_Learning。 |
-| **🛡️ AI 安全治理与合规常态化** | EU AI Act 进入执行阶段，80% 受监管行业须实施强制合规框架。93% 高管认为 AI 主权（Sovereignty）是必选战略要素。非人类身份（Agent/Bot）管理将成为网络安全核心议题。（[IBM](https://www.ibm.com/think/news/ai-tech-trends-predictions-2026), [Gleecus](https://gleecus.com/blogs/ai-in-2026-trends-predictions/)） | LLMOps 可观测性、红队测试、隐私保护从"加分项"变为"必选项"；参见 17_Ethics_Safety 与 MLOps/Observability。 |
+| **⚡ 小模型与高效推理崛起** | 紧凑型语言模型（SLM）预计处理 60% 商业 AI 任务，基础设施成本降低最高 50%（Gleecus 2026 预测）。IBM 指出"效率即新的扩展策略"——专用芯片与边缘部署加速。（[IBM](https://www.ibm.com/think/news/ai-tech-trends-predictions-2026), [Gleecus](https://gleecus.com/blogs/ai-in-2026-trends-predictions/)） | 量化（INT4/FP8）、蒸馏、边缘部署技能需求上升；参见 部署推理 量化深度报告。 |
+| **🌐 多模态 + 具身智能加速** | 多模态模型融合视觉、语言与动作，驱动数字员工处理医疗影像等复杂场景。Deloitte 报告 58% 企业已使用物理机器人与传感器，预计两年内达 80%。具身智能被视为文本扩展边际效益递减后的下一创新前沿。（[IBM](https://www.ibm.com/think/news/ai-tech-trends-predictions-2026), [Gleecus](https://gleecus.com/blogs/ai-in-2026-trends-predictions/)） | VLA（Vision-Language-Action）模型、机器人操作系统成为新技能点；参见 计算机视觉 与 强化学习。 |
+| **🛡️ AI 安全治理与合规常态化** | EU AI Act 进入执行阶段，80% 受监管行业须实施强制合规框架。93% 高管认为 AI 主权（Sovereignty）是必选战略要素。非人类身份（Agent/Bot）管理将成为网络安全核心议题。（[IBM](https://www.ibm.com/think/news/ai-tech-trends-predictions-2026), [Gleecus](https://gleecus.com/blogs/ai-in-2026-trends-predictions/)） | LLMOps 可观测性、红队测试、隐私保护从"加分项"变为"必选项"；参见 伦理安全 与 MLOps/Observability。 |
 
-> 💡 **综合建议**：2026 年的 AI 从业者应重点关注 **Agent 工程化** + **推理效率优化** + **安全合规** 三大主线——这恰好对应本知识库的 LLMOps 完整主线（11_MLOps_Pipeline）、Agent 生产部署（15_Agent_Production）和伦理安全（17_Ethics_Safety）三大核心板块。
+> 💡 **综合建议**：2026 年的 AI 从业者应重点关注 **Agent 工程化** + **推理效率优化** + **安全合规** 三大主线——这恰好对应本知识库的 LLMOps 完整主线（MLOps）、Agent 生产部署（Agent）和伦理安全（伦理安全）三大核心板块。
 
 ---
 
@@ -416,10 +416,10 @@ AI Guru 知识库可以作为高质量语料导入到各种 AI 工具中：
 # 下载精简版（仅核心内容）
 git clone --depth 1 --filter=blob:none --sparse https://github.com/your-org/ai-guru-knowledge-base.git
 cd ai-guru-knowledge-base
-git sparse-checkout set 00_AI_Introduction 04_NLP_LLMs 10_MLOps_Pipeline 13_Agent_Production
+git sparse-checkout set AI入门 大模型 MLOps Agent
 
 # 打包上传
-zip -r ai-guru-core.zip 00_AI_Introduction 04_NLP_LLMs 10_MLOps_Pipeline 13_Agent_Production
+zip -r ai-guru-core.zip AI入门 大模型 MLOps Agent
 ```
 
 ### Obsidian / Notion

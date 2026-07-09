@@ -510,6 +510,6 @@ model = RandomForestClassifier(**params)
 
 ## Related
 
-- [[11_MLOps_Pipeline/Orchestration/Data_Pipeline_Orchestration.md|Data_Pipeline_Orchestration]]
-- [[11_MLOps_Pipeline/MLOps-in-nutshell.md|MLOps-in-nutshell]]
+- [[MLOps/Orchestration/Data_Pipeline_Orchestration.md|Data_Pipeline_Orchestration]]
+- [[MLOps/MLOps-in-nutshell.md|MLOps-in-nutshell]]
 - [[_concepts/mlops.md|mlops]]

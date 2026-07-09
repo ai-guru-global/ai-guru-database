@@ -71,28 +71,28 @@ Wikilinks pointing to pages that do not exist in the vault.
 
 | Broken Target | References | Likely Cause |
 |---|---|---|
-| `13_AI_Ops/AI_Incident_Response_Playbook.md` | 17 | Moved/renamed during restructuring |
+| `AI运维/AI_Incident_Response_Playbook.md` | 17 | Moved/renamed during restructuring |
 | `arxiv` | 14 | External link used as wikilink (not a page) |
-| `02_Machine_Learning` | 8 | Chapter-level link without README match |
-| `12_Architecture_Infrastructure/AI_Infrastructure_2026.md` | 8 | Deleted or not yet created |
-| `12_Architecture_Infrastructure/Spring_AI_Architecture.md` | 7 | Not yet created |
-| `10_Deployment_Inference` | 6 | Chapter-level link without exact match |
+| `机器学习` | 8 | Chapter-level link without README match |
+| `架构基建/AI_Infrastructure_2026.md` | 8 | Deleted or not yet created |
+| `架构基建/Spring_AI_Architecture.md` | 7 | Not yet created |
+| `部署推理` | 6 | Chapter-level link without exact match |
 | `14_AI_Gateway/LiteLLM_Deep_Dive.md` | 5 | Moved to 12_Architecture_Infrastructure |
 | `14_AI_Gateway` | 4 | Chapter moved/merged |
-| `01_Fundamentals` | 4 | Chapter-level link without exact match |
-| `14_RAG_Systems` | 4 | Chapter-level link |
-| `17_Ethics_Safety` | 4 | Chapter-level link |
-| `16_AI_Coding` | 4 | Chapter-level link |
+| `数学基础` | 4 | Chapter-level link without exact match |
+| `RAG系统` | 4 | Chapter-level link |
+| `伦理安全` | 4 | Chapter-level link |
+| `AI编程` | 4 | Chapter-level link |
 | `14_AI_Gateway/AI_Gateway_2026.md` | 3 | Moved/merged into AI_Gateway_README |
-| `15_Agent_Production` | 3 | Chapter-level link |
-| `09_Testing` | 3 | Chapter-level link |
-| `05_NLP_LLMs/Chinese_LLM_Ecosystem` | 3 | Subdirectory link without page match |
-| `03_Deep_Learning/ApacheCN_PyTorch_Track` | 3 | Archived/removed |
-| `03_Deep_Learning/ApacheCN_TensorFlow_Track` | 3 | Archived/removed |
-| `05_NLP_LLMs/ApacheCN_NLP_Track` | 3 | Archived/removed |
-| `07_Model_Training` | 3 | Chapter-level link |
+| `Agent` | 3 | Chapter-level link |
+| `AI测试` | 3 | Chapter-level link |
+| `大模型/Chinese_LLM_Ecosystem` | 3 | Subdirectory link without page match |
+| `深度学习/ApacheCN_PyTorch_Track` | 3 | Archived/removed |
+| `深度学习/ApacheCN_TensorFlow_Track` | 3 | Archived/removed |
+| `大模型/ApacheCN_NLP_Track` | 3 | Archived/removed |
+| `模型训练` | 3 | Chapter-level link |
 
-**Pattern analysis**: ~30 broken links are chapter-level or directory-level references (e.g., `[[02_Machine_Learning]]`) that don't resolve to a specific file. ~14 are `[[arxiv]]` references that should be external links. The remaining ~55 are genuine broken references to moved/deleted pages.
+**Pattern analysis**: ~30 broken links are chapter-level or directory-level references (e.g., `[[机器学习]]`) that don't resolve to a specific file. ~14 are `[[arxiv]]` references that should be external links. The remaining ~55 are genuine broken references to moved/deleted pages.
 
 ---
 
@@ -104,10 +104,10 @@ Pages missing one or more required frontmatter fields: `title`, `category`, `tag
 
 | Field | Pages Missing | Top Offenders |
 |---|---|---|
-| `updated` | 78 | 16_AI_Coding/Tools/OpenRouter/* (48 pages), system pages (hot.md, index.md) |
+| `updated` | 78 | AI编程/Tools/OpenRouter/* (48 pages), system pages (hot.md, index.md) |
 | `category` | 31 | Beginner guides, index.md, some Agent Harness pages |
-| `tags` | 28 | 16_AI_Coding/Tools/OpenRouter/*, 16_AI_Coding/Tools/OpenCode/* |
-| `created` | 12 | 16_AI_Coding/OpenRouter_OpenCode_Guide.md, index.md, hot.md |
+| `tags` | 28 | AI编程/Tools/OpenRouter/*, AI编程/Tools/OpenCode/* |
+| `created` | 12 | AI编程/OpenRouter_OpenCode_Guide.md, index.md, hot.md |
 | `title` | 1 | log.md |
 
 ### Pages with No Frontmatter At All
@@ -128,26 +128,26 @@ Pages with `summary_len = 0` (no summary in frontmatter).
 
 | Incoming | Page | Title |
 |---|---|---|
-| 50 | `16_AI_Coding/OpenRouter_OpenCode_Guide.md` | AI 编程与 LLM 网关专题 |
-| 50 | `16_AI_Coding/MOC_OpenRouter_OpenCode.md` | topic-ai-coding MOC |
-| 50 | `16_AI_Coding/Tools/OpenRouter/05-openrouter-api-reference.md` | API 参考与请求/响应规范 |
-| 50 | `16_AI_Coding/Tools/OpenRouter/08-openrouter-prompt-caching-optimization.md` | Prompt Caching 与成本优化 |
-| 50 | `16_AI_Coding/Tools/OpenRouter/01-openrouter-overview-architecture.md` | OpenRouter 概述与核心架构 |
-| 50 | `16_AI_Coding/Tools/OpenRouter/02-openrouter-quickstart-setup.md` | 快速接入与环境配置 |
-| 48 | `16_AI_Coding/Tools/OpenRouter/06-openrouter-structured-outputs-tools.md` | Structured Outputs 与 Tool Calling |
-| 48 | `16_AI_Coding/Tools/OpenRouter/09-openrouter-frameworks-integrations.md` | 框架集成与生态系统 |
-| 48 | `16_AI_Coding/Tools/OpenRouter/10-openrouter-streaming-multimedia.md` | 流式传输与多模态输入 |
-| 48 | `16_AI_Coding/Tools/OpenRouter/03-openrouter-models-providers.md` | 模型与 Provider 生态 |
-| 48 | `16_AI_Coding/Tools/OpenRouter/07-openrouter-plugins-web-search.md` | 插件体系与 Web Search |
-| 48 | `16_AI_Coding/Tools/OpenRouter/04-openrouter-provider-routing.md` | 智能路由与 Provider 选择 |
-| 48 | `16_AI_Coding/Tools/OpenCode/21-opencode-overview-architecture.md` | OpenCode 概述与核心架构 |
-| 48 | `16_AI_Coding/Tools/OpenCode/23-opencode-providers-models.md` | Provider 与模型管理 |
-| 48 | `16_AI_Coding/Tools/OpenCode/22-opencode-installation-quickstart.md` | 安装部署与快速入门 |
-| 46 | `16_AI_Coding/Tools/OpenCode/24-opencode-agents-system.md` | Agent 系统深度指南 |
-| 22 | `16_AI_Coding/Tools/OpenRouter/11-openrouter-security-privacy.md` | 安全、隐私与数据治理 |
-| 12 | `15_Agent_Production/Agent_Harness/The_Anatomy_of_an_Agent_Harness.md` | The Anatomy of an Agent Harness |
-| 10 | `05_NLP_LLMs/LLM_For_Beginners.md` | 大语言模型入门 |
-| 6 | `05_NLP_LLMs/LLM_Architectures/LLM_Internals_Inference.md` | 大模型推理与部署 |
+| 50 | `AI编程/OpenRouter_OpenCode_Guide.md` | AI 编程与 LLM 网关专题 |
+| 50 | `AI编程/MOC_OpenRouter_OpenCode.md` | topic-ai-coding MOC |
+| 50 | `AI编程/Tools/OpenRouter/05-openrouter-api-reference.md` | API 参考与请求/响应规范 |
+| 50 | `AI编程/Tools/OpenRouter/08-openrouter-prompt-caching-optimization.md` | Prompt Caching 与成本优化 |
+| 50 | `AI编程/Tools/OpenRouter/01-openrouter-overview-architecture.md` | OpenRouter 概述与核心架构 |
+| 50 | `AI编程/Tools/OpenRouter/02-openrouter-quickstart-setup.md` | 快速接入与环境配置 |
+| 48 | `AI编程/Tools/OpenRouter/06-openrouter-structured-outputs-tools.md` | Structured Outputs 与 Tool Calling |
+| 48 | `AI编程/Tools/OpenRouter/09-openrouter-frameworks-integrations.md` | 框架集成与生态系统 |
+| 48 | `AI编程/Tools/OpenRouter/10-openrouter-streaming-multimedia.md` | 流式传输与多模态输入 |
+| 48 | `AI编程/Tools/OpenRouter/03-openrouter-models-providers.md` | 模型与 Provider 生态 |
+| 48 | `AI编程/Tools/OpenRouter/07-openrouter-plugins-web-search.md` | 插件体系与 Web Search |
+| 48 | `AI编程/Tools/OpenRouter/04-openrouter-provider-routing.md` | 智能路由与 Provider 选择 |
+| 48 | `AI编程/Tools/OpenCode/21-opencode-overview-architecture.md` | OpenCode 概述与核心架构 |
+| 48 | `AI编程/Tools/OpenCode/23-opencode-providers-models.md` | Provider 与模型管理 |
+| 48 | `AI编程/Tools/OpenCode/22-opencode-installation-quickstart.md` | 安装部署与快速入门 |
+| 46 | `AI编程/Tools/OpenCode/24-opencode-agents-system.md` | Agent 系统深度指南 |
+| 22 | `AI编程/Tools/OpenRouter/11-openrouter-security-privacy.md` | 安全、隐私与数据治理 |
+| 12 | `Agent/Agent_Harness/The_Anatomy_of_an_Agent_Harness.md` | The Anatomy of an Agent Harness |
+| 10 | `大模型/LLM_For_Beginners.md` | 大语言模型入门 |
+| 6 | `大模型/LLM_Architectures/LLM_Internals_Inference.md` | 大模型推理与部署 |
 
 **Key observation**: 47 of the 65 missing-summary pages (72%) are from the 16_AI_Coding OpenRouter/OpenCode batch ingest. These are high-traffic pages (48-50 incoming each) that urgently need summaries.
 
@@ -234,9 +234,9 @@ agent-evaluation-model-evaluation, agent-framework-production, agents-reinforcem
 ### Priority 1 -- Quick Wins (can be fixed in a single session)
 
 1. **Fix 55 genuinely broken wikilinks** -- Update references to moved/renamed pages. Focus on:
-   - `13_AI_Ops/AI_Incident_Response_Playbook.md` (17 refs) -- find the actual page path
-   - `12_Architecture_Infrastructure/AI_Infrastructure_2026.md` (8 refs) -- create or redirect
-   - `12_Architecture_Infrastructure/Spring_AI_Architecture.md` (7 refs) -- create or redirect
+   - `AI运维/AI_Incident_Response_Playbook.md` (17 refs) -- find the actual page path
+   - `架构基建/AI_Infrastructure_2026.md` (8 refs) -- create or redirect
+   - `架构基建/Spring_AI_Architecture.md` (7 refs) -- create or redirect
    - `14_AI_Gateway/*` references (12 refs total) -- update to current paths
    - `arxiv` (14 refs) -- convert to external links `[arxiv](https://arxiv.org)`
    - Chapter-level `[[XX_Chapter]]` links (~30) -- point to `XX_Chapter/README.md`

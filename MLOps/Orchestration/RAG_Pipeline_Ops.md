@@ -6,7 +6,7 @@ summary: "> **一句话理解**: RAG 系统的运维难点不在「检索」，�
 created: 2026-06-15
 updated: 2026-06-15
 tier: supporting
-parent: "[[11_MLOps_Pipeline/LLMOps_2026]]"
+parent: "[[MLOps/LLMOps_2026]]"
 aliases:
   - "Rag Pipeline Ops"
   - "RAG Pipeline Ops"
@@ -18,7 +18,7 @@ sources: []
 
 > **一句话理解**: RAG 系统的运维难点不在「检索」，而在「知识库是活的」——文档在变、切块策略在调、Embedding 模型在升级，每个变更都可能让召回质量崩塌。
 
-本文是 [[LLMOps_2026]] §6「RAG 流水线运维」的深扩专题，专注 Ops 视角。RAG 的架构与算法详见 [[14_RAG_Systems/README]]。
+本文是 [[LLMOps_2026]] §6「RAG 流水线运维」的深扩专题，专注 Ops 视角。RAG 的架构与算法详见 [[RAG系统/README]]。
 
 ---
 
@@ -405,7 +405,7 @@ jobs:
 | **Pinecone** | 后台异步 | 实时 | namespace | SaaS |
 | **pgvector** | 慢（VACUUM） | 事务 | 标准 SQL | PostgreSQL |
 
-详见 [[14_RAG_Systems/Vector_Database_for_dummy]]、[[_concepts/vector-database]]。
+详见 [[RAG系统/Vector_Database_for_dummy]]、[[_concepts/vector-database]]。
 
 ---
 
@@ -432,21 +432,21 @@ jobs:
 ## 10. 相关文档
 
 ### 本章内
-- [[11_MLOps_Pipeline/LLMOps_2026]] — 本系列主线（§6 是本文的概览版）
-- [[11_MLOps_Pipeline/Evaluation/LLM_Evaluation_Pipeline]] — RAG 质量评估方法
-- [[11_MLOps_Pipeline/Observability/Model_Monitoring_and_Drift_Detection_2026]] — 漂移检测理论
-- [[11_MLOps_Pipeline/Orchestration/Data_Pipeline_Orchestration]] — 数据编排（RAG Pipeline 的基础）
+- [[MLOps/LLMOps_2026]] — 本系列主线（§6 是本文的概览版）
+- [[MLOps/Evaluation/LLM_Evaluation_Pipeline]] — RAG 质量评估方法
+- [[MLOps/Observability/Model_Monitoring_and_Drift_Detection_2026]] — 漂移检测理论
+- [[MLOps/Orchestration/Data_Pipeline_Orchestration]] — 数据编排（RAG Pipeline 的基础）
 
 ### 跨章
-- [[14_RAG_Systems/README]] — RAG 系统架构（本文侧重其 Ops）
-- [[14_RAG_Systems/RAG_Systems_for_dummy]] — RAG 入门
-- [[14_RAG_Systems/Vector_Database_for_dummy]] — 向量库入门
+- [[RAG系统/README]] — RAG 系统架构（本文侧重其 Ops）
+- [[RAG系统/RAG_Systems_for_dummy]] — RAG 入门
+- [[RAG系统/Vector_Database_for_dummy]] — 向量库入门
 - [[_concepts/vector-database]] — 向量库概念
 - [[_concepts/rag-systems]] — RAG 概念
 - [[_concepts/embedding-models]] — Embedding 模型
 - [[_concepts/matryoshka-representation-learning]] — 可截断嵌入（节省存储）
-- [[09_Testing/RAGAS_Deep_Dive]] — RAG 评估事实标准
-- [[10_Deployment_Inference/Caching/Prompt_Caching_Advanced]] — 缓存与 RAG
+- [[AI测试/RAGAS_Deep_Dive]] — RAG 评估事实标准
+- [[部署推理/Caching/Prompt_Caching_Advanced]] — 缓存与 RAG
 
 ---
 

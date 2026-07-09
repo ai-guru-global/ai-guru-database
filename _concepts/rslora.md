@@ -10,7 +10,7 @@ relationships:
   - target: "_concepts/pissa"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "rsLoRA 通过修改 LoRA 的缩放因子为 1/√r 解决高秩时效果退化的问题——让 LoRA 在 rank 增大时保持稳定的训练表现。简单一行配置改动即可生效。"
 provenance:
   extracted: 0.15

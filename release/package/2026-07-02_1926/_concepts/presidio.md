@@ -8,7 +8,7 @@ relationships:
   - target: "_concepts/opik"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "Microsoft 开源的 PII 检测与脱敏引擎，基于 NLP + 正则 + 上下文分析识别敏感信息，支持自定义识别器和匿名化策略。"
 provenance:
   extracted: 0.55

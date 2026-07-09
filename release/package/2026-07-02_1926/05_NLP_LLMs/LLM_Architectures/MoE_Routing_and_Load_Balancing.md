@@ -459,9 +459,9 @@ async def async_moe_forward(tokens, router_decision):
 
 ## Related
 
-- [[05_NLP_LLMs/LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral]]
+- [[大模型/LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral]]
 - [[_concepts/transformer-architecture]]
-- [[05_NLP_LLMs/LLM_Architectures/LLM_Architectures]]
-- [[07_Model_Training/Distributed_Training/Distributed_Training_2026]]
-- [[03_Deep_Learning/Neural_Network_Core/Neural_Network_Core]]
+- [[大模型/LLM_Architectures/LLM_Architectures]]
+- [[模型训练/Distributed_Training/Distributed_Training_2026]]
+- [[深度学习/Neural_Network_Core/Neural_Network_Core]]
 - [[_synthesis/moe-inference-optimization|MoE × 推理优化]] — 专家混合架构的推理加速

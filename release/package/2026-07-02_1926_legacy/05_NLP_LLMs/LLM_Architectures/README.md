@@ -15,14 +15,14 @@ tier: peripheral
 
 ## 页面列表
 
-- [[05_NLP_LLMs/LLM_Architectures/MoE_Routing_and_Load_Balancing|MoE Routing and Load Balancing]]
-- [[05_NLP_LLMs/LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral|MoE Case Studies: DeepSeek and Mixtral]]
-- [[05_NLP_LLMs/LLM_Architectures/Transformer_Alternatives|Transformer Alternatives: RWKV, RetNet, Mamba, and Beyond]]
+- [[大模型/LLM_Architectures/MoE_Routing_and_Load_Balancing|MoE Routing and Load Balancing]]
+- [[大模型/LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral|MoE Case Studies: DeepSeek and Mixtral]]
+- [[大模型/LLM_Architectures/Transformer_Alternatives|Transformer Alternatives: RWKV, RetNet, Mamba, and Beyond]]
 
 ## 相关页面
 
-- [[05_NLP_LLMs/LLM_Architectures/README|LLM 架构目录]]
+- [[大模型/LLM_Architectures/README|LLM 架构目录]]
 
 ## Related
 
-- [[05_NLP_LLMs/README|04 自然语言处理与大模型 (NLP & LLMs)]]
+- [[大模型/README|04 自然语言处理与大模型 (NLP & LLMs)]]

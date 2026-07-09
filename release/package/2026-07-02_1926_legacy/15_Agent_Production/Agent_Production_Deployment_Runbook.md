@@ -658,10 +658,10 @@ Agent 系统的灾备不仅要恢复服务，还要恢复用户的会话状态�
 
 ## Related
 
-- [[15_Agent_Production/Enterprise_Agent/Agent_Production_2026|AI Agent 生产部署最佳实践 2026]]
-- [[15_Agent_Production/Agent_Foundations/Agent_Observability_2026|Agent 可观测性与调试 2026]]
-- [[15_Agent_Production/Agent_Foundations/Agent_State_Management|Agent 状态管理]]
-- [[15_Agent_Production/Memory_Infrastructure/Agent_Memory_Systems_2026|AI Agent 记忆系统架构]]
-- [[15_Agent_Production/Agent_Harness/Agent_Harness_Architecture_2026|Agent Harness 技术架构 2026]]
-- [[12_Architecture_Infrastructure/AI_SRE_Runbook|AI SRE Runbook]]
-- [[10_Deployment_Inference/Inference_Engines/LLM_Inference_Engine_Selection_Guide|LLM 推理引擎选型指南]]
+- [[Agent/Enterprise_Agent/Agent_Production_2026|AI Agent 生产部署最佳实践 2026]]
+- [[Agent/Agent_Foundations/Agent_Observability_2026|Agent 可观测性与调试 2026]]
+- [[Agent/Agent_Foundations/Agent_State_Management|Agent 状态管理]]
+- [[Agent/Memory_Infrastructure/Agent_Memory_Systems_2026|AI Agent 记忆系统架构]]
+- [[Agent/Agent_Harness/Agent_Harness_Architecture_2026|Agent Harness 技术架构 2026]]
+- [[架构基建/AI_SRE_Runbook|AI SRE Runbook]]
+- [[部署推理/Inference_Engines/LLM_Inference_Engine_Selection_Guide|LLM 推理引擎选型指南]]

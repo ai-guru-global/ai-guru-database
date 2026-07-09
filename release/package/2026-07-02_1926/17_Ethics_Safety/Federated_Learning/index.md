@@ -8,9 +8,9 @@ sources: []
 
 # Federated Learning
 
-This page indexes the contents of `17_Ethics_Safety/Federated_Learning`.
+This page indexes the contents of `伦理安全/Federated_Learning`.
 
 ## Files
 
-- [[17_Ethics_Safety/Federated_Learning/Federated_Learning_Deep_Dive|Federated Learning Deep Dive]]
-- [[17_Ethics_Safety/Federated_Learning/README|README]]
+- [[伦理安全/Federated_Learning/Federated_Learning_Deep_Dive|Federated Learning Deep Dive]]
+- [[伦理安全/Federated_Learning/README|README]]

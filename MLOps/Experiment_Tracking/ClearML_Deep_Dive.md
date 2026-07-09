@@ -21,7 +21,7 @@ sources: []
 
 > **一句话理解**: ClearML 是开源 ML 平台——实验追踪、MLOps、自动化机器学习、模型服务，一站式 ML 解决方案。
 
-> 📐 **概念与选型方法论**: 实验追踪的原理、ClearML vs MLflow vs W&B 选型，见 [[11_MLOps_Pipeline/Experiment_Tracking/Experiment_Tracking_Deep_Dive]]。本文聚焦 ClearML 工具用法。
+> 📐 **概念与选型方法论**: 实验追踪的原理、ClearML vs MLflow vs W&B 选型，见 [[MLOps/Experiment_Tracking/Experiment_Tracking_Deep_Dive]]。本文聚焦 ClearML 工具用法。
 
 ---
 
@@ -316,8 +316,8 @@ automl.search(
 
 ## Related
 
-- [[13_AI_Ops/AIOps-in-nutshell.md|AIOps-in-nutshell]]
-- [[13_AI_Ops/SRE_Reliability/AI_Incident_Response_Playbook|AI_Incident_Response_Playbook]]
-- [[13_AI_Ops/AI_Ops_for_dummy.md|AI_Ops_for_dummy]]
-- [[13_AI_Ops/README.md|13_AI_Ops README]]
-- [[13_AI_Ops/README_for_dummy.md|README_for_dummy]]
+- [[AI运维/AIOps-in-nutshell.md|AIOps-in-nutshell]]
+- [[AI运维/SRE_Reliability/AI_Incident_Response_Playbook|AI_Incident_Response_Playbook]]
+- [[AI运维/AI_Ops_for_dummy.md|AI_Ops_for_dummy]]
+- [[AI运维/README.md|AI运维 README]]
+- [[AI运维/README_for_dummy.md|README_for_dummy]]

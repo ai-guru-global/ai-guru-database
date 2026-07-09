@@ -84,7 +84,7 @@ aliases:
 
 - [[nlp-engineer]]: 语言方向
 - [[ai-engineer]]: 偏应用集成
-- [[21_Interviews/Robotics_Engineer/Robotics_Engineer]]: 机器人视觉
+- [[面试岗位/Robotics_Engineer/Robotics_Engineer]]: 机器人视觉
 
 ---
 

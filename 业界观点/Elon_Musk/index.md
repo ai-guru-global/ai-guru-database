@@ -8,9 +8,9 @@ sources: []
 
 # Elon Musk
 
-This page indexes the contents of `19_Talks/Elon_Musk`.
+This page indexes the contents of `业界观点/Elon_Musk`.
 
 ## Files
 
-- [[19_Talks/Elon_Musk/about|About]]
-- [[19_Talks/Elon_Musk/sayings|Sayings]]
+- [[业界观点/Elon_Musk/about|About]]
+- [[业界观点/Elon_Musk/sayings|Sayings]]

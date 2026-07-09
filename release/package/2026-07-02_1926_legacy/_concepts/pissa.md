@@ -10,7 +10,7 @@ relationships:
   - target: "_concepts/peft"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "PiSSA 是基于主奇异值和奇异向量的参数高效微调方法——通过 SVD 分解权重矩阵，保留最重要的奇异分量来初始化低秩适配器。相比 LoRA 随机初始化，PiSSA 收敛更快、效果更好。"
 provenance:
   extracted: 0.15

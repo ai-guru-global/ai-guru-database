@@ -125,8 +125,8 @@ Agentic RL 旨在赋予 LLM Agent 以下能力 ^[extracted]：
 
 ## 6. 关联阅读
 
-- [[07_Model_Training/Alignment/GRPO_and_New_Alignment_Methods]] — GRPO 与新对齐方法
-- [[07_Model_Training/Alignment/TRL_RLHF_DPO_Guide]] — TRL RLHF/DPO 实战
-- [[06_Reinforcement_Learning/RL_Fundamentals]] — 强化学习基础
-- [[06_Reinforcement_Learning/Deep_RL/README]] — 深度强化学习
-- [[15_Agent_Production/Hello_Agents_L04_ReAct]] — ReAct 多步推理范式
+- [[模型训练/Alignment/GRPO_and_New_Alignment_Methods]] — GRPO 与新对齐方法
+- [[模型训练/Alignment/TRL_RLHF_DPO_Guide]] — TRL RLHF/DPO 实战
+- [[强化学习/RL_Fundamentals]] — 强化学习基础
+- [[强化学习/Deep_RL/README]] — 深度强化学习
+- [[Agent/Hello_Agents_L04_ReAct]] — ReAct 多步推理范式

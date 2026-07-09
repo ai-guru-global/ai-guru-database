@@ -57,4 +57,4 @@ model.gradient_checkpointing_enable()
 - [[_concepts/deepspeed|DeepSpeed]]
 - [[_concepts/lora-peft|LoRA / PEFT]]
 - [[_concepts/qlora|QLoRA]]
-- [[13_AI_Ops/SRE_Reliability/GPU_OOM_Troubleshooting_Guide|GPU OOM 排障指南]]
+- [[AI运维/SRE_Reliability/GPU_OOM_Troubleshooting_Guide|GPU OOM 排障指南]]

@@ -25,8 +25,8 @@ sources: []
 ## 相关阅读
 
 - [LLM Benchmark Suite 2026](./LLM_Benchmark_Suite_2026.md) — 通用 LLM 评测基准全景
-- [Agent 生产化部署](../../15_Agent_Production/README.md) — Agent 从评测到生产的完整路径
-- [全球 LLM 生态总览](../../05_NLP_LLMs/Global_LLM_Ecosystem/README.md) — 各模型家族与能力对比
+- [Agent 生产化部署](../../Agent/README.md) — Agent 从评测到生产的完整路径
+- [全球 LLM 生态总览](../../大模型/Global_LLM_Ecosystem/README.md) — 各模型家族与能力对比
 
 ---
 

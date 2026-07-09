@@ -7,8 +7,8 @@ aliases:
   - "可观测性"
 category: -concepts
 sources:
-  - 11_MLOps_Pipeline/Observability/Prometheus_Grafana_Deep_Dive.md
-  - 13_AI_Ops/LLM_Observability_Guide.md
+  - MLOps/Observability/Prometheus_Grafana_Deep_Dive.md
+  - AI运维/LLM_Observability_Guide.md
   - _meta/cheatsheets/cheatsheet-llm-inference.md
 relationships:
   - target: "_concepts/prometheus"
@@ -177,4 +177,4 @@ safety_violation_rate: < 0.1%     # 安全违规 ≤ 0.1%
 
 ---
 
-**参见**：[[Prometheus_Grafana_Deep_Dive]] · [[11_MLOps_Pipeline/Observability/LLM_Observability]] · [[_concepts/prometheus]] · [[_concepts/grafana]] · [[13_AI_Ops/README|13_AI_Ops]] · [[_meta/cheatsheets/cheatsheet-llm-inference]]
+**参见**：[[Prometheus_Grafana_Deep_Dive]] · [[MLOps/Observability/LLM_Observability]] · [[_concepts/prometheus]] · [[_concepts/grafana]] · [[AI运维/README|AI运维]] · [[_meta/cheatsheets/cheatsheet-llm-inference]]

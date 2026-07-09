@@ -8,9 +8,9 @@ sources: []
 
 # Yann Lecun
 
-This page indexes the contents of `19_Talks/Yann_LeCun`.
+This page indexes the contents of `业界观点/Yann_LeCun`.
 
 ## Files
 
-- [[19_Talks/Yann_LeCun/about|About]]
-- [[19_Talks/Yann_LeCun/sayings|Sayings]]
+- [[业界观点/Yann_LeCun/about|About]]
+- [[业界观点/Yann_LeCun/sayings|Sayings]]

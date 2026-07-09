@@ -11,9 +11,9 @@ relationships:
   - target: "_concepts/multimodal-vision"
     type: related_to
 sources:
-  - 04_Computer_Vision/image-segmentation_supervised-learning_object-detection/Image_Classification_Detection.md
-  - 04_Computer_Vision/ViT_Deep_Dive.md
-  - 04_Computer_Vision/3D_Vision/3D_Vision.md
+  - 计算机视觉/image-segmentation_supervised-learning_object-detection/Image_Classification_Detection.md
+  - 计算机视觉/ViT_Deep_Dive.md
+  - 计算机视觉/3D_Vision/3D_Vision.md
 summary: 计算机视觉让机器理解图像和视频，涵盖分类、检测、分割等任务，CNN与ViT是两大支柱架构。
 provenance:
   extracted: 0.80
@@ -95,15 +95,15 @@ OCR系统由文字检测+文字识别两阶段组成。经典CRNN架构采用CNN
 
 ## 来源
 
-- 04_Computer_Vision/Image_Classification_Detection/Image_Classification_Detection.md
-- 04_Computer_Vision/ViT_Deep_Dive.md
-- 04_Computer_Vision/3D_Vision/3D_Vision.md
-- 04_Computer_Vision/OCR_Text_Recognition/OCR_Text_Recognition.md
+- 计算机视觉/Image_Classification_Detection/Image_Classification_Detection.md
+- 计算机视觉/ViT_Deep_Dive.md
+- 计算机视觉/3D_Vision/3D_Vision.md
+- 计算机视觉/OCR_Text_Recognition/OCR_Text_Recognition.md
 
 ## Related
 
-- [[20_Papers_and_Research/Vision/ResNet_Deep_Dive]] — ResNet 深度解读 (Deep Residual Learning for Image Recognition) (共享: cnn, cv, deep-learning)
-- [[04_Computer_Vision/README]] — 05 计算机视觉 (Computer Vision) (共享: cnn, cv)
-- [[04_Computer_Vision/Segmentation/Segmentation_for_dummy]] — 图像分割 - 小白版 ✂️ (共享: cnn, cv)
-- [[04_Computer_Vision/Video_Generation/README]] — AI视频生成 (Video Generation) (共享: cnn, cv)
+- [[论文精读/Vision/ResNet_Deep_Dive]] — ResNet 深度解读 (Deep Residual Learning for Image Recognition) (共享: cnn, cv, deep-learning)
+- [[计算机视觉/README]] — 05 计算机视觉 (Computer Vision) (共享: cnn, cv)
+- [[计算机视觉/Segmentation/Segmentation_for_dummy]] — 图像分割 - 小白版 ✂️ (共享: cnn, cv)
+- [[计算机视觉/Video_Generation/README]] — AI视频生成 (Video Generation) (共享: cnn, cv)
 - [[_synthesis/cv-deep-learning]]

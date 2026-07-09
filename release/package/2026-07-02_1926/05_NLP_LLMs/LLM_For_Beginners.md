@@ -177,7 +177,7 @@ Transformer 一次性并行处理全部词，本身没有"顺序"概念，所以
 
 ### 5.3 中国的"百模大战"
 
-中国 AI 在应用落地、中文能力、成本效率上竞争激烈。详见 [[05_NLP_LLMs/Chinese_LLM_Ecosystem/README|中国大模型生态]]、[[05_NLP_LLMs/Global_LLM_Ecosystem/README|国际大模型生态]]。
+中国 AI 在应用落地、中文能力、成本效率上竞争激烈。详见 [[大模型/Chinese_LLM_Ecosystem/README|中国大模型生态]]、[[大模型/Global_LLM_Ecosystem/README|国际大模型生态]]。
 
 | 厂商 | 代表 | 擅长 |
 | :--- | :--- | :--- |
@@ -254,7 +254,7 @@ Transformer 一次性并行处理全部词，本身没有"顺序"概念，所以
 - 深度学习/Transformer：[[Deep_Learning_For_Beginners]]、[[Transformer_Architecture]]、[[Transformer_Deep_Dive]]
 - 系统进阶：[[LLM_Fundamentals]]、[[LLM_Training_Deep_Dive]]、[[LLM_Inference_Deep_Dive]]、[[LLM_Architecture_Evolution]]
 - 提示与上下文：[[Context_Engineering_Guide]]、[[Structured_Output_Guide]]
-- 生态：[[05_NLP_LLMs/Chinese_LLM_Ecosystem/README|中国大模型生态]]、[[05_NLP_LLMs/Global_LLM_Ecosystem/README|国际大模型生态]]、[[Long_Context_Models_2026]]
+- 生态：[[大模型/Chinese_LLM_Ecosystem/README|中国大模型生态]]、[[大模型/Global_LLM_Ecosystem/README|国际大模型生态]]、[[Long_Context_Models_2026]]
 - 同源进阶：[[AI_Reasoning_Models_Guide]]、[[AI_New_Architectures]]、[[AI_Multimodal_GenAI]]
 
 ## Related

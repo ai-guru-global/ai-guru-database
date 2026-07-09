@@ -100,6 +100,6 @@ securityContext:
 
 - [[_concepts/supply-chain-security|Supply Chain Security]]
 - [[_concepts/container-security|Container Security]]
-- [[12_Architecture_Infrastructure/Security/AI_Security_Fundamentals|AI 安全基础]]
+- [[架构基建/Security/AI_Security_Fundamentals|AI 安全基础]]
 
-- [[12_Architecture_Infrastructure/README|架构与基础设施 (Architecture & Infrastructure)]]
+- [[架构基建/README|架构与基础设施 (Architecture & Infrastructure)]]

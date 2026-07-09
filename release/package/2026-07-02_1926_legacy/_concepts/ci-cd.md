@@ -15,7 +15,7 @@ relationships:
   - target: "_concepts/policy-as-code"
     type: integrates_with
 sources:
-  - 11_MLOps_Pipeline/CI_CD/
+  - MLOps/CI_CD/
   - _concepts/argocd.md
 summary: "CI/CD（持续集成 / 持续部署）是通过自动化流水线快速、可靠地构建、测试、部署软件的工程实践，是 DevOps 文化的核心；2026 年 LLMOps 中的 CI/CD 需要扩展以支持 Prompt 回归测试、模型评估与灰度发布。"
 lifecycle: stable
@@ -132,5 +132,5 @@ ArgoCD / Flux（监听变化）
 - [[_concepts/argocd]] — ArgoCD（GitOps 工具）
 - [[_concepts/policy-as-code]] — Policy as Code 集成
 - [[_concepts/code-generation-workflow]] — AI 代码生成工作流
-- [[11_MLOps_Pipeline/CI_CD/index]] — MLOps CI/CD 章节
+- [[MLOps/CI_CD/index]] — MLOps CI/CD 章节
 - [[_meta/cheatsheets/cheatsheet-mlops]] — LLMOps 速查表

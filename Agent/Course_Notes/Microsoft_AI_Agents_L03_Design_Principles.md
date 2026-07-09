@@ -32,7 +32,7 @@ aliases:
 
 > 来源：[Microsoft AI Agents for Beginners / 03-agentic-design-patterns](https://github.com/microsoft/ai-agents-for-beginners/tree/main/03-agentic-design-patterns)
 
-> ⚠️ 本课名虽叫 "design-patterns"，实际讲的是 **human-centric UX 设计原则**（不是 GoF/Andrew Ng 那种工程模式）。不要和 [[15_Agent_Production/Agentic_Design_Patterns_AndrewNg]] 混淆。
+> ⚠️ 本课名虽叫 "design-patterns"，实际讲的是 **human-centric UX 设计原则**（不是 GoF/Andrew Ng 那种工程模式）。不要和 [[Agent/Agentic_Design_Patterns_AndrewNg]] 混淆。
 
 ## 学习目标
 
@@ -103,7 +103,7 @@ aliases:
 ## 与其他 Agentic 设计资源的关系
 
 - 本课的"原则"是 **UX/产品视角** —— 回答"应不应该 / 是否符合人的需要"
-- [[15_Agent_Production/Agentic_Design_Patterns_AndrewNg]] 是 **工程视角** —— 回答"如何用代码实现 Reflection / Tool Use / Planning / Multi-Agent"
+- [[Agent/Agentic_Design_Patterns_AndrewNg]] 是 **工程视角** —— 回答"如何用代码实现 Reflection / Tool Use / Planning / Multi-Agent"
 - 两者互补：先有原则确定方向，再用模式落地
 
 ## 参考资源
@@ -116,8 +116,8 @@ aliases:
 
 ## 关联阅读
 
-- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents_L02_Frameworks]] — 上一课：框架选型
-- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents_L04_Tool_Use]] — 下一课：工具使用设计模式
-- [[15_Agent_Production/Agentic_Design_Patterns_AndrewNg]] — Andrew Ng 工程视角的四大 Agentic 模式
-- [[17_Ethics_Safety/GenAI_L03_Using_GenAI_Responsibly]] — 负责任 AI 概览
+- [[Agent/Course_Notes/Microsoft_AI_Agents_L02_Frameworks]] — 上一课：框架选型
+- [[Agent/Course_Notes/Microsoft_AI_Agents_L04_Tool_Use]] — 下一课：工具使用设计模式
+- [[Agent/Agentic_Design_Patterns_AndrewNg]] — Andrew Ng 工程视角的四大 Agentic 模式
+- [[伦理安全/GenAI_L03_Using_GenAI_Responsibly]] — 负责任 AI 概览
 - [[90_Learn/courses/microsoft/microsoft_ai_agents_for_beginners]] — 课程总览

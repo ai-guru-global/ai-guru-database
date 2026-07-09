@@ -51,4 +51,4 @@ relationships:
 - [[_concepts/storage|Storage]]
 - [[_concepts/oss|OSS]]
 - [[_concepts/nas|NAS]]
-- [[12_Architecture_Infrastructure/Storage/AI_Storage_Patterns|AI 存储模式]]
+- [[架构基建/Storage/AI_Storage_Patterns|AI 存储模式]]

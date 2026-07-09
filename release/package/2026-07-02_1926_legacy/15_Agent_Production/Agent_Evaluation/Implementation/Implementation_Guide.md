@@ -1977,11 +1977,11 @@ if __name__ == "__main__":
 - [API Integration Guide](./API_Integration_Guide.md) - 9 大 Agent API 封装与批量调度器
 - [Cloud Agent Evaluation](../Cloud_Agent_Evaluation/README.md) - 云产品 Agent CAPER 评估框架
 - [Corpus Assessment](../Corpus_Assessment/README.md) - 语料库 COVR 覆盖率评估
-- [[15_Agent_Production/Agent_Evaluation/Cloud_Agent_Evaluation/Cloud_Agent_Benchmark_2026.md|Cloud_Agent_Benchmark_2026]]
+- [[Agent/Agent_Evaluation/Cloud_Agent_Evaluation/Cloud_Agent_Benchmark_2026.md|Cloud_Agent_Benchmark_2026]]
 
 ## Related
 
-- [[15_Agent_Production/Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
-- [[15_Agent_Production/Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
-- [[15_Agent_Production/Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
-- [[15_Agent_Production/Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)
+- [[Agent/Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
+- [[Agent/Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[Agent/Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[Agent/Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)

@@ -62,5 +62,5 @@ aliases:
 - **数字鸿沟**: AI 教育工具的可及性
 - **过度依赖**: 保持人类教师的核心角色
 
-> **关联**: -> [[18_AI_Applications_Industry/Education/index|教育 AI]] | [[17_Ethics_Safety/README|伦理安全]]
+> **关联**: -> [[行业应用/Education/index|教育 AI]] | [[伦理安全/README|伦理安全]]
 

@@ -270,13 +270,13 @@ DSL 代表领域特定语言（Domain Specific Language）。利用领域特定�
 ## 扩展阅读
 
 - [[90_Learn/courses/microsoft/microsoft_genai_for_beginners]]
-- [[15_Agent_Production/GenAI_L06_Text_Generation_Apps]]
-- [[15_Agent_Production/GenAI_L11_Integrating_with_Function_Calling]]
-- [[15_Agent_Production/Agentic_Design_Patterns_AndrewNg]]
-- [[05_NLP_LLMs/Multimodal_Models/Multimodal_Models_for_dummy]]
+- [[Agent/GenAI_L06_Text_Generation_Apps]]
+- [[Agent/GenAI_L11_Integrating_with_Function_Calling]]
+- [[Agent/Agentic_Design_Patterns_AndrewNg]]
+- [[大模型/Multimodal_Models/Multimodal_Models_for_dummy]]
 
 ## 课程导航
 
 | 上一课 | 下一课 |
 |--------|--------|
-| [[15_Agent_Production/GenAI_L06_Text_Generation_Apps|L06 构建文本生成应用]] | [[14_RAG_Systems/GenAI_L08_Building_Search_Applications|L08 构建搜索应用程序]] |
+| [[Agent/GenAI_L06_Text_Generation_Apps|L06 构建文本生成应用]] | [[RAG系统/GenAI_L08_Building_Search_Applications|L08 构建搜索应用程序]] |

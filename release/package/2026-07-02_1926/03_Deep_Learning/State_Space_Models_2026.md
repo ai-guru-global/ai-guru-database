@@ -696,8 +696,8 @@ SSM在AGI中的角色:
 
 ## Related
 
-- [[03_Deep_Learning/DL-in-nutshell.md|DL-in-nutshell]]
-- [[03_Deep_Learning/README.md|03_Deep_Learning README]]
-- [[03_Deep_Learning/Neural_Network_Core/Neural_Network_Core.md|Neural_Network_Core]]
-- [[03_Deep_Learning/Neural_Network_Core/Neural_Network_Core_for_dummy.md|Neural_Network_Core_for_dummy]]
-- [[03_Deep_Learning/Optimization/Optimization.md|Optimization]]
+- [[深度学习/DL-in-nutshell.md|DL-in-nutshell]]
+- [[深度学习/README.md|深度学习 README]]
+- [[深度学习/Neural_Network_Core/Neural_Network_Core.md|Neural_Network_Core]]
+- [[深度学习/Neural_Network_Core/Neural_Network_Core_for_dummy.md|Neural_Network_Core_for_dummy]]
+- [[深度学习/Optimization/Optimization.md|Optimization]]

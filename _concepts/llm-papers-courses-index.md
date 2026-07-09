@@ -15,7 +15,7 @@ aliases:
 relationships:
   - target: "_concepts/llm-training-inference-key-concepts"
     type: related_to
-  - target: "05_NLP_LLMs/Transformer_Training_vs_Inference"
+  - target: "大模型/Transformer_Training_vs_Inference"
     type: related_to
 summary: 本页汇总 LLM 领域的经典论文、重要技术报告和优质课程资源，按主题分类，方便系统学习和查阅。
 lifecycle: reviewed
@@ -165,4 +165,4 @@ flowchart TD
 ## 延伸阅读
 
 - [[_concepts/llm-training-inference-key-concepts|LLM 训练与推理关键概念索引]]
-- [[05_NLP_LLMs/Transformer_Training_vs_Inference|Transformer 在大模型训练与推理中的应用]]
+- [[大模型/Transformer_Training_vs_Inference|Transformer 在大模型训练与推理中的应用]]

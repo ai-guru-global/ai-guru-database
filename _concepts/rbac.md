@@ -8,7 +8,7 @@ relationships:
   - target: "_concepts/model-gateway"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "RBAC 通过角色-权限映射实现访问控制，遵循最小权限原则。AI Stack 采用三权分立（管理员/安全管理员/审计管理员）的 RBAC 架构。"
 provenance:
   extracted: 0.60
@@ -142,5 +142,5 @@ AI Stack 安全分层
 
 - [[_concepts/ai-architecture]] — AI 架构（安全架构）
 - [[_concepts/model-gateway]] — 模型网关（API-Key 鉴权）
-- [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack（RBAC 实现）
+- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack（RBAC 实现）
 - [[_concepts/model-serving]] — 模型服务（多租户安全）

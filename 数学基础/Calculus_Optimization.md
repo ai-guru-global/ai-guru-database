@@ -11,6 +11,6 @@ sources: []
 
 # 微积分与优化基础 (Calculus & Optimization Foundations)
 
-> 本页面内容已整合至 [[01_Fundamentals/Calculus_Optimization/Calculus_Optimization|微积分与优化 (Calculus & Optimization)]]。
+> 本页面内容已整合至 [[数学基础/Calculus_Optimization/Calculus_Optimization|微积分与优化 (Calculus & Optimization)]]。
 >
 > 请点击上方链接查看完整内容，包括导数与梯度、凸优化、Adam/AdamW、损失函数与生产环境 checklist。

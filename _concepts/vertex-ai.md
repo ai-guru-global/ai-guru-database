@@ -12,7 +12,7 @@ relationships:
   - target: "_concepts/azure-openai"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/Google_Vertex_AI_Deep_Dive.md
+  - 架构基建/Google_Vertex_AI_Deep_Dive.md
 summary: "Google Vertex AI 是 GCP 统一的机器学习和生成式 AI 平台，提供模型训练、微调、部署、MLOps 和 Gemini 等基础模型 API，深度集成 TPU 和 BigQuery。"
 provenance:
   extracted: 0.75
@@ -92,7 +92,7 @@ aliases:
 
 ## Related
 
-- [[12_Architecture_Infrastructure/Google_Vertex_AI_Deep_Dive]] — Google Vertex AI 深度解析
+- [[架构基建/Google_Vertex_AI_Deep_Dive]] — Google Vertex AI 深度解析
 - [[_concepts/cloud-ai-platform]] — 云 AI 平台
 - [[_concepts/gemini]] — Gemini
 - [[_concepts/aws-bedrock]] — AWS Bedrock

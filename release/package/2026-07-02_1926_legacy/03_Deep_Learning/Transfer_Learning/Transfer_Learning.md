@@ -192,7 +192,7 @@ T5 式 (Encoder-Decoder):
 
 ## 5. 参数高效微调 (PEFT)
 
-详见 [[05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques]] 获取完整 PEFT 方法对比。
+详见 [[大模型/Fine_tuning_Techniques/Fine_tuning_Techniques]] 获取完整 PEFT 方法对比。
 
 ### 5.1 主流 PEFT 方法
 
@@ -377,9 +377,9 @@ Ben-David 域适应理论:
 
 ## 相关阅读
 
-- [[03_Deep_Learning/Neural_Network_Core/Neural_Network_Core]] — 神经网络核心
-- [[05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques]] — 微调技术
-- [[05_NLP_LLMs/LLM_Training_Deep_Dive]] — LLM 训练深度解析
-- [[04_Computer_Vision/Multimodal_Vision/CLIP_Deep_Dive]] — CLIP 对比学习
-- [[07_Model_Training/Alignment/TRL_RLHF_DPO_Guide]] — 对齐训练
-- [[03_Deep_Learning/Self_Supervised_Learning/Self_Supervised_Learning_Deep_Dive]] — 自监督学习
+- [[深度学习/Neural_Network_Core/Neural_Network_Core]] — 神经网络核心
+- [[大模型/Fine_tuning_Techniques/Fine_tuning_Techniques]] — 微调技术
+- [[大模型/LLM_Training_Deep_Dive]] — LLM 训练深度解析
+- [[计算机视觉/Multimodal_Vision/CLIP_Deep_Dive]] — CLIP 对比学习
+- [[模型训练/Alignment/TRL_RLHF_DPO_Guide]] — 对齐训练
+- [[深度学习/Self_Supervised_Learning/Self_Supervised_Learning_Deep_Dive]] — 自监督学习

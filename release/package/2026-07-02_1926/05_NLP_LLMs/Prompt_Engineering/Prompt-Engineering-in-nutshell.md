@@ -20,7 +20,7 @@ sources: []
 
 ## 🤔 什么是 Prompt Engineering？
 
-**[[05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering|Prompt Engineering]]** = 设计输入文本，引导 AI 产出期望结果的技术。
+**[[大模型/Prompt_Engineering/Prompt_Engineering|Prompt Engineering]]** = 设计输入文本，引导 AI 产出期望结果的技术。
 
 ```mermaid
 flowchart LR
@@ -743,14 +743,14 @@ flowchart TB
 ## 🔗 相关主题
 
 - [LLM 基础](../LLM_Architectures/LLM-Basics-in-nutshell.md) - 理解大语言模型
-- [RAG 系统](../../14_RAG_Systems/RAG-in-nutshell.md) - 结合检索的提示
-- [AI 智能体](../../15_Agent_Production/Agent_Foundations/Agent-in-nutshell.md) - 智能体中的提示设计
-- [AI 测试](../../09_Testing/AI-Testing-in-nutshell.md) - 测试提示词效果
+- [RAG 系统](../../RAG系统/RAG-in-nutshell.md) - 结合检索的提示
+- [AI 智能体](../../Agent/Agent_Foundations/Agent-in-nutshell.md) - 智能体中的提示设计
+- [AI 测试](../../AI测试/AI-Testing-in-nutshell.md) - 测试提示词效果
 
 ## Related
 
-- [[05_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026]] — PEFT 2026 (参数高效微调) (共享: bert, gpt, llm, nlp, transformer)
-- [[05_NLP_LLMs/Fine_tuning_Techniques/README]] — 微调技术 (Fine-tuning Techniques) (共享: bert, gpt, llm, nlp, transformer)
-- [[05_NLP_LLMs/LLM_Architectures/LLM-Basics-in-nutshell]] — 大语言模型基础速成指南 (共享: bert, gpt, llm, nlp, transformer)
-- [[05_NLP_LLMs/Multimodal_Models/Multimodal_Architectures_2026]] — 多模态模型架构 2026：从 GPT-4V 到原生多模态 AGI (共享: bert, gpt, llm, nlp, transformer)
-- [[05_NLP_LLMs/Prompt_Engineering/Guidance_Deep_Dive.md|Guidance_Deep_Dive]]
+- [[大模型/Fine_tuning_Techniques/PEFT_2026]] — PEFT 2026 (参数高效微调) (共享: bert, gpt, llm, nlp, transformer)
+- [[大模型/Fine_tuning_Techniques/README]] — 微调技术 (Fine-tuning Techniques) (共享: bert, gpt, llm, nlp, transformer)
+- [[大模型/LLM_Architectures/LLM-Basics-in-nutshell]] — 大语言模型基础速成指南 (共享: bert, gpt, llm, nlp, transformer)
+- [[大模型/Multimodal_Models/Multimodal_Architectures_2026]] — 多模态模型架构 2026：从 GPT-4V 到原生多模态 AGI (共享: bert, gpt, llm, nlp, transformer)
+- [[大模型/Prompt_Engineering/Guidance_Deep_Dive.md|Guidance_Deep_Dive]]

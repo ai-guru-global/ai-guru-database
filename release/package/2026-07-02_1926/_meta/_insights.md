@@ -13,14 +13,14 @@ sources: []
 | Page | Incoming | Outgoing | Note |
 |---|---|---|---|
 | [[_synthesis/README]] | 259 | 3 | major hub |
-| [[19_Talks/Yoshua_Bengio/about]] | 189 | 4 | major hub |
+| [[业界观点/Yoshua_Bengio/about]] | 189 | 4 | major hub |
 | company level question bank | 138 | 4 | major hub |
 | interview answers | 117 | 4 | major hub |
 | interview preparing | 117 | 4 | major hub |
 | question bank | 117 | 4 | major hub |
-| [[15_Agent_Production/Agent_Evaluation/Assessment/Evaluation_Workflow]] | 106 | 5 | connector hub |
-| [[15_Agent_Production/Agent_Evaluation/Agent_Harness_Complete_2026]] | 90 | 5 | connector hub |
-| [[15_Agent_Production/Agent_Evaluation/Agent_Red_Teaming_2026]] | 90 | 6 | connector hub |
+| [[Agent/Agent_Evaluation/Assessment/Evaluation_Workflow]] | 106 | 5 | connector hub |
+| [[Agent/Agent_Evaluation/Agent_Harness_Complete_2026]] | 90 | 5 | connector hub |
+| [[Agent/Agent_Evaluation/Agent_Red_Teaming_2026]] | 90 | 6 | connector hub |
 
 ## Bridge Pages (top 5)
 
@@ -28,7 +28,7 @@ sources: []
 |---|---|---|
 | [[OpenRouter_OpenCode_Guide]] | 205 pairs | 17_AI_Coding ↔ concepts, root ↔ concepts |
 | [[MOC_OpenRouter_OpenCode]] | 154 pairs | synthesis ↔ 17_AI_Coding, root ↔ concepts |
-| [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] | 137 pairs | concepts ↔ 11_RAG_Systems, concepts ↔ 09_Deployment_Inference |
+| [[架构基建/AI_Stack_Deep_Dive]] | 137 pairs | concepts ↔ 11_RAG_Systems, concepts ↔ 09_Deployment_Inference |
 | _concepts/ai-agents | 89 pairs | 06_Reinforcement_Learning ↔ 13_Agent_Production, concepts ↔ 17_AI_Coding |
 | _concepts/transformer-architecture | 76 pairs | 03_Deep_Learning ↔ 04_NLP_LLMs, concepts ↔ 09_Deployment_Inference |
 
@@ -52,24 +52,24 @@ sources: []
 
 ## Surprising Connections (top 5)
 
-- [[00_AI_Introduction/AI_Ethics_Society]] → [[_concepts/ai-ethics]] — score 4
+- [[AI入门/AI_Ethics_Society]] → [[_concepts/ai-ethics]] — score 4
   - Reason: cross-layer (00_AI_Introduction ↔ concepts), peripheral→hub (4→10)
-- [[00_AI_Introduction/AI_Glossary]] → [[16_AI_Coding/Tools/OpenRouter/05-openrouter-api-reference]] — score 4
+- [[AI入门/AI_Glossary]] → [[AI编程/Tools/OpenRouter/05-openrouter-api-reference]] — score 4
   - Reason: cross-layer (00_AI_Introduction ↔ 17_AI_Coding), peripheral→hub (2→41)
-- [[02_Machine_Learning/Bayesian_Methods/Bayesian_Methods_Deep_Dive]] → [[_concepts/model-training]] — score 4
+- [[机器学习/Bayesian_Methods/Bayesian_Methods_Deep_Dive]] → [[_concepts/model-training]] — score 4
   - Reason: cross-layer (02_Machine_Learning ↔ concepts), peripheral→hub (4→18)
-- [[02_Machine_Learning/Causal_Inference/Causal_Inference_Deep_Dive]] → [[_concepts/probability-statistics]] — score 4
+- [[机器学习/Causal_Inference/Causal_Inference_Deep_Dive]] → [[_concepts/probability-statistics]] — score 4
   - Reason: cross-layer (02_Machine_Learning ↔ concepts), peripheral→hub (4→11)
-- [[05_NLP_LLMs/LLM_Data_Engineering/LLM_Data_Engineering_Deep_Dive]] → [[_synthesis/pretraining-synthetic-data]] — score 4
+- [[大模型/LLM_Data_Engineering/LLM_Data_Engineering_Deep_Dive]] → [[_synthesis/pretraining-synthetic-data]] — score 4
   - Reason: cross-layer (04_NLP_LLMs ↔ synthesis), peripheral→hub (3→10)
 
 ## Orphan-Adjacent (dead-ends near hubs)
 
-- [[01_Fundamentals/AI_Hardware/AI_Hardware_2026]] — linked from 2 hubs, 0 outbound
-- [[01_Fundamentals/Data_Structures_Algorithms/Data_Structures_Algorithms]] — linked from 2 hubs, 0 outbound
-- [[02_Machine_Learning/Anomaly_Detection/Anomaly_Detection]] — linked from 2 hubs, 0 outbound
-- [[02_Machine_Learning/AutoML/AutoML]] — linked from 2 hubs, 0 outbound
-- [[02_Machine_Learning/Anomaly_Detection/Anomaly_Detection_for_dummy]] — linked from 2 hubs, 0 outbound
+- [[数学基础/AI_Hardware/AI_Hardware_2026]] — linked from 2 hubs, 0 outbound
+- [[数学基础/Data_Structures_Algorithms/Data_Structures_Algorithms]] — linked from 2 hubs, 0 outbound
+- [[机器学习/Anomaly_Detection/Anomaly_Detection]] — linked from 2 hubs, 0 outbound
+- [[机器学习/AutoML/AutoML]] — linked from 2 hubs, 0 outbound
+- [[机器学习/Anomaly_Detection/Anomaly_Detection_for_dummy]] — linked from 2 hubs, 0 outbound
 
 ## Orphan Pages (0 incoming links)
 
@@ -88,12 +88,12 @@ sources: []
 | # | Page | Incoming | Current Tier |
 |---|---|---|---|
 | 1 | [[_synthesis/README]] | 259 | unset |
-| 2 | [[19_Talks/Yoshua_Bengio/about]] | 189 | unset |
+| 2 | [[业界观点/Yoshua_Bengio/about]] | 189 | unset |
 | 3 | company level question bank | 138 | unset |
 | 4 | interview answers | 117 | unset |
 | 5 | interview preparing | 117 | unset |
 | 6 | question bank | 117 | unset |
-| 7 | [[15_Agent_Production/Agent_Evaluation/Assessment/Evaluation_Workflow]] | 106 | unset |
+| 7 | [[Agent/Agent_Evaluation/Assessment/Evaluation_Workflow]] | 106 | unset |
 
 ### Demote to `peripheral`
 

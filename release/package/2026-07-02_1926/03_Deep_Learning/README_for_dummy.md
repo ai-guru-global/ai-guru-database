@@ -107,12 +107,12 @@ A: 这章是入门,工作还需要更多实战经验。但理解这些概念是�
 - 电脑基础:知道什么是程序、数据
 
 ### 有更好,没有也行:
-- [线性代数小白版](../01_Fundamentals/Linear_Algebra/Linear_Algebra_for_dummy.md) - 帮助理解矩阵计算
-- [概率统计小白版](../01_Fundamentals/Probability_Statistics/Probability_Statistics_for_dummy.md) - 理解为什么要用概率
+- [线性代数小白版](../数学基础/Linear_Algebra/Linear_Algebra_for_dummy.md) - 帮助理解矩阵计算
+- [概率统计小白版](../数学基础/Probability_Statistics/Probability_Statistics_for_dummy.md) - 理解为什么要用概率
 
 ### 学完之后可以看:
-- [机器学习基础小白版](../02_Machine_Learning/README_for_dummy.md) - 对比传统方法和深度学习
-- [自然语言处理小白版](../05_NLP_LLMs/README_for_dummy.md) - ChatGPT 是怎么工作的
+- [机器学习基础小白版](../机器学习/README_for_dummy.md) - 对比传统方法和深度学习
+- [自然语言处理小白版](../大模型/README_for_dummy.md) - ChatGPT 是怎么工作的
 
 ## 关键术语速查
 
@@ -157,8 +157,8 @@ A: 这章是入门,工作还需要更多实战经验。但理解这些概念是�
 
 ## Related
 
-- [[03_Deep_Learning/DL-in-nutshell.md|DL-in-nutshell]]
-- [[03_Deep_Learning/README.md|03_Deep_Learning README]]
-- [[03_Deep_Learning/Neural_Network_Core/Neural_Network_Core.md|Neural_Network_Core]]
-- [[03_Deep_Learning/Neural_Network_Core/Neural_Network_Core_for_dummy.md|Neural_Network_Core_for_dummy]]
-- [[03_Deep_Learning/Optimization/Optimization.md|Optimization]]
+- [[深度学习/DL-in-nutshell.md|DL-in-nutshell]]
+- [[深度学习/README.md|深度学习 README]]
+- [[深度学习/Neural_Network_Core/Neural_Network_Core.md|Neural_Network_Core]]
+- [[深度学习/Neural_Network_Core/Neural_Network_Core_for_dummy.md|Neural_Network_Core_for_dummy]]
+- [[深度学习/Optimization/Optimization.md|Optimization]]

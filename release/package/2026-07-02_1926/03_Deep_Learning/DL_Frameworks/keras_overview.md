@@ -37,5 +37,5 @@ Keras 是深度学习领域的核心框架。
 | TensorFlow | 静态/动态 | 生产部署、TF Lite/JS | TF Serving |
 | Keras | 抽象层 | API 简洁、快速原型 | TF 集成 |
 
-> **关联**: → [[03_Deep_Learning/README|深度学习]]
+> **关联**: → [[深度学习/README|深度学习]]
 

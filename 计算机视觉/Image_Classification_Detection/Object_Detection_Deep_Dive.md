@@ -511,9 +511,9 @@ TensorRT 部署:
 
 ## 相关阅读
 
-- [[04_Computer_Vision/Image_Classification_Detection/Image_Classification_Detection]] — 图像分类与检测
-- [[04_Computer_Vision/Segmentation/Segmentation]] — 图像分割
-- [[04_Computer_Vision/ViT_Deep_Dive]] — Vision Transformer
-- [[04_Computer_Vision/Multimodal_Vision/Multimodal_Vision]] — 多模态视觉
-- [[04_Computer_Vision/3D_Vision/3D_Vision]] — 3D 视觉
-- [[10_Deployment_Inference/Deployment_Inference]] — 模型部署与推理
+- [[计算机视觉/Image_Classification_Detection/Image_Classification_Detection]] — 图像分类与检测
+- [[计算机视觉/Segmentation/Segmentation]] — 图像分割
+- [[计算机视觉/ViT_Deep_Dive]] — Vision Transformer
+- [[计算机视觉/Multimodal_Vision/Multimodal_Vision]] — 多模态视觉
+- [[计算机视觉/3D_Vision/3D_Vision]] — 3D 视觉
+- [[部署推理/Deployment_Inference]] — 模型部署与推理

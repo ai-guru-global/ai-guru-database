@@ -121,18 +121,18 @@ print(tokenizer.decode(outputs[0], skip_special_tokens=True))
 ## 本课不覆盖与延伸
 
 - **不覆盖**：
-  - Transformer 内部自注意力机制细节（见第 18 课与本库 [[05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution]]）。
-  - 大语言模型的微调、量化、部署与推理优化（见本库 [[05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Strategies]]、[[10_Deployment_Inference/Deployment_Inference_2026]]）。
-  - 提示工程的高级技巧（链式思考、思维树、提示注入防御等，见本库 [[05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering]]）。
+  - Transformer 内部自注意力机制细节（见第 18 课与本库 [[大模型/Transformer_Revolution/Transformer_Revolution]]）。
+  - 大语言模型的微调、量化、部署与推理优化（见本库 [[大模型/Fine_tuning_Techniques/Fine_tuning_Strategies]]、[[部署推理/Deployment_Inference_2026]]）。
+  - 提示工程的高级技巧（链式思考、思维树、提示注入防御等，见本库 [[大模型/Prompt_Engineering/Prompt_Engineering]]）。
 
 - **延伸**：
-  - 想了解更系统的提示工程方法论，可阅读本库 [[05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering]] 与 [[15_Agent_Production/README]] 中的智能体设计模式。
-  - 想深入 LLM 架构演进（GPT、BERT、T5、LLaMA 等），参考 [[05_NLP_LLMs/LLM_Architectures/LLM_Architectures]]。
+  - 想了解更系统的提示工程方法论，可阅读本库 [[大模型/Prompt_Engineering/Prompt_Engineering]] 与 [[Agent/README]] 中的智能体设计模式。
+  - 想深入 LLM 架构演进（GPT、BERT、T5、LLaMA 等），参考 [[大模型/LLM_Architectures/LLM_Architectures]]。
   - 对 Azure OpenAI Service 感兴趣，可进一步学习微软官方文档与 Azure AI SDK 示例。
 
 ## 相关阅读
 
 - 课程索引：[[90_Learn/courses/microsoft/microsoft_ai_for_beginners]]
 - 本库相关页面：
-  - [[05_NLP_LLMs/LLM_Architectures/LLM_Architectures]]
-  - [[05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering]]
+  - [[大模型/LLM_Architectures/LLM_Architectures]]
+  - [[大模型/Prompt_Engineering/Prompt_Engineering]]

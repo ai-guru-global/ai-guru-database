@@ -503,14 +503,14 @@ response = client.chat.completions.create(
 
 ## 13. 扩展阅读
 
-- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/README]] — 中国大模型生态总览
-- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/Qwen_Deep_Dive]] — 通义千问深度解析
-- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive]] — DeepSeek 深度解析
-- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/GLM_Zhipu_Deep_Dive]] — 智谱 GLM 深度解析
-- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/MiniMax_Deep_Dive]] — MiniMax 深度解析
-- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]] — 国产模型对比矩阵
-- [[05_NLP_LLMs/LLM_Architectures/MoE_Routing_and_Load_Balancing]] — MoE 路由与负载均衡
-- [[05_NLP_LLMs/Multimodal_Models/Multimodal_Architectures_2026]] — 多模态架构
+- [[大模型/Chinese_LLM_Ecosystem/README]] — 中国大模型生态总览
+- [[大模型/Chinese_LLM_Ecosystem/Qwen_Deep_Dive]] — 通义千问深度解析
+- [[大模型/Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive]] — DeepSeek 深度解析
+- [[大模型/Chinese_LLM_Ecosystem/GLM_Zhipu_Deep_Dive]] — 智谱 GLM 深度解析
+- [[大模型/Chinese_LLM_Ecosystem/MiniMax_Deep_Dive]] — MiniMax 深度解析
+- [[大模型/Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]] — 国产模型对比矩阵
+- [[大模型/LLM_Architectures/MoE_Routing_and_Load_Balancing]] — MoE 路由与负载均衡
+- [[大模型/Multimodal_Models/Multimodal_Architectures_2026]] — 多模态架构
 - [[90_Learn/courses/microsoft/microsoft_genai_for_beginners]] — 生成式 AI 入门课程
 
 ---

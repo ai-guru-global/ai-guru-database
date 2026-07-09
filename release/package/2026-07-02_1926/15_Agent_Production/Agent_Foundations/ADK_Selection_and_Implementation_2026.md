@@ -172,13 +172,13 @@ compute_job = UCPClient.submit(
 
 ## Related
 
-- [[06_Reinforcement_Learning/AI_Agents/Agent_Protocols_Comparison_2026]] — 协议横向对比表
-- [[06_Reinforcement_Learning/AI_Agents/MCP_Implementation_Guide]] — MCP 实战指南
-- [[15_Agent_Production/Agent_Frameworks/README]] — 高层开发框架概览
-- [[15_Agent_Production/Agent_Evaluation/Agent_Harness_Deep_Dive]] — 评估与测试工具
+- [[强化学习/AI_Agents/Agent_Protocols_Comparison_2026]] — 协议横向对比表
+- [[强化学习/AI_Agents/MCP_Implementation_Guide]] — MCP 实战指南
+- [[Agent/Agent_Frameworks/README]] — 高层开发框架概览
+- [[Agent/Agent_Evaluation/Agent_Harness_Deep_Dive]] — 评估与测试工具
 
 ---
 
 *Last updated: 2026-06-04*
 
-- [[15_Agent_Production/README|Agent 生产部署 (Agent Production)]]
+- [[Agent/README|Agent 生产部署 (Agent Production)]]

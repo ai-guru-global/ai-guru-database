@@ -17,14 +17,14 @@ relationships:
     type: related_to
   - target: "_concepts/embeddings-vectors-mrl-plain"
     type: simplified
-  - target: "10_Deployment_Inference/Inference_Performance/Embedding_Model_Serving"
+  - target: "部署推理/Inference_Performance/Embedding_Model_Serving"
     type: optimized_by
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
-  - 14_RAG_Systems/Advanced_RAG/RAG_Advanced_2026.md
-  - 14_RAG_Systems/Embeddings/Matryoshka_Representation_Learning_Deep_Dive.md
-  - 20_Papers_and_Research/Efficiency/Matryoshka_Representation_Learning_Deep_Dive.md
-  - 10_Deployment_Inference/Inference_Performance/Embedding_Model_Serving.md
+  - 架构基建/AI_Stack_Deep_Dive.md
+  - RAG系统/Advanced_RAG/RAG_Advanced_2026.md
+  - RAG系统/Embeddings/Matryoshka_Representation_Learning_Deep_Dive.md
+  - 论文精读/Efficiency/Matryoshka_Representation_Learning_Deep_Dive.md
+  - 部署推理/Inference_Performance/Embedding_Model_Serving.md
   - _concepts/embeddings-vectors-mrl-plain.md
 summary: "嵌入模型将文本/图像映射为高维稠密向量，是语义搜索、RAG、聚类的基础。2026年主流方案包括 GTE、bge、E5-Mistral 等，维度从 384 到 4096。"
 provenance:
@@ -151,8 +151,8 @@ Query → Embedding Model → 向量数据库 Top-100 → Reranker → Top-5 →
 - [[_concepts/vector-database]] — 向量数据库（嵌入的存储与检索）
 - [[_concepts/llm-architectures]] — LLM 架构
 - [[_concepts/embeddings-vectors-mrl-plain]] — Embedding、向量与 MRL 大白话
-- [[14_RAG_Systems/Embeddings/Sentence_Transformers_Deep_Dive]] — Sentence Transformers
-- [[14_RAG_Systems/Embeddings/Matryoshka_Representation_Learning_Deep_Dive]] — Matryoshka Representation Learning 深度解析
-- [[14_RAG_Systems/Embeddings/Embedding_Models_Guide]] — Embedding 模型选型与实践指南
-- [[10_Deployment_Inference/Inference_Performance/Embedding_Model_Serving|Embedding/Reranker 服务]]
-- [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack
+- [[RAG系统/Embeddings/Sentence_Transformers_Deep_Dive]] — Sentence Transformers
+- [[RAG系统/Embeddings/Matryoshka_Representation_Learning_Deep_Dive]] — Matryoshka Representation Learning 深度解析
+- [[RAG系统/Embeddings/Embedding_Models_Guide]] — Embedding 模型选型与实践指南
+- [[部署推理/Inference_Performance/Embedding_Model_Serving|Embedding/Reranker 服务]]
+- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack

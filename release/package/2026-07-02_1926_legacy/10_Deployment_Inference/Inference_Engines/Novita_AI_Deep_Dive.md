@@ -463,10 +463,10 @@ Serverless 默认限制：60 RPM（请求/分钟）、1M TPM（tokens/分钟）�
 
 ## Related
 
-- [[10_Deployment_Inference/Inference_Engines/Together_AI_Deep_Dive]] — Together AI 对比参考
-- [[10_Deployment_Inference/Inference_Engines/Fireworks_AI_Deep_Dive]] — Fireworks AI 对比参考
-- [[10_Deployment_Inference/Inference_Engines/Groq_Deep_Dive]] — Groq 对比参考
-- [[10_Deployment_Inference/Inference_Engines/LLM_Inference_Engine_Selection_Guide]] — 全局选型指南
+- [[部署推理/Inference_Engines/Together_AI_Deep_Dive]] — Together AI 对比参考
+- [[部署推理/Inference_Engines/Fireworks_AI_Deep_Dive]] — Fireworks AI 对比参考
+- [[部署推理/Inference_Engines/Groq_Deep_Dive]] — Groq 对比参考
+- [[部署推理/Inference_Engines/LLM_Inference_Engine_Selection_Guide]] — 全局选型指南
 - README — AI Gateway 集成
 
 ---
@@ -474,4 +474,4 @@ Serverless 默认限制：60 RPM（请求/分钟）、1M TPM（tokens/分钟）�
 *Last updated: 2026-06-25*
 *Version: 1.0.0*
 
-- [[10_Deployment_Inference/README|模型部署与推理]]
+- [[部署推理/README|模型部署与推理]]

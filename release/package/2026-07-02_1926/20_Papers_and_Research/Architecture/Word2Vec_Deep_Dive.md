@@ -446,9 +446,9 @@ Word2Vec (2013)           →  静态词向量, 上下文无关
 
 ## Related
 
-- [[20_Papers_and_Research/Architecture/BERT_Deep_Dive|BERT 深度解读]] — Word2Vec 的"终极进化": 上下文相关编码
-- [[20_Papers_and_Research/Architecture/Attention_Is_All_You_Need_Deep_Dive|Transformer 深度解读]] — 从词向量到序列建模
-- [[20_Papers_and_Research/Efficiency/Matryoshka_Representation_Learning_Deep_Dive|MRL 深度解读]] — 现代嵌入向量的弹性维度
+- [[论文精读/Architecture/BERT_Deep_Dive|BERT 深度解读]] — Word2Vec 的"终极进化": 上下文相关编码
+- [[论文精读/Architecture/Attention_Is_All_You_Need_Deep_Dive|Transformer 深度解读]] — 从词向量到序列建模
+- [[论文精读/Efficiency/Matryoshka_Representation_Learning_Deep_Dive|MRL 深度解读]] — 现代嵌入向量的弹性维度
 - NLP 与 LLMs — NLP 全景
 - [[04_NLP_LLMs/LLM_Architectures|LLM 架构]] — 从词嵌入到大模型
 
@@ -456,4 +456,4 @@ Word2Vec (2013)           →  静态词向量, 上下文无关
 
 *Last updated: 2026-06-04*
 
-- [[20_Papers_and_Research/README|22 经典与必读 AI 论文清单 (Essential AI Papers)]]
+- [[论文精读/README|22 经典与必读 AI 论文清单 (Essential AI Papers)]]

@@ -10,7 +10,7 @@ relationships:
   - target: "_concepts/mtp"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "Medusa 是自推测解码方案——在目标模型上添加多个预测头（Prediction Heads），同时预测未来多个 Token，无需独立 Draft 模型。加速 2-3 倍且无额外模型显存开销。"
 provenance:
   extracted: 0.20
@@ -86,4 +86,4 @@ Medusa 自推测解码：
 - [[_concepts/eagle]] — EAGLE 推测解码
 - [[_concepts/mtp]] — Multi-Token Prediction
 - [[_concepts/prefill-decode]] — Prefill/Decode 阶段
-- [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析

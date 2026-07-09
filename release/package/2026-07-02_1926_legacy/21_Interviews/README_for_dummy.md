@@ -155,7 +155,7 @@ aliases:
 
 ## 下一步
 
-- 想看具体岗位？→ 查看 [21_Interviews/Interviews_for_dummy.md](./Interviews_for_dummy.md)
+- 想看具体岗位？→ 查看 [面试岗位/Interviews_for_dummy.md](./Interviews_for_dummy.md)
 - 想学技术？→ 从 [90_Learn/README.md](../90_Learn/README_for_dummy.md) 选择路径
 
 ---
@@ -164,7 +164,7 @@ aliases:
 
 ## Related
 
-- [[21_Interviews/Interviews_for_dummy|AI 面试准备 - 小白版]]
-- [[21_Interviews/README|AI 面试准备 (Interviews)]]
-- [[21_Interviews/jobs|AI 相关岗位与工种清单]]
-- [[21_Interviews/interview_notes_template|面试复盘模板]]
+- [[面试岗位/Interviews_for_dummy|AI 面试准备 - 小白版]]
+- [[面试岗位/README|AI 面试准备 (Interviews)]]
+- [[面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[面试岗位/interview_notes_template|面试复盘模板]]

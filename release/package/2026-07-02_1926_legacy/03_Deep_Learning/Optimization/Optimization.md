@@ -894,19 +894,19 @@ $$\theta \leftarrow \theta - \mathbf{H}^{-1} \nabla_{\theta} J(\theta)$$
 ## 7. 与其他主题的关联 (Connections)
 
 ### 7.1 前置知识
-- [**微积分**](../../01_Fundamentals/): 梯度、链式法则
-- [**线性代数**](../../01_Fundamentals/Linear_Algebra/Linear_Algebra.md): 矩阵求导、Hessian 矩阵
-- [**概率统计**](../../01_Fundamentals/Probability_Statistics/Probability_Statistics.md): 随机梯度、期望
+- [**微积分**](../../数学基础/): 梯度、链式法则
+- [**线性代数**](../../数学基础/Linear_Algebra/Linear_Algebra.md): 矩阵求导、Hessian 矩阵
+- [**概率统计**](../../数学基础/Probability_Statistics/Probability_Statistics.md): 随机梯度、期望
 
 ### 7.2 横向关联
 - [**神经网络核心**](../Neural_Network_Core/Neural_Network_Core.md): 反向传播算法
 - [**正则化技术**](../): Dropout、权重衰减、Label Smoothing
-- [**超参数调优**](../../11_MLOps_Pipeline/MLOps_Pipeline.md): 学习率/batch size 搜索
+- [**超参数调优**](../../MLOps/MLOps_Pipeline.md): 学习率/batch size 搜索
 
 ### 7.3 纵向进阶
-- [**分布式训练**](../../10_Deployment_Inference/Deployment_Inference.md): 数据并行、模型并行
-- [**自动机器学习**](../../11_MLOps_Pipeline/MLOps_Pipeline.md): 自动学习率调度 (AutoLR)
-- [**量化训练**](../../10_Deployment_Inference/Deployment_Inference.md): INT8/FP16 混合精度
+- [**分布式训练**](../../部署推理/Deployment_Inference.md): 数据并行、模型并行
+- [**自动机器学习**](../../MLOps/MLOps_Pipeline.md): 自动学习率调度 (AutoLR)
+- [**量化训练**](../../部署推理/Deployment_Inference.md): INT8/FP16 混合精度
 
 ## 8. 面试高频问题 (Interview FAQs)
 

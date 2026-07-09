@@ -139,7 +139,7 @@ sources: []
 ## 下一步
 
 - 想学技术？→ 从 [90_Learn/README.md](../90_Learn/README_for_dummy.md) 开始
-- 想看论文？→ [20_Papers_and_Research/README_for_dummy.md](../20_Papers_and_Research/README_for_dummy.md)
+- 想看论文？→ [论文精读/README_for_dummy.md](../论文精读/README_for_dummy.md)
 
 ---
 
@@ -147,8 +147,8 @@ sources: []
 
 ## Related
 
-- [[19_Talks/Andrej_Karpathy/about.md|about]]
-- [[19_Talks/Andrew_Ng/about.md|about]]
-- [[19_Talks/Andrew_Ng/sayings.md|sayings]]
-- [[19_Talks/Bill_Gates/about.md|about]]
-- [[19_Talks/Bill_Gates/sayings.md|sayings]]
+- [[业界观点/Andrej_Karpathy/about.md|about]]
+- [[业界观点/Andrew_Ng/about.md|about]]
+- [[业界观点/Andrew_Ng/sayings.md|sayings]]
+- [[业界观点/Bill_Gates/about.md|about]]
+- [[业界观点/Bill_Gates/sayings.md|sayings]]

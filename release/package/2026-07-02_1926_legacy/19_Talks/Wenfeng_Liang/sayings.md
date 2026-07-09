@@ -53,12 +53,12 @@ aliases:
 
 ## Related
 
-- [[19_Talks/Wenfeng_Liang/about]] — 梁文锋简介
-- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive]] — DeepSeek 深度解析
-- [[20_Papers_and_Research/Scaling/Scaling_Laws_Deep_Dive]] — Scaling Laws 论文解读
+- [[业界观点/Wenfeng_Liang/about]] — 梁文锋简介
+- [[大模型/Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive]] — DeepSeek 深度解析
+- [[论文精读/Scaling/Scaling_Laws_Deep_Dive]] — Scaling Laws 论文解读
 
 ---
 
 *Last updated: 2026-06-24*
 
-- [[19_Talks/README|AI 名人演讲与观点 (Talks)]]
+- [[业界观点/README|AI 名人演讲与观点 (Talks)]]

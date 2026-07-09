@@ -8,9 +8,9 @@ sources: []
 
 # Evaluation
 
-This page indexes the contents of `11_MLOps_Pipeline/Evaluation`.
+This page indexes the contents of `MLOps/Evaluation`.
 
 ## Files
 
-- [[11_MLOps_Pipeline/Evaluation/LLM_Evaluation_Pipeline 2|LLM Evaluation Pipeline 2]]
-- [[11_MLOps_Pipeline/Evaluation/LLM_Evaluation_Pipeline|LLM Evaluation Pipeline]]
+- [[MLOps/Evaluation/LLM_Evaluation_Pipeline 2|LLM Evaluation Pipeline 2]]
+- [[MLOps/Evaluation/LLM_Evaluation_Pipeline|LLM Evaluation Pipeline]]

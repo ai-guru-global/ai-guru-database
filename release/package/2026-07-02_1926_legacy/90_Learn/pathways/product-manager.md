@@ -56,9 +56,9 @@ Stage 3: 工程实践（理解 AI 产品的工程边界）
 **📚 核心概念**：[Stage 0: AI 觉醒](../concepts/stage0_awakening.md)（全量）
 
 **🔗 深入阅读**：
-- [AI 基础概念入门](00_AI_Introduction/AI_Fundamentals.md)
-- [AI 经典案例分析集](00_AI_Introduction/AI_Classic_Cases.md)（重点关注 AlphaGo、ChatGPT 两个案例）
-- [AI 工具与实践指南](00_AI_Introduction/AI_Tools_Practical_Guide.md)（了解当前工具生态）
+- [AI 基础概念入门](AI入门/AI_Fundamentals.md)
+- [AI 经典案例分析集](AI入门/AI_Classic_Cases.md)（重点关注 AlphaGo、ChatGPT 两个案例）
+- [AI 工具与实践指南](AI入门/AI_Tools_Practical_Guide.md)（了解当前工具生态）
 
 **💡 产品经理视角重点**：
 - 不要被"AI"标签迷惑，看清技术本质
@@ -79,10 +79,10 @@ Stage 3: 工程实践（理解 AI 产品的工程边界）
 **📚 核心概念**：[Stage 1 基础概念](90_Learn/concepts/stage1_foundation.md) + [Stage 3 工程实践](90_Learn/concepts/stage3_engineering.md)
 
 **🔗 深入阅读**：
-- [README_for_dummy.md](17_Ethics_Safety/README_for_dummy.md) — 新手导航（快速浏览）
-- [RAG 系统（小白版）](14_RAG_Systems/RAG_Systems_for_dummy.md) — 理解 AI + 知识库的工程路径
-- [部署与推理（小白版）](10_Deployment_Inference/Deployment_Inference_for_dummy.md) — 理解 AI 的性能与成本
-- [模型评估（小白版）](08_Model_Evaluation/Model_Evaluation_for_dummy.md) — 理解 AI 质量评估的复杂性
+- [README_for_dummy.md](伦理安全/README_for_dummy.md) — 新手导航（快速浏览）
+- [RAG 系统（小白版）](RAG系统/RAG_Systems_for_dummy.md) — 理解 AI + 知识库的工程路径
+- [部署与推理（小白版）](部署推理/Deployment_Inference_for_dummy.md) — 理解 AI 的性能与成本
+- [模型评估（小白版）](模型评估/Model_Evaluation_for_dummy.md) — 理解 AI 质量评估的复杂性
 
 **💡 产品经理必须理解的技术事实**：
 ```
@@ -116,9 +116,9 @@ AI 成本结构：
 **📚 核心概念**：[Stage 3 工程实践 — Agent / 工作流部分](90_Learn/concepts/stage3_engineering.md)（重点理解 Agent 能做什么）
 
 **🔗 深入阅读**：
-- [AI Agent（小白版）](15_Agent_Production/Agent_Foundations/AI_Agents_for_dummy.md) — 理解 AI Agent 的能力边界
-- [AI 工作流（速查版）](15_Agent_Production/Agent_Workflow/Workflow-in-nutshell.md) — 理解 AI 工作流设计
-- [AI 工具与实践指南](00_AI_Introduction/AI_Technology_Landscape.md) — 理解 AI 工具生态
+- [AI Agent（小白版）](Agent/Agent_Foundations/AI_Agents_for_dummy.md) — 理解 AI Agent 的能力边界
+- [AI 工作流（速查版）](Agent/Agent_Workflow/Workflow-in-nutshell.md) — 理解 AI 工作流设计
+- [AI 工具与实践指南](AI入门/AI_Technology_Landscape.md) — 理解 AI 工具生态
 
 **💡 AI 产品设计的核心原则**：
 ```
@@ -175,7 +175,7 @@ AI 成本结构：
 **📚 核心概念**：综合 Stage 0-3
 
 **🔗 行业案例深入阅读**：
-- [AI 在各行业的应用概览](18_AI_Applications_Industry/AI_Applications_Industry.md)
+- [AI 在各行业的应用概览](行业应用/AI_Applications_Industry.md)
 - [金融行业 AI 应用](../../13_AI_Applications_Industry/Finance/)
 - [医疗健康 AI 应用](../../13_AI_Applications_Industry/Healthcare/)
 - [教育行业 AI 应用](../../13_AI_Applications_Industry/Education/)
@@ -203,9 +203,9 @@ AI 成本结构：
 **📚 核心概念**：[Stage 4 前沿探索](90_Learn/concepts/stage4_frontier.md)（浏览为主）
 
 **🔗 深入阅读**：
-- [AI 未来趋势展望](00_AI_Introduction/AI_Future_Trends.md)
-- [AI 伦理与社会影响](00_AI_Introduction/AI_Ethics_Society.md)
-- [AI 学习资源与方法论](00_AI_Introduction/AI_Learning_Resources.md)
+- [AI 未来趋势展望](AI入门/AI_Future_Trends.md)
+- [AI 伦理与社会影响](AI入门/AI_Ethics_Society.md)
+- [AI 学习资源与方法论](AI入门/AI_Learning_Resources.md)
 
 **💡 2026 AI 产品趋势**：
 - **Agentic AI**：从"问答"到"自主执行"，产品设计范式转变

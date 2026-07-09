@@ -148,14 +148,14 @@ $$\hat{x}_i = \frac{x_i - \mu_{\mathcal{B}}}{\sqrt{\sigma_{\mathcal{B}}^2 + \eps
 
 ## 来源
 
-- 03_Deep_Learning/Neural_Network_Core/Neural_Network_Core.md
+- 深度学习/Neural_Network_Core/Neural_Network_Core.md
 - McCulloch-Pitts (1943), Rosenblatt 感知机 (1958), Rumelhart 反向传播 (1986)
 - He et al. (2015) 残差网络, Ioffe & Szegedy (2015) BatchNorm
 
 ## Related
 
-- [[03_Deep_Learning/DL-in-nutshell]] — 深度学习速成指南 (共享: backpropagation, dl)
-- [[03_Deep_Learning/README]] — 03 深度学习基础 (Deep Learning Foundations) (共享: backpropagation, dl)
-- [[03_Deep_Learning/World_Models/JEPA_Architecture_2026]] — JEPA 架构深度解析：LeCun 的世界模型之路 (共享: backpropagation, dl)
-- [[03_Deep_Learning/World_Models/README]] — 世界模型 (World Models) (共享: backpropagation, dl)
+- [[深度学习/DL-in-nutshell]] — 深度学习速成指南 (共享: backpropagation, dl)
+- [[深度学习/README]] — 03 深度学习基础 (Deep Learning Foundations) (共享: backpropagation, dl)
+- [[深度学习/World_Models/JEPA_Architecture_2026]] — JEPA 架构深度解析：LeCun 的世界模型之路 (共享: backpropagation, dl)
+- [[深度学习/World_Models/README]] — 世界模型 (World Models) (共享: backpropagation, dl)
 - [[_concepts/world-models-jepa.md|world-models-jepa]]

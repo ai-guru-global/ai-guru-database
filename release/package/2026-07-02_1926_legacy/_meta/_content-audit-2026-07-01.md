@@ -24,28 +24,28 @@ updated: 2026-07-01
 
 | 章节 | 评分 | 一句话结论 |
 |------|------|-----------|
-| 00_AI_Introduction | -/10 | `00_AI_Introduction` 作为高校 AI 通识课教材导入章节已具备扎实骨架，概念、历史、工具、伦理、案例、实验覆盖较全，小白版与可运行实验是亮点；但面向企业生产环境的内容明显薄弱，RA... |
+| 00_AI_Introduction | -/10 | `AI入门` 作为高校 AI 通识课教材导入章节已具备扎实骨架，概念、历史、工具、伦理、案例、实验覆盖较全，小白版与可运行实验是亮点；但面向企业生产环境的内容明显薄弱，RA... |
 | 01_Fundamentals | -/10 | 作为连接统计与机器学习的进阶数学基础，可与概率统计章节形成进阶路径。... |
 | 02_Machine_Learning | -/10 | 一句话结论：该章节在经典机器学习理论与核心算法上覆盖较全（尤其集成学习、推荐、时序、异常检测、AutoML 深度好），但严重偏向“学习/竞赛”视角，生产环境所需的 MLOps、部署、监控、特征平台、可... |
-| 03_Deep_Learning | -/10 | `03_Deep_Learning` 在神经网络基础、优化方法、前沿话题（SSM/GNN/SSL/World Models）上质量较高且覆盖较全，但作为深度学习章节的「主章节」，仍缺少 CNN/Tra... |
-| 04_Computer_Vision | -/10 | 一句话结论：`04_Computer_Vision` 在概念教学、零基础入门和代码示例层面已相当扎实，但距离「企业生产级知识库」仍有明显缺口——缺少部署运维、成本安全、MLOps 数据管线、实时视频分... |
-| 05_NLP_LLMs | -/10 | `05_NLP_LLMs` 在基础理论、模型生态、微调/提示词工程、数据工程方面覆盖扎实，中外大模型生态与 2026 推理/长上下文专题表现突出；但作为"生产环境必备"的 RAG、部署 Runbook... |
+| 03_Deep_Learning | -/10 | `深度学习` 在神经网络基础、优化方法、前沿话题（SSM/GNN/SSL/World Models）上质量较高且覆盖较全，但作为深度学习章节的「主章节」，仍缺少 CNN/Tra... |
+| 04_Computer_Vision | -/10 | 一句话结论：`计算机视觉` 在概念教学、零基础入门和代码示例层面已相当扎实，但距离「企业生产级知识库」仍有明显缺口——缺少部署运维、成本安全、MLOps 数据管线、实时视频分... |
+| 05_NLP_LLMs | -/10 | `大模型` 在基础理论、模型生态、微调/提示词工程、数据工程方面覆盖扎实，中外大模型生态与 2026 推理/长上下文专题表现突出；但作为"生产环境必备"的 RAG、部署 Runbook... |
 | 06_Reinforcement_Learning | -/10 | 8. Neuromorphic RL / 边缘 RL 硬件部署。... |
 | 07_Model_Training | -/10 | 5. TinyML / 边缘模型训练：端侧小模型训练、知识蒸馏到边缘设备缺失。... |
 | 08_Model_Evaluation | -/10 | > 注意：目录下存在大量 `* 2.md` 重复文件（如 `Agentic_Benchmark_Guide 2.md` 等），是内容治理层面的问题。... |
-| 09_Testing | -/10 | `09_Testing` 已建立起结构清晰、代码示例丰富的 LLM 测试知识体系，尤其在 RAG 评估、Prompt 测试、安全红队、回归测试、契约测试和 Java/Spring AI 测试方面达到行... |
+| 09_Testing | -/10 | `AI测试` 已建立起结构清晰、代码示例丰富的 LLM 测试知识体系，尤其在 RAG 评估、Prompt 测试、安全红队、回归测试、契约测试和 Java/Spring AI 测试方面达到行... |
 | 10_Deployment_Inference | -/10 | 7. 联邦/隐私推理：TEE（可信执行环境）、联邦学习推理、端云协同推理。... |
 | 11_MLOps_Pipeline | -/10 | 10. AutoML Ops（自动化架构搜索流水线）... |
 | 12_Architecture_Infrastructure | -/10 | 25. 神经形态/模拟计算芯片... |
-| 13_AI_Ops | -/10 | `13_AI_Ops` 在 SRE 方法论、事故响应 Playbook、GPU/K8s 排障和顶层全景方面已经达到较高水准，但可观测性、成本治理、混沌工程、Agent/LLM Ops、安全运营等子领域... |
-| 14_RAG_Systems | -/10 | `14_RAG_Systems` 在 RAG 概念普及、主流框架、向量数据库和嵌入模型方面已有扎实覆盖，尤其适合初学者和选型阶段；但生产级运维、安全合规、系统评估、成本优化以及 GraphRAG/Re... |
+| 13_AI_Ops | -/10 | `AI运维` 在 SRE 方法论、事故响应 Playbook、GPU/K8s 排障和顶层全景方面已经达到较高水准，但可观测性、成本治理、混沌工程、Agent/LLM Ops、安全运营等子领域... |
+| 14_RAG_Systems | -/10 | `RAG系统` 在 RAG 概念普及、主流框架、向量数据库和嵌入模型方面已有扎实覆盖，尤其适合初学者和选型阶段；但生产级运维、安全合规、系统评估、成本优化以及 GraphRAG/Re... |
 | 15_Agent_Production | -/10 | 8. Agent 量化与边缘部署（端侧 Agent、TinyAgent、移动设备推理优化）... |
 | 16_AI_Coding | -/10 | 一句话结论：骨架扎实、方法论领先，但工具指南深度参差不齐、企业生产级 Runbook 与合规治理不足、开源生态与多语言实践覆盖薄弱，亟需补齐 P0 级文件并清理重复文件。... |
-| 17_Ethics_Safety | -/10 | `17_Ethics_Safety` 已经具备了从入门到进阶、从攻击面到防御架构、从对齐技术到治理合规的完整骨架，核心文档（AI Security 2026、Safety Evaluation、LLM... |
+| 17_Ethics_Safety | -/10 | `伦理安全` 已经具备了从入门到进阶、从攻击面到防御架构、从对齐技术到治理合规的完整骨架，核心文档（AI Security 2026、Safety Evaluation、LLM... |
 | 18_AI_Applications_Industry | -/10 | 30. 开源/商业平台选型 — 缺 Hugging Face、NVIDIA AI Enterprise、Azure OpenAI、百度千帆等行业选型。... |
-| 19_Talks | -/10 | > 注：若保持「按人物组织」风格，可新建 `19_Talks/Synthesis/` 子目录存放上述主题合成文件；若希望与人物目录同级，可直接放在 `19_Talks/` 根目录。... |
+| 19_Talks | -/10 | > 注：若保持「按人物组织」风格，可新建 `业界观点/Synthesis/` 子目录存放上述主题合成文件；若希望与人物目录同级，可直接放在 `业界观点/` 根目录。... |
 | 20_Papers_and_Research | -/10 | 10. 论文阅读方法论与复现指南：如何读论文、复现 checklist、Baseline 调试、实验设计。... |
-| 21_Interviews | -/10 | 一句话结论：`21_Interviews` 在「头部工程岗位（Infra/MLE/LLM Platform/NLP）」已具备可使用的题库骨架，但约 70% 的岗位仍停留在单文件骨架状态，且 Agent... |
+| 21_Interviews | -/10 | 一句话结论：`面试岗位` 在「头部工程岗位（Infra/MLE/LLM Platform/NLP）」已具备可使用的题库骨架，但约 70% 的岗位仍停留在单文件骨架状态，且 Agent... |
 | 90_Learn | -/10 | 8. 量子机器学习概览 2026：量子计算对 ML 的潜在影响。... |
 | 93_Templates | -/10 | `93_Templates` 现有的 3 篇工具领域文章质量尚可，文档模板规范也较为完整，但目录结构扁平、重复文件未清理、缺少生产环境刚需的 Runbook 与工具链覆盖，也未能反映 2024-202... |
 | 94_Visualization | -/10 | `94_Visualization` 在训练监控、模型可解释性和基础系统仪表盘方面已有扎实的入门-进阶内容，但在 LLM 可观测性、云原生 MLOps 监控、成本治理、事故 Runbook 以及 20... |
@@ -54,7 +54,7 @@ updated: 2026-07-01
 
 ### 00_AI_Introduction
 
-`00_AI_Introduction` 是 ai-guru-database 的通识导入章节（supporting tier），定位为大专院校 AI 通识课教材入口，面向零基础读者建立 AI 认知框架。全章为扁平结构，共 20 个 Markdown 文件、约 12,344 行，围绕「概念 → 技术全景 → 历史 → 工具 → 伦理 → 未来 → 学习资源 → 案例/实验」展开，并配套了小白版 README 与可运行代码实验指南。  ---
+`AI入门` 是 ai-guru-database 的通识导入章节（supporting tier），定位为大专院校 AI 通识课教材入口，面向零基础读者建立 AI 认知框架。全章为扁平结构，共 20 个 Markdown 文件、约 12,344 行，围绕「概念 → 技术全景 → 历史 → 工具 → 伦理 → 未来 → 学习资源 → 案例/实验」展开，并配套了小白版 README 与可运行代码实验指南。  ---
 
 - **总体评分**: -/10
 
@@ -101,20 +101,20 @@ updated: 2026-07-01
 
 | 建议文件名 | 优先级 | 目标子目录 |
 |---|---|---|
-| ``AI_Engineering_Fundamentals.md`` | P0 | `00_AI_Introduction/` |
-| ``AI_Safety_and_Guardrails_for_dummy.md`` | P0 | `00_AI_Introduction/` |
-| ``AI_Cost_Optimization_2026.md`` | P0 | `00_AI_Introduction/` |
-| ``AI_Compliance_and_Audit_Runbook.md`` | P0 | `00_AI_Introduction/` |
-| ``AI_Product_Management_Case_Study.md`` | P0 | `00_AI_Introduction/` |
-| ``Chinese_AI_Ecosystem_Deep_Dive.md`` | P0 | `00_AI_Introduction/` |
-| ``RAG_Fundamentals_for_dummy.md`` | P1 | `00_AI_Introduction/` |
-| ``AI_Agents_and_MCP_2026.md`` | P1 | `00_AI_Introduction/` |
-| ``Fine_tuning_Basics_in_nutshell.md`` | P1 | `00_AI_Introduction/` |
-| ``AI_Code_Assistants_Deep_Dive.md`` | P1 | `00_AI_Introduction/` |
+| ``AI_Engineering_Fundamentals.md`` | P0 | `AI入门/` |
+| ``AI_Safety_and_Guardrails_for_dummy.md`` | P0 | `AI入门/` |
+| ``AI_Cost_Optimization_2026.md`` | P0 | `AI入门/` |
+| ``AI_Compliance_and_Audit_Runbook.md`` | P0 | `AI入门/` |
+| ``AI_Product_Management_Case_Study.md`` | P0 | `AI入门/` |
+| ``Chinese_AI_Ecosystem_Deep_Dive.md`` | P0 | `AI入门/` |
+| ``RAG_Fundamentals_for_dummy.md`` | P1 | `AI入门/` |
+| ``AI_Agents_and_MCP_2026.md`` | P1 | `AI入门/` |
+| ``Fine_tuning_Basics_in_nutshell.md`` | P1 | `AI入门/` |
+| ``AI_Code_Assistants_Deep_Dive.md`` | P1 | `AI入门/` |
 
 ### 01_Fundamentals
 
-`01_Fundamentals` 是知识库的“基础理论”支撑章节（`tier: supporting`），定位在数学、计算机科学、编程语言、开发环境与 AI 硬件四个维度，为后续机器学习、深度学习、大模型等应用章节提供前置知识。README 中明确了线性代数 → 概率统计 → 数据结构/分布式系统的主学习路径，并额外补充了 Python、Java、AI 硬件与开发环境等工程入门内容。整体上，该章节更偏向“学习者入门地图”，对生产环境所需的工程化、运维、安全合规、成本优化等主题覆盖较弱。  ---
+`数学基础` 是知识库的“基础理论”支撑章节（`tier: supporting`），定位在数学、计算机科学、编程语言、开发环境与 AI 硬件四个维度，为后续机器学习、深度学习、大模型等应用章节提供前置知识。README 中明确了线性代数 → 概率统计 → 数据结构/分布式系统的主学习路径，并额外补充了 Python、Java、AI 硬件与开发环境等工程入门内容。整体上，该章节更偏向“学习者入门地图”，对生产环境所需的工程化、运维、安全合规、成本优化等主题覆盖较弱。  ---
 
 - **总体评分**: -/10
 
@@ -151,7 +151,7 @@ updated: 2026-07-01
 
 ### 02_Machine_Learning
 
-`02_Machine_Learning` 是知识库的辅助章节（tier: supporting），定位在深度学习之前的主流经典机器学习方法。README 明确其覆盖监督学习、无监督学习、特征工程、集成学习、时间序列、异常检测、推荐系统、AutoML、贝叶斯方法与因果推断，目标是帮助读者建立从数据中学习规律的工程化能力，并为后续深度学习打基础。
+`机器学习` 是知识库的辅助章节（tier: supporting），定位在深度学习之前的主流经典机器学习方法。README 明确其覆盖监督学习、无监督学习、特征工程、集成学习、时间序列、异常检测、推荐系统、AutoML、贝叶斯方法与因果推断，目标是帮助读者建立从数据中学习规律的工程化能力，并为后续深度学习打基础。
 
 - **总体评分**: -/10
 
@@ -171,20 +171,20 @@ updated: 2026-07-01
 
 | 建议文件名 | 优先级 | 目标子目录 |
 |---|---|---|
-| ``ML_System_Architecture_and_Deployment.md`` | P0 | 根目录 `02_Machine_Learning/` |
+| ``ML_System_Architecture_and_Deployment.md`` | P0 | 根目录 `机器学习/` |
 | ``Feature_Store_Design_Runbook.md`` | P0 | `Feature_Engineering/` |
-| ``Model_Monitoring_and_Drift_Detection_Runbook.md`` | P0 | 根目录 `02_Machine_Learning/` |
-| ``ML_Pipeline_Orchestration_2026.md`` | P0 | 根目录 `02_Machine_Learning/` |
-| ``Model_Interpretability_and_Explainability.md`` | P0 | 根目录 `02_Machine_Learning/` |
-| ``AB_Testing_for_ML_Case_Study.md`` | P0 | 根目录 `02_Machine_Learning/` |
-| ``ML_Data_Validation_Runbook.md`` | P0 | 根目录 `02_Machine_Learning/` |
-| ``Modern_Tabular_Deep_Learning_2026.md`` | P1 | 根目录 `02_Machine_Learning/` |
+| ``Model_Monitoring_and_Drift_Detection_Runbook.md`` | P0 | 根目录 `机器学习/` |
+| ``ML_Pipeline_Orchestration_2026.md`` | P0 | 根目录 `机器学习/` |
+| ``Model_Interpretability_and_Explainability.md`` | P0 | 根目录 `机器学习/` |
+| ``AB_Testing_for_ML_Case_Study.md`` | P0 | 根目录 `机器学习/` |
+| ``ML_Data_Validation_Runbook.md`` | P0 | 根目录 `机器学习/` |
+| ``Modern_Tabular_Deep_Learning_2026.md`` | P1 | 根目录 `机器学习/` |
 | ``Foundation_Models_for_Time_Series_2026.md`` | P1 | `Time_Series/` |
 | ``LLM_Based_Recommendation_Systems_2026.md`` | P1 | `Recommendation_Systems/` |
 
 ### 03_Deep_Learning
 
-`03_Deep_Learning` 是 ai-guru-database 中 L1 模型层的「神经网络核心」支撑章节，定位为连接数学基础（01）与具体应用领域（CV/NLP/RL）的桥梁。当前内容以反向传播、优化器、正则化、核心架构组件为主线，辅以 2026 年新增的状态空间模型、图神经网络、自监督学习和世界模型等前沿方向。整体来看，该目录在「教材式入门」和「前沿技术跟踪」上做得较好，但在企业生产级工程实践、主流架构深度拆解（CNN/RNN/Transformer/生成模型）、以及 2024-2026 行业关键技术栈方面存在明显缺口。  ---
+`深度学习` 是 ai-guru-database 中 L1 模型层的「神经网络核心」支撑章节，定位为连接数学基础（01）与具体应用领域（CV/NLP/RL）的桥梁。当前内容以反向传播、优化器、正则化、核心架构组件为主线，辅以 2026 年新增的状态空间模型、图神经网络、自监督学习和世界模型等前沿方向。整体来看，该目录在「教材式入门」和「前沿技术跟踪」上做得较好，但在企业生产级工程实践、主流架构深度拆解（CNN/RNN/Transformer/生成模型）、以及 2024-2026 行业关键技术栈方面存在明显缺口。  ---
 
 - **总体评分**: -/10
 
@@ -196,7 +196,7 @@ updated: 2026-07-01
 - 神经网络训练调试 Runbook：损失不下降/NaN/梯度爆炸/过拟合/欠拟合的系统化排查流程与 checklist。
 - 模型量化与压缩（框架层）：INT8/FP16/AWQ/GPTQ/动态量化在 PyTorch/ONNX/TensorRT 中的实践。
 - PyTorch 生产部署 Runbook：TorchScript、TorchExport、`torch.compile`、TorchServe、ONNX 导出、推理优化。
-- 分布式训练深度文档：虽然 `07_Model_Training/Distributed_Training/` 存在，但 `03_Deep_Learning` 作为框架层缺少 DDP/FSDP/DeepSpeed/Megatron 的入门与原理衔接。
+- 分布式训练深度文档：虽然 `模型训练/Distributed_Training/` 存在，但 `深度学习` 作为框架层缺少 DDP/FSDP/DeepSpeed/Megatron 的入门与原理衔接。
 - 生成模型深度文档（VAE/GAN/Diffusion）：仅在初学者文档中提及，缺少系统深度文档。
 
 #### P1 — 行业主流
@@ -240,7 +240,7 @@ updated: 2026-07-01
 
 ### 04_Computer_Vision
 
-`04_Computer_Vision` 是 ai-guru-database 中定位为 supporting（辅助章节） 的计算机视觉主模块，当前以「教学型知识库」为主：覆盖图像分类/检测、分割、多模态视觉、生成模型、视频生成、3D 视觉、OCR 七大主题，并为每个主题配备了 `for_dummy` 小白版，形成了较好的零基础→进阶的双层内容结构。整体来看，该章节更偏向概念讲解与代码示例，企业生产环境视角（部署、运维、成本、安全、合规）和 2025-2026 前沿技术跟进明显薄弱。  ---
+`计算机视觉` 是 ai-guru-database 中定位为 supporting（辅助章节） 的计算机视觉主模块，当前以「教学型知识库」为主：覆盖图像分类/检测、分割、多模态视觉、生成模型、视频生成、3D 视觉、OCR 七大主题，并为每个主题配备了 `for_dummy` 小白版，形成了较好的零基础→进阶的双层内容结构。整体来看，该章节更偏向概念讲解与代码示例，企业生产环境视角（部署、运维、成本、安全、合规）和 2025-2026 前沿技术跟进明显薄弱。  ---
 
 - **总体评分**: -/10
 
@@ -285,20 +285,20 @@ updated: 2026-07-01
 
 | 建议文件名 | 优先级 | 目标子目录 |
 |---|---|---|
-| ``CV_Deployment_and_Inference_2026.md`` | P0 | `04_Computer_Vision/` 根目录 |
-| ``CV_MLOps_Data_Pipeline_Runbook.md`` | P0 | `04_Computer_Vision/` 根目录 |
-| ``CV_Security_and_Compliance_2026.md`` | P0 | `04_Computer_Vision/` 根目录 |
-| ``Edge_CV_Deployment_Case_Study.md`` | P0 | `04_Computer_Vision/` 根目录 |
-| ``Video_Analytics_Pipeline_Runbook.md`` | P0 | `04_Computer_Vision/Video_Generation/` 或 |
-| ``VLM_Production_Architecture_2026.md`` | P0 | `04_Computer_Vision/Multimodal_Vision/` |
-| ``CV_Cost_Optimization_Guide.md`` | P0 | `04_Computer_Vision/` 根目录 |
-| ``Industrial_Quality_Inspection_Case_Study.md`` | P0 | `04_Computer_Vision/Image_Classification |
-| ``SAM_2_Deep_Dive.md`` | P1 | `04_Computer_Vision/Segmentation/` |
-| ``FLUX_Ecosystem_Deep_Dive.md`` | P1 | `04_Computer_Vision/Generative_Models/` |
+| ``CV_Deployment_and_Inference_2026.md`` | P0 | `计算机视觉/` 根目录 |
+| ``CV_MLOps_Data_Pipeline_Runbook.md`` | P0 | `计算机视觉/` 根目录 |
+| ``CV_Security_and_Compliance_2026.md`` | P0 | `计算机视觉/` 根目录 |
+| ``Edge_CV_Deployment_Case_Study.md`` | P0 | `计算机视觉/` 根目录 |
+| ``Video_Analytics_Pipeline_Runbook.md`` | P0 | `计算机视觉/Video_Generation/` 或 |
+| ``VLM_Production_Architecture_2026.md`` | P0 | `计算机视觉/Multimodal_Vision/` |
+| ``CV_Cost_Optimization_Guide.md`` | P0 | `计算机视觉/` 根目录 |
+| ``Industrial_Quality_Inspection_Case_Study.md`` | P0 | `计算机视觉/Image_Classification |
+| ``SAM_2_Deep_Dive.md`` | P1 | `计算机视觉/Segmentation/` |
+| ``FLUX_Ecosystem_Deep_Dive.md`` | P1 | `计算机视觉/Generative_Models/` |
 
 ### 05_NLP_LLMs
 
-`05_NLP_LLMs` 是知识库的支持章节（supporting tier），定位为 NLP 与大模型技术的"核心能力层"：从序列模型、Transformer 架构出发，覆盖 LLM 架构、微调、提示词工程、中外生态、推理模型、多模态、端侧 LLM 与数据工程。README 与 README_for_dummy 构建了清晰的"入门→进阶→实战"学习路径，2026 年新增的中外大模型生态、Reasoning Models、Long Context 等专题紧跟行业热点。  ---
+`大模型` 是知识库的支持章节（supporting tier），定位为 NLP 与大模型技术的"核心能力层"：从序列模型、Transformer 架构出发，覆盖 LLM 架构、微调、提示词工程、中外生态、推理模型、多模态、端侧 LLM 与数据工程。README 与 README_for_dummy 构建了清晰的"入门→进阶→实战"学习路径，2026 年新增的中外大模型生态、Reasoning Models、Long Context 等专题紧跟行业热点。  ---
 
 - **总体评分**: -/10
 
@@ -342,7 +342,7 @@ updated: 2026-07-01
 
 ### 06_Reinforcement_Learning
 
-`06_Reinforcement_Learning` 是当前知识库的 supporting（辅助）章节，定位为「从 MDP 数学基础 → 深度 RL 算法 → 具身智能/机器人」的垂直技术栈。Agent 相关内容已迁移至 `15_Agent_Production`，本章保留 RL 本体内容，并同时提供入门版（`_for_dummy`）、进阶主文档和深度解读（`_Deep_Dive`）三种形态。  ---
+`强化学习` 是当前知识库的 supporting（辅助）章节，定位为「从 MDP 数学基础 → 深度 RL 算法 → 具身智能/机器人」的垂直技术栈。Agent 相关内容已迁移至 `Agent`，本章保留 RL 本体内容，并同时提供入门版（`_for_dummy`）、进阶主文档和深度解读（`_Deep_Dive`）三种形态。  ---
 
 - **总体评分**: -/10
 
@@ -387,20 +387,20 @@ updated: 2026-07-01
 
 | 建议文件名 | 优先级 | 目标子目录 |
 |---|---|---|
-| ``RL_Frameworks_and_Toolchain_2026.md`` | P0 | `06_Reinforcement_Learning/` |
-| ``RL_Production_Deployment_Runbook.md`` | P0 | `06_Reinforcement_Learning/` |
-| ``RLHF_Production_Runbook.md`` | P0 | `06_Reinforcement_Learning/` |
-| ``GRPO_Training_Deep_Dive.md`` | P0 | `06_Reinforcement_Learning/` |
-| ``Offline_RL_Deep_Dive.md`` | P0 | `06_Reinforcement_Learning/Deep_RL/` |
-| ``Multi_Agent_RL_Deep_Dive.md`` | P0 | `06_Reinforcement_Learning/Deep_RL/` |
-| ``Safe_RL_Deep_Dive.md`` | P0 | `06_Reinforcement_Learning/Deep_RL/` |
-| ``RL_for_Recommendations_Case_Study.md`` | P0 | `06_Reinforcement_Learning/` |
-| ``RL_MLOps_and_Experiment_Tracking_2026.md`` | P0 | `06_Reinforcement_Learning/` |
-| ``Sim_to_Real_Runbook.md`` | P0 | `06_Reinforcement_Learning/Robotics_Embo |
+| ``RL_Frameworks_and_Toolchain_2026.md`` | P0 | `强化学习/` |
+| ``RL_Production_Deployment_Runbook.md`` | P0 | `强化学习/` |
+| ``RLHF_Production_Runbook.md`` | P0 | `强化学习/` |
+| ``GRPO_Training_Deep_Dive.md`` | P0 | `强化学习/` |
+| ``Offline_RL_Deep_Dive.md`` | P0 | `强化学习/Deep_RL/` |
+| ``Multi_Agent_RL_Deep_Dive.md`` | P0 | `强化学习/Deep_RL/` |
+| ``Safe_RL_Deep_Dive.md`` | P0 | `强化学习/Deep_RL/` |
+| ``RL_for_Recommendations_Case_Study.md`` | P0 | `强化学习/` |
+| ``RL_MLOps_and_Experiment_Tracking_2026.md`` | P0 | `强化学习/` |
+| ``Sim_to_Real_Runbook.md`` | P0 | `强化学习/Robotics_Embo |
 
 ### 07_Model_Training
 
-`07_Model_Training` 是 ai-guru-database 的 supporting 辅助章节，定位为"模型训练的工程实战手册"。它以 2 个 README（主版+小白版）为入口，下设 6 个子目录（Data、Optimization、Distributed_Training、Alignment、Compression、Monitoring），覆盖从数据准备、分布式训练、优化加速到对齐压缩的全链路。当前特点是深度专题较全、故障排查Runbook领先、工程框架覆盖好，但系统性教材内容、生产级成本/安全/调度、前沿多模态/MoE 等存在明显缺口。  ---
+`模型训练` 是 ai-guru-database 的 supporting 辅助章节，定位为"模型训练的工程实战手册"。它以 2 个 README（主版+小白版）为入口，下设 6 个子目录（Data、Optimization、Distributed_Training、Alignment、Compression、Monitoring），覆盖从数据准备、分布式训练、优化加速到对齐压缩的全链路。当前特点是深度专题较全、故障排查Runbook领先、工程框架覆盖好，但系统性教材内容、生产级成本/安全/调度、前沿多模态/MoE 等存在明显缺口。  ---
 
 - **总体评分**: -/10
 
@@ -438,20 +438,20 @@ updated: 2026-07-01
 
 | 建议文件名 | 优先级 | 目标子目录 |
 |---|---|---|
-| ``Training_Cost_Optimization_and_FinOps_2026.md`` | P0 | `07_Model_Training/Optimization/` |
-| ``Checkpoint_Management_and_Disaster_Recovery_Runbook.md`` | P0 | `07_Model_Training/Monitoring/` |
-| ``Training_Resource_Scheduling_K8s_Slurm_2026.md`` | P0 | `07_Model_Training/Distributed_Training/ |
-| ``Cloud_Training_Platforms_Guide_2026.md`` | P0 | `07_Model_Training/Distributed_Training/ |
-| ``Training_Safety_and_Data_Compliance_2026.md`` | P0 | `07_Model_Training/Data/` 或新建 `Security/ |
-| ``End_to_End_LLM_Pretraining_Case_Study.md`` | P0 | `07_Model_Training/` 根目录 |
-| ``MoE_Training_Deep_Dive.md`` | P0 | `07_Model_Training/Distributed_Training/ |
-| ``Long_Context_Training_2026.md`` | P0 | `07_Model_Training/Optimization/` |
-| ``FP8_Training_Deep_Dive.md`` | P1 | `07_Model_Training/Optimization/` |
-| ``Multimodal_Model_Training_2026.md`` | P1 | `07_Model_Training/` 根目录或新建 `Multimodal/ |
+| ``Training_Cost_Optimization_and_FinOps_2026.md`` | P0 | `模型训练/Optimization/` |
+| ``Checkpoint_Management_and_Disaster_Recovery_Runbook.md`` | P0 | `模型训练/Monitoring/` |
+| ``Training_Resource_Scheduling_K8s_Slurm_2026.md`` | P0 | `模型训练/Distributed_Training/ |
+| ``Cloud_Training_Platforms_Guide_2026.md`` | P0 | `模型训练/Distributed_Training/ |
+| ``Training_Safety_and_Data_Compliance_2026.md`` | P0 | `模型训练/Data/` 或新建 `Security/ |
+| ``End_to_End_LLM_Pretraining_Case_Study.md`` | P0 | `模型训练/` 根目录 |
+| ``MoE_Training_Deep_Dive.md`` | P0 | `模型训练/Distributed_Training/ |
+| ``Long_Context_Training_2026.md`` | P0 | `模型训练/Optimization/` |
+| ``FP8_Training_Deep_Dive.md`` | P1 | `模型训练/Optimization/` |
+| ``Multimodal_Model_Training_2026.md`` | P1 | `模型训练/` 根目录或新建 `Multimodal/ |
 
 ### 08_Model_Evaluation
 
-`08_Model_Evaluation` 是 ai-guru-database 中围绕 AI 模型评测方法论、指标体系、基准测试与工程化评估 的核心章节。当前覆盖从传统 ML 指标、LLM/Agent/多模态基准，到 LLM-as-Judge、在线 A/B 测试、CI/CD 自动评估等生产实践，整体偏向 LLM 时代的大模型评测。然而，章节在结构化教学路径、企业级评估运维、2024–2026 最新工具链与领域特定评估方面仍存在明显缺口，大量文件还存在 ` 2.md` 重复副本，需要内容治理。  ---
+`模型评估` 是 ai-guru-database 中围绕 AI 模型评测方法论、指标体系、基准测试与工程化评估 的核心章节。当前覆盖从传统 ML 指标、LLM/Agent/多模态基准，到 LLM-as-Judge、在线 A/B 测试、CI/CD 自动评估等生产实践，整体偏向 LLM 时代的大模型评测。然而，章节在结构化教学路径、企业级评估运维、2024–2026 最新工具链与领域特定评估方面仍存在明显缺口，大量文件还存在 ` 2.md` 重复副本，需要内容治理。  ---
 
 - **总体评分**: -/10
 
@@ -471,26 +471,26 @@ updated: 2026-07-01
 
 | 建议文件名 | 优先级 | 目标子目录 |
 |---|---|---|
-| ``RAG_Evaluation_Deep_Dive.md`` | P0 | `08_Model_Evaluation/` 根目录或新建 `RAG_Evalu |
-| ``Agent_Evaluation_Runbook.md`` | P0 | `08_Model_Evaluation/Evaluation_Tools/` |
-| ``Evaluation_Cost_Optimization.md`` | P0 | `08_Model_Evaluation/` |
-| ``Data_Contamination_Detection_Deep_Dive.md`` | P0 | `08_Model_Evaluation/` |
-| ``Model_Card_Template.md`` | P0 | `08_Model_Evaluation/` |
-| ``Calibration_Uncertainty_Evaluation.md`` | P0 | `08_Model_Evaluation/` |
-| ``Domain_Evaluation_Medical_Financial_Legal.md`` | P0 | `08_Model_Evaluation/` |
-| ``Safety_Red_Team_Evaluation_Deep_Dive.md`` | P0 | `08_Model_Evaluation/` |
-| ``Evaluation_Dataset_Constrution_Guide.md`` | P0 | `08_Model_Evaluation/` |
-| ``Evaluation_Monitoring_Runbook.md`` | P0 | `08_Model_Evaluation/` |
+| ``RAG_Evaluation_Deep_Dive.md`` | P0 | `模型评估/` 根目录或新建 `RAG_Evalu |
+| ``Agent_Evaluation_Runbook.md`` | P0 | `模型评估/Evaluation_Tools/` |
+| ``Evaluation_Cost_Optimization.md`` | P0 | `模型评估/` |
+| ``Data_Contamination_Detection_Deep_Dive.md`` | P0 | `模型评估/` |
+| ``Model_Card_Template.md`` | P0 | `模型评估/` |
+| ``Calibration_Uncertainty_Evaluation.md`` | P0 | `模型评估/` |
+| ``Domain_Evaluation_Medical_Financial_Legal.md`` | P0 | `模型评估/` |
+| ``Safety_Red_Team_Evaluation_Deep_Dive.md`` | P0 | `模型评估/` |
+| ``Evaluation_Dataset_Constrution_Guide.md`` | P0 | `模型评估/` |
+| ``Evaluation_Monitoring_Runbook.md`` | P0 | `模型评估/` |
 
 ### 09_Testing
 
-`09_Testing` 是 ai-guru-database 的核心章节（tier: core），定位为「AI 测试与评估」全栈知识库，覆盖从 Prompt 测试、RAG 评估、Agent 行为验证、LLM 安全红队到契约测试的完整测试金字塔。章节结构完整：包含 `README.md`、`README_for_dummy.md`、`{Topic}-in-nutshell.md`、`{Topic}_for_dummy.md` 等入门级入口，也包含多个 `{Topic}_Deep_Dive.md` 进阶深度文档，适合高校系统学习与工程参考。  > 注意：该目录下存在 6 个带 ` 2.md` 后
+`AI测试` 是 ai-guru-database 的核心章节（tier: core），定位为「AI 测试与评估」全栈知识库，覆盖从 Prompt 测试、RAG 评估、Agent 行为验证、LLM 安全红队到契约测试的完整测试金字塔。章节结构完整：包含 `README.md`、`README_for_dummy.md`、`{Topic}-in-nutshell.md`、`{Topic}_for_dummy.md` 等入门级入口，也包含多个 `{Topic}_Deep_Dive.md` 进阶深度文档，适合高校系统学习与工程参考。  > 注意：该目录下存在 6 个带 ` 2.md` 后
 
 - **总体评分**: -/10
 
 #### P0 — 生产环境必备
 
-- Agent 评估方法论与工具：当前仅在 `in-nutshell` 中提及 Agent 指标，缺少系统性的 Agent 任务成功率、工具选择准确率、轨迹评估、Human-in-the-loop 评估实践（虽然 `15_Agent_Production/Agent_Evaluation` 存在，但 `09_Testing` 作为测试主章应独立成章）。
+- Agent 评估方法论与工具：当前仅在 `in-nutshell` 中提及 Agent 指标，缺少系统性的 Agent 任务成功率、工具选择准确率、轨迹评估、Human-in-the-loop 评估实践（虽然 `Agent/Agent_Evaluation` 存在，但 `AI测试` 作为测试主章应独立成章）。
 - LLM-as-Judge 的偏见控制与校准：现有文档多处使用 Judge LLM，但缺少位置偏差、自我偏好、verbosity bias 的识别与缓解方法。
 - 测试成本优化与 CI 预算管理：LLM 测试调用费用高昂，缺少按影响面选择测试子集、缓存策略、本地小模型预筛选、成本上限控制。
 - A/B 测试与影子测试（Shadow Testing）：生产环境模型切换缺少离线/在线 A/B、灰度、影子流量对比方法论。
@@ -528,20 +528,20 @@ updated: 2026-07-01
 
 | 建议文件名 | 优先级 | 目标子目录 |
 |---|---|---|
-| ``Agent_Evaluation_Deep_Dive.md`` | P0 | `09_Testing/` |
-| ``LLM_as_Judge_Bias_and_Calibration_Deep_Dive.md`` | P0 | `09_Testing/` |
-| ``AI_Testing_Cost_Optimization_2026.md`` | P0 | `09_Testing/` |
-| ``Shadow_AB_Testing_for_LLM_Deep_Dive.md`` | P0 | `09_Testing/` |
-| ``LLM_Chaos_Engineering_Runbook.md`` | P0 | `09_Testing/` |
-| ``Compliance_Testing_for_AI_Deep_Dive.md`` | P0 | `09_Testing/` |
-| ``Multimodal_AI_Testing_Deep_Dive.md`` | P0/P1 | `09_Testing/` |
-| ``Code_Generation_Evaluation_Deep_Dive.md`` | P0/P1 | `09_Testing/` |
-| ``Retrieval_Quality_Testing_Deep_Dive.md`` | P1 | `09_Testing/` |
-| ``Testing_Platforms_Comparison_2026.md`` | P1 | `09_Testing/` |
+| ``Agent_Evaluation_Deep_Dive.md`` | P0 | `AI测试/` |
+| ``LLM_as_Judge_Bias_and_Calibration_Deep_Dive.md`` | P0 | `AI测试/` |
+| ``AI_Testing_Cost_Optimization_2026.md`` | P0 | `AI测试/` |
+| ``Shadow_AB_Testing_for_LLM_Deep_Dive.md`` | P0 | `AI测试/` |
+| ``LLM_Chaos_Engineering_Runbook.md`` | P0 | `AI测试/` |
+| ``Compliance_Testing_for_AI_Deep_Dive.md`` | P0 | `AI测试/` |
+| ``Multimodal_AI_Testing_Deep_Dive.md`` | P0/P1 | `AI测试/` |
+| ``Code_Generation_Evaluation_Deep_Dive.md`` | P0/P1 | `AI测试/` |
+| ``Retrieval_Quality_Testing_Deep_Dive.md`` | P1 | `AI测试/` |
+| ``Testing_Platforms_Comparison_2026.md`` | P1 | `AI测试/` |
 
 ### 10_Deployment_Inference
 
-`10_Deployment_Inference` 是 ai-guru-database 中负责“模型到生产的最后一公里”的辅助章节（tier: supporting），核心定位是帮助读者把训练好的模型高效、稳定、可扩展地部署为推理服务。当前内容以推理引擎选型、性能优化、量化压缩、国产芯片适配为主线，覆盖了主流开源/商业引擎、KV Cache/调度/PD 分离等性能技术，以及 Ascend、海光、寒武纪、摩尔线程等国产硬件，整体呈现出“引擎多、优化深、国产化足”的特点。  ---
+`部署推理` 是 ai-guru-database 中负责“模型到生产的最后一公里”的辅助章节（tier: supporting），核心定位是帮助读者把训练好的模型高效、稳定、可扩展地部署为推理服务。当前内容以推理引擎选型、性能优化、量化压缩、国产芯片适配为主线，覆盖了主流开源/商业引擎、KV Cache/调度/PD 分离等性能技术，以及 Ascend、海光、寒武纪、摩尔线程等国产硬件，整体呈现出“引擎多、优化深、国产化足”的特点。  ---
 
 - **总体评分**: -/10
 
@@ -563,7 +563,7 @@ updated: 2026-07-01
 
 ### 11_MLOps_Pipeline
 
-`11_MLOps_Pipeline` 是知识库的支撑章节（tier: supporting），定位为“ML 建设期”（Build-time）工程实践，与 `13_AI_Ops`（Run-time 运维）明确分界。本章采用双主线结构：传统 MLOps 全生命周期管理 + LLM 时代的 LLMOps 升级，2026 年 6 月已将 16 个工具深度解析从 `13_AI_Ops` 迁入，形成以概念页为纲、工具 Deep Dive 为目、Runbook 与 Tutorial 为实战补充的体系。  ---
+`MLOps` 是知识库的支撑章节（tier: supporting），定位为“ML 建设期”（Build-time）工程实践，与 `AI运维`（Run-time 运维）明确分界。本章采用双主线结构：传统 MLOps 全生命周期管理 + LLM 时代的 LLMOps 升级，2026 年 6 月已将 16 个工具深度解析从 `AI运维` 迁入，形成以概念页为纲、工具 Deep Dive 为目、Runbook 与 Tutorial 为实战补充的体系。  ---
 
 - **总体评分**: -/10
 
@@ -677,7 +677,7 @@ updated: 2026-07-01
 
 ### 13_AI_Ops
 
-`13_AI_Ops` 是知识库中负责 AI 系统运行期运维与可观测性 的核心章节，定位在「Run-time 运营」（与 `11_MLOps_Pipeline` 的 Build-time 工具链形成边界）。当前内容以 SRE、事故响应、GPU/K8s 排障、成本优化为重心，顶层全景文档较完整，但多个子目录（可观测性、成本治理、混沌工程、事故响应框架）篇幅薄弱，且存在大量重复命名的 `* 2.md` 文件干扰检索。  ---
+`AI运维` 是知识库中负责 AI 系统运行期运维与可观测性 的核心章节，定位在「Run-time 运营」（与 `MLOps` 的 Build-time 工具链形成边界）。当前内容以 SRE、事故响应、GPU/K8s 排障、成本优化为重心，顶层全景文档较完整，但多个子目录（可观测性、成本治理、混沌工程、事故响应框架）篇幅薄弱，且存在大量重复命名的 `* 2.md` 文件干扰检索。  ---
 
 - **总体评分**: -/10
 
@@ -699,7 +699,7 @@ updated: 2026-07-01
 
 ### 14_RAG_Systems
 
-`14_RAG_Systems` 是 ai-guru-database 中聚焦 RAG（检索增强生成） 的辅助章节（tier: supporting），定位是把 RAG 从“概念”讲到“能跑的生产系统”。README 已经画出清晰的学习路径：小白版 → 速成版 → 系统学习 → 高级实践 → 向量数据库/框架/嵌入模型专题。整体覆盖偏 “概念 + 工具选型 + 代码示例”，但在 生产运维、安全合规、系统评估、成本优化 等工程化主题上明显薄弱。  ---
+`RAG系统` 是 ai-guru-database 中聚焦 RAG（检索增强生成） 的辅助章节（tier: supporting），定位是把 RAG 从“概念”讲到“能跑的生产系统”。README 已经画出清晰的学习路径：小白版 → 速成版 → 系统学习 → 高级实践 → 向量数据库/框架/嵌入模型专题。整体覆盖偏 “概念 + 工具选型 + 代码示例”，但在 生产运维、安全合规、系统评估、成本优化 等工程化主题上明显薄弱。  ---
 
 - **总体评分**: -/10
 
@@ -719,20 +719,20 @@ updated: 2026-07-01
 
 | 建议文件名 | 优先级 | 目标子目录 |
 |---|---|---|
-| ``RAG_Production_Architecture_Deep_Dive.md`` | P0 | `14_RAG_Systems/Production_RAG/`（新建） |
-| ``RAG_Security_and_Compliance_Runbook.md`` | P0 | `14_RAG_Systems/Production_RAG/` |
-| ``RAG_Evaluation_Framework_Deep_Dive.md`` | P0 | `14_RAG_Systems/Production_RAG/` 或 `Adva |
-| ``RAG_Monitoring_and_Observability_Runbook.md`` | P0 | `14_RAG_Systems/Production_RAG/` |
-| ``RAG_Cost_Optimization_Deep_Dive.md`` | P0 | `14_RAG_Systems/Production_RAG/` |
-| ``Reranker_Deep_Dive.md`` | P0 | `14_RAG_Systems/Advanced_RAG/` |
-| ``Vector_DB_Production_Runbook.md`` | P0 | `14_RAG_Systems/Production_RAG/` |
-| ``Incremental_Indexing_and_Data_Pipeline_Runbook.md`` | P0 | `14_RAG_Systems/Production_RAG/` |
-| ``GraphRAG_Deep_Dive.md`` | P0 | `14_RAG_Systems/Advanced_RAG/` |
-| ``Pinecone_Deep_Dive.md`` | P1 | `14_RAG_Systems/Vector_Databases/` |
+| ``RAG_Production_Architecture_Deep_Dive.md`` | P0 | `RAG系统/Production_RAG/`（新建） |
+| ``RAG_Security_and_Compliance_Runbook.md`` | P0 | `RAG系统/Production_RAG/` |
+| ``RAG_Evaluation_Framework_Deep_Dive.md`` | P0 | `RAG系统/Production_RAG/` 或 `Adva |
+| ``RAG_Monitoring_and_Observability_Runbook.md`` | P0 | `RAG系统/Production_RAG/` |
+| ``RAG_Cost_Optimization_Deep_Dive.md`` | P0 | `RAG系统/Production_RAG/` |
+| ``Reranker_Deep_Dive.md`` | P0 | `RAG系统/Advanced_RAG/` |
+| ``Vector_DB_Production_Runbook.md`` | P0 | `RAG系统/Production_RAG/` |
+| ``Incremental_Indexing_and_Data_Pipeline_Runbook.md`` | P0 | `RAG系统/Production_RAG/` |
+| ``GraphRAG_Deep_Dive.md`` | P0 | `RAG系统/Advanced_RAG/` |
+| ``Pinecone_Deep_Dive.md`` | P1 | `RAG系统/Vector_Databases/` |
 
 ### 15_Agent_Production
 
-`15_Agent_Production` 是知识库 L4 应用层的辅助章节（`tier: supporting`），定位是“从 Agent 原型到生产级系统的完整工程体系”。目录按 能力层 → 评测层 → 生态层 → 工具与学习层 四层组织，共 16 个 L2 子目录 + 多个根级课件，已覆盖框架、协议、Harness 工程、评估、平台、编码工具等核心主题。但企业生产所需的 SRE/Runbook、成本优化、安全合规、部署基线、沙箱基础设施、多模态/Browser Agent 等实战内容明显薄弱。  ---
+`Agent` 是知识库 L4 应用层的辅助章节（`tier: supporting`），定位是“从 Agent 原型到生产级系统的完整工程体系”。目录按 能力层 → 评测层 → 生态层 → 工具与学习层 四层组织，共 16 个 L2 子目录 + 多个根级课件，已覆盖框架、协议、Harness 工程、评估、平台、编码工具等核心主题。但企业生产所需的 SRE/Runbook、成本优化、安全合规、部署基线、沙箱基础设施、多模态/Browser Agent 等实战内容明显薄弱。  ---
 
 - **总体评分**: -/10
 
@@ -779,7 +779,7 @@ updated: 2026-07-01
 
 ### 16_AI_Coding
 
-`16_AI_Coding` 是知识库中定位为 supporting 的辅助章节，聚焦"AI 辅助编程"这一横向能力领域，目标读者覆盖从完全新手到生产环境落地的工程师。目录结构按 理论（Theory）→ 工具（Tools）→ 方法论（Methodology）→ 实战（Practice） 四层组织，并以 Vibe Coding / Agentic Coding 作为 2026 年核心叙事主线。总体已完成从入门到进阶的骨架搭建，但在高校教学实验、企业生产运维、行业主流工具深度三个维度存在明显缺口。  ---
+`AI编程` 是知识库中定位为 supporting 的辅助章节，聚焦"AI 辅助编程"这一横向能力领域，目标读者覆盖从完全新手到生产环境落地的工程师。目录结构按 理论（Theory）→ 工具（Tools）→ 方法论（Methodology）→ 实战（Practice） 四层组织，并以 Vibe Coding / Agentic Coding 作为 2026 年核心叙事主线。总体已完成从入门到进阶的骨架搭建，但在高校教学实验、企业生产运维、行业主流工具深度三个维度存在明显缺口。  ---
 
 - **总体评分**: -/10
 
@@ -826,7 +826,7 @@ updated: 2026-07-01
 
 ### 17_Ethics_Safety
 
-`17_Ethics_Safety` 是 ai-guru-database 的 supporting（辅助）章节，定位为“AI 可信度与责任性”专题。README 将其划分为三层：基础安全与对齐层（价值对齐、红队测试）、专业安全研究层（机械可解释性、隐私保护 AI、Deepfake、供应链安全、联邦学习）、生产安全实践层（OWASP/ASI 框架、K8s 策略引擎、监管工程化、安全评测）。章节内同时提供了 `README_for_dummy.md` 和多份 `_for_dummy.md` 入门版本，整体覆盖了从概念到代码示例的完整梯度。  ---
+`伦理安全` 是 ai-guru-database 的 supporting（辅助）章节，定位为“AI 可信度与责任性”专题。README 将其划分为三层：基础安全与对齐层（价值对齐、红队测试）、专业安全研究层（机械可解释性、隐私保护 AI、Deepfake、供应链安全、联邦学习）、生产安全实践层（OWASP/ASI 框架、K8s 策略引擎、监管工程化、安全评测）。章节内同时提供了 `README_for_dummy.md` 和多份 `_for_dummy.md` 入门版本，整体覆盖了从概念到代码示例的完整梯度。  ---
 
 - **总体评分**: -/10
 
@@ -873,7 +873,7 @@ updated: 2026-07-01
 
 ### 18_AI_Applications_Industry
 
-`18_AI_Applications_Industry` 是知识库的 辅助章节（tier: supporting），定位为“AI 应用与行业融合”全景，覆盖医疗、金融、制造、零售、自动驾驶、教育、内容媒体、法律政务、农业、能源气候、代码生成、AI for Science 等 10+ 个行业。核心目标是提供 2025–2026 年的行业渗透率、标杆案例、技术趋势和 ROI 数据，面向行业分析师、产品经理和初学者建立跨行业认知地图。
+`行业应用` 是知识库的 辅助章节（tier: supporting），定位为“AI 应用与行业融合”全景，覆盖医疗、金融、制造、零售、自动驾驶、教育、内容媒体、法律政务、农业、能源气候、代码生成、AI for Science 等 10+ 个行业。核心目标是提供 2025–2026 年的行业渗透率、标杆案例、技术趋势和 ROI 数据，面向行业分析师、产品经理和初学者建立跨行业认知地图。
 
 - **总体评分**: -/10
 
@@ -933,7 +933,7 @@ updated: 2026-07-01
 
 ### 19_Talks
 
-`19_Talks` 当前定位为 AI 名人演讲与观点（Talks） 的辅助章节（`tier: supporting`），采用「按人物组织」的结构：29 个演讲者/频道子目录，每个目录下基本为 `about.md`（人物简介与立场）+ `sayings.md`（金句摘录），并在根目录提供 `README.md`、`README_for_dummy.md`、`Talks_for_dummy.md` 与 `Talks_Synthesis_2026.md`。该章节目的是帮助读者从技术领袖视角理解 AI 发展脉络与争议，但本质上是一本「人物观点速查手册」，尚未形成面向教材、企业生产或行业主流的深度内容
+`业界观点` 当前定位为 AI 名人演讲与观点（Talks） 的辅助章节（`tier: supporting`），采用「按人物组织」的结构：29 个演讲者/频道子目录，每个目录下基本为 `about.md`（人物简介与立场）+ `sayings.md`（金句摘录），并在根目录提供 `README.md`、`README_for_dummy.md`、`Talks_for_dummy.md` 与 `Talks_Synthesis_2026.md`。该章节目的是帮助读者从技术领袖视角理解 AI 发展脉络与争议，但本质上是一本「人物观点速查手册」，尚未形成面向教材、企业生产或行业主流的深度内容
 
 - **总体评分**: -/10
 
@@ -976,7 +976,7 @@ updated: 2026-07-01
 
 ### 20_Papers_and_Research
 
-`20_Papers_and_Research` 是 ai-guru-database 的 辅助章节（tier: supporting），承担两个角色：一是「22 篇必读 AI 论文清单」的论文精读入口，为各主章节（深度学习、CV、NLP、RL 等）提供源头论文解读；二是「课题研究（Methodology）」模板区，用于沉淀问题导向的专题研究。当前内容以 2012–2023 年的经典论文 Deep Dive 为主，2024–2026 前沿补充极少，工程化、工具链、Runbook 类内容几乎空白。
+`论文精读` 是 ai-guru-database 的 辅助章节（tier: supporting），承担两个角色：一是「22 篇必读 AI 论文清单」的论文精读入口，为各主章节（深度学习、CV、NLP、RL 等）提供源头论文解读；二是「课题研究（Methodology）」模板区，用于沉淀问题导向的专题研究。当前内容以 2012–2023 年的经典论文 Deep Dive 为主，2024–2026 前沿补充极少，工程化、工具链、Runbook 类内容几乎空白。
 
 - **总体评分**: -/10
 
@@ -1036,13 +1036,13 @@ updated: 2026-07-01
 
 ### 21_Interviews
 
-`21_Interviews` 是 ai-guru-database 的辅助章节（supporting tier），定位为 AI/ML 全岗位的面试准备资料集，覆盖 20+ 个岗位的核心职责、能力要求、考点梳理与题库。章节以「岗位即目录」组织，期望每个岗位形成 `interview_preparing.md → question_bank.md → company_level_question_bank.md → interview_answers.md` 的完整备考闭环，但目前仅约 1/3 岗位达到了该完整度。  ---
+`面试岗位` 是 ai-guru-database 的辅助章节（supporting tier），定位为 AI/ML 全岗位的面试准备资料集，覆盖 20+ 个岗位的核心职责、能力要求、考点梳理与题库。章节以「岗位即目录」组织，期望每个岗位形成 `interview_preparing.md → question_bank.md → company_level_question_bank.md → interview_answers.md` 的完整备考闭环，但目前仅约 1/3 岗位达到了该完整度。  ---
 
 - **总体评分**: -/10
 
 #### P0 — 生产环境必备
 
-- Agent / AI Agent Engineer 岗位面试资料：README 已引用 `15_Agent_Production`，但 `21_Interviews` 内完全没有 Agent Engineer、Agent 平台工程师、Multi-Agent 工程师的考点。
+- Agent / AI Agent Engineer 岗位面试资料：README 已引用 `Agent`，但 `面试岗位` 内完全没有 Agent Engineer、Agent 平台工程师、Multi-Agent 工程师的考点。
 - 大模型后训练 / Post-Training Engineer 岗位：SFT、RLHF、DPO、GRPO、模型蒸馏、数据配比等无专门岗位。
 - AI 编译器 / AI Compiler Engineer 岗位：TVM、MLIR、XLA、triton kernel、算子融合是生产推理核心，无覆盖。
 - 端侧 AI / Edge AI Engineer 岗位：ONNX Runtime、TensorRT、Core ML、NNAPI、手机 NPU 部署无岗位。
@@ -1080,16 +1080,16 @@ updated: 2026-07-01
 
 | 建议文件名 | 优先级 | 目标子目录 |
 |---|---|---|
-| ``Agent_Engineer_2026.md`` | P0 | `21_Interviews/Agent_Engineer/` |
-| ``Agent_Engineer_for_dummy.md`` | P0 | `21_Interviews/Agent_Engineer/` |
-| ``Post_Training_Engineer_2026.md`` | P0 | `21_Interviews/Post_Training_Engineer/` |
-| ``AI_Compiler_Engineer_2026.md`` | P0 | `21_Interviews/AI_Compiler_Engineer/` |
-| ``Edge_AI_Engineer_2026.md`` | P0 | `21_Interviews/Edge_AI_Engineer/` |
-| ``Multimodal_Engineer_2026.md`` | P0 | `21_Interviews/Multimodal_Engineer/` |
-| ``AI_Data_Engineer_Runbook.md`` | P0 | `21_Interviews/AI_Data_Engineer/` |
-| ``Behavioral_Interview_Case_Study.md`` | P0 | `21_Interviews/` 根目录 |
-| ``System_Design_for_AI_Case_Study.md`` | P0 | `21_Interviews/` 根目录 |
-| ``Resume_Project_STAR_Template.md`` | P0 | `21_Interviews/` 根目录 |
+| ``Agent_Engineer_2026.md`` | P0 | `面试岗位/Agent_Engineer/` |
+| ``Agent_Engineer_for_dummy.md`` | P0 | `面试岗位/Agent_Engineer/` |
+| ``Post_Training_Engineer_2026.md`` | P0 | `面试岗位/Post_Training_Engineer/` |
+| ``AI_Compiler_Engineer_2026.md`` | P0 | `面试岗位/AI_Compiler_Engineer/` |
+| ``Edge_AI_Engineer_2026.md`` | P0 | `面试岗位/Edge_AI_Engineer/` |
+| ``Multimodal_Engineer_2026.md`` | P0 | `面试岗位/Multimodal_Engineer/` |
+| ``AI_Data_Engineer_Runbook.md`` | P0 | `面试岗位/AI_Data_Engineer/` |
+| ``Behavioral_Interview_Case_Study.md`` | P0 | `面试岗位/` 根目录 |
+| ``System_Design_for_AI_Case_Study.md`` | P0 | `面试岗位/` 根目录 |
+| ``Resume_Project_STAR_Template.md`` | P0 | `面试岗位/` 根目录 |
 
 ### 90_Learn
 

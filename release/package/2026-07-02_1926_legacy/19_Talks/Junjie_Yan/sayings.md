@@ -49,11 +49,11 @@ aliases:
 
 ## Related
 
-- [[19_Talks/Junjie_Yan/about]] — 闫俊杰简介
-- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/MiniMax_Deep_Dive]] — MiniMax 深度解析
+- [[业界观点/Junjie_Yan/about]] — 闫俊杰简介
+- [[大模型/Chinese_LLM_Ecosystem/MiniMax_Deep_Dive]] — MiniMax 深度解析
 
 ---
 
 *Last updated: 2026-06-24*
 
-- [[19_Talks/README|AI 名人演讲与观点 (Talks)]]
+- [[业界观点/README|AI 名人演讲与观点 (Talks)]]

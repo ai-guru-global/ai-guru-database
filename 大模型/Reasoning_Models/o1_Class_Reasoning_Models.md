@@ -476,12 +476,12 @@ def adaptive_reasoning(question, budget=10000):
 
 ## Related
 
-- [[05_NLP_LLMs/Reasoning_Models/DeepSeek_R1_Technical_Analysis]]
-- [[05_NLP_LLMs/Reasoning_Models/Process_Reward_Models]]
-- [[05_NLP_LLMs/Reasoning_Models/Reasoning_Models_for_dummy|Reasoning Models]]
+- [[大模型/Reasoning_Models/DeepSeek_R1_Technical_Analysis]]
+- [[大模型/Reasoning_Models/Process_Reward_Models]]
+- [[大模型/Reasoning_Models/Reasoning_Models_for_dummy|Reasoning Models]]
 - [[_concepts/ai-agents]]
-- [[06_Reinforcement_Learning/Deep_RL/Deep_RL]]
-- [[05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering|Prompt Engineering]]
+- [[强化学习/Deep_RL/Deep_RL]]
+- [[大模型/Prompt_Engineering/Prompt_Engineering|Prompt Engineering]]
 - [[_synthesis/reasoning-models-agents|推理模型 × Agent]] — 推理增强的智能体
 
 - [[_synthesis/alignment-rlhf|价值对齐 × RLHF：从人类反馈到可扩展监督]]

@@ -86,27 +86,27 @@ LLM 应用的可观测性远超传统 APM，需覆盖成本（$/请求、缓存�
 
 ### 新增核心文档
 
-- [[05_NLP_LLMs/LLM_Production_Deployment_Runbook|LLM 生产部署运行手册]] — 从选型到上线的完整 Runbook。
-- [[12_Architecture_Infrastructure/AI_SRE_Runbook|AI SRE 运行手册]] — 高可用、故障排查与容量规划。
-- [[11_MLOps_Pipeline/LLM_Guardrails_and_Safety_Ops_2026|LLM 护栏与安全运维]] — 生产级安全治理。
-- [[18_AI_Applications_Industry/AI_Production_Architecture_2026|AI 生产架构 2026]] — 端到端生产架构设计。
-- [[18_AI_Applications_Industry/AI_Platform_Selection_2026|AI 平台选型 2026]] — 模型与平台选型指南。
-- [[07_Model_Training/Training_Cost_Optimization_and_FinOps_2026|训练成本优化与 FinOps]] — 成本与资源优化。
-- [[04_Computer_Vision/CV_Deployment_and_Inference_2026|CV 部署与推理 2026]] — 跨模态生产部署参考。
+- [[大模型/LLM_Production_Deployment_Runbook|LLM 生产部署运行手册]] — 从选型到上线的完整 Runbook。
+- [[架构基建/AI_SRE_Runbook|AI SRE 运行手册]] — 高可用、故障排查与容量规划。
+- [[MLOps/LLM_Guardrails_and_Safety_Ops_2026|LLM 护栏与安全运维]] — 生产级安全治理。
+- [[行业应用/AI_Production_Architecture_2026|AI 生产架构 2026]] — 端到端生产架构设计。
+- [[行业应用/AI_Platform_Selection_2026|AI 平台选型 2026]] — 模型与平台选型指南。
+- [[模型训练/Training_Cost_Optimization_and_FinOps_2026|训练成本优化与 FinOps]] — 成本与资源优化。
+- [[计算机视觉/CV_Deployment_and_Inference_2026|CV 部署与推理 2026]] — 跨模态生产部署参考。
 
 ### 相关领域
 
-- [[15_Agent_Production/Agent_Production_Deployment_Runbook|Agent 生产部署 Runbook]] — Agent 系统的特殊部署挑战。
-- [[14_RAG_Systems/RAG_Production_Architecture_Deep_Dive|RAG 生产架构深潜]] — 检索增强生成的生产化。
-- [[08_Model_Evaluation/RAG_Evaluation_Deep_Dive|RAG 评估深潜]] — 生产质量评估方法。
-- [[09_Testing/Agent_Evaluation_Deep_Dive|Agent 评估深潜]] — Agent 系统评估体系。
-- [[06_Reinforcement_Learning/GRPO_Training_Deep_Dive|GRPO 训练深潜]] — 后训练与对齐技术。
-- [[05_NLP_LLMs/Test_Time_Compute_Scaling_2026|测试时计算缩放 2026]] — 推理阶段能力扩展。
-- [[03_Deep_Learning/DeepSeek_Architecture_2026|DeepSeek 架构 2026]] — 先进模型架构对部署的影响。
-- [[07_Model_Training/Diffusion_Model_Training_2026|扩散模型训练 2026]] — 生成式模型生产化参考。
-- [[16_AI_Coding/AI_Code_Security_Audit_Runbook|AI 代码安全审计 Runbook]] — 安全与合规实践。
-- [[21_Interviews/Agent_Engineer_2026|Agent 工程师面试 2026]] — 工程能力要求参考。
-- [[20_Papers_and_Research/Paper_Reading_and_Reproduction_Guide|论文阅读与复现指南]] — 从论文到工程落地。
+- [[Agent/Agent_Production_Deployment_Runbook|Agent 生产部署 Runbook]] — Agent 系统的特殊部署挑战。
+- [[RAG系统/RAG_Production_Architecture_Deep_Dive|RAG 生产架构深潜]] — 检索增强生成的生产化。
+- [[模型评估/RAG_Evaluation_Deep_Dive|RAG 评估深潜]] — 生产质量评估方法。
+- [[AI测试/Agent_Evaluation_Deep_Dive|Agent 评估深潜]] — Agent 系统评估体系。
+- [[强化学习/GRPO_Training_Deep_Dive|GRPO 训练深潜]] — 后训练与对齐技术。
+- [[大模型/Test_Time_Compute_Scaling_2026|测试时计算缩放 2026]] — 推理阶段能力扩展。
+- [[深度学习/DeepSeek_Architecture_2026|DeepSeek 架构 2026]] — 先进模型架构对部署的影响。
+- [[模型训练/Diffusion_Model_Training_2026|扩散模型训练 2026]] — 生成式模型生产化参考。
+- [[AI编程/AI_Code_Security_Audit_Runbook|AI 代码安全审计 Runbook]] — 安全与合规实践。
+- [[面试岗位/Agent_Engineer_2026|Agent 工程师面试 2026]] — 工程能力要求参考。
+- [[论文精读/Paper_Reading_and_Reproduction_Guide|论文阅读与复现指南]] — 从论文到工程落地。
 
 ### 相关概念
 

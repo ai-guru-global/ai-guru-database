@@ -198,6 +198,6 @@ PromQL: rate(http_requests_total{trace_id="xxx"}[5m]) → 相关指标
 - [[_concepts/jaeger|Jaeger]] — 链路追踪
 - [[_concepts/tempo|Tempo]] — 低成本追踪
 - [[_concepts/opentelemetry|OpenTelemetry]] — 统一可观测性
-- [[13_AI_Ops/Kubernetes_Troubleshooting_Playbook|K8s 运维排障 Playbook]]
+- [[AI运维/Kubernetes_Troubleshooting_Playbook|K8s 运维排障 Playbook]]
 
-- [[12_Architecture_Infrastructure/README|架构与基础设施 (Architecture & Infrastructure)]]
+- [[架构基建/README|架构与基础设施 (Architecture & Infrastructure)]]

@@ -10,7 +10,7 @@ relationships:
   - target: "_concepts/vllm"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "专注于 LLM 输出格式约束的轻量级库，通过 Token Logit 偏置强制输出符合 JSON Schema 或正则表达式的格式，与 vLLM/HF Transformers 深度集成。"
 provenance:
   extracted: 0.55

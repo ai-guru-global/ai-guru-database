@@ -352,13 +352,13 @@ def search(query, embedding_index, top_k=5):
 ## 扩展阅读
 
 - [[90_Learn/courses/microsoft/microsoft_genai_for_beginners]]
-- [[14_RAG_Systems/RAG_Systems]]
-- [[14_RAG_Systems/Vector_Database_for_dummy]]
-- [[05_NLP_LLMs/Multimodal_Models/GenAI_L09_Building_Image_Applications]]
-- [[15_Agent_Production/GenAI_L07_Building_Chat_Applications]]
+- [[RAG系统/RAG_Systems]]
+- [[RAG系统/Vector_Database_for_dummy]]
+- [[大模型/Multimodal_Models/GenAI_L09_Building_Image_Applications]]
+- [[Agent/GenAI_L07_Building_Chat_Applications]]
 
 ## 课程导航
 
 | 上一课 | 下一课 |
 |--------|--------|
-| [[15_Agent_Production/GenAI_L07_Building_Chat_Applications|L07 构建聊天应用]] | [[05_NLP_LLMs/Multimodal_Models/GenAI_L09_Building_Image_Applications|L09 构建图像生成应用]] |
+| [[Agent/GenAI_L07_Building_Chat_Applications|L07 构建聊天应用]] | [[大模型/Multimodal_Models/GenAI_L09_Building_Image_Applications|L09 构建图像生成应用]] |

@@ -14,7 +14,7 @@ relationships:
   - target: "_concepts/apsara-stack"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "百炼专属版是阿里云 AI Stack 配套的独立生态方案，提供 MINI/Lite/标准版三个层级，覆盖 RAG 应用、智能体平台、全栈 AI 平台。"
 provenance:
   extracted: 0.65
@@ -193,4 +193,4 @@ tier: core
 - [[_concepts/a-speed]] — A-Speed 加速推理
 - [[_concepts/apsara-stack]] — 飞天企业版
 - [[_concepts/model-gateway]] — 模型网关
-- [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析

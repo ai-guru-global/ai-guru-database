@@ -45,7 +45,7 @@ sources: []
 
 ## Related
 
-- [[21_Interviews/README]]
+- [[面试岗位/README]]
 - [[_concepts/ai-fundamentals]]
-- [[00_AI_Introduction/AI_Learning_Resources]]
-- [[16_AI_Coding/AI_Coding_for_dummy]]
+- [[AI入门/AI_Learning_Resources]]
+- [[AI编程/AI_Coding_for_dummy]]

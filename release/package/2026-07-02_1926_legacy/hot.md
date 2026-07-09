@@ -45,9 +45,9 @@
 
 ## ⚠ 入口不可达的 Core 页（39，需手动链入）
 
-- [[03_Deep_Learning/Transfer_Learning|迁移学习完全指南 (Transfer Learning Complete Guide)]]
+- [[深度学习/Transfer_Learning|迁移学习完全指南 (Transfer Learning Complete Guide)]]
 - [[DL_Overview|深度学习概览 (Deep Learning Overview)]]
-- [[03_Deep_Learning/Transfer_Learning/Transfer_Learning|迁移学习 (Transfer Learning)]]
+- [[深度学习/Transfer_Learning/Transfer_Learning|迁移学习 (Transfer Learning)]]
 - [[_projects/Cloud_Ops_Agent/README|云运维 Agent (Cloud Ops Agent)]]
 - [[agentscope_corpus_loading|AgentScope 语料加载与挂载指南]]
 - [[_projects/Cloud_Ops_Agent/docs/corpus/index|云产品运维 Agent 语料工程指南 (Corpus Engineering)]]

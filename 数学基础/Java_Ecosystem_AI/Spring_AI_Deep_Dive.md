@@ -17,7 +17,7 @@ sources: []
 
 > **一句话理解**: Spring AI 是 Spring 官方的 AI 应用框架 —— 用 Spring 的方式统一接入 LLM、构建 RAG、编排 Agent，让 Java 开发者用熟悉的编程模型构建企业级 AI 应用。
 
-> **相关文档**: [Java 生态 AI 概览](../../01_Fundamentals/Java_Ecosystem_AI/Java_Ecosystem_AI_Overview.md) | [Spring AI 架构设计](../../12_Architecture_Infrastructure/Architecture_Overview/Spring_AI_Architecture) | [Spring AI RAG 深度解析](../../14_RAG_Systems/RAG_Frameworks/Spring_AI_RAG_Deep_Dive.md) | [Spring AI 网关与安全](../../12_Architecture_Infrastructure/AI_Gateway/Spring_AI_Gateway_Security.md)
+> **相关文档**: [Java 生态 AI 概览](../../数学基础/Java_Ecosystem_AI/Java_Ecosystem_AI_Overview.md) | [Spring AI 架构设计](../../架构基建/Architecture_Overview/Spring_AI_Architecture) | [Spring AI RAG 深度解析](../../RAG系统/RAG_Frameworks/Spring_AI_RAG_Deep_Dive.md) | [Spring AI 网关与安全](../../架构基建/AI_Gateway/Spring_AI_Gateway_Security.md)
 
 ---
 
@@ -1467,7 +1467,7 @@ Trace: 用户请求 → AI 回答
 
 ## Related
 
-- [[01_Fundamentals/AI_Hardware/README]] — AI硬件与芯片 (AI Hardware) (共享: algorithms, basics, fundamentals, math)
-- [[01_Fundamentals/Fundamentals-in-nutshell]] — AI 基础速成指南 (共享: algorithms, basics, fundamentals, math)
-- [[01_Fundamentals/Java_Ecosystem_AI/Java_Ecosystem_AI_Overview]] — Java 生态与 AI：全景概览 (共享: algorithms, basics, fundamentals, math)
-- [[01_Fundamentals/README]] — 01 基础理论 (Fundamentals) (共享: algorithms, basics, fundamentals, math)
+- [[数学基础/AI_Hardware/README]] — AI硬件与芯片 (AI Hardware) (共享: algorithms, basics, fundamentals, math)
+- [[数学基础/Fundamentals-in-nutshell]] — AI 基础速成指南 (共享: algorithms, basics, fundamentals, math)
+- [[数学基础/Java_Ecosystem_AI/Java_Ecosystem_AI_Overview]] — Java 生态与 AI：全景概览 (共享: algorithms, basics, fundamentals, math)
+- [[数学基础/README]] — 01 基础理论 (Fundamentals) (共享: algorithms, basics, fundamentals, math)

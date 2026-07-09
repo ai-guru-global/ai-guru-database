@@ -158,7 +158,7 @@ Microsoft 是 company（概率 0.87），也是 brand（概率 0.75）。
 ### 1. Animals.ipynb —— 动物识别专家系统
 - **官方链接**：[Animals.ipynb](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/2-Symbolic/Animals.ipynb)
 - **内容**：用 OAV 三元组表示动物特征，分别实现**正向推理**与**反向推理**，根据用户输入逐步推断动物类别。
-- **运行方式**：下载 Notebook 后，在本地 Python 环境（如本库 [[01_Fundamentals/AI_Development_Environment_Setup]] 配置的环境）中运行即可；该示例无需 GPU。
+- **运行方式**：下载 Notebook 后，在本地 Python 环境（如本库 [[数学基础/AI_Development_Environment_Setup]] 配置的环境）中运行即可；该示例无需 GPU。
 - **核心结构概述**：
   - 定义规则库（IF-THEN 规则）。
   - 工作记忆初始化为用户提供的事实。
@@ -185,8 +185,8 @@ Microsoft 是 company（概率 0.87），也是 brand（概率 0.75）。
   - 神经-符号结合的前沿模型（如神经定理证明、LLM 与符号推理融合）。
 
 - **延伸**：
-  - 想理解符号推理的现代延续，阅读 [[05_NLP_LLMs/Reasoning_Models/Neuro_Symbolic_and_Formal_Verification_2026]]。
-  - 想了解 AI 的整体脉络，阅读 [[00_AI_Introduction/AI_Fundamentals]]。
+  - 想理解符号推理的现代延续，阅读 [[大模型/Reasoning_Models/Neuro_Symbolic_and_Formal_Verification_2026]]。
+  - 想了解 AI 的整体脉络，阅读 [[AI入门/AI_Fundamentals]]。
   - 想深入本体工程，可学习 OWL、RDF、SPARQL，并尝试 Protégé。
   - 想对比连接主义学习，继续学习本课程 L03「感知器」。
 
@@ -194,5 +194,5 @@ Microsoft 是 company（概率 0.87），也是 brand（概率 0.75）。
 
 - 课程索引：[[90_Learn/courses/microsoft/microsoft_ai_for_beginners]]
 - 本库相关页面：
-  - [[00_AI_Introduction/AI_Fundamentals]]
-  - [[05_NLP_LLMs/Reasoning_Models/Neuro_Symbolic_and_Formal_Verification_2026]]
+  - [[AI入门/AI_Fundamentals]]
+  - [[大模型/Reasoning_Models/Neuro_Symbolic_and_Formal_Verification_2026]]

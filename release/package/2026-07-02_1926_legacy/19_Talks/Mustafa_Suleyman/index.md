@@ -7,9 +7,9 @@ updated: 2026-07-02
 
 # Mustafa Suleyman
 
-This page indexes the contents of `19_Talks/Mustafa_Suleyman`.
+This page indexes the contents of `业界观点/Mustafa_Suleyman`.
 
 ## Files
 
-- [[19_Talks/Mustafa_Suleyman/about|About]]
-- [[19_Talks/Mustafa_Suleyman/sayings|Sayings]]
+- [[业界观点/Mustafa_Suleyman/about|About]]
+- [[业界观点/Mustafa_Suleyman/sayings|Sayings]]

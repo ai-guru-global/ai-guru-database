@@ -14,8 +14,8 @@ relationships:
   - target: "_concepts/mcp"
     type: related_to
 sources:
-  - 15_Agent_Production/Agent_Frameworks/AutoGen_Deep_Dive.md
-  - 15_Agent_Production/Agent_Frameworks/AutoGen_CrewAI_LangGraph_Dive.md
+  - Agent/Agent_Frameworks/AutoGen_Deep_Dive.md
+  - Agent/Agent_Frameworks/AutoGen_CrewAI_LangGraph_Dive.md
 summary: "AutoGen 是微软开源的多 Agent 对话框架，通过 ConversableAgent 抽象让多个 LLM Agent 互相协作、调用工具、执行代码，适合复杂任务分解和多角色协作场景。"
 provenance:
   extracted: 0.8
@@ -92,8 +92,8 @@ aliases:
 
 ## Related
 
-- [[15_Agent_Production/Agent_Frameworks/AutoGen_Deep_Dive]] — AutoGen 深度解析
-- [[15_Agent_Production/Agent_Frameworks/AutoGen_CrewAI_LangGraph_Dive]] — AutoGen / CrewAI / LangGraph 对比
+- [[Agent/Agent_Frameworks/AutoGen_Deep_Dive]] — AutoGen 深度解析
+- [[Agent/Agent_Frameworks/AutoGen_CrewAI_LangGraph_Dive]] — AutoGen / CrewAI / LangGraph 对比
 - [[_concepts/agent-framework]] — Agent 框架
 - [[_concepts/multi-agent]] — 多 Agent 系统
 - [[_concepts/langchain]] — LangChain

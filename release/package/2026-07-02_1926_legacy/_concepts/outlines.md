@@ -8,7 +8,7 @@ relationships:
   - target: "_concepts/lm-format-enforcer"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "Outlines 是结构化 LLM 生成的开源库——通过正则表达式和 JSON Schema 约束 LLM 输出，保证生成结果严格符合指定格式。是 LLM 应用工程化的关键工具。"
 provenance:
   extracted: 0.15

@@ -10,7 +10,7 @@ relationships:
   - target: "_concepts/agentops"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "CrewAI 生态的官方工具集，提供 40+ 预置工具（文件/搜索/数据库/API），支持自定义扩展，让 Agent 具备实际操作能力。"
 provenance:
   extracted: 0.55

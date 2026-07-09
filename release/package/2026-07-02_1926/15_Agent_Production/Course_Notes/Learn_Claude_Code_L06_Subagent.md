@@ -66,5 +66,5 @@ def spawn_subagent(description: str) -> str:
 
 - [[90_Learn/courses/share_ai/learn_claude_code]] — 完整 20 课映射
 - [[_references/learn-claude-code]] — 仓库引用索引
-- [[15_Agent_Production/Course_Notes/Learn_Claude_Code_L15_Agent_Teams]] — 队友（长期协作 Agent）
-- [[15_Agent_Production/Agent_Frameworks/AutoGen_CrewAI_LangGraph_Dive]] — 多 Agent 框架对比
+- [[Agent/Course_Notes/Learn_Claude_Code_L15_Agent_Teams]] — 队友（长期协作 Agent）
+- [[Agent/Agent_Frameworks/AutoGen_CrewAI_LangGraph_Dive]] — 多 Agent 框架对比

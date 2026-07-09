@@ -8,6 +8,6 @@ sources: []
 
 # The Anatomy Of An Agent Harness.assets
 
-This page indexes the contents of `15_Agent_Production/assets/the-anatomy-of-an-agent-harness.assets`.
+This page indexes the contents of `Agent/assets/the-anatomy-of-an-agent-harness.assets`.
 
 *This directory is currently empty.*

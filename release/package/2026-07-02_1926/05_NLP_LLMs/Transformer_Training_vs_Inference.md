@@ -635,4 +635,4 @@ scaler.update()
 
 ## Related
 
-- [[05_NLP_LLMs/README|04 自然语言处理与大模型 (NLP & LLMs)]]
+- [[大模型/README|04 自然语言处理与大模型 (NLP & LLMs)]]

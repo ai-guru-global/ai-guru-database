@@ -325,9 +325,9 @@ print(f"Best config: {analysis.best_config}")
 
 ## 相关阅读
 
-- [[07_Model_Training/Optimization/Optimization]] — 训练优化
-- [[07_Model_Training/Optimization/Training_Optimization_2026]] — 训练优化 2026
-- [[07_Model_Training/Optimization/Scaling_Laws_and_Training_Dynamics]] — 缩放定律
-- [[07_Model_Training/Optimization/Mixed_Precision_Training]] — 混合精度训练
-- [[11_MLOps_Pipeline/Experiment_Tracking/index]] — 实验跟踪
-- [[02_Machine_Learning/AutoML/AutoML]] — AutoML
+- [[模型训练/Optimization/Optimization]] — 训练优化
+- [[模型训练/Optimization/Training_Optimization_2026]] — 训练优化 2026
+- [[模型训练/Optimization/Scaling_Laws_and_Training_Dynamics]] — 缩放定律
+- [[模型训练/Optimization/Mixed_Precision_Training]] — 混合精度训练
+- [[MLOps/Experiment_Tracking/index]] — 实验跟踪
+- [[机器学习/AutoML/AutoML]] — AutoML

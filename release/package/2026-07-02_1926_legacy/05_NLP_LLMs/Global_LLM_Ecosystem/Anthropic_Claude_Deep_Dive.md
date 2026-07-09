@@ -127,7 +127,7 @@ Anthropic 诞生的三大分歧
 4. **透明推理过程**: Extended Thinking 让用户看到模型的思考过程，不做"黑盒推理"
 5. **开放生态**: MCP 协议开源，让 AI 与工具的集成有统一标准
 
-> **相关文档**: 关于 AI 价值对齐方法的全面介绍，参见 [Value Alignment](../../17_Ethics_Safety/Value_Alignment/Value_Alignment.md)
+> **相关文档**: 关于 AI 价值对齐方法的全面介绍，参见 [Value Alignment](../../伦理安全/Value_Alignment/Value_Alignment.md)
 
 ---
 
@@ -393,7 +393,7 @@ Constitutional AI 的已知挑战
    → Claude 4 引入了更细粒度的思考监控
 ```
 
-> **相关文档**: 关于 RLAIF 和其他价值对齐方法的对比分析，参见 [Value Alignment](../../17_Ethics_Safety/Value_Alignment/Value_Alignment.md)
+> **相关文档**: 关于 RLAIF 和其他价值对齐方法的对比分析，参见 [Value Alignment](../../伦理安全/Value_Alignment/Value_Alignment.md)
 
 ---
 
@@ -1633,9 +1633,9 @@ for block in response.content:
 
 ### AI 安全与对齐
 
-- [Value Alignment (价值对齐)](../../17_Ethics_Safety/Value_Alignment/Value_Alignment.md) — RLHF, DPO, RLAIF 等对齐方法的全面对比
-- [Safety Evaluation Framework](../../17_Ethics_Safety/Safety_Evaluation_Framework.md) — AI 安全评估框架
-- [Mechanistic Interpretability](../../17_Ethics_Safety/Mechanistic_Interpretability/) — 机械可解释性研究
+- [Value Alignment (价值对齐)](../../伦理安全/Value_Alignment/Value_Alignment.md) — RLHF, DPO, RLAIF 等对齐方法的全面对比
+- [Safety Evaluation Framework](../../伦理安全/Safety_Evaluation_Framework.md) — AI 安全评估框架
+- [Mechanistic Interpretability](../../伦理安全/Mechanistic_Interpretability/) — 机械可解释性研究
 
 ### 全球 LLM 生态
 

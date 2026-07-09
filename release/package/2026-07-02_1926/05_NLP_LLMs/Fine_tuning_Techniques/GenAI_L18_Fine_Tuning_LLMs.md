@@ -313,27 +313,27 @@ Unsloth 是一个开源框架，专注于简化和加速大型语言模型的微
 
 ## 扩展阅读
 
-- [[05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques|微调技术综述]]
-- [[05_NLP_LLMs/Fine_tuning_Techniques/Unsloth_Deep_Dive|Unsloth 深度指南]]
-- [[05_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026|PEFT 参数高效微调]]
-- [[05_NLP_LLMs/Fine_tuning_Techniques/Axolotl_Deep_Dive|Axolotl 深度指南]]
-- [[05_NLP_LLMs/Edge_LLM/Edge_LLM_Deep_Dive|边缘LLM深度指南]]
+- [[大模型/Fine_tuning_Techniques/Fine_tuning_Techniques|微调技术综述]]
+- [[大模型/Fine_tuning_Techniques/Unsloth_Deep_Dive|Unsloth 深度指南]]
+- [[大模型/Fine_tuning_Techniques/PEFT_2026|PEFT 参数高效微调]]
+- [[大模型/Fine_tuning_Techniques/Axolotl_Deep_Dive|Axolotl 深度指南]]
+- [[大模型/Edge_LLM/Edge_LLM_Deep_Dive|边缘LLM深度指南]]
 - [[90_Learn/courses/microsoft/microsoft_genai_for_beginners|Microsoft GenAI 入门课程]]
 
 ### 国产大模型微调实践
 
 中国开源模型在微调生态方面发展迅速，以下页面包含详细的微调代码与参数建议：
 
-- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/Qwen_Deep_Dive]] — 通义千问微调（官方提供 Qwen2.5 全系列 LoRA/QLoRA 配置）
-- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive]] — DeepSeek 微调（支持 vLLM + LoRA 热加载）
-- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/GLM_Zhipu_Deep_Dive]] — 智谱 GLM 微调（ChatGLM-6B 是国内最早支持低成本微调的模型）
-- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/Chinese_LLM_Training_Inference_Platforms]] — 训推平台实战（含 LLaMA-Factory/Unsloth/Axolotl 对比）
+- [[大模型/Chinese_LLM_Ecosystem/Qwen_Deep_Dive]] — 通义千问微调（官方提供 Qwen2.5 全系列 LoRA/QLoRA 配置）
+- [[大模型/Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive]] — DeepSeek 微调（支持 vLLM + LoRA 热加载）
+- [[大模型/Chinese_LLM_Ecosystem/GLM_Zhipu_Deep_Dive]] — 智谱 GLM 微调（ChatGLM-6B 是国内最早支持低成本微调的模型）
+- [[大模型/Chinese_LLM_Ecosystem/Chinese_LLM_Training_Inference_Platforms]] — 训推平台实战（含 LLaMA-Factory/Unsloth/Axolotl 对比）
 
 ## 课程导航
 
 | 上一课 | 下一课 |
 |--------|--------|
-| [[15_Agent_Production/GenAI_L17_AI_Agents|L17 AI代理]] | [[05_NLP_LLMs/Edge_LLM/GenAI_L19_Building_with_SLMs|L19 使用小型语言模型构建]] |
+| [[Agent/GenAI_L17_AI_Agents|L17 AI代理]] | [[大模型/Edge_LLM/GenAI_L19_Building_with_SLMs|L19 使用小型语言模型构建]] |
 
 ## Related
 

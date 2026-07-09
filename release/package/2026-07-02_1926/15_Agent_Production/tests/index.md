@@ -8,6 +8,6 @@ sources: []
 
 # Tests
 
-This page indexes the contents of `15_Agent_Production/tests`.
+This page indexes the contents of `Agent/tests`.
 
 *This directory is currently empty.*

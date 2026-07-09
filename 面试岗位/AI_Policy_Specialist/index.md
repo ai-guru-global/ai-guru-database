@@ -8,9 +8,9 @@ sources: []
 
 # AI Policy Specialist
 
-This page indexes the contents of `21_Interviews/AI_Policy_Specialist`.
+This page indexes the contents of `面试岗位/AI_Policy_Specialist`.
 
 ## Files
 
-- [[21_Interviews/AI_Policy_Specialist/AI_Policy_Specialist 2|AI Policy Specialist 2]]
-- [[21_Interviews/AI_Policy_Specialist/AI_Policy_Specialist|AI Policy Specialist]]
+- [[面试岗位/AI_Policy_Specialist/AI_Policy_Specialist 2|AI Policy Specialist 2]]
+- [[面试岗位/AI_Policy_Specialist/AI_Policy_Specialist|AI Policy Specialist]]

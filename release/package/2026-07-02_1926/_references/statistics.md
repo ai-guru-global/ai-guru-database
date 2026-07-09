@@ -85,8 +85,8 @@ Skill 的 A/B 测试能力通常需要以下统计支撑。
 
 ## Related
 
-- [[15_Agent_Production/Agent_Skills/README|Agent Skills]]
+- [[Agent/Agent_Skills/README|Agent Skills]]
 - [[_references/index|References Index]]
-- [[09_Testing/AB_Testing_AI_Systems|A/B Testing AI Systems]]
-- [[08_Model_Evaluation/Evaluation_Metrics|Evaluation Metrics]]
+- [[AI测试/AB_Testing_AI_Systems|A/B Testing AI Systems]]
+- [[模型评估/Evaluation_Metrics|Evaluation Metrics]]
 - Probability and Statistics

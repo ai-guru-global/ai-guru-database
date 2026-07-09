@@ -8,10 +8,10 @@ sources: []
 
 # Multimodal Vision
 
-This page indexes the contents of `04_Computer_Vision/Multimodal_Vision`.
+This page indexes the contents of `计算机视觉/Multimodal_Vision`.
 
 ## Files
 
-- [[04_Computer_Vision/Multimodal_Vision/CLIP_Deep_Dive|CLIP Deep Dive]]
-- [[04_Computer_Vision/Multimodal_Vision/Multimodal_Vision|Multimodal Vision]]
-- [[04_Computer_Vision/Multimodal_Vision/Multimodal_Vision_for_dummy|Multimodal Vision For Dummy]]
+- [[计算机视觉/Multimodal_Vision/CLIP_Deep_Dive|CLIP Deep Dive]]
+- [[计算机视觉/Multimodal_Vision/Multimodal_Vision|Multimodal Vision]]
+- [[计算机视觉/Multimodal_Vision/Multimodal_Vision_for_dummy|Multimodal Vision For Dummy]]

@@ -164,11 +164,11 @@ swift dpo \
 
 ## Related
 
-- [[12_Architecture_Infrastructure/AI_Stack_Production_Toolchain|AI Stack 生产工具链总览]]
-- [[12_Architecture_Infrastructure/AI_Stack_GPU_Monitoring_Guide|AI Stack GPU 监控指南]]
-- [[12_Architecture_Infrastructure/AI_Stack_Model_Management_Guide|AI Stack 模型下载与管理指南]]
-- [[07_Model_Training/Distributed_Training/Distributed_Training_2026|分布式训练 2026]]
-- [[07_Model_Training/Distributed_Training/HF_Accelerate_DeepSpeed_Guide|HF Accelerate & DeepSpeed 指南]]
-- [[07_Model_Training/Distributed_Training/ms_swift_Deep_Dive|ms-swift 深度解析]]
-- [[07_Model_Training/Monitoring/Training_Monitoring_2026|训练监控与实验追踪 2026]]
+- [[架构基建/AI_Stack_Production_Toolchain|AI Stack 生产工具链总览]]
+- [[架构基建/AI_Stack_GPU_Monitoring_Guide|AI Stack GPU 监控指南]]
+- [[架构基建/AI_Stack_Model_Management_Guide|AI Stack 模型下载与管理指南]]
+- [[模型训练/Distributed_Training/Distributed_Training_2026|分布式训练 2026]]
+- [[模型训练/Distributed_Training/HF_Accelerate_DeepSpeed_Guide|HF Accelerate & DeepSpeed 指南]]
+- [[模型训练/Distributed_Training/ms_swift_Deep_Dive|ms-swift 深度解析]]
+- [[模型训练/Monitoring/Training_Monitoring_2026|训练监控与实验追踪 2026]]
 - [[_concepts/distributed-parallelism|分布式并行策略]]

@@ -44,8 +44,8 @@ aliases:
   - **推理框架**：vLLM（当前最主流 LLM 推理引擎）、TensorRT-LLM、TGI (Text Generation Inference)
   - **量化 (Quantization)**：用更少的 bit 表示参数，大幅降低显存和加速推理
   - **批处理 (Batching)**：把多个请求合并推理，提高 GPU 利用率
-- **入门阅读**：[部署与推理入门](../../10_Deployment_Inference/Deployment_Inference_for_dummy.md)
-- **深入学习**：[推理速查](../../10_Deployment_Inference/Inference-in-nutshell.md)
+- **入门阅读**：[部署与推理入门](../../部署推理/Deployment_Inference_for_dummy.md)
+- **深入学习**：[推理速查](../../部署推理/Inference-in-nutshell.md)
 - **关联概念**：量化、vLLM、API 服务
 
 ### 2. RAG — 检索增强生成
@@ -63,8 +63,8 @@ aliases:
   4. **重排序 (Reranking)**：初步检索结果可能不够精准，用 Reranker 重新排序
   5. **混合检索**：结合向量相似度 + 关键词匹配（如 BM25）
 - **通俗类比**：RAG 像开卷考试——不是让考生背下所有知识，而是允许他翻书查资料再答题。
-- **入门阅读**：[RAG 系统入门](../../14_RAG_Systems/RAG_Systems_for_dummy.md)
-- **深入学习**：[RAG 速查](../../14_RAG_Systems/RAG-in-nutshell.md)
+- **入门阅读**：[RAG 系统入门](../../RAG系统/RAG_Systems_for_dummy.md)
+- **深入学习**：[RAG 速查](../../RAG系统/RAG-in-nutshell.md)
 - **关联概念**：向量数据库、Embedding、幻觉问题 (Hallucination)
 
 ### 3. 向量数据库 (Vector Database)
@@ -96,8 +96,8 @@ aliases:
   - **Zero-Shot CoT**："Let's think step by step" 触发推理
   - **System Prompt**：设定角色和行为约束
   - **结构化输出**：要求 JSON 格式，便于程序解析
-- **入门阅读**：[提示词工程](../../05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering_for_dummy.md)
-- **深入学习**：[提示词速查](../../05_NLP_LLMs/Prompt_Engineering/Prompt-Engineering-in-nutshell.md)
+- **入门阅读**：[提示词工程](../../大模型/Prompt_Engineering/Prompt_Engineering_for_dummy.md)
+- **深入学习**：[提示词速查](../../大模型/Prompt_Engineering/Prompt-Engineering-in-nutshell.md)
 - **关联概念**：LLM、In-Context Learning、Few-Shot
 
 ### 5. AI Agent — 智能体
@@ -115,8 +115,8 @@ aliases:
 
 - **Agent 架构框架**：LangGraph、AutoGen、CrewAI、Dify、Coze
 - **Agent 协议 (2026)**：MCP (Model Context Protocol)、A2A (Agent-to-Agent)、UCP (Universal Computer Protocol)
-- **入门阅读**：[AI Agent 入门](../../15_Agent_Production/Agent_Foundations/AI_Agents_for_dummy.md)
-- **深入学习**：[Agent 速查](../../15_Agent_Production/Agent_Foundations/Agent-in-nutshell.md)
+- **入门阅读**：[AI Agent 入门](../../Agent/Agent_Foundations/AI_Agents_for_dummy.md)
+- **深入学习**：[Agent 速查](../../Agent/Agent_Foundations/Agent-in-nutshell.md)
 - **关联概念**：Tool Use、ReAct、规划、多 Agent 系统
 
 ### 6. Tool Use / Function Calling
@@ -138,7 +138,7 @@ aliases:
 | API | 第三方服务（地图、天气、股票） |
 | 操作 | 发送邮件、操作 UI、控制机器人 |
 
-- **入门阅读**：[AI Agent 入门](../../15_Agent_Production/Agent_Foundations/AI_Agents_for_dummy.md) → "工具使用" 章节
+- **入门阅读**：[AI Agent 入门](../../Agent/Agent_Foundations/AI_Agents_for_dummy.md) → "工具使用" 章节
 - **关联概念**：Agent、Function Calling、MCP 协议
 
 ### 7. MLOps — 机器学习运维
@@ -154,7 +154,7 @@ aliases:
 ```
 
 - **关键工具**：MLflow（实验跟踪）、DVC（数据版本控制）、Feast（特征平台）、Kubernetes（模型服务）、Prometheus/Grafana（监控）
-- **入门阅读**：[MLOps 流水线](../../11_MLOps_Pipeline/MLOps_Pipeline_for_dummy.md)
+- **入门阅读**：[MLOps 流水线](../../MLOps/MLOps_Pipeline_for_dummy.md)
 - **关联概念**：CI/CD、模型版本管理、数据漂移、监控
 
 ### 8. AI 评估 (AI Evaluation)
@@ -172,8 +172,8 @@ aliases:
 | **成本 (Cost)** | 经济上是否可行 | 每千 Token 成本 |
 
 - **2026 新趋势**：Agent 评估框架（RAPS 模型：Reasoning/Accuracy/Performance/Safety）、自动化红队测试
-- **入门阅读**：[模型评估入门](../../08_Model_Evaluation/Model_Evaluation_for_dummy.md)
-- **深入学习**：[Agent 评估框架](../../15_Agent_Production/Agent_Evaluation/README.md)
+- **入门阅读**：[模型评估入门](../../模型评估/Model_Evaluation_for_dummy.md)
+- **深入学习**：[Agent 评估框架](../../Agent/Agent_Evaluation/README.md)
 - **关联概念**：Benchmark、红队测试、幻觉率
 
 ### 9. AI 工作流与编排 (AI Workflow & Orchestration)
@@ -194,7 +194,7 @@ aliases:
   - **DAG（有向无环图）**：线性流程，节点间有依赖关系
   - **状态机**：Agent 根据状态转换执行不同动作
   - **事件驱动**：外部事件触发工作流执行
-- **入门阅读**：[AI 工作流速查](../../15_Agent_Production/Agent_Workflow/Workflow-in-nutshell.md)
+- **入门阅读**：[AI 工作流速查](../../Agent/Agent_Workflow/Workflow-in-nutshell.md)
 - **关联概念**：Agent、LangGraph、Dify、容错处理
 
 ### 10. AI Gateway — AI 网关
@@ -214,7 +214,7 @@ aliases:
 | **日志与监控** | 追踪每次调用的质量、成本、延迟 |
 
 - **主流方案**：Portkey、Weights & Biases Inference、MLflow AI Gateway、自建（基于 Nginx/Kong + FastAPI）
-- **入门阅读**：[AI Gateway 速查](../../12_Architecture_Infrastructure/AI_Gateway/Gateway-in-nutshell.md)
+- **入门阅读**：[AI Gateway 速查](../../架构基建/AI_Gateway/Gateway-in-nutshell.md)
 - **关联概念**：API 网关、负载均衡、成本优化
 
 ---

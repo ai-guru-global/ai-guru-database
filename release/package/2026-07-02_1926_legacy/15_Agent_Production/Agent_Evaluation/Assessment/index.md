@@ -7,9 +7,9 @@ updated: 2026-07-02
 
 # Assessment
 
-This page indexes the contents of `15_Agent_Production/Agent_Evaluation/Assessment`.
+This page indexes the contents of `Agent/Agent_Evaluation/Assessment`.
 
 ## Files
 
-- [[15_Agent_Production/Agent_Evaluation/Assessment/Evaluation_Workflow|Evaluation Workflow]]
-- [[15_Agent_Production/Agent_Evaluation/Assessment/Production_Assessment|Production Assessment]]
+- [[Agent/Agent_Evaluation/Assessment/Evaluation_Workflow|Evaluation Workflow]]
+- [[Agent/Agent_Evaluation/Assessment/Production_Assessment|Production Assessment]]

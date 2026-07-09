@@ -48,7 +48,7 @@ God Tier Prompts 是一个社区驱动的提示词（Prompt）分享与投票平
   学原理      学方法      直接拿来用
 ```
 
-God Tier Prompts 处于"实践模板"端——适合**快速获得可用提示词**，但若要理解原理（为什么这样写有效），应结合知识库的 [[05_NLP_LLMs/Prompt_Engineering|提示词工程]] 系统学习。
+God Tier Prompts 处于"实践模板"端——适合**快速获得可用提示词**，但若要理解原理（为什么这样写有效），应结合知识库的 [[大模型/Prompt_Engineering|提示词工程]] 系统学习。
 
 ## 使用建议
 
@@ -67,6 +67,6 @@ God Tier Prompts 处于"实践模板"端——适合**快速获得可用提示�
 
 ## Related
 
-- [[05_NLP_LLMs/Prompt_Engineering|提示词工程]] — 系统学习提示词原理与方法
+- [[大模型/Prompt_Engineering|提示词工程]] — 系统学习提示词原理与方法
 - [[_references/prompt-engineering-nirdiamant|Prompt 工程技术大全]] — 综合技术参考
-- [[05_NLP_LLMs/Prompt_Engineering/README|God Tier Prompts 索引]] — 详细条目
+- [[大模型/Prompt_Engineering/README|God Tier Prompts 索引]] — 详细条目

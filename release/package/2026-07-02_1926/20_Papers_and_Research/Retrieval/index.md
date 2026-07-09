@@ -8,8 +8,8 @@ sources: []
 
 # Retrieval
 
-This page indexes the contents of `20_Papers_and_Research/Retrieval`.
+This page indexes the contents of `论文精读/Retrieval`.
 
 ## Files
 
-- [[20_Papers_and_Research/Retrieval/RAG_Deep_Dive|RAG Deep Dive]]
+- [[论文精读/Retrieval/RAG_Deep_Dive|RAG Deep Dive]]

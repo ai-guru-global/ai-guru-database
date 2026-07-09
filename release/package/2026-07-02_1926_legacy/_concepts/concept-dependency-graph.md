@@ -438,4 +438,4 @@ L1 数学基础 (深度)
 
 - [[_concepts/README|概念卡片索引]] — 所有概念卡片列表
 - [[90_Learn/concepts/stage0_awakening|学习路径 Stage 0-4]] — 按阶段的学习路径
-- [[20_Papers_and_Research/README|论文清单]] — 论文与概念的关联
+- [[论文精读/README|论文清单]] — 论文与概念的关联

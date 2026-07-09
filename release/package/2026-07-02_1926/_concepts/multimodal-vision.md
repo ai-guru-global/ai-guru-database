@@ -12,7 +12,7 @@ relationships:
     type: related_to
 sources:
   - 05_computer-vision_Vision/Multimodal_Vision/Multimodal_Vision.md
-  - 04_Computer_Vision/Multimodal_Vision/CLIP_deep-reinforcement-learning_Dive.md
+  - 计算机视觉/Multimodal_Vision/CLIP_deep-reinforcement-learning_Dive.md
 summary: '多模态视觉连接视觉和语言，CLIP实现零样本分类，LLaVA将视觉注入LLM，开启视觉问答和推理时代。'
 provenance:
   extracted: '0.80'
@@ -80,13 +80,13 @@ CLIP的对比学习范式催生了大量衍生工作：OpenCLIP在大规模LAION
 
 ## 来源
 
-- 04_Computer_Vision/Multimodal_Vision/Multimodal_Vision.md
-- 04_Computer_Vision/Multimodal_Vision/CLIP_Deep_Dive.md
+- 计算机视觉/Multimodal_Vision/Multimodal_Vision.md
+- 计算机视觉/Multimodal_Vision/CLIP_Deep_Dive.md
 
 ## Related
 
 - [[_concepts/computer-vision.md|computer-vision]]
 - [[_concepts/generative-vision-models.md|generative-vision-models]]
 - [[_concepts/object-detection.md|object-detection]]
-- [[04_Computer_Vision/3D_Vision/3D_Vision.md|3D_Vision]]
-- [[04_Computer_Vision/3D_Vision/3D_Vision_for_dummy.md|3D_Vision_for_dummy]]
+- [[计算机视觉/3D_Vision/3D_Vision.md|3D_Vision]]
+- [[计算机视觉/3D_Vision/3D_Vision_for_dummy.md|3D_Vision_for_dummy]]

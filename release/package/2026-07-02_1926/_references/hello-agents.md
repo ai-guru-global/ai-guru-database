@@ -62,7 +62,7 @@ aliases:
 
 - [[90_Learn/courses/other/hello_agents]] — 本库完整课程映射与章节链接
 - [[_references/ai-agents-for-beginners]] — Microsoft AI Agents for Beginners 引用索引
-- [[15_Agent_Production/Agent_Frameworks/AutoGen_Deep_Dive]] — AutoGen 深度解析
-- [[15_Agent_Production/Agent_Protocols/A2A_Protocol_Deep_Dive]] — A2A 协议深度解析
-- [[14_RAG_Systems/RAG_Systems]] — RAG 系统总览
-- [[07_Model_Training/Alignment/GRPO_and_New_Alignment_Methods]] — GRPO 与新对齐方法
+- [[Agent/Agent_Frameworks/AutoGen_Deep_Dive]] — AutoGen 深度解析
+- [[Agent/Agent_Protocols/A2A_Protocol_Deep_Dive]] — A2A 协议深度解析
+- [[RAG系统/RAG_Systems]] — RAG 系统总览
+- [[模型训练/Alignment/GRPO_and_New_Alignment_Methods]] — GRPO 与新对齐方法

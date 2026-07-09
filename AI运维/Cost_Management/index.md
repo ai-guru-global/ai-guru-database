@@ -8,11 +8,11 @@ sources: []
 
 # Cost Management
 
-This page indexes the contents of `13_AI_Ops/Cost_Management`.
+This page indexes the contents of `AI运维/Cost_Management`.
 
 ## Files
 
-- [[13_AI_Ops/Cost_Management/FinOps_for_AI 2|Finops For AI 2]]
-- [[13_AI_Ops/Cost_Management/FinOps_for_AI|Finops For AI]]
-- [[13_AI_Ops/Cost_Management/GPU_Cost_Optimization 2|GPU Cost Optimization 2]]
-- [[13_AI_Ops/Cost_Management/GPU_Cost_Optimization|GPU Cost Optimization]]
+- [[AI运维/Cost_Management/FinOps_for_AI 2|Finops For AI 2]]
+- [[AI运维/Cost_Management/FinOps_for_AI|Finops For AI]]
+- [[AI运维/Cost_Management/GPU_Cost_Optimization 2|GPU Cost Optimization 2]]
+- [[AI运维/Cost_Management/GPU_Cost_Optimization|GPU Cost Optimization]]

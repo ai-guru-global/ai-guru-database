@@ -21,7 +21,7 @@ sources: []
 
 - **StatQuest YouTube 频道**: 200+ 视频，覆盖统计学→机器学习→深度学习全链路
 - **Statistics Fundamentals**: 假设检验、p-value、置信区间、贝叶斯统计的直觉讲解，被全球高校引用
-- **Machine Learning 系列**: PCA、SVM、Random Forest、XGBoost 的逐步动画拆解，是理解 [[02_Machine_Learning/README|02_Machine_Learning]] 章节的最佳视频伴侣
+- **Machine Learning 系列**: PCA、SVM、Random Forest、XGBoost 的逐步动画拆解，是理解 [[机器学习/README|机器学习]] 章节的最佳视频伴侣
 - **Deep Learning 系列**: 神经网络、CNN、RNN、Transformer、Attention 的可视化讲解
 - **StatQuest+**: 付费进阶平台，提供系统化学习路径和练习
 
@@ -29,11 +29,11 @@ sources: []
 
 | 系列 | 对应知识库章节 | 学习价值 |
 |------|---------------|---------|
-| Statistics Fundamentals | [[01_Fundamentals/Probability_Statistics]] | p-value/贝叶斯/假设检验 |
-| PCA / SVD | [[01_Fundamentals/Linear_Algebra]] | 降维与特征分解 |
-| ML Algorithms | [[02_Machine_Learning/README|02_Machine_Learning]] | SVM/RF/XGBoost 直觉理解 |
-| Neural Networks | [[03_Deep_Learning/Neural_Network_Core]] | 反向传播与梯度 |
-| Transformers/Attention | [[05_NLP_LLMs/Transformer_Revolution]] | 注意力机制拆解 |
+| Statistics Fundamentals | [[数学基础/Probability_Statistics]] | p-value/贝叶斯/假设检验 |
+| PCA / SVD | [[数学基础/Linear_Algebra]] | 降维与特征分解 |
+| ML Algorithms | [[机器学习/README|机器学习]] | SVM/RF/XGBoost 直觉理解 |
+| Neural Networks | [[深度学习/Neural_Network_Core]] | 反向传播与梯度 |
+| Transformers/Attention | [[大模型/Transformer_Revolution]] | 注意力机制拆解 |
 
 ## 技术观点
 
@@ -76,13 +76,13 @@ sources: []
 
 ## 相关文档
 
-- [[19_Talks/Josh_Starmer/youtube_channel]] — StatQuest 必看系列
-- [[01_Fundamentals/Probability_Statistics]] — 概率统计知识库
-- [[02_Machine_Learning/README|02_Machine_Learning]] — 机器学习知识库
+- [[业界观点/Josh_Starmer/youtube_channel]] — StatQuest 必看系列
+- [[数学基础/Probability_Statistics]] — 概率统计知识库
+- [[机器学习/README|机器学习]] — 机器学习知识库
 - [[90_Learn/Courses/other/statquest.md]] — StatQuest 课程笔记
 
 ---
 
 *Last updated: 2026-06-24*
 
-- [[19_Talks/README|AI 名人演讲与观点 (Talks)]]
+- [[业界观点/README|AI 名人演讲与观点 (Talks)]]

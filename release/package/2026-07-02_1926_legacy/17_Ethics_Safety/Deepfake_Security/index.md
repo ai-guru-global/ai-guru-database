@@ -7,9 +7,9 @@ updated: 2026-07-02
 
 # Deepfake Security
 
-This page indexes the contents of `17_Ethics_Safety/Deepfake_Security`.
+This page indexes the contents of `伦理安全/Deepfake_Security`.
 
 ## Files
 
-- [[17_Ethics_Safety/Deepfake_Security/Deepfake_Security|Deepfake Security]]
-- [[17_Ethics_Safety/Deepfake_Security/Deepfake_Security_for_dummy|Deepfake Security For Dummy]]
+- [[伦理安全/Deepfake_Security/Deepfake_Security|Deepfake Security]]
+- [[伦理安全/Deepfake_Security/Deepfake_Security_for_dummy|Deepfake Security For Dummy]]

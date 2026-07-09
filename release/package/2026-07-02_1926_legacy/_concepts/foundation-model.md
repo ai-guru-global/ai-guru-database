@@ -14,8 +14,8 @@ relationships:
   - target: "_concepts/gemini"
     type: example
 sources:
-  - 12_Architecture_Infrastructure/AWS_Bedrock_Deep_Dive.md
-  - 05_NLP_LLMs/Global_LLM_Ecosystem/
+  - 架构基建/AWS_Bedrock_Deep_Dive.md
+  - 大模型/Global_LLM_Ecosystem/
 summary: "Foundation Model（基础模型）是大规模预训练、可适配多种下游任务的通用模型（如 GPT-5 / Claude Opus 4.8 / Gemini 3 / Llama 4），是当前 LLM 产业的核心资产。"
 lifecycle: stable
 tier: core
@@ -99,4 +99,4 @@ Foundation Model（基础模型）
 - [[_concepts/aws-bedrock]] — AWS Bedrock
 - [[_concepts/openai]] — OpenAI
 - [[_concepts/gemini]] — Gemini
-- [[12_Architecture_Infrastructure/AWS_Bedrock_Deep_Dive]] — Bedrock 深度
+- [[架构基建/AWS_Bedrock_Deep_Dive]] — Bedrock 深度

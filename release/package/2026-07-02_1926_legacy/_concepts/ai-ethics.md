@@ -10,7 +10,7 @@ relationships:
     type: related_to
   - target: "_concepts/ai-history"
     type: related_to
-sources: [00_AI_Introduction/AI_Ethics_Society.md]
+sources: [AI入门/AI_Ethics_Society.md]
 summary: AI伦理涵盖算法偏见、隐私保护、就业影响、安全可控和全球治理等核心议题，需要在技术进步与社会价值之间寻找平衡。
 provenance:
   extracted: 0.80
@@ -155,7 +155,7 @@ AI对就业的三重效应：
 
 ## 来源
 
-- _references/00_AI_Introduction/AI_Ethics_Society
+- _references/AI入门/AI_Ethics_Society
 
 ## Related
 

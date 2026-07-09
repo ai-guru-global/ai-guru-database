@@ -103,15 +103,15 @@ def train(positive_examples, negative_examples, num_iterations=100, eta=1):
 
 - **不覆盖**：
   - 多层网络与非线性激活函数（Sigmoid、ReLU 等）→ 见 L04「多层感知器」。
-  - 反向传播（Backpropagation）→ 见 L04 及本库 [[03_Deep_Learning/Neural_Network_Core/Neural_Network_Core]]。
+  - 反向传播（Backpropagation）→ 见 L04 及本库 [[深度学习/Neural_Network_Core/Neural_Network_Core]]。
   - 优化器、批量训练、正则化 → 见 L05「框架简介及过拟合」。
 - **延伸**：
   - 想深入理解感知器的局限与历史，可阅读 [Towards Data Science：What is a Perceptron?](https://towardsdatascience.com/what-is-a-perceptron-basics-of-neural-networks-c4cfea20c590)。
-  - 完成本课后，建议立即配合本库 [[03_Deep_Learning/Neural_Network_Core/Your_First_Neural_Network]] 动手写一个完整训练脚本。
+  - 完成本课后，建议立即配合本库 [[深度学习/Neural_Network_Core/Your_First_Neural_Network]] 动手写一个完整训练脚本。
 
 ## 相关阅读
 
 - 课程索引：[[90_Learn/courses/microsoft/microsoft_ai_for_beginners]]
 - 本库相关页面：
-  - [[03_Deep_Learning/Neural_Network_Core/Neural_Network_Core]]
-  - [[03_Deep_Learning/Neural_Network_Core/Your_First_Neural_Network]]
+  - [[深度学习/Neural_Network_Core/Neural_Network_Core]]
+  - [[深度学习/Neural_Network_Core/Your_First_Neural_Network]]

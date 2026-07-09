@@ -8,11 +8,11 @@ sources: []
 
 # Cost
 
-This page indexes the contents of `11_MLOps_Pipeline/Cost`.
+This page indexes the contents of `MLOps/Cost`.
 
 ## Files
 
-- [[11_MLOps_Pipeline/Cost/Cost_Optimization_MLOps 2|Cost Optimization Mlops 2]]
-- [[11_MLOps_Pipeline/Cost/Cost_Optimization_MLOps|Cost Optimization Mlops]]
-- [[11_MLOps_Pipeline/Cost/LLM_Cost_Latency_SLO 2|LLM Cost Latency SLO 2]]
-- [[11_MLOps_Pipeline/Cost/LLM_Cost_Latency_SLO|LLM Cost Latency SLO]]
+- [[MLOps/Cost/Cost_Optimization_MLOps 2|Cost Optimization Mlops 2]]
+- [[MLOps/Cost/Cost_Optimization_MLOps|Cost Optimization Mlops]]
+- [[MLOps/Cost/LLM_Cost_Latency_SLO 2|LLM Cost Latency SLO 2]]
+- [[MLOps/Cost/LLM_Cost_Latency_SLO|LLM Cost Latency SLO]]

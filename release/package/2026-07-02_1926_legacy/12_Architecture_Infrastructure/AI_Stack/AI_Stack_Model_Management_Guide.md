@@ -138,9 +138,9 @@ git lfs ls-files
 
 ## Related
 
-- [[12_Architecture_Infrastructure/AI_Stack_Production_Toolchain|AI Stack 生产工具链总览]]
-- [[12_Architecture_Infrastructure/AI_Stack_Inference_Serving_Guide|AI Stack 推理服务指南]]
-- [[12_Architecture_Infrastructure/AI_Stack_Training_Launchers_Guide|AI Stack 训练启动器指南]]
-- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/README|中国大模型生态]]
-- [[07_Model_Training/Distributed_Training/ms_swift_Deep_Dive|ms-swift 深度解析]]
+- [[架构基建/AI_Stack_Production_Toolchain|AI Stack 生产工具链总览]]
+- [[架构基建/AI_Stack_Inference_Serving_Guide|AI Stack 推理服务指南]]
+- [[架构基建/AI_Stack_Training_Launchers_Guide|AI Stack 训练启动器指南]]
+- [[大模型/Chinese_LLM_Ecosystem/README|中国大模型生态]]
+- [[模型训练/Distributed_Training/ms_swift_Deep_Dive|ms-swift 深度解析]]
 - [[_concepts/model-deployment|LLM 部署]]

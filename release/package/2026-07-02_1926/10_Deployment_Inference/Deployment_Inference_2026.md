@@ -1197,18 +1197,18 @@ kubectl logs -f deployment/vllm-deployment -n llm
 
 ### 相关文档
 
-- [vLLM 深度解析](10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive.md)
-- [TensorRT-LLM 深度解析](10_Deployment_Inference/Inference_Engines/TensorRT_LLM_Deep_Dive.md)
-- [Ollama 深度解析](10_Deployment_Inference/Inference_Engines/Ollama_Deep_Dive.md)
-- [llama.cpp 深度解析](10_Deployment_Inference/Inference_Engines/llama_cpp_Deep_Dive.md)
-- [AI Gateway 对比 2026](12_Architecture_Infrastructure/AI_Gateway/AI_Gateway_Comparison_2026.md)
+- [vLLM 深度解析](部署推理/Inference_Engines/vLLM_Deep_Dive.md)
+- [TensorRT-LLM 深度解析](部署推理/Inference_Engines/TensorRT_LLM_Deep_Dive.md)
+- [Ollama 深度解析](部署推理/Inference_Engines/Ollama_Deep_Dive.md)
+- [llama.cpp 深度解析](部署推理/Inference_Engines/llama_cpp_Deep_Dive.md)
+- [AI Gateway 对比 2026](架构基建/AI_Gateway/AI_Gateway_Comparison_2026.md)
 - [API 设计 for AI](93_Templates/API_Design_for_AI.md)
 
 ## Related
 
-- [[10_Deployment_Inference/Deployment_Inference]] — 模型部署与推理加速 (Deployment & Inference) (共享: deployment, inference, model-deployment, serving, vllm)
-- [[10_Deployment_Inference/Deployment_Inference_for_dummy]] — 模型部署与推理加速 - 小白版 (共享: deployment, inference, model-deployment, serving, vllm)
-- [[10_Deployment_Inference/Inference_Engines/JVM_AI_Deployment]] — JVM AI 部署与推理 (共享: deployment, inference, model-deployment, serving, vllm)
-- [[10_Deployment_Inference/Inference-in-nutshell]] — 模型推理速成指南 (共享: deployment, inference, serving, vllm)
-- [[10_Deployment_Inference/Inference_Engines/LMDeploy_Deep_Dive.md|LMDeploy_Deep_Dive]]
-- [[10_Deployment_Inference/README.md|README]]
+- [[部署推理/Deployment_Inference]] — 模型部署与推理加速 (Deployment & Inference) (共享: deployment, inference, model-deployment, serving, vllm)
+- [[部署推理/Deployment_Inference_for_dummy]] — 模型部署与推理加速 - 小白版 (共享: deployment, inference, model-deployment, serving, vllm)
+- [[部署推理/Inference_Engines/JVM_AI_Deployment]] — JVM AI 部署与推理 (共享: deployment, inference, model-deployment, serving, vllm)
+- [[部署推理/Inference-in-nutshell]] — 模型推理速成指南 (共享: deployment, inference, serving, vllm)
+- [[部署推理/Inference_Engines/LMDeploy_Deep_Dive.md|LMDeploy_Deep_Dive]]
+- [[部署推理/README.md|README]]

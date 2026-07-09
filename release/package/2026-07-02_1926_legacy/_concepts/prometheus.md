@@ -10,7 +10,7 @@ relationships:
   - target: "_concepts/kubernetes"
     type: runs_on
 sources:
-  - 11_MLOps_Pipeline/Observability/Prometheus_Grafana_Deep_Dive.md
+  - MLOps/Observability/Prometheus_Grafana_Deep_Dive.md
 summary: "Prometheus 是 CNCF Graduated 的开源监控与告警系统，以拉取模式采集时序指标，广泛应用于 Kubernetes、AI 训练和推理服务的可观测。"
 provenance:
   extracted: 0.8
@@ -87,7 +87,7 @@ Prometheus Server
 
 ## Related
 
-- [[11_MLOps_Pipeline/Observability/Prometheus_Grafana_Deep_Dive]] — Prometheus + Grafana 深度解析
+- [[MLOps/Observability/Prometheus_Grafana_Deep_Dive]] — Prometheus + Grafana 深度解析
 - [[_concepts/grafana]] — Grafana 可视化平台
 - [[_concepts/observability]] — 可观测性
-- [[13_AI_Ops/AI_Observability_Guide_2026]] — AI 可观测指南 2026
+- [[AI运维/AI_Observability_Guide_2026]] — AI 可观测指南 2026

@@ -86,9 +86,9 @@ AI 工程师（AI Engineer）是介于 ML 研究员和软件工程师之间的�
     └── 输出格式控制
 
 推荐资源:
-  - [[00_AI_Introduction/AI_Fundamentals_for_dummy]]
-  - [[01_Fundamentals/Python_for_AI_Basics]]
-  - [[05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering_for_dummy]]
+  - [[AI入门/AI_Fundamentals_for_dummy]]
+  - [[数学基础/Python_for_AI_Basics]]
+  - [[大模型/Prompt_Engineering/Prompt_Engineering_for_dummy]]
   - DeepLearning.AI 短课程
 ```
 
@@ -121,10 +121,10 @@ AI 工程师（AI Engineer）是介于 ML 研究员和软件工程师之间的�
     └── 部署到生产环境
 
 推荐资源:
-  - [[14_RAG_Systems/RAG_Systems_for_dummy]]
+  - [[RAG系统/RAG_Systems_for_dummy]]
   - Agent Foundations
   - Agent Frameworks
-  - [[05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques_for_dummy]]
+  - [[大模型/Fine_tuning_Techniques/Fine_tuning_Techniques_for_dummy]]
 ```
 
 ### 阶段 3: 工程深化 (3-6 个月)
@@ -156,10 +156,10 @@ AI 工程师（AI Engineer）是介于 ML 研究员和软件工程师之间的�
     └── 优化系统性能和成本
 
 推荐资源:
-  - [[10_Deployment_Inference/Deployment_Inference_for_dummy]]
-  - [[11_MLOps_Pipeline/MLOps_Pipeline_for_dummy]]
-  - [[17_Ethics_Safety/Agent_Security_Ethics_AGI]]
-  - [[12_Architecture_Infrastructure/Architecture_Infrastructure_for_dummy]]
+  - [[部署推理/Deployment_Inference_for_dummy]]
+  - [[MLOps/MLOps_Pipeline_for_dummy]]
+  - [[伦理安全/Agent_Security_Ethics_AGI]]
+  - [[架构基建/Architecture_Infrastructure_for_dummy]]
 ```
 
 ### 阶段 4: 高级专家 (6-12 个月)
@@ -311,5 +311,5 @@ AI 基础:
 - [[90_Learn/pathways/ml-practitioner]] — ML 实践者路径
 - [[90_Learn/guides/ai_engineering_roadmap_2026]] — AI 工程路线图
 - [[90_Learn/guides/learning_paths_2026]] — 学习路径 2026
-- [[21_Interviews/AI_Product_Manager//index]] — AI 产品经理面试
-- [[21_Interviews/Machine_Learning_Engineer//index]] — ML 工程师面试
+- [[面试岗位/AI_Product_Manager//index]] — AI 产品经理面试
+- [[面试岗位/Machine_Learning_Engineer//index]] — ML 工程师面试

@@ -8,9 +8,9 @@ sources: []
 
 # Benchmarking
 
-This page indexes the contents of `15_Agent_Production/Agent_Evaluation/Benchmarking`.
+This page indexes the contents of `Agent/Agent_Evaluation/Benchmarking`.
 
 ## Files
 
-- [[15_Agent_Production/Agent_Evaluation/Benchmarking/Benchmarking_Criteria|Benchmarking Criteria]]
-- [[15_Agent_Production/Agent_Evaluation/Benchmarking/Scoring_System|Scoring System]]
+- [[Agent/Agent_Evaluation/Benchmarking/Benchmarking_Criteria|Benchmarking Criteria]]
+- [[Agent/Agent_Evaluation/Benchmarking/Scoring_System|Scoring System]]

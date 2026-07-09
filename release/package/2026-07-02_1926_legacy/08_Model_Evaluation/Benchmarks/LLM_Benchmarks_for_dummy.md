@@ -173,5 +173,5 @@ A/B 测试框架就像一场“公平对决”：随机抽一群人用新产品�
 - [[_concepts/ci-integrated-evaluation|CI 集成评估]]
 - [[_concepts/ab-testing-framework|A/B 测试框架]]
 - [[_concepts/model-evaluation|模型评估]]
-- [[08_Model_Evaluation/Benchmarks/LLM_Benchmark_Suite_2026|LLM 基准套件 2026]]
-- [[08_Model_Evaluation/Evaluation_Automation_2026|评估自动化 2026]]
+- [[模型评估/Benchmarks/LLM_Benchmark_Suite_2026|LLM 基准套件 2026]]
+- [[模型评估/Evaluation_Automation_2026|评估自动化 2026]]

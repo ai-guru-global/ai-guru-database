@@ -478,7 +478,7 @@ ChatGPT: "抱歉,我不能提供非法活动的指导。
 
 - **前置知识**: [大语言模型架构 (小白版)](../LLM_Architectures/LLM_Architectures_for_dummy.md)
 - **替代方案**: [提示词工程 (小白版)](../Prompt_Engineering/Prompt_Engineering_for_dummy.md)
-- **进阶应用**: [RAG 系统 (小白版)](../../14_RAG_Systems/RAG_Systems_for_dummy.md)
+- **进阶应用**: [RAG 系统 (小白版)](../../RAG系统/RAG_Systems_for_dummy.md)
 
 ---
 

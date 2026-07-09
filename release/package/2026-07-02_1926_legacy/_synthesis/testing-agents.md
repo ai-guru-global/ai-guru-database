@@ -3,10 +3,10 @@ title: "测试 × Agent: 非确定性系统的测试方法论冲突"
 category: -synthesis
 tags: ["testing", "ai-agents", "agent-evaluation", "deterministic-testing", "llm-as-judge", "synthesis"]
 sources:
-  - "09_Testing/AI_Test_Framework_2026"
-  - "15_Agent_Production/Agent_Evaluation/Testing_Methodologies/Testing_Framework"
-  - "09_Testing/AI-Testing-in-nutshell.md"
-  - "15_Agent_Production/Agent_Evaluation/Agent_Evaluation_Guide"
+  - "AI测试/AI_Test_Framework_2026"
+  - "Agent/Agent_Evaluation/Testing_Methodologies/Testing_Framework"
+  - "AI测试/AI-Testing-in-nutshell.md"
+  - "Agent/Agent_Evaluation/Agent_Evaluation_Guide"
 created: 2026-06-30
 updated: 2026-06-30
 summary: "传统测试依赖确定性断言（assert expected == actual），但 Agent 系统的输出是概率性的——测试方法论必须从'正确性验证'转向'行为边界验证'和'统计质量保障'。"
@@ -130,8 +130,8 @@ class AgentBoundaryTests:
 
 ## Related
 
-- [[09_Testing/AI_Test_Framework_2026]]
-- [[15_Agent_Production/Agent_Evaluation/Testing_Methodologies/Testing_Framework]]
-- [[09_Testing/AI-Testing-in-nutshell.md]]
-- [[15_Agent_Production/Agent_Evaluation/Agent_Evaluation_Guide]]
+- [[AI测试/AI_Test_Framework_2026]]
+- [[Agent/Agent_Evaluation/Testing_Methodologies/Testing_Framework]]
+- [[AI测试/AI-Testing-in-nutshell.md]]
+- [[Agent/Agent_Evaluation/Agent_Evaluation_Guide]]
 - [[_synthesis/agent-evaluation-model-evaluation]]

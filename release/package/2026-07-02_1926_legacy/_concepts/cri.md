@@ -85,4 +85,4 @@ runc / crun (实际容器进程)
 ## Related
 
 - [[_concepts/containerd]] — containerd（CRI 主流实现）
-- [[12_Architecture_Infrastructure/AI_Stack_Container_Runtime_Guide]] — 容器运行时实践
+- [[架构基建/AI_Stack_Container_Runtime_Guide]] — 容器运行时实践

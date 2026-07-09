@@ -7,8 +7,8 @@ updated: 2026-07-02
 
 # Methodology
 
-This page indexes the contents of `20_Papers_and_Research/Methodology`.
+This page indexes the contents of `论文精读/Methodology`.
 
 ## Subdirectories
 
-- [[20_Papers_and_Research/Methodology/LLM_Inference_Research/index|LLM Inference Research]]
+- [[论文精读/Methodology/LLM_Inference_Research/index|LLM Inference Research]]

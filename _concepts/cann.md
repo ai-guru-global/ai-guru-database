@@ -37,4 +37,4 @@ sources: []
 
 - [[_concepts/ascend-npu|Ascend NPU]]
 - [[_concepts/mindie|MindIE]]
-- [[10_Deployment_Inference/Hardware/Ascend_NPU_Inference_Guide|昇腾 NPU LLM 推理部署指南]]
+- [[部署推理/Hardware/Ascend_NPU_Inference_Guide|昇腾 NPU LLM 推理部署指南]]

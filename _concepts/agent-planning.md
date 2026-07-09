@@ -12,8 +12,8 @@ relationships:
   - target: "_concepts/reasoning-models"
     type: benefits_from
 sources:
-  - 15_Agent_Production/Agent_Foundations/AI_Agents.md
-  - 15_Agent_Production/README.md
+  - Agent/Agent_Foundations/AI_Agents.md
+  - Agent/README.md
 summary: "Agent 规划是把复杂任务拆解为可执行子步骤的能力。从 ReAct 的'边想边做'到 Plan-and-Execute 的'先规划再执行'再到 ReWOO 的'一次性规划'，规划质量直接决定 Agent 能否完成多步任务。"
 provenance:
   extracted: 0.7
@@ -88,4 +88,4 @@ ReWOO（一次规划，工具填充）：
 - [[_concepts/agent-loop|Agent Loop]] — 规划后的执行循环
 - [[_concepts/agent-reflection|Agent 反思]] — 规划失败时的自我修正
 - [[_concepts/reasoning-models|推理模型]] — 内化规划的新范式
-- [[15_Agent_Production/Agent_Foundations/AI_Agents|AI Agents 详解]]
+- [[Agent/Agent_Foundations/AI_Agents|AI Agents 详解]]

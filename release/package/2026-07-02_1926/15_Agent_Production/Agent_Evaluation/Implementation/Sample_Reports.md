@@ -1027,11 +1027,11 @@ R (风险安全):   {agent_name} — 分
 - [Cloud Agent Evaluation](../Cloud_Agent_Evaluation/README.md) - 云 Agent 评估框架
 - [LLM as Judge Templates](./LLM_as_Judge_Templates.md) - LLM 评估提示词模板
 - [Corpus Assessment](../Corpus_Assessment/README.md) - 语料库评估框架
-- [[15_Agent_Production/Agent_Evaluation/Cloud_Agent_Evaluation/DevOps_Agent_Benchmark.md|DevOps_Agent_Benchmark]]
+- [[Agent/Agent_Evaluation/Cloud_Agent_Evaluation/DevOps_Agent_Benchmark.md|DevOps_Agent_Benchmark]]
 
 ## Related
 
-- [[15_Agent_Production/Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
-- [[15_Agent_Production/Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
-- [[15_Agent_Production/Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
-- [[15_Agent_Production/Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)
+- [[Agent/Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
+- [[Agent/Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[Agent/Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[Agent/Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)

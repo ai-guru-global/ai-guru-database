@@ -50,4 +50,4 @@ relationships:
 - [[_concepts/pandera|Pandera]]
 - [[_concepts/evidently|Evidently]]
 - [[_concepts/mlops|MLOps]]
-- [[11_MLOps_Pipeline/Troubleshooting/Data_Validation_Failure_Runbook|数据验证失败 Runbook]]
+- [[MLOps/Troubleshooting/Data_Validation_Failure_Runbook|数据验证失败 Runbook]]

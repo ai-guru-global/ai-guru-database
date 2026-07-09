@@ -20,8 +20,8 @@ tier: supporting
 | [PEFT_2026](./PEFT_2026.md) | PEFT 2026 最佳实践 | 实战学习 |
 | [Unsloth Deep Dive](./Unsloth_Deep_Dive.md) | 高速微调框架：2x 加速、24GB 单卡 | 快速实验 |
 | [Axolotl Deep Dive](./Axolotl_Deep_Dive.md) | 开源微调工具：全参数/LoRA/QLoRA 支持 | 生产微调 |
-| [**ms-swift Deep Dive**](../../07_Model_Training/Distributed_Training/ms_swift_Deep_Dive.md) | 魔搭全链路框架：SFT/GRPO/RLHF/Megatron/部署/评测 | 全链路实战 |
-| [**ms-swift 命令行参数**](../../07_Model_Training/Distributed_Training/ms_swift_Command_Line_Parameters.md) | 200+参数全量速查手册 | 参数手册 |
+| [**ms-swift Deep Dive**](../../模型训练/Distributed_Training/ms_swift_Deep_Dive.md) | 魔搭全链路框架：SFT/GRPO/RLHF/Megatron/部署/评测 | 全链路实战 |
+| [**ms-swift 命令行参数**](../../模型训练/Distributed_Training/ms_swift_Command_Line_Parameters.md) | 200+参数全量速查手册 | 参数手册 |
 
 ## 内容概览
 
@@ -59,14 +59,14 @@ PEFT (参数高效微调):
 
 ## Related
 
-- [[05_NLP_LLMs/Fine_tuning_Techniques/LoRA_QLoRA_SFT_RLHF_DPO_in_Detail]] — LoRA / QLoRA / SFT / RLHF / DPO 大白话详解与实战
+- [[大模型/Fine_tuning_Techniques/LoRA_QLoRA_SFT_RLHF_DPO_in_Detail]] — LoRA / QLoRA / SFT / RLHF / DPO 大白话详解与实战
 - [[_concepts/lora-qlora-sft-rlhf-dpo]] — 概念卡片：LoRA / QLoRA / SFT / RLHF / DPO 大白话串讲
-- [[05_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026]] — PEFT 2026 (参数高效微调) (共享: bert, gpt, llm, nlp, transformer)
-- [[05_NLP_LLMs/LLM_Architectures/LLM-Basics-in-nutshell]] — 大语言模型基础速成指南 (共享: bert, gpt, llm, nlp, transformer)
-- [[05_NLP_LLMs/Multimodal_Models/Multimodal_Architectures_2026]] — 多模态模型架构 2026：从 GPT-4V 到原生多模态 AGI (共享: bert, gpt, llm, nlp, transformer)
-- [[05_NLP_LLMs/Prompt_Engineering/Prompt-Engineering-in-nutshell]] — Prompt Engineering 速成指南 (共享: bert, gpt, llm, nlp, transformer)
-- [[05_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026]] — PEFT_2026
-- [[07_Model_Training/Distributed_Training/ms_swift_Deep_Dive|ms-swift 深度解析：魔搭大模型训练推理全链路框架]]
-- [[07_Model_Training/Distributed_Training/ms_swift_Command_Line_Parameters|ms-swift 命令行参数完全参考手册]]
-- [[05_NLP_LLMs/README_for_dummy.md|README_for_dummy]]
-- [[05_NLP_LLMs/Sequence_Models/Sequence_Models.md|Sequence_Models]]
+- [[大模型/Fine_tuning_Techniques/PEFT_2026]] — PEFT 2026 (参数高效微调) (共享: bert, gpt, llm, nlp, transformer)
+- [[大模型/LLM_Architectures/LLM-Basics-in-nutshell]] — 大语言模型基础速成指南 (共享: bert, gpt, llm, nlp, transformer)
+- [[大模型/Multimodal_Models/Multimodal_Architectures_2026]] — 多模态模型架构 2026：从 GPT-4V 到原生多模态 AGI (共享: bert, gpt, llm, nlp, transformer)
+- [[大模型/Prompt_Engineering/Prompt-Engineering-in-nutshell]] — Prompt Engineering 速成指南 (共享: bert, gpt, llm, nlp, transformer)
+- [[大模型/Fine_tuning_Techniques/PEFT_2026]] — PEFT_2026
+- [[模型训练/Distributed_Training/ms_swift_Deep_Dive|ms-swift 深度解析：魔搭大模型训练推理全链路框架]]
+- [[模型训练/Distributed_Training/ms_swift_Command_Line_Parameters|ms-swift 命令行参数完全参考手册]]
+- [[大模型/README_for_dummy.md|README_for_dummy]]
+- [[大模型/Sequence_Models/Sequence_Models.md|Sequence_Models]]

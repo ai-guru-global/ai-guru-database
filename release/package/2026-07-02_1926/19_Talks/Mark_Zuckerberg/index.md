@@ -8,9 +8,9 @@ sources: []
 
 # Mark Zuckerberg
 
-This page indexes the contents of `19_Talks/Mark_Zuckerberg`.
+This page indexes the contents of `业界观点/Mark_Zuckerberg`.
 
 ## Files
 
-- [[19_Talks/Mark_Zuckerberg/about|About]]
-- [[19_Talks/Mark_Zuckerberg/sayings|Sayings]]
+- [[业界观点/Mark_Zuckerberg/about|About]]
+- [[业界观点/Mark_Zuckerberg/sayings|Sayings]]

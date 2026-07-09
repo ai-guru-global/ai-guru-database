@@ -70,10 +70,10 @@ tier: supporting
 
 ## Related
 
-- [[21_Interviews/Computer_Vision_Engineer/company_level_question_bank|CV Engineer 按公司/级别区分的题库]]
-- [[21_Interviews/Computer_Vision_Engineer/interview_preparing|CV Engineer 面试准备]]
-- [[21_Interviews/Computer_Vision_Engineer/question_bank|CV Engineer 题库]]
-- [[21_Interviews/README|AI 面试准备 (Interviews)]]
+- [[面试岗位/Computer_Vision_Engineer/company_level_question_bank|CV Engineer 按公司/级别区分的题库]]
+- [[面试岗位/Computer_Vision_Engineer/interview_preparing|CV Engineer 面试准备]]
+- [[面试岗位/Computer_Vision_Engineer/question_bank|CV Engineer 题库]]
+- [[面试岗位/README|AI 面试准备 (Interviews)]]
 ---
 title: Computer Vision Engineer 面试题实例答案
 category: 21-interviews-computer-vision-engineer
@@ -104,8 +104,8 @@ aliases:
 
 ## Related
 
-- [[21_Interviews/Computer_Vision_Engineer/company_level_question_bank|Computer Vision Engineer 按公司/级别区分的题库]]
-- [[21_Interviews/Computer_Vision_Engineer/interview_preparing|Computer Vision Engineer 面试准备]]
-- [[21_Interviews/Computer_Vision_Engineer/question_bank|Computer Vision Engineer 题库]]
-- [[21_Interviews/README|AI 面试准备 (Interviews)]]
-- [[21_Interviews/jobs|AI 相关岗位与工种清单]]
+- [[面试岗位/Computer_Vision_Engineer/company_level_question_bank|Computer Vision Engineer 按公司/级别区分的题库]]
+- [[面试岗位/Computer_Vision_Engineer/interview_preparing|Computer Vision Engineer 面试准备]]
+- [[面试岗位/Computer_Vision_Engineer/question_bank|Computer Vision Engineer 题库]]
+- [[面试岗位/README|AI 面试准备 (Interviews)]]
+- [[面试岗位/jobs|AI 相关岗位与工种清单]]

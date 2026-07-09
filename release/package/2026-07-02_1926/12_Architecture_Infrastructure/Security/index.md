@@ -8,11 +8,11 @@ sources: []
 
 # Security
 
-This page indexes the contents of `12_Architecture_Infrastructure/Security`.
+This page indexes the contents of `架构基建/Security`.
 
 ## Files
 
 - AI Security Fundamentals 2
-- [[12_Architecture_Infrastructure/Security/AI_Security_Fundamentals|AI Security Fundamentals]]
+- [[架构基建/Security/AI_Security_Fundamentals|AI Security Fundamentals]]
 - Container And Supply Chain Security For AI 2
-- [[12_Architecture_Infrastructure/Security/Container_and_Supply_Chain_Security_for_AI|Container And Supply Chain Security For AI]]
+- [[架构基建/Security/Container_and_Supply_Chain_Security_for_AI|Container And Supply Chain Security For AI]]

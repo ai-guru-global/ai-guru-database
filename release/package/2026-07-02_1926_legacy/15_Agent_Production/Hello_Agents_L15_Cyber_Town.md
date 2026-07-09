@@ -128,7 +128,7 @@ AI 小镇的愿景：
 
 ## 8. 关联阅读
 
-- [[15_Agent_Production/Hello_Agents_L08_Memory_RAG]] — 记忆与 RAG 系统
-- [[15_Agent_Production/Hello_Agents_L13_Travel_Assistant]] — 另一个综合项目
-- [[15_Agent_Production/GenAI_L17_AI_Agents]] — AI Agent 基础
-- [[15_Agent_Production/Agent_Frameworks/README]] — Agent 框架总览
+- [[Agent/Hello_Agents_L08_Memory_RAG]] — 记忆与 RAG 系统
+- [[Agent/Hello_Agents_L13_Travel_Assistant]] — 另一个综合项目
+- [[Agent/GenAI_L17_AI_Agents]] — AI Agent 基础
+- [[Agent/Agent_Frameworks/README]] — Agent 框架总览

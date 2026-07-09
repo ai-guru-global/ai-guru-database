@@ -43,15 +43,15 @@ sources: []
 
 ## 学完之后
 
-接下来去 [第3章：深度学习](../03_Deep_Learning/README_for_dummy.md)，了解模仿人脑的"神经网络"是怎么工作的。
+接下来去 [第3章：深度学习](../深度学习/README_for_dummy.md)，了解模仿人脑的"神经网络"是怎么工作的。
 
 ---
 *本文是 [README.md](./README.md) 的简化版，适合零基础读者。*
 
 ## Related
 
-- [[02_Machine_Learning/ML-in-nutshell.md|ML-in-nutshell]]
-- [[02_Machine_Learning/README.md|02_Machine_Learning README]]
-- [[02_Machine_Learning/Anomaly_Detection/Anomaly_Detection.md|Anomaly_Detection]]
-- [[02_Machine_Learning/Anomaly_Detection/Anomaly_Detection_for_dummy.md|Anomaly_Detection_for_dummy]]
-- [[02_Machine_Learning/AutoML/AutoML.md|AutoML]]
+- [[机器学习/ML-in-nutshell.md|ML-in-nutshell]]
+- [[机器学习/README.md|机器学习 README]]
+- [[机器学习/Anomaly_Detection/Anomaly_Detection.md|Anomaly_Detection]]
+- [[机器学习/Anomaly_Detection/Anomaly_Detection_for_dummy.md|Anomaly_Detection_for_dummy]]
+- [[机器学习/AutoML/AutoML.md|AutoML]]

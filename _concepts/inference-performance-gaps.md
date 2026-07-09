@@ -5,10 +5,10 @@ tags: [inference, performance, gaps, edge, heterogeneous, energy, multi-tenant]
 relationships:
   - target: "_concepts/inference-performance"
     type: related_to
-  - target: "10_Deployment_Inference/Inference_Performance/Remaining_Performance_Issues_2026"
+  - target: "部署推理/Inference_Performance/Remaining_Performance_Issues_2026"
     type: deepened_by
 sources:
-  - 10_Deployment_Inference/Inference_Performance/Remaining_Performance_Issues_2026.md
+  - 部署推理/Inference_Performance/Remaining_Performance_Issues_2026.md
 summary: 当前推理性能专题已覆盖核心优化技术，但边缘/端侧、异构/国产芯片、能耗、多租户隔离、编译启动开销、tokenizer、网络尾延迟、多层缓存等缺口仍需补充。
 lifecycle: draft
 tier: core
@@ -43,4 +43,4 @@ aliases:
 ## Related
 
 - [[_concepts/inference-performance]] — 推理性能
-- [[10_Deployment_Inference/Inference_Performance/Remaining_Performance_Issues_2026|推理性能未解问题与缺口评估]]
+- [[部署推理/Inference_Performance/Remaining_Performance_Issues_2026|推理性能未解问题与缺口评估]]

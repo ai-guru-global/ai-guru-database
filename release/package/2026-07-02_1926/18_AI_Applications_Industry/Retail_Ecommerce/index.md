@@ -8,8 +8,8 @@ sources: []
 
 # Retail Ecommerce
 
-This page indexes the contents of `18_AI_Applications_Industry/Retail_Ecommerce`.
+This page indexes the contents of `行业应用/Retail_Ecommerce`.
 
 ## Files
 
-- [[18_AI_Applications_Industry/Retail_Ecommerce/AI_Retail_Ecommerce_2026|AI Retail Ecommerce 2026]]
+- [[行业应用/Retail_Ecommerce/AI_Retail_Ecommerce_2026|AI Retail Ecommerce 2026]]

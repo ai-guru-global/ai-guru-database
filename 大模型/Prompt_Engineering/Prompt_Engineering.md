@@ -342,7 +342,7 @@ final_prompt = ChatPromptTemplate.from_messages([
 4. 权限最小化: 限制模型可调用的工具和访问的数据
 ```
 
-→ 详见 [AI 安全与红队](../../17_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming.md)
+→ 详见 [AI 安全与红队](../../伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming.md)
 
 ### 6.3 多模态 Prompt
 
@@ -369,9 +369,9 @@ final_prompt = ChatPromptTemplate.from_messages([
 
 ### 进阶方向
 - [微调技术](../Fine_tuning_Techniques/Fine_tuning_Techniques.md) — Prompt 优化不够时的下一步
-- [RAG 系统](../../14_RAG_Systems/RAG_Systems.md) — Prompt 与检索增强的结合
-- [AI 智能体](../../15_Agent_Production/Agent_Foundations/AI_Agents.md) — Prompt 在 Agent 系统中的核心作用
-- [AI 安全与红队](../../17_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming.md) — Prompt 注入防御
+- [RAG 系统](../../RAG系统/RAG_Systems.md) — Prompt 与检索增强的结合
+- [AI 智能体](../../Agent/Agent_Foundations/AI_Agents.md) — Prompt 在 Agent 系统中的核心作用
+- [AI 安全与红队](../../伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming.md) — Prompt 注入防御
 
 ---
 
@@ -427,11 +427,11 @@ final_prompt = ChatPromptTemplate.from_messages([
 | **迭代** | 改写提示 | DGRV 循环 (描述→生成→审查→验证) |
 | **结构** | System + User + Examples | STAR 结构 (情境+任务+架构+要求) |
 
-详细内容请参阅 [Vibe Coding 方法论](../../16_AI_Coding/Methodology/Vibe_Coding_Methodology.md) 中的"提示工程体系"章节。
+详细内容请参阅 [Vibe Coding 方法论](../../AI编程/Methodology/Vibe_Coding_Methodology.md) 中的"提示工程体系"章节。
 
 ---
 *Last updated: 2026-04-11*
 
 ## Related
 
-- [[05_NLP_LLMs/Prompt_Engineering/DSPy_Deep_Dive.md|DSPy_Deep_Dive]]
+- [[大模型/Prompt_Engineering/DSPy_Deep_Dive.md|DSPy_Deep_Dive]]

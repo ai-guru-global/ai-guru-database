@@ -238,9 +238,9 @@ FP16 vs INT4 的吞吐对比不公平，要说明精度和速度 trade-off。
 ## Related
 
 - [[_concepts/inference-performance]] — 推理性能概念卡
-- [[10_Deployment_Inference/Inference_Performance/README|推理性能专题]]
-- [[10_Deployment_Inference/Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]]
-- [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive|vLLM Deep Dive]]
-- [[10_Deployment_Inference/Inference_Engines/SGLang_Deep_Dive|SGLang Deep Dive]]
+- [[部署推理/Inference_Performance/README|推理性能专题]]
+- [[部署推理/Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]]
+- [[部署推理/Inference_Engines/vLLM_Deep_Dive|vLLM Deep Dive]]
+- [[部署推理/Inference_Engines/SGLang_Deep_Dive|SGLang Deep Dive]]
 
-- [[10_Deployment_Inference/README|模型部署与推理]]
+- [[部署推理/README|模型部署与推理]]

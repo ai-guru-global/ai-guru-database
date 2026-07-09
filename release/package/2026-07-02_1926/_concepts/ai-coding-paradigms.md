@@ -10,8 +10,8 @@ relationships:
   - target: "_concepts/code-generation-workflow"
     type: evolves
 sources:
-  - 16_AI_Coding/README.md
-  - 16_AI_Coding/Theory/README.md
+  - AI编程/README.md
+  - AI编程/Theory/README.md
 summary: "AI 编程范式按自主度分为四级：补全（Copilot，补一行）→ 编辑（Cursor，改一段）→ Agent（Claude Code，自主完成多文件任务）→ Vibe Coding（自然语言驱动全程，人只描述意图）。从辅助到主导，AI 在编程中的角色不断升级。"
 provenance:
   extracted: 0.7
@@ -122,5 +122,5 @@ Agent 编程区别于补全/编辑的核心：
 - [[_concepts/code-generation|代码生成]] — 基础概念
 - [[_concepts/code-generation-workflow|代码生成工作流]] — 工程实践
 - [[_concepts/ai-agents|AI Agent]] — Agent 编程的基础
-- [[16_AI_Coding/README|AI 编程]] — 章节主页
-- [[16_AI_Coding/README|AI 编程]] — 范式理论
+- [[AI编程/README|AI 编程]] — 章节主页
+- [[AI编程/README|AI 编程]] — 范式理论

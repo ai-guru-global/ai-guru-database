@@ -10,7 +10,7 @@ relationships:
   - target: "_concepts/opik"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "Arize AI 开源的 LLM 可观测性与评估平台，提供 Tracing、评估、嵌入可视化和 Retrieval 分析，支持 OpenTelemetry 标准和自托管。"
 provenance:
   extracted: 0.50

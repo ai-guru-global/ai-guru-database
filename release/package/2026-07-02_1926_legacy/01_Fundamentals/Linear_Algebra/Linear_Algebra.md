@@ -499,10 +499,10 @@ $$
 - **概率论**: 协方差矩阵是期望算子，EVD 用于高斯分布的对角化
 
 ### 进阶推荐
-- **[优化理论](../../03_Deep_Learning/Optimization/Optimization.md)**: 牛顿法、拟牛顿法依赖黑塞矩阵
-- **[神经网络核心](../../03_Deep_Learning/Neural_Network_Core/Neural_Network_Core.md)**: 理解权重矩阵的初始化策略
-- **[Transformer 架构](../../05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution.md)**: 注意力机制的矩阵计算
-- **[模型压缩](../../10_Deployment_Inference/Deployment_Inference.md)**: SVD、低秩分解在压缩中的应用
+- **[优化理论](../../深度学习/Optimization/Optimization.md)**: 牛顿法、拟牛顿法依赖黑塞矩阵
+- **[神经网络核心](../../深度学习/Neural_Network_Core/Neural_Network_Core.md)**: 理解权重矩阵的初始化策略
+- **[Transformer 架构](../../大模型/Transformer_Revolution/Transformer_Revolution.md)**: 注意力机制的矩阵计算
+- **[模型压缩](../../部署推理/Deployment_Inference.md)**: SVD、低秩分解在压缩中的应用
 
 ---
 

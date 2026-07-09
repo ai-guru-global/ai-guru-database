@@ -7,9 +7,9 @@ updated: 2026-07-02
 
 # Sam Altman
 
-This page indexes the contents of `19_Talks/Sam_Altman`.
+This page indexes the contents of `业界观点/Sam_Altman`.
 
 ## Files
 
-- [[19_Talks/Sam_Altman/about|About]]
-- [[19_Talks/Sam_Altman/sayings|Sayings]]
+- [[业界观点/Sam_Altman/about|About]]
+- [[业界观点/Sam_Altman/sayings|Sayings]]

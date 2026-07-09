@@ -155,4 +155,4 @@ cache_efficiency = cache_read / (cache_read + cache_created + normal_input)
 
 ## Related
 
-- [[16_AI_Coding/README|AI编程 (AI Coding)]]
+- [[AI编程/README|AI编程 (AI Coding)]]

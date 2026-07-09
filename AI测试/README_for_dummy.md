@@ -150,8 +150,8 @@ AI 翻译 "Hello" → "你好" ✓
 ## 下一步
 
 - 想深入技术？→ 查看子目录具体文档
-- 想学模型评估？→ [08_Model_Evaluation/README_for_dummy.md](../08_Model_Evaluation/README_for_dummy.md)
-- 想学 MLOps？→ [11_MLOps_Pipeline/README_for_dummy.md](../11_MLOps_Pipeline/README_for_dummy.md)
+- 想学模型评估？→ [模型评估/README_for_dummy.md](../模型评估/README_for_dummy.md)
+- 想学 MLOps？→ [MLOps/README_for_dummy.md](../MLOps/README_for_dummy.md)
 
 ---
 
@@ -159,8 +159,8 @@ AI 翻译 "Hello" → "你好" ✓
 
 ## Related
 
-- [[09_Testing/AI-Testing-in-nutshell.md|AI-Testing-in-nutshell]]
-- [[09_Testing/AI_Testing_for_dummy.md|AI_Testing_for_dummy]]
-- [[09_Testing/Testing_Frameworks/Java_AI_Testing.md|Java_AI_Testing]]
-- [[09_Testing/README.md|09_Testing README]]
-- [[15_Agent_Production/Agent_Evaluation/Testing_Methodologies/Testing_Framework.md|Testing_Framework]]
+- [[AI测试/AI-Testing-in-nutshell.md|AI-Testing-in-nutshell]]
+- [[AI测试/AI_Testing_for_dummy.md|AI_Testing_for_dummy]]
+- [[AI测试/Testing_Frameworks/Java_AI_Testing.md|Java_AI_Testing]]
+- [[AI测试/README.md|AI测试 README]]
+- [[Agent/Agent_Evaluation/Testing_Methodologies/Testing_Framework.md|Testing_Framework]]

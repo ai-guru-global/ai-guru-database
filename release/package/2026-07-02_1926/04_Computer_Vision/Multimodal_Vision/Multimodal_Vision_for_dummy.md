@@ -454,7 +454,7 @@ A: "它看起来很放松惬意,可能正在享受温暖的阳光"
 
 **下一步阅读**:
 - 📘 [生成模型 - 小白版](../Generative_Models/Generative_Models_for_dummy.md) - 学习 AI 如何根据文字描述画图
-- 📘 [LLM架构 - 小白版](../../05_NLP_LLMs/LLM_Architectures/LLM_Architectures_for_dummy.md) - 理解多模态 AI 的"语言大脑"
+- 📘 [LLM架构 - 小白版](../../大模型/LLM_Architectures/LLM_Architectures_for_dummy.md) - 理解多模态 AI 的"语言大脑"
 
 **查看原版文档**(需要技术基础):
 - 📄 多模态视觉(原版文档待创建) - 包含 CLIP 训练细节和代码
@@ -467,7 +467,7 @@ A: "它看起来很放松惬意,可能正在享受温暖的阳光"
 
 **相关主题**:
 - 🔙 [图像分类与检测 - 小白版](../Image_Classification_Detection/Image_Classification_Detection_for_dummy.md) - 多模态的视觉基础
-- 🔙 [Transformer - 小白版](../../05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution_for_dummy.md) - 多模态的语言基础
+- 🔙 [Transformer - 小白版](../../大模型/Transformer_Revolution/Transformer_Revolution_for_dummy.md) - 多模态的语言基础
 - 🔜 [生成模型 - 小白版](../Generative_Models/Generative_Models_for_dummy.md) - 文字生成图片
 
 ---

@@ -10,7 +10,7 @@ relationships:
   - target: "_concepts/dpo"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "Reward Model（奖励模型/RM）是 RLHF 流程中的偏好评估器——学习人类偏好，为 PPO 训练提供奖励信号。DPO/GRPO 等新方法通过隐式奖励绕过独立 RM 训练。"
 provenance:
   extracted: 0.20
@@ -112,4 +112,4 @@ DeepSeek-R1 使用 **GRPO (Group Relative Policy Optimization)**，**不训练�
 - [[_concepts/grpo]] — GRPO 组相对策略优化
 - [[_concepts/dpo]] — DPO 直接偏好优化
 - [[_concepts/knowledge-distillation]] — 知识蒸馏
-- [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析

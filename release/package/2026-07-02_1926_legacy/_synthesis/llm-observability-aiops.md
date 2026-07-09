@@ -3,10 +3,10 @@ title: "LLM 可观测性 × AIOps: 从系统监控到语义监控的范式跃迁
 category: -synthesis
 tags: ["observability", "monitoring", "llmops", "ai-ops", "hallucination", "trace", "incident-response", "synthesis"]
 sources:
-  - "11_MLOps_Pipeline/Observability/LLM_Observability"
-  - "13_AI_Ops/AIOps-in-nutshell.md"
-  - "13_AI_Ops/AI_Ops_2026"
-  - "11_MLOps_Pipeline/Observability/AI_Observability_Guide_2026"
+  - "MLOps/Observability/LLM_Observability"
+  - "AI运维/AIOps-in-nutshell.md"
+  - "AI运维/AI_Ops_2026"
+  - "MLOps/Observability/AI_Observability_Guide_2026"
 created: 2026-06-30
 updated: 2026-06-30
 summary: "传统 AIOps 监控系统的可用性（P99 延迟、错误率），LLM 可观测性监控语义正确性（幻觉、毒性、PII）——两者的融合正在催生'AI 系统全栈可观测'这一新范式。"
@@ -93,8 +93,8 @@ LLM 可观测性和 AIOps 的融合正在产生**三层统一观测架构**：
 
 ## Related
 
-- [[11_MLOps_Pipeline/Observability/LLM_Observability]]
-- [[13_AI_Ops/AIOps-in-nutshell.md]]
-- [[13_AI_Ops/AI_Ops_2026]]
-- [[11_MLOps_Pipeline/Observability/AI_Observability_Guide_2026]]
+- [[MLOps/Observability/LLM_Observability]]
+- [[AI运维/AIOps-in-nutshell.md]]
+- [[AI运维/AI_Ops_2026]]
+- [[MLOps/Observability/AI_Observability_Guide_2026]]
 - [[_synthesis/mlops-monitoring-convergence]]

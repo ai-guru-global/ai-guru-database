@@ -8,9 +8,9 @@ sources: []
 
 # Cost
 
-This page indexes the contents of `10_Deployment_Inference/Cost`.
+This page indexes the contents of `部署推理/Cost`.
 
 ## Files
 
-- [[10_Deployment_Inference/Cost/LLM_Cost_Optimization 2|LLM Cost Optimization 2]]
-- [[10_Deployment_Inference/Cost/LLM_Cost_Optimization|LLM Cost Optimization]]
+- [[部署推理/Cost/LLM_Cost_Optimization 2|LLM Cost Optimization 2]]
+- [[部署推理/Cost/LLM_Cost_Optimization|LLM Cost Optimization]]

@@ -14,12 +14,12 @@ relationships:
   type: enables
 - target: '_concepts/long-context-models'
   type: enables
-- target: '10_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy'
+- target: '部署推理/Inference_Performance/Inference_Terms_for_dummy'
   type: simplified_by
 sources:
-- 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
-- 10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive.md
-- 10_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy.md
+- 架构基建/AI_Stack_Deep_Dive.md
+- 部署推理/Inference_Engines/vLLM_Deep_Dive.md
+- 部署推理/Inference_Performance/Inference_Terms_for_dummy.md
 summary: Multi-head Latent Attention (MLA) 是 DeepSeek 提出的注意力压缩架构，通过低秩 KV 联合压缩将 KV Cache 显存降低 7-28×，是 DeepSeek V2/V3/R1 经济化部署 128K-1M 上下文的核心技术。FlashMLA 算子库在 H800 上达到 660 TFLOPS 峰值性能。
 provenance:
   extracted: 0.9
@@ -173,5 +173,5 @@ MLA 的压缩效果可与 FP8 量化、前缀缓存等技术叠加：
 - [[_concepts/model-deployment]] — 模型部署（KV Cache/PagedAttention）
 - [[_concepts/llm-infrastructure]] — LLM 基础设施
 - [[_concepts/grouped-query-attention]] — GQA（Grouped-Query Attention）
-- [[10_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy|推理性能术语大白话解释]]
-- [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — 阿里云 AI Stack（含 MLA 通用技术背景）
+- [[部署推理/Inference_Performance/Inference_Terms_for_dummy|推理性能术语大白话解释]]
+- [[架构基建/AI_Stack_Deep_Dive]] — 阿里云 AI Stack（含 MLA 通用技术背景）

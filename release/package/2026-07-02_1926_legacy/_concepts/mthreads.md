@@ -36,4 +36,4 @@ relationships:
 - [[_concepts/chinese-ai-chips|Chinese AI Chips]]
 - [[_concepts/ascend-npu|Ascend NPU]]
 - [[_concepts/hygon|Hygon]]
-- [[10_Deployment_Inference/Hardware/Chinese_AI_Chip_Inference_Matrix|国产芯片推理矩阵]]
+- [[部署推理/Hardware/Chinese_AI_Chip_Inference_Matrix|国产芯片推理矩阵]]

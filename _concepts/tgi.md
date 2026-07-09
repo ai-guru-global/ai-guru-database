@@ -12,7 +12,7 @@ relationships:
   - target: "_concepts/tensorrt-llm"
     type: related_to
 sources:
-  - 10_Deployment_Inference/Inference_Engines/TGI_Deep_Dive.md
+  - 部署推理/Inference_Engines/TGI_Deep_Dive.md
 summary: "TGI 是 HuggingFace 开源的 LLM 推理服务引擎，支持连续批处理、Safetensors、流式生成、量化和 OpenAI 兼容 API，广泛用于生产级文本生成服务。"
 provenance:
   extracted: 0.8
@@ -133,9 +133,9 @@ docker run --gpus all \
 
 ## Related
 
-- [[10_Deployment_Inference/Inference_Engines/TGI_Deep_Dive]] — TGI 深度解析
+- [[部署推理/Inference_Engines/TGI_Deep_Dive]] — TGI 深度解析
 - [[_concepts/vllm]] — vLLM 推理引擎
 - [[_concepts/model-serving]] — 模型服务
 - [[_concepts/hami]] — HAMi GPU 虚拟化
-- [[10_Deployment_Inference/Inference_Engines/KServe_Deep_Dive]] — KServe
-- [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive]] — vLLM
+- [[部署推理/Inference_Engines/KServe_Deep_Dive]] — KServe
+- [[部署推理/Inference_Engines/vLLM_Deep_Dive]] — vLLM

@@ -442,9 +442,9 @@ evaluation:
 
 ## Related
 
-- [[08_Model_Evaluation/Model_Evaluation|模型评估]] — 评估方法论全景
-- [[08_Model_Evaluation/Evaluation_Automation_2026|评估自动化]] — 自动化评估流水线
-- [[08_Model_Evaluation/Benchmarks/Multimodal_Evaluation_Benchmarks|多模态评测]] — 多模态模型评估
+- [[模型评估/Model_Evaluation|模型评估]] — 评估方法论全景
+- [[模型评估/Evaluation_Automation_2026|评估自动化]] — 自动化评估流水线
+- [[模型评估/Benchmarks/Multimodal_Evaluation_Benchmarks|多模态评测]] — 多模态模型评估
 - [[_synthesis/safety-evaluation-red-teaming|安全评测 × 红队测试]] — 安全评估的综合分析
 
 - [[_synthesis/benchmark-evaluation|评测基准 × 评测方法论：从分数到可信评估]]

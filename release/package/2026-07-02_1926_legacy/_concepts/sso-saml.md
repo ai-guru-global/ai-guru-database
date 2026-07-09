@@ -8,7 +8,7 @@ relationships:
   - target: "_concepts/single-tenant-architecture"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "SSO 单点登录让用户使用企业身份（如 Azure AD）一次登录即可访问 AI Stack，无需单独管理账户密码。SAML2 是最广泛的企业 SSO 协议标准。"
 provenance:
   extracted: 0.50
@@ -122,4 +122,4 @@ AI Stack 支持通过 **AzureAD + SAML2** 实现企业 SSO：
 
 - [[_concepts/rbac]] — RBAC 访问控制（SSO 用户角色映射）
 - [[_concepts/single-tenant-architecture]] — 单租户架构（安全体系）
-- [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack（AzureAD SSO）
+- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack（AzureAD SSO）

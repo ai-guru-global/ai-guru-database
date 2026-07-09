@@ -321,6 +321,6 @@ Large (> 100M entities):
 ## Related Topics
 
 - [[RAG_Fundamentals]]: Basic RAG concepts
-- [[14_RAG_Systems/Vector_Databases/README]]: Vector storage options
+- [[RAG系统/Vector_Databases/README]]: Vector storage options
 - [[RAG_Advanced_2026]]: Advanced RAG techniques
 - [[Agentic_RAG_Guide]]: Agent-driven RAG

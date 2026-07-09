@@ -7,10 +7,10 @@ updated: 2026-07-02
 
 # Zhilin Yang
 
-This page indexes the contents of `19_Talks/Zhilin_Yang`.
+This page indexes the contents of `业界观点/Zhilin_Yang`.
 
 ## Files
 
-- [[19_Talks/Zhilin_Yang/about|About]]
+- [[业界观点/Zhilin_Yang/about|About]]
 - Sayings 2
-- [[19_Talks/Zhilin_Yang/sayings|Sayings]]
+- [[业界观点/Zhilin_Yang/sayings|Sayings]]

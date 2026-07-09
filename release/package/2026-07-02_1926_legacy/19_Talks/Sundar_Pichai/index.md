@@ -7,9 +7,9 @@ updated: 2026-07-02
 
 # Sundar Pichai
 
-This page indexes the contents of `19_Talks/Sundar_Pichai`.
+This page indexes the contents of `业界观点/Sundar_Pichai`.
 
 ## Files
 
-- [[19_Talks/Sundar_Pichai/about|About]]
-- [[19_Talks/Sundar_Pichai/sayings|Sayings]]
+- [[业界观点/Sundar_Pichai/about|About]]
+- [[业界观点/Sundar_Pichai/sayings|Sayings]]

@@ -84,6 +84,6 @@ spec:
 - [[_concepts/distributed-filesystem|Distributed Filesystem]]
 - [[_concepts/oss|OSS]]
 - [[_concepts/nas|NAS]]
-- [[12_Architecture_Infrastructure/Storage/Checkpoint_and_Model_Storage|Checkpoint 与模型存储]]
+- [[架构基建/Storage/Checkpoint_and_Model_Storage|Checkpoint 与模型存储]]
 
-- [[12_Architecture_Infrastructure/README|架构与基础设施 (Architecture & Infrastructure)]]
+- [[架构基建/README|架构与基础设施 (Architecture & Infrastructure)]]

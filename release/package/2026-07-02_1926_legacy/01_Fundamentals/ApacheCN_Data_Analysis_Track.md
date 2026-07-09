@@ -41,15 +41,15 @@ aliases:
 | 11 有用的工具 | pickle、json、logging、requests 等 | `139.md` |
 | 12 Pandas | Series、DataFrame | `150.md` |
 
-> **注意**：Theano 已停止维护，可作为理解符号计算图与自动微分的历史参考；现代等价工具见 [[03_Deep_Learning/DL_Frameworks/pytorch_overview]] 与 [[03_Deep_Learning/DL_Frameworks/tensorflow_overview]]。
+> **注意**：Theano 已停止维护，可作为理解符号计算图与自动微分的历史参考；现代等价工具见 [[深度学习/DL_Frameworks/pytorch_overview]] 与 [[深度学习/DL_Frameworks/tensorflow_overview]]。
 
 ## 与本库关联
 
-- Python 环境配置 → [[01_Fundamentals/AI_Development_Environment_Setup]]
-- 线性代数/NumPy 基础 → [[01_Fundamentals/Linear_Algebra/Linear_Algebra]]
-- 概率统计 → [[01_Fundamentals/Probability_Statistics/Probability_Statistics]]
-- 数据结构与算法 → [[01_Fundamentals/Data_Structures_Algorithms/Data_Structures_Algorithms]]
-- 机器学习数据预处理 → [[02_Machine_Learning/Feature_Engineering/Feature_Engineering]]
+- Python 环境配置 → [[数学基础/AI_Development_Environment_Setup]]
+- 线性代数/NumPy 基础 → [[数学基础/Linear_Algebra/Linear_Algebra]]
+- 概率统计 → [[数学基础/Probability_Statistics/Probability_Statistics]]
+- 数据结构与算法 → [[数学基础/Data_Structures_Algorithms/Data_Structures_Algorithms]]
+- 机器学习数据预处理 → [[机器学习/Feature_Engineering/Feature_Engineering]]
 
 ## 参考
 

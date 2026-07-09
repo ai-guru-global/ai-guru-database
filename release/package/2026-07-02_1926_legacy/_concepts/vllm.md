@@ -6,10 +6,10 @@ aliases:
   - "vllm-engine"
 category: -concepts
 sources:
-  - 10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive.md
-  - 10_Deployment_Inference/Inference_Engines/TGI_Deep_Dive.md
-  - 10_Deployment_Inference/Inference_Engines/Modal_Deep_Dive.md
-  - 10_Deployment_Inference/Inference_Engines/KServe_Deep_Dive.md
+  - 部署推理/Inference_Engines/vLLM_Deep_Dive.md
+  - 部署推理/Inference_Engines/TGI_Deep_Dive.md
+  - 部署推理/Inference_Engines/Modal_Deep_Dive.md
+  - 部署推理/Inference_Engines/KServe_Deep_Dive.md
 relationships:
   - target: "_concepts/llm-inference-engine"
     type: related_to
@@ -165,4 +165,4 @@ vllm serve meta-llama/Llama-3-70B-Instruct \
 
 ---
 
-**参见**：[[vLLM_Deep_Dive]] · [[LLM_Inference_Deep_Dive]] · README · [[10_Deployment_Inference/README|10_Deployment_Inference]]
+**参见**：[[vLLM_Deep_Dive]] · [[LLM_Inference_Deep_Dive]] · README · [[部署推理/README|部署推理]]

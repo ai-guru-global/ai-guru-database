@@ -157,17 +157,17 @@ predicted = text_prompts[probs.argmax()]
   - 多模态大模型（如 GPT-4V、LLaVA、Qwen-VL）的指令微调与对齐方法。
 
 - **延伸**：
-  - 想深入 CLIP 的理论与变体，阅读本库 [[04_Computer_Vision/Multimodal_Vision/CLIP_Deep_Dive]]。
-  - 想了解多模态模型的全貌与入门概念，阅读 [[05_NLP_LLMs/Multimodal_Models/Multimodal_Models_for_dummy]]。
-  - 想了解扩散模型如何成为现代文生图主流，参阅 [[04_Computer_Vision/Generative_Models/Generative_Models]]。
+  - 想深入 CLIP 的理论与变体，阅读本库 [[计算机视觉/Multimodal_Vision/CLIP_Deep_Dive]]。
+  - 想了解多模态模型的全貌与入门概念，阅读 [[大模型/Multimodal_Models/Multimodal_Models_for_dummy]]。
+  - 想了解扩散模型如何成为现代文生图主流，参阅 [[计算机视觉/Generative_Models/Generative_Models]]。
   - 想跑最新多模态实验，可关注 [OpenCLIP](https://github.com/mlfoundations/open_clip)、[Hugging Face Transformers CLIP](https://huggingface.co/docs/transformers/model_doc/clip) 等社区实现。
 
 ## 相关阅读
 
 - 课程索引：[[90_Learn/courses/microsoft/microsoft_ai_for_beginners]]
 - 本库相关页面：
-  - [[04_Computer_Vision/Multimodal_Vision/CLIP_Deep_Dive]]
-  - [[05_NLP_LLMs/Multimodal_Models/Multimodal_Models_for_dummy]]
+  - [[计算机视觉/Multimodal_Vision/CLIP_Deep_Dive]]
+  - [[大模型/Multimodal_Models/Multimodal_Models_for_dummy]]
 - 官方论文：
   - CLIP: [Learning Transferable Visual Models From Natural Language Supervision](https://arxiv.org/pdf/2103.00020.pdf)
   - VQGAN: [Taming Transformers for High-Resolution Image Synthesis](https://compvis.github.io/taming-transformers/paper/paper.pdf)

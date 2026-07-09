@@ -8,9 +8,9 @@ sources: []
 
 # Fei Fei Li
 
-This page indexes the contents of `19_Talks/Fei_Fei_Li`.
+This page indexes the contents of `业界观点/Fei_Fei_Li`.
 
 ## Files
 
-- [[19_Talks/Fei_Fei_Li/about|About]]
-- [[19_Talks/Fei_Fei_Li/sayings|Sayings]]
+- [[业界观点/Fei_Fei_Li/about|About]]
+- [[业界观点/Fei_Fei_Li/sayings|Sayings]]

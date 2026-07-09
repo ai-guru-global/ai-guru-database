@@ -7,11 +7,11 @@ updated: 2026-07-02
 
 # GPU Infrastructure
 
-This page indexes the contents of `10_Deployment_Inference/GPU_Infrastructure`.
+This page indexes the contents of `部署推理/GPU_Infrastructure`.
 
 ## Files
 
 - Gpustack Deep Dive 2
-- [[10_Deployment_Inference/GPU_Infrastructure/GPUStack_Deep_Dive|Gpustack Deep Dive]]
+- [[部署推理/GPU_Infrastructure/GPUStack_Deep_Dive|Gpustack Deep Dive]]
 - Gpustack For Dummy 2
-- [[10_Deployment_Inference/GPU_Infrastructure/GPUStack_for_dummy|Gpustack For Dummy]]
+- [[部署推理/GPU_Infrastructure/GPUStack_for_dummy|Gpustack For Dummy]]

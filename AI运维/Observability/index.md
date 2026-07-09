@@ -8,9 +8,9 @@ sources: []
 
 # Observability
 
-This page indexes the contents of `13_AI_Ops/Observability`.
+This page indexes the contents of `AI运维/Observability`.
 
 ## Files
 
-- [[13_AI_Ops/Observability/LLM_Inference_Observability_Stack 2|LLM Inference Observability Stack 2]]
-- [[13_AI_Ops/Observability/LLM_Inference_Observability_Stack|LLM Inference Observability Stack]]
+- [[AI运维/Observability/LLM_Inference_Observability_Stack 2|LLM Inference Observability Stack 2]]
+- [[AI运维/Observability/LLM_Inference_Observability_Stack|LLM Inference Observability Stack]]

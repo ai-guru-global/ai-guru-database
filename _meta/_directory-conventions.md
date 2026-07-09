@@ -33,7 +33,7 @@ ai-guru-database/
 ## 二、主知识章节（00-21，分层架构）
 
 > **定位**: 核心知识内容，按「从下到上」技术栈分层编排，编号连续无缺口。
-> **命名规范**: `{编号}_{Title_Case名称}/`，如 `05_NLP_LLMs/`
+> **命名规范**: `{编号}_{Title_Case名称}/`，如 `大模型/`
 > **重构记录**: 2026-06 由学习路径式编号重构为分层架构式（详见 _post-restructure-2026-06-19）
 
 | 编号 | 层级 | 目录 | 定位 |
@@ -212,10 +212,10 @@ git config core.hooksPath .githooks
 
 | 内容类型 | 放置位置 | 示例 |
 |----------|----------|------|
-| 某领域的深度技术文档 | 对应的主章节目录 | `05_NLP_LLMs/LLM_Architectures/xxx.md` |
+| 某领域的深度技术文档 | 对应的主章节目录 | `大模型/LLM_Architectures/xxx.md` |
 | 某概念的速查卡片 | `_concepts/` | `_concepts/xxx.md` |
 | 跨 2+ 领域的综合分析 | `_synthesis/` | `_synthesis/xxx-yyy.md` |
-| 某个工具/产品的深度解析 | 最相关的章节 | `10_Deployment_Inference/xxx_Deep_Dive.md` |
+| 某个工具/产品的深度解析 | 最相关的章节 | `部署推理/xxx_Deep_Dive.md` |
 | 项目治理报告 | `_meta/` | `_meta/_xxx-report.md` |
 | 原始素材（待处理） | `_raw/` | `_raw/xxx.md` |
 

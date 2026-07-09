@@ -7,15 +7,15 @@ updated: 2026-07-02
 
 # Embeddings
 
-This page indexes the contents of `14_RAG_Systems/Embeddings`.
+This page indexes the contents of `RAG系统/Embeddings`.
 
 ## Files
 
 - Embedding Models Guide 2
-- [[14_RAG_Systems/Embeddings/Embedding_Models_Guide|Embedding Models Guide]]
+- [[RAG系统/Embeddings/Embedding_Models_Guide|Embedding Models Guide]]
 - HF Datasets Streaming 2
-- [[14_RAG_Systems/Embeddings/HF_Datasets_Streaming|HF Datasets Streaming]]
+- [[RAG系统/Embeddings/HF_Datasets_Streaming|HF Datasets Streaming]]
 - Matryoshka Representation Learning Deep Dive 2
-- [[14_RAG_Systems/Embeddings/Matryoshka_Representation_Learning_Deep_Dive|Matryoshka Representation Learning Deep Dive]]
+- [[RAG系统/Embeddings/Matryoshka_Representation_Learning_Deep_Dive|Matryoshka Representation Learning Deep Dive]]
 - Sentence Transformers Deep Dive 2
-- [[14_RAG_Systems/Embeddings/Sentence_Transformers_Deep_Dive|Sentence Transformers Deep Dive]]
+- [[RAG系统/Embeddings/Sentence_Transformers_Deep_Dive|Sentence Transformers Deep Dive]]

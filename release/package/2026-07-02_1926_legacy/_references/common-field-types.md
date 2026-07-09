@@ -111,7 +111,7 @@ Skill schema 升级时，遵循以下原则：
 
 ## Related
 
-- [[15_Agent_Production/Agent_Skills/README|Agent Skills]]
+- [[Agent/Agent_Skills/README|Agent Skills]]
 - [[_references/index|References Index]]
 - [[_references/REFERENCE.md|Agent Skill Reference]]
 - [[_references/statistics.md|Skill Statistics]]

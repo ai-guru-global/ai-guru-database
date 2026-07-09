@@ -10,7 +10,7 @@ relationships:
   - target: "_concepts/opik"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "DeepEval 是 Confident AI 开源的 LLM 评估框架——类似 PyTest 的测试框架，提供 14+ 评估指标（幻觉、毒性、偏差、RAG 等），支持 CI/CD 集成。是 LLM 应用质量保障的重要工具。"
 provenance:
   extracted: 0.15

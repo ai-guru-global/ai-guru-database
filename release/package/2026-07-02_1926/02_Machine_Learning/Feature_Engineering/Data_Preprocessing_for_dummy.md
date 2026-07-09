@@ -378,7 +378,7 @@ predictions = total_pipeline.predict(X_test)
 
 ## Related
 
-- [[02_Machine_Learning/Supervised_Learning/EDA_Quick_Start]] — 探索性数据分析入门
-- [[02_Machine_Learning/Feature_Engineering/Feature_Engineering_for_dummy]] — 特征工程小白版
-- [[02_Machine_Learning/Supervised_Learning/Your_First_ML_Model]] — 第一个 ML 模型
-- [[01_Fundamentals/Python_Data_Science_Toolkit]] — Pandas 基础
+- [[机器学习/Supervised_Learning/EDA_Quick_Start]] — 探索性数据分析入门
+- [[机器学习/Feature_Engineering/Feature_Engineering_for_dummy]] — 特征工程小白版
+- [[机器学习/Supervised_Learning/Your_First_ML_Model]] — 第一个 ML 模型
+- [[数学基础/Python_Data_Science_Toolkit]] — Pandas 基础

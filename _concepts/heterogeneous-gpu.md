@@ -8,7 +8,7 @@ relationships:
   - target: "_concepts/training-inference-unification"
     type: enables
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: 异构 GPU 集群将不同厂商/型号的 GPU（NVIDIA/AMD/华为昇腾/海光 DCU 等）统一纳管，通过三层优化（I/O 调度/训推框架/模型量化）实现协同训练与推理。AI Stack 支持 APG/Ascend/Nvidia 三种 GPU，训练 +30%、推理 +80% 性能提升。
 provenance:
   extracted: 0.85
@@ -89,6 +89,6 @@ aliases:
 - [[_concepts/cdi]] — CDI 容器设备接口（异构芯片统一接入容器的标准）
 - [[_concepts/dra]] — DRA（异构设备的属性化分配）
 - [[_concepts/hami]] — HAMi（异构 GPU 统一虚拟化与调度）
-- [[12_Architecture_Infrastructure/AI_Stack/HAMi_Deep_Dive]] — HAMi 深度解析
-- [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — 阿里云 AI Stack
-- [[01_Fundamentals/AI_Hardware/Chinese_AI_Chips_Deep_Dive]] — 国产 AI 芯片12家厂商深度解析
+- [[架构基建/AI_Stack/HAMi_Deep_Dive]] — HAMi 深度解析
+- [[架构基建/AI_Stack_Deep_Dive]] — 阿里云 AI Stack
+- [[数学基础/AI_Hardware/Chinese_AI_Chips_Deep_Dive]] — 国产 AI 芯片12家厂商深度解析

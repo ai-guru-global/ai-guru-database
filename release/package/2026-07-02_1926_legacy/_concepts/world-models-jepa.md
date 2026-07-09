@@ -10,7 +10,7 @@ relationships:
     type: related_to
   - target: "_concepts/state-space-models"
     type: related_to
-sources: [03_Deep_unsupervised-learning/World_Models/World_Models_2026.md, 03_Deep_Learning/World_Models/JEPA_transformer-architecture_2026.md]
+sources: [03_Deep_unsupervised-learning/World_Models/World_Models_2026.md, 深度学习/World_Models/JEPA_transformer-architecture_2026.md]
 summary: LeCun 提出的自监督世界模型架构，不预测像素而是预测抽象表征，让AI学会世界的运行规律，是通向AGI的关键路径之一。
 provenance:
   extracted: 0.80
@@ -156,8 +156,8 @@ Perception（编码器）
 
 ## 来源
 
-- 03_Deep_Learning/World_Models/World_Models_2026.md
-- 03_Deep_Learning/World_Models/JEPA_Architecture_2026.md
+- 深度学习/World_Models/World_Models_2026.md
+- 深度学习/World_Models/JEPA_Architecture_2026.md
 - LeCun (2022) "A Path Towards Autonomous Machine Intelligence"
 - Assran et al. (2023) I-JEPA, Bardes et al. (2024) V-JEPA
 
@@ -167,4 +167,4 @@ Perception（编码器）
 - [[_concepts/optimization-regularization.md|optimization-regularization]]
 - [[_concepts/state-space-models.md|state-space-models]]
 - [[_concepts/transformer-architecture.md|transformer-architecture]]
-- [[00_AI_Introduction/AI_Future_Trends.md|AI_Future_Trends]]
+- [[AI入门/AI_Future_Trends.md|AI_Future_Trends]]

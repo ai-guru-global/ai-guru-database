@@ -14,7 +14,7 @@ aliases:
   - LLM 训练与推理
   - 训练推理概念索引
 relationships:
-  - target: "05_NLP_LLMs/Transformer_Training_vs_Inference"
+  - target: "大模型/Transformer_Training_vs_Inference"
     type: detailed_in
   - target: "_concepts/transformer-architecture"
     type: related_to
@@ -257,7 +257,7 @@ Transformer
 
 如需一篇涵盖训练、推理、解码策略、优化技术的完整综合文档，请参阅：
 
-- [[05_NLP_LLMs/Transformer_Training_vs_Inference|Transformer 在大模型训练与推理中的应用（全面版）]]
+- [[大模型/Transformer_Training_vs_Inference|Transformer 在大模型训练与推理中的应用（全面版）]]
 
 ---
 

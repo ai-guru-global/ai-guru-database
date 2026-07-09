@@ -8,10 +8,10 @@ sources: []
 
 # Josh Starmer
 
-This page indexes the contents of `19_Talks/Josh_Starmer`.
+This page indexes the contents of `业界观点/Josh_Starmer`.
 
 ## Files
 
-- [[19_Talks/Josh_Starmer/about 2|About 2]]
-- [[19_Talks/Josh_Starmer/about|About]]
-- [[19_Talks/Josh_Starmer/youtube_channel|Youtube Channel]]
+- [[业界观点/Josh_Starmer/about 2|About 2]]
+- [[业界观点/Josh_Starmer/about|About]]
+- [[业界观点/Josh_Starmer/youtube_channel|Youtube Channel]]

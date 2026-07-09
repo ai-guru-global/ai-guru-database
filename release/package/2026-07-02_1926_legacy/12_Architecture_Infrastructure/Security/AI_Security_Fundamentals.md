@@ -69,5 +69,5 @@ AI 系统威胁面
 
 - [[_concepts/model-security|Model Security]]
 - [[_concepts/supply-chain-security|Supply Chain Security]]
-- [[17_Ethics_Safety/AI_Security_2026|AI Security 2026]]
-- [[17_Ethics_Safety/AI_Supply_Chain_Security|AI Supply Chain Security]]
+- [[伦理安全/AI_Security_2026|AI Security 2026]]
+- [[伦理安全/AI_Supply_Chain_Security|AI Supply Chain Security]]

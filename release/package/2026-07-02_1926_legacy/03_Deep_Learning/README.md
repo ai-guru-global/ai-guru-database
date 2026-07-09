@@ -46,9 +46,9 @@ tier: supporting
 
 ## 前置知识 (Prerequisites)
 
-- **必修**: [线性代数](../01_Fundamentals/Linear_Algebra/Linear_Algebra.md)（矩阵运算）、[概率统计](../01_Fundamentals/Probability_Statistics/Probability_Statistics.md)（损失函数设计）
-- **推荐**: [监督学习](../02_Machine_Learning/Supervised_Learning/Supervised_Learning.md)（理解梯度下降）
-- **可选**: [数据结构与算法](../01_Fundamentals/Data_Structures_Algorithms/Data_Structures_Algorithms.md)（理解计算图）
+- **必修**: [线性代数](../数学基础/Linear_Algebra/Linear_Algebra.md)（矩阵运算）、[概率统计](../数学基础/Probability_Statistics/Probability_Statistics.md)（损失函数设计）
+- **推荐**: [监督学习](../机器学习/Supervised_Learning/Supervised_Learning.md)（理解梯度下降）
+- **可选**: [数据结构与算法](../数学基础/Data_Structures_Algorithms/Data_Structures_Algorithms.md)（理解计算图）
 
 ## 关键术语速查 (Key Terms)
 
@@ -67,26 +67,26 @@ tier: supporting
 *Last updated: 2026-02-10*
 
 ## Related
-- [[03_Deep_Learning/Graph_Neural_Networks/README|图神经网络 (Graph Neural Networks)]]
-- [[03_Deep_Learning/Graph_Neural_Networks/Graph_Neural_Networks_Deep_Dive|图神经网络深度解读: 从 GCN 到 GAT 再到 Graph Transformer]]
-- [[03_Deep_Learning/Self_Supervised_Learning/Self_Supervised_Learning_Deep_Dive|自监督学习深度解读: 从对比学习到掩码建模]]
-- [[03_Deep_Learning/Self_Supervised_Learning/README|自监督学习 (Self-Supervised Learning)]]
-- [[03_Deep_Learning/README_for_dummy|03 深度学习基础 - 小白版]]
+- [[深度学习/Graph_Neural_Networks/README|图神经网络 (Graph Neural Networks)]]
+- [[深度学习/Graph_Neural_Networks/Graph_Neural_Networks_Deep_Dive|图神经网络深度解读: 从 GCN 到 GAT 再到 Graph Transformer]]
+- [[深度学习/Self_Supervised_Learning/Self_Supervised_Learning_Deep_Dive|自监督学习深度解读: 从对比学习到掩码建模]]
+- [[深度学习/Self_Supervised_Learning/README|自监督学习 (Self-Supervised Learning)]]
+- [[深度学习/README_for_dummy|03 深度学习基础 - 小白版]]
 
-- [[03_Deep_Learning/DL-in-nutshell]] — 深度学习速成指南 (共享: backpropagation, deep-learning, dl, neural-networks)
-- [[03_Deep_Learning/World_Models/JEPA_Architecture_2026]] — JEPA 架构深度解析：LeCun 的世界模型之路 (共享: backpropagation, deep-learning, dl, neural-networks)
-- [[03_Deep_Learning/World_Models/README]] — 世界模型 (World Models) (共享: backpropagation, deep-learning, dl, neural-networks)
-- [[03_Deep_Learning/World_Models/World_Models_2026]] — World_Models_2026
-- [[03_Deep_Learning/Optimization/Optimization_for_dummy]] — Optimization_for_dummy
-- [[03_Deep_Learning/Optimization/Optimization]] — Optimization
-- [[03_Deep_Learning/Neural_Network_Core/Neural_Network_Core_for_dummy]] — Neural_Network_Core_for_dummy
-- [[03_Deep_Learning/Neural_Network_Core/Neural_Network_Core]] — Neural_Network_Core
-- [[03_Deep_Learning/README_for_dummy.md|README_for_dummy]]
+- [[深度学习/DL-in-nutshell]] — 深度学习速成指南 (共享: backpropagation, deep-learning, dl, neural-networks)
+- [[深度学习/World_Models/JEPA_Architecture_2026]] — JEPA 架构深度解析：LeCun 的世界模型之路 (共享: backpropagation, deep-learning, dl, neural-networks)
+- [[深度学习/World_Models/README]] — 世界模型 (World Models) (共享: backpropagation, deep-learning, dl, neural-networks)
+- [[深度学习/World_Models/World_Models_2026]] — World_Models_2026
+- [[深度学习/Optimization/Optimization_for_dummy]] — Optimization_for_dummy
+- [[深度学习/Optimization/Optimization]] — Optimization
+- [[深度学习/Neural_Network_Core/Neural_Network_Core_for_dummy]] — Neural_Network_Core_for_dummy
+- [[深度学习/Neural_Network_Core/Neural_Network_Core]] — Neural_Network_Core
+- [[深度学习/README_for_dummy.md|README_for_dummy]]
 
-- [[03_Deep_Learning/README_for_dummy|03 深度学习基础 - 小白版]]
+- [[深度学习/README_for_dummy|03 深度学习基础 - 小白版]]
 
 ## 相关资源
 
-- [[03_Deep_Learning/DL_Frameworks/pytorch_overview|PyTorch]]
-- [[03_Deep_Learning/DL_Frameworks/tensorflow_overview|TensorFlow]]
-- [[03_Deep_Learning/DL_Frameworks/keras_overview|Keras]]
+- [[深度学习/DL_Frameworks/pytorch_overview|PyTorch]]
+- [[深度学习/DL_Frameworks/tensorflow_overview|TensorFlow]]
+- [[深度学习/DL_Frameworks/keras_overview|Keras]]

@@ -8,9 +8,9 @@ sources: []
 
 # Mlops Engineer
 
-This page indexes the contents of `21_Interviews/MLOps_Engineer`.
+This page indexes the contents of `面试岗位/MLOps_Engineer`.
 
 ## Files
 
 - Mlops Engineer 2
-- [[21_Interviews/MLOps_Engineer/MLOps_Engineer|Mlops Engineer]]
+- [[面试岗位/MLOps_Engineer/MLOps_Engineer|Mlops Engineer]]

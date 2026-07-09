@@ -1121,7 +1121,7 @@ class TemperatureScaler(nn.Module):
 - **Equal Opportunity**: 不同群体的 TPR 是否相等
 - **工具**: AIF360 (IBM), Fairlearn (Microsoft)
 
-→ 详见 [价值对齐](../17_Ethics_Safety/Value_Alignment/Value_Alignment.md)
+→ 详见 [价值对齐](../伦理安全/Value_Alignment/Value_Alignment.md)
 
 ### 7.5 常见陷阱
 
@@ -1383,18 +1383,18 @@ class LLMEvaluationPipeline:
 ## 10. 与其他主题的关联 (Connections)
 
 ### 前置知识
-- [概率论与数理统计](../01_Fundamentals/Probability_Statistics/Probability_Statistics.md) — 理解统计检验和置信区间
-- [监督学习](../02_Machine_Learning/Supervised_Learning/Supervised_Learning.md) — 偏差-方差权衡
-- [模型训练](../07_Model_Training/Model-Training-in-nutshell.md) — 训练与验证的关系
+- [概率论与数理统计](../数学基础/Probability_Statistics/Probability_Statistics.md) — 理解统计检验和置信区间
+- [监督学习](../机器学习/Supervised_Learning/Supervised_Learning.md) — 偏差-方差权衡
+- [模型训练](../模型训练/Model-Training-in-nutshell.md) — 训练与验证的关系
 
 ### 进阶方向
 - [自动化评估](./Evaluation_Automation_2026.md) — CI/CD 中的评估自动化
 - [在线评估](./Evaluation_Tools/Online_Evaluation.md) — 上线后的真实效果评估
-- [MLOps Pipeline](../11_MLOps_Pipeline/MLOps_Pipeline.md) — 评估自动化和持续监控
-- [价值对齐](../17_Ethics_Safety/Value_Alignment/Value_Alignment.md) — 公平性评估
-- [AI 测试框架](../09_Testing/README.md) — 系统化的 AI 测试方法
-- [特征工程](../02_Machine_Learning/Feature_Engineering/Feature_Engineering.md) — 评估指导特征改进
-- [AI Ops 监控](../13_AI_Ops/AI_Ops_2026.md) — 生产环境模型监控
+- [MLOps Pipeline](../MLOps/MLOps_Pipeline.md) — 评估自动化和持续监控
+- [价值对齐](../伦理安全/Value_Alignment/Value_Alignment.md) — 公平性评估
+- [AI 测试框架](../AI测试/README.md) — 系统化的 AI 测试方法
+- [特征工程](../机器学习/Feature_Engineering/Feature_Engineering.md) — 评估指导特征改进
+- [AI Ops 监控](../AI运维/AI_Ops_2026.md) — 生产环境模型监控
 
 ---
 
@@ -1461,9 +1461,9 @@ class LLMEvaluationPipeline:
 
 ## Related
 
-- [[08_Model_Evaluation/README]] — 模型评估 (Model Evaluation) (共享: ab-testing, benchmark, metrics, model-evaluation)
-- [[08_Model_Evaluation/Evaluation-in-nutshell.md|Evaluation-in-nutshell]]
-- [[08_Model_Evaluation/Model_Evaluation_for_dummy.md|Model_Evaluation_for_dummy]]
-- [[17_Ethics_Safety/Safety_Evaluation_Framework|AI 安全评测框架]] — 安全评测基准与红队测试方法论
+- [[模型评估/README]] — 模型评估 (Model Evaluation) (共享: ab-testing, benchmark, metrics, model-evaluation)
+- [[模型评估/Evaluation-in-nutshell.md|Evaluation-in-nutshell]]
+- [[模型评估/Model_Evaluation_for_dummy.md|Model_Evaluation_for_dummy]]
+- [[伦理安全/Safety_Evaluation_Framework|AI 安全评测框架]] — 安全评测基准与红队测试方法论
 - [[_synthesis/safety-evaluation-red-teaming|安全评测 × 红队]] — 模型评估与安全
 - [[_synthesis/agent-evaluation-model-evaluation|Agent 评估 × 模型评估]] — 从指标到行为的评估范式迁移

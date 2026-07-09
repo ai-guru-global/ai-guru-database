@@ -305,8 +305,8 @@ AI 的学习过程完全一样：
 
 建议接下来：
 1. **实际体验**：去试试 ChatGPT 或其他 AI 工具，感受一下
-2. **继续学习**：阅读 [机器学习基础](../02_Machine_Learning/Supervised_Learning/Supervised_Learning_for_dummy.md)
-3. **动手实践**：试试 [Vibe Coding](../16_AI_Coding/Practice/Vibe_Coding_Getting_Started.md)，用 AI 帮你写代码
+2. **继续学习**：阅读 [机器学习基础](../机器学习/Supervised_Learning/Supervised_Learning_for_dummy.md)
+3. **动手实践**：试试 [Vibe Coding](../AI编程/Practice/Vibe_Coding_Getting_Started.md)，用 AI 帮你写代码
 
 > 记住：每个专家都曾是初学者。你已经开始了解 AI 了，这就是最棒的一步！
 
@@ -317,7 +317,7 @@ AI 的学习过程完全一样：
 
 ## Related
 
-- [[00_AI_Introduction/AI_Fundamentals]] — AI 基础概念入门 (共享: ai, basics, fundamentals, introduction)
-- [[00_AI_Introduction/README]] — 00 - AI 简介与历史 (共享: ai, introduction)
-- [[00_AI_Introduction/README_for_dummy]] — 00 AI 简介与历史 — 小白版 🚀 (共享: ai, introduction)
-- [[01_Fundamentals/AI_Hardware/README]] — AI 硬件与芯片 (AI Hardware) (共享: basics, fundamentals)
+- [[AI入门/AI_Fundamentals]] — AI 基础概念入门 (共享: ai, basics, fundamentals, introduction)
+- [[AI入门/README]] — 00 - AI 简介与历史 (共享: ai, introduction)
+- [[AI入门/README_for_dummy]] — 00 AI 简介与历史 — 小白版 🚀 (共享: ai, introduction)
+- [[数学基础/AI_Hardware/README]] — AI 硬件与芯片 (AI Hardware) (共享: basics, fundamentals)

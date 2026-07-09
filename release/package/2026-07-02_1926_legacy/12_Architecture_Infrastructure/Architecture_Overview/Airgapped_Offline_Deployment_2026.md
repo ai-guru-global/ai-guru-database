@@ -175,6 +175,6 @@ agent = CodeAgent(tools=[InternalKBSearchTool()], model=model)
 
 ---
 ## 相关阅读
-- [[10_Deployment_Inference/Inference_Engines/TGI_Deep_Dive]]
-- [[15_Agent_Production/Agent_Frameworks/SmolAgents_Practical_Guide]]
-- [[14_RAG_Systems/Embeddings/HF_Datasets_Streaming]]
+- [[部署推理/Inference_Engines/TGI_Deep_Dive]]
+- [[Agent/Agent_Frameworks/SmolAgents_Practical_Guide]]
+- [[RAG系统/Embeddings/HF_Datasets_Streaming]]

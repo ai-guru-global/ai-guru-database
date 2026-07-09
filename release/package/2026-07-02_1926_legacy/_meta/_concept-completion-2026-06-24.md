@@ -122,8 +122,8 @@ baseline: _meta/_improvement-execution-2026-06-24.md (2026-06-24)
 - `90_Learn/guides/learning_paths_2026.md` (32 条)
 - `93_Templates/DOCUMENT_TEMPLATES.md` (21 条)
 - `90_Learn/Courses/apachecn/ailearning_guide.md` (9 条)
-- `15_Agent_Production/Agent_Foundations/AI_Agents.md` (7 条)
-- `06_Reinforcement_Learning/Deep_RL/Deep_RL.md` (7 条)
+- `Agent/Agent_Foundations/AI_Agents.md` (7 条)
+- `强化学习/Deep_RL/Deep_RL.md` (7 条)
 
 ---
 

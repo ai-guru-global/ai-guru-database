@@ -1878,4 +1878,4 @@ Phase 5: 高级特性 (持续)
 
 ## Related
 
-- [[12_Architecture_Infrastructure/AI_Gateway/LiteLLM_Deep_Dive|LiteLLM_Deep_Dive]]
+- [[架构基建/AI_Gateway/LiteLLM_Deep_Dive|LiteLLM_Deep_Dive]]

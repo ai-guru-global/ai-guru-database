@@ -653,11 +653,11 @@ client = OpenAI(base_url="http://localhost:30000/v1", api_key="not-needed")
 
 ## Related
 
-- [[10_Deployment_Inference/Deployment_Inference.md|Deployment_Inference]]
-- [[10_Deployment_Inference/Deployment_Inference_2026.md|Deployment_Inference_2026]]
-- [[10_Deployment_Inference/Deployment_Inference_for_dummy.md|Deployment_Inference_for_dummy]]
-- [[10_Deployment_Inference/Inference-in-nutshell.md|Inference-in-nutshell]]
-- [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive.md|vLLM_Deep_Dive]]
-- [[10_Deployment_Inference/Inference_Engines/TensorRT_LLM_Deep_Dive.md|TensorRT_LLM_Deep_Dive]]
-- [[10_Deployment_Inference/Inference_Engines/TGI_Deep_Dive.md|TGI_Deep_Dive]]
-- [[10_Deployment_Inference/Inference_Engines/LMDeploy_Deep_Dive.md|LMDeploy_Deep_Dive]]
+- [[部署推理/Deployment_Inference.md|Deployment_Inference]]
+- [[部署推理/Deployment_Inference_2026.md|Deployment_Inference_2026]]
+- [[部署推理/Deployment_Inference_for_dummy.md|Deployment_Inference_for_dummy]]
+- [[部署推理/Inference-in-nutshell.md|Inference-in-nutshell]]
+- [[部署推理/Inference_Engines/vLLM_Deep_Dive.md|vLLM_Deep_Dive]]
+- [[部署推理/Inference_Engines/TensorRT_LLM_Deep_Dive.md|TensorRT_LLM_Deep_Dive]]
+- [[部署推理/Inference_Engines/TGI_Deep_Dive.md|TGI_Deep_Dive]]
+- [[部署推理/Inference_Engines/LMDeploy_Deep_Dive.md|LMDeploy_Deep_Dive]]

@@ -19,9 +19,9 @@ relationships:
 - target: '_concepts/distributed-parallelism'
   type: related_to
 sources:
-- 12_Architecture_Infrastructure/Hardware_Compute/CDI_Deep_Dive.md
-- 12_Architecture_Infrastructure/CDI_for_dummy.md
-- 12_Architecture_Infrastructure/Architecture_Overview/AI_Infrastructure_2026
+- 架构基建/Hardware_Compute/CDI_Deep_Dive.md
+- 架构基建/CDI_for_dummy.md
+- 架构基建/Architecture_Overview/AI_Infrastructure_2026
 summary: CDI 是容器运行时层的「设备通用语」——用一份标准 JSON 描述 GPU/FPGA/RDMA/国产加速器如何接入容器，让 NVIDIA、华为昇腾、寒武纪等异构硬件以同一套方式被 vLLM/TGI 等 AI 工作负载透明使用，是设备插件与 DRA 共同依赖的设备注入地基。
 provenance:
   extracted: 0.7
@@ -68,7 +68,7 @@ aliases:
 ## 典型场景
 
 - **LLM 推理容器化**: vLLM / TGI / TensorRT-LLM 在 K8s 上获取 GPU，无需 `NVIDIA_VISIBLE_DEVICES`
-- **国产/异构加速器统一接入**: 昇腾、寒武纪、壁仞、AMD、Intel 用同一套语言接入（见 [[01_Fundamentals/AI_Hardware/Chinese_AI_Chips_Deep_Dive]]）
+- **国产/异构加速器统一接入**: 昇腾、寒武纪、壁仞、AMD、Intel 用同一套语言接入（见 [[数学基础/AI_Hardware/Chinese_AI_Chips_Deep_Dive]]）
 - **MIG 切片**: H100 切 7 份，每份独立 CDI device，隔离推理实例
 - **GPUDirect RDMA / 训练**: GPU 直连网卡旁路 CPU，spec 同时声明网卡与 GPU
 - **异构混部**: 一个 Pod 同时申请 GPU + 智能网卡，CDI 合并两家 edits
@@ -108,15 +108,15 @@ CDI (设备注入地基)
 
 ## 延伸阅读
 
-- [[12_Architecture_Infrastructure/Hardware_Compute/CDI_Deep_Dive|CDI 容器设备接口标准深度解析]]
-- [[12_Architecture_Infrastructure/CDI_for_dummy|CDI 小白版]]
-- [[12_Architecture_Infrastructure/Hardware_Compute/DRA_Deep_Dive|DRA 深度解析（配对概念）]]
+- [[架构基建/Hardware_Compute/CDI_Deep_Dive|CDI 容器设备接口标准深度解析]]
+- [[架构基建/CDI_for_dummy|CDI 小白版]]
+- [[架构基建/Hardware_Compute/DRA_Deep_Dive|DRA 深度解析（配对概念）]]
 - [[_concepts/dra|DRA 动态资源分配（分配层搭档）]]
 - [[_concepts/gpu-operator|NVIDIA GPU Operator（生成 CDI spec 的运维层）]]
 - [[_concepts/oci-runtime|OCI Runtime Spec（CDI 注入的最终落点）]]
-- [[12_Architecture_Infrastructure/Architecture_Overview/AI_Infrastructure_2026|AI Infrastructure 2026]]
-- [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive|vLLM 深度解析]]
-- [[10_Deployment_Inference/Inference_Engines/TensorRT_LLM_Deep_Dive|TensorRT-LLM 深度解析]]
-- [[01_Fundamentals/AI_Hardware/Chinese_AI_Chips_Deep_Dive|国产 AI 芯片深度解析]]
+- [[架构基建/Architecture_Overview/AI_Infrastructure_2026|AI Infrastructure 2026]]
+- [[部署推理/Inference_Engines/vLLM_Deep_Dive|vLLM 深度解析]]
+- [[部署推理/Inference_Engines/TensorRT_LLM_Deep_Dive|TensorRT-LLM 深度解析]]
+- [[数学基础/AI_Hardware/Chinese_AI_Chips_Deep_Dive|国产 AI 芯片深度解析]]
 - [[_concepts/llm-infrastructure|LLM 基础设施]]
 - [[_concepts/model-deployment|模型部署]]

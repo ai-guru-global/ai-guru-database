@@ -161,10 +161,10 @@ for m in models:
 ---
 
 ## 相关阅读
-- [[12_Architecture_Infrastructure/Architecture_Overview/AI_Infrastructure_2026]]
-- [[11_MLOps_Pipeline/Experiment_Tracking/Model_Registry_and_Cards_Deep_Dive]]
-- [[17_Ethics_Safety/AI_Security_2026]]
+- [[架构基建/Architecture_Overview/AI_Infrastructure_2026]]
+- [[MLOps/Experiment_Tracking/Model_Registry_and_Cards_Deep_Dive]]
+- [[伦理安全/AI_Security_2026]]
 
 ## Related
 
-- [[12_Architecture_Infrastructure/README|架构与基础设施 (Architecture & Infrastructure)]]
+- [[架构基建/README|架构与基础设施 (Architecture & Infrastructure)]]

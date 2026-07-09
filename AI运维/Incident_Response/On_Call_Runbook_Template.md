@@ -68,11 +68,11 @@ sources: []
 
 | 场景 | 入口 Runbook |
 |------|-------------|
-| LLM 推理延迟高 | [[13_AI_Ops/SRE_Reliability/LLM_Inference_Slow_Unavailable_Runbook|LLM 推理延迟/不可用 Runbook]] |
-| GPU OOM | [[13_AI_Ops/SRE_Reliability/GPU_OOM_Troubleshooting_Guide|GPU OOM 排障指南]] |
-| 训练任务失败 | [[07_Model_Training/Monitoring/LLM_Fine_Tuning_Job_Failure_Runbook_on_K8s|LLM 微调任务 K8s 失败排障]] |
-| 分布式训练 Hang | [[07_Model_Training/Distributed_Training/Distributed_Training_Hang_Runbook|分布式训练 Hang 排障]] |
-| MLflow 不可达 | [[11_MLOps_Pipeline/Troubleshooting/MLflow_Tracking_Server_Unreachable|MLflow Tracking Server 不可达]] |
+| LLM 推理延迟高 | [[AI运维/SRE_Reliability/LLM_Inference_Slow_Unavailable_Runbook|LLM 推理延迟/不可用 Runbook]] |
+| GPU OOM | [[AI运维/SRE_Reliability/GPU_OOM_Troubleshooting_Guide|GPU OOM 排障指南]] |
+| 训练任务失败 | [[模型训练/Monitoring/LLM_Fine_Tuning_Job_Failure_Runbook_on_K8s|LLM 微调任务 K8s 失败排障]] |
+| 分布式训练 Hang | [[模型训练/Distributed_Training/Distributed_Training_Hang_Runbook|分布式训练 Hang 排障]] |
+| MLflow 不可达 | [[MLOps/Troubleshooting/MLflow_Tracking_Server_Unreachable|MLflow Tracking Server 不可达]] |
 
 ## 5. 联系人
 
@@ -89,4 +89,4 @@ sources: []
 
 ## Related
 
-- [[13_AI_Ops/README|AI 运维与可观测性 (AI Ops)]]
+- [[AI运维/README|AI 运维与可观测性 (AI Ops)]]

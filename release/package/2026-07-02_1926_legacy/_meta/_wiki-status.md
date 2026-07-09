@@ -98,16 +98,16 @@ _4 chars/token heuristic_
 
 | 页面 | 入链 |
 |---|---|
-| 21_Interviews/AI_Data_Analyst/company_level_question_bank | 88 |
-| 15_Agent_Production/Agent_Evaluation/Assessment/Evaluation_Workflow | 73 |
-| 21_Interviews/AI_Data_Analyst/question_bank | 72 |
-| 21_Interviews/AI_Data_Analyst/interview_preparing | 72 |
-| 21_Interviews/AI_Data_Analyst/interview_answers | 72 |
-| 15_Agent_Production/Agent_Evaluation/Agent_Red_Teaming_2026 | 63 |
-| 15_Agent_Production/Agent_Evaluation/Agent_Harness_Complete_2026 | 63 |
-| 15_Agent_Production/Agent_Evaluation/Assessment/Production_Assessment | 61 |
-| 19_Talks/Andrew_Ng/sayings | 43 |
-| 19_Talks/Andrej_Karpathy/about | 43 |
+| 面试岗位/AI_Data_Analyst/company_level_question_bank | 88 |
+| Agent/Agent_Evaluation/Assessment/Evaluation_Workflow | 73 |
+| 面试岗位/AI_Data_Analyst/question_bank | 72 |
+| 面试岗位/AI_Data_Analyst/interview_preparing | 72 |
+| 面试岗位/AI_Data_Analyst/interview_answers | 72 |
+| Agent/Agent_Evaluation/Agent_Red_Teaming_2026 | 63 |
+| Agent/Agent_Evaluation/Agent_Harness_Complete_2026 | 63 |
+| Agent/Agent_Evaluation/Assessment/Production_Assessment | 61 |
+| 业界观点/Andrew_Ng/sayings | 43 |
+| 业界观点/Andrej_Karpathy/about | 43 |
 
 ## Category Distribution
 

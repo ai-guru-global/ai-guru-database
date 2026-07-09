@@ -241,8 +241,8 @@ evaluation_dashboard = {
 
 ## 相关阅读
 
-- [[08_Model_Evaluation/Model_Evaluation]] — 模型评估全景
-- [[08_Model_Evaluation/Evaluation_Tools/LLM_as_Judge_Deep_Dive]] — LLM 评估深度解读
-- [[08_Model_Evaluation/Model_Evaluation_for_dummy]] — 模型评估入门版
-- [[08_Model_Evaluation/Benchmarks/HF_Leaderboard_Eval_Guide]] — HuggingFace 排行榜实战
-- [[08_Model_Evaluation/Fairness_Evaluation_for_dummy]] — 公平性评估入门
+- [[模型评估/Model_Evaluation]] — 模型评估全景
+- [[模型评估/Evaluation_Tools/LLM_as_Judge_Deep_Dive]] — LLM 评估深度解读
+- [[模型评估/Model_Evaluation_for_dummy]] — 模型评估入门版
+- [[模型评估/Benchmarks/HF_Leaderboard_Eval_Guide]] — HuggingFace 排行榜实战
+- [[模型评估/Fairness_Evaluation_for_dummy]] — 公平性评估入门

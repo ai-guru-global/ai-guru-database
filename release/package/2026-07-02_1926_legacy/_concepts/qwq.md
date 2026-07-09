@@ -10,7 +10,7 @@ relationships:
   - target: "_concepts/deepseek-models"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "QwQ 是通义千问系列的推理模型（32B），通过 Chain-of-Thought 思维链实现深度推理，对标 OpenAI o1 和 DeepSeek-R1。AI Stack 预置 QwQ-32B。"
 provenance:
   extracted: 0.30
@@ -100,4 +100,4 @@ QwQ 推理流程
 - [[_concepts/qwen3-pro]] — Qwen3-Pro 优化模型
 - [[_concepts/deepseek-models]] — DeepSeek 系列
 - [[_concepts/cot-react-reasoning-prompt]] — CoT 推理提示
-- [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析

@@ -11,14 +11,14 @@ relationships:
     type: extends
   - target: "_concepts/flash-attention-kernels"
     type: uses
-  - target: "10_Deployment_Inference/Inference_Performance/Prefill_Decode_Disaggregation"
+  - target: "部署推理/Inference_Performance/Prefill_Decode_Disaggregation"
     type: optimized_by
-  - target: "10_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy"
+  - target: "部署推理/Inference_Performance/Inference_Terms_for_dummy"
     type: simplified_by
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
-  - 10_Deployment_Inference/Inference_Performance/Prefill_Decode_Disaggregation.md
-  - 10_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy.md
+  - 架构基建/AI_Stack_Deep_Dive.md
+  - 部署推理/Inference_Performance/Prefill_Decode_Disaggregation.md
+  - 部署推理/Inference_Performance/Inference_Terms_for_dummy.md
 summary: "LLM 推理分为 Prefill（处理输入，计算密集）和 Decode（逐 token 生成，内存带宽密集）两阶段。优化策略截然不同，理解两阶段差异是推理系统设计的核心。"
 provenance:
   extracted: 0.60
@@ -170,6 +170,6 @@ Append 优化：将新 token 的 KV 写入与 Attention 计算融合，减少一
 - [[_concepts/paged-attention]] — PagedAttention（KV Cache 管理）
 - [[_concepts/mixture-of-experts]] — MoE（与推理阶段的协同）
 - [[_concepts/ttft]] — TTFT
-- [[10_Deployment_Inference/Inference_Performance/Prefill_Decode_Disaggregation|Prefill-Decode 分离]]
-- [[10_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy|推理性能术语大白话解释]]
-- [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack
+- [[部署推理/Inference_Performance/Prefill_Decode_Disaggregation|Prefill-Decode 分离]]
+- [[部署推理/Inference_Performance/Inference_Terms_for_dummy|推理性能术语大白话解释]]
+- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack

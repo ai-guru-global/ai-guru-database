@@ -41,4 +41,4 @@ sources: []
 
 - [[_concepts/adversarial-attack|Adversarial Attack]]
 - [[_concepts/model-security|Model Security]]
-- [[12_Architecture_Infrastructure/Security/AI_Security_Fundamentals|AI 安全基础]]
+- [[架构基建/Security/AI_Security_Fundamentals|AI 安全基础]]

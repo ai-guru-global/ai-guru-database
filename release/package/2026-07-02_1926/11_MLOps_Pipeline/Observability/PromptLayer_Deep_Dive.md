@@ -21,7 +21,7 @@ sources: []
 
 > **一句话理解**: PromptLayer 是提示词管理平台——追踪 LLM 请求、版本化管理提示词、性能分析、团队协作，Prompt 工程的 IDE。
 
-> 📐 **概念与选型方法论**: Prompt 工程化运维（版本化/A-B/CI 门禁）见 [[11_MLOps_Pipeline/Prompt_Engineering_Ops]]。本文聚焦 PromptLayer 工具用法。
+> 📐 **概念与选型方法论**: Prompt 工程化运维（版本化/A-B/CI 门禁）见 [[MLOps/Prompt_Engineering_Ops]]。本文聚焦 PromptLayer 工具用法。
 
 ---
 
@@ -383,8 +383,8 @@ templates = promptlayer.prompt_templates.list(
 
 ## Related
 
-- [[13_AI_Ops/AIOps-in-nutshell.md|AIOps-in-nutshell]]
-- [[13_AI_Ops/SRE_Reliability/AI_Incident_Response_Playbook|AI_Incident_Response_Playbook]]
-- [[13_AI_Ops/AI_Ops_for_dummy.md|AI_Ops_for_dummy]]
-- [[13_AI_Ops/README.md|13_AI_Ops README]]
-- [[13_AI_Ops/README_for_dummy.md|README_for_dummy]]
+- [[AI运维/AIOps-in-nutshell.md|AIOps-in-nutshell]]
+- [[AI运维/SRE_Reliability/AI_Incident_Response_Playbook|AI_Incident_Response_Playbook]]
+- [[AI运维/AI_Ops_for_dummy.md|AI_Ops_for_dummy]]
+- [[AI运维/README.md|AI运维 README]]
+- [[AI运维/README_for_dummy.md|README_for_dummy]]

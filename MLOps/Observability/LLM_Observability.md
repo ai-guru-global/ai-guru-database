@@ -6,7 +6,7 @@ summary: "> **一句话理解**: 传统 MLOps 监控漂移就够，LLM 应用要
 created: 2026-06-15
 updated: 2026-06-15
 tier: supporting
-parent: "[[11_MLOps_Pipeline/LLMOps_2026]]"
+parent: "[[MLOps/LLMOps_2026]]"
 aliases:
   - "Llm Observability"
   - "LLM Observability"
@@ -226,7 +226,7 @@ def scrub_pii(text: str) -> str:
     return text
 ```
 
-详见 [[17_Ethics_Safety/Privacy_Preserving_AI/README]]。
+详见 [[伦理安全/Privacy_Preserving_AI/README]]。
 
 ---
 
@@ -298,17 +298,17 @@ graph TD
 ## 8. 相关文档
 
 ### 本章内
-- [[11_MLOps_Pipeline/LLMOps_2026]] — 本系列主线（§7 是本文概览版）
-- [[11_MLOps_Pipeline/Evaluation/LLM_Evaluation_Pipeline]] — 评估方法（本文是在线版）
-- [[11_MLOps_Pipeline/Observability/Model_Monitoring_and_Drift_Detection_2026]] — 传统漂移监控
-- [[11_MLOps_Pipeline/Observability/ML_Observability_SLO]] — 系统层 SLO/SLI
+- [[MLOps/LLMOps_2026]] — 本系列主线（§7 是本文概览版）
+- [[MLOps/Evaluation/LLM_Evaluation_Pipeline]] — 评估方法（本文是在线版）
+- [[MLOps/Observability/Model_Monitoring_and_Drift_Detection_2026]] — 传统漂移监控
+- [[MLOps/Observability/ML_Observability_SLO]] — 系统层 SLO/SLI
 
 ### 跨章
-- [[13_AI_Ops/README]] — AI 系统运维（基础设施层）
-- [[17_Ethics_Safety/AI_Security_2026/README]] — 安全与红队
-- [[17_Ethics_Safety/Privacy_Preserving_AI/README]] — 隐私保护
-- [[15_Agent_Production/Agent_Evaluation/README]] — Agent 调用链评估
-- [[09_Testing/Weights_Biases_Deep_Dive]] — W&B 实验追踪
+- [[AI运维/README]] — AI 系统运维（基础设施层）
+- [[伦理安全/AI_Security_2026/README]] — 安全与红队
+- [[伦理安全/Privacy_Preserving_AI/README]] — 隐私保护
+- [[Agent/Agent_Evaluation/README]] — Agent 调用链评估
+- [[AI测试/Weights_Biases_Deep_Dive]] — W&B 实验追踪
 - [[_synthesis/llm-observability-aiops|LLM 可观测性 × AIOps: 从系统监控到语义监控的范式跃迁]]
 
 ---

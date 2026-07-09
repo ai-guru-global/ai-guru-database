@@ -12,7 +12,7 @@ relationships:
     type: related_to
   - target: "_concepts/ai-ethics"
     type: related_to
-sources: [00_AI_Introduction/AI_Technology_Landscape.md]
+sources: [AI入门/AI_Technology_Landscape.md]
 summary: AI技术生态是一个从基础设施到应用的完整技术栈，涵盖机器学习算法、深度学习架构、大语言模型、计算机视觉及前沿智能体技术。
 provenance:
   extracted: 0.80
@@ -163,7 +163,7 @@ AI Agent核心技术栈：
 
 ## 来源
 
-- _references/00_AI_Introduction/AI_Technology_Landscape
+- _references/AI入门/AI_Technology_Landscape
 
 ## Related
 

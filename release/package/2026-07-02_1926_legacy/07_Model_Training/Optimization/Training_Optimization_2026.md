@@ -181,7 +181,7 @@ class TransformerBlock(nn.Module):
 
 ## 3. 混合精度训练 (Mixed Precision)
 
-> **详细内容** → [./Mixed_Precision_Training.md](07_Model_Training/Optimization/Mixed_Precision_Training.md)
+> **详细内容** → [./Mixed_Precision_Training.md](模型训练/Optimization/Mixed_Precision_Training.md)
 
 ### 3.1 快速概览
 
@@ -924,26 +924,26 @@ return checkpoint(forward_fn, x, use_reentrant=False)
 | CUDA Graphs | ⚠️ | ✅ | 推理 shape 固定 |
 | 序列并行 | ✅ | ✅ | 长上下文推理必需 |
 
-**推理专属优化** → [../10_Deployment_Inference/Inference-in-nutshell.md](10_Deployment_Inference/Inference-in-nutshell.md)
+**推理专属优化** → [../部署推理/Inference-in-nutshell.md](部署推理/Inference-in-nutshell.md)
 
 ---
 
 ## 🔗 相关章节
 
 ### 前置知识
-- [优化器基础与原理](03_Deep_Learning/Optimization/Optimization.md) — SGD/Adam/AdamW 数学基础
-- [神经网络核心](03_Deep_Learning/Neural_Network_Core/Neural_Network_Core.md) — 反向传播、激活函数
+- [优化器基础与原理](深度学习/Optimization/Optimization.md) — SGD/Adam/AdamW 数学基础
+- [神经网络核心](深度学习/Neural_Network_Core/Neural_Network_Core.md) — 反向传播、激活函数
 
 ### 横向关联
-- [混合精度训练详解](07_Model_Training/Optimization/Mixed_Precision_Training.md) — FP16/BF16/FP8 深度解析
-- [分布式训练 2026](07_Model_Training/Distributed_Training/Distributed_Training_2026.md) — DDP/FSDP/DeepSpeed/Megatron-LM
-- [长上下文模型](05_NLP_LLMs/LLM_Architectures/Long_Context_Models_2026.md) — Ring Attention、稀疏注意力
+- [混合精度训练详解](模型训练/Optimization/Mixed_Precision_Training.md) — FP16/BF16/FP8 深度解析
+- [分布式训练 2026](模型训练/Distributed_Training/Distributed_Training_2026.md) — DDP/FSDP/DeepSpeed/Megatron-LM
+- [长上下文模型](大模型/LLM_Architectures/Long_Context_Models_2026.md) — Ring Attention、稀疏注意力
 
 ### 纵向进阶
-- [模型评估](08_Model_Evaluation/Model_Evaluation.md) — 训练后验证模型质量
-- [部署推理优化](10_Deployment_Inference/Inference-in-nutshell.md) — 模型上线推理加速
-- [MLOps 流水线](11_MLOps_Pipeline/MLOps_Pipeline.md) — 自动化训练与监控
-- [AI 基础设施](12_Architecture_Infrastructure/Architecture_Overview/AI_Infrastructure_2026) — 集群网络与存储优化
+- [模型评估](模型评估/Model_Evaluation.md) — 训练后验证模型质量
+- [部署推理优化](部署推理/Inference-in-nutshell.md) — 模型上线推理加速
+- [MLOps 流水线](MLOps/MLOps_Pipeline.md) — 自动化训练与监控
+- [AI 基础设施](架构基建/Architecture_Overview/AI_Infrastructure_2026) — 集群网络与存储优化
 
 ---
 
@@ -979,8 +979,8 @@ return checkpoint(forward_fn, x, use_reentrant=False)
 
 ## Related
 
-- [[07_Model_Training/Distributed_Training/Distributed_Training_2026.md|Distributed_Training_2026]]
-- [[07_Model_Training/Distributed_Training/Distributed_Training_for_dummy.md|Distributed_Training_for_dummy]]
-- [[07_Model_Training/Optimization/Mixed_Precision_Training.md|Mixed_Precision_Training]]
-- [[07_Model_Training/Model-Training-in-nutshell.md|Model-Training-in-nutshell]]
-- [[07_Model_Training/Model_Training_for_dummy.md|Model_Training_for_dummy]]
+- [[模型训练/Distributed_Training/Distributed_Training_2026.md|Distributed_Training_2026]]
+- [[模型训练/Distributed_Training/Distributed_Training_for_dummy.md|Distributed_Training_for_dummy]]
+- [[模型训练/Optimization/Mixed_Precision_Training.md|Mixed_Precision_Training]]
+- [[模型训练/Model-Training-in-nutshell.md|Model-Training-in-nutshell]]
+- [[模型训练/Model_Training_for_dummy.md|Model_Training_for_dummy]]

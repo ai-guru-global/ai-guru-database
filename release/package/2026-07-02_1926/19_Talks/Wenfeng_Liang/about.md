@@ -85,12 +85,12 @@ sources: []
 
 ## 相关文档
 
-- [DeepSeek 技术全景](../../05_NLP_LLMs/Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive.md)
-- [MoE 案例研究](../../05_NLP_LLMs/LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md)
-- [DeepSeek-R1 技术分析](../../05_NLP_LLMs/Reasoning_Models/DeepSeek_R1_Technical_Analysis.md)
+- [DeepSeek 技术全景](../../大模型/Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive.md)
+- [MoE 案例研究](../../大模型/LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md)
+- [DeepSeek-R1 技术分析](../../大模型/Reasoning_Models/DeepSeek_R1_Technical_Analysis.md)
 
 ---
 
 *Last updated: 2026-06-12*
 
-- [[19_Talks/README|AI 名人演讲与观点 (Talks)]]
+- [[业界观点/README|AI 名人演讲与观点 (Talks)]]

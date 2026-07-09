@@ -10,7 +10,7 @@ relationships:
   - target: "_concepts/litellm"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "Helicone 是轻量级 LLM 可观测性平台——通过 API 代理方式实现一键接入，提供成本追踪、延迟监控、缓存和速率限制。接入只需改一行 base_url，是最简单的 LLM 监控方案。"
 provenance:
   extracted: 0.15

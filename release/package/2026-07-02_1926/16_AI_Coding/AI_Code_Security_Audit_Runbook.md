@@ -592,13 +592,13 @@ AI 代码安全审计不是一次性的项目，而是伴随 AI 编程工具演�
 
 ## Related
 
-- [[16_AI_Coding/Methodology/Vibe_Coding_Production_Practices|Vibe Coding 生产环境实践指南]]
-- [[16_AI_Coding/Methodology/Agentic_Coding_Methodology|Agentic Coding 方法论]]
-- [[16_AI_Coding/Methodology/Vibe_Coding_Methodology|Vibe Coding 方法论]]
-- [[16_AI_Coding/Theory/AI_Coding_Theory|AI 编程理论基础]]
-- [[16_AI_Coding/Tools/AI_Coding_Assistants_2026|AI 编程助手全景报告]]
-- [[16_AI_Coding/Tools/Hermes_Agent_2026|Hermes Agent 2026 年专业指南]]
-- [[16_AI_Coding/Practice/Vibe_Coding_Prompt_Templates|Vibe Coding 提示词模板库]]
-- [[16_AI_Coding/Practice/Vibe_Coding_Getting_Started|Vibe Coding 入门指南]]
-- [[16_AI_Coding/Practice/Vibe_Coding_Real_World_Cases|Vibe Coding 实战案例集]]
-- [[16_AI_Coding/README|AI 编程 (AI Coding)]]
+- [[AI编程/Methodology/Vibe_Coding_Production_Practices|Vibe Coding 生产环境实践指南]]
+- [[AI编程/Methodology/Agentic_Coding_Methodology|Agentic Coding 方法论]]
+- [[AI编程/Methodology/Vibe_Coding_Methodology|Vibe Coding 方法论]]
+- [[AI编程/Theory/AI_Coding_Theory|AI 编程理论基础]]
+- [[AI编程/Tools/AI_Coding_Assistants_2026|AI 编程助手全景报告]]
+- [[AI编程/Tools/Hermes_Agent_2026|Hermes Agent 2026 年专业指南]]
+- [[AI编程/Practice/Vibe_Coding_Prompt_Templates|Vibe Coding 提示词模板库]]
+- [[AI编程/Practice/Vibe_Coding_Getting_Started|Vibe Coding 入门指南]]
+- [[AI编程/Practice/Vibe_Coding_Real_World_Cases|Vibe Coding 实战案例集]]
+- [[AI编程/README|AI 编程 (AI Coding)]]

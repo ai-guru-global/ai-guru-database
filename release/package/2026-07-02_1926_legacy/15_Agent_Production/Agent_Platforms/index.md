@@ -7,11 +7,11 @@ updated: 2026-07-02
 
 # Agent Platforms
 
-This page indexes the contents of `15_Agent_Production/Agent_Platforms`.
+This page indexes the contents of `Agent/Agent_Platforms`.
 
 ## Files
 
-- [[15_Agent_Production/Agent_Platforms/Dify_Coze_MLServe_Dive|Dify Coze Mlserve Dive]]
-- [[15_Agent_Production/Agent_Platforms/OpenRouter_Deep_Dive|Openrouter Deep Dive]]
-- [[15_Agent_Production/Agent_Platforms/PromptFlow_Deep_Dive|Promptflow Deep Dive]]
-- [[15_Agent_Production/Agent_Platforms/README|README]]
+- [[Agent/Agent_Platforms/Dify_Coze_MLServe_Dive|Dify Coze Mlserve Dive]]
+- [[Agent/Agent_Platforms/OpenRouter_Deep_Dive|Openrouter Deep Dive]]
+- [[Agent/Agent_Platforms/PromptFlow_Deep_Dive|Promptflow Deep Dive]]
+- [[Agent/Agent_Platforms/README|README]]

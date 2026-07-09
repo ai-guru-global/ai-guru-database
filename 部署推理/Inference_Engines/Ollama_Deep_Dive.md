@@ -741,11 +741,11 @@ Ollama 在推理栈中的位置
 
 ## Related
 
-- [[10_Deployment_Inference/Inference_Engines/llama_cpp_Deep_Dive|llama.cpp: 纯 C/C++ 本地 LLM 推理]]
-- [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive|vLLM: 生产级 LLM 推理引擎]]
-- [[10_Deployment_Inference/Inference_Engines/SGLang_Deep_Dive|SGLang: 高性能 LLM 推理框架]]
-- [[10_Deployment_Inference/Deployment_Inference.md|Deployment_Inference]]
-- [[10_Deployment_Inference/Deployment_Inference_2026.md|Deployment_Inference_2026]]
-- [[10_Deployment_Inference/Deployment_Inference_for_dummy.md|Deployment_Inference_for_dummy]]
-- [[10_Deployment_Inference/Inference-in-nutshell.md|Inference-in-nutshell]]
-- [[10_Deployment_Inference/Inference_Engines/LLM_Inference_Engine_Selection_Guide|LLM 推理引擎选型指南]]
+- [[部署推理/Inference_Engines/llama_cpp_Deep_Dive|llama.cpp: 纯 C/C++ 本地 LLM 推理]]
+- [[部署推理/Inference_Engines/vLLM_Deep_Dive|vLLM: 生产级 LLM 推理引擎]]
+- [[部署推理/Inference_Engines/SGLang_Deep_Dive|SGLang: 高性能 LLM 推理框架]]
+- [[部署推理/Deployment_Inference.md|Deployment_Inference]]
+- [[部署推理/Deployment_Inference_2026.md|Deployment_Inference_2026]]
+- [[部署推理/Deployment_Inference_for_dummy.md|Deployment_Inference_for_dummy]]
+- [[部署推理/Inference-in-nutshell.md|Inference-in-nutshell]]
+- [[部署推理/Inference_Engines/LLM_Inference_Engine_Selection_Guide|LLM 推理引擎选型指南]]

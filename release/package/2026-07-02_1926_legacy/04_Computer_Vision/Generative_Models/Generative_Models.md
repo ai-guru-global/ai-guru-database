@@ -520,8 +520,8 @@ result.save("controlnet_output.png")
 
 ### 前置知识
 - [卷积神经网络](../Image_Classification_Detection/Image_Classification_Detection.md): U-Net 基础
-- [自编码器](../../03_Deep_Learning/Neural_Network_Core/Neural_Network_Core.md): VAE 原理
-- [Transformer](../../05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution.md): CLIP, Attention 机制
+- [自编码器](../../深度学习/Neural_Network_Core/Neural_Network_Core.md): VAE 原理
+- [Transformer](../../大模型/Transformer_Revolution/Transformer_Revolution.md): CLIP, Attention 机制
 
 ### 后续推荐
 - [多模态视觉](../Multimodal_Vision/Multimodal_Vision.md): CLIP, BLIP
@@ -529,7 +529,7 @@ result.save("controlnet_output.png")
 - [3D 视觉](../3D_Vision/3D_Vision.md): NeRF, 3D 生成
 
 ### 跨领域应用
-- [强化学习](../../06_Reinforcement_Learning/README.md): RLHF 对齐生成模型
+- [强化学习](../../强化学习/README.md): RLHF 对齐生成模型
 
 ---
 

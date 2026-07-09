@@ -549,4 +549,4 @@ Step 3: 人工抽样验证（1-2 小时）
 
 ## Related
 
-- [[10_Deployment_Inference/README|模型部署与推理]]
+- [[部署推理/README|模型部署与推理]]

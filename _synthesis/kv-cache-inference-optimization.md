@@ -272,6 +272,6 @@ PD 分离架构数据流:
 - [[_synthesis/kv-cache-paged-attention]] -- KV Cache x PagedAttention
 - [[_synthesis/paged-attention-continuous-batching]] -- PagedAttention x Continuous Batching
 - [[_synthesis/serving-deployment]] -- 模型服务 x 模型部署
-- [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive]] -- vLLM 深度解析
-- [[10_Deployment_Inference/Inference_Engines/SGLang_Deep_Dive]] -- SGLang 深度解析
-- [[10_Deployment_Inference/Caching/KV_Cache_Deep_Dive]] -- KV Cache 深度研究
+- [[部署推理/Inference_Engines/vLLM_Deep_Dive]] -- vLLM 深度解析
+- [[部署推理/Inference_Engines/SGLang_Deep_Dive]] -- SGLang 深度解析
+- [[部署推理/Caching/KV_Cache_Deep_Dive]] -- KV Cache 深度研究

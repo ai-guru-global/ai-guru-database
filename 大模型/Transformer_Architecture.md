@@ -31,9 +31,9 @@ sources: []
 
 ## 关联文档
 
-- [[05_NLP_LLMs/Transformer_Revolution/Self_Attention_Mechanism]] — Self-Attention 机制深入剖析
-- [[05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution]] — Transformer 革命全景
-- [[20_Papers_and_Research/Architecture/Attention_Is_All_You_Need_Deep_Dive]] — 原始论文深度解读
+- [[大模型/Transformer_Revolution/Self_Attention_Mechanism]] — Self-Attention 机制深入剖析
+- [[大模型/Transformer_Revolution/Transformer_Revolution]] — Transformer 革命全景
+- [[论文精读/Architecture/Attention_Is_All_You_Need_Deep_Dive]] — 原始论文深度解读
 
 ---
 
@@ -208,8 +208,8 @@ class MultiHeadAttention(nn.Module):
 
 ## 延伸阅读 (Further Reading)
 
-- [[05_NLP_LLMs/Transformer_Revolution/Self_Attention_Mechanism]] — Self-Attention 机制详解
-- [[05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution]] — Transformer 革命全景
-- [[05_NLP_LLMs/NLP_Fundamentals]] — NLP 基础知识
-- [[05_NLP_LLMs/LLM_Fundamentals]] — 大语言模型基础
-- [[20_Papers_and_Research/Architecture/Attention_Is_All_You_Need_Deep_Dive]] — "Attention Is All You Need" 论文深度解读
+- [[大模型/Transformer_Revolution/Self_Attention_Mechanism]] — Self-Attention 机制详解
+- [[大模型/Transformer_Revolution/Transformer_Revolution]] — Transformer 革命全景
+- [[大模型/NLP_Fundamentals]] — NLP 基础知识
+- [[大模型/LLM_Fundamentals]] — 大语言模型基础
+- [[论文精读/Architecture/Attention_Is_All_You_Need_Deep_Dive]] — "Attention Is All You Need" 论文深度解读

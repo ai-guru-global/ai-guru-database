@@ -262,9 +262,9 @@ except Exception as e:
 - ✅ 运行 Jupyter Notebook 中的示例
 
 接下来建议学习：
-- **[[01_Fundamentals/Python_Data_Science_Toolkit|Python 数据科学工具链]]** — NumPy / Pandas / Matplotlib
-- **[[01_Fundamentals/AI_Development_Environment_Setup|AI 开发环境配置]]** — Jupyter / Conda / GPU
-- **[[02_Machine_Learning/Supervised_Learning/Your_First_ML_Model|你的第一个 ML 模型]]** — 用 scikit-learn 训练真实模型
+- **[[数学基础/Python_Data_Science_Toolkit|Python 数据科学工具链]]** — NumPy / Pandas / Matplotlib
+- **[[数学基础/AI_Development_Environment_Setup|AI 开发环境配置]]** — Jupyter / Conda / GPU
+- **[[机器学习/Supervised_Learning/Your_First_ML_Model|你的第一个 ML 模型]]** — 用 scikit-learn 训练真实模型
 
 ---
 
@@ -285,8 +285,8 @@ except Exception as e:
 
 ## Related
 
-- [[01_Fundamentals/Python_Data_Science_Toolkit]] — NumPy / Pandas / Matplotlib / Scikit-learn
-- [[01_Fundamentals/AI_Development_Environment_Setup]] — Jupyter / Conda / Colab / GPU
-- [[01_Fundamentals/Linear_Algebra/Linear_Algebra_for_dummy]] — 线代基础
-- [[00_AI_Introduction/AI_Fundamentals_for_dummy]] — AI 概念小白版
+- [[数学基础/Python_Data_Science_Toolkit]] — NumPy / Pandas / Matplotlib / Scikit-learn
+- [[数学基础/AI_Development_Environment_Setup]] — Jupyter / Conda / Colab / GPU
+- [[数学基础/Linear_Algebra/Linear_Algebra_for_dummy]] — 线代基础
+- [[AI入门/AI_Fundamentals_for_dummy]] — AI 概念小白版
 - [[_synthesis/python-data-science-pipeline|Python × 数据科学]] — AI 入门完整工具链

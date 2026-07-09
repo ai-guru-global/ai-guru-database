@@ -10,8 +10,8 @@ relationships:
   - target: "_concepts/attention-variants"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
-  - 05_NLP_LLMs/LLM_Architectures
+  - 架构基建/AI_Stack_Deep_Dive.md
+  - 大模型/LLM_Architectures
 summary: RoPE 通过旋转矩阵将绝对位置信息注入注意力计算，天然支持相对位置感知与长度外推，是 LLaMA/Qwen/DeepSeek 等主流模型的标配位置编码方案。
 provenance:
   extracted: 0.45
@@ -150,7 +150,7 @@ DeepSeek-V3 在 MLA 架构中对 RoPE 做了特殊处理——**解耦 RoPE**：
 
 ## Related
 
-- [[05_NLP_LLMs/LLM_Architectures]] — LLM 架构全景
+- [[大模型/LLM_Architectures]] — LLM 架构全景
 - [[_concepts/transformer-architecture]] — Transformer 架构
 - [[_concepts/multi-head-latent-attention]] — Multi-head Latent Attention (MLA)
 - [[_concepts/attention-variants]] — GQA/MQA/SWA 注意力变体

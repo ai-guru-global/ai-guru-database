@@ -7,8 +7,8 @@ updated: 2026-07-02
 
 # Manufacturing
 
-This page indexes the contents of `18_AI_Applications_Industry/Manufacturing`.
+This page indexes the contents of `行业应用/Manufacturing`.
 
 ## Files
 
-- [[18_AI_Applications_Industry/Manufacturing/AI_Manufacturing_2026|AI Manufacturing 2026]]
+- [[行业应用/Manufacturing/AI_Manufacturing_2026|AI Manufacturing 2026]]

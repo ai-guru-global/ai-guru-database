@@ -183,6 +183,6 @@ export_to_video(video_frames, "panda_guitar.mp4", fps=8)
 ---
 
 ## 相关阅读
-- [[04_Computer_Vision/Video_Generation/Video_Generation_2026]]
-- [[15_Agent_Production/Agent_Skills/HuggingFace_Hub_Tools]]
-- [[01_Fundamentals/AI_Hardware/AI_Hardware_2026]]
+- [[计算机视觉/Video_Generation/Video_Generation_2026]]
+- [[Agent/Agent_Skills/HuggingFace_Hub_Tools]]
+- [[数学基础/AI_Hardware/AI_Hardware_2026]]

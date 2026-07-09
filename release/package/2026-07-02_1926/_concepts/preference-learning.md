@@ -15,7 +15,7 @@ relationships:
   - target: "_concepts/kto"
     type: includes
 sources:
-  - 07_Model_Training/Alignment/
+  - 模型训练/Alignment/
 summary: "Preference Learning（偏好学习）是 RLHF / DPO / IPO / KTO 等所有基于人类偏好训练方法的总称；通过学习"哪个回答更好"而非绝对正确来对齐模型。"
 lifecycle: reviewed
 tier: core
@@ -124,4 +124,4 @@ P(A ≻ B) = A 比 B 更好的概率
 - [[_concepts/rlhf]] — RLHF 总览
 - [[_concepts/dpo]] / [[_concepts/ppo]] / [[_concepts/kto]] / [[_concepts/ipo]] / [[_concepts/orpo]] / [[_concepts/grpo]]
 - [[_concepts/sft]] — SFT（偏好学习的前置阶段）
-- [[07_Model_Training/Alignment/index]] — 对齐章节
+- [[模型训练/Alignment/index]] — 对齐章节

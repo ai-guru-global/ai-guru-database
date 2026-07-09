@@ -8,9 +8,9 @@ sources: []
 
 # AI Solutions Architect
 
-This page indexes the contents of `21_Interviews/AI_Solutions_Architect`.
+This page indexes the contents of `面试岗位/AI_Solutions_Architect`.
 
 ## Files
 
-- [[21_Interviews/AI_Solutions_Architect/AI_Solutions_Architect 2|AI Solutions Architect 2]]
-- [[21_Interviews/AI_Solutions_Architect/AI_Solutions_Architect|AI Solutions Architect]]
+- [[面试岗位/AI_Solutions_Architect/AI_Solutions_Architect 2|AI Solutions Architect 2]]
+- [[面试岗位/AI_Solutions_Architect/AI_Solutions_Architect|AI Solutions Architect]]

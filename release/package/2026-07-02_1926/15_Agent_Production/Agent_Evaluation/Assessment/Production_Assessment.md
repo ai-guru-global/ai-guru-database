@@ -866,11 +866,11 @@ post_deployment_validation:
 - [Cloud Agent Evaluation](../Cloud_Agent_Evaluation/README.md) - 云产品Agent CAPER评估
 - [Cloud Agent Leaderboard](../Cloud_Agent_Leaderboard_2026.md) - 2026云Agent排行榜
 - [Continuous Monitoring Guide](../Cloud_Agent_Evaluation/Continuous_Monitoring_Guide.md) - 云Agent持续监控
-- [[15_Agent_Production/Agent_Evaluation/Cloud_Agent_Evaluation/International_Cloud_Agents.md|International_Cloud_Agents]]
+- [[Agent/Agent_Evaluation/Cloud_Agent_Evaluation/International_Cloud_Agents.md|International_Cloud_Agents]]
 
 ## Related
 
-- [[15_Agent_Production/Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
-- [[15_Agent_Production/Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
-- [[15_Agent_Production/Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
-- [[15_Agent_Production/Agent_Evaluation/Benchmarking/Benchmarking_Criteria]] — Benchmarking Criteria (共享: agent-framework, ai-agents, langgraph, production)
+- [[Agent/Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
+- [[Agent/Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[Agent/Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[Agent/Agent_Evaluation/Benchmarking/Benchmarking_Criteria]] — Benchmarking Criteria (共享: agent-framework, ai-agents, langgraph, production)

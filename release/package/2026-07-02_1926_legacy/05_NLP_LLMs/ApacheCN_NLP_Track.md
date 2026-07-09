@@ -24,14 +24,14 @@ updated: 2026-07-02
 
 ## 前置知识
 
-- [[01_Fundamentals/Linear_Algebra/Linear_Algebra|线性代数]]
-- [[03_Deep_Learning/Neural_Network_Core/Neural_Network_Core|神经网络核心]]
-- [[05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution|Transformer 革命]]
+- [[数学基础/Linear_Algebra/Linear_Algebra|线性代数]]
+- [[深度学习/Neural_Network_Core/Neural_Network_Core|神经网络核心]]
+- [[大模型/Transformer_Revolution/Transformer_Revolution|Transformer 革命]]
 
 ## Related
 
-- [[05_NLP_LLMs/README|NLP & LLMs]]
-- [[05_NLP_LLMs/LLM_Architectures/LLM_Architectures|LLM 架构]]
+- [[大模型/README|NLP & LLMs]]
+- [[大模型/LLM_Architectures/LLM_Architectures|LLM 架构]]
 - [[_references/apachecn-ailearning|ApacheCN AILearning]]
 
 ---

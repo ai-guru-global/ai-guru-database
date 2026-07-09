@@ -7,9 +7,9 @@ updated: 2026-07-02
 
 # 3D Vision
 
-This page indexes the contents of `04_Computer_Vision/3D_Vision`.
+This page indexes the contents of `计算机视觉/3D_Vision`.
 
 ## Files
 
-- [[04_Computer_Vision/3D_Vision/3D_Vision|3D Vision]]
-- [[04_Computer_Vision/3D_Vision/3D_Vision_for_dummy|3D Vision For Dummy]]
+- [[计算机视觉/3D_Vision/3D_Vision|3D Vision]]
+- [[计算机视觉/3D_Vision/3D_Vision_for_dummy|3D Vision For Dummy]]

@@ -10,7 +10,7 @@ relationships:
   - target: "_concepts/vllm"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "EleutherAI 开源的标准化 LLM 评估框架，支持 60+ 学术基准测试（MMLU、HellaSwag、ARC 等），是 LLM 排行榜和模型对比的事实标准工具。"
 provenance:
   extracted: 0.55

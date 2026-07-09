@@ -128,10 +128,10 @@ pmon | sort -k4 -n
 
 ## Related
 
-- [[12_Architecture_Infrastructure/AI_Stack_Production_Toolchain|AI Stack 生产工具链总览]]
-- [[12_Architecture_Infrastructure/AI_Stack_Container_Runtime_Guide|AI Stack 容器与运行时指南]]
-- [[12_Architecture_Infrastructure/AI_Stack_Inference_Serving_Guide|AI Stack 推理服务指南]]
-- [[12_Architecture_Infrastructure/AI_Stack_Training_Launchers_Guide|AI Stack 训练启动器指南]]
-- [[10_Deployment_Inference/Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]]
-- [[07_Model_Training/Monitoring/Training_Monitoring_2026|训练监控与实验追踪 2026]]
+- [[架构基建/AI_Stack_Production_Toolchain|AI Stack 生产工具链总览]]
+- [[架构基建/AI_Stack_Container_Runtime_Guide|AI Stack 容器与运行时指南]]
+- [[架构基建/AI_Stack_Inference_Serving_Guide|AI Stack 推理服务指南]]
+- [[架构基建/AI_Stack_Training_Launchers_Guide|AI Stack 训练启动器指南]]
+- [[部署推理/Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]]
+- [[模型训练/Monitoring/Training_Monitoring_2026|训练监控与实验追踪 2026]]
 - [[_concepts/gpu-operator|GPU Operator]]

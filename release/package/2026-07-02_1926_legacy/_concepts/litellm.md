@@ -8,7 +8,7 @@ relationships:
   - target: "_concepts/opik"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "LiteLLM 是开源的统一 LLM API 代理——用 OpenAI 格式调用 100+ LLM 提供商（OpenAI/Anthropic/Azure/Bedrock/Ollama 等），内置负载均衡、成本追踪和 Fallback 机制。是 LLM Gateway 的轻量级方案。"
 provenance:
   extracted: 0.20

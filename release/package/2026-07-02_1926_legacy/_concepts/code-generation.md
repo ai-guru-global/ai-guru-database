@@ -10,9 +10,9 @@ relationships:
   - target: "_concepts/text2sql"
     type: belongs_to
 sources:
-  - 16_AI_Coding/README.md
-  - 16_AI_Coding/Cursor_Deep_Dive.md
-  - 16_AI_Coding/GitHub_Copilot_Deep_Dive.md
+  - AI编程/README.md
+  - AI编程/Cursor_Deep_Dive.md
+  - AI编程/GitHub_Copilot_Deep_Dive.md
 summary: "代码生成是让大模型根据自然语言描述或上下文自动写出代码的技术。范围从单行补全、函数生成，到多文件项目开发、测试用例生成、代码审查辅助。"
 provenance:
   extracted: 0.8
@@ -66,5 +66,5 @@ aliases:
 - [[_concepts/code-generation-workflow]] — 代码生成工作流
 - [[_concepts/ai-agents]] — AI Agent
 - [[_concepts/text2sql]] — Text2SQL
-- [[16_AI_Coding/README]] — AI 编程工具
-- [[16_AI_Coding/Tools/AI_Coding_Assistants_2026]] — GitHub Copilot 深度解析
+- [[AI编程/README]] — AI 编程工具
+- [[AI编程/Tools/AI_Coding_Assistants_2026]] — GitHub Copilot 深度解析

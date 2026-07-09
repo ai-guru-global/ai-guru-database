@@ -535,10 +535,10 @@ $$
 - **[微积分](../Calculus_Optimization/Calculus_Optimization.md)**: 期望（积分）、最大化（求导）
 
 ### 进阶推荐
-- **[机器学习基础](../../02_Machine_Learning/README.md)**: MLE/MAP 在具体算法中的应用
-- **[优化方法](../../03_Deep_Learning/Optimization/Optimization.md)**: 随机优化的概率视角
-- **[贝叶斯深度学习](../../02_Machine_Learning/Bayesian_Methods/Bayesian_Methods_Deep_Dive.md)**: 不确定性量化
-- **[生成模型](../../04_Computer_Vision/Generative_Models/Generative_Models.md)**: VAE、GAN 的概率基础
+- **[机器学习基础](../../机器学习/README.md)**: MLE/MAP 在具体算法中的应用
+- **[优化方法](../../深度学习/Optimization/Optimization.md)**: 随机优化的概率视角
+- **[贝叶斯深度学习](../../机器学习/Bayesian_Methods/Bayesian_Methods_Deep_Dive.md)**: 不确定性量化
+- **[生成模型](../../计算机视觉/Generative_Models/Generative_Models.md)**: VAE、GAN 的概率基础
 
 ---
 

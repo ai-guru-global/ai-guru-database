@@ -73,4 +73,4 @@ tier: supporting
 - [[_concepts/hami|HAMi]]
 - [[_concepts/mig|MIG]]
 - [[_concepts/volcano|Volcano]]
-- [[13_AI_Ops/Cost_Management/FinOps_for_AI|AI 场景 FinOps]]
+- [[AI运维/Cost_Management/FinOps_for_AI|AI 场景 FinOps]]

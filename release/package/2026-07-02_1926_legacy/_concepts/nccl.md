@@ -51,4 +51,4 @@ export NCCL_TIMEOUT=1800
 - [[_concepts/fsdp|FSDP]]
 - [[_concepts/infiniBand|InfiniBand]]
 - [[_concepts/nvlink|NVLink]]
-- [[07_Model_Training/Distributed_Training/Distributed_Training_Hang_Runbook|分布式训练 Hang 排障]]
+- [[模型训练/Distributed_Training/Distributed_Training_Hang_Runbook|分布式训练 Hang 排障]]

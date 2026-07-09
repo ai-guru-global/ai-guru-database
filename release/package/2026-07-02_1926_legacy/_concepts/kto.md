@@ -12,7 +12,7 @@ relationships:
   - target: "_concepts/rlhf"
     type: belongs_to
 sources:
-  - 07_Model_Training/Alignment/
+  - 模型训练/Alignment/
 summary: "KTO（Kahneman-Tversky Optimization）是受 Kahneman-Tversky 前景理论启发的对齐算法，使用二元反馈（好/坏）而非成对偏好，可大幅降低数据标注成本。"
 lifecycle: stable
 tier: supporting

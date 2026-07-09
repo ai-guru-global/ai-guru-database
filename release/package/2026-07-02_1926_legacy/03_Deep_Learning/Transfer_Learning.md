@@ -10,6 +10,6 @@ tier: core
 
 # 迁移学习完全指南 (Transfer Learning Complete Guide)
 
-> 本页面内容已整合至 [[03_Deep_Learning/Transfer_Learning/Transfer_Learning|迁移学习 (Transfer Learning)]]。
+> 本页面内容已整合至 [[深度学习/Transfer_Learning/Transfer_Learning|迁移学习 (Transfer Learning)]]。
 >
 > 请点击上方链接查看完整内容，包括预训练-微调范式、PEFT、域适应、工程实践与生产环境 checklist。

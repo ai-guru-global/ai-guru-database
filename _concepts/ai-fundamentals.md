@@ -12,7 +12,7 @@ relationships:
     type: related_to
   - target: "_concepts/ai-future-trends"
     type: related_to
-sources: [00_AI_Introduction/AI_Fundamentals.md]
+sources: [AI入门/AI_Fundamentals.md]
 summary: 人工智能是让机器模拟人类智能的科学，通过算法、数据和算力三大支柱实现感知、推理、学习和决策能力。
 provenance:
   extracted: 0.80
@@ -133,7 +133,7 @@ AI系统生命周期分三阶段：
 
 ## 来源
 
-- _references/00_AI_Introduction/AI_Fundamentals
+- _references/AI入门/AI_Fundamentals
 
 ## Related
 

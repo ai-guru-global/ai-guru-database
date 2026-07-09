@@ -171,8 +171,8 @@ sources: []
 ## 下一步
 
 - 想深入某个行业？→ 查看对应子目录
-- 想学技术？→ 从 [00_AI_Introduction](../00_AI_Introduction/README_for_dummy.md) 开始
-- 想找工作？→ [21_Interviews/Interviews_for_dummy.md](../21_Interviews/Interviews_for_dummy.md)
+- 想学技术？→ 从 [AI入门](../AI入门/README_for_dummy.md) 开始
+- 想找工作？→ [面试岗位/Interviews_for_dummy.md](../面试岗位/Interviews_for_dummy.md)
 
 ---
 
@@ -180,6 +180,6 @@ sources: []
 
 ## Related
 
-- [[18_AI_Applications_Industry/Energy_Climate/AI_Energy_Climate_2026]] — AI 能源与气候行业应用 (2025-2026) (共享: ai-applications, finance, healthcare, industry)
-- [[18_AI_Applications_Industry/Industry_Comparison_2026]] — AI 行业应用对比 2026 (Industry Comparison) (共享: ai-applications, finance, healthcare, industry)
-- [[18_AI_Applications_Industry/README]] — 13 - AI应用与行业融合 (共享: ai-applications, finance, healthcare, industry)
+- [[行业应用/Energy_Climate/AI_Energy_Climate_2026]] — AI 能源与气候行业应用 (2025-2026) (共享: ai-applications, finance, healthcare, industry)
+- [[行业应用/Industry_Comparison_2026]] — AI 行业应用对比 2026 (Industry Comparison) (共享: ai-applications, finance, healthcare, industry)
+- [[行业应用/README]] — 13 - AI应用与行业融合 (共享: ai-applications, finance, healthcare, industry)

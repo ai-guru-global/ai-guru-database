@@ -8,30 +8,30 @@ sources: []
 
 # Deployment Inference
 
-This page indexes the contents of `10_Deployment_Inference`.
+This page indexes the contents of `部署推理`.
 
 ## Subdirectories
 
-- [[10_Deployment_Inference/Caching/index|Caching]]
-- [[10_Deployment_Inference/Cost/index|Cost]]
-- [[10_Deployment_Inference/GPU_Infrastructure/index|GPU Infrastructure]]
-- [[10_Deployment_Inference/Hardware/index|Hardware]]
-- [[10_Deployment_Inference/Inference_Engines/index|Inference Engines]]
-- [[10_Deployment_Inference/Inference_Performance/index|Inference Performance]]
-- [[10_Deployment_Inference/Quantization/index|Quantization]]
+- [[部署推理/Caching/index|Caching]]
+- [[部署推理/Cost/index|Cost]]
+- [[部署推理/GPU_Infrastructure/index|GPU Infrastructure]]
+- [[部署推理/Hardware/index|Hardware]]
+- [[部署推理/Inference_Engines/index|Inference Engines]]
+- [[部署推理/Inference_Performance/index|Inference Performance]]
+- [[部署推理/Quantization/index|Quantization]]
 
 ## Files
 
-- [[10_Deployment_Inference/Blue_Green_Canary_Deployment|Blue Green Canary Deployment]]
-- [[10_Deployment_Inference/Deployment_Inference|Deployment Inference]]
-- [[10_Deployment_Inference/Deployment_Inference_2026|Deployment Inference 2026]]
-- [[10_Deployment_Inference/Deployment_Inference_for_dummy|Deployment Inference For Dummy]]
-- [[10_Deployment_Inference/Inference-in-nutshell|Inference In Nutshell]]
-- [[10_Deployment_Inference/Inference_Optimization_for_dummy|Inference Optimization For Dummy]]
-- [[10_Deployment_Inference/Inference_Tuning_Cheat_Sheet 2|Inference Tuning Cheat Sheet 2]]
-- [[10_Deployment_Inference/Inference_Tuning_Cheat_Sheet|Inference Tuning Cheat Sheet]]
-- [[10_Deployment_Inference/Model_Hot_Reload_and_Rollback_Runbook 2|Model Hot Reload And Rollback Runbook 2]]
-- [[10_Deployment_Inference/Model_Hot_Reload_and_Rollback_Runbook|Model Hot Reload And Rollback Runbook]]
-- [[10_Deployment_Inference/Model_Registry|Model Registry]]
-- [[10_Deployment_Inference/README|README]]
-- [[10_Deployment_Inference/README_for_dummy|README For Dummy]]
+- [[部署推理/Blue_Green_Canary_Deployment|Blue Green Canary Deployment]]
+- [[部署推理/Deployment_Inference|Deployment Inference]]
+- [[部署推理/Deployment_Inference_2026|Deployment Inference 2026]]
+- [[部署推理/Deployment_Inference_for_dummy|Deployment Inference For Dummy]]
+- [[部署推理/Inference-in-nutshell|Inference In Nutshell]]
+- [[部署推理/Inference_Optimization_for_dummy|Inference Optimization For Dummy]]
+- [[部署推理/Inference_Tuning_Cheat_Sheet 2|Inference Tuning Cheat Sheet 2]]
+- [[部署推理/Inference_Tuning_Cheat_Sheet|Inference Tuning Cheat Sheet]]
+- [[部署推理/Model_Hot_Reload_and_Rollback_Runbook 2|Model Hot Reload And Rollback Runbook 2]]
+- [[部署推理/Model_Hot_Reload_and_Rollback_Runbook|Model Hot Reload And Rollback Runbook]]
+- [[部署推理/Model_Registry|Model Registry]]
+- [[部署推理/README|README]]
+- [[部署推理/README_for_dummy|README For Dummy]]

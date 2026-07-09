@@ -306,11 +306,11 @@ flowchart TB
 
 ## 9. 与其他章节的关联
 
-- [计算机视觉](../../04_Computer_Vision/README.md) — 医学影像识别技术
-- [NLP & LLMs](../../05_NLP_LLMs/README.md) — 临床文本处理、病历分析
-- [RAG 系统](../../14_RAG_Systems/README.md) — 医学知识库问答
-- [伦理安全](../../17_Ethics_Safety/README.md) — 医疗 AI 的隐私与公平性
-- [模型评估](../../08_Model_Evaluation/README.md) — 医疗 AI 的评估指标
+- [计算机视觉](../../计算机视觉/README.md) — 医学影像识别技术
+- [NLP & LLMs](../../大模型/README.md) — 临床文本处理、病历分析
+- [RAG 系统](../../RAG系统/README.md) — 医学知识库问答
+- [伦理安全](../../伦理安全/README.md) — 医疗 AI 的隐私与公平性
+- [模型评估](../../模型评估/README.md) — 医疗 AI 的评估指标
 
 ---
 

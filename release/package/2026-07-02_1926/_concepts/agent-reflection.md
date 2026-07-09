@@ -10,8 +10,8 @@ relationships:
   - target: "_concepts/agent-loop"
     type: extends
 sources:
-  - 15_Agent_Production/Agent_Foundations/AI_Agents.md
-  - 15_Agent_Production/README.md
+  - Agent/Agent_Foundations/AI_Agents.md
+  - Agent/README.md
 summary: "Agent 反思是让 Agent 评估自身输出、发现错误并自我修正的能力。Reflexion（反思后重试）、Self-Refine（自我打磨）、Self-Verification（自我验证）让 Agent 从'一次性回答'进化为'迭代改进'，显著提升复杂任务成功率。"
 provenance:
   extracted: 0.7
@@ -96,4 +96,4 @@ def agent_with_reflection(task, max_attempts=3):
 - [[_concepts/agent-planning|Agent 规划]] — 反思改进规划
 - [[_concepts/agent-loop|Agent Loop]] — 反思在循环中的位置
 - [[_concepts/agent-evaluation-benchmarks|Agent 评估基准]] — 评估反思效果
-- [[15_Agent_Production/Agent_Foundations/AI_Agents|AI Agents 详解]]
+- [[Agent/Agent_Foundations/AI_Agents|AI Agents 详解]]

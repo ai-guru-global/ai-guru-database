@@ -337,16 +337,16 @@ PPU 上目前主要跑 **llama-box** 后端 + **GGUF 量化模型**。
 
 ## 下一步
 
-- 想深入了解? → [[10_Deployment_Inference/GPU_Infrastructure/GPUStack_Deep_Dive|GPUStack 深度解析]]
-- 想对比推理引擎? → [[10_Deployment_Inference/README|模型部署与推理目录]]
-- 想学 RAG? → [[14_RAG_Systems/README_for_dummy|RAG 系统小白版]]
+- 想深入了解? → [[部署推理/GPU_Infrastructure/GPUStack_Deep_Dive|GPUStack 深度解析]]
+- 想对比推理引擎? → [[部署推理/README|模型部署与推理目录]]
+- 想学 RAG? → [[RAG系统/README_for_dummy|RAG 系统小白版]]
 
 ---
 
-*本文是 [[10_Deployment_Inference/GPU_Infrastructure/GPUStack_Deep_Dive|GPUStack 深度解析]] 的简化版, 适合零基础读者。*
+*本文是 [[部署推理/GPU_Infrastructure/GPUStack_Deep_Dive|GPUStack 深度解析]] 的简化版, 适合零基础读者。*
 
 ## Related
-- [[10_Deployment_Inference/GPU_Infrastructure/GPUStack_Deep_Dive|GPUStack: 开源 GPU 集群管理与模型服务平台]]
-- [[10_Deployment_Inference/Inference_Engines/Ollama_Deep_Dive|Ollama: 本地大模型部署平台]]
-- [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive|vLLM: 生产级 LLM 推理引擎]]
-- [[14_RAG_Systems/README_for_dummy|RAG 系统 — 小白版]]
+- [[部署推理/GPU_Infrastructure/GPUStack_Deep_Dive|GPUStack: 开源 GPU 集群管理与模型服务平台]]
+- [[部署推理/Inference_Engines/Ollama_Deep_Dive|Ollama: 本地大模型部署平台]]
+- [[部署推理/Inference_Engines/vLLM_Deep_Dive|vLLM: 生产级 LLM 推理引擎]]
+- [[RAG系统/README_for_dummy|RAG 系统 — 小白版]]

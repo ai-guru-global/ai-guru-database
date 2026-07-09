@@ -11,7 +11,7 @@ relationships:
   - target: "_concepts/tensor-parallelism"
     type: supports
 sources:
-  - 03_Deep_Learning/DL_Frameworks/pytorch_overview.md
+  - 深度学习/DL_Frameworks/pytorch_overview.md
   - _concepts/fsdp.md
 summary: "PyTorch 是 Meta 于 2016 年开源的深度学习框架，凭借动态图、Pythonic API、强大生态成为研究界和工业界事实标准；2026 年原生支持 FSDP、DDP、torch.compile、torch.distributed 等分布式训练能力。"
 lifecycle: stable
@@ -106,4 +106,4 @@ from torch.distributed.tensor import DTensor, Shard
 - [[_concepts/fsdp]] — FSDP（PyTorch 原生）
 - [[_concepts/distributed-training]] — 分布式训练
 - [[_concepts/tensor-parallelism]] — 张量并行
-- [[03_Deep_Learning/DL_Frameworks/pytorch_overview]] — PyTorch 深度解析
+- [[深度学习/DL_Frameworks/pytorch_overview]] — PyTorch 深度解析

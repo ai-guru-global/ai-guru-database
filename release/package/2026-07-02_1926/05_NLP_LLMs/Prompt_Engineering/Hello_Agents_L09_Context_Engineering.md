@@ -141,7 +141,7 @@ aliases:
 
 ## 7. 关联阅读
 
-- [[05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering]] — 提示工程基础
-- [[05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering_Principles_Ng]] — Ng 提示工程原则
-- [[15_Agent_Production/Hello_Agents_L08_Memory_RAG]] — 记忆与 RAG
-- [[15_Agent_Production/Agent_Workflow/Workflow-in-nutshell]] — Agent 工作流总览
+- [[大模型/Prompt_Engineering/Prompt_Engineering]] — 提示工程基础
+- [[大模型/Prompt_Engineering/Prompt_Engineering_Principles_Ng]] — Ng 提示工程原则
+- [[Agent/Hello_Agents_L08_Memory_RAG]] — 记忆与 RAG
+- [[Agent/Agent_Workflow/Workflow-in-nutshell]] — Agent 工作流总览

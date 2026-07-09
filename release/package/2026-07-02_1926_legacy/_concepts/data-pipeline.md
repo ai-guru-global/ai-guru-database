@@ -47,4 +47,4 @@ relationships:
 - [[_concepts/data-validation|Data Validation]]
 - [[_concepts/feature-store|Feature Store]]
 - [[_concepts/dvc|DVC]]
-- [[11_MLOps_Pipeline/Data_Engineering/Data_Pipeline_for_ML|ML 数据流水线]]
+- [[MLOps/Data_Engineering/Data_Pipeline_for_ML|ML 数据流水线]]

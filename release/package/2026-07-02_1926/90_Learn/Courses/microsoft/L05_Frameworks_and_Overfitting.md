@@ -134,10 +134,10 @@ sources: []
 
 ## 本课不覆盖与延伸
 
-- **不覆盖**：具体优化器内部数学细节（如 Adam、RMSprop 的完整推导），参见本库 [[03_Deep_Learning/Optimization/Optimization]]；卷积、循环等更复杂网络架构将在后续课程讲解。
-- **延伸**：更多关于监督学习基础、训练/验证/测试划分、评估指标的讨论，参见 [[02_Machine_Learning/Supervised_Learning/Supervised_Learning]]；正则化与 Dropout 的细节将在 CV 迁移学习章节进一步展开。
+- **不覆盖**：具体优化器内部数学细节（如 Adam、RMSprop 的完整推导），参见本库 [[深度学习/Optimization/Optimization]]；卷积、循环等更复杂网络架构将在后续课程讲解。
+- **延伸**：更多关于监督学习基础、训练/验证/测试划分、评估指标的讨论，参见 [[机器学习/Supervised_Learning/Supervised_Learning]]；正则化与 Dropout 的细节将在 CV 迁移学习章节进一步展开。
 
 ## 相关阅读
 
 - 课程索引：[[90_Learn/courses/microsoft/microsoft_ai_for_beginners]]
-- 本库相关页面：[[03_Deep_Learning/Optimization/Optimization]]、[[02_Machine_Learning/Supervised_Learning/Supervised_Learning]]
+- 本库相关页面：[[深度学习/Optimization/Optimization]]、[[机器学习/Supervised_Learning/Supervised_Learning]]

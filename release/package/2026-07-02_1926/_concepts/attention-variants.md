@@ -8,7 +8,7 @@ relationships:
   - target: "_concepts/multi-head-latent-attention"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: 注意力架构从 MHA → MQA → GQA → MLA 演进，核心目标是用更少的 KV 头数/维度压缩 KV Cache。GQA（4-8× 压缩）是 2026 年默认架构（Llama 3/Qwen 2/Mistral），MQA（32× 压缩）适合极低延迟，SWA（恒定内存）适合局部推理。
 provenance:
   extracted: 0.88

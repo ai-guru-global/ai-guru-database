@@ -8,9 +8,9 @@ sources: []
 
 # Emad Mostaque
 
-This page indexes the contents of `19_Talks/Emad_Mostaque`.
+This page indexes the contents of `业界观点/Emad_Mostaque`.
 
 ## Files
 
-- [[19_Talks/Emad_Mostaque/about|About]]
-- [[19_Talks/Emad_Mostaque/sayings|Sayings]]
+- [[业界观点/Emad_Mostaque/about|About]]
+- [[业界观点/Emad_Mostaque/sayings|Sayings]]

@@ -789,17 +789,17 @@ flowchart LR
 ## 9. 与其他章节的关联
 
 ### 前置知识
-- [神经网络核心](../../03_Deep_Learning/Neural_Network_Core/Neural_Network_Core.md) — 理解反向传播、梯度消失与激活函数
-- [卷积神经网络](../04_Computer_Vision/Image_Classification_Detection/) — CNN 基础架构
-- [优化与正则化](../../03_Deep_Learning/Optimization/Optimization.md) — BatchNorm、权重初始化
+- [神经网络核心](../../深度学习/Neural_Network_Core/Neural_Network_Core.md) — 理解反向传播、梯度消失与激活函数
+- [卷积神经网络](../计算机视觉/Image_Classification_Detection/) — CNN 基础架构
+- [优化与正则化](../../深度学习/Optimization/Optimization.md) — BatchNorm、权重初始化
 
 ### 横向关联
-- [计算机视觉](../../04_Computer_Vision/README.md) — ResNet 在 CV 各任务中的应用
-- [图像分类与检测](../04_Computer_Vision/Image_Classification_Detection/) — 目标检测中的 ResNet Backbone
+- [计算机视觉](../../计算机视觉/README.md) — ResNet 在 CV 各任务中的应用
+- [图像分类与检测](../计算机视觉/Image_Classification_Detection/) — 目标检测中的 ResNet Backbone
 
 ### 进阶方向
-- [Vision Transformer](../04_Computer_Vision/Image_Classification_Detection/) — Transformer 如何取代 CNN 成为视觉主干
-- [生成模型](../04_Computer_Vision/Generative_Models/) — 扩散模型中的 U-Net 也使用残差连接
+- [Vision Transformer](../计算机视觉/Image_Classification_Detection/) — Transformer 如何取代 CNN 成为视觉主干
+- [生成模型](../计算机视觉/Generative_Models/) — 扩散模型中的 U-Net 也使用残差连接
 
 ---
 
@@ -807,6 +807,6 @@ flowchart LR
 
 ## Related
 
-- [[04_Computer_Vision/README]] — 05 计算机视觉 (Computer Vision) (共享: cnn, cv)
-- [[04_Computer_Vision/Segmentation/Segmentation_for_dummy]] — 图像分割 - 小白版 ✂️ (共享: cnn, cv)
-- [[04_Computer_Vision/Video_Generation/README]] — AI视频生成 (Video Generation) (共享: cnn, cv)
+- [[计算机视觉/README]] — 05 计算机视觉 (Computer Vision) (共享: cnn, cv)
+- [[计算机视觉/Segmentation/Segmentation_for_dummy]] — 图像分割 - 小白版 ✂️ (共享: cnn, cv)
+- [[计算机视觉/Video_Generation/README]] — AI视频生成 (Video Generation) (共享: cnn, cv)

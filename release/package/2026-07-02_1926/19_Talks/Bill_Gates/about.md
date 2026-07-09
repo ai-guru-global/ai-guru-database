@@ -25,15 +25,15 @@ sources: []
 ## 相关主题与延伸阅读
 
 - [Talks Synthesis 2026](../Talks_Synthesis_2026.md) — 查看 Bill_Gates 在 Scaling Laws、开源 vs 闭源、AI 安全等主题中的立场
-- [AI 历史](../../00_AI_Introduction/AI_History_Timeline.md) — Bill_Gates 的关键贡献时间线
-- [AI 未来趋势](../../00_AI_Introduction/AI_Future_Trends.md) — 行业前瞻判断汇总
+- [AI 历史](../../AI入门/AI_History_Timeline.md) — Bill_Gates 的关键贡献时间线
+- [AI 未来趋势](../../AI入门/AI_Future_Trends.md) — 行业前瞻判断汇总
 
 *Last updated: 2026-05-07*
 
 ## Related
 
-- [[19_Talks/Andrej_Karpathy/about]] — Andrej Karpathy 简介 (Andrej Karpathy) (共享: insights, leaders, speeches, talks)
-- [[19_Talks/Andrew_Ng/about]] — Andrew Ng 简介 (Andrew Ng) (共享: insights, leaders, speeches, talks)
-- [[19_Talks/Andrew_Ng/sayings]] — Andrew Ng 关于 AI 的观点与格言 (共享: insights, leaders, speeches, talks)
-- [[19_Talks/Bill_Gates/sayings]] — Bill Gates 关于 AI 的观点 (Bill Gates on AI) (共享: insights, leaders, speeches, talks)
-- [[19_Talks/Talks_for_dummy.md|Talks_for_dummy]]
+- [[业界观点/Andrej_Karpathy/about]] — Andrej Karpathy 简介 (Andrej Karpathy) (共享: insights, leaders, speeches, talks)
+- [[业界观点/Andrew_Ng/about]] — Andrew Ng 简介 (Andrew Ng) (共享: insights, leaders, speeches, talks)
+- [[业界观点/Andrew_Ng/sayings]] — Andrew Ng 关于 AI 的观点与格言 (共享: insights, leaders, speeches, talks)
+- [[业界观点/Bill_Gates/sayings]] — Bill Gates 关于 AI 的观点 (Bill Gates on AI) (共享: insights, leaders, speeches, talks)
+- [[业界观点/Talks_for_dummy.md|Talks_for_dummy]]

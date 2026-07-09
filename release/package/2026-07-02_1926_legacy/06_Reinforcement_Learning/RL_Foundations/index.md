@@ -7,9 +7,9 @@ updated: 2026-07-02
 
 # RL Foundations
 
-This page indexes the contents of `06_Reinforcement_Learning/RL_Foundations`.
+This page indexes the contents of `强化学习/RL_Foundations`.
 
 ## Files
 
-- [[06_Reinforcement_Learning/RL_Foundations/RL_Foundations|RL Foundations]]
-- [[06_Reinforcement_Learning/RL_Foundations/RL_Foundations_for_dummy|RL Foundations For Dummy]]
+- [[强化学习/RL_Foundations/RL_Foundations|RL Foundations]]
+- [[强化学习/RL_Foundations/RL_Foundations_for_dummy|RL Foundations For Dummy]]

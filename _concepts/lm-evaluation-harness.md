@@ -12,7 +12,7 @@ relationships:
   - target: "_concepts/llm"
     type: evaluates
 sources:
-  - 08_Model_Evaluation/Evaluation_Tools/LM_Evaluation_Harness_Deep_Dive.md
+  - 模型评估/Evaluation_Tools/LM_Evaluation_Harness_Deep_Dive.md
 summary: "LM Evaluation Harness 是 EleutherAI 开源的 LLM 评测框架，支持数百个基准测试（MMLU、HELLASWAG、ARC 等），提供统一接口和可复现流程，是学术和工业界最常用的模型评估工具之一。"
 provenance:
   extracted: 0.8
@@ -90,8 +90,8 @@ aliases:
 
 ## Related
 
-- [[08_Model_Evaluation/Evaluation_Tools/LM_Evaluation_Harness_Deep_Dive]] — LM Evaluation Harness 深度解析
+- [[模型评估/Evaluation_Tools/LM_Evaluation_Harness_Deep_Dive]] — LM Evaluation Harness 深度解析
 - [[_concepts/model-evaluation]] — 模型评估
 - [[_concepts/benchmark]] — 基准测试
 - [[_concepts/opencompass]] — OpenCompass
-- [[08_Model_Evaluation/Benchmarks/LLM_Benchmark_Suite_2026]] — LLM 基准套件 2026
+- [[模型评估/Benchmarks/LLM_Benchmark_Suite_2026]] — LLM 基准套件 2026

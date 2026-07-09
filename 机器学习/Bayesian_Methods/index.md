@@ -8,9 +8,9 @@ sources: []
 
 # Bayesian Methods
 
-This page indexes the contents of `02_Machine_Learning/Bayesian_Methods`.
+This page indexes the contents of `机器学习/Bayesian_Methods`.
 
 ## Files
 
-- [[02_Machine_Learning/Bayesian_Methods/Bayesian_Methods_Deep_Dive|Bayesian Methods Deep Dive]]
-- [[02_Machine_Learning/Bayesian_Methods/README|README]]
+- [[机器学习/Bayesian_Methods/Bayesian_Methods_Deep_Dive|Bayesian Methods Deep Dive]]
+- [[机器学习/Bayesian_Methods/README|README]]

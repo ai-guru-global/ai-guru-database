@@ -8,9 +8,9 @@ sources: []
 
 # Efficiency
 
-This page indexes the contents of `20_Papers_and_Research/Efficiency`.
+This page indexes the contents of `论文精读/Efficiency`.
 
 ## Files
 
-- [[20_Papers_and_Research/Efficiency/LoRA_Deep_Dive|Lora Deep Dive]]
-- [[20_Papers_and_Research/Efficiency/Matryoshka_Representation_Learning_Deep_Dive|Matryoshka Representation Learning Deep Dive]]
+- [[论文精读/Efficiency/LoRA_Deep_Dive|Lora Deep Dive]]
+- [[论文精读/Efficiency/Matryoshka_Representation_Learning_Deep_Dive|Matryoshka Representation Learning Deep Dive]]

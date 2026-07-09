@@ -53,12 +53,12 @@ aliases:
 
 ## Related
 
-- [[19_Talks/Zhilin_Yang/about]] — 杨植麟简介
-- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/Kimi_Moonshot_Deep_Dive]] — Kimi/月之暗面深度解析
-- [[05_NLP_LLMs/LLM_Architectures/Long_Context_Models_2026]] — 长上下文模型全景
+- [[业界观点/Zhilin_Yang/about]] — 杨植麟简介
+- [[大模型/Chinese_LLM_Ecosystem/Kimi_Moonshot_Deep_Dive]] — Kimi/月之暗面深度解析
+- [[大模型/LLM_Architectures/Long_Context_Models_2026]] — 长上下文模型全景
 
 ---
 
 *Last updated: 2026-06-24*
 
-- [[19_Talks/README|AI 名人演讲与观点 (Talks)]]
+- [[业界观点/README|AI 名人演讲与观点 (Talks)]]

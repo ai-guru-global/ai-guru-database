@@ -8,23 +8,23 @@ sources: []
 
 # AI Ops
 
-This page indexes the contents of `13_AI_Ops`.
+This page indexes the contents of `AI运维`.
 
 ## Subdirectories
 
-- [[13_AI_Ops/Chaos_Engineering/index|Chaos Engineering]]
-- [[13_AI_Ops/Cost_Management/index|Cost Management]]
-- [[13_AI_Ops/Incident_Response/index|Incident Response]]
-- [[13_AI_Ops/Observability/index|Observability]]
-- [[13_AI_Ops/SRE_Reliability/index|SRE Reliability]]
+- [[AI运维/Chaos_Engineering/index|Chaos Engineering]]
+- [[AI运维/Cost_Management/index|Cost Management]]
+- [[AI运维/Incident_Response/index|Incident Response]]
+- [[AI运维/Observability/index|Observability]]
+- [[AI运维/SRE_Reliability/index|SRE Reliability]]
 
 ## Files
 
-- [[13_AI_Ops/AI_Ops_2026|AI Ops 2026]]
-- [[13_AI_Ops/AI_Ops_for_dummy|AI Ops For Dummy]]
-- [[13_AI_Ops/AIOps-in-nutshell|Aiops In Nutshell]]
-- [[13_AI_Ops/Capacity_Planning_AI_2026|Capacity Planning AI 2026]]
-- [[13_AI_Ops/Kubernetes_Troubleshooting_Playbook 2|Kubernetes Troubleshooting Playbook 2]]
-- [[13_AI_Ops/Kubernetes_Troubleshooting_Playbook|Kubernetes Troubleshooting Playbook]]
-- [[13_AI_Ops/README|README]]
-- [[13_AI_Ops/README_for_dummy|README For Dummy]]
+- [[AI运维/AI_Ops_2026|AI Ops 2026]]
+- [[AI运维/AI_Ops_for_dummy|AI Ops For Dummy]]
+- [[AI运维/AIOps-in-nutshell|Aiops In Nutshell]]
+- [[AI运维/Capacity_Planning_AI_2026|Capacity Planning AI 2026]]
+- [[AI运维/Kubernetes_Troubleshooting_Playbook 2|Kubernetes Troubleshooting Playbook 2]]
+- [[AI运维/Kubernetes_Troubleshooting_Playbook|Kubernetes Troubleshooting Playbook]]
+- [[AI运维/README|README]]
+- [[AI运维/README_for_dummy|README For Dummy]]

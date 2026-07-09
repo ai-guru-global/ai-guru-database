@@ -590,15 +590,15 @@ ds_slim = ds.select_columns(["text", "url"])  # 只下载需要的列
 
 ## Related
 
-- [[14_RAG_Systems/RAG_Fundamentals]] — RAG 基础架构
-- [[14_RAG_Systems/Advanced_RAG/Advanced_RAG_DLAI_Practices]] — 高阶 RAG 实战
-- [[05_NLP_LLMs/Fine_tuning_Techniques/README]] — 微调技术目录
-- [[07_Model_Training/Alignment/TRL_RLHF_DPO_Guide]] — TRL 训练框架
-- [[10_Deployment_Inference/Inference_Engines/TGI_Deep_Dive]] — TGI 推理引擎（HF 生态）
+- [[RAG系统/RAG_Fundamentals]] — RAG 基础架构
+- [[RAG系统/Advanced_RAG/Advanced_RAG_DLAI_Practices]] — 高阶 RAG 实战
+- [[大模型/Fine_tuning_Techniques/README]] — 微调技术目录
+- [[模型训练/Alignment/TRL_RLHF_DPO_Guide]] — TRL 训练框架
+- [[部署推理/Inference_Engines/TGI_Deep_Dive]] — TGI 推理引擎（HF 生态）
 
 ---
 
 *Last updated: 2026-06-25*
 *Version: 1.0.0*
 
-- [[14_RAG_Systems/README|RAG 系统 (RAG Systems)]]
+- [[RAG系统/README|RAG 系统 (RAG Systems)]]

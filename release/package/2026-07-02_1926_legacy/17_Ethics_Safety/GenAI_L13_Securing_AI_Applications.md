@@ -412,13 +412,13 @@ AI红队测试并非包罗万象，应作为其他控制措施的补充，例如
 ## 扩展阅读
 
 - [[90_Learn/courses/microsoft/microsoft_genai_for_beginners]] - 课程总览
-- [[17_Ethics_Safety/AI_Security_2026/README]] - AI安全前沿
-- [[17_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming]] - 红队测试实践
-- [[17_Ethics_Safety/Safety_Evaluation_Framework]] - 安全评估框架
-- [[11_MLOps_Pipeline/GenAI_L14_GenAI_Application_Lifecycle]] - AI应用生命周期
+- [[伦理安全/AI_Security_2026/README]] - AI安全前沿
+- [[伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming]] - 红队测试实践
+- [[伦理安全/Safety_Evaluation_Framework]] - 安全评估框架
+- [[MLOps/GenAI_L14_GenAI_Application_Lifecycle]] - AI应用生命周期
 
 ## 课程导航
 
 | 上一课 | 下一课 |
 |--------|--------|
-| [[15_Agent_Production/GenAI_L12_Designing_UX_for_AI_Applications|L12 设计AI应用用户体验]] | [[11_MLOps_Pipeline/GenAI_L14_GenAI_Application_Lifecycle|L14 GenAI应用生命周期]] |
+| [[Agent/GenAI_L12_Designing_UX_for_AI_Applications|L12 设计AI应用用户体验]] | [[MLOps/GenAI_L14_GenAI_Application_Lifecycle|L14 GenAI应用生命周期]] |

@@ -10,7 +10,7 @@ relationships:
   - target: "_concepts/moonshot-kimi"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "智谱 AI（ZhipuAI）是清华大学背景的 AI 公司，GLM 系列模型（ChatGLM 起家）是中国最早开源的大模型之一。AI Stack 预置 GLM-5.1/GLM5 系列。"
 provenance:
   extracted: 0.30
@@ -99,4 +99,4 @@ tier: supporting
 - [[_concepts/deepseek-models]] — DeepSeek 系列
 - [[_concepts/moonshot-kimi]] — Moonshot/Kimi 系列
 - [[_concepts/llm-data-engineering]] — LLM 数据工程
-- [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析

@@ -14,7 +14,7 @@ relationships:
   - target: "_concepts/awq"
     type: alternative
 sources:
-  - 10_Deployment_Inference/Quantization/
+  - 部署推理/Quantization/
 summary: "GPTQ 是 2022 年提出的 LLM INT4 训练后量化方法，基于二阶信息（Hessian）的逐层优化实现高精度量化；与 AWQ 一起是 LLM 4-bit 量化的两大主流方案。"
 lifecycle: reviewed
 tier: core
@@ -147,4 +147,4 @@ llm = LLM(model="qwen2.5-7b-gptq", quantization="gptq")
 - [[_concepts/awq]] — AWQ（GPTQ 主要替代）
 - [[_concepts/quantization]] — 量化总览
 - [[_concepts/model-compression]] — 模型压缩
-- [[10_Deployment_Inference/Quantization]] — 量化章节- [[_concepts/pruning]] — 剪枝
+- [[部署推理/Quantization]] — 量化章节- [[_concepts/pruning]] — 剪枝

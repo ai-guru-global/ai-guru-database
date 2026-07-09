@@ -18,7 +18,7 @@ aliases:
 ---
 # CDI 规范 (Container Device Interface Spec) — 官方源引用
 
-> 本页是 CDI 规范**官方源头**的引用索引;深度技术解析见本地 [[12_Architecture_Infrastructure/Hardware_Compute/CDI_Deep_Dive|CDI 深度解析]]。
+> 本页是 CDI 规范**官方源头**的引用索引;深度技术解析见本地 [[架构基建/Hardware_Compute/CDI_Deep_Dive|CDI 深度解析]]。
 
 ## 官方源头
 
@@ -71,14 +71,14 @@ vendor.com/class=unique_name
 
 ## 与本地文档的关联
 
-- 深度解析 → [[12_Architecture_Infrastructure/Hardware_Compute/CDI_Deep_Dive|CDI 深度解析]](含 spec 结构、工作原理、训练/推理定位、常见问题)
-- 入门 → [[12_Architecture_Infrastructure/CDI_for_dummy|CDI 小白版]]
+- 深度解析 → [[架构基建/Hardware_Compute/CDI_Deep_Dive|CDI 深度解析]](含 spec 结构、工作原理、训练/推理定位、常见问题)
+- 入门 → [[架构基建/CDI_for_dummy|CDI 小白版]]
 - 概念卡 → [[_concepts/cdi|CDI 概念卡片]]
 - 配套生态 → [[_concepts/dra|DRA]]、[[_concepts/gpu-operator|GPU Operator]]、[[_concepts/oci-runtime|OCI Runtime Spec]]
 
 ## Related
 
-- [[12_Architecture_Infrastructure/Hardware_Compute/CDI_Deep_Dive]]
+- [[架构基建/Hardware_Compute/CDI_Deep_Dive]]
 - [[_concepts/cdi]]
 - [[_concepts/dra]]
 - [[_concepts/gpu-operator]]

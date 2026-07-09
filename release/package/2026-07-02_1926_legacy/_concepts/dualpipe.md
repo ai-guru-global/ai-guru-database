@@ -10,7 +10,7 @@ relationships:
   - target: "_concepts/megatron-lm"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "DualPipe 是 DeepSeek 开源的双向流水线并行算法，通过双向调度和计算通信重叠，将流水线气泡率从 1F1B 的 ~60% 降至 ~15%，大幅提升训练效率。"
 provenance:
   extracted: 0.30
@@ -108,4 +108,4 @@ DualPipe 是 DeepSeek 开源训练基础设施的重要组件：
 - [[_concepts/parallel-training]] — 并行训练
 - [[_concepts/megatron-lm]] — Megatron-LM
 - [[_concepts/deepgemm]] — DeepGEMM FP8 算子库
-- [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析

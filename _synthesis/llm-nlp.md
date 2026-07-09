@@ -48,8 +48,8 @@ LLM 对 NLP 的最大改变不是性能提升，而是**问题定义权的转移
 
 ## Related
 
-- [[05_NLP_LLMs/README]]
+- [[大模型/README]]
 - [[_concepts/transformer-architecture]]
 - [[_concepts/llm-architectures]]
-- [[20_Papers_and_Research/Architecture/BERT_Deep_Dive]]
-- [[20_Papers_and_Research/Scaling/GPT3_Deep_Dive]]
+- [[论文精读/Architecture/BERT_Deep_Dive]]
+- [[论文精读/Scaling/GPT3_Deep_Dive]]

@@ -166,12 +166,12 @@ def multi_head_attention(X, W_q, W_k, W_v, W_o, num_heads):
 - **延伸**：
   - 深入阅读原始论文 [Attention Is All You Need](https://arxiv.org/abs/1706.03762)。
   - 学习 Hugging Face `transformers` 库，实践 BERT 微调与特征提取。
-  - 在本库 [[05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution]] 中了解 Transformer 对 LLM 发展的影响。
-  - 在本库 [[05_NLP_LLMs/LLM_Architectures/LLM_Architectures]] 中对比 Encoder-only、Decoder-only 与 Encoder-Decoder 架构的异同。
+  - 在本库 [[大模型/Transformer_Revolution/Transformer_Revolution]] 中了解 Transformer 对 LLM 发展的影响。
+  - 在本库 [[大模型/LLM_Architectures/LLM_Architectures]] 中对比 Encoder-only、Decoder-only 与 Encoder-Decoder 架构的异同。
 
 ## 相关阅读
 
 - 课程索引：[[90_Learn/courses/microsoft/microsoft_ai_for_beginners]]
 - 本库相关页面：
-  - [[05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution]]
-  - [[05_NLP_LLMs/LLM_Architectures/LLM_Architectures]]
+  - [[大模型/Transformer_Revolution/Transformer_Revolution]]
+  - [[大模型/LLM_Architectures/LLM_Architectures]]

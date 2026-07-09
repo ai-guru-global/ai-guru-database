@@ -16,7 +16,7 @@ sources: []
 
 > **一句话理解**: Kgateway 是基于 Envoy 的 Kubernetes Gateway API 实现 (CNCF 景观, 前身 Gloo Gateway)——从微网关到集中式网关再到 AI 网关一套通吃, 既管内部 API 也给外部 LLM 调用加安全/治理。
 
-> 📐 **概念方法论**: 理解 Kgateway 的关键在于它把「网关」从一个角色拆成了「一条可伸缩的轴线」——同一套 Envoy + Gateway API 内核, 既能在两个微服务之间当轻量微网关 (east-west), 又能顶在集群边缘扛十亿级 API (north-south), 还能给应用调外部 LLM 的流量套上安全与治理。这与 [[12_Architecture_Infrastructure/AI_Gateway/AI_Gateway_2026]] 讨论的「AI 网关应该长什么样」直接呼应, 也与 [[CNCF_Cloud_Native_AI/Envoy_AI_Gateway_Deep_Dive]] 同源 (都基于 Envoy + ext_proc 处理 AI 流量), 区别在于 Kgateway 的野心是「一个网关管完所有 API, 包括 AI」。
+> 📐 **概念方法论**: 理解 Kgateway 的关键在于它把「网关」从一个角色拆成了「一条可伸缩的轴线」——同一套 Envoy + Gateway API 内核, 既能在两个微服务之间当轻量微网关 (east-west), 又能顶在集群边缘扛十亿级 API (north-south), 还能给应用调外部 LLM 的流量套上安全与治理。这与 [[架构基建/AI_Gateway/AI_Gateway_2026]] 讨论的「AI 网关应该长什么样」直接呼应, 也与 [[CNCF_Cloud_Native_AI/Envoy_AI_Gateway_Deep_Dive]] 同源 (都基于 Envoy + ext_proc 处理 AI 流量), 区别在于 Kgateway 的野心是「一个网关管完所有 API, 包括 AI」。
 
 ---
 
@@ -684,5 +684,5 @@ A: 截至 2026-06, Kgateway 列入 CNCF Landscape (AI Native Infra 分类), 源�
 - [[CNCF_Cloud_Native_AI/README]] — CNCF 云原生 AI 项目全景, Kgateway 在「AI 网关 / API 网关」分类
 - [[CNCF_Cloud_Native_AI/Envoy_AI_Gateway_Deep_Dive]] — 同源 (Envoy + ext_proc) 的纯 AI 网关, 与 Kgateway 直接对比
 - [[CNCF_Cloud_Native_AI/AgentGateway_Deep_Dive]] — 另一种 AI 流量入口思路 (面向 Agent)
-- [[12_Architecture_Infrastructure/AI_Gateway/AI_Gateway_2026]] — AI 网关总体架构与方法论, Kgateway 是其实现之一
-- [[12_Architecture_Infrastructure/AI_Gateway/AI_Gateway_Comparison_2026]] — 各 AI 网关方案横向对比
+- [[架构基建/AI_Gateway/AI_Gateway_2026]] — AI 网关总体架构与方法论, Kgateway 是其实现之一
+- [[架构基建/AI_Gateway/AI_Gateway_Comparison_2026]] — 各 AI 网关方案横向对比

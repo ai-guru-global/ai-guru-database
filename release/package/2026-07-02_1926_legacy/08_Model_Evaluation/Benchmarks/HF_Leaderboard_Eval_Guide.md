@@ -161,6 +161,6 @@ lighteval accelerate \
 ---
 
 ## 相关阅读
-- [[08_Model_Evaluation/Evaluation_Metrics]]
-- [[08_Model_Evaluation/Evaluation_Tools/LLM_as_Judge_Deep_Dive]]
-- [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive]]
+- [[模型评估/Evaluation_Metrics]]
+- [[模型评估/Evaluation_Tools/LLM_as_Judge_Deep_Dive]]
+- [[部署推理/Inference_Engines/vLLM_Deep_Dive]]

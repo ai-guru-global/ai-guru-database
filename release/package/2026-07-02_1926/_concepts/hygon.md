@@ -10,7 +10,7 @@ relationships:
   - target: "_concepts/apsara-stack"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "海光（Hygon）是国产 x86 服务器 CPU，基于 AMD Zen 架构授权。AI Stack 一体机服务器底层运行海光 CPU，提供国产化算力基座。"
 provenance:
   extracted: 0.20
@@ -96,4 +96,4 @@ AI Stack 一体机硬件架构
 - [[_concepts/apg-gpu]] — APG 自研加速卡
 - [[_concepts/ascend-npu]] — 华为昇腾 NPU
 - [[_concepts/apsara-stack]] — 飞天企业版
-- [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析

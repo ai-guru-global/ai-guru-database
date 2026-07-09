@@ -322,4 +322,4 @@ image_square_size: 336
 
 ## Related
 
-- [[05_NLP_LLMs/README.md|README]]
+- [[大模型/README.md|README]]

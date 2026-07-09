@@ -10,8 +10,8 @@ relationships:
   - target: "_concepts/model-serving"
     type: builds_on
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
-  - 12_Architecture_Infrastructure/AI_Gateway/AI_Gateway_2026
+  - 架构基建/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Gateway/AI_Gateway_2026
 summary: 模型网关是 LLM 服务的统一入口层，负责流量路由、负载均衡、API-Key 鉴权、模型版本管理与可观测性。
 provenance:
   extracted: 0.55
@@ -142,11 +142,11 @@ aliases:
 
 ## Related
 
-- [[12_Architecture_Infrastructure/AI_Gateway/AI_Gateway_2026]] — AI Gateway 全景
-- [[12_Architecture_Infrastructure/AI_Gateway/LiteLLM_Deep_Dive]] — LiteLLM 深度解析
-- [[12_Architecture_Infrastructure/AI_Gateway/Kong_AI_Gateway_Deep_Dive]] — Kong AI Gateway
-- [[12_Architecture_Infrastructure/AI_Gateway/Portkey_Deep_Dive]] — Portkey 深度解析
-- [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[架构基建/AI_Gateway/AI_Gateway_2026]] — AI Gateway 全景
+- [[架构基建/AI_Gateway/LiteLLM_Deep_Dive]] — LiteLLM 深度解析
+- [[架构基建/AI_Gateway/Kong_AI_Gateway_Deep_Dive]] — Kong AI Gateway
+- [[架构基建/AI_Gateway/Portkey_Deep_Dive]] — Portkey 深度解析
+- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
 - [[_concepts/llm-infrastructure]] — LLM 基础设施
 - [[_concepts/model-serving]] — 模型服务
-- [[12_Architecture_Infrastructure/Alibaba_Cloud_AI_Stack_Deep_Dive|阿里云 AI Stack]] — 专有云推理平台的模型网关实现
+- [[架构基建/Alibaba_Cloud_AI_Stack_Deep_Dive|阿里云 AI Stack]] — 专有云推理平台的模型网关实现

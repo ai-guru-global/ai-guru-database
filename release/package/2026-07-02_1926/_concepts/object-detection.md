@@ -93,7 +93,7 @@ Mosaic增强将4张图像拼接成1张，迫使模型学习更小目标，是YOL
 
 ## 来源
 
-- 04_Computer_Vision/Image_Classification_Detection/Image_Classification_Detection.md
+- 计算机视觉/Image_Classification_Detection/Image_Classification_Detection.md
 
 ## Related
 

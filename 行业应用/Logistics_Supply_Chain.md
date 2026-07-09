@@ -154,5 +154,5 @@ class SupplyChainRiskPredictor:
 
 - [[AI_Applications_Industry]]: Cross-industry overview
 - [[Time_Series_Analysis]]: Forecasting foundations
-- [[18_AI_Applications_Industry/Autonomous_Driving/README]]: Self-driving logistics
-- [[18_AI_Applications_Industry/Manufacturing/README]]: Smart manufacturing
+- [[行业应用/Autonomous_Driving/README]]: Self-driving logistics
+- [[行业应用/Manufacturing/README]]: Smart manufacturing

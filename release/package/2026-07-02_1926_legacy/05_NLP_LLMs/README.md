@@ -84,10 +84,10 @@ flowchart LR
 
 ## 前置知识 (Prerequisites)
 
-- **必修**: [神经网络核心](../03_Deep_Learning/Neural_Network_Core/Neural_Network_Core.md)（理解反向传播）
-- **必修**: [优化与正则化](../03_Deep_Learning/Optimization/Optimization.md)（训练大模型）
-- **推荐**: [线性代数](../01_Fundamentals/Linear_Algebra/Linear_Algebra.md)（理解注意力机制的矩阵运算）
-- **可选**: [概率统计](../01_Fundamentals/Probability_Statistics/Probability_Statistics.md)（理解语言模型概率建模）
+- **必修**: [神经网络核心](../深度学习/Neural_Network_Core/Neural_Network_Core.md)（理解反向传播）
+- **必修**: [优化与正则化](../深度学习/Optimization/Optimization.md)（训练大模型）
+- **推荐**: [线性代数](../数学基础/Linear_Algebra/Linear_Algebra.md)（理解注意力机制的矩阵运算）
+- **可选**: [概率统计](../数学基础/Probability_Statistics/Probability_Statistics.md)（理解语言模型概率建模）
 
 ## 关键术语速查 (Key Terms)
 
@@ -113,83 +113,83 @@ flowchart LR
 *Last updated: 2026-06-02* - 新增国际大模型生态全景专题
 
 ## Related
-- [[05_NLP_LLMs/Sequence_Models/Sequence_Models_for_dummy|序列模型 - 小白版]]
-- [[05_NLP_LLMs/Sequence_Models/Sequence_Models|序列模型 (Sequence Models)]]
-- [[05_NLP_LLMs/README_for_dummy|04 自然语言处理与大模型 - 小白版]]
+- [[大模型/Sequence_Models/Sequence_Models_for_dummy|序列模型 - 小白版]]
+- [[大模型/Sequence_Models/Sequence_Models|序列模型 (Sequence Models)]]
+- [[大模型/README_for_dummy|04 自然语言处理与大模型 - 小白版]]
 
-- [[05_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026]] — PEFT 2026 (参数高效微调) (共享: bert, gpt, llm, nlp, transformer)
-- [[05_NLP_LLMs/Fine_tuning_Techniques/README]] — 微调技术 (Fine-tuning Techniques) (共享: bert, gpt, llm, nlp, transformer)
-- [[05_NLP_LLMs/LLM_Architectures/LLM-Basics-in-nutshell]] — 大语言模型基础速成指南 (共享: bert, gpt, llm, nlp, transformer)
-- [[05_NLP_LLMs/Multimodal_Models/Multimodal_Architectures_2026]] — 多模态模型架构 2026：从 GPT-4V 到原生多模态 AGI (共享: bert, gpt, llm, nlp, transformer)
-- [[05_NLP_LLMs/LLM_Architectures/LLM_Architectures_for_dummy]] — LLM_Architectures_for_dummy
-- [[05_NLP_LLMs/LLM_Architectures/LLM_Architectures]] — LLM_Architectures
-- [[05_NLP_LLMs/LLM_Architectures/Reasoning_Models_2026]] — Reasoning_Models_2026
-- [[05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution_for_dummy]] — Transformer_Revolution_for_dummy
-- [[05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution]] — Transformer_Revolution
-- [[05_NLP_LLMs/Fine_tuning_Techniques/Axolotl_Deep_Dive]] — Axolotl_Deep_Dive
-- [[05_NLP_LLMs/Fine_tuning_Techniques/Unsloth_Deep_Dive]] — Unsloth_Deep_Dive
-- [[05_NLP_LLMs/Fine_tuning_Techniques/Model_Merging_2026]] — Model_Merging_2026
-- [[05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques]] — Fine_tuning_Techniques
-- [[05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques_for_dummy]] — Fine_tuning_Techniques_for_dummy
-- [[05_NLP_LLMs/Reasoning_Models/Test_Time_Compute_2026]] — Test_Time_Compute_2026
-- [[05_NLP_LLMs/Reasoning_Models/Reasoning_Models_for_dummy]] — Reasoning_Models_for_dummy
-- [[05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering]] — Prompt_Engineering
-- [[05_NLP_LLMs/Prompt_Engineering/Outlines_Deep_Dive]] — Outlines_Deep_Dive
-- [[05_NLP_LLMs/Prompt_Engineering/Prompt-Engineering-in-nutshell]] — Prompt Engineering 速成指南
-- [[05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering_for_dummy]] — Prompt_Engineering_for_dummy
+- [[大模型/Fine_tuning_Techniques/PEFT_2026]] — PEFT 2026 (参数高效微调) (共享: bert, gpt, llm, nlp, transformer)
+- [[大模型/Fine_tuning_Techniques/README]] — 微调技术 (Fine-tuning Techniques) (共享: bert, gpt, llm, nlp, transformer)
+- [[大模型/LLM_Architectures/LLM-Basics-in-nutshell]] — 大语言模型基础速成指南 (共享: bert, gpt, llm, nlp, transformer)
+- [[大模型/Multimodal_Models/Multimodal_Architectures_2026]] — 多模态模型架构 2026：从 GPT-4V 到原生多模态 AGI (共享: bert, gpt, llm, nlp, transformer)
+- [[大模型/LLM_Architectures/LLM_Architectures_for_dummy]] — LLM_Architectures_for_dummy
+- [[大模型/LLM_Architectures/LLM_Architectures]] — LLM_Architectures
+- [[大模型/LLM_Architectures/Reasoning_Models_2026]] — Reasoning_Models_2026
+- [[大模型/Transformer_Revolution/Transformer_Revolution_for_dummy]] — Transformer_Revolution_for_dummy
+- [[大模型/Transformer_Revolution/Transformer_Revolution]] — Transformer_Revolution
+- [[大模型/Fine_tuning_Techniques/Axolotl_Deep_Dive]] — Axolotl_Deep_Dive
+- [[大模型/Fine_tuning_Techniques/Unsloth_Deep_Dive]] — Unsloth_Deep_Dive
+- [[大模型/Fine_tuning_Techniques/Model_Merging_2026]] — Model_Merging_2026
+- [[大模型/Fine_tuning_Techniques/Fine_tuning_Techniques]] — Fine_tuning_Techniques
+- [[大模型/Fine_tuning_Techniques/Fine_tuning_Techniques_for_dummy]] — Fine_tuning_Techniques_for_dummy
+- [[大模型/Reasoning_Models/Test_Time_Compute_2026]] — Test_Time_Compute_2026
+- [[大模型/Reasoning_Models/Reasoning_Models_for_dummy]] — Reasoning_Models_for_dummy
+- [[大模型/Prompt_Engineering/Prompt_Engineering]] — Prompt_Engineering
+- [[大模型/Prompt_Engineering/Outlines_Deep_Dive]] — Outlines_Deep_Dive
+- [[大模型/Prompt_Engineering/Prompt-Engineering-in-nutshell]] — Prompt Engineering 速成指南
+- [[大模型/Prompt_Engineering/Prompt_Engineering_for_dummy]] — Prompt_Engineering_for_dummy
 - [[_synthesis/llm-nlp|Llm Nlp]]
 
-- [[05_NLP_LLMs/LLM_Architectures/README|LLM 架构目录]]
+- [[大模型/LLM_Architectures/README|LLM 架构目录]]
 - [[instructor_overview|Instructor 结构化输出库概览]]
 - [[outlines_overview|Outlines 受控生成框架概览]]
 - [[perplexity_overview|Perplexity AI 概览]]
-- [[05_NLP_LLMs/Multimodal_Models/README|多模态模型目录]]
-- [[05_NLP_LLMs/Prompt_Engineering/README|提示词工程与结构化输出 (Prompt Engineering & Structured Output)]]
-- [[05_NLP_LLMs/Reasoning_Models/README|推理模型目录]]
+- [[大模型/Multimodal_Models/README|多模态模型目录]]
+- [[大模型/Prompt_Engineering/README|提示词工程与结构化输出 (Prompt Engineering & Structured Output)]]
+- [[大模型/Reasoning_Models/README|推理模型目录]]
 - [[Transformer_Training_vs_Inference|Transformer 在大模型训练与推理中的应用]]
 
 ## 本期新增
 
-- [[05_NLP_LLMs/Multimodal_Models/Native_Multimodal_Architectures|Native Multimodal Architectures: From GPT-4V to Gemini 2.5]]
-- [[05_NLP_LLMs/Multimodal_Models/Modality_Fusion_Mechanisms|Modality Fusion Mechanisms: Deep Dive]]
-- [[05_NLP_LLMs/Multimodal_Models/Video_Understanding_Architectures|Video Understanding Architectures]]
-- [[05_NLP_LLMs/LLM_Architectures/MoE_Routing_and_Load_Balancing|MoE Routing and Load Balancing]]
-- [[05_NLP_LLMs/LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral|MoE Case Studies: DeepSeek and Mixtral]]
-- [[05_NLP_LLMs/LLM_Architectures/Transformer_Alternatives|Transformer Alternatives: RWKV, RetNet, Mamba, and Beyond]]
-- [[05_NLP_LLMs/Reasoning_Models/o1_Class_Reasoning_Models|o1-Class Reasoning Models]]
-- [[05_NLP_LLMs/Reasoning_Models/DeepSeek_R1_Technical_Analysis|DeepSeek R1 Technical Analysis]]
-- [[05_NLP_LLMs/Reasoning_Models/Process_Reward_Models|Process Reward Models]]
-- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/README|中国大模型生态全景：DeepSeek / Qwen / GLM / Kimi / MiniMax]]
-- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive|DeepSeek 技术全景深度解析]]
-- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/Qwen_Deep_Dive|Qwen 通义千问技术全景深度解析]]
-- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/GLM_Zhipu_Deep_Dive|GLM 智谱 AI 技术全景深度解析]]
-- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/Kimi_Moonshot_Deep_Dive|Kimi 月之暗面技术全景深度解析]]
-- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/MiniMax_Deep_Dive|MiniMax 稀宇科技技术全景深度解析]]
-- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/Xiaomi_MiMo_Deep_Dive|小米 MiMo 技术全景深度解析]]
-- [[05_NLP_LLMs/Global_LLM_Ecosystem/README|国际大模型生态全景：OpenAI / Google / Anthropic / Meta / Mistral]]
-- [[05_NLP_LLMs/Global_LLM_Ecosystem/OpenAI_Deep_Dive|OpenAI 技术深度解析：从 GPT-3 到 o3]]
-- [[05_NLP_LLMs/Global_LLM_Ecosystem/Google_Gemini_Deep_Dive|Google Gemini 技术深度解析]]
-- [[05_NLP_LLMs/Global_LLM_Ecosystem/Anthropic_Claude_Deep_Dive|Anthropic Claude 技术深度解析]]
-- [[05_NLP_LLMs/Global_LLM_Ecosystem/Meta_LLaMA_Deep_Dive|Meta LLaMA 技术深度解析]]
-- [[05_NLP_LLMs/Global_LLM_Ecosystem/Mistral_AI_Deep_Dive|Mistral AI 技术深度解析]]
+- [[大模型/Multimodal_Models/Native_Multimodal_Architectures|Native Multimodal Architectures: From GPT-4V to Gemini 2.5]]
+- [[大模型/Multimodal_Models/Modality_Fusion_Mechanisms|Modality Fusion Mechanisms: Deep Dive]]
+- [[大模型/Multimodal_Models/Video_Understanding_Architectures|Video Understanding Architectures]]
+- [[大模型/LLM_Architectures/MoE_Routing_and_Load_Balancing|MoE Routing and Load Balancing]]
+- [[大模型/LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral|MoE Case Studies: DeepSeek and Mixtral]]
+- [[大模型/LLM_Architectures/Transformer_Alternatives|Transformer Alternatives: RWKV, RetNet, Mamba, and Beyond]]
+- [[大模型/Reasoning_Models/o1_Class_Reasoning_Models|o1-Class Reasoning Models]]
+- [[大模型/Reasoning_Models/DeepSeek_R1_Technical_Analysis|DeepSeek R1 Technical Analysis]]
+- [[大模型/Reasoning_Models/Process_Reward_Models|Process Reward Models]]
+- [[大模型/Chinese_LLM_Ecosystem/README|中国大模型生态全景：DeepSeek / Qwen / GLM / Kimi / MiniMax]]
+- [[大模型/Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive|DeepSeek 技术全景深度解析]]
+- [[大模型/Chinese_LLM_Ecosystem/Qwen_Deep_Dive|Qwen 通义千问技术全景深度解析]]
+- [[大模型/Chinese_LLM_Ecosystem/GLM_Zhipu_Deep_Dive|GLM 智谱 AI 技术全景深度解析]]
+- [[大模型/Chinese_LLM_Ecosystem/Kimi_Moonshot_Deep_Dive|Kimi 月之暗面技术全景深度解析]]
+- [[大模型/Chinese_LLM_Ecosystem/MiniMax_Deep_Dive|MiniMax 稀宇科技技术全景深度解析]]
+- [[大模型/Chinese_LLM_Ecosystem/Xiaomi_MiMo_Deep_Dive|小米 MiMo 技术全景深度解析]]
+- [[大模型/Global_LLM_Ecosystem/README|国际大模型生态全景：OpenAI / Google / Anthropic / Meta / Mistral]]
+- [[大模型/Global_LLM_Ecosystem/OpenAI_Deep_Dive|OpenAI 技术深度解析：从 GPT-3 到 o3]]
+- [[大模型/Global_LLM_Ecosystem/Google_Gemini_Deep_Dive|Google Gemini 技术深度解析]]
+- [[大模型/Global_LLM_Ecosystem/Anthropic_Claude_Deep_Dive|Anthropic Claude 技术深度解析]]
+- [[大模型/Global_LLM_Ecosystem/Meta_LLaMA_Deep_Dive|Meta LLaMA 技术深度解析]]
+- [[大模型/Global_LLM_Ecosystem/Mistral_AI_Deep_Dive|Mistral AI 技术深度解析]]
 
 ## 相关页面
-- [[05_NLP_LLMs/Fine_tuning_Techniques/Tool_Use_and_Agent_Fine_Tuning|Tool Use 与 Agent 微调 (Tool-Use and Agent Fine-Tuning)]]
-- [[05_NLP_LLMs/Edge_LLM/README|小模型与端侧 LLM (Edge LLM)]]
-- [[05_NLP_LLMs/Edge_LLM/Edge_LLM_Deep_Dive|小模型与端侧 LLM 深度解读: 从高效模型到端侧部署]]
-- [[05_NLP_LLMs/LLM_Data_Engineering/LLM_Data_Engineering_Deep_Dive|LLM 数据工程深度解读: 从预训练数据到合成数据]]
-- [[05_NLP_LLMs/LLM_Data_Engineering/README|LLM 数据工程 (LLM Data Engineering)]]
-- [[05_NLP_LLMs/Speech_Audio_AI/Speech_Audio_AI_Deep_Dive|语音与音频 AI 深度解读: 从 Whisper 到 CosyVoice 再到 AudioLM]]
-- [[05_NLP_LLMs/Speech_Audio_AI/README|语音与音频 AI (Speech & Audio AI)]]
+- [[大模型/Fine_tuning_Techniques/Tool_Use_and_Agent_Fine_Tuning|Tool Use 与 Agent 微调 (Tool-Use and Agent Fine-Tuning)]]
+- [[大模型/Edge_LLM/README|小模型与端侧 LLM (Edge LLM)]]
+- [[大模型/Edge_LLM/Edge_LLM_Deep_Dive|小模型与端侧 LLM 深度解读: 从高效模型到端侧部署]]
+- [[大模型/LLM_Data_Engineering/LLM_Data_Engineering_Deep_Dive|LLM 数据工程深度解读: 从预训练数据到合成数据]]
+- [[大模型/LLM_Data_Engineering/README|LLM 数据工程 (LLM Data Engineering)]]
+- [[大模型/Speech_Audio_AI/Speech_Audio_AI_Deep_Dive|语音与音频 AI 深度解读: 从 Whisper 到 CosyVoice 再到 AudioLM]]
+- [[大模型/Speech_Audio_AI/README|语音与音频 AI (Speech & Audio AI)]]
 
 - [[_concepts/long-context-models|Long Context Models]]
 - [[_concepts/kv-cache-compression|KV Cache 压缩]]
 - [[_concepts/mamba|Mamba]]
 - [[_concepts/retnet|RetNet]]
-- [[05_NLP_LLMs/Architecture_Evolution_for_dummy|架构演进大白话]]
+- [[大模型/Architecture_Evolution_for_dummy|架构演进大白话]]
 
 - [[_concepts/sequence-models|Sequence Models]]
 
 ## 新增页面
 
-- [[05_NLP_LLMs/Structured_Output_Guide|结构化输出指南]]
+- [[大模型/Structured_Output_Guide|结构化输出指南]]

@@ -160,8 +160,8 @@ model = LinearClassifier(input_size=len(vocab), num_classes=4)
 - **延伸**：
   - 完成课后挑战：[Kaggle Bag-of-Words 入门赛](https://www.kaggle.com/competitions/word2vec-nlp-tutorial/overview/part-1-for-beginners-bag-of-words)。
   - 通过 Microsoft Learn 模块 [Intro to Natural Language Processing with PyTorch](https://docs.microsoft.com/learn/modules/intro-natural-language-processing-pytorch/?WT.mc_id=academic-77998-cacaste) 进一步练习文本嵌入与 BoW。
-  - 阅读本库 [[05_NLP_LLMs/LLM_Data_Engineering/LLM_Data_Engineering_Deep_Dive]] 了解现代大模型数据工程如何扩展这些基础表示。
-  - 阅读本库 [[05_NLP_LLMs/Sequence_Models/Sequence_Models]] 理解从 BoW 到序列建模的演进。
+  - 阅读本库 [[大模型/LLM_Data_Engineering/LLM_Data_Engineering_Deep_Dive]] 了解现代大模型数据工程如何扩展这些基础表示。
+  - 阅读本库 [[大模型/Sequence_Models/Sequence_Models]] 理解从 BoW 到序列建模的演进。
 
 ---
 
@@ -169,5 +169,5 @@ model = LinearClassifier(input_size=len(vocab), num_classes=4)
 
 - 课程索引：[[90_Learn/courses/microsoft/microsoft_ai_for_beginners]]
 - 本库相关页面：
-  - [[05_NLP_LLMs/LLM_Data_Engineering/LLM_Data_Engineering_Deep_Dive]]
-  - [[05_NLP_LLMs/Sequence_Models/Sequence_Models]]
+  - [[大模型/LLM_Data_Engineering/LLM_Data_Engineering_Deep_Dive]]
+  - [[大模型/Sequence_Models/Sequence_Models]]

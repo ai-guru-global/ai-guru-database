@@ -118,7 +118,7 @@ _, im_thresh = cv2.threshold(im_gray, 127, 255, cv2.THRESH_BINARY)
 - **不覆盖**：
   - 卷积神经网络（CNN）的具体结构与训练方法 → 见本课后续 L07。
   - 目标检测、语义分割等高级视觉任务 → 见 L11、L12。
-  - 深度学习框架（PyTorch / TensorFlow）在视觉任务中的完整训练流程 → 见 L07–L12 及本库 [[07_Model_Training/README]]。
+  - 深度学习框架（PyTorch / TensorFlow）在视觉任务中的完整训练流程 → 见 L07–L12 及本库 [[模型训练/README]]。
 
 - **延伸**：
   - 想了解光流更系统的讲解，可参考 [LearnOpenCV: Optical Flow in OpenCV](https://learnopencv.com/optical-flow-in-opencv/)。
@@ -131,5 +131,5 @@ _, im_thresh = cv2.threshold(im_gray, 127, 255, cv2.THRESH_BINARY)
 
 - 课程索引：[[90_Learn/courses/microsoft/microsoft_ai_for_beginners]]
 - 本库相关页面：
-  - [[04_Computer_Vision/README]]
-  - [[04_Computer_Vision/Image_Classification_Detection/Image_Classification_Detection]]
+  - [[计算机视觉/README]]
+  - [[计算机视觉/Image_Classification_Detection/Image_Classification_Detection]]

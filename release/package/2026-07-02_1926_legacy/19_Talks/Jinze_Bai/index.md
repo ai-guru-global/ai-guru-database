@@ -7,10 +7,10 @@ updated: 2026-07-02
 
 # Jinze Bai
 
-This page indexes the contents of `19_Talks/Jinze_Bai`.
+This page indexes the contents of `业界观点/Jinze_Bai`.
 
 ## Files
 
-- [[19_Talks/Jinze_Bai/about|About]]
+- [[业界观点/Jinze_Bai/about|About]]
 - Sayings 2
-- [[19_Talks/Jinze_Bai/sayings|Sayings]]
+- [[业界观点/Jinze_Bai/sayings|Sayings]]

@@ -10,7 +10,7 @@ relationships:
   - target: "_concepts/gpu-virtualization"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "nvidia-smi 是 NVIDIA GPU 的标准监控诊断工具，提供 GPU 利用率、显存、温度、功耗等实时信息。AI Stack 环境中还有 ppu-smi（APG）和 rocm-smi（AMD）替代方案。"
 provenance:
   extracted: 0.50
@@ -225,4 +225,4 @@ AI Stack GPU 监控流程
 - [[_concepts/gpu-virtualization]] — GPU 虚拟化
 - [[_concepts/gpu-interconnect]] — GPU 互联
 - [[_concepts/checkpoint]] — Checkpoint 检查点
-- [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析

@@ -118,14 +118,14 @@ else:
     print("Response rejected. Revising...")
 ```
 
-HITL 适合高风险动作（取消订单、转账、删除数据），不适合低风险高频动作（查询、推荐）^[[15_Agent_Production/Agent_Foundations/AI_Agents]]。
+HITL 适合高风险动作（取消订单、转账、删除数据），不适合低风险高频动作（查询、推荐）^[[Agent/Agent_Foundations/AI_Agents]]。
 
 ---
 
 ## 与其他课的衔接
 
-- 本课侧重**安全设计模式**，[[15_Agent_Production/Course_Notes/Microsoft_AI_Agents_L18_Securing_AI_Agents]] 侧重**加密审计收据（Signed Receipts）**这一具体技术
-- 与 [[17_Ethics_Safety/GenAI_L13_Securing_AI_Applications]] 互为补充：那节是 GenAI 通用安全，本节是 Agent 专属安全
+- 本课侧重**安全设计模式**，[[Agent/Course_Notes/Microsoft_AI_Agents_L18_Securing_AI_Agents]] 侧重**加密审计收据（Signed Receipts）**这一具体技术
+- 与 [[伦理安全/GenAI_L13_Securing_AI_Applications]] 互为补充：那节是 GenAI 通用安全，本节是 Agent 专属安全
 
 ## 参考资源
 
@@ -137,9 +137,9 @@ HITL 适合高风险动作（取消订单、转账、删除数据），不适合
 
 ## 关联阅读
 
-- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents_L05_Agentic_RAG]] — 上一课：Agentic RAG
-- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents_L07_Planning_Design]] — 下一课：规划设计
-- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents_L18_Securing_AI_Agents]] — L18：加密审计收据深度技术
-- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents_L03_Design_Principles]] — L03：透明度/可控原则的理论基础
-- [[17_Ethics_Safety/GenAI_L13_Securing_AI_Applications]] — GenAI 应用安全基础
+- [[Agent/Course_Notes/Microsoft_AI_Agents_L05_Agentic_RAG]] — 上一课：Agentic RAG
+- [[Agent/Course_Notes/Microsoft_AI_Agents_L07_Planning_Design]] — 下一课：规划设计
+- [[Agent/Course_Notes/Microsoft_AI_Agents_L18_Securing_AI_Agents]] — L18：加密审计收据深度技术
+- [[Agent/Course_Notes/Microsoft_AI_Agents_L03_Design_Principles]] — L03：透明度/可控原则的理论基础
+- [[伦理安全/GenAI_L13_Securing_AI_Applications]] — GenAI 应用安全基础
 - [[90_Learn/courses/microsoft/microsoft_ai_agents_for_beginners]] — 课程总览

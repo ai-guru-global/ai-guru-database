@@ -740,21 +740,21 @@ Sutton 指出，以下三者同时存在会导致不稳定：
 ## 7. 与其他主题的关联 (Connections)
 
 ### 7.1 前置知识
-- **强化学习基础**: [RL Foundations](06_Reinforcement_Learning/RL_Foundations/RL_Foundations.md) —— MDP、贝尔曼方程、Q-Learning
+- **强化学习基础**: [RL Foundations](强化学习/RL_Foundations/RL_Foundations.md) —— MDP、贝尔曼方程、Q-Learning
 - **深度学习基础**:
- - [神经网络核心](03_Deep_Learning/Neural_Network_Core/Neural_Network_Core.md) —— MLP、CNN、RNN
- - [优化方法](03_Deep_Learning/Optimization/Optimization.md) —— SGD、Adam、学习率调度
-- **概率统计**: [概率统计基础](01_Fundamentals/Probability_Statistics/Probability_Statistics.md) —— 期望、方差、重要性采样
+ - [神经网络核心](深度学习/Neural_Network_Core/Neural_Network_Core.md) —— MLP、CNN、RNN
+ - [优化方法](深度学习/Optimization/Optimization.md) —— SGD、Adam、学习率调度
+- **概率统计**: [概率统计基础](数学基础/Probability_Statistics/Probability_Statistics.md) —— 期望、方差、重要性采样
 
 ### 7.2 后续进阶
-- **AI 智能体**: [AI Agents](15_Agent_Production/Agent_Foundations/AI_Agents.md) —— 结合 LLM 的自主规划系统
+- **AI 智能体**: [AI Agents](Agent/Agent_Foundations/AI_Agents.md) —— 结合 LLM 的自主规划系统
 - **多智能体强化学习**: 博弈论、协作通信
 - **模仿学习**: Behavior Cloning, GAIL, IRL
 
 ### 7.3 相关领域
-- **自然语言处理**: [Transformer](05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution.md) —— RLHF 中的策略网络
-- **计算机视觉**: [图像分类检测](04_Computer_Vision/Image_Classification_Detection/Image_Classification_Detection.md) —— Atari 游戏的视觉编码
-- **生成模型**: [生成模型](04_Computer_Vision/Generative_Models/Generative_Models.md) —— 基于扩散模型的 RL
+- **自然语言处理**: [Transformer](大模型/Transformer_Revolution/Transformer_Revolution.md) —— RLHF 中的策略网络
+- **计算机视觉**: [图像分类检测](计算机视觉/Image_Classification_Detection/Image_Classification_Detection.md) —— Atari 游戏的视觉编码
+- **生成模型**: [生成模型](计算机视觉/Generative_Models/Generative_Models.md) —— 基于扩散模型的 RL
 
 ## 8. 面试高频问题 (Interview FAQs)
 

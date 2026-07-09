@@ -70,26 +70,26 @@ AI 开源项目分类
 
 | 框架 | 开发商 | 协作模式 | 特点 | 文档 |
 |------|--------|----------|------|------|
-| **LangGraph** | LangChain | 状态机 | 高度灵活，复杂工作流 | [Deep Dive](15_Agent_Production/Agent_Workflow/LangGraph_Deep_Dive.md) |
-| **AutoGen** | Microsoft | 对话式 | Group Chat，代码执行 | [Deep Dive](15_Agent_Production/Agent_Frameworks/AutoGen_Deep_Dive.md) |
-| **CrewAI** | CrewAI | 角色+任务 | 简单易用，角色扮演 | [Deep Dive](15_Agent_Production/Agent_Frameworks/CrewAI_Deep_Dive.md) |
-| **AgentScope** | 阿里巴巴 | Actor-Staged | 大规模并发，中文 | [Deep Dive](15_Agent_Production/Agent_Frameworks/AgentScope_Deep_Dive.md) |
+| **LangGraph** | LangChain | 状态机 | 高度灵活，复杂工作流 | [Deep Dive](Agent/Agent_Workflow/LangGraph_Deep_Dive.md) |
+| **AutoGen** | Microsoft | 对话式 | Group Chat，代码执行 | [Deep Dive](Agent/Agent_Frameworks/AutoGen_Deep_Dive.md) |
+| **CrewAI** | CrewAI | 角色+任务 | 简单易用，角色扮演 | [Deep Dive](Agent/Agent_Frameworks/CrewAI_Deep_Dive.md) |
+| **AgentScope** | 阿里巴巴 | Actor-Staged | 大规模并发，中文 | [Deep Dive](Agent/Agent_Frameworks/AgentScope_Deep_Dive.md) |
 
 ### 1.2 自主执行框架
 
 | 框架 | 特点 | 场景 | 文档 |
 |------|------|------|------|
-| **AutoGPT** | 自主规划执行 | 复杂任务 | [Deep Dive](15_Agent_Production/Agent_Frameworks/AutoGPT_Deep_Dive.md) |
-| **SmolAgents** | 轻量级，HF 集成 | 快速实验 | [Deep Dive](15_Agent_Production/Agent_Frameworks/SmolAgents_Deep_Dive.md) |
-| **agno** | 知识+记忆内置 | 生产级 Agent | [Deep Dive](15_Agent_Production/Agent_Frameworks/Agno_Deep_Dive.md) |
+| **AutoGPT** | 自主规划执行 | 复杂任务 | [Deep Dive](Agent/Agent_Frameworks/AutoGPT_Deep_Dive.md) |
+| **SmolAgents** | 轻量级，HF 集成 | 快速实验 | [Deep Dive](Agent/Agent_Frameworks/SmolAgents_Deep_Dive.md) |
+| **agno** | 知识+记忆内置 | 生产级 Agent | [Deep Dive](Agent/Agent_Frameworks/Agno_Deep_Dive.md) |
 
 ### 1.3 LLM 应用框架
 
 | 框架 | 特点 | 场景 | 文档 |
 |------|------|------|------|
-| **LangChain** | 全能，组件丰富 | LLM 应用开发 | [Deep Dive](15_Agent_Production/Agent_Frameworks/LangChain_Deep_Dive.md) |
-| **LangChain Agents** | 工具调用框架 | ReAct、Plan-and-Execute | [Deep Dive](15_Agent_Production/Agent_Frameworks/LangChain_Agents_Deep_Dive.md) |
-| **Transformers Agents** | HuggingFace 原生 | 代码执行、多模态工具 | [Deep Dive](15_Agent_Production/Agent_Frameworks/Transformers_Agents_Deep_Dive.md) |
+| **LangChain** | 全能，组件丰富 | LLM 应用开发 | [Deep Dive](Agent/Agent_Frameworks/LangChain_Deep_Dive.md) |
+| **LangChain Agents** | 工具调用框架 | ReAct、Plan-and-Execute | [Deep Dive](Agent/Agent_Frameworks/LangChain_Agents_Deep_Dive.md) |
+| **Transformers Agents** | HuggingFace 原生 | 代码执行、多模态工具 | [Deep Dive](Agent/Agent_Frameworks/Transformers_Agents_Deep_Dive.md) |
 
 ---
 
@@ -99,27 +99,27 @@ AI 开源项目分类
 
 | 框架 | 特点 | 文档 |
 |------|------|------|
-| **LlamaIndex** | 数据索引优先，查询优化 | [Deep Dive](14_RAG_Systems/RAG_Frameworks/LlamaIndex_Deep_Dive.md) |
+| **LlamaIndex** | 数据索引优先，查询优化 | [Deep Dive](RAG系统/RAG_Frameworks/LlamaIndex_Deep_Dive.md) |
 | **LangChain** | 生态丰富，链式调用 | (见 Agent 框架) |
-| **Haystack** | 模块化，Pipeline 架构 | [Deep Dive](14_RAG_Systems/RAG_Frameworks/Haystack_Deep_Dive.md) |
+| **Haystack** | 模块化，Pipeline 架构 | [Deep Dive](RAG系统/RAG_Frameworks/Haystack_Deep_Dive.md) |
 
 ### 2.2 可视化平台
 
 | 平台 | 特点 | 文档 |
 |------|------|------|
-| **Dify** | 开源可视化，RAG+Agent | [Deep Dive](14_RAG_Systems/RAG_Frameworks/Dify_Deep_Dive.md) |
-| **LangFlow** | LangChain 可视化 | [Deep Dive](14_RAG_Systems/RAG_Frameworks/LangFlow_Deep_Dive.md) |
-| **Flowise** | 低代码，快速原型 | [Deep Dive](14_RAG_Systems/RAG_Frameworks/Flowise_Deep_Dive.md) |
+| **Dify** | 开源可视化，RAG+Agent | [Deep Dive](RAG系统/RAG_Frameworks/Dify_Deep_Dive.md) |
+| **LangFlow** | LangChain 可视化 | [Deep Dive](RAG系统/RAG_Frameworks/LangFlow_Deep_Dive.md) |
+| **Flowise** | 低代码，快速原型 | [Deep Dive](RAG系统/RAG_Frameworks/Flowise_Deep_Dive.md) |
 
 ### 2.3 向量存储
 
 | 存储 | 类型 | 特点 | 适用场景 |
 |------|------|------|----------|
-| **Chroma** | 开源 | 轻量级，本地优先 | 原型、小规模 | [Deep Dive](14_RAG_Systems/Vector_Databases/Chroma_Deep_Dive.md) |
-| **Qdrant** | 开源 | 高性能，混合检索 | 生产环境 | [Deep Dive](14_RAG_Systems/Vector_Databases/Qdrant_Deep_Dive.md) |
-| **Milvus** | 开源+云 | 大规模，向量检索 | 超大规模 | [Deep Dive](14_RAG_Systems/Vector_Databases/Milvus_Deep_Dive.md) |
-| **Typesense** | 开源 | 极速，搜索友好 | 搜索优先 | [Deep Dive](14_RAG_Systems/Vector_Databases/Typesense_Deep_Dive.md) |
-| **Weaviate** | 开源 | 混合检索，GraphQL | 多模态 | [Deep Dive](14_RAG_Systems/Vector_Databases/Weaviate_Deep_Dive.md) |
+| **Chroma** | 开源 | 轻量级，本地优先 | 原型、小规模 | [Deep Dive](RAG系统/Vector_Databases/Chroma_Deep_Dive.md) |
+| **Qdrant** | 开源 | 高性能，混合检索 | 生产环境 | [Deep Dive](RAG系统/Vector_Databases/Qdrant_Deep_Dive.md) |
+| **Milvus** | 开源+云 | 大规模，向量检索 | 超大规模 | [Deep Dive](RAG系统/Vector_Databases/Milvus_Deep_Dive.md) |
+| **Typesense** | 开源 | 极速，搜索友好 | 搜索优先 | [Deep Dive](RAG系统/Vector_Databases/Typesense_Deep_Dive.md) |
+| **Weaviate** | 开源 | 混合检索，GraphQL | 多模态 | [Deep Dive](RAG系统/Vector_Databases/Weaviate_Deep_Dive.md) |
 
 ---
 
@@ -129,34 +129,34 @@ AI 开源项目分类
 
 | 引擎 | 开发商 | 吞吐量 | 特点 | 文档 |
 |------|--------|--------|------|------|
-| **SGLang** | LMSYS | 16,215 tok/s | RadixAttention，前缀缓存 | [Deep Dive](10_Deployment_Inference/Inference_Engines/SGLang_Deep_Dive.md) |
-| **vLLM** | UC Berkeley | 12,553 tok/s | PagedAttention，生态成熟 | [Deep Dive](10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive.md) |
-| **LMDeploy** | 上海 AI 实验室 | 16,132 tok/s | TurboMind，国产优化 | [Deep Dive](10_Deployment_Inference/Inference_Engines/LMDeploy_Deep_Dive.md) |
-| **TensorRT-LLM** | NVIDIA | 10,000+ tok/s | 单请求低延迟 | [Deep Dive](10_Deployment_Inference/Inference_Engines/TensorRT_LLM_Deep_Dive.md) |
-| **llama.cpp** | 开源社区 | ~6,000 tok/s | 纯 C/C++，CPU 推理 | [Deep Dive](10_Deployment_Inference/Inference_Engines/llama_cpp_Deep_Dive.md) |
+| **SGLang** | LMSYS | 16,215 tok/s | RadixAttention，前缀缓存 | [Deep Dive](部署推理/Inference_Engines/SGLang_Deep_Dive.md) |
+| **vLLM** | UC Berkeley | 12,553 tok/s | PagedAttention，生态成熟 | [Deep Dive](部署推理/Inference_Engines/vLLM_Deep_Dive.md) |
+| **LMDeploy** | 上海 AI 实验室 | 16,132 tok/s | TurboMind，国产优化 | [Deep Dive](部署推理/Inference_Engines/LMDeploy_Deep_Dive.md) |
+| **TensorRT-LLM** | NVIDIA | 10,000+ tok/s | 单请求低延迟 | [Deep Dive](部署推理/Inference_Engines/TensorRT_LLM_Deep_Dive.md) |
+| **llama.cpp** | 开源社区 | ~6,000 tok/s | 纯 C/C++，CPU 推理 | [Deep Dive](部署推理/Inference_Engines/llama_cpp_Deep_Dive.md) |
 
 ### 3.2 本地部署
 
 | 工具 | 特点 | 文档 |
 |------|------|------|
-| **Ollama** | 零配置，一键运行 | [Deep Dive](10_Deployment_Inference/Inference_Engines/Ollama_Deep_Dive.md) |
-| **llama.cpp** | CPU 推理，GGUF | [Deep Dive](10_Deployment_Inference/Inference_Engines/llama_cpp_Deep_Dive.md) |
+| **Ollama** | 零配置，一键运行 | [Deep Dive](部署推理/Inference_Engines/Ollama_Deep_Dive.md) |
+| **llama.cpp** | CPU 推理，GGUF | [Deep Dive](部署推理/Inference_Engines/llama_cpp_Deep_Dive.md) |
 | **LM Studio** | 桌面应用 | (见 Deployment_Inference.md) |
 
 ### 3.3 AI Gateway
 
 | 方案 | 模型支持 | 特点 | 文档 |
 |------|----------|------|------|
-| **LiteLLM** | 100+ | 统一接口，智能路由 | [Deep Dive](12_Architecture_Infrastructure/AI_Gateway/LiteLLM_Deep_Dive.md) |
-| **Portkey** | 50+ | 企业级，可观测性 | [Deep Dive](12_Architecture_Infrastructure/AI_Gateway/Portkey_Deep_Dive.md) |
-| **Cohere** | Embedding+LLM | 企业级 embedding | [Deep Dive](12_Architecture_Infrastructure/AI_Gateway/Cohere_Deep_Dive.md) |
+| **LiteLLM** | 100+ | 统一接口，智能路由 | [Deep Dive](架构基建/AI_Gateway/LiteLLM_Deep_Dive.md) |
+| **Portkey** | 50+ | 企业级，可观测性 | [Deep Dive](架构基建/AI_Gateway/Portkey_Deep_Dive.md) |
+| **Cohere** | Embedding+LLM | 企业级 embedding | [Deep Dive](架构基建/AI_Gateway/Cohere_Deep_Dive.md) |
 
 ### 3.4 Embedding 模型
 
 | 模型 | 特点 | 文档 |
 |------|------|------|
-| **Sentence-Transformers** | 开源，多语言 | [Deep Dive](14_RAG_Systems/Embeddings/Sentence_Transformers_Deep_Dive.md) |
-| **Cohere Embed** | 企业级，高精度 | [Deep Dive](12_Architecture_Infrastructure/AI_Gateway/Cohere_Deep_Dive.md) |
+| **Sentence-Transformers** | 开源，多语言 | [Deep Dive](RAG系统/Embeddings/Sentence_Transformers_Deep_Dive.md) |
+| **Cohere Embed** | 企业级，高精度 | [Deep Dive](架构基建/AI_Gateway/Cohere_Deep_Dive.md) |
 | **OpenAI Embedding** | API 调用 | (见 OpenAI API 文档) |
 
 ---
@@ -167,7 +167,7 @@ AI 开源项目分类
 
 | 模型 | 开发商 | 特点 | 文档 |
 |------|--------|------|------|
-| **LLaVA** | 微软 | 开源图文对话 | [Deep Dive](05_NLP_LLMs/Multimodal_Models/LLaVA_Deep_Dive.md) |
+| **LLaVA** | 微软 | 开源图文对话 | [Deep Dive](大模型/Multimodal_Models/LLaVA_Deep_Dive.md) |
 | **Qwen-VL** | 阿里巴巴 | 中文优化 | (见 Multimodal_Architectures_2026.md) |
 | **InternVL** | 智谱 | 通用视觉 | (见 Multimodal_Architectures_2026.md) |
 | **BakLLaVA** | Mistral | 轻量级 | (见 Multimodal_Architectures_2026.md) |
@@ -188,26 +188,26 @@ AI 开源项目分类
 | 工具 | 类型 | 开发商 | 文档 |
 |------|------|--------|------|
 | **Claude Code** | CLI | Anthropic | [Deep Dive](./Agentic_Coding_Tools/Claude_Code_Deep_Dive.md) |
-| **OpenCode** | CLI | OpenCode | [Deep Dive](15_Agent_Production/Agentic_Coding_Tools/OpenCode_Deep_Dive.md) |
-| **Cursor** | IDE | Cursor | [Deep Dive](15_Agent_Production/Agentic_Coding_Tools/Windsurf_Cursor_Devin_Dive.md) |
-| **Windsurf** | IDE | Codeium | [Deep Dive](15_Agent_Production/Agentic_Coding_Tools/Windsurf_Cursor_Devin_Dive.md) |
-| **Devin** | SA Agent | Cognition | [Deep Dive](15_Agent_Production/Agentic_Coding_Tools/Windsurf_Cursor_Devin_Dive.md) |
+| **OpenCode** | CLI | OpenCode | [Deep Dive](Agent/Agentic_Coding_Tools/OpenCode_Deep_Dive.md) |
+| **Cursor** | IDE | Cursor | [Deep Dive](Agent/Agentic_Coding_Tools/Windsurf_Cursor_Devin_Dive.md) |
+| **Windsurf** | IDE | Codeium | [Deep Dive](Agent/Agentic_Coding_Tools/Windsurf_Cursor_Devin_Dive.md) |
+| **Devin** | SA Agent | Cognition | [Deep Dive](Agent/Agentic_Coding_Tools/Windsurf_Cursor_Devin_Dive.md) |
 
 ### 5.2 编程辅助
 
 | 工具 | 类型 | 文档 |
 |------|------|------|
-| **Aider** | 命令行代码编辑 | [Deep Dive](15_Agent_Production/Agentic_Coding_Tools/Aider_Deep_Dive.md) |
-| **Continue** | VS Code 插件 | [Deep Dive](15_Agent_Production/Agentic_Coding_Tools/Continue_Deep_Dive.md) |
+| **Aider** | 命令行代码编辑 | [Deep Dive](Agent/Agentic_Coding_Tools/Aider_Deep_Dive.md) |
+| **Continue** | VS Code 插件 | [Deep Dive](Agent/Agentic_Coding_Tools/Continue_Deep_Dive.md) |
 | **CodeRabbit** | 代码审查 | (见 International_Agentic_Tools.md) |
-| **Gradio** | ML Demo 框架 | [Deep Dive](15_Agent_Production/Gradio_Deep_Dive.md) |
+| **Gradio** | ML Demo 框架 | [Deep Dive](Agent/Gradio_Deep_Dive.md) |
 
 ### 5.3 模型服务
 
 | 工具 | 特点 | 文档 |
 |------|------|------|
-| **BentoML** | 一键打包 API | [Deep Dive](10_Deployment_Inference/Inference_Engines/BentoML_Deep_Dive.md) |
-| **Gradio** | Demo 界面 | [Deep Dive](15_Agent_Production/Gradio_Deep_Dive.md) |
+| **BentoML** | 一键打包 API | [Deep Dive](部署推理/Inference_Engines/BentoML_Deep_Dive.md) |
+| **Gradio** | Demo 界面 | [Deep Dive](Agent/Gradio_Deep_Dive.md) |
 | **LangServe** | LangChain 服务 | (见 LangChain_Deep_Dive.md) |
 
 ---
@@ -218,7 +218,7 @@ AI 开源项目分类
 
 | 项目 | 开发商 | 特点 | 文档 |
 |------|--------|------|------|
-| **AgentScope** | 阿里巴巴 | Actor-Staged 架构 | [Deep Dive](15_Agent_Production/Agent_Frameworks/AgentScope_Deep_Dive.md) |
+| **AgentScope** | 阿里巴巴 | Actor-Staged 架构 | [Deep Dive](Agent/Agent_Frameworks/AgentScope_Deep_Dive.md) |
 | **CoPaw** | 阿里 | 个人 AI 助手 | (见 OpenClaw_Ecosystem) |
 | **ChatDev** | 清华大学 | 虚拟软件公司 | (见 Agent_Ecosystem_CN) |
 | **XAgent** | 上海 AI 实验室 | 通用自主 Agent | (见 Agent_Ecosystem_CN) |
@@ -239,72 +239,72 @@ AI 开源项目分类
 
 | 工具 | 特点 | 文档 |
 |------|------|------|
-| **MLflow** | 全流程，开源 | [Deep Dive](11_MLOps_Pipeline/Experiment_Tracking/MLflow_Deep_Dive.md) |
-| **Weights & Biases** | SaaS，易用 | [Deep Dive](09_Testing/Weights_Biases_Deep_Dive.md) |
-| **ClearML** | 一站式，开源 | [Deep Dive](11_MLOps_Pipeline/Experiment_Tracking/ClearML_Deep_Dive.md) |
+| **MLflow** | 全流程，开源 | [Deep Dive](MLOps/Experiment_Tracking/MLflow_Deep_Dive.md) |
+| **Weights & Biases** | SaaS，易用 | [Deep Dive](AI测试/Weights_Biases_Deep_Dive.md) |
+| **ClearML** | 一站式，开源 | [Deep Dive](MLOps/Experiment_Tracking/ClearML_Deep_Dive.md) |
 
 ### 7.2 数据版本控制
 
 | 工具 | 特点 | 文档 |
 |------|------|------|
-| **DVC** | Git 工作流 | [Deep Dive](11_MLOps_Pipeline/Orchestration/DVC_Deep_Dive.md) |
-| **LakeFS** | 数据湖版本 | [Deep Dive](11_MLOps_Pipeline/Orchestration/LakeFS_Deep_Dive.md) |
+| **DVC** | Git 工作流 | [Deep Dive](MLOps/Orchestration/DVC_Deep_Dive.md) |
+| **LakeFS** | 数据湖版本 | [Deep Dive](MLOps/Orchestration/LakeFS_Deep_Dive.md) |
 
 ### 7.3 提示词管理
 
 | 工具 | 特点 | 文档 |
 |------|------|------|
-| **PromptLayer** | 请求追踪 | [Deep Dive](../11_MLOps_Pipeline/Observability/PromptLayer_Deep_Dive.md) |
-| **LangSmith** | LLM 调试 | [Deep Dive](11_MLOps_Pipeline/Observability/LangSmith_Deep_Dive.md) |
+| **PromptLayer** | 请求追踪 | [Deep Dive](../MLOps/Observability/PromptLayer_Deep_Dive.md) |
+| **LangSmith** | LLM 调试 | [Deep Dive](MLOps/Observability/LangSmith_Deep_Dive.md) |
 
 ### 7.4 MLOps 平台
 
 | 工具 | 特点 | 文档 |
 |------|------|------|
-| **Kubeflow** | 云原生，K8s | [Deep Dive](11_MLOps_Pipeline/Orchestration/Kubeflow_Deep_Dive.md) |
-| **Prefect** | Python 原生流水线 | [Deep Dive](11_MLOps_Pipeline/Orchestration/Prefect_Deep_Dive.md) |
-| **MLflow** | 全流程，开源 | [Deep Dive](11_MLOps_Pipeline/Experiment_Tracking/MLflow_Deep_Dive.md) |
-| **ClearML** | 一站式开源 | [Deep Dive](11_MLOps_Pipeline/Experiment_Tracking/ClearML_Deep_Dive.md) |
-| **Feast** | 特征存储 | [Deep Dive](11_MLOps_Pipeline/Experiment_Tracking/Feast_Deep_Dive.md) |
+| **Kubeflow** | 云原生，K8s | [Deep Dive](MLOps/Orchestration/Kubeflow_Deep_Dive.md) |
+| **Prefect** | Python 原生流水线 | [Deep Dive](MLOps/Orchestration/Prefect_Deep_Dive.md) |
+| **MLflow** | 全流程，开源 | [Deep Dive](MLOps/Experiment_Tracking/MLflow_Deep_Dive.md) |
+| **ClearML** | 一站式开源 | [Deep Dive](MLOps/Experiment_Tracking/ClearML_Deep_Dive.md) |
+| **Feast** | 特征存储 | [Deep Dive](MLOps/Experiment_Tracking/Feast_Deep_Dive.md) |
 
 ### 7.5 LLM 安全
 
 | 工具 | 特点 | 文档 |
 |------|------|------|
-| **Guardrails AI** | 输入/输出护栏 | [Deep Dive](../13_AI_Ops/SRE_Reliability/Guardrails_Deep_Dive.md) |
+| **Guardrails AI** | 输入/输出护栏 | [Deep Dive](../AI运维/SRE_Reliability/Guardrails_Deep_Dive.md) |
 | **Llama Guard** | 内容安全 | (见 AI_Safety_2026.md) |
 
 ### 7.6 LLM 评估
 
 | 工具 | 特点 | 文档 |
 |------|------|------|
-| **Braintrust** | 开源评估 | [Deep Dive](11_MLOps_Pipeline/Observability/Braintrust_Deep_Dive.md) |
-| **Helicone** | 可观测性 | [Deep Dive](11_MLOps_Pipeline/Observability/Helicone_Deep_Dive.md) |
-| **Promptfoo** | Prompt 测试 | [Deep Dive](09_Testing/Testing_Frameworks/Promptfoo_Deep_Dive.md) |
-| **RAGAS** | RAG 评估 | [Deep Dive](09_Testing/RAGAS_Deep_Dive.md) |
-| **DeepEval** | LLM 评估 | [Deep Dive](09_Testing/Testing_Frameworks/DeepEval_Deep_Dive.md) |
+| **Braintrust** | 开源评估 | [Deep Dive](MLOps/Observability/Braintrust_Deep_Dive.md) |
+| **Helicone** | 可观测性 | [Deep Dive](MLOps/Observability/Helicone_Deep_Dive.md) |
+| **Promptfoo** | Prompt 测试 | [Deep Dive](AI测试/Testing_Frameworks/Promptfoo_Deep_Dive.md) |
+| **RAGAS** | RAG 评估 | [Deep Dive](AI测试/RAGAS_Deep_Dive.md) |
+| **DeepEval** | LLM 评估 | [Deep Dive](AI测试/Testing_Frameworks/DeepEval_Deep_Dive.md) |
 
 ### 7.7 结构化输出
 
 | 框架 | 特点 | 文档 |
 |------|------|------|
-| **Instructor** | Python 原生，类型安全 | [Deep Dive](05_NLP_LLMs/Prompt_Engineering/Instructor_Deep_Dive.md) |
-| **Guidance** | 微软，引导式生成 | [Deep Dive](05_NLP_LLMs/Prompt_Engineering/Guidance_Deep_Dive.md) |
-| **Outlines** | CFG 约束，高速 | [Deep Dive](05_NLP_LLMs/Prompt_Engineering/Outlines_Deep_Dive.md) |
-| **DSPy** | 可编程 Prompt 优化 | [Deep Dive](05_NLP_LLMs/Prompt_Engineering/DSPy_Deep_Dive.md) |
+| **Instructor** | Python 原生，类型安全 | [Deep Dive](大模型/Prompt_Engineering/Instructor_Deep_Dive.md) |
+| **Guidance** | 微软，引导式生成 | [Deep Dive](大模型/Prompt_Engineering/Guidance_Deep_Dive.md) |
+| **Outlines** | CFG 约束，高速 | [Deep Dive](大模型/Prompt_Engineering/Outlines_Deep_Dive.md) |
+| **DSPy** | 可编程 Prompt 优化 | [Deep Dive](大模型/Prompt_Engineering/DSPy_Deep_Dive.md) |
 
 ### 7.8 微调框架
 
 | 框架 | 特点 | 文档 |
 |------|------|------|
-| **Unsloth** | 2x 加速，24GB 单卡 | [Deep Dive](05_NLP_LLMs/Fine_tuning_Techniques/Unsloth_Deep_Dive.md) |
-| **Axolotl** | 全参数/LoRA/QLoRA | [Deep Dive](05_NLP_LLMs/Fine_tuning_Techniques/Axolotl_Deep_Dive.md) |
+| **Unsloth** | 2x 加速，24GB 单卡 | [Deep Dive](大模型/Fine_tuning_Techniques/Unsloth_Deep_Dive.md) |
+| **Axolotl** | 全参数/LoRA/QLoRA | [Deep Dive](大模型/Fine_tuning_Techniques/Axolotl_Deep_Dive.md) |
 
 ### 7.9 多模态模型
 
 | 模型 | 特点 | 文档 |
 |------|------|------|
-| **LLaVA** | 开源图文对话 | [Deep Dive](05_NLP_LLMs/Multimodal_Models/LLaVA_Deep_Dive.md) |
+| **LLaVA** | 开源图文对话 | [Deep Dive](大模型/Multimodal_Models/LLaVA_Deep_Dive.md) |
 
 ---
 
@@ -348,7 +348,7 @@ AI 开源项目分类
 
 如果想添加新的开源项目文档：
 
-1. **确定分类**: Agent 框架 → `15_Agent_Production/Agent_Frameworks/`
+1. **确定分类**: Agent 框架 → `Agent/Agent_Frameworks/`
 2. **命名规范**: `<Project>_Deep_Dive.md`
 3. **文档结构**:
  - 一句话理解
@@ -366,7 +366,7 @@ AI 开源项目分类
 
 ## Related
 
-- [[15_Agent_Production/Agent_Evaluation/Agent_Harness_Complete_2026.md]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
-- [[15_Agent_Production/Agent_Evaluation/Agent_Red_Teaming_2026.md]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
-- [[15_Agent_Production/Agent_Evaluation/Assessment/Evaluation_Workflow.md]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
-- [[15_Agent_Production/Agent_Evaluation/Assessment/Production_Assessment.md]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)
+- [[Agent/Agent_Evaluation/Agent_Harness_Complete_2026.md]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
+- [[Agent/Agent_Evaluation/Agent_Red_Teaming_2026.md]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[Agent/Agent_Evaluation/Assessment/Evaluation_Workflow.md]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[Agent/Agent_Evaluation/Assessment/Production_Assessment.md]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)

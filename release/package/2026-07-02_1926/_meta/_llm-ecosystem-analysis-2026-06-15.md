@@ -150,7 +150,7 @@ KV Cache 697行深度研究、投机解码前沿、Prompt Caching 高级技术�
 | P0 | 扩充 MLOps Pipeline 章节 | 10_MLOps_Pipeline | ✅ 已执行 |
 | P0 | Git 提交所有未入库文件 | 全库 | ✅ 已执行 |
 | P1 | 跨厂商 Streaming API 对比 | 09_Deployment_Inference | 待定 |
-| P1 | Codestral 独立分析 | 05_NLP_LLMs/Global_LLM_Ecosystem | 待定 |
+| P1 | Codestral 独立分析 | 大模型/Global_LLM_Ecosystem | 待定 |
 | P2 | Agent 规划算法专题 | 13_Agent_Production | 待定 |
 
 ---

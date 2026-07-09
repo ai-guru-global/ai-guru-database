@@ -31,5 +31,5 @@ aliases:
 | [Visual Guide to Reasoning LLMs](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-reasoning-llms) | 推理模型图解 |
 | [Visual Guide to Mixture of Experts](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-mixture-of-experts) | MoE 架构图解 |
 
-> **关联**: -> [[05_NLP_LLMs|NLP/LLM]] | [[15_Agent_Production|Agent 生产]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[大模型|NLP/LLM]] | [[Agent|Agent 生产]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
 

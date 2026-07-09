@@ -77,5 +77,5 @@ aliases:
 ## 相关
 
 - [[_concepts/activation-value]] — 神经网络中神经元输出的响应强度
-- [[03_Deep_Learning/Deep_Learning_For_Beginners]] — 深度学习入门：神经网络、梯度下降与主流架构
-- [[05_NLP_LLMs/LLM_Architectures/LLM_Internals_Training]] — 大模型训练内幕：优化器、学习率调度与分布式训练
+- [[深度学习/Deep_Learning_For_Beginners]] — 深度学习入门：神经网络、梯度下降与主流架构
+- [[大模型/LLM_Architectures/LLM_Internals_Training]] — 大模型训练内幕：优化器、学习率调度与分布式训练

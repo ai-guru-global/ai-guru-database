@@ -815,9 +815,9 @@ training_args = TrainingArguments(
 
 - 更多训练优化技巧 → [训练优化 2026](./Training_Optimization_2026.md)
 - 分布式训练中的混合精度 → [分布式训练 2026](../Distributed_Training/Distributed_Training_2026.md)
-- 优化器基础与原理 → [../03_Deep_Learning/Optimization/Optimization.md](../../03_Deep_Learning/Optimization/Optimization.md)
-- 模型评估指标 → [../08_Model_Evaluation/Model_Evaluation.md](../../08_Model_Evaluation/Model_Evaluation.md)
-- 部署推理优化 → [../10_Deployment_Inference/Inference-in-nutshell.md](../../10_Deployment_Inference/Inference-in-nutshell.md)
+- 优化器基础与原理 → [../深度学习/Optimization/Optimization.md](../../深度学习/Optimization/Optimization.md)
+- 模型评估指标 → [../模型评估/Model_Evaluation.md](../../模型评估/Model_Evaluation.md)
+- 部署推理优化 → [../部署推理/Inference-in-nutshell.md](../../部署推理/Inference-in-nutshell.md)
 
 ---
 
@@ -837,8 +837,8 @@ training_args = TrainingArguments(
 
 ## Related
 
-- [[07_Model_Training/Distributed_Training/Distributed_Training_2026]] — Distributed Training 2026 (共享: distributed-training, fsdp, model-training, optimization)
-- [[07_Model_Training/Distributed_Training/Distributed_Training_for_dummy]] — 分布式训练 - 小白版 (共享: distributed-training, fsdp, model-training, optimization)
-- [[07_Model_Training/Model-Training-in-nutshell]] — 模型训练速成指南 (共享: distributed-training, fsdp, model-training, optimization)
-- [[07_Model_Training/Model_Training_for_dummy]] — 模型训练小白指南 (共享: distributed-training, fsdp, model-training, optimization)
-- [[07_Model_Training/Monitoring/Training_Monitoring_2026.md|Training_Monitoring_2026]]
+- [[模型训练/Distributed_Training/Distributed_Training_2026]] — Distributed Training 2026 (共享: distributed-training, fsdp, model-training, optimization)
+- [[模型训练/Distributed_Training/Distributed_Training_for_dummy]] — 分布式训练 - 小白版 (共享: distributed-training, fsdp, model-training, optimization)
+- [[模型训练/Model-Training-in-nutshell]] — 模型训练速成指南 (共享: distributed-training, fsdp, model-training, optimization)
+- [[模型训练/Model_Training_for_dummy]] — 模型训练小白指南 (共享: distributed-training, fsdp, model-training, optimization)
+- [[模型训练/Monitoring/Training_Monitoring_2026.md|Training_Monitoring_2026]]

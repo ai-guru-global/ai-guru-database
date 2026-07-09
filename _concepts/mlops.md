@@ -11,11 +11,11 @@ relationships:
     type: related_to
 sources:
   - 10_MLOps_automl/MLOps_Pipeline.md
-  - 11_MLOps_Pipeline/MLOps_Maturity_Model.md
-  - 11_MLOps_Pipeline/Orchestration/Data_Pipeline_Orchestration.md
-  - 11_MLOps_Pipeline/Experiment_Tracking/Experiment_Tracking_Deep_Dive.md
-  - 11_MLOps_Pipeline/CI_CD/ML_CI_CD.md
-  - 11_MLOps_Pipeline/feature-engineering_Store_Deep_Dive.md
+  - MLOps/MLOps_Maturity_Model.md
+  - MLOps/Orchestration/Data_Pipeline_Orchestration.md
+  - MLOps/Experiment_Tracking/Experiment_Tracking_Deep_Dive.md
+  - MLOps/CI_CD/ML_CI_CD.md
+  - MLOps/feature-engineering_Store_Deep_Dive.md
 summary: MLOps是DevOps的AI升级版，将机器学习模型从实验环境稳定部署到生产环境的工程实践体系，涵盖数据版本化、实验追踪、特征存储、CI/CD流水线和模型监控等核心能力。
 provenance:
   extracted: 0.80
@@ -96,15 +96,15 @@ LLMOps面临新挑战：评估从固定指标转向LLM-as-Judge，版本管理�
 
 ## 来源
 
-- 11_MLOps_Pipeline/MLOps_Pipeline.md — 完整流水线设计、LLMOps 2026最佳实践
-- 11_MLOps_Pipeline/MLOps_Maturity_Model.md — 成熟度模型Level 0-3、团队建设
-- 11_MLOps_Pipeline/Orchestration/Data_Pipeline_Orchestration.md — Airflow/Dagster/Prefect对比
-- 11_MLOps_Pipeline/Experiment_Tracking/Experiment_Tracking_Deep_Dive.md — MLflow/W&B/Neptune深度对比
-- 11_MLOps_Pipeline/CI_CD/ML_CI_CD.md — 数据验证、模型测试、部署策略
-- 11_MLOps_Pipeline/Experiment_Tracking/Feature_Store_Deep_Dive.md — Feast/Tecton/Hopsworks对比
+- MLOps/MLOps_Pipeline.md — 完整流水线设计、LLMOps 2026最佳实践
+- MLOps/MLOps_Maturity_Model.md — 成熟度模型Level 0-3、团队建设
+- MLOps/Orchestration/Data_Pipeline_Orchestration.md — Airflow/Dagster/Prefect对比
+- MLOps/Experiment_Tracking/Experiment_Tracking_Deep_Dive.md — MLflow/W&B/Neptune深度对比
+- MLOps/CI_CD/ML_CI_CD.md — 数据验证、模型测试、部署策略
+- MLOps/Experiment_Tracking/Feature_Store_Deep_Dive.md — Feast/Tecton/Hopsworks对比
 
 ## Related
 
-- [[11_MLOps_Pipeline/Orchestration/Data_Pipeline_Orchestration]] — 数据流水线编排 (Data Pipeline Orchestration) (共享: ci-cd, feature-store, mlops)
-- [[11_MLOps_Pipeline/MLOps-in-nutshell]] — MLOps 速成指南 (共享: ci-cd, feature-store, mlops)
+- [[MLOps/Orchestration/Data_Pipeline_Orchestration]] — 数据流水线编排 (Data Pipeline Orchestration) (共享: ci-cd, feature-store, mlops)
+- [[MLOps/MLOps-in-nutshell]] — MLOps 速成指南 (共享: ci-cd, feature-store, mlops)
 - [[_concepts/automl]] — 自动机器学习

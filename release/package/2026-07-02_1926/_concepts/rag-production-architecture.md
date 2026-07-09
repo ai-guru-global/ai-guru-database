@@ -54,25 +54,25 @@ sources: []
 
 ## 推荐阅读
 
-- [[14_RAG_Systems/RAG_Production_Architecture_Deep_Dive|RAG 生产架构深度解析]] — 生产架构完整设计、组件拓扑与上线 Checklist
-- [[12_Architecture_Infrastructure/AI_SRE_Runbook|AI SRE Runbook]] — 生产系统故障响应、SLO 治理与灾备演练
-- [[11_MLOps_Pipeline/LLM_Guardrails_and_Safety_Ops_2026|LLM Guardrails 与安全运维 2026]] — 输入/输出护栏、敏感信息识别与模型安全
-- [[05_NLP_LLMs/LLM_Production_Deployment_Runbook|LLM 生产部署 Runbook]] — LLM 推理服务、vLLM/SGLang 部署与容量规划
-- [[08_Model_Evaluation/RAG_Evaluation_Deep_Dive|RAG 评估深度解析]] — RAG 离线/在线评估指标与迭代飞轮
-- [[09_Testing/RAGAS_Deep_Dive|RAGAS 深度解析]] — RAG 评估框架与核心指标实践
-- [[15_Agent_Production/Agent_Production_Deployment_Runbook|Agent 生产部署 Runbook]] — Agentic RAG 与 Agent 服务上线要点
-- [[18_AI_Applications_Industry/AI_Production_Architecture_2026|AI 生产架构 2026]] — AI 应用整体生产架构与平台选型视角
-- [[14_RAG_Systems/RAG_Systems|RAG 系统]] — RAG 基础概念、Pipeline 与框架选型
+- [[RAG系统/RAG_Production_Architecture_Deep_Dive|RAG 生产架构深度解析]] — 生产架构完整设计、组件拓扑与上线 Checklist
+- [[架构基建/AI_SRE_Runbook|AI SRE Runbook]] — 生产系统故障响应、SLO 治理与灾备演练
+- [[MLOps/LLM_Guardrails_and_Safety_Ops_2026|LLM Guardrails 与安全运维 2026]] — 输入/输出护栏、敏感信息识别与模型安全
+- [[大模型/LLM_Production_Deployment_Runbook|LLM 生产部署 Runbook]] — LLM 推理服务、vLLM/SGLang 部署与容量规划
+- [[模型评估/RAG_Evaluation_Deep_Dive|RAG 评估深度解析]] — RAG 离线/在线评估指标与迭代飞轮
+- [[AI测试/RAGAS_Deep_Dive|RAGAS 深度解析]] — RAG 评估框架与核心指标实践
+- [[Agent/Agent_Production_Deployment_Runbook|Agent 生产部署 Runbook]] — Agentic RAG 与 Agent 服务上线要点
+- [[行业应用/AI_Production_Architecture_2026|AI 生产架构 2026]] — AI 应用整体生产架构与平台选型视角
+- [[RAG系统/RAG_Systems|RAG 系统]] — RAG 基础概念、Pipeline 与框架选型
 - [[_concepts/rag-systems|RAG 检索增强生成]] — RAG 核心概念总览
 - [[_concepts/rag-patterns|RAG 模式分类]] — Naive / Modular / Agentic / Graph RAG 选型
 - [[_concepts/agentic-rag|Agentic RAG]] — 自主检索迭代与 Self-RAG / CRAG 机制
-- [[14_RAG_Systems/Advanced_RAG/RAG_Advanced_2026|RAG 高级实践 2026]] — 混合检索、重排序与上下文压缩进阶
-- [[11_MLOps_Pipeline/LLM_Production_Pipeline_2026|LLM 生产流水线 2026]] — LLM 应用端到端 MLOps 流水线
-- [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive|AI Stack 深度解析]] — AI 基础设施栈与云原生部署
+- [[RAG系统/Advanced_RAG/RAG_Advanced_2026|RAG 高级实践 2026]] — 混合检索、重排序与上下文压缩进阶
+- [[MLOps/LLM_Production_Pipeline_2026|LLM 生产流水线 2026]] — LLM 应用端到端 MLOps 流水线
+- [[架构基建/AI_Stack_Deep_Dive|AI Stack 深度解析]] — AI 基础设施栈与云原生部署
 
 ## Related
 
-- [[14_RAG_Systems/index|RAG Systems 章节]]
-- [[11_MLOps_Pipeline/index|MLOps Pipeline 章节]]
-- [[12_Architecture_Infrastructure/index|Architecture & Infrastructure 章节]]
-- [[08_Model_Evaluation/index|Model Evaluation 章节]]
+- [[RAG系统/index|RAG Systems 章节]]
+- [[MLOps/index|MLOps Pipeline 章节]]
+- [[架构基建/index|Architecture & Infrastructure 章节]]
+- [[模型评估/index|Model Evaluation 章节]]

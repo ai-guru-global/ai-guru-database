@@ -8,7 +8,7 @@ relationships:
   - target: "_concepts/llm-infrastructure"
     type: related_to
 sources:
-  - 05_NLP_LLMs/Edge_LLM
+  - 大模型/Edge_LLM
 summary: "端侧LLM通过高效小模型设计(Phi/Gemma/Qwen)、量化压缩(GPTQ/AWQ/GGUF)和端侧推理引擎(llama.cpp/MLC-LLM)实现手机/PC/嵌入式上的离线LLM推理。"
 provenance:
   extracted: 0.45
@@ -71,6 +71,6 @@ aliases:
 
 ## Related
 
-- [[05_NLP_LLMs/Edge_LLM/README]] — 端侧 LLM 深度解析
+- [[大模型/Edge_LLM/README]] — 端侧 LLM 深度解析
 - [[_concepts/llm-architectures]] — LLM 架构
 - [[_concepts/llm-infrastructure]] — LLM 基础设施

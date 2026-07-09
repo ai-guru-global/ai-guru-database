@@ -10,7 +10,7 @@ relationships:
   - target: "_concepts/llm-guard"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "NVIDIA 开源的 LLM 对话行为控制框架，通过 Colang 领域特定语言定义对话流程和安全边界，确保 AI 应用按预设行为运行。"
 provenance:
   extracted: 0.55

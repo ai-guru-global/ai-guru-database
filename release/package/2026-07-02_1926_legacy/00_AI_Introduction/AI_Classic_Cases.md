@@ -1125,5 +1125,5 @@ Gemini Ultra (2024)
 
 ## Related
 
-- [[00_AI_Introduction/AI_History_Timeline]] — 人工智能历史与发展时间线 (共享: ai, history)
-- [[00_AI_Introduction/AI_Ethics_Society.md|AI_Ethics_Society]]
+- [[AI入门/AI_History_Timeline]] — 人工智能历史与发展时间线 (共享: ai, history)
+- [[AI入门/AI_Ethics_Society.md|AI_Ethics_Society]]

@@ -10,7 +10,7 @@ relationships:
   - target: "_concepts/chroma"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "开源的 LLM 长期记忆平台，自动从对话历史中提取事实、实体和关系构建知识图谱，让 AI 应用具备跨会话的持久记忆能力。"
 provenance:
   extracted: 0.55

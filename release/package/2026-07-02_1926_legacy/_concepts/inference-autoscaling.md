@@ -7,10 +7,10 @@ relationships:
     type: builds_on
   - target: "_concepts/model-gateway"
     type: related_to
-  - target: "10_Deployment_Inference/Inference_Performance/Inference_Autoscaling_and_Load_Balancing"
+  - target: "部署推理/Inference_Performance/Inference_Autoscaling_and_Load_Balancing"
     type: deepened_by
 sources:
-  - 10_Deployment_Inference/Inference_Performance/Inference_Autoscaling_and_Load_Balancing.md
+  - 部署推理/Inference_Performance/Inference_Autoscaling_and_Load_Balancing.md
 summary: 推理弹性扩缩容根据 QPS、延迟、KV Cache 使用率等指标自动调整实例数；负载均衡需考虑 GPU 显存、队列长度和请求特征，不能只看轮询。
 lifecycle: draft
 tier: core
@@ -38,6 +38,6 @@ aliases:
 
 - [[_concepts/model-serving]] — 模型服务
 - [[_concepts/model-gateway]] — AI Gateway
-- [[10_Deployment_Inference/Inference_Performance/Inference_Autoscaling_and_Load_Balancing|弹性扩缩容与负载均衡]]
+- [[部署推理/Inference_Performance/Inference_Autoscaling_and_Load_Balancing|弹性扩缩容与负载均衡]]
 - [[_concepts/cuda-graph]] — Cuda Graph
 - [[_concepts/request-scheduling]] — Request Scheduling

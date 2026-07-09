@@ -7,7 +7,7 @@ relationships:
     type: evolves_to
   - target: "_concepts/llm-architectures"
     type: related_to
-sources: [05_NLP_LLMs/Sequence_world-models-jepa/Sequence_Models.md]
+sources: [大模型/Sequence_world-models-jepa/Sequence_Models.md]
 summary: 序列模型（neural-networks/LSTM/GRU）是处理有序数据的神经网络架构，通过隐藏状态记忆历史信息。虽然已被transformer-architecture取代，但在流式推理、时间序列预测和边缘设备场景中仍有应用价值。
 provenance:
   extracted: 0.85

@@ -493,12 +493,12 @@ Notebook 中没有绝对的"对错"答案——目标是通过反复试验探索
 ## 扩展阅读
 
 - [[90_Learn/courses/microsoft/microsoft_genai_for_beginners]] — 课程总览与章节映射
-- [[05_NLP_LLMs/Prompt_Engineering/GenAI_L05_Advanced_Prompts]] — 第 5 课：高级提示技术
-- [[05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering]] — 提示工程深度指南
-- [[05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering_Principles_Ng]] — 吴恩达提示工程原则
+- [[大模型/Prompt_Engineering/GenAI_L05_Advanced_Prompts]] — 第 5 课：高级提示技术
+- [[大模型/Prompt_Engineering/Prompt_Engineering]] — 提示工程深度指南
+- [[大模型/Prompt_Engineering/Prompt_Engineering_Principles_Ng]] — 吴恩达提示工程原则
 
 ## 课程导航
 
 | 上一课 | 下一课 |
 |--------|--------|
-| [[17_Ethics_Safety/GenAI_L03_Using_GenAI_Responsibly|L03 负责任使用AI]] | [[05_NLP_LLMs/Prompt_Engineering/GenAI_L05_Advanced_Prompts|L05 高级提示技术]] |
+| [[伦理安全/GenAI_L03_Using_GenAI_Responsibly|L03 负责任使用AI]] | [[大模型/Prompt_Engineering/GenAI_L05_Advanced_Prompts|L05 高级提示技术]] |

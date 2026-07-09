@@ -53,4 +53,4 @@ relationships:
 - [[_concepts/taint|Taint]] — 节点污点
 - [[_concepts/toleration|Toleration]] — 容忍污点
 - [[_concepts/affinity|Affinity]] — 亲和性调度
-- [[12_Architecture_Infrastructure/Kubernetes_Core_Components_Deep_Dive|K8s 核心组件深度解析]]
+- [[架构基建/Kubernetes_Core_Components_Deep_Dive|K8s 核心组件深度解析]]

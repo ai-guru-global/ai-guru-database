@@ -3,10 +3,10 @@ title: "安全评测 × 红队测试: 构建 AI 安全的攻防闭环"
 category: -synthesis
 tags: ["ai-safety", "red-teaming", "evaluation", "jailbreak", "harmbench", "synthesis"]
 sources:
-  - "17_Ethics_Safety/Safety_Evaluation_Framework"
-  - "17_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming"
-  - "08_Model_Evaluation/Model_Evaluation"
-  - "09_Testing/Testing_Frameworks/DeepEval_Deep_Dive"
+  - "伦理安全/Safety_Evaluation_Framework"
+  - "伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming"
+  - "模型评估/Model_Evaluation"
+  - "AI测试/Testing_Frameworks/DeepEval_Deep_Dive"
 created: 2026-06-01
 updated: 2026-06-01
 summary: "安全评测告诉你模型'有多脆弱'，红队测试告诉你'怎么攻破它'——两者结合形成 AI 安全的持续改进闭环。"
@@ -91,8 +91,8 @@ AI 安全有两个经典问题：
 
 ## Related
 
-- [[17_Ethics_Safety/Safety_Evaluation_Framework]]
-- [[17_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming]]
-- [[08_Model_Evaluation/Model_Evaluation]]
-- [[09_Testing/Testing_Frameworks/DeepEval_Deep_Dive]]
+- [[伦理安全/Safety_Evaluation_Framework]]
+- [[伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming]]
+- [[模型评估/Model_Evaluation]]
+- [[AI测试/Testing_Frameworks/DeepEval_Deep_Dive]]
 - [[_synthesis/ai-ethics-future]]

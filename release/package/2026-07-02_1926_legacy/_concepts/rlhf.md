@@ -14,7 +14,7 @@ relationships:
     type: related_to
 sources:
   - 06_reinforcement-learning_unsupervised-learning/Deep_RL/Deep_RL.md
-  - 06_Reinforcement_Learning/Deep_RL/PPO_Deep_Dive.md
+  - 强化学习/Deep_RL/PPO_Deep_Dive.md
 summary: RLHF通过人类偏好训练奖励模型，再用PPO等算法对齐LLM行为，是ChatGPT等模型安全可控的核心训练范式。
 provenance:
   extracted: 0.70
@@ -96,11 +96,11 @@ RLHF训练后的模型表现出明显的"对齐效应"：拒绝有害请求的�
 
 ## 来源
 
-- 06_Reinforcement_Learning/Deep_RL/Deep_RL.md
-- 06_Reinforcement_Learning/Deep_RL/PPO_Deep_Dive.md
+- 强化学习/Deep_RL/Deep_RL.md
+- 强化学习/Deep_RL/PPO_Deep_Dive.md
 
 ## Related
 
 - [[_concepts/lora-qlora-sft-rlhf-dpo]] — LoRA / QLoRA / SFT / RLHF / DPO 大白话串讲
-- [[20_Papers_and_Research/Alignment/RLHF_DPO_Deep_Dive]] — RLHF 与 DPO 深度解读 (从 InstructGPT 到 Direct Preference Optimization) (共享: alignment, rl, rlhf)
+- [[论文精读/Alignment/RLHF_DPO_Deep_Dive]] — RLHF 与 DPO 深度解读 (从 InstructGPT 到 Direct Preference Optimization) (共享: alignment, rl, rlhf)
 - [[_concepts/deep-reinforcement-learning]] — 深度强化学习 (共享: ppo, rl)

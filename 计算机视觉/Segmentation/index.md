@@ -8,9 +8,9 @@ sources: []
 
 # Segmentation
 
-This page indexes the contents of `04_Computer_Vision/Segmentation`.
+This page indexes the contents of `计算机视觉/Segmentation`.
 
 ## Files
 
-- [[04_Computer_Vision/Segmentation/Segmentation|Segmentation]]
-- [[04_Computer_Vision/Segmentation/Segmentation_for_dummy|Segmentation For Dummy]]
+- [[计算机视觉/Segmentation/Segmentation|Segmentation]]
+- [[计算机视觉/Segmentation/Segmentation_for_dummy|Segmentation For Dummy]]

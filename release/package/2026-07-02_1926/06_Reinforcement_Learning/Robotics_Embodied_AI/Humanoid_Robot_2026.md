@@ -201,7 +201,7 @@ sources: []
 
 ### 相关文档
 
-- [[06_Reinforcement_Learning/Robotics_Embodied_AI/VLA_Embodied_AI_2026]] - VLA 模型架构详解
+- [[强化学习/Robotics_Embodied_AI/VLA_Embodied_AI_2026]] - VLA 模型架构详解
 - [[_concepts/teleoperation]] - 遥操作数据采集
 
 ### 资源链接

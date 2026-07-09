@@ -466,10 +466,10 @@ Fireworks AI 生产使用 checklist
 
 ## Related
 
-- [[10_Deployment_Inference/Inference_Engines/Groq_Deep_Dive.md|Groq_Deep_Dive]]
-- [[10_Deployment_Inference/Inference_Engines/Together_AI_Deep_Dive.md|Together_AI_Deep_Dive]]
-- [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive.md|vLLM_Deep_Dive]]
-- [[10_Deployment_Inference/Inference_Engines/LLM_Inference_Engine_Selection_Guide.md|LLM_Inference_Engine_Selection_Guide]]
-- [[10_Deployment_Inference/Cost/LLM_Cost_Optimization.md|LLM_Cost_Optimization]]
-- [[12_Architecture_Infrastructure/AI_Gateway/LiteLLM_Deep_Dive|LiteLLM_Deep_Dive]]
-- [[12_Architecture_Infrastructure/AI_Gateway/AI_Gateway_2026|AI_Gateway_2026]]
+- [[部署推理/Inference_Engines/Groq_Deep_Dive.md|Groq_Deep_Dive]]
+- [[部署推理/Inference_Engines/Together_AI_Deep_Dive.md|Together_AI_Deep_Dive]]
+- [[部署推理/Inference_Engines/vLLM_Deep_Dive.md|vLLM_Deep_Dive]]
+- [[部署推理/Inference_Engines/LLM_Inference_Engine_Selection_Guide.md|LLM_Inference_Engine_Selection_Guide]]
+- [[部署推理/Cost/LLM_Cost_Optimization.md|LLM_Cost_Optimization]]
+- [[架构基建/AI_Gateway/LiteLLM_Deep_Dive|LiteLLM_Deep_Dive]]
+- [[架构基建/AI_Gateway/AI_Gateway_2026|AI_Gateway_2026]]

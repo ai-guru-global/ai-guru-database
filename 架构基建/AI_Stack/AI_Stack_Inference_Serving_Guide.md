@@ -157,12 +157,12 @@ llama-server -m /data/models/Qwen3-8B-Q4_K_M.gguf \
 
 ## Related
 
-- [[12_Architecture_Infrastructure/AI_Stack_Production_Toolchain|AI Stack 生产工具链总览]]
-- [[12_Architecture_Infrastructure/AI_Stack_GPU_Monitoring_Guide|AI Stack GPU 监控指南]]
-- [[12_Architecture_Infrastructure/AI_Stack_Model_Management_Guide|AI Stack 模型下载与管理指南]]
-- [[12_Architecture_Infrastructure/AI_Stack_K8s_Operations_Guide|AI Stack K8s 编排指南]]
-- [[10_Deployment_Inference/Inference_Engines/LLM_Inference_Engine_Selection_Guide|LLM 推理引擎选型指南]]
-- [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive|vLLM 深度解析]]
-- [[10_Deployment_Inference/Inference_Engines/SGLang_Deep_Dive|SGLang 深度解析]]
-- [[10_Deployment_Inference/Inference_Engines/Ollama_Deep_Dive|Ollama 深度解析]]
-- [[10_Deployment_Inference/Inference_Engines/llama_cpp_Deep_Dive|llama.cpp 深度解析]]
+- [[架构基建/AI_Stack_Production_Toolchain|AI Stack 生产工具链总览]]
+- [[架构基建/AI_Stack_GPU_Monitoring_Guide|AI Stack GPU 监控指南]]
+- [[架构基建/AI_Stack_Model_Management_Guide|AI Stack 模型下载与管理指南]]
+- [[架构基建/AI_Stack_K8s_Operations_Guide|AI Stack K8s 编排指南]]
+- [[部署推理/Inference_Engines/LLM_Inference_Engine_Selection_Guide|LLM 推理引擎选型指南]]
+- [[部署推理/Inference_Engines/vLLM_Deep_Dive|vLLM 深度解析]]
+- [[部署推理/Inference_Engines/SGLang_Deep_Dive|SGLang 深度解析]]
+- [[部署推理/Inference_Engines/Ollama_Deep_Dive|Ollama 深度解析]]
+- [[部署推理/Inference_Engines/llama_cpp_Deep_Dive|llama.cpp 深度解析]]

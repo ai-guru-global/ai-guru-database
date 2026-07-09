@@ -1186,7 +1186,7 @@ Native Image 内存  80MB            45MB            -
 
 ## Related
 
-- [[01_Fundamentals/AI_Hardware/README]] — AI 硬件与芯片 (AI Hardware) (共享: algorithms, basics, fundamentals, math)
-- [[01_Fundamentals/Fundamentals-in-nutshell]] — AI 基础速成指南 (共享: algorithms, basics, fundamentals, math)
-- [[01_Fundamentals/Java_Ecosystem_AI/Spring_AI_Deep_Dive]] — Spring AI 深度解析 (共享: algorithms, basics, fundamentals, math)
-- [[01_Fundamentals/README]] — 01 基础理论 (Fundamentals) (共享: algorithms, basics, fundamentals, math)
+- [[数学基础/AI_Hardware/README]] — AI 硬件与芯片 (AI Hardware) (共享: algorithms, basics, fundamentals, math)
+- [[数学基础/Fundamentals-in-nutshell]] — AI 基础速成指南 (共享: algorithms, basics, fundamentals, math)
+- [[数学基础/Java_Ecosystem_AI/Spring_AI_Deep_Dive]] — Spring AI 深度解析 (共享: algorithms, basics, fundamentals, math)
+- [[数学基础/README]] — 01 基础理论 (Fundamentals) (共享: algorithms, basics, fundamentals, math)

@@ -10,7 +10,7 @@ relationships:
   - target: "_concepts/langflow"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "Dify 是最流行的开源 LLM 应用开发平台，提供可视化工作流编排、RAG 引擎、Agent 框架、模型管理和运营分析。AI Stack 生态中可作为企业级 LLM 应用构建工具。"
 provenance:
   extracted: 0.20
@@ -99,4 +99,4 @@ AI Stack LLM 应用构建层级
 - [[_concepts/langflow]] — LangFlow 可视化编排
 - [[_concepts/agentic-rag]] — Agentic RAG
 - [[11_RAG_Systems/Dify_Deep_Dive]] — Dify 深度解析
-- [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析

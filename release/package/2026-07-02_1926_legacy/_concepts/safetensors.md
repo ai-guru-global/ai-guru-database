@@ -10,7 +10,7 @@ relationships:
   - target: "_concepts/git-lfs"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "Safetensors 是 HuggingFace 推出的安全模型序列化格式，替代 pickle 避免任意代码执行风险。已成为 HuggingFace Hub 的默认模型权重格式。"
 provenance:
   extracted: 0.20
@@ -144,4 +144,4 @@ save_file(state_dict, 'model.safetensors')
 - [[_concepts/huggingface-cli]] — HuggingFace CLI
 - [[_concepts/git-lfs]] — Git LFS 大文件管理
 - [[_concepts/ollama]] — Ollama 本地推理
-- [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析

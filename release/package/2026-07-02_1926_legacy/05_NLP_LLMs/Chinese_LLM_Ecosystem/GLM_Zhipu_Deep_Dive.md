@@ -1241,7 +1241,7 @@ python -m sglang.launch_server --model-path ZhipuAI/GLM-5.2-FP8 \
 # Cookbook: https://cookbook.sglang.io/autoregressive/GLM/GLM-5.2
 ```
 
-**其它支持框架**：Transformers (v0.5.12+)、KTransformers (v0.5.12+，单机消费级)、xLLM (v0.10.0+，京东开源，**昇腾 NPU**)、vLLM-Ascend。**昇腾平台**见 [example/ascend.md](https://github.com/zai-org/GLM-5/blob/main/example/ascend.md)。部署与量化选型见 [[10_Deployment_Inference/Inference_Engines/LLM_Inference_Engine_Selection_Guide]]。
+**其它支持框架**：Transformers (v0.5.12+)、KTransformers (v0.5.12+，单机消费级)、xLLM (v0.10.0+，京东开源，**昇腾 NPU**)、vLLM-Ascend。**昇腾平台**见 [example/ascend.md](https://github.com/zai-org/GLM-5/blob/main/example/ascend.md)。部署与量化选型见 [[部署推理/Inference_Engines/LLM_Inference_Engine_Selection_Guide]]。
 
 > **显存估算（参考）**：GLM-5.2 BF16 权重约 1.4 TB；FP8 约 720 GB。生产推荐 8×H200 (FP8) 或 8×H100 (FP8+offload)；消费级研究可用 KTransformers 单机 offload 跑 FP8。
 
@@ -1607,9 +1607,9 @@ GLM-5.2 首次引入 **effort level** 控制，开发者可在**能力 / 速度 
 - GLM-4 技术报告: arXiv:2406.12793
 
 ### Wiki 内部参考
-- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/README]] — 中国大模型生态全景
-- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]] — 全厂商对比矩阵
-- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/Chinese_LLM_Training_Inference_Platforms]] — 训推平台实战
+- [[大模型/Chinese_LLM_Ecosystem/README]] — 中国大模型生态全景
+- [[大模型/Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]] — 全厂商对比矩阵
+- [[大模型/Chinese_LLM_Ecosystem/Chinese_LLM_Training_Inference_Platforms]] — 训推平台实战
 
 ---
 *Last updated: 2026-06-01*

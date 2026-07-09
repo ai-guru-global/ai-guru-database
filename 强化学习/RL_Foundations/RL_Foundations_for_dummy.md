@@ -556,7 +556,7 @@ AI学玩游戏:
 
 **下一步阅读**:
 - 📘 [深度强化学习 - 小白版](../Deep_RL/Deep_RL_for_dummy.md) - 学习 DQN 如何玩 Atari 游戏
-- 📘 [AI智能体 - 小白版](../../15_Agent_Production/Agent_Foundations/AI_Agents_for_dummy.md) - 学习自主决策系统
+- 📘 [AI智能体 - 小白版](../../Agent/Agent_Foundations/AI_Agents_for_dummy.md) - 学习自主决策系统
 
 **查看原版文档**(需要技术基础):
 - 📄 [强化学习基础(原版)](./RL_Foundations.md) - 包含贝尔曼方程推导和代码
@@ -567,7 +567,7 @@ AI学玩游戏:
 - 🔗 AlphaGo 纪录片 - 看 AI 如何学习围棋
 
 **相关主题**:
-- 🔙 [概率统计 - 小白版](../../01_Fundamentals/Probability_Statistics/Probability_Statistics_for_dummy.md) - 理解期望和折扣
+- 🔙 [概率统计 - 小白版](../../数学基础/Probability_Statistics/Probability_Statistics_for_dummy.md) - 理解期望和折扣
 - 🔜 [深度强化学习 - 小白版](../Deep_RL/Deep_RL_for_dummy.md) - Q-Learning 的神经网络版
 
 ---
@@ -576,7 +576,7 @@ AI学玩游戏:
 
 ## Related
 
-- [[06_Reinforcement_Learning/AI_Agents/AI_Agents_for_dummy]] — AI智能体 - 小白版 🤖 (共享: agent, mdp, reinforcement-learning, rl)
-- [[06_Reinforcement_Learning/AI_Agents/Agent-in-nutshell]] — AI 智能体速成指南 (共享: agent, mdp, reinforcement-learning, rl)
-- [[06_Reinforcement_Learning/AI_Agents/Agent_Future_Roadmap_2026_2030]] — Agent 未来发展路线图 2026-2030 (共享: agent, mdp, reinforcement-learning, rl)
-- [[06_Reinforcement_Learning/AI_Agents/Agent_Protocols_Detail]] — AI Agent 协议详解：MCP、A2A、UCP (共享: agent, mdp, reinforcement-learning, rl)
+- [[强化学习/AI_Agents/AI_Agents_for_dummy]] — AI智能体 - 小白版 🤖 (共享: agent, mdp, reinforcement-learning, rl)
+- [[强化学习/AI_Agents/Agent-in-nutshell]] — AI 智能体速成指南 (共享: agent, mdp, reinforcement-learning, rl)
+- [[强化学习/AI_Agents/Agent_Future_Roadmap_2026_2030]] — Agent 未来发展路线图 2026-2030 (共享: agent, mdp, reinforcement-learning, rl)
+- [[强化学习/AI_Agents/Agent_Protocols_Detail]] — AI Agent 协议详解：MCP、A2A、UCP (共享: agent, mdp, reinforcement-learning, rl)

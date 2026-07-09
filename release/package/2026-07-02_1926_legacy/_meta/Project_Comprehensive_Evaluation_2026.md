@@ -52,7 +52,7 @@ updated: 2026-05-31
 #### 整改方案
 
 **1. 新增 Agent 状态管理模块**
-- 文件: `06_Reinforcement_Learning/AI_Agents/Agent_State_Management.md`
+- 文件: `强化学习/AI_Agents/Agent_State_Management.md`
 - 内容:
  - 状态持久化机制 (Checkpoint/Resume)
  - 长任务断点续传
@@ -60,7 +60,7 @@ updated: 2026-05-31
  - 状态回滚策略
 
 **2. 新增 Agent 调试与可观测性**
-- 文件: `06_Reinforcement_Learning/AI_Agents/Agent_Observability_2026.md`
+- 文件: `强化学习/AI_Agents/Agent_Observability_2026.md`
 - 内容:
  - 执行链路追踪 (OpenTelemetry)
  - 思考过程可视化
@@ -68,7 +68,7 @@ updated: 2026-05-31
  - 性能剖析工具
 
 **3. 补充协议实现示例**
-- 文件: `06_Reinforcement_Learning/AI_Agents/MCP_Implementation_Guide.md`
+- 文件: `强化学习/AI_Agents/MCP_Implementation_Guide.md`
 - 内容:
  - Python/TypeScript SDK 实战
  - Server 开发最佳实践
@@ -76,7 +76,7 @@ updated: 2026-05-31
  - 错误处理与重试策略
 
 **4. 新增 Agent 性能基准测试**
-- 文件: `15_Agent_Production/Agent_Evaluation/Performance_Benchmarks/`
+- 文件: `Agent/Agent_Evaluation/Performance_Benchmarks/`
 - 内容:
  - 延迟基准 (首 token/总耗时)
  - 吞吐量测试 (QPS/TPS)
@@ -109,7 +109,7 @@ updated: 2026-05-31
 #### 整改方案
 
 **1. 扩展长上下文技术专题**
-- 文件: `05_NLP_LLMs/LLM_Architectures/Long_Context_Models_2026.md`
+- 文件: `大模型/LLM_Architectures/Long_Context_Models_2026.md`
 - 扩展内容:
   - Ring Attention / Striped Attention
   - 上下文压缩技术 (H2O, StreamingLLM)
@@ -117,7 +117,7 @@ updated: 2026-05-31
   - 长文本评估基准 (LongBench, L-Eval)
 
 **2. 新增测试时计算专题**
-- 文件: `05_NLP_LLMs/Reasoning_Models/Test_Time_Compute_2026.md`
+- 文件: `大模型/Reasoning_Models/Test_Time_Compute_2026.md`
 - 内容:
   - Chain-of-Thought 优化
   - Self-Consistency / Majority Voting
@@ -125,7 +125,7 @@ updated: 2026-05-31
   - 计算-性能权衡曲线
 
 **3. 新增多模态 LLM 专题**
-- 文件: `05_NLP_LLMs/Multimodal_Models/Multimodal_LLMs_2026.md`
+- 文件: `大模型/Multimodal_Models/Multimodal_LLMs_2026.md`
 - 内容:
   - Vision Encoder 集成 (CLIP/SigLIP)
   - 投影层设计 (Q-Former/MLP)
@@ -133,7 +133,7 @@ updated: 2026-05-31
   - 视觉指令微调
 
 **4. 补充模型合并技术**
-- 文件: `05_NLP_LLMs/Fine_tuning_Techniques/Model_Merging_2026.md`
+- 文件: `大模型/Fine_tuning_Techniques/Model_Merging_2026.md`
 - 内容:
   - SLERP / TIES / DARE
   - MergeKit 实战
@@ -166,7 +166,7 @@ updated: 2026-05-31
 #### 整改方案
 
 **1. 新增系统架构全景图**
-- 文件: `12_Architecture_Infrastructure/AI_System_Architecture_2026.md`
+- 文件: `架构基建/AI_System_Architecture_2026.md`
 - 内容:
   ```
   ┌─────────────────────────────────────────────────────┐
@@ -193,7 +193,7 @@ updated: 2026-05-31
   ```
 
 **2. 新增容量规划指南**
-- 文件: `12_Architecture_Infrastructure/Capacity_Planning_2026.md`
+- 文件: `架构基建/Capacity_Planning_2026.md`
 - 内容:
  - QPS/并发模型计算
  - GPU 显存需求估算
@@ -201,7 +201,7 @@ updated: 2026-05-31
  - 成本预测模型
 
 **3. 新增高可用架构**
-- 文件: `12_Architecture_Infrastructure/High_Availability_2026.md`
+- 文件: `架构基建/High_Availability_2026.md`
 - 内容:
  - 多活架构设计
  - 故障转移机制
@@ -209,7 +209,7 @@ updated: 2026-05-31
  - 灾难恢复演练
 
 **4. 新增多租户架构**
-- 文件: `12_Architecture_Infrastructure/Multi_Tenant_Architecture.md`
+- 文件: `架构基建/Multi_Tenant_Architecture.md`
 - 内容:
  - 租户隔离策略 (Namespace/集群)
  - 资源配额管理
@@ -242,7 +242,7 @@ updated: 2026-05-31
 #### 整改方案
 
 **1. 新增 AI 系统测试框架**
-- 文件: `09_Testing/AI_Test_Framework_2026.md`
+- 文件: `AI测试/AI_Test_Framework_2026.md`
 - 内容:
   - 测试金字塔 (Unit/Component/Integration/E2E)
   - 测试数据工厂 (Factory Pattern)
@@ -250,7 +250,7 @@ updated: 2026-05-31
   - 测试覆盖率目标
 
 **2. 新增 CI/CD 流水线**
-- 文件: `13_AI_Ops/CI_CD_Pipeline_AI_2026.md`
+- 文件: `AI运维/CI_CD_Pipeline_AI_2026.md`
 - 内容:
   ```yaml
   stages:
@@ -266,7 +266,7 @@ updated: 2026-05-31
   ```
 
 **3. 新增混沌工程实践**
-- 文件: `13_AI_Ops/Chaos_Engineering_AI.md`
+- 文件: `AI运维/Chaos_Engineering_AI.md`
 - 内容:
   - LLM 服务故障注入
   - 向量数据库延迟模拟
@@ -274,7 +274,7 @@ updated: 2026-05-31
   - 自动恢复验证
 
 **4. 新增契约测试**
-- 文件: `09_Testing/Contract_Testing.md`
+- 文件: `AI测试/Contract_Testing.md`
 - 内容:
   - OpenAPI 契约验证
   - 消费者驱动契约 (CDC)

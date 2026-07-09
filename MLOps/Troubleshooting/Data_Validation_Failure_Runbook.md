@@ -145,5 +145,5 @@ Step 7: 记录 incident 与数据质量报告
 - [[_concepts/great-expectations|Great Expectations]]
 - [[_concepts/pandera|Pandera]]
 - [[_concepts/evidently|Evidently]]
-- [[11_MLOps_Pipeline/CI_CD/ML_CI_CD|ML CI/CD]]
-- [[07_Model_Training/Data/Data_Curation_and_Mixture_2026|数据策展与混合]]
+- [[MLOps/CI_CD/ML_CI_CD|ML CI/CD]]
+- [[模型训练/Data/Data_Curation_and_Mixture_2026|数据策展与混合]]

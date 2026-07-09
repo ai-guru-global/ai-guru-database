@@ -290,9 +290,9 @@ DeepSeek 对行业的影响:
 
 ## 相关阅读
 
-- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive]] — DeepSeek 技术深度解析
-- [[05_NLP_LLMs/Reasoning_Models/DeepSeek_R1_Technical_Analysis]] — DeepSeek-R1 技术分析
-- [[05_NLP_LLMs/LLM_Products/claude_overview]] — Claude 概览
-- [[05_NLP_LLMs/LLM_Products/chatgpt_overview]] — ChatGPT 概览
-- [[05_NLP_LLMs/LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral]] — MoE 架构案例
-- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]] — 中文 LLM 对比
+- [[大模型/Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive]] — DeepSeek 技术深度解析
+- [[大模型/Reasoning_Models/DeepSeek_R1_Technical_Analysis]] — DeepSeek-R1 技术分析
+- [[大模型/LLM_Products/claude_overview]] — Claude 概览
+- [[大模型/LLM_Products/chatgpt_overview]] — ChatGPT 概览
+- [[大模型/LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral]] — MoE 架构案例
+- [[大模型/Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]] — 中文 LLM 对比

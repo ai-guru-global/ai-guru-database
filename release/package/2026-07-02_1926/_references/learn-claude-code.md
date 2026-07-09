@@ -66,6 +66,6 @@ aliases:
 ## 相关页面
 
 - [[90_Learn/courses/share_ai/learn_claude_code]] — 完整 20 课映射与本库概念链接
-- [[15_Agent_Production/Agent_Harness/The_Anatomy_of_an_Agent_Harness]] — Harness 工程定义
-- [[15_Agent_Production/Agentic_Coding_Tools/Claude_Code_Deep_Dive]] — Claude Code 产品深度解析
-- [[15_Agent_Production/Agent_Harness/Agent_Harness_Architecture_2026]] — Agent Harness 架构 2026
+- [[Agent/Agent_Harness/The_Anatomy_of_an_Agent_Harness]] — Harness 工程定义
+- [[Agent/Agentic_Coding_Tools/Claude_Code_Deep_Dive]] — Claude Code 产品深度解析
+- [[Agent/Agent_Harness/Agent_Harness_Architecture_2026]] — Agent Harness 架构 2026

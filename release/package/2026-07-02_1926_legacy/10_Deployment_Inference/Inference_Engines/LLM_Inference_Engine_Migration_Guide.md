@@ -537,11 +537,11 @@ router_settings:
 
 ## Related
 
-- [[10_Deployment_Inference/Inference_Engines/LLM_Inference_Engine_Selection_Guide|LLM_Inference_Engine_Selection_Guide]]
-- [[10_Deployment_Inference/Inference_Engines/LLM_Inference_Benchmarking_Guide|LLM_Inference_Benchmarking_Guide]]
-- [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive|vLLM_Deep_Dive]]
-- [[10_Deployment_Inference/Inference_Engines/SGLang_Deep_Dive|SGLang_Deep_Dive]]
-- [[10_Deployment_Inference/Inference_Engines/TGI_Deep_Dive|TGI_Deep_Dive]]
-- [[10_Deployment_Inference/Inference_Engines/TensorRT_LLM_Deep_Dive|TensorRT_LLM_Deep_Dive]]
-- [[10_Deployment_Inference/Inference_Engines/Groq_Deep_Dive|Groq_Deep_Dive]]
-- [[12_Architecture_Infrastructure/AI_Gateway/LiteLLM_Deep_Dive|LiteLLM_Deep_Dive]]
+- [[部署推理/Inference_Engines/LLM_Inference_Engine_Selection_Guide|LLM_Inference_Engine_Selection_Guide]]
+- [[部署推理/Inference_Engines/LLM_Inference_Benchmarking_Guide|LLM_Inference_Benchmarking_Guide]]
+- [[部署推理/Inference_Engines/vLLM_Deep_Dive|vLLM_Deep_Dive]]
+- [[部署推理/Inference_Engines/SGLang_Deep_Dive|SGLang_Deep_Dive]]
+- [[部署推理/Inference_Engines/TGI_Deep_Dive|TGI_Deep_Dive]]
+- [[部署推理/Inference_Engines/TensorRT_LLM_Deep_Dive|TensorRT_LLM_Deep_Dive]]
+- [[部署推理/Inference_Engines/Groq_Deep_Dive|Groq_Deep_Dive]]
+- [[架构基建/AI_Gateway/LiteLLM_Deep_Dive|LiteLLM_Deep_Dive]]

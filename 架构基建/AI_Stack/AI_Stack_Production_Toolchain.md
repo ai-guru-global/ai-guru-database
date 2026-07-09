@@ -137,14 +137,14 @@ sources: []
 
 ## Related
 
-- [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive|阿里云 AI Stack: 企业级软硬一体 AI 推理平台]] — AI Stack 产品全景
-- [[12_Architecture_Infrastructure/AI_Stack_Container_Runtime_Guide|AI Stack 容器与运行时指南]]
-- [[12_Architecture_Infrastructure/AI_Stack_GPU_Monitoring_Guide|AI Stack GPU 监控指南]]
-- [[12_Architecture_Infrastructure/AI_Stack_Model_Management_Guide|AI Stack 模型下载与管理指南]]
-- [[12_Architecture_Infrastructure/AI_Stack_Inference_Serving_Guide|AI Stack 推理服务指南]]
-- [[12_Architecture_Infrastructure/AI_Stack_Training_Launchers_Guide|AI Stack 训练启动器指南]]
-- [[12_Architecture_Infrastructure/AI_Stack_K8s_Operations_Guide|AI Stack K8s 编排指南]]
-- [[12_Architecture_Infrastructure/AI_Stack_Exclusive_Tools_Guide|AI Stack 专属运维工具指南]]
-- [[10_Deployment_Inference/Inference_Engines/LLM_Inference_Engine_Selection_Guide|LLM 推理引擎选型指南]]
-- [[07_Model_Training/Distributed_Training/Distributed_Training_2026|分布式训练 2026]]
-- [[13_AI_Ops/AI_Ops_2026|AI Ops 2026: 智能运维体系与实践]]
+- [[架构基建/AI_Stack_Deep_Dive|阿里云 AI Stack: 企业级软硬一体 AI 推理平台]] — AI Stack 产品全景
+- [[架构基建/AI_Stack_Container_Runtime_Guide|AI Stack 容器与运行时指南]]
+- [[架构基建/AI_Stack_GPU_Monitoring_Guide|AI Stack GPU 监控指南]]
+- [[架构基建/AI_Stack_Model_Management_Guide|AI Stack 模型下载与管理指南]]
+- [[架构基建/AI_Stack_Inference_Serving_Guide|AI Stack 推理服务指南]]
+- [[架构基建/AI_Stack_Training_Launchers_Guide|AI Stack 训练启动器指南]]
+- [[架构基建/AI_Stack_K8s_Operations_Guide|AI Stack K8s 编排指南]]
+- [[架构基建/AI_Stack_Exclusive_Tools_Guide|AI Stack 专属运维工具指南]]
+- [[部署推理/Inference_Engines/LLM_Inference_Engine_Selection_Guide|LLM 推理引擎选型指南]]
+- [[模型训练/Distributed_Training/Distributed_Training_2026|分布式训练 2026]]
+- [[AI运维/AI_Ops_2026|AI Ops 2026: 智能运维体系与实践]]

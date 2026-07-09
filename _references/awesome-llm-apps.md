@@ -32,5 +32,5 @@ aliases:
 - 多模态应用(图像、音频)
 - 工具集成(搜索、数据库)
 
-> **关联**: -> [[05_NLP_LLMs|NLP/LLM]] | [[15_Agent_Production|Agent 生产]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[大模型|NLP/LLM]] | [[Agent|Agent 生产]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
 

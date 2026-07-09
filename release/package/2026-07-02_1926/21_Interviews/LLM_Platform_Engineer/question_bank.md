@@ -88,11 +88,11 @@ sources: []
 
 ## Related
 
-- [[21_Interviews/LLM_Platform_Engineer/company_level_question_bank|LLM Platform Engineer 按公司/级别区分的题库]]
-- [[21_Interviews/LLM_Platform_Engineer/interview_answers|LLM Platform Engineer 面试题实例答案]]
-- [[21_Interviews/LLM_Platform_Engineer/interview_preparing|LLM Platform Engineer 面试准备]]
-- [[21_Interviews/README|AI 面试准备 (Interviews)]]
-- [[21_Interviews/jobs|AI 相关岗位与工种清单]]
+- [[面试岗位/LLM_Platform_Engineer/company_level_question_bank|LLM Platform Engineer 按公司/级别区分的题库]]
+- [[面试岗位/LLM_Platform_Engineer/interview_answers|LLM Platform Engineer 面试题实例答案]]
+- [[面试岗位/LLM_Platform_Engineer/interview_preparing|LLM Platform Engineer 面试准备]]
+- [[面试岗位/README|AI 面试准备 (Interviews)]]
+- [[面试岗位/jobs|AI 相关岗位与工种清单]]
 ---
 title: LLM Platform Engineer 题库
 category: 21-interviews-llm-platform-engineer
@@ -134,8 +134,8 @@ aliases:
 
 ## Related
 
-- [[21_Interviews/LLM_Platform_Engineer/company_level_question_bank|LLM Platform Engineer 按公司/级别区分的题库]]
-- [[21_Interviews/LLM_Platform_Engineer/interview_answers|LLM Platform Engineer 面试题实例答案]]
-- [[21_Interviews/LLM_Platform_Engineer/interview_preparing|LLM Platform Engineer 面试准备]]
-- [[21_Interviews/README|AI 面试准备 (Interviews)]]
-- [[21_Interviews/jobs|AI 相关岗位与工种清单]]
+- [[面试岗位/LLM_Platform_Engineer/company_level_question_bank|LLM Platform Engineer 按公司/级别区分的题库]]
+- [[面试岗位/LLM_Platform_Engineer/interview_answers|LLM Platform Engineer 面试题实例答案]]
+- [[面试岗位/LLM_Platform_Engineer/interview_preparing|LLM Platform Engineer 面试准备]]
+- [[面试岗位/README|AI 面试准备 (Interviews)]]
+- [[面试岗位/jobs|AI 相关岗位与工种清单]]

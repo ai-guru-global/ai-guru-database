@@ -79,7 +79,7 @@ LLMOps (Large Language Model Operations) 是 **MLOps 的进化分支**，专门�
 
 ## Related
 
-- [[11_MLOps_Pipeline/LLMOps_2026]] — LLMOps 全景深度解析
+- [[MLOps/LLMOps_2026]] — LLMOps 全景深度解析
 - [[_concepts/mlops]] — MLOps 概念
-- [[11_MLOps_Pipeline/Evaluation/LLM_Evaluation_Pipeline]] — LLM 评估流水线
-- [[11_MLOps_Pipeline/Observability/LLM_Observability]] — LLM 可观测性
+- [[MLOps/Evaluation/LLM_Evaluation_Pipeline]] — LLM 评估流水线
+- [[MLOps/Observability/LLM_Observability]] — LLM 可观测性

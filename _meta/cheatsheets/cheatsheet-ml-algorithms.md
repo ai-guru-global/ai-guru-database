@@ -12,7 +12,7 @@ sources: []
 # 机器学习算法速查表
 
 > **核心洞察**：2026 年的 ML 工程师需要掌握 **5 大类算法 + 选型决策**。没有"最好的算法"，只有"最匹配场景的算法"。**集成方法（XGBoost/LightGBM）** 在结构化数据上仍是 SOTA；**深度学习** 在图像/文本/语音上统治；**Transformer/RL** 在大模型时代独占鳌头。
-> 详见 [[02_Machine_Learning]] · [[ML_For_Beginners]] · [[ML_Fundamentals]]
+> 详见 [[机器学习]] · [[ML_For_Beginners]] · [[ML_Fundamentals]]
 
 ## 算法全景分类
 
@@ -255,4 +255,4 @@ Stacking
 
 ---
 
-**参见**：[[02_Machine_Learning]] · [[ML_Fundamentals]] · [[ML_For_Beginners]] · [[scikit-learn_overview]] · [[xgboost_overview]] · [[lightgbm_overview]] · [[catboost_overview]]
+**参见**：[[机器学习]] · [[ML_Fundamentals]] · [[ML_For_Beginners]] · [[scikit-learn_overview]] · [[xgboost_overview]] · [[lightgbm_overview]] · [[catboost_overview]]

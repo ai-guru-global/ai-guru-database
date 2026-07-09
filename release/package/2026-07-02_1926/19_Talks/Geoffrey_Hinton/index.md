@@ -8,9 +8,9 @@ sources: []
 
 # Geoffrey Hinton
 
-This page indexes the contents of `19_Talks/Geoffrey_Hinton`.
+This page indexes the contents of `业界观点/Geoffrey_Hinton`.
 
 ## Files
 
-- [[19_Talks/Geoffrey_Hinton/about|About]]
-- [[19_Talks/Geoffrey_Hinton/sayings|Sayings]]
+- [[业界观点/Geoffrey_Hinton/about|About]]
+- [[业界观点/Geoffrey_Hinton/sayings|Sayings]]

@@ -32,7 +32,7 @@ updated: 2026-06-01
 **现状**: 整个 vault 中没有一页专门教 Python。
 
 **证据链**:
-- `01_Fundamentals/README.md` 前置知识明确要求 **"Python 基础、NumPy 基本操作"**
+- `数学基础/README.md` 前置知识明确要求 **"Python 基础、NumPy 基本操作"**
 - `90_Learn/pathways/ml-practitioner.md` 要求 **"Python 1 年+"**
 - `Fundamentals-in-nutshell.md` 提到 Jupyter/Conda/Docker，但假设读者已会 Python
 - `AI_Practical_Labs.md` 的 8 个实验都标注"无需编程基础"——从"零代码体验"到"写代码"之间没有过渡
@@ -40,32 +40,32 @@ updated: 2026-06-01
 **影响**: 纯文科/管理背景读者读完 00 章后，想进入 01_Fundamentals 会被 Python 门槛挡住；自学者需要跳转到外部资源，破坏知识闭环。
 
 **建议补充**:
-- `01_Fundamentals/Python_for_AI_Basics.md`
-- `01_Fundamentals/Python_Data_Science_Toolkit.md`
-- `01_Fundamentals/AI_Development_Environment_Setup.md`
+- `数学基础/Python_for_AI_Basics.md`
+- `数学基础/Python_Data_Science_Toolkit.md`
+- `数学基础/AI_Development_Environment_Setup.md`
 
 ### 🟡 P2: 第一个 AI 程序（Hello World 断点）
 
 **问题**: 实验都是"无需编程"的通识实验，缺少**"写代码跑第一个模型"**的过渡。
 
 **建议补充**:
-- `02_Machine_Learning/Supervised_Learning/Your_First_ML_Model.md`
-- `03_Deep_Learning/Neural_Network_Core/Your_First_Neural_Network.md`
+- `机器学习/Supervised_Learning/Your_First_ML_Model.md`
+- `深度学习/Neural_Network_Core/Your_First_Neural_Network.md`
 
 ### 🟡 P3: 数据探索与预处理入门
 
 **问题**: Feature_Engineering_for_dummy 讲的是"特征工程"，而非更基础的"数据清洗与探索"。
 
 **建议补充**:
-- `02_Machine_Learning/Feature_Engineering/Data_Preprocessing_for_dummy.md`
-- `02_Machine_Learning/Supervised_Learning/EDA_Quick_Start.md`
+- `机器学习/Feature_Engineering/Data_Preprocessing_for_dummy.md`
+- `机器学习/Supervised_Learning/EDA_Quick_Start.md`
 
 ### 🟢 P4: 经典算法速览（可选）
 
 **问题**: 02_Machine_Learning 每个算法都有深度内容，但缺少"10 分钟了解 10 个经典算法"的鸟瞰图。
 
 **建议补充**:
-- `02_Machine_Learning/ML_Algorithms_Cheatsheet.md`
+- `机器学习/ML_Algorithms_Cheatsheet.md`
 
 ---
 
@@ -109,22 +109,22 @@ updated: 2026-06-01
 
 | 建议页面 | 状态 | 备注 |
 |----------|------|------|
-| `01_Fundamentals/Python_for_AI_Basics.md` | ⏳ 待创建 | |
-| `01_Fundamentals/Python_Data_Science_Toolkit.md` | ⏳ 待创建 | |
-| `01_Fundamentals/AI_Development_Environment_Setup.md` | ⏳ 待创建 | |
-| `02_Machine_Learning/Supervised_Learning/Your_First_ML_Model.md` | ⏳ 待创建 | |
-| `03_Deep_Learning/Neural_Network_Core/Your_First_Neural_Network.md` | ⏳ 待创建 | |
-| `02_Machine_Learning/Feature_Engineering/Data_Preprocessing_for_dummy.md` | ⏳ 待创建 | |
-| `02_Machine_Learning/Supervised_Learning/EDA_Quick_Start.md` | ⏳ 待创建 | |
-| `02_Machine_Learning/ML_Algorithms_Cheatsheet.md` | ⏳ 待创建 | |
+| `数学基础/Python_for_AI_Basics.md` | ⏳ 待创建 | |
+| `数学基础/Python_Data_Science_Toolkit.md` | ⏳ 待创建 | |
+| `数学基础/AI_Development_Environment_Setup.md` | ⏳ 待创建 | |
+| `机器学习/Supervised_Learning/Your_First_ML_Model.md` | ⏳ 待创建 | |
+| `深度学习/Neural_Network_Core/Your_First_Neural_Network.md` | ⏳ 待创建 | |
+| `机器学习/Feature_Engineering/Data_Preprocessing_for_dummy.md` | ⏳ 待创建 | |
+| `机器学习/Supervised_Learning/EDA_Quick_Start.md` | ⏳ 待创建 | |
+| `机器学习/ML_Algorithms_Cheatsheet.md` | ⏳ 待创建 | |
 
 ---
 
 *本报告基于 2026-06-01 的全库扫描生成*
 ## Related
 
-- [[01_Fundamentals/Python_for_AI_Basics]] — Python 语法基础
-- [[01_Fundamentals/Python_Data_Science_Toolkit]] — 数据科学工具链
-- [[02_Machine_Learning/Supervised_Learning/Your_First_ML_Model]] — 第一个 ML 模型
+- [[数学基础/Python_for_AI_Basics]] — Python 语法基础
+- [[数学基础/Python_Data_Science_Toolkit]] — 数据科学工具链
+- [[机器学习/Supervised_Learning/Your_First_ML_Model]] — 第一个 ML 模型
 - [[90_Learn/pathways/absolute-beginner]] — 零基础通识路径
-- [[00_AI_Introduction/AI_Learning_Resources]] — AI 学习资源与方法论
+- [[AI入门/AI_Learning_Resources]] — AI 学习资源与方法论

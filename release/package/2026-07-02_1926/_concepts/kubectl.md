@@ -12,7 +12,7 @@ relationships:
   - target: "_concepts/containerd"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "kubectl 是 Kubernetes 的命令行工具，AI Stack 底层基于 K8s 编排，所有模型服务以容器形式运行，kubectl 是 K8s 工程师进行集群运维的核心工具。"
 provenance:
   extracted: 0.25
@@ -229,5 +229,5 @@ kubectl config get-contexts
 - [[_concepts/nerdctl]] — nerdctl 容器管理
 - [[_concepts/containerd]] — containerd 运行时
 - [[_concepts/kustomize]] — Kustomize 配置管理
-- [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
 - [[_meta/Production_Safety_Policy|生产安全策略]] — 集群操作风险评估规范

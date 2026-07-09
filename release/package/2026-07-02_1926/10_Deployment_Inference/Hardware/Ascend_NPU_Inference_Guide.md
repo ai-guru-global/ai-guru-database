@@ -192,5 +192,5 @@ spec:
 - [[_concepts/cann|CANN]]
 - [[_concepts/mindie|MindIE]]
 - [[_concepts/hami|HAMi]]
-- [[10_Deployment_Inference/Hardware/Chinese_AI_Chip_Inference_Matrix|国产芯片推理矩阵]]
-- [[01_Fundamentals/AI_Hardware/Chinese_AI_Chips_Deep_Dive|国产 AI 芯片深度解析]]
+- [[部署推理/Hardware/Chinese_AI_Chip_Inference_Matrix|国产芯片推理矩阵]]
+- [[数学基础/AI_Hardware/Chinese_AI_Chips_Deep_Dive|国产 AI 芯片深度解析]]

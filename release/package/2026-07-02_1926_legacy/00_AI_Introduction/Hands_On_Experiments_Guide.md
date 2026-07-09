@@ -54,7 +54,7 @@ pip install jupyter ipywidgets
 
 ## 实验 1: 从零实现线性回归 & 逻辑回归
 
-> **对应章节**: [02_Machine_Learning](../02_Machine_Learning/README.md)  
+> **对应章节**: [机器学习](../机器学习/README.md)  
 > **学习目标**: 理解梯度下降的本质, 不依赖任何 ML 框架
 
 ```python
@@ -117,7 +117,7 @@ print(f"\n逻辑回归准确率: {accuracy:.2%}")  # ~85%
 
 ## 实验 2: 手写 CNN 图像分类 (CIFAR-10)
 
-> **对应章节**: [03_Deep_Learning](../03_Deep_Learning/README.md) · [04_Computer_Vision](../04_Computer_Vision/README.md)  
+> **对应章节**: [深度学习](../深度学习/README.md) · [计算机视觉](../计算机视觉/README.md)  
 > **学习目标**: 理解卷积、池化、全连接的组合方式
 
 ```python
@@ -203,7 +203,7 @@ for epoch in range(10):
 
 ## 实验 3: SimCLR 对比学习 (简化版)
 
-> **对应章节**: [03_Deep_Learning/Self_Supervised_Learning](../03_Deep_Learning/Self_Supervised_Learning/)  
+> **对应章节**: [深度学习/Self_Supervised_Learning](../深度学习/Self_Supervised_Learning/)  
 > **学习目标**: 理解"正样本拉近、负样本推远"的对比学习原理
 
 ```python
@@ -304,7 +304,7 @@ for epoch in range(5):
 
 ## 实验 4: 用 HuggingFace 微调 BERT 文本分类
 
-> **对应章节**: [04_NLP_LLMs](../11_MLOps_Pipeline/README.md)  
+> **对应章节**: [04_NLP_LLMs](../MLOps/README.md)  
 > **学习目标**: 理解"预训练+微调"范式
 
 ```python
@@ -369,7 +369,7 @@ trainer.train()
 
 ## 实验 5: llama.cpp 本地部署 & 量化对比
 
-> **对应章节**: [04_NLP_LLMs/Edge_LLM](../04_NLP_LLMs/Edge_LLM/) · [09_Deployment_Inference](../11_MLOps_Pipeline/README.md)  
+> **对应章节**: [04_NLP_LLMs/Edge_LLM](../04_NLP_LLMs/Edge_LLM/) · [09_Deployment_Inference](../MLOps/README.md)  
 > **学习目标**: 理解量化对模型大小/速度/质量的影响
 
 ```bash
@@ -403,7 +403,7 @@ cd llama.cpp && make -j
 
 ## 实验 6: U-Net 语义分割 (合成数据)
 
-> **对应章节**: [04_Computer_Vision/Segmentation](../04_Computer_Vision/Segmentation/) · [20_Papers_and_Research/Vision/UNet_Deep_Dive](../20_Papers_and_Research/Vision/UNet_Deep_Dive.md)  
+> **对应章节**: [计算机视觉/Segmentation](../计算机视觉/Segmentation/) · [论文精读/Vision/UNet_Deep_Dive](../论文精读/Vision/UNet_Deep_Dive.md)  
 > **学习目标**: 理解编码器-解码器 + 跳跃连接的分割效果
 
 ```python
@@ -475,7 +475,7 @@ for epoch in range(20):
 
 ## 实验 7: DDPM 扩散模型 (MNIST)
 
-> **对应章节**: [04_Computer_Vision/Generative_Models](../04_Computer_Vision/Generative_Models/)  
+> **对应章节**: [计算机视觉/Generative_Models](../计算机视觉/Generative_Models/)  
 > **学习目标**: 理解前向加噪 → 反向去噪的扩散过程
 
 ```python
@@ -568,7 +568,7 @@ generated = generate(model)
 
 ## 实验 8: Chroma + OpenAI 构建 RAG 问答
 
-> **对应章节**: [11_RAG_Systems](../11_MLOps_Pipeline/README.md) · [20_Papers_and_Research/Retrieval/RAG_Deep_Dive](../20_Papers_and_Research/Retrieval/RAG_Deep_Dive.md)  
+> **对应章节**: [11_RAG_Systems](../MLOps/README.md) · [论文精读/Retrieval/RAG_Deep_Dive](../论文精读/Retrieval/RAG_Deep_Dive.md)  
 > **学习目标**: 理解"先检索、后生成"的 RAG 工作流
 
 ```python
@@ -626,7 +626,7 @@ print(rag_query("LoRA 是怎么工作的?"))
 
 ## 实验 9: DQN 玩 CartPole
 
-> **对应章节**: [06_Reinforcement_Learning](../06_Reinforcement_Learning/README.md) · [20_Papers_and_Research/RL/DQN_Deep_Dive](../20_Papers_and_Research/RL/DQN_Deep_Dive.md)  
+> **对应章节**: [强化学习](../强化学习/README.md) · [论文精读/RL/DQN_Deep_Dive](../论文精读/RL/DQN_Deep_Dive.md)  
 > **学习目标**: 理解经验回放 + 目标网络的 DQN 核心机制
 
 ```python
@@ -737,7 +737,7 @@ for episode in range(300):
 
 ## 实验 10: vLLM 本地部署 + API 测试
 
-> **对应章节**: [09_Deployment_Inference](../11_MLOps_Pipeline/README.md)  
+> **对应章节**: [09_Deployment_Inference](../MLOps/README.md)  
 > **学习目标**: 理解高性能 LLM 推理服务的工作原理
 
 ```bash
@@ -816,7 +816,7 @@ for q in questions:
 
 ## Related
 
-- [[00_AI_Introduction/AI_Practical_Labs|AI 入门实验]] — 无需编程基础的体验实验
+- [[AI入门/AI_Practical_Labs|AI 入门实验]] — 无需编程基础的体验实验
 - [[_concepts/pytorch|PyTorch 概念卡片]] — PyTorch 基础
 - [[_concepts/concept-dependency-graph|概念依赖图谱]] — 学习顺序参考
-- [[00_AI_Introduction/README|AI 入门与概览]]
+- [[AI入门/README|AI 入门与概览]]

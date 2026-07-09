@@ -16,9 +16,9 @@ relationships:
   - target: "_concepts/model-formats"
     type: belongs_to
 sources:
-  - 10_Deployment_Inference/Inference_Engines/llama_cpp_Deep_Dive.md
-  - 10_Deployment_Inference/Quantization/Quantization_Techniques_2026.md
-  - 05_NLP_LLMs/Edge_LLM/README.md
+  - 部署推理/Inference_Engines/llama_cpp_Deep_Dive.md
+  - 部署推理/Quantization/Quantization_Techniques_2026.md
+  - 大模型/Edge_LLM/README.md
 summary: "GGUF（GPT-Generated Unified Format）是 llama.cpp 推出的大模型文件格式。它把模型权重、配置、tokenizer、特殊词表都打包进一个文件，并原生支持多种量化精度，是本地/边缘部署事实标准。"
 provenance:
   extracted: 0.75
@@ -139,5 +139,5 @@ llama-server -m model.gguf --port 8080
 - [[_concepts/model-formats]] — 模型格式全景
 - [[_concepts/safetensors]] — Safetensors 安全模型格式
 - [[_concepts/onnx]] — ONNX 开放神经网络交换格式
-- [[10_Deployment_Inference/Inference_Engines/llama_cpp_Deep_Dive]] — llama.cpp 深度解析
-- [[10_Deployment_Inference/Quantization/Quantization_Techniques_2026]] — 量化技术 2026
+- [[部署推理/Inference_Engines/llama_cpp_Deep_Dive]] — llama.cpp 深度解析
+- [[部署推理/Quantization/Quantization_Techniques_2026]] — 量化技术 2026

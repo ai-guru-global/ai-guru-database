@@ -7,11 +7,11 @@ updated: 2026-07-02
 
 # Data Engineering
 
-This page indexes the contents of `11_MLOps_Pipeline/Data_Engineering`.
+This page indexes the contents of `MLOps/Data_Engineering`.
 
 ## Files
 
 - Data Pipeline For ML 2
-- [[11_MLOps_Pipeline/Data_Engineering/Data_Pipeline_for_ML|Data Pipeline For ML]]
+- [[MLOps/Data_Engineering/Data_Pipeline_for_ML|Data Pipeline For ML]]
 - Data Validation And Quality 2
-- [[11_MLOps_Pipeline/Data_Engineering/Data_Validation_and_Quality|Data Validation And Quality]]
+- [[MLOps/Data_Engineering/Data_Validation_and_Quality|Data Validation And Quality]]

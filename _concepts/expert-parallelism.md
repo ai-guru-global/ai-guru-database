@@ -7,10 +7,10 @@ relationships:
     type: builds_on
   - target: "_concepts/distributed-parallelism"
     type: related_to
-  - target: "10_Deployment_Inference/Inference_Performance/MoE_Inference_Optimization"
+  - target: "部署推理/Inference_Performance/MoE_Inference_Optimization"
     type: deepened_by
 sources:
-  - 10_Deployment_Inference/Inference_Performance/MoE_Inference_Optimization.md
+  - 部署推理/Inference_Performance/MoE_Inference_Optimization.md
 summary: Expert Parallelism 把 MoE 模型的不同专家分布到不同 GPU，以减少单卡显存压力；代价是引入 All-to-All 通信，需要与负载均衡策略配合。
 lifecycle: draft
 tier: core
@@ -38,4 +38,4 @@ aliases:
 
 - [[_concepts/mixture-of-experts]] — 混合专家模型
 - [[_concepts/distributed-parallelism]] — 分布式并行策略
-- [[10_Deployment_Inference/Inference_Performance/MoE_Inference_Optimization|MoE 推理优化]]
+- [[部署推理/Inference_Performance/MoE_Inference_Optimization|MoE 推理优化]]

@@ -427,7 +427,7 @@ flowchart TB
 - [医疗 AI](Healthcare/) —— 医疗行业深度
 - [金融 AI](Finance/) —— 金融行业深度
 - [自动驾驶](Autonomous_Driving/) —— 自动驾驶深度
-- [AI 伦理安全速成指南](../17_Ethics_Safety/Ethics-in-nutshell.md) —— 合规基础
+- [AI 伦理安全速成指南](../伦理安全/Ethics-in-nutshell.md) —— 合规基础
 
 ---
 
@@ -435,8 +435,8 @@ flowchart TB
 
 ## Related
 
-- [[18_AI_Applications_Industry/Industry_Comparison_2026.md|Industry_Comparison_2026]]
-- [[18_AI_Applications_Industry/README.md|18_AI_Applications_Industry README]]
-- [[18_AI_Applications_Industry/README_for_dummy.md|README_for_dummy]]
-- [[18_AI_Applications_Industry/Agriculture/AI_Agriculture_2026.md|AI_Agriculture_2026]]
-- [[18_AI_Applications_Industry/Autonomous_Driving/AI_Autonomous_Driving_2026.md|AI_Autonomous_Driving_2026]]
+- [[行业应用/Industry_Comparison_2026.md|Industry_Comparison_2026]]
+- [[行业应用/README.md|行业应用 README]]
+- [[行业应用/README_for_dummy.md|README_for_dummy]]
+- [[行业应用/Agriculture/AI_Agriculture_2026.md|AI_Agriculture_2026]]
+- [[行业应用/Autonomous_Driving/AI_Autonomous_Driving_2026.md|AI_Autonomous_Driving_2026]]

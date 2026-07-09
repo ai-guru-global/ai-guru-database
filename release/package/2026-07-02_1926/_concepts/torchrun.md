@@ -12,7 +12,7 @@ relationships:
   - target: "_concepts/checkpoint"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "torchrun 是 PyTorch 官方的分布式训练启动器（替代 torch.distributed.launch），支持弹性训练、故障自动重启，是 AI Stack 训练工具链的核心组件。"
 provenance:
   extracted: 0.40
@@ -229,4 +229,4 @@ torchrun 弹性训练架构
 - [[_concepts/deepspeed]] — DeepSpeed 框架
 - [[_concepts/checkpoint]] — Checkpoint 检查点
 - [[_concepts/fsdp]] — FSDP 全分片数据并行
-- [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析

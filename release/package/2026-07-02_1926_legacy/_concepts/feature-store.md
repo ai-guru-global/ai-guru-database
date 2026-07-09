@@ -91,7 +91,7 @@ aliases:
 
 ## Related
 
-- [[11_MLOps_Pipeline/Experiment_Tracking/Feature_Store_Deep_Dive]] — Feature Store 深度解析
-- [[11_MLOps_Pipeline/Experiment_Tracking/Feast_Deep_Dive]] — Feast 框架深度解析
+- [[MLOps/Experiment_Tracking/Feature_Store_Deep_Dive]] — Feature Store 深度解析
+- [[MLOps/Experiment_Tracking/Feast_Deep_Dive]] — Feast 框架深度解析
 - [[_concepts/experiment-tracking]] — 实验追踪概念
-- [[14_RAG_Systems/Vector_Databases/index]] — 向量数据库（非结构化特征存储）
+- [[RAG系统/Vector_Databases/index]] — 向量数据库（非结构化特征存储）

@@ -173,5 +173,5 @@ curl -u user:pass http://mlflow-tracking:5000/api/2.0/mlflow/experiments/list
 - [[_concepts/mlflow|MLflow]]
 - [[_concepts/experiment-tracking|Experiment Tracking]]
 - [[_concepts/model-registry|Model Registry]]
-- [[11_MLOps_Pipeline/Experiment_Tracking/MLflow_Deep_Dive|MLflow 深度解析]]
-- [[13_AI_Ops/Kubernetes_Troubleshooting_Playbook|Kubernetes 运维排障 Playbook]]
+- [[MLOps/Experiment_Tracking/MLflow_Deep_Dive|MLflow 深度解析]]
+- [[AI运维/Kubernetes_Troubleshooting_Playbook|Kubernetes 运维排障 Playbook]]

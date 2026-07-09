@@ -51,8 +51,8 @@ aliases:
 
 - [PEFT 参数高效微调](./PEFT_2026.md) — LoRA/QLoRA 等参数高效方法，Tool-Use 微调常用
 - [微调技术总览](./Fine_tuning_Techniques.md) — SFT/RLHF/DPO 等微调基础
-- [GRPO 与新对齐方法](../../07_Model_Training/Alignment/GRPO_and_New_Alignment_Methods.md) — Agent RL 训练中使用的 GRPO 算法详解
-- [Agentic 评估指南](../../08_Model_Evaluation/Benchmarks/Agentic_Benchmark_Guide.md) — BFCL、τ-bench、AgentBench 等 Agent 评估方法
+- [GRPO 与新对齐方法](../../模型训练/Alignment/GRPO_and_New_Alignment_Methods.md) — Agent RL 训练中使用的 GRPO 算法详解
+- [Agentic 评估指南](../../模型评估/Benchmarks/Agentic_Benchmark_Guide.md) — BFCL、τ-bench、AgentBench 等 Agent 评估方法
 
 ---
 
@@ -906,7 +906,7 @@ class AgentEnvironment:
         return -1.0
 ```
 
-关于 GRPO 算法的详细实现，参见 [GRPO 与新对齐方法](../../07_Model_Training/Alignment/GRPO_and_New_Alignment_Methods.md)。
+关于 GRPO 算法的详细实现，参见 [GRPO 与新对齐方法](../../模型训练/Alignment/GRPO_and_New_Alignment_Methods.md)。
 
 ---
 
@@ -1499,7 +1499,7 @@ Tool-Use 和 Agent 微调是 LLM 从"能说"到"能做"的关键跨越。核心�
 6. **评估**使用 BFCL (function calling) 和 τ-bench (agent) 等专业基准
 7. **MCP** 是工具集成的未来标准，值得提前布局
 
-> 更多评估方法详见 [Agentic 评估指南](../../08_Model_Evaluation/Benchmarks/Agentic_Benchmark_Guide.md)，PEFT 方法详见 [PEFT 参数高效微调](./PEFT_2026.md)。
+> 更多评估方法详见 [Agentic 评估指南](../../模型评估/Benchmarks/Agentic_Benchmark_Guide.md)，PEFT 方法详见 [PEFT 参数高效微调](./PEFT_2026.md)。
 
 ---
 

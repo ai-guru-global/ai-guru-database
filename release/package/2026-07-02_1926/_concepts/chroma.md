@@ -11,7 +11,7 @@ relationships:
   - target: "_concepts/rag-systems"
     type: used_by
 sources:
-  - 14_RAG_Systems/Vector_Databases/Chroma_Deep_Dive.md
+  - RAG系统/Vector_Databases/Chroma_Deep_Dive.md
 summary: "Chroma 是面向 AI 应用的嵌入式向量数据库，以极简 API、原型友好、Python-first 设计著称；适合小型项目和原型，是 RAG 系统入门首选。"
 lifecycle: reviewed
 tier: supporting
@@ -97,5 +97,5 @@ print(results)
 
 - [[_concepts/milvus]] — Milvus（大规模场景）
 - [[_concepts/rag-systems]] — RAG 系统
-- [[14_RAG_Systems/Vector_Databases/Chroma_Deep_Dive]] — Chroma 深度
-- [[14_RAG_Systems/Vector_Databases/Milvus_Deep_Dive]] — Milvus 对比
+- [[RAG系统/Vector_Databases/Chroma_Deep_Dive]] — Chroma 深度
+- [[RAG系统/Vector_Databases/Milvus_Deep_Dive]] — Milvus 对比

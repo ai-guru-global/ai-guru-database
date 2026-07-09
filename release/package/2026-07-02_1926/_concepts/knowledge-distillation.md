@@ -10,8 +10,8 @@ relationships:
   - target: "_concepts/mixture-of-experts"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
-  - 02_Machine_Learning/Ensemble_Learning/
+  - 架构基建/AI_Stack_Deep_Dive.md
+  - 机器学习/Ensemble_Learning/
 summary: "知识蒸馏将大模型的暗知识（soft labels）迁移到小模型，以更低成本获得接近大模型的效果。DeepSeek-R1 通过蒸馏产生了 7B/14B/32B/70B 全系列推理模型。"
 provenance:
   extracted: 0.50
@@ -146,4 +146,4 @@ q_i = \frac{\exp(z_i / T)}{\sum_j \exp(z_j / T)}
 - [[_concepts/mixture-of-experts]] — MoE（DeepSeek-R1 的 Teacher 架构）
 - [[_concepts/lora-peft]] — LoRA/PEFT（蒸馏后的微调方案）
 - [[_concepts/reasoning-models]] — 推理模型（DeepSeek-R1 蒸馏链）
-- [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack
+- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack

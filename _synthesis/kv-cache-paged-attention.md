@@ -228,8 +228,8 @@ curl http://localhost:8000/metrics | grep vllm_cache
 - [[_concepts/multi-head-latent-attention]] -- MLA（架构层压缩 KV Cache）
 - [[_concepts/prefix-caching]] -- 前缀缓存（复用共享 prompt prefix）
 - [[_concepts/kv-cache-compression]] -- KV Cache 压缩
-- [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive]] -- vLLM（PagedAttention 首发实现）
-- [[10_Deployment_Inference/Inference_Engines/SGLang_Deep_Dive]] -- SGLang（RadixAttention 的内存管理）
-- [[10_Deployment_Inference/Caching/KV_Cache_Deep_Dive]] -- KV Cache 深度研究
+- [[部署推理/Inference_Engines/vLLM_Deep_Dive]] -- vLLM（PagedAttention 首发实现）
+- [[部署推理/Inference_Engines/SGLang_Deep_Dive]] -- SGLang（RadixAttention 的内存管理）
+- [[部署推理/Caching/KV_Cache_Deep_Dive]] -- KV Cache 深度研究
 - [[_synthesis/paged-attention-continuous-batching]] -- PagedAttention x Continuous Batching
 - [[_synthesis/kv-cache-inference-optimization]] -- KV Cache x 推理优化

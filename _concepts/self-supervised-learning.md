@@ -10,7 +10,7 @@ relationships:
   - target: "_concepts/llm-architectures"
     type: enables
 sources:
-  - 03_Deep_Learning/Self_Supervised_Learning
+  - 深度学习/Self_Supervised_Learning
 summary: "自监督学习从无标注数据中构造预测任务来学习通用表示，是现代AI预训练的核心范式。三大方法：对比学习(SimCLR/MoCo)、掩码建模(BERT/MAE)、自回归(GPT)。"
 provenance:
   extracted: 0.45
@@ -83,6 +83,6 @@ aliases:
 
 ## Related
 
-- [[03_Deep_Learning/Self_Supervised_Learning/README]] — 自监督学习深度解析
+- [[深度学习/Self_Supervised_Learning/README]] — 自监督学习深度解析
 - [[_concepts/neural-networks]] — 神经网络基础
 - [[_concepts/llm-architectures]] — LLM 架构（自监督预训练）

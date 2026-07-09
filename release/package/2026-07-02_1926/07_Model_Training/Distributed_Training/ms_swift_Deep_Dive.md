@@ -976,4 +976,4 @@ swift sft --model <model_id> --dataset <dataset> ...
 - [[SGLang_Deep_Dive]] - SGLang推理引擎
 - [[Fine_tuning_Techniques/Axolotl_Deep_Dive]] - Axolotl框架
 - [[Fine_tuning_Techniques/Unsloth_Deep_Dive]] - Unsloth框架
-- [[07_Model_Training/Distributed_Training/ms_swift_Command_Line_Parameters|ms-swift 命令行参数完全参考手册]]
+- [[模型训练/Distributed_Training/ms_swift_Command_Line_Parameters|ms-swift 命令行参数完全参考手册]]

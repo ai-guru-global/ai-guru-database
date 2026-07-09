@@ -39,5 +39,5 @@ This directory covers model compression techniques for reducing model size and i
 ## Related Directories
 
 - [[Optimization]]: Training optimization
-- [[07_Model_Training/Distributed_Training/index]]: Distributed training techniques
+- [[模型训练/Distributed_Training/index]]: Distributed training techniques
 - [[Quantization]]: Deployment quantization (in 10_Deployment_Inference)

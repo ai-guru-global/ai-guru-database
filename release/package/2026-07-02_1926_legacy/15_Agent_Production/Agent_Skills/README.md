@@ -58,13 +58,13 @@ Agent_Skills_Ecosystem_Catalog.md → 按领域或团队查找
 
 | 文档 | 定位 | 适合读者 | 预估阅读时间 |
 |------|------|---------|-------------|
-| **[Skills-in-nutshell.md](15_Agent_Production/Agent_Skills/Skills-in-nutshell.md)** | 速览版 / 书写速查手册 | 所有写 Skill 的人 | 30 分钟 |
-| **[Agent_Skills_Practical_Guide.md](15_Agent_Production/Agent_Skills/Agent_Skills_Practical_Guide.md)** | 实战操作手册 | 需要案例和步骤的开发者 | 1 小时 |
-| **[Agent_Skills_Deep_Dive.md](15_Agent_Production/Agent_Skills/Agent_Skills_Deep_Dive.md)** | 理论规范大全 | 需要全面掌握标准的人 | 2-3 小时 |
-| **[Agent_Skills_Multi_Role_Analysis.md](15_Agent_Production/Agent_Skills/Agent_Skills_Multi_Role_Analysis.md)** | 团队协作视角 | 团队 Lead、架构师、PM | 1-2 小时 |
-| **[Agent_Skills_Ecosystem_Catalog.md](15_Agent_Production/Agent_Skills/Agent_Skills_Ecosystem_Catalog.md)** | 生态选型索引 | 需要找现成 Skill 的人 | 20 分钟 |
-| **[Skill_Versioning_Guide.md](15_Agent_Production/Agent_Skills/Skill_Versioning_Guide.md)** | 团队治理指南 | 组织级 Skill 库管理者 | 30 分钟 |
-| **[Spring_AI_Skills_Integration.md](15_Agent_Production/Agent_Skills/Spring_AI_Skills_Integration.md)** | Spring AI 集成 | Java + Spring AI 开发者 | 15 分钟 |
+| **[Skills-in-nutshell.md](Agent/Agent_Skills/Skills-in-nutshell.md)** | 速览版 / 书写速查手册 | 所有写 Skill 的人 | 30 分钟 |
+| **[Agent_Skills_Practical_Guide.md](Agent/Agent_Skills/Agent_Skills_Practical_Guide.md)** | 实战操作手册 | 需要案例和步骤的开发者 | 1 小时 |
+| **[Agent_Skills_Deep_Dive.md](Agent/Agent_Skills/Agent_Skills_Deep_Dive.md)** | 理论规范大全 | 需要全面掌握标准的人 | 2-3 小时 |
+| **[Agent_Skills_Multi_Role_Analysis.md](Agent/Agent_Skills/Agent_Skills_Multi_Role_Analysis.md)** | 团队协作视角 | 团队 Lead、架构师、PM | 1-2 小时 |
+| **[Agent_Skills_Ecosystem_Catalog.md](Agent/Agent_Skills/Agent_Skills_Ecosystem_Catalog.md)** | 生态选型索引 | 需要找现成 Skill 的人 | 20 分钟 |
+| **[Skill_Versioning_Guide.md](Agent/Agent_Skills/Skill_Versioning_Guide.md)** | 团队治理指南 | 组织级 Skill 库管理者 | 30 分钟 |
+| **[Spring_AI_Skills_Integration.md](Agent/Agent_Skills/Spring_AI_Skills_Integration.md)** | Spring AI 集成 | Java + Spring AI 开发者 | 15 分钟 |
 
 ---
 
@@ -102,7 +102,7 @@ Agent_Skills_Ecosystem_Catalog.md → 按领域或团队查找
 ## 🗂️ 文件夹结构
 
 ```
-15_Agent_Production/Agent_Skills/
+Agent/Agent_Skills/
 ├── README.md                           ← 本文件
 ├── Skills-in-nutshell.md               ← 速览版 / 书写速查
 ├── Agent_Skills_Deep_Dive.md           ← 完整规范、核心机制、最佳实践
@@ -118,19 +118,19 @@ Agent_Skills_Ecosystem_Catalog.md → 按领域或团队查找
 > 📅 **最后更新**：2026-05-07
 
 ## Related
-- [[15_Agent_Production/Agent_Skills/Agent_Skills_Multi_Role_Analysis|Agent Skills 多角色全景分析]]
-- [[15_Agent_Production/Agent_Skills/README|Agent Skills 文档索引]]
-- [[15_Agent_Production/Agent_Skills/Skill_Versioning_Guide|Skill 版本管理与团队治理]]
-- [[15_Agent_Production/Agent_Skills/Skills-in-nutshell|Agent Skills 书写速览]]
-- [[15_Agent_Production/Agent_Skills/Agent_Skills_Ecosystem_Catalog|Agent Skills 生态目录]]
-- [[15_Agent_Production/Agent_Skills/Agent_Skills_Deep_Dive|Agent Skills 深度解析]]
-- [[15_Agent_Production/Agent_Skills/Spring_AI_Skills_Integration|Spring AI 与 Agent Skills 集成]]
-- [[15_Agent_Production/Agent_Skills/Agent_Skills_Practical_Guide|Agent Skills 实战指南]]
+- [[Agent/Agent_Skills/Agent_Skills_Multi_Role_Analysis|Agent Skills 多角色全景分析]]
+- [[Agent/Agent_Skills/README|Agent Skills 文档索引]]
+- [[Agent/Agent_Skills/Skill_Versioning_Guide|Skill 版本管理与团队治理]]
+- [[Agent/Agent_Skills/Skills-in-nutshell|Agent Skills 书写速览]]
+- [[Agent/Agent_Skills/Agent_Skills_Ecosystem_Catalog|Agent Skills 生态目录]]
+- [[Agent/Agent_Skills/Agent_Skills_Deep_Dive|Agent Skills 深度解析]]
+- [[Agent/Agent_Skills/Spring_AI_Skills_Integration|Spring AI 与 Agent Skills 集成]]
+- [[Agent/Agent_Skills/Agent_Skills_Practical_Guide|Agent Skills 实战指南]]
 
-- [[15_Agent_Production/Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
-- [[15_Agent_Production/Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
-- [[15_Agent_Production/Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
-- [[15_Agent_Production/Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)
+- [[Agent/Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
+- [[Agent/Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[Agent/Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[Agent/Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)
 
 
-- [[15_Agent_Production/README|Agent 生产部署 (Agent Production)]]
+- [[Agent/README|Agent 生产部署 (Agent Production)]]

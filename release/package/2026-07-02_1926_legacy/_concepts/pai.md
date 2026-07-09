@@ -51,5 +51,5 @@ relationships:
 - [[_concepts/alibaba-cloud|Alibaba Cloud]]
 - [[_concepts/ack|ACK]]
 - [[_concepts/mlops|MLOps]]
-- [[12_Architecture_Infrastructure/Cloud_Providers/Alibaba_PAI_Deep_Dive|阿里云 PAI 深度解析]]
-- [[12_Architecture_Infrastructure/Alibaba_Cloud_Proprietary_K8s_Context|阿里云专有云 K8s 上下文]]
+- [[架构基建/Cloud_Providers/Alibaba_PAI_Deep_Dive|阿里云 PAI 深度解析]]
+- [[架构基建/Alibaba_Cloud_Proprietary_K8s_Context|阿里云专有云 K8s 上下文]]

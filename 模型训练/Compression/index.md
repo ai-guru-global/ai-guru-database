@@ -8,11 +8,11 @@ sources: []
 
 # Compression
 
-This page indexes the contents of `07_Model_Training/Compression`.
+This page indexes the contents of `模型训练/Compression`.
 
 ## Files
 
-- [[07_Model_Training/Compression/Model_Compression_Complete_Guide|Model Compression Complete Guide]]
-- [[07_Model_Training/Compression/Pruning_and_Knowledge_Distillation 2|Pruning And Knowledge Distillation 2]]
-- [[07_Model_Training/Compression/Pruning_and_Knowledge_Distillation|Pruning And Knowledge Distillation]]
-- [[07_Model_Training/Compression/README|README]]
+- [[模型训练/Compression/Model_Compression_Complete_Guide|Model Compression Complete Guide]]
+- [[模型训练/Compression/Pruning_and_Knowledge_Distillation 2|Pruning And Knowledge Distillation 2]]
+- [[模型训练/Compression/Pruning_and_Knowledge_Distillation|Pruning And Knowledge Distillation]]
+- [[模型训练/Compression/README|README]]

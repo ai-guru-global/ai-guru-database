@@ -12,9 +12,9 @@ relationships:
   - target: "_concepts/long-context-models"
     type: enables
 sources:
-  - 03_Deep_Learning/State_Space_Models_2026.md
-  - 00_AI_Introduction/AI_New_Architectures.md
-  - 05_NLP_LLMs/LLM_Architecture_Evolution.md
+  - 深度学习/State_Space_Models_2026.md
+  - AI入门/AI_New_Architectures.md
+  - 大模型/LLM_Architecture_Evolution.md
 summary: "Mamba 是一种‘用线性扫描代替注意力’的模型结构。它像一条传送带，边读边更新一个隐藏状态，不必像 Transformer 那样回头看所有词，因此在超长序列上更快、更省显存。"
 provenance:
   extracted: 0.75
@@ -99,5 +99,5 @@ Mamba 让 B、C 和步长 Δ 都与输入相关，意味着：
 - [[_concepts/retnet]] — RetNet
 - [[_concepts/transformer-architecture]] — Transformer 架构
 - [[_concepts/long-context-models]] — 长上下文模型
-- [[03_Deep_Learning/State_Space_Models_2026]] — 状态空间模型 2026
-- [[00_AI_Introduction/AI_New_Architectures]] — AI 新架构
+- [[深度学习/State_Space_Models_2026]] — 状态空间模型 2026
+- [[AI入门/AI_New_Architectures]] — AI 新架构

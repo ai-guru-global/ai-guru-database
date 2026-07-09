@@ -440,13 +440,13 @@ except openai.BadRequestError as err:
 ## 扩展阅读
 
 - [[90_Learn/courses/microsoft/microsoft_genai_for_beginners]]
-- [[05_NLP_LLMs/Multimodal_Models/Multimodal_Models_for_dummy]]
-- [[18_AI_Applications_Industry/GenAI_L10_Building_Low_Code_AI_Applications]]
-- [[14_RAG_Systems/Advanced_RAG/Multimodal_RAG_Architecture_2026]]
-- [[15_Agent_Production/GenAI_L06_Text_Generation_Apps]]
+- [[大模型/Multimodal_Models/Multimodal_Models_for_dummy]]
+- [[行业应用/GenAI_L10_Building_Low_Code_AI_Applications]]
+- [[RAG系统/Advanced_RAG/Multimodal_RAG_Architecture_2026]]
+- [[Agent/GenAI_L06_Text_Generation_Apps]]
 
 ## 课程导航
 
 | 上一课 | 下一课 |
 |--------|--------|
-| [[14_RAG_Systems/GenAI_L08_Building_Search_Applications|L08 构建搜索应用程序]] | [[18_AI_Applications_Industry/GenAI_L10_Building_Low_Code_AI_Applications|L10 构建低代码AI应用]] |
+| [[RAG系统/GenAI_L08_Building_Search_Applications|L08 构建搜索应用程序]] | [[行业应用/GenAI_L10_Building_Low_Code_AI_Applications|L10 构建低代码AI应用]] |

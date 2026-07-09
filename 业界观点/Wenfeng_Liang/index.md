@@ -8,10 +8,10 @@ sources: []
 
 # Wenfeng Liang
 
-This page indexes the contents of `19_Talks/Wenfeng_Liang`.
+This page indexes the contents of `业界观点/Wenfeng_Liang`.
 
 ## Files
 
-- [[19_Talks/Wenfeng_Liang/about|About]]
-- [[19_Talks/Wenfeng_Liang/sayings 2|Sayings 2]]
-- [[19_Talks/Wenfeng_Liang/sayings|Sayings]]
+- [[业界观点/Wenfeng_Liang/about|About]]
+- [[业界观点/Wenfeng_Liang/sayings 2|Sayings 2]]
+- [[业界观点/Wenfeng_Liang/sayings|Sayings]]

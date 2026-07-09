@@ -10,8 +10,8 @@ relationships:
   - target: "_concepts/ab-testing-framework"
     type: uses
 sources:
-  - 13_AI_Ops/Cost_Optimization_AI_Deep_Dive.md
-  - 10_Deployment_Inference/README.md
+  - AI运维/Cost_Optimization_AI_Deep_Dive.md
+  - 部署推理/README.md
 summary: "模型路由是根据请求难度自动选择合适模型（简单→小模型，复杂→大模型）的成本优化技术。规则路由简单可靠，ML 路由更精准，级联路由（先试小的再升级）兼顾成本与质量，通常能把推理成本降低 60-80%。"
 provenance:
   extracted: 0.7
@@ -142,6 +142,6 @@ def route_model(prompt, history=None):
 - [[_concepts/model-serving|模型服务]] — 路由的基础设施
 - [[_concepts/continuous-batching|连续批处理]] — 路由后各模型的批处理
 - [[_concepts/ab-testing-framework|A/B 测试]] — 路由策略的评估
-- [[13_AI_Ops/Cost_Optimization_AI_Deep_Dive|成本优化]] — 路由是降本核心手段
-- [[10_Deployment_Inference/README|部署与推理]] — 推理架构
-- [[12_Architecture_Infrastructure/AI_Gateway/AI_Gateway_2026|AI Gateway]] — 网关层路由实现
+- [[AI运维/Cost_Optimization_AI_Deep_Dive|成本优化]] — 路由是降本核心手段
+- [[部署推理/README|部署与推理]] — 推理架构
+- [[架构基建/AI_Gateway/AI_Gateway_2026|AI Gateway]] — 网关层路由实现

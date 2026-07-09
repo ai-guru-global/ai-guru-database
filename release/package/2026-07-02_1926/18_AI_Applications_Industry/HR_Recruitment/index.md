@@ -8,8 +8,8 @@ sources: []
 
 # HR Recruitment
 
-This page indexes the contents of `18_AI_Applications_Industry/HR_Recruitment`.
+This page indexes the contents of `行业应用/HR_Recruitment`.
 
 ## Files
 
-- [[18_AI_Applications_Industry/HR_Recruitment/AI_HR_Recruitment_2026|AI HR Recruitment 2026]]
+- [[行业应用/HR_Recruitment/AI_HR_Recruitment_2026|AI HR Recruitment 2026]]

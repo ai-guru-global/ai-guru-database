@@ -12,7 +12,7 @@ relationships:
   - target: "_concepts/vertex-ai"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/Azure_OpenAI_Deep_Dive.md
+  - 架构基建/Azure_OpenAI_Deep_Dive.md
 summary: "Azure OpenAI 是微软与 OpenAI 合作推出的企业级 GPT/Embedding 服务，在 Azure 云上提供与 OpenAI API 兼容的模型访问，强调数据隐私、区域部署和企业合规。"
 provenance:
   extracted: 0.8
@@ -92,7 +92,7 @@ aliases:
 
 ## Related
 
-- [[12_Architecture_Infrastructure/Azure_OpenAI_Deep_Dive]] — Azure OpenAI 深度解析
+- [[架构基建/Azure_OpenAI_Deep_Dive]] — Azure OpenAI 深度解析
 - [[_concepts/cloud-ai-platform]] — 云 AI 平台
 - [[_concepts/openai]] — OpenAI
 - [[_concepts/aws-bedrock]] — AWS Bedrock

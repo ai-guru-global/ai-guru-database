@@ -127,4 +127,4 @@ kubectl logs -n kube-system -l app=csi-plugin --tail=200
 - [[_concepts/containerd|containerd]] — 容器运行时
 - [[_concepts/cri|CRI（Container Runtime Interface）]] — 容器运行时接口
 - [[_concepts/cni|CNI]] — 容器网络接口
-- [[12_Architecture_Infrastructure/Architecture_Overview/AI_Infrastructure_2026|AI 基础设施 2026]] — AI 基础设施 overview
+- [[架构基建/Architecture_Overview/AI_Infrastructure_2026|AI 基础设施 2026]] — AI 基础设施 overview

@@ -12,7 +12,7 @@ relationships:
   - target: "_concepts/kyverno"
     type: related_to
 sources:
-  - 17_Ethics_Safety/LLM_Security_Complete_Guide.md
+  - 伦理安全/LLM_Security_Complete_Guide.md
 summary: "Falco 是 CNCF Incubating 的运行时安全检测工具，通过监控系统调用和 K8s 审计日志发现异常行为，广泛应用于容器逃逸、权限提升、敏感文件访问等威胁检测。"
 provenance:
   extracted: 0.75
@@ -91,4 +91,4 @@ aliases:
 - [[_concepts/opa]] — OPA
 - [[_concepts/kyverno]] — Kyverno
 - [[_concepts/kubernetes]] — Kubernetes
-- [[17_Ethics_Safety/LLM_Security_Complete_Guide]] — LLM 安全完整指南
+- [[伦理安全/LLM_Security_Complete_Guide]] — LLM 安全完整指南

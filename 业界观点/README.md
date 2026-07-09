@@ -65,82 +65,82 @@ sources: []
 
 ## 与其他章节的关联
 
-- [AI 历史](../00_AI_Introduction/AI_History_Timeline.md) — 演讲者的贡献与 AI 发展时间线
-- [AI 伦理](../00_AI_Introduction/AI_Ethics_Society.md) — AI 安全与治理观点
-- [AI 未来趋势](../00_AI_Introduction/AI_Future_Trends.md) — 行业领袖的前瞻判断
+- [AI 历史](../AI入门/AI_History_Timeline.md) — 演讲者的贡献与 AI 发展时间线
+- [AI 伦理](../AI入门/AI_Ethics_Society.md) — AI 安全与治理观点
+- [AI 未来趋势](../AI入门/AI_Future_Trends.md) — 行业领袖的前瞻判断
 
 ---
 
 > 🚧 **提示**: 本章节正在进行主题整合重构，计划新增 `Talks_Synthesis_2026.md` 按主题（如 Scaling Laws、AI 安全、Agent 未来）横向整合多位专家观点。
 
 ## Related
-- [[19_Talks/3Blue1Brown/youtube_channel|3Blue1Brown YouTube 频道 (Grant Sanderson 数学可视化)]]
-- [[19_Talks/Josh_Starmer/youtube_channel|StatQuest Josh Starmer YouTube 频道 (统计学/机器学习教育)]]
-- [[19_Talks/Jensen_Huang/sayings|Jensen Huang 关于 AI 的观点 (Jensen Huang on AI)]]
-- [[19_Talks/Jensen_Huang/about|Jensen Huang 简介 (Jensen Huang)]]
-- [[19_Talks/Mustafa_Suleyman/sayings|Mustafa Suleyman 关于 AI 的观点 (Mustafa Suleyman on AI)]]
-- [[19_Talks/Mustafa_Suleyman/about|Mustafa Suleyman 简介 (Mustafa Suleyman)]]
-- [[19_Talks/Sundar_Pichai/sayings|Sundar Pichai 关于 AI 的观点 (Sundar Pichai on AI)]]
-- [[19_Talks/Sundar_Pichai/about|Sundar Pichai 简介 (Sundar Pichai)]]
-- [[19_Talks/Andrej_Karpathy/sayings|Andrej Karpathy 关于 AI 的观点 (Andrej Karpathy on AI)]]
-- [[19_Talks/Yann_LeCun/sayings|Yann LeCun 关于 AI 的观点 (Yann LeCun on AI)]]
-- [[19_Talks/Yann_LeCun/about|Yann LeCun 简介 (Yann LeCun)]]
-- [[19_Talks/Sebastian_Thrun/sayings|Sebastian Thrun 关于 AI 的观点 (Sebastian Thrun on AI)]]
-- [[19_Talks/Sebastian_Thrun/about|Sebastian Thrun 简介 (Sebastian Thrun)]]
-- [[19_Talks/Richard_Socher/sayings|Richard Socher 关于 AI 的观点 (Richard Socher on AI)]]
-- [[19_Talks/Richard_Socher/about|Richard Socher 简介 (Richard Socher)]]
-- [[19_Talks/Geoffrey_Hinton/sayings|Geoffrey Hinton 关于 AI 的观点 (Geoffrey Hinton on AI)]]
-- [[19_Talks/Geoffrey_Hinton/about|Geoffrey Hinton 简介 (Geoffrey Hinton)]]
-- [[19_Talks/Emad_Mostaque/sayings|Emad Mostaque 关于 AI 的观点 (Emad Mostaque on AI)]]
-- [[19_Talks/Emad_Mostaque/about|Emad Mostaque 简介 (Emad Mostaque)]]
-- [[19_Talks/Satya_Nadella/sayings|Satya Nadella 关于 AI 的观点 (Satya Nadella on AI)]]
-- [[19_Talks/Satya_Nadella/about|Satya Nadella 简介 (Satya Nadella)]]
-- [[19_Talks/Dario_Amodei/sayings|Dario Amodei 关于 AI 的观点 (Dario Amodei on AI)]]
-- [[19_Talks/Dario_Amodei/about|Dario Amodei 简介 (Dario Amodei)]]
-- [[19_Talks/Talks_Synthesis_2026|AI 领袖观点合成 2026 (Talks Synthesis)]]
-- [[19_Talks/README_for_dummy|21 业界观点 — 小白版 🎤]]
-- [[19_Talks/Talks_for_dummy|AI 名人演讲与观点 - 小白版]]
+- [[业界观点/3Blue1Brown/youtube_channel|3Blue1Brown YouTube 频道 (Grant Sanderson 数学可视化)]]
+- [[业界观点/Josh_Starmer/youtube_channel|StatQuest Josh Starmer YouTube 频道 (统计学/机器学习教育)]]
+- [[业界观点/Jensen_Huang/sayings|Jensen Huang 关于 AI 的观点 (Jensen Huang on AI)]]
+- [[业界观点/Jensen_Huang/about|Jensen Huang 简介 (Jensen Huang)]]
+- [[业界观点/Mustafa_Suleyman/sayings|Mustafa Suleyman 关于 AI 的观点 (Mustafa Suleyman on AI)]]
+- [[业界观点/Mustafa_Suleyman/about|Mustafa Suleyman 简介 (Mustafa Suleyman)]]
+- [[业界观点/Sundar_Pichai/sayings|Sundar Pichai 关于 AI 的观点 (Sundar Pichai on AI)]]
+- [[业界观点/Sundar_Pichai/about|Sundar Pichai 简介 (Sundar Pichai)]]
+- [[业界观点/Andrej_Karpathy/sayings|Andrej Karpathy 关于 AI 的观点 (Andrej Karpathy on AI)]]
+- [[业界观点/Yann_LeCun/sayings|Yann LeCun 关于 AI 的观点 (Yann LeCun on AI)]]
+- [[业界观点/Yann_LeCun/about|Yann LeCun 简介 (Yann LeCun)]]
+- [[业界观点/Sebastian_Thrun/sayings|Sebastian Thrun 关于 AI 的观点 (Sebastian Thrun on AI)]]
+- [[业界观点/Sebastian_Thrun/about|Sebastian Thrun 简介 (Sebastian Thrun)]]
+- [[业界观点/Richard_Socher/sayings|Richard Socher 关于 AI 的观点 (Richard Socher on AI)]]
+- [[业界观点/Richard_Socher/about|Richard Socher 简介 (Richard Socher)]]
+- [[业界观点/Geoffrey_Hinton/sayings|Geoffrey Hinton 关于 AI 的观点 (Geoffrey Hinton on AI)]]
+- [[业界观点/Geoffrey_Hinton/about|Geoffrey Hinton 简介 (Geoffrey Hinton)]]
+- [[业界观点/Emad_Mostaque/sayings|Emad Mostaque 关于 AI 的观点 (Emad Mostaque on AI)]]
+- [[业界观点/Emad_Mostaque/about|Emad Mostaque 简介 (Emad Mostaque)]]
+- [[业界观点/Satya_Nadella/sayings|Satya Nadella 关于 AI 的观点 (Satya Nadella on AI)]]
+- [[业界观点/Satya_Nadella/about|Satya Nadella 简介 (Satya Nadella)]]
+- [[业界观点/Dario_Amodei/sayings|Dario Amodei 关于 AI 的观点 (Dario Amodei on AI)]]
+- [[业界观点/Dario_Amodei/about|Dario Amodei 简介 (Dario Amodei)]]
+- [[业界观点/Talks_Synthesis_2026|AI 领袖观点合成 2026 (Talks Synthesis)]]
+- [[业界观点/README_for_dummy|21 业界观点 — 小白版 🎤]]
+- [[业界观点/Talks_for_dummy|AI 名人演讲与观点 - 小白版]]
 
-- [[19_Talks/Andrej_Karpathy/about]] — Andrej Karpathy 简介 (Andrej Karpathy) (共享: insights, leaders, speeches, talks)
-- [[19_Talks/Andrew_Ng/about]] — Andrew Ng 简介 (Andrew Ng) (共享: insights, leaders, speeches, talks)
-- [[19_Talks/Andrew_Ng/sayings]] — Andrew Ng 关于 AI 的观点与格言 (共享: insights, leaders, speeches, talks)
-- [[19_Talks/Bill_Gates/about]] — Bill Gates 简介 (Bill Gates) (共享: insights, leaders, speeches, talks)
-- [[19_Talks/Elon_Musk/sayings]] — Elon Musk 关于 AI 的观点与格言 (Elon Musk on AI)
-- [[19_Talks/Elon_Musk/about]] — Elon Musk 简介 (Elon Musk)
-- [[19_Talks/Demis_Hassabis/sayings]] — Demis Hassabis 关于 AI 的观点 (Demis Hassabis on AI)
-- [[19_Talks/Demis_Hassabis/about]] — Demis Hassabis 简介 (Demis Hassabis)
-- [[19_Talks/Ilya_Sutskever/sayings]] — Ilya Sutskever 关于 AI 的观点 (Ilya Sutskever on AI)
-- [[19_Talks/Ilya_Sutskever/about]] — Ilya Sutskever 简介 (Ilya Sutskever)
-- [[19_Talks/Mira_Murati/sayings]] — Mira Murati 关于 AI 的观点 (Mira Murati on AI)
-- [[19_Talks/Mira_Murati/about]] — Mira Murati 简介 (Mira Murati)
-- [[19_Talks/Sam_Altman/sayings]] — Sam Altman 关于 AI 的观点 (Sam Altman on AI)
-- [[19_Talks/Sam_Altman/about]] — Sam Altman 简介 (Sam Altman)
-- [[19_Talks/Fei_Fei_Li/sayings]] — 李飞飞 (Fei-Fei Li) 关于 AI 的观点与格言
-- [[19_Talks/Fei_Fei_Li/about]] — 李飞飞简介 (Fei-Fei Li)
-- [[19_Talks/Mark_Zuckerberg/sayings]] — Mark Zuckerberg 关于 AI 的观点 (Mark Zuckerberg on AI)
-- [[19_Talks/Mark_Zuckerberg/about]] — Mark Zuckerberg 简介 (Mark Zuckerberg)
-- [[19_Talks/Yoshua_Bengio/sayings]] — Yoshua Bengio 关于 AI 的观点 (Yoshua Bengio on AI)
-- [[19_Talks/Yoshua_Bengio/about]] — Yoshua Bengio 简介 (Yoshua Bengio)
-- [[19_Talks/Dario_Amodei/about.md|Dario_Amodei about]]
-- [[19_Talks/Dario_Amodei/sayings.md|Dario_Amodei sayings]]
-- [[19_Talks/Emad_Mostaque/about.md|Emad_Mostaque about]]
-- [[19_Talks/Emad_Mostaque/sayings.md|Emad_Mostaque sayings]]
-- [[19_Talks/Geoffrey_Hinton/about.md|Geoffrey_Hinton about]]
-- [[19_Talks/Geoffrey_Hinton/sayings.md|Geoffrey_Hinton sayings]]
-- [[19_Talks/Jensen_Huang/about.md|Jensen_Huang about]]
-- [[19_Talks/Jensen_Huang/sayings.md|Jensen_Huang sayings]]
-- [[19_Talks/Mustafa_Suleyman/about.md|Mustafa_Suleyman about]]
-- [[19_Talks/Mustafa_Suleyman/sayings.md|Mustafa_Suleyman sayings]]
-- [[19_Talks/Richard_Socher/about.md|Richard_Socher about]]
-- [[19_Talks/Richard_Socher/sayings.md|Richard_Socher sayings]]
-- [[19_Talks/Satya_Nadella/about.md|Satya_Nadella about]]
-- [[19_Talks/Satya_Nadella/sayings.md|Satya_Nadella sayings]]
-- [[19_Talks/Sebastian_Thrun/about.md|Sebastian_Thrun about]]
-- [[19_Talks/Sebastian_Thrun/sayings.md|Sebastian_Thrun sayings]]
-- [[19_Talks/Sundar_Pichai/about.md|Sundar_Pichai about]]
-- [[19_Talks/Sundar_Pichai/sayings.md|Sundar_Pichai sayings]]
-- [[19_Talks/Yann_LeCun/about.md|Yann_LeCun about]]
-- [[19_Talks/Yann_LeCun/sayings.md|Yann_LeCun sayings]]
+- [[业界观点/Andrej_Karpathy/about]] — Andrej Karpathy 简介 (Andrej Karpathy) (共享: insights, leaders, speeches, talks)
+- [[业界观点/Andrew_Ng/about]] — Andrew Ng 简介 (Andrew Ng) (共享: insights, leaders, speeches, talks)
+- [[业界观点/Andrew_Ng/sayings]] — Andrew Ng 关于 AI 的观点与格言 (共享: insights, leaders, speeches, talks)
+- [[业界观点/Bill_Gates/about]] — Bill Gates 简介 (Bill Gates) (共享: insights, leaders, speeches, talks)
+- [[业界观点/Elon_Musk/sayings]] — Elon Musk 关于 AI 的观点与格言 (Elon Musk on AI)
+- [[业界观点/Elon_Musk/about]] — Elon Musk 简介 (Elon Musk)
+- [[业界观点/Demis_Hassabis/sayings]] — Demis Hassabis 关于 AI 的观点 (Demis Hassabis on AI)
+- [[业界观点/Demis_Hassabis/about]] — Demis Hassabis 简介 (Demis Hassabis)
+- [[业界观点/Ilya_Sutskever/sayings]] — Ilya Sutskever 关于 AI 的观点 (Ilya Sutskever on AI)
+- [[业界观点/Ilya_Sutskever/about]] — Ilya Sutskever 简介 (Ilya Sutskever)
+- [[业界观点/Mira_Murati/sayings]] — Mira Murati 关于 AI 的观点 (Mira Murati on AI)
+- [[业界观点/Mira_Murati/about]] — Mira Murati 简介 (Mira Murati)
+- [[业界观点/Sam_Altman/sayings]] — Sam Altman 关于 AI 的观点 (Sam Altman on AI)
+- [[业界观点/Sam_Altman/about]] — Sam Altman 简介 (Sam Altman)
+- [[业界观点/Fei_Fei_Li/sayings]] — 李飞飞 (Fei-Fei Li) 关于 AI 的观点与格言
+- [[业界观点/Fei_Fei_Li/about]] — 李飞飞简介 (Fei-Fei Li)
+- [[业界观点/Mark_Zuckerberg/sayings]] — Mark Zuckerberg 关于 AI 的观点 (Mark Zuckerberg on AI)
+- [[业界观点/Mark_Zuckerberg/about]] — Mark Zuckerberg 简介 (Mark Zuckerberg)
+- [[业界观点/Yoshua_Bengio/sayings]] — Yoshua Bengio 关于 AI 的观点 (Yoshua Bengio on AI)
+- [[业界观点/Yoshua_Bengio/about]] — Yoshua Bengio 简介 (Yoshua Bengio)
+- [[业界观点/Dario_Amodei/about.md|Dario_Amodei about]]
+- [[业界观点/Dario_Amodei/sayings.md|Dario_Amodei sayings]]
+- [[业界观点/Emad_Mostaque/about.md|Emad_Mostaque about]]
+- [[业界观点/Emad_Mostaque/sayings.md|Emad_Mostaque sayings]]
+- [[业界观点/Geoffrey_Hinton/about.md|Geoffrey_Hinton about]]
+- [[业界观点/Geoffrey_Hinton/sayings.md|Geoffrey_Hinton sayings]]
+- [[业界观点/Jensen_Huang/about.md|Jensen_Huang about]]
+- [[业界观点/Jensen_Huang/sayings.md|Jensen_Huang sayings]]
+- [[业界观点/Mustafa_Suleyman/about.md|Mustafa_Suleyman about]]
+- [[业界观点/Mustafa_Suleyman/sayings.md|Mustafa_Suleyman sayings]]
+- [[业界观点/Richard_Socher/about.md|Richard_Socher about]]
+- [[业界观点/Richard_Socher/sayings.md|Richard_Socher sayings]]
+- [[业界观点/Satya_Nadella/about.md|Satya_Nadella about]]
+- [[业界观点/Satya_Nadella/sayings.md|Satya_Nadella sayings]]
+- [[业界观点/Sebastian_Thrun/about.md|Sebastian_Thrun about]]
+- [[业界观点/Sebastian_Thrun/sayings.md|Sebastian_Thrun sayings]]
+- [[业界观点/Sundar_Pichai/about.md|Sundar_Pichai about]]
+- [[业界观点/Sundar_Pichai/sayings.md|Sundar_Pichai sayings]]
+- [[业界观点/Yann_LeCun/about.md|Yann_LeCun about]]
+- [[业界观点/Yann_LeCun/sayings.md|Yann_LeCun sayings]]
 - [[_synthesis/talks-insights|AI 领袖演讲与行业洞察]]
 
 
@@ -155,17 +155,17 @@ sources: []
 
 
 
-- [[19_Talks/Andrej_Karpathy/youtube_channel|Andrej Karpathy YouTube 频道]]
-- [[19_Talks/Bill_Gates/sayings|Bill Gates 关于 AI 的观点 (Bill Gates on AI)]]
-- [[19_Talks/Jie_Tang/about|唐杰 (Jie Tang) — 智谱 AI 联合创始人/首席科学家]]
-- [[19_Talks/Jie_Tang/sayings|唐杰关于 AI 的观点 (Jie Tang on AI)]]
-- [[19_Talks/Jinze_Bai/about|白金泽 (Jinze Bai) — 通义千问/Qwen 团队负责人]]
-- [[19_Talks/Jinze_Bai/sayings|白金泽关于 AI 的观点 (Jinze Bai on AI)]]
-- [[19_Talks/Josh_Starmer/about|Josh Starmer (StatQuest) — 统计学与 AI 教育界的清晰之声]]
-- [[19_Talks/Junjie_Yan/about|闫俊杰 (Junjie Yan) — MiniMax 创始人]]
-- [[19_Talks/Junjie_Yan/sayings|闫俊杰关于 AI 的观点 (Junjie Yan on AI)]]
-- [[19_Talks/Wenfeng_Liang/about|梁文锋 (Wenfeng Liang) — DeepSeek 创始人]]
-- [[19_Talks/Wenfeng_Liang/sayings|梁文锋关于 AI 的观点 (Wenfeng Liang on AI)]]
-- [[19_Talks/Zhilin_Yang/about|杨植麟 (Zhilin Yang) — 月之暗面/Moonshot AI 创始人]]
-- [[19_Talks/Zhilin_Yang/sayings|杨植麟关于 AI 的观点 (Zhilin Yang on AI)]]
-- [[19_Talks/3Blue1Brown/about|Grant Sanderson (3Blue1Brown)]]
+- [[业界观点/Andrej_Karpathy/youtube_channel|Andrej Karpathy YouTube 频道]]
+- [[业界观点/Bill_Gates/sayings|Bill Gates 关于 AI 的观点 (Bill Gates on AI)]]
+- [[业界观点/Jie_Tang/about|唐杰 (Jie Tang) — 智谱 AI 联合创始人/首席科学家]]
+- [[业界观点/Jie_Tang/sayings|唐杰关于 AI 的观点 (Jie Tang on AI)]]
+- [[业界观点/Jinze_Bai/about|白金泽 (Jinze Bai) — 通义千问/Qwen 团队负责人]]
+- [[业界观点/Jinze_Bai/sayings|白金泽关于 AI 的观点 (Jinze Bai on AI)]]
+- [[业界观点/Josh_Starmer/about|Josh Starmer (StatQuest) — 统计学与 AI 教育界的清晰之声]]
+- [[业界观点/Junjie_Yan/about|闫俊杰 (Junjie Yan) — MiniMax 创始人]]
+- [[业界观点/Junjie_Yan/sayings|闫俊杰关于 AI 的观点 (Junjie Yan on AI)]]
+- [[业界观点/Wenfeng_Liang/about|梁文锋 (Wenfeng Liang) — DeepSeek 创始人]]
+- [[业界观点/Wenfeng_Liang/sayings|梁文锋关于 AI 的观点 (Wenfeng Liang on AI)]]
+- [[业界观点/Zhilin_Yang/about|杨植麟 (Zhilin Yang) — 月之暗面/Moonshot AI 创始人]]
+- [[业界观点/Zhilin_Yang/sayings|杨植麟关于 AI 的观点 (Zhilin Yang on AI)]]
+- [[业界观点/3Blue1Brown/about|Grant Sanderson (3Blue1Brown)]]

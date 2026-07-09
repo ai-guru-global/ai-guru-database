@@ -36,5 +36,5 @@ aliases:
 
 这篇文章是理解 Transformer 的最佳入门资料之一,被全球 AI 课程广泛引用。作者的可视化风格让复杂的数学概念变得直观易懂。
 
-> **关联**: -> [[20_Papers_and_Research/Architecture/Attention_Is_All_You_Need_Deep_Dive|Attention 论文精读]] | [[05_NLP_LLMs/Transformer_Architecture|Transformer 架构]]
+> **关联**: -> [[论文精读/Architecture/Attention_Is_All_You_Need_Deep_Dive|Attention 论文精读]] | [[大模型/Transformer_Architecture|Transformer 架构]]
 

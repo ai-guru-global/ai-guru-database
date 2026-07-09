@@ -173,5 +173,5 @@ curl -X POST http://<service>/predict \
 - [[_concepts/mlflow|MLflow]]
 - [[_concepts/kserve|KServe]]
 - [[_concepts/model-rollback|Model Rollback]]
-- [[10_Deployment_Inference/Model_Hot_Reload_and_Rollback_Runbook|LLM 模型热加载与回滚 Runbook]]
-- [[11_MLOps_Pipeline/Experiment_Tracking/Model_Registry_and_Cards_Deep_Dive|模型注册与模型卡]]
+- [[部署推理/Model_Hot_Reload_and_Rollback_Runbook|LLM 模型热加载与回滚 Runbook]]
+- [[MLOps/Experiment_Tracking/Model_Registry_and_Cards_Deep_Dive|模型注册与模型卡]]

@@ -69,4 +69,4 @@ data_validation:
 - [[_concepts/great-expectations|Great Expectations]]
 - [[_concepts/pandera|Pandera]]
 - [[_concepts/evidently|Evidently]]
-- [[11_MLOps_Pipeline/Troubleshooting/Data_Validation_Failure_Runbook|数据验证失败 Runbook]]
+- [[MLOps/Troubleshooting/Data_Validation_Failure_Runbook|数据验证失败 Runbook]]

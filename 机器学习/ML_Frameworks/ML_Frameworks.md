@@ -43,6 +43,6 @@ sources: []
 
 ## 相关阅读
 
-- [[02_Machine_Learning/Supervised_Learning/Supervised_Learning]] — 监督学习
-- [[02_Machine_Learning/Ensemble_Learning/Ensemble_Learning]] — 集成学习
-- [[02_Machine_Learning/Feature_Engineering/Feature_Engineering]] — 特征工程
+- [[机器学习/Supervised_Learning/Supervised_Learning]] — 监督学习
+- [[机器学习/Ensemble_Learning/Ensemble_Learning]] — 集成学习
+- [[机器学习/Feature_Engineering/Feature_Engineering]] — 特征工程

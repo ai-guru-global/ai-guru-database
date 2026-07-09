@@ -3,10 +3,10 @@ title: "Python 基础 × 数据科学: AI 入门者的完整工具链"
 category: -synthesis
 tags: ["python", "data-science", "numpy", "pandas", "beginner", "education", "synthesis"]
 sources:
-  - "01_Fundamentals/Python_for_AI_Basics"
-  - "01_Fundamentals/Python_Data_Science_Toolkit"
-  - "01_Fundamentals/AI_Development_Environment_Setup"
-  - "02_Machine_Learning/Supervised_Learning/Your_First_ML_Model"
+  - "数学基础/Python_for_AI_Basics"
+  - "数学基础/Python_Data_Science_Toolkit"
+  - "数学基础/AI_Development_Environment_Setup"
+  - "机器学习/Supervised_Learning/Your_First_ML_Model"
 created: 2026-06-01
 updated: 2026-06-01
 summary: "为 AI 初学者串联 Python 语法、数据科学工具链和开发环境配置的完整路径——从'Hello World'到'训练第一个模型'的无缝衔接。"
@@ -50,13 +50,13 @@ Layer 1: Python 语法 → Layer 2: 开发环境 → Layer 3: 数据工具链 �
 四层递进的最短学习路径（2 周密集版）：
 
 **Week 1: Python 语法 + 环境**
-- Days 1-3: 变量、列表、字典、循环、函数（[[01_Fundamentals/Python_for_AI_Basics]]）
-- Days 4-5: Conda 环境 + Jupyter Notebook + VS Code 配置（[[01_Fundamentals/AI_Development_Environment_Setup]]）
+- Days 1-3: 变量、列表、字典、循环、函数（[[数学基础/Python_for_AI_Basics]]）
+- Days 4-5: Conda 环境 + Jupyter Notebook + VS Code 配置（[[数学基础/AI_Development_Environment_Setup]]）
 - 里程碑: 能写 50 行 Python 脚本，能启动 Jupyter
 
 **Week 2: 数据工具链 + 第一个模型**
-- Days 6-8: NumPy 数组运算 + Pandas 数据清洗（[[01_Fundamentals/Python_Data_Science_Toolkit]]）
-- Days 9-10: Scikit-learn 训练第一个模型 + Matplotlib 可视化（[[02_Machine_Learning/Supervised_Learning/Your_First_ML_Model]]）
+- Days 6-8: NumPy 数组运算 + Pandas 数据清洗（[[数学基础/Python_Data_Science_Toolkit]]）
+- Days 9-10: Scikit-learn 训练第一个模型 + Matplotlib 可视化（[[机器学习/Supervised_Learning/Your_First_ML_Model]]）
 - 里程碑: 完成 Titanic 生存预测，提交 Kaggle
 
 **关键衔接点**: 不要试图"先学完 Python 再学 NumPy"——边用边学，在实战中补语法缺口。研究表明，项目驱动学习比课程驱动学习效率高 40%。^[inferred]
@@ -78,8 +78,8 @@ Layer 1: Python 语法 → Layer 2: 开发环境 → Layer 3: 数据工具链 �
 
 ## Related
 
-- [[01_Fundamentals/Python_for_AI_Basics]]
-- [[01_Fundamentals/Python_Data_Science_Toolkit]]
-- [[01_Fundamentals/AI_Development_Environment_Setup]]
-- [[02_Machine_Learning/Supervised_Learning/Your_First_ML_Model]]
+- [[数学基础/Python_for_AI_Basics]]
+- [[数学基础/Python_Data_Science_Toolkit]]
+- [[数学基础/AI_Development_Environment_Setup]]
+- [[机器学习/Supervised_Learning/Your_First_ML_Model]]
 - [[90_Learn/pathways/ml-practitioner]]

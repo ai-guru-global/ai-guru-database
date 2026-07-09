@@ -8,15 +8,15 @@ sources: []
 
 # Troubleshooting
 
-This page indexes the contents of `11_MLOps_Pipeline/Troubleshooting`.
+This page indexes the contents of `MLOps/Troubleshooting`.
 
 ## Files
 
-- [[11_MLOps_Pipeline/Troubleshooting/Data_Validation_Failure_Runbook 2|Data Validation Failure Runbook 2]]
-- [[11_MLOps_Pipeline/Troubleshooting/Data_Validation_Failure_Runbook|Data Validation Failure Runbook]]
-- [[11_MLOps_Pipeline/Troubleshooting/MLflow_Tracking_Server_Unreachable 2|Mlflow Tracking Server Unreachable 2]]
-- [[11_MLOps_Pipeline/Troubleshooting/MLflow_Tracking_Server_Unreachable|Mlflow Tracking Server Unreachable]]
-- [[11_MLOps_Pipeline/Troubleshooting/MLOps_K8s_Cheat_Sheet 2|Mlops K8s Cheat Sheet 2]]
-- [[11_MLOps_Pipeline/Troubleshooting/MLOps_K8s_Cheat_Sheet|Mlops K8s Cheat Sheet]]
-- [[11_MLOps_Pipeline/Troubleshooting/Model_Version_Rollback_Playbook 2|Model Version Rollback Playbook 2]]
-- [[11_MLOps_Pipeline/Troubleshooting/Model_Version_Rollback_Playbook|Model Version Rollback Playbook]]
+- [[MLOps/Troubleshooting/Data_Validation_Failure_Runbook 2|Data Validation Failure Runbook 2]]
+- [[MLOps/Troubleshooting/Data_Validation_Failure_Runbook|Data Validation Failure Runbook]]
+- [[MLOps/Troubleshooting/MLflow_Tracking_Server_Unreachable 2|Mlflow Tracking Server Unreachable 2]]
+- [[MLOps/Troubleshooting/MLflow_Tracking_Server_Unreachable|Mlflow Tracking Server Unreachable]]
+- [[MLOps/Troubleshooting/MLOps_K8s_Cheat_Sheet 2|Mlops K8s Cheat Sheet 2]]
+- [[MLOps/Troubleshooting/MLOps_K8s_Cheat_Sheet|Mlops K8s Cheat Sheet]]
+- [[MLOps/Troubleshooting/Model_Version_Rollback_Playbook 2|Model Version Rollback Playbook 2]]
+- [[MLOps/Troubleshooting/Model_Version_Rollback_Playbook|Model Version Rollback Playbook]]

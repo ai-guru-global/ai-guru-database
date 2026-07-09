@@ -203,11 +203,11 @@ flowchart TB
 
 | 子主题 | 页面链接 | 内容概要 |
 |-------|---------|---------|
-| **线性代数** | [[01_Fundamentals/Linear_Algebra/Linear_Algebra]] | 向量、矩阵、特征分解、SVD 的完整教程 |
-| **概率统计** | [[01_Fundamentals/Probability_Statistics/Probability_Statistics]] | 概率分布、贝叶斯推断、假设检验深入 |
-| **线性代数入门** | [[01_Fundamentals/Linear_Algebra/Linear_Algebra_for_dummy]] | 零基础友好的线性代数入门 |
-| **概率统计入门** | [[01_Fundamentals/Probability_Statistics/Probability_Statistics_for_dummy]] | 零基础友好的概率统计入门 |
-| **信息论基础** | [[01_Fundamentals/Information_Theory/Information_Theory_Fundamentals]] | 熵、交叉熵、KL 散度与 AI 应用 |
+| **线性代数** | [[数学基础/Linear_Algebra/Linear_Algebra]] | 向量、矩阵、特征分解、SVD 的完整教程 |
+| **概率统计** | [[数学基础/Probability_Statistics/Probability_Statistics]] | 概率分布、贝叶斯推断、假设检验深入 |
+| **线性代数入门** | [[数学基础/Linear_Algebra/Linear_Algebra_for_dummy]] | 零基础友好的线性代数入门 |
+| **概率统计入门** | [[数学基础/Probability_Statistics/Probability_Statistics_for_dummy]] | 零基础友好的概率统计入门 |
+| **信息论基础** | [[数学基础/Information_Theory/Information_Theory_Fundamentals]] | 熵、交叉熵、KL 散度与 AI 应用 |
 
 ---
 
@@ -251,12 +251,12 @@ flowchart TB
 
 ## Further Reading
 
-- [[01_Fundamentals/Linear_Algebra/Linear_Algebra]] — 线性代数完整教程
-- [[01_Fundamentals/Probability_Statistics/Probability_Statistics]] — 概率统计完整教程
-- [[01_Fundamentals/Information_Theory/Information_Theory_Fundamentals]] — 信息论与 AI 的深度关联
-- [[01_Fundamentals/Fundamentals-in-nutshell]] — AI 基础全景速成
-- [[01_Fundamentals/Mathematics_for_AI]] — 数学公式速查手册
-- [[02_Machine_Learning/ML-in-nutshell]] — 用这些数学基础构建 ML 模型
+- [[数学基础/Linear_Algebra/Linear_Algebra]] — 线性代数完整教程
+- [[数学基础/Probability_Statistics/Probability_Statistics]] — 概率统计完整教程
+- [[数学基础/Information_Theory/Information_Theory_Fundamentals]] — 信息论与 AI 的深度关联
+- [[数学基础/Fundamentals-in-nutshell]] — AI 基础全景速成
+- [[数学基础/Mathematics_for_AI]] — 数学公式速查手册
+- [[机器学习/ML-in-nutshell]] — 用这些数学基础构建 ML 模型
 
 ---
 

@@ -101,6 +101,6 @@ python test_rerank.py \
 
 ## Related
 
-- [[14_RAG_Systems/Advanced_RAG/RAG_Retrieval_Latency_Optimization|RAG 检索延迟优化]]
+- [[RAG系统/Advanced_RAG/RAG_Retrieval_Latency_Optimization|RAG 检索延迟优化]]
 - RAG
 - [[_concepts/vector-database|Vector Database]]

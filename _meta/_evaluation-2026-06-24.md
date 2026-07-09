@@ -100,7 +100,7 @@ sources: []
 
 | 类别 | 数量 | 说明 | 严重度 |
 |------|------|------|--------|
-| 目录级 wikilink（`[[05_NLP_LLMs]]`） | ~25 | 指向目录而非文件，Obsidian 会列出文件清单 | 🟡 低 |
+| 目录级 wikilink（`[[大模型]]`） | ~25 | 指向目录而非文件，Obsidian 会列出文件清单 | 🟡 低 |
 | 缺失的概念页（`_concepts/distributed-training`, `_concepts/vllm`, `_concepts/rag` 等） | ~12 | 应存在但未创建 | 🔴 中 |
 | 残留旧路径（`14_AI_Gateway/AI_Gateway_for_dummy.md`） | ~10 | 重命名前的路径，重构时漏改 | 🟡 中 |
 | `[[arxiv]]`、`[[大模型安全权威指南]]` 等 | ~8 | 可能本意是标签或外部资料 | 🟢 低 |

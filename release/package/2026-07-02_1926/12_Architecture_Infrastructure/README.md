@@ -127,9 +127,9 @@ sources: []
 
 | 文档 | 内容 | 适用读者 |
 |------|------|----------|
-| [AWS Bedrock 深度解析](12_Architecture_Infrastructure/Cloud_Providers/AWS_Bedrock_Deep_Dive.md) | 亚马逊云托管基础模型服务：Claude/Llama/Titan/RAG/Agent/Guardrails | 企业架构师 |
-| [Azure OpenAI 深度解析](12_Architecture_Infrastructure/Cloud_Providers/Azure_OpenAI_Deep_Dive.md) | 微软企业级 GPT 服务：数据隐私、区域部署、M365 集成 | 企业架构师 |
-| [Google Vertex AI 深度解析](12_Architecture_Infrastructure/Cloud_Providers/Google_Vertex_AI_Deep_Dive.md) | GCP 统一 AI 平台：Gemini、训练、MLOps、TPU、BigQuery | 企业架构师 |
+| [AWS Bedrock 深度解析](架构基建/Cloud_Providers/AWS_Bedrock_Deep_Dive.md) | 亚马逊云托管基础模型服务：Claude/Llama/Titan/RAG/Agent/Guardrails | 企业架构师 |
+| [Azure OpenAI 深度解析](架构基建/Cloud_Providers/Azure_OpenAI_Deep_Dive.md) | 微软企业级 GPT 服务：数据隐私、区域部署、M365 集成 | 企业架构师 |
+| [Google Vertex AI 深度解析](架构基建/Cloud_Providers/Google_Vertex_AI_Deep_Dive.md) | GCP 统一 AI 平台：Gemini、训练、MLOps、TPU、BigQuery | 企业架构师 |
 
 ---
 
@@ -151,51 +151,51 @@ sources: []
 ## 与其他章节的关联
 
 ### 前置知识
-- [深度学习](../03_Deep_Learning/README.md) — 理解模型计算特性
-- [部署推理](../10_Deployment_Inference/README.md) — 推理优化是架构设计的基础
-- [RAG 系统](../14_RAG_Systems/README.md) — 检索系统的架构考量
+- [深度学习](../深度学习/README.md) — 理解模型计算特性
+- [部署推理](../部署推理/README.md) — 推理优化是架构设计的基础
+- [RAG 系统](../RAG系统/README.md) — 检索系统的架构考量
 
 ### 进阶方向
 - [AI Gateway](./AI_Gateway/AI_Gateway_README.md) — 流量接入层设计（本章子目录）
-- [AI Ops](../13_AI_Ops/README.md) — 运维监控与自动化
-- [Agent 生产](../15_Agent_Production/README.md) — Agent 系统的架构模式
+- [AI Ops](../AI运维/README.md) — 运维监控与自动化
+- [Agent 生产](../Agent/README.md) — Agent 系统的架构模式
 
 ---
 
 *本章内容持续完善中。*
 
 ## Related
-- [[12_Architecture_Infrastructure/AI_Cost_Optimization_2026|AI 成本优化与 FinOps 2026]]
-- [[12_Architecture_Infrastructure/High_Availability_2026|AI 系统高可用架构设计 (High Availability 2026)]]
-- [[12_Architecture_Infrastructure/README|架构与基础设施 (Architecture & Infrastructure)]]
-- [[12_Architecture_Infrastructure/Edge_AI_2026|边缘 AI / 设备端 AI 2026]]
-- [[12_Architecture_Infrastructure/AI_System_Architecture_2026|AI 系统架构全景图 (AI System Architecture 2026)]]
-- [[12_Architecture_Infrastructure/README_for_dummy|12 架构与基础设施 — 小白版 🏗️]]
-- [[12_Architecture_Infrastructure/Capacity_Planning_2026|AI 系统容量规划指南 (Capacity Planning 2026)]]
+- [[架构基建/AI_Cost_Optimization_2026|AI 成本优化与 FinOps 2026]]
+- [[架构基建/High_Availability_2026|AI 系统高可用架构设计 (High Availability 2026)]]
+- [[架构基建/README|架构与基础设施 (Architecture & Infrastructure)]]
+- [[架构基建/Edge_AI_2026|边缘 AI / 设备端 AI 2026]]
+- [[架构基建/AI_System_Architecture_2026|AI 系统架构全景图 (AI System Architecture 2026)]]
+- [[架构基建/README_for_dummy|12 架构与基础设施 — 小白版 🏗️]]
+- [[架构基建/Capacity_Planning_2026|AI 系统容量规划指南 (Capacity Planning 2026)]]
 
-- [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive|阿里云 AI Stack: 企业级软硬一体 AI 推理平台]]
-- [[12_Architecture_Infrastructure/Hardware_Compute/CDI_Deep_Dive|CDI (Container Device Interface): 容器设备接口标准]]
+- [[架构基建/AI_Stack_Deep_Dive|阿里云 AI Stack: 企业级软硬一体 AI 推理平台]]
+- [[架构基建/Hardware_Compute/CDI_Deep_Dive|CDI (Container Device Interface): 容器设备接口标准]]
 - [[_concepts/ai-architecture]] — AI 系统架构
 - [[_concepts/llm-infrastructure]] — LLM 基础设施
-- [[12_Architecture_Infrastructure/Alibaba_Cloud_AI_Stack_Deep_Dive|阿里云 AI Stack 深度解读]] — 专有云 AI 推理平台三层架构
-- [[12_Architecture_Infrastructure/AI_Stack_Production_Toolchain|AI Stack 生产工具链总览]]
-- [[12_Architecture_Infrastructure/AI_Stack_Container_Runtime_Guide|AI Stack 容器与运行时指南]]
-- [[12_Architecture_Infrastructure/AI_Stack_GPU_Monitoring_Guide|AI Stack GPU 监控指南]]
-- [[12_Architecture_Infrastructure/AI_Stack_Model_Management_Guide|AI Stack 模型下载与管理指南]]
-- [[12_Architecture_Infrastructure/AI_Stack_Inference_Serving_Guide|AI Stack 推理服务指南]]
-- [[12_Architecture_Infrastructure/AI_Stack_Training_Launchers_Guide|AI Stack 训练启动器指南]]
-- [[12_Architecture_Infrastructure/AI_Stack_K8s_Operations_Guide|AI Stack K8s 编排指南]]
-- [[12_Architecture_Infrastructure/AI_Stack_Exclusive_Tools_Guide|AI Stack 专属运维工具指南]]
+- [[架构基建/Alibaba_Cloud_AI_Stack_Deep_Dive|阿里云 AI Stack 深度解读]] — 专有云 AI 推理平台三层架构
+- [[架构基建/AI_Stack_Production_Toolchain|AI Stack 生产工具链总览]]
+- [[架构基建/AI_Stack_Container_Runtime_Guide|AI Stack 容器与运行时指南]]
+- [[架构基建/AI_Stack_GPU_Monitoring_Guide|AI Stack GPU 监控指南]]
+- [[架构基建/AI_Stack_Model_Management_Guide|AI Stack 模型下载与管理指南]]
+- [[架构基建/AI_Stack_Inference_Serving_Guide|AI Stack 推理服务指南]]
+- [[架构基建/AI_Stack_Training_Launchers_Guide|AI Stack 训练启动器指南]]
+- [[架构基建/AI_Stack_K8s_Operations_Guide|AI Stack K8s 编排指南]]
+- [[架构基建/AI_Stack_Exclusive_Tools_Guide|AI Stack 专属运维工具指南]]
 
 
 - [[AI_Gateway_README|AI Gateway]]
 - [[AI_Gateway_for_dummy_overview|14 AI Gateway — 小白版 🚪]]
-- [[12_Architecture_Infrastructure/AI_Stack/AI_Stack_Deep_Dive|阿里云 AI Stack: 企业级软硬一体 AI 推理平台]]
+- [[架构基建/AI_Stack/AI_Stack_Deep_Dive|阿里云 AI Stack: 企业级软硬一体 AI 推理平台]]
 - [[AI_Stack_MLOps_Reference_Architecture|AI Stack + MLflow + ACK 私有化 MLOps 参考架构]]
 - [[Safetensors_Hub_Management|Safetensors 与 Hub 治理：下一代模型存储与分发标准]]
 - [[Alibaba_PAI_Deep_Dive|阿里云 PAI 深度解析]]
 - CDI (Container Device Interface): 容器设备接口标准深度解析
-- [[12_Architecture_Infrastructure/Hardware_Compute/CDI_for_dummy|CDI 容器设备接口 - 小白版]]
+- [[架构基建/Hardware_Compute/CDI_for_dummy|CDI 容器设备接口 - 小白版]]
 - [[Kubernetes_Observability_Stack|Kubernetes 可观测性栈]]
 - [[RDMA_and_RoCE_for_AI|RDMA 与 RoCE 在 AI 集群中的应用]]
 - [[Container_and_Supply_Chain_Security_for_AI|容器与供应链安全 for AI]]

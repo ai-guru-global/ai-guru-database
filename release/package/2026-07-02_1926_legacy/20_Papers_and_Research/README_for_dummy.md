@@ -68,20 +68,20 @@ aliases:
 
 | 论文深度解读 | 内容亮点 |
 |-------------|---------|
-| [Attention Is All You Need](20_Papers_and_Research/Architecture/Attention_Is_All_You_Need_Deep_Dive.md) | Transformer 的完整技术剖析 |
-| [ResNet](20_Papers_and_Research/Vision/ResNet_Deep_Dive.md) | 残差学习的数学直觉与工程实现 |
-| [GPT-3](20_Papers_and_Research/Scaling/GPT3_Deep_Dive.md) | 规模化、上下文学习与涌现能力 |
-| [BERT](20_Papers_and_Research/Architecture/BERT_Deep_Dive.md) | 双向编码、MLM/NSP 与预训练-微调范式 |
-| [LLaMA](20_Papers_and_Research/Architecture/LLaMA_Deep_Dive.md) | 开源 LLM 革命、RoPE/SwiGLU/RMSNorm |
+| [Attention Is All You Need](论文精读/Architecture/Attention_Is_All_You_Need_Deep_Dive.md) | Transformer 的完整技术剖析 |
+| [ResNet](论文精读/Vision/ResNet_Deep_Dive.md) | 残差学习的数学直觉与工程实现 |
+| [GPT-3](论文精读/Scaling/GPT3_Deep_Dive.md) | 规模化、上下文学习与涌现能力 |
+| [BERT](论文精读/Architecture/BERT_Deep_Dive.md) | 双向编码、MLM/NSP 与预训练-微调范式 |
+| [LLaMA](论文精读/Architecture/LLaMA_Deep_Dive.md) | 开源 LLM 革命、RoPE/SwiGLU/RMSNorm |
 | [Diffusion Models](./Vision/Diffusion_Models_Deep_Dive.md) | 从 DDPM 到 Stable Diffusion 再到 DiT |
-| [RLHF 与 DPO](20_Papers_and_Research/Alignment/RLHF_DPO_Deep_Dive.md) | InstructGPT 三阶段训练、DPO 数学推导 |
-| [Mixture of Experts](20_Papers_and_Research/Architecture/Mixture_of_Experts_Deep_Dive.md) | Switch Transformer、Mixtral、DeepSeek MoE |
+| [RLHF 与 DPO](论文精读/Alignment/RLHF_DPO_Deep_Dive.md) | InstructGPT 三阶段训练、DPO 数学推导 |
+| [Mixture of Experts](论文精读/Architecture/Mixture_of_Experts_Deep_Dive.md) | Switch Transformer、Mixtral、DeepSeek MoE |
 
 ## 开始之前你需要知道
 
 **必备基础** (建议先看这些):
-- [神经网络核心 - 小白版](03_Deep_Learning/Neural_Network_Core/Neural_Network_Core_for_dummy.md) - 理解 AI 大脑的工作原理
-- [深度学习优化 - 小白版](../03_Deep_Learning/Optimization/Optimization_for_dummy.md) - 理解训练过程
+- [神经网络核心 - 小白版](深度学习/Neural_Network_Core/Neural_Network_Core_for_dummy.md) - 理解 AI 大脑的工作原理
+- [深度学习优化 - 小白版](../深度学习/Optimization/Optimization_for_dummy.md) - 理解训练过程
 
 **不需要的基础**:
 - ❌ 不需要会写论文
@@ -130,9 +130,9 @@ aliases:
 ## 下一步
 
 学完这章后，你可以：
-- 去 [05_NLP_LLMs](../05_NLP_LLMs/README.md) 深入学习 LLM 技术
-- 去 [04_Computer_Vision](../04_Computer_Vision/README.md) 深入学习计算机视觉
-- 去 [06_Reinforcement_Learning](../06_Reinforcement_Learning/README.md) 深入学习强化学习
+- 去 [大模型](../大模型/README.md) 深入学习 LLM 技术
+- 去 [计算机视觉](../计算机视觉/README.md) 深入学习计算机视觉
+- 去 [强化学习](../强化学习/README.md) 深入学习强化学习
 
 ---
 
@@ -140,4 +140,4 @@ aliases:
 
 ## Related
 
-- [[20_Papers_and_Research/README]] — 10 经典与必读 AI 论文清单 (Essential AI Papers) (共享: deep-dive, paper)
+- [[论文精读/README]] — 10 经典与必读 AI 论文清单 (Essential AI Papers) (共享: deep-dive, paper)

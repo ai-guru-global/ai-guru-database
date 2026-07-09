@@ -60,4 +60,4 @@ LangGraph 的核心抽象围绕一张**有向图**展开：
 - [[_concepts/multi-agent-orchestration|多 Agent 编排]] — 多 Agent 协作模式
 - [[_concepts/agent-loop|Agent Loop]] — Agent 执行循环
 - [[_concepts/ai-agents|AI Agent]] — 单 Agent 基础概念
-- [[15_Agent_Production/Agent_Frameworks/AutoGen_CrewAI_LangGraph_Dive|多 Agent 开发框架对比]] — LangGraph 与 AutoGen、CrewAI 的横向对比
+- [[Agent/Agent_Frameworks/AutoGen_CrewAI_LangGraph_Dive|多 Agent 开发框架对比]] — LangGraph 与 AutoGen、CrewAI 的横向对比

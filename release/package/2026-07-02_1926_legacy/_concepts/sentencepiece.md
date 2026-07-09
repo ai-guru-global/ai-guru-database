@@ -8,7 +8,7 @@ relationships:
   - target: "_concepts/llm-architectures"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "SentencePiece 是 Google 开源的语言无关分词库，支持 BPE 和 Unigram 两种算法。多数中日韩 LLM（LLaMA/Qwen/ChatGLM）使用 SentencePiece 训练的 tokenizer。"
 provenance:
   extracted: 0.20
@@ -104,4 +104,4 @@ text = sp.decode(tokens)
 
 - [[_concepts/tokenization]] — 分词与 Tokenization
 - [[_concepts/llm-architectures]] — LLM 架构
-- [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析

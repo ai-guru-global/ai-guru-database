@@ -62,5 +62,5 @@ CrewAI 的优势在于**语义直观**：业务人员可以把现实中的岗位
 - [[_concepts/crewai-tools]] — CrewAI Tools
 - [[_concepts/langchain]] — LangChain
 - [[_concepts/smolagents]] — SmolAgents
-- [[15_Agent_Production/Agent_Frameworks/CrewAI_Deep_Dive]] — CrewAI 深度解析
-- [[15_Agent_Production/Agent_Frameworks/AutoGen_CrewAI_LangGraph_Dive]] — AutoGen / CrewAI / LangGraph 对比
+- [[Agent/Agent_Frameworks/CrewAI_Deep_Dive]] — CrewAI 深度解析
+- [[Agent/Agent_Frameworks/AutoGen_CrewAI_LangGraph_Dive]] — AutoGen / CrewAI / LangGraph 对比

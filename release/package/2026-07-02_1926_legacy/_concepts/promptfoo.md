@@ -8,7 +8,7 @@ relationships:
   - target: "_concepts/deepeval"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "Promptfoo 是开源的 LLM 测试框架——以 YAML 配置驱动，支持 Prompt A/B 测试、多模型对比、红队测试和 CI/CD 集成。是 Prompt Engineering 团队的标配测试工具。"
 provenance:
   extracted: 0.15

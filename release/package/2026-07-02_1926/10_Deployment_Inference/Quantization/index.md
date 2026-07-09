@@ -8,13 +8,13 @@ sources: []
 
 # Quantization
 
-This page indexes the contents of `10_Deployment_Inference/Quantization`.
+This page indexes the contents of `部署推理/Quantization`.
 
 ## Files
 
 - HF Quantization Ecosystem 2
-- [[10_Deployment_Inference/Quantization/HF_Quantization_Ecosystem|HF Quantization Ecosystem]]
+- [[部署推理/Quantization/HF_Quantization_Ecosystem|HF Quantization Ecosystem]]
 - Quantization Precision Deep Dive 2
-- [[10_Deployment_Inference/Quantization/Quantization_Precision_Deep_Dive|Quantization Precision Deep Dive]]
+- [[部署推理/Quantization/Quantization_Precision_Deep_Dive|Quantization Precision Deep Dive]]
 - Quantization Techniques 2026 2
-- [[10_Deployment_Inference/Quantization/Quantization_Techniques_2026|Quantization Techniques 2026]]
+- [[部署推理/Quantization/Quantization_Techniques_2026|Quantization Techniques 2026]]

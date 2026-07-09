@@ -42,7 +42,7 @@ sources: []
   - **标注数据**：带有人工标签的数据（如"这是猫"），用于监督学习
   - **无标注数据**：没有标签的海量原始数据，用于无监督/自监督学习
 - **通俗类比**：数据就像学生用的教材和习题集。教材质量越好、习题越多，学生学得越好。
-- **入门阅读**：[特征工程入门](../../02_Machine_Learning/Feature_Engineering/Feature_Engineering_for_dummy.md)
+- **入门阅读**：[特征工程入门](../../机器学习/Feature_Engineering/Feature_Engineering_for_dummy.md)
 - **关联概念**：特征、训练集/测试集、数据分布
 
 ### 2. 特征 (Feature)
@@ -56,7 +56,7 @@ sources: []
 - **关键区分**：
   - **手工特征**：人设计的特征（传统 ML 的核心工作）
   - **自动特征**：神经网络自己学会的特征表示（深度学习的优势）
-- **入门阅读**：[特征工程入门](../../02_Machine_Learning/Feature_Engineering/Feature_Engineering_for_dummy.md)
+- **入门阅读**：[特征工程入门](../../机器学习/Feature_Engineering/Feature_Engineering_for_dummy.md)
 - **关联概念**：数据、特征工程、表示学习 (Representation Learning)
 
 ### 3. 模型 (Model)
@@ -65,7 +65,7 @@ sources: []
 - **为什么重要**：模型是 AI 系统的核心产物。所有的训练、调优都是围绕构建更好的模型。
 - **通俗类比**：模型像一个经验丰富的老师傅——你给他看原材料（输入），他就能告诉你该怎么做（输出）。这个"判断力"就是模型。
 - **模型的本质**：一堆参数（数字）。比如线性模型 `y = wx + b`，`w` 和 `b` 就是参数。深度学习模型可能有 billions 个参数。
-- **入门阅读**：[监督学习入门](../../02_Machine_Learning/Supervised_Learning/Supervised_Learning_for_dummy.md)
+- **入门阅读**：[监督学习入门](../../机器学习/Supervised_Learning/Supervised_Learning_for_dummy.md)
 - **关联概念**：参数、训练、推理、损失函数
 
 ### 4. 训练 vs 推理 (Training vs Inference)
@@ -84,8 +84,8 @@ sources: []
 | 发生频率 | 一次或偶尔 | 每次用户请求 |
 
 - **通俗类比**：训练像医生读医学院（长期、高强度）；推理像医生给病人看病（快速、精准）。
-- **入门阅读**：[监督学习入门](../../02_Machine_Learning/Supervised_Learning/Supervised_Learning_for_dummy.md)
-- **深入学习**：[部署与推理](../../10_Deployment_Inference/Deployment_Inference_for_dummy.md)
+- **入门阅读**：[监督学习入门](../../机器学习/Supervised_Learning/Supervised_Learning_for_dummy.md)
+- **深入学习**：[部署与推理](../../部署推理/Deployment_Inference_for_dummy.md)
 - **关联概念**：模型、过拟合、部署
 
 ### 5. 损失函数 (Loss Function)
@@ -113,7 +113,7 @@ sources: []
   3. 往低的方向迈一小步（更新参数）
   4. 重复 2-3 直到到达谷底（收敛）
 - **关键概念**：学习率 (Learning Rate) —— 步子大小。太大可能跨过最低点，太小又走得太慢。
-- **入门阅读**：[优化入门](../../03_Deep_Learning/Optimization/Optimization_for_dummy.md)
+- **入门阅读**：[优化入门](../../深度学习/Optimization/Optimization_for_dummy.md)
 - **关联概念**：损失函数、学习率、反向传播、Adam 优化器
 
 ### 7. 过拟合 vs 欠拟合 (Overfitting vs Underfitting)
@@ -137,7 +137,7 @@ sources: []
 ```
 
 - **解决过拟合的方法**：更多数据、正则化 (L1/L2)、Dropout、早停 (Early Stopping)、数据增强
-- **入门阅读**：[监督学习入门](../../02_Machine_Learning/Supervised_Learning/Supervised_Learning_for_dummy.md)
+- **入门阅读**：[监督学习入门](../../机器学习/Supervised_Learning/Supervised_Learning_for_dummy.md)
 - **关联概念**：训练集/验证集/测试集、正则化、泛化能力
 
 ### 8. 训练集 / 验证集 / 测试集 (Train / Val / Test Split)
@@ -169,7 +169,7 @@ sources: []
 - **召回率 (Recall)**：真正的正例里，被找出来的比例 —— "真实的，我找到了多少？"
 - **F1 分数**：精确率和召回率的调和平均 —— 两者的平衡
 
-- **入门阅读**：[模型评估入门](../../08_Model_Evaluation/Model_Evaluation_for_dummy.md)
+- **入门阅读**：[模型评估入门](../../模型评估/Model_Evaluation_for_dummy.md)
 - **关联概念**：混淆矩阵 (Confusion Matrix)、ROC/AUC、PR 曲线
 
 ### 10. 三大学习范式
@@ -186,7 +186,7 @@ sources: []
   - **自监督学习 (Self-Supervised)**：从数据自身生成标签（如把句子遮住一部分让模型补全）—— GPT/BERT 的基础
   - **半监督学习 (Semi-Supervised)**：少量标注 + 大量无标注数据混合使用
 
-- **入门阅读**：[监督学习](../../02_Machine_Learning/Supervised_Learning/Supervised_Learning_for_dummy.md) | [无监督学习](../../02_Machine_Learning/Unsupervised_Learning/Unsupervised_Learning_for_dummy.md) | [强化学习基础](../../06_Reinforcement_Learning/RL_Foundations/RL_Foundations_for_dummy.md)
+- **入门阅读**：[监督学习](../../机器学习/Supervised_Learning/Supervised_Learning_for_dummy.md) | [无监督学习](../../机器学习/Unsupervised_Learning/Unsupervised_Learning_for_dummy.md) | [强化学习基础](../../强化学习/RL_Foundations/RL_Foundations_for_dummy.md)
 - **关联概念**：标注数据、预训练、奖励函数
 
 ---
@@ -205,4 +205,4 @@ sources: []
 
 完成 Stage 1 后：
 - **进入技术核心** → [Stage 2: 核心技术](./stage2_core_tech.md)
-- **补充数学基础** → [01_Fundamentals](../../01_Fundamentals/README_for_dummy.md)（线性代数、概率统计）
+- **补充数学基础** → [数学基础](../../数学基础/README_for_dummy.md)（线性代数、概率统计）

@@ -7,10 +7,10 @@ updated: 2026-07-02
 
 # Jie Tang
 
-This page indexes the contents of `19_Talks/Jie_Tang`.
+This page indexes the contents of `业界观点/Jie_Tang`.
 
 ## Files
 
-- [[19_Talks/Jie_Tang/about|About]]
+- [[业界观点/Jie_Tang/about|About]]
 - Sayings 2
-- [[19_Talks/Jie_Tang/sayings|Sayings]]
+- [[业界观点/Jie_Tang/sayings|Sayings]]

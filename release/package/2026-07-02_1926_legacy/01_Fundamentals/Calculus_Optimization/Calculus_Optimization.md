@@ -397,9 +397,9 @@ Dropout:
 
 ## 相关阅读
 
-- [[01_Fundamentals/Linear_Algebra/Linear_Algebra]] — 线性代数
-- [[01_Fundamentals/Probability_Statistics/Probability_Statistics]] — 概率统计
-- [[01_Fundamentals/Mathematics_for_AI]] — AI 数学基础
-- [[03_Deep_Learning/Optimization/Optimization]] — 深度学习优化
-- [[07_Model_Training/Optimization/Optimizer_Advanced_2026]] — 高级优化器
-- [[03_Deep_Learning/Neural_Network_Core/Neural_Network_Core]] — 神经网络核心
+- [[数学基础/Linear_Algebra/Linear_Algebra]] — 线性代数
+- [[数学基础/Probability_Statistics/Probability_Statistics]] — 概率统计
+- [[数学基础/Mathematics_for_AI]] — AI 数学基础
+- [[深度学习/Optimization/Optimization]] — 深度学习优化
+- [[模型训练/Optimization/Optimizer_Advanced_2026]] — 高级优化器
+- [[深度学习/Neural_Network_Core/Neural_Network_Core]] — 神经网络核心

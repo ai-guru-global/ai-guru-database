@@ -64,7 +64,7 @@ aliases:
 
 ### Scaling vs 效率
 
-Jensen Huang 是"算力 Scaling"最坚定的布道者。他的核心论点是："AI 需要算力基建，买更多 GPU！"他认为模型规模的增长远未触顶，同时强调推理侧的计算扩展（inference-time scaling）将创造比训练更大的算力需求。NVIDIA 的产品路线图（每年一个新架构）本身就是对"规模信仰"的硬件表达。这一立场与 [[19_Talks/Sam_Altman/about]] 的 Scaling Laws 信仰高度一致。
+Jensen Huang 是"算力 Scaling"最坚定的布道者。他的核心论点是："AI 需要算力基建，买更多 GPU！"他认为模型规模的增长远未触顶，同时强调推理侧的计算扩展（inference-time scaling）将创造比训练更大的算力需求。NVIDIA 的产品路线图（每年一个新架构）本身就是对"规模信仰"的硬件表达。这一立场与 [[业界观点/Sam_Altman/about]] 的 Scaling Laws 信仰高度一致。
 
 ### 开源 vs 闭源
 
@@ -72,7 +72,7 @@ Huang 在开源问题上采取务实立场。NVIDIA 大力推动 CUDA 生态的�
 
 ### AI 安全
 
-Huang 属于"实用主义派"，认为 AI 安全应通过技术迭代而非暂停来解决。他在多次采访中表示"AI 安全是一个持续优化的工程问题"，反对暂停 AI 开发的呼吁。此立场与 [[19_Talks/Dario_Amodei/about]] 的"安全优先"形成对比。
+Huang 属于"实用主义派"，认为 AI 安全应通过技术迭代而非暂停来解决。他在多次采访中表示"AI 安全是一个持续优化的工程问题"，反对暂停 AI 开发的呼吁。此立场与 [[业界观点/Dario_Amodei/about]] 的"安全优先"形成对比。
 
 ### 物理 AI (Physical AI)
 
@@ -124,17 +124,17 @@ Huang 将数据中心视为 AI 时代的"工厂"，其核心产品不仅是 GPU 
 
 ## 交叉引用 (Cross-References)
 
-- [Talks 主题合成 2026](19_Talks/Talks_Synthesis_2026.md) -- Scaling Laws、AI 安全、中国 AI 与全球格局等主题中 Huang 的立场
-- [Jensen Huang 金句集](19_Talks/Jensen_Huang/sayings.md) -- 更多金句与权威来源链接
-- [AI 历史时间线](00_AI_Introduction/AI_History_Timeline.md) -- CUDA 发布与 GPU 计算革命
-- [AI 未来趋势](00_AI_Introduction/AI_Future_Trends.md) -- "AI 工厂"与"物理 AI"趋势预判
-- [架构与基础设施](../../12_Architecture_Infrastructure/README.md) -- GPU 集群、数据中心与 AI 计算架构
-- [模型训练](../../07_Model_Training/README.md) -- 大规模分布式训练与 GPU 算力需求
-- [部署与推理](../../10_Deployment_Inference/README.md) -- 推理优化与 GPU 推理引擎
-- [机器人系统](../../11_MLOps_Pipeline/README.md) -- Physical AI、Isaac 平台与机器人仿真
-- [Sam Altman](19_Talks/Jensen_Huang/about.md) -- Scaling Laws 信仰与算力需求共识
-- [Demis Hassabis](19_Talks/Jensen_Huang/about.md) -- AI for Science 与 GPU 算力支撑
-- [Yann LeCun](19_Talks/Jensen_Huang/about.md) -- 开源模型生态与 CUDA 开发者平台
+- [Talks 主题合成 2026](业界观点/Talks_Synthesis_2026.md) -- Scaling Laws、AI 安全、中国 AI 与全球格局等主题中 Huang 的立场
+- [Jensen Huang 金句集](业界观点/Jensen_Huang/sayings.md) -- 更多金句与权威来源链接
+- [AI 历史时间线](AI入门/AI_History_Timeline.md) -- CUDA 发布与 GPU 计算革命
+- [AI 未来趋势](AI入门/AI_Future_Trends.md) -- "AI 工厂"与"物理 AI"趋势预判
+- [架构与基础设施](../../架构基建/README.md) -- GPU 集群、数据中心与 AI 计算架构
+- [模型训练](../../模型训练/README.md) -- 大规模分布式训练与 GPU 算力需求
+- [部署与推理](../../部署推理/README.md) -- 推理优化与 GPU 推理引擎
+- [机器人系统](../../MLOps/README.md) -- Physical AI、Isaac 平台与机器人仿真
+- [Sam Altman](业界观点/Jensen_Huang/about.md) -- Scaling Laws 信仰与算力需求共识
+- [Demis Hassabis](业界观点/Jensen_Huang/about.md) -- AI for Science 与 GPU 算力支撑
+- [Yann LeCun](业界观点/Jensen_Huang/about.md) -- 开源模型生态与 CUDA 开发者平台
 
 ---
 
@@ -152,9 +152,9 @@ Huang 将数据中心视为 AI 时代的"工厂"，其核心产品不仅是 GPU 
 
 ## Related
 
-- [[19_Talks/Jensen_Huang/sayings]] -- Jensen Huang 关于 AI 的观点 (Jensen Huang on AI)
-- [[19_Talks/Sam_Altman/about]] -- Sam Altman 简介 (共享: scaling, AI infrastructure demand)
-- [[19_Talks/Satya_Nadella/about]] -- Satya Nadella 简介 (共享: Azure + NVIDIA cloud partnership)
-- [[19_Talks/Andrej_Karpathy/about]] -- Andrej Karpathy 简介 (共享: insights, leaders, speeches, talks)
-- [[19_Talks/Andrew_Ng/about]] -- Andrew Ng 简介 (共享: insights, leaders, speeches, talks)
-- [[19_Talks/Bill_Gates/about]] -- Bill Gates 简介 (共享: insights, leaders, speeches, talks)
+- [[业界观点/Jensen_Huang/sayings]] -- Jensen Huang 关于 AI 的观点 (Jensen Huang on AI)
+- [[业界观点/Sam_Altman/about]] -- Sam Altman 简介 (共享: scaling, AI infrastructure demand)
+- [[业界观点/Satya_Nadella/about]] -- Satya Nadella 简介 (共享: Azure + NVIDIA cloud partnership)
+- [[业界观点/Andrej_Karpathy/about]] -- Andrej Karpathy 简介 (共享: insights, leaders, speeches, talks)
+- [[业界观点/Andrew_Ng/about]] -- Andrew Ng 简介 (共享: insights, leaders, speeches, talks)
+- [[业界观点/Bill_Gates/about]] -- Bill Gates 简介 (共享: insights, leaders, speeches, talks)

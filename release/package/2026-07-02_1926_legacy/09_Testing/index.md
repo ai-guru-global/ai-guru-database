@@ -7,21 +7,21 @@ updated: 2026-07-02
 
 # Testing
 
-This page indexes the contents of `09_Testing`.
+This page indexes the contents of `AI测试`.
 
 ## Subdirectories
 
-- [[09_Testing/Testing_Frameworks/index|Testing Frameworks]]
+- [[AI测试/Testing_Frameworks/index|Testing Frameworks]]
 
 ## Files
 
-- [[09_Testing/AB_Testing_AI_Systems|AB Testing AI Systems]]
-- [[09_Testing/AI-Testing-in-nutshell|AI Testing In Nutshell]]
-- [[09_Testing/AI_Test_Framework_2026|AI Test Framework 2026]]
-- [[09_Testing/AI_Testing_for_dummy|AI Testing For Dummy]]
-- [[09_Testing/Contract_Testing|Contract Testing]]
-- [[09_Testing/RAGAS_Deep_Dive|RAGAS Deep Dive]]
-- [[09_Testing/README|README]]
-- [[09_Testing/README_for_dummy|README For Dummy]]
-- [[09_Testing/Test_Data_Management|Test Data Management]]
-- [[09_Testing/Weights_Biases_Deep_Dive|Weights Biases Deep Dive]]
+- [[AI测试/AB_Testing_AI_Systems|AB Testing AI Systems]]
+- [[AI测试/AI-Testing-in-nutshell|AI Testing In Nutshell]]
+- [[AI测试/AI_Test_Framework_2026|AI Test Framework 2026]]
+- [[AI测试/AI_Testing_for_dummy|AI Testing For Dummy]]
+- [[AI测试/Contract_Testing|Contract Testing]]
+- [[AI测试/RAGAS_Deep_Dive|RAGAS Deep Dive]]
+- [[AI测试/README|README]]
+- [[AI测试/README_for_dummy|README For Dummy]]
+- [[AI测试/Test_Data_Management|Test Data Management]]
+- [[AI测试/Weights_Biases_Deep_Dive|Weights Biases Deep Dive]]

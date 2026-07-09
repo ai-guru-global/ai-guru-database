@@ -137,7 +137,7 @@ TensorFlow/Keras 版本通常将 VAE 损失封装成自定义层或使用 `add_l
   - **GAN**：课程下一课（L10）将讲解生成对抗网络与艺术风格迁移，可与本课对比学习；
   - **VQ-VAE / VQ-GAN**：把离散隐空间引入自编码器，是现代高分辨率图像生成与多模态模型的基础；
   - **MusicVAE**：Google Magenta 项目把 VAE 用于音乐生成，本课挑战部分提供了 [Colab 实验链接](https://colab.research.google.com/github/magenta/magenta-demos/blob/master/colab-notebooks/Multitrack_MusicVAE.ipynb)；
-  - 想了解更多生成模型理论，可阅读本库 [[04_Computer_Vision/Generative_Models/Generative_Models]]。
+  - 想了解更多生成模型理论，可阅读本库 [[计算机视觉/Generative_Models/Generative_Models]]。
 
 ---
 
@@ -145,9 +145,9 @@ TensorFlow/Keras 版本通常将 VAE 损失封装成自定义层或使用 `add_l
 
 - 课程索引：[[90_Learn/courses/microsoft/microsoft_ai_for_beginners]]
 - 本库相关页面：
-  - [[04_Computer_Vision/Generative_Models/Generative_Models]]
-  - [[04_Computer_Vision/CV-in-nutshell]]
-  - [[03_Deep_Learning/Neural_Network_Core/Neural_Network_Core]]
+  - [[计算机视觉/Generative_Models/Generative_Models]]
+  - [[计算机视觉/CV-in-nutshell]]
+  - [[深度学习/Neural_Network_Core/Neural_Network_Core]]
 - 外部参考：
   - [Building Autoencoders in Keras](https://blog.keras.io/building-autoencoders-in-keras.html)
   - [Variational Autoencoders Explained](https://kvfrans.com/variational-autoencoders-explained/)

@@ -457,9 +457,9 @@ rag_evaluation:
 
 ## Related
 
-- [[08_Model_Evaluation/Model_Evaluation|模型评估 — 评估方法论全景]]
-- [[08_Model_Evaluation/Evaluation_Automation_2026|自动化模型评估 2026 — CI/CD 评估流水线]]
-- [[08_Model_Evaluation/Evaluation_Tools/LLM_as_Judge_Deep_Dive|LLM-as-Judge 深度解析 — 评委模型与偏见控制]]
-- [[08_Model_Evaluation/Evaluation_Tools/Online_Evaluation|在线评估 — A/B 测试与线上监控]]
-- [[09_Testing/RAGAS_Deep_Dive|RAGAS — RAG 评估框架]]
-- [[14_RAG_Systems/RAG_Production_Architecture_Deep_Dive|RAG 生产架构深度解析 — RAG 系统生产级设计]]
+- [[模型评估/Model_Evaluation|模型评估 — 评估方法论全景]]
+- [[模型评估/Evaluation_Automation_2026|自动化模型评估 2026 — CI/CD 评估流水线]]
+- [[模型评估/Evaluation_Tools/LLM_as_Judge_Deep_Dive|LLM-as-Judge 深度解析 — 评委模型与偏见控制]]
+- [[模型评估/Evaluation_Tools/Online_Evaluation|在线评估 — A/B 测试与线上监控]]
+- [[AI测试/RAGAS_Deep_Dive|RAGAS — RAG 评估框架]]
+- [[RAG系统/RAG_Production_Architecture_Deep_Dive|RAG 生产架构深度解析 — RAG 系统生产级设计]]

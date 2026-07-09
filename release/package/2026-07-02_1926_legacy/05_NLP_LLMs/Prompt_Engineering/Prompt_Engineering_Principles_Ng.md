@@ -119,6 +119,6 @@ aliases:
 ---
 
 ## 相关阅读
-- [[05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering]]
-- [[15_Agent_Production/Agentic_Design_Patterns_AndrewNg]]
-- [[08_Model_Evaluation/Evaluation_Tools/LLM_as_Judge_Deep_Dive]]
+- [[大模型/Prompt_Engineering/Prompt_Engineering]]
+- [[Agent/Agentic_Design_Patterns_AndrewNg]]
+- [[模型评估/Evaluation_Tools/LLM_as_Judge_Deep_Dive]]

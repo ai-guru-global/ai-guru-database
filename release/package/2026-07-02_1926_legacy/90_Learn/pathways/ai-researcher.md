@@ -53,9 +53,9 @@ Phase 6: 前沿专题（多模态 / Agent / 世界模型）
 **📚 核心概念**：[Stage 1: 基础概念 — 数学相关部分](90_Learn/concepts/stage1_foundation.md)
 
 **🔗 深入阅读**：
-- [线性代数（小白版）](01_Fundamentals/Linear_Algebra/Linear_Algebra_for_dummy.md) + 完整版
-- [概率统计（小白版）](01_Fundamentals/Probability_Statistics/Probability_Statistics_for_dummy.md) + 完整版
-- [优化（小白版）](../../03_Deep_Learning/Optimization/Optimization_for_dummy.md)
+- [线性代数（小白版）](数学基础/Linear_Algebra/Linear_Algebra_for_dummy.md) + 完整版
+- [概率统计（小白版）](数学基础/Probability_Statistics/Probability_Statistics_for_dummy.md) + 完整版
+- [优化（小白版）](../../深度学习/Optimization/Optimization_for_dummy.md)
 
 **💡 研究者重点**：
 - 矩阵分解（SVD）与表示学习的关系
@@ -78,10 +78,10 @@ Phase 6: 前沿专题（多模态 / Agent / 世界模型）
 **📚 核心概念**：[Stage 1 + Stage 2 基础](90_Learn/concepts/stage1_foundation.md) + [Stage 2 核心技术](90_Learn/concepts/stage2_core_tech.md)
 
 **🔗 深入阅读**（完整版，非 _for_dummy）：
-- [监督学习（完整版）](02_Machine_Learning/Supervised_Learning/Supervised_Learning.md)
-- [无监督学习（完整版）](02_Machine_Learning/Unsupervised_Learning/Unsupervised_Learning.md)
-- [神经网络核心（完整版）](03_Deep_Learning/Neural_Network_Core/Neural_Network_Core.md)
-- [优化（完整版）](03_Deep_Learning/Optimization/Optimization.md)
+- [监督学习（完整版）](机器学习/Supervised_Learning/Supervised_Learning.md)
+- [无监督学习（完整版）](机器学习/Unsupervised_Learning/Unsupervised_Learning.md)
+- [神经网络核心（完整版）](深度学习/Neural_Network_Core/Neural_Network_Core.md)
+- [优化（完整版）](深度学习/Optimization/Optimization.md)
 
 **💡 理论重点**：
 - VC 维数与泛化理论
@@ -109,8 +109,8 @@ Phase 6: 前沿专题（多模态 / Agent / 世界模型）
 **📚 核心概念**：[Stage 2: 核心技术 — Transformer / Attention 部分](90_Learn/concepts/stage2_core_tech.md)
 
 **🔗 深入阅读**：
-- [Transformer 革命（小白版）](05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution_for_dummy.md)
-- [LLM 架构（完整版）](05_NLP_LLMs/LLM_Architectures/LLM_Architectures_for_dummy.md)
+- [Transformer 革命（小白版）](大模型/Transformer_Revolution/Transformer_Revolution_for_dummy.md)
+- [LLM 架构（完整版）](大模型/LLM_Architectures/LLM_Architectures_for_dummy.md)
 - 原始论文：[Attention Is All You Need (Vaswani et al., 2017)](https://arxiv.org/abs/1706.03762)
 
 **💡 Transformer 理论重点**：
@@ -152,9 +152,9 @@ Phase 6: 前沿专题（多模态 / Agent / 世界模型）
 | Scaling Law 新方向 | [ emergent abilities](https://arxiv.org/abs/2206.11176)、[scaling doesn't plateau](https://arxiv.org/abs/2304.15012) |
 
 **🔗 深入阅读**：
-- [微调技术（小白版）](05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques_for_dummy.md)
-- [价值对齐（小白版）](17_Ethics_Safety/Value_Alignment/Value_Alignment_for_dummy.md)
-- [AI 安全与红队（小白版）](17_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming_for_dummy.md)
+- [微调技术（小白版）](大模型/Fine_tuning_Techniques/Fine_tuning_Techniques_for_dummy.md)
+- [价值对齐（小白版）](伦理安全/Value_Alignment/Value_Alignment_for_dummy.md)
+- [AI 安全与红队（小白版）](伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming_for_dummy.md)
 - [Scaling Law 与后 Scaling 时代](90_Learn/concepts/stage4_frontier.md)（Stage 4 中的 Scaling Law 部分）
 
 **✅ 学会标志**：
@@ -171,7 +171,7 @@ Phase 6: 前沿专题（多模态 / Agent / 世界模型）
 
 **📚 核心概念**：综合 Stage 2-4
 
-**🔗 阅读论文库**：[10_Papers/](../../11_MLOps_Pipeline/README.md) 中的核心论文
+**🔗 阅读论文库**：[10_Papers/](../../MLOps/README.md) 中的核心论文
 
 **💡 论文阅读方法**：
 ```
@@ -209,19 +209,19 @@ Phase 6: 前沿专题（多模态 / Agent / 世界模型）
 **🔗 2026 前沿专题**：
 
 **专题 A: 世界模型与 JEPA**
-- [世界模型（2026）](03_Deep_Learning/World_Models/World_Models_2026.md)
+- [世界模型（2026）](深度学习/World_Models/World_Models_2026.md)
 - 核心论文：V-JEPA、GAIA-1、World Models Survey
 
 **专题 B: VLA 与具身智能**
-- [机器人与具身智能（2026）](../../06_Reinforcement_Learning/Robotics_Embodied_AI/Embodied_AI_2026.md)
+- [机器人与具身智能（2026）](../../强化学习/Robotics_Embodied_AI/Embodied_AI_2026.md)
 - 核心论文：RT-2、OpenVLA、Figure AI 相关工作
 
 **专题 C: AI Safety 与对齐**
-- [AI 安全红队（小白版）](17_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming_for_dummy.md)
+- [AI 安全红队（小白版）](伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming_for_dummy.md)
 - 核心论文：Mechanistic Interpretability Survey、ARC Prize
 
 **专题 D: Agent 评估**
-- [Agent 评估框架](../../15_Agent_Production/Agent_Evaluation/README.md)
+- [Agent 评估框架](../../Agent/Agent_Evaluation/README.md)
 - 核心论文：RAPS 模型、AgentBench、GAIA Benchmark
 
 **✅ 学会标志**：

@@ -26,9 +26,9 @@ relationships:
   type: related_to
 sources:
 - 11_RAG_recommendation-systems/RAG_Systems.md
-- 14_RAG_Systems/Advanced_RAG/RAG_Advanced_2026.md
-- 14_RAG_Systems/README.md
-- 14_RAG_Systems/README_Advanced.md
+- RAG系统/Advanced_RAG/RAG_Advanced_2026.md
+- RAG系统/README.md
+- RAG系统/README_Advanced.md
 summary: RAG（检索增强生成）通过结合外部知识库检索与大语言模型生成能力，解决LLM幻觉、知识过时和领域知识不足问题，2026年已从基础模式进化为90%+准确率的精密工程。
 provenance:
   extracted: 0.8
@@ -109,24 +109,24 @@ Dify适合企业内部平台（功能完整、可视化），Haystack适合企�
 
 ## 来源
 
-- 14_RAG_Systems/RAG_Systems.md — RAG完整技术体系、Pipeline流程、评估指标
-- 14_RAG_Systems/Advanced_RAG/RAG_Advanced_2026.md — 混合检索、重排序、Agentic RAG、上下文压缩
-- 14_RAG_Systems/README.md — 学习路径与框架选型
-- 14_RAG_Systems/README_Advanced.md — 框架选型与关键技术速查
+- RAG系统/RAG_Systems.md — RAG完整技术体系、Pipeline流程、评估指标
+- RAG系统/Advanced_RAG/RAG_Advanced_2026.md — 混合检索、重排序、Agentic RAG、上下文压缩
+- RAG系统/README.md — 学习路径与框架选型
+- RAG系统/README_Advanced.md — 框架选型与关键技术速查
 
 ## Related
 
-- [[14_RAG_Systems/RAG-in-nutshell]] — RAG (检索增强生成) 速成指南 (共享: rag, retrieval)
-- [[14_RAG_Systems/RAG_Systems]] — RAG 系统 (RAG Systems) (共享: rag, retrieval)
-- [[14_RAG_Systems/README_Advanced]] — RAG高级实践 2026 (共享: rag, retrieval)
+- [[RAG系统/RAG-in-nutshell]] — RAG (检索增强生成) 速成指南 (共享: rag, retrieval)
+- [[RAG系统/RAG_Systems]] — RAG 系统 (RAG Systems) (共享: rag, retrieval)
+- [[RAG系统/README_Advanced]] — RAG高级实践 2026 (共享: rag, retrieval)
 - [[_concepts/embedding-models]] — 嵌入模型（RAG 检索基础）
 - [[_concepts/vector-database]] — 向量数据库（RAG 存储基础）
 - [[_concepts/lora-peft]] — LoRA/PEFT（RAG vs 微调选型）
 - [[_concepts/pretrain-vs-finetune-vs-rag]] — 预训练/微调/RAG 决策指南
-- [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack（内置知识库+RAG 应用）
+- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack（内置知识库+RAG 应用）
 - [[_concepts/agentic-rag]] — Agentic RAG
 - [[_concepts/text2sql]] — Text2SQL
-- [[14_RAG_Systems/Agentic_RAG_Applications_for_dummy]] — Agentic RAG 应用大白话
+- [[RAG系统/Agentic_RAG_Applications_for_dummy]] — Agentic RAG 应用大白话
 - [[_concepts/rag-patterns]] — Rag Patterns
 
 ---

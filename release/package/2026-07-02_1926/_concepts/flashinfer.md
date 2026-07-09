@@ -10,7 +10,7 @@ relationships:
   - target: "_concepts/speculative-decoding"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "FlashInfer 是面向 LLM Serving 的高性能注意力算子库，MLSys 2025 Best Paper。为 SGLang 提供底层 PagedAttention/FlashInfer 算子，支持 KV Cache 共享和推测解码。"
 provenance:
   extracted: 0.30
@@ -113,4 +113,4 @@ Cascade Attention：
 - [[_concepts/paged-attention]] — PagedAttention 虚拟内存式 KV 管理
 - [[_concepts/speculative-decoding]] — 投机解码
 - [[_concepts/continuous-batching]] — Continuous Batching
-- [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析

@@ -10,7 +10,7 @@ relationships:
   - target: "_concepts/flashinfer"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "EAGLE (Extrapolation Algorithm for Greater Language-model Efficiency) 是特征级推测解码方案，用轻量 Draft Head 预测目标模型的特征而非 Token，接受率达 80-90%，加速 2-3 倍。"
 provenance:
   extracted: 0.20
@@ -99,4 +99,4 @@ EAGLE 推测解码：
 - [[_concepts/mtp]] — Multi-Token Prediction
 - [[_concepts/flashinfer]] — FlashInfer 算子库
 - [[_concepts/prefill-decode]] — Prefill/Decode 推理阶段
-- [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析

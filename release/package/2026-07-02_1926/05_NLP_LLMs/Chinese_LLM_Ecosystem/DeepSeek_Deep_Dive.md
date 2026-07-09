@@ -100,7 +100,7 @@ DeepSeek 是中国大模型开源生态中与 Qwen 并列的标杆项目。其�
 4. **RL-first 后训练**: R1 的 GRPO 算法证明了 RL 可以替代人工标注的思维链数据
 5. **全栈自研**: 从 FP8 GEMM kernel 到 MoE 路由策略，每一层都自己造轮子
 
-> **相关文档**: 关于 LLM 架构范式的详细介绍，参见 [LLM Architectures](05_NLP_LLMs/LLM_Architectures/LLM_Architectures.md)
+> **相关文档**: 关于 LLM 架构范式的详细介绍，参见 [LLM Architectures](大模型/LLM_Architectures/LLM_Architectures.md)
 
 ---
 
@@ -315,7 +315,7 @@ class MultiHeadLatentAttention(nn.Module):
 | 性能影响 | 基线 | 轻微下降 | 明显下降 | **持平或更优** |
 | 长上下文友好 | 差 | 中 | 好 | **极好** |
 
-> **相关文档**: 关于 MoE 架构的详细分析，参见 [MoE Case Studies: DeepSeek & Mixtral](05_NLP_LLMs/LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md)
+> **相关文档**: 关于 MoE 架构的详细分析，参见 [MoE Case Studies: DeepSeek & Mixtral](大模型/LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md)
 
 ### 3.2 DeepSeekMoE 路由架构
 
@@ -400,7 +400,7 @@ DeepSeekMoE 三大创新
 | 共享专家 | 1 | 1 | 1 | 1+ |
 | 负载均衡 | 无辅助损失 | 无辅助损失 | 无辅助损失 | 增强版 |
 
-> **相关文档**: 关于 MoE 路由与负载均衡的深入分析，参见 [Mixture of Experts Deep Dive](20_Papers_and_Research/Architecture/Mixture_of_Experts_Deep_Dive.md)
+> **相关文档**: 关于 MoE 路由与负载均衡的深入分析，参见 [Mixture of Experts Deep Dive](论文精读/Architecture/Mixture_of_Experts_Deep_Dive.md)
 
 ### 3.3 FP8 混合精度训练
 
@@ -1422,7 +1422,7 @@ graph TB
     style D4 fill:#45b7d1,color:#fff
 ```
 
-> **相关文档**: 关于 R1 训练方法和 GRPO 算法的详细分析，参见 [DeepSeek-R1 Technical Analysis](05_NLP_LLMs/Reasoning_Models/DeepSeek_R1_Technical_Analysis.md)
+> **相关文档**: 关于 R1 训练方法和 GRPO 算法的详细分析，参见 [DeepSeek-R1 Technical Analysis](大模型/Reasoning_Models/DeepSeek_R1_Technical_Analysis.md)
 
 ---
 
@@ -1976,27 +1976,27 @@ DeepSeek 提供双协议端点：
 
 ### 架构基础
 
-- [LLM Architectures (大语言模型架构)](05_NLP_LLMs/LLM_Architectures/LLM_Architectures.md) — Transformer, GPT, BERT, MoE 等核心架构的全面介绍
-- [MoE Case Studies: DeepSeek & Mixtral](05_NLP_LLMs/LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md) — MoE 路由策略、专家专业化的深度分析
-- [MoE Routing and Load Balancing](05_NLP_LLMs/LLM_Architectures/MoE_Routing_and_Load_Balancing.md) — MoE 负载均衡技术详解
-- [Mixture of Experts Deep Dive](20_Papers_and_Research/Architecture/Mixture_of_Experts_Deep_Dive.md) — MoE 从理论到实践的完整剖析
+- [LLM Architectures (大语言模型架构)](大模型/LLM_Architectures/LLM_Architectures.md) — Transformer, GPT, BERT, MoE 等核心架构的全面介绍
+- [MoE Case Studies: DeepSeek & Mixtral](大模型/LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md) — MoE 路由策略、专家专业化的深度分析
+- [MoE Routing and Load Balancing](大模型/LLM_Architectures/MoE_Routing_and_Load_Balancing.md) — MoE 负载均衡技术详解
+- [Mixture of Experts Deep Dive](论文精读/Architecture/Mixture_of_Experts_Deep_Dive.md) — MoE 从理论到实践的完整剖析
 
 ### 推理模型
 
-- [DeepSeek-R1 Technical Analysis](05_NLP_LLMs/Reasoning_Models/DeepSeek_R1_Technical_Analysis.md) — DeepSeek-R1 的 GRPO 训练和自进化机制详细分析
-- [Reasoning Models for Dummy (推理模型小白指南)](05_NLP_LLMs/Reasoning_Models/Reasoning_Models_for_dummy.md) — 推理模型的基础概念和核心原理
-- [o1 Class Reasoning Models](05_NLP_LLMs/Reasoning_Models/o1_Class_Reasoning_Models.md) — OpenAI o1/o3 类推理模型分析
-- [Process Reward Models](05_NLP_LLMs/Reasoning_Models/Process_Reward_Models.md) — 过程奖励模型详解
+- [DeepSeek-R1 Technical Analysis](大模型/Reasoning_Models/DeepSeek_R1_Technical_Analysis.md) — DeepSeek-R1 的 GRPO 训练和自进化机制详细分析
+- [Reasoning Models for Dummy (推理模型小白指南)](大模型/Reasoning_Models/Reasoning_Models_for_dummy.md) — 推理模型的基础概念和核心原理
+- [o1 Class Reasoning Models](大模型/Reasoning_Models/o1_Class_Reasoning_Models.md) — OpenAI o1/o3 类推理模型分析
+- [Process Reward Models](大模型/Reasoning_Models/Process_Reward_Models.md) — 过程奖励模型详解
 
 ### 中国 LLM 生态
 
-- [Qwen Deep Dive (通义千问技术深度解析)](05_NLP_LLMs/Chinese_LLM_Ecosystem/Qwen_Deep_Dive.md) — 阿里 Qwen 系列全面分析
-- [Kimi / Moonshot AI Deep Dive](05_NLP_LLMs/Chinese_LLM_Ecosystem/Kimi_Moonshot_Deep_Dive.md) — 月之暗面长上下文与推理技术深潜
+- [Qwen Deep Dive (通义千问技术深度解析)](大模型/Chinese_LLM_Ecosystem/Qwen_Deep_Dive.md) — 阿里 Qwen 系列全面分析
+- [Kimi / Moonshot AI Deep Dive](大模型/Chinese_LLM_Ecosystem/Kimi_Moonshot_Deep_Dive.md) — 月之暗面长上下文与推理技术深潜
 
 ### 训练与微调
 
-- [Fine-tuning Techniques (微调技术)](05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques.md) — LoRA, QLoRA, PEFT 等微调方法
-- [RLHF & DPO Deep Dive](20_Papers_and_Research/Alignment/RLHF_DPO_Deep_Dive.md) — 人类反馈强化学习与直接偏好优化
+- [Fine-tuning Techniques (微调技术)](大模型/Fine_tuning_Techniques/Fine_tuning_Techniques.md) — LoRA, QLoRA, PEFT 等微调方法
+- [RLHF & DPO Deep Dive](论文精读/Alignment/RLHF_DPO_Deep_Dive.md) — 人类反馈强化学习与直接偏好优化
 
 ---
 
@@ -2012,9 +2012,9 @@ DeepSeek 提供双协议端点：
 - DeepSeek-R1 技术报告: arXiv:2501.12948
 
 ### Wiki 内部参考
-- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/README]] — 中国大模型生态全景
-- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]] — 全厂商对比矩阵
-- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/Chinese_LLM_Training_Inference_Platforms]] — 训推平台实战
+- [[大模型/Chinese_LLM_Ecosystem/README]] — 中国大模型生态全景
+- [[大模型/Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]] — 全厂商对比矩阵
+- [[大模型/Chinese_LLM_Ecosystem/Chinese_LLM_Training_Inference_Platforms]] — 训推平台实战
 
 ---
 *Last updated: 2026-06-16*

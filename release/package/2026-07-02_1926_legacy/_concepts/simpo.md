@@ -10,7 +10,7 @@ relationships:
   - target: "_concepts/reward-model"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "SimPO (Simple Preference Optimization) 是无需参考模型的偏好优化方法——用序列平均 log 概率作为隐式奖励，比 DPO 更简单且效果更好。是 2024-2026 年对齐训练的新选择。"
 provenance:
   extracted: 0.20
@@ -84,4 +84,4 @@ Loss = -log σ(β · (1/|y_w| · log π(y_w|x) - 1/|y_l| · log π(y_l|x) - γ))
 - [[_concepts/rlhf]] — RLHF 人类反馈强化学习
 - [[_concepts/reward-model]] — 奖励模型
 - [[_concepts/grpo]] — GRPO 组相对策略优化
-- [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析

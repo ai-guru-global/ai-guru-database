@@ -8,7 +8,7 @@ relationships:
   - target: "_concepts/agentic-rag"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "LangFlow 是 DataStax 开源的可视化 LLM 应用编排工具，通过拖拽方式构建 RAG/Agent/Chain 流程。AI Stack 知识库生态中可作为低代码 RAG 应用构建工具。"
 provenance:
   extracted: 0.20
@@ -93,4 +93,4 @@ AI Stack LLM 应用构建选项
 
 - [[_concepts/rag-systems]] — RAG 系统
 - [[_concepts/agentic-rag]] — Agentic RAG
-- [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析

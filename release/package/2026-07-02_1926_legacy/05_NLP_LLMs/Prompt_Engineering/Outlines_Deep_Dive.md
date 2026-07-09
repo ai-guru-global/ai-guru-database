@@ -313,4 +313,4 @@ result = generator(model, "生成团队成员列表")
 
 ## Related
 
-- [[05_NLP_LLMs/Prompt_Engineering/README.md|README]]
+- [[大模型/Prompt_Engineering/README.md|README]]

@@ -270,9 +270,9 @@ writer.write(file=profile.view())
 
 ### 项目内导航
 
-- [MLOps Pipeline](11_MLOps_Pipeline/MLOps_Pipeline.md) — MLOps 整体架构与成熟度模型
-- [AI Observability Guide](11_MLOps_Pipeline/Observability/AI_Observability_Guide.md) — 基础设施与推理层面的实时监控
-- [Model Evaluation](08_Model_Evaluation/Model_Evaluation.md) — 静态评估与基准测试方法
+- [MLOps Pipeline](MLOps/MLOps_Pipeline.md) — MLOps 整体架构与成熟度模型
+- [AI Observability Guide](MLOps/Observability/AI_Observability_Guide.md) — 基础设施与推理层面的实时监控
+- [Model Evaluation](模型评估/Model_Evaluation.md) — 静态评估与基准测试方法
 - [LLMOps 2026 Best Practices](../LLM_Production_Pipeline_2026.md) — 生成式 AI 专属运维实践
 
 ### 关键工具链

@@ -321,13 +321,13 @@ AI 生产系统的成本往往呈现“非线性爆炸”：GPU 训练、推理�
 
 ## Related
 
-- [[18_AI_Applications_Industry/AI_Applications_Industry|AI 应用与行业融合全景]]
-- [[18_AI_Applications_Industry/Finance/AI_Finance_2026|金融 AI 应用 2026]]
-- [[18_AI_Applications_Industry/Healthcare/AI_Healthcare_2026|医疗 AI 应用 2026]]
-- [[18_AI_Applications_Industry/Retail_Ecommerce/AI_Retail_Ecommerce_2026|零售电商 AI 应用 2026]]
-- [[18_AI_Applications_Industry/Manufacturing/AI_Manufacturing_2026|智能制造 AI 应用 2026]]
-- [[18_AI_Applications_Industry/Autonomous_Driving/AI_Autonomous_Driving_2026|自动驾驶 AI 应用 2026]]
-- [[10_Deployment_Inference/README|推理与部署]]
-- [[15_Agent_Production/README|Agent 生产部署]]
-- [[11_MLOps_Pipeline/README|MLOps 流水线]]
-- [[12_Architecture_Infrastructure/AI_SRE_Runbook|AI SRE Runbook]]
+- [[行业应用/AI_Applications_Industry|AI 应用与行业融合全景]]
+- [[行业应用/Finance/AI_Finance_2026|金融 AI 应用 2026]]
+- [[行业应用/Healthcare/AI_Healthcare_2026|医疗 AI 应用 2026]]
+- [[行业应用/Retail_Ecommerce/AI_Retail_Ecommerce_2026|零售电商 AI 应用 2026]]
+- [[行业应用/Manufacturing/AI_Manufacturing_2026|智能制造 AI 应用 2026]]
+- [[行业应用/Autonomous_Driving/AI_Autonomous_Driving_2026|自动驾驶 AI 应用 2026]]
+- [[部署推理/README|推理与部署]]
+- [[Agent/README|Agent 生产部署]]
+- [[MLOps/README|MLOps 流水线]]
+- [[架构基建/AI_SRE_Runbook|AI SRE Runbook]]

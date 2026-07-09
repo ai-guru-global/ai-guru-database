@@ -586,7 +586,7 @@ MagicMind 是寒武纪的推理引擎，对标 NVIDIA TensorRT：
 | 云-芯-模全栈协同 | 信创市场面临华为昇腾竞争 |
 
 > **官网**: [t-head.cn](https://www.t-head.cn/)  
-> **详见**: [[01_Fundamentals/AI_Hardware/T_Head_PPU_Deep_Dive|平头哥真武 PPU 深度解析]]
+> **详见**: [[数学基础/AI_Hardware/T_Head_PPU_Deep_Dive|平头哥真武 PPU 深度解析]]
 
 ---
 
@@ -787,7 +787,7 @@ FlashMLA 是 DeepSeek 开源的 MLA (Multi-Latent Attention) 高效实现，是�
 
 ### Wiki 内部链接
 
-> **关联**: -> [[01_Fundamentals/README|数学基础]] | [[05_NLP_LLMs/Chinese_LLM_Ecosystem/README|中国大模型生态]] | [[10_Deployment_Inference/README|部署推理]] | [[12_Architecture_Infrastructure/README|架构基础设施]] | [[12_Architecture_Infrastructure/Hardware_Compute/CDI_Deep_Dive|CDI 容器设备接口(异构芯片统一接入)]] | [[07_Model_Training/README|模型训练]] | [[12_Architecture_Infrastructure/AI_Gateway/README|AI 网关]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]] | [[20_Papers_and_Research/Architecture/Mixture_of_Experts_Deep_Dive|MoE 深度解读]] | [[01_Fundamentals/AI_Hardware/T_Head_PPU_Deep_Dive|平头哥真武 PPU 深度解析]] | [[01_Fundamentals/AI_Hardware/T_Head_PPU_for_dummy|平头哥 PPU 大白话解读]]
+> **关联**: -> [[数学基础/README|数学基础]] | [[大模型/Chinese_LLM_Ecosystem/README|中国大模型生态]] | [[部署推理/README|部署推理]] | [[架构基建/README|架构基础设施]] | [[架构基建/Hardware_Compute/CDI_Deep_Dive|CDI 容器设备接口(异构芯片统一接入)]] | [[模型训练/README|模型训练]] | [[架构基建/AI_Gateway/README|AI 网关]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]] | [[论文精读/Architecture/Mixture_of_Experts_Deep_Dive|MoE 深度解读]] | [[数学基础/AI_Hardware/T_Head_PPU_Deep_Dive|平头哥真武 PPU 深度解析]] | [[数学基础/AI_Hardware/T_Head_PPU_for_dummy|平头哥 PPU 大白话解读]]
 
 ## Related
 

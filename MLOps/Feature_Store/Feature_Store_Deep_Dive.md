@@ -268,9 +268,9 @@ online_features = store.get_online_features(
 
 ## 相关阅读
 
-- [[11_MLOps_Pipeline/Data_Engineering/index]] — 数据工程
-- [[02_Machine_Learning/Feature_Engineering/Feature_Engineering]] — 特征工程
-- [[11_MLOps_Pipeline/MLOps_Pipeline]] — MLOps 流水线
-- [[11_MLOps_Pipeline/Experiment_Tracking/index]] — 实验跟踪
-- [[10_Deployment_Inference/Deployment_Inference]] — 部署与推理
-- [[12_Architecture_Infrastructure/Storage/Storage]] — 存储架构
+- [[MLOps/Data_Engineering/index]] — 数据工程
+- [[机器学习/Feature_Engineering/Feature_Engineering]] — 特征工程
+- [[MLOps/MLOps_Pipeline]] — MLOps 流水线
+- [[MLOps/Experiment_Tracking/index]] — 实验跟踪
+- [[部署推理/Deployment_Inference]] — 部署与推理
+- [[架构基建/Storage/Storage]] — 存储架构

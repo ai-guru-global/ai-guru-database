@@ -28,10 +28,10 @@ aliases:
 
 | 系列 | 对应知识库章节 | 学习价值 |
 |------|---------------|---------|
-| Linear Algebra | [[01_Fundamentals/Linear_Algebra]] | 理解向量/矩阵/特征分解 |
-| Neural Networks | [[03_Deep_Learning/Neural_Network_Core]] | 直觉理解反向传播 |
-| Attention/Transformer | [[05_NLP_LLMs/Transformer_Revolution]] | 可视化 Q/K/V 机制 |
-| Calculus | [[01_Fundamentals/Math_Foundations]] | 梯度下降的数学直觉 |
+| Linear Algebra | [[数学基础/Linear_Algebra]] | 理解向量/矩阵/特征分解 |
+| Neural Networks | [[深度学习/Neural_Network_Core]] | 直觉理解反向传播 |
+| Attention/Transformer | [[大模型/Transformer_Revolution]] | 可视化 Q/K/V 机制 |
+| Calculus | [[数学基础/Math_Foundations]] | 梯度下降的数学直觉 |
 
 ## 技术观点
 
@@ -69,9 +69,9 @@ aliases:
 
 ## 相关文档
 
-- [[19_Talks/3Blue1Brown/youtube_channel]] — 3Blue1Brown 必看系列
-- [[01_Fundamentals/Linear_Algebra]] — 线性代数知识库
-- [[03_Deep_Learning/Neural_Network_Core]] — 神经网络核心
+- [[业界观点/3Blue1Brown/youtube_channel]] — 3Blue1Brown 必看系列
+- [[数学基础/Linear_Algebra]] — 线性代数知识库
+- [[深度学习/Neural_Network_Core]] — 神经网络核心
 - [[90_Learn/guides/ai_engineering_roadmap_2026]] — AI 工程学习路线
 
 ---
@@ -80,4 +80,4 @@ aliases:
 
 ## Related
 
-- [[19_Talks/README|AI 名人演讲与观点]]
+- [[业界观点/README|AI 名人演讲与观点]]

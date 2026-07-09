@@ -14,7 +14,7 @@ relationships:
   - target: "_concepts/agent-loop"
     type: applied_in
 sources:
-  - 15_Agent_Production/Agent_Foundations/
+  - Agent/Agent_Foundations/
 summary: "GoT（Graph of Thoughts）是 ToT 的扩展，将推理过程建模为图（而非树），支持节点聚合、循环回溯、跨分支合并；适合创意写作、多文档摘要、复杂规划。"
 lifecycle: stable
 tier: supporting

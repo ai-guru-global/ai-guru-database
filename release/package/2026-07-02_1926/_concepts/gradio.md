@@ -8,7 +8,7 @@ relationships:
   - target: "_concepts/modelscope"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "Gradio 是 HuggingFace 旗下的开源 ML 应用框架，几行 Python 代码即可为模型创建 Web UI。AI Stack 应用中心和百炼专属版均可使用 Gradio 构建模型体验界面。"
 provenance:
   extracted: 0.20
@@ -109,4 +109,4 @@ demo.launch()
 
 - [[_concepts/ollama]] — Ollama 本地推理
 - [[_concepts/modelscope]] — ModelScope 魔搭社区
-- [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析

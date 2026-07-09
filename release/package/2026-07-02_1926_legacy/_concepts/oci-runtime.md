@@ -16,8 +16,8 @@ relationships:
 - target: '_concepts/model-deployment'
   type: enables
 sources:
-- 12_Architecture_Infrastructure/Hardware_Compute/CDI_Deep_Dive.md
-- 12_Architecture_Infrastructure/CDI_for_dummy.md
+- 架构基建/Hardware_Compute/CDI_Deep_Dive.md
+- 架构基建/CDI_for_dummy.md
 summary: OCI Runtime Spec 是开放容器倡议制定的「容器在运行时到底是什么」的标准——用一份 config.json 描述容器的根文件系统、进程、mounts、linux.devices 与 hooks。它是 runc/crun 等低层运行时的实现依据，也是 CDI 注入设备时的最终落点:CDI 的 containerEdits 被高层运行时合并进这份 config.json，再由 runc 据此创建容器。
 provenance:
   extracted: 0.5
@@ -98,6 +98,6 @@ OCI Runtime Spec (容器运行时标准)
 - [[_concepts/cdi|CDI（注入 config.json 的预处理层）]]
 - [[_concepts/dra|DRA（分配层）]]
 - [[_concepts/gpu-operator|NVIDIA GPU Operator]]
-- [[12_Architecture_Infrastructure/Hardware_Compute/CDI_Deep_Dive|CDI 深度解析]]
-- [[12_Architecture_Infrastructure/Hardware_Compute/DRA_Deep_Dive|DRA 深度解析]]
+- [[架构基建/Hardware_Compute/CDI_Deep_Dive|CDI 深度解析]]
+- [[架构基建/Hardware_Compute/DRA_Deep_Dive|DRA 深度解析]]
 - [[_concepts/llm-infrastructure|LLM 基础设施]]

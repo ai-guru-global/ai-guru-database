@@ -88,7 +88,7 @@ for x, y in dataloader:
 
 ## Related
 
-- [[03_Deep_Learning/README|深度学习]] — 章节主页
-- [[03_Deep_Learning/DL_Frameworks/tensorflow_overview|TensorFlow 概览]] — 竞品对比
-- [[07_Model_Training/README|模型训练]] — PyTorch 训练工程实践
-- [[05_NLP_LLMs/Fine_tuning_Techniques|微调技术]] — Hugging Face + PyTorch 微调
+- [[深度学习/README|深度学习]] — 章节主页
+- [[深度学习/DL_Frameworks/tensorflow_overview|TensorFlow 概览]] — 竞品对比
+- [[模型训练/README|模型训练]] — PyTorch 训练工程实践
+- [[大模型/Fine_tuning_Techniques|微调技术]] — Hugging Face + PyTorch 微调

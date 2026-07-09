@@ -10,7 +10,7 @@ relationships:
   - target: "_concepts/ai-for-science"
     type: enables
 sources:
-  - 03_Deep_Learning/Graph_Neural_Networks
+  - 深度学习/Graph_Neural_Networks
 summary: "图神经网络处理图结构数据（社交网络、分子、知识图谱），核心思想是消息传递：节点聚合邻居信息并更新自身表示。主要变体包括 GCN/GAT/GraphSAGE/GIN/Graph Transformer。"
 provenance:
   extracted: 0.45
@@ -143,7 +143,7 @@ Weisfeiler-Lehman (WL) 图同构测试是 GNN 表达能力的理论上限：
 
 ## Related
 
-- [[03_Deep_Learning/Graph_Neural_Networks/README]] — 图神经网络深度解析
+- [[深度学习/Graph_Neural_Networks/README]] — 图神经网络深度解析
 - [[_concepts/neural-networks]] — 神经网络基础
 - [[_concepts/transformer-architecture]] — Transformer（Graph Transformer 基础）
 - [[_concepts/ai-for-science]] — AI for Science（GNN 在分子/材料中的核心应用）

@@ -10,8 +10,8 @@ relationships:
   - target: "_concepts/agent-reflection"
     type: coordinates
 sources:
-  - 15_Agent_Production/README.md
-  - 15_Agent_Production/Agent_Workflow/README.md
+  - Agent/README.md
+  - Agent/Agent_Workflow/README.md
 summary: "多 Agent 编排让多个专精 Agent 协作完成复杂任务。从'顺序流水线'到'并行 swarm'再到'层级委派'，编排模式决定协作效率。代表框架：CrewAI、AutoGen、LangGraph、OpenAI Swarm。"
 provenance:
   extracted: 0.65
@@ -98,5 +98,5 @@ aliases:
 - [[_concepts/agent-planning|Agent 规划]] — Supervisor 的规划
 - [[_concepts/agent-reflection|Agent 反思]] — Worker 的自我修正
 - [[_concepts/agent-loop|Agent Loop]] — 单 Agent 的执行循环
-- [[15_Agent_Production/README|Agent 生产部署]] — 编排实践
+- [[Agent/README|Agent 生产部署]] — 编排实践
 - [[_concepts/autogen|AutoGen]] — 编排框架

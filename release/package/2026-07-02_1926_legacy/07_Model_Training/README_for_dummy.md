@@ -188,9 +188,9 @@ aliases:
 
 ## 下一步
 
-- 想学深度学习？→ [03_Deep_Learning/README_for_dummy.md](../03_Deep_Learning/README_for_dummy.md)
-- 想学优化？→ [03_Deep_Learning/Optimization/README_for_dummy.md](../03_Deep_Learning/README_for_dummy.md)
-- 想学部署？→ [10_Deployment_Inference/README_for_dummy.md](../10_Deployment_Inference/README_for_dummy.md)
+- 想学深度学习？→ [深度学习/README_for_dummy.md](../深度学习/README_for_dummy.md)
+- 想学优化？→ [深度学习/Optimization/README_for_dummy.md](../深度学习/README_for_dummy.md)
+- 想学部署？→ [部署推理/README_for_dummy.md](../部署推理/README_for_dummy.md)
 
 ---
 
@@ -198,8 +198,8 @@ aliases:
 
 ## Related
 
-- [[07_Model_Training/Distributed_Training/Distributed_Training_2026.md|Distributed_Training_2026]]
-- [[07_Model_Training/Distributed_Training/Distributed_Training_for_dummy.md|Distributed_Training_for_dummy]]
-- [[07_Model_Training/Optimization/Mixed_Precision_Training.md|Mixed_Precision_Training]]
-- [[07_Model_Training/Model-Training-in-nutshell.md|Model-Training-in-nutshell]]
-- [[07_Model_Training/Model_Training_for_dummy.md|Model_Training_for_dummy]]
+- [[模型训练/Distributed_Training/Distributed_Training_2026.md|Distributed_Training_2026]]
+- [[模型训练/Distributed_Training/Distributed_Training_for_dummy.md|Distributed_Training_for_dummy]]
+- [[模型训练/Optimization/Mixed_Precision_Training.md|Mixed_Precision_Training]]
+- [[模型训练/Model-Training-in-nutshell.md|Model-Training-in-nutshell]]
+- [[模型训练/Model_Training_for_dummy.md|Model_Training_for_dummy]]

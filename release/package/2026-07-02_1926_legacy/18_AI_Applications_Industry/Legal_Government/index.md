@@ -7,8 +7,8 @@ updated: 2026-07-02
 
 # Legal Government
 
-This page indexes the contents of `18_AI_Applications_Industry/Legal_Government`.
+This page indexes the contents of `行业应用/Legal_Government`.
 
 ## Files
 
-- [[18_AI_Applications_Industry/Legal_Government/AI_Legal_Government_2026|AI Legal Government 2026]]
+- [[行业应用/Legal_Government/AI_Legal_Government_2026|AI Legal Government 2026]]

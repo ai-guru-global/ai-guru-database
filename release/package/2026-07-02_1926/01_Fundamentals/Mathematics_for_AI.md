@@ -15,7 +15,7 @@ sources: []
 ---
 # AI 数学手册 (Mathematics for AI Reference)
 
-> **速查手册**: 本文是公式级参考，每个公式配一行 AI 应用说明。需要系统学习请移步 [[01_Fundamentals/Math_Foundations]]。
+> **速查手册**: 本文是公式级参考，每个公式配一行 AI 应用说明。需要系统学习请移步 [[数学基础/Math_Foundations]]。
 
 ---
 
@@ -169,10 +169,10 @@ sources: []
 
 ## 快速导航
 
-- [[01_Fundamentals/Math_Foundations]] — 数学基础概览与学习路线
-- [[01_Fundamentals/Linear_Algebra/Linear_Algebra]] — 线性代数完整教程
-- [[01_Fundamentals/Probability_Statistics/Probability_Statistics]] — 概率统计完整教程
-- [[01_Fundamentals/Information_Theory/Information_Theory_Fundamentals]] — 信息论深入
+- [[数学基础/Math_Foundations]] — 数学基础概览与学习路线
+- [[数学基础/Linear_Algebra/Linear_Algebra]] — 线性代数完整教程
+- [[数学基础/Probability_Statistics/Probability_Statistics]] — 概率统计完整教程
+- [[数学基础/Information_Theory/Information_Theory_Fundamentals]] — 信息论深入
 
 ---
 

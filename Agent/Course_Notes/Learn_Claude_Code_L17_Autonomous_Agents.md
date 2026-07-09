@@ -76,5 +76,5 @@ def scan_unclaimed_tasks():
 
 - [[90_Learn/courses/share_ai/learn_claude_code]] — 完整 20 课映射
 - [[_references/learn-claude-code]] — 仓库引用索引
-- [[15_Agent_Production/Course_Notes/Learn_Claude_Code_L12_Task_System]] — 任务系统
-- [[15_Agent_Production/Course_Notes/Learn_Claude_Code_L15_Agent_Teams]] — Agent Teams
+- [[Agent/Course_Notes/Learn_Claude_Code_L12_Task_System]] — 任务系统
+- [[Agent/Course_Notes/Learn_Claude_Code_L15_Agent_Teams]] — Agent Teams

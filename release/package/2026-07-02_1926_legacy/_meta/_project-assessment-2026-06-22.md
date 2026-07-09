@@ -167,6 +167,6 @@ README(1409) → for_dummy(106) → Deep_Dive(191) → Beginner(6)
 
 ### P2 待办（未执行，留作后续）
 
-- 扩充薄弱章节（09_Testing/13_AI_Ops/06_RL）
+- 扩充薄弱章节（AI测试/AI运维/06_RL）
 - frontmatter 覆盖率提升（46%→目标 70%）
 - 05_NLP_LLMs（209 文件）拆分评估

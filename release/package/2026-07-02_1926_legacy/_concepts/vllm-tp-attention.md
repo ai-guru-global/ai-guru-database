@@ -10,7 +10,7 @@ relationships:
   - target: "_concepts/sglang"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "vLLM 中实现多 GPU 张量并行推理的核心注意力分发机制，将 QKV 投影切分到多 GPU 并行计算后聚合，是 70B+ 模型多卡推理的关键技术。"
 provenance:
   extracted: 0.50

@@ -9,18 +9,18 @@
 ### 阶段 A：目录结构治理（由主 agent 直接执行）
 
 1. **深度拉齐**：知识目录最深从 L5 压到 L3
-   - `05_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026/` → 扁平化
-   - `15_Agent_Production/Course_Notes/{Learn_Claude_Code,Microsoft_AI_Agents}/` → 扁平化
-   - `15_Agent_Production/Agent_Evaluation/demo/` → 迁出 `_projects/Agent_Evaluation/demo/`
-   - `15_Agent_Production/Agent_Evaluation/docs/{architecture,guides,api,reports}/*.md` → 上提为 L2 知识页
+   - `大模型/Fine_tuning_Techniques/PEFT_2026/` → 扁平化
+   - `Agent/Course_Notes/{Learn_Claude_Code,Microsoft_AI_Agents}/` → 扁平化
+   - `Agent/Agent_Evaluation/demo/` → 迁出 `_projects/Agent_Evaluation/demo/`
+   - `Agent/Agent_Evaluation/docs/{architecture,guides,api,reports}/*.md` → 上提为 L2 知识页
 
 2. **7 项结构治理**
    - P0：`94_Visualization/atlas/`（226 MB Vite 工程）→ `_projects/atlas/`
-   - P1：`13_AI_Ops/Observability/` 并入 `11_MLOps_Pipeline/Observability/`
-   - P1：`22_Research/` 并入 `20_Papers/` → 改名 `20_Papers_and_Research/`
-   - P2：`07_Model_Training/Fine_tuning_Strategies.md` → `05_NLP_LLMs/Fine_tuning_Techniques/`（LLM 专属）
-   - P2：`15_Agent_Production/README.md` 加 4 分组索引（能力/评测/生态/工具与学习）
-   - P2：`93_Tools/` 改名 `93_Templates/`（消除与 `_tools/` 和 `16_AI_Coding/Tools/` 的歧义）
+   - P1：`AI运维/Observability/` 并入 `MLOps/Observability/`
+   - P1：`22_Research/` 并入 `20_Papers/` → 改名 `论文精读/`
+   - P2：`模型训练/Fine_tuning_Strategies.md` → `大模型/Fine_tuning_Techniques/`（LLM 专属）
+   - P2：`Agent/README.md` 加 4 分组索引（能力/评测/生态/工具与学习）
+   - P2：`93_Tools/` 改名 `93_Templates/`（消除与 `_tools/` 和 `AI编程/Tools/` 的歧义）
    - P3：`91_Notes/` `92_Plan/` 归档到 `_meta/notes/` `_meta/plan/`
 
 3. **wikilink 批量重写**：约 170+ 处跨文件引用更新，7 类旧路径残留全部归零
@@ -32,7 +32,7 @@
 - 总页面 1225 · 已摄取源 37 · 摄取滞后 11 天
 - Token 足迹 ~4.5M（4 chars/token 启发式；`core` 占 74%）
 - Tier 分布：597 core / 577 supporting / 50 peripheral / 1 deep-dive（非标值）
-- 锚点页 Top 3：`21_Interviews/README`(123)、`21_Interviews/jobs`(110)、`15_Agent_Production/.../Evaluation_Workflow`(69)
+- 锚点页 Top 3：`面试岗位/README`(123)、`面试岗位/jobs`(110)、`Agent/.../Evaluation_Workflow`(69)
 - 桥页 Top 1：`90_Learn/guides/ai_engineering_roadmap_2026.md`（跨 66 章）
 - 孤儿页 706（按章：05=101, 15=91, 21=90, 12=52, 19=31）
 - 陈旧核心页（updated ≥90 天 且 incoming ≥5）：0

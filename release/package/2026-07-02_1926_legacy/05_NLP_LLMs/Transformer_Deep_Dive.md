@@ -31,11 +31,11 @@ aliases:
 
 ## 关联文档
 
-- [[05_NLP_LLMs/Transformer_Architecture]] — Transformer 架构详解（入门版）
-- [[05_NLP_LLMs/Transformer_Revolution/Self_Attention_Mechanism]] — Self-Attention 机制
-- [[05_NLP_LLMs/LLM_Training_Deep_Dive]] — LLM 训练深度剖析
-- [[05_NLP_LLMs/LLM_Inference_Deep_Dive]] — LLM 推理深度剖析
-- [[05_NLP_LLMs/LLM_Architecture_Evolution]] — LLM 架构演进
+- [[大模型/Transformer_Architecture]] — Transformer 架构详解（入门版）
+- [[大模型/Transformer_Revolution/Self_Attention_Mechanism]] — Self-Attention 机制
+- [[大模型/LLM_Training_Deep_Dive]] — LLM 训练深度剖析
+- [[大模型/LLM_Inference_Deep_Dive]] — LLM 推理深度剖析
+- [[大模型/LLM_Architecture_Evolution]] — LLM 架构演进
 
 ---
 
@@ -248,7 +248,7 @@ $$\text{RMSNorm}(x) = \frac{x}{\sqrt{\frac{1}{d}\sum x_i^2 + \epsilon}} \cdot \g
 | 8,192 | 67M | 128 MB | 256x |
 | 131,072 | 17.2B | 32 GB | 65,536x |
 
-平方复杂度催生了 [[kv-cache]]、[[05_NLP_LLMs/LLM_Architectures/Long_Context_Models_2026]]、稀疏注意力、[[mixture-of-experts]]、SSM/Mamba 等优化方向，详见 [[05_NLP_LLMs/LLM_Inference_Deep_Dive]]。
+平方复杂度催生了 [[kv-cache]]、[[大模型/LLM_Architectures/Long_Context_Models_2026]]、稀疏注意力、[[mixture-of-experts]]、SSM/Mamba 等优化方向，详见 [[大模型/LLM_Inference_Deep_Dive]]。
 
 ---
 

@@ -81,7 +81,7 @@ sources: []
 
 - 21 条断链 → 0 条
 - 导航表中 18 条章节级 `[[XX_Pillar]]` 转换为 `[[XX_Pillar/README]]`
-- 6 条 `14_AI_Gateway/*` 重写为 `12_Architecture_Infrastructure/AI_Gateway/*`（章节已迁移）
+- 6 条 `14_AI_Gateway/*` 重写为 `架构基建/AI_Gateway/*`（章节已迁移）
 
 ### ✅ P1-2：tier / aliases 字段批量扩展
 
@@ -224,9 +224,9 @@ python3 _tools/check_links.py . --json report.json # 输出 JSON
 | `90_Learn/guides/learning_paths_2026.md` | 32 | 引用已废弃的 `X.md`（被 `_concepts/X` 替代）|
 | `93_Templates/DOCUMENT_TEMPLATES.md` | 21 | 模板内部引用 |
 | `90_Learn/Courses/apachecn/ailearning_guide.md` | 9 | 课程指南类 |
-| `15_Agent_Production/Agent_Foundations/AI_Agents.md` | 7 | 大文件、内容迭代中 |
-| `06_Reinforcement_Learning/Deep_RL/Deep_RL.md` | 7 | 同上 |
-| 16_AI_Coding/Tools/OpenCode/* | 16 (4+4+4+4) | OpenCode 系列教程 |
+| `Agent/Agent_Foundations/AI_Agents.md` | 7 | 大文件、内容迭代中 |
+| `强化学习/Deep_RL/Deep_RL.md` | 7 | 同上 |
+| AI编程/Tools/OpenCode/* | 16 (4+4+4+4) | OpenCode 系列教程 |
 
 **剩余断链特征**：大部分是 **预存引用**（不是本次改进引入），指向从未创建的"应该存在的文件"。需要后续按章节单独治理（每章节 5-15 分钟）。
 

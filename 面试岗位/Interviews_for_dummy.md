@@ -355,9 +355,9 @@ AI 岗位 LeetCode 重点:
 
 - [面试问题库](./LLM_Platform_Engineer/question_bank.md) —— 按岗位分类的问题
 - [面试答案参考](./LLM_Platform_Engineer/interview_answers.md) —— 参考回答模板
-- [AI 基础 - 小白版](../01_Fundamentals/README_for_dummy.md) —— 补基础知识
-- [模型训练速成指南](../07_Model_Training/Model-Training-in-nutshell.md) —— 训练原理
-- [模型评估 - 小白版](../08_Model_Evaluation/Model_Evaluation_for_dummy.md) —— 评估指标
+- [AI 基础 - 小白版](../数学基础/README_for_dummy.md) —— 补基础知识
+- [模型训练速成指南](../模型训练/Model-Training-in-nutshell.md) —— 训练原理
+- [模型评估 - 小白版](../模型评估/Model_Evaluation_for_dummy.md) —— 评估指标
 
 ---
 
@@ -365,9 +365,9 @@ AI 岗位 LeetCode 重点:
 
 ## Related
 
-- [[21_Interviews/README|AI 面试准备 (Interviews)]]
-- [[21_Interviews/jobs|AI 相关岗位与工种清单]]
-- [[21_Interviews/interview_notes_template|面试复盘模板]]
-- [[21_Interviews/Machine_Learning_Engineer/question_bank|MLE 题库]]
-- [[21_Interviews/NLP_Engineer/question_bank|NLP Engineer 题库]]
-- [[21_Interviews/Data_Scientist/question_bank|Data Scientist 题库]]
+- [[面试岗位/README|AI 面试准备 (Interviews)]]
+- [[面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[面试岗位/interview_notes_template|面试复盘模板]]
+- [[面试岗位/Machine_Learning_Engineer/question_bank|MLE 题库]]
+- [[面试岗位/NLP_Engineer/question_bank|NLP Engineer 题库]]
+- [[面试岗位/Data_Scientist/question_bank|Data Scientist 题库]]

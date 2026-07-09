@@ -10,7 +10,7 @@ relationships:
   - target: "_concepts/triton-server"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "NVIDIA 开源的端到端 AI 训练与推理框架，提供 LLM/多模态模型从预训练到部署的全流程工具链，深度优化 NVIDIA GPU 生态。"
 provenance:
   extracted: 0.55

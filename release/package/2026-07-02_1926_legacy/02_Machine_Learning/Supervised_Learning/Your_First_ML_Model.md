@@ -357,18 +357,18 @@ for name, m in models.items():
 
 ## 9. 下一步
 
-- **[[03_Deep_Learning/Neural_Network_Core/Your_First_Neural_Network|你的第一个神经网络]]** — 用 PyTorch 训练神经网络
-- **[[02_Machine_Learning/ML_Algorithms_Cheatsheet|经典算法速查表]]** — 了解其他 ML 算法
-- **[[02_Machine_Learning/Feature_Engineering/Feature_Engineering_for_dummy|特征工程入门]]** — 让模型表现更好
-- **[[08_Model_Evaluation/Model_Evaluation_for_dummy|模型评估入门]]** — 深入理解准确率之外的指标
+- **[[深度学习/Neural_Network_Core/Your_First_Neural_Network|你的第一个神经网络]]** — 用 PyTorch 训练神经网络
+- **[[机器学习/ML_Algorithms_Cheatsheet|经典算法速查表]]** — 了解其他 ML 算法
+- **[[机器学习/Feature_Engineering/Feature_Engineering_for_dummy|特征工程入门]]** — 让模型表现更好
+- **[[模型评估/Model_Evaluation_for_dummy|模型评估入门]]** — 深入理解准确率之外的指标
 
 ---
 
 ## Related
 
-- [[01_Fundamentals/Python_for_AI_Basics]] — Python 语法基础
-- [[01_Fundamentals/Python_Data_Science_Toolkit]] — NumPy / Pandas / Matplotlib
-- [[01_Fundamentals/AI_Development_Environment_Setup]] — 环境配置
-- [[02_Machine_Learning/ML_Algorithms_Cheatsheet]] — 经典算法速查
+- [[数学基础/Python_for_AI_Basics]] — Python 语法基础
+- [[数学基础/Python_Data_Science_Toolkit]] — NumPy / Pandas / Matplotlib
+- [[数学基础/AI_Development_Environment_Setup]] — 环境配置
+- [[机器学习/ML_Algorithms_Cheatsheet]] — 经典算法速查
 - [[_synthesis/python-data-science-pipeline|Python × 数据科学]] — 入门到实战
 - [[_synthesis/python-first-ml-model|Python 基础 × 第一个 ML 模型]] — 从零到一的实战桥梁

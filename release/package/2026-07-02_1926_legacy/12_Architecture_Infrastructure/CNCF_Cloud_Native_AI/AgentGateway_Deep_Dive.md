@@ -16,7 +16,7 @@ aliases:
 
 > **一句话理解**: AgentGateway 是专门给 AI Agent 和 MCP 工具服务器做的反向代理网关(Rust 实现)——把 agent 调用众多工具时的鉴权/路由/限流/沙箱/可观测/协议转换(MCP↔REST↔A2A)集中起来,补齐传统 API 网关不懂 Agent 语义的短板。
 
-> 📐 **概念方法论**: AgentGateway 解决的不是"如何调 LLM"(那是推理网关的活,见 [[CNCF_Cloud_Native_AI/Envoy_AI_Gateway_Deep_Dive]]),而是"Agent 调出一打工具时,谁来统一治理这些工具调用"。理解它的前提是先理解 Agent 的协议底座——MCP(Model Context Protocol)和 A2A(Agent-to-Agent)这两个 2024-2025 兴起的开放标准(见 [[06_Reinforcement_Learning/AI_Agents/Agent_Protocols_2026]]):当工具从"应用里硬编码的函数"演变成"独立的 MCP server",agent→tool 的调用就变成了横跨多协议、多后端、需鉴权/审计的网络调用,这正是反向代理网关该接管的地方。AgentGateway 把 Higress/Alibaba 在云原生网关上的积累,平移到了 agent 这条新调用链上。
+> 📐 **概念方法论**: AgentGateway 解决的不是"如何调 LLM"(那是推理网关的活,见 [[CNCF_Cloud_Native_AI/Envoy_AI_Gateway_Deep_Dive]]),而是"Agent 调出一打工具时,谁来统一治理这些工具调用"。理解它的前提是先理解 Agent 的协议底座——MCP(Model Context Protocol)和 A2A(Agent-to-Agent)这两个 2024-2025 兴起的开放标准(见 [[强化学习/AI_Agents/Agent_Protocols_2026]]):当工具从"应用里硬编码的函数"演变成"独立的 MCP server",agent→tool 的调用就变成了横跨多协议、多后端、需鉴权/审计的网络调用,这正是反向代理网关该接管的地方。AgentGateway 把 Higress/Alibaba 在云原生网关上的积累,平移到了 agent 这条新调用链上。
 
 ---
 
@@ -573,7 +573,7 @@ policies:
 #   span6:   AgentGateway response filter        1ms
 ```
 
-这条 trace 是排障"agent 为什么慢/为什么失败"的核心——能精确区分网关开销还是后端慢。可观测体系整体方法论见 [[11_MLOps_Pipeline/Observability/LLM_Observability]]。
+这条 trace 是排障"agent 为什么慢/为什么失败"的核心——能精确区分网关开销还是后端慢。可观测体系整体方法论见 [[MLOps/Observability/LLM_Observability]]。
 
 ### 7.3 工具调用审计日志
 
@@ -679,4 +679,4 @@ A: 处于 v0.x 早期,配置 schema 仍在演进。建议:锁定版本、用声�
 - [[CNCF_Cloud_Native_AI/Envoy_AI_Gateway_Deep_Dive]] — agent→LLM 那一端的推理网关(与本篇互补)
 - [[CNCF_Cloud_Native_AI/Kgateway_Deep_Dive]] — 通用 K8s Gateway API 实现
 - [[CNCF_Cloud_Native_AI/kagent_Deep_Dive]] — 声明式 Agent 框架(其 MCP client 可指向 AgentGateway)
-- [[06_Reinforcement_Learning/AI_Agents/Agent_Protocols_2026]] — MCP / A2A 协议底座
+- [[强化学习/AI_Agents/Agent_Protocols_2026]] — MCP / A2A 协议底座

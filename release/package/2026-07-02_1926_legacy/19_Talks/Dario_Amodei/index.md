@@ -7,9 +7,9 @@ updated: 2026-07-02
 
 # Dario Amodei
 
-This page indexes the contents of `19_Talks/Dario_Amodei`.
+This page indexes the contents of `业界观点/Dario_Amodei`.
 
 ## Files
 
-- [[19_Talks/Dario_Amodei/about|About]]
-- [[19_Talks/Dario_Amodei/sayings|Sayings]]
+- [[业界观点/Dario_Amodei/about|About]]
+- [[业界观点/Dario_Amodei/sayings|Sayings]]

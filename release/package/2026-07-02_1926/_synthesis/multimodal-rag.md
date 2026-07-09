@@ -3,10 +3,10 @@ title: "多模态 × RAG: 当检索增强遇上图文音视频"
 category: -synthesis
 tags: ["multimodal", "rag", "vision-language", "retrieval", "embedding", "synthesis"]
 sources:
-  - "05_NLP_LLMs/Multimodal_Models/Native_Multimodal_Architectures"
-  - "05_NLP_LLMs/Multimodal_Models/Modality_Fusion_Mechanisms"
-  - "14_RAG_Systems/Advanced_RAG/RAG_Advanced_2026"
-  - "14_RAG_Systems/Vector_Database_for_dummy"
+  - "大模型/Multimodal_Models/Native_Multimodal_Architectures"
+  - "大模型/Multimodal_Models/Modality_Fusion_Mechanisms"
+  - "RAG系统/Advanced_RAG/RAG_Advanced_2026"
+  - "RAG系统/Vector_Database_for_dummy"
 created: 2026-06-01
 updated: 2026-06-01
 summary: "探索多模态内容（图像、视频、音频）与 RAG 系统的融合路径——从跨模态嵌入到多模态重排序，构建能'看懂'和'听懂'的知识检索系统。"
@@ -75,8 +75,8 @@ aliases:
 
 ## Related
 
-- [[05_NLP_LLMs/Multimodal_Models/Native_Multimodal_Architectures]]
-- [[05_NLP_LLMs/Multimodal_Models/Modality_Fusion_Mechanisms]]
-- [[14_RAG_Systems/Advanced_RAG/RAG_Advanced_2026]]
-- [[14_RAG_Systems/Vector_Database_for_dummy]]
+- [[大模型/Multimodal_Models/Native_Multimodal_Architectures]]
+- [[大模型/Multimodal_Models/Modality_Fusion_Mechanisms]]
+- [[RAG系统/Advanced_RAG/RAG_Advanced_2026]]
+- [[RAG系统/Vector_Database_for_dummy]]
 - [[_concepts/multimodal-vision]]

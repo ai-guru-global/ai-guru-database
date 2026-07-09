@@ -114,7 +114,7 @@ sources: []
 
 ## Related
 
-- [[21_Interviews/AI_Infrastructure_Engineer/question_bank|AI Infrastructure Engineer 题库]]
-- [[21_Interviews/README|AI 面试准备 (Interviews)]]
-- [[13_AI_Ops/SRE_Reliability/SRE_for_AI_Systems|SRE for AI Systems]]
-- [[13_AI_Ops/Incident_Response/AI_Incident_Response_Framework|AI 事故响应框架]]
+- [[面试岗位/AI_Infrastructure_Engineer/question_bank|AI Infrastructure Engineer 题库]]
+- [[面试岗位/README|AI 面试准备 (Interviews)]]
+- [[AI运维/SRE_Reliability/SRE_for_AI_Systems|SRE for AI Systems]]
+- [[AI运维/Incident_Response/AI_Incident_Response_Framework|AI 事故响应框架]]

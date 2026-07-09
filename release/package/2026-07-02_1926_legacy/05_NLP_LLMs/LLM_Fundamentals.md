@@ -36,10 +36,10 @@ aliases:
 
 | 子模块 | 核心内容 | 链接 |
 |--------|---------|------|
-| **Transformer 革命** | Self-Attention、位置编码、架构详解 | [[05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution]] |
-| **LLM 架构生态** | GPT、LLaMA、Claude、Gemini 等模型对比 | [[05_NLP_LLMs/LLM_Architectures/LLM_Architectures]] |
-| **Prompt Engineering** | Zero-shot、Few-shot、CoT、系统提示词 | [[05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering]] |
-| **微调技术** | LoRA、QLoRA、RLHF、DPO | [[05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques]] |
+| **Transformer 革命** | Self-Attention、位置编码、架构详解 | [[大模型/Transformer_Revolution/Transformer_Revolution]] |
+| **LLM 架构生态** | GPT、LLaMA、Claude、Gemini 等模型对比 | [[大模型/LLM_Architectures/LLM_Architectures]] |
+| **Prompt Engineering** | Zero-shot、Few-shot、CoT、系统提示词 | [[大模型/Prompt_Engineering/Prompt_Engineering]] |
+| **微调技术** | LoRA、QLoRA、RLHF、DPO | [[大模型/Fine_tuning_Techniques/Fine_tuning_Techniques]] |
 
 ---
 
@@ -179,9 +179,9 @@ flowchart LR
 
 ## 延伸阅读 (Further Reading)
 
-- [[05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution]] — Transformer 架构革命
-- [[05_NLP_LLMs/LLM_Architectures/LLM_Architectures]] — 主流 LLM 架构生态
-- [[05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering]] — 提示词工程实战
-- [[05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques]] — 微调技术全景
-- [[05_NLP_LLMs/LLM_Architectures/Long_Context_Models_2026]] — 长上下文模型 2026
-- [[05_NLP_LLMs/GenAI_L02_Exploring_and_Comparing_LLMs]] — LLM 对比与选型
+- [[大模型/Transformer_Revolution/Transformer_Revolution]] — Transformer 架构革命
+- [[大模型/LLM_Architectures/LLM_Architectures]] — 主流 LLM 架构生态
+- [[大模型/Prompt_Engineering/Prompt_Engineering]] — 提示词工程实战
+- [[大模型/Fine_tuning_Techniques/Fine_tuning_Techniques]] — 微调技术全景
+- [[大模型/LLM_Architectures/Long_Context_Models_2026]] — 长上下文模型 2026
+- [[大模型/GenAI_L02_Exploring_and_Comparing_LLMs]] — LLM 对比与选型

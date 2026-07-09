@@ -101,5 +101,5 @@ aliases:
 | AlpacaEval | 指令跟随 | Stanford |
 | Chatbot Arena | 人类偏好排名 | LMSYS |
 
-> **关联**: -> [[08_Model_Evaluation/README|模型评估]] | [[09_Testing/Testing_Frameworks/DeepEval_Deep_Dive|DeepEval]] | [[09_Testing/RAGAS_Deep_Dive|RAGAS]] | [[09_Testing/Testing_Frameworks/Promptfoo_Deep_Dive|Promptfoo]]
+> **关联**: -> [[模型评估/README|模型评估]] | [[AI测试/Testing_Frameworks/DeepEval_Deep_Dive|DeepEval]] | [[AI测试/RAGAS_Deep_Dive|RAGAS]] | [[AI测试/Testing_Frameworks/Promptfoo_Deep_Dive|Promptfoo]]
 

@@ -53,7 +53,7 @@ AI 技术本身是中性的，但其产业价值只在特定场景中释放。�
 
 ## Related
 
-- [[18_AI_Applications_Industry/README]]
+- [[行业应用/README]]
 - [[_concepts/ai-technology-landscape]]
-- [[12_Architecture_Infrastructure/Architecture_Overview/AI_Infrastructure_2026]]
-- [[17_Ethics_Safety/AI_Governance_Compliance_2026]]
+- [[架构基建/Architecture_Overview/AI_Infrastructure_2026]]
+- [[伦理安全/AI_Governance_Compliance_2026]]

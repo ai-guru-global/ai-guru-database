@@ -352,4 +352,4 @@ Skills 是**包含指令、脚本和资源的文件夹**，Claude 在需要时�
 - [[LLM_Fundamentals]] - 大语言模型基础知识
 - [[Claude_Code_Deep_Dive]] - Claude Code 深度解析
 - [[Claude_Agent_Architecture]] - Claude Agent 架构设计
-- [[15_Agent_Production/Course_Notes/Learn_Claude_Code_L19_MCP_Plugin|L19 MCP Plugin]] - MCP 外部工具发现与命名空间
+- [[Agent/Course_Notes/Learn_Claude_Code_L19_MCP_Plugin|L19 MCP Plugin]] - MCP 外部工具发现与命名空间

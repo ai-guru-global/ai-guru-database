@@ -65,12 +65,12 @@ TTC Scaling 引入新的生产决策：简单问题单次推理快速响应，�
 
 ## 推荐阅读
 
-- [[05_NLP_LLMs/Test_Time_Compute_Scaling_2026|Test-Time Compute Scaling 2026: 推理时计算扩展的生产实践]] — 最完整的技术与生产落地指南
-- [[05_NLP_LLMs/LLM_Production_Deployment_Runbook|LLM 生产部署 Runbook]] — 推理服务的部署、监控与容量规划
+- [[大模型/Test_Time_Compute_Scaling_2026|Test-Time Compute Scaling 2026: 推理时计算扩展的生产实践]] — 最完整的技术与生产落地指南
+- [[大模型/LLM_Production_Deployment_Runbook|LLM 生产部署 Runbook]] — 推理服务的部署、监控与容量规划
 - [[_concepts/reasoning-models|推理模型]] — o1/o3/R1 等推理模型的核心原理
 - [[_concepts/cot-react-reasoning-prompt|CoT / ReAct / ToT — 推理时 Prompt 技巧]] — 不动参数的推理增强方法
-- [[06_Reinforcement_Learning/GRPO_Training_Deep_Dive|GRPO 训练深度指南]] — DeepSeek-R1 背后的强化学习训练方法
-- [[07_Model_Training/Training_Cost_Optimization_and_FinOps_2026|训练成本优化与 FinOps 2026]] — AI 成本治理框架
-- [[08_Model_Evaluation/LLM_Evaluation_2026|LLM 评测 2026]] — 如何评测 TTC Scaling 的效果
-- [[12_Architecture_Infrastructure/AI_SRE_Runbook|AI SRE Runbook]] — AI 系统的可靠性运维
-- [[15_Agent_Production/Agent_Production_Deployment_Runbook|Agent 生产部署 Runbook]] — Agent 场景下的推理扩展与部署
+- [[强化学习/GRPO_Training_Deep_Dive|GRPO 训练深度指南]] — DeepSeek-R1 背后的强化学习训练方法
+- [[模型训练/Training_Cost_Optimization_and_FinOps_2026|训练成本优化与 FinOps 2026]] — AI 成本治理框架
+- [[模型评估/LLM_Evaluation_2026|LLM 评测 2026]] — 如何评测 TTC Scaling 的效果
+- [[架构基建/AI_SRE_Runbook|AI SRE Runbook]] — AI 系统的可靠性运维
+- [[Agent/Agent_Production_Deployment_Runbook|Agent 生产部署 Runbook]] — Agent 场景下的推理扩展与部署

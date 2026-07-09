@@ -8,9 +8,9 @@ sources: []
 
 # AI Product Manager
 
-This page indexes the contents of `21_Interviews/AI_Product_Manager`.
+This page indexes the contents of `面试岗位/AI_Product_Manager`.
 
 ## Files
 
 - AI Product Manager 2
-- [[21_Interviews/AI_Product_Manager/AI_Product_Manager|AI Product Manager]]
+- [[面试岗位/AI_Product_Manager/AI_Product_Manager|AI Product Manager]]

@@ -8,9 +8,9 @@ sources: []
 
 # Ilya Sutskever
 
-This page indexes the contents of `19_Talks/Ilya_Sutskever`.
+This page indexes the contents of `业界观点/Ilya_Sutskever`.
 
 ## Files
 
-- [[19_Talks/Ilya_Sutskever/about|About]]
-- [[19_Talks/Ilya_Sutskever/sayings|Sayings]]
+- [[业界观点/Ilya_Sutskever/about|About]]
+- [[业界观点/Ilya_Sutskever/sayings|Sayings]]

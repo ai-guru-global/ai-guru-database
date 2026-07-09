@@ -14,7 +14,7 @@ relationships:
   - target: "_concepts/vector-database"
     type: uses
 sources:
-  - 14_RAG_Systems/RAG_Frameworks/LlamaIndex_Deep_Dive.md
+  - RAG系统/RAG_Frameworks/LlamaIndex_Deep_Dive.md
 summary: "LlamaIndex 是面向 LLM 应用的数据框架，专注于数据摄取、索引、检索和 RAG。它提供 Document、Index、Query Engine、Agent 等抽象，是构建企业知识库和检索增强生成系统的核心工具。"
 provenance:
   extracted: 0.8
@@ -90,7 +90,7 @@ aliases:
 
 ## Related
 
-- [[14_RAG_Systems/RAG_Frameworks/LlamaIndex_Deep_Dive]] — LlamaIndex 深度解析
+- [[RAG系统/RAG_Frameworks/LlamaIndex_Deep_Dive]] — LlamaIndex 深度解析
 - [[_concepts/rag-patterns]] — RAG
 - [[_concepts/vector-database]] — 向量数据库
 - [[_concepts/langchain]] — LangChain

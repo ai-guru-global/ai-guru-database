@@ -526,8 +526,8 @@ flowchart TB
 ## 🔗 延伸阅读
 
 - 想快速复习？看 [**模型训练速成指南**](./Model-Training-in-nutshell.md)
-- 想了解机器学习基础？看 [**02 机器学习基础**](../02_Machine_Learning/README.md)
-- 想了解神经网络原理？看 [**03 深度学习基础**](../03_Deep_Learning/README.md)
+- 想了解机器学习基础？看 [**02 机器学习基础**](../机器学习/README.md)
+- 想了解神经网络原理？看 [**03 深度学习基础**](../深度学习/README.md)
 
 ---
 
@@ -535,8 +535,8 @@ flowchart TB
 
 ## Related
 
-- [[07_Model_Training/Distributed_Training/Distributed_Training_2026]] — Distributed Training 2026 (共享: distributed-training, fsdp, model-training, optimization)
-- [[07_Model_Training/Distributed_Training/Distributed_Training_for_dummy]] — 分布式训练 - 小白版 (共享: distributed-training, fsdp, model-training, optimization)
-- [[07_Model_Training/Optimization/Mixed_Precision_Training]] — 混合精度训练 (Mixed Precision Training) (共享: distributed-training, fsdp, model-training, optimization)
-- [[07_Model_Training/Model-Training-in-nutshell]] — 模型训练速成指南 (共享: distributed-training, fsdp, model-training, optimization)
-- [[07_Model_Training/README_for_dummy.md|README_for_dummy]]
+- [[模型训练/Distributed_Training/Distributed_Training_2026]] — Distributed Training 2026 (共享: distributed-training, fsdp, model-training, optimization)
+- [[模型训练/Distributed_Training/Distributed_Training_for_dummy]] — 分布式训练 - 小白版 (共享: distributed-training, fsdp, model-training, optimization)
+- [[模型训练/Optimization/Mixed_Precision_Training]] — 混合精度训练 (Mixed Precision Training) (共享: distributed-training, fsdp, model-training, optimization)
+- [[模型训练/Model-Training-in-nutshell]] — 模型训练速成指南 (共享: distributed-training, fsdp, model-training, optimization)
+- [[模型训练/README_for_dummy.md|README_for_dummy]]

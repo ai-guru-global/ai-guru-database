@@ -141,7 +141,7 @@ description: Deploy a Spring Boot application. Use when the user wants to deploy
 
 Spring AI 框架的深度技术文档（ChatClient、Advisor、RAG、MCP、Observability 等）已迁移至：
 
-📄 [Java 生态 AI / Spring AI 深度解析](../../01_Fundamentals/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md)
+📄 [Java 生态 AI / Spring AI 深度解析](../../数学基础/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md)
 
 ---
 
@@ -149,12 +149,12 @@ Spring AI 框架的深度技术文档（ChatClient、Advisor、RAG、MCP、Obser
 
 - [Agent Skills 深度解析](./Agent_Skills_Deep_Dive.md) — Agent Skills 完整规范
 - [Agent Skills 实战指南](./Agent_Skills_Practical_Guide.md) — 创建和优化 Skill
-- [Spring AI 架构设计](../../12_Architecture_Infrastructure/Architecture_Overview/Spring_AI_Architecture)
-- [Spring AI RAG 深度解析](../../14_RAG_Systems/RAG_Frameworks/Spring_AI_RAG_Deep_Dive.md)
+- [Spring AI 架构设计](../../架构基建/Architecture_Overview/Spring_AI_Architecture)
+- [Spring AI RAG 深度解析](../../RAG系统/RAG_Frameworks/Spring_AI_RAG_Deep_Dive.md)
 
 ## Related
 
-- [[15_Agent_Production/Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
-- [[15_Agent_Production/Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
-- [[15_Agent_Production/Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
-- [[15_Agent_Production/Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)
+- [[Agent/Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
+- [[Agent/Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[Agent/Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[Agent/Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)

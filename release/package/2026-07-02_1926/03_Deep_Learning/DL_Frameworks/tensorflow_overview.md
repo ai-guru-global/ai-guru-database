@@ -85,7 +85,7 @@ open('model.tflite', 'wb').write(tflite_model)
 
 ## Related
 
-- [[03_Deep_Learning/README|深度学习]] — 章节主页
-- [[03_Deep_Learning/DL_Frameworks/pytorch_overview|PyTorch 概览]] — 竞品对比
-- [[10_Deployment_Inference/README|部署与推理]] — TF Serving/TF Lite 部署
-- [[11_MLOps_Pipeline/README|MLOps 流水线]] — TF 端到端工具链
+- [[深度学习/README|深度学习]] — 章节主页
+- [[深度学习/DL_Frameworks/pytorch_overview|PyTorch 概览]] — 竞品对比
+- [[部署推理/README|部署与推理]] — TF Serving/TF Lite 部署
+- [[MLOps/README|MLOps 流水线]] — TF 端到端工具链

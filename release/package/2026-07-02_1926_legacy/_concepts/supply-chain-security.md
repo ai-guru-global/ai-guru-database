@@ -44,4 +44,4 @@ relationships:
 
 - [[_concepts/container-security|Container Security]]
 - [[_concepts/model-security|Model Security]]
-- [[12_Architecture_Infrastructure/Security/Container_and_Supply_Chain_Security_for_AI|容器与供应链安全 for AI]]
+- [[架构基建/Security/Container_and_Supply_Chain_Security_for_AI|容器与供应链安全 for AI]]

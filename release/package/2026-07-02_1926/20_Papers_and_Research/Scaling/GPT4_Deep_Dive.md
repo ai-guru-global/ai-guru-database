@@ -736,15 +736,15 @@ response = openai.chat.completions.create(
 
 | 相关文档 | 关系 | 详见 |
 |---------|------|------|
-| GPT-3 Deep Dive | GPT-4 的前代基础 | [GPT3_Deep_Dive.md](20_Papers_and_Research/Scaling/GPT3_Deep_Dive.md) |
-| OpenAI Deep Dive | OpenAI 公司全景 | [../05_NLP_LLMs/Global_LLM_Ecosystem/OpenAI_Deep_Dive.md](05_NLP_LLMs/Global_LLM_Ecosystem/OpenAI_Deep_Dive.md) |
-| MoE Deep Dive | GPT-4 推测架构 | [Mixture_of_Experts_Deep_Dive.md](20_Papers_and_Research/Architecture/Mixture_of_Experts_Deep_Dive.md) |
-| RLHF & DPO | 对齐方法 | [RLHF_DPO_Deep_Dive.md](20_Papers_and_Research/Alignment/RLHF_DPO_Deep_Dive.md) |
-| Scaling Laws | 规模扩展理论 | [Scaling_Laws_Deep_Dive.md](20_Papers_and_Research/Scaling/Scaling_Laws_Deep_Dive.md) |
-| DeepSeek-V3 | 开源追赶者 | [DeepSeek_V3_Technical_Report.md](20_Papers_and_Research/Frontier/DeepSeek_V3_Technical_Report.md) |
-| 多模态模型架构 | GPT-4o 原生多模态 | [../05_NLP_LLMs/Multimodal_Models/Multimodal_Architectures_2026.md](05_NLP_LLMs/Multimodal_Models/Multimodal_Architectures_2026.md) |
-| GRPO 与新对齐方法 | GPT-4 之后的对齐演进 | [../07_Model_Training/GRPO_and_New_Alignment_Methods.md](07_Model_Training/Alignment/GRPO_and_New_Alignment_Methods.md) |
-| AI Agent 架构 | 基于 GPT-4 的 Agent 开发 | [../06_Reinforcement_Learning/AI_Agents/](../06_Reinforcement_Learning/AI_Agents/) |
+| GPT-3 Deep Dive | GPT-4 的前代基础 | [GPT3_Deep_Dive.md](论文精读/Scaling/GPT3_Deep_Dive.md) |
+| OpenAI Deep Dive | OpenAI 公司全景 | [../大模型/Global_LLM_Ecosystem/OpenAI_Deep_Dive.md](大模型/Global_LLM_Ecosystem/OpenAI_Deep_Dive.md) |
+| MoE Deep Dive | GPT-4 推测架构 | [Mixture_of_Experts_Deep_Dive.md](论文精读/Architecture/Mixture_of_Experts_Deep_Dive.md) |
+| RLHF & DPO | 对齐方法 | [RLHF_DPO_Deep_Dive.md](论文精读/Alignment/RLHF_DPO_Deep_Dive.md) |
+| Scaling Laws | 规模扩展理论 | [Scaling_Laws_Deep_Dive.md](论文精读/Scaling/Scaling_Laws_Deep_Dive.md) |
+| DeepSeek-V3 | 开源追赶者 | [DeepSeek_V3_Technical_Report.md](论文精读/Frontier/DeepSeek_V3_Technical_Report.md) |
+| 多模态模型架构 | GPT-4o 原生多模态 | [../大模型/Multimodal_Models/Multimodal_Architectures_2026.md](大模型/Multimodal_Models/Multimodal_Architectures_2026.md) |
+| GRPO 与新对齐方法 | GPT-4 之后的对齐演进 | [../模型训练/GRPO_and_New_Alignment_Methods.md](模型训练/Alignment/GRPO_and_New_Alignment_Methods.md) |
+| AI Agent 架构 | 基于 GPT-4 的 Agent 开发 | [../强化学习/AI_Agents/](../强化学习/AI_Agents/) |
 
 ---
 
@@ -812,4 +812,4 @@ flowchart TB
 
 ## Related
 
-- [[20_Papers_and_Research/README|22 经典与必读 AI 论文清单 (Essential AI Papers)]]
+- [[论文精读/README|22 经典与必读 AI 论文清单 (Essential AI Papers)]]

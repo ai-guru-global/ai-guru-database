@@ -325,9 +325,9 @@ DeepSeek 的创新：用组内相对排名替代奖励模型
 
 ## 相关阅读
 
-- [[06_Reinforcement_Learning/RL-in-nutshell]] — 强化学习速览
-- [[06_Reinforcement_Learning/README_for_dummy]] — 强化学习入门
-- [[06_Reinforcement_Learning/Deep_RL/Deep_RL]] — 深度强化学习
-- [[07_Model_Training/Alignment/TRL_RLHF_DPO_Guide]] — RLHF/DPO 微调指南
-- [[20_Papers_and_Research/RL/DQN_Deep_Dive]] — DQN 论文深度解读
-- [[20_Papers_and_Research/Alignment/RLHF_DPO_Deep_Dive]] — RLHF 与 DPO 深度解读
+- [[强化学习/RL-in-nutshell]] — 强化学习速览
+- [[强化学习/README_for_dummy]] — 强化学习入门
+- [[强化学习/Deep_RL/Deep_RL]] — 深度强化学习
+- [[模型训练/Alignment/TRL_RLHF_DPO_Guide]] — RLHF/DPO 微调指南
+- [[论文精读/RL/DQN_Deep_Dive]] — DQN 论文深度解读
+- [[论文精读/Alignment/RLHF_DPO_Deep_Dive]] — RLHF 与 DPO 深度解读

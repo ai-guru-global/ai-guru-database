@@ -188,7 +188,7 @@ CT 和 MRI:
 
 - 想深入技术？→ [3D_Vision.md](./3D_Vision.md)
 - 想学 2D 视觉？→ [图像分类与检测](../Image_Classification_Detection/Image_Classification_Detection_for_dummy.md)
-- 想学深度学习？→ [神经网络核心 - 小白版](../../03_Deep_Learning/Neural_Network_Core/Neural_Network_Core_for_dummy.md)
+- 想学深度学习？→ [神经网络核心 - 小白版](../../深度学习/Neural_Network_Core/Neural_Network_Core_for_dummy.md)
 
 ---
 

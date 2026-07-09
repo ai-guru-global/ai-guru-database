@@ -210,10 +210,10 @@ FP8在H100/H200上原生支持，几乎无损。AWQ/GPTQ适合消费级GPU部署
 
 ## 来源
 
-- 01_Fundamentals/AI_Hardware/AI_Hardware_2026.md
+- 数学基础/AI_Hardware/AI_Hardware_2026.md
 - NVIDIA Data Center GPUs 官方文档
 - MLPerf Inference 基准测试
 - Artificial time-series-analysis 第三方性能对比
 ## Related
 
-- [[00_AI_Introduction/AI_Technology_Landscape.md]] — AI 技术全景
+- [[AI入门/AI_Technology_Landscape.md]] — AI 技术全景

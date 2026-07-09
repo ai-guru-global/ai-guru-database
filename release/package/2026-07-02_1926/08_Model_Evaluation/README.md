@@ -50,15 +50,15 @@ sources: []
 ## 与其他章节的关联
 
 ### 前置知识
-- [机器学习](../02_Machine_Learning/README.md) — 偏差-方差权衡、过拟合概念
-- [概率统计](../01_Fundamentals/Probability_Statistics/Probability_Statistics.md) — 统计检验、置信区间
-- [模型训练](../07_Model_Training/) — 训练过程与评估的关系
+- [机器学习](../机器学习/README.md) — 偏差-方差权衡、过拟合概念
+- [概率统计](../数学基础/Probability_Statistics/Probability_Statistics.md) — 统计检验、置信区间
+- [模型训练](../模型训练/) — 训练过程与评估的关系
 
 ### 进阶方向
-- [MLOps 流水线](../11_MLOps_Pipeline/) — 评估自动化和持续监控
-- [测试](../09_Testing/README.md) — AI 系统测试框架
-- [AI Ops](../13_AI_Ops/README.md) — 模型性能监控与告警
-- [价值对齐](../17_Ethics_Safety/Value_Alignment/Value_Alignment.md) — 公平性评估
+- [MLOps 流水线](../MLOps/) — 评估自动化和持续监控
+- [测试](../AI测试/README.md) — AI 系统测试框架
+- [AI Ops](../AI运维/README.md) — 模型性能监控与告警
+- [价值对齐](../伦理安全/Value_Alignment/Value_Alignment.md) — 公平性评估
 
 ---
 
@@ -75,35 +75,35 @@ sources: []
 *本章内容持续建设中。*
 
 ## Related
-- [[08_Model_Evaluation/Benchmarks/LLM_Benchmark_Suite_2026|LLM Benchmark Suite 2026 — 大语言模型评测基准全览]]
-- [[08_Model_Evaluation/Benchmarks/Agentic_Benchmark_Guide|Agentic Benchmarks — AI Agent 评测全景指南]]
-- [[08_Model_Evaluation/Evaluation_Tools/LLM_as_Judge_Deep_Dive|LLM-as-Judge 深度解析 (LLM-as-Judge Deep Dive)]]
-- [[08_Model_Evaluation/Evaluation-in-nutshell|模型评估速成指南]]
-- [[08_Model_Evaluation/Evaluation_Tools/Online_Evaluation|在线评估 (Online Evaluation)]]
-- [[08_Model_Evaluation/Fairness_Evaluation_for_dummy|公平性评估 - 小白版]]
-- [[08_Model_Evaluation/Evaluation_Automation_2026|自动化模型评估 2026 (Evaluation Automation)]]
-- [[08_Model_Evaluation/README_for_dummy|08 模型评估 — 小白版 📝]]
-- [[08_Model_Evaluation/Benchmarks/LLM_Benchmarks_for_dummy|LLM 评估与测试大白话]]
+- [[模型评估/Benchmarks/LLM_Benchmark_Suite_2026|LLM Benchmark Suite 2026 — 大语言模型评测基准全览]]
+- [[模型评估/Benchmarks/Agentic_Benchmark_Guide|Agentic Benchmarks — AI Agent 评测全景指南]]
+- [[模型评估/Evaluation_Tools/LLM_as_Judge_Deep_Dive|LLM-as-Judge 深度解析 (LLM-as-Judge Deep Dive)]]
+- [[模型评估/Evaluation-in-nutshell|模型评估速成指南]]
+- [[模型评估/Evaluation_Tools/Online_Evaluation|在线评估 (Online Evaluation)]]
+- [[模型评估/Fairness_Evaluation_for_dummy|公平性评估 - 小白版]]
+- [[模型评估/Evaluation_Automation_2026|自动化模型评估 2026 (Evaluation Automation)]]
+- [[模型评估/README_for_dummy|08 模型评估 — 小白版 📝]]
+- [[模型评估/Benchmarks/LLM_Benchmarks_for_dummy|LLM 评估与测试大白话]]
 - [[_concepts/bbh|BBH]]
 - [[_concepts/llm-arena|LLM Arena]]
 - [[_concepts/red-teaming|红队测试]]
 - [[_concepts/ci-integrated-evaluation|CI 集成评估]]
 - [[_concepts/ab-testing-framework|A/B 测试框架]]
 
-- [[08_Model_Evaluation/Model_Evaluation]] — 模型评估 (Model Evaluation) (共享: ab-testing, benchmark, metrics, model-evaluation)
-- [[08_Model_Evaluation/Evaluation_Tools/Online_Evaluation.md|Online_Evaluation]]
-- [[08_Model_Evaluation/Fairness_Evaluation_for_dummy.md|Fairness_Evaluation_for_dummy]]
-- [[08_Model_Evaluation/Evaluation_Automation_2026.md|Evaluation_Automation_2026]]
-- [[08_Model_Evaluation/README_for_dummy.md|README_for_dummy]]
-- [[08_Model_Evaluation/Benchmarks/Multimodal_Evaluation_Benchmarks|Multimodal_Evaluation_Benchmarks]]
-- [[08_Model_Evaluation/Benchmarks/Long_Context_Evaluation|Long_Context_Evaluation]]
+- [[模型评估/Model_Evaluation]] — 模型评估 (Model Evaluation) (共享: ab-testing, benchmark, metrics, model-evaluation)
+- [[模型评估/Evaluation_Tools/Online_Evaluation.md|Online_Evaluation]]
+- [[模型评估/Fairness_Evaluation_for_dummy.md|Fairness_Evaluation_for_dummy]]
+- [[模型评估/Evaluation_Automation_2026.md|Evaluation_Automation_2026]]
+- [[模型评估/README_for_dummy.md|README_for_dummy]]
+- [[模型评估/Benchmarks/Multimodal_Evaluation_Benchmarks|Multimodal_Evaluation_Benchmarks]]
+- [[模型评估/Benchmarks/Long_Context_Evaluation|Long_Context_Evaluation]]
 
 ## 本期新增
 
-- [[08_Model_Evaluation/Benchmarks/Multimodal_Evaluation_Benchmarks|Multimodal Evaluation Benchmarks]]
-- [[08_Model_Evaluation/Benchmarks/Long_Context_Evaluation|Long Context Evaluation]]
+- [[模型评估/Benchmarks/Multimodal_Evaluation_Benchmarks|Multimodal Evaluation Benchmarks]]
+- [[模型评估/Benchmarks/Long_Context_Evaluation|Long Context Evaluation]]
 
 ## 新增页面
 
-- [[08_Model_Evaluation/Evaluation_Tools/LLM_as_Judge_Guide|LLM-as-Judge 评估指南]]
-- [[08_Model_Evaluation/Unified_Benchmark_Comparison|统一 Benchmark 对比表]]
+- [[模型评估/Evaluation_Tools/LLM_as_Judge_Guide|LLM-as-Judge 评估指南]]
+- [[模型评估/Unified_Benchmark_Comparison|统一 Benchmark 对比表]]

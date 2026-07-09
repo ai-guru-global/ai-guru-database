@@ -137,7 +137,7 @@ aliases:
 
 ### 3.3 Transformer
 
-详见 [[05_NLP_LLMs/Transformer_Architecture]]
+详见 [[大模型/Transformer_Architecture]]
 
 ```
 核心思想: 自注意力机制，并行处理序列
@@ -189,7 +189,7 @@ aliases:
 
 ### 3.6 扩散模型 (Diffusion Models)
 
-详见 [[04_Computer_Vision/Generative_Models/Diffusion_Models_Deep_Dive]]
+详见 [[计算机视觉/Generative_Models/Diffusion_Models_Deep_Dive]]
 
 ```
 前向过程: 数据 → 逐步加噪 → 纯噪声
@@ -273,7 +273,7 @@ BF16 vs FP16:
 
 ### 5.1 深度学习框架选型
 
-详见 [[03_Deep_Learning/DL_Frameworks/DL_Frameworks]]
+详见 [[深度学习/DL_Frameworks/DL_Frameworks]]
 
 ```
 2026 年主流:
@@ -291,7 +291,7 @@ BF16 vs FP16:
 
 ### 5.2 GPU 选型
 
-详见 [[01_Fundamentals/AI_Hardware/NVIDIA_AMD_GPU_Deep_Dive]]
+详见 [[数学基础/AI_Hardware/NVIDIA_AMD_GPU_Deep_Dive]]
 
 ```
 训练:
@@ -406,10 +406,10 @@ Chinchilla Scaling Laws (2022):
 
 ## 相关阅读
 
-- [[03_Deep_Learning/Neural_Network_Core/Neural_Network_Core]] — 神经网络核心
-- [[03_Deep_Learning/Neural_Network_Core/Attention_Mechanisms_Deep_Dive]] — 注意力机制
-- [[03_Deep_Learning/Transfer_Learning]] — 迁移学习
-- [[03_Deep_Learning/DL_Frameworks/DL_Frameworks]] — 深度学习框架
-- [[03_Deep_Learning/Optimization/Optimization]] — 优化技术
-- [[05_NLP_LLMs/Transformer_Architecture]] — Transformer 架构
-- [[04_Computer_Vision/ViT_Deep_Dive]] — Vision Transformer
+- [[深度学习/Neural_Network_Core/Neural_Network_Core]] — 神经网络核心
+- [[深度学习/Neural_Network_Core/Attention_Mechanisms_Deep_Dive]] — 注意力机制
+- [[深度学习/Transfer_Learning]] — 迁移学习
+- [[深度学习/DL_Frameworks/DL_Frameworks]] — 深度学习框架
+- [[深度学习/Optimization/Optimization]] — 优化技术
+- [[大模型/Transformer_Architecture]] — Transformer 架构
+- [[计算机视觉/ViT_Deep_Dive]] — Vision Transformer

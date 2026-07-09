@@ -8,7 +8,7 @@ relationships:
   - target: "_concepts/agent-evaluation"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "MLflow 是 Databricks 开源的 ML 生命周期管理平台——提供实验追踪、模型注册、模型部署和项目复现。是 MLOps 领域最成熟的开源方案，LLM 时代也扩展了 LLM 评估功能。"
 provenance:
   extracted: 0.20

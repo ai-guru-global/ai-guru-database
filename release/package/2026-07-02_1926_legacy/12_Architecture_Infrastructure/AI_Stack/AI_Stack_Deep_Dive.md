@@ -819,14 +819,14 @@ AI Stack 一体机交付后，日常生产环境涉及容器运行时、GPU 监�
 
 ## Related
 
-- [[12_Architecture_Infrastructure/Architecture_Overview/AI_Infrastructure_2026]] — AI 基础设施全景
-- [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive]] — vLLM 推理框架
-- [[10_Deployment_Inference/Inference_Engines/SGLang_Deep_Dive]] — SGLang 推理框架
-- [[05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Strategies]] — 模型微调策略
-- [[14_RAG_Systems/Advanced_RAG/RAG_Advanced_2026]] — RAG 高级技术
-- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/README]] — 中国大模型生态
-- [[10_Deployment_Inference/Caching/Speculative_Decoding_Advanced_2026]] — 投机解码高级技术（MTP 相关）
-- [[10_Deployment_Inference/Caching/Prompt_Caching_and_KV_Cache_Optimization]] — KV Cache 优化全景
+- [[架构基建/Architecture_Overview/AI_Infrastructure_2026]] — AI 基础设施全景
+- [[部署推理/Inference_Engines/vLLM_Deep_Dive]] — vLLM 推理框架
+- [[部署推理/Inference_Engines/SGLang_Deep_Dive]] — SGLang 推理框架
+- [[大模型/Fine_tuning_Techniques/Fine_tuning_Strategies]] — 模型微调策略
+- [[RAG系统/Advanced_RAG/RAG_Advanced_2026]] — RAG 高级技术
+- [[大模型/Chinese_LLM_Ecosystem/README]] — 中国大模型生态
+- [[部署推理/Caching/Speculative_Decoding_Advanced_2026]] — 投机解码高级技术（MTP 相关）
+- [[部署推理/Caching/Prompt_Caching_and_KV_Cache_Optimization]] — KV Cache 优化全景
 
 - [[_concepts/ai-hardware|AI 基础设施]] — AI 基础设施
 - [[_concepts/model-deployment|LLM 部署]] — LLM 部署
@@ -864,13 +864,13 @@ AI Stack 一体机交付后，日常生产环境涉及容器运行时、GPU 监�
 - [[_concepts/apsara-stack]] — 飞天企业版 Apsara Stack（全栈私有云）
 - [[_concepts/model-registry]] — 模型仓库（版本管理、一键部署）
 - [[_concepts/modelscope]] — ModelScope 魔搭（中文模型社区、SWIFT 微调）
-- [[12_Architecture_Infrastructure/AI_Stack_Production_Toolchain]] — AI Stack 生产工具链总览
-- [[12_Architecture_Infrastructure/AI_Stack_Container_Runtime_Guide]] — AI Stack 容器与运行时指南
-- [[12_Architecture_Infrastructure/AI_Stack_GPU_Monitoring_Guide]] — AI Stack GPU 监控指南
-- [[12_Architecture_Infrastructure/AI_Stack_Model_Management_Guide]] — AI Stack 模型下载与管理指南
-- [[12_Architecture_Infrastructure/AI_Stack_Inference_Serving_Guide]] — AI Stack 推理服务指南
-- [[12_Architecture_Infrastructure/AI_Stack_Training_Launchers_Guide]] — AI Stack 训练启动器指南
-- [[12_Architecture_Infrastructure/AI_Stack_K8s_Operations_Guide]] — AI Stack K8s 编排指南
-- [[12_Architecture_Infrastructure/AI_Stack_Exclusive_Tools_Guide]] — AI Stack 专属运维工具指南
+- [[架构基建/AI_Stack_Production_Toolchain]] — AI Stack 生产工具链总览
+- [[架构基建/AI_Stack_Container_Runtime_Guide]] — AI Stack 容器与运行时指南
+- [[架构基建/AI_Stack_GPU_Monitoring_Guide]] — AI Stack GPU 监控指南
+- [[架构基建/AI_Stack_Model_Management_Guide]] — AI Stack 模型下载与管理指南
+- [[架构基建/AI_Stack_Inference_Serving_Guide]] — AI Stack 推理服务指南
+- [[架构基建/AI_Stack_Training_Launchers_Guide]] — AI Stack 训练启动器指南
+- [[架构基建/AI_Stack_K8s_Operations_Guide]] — AI Stack K8s 编排指南
+- [[架构基建/AI_Stack_Exclusive_Tools_Guide]] — AI Stack 专属运维工具指南
 
-- [[12_Architecture_Infrastructure/README|架构与基础设施 (Architecture & Infrastructure)]]
+- [[架构基建/README|架构与基础设施 (Architecture & Infrastructure)]]

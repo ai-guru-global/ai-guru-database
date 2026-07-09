@@ -47,14 +47,14 @@ tier: supporting
 *Last updated: 2026-04-14*
 
 ## Related
-- [[15_Agent_Production/Agent_Ecosystem_CN/Chinese_OpenSource_Agent_Projects|国内开源 AI Agent 项目]]
-- [[15_Agent_Production/Agent_Ecosystem_CN/Domestic_AI_Agent_Products_CN|国内顶级 AI Agent 产品]]
-- [[15_Agent_Production/Agent_Ecosystem_CN/README|国内 AI Agent 生态]]
+- [[Agent/Agent_Ecosystem_CN/Chinese_OpenSource_Agent_Projects|国内开源 AI Agent 项目]]
+- [[Agent/Agent_Ecosystem_CN/Domestic_AI_Agent_Products_CN|国内顶级 AI Agent 产品]]
+- [[Agent/Agent_Ecosystem_CN/README|国内 AI Agent 生态]]
 
-- [[15_Agent_Production/Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
-- [[15_Agent_Production/Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
-- [[15_Agent_Production/Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
-- [[15_Agent_Production/Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)
+- [[Agent/Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
+- [[Agent/Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[Agent/Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[Agent/Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)
 
 
-- [[15_Agent_Production/README|Agent 生产部署 (Agent Production)]]
+- [[Agent/README|Agent 生产部署 (Agent Production)]]

@@ -353,8 +353,8 @@ if response.content.tool_calls:
 
 ## Related
 
-- [[05_NLP_LLMs/Multimodal_Models/Multimodal_Architectures_2026.md|Multimodal_Architectures_2026]]
-- [[05_NLP_LLMs/Fine_tuning_Techniques/Axolotl_Deep_Dive.md|Axolotl_Deep_Dive]]
-- [[05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques.md|Fine_tuning_Techniques]]
-- [[05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques_for_dummy.md|Fine_tuning_Techniques_for_dummy]]
-- [[05_NLP_LLMs/Fine_tuning_Techniques/Model_Merging_2026.md|Model_Merging_2026]]
+- [[大模型/Multimodal_Models/Multimodal_Architectures_2026.md|Multimodal_Architectures_2026]]
+- [[大模型/Fine_tuning_Techniques/Axolotl_Deep_Dive.md|Axolotl_Deep_Dive]]
+- [[大模型/Fine_tuning_Techniques/Fine_tuning_Techniques.md|Fine_tuning_Techniques]]
+- [[大模型/Fine_tuning_Techniques/Fine_tuning_Techniques_for_dummy.md|Fine_tuning_Techniques_for_dummy]]
+- [[大模型/Fine_tuning_Techniques/Model_Merging_2026.md|Model_Merging_2026]]

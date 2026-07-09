@@ -8,9 +8,9 @@ sources: []
 
 # Distributed Systems
 
-This page indexes the contents of `01_Fundamentals/Distributed_Systems`.
+This page indexes the contents of `数学基础/Distributed_Systems`.
 
 ## Files
 
-- [[01_Fundamentals/Distributed_Systems/Distributed_Systems|Distributed Systems]]
-- [[01_Fundamentals/Distributed_Systems/Distributed_Systems_for_dummy|Distributed Systems For Dummy]]
+- [[数学基础/Distributed_Systems/Distributed_Systems|Distributed Systems]]
+- [[数学基础/Distributed_Systems/Distributed_Systems_for_dummy|Distributed Systems For Dummy]]

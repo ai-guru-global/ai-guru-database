@@ -257,21 +257,21 @@ flowchart TB
 
 | 子主题 | 页面链接 | 内容概要 |
 |-------|---------|---------|
-| **监督学习** | [[02_Machine_Learning/Supervised_Learning/Supervised_Learning]] | 分类与回归算法的完整教程 |
-| **无监督学习** | [[02_Machine_Learning/Unsupervised_Learning/Unsupervised_Learning]] | 聚类、降维、异常检测深入 |
-| **集成学习** | [[02_Machine_Learning/Ensemble_Learning/Ensemble_Learning]] | Bagging、Boosting、Stacking 全解 |
-| **特征工程** | [[02_Machine_Learning/Feature_Engineering/Feature_Engineering]] | 特征构造、变换、选择的系统方法 |
-| **ML 框架** | [[02_Machine_Learning/ML_Frameworks/ML_Frameworks]] | scikit-learn、XGBoost、LightGBM 等框架概览 |
+| **监督学习** | [[机器学习/Supervised_Learning/Supervised_Learning]] | 分类与回归算法的完整教程 |
+| **无监督学习** | [[机器学习/Unsupervised_Learning/Unsupervised_Learning]] | 聚类、降维、异常检测深入 |
+| **集成学习** | [[机器学习/Ensemble_Learning/Ensemble_Learning]] | Bagging、Boosting、Stacking 全解 |
+| **特征工程** | [[机器学习/Feature_Engineering/Feature_Engineering]] | 特征构造、变换、选择的系统方法 |
+| **ML 框架** | [[机器学习/ML_Frameworks/ML_Frameworks]] | scikit-learn、XGBoost、LightGBM 等框架概览 |
 
 ---
 
 ## Further Reading
 
-- [[02_Machine_Learning/ML-in-nutshell]] — 机器学习速成（代码实战版）
-- [[02_Machine_Learning/ML_Algorithms_Cheatsheet]] — 算法选择速查表
-- [[01_Fundamentals/Math_Foundations]] — 机器学习所需的数学基础
-- [[01_Fundamentals/Fundamentals-in-nutshell]] — AI 基础全景
-- [[03_Deep_Learning/DL-in-nutshell]] — 从经典 ML 到深度学习的桥梁
+- [[机器学习/ML-in-nutshell]] — 机器学习速成（代码实战版）
+- [[机器学习/ML_Algorithms_Cheatsheet]] — 算法选择速查表
+- [[数学基础/Math_Foundations]] — 机器学习所需的数学基础
+- [[数学基础/Fundamentals-in-nutshell]] — AI 基础全景
+- [[深度学习/DL-in-nutshell]] — 从经典 ML 到深度学习的桥梁
 
 ---
 

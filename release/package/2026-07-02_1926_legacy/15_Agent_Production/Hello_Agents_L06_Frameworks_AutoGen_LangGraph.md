@@ -117,8 +117,8 @@ aliases:
 
 ## 8. 关联阅读
 
-- [[15_Agent_Production/Agent_Frameworks/AutoGen_Deep_Dive]] — AutoGen 深度解析
-- [[15_Agent_Production/Agent_Frameworks/AgentScope_Deep_Dive]] — AgentScope 深度解析
-- [[15_Agent_Production/Agent_Frameworks/AutoGen_CrewAI_LangGraph_Dive]] — AutoGen / CrewAI / LangGraph 对比
-- [[15_Agent_Production/Agent_Workflow/Workflow-in-nutshell]] — Agent 工作流总览
-- [[05_NLP_LLMs/Prompt_Engineering/Hello_Agents_L04_ReAct]] — 经典范式实现
+- [[Agent/Agent_Frameworks/AutoGen_Deep_Dive]] — AutoGen 深度解析
+- [[Agent/Agent_Frameworks/AgentScope_Deep_Dive]] — AgentScope 深度解析
+- [[Agent/Agent_Frameworks/AutoGen_CrewAI_LangGraph_Dive]] — AutoGen / CrewAI / LangGraph 对比
+- [[Agent/Agent_Workflow/Workflow-in-nutshell]] — Agent 工作流总览
+- [[大模型/Prompt_Engineering/Hello_Agents_L04_ReAct]] — 经典范式实现

@@ -118,8 +118,8 @@ my-skill/
 
 ## Related
 
-- [[15_Agent_Production/Agent_Skills/README|Agent Skills]]
+- [[Agent/Agent_Skills/README|Agent Skills]]
 - [[_references/index|References Index]]
-- [[15_Agent_Production/Agent_Skills/Skills-in-nutshell|Agent Skills 书写速览]]
-- [[15_Agent_Production/Agent_Skills/Skill_Versioning_Guide|Skill 版本管理与团队治理]]
-- [[15_Agent_Production/Agent_Skills/Agent_Skills_Deep_Dive|Agent Skills 深度解析]]
+- [[Agent/Agent_Skills/Skills-in-nutshell|Agent Skills 书写速览]]
+- [[Agent/Agent_Skills/Skill_Versioning_Guide|Skill 版本管理与团队治理]]
+- [[Agent/Agent_Skills/Agent_Skills_Deep_Dive|Agent Skills 深度解析]]

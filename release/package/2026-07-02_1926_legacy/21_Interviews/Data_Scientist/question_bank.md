@@ -91,11 +91,11 @@ tier: supporting
 
 ## Related
 
-- [[21_Interviews/Data_Scientist/company_level_question_bank|Data Scientist 按公司/级别区分的题库]]
-- [[21_Interviews/Data_Scientist/interview_answers|Data Scientist 面试题实例答案]]
-- [[21_Interviews/Data_Scientist/interview_preparing|Data Scientist 面试准备]]
-- [[21_Interviews/README|AI 面试准备 (Interviews)]]
-- [[21_Interviews/jobs|AI 相关岗位与工种清单]]
+- [[面试岗位/Data_Scientist/company_level_question_bank|Data Scientist 按公司/级别区分的题库]]
+- [[面试岗位/Data_Scientist/interview_answers|Data Scientist 面试题实例答案]]
+- [[面试岗位/Data_Scientist/interview_preparing|Data Scientist 面试准备]]
+- [[面试岗位/README|AI 面试准备 (Interviews)]]
+- [[面试岗位/jobs|AI 相关岗位与工种清单]]
 ---
 title: Data Scientist 题库
 category: 21-interviews-data-scientist
@@ -137,8 +137,8 @@ aliases:
 
 ## Related
 
-- [[21_Interviews/Data_Scientist/company_level_question_bank|Data Scientist 按公司/级别区分的题库]]
-- [[21_Interviews/Data_Scientist/interview_answers|Data Scientist 面试题实例答案]]
-- [[21_Interviews/Data_Scientist/interview_preparing|Data Scientist 面试准备]]
-- [[21_Interviews/README|AI 面试准备 (Interviews)]]
-- [[21_Interviews/jobs|AI 相关岗位与工种清单]]
+- [[面试岗位/Data_Scientist/company_level_question_bank|Data Scientist 按公司/级别区分的题库]]
+- [[面试岗位/Data_Scientist/interview_answers|Data Scientist 面试题实例答案]]
+- [[面试岗位/Data_Scientist/interview_preparing|Data Scientist 面试准备]]
+- [[面试岗位/README|AI 面试准备 (Interviews)]]
+- [[面试岗位/jobs|AI 相关岗位与工种清单]]

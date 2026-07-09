@@ -29,8 +29,8 @@ sources: []
 ## Related
 
 - [[_references/awesome-mcp-servers|Awesome MCP Servers]]
-- [[15_Agent_Production/Agent_Protocols/MCP_Implementation_Guide|MCP 实现指南]]
-- [[15_Agent_Production/Course_Notes/Learn_Claude_Code_L17_Autonomous_Agents|L17 Autonomous Agents]]
+- [[Agent/Agent_Protocols/MCP_Implementation_Guide|MCP 实现指南]]
+- [[Agent/Course_Notes/Learn_Claude_Code_L17_Autonomous_Agents|L17 Autonomous Agents]]
 
 ---
 *Last updated: 2026-07-02*

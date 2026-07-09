@@ -152,5 +152,5 @@ updated: 2026-06-25T16:01:28Z
 
 ## 来源
 
-- 01_Fundamentals/Linear_Algebra/Linear_Algebra.md
+- 数学基础/Linear_Algebra/Linear_Algebra.md
 - 当前对话中关于矩阵运算的白话解释

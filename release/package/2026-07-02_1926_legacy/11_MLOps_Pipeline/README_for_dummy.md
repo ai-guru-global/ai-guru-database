@@ -128,8 +128,8 @@ MLOps 流程:
 ## 下一步
 
 - 想深入技术？→ 查看子目录具体文档
-- 想学部署？→ [10_Deployment_Inference/README_for_dummy.md](../10_Deployment_Inference/README_for_dummy.md)
-- 想学监控？→ [13_AI_Ops/README_for_dummy.md](../13_AI_Ops/README_for_dummy.md)
+- 想学部署？→ [部署推理/README_for_dummy.md](../部署推理/README_for_dummy.md)
+- 想学监控？→ [AI运维/README_for_dummy.md](../AI运维/README_for_dummy.md)
 
 ---
 
@@ -137,6 +137,6 @@ MLOps 流程:
 
 ## Related
 
-- [[11_MLOps_Pipeline/Orchestration/Data_Pipeline_Orchestration.md|Data_Pipeline_Orchestration]]
-- [[11_MLOps_Pipeline/MLOps-in-nutshell.md|MLOps-in-nutshell]]
+- [[MLOps/Orchestration/Data_Pipeline_Orchestration.md|Data_Pipeline_Orchestration]]
+- [[MLOps/MLOps-in-nutshell.md|MLOps-in-nutshell]]
 - [[_concepts/mlops.md|mlops]]

@@ -10,7 +10,7 @@ relationships:
   - target: "_concepts/promptfoo"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "Prompt 版本管理与测试平台，提供 Prompt 的 Git-like 版本控制、自动追踪 LLM 调用和结构化评估，是 Prompt 工程的标准工具之一。"
 provenance:
   extracted: 0.55

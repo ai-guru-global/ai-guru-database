@@ -7,23 +7,23 @@ updated: 2026-07-02
 
 # Computer Vision
 
-This page indexes the contents of `04_Computer_Vision`.
+This page indexes the contents of `计算机视觉`.
 
 ## Subdirectories
 
-- [[04_Computer_Vision/3D_Vision/index|3D Vision]]
-- [[04_Computer_Vision/Generative_Models/index|Generative Models]]
-- [[04_Computer_Vision/Image_Classification_Detection/index|Image Classification Detection]]
-- [[04_Computer_Vision/Multimodal_Vision/index|Multimodal Vision]]
-- [[04_Computer_Vision/OCR_Text_Recognition/index|OCR Text Recognition]]
-- [[04_Computer_Vision/Segmentation/index|Segmentation]]
-- [[04_Computer_Vision/Video_Generation/index|Video Generation]]
+- [[计算机视觉/3D_Vision/index|3D Vision]]
+- [[计算机视觉/Generative_Models/index|Generative Models]]
+- [[计算机视觉/Image_Classification_Detection/index|Image Classification Detection]]
+- [[计算机视觉/Multimodal_Vision/index|Multimodal Vision]]
+- [[计算机视觉/OCR_Text_Recognition/index|OCR Text Recognition]]
+- [[计算机视觉/Segmentation/index|Segmentation]]
+- [[计算机视觉/Video_Generation/index|Video Generation]]
 
 ## Files
 
-- [[04_Computer_Vision/CV-in-nutshell|CV In Nutshell]]
-- [[04_Computer_Vision/CV_Fundamentals|CV Fundamentals]]
-- [[04_Computer_Vision/HF_Diffusers_Practical_Guide|HF Diffusers Practical Guide]]
-- [[04_Computer_Vision/README|README]]
-- [[04_Computer_Vision/README_for_dummy|README For Dummy]]
-- [[04_Computer_Vision/ViT_Deep_Dive|Vit Deep Dive]]
+- [[计算机视觉/CV-in-nutshell|CV In Nutshell]]
+- [[计算机视觉/CV_Fundamentals|CV Fundamentals]]
+- [[计算机视觉/HF_Diffusers_Practical_Guide|HF Diffusers Practical Guide]]
+- [[计算机视觉/README|README]]
+- [[计算机视觉/README_for_dummy|README For Dummy]]
+- [[计算机视觉/ViT_Deep_Dive|Vit Deep Dive]]

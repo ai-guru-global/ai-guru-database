@@ -24,11 +24,11 @@ aliases:
 
 学习本课程时，可参考以下知识库章节进行补充：
 
-- [[02_Machine_Learning/README]] — 经典机器学习
-- [[03_Deep_Learning/README]] — 深度学习基础
-- [[05_NLP_LLMs/README]] — NLP 与大模型
+- [[机器学习/README]] — 经典机器学习
+- [[深度学习/README]] — 深度学习基础
+- [[大模型/README]] — NLP 与大模型
 
 ## 相关链接
 
 - [[90_Learn/README]] — 学习路径总览
-- [[00_AI_Introduction/AI_Learning_Resources]] — AI 学习资源汇总
+- [[AI入门/AI_Learning_Resources]] — AI 学习资源汇总

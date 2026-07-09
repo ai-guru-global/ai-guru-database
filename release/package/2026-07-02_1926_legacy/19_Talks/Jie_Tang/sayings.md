@@ -49,11 +49,11 @@ aliases:
 
 ## Related
 
-- [[19_Talks/Jie_Tang/about]] — 唐杰简介
-- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/GLM_Zhipu_Deep_Dive]] — GLM/智谱 AI 技术全景
+- [[业界观点/Jie_Tang/about]] — 唐杰简介
+- [[大模型/Chinese_LLM_Ecosystem/GLM_Zhipu_Deep_Dive]] — GLM/智谱 AI 技术全景
 
 ---
 
 *Last updated: 2026-06-24*
 
-- [[19_Talks/README|AI 名人演讲与观点 (Talks)]]
+- [[业界观点/README|AI 名人演讲与观点 (Talks)]]

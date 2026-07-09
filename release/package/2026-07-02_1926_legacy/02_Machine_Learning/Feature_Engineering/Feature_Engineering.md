@@ -305,14 +305,14 @@ def create_time_features(df, date_col='date', target_col='sales'):
 ## 7. 与其他主题的关联 (Connections)
 
 ### 前置知识
-- [概率论与数理统计](../../01_Fundamentals/Probability_Statistics/Probability_Statistics.md) — 理解分布变换和统计量
-- [线性代数](../../01_Fundamentals/Linear_Algebra/Linear_Algebra.md) — PCA 降维的数学基础
+- [概率论与数理统计](../../数学基础/Probability_Statistics/Probability_Statistics.md) — 理解分布变换和统计量
+- [线性代数](../../数学基础/Linear_Algebra/Linear_Algebra.md) — PCA 降维的数学基础
 
 ### 进阶方向
 - [监督学习](../Supervised_Learning/Supervised_Learning.md) — 特征工程的下游消费者
 - [无监督学习](../Unsupervised_Learning/Unsupervised_Learning.md) — PCA/t-SNE 作为降维特征
-- [模型评估](../../08_Model_Evaluation/Model_Evaluation.md) — 评估特征工程的效果
-- [MLOps Pipeline](../../11_MLOps_Pipeline/MLOps_Pipeline.md) — 特征存储与特征管道
+- [模型评估](../../模型评估/Model_Evaluation.md) — 评估特征工程的效果
+- [MLOps Pipeline](../../MLOps/MLOps_Pipeline.md) — 特征存储与特征管道
 
 ---
 
@@ -356,7 +356,7 @@ def create_time_features(df, date_col='date', target_col='sales'):
 
 ## Related
 
-- [[02_Machine_Learning/Ensemble_Learning/Ensemble_Learning]] — 集成学习 (Ensemble Learning) - 完全指南 (共享: machine-learning, ml, supervised, unsupervised)
-- [[02_Machine_Learning/Feature_Engineering/Feature_Engineering_for_dummy]] — 特征工程 - 小白版 (共享: machine-learning, ml, supervised, unsupervised)
-- [[02_Machine_Learning/ML-in-nutshell]] — 机器学习速成指南 (共享: machine-learning, ml, supervised, unsupervised)
-- [[02_Machine_Learning/README]] — 02 经典机器学习 (Classical Machine Learning) (共享: machine-learning, ml, supervised, unsupervised)
+- [[机器学习/Ensemble_Learning/Ensemble_Learning]] — 集成学习 (Ensemble Learning) - 完全指南 (共享: machine-learning, ml, supervised, unsupervised)
+- [[机器学习/Feature_Engineering/Feature_Engineering_for_dummy]] — 特征工程 - 小白版 (共享: machine-learning, ml, supervised, unsupervised)
+- [[机器学习/ML-in-nutshell]] — 机器学习速成指南 (共享: machine-learning, ml, supervised, unsupervised)
+- [[机器学习/README]] — 02 经典机器学习 (Classical Machine Learning) (共享: machine-learning, ml, supervised, unsupervised)

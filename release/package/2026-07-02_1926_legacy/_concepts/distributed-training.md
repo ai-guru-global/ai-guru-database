@@ -7,9 +7,9 @@ aliases:
   - "Distributed Parallelism"
 category: -concepts
 sources:
-  - 07_Model_Training/Distributed_Training/Ray_Deep_Dive.md
-  - 07_Model_Training/Distributed_Training/FSDP_Deep_Dive.md
-  - 07_Model_Training/Distributed_Training/Megatron_LM_Deep_Dive.md
+  - 模型训练/Distributed_Training/Ray_Deep_Dive.md
+  - 模型训练/Distributed_Training/FSDP_Deep_Dive.md
+  - 模型训练/Distributed_Training/Megatron_LM_Deep_Dive.md
 relationships:
   - target: "_concepts/distributed-parallelism"
     type: simplified
@@ -227,4 +227,4 @@ GPU 3: Layer 24-31 ──► 输出
 
 ---
 
-**参见**：[[Ray_Deep_Dive]] · [[FSDP_Deep_Dive]] · [[Megatron_LM_Deep_Dive]] · [[_concepts/distributed-parallelism]] · [[07_Model_Training/README|07_Model_Training]] · [[07_Model_Training/Distributed_Training/index]]
+**参见**：[[Ray_Deep_Dive]] · [[FSDP_Deep_Dive]] · [[Megatron_LM_Deep_Dive]] · [[_concepts/distributed-parallelism]] · [[模型训练/README|模型训练]] · [[模型训练/Distributed_Training/index]]

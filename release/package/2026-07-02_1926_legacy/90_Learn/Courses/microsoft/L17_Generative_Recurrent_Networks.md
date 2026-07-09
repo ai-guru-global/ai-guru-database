@@ -139,12 +139,12 @@ def generate(model, prompt, n_chars=200, temperature=1.0):
   - 评估生成文本质量的定量指标，如困惑度（Perplexity）、BLEU、ROUGE。
 
 - **延伸**：
-  - 想深入序列建模基础 → [[05_NLP_LLMs/Sequence_Models/Sequence_Models]]
-  - 想了解 Transformer 与 BERT → 本课程 [[90_Learn/courses/microsoft/L18_Transformers_and_BERT|L18 Transformer 与 BERT]] 或 [[05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution]]
-  - 想了解现代大语言模型与提示工程 → [[05_NLP_LLMs/LLM_Architectures/LLM_Architectures]]、[[05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering]]
-  - 想动手做机器翻译或图像描述 → 关注 sequence-to-sequence 与注意力机制，参阅 [[05_NLP_LLMs/Sequence_Models/Sequence_Models]] 中的编码器-解码器部分
+  - 想深入序列建模基础 → [[大模型/Sequence_Models/Sequence_Models]]
+  - 想了解 Transformer 与 BERT → 本课程 [[90_Learn/courses/microsoft/L18_Transformers_and_BERT|L18 Transformer 与 BERT]] 或 [[大模型/Transformer_Revolution/Transformer_Revolution]]
+  - 想了解现代大语言模型与提示工程 → [[大模型/LLM_Architectures/LLM_Architectures]]、[[大模型/Prompt_Engineering/Prompt_Engineering]]
+  - 想动手做机器翻译或图像描述 → 关注 sequence-to-sequence 与注意力机制，参阅 [[大模型/Sequence_Models/Sequence_Models]] 中的编码器-解码器部分
 
 ## 相关阅读
 
 - 课程索引：[[90_Learn/courses/microsoft/microsoft_ai_for_beginners]]
-- 本库相关页面：[[05_NLP_LLMs/Sequence_Models/Sequence_Models]]
+- 本库相关页面：[[大模型/Sequence_Models/Sequence_Models]]

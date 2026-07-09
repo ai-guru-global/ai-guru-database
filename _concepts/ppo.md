@@ -16,8 +16,8 @@ relationships:
   - target: "_concepts/reinforcement-learning"
     type: belongs_to
 sources:
-  - 07_Model_Training/Alignment/TRL_RLHF_DPO_Guide.md
-  - 06_Reinforcement_Learning/
+  - 模型训练/Alignment/TRL_RLHF_DPO_Guide.md
+  - 强化学习/
 summary: "PPO（Proximal Policy Optimization）是 OpenAI 2017 提出的策略梯度算法，通过 clip 机制稳定训练；是 RLHF 时代对齐 LLM 的事实标准算法（DPO / GRPO 等简化方法都源于 PPO 思想）。"
 lifecycle: reviewed
 tier: core

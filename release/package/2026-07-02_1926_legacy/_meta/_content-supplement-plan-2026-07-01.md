@@ -28,7 +28,7 @@ updated: 2026-07-01
 
 ## 三、第一批：横向生产基础设施（5 个文件）
 
-### 1. `12_Architecture_Infrastructure/AI_SRE_Runbook.md`
+### 1. `架构基建/AI_SRE_Runbook.md`
 
 - **定位**: AI 系统的站点可靠性工程 Runbook，覆盖 SLO/SLI、on-call、事故响应、容量规划、灾备。
 - **目标读者**: AI Infra 工程师、SRE、平台负责人。
@@ -39,9 +39,9 @@ updated: 2026-07-01
   - 模型回滚与热切换策略
   - 灾备 RTO/RPO 设计
   - 可观测性三板斧（metrics/logs/traces）
-  - 与 `13_AI_Ops`、 `11_MLOps_Pipeline`、 `10_Deployment_Inference` 的交叉引用
+  - 与 `AI运维`、 `MLOps`、 `部署推理` 的交叉引用
 
-### 2. `11_MLOps_Pipeline/LLM_Guardrails_and_Safety_Ops_2026.md`
+### 2. `MLOps/LLM_Guardrails_and_Safety_Ops_2026.md`
 
 - **定位**: LLM 生产环境输入输出护栏的工程化实践。
 - **目标读者**: MLOps/LLMOps 工程师、AI 安全工程师。
@@ -53,7 +53,7 @@ updated: 2026-07-01
   - Guardrails as Code：配置版本化、CI/CD 集成
   - 审计日志与合规留痕
 
-### 3. `05_NLP_LLMs/LLM_Production_Deployment_Runbook.md`
+### 3. `大模型/LLM_Production_Deployment_Runbook.md`
 
 - **定位**: 大语言模型从模型文件到线上服务的完整部署 Runbook。
 - **目标读者**: LLM Platform 工程师、后端工程师。
@@ -65,7 +65,7 @@ updated: 2026-07-01
   - 多模型路由与 Fallback 策略
   - 安全、监控、成本优化 checklist
 
-### 4. `15_Agent_Production/Agent_Production_Deployment_Runbook.md`
+### 4. `Agent/Agent_Production_Deployment_Runbook.md`
 
 - **定位**: Agent 系统上线生产环境的完整 Runbook。
 - **目标读者**: Agent 平台工程师、AI 应用架构师。
@@ -78,7 +78,7 @@ updated: 2026-07-01
   - 可观测性：Trace、Step 级别监控、成本 Dashboard
   - 灾难恢复：会话状态、长期记忆、任务队列备份
 
-### 5. `14_RAG_Systems/RAG_Production_Architecture_Deep_Dive.md`
+### 5. `RAG系统/RAG_Production_Architecture_Deep_Dive.md`
 
 - **定位**: RAG 系统生产级架构设计与最佳实践。
 - **目标读者**: RAG 系统架构师、AI 应用工程师。
@@ -92,7 +92,7 @@ updated: 2026-07-01
 
 ## 四、第二批：评估、训练、成本（4 个文件）
 
-### 6. `07_Model_Training/Training_Cost_Optimization_and_FinOps_2026.md`
+### 6. `模型训练/Training_Cost_Optimization_and_FinOps_2026.md`
 
 - **定位**: 大模型训练的成本优化与 FinOps 实践。
 - **必须包含**:
@@ -103,7 +103,7 @@ updated: 2026-07-01
   - 训练任务成本归因与预算告警
   - 云厂商训练服务成本对比（SageMaker / Vertex / PAI）
 
-### 7. `08_Model_Evaluation/RAG_Evaluation_Deep_Dive.md`
+### 7. `模型评估/RAG_Evaluation_Deep_Dive.md`
 
 - **定位**: RAG 系统系统化评估方法。
 - **必须包含**:
@@ -114,7 +114,7 @@ updated: 2026-07-01
   - 端到端测试数据集构建
   - A/B 测试与线上监控
 
-### 8. `09_Testing/Agent_Evaluation_Deep_Dive.md`
+### 8. `AI测试/Agent_Evaluation_Deep_Dive.md`
 
 - **定位**: Agent 系统评估方法论与工具。
 - **必须包含**:
@@ -124,7 +124,7 @@ updated: 2026-07-01
   - LLM-as-Judge 在 Agent 评估中的应用
   - 成本与延迟约束下的评估策略
 
-### 9. `06_Reinforcement_Learning/GRPO_Training_Deep_Dive.md`
+### 9. `强化学习/GRPO_Training_Deep_Dive.md`
 
 - **定位**: GRPO（Group Relative Policy Optimization）训练详解，面向 DeepSeek-R1 / Qwen3 / o1-class 推理模型。
 - **必须包含**:
@@ -137,7 +137,7 @@ updated: 2026-07-01
 
 ## 五、第三批：应用、代码、岗位、模板（5 个文件）
 
-### 10. `18_AI_Applications_Industry/AI_Production_Architecture_2026.md`
+### 10. `行业应用/AI_Production_Architecture_2026.md`
 
 - **定位**: 跨行业的 AI 生产架构通用模式与参考实现。
 - **必须包含**:
@@ -147,7 +147,7 @@ updated: 2026-07-01
   - 安全合规 checklist（等保、EU AI Act、HIPAA、FDA）
   - 成本优化与 FinOps
 
-### 11. `16_AI_Coding/AI_Code_Security_Audit_Runbook.md`
+### 11. `AI编程/AI_Code_Security_Audit_Runbook.md`
 
 - **定位**: AI 辅助代码的安全审计流程与工具链。
 - **必须包含**:
@@ -157,7 +157,7 @@ updated: 2026-07-01
   - 审计 checklist 与高危漏洞样例库
   - CI/CD 集成与企业合规要求
 
-### 12. `04_Computer_Vision/CV_Deployment_and_Inference_2026.md`
+### 12. `计算机视觉/CV_Deployment_and_Inference_2026.md`
 
 - **定位**: 计算机视觉模型生产部署与推理优化。
 - **必须包含**:
@@ -168,7 +168,7 @@ updated: 2026-07-01
   - 可观测性与 A/B 测试
   - 工业质检、自动驾驶感知案例
 
-### 13. `21_Interviews/Agent_Engineer_2026.md`
+### 13. `面试岗位/Agent_Engineer_2026.md`
 
 - **定位**: Agent 工程师岗位面试指南。
 - **必须包含**:

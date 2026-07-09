@@ -7,9 +7,9 @@ updated: 2026-07-02
 
 # Satya Nadella
 
-This page indexes the contents of `19_Talks/Satya_Nadella`.
+This page indexes the contents of `业界观点/Satya_Nadella`.
 
 ## Files
 
-- [[19_Talks/Satya_Nadella/about|About]]
-- [[19_Talks/Satya_Nadella/sayings|Sayings]]
+- [[业界观点/Satya_Nadella/about|About]]
+- [[业界观点/Satya_Nadella/sayings|Sayings]]

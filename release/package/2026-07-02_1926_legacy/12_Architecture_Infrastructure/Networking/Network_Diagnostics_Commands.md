@@ -128,6 +128,6 @@ kubectl debug -it <pod> --image=nicolaka/netshoot -- tcpdump -i any
 
 ## Related
 
-- [[12_Architecture_Infrastructure/Networking/AI_Networking_Fundamentals|AI 网络基础]]
-- [[12_Architecture_Infrastructure/Networking/RDMA_and_RoCE_for_AI|RDMA 与 RoCE 在 AI 集群中的应用]]
-- [[07_Model_Training/Distributed_Training/Distributed_Training_Hang_Runbook|分布式训练 Hang 排障]]
+- [[架构基建/Networking/AI_Networking_Fundamentals|AI 网络基础]]
+- [[架构基建/Networking/RDMA_and_RoCE_for_AI|RDMA 与 RoCE 在 AI 集群中的应用]]
+- [[模型训练/Distributed_Training/Distributed_Training_Hang_Runbook|分布式训练 Hang 排障]]

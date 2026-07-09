@@ -10,7 +10,7 @@ relationships:
   - target: "_concepts/nemo-guardrails"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "开源的 LLM 安全防护中间件，提供输入/输出双向扫描，覆盖 Prompt 注入、PII 检测、毒性过滤、幻觉检测等 20+ 安全扫描器。"
 provenance:
   extracted: 0.55

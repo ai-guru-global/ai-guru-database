@@ -8,9 +8,9 @@ sources: []
 
 # Mechanistic Interpretability
 
-This page indexes the contents of `17_Ethics_Safety/Mechanistic_Interpretability`.
+This page indexes the contents of `伦理安全/Mechanistic_Interpretability`.
 
 ## Files
 
-- [[17_Ethics_Safety/Mechanistic_Interpretability/Mechanistic_Interpretability|Mechanistic Interpretability]]
-- [[17_Ethics_Safety/Mechanistic_Interpretability/Mechanistic_Interpretability_for_dummy|Mechanistic Interpretability For Dummy]]
+- [[伦理安全/Mechanistic_Interpretability/Mechanistic_Interpretability|Mechanistic Interpretability]]
+- [[伦理安全/Mechanistic_Interpretability/Mechanistic_Interpretability_for_dummy|Mechanistic Interpretability For Dummy]]

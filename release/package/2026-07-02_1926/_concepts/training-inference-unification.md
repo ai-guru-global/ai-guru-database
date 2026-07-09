@@ -8,7 +8,7 @@ relationships:
   - target: "_concepts/heterogeneous-gpu"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: 训推一体将 LLM 训练和推理共置于同一 GPU 集群，利用推理空闲和训练气泡的互补性提升 GPU 利用率。LeMix (2025) 实现吞吐提升 3.53×、SLO 达标率提升 2.12×。2026 年 IDC 数据显示 >35% 头部企业已将训推一体能力作为选型核心指标。
 provenance:
   extracted: 0.85
@@ -90,4 +90,4 @@ LeMix（UC Riverside, 2025）提出细粒度训推共置调度框架：
 - [[_concepts/ai-architecture]] — AI 系统架构
 - [[_concepts/heterogeneous-gpu]] — 异构 GPU 集群
 - [[_concepts/continuous-batching]] — Continuous Batching
-- [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — 阿里云 AI Stack
+- [[架构基建/AI_Stack_Deep_Dive]] — 阿里云 AI Stack

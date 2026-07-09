@@ -25,13 +25,13 @@ tier: supporting
 ## 怎么用？
 
 ### 第一步：选一个你感兴趣的课题
-在 [20_Papers_and_Research](./README.md) 目录下新建一个子目录，比如 `RAG_vs_FineTuning/`。
+在 [论文精读](./README.md) 目录下新建一个子目录，比如 `RAG_vs_FineTuning/`。
 
 ### 第二步：套模板
 把 [Research_Template.md](./Research_Template.md) 的内容复制到你的目录里，按章节填写。
 
 ### 第三步：做调研
-去 [20_Papers](../20_Papers_and_Research/README.md) 找论文，去知识库各章节找背景知识。
+去 [20_Papers](../论文精读/README.md) 找论文，去知识库各章节找背景知识。
 
 ### 第四步：写结论
 把你的发现写下来，并关联到知识库的其他部分。
@@ -40,7 +40,7 @@ tier: supporting
 
 ## 和"学习"的区别
 
-| 维度 | 学习 (90_Learn) | 课题研究 (20_Papers_and_Research/Methodology) |
+| 维度 | 学习 (90_Learn) | 课题研究 (论文精读/Methodology) |
 |------|-----------------|----------------------|
 | 目标 | 掌握已有知识 | 探索未知、产出新见解 |
 | 方法 | 跟着课程/路径走 | 提出问题、查文献、做分析 |
@@ -51,8 +51,8 @@ tier: supporting
 *祝你研究顺利！🔬*
 
 ## Related
-- [[20_Papers_and_Research/Research_README|课题研究主页 🔬]]
-- [[20_Papers_and_Research/Research_Template|课题研究模板]]
+- [[论文精读/Research_README|课题研究主页 🔬]]
+- [[论文精读/Research_Template|课题研究模板]]
 - [[90_Learn/README|学习路径]]
 
-- [[20_Papers_and_Research/README|22 经典与必读 AI 论文清单 (Essential AI Papers)]]
+- [[论文精读/README|22 经典与必读 AI 论文清单 (Essential AI Papers)]]

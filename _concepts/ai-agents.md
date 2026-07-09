@@ -118,16 +118,16 @@ RAG是单次检索增强的问答系统，无状态、无规划。Agent是多轮
 
 ## 来源
 
-- 06_Reinforcement_Learning/AI_Agents/AI_Agents.md
+- 强化学习/AI_Agents/AI_Agents.md
 
 ## Related
 
 - [[_synthesis/agents-reinforcement-learning]] — AI 智能体 × 强化学习 (共享: ai-agents, mcp, planning, react, rl, tool-use)
-- [[06_Reinforcement_Learning/AI_Agents/AI_Agents_for_dummy]] — AI智能体 - 小白版 🤖 (共享: ai-agents, rl)
-- [[06_Reinforcement_Learning/AI_Agents/Agent-in-nutshell]] — AI 智能体速成指南 (共享: ai-agents, rl)
-- [[06_Reinforcement_Learning/AI_Agents/Agent_Future_Roadmap_2026_2030]] — Agent 未来发展路线图 2026-2030 (共享: ai-agents, rl)
+- [[强化学习/AI_Agents/AI_Agents_for_dummy]] — AI智能体 - 小白版 🤖 (共享: ai-agents, rl)
+- [[强化学习/AI_Agents/Agent-in-nutshell]] — AI 智能体速成指南 (共享: ai-agents, rl)
+- [[强化学习/AI_Agents/Agent_Future_Roadmap_2026_2030]] — Agent 未来发展路线图 2026-2030 (共享: ai-agents, rl)
 - [[_concepts/tool-calling]] — 工具调用
 - [[_concepts/tool-calling-safety]] — 工具调用安全
 - [[_concepts/agent-evaluation-benchmarks]] — Agent 评估基准
 - [[_concepts/agentic-rag]] — Agentic RAG
-- [[15_Agent_Production/Agent_Safety_Evaluation_for_dummy]] — Agent 安全与评估大白话
+- [[Agent/Agent_Safety_Evaluation_for_dummy]] — Agent 安全与评估大白话

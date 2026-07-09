@@ -10,7 +10,7 @@ relationships:
   - target: "_concepts/onnx"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "Hugging Face 运营的 AI 模型与数据集托管平台，被誉为'AI 领域的 GitHub'，提供模型存储、版本管理、推理 API 和社区协作等一站式服务。"
 provenance:
   extracted: 0.60

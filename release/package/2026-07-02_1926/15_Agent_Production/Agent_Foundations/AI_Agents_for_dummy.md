@@ -742,9 +742,9 @@ agent.run("帮我规划明天的行程")
 ## 想深入了解?
 
 **下一步阅读**:
-- 📘 [LLM架构 - 小白版](../../05_NLP_LLMs/LLM_Architectures/LLM_Architectures_for_dummy.md) - 理解 Agent 的"大脑"
-- 📘 [Prompt工程 - 小白版](../../05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering_for_dummy.md) - 设计 Agent 的系统提示
-- 📘 [RAG系统 - 小白版](../../14_RAG_Systems/RAG_Systems_for_dummy.md) - Agent 的记忆系统
+- 📘 [LLM架构 - 小白版](../../大模型/LLM_Architectures/LLM_Architectures_for_dummy.md) - 理解 Agent 的"大脑"
+- 📘 [Prompt工程 - 小白版](../../大模型/Prompt_Engineering/Prompt_Engineering_for_dummy.md) - 设计 Agent 的系统提示
+- 📘 [RAG系统 - 小白版](../../RAG系统/RAG_Systems_for_dummy.md) - Agent 的记忆系统
 
 **查看原版文档**(需要技术基础):
 - 📄 [AI智能体(原版)](./AI_Agents.md) - 包含 ReAct 实现代码和架构设计
@@ -755,9 +755,9 @@ agent.run("帮我规划明天的行程")
 - 🔗 LangChain Hub - Agent 示例库
 
 **相关主题**:
-- 🔙 [深度强化学习 - 小白版](../../06_Reinforcement_Learning/Deep_RL/Deep_RL_for_dummy.md) - Agent 决策的理论基础
-- 🔙 [Transformer - 小白版](../../05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution_for_dummy.md) - Agent 的语言理解能力
-- 🔜 [部署与推理 - 小白版](../../10_Deployment_Inference/Deployment_Inference_for_dummy.md) - Agent 的生产部署
+- 🔙 [深度强化学习 - 小白版](../../强化学习/Deep_RL/Deep_RL_for_dummy.md) - Agent 决策的理论基础
+- 🔙 [Transformer - 小白版](../../大模型/Transformer_Revolution/Transformer_Revolution_for_dummy.md) - Agent 的语言理解能力
+- 🔜 [部署与推理 - 小白版](../../部署推理/Deployment_Inference_for_dummy.md) - Agent 的生产部署
 
 ---
 
@@ -765,8 +765,8 @@ agent.run("帮我规划明天的行程")
 
 ## Related
 
-- [[06_Reinforcement_Learning/AI_Agents/Agent-in-nutshell]] — AI 智能体速成指南 (共享: agent, ai-agents, mdp, reinforcement-learning, rl)
-- [[06_Reinforcement_Learning/AI_Agents/Agent_Future_Roadmap_2026_2030]] — Agent 未来发展路线图 2026-2030 (共享: agent, ai-agents, mdp, reinforcement-learning, rl)
-- [[06_Reinforcement_Learning/AI_Agents/Agent_Protocols_Detail]] — AI Agent 协议详解：MCP、A2A、UCP (共享: agent, ai-agents, mdp, reinforcement-learning, rl)
-- [[06_Reinforcement_Learning/README]] — 06 强化学习与智能体 (Reinforcement Learning & Agents) (共享: agent, mdp, reinforcement-learning, rl)
-- [[06_Reinforcement_Learning/README_for_dummy.md|README_for_dummy]]
+- [[强化学习/AI_Agents/Agent-in-nutshell]] — AI 智能体速成指南 (共享: agent, ai-agents, mdp, reinforcement-learning, rl)
+- [[强化学习/AI_Agents/Agent_Future_Roadmap_2026_2030]] — Agent 未来发展路线图 2026-2030 (共享: agent, ai-agents, mdp, reinforcement-learning, rl)
+- [[强化学习/AI_Agents/Agent_Protocols_Detail]] — AI Agent 协议详解：MCP、A2A、UCP (共享: agent, ai-agents, mdp, reinforcement-learning, rl)
+- [[强化学习/README]] — 06 强化学习与智能体 (Reinforcement Learning & Agents) (共享: agent, mdp, reinforcement-learning, rl)
+- [[强化学习/README_for_dummy.md|README_for_dummy]]

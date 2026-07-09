@@ -522,8 +522,8 @@ flowchart TB
 
 ## 🔗 相关主题
 
-- [RAG 速成指南](../14_RAG_Systems/RAG-in-nutshell.md) —— 检索增强生成
-- [推理速成指南](../10_Deployment_Inference/Inference-in-nutshell.md) —— 模型部署推理
+- [RAG 速成指南](../RAG系统/RAG-in-nutshell.md) —— 检索增强生成
+- [推理速成指南](../部署推理/Inference-in-nutshell.md) —— 模型部署推理
 - [成本优化完整版](./Architecture_Overview/AI_Cost_Optimization_2026.md) —— 深入成本策略
 - [高可用完整版](./Architecture_Overview/High_Availability_2026.md) —— 深入 HA 设计
 - [架构基础设施 - 小白版](./Architecture_Infrastructure_for_dummy.md) —— 零基础入门
@@ -534,8 +534,8 @@ flowchart TB
 
 ## Related
 
-- [[12_Architecture_Infrastructure/Architecture_Overview/AI_Infrastructure_2026]] — AI Infrastructure 2026 完全指南 (共享: architecture, high-availability, infrastructure, kubernetes)
-- [[12_Architecture_Infrastructure/Architecture_Infrastructure_for_dummy]] — AI 架构基础设施 - 小白版 (共享: architecture, high-availability, infrastructure, kubernetes)
-- [[12_Architecture_Infrastructure/Architecture_Overview/Spring_AI_Architecture]] — Spring AI 系统架构设计 (共享: architecture, high-availability, infrastructure, kubernetes)
-- [[12_Architecture_Infrastructure/README.md|README]]
+- [[架构基建/Architecture_Overview/AI_Infrastructure_2026]] — AI Infrastructure 2026 完全指南 (共享: architecture, high-availability, infrastructure, kubernetes)
+- [[架构基建/Architecture_Infrastructure_for_dummy]] — AI 架构基础设施 - 小白版 (共享: architecture, high-availability, infrastructure, kubernetes)
+- [[架构基建/Architecture_Overview/Spring_AI_Architecture]] — Spring AI 系统架构设计 (共享: architecture, high-availability, infrastructure, kubernetes)
+- [[架构基建/README.md|README]]
 - [[AI_System_Architecture_2026|AI_System_Architecture_2026]]

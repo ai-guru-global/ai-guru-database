@@ -487,13 +487,13 @@ CV 模型上线后会面临：
 
 ## Related
 
-- [[04_Computer_Vision/Image_Classification_Detection/Image_Classification_Detection|图像分类与检测]]
-- [[04_Computer_Vision/Image_Classification_Detection/Object_Detection_Deep_Dive|目标检测深度解析 (Object Detection)]]
-- [[04_Computer_Vision/Segmentation/Segmentation|图像分割]]
-- [[04_Computer_Vision/Multimodal_Vision/Multimodal_Vision|多模态视觉]]
-- [[04_Computer_Vision/Generative_Models/Generative_Models|生成模型]]
-- [[04_Computer_Vision/Video_Generation/README|AI 视频生成]]
-- [[04_Computer_Vision/3D_Vision/3D_Vision|3D 视觉]]
-- [[04_Computer_Vision/OCR_Text_Recognition/OCR_Text_Recognition|OCR 文字识别]]
-- [[04_Computer_Vision/ViT_Deep_Dive|Vision Transformer (ViT) 深度解读]]
-- [[04_Computer_Vision/CV-in-nutshell|计算机视觉速成指南]]
+- [[计算机视觉/Image_Classification_Detection/Image_Classification_Detection|图像分类与检测]]
+- [[计算机视觉/Image_Classification_Detection/Object_Detection_Deep_Dive|目标检测深度解析 (Object Detection)]]
+- [[计算机视觉/Segmentation/Segmentation|图像分割]]
+- [[计算机视觉/Multimodal_Vision/Multimodal_Vision|多模态视觉]]
+- [[计算机视觉/Generative_Models/Generative_Models|生成模型]]
+- [[计算机视觉/Video_Generation/README|AI 视频生成]]
+- [[计算机视觉/3D_Vision/3D_Vision|3D 视觉]]
+- [[计算机视觉/OCR_Text_Recognition/OCR_Text_Recognition|OCR 文字识别]]
+- [[计算机视觉/ViT_Deep_Dive|Vision Transformer (ViT) 深度解读]]
+- [[计算机视觉/CV-in-nutshell|计算机视觉速成指南]]

@@ -8,9 +8,9 @@ sources: []
 
 # OCR Text Recognition
 
-This page indexes the contents of `04_Computer_Vision/OCR_Text_Recognition`.
+This page indexes the contents of `计算机视觉/OCR_Text_Recognition`.
 
 ## Files
 
-- [[04_Computer_Vision/OCR_Text_Recognition/OCR_for_dummy|OCR For Dummy]]
-- [[04_Computer_Vision/OCR_Text_Recognition/OCR_Text_Recognition|OCR Text Recognition]]
+- [[计算机视觉/OCR_Text_Recognition/OCR_for_dummy|OCR For Dummy]]
+- [[计算机视觉/OCR_Text_Recognition/OCR_Text_Recognition|OCR Text Recognition]]

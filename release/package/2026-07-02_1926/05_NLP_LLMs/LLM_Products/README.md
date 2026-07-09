@@ -27,6 +27,6 @@ This directory contains overviews of major LLM products and tools in the ecosyst
 
 ## Related Directories
 
-- [[05_NLP_LLMs/Global_LLM_Ecosystem/README]]: LLM provider deep dives
+- [[大模型/Global_LLM_Ecosystem/README]]: LLM provider deep dives
 - [[LLM_Architectures]]: Technical architecture details
 - [[Prompt_Engineering]]: How to use these products effectively

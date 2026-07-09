@@ -191,8 +191,8 @@ flowchart TD
 - **必修**: [../LLM_Architectures/LLM_Architectures.md](../LLM_Architectures/LLM_Architectures.md) — Transformer、MoE、GQA 基础
 - **推荐**: [../Reasoning_Models/o1_Class_Reasoning_Models.md](../Reasoning_Models/o1_Class_Reasoning_Models.md) — 推理模型原理
 - **推荐**: [../LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md](../LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md) — MoE 架构详解
-- **可选**: [../../20_Papers_and_Research/GPT3_Deep_Dive.md](../../20_Papers_and_Research/Scaling/GPT3_Deep_Dive.md) — GPT-3 论文解读
-- **可选**: [../../20_Papers_and_Research/LLaMA_Deep_Dive.md](../../20_Papers_and_Research/Architecture/LLaMA_Deep_Dive.md) — LLaMA 论文解读
+- **可选**: [../../论文精读/GPT3_Deep_Dive.md](../../论文精读/Scaling/GPT3_Deep_Dive.md) — GPT-3 论文解读
+- **可选**: [../../论文精读/LLaMA_Deep_Dive.md](../../论文精读/Architecture/LLaMA_Deep_Dive.md) — LLaMA 论文解读
 
 ---
 

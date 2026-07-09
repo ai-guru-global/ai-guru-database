@@ -17,7 +17,7 @@ relationships:
 sources:
   - "_concepts/embedding-models.md"
   - "_concepts/matryoshka-representation-learning.md"
-  - "14_RAG_Systems/Matryoshka_Representation_Learning_for_dummy.md"
+  - "RAG系统/Matryoshka_Representation_Learning_for_dummy.md"
   - "_concepts/how-llm-answers-plain.md"
 lifecycle: stable
 tier: supporting
@@ -302,8 +302,8 @@ MRL 的解决办法：**只训练一个模型，输出一个向量，按需截�
 - [[_concepts/embedding-models]] — 嵌入模型概念卡片
 - [[_concepts/matryoshka-representation-learning]] — MRL 概念卡片
 - [[_concepts/how-llm-answers-plain]] — 大模型回答问题是一道数学题吗？大白话
-- [[14_RAG_Systems/Matryoshka_Representation_Learning_for_dummy]] — MRL 小白版
-- [[14_RAG_Systems/Embeddings/Matryoshka_Representation_Learning_Deep_Dive]] — MRL 深度解析
+- [[RAG系统/Matryoshka_Representation_Learning_for_dummy]] — MRL 小白版
+- [[RAG系统/Embeddings/Matryoshka_Representation_Learning_Deep_Dive]] — MRL 深度解析
 - [[_concepts/vector-database]] — 向量数据库
 - [[_concepts/rag-systems]] — RAG 系统
 

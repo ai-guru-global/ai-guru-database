@@ -380,8 +380,8 @@ AI硬件选型决策树 2026:
 - **大模型训练替代**：昇腾 910C（信创首选）/ 平头哥 真武 810E/M890（阿里生态，万卡验证）
 - **CUDA 迁移**：海光 DCU（ROCm 兼容，CUDA→HIP 自动转换 90%+）
 - **推理部署**：寒武纪思元（Neuware 推理优化成熟）/ 平头哥 真武 PPU（阿里云协同）
-- **详见**: [[01_Fundamentals/AI_Hardware/Chinese_AI_Chips_Deep_Dive]] — 国产厂商完整对比  
-- **专题**: [[01_Fundamentals/AI_Hardware/T_Head_PPU_Deep_Dive]] — 平头哥真武 PPU 深度解析
+- **详见**: [[数学基础/AI_Hardware/Chinese_AI_Chips_Deep_Dive]] — 国产厂商完整对比  
+- **专题**: [[数学基础/AI_Hardware/T_Head_PPU_Deep_Dive]] — 平头哥真武 PPU 深度解析
 
 ---
 
@@ -410,10 +410,10 @@ AI硬件选型决策树 2026:
 
 - [[_concepts/gpu-interconnect]] — GPU 互联拓扑与 NVLink/NVSwitch 架构
 - [[_concepts/model-serving]] — 模型服务化部署与推理引擎
-- [[10_Deployment_Inference/Deployment_Inference]] — 部署与推理系统全景
-- [[01_Fundamentals/AI_Hardware/T_Head_PPU_Deep_Dive]] — 平头哥真武 PPU 深度解析
-- [[01_Fundamentals/AI_Hardware/T_Head_PPU_for_dummy]] — 平头哥 PPU 大白话解读
-- [[12_Architecture_Infrastructure/Architecture_Overview/AI_Infrastructure_2026]] — AI 基础设施 2026
-- [[07_Model_Training/Distributed_Training/Distributed_Training_2026]] — 分布式训练与 GPU 集群调度
-- [[01_Fundamentals/AI_Hardware/Chinese_AI_Chips_Deep_Dive]] — 国产 AI 芯片12家厂商深度解析
+- [[部署推理/Deployment_Inference]] — 部署与推理系统全景
+- [[数学基础/AI_Hardware/T_Head_PPU_Deep_Dive]] — 平头哥真武 PPU 深度解析
+- [[数学基础/AI_Hardware/T_Head_PPU_for_dummy]] — 平头哥 PPU 大白话解读
+- [[架构基建/Architecture_Overview/AI_Infrastructure_2026]] — AI 基础设施 2026
+- [[模型训练/Distributed_Training/Distributed_Training_2026]] — 分布式训练与 GPU 集群调度
+- [[数学基础/AI_Hardware/Chinese_AI_Chips_Deep_Dive]] — 国产 AI 芯片12家厂商深度解析
 - [[_concepts/heterogeneous-gpu]] — 异构 GPU 集群统一纳管

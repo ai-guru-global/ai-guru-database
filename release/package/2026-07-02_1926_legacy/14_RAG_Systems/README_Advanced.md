@@ -18,18 +18,18 @@ aliases:
 
 | 文档 | 内容 | 适用读者 |
 |------|------|----------|
-| [RAG_Advanced_2026.md](14_RAG_Systems/Advanced_RAG/RAG_Advanced_2026.md) | 混合检索、重排序、Agentic RAG | 进阶学习 |
-| [Haystack Deep Dive](14_RAG_Systems/RAG_Frameworks/Haystack_Deep_Dive.md) | 模块化 RAG 框架：Pipeline 架构、80+ 组件、评估工具 | 开发者、架构师 |
-| [LlamaIndex Deep Dive](14_RAG_Systems/RAG_Frameworks/LlamaIndex_Deep_Dive.md) | 数据连接框架：100+ 数据源、高级检索、评估工具 | 开发者、数据工程师 |
-| [Dify Deep Dive](14_RAG_Systems/RAG_Frameworks/Dify_Deep_Dive.md) | 开源 LLM 应用平台：RAG+Agent+工作流、零代码 | 产品经理、开发者 |
-| [LangFlow Deep Dive](14_RAG_Systems/RAG_Frameworks/LangFlow_Deep_Dive.md) | LangChain 可视化 IDE：拖拽构建 Pipeline | 快速原型、可视化 |
-| [Flowise Deep Dive](14_RAG_Systems/RAG_Frameworks/Flowise_Deep_Dive.md) | 低代码 Chatflow 平台：极简体验 | 非技术用户、快速原型 |
-| [Chroma Deep Dive](14_RAG_Systems/Vector_Databases/Chroma_Deep_Dive.md) | 轻量级向量数据库：零配置、本地优先、LLM 入门 | 原型开发、学习 |
-| [Qdrant Deep Dive](14_RAG_Systems/Vector_Databases/Qdrant_Deep_Dive.md) | 高性能向量数据库：混合检索、生产级性能 | 生产环境 |
-| [Milvus Deep Dive](14_RAG_Systems/Vector_Databases/Milvus_Deep_Dive.md) | 超大规模向量数据库：万亿向量、分布式、云原生 | 超大规模 |
-| [Typesense Deep Dive](14_RAG_Systems/Vector_Databases/Typesense_Deep_Dive.md) | 极速矢量搜索：毫秒级响应、模糊匹配 | 搜索优先 |
-| [Weaviate Deep Dive](14_RAG_Systems/Vector_Databases/Weaviate_Deep_Dive.md) | 混合检索向量数据库：GraphQL、原生多模态 | 多模态、生产级 |
-| [Sentence Transformers Deep Dive](14_RAG_Systems/Embeddings/Sentence_Transformers_Deep_Dive.md) | 开源 Embedding 模型：多语言支持、100+ 模型 | RAG、语义搜索 |
+| [RAG_Advanced_2026.md](RAG系统/Advanced_RAG/RAG_Advanced_2026.md) | 混合检索、重排序、Agentic RAG | 进阶学习 |
+| [Haystack Deep Dive](RAG系统/RAG_Frameworks/Haystack_Deep_Dive.md) | 模块化 RAG 框架：Pipeline 架构、80+ 组件、评估工具 | 开发者、架构师 |
+| [LlamaIndex Deep Dive](RAG系统/RAG_Frameworks/LlamaIndex_Deep_Dive.md) | 数据连接框架：100+ 数据源、高级检索、评估工具 | 开发者、数据工程师 |
+| [Dify Deep Dive](RAG系统/RAG_Frameworks/Dify_Deep_Dive.md) | 开源 LLM 应用平台：RAG+Agent+工作流、零代码 | 产品经理、开发者 |
+| [LangFlow Deep Dive](RAG系统/RAG_Frameworks/LangFlow_Deep_Dive.md) | LangChain 可视化 IDE：拖拽构建 Pipeline | 快速原型、可视化 |
+| [Flowise Deep Dive](RAG系统/RAG_Frameworks/Flowise_Deep_Dive.md) | 低代码 Chatflow 平台：极简体验 | 非技术用户、快速原型 |
+| [Chroma Deep Dive](RAG系统/Vector_Databases/Chroma_Deep_Dive.md) | 轻量级向量数据库：零配置、本地优先、LLM 入门 | 原型开发、学习 |
+| [Qdrant Deep Dive](RAG系统/Vector_Databases/Qdrant_Deep_Dive.md) | 高性能向量数据库：混合检索、生产级性能 | 生产环境 |
+| [Milvus Deep Dive](RAG系统/Vector_Databases/Milvus_Deep_Dive.md) | 超大规模向量数据库：万亿向量、分布式、云原生 | 超大规模 |
+| [Typesense Deep Dive](RAG系统/Vector_Databases/Typesense_Deep_Dive.md) | 极速矢量搜索：毫秒级响应、模糊匹配 | 搜索优先 |
+| [Weaviate Deep Dive](RAG系统/Vector_Databases/Weaviate_Deep_Dive.md) | 混合检索向量数据库：GraphQL、原生多模态 | 多模态、生产级 |
+| [Sentence Transformers Deep Dive](RAG系统/Embeddings/Sentence_Transformers_Deep_Dive.md) | 开源 Embedding 模型：多语言支持、100+ 模型 | RAG、语义搜索 |
 
 ## 框架选型
 
@@ -80,10 +80,10 @@ aliases:
 
 ## Related
 
-- [[14_RAG_Systems/RAG-in-nutshell.md]] — RAG (检索增强生成) 速成指南 (共享: embedding, rag, retrieval, vector-database)
-- [[14_RAG_Systems/RAG_Systems.md]] — RAG 系统 (RAG Systems) (共享: embedding, rag, retrieval, vector-database)
-- [[14_RAG_Systems/RAG_Frameworks/Spring_AI_RAG_Deep_Dive.md]] — Spring AI RAG 深度解析 (共享: embedding, rag, retrieval, vector-database)
+- [[RAG系统/RAG-in-nutshell.md]] — RAG (检索增强生成) 速成指南 (共享: embedding, rag, retrieval, vector-database)
+- [[RAG系统/RAG_Systems.md]] — RAG 系统 (RAG Systems) (共享: embedding, rag, retrieval, vector-database)
+- [[RAG系统/RAG_Frameworks/Spring_AI_RAG_Deep_Dive.md]] — Spring AI RAG 深度解析 (共享: embedding, rag, retrieval, vector-database)
 - [[_synthesis/rag-vector-database.md]] — RAG 系统 × 向量数据库 (共享: embedding, rag, retrieval, vector-database)
-- [[14_RAG_Systems/README.md|README]]
-- [[14_RAG_Systems/Vector_Database_for_dummy.md|Vector_Database_for_dummy]]
-- [[14_RAG_Systems/README_for_dummy.md|README_for_dummy]]
+- [[RAG系统/README.md|README]]
+- [[RAG系统/Vector_Database_for_dummy.md|Vector_Database_for_dummy]]
+- [[RAG系统/README_for_dummy.md|README_for_dummy]]

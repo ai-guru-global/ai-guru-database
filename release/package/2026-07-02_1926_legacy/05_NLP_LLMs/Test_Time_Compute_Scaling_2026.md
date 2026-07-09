@@ -624,19 +624,19 @@ if __name__ == "__main__":
 
 ## 6. 相关阅读
 
-- [[05_NLP_LLMs/Reasoning_Models/Test_Time_Compute_2026|测试时计算基础概念与实现]]
-- [[05_NLP_LLMs/Reasoning_Models/o1_Class_Reasoning_Models|o1 类推理模型详解]]
-- [[05_NLP_LLMs/Reasoning_Models/DeepSeek_R1_Technical_Analysis|DeepSeek-R1 技术分析]]
-- [[05_NLP_LLMs/Reasoning_Models/Process_Reward_Models|过程奖励模型 PRM]]
-- [[05_NLP_LLMs/LLM_Inference_Deep_Dive|LLM 推理优化深度解析]]
-- [[05_NLP_LLMs/LLM_Production_Deployment_Runbook|LLM 生产部署 Runbook]]
-- [[05_NLP_LLMs/LLM_Architectures/Reasoning_Models_2026|推理模型架构 2026]]
-- [[05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering_Complete_Guide|提示工程完整指南]]
-- [[06_Reinforcement_Learning/GRPO_Training_Deep_Dive|GRPO 训练深度指南]]
-- [[07_Model_Training/Optimization/Scaling_Laws_and_Training_Dynamics|Scaling Laws 与训练动态]]
-- [[08_Model_Evaluation/LLM_Evaluation_2026|LLM 评测 2026]]
-- [[10_Deployment_Inference/index|部署与推理优化]]
-- [[12_Architecture_Infrastructure/AI_SRE_Runbook|AI SRE Runbook]]
+- [[大模型/Reasoning_Models/Test_Time_Compute_2026|测试时计算基础概念与实现]]
+- [[大模型/Reasoning_Models/o1_Class_Reasoning_Models|o1 类推理模型详解]]
+- [[大模型/Reasoning_Models/DeepSeek_R1_Technical_Analysis|DeepSeek-R1 技术分析]]
+- [[大模型/Reasoning_Models/Process_Reward_Models|过程奖励模型 PRM]]
+- [[大模型/LLM_Inference_Deep_Dive|LLM 推理优化深度解析]]
+- [[大模型/LLM_Production_Deployment_Runbook|LLM 生产部署 Runbook]]
+- [[大模型/LLM_Architectures/Reasoning_Models_2026|推理模型架构 2026]]
+- [[大模型/Prompt_Engineering/Prompt_Engineering_Complete_Guide|提示工程完整指南]]
+- [[强化学习/GRPO_Training_Deep_Dive|GRPO 训练深度指南]]
+- [[模型训练/Optimization/Scaling_Laws_and_Training_Dynamics|Scaling Laws 与训练动态]]
+- [[模型评估/LLM_Evaluation_2026|LLM 评测 2026]]
+- [[部署推理/index|部署与推理优化]]
+- [[架构基建/AI_SRE_Runbook|AI SRE Runbook]]
 
 ---
 

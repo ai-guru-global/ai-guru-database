@@ -407,11 +407,11 @@ flowchart TB
 
 ## 🔗 相关主题
 
-- [AI 基础速成](../01_Fundamentals/Fundamentals-in-nutshell.md) —— ML 需要的数学和工程基础
-- [深度学习速成](../03_Deep_Learning/DL-in-nutshell.md) —— 神经网络进阶
+- [AI 基础速成](../数学基础/Fundamentals-in-nutshell.md) —— ML 需要的数学和工程基础
+- [深度学习速成](../深度学习/DL-in-nutshell.md) —— 神经网络进阶
 - [特征工程详解](./Feature_Engineering/Feature_Engineering.md) —— 深入特征构造与选择
-- [模型评估详解](../08_Model_Evaluation/Model_Evaluation.md) —— 全面评估方法论
-- [训练速成](../07_Model_Training/Model-Training-in-nutshell.md) —— 端到端训练流程
+- [模型评估详解](../模型评估/Model_Evaluation.md) —— 全面评估方法论
+- [训练速成](../模型训练/Model-Training-in-nutshell.md) —— 端到端训练流程
 
 ---
 
@@ -419,7 +419,7 @@ flowchart TB
 
 ## Related
 
-- [[02_Machine_Learning/Ensemble_Learning/Ensemble_Learning]] — 集成学习 (Ensemble Learning) - 完全指南 (共享: machine-learning, ml, supervised, unsupervised)
-- [[02_Machine_Learning/Feature_Engineering/Feature_Engineering]] — 特征工程 (Feature Engineering) (共享: machine-learning, ml, supervised, unsupervised)
-- [[02_Machine_Learning/Feature_Engineering/Feature_Engineering_for_dummy]] — 特征工程 - 小白版 (共享: machine-learning, ml, supervised, unsupervised)
-- [[02_Machine_Learning/README]] — 02 经典机器学习 (Classical Machine Learning) (共享: machine-learning, ml, supervised, unsupervised)
+- [[机器学习/Ensemble_Learning/Ensemble_Learning]] — 集成学习 (Ensemble Learning) - 完全指南 (共享: machine-learning, ml, supervised, unsupervised)
+- [[机器学习/Feature_Engineering/Feature_Engineering]] — 特征工程 (Feature Engineering) (共享: machine-learning, ml, supervised, unsupervised)
+- [[机器学习/Feature_Engineering/Feature_Engineering_for_dummy]] — 特征工程 - 小白版 (共享: machine-learning, ml, supervised, unsupervised)
+- [[机器学习/README]] — 02 经典机器学习 (Classical Machine Learning) (共享: machine-learning, ml, supervised, unsupervised)

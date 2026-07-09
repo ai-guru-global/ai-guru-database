@@ -10,8 +10,8 @@ relationships:
   - target: "_concepts/rag-systems"
     type: related_to
 sources:
-  - 15_Agent_Production/Agent_Foundations/AI_Agents.md
-  - 14_RAG_Systems/README.md
+  - Agent/Agent_Foundations/AI_Agents.md
+  - RAG系统/README.md
 summary: "Agent 记忆系统让 Agent 跨步骤、跨会话保持信息。短期记忆（上下文窗口）处理当前任务，长期记忆（向量库/知识图谱）沉淀经验，情景记忆记录过往交互，三者配合让 Agent 从'金鱼记忆'进化为'有经验的学习者'。"
 provenance:
   extracted: 0.7
@@ -97,5 +97,5 @@ aliases:
 - [[_concepts/rag-systems|RAG 系统]] — 记忆检索的技术基础
 - [[_concepts/agent-planning|Agent 规划]] — 规划依赖记忆中的经验
 - [[_concepts/kv-cache|KV Cache]] — 短期记忆的底层优化
-- [[14_RAG_Systems/README|RAG 系统]] — 检索增强章节
-- [[15_Agent_Production/Agent_Foundations/AI_Agents|AI Agents 详解]]
+- [[RAG系统/README|RAG 系统]] — 检索增强章节
+- [[Agent/Agent_Foundations/AI_Agents|AI Agents 详解]]

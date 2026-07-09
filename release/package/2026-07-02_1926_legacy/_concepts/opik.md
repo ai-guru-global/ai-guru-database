@@ -8,7 +8,7 @@ relationships:
   - target: "_concepts/agent-evaluation"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "Opik 是 Comet 开源的 LLM 可观测性平台——提供 LLM 调用追踪、Agent 调试、自动评估、成本监控等功能。支持 LangChain/LlamaIndex/OpenAI 等主流框架，是 LLM 应用生产化的关键基础设施。"
 provenance:
   extracted: 0.15

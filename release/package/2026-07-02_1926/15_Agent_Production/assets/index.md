@@ -8,8 +8,8 @@ sources: []
 
 # Assets
 
-This page indexes the contents of `15_Agent_Production/assets`.
+This page indexes the contents of `Agent/assets`.
 
 ## Subdirectories
 
-- [[15_Agent_Production/assets/the-anatomy-of-an-agent-harness.assets/index|The Anatomy Of An Agent Harness.assets]]
+- [[Agent/assets/the-anatomy-of-an-agent-harness.assets/index|The Anatomy Of An Agent Harness.assets]]

@@ -55,4 +55,4 @@ validator.save_expectation_suite(discard_failed_expectations=False)
 - [[_concepts/data-validation|Data Validation]]
 - [[_concepts/pandera|Pandera]]
 - [[_concepts/mlops|MLOps]]
-- [[11_MLOps_Pipeline/Troubleshooting/Data_Validation_Failure_Runbook|数据验证失败 Runbook]]
+- [[MLOps/Troubleshooting/Data_Validation_Failure_Runbook|数据验证失败 Runbook]]

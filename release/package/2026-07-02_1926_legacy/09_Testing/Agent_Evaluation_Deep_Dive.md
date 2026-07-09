@@ -554,8 +554,8 @@ Agent 评估应作为 CI/CD 门控的一部分，但需平衡速度与覆盖度�
 
 ## Related
 
-- [[09_Testing/AI_Test_Framework_2026|AI 系统测试框架 (AI Test Framework 2026)]]
-- [[09_Testing/RAGAS_Deep_Dive|RAGAS: RAG 评估框架]]
-- [[09_Testing/Testing_Frameworks/DeepEval_Deep_Dive|DeepEval: LLM 评估框架]]
-- [[09_Testing/AB_Testing_AI_Systems|AI 系统 A/B 测试]]
-- [[15_Agent_Production/Agent_Production_Deployment_Runbook|Agent 生产部署 Runbook]]
+- [[AI测试/AI_Test_Framework_2026|AI 系统测试框架 (AI Test Framework 2026)]]
+- [[AI测试/RAGAS_Deep_Dive|RAGAS: RAG 评估框架]]
+- [[AI测试/Testing_Frameworks/DeepEval_Deep_Dive|DeepEval: LLM 评估框架]]
+- [[AI测试/AB_Testing_AI_Systems|AI 系统 A/B 测试]]
+- [[Agent/Agent_Production_Deployment_Runbook|Agent 生产部署 Runbook]]

@@ -10,7 +10,7 @@ relationships:
   - target: "_concepts/langsmith"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "开源的 AI 记忆层基础设施，为 LLM 应用提供自动化的长期记忆管理，支持用户/会话/Agent 三个维度的记忆持久化和个性化检索。"
 provenance:
   extracted: 0.55

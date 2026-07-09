@@ -16,8 +16,8 @@ relationships:
   - target: "_concepts/mcp"
     type: related_to
 sources:
-  - 15_Agent_Production/Agent_Frameworks/LangChain_Deep_Dive.md
-  - 15_Agent_Production/Agent_Frameworks/LangChain_Agents_Deep_Dive.md
+  - Agent/Agent_Frameworks/LangChain_Deep_Dive.md
+  - Agent/Agent_Frameworks/LangChain_Agents_Deep_Dive.md
 summary: "LangChain 是最流行的 LLM 应用开发框架之一，提供 Chain、Agent、Tool、Memory、RAG 等抽象，帮助开发者快速构建基于大模型的应用和工作流。"
 provenance:
   extracted: 0.8
@@ -95,8 +95,8 @@ aliases:
 
 ## Related
 
-- [[15_Agent_Production/Agent_Frameworks/LangChain_Deep_Dive]] — LangChain 深度解析
-- [[15_Agent_Production/Agent_Frameworks/LangChain_Agents_Deep_Dive]] — LangChain Agents 深度解析
+- [[Agent/Agent_Frameworks/LangChain_Deep_Dive]] — LangChain 深度解析
+- [[Agent/Agent_Frameworks/LangChain_Agents_Deep_Dive]] — LangChain Agents 深度解析
 - [[_concepts/agent-framework]] — Agent 框架
 - [[_concepts/rag-patterns]] — RAG
 - [[_concepts/llamaindex]] — LlamaIndex

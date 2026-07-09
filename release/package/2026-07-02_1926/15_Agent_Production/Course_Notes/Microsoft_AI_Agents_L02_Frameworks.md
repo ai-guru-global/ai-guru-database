@@ -132,8 +132,8 @@ Azure AI Agent Service 于 Microsoft Ignite 2024 发布，是一个托管云服�
 
 ## 关联阅读
 
-- [[15_Agent_Production/Agent_Frameworks/README]] — 主流 Agent 框架概览
-- [[15_Agent_Production/Agent_Frameworks/AutoGen_Deep_Dive]] — 微软 AutoGen 多代理框架
-- [[12_Architecture_Infrastructure/AI_Gateway/AI_Gateway_2026]] — AI 网关与企业级部署
-- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents_L01_Intro]] — AI Agent 基础概念
-- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents_L04_Tool_Use]] — 工具使用设计模式
+- [[Agent/Agent_Frameworks/README]] — 主流 Agent 框架概览
+- [[Agent/Agent_Frameworks/AutoGen_Deep_Dive]] — 微软 AutoGen 多代理框架
+- [[架构基建/AI_Gateway/AI_Gateway_2026]] — AI 网关与企业级部署
+- [[Agent/Course_Notes/Microsoft_AI_Agents_L01_Intro]] — AI Agent 基础概念
+- [[Agent/Course_Notes/Microsoft_AI_Agents_L04_Tool_Use]] — 工具使用设计模式

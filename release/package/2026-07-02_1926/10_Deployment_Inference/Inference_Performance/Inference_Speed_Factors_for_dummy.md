@@ -194,6 +194,6 @@ KV Cache 是前面所有 token 的记忆。
 
 ## Related
 
-- [[10_Deployment_Inference/Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]]
+- [[部署推理/Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]]
 - [[_concepts/inference-performance]] — 推理性能概念卡
-- [[10_Deployment_Inference/Inference_Performance/README|推理性能专题]]
+- [[部署推理/Inference_Performance/README|推理性能专题]]

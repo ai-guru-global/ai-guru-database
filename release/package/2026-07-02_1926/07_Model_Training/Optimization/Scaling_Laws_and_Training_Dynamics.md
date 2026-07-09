@@ -324,7 +324,7 @@ Chinchilla 论文直接改变了 LLM 训练的设计范式：
 3. **DeepSeek**: DeepSeek-V2/V3 的 MoE 设计也参考了 scaling laws
 4. **成本节省**: 相同 compute 下，compute-optimal 模型可比 under-trained 模型好 **数个百分点** 的 loss
 
-详细案例分析见 [LLaMA Deep Dive](20_Papers_and_Research/Architecture/LLaMA_Deep_Dive.md)。
+详细案例分析见 [LLaMA Deep Dive](论文精读/Architecture/LLaMA_Deep_Dive.md)。
 
 ---
 
@@ -519,7 +519,7 @@ Lee et al. (2022) 系统研究了去重对 LLM 训练的影响：
 2. **Domain weights 是关键超参**: 不同领域（代码、数学、网页、书籍）的比例直接决定下游能力
 3. **可复现的 data curation pipeline**: 开源了完整的 DCLM baseline
 
-> **与 Distributed Training 的关联**: 数据 quality 和 deduplication 的 preprocessing 通常需要大量存储和 I/O，这在 [分布式训练](07_Model_Training/Distributed_Training/Distributed_Training_2026.md) 中是一个重要的工程考量。
+> **与 Distributed Training 的关联**: 数据 quality 和 deduplication 的 preprocessing 通常需要大量存储和 I/O，这在 [分布式训练](模型训练/Distributed_Training/Distributed_Training_2026.md) 中是一个重要的工程考量。
 
 ---
 
@@ -1037,7 +1037,7 @@ flowchart LR
 - **DeepSeek-V3**: 671B total, 37B active (top-8/256), 训练成本 ~$5.5M
 - **Mixtral 8x7B**: 46.7B total, 12.9B active, 性能接近 dense 13B
 
-详见 [Mixture of Experts Deep Dive](20_Papers_and_Research/Architecture/Mixture_of_Experts_Deep_Dive.md)。
+详见 [Mixture of Experts Deep Dive](论文精读/Architecture/Mixture_of_Experts_Deep_Dive.md)。
 
 ### 10.3 Agent Scaling
 
@@ -1146,10 +1146,10 @@ flowchart TB
 
 ### 相关文档
 
-- [分布式训练 (Distributed Training 2026)](07_Model_Training/Distributed_Training/Distributed_Training_2026.md) — 大规模训练的分布式实现
-- [混合精度训练 (Mixed Precision Training)](07_Model_Training/Optimization/Mixed_Precision_Training.md) — 训练效率优化的基础
-- [LLM 架构 (LLM Architectures)](05_NLP_LLMs/LLM_Architectures/LLM_Architectures.md) — 理解 N, D 如何映射到模型结构
-- [LLaMA 论文解读 (LLaMA Deep Dive)](20_Papers_and_Research/Architecture/LLaMA_Deep_Dive.md) — Chinchilla scaling laws 的经典实践案例
+- [分布式训练 (Distributed Training 2026)](模型训练/Distributed_Training/Distributed_Training_2026.md) — 大规模训练的分布式实现
+- [混合精度训练 (Mixed Precision Training)](模型训练/Optimization/Mixed_Precision_Training.md) — 训练效率优化的基础
+- [LLM 架构 (LLM Architectures)](大模型/LLM_Architectures/LLM_Architectures.md) — 理解 N, D 如何映射到模型结构
+- [LLaMA 论文解读 (LLaMA Deep Dive)](论文精读/Architecture/LLaMA_Deep_Dive.md) — Chinchilla scaling laws 的经典实践案例
 
 ---
 

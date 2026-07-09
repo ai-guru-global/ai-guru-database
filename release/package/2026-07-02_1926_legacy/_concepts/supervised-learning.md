@@ -12,7 +12,7 @@ relationships:
     type: related_to
   - target: "_concepts/automl"
     type: related_to
-sources: [02_Machine_Learning/Supervised_Learning/Supervised_Learning.md]
+sources: [机器学习/Supervised_Learning/Supervised_Learning.md]
 summary: 利用标注数据学习输入到输出的映射，分为分类和回归两大任务，是机器学习核心范式。
 provenance:
   extracted: 0.80
@@ -104,9 +104,9 @@ SVM 寻找最大间隔超平面，核技巧（线性核、多项式核、RBF 核
 
 ## Related
 
-- [[02_Machine_Learning/Ensemble_Learning/Ensemble_Learning]] — 集成学习 (Ensemble Learning) - 完全指南 (共享: ml, supervised)
-- [[02_Machine_Learning/Feature_Engineering/Feature_Engineering]] — 特征工程 (Feature Engineering) (共享: ml, supervised)
-- [[02_Machine_Learning/Feature_Engineering/Feature_Engineering_for_dummy]] — 特征工程 - 小白版 (共享: ml, supervised)
-- [[02_Machine_Learning/ML-in-nutshell]] — 机器学习速成指南 (共享: ml, supervised)
+- [[机器学习/Ensemble_Learning/Ensemble_Learning]] — 集成学习 (Ensemble Learning) - 完全指南 (共享: ml, supervised)
+- [[机器学习/Feature_Engineering/Feature_Engineering]] — 特征工程 (Feature Engineering) (共享: ml, supervised)
+- [[机器学习/Feature_Engineering/Feature_Engineering_for_dummy]] — 特征工程 - 小白版 (共享: ml, supervised)
+- [[机器学习/ML-in-nutshell]] — 机器学习速成指南 (共享: ml, supervised)
 - [[_concepts/recommendation-systems.md|recommendation-systems]]
 - [[_concepts/anomaly-detection.md|anomaly-detection]]

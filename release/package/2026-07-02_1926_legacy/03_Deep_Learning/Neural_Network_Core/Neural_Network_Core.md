@@ -792,20 +792,20 @@ $$\mathbf{h}_i = \begin{cases} 0 & \text{with prob } p \\ \frac{1}{1-p} \mathbf{
 ## 7. 与其他主题的关联 (Connections)
 
 ### 7.1 前置知识
-- [**线性代数**](../../01_Fundamentals/Linear_Algebra/Linear_Algebra.md): 矩阵乘法、特征分解
-- [**微积分**](../../01_Fundamentals/): 梯度、链式法则、优化
-- [**概率统计**](../../01_Fundamentals/Probability_Statistics/Probability_Statistics.md): 最大似然、贝叶斯推断
+- [**线性代数**](../../数学基础/Linear_Algebra/Linear_Algebra.md): 矩阵乘法、特征分解
+- [**微积分**](../../数学基础/): 梯度、链式法则、优化
+- [**概率统计**](../../数学基础/Probability_Statistics/Probability_Statistics.md): 最大似然、贝叶斯推断
 
 ### 7.2 横向关联
 - [**优化算法**](../Optimization/Optimization.md): SGD/Adam/学习率调度
-- [**卷积神经网络**](../../04_Computer_Vision/): CNN 架构详解
-- [**循环神经网络**](../../05_NLP_LLMs/Sequence_Models/): LSTM/GRU
-- [**Transformer**](../../05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution.md): 注意力机制
+- [**卷积神经网络**](../../计算机视觉/): CNN 架构详解
+- [**循环神经网络**](../../大模型/Sequence_Models/): LSTM/GRU
+- [**Transformer**](../../大模型/Transformer_Revolution/Transformer_Revolution.md): 注意力机制
 
 ### 7.3 纵向进阶
-- [**模型压缩**](../../10_Deployment_Inference/Deployment_Inference.md): 剪枝、量化、蒸馏
-- [**迁移学习**](../../05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques.md): 预训练 + 微调
-- [**神经架构搜索**](../../11_MLOps_Pipeline/MLOps_Pipeline.md): AutoML
+- [**模型压缩**](../../部署推理/Deployment_Inference.md): 剪枝、量化、蒸馏
+- [**迁移学习**](../../大模型/Fine_tuning_Techniques/Fine_tuning_Techniques.md): 预训练 + 微调
+- [**神经架构搜索**](../../MLOps/MLOps_Pipeline.md): AutoML
 
 ## 8. 面试高频问题 (Interview FAQs)
 

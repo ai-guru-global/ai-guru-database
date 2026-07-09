@@ -10,9 +10,9 @@ relationships:
   - target: "_concepts/agentic-rag"
     type: used_by
 sources:
-  - 15_Agent_Production/GenAI_L11_Integrating_with_Function_Calling.md
-  - 15_Agent_Production/Agent_Skills/Agent_Skills_Ecosystem_Catalog.md
-  - 15_Agent_Production/Agent_Protocols/MCP_Deep_Dive.md
+  - Agent/GenAI_L11_Integrating_with_Function_Calling.md
+  - Agent/Agent_Skills/Agent_Skills_Ecosystem_Catalog.md
+  - Agent/Agent_Protocols/MCP_Deep_Dive.md
 summary: "工具调用（Tool Calling / Function Calling）让大模型不再只输出文字，而是能根据用户需求生成调用外部工具（API、数据库、代码解释器等）的参数。它是 Agent 能‘动手’的基础。"
 provenance:
   extracted: 0.8
@@ -74,4 +74,4 @@ aliases:
 - [[_concepts/tool-calling-safety]] — 工具调用安全
 - [[_concepts/agentic-rag]] — Agentic RAG
 - [[_concepts/mcp]] — Model Context Protocol
-- [[15_Agent_Production/GenAI_L11_Integrating_with_Function_Calling]] — 集成函数调用
+- [[Agent/GenAI_L11_Integrating_with_Function_Calling]] — 集成函数调用

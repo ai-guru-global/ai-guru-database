@@ -10,7 +10,7 @@ relationships:
   - target: "_concepts/deepseek-models"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "Moonshot AI（月之暗面）是中国 AI 公司，旗下 Kimi 智能助手以超长上下文（200K-2M tokens）著称。AI Stack 预置 Kimi-K2.5/K2.6 模型。"
 provenance:
   extracted: 0.30
@@ -103,4 +103,4 @@ AI Stack 模型生态
 - [[_concepts/long-context-models]] — 长上下文模型
 - [[_concepts/deepseek-models]] — DeepSeek 系列
 - [[_concepts/zhipu-glm]] — 智谱 GLM 系列
-- [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析

@@ -103,4 +103,4 @@ updated: 2026-06-24
 
 - [[_concepts/data-cleaning-pipeline]] — 数据清洗流水线
 - [[_synthesis/pretraining-synthetic-data]] — 预训练合成数据综合
-- [[11_MLOps_Pipeline/Orchestration/Data_Pipeline_Orchestration]] — 数据流水线
+- [[MLOps/Orchestration/Data_Pipeline_Orchestration]] — 数据流水线

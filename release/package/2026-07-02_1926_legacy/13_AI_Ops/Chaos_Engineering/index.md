@@ -7,9 +7,9 @@ updated: 2026-07-02
 
 # Chaos Engineering
 
-This page indexes the contents of `13_AI_Ops/Chaos_Engineering`.
+This page indexes the contents of `AI运维/Chaos_Engineering`.
 
 ## Files
 
 - Chaos Engineering For AI Systems 2
-- [[13_AI_Ops/Chaos_Engineering/Chaos_Engineering_for_AI_Systems|Chaos Engineering For AI Systems]]
+- [[AI运维/Chaos_Engineering/Chaos_Engineering_for_AI_Systems|Chaos Engineering For AI Systems]]

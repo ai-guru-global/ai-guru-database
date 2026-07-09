@@ -10,7 +10,7 @@ relationships:
   - target: "_concepts/flash-attn"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "NVIDIA 官方的 PyTorch 到 TensorRT 编译器，将 PyTorch 模型直接编译为 TensorRT 优化引擎，在保持 PyTorch 开发体验的同时获得 TensorRT 的推理性能。"
 provenance:
   extracted: 0.55

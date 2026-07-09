@@ -14,7 +14,7 @@ relationships:
   - target: "_concepts/weaviate"
     type: related_to
 sources:
-  - 14_RAG_Systems/Vector_Databases/Milvus_Deep_Dive.md
+  - RAG系统/Vector_Databases/Milvus_Deep_Dive.md
 summary: "Milvus 是 Zilliz 开源的分布式向量数据库，专为海量 Embedding 检索设计，支持 GPU 索引、多副本、混合搜索（向量+标量），是 RAG 和企业级语义搜索的主流选择。"
 provenance:
   extracted: 0.8
@@ -105,7 +105,7 @@ Milvus Cluster
 
 ## Related
 
-- [[14_RAG_Systems/Vector_Databases/Milvus_Deep_Dive]] — Milvus 深度解析
+- [[RAG系统/Vector_Databases/Milvus_Deep_Dive]] — Milvus 深度解析
 - [[_concepts/vector-database]] — 向量数据库
 - [[_concepts/rag-patterns]] — RAG
 - embedding — Embedding

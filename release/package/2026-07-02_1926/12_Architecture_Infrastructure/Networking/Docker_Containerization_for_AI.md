@@ -314,4 +314,4 @@ jobs:
 - [[Kubernetes_Core_Components_Deep_Dive]]: K8s fundamentals
 - [[AI_Stack_Container_Runtime_Guide]]: Container runtime for AI
 - [[CI_CD_Pipeline_AI_2026]]: CI/CD pipelines
-- [[12_Architecture_Infrastructure/Architecture_Overview/AI_Infrastructure_2026]]: GPU management
+- [[架构基建/Architecture_Overview/AI_Infrastructure_2026]]: GPU management

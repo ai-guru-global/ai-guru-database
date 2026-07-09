@@ -10,7 +10,7 @@ relationships:
   - target: "_concepts/swift"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "QLoRA 是 4-bit 量化 + LoRA 微调的组合技术——将基座模型量化到 4-bit 存储，仅训练 LoRA 适配器，使 65B 模型微调可在单张 48GB GPU 上完成。"
 provenance:
   extracted: 0.20
@@ -109,4 +109,4 @@ model.print_trainable_parameters()
 - [[_concepts/llm-quantization]] — LLM 量化
 - [[_concepts/swift]] — SWIFT 微调框架
 - [[_concepts/fp8]] — FP8 精度格式
-- [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析

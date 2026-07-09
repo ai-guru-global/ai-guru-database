@@ -640,11 +640,11 @@ flowchart TB
 
 | 相关文档 | 关系 | 详见 |
 |---------|------|------|
-| DeepSeek 深度解读 | 完整 DeepSeek 生态分析 | [../05_NLP_LLMs/Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive.md](05_NLP_LLMs/Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive.md) |
-| MoE 深度解读 | MoE 架构系统分析 | [Mixture_of_Experts_Deep_Dive.md](20_Papers_and_Research/Architecture/Mixture_of_Experts_Deep_Dive.md) |
-| Chinchilla 深度解读 | Scaling Laws 基础 | [Chinchilla_Deep_Dive.md](20_Papers_and_Research/Scaling/Chinchilla_Deep_Dive.md) |
-| Scaling Laws 深度解读 | Kaplan 原始工作 | [Scaling_Laws_Deep_Dive.md](20_Papers_and_Research/Scaling/Scaling_Laws_Deep_Dive.md) |
-| LLaMA 深度解读 | 开源 LLM 对比 | [LLaMA_Deep_Dive.md](20_Papers_and_Research/Architecture/LLaMA_Deep_Dive.md) |
+| DeepSeek 深度解读 | 完整 DeepSeek 生态分析 | [../大模型/Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive.md](大模型/Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive.md) |
+| MoE 深度解读 | MoE 架构系统分析 | [Mixture_of_Experts_Deep_Dive.md](论文精读/Architecture/Mixture_of_Experts_Deep_Dive.md) |
+| Chinchilla 深度解读 | Scaling Laws 基础 | [Chinchilla_Deep_Dive.md](论文精读/Scaling/Chinchilla_Deep_Dive.md) |
+| Scaling Laws 深度解读 | Kaplan 原始工作 | [Scaling_Laws_Deep_Dive.md](论文精读/Scaling/Scaling_Laws_Deep_Dive.md) |
+| LLaMA 深度解读 | 开源 LLM 对比 | [LLaMA_Deep_Dive.md](论文精读/Architecture/LLaMA_Deep_Dive.md) |
 
 ---
 
@@ -693,4 +693,4 @@ flowchart TB
 
 ## Related
 
-- [[20_Papers_and_Research/README|22 经典与必读 AI 论文清单 (Essential AI Papers)]]
+- [[论文精读/README|22 经典与必读 AI 论文清单 (Essential AI Papers)]]

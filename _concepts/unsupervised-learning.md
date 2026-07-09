@@ -10,7 +10,7 @@ relationships:
     type: related_to
   - target: "_concepts/anomaly-detection"
     type: related_to
-sources: [02_Machine_Learning/Unsupervised_Learning/Unsupervised_Learning.md]
+sources: [机器学习/Unsupervised_Learning/Unsupervised_Learning.md]
 summary: 从无标签数据中发现潜在结构和模式，包括聚类、降维、密度估计等核心任务。
 provenance:
   extracted: 0.80
@@ -109,10 +109,10 @@ updated: 2026-05-31T00:00:00Z
 
 ## Related
 
-- [[02_Machine_Learning/Ensemble_Learning/Ensemble_Learning]] — 集成学习 (Ensemble Learning) - 完全指南 (共享: ml, unsupervised)
-- [[02_Machine_Learning/Feature_Engineering/Feature_Engineering]] — 特征工程 (Feature Engineering) (共享: ml, unsupervised)
-- [[02_Machine_Learning/Feature_Engineering/Feature_Engineering_for_dummy]] — 特征工程 - 小白版 (共享: ml, unsupervised)
-- [[02_Machine_Learning/ML-in-nutshell]] — 机器学习速成指南 (共享: ml, unsupervised)
+- [[机器学习/Ensemble_Learning/Ensemble_Learning]] — 集成学习 (Ensemble Learning) - 完全指南 (共享: ml, unsupervised)
+- [[机器学习/Feature_Engineering/Feature_Engineering]] — 特征工程 (Feature Engineering) (共享: ml, unsupervised)
+- [[机器学习/Feature_Engineering/Feature_Engineering_for_dummy]] — 特征工程 - 小白版 (共享: ml, unsupervised)
+- [[机器学习/ML-in-nutshell]] — 机器学习速成指南 (共享: ml, unsupervised)
 - [[_concepts/time-series-analysis.md|time-series-analysis]]
 - [[_concepts/automl.md|automl]]
 - [[_concepts/ensemble-learning.md|ensemble-learning]]

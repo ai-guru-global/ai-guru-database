@@ -405,8 +405,8 @@ collection.add(
 
 ## Related
 
-- [[14_RAG_Systems/RAG-in-nutshell.md|RAG-in-nutshell]]
-- [[14_RAG_Systems/RAG_Systems.md|RAG_Systems]]
-- [[14_RAG_Systems/README_Advanced.md|README_Advanced]]
-- [[14_RAG_Systems/RAG_Frameworks/Spring_AI_RAG_Deep_Dive.md|Spring_AI_RAG_Deep_Dive]]
+- [[RAG系统/RAG-in-nutshell.md|RAG-in-nutshell]]
+- [[RAG系统/RAG_Systems.md|RAG_Systems]]
+- [[RAG系统/README_Advanced.md|README_Advanced]]
+- [[RAG系统/RAG_Frameworks/Spring_AI_RAG_Deep_Dive.md|Spring_AI_RAG_Deep_Dive]]
 - [[_synthesis/rag-vector-database.md|rag-vector-database]]

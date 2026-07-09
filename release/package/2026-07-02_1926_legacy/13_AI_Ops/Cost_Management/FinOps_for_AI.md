@@ -73,4 +73,4 @@ tier: supporting
 - [[_concepts/finops|FinOps]]
 - [[_concepts/gpu-sharing|GPU Sharing]]
 - [[_concepts/hami|HAMi]]
-- [[13_AI_Ops/Cost_Management/GPU_Cost_Optimization|GPU 成本优化]]
+- [[AI运维/Cost_Management/GPU_Cost_Optimization|GPU 成本优化]]

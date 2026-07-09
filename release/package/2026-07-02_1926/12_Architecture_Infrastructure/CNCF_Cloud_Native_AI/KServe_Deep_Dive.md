@@ -17,7 +17,7 @@ sources: []
 
 > **一句话理解**: KServe 是 CNCF 孵化项目，把「模型 → Kubernetes 上可弹性、可灰度、可观测的推理 API」变成一个声明式 CRD，是云原生推理的事实标准底座。
 
-> 📐 **概念方法论**: KServe 解决的是「推理服务的标准化抽象」——它不管底层用 vLLM 还是 Triton，只定义 `InferenceService` 这个统一接口。底层引擎如何选（vLLM / SGLang / TGI / Triton）见 [[10_Deployment_Inference/Inference_Engines/LLM_Inference_Engine_Selection_Guide]]，KServe 把它们编排进 K8s。
+> 📐 **概念方法论**: KServe 解决的是「推理服务的标准化抽象」——它不管底层用 vLLM 还是 Triton，只定义 `InferenceService` 这个统一接口。底层引擎如何选（vLLM / SGLang / TGI / Triton）见 [[部署推理/Inference_Engines/LLM_Inference_Engine_Selection_Guide]]，KServe 把它们编排进 K8s。
 
 ---
 
@@ -418,7 +418,7 @@ curl -s http://qwen-llm.default.${INGRESS_HOST}.nip.io/v1/chat/completions \
 | `autoscaling.knative.dev/window` | 扩缩容窗口 | `60s`–`300s` |
 | `serving.kserve.io/enable-prometheus-scraping` | Prometheus 抓取 | `"true"` |
 | `nvidia.com/gpu`（resources.limits） | GPU 分配 | 1 / 2 / 4 / 8 |
-| `VLLM_*` 环境变量 | 透传给 vLLM | 见 [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive]] |
+| `VLLM_*` 环境变量 | 透传给 vLLM | 见 [[部署推理/Inference_Engines/vLLM_Deep_Dive]] |
 | `storageUri` 协议前缀 | 模型来源 | `hf://` / `s3://` / `gs://` / `oci://` / `azure://` / `pvc://` |
 | `autoscaling.knative.dev/min-scale` | Knative 保底副本（Serverless 不缩到 0） | LLM: `1` |
 | `serving.kserve.io/pvc-name` | 挂载已有 PVC（权重预热，省下载） | `model-cache-pvc` |
@@ -648,7 +648,7 @@ kubectl rollout status deploy/kserve-controller-manager -n kserve-serverless
                └── 纯本地单机             → Ollama / vLLM 裸跑
 ```
 
-> 与底层引擎选型不冲突：KServe 编排层 + vLLM 引擎层是黄金组合。见 [[10_Deployment_Inference/Inference_Engines/LLM_Inference_Engine_Selection_Guide]]。
+> 与底层引擎选型不冲突：KServe 编排层 + vLLM 引擎层是黄金组合。见 [[部署推理/Inference_Engines/LLM_Inference_Engine_Selection_Guide]]。
 
 ---
 
@@ -678,6 +678,6 @@ kubectl rollout status deploy/kserve-controller-manager -n kserve-serverless
 
 - README —— CNCF 云原生 LLM 项目全景
 - [[CNCF_Cloud_Native_AI/KAITO_Deep_Dive]] —— 更轻量的「一键 LLM」兄弟项目
-- [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive]] —— KServe 默认 LLM 引擎深度解析
-- [[10_Deployment_Inference/Inference_Engines/LLM_Inference_Engine_Selection_Guide]] —— 底层引擎如何选
-- [[12_Architecture_Infrastructure/CNCF_Cloud_Native_AI/Knative_Deep_Dive]] —— KServe 的弹性底座
+- [[部署推理/Inference_Engines/vLLM_Deep_Dive]] —— KServe 默认 LLM 引擎深度解析
+- [[部署推理/Inference_Engines/LLM_Inference_Engine_Selection_Guide]] —— 底层引擎如何选
+- [[架构基建/CNCF_Cloud_Native_AI/Knative_Deep_Dive]] —— KServe 的弹性底座

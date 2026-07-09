@@ -10,7 +10,7 @@ relationships:
   - target: "_concepts/triton-server"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "通过 IO 感知的分块算法大幅降低 Transformer 注意力计算的显存占用与延迟，已成为 LLM 推理/训练的事实标准内核。"
 provenance:
   extracted: 0.55

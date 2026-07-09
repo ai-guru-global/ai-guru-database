@@ -12,7 +12,7 @@ sources: []
 # LLMOps 速查表
 
 > **核心洞察**：LLMOps ≠ 传统 MLOps。LLM 应用的不确定性（temperature > 0 时不可重现）、高 token 成本、Prompt 敏感性使得 LLMOps 需要**三层治理**：Prompt/数据 → 推理服务 → 业务效果。
-> 详见 [[11_MLOps_Pipeline]] · [[13_AI_Ops]] · [[LLMOps_2026]] · [[Cost_Optimization_AI_Deep_Dive]] · [[SLO_Error_Budget_AI_Deep_Dive]]
+> 详见 [[MLOps]] · [[AI运维]] · [[LLMOps_2026]] · [[Cost_Optimization_AI_Deep_Dive]] · [[SLO_Error_Budget_AI_Deep_Dive]]
 
 ## LLMOps 三大治理层
 
@@ -392,4 +392,4 @@ def is_significant(success_a, n_a, success_b, n_b, alpha=0.05):
 
 ---
 
-**参见**：[[11_MLOps_Pipeline]] · [[13_AI_Ops]] · [[LLMOps_2026]] · [[Cost_Optimization_AI_Deep_Dive]] · [[SLO_Error_Budget_AI_Deep_Dive]] · [[LLM_Observability]] · [[_concepts/observability]]
+**参见**：[[MLOps]] · [[AI运维]] · [[LLMOps_2026]] · [[Cost_Optimization_AI_Deep_Dive]] · [[SLO_Error_Budget_AI_Deep_Dive]] · [[LLM_Observability]] · [[_concepts/observability]]

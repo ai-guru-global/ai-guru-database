@@ -94,4 +94,4 @@ EOF
 - [[_concepts/kubernetes|Kubernetes]] — K8s 编排平台
 - [[_concepts/apsara-stack|飞天企业版 Apsara Stack]] — 阿里云专有云
 - [[_concepts/containerd|containerd]] — 容器运行时
-- [[12_Architecture_Infrastructure/Architecture_Overview/AI_Infrastructure_2026]] — AI 基础设施 2026
+- [[架构基建/Architecture_Overview/AI_Infrastructure_2026]] — AI 基础设施 2026

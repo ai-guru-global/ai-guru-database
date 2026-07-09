@@ -115,6 +115,6 @@ kubectl exec -it deploy/postgres -n mlops -- psql -U mlflow -c "SELECT * FROM pg
 
 ## Related
 
-- [[11_MLOps_Pipeline/Troubleshooting/MLflow_Tracking_Server_Unreachable|MLflow Tracking Server 不可达]]
-- [[11_MLOps_Pipeline/Troubleshooting/Data_Validation_Failure_Runbook|数据验证失败 Runbook]]
-- [[11_MLOps_Pipeline/Troubleshooting/Model_Version_Rollback_Playbook|模型版本回滚 Runbook]]
+- [[MLOps/Troubleshooting/MLflow_Tracking_Server_Unreachable|MLflow Tracking Server 不可达]]
+- [[MLOps/Troubleshooting/Data_Validation_Failure_Runbook|数据验证失败 Runbook]]
+- [[MLOps/Troubleshooting/Model_Version_Rollback_Playbook|模型版本回滚 Runbook]]

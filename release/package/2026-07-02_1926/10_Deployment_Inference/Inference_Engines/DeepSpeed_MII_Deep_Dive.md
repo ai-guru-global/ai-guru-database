@@ -448,15 +448,15 @@ DeepSpeed-Chat 是 RLHF 训练流水线（SFT → RM → PPO），MII 是推理�
 
 ## Related
 
-- [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive]] — vLLM 深度解析
-- [[10_Deployment_Inference/Inference_Engines/SGLang_Deep_Dive]] — SGLang 深度解析
-- [[10_Deployment_Inference/Inference_Engines/TGI_Deep_Dive]] — TGI 深度解析
-- [[10_Deployment_Inference/Inference_Engines/LLM_Inference_Engine_Selection_Guide]] — 全局选型指南
-- [[07_Model_Training/Distributed_Training/DeepSpeed_Deep_Dive]] — DeepSpeed 训练框架
+- [[部署推理/Inference_Engines/vLLM_Deep_Dive]] — vLLM 深度解析
+- [[部署推理/Inference_Engines/SGLang_Deep_Dive]] — SGLang 深度解析
+- [[部署推理/Inference_Engines/TGI_Deep_Dive]] — TGI 深度解析
+- [[部署推理/Inference_Engines/LLM_Inference_Engine_Selection_Guide]] — 全局选型指南
+- [[模型训练/Distributed_Training/DeepSpeed_Deep_Dive]] — DeepSpeed 训练框架
 
 ---
 
 *Last updated: 2026-06-25*
 *Version: 1.0.0*
 
-- [[10_Deployment_Inference/README|模型部署与推理]]
+- [[部署推理/README|模型部署与推理]]

@@ -19,7 +19,7 @@ aliases:
 
 > **一句话理解**: Helicone 是 LLM 可观测性平台——请求追踪、成本分析、速率限制、提示词版本，开箱即用的 LLM 监控。
 
-> 📐 **概念与选型方法论**: LLM 可观测性的五层监控体系与 Trace 设计，见 [[11_MLOps_Pipeline/Observability/LLM_Observability]]。本文聚焦 Helicone 工具用法。
+> 📐 **概念与选型方法论**: LLM 可观测性的五层监控体系与 Trace 设计，见 [[MLOps/Observability/LLM_Observability]]。本文聚焦 Helicone 工具用法。
 
 ---
 
@@ -319,8 +319,8 @@ helicone.sso = {
 
 ## Related
 
-- [[13_AI_Ops/AIOps-in-nutshell.md|AIOps-in-nutshell]]
-- [[13_AI_Ops/SRE_Reliability/AI_Incident_Response_Playbook|AI_Incident_Response_Playbook]]
-- [[13_AI_Ops/AI_Ops_for_dummy.md|AI_Ops_for_dummy]]
-- [[13_AI_Ops/README.md|13_AI_Ops README]]
-- [[13_AI_Ops/README_for_dummy.md|README_for_dummy]]
+- [[AI运维/AIOps-in-nutshell.md|AIOps-in-nutshell]]
+- [[AI运维/SRE_Reliability/AI_Incident_Response_Playbook|AI_Incident_Response_Playbook]]
+- [[AI运维/AI_Ops_for_dummy.md|AI_Ops_for_dummy]]
+- [[AI运维/README.md|AI运维 README]]
+- [[AI运维/README_for_dummy.md|README_for_dummy]]

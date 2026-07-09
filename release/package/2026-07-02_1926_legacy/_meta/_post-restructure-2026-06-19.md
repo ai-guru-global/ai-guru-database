@@ -18,7 +18,7 @@ date: 2026-06-19
 - **重构引入的真实新断链 = 0**
 - 649 - 643 = 6 的差值全部来自预存断链的编号映射与归一化计数边界：
   - `_sources/yeasy/` 的 `appendix/_references.md`（yeasy 来源素材自带的预存断链，目标文件在基线时即不存在）
-  - `Vibe_Coding_Methodology.md`、`Agent_Harness_Complete_2026.md` 的相对路径层级 bug（基线时 `../../../17_AI_Coding/04_Methodology/` 已断，现映射为 `../../../16_AI_Coding/Methodology/`，性质不变）
+  - `Vibe_Coding_Methodology.md`、`Agent_Harness_Complete_2026.md` 的相对路径层级 bug（基线时 `../../../17_AI_Coding/04_Methodology/` 已断，现映射为 `../../../AI编程/Methodology/`，性质不变）
 
 ## 重构完成项
 
@@ -39,6 +39,6 @@ date: 2026-06-19
 
 ## 已知预存问题（非重构引入，超出本次范围）
 
-- 部分深目录文档用过多 `../../../` 导致相对路径层级错误（如 `19_Talks/Andrej_Karpathy/` 引用 `16_AI_Coding/Methodology/`）
+- 部分深目录文档用过多 `../../../` 导致相对路径层级错误（如 `业界观点/Andrej_Karpathy/` 引用 `AI编程/Methodology/`）
 - `_sources/yeasy/` 来源素材内部存在断链（yeasy 项目自带）
 - Web 前端 vitest 因缺 jsdom 环境配置无法运行（与重构无关）

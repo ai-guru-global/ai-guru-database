@@ -8,9 +8,9 @@ sources: []
 
 # Automl
 
-This page indexes the contents of `02_Machine_Learning/AutoML`.
+This page indexes the contents of `机器学习/AutoML`.
 
 ## Files
 
-- [[02_Machine_Learning/AutoML/AutoML|Automl]]
-- [[02_Machine_Learning/AutoML/AutoML_for_dummy|Automl For Dummy]]
+- [[机器学习/AutoML/AutoML|Automl]]
+- [[机器学习/AutoML/AutoML_for_dummy|Automl For Dummy]]

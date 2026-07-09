@@ -45,5 +45,5 @@ relationships:
 - [[_concepts/model-registry|Model Registry]]
 - [[_concepts/kserve|KServe]]
 - [[_concepts/mlflow|MLflow]]
-- [[10_Deployment_Inference/Model_Hot_Reload_and_Rollback_Runbook|LLM 模型热加载与回滚 Runbook]]
-- [[11_MLOps_Pipeline/Troubleshooting/Model_Version_Rollback_Playbook|模型版本回滚 Playbook]]
+- [[部署推理/Model_Hot_Reload_and_Rollback_Runbook|LLM 模型热加载与回滚 Runbook]]
+- [[MLOps/Troubleshooting/Model_Version_Rollback_Playbook|模型版本回滚 Playbook]]

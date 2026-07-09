@@ -15,7 +15,7 @@ sources: []
 ---
 # 提示词工程 - 小白版
 
-> **一句话秒懂**: [[05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering|提示词工程]]就像学会"问对问题"——你问得越清楚,AI 回答得越好。这是零成本让 ChatGPT 变聪明的技巧!
+> **一句话秒懂**: [[大模型/Prompt_Engineering/Prompt_Engineering|提示词工程]]就像学会"问对问题"——你问得越清楚,AI 回答得越好。这是零成本让 ChatGPT 变聪明的技巧!
 
 ---
 
@@ -563,7 +563,7 @@ Prompt: "逐步分析并解释你的推理过程"
 
 - **基础知识**: [大语言模型架构 (小白版)](../LLM_Architectures/LLM_Architectures_for_dummy.md)
 - **进阶技能**: [微调技术 (小白版)](../Fine_tuning_Techniques/Fine_tuning_Techniques_for_dummy.md)
-- **实战应用**: [RAG 系统 (小白版)](../../14_RAG_Systems/RAG_Systems_for_dummy.md)
+- **实战应用**: [RAG 系统 (小白版)](../../RAG系统/RAG_Systems_for_dummy.md)
 
 ---
 
@@ -608,4 +608,4 @@ Prompt: "逐步分析并解释你的推理过程"
 
 ## Related
 
-- [[05_NLP_LLMs/Prompt_Engineering/Instructor_Deep_Dive.md|Instructor_Deep_Dive]]
+- [[大模型/Prompt_Engineering/Instructor_Deep_Dive.md|Instructor_Deep_Dive]]

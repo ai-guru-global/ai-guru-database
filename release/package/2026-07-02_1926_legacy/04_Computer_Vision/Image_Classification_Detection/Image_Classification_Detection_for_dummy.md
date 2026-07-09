@@ -353,7 +353,7 @@ YOLO: 只能识别物体("这是一个人")
 - 🔗 YOLO 在线 Demo - 上传图片实时检测
 
 **相关主题**:
-- 🔙 [神经网络核心 - 小白版](../../03_Deep_Learning/Neural_Network_Core/Neural_Network_Core_for_dummy.md) - 理解 CNN 的基础
+- 🔙 [神经网络核心 - 小白版](../../深度学习/Neural_Network_Core/Neural_Network_Core_for_dummy.md) - 理解 CNN 的基础
 - 🔜 [多模态视觉 - 小白版](../Multimodal_Vision/Multimodal_Vision_for_dummy.md) - 让 AI 同时理解图片和文字
 
 ---

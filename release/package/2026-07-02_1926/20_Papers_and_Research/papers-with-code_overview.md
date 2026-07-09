@@ -40,4 +40,4 @@ aliases:
 
 ## Related
 
-- [[20_Papers_and_Research/README|22 经典与必读 AI 论文清单 (Essential AI Papers)]]
+- [[论文精读/README|22 经典与必读 AI 论文清单 (Essential AI Papers)]]

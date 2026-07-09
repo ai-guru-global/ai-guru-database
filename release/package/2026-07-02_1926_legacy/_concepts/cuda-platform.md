@@ -10,7 +10,7 @@ relationships:
   - target: "_concepts/cuda-graph"
     type: contains
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "CUDA 是 NVIDIA GPU 通用计算平台和编程模型，是所有深度学习框架的底层基础。AI Stack 通过高度兼容 CUDA API 降低从 NVIDIA 生态迁移的技术门槛。"
 provenance:
   extracted: 0.50
@@ -160,4 +160,4 @@ CUDA Graph 将一系列 kernel 调用捕获为静态计算图，减少 kernel la
 - [[_concepts/gpu-interconnect]] — GPU 互联（NVLink/NVSwitch）
 - [[_concepts/mixed-precision]] — 混合精度（Tensor Core 加速）
 - [[_concepts/heterogeneous-gpu]] — 异构 GPU（CUDA 兼容性需求）
-- [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack（CUDA 兼容）
+- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack（CUDA 兼容）

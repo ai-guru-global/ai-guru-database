@@ -8,7 +8,7 @@ relationships:
   - target: "_concepts/radix-attention"
     type: implemented_by
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: 前缀缓存通过复用多个请求共享的 prompt prefix 的 KV Cache 状态，避免重复 prefill 计算。命中率 60-85% 时每次调用成本降低 5-12×，是 2026 年推理侧最高杠杆的应用层优化。实现包括 vLLM APC（哈希匹配）和 SGLang RadixAttention（树形匹配）。
 provenance:
   extracted: 0.88
@@ -78,4 +78,4 @@ Request 2: [System Prompt (10K)] + [Document (50K)] + [User Query B (150)]
 - [[_concepts/kv-cache]] — KV Cache
 - [[_concepts/radix-attention]] — RadixAttention（SGLang 实现）
 - [[_concepts/paged-attention]] — PagedAttention（底层内存管理）
-- [[10_Deployment_Inference/Caching/Prompt_Caching_and_KV_Cache_Optimization]] — Prompt Caching 全景
+- [[部署推理/Caching/Prompt_Caching_and_KV_Cache_Optimization]] — Prompt Caching 全景

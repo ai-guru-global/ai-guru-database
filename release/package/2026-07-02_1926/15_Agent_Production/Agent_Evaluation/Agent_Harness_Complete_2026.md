@@ -1003,8 +1003,8 @@ class LLMJudge:
 
 ## Related
 
-- [[15_Agent_Production/Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
-- [[15_Agent_Production/Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
-- [[15_Agent_Production/Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)
-- [[15_Agent_Production/Agent_Evaluation/Benchmarking/Benchmarking_Criteria]] — Benchmarking Criteria (共享: agent-framework, ai-agents, langgraph, production)
-- [[15_Agent_Production/Agent_Frameworks/README.md|README]]
+- [[Agent/Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[Agent/Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[Agent/Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)
+- [[Agent/Agent_Evaluation/Benchmarking/Benchmarking_Criteria]] — Benchmarking Criteria (共享: agent-framework, ai-agents, langgraph, production)
+- [[Agent/Agent_Frameworks/README.md|README]]

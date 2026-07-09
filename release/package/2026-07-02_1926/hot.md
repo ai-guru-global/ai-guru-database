@@ -45,9 +45,9 @@
 
 ## ⚠ 入口不可达的 Core 页（23，需手动链入）
 
-- [[03_Deep_Learning/Transfer_Learning|迁移学习完全指南 (Transfer Learning Complete Guide)]]
+- [[深度学习/Transfer_Learning|迁移学习完全指南 (Transfer Learning Complete Guide)]]
 - [[DL_Overview|深度学习概览 (Deep Learning Overview)]]
-- [[03_Deep_Learning/Transfer_Learning/Transfer_Learning|迁移学习 (Transfer Learning)]]
+- [[深度学习/Transfer_Learning/Transfer_Learning|迁移学习 (Transfer Learning)]]
 - [[_projects/Cloud_Ops_Agent/README|云运维 Agent (Cloud Ops Agent)]]
 - [[_projects/Cloud_Ops_Agent/docs/corpus/index|云产品运维 Agent 语料工程指南 (Corpus Engineering)]]
 - [[_projects/Cloud_Ops_Agent/docs/architecture/index|云产品运维 Agent 架构设计指南 (Architecture)]]
@@ -66,5 +66,5 @@
 - [[Datasheet_Template|数据集文档模板 (Datasheet)]]
 - [[Deployment_Runbook_Template|部署 Runbook 模板]]
 - [[Experiment_Tracking_Template|实验跟踪记录模板]]
-- [[01_Fundamentals/Calculus_Optimization|微积分与优化基础 (Calculus & Optimization Foundations)]]
-- [[01_Fundamentals/Calculus_Optimization/Calculus_Optimization|微积分与优化 (Calculus & Optimization)]]
+- [[数学基础/Calculus_Optimization|微积分与优化基础 (Calculus & Optimization Foundations)]]
+- [[数学基础/Calculus_Optimization/Calculus_Optimization|微积分与优化 (Calculus & Optimization)]]

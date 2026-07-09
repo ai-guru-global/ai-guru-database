@@ -577,7 +577,7 @@ AudioGen / Make-An-Audio:
 ## 相关资源
 
 - [[LLM_Architectures]] — LLM 架构 (语音 LLM 的基础)
-- [[05_NLP_LLMs/Multimodal_Models/Native_Multimodal_Architectures|多模态模型]] — 多模态模型 (语音+视觉+文本)
+- [[大模型/Multimodal_Models/Native_Multimodal_Architectures|多模态模型]] — 多模态模型 (语音+视觉+文本)
 - [[Prompt_Engineering]] — 提示工程 (TTS 的文本输入优化)
 
 ---

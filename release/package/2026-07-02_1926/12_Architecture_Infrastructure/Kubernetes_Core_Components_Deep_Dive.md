@@ -499,13 +499,13 @@ kubectl logs -n kube-system csi-plugin-<node> -c csi-plugin
 
 ## Related
 
-- [[12_Architecture_Infrastructure/AI_Stack/AI_Stack_K8s_Operations_Guide|AI Stack K8s 编排指南]] — AI Stack 场景下的 kubectl / helm 实践
-- [[12_Architecture_Infrastructure/CNCF_Cloud_Native_AI/kagent_Deep_Dive|kagent Deep Dive]] — Kubernetes 原生 DevOps AI Agent 框架
-- [[12_Architecture_Infrastructure/Architecture_Infrastructure_for_dummy|架构基础设施入门]] — 面向初学者的基础设施概念
-- [[12_Architecture_Infrastructure/Architecture-in-nutshell|架构基础设施精要]] — 架构与基础设施核心知识速览
-- [[12_Architecture_Infrastructure/Hardware_Compute/CDI_Deep_Dive|CDI: 容器设备接口标准]] — 容器化设备挂载规范
-- [[12_Architecture_Infrastructure/Hardware_Compute/DRA_Deep_Dive|DRA: 动态资源分配]] — K8s 动态资源调度机制
-- [[13_AI_Ops/AI_Ops_2026|AI Ops 2026: 智能运维体系与实践]] — AI 驱动的运维体系
+- [[架构基建/AI_Stack/AI_Stack_K8s_Operations_Guide|AI Stack K8s 编排指南]] — AI Stack 场景下的 kubectl / helm 实践
+- [[架构基建/CNCF_Cloud_Native_AI/kagent_Deep_Dive|kagent Deep Dive]] — Kubernetes 原生 DevOps AI Agent 框架
+- [[架构基建/Architecture_Infrastructure_for_dummy|架构基础设施入门]] — 面向初学者的基础设施概念
+- [[架构基建/Architecture-in-nutshell|架构基础设施精要]] — 架构与基础设施核心知识速览
+- [[架构基建/Hardware_Compute/CDI_Deep_Dive|CDI: 容器设备接口标准]] — 容器化设备挂载规范
+- [[架构基建/Hardware_Compute/DRA_Deep_Dive|DRA: 动态资源分配]] — K8s 动态资源调度机制
+- [[AI运维/AI_Ops_2026|AI Ops 2026: 智能运维体系与实践]] — AI 驱动的运维体系
 - [[clusterrole]]
 - [[clusterrolebinding]]
 - [[role]]

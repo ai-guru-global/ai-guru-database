@@ -230,7 +230,7 @@ curl http://localhost:8000/metrics | grep -E "throughput|cache|batch"
 - [[_synthesis/kv-cache-paged-attention]] -- KV Cache x PagedAttention
 - [[_synthesis/kv-cache-inference-optimization]] -- KV Cache x 推理优化
 - [[_synthesis/serving-deployment]] -- 模型服务 x 模型部署
-- [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive]] -- vLLM（两者首发组合实现）
-- [[10_Deployment_Inference/Inference_Engines/SGLang_Deep_Dive]] -- SGLang（零开销调度 + 两者协同）
-- [[10_Deployment_Inference/Inference_Engines/TensorRT_LLM_Deep_Dive]] -- TensorRT-LLM（In-Flight Batching）
-- [[10_Deployment_Inference/Inference_Engines/TGI_Deep_Dive]] -- TGI（Continuous Batching）
+- [[部署推理/Inference_Engines/vLLM_Deep_Dive]] -- vLLM（两者首发组合实现）
+- [[部署推理/Inference_Engines/SGLang_Deep_Dive]] -- SGLang（零开销调度 + 两者协同）
+- [[部署推理/Inference_Engines/TensorRT_LLM_Deep_Dive]] -- TensorRT-LLM（In-Flight Batching）
+- [[部署推理/Inference_Engines/TGI_Deep_Dive]] -- TGI（Continuous Batching）

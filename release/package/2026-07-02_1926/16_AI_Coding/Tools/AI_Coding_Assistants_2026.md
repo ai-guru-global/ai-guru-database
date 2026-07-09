@@ -480,4 +480,4 @@ https://codeium.com/windsurf
 
 ## Related
 
-- [[16_AI_Coding/README.md|README]]
+- [[AI编程/README.md|README]]

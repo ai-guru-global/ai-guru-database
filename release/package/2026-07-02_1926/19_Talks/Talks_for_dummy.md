@@ -279,7 +279,7 @@ flowchart LR
 - [Andrej Karpathy 演讲集](Andrej_Karpathy/) —— 最易懂的技术讲解
 - [Andrew Ng 演讲集](Andrew_Ng/) —— 实用的落地建议
 - [Sam Altman 演讲集](Sam_Altman/) —— OpenAI 的发展方向
-- [AI 基础 - 小白版](../01_Fundamentals/README_for_dummy.md) —— 补充基础知识
+- [AI 基础 - 小白版](../数学基础/README_for_dummy.md) —— 补充基础知识
 
 ---
 
@@ -287,7 +287,7 @@ flowchart LR
 
 ## Related
 
-- [[19_Talks/Andrej_Karpathy/about]] — Andrej Karpathy 简介 (Andrej Karpathy) (共享: insights, leaders, speeches, talks)
-- [[19_Talks/Andrew_Ng/about]] — Andrew Ng 简介 (Andrew Ng) (共享: insights, leaders, speeches, talks)
-- [[19_Talks/Andrew_Ng/sayings]] — Andrew Ng 关于 AI 的观点与格言 (共享: insights, leaders, speeches, talks)
-- [[19_Talks/Bill_Gates/about]] — Bill Gates 简介 (Bill Gates) (共享: insights, leaders, speeches, talks)
+- [[业界观点/Andrej_Karpathy/about]] — Andrej Karpathy 简介 (Andrej Karpathy) (共享: insights, leaders, speeches, talks)
+- [[业界观点/Andrew_Ng/about]] — Andrew Ng 简介 (Andrew Ng) (共享: insights, leaders, speeches, talks)
+- [[业界观点/Andrew_Ng/sayings]] — Andrew Ng 关于 AI 的观点与格言 (共享: insights, leaders, speeches, talks)
+- [[业界观点/Bill_Gates/about]] — Bill Gates 简介 (Bill Gates) (共享: insights, leaders, speeches, talks)

@@ -301,8 +301,8 @@ class RAGIngestionPipeline:
 
 ## 相关阅读
 
-- [[14_RAG_Systems/RAG_Systems]] — RAG 系统全景
-- [[14_RAG_Systems/Vector_Database_for_dummy]] — 向量数据库入门
-- [[14_RAG_Systems/Embeddings/HF_Datasets_Streaming]] — HuggingFace 数据集流式处理
-- [[14_RAG_Systems/Advanced_RAG/Advanced_RAG_DLAI_Practices]] — RAG 高级实践
-- [[14_RAG_Systems/RAG_Frameworks/LlamaIndex_Deep_Dive]] — LlamaIndex 深度解读
+- [[RAG系统/RAG_Systems]] — RAG 系统全景
+- [[RAG系统/Vector_Database_for_dummy]] — 向量数据库入门
+- [[RAG系统/Embeddings/HF_Datasets_Streaming]] — HuggingFace 数据集流式处理
+- [[RAG系统/Advanced_RAG/Advanced_RAG_DLAI_Practices]] — RAG 高级实践
+- [[RAG系统/RAG_Frameworks/LlamaIndex_Deep_Dive]] — LlamaIndex 深度解读

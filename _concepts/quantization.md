@@ -7,10 +7,10 @@ relationships:
     type: builds_on
   - target: "_concepts/kv-cache"
     type: optimizes
-  - target: "10_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy"
+  - target: "部署推理/Inference_Performance/Inference_Terms_for_dummy"
     type: simplified_by
 sources:
-  - 10_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy.md
+  - 部署推理/Inference_Performance/Inference_Terms_for_dummy.md
 summary: 量化通过降低模型权重和激活的数值精度，减少显存占用和数据搬运量，从而加速推理；常用 FP8/INT8/INT4/GPTQ/AWQ。
 lifecycle: draft
 tier: core
@@ -51,6 +51,6 @@ aliases:
 
 - [[_concepts/model-compression]] — 模型压缩
 - [[_concepts/kv-cache]] — KV Cache
-- [[10_Deployment_Inference/Quantization/Quantization_Techniques_2026|Quantization Techniques 2026]]
-- [[10_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy|推理性能术语大白话解释]]
+- [[部署推理/Quantization/Quantization_Techniques_2026|Quantization Techniques 2026]]
+- [[部署推理/Inference_Performance/Inference_Terms_for_dummy|推理性能术语大白话解释]]
 - [[_concepts/pruning]] — 剪枝

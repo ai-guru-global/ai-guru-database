@@ -258,5 +258,5 @@ aliases:
 - 治理与合规：[[AI_Governance_Compliance_2026]]、[[AI_Regulatory_Engineering_2026]]
 - 安全深度：[[LLM_Security_Complete_Guide]]、[[LLM_Security_Defense_Guide]]、[[Guardrails_Production_Guide]]、[[Deepfake_Security]]
 - 对齐：[[Value_Alignment]]、[[Constitutional_AI_Deep_Dive]]、[[Mechanistic_Interpretability]]
-- 硬件与基础设施：[[Future_Computing_Hardware_2026]]、[[AI_Infrastructure_2026]]、[[01_Fundamentals/AI_Hardware/README]]、[[Edge_AI_2026]]、[[AI_Cost_Optimization_2026]]
+- 硬件与基础设施：[[Future_Computing_Hardware_2026]]、[[AI_Infrastructure_2026]]、[[数学基础/AI_Hardware/README]]、[[Edge_AI_2026]]、[[AI_Cost_Optimization_2026]]
 - 推理部署：[[LLM_Inference_Deep_Dive]]

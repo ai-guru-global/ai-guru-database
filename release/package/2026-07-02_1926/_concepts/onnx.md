@@ -8,7 +8,7 @@ relationships:
   - target: "_concepts/tensorrt-llm"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "ONNX 是开放的神经网络模型交换格式——让模型在 PyTorch、TensorFlow、ONNX Runtime 等框架间自由迁移。ONNX Runtime 提供跨平台高性能推理，是 AI 模型部署的重要中间格式。"
 provenance:
   extracted: 0.20

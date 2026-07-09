@@ -8,9 +8,9 @@ sources: []
 
 # Mira Murati
 
-This page indexes the contents of `19_Talks/Mira_Murati`.
+This page indexes the contents of `业界观点/Mira_Murati`.
 
 ## Files
 
-- [[19_Talks/Mira_Murati/about|About]]
-- [[19_Talks/Mira_Murati/sayings|Sayings]]
+- [[业界观点/Mira_Murati/about|About]]
+- [[业界观点/Mira_Murati/sayings|Sayings]]

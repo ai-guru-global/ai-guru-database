@@ -10,7 +10,7 @@ relationships:
     type: related_to
   - target: "_concepts/automl"
     type: related_to
-sources: [02_Machine_Learning/Ensemble_Learning/Ensemble_Learning.md]
+sources: [机器学习/Ensemble_Learning/Ensemble_Learning.md]
 summary: 组合多个弱学习器构建强学习器，三大范式为Bagging、Boosting和Stacking。
 provenance:
   extracted: 0.80

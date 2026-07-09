@@ -8,7 +8,7 @@ relationships:
   - target: "_concepts/langflow"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "Streamlit 是最流行的 Python 数据应用框架——用纯 Python 即可构建交互式数据看板、ML Demo、可视化工具。以极简的开发体验和丰富的数据组件著称，是 AI 项目快速原型的首选。"
 provenance:
   extracted: 0.15

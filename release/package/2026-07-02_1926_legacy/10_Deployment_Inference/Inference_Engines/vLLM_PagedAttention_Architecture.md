@@ -93,11 +93,11 @@ Block Table: A→[1,5,8]  B→[2,6]  C→[3,7]
 
 ## Related
 
-- [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive|vLLM 深度解析]]
-- [[10_Deployment_Inference/Inference_Engines/vLLM_for_dummy|vLLM 大白话解释]]
-- [[10_Deployment_Inference/Inference_Engines/LLM_Inference_Engine_Selection_Guide|LLM 推理引擎选型指南]]
+- [[部署推理/Inference_Engines/vLLM_Deep_Dive|vLLM 深度解析]]
+- [[部署推理/Inference_Engines/vLLM_for_dummy|vLLM 大白话解释]]
+- [[部署推理/Inference_Engines/LLM_Inference_Engine_Selection_Guide|LLM 推理引擎选型指南]]
 - [[_concepts/paged-attention|PagedAttention 概念卡片]]
 - [[_concepts/kv-cache|KV Cache 概念卡片]]
 - [[_concepts/continuous-batching|Continuous Batching 概念卡片]]
 
-- [[10_Deployment_Inference/README|模型部署与推理]]
+- [[部署推理/README|模型部署与推理]]

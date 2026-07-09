@@ -1007,7 +1007,7 @@ description: Use this skill when: the user asks about PDFs
 | **Factory** | 平台 | AI 原生开发平台 |
 | **Databricks** | 数据平台 | 数据工程 Agent |
 | **Snowflake** | 数据平台 | Cortex Code Agent |
-| **Spring AI** | 框架 | Java AI 应用框架 → [深度解析](../../01_Fundamentals/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md) |
+| **Spring AI** | 框架 | Java AI 应用框架 → [深度解析](../../数学基础/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md) |
 | **Goose** | CLI | Block 开源 Agent |
 | **Letta** | 平台 | 有状态记忆 Agent |
 | **Laravel Boost** | 框架 | Laravel 最佳实践 |
@@ -1381,9 +1381,9 @@ skills-ref validate .agents/skills/my-skill
 
 ## Related
 
-- [[15_Agent_Production/Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
-- [[15_Agent_Production/Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
-- [[15_Agent_Production/Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
-- [[15_Agent_Production/Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)
+- [[Agent/Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
+- [[Agent/Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[Agent/Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[Agent/Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)
 - [[_references/REFERENCE|Agent Skill 通用参考规范]] — Skill 文档结构与元数据约定
 - [[_references/mapping|地理空间数据映射指南]] — Skill 中地理/空间数据建模参考

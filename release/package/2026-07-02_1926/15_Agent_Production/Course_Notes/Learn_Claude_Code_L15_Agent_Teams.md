@@ -77,6 +77,6 @@ if inbox:
 
 - [[90_Learn/courses/share_ai/learn_claude_code]] — 完整 20 课映射
 - [[_references/learn-claude-code]] — 仓库引用索引
-- [[15_Agent_Production/Course_Notes/Learn_Claude_Code_L06_Subagent]] — 子 Agent
-- [[15_Agent_Production/Course_Notes/Learn_Claude_Code_L17_Autonomous_Agents]] — 自治 Agent
-- [[15_Agent_Production/Agent_Protocols/A2A_Protocol_Deep_Dive]] — A2A 协议
+- [[Agent/Course_Notes/Learn_Claude_Code_L06_Subagent]] — 子 Agent
+- [[Agent/Course_Notes/Learn_Claude_Code_L17_Autonomous_Agents]] — 自治 Agent
+- [[Agent/Agent_Protocols/A2A_Protocol_Deep_Dive]] — A2A 协议

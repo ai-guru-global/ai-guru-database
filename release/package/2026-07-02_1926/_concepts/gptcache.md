@@ -10,7 +10,7 @@ relationships:
   - target: "_concepts/vllm"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "开源的 LLM 语义缓存引擎，通过向量相似度匹配缓存 Prompt-Response 对，在命中缓存时直接返回结果，大幅降低 API 成本与延迟。"
 provenance:
   extracted: 0.55

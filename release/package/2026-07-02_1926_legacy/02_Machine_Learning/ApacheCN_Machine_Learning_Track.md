@@ -52,13 +52,13 @@ aliases:
 
 ## 与本库关联
 
-- 本库机器学习总览 → [[02_Machine_Learning/README]]
-- 速成指南 → [[02_Machine_Learning/ML-in-nutshell]]
-- 监督学习 → [[02_Machine_Learning/Supervised_Learning/Supervised_Learning]]
-- 集成学习 → [[02_Machine_Learning/Ensemble_Learning/Ensemble_Learning]]
-- 无监督学习 → [[02_Machine_Learning/Unsupervised_Learning/Unsupervised_Learning]]
-- 特征工程 → [[02_Machine_Learning/Feature_Engineering/Feature_Engineering]]
-- 推荐系统 → [[02_Machine_Learning/Recommendation_Systems/Recommendation_Systems]]
+- 本库机器学习总览 → [[机器学习/README]]
+- 速成指南 → [[机器学习/ML-in-nutshell]]
+- 监督学习 → [[机器学习/Supervised_Learning/Supervised_Learning]]
+- 集成学习 → [[机器学习/Ensemble_Learning/Ensemble_Learning]]
+- 无监督学习 → [[机器学习/Unsupervised_Learning/Unsupervised_Learning]]
+- 特征工程 → [[机器学习/Feature_Engineering/Feature_Engineering]]
+- 推荐系统 → [[机器学习/Recommendation_Systems/Recommendation_Systems]]
 
 ## 参考
 

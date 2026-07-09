@@ -112,4 +112,4 @@ updated: 2026-06-24
 - [[_concepts/falco]] — Falco（CNCF 毕业项目）
 - [[_concepts/policy-as-code]] — Policy as Code
 - [[_concepts/observability]] — 可观测性
-- [[17_Ethics_Safety/README|17_Ethics_Safety]] — 安全章节
+- [[伦理安全/README|伦理安全]] — 安全章节

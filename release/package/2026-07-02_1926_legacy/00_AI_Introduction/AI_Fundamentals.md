@@ -524,7 +524,7 @@ AI发展的三大支柱:
 
 ## Related
 
-- [[00_AI_Introduction/AI_Fundamentals_for_dummy]] — AI 基础入门 - 小白版 (共享: ai, basics, fundamentals, introduction)
-- [[00_AI_Introduction/README]] — 00 - AI 简介与历史 (共享: ai, introduction)
-- [[00_AI_Introduction/README_for_dummy]] — 00 AI 简介与历史 — 小白版 🚀 (共享: ai, introduction)
-- [[01_Fundamentals/AI_Hardware/README]] — AI硬件与芯片 (AI Hardware) (共享: basics, fundamentals)
+- [[AI入门/AI_Fundamentals_for_dummy]] — AI 基础入门 - 小白版 (共享: ai, basics, fundamentals, introduction)
+- [[AI入门/README]] — 00 - AI 简介与历史 (共享: ai, introduction)
+- [[AI入门/README_for_dummy]] — 00 AI 简介与历史 — 小白版 🚀 (共享: ai, introduction)
+- [[数学基础/AI_Hardware/README]] — AI硬件与芯片 (AI Hardware) (共享: basics, fundamentals)

@@ -7,8 +7,8 @@ aliases:
   - "Serverless GPU"
 category: -concepts
 sources:
-  - 10_Deployment_Inference/Inference_Engines/Modal_Deep_Dive.md
-  - 10_Deployment_Inference/Inference_Engines/KServe_Deep_Dive.md
+  - 部署推理/Inference_Engines/Modal_Deep_Dive.md
+  - 部署推理/Inference_Engines/KServe_Deep_Dive.md
   - _concepts/modal
   - _concepts/replicate
 relationships:
@@ -187,4 +187,4 @@ def main():
 
 ---
 
-**参见**：[[Modal_Deep_Dive]] · KServe Deep Dive · [[_concepts/modal]] · [[_concepts/replicate]] · [[10_Deployment_Inference/README|10_Deployment_Inference]] · README
+**参见**：[[Modal_Deep_Dive]] · KServe Deep Dive · [[_concepts/modal]] · [[_concepts/replicate]] · [[部署推理/README|部署推理]] · README

@@ -8,9 +8,9 @@ sources: []
 
 # LLM Data Engineering
 
-This page indexes the contents of `05_NLP_LLMs/LLM_Data_Engineering`.
+This page indexes the contents of `大模型/LLM_Data_Engineering`.
 
 ## Files
 
-- [[05_NLP_LLMs/LLM_Data_Engineering/LLM_Data_Engineering_Deep_Dive|LLM Data Engineering Deep Dive]]
-- [[05_NLP_LLMs/LLM_Data_Engineering/README|README]]
+- [[大模型/LLM_Data_Engineering/LLM_Data_Engineering_Deep_Dive|LLM Data Engineering Deep Dive]]
+- [[大模型/LLM_Data_Engineering/README|README]]

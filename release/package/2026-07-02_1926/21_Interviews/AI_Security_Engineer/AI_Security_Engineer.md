@@ -47,5 +47,5 @@ sources: []
 *Last updated: 2026-06-04*
 ## Related
 
-- [[21_Interviews/README|21_Interviews 总览]]
-- [[21_Interviews/jobs|岗位地图 (jobs)]]
+- [[面试岗位/README|面试岗位 总览]]
+- [[面试岗位/jobs|岗位地图 (jobs)]]

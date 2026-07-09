@@ -527,14 +527,14 @@ AI代理的核心定义是让LLM通过获得状态（上下文）和工具（数
 ## 扩展阅读
 
 - [[90_Learn/courses/microsoft/microsoft_genai_for_beginners]] - 课程总览
-- [[15_Agent_Production/Agent_Frameworks/README]] - 代理框架详解
-- [[15_Agent_Production/Agentic_Design_Patterns_AndrewNg]] - 代理设计模式
-- [[15_Agent_Production/Agent_Workflow/Workflow-in-nutshell]] - 代理工作流
-- [[14_RAG_Systems/RAG-in-nutshell]] - RAG与代理的结合
-- [[15_Agent_Production/GenAI_L12_Designing_UX_for_AI_Applications]] - AI应用UX设计
+- [[Agent/Agent_Frameworks/README]] - 代理框架详解
+- [[Agent/Agentic_Design_Patterns_AndrewNg]] - 代理设计模式
+- [[Agent/Agent_Workflow/Workflow-in-nutshell]] - 代理工作流
+- [[RAG系统/RAG-in-nutshell]] - RAG与代理的结合
+- [[Agent/GenAI_L12_Designing_UX_for_AI_Applications]] - AI应用UX设计
 
 ## 课程导航
 
 | 上一课 | 下一课 |
 |--------|--------|
-| [[05_NLP_LLMs/GenAI_L16_Open_Source_Models_and_Hugging_Face|L16 开源模型与Hugging Face]] | [[05_NLP_LLMs/Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs|L18 微调大型语言模型]] |
+| [[大模型/GenAI_L16_Open_Source_Models_and_Hugging_Face|L16 开源模型与Hugging Face]] | [[大模型/Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs|L18 微调大型语言模型]] |

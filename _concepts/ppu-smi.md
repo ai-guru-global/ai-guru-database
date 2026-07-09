@@ -10,7 +10,7 @@ relationships:
   - target: "_concepts/ascend-npu"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "ppu-smi 是阿里云 APG 自研加速卡的监控 CLI 工具，对标 nvidia-smi，提供 GPU 利用率/显存/温度/功耗等实时监控。AI Stack APG 节点的专属监控入口。"
 provenance:
   extracted: 0.30
@@ -115,4 +115,4 @@ AI Stack GPU 监控体系
 - [[_concepts/apg-gpu]] — APG 自研加速卡
 - [[_concepts/nvidia-smi]] — nvidia-smi GPU 监控
 - [[_concepts/ascend-npu]] — 华为昇腾 NPU
-- [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析

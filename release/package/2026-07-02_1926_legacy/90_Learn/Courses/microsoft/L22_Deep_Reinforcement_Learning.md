@@ -90,12 +90,12 @@ Actor-Critic 版本则会额外训练一个价值网络，并用时序差分（T
   - 高级算法如 DQN、A3C、PPO、TRPO、SAC、TD3；这些属于更专门的 RL 课程范畴。
   - 连续动作空间、多智能体强化学习（MARL）、离线强化学习（Offline RL）。
 - **延伸**：
-  - 学习完本课后，可继续本库 [[06_Reinforcement_Learning/Deep_RL/Deep_RL]] 与 [[06_Reinforcement_Learning/RL_Foundations/RL_Foundations]] 进行更深入的理论与算法扩展。
+  - 学习完本课后，可继续本库 [[强化学习/Deep_RL/Deep_RL]] 与 [[强化学习/RL_Foundations/RL_Foundations]] 进行更深入的理论与算法扩展。
   - 观看官方推荐视频：[How a computer learns to play Super Mario](https://www.youtube.com/watch?v=qv6UVOQ0F44)，感受 RL 在复杂游戏中的表现。
 
 ## 相关阅读
 
 - 课程索引：[[90_Learn/courses/microsoft/microsoft_ai_for_beginners]]
 - 本库相关页面：
-  - [[06_Reinforcement_Learning/Deep_RL/Deep_RL]]
-  - [[06_Reinforcement_Learning/RL_Foundations/RL_Foundations]]
+  - [[强化学习/Deep_RL/Deep_RL]]
+  - [[强化学习/RL_Foundations/RL_Foundations]]

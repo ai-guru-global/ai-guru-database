@@ -14,9 +14,9 @@ relationships:
   - target: "_concepts/model-compression"
     type: optimized_by
 sources:
-  - 10_Deployment_Inference/README.md
-  - 05_NLP_LLMs/LLM_Fundamentals.md
-  - 05_NLP_LLMs/Transformer_Architecture.md
+  - 部署推理/README.md
+  - 大模型/LLM_Fundamentals.md
+  - 大模型/Transformer_Architecture.md
 summary: 模型推理的本质是自回归的"条件概率计算"——给定前文，预测下一个 token。整个过程分三步：token 编码（embedding）、前向传播（数十层 Transformer 的矩阵运算）、概率采样输出。GPU 擅长密集矩阵乘法，因此推理速度快。2026 年核心优化手段包括 KV Cache、量化、连续批处理、投机解码和 PagedAttention。
 provenance:
   extracted: 0.9
@@ -134,8 +134,8 @@ Attention 解决的是"指代消解"问题——当模型看到"它"时，需要
 ## 来源
 
 - Vaswani et al., "Attention Is All You Need," NeurIPS 2017
-- [[05_NLP_LLMs/LLM_Fundamentals]] — LLM 基础知识
-- [[05_NLP_LLMs/Transformer_Architecture]] — Transformer 架构详解
+- [[大模型/LLM_Fundamentals]] — LLM 基础知识
+- [[大模型/Transformer_Architecture]] — Transformer 架构详解
 
 ## Related
 

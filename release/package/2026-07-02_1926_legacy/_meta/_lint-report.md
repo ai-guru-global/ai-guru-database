@@ -15,14 +15,14 @@ updated: 2026-06-01T09:55:00.143817
 ## orphan: 281
 - 14_AI_Gateway/AI_Gateway_Comparison_2026.md
 - 14_AI_Gateway/LiteLLM_Deep_Dive.md
-- 03_Deep_Learning/State_Space_Models_2026.md
-- 09_Testing/Testing_Frameworks/Promptfoo_Deep_Dive.md
-- 09_Testing/Weights_Biases_Deep_Dive.md
-- 09_Testing/Testing_Frameworks/DeepEval_Deep_Dive.md
-- 09_Testing/Test_Data_Management.md
-- 09_Testing/Contract_Testing.md
-- 09_Testing/AI_Test_Framework_2026.md
-- 09_Testing/RAGAS_Deep_Dive.md
+- 深度学习/State_Space_Models_2026.md
+- AI测试/Testing_Frameworks/Promptfoo_Deep_Dive.md
+- AI测试/Weights_Biases_Deep_Dive.md
+- AI测试/Testing_Frameworks/DeepEval_Deep_Dive.md
+- AI测试/Test_Data_Management.md
+- AI测试/Contract_Testing.md
+- AI测试/AI_Test_Framework_2026.md
+- AI测试/RAGAS_Deep_Dive.md
 - 18_Cloud_Ops_Agent/Mobile_AI_Ops_Design.md
 - 18_Cloud_Ops_Agent/Cloud_Product_Ops_2026.md
 - 18_Cloud_Ops_Agent/docs/product/index.md

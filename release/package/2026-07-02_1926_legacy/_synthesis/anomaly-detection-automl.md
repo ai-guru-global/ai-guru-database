@@ -5,8 +5,8 @@ tags: [anomaly-detection, automl, machine-learning, unsupervised, autoencoder, i
 sources:
   - "[[_concepts/anomaly-detection]]"
   - "[[_concepts/automl]]"
-  - "[[02_Machine_Learning/Anomaly_Detection/Anomaly_Detection]]"
-  - "[[02_Machine_Learning/AutoML/AutoML]]"
+  - "[[机器学习/Anomaly_Detection/Anomaly_Detection]]"
+  - "[[机器学习/AutoML/AutoML]]"
 created: 2026-06-05
 updated: 2026-06-05
 summary: "当 AutoML 的自动选模型能力遇上异常检测的无监督挑战：如何让自动化机器学习系统处理'没有标签'的异常发现任务。"
@@ -64,6 +64,6 @@ aliases:
 
 - [[_concepts/anomaly-detection]] — 异常检测概念总览
 - [[_concepts/automl]] — AutoML 概念总览
-- [[02_Machine_Learning/Anomaly_Detection/Anomaly_Detection]] — 异常检测完整指南
-- [[02_Machine_Learning/AutoML/AutoML]] — AutoML 完整指南
-- [[02_Machine_Learning/Unsupervised_Learning/Unsupervised_Learning]] — 无监督学习基础
+- [[机器学习/Anomaly_Detection/Anomaly_Detection]] — 异常检测完整指南
+- [[机器学习/AutoML/AutoML]] — AutoML 完整指南
+- [[机器学习/Unsupervised_Learning/Unsupervised_Learning]] — 无监督学习基础

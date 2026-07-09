@@ -760,18 +760,18 @@ flowchart TB
 ## 10. 与其他章节的关联
 
 ### 前置知识
-- [GPT-3 深度解读](20_Papers_and_Research/Scaling/GPT3_Deep_Dive.md) — 预训练语言模型基础
-- [LLaMA 深度解读](20_Papers_and_Research/Architecture/LLaMA_Deep_Dive.md) — LLaMA 2 Chat 的 RLHF 实践
-- [深度学习优化](03_Deep_Learning/Optimization/Optimization.md) — PPO 优化算法
+- [GPT-3 深度解读](论文精读/Scaling/GPT3_Deep_Dive.md) — 预训练语言模型基础
+- [LLaMA 深度解读](论文精读/Architecture/LLaMA_Deep_Dive.md) — LLaMA 2 Chat 的 RLHF 实践
+- [深度学习优化](深度学习/Optimization/Optimization.md) — PPO 优化算法
 
 ### 横向关联
-- [Fine-tuning 技术](../05_NLP_LLMs/Fine_tuning_Techniques/) — SFT、LoRA 等微调方法
-- [价值对齐](17_Ethics_Safety/Value_Alignment/Value_Alignment.md) — AI 安全与对齐全景
-- [强化学习](../../06_Reinforcement_Learning/README.md) — PPO 算法原理
+- [Fine-tuning 技术](../大模型/Fine_tuning_Techniques/) — SFT、LoRA 等微调方法
+- [价值对齐](伦理安全/Value_Alignment/Value_Alignment.md) — AI 安全与对齐全景
+- [强化学习](../../强化学习/README.md) — PPO 算法原理
 
 ### 进阶方向
-- [AI 安全](../17_Ethics_Safety/AI_Safety_RedTeaming/) — Red Teaming 和安全评估
-- [Diffusion Models 深度解读](04_Computer_Vision/Generative_Models/Diffusion_Models_Deep_Dive.md) — 扩散模型的对齐方法
+- [AI 安全](../伦理安全/AI_Safety_RedTeaming/) — Red Teaming 和安全评估
+- [Diffusion Models 深度解读](计算机视觉/Generative_Models/Diffusion_Models_Deep_Dive.md) — 扩散模型的对齐方法
 
 ---
 
@@ -779,6 +779,6 @@ flowchart TB
 
 ## Related
 
-- [[20_Papers_and_Research/Scaling/GPT3_Deep_Dive]] — GPT-3 深度解读 (Language Models are Few-Shot Learners) (共享: gpt, openai)
+- [[论文精读/Scaling/GPT3_Deep_Dive]] — GPT-3 深度解读 (Language Models are Few-Shot Learners) (共享: gpt, openai)
 
 - [[_synthesis/alignment-rlhf|价值对齐 × RLHF：从人类反馈到可扩展监督]]

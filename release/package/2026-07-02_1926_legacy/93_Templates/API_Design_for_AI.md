@@ -1355,14 +1355,14 @@ async def health():
 
 ### 相关文档
 
-- [AI Gateway 对比 2026](../12_Architecture_Infrastructure/AI_Gateway/AI_Gateway_Comparison_2026.md)
+- [AI Gateway 对比 2026](../架构基建/AI_Gateway/AI_Gateway_Comparison_2026.md)
 - [Prompt 管理平台](./Prompt_Management_Platform.md)
-- [部署推理 2026](../10_Deployment_Inference/Deployment_Inference_2026.md)
-- [Kong AI Gateway 深度解析](../12_Architecture_Infrastructure/AI_Gateway/Kong_AI_Gateway_Deep_Dive.md)
+- [部署推理 2026](../部署推理/Deployment_Inference_2026.md)
+- [Kong AI Gateway 深度解析](../架构基建/AI_Gateway/Kong_AI_Gateway_Deep_Dive.md)
 
 ## Related
 
 - [[93_Templates/DOCUMENT_TEMPLATES.md|DOCUMENT_TEMPLATES]]
 - [[93_Templates/IMPORT_GUIDE.md|IMPORT_GUIDE]]
 - [[93_Templates/README.md|93_Templates README]]
-- [[00_AI_Introduction/AI_Tools_Practical_Guide.md|AI_Tools_Practical_Guide]]
+- [[AI入门/AI_Tools_Practical_Guide.md|AI_Tools_Practical_Guide]]

@@ -3,10 +3,10 @@ title: "微调 × RAG: LLM 应用知识注入的两条路径"
 category: -synthesis
 tags: ["fine-tuning", "rag", "knowledge-injection", "architecture-decision", "llm-application", "synthesis"]
 sources:
-  - "05_NLP_LLMs/Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs"
-  - "14_RAG_Systems/GenAI_L15_RAG_and_Vector_Databases"
-  - "05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques"
-  - "14_RAG_Systems/Advanced_RAG/RAG_Advanced_2026"
+  - "大模型/Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs"
+  - "RAG系统/GenAI_L15_RAG_and_Vector_Databases"
+  - "大模型/Fine_tuning_Techniques/Fine_tuning_Techniques"
+  - "RAG系统/Advanced_RAG/RAG_Advanced_2026"
 created: 2026-06-30
 updated: 2026-06-30
 summary: "微调改变模型本身，RAG 改变模型的输入上下文——两者是互补而非替代关系，但在成本结构、知识时效性和失败模式上有根本性差异，选择路径决定了整个应用架构的演进方向。"
@@ -98,8 +98,8 @@ RAG 的失败是**可诊断的**：检索不到 → 扩大搜索范围；检索�
 
 ## Related
 
-- [[05_NLP_LLMs/Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs]]
-- [[14_RAG_Systems/GenAI_L15_RAG_and_Vector_Databases]]
-- [[05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques]]
-- [[14_RAG_Systems/Advanced_RAG/RAG_Advanced_2026]]
+- [[大模型/Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs]]
+- [[RAG系统/GenAI_L15_RAG_and_Vector_Databases]]
+- [[大模型/Fine_tuning_Techniques/Fine_tuning_Techniques]]
+- [[RAG系统/Advanced_RAG/RAG_Advanced_2026]]
 - [[_synthesis/multimodal-rag]]

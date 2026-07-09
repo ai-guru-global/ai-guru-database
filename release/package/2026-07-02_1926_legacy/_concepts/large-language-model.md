@@ -43,5 +43,5 @@ LLM 的核心架构几乎普遍基于 Transformer，尤其是 Decoder-only 的 G
 - [[_concepts/prompt-engineering|Prompt Engineering]]
 - [[_concepts/tokenization|Tokenization]]
 - [[_concepts/rlhf|RLHF]]
-- [[05_NLP_LLMs/index|NLP LLMs]]
+- [[大模型/index|NLP LLMs]]
 - [[_concepts/index|Concepts Index]]

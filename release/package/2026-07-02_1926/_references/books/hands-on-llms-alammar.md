@@ -78,7 +78,7 @@ aliases:
 ## 相关阅读
 
 - [[90_Learn/courses/other/hands_on_llms]] — 本库完整章节映射与学习路径
-- [[05_NLP_LLMs/LLM_Fundamentals]] — LLM 基础概念
-- [[05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering]] — 提示工程总览
-- [[14_RAG_Systems/RAG_Systems]] — RAG 系统总览
-- [[05_NLP_LLMs/Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs]] — 微调 LLM
+- [[大模型/LLM_Fundamentals]] — LLM 基础概念
+- [[大模型/Prompt_Engineering/Prompt_Engineering]] — 提示工程总览
+- [[RAG系统/RAG_Systems]] — RAG 系统总览
+- [[大模型/Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs]] — 微调 LLM

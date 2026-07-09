@@ -9,10 +9,10 @@ relationships:
     type: uses
   - target: "_concepts/prefill-decode"
     type: optimizes
-  - target: "10_Deployment_Inference/Inference_Performance/Request_Scheduling_for_LLMs"
+  - target: "部署推理/Inference_Performance/Request_Scheduling_for_LLMs"
     type: deepened_by
 sources:
-  - 10_Deployment_Inference/Inference_Performance/Request_Scheduling_for_LLMs.md
+  - 部署推理/Inference_Performance/Request_Scheduling_for_LLMs.md
 summary: LLM 推理请求调度决定请求顺序、batch 组成、抢占策略，通过 Continuous Batching、Chunked Prefill、SLO-aware 调度等手段提高吞吐并稳定延迟。
 lifecycle: draft
 tier: core
@@ -41,4 +41,4 @@ aliases:
 - [[_concepts/continuous-batching]] — Continuous Batching
 - [[_concepts/paged-attention]] — PagedAttention
 - [[_concepts/prefill-decode]] — Prefill / Decode 阶段
-- [[10_Deployment_Inference/Inference_Performance/Request_Scheduling_for_LLMs|LLM 请求调度]]
+- [[部署推理/Inference_Performance/Request_Scheduling_for_LLMs|LLM 请求调度]]

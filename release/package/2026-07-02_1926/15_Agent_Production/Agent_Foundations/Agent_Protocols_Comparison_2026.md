@@ -92,10 +92,10 @@ sources: []
 
 ## Related
 
-- [[06_Reinforcement_Learning/AI_Agents/MCP_Implementation_Guide]] — MCP 协议开发实战
-- [[06_Reinforcement_Learning/AI_Agents/Agent_Protocols_Detail]] — 各类协议的底层报文分析
-- [[15_Agent_Production/Agent_Frameworks/README]] — 框架对协议的支持情况
-- [[12_Architecture_Infrastructure/Architecture_Overview/AI_Infrastructure_2026]] — 协议对硬件架构的要求
+- [[强化学习/AI_Agents/MCP_Implementation_Guide]] — MCP 协议开发实战
+- [[强化学习/AI_Agents/Agent_Protocols_Detail]] — 各类协议的底层报文分析
+- [[Agent/Agent_Frameworks/README]] — 框架对协议的支持情况
+- [[架构基建/Architecture_Overview/AI_Infrastructure_2026]] — 协议对硬件架构的要求
 
 ---
 

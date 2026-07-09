@@ -144,8 +144,8 @@ boundary:
 
 ## Related
 
-- [[15_Agent_Production/Agent_Skills/README|Agent Skills]]
+- [[Agent/Agent_Skills/README|Agent Skills]]
 - [[_references/index|References Index]]
 - [[_references/statistics|Skill 中常用统计方法速查]]
 - [[_references/common-field-types|常见 Skill 字段类型与命名约定]]
-- [[15_Agent_Production/Agent_Skills/Skill_Versioning_Guide|Skill 版本管理指南]]
+- [[Agent/Agent_Skills/Skill_Versioning_Guide|Skill 版本管理指南]]

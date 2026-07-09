@@ -517,8 +517,8 @@ flowchart TB
 - [AI 法律政务深度报告](./Legal_Government/AI_Legal_Government_2026.md) -- 合同审查、诉讼预测、智能政务
 - [AI 行业应用速成指南](./Industry-in-nutshell.md) -- 面向初学者的行业 AI 入门指南
 - [AI 行业应用小白版](./AI_Applications_Industry_for_dummy.md) -- 零基础行业 AI 科普
-- [AI 伦理安全速成指南](../17_Ethics_Safety/Ethics-in-nutshell.md) -- 跨行业 AI 合规与伦理基础
-- [Agent 产品化](../15_Agent_Production/) -- Agentic AI 在各行业的产品化实践
+- [AI 伦理安全速成指南](../伦理安全/Ethics-in-nutshell.md) -- 跨行业 AI 合规与伦理基础
+- [Agent 产品化](../Agent/) -- Agentic AI 在各行业的产品化实践
 
 ---
 

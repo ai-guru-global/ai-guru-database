@@ -10,7 +10,7 @@ relationships:
   - target: "_concepts/gguf"
     type: uses_format
 sources:
-  - 10_Deployment_Inference/Inference_Engines/llama_cpp_Deep_Dive.md
+  - 部署推理/Inference_Engines/llama_cpp_Deep_Dive.md
   - _concepts/gguf.md
 summary: "llama.cpp 是用纯 C++ 实现的 LLM 推理引擎，专为 CPU 和边缘设备优化，支持 GGUF 量化格式；在消费级硬件（Mac / 普通 PC）上即可运行 7B-70B 模型，是本地 LLM 部署的事实标准。"
 lifecycle: stable
@@ -120,5 +120,5 @@ print(output['choices'][0]['message']['content'])
 
 - [[_concepts/gguf]] — GGUF 格式
 - [[_concepts/vllm]] — vLLM（GPU 生产）
-- [[10_Deployment_Inference/Inference_Engines/llama_cpp_Deep_Dive]] — llama.cpp 深度
+- [[部署推理/Inference_Engines/llama_cpp_Deep_Dive]] — llama.cpp 深度
 - [[_concepts/serverless]] — Serverless 推理- [[_concepts/inference-performance-gaps]] — Inference Performance Gaps

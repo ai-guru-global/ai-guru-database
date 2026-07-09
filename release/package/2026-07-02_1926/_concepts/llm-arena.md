@@ -12,9 +12,9 @@ relationships:
   - target: "_concepts/red-teaming"
     type: differs_from
 sources:
-  - 08_Model_Evaluation/Benchmarks/LLM_Benchmark_Suite_2026.md
-  - 08_Model_Evaluation/Evaluation_Tools/LLM_as_Judge_Guide.md
-  - 08_Model_Evaluation/README.md
+  - 模型评估/Benchmarks/LLM_Benchmark_Suite_2026.md
+  - 模型评估/Evaluation_Tools/LLM_as_Judge_Guide.md
+  - 模型评估/README.md
 summary: "LLM Arena（Chatbot Arena）是 LMSYS 推出的众包式大模型对战平台。用户同时和两个匿名模型对话，然后投票选出更好的那个。平台用国际象棋的 Elo 积分系统给模型排名，被业界视为‘老百姓用脚投票’的权威榜单。"
 provenance:
   extracted: 0.8
@@ -99,5 +99,5 @@ LLM Arena 就像大模型界的‘盲测选秀’：两个选手匿名出战，�
 - [[_concepts/llm-as-judge]] — LLM-as-Judge
 - [[_concepts/bbh]] — BBH
 - [[_concepts/red-teaming]] — 红队测试
-- [[08_Model_Evaluation/Benchmarks/LLM_Benchmark_Suite_2026]] — LLM 基准套件 2026
-- [[08_Model_Evaluation/Evaluation_Tools/LLM_as_Judge_Guide]] — LLM-as-Judge 指南
+- [[模型评估/Benchmarks/LLM_Benchmark_Suite_2026]] — LLM 基准套件 2026
+- [[模型评估/Evaluation_Tools/LLM_as_Judge_Guide]] — LLM-as-Judge 指南

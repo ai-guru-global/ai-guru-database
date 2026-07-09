@@ -20,16 +20,16 @@ tier: supporting
 
 | 页面 | 厂商 | 核心内容 | 状态 |
 |------|------|---------|------|
-| [[01_Fundamentals/AI_Hardware/NVIDIA_AMD_GPU_Deep_Dive|NVIDIA & AMD GPU 深度解析]] | NVIDIA + AMD | H200/B200/GB200/MI300X/MI350X 完整规格+部署案例 | ✅ 详细 |
-| [[01_Fundamentals/AI_Hardware/Google_TPU_Deep_Dive|Google TPU 深度解析]] | Google | TPU v5p/v6e/TPU7x Ironwood 全代际+部署案例 | ✅ 详细 |
+| [[数学基础/AI_Hardware/NVIDIA_AMD_GPU_Deep_Dive|NVIDIA & AMD GPU 深度解析]] | NVIDIA + AMD | H200/B200/GB200/MI300X/MI350X 完整规格+部署案例 | ✅ 详细 |
+| [[数学基础/AI_Hardware/Google_TPU_Deep_Dive|Google TPU 深度解析]] | Google | TPU v5p/v6e/TPU7x Ironwood 全代际+部署案例 | ✅ 详细 |
 
 ### 国产 AI 芯片
 
 | 页面 | 厂商 | 核心芯片 | 梯队 |
 |------|------|---------|------|
-| [[01_Fundamentals/AI_Hardware/Chinese_AI_Chips_Deep_Dive|国产 AI 芯片深度解析]] | 12+ 家厂商 | 全线覆盖 | T1-T3 |
-| [[01_Fundamentals/AI_Hardware/T_Head_PPU_Deep_Dive|平头哥真武 PPU 深度解析]] | 平头哥 (T-Head) | 真武 810E / M890 | T2 |
-| [[01_Fundamentals/AI_Hardware/T_Head_PPU_for_dummy|平头哥 PPU 大白话解读]] | 平头哥 (T-Head) | 真武 810E / M890 | 入门 |
+| [[数学基础/AI_Hardware/Chinese_AI_Chips_Deep_Dive|国产 AI 芯片深度解析]] | 12+ 家厂商 | 全线覆盖 | T1-T3 |
+| [[数学基础/AI_Hardware/T_Head_PPU_Deep_Dive|平头哥真武 PPU 深度解析]] | 平头哥 (T-Head) | 真武 810E / M890 | T2 |
+| [[数学基础/AI_Hardware/T_Head_PPU_for_dummy|平头哥 PPU 大白话解读]] | 平头哥 (T-Head) | 真武 810E / M890 | 入门 |
 
 ### NVIDIA/AMD 快速对比
 
@@ -73,8 +73,8 @@ tier: supporting
 └── 边缘 → 地平线 J6 (车载) / 算能 BM1688 / 寒武纪 220
 ```
 
-> **关联**: -> [[01_Fundamentals/README|基础]] | [[07_Model_Training/README|模型训练]] | [[10_Deployment_Inference/README|部署推理]] | [[12_Architecture_Infrastructure/README|架构基础]]
+> **关联**: -> [[数学基础/README|基础]] | [[模型训练/README|模型训练]] | [[部署推理/README|部署推理]] | [[架构基建/README|架构基础]]
 
 ## Related
 
-- [[01_Fundamentals/AI_Hardware/AI_Hardware_Quantum_for_Beginners|AI 芯片与量子计算入门]]
+- [[数学基础/AI_Hardware/AI_Hardware_Quantum_for_Beginners|AI 芯片与量子计算入门]]

@@ -19,7 +19,7 @@ aliases:
 
 > **一句话理解**: Feast 是开源特征存储——管理 ML 特征、在线/离线一致、特征复用、团队共享，ML 平台的特征工程基础设施。
 
-> 📐 **概念与选型方法论**: 特征存储的原理、Feast vs Tecton vs Hopsworks 选型，见 [[11_MLOps_Pipeline/Experiment_Tracking/Feature_Store_Deep_Dive]]。本文聚焦 Feast 工具用法。
+> 📐 **概念与选型方法论**: 特征存储的原理、Feast vs Tecton vs Hopsworks 选型，见 [[MLOps/Experiment_Tracking/Feature_Store_Deep_Dive]]。本文聚焦 Feast 工具用法。
 
 ---
 
@@ -375,8 +375,8 @@ features = store.get_online_features(...)
 
 ## Related
 
-- [[13_AI_Ops/AIOps-in-nutshell.md|AIOps-in-nutshell]]
-- [[13_AI_Ops/SRE_Reliability/AI_Incident_Response_Playbook|AI_Incident_Response_Playbook]]
-- [[13_AI_Ops/AI_Ops_for_dummy.md|AI_Ops_for_dummy]]
-- [[13_AI_Ops/README.md|13_AI_Ops README]]
-- [[13_AI_Ops/README_for_dummy.md|README_for_dummy]]
+- [[AI运维/AIOps-in-nutshell.md|AIOps-in-nutshell]]
+- [[AI运维/SRE_Reliability/AI_Incident_Response_Playbook|AI_Incident_Response_Playbook]]
+- [[AI运维/AI_Ops_for_dummy.md|AI_Ops_for_dummy]]
+- [[AI运维/README.md|AI运维 README]]
+- [[AI运维/README_for_dummy.md|README_for_dummy]]

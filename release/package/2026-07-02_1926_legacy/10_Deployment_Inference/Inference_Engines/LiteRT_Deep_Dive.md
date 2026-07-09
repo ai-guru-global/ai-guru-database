@@ -594,10 +594,10 @@ print(response)
 
 ## Related
 
-- [[10_Deployment_Inference/Deployment_Inference.md|Deployment_Inference]]
-- [[10_Deployment_Inference/Deployment_Inference_2026.md|Deployment_Inference_2026]]
-- [[10_Deployment_Inference/Deployment_Inference_for_dummy.md|Deployment_Inference_for_dummy]]
-- [[10_Deployment_Inference/Inference-in-nutshell.md|Inference-in-nutshell]]
-- [[10_Deployment_Inference/Inference_Engines/llama_cpp_Deep_Dive.md|llama_cpp_Deep_Dive]]
-- [[10_Deployment_Inference/Inference_Engines/Ollama_Deep_Dive.md|Ollama_Deep_Dive]]
-- [[10_Deployment_Inference/Inference_Engines/LLM_Inference_Engine_Selection_Guide.md|LLM_Inference_Engine_Selection_Guide]]
+- [[部署推理/Deployment_Inference.md|Deployment_Inference]]
+- [[部署推理/Deployment_Inference_2026.md|Deployment_Inference_2026]]
+- [[部署推理/Deployment_Inference_for_dummy.md|Deployment_Inference_for_dummy]]
+- [[部署推理/Inference-in-nutshell.md|Inference-in-nutshell]]
+- [[部署推理/Inference_Engines/llama_cpp_Deep_Dive.md|llama_cpp_Deep_Dive]]
+- [[部署推理/Inference_Engines/Ollama_Deep_Dive.md|Ollama_Deep_Dive]]
+- [[部署推理/Inference_Engines/LLM_Inference_Engine_Selection_Guide.md|LLM_Inference_Engine_Selection_Guide]]

@@ -21,8 +21,8 @@ relationships:
 - target: '_concepts/model-deployment'
   type: enables
 sources:
-- 12_Architecture_Infrastructure/Hardware_Compute/DRA_Deep_Dive.md
-- 12_Architecture_Infrastructure/Hardware_Compute/CDI_Deep_Dive.md
+- 架构基建/Hardware_Compute/DRA_Deep_Dive.md
+- 架构基建/Hardware_Compute/CDI_Deep_Dive.md
 summary: DRA 是 Kubernetes 1.32+ beta 的现代设备分配机制——用 ResourceClass/ResourceClaim 让第三方驱动声明式申请 GPU/加速器，支持跨节点协调、NUMA 拓扑亲和与设备共享。它与 CDI 是一对：DRA 管「谁拿哪块卡」(分配)，CDI 管「卡怎么进容器」(注入)，共同取代传统的 Device Plugin 单体模型。
 provenance:
   extracted: 0.6
@@ -116,9 +116,9 @@ DRA (分配层 - 新)
 
 ## 延伸阅读
 
-- [[12_Architecture_Infrastructure/Hardware_Compute/DRA_Deep_Dive|DRA 深度解析]]
+- [[架构基建/Hardware_Compute/DRA_Deep_Dive|DRA 深度解析]]
 - [[_concepts/cdi|CDI 容器设备接口（配对概念）]]
-- [[12_Architecture_Infrastructure/Hardware_Compute/CDI_Deep_Dive|CDI 深度解析]]
+- [[架构基建/Hardware_Compute/CDI_Deep_Dive|CDI 深度解析]]
 - [[_concepts/gpu-virtualization|GPU 虚拟化]]
 - [[_concepts/heterogeneous-gpu|异构 GPU 集群]]
 - [[_concepts/gpu-operator|NVIDIA GPU Operator]]

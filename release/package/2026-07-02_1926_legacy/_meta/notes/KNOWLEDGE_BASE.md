@@ -60,7 +60,7 @@ git clone https://github.com/your-org/ai-guru-knowledge-base.git
 cd ai-guru-knowledge-base/docs
 
 # Start with the 9 In-Nutshell guides
-open 05_NLP_LLMs/LLM_Architectures/LLM-Basics-in-nutshell.md
+open 大模型/LLM_Architectures/LLM-Basics-in-nutshell.md
 ```
 
 ### For the Web Experience
@@ -77,9 +77,9 @@ npm run dev
 | I am a... | Start Here | Time to Productive |
 |-----------|-----------|-------------------|
 | **运维/开发工程师** | [9 篇速成指南](#-in-nutshell-guides) | 15-20 hours |
-| **大学生/自学者** | [00_AI_Introduction](./00_AI_Introduction/) | 16-20 hours |
-| **产品经理** | [AI应用与行业融合](../18_AI_Applications_Industry/) | 8-10 hours |
-| **研究人员** | [10_Papers](../20_Papers_and_Research/) + [03_Deep_Learning](./03_Deep_Learning/) | Self-paced |
+| **大学生/自学者** | [AI入门](./AI入门/) | 16-20 hours |
+| **产品经理** | [AI应用与行业融合](../行业应用/) | 8-10 hours |
+| **研究人员** | [10_Papers](../论文精读/) + [深度学习](./深度学习/) | Self-paced |
 | **教育者** | [Complete Curriculum](#-university-curriculum) | Full semester |
 
 ---
@@ -118,7 +118,7 @@ Complete AI general education for universities - **10 textbooks, 8 labs, 16-week
 | Learning Resources | Courses, books, platforms, career paths | 2h |
 | + Glossary + Cases + Labs | 100+ terms, 6 cases, 8 experiments | - |
 
-**[View Full Curriculum →](../00_AI_Introduction/README.md)**
+**[View Full Curriculum →](../AI入门/README.md)**
 
 ### ⚡ In-Nutshell Guides (速成路径)
 
@@ -179,19 +179,19 @@ Cutting-edge content updated for 2026:
 
 | Report | Key Topics |
 |--------|-----------|
-| **[LLM Architectures 2026](../05_NLP_LLMs/LLM_Architectures/LLM_Architectures.md)** | GPT-5.2, Claude 4.5, Gemini 3, Llama 4, Reasoning models |
-| **[AI Hardware 2026](../01_Fundamentals/AI_Hardware/AI_Hardware_2026.md)** | H100 vs H200 vs B200, MI300X, GPU selection guide |
-| **[PEFT 2026](../05_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026.md)** | LoRA/QLoRA/DoRA/rsLoRA, single-GPU 70B fine-tuning |
-| **[RAG Advanced 2026](../14_RAG_Systems/RAG_Advanced_2026.md)** | Hybrid retrieval + RRF, Agentic RAG, 60%→90% accuracy |
-| **[AI Coding Assistants 2026](../16_AI_Coding/Tools/AI_Coding_Assistants_2026.md)** | Cursor (72% acc), Claude Code, Windsurf, Devin comparison |
-| **[Vibe Coding Methodology 2026](../16_AI_Coding/Methodology/Vibe_Coding_Methodology.md)** | DGRV loop, prompt engineering, quality system, production practices |
-| **[Embodied AI 2026](../06_Reinforcement_Learning/Robotics_Embodied_AI/Embodied_AI_2026.md)** | VLA models (RT-2, π0, GR00T), humanoid robotics market |
-| **[World Models 2026](../03_Deep_Learning/World_Models/World_Models_2026.md)** | JEPA/V-JEPA 2.1/LeJEPA, Yann LeCun's AGI path |
-| **[AI Video Generation 2026](../04_Computer_Vision/Video_Generation/Video_Generation_2026.md)** | Veo3, Kling 3.0, Seedance, post-Sora landscape |
-| **[AI Security 2026](../17_Ethics_Safety/AI_Security_2026/AI_Security_2026.md)** | OWASP LLM Top 10 + ASI framework, Agent security |
-| **[Agent Production](../15_Agent_Production/Enterprise_Agent/Agent_Production_2026.md)** | K8s architecture, monitoring, CI/CD, cost control |
-| **[Agent Protocols 2026](../15_Agent_Production/Agent_Foundations/Agent_Protocols_2026.md)** | MCP/A2A/UCP stack, protocol testing framework |
-| **[AI Infrastructure 2026](../12_Architecture_Infrastructure/AI_Infrastructure_2026.md)** | SGLang 16k tok/s vs vLLM, AI Gateway, LLMOps caching |
+| **[LLM Architectures 2026](../大模型/LLM_Architectures/LLM_Architectures.md)** | GPT-5.2, Claude 4.5, Gemini 3, Llama 4, Reasoning models |
+| **[AI Hardware 2026](../数学基础/AI_Hardware/AI_Hardware_2026.md)** | H100 vs H200 vs B200, MI300X, GPU selection guide |
+| **[PEFT 2026](../大模型/Fine_tuning_Techniques/PEFT_2026.md)** | LoRA/QLoRA/DoRA/rsLoRA, single-GPU 70B fine-tuning |
+| **[RAG Advanced 2026](../RAG系统/RAG_Advanced_2026.md)** | Hybrid retrieval + RRF, Agentic RAG, 60%→90% accuracy |
+| **[AI Coding Assistants 2026](../AI编程/Tools/AI_Coding_Assistants_2026.md)** | Cursor (72% acc), Claude Code, Windsurf, Devin comparison |
+| **[Vibe Coding Methodology 2026](../AI编程/Methodology/Vibe_Coding_Methodology.md)** | DGRV loop, prompt engineering, quality system, production practices |
+| **[Embodied AI 2026](../强化学习/Robotics_Embodied_AI/Embodied_AI_2026.md)** | VLA models (RT-2, π0, GR00T), humanoid robotics market |
+| **[World Models 2026](../深度学习/World_Models/World_Models_2026.md)** | JEPA/V-JEPA 2.1/LeJEPA, Yann LeCun's AGI path |
+| **[AI Video Generation 2026](../计算机视觉/Video_Generation/Video_Generation_2026.md)** | Veo3, Kling 3.0, Seedance, post-Sora landscape |
+| **[AI Security 2026](../伦理安全/AI_Security_2026/AI_Security_2026.md)** | OWASP LLM Top 10 + ASI framework, Agent security |
+| **[Agent Production](../Agent/Enterprise_Agent/Agent_Production_2026.md)** | K8s architecture, monitoring, CI/CD, cost control |
+| **[Agent Protocols 2026](../Agent/Agent_Foundations/Agent_Protocols_2026.md)** | MCP/A2A/UCP stack, protocol testing framework |
+| **[AI Infrastructure 2026](../架构基建/AI_Infrastructure_2026.md)** | SGLang 16k tok/s vs vLLM, AI Gateway, LLMOps caching |
 
 ---
 

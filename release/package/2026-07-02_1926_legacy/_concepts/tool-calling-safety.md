@@ -12,9 +12,9 @@ relationships:
   - target: "_concepts/red-teaming"
     type: tested_by
 sources:
-  - 15_Agent_Production/Agent_Skills/Agent_Skills_Multi_Role_Analysis.md
-  - 17_Ethics_Safety/LLM_Security_Defense_Guide.md
-  - 15_Agent_Production/Agentic_Design_Patterns_AndrewNg.md
+  - Agent/Agent_Skills/Agent_Skills_Multi_Role_Analysis.md
+  - 伦理安全/LLM_Security_Defense_Guide.md
+  - Agent/Agentic_Design_Patterns_AndrewNg.md
 summary: "工具调用安全是指防止 AI Agent 在调用外部工具（函数、API、数据库、代码执行）时造成危害的一整套防护措施。核心风险包括越权操作、数据泄露、恶意输入、错误调用链和不可控的自主行为。"
 provenance:
   extracted: 0.75
@@ -102,5 +102,5 @@ aliases:
 - [[_concepts/tool-calling]] — 工具调用
 - [[_concepts/guardrails]] — Guardrails 安全护栏
 - [[_concepts/red-teaming]] — 红队测试
-- [[17_Ethics_Safety/LLM_Security_Defense_Guide]] — LLM 安全防御指南
-- [[15_Agent_Production/Agent_Skills/Agent_Skills_Multi_Role_Analysis]] — Agent 技能多角色分析
+- [[伦理安全/LLM_Security_Defense_Guide]] — LLM 安全防御指南
+- [[Agent/Agent_Skills/Agent_Skills_Multi_Role_Analysis]] — Agent 技能多角色分析

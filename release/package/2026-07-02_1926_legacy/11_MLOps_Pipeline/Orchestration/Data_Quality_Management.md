@@ -351,9 +351,9 @@ Schema + 统计验证 < 1 秒；分布检测 ~10 秒。相比训练时间（分�
 
 ## Related
 
-- [[11_MLOps_Pipeline/Observability/Model_Monitoring_and_Drift_Detection_2026]] — 模型监控
-- [[11_MLOps_Pipeline/Experiment_Tracking/Experiment_Tracking_Deep_Dive]] — 实验追踪
-- [[11_MLOps_Pipeline/README]] — MLOps Pipeline 目录导航
+- [[MLOps/Observability/Model_Monitoring_and_Drift_Detection_2026]] — 模型监控
+- [[MLOps/Experiment_Tracking/Experiment_Tracking_Deep_Dive]] — 实验追踪
+- [[MLOps/README]] — MLOps Pipeline 目录导航
 
 ---
 

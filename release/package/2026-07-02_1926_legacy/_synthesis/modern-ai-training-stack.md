@@ -22,19 +22,19 @@ aliases:
 
 ### 1. 训练时架构与成本效率
 
-[[03_Deep_Learning/DeepSeek_Architecture_2026|DeepSeek 架构]] 和 [[07_Model_Training/Diffusion_Model_Training_2026|扩散模型训练]] 代表了训练侧的两条效率路径。前者通过 MLA、DeepSeekMoE、FP8 与 MTP，把 Dense Transformer 的显存与通信开销压到极低，证明在算力受限条件下仍可通过架构创新实现 Scaling；后者则展示了视觉/视频生成模型在高维连续空间中的训练动力学，对数据质量、采样策略与可控性提出了完全不同的要求。两者共同说明：**训练效率不再只是堆卡，而是算法、通信、精度、数据工程的联合设计**。
+[[深度学习/DeepSeek_Architecture_2026|DeepSeek 架构]] 和 [[模型训练/Diffusion_Model_Training_2026|扩散模型训练]] 代表了训练侧的两条效率路径。前者通过 MLA、DeepSeekMoE、FP8 与 MTP，把 Dense Transformer 的显存与通信开销压到极低，证明在算力受限条件下仍可通过架构创新实现 Scaling；后者则展示了视觉/视频生成模型在高维连续空间中的训练动力学，对数据质量、采样策略与可控性提出了完全不同的要求。两者共同说明：**训练效率不再只是堆卡，而是算法、通信、精度、数据工程的联合设计**。
 
-[[07_Model_Training/Training_Cost_Optimization_and_FinOps_2026|训练 FinOps]] 为这一层提供经济约束，把 GPU 利用率、Spot 实例、Checkpoint 频率、混合精度与 ZeRO offloading 统一纳入「tokens trained per dollar」的度量体系。
+[[模型训练/Training_Cost_Optimization_and_FinOps_2026|训练 FinOps]] 为这一层提供经济约束，把 GPU 利用率、Spot 实例、Checkpoint 频率、混合精度与 ZeRO offloading 统一纳入「tokens trained per dollar」的度量体系。
 
 ### 2. 后训练：从 SFT 到 GRPO
 
-预训练之后的对齐阶段也在发生范式转移。[[06_Reinforcement_Learning/GRPO_Training_Deep_Dive|GRPO 训练]] 通过去掉 Critic 模型、用组内相对优势与可验证奖励，把推理能力（长思维链、数学与代码）的训练成本显著降低。它与 PPO、DPO 的根本差异在于：**奖励信号从「人类偏好」转向「可验证正确性」**，这让推理模型训练更稳定、更可扩展。
+预训练之后的对齐阶段也在发生范式转移。[[强化学习/GRPO_Training_Deep_Dive|GRPO 训练]] 通过去掉 Critic 模型、用组内相对优势与可验证奖励，把推理能力（长思维链、数学与代码）的训练成本显著降低。它与 PPO、DPO 的根本差异在于：**奖励信号从「人类偏好」转向「可验证正确性」**，这让推理模型训练更稳定、更可扩展。
 
 GRPO 不是孤立技术，它与架构效率紧密耦合：更长的 CoT 意味着更高的训练显存与通信压力，因此 DeepSeek 的 MLA + FP8 组合恰好为 GRPO 的大规模应用铺平了道路。
 
 ### 3. 推理时计算扩展（TTC Scaling）
 
-[[05_NLP_LLMs/Test_Time_Compute_Scaling_2026|Test-Time Compute Scaling]] 把能力增长的战场从训练阶段延伸到了推理阶段。它通过并行采样、串行反思、验证器搜索等方式，让较小/较便宜的模型在复杂任务上媲美大模型。这与训练时 Scaling 形成鲜明对比：
+[[大模型/Test_Time_Compute_Scaling_2026|Test-Time Compute Scaling]] 把能力增长的战场从训练阶段延伸到了推理阶段。它通过并行采样、串行反思、验证器搜索等方式，让较小/较便宜的模型在复杂任务上媲美大模型。这与训练时 Scaling 形成鲜明对比：
 
 | 维度 | Train-Time Scaling | Test-Time Scaling |
 |---|---|---|
@@ -47,7 +47,7 @@ GRPO 不是孤立技术，它与架构效率紧密耦合：更长的 CoT 意味�
 
 ### 4. 生产部署与运营
 
-训练再先进，最终仍需落地到线上服务。[[05_NLP_LLMs/LLM_Production_Deployment_Runbook|LLM 生产部署 Runbook]]、[[12_Architecture_Infrastructure/AI_SRE_Runbook|AI SRE Runbook]] 与 [[18_AI_Applications_Industry/AI_Production_Architecture_2026|AI 生产架构 2026]] 共同构成了训练栈的「最后一公里」。这里的关键不是单点技术，而是把推理引擎、网关路由、可观测性、成本归因、安全护栏与回滚机制整合成可持续运营的体系。
+训练再先进，最终仍需落地到线上服务。[[大模型/LLM_Production_Deployment_Runbook|LLM 生产部署 Runbook]]、[[架构基建/AI_SRE_Runbook|AI SRE Runbook]] 与 [[行业应用/AI_Production_Architecture_2026|AI 生产架构 2026]] 共同构成了训练栈的「最后一公里」。这里的关键不是单点技术，而是把推理引擎、网关路由、可观测性、成本归因、安全护栏与回滚机制整合成可持续运营的体系。
 
 ## Cross-cutting Insight
 
@@ -73,15 +73,15 @@ GRPO 不是孤立技术，它与架构效率紧密耦合：更长的 CoT 意味�
 
 ## 落地建议
 
-1. **建立统一的成本度量口径**：把训练阶段的「$/1M tokens trained」与推理阶段的「$/1K output tokens」打通，避免训练与 Serving 团队各自为政。参考 [[07_Model_Training/Training_Cost_Optimization_and_FinOps_2026|训练 FinOps]] 的归因模型。
+1. **建立统一的成本度量口径**：把训练阶段的「$/1M tokens trained」与推理阶段的「$/1K output tokens」打通，避免训练与 Serving 团队各自为政。参考 [[模型训练/Training_Cost_Optimization_and_FinOps_2026|训练 FinOps]] 的归因模型。
 
 2. **按任务难度分层路由**：简单请求用小模型快速响应；中等复杂度请求引入 TTC Scaling；高价值/高难度请求才触发 GRPO 强化后的推理模型。参考 [[93_Templates/LLM_Gateway_Deep_Dive|LLM Gateway 模板]] 设计多模型路由。
 
-3. **把可验证奖励作为 RL 训练基石**：在数学、代码、形式化验证等存在客观答案的场景，优先使用 GRPO 而非偏好式 RLHF，降低奖励模型偏差。参考 [[06_Reinforcement_Learning/GRPO_Training_Deep_Dive|GRPO 训练深度解读]]。
+3. **把可验证奖励作为 RL 训练基石**：在数学、代码、形式化验证等存在客观答案的场景，优先使用 GRPO 而非偏好式 RLHF，降低奖励模型偏差。参考 [[强化学习/GRPO_Training_Deep_Dive|GRPO 训练深度解读]]。
 
-4. **训练与推理架构协同设计**：选择 MLA/MoE/FP8 等训练-推理同构优化方案，避免训练阶段为了成本而引入难以 Serving 的架构债务。参考 [[03_Deep_Learning/DeepSeek_Architecture_2026|DeepSeek 架构解析]]。
+4. **训练与推理架构协同设计**：选择 MLA/MoE/FP8 等训练-推理同构优化方案，避免训练阶段为了成本而引入难以 Serving 的架构债务。参考 [[深度学习/DeepSeek_Architecture_2026|DeepSeek 架构解析]]。
 
-5. **把 SRE 与模型迭代绑定**：每次模型版本上线都应配套 Canary、影子测试、漂移检测与回滚预案，而不是把「模型更新」当作一次性发布。参考 [[12_Architecture_Infrastructure/AI_SRE_Runbook|AI SRE Runbook]]。
+5. **把 SRE 与模型迭代绑定**：每次模型版本上线都应配套 Canary、影子测试、漂移检测与回滚预案，而不是把「模型更新」当作一次性发布。参考 [[架构基建/AI_SRE_Runbook|AI SRE Runbook]]。
 
 ## Open Questions
 
@@ -92,14 +92,14 @@ GRPO 不是孤立技术，它与架构效率紧密耦合：更长的 CoT 意味�
 
 ## Related
 
-- [[07_Model_Training/Training_Cost_Optimization_and_FinOps_2026|大模型训练成本优化与 FinOps 实践 2026]]
-- [[06_Reinforcement_Learning/GRPO_Training_Deep_Dive|GRPO 训练深度解读]]
-- [[05_NLP_LLMs/Test_Time_Compute_Scaling_2026|Test-Time Compute Scaling 2026]]
-- [[03_Deep_Learning/DeepSeek_Architecture_2026|DeepSeek 架构深度解析 2026]]
-- [[07_Model_Training/Diffusion_Model_Training_2026|扩散模型训练实战 2026]]
-- [[05_NLP_LLMs/LLM_Production_Deployment_Runbook|LLM 生产环境部署 Runbook]]
-- [[18_AI_Applications_Industry/AI_Production_Architecture_2026|AI 生产架构 2026]]
-- [[12_Architecture_Infrastructure/AI_SRE_Runbook|AI SRE Runbook]]
+- [[模型训练/Training_Cost_Optimization_and_FinOps_2026|大模型训练成本优化与 FinOps 实践 2026]]
+- [[强化学习/GRPO_Training_Deep_Dive|GRPO 训练深度解读]]
+- [[大模型/Test_Time_Compute_Scaling_2026|Test-Time Compute Scaling 2026]]
+- [[深度学习/DeepSeek_Architecture_2026|DeepSeek 架构深度解析 2026]]
+- [[模型训练/Diffusion_Model_Training_2026|扩散模型训练实战 2026]]
+- [[大模型/LLM_Production_Deployment_Runbook|LLM 生产环境部署 Runbook]]
+- [[行业应用/AI_Production_Architecture_2026|AI 生产架构 2026]]
+- [[架构基建/AI_SRE_Runbook|AI SRE Runbook]]
 - [[_concepts/model-training|模型训练]]
 - [[_concepts/reinforcement-learning|强化学习]]
 - [[_concepts/finops|FinOps]]

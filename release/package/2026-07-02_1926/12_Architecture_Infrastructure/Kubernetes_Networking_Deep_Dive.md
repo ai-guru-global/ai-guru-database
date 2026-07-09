@@ -678,7 +678,7 @@ kubectl logs -n kube-system -l app=cloud-controller-manager --tail=200
 - [[_concepts/service|Service]] — K8s 服务发现与负载均衡
 - [[_concepts/pod|Pod]] — Pod 网络主体
 - [[_concepts/kubernetes|Kubernetes]] — K8s 编排平台
-- [[12_Architecture_Infrastructure/CNCF_Cloud_Native_AI/kagent_Deep_Dive|kagent Deep Dive]] — K8s 原生的 DevOps AI Agent 框架
-- [[12_Architecture_Infrastructure/CNCF_Cloud_Native_AI/K8sGPT_Deep_Dive|K8sGPT Deep Dive]] — K8s 单轮诊断助手
-- [[12_Architecture_Infrastructure/README]] — 架构与基础设施总览
+- [[架构基建/CNCF_Cloud_Native_AI/kagent_Deep_Dive|kagent Deep Dive]] — K8s 原生的 DevOps AI Agent 框架
+- [[架构基建/CNCF_Cloud_Native_AI/K8sGPT_Deep_Dive|K8sGPT Deep Dive]] — K8s 单轮诊断助手
+- [[架构基建/README]] — 架构与基础设施总览
 - [[network-policy]]

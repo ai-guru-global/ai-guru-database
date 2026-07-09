@@ -631,8 +631,8 @@ Apple Intelligence 2026:
 
 ## Related
 
-- [[12_Architecture_Infrastructure/Architecture_Overview/AI_Infrastructure_2026|AI_Infrastructure_2026]]
-- [[12_Architecture_Infrastructure/Architecture-in-nutshell.md|Architecture-in-nutshell]]
-- [[12_Architecture_Infrastructure/Architecture_Infrastructure_for_dummy.md|Architecture_Infrastructure_for_dummy]]
-- [[12_Architecture_Infrastructure/Architecture_Overview/Spring_AI_Architecture|Spring_AI_Architecture]]
+- [[架构基建/Architecture_Overview/AI_Infrastructure_2026|AI_Infrastructure_2026]]
+- [[架构基建/Architecture-in-nutshell.md|Architecture-in-nutshell]]
+- [[架构基建/Architecture_Infrastructure_for_dummy.md|Architecture_Infrastructure_for_dummy]]
+- [[架构基建/Architecture_Overview/Spring_AI_Architecture|Spring_AI_Architecture]]
 - [[_concepts/llm-infrastructure.md|llm-infrastructure]]

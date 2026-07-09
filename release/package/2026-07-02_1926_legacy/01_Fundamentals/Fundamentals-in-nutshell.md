@@ -386,9 +386,9 @@ flowchart TB
 
 ## 🔗 相关主题
 
-- [机器学习速成](../02_Machine_Learning/ML-in-nutshell.md) —— 用这些基础构建 ML 模型
-- [深度学习速成](../03_Deep_Learning/DL-in-nutshell.md) —— 神经网络的核心机制
-- [推理速成](../10_Deployment_Inference/Inference-in-nutshell.md) —— 把模型跑起来
+- [机器学习速成](../机器学习/ML-in-nutshell.md) —— 用这些基础构建 ML 模型
+- [深度学习速成](../深度学习/DL-in-nutshell.md) —— 神经网络的核心机制
+- [推理速成](../部署推理/Inference-in-nutshell.md) —— 把模型跑起来
 - [AI 硬件对比](./AI_Hardware/AI_Hardware_2026.md) —— 2026 年硬件选型指南
 
 ---
@@ -397,7 +397,7 @@ flowchart TB
 
 ## Related
 
-- [[01_Fundamentals/AI_Hardware/README]] — AI硬件与芯片 (AI Hardware) (共享: algorithms, basics, fundamentals, math)
-- [[01_Fundamentals/Java_Ecosystem_AI/Java_Ecosystem_AI_Overview]] — Java 生态与 AI：全景概览 (共享: algorithms, basics, fundamentals, math)
-- [[01_Fundamentals/Java_Ecosystem_AI/Spring_AI_Deep_Dive]] — Spring AI 深度解析 (共享: algorithms, basics, fundamentals, math)
-- [[01_Fundamentals/README]] — 01 基础理论 (Fundamentals) (共享: algorithms, basics, fundamentals, math)
+- [[数学基础/AI_Hardware/README]] — AI硬件与芯片 (AI Hardware) (共享: algorithms, basics, fundamentals, math)
+- [[数学基础/Java_Ecosystem_AI/Java_Ecosystem_AI_Overview]] — Java 生态与 AI：全景概览 (共享: algorithms, basics, fundamentals, math)
+- [[数学基础/Java_Ecosystem_AI/Spring_AI_Deep_Dive]] — Spring AI 深度解析 (共享: algorithms, basics, fundamentals, math)
+- [[数学基础/README]] — 01 基础理论 (Fundamentals) (共享: algorithms, basics, fundamentals, math)

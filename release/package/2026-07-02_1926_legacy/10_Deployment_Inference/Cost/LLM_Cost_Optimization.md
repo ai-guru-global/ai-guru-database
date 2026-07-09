@@ -108,5 +108,5 @@ OpenAI Batch API 享受 50% 折扣:
 4. **定期审计**: 每月分析成本构成,找出优化点
 5. **设置上限**: 防止异常请求导致成本飙升
 
-> **关联**: -> [[10_Deployment_Inference/README|部署推理]] | [[12_Architecture_Infrastructure/AI_Gateway/index|AI 网关]] | [[10_Deployment_Inference/Caching/Prompt_Caching_and_KV_Cache_Optimization|Prompt Caching]]
+> **关联**: -> [[部署推理/README|部署推理]] | [[架构基建/AI_Gateway/index|AI 网关]] | [[部署推理/Caching/Prompt_Caching_and_KV_Cache_Optimization|Prompt Caching]]
 

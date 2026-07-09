@@ -381,11 +381,11 @@ AlexNet(2012) → VGG(2014) → ResNet(2015) → ViT(2020) → DINOv2(2023)
 
 ## Related
 
-- [[20_Papers_and_Research/Vision/ResNet_Deep_Dive|ResNet 深度解读]] — 残差连接: AlexNet 的直接继承者
-- [[20_Papers_and_Research/Vision/GAN_Deep_Dive|GAN 深度解读]] — 从判别模型到生成模型
-- [[20_Papers_and_Research/Vision/CLIP_Deep_Dive|CLIP 深度解读]] — 视觉模型的新范式: 多模态对齐
-- [[04_Computer_Vision/README|计算机视觉]] — 计算机视觉全景
-- [[03_Deep_Learning/README|深度学习基础]] — 深度学习理论与训练
+- [[论文精读/Vision/ResNet_Deep_Dive|ResNet 深度解读]] — 残差连接: AlexNet 的直接继承者
+- [[论文精读/Vision/GAN_Deep_Dive|GAN 深度解读]] — 从判别模型到生成模型
+- [[论文精读/Vision/CLIP_Deep_Dive|CLIP 深度解读]] — 视觉模型的新范式: 多模态对齐
+- [[计算机视觉/README|计算机视觉]] — 计算机视觉全景
+- [[深度学习/README|深度学习基础]] — 深度学习理论与训练
 
 ---
 

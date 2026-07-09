@@ -12,8 +12,8 @@ relationships:
   - target: "_concepts/online-evaluation"
     type: belongs_to
 sources:
-  - 08_Model_Evaluation/Evaluation_Tools/Online_Evaluation.md
-  - 11_MLOps_Pipeline/Evaluation/LLM_Evaluation_Pipeline.md
+  - 模型评估/Evaluation_Tools/Online_Evaluation.md
+  - MLOps/Evaluation/LLM_Evaluation_Pipeline.md
   - _concepts/model-evaluation.md
 summary: "A/B 测试框架是一套在线对比新模型/策略与旧版本的工程系统。它把用户随机分成两组，一组用老版本（A），一组用新版本（B），通过统计检验判断新版本是否在真实业务指标上更好。"
 provenance:
@@ -105,5 +105,5 @@ A/B 测试直接看真实用户身上的效果。
 - [[_concepts/model-deployment]] — 模型部署
 - [[_concepts/online-evaluation]] — 在线评估
 - [[_concepts/ci-integrated-evaluation]] — CI 集成评估
-- [[08_Model_Evaluation/Evaluation_Tools/Online_Evaluation]] — 在线评估
-- [[11_MLOps_Pipeline/Evaluation/LLM_Evaluation_Pipeline]] — LLM 评估流水线
+- [[模型评估/Evaluation_Tools/Online_Evaluation]] — 在线评估
+- [[MLOps/Evaluation/LLM_Evaluation_Pipeline]] — LLM 评估流水线

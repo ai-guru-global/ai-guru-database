@@ -10,7 +10,7 @@ relationships:
   - target: "_concepts/reranker"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "Docling 是 IBM 开源的文档解析工具，支持 PDF/DOCX/PPTX/HTML 等格式的结构化提取。保留表格/图片/段落层级关系，是 RAG 流水线文档预处理的首选工具。"
 provenance:
   extracted: 0.20
@@ -134,4 +134,4 @@ for table in doc.tables:
 - [[_concepts/embedding-models]] — 嵌入模型
 - [[_concepts/reranker]] — 重排序模型
 - [[_concepts/agentic-rag]] — Agentic RAG
-- [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析

@@ -12,7 +12,7 @@ relationships:
   - target: "_concepts/model-serving"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "Qwen3-Pro 是 AI Stack V2.14.0 新增的专有优化模型，推理性能为开源 Qwen3-VL-235B 的 1.9 倍，原生支持 256K 上下文，仅专有云 APG 输出。"
 provenance:
   extracted: 0.80
@@ -179,4 +179,4 @@ Qwen 模型家族（AI Stack 预置）
 - [[_concepts/mixture-of-experts]] — MoE 混合专家
 - [[_concepts/long-context-models]] — 长上下文模型
 - [[_concepts/model-serving]] — 模型服务
-- [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析

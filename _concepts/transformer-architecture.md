@@ -10,7 +10,7 @@ relationships:
     type: related_to
   - target: "_concepts/state-space-models"
     type: related_to
-sources: [03_Deep_unsupervised-learning/Neural_Network_Core/Neural_Network_Core.md, 03_Deep_Learning/README.md]
+sources: [03_Deep_unsupervised-learning/Neural_Network_Core/Neural_Network_Core.md, 深度学习/README.md]
 summary: 基于自注意力机制的序列建模架构，摒弃循环和卷积实现并行计算，是 BERT/GPT 等大模型的基础，但也面临 O(n²) 复杂度瓶颈。
 provenance:
   extracted: 0.75
@@ -129,7 +129,7 @@ Transformer 训练 的标配配置：
 
 ## 来源
 
-- 03_Deep_Learning/Neural_Network_Core/Neural_Network_Core.md（3.4 节自注意力机制）
+- 深度学习/Neural_Network_Core/Neural_Network_Core.md（3.4 节自注意力机制）
 - Vaswani et al. (2017) "Attention Is All You Need"
 - Devlin et al. (2018) BERT, Radford et al. (2019) GPT-2
 
@@ -143,8 +143,8 @@ Transformer 训练 的标配配置：
 - [[_concepts/rope|RoPE]]
 - [[_concepts/alibi|ALiBi]]
 - [[_synthesis/transformer-llm-architecture]] — Transformer 架构 × LLM 架构 (共享: attention, bert, gpt, nlp, transformer)
-- [[05_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026]] — PEFT 2026 (参数高效微调) (共享: bert, gpt, nlp, transformer)
-- [[05_NLP_LLMs/Fine_tuning_Techniques/README]] — 微调技术 (Fine-tuning Techniques) (共享: bert, gpt, nlp, transformer)
-- [[05_NLP_LLMs/LLM_Architectures/LLM-Basics-in-nutshell]] — 大语言模型基础速成指南 (共享: bert, gpt, nlp, transformer)
+- [[大模型/Fine_tuning_Techniques/PEFT_2026]] — PEFT 2026 (参数高效微调) (共享: bert, gpt, nlp, transformer)
+- [[大模型/Fine_tuning_Techniques/README]] — 微调技术 (Fine-tuning Techniques) (共享: bert, gpt, nlp, transformer)
+- [[大模型/LLM_Architectures/LLM-Basics-in-nutshell]] — 大语言模型基础速成指南 (共享: bert, gpt, nlp, transformer)
 - [[_concepts/multimodal-models.md|multimodal-models]]
 - [[_synthesis/llm-nlp]]

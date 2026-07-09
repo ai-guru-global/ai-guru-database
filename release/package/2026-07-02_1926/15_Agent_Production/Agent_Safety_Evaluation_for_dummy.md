@@ -130,5 +130,5 @@ Agent 开发
 - [[_concepts/ai-agents|AI Agent]]
 - [[_concepts/tool-calling|工具调用]]
 - [[_concepts/red-teaming|红队测试]]
-- [[15_Agent_Production/Agent_Evaluation/README|Agent 评估]]
-- [[17_Ethics_Safety/LLM_Security_Defense_Guide|LLM 安全防御指南]]
+- [[Agent/Agent_Evaluation/README|Agent 评估]]
+- [[伦理安全/LLM_Security_Defense_Guide|LLM 安全防御指南]]

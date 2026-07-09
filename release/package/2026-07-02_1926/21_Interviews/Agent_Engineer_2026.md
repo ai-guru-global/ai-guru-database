@@ -605,13 +605,13 @@ class ReActAgent:
 
 ## Related
 
-- [[21_Interviews/README|AI 面试准备 (Interviews)]]
-- [[21_Interviews/jobs|AI 相关岗位与工种清单]]
-- [[21_Interviews/System_Design_for_AI|System Design for AI Interviews]]
-- [[15_Agent_Production/README|Agent 生产 (Agent Production)]]
-- [[15_Agent_Production/Agent_Production_Deployment_Runbook|Agent 生产部署 Runbook]]
-- [[15_Agent_Production/Agent_Overview|Agent 技术概览]]
-- [[09_Testing/Agent_Evaluation_Deep_Dive|Agent 评估深度解析]]
-- [[05_NLP_LLMs/LLM_Production_Deployment_Runbook|LLM 生产部署 Runbook]]
-- [[06_Reinforcement_Learning/Multi_Agent_Systems|多智能体系统]]
-- [[11_MLOps_Pipeline/LLM_Guardrails_and_Safety_Ops_2026|LLM 护栏与安全运维]]
+- [[面试岗位/README|AI 面试准备 (Interviews)]]
+- [[面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[面试岗位/System_Design_for_AI|System Design for AI Interviews]]
+- [[Agent/README|Agent 生产 (Agent Production)]]
+- [[Agent/Agent_Production_Deployment_Runbook|Agent 生产部署 Runbook]]
+- [[Agent/Agent_Overview|Agent 技术概览]]
+- [[AI测试/Agent_Evaluation_Deep_Dive|Agent 评估深度解析]]
+- [[大模型/LLM_Production_Deployment_Runbook|LLM 生产部署 Runbook]]
+- [[强化学习/Multi_Agent_Systems|多智能体系统]]
+- [[MLOps/LLM_Guardrails_and_Safety_Ops_2026|LLM 护栏与安全运维]]

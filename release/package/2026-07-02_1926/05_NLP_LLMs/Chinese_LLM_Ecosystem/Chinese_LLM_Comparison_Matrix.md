@@ -225,25 +225,25 @@ sources: []
 
 ### 训推平台深度参考
 
-- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/Chinese_LLM_Training_Inference_Platforms]] — **训练推理平台实战参考** (核心文档)
-- [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive]] — vLLM 推理引擎深度解析
-- [[10_Deployment_Inference/Inference_Engines/SGLang_Deep_Dive]] — SGLang 推理引擎
-- [[10_Deployment_Inference/Inference_Engines/LMDeploy_Deep_Dive]] — LMDeploy (InternLM)
-- [[10_Deployment_Inference/Inference_Engines/TensorRT_LLM_Deep_Dive]] — TensorRT-LLM
-- [[10_Deployment_Inference/Quantization/Quantization_Techniques_2026]] — 量化技术全景
-- [[10_Deployment_Inference/Caching/Prompt_Caching_and_KV_Cache_Optimization]] — KV Cache 优化
-- [[10_Deployment_Inference/Caching/Speculative_Decoding_Advanced_2026]] — 投机解码
+- [[大模型/Chinese_LLM_Ecosystem/Chinese_LLM_Training_Inference_Platforms]] — **训练推理平台实战参考** (核心文档)
+- [[部署推理/Inference_Engines/vLLM_Deep_Dive]] — vLLM 推理引擎深度解析
+- [[部署推理/Inference_Engines/SGLang_Deep_Dive]] — SGLang 推理引擎
+- [[部署推理/Inference_Engines/LMDeploy_Deep_Dive]] — LMDeploy (InternLM)
+- [[部署推理/Inference_Engines/TensorRT_LLM_Deep_Dive]] — TensorRT-LLM
+- [[部署推理/Quantization/Quantization_Techniques_2026]] — 量化技术全景
+- [[部署推理/Caching/Prompt_Caching_and_KV_Cache_Optimization]] — KV Cache 优化
+- [[部署推理/Caching/Speculative_Decoding_Advanced_2026]] — 投机解码
 
 ### 厂商深度解析
 
-- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/README]] — 中国大模型生态总览
-- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive]] — DeepSeek 深度解析
-- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/Qwen_Deep_Dive]] — 通义千问深度解析
-- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/GLM_Zhipu_Deep_Dive]] — 智谱 GLM 深度解析
-- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/Baidu_ERNIE_Deep_Dive]] — 百度文心深度解析
-- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/Tencent_Hunyuan_Deep_Dive]] — 腾讯混元深度解析
-- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/iFlytek_Spark_Deep_Dive]] — 讯飞星火深度解析
-- [[05_NLP_LLMs/LLM_Architectures/MoE_Routing_and_Load_Balancing]] — MoE 路由与负载均衡
+- [[大模型/Chinese_LLM_Ecosystem/README]] — 中国大模型生态总览
+- [[大模型/Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive]] — DeepSeek 深度解析
+- [[大模型/Chinese_LLM_Ecosystem/Qwen_Deep_Dive]] — 通义千问深度解析
+- [[大模型/Chinese_LLM_Ecosystem/GLM_Zhipu_Deep_Dive]] — 智谱 GLM 深度解析
+- [[大模型/Chinese_LLM_Ecosystem/Baidu_ERNIE_Deep_Dive]] — 百度文心深度解析
+- [[大模型/Chinese_LLM_Ecosystem/Tencent_Hunyuan_Deep_Dive]] — 腾讯混元深度解析
+- [[大模型/Chinese_LLM_Ecosystem/iFlytek_Spark_Deep_Dive]] — 讯飞星火深度解析
+- [[大模型/LLM_Architectures/MoE_Routing_and_Load_Balancing]] — MoE 路由与负载均衡
 - [[90_Learn/courses/microsoft/microsoft_genai_for_beginners]] — 生成式 AI 入门课程
 
 ---

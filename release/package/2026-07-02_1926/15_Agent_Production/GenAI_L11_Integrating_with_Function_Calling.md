@@ -463,13 +463,13 @@ You can click on the links to access the courses.
 ## 扩展阅读
 
 - [[90_Learn/courses/microsoft/microsoft_genai_for_beginners]]
-- [[15_Agent_Production/GenAI_L06_Text_Generation_Apps]]
-- [[15_Agent_Production/GenAI_L07_Building_Chat_Applications]]
-- [[15_Agent_Production/Agentic_Design_Patterns_AndrewNg]]
-- [[15_Agent_Production/Agent_Frameworks/README]]
+- [[Agent/GenAI_L06_Text_Generation_Apps]]
+- [[Agent/GenAI_L07_Building_Chat_Applications]]
+- [[Agent/Agentic_Design_Patterns_AndrewNg]]
+- [[Agent/Agent_Frameworks/README]]
 
 ## 课程导航
 
 | 上一课 | 下一课 |
 |--------|--------|
-| [[18_AI_Applications_Industry/GenAI_L10_Building_Low_Code_AI_Applications|L10 构建低代码AI应用]] | [[15_Agent_Production/GenAI_L12_Designing_UX_for_AI_Applications|L12 为AI应用设计用户体验]] |
+| [[行业应用/GenAI_L10_Building_Low_Code_AI_Applications|L10 构建低代码AI应用]] | [[Agent/GenAI_L12_Designing_UX_for_AI_Applications|L12 为AI应用设计用户体验]] |

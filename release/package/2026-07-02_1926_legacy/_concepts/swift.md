@@ -10,7 +10,7 @@ relationships:
   - target: "_concepts/torchrun"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "SWIFT (Scalable lightWeight Infrastructure for Fine-Tuning) 是 ModelScope 开源的微调框架，支持 100+ 模型的 LoRA/全参微调，是 AI Stack 训练工具链的推荐选择。"
 provenance:
   extracted: 0.30
@@ -104,4 +104,4 @@ swift infer \
 - [[_concepts/modelscope]] — ModelScope 魔搭社区
 - [[_concepts/torchrun]] — torchrun 分布式启动器
 - [[_concepts/accelerate]] — HF Accelerate 分布式训练
-- [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析

@@ -595,9 +595,9 @@ print(tokenizer.decode(outputs[0], skip_special_tokens=True))
 
 - [Fine_tuning_Techniques_for_dummy.md](./Fine_tuning_Techniques_for_dummy.md) — 微调技术小白版
 - [PEFT_2026.md](./PEFT_2026.md) — PEFT 2026 完全指南
-- [Fine_tuning_Strategies.md](../../05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Strategies.md) — 微调策略完全指南
-- [TRL_RLHF_DPO_Guide.md](../../07_Model_Training/Alignment/TRL_RLHF_DPO_Guide.md) — TRL 实战：RLHF 与 DPO
-- [GRPO_and_New_Alignment_Methods.md](../../07_Model_Training/Alignment/GRPO_and_New_Alignment_Methods.md) — GRPO 与新一代对齐方法
+- [Fine_tuning_Strategies.md](../../大模型/Fine_tuning_Techniques/Fine_tuning_Strategies.md) — 微调策略完全指南
+- [TRL_RLHF_DPO_Guide.md](../../模型训练/Alignment/TRL_RLHF_DPO_Guide.md) — TRL 实战：RLHF 与 DPO
+- [GRPO_and_New_Alignment_Methods.md](../../模型训练/Alignment/GRPO_and_New_Alignment_Methods.md) — GRPO 与新一代对齐方法
 
 ### 关键论文
 

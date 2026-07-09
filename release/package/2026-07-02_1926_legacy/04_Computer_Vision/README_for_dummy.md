@@ -58,8 +58,8 @@ aliases:
 ## 开始之前你需要知道
 
 **必备基础** (建议先看这些):
-- [神经网络核心 - 小白版](../03_Deep_Learning/Neural_Network_Core/Neural_Network_Core_for_dummy.md) - 理解 AI 大脑的基本工作原理
-- [优化方法 - 小白版](../03_Deep_Learning/Optimization/Optimization_for_dummy.md) - 理解 AI 怎么从错误中学习
+- [神经网络核心 - 小白版](../深度学习/Neural_Network_Core/Neural_Network_Core_for_dummy.md) - 理解 AI 大脑的基本工作原理
+- [优化方法 - 小白版](../深度学习/Optimization/Optimization_for_dummy.md) - 理解 AI 怎么从错误中学习
 
 **不需要的基础**:
 - ❌ 不需要会编程(我们用生活例子解释)
@@ -127,8 +127,8 @@ aliases:
 
 ## Related
 
-- [[04_Computer_Vision/README.md|04_Computer_Vision README]]
-- [[04_Computer_Vision/3D_Vision/3D_Vision.md|3D_Vision]]
-- [[04_Computer_Vision/3D_Vision/3D_Vision_for_dummy.md|3D_Vision_for_dummy]]
-- [[04_Computer_Vision/Generative_Models/Generative_Models.md|Generative_Models]]
-- [[04_Computer_Vision/Generative_Models/Generative_Models_for_dummy.md|Generative_Models_for_dummy]]
+- [[计算机视觉/README.md|计算机视觉 README]]
+- [[计算机视觉/3D_Vision/3D_Vision.md|3D_Vision]]
+- [[计算机视觉/3D_Vision/3D_Vision_for_dummy.md|3D_Vision_for_dummy]]
+- [[计算机视觉/Generative_Models/Generative_Models.md|Generative_Models]]
+- [[计算机视觉/Generative_Models/Generative_Models_for_dummy.md|Generative_Models_for_dummy]]

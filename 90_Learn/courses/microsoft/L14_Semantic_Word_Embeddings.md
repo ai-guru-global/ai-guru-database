@@ -188,7 +188,7 @@ output = classifier(sentence_vector)
 - 继续学习 L15「语言建模与自定义嵌入训练」，亲手训练端到端词嵌入。
 - 阅读 Word2Vec 原始论文：*[Efficient Estimation of Word Representations in Vector Space](https://arxiv.org/pdf/1301.3781.pdf)*。
 - 了解 GloVe 论文：*[GloVe: Global Vectors for Word Representation](https://nlp.stanford.edu/pubs/glove.pdf)*。
-- 探索本库 [[05_NLP_LLMs/LLM_Architectures/LLM_Architectures]]，理解 Transformer 如何生成上下文嵌入。
+- 探索本库 [[大模型/LLM_Architectures/LLM_Architectures]]，理解 Transformer 如何生成上下文嵌入。
 
 ---
 
@@ -196,6 +196,6 @@ output = classifier(sentence_vector)
 
 - 课程索引：[[90_Learn/courses/microsoft/microsoft_ai_for_beginners]]
 - 本库相关页面：
-  - [[05_NLP_LLMs/Sequence_Models/Sequence_Models]]
-  - [[05_NLP_LLMs/LLM_Data_Engineering/LLM_Data_Engineering_Deep_Dive]]（文本表示与数据工程）
-  - [[05_NLP_LLMs/LLM_Architectures/LLM_Architectures]]（Transformer 与上下文嵌入）
+  - [[大模型/Sequence_Models/Sequence_Models]]
+  - [[大模型/LLM_Data_Engineering/LLM_Data_Engineering_Deep_Dive]]（文本表示与数据工程）
+  - [[大模型/LLM_Architectures/LLM_Architectures]]（Transformer 与上下文嵌入）

@@ -662,15 +662,15 @@ print(f"Calibration: {calibration_error(y_true, y_prob, sensitive_attr):.3f}")
 
 ### 前置知识
 
-- [强化学习基础](../../06_Reinforcement_Learning/RL_Foundations/RL_Foundations.md) - 理解 RLHF 中的 RL 算法
-- [Transformer 架构](../../05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution.md) - LLM 基础
-- [监督学习](../../02_Machine_Learning/Supervised_Learning/Supervised_Learning.md) - SFT 阶段原理
+- [强化学习基础](../../强化学习/RL_Foundations/RL_Foundations.md) - 理解 RLHF 中的 RL 算法
+- [Transformer 架构](../../大模型/Transformer_Revolution/Transformer_Revolution.md) - LLM 基础
+- [监督学习](../../机器学习/Supervised_Learning/Supervised_Learning.md) - SFT 阶段原理
 
 ### 进阶推荐
 
 - [AI 安全与红队](../AI_Safety_RedTeaming/AI_Safety_RedTeaming.md) - 对齐的验证与测试
-- [Prompt 工程](../../05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering.md) - 通过 Prompt 实现对齐
-- [模型评估](../../08_Model_Evaluation/Model_Evaluation.md) - 对齐效果评估
+- [Prompt 工程](../../大模型/Prompt_Engineering/Prompt_Engineering.md) - 通过 Prompt 实现对齐
+- [模型评估](../../模型评估/Model_Evaluation.md) - 对齐效果评估
 
 ## 8. 面试高频问题 (Interview FAQs)
 
@@ -818,7 +818,7 @@ total_reward = α × helpfulness_reward + β × safety_reward
 
 ## Related
 
-- [[17_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming]] — AI 安全与红队 (AI Safety & Red Teaming) (共享: ai-ethics, alignment, red-teaming, safety)
-- [[17_Ethics_Safety/AI_Security_2026/README]] — AI安全 2026 (AI Security) (共享: ai-ethics, alignment, red-teaming, safety)
-- [[17_Ethics_Safety/AI_Supply_Chain_Security/AI_Supply_Chain_Security]] — AI 供应链安全 2026 (共享: ai-ethics, alignment, red-teaming, safety)
-- [[17_Ethics_Safety/Ethics-in-nutshell]] — AI 伦理与安全速成指南 (共享: ai-ethics, alignment, red-teaming, safety)
+- [[伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming]] — AI 安全与红队 (AI Safety & Red Teaming) (共享: ai-ethics, alignment, red-teaming, safety)
+- [[伦理安全/AI_Security_2026/README]] — AI安全 2026 (AI Security) (共享: ai-ethics, alignment, red-teaming, safety)
+- [[伦理安全/AI_Supply_Chain_Security/AI_Supply_Chain_Security]] — AI 供应链安全 2026 (共享: ai-ethics, alignment, red-teaming, safety)
+- [[伦理安全/Ethics-in-nutshell]] — AI 伦理与安全速成指南 (共享: ai-ethics, alignment, red-teaming, safety)

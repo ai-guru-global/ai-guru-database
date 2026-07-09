@@ -149,5 +149,5 @@ RS-LoRA 把缩放改成与 √r 相关，让小 rank 也能稳定学习。
 - [[_concepts/rs-lora|RS-LoRA]]
 - [[_concepts/lora-peft|LoRA 与参数高效微调]]
 - [[_concepts/llm-data-engineering|大模型数据工程]]
-- [[07_Model_Training/Data/Data_Curation_and_Mixture_2026|数据策展与配比 2026]]
-- [[05_NLP_LLMs/Fine_tuning_Techniques/LoRA_QLoRA_SFT_RLHF_DPO_in_Detail|LoRA/QLoRA/SFT/RLHF/DPO 详解]]
+- [[模型训练/Data/Data_Curation_and_Mixture_2026|数据策展与配比 2026]]
+- [[大模型/Fine_tuning_Techniques/LoRA_QLoRA_SFT_RLHF_DPO_in_Detail|LoRA/QLoRA/SFT/RLHF/DPO 详解]]

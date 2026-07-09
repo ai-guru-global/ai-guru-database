@@ -12,7 +12,7 @@ relationships:
     type: related_to
   - target: "_concepts/ai-ethics"
     type: related_to
-sources: [00_AI_Introduction/AI_Future_Trends.md]
+sources: [AI入门/AI_Future_Trends.md]
 summary: AI正处于从狭义AI向通用AI过渡的关键十年，技术突破、产业变革和社会适应将同步加速，迈向AGI的路径需在创新与安全之间取得平衡。
 provenance:
   extracted: 0.80
@@ -175,10 +175,10 @@ AI催生六大新产业方向：
 
 ## 来源
 
-- _references/00_AI_Introduction/AI_Future_Trends
+- _references/AI入门/AI_Future_Trends
 
 ## Related
 
-- [[00_AI_Introduction/AI_Future_Trends]] — AI未来趋势展望 (共享: agi, ai)
+- [[AI入门/AI_Future_Trends]] — AI未来趋势展望 (共享: agi, ai)
 - [[_concepts/ai-ethics]] — AI伦理 (共享: ai, 社会影响)
 - [[_synthesis/ai-ethics-future]]

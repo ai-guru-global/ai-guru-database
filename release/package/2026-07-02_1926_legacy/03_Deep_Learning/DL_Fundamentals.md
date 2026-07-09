@@ -36,10 +36,10 @@ aliases:
 
 | 子模块 | 核心内容 | 链接 |
 |--------|---------|------|
-| **神经网络核心** | 感知机、MLP、前向传播、反向传播 | [[03_Deep_Learning/Neural_Network_Core/Neural_Network_Core]] |
-| **优化方法** | SGD、Adam、学习率调度、正则化 | [[03_Deep_Learning/Optimization/Optimization]] |
-| **深度学习框架** | PyTorch、JAX、ONNX、训练工程 | [[03_Deep_Learning/DL_Frameworks/DL_Frameworks]] |
-| **世界模型** | JEPA、Sora 内部模型、预测编码 | [[03_Deep_Learning/World_Models/README]] |
+| **神经网络核心** | 感知机、MLP、前向传播、反向传播 | [[深度学习/Neural_Network_Core/Neural_Network_Core]] |
+| **优化方法** | SGD、Adam、学习率调度、正则化 | [[深度学习/Optimization/Optimization]] |
+| **深度学习框架** | PyTorch、JAX、ONNX、训练工程 | [[深度学习/DL_Frameworks/DL_Frameworks]] |
+| **世界模型** | JEPA、Sora 内部模型、预测编码 | [[深度学习/World_Models/README]] |
 
 ---
 
@@ -156,9 +156,9 @@ flowchart TB
 
 ## 延伸阅读 (Further Reading)
 
-- [[03_Deep_Learning/DL-in-nutshell]] — 深度学习速成指南，30 秒掌握全貌
-- [[03_Deep_Learning/Neural_Network_Core/Neural_Network_Core]] — 神经网络核心原理详解
-- [[03_Deep_Learning/Optimization/Optimization]] — 优化算法与训练技巧
-- [[03_Deep_Learning/DL_Frameworks/DL_Frameworks]] — PyTorch / JAX 框架实战
-- [[03_Deep_Learning/World_Models/README]] — 世界模型与预测编码前沿
-- [[03_Deep_Learning/State_Space_Models_2026]] — Mamba 与 Transformer 后继者
+- [[深度学习/DL-in-nutshell]] — 深度学习速成指南，30 秒掌握全貌
+- [[深度学习/Neural_Network_Core/Neural_Network_Core]] — 神经网络核心原理详解
+- [[深度学习/Optimization/Optimization]] — 优化算法与训练技巧
+- [[深度学习/DL_Frameworks/DL_Frameworks]] — PyTorch / JAX 框架实战
+- [[深度学习/World_Models/README]] — 世界模型与预测编码前沿
+- [[深度学习/State_Space_Models_2026]] — Mamba 与 Transformer 后继者

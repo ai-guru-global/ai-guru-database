@@ -10,7 +10,7 @@ relationships:
   - target: "_concepts/continuous-batching"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "LeMix 是面向多 GPU 系统的训推统一调度框架，在同一 GPU 集群上同时运行训练和推理任务，通过智能调度最大化 GPU 利用率。AI Stack 参考资料中的重要前沿研究。"
 provenance:
   extracted: 0.30
@@ -89,4 +89,4 @@ LeMix 统一调度架构
 - [[_concepts/training-inference-unification]] — 训推一体架构
 - [[_concepts/heterogeneous-gpu]] — 异构 GPU 集群纳管
 - [[_concepts/continuous-batching]] — Continuous Batching
-- [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析

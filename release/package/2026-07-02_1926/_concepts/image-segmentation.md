@@ -107,4 +107,4 @@ BiSeNet v2采用双路径设计（空间路径+语义路径），实现>150 FPS�
 
 ## 来源
 
-- 04_Computer_Vision/Segmentation/Segmentation.md
+- 计算机视觉/Segmentation/Segmentation.md

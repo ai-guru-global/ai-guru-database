@@ -151,9 +151,9 @@ short_dim = 256
 ## Related
 
 - [[_concepts/embedding-models]] — Embedding 模型
-- [[14_RAG_Systems/README|RAG 系统]]
-- [[10_Deployment_Inference/Inference_Performance/README|推理性能专题]]
-- [[10_Deployment_Inference/Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]]
-- [[10_Deployment_Inference/Inference_Performance/Inference_Autoscaling_and_Load_Balancing|弹性扩缩容]]
+- [[RAG系统/README|RAG 系统]]
+- [[部署推理/Inference_Performance/README|推理性能专题]]
+- [[部署推理/Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]]
+- [[部署推理/Inference_Performance/Inference_Autoscaling_and_Load_Balancing|弹性扩缩容]]
 
-- [[10_Deployment_Inference/README|模型部署与推理]]
+- [[部署推理/README|模型部署与推理]]

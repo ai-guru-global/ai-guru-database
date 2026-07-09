@@ -186,15 +186,15 @@ A: 部分是的。推荐系统会用聚类把用户分成不同群体（"爱看�
 ## 想深入了解？
 
 - 专业版: [无监督学习完整版](./Unsupervised_Learning.md)
-- 前置知识: [线性代数小白版](../../01_Fundamentals/Linear_Algebra/Linear_Algebra_for_dummy.md)
-- 下一站: [第3章：深度学习](../../03_Deep_Learning/README_for_dummy.md)
+- 前置知识: [线性代数小白版](../../数学基础/Linear_Algebra/Linear_Algebra_for_dummy.md)
+- 下一站: [第3章：深度学习](../../深度学习/README_for_dummy.md)
 
 ---
 *本文是 [Unsupervised_Learning.md](./Unsupervised_Learning.md) 的简化版，适合零基础读者。*
 
 ## Related
 
-- [[02_Machine_Learning/Ensemble_Learning/Ensemble_Learning]] — 集成学习 (Ensemble Learning) - 完全指南 (共享: machine-learning, ml, supervised, unsupervised)
-- [[02_Machine_Learning/Feature_Engineering/Feature_Engineering]] — 特征工程 (Feature Engineering) (共享: machine-learning, ml, supervised, unsupervised)
-- [[02_Machine_Learning/Feature_Engineering/Feature_Engineering_for_dummy]] — 特征工程 - 小白版 (共享: machine-learning, ml, supervised, unsupervised)
-- [[02_Machine_Learning/ML-in-nutshell]] — 机器学习速成指南 (共享: machine-learning, ml, supervised, unsupervised)
+- [[机器学习/Ensemble_Learning/Ensemble_Learning]] — 集成学习 (Ensemble Learning) - 完全指南 (共享: machine-learning, ml, supervised, unsupervised)
+- [[机器学习/Feature_Engineering/Feature_Engineering]] — 特征工程 (Feature Engineering) (共享: machine-learning, ml, supervised, unsupervised)
+- [[机器学习/Feature_Engineering/Feature_Engineering_for_dummy]] — 特征工程 - 小白版 (共享: machine-learning, ml, supervised, unsupervised)
+- [[机器学习/ML-in-nutshell]] — 机器学习速成指南 (共享: machine-learning, ml, supervised, unsupervised)

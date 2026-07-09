@@ -12,7 +12,7 @@ relationships:
   - target: "_concepts/vertex-ai"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AWS_Bedrock_Deep_Dive.md
+  - 架构基建/AWS_Bedrock_Deep_Dive.md
 summary: "AWS Bedrock 是亚马逊云的托管基础模型服务，提供 Claude、Llama、Titan、Stable Diffusion 等模型的统一 API，支持 RAG、Agent、微调（Customization）和 Guardrails，适合企业快速构建生成式 AI 应用。"
 provenance:
   extracted: 0.75
@@ -91,7 +91,7 @@ aliases:
 
 ## Related
 
-- [[12_Architecture_Infrastructure/AWS_Bedrock_Deep_Dive]] — AWS Bedrock 深度解析
+- [[架构基建/AWS_Bedrock_Deep_Dive]] — AWS Bedrock 深度解析
 - [[_concepts/cloud-ai-platform]] — 云 AI 平台
 - [[_concepts/azure-openai]] — Azure OpenAI
 - [[_concepts/vertex-ai]] — Google Vertex AI

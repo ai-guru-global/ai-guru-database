@@ -10,7 +10,7 @@ relationships:
   - target: "_concepts/agent-evaluation"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "Ragas 是专为 RAG 系统设计的开源评估框架——提供 Faithfulness（忠实度）、Answer Relevancy（答案相关性）、Context Precision/Recall 等 RAG 专项指标。是 RAG 系统质量度量的事实标准。"
 provenance:
   extracted: 0.20

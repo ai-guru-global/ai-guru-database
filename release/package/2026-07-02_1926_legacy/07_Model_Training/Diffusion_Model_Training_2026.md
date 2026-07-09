@@ -41,7 +41,7 @@ aliases:
 
 本文面向已有深度学习基础的读者，从原理、工程、生产、行业四个维度，系统讲解 2026 年扩散模型训练的完整链路。
 
-> 前置阅读：[[04_Computer_Vision/Generative_Models/Diffusion_Models_Deep_Dive|扩散模型深度解读]]、[[07_Model_Training/Optimization/Mixed_Precision_Training|混合精度训练]]、[[07_Model_Training/Distributed_Training/Distributed_Training_2026|分布式训练 2026]]。
+> 前置阅读：[[计算机视觉/Generative_Models/Diffusion_Models_Deep_Dive|扩散模型深度解读]]、[[模型训练/Optimization/Mixed_Precision_Training|混合精度训练]]、[[模型训练/Distributed_Training/Distributed_Training_2026|分布式训练 2026]]。
 
 ---
 
@@ -209,7 +209,7 @@ optimizer.zero_grad(set_to_none=True)
 - **8-bit Adam / AdamW**：优化器状态压缩。
 - **Activation Checkpointing + CPU Offload**：显存极度紧张时使用。
 
-> 详细配置参见 [[07_Model_Training/Optimization/Mixed_Precision_Training|混合精度训练]]。
+> 详细配置参见 [[模型训练/Optimization/Mixed_Precision_Training|混合精度训练]]。
 
 ### 3.4 实战代码：基于 Diffusers 的 SDXL LoRA 微调
 
@@ -352,7 +352,7 @@ accelerate launch \
   --num_train_steps=500000
 ```
 
-> 更多分布式细节参考 [[07_Model_Training/Distributed_Training/Distributed_Training_2026|分布式训练 2026]]。
+> 更多分布式细节参考 [[模型训练/Distributed_Training/Distributed_Training_2026|分布式训练 2026]]。
 
 ### 3.6 Checkpoint 管理与灾难恢复
 
@@ -480,16 +480,16 @@ accelerate launch \
 
 ## 相关阅读
 
-- [[04_Computer_Vision/Generative_Models/Diffusion_Models_Deep_Dive|扩散模型深度解读]] — 扩散模型原理全景
-- [[04_Computer_Vision/HF_Diffusers_Practical_Guide|HuggingFace Diffusers 实战]] — Diffusers 训练与推理
-- [[04_Computer_Vision/Video_Generation/Video_Generation_for_dummy|AI 视频生成入门]] — 视频生成基础概念
-- [[07_Model_Training/Optimization/Mixed_Precision_Training|混合精度训练]] — FP16/BF16/FP8 训练细节
-- [[07_Model_Training/Distributed_Training/Distributed_Training_2026|分布式训练 2026]] — DDP/FSDP/DeepSpeed 配置
-- [[07_Model_Training/Data/Data_Curation_and_Mixture_2026|数据策展与配比 2026]] — 训练数据清洗与配比
-- [[07_Model_Training/Training_Cost_Optimization_and_FinOps_2026|训练成本优化与 FinOps 2026]] — GPU 利用率与成本治理
-- [[07_Model_Training/Monitoring/Training_Monitoring_2026|训练监控与实验跟踪 2026]] — 训练可观测性
-- [[08_Model_Evaluation/Model_Evaluation|模型评估]] — 生成模型评测指标与方法
-- [[10_Deployment_Inference/Inference-in-nutshell|推理优化速成]] — 模型上线推理优化
+- [[计算机视觉/Generative_Models/Diffusion_Models_Deep_Dive|扩散模型深度解读]] — 扩散模型原理全景
+- [[计算机视觉/HF_Diffusers_Practical_Guide|HuggingFace Diffusers 实战]] — Diffusers 训练与推理
+- [[计算机视觉/Video_Generation/Video_Generation_for_dummy|AI 视频生成入门]] — 视频生成基础概念
+- [[模型训练/Optimization/Mixed_Precision_Training|混合精度训练]] — FP16/BF16/FP8 训练细节
+- [[模型训练/Distributed_Training/Distributed_Training_2026|分布式训练 2026]] — DDP/FSDP/DeepSpeed 配置
+- [[模型训练/Data/Data_Curation_and_Mixture_2026|数据策展与配比 2026]] — 训练数据清洗与配比
+- [[模型训练/Training_Cost_Optimization_and_FinOps_2026|训练成本优化与 FinOps 2026]] — GPU 利用率与成本治理
+- [[模型训练/Monitoring/Training_Monitoring_2026|训练监控与实验跟踪 2026]] — 训练可观测性
+- [[模型评估/Model_Evaluation|模型评估]] — 生成模型评测指标与方法
+- [[部署推理/Inference-in-nutshell|推理优化速成]] — 模型上线推理优化
 
 ---
 

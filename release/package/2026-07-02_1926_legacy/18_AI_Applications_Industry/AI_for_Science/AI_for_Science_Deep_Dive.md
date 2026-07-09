@@ -639,7 +639,7 @@ class FNO2d(nn.Module):
 
 - [[Graph_Neural_Networks_Deep_Dive]] — 图神经网络 (AlphaFold/GNoMe 的核心技术)
 - Diffusion Models Deep Dive — 扩散模型 (AlphaFold 3/MatterGen 的核心技术)
-- [[18_AI_Applications_Industry/Healthcare/AI_Healthcare_2026|AI 医疗深度解读]] — AI 医疗 (药物发现的下游应用)
+- [[行业应用/Healthcare/AI_Healthcare_2026|AI 医疗深度解读]] — AI 医疗 (药物发现的下游应用)
 
 ---
 

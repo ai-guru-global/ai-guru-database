@@ -120,4 +120,4 @@ GPU 有成千上万个"小计算单元"，每个做同样的事但处理不同�
 
 ## Related
 
-- [[01_Fundamentals/AI_Hardware/README|AI 硬件概览]]
+- [[数学基础/AI_Hardware/README|AI 硬件概览]]

@@ -7,9 +7,9 @@ updated: 2026-07-02
 
 # Data Engineer
 
-This page indexes the contents of `21_Interviews/Data_Engineer`.
+This page indexes the contents of `面试岗位/Data_Engineer`.
 
 ## Files
 
 - Data Engineer 2
-- [[21_Interviews/Data_Engineer/Data_Engineer|Data Engineer]]
+- [[面试岗位/Data_Engineer/Data_Engineer|Data Engineer]]

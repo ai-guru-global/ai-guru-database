@@ -88,5 +88,5 @@ relationships:
 | RAG vs Long Context | RAG 在精确信息检索任务上始终优于长上下文 |
 | RAPTOR | 递归摘要 + 检索 = 最佳分层方案 |
 
-> **关联**: -> [[14_RAG_Systems/README|RAG 系统]] | [[05_NLP_LLMs/README|NLP/LLM]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[RAG系统/README|RAG 系统]] | [[大模型/README|NLP/LLM]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
 

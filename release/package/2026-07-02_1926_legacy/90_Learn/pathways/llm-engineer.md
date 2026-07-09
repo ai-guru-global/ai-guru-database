@@ -58,10 +58,10 @@ Stage 4 前沿（Agent / 多模态）
 - [Stage 2: 核心技术 — LLM 相关部分](90_Learn/concepts/stage2_core_tech.md)（深入）
 
 **🔗 深入阅读**：
-- [LLM 架构（小白版）](05_NLP_LLMs/LLM_Architectures/LLM_Architectures_for_dummy.md)
-- [LLM 架构（速查版）](05_NLP_LLMs/LLM_Architectures/LLM-Basics-in-nutshell.md)
-- [Transformer 革命（小白版）](05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution_for_dummy.md)
-- [微调技术（小白版）](05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques_for_dummy.md)
+- [LLM 架构（小白版）](大模型/LLM_Architectures/LLM_Architectures_for_dummy.md)
+- [LLM 架构（速查版）](大模型/LLM_Architectures/LLM-Basics-in-nutshell.md)
+- [Transformer 革命（小白版）](大模型/Transformer_Revolution/Transformer_Revolution_for_dummy.md)
+- [微调技术（小白版）](大模型/Fine_tuning_Techniques/Fine_tuning_Techniques_for_dummy.md)
 
 **💡 重点理解**：
 - Token 是什么，LLM 的上下文窗口限制
@@ -84,8 +84,8 @@ Stage 4 前沿（Agent / 多模态）
 **📚 核心概念**：[Stage 3 工程实践 — Prompt Engineering 部分](90_Learn/concepts/stage3_engineering.md)
 
 **🔗 深入阅读**：
-- [提示词工程（小白版）](05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering_for_dummy.md)
-- [提示词工程（速查版）](05_NLP_LLMs/Prompt_Engineering/Prompt-Engineering-in-nutshell.md)
+- [提示词工程（小白版）](大模型/Prompt_Engineering/Prompt_Engineering_for_dummy.md)
+- [提示词工程（速查版）](大模型/Prompt_Engineering/Prompt-Engineering-in-nutshell.md)
 
 **💡 Prompt 技巧体系**：
 ```
@@ -127,9 +127,9 @@ Stage 4 前沿（Agent / 多模态）
 **📚 核心概念**：[Stage 3: 工程实践 — RAG / 向量数据库](90_Learn/concepts/stage3_engineering.md)
 
 **🔗 深入阅读**：
-- [RAG 系统（小白版）](14_RAG_Systems/RAG_Systems_for_dummy.md)
-- [RAG 系统（速查版）](14_RAG_Systems/RAG-in-nutshell.md)
-- [AI Skills 速查版](15_Agent_Production/Agent_Skills/Skills-in-nutshell.md)（AI Skills 的设计模式）
+- [RAG 系统（小白版）](RAG系统/RAG_Systems_for_dummy.md)
+- [RAG 系统（速查版）](RAG系统/RAG-in-nutshell.md)
+- [AI Skills 速查版](Agent/Agent_Skills/Skills-in-nutshell.md)（AI Skills 的设计模式）
 
 **💡 RAG 全链路技术栈**：
 ```
@@ -176,9 +176,9 @@ Stage 4 前沿（Agent / 多模态）
 **📚 核心概念**：[Stage 3: 工程实践 — Agent 部分](90_Learn/concepts/stage3_engineering.md) + [Stage 4 前沿 — Agent 深度](90_Learn/concepts/stage4_frontier.md)
 
 **🔗 深入阅读**：
-- [AI Agent（小白版）](15_Agent_Production/Agent_Foundations/AI_Agents_for_dummy.md)
-- [AI Agent（速查版）](15_Agent_Production/Agent_Foundations/Agent-in-nutshell.md)
-- [AI 工作流（速查版）](15_Agent_Production/Agent_Workflow/Workflow-in-nutshell.md)
+- [AI Agent（小白版）](Agent/Agent_Foundations/AI_Agents_for_dummy.md)
+- [AI Agent（速查版）](Agent/Agent_Foundations/Agent-in-nutshell.md)
+- [AI 工作流（速查版）](Agent/Agent_Workflow/Workflow-in-nutshell.md)
 
 **💡 Agent 核心架构**：
 ```
@@ -221,10 +221,10 @@ Agent 框架选择：
 **📚 核心概念**：[Stage 3: 工程实践 — 部署 / AI Gateway](90_Learn/concepts/stage3_engineering.md)
 
 **🔗 深入阅读**：
-- [部署与推理（小白版）](10_Deployment_Inference/Deployment_Inference_for_dummy.md)
-- [部署与推理（速查版）](10_Deployment_Inference/Inference-in-nutshell.md)
-- [AI Gateway（速查版）](12_Architecture_Infrastructure/AI_Gateway/Gateway-in-nutshell.md)
-- [AIOps（速查版）](13_AI_Ops/AIOps-in-nutshell.md)
+- [部署与推理（小白版）](部署推理/Deployment_Inference_for_dummy.md)
+- [部署与推理（速查版）](部署推理/Inference-in-nutshell.md)
+- [AI Gateway（速查版）](架构基建/AI_Gateway/Gateway-in-nutshell.md)
+- [AIOps（速查版）](AI运维/AIOps-in-nutshell.md)
 
 **💡 生产优化技术栈**：
 ```
@@ -269,7 +269,7 @@ Agent 框架选择：
 
 | 你的打算 | 推荐去向 |
 |---------|---------|
-| 想深入 Agent 评估 | [Agent 评估框架](../../15_Agent_Production/Agent_Evaluation/README.md) |
+| 想深入 Agent 评估 | [Agent 评估框架](../../Agent/Agent_Evaluation/README.md) |
 | 想做 AI 研究 | [AI 研究者路径](90_Learn/pathways/ai-researcher.md) |
 | 想补充 CV 能力 | [ML 从业者路径](90_Learn/pathways/ml-practitioner.md) 方向 B（CV） |
 | 想进入 AI 产品领域 | [AI 产品经理路径](90_Learn/pathways/product-manager.md) |

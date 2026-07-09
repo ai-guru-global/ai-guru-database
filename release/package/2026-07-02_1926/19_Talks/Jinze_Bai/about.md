@@ -87,12 +87,12 @@ sources: []
 
 ## 相关文档
 
-- [Qwen 技术全景](../../05_NLP_LLMs/Chinese_LLM_Ecosystem/Qwen_Deep_Dive.md)
-- [中国大模型生态全景](../../05_NLP_LLMs/Chinese_LLM_Ecosystem/README.md)
-- [MoE 案例研究](../../05_NLP_LLMs/LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md)
+- [Qwen 技术全景](../../大模型/Chinese_LLM_Ecosystem/Qwen_Deep_Dive.md)
+- [中国大模型生态全景](../../大模型/Chinese_LLM_Ecosystem/README.md)
+- [MoE 案例研究](../../大模型/LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md)
 
 ---
 
 *Last updated: 2026-06-12*
 
-- [[19_Talks/README|AI 名人演讲与观点 (Talks)]]
+- [[业界观点/README|AI 名人演讲与观点 (Talks)]]

@@ -10,7 +10,7 @@ relationships:
   - target: "_concepts/dualpipe"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "ColossalAI 是 HPC-AI Tech 开源的大模型分布式训练框架——提供数据并行、张量并行、流水线并行、ZeRO 等多种并行策略，以降低大模型训练门槛为核心目标。与 DeepSpeed 并列为最流行的分布式训练方案。"
 provenance:
   extracted: 0.20

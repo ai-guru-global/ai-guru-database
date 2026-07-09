@@ -16,7 +16,7 @@ provenance:
   ambiguous: 0.05
 base_confidence: 0.7
 sources:
-  - 18_AI_Applications_Industry/AI_for_Science/Materials_Science_and_Energy_2026.md
+  - 行业应用/AI_for_Science/Materials_Science_and_Energy_2026.md
 relationships:
   - target: "_concepts/ai-for-science"
     type: related_to
@@ -52,5 +52,5 @@ relationships:
 
 ## 相关阅读
 
-- [[18_AI_Applications_Industry/AI_for_Science/Materials_Science_and_Energy_2026]] — AI 材料科学
-- [[03_Deep_Learning/Graph_Neural_Networks/Graph_Neural_Networks_Deep_Dive]] — 图神经网络深度解读
+- [[行业应用/AI_for_Science/Materials_Science_and_Energy_2026]] — AI 材料科学
+- [[深度学习/Graph_Neural_Networks/Graph_Neural_Networks_Deep_Dive]] — 图神经网络深度解读

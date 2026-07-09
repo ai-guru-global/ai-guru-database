@@ -118,5 +118,5 @@ time sync
 
 ## Related
 
-- [[12_Architecture_Infrastructure/Storage/AI_Storage_Patterns|AI 存储模式]]
-- [[12_Architecture_Infrastructure/Storage/Checkpoint_and_Model_Storage|Checkpoint 与模型存储]]
+- [[架构基建/Storage/AI_Storage_Patterns|AI 存储模式]]
+- [[架构基建/Storage/Checkpoint_and_Model_Storage|Checkpoint 与模型存储]]

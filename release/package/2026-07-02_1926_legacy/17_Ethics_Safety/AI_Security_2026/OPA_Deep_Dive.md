@@ -162,4 +162,4 @@ spec:
 - [[_concepts/kyverno]] — Kyverno
 - [[_concepts/falco]] — Falco
 - [[_concepts/kubernetes]] — Kubernetes
-- [[17_Ethics_Safety/AI_Security_2026/AI_Security_2026]] — AI 安全 2026
+- [[伦理安全/AI_Security_2026/AI_Security_2026]] — AI 安全 2026

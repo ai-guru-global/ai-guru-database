@@ -250,7 +250,7 @@ sources: []
 | [deepeval](./deepeval.md) | 08_Model_Evaluation | DeepEval LLM 评估框架 |
 | [mlflow](./mlflow.md) | 10_MLOps_Pipeline | MLflow 实验追踪与模型管理 |
 | [wandb](./wandb.md) | 10_MLOps_Pipeline | Weights & Biases 实验追踪 |
-| [litellm](./litellm.md) | 12_Architecture_Infrastructure/AI_Gateway | LiteLLM 统一 LLM API 代理 |
+| [litellm](./litellm.md) | 架构基建/AI_Gateway | LiteLLM 统一 LLM API 代理 |
 | [outlines](./outlines.md) | 09_Deployment_Inference | Outlines 结构化 LLM 生成 |
 | [helicone](./helicone.md) | 16_AI_Ops | Helicone LLM API 监控 |
 | [trulens](./trulens.md) | 08_Model_Evaluation | TruLens LLM 评估反馈 |

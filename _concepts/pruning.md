@@ -15,8 +15,8 @@ relationships:
   - target: "_concepts/knowledge-distillation"
     type: complementary
 sources:
-  - 10_Deployment_Inference/Quantization/
-  - 07_Model_Training/Compression/
+  - 部署推理/Quantization/
+  - 模型训练/Compression/
 summary: "Model Pruning（模型剪枝）通过移除神经网络中不重要的权重 / 通道 / 层来压缩模型，与量化、知识蒸馏并列为模型压缩三大技术；2026 年 LLM 剪枝重点是结构化剪枝（如 SliceGPT、SparseGPT）。"
 lifecycle: reviewed
 tier: core
@@ -152,5 +152,5 @@ modifier.apply(model)
 - [[_concepts/quantization]] — 量化
 - [[_concepts/awq]] / [[_concepts/gptq]] / [[_concepts/nf4]] — 量化方法
 - [[_concepts/knowledge-distillation]] — 知识蒸馏
-- [[10_Deployment_Inference/Quantization]] — 量化章节
-- [[07_Model_Training/Compression/README]] — 压缩章节
+- [[部署推理/Quantization]] — 量化章节
+- [[模型训练/Compression/README]] — 压缩章节

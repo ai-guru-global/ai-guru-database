@@ -13,16 +13,16 @@ relationships:
     type: optimized_by
   - target: "_concepts/prefill-decode"
     type: decomposed_into
-  - target: "10_Deployment_Inference/Inference_Performance/README"
+  - target: "部署推理/Inference_Performance/README"
     type: deepened_by
-  - target: "10_Deployment_Inference/Inference_Performance/Inference_Performance_Fundamentals"
+  - target: "部署推理/Inference_Performance/Inference_Performance_Fundamentals"
     type: deepened_by
-  - target: "10_Deployment_Inference/Inference_Performance/Inference_Speed_Factors_for_dummy"
+  - target: "部署推理/Inference_Performance/Inference_Speed_Factors_for_dummy"
     type: simplified_by
 sources:
-  - 10_Deployment_Inference/Inference_Performance/README.md
-  - 10_Deployment_Inference/Inference_Performance/Inference_Performance_Fundamentals.md
-  - 10_Deployment_Inference/Inference_Performance/Inference_Speed_Factors_for_dummy.md
+  - 部署推理/Inference_Performance/README.md
+  - 部署推理/Inference_Performance/Inference_Performance_Fundamentals.md
+  - 部署推理/Inference_Performance/Inference_Speed_Factors_for_dummy.md
 summary: LLM 推理性能工程关注 TTFT、TPOT、吞吐、QPS 等核心指标，通过计算优化、KV Cache 优化、调度优化和系统架构优化，降低延迟并提高资源利用率。
 lifecycle: draft
 tier: core
@@ -66,5 +66,5 @@ aliases:
 - [[_concepts/paged-attention]] — PagedAttention
 - [[_concepts/continuous-batching]] — Continuous Batching
 - [[_concepts/speculative-decoding]] — 投机解码
-- [[10_Deployment_Inference/Inference_Performance/README|推理性能专题]]
-- [[10_Deployment_Inference/Inference_Performance/Inference_Speed_Factors_for_dummy|决定模型推理速度的要素（大白话版）]]
+- [[部署推理/Inference_Performance/README|推理性能专题]]
+- [[部署推理/Inference_Performance/Inference_Speed_Factors_for_dummy|决定模型推理速度的要素（大白话版）]]

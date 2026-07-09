@@ -79,12 +79,12 @@ aliases:
 
 ## 相关文档
 
-- [Kimi/Moonshot AI 技术全景](../../05_NLP_LLMs/Chinese_LLM_Ecosystem/Kimi_Moonshot_Deep_Dive.md)
-- [中国大模型生态全景](../../05_NLP_LLMs/Chinese_LLM_Ecosystem/README.md)
-- [Reasoning Models 2026](../../05_NLP_LLMs/LLM_Architectures/Reasoning_Models_2026.md)
+- [Kimi/Moonshot AI 技术全景](../../大模型/Chinese_LLM_Ecosystem/Kimi_Moonshot_Deep_Dive.md)
+- [中国大模型生态全景](../../大模型/Chinese_LLM_Ecosystem/README.md)
+- [Reasoning Models 2026](../../大模型/LLM_Architectures/Reasoning_Models_2026.md)
 
 ---
 
 *Last updated: 2026-06-12*
 
-- [[19_Talks/README|AI 名人演讲与观点 (Talks)]]
+- [[业界观点/README|AI 名人演讲与观点 (Talks)]]

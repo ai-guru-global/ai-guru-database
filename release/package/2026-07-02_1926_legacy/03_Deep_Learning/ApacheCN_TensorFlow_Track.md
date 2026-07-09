@@ -23,13 +23,13 @@ updated: 2026-07-02
 
 ## 前置知识
 
-- [[01_Fundamentals/Linear_Algebra/Linear_Algebra|线性代数]]
-- [[01_Fundamentals/Probability_Statistics/Probability_Statistics|概率统计]]
-- [[03_Deep_Learning/Neural_Network_Core/Neural_Network_Core|神经网络核心]]
+- [[数学基础/Linear_Algebra/Linear_Algebra|线性代数]]
+- [[数学基础/Probability_Statistics/Probability_Statistics|概率统计]]
+- [[深度学习/Neural_Network_Core/Neural_Network_Core|神经网络核心]]
 
 ## Related
 
-- [[03_Deep_Learning/README|深度学习]]
+- [[深度学习/README|深度学习]]
 - 深度学习框架
 - [[_references/apachecn-ailearning|ApacheCN AILearning]]
 

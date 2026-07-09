@@ -12,7 +12,7 @@ relationships:
   - target: "_concepts/pytorch"
     type: implements
 sources:
-  - 07_Model_Training/Distributed_Training/FSDP_Deep_Dive.md
+  - 模型训练/Distributed_Training/FSDP_Deep_Dive.md
 summary: "FSDP 是 PyTorch 原生的全分片数据并行框架，相当于 PyTorch 内置的 ZeRO-3，通过分片参数、梯度和优化器状态到多 GPU，实现大模型训练。"
 provenance:
   extracted: 0.8
@@ -102,7 +102,7 @@ aliases:
 
 ## Related
 
-- [[07_Model_Training/Distributed_Training/FSDP_Deep_Dive]] — FSDP 深度解析
+- [[模型训练/Distributed_Training/FSDP_Deep_Dive]] — FSDP 深度解析
 - [[_concepts/distributed-training]] — 分布式训练
 - [[_concepts/deepspeed]] — DeepSpeed
 - [[_concepts/megatron-lm]] — Megatron-LM

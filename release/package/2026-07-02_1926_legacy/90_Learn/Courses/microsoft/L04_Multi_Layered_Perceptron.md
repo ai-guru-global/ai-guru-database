@@ -89,12 +89,12 @@ for x, y in minibatches:
 
 - **不覆盖**：卷积神经网络（CNN）、循环神经网络（RNN）、正则化与防止过拟合、GPU 加速、自动微分引擎（autograd）的完整实现、生产级框架的张量内存管理。
 - **延伸**：
-  - 想深入自动微分与计算图 → [[03_Deep_Learning/Neural_Network_Core/Neural_Network_Core]]
-  - 想系统学习优化算法 → [[03_Deep_Learning/Optimization/Optimization]]
+  - 想深入自动微分与计算图 → [[深度学习/Neural_Network_Core/Neural_Network_Core]]
+  - 想系统学习优化算法 → [[深度学习/Optimization/Optimization]]
   - 想了解真实框架 API → 后续 L05“框架简介（PyTorch/TensorFlow）及过拟合”
   - 想实践更复杂数据集 → 完成 MNIST Lab。
 
 ## 相关阅读
 
 - 课程索引：[[90_Learn/courses/microsoft/microsoft_ai_for_beginners]]
-- 本库相关页面：[[03_Deep_Learning/Neural_Network_Core/Neural_Network_Core]]、[[03_Deep_Learning/Optimization/Optimization]]
+- 本库相关页面：[[深度学习/Neural_Network_Core/Neural_Network_Core]]、[[深度学习/Optimization/Optimization]]

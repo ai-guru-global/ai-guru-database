@@ -125,12 +125,12 @@ Amodei 是少数公开讨论 AI 对劳动力市场冲击的 AI CEO 之一。他�
 
 - [Talks 主题合成 2026](../Talks_Synthesis_2026.md) -- Scaling Laws、开源 vs 闭源、AI 安全、Agent 未来等主题中 Amodei 的立场
 - [Dario Amodei 金句集](./sayings.md) -- 更多金句与权威来源链接
-- [AI 历史时间线](../../00_AI_Introduction/AI_History_Timeline.md) -- Anthropic 创立与 Claude 系列发布
-- [AI 伦理与社会](../../00_AI_Introduction/AI_Ethics_Society.md) -- Constitutional AI 与 AI 安全治理
-- [AI 未来趋势](../../00_AI_Introduction/AI_Future_Trends.md) -- AGI 竞赛与安全并行发展
-- [AI 伦理与安全](../../17_Ethics_Safety/README.md) -- AI 对齐、可解释性与安全评估
-- [LLM 基础](../../05_NLP_LLMs/README.md) -- Claude 模型架构与技术特点
-- [RAG 系统](../../14_RAG_Systems/README.md) -- Claude 在企业 RAG 场景中的应用
+- [AI 历史时间线](../../AI入门/AI_History_Timeline.md) -- Anthropic 创立与 Claude 系列发布
+- [AI 伦理与社会](../../AI入门/AI_Ethics_Society.md) -- Constitutional AI 与 AI 安全治理
+- [AI 未来趋势](../../AI入门/AI_Future_Trends.md) -- AGI 竞赛与安全并行发展
+- [AI 伦理与安全](../../伦理安全/README.md) -- AI 对齐、可解释性与安全评估
+- [LLM 基础](../../大模型/README.md) -- Claude 模型架构与技术特点
+- [RAG 系统](../../RAG系统/README.md) -- Claude 在企业 RAG 场景中的应用
 
 ---
 
@@ -148,10 +148,10 @@ Amodei 是少数公开讨论 AI 对劳动力市场冲击的 AI CEO 之一。他�
 
 ## Related
 
-- [[19_Talks/Dario_Amodei/sayings]] -- Dario Amodei 关于 AI 的观点 (Dario Amodei on AI)
-- [[19_Talks/Sam_Altman/about]] -- Sam Altman 简介 (共享: frontier AI labs competition, scaling philosophy)
-- [[19_Talks/Demis_Hassabis/about]] -- Demis Hassabis 简介 (共享: AI safety, responsible deployment)
-- [[19_Talks/Yann_LeCun/about]] -- Yann LeCun 简介 (共享: AI safety debate — urgency vs practicality)
-- [[19_Talks/Ilya_Sutskever/about]] -- Ilya Sutskever 简介 (共享: superalignment, OpenAI history)
-- [[19_Talks/Geoffrey_Hinton/about]] -- Geoffrey Hinton 简介 (共享: AI existential risk concerns)
-- [[19_Talks/Andrej_Karpathy/about]] -- Andrej Karpathy 简介 (共享: insights, leaders, speeches, talks)
+- [[业界观点/Dario_Amodei/sayings]] -- Dario Amodei 关于 AI 的观点 (Dario Amodei on AI)
+- [[业界观点/Sam_Altman/about]] -- Sam Altman 简介 (共享: frontier AI labs competition, scaling philosophy)
+- [[业界观点/Demis_Hassabis/about]] -- Demis Hassabis 简介 (共享: AI safety, responsible deployment)
+- [[业界观点/Yann_LeCun/about]] -- Yann LeCun 简介 (共享: AI safety debate — urgency vs practicality)
+- [[业界观点/Ilya_Sutskever/about]] -- Ilya Sutskever 简介 (共享: superalignment, OpenAI history)
+- [[业界观点/Geoffrey_Hinton/about]] -- Geoffrey Hinton 简介 (共享: AI existential risk concerns)
+- [[业界观点/Andrej_Karpathy/about]] -- Andrej Karpathy 简介 (共享: insights, leaders, speeches, talks)

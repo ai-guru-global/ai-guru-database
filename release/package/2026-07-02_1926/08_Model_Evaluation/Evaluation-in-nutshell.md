@@ -496,8 +496,8 @@ flowchart TB
 
 ## 🔗 相关主题
 
-- [模型训练速成指南](../07_Model_Training/Model-Training-in-nutshell.md) —— 如何训练模型
-- [RAG 速成指南](../14_RAG_Systems/RAG-in-nutshell.md) —— LLM 应用评估
+- [模型训练速成指南](../模型训练/Model-Training-in-nutshell.md) —— 如何训练模型
+- [RAG 速成指南](../RAG系统/RAG-in-nutshell.md) —— LLM 应用评估
 - [模型评估完整版](./Model_Evaluation.md) —— 深入评估方法论
 - [模型评估 - 小白版](./Model_Evaluation_for_dummy.md) —— 零基础入门
 - [自动化评估](./Evaluation_Automation_2026.md) —— 2026 自动化评估趋势
@@ -508,8 +508,8 @@ flowchart TB
 
 ## Related
 
-- [[08_Model_Evaluation/Model_Evaluation.md|Model_Evaluation]]
-- [[08_Model_Evaluation/README.md|08_Model_Evaluation README]]
-- [[15_Agent_Production/Agent_Evaluation/Assessment/Evaluation_Workflow.md|Evaluation_Workflow]]
-- [[15_Agent_Production/Agent_Evaluation/Cloud_Agent_Evaluation/README.md|Cloud_Agent_Evaluation README]]
-- [[15_Agent_Production/Agent_Evaluation/Cloud_Agent_Evaluation_System_2026.md|Cloud_Agent_Evaluation_System_2026]]
+- [[模型评估/Model_Evaluation.md|Model_Evaluation]]
+- [[模型评估/README.md|模型评估 README]]
+- [[Agent/Agent_Evaluation/Assessment/Evaluation_Workflow.md|Evaluation_Workflow]]
+- [[Agent/Agent_Evaluation/Cloud_Agent_Evaluation/README.md|Cloud_Agent_Evaluation README]]
+- [[Agent/Agent_Evaluation/Cloud_Agent_Evaluation_System_2026.md|Cloud_Agent_Evaluation_System_2026]]

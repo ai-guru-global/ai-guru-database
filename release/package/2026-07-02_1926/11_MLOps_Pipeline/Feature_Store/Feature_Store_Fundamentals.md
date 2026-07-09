@@ -68,6 +68,6 @@ sources: []
 
 - [[_concepts/feature-store|Feature Store]]
 - [[_concepts/feast|Feast]]
-- [[11_MLOps_Pipeline/Experiment_Tracking/Feature_Store_Deep_Dive|Feature Store 深度解析]]
+- [[MLOps/Experiment_Tracking/Feature_Store_Deep_Dive|Feature Store 深度解析]]
 
-- [[11_MLOps_Pipeline/README|MLOps 流水线 (MLOps Pipeline)]]
+- [[MLOps/README|MLOps 流水线 (MLOps Pipeline)]]

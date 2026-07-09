@@ -45,15 +45,15 @@ aliases:
 
 ## 学完之后
 
-恭喜你打好了地基！接下来去 [第2章：机器学习](../02_Machine_Learning/README_for_dummy.md) 看看 AI 是怎么从数据中学习的。
+恭喜你打好了地基！接下来去 [第2章：机器学习](../机器学习/README_for_dummy.md) 看看 AI 是怎么从数据中学习的。
 
 ---
 *本文是 [README.md](./README.md) 的简化版，适合零基础读者。*
 
 ## Related
 
-- [[01_Fundamentals/Fundamentals-in-nutshell.md|Fundamentals-in-nutshell]]
-- [[01_Fundamentals/README.md|01_Fundamentals README]]
-- [[01_Fundamentals/AI_Hardware/AI_Hardware_2026.md|AI_Hardware_2026]]
-- [[01_Fundamentals/AI_Hardware/README.md|AI_Hardware README]]
-- [[01_Fundamentals/Data_Structures_Algorithms/Data_Structures_Algorithms.md|Data_Structures_Algorithms]]
+- [[数学基础/Fundamentals-in-nutshell.md|Fundamentals-in-nutshell]]
+- [[数学基础/README.md|数学基础 README]]
+- [[数学基础/AI_Hardware/AI_Hardware_2026.md|AI_Hardware_2026]]
+- [[数学基础/AI_Hardware/README.md|AI_Hardware README]]
+- [[数学基础/Data_Structures_Algorithms/Data_Structures_Algorithms.md|Data_Structures_Algorithms]]

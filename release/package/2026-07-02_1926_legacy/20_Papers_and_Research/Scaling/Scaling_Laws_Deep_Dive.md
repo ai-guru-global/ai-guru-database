@@ -653,11 +653,11 @@ flowchart TB
 
 | 相关文档 | 关系 | 详见 |
 |---------|------|------|
-| Chinchilla 深度解读 | 修正了 Kaplan 的最优分配 | [Chinchilla_Deep_Dive.md](20_Papers_and_Research/Scaling/Chinchilla_Deep_Dive.md) |
-| GPT-3 深度解读 | 首次大规模应用 Scaling Laws | [GPT3_Deep_Dive.md](20_Papers_and_Research/Scaling/GPT3_Deep_Dive.md) |
-| Scaling Laws 与训练动力学 | 系统性综述所有 Scaling Laws 工作 | [../07_Model_Training/Scaling_Laws_and_Training_Dynamics.md](07_Model_Training/Optimization/Scaling_Laws_and_Training_Dynamics.md) |
-| LLaMA 深度解读 | Chinchilla Scaling Laws 的开源实践 | [LLaMA_Deep_Dive.md](20_Papers_and_Research/Architecture/LLaMA_Deep_Dive.md) |
-| DeepSeek-V3 深度解读 | 低成本验证 Scaling Laws 精神 | [DeepSeek_V3_Technical_Report.md](20_Papers_and_Research/Frontier/DeepSeek_V3_Technical_Report.md) |
+| Chinchilla 深度解读 | 修正了 Kaplan 的最优分配 | [Chinchilla_Deep_Dive.md](论文精读/Scaling/Chinchilla_Deep_Dive.md) |
+| GPT-3 深度解读 | 首次大规模应用 Scaling Laws | [GPT3_Deep_Dive.md](论文精读/Scaling/GPT3_Deep_Dive.md) |
+| Scaling Laws 与训练动力学 | 系统性综述所有 Scaling Laws 工作 | [../模型训练/Scaling_Laws_and_Training_Dynamics.md](模型训练/Optimization/Scaling_Laws_and_Training_Dynamics.md) |
+| LLaMA 深度解读 | Chinchilla Scaling Laws 的开源实践 | [LLaMA_Deep_Dive.md](论文精读/Architecture/LLaMA_Deep_Dive.md) |
+| DeepSeek-V3 深度解读 | 低成本验证 Scaling Laws 精神 | [DeepSeek_V3_Technical_Report.md](论文精读/Frontier/DeepSeek_V3_Technical_Report.md) |
 
 ---
 

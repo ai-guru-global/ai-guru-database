@@ -135,8 +135,8 @@ Reflection 可视为在 ReAct 循环之上增加了一层**元认知（Metacogni
 
 ## 6. 关联阅读
 
-- [[15_Agent_Production/Agent_Frameworks/AutoGen_Deep_Dive]] — AutoGen 多 Agent 框架
-- [[15_Agent_Production/Agent_Workflow/Workflow-in-nutshell]] — Agent 工作流总览
-- [[05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering]] — 提示工程基础
-- [[05_NLP_LLMs/Prompt_Engineering/GenAI_L05_Advanced_Prompts]] — 高级提示技术
-- [[15_Agent_Production/Hello_Agents_L06_Frameworks_AutoGen_LangGraph]] — 主流框架实践
+- [[Agent/Agent_Frameworks/AutoGen_Deep_Dive]] — AutoGen 多 Agent 框架
+- [[Agent/Agent_Workflow/Workflow-in-nutshell]] — Agent 工作流总览
+- [[大模型/Prompt_Engineering/Prompt_Engineering]] — 提示工程基础
+- [[大模型/Prompt_Engineering/GenAI_L05_Advanced_Prompts]] — 高级提示技术
+- [[Agent/Hello_Agents_L06_Frameworks_AutoGen_LangGraph]] — 主流框架实践

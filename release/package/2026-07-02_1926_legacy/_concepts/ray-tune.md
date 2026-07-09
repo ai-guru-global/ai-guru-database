@@ -8,7 +8,7 @@ relationships:
   - target: "_concepts/wandb"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "Ray Tune 是基于 Ray 的分布式超参数调优框架——支持 Bayesian Optimization、HyperBand、PBT 等先进算法，可分布式并行搜索超参数空间。是大规模 ML 调优的标准工具。"
 provenance:
   extracted: 0.20

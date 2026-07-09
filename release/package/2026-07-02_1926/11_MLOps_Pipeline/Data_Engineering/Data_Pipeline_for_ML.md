@@ -88,6 +88,6 @@ clean_data = KubernetesPodOperator(
 - [[_concepts/dvc|DVC]]
 - [[_concepts/lakefs|LakeFS]]
 - [[_concepts/data-validation|Data Validation]]
-- [[11_MLOps_Pipeline/Data_Engineering/Data_Validation_and_Quality|数据验证与质量]]
+- [[MLOps/Data_Engineering/Data_Validation_and_Quality|数据验证与质量]]
 
-- [[11_MLOps_Pipeline/README|MLOps 流水线 (MLOps Pipeline)]]
+- [[MLOps/README|MLOps 流水线 (MLOps Pipeline)]]

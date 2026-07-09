@@ -14,7 +14,7 @@ relationships:
   - target: "_concepts/knowledge-distillation"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "DeepSeek（深度求索）是中国 AI 公司推出的开源大模型系列，以 MLA 注意力架构、MTP 投机解码、MoE 稀疏激活三大创新著称，AI Stack 预置 R1/V3/V4 全系列模型。"
 provenance:
   extracted: 0.60
@@ -192,5 +192,5 @@ AI Stack V2.14.0 预置以下 DeepSeek 模型：
 - [[_concepts/knowledge-distillation]] — 知识蒸馏
 - [[_concepts/llm-architectures]] — LLM 架构
 - [[_concepts/flash-attention-kernels]] — FlashMLA 算子
-- [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
 - [[_synthesis/modern-ai-training-stack|现代 AI 训练栈]] — 从预训练到推理扩展的统一视角

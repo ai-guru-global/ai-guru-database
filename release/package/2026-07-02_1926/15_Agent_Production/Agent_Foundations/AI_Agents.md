@@ -1614,7 +1614,7 @@ async def list_tools():
 | MCP | 97M+ | OpenAI, Google, Microsoft, AWS |
 | A2A | 25M+ | Google + 50+合作伙伴 |
 
-**参考**: [Agent Protocols 2026深度解析](15_Agent_Production/Agent_Foundations/Agent_Protocols_2026.md)
+**参考**: [Agent Protocols 2026深度解析](Agent/Agent_Foundations/Agent_Protocols_2026.md)
 
 ## 9. Agent 基础设施架构 (2026)
 
@@ -1925,24 +1925,24 @@ jobs:
 □ 访问控制生效
 ```
 
-**参考**: [AI Infrastructure 2026深度解析](12_Architecture_Infrastructure/Architecture_Overview/AI_Infrastructure_2026)
+**参考**: [AI Infrastructure 2026深度解析](架构基建/Architecture_Overview/AI_Infrastructure_2026)
 
 ## 10. 与其他主题的关联 (Connections)
 
 ### 10.1 前置知识
-- **大语言模型**: [LLM架构](05_NLP_LLMs/LLM_Architectures/LLM_Architectures.md) —— Agent 的"大脑"
-- **提示工程**: [Prompt Engineering](05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering.md) —— 设计 Agent 的系统提示
-- **强化学习**: [RL Foundations](06_Reinforcement_Learning/RL_Foundations/RL_Foundations.md) —— Agent 的决策理论基础
-- **深度强化学习**: [Deep RL](06_Reinforcement_Learning/Deep_RL/Deep_RL.md) —— RLHF 训练 Agent
+- **大语言模型**: [LLM架构](大模型/LLM_Architectures/LLM_Architectures.md) —— Agent 的"大脑"
+- **提示工程**: [Prompt Engineering](大模型/Prompt_Engineering/Prompt_Engineering.md) —— 设计 Agent 的系统提示
+- **强化学习**: [RL Foundations](强化学习/RL_Foundations/RL_Foundations.md) —— Agent 的决策理论基础
+- **深度强化学习**: [Deep RL](强化学习/Deep_RL/Deep_RL.md) —— RLHF 训练 Agent
 
 ### 10.2 相关技术
 - **RAG**: [检索增强生成] —— Agent 的记忆系统基础
-- **Fine-tuning**: [Fine-tuning Techniques](05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques.md) —— 定制化 Agent 能力
-- **多模态**: [Multimodal Vision](04_Computer_Vision/Multimodal_Vision/Multimodal_Vision.md) —— 视觉感知能力
+- **Fine-tuning**: [Fine-tuning Techniques](大模型/Fine_tuning_Techniques/Fine_tuning_Techniques.md) —— 定制化 Agent 能力
+- **多模态**: [Multimodal Vision](计算机视觉/Multimodal_Vision/Multimodal_Vision.md) —— 视觉感知能力
 
 ### 10.3 应用领域
-- **软件工程**: [Deployment & Inference](10_Deployment_Inference/Deployment_Inference.md)
-- **MLOps**: [MLOps Pipeline](11_MLOps_Pipeline/MLOps_Pipeline.md) —— Agent 在 CI/CD 中的应用
+- **软件工程**: [Deployment & Inference](部署推理/Deployment_Inference.md)
+- **MLOps**: [MLOps Pipeline](MLOps/MLOps_Pipeline.md) —— Agent 在 CI/CD 中的应用
 
 ## 12. 面试高频问题 (Interview FAQs)
 

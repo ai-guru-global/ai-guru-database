@@ -7,10 +7,10 @@ updated: 2026-07-02
 
 # Transformer Revolution
 
-This page indexes the contents of `05_NLP_LLMs/Transformer_Revolution`.
+This page indexes the contents of `大模型/Transformer_Revolution`.
 
 ## Files
 
-- [[05_NLP_LLMs/Transformer_Revolution/Self_Attention_Mechanism|Self Attention Mechanism]]
-- [[05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution|Transformer Revolution]]
-- [[05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution_for_dummy|Transformer Revolution For Dummy]]
+- [[大模型/Transformer_Revolution/Self_Attention_Mechanism|Self Attention Mechanism]]
+- [[大模型/Transformer_Revolution/Transformer_Revolution|Transformer Revolution]]
+- [[大模型/Transformer_Revolution/Transformer_Revolution_for_dummy|Transformer Revolution For Dummy]]

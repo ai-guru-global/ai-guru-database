@@ -333,8 +333,8 @@ display(Image(app.get_graph(xray=True).draw_mermaid_png()))
 
 ## 相关阅读
 
-- [[15_Agent_Production/Agent_Workflow/Agentic_Workflow_Design_Patterns_2026]] — Agent 工作流设计模式
-- [[15_Agent_Production/Agent_Workflow/Workflow-in-nutshell]] — 工作流速览
-- [[15_Agent_Production/Agent_Skills/Tool_Calling_Best_Practices]] — Tool Calling 最佳实践
-- [[15_Agent_Production/Agent_Frameworks/README]] — Agent 框架概览
-- [[15_Agent_Production/Agent_Skills/Agent_Skills_Practical_Guide]] — Agent Skills 实战
+- [[Agent/Agent_Workflow/Agentic_Workflow_Design_Patterns_2026]] — Agent 工作流设计模式
+- [[Agent/Agent_Workflow/Workflow-in-nutshell]] — 工作流速览
+- [[Agent/Agent_Skills/Tool_Calling_Best_Practices]] — Tool Calling 最佳实践
+- [[Agent/Agent_Frameworks/README]] — Agent 框架概览
+- [[Agent/Agent_Skills/Agent_Skills_Practical_Guide]] — Agent Skills 实战

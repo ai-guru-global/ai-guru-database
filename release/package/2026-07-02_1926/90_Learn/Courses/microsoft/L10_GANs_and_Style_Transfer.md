@@ -168,16 +168,16 @@ for step in range(num_steps):
 
 - **不覆盖**：GAN 的理论收敛证明、Wasserstein GAN（WGAN）、条件 GAN（cGAN）、CycleGAN 等进阶变体；风格迁移的实时前馈网络（如 Johnson 等人的 fast style transfer）与基于扩散模型的现代图像生成。
 - **延伸**：
-  - 想了解现代高分辨率图像生成，可阅读本库 [[04_Computer_Vision/Generative_Models/Diffusion_Models_Deep_Dive]]。
-  - 想了解生成模型整体脉络，可阅读 [[04_Computer_Vision/Generative_Models/Generative_Models]]。
-  - 想深入了解 CNN 与图像特征提取，可回顾本课前置课程 [[90_Learn/courses/microsoft/L07_CNN_and_Architectures]] 或 [[04_Computer_Vision/Image_Classification_Detection/Image_Classification_Detection]]。
+  - 想了解现代高分辨率图像生成，可阅读本库 [[计算机视觉/Generative_Models/Diffusion_Models_Deep_Dive]]。
+  - 想了解生成模型整体脉络，可阅读 [[计算机视觉/Generative_Models/Generative_Models]]。
+  - 想深入了解 CNN 与图像特征提取，可回顾本课前置课程 [[90_Learn/courses/microsoft/L07_CNN_and_Architectures]] 或 [[计算机视觉/Image_Classification_Detection/Image_Classification_Detection]]。
 
 ---
 
 ## 相关阅读
 
 - 课程索引：[[90_Learn/courses/microsoft/microsoft_ai_for_beginners]]
-- 本库相关页面：[[04_Computer_Vision/Generative_Models/Generative_Models]]
+- 本库相关页面：[[计算机视觉/Generative_Models/Generative_Models]]
 - 微软官方 Notebook 文件夹：[lessons/4-ComputerVision/10-GANs](https://github.com/microsoft/AI-For-Beginners/tree/main/lessons/4-ComputerVision/10-GANs)
 - 扩展资源：
   - [10 Lessons I Learned Training GANs for one Year](https://towardsdatascience.com/10-lessons-i-learned-training-generative-adversarial-networks-gans-for-a-year-c9071159628)

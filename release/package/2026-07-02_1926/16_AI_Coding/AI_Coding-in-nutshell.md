@@ -533,9 +533,9 @@ flowchart TD
 | 提示词模板库 | [Vibe_Coding_Prompt_Templates.md](./Practice/Vibe_Coding_Prompt_Templates.md) | STAR 框架、8 大场景模板 |
 | Agentic Coding 方法论 | [Agentic_Coding_Methodology.md](./Methodology/Agentic_Coding_Methodology.md) | 多 Agent 协作架构与编排 |
 | 生产实践 | [Vibe_Coding_Production_Practices.md](./Methodology/Vibe_Coding_Production_Practices.md) | 安全工程、质量监控、技术债管理 |
-| Prompt Engineering 速览 | [../05_NLP_LLMs/Prompt_Engineering/Prompt-Engineering-in-nutshell.md](../05_NLP_LLMs/Prompt_Engineering/Prompt-Engineering-in-nutshell.md) | 通用提示工程方法论 |
-| AI Agent 速览 | [../06_Reinforcement_Learning/AI_Agents/Agent-in-nutshell.md](../15_Agent_Production/Agent_Foundations/Agent-in-nutshell.md) | Agent 架构与能力概述 |
-| RAG 系统速览 | [../14_RAG_Systems/RAG-in-nutshell.md](../14_RAG_Systems/RAG-in-nutshell.md) | 检索增强生成，AI 编程中的文档检索基础 |
+| Prompt Engineering 速览 | [../大模型/Prompt_Engineering/Prompt-Engineering-in-nutshell.md](../大模型/Prompt_Engineering/Prompt-Engineering-in-nutshell.md) | 通用提示工程方法论 |
+| AI Agent 速览 | [../强化学习/AI_Agents/Agent-in-nutshell.md](../Agent/Agent_Foundations/Agent-in-nutshell.md) | Agent 架构与能力概述 |
+| RAG 系统速览 | [../RAG系统/RAG-in-nutshell.md](../RAG系统/RAG-in-nutshell.md) | 检索增强生成，AI 编程中的文档检索基础 |
 | Hermes Agent 指南 | [./Tools/Hermes_Agent_2026.md](./Tools/Hermes_Agent_2026.md) | 17+ Provider 全平台开源 Agent |
 | Qoder 使用指南 | [./Tools/Qoder_Guide.md](./Tools/Qoder_Guide.md) | Qoder / QoderWork / QoderWake 详解 |
 

@@ -10,8 +10,8 @@ relationships:
   - target: "_concepts/fine-tuning-techniques"
     type: belongs_to
 sources:
-  - 05_NLP_LLMs/Fine_tuning_Techniques/LoRA_QLoRA_SFT_RLHF_DPO_in_Detail.md
-  - 05_NLP_LLMs/Fine_tuning_Techniques/README.md
+  - 大模型/Fine_tuning_Techniques/LoRA_QLoRA_SFT_RLHF_DPO_in_Detail.md
+  - 大模型/Fine_tuning_Techniques/README.md
 summary: "RS-LoRA（Rank-Stabilized LoRA）是 LoRA 的变体，通过按 rank 的平方根缩放学习率，让小 rank 也能稳定学习。简单说：它让‘很少的参数’发挥出‘很多参数’的学习能力。"
 provenance:
   extracted: 0.7
@@ -97,4 +97,4 @@ RS-LoRA 提出把缩放因子改为：
 - [[_concepts/lora-peft]] — LoRA 与参数高效微调
 - [[_concepts/dora]] — DoRA
 - [[_concepts/fine-tuning-techniques]] — 微调技术
-- [[05_NLP_LLMs/Fine_tuning_Techniques/LoRA_QLoRA_SFT_RLHF_DPO_in_Detail]] — LoRA/QLoRA/SFT/RLHF/DPO 详解
+- [[大模型/Fine_tuning_Techniques/LoRA_QLoRA_SFT_RLHF_DPO_in_Detail]] — LoRA/QLoRA/SFT/RLHF/DPO 详解

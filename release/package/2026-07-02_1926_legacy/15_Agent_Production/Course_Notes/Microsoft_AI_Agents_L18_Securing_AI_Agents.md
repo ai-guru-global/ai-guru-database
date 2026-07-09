@@ -230,9 +230,9 @@ R0 → R1 → R2 → R3
 
 ## 与其他课的衔接
 
-- 本课是 [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents_L06_Trustworthy_Agents]] 的**技术深化**——L06 讲威胁建模与 HITL，本课给出**离线可验证的审计基础**
-- 输入真实性边界（4）依赖 [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents_L06_Trustworthy_Agents]] 的输入校验
-- 与 [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents_L10_Production]] 的可观测性互补：OTel traces 偏运行时调试，加密 receipt 偏跨组织审计
+- 本课是 [[Agent/Course_Notes/Microsoft_AI_Agents_L06_Trustworthy_Agents]] 的**技术深化**——L06 讲威胁建模与 HITL，本课给出**离线可验证的审计基础**
+- 输入真实性边界（4）依赖 [[Agent/Course_Notes/Microsoft_AI_Agents_L06_Trustworthy_Agents]] 的输入校验
+- 与 [[Agent/Course_Notes/Microsoft_AI_Agents_L10_Production]] 的可观测性互补：OTel traces 偏运行时调试，加密 receipt 偏跨组织审计
 
 ---
 
@@ -249,9 +249,9 @@ R0 → R1 → R2 → R3
 
 ## 关联阅读
 
-- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents_L15_Browser_Use]] — 上一课：浏览器 Agent
-- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents_L06_Trustworthy_Agents]] — L06：威胁建模（输入校验前置）
-- [[15_Agent_Production/Course_Notes/Microsoft_AI_Agents_L10_Production]] — L10：可观测性（OTel）
-- [[17_Ethics_Safety/GenAI_L13_Securing_AI_Applications]] — GenAI 安全基础
-- [[17_Ethics_Safety/README]] — 伦理与安全主题（如有）
+- [[Agent/Course_Notes/Microsoft_AI_Agents_L15_Browser_Use]] — 上一课：浏览器 Agent
+- [[Agent/Course_Notes/Microsoft_AI_Agents_L06_Trustworthy_Agents]] — L06：威胁建模（输入校验前置）
+- [[Agent/Course_Notes/Microsoft_AI_Agents_L10_Production]] — L10：可观测性（OTel）
+- [[伦理安全/GenAI_L13_Securing_AI_Applications]] — GenAI 安全基础
+- [[伦理安全/README]] — 伦理与安全主题（如有）
 - [[90_Learn/courses/microsoft/microsoft_ai_agents_for_beginners]] — 课程总览

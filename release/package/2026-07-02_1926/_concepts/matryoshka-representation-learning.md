@@ -4,13 +4,13 @@ category: "-concepts"
 tags: ["embeddings", "representation-learning", "matryoshka", "rag", "vector-database", "model-efficiency", "dimensionality-reduction"]
 summary: "一种表示学习方法：训练得到的向量在任何前缀维度上都保持语义有效性，可像俄罗斯套娃一样按需截断，兼顾检索精度与存储/计算成本。"
 relationships:
-  - target: "14_RAG_Systems/Embeddings/Matryoshka_Representation_Learning_Deep_Dive"
+  - target: "RAG系统/Embeddings/Matryoshka_Representation_Learning_Deep_Dive"
     type: "deep_dive"
-  - target: "14_RAG_Systems/Matryoshka_Representation_Learning_for_dummy"
+  - target: "RAG系统/Matryoshka_Representation_Learning_for_dummy"
     type: "simplified"
   - target: "_concepts/embeddings-vectors-mrl-plain"
     type: "simplified"
-  - target: "20_Papers_and_Research/Efficiency/Matryoshka_Representation_Learning_Deep_Dive"
+  - target: "论文精读/Efficiency/Matryoshka_Representation_Learning_Deep_Dive"
     type: "paper"
   - target: "_concepts/embedding-models"
     type: "related_to"
@@ -19,9 +19,9 @@ relationships:
   - target: "_concepts/rag-systems"
     type: "related_to"
 sources:
-  - "14_RAG_Systems/Embeddings/Matryoshka_Representation_Learning_Deep_Dive.md"
-  - "20_Papers_and_Research/Efficiency/Matryoshka_Representation_Learning_Deep_Dive.md"
-  - "14_RAG_Systems/Matryoshka_Representation_Learning_for_dummy.md"
+  - "RAG系统/Embeddings/Matryoshka_Representation_Learning_Deep_Dive.md"
+  - "论文精读/Efficiency/Matryoshka_Representation_Learning_Deep_Dive.md"
+  - "RAG系统/Matryoshka_Representation_Learning_for_dummy.md"
   - "_concepts/embeddings-vectors-mrl-plain.md"
 created: "2026-06-12"
 updated: "2026-06-15"
@@ -36,10 +36,10 @@ aliases:
 
 > **一句话理解**: MRL 让模型学会"一层套一层"的向量表示——取前 64 维能做粗排，取前 256 维能做精排，取全量 768/1024 维能做高精度匹配；同一组向量可按需截断，不必为不同精度场景训练多个模型。
 
-📚 深度专题: [[14_RAG_Systems/Embeddings/Matryoshka_Representation_Learning_Deep_Dive|Matryoshka Representation Learning 深度解析]]  
-🎓 小白版: [[14_RAG_Systems/Matryoshka_Representation_Learning_for_dummy|Matryoshka Representation Learning — 小白版]]  
+📚 深度专题: [[RAG系统/Embeddings/Matryoshka_Representation_Learning_Deep_Dive|Matryoshka Representation Learning 深度解析]]  
+🎓 小白版: [[RAG系统/Matryoshka_Representation_Learning_for_dummy|Matryoshka Representation Learning — 小白版]]  
 🗣️ 大白话: [[_concepts/embeddings-vectors-mrl-plain|Embedding、向量与 MRL 大白话]]  
-📄 论文解读: [[20_Papers_and_Research/Efficiency/Matryoshka_Representation_Learning_Deep_Dive|NeurIPS 2022 论文深度解读]]
+📄 论文解读: [[论文精读/Efficiency/Matryoshka_Representation_Learning_Deep_Dive|NeurIPS 2022 论文深度解读]]
 
 ---
 
@@ -245,9 +245,9 @@ $$
 ## 10. 延伸阅读
 
 - 论文: *Matryoshka Representation Learning* (Kusupati et al., NeurIPS 2022)
-- 论文解读: [[20_Papers_and_Research/Efficiency/Matryoshka_Representation_Learning_Deep_Dive|NeurIPS 2022 论文深度解读]]
-- 深度专题: [[14_RAG_Systems/Embeddings/Matryoshka_Representation_Learning_Deep_Dive|Matryoshka Representation Learning 深度解析]]
-- 小白版: [[14_RAG_Systems/Matryoshka_Representation_Learning_for_dummy|Matryoshka Representation Learning — 小白版]]
+- 论文解读: [[论文精读/Efficiency/Matryoshka_Representation_Learning_Deep_Dive|NeurIPS 2022 论文深度解读]]
+- 深度专题: [[RAG系统/Embeddings/Matryoshka_Representation_Learning_Deep_Dive|Matryoshka Representation Learning 深度解析]]
+- 小白版: [[RAG系统/Matryoshka_Representation_Learning_for_dummy|Matryoshka Representation Learning — 小白版]]
 - 大白话: [[_concepts/embeddings-vectors-mrl-plain|Embedding、向量与 MRL 大白话]]
 - 模型: [nomic-embed-text-v1.5](https://huggingface.co/nomic-ai/nomic-embed-text-v1.5)
 - 模型: [OpenAI text-embedding-3](https://platform.openai.com/docs/guides/embeddings)

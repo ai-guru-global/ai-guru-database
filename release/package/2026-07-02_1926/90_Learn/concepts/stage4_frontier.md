@@ -51,8 +51,8 @@ sources: []
 | Veo3 | 高质量视频生成，支持文本/图像到视频 | Google |
 | Kling 3.0 | 电影级视频生成，中国团队 | 快手 |
 
-- **入门阅读**：[多模态视觉](../../04_Computer_Vision/Multimodal_Vision/Multimodal_Vision_for_dummy.md)
-- **深入学习**：[视频生成](../../04_Computer_Vision/README.md)
+- **入门阅读**：[多模态视觉](../../计算机视觉/Multimodal_Vision/Multimodal_Vision_for_dummy.md)
+- **深入学习**：[视频生成](../../计算机视觉/README.md)
 - **关联概念**：CLIP、扩散模型、视频生成、具身智能
 
 ### 2. AI Agent 深度进阶
@@ -74,10 +74,10 @@ sources: []
 **Ops Agent (运维智能体)**
 - AI 原生运维：自动监控、诊断、修复、扩缩容
 - 异常检测 → 根因分析 → 自动修复 → 报告的闭环
-- 参见：[Ops Agent Harness 2026](../../15_Agent_Production/Agent_Evaluation/Ops_Agent_Harness_2026.md)
+- 参见：[Ops Agent Harness 2026](../../Agent/Agent_Evaluation/Ops_Agent_Harness_2026.md)
 
-- **入门阅读**：[AI Agent 入门](../../15_Agent_Production/Agent_Foundations/AI_Agents_for_dummy.md)
-- **深入学习**：[Agent 速查](../../15_Agent_Production/Agent_Foundations/Agent-in-nutshell.md)
+- **入门阅读**：[AI Agent 入门](../../Agent/Agent_Foundations/AI_Agents_for_dummy.md)
+- **深入学习**：[Agent 速查](../../Agent/Agent_Foundations/Agent-in-nutshell.md)
 - **关联概念**：Tool Use、规划、记忆、多 Agent 协作
 
 ### 3. 世界模型与 JEPA 架构
@@ -91,7 +91,7 @@ sources: []
 - **相关进展**：
   - **V-JEPA** (Meta, 2024)：基于 JEPA 架构的视频预测模型，在机器人操作任务上表现优异
   - **物理 AI**：结合世界模型和机器人控制，实现"先在模拟器里试错，再在真实世界执行"
-- **入门阅读**：[世界模型](../../03_Deep_Learning/README.md)
+- **入门阅读**：[世界模型](../../深度学习/README.md)
 - **关联概念**：自监督学习、多模态、具身智能、机器人
 
 ### 4. VLA — 视觉-语言-动作模型与具身智能
@@ -108,7 +108,7 @@ sources: []
 
 - **具身智能 (Embodied AI)**：让 AI 有一个"身体"，通过与物理世界交互来学习和推理
 - **关键挑战**：sim-to-real 迁移（模拟环境训练 → 真实世界部署）、长程任务规划、物理安全
-- **入门阅读**：[机器人与具身智能](../../06_Reinforcement_Learning/Robotics_Embodied_AI/Embodied_AI_2026.md)
+- **入门阅读**：[机器人与具身智能](../../强化学习/Robotics_Embodied_AI/Embodied_AI_2026.md)
 - **关联概念**：世界模型、强化学习、视觉导航
 
 ### 5. AGI 路径与当前进展
@@ -128,7 +128,7 @@ sources: []
   - 物理世界交互
   - 持续学习（不遗忘旧知识的同时学新知识）
   方面仍有显著差距
-- **入门阅读**：[AI 未来趋势](../../00_AI_Introduction/AI_Future_Trends.md)
+- **入门阅读**：[AI 未来趋势](../../AI入门/AI_Future_Trends.md)
 - **关联概念**：涌现能力、规模法则 (Scaling Law)、AI Safety
 
 ### 6. AI Safety 与对齐 (Alignment)
@@ -144,8 +144,8 @@ sources: []
   - **RLHF / DPO**：用人类反馈信号对齐模型
   - **Constitutional AI (CAI)**：让 AI 根据一组"宪法"自我约束
   - **可解释性研究**：机械可解释性 (Mechanistic Interpretability) 试图理解 Transformer 内部在计算什么
-- **入门阅读**：[价值对齐](../../17_Ethics_Safety/Value_Alignment/Value_Alignment_for_dummy.md)
-- **深入学习**：[AI 安全与红队](../../17_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming_for_dummy.md)
+- **入门阅读**：[价值对齐](../../伦理安全/Value_Alignment/Value_Alignment_for_dummy.md)
+- **深入学习**：[AI 安全与红队](../../伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming_for_dummy.md)
 - **关联概念**：RLHF、机械可解释性、红队测试
 
 ### 7. Scaling Law 与规模法则
@@ -181,8 +181,8 @@ sources: []
   - **InfiniBand vs RoCE**：GPU 间高速互联网络是训练效率的关键
   - **推理优化**：vLLM、TensorRT-LLM、FlashAttention 让推理成本大幅下降
   - **边缘 AI**：端侧模型（Phi-4、Gemma 2B）让手机/PC 也能跑 LLM
-- **入门阅读**：[AI 硬件](../../01_Fundamentals/AI_Hardware/AI_Hardware_2026.md)
-- **深入学习**：[AI 基础设施趋势 2026](../../12_Architecture_Infrastructure/Architecture_Overview/AI_Infrastructure_2026)
+- **入门阅读**：[AI 硬件](../../数学基础/AI_Hardware/AI_Hardware_2026.md)
+- **深入学习**：[AI 基础设施趋势 2026](../../架构基建/Architecture_Overview/AI_Infrastructure_2026)
 - **关联概念**：GPU、分布式训练、量化
 
 ---

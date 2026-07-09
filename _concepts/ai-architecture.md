@@ -15,10 +15,10 @@ relationships:
 - target: '_concepts/rag-systems'
   type: related_to
 sources:
-- 12_Architecture_Infrastructure/AI_System_Architecture_2026.md
+- 架构基建/AI_System_Architecture_2026.md
 - 12_Architecture_llm-infrastructure/Spring_AI_Architecture.md
-- 12_Architecture_Infrastructure/High_Availability_2026.md
-- 12_Architecture_Infrastructure/Multi_Tenant_Architecture.md
+- 架构基建/High_Availability_2026.md
+- 架构基建/Multi_Tenant_Architecture.md
 summary: AI系统架构是智能应用的骨架与神经系统，采用四层模型（应用层→服务层→数据层→基础设施层），需兼顾解耦、可扩展、高可用、可观测和安全五大设计原则。
 provenance:
   extracted: 0.78
@@ -102,14 +102,14 @@ AI系统高可用的特殊挑战：GPU故障率比CPU高一个数量级（MTBF�
 
 ## 来源
 
-- 12_Architecture_Infrastructure/AI_System_Architecture_2026.md — 四层架构全景图、服务设计、可观测性
-- 12_Architecture_Infrastructure/Architecture_Overview/Spring_AI_Architecture — Spring AI企业级架构、Advisor模式
-- 12_Architecture_Infrastructure/High_Availability_2026.md — 多AZ部署、故障恢复、健康检查
-- 12_Architecture_Infrastructure/Multi_Tenant_Architecture.md — 隔离模型、资源管理、计费计量
+- 架构基建/AI_System_Architecture_2026.md — 四层架构全景图、服务设计、可观测性
+- 架构基建/Architecture_Overview/Spring_AI_Architecture — Spring AI企业级架构、Advisor模式
+- 架构基建/High_Availability_2026.md — 多AZ部署、故障恢复、健康检查
+- 架构基建/Multi_Tenant_Architecture.md — 隔离模型、资源管理、计费计量
 
 ## Related
 
-- [[12_Architecture_Infrastructure/Architecture_Overview/AI_Infrastructure_2026]] — AI Infrastructure 2026 完全指南 (共享: high-availability, kubernetes)
-- [[12_Architecture_Infrastructure/Architecture-in-nutshell]] — AI 架构速成指南 (共享: high-availability, kubernetes)
-- [[12_Architecture_Infrastructure/Architecture_Infrastructure_for_dummy]] — AI 架构基础设施 - 小白版 (共享: high-availability, kubernetes)
-- [[12_Architecture_Infrastructure/Architecture_Overview/Spring_AI_Architecture]] — Spring AI 系统架构设计 (共享: high-availability, kubernetes)
+- [[架构基建/Architecture_Overview/AI_Infrastructure_2026]] — AI Infrastructure 2026 完全指南 (共享: high-availability, kubernetes)
+- [[架构基建/Architecture-in-nutshell]] — AI 架构速成指南 (共享: high-availability, kubernetes)
+- [[架构基建/Architecture_Infrastructure_for_dummy]] — AI 架构基础设施 - 小白版 (共享: high-availability, kubernetes)
+- [[架构基建/Architecture_Overview/Spring_AI_Architecture]] — Spring AI 系统架构设计 (共享: high-availability, kubernetes)

@@ -53,4 +53,4 @@ ib_read_bw
 - [[_concepts/nvlink|NVLink]]
 - [[_concepts/gpu-direct|GPU Direct]]
 - [[_concepts/distributed-training|分布式训练]]
-- [[07_Model_Training/Distributed_Training/Distributed_Training_Hang_Runbook|分布式训练 Hang 排障]]
+- [[模型训练/Distributed_Training/Distributed_Training_Hang_Runbook|分布式训练 Hang 排障]]

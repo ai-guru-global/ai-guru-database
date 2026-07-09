@@ -7,9 +7,9 @@ updated: 2026-07-02
 
 # Evaluation
 
-This page indexes the contents of `11_MLOps_Pipeline/Evaluation`.
+This page indexes the contents of `MLOps/Evaluation`.
 
 ## Files
 
 - LLM Evaluation Pipeline 2
-- [[11_MLOps_Pipeline/Evaluation/LLM_Evaluation_Pipeline|LLM Evaluation Pipeline]]
+- [[MLOps/Evaluation/LLM_Evaluation_Pipeline|LLM Evaluation Pipeline]]

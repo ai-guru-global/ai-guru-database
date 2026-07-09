@@ -514,17 +514,17 @@ LLM 推理引擎选型 Checklist
 
 ## 参考资源
 
-- [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive|vLLM 深度解析]]
-- [[10_Deployment_Inference/Inference_Engines/SGLang_Deep_Dive|SGLang 深度解析]]
-- [[10_Deployment_Inference/Inference_Engines/TensorRT_LLM_Deep_Dive|TensorRT-LLM 深度解析]]
-- [[10_Deployment_Inference/Inference_Engines/llama_cpp_Deep_Dive|llama.cpp 深度解析]]
-- [[10_Deployment_Inference/Inference_Engines/TGI_Deep_Dive|TGI 深度解析]]
-- [[10_Deployment_Inference/Inference_Engines/Groq_Deep_Dive|Groq 深度解析]]
-- [[10_Deployment_Inference/Inference_Engines/Ollama_Deep_Dive|Ollama 深度解析]]
-- [[10_Deployment_Inference/Inference_Engines/LMDeploy_Deep_Dive|LMDeploy 深度解析]]
-- [[10_Deployment_Inference/Inference_Engines/BentoML_Deep_Dive|BentoML 深度解析]]
-- [[10_Deployment_Inference/Inference_Engines/LiteRT_Deep_Dive|LiteRT 深度解析]]
-- [[12_Architecture_Infrastructure/AI_Gateway/LiteLLM_Deep_Dive|LiteLLM 深度解析]]
+- [[部署推理/Inference_Engines/vLLM_Deep_Dive|vLLM 深度解析]]
+- [[部署推理/Inference_Engines/SGLang_Deep_Dive|SGLang 深度解析]]
+- [[部署推理/Inference_Engines/TensorRT_LLM_Deep_Dive|TensorRT-LLM 深度解析]]
+- [[部署推理/Inference_Engines/llama_cpp_Deep_Dive|llama.cpp 深度解析]]
+- [[部署推理/Inference_Engines/TGI_Deep_Dive|TGI 深度解析]]
+- [[部署推理/Inference_Engines/Groq_Deep_Dive|Groq 深度解析]]
+- [[部署推理/Inference_Engines/Ollama_Deep_Dive|Ollama 深度解析]]
+- [[部署推理/Inference_Engines/LMDeploy_Deep_Dive|LMDeploy 深度解析]]
+- [[部署推理/Inference_Engines/BentoML_Deep_Dive|BentoML 深度解析]]
+- [[部署推理/Inference_Engines/LiteRT_Deep_Dive|LiteRT 深度解析]]
+- [[架构基建/AI_Gateway/LiteLLM_Deep_Dive|LiteLLM 深度解析]]
 
 ---
 
@@ -533,7 +533,7 @@ LLM 推理引擎选型 Checklist
 
 ## Related
 
-- [[10_Deployment_Inference/README|模型部署与推理目录]]
-- [[10_Deployment_Inference/Deployment_Inference_2026|部署推理 2026 趋势]]
-- [[10_Deployment_Inference/Cost/LLM_Cost_Optimization|LLM 成本优化]]
-- [[12_Architecture_Infrastructure/AI_Gateway/AI_Gateway_2026|AI Gateway 2026]]
+- [[部署推理/README|模型部署与推理目录]]
+- [[部署推理/Deployment_Inference_2026|部署推理 2026 趋势]]
+- [[部署推理/Cost/LLM_Cost_Optimization|LLM 成本优化]]
+- [[架构基建/AI_Gateway/AI_Gateway_2026|AI Gateway 2026]]

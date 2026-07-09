@@ -7,9 +7,9 @@ updated: 2026-07-02
 
 # Richard Socher
 
-This page indexes the contents of `19_Talks/Richard_Socher`.
+This page indexes the contents of `业界观点/Richard_Socher`.
 
 ## Files
 
-- [[19_Talks/Richard_Socher/about|About]]
-- [[19_Talks/Richard_Socher/sayings|Sayings]]
+- [[业界观点/Richard_Socher/about|About]]
+- [[业界观点/Richard_Socher/sayings|Sayings]]

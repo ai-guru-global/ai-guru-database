@@ -181,9 +181,9 @@ Kubernetes (K8s) 部署:
 
 ## 下一步
 
-- 想学部署？→ [10_Deployment_Inference/README_for_dummy.md](../10_Deployment_Inference/README_for_dummy.md)
-- 想学 MLOps？→ [11_MLOps_Pipeline/README_for_dummy.md](../11_MLOps_Pipeline/README_for_dummy.md)
-- 想学监控？→ [13_AI_Ops/README_for_dummy.md](../13_AI_Ops/README_for_dummy.md)
+- 想学部署？→ [部署推理/README_for_dummy.md](../部署推理/README_for_dummy.md)
+- 想学 MLOps？→ [MLOps/README_for_dummy.md](../MLOps/README_for_dummy.md)
+- 想学监控？→ [AI运维/README_for_dummy.md](../AI运维/README_for_dummy.md)
 
 ---
 
@@ -191,8 +191,8 @@ Kubernetes (K8s) 部署:
 
 ## Related
 
-- [[12_Architecture_Infrastructure/Architecture_Overview/AI_Infrastructure_2026|AI_Infrastructure_2026]]
-- [[12_Architecture_Infrastructure/Architecture-in-nutshell.md|Architecture-in-nutshell]]
-- [[12_Architecture_Infrastructure/Architecture_Infrastructure_for_dummy.md|Architecture_Infrastructure_for_dummy]]
-- [[12_Architecture_Infrastructure/Architecture_Overview/Spring_AI_Architecture|Spring_AI_Architecture]]
+- [[架构基建/Architecture_Overview/AI_Infrastructure_2026|AI_Infrastructure_2026]]
+- [[架构基建/Architecture-in-nutshell.md|Architecture-in-nutshell]]
+- [[架构基建/Architecture_Infrastructure_for_dummy.md|Architecture_Infrastructure_for_dummy]]
+- [[架构基建/Architecture_Overview/Spring_AI_Architecture|Spring_AI_Architecture]]
 - [[_concepts/llm-infrastructure.md|llm-infrastructure]]

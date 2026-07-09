@@ -628,7 +628,7 @@ MoE 推理特殊挑战与优化:
 | LMDeploy | TurboMind + 量化 | 高 | 低 | 支持 | Apache 2.0 |
 | llama.cpp | GGUF + CPU 优化 | 中 | 中 | 部分支持 | MIT |
 
-> 各框架详细对比参见 [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive|vLLM]]、[[10_Deployment_Inference/Inference_Engines/SGLang_Deep_Dive|SGLang]]、[[10_Deployment_Inference/Inference_Engines/TGI_Deep_Dive|TGI]]、[[10_Deployment_Inference/Inference_Engines/TensorRT_LLM_Deep_Dive|TensorRT-LLM]]、[[10_Deployment_Inference/Inference_Engines/LMDeploy_Deep_Dive|LMDeploy]]、[[10_Deployment_Inference/Inference_Engines/llama_cpp_Deep_Dive|llama.cpp]]
+> 各框架详细对比参见 [[部署推理/Inference_Engines/vLLM_Deep_Dive|vLLM]]、[[部署推理/Inference_Engines/SGLang_Deep_Dive|SGLang]]、[[部署推理/Inference_Engines/TGI_Deep_Dive|TGI]]、[[部署推理/Inference_Engines/TensorRT_LLM_Deep_Dive|TensorRT-LLM]]、[[部署推理/Inference_Engines/LMDeploy_Deep_Dive|LMDeploy]]、[[部署推理/Inference_Engines/llama_cpp_Deep_Dive|llama.cpp]]
 
 ### 7.2 各厂商推荐推理方案
 
@@ -693,7 +693,7 @@ print(state["answer"])
 
 ## 8. 国产算力适配
 
-> 各芯片完整技术规格、软件栈对比和选型指南参见 [[01_Fundamentals/AI_Hardware/Chinese_AI_Chips_Deep_Dive]]
+> 各芯片完整技术规格、软件栈对比和选型指南参见 [[数学基础/AI_Hardware/Chinese_AI_Chips_Deep_Dive]]
 
 ### 8.1 华为昇腾 NPU 生态
 
@@ -881,32 +881,32 @@ print(state["answer"])
 
 ### 训练相关
 
-- [[05_NLP_LLMs/LLM_Architectures/MoE_Routing_and_Load_Balancing]] — MoE 路由与负载均衡
-- [[05_NLP_LLMs/LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral]] — MoE 案例研究
-- [[05_NLP_LLMs/Reasoning_Models/DeepSeek_R1_Technical_Analysis]] — DeepSeek R1 GRPO 训练
-- [[05_NLP_LLMs/Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs]] — LLM 微调技术
-- [[20_Papers_and_Research/Efficiency/LoRA_Deep_Dive]] — LoRA 低秩适配
-- [[20_Papers_and_Research/Architecture/Mixture_of_Experts_Deep_Dive]] — MoE 论文解读
+- [[大模型/LLM_Architectures/MoE_Routing_and_Load_Balancing]] — MoE 路由与负载均衡
+- [[大模型/LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral]] — MoE 案例研究
+- [[大模型/Reasoning_Models/DeepSeek_R1_Technical_Analysis]] — DeepSeek R1 GRPO 训练
+- [[大模型/Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs]] — LLM 微调技术
+- [[论文精读/Efficiency/LoRA_Deep_Dive]] — LoRA 低秩适配
+- [[论文精读/Architecture/Mixture_of_Experts_Deep_Dive]] — MoE 论文解读
 
 ### 推理相关
 
-- [[10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive]] — vLLM 深度解析
-- [[10_Deployment_Inference/Inference_Engines/SGLang_Deep_Dive]] — SGLang 深度解析
-- [[10_Deployment_Inference/Inference_Engines/TGI_Deep_Dive]] — HuggingFace TGI
-- [[10_Deployment_Inference/Inference_Engines/TensorRT_LLM_Deep_Dive]] — TensorRT-LLM
-- [[10_Deployment_Inference/Inference_Engines/LMDeploy_Deep_Dive]] — LMDeploy (InternLM)
-- [[10_Deployment_Inference/Quantization/Quantization_Techniques_2026]] — 量化技术
-- [[10_Deployment_Inference/Caching/Prompt_Caching_and_KV_Cache_Optimization]] — KV Cache 优化
-- [[10_Deployment_Inference/Caching/Speculative_Decoding_Advanced_2026]] — 投机解码
-- [[10_Deployment_Inference/Inference_Engines/llama_cpp_Deep_Dive]] — llama.cpp (端侧)
-- [[10_Deployment_Inference/Inference_Engines/Ollama_Deep_Dive]] — Ollama (一键部署)
+- [[部署推理/Inference_Engines/vLLM_Deep_Dive]] — vLLM 深度解析
+- [[部署推理/Inference_Engines/SGLang_Deep_Dive]] — SGLang 深度解析
+- [[部署推理/Inference_Engines/TGI_Deep_Dive]] — HuggingFace TGI
+- [[部署推理/Inference_Engines/TensorRT_LLM_Deep_Dive]] — TensorRT-LLM
+- [[部署推理/Inference_Engines/LMDeploy_Deep_Dive]] — LMDeploy (InternLM)
+- [[部署推理/Quantization/Quantization_Techniques_2026]] — 量化技术
+- [[部署推理/Caching/Prompt_Caching_and_KV_Cache_Optimization]] — KV Cache 优化
+- [[部署推理/Caching/Speculative_Decoding_Advanced_2026]] — 投机解码
+- [[部署推理/Inference_Engines/llama_cpp_Deep_Dive]] — llama.cpp (端侧)
+- [[部署推理/Inference_Engines/Ollama_Deep_Dive]] — Ollama (一键部署)
 
 ### 厂商深度解析
 
-- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive]] — DeepSeek (MLA + MoE + FP8)
-- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/Qwen_Deep_Dive]] — Qwen (Hybrid Thinking)
-- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/README]] — 中国大模型生态总览
-- [[05_NLP_LLMs/Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]] — 全厂商对比矩阵
+- [[大模型/Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive]] — DeepSeek (MLA + MoE + FP8)
+- [[大模型/Chinese_LLM_Ecosystem/Qwen_Deep_Dive]] — Qwen (Hybrid Thinking)
+- [[大模型/Chinese_LLM_Ecosystem/README]] — 中国大模型生态总览
+- [[大模型/Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]] — 全厂商对比矩阵
 
 ---
 

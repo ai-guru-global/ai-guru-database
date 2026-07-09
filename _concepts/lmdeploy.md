@@ -12,7 +12,7 @@ relationships:
   - target: "_concepts/quantization"
     type: uses
 sources:
-  - 10_Deployment_Inference/Inference_Engines/LMDeploy_Deep_Dive.md
+  - 部署推理/Inference_Engines/LMDeploy_Deep_Dive.md
 summary: "LMDeploy 是 OpenMMLab 开源的国产 LLM 推理部署工具，提供 TurboMind 高性能引擎与 PyTorch 后端，支持 AWQ/GPTQ 量化、多模态、国产芯片和 OpenAI 兼容 API，在中文场景应用广泛。"
 provenance:
   extracted: 0.75
@@ -107,7 +107,7 @@ API Server (Python)
 
 ## Related
 
-- [[10_Deployment_Inference/Inference_Engines/LMDeploy_Deep_Dive]] — LMDeploy 深度解析
+- [[部署推理/Inference_Engines/LMDeploy_Deep_Dive]] — LMDeploy 深度解析
 - [[_concepts/model-serving]] — 模型服务
 - [[_concepts/vllm]] — vLLM 推理引擎
 - [[_concepts/hami]] — HAMi GPU 虚拟化

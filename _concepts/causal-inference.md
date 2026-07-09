@@ -10,7 +10,7 @@ relationships:
   - target: "_concepts/bayesian-methods"
     type: related_to
 sources:
-  - 02_Machine_Learning/Causal_Inference
+  - 机器学习/Causal_Inference
 summary: "因果推断超越相关性分析，回答「如果干预X，Y会怎样变化」的因果问题。核心工具包括因果图(DAG)、do-演算、工具变量、倾向评分匹配和反事实推理。"
 provenance:
   extracted: 0.45
@@ -155,7 +155,7 @@ P(Y|do(X=x)) = \sum_z P(Y|X=x, Z=z) \cdot P(Z=z)
 
 ## Related
 
-- [[02_Machine_Learning/Causal_Inference/README]] — 因果推断深度解析
+- [[机器学习/Causal_Inference/README]] — 因果推断深度解析
 - [[_concepts/probability-statistics]] — 概率统计基础
 - [[_concepts/supervised-learning]] — 监督学习（相关 vs 因果）
 - [[_concepts/bayesian-methods]] — 贝叶斯方法（贝叶斯因果网络）

@@ -7,9 +7,9 @@ updated: 2026-07-02
 
 # Finance
 
-This page indexes the contents of `18_AI_Applications_Industry/Finance`.
+This page indexes the contents of `行业应用/Finance`.
 
 ## Files
 
-- [[18_AI_Applications_Industry/Finance/AI_Finance_2026|AI Finance 2026]]
-- [[18_AI_Applications_Industry/Finance/AI_Finance_Applications_2026|AI Finance Applications 2026]]
+- [[行业应用/Finance/AI_Finance_2026|AI Finance 2026]]
+- [[行业应用/Finance/AI_Finance_Applications_2026|AI Finance Applications 2026]]

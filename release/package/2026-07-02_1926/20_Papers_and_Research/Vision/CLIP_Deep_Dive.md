@@ -252,7 +252,7 @@ CLIP 的主要局限:
 
 ## 相关资源
 
-- [[05_NLP_LLMs/Multimodal_Models/Native_Multimodal_Architectures|多模态模型]] — 多模态模型
+- [[大模型/Multimodal_Models/Native_Multimodal_Architectures|多模态模型]] — 多模态模型
 - Diffusion Models Deep Dive — 扩散模型 (CLIP 在 Stable Diffusion 中的应用)
 - [[Attention_Is_All_You_Need_Deep_Dive]] — Transformer (CLIP 的骨干架构)
 

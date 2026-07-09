@@ -19,7 +19,7 @@ sources: []
 每个课题以独立子目录组织，建议结构如下：
 
 ```
-20_Papers_and_Research/Methodology/
+论文精读/Methodology/
 ├── README.md                          # 本文件
 ├── Research_Template.md               # 课题模板
 └── <课题名称>/                         # 每个课题一个目录
@@ -51,7 +51,7 @@ sources: []
 
 ## 与其他章节的关联
 
-- [20_Papers](../20_Papers_and_Research/README.md) — 论文阅读，可为课题提供文献支撑
+- [20_Papers](../论文精读/README.md) — 论文阅读，可为课题提供文献支撑
 - [_synthesis](../_synthesis/README.md) — 综合分析，课题成果可沉淀为 synthesis 文章
 - [_meta/notes](../_meta/notes/README.md) — 概念笔记，课题中产生的新概念可补充至此
 
@@ -60,4 +60,4 @@ sources: []
 *本章节供研究者和学习者使用，欢迎从实际问题出发开展深度课题研究。*
 
 ## Related
-- [[20_Papers_and_Research/Research_Template|课题研究模板 🔬]]
+- [[论文精读/Research_Template|课题研究模板 🔬]]

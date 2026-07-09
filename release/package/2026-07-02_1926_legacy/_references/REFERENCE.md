@@ -9,7 +9,7 @@ updated: 2026-07-02
 
 # Agent Skill 通用参考规范
 
-本规范为 `15_Agent_Production/Agent_Skills/` 下的 Skill 文档提供统一的文件结构、元数据、引用约定与最佳实践，确保 Skill 定义可被 Agent 框架、自动化工具与人工审阅一致地解析和使用。
+本规范为 `Agent/Agent_Skills/` 下的 Skill 文档提供统一的文件结构、元数据、引用约定与最佳实践，确保 Skill 定义可被 Agent 框架、自动化工具与人工审阅一致地解析和使用。
 
 ## 文件结构
 
@@ -50,7 +50,7 @@ Frontmatter 字段应保持一致：
 
 ## 引用约定
 
-- 引用知识库内部页面使用 Obsidian wikilink：`[[15_Agent_Production/Agent_Skills/README|Agent Skills]]`。
+- 引用知识库内部页面使用 Obsidian wikilink：`[[Agent/Agent_Skills/README|Agent Skills]]`。
 - 引用外部资源使用 Markdown 标准链接，并注明访问日期：`[OpenAI API](https://platform.openai.com/docs) (访问于 2026-07-02)`。
 - 引用其他 Skill 时使用相对路径或 wikilink，确保在移动文件后不中断。
 - 避免使用裸 URL，统一用链接文本描述目标内容。
@@ -82,7 +82,7 @@ status: stable
 
 ## Related
 
-- [[15_Agent_Production/Agent_Skills/README|Agent Skills]]
+- [[Agent/Agent_Skills/README|Agent Skills]]
 - [[_references/index|References Index]]
 - [[_references/common-field-types|Common Field Types]]
 - [[_references/statistics|Statistics]]

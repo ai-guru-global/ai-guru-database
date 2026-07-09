@@ -38,5 +38,5 @@ LightGBM 是机器学习领域的重要工具/框架。
 | LightGBM | 速度快、内存低 | 大规模数据 |
 | CatBoost | 类别特征原生支持 | 高基数类别数据 |
 
-> **关联**: → [[02_Machine_Learning/README|机器学习]]
+> **关联**: → [[机器学习/README|机器学习]]
 

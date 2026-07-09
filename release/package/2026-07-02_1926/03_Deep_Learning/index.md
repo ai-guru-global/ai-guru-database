@@ -8,25 +8,25 @@ sources: []
 
 # Deep Learning
 
-This page indexes the contents of `03_Deep_Learning`.
+This page indexes the contents of `深度学习`.
 
 ## Subdirectories
 
-- [[03_Deep_Learning/DL_Frameworks/index|DL Frameworks]]
-- [[03_Deep_Learning/Graph_Neural_Networks/index|Graph Neural Networks]]
-- [[03_Deep_Learning/Neural_Network_Core/index|Neural Network Core]]
-- [[03_Deep_Learning/Optimization/index|Optimization]]
-- [[03_Deep_Learning/Self_Supervised_Learning/index|Self Supervised Learning]]
-- [[03_Deep_Learning/World_Models/index|World Models]]
+- [[深度学习/DL_Frameworks/index|DL Frameworks]]
+- [[深度学习/Graph_Neural_Networks/index|Graph Neural Networks]]
+- [[深度学习/Neural_Network_Core/index|Neural Network Core]]
+- [[深度学习/Optimization/index|Optimization]]
+- [[深度学习/Self_Supervised_Learning/index|Self Supervised Learning]]
+- [[深度学习/World_Models/index|World Models]]
 
 ## Files
 
-- [[03_Deep_Learning/Deep_Learning_For_Beginners|Deep Learning For Beginners]]
-- [[03_Deep_Learning/DL-in-nutshell|DL In Nutshell]]
-- [[03_Deep_Learning/DL_Fundamentals|DL Fundamentals]]
-- [[03_Deep_Learning/DL_Overview|DL Overview]]
-- [[03_Deep_Learning/README|README]]
-- [[03_Deep_Learning/README_for_dummy|README For Dummy]]
-- [[03_Deep_Learning/State_Space_Models_2026|State Space Models 2026]]
-- [[03_Deep_Learning/Transfer_Learning|Transfer Learning]]
-- [[03_Deep_Learning/Transfer_Learning_Guide|Transfer Learning Guide]]
+- [[深度学习/Deep_Learning_For_Beginners|Deep Learning For Beginners]]
+- [[深度学习/DL-in-nutshell|DL In Nutshell]]
+- [[深度学习/DL_Fundamentals|DL Fundamentals]]
+- [[深度学习/DL_Overview|DL Overview]]
+- [[深度学习/README|README]]
+- [[深度学习/README_for_dummy|README For Dummy]]
+- [[深度学习/State_Space_Models_2026|State Space Models 2026]]
+- [[深度学习/Transfer_Learning|Transfer Learning]]
+- [[深度学习/Transfer_Learning_Guide|Transfer Learning Guide]]

@@ -9,10 +9,10 @@ relationships:
     type: related_to
   - target: "_concepts/attention-variants"
     type: related_to
-  - target: "10_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy"
+  - target: "部署推理/Inference_Performance/Inference_Terms_for_dummy"
     type: simplified_by
 sources:
-  - 10_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy.md
+  - 部署推理/Inference_Performance/Inference_Terms_for_dummy.md
 summary: GQA 让多个 query 头共享同一组 K/V 头，折中 MHA 的精度和 MQA 的 KV Cache 压缩，是 Llama 3、Qwen 2 等主流模型的默认选择。
 lifecycle: draft
 tier: core
@@ -48,4 +48,4 @@ Decode 阶段每生成一个字都要读 KV Cache。GQA 把 KV Cache 降到原�
 - [[_concepts/attention-variants]] — 注意力变体
 - [[_concepts/multi-head-latent-attention]] — MLA
 - [[_concepts/kv-cache]] — KV Cache
-- [[10_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy|推理性能术语大白话解释]]
+- [[部署推理/Inference_Performance/Inference_Terms_for_dummy|推理性能术语大白话解释]]

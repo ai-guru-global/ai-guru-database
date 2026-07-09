@@ -8,30 +8,30 @@ sources: []
 
 # Machine Learning
 
-This page indexes the contents of `02_Machine_Learning`.
+This page indexes the contents of `机器学习`.
 
 ## Subdirectories
 
-- [[02_Machine_Learning/Anomaly_Detection/index|Anomaly Detection]]
-- [[02_Machine_Learning/AutoML/index|Automl]]
-- [[02_Machine_Learning/Bayesian_Methods/index|Bayesian Methods]]
-- [[02_Machine_Learning/Causal_Inference/index|Causal Inference]]
-- [[02_Machine_Learning/Ensemble_Learning/index|Ensemble Learning]]
-- [[02_Machine_Learning/Feature_Engineering/index|Feature Engineering]]
-- [[02_Machine_Learning/ML_Frameworks/index|ML Frameworks]]
-- [[02_Machine_Learning/Recommendation_Systems/index|Recommendation Systems]]
-- [[02_Machine_Learning/Supervised_Learning/index|Supervised Learning]]
-- [[02_Machine_Learning/Time_Series/index|Time Series]]
-- [[02_Machine_Learning/Unsupervised_Learning/index|Unsupervised Learning]]
+- [[机器学习/Anomaly_Detection/index|Anomaly Detection]]
+- [[机器学习/AutoML/index|Automl]]
+- [[机器学习/Bayesian_Methods/index|Bayesian Methods]]
+- [[机器学习/Causal_Inference/index|Causal Inference]]
+- [[机器学习/Ensemble_Learning/index|Ensemble Learning]]
+- [[机器学习/Feature_Engineering/index|Feature Engineering]]
+- [[机器学习/ML_Frameworks/index|ML Frameworks]]
+- [[机器学习/Recommendation_Systems/index|Recommendation Systems]]
+- [[机器学习/Supervised_Learning/index|Supervised Learning]]
+- [[机器学习/Time_Series/index|Time Series]]
+- [[机器学习/Unsupervised_Learning/index|Unsupervised Learning]]
 
 ## Files
 
-- [[02_Machine_Learning/ApacheCN_Machine_Learning_Track|Apachecn Machine Learning Track]]
-- [[02_Machine_Learning/kaggle_overview|Kaggle Overview]]
-- [[02_Machine_Learning/ML-in-nutshell|ML In Nutshell]]
-- [[02_Machine_Learning/ML_Algorithms_Cheatsheet|ML Algorithms Cheatsheet]]
-- [[02_Machine_Learning/ML_For_Beginners|ML For Beginners]]
-- [[02_Machine_Learning/ML_Fundamentals|ML Fundamentals]]
-- [[02_Machine_Learning/Model_Interpretability_Explainability|Model Interpretability Explainability]]
-- [[02_Machine_Learning/README|README]]
-- [[02_Machine_Learning/README_for_dummy|README For Dummy]]
+- [[机器学习/ApacheCN_Machine_Learning_Track|Apachecn Machine Learning Track]]
+- [[机器学习/kaggle_overview|Kaggle Overview]]
+- [[机器学习/ML-in-nutshell|ML In Nutshell]]
+- [[机器学习/ML_Algorithms_Cheatsheet|ML Algorithms Cheatsheet]]
+- [[机器学习/ML_For_Beginners|ML For Beginners]]
+- [[机器学习/ML_Fundamentals|ML Fundamentals]]
+- [[机器学习/Model_Interpretability_Explainability|Model Interpretability Explainability]]
+- [[机器学习/README|README]]
+- [[机器学习/README_for_dummy|README For Dummy]]

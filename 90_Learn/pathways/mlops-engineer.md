@@ -38,7 +38,7 @@ sources: []
 | Linux & Shell | 系统管理、脚本编写 | 实战练习 |
 | Docker | 容器化、镜像构建 | [[Docker_Containerization_for_AI]] |
 | Kubernetes | Pod、Service、Deployment | [[Kubernetes_Core_Components_Deep_Dive]] |
-| 云平台 | AWS/Azure/GCP 基础 | [[12_Architecture_Infrastructure/Cloud_Providers/README]] |
+| 云平台 | AWS/Azure/GCP 基础 | [[架构基建/Cloud_Providers/README]] |
 | Git & CI/CD | GitHub Actions, GitLab CI | [[CI_CD_Pipeline_AI_2026]] |
 
 ### 阶段二：ML 平台组件（3-4个月）

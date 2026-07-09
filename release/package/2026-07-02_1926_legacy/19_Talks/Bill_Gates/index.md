@@ -7,9 +7,9 @@ updated: 2026-07-02
 
 # Bill Gates
 
-This page indexes the contents of `19_Talks/Bill_Gates`.
+This page indexes the contents of `业界观点/Bill_Gates`.
 
 ## Files
 
-- [[19_Talks/Bill_Gates/about|About]]
-- [[19_Talks/Bill_Gates/sayings|Sayings]]
+- [[业界观点/Bill_Gates/about|About]]
+- [[业界观点/Bill_Gates/sayings|Sayings]]

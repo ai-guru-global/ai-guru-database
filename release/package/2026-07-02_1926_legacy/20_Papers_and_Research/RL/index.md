@@ -7,9 +7,9 @@ updated: 2026-07-02
 
 # RL
 
-This page indexes the contents of `20_Papers_and_Research/RL`.
+This page indexes the contents of `论文精读/RL`.
 
 ## Files
 
-- [[20_Papers_and_Research/RL/AlphaGo_Deep_Dive|Alphago Deep Dive]]
-- [[20_Papers_and_Research/RL/DQN_Deep_Dive|DQN Deep Dive]]
+- [[论文精读/RL/AlphaGo_Deep_Dive|Alphago Deep Dive]]
+- [[论文精读/RL/DQN_Deep_Dive|DQN Deep Dive]]

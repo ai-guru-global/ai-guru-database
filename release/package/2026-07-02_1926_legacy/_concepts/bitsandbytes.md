@@ -10,7 +10,7 @@ relationships:
   - target: "_concepts/peft"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "bitsandbytes 是 HuggingFace 旗下的 GPU 量化优化库——提供 8-bit 优化器（Adam8bit）、4-bit 量化（NF4/FP4）和 LLM.int8() 推理。是 QLoRA 微调的底层引擎，让大模型训练和推理在消费级 GPU 上成为可能。"
 provenance:
   extracted: 0.20

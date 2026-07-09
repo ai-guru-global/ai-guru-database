@@ -121,7 +121,7 @@ for epoch in range(num_epochs):
   - 官方 PyTorch 语言建模教程：[Word Embeddings: Encoding Lexical Semantics](https://pytorch.org/tutorials/beginner/nlp/word_embeddings_tutorial.html)
   - 官方 TensorFlow Word2Vec 教程：[Vector Representations of Words](https://www.tensorflow.org/tutorials/text/word2vec)
   - 使用 [Gensim](https://radimrehurek.com/gensim/) 可用几行代码训练 Word2Vec / FastText / Doc2Vec。
-  - 本库进阶：[[05_NLP_LLMs/Sequence_Models/Sequence_Models]]、[[05_NLP_LLMs/LLM_Data_Engineering/LLM_Data_Engineering_Deep_Dive]]。
+  - 本库进阶：[[大模型/Sequence_Models/Sequence_Models]]、[[大模型/LLM_Data_Engineering/LLM_Data_Engineering_Deep_Dive]]。
 
 ---
 
@@ -129,5 +129,5 @@ for epoch in range(num_epochs):
 
 - 课程索引：[[90_Learn/courses/microsoft/microsoft_ai_for_beginners]]
 - 本库相关页面：
-  - [[05_NLP_LLMs/Sequence_Models/Sequence_Models]]
-  - [[05_NLP_LLMs/LLM_Data_Engineering/LLM_Data_Engineering_Deep_Dive]]
+  - [[大模型/Sequence_Models/Sequence_Models]]
+  - [[大模型/LLM_Data_Engineering/LLM_Data_Engineering_Deep_Dive]]

@@ -95,8 +95,8 @@ AI艺术创作（Midjourney、DALL-E 3）、图像编辑（Inpainting、超分�
 
 ## 来源
 
-- 04_Computer_Vision/Generative_Models/Generative_Models.md
+- 计算机视觉/Generative_Models/Generative_Models.md
 
 ## Related
 
-- [[20_Papers_and_Research/Vision/Diffusion_Models_Deep_Dive]] — Diffusion Models 深度解读 (从 DDPM 到 Stable Diffusion 再到 DiT) (共享: cv, diffusion, generative-models, stable-diffusion)
+- [[论文精读/Vision/Diffusion_Models_Deep_Dive]] — Diffusion Models 深度解读 (从 DDPM 到 Stable Diffusion 再到 DiT) (共享: cv, diffusion, generative-models, stable-diffusion)

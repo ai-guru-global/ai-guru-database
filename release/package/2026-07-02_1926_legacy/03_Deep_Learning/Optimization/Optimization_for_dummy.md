@@ -1122,12 +1122,12 @@ A100       40GB    Batch=128-256
 - [神经网络核心小白版](../Neural_Network_Core/Neural_Network_Core_for_dummy.md) - 理解前向和反向传播(必读!)
 
 **横向扩展**:
-- [监督学习小白版](../../02_Machine_Learning/Supervised_Learning/Supervised_Learning_for_dummy.md) - 理解过拟合/欠拟合
-- [线性代数小白版](../../01_Fundamentals/Linear_Algebra/Linear_Algebra_for_dummy.md) - 理解梯度(可选)
+- [监督学习小白版](../../机器学习/Supervised_Learning/Supervised_Learning_for_dummy.md) - 理解过拟合/欠拟合
+- [线性代数小白版](../../数学基础/Linear_Algebra/Linear_Algebra_for_dummy.md) - 理解梯度(可选)
 
 **进阶学习**:
-- [Transformer小白版](../../05_NLP_LLMs/README_for_dummy.md) - 看大模型怎么训练的
-- [模型部署](../../10_Deployment_Inference/README.md) - 训练完了怎么用
+- [Transformer小白版](../../大模型/README_for_dummy.md) - 看大模型怎么训练的
+- [模型部署](../../部署推理/README.md) - 训练完了怎么用
 
 ### 🎯 实战项目建议:
 
@@ -1231,7 +1231,7 @@ A100       40GB    Batch=128-256
 
 **下一步**: 
 - 👉 [原版文档](./Optimization.md) - 深入理解数学原理
-- 👉 [NLP小白版](../../05_NLP_LLMs/README_for_dummy.md) - 看看Transformer怎么训练
+- 👉 [NLP小白版](../../大模型/README_for_dummy.md) - 看看Transformer怎么训练
 - 👉 动手实战 - 用学到的技巧训练自己的模型!
 
 ---

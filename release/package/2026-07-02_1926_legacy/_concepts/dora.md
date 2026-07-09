@@ -10,8 +10,8 @@ relationships:
   - target: "_concepts/quantization"
     type: complements
 sources:
-  - 05_NLP_LLMs/Fine_tuning_Techniques/LoRA_QLoRA_SFT_RLHF_DPO_in_Detail.md
-  - 05_NLP_LLMs/Fine_tuning_Techniques/README.md
+  - 大模型/Fine_tuning_Techniques/LoRA_QLoRA_SFT_RLHF_DPO_in_Detail.md
+  - 大模型/Fine_tuning_Techniques/README.md
   - _concepts/lora-peft.md
 summary: "DoRA（Weight-Decomposed Low-Rank Adaptation）是 LoRA 的升级版。它把模型权重拆成‘方向’和‘大小’两部分，只微调方向部分，让低秩微调更稳定、更接近全量微调的效果。"
 provenance:
@@ -102,4 +102,4 @@ DoRA 解决的是“方向更新更稳定”的问题；RS-LoRA 解决的是“r
 - [[_concepts/rs-lora]] — RS-LoRA
 - [[_concepts/fine-tuning-techniques]] — 微调技术
 - [[_concepts/quantization]] — 量化
-- [[05_NLP_LLMs/Fine_tuning_Techniques/LoRA_QLoRA_SFT_RLHF_DPO_in_Detail]] — LoRA/QLoRA/SFT/RLHF/DPO 详解
+- [[大模型/Fine_tuning_Techniques/LoRA_QLoRA_SFT_RLHF_DPO_in_Detail]] — LoRA/QLoRA/SFT/RLHF/DPO 详解

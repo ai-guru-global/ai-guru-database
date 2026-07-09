@@ -52,7 +52,7 @@ tier: supporting
 
 ## 前置知识 (Prerequisites)
 
-- **AI 历史了解**: 推荐先阅读 [AI历史时间线](../00_AI_Introduction/AI_History_Timeline.md) 了解 1950-2026 AI 发展脉络
+- **AI 历史了解**: 推荐先阅读 [AI历史时间线](../AI入门/AI_History_Timeline.md) 了解 1950-2026 AI 发展脉络
 - **数学**: 高中微积分、基础矩阵运算
 - **编程**: Python 基础、NumPy 库基本操作
 - **无 AI 前序要求**: 本章是整个知识体系的起点
@@ -74,28 +74,28 @@ tier: supporting
 *Last updated: 2026-02-10*
 
 ## Related
-- [[01_Fundamentals/README_for_dummy|基础理论 - 新手导航]]
+- [[数学基础/README_for_dummy|基础理论 - 新手导航]]
 
-- [[01_Fundamentals/AI_Hardware/README]] — AI硬件与芯片 (AI Hardware) (共享: algorithms, basics, fundamentals, math)
-- [[01_Fundamentals/Fundamentals-in-nutshell]] — AI 基础速成指南 (共享: algorithms, basics, fundamentals, math)
-- [[01_Fundamentals/Java_Ecosystem_AI/Java_Ecosystem_AI_Overview]] — Java 生态与 AI：全景概览 (共享: algorithms, basics, fundamentals, math)
-- [[01_Fundamentals/Java_Ecosystem_AI/Spring_AI_Deep_Dive]] — Spring AI 深度解析 (共享: algorithms, basics, fundamentals, math)
-- [[01_Fundamentals/Java_Ecosystem_AI/Java_Ecosystem_AI_for_dummy]] — Java_Ecosystem_AI_for_dummy
-- [[01_Fundamentals/Data_Structures_Algorithms/Data_Structures_Algorithms_for_dummy]] — Data_Structures_Algorithms_for_dummy
-- [[01_Fundamentals/Data_Structures_Algorithms/Data_Structures_Algorithms]] — Data_Structures_Algorithms
-- [[01_Fundamentals/Distributed_Systems/Distributed_Systems_for_dummy]] — Distributed_Systems_for_dummy
-- [[01_Fundamentals/Distributed_Systems/Distributed_Systems]] — Distributed_Systems
-- [[01_Fundamentals/Probability_Statistics/Probability_Statistics_for_dummy]] — Probability_Statistics_for_dummy
-- [[01_Fundamentals/Probability_Statistics/Probability_Statistics]] — Probability_Statistics
-- [[01_Fundamentals/AI_Hardware/AI_Hardware_2026]] — AI_Hardware_2026
-- [[01_Fundamentals/Linear_Algebra/Linear_Algebra_for_dummy]] — Linear_Algebra_for_dummy
-- [[01_Fundamentals/Linear_Algebra/Linear_Algebra]] — Linear_Algebra
-- [[01_Fundamentals/README_for_dummy.md|README_for_dummy]]
+- [[数学基础/AI_Hardware/README]] — AI硬件与芯片 (AI Hardware) (共享: algorithms, basics, fundamentals, math)
+- [[数学基础/Fundamentals-in-nutshell]] — AI 基础速成指南 (共享: algorithms, basics, fundamentals, math)
+- [[数学基础/Java_Ecosystem_AI/Java_Ecosystem_AI_Overview]] — Java 生态与 AI：全景概览 (共享: algorithms, basics, fundamentals, math)
+- [[数学基础/Java_Ecosystem_AI/Spring_AI_Deep_Dive]] — Spring AI 深度解析 (共享: algorithms, basics, fundamentals, math)
+- [[数学基础/Java_Ecosystem_AI/Java_Ecosystem_AI_for_dummy]] — Java_Ecosystem_AI_for_dummy
+- [[数学基础/Data_Structures_Algorithms/Data_Structures_Algorithms_for_dummy]] — Data_Structures_Algorithms_for_dummy
+- [[数学基础/Data_Structures_Algorithms/Data_Structures_Algorithms]] — Data_Structures_Algorithms
+- [[数学基础/Distributed_Systems/Distributed_Systems_for_dummy]] — Distributed_Systems_for_dummy
+- [[数学基础/Distributed_Systems/Distributed_Systems]] — Distributed_Systems
+- [[数学基础/Probability_Statistics/Probability_Statistics_for_dummy]] — Probability_Statistics_for_dummy
+- [[数学基础/Probability_Statistics/Probability_Statistics]] — Probability_Statistics
+- [[数学基础/AI_Hardware/AI_Hardware_2026]] — AI_Hardware_2026
+- [[数学基础/Linear_Algebra/Linear_Algebra_for_dummy]] — Linear_Algebra_for_dummy
+- [[数学基础/Linear_Algebra/Linear_Algebra]] — Linear_Algebra
+- [[数学基础/README_for_dummy.md|README_for_dummy]]
 - [[_meta/AI_Basics_Gap_Analysis|AI 基础入门缺口分析]] — 入门内容覆盖度分析与补全追踪
 
 ## 相关页面
-- [[01_Fundamentals/Information_Theory/README|信息论基础 (Information Theory)]]
-- [[01_Fundamentals/Information_Theory/Information_Theory_Fundamentals|信息论基础: 从香农熵到 LLM 的交叉熵损失]]
+- [[数学基础/Information_Theory/README|信息论基础 (Information Theory)]]
+- [[数学基础/Information_Theory/Information_Theory_Fundamentals|信息论基础: 从香农熵到 LLM 的交叉熵损失]]
 
 - [[_concepts/data-structures-algorithms|Data Structures Algorithms]]
 

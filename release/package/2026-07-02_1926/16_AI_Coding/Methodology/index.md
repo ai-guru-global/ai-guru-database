@@ -8,10 +8,10 @@ sources: []
 
 # Methodology
 
-This page indexes the contents of `16_AI_Coding/Methodology`.
+This page indexes the contents of `AI编程/Methodology`.
 
 ## Files
 
-- [[16_AI_Coding/Methodology/Agentic_Coding_Methodology|Agentic Coding Methodology]]
-- [[16_AI_Coding/Methodology/Vibe_Coding_Methodology|Vibe Coding Methodology]]
-- [[16_AI_Coding/Methodology/Vibe_Coding_Production_Practices|Vibe Coding Production Practices]]
+- [[AI编程/Methodology/Agentic_Coding_Methodology|Agentic Coding Methodology]]
+- [[AI编程/Methodology/Vibe_Coding_Methodology|Vibe Coding Methodology]]
+- [[AI编程/Methodology/Vibe_Coding_Production_Practices|Vibe Coding Production Practices]]

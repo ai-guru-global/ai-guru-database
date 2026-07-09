@@ -122,12 +122,12 @@ flowchart LR
 
 入门看懂了，想要 spec 文件结构、MIG 切片、RDMA、与 DRA 的关系等完整内容：
 
-→ [[12_Architecture_Infrastructure/Hardware_Compute/CDI_Deep_Dive|CDI 容器设备接口标准深度解析]]
+→ [[架构基建/Hardware_Compute/CDI_Deep_Dive|CDI 容器设备接口标准深度解析]]
 
 ## Related
 
-- [[12_Architecture_Infrastructure/Hardware_Compute/CDI_Deep_Dive|CDI 深度解析]]
-- [[12_Architecture_Infrastructure/Architecture_Infrastructure_for_dummy|架构基础设施 - 小白版]]
-- [[12_Architecture_Infrastructure/README|架构与基础设施]]
-- [[01_Fundamentals/AI_Hardware/Chinese_AI_Chips_Deep_Dive|国产 AI 芯片（CDI 的最大受益者）]]
+- [[架构基建/Hardware_Compute/CDI_Deep_Dive|CDI 深度解析]]
+- [[架构基建/Architecture_Infrastructure_for_dummy|架构基础设施 - 小白版]]
+- [[架构基建/README|架构与基础设施]]
+- [[数学基础/AI_Hardware/Chinese_AI_Chips_Deep_Dive|国产 AI 芯片（CDI 的最大受益者）]]
 - [[_concepts/cdi|CDI 概念卡片]]

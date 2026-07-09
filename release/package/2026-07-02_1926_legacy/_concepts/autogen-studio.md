@@ -10,7 +10,7 @@ relationships:
   - target: "_concepts/agentops"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "Microsoft 开源的 AutoGen 可视化 IDE，通过拖拽界面构建和测试多 Agent 工作流，降低 AutoGen 的使用门槛。"
 provenance:
   extracted: 0.55

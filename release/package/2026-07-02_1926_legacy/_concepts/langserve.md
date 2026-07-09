@@ -10,7 +10,7 @@ relationships:
   - target: "_concepts/litellm"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "LangChain 官方的一键部署工具，将 LangChain/LangGraph 应用自动转化为生产级 REST API，支持流式输出、批处理和 Playground UI。"
 provenance:
   extracted: 0.55

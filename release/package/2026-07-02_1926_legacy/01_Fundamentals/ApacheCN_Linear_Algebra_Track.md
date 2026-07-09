@@ -41,11 +41,11 @@ aliases:
 
 ## 与本库关联
 
-- 本库线性代数核心页 → [[01_Fundamentals/Linear_Algebra/Linear_Algebra]]
-- 概率统计基础 → [[01_Fundamentals/Probability_Statistics/Probability_Statistics]]
-- 神经网络中的矩阵运算 → [[03_Deep_Learning/Neural_Network_Core/Neural_Network_Core]]
-- 优化理论（Hessian、正定） → [[03_Deep_Learning/Optimization/Optimization]]
-- PCA/SVD 在机器学习中的应用 → [[02_Machine_Learning/Unsupervised_Learning/Unsupervised_Learning]]
+- 本库线性代数核心页 → [[数学基础/Linear_Algebra/Linear_Algebra]]
+- 概率统计基础 → [[数学基础/Probability_Statistics/Probability_Statistics]]
+- 神经网络中的矩阵运算 → [[深度学习/Neural_Network_Core/Neural_Network_Core]]
+- 优化理论（Hessian、正定） → [[深度学习/Optimization/Optimization]]
+- PCA/SVD 在机器学习中的应用 → [[机器学习/Unsupervised_Learning/Unsupervised_Learning]]
 
 ## 参考
 

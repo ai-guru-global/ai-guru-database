@@ -9,11 +9,11 @@ relationships:
     type: related_to
   - target: "_concepts/multimodal-models"
     type: related_to
-  - target: "10_Deployment_Inference/Inference_Performance/Long_Context_Inference_2026"
+  - target: "部署推理/Inference_Performance/Long_Context_Inference_2026"
     type: optimized_by
 sources:
-  - 05_NLP_LLMs/Long_Context_world-models-jepa_2026.md
-  - 10_Deployment_Inference/Inference_Performance/Long_Context_Inference_2026.md
+  - 大模型/Long_Context_world-models-jepa_2026.md
+  - 部署推理/Inference_Performance/Long_Context_Inference_2026.md
 summary: 长上下文模型将LLM的上下文窗口从数千token扩展到百万级，通过稀疏注意力、KV Cache压缩、位置编码外推和分布式注意力（Ring Attention）等技术创新，实现整代码库分析、长篇文档理解和跨文档知识综合。
 provenance:
   extracted: 0.80
@@ -125,8 +125,8 @@ aliases:
 
 ## Related
 
-- [[20_Papers_and_Research/Architecture/Attention_Is_All_You_Need_Deep_Dive]] — Attention Is All You Need 深度解读 (共享: attention, nlp)
+- [[论文精读/Architecture/Attention_Is_All_You_Need_Deep_Dive]] — Attention Is All You Need 深度解读 (共享: attention, nlp)
 - [[_concepts/transformer-architecture]] — Transformer 架构 (共享: attention, nlp)
 - [[_synthesis/transformer-llm-architecture]] — Transformer 架构 × LLM 架构 (共享: attention, nlp)
 - [[_concepts/multi-head-latent-attention]] — Multi-head Latent Attention (MLA): DeepSeek 提出的 KV Cache 压缩架构，128K 上下文从 213GB 降至 7.6GB
-- [[10_Deployment_Inference/Inference_Performance/Long_Context_Inference_2026|长上下文推理 2026]]
+- [[部署推理/Inference_Performance/Long_Context_Inference_2026|长上下文推理 2026]]

@@ -1294,14 +1294,14 @@ if __name__ == "__main__":
 ## 9. 与其他主题的关联 (Connections)
 
 ### 前置知识
-- [模型训练](../../07_Model_Training/Model-Training-in-nutshell.md) — 训练过程中的验证集评估
+- [模型训练](../../模型训练/Model-Training-in-nutshell.md) — 训练过程中的验证集评估
 - [模型评估基础](../Model_Evaluation.md) — 离线评估指标与方法
 - [自动化评估](../Evaluation_Automation_2026.md) — CI/CD 中的自动化评估流程
 
 ### 进阶方向
-- [MLOps 流水线](../../11_MLOps_Pipeline/MLOps_Pipeline.md) — 模型发布与 CI/CD 集成
-- [AI 测试框架](../../09_Testing/README.md) — 线上测试与质量保证
-- [AI Ops 监控](../../13_AI_Ops/AI_Ops_2026.md) — 生产环境模型性能监控与告警
+- [MLOps 流水线](../../MLOps/MLOps_Pipeline.md) — 模型发布与 CI/CD 集成
+- [AI 测试框架](../../AI测试/README.md) — 线上测试与质量保证
+- [AI Ops 监控](../../AI运维/AI_Ops_2026.md) — 生产环境模型性能监控与告警
 
 ---
 
@@ -1334,10 +1334,10 @@ if __name__ == "__main__":
 
 ## Related
 
-- [[08_Model_Evaluation/Model_Evaluation.md|Model_Evaluation]]
-- [[08_Model_Evaluation/README.md|08_Model_Evaluation README]]
-- [[15_Agent_Production/Agent_Evaluation/Assessment/Evaluation_Workflow.md|Evaluation_Workflow]]
-- [[15_Agent_Production/Agent_Evaluation/Cloud_Agent_Evaluation/README.md|Cloud_Agent_Evaluation README]]
-- [[15_Agent_Production/Agent_Evaluation/Cloud_Agent_Evaluation_System_2026.md|Cloud_Agent_Evaluation_System_2026]]
+- [[模型评估/Model_Evaluation.md|Model_Evaluation]]
+- [[模型评估/README.md|模型评估 README]]
+- [[Agent/Agent_Evaluation/Assessment/Evaluation_Workflow.md|Evaluation_Workflow]]
+- [[Agent/Agent_Evaluation/Cloud_Agent_Evaluation/README.md|Cloud_Agent_Evaluation README]]
+- [[Agent/Agent_Evaluation/Cloud_Agent_Evaluation_System_2026.md|Cloud_Agent_Evaluation_System_2026]]
 
 - [[_synthesis/benchmark-evaluation|评测基准 × 评测方法论：从分数到可信评估]]

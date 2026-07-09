@@ -248,7 +248,7 @@ GRU 是 LSTM 的"减肥版"——少了一些零件,但大部分时候效果差�
 
 ### 🔗 相关内容
 
-- **前置知识**: [深度学习基础 (小白版)](../../03_Deep_Learning/README_for_dummy.md)
+- **前置知识**: [深度学习基础 (小白版)](../../深度学习/README_for_dummy.md)
 - **后续主题**: [Transformer 革命 (小白版)](../Transformer_Revolution/Transformer_Revolution_for_dummy.md)
 - **实际应用**: [提示词工程 (小白版)](../Prompt_Engineering/Prompt_Engineering_for_dummy.md)
 
@@ -283,8 +283,8 @@ GRU 是 LSTM 的"减肥版"——少了一些零件,但大部分时候效果差�
 
 ## Related
 
-- [[05_NLP_LLMs/Fine_tuning_Techniques/Axolotl_Deep_Dive.md|Axolotl_Deep_Dive]]
-- [[05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques.md|Fine_tuning_Techniques]]
-- [[05_NLP_LLMs/Fine_tuning_Techniques/Fine_tuning_Techniques_for_dummy.md|Fine_tuning_Techniques_for_dummy]]
-- [[05_NLP_LLMs/Fine_tuning_Techniques/Model_Merging_2026.md|Model_Merging_2026]]
-- [[05_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026.md|PEFT_2026]]
+- [[大模型/Fine_tuning_Techniques/Axolotl_Deep_Dive.md|Axolotl_Deep_Dive]]
+- [[大模型/Fine_tuning_Techniques/Fine_tuning_Techniques.md|Fine_tuning_Techniques]]
+- [[大模型/Fine_tuning_Techniques/Fine_tuning_Techniques_for_dummy.md|Fine_tuning_Techniques_for_dummy]]
+- [[大模型/Fine_tuning_Techniques/Model_Merging_2026.md|Model_Merging_2026]]
+- [[大模型/Fine_tuning_Techniques/PEFT_2026.md|PEFT_2026]]

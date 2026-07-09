@@ -12,8 +12,8 @@ relationships:
   - target: "_concepts/ab-testing-framework"
     type: includes
 sources:
-  - 11_MLOps_Pipeline/LLM_Production_Pipeline_2026.md
-  - 11_MLOps_Pipeline/README.md
+  - MLOps/LLM_Production_Pipeline_2026.md
+  - MLOps/README.md
 summary: "LLM 生产流水线是把大模型从实验环境交付到线上服务的完整工程链路，包括数据准备、训练/微调、评估、部署、监控、反馈闭环，确保模型可持续迭代且风险可控。"
 provenance:
   extracted: 0.75
@@ -83,4 +83,4 @@ LLM 生产流水线就像一条造车的总装线：从原材料到整车下线�
 - [[_concepts/ci-integrated-evaluation]] — CI 集成评估
 - [[_concepts/model-deployment]] — 模型部署
 - [[_concepts/ab-testing-framework]] — A/B 测试框架
-- [[11_MLOps_Pipeline/LLM_Production_Pipeline_2026]] — LLM 生产流水线 2026
+- [[MLOps/LLM_Production_Pipeline_2026]] — LLM 生产流水线 2026

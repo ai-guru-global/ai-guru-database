@@ -84,4 +84,4 @@ kubectl delete clusterrolebinding read-nodes-binding  # ⚠️ HIGH-RISK — 删
 
 - [[_concepts/kubernetes]] — Kubernetes 编排
 - [[_concepts/rbac]] — RBAC 基于角色的访问控制
-- [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack 安全架构
+- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 安全架构

@@ -186,8 +186,8 @@ aliases:
 - ✅ 初中英语水平(因为很多术语是英文)
 
 **如果你还学过这些会更轻松:**
-- [深度学习基础 (小白版)](../03_Deep_Learning/README_for_dummy.md) - 了解神经网络是什么
-- [机器学习基础 (小白版)](../02_Machine_Learning/README_for_dummy.md) - 知道"训练"、"模型"这些概念
+- [深度学习基础 (小白版)](../深度学习/README_for_dummy.md) - 了解神经网络是什么
+- [机器学习基础 (小白版)](../机器学习/README_for_dummy.md) - 知道"训练"、"模型"这些概念
 
 ---
 
@@ -251,8 +251,8 @@ aliases:
 ### 📚 进阶资源
 
 - [原版技术文档](./README.md) - 包含数学公式和代码
-- [03 深度学习](../03_Deep_Learning/README_for_dummy.md) - 理解神经网络基础
-- [09 部署与推理](../10_Deployment_Inference/README.md) - 学习如何部署 AI
+- [03 深度学习](../深度学习/README_for_dummy.md) - 理解神经网络基础
+- [09 部署与推理](../部署推理/README.md) - 学习如何部署 AI
 
 ### 🎓 实践建议
 
@@ -273,8 +273,8 @@ aliases:
 
 ## 学习路径导航
 
-**上一章**: [← 03 深度学习 (小白版)](../03_Deep_Learning/README_for_dummy.md)  
-**下一章**: [→ 05 计算机视觉 (小白版)](../04_Computer_Vision/README_for_dummy.md)
+**上一章**: [← 03 深度学习 (小白版)](../深度学习/README_for_dummy.md)  
+**下一章**: [→ 05 计算机视觉 (小白版)](../计算机视觉/README_for_dummy.md)
 
 **本章内容**:
 1. [序列模型 (小白版)](./Sequence_Models/Sequence_Models_for_dummy.md)
@@ -293,7 +293,7 @@ aliases:
 
 ## Related
 
-- [[05_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026]] — PEFT 2026 (参数高效微调) (共享: bert, gpt, llm, nlp, transformer)
-- [[05_NLP_LLMs/Fine_tuning_Techniques/README]] — 微调技术 (Fine-tuning Techniques) (共享: bert, gpt, llm, nlp, transformer)
-- [[05_NLP_LLMs/LLM_Architectures/LLM-Basics-in-nutshell]] — 大语言模型基础速成指南 (共享: bert, gpt, llm, nlp, transformer)
-- [[05_NLP_LLMs/Multimodal_Models/Multimodal_Architectures_2026]] — 多模态模型架构 2026：从 GPT-4V 到原生多模态 AGI (共享: bert, gpt, llm, nlp, transformer)
+- [[大模型/Fine_tuning_Techniques/PEFT_2026]] — PEFT 2026 (参数高效微调) (共享: bert, gpt, llm, nlp, transformer)
+- [[大模型/Fine_tuning_Techniques/README]] — 微调技术 (Fine-tuning Techniques) (共享: bert, gpt, llm, nlp, transformer)
+- [[大模型/LLM_Architectures/LLM-Basics-in-nutshell]] — 大语言模型基础速成指南 (共享: bert, gpt, llm, nlp, transformer)
+- [[大模型/Multimodal_Models/Multimodal_Architectures_2026]] — 多模态模型架构 2026：从 GPT-4V 到原生多模态 AGI (共享: bert, gpt, llm, nlp, transformer)

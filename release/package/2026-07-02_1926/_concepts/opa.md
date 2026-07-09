@@ -12,7 +12,7 @@ relationships:
   - target: "_concepts/falco"
     type: related_to
 sources:
-  - 17_Ethics_Safety/LLM_Security_Complete_Guide.md
+  - 伦理安全/LLM_Security_Complete_Guide.md
 summary: "OPA 是 CNCF Graduated 的开源策略引擎，使用 Rego 语言定义策略，可用于 K8s 准入控制、API 授权、微服务访问控制等场景，是策略即代码（Policy as Code）的代表工具。"
 provenance:
   extracted: 0.75
@@ -91,4 +91,4 @@ aliases:
 - [[_concepts/kyverno]] — Kyverno
 - [[_concepts/falco]] — Falco
 - [[_concepts/kubernetes]] — Kubernetes
-- [[17_Ethics_Safety/LLM_Security_Complete_Guide]] — LLM 安全完整指南
+- [[伦理安全/LLM_Security_Complete_Guide]] — LLM 安全完整指南

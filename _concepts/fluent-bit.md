@@ -78,4 +78,4 @@ data:
 - [[_concepts/loki|Loki]] — 日志聚合后端
 - [[_concepts/opentelemetry|OpenTelemetry]] — 统一可观测性
 - [[_concepts/kubernetes|Kubernetes]] — 容器编排
-- [[12_Architecture_Infrastructure/Kubernetes_Observability_Stack|Kubernetes 可观测性栈]]
+- [[架构基建/Kubernetes_Observability_Stack|Kubernetes 可观测性栈]]

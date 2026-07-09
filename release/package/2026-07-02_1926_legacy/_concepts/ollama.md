@@ -14,7 +14,7 @@ relationships:
   - target: "_concepts/model-serving"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "Ollama 是面向开发者的本地 LLM 运行工具，一行命令下载、运行、管理大语言模型，支持 GGUF 量化格式，提供 OpenAI 兼容 API。AI Stack 推理服务指南中列为备选推理方案。"
 provenance:
   extracted: 0.30
@@ -222,4 +222,4 @@ AI Stack 模型开发流程
 - [[_concepts/llama-cpp]] — llama.cpp 推理引擎
 - [[_concepts/model-serving]] — 模型服务
 - [[_concepts/a-speed]] — A-Speed 加速推理
-- [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析

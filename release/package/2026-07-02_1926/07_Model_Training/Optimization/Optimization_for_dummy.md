@@ -278,8 +278,8 @@ for epoch in range(num_epochs):
 
 ## 相关阅读
 
-- [[07_Model_Training/README]] — 模型训练全景
-- [[07_Model_Training/Model_Training_for_dummy]] — 模型训练入门版
-- [[07_Model_Training/Distributed_Training/Distributed_Training_for_dummy]] — 分布式训练入门
-- [[07_Model_Training/Optimization/Training_Optimization_2026]] — 2026 训练优化进阶
-- [[05_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026]] — 参数高效微调
+- [[模型训练/README]] — 模型训练全景
+- [[模型训练/Model_Training_for_dummy]] — 模型训练入门版
+- [[模型训练/Distributed_Training/Distributed_Training_for_dummy]] — 分布式训练入门
+- [[模型训练/Optimization/Training_Optimization_2026]] — 2026 训练优化进阶
+- [[大模型/Fine_tuning_Techniques/PEFT_2026]] — 参数高效微调

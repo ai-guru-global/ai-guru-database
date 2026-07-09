@@ -7,9 +7,9 @@ updated: 2026-07-02
 
 # Education
 
-This page indexes the contents of `18_AI_Applications_Industry/Education`.
+This page indexes the contents of `行业应用/Education`.
 
 ## Files
 
-- [[18_AI_Applications_Industry/Education/AI_Education_2026|AI Education 2026]]
-- [[18_AI_Applications_Industry/Education/AI_Education_Applications_2026|AI Education Applications 2026]]
+- [[行业应用/Education/AI_Education_2026|AI Education 2026]]
+- [[行业应用/Education/AI_Education_Applications_2026|AI Education Applications 2026]]

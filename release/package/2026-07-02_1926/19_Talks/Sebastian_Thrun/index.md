@@ -8,9 +8,9 @@ sources: []
 
 # Sebastian Thrun
 
-This page indexes the contents of `19_Talks/Sebastian_Thrun`.
+This page indexes the contents of `业界观点/Sebastian_Thrun`.
 
 ## Files
 
-- [[19_Talks/Sebastian_Thrun/about|About]]
-- [[19_Talks/Sebastian_Thrun/sayings|Sayings]]
+- [[业界观点/Sebastian_Thrun/about|About]]
+- [[业界观点/Sebastian_Thrun/sayings|Sayings]]

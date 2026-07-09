@@ -22,8 +22,8 @@ relationships:
   - target: "_concepts/incident-response"
     type: uses
 sources:
-  - 12_Architecture_Infrastructure/AI_SRE_Runbook.md
-  - 18_AI_Applications_Industry/AI_Production_Architecture_2026.md
+  - 架构基建/AI_SRE_Runbook.md
+  - 行业应用/AI_Production_Architecture_2026.md
 ---
 
 # AI SRE
@@ -74,26 +74,26 @@ sources:
 ## 推荐阅读
 
 ### 核心 Runbook 与架构
-- [[12_Architecture_Infrastructure/AI_SRE_Runbook|AI 系统 SRE Runbook]] — SLO/SLI、GPU 容量规划、事故响应、模型回滚、灾备与可观测性完整手册
-- [[18_AI_Applications_Industry/AI_Production_Architecture_2026|AI 生产架构 2026]] — 企业级 AI 生产部署的整体架构视角
-- [[18_AI_Applications_Industry/AI_Platform_Selection_2026|AI 平台选型 2026]] — 自建与云服务平台的选型参考
+- [[架构基建/AI_SRE_Runbook|AI 系统 SRE Runbook]] — SLO/SLI、GPU 容量规划、事故响应、模型回滚、灾备与可观测性完整手册
+- [[行业应用/AI_Production_Architecture_2026|AI 生产架构 2026]] — 企业级 AI 生产部署的整体架构视角
+- [[行业应用/AI_Platform_Selection_2026|AI 平台选型 2026]] — 自建与云服务平台的选型参考
 
 ### 各子系统生产部署
-- [[05_NLP_LLMs/LLM_Production_Deployment_Runbook|LLM 生产部署 Runbook]] — 大模型上线、推理优化与运维
-- [[15_Agent_Production/Agent_Production_Deployment_Runbook|Agent 生产部署 Runbook]] — Agent 系统的发布、监控与回滚
-- [[14_RAG_Systems/RAG_Production_Architecture_Deep_Dive|RAG 生产架构深度解析]] — RAG pipeline 的可靠性设计
-- [[04_Computer_Vision/CV_Deployment_and_Inference_2026|CV 部署与推理 2026]] — 视觉模型生产化要点
+- [[大模型/LLM_Production_Deployment_Runbook|LLM 生产部署 Runbook]] — 大模型上线、推理优化与运维
+- [[Agent/Agent_Production_Deployment_Runbook|Agent 生产部署 Runbook]] — Agent 系统的发布、监控与回滚
+- [[RAG系统/RAG_Production_Architecture_Deep_Dive|RAG 生产架构深度解析]] — RAG pipeline 的可靠性设计
+- [[计算机视觉/CV_Deployment_and_Inference_2026|CV 部署与推理 2026]] — 视觉模型生产化要点
 
 ### 安全、护栏与成本
-- [[11_MLOps_Pipeline/LLM_Guardrails_and_Safety_Ops_2026|LLM 护栏与安全运维 2026]] — 输入输出安全与护栏运营
-- [[16_AI_Coding/AI_Code_Security_Audit_Runbook|AI 代码安全审计 Runbook]] — AI 应用代码层安全审计
-- [[07_Model_Training/Training_Cost_Optimization_and_FinOps_2026|训练成本优化与 FinOps 2026]] — 成本治理与 FinOps 实践
+- [[MLOps/LLM_Guardrails_and_Safety_Ops_2026|LLM 护栏与安全运维 2026]] — 输入输出安全与护栏运营
+- [[AI编程/AI_Code_Security_Audit_Runbook|AI 代码安全审计 Runbook]] — AI 应用代码层安全审计
+- [[模型训练/Training_Cost_Optimization_and_FinOps_2026|训练成本优化与 FinOps 2026]] — 成本治理与 FinOps 实践
 
 ### 网关、评估与前沿技术
 - [[93_Templates/LLM_Gateway_Deep_Dive|LLM Gateway 深度解析]] — 统一入口、路由、限流与可观测
-- [[08_Model_Evaluation/RAG_Evaluation_Deep_Dive|RAG 评估深度解析]] — RAG 系统质量评估
-- [[09_Testing/Agent_Evaluation_Deep_Dive|Agent 评估深度解析]] — Agent 系统稳定性评估
-- [[05_NLP_LLMs/Test_Time_Compute_Scaling_2026|测试时计算缩放 2026]] — 推理阶段资源与质量权衡
+- [[模型评估/RAG_Evaluation_Deep_Dive|RAG 评估深度解析]] — RAG 系统质量评估
+- [[AI测试/Agent_Evaluation_Deep_Dive|Agent 评估深度解析]] — Agent 系统稳定性评估
+- [[大模型/Test_Time_Compute_Scaling_2026|测试时计算缩放 2026]] — 推理阶段资源与质量权衡
 
 ### 相关概念
 - [[_concepts/sre|SRE]] — 传统站点可靠性工程

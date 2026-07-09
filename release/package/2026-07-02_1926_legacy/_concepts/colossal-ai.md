@@ -12,7 +12,7 @@ relationships:
   - target: "_concepts/fsdp"
     type: related_to
 sources:
-  - 07_Model_Training/Distributed_Training/Colossal_AI_Deep_Dive.md
+  - 模型训练/Distributed_Training/Colossal_AI_Deep_Dive.md
 summary: "Colossal-AI 是潞晨科技开源的统一分布式 AI 系统，整合数据并行、张量并行、流水线并行、序列并行和 ZeRO 等技术，目标是降低大模型训练、微调和推理成本。"
 provenance:
   extracted: 0.75
@@ -89,7 +89,7 @@ aliases:
 
 ## Related
 
-- [[07_Model_Training/Distributed_Training/Colossal_AI_Deep_Dive]] — Colossal-AI 深度解析
+- [[模型训练/Distributed_Training/Colossal_AI_Deep_Dive]] — Colossal-AI 深度解析
 - [[_concepts/distributed-training]] — 分布式训练
 - [[_concepts/deepspeed]] — DeepSpeed
 - [[_concepts/megatron-lm]] — Megatron-LM

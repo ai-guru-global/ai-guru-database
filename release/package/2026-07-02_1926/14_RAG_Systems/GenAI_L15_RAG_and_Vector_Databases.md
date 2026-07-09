@@ -450,17 +450,17 @@ RAG和向量数据库可以应用于多种场景：
 ## 扩展阅读
 
 - [[90_Learn/courses/microsoft/microsoft_genai_for_beginners]] - 课程总览
-- [[14_RAG_Systems/RAG-in-nutshell]] - RAG核心概念
-- [[14_RAG_Systems/Vector_Database_for_dummy]] - 向量数据库入门
-- [[14_RAG_Systems/RAG_Frameworks/LlamaIndex_Deep_Dive]] - LlamaIndex框架
-- [[14_RAG_Systems/Vector_Databases/Chroma_Deep_Dive]] - Chroma向量数据库
-- [[11_MLOps_Pipeline/GenAI_L14_GenAI_Application_Lifecycle]] - AI应用生命周期
+- [[RAG系统/RAG-in-nutshell]] - RAG核心概念
+- [[RAG系统/Vector_Database_for_dummy]] - 向量数据库入门
+- [[RAG系统/RAG_Frameworks/LlamaIndex_Deep_Dive]] - LlamaIndex框架
+- [[RAG系统/Vector_Databases/Chroma_Deep_Dive]] - Chroma向量数据库
+- [[MLOps/GenAI_L14_GenAI_Application_Lifecycle]] - AI应用生命周期
 
 ## 课程导航
 
 | 上一课 | 下一课 |
 |--------|--------|
-| [[11_MLOps_Pipeline/GenAI_L14_GenAI_Application_Lifecycle|L14 GenAI应用生命周期]] | [[05_NLP_LLMs/GenAI_L16_Open_Source_Models_and_Hugging_Face|L16 开源模型与Hugging Face]] |
+| [[MLOps/GenAI_L14_GenAI_Application_Lifecycle|L14 GenAI应用生命周期]] | [[大模型/GenAI_L16_Open_Source_Models_and_Hugging_Face|L16 开源模型与Hugging Face]] |
 
 ## Related
 

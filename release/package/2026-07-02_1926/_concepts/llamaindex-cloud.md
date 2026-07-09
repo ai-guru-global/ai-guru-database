@@ -10,7 +10,7 @@ relationships:
   - target: "_concepts/chroma"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "LlamaIndex 官方的云端 RAG 平台，提供托管式文档索引、检索增强和评测服务，免去自建向量数据库和索引 Pipeline 的运维负担。"
 provenance:
   extracted: 0.50

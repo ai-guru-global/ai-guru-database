@@ -10,7 +10,7 @@ relationships:
   - target: "_concepts/optimization-regularization"
     type: related_to
 sources:
-  - 02_Machine_Learning/Bayesian_Methods
+  - 机器学习/Bayesian_Methods
 summary: "贝叶斯方法将参数视为随机变量，通过先验+似然=后验的框架量化不确定性。核心工具包括MCMC采样、变分推断、贝叶斯神经网络和贝叶斯优化。"
 provenance:
   extracted: 0.45
@@ -159,7 +159,7 @@ q^*(\theta) = \arg\min_{q \in \mathcal{Q}} D_{KL}(q(\theta) \| P(\theta|\mathcal
 
 ## Related
 
-- [[02_Machine_Learning/Bayesian_Methods/README]] — 贝叶斯方法深度解析
+- [[机器学习/Bayesian_Methods/README]] — 贝叶斯方法深度解析
 - [[_concepts/probability-statistics]] — 概率统计基础
 - [[_concepts/information-theory]] — 信息论（KL 散度与变分推断）
 - [[_concepts/optimization-regularization]] — 优化与正则化（贝叶斯视角下的正则化）

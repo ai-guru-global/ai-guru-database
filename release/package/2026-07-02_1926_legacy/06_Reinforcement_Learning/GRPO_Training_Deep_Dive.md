@@ -560,11 +560,11 @@ Checkpoint 选择不要只看训练 reward，要选 **KL 稳定、评测集表�
 
 ## Related
 
-- [[06_Reinforcement_Learning/RLHF_DPO_GRPO_Deep_Dive|RLHF / DPO / GRPO 深度解读]] — 三种对齐范式的全景对比
-- [[06_Reinforcement_Learning/Deep_RL/PPO_Deep_Dive|PPO 深度解读]] — GRPO 继承的基础算法
-- [[06_Reinforcement_Learning/RL-in-nutshell|强化学习速览]] — 从 MDP 到 GRPO 的全栈路线
-- [[07_Model_Training/README|模型训练]] — SFT、分布式训练与 FinOps 的工程实践
-- [[08_Model_Evaluation/README|模型评估]] — 推理模型与对齐模型的评估方法
+- [[强化学习/RLHF_DPO_GRPO_Deep_Dive|RLHF / DPO / GRPO 深度解读]] — 三种对齐范式的全景对比
+- [[强化学习/Deep_RL/PPO_Deep_Dive|PPO 深度解读]] — GRPO 继承的基础算法
+- [[强化学习/RL-in-nutshell|强化学习速览]] — 从 MDP 到 GRPO 的全栈路线
+- [[模型训练/README|模型训练]] — SFT、分布式训练与 FinOps 的工程实践
+- [[模型评估/README|模型评估]] — 推理模型与对齐模型的评估方法
 
 ---
 

@@ -117,10 +117,10 @@ sequenceDiagram
 
 ## Related
 
-- [[15_Agent_Production/Agent_Frameworks/README]] — 框架对这些模式的支持程度
-- [[15_Agent_Production/Agent_Workflow/Workflow-in-nutshell]] — 基础工作流概念
-- [[06_Reinforcement_Learning/AI_Agents/Agent_State_Management]] — 如何在复杂模式中保持状态一致性
-- [[15_Agent_Production/Agent_Evaluation/Assessment/Production_Assessment]] — 针对复杂流的评估方法
+- [[Agent/Agent_Frameworks/README]] — 框架对这些模式的支持程度
+- [[Agent/Agent_Workflow/Workflow-in-nutshell]] — 基础工作流概念
+- [[强化学习/AI_Agents/Agent_State_Management]] — 如何在复杂模式中保持状态一致性
+- [[Agent/Agent_Evaluation/Assessment/Production_Assessment]] — 针对复杂流的评估方法
 
 ---
 

@@ -6,7 +6,7 @@ relationships:
   - target: "_concepts/ai-stack"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "Anaconda 的轻量级发行版，仅包含 conda 包管理器和 Python，按需安装 AI/ML 依赖，是 AI 开发环境的标准配置工具。"
 provenance:
   extracted: 0.60

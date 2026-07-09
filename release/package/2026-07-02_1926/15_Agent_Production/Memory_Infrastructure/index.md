@@ -8,11 +8,11 @@ sources: []
 
 # Memory Infrastructure
 
-This page indexes the contents of `15_Agent_Production/Memory_Infrastructure`.
+This page indexes the contents of `Agent/Memory_Infrastructure`.
 
 ## Files
 
-- [[15_Agent_Production/Memory_Infrastructure/Agent_Memory_Systems_2026|Agent Memory Systems 2026]]
-- [[15_Agent_Production/Memory_Infrastructure/Agent_Memory_Techniques|Agent Memory Techniques]]
-- [[15_Agent_Production/Memory_Infrastructure/RAG_Memory_Infrastructure_Tools|RAG Memory Infrastructure Tools]]
-- [[15_Agent_Production/Memory_Infrastructure/README|README]]
+- [[Agent/Memory_Infrastructure/Agent_Memory_Systems_2026|Agent Memory Systems 2026]]
+- [[Agent/Memory_Infrastructure/Agent_Memory_Techniques|Agent Memory Techniques]]
+- [[Agent/Memory_Infrastructure/RAG_Memory_Infrastructure_Tools|RAG Memory Infrastructure Tools]]
+- [[Agent/Memory_Infrastructure/README|README]]

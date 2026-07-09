@@ -72,6 +72,6 @@ tier: supporting
 
 - [[_concepts/chaos-engineering|Chaos Engineering]]
 - [[_concepts/resilience|Resilience]]
-- [[13_AI_Ops/Incident_Response/AI_Incident_Response_Framework|AI 事故响应框架]]
+- [[AI运维/Incident_Response/AI_Incident_Response_Framework|AI 事故响应框架]]
 
-- [[13_AI_Ops/README|AI 运维与可观测性 (AI Ops)]]
+- [[AI运维/README|AI 运维与可观测性 (AI Ops)]]

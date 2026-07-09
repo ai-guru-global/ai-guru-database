@@ -587,7 +587,7 @@ graph LR
 | ArXiv | 2.5% | ~35B |
 | Stack Exchange | 2.0% | ~28B |
 
-> **LLaMA 1 的关键洞察**: 在 Chinchilla 定律的基础上，Meta 选择 **过度训练** 小模型（更多 tokens），而非训练更大模型。这一策略后来被所有主流项目采纳。详见 [Scaling Laws and Training Dynamics](07_Model_Training/Optimization/Scaling_Laws_and_Training_Dynamics.md)。
+> **LLaMA 1 的关键洞察**: 在 Chinchilla 定律的基础上，Meta 选择 **过度训练** 小模型（更多 tokens），而非训练更大模型。这一策略后来被所有主流项目采纳。详见 [Scaling Laws and Training Dynamics](模型训练/Optimization/Scaling_Laws_and_Training_Dynamics.md)。
 
 #### LLaMA 3 (15T tokens)
 
@@ -1035,7 +1035,7 @@ LLaMA 1 (2023) 的关键发现：
 | **LLaMA 7B** | 7B | 1T | > GPT-3 13B |
 | **LLaMA 13B** | 13B | 1T | > GPT-3 20B (多数基准) |
 
-**含义**: 数据质量和训练量可以 **补偿模型规模**。一个小模型如果喂足够多的高质量数据，可以超越更大的模型。这与 [Scaling Laws and Training Dynamics](07_Model_Training/Optimization/Scaling_Laws_and_Training_Dynamics.md) 中讨论的 Chinchilla 定律密切相关。
+**含义**: 数据质量和训练量可以 **补偿模型规模**。一个小模型如果喂足够多的高质量数据，可以超越更大的模型。这与 [Scaling Laws and Training Dynamics](模型训练/Optimization/Scaling_Laws_and_Training_Dynamics.md) 中讨论的 Chinchilla 定律密切相关。
 
 ### 5.2 Phi 系列: "Textbook-Quality" 数据
 
@@ -1250,7 +1250,7 @@ Qwen 系列在多语言方面的实践是业界标杆：
 Qwen3 的多语言策略：
 
 1. **大规模原生数据采集**: 从 Web 中系统采集 119 种语言的原生数据
-2. **Tokenizer 优化**: 使用多语言友好的 Tokenizer，低资源语言的 tokenization 效率更高（详见 [Tokenizer Design 2026](07_Model_Training/Data/Tokenizer_Design_2026.md)）
+2. **Tokenizer 优化**: 使用多语言友好的 Tokenizer，低资源语言的 tokenization 效率更高（详见 [Tokenizer Design 2026](模型训练/Data/Tokenizer_Design_2026.md)）
 3. **方言支持**: 首次大规模支持方言（如粤语、闽南语等）
 4. **跨语言对齐**: 确保不同语言的模型能力相对均衡
 
@@ -1969,10 +1969,10 @@ def evaluate_quality_classifier(
 
 ### 项目内文档
 
-- [Tokenizer Design 2026](07_Model_Training/Data/Tokenizer_Design_2026.md) — Tokenizer 设计对多语言数据效率的影响，BPE/SentencePiece/Unigram 对比
-- [Scaling Laws and Training Dynamics](07_Model_Training/Optimization/Scaling_Laws_and_Training_Dynamics.md) — Chinchilla 定律、数据规模与模型规模的最优比例
-- [Distributed Training 2026](07_Model_Training/Distributed_Training/Distributed_Training_2026.md) — FSDP/DeepSpeed/Megatron 分布式训练，数据加载与并行策略
-- [LLaMA Deep Dive](20_Papers_and_Research/Architecture/LLaMA_Deep_Dive.md) — LLaMA 系列论文深度解读，数据配比细节分析
+- [Tokenizer Design 2026](模型训练/Data/Tokenizer_Design_2026.md) — Tokenizer 设计对多语言数据效率的影响，BPE/SentencePiece/Unigram 对比
+- [Scaling Laws and Training Dynamics](模型训练/Optimization/Scaling_Laws_and_Training_Dynamics.md) — Chinchilla 定律、数据规模与模型规模的最优比例
+- [Distributed Training 2026](模型训练/Distributed_Training/Distributed_Training_2026.md) — FSDP/DeepSpeed/Megatron 分布式训练，数据加载与并行策略
+- [LLaMA Deep Dive](论文精读/Architecture/LLaMA_Deep_Dive.md) — LLaMA 系列论文深度解读，数据配比细节分析
 
 ### 关键论文与资源
 

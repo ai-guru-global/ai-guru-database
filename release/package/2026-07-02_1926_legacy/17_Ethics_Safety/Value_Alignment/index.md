@@ -7,9 +7,9 @@ updated: 2026-07-02
 
 # Value Alignment
 
-This page indexes the contents of `17_Ethics_Safety/Value_Alignment`.
+This page indexes the contents of `伦理安全/Value_Alignment`.
 
 ## Files
 
-- [[17_Ethics_Safety/Value_Alignment/Value_Alignment|Value Alignment]]
-- [[17_Ethics_Safety/Value_Alignment/Value_Alignment_for_dummy|Value Alignment For Dummy]]
+- [[伦理安全/Value_Alignment/Value_Alignment|Value Alignment]]
+- [[伦理安全/Value_Alignment/Value_Alignment_for_dummy|Value Alignment For Dummy]]

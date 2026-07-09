@@ -74,5 +74,5 @@ submitted -> working -> completed/failed
 2. **专家委托**: 通用 Agent 将专业任务委托给领域专家 Agent
 3. **工作流编排**: 多个 Agent 协作完成复杂业务流程
 
-> **关联**: -> [[06_Reinforcement_Learning/AI_Agents/MCP_Implementation_Guide|MCP 实现指南]] | [[15_Agent_Production/README|Agent 生产]] | [[12_Architecture_Infrastructure/AI_Gateway/index|AI 网关]]
+> **关联**: -> [[强化学习/AI_Agents/MCP_Implementation_Guide|MCP 实现指南]] | [[Agent/README|Agent 生产]] | [[架构基建/AI_Gateway/index|AI 网关]]
 

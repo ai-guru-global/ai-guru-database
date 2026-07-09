@@ -339,13 +339,13 @@ AI应用程序并不完美，因此难免会犯错。在设计你的应用程序
 ## 扩展阅读
 
 - [[90_Learn/courses/microsoft/microsoft_genai_for_beginners]] - 课程总览
-- [[15_Agent_Production/Agentic_Design_Patterns_AndrewNg]] - AI产品设计模式
-- [[17_Ethics_Safety/Ethics_Safety-in-nutshell]] - AI伦理与安全
-- [[15_Agent_Production/GenAI_L17_AI_Agents]] - AI代理设计
-- [[17_Ethics_Safety/GenAI_L13_Securing_AI_Applications]] - AI应用安全
+- [[Agent/Agentic_Design_Patterns_AndrewNg]] - AI产品设计模式
+- [[伦理安全/Ethics_Safety-in-nutshell]] - AI伦理与安全
+- [[Agent/GenAI_L17_AI_Agents]] - AI代理设计
+- [[伦理安全/GenAI_L13_Securing_AI_Applications]] - AI应用安全
 
 ## 课程导航
 
 | 上一课 | 下一课 |
 |--------|--------|
-| [[15_Agent_Production/GenAI_L11_Integrating_with_Function_Calling|L11 函数调用]] | [[17_Ethics_Safety/GenAI_L13_Securing_AI_Applications|L13 保障AI应用安全]] |
+| [[Agent/GenAI_L11_Integrating_with_Function_Calling|L11 函数调用]] | [[伦理安全/GenAI_L13_Securing_AI_Applications|L13 保障AI应用安全]] |

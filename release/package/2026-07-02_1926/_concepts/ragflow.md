@@ -10,7 +10,7 @@ relationships:
   - target: "_concepts/reranker"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "RAGFlow 是 InfiniFlow 开源的 RAG 引擎，以深度文档理解为核心——支持复杂 PDF 表格/图片/公式解析，提供可视化知识库管理，是企业级 RAG 的专精方案。"
 provenance:
   extracted: 0.20

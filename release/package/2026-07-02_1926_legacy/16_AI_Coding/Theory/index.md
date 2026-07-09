@@ -7,11 +7,11 @@ updated: 2026-07-02
 
 # Theory
 
-This page indexes the contents of `16_AI_Coding/Theory`.
+This page indexes the contents of `AI编程/Theory`.
 
 ## Files
 
-- [[16_AI_Coding/Theory/AI_Coding_Theory|AI Coding Theory]]
-- [[16_AI_Coding/Theory/Claude_Agent_Architecture|Claude Agent Architecture]]
+- [[AI编程/Theory/AI_Coding_Theory|AI Coding Theory]]
+- [[AI编程/Theory/Claude_Agent_Architecture|Claude Agent Architecture]]
 - Claude Cost Optimization 2
-- [[16_AI_Coding/Theory/Claude_Cost_Optimization|Claude Cost Optimization]]
+- [[AI编程/Theory/Claude_Cost_Optimization|Claude Cost Optimization]]

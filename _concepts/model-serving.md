@@ -15,12 +15,12 @@ relationships:
     type: uses
 sources:
   - 09_model-deployment_Inference/Deployment_Inference_2026.md
-  - 10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive.md
-  - 10_Deployment_Inference/Inference_Engines/SGLang_Deep_Dive.md
-  - 10_Deployment_Inference/Inference_Engines/TensorRT_LLM_Deep_Dive.md
-  - 10_Deployment_Inference/Inference_Engines/BentoML_Deep_Dive.md
-  - 10_Deployment_Inference/Inference_Engines/Ollama_Deep_Dive.md
-  - 10_Deployment_Inference/llm-architectures_cpp_Deep_Dive.md
+  - 部署推理/Inference_Engines/vLLM_Deep_Dive.md
+  - 部署推理/Inference_Engines/SGLang_Deep_Dive.md
+  - 部署推理/Inference_Engines/TensorRT_LLM_Deep_Dive.md
+  - 部署推理/Inference_Engines/BentoML_Deep_Dive.md
+  - 部署推理/Inference_Engines/Ollama_Deep_Dive.md
+  - 部署推理/llm-architectures_cpp_Deep_Dive.md
 summary: 模型服务框架是连接AI模型与业务应用的桥梁。2026年GPU推理三强鼎立：vLLM以PagedAttention实现高吞吐、TensorRT-LLM提供NVIDIA极致低延迟优化、SGLang擅长结构化生成。CPU/本地场景有Ollama（易用）和llama.cpp（极致量化）。BentoML提供统一的模型打包部署框架。
 provenance:
   extracted: 0.85
@@ -96,10 +96,10 @@ SGLang的RadixAttention用Radix Tree缓存和复用KV Cache前缀，对多轮对
 ## Related
 
 - [[_synthesis/serving-deployment]] — 模型服务 × 模型部署 (共享: serving, sglang, tensorrt, vllm)
-- [[10_Deployment_Inference/Deployment_Inference]] — 模型部署与推理加速 (Deployment & Inference) (共享: serving, vllm)
-- [[10_Deployment_Inference/Deployment_Inference_2026]] — 部署推理 2026 趋势 (共享: serving, vllm)
-- [[10_Deployment_Inference/Deployment_Inference_for_dummy]] — 模型部署与推理加速 - 小白版 (共享: serving, vllm)
-- [[12_Architecture_Infrastructure/Alibaba_Cloud_AI_Stack_Deep_Dive|阿里云 AI Stack]] — 专有云容器化推理服务部署
+- [[部署推理/Deployment_Inference]] — 模型部署与推理加速 (Deployment & Inference) (共享: serving, vllm)
+- [[部署推理/Deployment_Inference_2026]] — 部署推理 2026 趋势 (共享: serving, vllm)
+- [[部署推理/Deployment_Inference_for_dummy]] — 模型部署与推理加速 - 小白版 (共享: serving, vllm)
+- [[架构基建/Alibaba_Cloud_AI_Stack_Deep_Dive|阿里云 AI Stack]] — 专有云容器化推理服务部署
 - [[_concepts/sglang]] — SGLang
 - [[_concepts/tensorrt-llm]] — TensorRT-LLM
 - [[_concepts/dynamic-batch-scheduling]] — 动态批调度

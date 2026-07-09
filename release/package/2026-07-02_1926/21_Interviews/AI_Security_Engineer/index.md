@@ -8,9 +8,9 @@ sources: []
 
 # AI Security Engineer
 
-This page indexes the contents of `21_Interviews/AI_Security_Engineer`.
+This page indexes the contents of `面试岗位/AI_Security_Engineer`.
 
 ## Files
 
 - AI Security Engineer 2
-- [[21_Interviews/AI_Security_Engineer/AI_Security_Engineer|AI Security Engineer]]
+- [[面试岗位/AI_Security_Engineer/AI_Security_Engineer|AI Security Engineer]]

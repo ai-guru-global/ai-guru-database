@@ -8,7 +8,7 @@ relationships:
   - target: "_concepts/onnx"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "Triton Inference Server 是 NVIDIA 开源的模型推理服务——支持多框架后端（TensorRT、ONNX、PyTorch、TF），提供动态批处理、模型并发、模型管理和 gRPC/HTTP API。是企业级 AI 推理的生产标准。"
 provenance:
   extracted: 0.20

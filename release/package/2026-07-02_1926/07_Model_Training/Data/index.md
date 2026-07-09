@@ -8,12 +8,12 @@ sources: []
 
 # Data
 
-This page indexes the contents of `07_Model_Training/Data`.
+This page indexes the contents of `模型训练/Data`.
 
 ## Files
 
-- [[07_Model_Training/Data/Data_Augmentation|Data Augmentation]]
+- [[模型训练/Data/Data_Augmentation|Data Augmentation]]
 - Data Curation And Mixture 2026 2
-- [[07_Model_Training/Data/Data_Curation_and_Mixture_2026|Data Curation And Mixture 2026]]
+- [[模型训练/Data/Data_Curation_and_Mixture_2026|Data Curation And Mixture 2026]]
 - Tokenizer Design 2026 2
-- [[07_Model_Training/Data/Tokenizer_Design_2026|Tokenizer Design 2026]]
+- [[模型训练/Data/Tokenizer_Design_2026|Tokenizer Design 2026]]

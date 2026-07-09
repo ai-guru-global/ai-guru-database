@@ -182,6 +182,6 @@ reloaded = datasets.load_from_disk("./my_arrow_dataset")
 ---
 
 ## 相关阅读
-- [[14_RAG_Systems/Advanced_RAG/Data_Ingestion_Pipeline]]
-- [[14_RAG_Systems/Vector_Database_for_dummy]]
-- [[07_Model_Training/Data/Tokenizer_Design_2026]]
+- [[RAG系统/Advanced_RAG/Data_Ingestion_Pipeline]]
+- [[RAG系统/Vector_Database_for_dummy]]
+- [[模型训练/Data/Tokenizer_Design_2026]]

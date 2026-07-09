@@ -444,14 +444,14 @@ class DiffusionUNet(nn.Module):
 
 ## Related
 
-- [[20_Papers_and_Research/Vision/Diffusion_Models_Deep_Dive|Diffusion Models 深度解读]] — U-Net 在生成模型中的角色
-- [[20_Papers_and_Research/Vision/AlexNet_Deep_Dive|AlexNet 深度解读]] — CNN 在视觉中的起点
-- [[20_Papers_and_Research/Vision/ResNet_Deep_Dive|ResNet 深度解读]] — 残差连接: 另一种跳跃连接
-- [[04_Computer_Vision/Segmentation|分割]] — 图像分割全景
-- [[04_Computer_Vision/Generative_Models|生成模型]] — 从 GAN 到 Diffusion
+- [[论文精读/Vision/Diffusion_Models_Deep_Dive|Diffusion Models 深度解读]] — U-Net 在生成模型中的角色
+- [[论文精读/Vision/AlexNet_Deep_Dive|AlexNet 深度解读]] — CNN 在视觉中的起点
+- [[论文精读/Vision/ResNet_Deep_Dive|ResNet 深度解读]] — 残差连接: 另一种跳跃连接
+- [[计算机视觉/Segmentation|分割]] — 图像分割全景
+- [[计算机视觉/Generative_Models|生成模型]] — 从 GAN 到 Diffusion
 
 ---
 
 *Last updated: 2026-06-04*
 
-- [[20_Papers_and_Research/README|22 经典与必读 AI 论文清单 (Essential AI Papers)]]
+- [[论文精读/README|22 经典与必读 AI 论文清单 (Essential AI Papers)]]

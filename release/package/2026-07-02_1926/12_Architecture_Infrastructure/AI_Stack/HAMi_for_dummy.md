@@ -184,15 +184,15 @@ kubectl port-forward service/my-hami-webui 3000:3000 -n kube-system
 1. Pod 一直 Pending → 检查节点是否打了 `gpu=on` 标签，调度器是否 Running。
 2. 容器里看到整张卡显存 → 检查是否使用了 `hami-scheduler`。
 3. 程序 OOM → 检查 `nvidia.com/gpumem` 设置是否足够，是否启用了显存超卖。
-4. 更多排错 → 参见 [[13_AI_Ops/SRE_Reliability/HAMi_Troubleshooting_Guide]]。
+4. 更多排错 → 参见 [[AI运维/SRE_Reliability/HAMi_Troubleshooting_Guide]]。
 
 ---
 
 ## 8. 进阶学习路径
 
-1. 想深入原理 → [[12_Architecture_Infrastructure/AI_Stack/HAMi_Deep_Dive]]
-2. 想部署运维 → [[12_Architecture_Infrastructure/AI_Stack/HAMi_Operation_Guide]]
-3. 想排查问题 → [[13_AI_Ops/SRE_Reliability/HAMi_Troubleshooting_Guide]]
+1. 想深入原理 → [[架构基建/AI_Stack/HAMi_Deep_Dive]]
+2. 想部署运维 → [[架构基建/AI_Stack/HAMi_Operation_Guide]]
+3. 想排查问题 → [[AI运维/SRE_Reliability/HAMi_Troubleshooting_Guide]]
 4. 想快速查阅 → [[_concepts/hami]]
 
 ---
@@ -201,6 +201,6 @@ kubectl port-forward service/my-hami-webui 3000:3000 -n kube-system
 
 - [[_concepts/hami]] — HAMi 概念卡片
 - [[_concepts/gpu-virtualization]] — GPU 虚拟化是什么
-- [[12_Architecture_Infrastructure/AI_Stack/HAMi_Deep_Dive]] — HAMi 深度解析
-- [[12_Architecture_Infrastructure/AI_Stack/HAMi_Operation_Guide]] — HAMi 运维指南
-- [[13_AI_Ops/SRE_Reliability/HAMi_Troubleshooting_Guide]] — HAMi 问题排查
+- [[架构基建/AI_Stack/HAMi_Deep_Dive]] — HAMi 深度解析
+- [[架构基建/AI_Stack/HAMi_Operation_Guide]] — HAMi 运维指南
+- [[AI运维/SRE_Reliability/HAMi_Troubleshooting_Guide]] — HAMi 问题排查

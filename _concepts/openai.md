@@ -14,8 +14,8 @@ relationships:
   - target: "_concepts/cloud-ai-platform"
     type: belongs_to
 sources:
-  - 05_NLP_LLMs/Global_LLM_Ecosystem/OpenAI_Deep_Dive.md
-  - 12_Architecture_Infrastructure/Azure_OpenAI_Deep_Dive.md
+  - 大模型/Global_LLM_Ecosystem/OpenAI_Deep_Dive.md
+  - 架构基建/Azure_OpenAI_Deep_Dive.md
 summary: "OpenAI 是 ChatGPT 与 GPT 系列模型的开发公司，GPT-5 / GPT-4o 系列定义了闭源 LLM 的 API 范式，是全球使用最广的 LLM 商业服务。"
 lifecycle: reviewed
 tier: core
@@ -79,5 +79,5 @@ updated: 2026-06-24
 - [[_concepts/foundation-model]] — 基础模型总览
 - [[_concepts/azure-openai]] — Azure OpenAI（中国/合规）
 - [[_concepts/cloud-ai-platform]] — 云 AI 平台
-- [[05_NLP_LLMs/Global_LLM_Ecosystem/OpenAI_Deep_Dive]] — OpenAI 深度
-- [[12_Architecture_Infrastructure/Azure_OpenAI_Deep_Dive]] — Azure OpenAI
+- [[大模型/Global_LLM_Ecosystem/OpenAI_Deep_Dive]] — OpenAI 深度
+- [[架构基建/Azure_OpenAI_Deep_Dive]] — Azure OpenAI

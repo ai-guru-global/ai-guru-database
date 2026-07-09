@@ -727,20 +727,20 @@ MTTR_DISTRIBUTION = {
 ## 🔗 相关主题
 
 - [SRE for AI Systems](./SRE_for_AI_Systems.md) — SLI/SLO 设计与错误预算
-- [AI Ops 2026](13_AI_Ops/AI_Ops_2026.md) — 智能运维完整体系
+- [AI Ops 2026](AI运维/AI_Ops_2026.md) — 智能运维完整体系
 - [Cloud Ops 2026](_projects/Cloud_Ops_Agent/Cloud_Product_Ops_2026.md) — 云产品运维 Agent
-- [部署与推理](10_Deployment_Inference/Inference-in-nutshell.md) — 推理优化
-- [AI 测试](09_Testing/AI-Testing-in-nutshell.md) — AI 测试体系
+- [部署与推理](部署推理/Inference-in-nutshell.md) — 推理优化
+- [AI 测试](AI测试/AI-Testing-in-nutshell.md) — AI 测试体系
 
 > 📅 **最后更新**：2026-04-11 | **方法论**：PagerDuty Incident Response + Google SRE + AI 生产实践
 
 ## Related
 
-- [[13_AI_Ops/AIOps-in-nutshell.md]] — AI Ops 速成指南 (共享: ai-ops, incident-response, monitoring, observability)
-- [[13_AI_Ops/AI_Ops_for_dummy.md]] — AI Ops 入门指南 (for Dummies) (共享: ai-ops, incident-response, monitoring, observability)
-- [[13_AI_Ops/README]] — AI 运维与可观测性 (AI Ops) (共享: ai-ops, incident-response, monitoring, observability)
-- [[13_AI_Ops/README_for_dummy]] — 16 AI Ops — 小白版 📡 (共享: ai-ops, incident-response, monitoring, observability)
-- [[11_MLOps_Pipeline/Observability/AI_Observability_Guide.md|AI_Observability_Guide]]
-- [[11_MLOps_Pipeline/Observability/Helicone_Deep_Dive.md|Helicone_Deep_Dive]]
-- [[11_MLOps_Pipeline/Orchestration/Prefect_Deep_Dive.md|Prefect_Deep_Dive]]
-- [[11_MLOps_Pipeline/Orchestration/DVC_Deep_Dive.md|DVC_Deep_Dive]]
+- [[AI运维/AIOps-in-nutshell.md]] — AI Ops 速成指南 (共享: ai-ops, incident-response, monitoring, observability)
+- [[AI运维/AI_Ops_for_dummy.md]] — AI Ops 入门指南 (for Dummies) (共享: ai-ops, incident-response, monitoring, observability)
+- [[AI运维/README]] — AI 运维与可观测性 (AI Ops) (共享: ai-ops, incident-response, monitoring, observability)
+- [[AI运维/README_for_dummy]] — 16 AI Ops — 小白版 📡 (共享: ai-ops, incident-response, monitoring, observability)
+- [[MLOps/Observability/AI_Observability_Guide.md|AI_Observability_Guide]]
+- [[MLOps/Observability/Helicone_Deep_Dive.md|Helicone_Deep_Dive]]
+- [[MLOps/Orchestration/Prefect_Deep_Dive.md|Prefect_Deep_Dive]]
+- [[MLOps/Orchestration/DVC_Deep_Dive.md|DVC_Deep_Dive]]

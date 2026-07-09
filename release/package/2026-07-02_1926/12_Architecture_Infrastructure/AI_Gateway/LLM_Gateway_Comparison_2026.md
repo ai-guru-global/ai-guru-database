@@ -86,5 +86,5 @@ response = completion(
 | 大型企业 | Kong AI Gateway (企业级管控) |
 | 已有 API 网关 | 在现有网关上加 LLM 插件 |
 
-> **关联**: -> [[12_Architecture_Infrastructure/AI_Gateway/index|AI 网关]] | [[12_Architecture_Infrastructure/AI_Gateway/LiteLLM_Deep_Dive|LiteLLM]] | [[12_Architecture_Infrastructure/AI_Gateway/Portkey_Deep_Dive|Portkey]] | [[12_Architecture_Infrastructure/AI_Gateway/Kong_AI_Gateway_Deep_Dive|Kong]]
+> **关联**: -> [[架构基建/AI_Gateway/index|AI 网关]] | [[架构基建/AI_Gateway/LiteLLM_Deep_Dive|LiteLLM]] | [[架构基建/AI_Gateway/Portkey_Deep_Dive|Portkey]] | [[架构基建/AI_Gateway/Kong_AI_Gateway_Deep_Dive|Kong]]
 

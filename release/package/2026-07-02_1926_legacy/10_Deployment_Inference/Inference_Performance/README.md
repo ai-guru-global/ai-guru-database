@@ -20,7 +20,7 @@ tier: supporting
 
 与现有内容的区别：
 
-- `10_Deployment_Inference/README.md` 是**引擎选型地图**。
+- `部署推理/README.md` 是**引擎选型地图**。
 - `Deployment_Inference.md` 是**部署与加速概览**。
 - 本专题是**性能工程方法论**，专门回答：
   - 延迟到底花在哪里？
@@ -34,19 +34,19 @@ tier: supporting
 
 | 文档 | 内容 | 适用读者 |
 |------|------|----------|
-| [推理性能基础](10_Deployment_Inference/Inference_Performance/Inference_Performance_Fundamentals.md) | 指标、瓶颈模型、Roofline、优化技术分类 | 所有性能工程从业者 |
-| [决定模型推理速度的要素（大白话版）](10_Deployment_Inference/Inference_Performance/Inference_Speed_Factors_for_dummy.md) | 用生活化语言解释影响推理速度的六大因素 | 初学者、产品经理 |
-| [推理性能术语大白话解释](10_Deployment_Inference/Inference_Performance/Inference_Terms_for_dummy.md) | MoE、MLA/GQA、FLOPS、Prefill、Decode、TTFT、量化、NVLink/IB、PD 分离 | 初学者 |
-| [Prefill-Decode 分离](10_Deployment_Inference/Inference_Performance/Prefill_Decode_Disaggregation.md) | Disaggregated Serving 架构与 KV Cache 传输 | 长上下文/高并发场景 |
-| [MoE 推理优化](10_Deployment_Inference/Inference_Performance/MoE_Inference_Optimization.md) | All-to-All、Expert Parallelism、负载均衡 | MoE 模型部署 |
-| [推理 Profiling 与 Benchmarking](10_Deployment_Inference/Inference_Performance/LLM_Inference_Profiling_and_Benchmarking.md) | Nsight、PyTorch Profiler、llmperf、指标陷阱 | 性能测试工程师 |
-| [Flash 系列 Kernel 深潜](10_Deployment_Inference/Inference_Performance/Flash_Kernels_Deep_Dive.md) | FlashAttention / FlashDecoding / FlashInfer / FlashMLA | Kernel/算子优化 |
-| [LLM 请求调度](10_Deployment_Inference/Inference_Performance/Request_Scheduling_for_LLMs.md) | Continuous Batching、抢占、Chunked Prefill、SLO-aware | 服务调度 |
-| [弹性扩缩容与负载均衡](10_Deployment_Inference/Inference_Performance/Inference_Autoscaling_and_Load_Balancing.md) | HPA、预热池、多模型混部、智能路由 | 平台/SRE |
-| [Embedding/Reranker 服务](10_Deployment_Inference/Inference_Performance/Embedding_Model_Serving.md) | Dynamic Batching、Matryoshka、混合精度 | RAG 部署 |
-| [多模态推理优化](10_Deployment_Inference/Inference_Performance/Multimodal_Inference_Optimization.md) | Vision Encoder、Image Token 压缩、VLM Prefill | VLM 部署 |
-| [长上下文推理 2026](10_Deployment_Inference/Inference_Performance/Long_Context_Inference_2026.md) | 128K+ 上下文、KV Cache 压缩、PD 分离 | 长上下文服务 |
-| [推理性能未解问题与缺口评估](10_Deployment_Inference/Inference_Performance/Remaining_Performance_Issues_2026.md) | 边缘、异构、能耗、多租户、编译启动等缺口 | 架构师、性能工程师 |
+| [推理性能基础](部署推理/Inference_Performance/Inference_Performance_Fundamentals.md) | 指标、瓶颈模型、Roofline、优化技术分类 | 所有性能工程从业者 |
+| [决定模型推理速度的要素（大白话版）](部署推理/Inference_Performance/Inference_Speed_Factors_for_dummy.md) | 用生活化语言解释影响推理速度的六大因素 | 初学者、产品经理 |
+| [推理性能术语大白话解释](部署推理/Inference_Performance/Inference_Terms_for_dummy.md) | MoE、MLA/GQA、FLOPS、Prefill、Decode、TTFT、量化、NVLink/IB、PD 分离 | 初学者 |
+| [Prefill-Decode 分离](部署推理/Inference_Performance/Prefill_Decode_Disaggregation.md) | Disaggregated Serving 架构与 KV Cache 传输 | 长上下文/高并发场景 |
+| [MoE 推理优化](部署推理/Inference_Performance/MoE_Inference_Optimization.md) | All-to-All、Expert Parallelism、负载均衡 | MoE 模型部署 |
+| [推理 Profiling 与 Benchmarking](部署推理/Inference_Performance/LLM_Inference_Profiling_and_Benchmarking.md) | Nsight、PyTorch Profiler、llmperf、指标陷阱 | 性能测试工程师 |
+| [Flash 系列 Kernel 深潜](部署推理/Inference_Performance/Flash_Kernels_Deep_Dive.md) | FlashAttention / FlashDecoding / FlashInfer / FlashMLA | Kernel/算子优化 |
+| [LLM 请求调度](部署推理/Inference_Performance/Request_Scheduling_for_LLMs.md) | Continuous Batching、抢占、Chunked Prefill、SLO-aware | 服务调度 |
+| [弹性扩缩容与负载均衡](部署推理/Inference_Performance/Inference_Autoscaling_and_Load_Balancing.md) | HPA、预热池、多模型混部、智能路由 | 平台/SRE |
+| [Embedding/Reranker 服务](部署推理/Inference_Performance/Embedding_Model_Serving.md) | Dynamic Batching、Matryoshka、混合精度 | RAG 部署 |
+| [多模态推理优化](部署推理/Inference_Performance/Multimodal_Inference_Optimization.md) | Vision Encoder、Image Token 压缩、VLM Prefill | VLM 部署 |
+| [长上下文推理 2026](部署推理/Inference_Performance/Long_Context_Inference_2026.md) | 128K+ 上下文、KV Cache 压缩、PD 分离 | 长上下文服务 |
+| [推理性能未解问题与缺口评估](部署推理/Inference_Performance/Remaining_Performance_Issues_2026.md) | 边缘、异构、能耗、多租户、编译启动等缺口 | 架构师、性能工程师 |
 
 ---
 
@@ -97,11 +97,11 @@ LLM 推理性能优化技术栈
 ## 关联内容
 
 - [09 部署与推理总览](../README.md)
-- [Deployment Inference](10_Deployment_Inference/Deployment_Inference.md) — 部署与推理加速概览
-- [KV Cache Deep Dive](10_Deployment_Inference/Caching/KV_Cache_Deep_Dive.md) — KV Cache 深度优化
-- [Quantization Techniques 2026](10_Deployment_Inference/Quantization/Quantization_Techniques_2026.md) — 量化技术全景
-- [Speculative Decoding Advanced 2026](10_Deployment_Inference/Caching/Speculative_Decoding_Advanced_2026.md) — 投机解码
-- [Prompt Caching and KV Cache Optimization](10_Deployment_Inference/Caching/Prompt_Caching_and_KV_Cache_Optimization.md) — 缓存优化
+- [Deployment Inference](部署推理/Deployment_Inference.md) — 部署与推理加速概览
+- [KV Cache Deep Dive](部署推理/Caching/KV_Cache_Deep_Dive.md) — KV Cache 深度优化
+- [Quantization Techniques 2026](部署推理/Quantization/Quantization_Techniques_2026.md) — 量化技术全景
+- [Speculative Decoding Advanced 2026](部署推理/Caching/Speculative_Decoding_Advanced_2026.md) — 投机解码
+- [Prompt Caching and KV Cache Optimization](部署推理/Caching/Prompt_Caching_and_KV_Cache_Optimization.md) — 缓存优化
 
 ---
 
@@ -113,4 +113,4 @@ LLM 推理性能优化技术栈
 - [[_concepts/continuous-batching]] — Continuous Batching
 - [[_concepts/speculative-decoding]] — 投机解码
 - [[_concepts/prefill-decode]] — Prefill / Decode 阶段
-- [[10_Deployment_Inference/README|模型部署与推理]]
+- [[部署推理/README|模型部署与推理]]

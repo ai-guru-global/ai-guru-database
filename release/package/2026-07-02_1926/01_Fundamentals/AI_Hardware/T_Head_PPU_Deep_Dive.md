@@ -391,4 +391,4 @@ IoT / 端侧芯片:
 
 ### 关联 Wiki 页面
 
-> **关联**: -> [[01_Fundamentals/AI_Hardware/Chinese_AI_Chips_Deep_Dive|国产 AI 芯片深度解析]] | [[01_Fundamentals/AI_Hardware/AI_Hardware_2026|AI 硬件与芯片 2026 年全景报告]] | [[01_Fundamentals/AI_Hardware/NVIDIA_AMD_GPU_Deep_Dive|NVIDIA & AMD GPU 深度解析]] | [[12_Architecture_Infrastructure/Architecture_Overview/AI_Infrastructure_2026|AI 基础设施 2026]] | [[07_Model_Training/Distributed_Training/Distributed_Training_2026|分布式训练 2026]] | [[01_Fundamentals/AI_Hardware/T_Head_PPU_for_dummy|平头哥 PPU 大白话解读]]
+> **关联**: -> [[数学基础/AI_Hardware/Chinese_AI_Chips_Deep_Dive|国产 AI 芯片深度解析]] | [[数学基础/AI_Hardware/AI_Hardware_2026|AI 硬件与芯片 2026 年全景报告]] | [[数学基础/AI_Hardware/NVIDIA_AMD_GPU_Deep_Dive|NVIDIA & AMD GPU 深度解析]] | [[架构基建/Architecture_Overview/AI_Infrastructure_2026|AI 基础设施 2026]] | [[模型训练/Distributed_Training/Distributed_Training_2026|分布式训练 2026]] | [[数学基础/AI_Hardware/T_Head_PPU_for_dummy|平头哥 PPU 大白话解读]]

@@ -71,4 +71,4 @@ rate({namespace="prod", app="order"} |= "error" [1m])
 - [[_concepts/grafana|Grafana]] — 可视化与告警
 - [[_concepts/fluent-bit|Fluent Bit]] — 日志采集器
 - [[_concepts/kubernetes|Kubernetes]] — 容器编排
-- [[12_Architecture_Infrastructure/Kubernetes_Observability_Stack|Kubernetes 可观测性栈]]
+- [[架构基建/Kubernetes_Observability_Stack|Kubernetes 可观测性栈]]

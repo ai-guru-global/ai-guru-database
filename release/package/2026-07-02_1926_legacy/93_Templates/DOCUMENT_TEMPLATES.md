@@ -64,7 +64,7 @@ aliases:
 | **一句话理解** | 必须放在标题下方，用 `>` 引用 | `> **一句话理解**: 模型训练是...` |
 | **分隔线** | 章节之间用 `---` | `---` |
 | **更新日期** | 文件末尾必须标注 | `*Last updated: 2026-05-07*` |
-| **交叉引用** | 使用相对路径 `../` | `[深度学习](../03_Deep_Learning/README.md)` |
+| **交叉引用** | 使用相对路径 `../` | `[深度学习](../深度学习/README.md)` |
 
 ### Markdown 格式规范
 
@@ -139,7 +139,7 @@ aliases:
 | 反模式 | 问题 | 正确做法 |
 |--------|------|---------|
 | **孤岛文档** | 文件没有任何内部链接 | 至少包含 2 个 `../` 交叉引用 |
-| **目录裸引用** | `[章节](../XX_Chapter/)` | `[章节](../11_MLOps_Pipeline/README.md)` |
+| **目录裸引用** | `[章节](../XX_Chapter/)` | `[章节](../MLOps/README.md)` |
 | **断链** | 引用了不存在的文件路径 | 创建文件前先检查目标是否存在 |
 | **深度失衡** | for_dummy 比正常版还长 | for_dummy 应为正常版的 40-70% |
 | **README 缺席** | 章节没有 README.md | 每个主要目录必须有 README |
@@ -242,7 +242,7 @@ check_doc() {
     echo "📊 总行数: $lines"
 }
 
-# 使用示例: check_doc 07_Model_Training/README.md
+# 使用示例: check_doc 模型训练/README.md
 ```
 
 ### 批量检查脚本
@@ -323,12 +323,12 @@ find . -name "*.md" -path "./[0-9][0-9]_*" -exec grep -h "Last updated" {} + 2>/
 ## 与其他章节的关联
 
 ### 前置知识
-- [前置章节](../11_MLOps_Pipeline/README.md) — 为什么需要它
-- [基础章节](../01_Fundamentals/Topic/Topic.md) — 具体基础概念
+- [前置章节](../MLOps/README.md) — 为什么需要它
+- [基础章节](../数学基础/Topic/Topic.md) — 具体基础概念
 
 ### 进阶方向
-- [后续章节](../11_MLOps_Pipeline/README.md) — 学完本章后可以深入的方向
-- [相关工具](../11_MLOps_Pipeline/README.md) — 实践本章内容的工具
+- [后续章节](../MLOps/README.md) — 学完本章后可以深入的方向
+- [相关工具](../MLOps/README.md) — 实践本章内容的工具
 
 ---
 
@@ -436,8 +436,8 @@ print("Hello")
 
 ## 5. 与其他章节的关联
 
-- [前置知识](../11_MLOps_Pipeline/README.md)
-- [进阶方向](../11_MLOps_Pipeline/README.md)
+- [前置知识](../MLOps/README.md)
+- [进阶方向](../MLOps/README.md)
 
 ---
 
@@ -545,7 +545,7 @@ flowchart TB
 ## 🔗 相关主题
 
 - [深度解析](`./main_topic.md`) — 完整技术细节
-- [前置基础](`../11_MLOps_Pipeline/README.md`) — 需要的基础知识
+- [前置基础](`../MLOps/README.md`) — 需要的基础知识
 
 ---
 
@@ -696,10 +696,10 @@ python demo.py
 ## 7. 与其他章节的关联
 
 ### 前置知识
-- [基础概念](../11_MLOps_Pipeline/README.md)
+- [基础概念](../MLOps/README.md)
 
 ### 进阶方向
-- [高级主题](../11_MLOps_Pipeline/README.md)
+- [高级主题](../MLOps/README.md)
 
 ---
 
@@ -723,7 +723,7 @@ python demo.py
 对经典 AI 论文的完整解读，帮助读者从论文源头理解技术演进。
 
 ### 文件位置
-`20_Papers_and_Research/Paper_Name_Deep_Dive.md`
+`论文精读/Paper_Name_Deep_Dive.md`
 
 ### 模板结构
 
@@ -807,8 +807,8 @@ flowchart TB
 
 ## 7. 相关章节
 
-- [理论基础](../11_MLOps_Pipeline/README.md)
-- [实践应用](../11_MLOps_Pipeline/README.md)
+- [理论基础](../MLOps/README.md)
+- [实践应用](../MLOps/README.md)
 
 ---
 
@@ -832,7 +832,7 @@ flowchart TB
 特定行业的 AI 应用方案，包含行业背景、核心场景、技术方案、案例研究、合规要求和 ROI 分析。
 
 ### 文件位置
-`18_AI_Applications_Industry/Industry_Name/AI_Industry_Name_2026.md`
+`行业应用/Industry_Name/AI_Industry_Name_2026.md`
 
 ### 模板结构
 
@@ -918,8 +918,8 @@ flowchart TB
 
 ## 9. 与其他章节的关联
 
-- [相关技术](../11_MLOps_Pipeline/README.md)
-- [伦理安全](../17_Ethics_Safety/README.md)
+- [相关技术](../MLOps/README.md)
+- [伦理安全](../伦理安全/README.md)
 
 ---
 
@@ -943,7 +943,7 @@ flowchart TB
 AI 领域领袖人物的简介、核心观点和动态追踪。
 
 ### 文件位置
-`19_Talks/Person_Name/about.md` + `19_Talks/Person_Name/sayings.md`
+`业界观点/Person_Name/about.md` + `业界观点/Person_Name/sayings.md`
 
 ### about.md 模板
 
@@ -964,9 +964,9 @@ AI 领域领袖人物的简介、核心观点和动态追踪。
 
 ## 相关主题与延伸阅读
 
-- [Talks Synthesis 2026](19_Talks/Talks_Synthesis_2026.md) — 查看 [姓名] 在 Scaling Laws、AI 安全等主题中的立场
-- [AI 历史](00_AI_Introduction/AI_History_Timeline.md) — [姓名] 的关键贡献时间线
-- [AI 未来趋势](00_AI_Introduction/AI_Future_Trends.md) — 行业前瞻判断汇总
+- [Talks Synthesis 2026](业界观点/Talks_Synthesis_2026.md) — 查看 [姓名] 在 Scaling Laws、AI 安全等主题中的立场
+- [AI 历史](AI入门/AI_History_Timeline.md) — [姓名] 的关键贡献时间线
+- [AI 未来趋势](AI入门/AI_Future_Trends.md) — 行业前瞻判断汇总
 
 ---
 
@@ -1002,7 +1002,7 @@ AI 领域领袖人物的简介、核心观点和动态追踪。
 为特定 AI 岗位提供面试准备资料，包含职责、能力要求、考点和题库。
 
 ### 文件位置
-`21_Interviews/Job_Title/interview_preparing.md` 等
+`面试岗位/Job_Title/interview_preparing.md` 等
 
 ### interview_preparing.md 模板
 

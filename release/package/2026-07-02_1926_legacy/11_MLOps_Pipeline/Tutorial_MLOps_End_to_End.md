@@ -396,14 +396,14 @@ spec:
 
 ## Related
 
-- [[11_MLOps_Pipeline/Orchestration/Data_Versioning_DVC_LakeFS]] — DVC 深度解析
-- [[11_MLOps_Pipeline/Experiment_Tracking/MLflow_Deep_Dive]] — MLflow 深度解析
-- [[11_MLOps_Pipeline/CI_CD/ML_CI_CD]] — ML CI/CD
-- [[11_MLOps_Pipeline/Observability/Model_Monitoring_and_Drift_Detection_2026]] — 模型监控
+- [[MLOps/Orchestration/Data_Versioning_DVC_LakeFS]] — DVC 深度解析
+- [[MLOps/Experiment_Tracking/MLflow_Deep_Dive]] — MLflow 深度解析
+- [[MLOps/CI_CD/ML_CI_CD]] — ML CI/CD
+- [[MLOps/Observability/Model_Monitoring_and_Drift_Detection_2026]] — 模型监控
 
 ---
 
 *Last updated: 2026-06-25*
 *Version: 1.0.0*
 
-- [[11_MLOps_Pipeline/README|MLOps 流水线 (MLOps Pipeline)]]
+- [[MLOps/README|MLOps 流水线 (MLOps Pipeline)]]

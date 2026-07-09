@@ -14,10 +14,10 @@ relationships:
   - target: "_concepts/model-inference"
     type: affects
 sources:
-  - 10_Deployment_Inference/Quantization/Quantization_Techniques_2026.md
-  - 10_Deployment_Inference/Quantization/Quantization_Precision_Deep_Dive.md
-  - 10_Deployment_Inference/Deployment_Inference_2026.md
-  - 08_Model_Evaluation/README.md
+  - 部署推理/Quantization/Quantization_Techniques_2026.md
+  - 部署推理/Quantization/Quantization_Precision_Deep_Dive.md
+  - 部署推理/Deployment_Inference_2026.md
+  - 模型评估/README.md
 summary: '精度"在大模型语境中有两层含义：数值精度（每个参数用几位存储，FP32→INT4 逐级压缩）和模型准确性（benchmark 得分）。两者关系是——数值精度是手段，模型准确性是目的。量化的艺术就是在"省资源"和"不变傻"之间找平衡。'
 provenance:
   extracted: 0.85
@@ -225,7 +225,7 @@ KV Cache 量化策略:
 
 - Frantar et al., "GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers," ICLR 2023
 - Lin et al., "AWQ: Activation-aware Weight Quantization for LLM Compression and Acceleration," 2024
-- [[10_Deployment_Inference/Quantization/Quantization_Techniques_2026]] — 量化技术详解
+- [[部署推理/Quantization/Quantization_Techniques_2026]] — 量化技术详解
 
 ## Related
 
@@ -235,5 +235,5 @@ KV Cache 量化策略:
 - [[_concepts/model-inference]] — 模型推理原理（精度选择影响推理性能）
 - [[_concepts/model-serving]] — 模型服务（推理引擎中的精度配置）
 - [[_concepts/kv-cache]] — KV Cache（KV Cache 量化是精度第二战场）
-- [[10_Deployment_Inference/Quantization/Quantization_Precision_Deep_Dive]] — 量化精度深度解析（失效机制、校准、层敏感度）
-- [[10_Deployment_Inference/Quantization/Quantization_Techniques_2026]] — 量化技术全景（GPTQ/AWQ/SmoothQuant 实现细节）
+- [[部署推理/Quantization/Quantization_Precision_Deep_Dive]] — 量化精度深度解析（失效机制、校准、层敏感度）
+- [[部署推理/Quantization/Quantization_Techniques_2026]] — 量化技术全景（GPTQ/AWQ/SmoothQuant 实现细节）

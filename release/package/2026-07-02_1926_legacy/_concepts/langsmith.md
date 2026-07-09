@@ -8,7 +8,7 @@ relationships:
   - target: "_concepts/agent-evaluation"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "LangSmith 是 LangChain 官方推出的 LLM 可观测性与评估平台——深度集成 LangChain 生态，提供调用追踪、数据集管理、自动化评估和 Prompt 调试。是 LangChain 用户的标配可观测方案。"
 provenance:
   extracted: 0.20

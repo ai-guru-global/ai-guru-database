@@ -7,11 +7,11 @@ updated: 2026-07-02
 
 # Supervised Learning
 
-This page indexes the contents of `02_Machine_Learning/Supervised_Learning`.
+This page indexes the contents of `机器学习/Supervised_Learning`.
 
 ## Files
 
-- [[02_Machine_Learning/Supervised_Learning/EDA_Quick_Start|EDA Quick Start]]
-- [[02_Machine_Learning/Supervised_Learning/Supervised_Learning|Supervised Learning]]
-- [[02_Machine_Learning/Supervised_Learning/Supervised_Learning_for_dummy|Supervised Learning For Dummy]]
-- [[02_Machine_Learning/Supervised_Learning/Your_First_ML_Model|Your First ML Model]]
+- [[机器学习/Supervised_Learning/EDA_Quick_Start|EDA Quick Start]]
+- [[机器学习/Supervised_Learning/Supervised_Learning|Supervised Learning]]
+- [[机器学习/Supervised_Learning/Supervised_Learning_for_dummy|Supervised Learning For Dummy]]
+- [[机器学习/Supervised_Learning/Your_First_ML_Model|Your First ML Model]]

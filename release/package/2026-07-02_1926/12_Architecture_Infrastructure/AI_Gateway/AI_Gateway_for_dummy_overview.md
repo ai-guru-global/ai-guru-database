@@ -165,8 +165,8 @@ Gateway 能力:
 ## 下一步
 
 - 想深入技术？→ 查看子目录具体文档
-- 想学架构？→ [12_Architecture_Infrastructure/README_for_dummy.md](17_Ethics_Safety/README_for_dummy.md)
-- 想学部署？→ [10_Deployment_Inference/README_for_dummy.md](17_Ethics_Safety/README_for_dummy.md)
+- 想学架构？→ [架构基建/README_for_dummy.md](伦理安全/README_for_dummy.md)
+- 想学部署？→ [部署推理/README_for_dummy.md](伦理安全/README_for_dummy.md)
 
 ---
 
@@ -174,10 +174,10 @@ Gateway 能力:
 
 ## Related
 
-- [[12_Architecture_Infrastructure/AI_Gateway/AI_Gateway_2026.md|AI_Gateway_2026]]
-- [[12_Architecture_Infrastructure/AI_Gateway/AI_Gateway_for_dummy.md|AI_Gateway_for_dummy]]
-- [[12_Architecture_Infrastructure/AI_Gateway/Cohere_Deep_Dive.md|Cohere_Deep_Dive]]
-- [[12_Architecture_Infrastructure/AI_Gateway/Gateway-in-nutshell.md|Gateway-in-nutshell]]
-- [[12_Architecture_Infrastructure/AI_Gateway/Kong_AI_Gateway_Deep_Dive.md|Kong_AI_Gateway_Deep_Dive]]
+- [[架构基建/AI_Gateway/AI_Gateway_2026.md|AI_Gateway_2026]]
+- [[架构基建/AI_Gateway/AI_Gateway_for_dummy.md|AI_Gateway_for_dummy]]
+- [[架构基建/AI_Gateway/Cohere_Deep_Dive.md|Cohere_Deep_Dive]]
+- [[架构基建/AI_Gateway/Gateway-in-nutshell.md|Gateway-in-nutshell]]
+- [[架构基建/AI_Gateway/Kong_AI_Gateway_Deep_Dive.md|Kong_AI_Gateway_Deep_Dive]]
 
-- [[12_Architecture_Infrastructure/README|架构与基础设施 (Architecture & Infrastructure)]]
+- [[架构基建/README|架构与基础设施 (Architecture & Infrastructure)]]

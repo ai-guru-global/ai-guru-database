@@ -28,9 +28,9 @@ updated: 2026-07-02
 
 ## Related
 
-- [[15_Agent_Production/Agent_Skills/Skills-in-nutshell|Agent Skills 速览]]
-- [[15_Agent_Production/Course_Notes/Learn_Claude_Code_L08_Context_Compact|L08 Context Compact]]
-- [[15_Agent_Production/Course_Notes/Learn_Claude_Code_L06_Subagent|L06 Subagent]]
+- [[Agent/Agent_Skills/Skills-in-nutshell|Agent Skills 速览]]
+- [[Agent/Course_Notes/Learn_Claude_Code_L08_Context_Compact|L08 Context Compact]]
+- [[Agent/Course_Notes/Learn_Claude_Code_L06_Subagent|L06 Subagent]]
 
 ---
 *Last updated: 2026-07-02*

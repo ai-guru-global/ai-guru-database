@@ -831,7 +831,7 @@ NF4 误差:  ▁▁▂▁▁▁▁▁▂▁▁  (中心几乎为 0)
 
 ```python
 # QLoRA 4-bit 加载 (NF4 + Double Quantization)
-# 参考: ../05_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026.md
+# 参考: ../大模型/Fine_tuning_Techniques/PEFT_2026.md
 # ═══════════════════════════════════════════════════════════════
 
 from transformers import AutoModelForCausalLM, BitsAndBytesConfig
@@ -1596,7 +1596,7 @@ Q2_K         3.2 GB   7.94    68 tok/s            极限压缩
 
 ```python
 # QLoRA: 4-bit NF4 加载 + LoRA 微调
-# 参考: ../05_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026.md
+# 参考: ../大模型/Fine_tuning_Techniques/PEFT_2026.md
 # ═══════════════════════════════════════════════════════════════
 
 import torch
@@ -1898,19 +1898,19 @@ graph TB
 
 ### 8.1 量化精度影响分析
 
-本文聚焦量化方法的实现细节。关于量化对模型输出质量的影响（失效机制、层敏感度、校准数据选择、困惑度评估等），参见 [量化精度深度解析](10_Deployment_Inference/Quantization/Quantization_Precision_Deep_Dive.md)。
+本文聚焦量化方法的实现细节。关于量化对模型输出质量的影响（失效机制、层敏感度、校准数据选择、困惑度评估等），参见 [量化精度深度解析](部署推理/Quantization/Quantization_Precision_Deep_Dive.md)。
 
 ### 8.2 推理引擎深度解析
 
 量化模型需要高效的推理引擎来发挥加速效果:
 
-- **vLLM 部署**: 参见 [vLLM 深度解析](10_Deployment_Inference/Inference_Engines/vLLM_Deep_Dive.md) — 支持 GPTQ/AWQ/FP8 量化格式的自动加载与 kernel 优化
-- **TensorRT-LLM**: 参见 [TensorRT-LLM 深度解析](10_Deployment_Inference/Inference_Engines/TensorRT_LLM_Deep_Dive.md) — SmoothQuant W8A8 的原生支持，FP8 GEMM 优化
-- **llama.cpp**: 参见 [llama.cpp 深度解析](10_Deployment_Inference/Inference_Engines/llama_cpp_Deep_Dive.md) — GGUF 格式量化的完整工具链，CPU+GPU 混合推理
+- **vLLM 部署**: 参见 [vLLM 深度解析](部署推理/Inference_Engines/vLLM_Deep_Dive.md) — 支持 GPTQ/AWQ/FP8 量化格式的自动加载与 kernel 优化
+- **TensorRT-LLM**: 参见 [TensorRT-LLM 深度解析](部署推理/Inference_Engines/TensorRT_LLM_Deep_Dive.md) — SmoothQuant W8A8 的原生支持，FP8 GEMM 优化
+- **llama.cpp**: 参见 [llama.cpp 深度解析](部署推理/Inference_Engines/llama_cpp_Deep_Dive.md) — GGUF 格式量化的完整工具链，CPU+GPU 混合推理
 
 ### 8.3 微调与量化
 
-- **QLoRA 与 PEFT**: 参见 [PEFT 2026](05_NLP_LLMs/Fine_tuning_Techniques/PEFT_2026.md) — NF4 4-bit 加载 + LoRA 微调的完整流程
+- **QLoRA 与 PEFT**: 参见 [PEFT 2026](大模型/Fine_tuning_Techniques/PEFT_2026.md) — NF4 4-bit 加载 + LoRA 微调的完整流程
 
 ### 8.4 核心论文
 

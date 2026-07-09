@@ -137,9 +137,9 @@ FP16 加速计算 + FP32 保证精度。损失缩放避免 FP16 下溢，主权�
 
 ## 来源
 
-- 03_Deep_Learning/Optimization/Optimization.md
+- 深度学习/Optimization/Optimization.md
 - Kingma & Ba (2015) Adam, Loshchilov & Hutter (2017) AdamW
 - Goyal et al. (2017) 大 batch 训练技巧
 ## Related
 
-- [[20_Papers_and_Research/Vision/ResNet_Deep_Dive.md]] — ResNet 深度解读
+- [[论文精读/Vision/ResNet_Deep_Dive.md]] — ResNet 深度解读

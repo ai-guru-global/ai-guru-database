@@ -207,7 +207,7 @@ A: 当然有用！对于表格数据（电商交易数据、银行风控数据�
 ## 想深入了解？
 
 - 专业版: [监督学习完整版](./Supervised_Learning.md)
-- 前置知识: [概率统计小白版](../../01_Fundamentals/Probability_Statistics/Probability_Statistics_for_dummy.md)
+- 前置知识: [概率统计小白版](../../数学基础/Probability_Statistics/Probability_Statistics_for_dummy.md)
 - 下一站: [特征工程小白版](../Feature_Engineering/Feature_Engineering_for_dummy.md)
 
 ---

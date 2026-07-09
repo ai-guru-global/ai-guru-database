@@ -1007,5 +1007,5 @@ result = pipeline.process_frame(pc, images)
 
 - [OCR 与文字识别](../OCR_Text_Recognition/OCR_Text_Recognition.md)
 - [计算机视觉概述](../CV-in-nutshell.md)
-- [部署推理 2026](../../10_Deployment_Inference/Deployment_Inference_2026.md)
+- [部署推理 2026](../../部署推理/Deployment_Inference_2026.md)
 - [图像分类与检测](../Image_Classification_Detection/)

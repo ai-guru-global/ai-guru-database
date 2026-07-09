@@ -93,4 +93,4 @@ kubectl auth can-i get pods --as=system:serviceaccount:monitoring:monitor -A
 
 - [[_concepts/kubernetes|Kubernetes]] — 容器编排平台
 - [[_concepts/rbac|RBAC 基于角色的访问控制]] — ClusterRole 所属的授权模型
-- [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive|AI Stack 深度解析]] — 安全与 RBAC 实践
+- [[架构基建/AI_Stack_Deep_Dive|AI Stack 深度解析]] — 安全与 RBAC 实践

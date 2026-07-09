@@ -7,9 +7,9 @@ updated: 2026-07-02
 
 # Ensemble Learning
 
-This page indexes the contents of `02_Machine_Learning/Ensemble_Learning`.
+This page indexes the contents of `机器学习/Ensemble_Learning`.
 
 ## Files
 
-- [[02_Machine_Learning/Ensemble_Learning/Ensemble_Learning|Ensemble Learning]]
-- [[02_Machine_Learning/Ensemble_Learning/Ensemble_Learning_for_dummy|Ensemble Learning For Dummy]]
+- [[机器学习/Ensemble_Learning/Ensemble_Learning|Ensemble Learning]]
+- [[机器学习/Ensemble_Learning/Ensemble_Learning_for_dummy|Ensemble Learning For Dummy]]

@@ -8,10 +8,10 @@ sources: []
 
 # Sequence Models
 
-This page indexes the contents of `05_NLP_LLMs/Sequence_Models`.
+This page indexes the contents of `大模型/Sequence_Models`.
 
 ## Files
 
-- [[05_NLP_LLMs/Sequence_Models/Sequence_Models|Sequence Models]]
-- [[05_NLP_LLMs/Sequence_Models/Sequence_Models_for_dummy|Sequence Models For Dummy]]
-- [[05_NLP_LLMs/Sequence_Models/Text_Generation_Decoding_Strategies|Text Generation Decoding Strategies]]
+- [[大模型/Sequence_Models/Sequence_Models|Sequence Models]]
+- [[大模型/Sequence_Models/Sequence_Models_for_dummy|Sequence Models For Dummy]]
+- [[大模型/Sequence_Models/Text_Generation_Decoding_Strategies|Text Generation Decoding Strategies]]

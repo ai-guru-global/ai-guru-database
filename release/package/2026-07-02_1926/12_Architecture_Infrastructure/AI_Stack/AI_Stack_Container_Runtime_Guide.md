@@ -155,9 +155,9 @@ podman run -d --name qwen3-8b \
 
 ## Related
 
-- [[12_Architecture_Infrastructure/AI_Stack_Production_Toolchain|AI Stack 生产工具链总览]]
-- [[12_Architecture_Infrastructure/AI_Stack_K8s_Operations_Guide|AI Stack K8s 编排指南]]
-- [[12_Architecture_Infrastructure/AI_Stack_Exclusive_Tools_Guide|AI Stack 专属运维工具指南]]
-- [[12_Architecture_Infrastructure/Hardware_Compute/CDI_Deep_Dive|CDI: 容器设备接口标准]]
-- [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive|阿里云 AI Stack 软硬一体推理平台]]
+- [[架构基建/AI_Stack_Production_Toolchain|AI Stack 生产工具链总览]]
+- [[架构基建/AI_Stack_K8s_Operations_Guide|AI Stack K8s 编排指南]]
+- [[架构基建/AI_Stack_Exclusive_Tools_Guide|AI Stack 专属运维工具指南]]
+- [[架构基建/Hardware_Compute/CDI_Deep_Dive|CDI: 容器设备接口标准]]
+- [[架构基建/AI_Stack_Deep_Dive|阿里云 AI Stack 软硬一体推理平台]]
 - [[_concepts/oci-runtime|OCI Runtime]]

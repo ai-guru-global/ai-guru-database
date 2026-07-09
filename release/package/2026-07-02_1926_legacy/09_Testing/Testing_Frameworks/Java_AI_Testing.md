@@ -2,7 +2,7 @@
 title: Java AI 测试实践
 category: 09-testing
 tags: ["testing", "ai-testing", "prompt-testing", "evaluation"]
-summary: "> 📚 **Spring AI 基础**: 如果你还不熟悉 Spring AI 的核心概念，请先阅读 [Spring AI 深度解析](../../01_Fundamentals/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md)。"
+summary: "> 📚 **Spring AI 基础**: 如果你还不熟悉 Spring AI 的核心概念，请先阅读 [Spring AI 深度解析](../../数学基础/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md)。"
 created: 2026-05-31
 updated: 2026-05-31
 tier: core
@@ -18,11 +18,11 @@ aliases:
 <!-- op-safety-banner v1 -->
 # Java AI 测试实践
 
-> 📚 **Spring AI 基础**: 如果你还不熟悉 Spring AI 的核心概念，请先阅读 [Spring AI 深度解析](../../01_Fundamentals/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md)。
+> 📚 **Spring AI 基础**: 如果你还不熟悉 Spring AI 的核心概念，请先阅读 [Spring AI 深度解析](../../数学基础/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md)。
 >
 > **一句话理解**: 用 JUnit 5、Spring Boot Test、TestContainers 构建 Java AI 应用的完整测试体系 —— 从单元测试到集成测试，从 Prompt 测试到 RAG 评估，确保 Spring AI 应用的质量和可靠性。
 
-> **相关文档**: [AI 测试框架](../AI_Test_Framework_2026.md) | [DeepEval 深度解析](./DeepEval_Deep_Dive.md) | [Spring AI 深度解析](../../01_Fundamentals/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md) | [Java 生态 AI 概览](../../01_Fundamentals/Java_Ecosystem_AI/Java_Ecosystem_AI_Overview.md)
+> **相关文档**: [AI 测试框架](../AI_Test_Framework_2026.md) | [DeepEval 深度解析](./DeepEval_Deep_Dive.md) | [Spring AI 深度解析](../../数学基础/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md) | [Java 生态 AI 概览](../../数学基础/Java_Ecosystem_AI/Java_Ecosystem_AI_Overview.md)
 
 ---
 
@@ -1435,8 +1435,8 @@ AI 服务混沌实验清单
 
 ## Related
 
-- [[09_Testing/AI-Testing-in-nutshell]] — AI 测试与评估速成指南 (共享: ai-testing, evaluation, prompt-testing, testing)
-- [[09_Testing/AI_Testing_for_dummy]] — AI 测试 - 小白版 (共享: ai-testing, evaluation, prompt-testing, testing)
-- [[09_Testing/README]] — AI 测试与评估 (AI Testing) (共享: ai-testing, evaluation, prompt-testing, testing)
-- [[09_Testing/Test_Data_Management.md|Test_Data_Management]]
-- [[09_Testing/RAGAS_Deep_Dive.md|RAGAS_Deep_Dive]]
+- [[AI测试/AI-Testing-in-nutshell]] — AI 测试与评估速成指南 (共享: ai-testing, evaluation, prompt-testing, testing)
+- [[AI测试/AI_Testing_for_dummy]] — AI 测试 - 小白版 (共享: ai-testing, evaluation, prompt-testing, testing)
+- [[AI测试/README]] — AI 测试与评估 (AI Testing) (共享: ai-testing, evaluation, prompt-testing, testing)
+- [[AI测试/Test_Data_Management.md|Test_Data_Management]]
+- [[AI测试/RAGAS_Deep_Dive.md|RAGAS_Deep_Dive]]

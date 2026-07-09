@@ -12,8 +12,8 @@ relationships:
   - target: "_concepts/model-precision"
     type: detailed_by
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
-  - 07_Model_Training/Optimization/Mixed_Precision_Training.md
+  - 架构基建/AI_Stack_Deep_Dive.md
+  - 模型训练/Optimization/Mixed_Precision_Training.md
 summary: "混合精度在训练中使用 BF16/FP16 加速计算并保持 FP32 主权重，显存减半、速度翻倍。2026年 FP8 训练成为新前沿，H100/MI300X 原生支持 FP8 Tensor Core。"
 provenance:
   extracted: 0.55
@@ -161,5 +161,5 @@ AMP 训练流程:
 - [[_concepts/ai-hardware]] — AI 硬件（GPU 精度支持）
 - [[_concepts/distributed-parallelism]] — 分布式并行（训练加速策略）
 - [[_concepts/kv-cache]] — KV Cache（推理中的精度选择）
-- [[07_Model_Training/Optimization/Mixed_Precision_Training]] — 混合精度训练详解
-- [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack
+- [[模型训练/Optimization/Mixed_Precision_Training]] — 混合精度训练详解
+- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack

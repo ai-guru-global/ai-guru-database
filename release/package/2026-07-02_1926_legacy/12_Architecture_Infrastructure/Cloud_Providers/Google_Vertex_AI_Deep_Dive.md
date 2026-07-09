@@ -271,4 +271,4 @@ Vertex AI 提供两种 grounding 方式：
 - [[_concepts/azure-openai]] — Azure OpenAI
 - [[_concepts/gemini]] — Gemini
 - [[_concepts/cloud-ai-platform]] — 云 AI 平台
-- [[12_Architecture_Infrastructure/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析

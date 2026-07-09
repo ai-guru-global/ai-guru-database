@@ -63,8 +63,8 @@ aliases:
 | Agent | 基础 | 强 | 极强 |
 | 价格 | $10/月 | $20/月 | 按 token |
 
-> **关联**: -> [[16_AI_Coding/README|AI 编程]] | [[16_AI_Coding/AI_Coding_2026_Guide|AI 编程 2026 全景指南]]
+> **关联**: -> [[AI编程/README|AI 编程]] | [[AI编程/AI_Coding_2026_Guide|AI 编程 2026 全景指南]]
 
 ## Related
 
-- [[16_AI_Coding/README|AI编程 (AI Coding)]]
+- [[AI编程/README|AI编程 (AI Coding)]]

@@ -413,19 +413,19 @@ flowchart LR
 
 ## 9. 与其他章节的关联
 
-- 欲了解分布式训练技术细节，参阅 [[07_Model_Training/Distributed_Training/DeepSpeed_Deep_Dive.md|DeepSpeed 深度解析：微软大模型训练与推理优化库]]。
-- 欲了解 PyTorch 原生大模型训练，参阅 [[07_Model_Training/Distributed_Training/FSDP_Deep_Dive.md|FSDP Deep Dive]]。
-- 欲了解训练监控与实验跟踪，参阅 [[07_Model_Training/Monitoring/Training_Monitoring_2026.md|Training Monitoring & Experiment Tracking 2026]]。
-- 欲了解模型压缩带来的推理成本优化，参阅 [[07_Model_Training/Compression/Pruning_and_Knowledge_Distillation.md|剪枝与知识蒸馏]]。
-- 欲了解云上 AI 基础设施与 SRE，参阅 [[12_Architecture_Infrastructure/AI_SRE_Runbook.md|AI SRE Runbook]]。
+- 欲了解分布式训练技术细节，参阅 [[模型训练/Distributed_Training/DeepSpeed_Deep_Dive.md|DeepSpeed 深度解析：微软大模型训练与推理优化库]]。
+- 欲了解 PyTorch 原生大模型训练，参阅 [[模型训练/Distributed_Training/FSDP_Deep_Dive.md|FSDP Deep Dive]]。
+- 欲了解训练监控与实验跟踪，参阅 [[模型训练/Monitoring/Training_Monitoring_2026.md|Training Monitoring & Experiment Tracking 2026]]。
+- 欲了解模型压缩带来的推理成本优化，参阅 [[模型训练/Compression/Pruning_and_Knowledge_Distillation.md|剪枝与知识蒸馏]]。
+- 欲了解云上 AI 基础设施与 SRE，参阅 [[架构基建/AI_SRE_Runbook.md|AI SRE Runbook]]。
 
 ---
 
 ## Related
 
-- [[07_Model_Training/Distributed_Training/DeepSpeed_Deep_Dive.md|DeepSpeed 深度解析：微软大模型训练与推理优化库]]
-- [[07_Model_Training/Distributed_Training/FSDP_Deep_Dive.md|FSDP Deep Dive]]
-- [[07_Model_Training/Monitoring/Training_Monitoring_2026.md|Training Monitoring & Experiment Tracking 2026]]
-- [[07_Model_Training/Compression/Pruning_and_Knowledge_Distillation.md|剪枝与知识蒸馏]]
-- [[12_Architecture_Infrastructure/AI_SRE_Runbook.md|AI SRE Runbook]]
+- [[模型训练/Distributed_Training/DeepSpeed_Deep_Dive.md|DeepSpeed 深度解析：微软大模型训练与推理优化库]]
+- [[模型训练/Distributed_Training/FSDP_Deep_Dive.md|FSDP Deep Dive]]
+- [[模型训练/Monitoring/Training_Monitoring_2026.md|Training Monitoring & Experiment Tracking 2026]]
+- [[模型训练/Compression/Pruning_and_Knowledge_Distillation.md|剪枝与知识蒸馏]]
+- [[架构基建/AI_SRE_Runbook.md|AI SRE Runbook]]
 - [[_concepts/training-cost-optimization|训练成本优化]] — 概念层总览

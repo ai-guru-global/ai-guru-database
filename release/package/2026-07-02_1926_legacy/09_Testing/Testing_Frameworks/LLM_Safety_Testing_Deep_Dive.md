@@ -376,11 +376,11 @@ jobs:
 
 ## Related
 
-- [[09_Testing/AI_Test_Framework_2026|AI 测试框架 2026]] — 测试框架全栈
-- [[17_Ethics_Safety/AI_Safety_RedTeaming/AI_Safety_RedTeaming|AI 安全红队测试]] — 安全章节的红队内容
-- [[13_AI_Ops/Guardrails_Deep_Dive|Guardrails 护栏]] — 输出过滤实践
-- [[06_Reinforcement_Learning/RLHF_DPO_GRPO_Deep_Dive|对齐训练]] — 安全对齐的算法基础
-- [[09_Testing/RAGAS_Deep_Dive|RAGAS]] — RAG 忠实性评估
+- [[AI测试/AI_Test_Framework_2026|AI 测试框架 2026]] — 测试框架全栈
+- [[伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming|AI 安全红队测试]] — 安全章节的红队内容
+- [[AI运维/Guardrails_Deep_Dive|Guardrails 护栏]] — 输出过滤实践
+- [[强化学习/RLHF_DPO_GRPO_Deep_Dive|对齐训练]] — 安全对齐的算法基础
+- [[AI测试/RAGAS_Deep_Dive|RAGAS]] — RAG 忠实性评估
 
 ---
 

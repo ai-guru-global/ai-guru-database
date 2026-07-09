@@ -110,7 +110,7 @@ LLM 应用的"实验"与传统 ML 有本质区别：
 
 ## Related
 
-- [[11_MLOps_Pipeline/Experiment_Tracking/Experiment_Tracking_Deep_Dive]] — 实验追踪深度解析
-- [[11_MLOps_Pipeline/Experiment_Tracking/MLflow_Deep_Dive]] — MLflow 深度解析
+- [[MLOps/Experiment_Tracking/Experiment_Tracking_Deep_Dive]] — 实验追踪深度解析
+- [[MLOps/Experiment_Tracking/MLflow_Deep_Dive]] — MLflow 深度解析
 - [[_concepts/feature-store]] — Feature Store 概念
 - [[_concepts/model-registry]] — Model Registry 概念

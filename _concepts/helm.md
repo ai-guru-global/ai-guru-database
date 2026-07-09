@@ -10,7 +10,7 @@ relationships:
   - target: "_concepts/argocd"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/Architecture_Overview/AI_Infrastructure_2026
+  - 架构基建/Architecture_Overview/AI_Infrastructure_2026
 summary: "Helm 是 CNCF Graduated 的 Kubernetes 包管理器，通过 Chart 模板化部署复杂应用，广泛应用于 AI 中间件（HAMi、KServe、Prometheus、Kubeflow）的一键安装与版本管理。"
 provenance:
   extracted: 0.8
@@ -97,4 +97,4 @@ helm rollback hami -n kube-system
 - [[_concepts/kubernetes]] — Kubernetes
 - [[_concepts/kustomize]] — Kustomize
 - [[_concepts/argocd]] — ArgoCD
-- [[12_Architecture_Infrastructure/Architecture_Overview/AI_Infrastructure_2026]] — AI 基础设施 2026
+- [[架构基建/Architecture_Overview/AI_Infrastructure_2026]] — AI 基础设施 2026

@@ -33,5 +33,5 @@ aliases:
 - 结构化输出
 - 提示优化与迭代
 
-> **关联**: -> [[05_NLP_LLMs/Prompt_Engineering|提示词工程]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[大模型/Prompt_Engineering|提示词工程]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
 

@@ -7,10 +7,10 @@ updated: 2026-07-02
 
 # Wenfeng Liang
 
-This page indexes the contents of `19_Talks/Wenfeng_Liang`.
+This page indexes the contents of `业界观点/Wenfeng_Liang`.
 
 ## Files
 
-- [[19_Talks/Wenfeng_Liang/about|About]]
+- [[业界观点/Wenfeng_Liang/about|About]]
 - Sayings 2
-- [[19_Talks/Wenfeng_Liang/sayings|Sayings]]
+- [[业界观点/Wenfeng_Liang/sayings|Sayings]]

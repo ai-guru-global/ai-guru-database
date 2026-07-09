@@ -8,15 +8,15 @@ sources: []
 
 # Multimodal Models
 
-This page indexes the contents of `05_NLP_LLMs/Multimodal_Models`.
+This page indexes the contents of `大模型/Multimodal_Models`.
 
 ## Files
 
-- [[05_NLP_LLMs/Multimodal_Models/GenAI_L09_Building_Image_Applications|Genai L09 Building Image Applications]]
-- [[05_NLP_LLMs/Multimodal_Models/LLaVA_Deep_Dive|Llava Deep Dive]]
-- [[05_NLP_LLMs/Multimodal_Models/Modality_Fusion_Mechanisms|Modality Fusion Mechanisms]]
-- [[05_NLP_LLMs/Multimodal_Models/Multimodal_Architectures_2026|Multimodal Architectures 2026]]
-- [[05_NLP_LLMs/Multimodal_Models/Multimodal_Models_for_dummy|Multimodal Models For Dummy]]
-- [[05_NLP_LLMs/Multimodal_Models/Native_Multimodal_Architectures|Native Multimodal Architectures]]
-- [[05_NLP_LLMs/Multimodal_Models/README|README]]
-- [[05_NLP_LLMs/Multimodal_Models/Video_Understanding_Architectures|Video Understanding Architectures]]
+- [[大模型/Multimodal_Models/GenAI_L09_Building_Image_Applications|Genai L09 Building Image Applications]]
+- [[大模型/Multimodal_Models/LLaVA_Deep_Dive|Llava Deep Dive]]
+- [[大模型/Multimodal_Models/Modality_Fusion_Mechanisms|Modality Fusion Mechanisms]]
+- [[大模型/Multimodal_Models/Multimodal_Architectures_2026|Multimodal Architectures 2026]]
+- [[大模型/Multimodal_Models/Multimodal_Models_for_dummy|Multimodal Models For Dummy]]
+- [[大模型/Multimodal_Models/Native_Multimodal_Architectures|Native Multimodal Architectures]]
+- [[大模型/Multimodal_Models/README|README]]
+- [[大模型/Multimodal_Models/Video_Understanding_Architectures|Video Understanding Architectures]]

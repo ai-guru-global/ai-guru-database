@@ -10,7 +10,7 @@ relationships:
   - target: "_concepts/embedding-models"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "LlamaIndex（原 GPT Index）是面向 LLM 应用的数据框架，提供数据连接器/索引/查询引擎/Agent 等模块。与 LangChain 并列为最流行的两大 LLM 应用框架。"
 provenance:
   extracted: 0.20

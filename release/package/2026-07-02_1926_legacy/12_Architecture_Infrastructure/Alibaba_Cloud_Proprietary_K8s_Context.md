@@ -265,8 +265,8 @@ tianji-cli opsbox login <cluster-id>
 
 - [[_concepts/kubernetes|Kubernetes]] — K8s 核心概念
 - [[_concepts/apsara-stack|Apsara Stack]] — 阿里云专有云概念
-- [[12_Architecture_Infrastructure/Kubernetes_Core_Components_Deep_Dive|K8s 核心组件深度解析]]
-- [[12_Architecture_Infrastructure/Kubernetes_Networking_Deep_Dive|K8s 网络深度解析]]
-- [[12_Architecture_Infrastructure/Kubernetes_Storage_Deep_Dive|K8s 存储深度解析]]
-- [[13_AI_Ops/Kubernetes_Troubleshooting_Playbook|K8s 运维排障 Playbook]]
+- [[架构基建/Kubernetes_Core_Components_Deep_Dive|K8s 核心组件深度解析]]
+- [[架构基建/Kubernetes_Networking_Deep_Dive|K8s 网络深度解析]]
+- [[架构基建/Kubernetes_Storage_Deep_Dive|K8s 存储深度解析]]
+- [[AI运维/Kubernetes_Troubleshooting_Playbook|K8s 运维排障 Playbook]]
 - [[_projects/Cloud_Ops_Agent/docs/corpus/alicloud-proprietary-k8s-agent-corpus-plan|语料建设规划]]

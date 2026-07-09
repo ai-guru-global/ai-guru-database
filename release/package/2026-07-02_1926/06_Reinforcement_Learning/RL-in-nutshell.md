@@ -268,7 +268,7 @@ $$
 | 训练稳定性 | 依赖 Critic 质量 | Group 估计更鲁棒 |
 | 计算开销 | 高 | 中 |
 
-> 更多 GRPO 细节参见 [GRPO 与新对齐方法](../07_Model_Training/Alignment/GRPO_and_New_Alignment_Methods.md)
+> 更多 GRPO 细节参见 [GRPO 与新对齐方法](../模型训练/Alignment/GRPO_and_New_Alignment_Methods.md)
 
 ---
 
@@ -372,7 +372,7 @@ Self-Play 是 AlphaGo/AlphaStar 的核心训练策略——Agent 和自己（的
 - **挑战**: 策略循环 (rock-paper-scissors 问题)
 - **解决**: Fictitious Play、Population-Based Training
 
-> 多智能体与 Agent 架构详见 [AI Agents 详解](../15_Agent_Production/Agent_Foundations/AI_Agents.md)
+> 多智能体与 Agent 架构详见 [AI Agents 详解](../Agent/Agent_Foundations/AI_Agents.md)
 
 ---
 
@@ -420,7 +420,7 @@ flowchart TB
 | 训练效率 | 低 (credit assignment 难) | 高 (逐步反馈) |
 | 适用场景 | 数学/编程 (可验证) | 开放推理 (难验证) |
 
-> 推理模型更多细节参见 [DeepSeek-R1 技术解析](../05_NLP_LLMs/Reasoning_Models/DeepSeek_R1_Technical_Analysis.md)
+> 推理模型更多细节参见 [DeepSeek-R1 技术解析](../大模型/Reasoning_Models/DeepSeek_R1_Technical_Analysis.md)
 
 ---
 
@@ -647,9 +647,9 @@ flowchart TB
 | 深度 RL | DQN/PPO/SAC 详解 | [Deep_RL.md](./Deep_RL/Deep_RL.md) |
 | PPO 深入 | PPO 论文解读 | [PPO_Deep_Dive.md](./Deep_RL/PPO_Deep_Dive.md) |
 | DQN 深入 | DQN 论文解读 | [DQN_Deep_Dive.md](./Deep_RL/DQN_Deep_Dive.md) |
-| AI Agents | 智能体架构与工具使用 | [Agent-in-nutshell.md](../15_Agent_Production/Agent_Foundations/Agent-in-nutshell.md) |
-| GRPO/对齐 | 新一代对齐方法详解 | [GRPO 详解](../07_Model_Training/Alignment/GRPO_and_New_Alignment_Methods.md) |
-| 推理模型 | o1/R1 推理 RL | [DeepSeek-R1](../05_NLP_LLMs/Reasoning_Models/DeepSeek_R1_Technical_Analysis.md) |
+| AI Agents | 智能体架构与工具使用 | [Agent-in-nutshell.md](../Agent/Agent_Foundations/Agent-in-nutshell.md) |
+| GRPO/对齐 | 新一代对齐方法详解 | [GRPO 详解](../模型训练/Alignment/GRPO_and_New_Alignment_Methods.md) |
+| 推理模型 | o1/R1 推理 RL | [DeepSeek-R1](../大模型/Reasoning_Models/DeepSeek_R1_Technical_Analysis.md) |
 | RLHF 概念 | RLHF 核心概念 | [RLHF 概念](../_concepts/rlhf.md) |
 
 ---

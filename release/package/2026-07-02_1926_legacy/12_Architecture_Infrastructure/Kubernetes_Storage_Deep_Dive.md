@@ -715,7 +715,7 @@ A: 后端异常时常把卷置为只读保护（如盘古检测到损坏、云�
 - [[_concepts/csi|CSI（Container Storage Interface）]] — CSI 概念卡片
 - [[_concepts/kubernetes|Kubernetes]] — K8s 编排平台
 - [[_concepts/statefulset|StatefulSet]] — 有状态工作负载
-- [[12_Architecture_Infrastructure/Architecture_Overview/AI_Infrastructure_2026|AI 基础设施 2026]] — AI 基础设施 overview
-- [[12_Architecture_Infrastructure/CNCF_Cloud_Native_AI/kagent_Deep_Dive]] — K8s 原生 DevOps Agent 框架
+- [[架构基建/Architecture_Overview/AI_Infrastructure_2026|AI 基础设施 2026]] — AI 基础设施 overview
+- [[架构基建/CNCF_Cloud_Native_AI/kagent_Deep_Dive]] — K8s 原生 DevOps Agent 框架
 - [[storageclass]]
 - [[persistent-volume]]

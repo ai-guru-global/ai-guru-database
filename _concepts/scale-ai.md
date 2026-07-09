@@ -8,7 +8,7 @@ relationships:
   - target: "_concepts/humanloop"
     type: related_to
 sources:
-  - 12_Architecture_Infrastructure/AI_Stack_Deep_Dive.md
+  - 架构基建/AI_Stack_Deep_Dive.md
 summary: "全球领先的 AI 数据标注 SaaS 平台，为 OpenAI/Meta/Microsoft 等顶级 AI 公司提供 RLHF 数据和训练数据，估值超 130 亿美元。"
 provenance:
   extracted: 0.55

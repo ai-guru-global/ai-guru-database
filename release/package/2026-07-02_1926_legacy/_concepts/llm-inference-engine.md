@@ -12,7 +12,7 @@ relationships:
   - target: "_concepts/inference-autoscaling"
     type: integrates_with
 sources:
-  - 10_Deployment_Inference/Inference_Engines/
+  - 部署推理/Inference_Engines/
 summary: "LLM Inference Engine（推理引擎）是优化 LLM 推理性能与吞吐的服务系统，通过 PagedAttention、连续批处理、推测解码等技术将吞吐量提升数倍到数十倍，是 LLM 生产部署的核心组件。"
 lifecycle: stable
 tier: core
@@ -114,7 +114,7 @@ updated: 2026-06-24
 - [[_concepts/vllm]] — vLLM（最流行）
 - [[_concepts/inference-autoscaling]] — 推理扩缩容
 - [[_concepts/observability]] — 推理可观测性
-- [[10_Deployment_Inference/Inference_Engines/index]] — 推理引擎章节- [[_concepts/cuda-graph]] — Cuda Graph
+- [[部署推理/Inference_Engines/index]] — 推理引擎章节- [[_concepts/cuda-graph]] — Cuda Graph
 - [[_concepts/inference-performance-gaps]] — Inference Performance Gaps
 - [[_concepts/model-routing]] — Model Routing
 - [[_concepts/request-scheduling]] — Request Scheduling

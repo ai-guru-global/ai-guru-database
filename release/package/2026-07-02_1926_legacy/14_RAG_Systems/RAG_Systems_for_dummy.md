@@ -582,8 +582,8 @@ prompt = """
 
 ### 📄 进阶阅读
 - [RAG 系统(完整版)](./RAG_Systems.md) - 技术细节和代码实现
-- [模型部署 - 小白版](../10_Deployment_Inference/Deployment_Inference_for_dummy.md) - RAG 的推理优化
-- [模型评估 - 小白版](../08_Model_Evaluation/Model_Evaluation_for_dummy.md) - RAG 效果评估
+- [模型部署 - 小白版](../部署推理/Deployment_Inference_for_dummy.md) - RAG 的推理优化
+- [模型评估 - 小白版](../模型评估/Model_Evaluation_for_dummy.md) - RAG 效果评估
 
 ### 🛠️ 动手实践
 - [LangChain RAG 教程](https://python.langchain.com/docs/tutorials/rag/)
@@ -591,9 +591,9 @@ prompt = """
 - [Chroma 5 分钟入门](https://docs.trychroma.com/getting-started)
 
 ### 🎓 相关知识
-- [Transformer - 小白版](../05_NLP_LLMs/Transformer_Revolution/Transformer_Revolution_for_dummy.md)
-- [大语言模型 - 小白版](../05_NLP_LLMs/LLM_Architectures/LLM_Architectures_for_dummy.md)
-- [Prompt 工程 - 小白版](../05_NLP_LLMs/Prompt_Engineering/Prompt_Engineering_for_dummy.md)
+- [Transformer - 小白版](../大模型/Transformer_Revolution/Transformer_Revolution_for_dummy.md)
+- [大语言模型 - 小白版](../大模型/LLM_Architectures/LLM_Architectures_for_dummy.md)
+- [Prompt 工程 - 小白版](../大模型/Prompt_Engineering/Prompt_Engineering_for_dummy.md)
 
 ---
 
@@ -601,8 +601,8 @@ prompt = """
 
 ## Related
 
-- [[14_RAG_Systems/RAG-in-nutshell.md|RAG-in-nutshell]]
-- [[14_RAG_Systems/RAG_Systems.md|RAG_Systems]]
-- [[14_RAG_Systems/README_Advanced.md|README_Advanced]]
-- [[14_RAG_Systems/RAG_Frameworks/Spring_AI_RAG_Deep_Dive.md|Spring_AI_RAG_Deep_Dive]]
+- [[RAG系统/RAG-in-nutshell.md|RAG-in-nutshell]]
+- [[RAG系统/RAG_Systems.md|RAG_Systems]]
+- [[RAG系统/README_Advanced.md|README_Advanced]]
+- [[RAG系统/RAG_Frameworks/Spring_AI_RAG_Deep_Dive.md|Spring_AI_RAG_Deep_Dive]]
 - [[_synthesis/rag-vector-database.md|rag-vector-database]]

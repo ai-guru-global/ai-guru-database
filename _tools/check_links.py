@@ -142,8 +142,17 @@ def classify_target(target):
     if t.startswith('_meta/') and ('synthesis' in t.lower() or 'cheatsheet' in t.lower()):
         return 'stale_path'
     # Chapter directory reference (Obsidian shows dir listing — usually intentional)
+    # 支持中文目录名（2026 中文化后目录不再以 NN_ 开头）
     if re.match(r'^\d{2}_[A-Za-z_]+$', t) or re.match(r'^\d{2}_[A-Za-z_]+/$', t):
         return 'dir_reference'
+    # 中文目录名引用（如 [[大模型]]、[[Agent]]、[[大模型/子目录]]）
+    if '/' not in t and os.path.isdir(os.path.join('.', t)):
+        return 'dir_reference'
+    if '/' in t and os.path.isdir(os.path.join('.', t.split('/')[0])):
+        top = t.split('/')[0]
+        if not re.match(r'^[\._]', top) and os.path.isdir(os.path.join('.', top)):
+            # 顶层是中文知识目录，整条是目录内引用
+            pass  # 继续往下分类为 missing_file（如果文件不存在）
     # 90_Learn, 91_Notes, etc. (resource layers)
     if re.match(r'^\d{2}_[A-Za-z_]+$', os.path.basename(t)):
         return 'dir_reference'

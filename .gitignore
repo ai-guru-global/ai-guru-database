@@ -130,3 +130,6 @@ Thumbs.db
 # Large archives
 *.tar.gz
 *.zip
+
+# Empty release staging
+release_new/

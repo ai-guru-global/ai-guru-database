@@ -66,5 +66,5 @@ aliases:
 - [[_concepts/code-generation-workflow]] — 代码生成工作流
 - [[_concepts/ai-agents]] — AI Agent
 - [[_concepts/text2sql]] — Text2SQL
-- [[AI编程/README]] — AI 编程工具
-- [[AI编程/Tools/AI_Coding_Assistants_2026]] — GitHub Copilot 深度解析
+- [[编程/README]] — AI 编程工具
+- [[编程/Tools/AI_Coding_Assistants_2026]] — GitHub Copilot 深度解析

@@ -225,7 +225,7 @@ Agent 框架选择：
 - [部署与推理（小白版）](部署推理/Deployment_Inference_for_dummy.md)
 - [部署与推理（速查版）](部署推理/Inference-in-nutshell.md)
 - [AI Gateway（速查版）](架构基建/AI_Gateway/Gateway-in-nutshell.md)
-- [AIOps（速查版）](AI运维/AIOps-in-nutshell.md)
+- [AIOps（速查版）](运维/AIOps-in-nutshell.md)
 
 **💡 生产优化技术栈**：
 ```

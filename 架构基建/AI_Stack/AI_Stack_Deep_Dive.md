@@ -829,42 +829,42 @@ AI Stack 一体机交付后，日常生产环境涉及容器运行时、GPU 监�
 - [[部署推理/Caching/Speculative_Decoding_Advanced_2026]] — 投机解码高级技术（MTP 相关）
 - [[部署推理/Caching/Prompt_Caching_and_KV_Cache_Optimization]] — KV Cache 优化全景
 
-- [[_concepts/ai-hardware|AI 基础设施]] — AI 基础设施
-- [[_concepts/model-deployment|LLM 部署]] — LLM 部署
-- [[_concepts/multi-head-latent-attention]] — Multi-head Latent Attention (MLA)
-- [[_concepts/model-deployment]] — 模型部署（KV Cache/PagedAttention/推测解码）
-- [[_concepts/llm-infrastructure]] — LLM 基础设施（推理引擎全景）
-- [[_concepts/kv-cache]] — KV Cache 显存墙与五大优化技术族
-- [[_concepts/paged-attention]] — PagedAttention 虚拟内存式 KV 管理
-- [[_concepts/radix-attention]] — RadixAttention 基数树前缀缓存
-- [[_concepts/speculative-decoding]] — 投机解码（Draft-Verify / MTP）
-- [[_concepts/continuous-batching]] — Continuous Batching 动态调度
-- [[_concepts/prefix-caching]] — 前缀缓存复用
-- [[_concepts/attention-variants]] — GQA/MQA/SWA 注意力变体
-- [[_concepts/training-inference-unification]] — 训推一体架构
-- [[_concepts/heterogeneous-gpu]] — 异构 GPU 集群纳管
-- [[_concepts/flash-attention-kernels]] — FlashMLA / FlashInfer 算子引擎
-- [[_concepts/rdma-roce]] — RDMA/RoCE 高速 GPU 网络
-- [[_concepts/model-gateway]] — 模型网关（Synapse / LiteLLM / Kong AI）
-- [[_concepts/rope]] — RoPE 旋转位置编码与长度外推
-- [[_concepts/mixture-of-experts]] — MoE 混合专家模型（稀疏激活）
-- [[_concepts/distributed-parallelism]] — 分布式并行策略（TP/PP/DP/EP）
-- [[_concepts/gpu-virtualization]] — GPU 虚拟化（MIG/算力隔离）
-- [[_concepts/tokenization]] — 分词与 Tokenization（BPE/SentencePiece）
-- [[_concepts/embedding-models]] — 嵌入模型（GTE/bge/MTEB，RAG 检索基础）
-- [[_concepts/rbac]] — RBAC 三权分立访问控制
-- [[_concepts/prefill-decode]] — Prefill/Decode 推理阶段（TTFT/TPS）
-- [[_concepts/knowledge-distillation]] — 知识蒸馏（Teacher-Student，DeepSeek-R1 蒸馏链）
-- [[_concepts/mixed-precision]] — 混合精度（BF16/FP8/AMP）
-- [[_concepts/gpu-interconnect]] — NVLink/GPU 互联（NVSwitch/HCCS）
-- [[_concepts/lora-peft]] — LoRA/PEFT 参数高效微调
-- [[_concepts/cuda-platform]] — CUDA 计算平台（Tensor Core/NVCC/cuDNN）
-- [[_concepts/checkpoint]] — Checkpoint 检查点（分布式训练容错）
-- [[_concepts/single-tenant-architecture]] — 单租户架构（物理级隔离）
-- [[_concepts/sso-saml]] — SSO/SAML2 企业身份认证（AzureAD）
-- [[_concepts/apsara-stack]] — 飞天企业版 Apsara Stack（全栈私有云）
-- [[_concepts/model-registry]] — 模型仓库（版本管理、一键部署）
-- [[_concepts/modelscope]] — ModelScope 魔搭（中文模型社区、SWIFT 微调）
+- [[概念/ai-hardware|AI 基础设施]] — AI 基础设施
+- [[概念/model-deployment|LLM 部署]] — LLM 部署
+- [[概念/multi-head-latent-attention]] — Multi-head Latent Attention (MLA)
+- [[概念/model-deployment]] — 模型部署（KV Cache/PagedAttention/推测解码）
+- [[概念/llm-infrastructure]] — LLM 基础设施（推理引擎全景）
+- [[概念/kv-cache]] — KV Cache 显存墙与五大优化技术族
+- [[概念/paged-attention]] — PagedAttention 虚拟内存式 KV 管理
+- [[概念/radix-attention]] — RadixAttention 基数树前缀缓存
+- [[概念/speculative-decoding]] — 投机解码（Draft-Verify / MTP）
+- [[概念/continuous-batching]] — Continuous Batching 动态调度
+- [[概念/prefix-caching]] — 前缀缓存复用
+- [[概念/attention-variants]] — GQA/MQA/SWA 注意力变体
+- [[概念/training-inference-unification]] — 训推一体架构
+- [[概念/heterogeneous-gpu]] — 异构 GPU 集群纳管
+- [[概念/flash-attention-kernels]] — FlashMLA / FlashInfer 算子引擎
+- [[概念/rdma-roce]] — RDMA/RoCE 高速 GPU 网络
+- [[概念/model-gateway]] — 模型网关（Synapse / LiteLLM / Kong AI）
+- [[概念/rope]] — RoPE 旋转位置编码与长度外推
+- [[概念/mixture-of-experts]] — MoE 混合专家模型（稀疏激活）
+- [[概念/distributed-parallelism]] — 分布式并行策略（TP/PP/DP/EP）
+- [[概念/gpu-virtualization]] — GPU 虚拟化（MIG/算力隔离）
+- [[概念/tokenization]] — 分词与 Tokenization（BPE/SentencePiece）
+- [[概念/embedding-models]] — 嵌入模型（GTE/bge/MTEB，RAG 检索基础）
+- [[概念/rbac]] — RBAC 三权分立访问控制
+- [[概念/prefill-decode]] — Prefill/Decode 推理阶段（TTFT/TPS）
+- [[概念/knowledge-distillation]] — 知识蒸馏（Teacher-Student，DeepSeek-R1 蒸馏链）
+- [[概念/mixed-precision]] — 混合精度（BF16/FP8/AMP）
+- [[概念/gpu-interconnect]] — NVLink/GPU 互联（NVSwitch/HCCS）
+- [[概念/lora-peft]] — LoRA/PEFT 参数高效微调
+- [[概念/cuda-platform]] — CUDA 计算平台（Tensor Core/NVCC/cuDNN）
+- [[概念/checkpoint]] — Checkpoint 检查点（分布式训练容错）
+- [[概念/single-tenant-architecture]] — 单租户架构（物理级隔离）
+- [[概念/sso-saml]] — SSO/SAML2 企业身份认证（AzureAD）
+- [[概念/apsara-stack]] — 飞天企业版 Apsara Stack（全栈私有云）
+- [[概念/model-registry]] — 模型仓库（版本管理、一键部署）
+- [[概念/modelscope]] — ModelScope 魔搭（中文模型社区、SWIFT 微调）
 - [[架构基建/AI_Stack_Production_Toolchain]] — AI Stack 生产工具链总览
 - [[架构基建/AI_Stack_Container_Runtime_Guide]] — AI Stack 容器与运行时指南
 - [[架构基建/AI_Stack_GPU_Monitoring_Guide]] — AI Stack GPU 监控指南

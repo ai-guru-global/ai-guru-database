@@ -101,7 +101,7 @@ LLM 生产化的 10 个痛点              ←→   云原生解法
 | 7 | **KAI Scheduler** | Sandbox | 调度 | 大规模 AI GPU 调度器（YN 机房级） | [[架构基建/CNCF_Cloud_Native_AI/KAI_Scheduler_Deep_Dive.md]] |
 | 8 | **Kueue** | Landscape | 调度 | K8s 原生 Job 排队系统（配额/抢占） | [[架构基建/CNCF_Cloud_Native_AI/Kueue_Deep_Dive.md]] |
 | 9 | **KubeRay** | Landscape | 调度 | 在 K8s 上运行 Ray（vLLM/SGLang 分布式底座） | [[架构基建/CNCF_Cloud_Native_AI/KubeRay_Deep_Dive.md]] |
-| 10 | **Kubeflow** | Incubating | 平台 | K8s 原生 ML 平台（训练流水线） | [[MLOps/Orchestration/Kubeflow_Deep_Dive.md]] |
+| 10 | **Kubeflow** | Incubating | 平台 | K8s 原生 ML 平台（训练流水线） | [[模型运维/Orchestration/Kubeflow_Deep_Dive.md]] |
 | 11 | **KitOps** | Sandbox | 平台 | ModelKit——模型+代码+数据统一打包标准 | [[架构基建/CNCF_Cloud_Native_AI/KitOps_Deep_Dive.md]] |
 | 12 | **Dragonfly** | Graduated | 平台 | P2P 加速——百 GB 模型权重秒级分发 | [[架构基建/CNCF_Cloud_Native_AI/Dragonfly_Deep_Dive.md]] |
 | 13 | **K8sGPT** | Sandbox | AIOps | 用 LLM 给 K8s 集群做"AI 体检" | [[架构基建/CNCF_Cloud_Native_AI/K8sGPT_Deep_Dive.md]] |
@@ -241,9 +241,9 @@ LLM 工作负载的特点是 **GPU 密集 + 长任务 + 资源争抢**，K8s 默
 | KServe / KAITO / llm-d | [[部署推理/index|部署与推理]] | 它们编排的就是 vLLM/SGLang/TGI 这些引擎 |
 | KubeRay / Volcano / Kueue | [[架构基建/Architecture_Overview/AI_Infrastructure_2026|AI 基础设施]] | GPU 调度与集群管理 |
 | Envoy AI Gateway / Kgateway | [[架构基建/AI_Gateway/AI_Gateway_2026|AI Gateway]] | 流量入口的 CNCF 实现 |
-| K8sGPT / HolmesGPT | [[AI运维/index|AI 运维]] | AIOps 的云原生实践 |
-| KitOps | [[MLOps/index|MLOps 流水线]] | 模型制品管理 |
-| Kubeflow | [[MLOps/Orchestration/Kubeflow_Deep_Dive|Kubeflow 深度解析]] | 已有专题，本节引用 |
+| K8sGPT / HolmesGPT | [[运维/index|AI 运维]] | AIOps 的云原生实践 |
+| KitOps | [[模型运维/index|MLOps 流水线]] | 模型制品管理 |
+| Kubeflow | [[模型运维/Orchestration/Kubeflow_Deep_Dive|Kubeflow 深度解析]] | 已有专题，本节引用 |
 | DRA / CDI | [[架构基建/Hardware_Compute/DRA_Deep_Dive|DRA]] / [[架构基建/Hardware_Compute/CDI_Deep_Dive|CDI]] | GPU 设备怎么分配给上面这些项目 |
 
 ---

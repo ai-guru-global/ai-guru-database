@@ -183,8 +183,8 @@ Kubernetes (K8s) 部署:
 ## 下一步
 
 - 想学部署？→ [部署推理/README_for_dummy.md](../部署推理/README_for_dummy.md)
-- 想学 MLOps？→ [MLOps/README_for_dummy.md](../MLOps/README_for_dummy.md)
-- 想学监控？→ [AI运维/README_for_dummy.md](../AI运维/README_for_dummy.md)
+- 想学 MLOps？→ [MLOps/README_for_dummy.md](../模型运维/README_for_dummy.md)
+- 想学监控？→ [AI运维/README_for_dummy.md](../运维/README_for_dummy.md)
 
 ---
 
@@ -196,4 +196,4 @@ Kubernetes (K8s) 部署:
 - [[架构基建/Architecture-in-nutshell.md|Architecture-in-nutshell]]
 - [[架构基建/Architecture_Infrastructure_for_dummy.md|Architecture_Infrastructure_for_dummy]]
 - [[架构基建/Architecture_Overview/Spring_AI_Architecture|Spring_AI_Architecture]]
-- [[_concepts/llm-infrastructure.md|llm-infrastructure]]
+- [[概念/llm-infrastructure.md|llm-infrastructure]]

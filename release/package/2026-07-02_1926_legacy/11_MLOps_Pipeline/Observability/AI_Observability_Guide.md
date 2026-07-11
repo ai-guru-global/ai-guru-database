@@ -748,9 +748,9 @@ groups:
 
 ## 🔗 相关主题
 
-- [SRE for AI Systems](../../AI运维/SRE_Reliability/SRE_for_AI_Systems.md) — SLI/SLO 设计与错误预算
-- [事故响应手册](AI运维/SRE_Reliability/AI_Incident_Response_Playbook) — Runbook 与事故处理
-- [AI Ops 2026](AI运维/AI_Ops_2026.md) — 智能运维完整体系
+- [SRE for AI Systems](../../运维/SRE_Reliability/SRE_for_AI_Systems.md) — SLI/SLO 设计与错误预算
+- [事故响应手册](运维/SRE_Reliability/AI_Incident_Response_Playbook) — Runbook 与事故处理
+- [AI Ops 2026](运维/AI_Ops_2026.md) — 智能运维完整体系
 - [部署与推理](部署推理/Inference-in-nutshell.md) — 推理性能优化
 - [AI 成本优化](../../架构基建/Architecture_Overview/AI_Cost_Optimization_2026.md) — Token 经济学与 FinOps
 
@@ -758,8 +758,8 @@ groups:
 
 ## Related
 
-- [[AI运维/AIOps-in-nutshell.md|AIOps-in-nutshell]]
-- [[AI运维/SRE_Reliability/AI_Incident_Response_Playbook|AI_Incident_Response_Playbook]]
-- [[AI运维/AI_Ops_for_dummy.md|AI_Ops_for_dummy]]
-- [[AI运维/README.md|AI运维 README]]
-- [[AI运维/README_for_dummy.md|README_for_dummy]]
+- [[运维/AIOps-in-nutshell.md|AIOps-in-nutshell]]
+- [[运维/SRE_Reliability/AI_Incident_Response_Playbook|AI_Incident_Response_Playbook]]
+- [[运维/AI_Ops_for_dummy.md|AI_Ops_for_dummy]]
+- [[运维/README.md|AI运维 README]]
+- [[运维/README_for_dummy.md|README_for_dummy]]

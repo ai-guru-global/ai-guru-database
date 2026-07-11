@@ -137,6 +137,6 @@ Prefix Caching缓存共享的System Prompt前缀；LLMLingua等工具压缩长Pr
 
 - [[论文精读/Architecture/BERT_Deep_Dive.md]] — BERT 深度解读
 - [[论文精读/Scaling/GPT3_Deep_Dive.md]] — GPT-3 深度解读
-- [[AI入门/AI_Practical_Labs.md]] — AI 实践实验室
-- [[AI入门/AI_Tools_Practical_Guide.md]] — AI 工具实战指南
+- [[入门/AI_Practical_Labs.md]] — AI 实践实验室
+- [[入门/AI_Tools_Practical_Guide.md]] — AI 工具实战指南
 - [[_concepts/sequence-models.md|sequence-models]]

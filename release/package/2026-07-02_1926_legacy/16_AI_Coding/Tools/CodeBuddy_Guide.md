@@ -99,8 +99,8 @@ CodeBuddy 生态:
 
 ## Related
 
-- [[AI编程/Theory/AI_Coding_Theory]] — AI辅助编程理论基础 (共享: ai-coding, code-generation, cursor, github-copilot)
-- [[AI编程/Tools/Comate_Guide]] — Comate 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
-- [[AI编程/Tools/Coze_Guide]] — Coze 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
-- [[AI编程/Tools/Cursor_Guide]] — Cursor 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
-- [[AI编程/AI_Coding_for_dummy.md|AI_Coding_for_dummy]]
+- [[编程/Theory/AI_Coding_Theory]] — AI辅助编程理论基础 (共享: ai-coding, code-generation, cursor, github-copilot)
+- [[编程/Tools/Comate_Guide]] — Comate 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
+- [[编程/Tools/Coze_Guide]] — Coze 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
+- [[编程/Tools/Cursor_Guide]] — Cursor 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
+- [[编程/AI_Coding_for_dummy.md|AI_Coding_for_dummy]]

@@ -806,7 +806,7 @@ $$\mathbf{h}_i = \begin{cases} 0 & \text{with prob } p \\ \frac{1}{1-p} \mathbf{
 ### 7.3 纵向进阶
 - [**模型压缩**](../../部署推理/Deployment_Inference.md): 剪枝、量化、蒸馏
 - [**迁移学习**](../../大模型/Fine_tuning_Techniques/Fine_tuning_Techniques.md): 预训练 + 微调
-- [**神经架构搜索**](../../MLOps/MLOps_Pipeline.md): AutoML
+- [**神经架构搜索**](../../模型运维/MLOps_Pipeline.md): AutoML
 
 ## 8. 面试高频问题 (Interview FAQs)
 

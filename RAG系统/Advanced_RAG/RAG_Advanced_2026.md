@@ -622,5 +622,5 @@ print(results)
 - [[RAG系统/RAG_Systems.md|RAG_Systems]]
 - [[RAG系统/README_Advanced.md|README_Advanced]]
 - [[RAG系统/RAG_Frameworks/Spring_AI_RAG_Deep_Dive.md|Spring_AI_RAG_Deep_Dive]]
-- [[_synthesis/rag-vector-database.md|rag-vector-database]]
-- [[_synthesis/multimodal-rag|多模态 × RAG]] — 图文音视频统一检索
+- [[治理/rag-vector-database.md|rag-vector-database]]
+- [[治理/multimodal-rag|多模态 × RAG]] — 图文音视频统一检索

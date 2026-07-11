@@ -645,7 +645,7 @@ for batch in dataloader:
 ### 进阶推荐
 - **[模型压缩](../../部署推理/Deployment_Inference.md)**: 量化与分布式训练结合
 - **[大模型训练](../../大模型/Fine_tuning_Techniques/Fine_tuning_Techniques.md)**: 具体实践案例
-- **[MLOps](../../MLOps/MLOps_Pipeline.md)**: 集群管理与监控
+- **[MLOps](../../模型运维/MLOps_Pipeline.md)**: 集群管理与监控
 
 ---
 

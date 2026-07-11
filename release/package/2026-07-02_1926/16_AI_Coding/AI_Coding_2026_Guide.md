@@ -112,5 +112,5 @@ aliases:
 | 复杂架构设计 | 中 | 需要人工主导 |
 | 安全关键代码 | 差 | 必须人工审查 |
 
-> **关联**: -> [[AI编程/README|AI 编程]] | [[AI编程/Tools|编程工具]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[编程/README|AI 编程]] | [[编程/Tools|编程工具]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
 

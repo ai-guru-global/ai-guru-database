@@ -5,7 +5,7 @@ description: >
   and the user says "/wiki-stage-commit", "review staged pages", "commit staged writes",
   "promote staged pages", "approve staged changes", or "what's waiting in staging".
   Shows each staged file, lets the user accept or reject it, and moves accepted files to
-  their final wiki locations. Rejected files are moved back to _raw/ for manual editing.
+  their final wiki locations. Rejected files are moved back to 原始/ for manual editing.
 ---
 
 # Wiki Stage Commit — Staged Write Promotion
@@ -23,7 +23,7 @@ You are reviewing LLM-written pages that are waiting in `_staging/` for human ap
 ```
 /wiki-stage-commit               # interactive review: show each file and ask accept/reject
 /wiki-stage-commit --all         # accept all staged files without per-file review
-/wiki-stage-commit --reject-all  # reject all staged files (move to _raw/ for manual editing)
+/wiki-stage-commit --reject-all  # reject all staged files (move to 原始/ for manual editing)
 /wiki-stage-commit --list        # list staged files with summary, no changes
 ```
 
@@ -116,9 +116,9 @@ If `--list` flag is set, stop after printing the inventory (Step 1).
 
 ### Rejecting a file
 
-Move it to `$OBSIDIAN_VAULT_PATH/_raw/` for manual editing:
-- `_staging/concepts/page.md` → `_raw/rejected-concepts-page.md`
-- `_staging/concepts/page.patch.md` → `_raw/rejected-patch-concepts-page.md`
+Move it to `$OBSIDIAN_VAULT_PATH/原始/` for manual editing:
+- `_staging/concepts/page.md` → `原始/rejected-concepts-page.md`
+- `_staging/concepts/page.patch.md` → `原始/rejected-patch-concepts-page.md`
 - Prefix with `rejected-` so the user can identify it
 
 ### Conflict detection on patch accept
@@ -148,7 +148,7 @@ Stage commit complete.
   concepts/transformer-architecture.md → updated (patch applied)
 
 ❌  Rejected (M):
-  skills/fine-tuning-llms.md          → moved to _raw/rejected-skills-fine-tuning-llms.md
+  skills/fine-tuning-llms.md          → moved to 原始/rejected-skills-fine-tuning-llms.md
 
 ⏭️  Skipped (K):
   references/attention-is-all-you-need.md → still in _staging/

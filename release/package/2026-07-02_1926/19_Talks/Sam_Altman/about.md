@@ -127,9 +127,9 @@ Altman 的管理风格融合了硅谷创业文化与技术理想主义。他强�
 
 - [Talks 主题合成 2026](业界观点/Talks_Synthesis_2026.md) -- Scaling Laws、开源 vs 闭源、AI 安全、Agent 未来等主题中 Altman 的立场
 - [Sam Altman 金句集](业界观点/Jensen_Huang/sayings.md) -- 更多金句与权威来源链接
-- [AI 历史时间线](AI入门/AI_History_Timeline.md) -- ChatGPT 发布与 AI 产业爆发
-- [AI 伦理与社会](AI入门/AI_Ethics_Society.md) -- Altman 参议院听证与 AI 监管讨论
-- [AI 未来趋势](AI入门/AI_Future_Trends.md) -- AGI 时间线与产业格局预判
+- [AI 历史时间线](入门/AI_History_Timeline.md) -- ChatGPT 发布与 AI 产业爆发
+- [AI 伦理与社会](入门/AI_Ethics_Society.md) -- Altman 参议院听证与 AI 监管讨论
+- [AI 未来趋势](入门/AI_Future_Trends.md) -- AGI 时间线与产业格局预判
 - [Agent 生产实践](../../Agent/README.md) -- OpenAI 的 Agent 生态与工具调用
 - [AI 伦理与安全](../../伦理安全/README.md) -- AI 对齐与安全部署策略
 - [LLM 基础](../../大模型/README.md) -- GPT 系列模型架构与演进

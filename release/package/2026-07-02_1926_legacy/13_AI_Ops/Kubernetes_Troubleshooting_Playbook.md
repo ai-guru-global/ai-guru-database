@@ -588,4 +588,4 @@ kubectl get nodes -o json | jq -r '
 - [[架构基建/Kubernetes_Core_Components_Deep_Dive|Kubernetes 核心组件深度解析]]
 - [[架构基建/Kubernetes_Networking_Deep_Dive|Kubernetes 网络深度解析]]
 - [[架构基建/Kubernetes_Storage_Deep_Dive|Kubernetes 存储深度解析]]
-- [[AI运维/SRE_Reliability/AI_Incident_Response_Playbook|AI 事故响应 Playbook]]
+- [[运维/SRE_Reliability/AI_Incident_Response_Playbook|AI 事故响应 Playbook]]

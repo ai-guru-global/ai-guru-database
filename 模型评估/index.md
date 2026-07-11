@@ -12,12 +12,15 @@ This page indexes the contents of `模型评估`.
 
 ## Subdirectories
 
+- [[模型评估/Automation/index|Automation]]
 - [[模型评估/Benchmarks/index|Benchmarks]]
 - [[模型评估/Evaluation_Tools/index|Evaluation Tools]]
 
 ## Files
 
 - [[模型评估/Evaluation-in-nutshell|Evaluation In Nutshell]]
+- [[模型评估/Automation/AB_Testing_Template|A/B 测试方案模板]]
+- [[模型评估/Automation/Evaluation_Report_Template|模型评估报告模板]]
 - [[模型评估/Evaluation_Automation_2026|Evaluation Automation 2026]]
 - [[模型评估/Evaluation_Metrics|Evaluation Metrics]]
 - [[模型评估/Fairness_Evaluation_for_dummy|Fairness Evaluation For Dummy]]

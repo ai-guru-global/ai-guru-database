@@ -77,11 +77,11 @@ sources: []
 - [[大模型/LLM_Architectures/LLM_Internals_Models_Frontiers]] — BERT/GPT/Llama/DeepSeek 家族、MoE/SSM/测试时计算
 
 ### AI 入门基础（6 页，跨目录）
-- [[AI入门/AI_Beginner_Fundamentals]] — AI 定义/历史/强vs弱、AI⊃ML⊃DL、技术生态
+- [[入门/AI_Beginner_Fundamentals]] — AI 定义/历史/强vs弱、AI⊃ML⊃DL、技术生态
 - [[机器学习/ML_For_Beginners]] — 四大学习范式、评估指标与选型
 - [[深度学习/Deep_Learning_For_Beginners]] — 神经网络、梯度下降、主流架构与局限
 - [[大模型/LLM_For_Beginners]] — Next Token Prediction、注意力、预训练→微调→RLHF
-- [[AI入门/AI_Application_Scenarios]] — BROKE 框架、上下文工程、五大应用场景
+- [[入门/AI_Application_Scenarios]] — BROKE 框架、上下文工程、五大应用场景
 - [[伦理安全/AI_Ethics_And_Future_For_Beginners]] — 伦理/对齐、就业、AGI、AI 硬件与量子
 
 ---
@@ -161,14 +161,14 @@ sources: []
 - [[大模型/LLM_Architecture_Evolution]] — LLM 架构演进
 
 ### AI 入门与新架构
-- [[AI入门/AI_Reasoning_Models_Guide]] — 推理模型指南
-- [[AI入门/AI_New_Architectures]] — 新架构（SSM/DeepSeek）
-- [[AI入门/AI_Multimodal_GenAI]] — 多模态与生成式 AI
+- [[入门/AI_Reasoning_Models_Guide]] — 推理模型指南
+- [[入门/AI_New_Architectures]] — 新架构（SSM/DeepSeek）
+- [[入门/AI_Multimodal_GenAI]] — 多模态与生成式 AI
 
 ### Claude 与 AI 编码
-- [[AI编程/Tools/Claude_Complete_Guide]] — Claude 完整指南
-- [[AI编程/Tools/Claude_Code_Deep_Dive]] — Claude Code 深度解析
-- [[AI编程/Theory/Claude_Agent_Architecture]] — Claude Agent 架构
+- [[编程/Tools/Claude_Complete_Guide]] — Claude 完整指南
+- [[编程/Tools/Claude_Code_Deep_Dive]] — Claude Code 深度解析
+- [[编程/Theory/Claude_Agent_Architecture]] — Claude Agent 架构
 
 ### 智能体与 Harness
 - [[Agent/Agent_Foundations/Agentic_AI_Complete_Guide]] — 智能体 AI 完整指南

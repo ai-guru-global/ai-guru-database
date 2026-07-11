@@ -140,7 +140,7 @@ Open each selected session file and extract only the content relevant to the que
 - Filter to `type: "event_msg"` (user turns) and `type: "response_item"` (model output)
 - Search with: `grep -i "<query terms>" <rollout.jsonl>`
 - Extract: matching turns + their parent context (the `turn_context` preceding the match)
-- Skip: `session_meta` events (operational metadata, not knowledge)
+- Skip: `session治理` events (operational metadata, not knowledge)
 
 **Hermes** (memory files + session JSONL):
 - For memory files: read the full file (they're short — typically <500 words each)

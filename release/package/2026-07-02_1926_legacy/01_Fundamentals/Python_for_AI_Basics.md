@@ -288,5 +288,5 @@ except Exception as e:
 - [[数学基础/Python_Data_Science_Toolkit]] — NumPy / Pandas / Matplotlib / Scikit-learn
 - [[数学基础/AI_Development_Environment_Setup]] — Jupyter / Conda / Colab / GPU
 - [[数学基础/Linear_Algebra/Linear_Algebra_for_dummy]] — 线代基础
-- [[AI入门/AI_Fundamentals_for_dummy]] — AI 概念小白版
+- [[入门/AI_Fundamentals_for_dummy]] — AI 概念小白版
 - [[_synthesis/python-data-science-pipeline|Python × 数据科学]] — AI 入门完整工具链

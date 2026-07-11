@@ -139,4 +139,4 @@ Pod 提交
 - [[_concepts/gpu-operator]] — NVIDIA GPU Operator
 - [[架构基建/AI_Stack/HAMi_Deep_Dive]] — HAMi 深度解析
 - [[架构基建/AI_Stack/HAMi_Operation_Guide]] — HAMi 运维指南
-- [[AI运维/SRE_Reliability/HAMi_Troubleshooting_Guide]] — HAMi 问题排查
+- [[运维/SRE_Reliability/HAMi_Troubleshooting_Guide]] — HAMi 问题排查

@@ -379,13 +379,13 @@ Transformer 自回归生成，每生成一个 token 需关注前面所有 token
 
 ## Related
 
-- [[AI运维/AI_Ops_2026|AI 运维 2026]] — 运维全栈
+- [[运维/AI_Ops_2026|AI 运维 2026]] — 运维全栈
 - [[部署推理/README|部署与推理]] — 推理优化技术
 - [[部署推理/Inference_Optimization_for_dummy|推理优化入门]] — 量化/批处理入门
 - [[_concepts/continuous-batching|连续批处理]] — 概念卡
 - [[_concepts/kv-cache|KV Cache]] — 概念卡
 - [[_concepts/model-compression|模型压缩]] — 量化概念
-- [[AI运维/SLO_Error_Budget_AI_Deep_Dive|SLO 与错误预算]] — 成本与质量的平衡
+- [[运维/SLO_Error_Budget_AI_Deep_Dive|SLO 与错误预算]] — 成本与质量的平衡
 
 ---
 

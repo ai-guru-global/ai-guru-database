@@ -99,7 +99,7 @@ RAG 的生成阶段对 TTFT（首个 token 时间）和前缀缓存命中率非�
 ### 进阶方向
 - [Agent 生产](../Agent/README.md) — Agentic RAG、记忆系统
 - [AI Gateway](../架构基建/CNCF_Cloud_Native_AI/README.md) — RAG 服务的流量治理
-- [测试](../AI测试/README.md) — RAG 系统的评估（RAGAS）
+- [测试](../测试/README.md) — RAG 系统的评估（RAGAS）
 - [MLOps](../MLOps/) — RAG 流水线的自动化
 
 ---

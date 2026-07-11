@@ -40,4 +40,4 @@ aliases:
 - 将 LLM 应用推向生产的工程师
 - 负责 AI 基础设施的 DevOps/SRE
 
-> **关联**: -> [[部署推理|部署推理]] | [[AI运维|AI Ops]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[部署推理|部署推理]] | [[运维|AI Ops]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]

@@ -91,6 +91,8 @@ sources: []
 |------|------|----------|
 | [AI Gateway 2026](./AI_Gateway/AI_Gateway_2026.md) | AI Gateway 全景：路由、安全、可观测性 | 架构师、SRE |
 | [AI Gateway Comparison](./AI_Gateway/AI_Gateway_Comparison_2026.md) | 主流 Gateway 横向对比 | 选型参考 |
+| [LLM Gateway 深度实战](./AI_Gateway/LLM_Gateway_Deep_Dive.md) | 路由、Fallback、限流、成本归因与 Terraform/Helm 模板 | 平台工程师 |
+| [AI API 设计指南](./AI_Gateway/API_Design_for_AI.md) | REST/gRPC/OpenAPI 选型、流式响应与版本管理 | 后端 / API 设计师 |
 | [LiteLLM Deep Dive](./AI_Gateway/LiteLLM_Deep_Dive.md) | LiteLLM 统一接口层 | 开发者 |
 | [Kong AI Gateway](./AI_Gateway/Kong_AI_Gateway_Deep_Dive.md) | Kong AI 网关插件体系 | 平台工程师 |
 | [Portkey Deep Dive](./AI_Gateway/Portkey_Deep_Dive.md) | Portkey 可观测性网关 | 架构师 |
@@ -157,8 +159,8 @@ sources: []
 
 ### 进阶方向
 - [AI Gateway](./AI_Gateway/AI_Gateway_README.md) — 流量接入层设计（本章子目录）
-- [AI Ops](../AI运维/README.md) — 运维监控与自动化
-- [Agent 生产](../Agent/README.md) — Agent 系统的架构模式
+- [AI Ops](../运维/README.md) — 运维监控与自动化
+- [Agent 生产](../智能体/README.md) — Agent 系统的架构模式
 
 ---
 
@@ -175,8 +177,8 @@ sources: []
 
 - [[架构基建/AI_Stack_Deep_Dive|阿里云 AI Stack: 企业级软硬一体 AI 推理平台]]
 - [[架构基建/Hardware_Compute/CDI_Deep_Dive|CDI (Container Device Interface): 容器设备接口标准]]
-- [[_concepts/ai-architecture]] — AI 系统架构
-- [[_concepts/llm-infrastructure]] — LLM 基础设施
+- [[概念/ai-architecture]] — AI 系统架构
+- [[概念/llm-infrastructure]] — LLM 基础设施
 - [[架构基建/Alibaba_Cloud_AI_Stack_Deep_Dive|阿里云 AI Stack 深度解读]] — 专有云 AI 推理平台三层架构
 - [[架构基建/AI_Stack_Production_Toolchain|AI Stack 生产工具链总览]]
 - [[架构基建/AI_Stack_Container_Runtime_Guide|AI Stack 容器与运行时指南]]

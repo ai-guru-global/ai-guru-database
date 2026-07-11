@@ -83,12 +83,12 @@ sources: []
 
 ## 与其他章节的关联
 
-- [AI 基础](../AI入门/README.md) — 面试中的通用知识
+- [AI 基础](../入门/README.md) — 面试中的通用知识
 - [机器学习](../机器学习/README.md) — ML 岗位核心理论
 - [深度学习](../深度学习/README.md) — DL 岗位核心理论
 - [部署推理](../部署推理/README.md) — MLE/MLOps 岗位实操
-- [Agent 生产](../Agent/README.md) — Agent 相关岗位前沿知识
-- [测试](../AI测试/README.md) — AI Evaluation Engineer 核心技能
+- [Agent 生产](../智能体/README.md) — Agent 相关岗位前沿知识
+- [测试](../测试/README.md) — AI Evaluation Engineer 核心技能
 
 ---
 
@@ -109,7 +109,7 @@ sources: []
 - [[面试岗位/jobs|AI 相关岗位与工种清单]]
 - [[面试岗位/interview_notes_template|面试复盘模板]]
 - [[面试岗位/Interviews_for_dummy|AI 面试准备 - 小白版]]
-- [[_synthesis/career-interviews|AI 面试与职业发展]]
+- [[治理/career-interviews|AI 面试与职业发展]]
 
 - [[面试岗位/README|AI 面试准备 (Interviews)]]
 

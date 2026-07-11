@@ -216,4 +216,4 @@ FP8在H100/H200上原生支持，几乎无损。AWQ/GPTQ适合消费级GPU部署
 - Artificial time-series-analysis 第三方性能对比
 ## Related
 
-- [[AI入门/AI_Technology_Landscape.md]] — AI 技术全景
+- [[入门/AI_Technology_Landscape.md]] — AI 技术全景

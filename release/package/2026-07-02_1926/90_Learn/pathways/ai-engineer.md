@@ -86,7 +86,7 @@ AI 工程师（AI Engineer）是介于 ML 研究员和软件工程师之间的�
     └── 输出格式控制
 
 推荐资源:
-  - [[AI入门/AI_Fundamentals_for_dummy]]
+  - [[入门/AI_Fundamentals_for_dummy]]
   - [[数学基础/Python_for_AI_Basics]]
   - [[大模型/Prompt_Engineering/Prompt_Engineering_for_dummy]]
   - DeepLearning.AI 短课程

@@ -74,7 +74,7 @@ sources: []
 
 ## Related
 
-- [[_concepts/checkpoint|Checkpoint]]
-- [[_concepts/safetensors|Safetensors]]
-- [[_concepts/mlflow|MLflow]]
-- [[MLOps/Troubleshooting/Model_Version_Rollback_Playbook|模型版本回滚 Runbook]]
+- [[概念/checkpoint|Checkpoint]]
+- [[概念/safetensors|Safetensors]]
+- [[概念/mlflow|MLflow]]
+- [[模型运维/Troubleshooting/Model_Version_Rollback_Playbook|模型版本回滚 Runbook]]

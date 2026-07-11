@@ -565,7 +565,7 @@ serviceMonitor:
 - [[Agent/Agent_Production_Deployment_Runbook|Agent 生产部署 Runbook]] — Agent 系统的 Gateway 集成与流量治理
 - [[MLOps/LLM_Guardrails_and_Safety_Ops_2026|LLM 护栏与安全运维]] — Gateway 与输入输出护栏的协同
 - [[部署推理/Deployment_Inference_2026|部署与推理 2026]] — 推理服务化与 Gateway 上下游架构
-- [[AI运维/AI_Ops_2026|AI Ops 2026]] — AI 系统运维、可观测性与 FinOps 实践
+- [[运维/AI_Ops_2026|AI Ops 2026]] — AI 系统运维、可观测性与 FinOps 实践
 - [[RAG系统/RAG_Production_Architecture_Deep_Dive|RAG 生产架构深度实战]] — RAG 系统的 Gateway、检索与生成链路
 
 ---

@@ -26,7 +26,7 @@ When inserting links in Step 4, apply the link format from `llm-wiki/SKILL.md` (
 
 ## Step 1: Build the Page Registry
 
-Glob all `.md` files in the vault (excluding `_archives/`, `.obsidian/`). For each page, extract:
+Glob all `.md` files in the vault (excluding `归档/`, `.obsidian/`). For each page, extract:
 
 - **Filename** (without `.md`) — this is the wikilink target
 - **Title** from frontmatter
@@ -214,7 +214,7 @@ To promote: move the page to `projects/<project-name>/references/` and update al
 
 ### Pages Skipped: 3
 - `index.md`, `log.md` — special files
-- `_archives/*` — archived content
+- `归档/*` — archived content
 ```
 
 ## Step 7: Update Log and Hot Cache
@@ -230,7 +230,7 @@ Append to `log.md`:
 
 - **Run after every ingest.** New pages are almost always poorly connected. This is the fix.
 - **Be conservative with inline links.** Only link the first natural mention, not every occurrence.
-- **Don't touch pages in `_archives/`.** Those are frozen snapshots.
+- **Don't touch pages in `归档/`.** Those are frozen snapshots.
 - **Respect existing structure.** If a page carefully curates its links in a `## Key Concepts` section, add to that section rather than creating a separate `## Related`.
 - **Entity pages are link magnets.** An entity like `jane-doe` should be linked from almost every project page. Prioritize these.
 

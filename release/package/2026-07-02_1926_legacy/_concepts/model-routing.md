@@ -142,6 +142,6 @@ def route_model(prompt, history=None):
 - [[_concepts/model-serving|模型服务]] — 路由的基础设施
 - [[_concepts/continuous-batching|连续批处理]] — 路由后各模型的批处理
 - [[_concepts/ab-testing-framework|A/B 测试]] — 路由策略的评估
-- [[AI运维/Cost_Optimization_AI_Deep_Dive|成本优化]] — 路由是降本核心手段
+- [[运维/Cost_Optimization_AI_Deep_Dive|成本优化]] — 路由是降本核心手段
 - [[部署推理/README|部署与推理]] — 推理架构
 - [[架构基建/AI_Gateway/AI_Gateway_2026|AI Gateway]] — 网关层路由实现

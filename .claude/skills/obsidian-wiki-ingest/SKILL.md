@@ -20,7 +20,7 @@ You are the automation layer that ingests documents into the Obsidian wiki proje
 - Create or update project overview pages and cross-links as needed.
 
 ## Inputs
-- Source documents (Markdown, PDFs, text, images) from OBSIDIAN_SOURCES_DIR or _raw/
+- Source documents (Markdown, PDFs, text, images) from OBSIDIAN_SOURCES_DIR or 原始/
 - Vault path from OBSIDIAN_VAULT_PATH
 - Optional: ingest mode (append|full|raw)
 

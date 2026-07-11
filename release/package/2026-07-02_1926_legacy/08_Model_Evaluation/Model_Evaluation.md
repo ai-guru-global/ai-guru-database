@@ -1391,9 +1391,9 @@ class LLMEvaluationPipeline:
 - [在线评估](./Evaluation_Tools/Online_Evaluation.md) — 上线后的真实效果评估
 - [MLOps Pipeline](../MLOps/MLOps_Pipeline.md) — 评估自动化和持续监控
 - [价值对齐](../伦理安全/Value_Alignment/Value_Alignment.md) — 公平性评估
-- [AI 测试框架](../AI测试/README.md) — 系统化的 AI 测试方法
+- [AI 测试框架](../测试/README.md) — 系统化的 AI 测试方法
 - [特征工程](../机器学习/Feature_Engineering/Feature_Engineering.md) — 评估指导特征改进
-- [AI Ops 监控](../AI运维/AI_Ops_2026.md) — 生产环境模型监控
+- [AI Ops 监控](../运维/AI_Ops_2026.md) — 生产环境模型监控
 
 ---
 

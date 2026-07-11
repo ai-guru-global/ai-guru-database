@@ -1365,4 +1365,4 @@ async def health():
 - [[93_Templates/DOCUMENT_TEMPLATES.md|DOCUMENT_TEMPLATES]]
 - [[93_Templates/IMPORT_GUIDE.md|IMPORT_GUIDE]]
 - [[93_Templates/README.md|93_Templates README]]
-- [[AI入门/AI_Tools_Practical_Guide.md|AI_Tools_Practical_Guide]]
+- [[入门/AI_Tools_Practical_Guide.md|AI_Tools_Practical_Guide]]

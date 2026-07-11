@@ -700,7 +700,7 @@ Yi 生态工具链:
 - [[大模型/Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]] — 国产模型对比矩阵
 - [[大模型/Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs]] — LLM 微调技术
 - [[大模型/LLM_Architectures/MoE_Routing_and_Load_Balancing]] — MoE 路由与负载均衡
-- [[90_Learn/courses/microsoft/microsoft_genai_for_beginners]] — 生成式 AI 入门课程
+- [[学习/courses/microsoft/microsoft_genai_for_beginners]] — 生成式 AI 入门课程
 
 ---
 

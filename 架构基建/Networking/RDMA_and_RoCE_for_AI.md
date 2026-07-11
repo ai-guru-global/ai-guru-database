@@ -94,8 +94,8 @@ spec:
 
 ## Related
 
-- [[_concepts/rdma-roce|RDMA/RoCE]]
-- [[_concepts/infiniBand|InfiniBand]]
+- [[概念/rdma-roce|RDMA/RoCE]]
+- [[概念/infiniBand|InfiniBand]]
 - [[架构基建/Networking/AI_Networking_Fundamentals|AI 网络基础]]
 
 - [[架构基建/README|架构与基础设施 (Architecture & Infrastructure)]]

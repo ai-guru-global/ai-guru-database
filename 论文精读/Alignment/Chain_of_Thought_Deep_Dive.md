@@ -244,3 +244,13 @@ CoT Prompting (2022)
 - Kojima et al., "Large Language Models are Zero-Shot Reasoners" (2022)
 - Wang et al., "Self-Consistency Improves Chain of Thought Reasoning" (2022)
 - Yao et al., "Tree of Thoughts: Deliberate Problem Solving" (2023)
+
+---
+
+## Related
+
+- [[../../概念/LLM/cot-react-reasoning-prompt|CoT 推理概念卡]] — 思维链的概念定义
+- [[../../大模型/Reasoning_Models|推理模型]] — 推理增强 LLM 架构
+- [[../../大模型/LLM_Architectures/LLM_Internals_Inference|LLM 推理内部机制]] — 推理阶段技术细节
+- [[../../深度学习/Optimization/Optimization|优化方法]] — 推理优化与解码策略
+- [[../../智能体/Agent_Foundations|Agent 基础]] — CoT 在 Agent 推理中的应用

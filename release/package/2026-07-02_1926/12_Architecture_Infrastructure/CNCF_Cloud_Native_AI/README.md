@@ -241,7 +241,7 @@ LLM 工作负载的特点是 **GPU 密集 + 长任务 + 资源争抢**，K8s 默
 | KServe / KAITO / llm-d | [[部署推理/index|部署与推理]] | 它们编排的就是 vLLM/SGLang/TGI 这些引擎 |
 | KubeRay / Volcano / Kueue | [[架构基建/Architecture_Overview/AI_Infrastructure_2026|AI 基础设施]] | GPU 调度与集群管理 |
 | Envoy AI Gateway / Kgateway | [[架构基建/AI_Gateway/AI_Gateway_2026|AI Gateway]] | 流量入口的 CNCF 实现 |
-| K8sGPT / HolmesGPT | [[AI运维/index|AI 运维]] | AIOps 的云原生实践 |
+| K8sGPT / HolmesGPT | [[运维/index|AI 运维]] | AIOps 的云原生实践 |
 | KitOps | [[MLOps/index|MLOps 流水线]] | 模型制品管理 |
 | Kubeflow | [[MLOps/Orchestration/Kubeflow_Deep_Dive|Kubeflow 深度解析]] | 已有专题，本节引用 |
 | DRA / CDI | [[架构基建/Hardware_Compute/DRA_Deep_Dive|DRA]] / [[架构基建/Hardware_Compute/CDI_Deep_Dive|CDI]] | GPU 设备怎么分配给上面这些项目 |

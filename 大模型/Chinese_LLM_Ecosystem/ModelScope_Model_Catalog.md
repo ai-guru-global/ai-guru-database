@@ -714,8 +714,8 @@ sources: []
 
 - 本目录数据抓取自 ModelScope 官方 API（`PUT /api/v1/dolphin/models`），仅含各厂商**官方 namespace** 下发布的模型，已剔除社区量化/微调版本。
 - 下载量、收藏量为抓取时点 (2026-06-19) 的累计值，会随时间变化。
-- 原始完整数据见 `_sources/modelscope/raw/`。
-- 抓取脚本可复跑：`python3 _sources/modelscope/raw/scraper.py`
+- 原始完整数据见 `来源/modelscope/raw/`。
+- 抓取脚本可复跑：`python3 来源/modelscope/raw/scraper.py`
 
 ## 相关文档 (Related)
 

@@ -190,15 +190,15 @@ resources:
 
 ## Related
 
-- [[_concepts/retrieval-latency|Retrieval Latency]]
-- [[_concepts/vector-index|Vector Index]]
-- [[_concepts/hnsw|HNSW]]
-- [[_concepts/ivf|IVF]]
-- [[_concepts/hybrid-search|Hybrid Search]]
-- [[_concepts/bm25|BM25]]
-- [[_concepts/cross-encoder|Cross-Encoder]]
-- [[_concepts/embedding-models|Embedding Models]]
-- [[_concepts/vector-database|Vector Database]]
+- [[概念/retrieval-latency|Retrieval Latency]]
+- [[概念/vector-index|Vector Index]]
+- [[概念/hnsw|HNSW]]
+- [[概念/ivf|IVF]]
+- [[概念/hybrid-search|Hybrid Search]]
+- [[概念/bm25|BM25]]
+- [[概念/cross-encoder|Cross-Encoder]]
+- [[概念/embedding-models|Embedding Models]]
+- [[概念/vector-database|Vector Database]]
 - [[RAG系统/RAG_Systems|RAG 系统]]
 
 - [[RAG系统/README|RAG 系统 (RAG Systems)]]

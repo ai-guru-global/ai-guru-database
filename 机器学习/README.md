@@ -114,7 +114,7 @@ sources: []
 - [[机器学习/Supervised_Learning/Supervised_Learning]] — Supervised_Learning
 - [[机器学习/Ensemble_Learning/Ensemble_Learning_for_dummy]] — Ensemble_Learning_for_dummy
 - [[机器学习/README_for_dummy.md|README_for_dummy]]
-- [[_concepts/feature-engineering.md|feature-engineering]]
+- [[概念/feature-engineering.md|feature-engineering]]
 
 ## 相关页面
 - [[机器学习/Bayesian_Methods/Bayesian_Methods_Deep_Dive|贝叶斯方法深度解读: 从贝叶斯定理到概率编程]]
@@ -122,15 +122,15 @@ sources: []
 - [[机器学习/Causal_Inference/Causal_Inference_Deep_Dive|因果推断深度解读: 从相关到因果的 AI 新范式]]
 - [[机器学习/Causal_Inference/README|因果推断 (Causal Inference)]]
 
-- [[_concepts/recommendation-systems|Recommendation Systems]]
+- [[概念/recommendation-systems|Recommendation Systems]]
 
-- [[_concepts/time-series-analysis|Time Series Analysis]]
+- [[概念/time-series-analysis|Time Series Analysis]]
 
-- [[_concepts/automl|Automl]]
+- [[概念/automl|Automl]]
 
-- [[_concepts/ensemble-learning|Ensemble Learning]]
+- [[概念/ensemble-learning|Ensemble Learning]]
 
-- [[_concepts/anomaly-detection|Anomaly Detection]]
+- [[概念/anomaly-detection|Anomaly Detection]]
 
 ## 相关资源
 

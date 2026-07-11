@@ -291,7 +291,7 @@ jobs:
 
 ### 跨章
 - [[_concepts/mlops]] — MLOps 概念
-- [[AI测试/Test_Data_Management]] — 测试数据管理
+- [[测试/Test_Data_Management]] — 测试数据管理
 
 ---
 

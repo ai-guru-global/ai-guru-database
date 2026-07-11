@@ -156,7 +156,7 @@ tier: supporting
 
 ### 进阶方向
 - [AI Gateway](./AI_Gateway/AI_Gateway_README.md) — 流量接入层设计（本章子目录）
-- [AI Ops](../AI运维/README.md) — 运维监控与自动化
+- [AI Ops](../运维/README.md) — 运维监控与自动化
 - [Agent 生产](../Agent/README.md) — Agent 系统的架构模式
 
 ---

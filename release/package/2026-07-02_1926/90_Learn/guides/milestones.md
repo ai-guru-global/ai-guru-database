@@ -44,7 +44,7 @@ sources: []
 | 问题 | 补救建议 |
 |------|---------|
 | Q1-Q3 | 回到 [Stage 0 概念卡](../concepts/stage0_awakening.md)，重点阅读 AI 定义、AI 能力边界、历史部分 |
-| Q4 | 阅读 [AI 伦理与社会影响](../../AI入门/AI_Ethics_Society.md) |
+| Q4 | 阅读 [AI 伦理与社会影响](../../入门/AI_Ethics_Society.md) |
 | Q5-Q6 | 阅读 [监督学习入门](../../机器学习/Supervised_Learning/Supervised_Learning_for_dummy.md) |
 
 ---
@@ -192,7 +192,7 @@ sources: []
 | Q1 | 阅读 [多模态视觉（小白版）](../../计算机视觉/Multimodal_Vision/Multimodal_Vision_for_dummy.md) |
 | Q2 | 阅读 [世界模型 2026](../../深度学习/World_Models/World_Models_2026.md) |
 | Q3 | 阅读 [机器人与具身智能 2026](../../强化学习/Robotics_Embodied_AI/Embodied_AI_2026.md) |
-| Q4 | 阅读 [AI 未来趋势](../../AI入门/AI_Future_Trends.md) |
+| Q4 | 阅读 [AI 未来趋势](../../入门/AI_Future_Trends.md) |
 | Q5 | 阅读 [AI 安全与红队（小白版）](../../伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming_for_dummy.md) |
 | Q6 | 回到 [Stage 4 概念卡](../concepts/stage4_frontier.md) 的 Scaling Law 部分 |
 

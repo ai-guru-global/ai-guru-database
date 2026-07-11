@@ -17,13 +17,13 @@ You are scanning the wiki for concepts that co-occur across many pages but have 
 1. **Resolve config** — follow the Config Resolution Protocol in `llm-wiki/SKILL.md` (walk up CWD for `.env` → `~/.obsidian-wiki/config` → prompt setup). This gives `OBSIDIAN_VAULT_PATH` and `OBSIDIAN_LINK_FORMAT` (default: `wikilink`).
 2. Read `index.md` to get the full page inventory.
 3. Read `hot.md` if it exists — it surfaces recent activity and active threads that may already point to synthesis opportunities.
-4. Read `_meta/taxonomy.md` to understand the tag vocabulary.
+4. Read `治理/taxonomy.md` to understand the tag vocabulary.
 
 When writing internal links in synthesis pages, apply the link format from `llm-wiki/SKILL.md` (Link Format section) using the `OBSIDIAN_LINK_FORMAT` value.
 
 ## Step 1: Build the Co-occurrence Map
 
-Scan every non-special page in the vault (skip `index.md`, `log.md`, `hot.md`, `_insights.md`, `_meta/*`, `_archives/*`, `_raw/*`).
+Scan every non-special page in the vault (skip `index.md`, `log.md`, `hot.md`, `_insights.md`, `治理/*`, `归档/*`, `原始/*`).
 
 For each page, collect:
 - All `[[wikilinks]]` it contains (outgoing links)

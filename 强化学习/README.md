@@ -11,7 +11,7 @@ sources: []
 ---
 # 06 强化学习 (Reinforcement Learning)
 
-本章涵盖强化学习的完整技术栈，从数学基础（MDP/贝尔曼方程）到深度强化学习算法（DQN/PPO），再到具身智能与机器人。Agent 相关内容已合并至 [Agent](../Agent/README.md)。
+本章涵盖强化学习的完整技术栈，从数学基础（MDP/贝尔曼方程）到深度强化学习算法（DQN/PPO），再到具身智能与机器人。Agent 相关内容已合并至 [Agent](../智能体/README.md)。
 
 ## 学习路径 (Learning Path)
 
@@ -105,5 +105,5 @@ sources: []
 - [[强化学习/Deep_RL/PPO_Deep_Dive]] — PPO_Deep_Dive
 - [[强化学习/Deep_RL/Deep_RL_for_dummy]] — Deep_RL_for_dummy
 - [[强化学习/Deep_RL/DQN_Deep_Dive]] — DQN_Deep_Dive
-- [[_concepts/rlhf.md|rlhf]]
+- [[概念/rlhf.md|rlhf]]
 

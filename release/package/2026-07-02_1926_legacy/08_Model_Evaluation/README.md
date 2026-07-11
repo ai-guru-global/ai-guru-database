@@ -55,8 +55,8 @@ tier: core
 
 ### 进阶方向
 - [MLOps 流水线](../MLOps/) — 评估自动化和持续监控
-- [测试](../AI测试/README.md) — AI 系统测试框架
-- [AI Ops](../AI运维/README.md) — 模型性能监控与告警
+- [测试](../测试/README.md) — AI 系统测试框架
+- [AI Ops](../运维/README.md) — 模型性能监控与告警
 - [价值对齐](../伦理安全/Value_Alignment/Value_Alignment.md) — 公平性评估
 
 ---

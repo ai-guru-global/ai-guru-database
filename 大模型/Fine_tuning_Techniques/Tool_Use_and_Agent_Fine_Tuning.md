@@ -755,10 +755,10 @@ def build_mcp_training_data(mcp_servers: list, tasks: list):
     """构建 MCP 训练数据：枚举工具组合 → 生成轨迹 → 格式转换"""
     dataset = []
     for task in tasks:
-        available_tools = [t for s in mcp_servers for t in s.list_tools()]
+        available工具 = [t for s in mcp_servers for t in s.list_tools()]
         trajectory = generate_trajectory(task=task, tools=available_tools, model="gpt-4")
         dataset.append({
-            "mcp_tools": [t.to_schema() for t in available_tools],
+            "mcp工具": [t.to_schema() for t in available_tools],
             "conversations": format_as_mcp_messages(trajectory),
             "metadata": {"servers_used": trajectory.servers_used,
                          "num_steps": len(trajectory.steps),
@@ -884,7 +884,7 @@ class AgentEnvironment:
         self.current_task = self.tasks[task_id]
         self.history = []
         return {"task": self.current_task.description,
-                "available_tools": [t.schema for t in self.tools]}
+                "available工具": [t.schema for t in self.tools]}
 
     def step(self, action: dict) -> tuple:
         """返回 (observation, reward, done, info)"""
@@ -1343,8 +1343,8 @@ import json
 
 # Step 1: 定义任务集
 TASKS = [
- {"description": "帮我预订下周三下午 2 点的会议室 A", "expected_tools": ["search_rooms", "book_room"], "difficulty": "medium"},
- {"description": "分析销售数据并生成可视化报告", "expected_tools": ["query_db", "execute_code", "create_chart"], "difficulty": "hard"},
+ {"description": "帮我预订下周三下午 2 点的会议室 A", "expected工具": ["search_rooms", "book_room"], "difficulty": "medium"},
+ {"description": "分析销售数据并生成可视化报告", "expected工具": ["query_db", "execute_code", "create_chart"], "difficulty": "hard"},
 ]
 
 # Step 2: 轨迹生成

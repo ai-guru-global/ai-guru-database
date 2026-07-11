@@ -110,7 +110,7 @@ tier: supporting
 - [[_concepts/slo|SLO]]
 - [[_concepts/sli|SLI]]
 - [[_concepts/error-budget|Error Budget]]
-- [[AI运维/SRE_Reliability/SLO_Error_Budget_AI_Deep_Dive|SLO 与错误预算]]
+- [[运维/SRE_Reliability/SLO_Error_Budget_AI_Deep_Dive|SLO 与错误预算]]
 - [[MLOps/Observability/LLM_Inference_Observability_Stack|LLM 推理可观测性栈]]
 
-- [[AI运维/README|AI 运维与可观测性 (AI Ops)]]
+- [[运维/README|AI 运维与可观测性 (AI Ops)]]

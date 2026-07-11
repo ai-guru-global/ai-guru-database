@@ -71,4 +71,4 @@ aliases:
 - [[MLOps/Observability/Prometheus_Grafana_Deep_Dive]] — Prometheus + Grafana 深度解析
 - [[_concepts/prometheus]] — Prometheus 监控系统
 - [[_concepts/observability]] — 可观测性
-- [[AI运维/AI_Observability_Guide_2026]] — AI 可观测指南 2026
+- [[运维/AI_Observability_Guide_2026]] — AI 可观测指南 2026

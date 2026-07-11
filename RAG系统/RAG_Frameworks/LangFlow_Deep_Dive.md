@@ -15,7 +15,7 @@ sources: []
 ---
 
 > [!warning] 生产安全提示 · Production Safety
-> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # LangFlow: 可视化 Agent/RAG 开发平台
 
@@ -429,4 +429,4 @@ langflow.register(MyCustomTool)
 - [[RAG系统/RAG_Systems.md|RAG_Systems]]
 - [[RAG系统/README_Advanced.md|README_Advanced]]
 - [[RAG系统/RAG_Frameworks/Spring_AI_RAG_Deep_Dive.md|Spring_AI_RAG_Deep_Dive]]
-- [[_synthesis/rag-vector-database.md|rag-vector-database]]
+- [[治理/rag-vector-database.md|rag-vector-database]]

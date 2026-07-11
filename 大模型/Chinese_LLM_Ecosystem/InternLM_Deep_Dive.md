@@ -458,7 +458,7 @@ InternLM = 开源生态 × 工具链完整 × 评测标准
 - [[大模型/Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]] — 国产模型对比矩阵
 - [[大模型/Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs]] — LLM 微调技术
 - [[大模型/Multimodal_Models/Multimodal_Architectures_2026]] — 多模态架构
-- [[90_Learn/courses/microsoft/microsoft_genai_for_beginners]] — 生成式 AI 入门课程
+- [[学习/courses/microsoft/microsoft_genai_for_beginners]] — 生成式 AI 入门课程
 
 ---
 

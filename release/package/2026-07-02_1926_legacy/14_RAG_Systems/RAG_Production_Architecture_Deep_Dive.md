@@ -442,7 +442,7 @@ results = vector_db.search(
 - [[RAG系统/Advanced_RAG/RAG_Retrieval_Latency_Optimization|RAG 检索延迟优化]]
 - [[RAG系统/Advanced_RAG/Multimodal_RAG_Architecture_2026|Multimodal RAG 2026]]
 - [[RAG系统/RAG_Frameworks/LlamaIndex_Deep_Dive|LlamaIndex 深度解析]]
-- [[AI测试/RAGAS_Deep_Dive|RAGAS 深度解析]]
+- [[测试/RAGAS_Deep_Dive|RAGAS 深度解析]]
 - [[Agent/Agent_Production_Deployment_Runbook|Agent 生产部署 Runbook]]
 - [[架构基建/AI_SRE_Runbook|AI SRE Runbook]]
 

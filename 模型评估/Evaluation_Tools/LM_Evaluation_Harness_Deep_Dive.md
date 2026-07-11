@@ -15,7 +15,7 @@ sources: []
 ---
 
 > [!warning] 生产安全提示 · Production Safety
-> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # LM Evaluation Harness 深度解析：EleutherAI 的 LLM 评测框架
 
@@ -313,8 +313,8 @@ lm_eval --model local-completions \
 
 ## Related
 
-- [[_concepts/lm-evaluation-harness]] — LM Evaluation Harness 概念卡片
-- [[_concepts/opencompass]] — OpenCompass
-- [[_concepts/model-evaluation]] — 模型评估
+- [[概念/lm-evaluation-harness]] — LM Evaluation Harness 概念卡片
+- [[概念/opencompass]] — OpenCompass
+- [[概念/model-evaluation]] — 模型评估
 - [[模型评估/Evaluation_Tools/OpenCompass_Deep_Dive]] — OpenCompass 深度解析
 - [[模型评估/Benchmarks/LLM_Benchmark_Suite_2026]] — LLM 基准套件 2026

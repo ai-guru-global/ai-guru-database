@@ -299,7 +299,7 @@ flowchart LR
 | **气泡 (Bubble)** | 大 | 小 |
 | **权重版本** | 统一 | 多版本 (Weight Stashing) |
 | **收敛稳定性** | **高** | 中 |
-| **代表框架** | [[_concepts/deepspeed|DeepSpeed]] Pipe | Megatron-LM Pipe |
+| **代表框架** | [[概念/deepspeed|DeepSpeed]] Pipe | Megatron-LM Pipe |
 
 ### 5.3 1F1B (One Forward One Backward) 气泡优化
 
@@ -943,7 +943,7 @@ return checkpoint(forward_fn, x, use_reentrant=False)
 ### 纵向进阶
 - [模型评估](模型评估/Model_Evaluation.md) — 训练后验证模型质量
 - [部署推理优化](部署推理/Inference-in-nutshell.md) — 模型上线推理加速
-- [MLOps 流水线](MLOps/MLOps_Pipeline.md) — 自动化训练与监控
+- [MLOps 流水线](模型运维/MLOps_Pipeline.md) — 自动化训练与监控
 - [AI 基础设施](架构基建/Architecture_Overview/AI_Infrastructure_2026) — 集群网络与存储优化
 
 ---

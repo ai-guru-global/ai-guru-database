@@ -122,5 +122,5 @@ Agentic RAG 涉及多次 LLM 调用，低延迟和高吞吐至关重要：
 - **推理引擎统一选型**: [[部署推理/Inference_Engines/LLM_Inference_Engine_Selection_Guide|LLM 推理引擎选型指南]]
 - **迁移与基准测试**: [[部署推理/Inference_Engines/LLM_Inference_Engine_Migration_Guide|迁移指南]] / [[部署推理/Inference_Engines/LLM_Inference_Benchmarking_Guide|基准测试指南]]
 
-> **关联**: -> [[RAG系统/README|RAG 系统]] | [[Agent/README|Agent 生产]] | [[_synthesis/rag-agents|RAG x Agent 合成]]
+> **关联**: -> [[RAG系统/README|RAG 系统]] | [[智能体/README|Agent 生产]] | [[治理/rag-agents|RAG x Agent 合成]]
 

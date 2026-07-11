@@ -871,6 +871,6 @@ class ConditionalDiffusion:
 
 ## Related
 
-- [[_concepts/generative-vision-models]] — 视觉生成模型
-- [[_concepts/computer-vision]] — 计算机视觉
-- [[_concepts/video-generation]] — 视频生成
+- [[概念/generative-vision-models]] — 视觉生成模型
+- [[概念/computer-vision]] — 计算机视觉
+- [[概念/video-generation]] — 视频生成

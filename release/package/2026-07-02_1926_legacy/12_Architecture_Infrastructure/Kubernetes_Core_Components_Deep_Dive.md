@@ -504,7 +504,7 @@ kubectl logs -n kube-system csi-plugin-<node> -c csi-plugin
 - [[架构基建/Architecture-in-nutshell|架构基础设施精要]] — 架构与基础设施核心知识速览
 - [[架构基建/Hardware_Compute/CDI_Deep_Dive|CDI: 容器设备接口标准]] — 容器化设备挂载规范
 - [[架构基建/Hardware_Compute/DRA_Deep_Dive|DRA: 动态资源分配]] — K8s 动态资源调度机制
-- [[AI运维/AI_Ops_2026|AI Ops 2026: 智能运维体系与实践]] — AI 驱动的运维体系
+- [[运维/AI_Ops_2026|AI Ops 2026: 智能运维体系与实践]] — AI 驱动的运维体系
 - [[clusterrole]]
 - [[clusterrolebinding]]
 - [[role]]

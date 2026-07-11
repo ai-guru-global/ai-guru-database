@@ -450,4 +450,4 @@ AI成功的三大支柱:
 
 ## Related
 
-- [[AI入门/AI_Classic_Cases]] — AI 经典案例分析集 (共享: ai, history)
+- [[入门/AI_Classic_Cases]] — AI 经典案例分析集 (共享: ai, history)

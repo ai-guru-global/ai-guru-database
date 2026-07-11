@@ -492,7 +492,7 @@ Notebook 中没有绝对的"对错"答案——目标是通过反复试验探索
 
 ## 扩展阅读
 
-- [[90_Learn/courses/microsoft/microsoft_genai_for_beginners]] — 课程总览与章节映射
+- [[学习/courses/microsoft/microsoft_genai_for_beginners]] — 课程总览与章节映射
 - [[大模型/Prompt_Engineering/GenAI_L05_Advanced_Prompts]] — 第 5 课：高级提示技术
 - [[大模型/Prompt_Engineering/Prompt_Engineering]] — 提示工程深度指南
 - [[大模型/Prompt_Engineering/Prompt_Engineering_Principles_Ng]] — 吴恩达提示工程原则

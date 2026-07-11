@@ -57,8 +57,8 @@ Stage 1: 基础概念（轻量浏览，重点理解概念名称）
 **📚 核心概念**：[Stage 0: AI 觉醒](../concepts/stage0_awakening.md)
 
 **🔗 深入阅读**：
-- [AI 基础概念入门](../../AI入门/AI_Fundamentals.md) — 最推荐的起点
-- [AI 历史与发展时间线](../../AI入门/AI_History_Timeline.md) — 建立时间线感
+- [AI 基础概念入门](../../入门/AI_Fundamentals.md) — 最推荐的起点
+- [AI 历史与发展时间线](../../入门/AI_History_Timeline.md) — 建立时间线感
 
 **✅ 学会标志**：
 - 能用自己的话解释 AI 是什么
@@ -76,7 +76,7 @@ Stage 1: 基础概念（轻量浏览，重点理解概念名称）
 
 **🔗 深入阅读**：
 - [README_for_dummy.md](../../README_for_dummy.md) — 新手导航，章节级别的概览
-- [AI 技术全景概览](../../AI入门/AI_Technology_Landscape.md) — 技术栈全貌
+- [AI 技术全景概览](../../入门/AI_Technology_Landscape.md) — 技术栈全貌
 
 **💡 重点理解的概念**（只需要"知道"，不需要"会用"）：
 - 模型是什么（类比：经验丰富的老师傅）
@@ -136,8 +136,8 @@ Stage 1: 基础概念（轻量浏览，重点理解概念名称）
 **🎯 目标**：理解 AI 对社会的影响，知道 AI 能做什么、不能做什么，以及我们应该如何应对。
 
 **🔗 深入阅读**：
-- [AI 伦理与社会影响](../../AI入门/AI_Ethics_Society.md)
-- [AI 经典案例分析集](../../AI入门/AI_Classic_Cases.md)
+- [AI 伦理与社会影响](../../入门/AI_Ethics_Society.md)
+- [AI 经典案例分析集](../../入门/AI_Classic_Cases.md)
 - [价值对齐（小白版）](../../伦理安全/Value_Alignment/Value_Alignment_for_dummy.md)
 - [AI 安全与红队（小白版）](../../伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming_for_dummy.md)
 
@@ -153,9 +153,9 @@ Stage 1: 基础概念（轻量浏览，重点理解概念名称）
 **🎯 目标**：了解 AI 的未来走向，知道接下来可以关注什么。
 
 **🔗 深入阅读**：
-- [AI 未来趋势展望](../../AI入门/AI_Future_Trends.md)
-- [AI 学习资源与方法论](../../AI入门/AI_Learning_Resources.md)
-- [AI 术语表与概念词典](../../AI入门/AI_Glossary.md) — 遇到不懂的词随时查阅
+- [AI 未来趋势展望](../../入门/AI_Future_Trends.md)
+- [AI 学习资源与方法论](../../入门/AI_Learning_Resources.md)
+- [AI 术语表与概念词典](../../入门/AI_Glossary.md) — 遇到不懂的词随时查阅
 
 **✅ 学会标志**：
 - 能说出 AGI 是什么，当前距离 AGI 还有多远
@@ -176,7 +176,7 @@ Stage 1: 基础概念（轻量浏览，重点理解概念名称）
 | 想学点编程，动手做 AI 项目 | [ML 从业者路径](./ml-practitioner.md) |
 | 只想深入了解大模型技术 | [LLM 工程师路径](./llm-engineer.md)（前置部分） |
 | 想把 AI 用在工作中 | [AI 产品经理路径](./product-manager.md) |
-| 还想继续通识学习 | [AI 经典案例分析集](../../AI入门/AI_Classic_Cases.md) + [行业应用](../../行业应用/AI_Applications_Industry.md) |
+| 还想继续通识学习 | [AI 经典案例分析集](../../入门/AI_Classic_Cases.md) + [行业应用](../../行业应用/AI_Applications_Industry.md) |
 
 ---
 

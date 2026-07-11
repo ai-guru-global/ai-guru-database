@@ -17,7 +17,7 @@ aliases:
 
 > **一句话理解**: 没有自动化评估，LLM 应用的每一次改动都是赌博——评估流水线是把「靠感觉发版」变成「靠数据发版」的唯一途径。
 
-本文是 [[LLMOps_2026]] §4「LLM 评估流水线」的深扩专题。工具细节见 [[AI测试/RAGAS_Deep_Dive]]、[[AI测试/Testing_Frameworks/DeepEval_Deep_Dive]]、[[AI测试/Testing_Frameworks/Promptfoo_Deep_Dive]]。
+本文是 [[LLMOps_2026]] §4「LLM 评估流水线」的深扩专题。工具细节见 [[测试/RAGAS_Deep_Dive]]、[[测试/Testing_Frameworks/DeepEval_Deep_Dive]]、[[测试/Testing_Frameworks/Promptfoo_Deep_Dive]]。
 
 ---
 
@@ -406,9 +406,9 @@ graph LR
 
 - [[Braintrust_Deep_Dive]] — Braintrust：开源 LLM 评估平台
 - [[LangSmith_Deep_Dive]] — LangSmith：LLM 调试与评估
-- [[AI测试/RAGAS_Deep_Dive]] — Ragas：RAG 评估事实标准
-- [[AI测试/Testing_Frameworks/DeepEval_Deep_Dive]] — DeepEval：pytest 风格 LLM 测试
-- [[AI测试/Testing_Frameworks/Promptfoo_Deep_Dive]] — Promptfoo：Prompt 对比与红队
+- [[测试/RAGAS_Deep_Dive]] — Ragas：RAG 评估事实标准
+- [[测试/Testing_Frameworks/DeepEval_Deep_Dive]] — DeepEval：pytest 风格 LLM 测试
+- [[测试/Testing_Frameworks/Promptfoo_Deep_Dive]] — Promptfoo：Prompt 对比与红队
 
 ---
 
@@ -421,10 +421,10 @@ graph LR
 - [[MLOps/MLOps_Maturity_Model]] — 成熟度模型
 
 ### 跨章
-- [[AI测试/README]] — 测试章节（本文侧重评估流水线，那章侧重测试工具）
-- [[AI测试/RAGAS_Deep_Dive]] — Ragas 工具详解
-- [[AI测试/Testing_Frameworks/DeepEval_Deep_Dive]] — DeepEval 工具详解
-- [[AI测试/Testing_Frameworks/Promptfoo_Deep_Dive]] — Promptfoo 工具详解
+- [[测试/README]] — 测试章节（本文侧重评估流水线，那章侧重测试工具）
+- [[测试/RAGAS_Deep_Dive]] — Ragas 工具详解
+- [[测试/Testing_Frameworks/DeepEval_Deep_Dive]] — DeepEval 工具详解
+- [[测试/Testing_Frameworks/Promptfoo_Deep_Dive]] — Promptfoo 工具详解
 - [[模型评估/README]] — 传统模型评估（本文是其 LLM 时代的扩展）
 - [[大模型/Reasoning_Models/README]] — Reasoning 模型评估的特殊性
 - [[Agent/Agent_Evaluation/README]] — Agent 评估（多步调用链）

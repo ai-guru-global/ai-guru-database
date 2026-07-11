@@ -317,10 +317,20 @@ flowchart TB
 
 ## 10. 参考资源
 
-- NVIDIA State of AI in Healthcare 2026 Report
-- FDA AI/ML-Based SaMD Action Plan
-- WHO Guidance on AI for Health (2025)
-- McKinsey: The Promise and Reality of AI in Healthcare
+- [NVIDIA State of AI in Healthcare 2026 Report](https://www.nvidia.com)
+- [FDA AI/ML-Based SaMD Action Plan](https://www.fda.gov)
+- [WHO Guidance on AI for Health (2025)](https://www.who.int)
+- [McKinsey: The Promise and Reality of AI in Healthcare](https://www.mckinsey.com)
+
+---
+
+## Related
+
+- [[../../RAG系统/RAG_Production|RAG 生产部署]] — 医疗知识库与临床检索增强
+- [[../../智能体/Agent_Frameworks|Agent 框架]] — 医疗辅助诊断 Agent
+- [[../../大模型/Multimodal_Models/Multimodal_Architectures_2026|多模态架构]] — 医学影像多模态分析
+- [[../../模型评估/Fairness|公平性评估]] — 医疗 AI 偏见与公平性
+- [[../../部署推理/Deployment_Strategies|部署策略]] — 医疗级高可用部署
 
 ---
 

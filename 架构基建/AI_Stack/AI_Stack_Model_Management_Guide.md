@@ -15,7 +15,7 @@ sources: []
 ---
 
 > [!warning] 生产安全提示 · Production Safety
-> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # AI Stack 模型下载与管理指南
 
@@ -144,4 +144,4 @@ git lfs ls-files
 - [[架构基建/AI_Stack_Training_Launchers_Guide|AI Stack 训练启动器指南]]
 - [[大模型/Chinese_LLM_Ecosystem/README|中国大模型生态]]
 - [[模型训练/Distributed_Training/ms_swift_Deep_Dive|ms-swift 深度解析]]
-- [[_concepts/model-deployment|LLM 部署]]
+- [[概念/model-deployment|LLM 部署]]

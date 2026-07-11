@@ -46,4 +46,4 @@ relationships:
 - [[_concepts/sli|SLI]]
 - [[_concepts/error-budget|Error Budget]]
 - [[_concepts/sla|SLA]]
-- [[AI运维/SRE_Reliability/LLM_Inference_SLO_Guide|LLM 推理 SLO 实践指南]]
+- [[运维/SRE_Reliability/LLM_Inference_SLO_Guide|LLM 推理 SLO 实践指南]]

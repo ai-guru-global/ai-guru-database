@@ -15,7 +15,7 @@ sources: []
 ---
 
 > [!warning] 生产安全提示 · Production Safety
-> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # GPUStack: 开源 GPU 集群管理与模型服务平台
 
@@ -714,6 +714,6 @@ PPU 上的推理通常由 **llama-box** 后端执行 (基于 llama.cpp), 因为 
 - [[部署推理/Inference_Engines/BentoML_Deep_Dive|BentoML: AI 模型服务框架]]
 - [[部署推理/Inference_Engines/llama_cpp_Deep_Dive|llama.cpp: 纯 C/C++ 本地 LLM 推理]]
 - [[部署推理/Deployment_Inference_2026|部署推理 2026 趋势]]
-- [[_concepts/gpustack|GPUStack 概念卡片]]
+- [[概念/gpustack|GPUStack 概念卡片]]
 - [[架构基建/AI_Gateway/AI_Gateway_2026|AI Gateway 2026]]
 - [[RAG系统/Advanced_RAG/Agentic_RAG_Guide|Agentic RAG 指南]]

@@ -472,7 +472,7 @@ jobs:
 - [[MLOps/LLMOps_2026]] — LLMOps 全景
 - [[MLOps/Observability/LangSmith_Deep_Dive]] — LangSmith 对比
 - [[MLOps/Evaluation/LLM_Evaluation_Pipeline]] — LLM 评估流水线
-- [[AI测试/RAGAS_Deep_Dive]] — Ragas 深度解析
+- [[测试/RAGAS_Deep_Dive]] — Ragas 深度解析
 
 ---
 

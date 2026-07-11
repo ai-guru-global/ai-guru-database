@@ -159,7 +159,7 @@ AI 生成完整代码，你来审核和调整
 
 - 想深入工具？→ 查看子目录具体文档
 - 想学开发？→ [MLOps/README_for_dummy.md](../MLOps/README_for_dummy.md)
-- 想学测试？→ [AI测试/README_for_dummy.md](../AI测试/README_for_dummy.md)
+- 想学测试？→ [AI测试/README_for_dummy.md](../测试/README_for_dummy.md)
 
 ---
 
@@ -167,8 +167,8 @@ AI 生成完整代码，你来审核和调整
 
 ## Related
 
-- [[AI编程/Theory/AI_Coding_Theory.md|AI_Coding_Theory]]
-- [[AI编程/Tools/AI_Coding_Assistants_2026.md|AI_Coding_Assistants_2026]]
-- [[AI编程/Tools/CodeBuddy_Guide.md|CodeBuddy_Guide]]
-- [[AI编程/Tools/Comate_Guide.md|Comate_Guide]]
-- [[AI编程/Tools/Coze_Guide.md|Coze_Guide]]
+- [[编程/Theory/AI_Coding_Theory.md|AI_Coding_Theory]]
+- [[编程/Tools/AI_Coding_Assistants_2026.md|AI_Coding_Assistants_2026]]
+- [[编程/Tools/CodeBuddy_Guide.md|CodeBuddy_Guide]]
+- [[编程/Tools/Comate_Guide.md|Comate_Guide]]
+- [[编程/Tools/Coze_Guide.md|Coze_Guide]]

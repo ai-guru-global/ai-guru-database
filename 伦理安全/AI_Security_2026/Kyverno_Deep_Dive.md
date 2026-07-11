@@ -148,7 +148,7 @@ spec:
 
 ## Related
 
-- [[_concepts/kyverno]] — Kyverno 概念卡片
-- [[_concepts/opa]] — OPA
-- [[_concepts/falco]] — Falco
-- [[_concepts/kubernetes]] — Kubernetes
+- [[概念/kyverno]] — Kyverno 概念卡片
+- [[概念/opa]] — OPA
+- [[概念/falco]] — Falco
+- [[概念/kubernetes]] — Kubernetes

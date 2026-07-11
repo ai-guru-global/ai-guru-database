@@ -16,7 +16,7 @@ sources: []
 
 > **一句话理解**: Volcano 是 CNCF 孵化级的 Kubernetes 批处理调度器——靠 PodGroup 实现 Gang Scheduling（要么全调度要么不调度），是大模型分布式训练在 K8s 上避免"半个任务卡死"的事实标准。
 
-> 📐 **概念方法论**: Volcano 把"调度"从"逐 Pod 决策"升级为"逐 **PodGroup** 决策"。原生 kube-scheduler 只关心单个 Pod 能不能放下，无法表达"这 8 个 GPU 必须一起上、否则一起不上"——而分布式训练（all-reduce / all-gather）恰恰要求全有或全无。Volcano 用 PodGroup 作为最小调度原子，配合 actions pipeline（enqueue → allocate → backfill → preempt → reclaim）让批处理、HPC、AI 训练在同一套 K8s 上获得类似 Slurm/Yarn 的语义。它与 [[MLOps/Orchestration/Kubeflow_Deep_Dive]] 的 Training-Operator 是搭档（训练编排 + 调度），也是 [[架构基建/Architecture_Overview/AI_Infrastructure_2026]] 中"训练调度层"的核心组件。
+> 📐 **概念方法论**: Volcano 把"调度"从"逐 Pod 决策"升级为"逐 **PodGroup** 决策"。原生 kube-scheduler 只关心单个 Pod 能不能放下，无法表达"这 8 个 GPU 必须一起上、否则一起不上"——而分布式训练（all-reduce / all-gather）恰恰要求全有或全无。Volcano 用 PodGroup 作为最小调度原子，配合 actions pipeline（enqueue → allocate → backfill → preempt → reclaim）让批处理、HPC、AI 训练在同一套 K8s 上获得类似 Slurm/Yarn 的语义。它与 [[模型运维/Orchestration/Kubeflow_Deep_Dive]] 的 Training-Operator 是搭档（训练编排 + 调度），也是 [[架构基建/Architecture_Overview/AI_Infrastructure_2026]] 中"训练调度层"的核心组件。
 
 ---
 
@@ -38,7 +38,7 @@ sources: []
 
 ### 1.1 定位
 
-Volcano 是华为开源、捐赠给 CNCF 的 [[_concepts/kubernetes|Kubernetes]] **批处理调度器**，定位在原生 kube-scheduler 之上、解决"高性能计算 / 大数据 / AI 训练 / EDA / 渲染"等场景的调度痛点。它不是又一个"通用调度器替代品"，而是把 Slurm、Yarn、Mesos 多年沉淀的 **gang / queue / fair-share / preemption** 语义移植到 K8s 生态。
+Volcano 是华为开源、捐赠给 CNCF 的 [[概念/kubernetes|Kubernetes]] **批处理调度器**，定位在原生 kube-scheduler 之上、解决"高性能计算 / 大数据 / AI 训练 / EDA / 渲染"等场景的调度痛点。它不是又一个"通用调度器替代品"，而是把 Slurm、Yarn、Mesos 多年沉淀的 **gang / queue / fair-share / preemption** 语义移植到 K8s 生态。
 
 ```
 ┌────────────────────────────────────────────────────────────────┐
@@ -699,5 +699,5 @@ Training-Operator 负责生成 PyTorchJob/TensorFlowJob 的 Pod，并通过 `sch
 - [[CNCF_Cloud_Native_AI/README]]
 - [[CNCF_Cloud_Native_AI/KAI_Scheduler_Deep_Dive]]
 - [[CNCF_Cloud_Native_AI/Kueue_Deep_Dive]]
-- [[MLOps/Orchestration/Kubeflow_Deep_Dive]]
+- [[模型运维/Orchestration/Kubeflow_Deep_Dive]]
 - [[架构基建/Architecture_Overview/AI_Infrastructure_2026]]

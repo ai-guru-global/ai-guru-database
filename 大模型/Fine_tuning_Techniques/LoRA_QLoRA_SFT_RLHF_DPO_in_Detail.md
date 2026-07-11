@@ -586,10 +586,10 @@ print(tokenizer.decode(outputs[0], skip_special_tokens=True))
 
 ### 概念卡片
 
-- [[_concepts/lora-qlora-sft-rlhf-dpo]] — 本文对应的概念卡片
-- [[_concepts/fine-tuning-techniques]] — 微调技术总览
-- [[_concepts/lora-peft]] — LoRA 与参数高效微调
-- [[_concepts/rlhf]] — 基于人类反馈的强化学习
+- [[概念/lora-qlora-sft-rlhf-dpo]] — 本文对应的概念卡片
+- [[概念/fine-tuning-techniques]] — 微调技术总览
+- [[概念/lora-peft]] — LoRA 与参数高效微调
+- [[概念/rlhf]] — 基于人类反馈的强化学习
 
 ### 主章节深度文档
 

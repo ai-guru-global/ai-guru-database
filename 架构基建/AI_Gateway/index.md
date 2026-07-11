@@ -21,6 +21,8 @@ This page indexes the contents of `架构基建/AI_Gateway`.
 - [[架构基建/AI_Gateway/Gateway-in-nutshell|Gateway In Nutshell]]
 - [[架构基建/AI_Gateway/Kong_AI_Gateway_Deep_Dive|Kong AI Gateway Deep Dive]]
 - [[架构基建/AI_Gateway/LiteLLM_Deep_Dive|Litellm Deep Dive]]
+- [[架构基建/AI_Gateway/API_Design_for_AI|AI API 设计指南]]
 - [[架构基建/AI_Gateway/LLM_Gateway_Comparison_2026|LLM Gateway Comparison 2026]]
+- [[架构基建/AI_Gateway/LLM_Gateway_Deep_Dive|LLM Gateway 深度实战]]
 - [[架构基建/AI_Gateway/Portkey_Deep_Dive|Portkey Deep Dive]]
 - [[架构基建/AI_Gateway/Spring_AI_Gateway_Security|Spring AI Gateway Security]]

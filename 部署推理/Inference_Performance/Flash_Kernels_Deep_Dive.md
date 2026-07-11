@@ -198,10 +198,10 @@ FlashMLA 专门为 MLA 设计：
 
 ## Related
 
-- [[_concepts/flash-attention-kernels]] — Flash Attention 概念卡
-- [[_concepts/kv-cache]] — KV Cache 优化
-- [[_concepts/paged-attention]] — PagedAttention
-- [[_concepts/multi-head-latent-attention]] — MLA
+- [[概念/flash-attention-kernels]] — Flash Attention 概念卡
+- [[概念/kv-cache]] — KV Cache 优化
+- [[概念/paged-attention]] — PagedAttention
+- [[概念/multi-head-latent-attention]] — MLA
 - [[部署推理/Inference_Performance/README|推理性能专题]]
 - [[部署推理/Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]]
 - [[部署推理/Caching/KV_Cache_Deep_Dive|KV Cache Deep Dive]]

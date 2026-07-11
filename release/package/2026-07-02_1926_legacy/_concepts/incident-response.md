@@ -45,4 +45,4 @@ relationships:
 - [[_concepts/sre|SRE]]
 - [[_concepts/slo|SLO]]
 - [[_concepts/error-budget|Error Budget]]
-- [[AI运维/Incident_Response/AI_Incident_Response_Framework|AI 事故响应框架]]
+- [[运维/Incident_Response/AI_Incident_Response_Framework|AI 事故响应框架]]

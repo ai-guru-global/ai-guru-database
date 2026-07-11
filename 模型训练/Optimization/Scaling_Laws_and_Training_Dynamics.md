@@ -32,7 +32,7 @@ sources: []
 - [8. Practical Scaling Decisions](#8-practical-scaling-decisions)
 - [9. Scaling Laws Master Comparison Table](#9-scaling-laws-master-comparison-table)
 - [10. Frontiers (前沿)](#10-frontiers-前沿)
-- [References](#_references)
+- [References](#参考)
 
 ---
 

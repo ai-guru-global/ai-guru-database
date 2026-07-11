@@ -210,12 +210,12 @@ sources: []
 *Last updated: 2026-04-01*
 
 ## Related
-- [[AI入门/AI_Technology_Landscape|AI技术全景概览]]
-- [[AI入门/AI_Practical_Labs|AI课堂实验与实践指导]]
-- [[AI入门/AI_Tools_Practical_Guide|AI工具与实践指南]]
+- [[入门/AI_Technology_Landscape|AI技术全景概览]]
+- [[入门/AI_Practical_Labs|AI课堂实验与实践指导]]
+- [[入门/AI_Tools_Practical_Guide|AI工具与实践指南]]
 
-- [[AI入门/AI_Fundamentals]] — AI基础概念入门 (共享: ai, introduction)
-- [[AI入门/AI_Fundamentals_for_dummy]] — AI 基础入门 - 小白版 (共享: ai, introduction)
-- [[AI入门/README_for_dummy]] — 00 AI 简介与历史 — 小白版 🚀 (共享: ai, introduction)
+- [[入门/AI_Fundamentals]] — AI基础概念入门 (共享: ai, introduction)
+- [[入门/AI_Fundamentals_for_dummy]] — AI 基础入门 - 小白版 (共享: ai, introduction)
+- [[入门/README_for_dummy]] — 00 AI 简介与历史 — 小白版 🚀 (共享: ai, introduction)
 
-- [[AI入门/Hands_On_Experiments_Guide|AI 知识库配套实验指南]]
+- [[入门/Hands_On_Experiments_Guide|AI 知识库配套实验指南]]

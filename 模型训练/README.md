@@ -28,6 +28,7 @@ sources: []
 | [**Tokenizer 设计 2026**](模型训练/Data/Tokenizer_Design_2026.md) | BPE/SentencePiece/tiktoken/Unigram 全解析 | 预训练基础 |
 | [**优化器进阶 2026**](模型训练/Optimization/Optimizer_Advanced_2026.md) | AdamW/Lion/Muon/Sophia/Shampoo + 学习率调度 | 训练优化 |
 | [**数据策展与配比 2026**](模型训练/Data/Data_Curation_and_Mixture_2026.md) | 数据清洗/去重/配比/合成数据/多语言 | 数据工程 |
+| [数据集文档模板 (Datasheet)](模型训练/Data/Datasheet_Template.md) | 记录数据集来源、构成、偏差与使用限制的标准模板 | 数据工程师 / 合规 |
 | [**GRPO 与新对齐方法**](模型训练/Alignment/GRPO_and_New_Alignment_Methods.md) | PPO/DPO/KTO/GRPO/RLOO/Reasoning RL | 对齐训练 |
 | [**剪枝与知识蒸馏**](模型训练/Compression/Pruning_and_Knowledge_Distillation.md) | Wanda/SparseGPT/LLM-Pruner/SFT 蒸馏 | 模型压缩 |
 | [**训练成本优化与 FinOps 2026**](模型训练/Training_Cost_Optimization_and_FinOps_2026.md) | GPU 利用率、Spot 实例、Checkpoint、成本归因与预算告警 | 训练 FinOps |
@@ -76,7 +77,7 @@ sources: []
 ### 进阶方向
 - [模型评估](../模型评估/) — 训练后如何评估模型质量
 - [部署推理](../部署推理/README.md) — 训练好的模型如何上线
-- [MLOps 流水线](../MLOps/) — 自动化训练与持续交付
+- [MLOps 流水线](../模型运维/) — 自动化训练与持续交付
 - [RAG 系统](../RAG系统/) — 检索增强生成的训练策略
 
 ---
@@ -119,13 +120,13 @@ sources: []
 - [[AI_Stack_GPU_Monitoring_Guide|AI Stack GPU 监控指南]]
 - [[AI_Stack_Model_Management_Guide|AI Stack 模型下载与管理指南]]
 - [[模型训练/Data_and_FineTuning_for_dummy.md|数据与微调大白话]]
-- [[_concepts/data-cleaning-pipeline.md|数据清洗 Pipeline]]
-- [[_concepts/dora.md|DoRA]]
-- [[_concepts/rs-lora.md|RS-LoRA]]
+- [[概念/data-cleaning-pipeline.md|数据清洗 Pipeline]]
+- [[概念/dora.md|DoRA]]
+- [[概念/rs-lora.md|RS-LoRA]]
 
-- [[_concepts/model-training.md]] — 模型训练
-- [[_concepts/distributed-systems.md]] — 分布式系统
-- [[_concepts/optimization-regularization.md]] — 优化与正则化
+- [[概念/model-training.md]] — 模型训练
+- [[概念/distributed-systems.md]] — 分布式系统
+- [[概念/optimization-regularization.md]] — 优化与正则化
 
 
 

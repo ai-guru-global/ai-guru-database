@@ -15,7 +15,7 @@ sources: []
 ---
 
 > [!warning] 生产安全提示 · Production Safety
-> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # TGI 深度解析：HuggingFace 生产级 LLM 推理引擎
 
@@ -293,7 +293,7 @@ resources:
 - 使用 FlashAttention 支持的模型。
 - 根据平均输入/输出长度调整 batch 参数。
 - GPU 利用率低时尝试增大 `--max-batch-total-tokens`。
-- 使用 AWQ/GPTQ [[_concepts/quantization|量化]]降低显存占用，提升 batch size。
+- 使用 AWQ/GPTQ [[概念/quantization|量化]]降低显存占用，提升 batch size。
 
 ### 9.4 可观测
 
@@ -353,11 +353,11 @@ TGI 暴露 Prometheus 指标：
 
 ## Related
 
-- [[_concepts/tgi]] — TGI 概念卡片
-- [[_concepts/vllm]] — vLLM 推理引擎
-- [[_concepts/model-serving]] — 模型服务
-- [[_concepts/hami]] — HAMi GPU 虚拟化
+- [[概念/tgi]] — TGI 概念卡片
+- [[概念/vllm]] — vLLM 推理引擎
+- [[概念/model-serving]] — 模型服务
+- [[概念/hami]] — HAMi GPU 虚拟化
 - [[部署推理/Inference_Engines/KServe_Deep_Dive]] — KServe
 - [[部署推理/Inference_Engines/vLLM_Deep_Dive]] — vLLM
 - [[架构基建/CNCF_Cloud_Native_AI/README]] — CNCF 云原生大模型全景
-- [[_synthesis/chinese-chips-inference|国产 AI 芯片 × 推理引擎: 硬件约束下的推理软件栈适配]]
+- [[治理/chinese-chips-inference|国产 AI 芯片 × 推理引擎: 硬件约束下的推理软件栈适配]]

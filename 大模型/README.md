@@ -138,7 +138,7 @@ flowchart LR
 - [[大模型/Prompt_Engineering/Outlines_Deep_Dive]] — Outlines_Deep_Dive
 - [[大模型/Prompt_Engineering/Prompt-Engineering-in-nutshell]] — Prompt Engineering 速成指南
 - [[大模型/Prompt_Engineering/Prompt_Engineering_for_dummy]] — Prompt_Engineering_for_dummy
-- [[_synthesis/llm-nlp|Llm Nlp]]
+- [[治理/llm-nlp|Llm Nlp]]
 
 - [[大模型/LLM_Architectures/README|LLM 架构目录]]
 - [[instructor_overview|Instructor 结构化输出库概览]]
@@ -183,13 +183,13 @@ flowchart LR
 - [[大模型/Speech_Audio_AI/Speech_Audio_AI_Deep_Dive|语音与音频 AI 深度解读: 从 Whisper 到 CosyVoice 再到 AudioLM]]
 - [[大模型/Speech_Audio_AI/README|语音与音频 AI (Speech & Audio AI)]]
 
-- [[_concepts/long-context-models|Long Context Models]]
-- [[_concepts/kv-cache-compression|KV Cache 压缩]]
-- [[_concepts/mamba|Mamba]]
-- [[_concepts/retnet|RetNet]]
+- [[概念/long-context-models|Long Context Models]]
+- [[概念/kv-cache-compression|KV Cache 压缩]]
+- [[概念/mamba|Mamba]]
+- [[概念/retnet|RetNet]]
 - [[大模型/Architecture_Evolution_for_dummy|架构演进大白话]]
 
-- [[_concepts/sequence-models|Sequence Models]]
+- [[概念/sequence-models|Sequence Models]]
 
 ## 新增页面
 

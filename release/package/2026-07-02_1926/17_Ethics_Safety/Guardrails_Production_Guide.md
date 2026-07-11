@@ -120,5 +120,5 @@ define flow
 5. **人工兜底**: 高风险场景必须有人工审核
 6. **测试红队**: 定期用红队测试验证护栏效果
 
-> **关联**: -> [[伦理安全/README|伦理安全]] | [[AI运维/Guardrails_Deep_Dive|Guardrails 深度解读]] | [[AI测试/README|测试]]
+> **关联**: -> [[伦理安全/README|伦理安全]] | [[运维/Guardrails_Deep_Dive|Guardrails 深度解读]] | [[测试/README|测试]]
 

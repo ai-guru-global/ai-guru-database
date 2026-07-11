@@ -161,7 +161,7 @@ sources: []
 - [[伦理安全/AI_Supply_Chain_Security/AI_Supply_Chain_Security_for_dummy]] — AI_Supply_Chain_Security_for_dummy
 - [[伦理安全/AI_Governance_Compliance_2026.md|AI_Governance_Compliance_2026]]
 - [[伦理安全/README_for_dummy.md|README_for_dummy]]
-- [[_synthesis/ai-ethics-future|Ai Ethics Future]]
+- [[治理/ai-ethics-future|Ai Ethics Future]]
 - [[伦理安全/Safety_Evaluation_Framework|AI 安全评测框架]] — 安全评测基准与红队测试方法论
 
 - [[AI_Ethics_Safety_Future|AI 伦理、安全与未来]]

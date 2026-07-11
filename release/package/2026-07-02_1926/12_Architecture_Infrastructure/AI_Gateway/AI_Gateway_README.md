@@ -52,7 +52,7 @@ sources: []
 - [LLM 推理引擎选型指南](../../部署推理/Inference_Engines/LLM_Inference_Engine_Selection_Guide.md) -- 网关后端模型/推理引擎选型
 - [LLM 推理引擎迁移指南](../../部署推理/Inference_Engines/LLM_Inference_Engine_Migration_Guide.md) -- 多引擎切换与灰度策略
 - [RAG系统](../RAG系统/) -- RAG 系统
-- [AI运维](../AI运维/) -- AI 运维
+- [AI运维](../运维/) -- AI 运维
 
 ---
 

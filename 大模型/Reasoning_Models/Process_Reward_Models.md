@@ -240,5 +240,5 @@ PRM 对步骤 3 的评估困境:
 - [[大模型/Reasoning_Models/o1_Class_Reasoning_Models]]
 - [[大模型/Reasoning_Models/DeepSeek_R1_Technical_Analysis]]
 - [[强化学习/Deep_RL/Deep_RL]]
-- [[_concepts/rlhf]]
+- [[概念/rlhf]]
 - [[模型训练/Optimization/Training_Optimization_2026]]

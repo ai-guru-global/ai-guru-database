@@ -224,6 +224,6 @@ ChatGPT、Claude、Gemini
 
 ## Related
 
-- [[AI入门/AI_Fundamentals]] — AI基础概念入门 (共享: ai, introduction)
-- [[AI入门/AI_Fundamentals_for_dummy]] — AI 基础入门 - 小白版 (共享: ai, introduction)
-- [[AI入门/README]] — 00 - AI 简介与历史 (共享: ai, introduction)
+- [[入门/AI_Fundamentals]] — AI基础概念入门 (共享: ai, introduction)
+- [[入门/AI_Fundamentals_for_dummy]] — AI 基础入门 - 小白版 (共享: ai, introduction)
+- [[入门/README]] — 00 - AI 简介与历史 (共享: ai, introduction)

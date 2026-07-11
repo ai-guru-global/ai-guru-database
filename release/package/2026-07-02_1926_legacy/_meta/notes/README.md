@@ -48,7 +48,7 @@ flowchart LR
 ## 与其他章节的关联
 
 本章节不直接面向学习者，而是作为**全项目的知识基础设施**：
-- 为 [AI入门/AI_Glossary.md](../AI入门/AI_Glossary.md) 提供底层数据
+- 为 [AI入门/AI_Glossary.md](../入门/AI_Glossary.md) 提供底层数据
 - 为 [90_Learn/pathways/](../90_Learn/pathways/) 学习路径提供概念关联
 - 为各章节的交叉引用提供术语标准化支持
 

@@ -100,10 +100,10 @@ Agent 系统的生产部署与传统微服务存在本质差异：LLM 输出非�
 - [[MLOps/LLM_Guardrails_and_Safety_Ops_2026|LLM 护栏与安全运维 2026]] — Guardrails as Code 与多层输入输出防护体系
 - [[大模型/LLM_Production_Deployment_Runbook|LLM 生产环境部署 Runbook]] — 推理引擎选型、KV Cache、Prefix Caching、量化与多模型路由
 - [[RAG系统/RAG_Production_Architecture_Deep_Dive|RAG 生产架构深度解析]] — RAG 与 Agent 结合时的检索质量、幻觉抑制与合规审计
-- [[AI测试/Agent_Evaluation_Deep_Dive|Agent 评估深度解析]] — 任务成功率、轨迹评估、LLM-as-Judge 与生产评估流水线
+- [[测试/Agent_Evaluation_Deep_Dive|Agent 评估深度解析]] — 任务成功率、轨迹评估、LLM-as-Judge 与生产评估流水线
 - [[架构基建/AI_SRE_Runbook|AI SRE Runbook]] — AI 系统的 SLO/SLI、容量规划、事故响应与模型回滚
 - [[行业应用/AI_Production_Architecture_2026|AI 生产架构 2026]] — 跨行业通用五层架构、模型治理与 FinOps
-- [[AI编程/AI_Code_Security_Audit_Runbook|AI 代码安全审计 Runbook]] — AI 生成代码的安全风险与 DevSecOps 集成
+- [[编程/AI_Code_Security_Audit_Runbook|AI 代码安全审计 Runbook]] — AI 生成代码的安全风险与 DevSecOps 集成
 - [[模型训练/Training_Cost_Optimization_and_FinOps_2026|训练成本优化与 FinOps 2026]] — 大模型训练的 GPU 利用率、Spot 实例与成本归因
 - [[行业应用/AI_Platform_Selection_2026|AI 平台选型 2026]] — 云 API、私有化、开源模型与企业级套件的选型框架
 - [[面试岗位/Agent_Engineer_2026|Agent Engineer 岗位面试指南 2026]] — Agent 工程师核心考点与系统设计题

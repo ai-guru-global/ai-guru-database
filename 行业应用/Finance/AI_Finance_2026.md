@@ -265,7 +265,17 @@ AI保险 2025-2026:
 - [行业速览](../Industry-in-nutshell.md) — 30 分钟了解所有行业 AI 应用
 - [机器学习](../../机器学习/README.md) — 基础算法与模型
 - [深度学习](../../深度学习/README.md) — 神经网络核心技术
-- [MLOps](../../MLOps/README.md) — 模型生产化部署
+- [MLOps](../../模型运维/README.md) — 模型生产化部署
+
+---
+
+## Related
+
+- [[../../RAG系统/Advanced_RAG|高级 RAG]] — 金融知识库与合规检索
+- [[../../智能体/Agent_Workflow|Agent 工作流]] — 金融分析 Agent
+- [[../../大模型/LLM_Fundamentals|LLM 基础]] — 金融大模型应用
+- [[../../模型评估/Fairness|公平性评估]] — 金融 AI 公平与合规
+- [[../../部署推理/Deployment_Strategies|部署策略]] — 金融级低延迟部署
 
 ---
 

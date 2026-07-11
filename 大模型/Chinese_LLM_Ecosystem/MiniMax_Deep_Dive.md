@@ -827,7 +827,7 @@ MSA (MiniMax Sparse Attention):
   • 算子已单独开源: https://github.com/MiniMax-AI/MSA
 ```
 
-> **📎 关联阅读**: MSA 与 Lightning Attention、DeepSeek MLA / DSA、GLM IndexShare 同属 2026 年长上下文注意力的主流稀疏化路线，详见 [[_concepts/long-context-models]] 与 [长上下文模型 2026](../LLM_Architectures/Long_Context_Models_2026.md) 的横向对比。
+> **📎 关联阅读**: MSA 与 Lightning Attention、DeepSeek MLA / DSA、GLM IndexShare 同属 2026 年长上下文注意力的主流稀疏化路线，详见 [[概念/long-context-models]] 与 [长上下文模型 2026](../LLM_Architectures/Long_Context_Models_2026.md) 的横向对比。
 
 #### 5.6.4 三种思考模式 (thinking)
 

@@ -1,0 +1,353 @@
+{
+  "type": "batch",
+  "models": [
+    "qwen",
+    "kimi",
+    "minimax"
+  ],
+  "summary": {
+    "qwen": {
+      "modelName": "Qwen3-Max",
+      "model": "qwen-max",
+      "totalQuestions": 8,
+      "averageScore": 0,
+      "dimensionScores": {}
+    },
+    "kimi": {
+      "modelName": "Kimi K2.5",
+      "model": "moonshot-v1-8k",
+      "totalQuestions": 8,
+      "averageScore": 68.1,
+      "dimensionScores": {
+        "core_concepts": 77.9
+      }
+    },
+    "minimax": {
+      "modelName": "MiniMax M2.1",
+      "model": "MiniMax-M2.1",
+      "totalQuestions": 8,
+      "averageScore": 0,
+      "dimensionScores": {}
+    }
+  },
+  "results": {
+    "qwen": [
+      {
+        "questionId": "cc-01",
+        "dimension": "core_concepts",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cc-02",
+        "dimension": "core_concepts",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cc-03",
+        "dimension": "core_concepts",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cc-04",
+        "dimension": "core_concepts",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cc-05",
+        "dimension": "core_concepts",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cc-06",
+        "dimension": "core_concepts",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cc-07",
+        "dimension": "core_concepts",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cc-08",
+        "dimension": "core_concepts",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      }
+    ],
+    "kimi": [
+      {
+        "questionId": "cc-01",
+        "dimension": "core_concepts",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "**Kubernetes 中 Pod 的概念**\n\nPod 是 Kubernetes 中的一个基本概念和核心抽象，是 Kubernetes 集群中运行容器的最小单元。Pod 实质上是一个或多个容器（通常是 Docker 容器）的封装，这些容器共享网络和存储资源。Pod 提供了许多与集群中直接管理容器相关的机制，并提供沙箱化的运行环境。\n\n**Pod 的特点：**\n\n- **封装性：** Pod 是一个或多个容器的封装单元。\n- **存储共享：** Pod 内的容器可以共享存储卷（Volume）。\n- **网络共享：** 所有容器都共享同一个网络名称空间，拥有相同的 IP 地址和端口号。\n- **生命周期管理：** Pod 内部可以定义启动前执行的初始化容器（Init Containers）、主容器（Containers）等。\n\n**为什么 Pod 是 Kubernetes 的最小调度单元而不是容器：**\n\n1. **资源共享：** 出于效率和资源共享的考虑，Kubernetes 设计了 Pod，使得可以多个密切相关的容器运行在一起，共享生命周期、存储和网络资源，而不是每个容器分别独立运行。\n\n2. **组合应用：** 许多应用需要运行多个容器，比如一个应用程序和一个数据库。把这些容器放在一个 Pod 里可以消除网络延迟，实现快速通信，同时简化资源的同步和管理。\n\n3. **隔离性与耦合性：** Pod 内的容器共享网络和存储资源，可以实现更紧密的集成和相互依赖。这种设计将相关的应用组件组合在一起，提供了更好的隔离性，同时相比于在整个集群中同时运行多个独立容器，降低了复杂性。\n\n4. **特别场合的优化：** Pod 支持多种运行模式，比如 Sidecar 模式，可以为每个应用容器添加一个或多个功能支持容器，比如日志收集、监控或者请求路由等。\n\n5. **调度灵活性：** 将容器封装在 Pod 中，Kubernetes 的调度器（Scheduler）可以依据 Pod 而非单个容器来调度任务，提供了更多的调度策略，比如亲和性、反亲和性等。\n\n综上，Kubernetes 中的 Pod 作为最小部署单元，它不仅仅封装容器，还提供了更好的资源利用、组合应用和灵活性，这些都是 Pod 成为 Kubernetes 调度的最小单元重要原因。",
+        "latencyMs": 11197,
+        "score": {
+          "total": 83,
+          "breakdown": {
+            "keywordScore": 100,
+            "keywordHits": [
+              "最小调度单元",
+              "共享网络",
+              "共享存储",
+              "容器"
+            ],
+            "keywordTotal": 4,
+            "referenceScore": 50,
+            "lengthScore": 100,
+            "structureScore": 85
+          }
+        }
+      },
+      {
+        "questionId": "cc-02",
+        "dimension": "core_concepts",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "Kubernetes Service 是用来定义一组 Pod 的访问策略，服务类型为 Kubernetes Service 提供的不同访问模式，以下是 Kubernetes Service 的四种类型及其使用场景：\n\n1. **ClusterIP**\n   - **描述**：这是默认的服务类型。它仅在集群内部可供其他 Pod 访问。不会对外部暴露端口，但可以在集群内的任何地方访问。\n   - **使用场景**：当你希望创建一个仅供集群内部其他应用通信的服务，如数据库或内部服务，并且不希望从集群外部直接访问此服务时。\n\n2. **NodePort**\n   - **描述**：通过集群节点的端口对外提供服务。这种类型的服务也是通过集群节点的一个静态端口（NodePort）暴露到外部。\n   - **使用场景**：当你需要在特定既定端口向集群外部提供服务，并且可以通过集群节点直接访问时。例如，对外提供HTTP服务，但不需要负载均衡等额外功能。\n\n3. **LoadBalancer**\n   - **描述**：通过云服务提供商的负载均衡器或者外部提供的负载均衡器向外部提供服务。仅适用于支持外部负载均衡器的云平台。\n   - **使用场景**：使用云服务提供商管理 Kubernetes 集群时，你需要让外部用户访问服务，例如外网HTTP服务，并且需要负载均衡等高级功能。\n\n4. **ExternalName**\n   - **描述**：通过返回CNAME记录将服务解析映射到外部服务。这意味着可以将流量转发到集群外部的服务。\n   - **使用场景**：当你需要将集群内部的服务名称解析指向一个外部服务，例如指向一个外部的数据库服务器或一个第三方服务对接时，使用CNAME记录将流量转发。\n\n每种服务类型都有其特定的适用场合和约束，选择合适的服务类型对于确保服务的正确访问和高级功能的使用至关重要。",
+        "latencyMs": 9367,
+        "score": {
+          "total": 83,
+          "breakdown": {
+            "keywordScore": 100,
+            "keywordHits": [
+              "ClusterIP",
+              "NodePort",
+              "LoadBalancer",
+              "ExternalName"
+            ],
+            "keywordTotal": 4,
+            "referenceScore": 50,
+            "lengthScore": 100,
+            "structureScore": 85
+          }
+        }
+      },
+      {
+        "questionId": "cc-03",
+        "dimension": "core_concepts",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "Kubernetes 控制平面是负责管理 Kubernetes 集群的大脑。它由几个核心组件组成，它们共同协作以实现集群管理功能。以下是这些核心组件及其职责的详细解释：\n\n1. **kube-apiserver**\n   - **职责**：它是 Kubernetes API 服务器，对外提供 Kubernetes API 接口，所有 Kubernetes 组件与集群交互都必须通过这个组件。\n   - **功能**：负责接收和验证对 Kubernetes API 的所有请求，并更新相应的 ETCD 存储数据。\n   - **组件间通信**：kube-apiserver 不仅为 kubectl、Kubernetes 的调度器或控制器提供服务，也为集群外的服务通过 RESTful API 访问 Kubernetes 集群的状态和资源提供接口。\n\n2. **etcd**\n   - **职责**：etcd 是一个分布式键值存储系统，用于保存 Kubernetes 集群的所有数据，包括集群状态、配置数据、集群级别的资源对象等。\n   - **功能**：确保数据的高可用、一致性和持久性。\n   - **组件间通信**：kube-apiserver 通过与 etcd 通信来读取或写入集群状态。\n\n3. **kube-controller-manager**\n   - **职责**：运行控制循环（controllers），处理 Kubernetes 集群中常规任务的后台进程。\n   - **功能**：负责各种类型的控制器，例如节点控制器（NodeController），负责处理节点故障的恢复；复制控制器（ReplicationController）负责维护系统中指定数量的 Pod 副本；以及其他各种控制器。\n\n4. **kube-scheduler**\n   - **职责**：负责决定将 Pod 分配到哪个节点上。\n   - **功能**：调度器会监听新创建的未分配主机的 Pod，并根据调度策略（例如资源需求、亲和性规则、数据局部性等）将 Pod 分配到集群中的最佳节点。\n\n5. **cloud-controller-manager**\n   - **职责**：负责与云服务提供商交互，提供一个插件化的机制管理云服务。\n   - **功能**：用于云服务的控制器，例如节点控制器、路由控制器、服务控制器等，依赖于云服务的集群必须有这个组件。这个组件使得 Kubernetes 的集群可以运行在不同的云平台上。\n\n这些组件共同构成了 Kubernetes 控制平面的核心，它们协调合作，完成集群的调度管理、状态维护和API的请求处理等关键任务。每个组件都运行在 Master 节点，确保了集群的控制逻辑集中和统一管理。",
+        "latencyMs": 13283,
+        "score": {
+          "total": 83,
+          "breakdown": {
+            "keywordScore": 100,
+            "keywordHits": [
+              "apiserver",
+              "etcd",
+              "scheduler",
+              "controller-manager"
+            ],
+            "keywordTotal": 4,
+            "referenceScore": 50,
+            "lengthScore": 100,
+            "structureScore": 85
+          }
+        }
+      },
+      {
+        "questionId": "cc-04",
+        "dimension": "core_concepts",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "在 Kubernetes 中，Pod、ReplicaSet 和 Deployment 是具有父子关系的对象，它们组成了一个层级结构。\n\n1. **Pod**：\n   Pod 是 Kubernetes 中的基本部署单元，是能部署到集群中可以被调度和运行的最小和最简单的单元。Pod 中可以运行一个或多个容器，这些容器共享存储、网络资源和生命周期。\n\n2. **ReplicaSet**：\n   ReplicaSet 是用来确保用户定义的 Pod 副本数，以便在出现故障时维持一个稳定的状态。简单来说，ReplicaSet 会自动创建和维护一定数量的 Pod 副本。ReplicaSet 控制 Pod 的生命周期，并确保总有指定数量的 Pod 副本在运行。\n\n3. **Deployment**：\n   Deployment 是一个更高级别的抽象，用来描述应用的期望状态，它管理 ReplicaSet 的创建、更新及维护。Deployment 会根据定义自动创建 ReplicaSet，并通过滚动更新等策略来更新应用。这意味着旧版本 Pod 会逐渐被新版本替换，从而实现应用程序的平滑升级。\n\n层级结构如下：\n- **Deployment** 在顶层，定义集群状态的期望状态，包括应用程序的镜像、副本数量以及更新策略等。\n- **ReplicaSet** 在中间层，由 Deployment 控制。每个 ReplicaSet 都会被分配特定的 Pod 来运行。\n- **Pod** 在最低层，是实际运行应用的容器实例，由 ReplicaSet 直接管理。\n\n这种层级结构的主要作用是抽象级别和资源管理。底层的 Pod 被 ReplicaSet 抽象化，而 ReplicaSet 又被顶层的 Deployment 抽象化。通过管理 Deployment，用户不需要直接接触到 Pod 或 ReplicaSet 的细节，从而简化了应用程序管理的过程。",
+        "latencyMs": 9708,
+        "score": {
+          "total": 83,
+          "breakdown": {
+            "keywordScore": 100,
+            "keywordHits": [
+              "Deployment",
+              "ReplicaSet",
+              "滚动更新",
+              "副本"
+            ],
+            "keywordTotal": 4,
+            "referenceScore": 50,
+            "lengthScore": 100,
+            "structureScore": 85
+          }
+        }
+      },
+      {
+        "questionId": "cc-05",
+        "dimension": "core_concepts",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "Kubernetes 的声明式API是一种基于意向(Intent)的API方式，用户通过声明期望的状态是什么，Kubernetes系统会负责将现实状态转变为期望状态。在声明式API中，用户关心的是“要达成什么目标”，而不是“如何达成目标”。\n\n而命令式API是一种基于操作(Operation)的API方式，用户需要指明要执行的一系列步骤和具体的操作命令。在命令式API中，用户更关心“要怎么做”。\n\n本质区别如下：\n\n1. 操作方式：\n声明式API：告诉Kubernetes期望的结果，系统自动完成从当前状态到期望状态的转变。\n命令式API：告诉Kubernetes具体的操作步骤和命令，需要自己去实现状态的转变。\n\n2. 易错性：\n声明式API：基于最终状态，更少的人为出错，Kubernetes会自动处理状态的转变。\n命令式API：需要可靠的步骤设计和错综复杂的流程处理，出错几率相对较高。\n\n3. 代码可读性：\n声明式API：代码更简洁、清晰，更易于理解和交流。\n命令式API：代码复杂度较高，可能包含很多操作细节，阅读和理解成本增加。\n\n4. 可扩展性和灵活性：\n声明式API：降低对周围环境的感知要求，不需要知道系统具体是如何从当前状态过渡到目标状态。\n命令式API：对环境的依赖性较大，可能需要对环境变化做出适应性的手动操作。\n\n总的来说，声明式API更抽象，偏重于“要什么”，而命令式API偏重于“怎么做”。Kubernetes鼓励用户使用声明式API来简化操作并减少错误，命令式API通常用于更低层次的操作，比如插件和Kubernetes底层设施的操作。",
+        "latencyMs": 6382,
+        "score": {
+          "total": 61,
+          "breakdown": {
+            "keywordScore": 50,
+            "keywordHits": [
+              "声明式",
+              "期望状态"
+            ],
+            "keywordTotal": 4,
+            "referenceScore": 50,
+            "lengthScore": 100,
+            "structureScore": 75
+          }
+        }
+      },
+      {
+        "questionId": "cc-06",
+        "dimension": "core_concepts",
+        "error": "kimi API error 429: {\"error\":{\"message\":\"The engine is currently overloaded, please try again later\",\"type\":\"engine_overloaded_error\"}}",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cc-07",
+        "dimension": "core_concepts",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "### ConfigMap 和 Secret 的区别\n\n**ConfigMap** 和 **Secret** 都是 Kubernetes 中用来保存配置数据的工具，但它们的用途和设计目标有所不同：\n\n1. **ConfigMap**: 用于保存应用的配置数据。可以存储非敏感数据，如配置文件、应用设置等。ConfigMap 允许你方便地将配置与容器镜像分离，以便在不重新构建映像的情况下更改配置。\n\n2. **Secret**: 用于存储敏感数据，如密码、密钥等。出于安全考虑，Secret 被设计为包含少量的秘密信息，并且访问权限受到严格控制。\n\n### 使用方式\n\n#### ConfigMap\n\n1. 定义一个 ConfigMap（以YAML格式）：\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: app-config\ndata:\n  config.json: |-\n    {\n      \"key\": \"value\"\n    }\n```\n\n2. 在 Pod 定义中使用 ConfigMap:\n```yaml\napiVersion: v1\nkind: Pod\nmetadata:\n  name: mypod\nspec:\n  containers:\n    - name: mycontainer\n      image: myapp:1.0\n      volumeMounts:\n        - name: config-volume\n          mountPath: /etc/config\n  volumes:\n    - name: config-volume\n      configMap:\n        name: app-config\n```\n\n#### Secret\n\n1. 定义一个 Secret：\n```yaml\napiVersion: v1\nkind: Secret\nmetadata:\n  name: app-secret\ntype: Opaque\ndata:\n  password: base64EncodedPassword\n```\n\n2. 在 Pod 中使用 Secret:\n```yaml\napiVersion: v1\nkind: Pod\nmetadata:\n  name: mypod\nspec:\n  containers:\n    - name: mycontainer\n      image: myapp:1.0\n      volumeMounts:\n        - name: secret-volume\n          mountPath: /etc/secrets\n          readOnly: true\n  volumes:\n    - name: secret-volume\n      secret:\n        secretName: app-secret\n```\n\n### Secret 的安全局限性\n\n1. **Secret 对象本身不是加密的**：Kubernetes 的 Secret 在存储和 ETCD 数据库中是以 Base64 编码的形式保持的，这意味着任何拥有访问权限的系统管理员都可以解码这些 Secret。\n\n2. **持久化层的访问控制**：如果 ETCD 数据库的访问权限过于宽松，敏感数据可能会被未授权访问。\n\n3. **网络传输风险**：当集群管理员配置不当，例如未加密集群组件之间的通信时，敏感信息可能被截获。\n\n4. **使用不当的风险**：如在多个应用之间共享同一个 Secret 对象，可能会引起数据泄露。\n\n### 总结\n虽然 ConfigMap 和 Secret 在 Kubernetes 中都是存储配置数据的工具，但它们适用于不同类型的数据和场景。正确使用 ConfigMap 和 Secret，可以帮助保护应用配置信息不受意外泄露的风险，并确保容器的安全性和可维护性。",
+        "latencyMs": 17189,
+        "score": {
+          "total": 85,
+          "breakdown": {
+            "keywordScore": 100,
+            "keywordHits": [
+              "ConfigMap",
+              "Secret",
+              "Base64",
+              "加密",
+              "etcd"
+            ],
+            "keywordTotal": 5,
+            "referenceScore": 50,
+            "lengthScore": 100,
+            "structureScore": 100
+          }
+        }
+      },
+      {
+        "questionId": "cc-08",
+        "dimension": "core_concepts",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "Kubernetes Namespace 是 Kubernetes 中的一种机制，它允许将集群资源分配给不同的用户组、项目或业务部门，将其隔离在一个特定的上下文中。Namespace 可以理解为在同一个集群顶部创建多个虚拟集群，每个Namespace可以看作是具有独立命名空间的概念分区。\n\nNamespace 解决的问题：\n\n1. **逻辑分区**：在大规模的集群中，组织内部的多个团队可能会共享同一个 Kubernetes 集群，Namespace 有助于对这些团队使用的资源进行逻辑隔离和分组，避免命名冲突。\n\n2. **配额管理**：Namespace可以帮助管理在不同组或团队之间分配资源，比如CPU、内存、存储等，通过限制每个Namespace的资源来确保资源的合理使用。\n\n3. **权限控制**：可以对Namespace分配不同的权限策略，设置谁可以访问和操作Namespace中的资源，提高了安全性。\n\n默认的Namespace：\n\n1. **default**：默认的Namespace，如果不指定Namespace，所有没有特定Namespace的资源都会被创建到这个Namespace中。\n\n2. **kube-system**：包含集群基础建设负责的资源，例如 kube-apiserver、kube-controller-manager、kube-scheduler 和 etcd 等。大多是系统级组件运行在这个Namespace中。\n\n3. **kube-public**：用于公开访问的信息，例如，所有用户都可以读取，用于发布全集群范围可访问的配置信息。\n\n以上就是 Kubernetes Namespace 的基本介绍以及它解决的问题，以及默认的Namespace情况。",
+        "latencyMs": 6947,
+        "score": {
+          "total": 67,
+          "breakdown": {
+            "keywordScore": 60,
+            "keywordHits": [
+              "Namespace",
+              "default",
+              "kube-system"
+            ],
+            "keywordTotal": 5,
+            "referenceScore": 50,
+            "lengthScore": 100,
+            "structureScore": 85
+          }
+        }
+      }
+    ],
+    "minimax": [
+      {
+        "questionId": "cc-01",
+        "dimension": "core_concepts",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cc-02",
+        "dimension": "core_concepts",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cc-03",
+        "dimension": "core_concepts",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cc-04",
+        "dimension": "core_concepts",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cc-05",
+        "dimension": "core_concepts",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cc-06",
+        "dimension": "core_concepts",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cc-07",
+        "dimension": "core_concepts",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cc-08",
+        "dimension": "core_concepts",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      }
+    ]
+  },
+  "questionCount": 8,
+  "id": "175400e4-3cfc-4224-9767-fd5a5d5263f5",
+  "timestamp": "2026-04-15T16:06:01.384Z"
+}

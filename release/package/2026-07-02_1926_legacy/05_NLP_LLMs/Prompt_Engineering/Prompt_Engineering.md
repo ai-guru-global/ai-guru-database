@@ -426,7 +426,7 @@ final_prompt = ChatPromptTemplate.from_messages([
 | **迭代** | 改写提示 | DGRV 循环 (描述→生成→审查→验证) |
 | **结构** | System + User + Examples | STAR 结构 (情境+任务+架构+要求) |
 
-详细内容请参阅 [Vibe Coding 方法论](../../AI编程/Methodology/Vibe_Coding_Methodology.md) 中的"提示工程体系"章节。
+详细内容请参阅 [Vibe Coding 方法论](../../编程/Methodology/Vibe_Coding_Methodology.md) 中的"提示工程体系"章节。
 
 ---
 *Last updated: 2026-04-11*

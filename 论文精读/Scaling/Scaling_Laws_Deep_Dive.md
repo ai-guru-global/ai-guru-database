@@ -706,4 +706,14 @@ flowchart TB
 
 ---
 
+## Related
+
+- [[../../大模型/LLM_Training|LLM 训练]] — Scaling Laws 指导的训练实践
+- [[../../大模型/LLM_Architectures/LLM_Internals_Training|LLM 训练内部机制]] — 训练计算最优策略
+- [[../../模型训练/Training_Fundamentals|训练基础]] — 计算资源与训练规模
+- [[../../概念/LLM/context-window|上下文窗口概念卡]] — 规模与上下文长度关系
+- [[../../深度学习/Optimization/Optimization|优化方法]] — 大规模优化的理论基础
+
+---
+
 *Last updated: 2026-06-12*

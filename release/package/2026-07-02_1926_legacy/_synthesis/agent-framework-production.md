@@ -47,5 +47,5 @@ Agent 框架的灵活性往往是生产稳定性的敌人。LangGraph 的状态�
 - [[_concepts/ai-agents]]
 - [[Agent/Agent_Frameworks/README]]
 - [[Agent/Agent_Platforms/README]]
-- [[AI运维/AI_Observability_Guide]]
+- [[运维/AI_Observability_Guide]]
 - [[架构基建/Multi_Tenant_Architecture]]

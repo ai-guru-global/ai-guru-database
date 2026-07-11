@@ -11,7 +11,7 @@ sources: []
 ---
 
 > [!warning] 生产安全提示 · Production Safety
-> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 
 # AI Stack + MLflow + ACK 私有化 MLOps 参考架构
@@ -268,7 +268,7 @@ model = mlflow.pyfunc.load_model("models:/qwen2-7b-sft/Production")
 
 ### 9.1 MLflow Tracking Server 不可达
 
-参考 [[MLOps/Troubleshooting/MLflow_Tracking_Server_Unreachable|MLflow Tracking Server 不可达排障]]。
+参考 [[模型运维/Troubleshooting/MLflow_Tracking_Server_Unreachable|MLflow Tracking Server 不可达排障]]。
 
 ### 9.2 训练任务 Pod Pending
 
@@ -279,7 +279,7 @@ model = mlflow.pyfunc.load_model("models:/qwen2-7b-sft/Production")
 
 ### 9.3 推理服务延迟高
 
-参考 [[AI运维/SRE_Reliability/LLM_Inference_Slow_Unavailable_Runbook|LLM 推理延迟/不可用 Runbook]]。
+参考 [[运维/SRE_Reliability/LLM_Inference_Slow_Unavailable_Runbook|LLM 推理延迟/不可用 Runbook]]。
 
 ---
 
@@ -299,12 +299,12 @@ model = mlflow.pyfunc.load_model("models:/qwen2-7b-sft/Production")
 
 ## Related
 
-- [[_concepts/ai-stack|AI Stack]]
-- [[_concepts/ack|ACK]]
-- [[_concepts/mlflow|MLflow]]
-- [[_concepts/mlops|MLOps]]
-- [[_concepts/kserve|KServe]]
-- [[MLOps/Troubleshooting/MLflow_Tracking_Server_Unreachable|MLflow Tracking Server 不可达排障]]
+- [[概念/ai-stack|AI Stack]]
+- [[概念/ack|ACK]]
+- [[概念/mlflow|MLflow]]
+- [[概念/mlops|MLOps]]
+- [[概念/kserve|KServe]]
+- [[模型运维/Troubleshooting/MLflow_Tracking_Server_Unreachable|MLflow Tracking Server 不可达排障]]
 - [[架构基建/AI_Stack_Production_Toolchain|AI Stack 生产工具链总览]]
 - [[架构基建/AI_Stack_Training_Launchers_Guide|AI Stack 训练启动器指南]]
 

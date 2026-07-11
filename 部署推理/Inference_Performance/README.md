@@ -108,10 +108,10 @@ LLM 推理性能优化技术栈
 
 ## Related
 
-- [[_concepts/inference-performance]] — 推理性能：概念卡
-- [[_concepts/kv-cache]] — KV Cache 优化
-- [[_concepts/paged-attention]] — PagedAttention
-- [[_concepts/continuous-batching]] — Continuous Batching
-- [[_concepts/speculative-decoding]] — 投机解码
-- [[_concepts/prefill-decode]] — Prefill / Decode 阶段
+- [[概念/inference-performance]] — 推理性能：概念卡
+- [[概念/kv-cache]] — KV Cache 优化
+- [[概念/paged-attention]] — PagedAttention
+- [[概念/continuous-batching]] — Continuous Batching
+- [[概念/speculative-decoding]] — 投机解码
+- [[概念/prefill-decode]] — Prefill / Decode 阶段
 - [[部署推理/README|模型部署与推理]]

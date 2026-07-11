@@ -52,7 +52,7 @@ sources: []
 - [LLM 推理引擎选型指南](../../部署推理/Inference_Engines/LLM_Inference_Engine_Selection_Guide.md) -- 网关后端模型/推理引擎选型
 - [LLM 推理引擎迁移指南](../../部署推理/Inference_Engines/LLM_Inference_Engine_Migration_Guide.md) -- 多引擎切换与灰度策略
 - [RAG系统](../RAG系统/) -- RAG 系统
-- [AI运维](../AI运维/) -- AI 运维
+- [AI运维](../运维/) -- AI 运维
 
 ---
 
@@ -72,7 +72,7 @@ sources: []
 - [[架构基建/AI_Gateway/Kong_AI_Gateway_Deep_Dive]] — Kong AI Gateway 深度解析 (共享: ai-gateway, api-management, litellm, routing)
 - [[架构基建/AI_Gateway/Spring_AI_Gateway_Security]] — Spring AI 网关与安全 (共享: ai-gateway, api-management, litellm, routing)
 - [[架构基建/AI_Gateway/AI_Gateway_Comparison_2026.md|AI_Gateway_Comparison_2026]]
-- [[Agent/Agent_Evaluation/README_for_dummy|README_for_dummy]]
+- [[智能体/Agent_Evaluation/README_for_dummy|README_for_dummy]]
 
 - [[架构基建/AI_Gateway/AI_Gateway_Comparison_2026|AI Gateway 对比 2026]]
 - [[架构基建/AI_Gateway/LiteLLM_Deep_Dive|LiteLLM: 多模型统一 API 代理]]

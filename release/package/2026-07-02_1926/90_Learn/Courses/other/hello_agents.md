@@ -62,8 +62,8 @@ aliases:
 
 | 章号 | 章节名称 | 关键概念 | 本库建议配合阅读 | 页面链接 |
 |------|----------|----------|------------------|----------|
-| 01 | 初识智能体 | 智能体定义、传感器/执行器、自主性、反射/基于模型/基于目标/基于效用/学习型智能体、反应式/规划式/混合式、符号主义/连接主义 | [[AI入门/AI_Fundamentals]]、[[Agent/GenAI_L17_AI_Agents]] | [[Agent/GenAI_L17_AI_Agents]] |
-| 02 | 智能体发展史 | 物理符号系统假说、专家系统、MYCIN、SHRDLU、符号主义瓶颈、连接主义、强化学习、AlphaGo、LLM 驱动智能体 | [[AI入门/AI_History_Timeline]]、[[强化学习/RL_Fundamentals]] | [[AI入门/AI_History_Timeline]] |
+| 01 | 初识智能体 | 智能体定义、传感器/执行器、自主性、反射/基于模型/基于目标/基于效用/学习型智能体、反应式/规划式/混合式、符号主义/连接主义 | [[入门/AI_Fundamentals]]、[[Agent/GenAI_L17_AI_Agents]] | [[Agent/GenAI_L17_AI_Agents]] |
+| 02 | 智能体发展史 | 物理符号系统假说、专家系统、MYCIN、SHRDLU、符号主义瓶颈、连接主义、强化学习、AlphaGo、LLM 驱动智能体 | [[入门/AI_History_Timeline]]、[[强化学习/RL_Fundamentals]] | [[入门/AI_History_Timeline]] |
 | 03 | 大语言模型基础 | N-gram、神经网络语言模型、Transformer、自注意力、提示工程、主流 LLM、能力边界 | [[大模型/LLM_Architectures/LLM_Architectures]]、[[大模型/Prompt_Engineering/Prompt_Engineering]] | [[大模型/LLM_Architectures/LLM_Architectures]] |
 
 ### 第二部分：构建你的大语言模型智能体
@@ -97,7 +97,7 @@ aliases:
 
 | 章号 | 章节名称 | 关键概念 | 本库建议配合阅读 | 页面链接 |
 |------|----------|----------|------------------|----------|
-| 16 | 毕业设计 | 开源项目提交、选题原则、生产力/学习/创意/数据分析/生活服务类项目、PR 流程 | [[Agent/README]]、[[AI编程/AI_Coding_2026_Guide]] | [[Agent/README]] |
+| 16 | 毕业设计 | 开源项目提交、选题原则、生产力/学习/创意/数据分析/生活服务类项目、PR 流程 | [[Agent/README]]、[[编程/AI_Coding_2026_Guide]] | [[Agent/README]] |
 
 ---
 

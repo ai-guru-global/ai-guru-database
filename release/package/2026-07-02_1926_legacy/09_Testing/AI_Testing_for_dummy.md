@@ -468,8 +468,8 @@ AI 在训练时没见过"特殊场景"
 
 ## Related
 
-- [[AI测试/AI-Testing-in-nutshell]] — AI 测试与评估速成指南 (共享: ai-testing, evaluation, prompt-testing, testing)
-- [[AI测试/Testing_Frameworks/Java_AI_Testing]] — Java AI 测试实践 (共享: ai-testing, evaluation, prompt-testing, testing)
-- [[AI测试/README]] — AI 测试与评估 (AI Testing) (共享: ai-testing, evaluation, prompt-testing, testing)
-- [[AI测试/Weights_Biases_Deep_Dive.md|Weights_Biases_Deep_Dive]]
-- [[AI测试/Contract_Testing.md|Contract_Testing]]
+- [[测试/AI-Testing-in-nutshell]] — AI 测试与评估速成指南 (共享: ai-testing, evaluation, prompt-testing, testing)
+- [[测试/Testing_Frameworks/Java_AI_Testing]] — Java AI 测试实践 (共享: ai-testing, evaluation, prompt-testing, testing)
+- [[测试/README]] — AI 测试与评估 (AI Testing) (共享: ai-testing, evaluation, prompt-testing, testing)
+- [[测试/Weights_Biases_Deep_Dive.md|Weights_Biases_Deep_Dive]]
+- [[测试/Contract_Testing.md|Contract_Testing]]

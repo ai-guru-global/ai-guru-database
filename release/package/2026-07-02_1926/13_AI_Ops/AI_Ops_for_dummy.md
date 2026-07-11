@@ -348,10 +348,10 @@ AI Ops 不是单一工具，而是一整套解决方案！
 
 ## Related
 
-- [[AI运维/AIOps-in-nutshell]] — AI Ops 速成指南 (共享: ai-ops, incident-response, monitoring, observability)
-- [[AI运维/SRE_Reliability/AI_Incident_Response_Playbook]] — AI 系统事故响应手册 (共享: ai-ops, incident-response, monitoring, observability)
-- [[AI运维/README]] — AI 运维与可观测性 (AI Ops) (共享: ai-ops, incident-response, monitoring, observability)
-- [[AI运维/README_for_dummy]] — 16 AI Ops — 小白版 📡 (共享: ai-ops, incident-response, monitoring, observability)
+- [[运维/AIOps-in-nutshell]] — AI Ops 速成指南 (共享: ai-ops, incident-response, monitoring, observability)
+- [[运维/SRE_Reliability/AI_Incident_Response_Playbook]] — AI 系统事故响应手册 (共享: ai-ops, incident-response, monitoring, observability)
+- [[运维/README]] — AI 运维与可观测性 (AI Ops) (共享: ai-ops, incident-response, monitoring, observability)
+- [[运维/README_for_dummy]] — 16 AI Ops — 小白版 📡 (共享: ai-ops, incident-response, monitoring, observability)
 - [[PromptLayer_Deep_Dive|PromptLayer_Deep_Dive]]
 - [[MLflow_Deep_Dive|MLflow_Deep_Dive]]
 - [[Braintrust_Deep_Dive|Braintrust_Deep_Dive]]

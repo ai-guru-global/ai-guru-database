@@ -15,13 +15,13 @@ sources: []
 ---
 
 > [!warning] 生产安全提示 · Production Safety
-> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # KitOps (ModelKit): 大模型制品打包标准
 
 > **一句话理解**: KitOps 定义了 ModelKit——把大模型权重/代码/数据集/配置/文档打成一个 OCI 制品(可签名、可版本、可推任意镜像仓库),解决「模型在生产环境的散装搬运」和供应链安全问题。
 
-> 📐 **概念方法论**: ModelKit 解决的是「AI 制品的物流标准化」——它把模型权重、推理代码、训练数据集、配置、文档全部封装成一个 OCI 制品,让 Data Scientist / MLOps / Security 用同一份不可变工件各取所需。它是模型注册表(Model Registry)与制品仓库(Artifact Registry)之间的桥梁,见 [[MLOps/Experiment_Tracking/Model_Registry_and_Cards_Deep_Dive]];其底层使用 OCI 分层存储与 P2P 分发,与 [[CNCF_Cloud_Native_AI/Dragonfly_Deep_Dive]] 共享同一套 registry 协议。
+> 📐 **概念方法论**: ModelKit 解决的是「AI 制品的物流标准化」——它把模型权重、推理代码、训练数据集、配置、文档全部封装成一个 OCI 制品,让 Data Scientist / MLOps / Security 用同一份不可变工件各取所需。它是模型注册表(Model Registry)与制品仓库(Artifact Registry)之间的桥梁,见 [[模型运维/Experiment_Tracking/Model_Registry_and_Cards_Deep_Dive]];其底层使用 OCI 分层存储与 P2P 分发,与 [[CNCF_Cloud_Native_AI/Dragonfly_Deep_Dive]] 共享同一套 registry 协议。
 
 ---
 
@@ -664,5 +664,5 @@ A: 2025 年 v1.0 已 GA,Kitfile 与 OCI 布局稳定,多家企业在生产使用
 - [[CNCF_Cloud_Native_AI/README]]
 - [[CNCF_Cloud_Native_AI/Dragonfly_Deep_Dive]] —— OCI 制品的 P2P 分发加速,ModelKit 的最佳分发搭档
 - [[CNCF_Cloud_Native_AI/KServe_Deep_Dive]] —— 消费 ModelKit 部署推理服务的标准平台
-- [[MLOps/Experiment_Tracking/Model_Registry_and_Cards_Deep_Dive]] —— ModelKit 是模型注册表的制品载体
-- [[MLOps/Orchestration/DVC_Deep_Dive]] —— 数据/模型版本管理,可与 ModelKit 的 datasets 层互补
+- [[模型运维/Experiment_Tracking/Model_Registry_and_Cards_Deep_Dive]] —— ModelKit 是模型注册表的制品载体
+- [[模型运维/Orchestration/DVC_Deep_Dive]] —— 数据/模型版本管理,可与 ModelKit 的 datasets 层互补

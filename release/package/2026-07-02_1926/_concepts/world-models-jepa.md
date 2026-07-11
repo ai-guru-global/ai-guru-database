@@ -167,4 +167,4 @@ Perception（编码器）
 - [[_concepts/optimization-regularization.md|optimization-regularization]]
 - [[_concepts/state-space-models.md|state-space-models]]
 - [[_concepts/transformer-architecture.md|transformer-architecture]]
-- [[AI入门/AI_Future_Trends.md|AI_Future_Trends]]
+- [[入门/AI_Future_Trends.md|AI_Future_Trends]]

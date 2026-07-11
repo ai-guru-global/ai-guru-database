@@ -375,8 +375,8 @@ git tag -a data-v2.1 -m "Training data version 2.1"
 - [MLOps 流水线](../README.md) — 训练到部署的完整流程
 - [模型评估](../../模型评估/README.md) — 质量门禁的评估方法
 - [部署推理](../../部署推理/README.md) — 模型服务化技术
-- [混沌工程](../../AI运维/SRE_Reliability/Chaos_Engineering_AI.md) — 故障注入测试
-- [AI Ops 概述](AI运维/AI_Ops_2026.md) — 运维监控体系
+- [混沌工程](../../运维/SRE_Reliability/Chaos_Engineering_AI.md) — 故障注入测试
+- [AI Ops 概述](运维/AI_Ops_2026.md) — 运维监控体系
 
 ---
 
@@ -384,10 +384,10 @@ git tag -a data-v2.1 -m "Training data version 2.1"
 
 ## Related
 
-- [[AI运维/AIOps-in-nutshell.md|AIOps-in-nutshell]]
-- [[AI运维/SRE_Reliability/AI_Incident_Response_Playbook|AI_Incident_Response_Playbook]]
-- [[AI运维/AI_Ops_for_dummy.md|AI_Ops_for_dummy]]
-- [[AI运维/README.md|AI运维 README]]
-- [[AI运维/README_for_dummy.md|README_for_dummy]]
+- [[运维/AIOps-in-nutshell.md|AIOps-in-nutshell]]
+- [[运维/SRE_Reliability/AI_Incident_Response_Playbook|AI_Incident_Response_Playbook]]
+- [[运维/AI_Ops_for_dummy.md|AI_Ops_for_dummy]]
+- [[运维/README.md|AI运维 README]]
+- [[运维/README_for_dummy.md|README_for_dummy]]
 - [[tekton]]
 - [[argo-rollouts]]

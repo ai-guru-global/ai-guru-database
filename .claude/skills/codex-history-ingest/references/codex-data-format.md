@@ -36,7 +36,7 @@ Use this as the inventory backbone for append/full mode deltas.
 
 Common `type` values:
 
-- `session_meta` — run metadata (id, cwd, model/provider, etc.)
+- `session治理` — run metadata (id, cwd, model/provider, etc.)
 - `turn_context` — turn-scoped context envelope
 - `event_msg` — runtime events (task lifecycle, token/accounting, tool-call markers)
 - `response_item` — model response items (messages, tool calls, reasoning blocks)

@@ -251,7 +251,7 @@ Eval 数据集本身也是代码资产，必须版本化：
 | **LangSmith** | 商业 | 全栈（数据集+Judge+Trace） | 与 LangChain 深度集成 | LangChain 用户 |
 | **Arize Phoenix** | 商业 | 可观测+评估一体 | 开源版功能完整 | 重度可观测需求 |
 
-详见 [[AI测试/RAGAS_Deep_Dive]]、[[AI测试/Testing_Frameworks/DeepEval_Deep_Dive]]、[[AI测试/Testing_Frameworks/Promptfoo_Deep_Dive]]。
+详见 [[测试/RAGAS_Deep_Dive]]、[[测试/Testing_Frameworks/DeepEval_Deep_Dive]]、[[测试/Testing_Frameworks/Promptfoo_Deep_Dive]]。
 
 ---
 
@@ -486,9 +486,9 @@ def rag_answer(question):
 - [[部署推理/Cost/LLM_Cost_Optimization]] — 成本优化细节
 - [[部署推理/Caching/Prompt_Caching_Advanced]] — Prompt 缓存工程实现
 - [[RAG系统/README]] — RAG 系统架构（本文 §6 侧重其 Ops）
-- [[AI测试/Testing_Frameworks/Promptfoo_Deep_Dive]] — Prompt 红队与测试
-- [[AI测试/RAGAS_Deep_Dive]] — RAG 评估事实标准
-- [[AI运维/README]] — AI 系统运维（基础设施层）
+- [[测试/Testing_Frameworks/Promptfoo_Deep_Dive]] — Prompt 红队与测试
+- [[测试/RAGAS_Deep_Dive]] — RAG 评估事实标准
+- [[运维/README]] — AI 系统运维（基础设施层）
 - [[伦理安全/AI_Security_2026/README]] — 安全与红队
 - README — AI 网关（路由/限流/计费）
 

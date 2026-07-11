@@ -222,7 +222,7 @@ flowchart TB
 | [Claude Code](https://code.claude.com/docs/en/overview) | Anthropic CLI Agent |
 | [Codex](https://openai.com/codex/) | OpenAI 编程 Agent |
 
-> **关联**: → [[AI编程/Tools|AI 编程工具]]
+> **关联**: → [[编程/Tools|AI 编程工具]]
 
 ---
 
@@ -396,9 +396,9 @@ flowchart TB
 | 架构基础 | [[架构基建/README]] |
 | Agent 生产 | [[Agent/README]] |
 | AI 网关 | AI 网关 |
-| 测试 | [[AI测试/README]] |
-| AI Ops | [[AI运维/README]] |
-| AI 编程 | [[AI编程/README]] |
+| 测试 | [[测试/README]] |
+| AI Ops | [[运维/README]] |
+| AI 编程 | [[编程/README]] |
 | 论文精读 | [[论文精读/README]] |
 | 学习路径 | [[90_Learn/guides/learning_paths_2026|AI Guru 学习路径]] |
 
@@ -463,11 +463,11 @@ flowchart TB
 - [[大模型/Structured_Output_Guide|结构化输出指南]]
 - [[模型评估/Evaluation_Tools/LLM_as_Judge_Guide|LLM-as-Judge 评估]]
 - [[_concepts/long-context-vs-rag|长上下文 vs RAG]]
-- [[AI编程/AI_Coding_2026_Guide|AI 编程 2026 全景]]
+- [[编程/AI_Coding_2026_Guide|AI 编程 2026 全景]]
 - [[部署推理/Caching/Prompt_Caching_Advanced|Prompt 缓存高级]]
 - [[RAG系统/Advanced_RAG/Agentic_RAG_Guide|Agentic RAG]]
 - [[伦理安全/Guardrails_Production_Guide|AI 护栏实践]]
-- [[AI运维/AI_Observability_Guide_2026|AI 可观测性]]
+- [[运维/AI_Observability_Guide_2026|AI 可观测性]]
 - [[伦理安全/AI_Red_Teaming_Guide|AI 红队测试]]
 - [[架构基建/AI_Gateway/LLM_Gateway_Comparison_2026|LLM 网关对比]]
 - [[RAG系统/Embeddings/Embedding_Models_Guide|Embedding 模型选型]]

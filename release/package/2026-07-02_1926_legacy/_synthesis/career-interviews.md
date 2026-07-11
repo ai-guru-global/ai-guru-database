@@ -46,5 +46,5 @@ aliases:
 
 - [[面试岗位/README]]
 - [[_concepts/ai-fundamentals]]
-- [[AI入门/AI_Learning_Resources]]
-- [[AI编程/AI_Coding_for_dummy]]
+- [[入门/AI_Learning_Resources]]
+- [[编程/AI_Coding_for_dummy]]

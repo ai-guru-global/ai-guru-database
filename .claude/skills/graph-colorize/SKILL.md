@@ -57,7 +57,7 @@ Every color is wrapped as `{"a": 1, "rgb": <int>}`.
 
 ### Mode: `by-tag`
 
-1. Glob `$VAULT_PATH/**/*.md` excluding `_archives/`, `_raw/`, `.obsidian/`, `node_modules/`, `index.md`, `log.md`, `_insights.md`.
+1. Glob `$VAULT_PATH/**/*.md` excluding `归档/`, `原始/`, `.obsidian/`, `node_modules/`, `index.md`, `log.md`, `_insights.md`.
 2. Parse frontmatter `tags` from each page. Count usage per tag.
 3. **Drop `visibility/*` tags** from the frequency list — they are reserved system tags, handled only in `by-visibility` or `combined` mode.
 4. Take the top 10 tags by usage. If there are fewer than 10 unique tags, use all of them.

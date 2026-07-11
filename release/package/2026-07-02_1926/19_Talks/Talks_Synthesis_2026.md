@@ -220,9 +220,9 @@ flowchart TB
 
 ## 与其他章节的关联
 
-- [AI 历史](../AI入门/AI_History_Timeline.md) — 演讲者贡献与历史时间线
-- [AI 伦理](../AI入门/AI_Ethics_Society.md) — AI 安全争议的深入分析
-- [AI 未来趋势](../AI入门/AI_Future_Trends.md) — 行业前瞻判断的汇总
+- [AI 历史](../入门/AI_History_Timeline.md) — 演讲者贡献与历史时间线
+- [AI 伦理](../入门/AI_Ethics_Society.md) — AI 安全争议的深入分析
+- [AI 未来趋势](../入门/AI_Future_Trends.md) — 行业前瞻判断的汇总
 - [Agent 生产](../Agent/README.md) — Agent 技术实现
 
 ---

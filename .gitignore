@@ -97,3 +97,36 @@ _raw/**/.gitattributes
 #  then we re-allow en/ — last matching pattern wins.)
 _raw/github-sources/ai-agents-for-beginners/translations/*/
 !_raw/github-sources/ai-agents-for-beginners/translations/en/
+
+# ============================================================
+# 通用开发与运行时产物
+# ============================================================
+
+# Node modules and build artifacts
+前端应用/node_modules/
+前端应用/dist/
+前端应用/.vite/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Obsidian
+.obsidian/workspace
+.obsidian/workspace-mobile.json
+
+# Large archives
+*.tar.gz
+*.zip

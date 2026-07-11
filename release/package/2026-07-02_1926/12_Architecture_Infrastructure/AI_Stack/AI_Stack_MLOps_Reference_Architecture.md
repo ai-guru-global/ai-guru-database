@@ -279,7 +279,7 @@ model = mlflow.pyfunc.load_model("models:/qwen2-7b-sft/Production")
 
 ### 9.3 推理服务延迟高
 
-参考 [[AI运维/SRE_Reliability/LLM_Inference_Slow_Unavailable_Runbook|LLM 推理延迟/不可用 Runbook]]。
+参考 [[运维/SRE_Reliability/LLM_Inference_Slow_Unavailable_Runbook|LLM 推理延迟/不可用 Runbook]]。
 
 ---
 

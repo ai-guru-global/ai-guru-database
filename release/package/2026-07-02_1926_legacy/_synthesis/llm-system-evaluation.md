@@ -17,7 +17,7 @@ aliases:
 
 ## 核心论点
 
-当 LLM 从实验室模型变成面向用户的生产系统，评估对象也从"模型能不能答对题"扩展为"整个系统是否持续、安全、经济地满足用户需求"。[[模型评估/LLM_Evaluation_2026|LLM 评估方法论]]关注基础能力，[[模型评估/RAG_Evaluation_Deep_Dive|RAG 评估]]拆分检索与生成，[[AI测试/Agent_Evaluation_Deep_Dive|Agent 评估]]追踪多步行为轨迹，而[[MLOps/LLM_Guardrails_and_Safety_Ops_2026|安全护栏运维]]则确保这些能力在开放环境中不被滥用。四层评估既相互独立又层层递进，缺任何一层都会让生产系统陷入"指标好看、体验崩盘"的陷阱。
+当 LLM 从实验室模型变成面向用户的生产系统，评估对象也从"模型能不能答对题"扩展为"整个系统是否持续、安全、经济地满足用户需求"。[[模型评估/LLM_Evaluation_2026|LLM 评估方法论]]关注基础能力，[[模型评估/RAG_Evaluation_Deep_Dive|RAG 评估]]拆分检索与生成，[[测试/Agent_Evaluation_Deep_Dive|Agent 评估]]追踪多步行为轨迹，而[[MLOps/LLM_Guardrails_and_Safety_Ops_2026|安全护栏运维]]则确保这些能力在开放环境中不被滥用。四层评估既相互独立又层层递进，缺任何一层都会让生产系统陷入"指标好看、体验崩盘"的陷阱。
 
 ## 四层评估的联系与区别
 
@@ -62,7 +62,7 @@ MMLU 提升 2% 未必带来用户满意度提升，但 RAG 的幻觉率下降 1%
 
 - [[模型评估/LLM_Evaluation_2026|LLM 评估方法论 2026]] — 基础能力评估全景
 - [[模型评估/RAG_Evaluation_Deep_Dive|RAG 系统评估深度解析]] — 检索与生成分层评估
-- [[AI测试/Agent_Evaluation_Deep_Dive|Agent 评估深度解析]] — 多步行为与轨迹评估
+- [[测试/Agent_Evaluation_Deep_Dive|Agent 评估深度解析]] — 多步行为与轨迹评估
 - [[模型评估/Evaluation_Automation_2026|自动化模型评估 2026]] — CI/CD 中的评估流水线
 - [[MLOps/LLM_Guardrails_and_Safety_Ops_2026|LLM 护栏与安全运维 2026]] — 生产安全评估与运维
 - [[大模型/LLM_Production_Deployment_Runbook|LLM 生产部署运行手册]] — 模型上线评估实践

@@ -80,5 +80,5 @@ Harness 层级改进的效果已被多方验证：
 - [[Agent/Agent_Harness/Harness_Engineering_Complete_Guide.md]] -- Harness 完整架构与五大设计原则
 - [[Agent/Agent_Harness/Harness_Core_Subsystems.md]] -- 四大核心子系统的工程实现细节
 - [[Agent/Agent_Workflow/AgentOps_Production_Guide.md]] -- Harness 在生产中的故障模式与反模式
-- [[AI编程/Theory/Claude_Agent_Architecture.md]] -- Claude Code 的 Harness 设计模式
+- [[编程/Theory/Claude_Agent_Architecture.md]] -- Claude Code 的 Harness 设计模式
 - [[_concepts/agent-production-deployment]] -- Agent 生产部署系统工程

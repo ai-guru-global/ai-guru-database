@@ -542,8 +542,8 @@ SparkApi.main(
 - [[大模型/Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive]] — DeepSeek 深度解析
 - [[大模型/Chinese_LLM_Ecosystem/GLM_Zhipu_Deep_Dive]] — 智谱 GLM 深度解析
 - [[大模型/Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]] — 国产模型对比矩阵
-- [[Agent/GenAI_L17_AI_Agents]] — AI Agent 概述
-- [[90_Learn/courses/microsoft/microsoft_genai_for_beginners]] — 生成式 AI 入门课程
+- [[智能体/GenAI_L17_AI_Agents]] — AI Agent 概述
+- [[学习/courses/microsoft/microsoft_genai_for_beginners]] — 生成式 AI 入门课程
 
 ---
 

@@ -313,4 +313,4 @@ embeddings = model.encode(sentences)
 - [[RAG系统/RAG_Systems.md|RAG_Systems]]
 - [[RAG系统/README_Advanced.md|README_Advanced]]
 - [[RAG系统/RAG_Frameworks/Spring_AI_RAG_Deep_Dive.md|Spring_AI_RAG_Deep_Dive]]
-- [[_synthesis/rag-vector-database.md|rag-vector-database]]
+- [[治理/rag-vector-database.md|rag-vector-database]]

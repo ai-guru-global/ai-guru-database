@@ -10,7 +10,7 @@ tags:
   - prompt-engineering
   - hello-agents
 sources:
-  - "_raw/github-sources/hello-agents/docs/chapter4/第四章 智能体经典范式构建.md"
+  - "原始/github-sources/hello-agents/docs/chapter4/第四章 智能体经典范式构建.md"
   - "https://github.com/datawhalechina/hello-agents"
 summary: "Datawhale Hello-Agents 第四章笔记：从零实现 ReAct、Plan-and-Solve 与 Reflection 三种经典 Agent 范式，理解 Thought-Action-Observation 循环与自我纠错机制。"
 provenance:
@@ -135,8 +135,8 @@ Reflection 可视为在 ReAct 循环之上增加了一层**元认知（Metacogni
 
 ## 6. 关联阅读
 
-- [[Agent/Agent_Frameworks/AutoGen_Deep_Dive]] — AutoGen 多 Agent 框架
-- [[Agent/Agent_Workflow/Workflow-in-nutshell]] — Agent 工作流总览
+- [[智能体/Agent_Frameworks/AutoGen_Deep_Dive]] — AutoGen 多 Agent 框架
+- [[智能体/Agent_Workflow/Workflow-in-nutshell]] — Agent 工作流总览
 - [[大模型/Prompt_Engineering/Prompt_Engineering]] — 提示工程基础
 - [[大模型/Prompt_Engineering/GenAI_L05_Advanced_Prompts]] — 高级提示技术
-- [[Agent/Hello_Agents_L06_Frameworks_AutoGen_LangGraph]] — 主流框架实践
+- [[智能体/Hello_Agents_L06_Frameworks_AutoGen_LangGraph]] — 主流框架实践

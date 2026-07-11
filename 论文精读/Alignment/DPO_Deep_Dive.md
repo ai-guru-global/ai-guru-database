@@ -754,4 +754,14 @@ flowchart TB
 
 ---
 
+## Related
+
+- [[../../大模型/Fine_tuning_Techniques|微调技术]] — DPO 与 RLHF 微调方法对比
+- [[../../大模型/LLM_Architectures/LLM_Internals_Training|LLM 训练内部机制]] — 对齐训练技术细节
+- [[../../概念/LLM/decoding-strategies|解码策略概念卡]] — 偏好优化对生成的影响
+- [[../../深度学习/Optimization/Optimization|优化方法]] — 损失函数与优化理论
+- [[../../模型评估/Human_Evaluation|人工评估]] — 偏好数据质量评估
+
+---
+
 *Last updated: 2026-06-15*

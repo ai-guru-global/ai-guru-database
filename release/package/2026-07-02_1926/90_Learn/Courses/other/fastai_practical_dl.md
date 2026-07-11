@@ -32,4 +32,4 @@ sources: []
 ## 相关链接
 
 - [[90_Learn/README]] — 学习路径总览
-- [[AI入门/AI_Learning_Resources]] — AI 学习资源汇总
+- [[入门/AI_Learning_Resources]] — AI 学习资源汇总

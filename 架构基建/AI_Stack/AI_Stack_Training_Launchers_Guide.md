@@ -15,7 +15,7 @@ sources: []
 ---
 
 > [!warning] 生产安全提示 · Production Safety
-> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # AI Stack 训练启动器指南
 
@@ -171,4 +171,4 @@ swift dpo \
 - [[模型训练/Distributed_Training/HF_Accelerate_DeepSpeed_Guide|HF Accelerate & DeepSpeed 指南]]
 - [[模型训练/Distributed_Training/ms_swift_Deep_Dive|ms-swift 深度解析]]
 - [[模型训练/Monitoring/Training_Monitoring_2026|训练监控与实验追踪 2026]]
-- [[_concepts/distributed-parallelism|分布式并行策略]]
+- [[概念/distributed-parallelism|分布式并行策略]]

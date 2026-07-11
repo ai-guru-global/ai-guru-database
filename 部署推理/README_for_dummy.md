@@ -213,7 +213,7 @@ FP16 (16位) → INT8 (8位) → INT4 (4位)
 
 ## 下一步
 
-- 想学 MLOps？→ [MLOps/README_for_dummy.md](../MLOps/README_for_dummy.md)
+- 想学 MLOps？→ [MLOps/README_for_dummy.md](../模型运维/README_for_dummy.md)
 - 想学推理框架？→ 查看子目录具体文档
 - 想学架构？→ [架构基建/README_for_dummy.md](../架构基建/README_for_dummy.md)
 

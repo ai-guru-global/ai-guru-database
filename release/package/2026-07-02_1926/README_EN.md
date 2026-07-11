@@ -167,7 +167,7 @@ Master AI full-stack systematically
 
 ⏱️ 16-20 weeks
 
-[University Course →](./AI入门/)
+[University Course →](./入门/)
 
 </td>
 <td align="center" width="25%">
@@ -245,7 +245,7 @@ Complete path from math to production:
 
 | Chapter | Core Content | Difficulty |
 |---------|--------------|------------|
-| **00** [AI Introduction](./AI入门/) | General education: concepts, landscape, history, tools, ethics | ⭐ |
+| **00** [AI Introduction](./入门/) | General education: concepts, landscape, history, tools, ethics | ⭐ |
 | **01** [Fundamentals](./数学基础/) | Math & CS: Linear algebra, probability, distributed systems | ⭐⭐ |
 | **02** [Classical ML](./机器学习/) | ML basics: Supervised/unsupervised, XGBoost | ⭐⭐ |
 | **03** [Deep Learning](./深度学习/) | Neural networks: MLP, backprop, JEPA world models | ⭐⭐⭐ |
@@ -260,9 +260,9 @@ Complete path from math to production:
 | **12** [Architecture & Infrastructure](./架构基建/) | System design: Multi-tenant, SGLang, HA, edge AI | ⭐⭐⭐⭐ |
 | **13** [Agent Production](./Agent/) | Agent engineering: Frameworks, skills, workflows, evaluation | ⭐⭐⭐⭐ |
 | **14** [AI Gateway](./架构基建/AI_Gateway/) | Gateway: Routing, rate limiting, model gateway | ⭐⭐⭐ |
-| **15** [AI Testing](./AI测试/) | Testing: Test frameworks, contract testing, data management | ⭐⭐⭐ |
-| **16** [AI Ops](./AI运维/) | AIOps: Observability, incident response, chaos engineering | ⭐⭐⭐⭐ |
-| **17** [AI Coding](./AI编程/) | Coding tools & methodology: Cursor, Claude Code, Vibe Coding | ⭐⭐ |
+| **15** [AI Testing](./测试/) | Testing: Test frameworks, contract testing, data management | ⭐⭐⭐ |
+| **16** [AI Ops](./运维/) | AIOps: Observability, incident response, chaos engineering | ⭐⭐⭐⭐ |
+| **17** [AI Coding](./编程/) | Coding tools & methodology: Cursor, Claude Code, Vibe Coding | ⭐⭐ |
 | **18** [Cloud Ops Agent](./18_Cloud_Ops_Agent/) | Cloud ops: Intelligent agent, operations practices | ⭐⭐⭐ |
 | **19** [Ethics & Safety](./伦理安全/) | AI safety: Alignment, red teaming, OWASP LLM | ⭐⭐⭐ |
 | **20** [Industry Apps](./行业应用/) | Verticals: Healthcare/Finance/Manufacturing | ⭐⭐ |
@@ -280,8 +280,8 @@ Latest tech trends and industry insights:
 - [AI Hardware 2026](./数学基础/AI_Hardware/AI_Hardware_2026.md) - H100/H200/B200 comparison
 - [PEFT Fine-tuning 2026](./大模型/Fine_tuning_Techniques/PEFT_2026.md) - LoRA/QLoRA/DoRA, 70B on single GPU
 - [Advanced RAG](./RAG系统/) - Hybrid search, Agentic RAG
-- [AI Coding Assistants](./AI编程/) - Cursor, Claude Code, Devin
-- [Vibe Coding Methodology](./AI编程/) - Natural language driven dev, DGRV loop, production practices
+- [AI Coding Assistants](./编程/) - Cursor, Claude Code, Devin
+- [Vibe Coding Methodology](./编程/) - Natural language driven dev, DGRV loop, production practices
 - [Embodied AI 2026](./强化学习/Robotics_Embodied_AI/) - VLA models, humanoid robots
 - [World Models 2026](./深度学习/World_Models/) - JEPA/V-JEPA, LeCun's AGI path
 - [AI Video Generation](./计算机视觉/Video_Generation/) - Veo3, Kling 3.0, post-Sora

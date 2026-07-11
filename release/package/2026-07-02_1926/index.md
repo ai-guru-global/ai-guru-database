@@ -23,9 +23,9 @@
 - [[AI_Tools_Practical_Guide|AI工具与实践指南]] `13`
 - [[GenAI_L01_Intro_to_GenAI_and_LLMs|生成式人工智能和大型语言模型简介]] `8`
 - [[Hands_On_Experiments_Guide|AI 知识库配套实验指南 — 从理论到可运行代码]] `2`
-- [[AI入门/README|00 - AI 简介与历史]] `5`
-- [[AI入门/README_for_dummy|00 AI 简介与历史 — 小白版 🚀]] `4`
-- [[AI入门/index|AI Introduction]] 🔒
+- [[入门/README|00 - AI 简介与历史]] `5`
+- [[入门/README_for_dummy|00 AI 简介与历史 — 小白版 🚀]] `4`
+- [[入门/index|AI Introduction]] 🔒
 
 ## 01_Fundamentals（43）
 
@@ -462,17 +462,17 @@
 - [[Agent_Evaluation_Deep_Dive|Agent 评估深度解析 (Agent Evaluation Deep Dive)]] `8`
 - [[Contract_Testing|契约测试 (Contract Testing for AI Systems)]] `5`
 - [[RAGAS_Deep_Dive|RAGAS: RAG 评估框架]] `19`
-- ⭐ [[AI测试/README|AI 测试与评估 (AI Testing)]] `19`
-- [[AI测试/README_for_dummy|15 AI 测试 — 小白版 🧪]] `4`
+- ⭐ [[测试/README|AI 测试与评估 (AI Testing)]] `19`
+- [[测试/README_for_dummy|15 AI 测试 — 小白版 🧪]] `4`
 - [[Test_Data_Management|测试数据管理 (Test Data Management)]] `5`
 - [[DeepEval_Deep_Dive|DeepEval: LLM 测试框架]] `11`
 - ⭐ [[Java_AI_Testing|Java AI 测试实践]] `12`
 - [[LLM_Safety_Testing_Deep_Dive|LLM 安全测试深度指南 - 红队、越狱与对抗防御]] `4`
 - [[Promptfoo_Deep_Dive|Promptfoo: LLM Prompt 测试框架]] `13`
 - [[Regression_Testing_LLM_Deep_Dive|LLM 回归测试深度指南 - 非确定性输出的质量守护]] `3`
-- [[AI测试/Testing_Frameworks/index|Testing Frameworks]] `1` 🔒
+- [[测试/Testing_Frameworks/index|Testing Frameworks]] `1` 🔒
 - [[Weights_Biases_Deep_Dive|Weights & Biases: ML 实验追踪平台]] `5`
-- [[AI测试/index|Testing]] 🔒
+- [[测试/index|Testing]] 🔒
 
 ## 10_Deployment_Inference（74）
 
@@ -727,19 +727,19 @@
 - ⭐ [[AI_Ops_for_dummy|AI Ops 入门指南 (for Dummies)]] `23`
 - [[Capacity_Planning_AI_2026|Capacity Planning for AI Systems 2026]] `1`
 - [[Chaos_Engineering_for_AI_Systems|AI 系统混沌工程]] `3`
-- [[AI运维/Chaos_Engineering/index|Chaos Engineering]] `1`
+- [[运维/Chaos_Engineering/index|Chaos Engineering]] `1`
 - [[FinOps_for_AI|AI 场景 FinOps]] `5`
 - [[GPU_Cost_Optimization|GPU 成本优化]] `4`
-- [[AI运维/Cost_Management/index|Cost Management]] `1`
+- [[运维/Cost_Management/index|Cost Management]] `1`
 - [[AI_Incident_Response_Framework|AI 事故响应框架]] `5`
 - [[On_Call_Runbook_Template|On-Call Runbook 模板]] `2`
 - [[Post_Mortem_Template|AI Incident Post-Mortem Template]] `1`
-- [[AI运维/Incident_Response/index|Incident Response]] `1`
+- [[运维/Incident_Response/index|Incident Response]] `1`
 - ⭐ [[Kubernetes_Troubleshooting_Playbook|Kubernetes 运维排障 Playbook]] `15`
 - [[LLM_Inference_Observability_Stack|LLM 推理可观测性栈]] `3`
-- [[AI运维/Observability/index|Observability]] `2`
-- ⭐ [[AI运维/README|AI 运维与可观测性 (AI Ops)]] `40`
-- ⭐ [[AI运维/README_for_dummy|16 AI Ops — 小白版 📡]] `22`
+- [[运维/Observability/index|Observability]] `2`
+- ⭐ [[运维/README|AI 运维与可观测性 (AI Ops)]] `40`
+- ⭐ [[运维/README_for_dummy|16 AI Ops — 小白版 📡]] `22`
 - [[AI_Incident_Response_Playbook|AI 系统事故响应手册]] `31`
 - [[Chaos_Engineering_AI|AI 系统混沌工程实践 (Chaos Engineering for AI Systems)]] `4`
 - [[Cost_Optimization_AI_Deep_Dive|LLM 推理成本优化深度指南 - 从 Token 到 GPU 的全方位降本]] `5`
@@ -753,8 +753,8 @@
 - ⭐ [[LLM_Inference_Slow_Unavailable_Runbook|LLM 推理延迟/不可用 Runbook]] `12`
 - [[SLO_Error_Budget_AI_Deep_Dive|AI 系统 SLO 与错误预算深度指南 - 传统 SRE 如何适配 LLM]] `5`
 - [[SRE_for_AI_Systems|AI 系统的 SRE 实践指南]] `13`
-- [[AI运维/SRE_Reliability/index|SRE Reliability]] `1`
-- [[AI运维/index|AI Ops]] `4`
+- [[运维/SRE_Reliability/index|SRE Reliability]] `1`
+- [[运维/index|AI Ops]] `4`
 
 ## 14_RAG_Systems（42）
 
@@ -1021,21 +1021,21 @@
 - [[Agentic_Coding_Methodology|Agentic Coding Methodology 2026: Multi-Agent Software Engineering]] `3`
 - [[Vibe_Coding_Methodology|Vibe Coding 方法论 2026 完整指南]] `4`
 - [[Vibe_Coding_Production_Practices|Vibe Coding 生产环境实践指南]] `3`
-- [[AI编程/Methodology/index|Methodology]] `1` 🔒
+- [[编程/Methodology/index|Methodology]] `1` 🔒
 - [[OpenRouter_OpenCode_Guide|AI 编程与 LLM 网关专题 — OpenRouter & OpenCode 全量指南]] `27`
 - [[Claude_Enterprise_Use_Cases|Claude 企业实践案例]] `2`
 - [[Vibe_Coding_Getting_Started|Vibe Coding 傻瓜指南 (Vibe Coding for Dummies)]] `4`
 - [[Vibe_Coding_Prompt_Templates|Vibe Coding 提示词模板库]] `4`
 - [[Vibe_Coding_Real_World_Cases|Vibe Coding 实战案例集]] `4`
-- [[AI编程/Practice/index|Practice]] `1` 🔒
-- [[AI编程/README|AI编程 (AI Coding)]] `18`
-- [[AI编程/README_for_dummy|17 AI 编程 — 小白版 💻]] `3`
+- [[编程/Practice/index|Practice]] `1` 🔒
+- [[编程/README|AI编程 (AI Coding)]] `18`
+- [[编程/README_for_dummy|17 AI 编程 — 小白版 💻]] `3`
 - [[AI_Coding_Theory|AI辅助编程理论基础]] `27`
 - [[Claude_Agent_Architecture|Claude Agent 架构：设计模式、上下文管理与多智能体协作]] `14`
 - [[Claude_Cost_Optimization|Claude 成本优化与性能调优]] `2`
-- [[AI编程/Theory/index|Theory]] `1` 🔒
+- [[编程/Theory/index|Theory]] `1` 🔒
 - [[AI_Coding_Assistants_2026|AI编程助手 2026年全景报告]] `8`
-- [[AI编程/Tools/Claude_Code_Deep_Dive|Claude Code 深度解析：CLI、SDK、IDE 与自动化工作流]] `4`
+- [[编程/Tools/Claude_Code_Deep_Dive|Claude Code 深度解析：CLI、SDK、IDE 与自动化工作流]] `4`
 - [[Claude_Complete_Guide|Claude 完整指南：模型、提示工程、工具与协议]] `13`
 - [[CodeBuddy_Guide|CodeBuddy / WorkBuddy 使用指南]] `25`
 - [[Comate_Guide|Comate 使用指南]] `26`
@@ -1064,7 +1064,7 @@
 - [[30-opencode-server-api|Server 模式与 HTTP API]] `3`
 - [[31-opencode-github-automation|GitHub 集成与 CI/CD 自动化]] `3`
 - [[32-opencode-advanced-topics|进阶话题与生产最佳实践]] `3`
-- [[AI编程/Tools/OpenCode/index|Opencode]] `1`
+- [[编程/Tools/OpenCode/index|Opencode]] `1`
 - [[01-openrouter-overview-architecture|OpenRouter 概述与核心架构]] `26`
 - [[02-openrouter-quickstart-setup|快速接入与环境配置]] `26`
 - [[03-openrouter-models-providers|模型与 Provider 生态]] `25`
@@ -1077,15 +1077,15 @@
 - [[10-openrouter-streaming-multimedia|流式传输与多模态输入]] `25`
 - [[11-openrouter-security-privacy|安全、隐私与数据治理]] `12`
 - [[12-openrouter-enterprise-advanced|企业级高级实践]] `3`
-- [[AI编程/Tools/OpenRouter/index|Openrouter]] `1`
+- [[编程/Tools/OpenRouter/index|Openrouter]] `1`
 - [[Pending_Tools_Catalog|待探索工具目录]] `2`
 - [[Qoder_Guide|Qoder / QoderWork / QoderWake 使用指南]] `3`
 - [[Qwen_Guide|Qwen (通义千问) 使用指南]] `2`
 - [[Trae_Guide|Trae 使用指南]] `2`
 - [[codex-openai_overview|OpenAI Codex 概览]] `2`
 - [[github-copilot_overview|GitHub Copilot 概览]] `2`
-- [[AI编程/Tools/index|Tools]] `3`
-- [[AI编程/index|AI Coding]] 🔒
+- [[编程/Tools/index|Tools]] `3`
+- [[编程/index|AI Coding]] 🔒
 
 ## 17_Ethics_Safety（46）
 

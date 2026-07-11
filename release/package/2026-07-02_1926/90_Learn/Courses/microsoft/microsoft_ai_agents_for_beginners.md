@@ -106,7 +106,7 @@ aliases:
 
 | 课号 | 课程名称 | 关键概念 | 本库建议配合阅读 | 页面链接 |
 |------|----------|----------|------------------|----------|
-| 10 | 生产中的 AI 代理 | Trace/Span、OpenTelemetry、离线/在线评估、成本管理、常见故障 | [[AI运维/AI_Observability_Guide_2026]]、[[Agent/Agent_Evaluation/README]]、[[AI运维/AIOps-in-nutshell]] | — |
+| 10 | 生产中的 AI 代理 | Trace/Span、OpenTelemetry、离线/在线评估、成本管理、常见故障 | [[运维/AI_Observability_Guide_2026]]、[[Agent/Agent_Evaluation/README]]、[[运维/AIOps-in-nutshell]] | — |
 | 11 | 使用 Agentic 协议（MCP、A2A、NLWeb） | MCP client-server、A2A Agent Card/Artifact/事件队列、NLWeb 语义网 | [[_references/awesome-mcp-servers]]、[[Agent/Agent_Protocols/A2A_Protocol_Deep_Dive]]、[[架构基建/AI_Gateway/AI_Gateway_2026]] | [[Agent/Course_Notes/Microsoft_AI_Agents_L11_Agentic_Protocols]] |
 | 12 | AI 代理的上下文工程 | 上下文类型、Scratchpad、记忆、压缩、多代理、上下文失败模式 | [[Agent/Memory_Infrastructure/README]]、[[Agent/Memory_Infrastructure/Agent_Memory_Techniques]]、[[_concepts/ai-agents]] | — |
 
@@ -115,7 +115,7 @@ aliases:
 | 课号 | 课程名称 | 关键概念 | 本库建议配合阅读 | 页面链接 |
 |------|----------|----------|------------------|----------|
 | 13 | 管理 Agentic 记忆 | 工作/短期/长期记忆、Persona/Episodic/Entity Memory、Mem0、Cognee、Structured RAG | [[Agent/Memory_Infrastructure/Agent_Memory_Systems_2026]]、[[Agent/Memory_Infrastructure/Agent_Memory_Techniques]]、[[RAG系统/RAG_Systems]] | [[Agent/Course_Notes/Microsoft_AI_Agents_L13_Agent_Memory]] |
-| 14 | 探索 Microsoft Agent Framework | MAF 编排模式、Agent/Thread/Middleware、Workflows、OpenTelemetry | [[Agent/Agent_Frameworks/README]]、[[Agent/Agent_Workflow/Workflow-in-nutshell]]、[[AI运维/AI_Observability_Guide_2026]] | — |
+| 14 | 探索 Microsoft Agent Framework | MAF 编排模式、Agent/Thread/Middleware、Workflows、OpenTelemetry | [[Agent/Agent_Frameworks/README]]、[[Agent/Agent_Workflow/Workflow-in-nutshell]]、[[运维/AI_Observability_Guide_2026]] | — |
 | 15 | 构建计算机使用代理（CUA） | Browser-Use + Playwright + CDP、Vision、结构化输出、Agent vs Actor | [[Agent/Agent_Skills/Agent_Skills_Ecosystem_Catalog]]、[[Agent/Agent_Skills/Agent_Skills_Deep_Dive]]、[[计算机视觉/Multimodal_Vision/Multimodal_Vision|多模态视觉模型]] | — |
 | 16 | 部署可扩展代理 | *Coming Soon* | [[架构基建/Architecture_Overview/AI_Infrastructure_2026]]、[[部署推理/Deployment_Inference_2026]] | — |
 | 17 | 创建本地 AI 代理 | *Coming Soon* | [[大模型/Edge_LLM/Edge_LLM_Deep_Dive]]、[[部署推理/Inference_Engines/LiteRT_Deep_Dive]] | — |

@@ -1317,4 +1317,4 @@ lora_config = LoraConfig(
 - [[模型训练/Model-Training-in-nutshell.md|Model-Training-in-nutshell]]
 - [[模型训练/Model_Training_for_dummy.md|Model_Training_for_dummy]]
 
-- [[_synthesis/alignment-rlhf|价值对齐 × RLHF：从人类反馈到可扩展监督]]
+- [[治理/alignment-rlhf|价值对齐 × RLHF：从人类反馈到可扩展监督]]

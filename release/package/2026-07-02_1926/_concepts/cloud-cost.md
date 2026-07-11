@@ -42,4 +42,4 @@ Inform → Optimize → Operate
 
 - [[_concepts/finops|FinOps]]
 - [[_concepts/gpu-sharing|GPU Sharing]]
-- [[AI运维/Cost_Management/GPU_Cost_Optimization|GPU 成本优化]]
+- [[运维/Cost_Management/GPU_Cost_Optimization|GPU 成本优化]]

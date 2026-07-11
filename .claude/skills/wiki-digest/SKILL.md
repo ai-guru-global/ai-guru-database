@@ -30,7 +30,7 @@ You are generating a human-readable digest of recent wiki activity: what was lea
 
 Glob all `.md` files under `$OBSIDIAN_VAULT_PATH`. Skip special/system files:
 - `index.md`, `log.md`, `hot.md`, `AGENTS.md`, `_insights.md`
-- Anything under `_meta/`, `_archives/`, `_raw/`
+- Anything under `治理/`, `归档/`, `原始/`
 - Journal digest pages themselves (`journal/digest-*.md`)
 
 For each remaining page, read its frontmatter:
@@ -56,7 +56,7 @@ For each tag across new + updated pages:
 Sort descending, take top 5
 ```
 
-Also read `$OBSIDIAN_VAULT_PATH/_meta/taxonomy.md` (if it exists). Flag any tag from step 1 that **does not appear** in the taxonomy — these are new vocabulary words that emerged this period.
+Also read `$OBSIDIAN_VAULT_PATH/治理/taxonomy.md` (if it exists). Flag any tag from step 1 that **does not appear** in the taxonomy — these are new vocabulary words that emerged this period.
 
 Note which categories grew most (concepts/, entities/, skills/, synthesis/, references/, etc.).
 
@@ -76,12 +76,12 @@ Take the top 3–5 connections. Write each as a plain-English sentence: not just
 
 ## Step 4: Surface Open Threads
 
-Scan active pages and `_raw/` for unresolved work:
+Scan active pages and `原始/` for unresolved work:
 
 - **Drafts**: pages with `lifecycle: draft` or `lifecycle: stub`
 - **Ambiguous claims**: count `^[ambiguous]` markers across all active pages (don't list every one — just the count and which pages have the most)
-- **Unstaged notes**: count files in `$OBSIDIAN_VAULT_PATH/_raw/` (anything here hasn't been promoted)
-- **Taxonomy gaps**: tags from Step 2 that aren't in `_meta/taxonomy.md`
+- **Unstaged notes**: count files in `$OBSIDIAN_VAULT_PATH/原始/` (anything here hasn't been promoted)
+- **Taxonomy gaps**: tags from Step 2 that aren't in `治理/taxonomy.md`
 
 ## Step 5: Choose Recommended Re-reads
 
@@ -142,7 +142,7 @@ Most active category: **[category/]** ([N pages added or updated])
 
 - **Drafts to compile** ([count]): [[concepts/foo]], [[concepts/bar]] — still in draft lifecycle
 - **Ambiguous claims**: [N] `^[ambiguous]` markers across [M] pages — run `/wiki-synthesize` to resolve
-- **Unstaged notes**: [N] files in `_raw/` — run `/wiki-ingest _raw/` to promote them
+- **Unstaged notes**: [N] files in `原始/` — run `/wiki-ingest 原始/` to promote them
 - **Taxonomy gaps**: Tags `#newtag1`, `#newtag2` used but not in taxonomy — run `/tag-taxonomy`
 
 *(Omit any subsection where count is 0.)*
@@ -192,7 +192,7 @@ Either way, append to `log.md`:
 |---|---|
 | Fewer than 5 active pages | Offer to widen the period; proceed only if user confirms |
 | Empty vault (no pages at all) | Tell the user to run an ingest first; stop |
-| No `_meta/taxonomy.md` | Skip taxonomy gap check; omit that line from Open Threads |
+| No `治理/taxonomy.md` | Skip taxonomy gap check; omit that line from Open Threads |
 | No `_insights.md` | Skip hub-based scoring in Step 3; still produce connections section |
 | All pages are `visibility/pii` | Report "N private pages active this period" with no details; offer full mode |
 | Period spans a wiki rebuild | Note it in the digest: "Wiki was rebuilt during this period — page dates reflect post-rebuild state" |

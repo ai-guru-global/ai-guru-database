@@ -429,4 +429,4 @@ Azure AI Studio 的模型目录使用户能够：
 
 | 上一课 | 下一课 |
 |--------|--------|
-| [[AI入门/GenAI_L01_Intro_to_GenAI_and_LLMs|L01 生成式AI简介]] | [[伦理安全/GenAI_L03_Using_GenAI_Responsibly|L03 负责任使用AI]] |
+| [[入门/GenAI_L01_Intro_to_GenAI_and_LLMs|L01 生成式AI简介]] | [[伦理安全/GenAI_L03_Using_GenAI_Responsibly|L03 负责任使用AI]] |

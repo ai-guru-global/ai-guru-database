@@ -592,6 +592,14 @@ AI是工具,不是替代
 - 🔙 [U-Net分割 - 小白版](../Segmentation/Segmentation_for_dummy.md) - Diffusion用的就是U-Net!
 - 🔜 [强化学习 - 小白版](../../强化学习/RL_Foundations/RL_Foundations_for_dummy.md) - 理解RLHF如何改进生成质量
 
+## Related
+
+- [[../../大模型/Multimodal_Models/Multimodal_Architectures_2026|多模态架构]] — 文本到图像的多模态生成
+- [[../../深度学习/Generative_Models/Diffusion_Models_Deep_Dive|Diffusion 深度页]] — 扩散模型的核心原理
+- [[../../概念/Vision/generative-vision-models|生成式视觉模型概念卡]] — GAN/Diffusion/VAE 概念定义
+- [[../../部署推理/Quantization|量化部署]] — 生成模型推理优化
+- [[../../模型评估/Benchmarks/Multimodal_Evaluation_Benchmarks|多模态评估]] — 生成质量评估指标
+
 ---
 
 *本文是 [Generative_Models.md](./Generative_Models.md) 的简化版,适合零基础读者。*

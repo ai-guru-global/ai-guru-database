@@ -176,7 +176,7 @@ flowchart TB
 
 - [Prompt Engineering](../Prompt_Engineering/Prompt_Engineering.md) — 如何诱导普通模型做推理
 - [LLM 架构](../LLM_Architectures/LLM_Architectures.md) — 大模型基础
-- [Agent-in-nutshell](../../Agent/Agent_Foundations/Agent-in-nutshell.md) — Agent 也需要推理能力
+- [Agent-in-nutshell](../../智能体/Agent_Foundations/Agent-in-nutshell.md) — Agent 也需要推理能力
 
 ---
 

@@ -1254,3 +1254,13 @@ def evaluate_recommender(model, test_loader, k=10):
 - Hidasi, B. et al. "Session-based Recommendations with Recurrent Neural Networks" (2016)
 - Kang, WC. & McAuley, J. "Self-Attentive Sequential Recommendation" (2018)
 - Surprise 文档: https://surprise.readthedocs.io/
+
+---
+
+## Related
+
+- [[../../数学基础/Linear_Algebra|线性代数]] — 矩阵分解的数学基础
+- [[../../深度学习/Transfer_Learning|迁移学习]] — 推荐模型预训练方法
+- [[../../模型评估/Online_Evaluation|在线评估]] — 推荐系统线上评估
+- [[../../概念/General/ab-testing-framework|A/B 测试概念卡]] — 推荐效果评估
+- [[../../大模型/LLM_Fundamentals|LLM 基础]] — LLM 驱动的推荐系统

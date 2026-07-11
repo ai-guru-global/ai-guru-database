@@ -174,9 +174,9 @@ t0: [A, B, C] 进入 batch
 
 ## Related
 
-- [[_concepts/continuous-batching]] — Continuous Batching
-- [[_concepts/paged-attention]] — PagedAttention
-- [[_concepts/prefill-decode]] — Prefill / Decode 阶段
+- [[概念/continuous-batching]] — Continuous Batching
+- [[概念/paged-attention]] — PagedAttention
+- [[概念/prefill-decode]] — Prefill / Decode 阶段
 - [[部署推理/Inference_Performance/README|推理性能专题]]
 - [[部署推理/Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]]
 - [[部署推理/Inference_Performance/Prefill_Decode_Disaggregation|Prefill-Decode 分离]]

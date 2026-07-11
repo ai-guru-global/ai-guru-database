@@ -1,0 +1,3408 @@
+{
+  "type": "batch",
+  "models": [
+    "qwen",
+    "kimi",
+    "minimax"
+  ],
+  "summary": {
+    "qwen": {
+      "modelName": "Qwen3-Max",
+      "model": "qwen-max",
+      "totalQuestions": 80,
+      "averageScore": 0,
+      "dimensionScores": {}
+    },
+    "kimi": {
+      "modelName": "Kimi K2.5",
+      "model": "moonshot-v1-8k",
+      "totalQuestions": 80,
+      "averageScore": 61.7,
+      "dimensionScores": {
+        "core_concepts": 65.5,
+        "api_objects": 68.5,
+        "ops_knowledge": 62.8,
+        "version_timeliness": 49.9,
+        "config_writing": 92.1,
+        "error_analysis": 62.3,
+        "alert_handling": 50.5,
+        "version_upgrade": 52.8,
+        "best_practices": 50.8,
+        "terminology": 59,
+        "command_parsing": 66.3,
+        "log_analysis": 50,
+        "change_plan": 55,
+        "troubleshooting": 53,
+        "feature_explanation": 56.3
+      }
+    },
+    "minimax": {
+      "modelName": "MiniMax M2.1",
+      "model": "MiniMax-M2.1",
+      "totalQuestions": 80,
+      "averageScore": 0,
+      "dimensionScores": {}
+    }
+  },
+  "results": {
+    "qwen": [
+      {
+        "questionId": "cc-01",
+        "dimension": "core_concepts",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cc-02",
+        "dimension": "core_concepts",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cc-03",
+        "dimension": "core_concepts",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cc-04",
+        "dimension": "core_concepts",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cc-05",
+        "dimension": "core_concepts",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cc-06",
+        "dimension": "core_concepts",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cc-07",
+        "dimension": "core_concepts",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cc-08",
+        "dimension": "core_concepts",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ao-01",
+        "dimension": "api_objects",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ao-02",
+        "dimension": "api_objects",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ao-03",
+        "dimension": "api_objects",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ao-04",
+        "dimension": "api_objects",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ao-05",
+        "dimension": "api_objects",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ao-06",
+        "dimension": "api_objects",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ao-07",
+        "dimension": "api_objects",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ao-08",
+        "dimension": "api_objects",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ok-01",
+        "dimension": "ops_knowledge",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ok-02",
+        "dimension": "ops_knowledge",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ok-03",
+        "dimension": "ops_knowledge",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ok-04",
+        "dimension": "ops_knowledge",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ok-05",
+        "dimension": "ops_knowledge",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ok-06",
+        "dimension": "ops_knowledge",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ok-07",
+        "dimension": "ops_knowledge",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ok-08",
+        "dimension": "ops_knowledge",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vt-01",
+        "dimension": "version_timeliness",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vt-02",
+        "dimension": "version_timeliness",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vt-03",
+        "dimension": "version_timeliness",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vt-04",
+        "dimension": "version_timeliness",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vt-05",
+        "dimension": "version_timeliness",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vt-06",
+        "dimension": "version_timeliness",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vt-07",
+        "dimension": "version_timeliness",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vt-08",
+        "dimension": "version_timeliness",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cw-01",
+        "dimension": "config_writing",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cw-02",
+        "dimension": "config_writing",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cw-03",
+        "dimension": "config_writing",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cw-04",
+        "dimension": "config_writing",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cw-05",
+        "dimension": "config_writing",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cw-06",
+        "dimension": "config_writing",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cw-07",
+        "dimension": "config_writing",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cw-08",
+        "dimension": "config_writing",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ea-01",
+        "dimension": "error_analysis",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ea-02",
+        "dimension": "error_analysis",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ea-03",
+        "dimension": "error_analysis",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ea-04",
+        "dimension": "error_analysis",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ah-01",
+        "dimension": "alert_handling",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ah-02",
+        "dimension": "alert_handling",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ah-03",
+        "dimension": "alert_handling",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ah-04",
+        "dimension": "alert_handling",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vu-01",
+        "dimension": "version_upgrade",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vu-02",
+        "dimension": "version_upgrade",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vu-03",
+        "dimension": "version_upgrade",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vu-04",
+        "dimension": "version_upgrade",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "bp-01",
+        "dimension": "best_practices",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "bp-02",
+        "dimension": "best_practices",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "bp-03",
+        "dimension": "best_practices",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "bp-04",
+        "dimension": "best_practices",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "tm-01",
+        "dimension": "terminology",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "tm-02",
+        "dimension": "terminology",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "tm-03",
+        "dimension": "terminology",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "tm-04",
+        "dimension": "terminology",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cp-01",
+        "dimension": "command_parsing",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cp-02",
+        "dimension": "command_parsing",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cp-03",
+        "dimension": "command_parsing",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cp-04",
+        "dimension": "command_parsing",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "la-01",
+        "dimension": "log_analysis",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "la-02",
+        "dimension": "log_analysis",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "la-03",
+        "dimension": "log_analysis",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "la-04",
+        "dimension": "log_analysis",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "chp-01",
+        "dimension": "change_plan",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "chp-02",
+        "dimension": "change_plan",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "chp-03",
+        "dimension": "change_plan",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "chp-04",
+        "dimension": "change_plan",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ts-01",
+        "dimension": "troubleshooting",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ts-02",
+        "dimension": "troubleshooting",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ts-03",
+        "dimension": "troubleshooting",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ts-04",
+        "dimension": "troubleshooting",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "fe-01",
+        "dimension": "feature_explanation",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "fe-02",
+        "dimension": "feature_explanation",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "fe-03",
+        "dimension": "feature_explanation",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "fe-04",
+        "dimension": "feature_explanation",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      }
+    ],
+    "kimi": [
+      {
+        "questionId": "cc-01",
+        "dimension": "core_concepts",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "Pod 是 Kubernetes 中的基本概念和核心对象之一，它是可以被创建、启动和停止的最小部署单元。一个 Pod 通常包含一个或多个容器（通常是应用程序容器），这些容器共享网络和储存资源。Pod 中的容器设计为协同工作解决某个特定的任务。\n\n### 为什么 Pod 是 Kubernetes 的最小调度单元而不是容器？\n\n1. **资源共享和封装**：Pod 允许多个容器共享网络和存储资源，例如，它们能够共享同一个网络命名空间，意味着它们可以相互之间直接通过 localhost 通信；此外，它们还能够共享存储卷（Volume）。这提供了一个更高级的抽象，使得一些复杂的应用程序能够更简便地部署和管理。\n\n2. **支持单实例多容器**：一些应用可能需要多个辅助服务或“辅助进程”辅助主容器，例如日志轮转、数据缓存、辅助监控等。Pod 允许这些辅助服务与主容器一起部署，共享资源，并简化了这类型的应用打包和部署。\n\n3. **管理生命周期**：Pod 中的多个容器共享相同的生命周期，它们要么同时启动，要么同时停止。这与容器独立调度不同，容器作为独立单元独立管理生命周期可能会导致管理复杂度增加。\n\n4. **简化恢复和重启**：如果 Pod 中的某个容器遇到问题或崩溃，整个 Pod 都将被重新调度，这样可以一起重新启动所有容器，而不是仅重启单个容器。这样的管理使得应用恢复更为简单和一致。\n\n5. **容器间协同**：在同一个Pod中的容器可以容易地共享环境变量和配置文件，可以更容易地协同工作。\n\n综上所述，Kubernetes 将 Pod 设计为调度的基本单元，是为了提供更高层次的抽象，使得开发者和运维人员可以更简单地部署和管理复杂的应用而不露痕迹地将多个容器捆绑在一起。使用 Pod 这种封装方式，Kubernetes 解决了多个容器之间复杂关系和资源管理的难题， 提供了更简洁、一致的管理方式。",
+        "latencyMs": 9611,
+        "score": {
+          "total": 65,
+          "breakdown": {
+            "keywordScore": 71,
+            "keywordHits": [
+              "最小调度单元",
+              "共享网络",
+              "共享存储",
+              "容器",
+              "localhost"
+            ],
+            "keywordTotal": 7,
+            "referenceScore": 28,
+            "lengthScore": 100,
+            "structureScore": 85
+          }
+        }
+      },
+      {
+        "questionId": "cc-02",
+        "dimension": "core_concepts",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "Kubernetes Service是一种抽象，定义了访问Pod的不同策略，它允许外部访问集群中的一组相同的服务Pods。以下是Kubernetes Service的四种类型及其使用场景：\n\n1. ClusterIP（默认类型）\n   - 场景：当你希望集群内部的服务之间可以相互通信，而不想将服务暴露给集群外部时。\n   - 描述：ClusterIP类型的Service通过一个虚拟的内部IP地址暴露给集群内部，这个IP地址只能从集群内部访问。\n\n2. NodePort\n   - 场景：当你需要将服务暴露给集群外部，而且外部客户可以通过每个节点的固定端口来访问服务。\n   - 描述：NodePort类型的Service会在每个节点上打开一个端口（NodePort），客户可以通过`<NodeIP>:<NodePort>`的方式来访问Service。\n\n3. LoadBalancer\n   - 场景：当你希望云服务提供商自动为你创建一个外部负载均衡器来访问Service。\n   - 描述：LoadBalancer类型的Service会在云平台上（如AWS、GCP、Azure）创建一个负载均衡器，云服务商负责将流量转发到Service。\n\n4. ExternalName\n   - 场景：当你需要将服务解析为一个CNAME记录，并返回该CNAME。\n   - 描述：ExternalName类型的Service通过返回由服务DNS记录指定的hostname和/或SRV记录来对外暴露服务。这在集成已有服务时非常有用，无需修改应用程序来让它们能够访问Kubernetes内的服务。\n\n下面是一个每种类型的Service的简单YAML配置示例：\n\n```yaml\n# ClusterIP\napiVersion: v1\nkind: Service\nmetadata:\n  name: my-service-1\nspec:\n  selector:\n    app: MyApp\n  ports:\n    - protocol: TCP\n      port: 80\n      targetPort: 9376\n\n# NodePort\napiVersion: v1\nkind: Service\nmetadata:\n  name: my-service-2\nspec:\n  selector:\n    app: MyApp\n  ports:\n    - protocol: TCP\n      port: 80\n      targetPort: 9376\n  type: NodePort\n\n# LoadBalancer\napiVersion: v1\nkind: Service\nmetadata:\n  name: my-service-3\nspec:\n  selector:\n    app: MyApp\n  ports:\n    - protocol: TCP\n      port: 80\n      targetPort: 9376\n  type: LoadBalancer\n\n# ExternalName\napiVersion: v1\nkind: Service\nmetadata:\n  name: my-service-4\nspec:\n  type: ExternalName\n  externalName: my.database.example.com\n  ports:\n    - port: 80\n```\n\n以上配置文件说明了每种Type的基本配置，具体的使用时还需根据实际情况对yaml文件进行适当的修改。",
+        "latencyMs": 12614,
+        "score": {
+          "total": 76,
+          "breakdown": {
+            "keywordScore": 86,
+            "keywordHits": [
+              "ClusterIP",
+              "NodePort",
+              "LoadBalancer",
+              "ExternalName",
+              "集群内部",
+              "负载均衡"
+            ],
+            "keywordTotal": 7,
+            "referenceScore": 43,
+            "lengthScore": 100,
+            "structureScore": 90
+          }
+        }
+      },
+      {
+        "questionId": "cc-03",
+        "dimension": "core_concepts",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "Kubernetes 控制平面（Control Plane）是 Kubernetes 集群中的大脑，负责管理整个集群的状态和调度。控制平面通常由以下几个组件组成，每个组件都有其独特的职责：\n\n1. **etcd**：\n   - **职责**：etcd 是一个分布式键值存储系统，用于保存集群的所有数据，包括集群的状态、配置和应用信息等。它是 Kubernetes 控制平面中的核心数据存储组件。\n   \n2. **API Server**（kube-apiserver）：\n   - **职责**：API Server 作为 Kubernetes 的前端服务接口，供所有组件和用户访问 Kubernetes API。它是外界与 Kubernetes 控制平面交互的唯一入口，处理来自用户、内部组件的认证、授权、数据校验和 API 路由。\n\n3. **Scheduler**（kube-scheduler）：\n   - **职责**：Scheduler 负责集群中 Pod 的调度工作，它通过分析待部署的 Pod 和集群中的各种资源，将 Pod 绑定到合适的节点上运行，确保集群资源的最优利用和负载均衡。\n\n4. **Controller Manager**（kube-controller-manager）：\n   - **职责**：Controller Manager 负责运行控制器进程，用于处理集群中的常规任务。它管理多个类型的控制器，如副本控制器（ReplicationController）、节点控制器、服务账户和令牌控制器等，它们对特定类型的 Kubernetes 对象进行操作和维护。\n\n5. **Kubelet**：\n   - **职责**：尽管 Kubelet 运行在每个节点上，但它与控制平面紧密协作。Kubelet 负责确保容器都运行在 Pod 中，同时与 API Server 通信来获取 Pod 规格和更新状态。Kubelet 也在节点上运行容器运行时（例如 Docker 或 containerd）。\n\n6. **Proxy**（kube-proxy）：\n   - **职责**：Kube-proxy 在每个节点上运行，负责实现 Kubernetes 服务（Service）的网络代理功能。它负责将访问 Kubernetes 服务的请求转发到后端的 Pod，实现负载均衡和网络转发。\n\n7. ** etcd Manager**（etcd-manager）：\n   - **职责**：这个组件并不是 Kubernetes 核心组件的一部分，而是一些 Kubernetes 发行版（如 OpenShift）中用来管理 etcd 实例的组件，它确保 etcd 集群的健康和数据一致性。\n\n以上组件共同工作，实现了 Kubernetes 的核心功能，包括容器的调度、负载均衡、服务发现和自我修复等。控制平面组件通常运行在可靠性高、性能强的节点上，以确保整个集群的稳定性和可用性。",
+        "latencyMs": 14464,
+        "score": {
+          "total": 75,
+          "breakdown": {
+            "keywordScore": 100,
+            "keywordHits": [
+              "apiserver",
+              "etcd",
+              "scheduler",
+              "controller-manager",
+              "分布式",
+              "键值存储",
+              "调度",
+              "控制器"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 23,
+            "lengthScore": 100,
+            "structureScore": 85
+          }
+        }
+      },
+      {
+        "questionId": "cc-04",
+        "dimension": "core_concepts",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "在 Kubernetes 中，Deployment、ReplicaSet、Pod 三者之间构成一个层级关系，其中每个层次都有一定作用和责任。\n\n1. **Pod（容器组）**：\n   - Pod 是 Kubernetes 中最基本的部署单元，它封装了一个或多个容器（例如，Docker 容器），以及存储和其他配置。\n   - Pod 是 Kubernetes 中的最小部署单元，通常不会直接操作 Pod，而是通过更高的抽象层次进行管理。\n\n2. **ReplicaSet（副本集）**：\n   - ReplicaSet 负责维护一组具有相同功能的副本（即Pod副本），保证任何时候都运行指定数量的 Pod 副本。\n   - 如果一个 Pod 因为种种原因被删除或终止，ReplicaSet 负责确保替换创建新的 Pod，以保持复制品数量不变。\n   - 通常您会使用 Deployment 管理 ReplicaSet，而不会直接操作 ReplicaSet。\n\n3. **Deployment（部署）**：\n   - Deployment 提供了声明式的更新能力，用于描述应用的期望状态，包括应用的副本数、更新策略等。\n   - Deployment 通过管理 ReplicaSet 来实现对 Pod 的控制，它会创建和维护一个或多个 ReplicaSet。\n   - 部署时会指定一个 ReplicaSet 控制特定数量的 Pod 副本。当更新应用时（例如更新镜像），Deployment 会自动更新 ReplicaSet 及相关的 Pod。\n\n**层级结构关系如下**：\n\n```\nDeployment（控制器）\n  |\n  +----> ReplicaSet（控制器，管理不同版本的 Pod）\n         |\n         +----> Pod（基本单元）\n```\n\n具体来说，当您创建一个 Deployment 时，Kubernetes 会在内部为您创建一个 ReplicaSet。ReplicaSet 将确保指定数量的 Pod 副本始终处于运行状态。如果 Deployment 的配置发生变化（例如更新镜像），Deployment 将会创建一个新的 ReplicaSet 替换旧的，这样实现了发布和回滚功能。因此，Pod 是 Kubernetes 集群中的工作单元，ReplicaSet 确保运行指定数量的 Pod 副本，而 Deployment 负责 Pod 的声明式部署和更新。",
+        "latencyMs": 9454,
+        "score": {
+          "total": 75,
+          "breakdown": {
+            "keywordScore": 86,
+            "keywordHits": [
+              "Deployment",
+              "ReplicaSet",
+              "副本",
+              "回滚",
+              "声明式",
+              "管理"
+            ],
+            "keywordTotal": 7,
+            "referenceScore": 37,
+            "lengthScore": 100,
+            "structureScore": 100
+          }
+        }
+      },
+      {
+        "questionId": "cc-05",
+        "dimension": "core_concepts",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "Kubernetes 的声明式 API 是一种用来描述、更新和管理 Kubernetes 集群资源的方式，这种方式的核心是声明资源的“期望状态”。与此相对的是命令式 API，即告诉 Kubernetes 集群“如何做”来实现某个状态变化。\n\n**声明式 API的本质：**\n1. **逻辑上分离：** 用户只需关心集群资源的最终状态，不需要了解如何达到这个状态的具体步骤。\n2. **状态驱动：** Kubernetes 控制器会持续观察资源的状态，并自动将实际状态调整至声明的“期望状态”。\n3. **易于维护和更新：** 只需要更新声明的资源状态，Kubernetes 会自动处理旧状态向新状态的转换。\n4. **可预测和一致性：** 声明状态的变更之后，集群会不断地尝试向该状态靠拢，这使得状态变得更加可预测和一致。\n\n**命令式 API的本质：**\n1. **明确操作：** 使用命令式 API 时，需要指定具体的操作步骤，例如启动或停止某个容器。\n2. **过程驱动：** 用户需要自己控制操作的顺序和互不依赖的步骤，这可能导致状态不一致。\n3. **复杂性高：** 对于复杂系统，需要管理多个操作的顺序和相互依赖，这增加了复杂性。\n4. **难以维护状态：** 一旦发生意外或中断，需要通过外部工具或者手动操作来恢复到期望状态。\n\n**本质区别：**\n- **操作焦点：** 声明式 API 关注“What”（要达成什么状态），命令式 API 关注“How”（如何达成状态）。\n- **自动化程度：** 声明式 API 提供更高级别的自动化，减少了手动干预和状态管理需要。\n- **错误恢复：** 声明式 API 在面对错误时可以更容易地自动恢复到期望状态，而命令式 API 需要额外的逻辑来处理错误并恢复状态。\n\n在实践中，Kubernetes 推荐使用声明式 API，因为它能够提供更好的管理和操作资源的体验。",
+        "latencyMs": 9196,
+        "score": {
+          "total": 49,
+          "breakdown": {
+            "keywordScore": 29,
+            "keywordHits": [
+              "声明式",
+              "期望状态"
+            ],
+            "keywordTotal": 7,
+            "referenceScore": 34,
+            "lengthScore": 100,
+            "structureScore": 85
+          }
+        }
+      },
+      {
+        "questionId": "cc-06",
+        "dimension": "core_concepts",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "在 Kubernetes 中，Pod 的 QoS（Quality of Service，服务质量）类别是一种用来区分 Kubernetes 节点上不同 Pods 的资源和优先级的方法。根据 Pod 申请的资源请求（requests）和限制（limits）参数，Pod 被分为以下三类：\n\n1. **Guaranteed（保证）**：\n   - CPU 和内存都设置了请求值和限制值，且两者相等。\n   - 这类 Pod 可以完全保证所需的资源。\n   - 驱逐优先级：最低，因为这些 Pod 提供的服务是最稳定的。\n\n2. **Burstable（可爆发）**：\n   - 至少设置了 CPU 或内存的请求值或限制值。\n   - 如果只设置了 CPU 或内存其中一个资源的限制，而另一个资源仅设置了请求，则这种 Pod 仍然被视为 Burstable。\n   - 这类 Pod 可以根据具体的请求与限制调整其资源使用。\n   - 驱逐优先级：中等，因为 Kubernetes 在需要回收资源时，会首先考虑这类 Pod。\n\n3. **BestEffort（尽力而为）**：\n   - 既无 CPU，也无内存的请求值。\n   - 这类 Pod 在资源紧张时会被优先考虑驱逐。\n   - 驱逐优先级：最高，因为这些 Pod 在资源不足时优先被牺牲以确保 高优先级的 Pod 能继续运行。\n\n**驱逐优先级**如下：\n- **Guranteed** 类别的 Pod 驱逐优先级最低，只有在极端情况下才会被考虑驱逐。\n- **Burstable** 类别的 Pod 驱逐优先级中等，在资源不足时，会按照一定规则（比如优先驱逐消耗资源最多的 Pod）来考虑驱逐这些 Pod。\n- **BestEffort** 类别的 Pod 驱逐优先级最高，当节点资源不足时往往最先被驱逐。\n\nKubernetes 节点在发生资源不足时会遵循这样的驱逐优先级来决定应该牺牲哪个 Pod 来释放资源，以满足其他 Pod 的需求。这有助于在资源有限的情况下，尽可能合理地管理不同 Pod 的资源需求和保证高优先级服务的稳定性。",
+        "latencyMs": 9100,
+        "score": {
+          "total": 64,
+          "breakdown": {
+            "keywordScore": 86,
+            "keywordHits": [
+              "Guaranteed",
+              "Burstable",
+              "BestEffort",
+              "requests",
+              "limits",
+              "驱逐"
+            ],
+            "keywordTotal": 7,
+            "referenceScore": 6,
+            "lengthScore": 100,
+            "structureScore": 85
+          }
+        }
+      },
+      {
+        "questionId": "cc-07",
+        "dimension": "core_concepts",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "### ConfigMap 和 Secret 的区别\n\n1. **ConfigMap**：用于存储非敏感配置数据，如配置文件、环境变量值或其他属性值。ConfigMap 适合不涉及机密信息（如密码、密钥等）的配置信息。\n\n2. **Secret**：专门用于存储敏感数据，如用户密码、数据库密码、SSH 密钥、TLS 证书等。Secret 提供更安全的机制来保护这些信息，以确保敏感数据不会被误暴露。\n\n### 使用方式\n\n#### ConfigMap 使用示例\n\n1. **创建 ConfigMap**\n   ```yaml\n   apiVersion: v1\n   kind: ConfigMap\n   metadata:\n     name: app-config\n   data:\n     config.properties: |\n       database.host=my.db.host\n       database.port=3306\n   ```\n\n2. **在 Pod 中使用 ConfigMap**\n   ```yaml\n   apiVersion: v1\n   kind: Pod\n   metadata:\n     name: mypod\n   spec:\n     containers:\n     - name: mycontainer\n       image: myimage\n       envFrom:\n       - configMapRef:\n           name: app-config\n   ```\n\n#### Secret 使用示例\n\n1. **创建 Secret**\n   ```shell\n   kubectl create secret generic db-secret --from-literal=username=dbuser --from-literal=password=secretpassword\n   ```\n\n   或者创建文件然后创建Secret:\n\n   ```shell\n   echo -n 'mypassword' > ./secret.txt\n   kubectl create secret generic db-secret --from-file=./secret.txt\n   ```\n\n2. **在 Pod 中使用 Secret**\n   ```yaml\n   apiVersion: v1\n   kind: Pod\n   metadata:\n     name: mypod\n   spec:\n     containers:\n     - name: myapp-container\n       image: myapp\n       envFrom:\n       - secretRef:\n           name: db-secret\n   ```\n\n### Secret 的安全局限性\n\n尽管 Kubernetes 的 Secret 旨在存储敏感数据，但它也有一些局限性：\n\n1. **在 etcd 中存储**：Secret 数据被保存在 etcd 数据库中，这意味着存储为明文状态。理想情况下应使用加密的 etcd，并确保 etcd 的访问控制策略严格。\n\n2. **限制访问**：仅支持最基本的访问控制和资源隔离。开发者需要额外的安全措施来确保敏感信息在提供给 Pod 的过程中的安全。\n\n3. **通过 API 访问**：如果 Kubernetes API Server 受到伤害，那么存储于其中的 Secret 也可能泄露。\n\n4. **不能用于存储二进制数据**：Secret 主要设计用来存储键值对类型的结构化数据，不适用于大型的二进制数据。\n\n基于这些局限性，使用 Secret 存储和管理敏感信息时需要小心，并考虑将密钥与其他强加密措施结合以增强安全性。",
+        "latencyMs": 11555,
+        "score": {
+          "total": 58,
+          "breakdown": {
+            "keywordScore": 63,
+            "keywordHits": [
+              "ConfigMap",
+              "Secret",
+              "加密",
+              "etcd",
+              "环境变量"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 9,
+            "lengthScore": 100,
+            "structureScore": 100
+          }
+        }
+      },
+      {
+        "questionId": "cc-08",
+        "dimension": "core_concepts",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "Kubernetes Namespace 是一种用于隔离不同工作负载的方式，它让集群管理者可以在同一个物理集群中运行多个逻辑上的“虚拟”集群。通过这种方式，不同的用户、组织、项目或者应用程序可以使用相同的集群资源，而不会相互干扰。\n\nNamespace 解决的问题主要是：\n1. **资源隔离**：允许多个用户共享同一个物理服务器的资源，同时保持资源使用上的隔离性。\n2. **命名空间隔离**：不同的Namespace可以包含相同的资源名称，从而避免命名冲突。\n3. **访问控制**：根据Namespace对用户进行权限控制，可以限制用户只能访问特定Namespace内的资源。\n\n在 Kubernetes 集群中，默认包含以下 Namespace：\n1. **default**：默认Namespace，如果创建资源时没有指定Namespace，则会被放置在此。\n2. **kube-system**：存储cluster级别服务的Namespace，比如DNS服务、监控、日志收集等。\n3. **kube-public**：包含公开信息的Namespace，所有用户都有权限访问此Namespace中的资源。\n4. **kube-node-lease**：用于记录节点租约的Namespace，用于节点动态心跳。\n5. **ingress-nginx**：从 Kubernetes 1.21 开始，由 NGINX ingress 资源创建的默认Namespace。如果您使用的是 Traefik 作为 ingress controller， 则有一个 **ingress-traefik**。\n\n需要注意的是，在 Kubernetes 的未来版本（特别是 1.25 版本）中，有一些 namespace 可能会被废弃或重新命名，例如 `kube-node-lease` 将会被 `kube-system-nodes` 替代。因此，使用时应关注相关更新和变化。",
+        "latencyMs": 7336,
+        "score": {
+          "total": 62,
+          "breakdown": {
+            "keywordScore": 63,
+            "keywordHits": [
+              "资源隔离",
+              "default",
+              "kube-system",
+              "kube-public",
+              "kube-node-lease"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 30,
+            "lengthScore": 100,
+            "structureScore": 85
+          }
+        }
+      },
+      {
+        "questionId": "ao-01",
+        "dimension": "api_objects",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "CustomResourceDefinition（CRD）是Kubernetes中的一个扩展机制，它允许用户创建和使用自己的资源对象，这些对象不属于Kubernetes的原生APIs。CRD提供了一个声明式的方法来创建和操作自定义的、特定的 CRD 对象，使得用户可以根据自己的需求设计出适用于特定领域的工具和工作流。\n\n### CustomResourceDefinition的作用：\n\n1. **扩展API**：CRD允许扩展Kubernetes API，使得可以定义和使用非内置的资源，例如数据库、消息队列等，都可以作为CRD资源。\n2. **资源建模**：用户可以通过CRD建模复杂的、有状态的应用或服务。\n3. **抽象化自管理**：允许开发人员编写自定义的控制逻辑，来自动处理CRD对象的生命周期管理。\n\n### CustomResourceDefinition的使用场景：\n\n1. **简化部署**：无需编写额外的部署和升级代码，只需通过CRD就可以管理复杂的应用程序和服务。\n2. **管理有状态服务**：存在于Kubernetes之上的数据库、消息队列等有状态的服务可以封装成CRD进行轻松管理。\n3. **促进开发者自由度**：开发者可以自行定义和管理自己的API，而无需等待Kubernetes社区引入新的API。\n\n### Operator模式：\n\nOperator是一种用于自动化Kubernetes应用程序管理的模式，它基于CustomResource以及CRD实现。Operator一般都会包含以下部分：\n\n1. **自定义资源（CR）**：CR代表被管理的应用或者服务，是CRD的一个实例。\n2. **自定义资源定义（CRD）**：定义了CR的格式和API，使得Kubernetes能够理解CR。\n3. **Operator Controller**：控制器是为了管理CR和CRD。它通过监听CR的变化来响应和执行相应的动作。\n\nOperator模式通过结合自定义资源和控制器，允许开发者定义、封装和运行他们的应用程序，同时还提供一系列的管理操作，例如部署、升级、故障排查等，使得应用程序更加易于运维和维护。使用Operator模式，开发者可以专注于应用程序的开发，而将运维工作交给Operator处理。常见的一些Operator包括Etcd Operator、Prometheus Operator等。",
+        "latencyMs": 9719,
+        "score": {
+          "total": 73,
+          "breakdown": {
+            "keywordScore": 100,
+            "keywordHits": [
+              "CRD",
+              "自定义资源",
+              "Operator",
+              "控制器",
+              "扩展",
+              "生命周期",
+              "自动化"
+            ],
+            "keywordTotal": 7,
+            "referenceScore": 17,
+            "lengthScore": 100,
+            "structureScore": 85
+          }
+        }
+      },
+      {
+        "questionId": "ao-02",
+        "dimension": "api_objects",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "在 Kubernetes 中，基于角色的访问控制（RBAC）是一种策略框架，用于定义谁可以对 Kubernetes 集群中的资源执行什么操作。RBAC 授权系统内置于 Kubernetes 网络中，可随时启用和停用。它允许更细粒度地控制对 Kubernetes 资源的访问，符合最小权限原则（Principle of Least Privilege）。\n\n以下是 RBAC 中的主要组件及其工作原理的简要说明：\n\n1. **Role 和 ClusterRole**\n\n   - **Role** 是某一组权限的集合，它定义了可以对选定的资源执行哪些操作，如 `get`、`list`、`watch` 和 `edit`。\n   - **ClusterRole** 与 Role 类似，但是 ClusterRole 应用于整个集群的作用域，意味着它定义的权限适用于集群中的所有资源。\n\n   角色内的权限定义也是资源的集合，例如 \"pods\"、\"services\" 或 \"nodes\"，同时包括可以在这些资源上执行的动作，像是 \"create\"、\"update\" 或是 \"delete\"。\n\n2. **RoleBinding 和 ClusterRoleBinding**\n\n   - **RoleBinding** 用于在角色和用户、组或 ServiceAccount 之间建立关联。通过 RoleBinding，可以将 Role 内的权限赋予某个特定的用户、组或 ServiceAccount。\n   - **ClusterRoleBinding** 类似于 RoleBinding，但是用于将 ClusterRole 内的权限赋予用户，组，或 ServiceAccount，并且这些权限适用于整个集群。\n\n**RBAC 的工作流程简化如下**：\n\n1. 定义角色（Role 或 ClusterRole）：您需要声明您希望允许执行的操作和它们适用的资源。\n2. 创建角色绑定（RoleBinding 或 ClusterRoleBinding）：通过声明将刚创建的角色与要授予权限的用户、组或服务账户关联。\n3. 权限认证：当用户或系统尝试对资源执行操作时，RBAC 组件会检查是否有任何 RoleBinding 或 ClusterRoleBinding 与之关联，并相应地授权或拒绝请求。\n\n**举例说明**：\n\n假设有一个名为 Alice 的用户和一个名为 `web-team` 的组。您要允许这个组查看 Pod 和 Service 的能力，同时允许 Alice 管理整个集群内所有的 Deployments。以下是具体的 YAML 配置示例：\n\n```yaml\n# 创建 Role - 查看集群级别的 Pod 和 Service\napiVersion: rbac.authorization.k8s.io/v1\nkind: Role\nmetadata:\n  namespace: default\n  name: pod-reader\nrules:\n- apiGroups: [\"\"]\n  resources: [\"pods\", \"services\"]\n  verbs: [\"get\", \"watch\", \"list\"]\n\n# 创建 RoleBinding - 将 Role 赋予 web-team 组\napiVersion: rbac.authorization.k8s.io/v1\nkind: RoleBinding\nmetadata:\n  name: read-pods\n  namespace: default\nsubjects:\n- kind: Group\n  name: web-team\n  apiGroup: rbac.authorization.k8s.io\nroleRef:\n  kind: Role\n  name: pod-reader\n  apiGroup: rbac.authorization.k8s.io\n\n# 创建 ClusterRole - 管理集群级别的 Deployments\napiVersion: rbac.authorization.k8s.io/v1\nkind: ClusterRole\nmetadata:\n  name: deployment-manager\nrules:\n- apiGroups: [\"apps\"]\n  resources: [\"deployments\"]\n  verbs: [\"create\", \"delete\", \"get\", \"list\", \"patch\", \"update\", \"watch\"]\n\n# 创建 ClusterRoleBinding - 将 ClusterRole 赋予 Alice\napiVersion: rbac.authorization.k8s.io/v1\nkind: ClusterRoleBinding\nmetadata:\n  name: deploy-manager\nsubjects:\n- kind: User\n  name: alice\n  apiGroup: rbac.authorization.k8s.io\nroleRef:\n  kind: ClusterRole\n  name: deployment-manager\n  apiGroup: rbac.authorization.k8s.io\n```\n\n以上就是 Kubernetes RBAC 的基本工作原理及配置方法。通过创建角色和角色绑定，您可以实现更精细的用户权限控制，使得资源的访问权限更加灵活且安全。",
+        "latencyMs": 20986,
+        "score": {
+          "total": 81,
+          "breakdown": {
+            "keywordScore": 100,
+            "keywordHits": [
+              "RBAC",
+              "Role",
+              "ClusterRole",
+              "RoleBinding",
+              "ClusterRoleBinding",
+              "ServiceAccount",
+              "apiGroups",
+              "verbs"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 36,
+            "lengthScore": 100,
+            "structureScore": 100
+          }
+        }
+      },
+      {
+        "questionId": "ao-03",
+        "dimension": "api_objects",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "`NetworkPolicy` 是 Kubernetes 中用来控制 Pod 间网络流量的 API 对象。通过定义 `NetworkPolicy`，管理员可以定义哪些 Pod 可以相互通信以及允许哪些外部流量。这有助于实现 Pod 间的网络隔离。\n\n### NetworkPolicy 的作用\n\n1. **流量控制**：限制特定的 Pod 只能接收或发送到特定条件的流量。\n2. **安全性增强**：提高集群的安全性，减少潜在的攻击面。\n3. **微服务间隔离**：在微服务架构中，`NetworkPolicy` 可以帮助隔离不同的服务。\n\n### 工作机制\n\n`NetworkPolicy` 主要由以下几个核心组成：\n\n- **Pod 选择器（Pod Selector）**：定义了这一 `NetworkPolicy` 适用于集群中的哪些 Pod。\n- **方向**：可以是 `Ingress`（进入）或 `Egress`（外出）。\n- **规则（Rules）**：\n  - **Ingress 规则**：定义了哪些流量可以进入满足 Pod 选择器的 Pod。\n  - **Egress 规则**：定义了满足 Pod 选择器的 Pod 可以访问哪些目的地的流量。\n  \n`NetworkPolicy` 在定义流量规则时，会结合 Pod 的标签来匹配 Pod。如果定义了 Traffic 规则，Kubernetes 中使用的网络插件需要支持这一机制。常见的支持 `NetworkPolicy` 的插件包括 Calico、Weavenet 和 Cilium。\n\n### 如何实现 Pod 间的网络隔离\n\n1. **定义 Pod 选择器**：确定 `NetworkPolicy` 作用的目标 Pod。\n2. **设置准入规则**：\n   - 指定特定的源 Pod（通过标签选择器）允许进入指定的目标 Pod。\n   - 可以设置流量类型（TCP/UDP/ICMP）和特定端口。\n3. **设置外出规则**：\n   - 指定特定的目标 IP 范围或域名，允许指定的源 Pod 发送流量。\n\n### 示例\n\n以下是一个允许特定命名空间 `namespace-a` 中带有 `app=frontend` 标签的 Pod 访问 `namespace-b` 中带有 `app=backend` 标签的 Pod 的 `NetworkPolicy` 示例：\n\n```yaml\napiVersion: networking.k8s.io/v1\nkind: NetworkPolicy\nmetadata:\n  name: allow-frontend-backend\n  namespace: namespace-b\nspec:\n  podSelector:\n    matchLabels:\n      app: backend\n  ingress:\n  - from:\n    - namespaceSelector:\n        matchLabels:\n          name: namespace-a\n      podSelector:\n        matchLabels:\n          app: frontend\n    ports:\n    - protocol: TCP\n      port: 80 \n```\n\n这个示例中，`namespace-b` 下的 `app=backend` Pod 仅允许 `namespace-a` 下的 `app=frontend` Pod 访问其 TCP 端口 80。注意，在定义 `NetworkPolicy` 前，Kubernetes 集群的网络组件需要支持网络策略。",
+        "latencyMs": 11400,
+        "score": {
+          "total": 70,
+          "breakdown": {
+            "keywordScore": 88,
+            "keywordHits": [
+              "NetworkPolicy",
+              "ingress",
+              "egress",
+              "标签选择器",
+              "Calico",
+              "Cilium",
+              "网络隔离"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 16,
+            "lengthScore": 100,
+            "structureScore": 100
+          }
+        }
+      },
+      {
+        "questionId": "ao-04",
+        "dimension": "api_objects",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "**作用**：\nIngress 资源是 Kubernetes 的一种管理对象，用于管理外部访问 Kubernetes 集群内服务的规则。它的主要职责包括：\n\n1. **负载分发**：可以对外提供一个单一的入口地址，将不同的URL路由到不同的后端服务。\n2. **SSL/TLS 终端**：支持为不同的后端服务管理SSL/TLS证书。\n3. **名称基虚拟主机**：可以基于不同的主机名来路由流量。\n4. **URL重写**：支持路径重写和重定向。\n5. **客户端认证**：例如基于HTTP基础认证。\n\n**工作原理**：\nIngress 通过定义一系列的规则来处理入站请求。这些规则具体包括：\n\n1. **Host**：定义特定的域名。\n2. **Path**：指定到达后端服务的具体路径。\n3. **Backend**：定义请求应该路由到的后端服务。\n\n当外网请求到达 Kubernetes 集群的入口负载均衡器时，负载均衡器会将流量转发到指定的 Ingress Controller 上。Ingress Controller 根据 Ingress 资源的配置解析这些规则，并将请求路由到相应的后端服务。\n\n**常见的 Ingress Controller 实现**：\n\n1. **Nginx Ingress Controller**：\n   - 最流行的 Ingress Controller 实现之一。\n   - 使用 Nginx 作为反向代理服务器。\n   - 支持几乎所有的 Ingress 功能，包括证书管理、SNI等。\n\n2. **Traefik**：\n   - 现代的 HTTP 反向代理应用，性能出色，易于扩展。\n   - 支持动态的配置，意味着无需重新配置和重新加载服务即可修改Ingress规则。\n   - 支持许多广泛的技术堆栈和服务发现系统。\n\n3. **HAProxy Ingress Controller**：\n   - HAProxy 提供高效且稳定的 TCP/HTTP 代理。\n   - 支持 LoadBalancer 服务和其他一些高级功能。\n\n4. **AWS ALB Ingress Controller**：\n   - 专为 AWS 环境设计，利用 AWS 提供的 Application Load Balancer(ALB)。\n   - 支持根据云服务的弹性扩展。\n\n5. **Azure Application Gateway Ingress Controller**(AGIC)：\n   - 为 Azure 提供的，用于将流量路由到 Azure Kubernetes Service (AKS) 中的服务。\n   - 使用 Azure Application Gateway 作为负载均衡器。\n\n不同组织会根据自己的需求和环境选择不同的 Ingress Controller 实现。实际上，越来越多的解决方案出现在市场上，Ingress Controller 的选项越来越丰富。",
+        "latencyMs": 10715,
+        "score": {
+          "total": 77,
+          "breakdown": {
+            "keywordScore": 100,
+            "keywordHits": [
+              "Ingress",
+              "HTTP",
+              "路由",
+              "TLS",
+              "Nginx",
+              "Controller",
+              "域名",
+              "路径"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 30,
+            "lengthScore": 100,
+            "structureScore": 85
+          }
+        }
+      },
+      {
+        "questionId": "ao-05",
+        "dimension": "api_objects",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "StatefulSet 和 Deployment 都是 Kubernetes 中用来部署和管理应用的控制器（Controller），它们各自适用于不同的场景，以下是它们的区别及StatefulSet适用的场景：\n\n### StatefulSet 和 Deployment 的区别:\n\n1. **状态管理**：\n   - **StatefulSet**：支持有状态应用，例如数据库或关键路径服务。\n   - **Deployment**：用于无状态应用，不需要维护持久化状态。\n\n2. **持久化存储**：\n   - **StatefulSet**：每个Pod可以获得稳定的、唯一的持久化存储。\n   - **Deployment**：Pod之间并不需要持久化存储。\n\n3. **网络识别**：\n   - **StatefulSet**：每个Pod都有一个稳定的、唯一的网络标识。\n   - **Deployment**：Pod的网络标识由Kubernetes动态分配。\n\n4. **顺序扩展和缩减**：\n   - **StatefulSet**：Pod是按顺序扩展和缩减的，并且可以自定义顺序。\n   - **Deployment**：Pod作为一组进行扩展和缩减，通常是随机的。\n\n5. **滚动更新**：\n   - **StatefulSet**：不支持标准的滚动更新策略，需要用户自定义。\n   - **Deployment**：支持标准的滚动更新策略。\n\n6. **头less模式**：\n   - **StatefulSet**：支持头less模式，即没有单一的主节点。\n   - **Deployment**：通常不以头less模式运行。\n\n### StatefulSet 适用的场景：\n\n1. **数据库应用**：例如MySQL、PostgreSQL、MongoDB等需要持久化存储和稳定的网络标识的数据库应用。\n\n2. **消息队列系统**：如RabbitMQ、Kafka等，它们需要稳定的网络标识和持久化存储。\n\n3. **分布式系统**：需要在多个节点间保持状态的系统，如分布式文件系统、分布式缓存系统。\n\n4. **集群管理器**：例如Kubernetes集群自身的集群管理器（如etcd）。\n\n5. **有序任务处理**：需要顺序扩展和缩减的场景，例如批处理作业。\n\n6. **需要持久化服务名的场景**：某些应用需要在整个生命周期内都有唯一的服务名。\n\n### 总结：\n\nStatefulSet 和 Deployment 各自有不同的用途，开发者需要根据应用的特性来判断使用哪个控制器。StatefulSet 被设计来满足那些需要持久化状态、需要唯一网络标识、需要按顺序扩展和缩减的有状态应用。而Deployment则适用于那些无状态应用，这些应用在Pod间不需要持久化存储和唯一网络标识。",
+        "latencyMs": 10645,
+        "score": {
+          "total": 57,
+          "breakdown": {
+            "keywordScore": 57,
+            "keywordHits": [
+              "StatefulSet",
+              "有序",
+              "数据库",
+              "有状态应用"
+            ],
+            "keywordTotal": 7,
+            "referenceScore": 20,
+            "lengthScore": 100,
+            "structureScore": 85
+          }
+        }
+      },
+      {
+        "questionId": "ao-06",
+        "dimension": "api_objects",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "PersistentVolume（PV）和PersistentVolumeClaim（PVC）是Kubernetes存储的核心组件，它们在Kubernetes中用于帮助应用程序持久化存储数据。\n\n### PersistentVolume（PV）\n\nPersistentVolume是指集群中的一块存储资源，它已经被预先配置好，能够是本地磁盘、NFS、云存储等。PV是集群资源的一部分，由管理员预先创建，具有独立于Pod的生命周期，这意味着即使使用PV的Pod被删除，PV中的数据也不会丢失。\n\n### PersistentVolumeClaim（PV）\n\nPersistentVolumeClaim是用户对存储资源的请求。当Pod需要存储时，用户就会创建一个PVC来申请所需的PV资源。PVC定义了存储的大小、访问模式等要求，Kubernetes会自动匹配合适的PV来满足这些请求。PVC与Pod一样，是用户的资源对象，具备自己的生命周期，当Pod被删除时，PVC的行为可以根据设置的策略来确定是保留数据还是释放PV。\n\n### 工作机制\n\n1. **创建PV**：管理员在Kubernetes集群中预先创建PV，并为它们指定存储细节、访问模式等。\n\n2. **编写PVC**：用户在PVC中声明所需的存储大小、访问模式等。\n\n3. **PVC绑定（Binding）**：Kubernetes的控制平面会寻找一个符合PVC要求的PV资源。一旦找到合适的PV，就会将PVC与该PV“绑定”在一起。绑定过程中，PV会被标记为已分配给特定的PVC，其他PVC将不能再使用它。\n\n4. **使用存储**：一旦PVC和PV绑定，PV会“附加”到请求它的Pod上，Pod就可以通过挂载PV来访问持久化存储。\n\n5. **动态存储卷供应（Dynamic Provisioning）**：如果事先没有创建PV，用户可以在PVC中指定存储类和请求的存储特性，Kubernetes会动态创建一个合适的PV。\n\n### 生命周期\n\n- **绑定前（Available）**：PV处于可用状态，尚未分配给任何PVC。\n- **绑定中（Bound）**：PV已被PVC绑定，正在将PV附加到Pod上。\n- **使用中（Released/Failed）**：PVC被绑定，并且PV已经附加到Pod上，Pod正在使用存储卷。如果Pod被删除但PVC保留，则可以手动或自动进行回收（Recycling）操作。\n- **回收中（Terminating）**：PV正被释放（如根据回收策略清理/保留数据），以便可以重新分配给新的PVC。\n\nPV和PVC的配合使用，使得Kubernetes能够支持多种存储解决方案，并且过程透明，方便用户管理和使用存储资源。",
+        "latencyMs": 9804,
+        "score": {
+          "total": 48,
+          "breakdown": {
+            "keywordScore": 50,
+            "keywordHits": [
+              "PV",
+              "PVC",
+              "绑定",
+              "存储"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 0,
+            "lengthScore": 100,
+            "structureScore": 85
+          }
+        }
+      },
+      {
+        "questionId": "ao-07",
+        "dimension": "api_objects",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "Admission Controller 是 Kubernetes 系统中的一种插件，用于在资源对象（比如 Pod、Service 等）被创建、更新或者删除之前或之后对请求进行拦截处理。这些控制器可以在资源被持久化到存储系统之前或之后进行即时的响应，来强化集群中的管理策略、系统特征和自定义的校验逻辑。Admission Controller 主要分为两种类型：Mutating 和 Validating Webhook。\n\n### Mutating Webhook\n\nMutating Webhook 是一种 Admission Controller，能够在资源对象被持久化到系统中之前修改请求的资源对象，比如添加、修改或删除对象的某些属性。这种类型的 webhook 允许集群管理员自动化某些任务，例如自动设置 labels、annotations 或者注入额外的资源（如 Sidecar 容器）。只有在 Kubernetes 允许修改的状态下，Mutating Webhook 才会对请求进行修改。\n\n工作原理：\n1. 客户端向 Kubernetes API 服务器发送创建或更新资源的请求。\n2. API 服务器将请求发送给启用的 Mutating Webhook。\n3. 如果 Webhook 允许修改并且返回了修改后的对象，Kubernetes API 服务器将采用这些修改来持久化对象。\n4. 最终，修改后的资源被写入 Kubernetes 存储系统中。\n\n### Validating Webhook\n\nValidating Webhook 用于在资源对象被创建或更新到系统中之前对它们进行验证。如果 Validating Webhook 拒绝对象，资源对象将不会被创建或更新。这也是用来实现集群策略约束的一种方式，比如确保所有 Pod 都必须有特定的 label。\n\n工作原理：\n1. 客户端向 Kubernetes API 服务器发送创建或更新资源的请求。\n2. API 服务器将请求发送给启用的 Validating Webhook。\n3. Validating Webhook 检查请求的资源对象，并决定是否允许该请求。如果 Webhook 返回错误，API 服务器将拒绝这个请求。\n4. 如果所有 Validating Webhooks 都通过了，Kubernetes API 服务器将对象持久化到存储系统中。\n\n### 区分点\n\n- **修改资源**：Mutating Webhook 允许修改请求的资源对象，而 Validating Webhook 只是验证，不进行修改。\n- **目的**：Mutating Webhook 用于在资源对象创建或更新之前对对象进行预处理，Validating Webhook 用于检查资源对象是否符合特定的要求和规范。\n- **动作**：Mutating Webhook 可以改变资源对象的属性（比如添加或删除特定的字段），Validating Webhook 只能决定是否接受或拒绝请求。\n- **返回类型**：Mutating Webhook 的响应可以包含请求的资源对象的新版本，Validating Webhook 的响应仅包含允许或拒绝的具体原因。",
+        "latencyMs": 9424,
+        "score": {
+          "total": 73,
+          "breakdown": {
+            "keywordScore": 71,
+            "keywordHits": [
+              "Admission",
+              "Mutating",
+              "Validating",
+              "Webhook",
+              "sidecar"
+            ],
+            "keywordTotal": 7,
+            "referenceScore": 55,
+            "lengthScore": 100,
+            "structureScore": 85
+          }
+        }
+      },
+      {
+        "questionId": "ao-08",
+        "dimension": "api_objects",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "DaemonSet、Job 和 CronJob 是 Kubernetes 中的控制器，每种控制器用于不同的场景，具备不同的调度策略。\n\n1. **DaemonSet**：\nDaemonSet 用于确保全部（或者某个选定的节点子集中）的节点上都运行着一个指定的 Pod 副本。当有新节点加入集群时，DaemonSet 会自动在新节点上创建 Pod；当有节点从集群中移除时（例如，因为失败），DaemonSet 会自动删除该节点上的 Pod。适用于需要在集群的所有节点或者特定节点上运行的监控、日志收集服务。\n\n   **调度策略**：\n   - DaemonSet 会根据定义在 `spec.template` 中的 PodTemplateSpec 为每个节点调度一个 Pod。\n   - 主要通过 `nodeSelector` 和 `tolerations` 在 PodSpec 中指定调度到特定节点的规则。\n\n2. **Job**：\nJob 控制器用于运行有限次数的任务，即“批次”作业。当 Pod 内运行的任务成功完成（退出码为0），则认为 Job 完成。如果 Pod 失败或者超时，Job 会创建新的 Pod 来继续尝试完成既定的运行次数。\n\n   **调度策略**：\n   - Job 会创建 Pod 并将任务分配给这些 Pod。\n   - Pod 之间是独立的，可以并行执行。\n   - Job 的完成是自动确定的，如果 Pod 成功完成，Job 也会随之标记为完成。\n\n3. **CronJob**：\nCronJob 用于定时执行任务，类似于 Unix 系统中的 cron 工具。通过指定一个 cron 表达式，来定义 Job 的创建时间，从而实现周期性运行。\n\n   **调度策略**：\n   - 根据 Cron 表达式创建 Job。\n   - 可能同时运行多个 Job 实例，因为每个“计划”的 Job 都是独立的。\n   - 旧的 Job 实例会在新的 Job 实例创建之后被终止。\n\n**总结**：\n\n- DaemonSet 更适用于后端支持、监控和日志收集等服务的持久化工作；\n- Job 用于执行一个或多个任务，一般在任务完成后 Job 会结束；\n- CronJob 用于周期性调度任务，通常表现为按计划重复执行。",
+        "latencyMs": 9411,
+        "score": {
+          "total": 69,
+          "breakdown": {
+            "keywordScore": 86,
+            "keywordHits": [
+              "DaemonSet",
+              "Job",
+              "CronJob",
+              "日志收集",
+              "监控",
+              "定时"
+            ],
+            "keywordTotal": 7,
+            "referenceScore": 22,
+            "lengthScore": 100,
+            "structureScore": 85
+          }
+        }
+      },
+      {
+        "questionId": "ok-01",
+        "dimension": "ops_knowledge",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "当Pod处于`CrashLoopBackOff`状态时，意味着Pod内的容器无法正常启动或者启动后不久就崩溃。以下是一些系统化的排查步骤：\n\n1. **检查Pod状态和日志**：\n   使用以下命令查看Pod的状态：\n   ```\n   kubectl get pods [NAMESPACE] -o wide\n   ```\n   确定Pod不在Pending状态后（例如因为资源不足），检查Pod的日志，找到崩溃的原因：\n   ```\n   kubectl logs [POD_NAME] -n [NAMESPACE]\n   ```\n\n2. **查看描述信息**：\n   若要获取Pod的更多相关信息，可以使用describe命令：\n   ```\n   kubectl describe pod [POD_NAME] -n [NAMESPACE]\n   ```\n   查看Events部分，可能会看到容器启动失败的原因。\n\n3. **检查镜像配置**：\n   检查所使用的容器镜像是否存在问题。是否存在拉取镜像的问题，检查Docker或者相关容器镜像仓库的设置。\n\n4. **检查容器的启动参数**：\n   - 确认镜像中的Cmd和Args是否正确。\n   - 确保环境变量和配置文件正确设置。\n\n5. **检查资源限制**：\n   查看Pod的资源请求（requests）和限制（limits）配置是否合适，防止因资源不足导致Pod初始化失败。\n\n6. **检查持久化存储**：\n   如果Pod使用PersistentVolume，检查相应的PVC和PV的状态和配置。\n\n7. **系列性检查配置文件**：\n   检查ConfigMap，Secrets配置项中的文件内容和路径设置。\n\n8. **检查网络配置**：\n   确认Pod是否能够正确通信，包括集群内部通信和外部网络连接。\n\n9. **检查健康检查（Liveness和Readiness探针）**：\n   - 如果配置了探针，检查探针配置是否正确。\n   - 检查Pod内应用的Liveness和Readiness检测逻辑是否基于实际逻辑编写。\n\n10. **检查重启策略**：\n    检查Pod定义中的restartPolicy是否设置正确，通常情况下应保持默认值`Always`。\n\n11. **分析应用程序的日志**：\n    查看应用程序的日志，跟踪错误信息和堆栈跟踪，以便于找到问题所在。\n\n12. **网络策略**：\n    检查是否有任何网络策略导致Pod无法正常通信。\n\n13. **查看监控指标**：\n    如果使用监控工具，如Prometheus联合Grafana，观察Pod的健康指标和性能指标。\n\n14. **代码审查**：\n    如果可以的话，审查容器中的应用代码或配置，确保没有造成程序异常的错误。\n\n15. **减小问题范围**：\n    可以尝试将Pod中的应用运行在其他容器环境中，如本地Docker，确认是否是业务逻辑自身的问题。\n\n通过上述步骤分析后仍无法解决问题，可以考虑查看Kubernetes社区资料、Stack Overflow上的相关帖子，或者在 Kubernetes 的GitHub页面上提交Issue寻求帮助。记得在提问和查询时提供尽可能详细的信息，包括相关的YAML部署配置文件、Pod状态和日志信息等。",
+        "latencyMs": 12371,
+        "score": {
+          "total": 57,
+          "breakdown": {
+            "keywordScore": 50,
+            "keywordHits": [
+              "describe",
+              "logs",
+              "资源限制",
+              "镜像"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 24,
+            "lengthScore": 100,
+            "structureScore": 100
+          }
+        }
+      },
+      {
+        "questionId": "ok-02",
+        "dimension": "ops_knowledge",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "备份和恢复 etcd 数据是一个重要的过程，确保 Kubernetes 集群的数据安全。以下是具体的命令和注意事项：\n\n### 备份 etcd 数据\n\n1. **使用 etcdctl 工具**：Etcdctl 是 etcd 的官方命令行工具，可以用来备份和恢复数据。\n\n2. **备份命令**：\n   使用以下命令进行备份：\n   ```bash\n   etcdctl snapshot save <filename>\n   ```\n   其中 `<filename>` 是备份文件的名称。该文件将保存在当前目录中。\n\n### 恢复 etcd 数据\n\n1. **使用 etcdctl 工具**：同样使用 etcdctl 进行恢复。\n\n2. **恢复命令**：\n   使用以下命令将备份数据恢复到 etcd 实例：\n   ```bash\n   etcdctl snapshot restore <filename> --name <your_etcd_main_member_name> --initial-cluster <initial_cluster_member_list>\n   ```\n   其中 `<filename>` 是之前备份的文件名，`<your_etcd_main_member_name>` 是恢复的目标 etcd 主成员名称，`<initial_cluster_member_list>` 是初始的 etcd 成员列表，格式为 `etcd_member_name=http://etcd_member_address:2379`。\n\n### 注意事项\n\n- **数据一致性**：在备份和恢复过程中要确保 etcd 实例的数据一致性和复制的准确性。\n  \n- **备份频率**：根据集群规模和业务重要性定期进行备份。\n\n- **安全性**：备份文件包含敏感数据，应确保备份文件的安全性，避免泄露和非法访问。\n\n- **停机时间**：备份和恢复操作可能会导致 etcd 的短暂不可用，请在维护窗口或非高峰时间段执行。\n\n- **日志记录**：记录备份和恢复操作的日志，以供后续审核和问题排查。\n\n- **验证**：恢复操作完成后，验证数据的完整性和可用性。\n\n通过以上步骤和注意事项，您可以有效地备份和恢复 etcd 数据，保障 Kubernetes 集群的稳定性和可靠性。",
+        "latencyMs": 9430,
+        "score": {
+          "total": 70,
+          "breakdown": {
+            "keywordScore": 75,
+            "keywordHits": [
+              "etcdctl",
+              "snapshot",
+              "save",
+              "restore",
+              "备份",
+              "恢复"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 33,
+            "lengthScore": 100,
+            "structureScore": 100
+          }
+        }
+      },
+      {
+        "questionId": "ok-03",
+        "dimension": "ops_knowledge",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "对 Kubernetes 集群中的节点进行维护时，可遵循以下步骤来确保集群的正常运行并不影响业务：\n\n1. **计划维护窗口：**\n   - 选择一个对业务影响最小的时间窗口进行维护。\n\n2. **通知：**\n   - 在集群中使用 Labels 或 Annotations 来标注需要进行维护的节点，以便调度器可以避开这些节点，减少新Pod的调度。\n\n3. **节点检查：**\n   - 使用 `kubectl drain` 命令在开始维护前暂停工作节点上的 Pod 调度，并同时优雅地关闭已运行的 Pod。\n\n   ```bash\n   kubectl drain <node-name> --delete-local-data --ignore-daemonsets --force\n   ```\n\n   - `delete-local-data` 告诉 Kubernetes 删除节点上的 Pod 及它们存储的临时数据。\n   - `ignore-daemonsets` 防止 `kuberentes` 重启所有守护进程类型的 Pod。\n   - `force` 参数用于跳过问题 Pod 的检查。\n\n4. **维护操作：**\n   - 在节点上执行所需维护任务，如内核升级等。\n\n5. **健康检查：**\n   - 在完成维护后，对节点进行必要的检查，验证节点是否已完全恢复并正常运行。\n\n6. **重新启用 Pod 调度：**\n   - 使用 `kubectl uncordon` 命令重新启用节点的调度功能。\n   ```bash\n   kubectl uncordon <node-name>\n   ```\n\n7. **监控恢复情况：**\n   - 监控 Pod 的恢复和调度情况，确保业务可用性和稳定性。\n\n8. **清理：**\n   - 如果 `kubectl drain` 命令中使用了 `--delete-local-data` 参数，节点上已经不存在的卷需要手动清理。\n   - 可以借助于 Kubernetes 中的卷绑定回收者来自动清理这些残留资源。\n\n9. **恢复对比分析：**\n   - 分析恢复后的性能数据与之前的对比，确保性能未受影响。\n\n确保在开始任何一个步骤之前，你已经得到正确的权限，并且遵循了组织的 IT 操作流程。另外，请注意备份重要数据以防任何意外情况的发生。在执行这些步骤时，保持与集群管理员和用户的良好沟通非常重要，这样可以减少维护对业务的影响。",
+        "latencyMs": 9984,
+        "score": {
+          "total": 61,
+          "breakdown": {
+            "keywordScore": 50,
+            "keywordHits": [
+              "cordon",
+              "drain",
+              "uncordon",
+              "DaemonSet"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 38,
+            "lengthScore": 100,
+            "structureScore": 100
+          }
+        }
+      },
+      {
+        "questionId": "ok-04",
+        "dimension": "ops_knowledge",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "当 Kubernetes 集群的证书即将过期时，您需要进行证书轮换以确保集群继续正常工作。以下是如何检查和轮换 Kubernetes 集群证书的步骤：\n\n### 检查证书过期状态\n1. **获取集群中的所有证书**：\n   您可以通过 `kubectl` 命令和 `openssl` 查看集群中不同组件的证书。例如，获取 kubelet 所使用的证书：\n   ```sh\n   kubectl get configmap -n kube-system kubelet-serving -o jsonpath='{.data.tls\\.crt}' | openssl x509 -in /dev/stdin -text -noout\n   ```\n   \n2. **检查证书有效期**：\n   使用 `openssl x509` 命令的 `-enddate` 或 `-noout` 参数查看证书过期日期：\n   ```sh\n   openssl x509 -in /path/to/cert.crt -noout -enddate\n   ```\n\n### 轮换证书\n集群的证书轮换通常涉及到集群中的多个证书，包括但不限于 API Server、kubelet 服务账号和其他组件的证书。以下为轮换步骤概览：\n\n1. **备份 Etcd**：\n   在进行证书轮换之前，确保备份 Etcd 数据库以防止数据丢失。\n\n2. **创建新的证书和密钥**：\n   使用 `cfssl` 或者 Kubernetes 提供的证书控制器工具 `kube-controller-manager` 生成新的证书和密钥。示例：\n   ```sh\n   cat csr.json | cfssl gencert -ca=ca.crt -ca-key=ca.key -config=ca-config.json - | cfssljson -bare client\n   ```\n   这里 `csr.json` 是证书签名请求的 JSON 模板。\n\n3. **更新证书和密钥**：\n   更新所有部署和服务中的证书和密钥文件。您可以通过编辑相应的 Kubernetes 资源（如 Secret 和 ConfigMap）来完成这一步。\n\n4. **重启相关组件**：\n   一旦新的证书和密钥被应用，需要重启 API Server、kubelet、kube-proxy 等组件使它们加载新的证书。\n\n5. **验证**：\n   通过运行一些测试或使用 `kubectl` 命令与集群交互来验证新的证书是否有效。\n\n6. **轮换 Etcd 的证书**：\n   Etcd 通常用在自己的 TLS 配置中，并且包含的证书也需要相应地替换。编辑 Etcd 的配置文件（通常是 `etcd.conf` 或者通过 Kubernetes Pod 镜像中的文件）并重启 Etcd 服务。\n\n7. **监测集群状态**：\n   轮换完成后，监测集群的状态以确保所有组件都能正常工作。\n\n### 案例：使用 kubeadm 进行证书轮换\n\n如果您使用的是 kubeadm 初始化的 Kubernetes 集群，`kubeadm` 提供了证书轮换和更新的命令。可以按照以下步骤操作：\n\n1. **审查当前证书有效期**：\n   ```sh\n   kubeadm certs check-expiration\n   ```\n   \n2. **重新生成并更新证书**：\n   ```sh\n   kubeadm certs renew all\n   ```\n   这个命令将自动替换过期的证书，并更新相应的 Secret。\n\n3. **确认证书已更新**：\n   您可以再次使用 `kubeadm certs check-expiration` 来确认证书已经被更新。\n\n旋转集群证书时，确保您对 Kubernetes 系统的证书管理有一个清晰的理解，并按照正确的步骤来操作。错误的证书轮换可能会导致集群不可用。",
+        "latencyMs": 15465,
+        "score": {
+          "total": 78,
+          "breakdown": {
+            "keywordScore": 75,
+            "keywordHits": [
+              "kubeadm",
+              "certs",
+              "renew",
+              "过期",
+              "轮换",
+              "openssl"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 60,
+            "lengthScore": 100,
+            "structureScore": 100
+          }
+        }
+      },
+      {
+        "questionId": "ok-05",
+        "dimension": "ops_knowledge",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "排查 Kubernetes 中的 DNS 解析问题通常涉及以下几个步骤：\n\n1. **检查 DNS 配置**：\n   - 确认 `kubelet` 可以访问 DNS 服务器，并确认 DNS 服务器配置正确。\n\n2. **使用 `get pods` 检查核心组件状态**：\n   - 确认 CoreDNS（或其他 DNS 解析器）和 kubelet 等关键组件处于运行状态。\n   ```shell\n   kubectl get pods -n kube-system\n   ```\n\n3. **检查 node 状态**：\n   - 检查所有节点的状态是否正常。\n   ```shell\n   kubectl get nodes\n   ```\n\n4. **访问业务 pod**：\n   - 尝试通过业务 Pod 的服务名称访问业务服务。\n   ```shell\n   kubectl exec -it <pod_name> -- /bin/sh\n   nslookup <service_name>\n   ```\n\n5. **获取 CoreDNS 日志**：\n   - 获取 CoreDNS Pod 的日志，查看是否有错误信息。\n   ```shell\n   kubectl logs <coredns_pod_name> -n kube-system\n   ```\n\n6. **检查 Pod 是否能正确解析服务**：\n   - 进入任意 Pod，使用 `nslookup` 命令测试服务名到 ClusterIP 的解析。\n   ```shell\n   kubectl exec -it <pod_name> -- nslookup <service_name>\n   ```\n\n7. **检查 Pod 网络**：\n   - 确认 Pod 网络插件正常工作，如 Calico, Flannel 等，并检查网络策略。\n\n8. **调试 Pod DNS 配置**：\n   - 检查 Pod 的 DNS 设置，通常是 `/etc/resolv.conf` 文件。\n   ```shell\n   kubectl exec -it <pod_name> cat /etc/resolv.conf\n   ```\n\n9. **调查 DNS 缓存**：\n   - 清理缓存，或者直接尝试强制刷新 DNS 缓存。\n   ```shell\n   kubectl exec -it <pod_name> -- sudo sh -c 'echo \"nameserver 10.96.0.10\" > /etc/resolv.conf'\n   ```\n\n10. **巡查 DNS 缓存情况**：\n    - 如服务名很多, 使用以下命令检查 DNS 缓存问题。\n    ```shell\n    kubectl exec -it <coredns_pod> -- sh -c \"watch 'iptables -nv -t nat -L KUBE-PORTALS-SNAT --line-numbers'\"\n    ```\n\n11. **网络策略调查**：\n    - 确认是否存在网络策略导致 DNS 解析失败。\n    ```shell\n    kubectl get networkpolicies\n    ```\n\n12. **使用 `tracert` 或 `traceroute`**：\n    - 在 Pod 内使用 `tracert` 或 `traceroute` 跟踪网络路径。\n    ```shell\n    kubectl exec -it <pod_name> -- traceroute <service_name>\n    ```\n\n13. **Kubernetes 网络调试工具**：\n    - 使用相关工具，如 `weave` 的 `kubedebug` 工具进行进一步的网络排错。\n\n14. **联系云服务提供商**：\n    - 如果你在使用云服务，如 AWS、GCP 或 Azure，联系提供商获取支持。\n\n通过上述步骤，大多数 DNS 解析问题都可以被定位和解决。如果问题依然存在，可能需要更详尽的网络排错，或者寻求社区的帮助。",
+        "latencyMs": 16974,
+        "score": {
+          "total": 61,
+          "breakdown": {
+            "keywordScore": 57,
+            "keywordHits": [
+              "DNS",
+              "CoreDNS",
+              "nslookup",
+              "resolv.conf"
+            ],
+            "keywordTotal": 7,
+            "referenceScore": 26,
+            "lengthScore": 100,
+            "structureScore": 100
+          }
+        }
+      },
+      {
+        "questionId": "ok-06",
+        "dimension": "ops_knowledge",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "要使用 `kubectl top` 命令和 Metrics Server 监控 Kubernetes 集群资源使用情况，你需要先确保 Metrics Server 已经正确安装并运行在集群中。Metrics Server 是 Kubernetes 的一个集成组件，它为 API 提供资源使用情况数据，包括 CPU 和内存使用情况。\n\n以下是使用 `kubectl top` 监控资源的步骤：\n\n1. **安装 Metrics Server**：\n   如果还没有安装 Metrics Server，你可以使用如下命令来安装：\n    ```shell\n    # 以 Kubernetes 集群版本为 1.18 为例\n    kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/download/v0.3.6/components.yaml\n    ```\n   请根据你的 Kubernetes 版本选择相应的 Metrics Server 版本。\n\n2. **确认 Metrics Server 运行状态**：\n   通过以下命令检查 Metrics Server 是否正在运行：\n    ```shell\n    kubectl get deployment metrics-server -n kube-system\n    ```\n   输出应该显示 `1/1`，表明有一个 Pod 正在运行。\n\n3. **使用 `kubectl top` 命令查询资源使用情况**：\n   安装并确定 Metrics Server 正在运行后，你可以使用以下命令查看节点的资源使用情况：\n    ```shell\n    kubectl top node\n    ```\n   这将会显示集群所有节点的 CPU 和内存使用情况。\n\n   如果你想要查看特定命名空间内 Pod 的资源使用情况，可以运行：\n    ```shell\n    kubectl top pod -n <namespace_name>\n    ```\n   替换 `<namespace_name>` 为你想要查看的命名空间的名称。\n\n4. **使用自定义资源监控**：\n   `kubectl top` 还支持定时监控资源的使用，如：\n   ```shell\n   kubectl top pod -n <namespace_name> --containers\n   ```\n   这将显示每个 Pod 和其容器的指标。\n\n通过以上步骤，你可以有效地监控你的 Kubernetes 集群资源使用情况。记得 `kubectl top` 命令依赖于 Metrics Server 提供的数据，所以确保 Metrics Server 正确安装并保持运行是至关重要的。",
+        "latencyMs": 10423,
+        "score": {
+          "total": 61,
+          "breakdown": {
+            "keywordScore": 50,
+            "keywordHits": [
+              "Metrics Server",
+              "kubectl top",
+              "CPU",
+              "内存"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 35,
+            "lengthScore": 100,
+            "structureScore": 100
+          }
+        }
+      },
+      {
+        "questionId": "ok-07",
+        "dimension": "ops_knowledge",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "kube-apiserver响应延迟过高会对整个Kubernetes集群的性能造成影响。以下是进行性能诊断和优化的步骤：\n\n1. **监控状态**：\n   - 使用`kubectl top nodes`、`kubectl top pods`查看集群节点和Pods的负载和资源使用情况。\n   - 使用`metrics-server`和`Prometheus`等监控工具来收集kube-apiserver的指标数据。\n\n2. **查看日志**：\n   - 检查kube-apiserver日志，以查看是否有错误或警告，这可能会导致性能瓶颈。\n\n3. **分析资源用量**：\n   - 检查CPU和内存使用率，确认资源是否达到瓶颈，可以使用`kubectl describe pod kube-apiserver -n kube-system`命令查看kube-apiserver Pod的资源用量。\n\n4. **查看API请求情况**：\n   - 通过`kubectl describe --raw \"/apis/metrics.k8s.io/*\"`收集API的请求指标。\n   - 使用`kubectl top pods`检查kube-apiserver的CPU和内存使用情况。\n\n5. **调整API Server配置**：\n   - 增加kube-apiserver的副本数（如果适当）以分摊负载。\n   - 检查并调整相关参数以优化性能，例如`kube-apiserver`命令行参数：`--kube-api-burst`、`--kube-api-qps`和`--max-requests-inflight`。\n\n6. **审计日志**：\n   - 如果启用了API Server审计，并且审计日志记录了大量请求，可能会造成性能问题。检查审计配置是否适当，并优化如审计日志级别和存储。\n\n7. **限流与速率控制**：\n   - 通过自定义的资源配额（ResourceQuota）和限制范围（LimitRange）来限制API请求的速率。\n   - 考虑设置API Server的请求速率限制。\n\n8. **网络性能调优**：\n   - 检查集群内外网络之间的延迟和带宽，确保没有网络瓶颈。\n   - 优化DNS解析和负载均衡器的设置。\n\n9. **存储性能调优**：\n   - kube-apiserver使用etcd作为后端存储，确保etcd的性能和配置是最优的。\n   - 如果etcd实例处于高负载，可以考虑etcd的扩容或者性能调优。\n\n10. **原理分析和代码审查**：\n    - 分析慢查询日志来找准瓶颈（如慢的etcd操作）。\n    - 审核代码以查找可能的热点或者性能瓶颈。\n\n11. **升级版本**：\n    - 确认你运行的Kubernetes版本没有已知的性能问题，如果有，请升级到更新的稳定版本。\n\n12. **基准测试**：\n    - 如果问题难以定位，可以进行基准测试，在负载较轻的情况下运行相应的API请求，以便于确认是否是配置或硬件问题。\n\n13. **排查外部系统**：\n   - 如果kube-apiserver与外部系统集成，检查这些外部系统的延迟和性能表现是否符合预期。\n\n14. **最后的手段**：\n    - 如果没有找到解决方案，可以考虑咨询使用同样的Kubernetes发行版或有专业经验的社区或其他专业支持。\n\n这些步骤可以帮助定位问题的根源，并根据具体的情况进行性能优化。",
+        "latencyMs": 15165,
+        "score": {
+          "total": 53,
+          "breakdown": {
+            "keywordScore": 63,
+            "keywordHits": [
+              "apiserver",
+              "延迟",
+              "metrics",
+              "etcd",
+              "审计日志"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 0,
+            "lengthScore": 100,
+            "structureScore": 85
+          }
+        }
+      },
+      {
+        "questionId": "ok-08",
+        "dimension": "ops_knowledge",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "Kubernetes 集群高可用（HA，High Availability）部署架构主要是通过在多个物理机器上部署控制平面组件来实现，以及对工作节点进行合理规划以保证服务的持续可用性。以下是组件高可用部署的关键步骤和考虑因素：\n\n1. **控制平面组件的多副本部署**：\n   - **etcd**：etcd 是 Kubernetes 的键值存储系统，保存了集群状态和配置。etcd 需要至少三个副本来实现高可用，最好部署在不同的物理机器上以减少单点故障的风险。\n   - **API Server**：API 服务器是 Kubernetes 控制平面的前端，对外提供 Kubernetes API。至少需要两个副本来保证高可用。\n   - **Controller Manager** 和 **Scheduler**：这两个组件同样需要至少两个副本以实现高可用。\n\n2. **负载均衡器**：\n   - 使用负载均衡器（如HAProxy、Nginx或云服务提供商的负载均衡服务）在前端分散对 API Server 的请求，增加系统的可用性。\n\n3. **集群网络设计**：\n   - 确保所有工作节点都能相互通信，并且可以访问控制平面节点。\n   - 保证 Pod 间、Pod 与 Node 间以及 Node 与外部世界的网络通信是高可用的。\n\n4. **工作节点的冗余**： \n   - 部署多个工作节点，他们在不同的物理机或可用区（AZ）中，以防止单台机器或可用区故障影响整个应用的可用性。\n\n5. **Pod Disruption Budgets（PDB）**：\n   - 配置 PDB 以限制同时被删除或驱逐的 Pod 数量，确保应用程序始终有一个最小数量的 Pod 在运行。\n\n6. **跨区域或多区域部署**：\n   - 对于更高级的高可用性，可以考虑跨多个区域或多数据中心部署 Kubernetes 集群，并通过多集群管理工具进行协调。\n\n7. **软件更新和滚动升级**：\n   - 应用于 Kubernetes 集群组件和操作系统的安全更新和版本升级应使用无中断滚动升级进行。\n\n8. **监控和告警**：\n   - 配置监控系统（如 Prometheus）和告警系统（如 AlertManager）以便及时发现和响应集群中的异常情况。\n\n9. **备份与灾难恢复计划**：\n   - 定期备份 etcd 数据库和其他关键组件的数据，并制定灾难恢复计划以应对数据丢失或严重的硬件故障。\n\n以下是一个抽象的 HA 部署架构概念图：\n```\n+-----------+  +-----------+  +-----------+\n|    etcd    |  |   Master  |  |   Master  |\n| (HA cluster)|  | (API Server, |  | (API Server, |\n|             |  | Controller Manager, |  | Controller Manager, |\n|             |  | Scheduler)  |  | Scheduler)  |\n+-----------+  +-----------+  +-----------+\n         |         |          |\n         |         |          |\n         v         v          v\n+-----------+  +-----------+  +-----------+  +-----------+\n|   Node    |  |   Node      |  |   Node      |  |   Node    |\n| (Worker)  |  | (Workload)  |  | (Workload)  |  | (Workload) |\n+-----------+  +-----------+  +-----------+  +-----------+\n```\n\n部署高可用架构是一个复杂的工程任务，需要考虑到业务需求、预算和维护能力等多种因素。不同的公司和应用场景可能有不同的最佳实践。",
+        "latencyMs": 16101,
+        "score": {
+          "total": 61,
+          "breakdown": {
+            "keywordScore": 63,
+            "keywordHits": [
+              "高可用",
+              "HA",
+              "多副本",
+              "负载均衡",
+              "可用区"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 20,
+            "lengthScore": 100,
+            "structureScore": 100
+          }
+        }
+      },
+      {
+        "questionId": "vt-01",
+        "dimension": "version_timeliness",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "截至我知识更新的时间点（2023年），Kubernetes 1.30 还没有发布，因此我提供的内容基于Kubernetes 1.x版本以往的新特性和趋势。然而，我可以提供一个通用的模板，概述Kubernetes版本更新时可能会出现的重要新特性和变更：\n\n1. **API的升级与改进**：\n   - Kubernetes会不断优化和扩展API，以支持新的特性和更高效的使用方式。例如，Kubernetes可能会引入新的API字段或默认启用Beta或GA API版本。\n\n2. **集群升级和稳定性改进**：\n   - Kubernetes会引入新的集群升级策略和工具，提升集群的稳定性，以简化升级过程，并减少升级中断。\n\n3. **安全性增强**：\n   - Kubernetes持续在加强集群的安全性，可能会加入新的安全特性，如默认启用某些安全策略、改进RBAC细粒度控制、强化网络策略的种类和应用。\n\n4. **资源管理与Pod调度**：\n   - 资源调度的改进是为了更好地利用集群资源，提高调度效率。这可能包括新的调度器特性、资源配额和限制的更新等。\n\n5. **网络与存储改进**：\n   - Kubernetes会持续改进网络插件、网络策略以及存储解决方案，例如CNI（Container Network Interface）和CSI（Container Storage Interface）的支持。这些改进有助于增强网络和存储配置的灵活性和易用性。\n\n6. **生态系统和集成**：\n   - Kubernetes会进一步与其他开源技术集成，比如Istio、Prometheus、Jaeger等。这些集成增强了Kubernetes集群的监控、跟踪、服务网格等能力。\n\n7. **用户界面与用户体验**：\n   - 更新kubernetes-dashboard，提供新的UI组件和用户体验改进，便于用户更好地管理Kubernetes资源。\n\n8. **弃用特性**：\n   - Kubernetes会根据采用情况逐步淘汰一些旧的特性和API，用户需要根据Deprecation Policy迁移到新的版本。\n\n9. **性能优化**：\n   - Kubernetes会持续改进自己的性能，比如降低内存和CPU的使用率、减少大规模部署的开销等。\n\n10. **文档和本地化**：\n    - 提供更完整的文档和示例，支持更多的本地化语言，增强全球用户的使用体验。\n\n如果你对Kubernetes 1.30版本的具体新特性和变更感兴趣，你应该关注Kubernetes的官方发布说明和版本更新日志，因为它们会详细地介绍每个新版本的具体内容。",
+        "latencyMs": 10702,
+        "score": {
+          "total": 36,
+          "breakdown": {
+            "keywordScore": 17,
+            "keywordHits": [
+              "1.30"
+            ],
+            "keywordTotal": 6,
+            "referenceScore": 4,
+            "lengthScore": 100,
+            "structureScore": 85
+          }
+        }
+      },
+      {
+        "questionId": "vt-02",
+        "dimension": "version_timeliness",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "Kubernetes Gateway API 是基于网络传输层（Layer 4-7）的声明式 API，旨在动态路由和转发网络流量到 Kubernetes 实现的服务。与 Ingress API 类似，它允许开发者和管理员配置如何将客户端请求从网络层面转发和负载分配到集群内的服务，并提供了更多的能力、灵活性和更丰富的功能。\n\n**设计理念：**\n\n1. **模块化和可扩展性：** Gateway API 采用模块化设计，这意味着核心组（Core）定义了最基本和通用的功能，而扩展API（Extended）允许添加新的功能而不破坏既有的实现。这种设计使得 Gateway API 更容易适应不同的使用场景和负载均衡器技术。\n\n2. **声明式而非指令式：** 用户可以选择声明配置，无需了解底层实现如何工作，就能够定义期望的行为。\n\n3. **CRD扩展：** 使用自定义资源定义（CRDs），用户可以根据业务需要定义新的资源类型和表现。\n\n4. **覆盖更广泛的网络功能：** Gateway API 不仅仅用于 HTTP，而且支持更广泛的网络协议，使得它能够广泛应用于更多样化的服务类型。\n\n**相比Ingress的优势：**\n\n1. **更加模块化和灵活：** Gateway API 的结构比 Ingress 更加模块化，使得多个不同的负载均衡器可以共存，并可以更简单更容易地扩展或自定义来满足特定用例。\n\n2. **支持更多的协议：** Ingress 主要关注于HTTP/HTTPS流量，而 Gateway API 的设计允许它支持更广的协议和更多的网络功能，如TCP或UDP连接。\n\n3. **无状态设计：** Gateway API 的实现旨在状态无关，这使得它可以更好地与不同的负载均衡器协同工作，并更容易地扩展到多云或混合云环境。\n\n4. **并行策略和规则评估：** Gateway API 允许聚合和并行地评估多个路由规则和策略，这使得它的路由配置可以更精细和灵活。\n\n5. **统一的跨集群和跨网络解决方案：** Gateway API 被设计来支持云服务商提供的服务网格、服务桥接及其他的复杂网络场景，这样使得它可以适用于不同的部署环境和网络配置。\n\n6. **跨服务编排：** Gateway API 提供了跨服务编排的能力和更好的跨服务负载分配控制。\n\n7. **更细粒度的流量控制：** Gateway API 支持更细粒度的流量分割和操作，以便对特定类型的流量实施细粒度的控制。\n\n总的来说，Gateway API 提供了更多的灵活性和功能，以满足更广泛的网络需求，并兼容多样性的负载均衡器类型与产品。随着 Kubernetes 网络模型的发展和复杂性，Gateway API 将成为一个强大的选择来扩展 Kubernetes 的服务和网络能力。",
+        "latencyMs": 15198,
+        "score": {
+          "total": 39,
+          "breakdown": {
+            "keywordScore": 14,
+            "keywordHits": [
+              "Gateway API"
+            ],
+            "keywordTotal": 7,
+            "referenceScore": 18,
+            "lengthScore": 100,
+            "structureScore": 85
+          }
+        }
+      },
+      {
+        "questionId": "vt-03",
+        "dimension": "version_timeliness",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "KEP-753（Kubernetes Enhancement Proposal）是关于 Kubernetes 中引入原生 Sidecar 容器支持的增强提议。该提议的目的是提供一种更简洁、更直接的方式来实现 Sidecar 模式，从而使得开发和运维人员能够更容易地将 Sidecar 容器与应用主容器一同部署与管理。以下是KEP-753引入的一些主要改进：\n\n1. **封装 Sidecar 配置：** 提议通过引入`sidecar.containers`这个新字段到 PodSpec 中，将 Sidecar 容器的配置封装在 Pod 模板内，使得 Sidecar 的配置和管理像主容器一样简单。\n\n2. **自动注入 Sidecar：** 提出了自动化 Sidecar 容器注入的概念，可以减少用户手动配置的需要，让 Sidecar 的维护更为简便。\n\n3. **简化 Sidecar 管理：** 通过将 Sidecar 作为 PodSpec 的一部分进行管理，用户可以像对待主容器一样对待 Sidecar 容器，包括健康检查、日志记录、资源配额等。\n\n4. **标准化 Sidecar 配置：** 之前的 Sidecar 配置常常需要定义复杂的模板或者使用自定义的控制器来管理。有了原生的支持，Sidecar 配置将更加标准化，有利于统一管理和监控。\n\n5. **清晰的 Sidecar 生命周期：** 在原生 Sidecar 支持下，Sidecar 容器与主容器拥有相同的生命周期，这使得 Sidecar 容器的启动、运行和管理与其他容器的行为一致。\n\n6. **提高安全性和自动化：** 提出了安全和自动化管理 Sidecar 的方案，例如能够为 Sidecar 容器指定私密的副作用范围，并加入 AutoInjection 注入模块，允许自动化地注入 Sidecar 容器。\n\n7. **减少 controller 需求：** 减少对侧车注入控制器的需求，因为很多的 Sidecar 配置可以通过原生的方式实现，这样就减少了对额外控制器的依赖，简化了集群的控制平面。\n\n需要注意的是，KEP-753 是一个提出的概念，具体实施可能在不同版本的 Kubernetes 中有所不同，并且随着社区的进展和用户的反馈，最终的设计和功能也可能有所调整。在具体使用时，应查看最新的 Kubernetes 文档和更新来获取详细信息。",
+        "latencyMs": 10658,
+        "score": {
+          "total": 49,
+          "breakdown": {
+            "keywordScore": 43,
+            "keywordHits": [
+              "Sidecar",
+              "KEP-753",
+              "生命周期"
+            ],
+            "keywordTotal": 7,
+            "referenceScore": 13,
+            "lengthScore": 100,
+            "structureScore": 85
+          }
+        }
+      },
+      {
+        "questionId": "vt-04",
+        "dimension": "version_timeliness",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "Kubernetes 的 ValidatingAdmissionPolicy 是一种基于 CEL（Common Expression Language）的验证策略，用于在 Kubernetes 对象创建或更新之前对其进行验证。它允许通过编写 CEL 表达式来定义验证规则，这些规则将应用于进入集群的 Kubernetes 对象。\n\nValidatingAdmissionPolicy 能够与现有的 Admission Webhook 配合工作（甚至可以替代部分简单规则的 Webhook），它们共同作用于 AdmissionReview 请求和响应流程中。以下是 ValidatingAdmissionPolicy 如何工作的基本步骤：\n\n1. **Kubernetes 请求**：当有 Kubernetes 对象（比如 Pod 或 Service）被创建或更新时，API Server 会接收到请求。\n   \n2. **验证阶段**：在 AdmissionReview 阶段，Kubernetes 会根据配置的 ValidatingAdmissionWebhook 和 ValidatingAdmissionPolicy 检查请求是否符合规则。\n\n3. **CEL 表达式评估**：对于 ValidatingAdmissionPolicy，API Server 使用 CEL 表达式来评估请求的 Kubernetes 对象是否符合制定的验证逻辑。这意味着可以使用一种声明式的方式定义策略，而无需编写复杂的 Webhook 服务器代码。\n\n4. **决策**：根据 CEL 表达式的评估结果，API Server 将决定是否允许请求继续。如果对象符合策略，请求将继续。否则，会返回错误的响应，并阻止操作。\n\n5. **替代 Webhook**：对于简单的验证，ValidatingAdmissionPolicy 可以直接替代特定逻辑的 Admission Webhook，因为它减少了运行外部 Webhook 服务的需求。\n\nValidatingAdmissionPolicy 提供了简化复杂验证逻辑和管理 Admission Webhook 的方法，尤其适用于集群配置管理和操作。它不仅限于验证操作，还可在未来版本中用于支持类似策略的自动纠正动作（Mutating Admission Policies），让管理 Kubernetes 集群变得更加灵活和可控。\n\n下面是一个 ValidatingAdmissionPolicy 的简单示例：\n\n```yaml\napiVersion: admissionregistration.k8s.io/v1\nkind: ValidatingAdmissionPolicy\nmetadata:\n  name: pod-securitypolicy\nspec:\n  rules:\n  - apiGroups: [\"\"]\n    apiVersions: [\"v1\"]\n    resources: [\"pods\"]\n    operations: [\"CREATE\", \"UPDATE\"]\n    message: \"A container cannot request CPU limits.\"\n    CEL: |\n      not exists(request.object.spec.containers[*].resources.limits.cpu)\n```\n\n在这个例子中，`ValidatingAdmissionPolicy` 用于确保任何创建或更新的 Pod 都不能有 CPU 限制。这是一种更简洁的替代 Webhook 的方法来实现集群级别的策略管理。",
+        "latencyMs": 12152,
+        "score": {
+          "total": 74,
+          "breakdown": {
+            "keywordScore": 86,
+            "keywordHits": [
+              "ValidatingAdmissionPolicy",
+              "CEL",
+              "Common Expression Language",
+              "Webhook",
+              "GA",
+              "声明式"
+            ],
+            "keywordTotal": 7,
+            "referenceScore": 32,
+            "lengthScore": 100,
+            "structureScore": 100
+          }
+        }
+      },
+      {
+        "questionId": "vt-05",
+        "dimension": "version_timeliness",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "在 Kubernetes 1.31 版本中，对 Pod 生命周期管理进行了一些重要的改进，以下是重点改进内容：\n\n1. **状态不可变的 PodStatus：**\n   - 1.31 正式废弃了 `.status` 字段的可变性。这意味着一旦 Pod 状态被设置和更新到 `apiserver` 中后，就不能再通过 `UpdateStatus` API 进行更改了。这有助于预防关于一致性和版本控制的问题，并简化代码逻辑。\n\n2. **Omit consumer address：**\n   - 新增了 `--runtime-config=api/v1alse.pods.k8s.io=true` 的启动配置选项。这个选项在客户端允许省略 Pod 的 `.status.podIPs` 字段，只有在云提供商或 CNI 调用 `UpdatePod` 时，`.status.podIPs` 才被包含在内。这样做有助于减轻 apiserver 的压力，并减小写入操作的延时。\n\n3. **CronJob Webhook Validation：**\n   - `CronJob` 在启用 webhook 验证后，会进一步增强验证流程。本版本修复了由于 webhook 连接超时导致不同结果的问题，增强了创建和更新时的风格一致性。\n\n4. **CronJob 中的 Deadline：**\n   - 新增了 `.status.lastScheduleTime` 字段，通过对 `CronJob` 实例的调度时间和执行时间进行记录，管理者可以更及时地获得调度状态。\n\n5. **ActivityDeadline 控制器（实验特性）**\n   - 引入了一个名为 `Activity deadline` 的新控制器，若 Pod 达到了 deadline 时间但无法完成，将会终止。这个特性帮助用户报警并减少可能的挤占导致的影响。\n\n6. **修复和增强 Pod 的调度器行为：**\n   - 对于亲和性和反亲和规则执行更加精确，确保调度行为符合预期。\n   - 实现了 ALPHA 级别的调度器，该调度器提高了在选择节点时的均衡性和负载控制能力。\n\n7. **对容器运行时接口的增强：**\n   - 对容器运行时接口进行了改进和修复，增强了对容器运行时状态及 VolumeMount 调整的管理能力。\n\n这些改进大大加强了 Pod 和调度系统在管理上的性能和灵活性，让 Kubernetes 的生命周期管理更加成熟和稳定。",
+        "latencyMs": 11473,
+        "score": {
+          "total": 37,
+          "breakdown": {
+            "keywordScore": 17,
+            "keywordHits": [
+              "1.31"
+            ],
+            "keywordTotal": 6,
+            "referenceScore": 10,
+            "lengthScore": 100,
+            "structureScore": 85
+          }
+        }
+      },
+      {
+        "questionId": "vt-06",
+        "dimension": "version_timeliness",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "Cilium 是一个开源的网络和安全插件，可以作为 Kubernetes 的 CNI (Container Network Interface) 插件提供更为高级的网络安全和观测功能。以下是它作为 Kubernetes CNI 插件的一些核心技术优势，以及 eBPF (Extended Berkeley Package Filter) 在其中的作用。\n\n### Cilium 的核心技术优势：\n\n1. **安全隔离**：\n   - Cilium 提供基于身份的安全性，即你可以基于微服务、应用、用户等属性来定义网络和安全策略，而不必基于L3/L4层的传统IP/端口。\n   - 遵循身份策略的通信加密，即使在通信双方通过相同的外部网络地址通信时，Cilium也能够确保只有带有正确身份的流量通过。\n\n2. **微服务规模下的高性能**：\n   - Cilium 依赖于 eBPF 这样的高性能技术，可以实现在主机内核内部高效处理网络、网络策略和安全事件，并且开销非常小。\n   - 无服务中断滚动升级，维护网络的连续性。\n\n3. **可扩展性和开放性**：\n   - 支持直接集成Hubble，Hubble 是一个基于 Cilium 的网络监测工具，可以实时观察和分析网络流量。\n   - 可以扩展来支持额外的安全特性，比如 HTTP 策略、负载均衡器 (LoadBalancer) 等。\n\n4. **服务网格兼容性**：\n   - Cilium 自带一个 IoT-/IoE (Internet of Things / Internet of Everything) 兼容的 Envoy 代理，兼容 Istio 和 Linkerd 这样的服务网格。\n\n### eBPF 的作用：\n\neBPF 是 Cilium 的核心，主要作用如下：\n\n1. **网络透明性**：\n   - 安全性功能完全在内核透明地执行，无需更改应用程序代码。\n\n2. **性能优化**：\n   - 通过在内核层面进行数据包处理，减少了使用用户态或传统中间件代理带来的额外性能开销。\n\n3. **动态网络策略实施**：\n   - 能够动态地在不中断服务的情况下实施和更新基于 eBPF 的网络策略。\n\n4. **可观测性**：\n   - 通过利用 eBPF 的功能，可以在不需要额外代理或侵入网络堆栈的情况下提供深度的网络流量分析和可视化。\n\n5. **无内核修改**：\n   - eBPF 允许在不修改 Linux 内核的情况下运行复杂的代码，在提供高效和可控性能开销的同时也能确保系统的稳定性和安全性。\n\n6. **通用性**：\n   - eBPF 作为一个通用的、灵活的执行环境，可以被用于多种用例，从网络到安全再到系统监控。\n\n总的来说，eBPF 在 Cilium 中扮演着至关重要的角色，它不仅提供了本地服务的安全网络策略，而且还提供了可观测性和性能优势，这使得 Cilium 成为了一个强大而灵活的网络和安全解决方案。",
+        "latencyMs": 14787,
+        "score": {
+          "total": 49,
+          "breakdown": {
+            "keywordScore": 38,
+            "keywordHits": [
+              "Cilium",
+              "eBPF",
+              "Hubble"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 20,
+            "lengthScore": 100,
+            "structureScore": 85
+          }
+        }
+      },
+      {
+        "questionId": "vt-07",
+        "dimension": "version_timeliness",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "Kubernetes 的 Pod Security Standards（PSS）替代了之前的 Pod Security Policies（PSP）这一特性，PSS 提供了一套标准化配置来提高集群的安全性。PSS 有三个级别：\n\n1. **privileged**（特权）：这个级别与废弃的 PodSecurityPolicy 控制器中的特权策略相似，允许大部分事务，但不是推荐的标准安全做法，因此在生产环境中应谨慎使用。\n\n2. **baseline**（基线）：这是一组合理的默认规则，用于保护大多数运行标准的Kubernetes作业的集群。这个级别提供了一个平衡点，能满足大多数用例的安全要求，并允许以受控的方式使用敏感功能。\n\n3. **restricted**（受限）：这是最严格的级别，旨在与最小权限原则保持一致，限制了Pod运行的权限，适用于运行不受信任的工作负载的集群。\n\nPSS 的引入旨在通过提供一个更加标准化和易用的安全框架，来增强 Kubernetes 集群的安全性，并替换掉 PSP 中存在的一些限制和复杂性。",
+        "latencyMs": 4434,
+        "score": {
+          "total": 62,
+          "breakdown": {
+            "keywordScore": 75,
+            "keywordHits": [
+              "Pod Security Standards",
+              "PSS",
+              "PodSecurityPolicy",
+              "Privileged",
+              "Baseline",
+              "Restricted"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 13,
+            "lengthScore": 100,
+            "structureScore": 85
+          }
+        }
+      },
+      {
+        "questionId": "vt-08",
+        "dimension": "version_timeliness",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "Kubernetes中的VPA（Vertical Pod Autoscaler）和HPA（Horizontal Pod Autoscaler）都是自动调优的资源管理机制，但它们的目标和使用方法有所不同。\n\n**HPA（Horizontal Pod Autoscaler）：**\n- **目标：** HPA主要用于根据CPU和内存的使用量来自动扩展Pod的数量。它根据监控数据来确定是否需要增加或减少Pod的数量。\n- **使用场景：** 当应用负载变化时，扩展Pod的数量以应对瞬间或持续的流量变化。\n- **触发条件：** 通常是根据选定的资源指标（如CPU或内存使用率）以及目标值设定的触发条件。\n- **实现：** 依赖于选择的指标来自动增加Pod的副本数量。\n\n**VPA（Vertical Pod Autoscaler）：**\n- **目标：** VPA用于自动调整单个Pod的资源请求（CPU和内存）。根据分析Pod的历史使用情况，VPA能够动态调整请求的资源量，以优化成本和性能。\n- **使用场景：** 当单个Pod的资源使用不均衡或不稳定导致应用性能波动时，调整资源请求以提高资源利用率或降低成本。\n- **触发条件：** 基于实例CPU和内存使用情况的分析，VPA会建议合适的资源请求值。\n- **实现：** 通过分析历史数据和进行预测来确定最佳的资源分配，然后自动更新Pod的资源请求。\n\n**何时使用VPA：**\n1. **成本优化：** 当你希望减少资源浪费，降低成本时。\n2. **性能优化：** 当应用运行不稳定，可能由于资源分配不当导致时。\n3. **提高资源利用率：** 提高集群的整体资源利用率。\n4. **自动调整：** 当手动调整Pod资源请求过于复杂或者难以管理时。\n5. **新部署或少量部署：** 对于新应用或者资源需求不稳定的应用，VPA可以帮助快速调整资源请求。\n\n总结来说，HPA用于控制Pod副本数量的水平扩展，而VPA用于调整单个Pod的资源请求的垂直扩展。在实际应用中，两者可以结合使用，以实现更为高效的资源管理和成本控制。",
+        "latencyMs": 9376,
+        "score": {
+          "total": 53,
+          "breakdown": {
+            "keywordScore": 56,
+            "keywordHits": [
+              "VPA",
+              "HPA",
+              "垂直扩展",
+              "水平扩展",
+              "Auto"
+            ],
+            "keywordTotal": 9,
+            "referenceScore": 9,
+            "lengthScore": 100,
+            "structureScore": 85
+          }
+        }
+      },
+      {
+        "questionId": "cw-01",
+        "dimension": "config_writing",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "下面是一个简单的Deployment YAML配置，它部署了一个nginx:1.25的容器，设置3个副本。此外，还包括了内存和CPU的资源限制以及健康检查（LivenessProbe和ReadinessProbe）。\n\n```yaml\napiVersion: apps/v1\nkind: Deployment\nmetadata:\n  name: nginx-deployment\n  labels:\n    app: nginx\nspec:\n  replicas: 3\n  selector:\n    matchLabels:\n      app: nginx\n  template:\n    metadata:\n      labels:\n        app: nginx\n    spec:\n      containers:\n      - name: nginx\n        image: nginx:1.25\n        ports:\n        - containerPort: 80\n        resources:\n          limits:\n            memory: \"128Mi\"\n            cpu: \"500m\"\n        readinessProbe:\n          httpGet:\n            path: /\n            port: 80\n          periodSeconds: 10\n          failureThreshold: 3\n        livenessProbe:\n          httpGet:\n            path: /\n            port: 80\n          periodSeconds: 10\n          failureThreshold: 5\n```\n\n**注解说明**:\n\n- `apiVersion: apps/v1`: API版本，这里使用的是 `apps/v1`。\n- `kind: Deployment`: YAML文件类型，这是一个Deployment。\n- `metadata`: 包括Deployment的名称和标签。\n- `labels`: Deployment模板的标签选择器使用。\n- `spec`: 具体配置。\n  - `replicas`: 副本数。\n  - `selector`: 标签选择器。\n  - `template`: 包含容器的配置信息。\n    - `metadata`: 包括模板的标签。\n    - `spec`: 包含容器及容器配置的详细设定。\n      - `containers`: 容器的详细配置。\n        - `name`：容器名称。\n        - `image`：容器图像。\n        - `ports`: 容器暴露的端口。\n        - `resources`: 资源限制配置。\n          - `limits`: 资源的使用上限。\n        - `readinessProbe`: 就绪探针配置，用于确定容器是否已经准备好服务。\n        - `livenessProbe`: 生存性探针配置，用于确定容器是否需要被重启。\n\n您可以将这个YAML配置保存为文件，例如`nginx-deployment.yaml`，并使用`kubectl apply -f nginx-deployment.yaml`命令来创建Deployment。",
+        "latencyMs": 9874,
+        "score": {
+          "total": 95,
+          "breakdown": {
+            "keywordScore": 90,
+            "keywordHits": [
+              "apiVersion",
+              "apps/v1",
+              "Deployment",
+              "replicas: 3",
+              "nginx:1.25",
+              "resources",
+              "limits",
+              "livenessProbe",
+              "readinessProbe"
+            ],
+            "keywordTotal": 10,
+            "referenceScore": 98,
+            "lengthScore": 100,
+            "structureScore": 100
+          }
+        }
+      },
+      {
+        "questionId": "cw-02",
+        "dimension": "config_writing",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "以下是一个使用 `NetworkPolicy` 资源根据您提供的条件定义网络访问控制规则的 YAML 配置示例：\n\n```yaml\napiVersion: networking.k8s.io/v1\nkind: NetworkPolicy\nmetadata:\n  name: allow-frontend-backend-access\nspec:\n  podSelector:\n    matchLabels:\n      app: backend  # 选择 app=backend 的 Pod\n  policyTypes:\n    - Ingress\n  ingress:\n  - from:\n    - podSelector:\n        matchLabels:\n          app: frontend  # 允许来自 app=frontend 的 Pod\n    ports:\n    - protocol: TCP\n      port: 8080  # 只允许访问 8080 端口\n```\n\n这个 `NetworkPolicy` 定义了一个策略，允许带有 `app=frontend` 标签的 Pods 对带有 `app=backend` 标签的 Pods 的 8080 端口（TCP协议）的流量。",
+        "latencyMs": 4621,
+        "score": {
+          "total": 99,
+          "breakdown": {
+            "keywordScore": 100,
+            "keywordHits": [
+              "NetworkPolicy",
+              "networking.k8s.io/v1",
+              "podSelector",
+              "app: backend",
+              "app: frontend",
+              "Ingress",
+              "port: 8080",
+              "TCP"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 100,
+            "lengthScore": 100,
+            "structureScore": 90
+          }
+        }
+      },
+      {
+        "questionId": "cw-03",
+        "dimension": "config_writing",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "以下是一个Horizontal Pod Autoscaler (HPA) 的 YAML 配置示例，该配置根据 CPU 使用率自动扩展 Deployment。当 CPU 使用率超过 70% 时，HPA 将尝试将 Pod 的副本数从 2 扩展到最多 10 个。\n\n```yaml\napiVersion: autoscaling/v2beta2\nkind: HorizontalPodAutoscaler\nmetadata:\n  name: example-hpa\n  namespace: default  # 根据需要更改命名空间\nspec:\n  scaleTargetRef:\n    apiVersion: apps/v1\n    kind: Deployment\n    name: example-deployment  # 需要扩展的 Deployment 的名称\n  minReplicas: 2\n  maxReplicas: 10\n  metrics:\n  - type: Resource\n    resource:\n      name: cpu\n      target:\n        type: Utilization\n        averageUtilization: 70\n```\n\n保存该配置到一个 YAML 文件中，然后使用 `kubectl` 应用该配置：\n\n```sh\nkubectl apply -f example-hpa.yaml\n```\n\n确保替换 `example-deployment` 和 `default` 为你实际部署和命名空间的名称。如果需要监控其他 target 的指标（如内存），你可以在 `metrics` 下增加相应的规则。",
+        "latencyMs": 6526,
+        "score": {
+          "total": 99,
+          "breakdown": {
+            "keywordScore": 100,
+            "keywordHits": [
+              "HorizontalPodAutoscaler",
+              "autoscaling/v2",
+              "scaleTargetRef",
+              "minReplicas",
+              "maxReplicas",
+              "cpu",
+              "averageUtilization: 70"
+            ],
+            "keywordTotal": 7,
+            "referenceScore": 100,
+            "lengthScore": 100,
+            "structureScore": 90
+          }
+        }
+      },
+      {
+        "questionId": "cw-04",
+        "dimension": "config_writing",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "以下是使用 `StatefulSet` 和 `PersistentVolumeClaim`（每个实例请求 10Gi 存储空间）部署 3 个副本的 Redis 集群的 Kubernetes 配置文件示例：\n\n```yaml\napiVersion: apps/v1\nkind: StatefulSet\nmetadata:\n  name: redis\nspec:\n  serviceName: \"redis-cluster\"\n  replicas: 3\n  selector:\n    matchLabels:\n      app: redis\n  template:\n    metadata:\n      labels:\n        app: redis\n    spec:\n      containers:\n        - name: redis\n          image: redis:latest\n          ports:\n            - containerPort: 6379\n          volumeMounts:\n            - name: redis-storage\n              mountPath: /data\n  volumeClaimTemplates:\n    - metadata:\n        name: redis-storage\n      spec:\n        accessModes: [ \"ReadWriteOnce\" ]\n        resources:\n          requests:\n            storage: 10Gi\n```\n\n在这个配置中：\n\n- `StatefulSet`对象定义了 3 个副本（replicas）的需求，每个副本是一个独立的 Redis 实例。\n- 每个实例的标签为 `app: redis`。\n- 用于 Redis 的 Docker 容器镜像指定为 `redis:latest`，你可以根据需要调整为你特定的镜像标签。\n- Redis 服务的网络端口为6379（默认的 Redis 端口）。\n- 使用 `volumeClaimTemplates` 来定义每个副本独立使用的 `PersistentVolumeClaim`（PVC），该 PVC 会绑定到一个存储资源，为其提供 10GB 的存储空间。`accessModes` 设置为 `ReadWriteOnce`，意味着每个 PVC 将被单个节点读取和写入。\n- 创建的每个 `StatefulSet` Pod 都会通过 `volumeMounts` 挂载对应的 `PersistentVolume` 到 `/data` 路径，Redis 数据存储于此。 \n\n在实际的部署中，请确保你的 Kubernetes 环境中有足够的 PersistentVolume 资源或者已经设置好了对应的动态存储供应器（dynamic provisioner），以便能够为每个 PVC 提供存储。",
+        "latencyMs": 10997,
+        "score": {
+          "total": 99,
+          "breakdown": {
+            "keywordScore": 100,
+            "keywordHits": [
+              "StatefulSet",
+              "serviceName",
+              "replicas: 3",
+              "redis",
+              "volumeClaimTemplates",
+              "10Gi",
+              "ReadWriteOnce",
+              "containerPort: 6379"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 100,
+            "lengthScore": 100,
+            "structureScore": 90
+          }
+        }
+      },
+      {
+        "questionId": "cw-05",
+        "dimension": "config_writing",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "以下是一个简单的 Kubernetes Ingress 配置，该配置能够将 `api.example.com` 路由到 `api-service:8080`，以及将 `web.example.com` 路由到 `web-service:3000`：\n\n```yaml\napiVersion: networking.k8s.io/v1\nkind: Ingress\nmetadata:\n  name: example-ingress\n  annotations:\n    nginx.ingress.kubernetes.io/rewrite-target: /$1\nspec:\n  rules:\n  - host: api.example.com\n    http:\n      paths:\n      - path: /api(/|$)(.*)\n        pathType: Prefix\n        backend:\n          service:\n            name: api-service\n            port:\n              number: 8080\n  - host: web.example.com\n    http:\n      paths:\n      - path: /web(/|$)(.*)\n        pathType: Prefix\n        backend:\n          service:\n            name: web-service\n            port:\n              number: 3000\n```\n\n请注意：\n- 这里的 `nginx.ingress.kubernetes.io/rewrite-target` 注解是用来重写路径以便正确传递请求给后端服务。\n- `pathType: Prefix` 允许使用更灵活的路径匹配而不是精确匹配。\n- 你需要根据你的实际情况，比如使用的 Ingress 控制器和其配置选择适当的注解。\n- Ensure that the Ingress Controller you are using supports at least the version of Kubernetes you are running, and possibly newer features.\n- 你要确定所使用的 Ingress 控制器是否支持以上的特性以及注解，以及是否支持你正在运行的 Kubernetes 版本。",
+        "latencyMs": 8253,
+        "score": {
+          "total": 94,
+          "breakdown": {
+            "keywordScore": 88,
+            "keywordHits": [
+              "Ingress",
+              "networking.k8s.io/v1",
+              "host",
+              "api.example.com",
+              "web.example.com",
+              "pathType",
+              "Prefix"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 100,
+            "lengthScore": 100,
+            "structureScore": 90
+          }
+        }
+      },
+      {
+        "questionId": "cw-06",
+        "dimension": "config_writing",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "以下是一个RBAC（Role-Based Access Control）配置的示例，它将创建一个名为 `dev-pod-service-reader` 的 `Role` 和 `RoleBinding`，允许只在 `dev` 命名空间中查看（获取）和服务列表（列出）Pod和Service的服务账户（`ServiceAccount`）。\n\n```yaml\napiVersion: v1\nkind: Namespace\nmetadata:\n  name: dev\n\n---\n\napiVersion: rbac.authorization.k8s.io/v1\nkind: Role\nmetadata:\n  namespace: dev\n  name: pod-service-reader\nrules:\n- apiGroups: [\"\"]\n  resources: [\"pods\", \"services\"]\n  verbs: [\"get\", \"list\"]\n\n---\n\napiVersion: rbac.authorization.k8s.io/v1\nkind: RoleBinding\nmetadata:\n  name: read-pod-services\n  namespace: dev\nsubjects:\n- kind: ServiceAccount\n  name: dev-reader\n  namespace: dev\nroleRef:\n  kind: Role\n  name: pod-service-reader\n  apiGroup: rbac.authorization.k8s.io\n```\n\n在这个 YAML 配置中：\n\n1. 首先创建一个名为 `dev` 的命名空间。\n2. 接着定义一个名为 `pod-service-reader` 的 `Role`，它只允许对 `pods` 和 `services` 这两种资源的 `get` 和 `list` 操作，并且作用范围限制在 `dev` 命名空间内。\n3. 最后定义一个 `RoleBinding`，它将上面创建的 `Role` 绑定到相同命名空间 `dev` 中的服务账户 `dev-reader`，从而赋予它在 `dev` 命名空间中查看和列出Pod和Service的权限。\n\n应用这个配置可以让名为 `dev-reader` 的 `ServiceAccount` 在 `dev` 命名空间中具有查看和列出Pod和Service的权限。",
+        "latencyMs": 7733,
+        "score": {
+          "total": 95,
+          "breakdown": {
+            "keywordScore": 90,
+            "keywordHits": [
+              "ServiceAccount",
+              "Role",
+              "RoleBinding",
+              "rbac.authorization.k8s.io",
+              "pods",
+              "services",
+              "get",
+              "list",
+              "namespace: dev"
+            ],
+            "keywordTotal": 10,
+            "referenceScore": 100,
+            "lengthScore": 100,
+            "structureScore": 90
+          }
+        }
+      },
+      {
+        "questionId": "cw-07",
+        "dimension": "config_writing",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "以下是一个满足您要求的 Kubernetes CronJob 配置示例：\n\n```yaml\napiVersion: batch/v1beta1\nkind: CronJob\nmetadata:\n  name: database-backup-job\nspec:\n  schedule: \"0 2 * * *\"\n  successfulJobsHistoryLimit: 3\n  jobTemplate:\n    spec:\n      template:\n        spec:\n          restartPolicy: OnFailure\n          containers:\n          - name: mysql-dump\n            image: mysql\n            command:\n            - sh\n            - -c\n            - \"./backup.sh\"\n            volumeMounts:\n            - mountPath: /var/www/html\n              name: backup-volume\n          volumes:\n            - name: backup-volume\n              persistentVolumeClaim:\n                claimName: my-backup-pvc\n```\n\n配置解释：\n\n1. `apiVersion`: `batch/v1beta1`。这是 CronJob 资源的 API 版本。\n\n2. `kind`: `CronJob`。指定资源类型为 CronJob。\n\n3. `metadata`: `name: database-backup-job`。命名 CronJob。\n\n4. `spec.schedule`: `\"0 2 * * *\"`。这是一个 cron 表达式，每天凌晨 2 点执行 CronJob。\n\n5. `spec.successfulJobsHistoryLimit`: `3`。保留最近 3 次成功的 Job 记录。\n\n6. `spec.jobTemplate`: `spec` 是 `jobTemplate` 对象的配置。\n\n7. `spec.template.spec`: `restartPolicy: OnFailure`。重启策略为在失败时重启。\n\n8. `containers`: 指定容器信息。\n\n   - `name: mysql-dump`。容器名称。\n\n   - `image: mysql`。使用 mysql 镜像。\n\n   - `command`: 指定运行命令。\n\n   - `volumeMounts`: 挂载持久卷。\n\n9. `volumes`: 定义一个 PersistentVolumeClaim，用于存储备份数据。\n\n   - `name: backup-volume`。卷名称。\n\n   - `persistentVolumeClaim`: 指定 PVC 名称。\n\n请注意，根据您的实际需要，您可能需要修改容器名称、镜像、执行命令、挂载卷等。确保您的 PVC (`my-backup-pvc`) 已经存在于您的 Kubernetes 集群中。",
+        "latencyMs": 10312,
+        "score": {
+          "total": 82,
+          "breakdown": {
+            "keywordScore": 86,
+            "keywordHits": [
+              "CronJob",
+              "batch/v1",
+              "schedule",
+              "0 2 * * *",
+              "successfulJobsHistoryLimit",
+              "restartPolicy: OnFailure"
+            ],
+            "keywordTotal": 7,
+            "referenceScore": 64,
+            "lengthScore": 100,
+            "structureScore": 90
+          }
+        }
+      },
+      {
+        "questionId": "cw-08",
+        "dimension": "config_writing",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "以下是一个满足要求的 Kubernetes Pod 安全配置示例：\n\n```yaml\napiVersion: v1\nkind: Pod\nmetadata:\n  name: security-context-demo\nspec:\n  securityContext:\n    # 指定运行用户为非root用户，例如将用户ID设置为1000\n    runAsUser: 1000\n    # 指定运行用户组，例如将用户组ID设置为1000\n    runAsGroup: 1000\n    # 禁止权限提升\n    allowPrivilegeEscalation: false\n    # 设置为true以启用只读根文件系统\n    fsGroup: 1000\n    readOnlyRootFilesystem: true\n  containers:\n  - name: nginx-container\n    image: nginx\n    # 也可以为容器单独设置 securityContext，但建议使用 Pod级别的 securityContext\n    securityContext:\n      allowPrivilegeEscalation: false\n```\n\n这个配置通过设置 `runAsUser`、`runAsGroup`、`allowPrivilegeEscalation` 和 `readOnlyRootFilesystem` 字段来实现以非root用户运行、禁止权限提升和只读根文件系统的要求。所有的这些安全配置都设置在 Pod 的 `securityContext` 中，这将规范该 Pod 中所有容器的安全策略。如果在容器级别需要额外的安全配置，则可以在容器的 `securityContext` 字段中进行设置，但通常情况下，使用 Pod 级别的 `securityContext` 就足够了。",
+        "latencyMs": 6648,
+        "score": {
+          "total": 74,
+          "breakdown": {
+            "keywordScore": 63,
+            "keywordHits": [
+              "securityContext",
+              "runAsUser",
+              "allowPrivilegeEscalation: false",
+              "readOnlyRootFilesystem",
+              "ALL"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 68,
+            "lengthScore": 100,
+            "structureScore": 90
+          }
+        }
+      },
+      {
+        "questionId": "ea-01",
+        "dimension": "error_analysis",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "当Kubernetes中的Pod出现'Back-off restarting failed container'错误时，说明容器启动失败，并且重启尝试遭到了暂时性的延迟。以下是一些可能的原因以及逐步排查的方法：\n\n### 可能的原因：\n\n1. **配置错误**：Pod配置或容器镜像配置错误。\n2. **环境问题**：容器所必需的环境变量或变量配置有误。\n3. **权限问题**：容器需要的权限没有被正确赋予。\n4. **资源限制**：资源不足，如CPU或内存限制。\n5. **网络问题**：Pod所需的网络配置出错。\n6. **存储问题**：与远程存储的连接问题（如PVCs）。\n7. **容器崩溃**：容器内部程序因为某种原因崩溃（如`OutOfMemory`或者`Error`退出状态）。\n8. **镜像拉取**：容器镜像拉取失败或不存在。\n9. **系统问题**：节点上存在问题，如Kubelet有问题或缺少某些系统服务。\n10. **依赖服务未可用**：Pod启动需要的服务依赖可能尚未就绪。\n\n### 逐步排查方法：\n\n#### 1. 查看Pod状态和日志\n\n```shell\n# 查看Pod的状态\nkubectl describe pod <pod-name>\n\n# 查看容器日志\nkubectl logs <pod-name>\n```\n\n如果Pod状态显示`CrashLoopBackOff`，则说明容器启动失败后重启尝试被延迟。\n\n#### 2. 检查镜像\n\n确认容器使用的镜像是否存在，是否可以被正确拉取。\n\n```shell\n# 确认镜像是否存在\nkubectl get image <image-name>\n```\n\n如果镜像不存在或拉取失败，尝试拉取镜像并检查`imagePullPolicy`参数。\n\n#### 3. 检查资源限制\n\n确认Pod是否因资源限制（如CPU和内存）而启动失败。\n\n```shell\n# 查看节点资源状态\nkubectl describe node <node-name>\n```\n\n确认是否有资源不足的情况。\n\n#### 4. 检查运行时环境设置\n\n检查容器的运行时环境设置是否正确，包括环境变量和命令参数。\n\n```yaml\nenv:\n  - name: SOME_VARIABLE\n    value: \"some-value\"\n```\n\n#### 5. 检查网络问题\n\n如果Pod需要访问外部服务或集群内服务，检查网络策略和权限是否允许Pod连接。\n\n#### 6. 检查ConfigMap和Secret等依赖\n\n检查Pod依赖的所有ConfigMap和Secret是否正确挂载。\n\n```yaml\nenvFrom:\n  - configMapRef:\n      name: config-map-name\n  - secretRef:\n      name: secret-name\n```\n\n#### 7. 调试Pod\n\n你可以尝试直接在节点上启动Pod来测试配置和镜像，以确定问题是否仅限于Kubernetes环境。\n\n```shell\n# 通过命令行拉取镜像并在节点上直接运行\ndocker run -d --name=my-container -e SOME_VARIABLE=some-value my-image\n```\n\n#### 8. 检查节点健康状态\n\n检查节点的健康状况可能有助于发现隐藏的问题。\n\n```shell\n# 检查节点健康状况\nkubectl get nodes -o wide\n```\n\n#### 9. 调整容忍度和亲和性\n\n如果你的Pod正在经历节点问题，可能需要调整Pod的容忍度或亲和性来调度到更合适的节点。\n\n```yaml\ntolerations:\n- key: \"key\"\n  operator: \"Exists\"\n  effect: \"NoSchedule\"\n```\n\n每个情况可能需要根据具体的Pod配置和日志输出进行详细的排查。综合利用上述步骤可以有助于确定'Back-off restarting failed container'错误的具体原因，并采取对应的解决措施。",
+        "latencyMs": 13942,
+        "score": {
+          "total": 55,
+          "breakdown": {
+            "keywordScore": 44,
+            "keywordHits": [
+              "Back-off",
+              "CrashLoopBackOff",
+              "describe",
+              "logs"
+            ],
+            "keywordTotal": 9,
+            "referenceScore": 23,
+            "lengthScore": 100,
+            "structureScore": 100
+          }
+        }
+      },
+      {
+        "questionId": "ea-02",
+        "dimension": "error_analysis",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "执行 `kubectl apply` 时出现 `error validating data: ValidationError` 通常是因为 YAML 文件格式错误或者其中的内容不符合Kubernetes资源对象的期望格式导致的。以下是一些常见原因和修复步骤：\n\n1. **格式错误**：检查YAML文件语法错误。\n   - 缩进错误：YAML文件必须使用两个空格进行缩进，不能使用Tab或混合使用空格和Tab。\n   - 数据类型不匹配：例如，布尔值（如`true`、`false`）前后不能有空格，字符串要用引号。\n   - 字段名拼写错误或者使用了不支持的字段。\n   - 参数值缺少引号等。\n\n2. **版本问题**：确保YAML文件中定义的Kubernetes API版本与集群版本的API兼容。\n   - 使用 `apiVersion: kind/version`。\n   - 检查所需的API版本是否与Kubernetes集群当前支持的API版本相一致。\n\n3. **对象属性不支持**：YAML文件可能引用了不支持的Kubernetes资源属性。\n   - 检查是否有最新添加的属性或特性，可能需要升级集群或使用不同的镜像版本。\n   - 检查相关的API文档确认属性的可用性。\n\n4. **资源文件不一致**：应用多个YAML文件时，部分资源可能依赖不在当前文件中定义的资源，或者多个文件间存在冲突。\n   - 确保使用正确的 `kind` 和 `metadata` 的 `name` 确保它们的引用一致。\n   - 使用 `kubectl diff` 命令来查看将应用的更改和预期的状态。\n\n修复步骤示例：\n\n1. 使用 `kubectl validate` 命令来检查YAML文件格式和语义是否正确。\n\n   ```bash\n   kubectl validate -f your-yaml-file.yaml\n   ```\n\n2. 手动检查YAML文件，注意每个标签和字符，并修正语法。\n\n3. 如果问题仍然存在，可以逐一注释掉YAML文件中的各个部分，逐个应用检查哪个部分导致错误。\n\n如果遇到错误时，能获取到具体的错误信息会有非常大的帮助。以下是一个错误信息示例：\n\n```\nerror: error validating data: ValidationError(YourResource/your-resource-name): missing kind; if this is intentional, verify that Untitled paradigms.k8s.io is in kube-apiserver --admission-control and酮 remove the kind field.; ValidationError(YourResource/your-resource-name): unable to recognize object: YourResource/your-resource-name: v1: kind: null\n```\n\n在这个例子中，我们可以看到是因为对象缺少了 `kind` 属性，或者 `kind` 值为 `null`，这通常是由于YAML格式错误导致的。\n\n如果错误信息不明确，或者上述步骤无法解决问题，可以尝试将YAML文件的内容或错误信息向同事或社区寻求帮助。",
+        "latencyMs": 13835,
+        "score": {
+          "total": 60,
+          "breakdown": {
+            "keywordScore": 63,
+            "keywordHits": [
+              "ValidationError",
+              "apiVersion",
+              "kind",
+              "YAML",
+              "缩进"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 16,
+            "lengthScore": 100,
+            "structureScore": 100
+          }
+        }
+      },
+      {
+        "questionId": "ea-03",
+        "dimension": "error_analysis",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "当一个节点状态变为 `NotReady`，并且 `kubectl describe node` 输出显示 'KubeletNotReady'，这意味着Kubernetes集群中的kubelet服务存在问题。以下是分析和处理的步骤：\n\n### 1. 确认节点具体状态\n首先通过以下命令确认节点的具体状态：\n```sh\nkubectl describe node <node-name>\n```\n关注 `Conditions` 部分，查看具体的错误代码和描述。\n\n### 2. 检查kubelet服务日志\n查看所在节点上的kubelet服务日志，通常位于`/var/log/messages`，或者使用如下命令：\n```sh\njournalctl -u kubelet\n```\n查找是否有错误或与kubelet相关的问题。\n\n### 3. 检查kubelet配置文件\nkubelet的配置通常保存在`/etc/kubernetes/kubelet.conf`或指定的其他位置中。检查配置文件是否存在错误或配置问题。\n\n### 4. 确认网络连接\n确认节点到控制平面（master节点）的网络连接是否正常。节点必须能够访问API服务器。\n\n### 5. 验证Docker服务状态\n在大多数情况下，kubelet依赖于Docker（或containerd）。检查Docker服务是否正常运行：\n```sh\nsystemctl status docker\n```\n确认Docker没有像停止、退出或错误这样的状态。\n\n### 6. 查看cAdvisor日志\ncAdvisor是kubelet用来获取容器和机器统计数据的一个组件。检查cAdvisor的日志，路径可能是`/var/log/kubernetes/cadvisor.log`。\n\n### 7. 重启kubelet服务\n如果发现服务器配置或网络连接问题，尝试重启kubelet服务可能会有帮助：\n```sh\nsystemctl restart kubelet\n```\n\n### 8. 检查节点资源\n检查节点的资源使用情况，如CPU、内存、磁盘空间，以确保资源是足够的，因为资源耗尽也会导致kubelet服务失败。\n\n### 9. 检查认证问题\n如果节点是新增的或者是有一段时间未与系统通信，检查kubelet的证书是否已经过期或者节点认证是否出现问题。\n\n### 10. 及时升级和打补丁\n如果这一直是一个持续的问题，可能需要考虑对kubernetes、kubelet或者操作系统进行升级，同时对任何已知的安全问题打补丁。\n\n在这个过程中，保持关注所有可能影响kubelet与API服务器通信或者正常工作的因素和问题，一步一步进行排查，并最终解决节点状态为 `NotReady` 的问题。",
+        "latencyMs": 11410,
+        "score": {
+          "total": 65,
+          "breakdown": {
+            "keywordScore": 75,
+            "keywordHits": [
+              "NotReady",
+              "kubelet",
+              "systemctl",
+              "journalctl",
+              "containerd",
+              "证书"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 16,
+            "lengthScore": 100,
+            "structureScore": 100
+          }
+        }
+      },
+      {
+        "questionId": "ea-04",
+        "dimension": "error_analysis",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "当 Pod 处于 `ImagePullBackOff` 状态时，这意味着镜像拉取过程中发生了错误，并且超过了容器框架的重试限制。要排查这个问题，可以遵循以下步骤：\n\n1. **查看 Pod 事件**\n\n   使用 `kubectl` 命令查看 Pod 的事件记录，了解具体的错误信息：\n   ```\n   kubectl describe pod <pod_name> -n <namespace>\n   ```\n   关注 Event 部分，特别是关于 `Failed to pull image` 和 `Failed to inspect image` 的事件。\n\n2. **检查镜像仓库**\n\n   - 确认镜像仓库地址是否正确，且该地址能够被 Kubernetes 集群所访问。\n   - 对于私有仓库，检查是否已经正确配置了仓库的认证信息，例如 `imagePullSecrets`。\n   - 检查是否有网络问题，如防火墙、代理设置或者网络策略阻止了访问。\n\n3. **检查镜像名称和标签**\n\n   - 确认 Docker 镜像名称和标签是否正确无误，避免拼写错误。\n   - 确认镜像是否存在于指定的镜像仓库中。\n\n4. **检查集群节点的 Docker 配置**\n\n   - 检查集群节点上的 Docker 守护进程是否正常运行。\n   - 查看 Docker 配置（如配置文件`/etc/docker/daemon.json`），尤其是镜像拉取相关的配置项。\n\n5. **查看容器日志**\n\n   如果 Pod 因为镜像问题启动失败而没有正常的容器活动，可以尝试查看创建的其他异常容器的日志：\n   ```\n   kubectl logs <pod_name> -n <namespace>\n   ```\n   这将显示容器启动失败时的日志，可能包含镜像拉取失败的详细信息。\n\n6. **Docker 日志和状态**\n\n   在宿主机上检查 Docker 的日志和状态，以查看是否有关于镜像拉取的详细错误记录。\n\n7. **检查集群日志**\n\n   对于某些问题，可能需要检查 Kubernetes 集群组件（如 kubelet、docker 或 containerd）的日志。\n\n8. **拉取镜像**\n\n   手动尝试拉取有问题的镜像，以排查是否为仓库或镜像本身的问题：\n   ```\n   docker pull <image_name>\n   ```\n\n9. **检查权限问题**\n\n   如果使用了 RBAC（基于角色的访问控制），确保对应的服务账户(ServiceAccount)具有访问镜像仓库的权限。\n\n10. **检查资源配额**\n\n    确认是否达到了资源配额，特别是内存和CPU，当配额不足时，可能会导致容器无法启动。\n\n通过上述步骤，一般情况下你应该能够找到问题的根源，然后根据具体错误采取相应的解决措施。如果问题依然无法解决，可能需要进一步检查集群的配置或联系云服务提供商的支持。",
+        "latencyMs": 11325,
+        "score": {
+          "total": 69,
+          "breakdown": {
+            "keywordScore": 75,
+            "keywordHits": [
+              "ImagePullBackOff",
+              "imagePullSecrets",
+              "describe",
+              "私有仓库",
+              "认证",
+              "网络"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 30,
+            "lengthScore": 100,
+            "structureScore": 100
+          }
+        }
+      },
+      {
+        "questionId": "ah-01",
+        "dimension": "alert_handling",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "告警 'KubePodCrashLooping' 指的是 Kubernetes 中的某个 Pod 处于崩溃循环状态，也就是说这个 Pod 在频繁启动和停止之间徘徊，但是无法正常运行。Prometheus 通过监控 Pod 状态变化来检测这种模式，并且触发告警。\n\n告警的含义是：\n- Pod 的主容器或者其他关键容器持续失败并且重新启动。\n- 这可能是由于应用配置问题、资源限制不足、系统环境问题或者代码缺陷等原因导致的。\n\n如何处理这个告警：\n1. **检查 Pod 日志**：\n   - 使用 `kubectl logs -n <NAMESPACE> <POD_NAME>` 查看 Pod 的日志信息，以确定 Pod 为什么会失败。\n\n2. **检查 Pod 的事件**：\n   - 使用 `kubectl describe pod -n <NAMESPACE> <POD_NAME>` 来检查事件相关的信息，这可以提供一些关于问题背后原因的线索。\n\n3. **检查 Kubernetes 配置**：\n   - 检查你的 Deployment、StatefulSet 或其他控制器的配置是否正确，以确保 Pod 能正确部署。\n\n4. **检查应用配置**：\n   - 如果 Pod 失败的原因与应用本身的配置相关，那么需要检查应用的配置文件，并进行调整。\n\n5. **监控资源使用情况**：\n   - 使用诸如 `kubectl top` 的命令来查看 Pod 或 Node 的资源使用情况。如果资源不足可能是造成 Pod 反复崩溃的原因之一。\n\n6. **资源限制和请求**：\n   - 检查你的 Pod 是否设置了合适的资源请求（requests）和限制（limits），以确保 Pod 能获得所需的资源。\n\n7. **修复应用问题**：\n   - 如果是因为代码缺陷或应用逻辑错误导致的崩溃，那么就需要修改应用代码或者更新应用容器的镜像。\n\n8. **联系 DevOps 团队**：\n   - 如果是需要开发团队介入的问题（例如代码错误），那么你需要与 DevOps 或应用开发团队进行沟通，以便他们能够定位并修复问题。\n\n9. **资源隔离和修复环境问题**：\n   - 确认是否有任何环境问题影响了 Pod 的正常运行。调整或者隔离有问题的资源，例如使用不同的节点或者集群。\n\n10. **检查基础组件状态**：\n    - 确保 Kubernetes 集群的基础组件如 API 服务器、etcd 和节点的状态都是健康的。\n\n通过上述方法，通常可以确定导致 'KubePodCrashLooping' 告警的原因，并采取相应的措施来解决问题。如果问题依然存在，可能需要进一步的调试和分析。",
+        "latencyMs": 10963,
+        "score": {
+          "total": 48,
+          "breakdown": {
+            "keywordScore": 38,
+            "keywordHits": [
+              "KubePodCrashLooping",
+              "Prometheus",
+              "logs"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 19,
+            "lengthScore": 100,
+            "structureScore": 85
+          }
+        }
+      },
+      {
+        "questionId": "ah-02",
+        "dimension": "alert_handling",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "当收到 'KubeNodeNotReady' 告警时，说明有Kubernetes集群中的节点不可用或未就绪，这可能会导致工作负载不能正常调度到该节点。为了高效地解决问题和减少故障时间，可以建立以下标准化的应急响应流程：\n\n### 1. 告警确认\n- 确认收到的告警信息，确保告警是一个真实的问题，而非误报。\n- 检查产生告警的具体时间段，以及其他相关监控工具是否也显示问题。\n\n### 2. 信息收集\n- **收集节点状态**：执行 `kubectl get nodes` 查看该节点的状态，确认是否确实处于 `NotReady` 或 `Unknown` 状态。\n- **节点日志**：查看节点上的相关日志，如`/var/log/kubelet.log`、`/var/log/kube-proxy.log`等，并收集异常信息。\n\n### 3. 紧急应对措施\n- **检查网络连接**：检查网络连接状态，确保节点与主控节点通信正常。\n- **节点资源监测**：检查节点CPU、内存、磁盘使用率，确保资源没有耗尽。\n- **系统健康检查**：检查节点操作系统层面的日志和服务状态，如`dmesg`，`journalctl`等。\n\n### 4. 问题定位\n- **kubernetes组件状态**：对kubelet、docker(容器运行时)等组件的状态进行检查，确认服务是否正常。\n- **容器健康检查**：对失败重启的容器进行健康检查，确定是否需要重新调度。\n- **网络测试**：可通过`traceroute`或`ping`命令检查网络连通性。\n\n### 5. 恢复操作\n- 分析步骤3和4的信息，确定最可能的原因。\n- 根据确定的原因，执行相应的恢复措施，如重启kubelet服务、修复网络故障、扩容资源等。\n- 如无法恢复节点，考虑从集群移除或替换该节点，并重新调度负载。\n\n### 6. 记录和复盘\n- 记录所有相关数据、操作和结果。\n- 故障处理结束后，组织团队进行复盘，分析事故原因和改进方案，以防止未来的故障。\n\n### 7. 通知\n- 如果问题影响范围较大或持续时间较长，及时向相关团队或业务部门进行通报。\n- 修复问题后，更新状态和进度。\n\n### 8. 优化和预防\n- 根据事故复盘结果，修改监控策略和响应计划，提升响应效率和准确度。\n- 定期检查和优化节点配置，提高整个集群的稳定性和可靠性。\n\n### 示例Kubernetes命令\n```shell\n# 查看节点状态\nkubectl get nodes\n\n# 查看节点最近的事件\nkubectl describe node <node_name>\n\n# 检查节点上的kubelet日志\nkubectl logs <pod_name>\n\n# 重启kubelet服务\nkubectl drain <node_name>\nkubectl cordon <node_name>\n# ... 修复操作 ...\nkubectl uncordon <node_name>\n```\n\n以上就是应对 'KubeNodeNotReady' 告警的标准化应急响应流程。根据实际情况，该流程可能需要调整或优化。",
+        "latencyMs": 16497,
+        "score": {
+          "total": 59,
+          "breakdown": {
+            "keywordScore": 63,
+            "keywordHits": [
+              "KubeNodeNotReady",
+              "应急",
+              "describe node",
+              "kubelet",
+              "dmesg"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 13,
+            "lengthScore": 100,
+            "structureScore": 100
+          }
+        }
+      },
+      {
+        "questionId": "ah-03",
+        "dimension": "alert_handling",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "`etcdHighCommitDurations` 这条监控告警通常表示 etcd 集群中提交事务的耗时过高。etcd 是一个分布式键值存储系统，用于保存 Kubernetes 集群的状态，如果提交事务的耗时增加，会导致整个集群的性能降低和延迟增加。\n\n以下是一些优化 etcd 性能的建议：\n\n1. **资源分配**：\n   - 确保 etcd 实例拥有足够的 CPU 和内存资源，etcd 运行在高性能的硬件上可以提高其处理请求的速度。\n\n2. **优化数据模型**：\n   - 减少过大的对象存储，避免存储大型的 Kubernetes 对象（如 Secrets 和 ConfigMaps）。\n   - 使用合适的键设计模式，避免过深的目录层级和无限循环。\n\n3. **客户端优化**：\n   - 对客户端请求应用缓存策略，减少对 etcd 的请求次数，例如使用 client-go 的透传缓存。\n   - 使用 gRPC 多路复用等技术减少客户端到 etcd 的网络延迟。\n\n4. **etcd 配置**：\n   - 调整 etcd 的配置参数以适应当前负载，例如 `proxy.gw.max-idle-duration` 和 `quota-backend-bytes` 等。\n   - 开启 etcd 的写入瓶颈跟踪（如 WAL 压缩配置）。\n\n5. **存储配置**：\n   - 使用 SSD 取代机械硬盘，因为 SSD 在写入和读取性能上都远胜于机械硬盘。\n   - 确保 etcd 的存储硬件性能满足要求，比如提高 IOPS（每秒输入/输出操作数）。\n\n6. **网络优化**：\n   - 尽量减少 etcd 节点之间的网络延迟和丢包，使用低延迟、高吞吐量的网络环境。\n\n7. **监控和日志**：\n   - 密切关注 etcd 的性能指标，诸如事务提交时间、磁盘空间使用率等。\n   - 记录和分析 etcd 的日志可以帮助您理解性能问题出现的原因。\n\n8. **定期维护和备份**：\n   - 维护 etcd 的数据目录，清理老旧的日志文件。\n   - 定期备份 etcd 数据，以防数据丢失或需要恢复。\n\n9. **故障恢复策略**：\n   - 制定有效的故障转移计划和数据恢复方法，以应对 etcd 集群节点故障。\n\n最后，值得注意的是，etcd 的性能优化是一个持续的过程，需要根据不同的负载情况和业务需求不断调整优化策略。上述建议是一些通用优化方向，实际应用中应结合 etcd 的监控数据及业务场景具体分析。",
+        "latencyMs": 12919,
+        "score": {
+          "total": 52,
+          "breakdown": {
+            "keywordScore": 50,
+            "keywordHits": [
+              "etcdHighCommitDurations",
+              "SSD",
+              "commit",
+              "延迟"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 13,
+            "lengthScore": 100,
+            "structureScore": 85
+          }
+        }
+      },
+      {
+        "questionId": "ah-04",
+        "dimension": "alert_handling",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "遇到 `KubePersistentVolumeFillingUp` 告警，可以通过以下几个步骤来处理，以确保 Kubernetes 集群的稳定性并防止数据丢失：\n\n1. **确认警报**: 确认是否确实有PersistentVolume即将用尽。\n\n2. **监控和诊断**:\n   - 使用 `kubectl describe pv <pv-name>` 查看PersistentVolume的详细信息。\n   - 使用监控工具，例如Prometheus，来确定资源使用情况并跟踪资源使用趋势。\n\n3. **清理不必要的数据**:\n   - 检查Pods和Containers是否存储了无用的临时文件或日志。清理这些文件可释放空间。\n   - 如果有备份策略，请确认已经进行了数据的备份，并从PersistentVolume中删除不需要的最新备份副本。\n\n4. **扩展存储**:\n   - 如果PersistentVolume是基于动态存储配置（Dynamic Provisioning）创建的，您可以尝试增加PVC（PersistentVolumeClaim）的请求大小以允许自动创建更大的PersistentVolume。\n   - 对于已经存在的静态PersistentVolume，您可能需要手动添加存储并扩展文件系统，或者重新调度Pod到具有更多空间的其他PersistentVolume上。\n\n5. **存储类和保留策略**:\n   - 如果您使用的是StorageClass，可以检查其配置是否包含了适当的保留策略（如Recyle、Delete、Retain规则）以确保低效使用。\n\n6. **调整应用配置**:\n   - 根据应用的实际存储需求调整PVC的大小，并优化应用的存储使用效率。\n\n7. **调整资源配额和限制**:\n   - 对于资源配额限制的情况，检查并调整Namespace的资源配额（Resource Quota），以避免应用过度消耗资源。\n\n8. **应用水平自动扩展**:\n   - 如果可能，开启应用的水平自动扩展（HPA），在PVC即将耗尽之前自动扩展Pod的水平。\n\n9. **考虑执行压力迁移**:\n   - 对于非关键的服务，可以考虑在其他集群上手动部署并重新路由流量，进而手动剔除即将无空间的PersistentVolume上的Pod。\n\n10. **全面审查和规划**:\n    - 评估应用程序的存储需求，进行长期的规划，包括容量规划和资源扩展周期。\n\n11. **与存储管理员或运维团队合作**:\n    - 需要时与存储管理员协作解决存储相关的硬件或配置问题。\n\n12. **紧急恢复计划**:\n    - 准备好紧急情况下的数据恢复计划，并手动介入以避免潜在的数据丢失或访问问题。\n\n务必在集群管理中进行持续的资源监控和优化，以减少这类警告的发生，保证Kubernetes集群的稳定性和可靠性。",
+        "latencyMs": 13178,
+        "score": {
+          "total": 43,
+          "breakdown": {
+            "keywordScore": 38,
+            "keywordHits": [
+              "PersistentVolume",
+              "FillingUp",
+              "PVC"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 0,
+            "lengthScore": 100,
+            "structureScore": 85
+          }
+        }
+      },
+      {
+        "questionId": "vu-01",
+        "dimension": "version_upgrade",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "在进行 Kubernetes 集群升级时，建议您遵循官方文档提供的指导，下面是一个大致的步骤和一些注意事项：\n\n### 升级步骤：\n\n#### 1. 检查升级兼容性\n确保当前运行的集群和即将升级到的版本都是兼容的。参考 Kubernetes 的[升级兼容性矩阵](https://kubernetes.io/zh/docs/setup/release/version-skew-policy/)。\n\n#### 2. 备份\n在升级之前，进行备份是非常重要的一步，对于 etcd 数据库和重要配置文件进行备份。\n\n#### 3. 升级 Master 节点\n升级 Master 节点通常需要更谨慎，因为 Master 节点提供了控制平面服务。检查 `kubeadm upgrade plan` 以确认可以升级到的版本，并使用以下命令进行升级：\n\n```shell\nkubeadm upgrade apply v1.31.0\n```\n\n#### 4. 升级节点 (kubelet 和 kube-proxy)\n对于每个工作节点，您可以使用以下命令更新 kubelet 和 kube-proxy：\n```shell\nkubeadm upgrade node image\nkubectl drain <node-name> --ignore-daemonsets\nkubectl uncordon <node-name>\n```\n\n#### 5. 升级所有节点的 kubectl 和 kubeadm 工具\n确保管理集群时使用的工具（kubectl）与您想要升级的 Kubernetes 版本兼容。\n\n### 注意事项：\n\n1. **版本跨步：** 不要跨步升级，例如，如果您在一个运行着 1.29 的集群上不能直接升级到 1.31。您需要先升级到 1.30，然后从 1.30 升级到 1.31。\n\n2. **适配应用：** 确保您部署的应用程序与新版本兼容。\n\n3. **前期测试：** 在生产环境之前，在测试环境中进行升级操作，并验证您的应用程序在新版本下的行为。\n\n4. **升级顺序：** 先升级 Master 节点，再升级工作节点，因为 Pod 调度会依赖 Master 节点上暂存的 etcd 数据库。\n\n5. **避免敏感时间升级：** 避免在业务高负载或更新迭代期间进行升级。\n\n6. **资源预留：** 在升级之前调整各个节点的资源配额，准备好服务因重启可能带来的短时压力。\n\n7. **监控：** 监控集群状态和日志，确保升级过程中没有异常。\n\n8. **文档参考：** 仔细阅读[官方升级文档](https://kubernetes.io/zh/docs/tasks/administer-cluster/kubeadm/kubeadm-upgrade/)，特定版本的升级可能需要特别注意的步骤和变更。\n\n由于 Kubernetes 版本频繁更新，以上步骤和注意事项可能随时会有所变化，始终以官方文档为准。",
+        "latencyMs": 10995,
+        "score": {
+          "total": 56,
+          "breakdown": {
+            "keywordScore": 38,
+            "keywordHits": [
+              "kubeadm upgrade",
+              "控制平面",
+              "kubelet"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 36,
+            "lengthScore": 100,
+            "structureScore": 100
+          }
+        }
+      },
+      {
+        "questionId": "vu-02",
+        "dimension": "version_upgrade",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "在 Kubernetes 升级时处理已废弃的 API 版本是一个重要的步骤，以确保系统升级不会影响现有的应用和服务。以下是一些基本步骤和建议：\n\n1. **回顾待废弃的API版本**：在升级 Kubernetes 之前的准备阶段，应该查阅 Kubernetes 的发布说明，查看有哪些 API 版本被废弃，并列出你当前正在使用的这些废弃 API。例如，如果你正在使用 `extensions/v1beta1` 版本，应该查看 Kubernetes 发布说明中关于废弃这个版本的内容。\n\n2. **更新使用的API对象**：将所有使用废弃API版本的配置更新为推荐的新版本。例如，即将废弃的 `extensions/v1beta1` 应当被替换为 `networking.k8s.io/v1`（针对网络策略），或 `apps/v1`（针对部署对象）。需要修改所有 Kubernetes 的配置文件（例如YAML文件），更新API的group和version字段。\n\n   例如，将以下使用废弃版本的IPBlock更新为新的版本：\n   ```yaml\n   apiVersion: extensions/v1beta1\n   kind: NetworkPolicy\n   spec:\n     podSelector:\n       matchLabels:\n         role: db\n   ```\n   更新为：\n   ```yaml\n   apiVersion: networking.k8s.io/v1\n   kind: NetworkPolicy\n   spec:\n     podSelector:\n       matchLabels:\n         role: db\n     ingress:\n     - from:\n       - podSelector:\n           matchLabels: {}\n   ```\n\n3. **验证新的配置文件**：在全面更新和升级 Kubernetes 集群之前，你应该在你的开发环境或者一个单独的测试集群中验证新的配置文件，确保它们可以正常工作且没有影响到现有的服务。\n\n4. **执行一次滚动升级**：在迁移到新版本的API后，执行一次滚动升级，一次升级一个节点。通常，Kubernetes 的控制平面支持向后兼容，你应该能够正常升级。\n\n5. **监控和验证迁移结果**：升级完成后，你应该密切监控集群的性能和日志，确认所有服务都在正常运行。验证是否任何使用老旧 API 的服务出现了问题。\n\n6. **清理废弃物资**：一旦确认服务在新API上稳定运行，可以考虑清理那些不再使用的废弃API相关的旧对象和配置。\n\n记住，完整的过程可能需要一定的测试和迭代，尤其是在复杂的生产环境中。在大部分情况下，操作前都应该有详细的计划和回退方案。",
+        "latencyMs": 11905,
+        "score": {
+          "total": 56,
+          "breakdown": {
+            "keywordScore": 63,
+            "keywordHits": [
+              "废弃",
+              "API",
+              "extensions/v1beta1",
+              "networking.k8s.io/v1",
+              "apiVersion"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 5,
+            "lengthScore": 100,
+            "structureScore": 100
+          }
+        }
+      },
+      {
+        "questionId": "vu-03",
+        "dimension": "version_upgrade",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "对于大规模Kubernetes集群（500+节点）的升级，最佳策略包括以下几个步骤，以确保系统稳定和平滑过渡：\n\n1. **筹备和规划**：\n   - 了解新版本的功能和变化。查阅Kubernetes的官方发布说明和迁移指南。\n   - 评估现有集群配置以检查任何潜在的不兼容问题。\n   - 制定详细的升级计划和回滚策略。\n   - 确保所有节点和Kubernetes组件都符合新版本的最低系统要求。\n\n2. **升级前的测试**：\n   - 在非生产环境复制集群环境进行升级测试。\n   - 使用升级工具（如`kops`, `Pulumi`等）做干跑测试（Dry run），模拟实际的升级过程。\n\n3. **分阶段升级**：\n   - 首先，小规模升级控制平面组件。这包括Kubernetes master节点和API服务器等。\n   - 然后，升级节点，这可以是分批进行的。例如，将节点分成几个组，一次只升级一个组。\n   - 对于每个节点组，先升级至目标版本的稳定版本，监控集群健康度和应用行为后，再继续下一批。\n\n4. **监控和验证**：\n   - 使用适当的监控工具（如Prometheus和Grafana）密切监控集群和应用程序的性能。\n   - 在每个升级阶段后运行集群健康检查（如`kubectl cluster-info dump`和`kubectl get nodes -o wide`）。\n\n5. **节点升级策略**：\n   - 根据实际情况选择适当的节点升级策略（如滚动升级或者批次停用）。可以考虑Node Drain策略来逐个排除节点进行升级。\n   - 持续监控节点资源使用情况，避免因为升级过程中的资源不足导致的服务不稳定。\n\n6. **回滚计划**：\n   - 确保你有现成的回滚计划，一旦升级过程中遇到不可接受的负面影响，能够快速恢复到之前的稳定状态。\n\n7. **培训和文档**：\n   - 更新团队的Kubernetes知识，确保他们了解新版本的运行和管理方式。\n   - 将升级过程中的发现、问题和解决方案记录成文档，以便未来的参考和改进。\n\n8. **文档和沟通**：\n   - 保持所有相关方（如运维团队，开发团队和管理人员）之间的沟通，并提供充分的升级状态更新。\n\n9. **服务恢复和优化**：\n   - 一旦升级完成，验证所有服务都恢复到正常运行。\n   - 评估资源调度的优化是否需要调整，并分析升级后的性能表现，以进行微调。\n\n10. **用户体验反馈**：\n    - 上线后收集用户和业务团队的反馈，并针对反馈作出相应的服务调整和优化。\n\n升级是一个持续的过程，并不仅仅是在一个时间点上的集合操作，应该是一个全面考虑和规划详尽的过程。必须确保这个过程是有序的，并且是以最小的影响来执行的。以上这些步骤应有助于制定一个具有可行性的最佳实践策略。",
+        "latencyMs": 13244,
+        "score": {
+          "total": 48,
+          "breakdown": {
+            "keywordScore": 50,
+            "keywordHits": [
+              "滚动升级",
+              "kOps",
+              "分批",
+              "回滚"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 0,
+            "lengthScore": 100,
+            "structureScore": 85
+          }
+        }
+      },
+      {
+        "questionId": "vu-04",
+        "dimension": "version_upgrade",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "Kubernetes版本升级后，验证集群功能正常是一个重要的步骤，以确保集群的稳定性和可用性。以下是一些常用的验证方法：\n\n1. **检查集群健康状态：**\n   使用 `kubectl get nodes` 查看所有节点的状态，确保它们处于Ready状态。\n   ```\n   kubectl get nodes\n   ```\n   \n2. **检查Pods状态：**\n   确定所有Pods都处于Running状态或正常模式。\n   ```\n   kubectl get pods --all-namespaces\n   ```\n\n3. **检查服务和负载均衡：**\n   通过 `kubectl get svc` 和 `kubectl get ingress` 来确认所有服务和Ingress资源是期望的状态。\n   ```\n   kubectl get svc\n   kubectl get ingress\n   ```\n\n4. **检查持久化存储：**\n   查看PersistentVolumes和PersistentVolumeClaims的状态，确保持久化存储正常工作。\n   ```\n   kubectl get pv\n   kubectl get pvc\n   ```\n\n5. **执行端到端测试：**\n   对于关键应用执行端到端测试，确认业务流程和依赖的服务都能正常运行。\n\n6. **监控和日志：**\n   - 检查集群监控工具如Prometheus的状态，确保监控数据正常收集。\n   - 查看集群的重要组件如kube-apiserver、etcd、kube-scheduler等的日志，没有异常错误。\n\n7. **检查控制平面组件：**\n   使用 `kubectl get componentstatuses` 来检查所有控制平面组件是否正常运行。\n   ```\n   kubectl get componentstatuses\n   ```\n\n8. **验证网络连通性：**\n   确保Pods之间以及Pods和外部服务的网络连通性没有受到影响。\n\n9. **资源配额和限制：**\n   确认基于角色的访问控制(Role-Based Access Control, RBAC)和资源配额(Resource Quotas)在升级后仍然有效。\n\n10. **特性验证：**\n    新的或者变更的Kubernetes特性需要进行特别的验证以确保按预期工作。\n\n11. **升级后清理：**\n    清理由于版本升级产生的临时文件和配置，确保系统的整洁性。\n\n12. **验证Rollout更新：**\n    如果使用了Deployment，可以执行滚动更新，并查看是否成功。\n\n13. **检查集群事件（Events）：**\n    检查集群相关的事件，看看是否有未解决的问题。\n    ```\n    kubectl get events --sort-by='.metadata.creationTimestamp'\n    ```\n\n通过以上步骤的检查和验证，可以较全面地确认Kubernetes集群在版本升级后的功能正常性。如果发现问题，应该及时解决，以确保集群的高可用性。",
+        "latencyMs": 14570,
+        "score": {
+          "total": 51,
+          "breakdown": {
+            "keywordScore": 38,
+            "keywordHits": [
+              "验证",
+              "get nodes",
+              "监控"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 21,
+            "lengthScore": 100,
+            "structureScore": 100
+          }
+        }
+      },
+      {
+        "questionId": "bp-01",
+        "dimension": "best_practices",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "在 Kubernetes 生产环境中，对于 Pod 的资源配置的最佳实践一般包括以下几个方面：\n\n1. **资源请求与限制**：\n   - 为每个 Pod 设置资源请求（`requests`）和限制（`limits`），这有助于 Kubernetes 调度器更好地做出决策，并可以防止 Pod 争夺资源而影响其他 Pod。\n   - 设置合适的 CPU 和内存请求值，使之等于或略高于 Pod 正常工作所需的最小资源量。\n   - 设置合理的 CPU 和内存限制，以避免单个 Pod 使用过多资源导致其他 Pod 或节点服务受影响。\n\n   示例配置：\n   ```yaml\n   apiVersion: v1\n   kind: Pod\n   metadata:\n     name: my-pod\n   spec:\n     containers:\n     - name: my-container\n       image: my-image\n       resources:\n         requests:\n           cpu: \"100m\"\n           memory: \"200Mi\"\n         limits:\n           cpu: \"500m\"\n           memory: \"500Mi\"\n   ```\n\n2. **选择合适的存储**：\n   - 根据业务需求选择合适的存储类型，比如 `PersistentVolume` 应选用适合的访问模式（如 ReadWriteOnce, ReadOnlyMany 或 ReadWriteMany）。\n   - 针对状态性应用，确保使用持久化存储且备份策略符合业务要求。\n\n3. **环境与配置管理**：\n   - 使用 ConfigMap 和 Secret 管理配置和敏感信息，不要将这些信息直接硬编码在 Pod 的配置文件中。\n\n4. **健康检查**：\n   - 为 Pod 中的容器配置 Liveness 和 Readiness 探针，确保只有健康状态的 Pod 对外提供服务。\n\n   示例配置：\n   ```yaml\n   spec:\n     containers:\n     - name: my-container\n       image: my-image\n       readinessProbe:\n         httpGet:\n           path: /ready\n           port: 8080\n         initialDelaySeconds: 5\n         periodSeconds: 10\n       livenessProbe:\n         httpGet:\n           path: /health\n           port: 8080\n         initialDelaySeconds: 15\n         periodSeconds: 20\n   ```\n\n5. **日志与监控**：\n   - 配置日志收集和监控方案，以便及时发现问题并做出相应调整。\n\n6. **更新与回滚**：\n   - 使用部署（Deployment）和状态更新策略（如 RollingUpdate），以便于进行平滑更新和问题发生时快速回滚。\n\n7. **网络策略与安全**：\n   - 合理配置网络策略，限制不必要的网络通信，增强安全性。\n   - 使用基于角色的访问控制（RBAC）限制资源访问权限。\n\n8. **标量和亲和性/反亲和性设置**：\n   - 根据应用需求使用亲和性和反亲和性规则，以便在不同的 Pod 分组中实现有效的负载分布。\n\n实践设置资源请求和限制时需要结合具体应用的性能特点，所以在设置之前，可以进行负载测试以获得正确的参考值。以上实践可以根据不同的应用场景进行调整和优化。",
+        "latencyMs": 15885,
+        "score": {
+          "total": 47,
+          "breakdown": {
+            "keywordScore": 38,
+            "keywordHits": [
+              "requests",
+              "limits",
+              "监控"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 5,
+            "lengthScore": 100,
+            "structureScore": 100
+          }
+        }
+      },
+      {
+        "questionId": "bp-02",
+        "dimension": "best_practices",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "在 Kubernetes 中设计多租户隔离架构通常涉及到资源隔离、标识和策略应用等方面。以下是构建多租户环境的一些关键步骤和策略：\n\n### 1. **租户识别和认证**\n\n- **多租户认证：** 可以使用 KIAM、kube-_oidc-proxy、Dex 等工具为 Kubernetes 提供多租户认证。\n- **租户一级名称空间：** 每个租户可分配不同的名称空间（Namespace）以实现逻辑隔离。\n\n### 2. **资源隔离**\n\n- **名称空间隔离：** 通过名称空间来隔离不同租户的资源。\n- **资源配额与限制：** 为不同名称空间设置资源配额（Resource Quotas）和限制范围（Limit Ranges）来控制资源使用。\n- **网络隔离：** 使用网络策略（Network Policies）隔离不同租户的 Pod 网络流量。\n\n### 3. **权限控制**\n\n- **基于角色的访问控制（RBAC）：** 使用 Kubernetes 原生的 RBAC 系统对不同租户进行权限控制。\n- **多租户 RBAC 插件：** 如 OPA-Gatekeeper、Kyverno 等，可以更精细地管理策略。\n\n### 4. **租户策略管理**\n\n- **Policy as Code：** 通过将策略编排为代码的方式，可以手动或自动管理不同租户的策略。\n- **自服务门户：** 为不同租户提供自服务门户进行资源申请和管理。\n\n### 5. **基础架构逻辑隔离**\n\n- **多重集群：** 为不同租户分配不同的 Kubernetes 集群。\n- **预配节点池：** 通过节点选择器（Node Selectors）或污点（Taints 和 Toleration）来控制 Pod 调度。\n\n### 6. **加密和日志审计**\n\n- **数据加密：** 在存储和传输中使用加密来保护数据安全。\n- **日志和度量监控：** 使用工具如 Fluentd、Elasticsearch、Kibana（EFK）堆栈对日志进行收集和分析。\n\n### 7. **编排和管理工具集**\n\n- **服务网格：** 采用 Istio、Linkerd 等服务网格解决方案来管理服务间的通信，增加安全性。\n- **多集群管理：** 使用多集群管理工具如 Rancher、Kops 来管理多个 Kubernetes 集群。\n\n### 举例 YAML 配置\n\n下面是创建名称空间和定义 RABC 的简单示例：\n\n**创建名称空间**\n\n```yaml\napiVersion: v1\nkind: Namespace\nmetadata:\n  name: tenant-namespace\n```\n\n**名称空间级别的RBAC配置**\n\n```yaml\napiVersion: rbac.authorization.k8s.io/v1\nkind: Role\nmetadata:\n  namespace: tenant-namespace\n  name: tenant-editor-role\nrules:\n- apiGroups: [\"\"]\n  resources: [\"pods\", \"services\", \"deployments\"]\n  verbs: [\"get\", \"watch\", \"list\", \"create\", \"update\", \"patch\", \"delete\"]\n\n# RoleBinding\napiVersion: rbac.authorization.k8s.io/v1\nkind: RoleBinding\nmetadata:\n  name: tenant-editor\n  namespace: tenant-namespace\nsubjects:\n- kind: User\n  name: tenant-editor@example.com\n  apiGroup: rbac.authorization.k8s.io\nroleRef:\n  kind: Role\n  name: tenant-editor-role\n  apiGroup: rbac.authorization.k8s.io\n```\n\n通过以上策略和配置，可以构建出一个基本的多租户隔离架构。请注意，每个租户和用例可能会有所不同，可能需要更具体的策略和服务进行适配。",
+        "latencyMs": 21239,
+        "score": {
+          "total": 50,
+          "breakdown": {
+            "keywordScore": 38,
+            "keywordHits": [
+              "多租户",
+              "Namespace",
+              "RBAC"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 15,
+            "lengthScore": 100,
+            "structureScore": 100
+          }
+        }
+      },
+      {
+        "questionId": "bp-03",
+        "dimension": "best_practices",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "Kubernetes健康检查（Liveness Probe 和 Readiness Probe）是确保Pods稳定性和正确性的关键机制，以下是一些最佳实践：\n\n1. **实现适当的健康检查逻辑**：\n   - Liveness Probe：检查容器内运行的服务是否还“活着”，如果返回失败，则Kubernetes会重启该容器。\n   - Readiness Probe：检查容器是否已经准备好处理流量，如果返回失败，流量就不会发送给该容器。\n\n2. **使用合适的探针类型**：\n   - 支持的探针类型包括`HTTPGet`、`TCPSocket`、`Exec`和`GRPC`。\n   - 根据应用配置使用合适的类型。例如，如果容器暴露HTTP服务，则可以使用`HTTPGet`探针。\n\n3. **合理配置超时和间隔**：\n   - `initialDelaySeconds`：容器启动后等待一定时间再开始探测。\n   - `periodSeconds`：连续探测之间的间隔时间。\n   - `timeoutSeconds`：每次探测的超时时间。\n   - 根据应用启动和响应时间合理配置这些参数，避免频繁的重启或错误的流量路由。\n\n4. **管理失败的探测**：\n   - `failureThreshold`：探测失败多少次认为容器不健康。\n   - `successThreshold`：探测成功多少次认为容器恢复健康。\n\n5. **避免自引用健康检查的无限循环**：\n   - 探针不要调用容器内部逻辑触发重新启动，这可能导致无限循环。\n\n6. **减少潜在的性能影响**：\n   - 尽量减少探测操作对业务逻辑的影响，特别是在高负载情况下。\n\n7. **结合业务逻辑定制化健康检查**：\n   - 根据应用的具体逻辑自定义健康检查，比如检查数据库连接、检查特定API响应等。\n\n8. **监控和日志**：\n   - 监控探针状态和Pods健康状况，记录相关的日志信息，以便分析和排查问题。\n\n9. **测试**：\n   - 在容器部署前在开发和测试环境中充分测试健康检查配置，确保它们按预期工作。\n\n下面是一个包含Liveness Probe和Readiness Probe的Kubernetes Pod配置的示例：\n\n```yaml\napiVersion: v1\nkind: Pod\nmetadata:\n  name: health-check-example\nspec:\n  containers:\n  - name: myapp\n    image: myapp:latest\n    livenessProbe:\n      httpGet:\n        path: /healthz\n        port: 8080\n      initialDelaySeconds: 3\n      periodSeconds: 3\n      successThreshold: 1\n      timeoutSeconds: 1\n      failureThreshold: 3\n    readinessProbe:\n      httpGet:\n        path: /ready\n        port: 8080\n      initialDelaySeconds: 5\n      periodSeconds: 10\n      successThreshold: 1\n      timeoutSeconds: 5\n      failureThreshold: 3\n```\n\n上述配置定义了一个简单的HTTP GET类型探针，用于检测应用程序的健康状态，并设置了适当的延迟和间隔参数。",
+        "latencyMs": 13714,
+        "score": {
+          "total": 59,
+          "breakdown": {
+            "keywordScore": 63,
+            "keywordHits": [
+              "livenessProbe",
+              "readinessProbe",
+              "initialDelaySeconds",
+              "failureThreshold",
+              "httpGet"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 13,
+            "lengthScore": 100,
+            "structureScore": 100
+          }
+        }
+      },
+      {
+        "questionId": "bp-04",
+        "dimension": "best_practices",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "实现Kubernetes的零停机部署（Zero-downtime Deployment）通常需要使用蓝绿部署（Blue-Green Deployment）或滚动更新（Rolling Update）的策略。以下是一些步骤和技术，可以帮助您实现这一目标：\n\n1. **使用Deployment资源**：在Kubernetes中，Deployment是一个声明式的管理Pod副本的方式，它提供了自动更新的功能，非常适合实现零停机部署。\n\n2. **蓝绿部署**：\n   - 在Kubernetes中，创建两个环境：蓝环境（当前的生产环境）和绿环境（新版本待上线的环境）。\n   - 将流量从蓝环境切换到绿环境之前，先在绿环境中部署并测试新版本应用。如果测试通过，则将流量从蓝环境切到绿环境，否则回退到蓝环境。\n   - 示例，使用Kubernetes Service和Ingress来管理流量切换。\n   \n   ```yaml\n   apiVersion: v1\n   kind: Service\n   metadata:\n     name: blue-service\n   spec:\n     selector:\n       app: blue-app\n     ports:\n       - protocol: TCP\n         port: 80\n         targetPort: 80\n   \n   # 创建绿服务\n   apiVersion: v1\n   kind: Service\n   metadata:\n     name: green-service\n   spec:\n     selector:\n       app: green-app\n     ports:\n       - protocol: TCP\n         port: 80\n         targetPort: 80\n   \n   # 创建Ingress规则来实现流量切换\n   apiVersion: extensions/v1beta1\n   kind: Ingress\n   metadata:\n     name: my-ingress\n   spec:\n     rules:\n     - host: myapp.com\n       http:\n         paths:\n         - path: /\n           backend:\n             serviceName: blue-service\n             servicePort: 80\n   ```\n\n3. **滚动更新**（Recommended）：\n   - 使用`kubectl set image`命令更新Deployment的镜像，它会触发配置文件中的镜像更新。\n   - 您可以通过设置`maxSurge`和`maxUnavailable`比例来精细控制滚动更新过程。\n   - 例如，在`maxSurge`和`maxUnavailable`都设置为0的情况下，Kubernetes将确保更新过程中至少有一个应用副本保持在线，从而实现零停机。\n\n   ```yaml\n   apiVersion: apps/v1\n   kind: Deployment\n   metadata:\n     name: my-deployment\n   spec:\n     replicas: 3\n     strategy:\n       type: RollingUpdate\n       rollingUpdate:\n         maxSurge: 0\n         maxUnavailable: 1\n     selector:\n       matchLabels:\n         app: my-app\n     template:\n       metadata:\n         labels:\n           app: my-app\n       spec:\n         containers:\n         - name: my-container\n           image: my-image:v1\n           ports:\n           - containerPort: 80\n   ```\n\n   使用以下命令触发更新：\n   ```sh\n   kubectl set image deployment/my-deployment my-container=new-image:v2\n   ```\n\n以上两种策略中，滚动更新通常更简单，所需资源更少，也是最常用的方法。然而，根据应用的实际情况和可靠性需求，选择合适的策略至关重要。",
+        "latencyMs": 14176,
+        "score": {
+          "total": 47,
+          "breakdown": {
+            "keywordScore": 38,
+            "keywordHits": [
+              "零停机",
+              "RollingUpdate",
+              "maxUnavailable"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 7,
+            "lengthScore": 100,
+            "structureScore": 100
+          }
+        }
+      },
+      {
+        "questionId": "tm-01",
+        "dimension": "terminology",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "Kubernetes 中的“Reconciliation Loop”（调和循环）是Kubernetes架构的核心机制之一，它是一种连续运行的控制回路，用于维护期望的系统状态。调和循环通过不断地监控系统的实际状态，并将其与期望状态进行比较，然后对发现的任何差异进行调整，以确保系统的实际运行状态与用户期望的状态一致。\n\n调和循环的主要步骤包括：\n\n1. **监听事件（Event Listening）**：Kubernetes的各个控制器会监听Cluster内资源状态的变化事件。\n\n2. **期望状态（Desired State）**：用户通过API服务器定义资源的期望状态。这个期望状态被存放在etcd数据库中。\n\n3. **实际状态（Actual State）**：控制器通过查询API服务器来获取Cluster内各个资源的当前实际状态。\n\n4. **比较状态（State Comparison）**：控制器将资源的期望状态与实际状态进行比较。\n\n5. **执行操作（Action Execution）**：如果控制器发现实际状态与期望状态不一致，它会计算出需要执行哪些操作来使实际状态与期望状态相匹配，并执行这些操作。\n\n6. **状态更新（State Update）**：一旦执行了上述操作，系统的新状态会被写回到API服务器，然后这个过程会重复。\n\nKubernetes中的“Reconciliation Loop”不断运行，以响应系统内部和外部变化，如节点故障、Pod调度、服务更新等。它使得Kubernetes能够自动恢复和自愈，保证系统的高可用性和容错性。\n\n简而言之，“Reconciliation Loop”是Kubernetes动态维持系统期望状态的机制，它是实现Kubernetes声明式配置和自动化操作的基础。",
+        "latencyMs": 7658,
+        "score": {
+          "total": 65,
+          "breakdown": {
+            "keywordScore": 88,
+            "keywordHits": [
+              "调和",
+              "Reconciliation",
+              "期望状态",
+              "实际状态",
+              "控制器",
+              "自愈",
+              "声明式"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 7,
+            "lengthScore": 100,
+            "structureScore": 85
+          }
+        }
+      },
+      {
+        "questionId": "tm-02",
+        "dimension": "terminology",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "## 'Taint' 和 'Toleration' 的含义\n\n在 Kubernetes 中：\n- **Taint** 是对节点的一个属性，它用来标识节点不适用于某些Pod，除非这些Pod明确地容忍（tolerate）这些Taint。\n- **Toleration** 是Pod的一个属性，它使得Pod能够被调度到带有指定Taint的节点。\n\n## 用途\n\n### **角色与隔离**\n\n1. **污点(Taint)**: \n   - 强制实现节点级别的控制，决定哪些Pod可以被调度到特定的节点上。\n   - 防止某些类别的Pod运行在不适合它们的节点上。\n   - 帮助实现节点级别的资源隔离和安全管控。\n\n2. **容忍(Toleration)**:\n   - 允许特定的Pod被调度到带有特定Taint的节点上。\n   - 为需要运行在特定节点的Pod提供机制，使其能够合法地在有Taint的节点上启动。\n   \n### **场景**\n\n1. **预防资源冲突**：\n   - 通过在节点上设置Taint（如`key=value:NoSchedule`），可以阻止不想隔离的Pod调度到这些节点，防止资源冲突。\n\n2. **Pod优先调度**：\n   - 结合`Toleration`和`Taint`，可以在多租户环境中将关键任务或核心服务的pod绑定到特定的节点上，以确保它们优先分配资源。\n\n3. **资源分配**：\n   - 您可以在节点上设置Taints以断开某些应用程序的连接，然后对需要的Pod添加Tolerations，这样只有这些Pod可以分配到底这些被tainted的节点上。 \n\n## 例子\n以下是为节点添加污点和为Pod添加容忍的例子（YAML）：\n\n**添加Taint到节点**\n```yaml\napiVersion: v1\nkind: Node\nmetadata:\n  name: example-node\nspec:\n  taints:\n  - key: \"node-type\"\n    value: \"prod\"\n    effect: \"NoSchedule\"\n```\n\n**为Pod添加Toleration使其能够容忍节点Taint**\n```yaml\napiVersion: v1\nkind: Pod\nmetadata:\n  name: mypod\nspec:\n  containers:\n  - name: mypod\n    image: myimage\n  tolerations:\n  - key: \"node-type\"\n    operator: \"Equal\"\n    value: \"prod\"\n    effect: \"NoSchedule\"\n```\n\n这个示例中，Pod mypod设置了对taint的特性记录容忍（operator:Equal），因此它只会被安排到具有匹配taint的节点上。",
+        "latencyMs": 12210,
+        "score": {
+          "total": 62,
+          "breakdown": {
+            "keywordScore": 75,
+            "keywordHits": [
+              "Taint",
+              "Toleration",
+              "NoSchedule",
+              "污点",
+              "容忍",
+              "调度"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 8,
+            "lengthScore": 100,
+            "structureScore": 100
+          }
+        }
+      },
+      {
+        "questionId": "tm-03",
+        "dimension": "terminology",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "在 Kubernetes 中，\"Finalizer\" 是一个用于对象垃圾回收附加逻辑的机制，允许某些控制器或者开发者拦截资源的删除操作，在资源被删除前执行自定义的清理或者释放资源等操作。\n\n**作用：**\n1. **防止潜在的数据丢失或资源共享问题：** 当资源被删除时，可能有外部依赖这项资源。Finalizer 确保在资源被完全删除之前，所有依赖资源被妥善处理。\n\n2. **协调删除操作：** Finalizer 允许自定义复杂的删除过程，例如更新数据库记录、清理外部存储资源等。\n\n3. **提供扩展性和灵活性：** 允许开发者定制特定的删除逻辑，提升系统的应对能力。\n\n**工作机制：**\n- **标记 Finalizer：** 要使用 Finalizer，你需要在资源对象的 metadata 字段中添加一个 Finalizers 列表，其中包含了标识符字符串。\n\n- **拦截删除操作：** 当设置了 Finalizer 的资源被提交删除操作时，Kubernetes 的垃圾收集器不会立即删除资源，而是将资源的 deletionTimestamp 设置为当前时间戳。\n\n- **监控删除状态：** 控制器需要周期性地检查带有 Finalizer 的资源并将它们列入工作队列。\n\n- **执行清理操作：** 控制器执行 Finalizer 中定义的逻辑，比如清理资源占用或者更新状态。\n\n- **移除 Finalizer：** 一旦清理逻辑执行完毕，控制器需要从资源的 Finalizers 列表中移除对应的 Finalizer 标识符。\n\n- **完成删除：** 当所有 Finalizer 都被移除后，Kubernetes 会标记资源为“已终止”状态，并在不久后将资源从 etcd 中彻底删除。\n\n```yaml\napiVersion: v1\nkind: Pod\nmetadata:\n  name: my-pod\n  finalizers:\n  - external finalizer # 假定的 finalizer 名称\nspec:\n  # Pod 规格说明\n```\n\n上述示例中，在 Pod 的 metadata 字段下添加了 `finalizers` 列表，其中包含了一个 `external finalizer` 的名称，这个名称将被处理删除该 Pod 的控制器识别并执行相应的操作。\n\n总的来说，Finalizer 在 Kubernetes 中提供了一种机制，使得开发者能够定制他们的资源在被删除时的行为，这对于实现资源的优雅关闭和清理非常关键。",
+        "latencyMs": 10987,
+        "score": {
+          "total": 58,
+          "breakdown": {
+            "keywordScore": 57,
+            "keywordHits": [
+              "Finalizer",
+              "deletionTimestamp",
+              "清理",
+              "控制器"
+            ],
+            "keywordTotal": 7,
+            "referenceScore": 17,
+            "lengthScore": 100,
+            "structureScore": 100
+          }
+        }
+      },
+      {
+        "questionId": "tm-04",
+        "dimension": "terminology",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "'Service Mesh' 在 Kubernetes 中指的是一个基础设施层，其负责处理服务之间的通信、管理服务之间的流量、增强服务之间的安全性以及提供可观察性。\n\n含义：\n1. **微服务架构中的服务通信**：Service Mesh 允许在 Kubernetes 中部署的容器化微服务之间进行独立于应用的通信处理。\n2. **智能路由**：Service Mesh 可以提供复杂的服务发现、负载均衡和故障恢复。\n3. **安全性和信任**：它通过服务间的身份验证和授权提升系统的安全性。\n4. **可观察性**：Service Mesh 提供了更详细的监控和日志记录功能，从而增加对服务行为的洞察。\n\n作用：\n1. **流量管理**：服务网格可以控制微服务之间的流量，包括流量的路由、重试、超时和断路器。\n2. **服务发现和负载均衡**：Service Mesh 提供动态服务发现机制和负载均衡，从而帮助管理服务间的连接。\n3. **服务间通信的加密**：通过加密服务间的通信，提升数据传输的安全性。\n4. **故障注入和熔断**：通过故障注入来测试系统的鲁棒性，并通过熔断机制保护系统不受级联故障的影响。\n5. **策略实施**：Service Mesh 允许实施微服务间的访问控制策略。\n6. **可观察性增强**：提供详细的监控、日志和跟踪信息，帮助开发者和运维人员理解服务间的互动。\n\n目前，Istio、Linkerd 和 Consul Connect 等都是流行的 Service Mesh 实现。Service Mesh 让开发者可以专注于业务逻辑的实现，而无需深入到复杂的服务间通信和管理逻辑中。",
+        "latencyMs": 8192,
+        "score": {
+          "total": 51,
+          "breakdown": {
+            "keywordScore": 50,
+            "keywordHits": [
+              "Service Mesh",
+              "服务网格",
+              "Istio",
+              "熔断"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 9,
+            "lengthScore": 100,
+            "structureScore": 85
+          }
+        }
+      },
+      {
+        "questionId": "cp-01",
+        "dimension": "command_parsing",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "该命令是使用 `kubectl` 工具查询 Kubernetes 集群中的信息，它的含义可以分为几个部分：\n\n1. `kubectl get pods`: 这个指令用于获取集群中的 Pod（容器组）信息。\n\n2. `-o jsonpath=\"{.items[*].metadata.name}\"`: 这个选项指定了输出格式。`-o` 用于指定输出选项，`jsonpth` 是一种模板语言，用于从 JSON 结构化文档中提取特定信息。在这个例子中，`{.items[*].metadata.name}` 是一个 JSONPath 表达式，它告诉 `kubectl` 只输出找到的 Pod 的名字列表。\n\n3. `-l app=nginx`: 这是一个标签选择器。`-l` 选项用于根据标签过滤结果。在这个例子中，它筛选出标签中 `app` 为 `nginx` 的 Pod。\n\n4. `--field-selector status.phase=Running`: 这是一个字段选择器。它用于选择状态字段 `status.phase` 等于 `Running` 的 Pod，也就是说，这个选项会过滤出正在运行中的 Pod。\n\n综合这些部分，这个命令的含义是：查询 Kubernetes 集群中所有标签为 `app: nginx` 且处于 `Running` 状态的 Pod，并输出它们的名称。",
+        "latencyMs": 6292,
+        "score": {
+          "total": 72,
+          "breakdown": {
+            "keywordScore": 100,
+            "keywordHits": [
+              "jsonpath",
+              "items",
+              "metadata.name",
+              "-l",
+              "标签选择器",
+              "field-selector",
+              "Running",
+              "筛选"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 19,
+            "lengthScore": 100,
+            "structureScore": 75
+          }
+        }
+      },
+      {
+        "questionId": "cp-02",
+        "dimension": "command_parsing",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "这个 `kubectl` 命令的作用是更新名为 `nginx` 的 Deployment 资源，为其模板（template）的 metadata 添加一个 annotation，其名称为 `kubectl.kubernetes.io/restartedAt`，值设置为当前日期时间的字符串。具体解释如下：\n\n1. **命令名称**：`kubectl patch` - 这个 kubectl 命令用于对 Kubernetes 资源进行部分更新。\n\n2. **资源类型和名称**：`deployment nginx` - 指定了操作的目标资源是一个名为 `nginx` 的 Deployment 资源。\n\n3. **Patch 策略**（`-p`）：\n    - `\"{...}\"` - 这是 JSON 格式的 patch 数据。\n    - `spec.template` - 通过 `spec.template` 指定需要更新的是 Deployment 的 Pod 模板部分。\n    - `metadata.annotations` - 在 Pod 模板的 metadata 下，更新 `annotations` 字段。\n    - `kubectl.kubernetes.io/restartedAt` - 这里添加一个名为 `kubectl.kubernetes.io/restartedAt` 的 annotation。\n    - `\"$(date)\"` - 使用 `date` 命令得到当前的日期和时间，并将其作为 annotation 的值。\n\n**总结**：这条命令让 `nginx` Deployment 的 Pod 模板中的 metadata 的 annotations 字段新增一个 `kubectl.kubernetes.io/restartedAt`，这个 annotation 的值是执行命令时的时间，通常用于标记 Pod 被重启的时间。\n\n**注意**：这个命令有个小错误，在 JSON 的双引号中包含了双引号，导致 JSON 格式不正确。实际上 `$(date)` 也会导致命令提前替换。正确的格式应该是使用单引号并且稍作调整，例如：\n```shell\nkubectl patch deployment nginx -p '{\"spec\":{\"template\":{\"metadata\":{\"annotations\":{\"kubectl.kubernetes.io/restartedAt\":\"'$(date)'}}}}}'\n```\n或者使用 `--type='merge'` 和正确的 JSON 序列化形式：\n```shell\nkubectl patch deployment nginx --type='merge' -p '{\"spec\":{\"template\":{\"metadata\":{\"annotations\":{\"kubectl.kubernetes.io/restartedAt\":\"'$(date)'\"}}}}}'\n```",
+        "latencyMs": 11167,
+        "score": {
+          "total": 70,
+          "breakdown": {
+            "keywordScore": 75,
+            "keywordHits": [
+              "patch",
+              "deployment",
+              "annotations",
+              "restartedAt",
+              "重启",
+              "Pod 模板"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 33,
+            "lengthScore": 100,
+            "structureScore": 100
+          }
+        }
+      },
+      {
+        "questionId": "cp-03",
+        "dimension": "command_parsing",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "`kubectl rollout undo deployment/nginx --to-revision=3` 是一个用于撤销对Kubernetes Deployment资源所做的更改的命令。该命令的含义和使用场景如下：\n\n含义：\n- `kubectl`：Kubernetes的命令行工具，用于控制Kubernetes集群。\n- `rollout undo`：撤销Deployment资源的rollout操作。Rollout是Kubernetes用于描述部署更新标签或Deployment改变的过程。\n- `deployment/nginx`：指定的Deployment资源的对象名，在这个例子中是名为`nginx`的Deployment。\n- `--to-revision=3`：撤销到指定的版本编号`3`。在Kubernetes中，每次更新Deployment都会产生一个新的Revision，这个参数可以指定一个具体的Revision，让Deployment回到那个特定的版本。\n\n使用场景：\n1. **回滚更新**：当新的Deployment更新导致了不稳定或造成服务中断时，可以使用`kubectl rollout undo`命令指定一个稳定的Revision，将Deployment回滚到该版本。\n2. **部署撤销**：如果在更新流程中出现错误或需要撤销某些更改，可以使用该命令回到一个可靠的旧版本。\n3. **测试部署**：在开发和测试环境中，可能会需要回退到某个特定的Revision以便进行测试或分析问题。\n\n命令执行后，Kubernetes将会更加接近 Revision 3 的版本执行回滚操作，使得部署环境恢复到这个Revision的状态。在实际操作过程中，这种回滚操作非常关键，可以快速恢复服务的稳定性和避免不必要的服务中断。",
+        "latencyMs": 6732,
+        "score": {
+          "total": 63,
+          "breakdown": {
+            "keywordScore": 75,
+            "keywordHits": [
+              "rollout",
+              "undo",
+              "revision",
+              "回滚",
+              "版本",
+              "Deployment"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 19,
+            "lengthScore": 100,
+            "structureScore": 85
+          }
+        }
+      },
+      {
+        "questionId": "cp-04",
+        "dimension": "command_parsing",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "`kubectl auth can-i create deployments --as=system:serviceaccount:dev:deployer -n production` 是一个 Kubernetes 命令，用于测试用户或服务账户在特定命名空间中对特定资源的操作权限。下面是命令参数的详细解释：\n\n- `kubectl auth can-i`: 这是 `kubectl` 的一部分，用于检查操作权限。\n- `create`: 这是要检查的操作类型。在这个例子里，检查的是创建（create）操作。\n- `deployments`: 指定了要检查的对象类型。这里指代的是 Kubernetes 中的部署（Deployments）资源。\n- `--as`: 用来指定请求创建的上下文的用户名。在这个例子中，它用来模拟一个特定的服务账户。\n- `system:serviceaccount:dev:deployer`: 这是一个 Kubernetes 服务账户的完整名称。包括三个部分：`system`（系统），`dev`（命名空间），`deployer`（服务账户名称）。\n- `-n production`: 指定了要检查权限的命名空间。在这个例子中，命令检查的是在 `production` 命名空间中的权限。\n\n综上所述，`kubectl auth can-i create deployments --as=system:serviceaccount:dev:deployer -n production` 的含义是：以 `system:serviceaccount:dev:deployer` 这一服务账户的身份去检查是否可以在 `production` 命名空间中创建部署。这个命令会输出当前上下文绑定的用户或服务账户是否具备这个权限。",
+        "latencyMs": 7778,
+        "score": {
+          "total": 60,
+          "breakdown": {
+            "keywordScore": 63,
+            "keywordHits": [
+              "auth can-i",
+              "ServiceAccount",
+              "--as",
+              "模拟",
+              "deployer"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 29,
+            "lengthScore": 100,
+            "structureScore": 75
+          }
+        }
+      },
+      {
+        "questionId": "la-01",
+        "dimension": "log_analysis",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "Kubelet 日志中出现 'failed to \"StartContainer\" for \"app\"' 和 'ErrImagePull' 表明容器启动失败，具体原因可能是无法拉取指定的镜像。以下是可能导致这种情况的一些原因及各自的解决方案：\n\n1. **镜像名称错误**：\n   - 原因：在 Kubernetes 部署配置（Pod 配置）中指定的镜像名称可能有误。\n   - 解决方法：检查 Pod 配置中镜像名称是否正确，确保它与镜像仓库中的名称完全匹配。\n\n2. **私有镜像仓库的认证问题**：\n   - 原因：如果使用的是私有镜像仓库，并且没有正确的认证信息，那么 kubelet 无法拉取镜像。\n   - 解决方法：确保已经为 kubelet 提供正确的认证信息。这可能需要设置 Kubernetes 的 secrets 并正确配置 Pod 以使用这些 secrets。\n\n3. **镜像仓库访问问题**：\n   - 原因：网络问题可能导致无法从镜像仓库拉取镜像。\n   - 解决方法：检查网络连接，确保节点可以访问到镜像仓库。如果需要的话，设置正确的网络策略或代理。\n\n4. **镜像不存在**：\n   - 原因：指定的镜像不存在于镜像仓库中。\n   - 解决方法：确认镜像是否已经推送到镜像仓库，并确认镜像标签是否正确。\n\n5. **镜像仓库服务问题**：\n   - 原因：镜像仓库服务可能暂时不可用。\n   - 解决方法：检查镜像仓库服务状态，联系管理员或监控告警查看是否存在已知的服务问题。\n\n6. **安全策略限制**：\n   - 原因：安全策略可能限制了 kubelet 访问某些镜像。\n   - 解决方法：检查和调整安全策略或网络安全组（NSG）规则。\n\n7. **Kubernetes 组件配置错误**：\n   - 原因：可能是 Kubernetes 集群配置中的问题，比如 kubelet 配置错误。\n   - 解决方法：检查 kubelet 的配置文件和相关 Kubernetes 组件的配置。\n\n8. **镜像大小超出资源限制**：\n   - 原因：如果镜像大小超出了 pod 可以消耗的磁盘空间，可能会导致拉取失败。\n   - 解决方法：优化镜像大小，或者增加节点的磁盘资源配额。\n\n请注意，要解决这个问题，你需要有权限查看和编辑 Kubernetes 集群的配置，并且有一定的网络和认证设置知识。在解决此问题时，通常需要查看更多的日志细节来确定具体的问题所在，从而应用相应的解决方案。",
+        "latencyMs": 14063,
+        "score": {
+          "total": 38,
+          "breakdown": {
+            "keywordScore": 25,
+            "keywordHits": [
+              "StartContainer",
+              "ErrImagePull"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 0,
+            "lengthScore": 100,
+            "structureScore": 85
+          }
+        }
+      },
+      {
+        "questionId": "la-02",
+        "dimension": "log_analysis",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "`kube-apiserver` 日志中出现大量 `'etcd: too many open files'` 是一个典型的问题，它表示kube-apiserver在与etcd通信时开放了太多的文件句柄，这可能是因为底层文件描述符限制。在Linux系统中，每个进程都有打开文件句柄（file descriptors）的数量限制，如果达到这个限制，就无法再打开新的文件描述符，进而导致错误。\n\n### 分析步骤\n\n1. **检查当前文件描述符限制**  \n   可以在kube-apiserver的启动命令中查看文件描述符的当前限制：\n   ```\n   ulimit -n\n   ```\n   或者可以使用`Sysctl`检查整个系统的文件描述符限制：\n   ```\n   sysctl fs.file-max\n   ```\n\n2. **检查etcd的日志和监控信息**\n   查看etcd实例的日志文件，检查是否有相关的告警信息。同时，也可以通过`etcdctl`等工具监控etcd实例的健康状态。\n\n3. **监控API-server的连接数**\n   通过 `ss` 或 `netstat` 命令检查当前kube-apiserver到etcd的TCP连接数，看是否异常。\n   ```\n   ss -tnp | grep etcd\n   ```\n\n4. **审计日志**\n   通过审计日志可能会发现某些不当的客户端行为，例如不当的重试逻辑等，这可能导致`too many open files`问题。\n\n5. **分析`/etc/docker/daemon.json`配置（如果适用）**  \n   如果Kubernetes集群是在Docker上运行的，检查是否有设置不当的文件描述符限制。\n\n### 解决方法\n\n1. **增加文件描述符限制**  \n   调整kube-apiserver的`ulimit`参数，或者调整系统的文件描述符限制值。例如，可以在kube-apiserver的启动参数中增加 `--max-files` 参数，或者修改系统`fs.file-max`参数。\n\n2. **优化应用代码和重试机制**\n   如果是因为应用代码不断重试或维护了过多的长链接导致的，可以在代码层面进行优化，比如合理设置重试次数和时间间隔。\n\n3. **增加资源和扩展部署**  \n   如果问题是由于集群规模较大，对资源要求高导致的，可以考虑增加更多的资源并进行水平扩展。\n\n4. **监控和报警**  \n   部署资源监控和报警机制，一旦检测到文件描述符接近限制，立即触发告警，以便快速处理。\n\n5. **集群升级和维护**  \n   确保etcd和Kubernetes的版本是最新的，因为软件bug修复和性能优化可能解决问题。\n\n6. **清理无效连接**  \n   确认是否有无效的TCP连接或僵尸进程占用了文件描述符，可以适当清理以回收资源。\n\n请根据具体情况进行上述相关操作以解决该问题。如果需要更具体的操作指导，可能需要查看集群配置和相关日志详情。",
+        "latencyMs": 15309,
+        "score": {
+          "total": 57,
+          "breakdown": {
+            "keywordScore": 63,
+            "keywordHits": [
+              "too many open files",
+              "ulimit",
+              "文件描述符",
+              "连接数",
+              "etcd"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 6,
+            "lengthScore": 100,
+            "structureScore": 100
+          }
+        }
+      },
+      {
+        "questionId": "la-03",
+        "dimension": "log_analysis",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "当 CoreDNS 日志中显示 `SERVFAIL` 和 `i/o timeout` 错误时，这通常表示 DNS 解析过程中遇到了超时或者服务失败的情况。下面是一些诊断和解决 DNS 解析超时问题的步骤：\n\n1. **检查 CoreDNS 配置：** 确认 CoreDNS 的配置文件是否正确配置了上游 DNS 服务（如 `forward . <UPSTREAM_DNS_SERVER>`）。\n\n2. **查看 Service 和 Pod 状态：** 检查 CoreDNS 的服务（Service）是否正常运行，以及相关的 Pod 是否处于正常状态，没有异常的 CrashLoopBackoff。\n\n3. **检查 CoreDNS 资源使用情况：** 查看 CoreDNS 的 CPU 和内存使用率，以确保它没有因为资源不足而无法正常提供服务。\n\n4. **审查系统日志：** 查看 CoreDNS 的完整日志，获取更多关于 `SERVFAIL` 和 `i/o timeout` 的上下文信息。\n\n5. **检查上游 DNS 服务：** 如果 CoreDNS 配置了上游 DNS，检查这些服务（如 Google DNS、Cloudflare DNS、本地 DNS 服务器等）是否可达和响应。\n\n6. **网络连通性：** 确认 Kubernetes 集群内网络连通性没有中断，特别是 CoreDNS Pod 与上游 DNS 之间的网络连通性。\n\n7. **名称解析策略：** 查看集群配置，确认 DNS 的查询策略是否正确配置，例如，是仅向上游服务器查询还是同时向 kube-dns 以及其他上游服务器查询。\n\n8. **DNS 缓存问题：** 有时 DNS 解析超时可能是因为缓存问题。检查 CoreDNS 缓存设置，并且尝试清除缓存来看是否能解决问题。\n\n9. **重试机制：** 检查 CoreDNS 或上游 DNS 的重试机制设置。有时候重试次数过多或超时设置不合理会导致解析超时。\n\n10. **升级和补丁：** 确认 CoreDNS 及 Kubernetes 所有相关组件都已经升级到最新版本，因为某些版本可能有已知的 DNS 解析问题。\n\n11. **性能测试：** 进行基准测试和压力测试，识别 CoreDNS 在高负载下的性能表现，确保 DNS 解析的性能满足实际需求。\n\n12. **Kubernetes 网络插件设置：** 如果你在使用某些特定的 Kubernetes 网络插件（如 Calico、Flannel、Weave 等），查看该插件配置是否影响了 DNS 解析。\n\n13. **资源竞争：** 确认 CPU 和内存没有被其他应用挤占，导致 CoreDNS 受到影响。\n\n通常情况下，按照以上步骤进行排查，可以有效定位 DNS 解析超时的问题，并采取相应的措施来解决。如果问题依然存在，可能需要进一步检查 CoreDNS 的配置或代码问题，或者升级到最新稳定版本的 CoreDNS。",
+        "latencyMs": 14878,
+        "score": {
+          "total": 59,
+          "breakdown": {
+            "keywordScore": 63,
+            "keywordHits": [
+              "SERVFAIL",
+              "i/o timeout",
+              "forward",
+              "CoreDNS",
+              "上游 DNS"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 21,
+            "lengthScore": 100,
+            "structureScore": 85
+          }
+        }
+      },
+      {
+        "questionId": "la-04",
+        "dimension": "log_analysis",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "出现'OOMKilled'（退出码137）表示容器中的进程因为内存不足（Out Of Memory）而被杀死。以下是分析和避免此类问题的一些步骤：\n\n1. **日志分析**：首先检查容器日志，找出被杀死的进程和时间段。通过`kubectl logs <pod_name>`查看日志。\n\n2. **确认用途**：确认是否是因为特定活动的突然高峰导致资源消耗突然增加。这可能包括短期流量高峰、资源密集型任务或不恰当的资源配额设。\n\n3. **资源限制**：如果容器不应该访问大量的内存，检查Kubernetes资源限制。可以通过`kubectl describe pod <pod_name>`了解当前资源限制设置。如果存在资源限制不足的情况，可以调整`spec.containers[].resources.limits.memory`。\n\n4. **资源配额**：确保集群中有足够的内存可以被分配给需要的容器。如果集群内存不足，可以查看分配的资源配额并进行相应调整。\n\n5. **内存分析**：使用内存分析工具，如`memcached`监控内存使用情况，或者使用`Heapster`等工具来监控整个集群的资源使用情况。\n\n6. **程序优化**：分析应用程序代码，看是否有内存泄露问题或者是否有不必要的大容量内存使用。可以通过代码优化减少内存使用。\n\n7. **容器启动参数**：针对某些特定类型的应用（如Java应用）可以设置启动参数以限制JVM使用的内存。\n\n8. **自动缩扩容**：使用Kubernetes Horizontal Pod Autoscaler（HPA）或Cluster Autoscaler根据负载自动调整Pod的数量或节点的规模。\n\n9. **垃圾回收**：对于某些语言的运行时间（如Java和Python），确保及时进行垃圾回收以释放内存。\n\n10. **集群监控**：使用如Prometheus和Grafana等监控工具监控内存消耗情况，以及提前发现潜在的内存膨胀问题。\n\n11. **日志监控工具**：集成如Elasticsearch，Fluentd，Kibana（EFK）的日志存储和搜索工具，以便更好地索引和分析日志。\n\n12. **故障注入测试**：定期进行故障注入测试，包括模拟内存不足的情况，确保系统能够自动恢复。\n\n**避免'OOMKilled'的步骤举例**：\n\n- 设置内存软限制（`memory.request`）和硬限制（`memory.limit`）。软限制确保Pod调度时有足够的资源，硬限制防止Pod占用过多资源。\n- 使用HPA监控应用的CPU和内存使用情况，并根据需要自动扩展Pod数量。\n- 定期回顾和调整资源请求，避免分配过多或过少的资源。\n- 应用更新和升级内存优化。\n- 对于长周期运行的服务，定期重启Pod释放累积的内存。\n\n通过上述步骤，可以对容器中的'OOMKilled'问题进行诊断和预防，从而保障容器的稳定运行。",
+        "latencyMs": 12027,
+        "score": {
+          "total": 46,
+          "breakdown": {
+            "keywordScore": 38,
+            "keywordHits": [
+              "OOMKilled",
+              "137",
+              "limits.memory"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 9,
+            "lengthScore": 100,
+            "structureScore": 85
+          }
+        }
+      },
+      {
+        "questionId": "chp-01",
+        "dimension": "change_plan",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "将单机MySQL迁移到Kubernetes StatefulSet涉及几个步骤：准备数据库、创建持久存储、编写配置文件、部署StatefulSet。以下是详细的变更方案：\n\n### 1. 准备数据库\n\n在迁移前，确保MySQL数据库没有数据不一致，并且执行全量备份：\n\n```bash\nmysqldump -u root -p your_database > backup.sql\n```\n\n检查数据备份，并且验证备份文件是否可以成功恢复数据：\n\n```bash\nmysql -u root -p your_database < backup.sql\n```\n\n### 2. 创建持久存储\n\n在Kubernetes中，需要先创建PV（PersistentVolume）和PVC（PersistentVolumeClaim）以确保MySQL的数据持久化存储。以下是NFS存储的PV和PVC示例配置。\n\n**pv.yaml**：\n\n```yaml\napiVersion: v1\nkind: PersistentVolume\nmetadata:\n  name: mysql-pv\nspec:\n  capacity:\n    storage: 10Gi\n  accessModes:\n    - ReadWriteOnce\n  persistentVolumeReclaimPolicy: Retain\n  nfs:\n    path: /path/to/nfs/export/mysql\n    server: nfs-server-ip\n```\n\n**pvc.yaml**：\n\n```yaml\napiVersion: v1\nkind: PersistentVolumeClaim\nmetadata:\n  name: mysql-pvc\nspec:\n  accessModes:\n    - ReadWriteOnce\n  resources:\n    requests:\n      storage: 10Gi\n```\n\n执行`kubectl apply -f pv.yaml`和`kubectl apply -f pvc.yaml`来创建PV和PVC。\n\n### 3. 编写配置文件\n\n编写MySQL StatefulSet和相关配置，包括头less Service、StatefulSet、ConfigMap等。\n\n**mysql-headless-svc.yaml**：\n\n```yaml\napiVersion: v1\nkind: Service\nmetadata:\n  name: mysql\nspec:\n  ports:\n  - name: mysql\n    port: 3306\n  clusterIP: None\n  selector:\n    app: mysql\n```\n\n**mysql-statefulset.yaml**：\n\n```yaml\napiVersion: apps/v1\nkind: StatefulSet\nmetadata:\n  name: mysql\nspec:\n  serviceName: \"mysql\"\n  replicas: 1\n  selector:\n    matchLabels:\n      app: mysql\n  template:\n    metadata:\n      labels:\n        app: mysql\n    spec:\n      containers:\n      - name: mysql\n        image: mysql:5.7\n        ports:\n        - containerPort: 3306\n        volumeMounts:\n        - name: mysql-storage\n          mountPath: /var/lib/mysql\n        env:\n        - name: MYSQL_ROOT_PASSWORD\n          valueFrom:\n            secretKeyRef:\n              name: mysql-secret\n              key: password\n        - name: MYSQL_DATABASE\n          value: \"your_database\"\n        - name: MYSQL_USER\n          value: \"your_user\"\n        - name: MYSQL_PASSWORD\n          value: \"your_password\"\n      volumes:\n      - name: mysql-storage\n        persistentVolumeClaim:\n          claimName: mysql-pvc\n```\n\n**mysql-configmap.yaml**：\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: mysql-config\ndata:\n  mysql.cnf: |\n    [mysqld]\n    character-set-server=utf8mb4\n    collation-server=utf8mb4_unicode_ci\n    max_connections=150\n    innodb_flush_log_at_trx_commit=2\n    skip-character-set-client-handshake\n```\n\n执行`kubectl apply -f mysql-headless-svc.yaml`、`kubectl apply -f mysql-statefulset.yaml`和`kubectl apply -f\nmysql-configmap.yaml`来创建StatefulSet及关联资源。\n\n### 4. 迁移数据\n\n将备份的数据迁移到Kubernetes集群中的MySQL实例。使用MySQL StatefulSet中的Pod，恢复备份数据：\n\n```bash\nkubectl exec -it mysql-0 -- mysql -u root -p\n```\n\n然后导入备份数据：\n\n```sql\nCREATE DATABASE your_database DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;\nUSE your_database;\nsource /backup.sql\n```\n\n### 5. 验证\n\n验证数据是否成功迁移并且可以访问。访问数据库：\n\n```bash\nkubectl exec -it mysql-0 -- mysql -u root -p\n```\n\n检查数据库里的数据：\n\n```sql\nUSE your_database;\nSELECT * FROM your_table;\n```\n\n以上是将单机MySQL迁移到Kubernetes StatefulSet的步骤。根据实际情况，可能需要调整配置文件和参数。",
+        "latencyMs": 19857,
+        "score": {
+          "total": 57,
+          "breakdown": {
+            "keywordScore": 63,
+            "keywordHits": [
+              "StatefulSet",
+              "MySQL",
+              "PVC",
+              "mysqldump",
+              "数据迁移"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 21,
+            "lengthScore": 70,
+            "structureScore": 100
+          }
+        }
+      },
+      {
+        "questionId": "chp-02",
+        "dimension": "change_plan",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "从 Docker 运行时迁移到 Containerd 涉及到容器运行时的变更，因为 Docker 守护进程默认使用自身的运行时环境，而 Containerd 是 Docker 兼容的容器运行时，同时也是 Docker的一部分。以下是关于从 Docker 运行时迁移到 Containerd 的变更方案：\n\n### 1. 了解两个技术\n\n- **Docker**: Docker 是一种开源容器化技术，允许开发者打包他们的应用以及依赖包到一个可移植的容器中，然后发布到任何流行的 Linux 机器上。\n- **Containerd**: Containerd 是一个使用比 Docker 守护进程更高效、更简洁的容器运行时环境。Docker 1.11 以后版本默认整合了 Containerd。\n\n### 2. 环境准备\n\n在迁移之前，确保您的系统满足 upgrade 的要求。例如，确保所有 Docker 数据包更新至最新的状态：\n\n```bash\nsudo apt-get update\nsudo apt-get upgrade\n```\n\n### 3. 安装和配置 Containerd\n\n#### 卸载与 Docker 冲突的软件包（如果安装了踢掉 Docker 包装）\n\n```bash\nsudo apt-get remove docker docker-engine docker.io containerd runc\n```\n\n#### 安装 containerd.io\n\n```bash\nsudo apt-get install -y containerd\n```\n\n#### 验证安装情况\n\n```bash\nsudo containerd --version\n```\n\n#### 配置 Containerd：\n\n创建一个新的配置文件 `/etc/containerd/config.toml`（如果终端环境没有指定）：\n\n```yaml\nversion = 2\n[plugins.\"io.containerd.grpc.v1.cri\"]\n  [plugins.\"io.containerd.grpc.v1.cri\".containerd]\n    [plugins.\"io.containerd.grpc.v1.cri\".containerd.runtimes.runc Options]\n      SystemdCgroup = true\n```\n\n### 4. 重启并验证\n\n重启容器服务：\n\n```bash\nsudo systemctl restart containerd\n```\n\n```bash\nsudo systemctl enable containerd\n```\n\n验证 containerd 正在运行：\n\n```bash\nsudo systemctl status containerd\n```\n### 5. Docker 和 Containerd 共存\n\n确保 Docker 服务更新，自动使用 Containerd 而不是自己的运行时：\n\n```bash\nsudo apt-get install docker-ce=<version>\n```\n\n`<version>` 替换为你打算安装的 Docker 版本。\n\n### 6. 迁移容器\n\n确保现有的 Docker 容器和镜像能被迁移和使用：\n\n```bash\ndocker ps\n```\n\n如果你有旧的容器，使用 `ctr` 命令（Containerd 的控制台程序）与这些容器交互：\n\n```bash\nctr -n k8s.io containers list\n```\n\n### 7. 验证与测试\n\n确保你的应用容器能在 Containerd 环境中运行无误。\n\n这只是一个基本迁移方案。考虑一些因素，如与 CI/CD 工具、镜像仓库的集成、特定的安全和权限要求、网络和存储配置等，并进行必要的调整。请谨慎进行测试以确保生产迁移的安全性和完整性。",
+        "latencyMs": 17979,
+        "score": {
+          "total": 50,
+          "breakdown": {
+            "keywordScore": 38,
+            "keywordHits": [
+              "Containerd",
+              "Docker",
+              "迁移"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 16,
+            "lengthScore": 100,
+            "structureScore": 100
+          }
+        }
+      },
+      {
+        "questionId": "chp-03",
+        "dimension": "change_plan",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "从Nginx Ingress迁移到使用Kubernetes Gateway API需要考虑的几个关键步骤如下：\n\n1. **评估现有的Ingress规则和路由：**\n   - 分析现有Nginx Ingress控制器配置中的所有规则、路由、重写规则等，并记录Service和对应的路径。\n\n2. **了解Gateway API资源：**\n   - 熟悉Gateway API中的资源类型，例如`Gateway`、`Route`、`HTTPRoute`和`TCPRoute`（如果需要TCP流量）等。\n\n3. **设计Gateway API资源：**\n   - 基于现有Ingress规则，设计等效的`Gateway`和`Route`资源，并确保路由规则清晰明确。\n\n4. **搭建开发环境进行测试和验证：**\n   - 在开发或测试集群中，部署Gateway APIs资源，并确保流量能够按照预期路由。\n\n5. **同步更新CI/CD管道：**\n   - 根据Gateway API资源格式，更新CI/CD管道或Continuous Deployment（CD）流程。\n\n6. **监控和日志：**\n   - 在迁移过程中持续监控流量和应用性能，并确保有详细的日志记录来跟踪问题。\n\n7. **逐步切换流量：**\n   - 使用金丝雀发布或其他逐步发布技术，将流量从Nginx Ingress控制器逐步切换到Gateway API。\n\n8. **清理：**\n   - 一旦确认Gateway API运行稳定后，可以逐步清除Nginx Ingress控制器和相关的Ingress资源。\n\n下面是一个简化的示例，展示了如何将一个简单的Nginx Ingress转换为Gateway API资源：\n\nNginx Ingress配置示例：\n\n```yaml\napiVersion: networking.k8s.io/v1\nkind: Ingress\nmetadata:\n  name: example-ingress\n  annotations:\n    ingress.kubernetes.io/rewrite-target: /$2\nspec:\n  rules:\n  - host: example.com\n    http:\n      paths:\n      - path: /path/to/service(/|$)(.*)\n        pathType: ImplementationSpecific\n        backend:\n          service:\n            name: service-name\n            port:\n              number: 80\n```\n\nGateway API 资源配置示例：\n\n```yaml\napiVersion: gateway.networking.k8s.io/v1alpha2\nkind: Gateway\nmetadata:\n  name: example-gateway\nspec:\n  addresses:\n  - value: example.com\n  gatewayClassName: name-of-gateway-class\n\n---\napiVersion: gateway.networking.k8s.io/v1alpha2\nkind: HTTPRoute\nmetadata:\n  name: example-route\nspec:\n  parentRefs:\n  - kind: Gateway\n    name: example-gateway\n  hostnames: [\"example.com\"]\n  rules:\n  - matches:\n    - path:\n        type: PathPrefix\n        value: /path/to/service\n    backendRefs:\n    - name: service-name\n      port: 80\n      weight: 1\n```\n\n这个迁移方案是一个例子，实际操作中可能需要根据具体的Ingress规则和业务需求来量身定制。安全和验证是整个过程中的重点关注点，在进行迁移之前需要进行充分的测试。",
+        "latencyMs": 13592,
+        "score": {
+          "total": 65,
+          "breakdown": {
+            "keywordScore": 75,
+            "keywordHits": [
+              "Gateway API",
+              "Ingress",
+              "Nginx",
+              "HTTPRoute",
+              "GatewayClass",
+              "迁移"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 17,
+            "lengthScore": 100,
+            "structureScore": 100
+          }
+        }
+      },
+      {
+        "questionId": "chp-04",
+        "dimension": "change_plan",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "在执行从单可用区到多可用区的扩展方案时，您需要考虑控制平面、数据平面和存储的可用性和冗余性。以下是一般性的计划步骤，这些步骤可以按照执行的先后顺序进行调整：\n\n### 1. 基础设施和网络准备\n\n- **了解云提供商的可用区**：确定您使用的云服务有多少可用区，以及它们的地理位置。\n- **创建额外的VPC**：如果您的云服务提供商支持，您可以创建另一个VPC以提高隔离性，或者创建额外的子网在现有的VPC下。\n- **设置多区域路由**：配置VPC间对等或跨区域路由，以确保在不同区域间的数据同步和容错能力。\n\n### 2. 控制平面扩展\n\n- **增加API服务器副本**：可以尝试在新的可用区部署Kubernetes控制平面的更多实例。\n- **升级Kube-controller-manager、Scheduler等组件**：确保它们在所有可用区均有部署。\n\n### 3. 数据平面扩展\n\n- **节点扩缩容**：在新的可用区添加节点，确保在不同的地理位置都有Kubernetes节点。\n- **PodDisruptionBudget（PDB）**：配置PodDisruptionBudget以确保在任何时刻都有足够的副本。\n- **服务异地冗余**：将服务（如API网关、数据库等）配置为在多个可用区运行以实现高可用。\n\n### 4. 存储扩展\n\n- **持久卷声明跨区域支持**：确保存储资源可以在不同可用区中动态扩展。\n- **存储多副本**：配置持久卷存储以支持多副本来提高数据持久性。\n- **备份和恢复策略**：设定跨区域的备份机制，以便发生灾难时能够快速恢复。\n\n### 5. 安全和合规性 \n\n- **网络安全政策更新**：更新防火墙、NACL以及其他网络安全工具的规则，以适应多区域架构。\n- **隔离和多租户**：新增标签和网络隔离策略，为不同的租户或业务部门提供资源隔离。\n- **合规性评估**：确保新架构符合相关的法律和规定。\n\n### 6. 自动化和运维\n\n- **配置管理工具**：更新Ansible、Terraform、Pulumi等配置管理工具，以支持跨区域资源的管理。\n- **监控和报警**：配置跨区域监控和报警系统，确保及时响应区域故障。\n- **日志管理**：确保能够从所有区域有效地收集和聚合日志。\n\n### 7. 测试和验证\n\n- **模拟故障转移和恢复**：通过故障注入测试验证多区域部署的恢复能力。\n- **性能基准测试**：在新的架构下进行性能基准测试，以确保它们满足性能要求。\n- **安全性复查**：进行全面的安全复查，确保没有引入新的安全漏洞。\n\n### 8. 文档和培训\n\n- **更新文档**：更新系统架构和服务文档，以反映变化的多区域部署。\n- **培训人员**：对运维团队进行培训，使他们熟悉新的多区域运维流程。\n\n### 9. 逐步迁移\n\n- **逐步迁移服务**：在所有准备工作完成后，逐步将服务迁移到新的可用区，逐步淘汰单区域的服务。\n- **数据迁移**：如有必要，进行数据迁移，确保数据一致性。\n\n### 10. 持续优化\n\n- **监控和优化工作负载**：根据新的架构调整工作负载和资源分配，优化成本和性能。\n- **持续改进**：收集反馈，持续改进多区域策略和服务。\n\n这些是制定Kubernetes集群从单可用区扩展到多可用区的一般性变更方案。具体实施计划应根据实际情况进行调整和优化。",
+        "latencyMs": 15049,
+        "score": {
+          "total": 48,
+          "breakdown": {
+            "keywordScore": 50,
+            "keywordHits": [
+              "多可用区",
+              "VPC",
+              "PDB",
+              "节点"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 0,
+            "lengthScore": 100,
+            "structureScore": 85
+          }
+        }
+      },
+      {
+        "questionId": "ts-01",
+        "dimension": "troubleshooting",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "当一个 Kubernetes Service 端口正常但在集群外部无法访问时，可以通过以下几个步骤进行排查：\n\n1. **检查 Service 类型：**\n   - 确认 Service 类型是否为 `NodePort` 或 `LoadBalancer`，因为这两种类型可以使得集群外部可以访问到Service。如果是 `ClusterIP` 类型，则仅在集群内部可以访问，这可能是无法访问的原因。\n\n   ```yaml\n   apiVersion: v1\n   kind: Service\n   metadata:\n     name: my-service\n   spec:\n     type: LoadBalancer # 或 NodePort\n     ports:\n       - port: 80\n         targetPort: 8080\n     selector:\n       app: my-app\n   ```\n\n2. **检查端口映射：**\n   - 确保 Service 的端口映射正确无误，即 `port` 和 `targetPort` 是否指向了正确的端口号。\n\n3. **检查 Pod 状态：**\n   - 查看服务后端的 Pod 是否运行正常。\n\n   ```bash\n   kubectl get pods\n   ```\n\n4. **检查 Pod 端口监听：**\n   - 登录到 Pod 查看进程是否监听在预期的端口上。\n\n   ```bash\n   kubectl exec -it [POD_NAME] -- netstat -an | grep [LISTENING_PORT]\n   ```\n\n5. **检查网络安全策略：**\n   - 查看是否有任何 NetworkPolicy 影响到 Pod 或 Service 的访问。\n\n   ```bash\n   kubectl get networkpolicies\n   ```\n\n6. **检查 Service 是否被正确分配了端口：**\n   - `NodePort` 类型的 Service 应该自动分配一个端口号。\n\n   ```bash\n   kubectl describe service my-service\n   ```\n\n7. **检查云服务提供商的 LoadBalancer 配置：**\n   - 如果你使用了 `LoadBalancer` 类型的 Service，需要看云服务提供商是否有相关资源（如 ELB）被正确配置并与 Service 关联。\n\n8. **检查防火墙规则：**\n   - 查看集群所在节点的防火墙规则，确保对应 Service 端口没有被防火墙阻止。\n\n9. **检查公网访问：**\n   - 确保集群出口IP没有被互联网屏蔽，并且节点上的端口可以从外部访问。\n\n10. **检查日志：**\n    - 查看不仅是 Pod 的日志，也查看网络组件如 kube-proxy 的相关日志可能存在问题的地方。\n\n    ```bash\n    kubectl logs -n kube-system [KUBE-PROXY_POD_NAME]\n    ```\n\n11. **检查 DNS 解析：**\n    - 确保如果你通过域名访问 Service，DNS 解析没有问题。\n\n12. **检查资源限制：**\n    - 检查 Pod 是否因为资源配额限制（比如 CPU、内存限额超限）导致没有被正确调度。\n\n    ```bash\n    kubectl describe quota\n    ```\n\n13. **排查服务发现问题：**\n    - 检查应用的配置，确保应用中服务的访问地址和端口正确无误，没有DNS解析错误或者硬编码错误的地址。\n\n根据上述步骤系统化的排查 Service 的问题，通常可以定位到导致外部无法访问的具体原因，并采取相应的措施修复。",
+        "latencyMs": 13634,
+        "score": {
+          "total": 64,
+          "breakdown": {
+            "keywordScore": 63,
+            "keywordHits": [
+              "Service",
+              "NodePort",
+              "LoadBalancer",
+              "kube-proxy",
+              "防火墙"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 30,
+            "lengthScore": 100,
+            "structureScore": 100
+          }
+        }
+      },
+      {
+        "questionId": "ts-02",
+        "dimension": "troubleshooting",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "Pod之间网络不通，无法ping通对方Pod IP 的问题，可以按照以下步骤进行排查：\n\n1. **检查Pod状态**：\n   - 使用`kubectl get pods`查看Pod是否已经正常运行（Running状态）。\n   - 检查是否有资源限制导致Pod运行失败。\n\n2. **检查Pod内的网络配置**：\n   - 通过`kubectl exec -it <pod_name> -- /bin/sh`进入Pod内部，执行`ifconfig`或`ip addr`查看网络配置。\n\n3. **检查Pod是否属于同一个Namespace**：\n   - 如果Pod不在同一个Namespace, 可能存在权限问题。\n\n4. **检查Pod是否有适当的NetworkPolicy配置**：\n   - 如果使用了NetworkPolicy, 确保没有配置错误阻止Pod间的通信。\n\n5. **检查Pod是否在同一个NetworkPlugin下**：\n   - 确认Pod是否在同一个或兼容的网络插件下操作，例如Calico、Flannel等。\n\n6. **检查Pod是否处于同一个OverLay Network下**：\n   - 如果网络插件是基于overlay的，比如Calico、Weave等，检查horizoontalPodAutoscaler是否正常工作，Pod是否可以正确地加入到overlay网络中。\n\n7. **检查服务网格配置**：\n   - 如果部署了服务网格（如Istio），检查相关配置是否影响Pod间通信。\n\n8. **检查iptables/iptable规则**：\n   - 可能iptables规则阻断了流量，可以通过`iptables -L`和`ip6tables -L`来检查。\n\n9. **检查网络性能监控工具的输出**：\n   - 使用如`kubectl describe pod`查看Pod事件来定位任何网络相关的问题。\n   - 使用`kubectl logs`查看相关网络插件的日志，找出可能的错误信息。\n\n10. **检查Pod之间的连通性**：\n   - 在一个Pod内使用`ping <other_pod_ip>`测试连通性。如果ping不通，也有可能是对方Pod没有正确配置响应ICMP请求。\n\n11. **检查Pod服务(kubernetes services)**：\n   - 如果Pod之间通过服务进行通信，检查服务定义和端口映射是否正确。\n\n12. **检查主机网络配置**：\n   - 如果Pod使用的是主机网络，检查Pod所在节点的网络设置。\n\n按照这个流程一步一步排查，通常能够定位并解决问题。需要注意的是，不同网络插件可能会有特定的故障诊断命令，应当参考相应文档进行操作。此外，保持和网络管理员或云服务提供商的沟通也是很重要的，因为Pod间的网络问题很可能是由于底层网络设施配置导致的。",
+        "latencyMs": 14887,
+        "score": {
+          "total": 49,
+          "breakdown": {
+            "keywordScore": 50,
+            "keywordHits": [
+              "网络不通",
+              "Calico",
+              "NetworkPolicy",
+              "iptables"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 5,
+            "lengthScore": 100,
+            "structureScore": 85
+          }
+        }
+      },
+      {
+        "questionId": "ts-03",
+        "dimension": "troubleshooting",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "当部署（Deployment）更新后，新Pod一直处于Pending状态时，可以按照以下步骤进行排查：\n\n1. **检查Pod的描述**：\n   ```bash\n   kubectl describe pod <pod-name>\n   ```\n   通过查看Pod的描述，可以知道容器被调度的问题，常见的如没有足够的资源、容器启动失败等。\n\n2. **检查Deployment的描述**：\n   ```bash\n   kubectl describe deployment <deployment-name>\n   ```\n   检查Deployment的详情，看是否有更新历史记录，并且是否有滚动更新的记录。\n\n3. **检查事件**：\n   ```bash\n   kubectl get events\n   ```\n   获取kubernetes集群事件信息，可能显示与调度、负载均衡器配置、网络问题相关的错误。\n\n4. **检查调度器日志**：\n   查看调度器（Scheduler）日志，可以了解调度决策的过程和拒绝调度的原因。\n\n5. **检查节点状态**：\n   ```bash\n   kubectl get nodes\n   kubectl describe node <node-name>\n   ```\n   检查节点的状态，看节点是否处于Ready状态，或者是否有其他健康问题。\n\n6. **检查资源配额**（Resource Quotas）：\n   如果集群中设置了资源配额（ResourceQuotas），检查当前的使用量是否已达限额，即：\n   ```bash\n   kubectl describe quota <quota-name>\n   ```\n\n7. **检查服务账户和角色绑定**（Pod Security Policies）：\n   如果在集群中部署了第三方的权限策略，比如OPA Gatekeeper、Pod Security Policies等，需要检查Pod是否符合这些策略。\n\n8. **检查网络插件配置**：\n   如果Pod是跨不同节点调度的，需要确保网络插件配置正确，Pod之间能够互相通信。\n\n9. **检查容器镜像是否可拉取**：\n   确保使用的容器镜像存在且可以被集群中的节点访问。\n\n10. **检查镜像拉取日志**：\n    ```bash\n    kubectl logs <pod-name> -c <container-name>\n    ```\n    直接查看对应容器的日志，看是否有关于拉取镜像失败的日志信息。\n\n11. **检查镜像拉取权限**：\n    检查集群是否有足够的权限拉取指定的镜像，特别是私有镜像仓库。\n\n12. **尝试手动创建Pod**：\n    尝试手动创建一个与问题Pod相同配置的Pod，看是否能够创建成功，如果能，那么问题可能在Deployment的更新策略上。\n\n排查这些问题点，一般可以找到Pod一直处于Pending状态的原因。解决这些问题后，Pod应该能够正常调度和启动。",
+        "latencyMs": 13895,
+        "score": {
+          "total": 52,
+          "breakdown": {
+            "keywordScore": 38,
+            "keywordHits": [
+              "Pending",
+              "调度",
+              "ResourceQuota"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 24,
+            "lengthScore": 100,
+            "structureScore": 100
+          }
+        }
+      },
+      {
+        "questionId": "ts-04",
+        "dimension": "troubleshooting",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "当Horizontal Pod Autoscaler (HPA)配置了，但是Pod数量没有自动扩缩时，可以按照以下步骤进行排查：\n\n1. **检查HPA的状态和条件：**\n   ```\n   kubectl get hpa -o=jsonpath='{.items[*].status.conditions[*].type}{\"\\t\"}{.items[*].status.conditions[*].status}{\"\\t\"}{.items[*].status.conditions[*].reason}{\"\\t\"}{.items[*].status.conditions[*].message}}'\n   ```\n   这个命令会输出HPA的状态条件，包括资源是否足够、目标的复制数量等。检查是否有`AbleToScale`、`ScalingActive`和`ScalingLimited`这些条件的状态不是正常的。\n\n2. **确保HPA的配置正确：**\n   - 确认计量资源（例如CPU或内存）已经被适当的资源选择器选中。\n   - 检查HPA目标的最小和最大Pod复制数是否合理。\n   - 检查HPA是否配置了一个有效的选择器，确保它与要扩缩的Deployment的标签匹配。\n\n3. **检查监控数据：**\n   - 确认HPA收集指标的监控系统（如metrics-server）已经正确配置，并且可以接收到从Pod发送的性能指标。\n   - 查看具体的性能指标数据，是否超过了设置的目标值。\n   \n   ```\n   kubectl top pod\n   kubectl top deployment\n   ```\n\n4. **查看相应的日志：**\n   - 查看HPA控制器的日志，通常在 kube-controller-manager 中。\n   - 查看负责监控的metrics-server的日志（如果使用的话）。\n\n5. **确认过载保护（Overload Protection**）：\n   - 查看HPA是否启用了过载保护（Overload Protection），如果启用这个功能，可能会导致HPA不自动扩缩Pod。\n\n6. **检查自定义指标兼容性：**\n   如果是HPA依赖于自定义指标来动态调整Pod数，确保相关的自定义指标适配器正常工作且返回了正确的指标数据。\n\n7. **检查Pod的健康状态：**\n   如果有Pod健康检查失败，HPA可能会暂停扩缩，直到问题解决。\n\n8. **排查Namespace限流（Rate Limiting）问题：**\n   如果HPA和相关的Deployment或Pod位于同一个Namespace中，检查是否有Namespace级别的资源配额（Resource Quotas）限制了Pod的创建速率。\n\n9. **查看集群事件：**\n   通过以下命令查找与HPA相关的事件。\n   ```\n   kubectl get events\n   ```\n\n检查这些问题你通常会找到导致Pod数量不自动扩缩的原因。对于特别复杂的问题，您可能需要更详细地审查集群日志。",
+        "latencyMs": 14871,
+        "score": {
+          "total": 47,
+          "breakdown": {
+            "keywordScore": 25,
+            "keywordHits": [
+              "HPA",
+              "自动扩缩"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 24,
+            "lengthScore": 100,
+            "structureScore": 100
+          }
+        }
+      },
+      {
+        "questionId": "fe-01",
+        "dimension": "feature_explanation",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "Kubernetes 的 Pod Topology Spread Constraints 是用于在集群中根据拓扑结构（例如跨多个数据中心、跨多台物理机、跨多个节点或跨不同的网络区域等）分布 Pod 的规格的一种机制。这种机制有助于提高服务的可用性和容错性，以及适应业务合规性要求。\n\nPod Topology Spread Constraints 允许用户指定分布策略，以确保 Pod 被配置在不同的节点或者节点组上。Kubernetes 1.16 版本引入了 TopologySpreadConstraints 的 Alpha 版本，并在后续版本中不断完善和增强。\n\n以下是 Pod Topology Spread Constraints 的关键特性和概念：\n\n### 1. 主要组件\n\n- **拓扑域（Topology Domain）**：指的是集群中的一个逻辑分区，例如数据中心、机架、节点或者区域等。\n- **拓扑标签（Topology Label）**：用于标识拓扑域的标签键。\n- **拓扑键（Topology Key）**：用户定义的与拓扑域相关的键，它将在 Pod 和节点的标签中使用。\n\n### 2. 约束类型\n\n- **MaxSkew**：确保 Pod 被尽量均匀分布在拓扑域中，具体数量差异不超过 MaxSkew 值。\n- **WhenUnsatisfiable=DoNotSchedule** 和 **WhenUnsatisfiable=ScheduleAnyway**：决定了如果在无法满足拓扑约束时是否调度 Pod。\n\n### 3. 样例配置\n\n这是一个 Pod 模板中的 Topology Spread Constraints 配置样例：\n\n```yaml\napiVersion: v1\nkind: Pod\nmetadata:\n  name: mypod\nspec:\n  topologySpreadConstraints:\n  - maxSkew: 1\n    topologyKey: topology.kubernetes.io/zone\n    whenUnsatisfiable: DoNotSchedule\n    labelSelector:\n      matchLabels:\n        app: myapp\n```\n\n在这个配置中，Pod 将确保在集群的 zone 拓扑域中平均分布，不同 zone 中对应的 Pod 数量差异最大不超过 1。如果无法满足分布约束，该 Pod 将不会被调度。\n\n### 4. 考虑因素\n\n- **兼容性**：Pod Topology Spread Constraints 是高级功能，依赖于您使用的 Kubernetes 版本的支持。\n- **性能影响**：在一定程度上，由于分布策略，Pod 的调度耗时可能会增加。\n- **资源限制**：需要有足够的资源以支持分布策略的要求。\n\n综上所述，Pod Topology Spread Constraints 提供了一种有效的方法，帮助用户针对不同的集群和业务需求，实现 Pod 跨拓扑域的分布。这有助于实现高可用性和故障转移，同时符合特定的业务合规标准。",
+        "latencyMs": 14022,
+        "score": {
+          "total": 69,
+          "breakdown": {
+            "keywordScore": 75,
+            "keywordHits": [
+              "Topology Spread",
+              "maxSkew",
+              "topologyKey",
+              "whenUnsatisfiable",
+              "DoNotSchedule",
+              "均匀分布"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 30,
+            "lengthScore": 100,
+            "structureScore": 100
+          }
+        }
+      },
+      {
+        "questionId": "fe-02",
+        "dimension": "feature_explanation",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "Kubernetes 的 Ephemeral Containers（临时容器）是一种特殊类型的容器，它们在 Pod 中动态启动，并且在完成其任务后会销毁。这个功能在 Kubernetes 版本 v1.24 中引入为实验性特性。\n\n**使用场景：**\n\n1. **调试问题**：开发者或运维人员可以添加一个临时容器对现有的运行的Pod进行问题调查，而无需重新创建 Pod 或执行其他会影响正在运行应用程序的操作。\n\n2. **日志分析**：当需要查看或者处理 Pod 容器产生的日志时，可以通过临时容器手动访问来分析日志或执行命令行工具。\n\n3. **运行一次性命令或程序**：需要在Pod环境内运行一次性或特定的命令和程序，比如执行测试任务。\n\n4. **故障排查和响应**：在 Application Running in a Pod 出现运行时故障时，快速接入以进行实时排查，并执行修复任务。\n\n5. **密钥和配置注入**：为运行中的Pod临时注入密钥和配置项，而无需重启整个Pod。\n\n**功能特点：**\n\n- 临时容器保留了与 Pod 其他容器相同的环境和文件系统。\n- 临时容器的生命周期独立于 Pod 的其他容器。\n- 可以通过 kubelet API 或 kubectl 命令行工具与临时容器交互。\n- 临时容器的添加不需要重新创建 Pod，同样可以避免对正在运行的主容器造成中断。\n\n**使用限制：**\n\n- 临时容器是 Kubernetes 的实验特性，根据 Kubernetes 的特性稳定生命周期，可能会有变更。\n- 仅部分 Kubernetes 环境和发行版支持 Ephemeral Containers。\n- 需要对于 Kubernetes 集群和 Pod 的访问权限来进行临时容器的操作。\n- 安全性注意事项：运行临时容器应审慎考虑，因为它们可以访问 Pod 的文件系统和其他容器，因此需要在安全上下文中进行管理。\n\n**使用方法：**\n\n通过 `kubectl debug` 命令或与 kubelet 交互的方式来添加及启动 Ephemeral Containers：\n\n```bash\n# 以 debug 模式创建一个临时容器\"debugger\"到名为\"my-pod\"的pod\nkubectl debug my-pod -it --namespace=my-namespace --image=busybox:latest -- sh\n\n# 或者，使用以下命令创建并启动一个临时容器\nkubectl alpha debug my-pod -it --image=busybox:latest -- sh\n```\n\n请注意，具体的命令可能会随 Kubernetes 版本和环境的变化而变化，请参考相关文档获取最新信息。",
+        "latencyMs": 10645,
+        "score": {
+          "total": 62,
+          "breakdown": {
+            "keywordScore": 63,
+            "keywordHits": [
+              "Ephemeral Containers",
+              "临时容器",
+              "kubectl debug",
+              "调试",
+              "busybox"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 24,
+            "lengthScore": 100,
+            "structureScore": 100
+          }
+        }
+      },
+      {
+        "questionId": "fe-03",
+        "dimension": "feature_explanation",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "Kubernetes 中的 PodDisruptionBudget（PDB）用于确保集群中的一定数量的Pod在任何给定时间内不会被同时驱逐。这主要用于保证应用程序的高可用性和故障时的优雅降级。通过指定最小可用Pod数量或者最大不可用于驱逐的Pod数量，PDB提供了一个方法来控制Pod由于计划中的维护和驱逐操作而同时消失的数量。\n\n### 功能\n- **保护Pod免遭过度删除**：PDB可以保护Pod集，在进行诸如节点维护等操作时，PDB可以帮助维持应用程序的稳定性和可用性。\n- **限制同时驱逐的最大Pod数量**：通过设置最大不可用Pod数，Kubernetes可以控制在同一时间可以被驱逐的最大Pod数量。\n- **自动驱逐替换**：如果必须进行驱逐，Kubernetes会自动替换这些Pod，确保服务尽可能保持运行。\n\n### 配置\n配置PDB时，需要定义以下几个关键参数：\n\n1. **apiVersion**：指定使用的Kubernetes API版本。\n2. **kind**：标识资源类型为`PodDisruptionBudget`。\n3. **metadata**：PDB的元数据，包括命名空间等信息。\n4. **spec**：包含PDB的规则和设置。\n   - **minAvailable**：指定集群中至少保持可用的Pod数量（整数或百分比）。\n   - **maxUnavailable**：指定驱逐时，不可用的Pod的最大数量（整数或百分比）。\n\n下面是PDB的一个配置示例：\n\n```yaml\napiVersion: policy/v1beta1\nkind: PodDisruptionBudget\nmetadata:\n  name: example-pdb\n  namespace: default\nspec:\n  minAvailable: 3\n  selector:\n    matchLabels:\n      app: example-app\n```\n\n在这个例子中，`example-pdb`PodDisruptionBudget定义了一个策略，要求至少有3个带有label `app: example-app` 的Pod必须始终可用。\n\n同样也可以使用`maxUnavailable`属性，如下所示：\n\n```yaml\napiVersion: policy/v1beta1\nkind: PodDisruptionBudget\nmetadata:\n  name: example-pdb\n  namespace: default\nspec:\n  maxUn可用: 1\n  selector:\n    matchLabels:\n      app: example-app\n```\n\n在这个例子中，最多可以有1个带有label `app: example-app` 的Pod同时不可用。\n\n总之，PDB是一个强大的机制，可以帮助你管理在进行集群操作时Pod的可用性，确保应用程序的鲁棒性和高可用性。",
+        "latencyMs": 11678,
+        "score": {
+          "total": 52,
+          "breakdown": {
+            "keywordScore": 50,
+            "keywordHits": [
+              "PodDisruptionBudget",
+              "PDB",
+              "minAvailable",
+              "maxUnavailable"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 6,
+            "lengthScore": 100,
+            "structureScore": 100
+          }
+        }
+      },
+      {
+        "questionId": "fe-04",
+        "dimension": "feature_explanation",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "**Cluster Autoscaler** (也简称为 CA)是一个与Kubernetes集群集成的自动扩展器，能够根据Pods的需求自动增加或减少集群中的节点数量。以下是Cluster Autoscaler的工作原理和配置要点。\n\n### 工作原理：\n\n1. **监控：** Cluster Autoscaler会持续监控集群的状态，特别是那些不能被调度的Pods（通常是因为资源不足）。\n   \n2. **分析：** CA根据Pods的需求分析需要添加的节点类型和数量，例如，它可能会增加具有更多CPU或内存的节点。\n\n3. **扩展或缩减：** 如果有Pods因为资源不足而无法被调度，则CA会创建新节点，如果许多节点长时间空闲，则可以减少节点数量。\n\n4. **反馈循环：** 节点创建和删除后，CA会继续监控集群并根据需要继续调整。\n\n### 配置要点：\n\n#### 1. 启动参数：\n\nCluster Autoscaler以一个守护进程运行，需要在启动时指定一系列参数。主要包括：\n\n- `--cloud-provider`：标识使用的云服务提供商。\n- `--node-group-auto-discovery`: 用于自动发现节点组，可以是多个。\n- `--node-group-auto-provisioning-enabled`：是否启用自动创建节点组。\n- `--scale-down-enabled`：是否启用缩放功能。\n- `--scale-down-delay-after-add`：增加节点后等待多长时间才能开始缩容。\n- `--scale-down-unneeded-time`：节点不需要的时间，使其成为缩容候选。\n\n#### 2. 安全性配置：\n\nCluster Autoscaler需要访问Kubernetes API来监控Pods和节点的状态，因此需要适当的RBAC权限。\n\n```yaml\napiVersion: rbac.authorization.k8s.io/v1\nkind: ClusterRole\nmetadata:\n  name: cluster-autoscaler\nrules:\n- apiGroups: [\"\"]\n  resources: [\"nodes\"]\n  verbs: [\"watch\", \"list\"]\n- apiGroups: [\"\"]\n  resources: [\"pods/eviction\"]\n  verbs: [\"create\"]\n- apiGroups: [\"extensions\"]\n  resources: [\"replicasets\"]\n  verbs: [\"get\"]\n---\napiVersion: rbac.authorization.k8s.io/v1\nkind: ClusterRoleBinding\nmetadata:\n  name: cluster-autoscaler\nroleRef:\n  apiGroup: rbac.authorization.k8s.io\n  kind: ClusterRole\n  name: cluster-autoscaler\nsubjects:\n- kind: ServiceAccount\n  name: cluster-autoscaler\n  namespace: kube-system\n```\n\n#### 3. 节点分组配置：\n\n需要配置集群中节点的分组信息，这取决于使用的云服务提供商。例如，在AWS上，可以这样配置：\n\n```yaml\napiVersion: cluster-autoscaler.k8s.io/v1beta1\nkind: ClusterAutoscaler\nmetadata:\n  name: default\nspec:\n  scaleDown:\n    enabled: true\n    delayAfterAdd: 3m0s\n    delayAfterDelete: 2m0s\n    delayAfterFailure: 2m0s\n    unhealthyTimeout: 2m0s\n    maxNodeProvisionTime: 3m0s\n  nodeGroupDefaults:\n    maxPodGrowth: 0\n    abs容忍模板：\n      minSize: 1\n      maxSize: 10\n     眼袋：节点族类型\n  - name: default-asg # 节点组名称\n    maxNodes: 10\n    minNodes: 1\n```\n\n请根据您的云提供商和集群配置来设置适当的参数和约束。\n\n### 总结\n\nCluster Autoscaler是Kubernetes集群管理中的一个重要组件，可以有效地帮助优化资源成本和管理集群规模。配置Cluster Autoscaler需要注意云服务提供商的要求、RBAC权限配置等。正确配置和使用CA能够提高集群的可用性和成本效率。",
+        "latencyMs": 17143,
+        "score": {
+          "total": 42,
+          "breakdown": {
+            "keywordScore": 25,
+            "keywordHits": [
+              "Cluster Autoscaler",
+              "缩容"
+            ],
+            "keywordTotal": 8,
+            "referenceScore": 8,
+            "lengthScore": 100,
+            "structureScore": 100
+          }
+        }
+      }
+    ],
+    "minimax": [
+      {
+        "questionId": "cc-01",
+        "dimension": "core_concepts",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cc-02",
+        "dimension": "core_concepts",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cc-03",
+        "dimension": "core_concepts",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cc-04",
+        "dimension": "core_concepts",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cc-05",
+        "dimension": "core_concepts",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cc-06",
+        "dimension": "core_concepts",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cc-07",
+        "dimension": "core_concepts",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cc-08",
+        "dimension": "core_concepts",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ao-01",
+        "dimension": "api_objects",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ao-02",
+        "dimension": "api_objects",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ao-03",
+        "dimension": "api_objects",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ao-04",
+        "dimension": "api_objects",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ao-05",
+        "dimension": "api_objects",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ao-06",
+        "dimension": "api_objects",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ao-07",
+        "dimension": "api_objects",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ao-08",
+        "dimension": "api_objects",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ok-01",
+        "dimension": "ops_knowledge",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ok-02",
+        "dimension": "ops_knowledge",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ok-03",
+        "dimension": "ops_knowledge",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ok-04",
+        "dimension": "ops_knowledge",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ok-05",
+        "dimension": "ops_knowledge",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ok-06",
+        "dimension": "ops_knowledge",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ok-07",
+        "dimension": "ops_knowledge",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ok-08",
+        "dimension": "ops_knowledge",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vt-01",
+        "dimension": "version_timeliness",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vt-02",
+        "dimension": "version_timeliness",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vt-03",
+        "dimension": "version_timeliness",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vt-04",
+        "dimension": "version_timeliness",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vt-05",
+        "dimension": "version_timeliness",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vt-06",
+        "dimension": "version_timeliness",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vt-07",
+        "dimension": "version_timeliness",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vt-08",
+        "dimension": "version_timeliness",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cw-01",
+        "dimension": "config_writing",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cw-02",
+        "dimension": "config_writing",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cw-03",
+        "dimension": "config_writing",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cw-04",
+        "dimension": "config_writing",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cw-05",
+        "dimension": "config_writing",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cw-06",
+        "dimension": "config_writing",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cw-07",
+        "dimension": "config_writing",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cw-08",
+        "dimension": "config_writing",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ea-01",
+        "dimension": "error_analysis",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ea-02",
+        "dimension": "error_analysis",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ea-03",
+        "dimension": "error_analysis",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ea-04",
+        "dimension": "error_analysis",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ah-01",
+        "dimension": "alert_handling",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ah-02",
+        "dimension": "alert_handling",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ah-03",
+        "dimension": "alert_handling",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ah-04",
+        "dimension": "alert_handling",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vu-01",
+        "dimension": "version_upgrade",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vu-02",
+        "dimension": "version_upgrade",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vu-03",
+        "dimension": "version_upgrade",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vu-04",
+        "dimension": "version_upgrade",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "bp-01",
+        "dimension": "best_practices",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "bp-02",
+        "dimension": "best_practices",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "bp-03",
+        "dimension": "best_practices",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "bp-04",
+        "dimension": "best_practices",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "tm-01",
+        "dimension": "terminology",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "tm-02",
+        "dimension": "terminology",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "tm-03",
+        "dimension": "terminology",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "tm-04",
+        "dimension": "terminology",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cp-01",
+        "dimension": "command_parsing",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cp-02",
+        "dimension": "command_parsing",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cp-03",
+        "dimension": "command_parsing",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cp-04",
+        "dimension": "command_parsing",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "la-01",
+        "dimension": "log_analysis",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "la-02",
+        "dimension": "log_analysis",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "la-03",
+        "dimension": "log_analysis",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "la-04",
+        "dimension": "log_analysis",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "chp-01",
+        "dimension": "change_plan",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "chp-02",
+        "dimension": "change_plan",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "chp-03",
+        "dimension": "change_plan",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "chp-04",
+        "dimension": "change_plan",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ts-01",
+        "dimension": "troubleshooting",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ts-02",
+        "dimension": "troubleshooting",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ts-03",
+        "dimension": "troubleshooting",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ts-04",
+        "dimension": "troubleshooting",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "fe-01",
+        "dimension": "feature_explanation",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "fe-02",
+        "dimension": "feature_explanation",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "fe-03",
+        "dimension": "feature_explanation",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "fe-04",
+        "dimension": "feature_explanation",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      }
+    ]
+  },
+  "questionCount": 80,
+  "id": "e393bd00-f93f-442d-8ec8-a436d681cf40",
+  "timestamp": "2026-04-15T09:42:31.954Z"
+}

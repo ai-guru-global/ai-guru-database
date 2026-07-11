@@ -49,7 +49,7 @@ sources: []
 - [Agent Platforms](../Agent_Platforms/) -- Agent 开发平台
 - [Memory Infrastructure](../Memory_Infrastructure/) -- 记忆与 RAG 基础设施
 - [Agent_Evaluation](../Agent_Evaluation/) -- Agent 评估体系
-- [AI运维](../../AI运维/) -- AI 系统运维
+- [AI运维](../../运维/) -- AI 系统运维
 
 ---
 

@@ -1,10 +1,10 @@
 ---
 title: "Robotics Engineer 面试指南"
 category: "21-interviews-robotics-engineer"
-tags: ["interviews", "career", "experience", "practitioners", "robotics", "slam", "perception", "control", "simulation"]
-summary: "Robotics Engineer 面试题库，覆盖感知算法、运动规划、控制系统与仿真验证，含难度与频率标注。"
+tags: ["interviews", "career", "experience", "practitioners", "robotics", "slam", "perception", "control", "simulation", "ros", "motion-planning", "computer-vision"]
+summary: "Robotics Engineer 面试全流程指南，覆盖感知算法（SLAM/CV/传感器融合）、运动规划（MPC/RRT/轨迹优化）、控制系统（PID/LQR/MPC）、仿真验证（Gazebo/Isaac Sim）和系统集成。适用于 Boston Dynamics、Tesla、Waymo、Figure AI 等公司的机器人岗位。"
 created: 2026-05-31
-updated: 2026-07-01
+updated: 2026-07-11
 tier: supporting
 aliases:
   - "Robotics_Engineer"
@@ -15,37 +15,716 @@ sources: []
 
 # Robotics Engineer 面试指南
 
-> 本页面由 4 个子文件（interview_preparing.md, question_bank.md, company_level_question_bank.md, interview_answers.md）合并而成，覆盖 Robotics Engineer 岗位的面试全流程。
-
-
-## 面试准备
-
-## 核心职责
-- **机器人感知与控制**: 视觉/传感器融合与运动规划。
-- **系统集成**: 硬件、软件与算法协同。
-- **实时性与安全**: 低延迟控制与安全保障。
-
-## 核心能力
-- **控制与规划**: 轨迹规划、MPC、SLAM。
-- **感知算法**: 视觉、深度、目标识别。
-- **系统工程**: ROS、实时系统与调试。
-
-## 常见考点
-- **感知到控制**: 感知误差与控制稳定性。
-- **系统集成**: 传感器同步与延迟。
-- **实际场景**: 复杂环境与鲁棒性。
-
-## 项目准备
-- **机器人项目**: 感知、规划、控制闭环。
-- **实机指标**: 速度、成功率与稳定性。
-
-## 简历要点
-- **实机经验**: 真实设备与测试场景。
-- **稳定性指标**: 失效率与恢复策略。
+> **一句话理解**: Robotics Engineer 是连接物理世界与智能算法的全栈工程师——既要理解传感器、执行器等硬件约束，又要精通感知、规划、控制的算法链路，在实时性、安全性和鲁棒性的多重约束下让机器人在真实世界中可靠运行。
 
 ---
-*Last updated: 2026-06-04*
+
+## Table of Contents
+
+- [1. 岗位定位与核心职责](#1-岗位定位与核心职责)
+  - [1.1 岗位定位](#11-岗位定位)
+  - [1.2 核心职责](#12-核心职责)
+  - [1.3 核心技能栈](#13-核心技能栈)
+  - [1.4 与相近岗位的区别](#14-与相近岗位的区别)
+- [2. 技术能力要求](#2-技术能力要求)
+- [3. 核心知识领域](#3-核心知识领域)
+- [4. 高频面试问题](#4-高频面试问题)
+- [5. 系统设计题](#5-系统设计题)
+- [6. 编程与实操题](#6-编程与实操题)
+- [7. 备考策略与学习路径](#7-备考策略与学习路径)
+- [8. 行业薪资范围参考](#8-行业薪资范围参考)
+- [9. 面试 Checklist](#9-面试-checklist)
+- [Related](#related)
+
+---
+
+## 1. 岗位定位与核心职责
+
+### 1.1 岗位定位
+
+Robotics Engineer（机器人工程师）是一个高度跨学科的岗位，融合了机械工程、电子工程、计算机科学和人工智能。机器人系统是软件和硬件深度耦合的复杂系统，要求工程师同时理解"比特"和"原子"。
+
+机器人领域的热门方向：
+- **自动驾驶**: Waymo、Tesla、Cruise、Momenta
+- **人形机器人**: Figure AI、Boston Dynamics、Tesla Optimus、Unitree
+- **工业机器人**: KUKA、ABB、FANUC，以及协作机器人（Universal Robots）
+- **服务机器人**: Amazon Astro、iRobot
+- **物流机器人**: Amazon Robotics、Symbotic
+- **医疗机器人**: Intuitive Surgical (da Vinci)
+- **无人机**: DJI、Skydio
+
+Robotics Engineer 的核心使命是**让机器人在真实世界的复杂、不确定环境中安全、高效地完成指定任务**。
+
+### 1.2 核心职责
+
+| 职责领域 | 具体内容 | 交付物 |
+|---------|---------|--------|
+| **感知系统** | 传感器融合、目标检测、场景理解 | 感知算法、传感器配置 |
+| **定位与建图** | SLAM、里程计、GPS/IMU 融合 | 定位系统、地图 |
+| **运动规划** | 路径规划、轨迹生成、避障 | 规划算法 |
+| **控制系统** | PID、LQR、MPC 控制器设计 | 控制器代码 |
+| **仿真验证** | 在仿真环境中测试和验证算法 | 仿真场景、测试报告 |
+| **系统集成** | ROS/ROS2 节点开发、硬件接口 | 系统架构 |
+| **实机调试** | 在真实机器人上测试和调试 | 测试报告 |
+| **安全设计** | 安全策略、碰撞检测、紧急停止 | 安全方案 |
+
+### 1.3 核心技能栈
+
+| 维度 | 关键技能 | 常见工具/框架 |
+|------|---------|--------------|
+| **编程** | C++、Python、实时系统 | C++17/20, Python, RTOS |
+| **机器人框架** | ROS/ROS2、消息传递 | ROS2, DDS, rviz, Gazebo |
+| **感知** | 计算机视觉、LiDAR、深度学习 | OpenCV, PCL, PyTorch |
+| **SLAM** | 视觉/激光 SLAM、因子图优化 | GTSAM, Ceres, ORB-SLAM |
+| **规划** | 运动规划、采样规划、优化 | OMPL, MoveIt |
+| **控制** | PID、LQR、MPC、阻抗控制 | 控制库、MATLAB |
+| **仿真** | 物理仿真、传感器仿真 | Gazebo, Isaac Sim, MuJoCo |
+| **数学** | 线性代数、优化、概率 | Eigen, Ceres, GTSAM |
+
+### 1.4 与相近岗位的区别
+
+| 岗位 | 核心关注点 | 与 Robotics Engineer 的差异 |
+|------|-----------|---------------------------|
+| **Computer Vision Engineer** | 图像/视频处理 | 不涉及物理控制和硬件 |
+| **Embedded Engineer** | 嵌入式系统开发 | 不涉及高层算法 |
+| **ML Engineer** | 模型训练和部署 | 不涉及实时性和物理约束 |
+| **Control Engineer** | 控制系统设计 | 通常不涉及感知和 AI |
+
+---
+
+## 2. 技术能力要求
+
+### 基础级 (初级 Robotics Engineer)
+
+- **数学基础**: 线性代数（矩阵运算、变换）、微积分、概率论
+- **编程**: 熟练使用 C++ 和 Python，理解内存管理和性能优化
+- **ROS/ROS2**: 能开发 ROS 节点，理解 Topic/Service/Action
+- **控制基础**: 理解 PID 控制原理，能调参
+- **感知基础**: 理解相机模型、LiDAR 原理，能使用 OpenCV
+- **运动学**: 理解正向和逆向运动学
+
+### 进阶级 (中级 Robotics Engineer)
+
+- **SLAM**: 能实现或配置视觉/激光 SLAM 系统
+- **运动规划**: 能实现路径规划（A*、RRT）和轨迹优化
+- **高级控制**: 能设计 LQR 或 MPC 控制器
+- **深度学习感知**: 能训练和部署目标检测/分割模型
+- **传感器融合**: 能实现卡尔曼滤波/扩展卡尔曼滤波
+- **仿真**: 能在 Gazebo / Isaac Sim 中搭建测试场景
+
+### 专家级 (高级 Robotics Engineer)
+
+- **系统架构**: 能设计完整的机器人软硬件架构
+- **全栈能力**: 从感知到规划到控制的端到端理解
+- **前沿研究**: 跟踪具身智能（Embodied AI）和端到端学习
+- **安全设计**: 设计功能安全（ISO 13849）策略
+- **硬件理解**: 深入理解传感器特性、执行器限制和电源管理
+
+---
+
+## 3. 核心知识领域
+
+### 3.1 感知与传感器融合
+
+**核心主题**:
+- **传感器类型**:
+  - 相机: RGB、深度（RGB-D）、ToF
+  - LiDAR: 3D 点云感知
+  - IMU: 加速度计 + 陀螺仪
+  - GPS/GNSS: 全局定位
+  - 超声波/红外: 近距离感知
+  - 编码器: 关节角度/速度
+
+- **传感器融合**:
+  - 卡尔曼滤波（KF）: 线性系统
+  - 扩展卡尔曼滤波（EKF）: 非线性系统
+  - 无迹卡尔曼滤波（UKF）: 更好的非线性处理
+  - 粒子滤波: 非高斯分布
+  - 因子图优化: 多传感器联合优化
+
+- **深度学习感知**:
+  - 目标检测: YOLO、Faster R-CNN
+  - 语义分割: U-Net、DeepLab
+  - 3D 感知: PointNet、Point Transformer、BEV 感知
+  - 多模态融合: Camera-LiDAR Fusion
+
+### 3.2 SLAM（同步定位与建图）
+
+**核心主题**:
+- **视觉 SLAM**: ORB-SLAM2/3、VINS-Mono/Fusion、DROID-SLAM
+- **激光 SLAM**: Cartographer、LOAM、LeGO-LOAM
+- **核心组件**:
+  - 前端: 特征提取、数据关联
+  - 后端: 位姿图优化、Bundle Adjustment
+  - 回环检测: 词袋模型（BoW）、深度学习
+  - 建图: 占据栅格、点云地图、语义地图
+- **数学工具**: GTSAM、g2o、Ceres Solver
+
+### 3.3 运动规划
+
+**核心主题**:
+- **路径规划**:
+  - 基于搜索: A*、Dijkstra、D*、JPS
+  - 基于采样: RRT、RRT*、PRM
+  - 基于优化: CHOMP、STOMP、TrajOpt
+  
+- **轨迹生成**:
+  - 样条曲线: B-spline、Bezier
+  - 最优控制: MPC
+  - 强化学习: 端到端规划
+
+- **碰撞检测**: AABB、OBB、GJK、BVH
+- **规划框架**: OMPL、MoveIt
+
+### 3.4 控制系统
+
+**核心主题**:
+- **经典控制**: PID、根轨迹、频域分析
+- **现代控制**: 状态空间、LQR、LQG
+- **模型预测控制（MPC）**: 实时约束优化
+- **阻抗/导纳控制**: 力控和柔顺控制
+- **机器人动力学**: 拉格朗日方程、Newton-Euler
+
+### 3.5 ROS/ROS2 与系统集成
+
+**核心主题**:
+- **ROS2 核心概念**: DDS 中间件、QoS、生命周期节点
+- **导航栈**: Nav2（AMCL + 规划 + 控制）
+- **机械臂**: MoveIt2（运动学 + 规划 + 执行）
+- **仿真集成**: Gazebo / Isaac Sim 与 ROS2 的桥接
+- **实时性**: ROS2 的实时通信和调度
+
+### 3.6 仿真与验证
+
+**核心主题**:
+- **物理仿真器**:
+  - Gazebo: 经典 ROS 仿真
+  - NVIDIA Isaac Sim: 高保真、GPU 加速
+  - MuJoCo: 高精度接触动力学
+  - PyBullet: 轻量级、Python 友好
+
+- **仿真场景**:
+  - 传感器仿真: 相机、LiDAR、IMU
+  - 环境仿真: 地形、光照、动态障碍
+  - 域适配: Sim-to-Real 迁移
+
+- **测试策略**:
+  - 单元测试 → 集成测试 → 仿真测试 → 封闭场地测试 → 实地测试
+
+### 3.7 具身智能（Embodied AI）
+
+这是机器人领域的前沿方向，将大模型引入机器人控制。
+
+**核心主题**:
+- **端到端学习**: 从传感器输入直接到动作输出
+- **基础模型**: RT-2、PaLM-E、Octo、π0
+- **模仿学习**: 从人类演示中学习
+- **强化学习**: 在仿真中训练，迁移到现实
+- **VLM 驱动**: 视觉-语言模型指导机器人行为
+- **数据收集**: 遥操作、自主数据采集
+
+---
+
+## 4. 高频面试问题
+
+> **难度标注**: ⭐ Basic | ⭐⭐ Intermediate | ⭐⭐⭐ Advanced
+> **频率标注**: 🔴 高频 | 🟡 中频 | 🟢 低频
+
+### 4.1 数学与运动学 (6 题)
+
+| # | 问题 | 难度 | 频率 |
+|---|------|------|------|
+| 1 | 解释齐次变换矩阵的物理意义 | ⭐ | 🔴 |
+| 2 | 正向运动学和逆向运动学的区别？各自的应用场景？ | ⭐ | 🔴 |
+| 3 | 如何表示三维空间中的旋转？对比欧拉角、四元数、旋转矩阵 | ⭐⭐ | 🔴 |
+| 4 | 雅可比矩阵在机器人学中的作用？奇异性是什么？ | ⭐⭐ | 🟡 |
+| 5 | 什么是 DH 参数？如何用于机械臂建模？ | ⭐⭐ | 🟡 |
+| 6 | 解释 SO(3) 和 SE(3) 的概念 | ⭐⭐⭐ | 🟢 |
+
+### 4.2 感知与 SLAM (7 题)
+
+| # | 问题 | 难度 | 频率 |
+|---|------|------|------|
+| 7 | 扩展卡尔曼滤波（EKF）的原理？和 KF 的区别？ | ⭐⭐ | 🔴 |
+| 8 | SLAM 的核心问题是什么？前端和后端分别做什么？ | ⭐⭐ | 🔴 |
+| 9 | 视觉 SLAM 中的回环检测为什么重要？如何实现？ | ⭐⭐ | 🟡 |
+| 10 | 相机、LiDAR、IMU 各有什么优缺点？如何融合？ | ⭐ | 🔴 |
+| 11 | Bundle Adjustment 的原理是什么？ | ⭐⭐⭐ | 🟡 |
+| 12 | 在 BEV（Bird's Eye View）空间做感知有什么优势？ | ⭐⭐ | 🟡 |
+| 13 | 点云数据处理有哪些常见方法？PointNet 的核心思想？ | ⭐⭐ | 🟡 |
+
+### 4.3 运动规划与控制 (7 题)
+
+| # | 问题 | 难度 | 频率 |
+|---|------|------|------|
+| 14 | A* 和 RRT 的原理和适用场景？ | ⭐⭐ | 🔴 |
+| 15 | MPC（模型预测控制）的原理？相比 PID 有什么优势？ | ⭐⭐ | 🔴 |
+| 16 | LQR 控制器的原理？它优化的目标是什么？ | ⭐⭐ | 🟡 |
+| 17 | 机械臂的轨迹规划如何做？如何避免奇异点？ | ⭐⭐ | 🟡 |
+| 18 | 在动态环境中如何实时避障？ | ⭐⭐ | 🟡 |
+| 19 | 如何实现柔顺控制（Compliance Control）？应用场景？ | ⭐⭐⭐ | 🟢 |
+| 20 | Sim-to-Real Gap 是什么？如何缓解？ | ⭐⭐ | 🟡 |
+
+### 4.4 系统与实践 (4 题)
+
+| # | 问题 | 难度 | 频率 |
+|---|------|------|------|
+| 21 | ROS2 相比 ROS1 的核心改进是什么？ | ⭐ | 🟡 |
+| 22 | 如何保证机器人系统的实时性？ | ⭐⭐ | 🟡 |
+| 23 | 机器人系统的安全设计应该考虑哪些方面？ | ⭐⭐ | 🟡 |
+| 24 | 你如何在仿真和实机之间迭代开发？ | ⭐ | 🟡 |
+
+### 4.5 行为面试 (4 题)
+
+| # | 问题 | 频率 |
+|---|------|------|
+| 25 | 描述一个你开发并部署到实机的机器人功能 | 🔴 |
+| 26 | 你遇到过的最难的技术挑战是什么？如何解决的？ | 🔴 |
+| 27 | 仿真和实机表现不一致时，你如何排查？ | 🟡 |
+| 28 | 你如何平衡系统复杂度和可靠性？ | 🟡 |
+
+---
+
+## 5. 系统设计题
+
+### 5.1 设计自主导航机器人系统
+
+**题目**: 为一个室内配送机器人设计完整的自主导航系统。
+
+**考察要点**:
+
+1. **系统架构**:
+   ```
+   传感器 → 感知模块 → 定位模块 → 规划模块 → 控制模块 → 执行器
+              ↑            ↑           ↑            ↑
+           目标检测      SLAM        路径规划      MPC/PID
+           障碍检测      AMCL        避障          速度控制
+   ```
+
+2. **传感器配置**:
+   - LiDAR: 建图和避障
+   - 深度相机: 近距离感知
+   - IMU + 轮式编码器: 里程计
+
+3. **定位方案**:
+   - AMCL（自适应蒙特卡洛定位）
+   - 已有地图 + 实时定位
+
+4. **规划方案**:
+   - 全局规划: A* / Dijkstra
+   - 局部规划: DWA / TEB
+   - 动态避障: 实时更新代价地图
+
+5. **安全设计**:
+   - 碰撞检测和紧急停止
+   - 速度限制（人多的区域降速）
+   - 通信中断时的安全行为
+
+### 5.2 设计机械臂抓取系统
+
+**考察要点**:
+1. 感知: 目标检测 + 位姿估计（6DoF）
+2. 运动学: IK 求解
+3. 规划: MoveIt2 轨迹规划
+4. 抓取: 抓取姿态生成、力控抓取
+5. 控制: 位置/力混合控制
+6. 安全: 碰撞检测、人机协作安全
+
+### 5.3 设计自动驾驶感知系统
+
+**考察要点**:
+1. 多传感器配置: Camera + LiDAR + Radar
+2. 感知任务: 检测、跟踪、预测
+3. BEV 感知: 多相机 BEV 融合
+4. 实时性要求: 推理延迟 < 50ms
+5. 冗余设计: 传感器互为备份
+6. 安全等级: ISO 26262 ASIL-D
+
+---
+
+## 6. 编程与实操题
+
+### 6.1 实现卡尔曼滤波
+
+```python
+import numpy as np
+
+class KalmanFilter:
+    """一维卡尔曼滤波器，用于位置估计。"""
+    
+    def __init__(self, process_noise, measurement_noise, initial_state, initial_uncertainty):
+        self.x = initial_state          # 状态估计
+        self.P = initial_uncertainty     # 估计不确定性
+        self.Q = process_noise           # 过程噪声
+        self.R = measurement_noise       # 测量噪声
+    
+    def predict(self, dt, velocity):
+        """预测步骤"""
+        # 状态转移: x = x + v * dt
+        self.x = self.x + velocity * dt
+        # 不确定性增加
+        self.P = self.P + self.Q * dt
+    
+    def update(self, measurement):
+        """更新步骤"""
+        # 卡尔曼增益
+        K = self.P / (self.P + self.R)
+        # 更新状态
+        self.x = self.x + K * (measurement - self.x)
+        # 更新不确定性
+        self.P = (1 - K) * self.P
+    
+    def get_state(self):
+        return self.x, self.P
+
+
+class ExtendedKalmanFilter:
+    """扩展卡尔曼滤波器，处理非线性系统。"""
+    
+    def __init__(self, state_dim, measurement_dim):
+        self.x = np.zeros(state_dim)      # 状态向量
+        self.P = np.eye(state_dim)         # 协方差矩阵
+        self.Q = np.eye(state_dim) * 0.01  # 过程噪声
+        self.R = np.eye(measurement_dim) * 0.1  # 测量噪声
+    
+    def predict(self, f, F_jacobian, dt):
+        """
+        f: 非线性状态转移函数
+        F_jacobian: 雅可比矩阵函数
+        """
+        F = F_jacobian(self.x, dt)
+        self.x = f(self.x, dt)
+        self.P = F @ self.P @ F.T + self.Q * dt
+    
+    def update(self, measurement, h, H_jacobian):
+        """
+        h: 非线性测量函数
+        H_jacobian: 测量雅可比矩阵
+        """
+        H = H_jacobian(self.x)
+        y = measurement - h(self.x)           # 残差
+        S = H @ self.P @ H.T + self.R          # 残差协方差
+        K = self.P @ H.T @ np.linalg.inv(S)   # 卡尔曼增益
+        self.x = self.x + K @ y               # 更新状态
+        I = np.eye(len(self.x))
+        self.P = (I - K @ H) @ self.P          # 更新协方差
+```
+
+### 6.2 实现 A* 路径规划
+
+```python
+import heapq
+import numpy as np
+
+class AStarPlanner:
+    """A* 路径规划器。"""
+    
+    def __init__(self, grid_map):
+        """grid_map: 2D numpy array, 0=free, 1=obstacle"""
+        self.map = grid_map
+        self.rows, self.cols = grid_map.shape
+    
+    def heuristic(self, a, b):
+        """曼哈顿距离"""
+        return abs(a[0] - b[0]) + abs(a[1] - b[1])
+    
+    def get_neighbors(self, node):
+        """获取邻居节点（8 连通）"""
+        neighbors = []
+        for dr, dc in [(-1,-1),(-1,0),(-1,1),(0,-1),(0,1),(1,-1),(1,0),(1,1)]:
+            r, c = node[0]+dr, node[1]+dc
+            if 0 <= r < self.rows and 0 <= c < self.cols:
+                if self.map[r, c] == 0:  # 自由空间
+                    cost = 1.414 if abs(dr)+abs(dc) == 2 else 1.0
+                    neighbors.append(((r, c), cost))
+        return neighbors
+    
+    def plan(self, start, goal):
+        """A* 搜索"""
+        open_set = [(0, start)]
+        came_from = {}
+        g_score = {start: 0}
+        f_score = {start: self.heuristic(start, goal)}
+        
+        while open_set:
+            _, current = heapq.heappop(open_set)
+            
+            if current == goal:
+                return self.reconstruct_path(came_from, current)
+            
+            for neighbor, cost in self.get_neighbors(current):
+                tentative_g = g_score[current] + cost
+                
+                if neighbor not in g_score or tentative_g < g_score[neighbor]:
+                    came_from[neighbor] = current
+                    g_score[neighbor] = tentative_g
+                    f_score[neighbor] = tentative_g + self.heuristic(neighbor, goal)
+                    heapq.heappush(open_set, (f_score[neighbor], neighbor))
+        
+        return None  # 无路径
+    
+    def reconstruct_path(self, came_from, current):
+        path = [current]
+        while current in came_from:
+            current = came_from[current]
+            path.append(current)
+        return path[::-1]
+```
+
+### 6.3 实现 PID 控制器
+
+```python
+class PIDController:
+    """PID 控制器，带抗积分饱和。"""
+    
+    def __init__(self, kp, ki, kd, output_limits=None):
+        self.kp = kp
+        self.ki = ki
+        self.kd = kd
+        self.output_limits = output_limits  # (min, max)
+        
+        self.integral = 0
+        self.prev_error = 0
+        self.first_call = True
+    
+    def compute(self, setpoint, measurement, dt):
+        """计算控制输出"""
+        error = setpoint - measurement
+        
+        # 比例项
+        p_term = self.kp * error
+        
+        # 积分项（带抗饱和）
+        self.integral += error * dt
+        i_term = self.ki * self.integral
+        
+        # 微分项
+        if self.first_call:
+            derivative = 0
+            self.first_call = False
+        else:
+            derivative = (error - self.prev_error) / dt
+        d_term = self.kd * derivative
+        
+        self.prev_error = error
+        
+        # 总输出
+        output = p_term + i_term + d_term
+        
+        # 输出限幅和抗饱和
+        if self.output_limits:
+            min_out, max_out = self.output_limits
+            if output > max_out:
+                output = max_out
+                self.integral -= error * dt  # 抗饱和回退
+            elif output < min_out:
+                output = min_out
+                self.integral -= error * dt
+        
+        return output
+```
+
+### 6.4 实现简单的点云处理
+
+```python
+import numpy as np
+from scipy.spatial import KDTree
+
+class PointCloudProcessor:
+    """点云处理工具。"""
+    
+    @staticmethod
+    def voxel_downsample(points, voxel_size=0.1):
+        """体素下采样"""
+        voxel_indices = np.floor(points / voxel_size).astype(int)
+        _, unique_indices = np.unique(voxel_indices, axis=0, return_index=True)
+        return points[unique_indices]
+    
+    @staticmethod
+    def remove_outliers(points, k=20, threshold=2.0):
+        """统计滤波去除外点"""
+        tree = KDTree(points)
+        distances, _ = tree.query(points, k=k+1)
+        mean_distances = np.mean(distances[:, 1:], axis=1)
+        std = np.std(mean_distances)
+        mask = mean_distances < (np.mean(mean_distances) + threshold * std)
+        return points[mask]
+    
+    @staticmethod
+    def plane_segmentation(points, distance_threshold=0.05, max_iterations=100):
+        """RANSAC 平面分割（分离地面）"""
+        best_inliers = None
+        best_count = 0
+        
+        for _ in range(max_iterations):
+            # 随机采样 3 个点
+            sample = points[np.random.choice(len(points), 3, replace=False)]
+            
+            # 拟合平面 ax + by + cz + d = 0
+            v1 = sample[1] - sample[0]
+            v2 = sample[2] - sample[0]
+            normal = np.cross(v1, v2)
+            normal = normal / np.linalg.norm(normal)
+            d = -np.dot(normal, sample[0])
+            
+            # 计算所有点到平面的距离
+            distances = np.abs(points @ normal + d)
+            inliers = distances < distance_threshold
+            
+            if inliers.sum() > best_count:
+                best_count = inliers.sum()
+                best_inliers = inliers
+        
+        plane_points = points[best_inliers]
+        remaining_points = points[~best_inliers]
+        return plane_points, remaining_points
+```
+
+### 6.5 ROS2 节点示例
+
+```python
+import rclpy
+from rclpy.node import Node
+from sensor_msgs.msg import LaserScan
+from geometry_msgs.msg import Twist
+
+class ObstacleAvoidanceNode(Node):
+    """简单的避障节点：检测前方障碍物并减速/转向。"""
+    
+    def __init__(self):
+        super().__init__('obstacle_avoidance')
+        
+        # 订阅激光雷达数据
+        self.scan_sub = self.create_subscription(
+            LaserScan, '/scan', self.scan_callback, 10)
+        
+        # 发布速度命令
+        self.cmd_pub = self.create_publisher(Twist, '/cmd_vel', 10)
+        
+        self.min_distance = 0.5  # 最小安全距离
+        self.get_logger().info('避障节点已启动')
+    
+    def scan_callback(self, msg):
+        """处理激光雷达数据"""
+        # 检查前方扇形区域
+        ranges = msg.ranges
+        center = len(ranges) // 2
+        front_sector = ranges[center-30:center+30]
+        min_front = min(r for r in front_sector if r > 0)
+        
+        cmd = Twist()
+        
+        if min_front < self.min_distance:
+            # 前方有障碍物：停止并转向
+            cmd.linear.x = 0.0
+            cmd.angular.z = 0.5  # 右转
+            self.get_logger().warn(f'检测到障碍物: {min_front:.2f}m')
+        else:
+            # 安全：前进
+            cmd.linear.x = 0.3
+            cmd.angular.z = 0.0
+        
+        self.cmd_pub.publish(cmd)
+
+
+def main():
+    rclpy.init()
+    node = ObstacleAvoidanceNode()
+    rclpy.spin(node)
+    node.destroy_node()
+    rclpy.shutdown()
+```
+
+---
+
+## 7. 备考策略与学习路径
+
+### 7.1 基础阶段（3-4 个月）
+
+1. **数学基础**:
+   - 线性代数（矩阵运算、旋转表示）
+   - 概率论和统计（滤波基础）
+   - 最优化基础
+
+2. **编程能力**:
+   - 精通 C++（内存管理、性能优化）
+   - 熟练使用 Python（数据处理、ML）
+   - 学习 ROS2 基础
+
+3. **机器人学基础**:
+   - 学习《Probabilistic Robotics》（Thrun）
+   - 理解运动学、动力学基础
+   - 完成 ROS2 官方教程
+
+### 7.2 进阶阶段（3-4 个月）
+
+1. **感知与 SLAM**:
+   - 学习 ORB-SLAM2 / VINS 的代码
+   - 实践 GTSAM / Ceres 优化
+   - 学习深度学习感知
+
+2. **规划与控制**:
+   - 学习运动规划算法（A*/RRT/MPC）
+   - 实践控制器设计（PID/LQR）
+   - 使用 MoveIt2 做机械臂规划
+
+3. **仿真实践**:
+   - 在 Gazebo / Isaac Sim 中搭建测试
+   - 练习 Sim-to-Real 迁移
+
+### 7.3 面试冲刺阶段（1-2 个月）
+
+1. **代码练习**: 手写 KF/EKF、A*、PID
+2. **系统设计**: 准备 2-3 个系统设计案例
+3. **前沿跟踪**: 了解 Embodied AI 和端到端学习
+4. **公司研究**: 了解目标公司的技术栈和产品
+
+---
+
+## 8. 行业薪资范围参考
+
+> 以下数据基于 2025-2026 年美国市场，仅供参考。
+
+| 级别 | 公司类型 | 年薪范围 (美元) | 说明 |
+|------|---------|---------------|------|
+| 初级 (0-2 年) | 机器人公司 | $120K - $180K | 硕士应届 |
+| 中级 (2-5 年) | 自动驾驶/人形机器人 | $170K - $300K | 含 RSU |
+| 高级 (5+ 年) | 顶级公司 (Tesla/Waymo) | $280K - $500K+ | Staff/Principal |
+| 所有级别 | 创业公司 (Figure/Unitree) | Base 中等，Equity 高 | 高风险高回报 |
+
+**中国市场** (人民币):
+- 初级: 25-50 万
+- 中级: 50-100 万
+- 高级: 100-200 万
+
+---
+
+## 9. 面试 Checklist
+
+- [ ] 能推导齐次变换矩阵和旋转表示
+- [ ] 能手写卡尔曼滤波器
+- [ ] 能实现 A*/RRT 路径规划
+- [ ] 能设计 PID/LQR/MPC 控制器
+- [ ] 理解 SLAM 的前端和后端
+- [ ] 能使用 ROS2 开发节点
+- [ ] 理解传感器融合（Camera/LiDAR/IMU）
+- [ ] 能在仿真环境中测试算法
+- [ ] 了解 Sim-to-Real 的挑战和解决方案
+- [ ] 了解 Embodied AI 和端到端学习的前沿
+- [ ] 准备了系统设计案例
+- [ ] 有实机测试经验
+
+---
+
 ## Related
 
-- [[面试岗位/README|面试岗位 总览]]
-- [[面试岗位/jobs|岗位地图 (jobs)]]
+- [[面试岗位/README|AI 面试准备 (Interviews)]]
+- [[面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[面试岗位/Computer_Vision_Engineer/question_bank|Computer Vision Engineer 题库]]
+- [[面试岗位/Machine_Learning_Engineer/question_bank|Machine Learning Engineer 题库]]
+- [[面试岗位/AI_Infrastructure_Engineer/question_bank|AI Infrastructure Engineer 题库]]
+- [[面试岗位/AI_Research_Engineer/AI_Research_Engineer|AI Research Engineer 面试指南]]
+
+---
+
+*Last updated: 2026-07-11*

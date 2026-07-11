@@ -459,4 +459,4 @@ vLLM 看到的显存即为配额，可同时运行多个 vLLM 实例共卡。
 - [[_concepts/dra]] — DRA 动态资源分配
 - [[架构基建/AI_Stack/HAMi_Operation_Guide]] — HAMi 运维指南
 - [[架构基建/AI_Stack/HAMi_for_dummy]] — HAMi 入门
-- [[AI运维/SRE_Reliability/HAMi_Troubleshooting_Guide]] — HAMi 问题排查
+- [[运维/SRE_Reliability/HAMi_Troubleshooting_Guide]] — HAMi 问题排查

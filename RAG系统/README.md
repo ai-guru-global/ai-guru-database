@@ -98,10 +98,10 @@ RAG 的生成阶段对 TTFT（首个 token 时间）和前缀缓存命中率非�
 详见 [部署推理](../部署推理/README.md) 完整专题。
 
 ### 进阶方向
-- [Agent 生产](../Agent/README.md) — Agentic RAG、记忆系统
+- [Agent 生产](../智能体/README.md) — Agentic RAG、记忆系统
 - [AI Gateway](../架构基建/CNCF_Cloud_Native_AI/README.md) — RAG 服务的流量治理
-- [测试](../AI测试/README.md) — RAG 系统的评估（RAGAS）
-- [MLOps](../MLOps/) — RAG 流水线的自动化
+- [测试](../测试/README.md) — RAG 系统的评估（RAGAS）
+- [MLOps](../模型运维/) — RAG 流水线的自动化
 
 ---
 
@@ -124,16 +124,16 @@ RAG 的生成阶段对 TTFT（首个 token 时间）和前缀缓存命中率非�
 - [[RAG系统/Embeddings/Sentence_Transformers_Deep_Dive.md|Sentence-Transformers: 嵌入模型框架]]
 - [[RAG系统/Embeddings/Matryoshka_Representation_Learning_Deep_Dive|Matryoshka Representation Learning 深度解析]]
 
-- [[_concepts/rag-systems.md]] — RAG 系统
-- [[_concepts/vector-database.md]] — 向量数据库
+- [[概念/rag-systems.md]] — RAG 系统
+- [[概念/vector-database.md]] — 向量数据库
 - [[Alibaba_Cloud_AI_Stack_Deep_Dive|阿里云 AI Stack]] — 内置知识库 + RAG 应用构建
 - [[部署推理/Inference_Engines/LLM_Inference_Engine_Selection_Guide.md|LLM 推理引擎选型指南]]
 - [[部署推理/Inference_Engines/vLLM_Deep_Dive.md|vLLM 深度解析]]
 - [[部署推理/Inference_Engines/SGLang_Deep_Dive.md|SGLang 深度解析]]
 - [[部署推理/Inference_Engines/Groq_Deep_Dive.md|Groq 深度解析]]
-- [[_concepts/agentic-rag.md|Agentic RAG]]
-- [[_concepts/text2sql.md|Text2SQL]]
-- [[_concepts/code-generation-workflow.md|代码生成工作流]]
+- [[概念/agentic-rag.md|Agentic RAG]]
+- [[概念/text2sql.md|Text2SQL]]
+- [[概念/code-generation-workflow.md|代码生成工作流]]
 - [[RAG系统/Agentic_RAG_Applications_for_dummy.md|Agentic RAG 应用大白话]]
 
 - [[RAG_Retrieval_Latency_Optimization|RAG 检索延迟优化]]

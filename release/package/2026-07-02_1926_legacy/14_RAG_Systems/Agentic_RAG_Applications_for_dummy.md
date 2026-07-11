@@ -190,4 +190,4 @@ Text2SQL：让 AI 会查数据库
 - [[_concepts/ai-agents|AI Agent]]
 - [[_concepts/tool-calling|工具调用]]
 - [[RAG系统/Advanced_RAG/Agentic_RAG_Guide|Agentic RAG 指南]]
-- [[AI编程/README|AI 编程工具]]
+- [[编程/README|AI 编程工具]]

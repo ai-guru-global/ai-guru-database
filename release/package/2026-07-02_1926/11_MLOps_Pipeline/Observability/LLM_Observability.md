@@ -304,11 +304,11 @@ graph TD
 - [[MLOps/Observability/ML_Observability_SLO]] — 系统层 SLO/SLI
 
 ### 跨章
-- [[AI运维/README]] — AI 系统运维（基础设施层）
+- [[运维/README]] — AI 系统运维（基础设施层）
 - [[伦理安全/AI_Security_2026/README]] — 安全与红队
 - README — 隐私保护
 - [[Agent/Agent_Evaluation/README]] — Agent 调用链评估
-- [[AI测试/Weights_Biases_Deep_Dive]] — W&B 实验追踪
+- [[测试/Weights_Biases_Deep_Dive]] — W&B 实验追踪
 - [[_synthesis/llm-observability-aiops|LLM 可观测性 × AIOps: 从系统监控到语义监控的范式跃迁]]
 
 ---

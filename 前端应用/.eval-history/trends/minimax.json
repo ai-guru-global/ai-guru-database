@@ -1,0 +1,44 @@
+{
+  "history": [
+    {
+      "date": "2026-04-15",
+      "timestamp": "2026-04-15T15:22:13.843Z",
+      "avgScore": 0,
+      "dimensionScores": {},
+      "modelName": "MiniMax M2.1",
+      "model": "MiniMax-M2.1"
+    },
+    {
+      "date": "2026-04-15",
+      "timestamp": "2026-04-15T16:05:44.766Z",
+      "avgScore": 0,
+      "dimensionScores": {},
+      "modelName": "MiniMax M2.1",
+      "model": "MiniMax-M2.1"
+    },
+    {
+      "date": "2026-04-15",
+      "timestamp": "2026-04-15T16:06:01.384Z",
+      "avgScore": 0,
+      "dimensionScores": {},
+      "modelName": "MiniMax M2.1",
+      "model": "MiniMax-M2.1"
+    },
+    {
+      "date": "2026-04-15",
+      "timestamp": "2026-04-15T16:25:38.875Z",
+      "avgScore": 0,
+      "dimensionScores": {},
+      "modelName": "MiniMax M2.1",
+      "model": "MiniMax-M2.1"
+    },
+    {
+      "date": "2026-04-15",
+      "timestamp": "2026-04-15T16:55:57.419Z",
+      "avgScore": 0,
+      "dimensionScores": {},
+      "modelName": "MiniMax M2.1",
+      "model": "MiniMax-M2.1"
+    }
+  ]
+}

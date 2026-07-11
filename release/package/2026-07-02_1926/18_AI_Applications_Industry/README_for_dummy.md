@@ -171,7 +171,7 @@ sources: []
 ## 下一步
 
 - 想深入某个行业？→ 查看对应子目录
-- 想学技术？→ 从 [AI入门](../AI入门/README_for_dummy.md) 开始
+- 想学技术？→ 从 [AI入门](../入门/README_for_dummy.md) 开始
 - 想找工作？→ [面试岗位/Interviews_for_dummy.md](../面试岗位/Interviews_for_dummy.md)
 
 ---

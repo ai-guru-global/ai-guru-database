@@ -11,7 +11,7 @@ sources: []
 ---
 
 > [!warning] 生产安全提示 · Production Safety
-> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 
 # LLM 微调任务 K8s 失败排障 Runbook
@@ -274,13 +274,13 @@ kubectl get pod <pod> -n <ns> -o jsonpath='{.spec.containers[*].resources}'
 
 - [[模型训练/Distributed_Training/Distributed_Training_Hang_Runbook|分布式训练 Hang 排障 Runbook]]
 - [[模型训练/Monitoring/Training_Job_Diagnosis_Workflow|训练任务诊断工作流]]
-- [[AI运维/SRE_Reliability/GPU_OOM_Troubleshooting_Guide|GPU OOM 排障指南]]
-- [[AI运维/SRE_Reliability/K8s_AI_Troubleshooting_Cheat_Sheet|K8s for AI 排查速查表]]
-- [[_concepts/lora-peft|LoRA / PEFT]]
-- [[_concepts/qlora|QLoRA]]
-- [[_concepts/deepspeed|DeepSpeed]]
-- [[_concepts/fsdp|FSDP]]
-- [[_concepts/gradient-checkpointing|Gradient Checkpointing]]
-- [[_concepts/nccl|NCCL]]
+- [[运维/SRE_Reliability/GPU_OOM_Troubleshooting_Guide|GPU OOM 排障指南]]
+- [[运维/SRE_Reliability/K8s_AI_Troubleshooting_Cheat_Sheet|K8s for AI 排查速查表]]
+- [[概念/lora-peft|LoRA / PEFT]]
+- [[概念/qlora|QLoRA]]
+- [[概念/deepspeed|DeepSpeed]]
+- [[概念/fsdp|FSDP]]
+- [[概念/gradient-checkpointing|Gradient Checkpointing]]
+- [[概念/nccl|NCCL]]
 - [[架构基建/Alibaba_Cloud_Proprietary_K8s_Context|阿里云专有云 K8s 上下文]]
-- [[AI运维/Kubernetes_Troubleshooting_Playbook|Kubernetes 运维排障 Playbook]]
+- [[运维/Kubernetes_Troubleshooting_Playbook|Kubernetes 运维排障 Playbook]]

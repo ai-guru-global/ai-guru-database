@@ -148,12 +148,12 @@ Checks that `visibility/` tags are applied correctly and aren't silently missing
 
 - **Untagged PII patterns:** Grep page bodies for patterns that commonly indicate sensitive data — lines containing `password`, `api_key`, `secret`, `token`, `ssn`, `email:`, `phone:` followed by an actual value (not a field description). If a page matches and lacks `visibility/pii` or `visibility/internal`, flag it as a likely mis-classification.
 - **`visibility/pii` without `sources:`:** A page tagged `visibility/pii` should always have a `sources:` frontmatter field — if there's no provenance, there's no way to verify the classification. Flag any `visibility/pii` page missing `sources:`.
-- **Visibility tags in taxonomy:** `visibility/` tags are system tags and must **not** appear in `_meta/taxonomy.md`. If found there, flag as misconfigured — they'd be counted toward the 5-tag limit on pages that include them.
+- **Visibility tags in taxonomy:** `visibility/` tags are system tags and must **not** appear in `治理/taxonomy.md`. If found there, flag as misconfigured — they'd be counted toward the 5-tag limit on pages that include them.
 
 **How to fix:**
 - For untagged PII patterns: add `visibility/pii` (or `visibility/internal` if it's team-context rather than personal data) to the page's frontmatter tags
 - For missing `sources:`: add provenance or escalate to the user — don't auto-fill
-- For taxonomy contamination: remove the `visibility/` entries from `_meta/taxonomy.md`
+- For taxonomy contamination: remove the `visibility/` entries from `治理/taxonomy.md`
 
 ### 10. Misc Promotion Candidates
 
@@ -335,7 +335,7 @@ Report findings as a structured list:
 ### Visibility Issues (N found)
 - `entities/user-records.md` — contains `email:` value pattern but no `visibility/pii` tag
 - `concepts/auth-flow.md` — tagged `visibility/pii` but missing `sources:` frontmatter
-- `_meta/taxonomy.md` — contains `visibility/internal` entry (system tag must not be in taxonomy)
+- `治理/taxonomy.md` — contains `visibility/internal` entry (system tag must not be in taxonomy)
 
 ### Misc Promotion Candidates (N found)
 Pages in misc/ that have ≥ 3 connections to a single project and are ready to be promoted:
@@ -416,7 +416,7 @@ For pages with `tier: supporting` (or unset) that have 0 incoming links AND have
 
 #### Action 5: Tag normalization
 
-Read `_meta/taxonomy.md` for the alias mapping (e.g., `ml → machine-learning`). For each page, replace known alias tags with their canonical form in the `tags:` frontmatter field. This is a subset of `tag-taxonomy`'s work — only alias fixes, no full audit.
+Read `治理/taxonomy.md` for the alias mapping (e.g., `ml → machine-learning`). For each page, replace known alias tags with their canonical form in the `tags:` frontmatter field. This is a subset of `tag-taxonomy`'s work — only alias fixes, no full audit.
 
 #### Action 6: Contradiction callouts
 

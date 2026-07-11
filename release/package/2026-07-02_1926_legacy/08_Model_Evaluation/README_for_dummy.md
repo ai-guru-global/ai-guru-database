@@ -233,7 +233,7 @@ BIG-Bench:
 
 - 想学模型训练？→ [模型训练/README_for_dummy.md](../模型训练/README_for_dummy.md)
 - 想学深度学习？→ [深度学习/README_for_dummy.md](../深度学习/README_for_dummy.md)
-- 想学测试？→ [AI测试/README_for_dummy.md](../AI测试/README_for_dummy.md)
+- 想学测试？→ [AI测试/README_for_dummy.md](../测试/README_for_dummy.md)
 
 ---
 

@@ -36,6 +36,8 @@ sources: []
 | [LLM 评估与测试大白话](./Benchmarks/LLM_Benchmarks_for_dummy.md) | BBH、Arena、红队测试、CI 集成评估、A/B 测试框架大白话 | 初学者 |
 | [**LLM 评估方法论 2026**](./LLM_Evaluation_2026.md) | 自动化基准、人工评估、LLM-as-Judge、评估流水线 | 所有从业者 |
 | [**RAG 评估深度解析**](./RAG_Evaluation_Deep_Dive.md) | 检索/生成评估、RAGAS/Ares/TruLens、LLM-as-Judge 偏见控制、A/B 测试 | RAG 开发者 |
+| [A/B 测试方案模板](./Automation/AB_Testing_Template.md) | 标准化 ML 模型 A/B 测试方案模板 | 算法 / 产品 |
+| [模型评估报告模板](./Automation/Evaluation_Report_Template.md) | 标准化模型评估报告模板 | 算法工程师 |
 
 ---
 
@@ -55,9 +57,9 @@ sources: []
 - [模型训练](../模型训练/) — 训练过程与评估的关系
 
 ### 进阶方向
-- [MLOps 流水线](../MLOps/) — 评估自动化和持续监控
-- [测试](../AI测试/README.md) — AI 系统测试框架
-- [AI Ops](../AI运维/README.md) — 模型性能监控与告警
+- [MLOps 流水线](../模型运维/) — 评估自动化和持续监控
+- [测试](../测试/README.md) — AI 系统测试框架
+- [AI Ops](../运维/README.md) — 模型性能监控与告警
 - [价值对齐](../伦理安全/Value_Alignment/Value_Alignment.md) — 公平性评估
 
 ---
@@ -84,11 +86,11 @@ sources: []
 - [[模型评估/Evaluation_Automation_2026|自动化模型评估 2026 (Evaluation Automation)]]
 - [[模型评估/README_for_dummy|08 模型评估 — 小白版 📝]]
 - [[模型评估/Benchmarks/LLM_Benchmarks_for_dummy|LLM 评估与测试大白话]]
-- [[_concepts/bbh|BBH]]
-- [[_concepts/llm-arena|LLM Arena]]
-- [[_concepts/red-teaming|红队测试]]
-- [[_concepts/ci-integrated-evaluation|CI 集成评估]]
-- [[_concepts/ab-testing-framework|A/B 测试框架]]
+- [[概念/bbh|BBH]]
+- [[概念/llm-arena|LLM Arena]]
+- [[概念/red-teaming|红队测试]]
+- [[概念/ci-integrated-evaluation|CI 集成评估]]
+- [[概念/ab-testing-framework|A/B 测试框架]]
 
 - [[模型评估/Model_Evaluation]] — 模型评估 (Model Evaluation) (共享: ab-testing, benchmark, metrics, model-evaluation)
 - [[模型评估/Evaluation_Tools/Online_Evaluation.md|Online_Evaluation]]

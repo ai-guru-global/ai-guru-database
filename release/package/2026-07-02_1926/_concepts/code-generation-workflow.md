@@ -108,5 +108,5 @@ CI/CD 构建、部署
 - [[_concepts/ai-agents]] — AI Agent
 - [[_concepts/ci-cd]] — CI/CD
 - [[_concepts/mlops]] — MLOps
-- [[AI编程/README]] — AI 编程工具
+- [[编程/README]] — AI 编程工具
 - [[MLOps/CI_CD/CI_CD_Pipeline_AI_2026]] — AI CI/CD 流水线 2026

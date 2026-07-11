@@ -170,8 +170,8 @@ metrics:
 
 ## Related
 
-- [[_concepts/model-serving]] — 模型服务
-- [[_concepts/model-gateway]] — AI Gateway
+- [[概念/model-serving]] — 模型服务
+- [[概念/model-gateway]] — AI Gateway
 - [[部署推理/Inference_Performance/README|推理性能专题]]
 - [[部署推理/Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]]
 - [[部署推理/Inference_Performance/Prefill_Decode_Disaggregation|Prefill-Decode 分离]]

@@ -86,13 +86,13 @@ sources:
 
 ### 安全、护栏与成本
 - [[MLOps/LLM_Guardrails_and_Safety_Ops_2026|LLM 护栏与安全运维 2026]] — 输入输出安全与护栏运营
-- [[AI编程/AI_Code_Security_Audit_Runbook|AI 代码安全审计 Runbook]] — AI 应用代码层安全审计
+- [[编程/AI_Code_Security_Audit_Runbook|AI 代码安全审计 Runbook]] — AI 应用代码层安全审计
 - [[模型训练/Training_Cost_Optimization_and_FinOps_2026|训练成本优化与 FinOps 2026]] — 成本治理与 FinOps 实践
 
 ### 网关、评估与前沿技术
 - [[93_Templates/LLM_Gateway_Deep_Dive|LLM Gateway 深度解析]] — 统一入口、路由、限流与可观测
 - [[模型评估/RAG_Evaluation_Deep_Dive|RAG 评估深度解析]] — RAG 系统质量评估
-- [[AI测试/Agent_Evaluation_Deep_Dive|Agent 评估深度解析]] — Agent 系统稳定性评估
+- [[测试/Agent_Evaluation_Deep_Dive|Agent 评估深度解析]] — Agent 系统稳定性评估
 - [[大模型/Test_Time_Compute_Scaling_2026|测试时计算缩放 2026]] — 推理阶段资源与质量权衡
 
 ### 相关概念

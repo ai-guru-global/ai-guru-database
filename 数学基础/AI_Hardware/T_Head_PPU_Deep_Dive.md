@@ -170,7 +170,7 @@ IoT / 端侧芯片:
 - **推理时用 FP8/FP4**：让同样硬件跑得更快、服务更多用户
 - 一块芯片覆盖「高精度训练」到「超高速推理」全部场景
 
-> 想了解更多数值精度的通用概念：[[_concepts/model-precision|模型精度 (Model Precision & Accuracy)]]
+> 想了解更多数值精度的通用概念：[[概念/model-precision|模型精度 (Model Precision & Accuracy)]]
 
 ### 3.3 真武系列路线图
 

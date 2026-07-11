@@ -1,0 +1,222 @@
+{
+  "type": "batch",
+  "models": [
+    "kimi"
+  ],
+  "summary": {
+    "kimi": {
+      "modelName": "Kimi K2.5",
+      "model": "moonshot-v1-8k",
+      "totalQuestions": 8,
+      "averageScore": 77.3,
+      "dimensionScores": {
+        "core_concepts": 77.3
+      }
+    }
+  },
+  "results": {
+    "kimi": [
+      {
+        "questionId": "cc-01",
+        "dimension": "core_concepts",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "在 Kubernetes 中，Pod 是一组一个或多个容器的集合，这些容器共享网络和存储资源。Pod 是 Kubernetes 集群中运行应用的基本单位，可以包含一个或多个紧密相关的容器。以下是 Pod 的一些基本概念和特点：\n\n1. **运行环境**：Pod 提供了运行容器所需的环境，包括共享的网络命名空间、存储卷以及特定的运行参数。\n\n2. **资源共享**：在同一个 Pod 内的容器共享存储、网络接口和进程间通信（IPC）。这种资源共享使得多个容器可以在 Pod 内部紧密协作。\n\n3. **生命周期**：Pod 内的容器共享相同的生命周期。如果 Pod 被调度到一个节点上，所有包含的容器将一并被启动和终止。\n\n4. **弹性和扩展性**：Pod 是无状态的，意味着它们可以被随时替换和重建。这使得 Kubernetes 能够灵活地进行负载均衡和故障恢复。\n\nPod 是 Kubernetes 的最小调度单元，而不是容器本身，有以下几个原因：\n\n1. **网络和存储共享**：Pod 内的容器之间共享网络和存储资源，这使得应用程序组件（如微服务）可以紧密集成。如果将容器单独调度，这种资源共享将变得复杂和低效。\n\n2. **简化管理和编排**：调度 Pod 而不是单个容器可以简化集群管理。无需分别控制复杂的容器集群；相反，Kubernetes 通过操控 Pod 来管理整体集群。\n\n3. **容错和管理**：Pods 提供了比容器更大的管理封装，可以组合不同功能的容器，如主应用程序容器和辅助容器，如日志收集、监控或代理。\n\n4. **更高层的抽象**：Kubernetes 旨在提供更高层次的抽象和声明式的管理。Pods 表示一组紧密相关的工作负载，提供了明确、封装的运行单元，使得问题排查和应用程序部署更加简洁。\n\n综上所述，Pod 作为一个整体单位提供了一个逻辑上的封闭环境，简化了容器的管理和调度，强化了资源管理、服务发现和网络连通性。因此，Pod 被认为是 Kubernetes 的最小调度单元。",
+        "latencyMs": 9914,
+        "score": {
+          "total": 83,
+          "breakdown": {
+            "keywordScore": 100,
+            "keywordHits": [
+              "最小调度单元",
+              "共享网络",
+              "共享存储",
+              "容器"
+            ],
+            "keywordTotal": 4,
+            "referenceScore": 50,
+            "lengthScore": 100,
+            "structureScore": 85
+          }
+        }
+      },
+      {
+        "questionId": "cc-02",
+        "dimension": "core_concepts",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "Kubernetes Service 定义了一种访问 Pod 的抽象方法。Service 是一个抽象的概念，它定义了一个访问 Pod 的访问策略，无论 Pod 的数量如何变化，Service 提供了一个统一的访问接口。Service 可以为后端的一组 Pod 提供一个单一的入口地址（ClusterIP）、一个域名或者是外部访问方式。下面是四种 Kubernetes Service 类型的说明及其使用场景：\n\n1. **ClusterIP**：\n   - 使用场景：在同一个集群内部提供服务发现和通信。\n   - 说明：ClusterIP 类型是默认的服务类型，它只在集群内部的 Pod 之间能访问。这种类型的 Service 只能让集群内的 Pod 访问到它，不会暴露给集群外部。ClusterIP 会为后端的一组 Pod 创建一个内部的虚拟IP地址。\n\n2. **NodePort**：\n   - 使用场景：需要从集群外部访问服务，但不想或不能使用 LoadBalancer。\n   - 说明：NodePort 类型的 Service 会在集群中每个 Node 的同一端口上开放服务。通过<NodeIP>:<NodePort> 的方式，可以从集群外部访问到集群内的服务。这种方式适用于集群外部没有云提供商的负载均衡器可用的情况，同时也不依赖于外部的网络设施。\n\n3. **LoadBalancer**：\n   - 使用场景：需要从集群外部访问服务并且有支持的云环境。\n   - 说明：LoadBalancer 类型的 Service 会在节点之外创建一个外部的负载均衡器。这通常是由云服务提供支持的（如 AWS ELB），通过创建一个从外部可以访问的负载均衡器，使得集群内的服务可以被外部访问。\n\n4. **ExternalName**：\n   - 使用场景：需要通过 CNAME 记录将服务映射到外部服务。\n   - 说明：ExternalName 类型的 Service 通过使用 DNS 别名将服务映射到外部服务。它使用一个 CNAME 记录，将 Service 的 DNS 名解析到指定的外部服务地址。这种方式需要配置 DNS 服务器以支持 CNAME 记录。\n\n每种类型的 Service 可以根据需要实现特定的访问控制和负载分配策略，选择适合的 Service 类型可以在不同的场景中提供合适的服务暴露方式。",
+        "latencyMs": 13769,
+        "score": {
+          "total": 83,
+          "breakdown": {
+            "keywordScore": 100,
+            "keywordHits": [
+              "ClusterIP",
+              "NodePort",
+              "LoadBalancer",
+              "ExternalName"
+            ],
+            "keywordTotal": 4,
+            "referenceScore": 50,
+            "lengthScore": 100,
+            "structureScore": 85
+          }
+        }
+      },
+      {
+        "questionId": "cc-03",
+        "dimension": "core_concepts",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "Kubernetes 控制平面是管理集群中所有核心对象的大脑。它维护集群状态、调度Pod、处理集群事件等功能，由几个关键组件组成，这些组件共同实现集群管理的任务。下面是控制平面核心组件的详细解释及其各自职责：\n\n1. **Kubernetes API Server (kube-apiserver)**:\n   - **职责**：它是Kubernetes控制平面的前端，负责接收和处理所有的RESTful请求。API Server 提供HTTP RESTful接口，负责资源对象的增删改查等操作。它是集群内调度器、控制器等组件交互的唯一入口。\n   - **特点**：所有组件通信都是通过API Server完成的，采用TLS加密通信确保通信安全。\n\n2. **etcd**:\n   - **职责**：Kubernetes使用etcd存储其API对象的状态信息。\n   - **特点**：etcd是一个一致性和高可用的键值存储系统，所有集群状态和服务配置都被持久化存储在etcd中，它是集群状态一致性的核心。\n\n3. **Kubernetes Scheduler (kube-scheduler)**:\n   - **职责**：调度器负责决定将新的Pod分配到哪个节点上。它需要考虑资源限制、服务质量需求、亲和性与反亲和性规则、数据局部性、工作负载间干扰和最后期限等因素来做出调度决策。\n   - **特点**：调度器运行独立的调度逻辑，通过监听API Server来获取新创建的未分配节点的Pod，并根据调度策略进行调度。\n\n4. **Kubernetes Controller Manager (kube-controller-manager)**:\n   - **职责**：Controller Manager包含多个控制器组件，用于处理集群常态或意外事件。主要的控制器包括节点控制器(Node Controller)，负责处理节点故障检测和响应；Replication Controller，确保指定数量的Pod副本正常运行；其他还有Deployment控制器、服务端点控制器等。\n   - **特点**：通过API Server监听事件，并根据集群状态的变化，自动进行调节和响应。\n\n5. **Kubernetes Cloud Controller Manager**:\n   - **职责**：在某些部署环境中（如公有云或者私有云），Kubernetes引入了Cloud Controller Manager这个组件，使得Kubernetes的某些功能依赖于云服务时，能够更加灵活地与云服务供应商整合。\n   - **特点**：包括路由控制器、服务控制器等。例如，在AWS环境中，云控制器管理者处理Elastic Load Balancer等云资源的配置。\n\n这些组件协同工作，共同负责Kubernetes集群的管理、调度和服务部署等功能。它们通常部署在Master节点上，并通过API Server进行相互通信。",
+        "latencyMs": 15980,
+        "score": {
+          "total": 83,
+          "breakdown": {
+            "keywordScore": 100,
+            "keywordHits": [
+              "apiserver",
+              "etcd",
+              "scheduler",
+              "controller-manager"
+            ],
+            "keywordTotal": 4,
+            "referenceScore": 50,
+            "lengthScore": 100,
+            "structureScore": 85
+          }
+        }
+      },
+      {
+        "questionId": "cc-04",
+        "dimension": "core_concepts",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "在 Kubernetes 中，Pod、ReplicaSet 和 Deployment 是三个非常重要的资源对象，它们之间构成了一种层次结构，管理着应用的部署和运行。\n\n1. **Pod**：\nPod 是 Kubernetes 中的最小部署单元，也是可以直接创建和管理的最小单元。Pod 代表着一组被封装在一起运行的容器（可以是一个，也可以是多个）。Pods 通常不单独存在于集群管理中，而是通过更高阶的抽象（如 Deployment）间接创建和扩展。\n\n2. **ReplicaSet**（RS）：\nReplicaSet 负责维持一组相同的 Pods 副本处于运行状态。它确保指定数量的 Pod 副本始终处于活动状态，即如果有 Pod 由于异常终止，ReplicaSet 会创建新的 Pod 来取代它。ReplicaSet 自身也是部署过程中的一个概念，但是通常会被抽象更高级别的对象如 Deployment 隐藏起来。\n\n3. **Deployment**：\nDeployment 是基于 ReplicaSet 的更高阶抽象，用于描述应用的部署过程。它不仅管理 Pods，还管理 ReplicaSets。Deployment 会根据用户定义的期望状态，自动创建或更新 ReplicaSets 以保证 Pod 副本的数量和更新的顺利进行。Deployment 提供了声明式更新的能力，可以自动处理应用的版本升级和回滚操作。简而言之，Deployment 指定“想要达到的状态”，而 Kubernetes 自动将当前状态变更为期望状态。\n\n层级结构：\n- **最上层**：Deployment - 用户通过定义 Deployment 来描述期望的状态和更新策略。\n- **中间层**：ReplicaSet - Deployment 通过控制 ReplicaSet 的更新来确保一定数量的 Pod 在运行。\n- **最下层**：Pod - ReplicaSet 确保一定数量的相同状态的 Pods 持续运行。\n\n这三个组件协同工作构成了 Kubernetes 中的声明式应用管理模型，为用户提供从应用声明、部署变更到自动扩展和故障恢复的一整套解决方案。",
+        "latencyMs": 10879,
+        "score": {
+          "total": 73,
+          "breakdown": {
+            "keywordScore": 75,
+            "keywordHits": [
+              "Deployment",
+              "ReplicaSet",
+              "副本"
+            ],
+            "keywordTotal": 4,
+            "referenceScore": 50,
+            "lengthScore": 100,
+            "structureScore": 85
+          }
+        }
+      },
+      {
+        "questionId": "cc-05",
+        "dimension": "core_concepts",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "Kubernetes 的声明式 API（Declarative API）是指开发者通过声明其期望达到的状态（desired state）来管理集群资源，Kubernetes 系统会负责将当前状态（current state）转变为开发者声明的期望状态。通过声明式的 API，一旦定义了资源应该具备的属性和配置，Kubernetes 就会自动确保资源实际的状态与用户声明的状态保持一致。\n\n与声明式 API 对立的是命令式 API（Imperative API），命令式 API 需要用户明确告诉系统每步如何去做以改变资源的状态。这种方式下，开发者需要关心操作的具体步骤和过程，例如在何时何地如何创建、删除或更新资源。这种方式通常被称为“命令式”因为它体现出了控制流，每次操作都需要以编程的方式来明确执行。\n\n声明式 API 和命令式 API 的本质区别在于：\n\n1. **用户关注点的差异**：声明式 API 中，用户关注于期望的结果而不是过程，而命令式 API 中用户需要关注操作的具体步骤和命令。\n\n2. **幂等性**：声明式 API 具有幂等性，即多次执行相同的声明操作会得到相同的结果。命令式 API 未必具有幂等性，同一命令重复执行可能会产生不同的效果。\n\n3. **自动纠正能力**：声明式 API 可以自动校正实际状态和期望状态之间的差异，一旦状态不匹配，Kubernetes 会尝试去修正。命令式 API 需要开发者明确指导每一步，没有自动的纠正机制。\n\n4. **容错性**：由于声明式 API 是以期望状态为中心的，这使得它更易于容错，即使在出现错误时，系统也会尽力使状态符合声明的期望。命令式 API 在每一步都需要用户构建容错逻辑。\n\n综上所述，声明式 API 更适合于大规模复杂系统的资源管理，因为它使得管理复杂资源配置的过程变得更加简单和可靠，而且它的自动纠正能力有助于维护状态的一致性。",
+        "latencyMs": 9937,
+        "score": {
+          "total": 63,
+          "breakdown": {
+            "keywordScore": 50,
+            "keywordHits": [
+              "声明式",
+              "期望状态"
+            ],
+            "keywordTotal": 4,
+            "referenceScore": 50,
+            "lengthScore": 100,
+            "structureScore": 85
+          }
+        }
+      },
+      {
+        "questionId": "cc-06",
+        "dimension": "core_concepts",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "在 Kubernetes 中，Pod 的 QoS 即 Quality of Service（服务质量），是 Kubernetes 在 node 上处理 pod 的内存和 CPU 请求、限制和保障的一种机制，共分为三种级别：\n\n1. **Guaranteed（保证级别）**: 一个 Pod 被认为是 Guaranteed 的，如果它对于每个容器：\n   - 同时设置了内存和 CPU 的 limits 和 requests。\n   - requests 和 limits 的值相等。\n\n2. **Burstable（突发级别）**: Pod 被认为是 Burstable 的，如果它至少有一个容器满足以下两个条件之一：\n   - 仅 CPU 或内存的 requests 和 limits 都设置，但不同时设置。\n   - requests 小于 limits。\n\n3. **BestEffort（尽力而为）**: Pod 被认为是 BestEffort 的，如果它至少有一个容器既没有设置 CPU 也没有设置内存的 requests 或 limits。\n\n驱逐优先级规则：\n当 Node（节点）资源不足时，Kubernetes 会按照从 BestEffort 到 Burstable 再到 Guaranteed 的顺序对 Pod 进行驱逐。驱逐优先级由低到高是：\n1. BestEffort（优先级最高，最可能被驱逐）\n2. Burstable\n3. Guaranteed（优先级最低，最不可能被驱逐）\n\n驱逐逻辑会根据 Pod 的 QoS 类别，并结合 QoS 相关的驱逐策略来决定哪些 Pod 会首先被驱逐。一般来说，Guaranteed Pod 拥有最高的保障，而 BestEffort Pod 在资源短缺时会首先被驱逐。这种设计的目的是为了确保系统中最重要的 Pod 能够继续运行，同时尽量减少非关键 Pod 的影响。",
+        "latencyMs": 9102,
+        "score": {
+          "total": 83,
+          "breakdown": {
+            "keywordScore": 100,
+            "keywordHits": [
+              "Guaranteed",
+              "Burstable",
+              "BestEffort",
+              "requests",
+              "limits"
+            ],
+            "keywordTotal": 5,
+            "referenceScore": 50,
+            "lengthScore": 100,
+            "structureScore": 85
+          }
+        }
+      },
+      {
+        "questionId": "cc-07",
+        "dimension": "core_concepts",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "### ConfigMap 与 Secret 区别\n\n在 Kubernetes 中，ConfigMap 和 Secret 都用于配置应用程序，但它们的存放信息的类型和用途不同：\n\n1. **ConfigMap:**\n   - 用于存储非机密的数据。\n   - 可以存放配置文件、数据库连接字符串、系统配置等。\n   - 在 ConfigMap 中数据默认公开可见，在Cluster中没有加密。\n   \n2. **Secret:**\n   - 用于存储敏感数据。\n   - 可以存放密码、密钥、Token等信息。\n   - 数据在 API server 中默认加密处理，对攻击者来说不易获取。\n\n### 使用方式\n\n#### ConfigMap 使用方式\nConfigMap 可以使用以下几种方式将数据传递给Pods:\n   \n1. 通过环境变量：\n   \n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: my-configmap\ndata:\n  # key-value 数据对用来设置环境变量\n  key1: value1\n  key2: value2\n\n---\napiVersion: v1\nkind: Pod\nmetadata:\n  name: mypod\nspec:\n  containers:\n    - name: mypod\n      image: nginx\n      env:\n        - name: KEY_1\n          valueFrom:\n            configMapKeyRef:\n              name: my-configmap\n              key: key1\n```\n   \n2. 通过文件系统：\n\n```yaml\napiVersion: v1\nkind: Pod\nmetadata:\n  name: mypod\nspec:\n  containers:\n    - name: mypod\n      image: nginx\n      volumeMounts:\n        - name: config-volume\n          mountPath: /etc/config\n  volumes:\n    - name: config-volume\n      configMap:\n        name: my-configmap\n```\n\n#### Secret 使用方式\n\n创建一个 Secret：\n\n```yaml\napiVersion: v1\nkind: Secret\nmetadata:\n  name: my-secret\ntype: Opaque\ndata:\n  username: YWRtaW4=\n  password: MWYyZDFlMmU2N2Rm\n```\n\n在 Pod 中引用这个 Secret：\n\n```yaml\napiVersion: v1\nkind: Pod\nmetadata:\n  name: mypod\nspec:\n  containers:\n    - name: mypod\n      image: myimage\n      env:\n        - name: DB_USERNAME\n          valueFrom:\n            secretKeyRef:\n              name: my-secret\n              key: username\n        - name: DB_PASSWORD\n          valueFrom:\n            secretKeyRef:\n              name: my-secret\n              key: password\n      # 或者通过卷挂载到文件系统\n      volumeMounts:\n      - name: secret-volume\n        mountPath: /secret\n  volumes:\n    - name: secret-volume\n      secret:\n        secretName: my-secret\n```\n\n### Secret 的安全局限性\n\n尽管 Secret 在 Kubernetes API server 中加密存储数据，但依然存在一些安全局限性：\n\n1. **序列化数据泄露：** 因为 Kubernetes 的Secrets 被序列化存储，镜像拉取时有潜在的风险，镜像中潜在的漏洞可能导致数据泄露。\n\n2. **ETCD存储安全性：** Kubernetes 底层的数据存储依赖于 ETCD，如果 ETCD 本身的安全防护不当，攻击者可通过它访问整个 etcd，其中包括 Secret 信息。\n\n3. **传输过程中的安全：** Kubernetes API server 和 Kubernetes 各组件间传输 Secret 数据时使用的是HTTPS，但这依赖于证书的有效性，若证书被篡改，数据在传输过程中依然存在被篡改的风险。\n\n4. **权限管理：** 若不当配置访问权限，Secret 有被发现的风险，因此需要合理配置RBAC以确保只有需要 Secret 的组件才能访问它。\n\n5. **Volume 存储安全问题：** 若将 Secret 内容挂载到 Pod 的 Volume 中，容器可能具有直接访问密钥的能力，导致密钥潜在泄露的风险。\n\n因此，为保护 Kubernetes 中的 Secret 信息，需要综合考虑以上潜在的安全风险，并采取相应的安全措施。",
+        "latencyMs": 19116,
+        "score": {
+          "total": 77,
+          "breakdown": {
+            "keywordScore": 80,
+            "keywordHits": [
+              "ConfigMap",
+              "Secret",
+              "加密",
+              "etcd"
+            ],
+            "keywordTotal": 5,
+            "referenceScore": 50,
+            "lengthScore": 100,
+            "structureScore": 100
+          }
+        }
+      },
+      {
+        "questionId": "cc-08",
+        "dimension": "core_concepts",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "Kubernetes Namespace 是 Kubernetes 集群中的一个概念，用于将不同的用户、组织和项目隔离开来，以便每个用户、组织或项目可以在其自己的命名空间内工作而不会互相干扰。Namespace 提供了一种将集群资源划分成逻辑分区的手段，用于组织和隔离集群内资源，以实现多用户情况下的资源管理、配额限制和网络隔离等功能。\n\nNamespace 解决的问题包括但不限于：\n\n1. 资源隔离：在同一个集群中，不同的用户或组可以有不同的 Namespace，这样可以避免资源命名冲突。\n2. 配额限制：可以通过 Namespace 级别配置资源配额（Resource Quotas），来控制单个 Namespace 可以使用的资源量，以确保不同团队或项目合理分配资源。\n3. 安全性管理：可以对特定的 Namespace 应用不同的安全策略和访问控制，保护集群资源不被未授权访问。\n4. 组织和项目管理：Namespace 可以简化项目规模化管理和部署，便于将资源分配给不同的项目组。\n\n默认情况下，Kubernetes 集群有以下几种 Namespace：\n\n1. `default`：默认的 Namespace，如果没有指定 Namespace，新创建的资源将自动放在这个 Namespace 下。\n2. `kube-system`：Kubernetes 系统组件和服务使用的 Namespace，比如 kube-apiserver、kube-scheduler、kube-controller-manager、coredns 等。\n3. `kube-public`：通常用于存储与集群内所有用户共享的公共信息，比如集群信息 API（cluster-info）。\n4. `kube-node-lease`：用于节点租约（Node Lease）对象，管理节点和 kubelet 心跳信息。\n5. `kube-system/kube-dns`：在较老版本的 Kubernetes 中用于 DNS 服务的 Namespace。\n\n在不同版本的 Kubernetes 中，默认 Namespace 可能会有所变化，比如 `kube-system/kube-dns` 现在通常被 `kube-system` 替换。为了避免命名冲突，自定义 Namespace 时，建议不使用这些默认的 Namespace 名字。",
+        "latencyMs": 10382,
+        "score": {
+          "total": 73,
+          "breakdown": {
+            "keywordScore": 80,
+            "keywordHits": [
+              "Namespace",
+              "资源隔离",
+              "default",
+              "kube-system"
+            ],
+            "keywordTotal": 5,
+            "referenceScore": 50,
+            "lengthScore": 100,
+            "structureScore": 75
+          }
+        }
+      }
+    ]
+  },
+  "questionCount": 8,
+  "id": "2055c884-424b-41dd-a708-0c9faaea6343",
+  "timestamp": "2026-04-15T14:16:20.612Z"
+}

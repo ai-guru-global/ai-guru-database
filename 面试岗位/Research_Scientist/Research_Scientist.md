@@ -1,10 +1,10 @@
 ---
 title: "Research Scientist 面试指南"
 category: "21-interviews-research-scientist"
-tags: ["interviews", "career", "experience", "practitioners", "research", "optimization", "theory", "paper-writing"]
-summary: "Research Scientist 面试题库，覆盖优化理论、深度学习理论、研究方法与实验平台设计，含难度与频率标注。"
+tags: ["interviews", "career", "experience", "practitioners", "research", "optimization", "theory", "paper-writing", "deep-learning", "experiment-design"]
+summary: "Research Scientist 面试全流程指南，覆盖基础研究方法论、优化理论、深度学习理论、论文阅读与复现、实验设计与统计分析、学术写作和前沿研究面试。适用于 Google DeepMind、Meta FAIR、Microsoft Research、OpenAI 等顶级研究机构的 Research Scientist 岗位。"
 created: 2026-05-31
-updated: 2026-07-01
+updated: 2026-07-11
 tier: supporting
 aliases:
   - "Research_Scientist"
@@ -15,37 +15,625 @@ sources: []
 
 # Research Scientist 面试指南
 
-> 本页面由 4 个子文件（interview_preparing.md, question_bank.md, company_level_question_bank.md, interview_answers.md）合并而成，覆盖 Research Scientist 岗位的面试全流程。
+> **一句话理解**: Research Scientist 是 AI 领域的知识开拓者——通过严谨的科学方法，发现新的原理、设计新的算法、推动领域前沿，在 NeurIPS/ICML/ICLR 等顶级会议上发表有影响力的研究成果。
 
-
-## 面试准备
-
-## 核心职责
-- **前沿研究**: 算法创新、理论分析与论文产出。
-- **学术影响力**: 会议投稿、开源与社区贡献。
-- **研究到落地**: 与工程团队协作转化成果。
-
-## 核心能力
-- **研究方法**: 问题定义、对比实验、消融分析。
-- **数学与理论**: 优化、概率、统计学习理论。
-- **工程实践**: 复现论文、实验平台与效率。
-
-## 常见考点
-- **论文深挖**: 研究动机、方法优势与局限。
-- **创新能力**: 如何提出可验证的新思路。
-- **实验设计**: 基线选择、消融与复现实验。
-
-## 项目准备
-- **论文复现 + 创新改进**: 有对比指标提升。
-- **研究故事**: 从问题 → 方法 → 结果 → 讨论。
-
-## 简历要点
-- **发表与开源**: 论文、代码、影响力指标。
-- **贡献清晰**: 你的创新点与具体贡献。
+> **与相关岗位的关系**: 本岗位侧重**基础理论研究**，适合追求学术深度和原创性发现的候选人。如果更关注 AI 技术的业务落地，请参考 [[面试岗位/Applied_Scientist/Applied_Scientist|Applied Scientist 面试指南]]；如果更关注研究系统的工程实现，请参考 [[面试岗位/AI_Research_Engineer/AI_Research_Engineer|AI Research Engineer 面试指南]]；如果更关注 AI 领域的前沿算法研究，请参考 [[面试岗位/AI_Research_Scientist/AI_Research_Scientist|AI Research Scientist 面试指南]]。四个岗位有重叠但侧重点不同，本指南侧重通用研究方法论和理论基础。
 
 ---
-*Last updated: 2026-06-04*
+
+## Table of Contents
+
+- [1. 岗位定位与核心职责](#1-岗位定位与核心职责)
+  - [1.1 岗位定位](#11-岗位定位)
+  - [1.2 核心职责](#12-核心职责)
+  - [1.3 核心技能栈](#13-核心技能栈)
+  - [1.4 与相近岗位的区别](#14-与相近岗位的区别)
+- [2. 技术能力要求](#2-技术能力要求)
+- [3. 核心知识领域](#3-核心知识领域)
+- [4. 高频面试问题](#4-高频面试问题)
+- [5. 研究设计题](#5-研究设计题)
+- [6. 论文复现与编程题](#6-论文复现与编程题)
+- [7. 备考策略与学习路径](#7-备考策略与学习路径)
+- [8. 行业薪资范围参考](#8-行业薪资范围参考)
+- [9. 面试 Checklist](#9-面试-checklist)
+- [Related](#related)
+
+---
+
+## 1. 岗位定位与核心职责
+
+### 1.1 岗位定位
+
+Research Scientist（研究科学家）是 AI 领域最偏学术研究的岗位级别，通常存在于大型科技公司的研究院（Google DeepMind、Meta FAIR、Microsoft Research、OpenAI）以及国家级研究机构。与 Applied Scientist 不同，Research Scientist 的核心使命是**推动基础科学和理论的前沿**，而非直接解决产品问题。
+
+Research Scientist 的典型特征：
+- **博士背景**: 绝大多数 Research Scientist 拥有 CS/ML/Stats 等相关领域的博士学位
+- **发表记录**: 有在顶会（NeurIPS、ICML、ICLR、ACL、CVPR）发表一作论文的记录
+- **学术影响力**: 有一定的引用量和社区影响力
+- **长期视野**: 研究项目的时间跨度通常为 6 个月到数年
+- **自由度**: 在研究方向上有较大的自由度（尤其是在工业研究院）
+
+Research Scientist 的研究方向涵盖 AI 的各个子领域：
+- **理论基础**: 优化理论、学习理论、信息论
+- **深度学习**: 架构设计、训练方法、理论分析
+- **NLP**: 语言模型、对话系统、机器翻译
+- **CV**: 图像生成、视频理解、3D 视觉
+- **强化学习**: RL 理论、多智能体、RLHF
+- **AI 安全**: 对齐、可解释性、鲁棒性
+- **其他**: 图学习、因果推断、元学习
+
+### 1.2 核心职责
+
+| 职责领域 | 具体内容 | 交付物 |
+|---------|---------|--------|
+| **前沿研究** | 提出新的理论/方法，设计和执行实验 | 研究论文、技术报告 |
+| **论文发表** | 撰写并投稿顶级会议/期刊 | 发表论文 |
+| **代码实现** | 将研究想法实现为可复现的代码 | 开源代码、实验框架 |
+| **学术服务** | 审稿、组织 Workshop/Tutorial | 审稿记录 |
+| **研究指导** | 指导研究实习生和初级研究员 | Mentorship |
+| **技术交流** | 内部研究报告、外部学术演讲 | Talk、Blog |
+| **与产品协作** | 将有潜力的研究成果转化为产品（可选） | 技术转移 |
+| **开源贡献** | 维护开源研究项目 | 开源项目 |
+
+### 1.3 核心技能栈
+
+| 维度 | 关键技能 | 说明 |
+|------|---------|------|
+| **数学基础** | 线性代数、概率论、优化、信息论 | 研究的根基 |
+| **深度学习** | 架构原理、训练技巧、理论分析 | 核心工具 |
+| **研究方法论** | 问题定义、实验设计、消融分析 | 科学思维 |
+| **编程** | PyTorch/JAX、分布式训练、性能优化 | 实验工具 |
+| **学术写作** | 论文结构、叙述逻辑、可视化 | 发表能力 |
+| **文献调研** | 快速阅读、批判性分析、综述写作 | 研究基础 |
+| **演讲** | 会议 Talk、白板讲解、海报展示 | 学术交流 |
+| **实验工程** | 大规模实验管理、可复现性保证 | 实验效率 |
+
+### 1.4 与相近岗位的区别
+
+| 岗位 | 核心关注点 | 与 Research Scientist 的差异 |
+|------|-----------|---------------------------|
+| **Applied Scientist** | 研究成果的业务落地 | 更关注业务指标，Research 更关注学术贡献 |
+| **AI Research Engineer** | 研究系统的工程实现 | 更偏工程和系统，Research 更偏理论和创新 |
+| **AI Research Scientist** | AI 前沿算法研究 | 更聚焦 AI/ML 领域，Research 可能涵盖更广的理论基础 |
+| **大学教授** | 教学 + 研究 + 基金申请 | 更多的教学和行政负担，工业研究更专注 |
+| **ML Engineer** | 模型开发和部署 | 更偏工程实践，Research 更偏科学发现 |
+
+---
+
+## 2. 技术能力要求
+
+### 基础级 (初级 Research Scientist / 博士后)
+
+- **数学深度**: 在至少一个数学领域有深入理解（优化、概率、线性代数等）
+- **研究经验**: 有独立完成研究项目并发表的经验
+- **DL 实践**: 熟练使用 PyTorch/JAX 进行模型训练和实验
+- **领域专精**: 在至少一个 AI 子领域有深度知识
+- **论文写作**: 能独立撰写高质量的研究论文
+- **实验设计**: 能设计严谨的实验，包括基线选择、消融分析、统计检验
+
+### 进阶级 (中级 Research Scientist)
+
+- **独立研究**: 能从零提出研究问题并设计解决方案
+- **领域影响力**: 在研究社区有一定的可见度和引用量
+- **跨界融合**: 能将不同领域的方法融合产生新想法
+- **指导能力**: 能指导研究实习生和初级成员
+- **大规模实验**: 能设计和执行需要大规模计算的研究
+- **审稿服务**: 能为顶级会议提供高质量审稿
+
+### 专家级 (高级 Research Scientist / Staff/Principal)
+
+- **方向引领**: 能定义和引领一个研究方向
+- **高影响力成果**: 有被广泛引用和采用的研究成果
+- **团队建设**: 能组建和管理研究团队
+- **战略视野**: 能识别未来 3-5 年的重要研究方向
+- **行业影响力**: 在研究社区有很高的声誉和影响力
+- **跨团队协作**: 能协调多个研究小组和产品团队
+
+---
+
+## 3. 核心知识领域
+
+### 3.1 优化理论
+
+**核心主题**:
+- **凸优化**: 凸集、凸函数、对偶理论、KKT 条件
+- **非凸优化**: 鞍点、局部最优、 landscapes 分析
+- **梯度方法**: SGD、Adam、自然梯度、二阶方法
+- **收敛性分析**: 收敛率、复杂度界限
+- **分布式优化**: 通信效率、异步优化
+- **元学习/优化**: Learning to Optimize
+
+### 3.2 学习理论
+
+**核心主题**:
+- **PAC 学习**: Probably Approximately Correct framework
+- **VC 维**: 模型复杂度和泛化能力的关系
+- **Rademacher 复杂度**: 数据相关的复杂度度量
+- **泛化误差**: 训练误差和测试误差的差距分析
+- **Double Descent**: 深度学习中的双下降现象
+- **NTK (Neural Tangent Kernel)**: 无限宽网络的理论分析
+
+### 3.3 深度学习理论
+
+**核心主题**:
+- **表示学习**: 为什么深度网络能学习好的表示
+- **训练动力学**: 梯度流的几何分析
+- **泛化之谜**: 过参数化模型为什么能泛化
+- **损失曲面**: 损失函数的几何结构
+- **模式连接**: Flat Minima、Sharp Minima
+- ** Lottery Ticket Hypothesis**: 稀疏子网络的存在
+
+### 3.4 大模型研究
+
+**核心主题**:
+- **Scaling Laws**: 模型大小、数据量、计算量的关系
+- **涌现能力**: 模型规模达到阈值后出现的新能力
+- **In-Context Learning**: 上下文学习的机理
+- **Chain-of-Thought**: 推理能力的来源
+- **对齐**: RLHF、DPO、Constitutional AI 的理论基础
+- **推理**: System 1 vs System 2 thinking in LLMs
+
+### 3.5 强化学习理论
+
+**核心主题**:
+- **MDP 理论**: 马尔可夫决策过程的基础
+- **样本复杂度**: RL 的样本效率
+- **探索-利用**: 多臂老虎机、UCB、Thompson Sampling
+- **离线 RL**: 从固定数据集中学习
+- **多智能体**: 纳什均衡、Markov Game
+- **RLHF 理论**: 偏好学习的理论基础
+
+### 3.6 研究方法论
+
+**核心主题**:
+- **问题定义**: 如何将模糊的直觉转化为清晰的研究问题
+- **基线选择**: 如何选择公平且有意义的比较基线
+- **消融分析**: 如何系统性地验证每个组件的贡献
+- **统计显著性**: 如何判断实验结果是否可信
+- **可复现性**: 如何确保实验可以被他人复现
+- **负面结果**: 如何处理和报告不支持的假设
+
+### 3.7 论文写作与发表
+
+**核心主题**:
+- **论文结构**: Abstract → Introduction → Related Work → Method → Experiments → Conclusion
+- **叙述逻辑**: 如何讲一个引人入胜的研究故事
+- **可视化**: 如何用图表有效传达研究结果
+- **审稿流程**: Rebuttal 策略、审稿标准
+- **投稿策略**: 会议选择、时间规划
+
+---
+
+## 4. 高频面试问题
+
+> **难度标注**: ⭐ Basic | ⭐⭐ Intermediate | ⭐⭐⭐ Advanced
+> **频率标注**: 🔴 高频 | 🟡 中频 | 🟢 低频
+
+### 4.1 论文与研究深挖 (8 题)
+
+| # | 问题 | 难度 | 频率 |
+|---|------|------|------|
+| 1 | 详细讲解你最重要的一篇论文，从动机到方法到结果 | ⭐⭐ | 🔴 |
+| 2 | 你的论文中最关键的创新点是什么？为什么之前没有人这样做？ | ⭐⭐ | 🔴 |
+| 3 | 你的方法的局限性是什么？如果给你更多资源，你会如何改进？ | ⭐⭐ | 🔴 |
+| 4 | 选择一篇你最近读的最exciting的论文，分析它的贡献和局限 | ⭐⭐ | 🟡 |
+| 5 | 如果你要在一个新的领域开始研究，你会如何做文献调研？ | ⭐ | 🟡 |
+| 6 | 你如何判断一个研究问题是否值得投入时间？ | ⭐⭐ | 🟡 |
+| 7 | 描述一次你的实验结果与预期不符的经历，你如何处理？ | ⭐⭐ | 🟡 |
+| 8 | 如何设计消融实验？消融的维度和顺序如何选择？ | ⭐ | 🟡 |
+
+### 4.2 理论基础 (8 题)
+
+| # | 问题 | 难度 | 频率 |
+|---|------|------|------|
+| 9 | 解释梯度下降的收敛性分析。SGD 的收敛率是多少？ | ⭐⭐ | 🔴 |
+| 10 | 什么是 VC 维？它和模型泛化有什么关系？ | ⭐⭐ | 🟡 |
+| 11 | 解释 Double Descent 现象。它为什么挑战了经典学习理论？ | ⭐⭐ | 🟡 |
+| 12 | Lottery Ticket Hypothesis 的核心论点是什么？ | ⭐ | 🟡 |
+| 13 | Adam 优化器的收敛性有什么理论保证？有什么局限？ | ⭐⭐ | 🟢 |
+| 14 | NTK（Neural Tangent Kernel）理论的核心假设是什么？ | ⭐⭐⭐ | 🟢 |
+| 15 | 解释 PAC 学习框架和样本复杂度的概念 | ⭐⭐ | 🟢 |
+| 16 | 过参数化模型为什么能泛化？有哪些理论解释？ | ⭐⭐⭐ | 🟡 |
+
+### 4.3 深度学习前沿 (6 题)
+
+| # | 问题 | 难度 | 频率 |
+|---|------|------|------|
+| 17 | 解释 Scaling Laws。Chinchilla 定律如何改变了训练策略？ | ⭐⭐ | 🔴 |
+| 18 | 大模型的"涌现能力"是什么？有哪些不同的解释？ | ⭐⭐ | 🔴 |
+| 19 | In-Context Learning 的机理有哪些理论解释？ | ⭐⭐⭐ | 🟡 |
+| 20 | RLHF 和 DPO 的理论区别是什么？各自的优缺点？ | ⭐⭐ | 🟡 |
+| 21 | MoE（Mixture of Experts）的负载均衡问题的理论分析 | ⭐⭐⭐ | 🟢 |
+| 22 | Flash Attention 的 IO-aware 优化为什么能大幅加速？ | ⭐⭐ | 🟡 |
+
+### 4.4 研究设计与方法 (4 题)
+
+| # | 问题 | 难度 | 频率 |
+|---|------|------|------|
+| 23 | 如何设计一个实验来验证"模型规模越大，推理能力越强"这个假设？ | ⭐⭐ | 🟡 |
+| 24 | 你的实验只有 3 个随机种子，如何判断结果是否显著？ | ⭐⭐ | 🟡 |
+| 25 | 如何处理大规模实验中的超参数选择偏差？ | ⭐⭐⭐ | 🟢 |
+| 26 | 你如何确保你的研究代码是可复现的？ | ⭐ | 🟡 |
+
+### 4.5 行为面试 (4 题)
+
+| # | 问题 | 频率 |
+|---|------|------|
+| 27 | 描述你的长期研究愿景（3-5 年） | 🔴 |
+| 28 | 你最重要的研究失败是什么？你学到了什么？ | 🟡 |
+| 29 | 你如何选择研究问题？是追随热点还是开辟新方向？ | 🟡 |
+| 30 | 你如何看待基础研究和应用研究的关系？ | 🟡 |
+
+---
+
+## 5. 研究设计题
+
+### 5.1 设计一个研究方案
+
+**题目**: 你认为当前 LLM 在多步推理方面有哪些关键局限？设计一个研究方案来改进。
+
+**考察要点**:
+
+1. **问题定义**:
+   - 明确"多步推理"的定义（数学推理、逻辑推理、规划？）
+   - 现有方法的具体局限（在哪一步失败？为什么？）
+   - 可量化的评估指标
+
+2. **文献调研**:
+   - 现有方法（CoT、ToT、Self-Consistency）
+   - 失败案例的分析
+   - 理论上的理解
+
+3. **方法设计**:
+   - 核心创新点
+   - 与现有方法的区别
+   - 理论动机
+
+4. **实验设计**:
+   - 数据集选择（GSM8K、MATH、StrategyQA）
+   - 基线选择
+   - 消融实验维度
+   - 统计显著性计划
+
+5. **预期结果和风险**:
+   - 最好情况和最坏情况
+   - 如果方法不work，Plan B 是什么
+
+### 5.2 论文批判性分析
+
+**题目**: 给定一篇最近的论文（面试官提供），在 15 分钟内阅读并分析其优缺点。
+
+**考察要点**:
+1. 论文的核心贡献和主张
+2. 方法的关键假设和合理性
+3. 实验设计是否充分（基线公平性、消融完整性）
+4. 结果的统计可靠性
+5. 局限性和可改进的方向
+
+### 5.3 白板推导
+
+**题目**: 在白板上推导以下之一：
+- Attention 的时间复杂度和空间复杂度
+- Adam 优化器的更新规则
+- BatchNorm 的前向和反向传播
+- 隐变量模型（VAE）的 ELBO 推导
+- RLHF 中 PPO 的目标函数
+
+---
+
+## 6. 论文复现与编程题
+
+### 6.1 从零实现 Transformer
+
+```python
+import torch
+import torch.nn as nn
+import math
+
+class MultiHeadAttention(nn.Module):
+    """Multi-Head Attention 实现。"""
+    
+    def __init__(self, d_model, n_heads, dropout=0.1):
+        super().__init__()
+        assert d_model % n_heads == 0
+        
+        self.d_model = d_model
+        self.n_heads = n_heads
+        self.d_k = d_model // n_heads
+        
+        self.w_q = nn.Linear(d_model, d_model)
+        self.w_k = nn.Linear(d_model, d_model)
+        self.w_v = nn.Linear(d_model, d_model)
+        self.w_o = nn.Linear(d_model, d_model)
+        
+        self.dropout = nn.Dropout(dropout)
+    
+    def forward(self, x, mask=None):
+        batch_size, seq_len, _ = x.shape
+        
+        # 线性投影
+        Q = self.w_q(x).view(batch_size, seq_len, self.n_heads, self.d_k).transpose(1, 2)
+        K = self.w_k(x).view(batch_size, seq_len, self.n_heads, self.d_k).transpose(1, 2)
+        V = self.w_v(x).view(batch_size, seq_len, self.n_heads, self.d_k).transpose(1, 2)
+        
+        # Scaled Dot-Product Attention
+        scores = torch.matmul(Q, K.transpose(-2, -1)) / math.sqrt(self.d_k)
+        
+        if mask is not None:
+            scores = scores.masked_fill(mask == 0, float('-inf'))
+        
+        attn_weights = self.dropout(torch.softmax(scores, dim=-1))
+        attn_output = torch.matmul(attn_weights, V)
+        
+        # 合并多头
+        attn_output = attn_output.transpose(1, 2).contiguous().view(batch_size, seq_len, self.d_model)
+        
+        return self.w_o(attn_output)
+
+
+class TransformerBlock(nn.Module):
+    def __init__(self, d_model, n_heads, d_ff, dropout=0.1):
+        super().__init__()
+        self.attention = MultiHeadAttention(d_model, n_heads, dropout)
+        self.norm1 = nn.LayerNorm(d_model)
+        self.norm2 = nn.LayerNorm(d_model)
+        self.ffn = nn.Sequential(
+            nn.Linear(d_model, d_ff),
+            nn.GELU(),
+            nn.Linear(d_ff, d_model),
+            nn.Dropout(dropout)
+        )
+    
+    def forward(self, x, mask=None):
+        # Pre-LN Architecture
+        x = x + self.attention(self.norm1(x), mask)
+        x = x + self.ffn(self.norm2(x))
+        return x
+```
+
+### 6.2 实现简化版 LoRA Fine-tuning
+
+```python
+class LoRALinear(nn.Module):
+    """LoRA: Low-Rank Adaptation。"""
+    
+    def __init__(self, in_features, out_features, rank=8, alpha=16):
+        super().__init__()
+        self.original = nn.Linear(in_features, out_features)
+        self.original.weight.requires_grad = False
+        if self.original.bias is not None:
+            self.original.bias.requires_grad = False
+        
+        self.lora_A = nn.Parameter(torch.randn(rank, in_features) * 0.01)
+        self.lora_B = nn.Parameter(torch.zeros(out_features, rank))
+        self.scaling = alpha / rank
+    
+    def forward(self, x):
+        return self.original(x) + (x @ self.lora_A.T @ self.lora_B.T) * self.scaling
+```
+
+### 6.3 实现实验追踪与统计分析
+
+```python
+import numpy as np
+from scipy import stats
+
+def analyze_experiment(results_dict, metric_name='accuracy'):
+    """
+    分析多种子实验结果，计算统计显著性。
+    results_dict: {'method_a': [0.85, 0.87, 0.86], 'method_b': [0.88, 0.89, 0.87]}
+    """
+    methods = list(results_dict.keys())
+    report = {}
+    
+    for method, scores in results_dict.items():
+        report[method] = {
+            'mean': np.mean(scores),
+            'std': np.std(scores),
+            'min': min(scores),
+            'max': max(scores),
+            'n_seeds': len(scores)
+        }
+    
+    # 如果有两个方法，做 t 检验
+    if len(methods) == 2:
+        a, b = results_dict[methods[0]], results_dict[methods[1]]
+        t_stat, p_value = stats.ttest_ind(a, b)
+        report['t_test'] = {
+            't_statistic': t_stat,
+            'p_value': p_value,
+            'significant_at_0.05': p_value < 0.05
+        }
+    
+    return report
+```
+
+### 6.4 实现简单的梯度分析工具
+
+```python
+import torch
+
+class GradientAnalyzer:
+    """分析模型训练过程中的梯度行为。"""
+    
+    @staticmethod
+    def compute_gradient_norm(model):
+        """计算模型总梯度范数"""
+        total_norm = 0
+        for p in model.parameters():
+            if p.grad is not None:
+                param_norm = p.grad.data.norm(2)
+                total_norm += param_norm.item() ** 2
+        return total_norm ** 0.5
+    
+    @staticmethod
+    def compute_gradient_stats(model):
+        """计算各层梯度的统计信息"""
+        stats = {}
+        for name, param in model.named_parameters():
+            if param.grad is not None:
+                grad = param.grad.data
+                stats[name] = {
+                    'mean': grad.mean().item(),
+                    'std': grad.std().item(),
+                    'norm': grad.norm(2).item(),
+                    'max': grad.max().item(),
+                    'min': grad.min().item(),
+                    'has_nan': torch.isnan(grad).any().item(),
+                    'has_inf': torch.isinf(grad).any().item()
+                }
+        return stats
+```
+
+### 6.5 实现自定义优化器
+
+```python
+import torch
+from torch.optim import Optimizer
+
+class SAM(Optimizer):
+    """
+    Sharpness-Aware Minimization (SAM) 优化器。
+    寻找平坦极小值，提升泛化能力。
+    """
+    
+    def __init__(self, params, base_optimizer, rho=0.05):
+        defaults = dict(rho=rho)
+        super().__init__(params, defaults)
+        self.base_optimizer = base_optimizer(self.param_groups)
+    
+    @torch.no_grad()
+    def first_step(self):
+        """计算扰动并应用到参数"""
+        grad_norm = self._grad_norm()
+        for group in self.param_groups:
+            scale = group['rho'] / (grad_norm + 1e-12)
+            for p in group['params']:
+                if p.grad is None:
+                    continue
+                e_w = p.grad * scale
+                p.add_(e_w)  # w + e(w)
+                self.state[p]['e_w'] = e_w
+    
+    @torch.no_grad()
+    def second_step(self):
+        """恢复参数并用扰动后的梯度更新"""
+        for group in self.param_groups:
+            for p in group['params']:
+                if p.grad is None:
+                    continue
+                p.sub_(self.state[p]['e_w'])  # 恢复 w
+        self.base_optimizer.step()
+    
+    def _grad_norm(self):
+        shared_device = self.param_groups[0]['params'][0].device
+        norm = torch.norm(
+            torch.stack([
+                p.grad.norm(p=2).to(shared_device)
+                for group in self.param_groups
+                for p in group['params']
+                if p.grad is not None
+            ]),
+            p=2
+        )
+        return norm
+```
+
+---
+
+## 7. 备考策略与学习路径
+
+### 7.1 基础阶段（在博士期间持续积累）
+
+1. **数学基础**:
+   - 深入学习线性代数、概率论、优化理论
+   - 阅读《Convex Optimization》(Boyd)
+   - 阅读《Pattern Recognition and Machine Learning》(Bishop)
+
+2. **研究方法论**:
+   - 学习如何阅读和分析论文
+   - 练习论文复现
+   - 参与组会讨论和论文分享
+
+3. **编程与实验**:
+   - 精通 PyTorch 或 JAX
+   - 构建自己的实验框架
+   - 实践分布式训练
+
+### 7.2 进阶阶段
+
+1. **领域深耕**:
+   - 选择一个研究方向深入
+   - 阅读该方向的 50+ 篇核心论文
+   - 尝试独立提出研究想法
+
+2. **论文发表**:
+   - 从 WorkShop 论文开始
+   - 逐步投主会
+   - 积累审稿和 Rebuttal 经验
+
+3. **社区参与**:
+   - 参加顶会
+   - 做 Poster/Talk
+   - 参与开源项目
+
+### 7.3 面试冲刺阶段
+
+1. **论文准备**: 深入准备 2-3 篇代表作的详细讲解
+2. **前沿速览**: 快速浏览近期顶会的 Best Papers
+3. **白板练习**: 练习在白板上推导和讲解
+4. **研究愿景**: 准备 3-5 年的研究计划
+
+---
+
+## 8. 行业薪资范围参考
+
+> 以下数据基于 2025-2026 年美国市场，仅供参考。
+
+| 级别 | 公司类型 | 年薪范围 (美元) | 说明 |
+|------|---------|---------------|------|
+| 博士后/初级 | 顶级研究院 | $200K - $350K | 含 RSU |
+| 中级 (2-5 年) | 顶级研究院 | $300K - $600K | Staff Research Scientist |
+| 高级 (5+ 年) | 顶级研究院 | $500K - $1M+ | Principal/Senior Staff |
+| 所有级别 | OpenAI/Anthropic | 显著溢价 | 可能 $500K-$2M+ |
+| 所有级别 | 大学 ( tenure-track) | $120K - $250K | 含暑期工资 |
+
+**说明**: 顶级 AI 公司（OpenAI、Anthropic）的研究岗薪资远超传统大厂，但通常以股权形式发放。
+
+**中国市场** (人民币):
+- 初级: 60-120 万
+- 中级: 120-250 万
+- 高级: 250-500 万+
+
+---
+
+## 9. 面试 Checklist
+
+- [ ] 能深入讲解 2-3 篇代表作（从动机到方法到结果到局限）
+- [ ] 能在白板上推导核心算法/公式
+- [ ] 能批判性地分析一篇给定论文
+- [ ] 理解优化理论和学习理论的核心概念
+- [ ] 能设计严谨的实验方案（基线、消融、统计检验）
+- [ ] 有清晰的研究愿景和方向
+- [ ] 能讨论你研究领域的前沿进展
+- [ ] 准备了 3-5 年的研究计划
+- [ ] 了解了目标研究组的工作和文化
+- [ ] 能讨论跨领域的研究联系
+- [ ] 有论文复现的经验和代码
+- [ ] 能用英文流畅地进行学术报告
+
+---
+
 ## Related
 
-- [[面试岗位/README|面试岗位 总览]]
-- [[面试岗位/jobs|岗位地图 (jobs)]]
+- [[面试岗位/README|AI 面试准备 (Interviews)]]
+- [[面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[面试岗位/AI_Research_Scientist/AI_Research_Scientist|AI Research Scientist 面试指南]]
+- [[面试岗位/AI_Research_Engineer/AI_Research_Engineer|AI Research Engineer 面试指南]]
+- [[面试岗位/Applied_Scientist/Applied_Scientist|Applied Scientist 面试指南]]
+- [[面试岗位/Machine_Learning_Engineer/question_bank|Machine Learning Engineer 题库]]
+- [[面试岗位/Computer_Vision_Engineer/question_bank|Computer Vision Engineer 题库]]
+
+---
+
+*Last updated: 2026-07-11*

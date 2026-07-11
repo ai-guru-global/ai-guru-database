@@ -175,4 +175,4 @@ CI 失败 2000 行日志 → 过滤 Info/Warn
 
 ## Related
 
-- [[AI编程/README|AI编程 (AI Coding)]]
+- [[编程/README|AI编程 (AI Coding)]]

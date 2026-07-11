@@ -11,7 +11,7 @@ sources: []
 ---
 
 > [!warning] 生产安全提示 · Production Safety
-> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 
 # 容器与供应链安全 for AI
@@ -98,8 +98,8 @@ securityContext:
 
 ## Related
 
-- [[_concepts/supply-chain-security|Supply Chain Security]]
-- [[_concepts/container-security|Container Security]]
+- [[概念/supply-chain-security|Supply Chain Security]]
+- [[概念/container-security|Container Security]]
 - [[架构基建/Security/AI_Security_Fundamentals|AI 安全基础]]
 
 - [[架构基建/README|架构与基础设施 (Architecture & Infrastructure)]]

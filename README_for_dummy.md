@@ -113,7 +113,7 @@ sources: []
 |------|---------|---------|
 | 强化学习基础 | AI 怎么通过奖励和惩罚学习 | [点这里](./强化学习/RL_Foundations/RL_Foundations_for_dummy.md) |
 | 深度强化学习 | 让神经网络玩游戏、下围棋 | [点这里](./强化学习/Deep_RL/Deep_RL_for_dummy.md) |
-| AI 智能体 | 能自己思考、使用工具的 AI 助手 | [点这里](Agent/Agent_Foundations/AI_Agents_for_dummy.md) |
+| AI 智能体 | 能自己思考、使用工具的 AI 助手 | [点这里](智能体/Agent_Foundations/AI_Agents_for_dummy.md) |
 
 ---
 
@@ -125,9 +125,9 @@ sources: []
 |------|---------|---------|
 | 模型部署与推理 | 怎么把训练好的 AI 放到网上让大家用 | [点这里](./部署推理/Deployment_Inference_for_dummy.md) |
 | RAG 系统 | 怎么让 AI "开卷考试"，查资料再回答 | [点这里](./RAG系统/RAG_Systems_for_dummy.md) |
-| MLOps 流水线 | 怎么像工厂流水线一样管理 AI 项目 | [点这里](./MLOps/MLOps_Pipeline_for_dummy.md) |
+| MLOps 流水线 | 怎么像工厂流水线一样管理 AI 项目 | [点这里](./模型运维/MLOps_Pipeline_for_dummy.md) |
 | 模型评估 | 怎么判断一个 AI 到底好不好用 | [点这里](./模型评估/Model_Evaluation_for_dummy.md) |
-| Vibe Coding | 怎么用"说人话"的方式让 AI 帮你写代码 | [点这里](./AI编程/Practice/Vibe_Coding_Getting_Started.md) |
+| Vibe Coding | 怎么用"说人话"的方式让 AI 帮你写代码 | [点这里](./编程/Practice/Vibe_Coding_Getting_Started.md) |
 
 ---
 

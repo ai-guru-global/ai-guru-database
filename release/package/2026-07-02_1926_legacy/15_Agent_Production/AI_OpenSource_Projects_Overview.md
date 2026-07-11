@@ -239,7 +239,7 @@ AI 开源项目分类
 | 工具 | 特点 | 文档 |
 |------|------|------|
 | **MLflow** | 全流程，开源 | [Deep Dive](MLOps/Experiment_Tracking/MLflow_Deep_Dive.md) |
-| **Weights & Biases** | SaaS，易用 | [Deep Dive](AI测试/Weights_Biases_Deep_Dive.md) |
+| **Weights & Biases** | SaaS，易用 | [Deep Dive](测试/Weights_Biases_Deep_Dive.md) |
 | **ClearML** | 一站式，开源 | [Deep Dive](MLOps/Experiment_Tracking/ClearML_Deep_Dive.md) |
 
 ### 7.2 数据版本控制
@@ -270,7 +270,7 @@ AI 开源项目分类
 
 | 工具 | 特点 | 文档 |
 |------|------|------|
-| **Guardrails AI** | 输入/输出护栏 | [Deep Dive](../AI运维/SRE_Reliability/Guardrails_Deep_Dive.md) |
+| **Guardrails AI** | 输入/输出护栏 | [Deep Dive](../运维/SRE_Reliability/Guardrails_Deep_Dive.md) |
 | **Llama Guard** | 内容安全 | (见 AI_Safety_2026.md) |
 
 ### 7.6 LLM 评估
@@ -279,9 +279,9 @@ AI 开源项目分类
 |------|------|------|
 | **Braintrust** | 开源评估 | [Deep Dive](MLOps/Observability/Braintrust_Deep_Dive.md) |
 | **Helicone** | 可观测性 | [Deep Dive](MLOps/Observability/Helicone_Deep_Dive.md) |
-| **Promptfoo** | Prompt 测试 | [Deep Dive](AI测试/Testing_Frameworks/Promptfoo_Deep_Dive.md) |
-| **RAGAS** | RAG 评估 | [Deep Dive](AI测试/RAGAS_Deep_Dive.md) |
-| **DeepEval** | LLM 评估 | [Deep Dive](AI测试/Testing_Frameworks/DeepEval_Deep_Dive.md) |
+| **Promptfoo** | Prompt 测试 | [Deep Dive](测试/Testing_Frameworks/Promptfoo_Deep_Dive.md) |
+| **RAGAS** | RAG 评估 | [Deep Dive](测试/RAGAS_Deep_Dive.md) |
+| **DeepEval** | LLM 评估 | [Deep Dive](测试/Testing_Frameworks/DeepEval_Deep_Dive.md) |
 
 ### 7.7 结构化输出
 

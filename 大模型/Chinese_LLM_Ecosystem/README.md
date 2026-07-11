@@ -193,7 +193,7 @@ flowchart TD
 - [[ModelScope_Model_Index]] — 全量 1,621 个模型完整索引表（Qwen/InternLM 已拆分）
 - [[ModelScope_Model_Index_Qwen]] — 通义千问 437 个模型完整索引（拆分页）
 - [[ModelScope_Model_Index_InternLM]] — 书生 InternLM 443 个模型完整索引（拆分页）
-- 原始数据：`_sources/modelscope/raw/`（含可复跑抓取脚本）
+- 原始数据：`来源/modelscope/raw/`（含可复跑抓取脚本）
 
 ---
 

@@ -740,4 +740,4 @@ $$
 - [[大模型/LLM_Architectures/LLM_Architectures]] — LLM 架构中的注意力复杂度优化
 - [[RAG系统/RAG_Systems]] — RAG 系统中的向量检索与 ANN 算法
 - [[模型训练/Distributed_Training/Distributed_Training_2026]] — 分布式训练中的通信算法
-- [[_concepts/transformer-architecture]] — Transformer 架构与注意力机制
+- [[概念/transformer-architecture]] — Transformer 架构与注意力机制

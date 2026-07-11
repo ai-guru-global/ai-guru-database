@@ -1,0 +1,92 @@
+---
+title: "LLM 生产流水线"
+category: -concepts
+tags: ["llm-production", "mlops", "ci-cd", "deployment", "evaluation", "monitoring"]
+relationships:
+  - target: "概念/mlops"
+    type: belongs_to
+  - target: "概念/ci-integrated-evaluation"
+    type: includes
+  - target: "概念/model-deployment"
+    type: includes
+  - target: "概念/ab-testing-framework"
+    type: includes
+sources:
+  - MLOps/LLM_Production_Pipeline_2026.md
+  - MLOps/README.md
+summary: "LLM 生产流水线是把大模型从实验环境交付到线上服务的完整工程链路，包括数据准备、训练/微调、评估、部署、监控、反馈闭环，确保模型可持续迭代且风险可控。"
+provenance:
+  extracted: 0.75
+  inferred: 0.2
+  ambiguous: 0.05
+base_confidence: 0.82
+lifecycle: reviewed
+lifecycle_changed: 2026-06-16
+tier: core
+created: 2026-06-16
+updated: 2026-06-16
+aliases:
+  - "Llm Production Pipeline"
+  - "llm production pipeline"
+
+---
+# LLM 生产流水线
+
+## 核心要点
+
+- **LLM 生产流水线 = 大模型从实验室到用户的完整工程链路**。
+- **核心阶段**：数据 → 训练/微调 → 评估 → 部署 → 监控 → 反馈 → 再训练。
+- **关键要求**：可复现、可回滚、可监控、风险可控。
+- **与传统 MLOps 的区别**：LLM 更依赖提示工程、RLHF、在线评估、A/B 测试。
+
+## 一句话理解
+
+LLM 生产流水线就像一条造车的总装线：从原材料到整车下线，每个环节都有质检，出了问题能追溯到具体零件。
+
+## 详细内容
+
+### 典型阶段
+
+```
+数据准备
+  ↓
+预训练 / 微调 / RLHF
+  ↓
+离线评估（基准测试）
+  ↓
+模型注册与版本管理
+  ↓
+部署（蓝绿/金丝雀）
+  ↓
+在线评估（A/B 测试）
+  ↓
+监控与告警
+  ↓
+收集反馈，重新训练
+```
+
+### 关键组件
+
+| 组件 | 作用 |
+|------|------|
+| 数据版本管理 | DVC、LakeFS |
+| 实验追踪 | MLflow、W&B |
+| CI 评估 | 自动化基准测试 |
+| 模型注册 | MLflow Model Registry |
+| 模型服务 | vLLM、TGI、SGLang |
+| 可观测性 | Prometheus、Grafana、LangSmith |
+| 反馈闭环 | 在线指标回流训练 |
+
+## Related
+
+- [[概念/mlops]] — MLOps
+- [[概念/ci-integrated-evaluation]] — CI 集成评估
+- [[概念/model-deployment]] — 模型部署
+- [[概念/ab-testing-framework]] — A/B 测试框架
+- [[模型运维/LLM_Production_Pipeline_2026]] — LLM 生产流水线 2026
+- [[概念/llm-production-deployment|LLM 生产部署]] — 推理服务化与上线治理
+
+## See Also (深度专题)
+
+- [[../../大模型/LLM_Deployment/LLM_Production_Deployment_Runbook|LLM 生产部署 Runbook]] — 从数据管线到服务上线的全流程实践
+- [[../../大模型/LLM_Training/LLM_Training_Deep_Dive|LLM 训练深度解析]] — 训练-评估-部署闭环的工程细节

@@ -715,8 +715,8 @@ Phase 4: 高级功能
 - [Portkey 深度解析](架构基建/AI_Gateway/Portkey_Deep_Dive.md)
 - [LiteLLM 深度解析](架构基建/AI_Gateway/LiteLLM_Deep_Dive.md)
 - [AI Gateway 2026 概述](架构基建/AI_Gateway/AI_Gateway_2026.md)
-- [API 设计 for AI](93_Templates/API_Design_for_AI.md)
-- [部署推理 2026](部署推理/Deployment_Inference_2026.md)
+- [API 设计 for AI](./API_Design_for_AI.md)
+- [部署推理 2026](../../部署推理/Deployment_Fundamentals/Deployment_Inference_2026.md)
 
 ## Related
 

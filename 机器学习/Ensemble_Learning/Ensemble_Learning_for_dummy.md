@@ -386,3 +386,11 @@ print(f"XGBoost 准确率: {model.score(X_test, y_test):.2%}")
 4. **记住**：集成学习不是万能的。如果基础模型都很差，组合起来也不会好到哪去。先把单个模型理解好！
 
 > 集成学习的精髓：**多样性 + 组合策略 = 更好的预测**。确保你的模型"各有特色"比什么都重要！
+
+## Related
+
+- [[../../数学基础/Probability_Statistics/Probability_Statistics_for_dummy|概率统计]] — 集成投票的数学基础
+- [[../../深度学习/Neural_Network_Core|神经网络核心]] — 深度学习中的集成方法
+- [[../../模型评估/Evaluation_Fundamentals|评估基础]] — 集成模型评估指标
+- [[../../概念/Math/ensemble-learning|集成学习概念卡]] — 概念定义与分类
+- [[../../大模型/Fine_tuning_Techniques|微调技术]] — 模型集成在 LLM 中的应用

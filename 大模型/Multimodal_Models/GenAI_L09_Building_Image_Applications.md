@@ -439,11 +439,11 @@ except openai.BadRequestError as err:
 
 ## 扩展阅读
 
-- [[90_Learn/courses/microsoft/microsoft_genai_for_beginners]]
+- [[学习/courses/microsoft/microsoft_genai_for_beginners]]
 - [[大模型/Multimodal_Models/Multimodal_Models_for_dummy]]
 - [[行业应用/GenAI_L10_Building_Low_Code_AI_Applications]]
 - [[RAG系统/Advanced_RAG/Multimodal_RAG_Architecture_2026]]
-- [[Agent/GenAI_L06_Text_Generation_Apps]]
+- [[智能体/GenAI_L06_Text_Generation_Apps]]
 
 ## 课程导航
 

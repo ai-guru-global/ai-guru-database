@@ -100,4 +100,4 @@ Mamba 让 B、C 和步长 Δ 都与输入相关，意味着：
 - [[_concepts/transformer-architecture]] — Transformer 架构
 - [[_concepts/long-context-models]] — 长上下文模型
 - [[深度学习/State_Space_Models_2026]] — 状态空间模型 2026
-- [[AI入门/AI_New_Architectures]] — AI 新架构
+- [[入门/AI_New_Architectures]] — AI 新架构

@@ -61,7 +61,7 @@ PEFT (参数高效微调):
 ## Related
 
 - [[大模型/Fine_tuning_Techniques/LoRA_QLoRA_SFT_RLHF_DPO_in_Detail]] — LoRA / QLoRA / SFT / RLHF / DPO 大白话详解与实战
-- [[_concepts/lora-qlora-sft-rlhf-dpo]] — 概念卡片：LoRA / QLoRA / SFT / RLHF / DPO 大白话串讲
+- [[概念/lora-qlora-sft-rlhf-dpo]] — 概念卡片：LoRA / QLoRA / SFT / RLHF / DPO 大白话串讲
 - [[大模型/Fine_tuning_Techniques/PEFT_2026]] — PEFT 2026 (参数高效微调) (共享: bert, gpt, llm, nlp, transformer)
 - [[大模型/LLM_Architectures/LLM-Basics-in-nutshell]] — 大语言模型基础速成指南 (共享: bert, gpt, llm, nlp, transformer)
 - [[大模型/Multimodal_Models/Multimodal_Architectures_2026]] — 多模态模型架构 2026：从 GPT-4V 到原生多模态 AGI (共享: bert, gpt, llm, nlp, transformer)

@@ -329,5 +329,5 @@ message = client.messages.create(
 - [[大模型/LLM_Products/chatgpt_overview]] — ChatGPT 概览
 - [[大模型/LLM_Inference_Deep_Dive]] — LLM 推理优化
 - [[大模型/Prompt_Engineering/Prompt_Engineering]] — 提示工程
-- [[Agent/Agentic_Coding_Tools/README]] — AI 编程工具
+- [[智能体/Agentic_Coding_Tools/README]] — AI 编程工具
 - [[伦理安全/Constitutional_AI_Deep_Dive]] — Constitutional AI

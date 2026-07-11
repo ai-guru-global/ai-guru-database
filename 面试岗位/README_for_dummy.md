@@ -157,7 +157,7 @@ sources: []
 ## 下一步
 
 - 想看具体岗位？→ 查看 [面试岗位/Interviews_for_dummy.md](./Interviews_for_dummy.md)
-- 想学技术？→ 从 [90_Learn/README.md](../90_Learn/README_for_dummy.md) 选择路径
+- 想学技术？→ 从 [90_Learn/README.md](../学习/README_for_dummy.md) 选择路径
 
 ---
 

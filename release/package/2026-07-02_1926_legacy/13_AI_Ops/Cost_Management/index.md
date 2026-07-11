@@ -12,6 +12,6 @@ This page indexes the contents of `AI运维/Cost_Management`.
 ## Files
 
 - Finops For AI 2
-- [[AI运维/Cost_Management/FinOps_for_AI|Finops For AI]]
+- [[运维/Cost_Management/FinOps_for_AI|Finops For AI]]
 - GPU Cost Optimization 2
-- [[AI运维/Cost_Management/GPU_Cost_Optimization|GPU Cost Optimization]]
+- [[运维/Cost_Management/GPU_Cost_Optimization|GPU Cost Optimization]]

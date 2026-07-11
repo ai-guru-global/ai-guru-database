@@ -107,4 +107,4 @@ SQL 校验（语法/安全）
 - [[_concepts/code-generation]] — 代码生成
 - [[_concepts/prompt-engineering]] — 提示工程
 - [[RAG系统/README]] — RAG 系统
-- [[AI编程/README]] — AI 编程工具
+- [[编程/README]] — AI 编程工具

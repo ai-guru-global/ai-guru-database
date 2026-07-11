@@ -184,7 +184,7 @@ Kubernetes (K8s) 部署:
 
 - 想学部署？→ [部署推理/README_for_dummy.md](../部署推理/README_for_dummy.md)
 - 想学 MLOps？→ [MLOps/README_for_dummy.md](../MLOps/README_for_dummy.md)
-- 想学监控？→ [AI运维/README_for_dummy.md](../AI运维/README_for_dummy.md)
+- 想学监控？→ [AI运维/README_for_dummy.md](../运维/README_for_dummy.md)
 
 ---
 

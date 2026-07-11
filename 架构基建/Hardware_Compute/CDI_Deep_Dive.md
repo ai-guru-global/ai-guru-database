@@ -415,13 +415,13 @@ CDI spec 是**某时刻的快照**，硬件变了 spec 没跟着变，就会引�
    └─▶ runtime debug 日志看 hooks/权限/挂载 ──▶ 定位到具体 containerEdits
 ```
 
-> 详见 [[_references/cdi-spec|CDI 规范官方源]] 的 CLI 与 schema 校验段。
+> 详见 [[架构基建/Hardware_Compute/CDI_Spec_Reference|CDI 规范官方源]] 的 CLI 与 schema 校验段。
 
 ---
 
 ## 官方资源
 
-> 详细引用索引见 [[_references/cdi-spec|CDI 规范官方源引用]]。
+> 详细引用索引见 [[架构基建/Hardware_Compute/CDI_Spec_Reference|CDI 规范官方源引用]]。
 
 - **规范仓库**: [github.com/cncf-tags/container-device-interface](https://github.com/cncf-tags/container-device-interface)
 - **开源协议**: Apache-2.0（完全开源）
@@ -440,4 +440,4 @@ CDI spec 是**某时刻的快照**，硬件变了 spec 没跟着变，就会引�
 - [[数学基础/AI_Hardware/Chinese_AI_Chips_Deep_Dive]] — 国产异构加速器（CDI 的核心受益者）
 - [[部署推理/Inference_Engines/vLLM_Deep_Dive]] — GPU 推理引擎的容器化落地
 - [[部署推理/Deployment_Inference_2026]] — 部署推理 2026 趋势
-- [[_synthesis/serving-deployment]] — 推理服务与部署综合
+- [[治理/serving-deployment]] — 推理服务与部署综合

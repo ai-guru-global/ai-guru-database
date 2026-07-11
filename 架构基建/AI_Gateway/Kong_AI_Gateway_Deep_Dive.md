@@ -880,8 +880,8 @@ curl http://localhost:8000/v1/chat/completions \
 ### 相关文档
 
 - [AI Gateway 对比 2026](./AI_Gateway_Comparison_2026.md)
-- [API 设计 for AI](../../93_Templates/API_Design_for_AI.md)
-- [Prompt 管理平台](../../93_Templates/Prompt_Management_Platform.md)
+- [API 设计 for AI](./API_Design_for_AI.md)
+- [Prompt 管理平台](../../模型运维/Prompt_Ops/Prompt_Management_Platform.md)
 - [Portkey 深度解析](./Portkey_Deep_Dive.md)
 - [LiteLLM 深度解析](./LiteLLM_Deep_Dive.md)
 

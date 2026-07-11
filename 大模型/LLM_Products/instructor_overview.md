@@ -57,7 +57,7 @@ user = client.chat.completions.create(
 | API 集成 | 确保 LLM 输出符合 API 格式 |
 | 表单填写 | 自然语言 -> 结构化表单 |
 
-> **关联**: -> [[大模型/Structured_Output_Guide|结构化输出指南]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[大模型/Structured_Output_Guide|结构化输出指南]] | [[学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
 
 ## Related
 

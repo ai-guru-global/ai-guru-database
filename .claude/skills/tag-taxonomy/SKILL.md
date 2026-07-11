@@ -16,12 +16,12 @@ You are enforcing consistent tagging across the wiki by normalizing tags to a co
 ## Before You Start
 
 1. **Resolve config** — follow the Config Resolution Protocol in `llm-wiki/SKILL.md` (walk up CWD for `.env` → `~/.obsidian-wiki/config` → prompt setup). This gives `OBSIDIAN_VAULT_PATH`
-2. Read `$OBSIDIAN_VAULT_PATH/_meta/taxonomy.md` — this is the canonical tag list
+2. Read `$OBSIDIAN_VAULT_PATH/治理/taxonomy.md` — this is the canonical tag list
 3. Read `index.md` to understand the wiki's scope
 
 ## The Taxonomy File
 
-The canonical tag vocabulary lives at `$OBSIDIAN_VAULT_PATH/_meta/taxonomy.md`. It defines:
+The canonical tag vocabulary lives at `$OBSIDIAN_VAULT_PATH/治理/taxonomy.md`. It defines:
 
 - **Canonical tags** — the tags that should be used
 - **Aliases** — common alternatives that should be mapped to the canonical form
@@ -56,7 +56,7 @@ When the user wants to see the current state of tags:
 ### Step 1: Scan all pages
 
 ```
-Glob: $VAULT_PATH/**/*.md (excluding _archives/, .obsidian/, _meta/)
+Glob: $VAULT_PATH/**/*.md (excluding 归档/, .obsidian/, 治理/)
 Extract: tags field from YAML frontmatter
 ```
 
@@ -140,13 +140,13 @@ For tags that aren't in the taxonomy and aren't aliases:
 
 ### Step 4: Update taxonomy
 
-If new canonical tags were agreed upon, append them to `_meta/taxonomy.md` in the correct section.
+If new canonical tags were agreed upon, append them to `治理/taxonomy.md` in the correct section.
 
 ## Mode 3: Tagging a New Page
 
 When you're creating a wiki page and need to choose tags:
 
-1. Read `_meta/taxonomy.md`
+1. Read `治理/taxonomy.md`
 2. Select up to 5 tags that best describe the page:
    - 1-2 **domain tags** (what subject area)
    - 1 **type tag** (what kind of thing)
@@ -161,7 +161,7 @@ When the user wants to add a tag to the vocabulary:
 
 1. Check if an existing tag already covers the concept (suggest it if so)
 2. If genuinely new, determine which section it belongs in (Domain, Type, Project)
-3. Add it to `_meta/taxonomy.md` with:
+3. Add it to `治理/taxonomy.md` with:
    - The canonical tag name
    - What it's used for
    - Any aliases to redirect

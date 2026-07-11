@@ -127,7 +127,7 @@ sources: []
 | RAG 系统 | 怎么让 AI "开卷考试"，查资料再回答 | [点这里](./RAG系统/RAG_Systems_for_dummy.md) |
 | MLOps 流水线 | 怎么像工厂流水线一样管理 AI 项目 | [点这里](./MLOps/MLOps_Pipeline_for_dummy.md) |
 | 模型评估 | 怎么判断一个 AI 到底好不好用 | [点这里](./模型评估/Model_Evaluation_for_dummy.md) |
-| Vibe Coding | 怎么用"说人话"的方式让 AI 帮你写代码 | [点这里](./AI编程/Practice/Vibe_Coding_Getting_Started.md) |
+| Vibe Coding | 怎么用"说人话"的方式让 AI 帮你写代码 | [点这里](./编程/Practice/Vibe_Coding_Getting_Started.md) |
 
 ---
 

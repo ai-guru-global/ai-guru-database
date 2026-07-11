@@ -97,12 +97,12 @@ sources: []
   - 经典机器学习算法细节（推荐配合 [[机器学习/README]] 或 ML-For-Beginners 课程）。
   - AI 伦理与负责任 AI（L24 专门讨论）。
 - **延伸**：
-  - 想深入 AI 发展时间线：[[AI入门/AI_History_Timeline]]
-  - 想巩固 AI 基础概念：[[AI入门/AI_Fundamentals]]
+  - 想深入 AI 发展时间线：[[入门/AI_History_Timeline]]
+  - 想巩固 AI 基础概念：[[入门/AI_Fundamentals]]
   - 想了解神经网络核心机制：[[深度学习/Neural_Network_Core/Neural_Network_Core]]
   - 想了解现代深度学习爆发背景：[[大模型/LLM_Architectures/LLM_Architectures]]、[[计算机视觉/README]]
 
 ## 相关阅读
 
 - 课程索引：[[90_Learn/courses/microsoft/microsoft_ai_for_beginners]]
-- 本库相关页面：[[AI入门/AI_Fundamentals]]、[[AI入门/AI_History_Timeline]]
+- 本库相关页面：[[入门/AI_Fundamentals]]、[[入门/AI_History_Timeline]]

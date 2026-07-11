@@ -1,0 +1,293 @@
+---
+title: "知识图谱可视化"
+category: 94-visualization
+tags: ["visualization", "knowledge-graph", "neo4j", "network", "graph"]
+summary: "知识图谱可视化全指南——从数据准备到交互式探索，用可视化理解实体关系、发现知识模式。"
+created: 2026-07-02
+updated: 2026-07-02
+tier: core
+aliases:
+  - "Knowledge Graph Visualization"
+  - "Graph Visualization"
+sources: []
+---
+
+# 知识图谱可视化 (Knowledge Graph Visualization)
+
+> 知识图谱可视化全指南——从数据准备到交互式探索，用可视化理解实体关系、发现知识模式。
+
+---
+
+## 1. 可视化工具对比
+
+| 工具 | 类型 | 交互性 | 适合规模 | 学习成本 |
+|------|------|--------|---------|---------|
+| Neo4j Browser | 数据库内置 | 交互式 | 中小型 | 低 |
+| Pyvis | Python 库 | 交互式 HTML | 中小型 | 低 |
+| Gephi | 桌面软件 | 交互式 | 中大型 | 中 |
+| D3.js | Web 库 | 交互式 | 任意 | 高 |
+| Sigma.js | Web 库 | 交互式 | 大型 | 中 |
+| Graphviz | 布局引擎 | 静态 | 小型 | 低 |
+| Cytoscape | 桌面/Web | 交互式 | 中大型 | 中 |
+
+---
+
+## 2. Pyvis 交互式图谱
+
+```python
+from pyvis.network import Network
+import json
+
+def visualize_knowledge_graph(entities, relationships, output_file="kg.html"):
+    """从实体和关系数据生成交互式知识图谱。"""
+    net = Network(
+        height="800px",
+        width="100%",
+        bgcolor="#222222",
+        font_color="white",
+        notebook=True,
+        cdn_resources="remote"
+    )
+    
+    # 颜色映射
+    color_map = {
+        "Person": "#FF6B6B",
+        "Company": "#4ECDC4",
+        "Technology": "#45B7D1",
+        "Concept": "#96CEB4",
+        "Product": "#FFEAA7",
+    }
+    
+    # 添加节点
+    for entity in entities:
+        net.add_node(
+            entity["name"],
+            label=entity["name"],
+            color=color_map.get(entity["type"], "#95A5A6"),
+            size=entity.get("importance", 20),
+            title=f"Type: {entity['type']}\n{entity.get('description', '')}"
+        )
+    
+    # 添加边
+    for rel in relationships:
+        net.add_edge(
+            rel["source"],
+            rel["target"],
+            title=rel["relation"],
+            label=rel["relation"],
+            arrows="to"
+        )
+    
+    # 物理引擎配置
+    net.set_options("""
+    {
+        "physics": {
+            "forceAtlas2Based": {
+                "gravitationalConstant": -100,
+                "centralGravity": 0.01,
+                "springLength": 200,
+                "springConstant": 0.08
+            },
+            "solver": "forceAtlas2Based"
+        }
+    }
+    """)
+    
+    net.save_graph(output_file)
+    print(f"Graph saved to {output_file}")
+
+# 示例数据
+entities = [
+    {"name": "Transformer", "type": "Technology", "importance": 40},
+    {"name": "GPT-4", "type": "Product", "importance": 35},
+    {"name": "OpenAI", "type": "Company", "importance": 30},
+    {"name": "Attention", "type": "Concept", "importance": 25},
+]
+
+relationships = [
+    {"source": "OpenAI", "target": "GPT-4", "relation": "develops"},
+    {"source": "GPT-4", "target": "Transformer", "relation": "based_on"},
+    {"source": "Transformer", "target": "Attention", "relation": "uses"},
+]
+
+visualize_knowledge_graph(entities, relationships)
+```
+
+---
+
+## 3. NetworkX + Matplotlib 静态图
+
+```python
+import networkx as nx
+import matplotlib.pyplot as plt
+
+def draw_knowledge_graph(entities, relationships):
+    """生成高质量静态知识图谱。"""
+    G = nx.DiGraph()
+    
+    # 添加节点和边
+    for entity in entities:
+        G.add_node(entity["name"], **entity)
+    for rel in relationships:
+        G.add_edge(rel["source"], rel["target"], relation=rel["relation"])
+    
+    # 布局
+    pos = nx.spring_layout(G, k=2, iterations=50, seed=42)
+    
+    # 节点颜色
+    color_map = {
+        "Person": "#FF6B6B",
+        "Company": "#4ECDC4",
+        "Technology": "#45B7D1",
+        "Concept": "#96CEB4",
+    }
+    node_colors = [color_map.get(G.nodes[n].get("type", ""), "#95A5A6") for n in G.nodes]
+    node_sizes = [G.nodes[n].get("importance", 20) * 50 for n in G.nodes]
+    
+    plt.figure(figsize=(14, 10))
+    
+    # 绘制边
+    nx.draw_networkx_edges(G, pos, edge_color='#666666', 
+                           arrows=True, arrowsize=20, width=1.5)
+    
+    # 绘制节点
+    nx.draw_networkx_nodes(G, pos, node_color=node_colors, 
+                           node_size=node_sizes, alpha=0.9)
+    
+    # 绘制标签
+    nx.draw_networkx_labels(G, pos, font_size=10, font_color='white')
+    
+    # 绘制边标签
+    edge_labels = nx.get_edge_attributes(G, 'relation')
+    nx.draw_networkx_edge_labels(G, pos, edge_labels, font_size=8, 
+                                  font_color='#FFD93D')
+    
+    plt.title("Knowledge Graph", fontsize=16, color='white')
+    plt.gca().set_facecolor('#2C3E50')
+    plt.gcf().set_facecolor('#2C3E50')
+    plt.axis('off')
+    plt.tight_layout()
+    plt.savefig('knowledge_graph.png', dpi=200, bbox_inches='tight',
+                facecolor='#2C3E50')
+    plt.show()
+```
+
+---
+
+## 4. Neo4j Browser 可视化
+
+```cypher
+// 基本图谱查询
+MATCH (n)-[r]->(m)
+RETURN n, r, m
+LIMIT 100
+
+// 按类型着色
+MATCH (n:Entity)-[r]->(m:Entity)
+WHERE n.type IN ['Person', 'Company', 'Technology']
+RETURN n, r, m
+
+// 查找特定实体的关系网络
+MATCH path = (start:Entity {name: "Transformer"})-[*1..3]-(connected)
+RETURN path
+
+// 社区发现
+CALL gds.louvain.stream('my-graph')
+YIELD nodeId, communityId
+RETURN gds.util.asNode(nodeId).name AS name, communityId
+ORDER BY communityId
+```
+
+---
+
+## 5. D3.js 力导向图
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+<svg width="960" height="600"></svg>
+<script>
+const data = {
+    nodes: [
+        {id: "Transformer", group: "technology"},
+        {id: "GPT-4", group: "product"},
+        {id: "OpenAI", group: "company"},
+    ],
+    links: [
+        {source: "OpenAI", target: "GPT-4", relation: "develops"},
+        {source: "GPT-4", target: "Transformer", relation: "based_on"},
+    ]
+};
+
+const color = d3.scaleOrdinal()
+    .domain(["technology", "product", "company"])
+    .range(["#45B7D1", "#FFEAA7", "#4ECDC4"]);
+
+const simulation = d3.forceSimulation(data.nodes)
+    .force("link", d3.forceLink(data.links).id(d => d.id).distance(150))
+    .force("charge", d3.forceManyBody().strength(-300))
+    .force("center", d3.forceCenter(480, 300));
+
+const svg = d3.select("svg");
+const link = svg.selectAll("line").data(data.links).join("line")
+    .attr("stroke", "#999").attr("stroke-opacity", 0.6);
+const node = svg.selectAll("circle").data(data.nodes).join("circle")
+    .attr("r", 10).attr("fill", d => color(d.group))
+    .call(d3.drag());
+
+simulation.on("tick", () => {
+    link.attr("x1", d => d.source.x).attr("y1", d => d.source.y)
+        .attr("x2", d => d.target.x).attr("y2", d => d.target.y);
+    node.attr("cx", d => d.x).attr("cy", d => d.y);
+});
+</script>
+</body>
+</html>
+```
+
+---
+
+## 6. Obsidian 知识图谱
+
+```python
+def generate_obsidian_graph(vault_path):
+    """分析 Obsidian 知识库的链接关系。"""
+    import os
+    import re
+    
+    links = {}
+    for root, dirs, files in os.walk(vault_path):
+        for f in files:
+            if f.endswith('.md'):
+                filepath = os.path.join(root, f)
+                with open(filepath) as file:
+                    content = file.read()
+                    # 提取 [[wikilinks]]
+                    found_links = re.findall(r'\[\[(.*?)\]\]', content)
+                    source = os.path.splitext(f)[0]
+                    links[source] = found_links
+    
+    # 生成 NetworkX 图
+    G = nx.DiGraph()
+    for source, targets in links.items():
+        for target in targets:
+            G.add_edge(source, target)
+    
+    return G
+```
+
+---
+
+## 相关资源
+
+- [[Graph_RAG_Architecture]]: 知识图谱 RAG
+- [[Model_Interpretability_Explainability]]: 模型可解释性
+- [[工具/README]]: 知识图谱导出
+
+---
+
+*Last updated: 2026-07-02*

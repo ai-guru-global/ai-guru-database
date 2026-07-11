@@ -53,7 +53,7 @@ sources: []
 
 ## 前置知识 (Prerequisites)
 
-- **AI 历史了解**: 推荐先阅读 [AI历史时间线](../AI入门/AI_History_Timeline.md) 了解 1950-2026 AI 发展脉络
+- **AI 历史了解**: 推荐先阅读 [AI历史时间线](../入门/AI_History_Timeline.md) 了解 1950-2026 AI 发展脉络
 - **数学**: 高中微积分、基础矩阵运算
 - **编程**: Python 基础、NumPy 库基本操作
 - **无 AI 前序要求**: 本章是整个知识体系的起点

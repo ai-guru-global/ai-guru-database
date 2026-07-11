@@ -151,7 +151,7 @@ short_dim = 256
 
 ## Related
 
-- [[_concepts/embedding-models]] — Embedding 模型
+- [[概念/embedding-models]] — Embedding 模型
 - [[RAG系统/README|RAG 系统]]
 - [[部署推理/Inference_Performance/README|推理性能专题]]
 - [[部署推理/Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]]

@@ -56,9 +56,9 @@ Stage 3: 工程实践（理解 AI 产品的工程边界）
 **📚 核心概念**：[Stage 0: AI 觉醒](../concepts/stage0_awakening.md)（全量）
 
 **🔗 深入阅读**：
-- [AI 基础概念入门](AI入门/AI_Fundamentals.md)
-- [AI 经典案例分析集](AI入门/AI_Classic_Cases.md)（重点关注 AlphaGo、ChatGPT 两个案例）
-- [AI 工具与实践指南](AI入门/AI_Tools_Practical_Guide.md)（了解当前工具生态）
+- [AI 基础概念入门](入门/AI_Fundamentals.md)
+- [AI 经典案例分析集](入门/AI_Classic_Cases.md)（重点关注 AlphaGo、ChatGPT 两个案例）
+- [AI 工具与实践指南](入门/AI_Tools_Practical_Guide.md)（了解当前工具生态）
 
 **💡 产品经理视角重点**：
 - 不要被"AI"标签迷惑，看清技术本质
@@ -118,7 +118,7 @@ AI 成本结构：
 **🔗 深入阅读**：
 - [AI Agent（小白版）](Agent/Agent_Foundations/AI_Agents_for_dummy.md) — 理解 AI Agent 的能力边界
 - [AI 工作流（速查版）](Agent/Agent_Workflow/Workflow-in-nutshell.md) — 理解 AI 工作流设计
-- [AI 工具与实践指南](AI入门/AI_Technology_Landscape.md) — 理解 AI 工具生态
+- [AI 工具与实践指南](入门/AI_Technology_Landscape.md) — 理解 AI 工具生态
 
 **💡 AI 产品设计的核心原则**：
 ```
@@ -203,9 +203,9 @@ AI 成本结构：
 **📚 核心概念**：[Stage 4 前沿探索](90_Learn/concepts/stage4_frontier.md)（浏览为主）
 
 **🔗 深入阅读**：
-- [AI 未来趋势展望](AI入门/AI_Future_Trends.md)
-- [AI 伦理与社会影响](AI入门/AI_Ethics_Society.md)
-- [AI 学习资源与方法论](AI入门/AI_Learning_Resources.md)
+- [AI 未来趋势展望](入门/AI_Future_Trends.md)
+- [AI 伦理与社会影响](入门/AI_Ethics_Society.md)
+- [AI 学习资源与方法论](入门/AI_Learning_Resources.md)
 
 **💡 2026 AI 产品趋势**：
 - **Agentic AI**：从"问答"到"自主执行"，产品设计范式转变

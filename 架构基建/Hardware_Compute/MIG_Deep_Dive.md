@@ -18,7 +18,7 @@ sources: []
 > **一句话理解**: MIG 是 GPU 的「硬件级刀片」——把一张 A100/H100 在硅片层面切成最多 7 个互相隔离的实例（GI/CI），每个实例独享显存与算力、故障互不影响，是大模型推理做多租户细粒度切分、榨干单卡利用率的事实标准。
 
 > **硬件支持**: NVIDIA A100 / A30 / H100 / H200 / B200；国产侧阿里云 PPU、摩尔线程、沐曦、海光等亦提供 MIG 兼容语义（`ppu-smi` 等工具对齐 `nvidia-smi`）。
-> **信源**: 本文操作部分蒸馏自阿里云《MIG 使用指南 v2.1》〔[[_sources/aliyun/MIG使用指南_v2.1]]〕，并补齐 NVIDIA 原生 profile 与 K8s 生产实践。
+> **信源**: 本文操作部分蒸馏自阿里云《MIG 使用指南 v2.1》〔[[来源/aliyun/MIG使用指南_v2.1]]〕，并补齐 NVIDIA 原生 profile 与 K8s 生产实践。
 
 ---
 
@@ -216,13 +216,13 @@ docker run --rm --gpus '"device=mig-uuid://MIG-4416c2c4-..."' \
   -e CUDA_VISIBLE_DEVICES=0 vllm/vllm-openai:latest --model Qwen2.5-1.5B
 ```
 
-> 阿里云 PPU 容器隔离细节见[容器隔离使用指南](https://help.aliyun.com/zh/document_detail/3031170.html)；CDI 如何统一描述 MIG/国产加速器设备见 [[_concepts/cdi]]。
+> 阿里云 PPU 容器隔离细节见[容器隔离使用指南](https://help.aliyun.com/zh/document_detail/3031170.html)；CDI 如何统一描述 MIG/国产加速器设备见 [[概念/cdi]]。
 
 ---
 
 ## 6. K8s 生产实践：GPU Operator MIG 策略
 
-裸 `nvidia-smi` 切 MIG 适合单机调试；**生产 K8s 集群应交给 [NVIDIA GPU Operator](https://github.com/NVIDIA/gpu-operator) 统一管理**（国产卡用对应厂商 operator / [[_concepts/gpu-operator]]）。
+裸 `nvidia-smi` 切 MIG 适合单机调试；**生产 K8s 集群应交给 [NVIDIA GPU Operator](https://github.com/NVIDIA/gpu-operator) 统一管理**（国产卡用对应厂商 operator / [[概念/gpu-operator]]）。
 
 ### 6.1 两种 MIG 策略
 
@@ -346,9 +346,9 @@ CUDA_VISIBLE_DEVICES=4,2,MIG-${UUID},3,PPU-${UUID}  # 生效：GPU4,GPU2
 | [[架构基建/Hardware_Compute/CDI_Deep_Dive]] | CDI 是把 MIG 切片透传进容器的标准 JSON 接口（§6 专讲 MIG 切片） |
 | [[架构基建/Hardware_Compute/DRA_Deep_Dive]] | DRA 是 MIG 在 K8s 的未来声明式分配方式 |
 | [[架构基建/AI_Stack/HAMi_Deep_Dive]] | HAMi 可在 MIG 之上做多租户 oversubscribe，互补 |
-| [[_concepts/gpu-virtualization]] | MIG 在 GPU 虚拟化全景中的定位 |
-| [[_concepts/cdi]] / [[_concepts/dra]] / [[_concepts/gpu-operator]] | MIG 落地 K8s 的概念链 |
-| [[_synthesis/hami-cdi-dra]] | HAMi + CDI + DRA + MIG 的综合选型 |
+| [[概念/gpu-virtualization]] | MIG 在 GPU 虚拟化全景中的定位 |
+| [[概念/cdi]] / [[概念/dra]] / [[概念/gpu-operator]] | MIG 落地 K8s 的概念链 |
+| [[治理/hami-cdi-dra]] | HAMi + CDI + DRA + MIG 的综合选型 |
 | [[架构基建/Multi_Tenant_Architecture]] | MIG 作为多租户推理的硬件隔离底座 |
 | [[数学基础/AI_Hardware/NVIDIA_AMD_GPU_Deep_Dive]] | A100/H100 硬件基础 |
 | [[部署推理/Inference_Engines/vLLM_Deep_Dive]] | vLLM 跑在 MIG 切片上的部署实践 |
@@ -360,7 +360,7 @@ CUDA_VISIBLE_DEVICES=4,2,MIG-${UUID},3,PPU-${UUID}  # 生效：GPU4,GPU2
 - [[架构基建/Hardware_Compute/CDI_Deep_Dive]] — MIG 切片如何被容器消费
 - [[架构基建/Hardware_Compute/DRA_Deep_Dive]] — K8s 设备分配的未来（含 MIG）
 - [[架构基建/AI_Stack/HAMi_Deep_Dive]] — GPU 超卖与多租户（与 MIG 互补）
-- [[_concepts/gpu-virtualization]] — GPU 虚拟化全景
-- [[_synthesis/hami-cdi-dra]] — GPU 共享技术栈综合
-- [[_sources/aliyun/MIG使用指南_v2.1]] — 原始信源归档（阿里云 PPU MIG 指南 v2.1）
+- [[概念/gpu-virtualization]] — GPU 虚拟化全景
+- [[治理/hami-cdi-dra]] — GPU 共享技术栈综合
+- [[来源/aliyun/MIG使用指南_v2.1]] — 原始信源归档（阿里云 PPU MIG 指南 v2.1）
 - [[README]] — 知识库总索引

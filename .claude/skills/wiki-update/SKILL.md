@@ -234,6 +234,6 @@ Record QMD refresh in the final report as one of:
 ## Tips
 
 - **Be aggressive about merging.** If the project uses React Server Components, don't create a new page if `concepts/react-server-components.md` already exists. Update the existing one and add this project as a source.
-- **Consult the tag taxonomy.** Read `$VAULT/_meta/taxonomy.md` if it exists, and use canonical tags.
+- **Consult the tag taxonomy.** Read `$VAULT/治理/taxonomy.md` if it exists, and use canonical tags.
 - **Don't copy code.** Distill the *knowledge*, not the implementation. "This project uses a debounced search pattern with 300ms delay" is useful. Pasting the actual debounce function is not.
 - **Project overview is the anchor.** The `<project-name>.md` file is what you'd read to get oriented. Make it good.

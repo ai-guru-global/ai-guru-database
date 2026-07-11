@@ -1426,4 +1426,4 @@ flowchart TB
 
 ## Related
 
-- [[_synthesis/modern-ai-training-stack|现代 AI 训练栈]] — Test-Time Compute 在训练全栈中的定位
+- [[治理/modern-ai-training-stack|现代 AI 训练栈]] — Test-Time Compute 在训练全栈中的定位

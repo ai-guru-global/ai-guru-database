@@ -117,5 +117,5 @@ LLM 应用
 4. **定期审查**: 每周审查低分和高成本的请求
 5. **关联业务指标**: 将 LLM 指标与业务指标关联
 
-> **关联**: -> [[AI运维/README|AI Ops]] | [[AI运维/LangSmith_Deep_Dive|LangSmith]] | [[AI运维/Helicone_Deep_Dive|Helicone]] | [[AI运维/Phoenix_Deep_Dive|Phoenix]]
+> **关联**: -> [[运维/README|AI Ops]] | [[运维/LangSmith_Deep_Dive|LangSmith]] | [[运维/Helicone_Deep_Dive|Helicone]] | [[运维/Phoenix_Deep_Dive|Phoenix]]
 

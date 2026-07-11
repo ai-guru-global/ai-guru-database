@@ -1,0 +1,46 @@
+{
+  "type": "batch",
+  "models": [
+    "kimi"
+  ],
+  "summary": {
+    "kimi": {
+      "modelName": "Kimi K2.5",
+      "model": "moonshot-v1-8k",
+      "totalQuestions": 1,
+      "averageScore": 65,
+      "dimensionScores": {
+        "core_concepts": 65
+      }
+    }
+  },
+  "results": {
+    "kimi": [
+      {
+        "questionId": "test-1",
+        "dimension": "core_concepts",
+        "modelId": "kimi",
+        "modelName": "Kimi K2.5",
+        "model": "moonshot-v1-8k",
+        "content": "Kubernetes Pod 是 Kubernetes 集群中的基本部署单元，是一个包含一个或多个容器（例如 Docker 容器）的运行环境，这些容器共享网络和存储资源。Pod 被设计为应用的运行环境，能够保证容器之间的紧密协作。\n\nPod 具有以下特点：\n\n1. **同环境资源共享**：Pod 内的容器共享 PV（Persistent Volume）挂载点以及网络名称空间。\n2. **进程一对一关系**：每个 Pod 内部通常运行一个主进程（可以有多个辅助过程），即 Pod 生存期同进程生存期相对应。\n3. **生命周期管理**：Pod 可以声明重启策略、生命周期钩子（生命周期钩子允许用户在 Pod 启动、终止时执行自定义操作）等。\n4. **易于管理**：Pod 可以通过 Kubernetes 的控制器（如 Deployment、StatefulSet、DaemonSet 等）进行批量管理和自动扩展。\n5. **易于使用**：Pod 支持环境变量、配置文件、存储卷挂载等，便于容器应用的配置和管理。\n\n在 Kubernetes 中，Pod 的定义可以通过 YAML 文件来创建和描述。下面是一个简单的 Pod 配置示例：\n\n```yaml\napiVersion: v1\nkind: Pod\nmetadata:\n  name: mypod\nspec:\n  containers:\n  - name:mypod\n    image: redis\n```\n\n在这个 YAML 配置中，创建了一个名称为 `mypod` 的 Pod，其中包含一个名为 `mypod` 的容器，使用的镜像是 `redis`。",
+        "latencyMs": 9545,
+        "score": {
+          "total": 65,
+          "breakdown": {
+            "keywordScore": 50,
+            "keywordHits": [
+              "container"
+            ],
+            "keywordTotal": 2,
+            "referenceScore": 50,
+            "lengthScore": 100,
+            "structureScore": 100
+          }
+        }
+      }
+    ]
+  },
+  "questionCount": 1,
+  "id": "578e7a91-7cdc-4dcb-ac18-2c0df591c5eb",
+  "timestamp": "2026-04-15T14:06:37.303Z"
+}

@@ -58,7 +58,7 @@ aliases:
 - [[MLOps/LLM_Guardrails_and_Safety_Ops_2026|LLM Guardrails 与安全运维 2026]] — 输入/输出护栏、敏感信息识别与模型安全
 - [[大模型/LLM_Production_Deployment_Runbook|LLM 生产部署 Runbook]] — LLM 推理服务、vLLM/SGLang 部署与容量规划
 - [[模型评估/RAG_Evaluation_Deep_Dive|RAG 评估深度解析]] — RAG 离线/在线评估指标与迭代飞轮
-- [[AI测试/RAGAS_Deep_Dive|RAGAS 深度解析]] — RAG 评估框架与核心指标实践
+- [[测试/RAGAS_Deep_Dive|RAGAS 深度解析]] — RAG 评估框架与核心指标实践
 - [[Agent/Agent_Production_Deployment_Runbook|Agent 生产部署 Runbook]] — Agentic RAG 与 Agent 服务上线要点
 - [[行业应用/AI_Production_Architecture_2026|AI 生产架构 2026]] — AI 应用整体生产架构与平台选型视角
 - [[RAG系统/RAG_Systems|RAG 系统]] — RAG 基础概念、Pipeline 与框架选型

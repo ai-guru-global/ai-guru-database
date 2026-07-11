@@ -130,7 +130,7 @@ sources: []
 - [MLOps](../MLOps/) — ML 流水线建设（概念 + 工具实现，工具深度解析已迁入此章）
 - [部署推理](../部署推理/) — 推理引擎 (vLLM, SGLang)
 - [架构基建/AI_Gateway](../架构基建/AI_Gateway/) — AI 网关与路由
-- [AI测试](../AI测试/) — AI 测试框架
+- [AI测试](../测试/) — AI 测试框架
 
 > 边界声明详见 [[MLOps/Boundary_with_16]]。
 
@@ -141,16 +141,16 @@ sources: []
 ## Related
 
 - [[MLOps/Boundary_with_16]] — 10 与 16 边界声明 📐
-- [[AI运维/AI_Ops_2026]] — AI Ops 2026: 智能运维体系与实践
-- [[AI运维/SRE_Reliability/AI_Incident_Response_Playbook]] — AI 系统事故响应手册
-- [[AI运维/Incident_Response_for_AI_Systems]] — AI 系统事件响应
-- [[AI运维/SRE_for_AI_Systems]] — AI 系统的 SRE 实践指南
-- [[AI运维/Chaos_Engineering_AI]] — AI 系统混沌工程实践
-- [[AI运维/Guardrails_Deep_Dive]] — Guardrails AI: LLM 安全护栏
-- [[AI运维/PromptLayer_Deep_Dive]] — PromptLayer: 提示词管理与追踪
-- [[AI运维/AIOps-in-nutshell]] — AI Ops 速成指南
-- [[AI运维/AI_Ops_for_dummy]] — AI Ops 入门指南
-- [[AI运维/README_for_dummy]] — 16 AI Ops — 小白版 📡
+- [[运维/AI_Ops_2026]] — AI Ops 2026: 智能运维体系与实践
+- [[运维/SRE_Reliability/AI_Incident_Response_Playbook]] — AI 系统事故响应手册
+- [[运维/Incident_Response_for_AI_Systems]] — AI 系统事件响应
+- [[运维/SRE_for_AI_Systems]] — AI 系统的 SRE 实践指南
+- [[运维/Chaos_Engineering_AI]] — AI 系统混沌工程实践
+- [[运维/Guardrails_Deep_Dive]] — Guardrails AI: LLM 安全护栏
+- [[运维/PromptLayer_Deep_Dive]] — PromptLayer: 提示词管理与追踪
+- [[运维/AIOps-in-nutshell]] — AI Ops 速成指南
+- [[运维/AI_Ops_for_dummy]] — AI Ops 入门指南
+- [[运维/README_for_dummy]] — 16 AI Ops — 小白版 📡
 - [[架构基建/AI_Stack_Production_Toolchain]] — AI Stack 生产工具链总览
 - [[架构基建/AI_Stack_Container_Runtime_Guide]] — AI Stack 容器与运行时指南
 - [[架构基建/AI_Stack_GPU_Monitoring_Guide]] — AI Stack GPU 监控指南

@@ -124,4 +124,4 @@ python benchmark_throughput.py \
 - [[_concepts/vllm|vLLM]]
 - [[_concepts/sglang|SGLang]]
 - [[_concepts/tensorrt-llm|TensorRT-LLM]]
-- [[AI运维/SRE_Reliability/LLM_Inference_Slow_Unavailable_Runbook|LLM 推理延迟/不可用 Runbook]]
+- [[运维/SRE_Reliability/LLM_Inference_Slow_Unavailable_Runbook|LLM 推理延迟/不可用 Runbook]]

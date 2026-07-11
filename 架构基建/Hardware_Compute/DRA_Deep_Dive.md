@@ -204,7 +204,7 @@ spec:
 - **分配层**决定「这块卡给谁」——可选 Device Plugin 或 DRA
 - **注入层**（CDI）是**两层共用的地基**——无论上层选谁，最终都翻译成 CDI 设备名
 
-> 详见 [[架构基建/Hardware_Compute/CDI_Deep_Dive|CDI 深度解析]] 与 [[_concepts/dra|DRA 概念卡片]]。
+> 详见 [[架构基建/Hardware_Compute/CDI_Deep_Dive|CDI 深度解析]] 与 [[概念/dra|DRA 概念卡片]]。
 
 ---
 
@@ -238,10 +238,10 @@ spec:
 
 - [[架构基建/Hardware_Compute/CDI_Deep_Dive|CDI 容器设备接口标准(配对概念)]]
 - [[架构基建/AI_Stack/HAMi_Deep_Dive|HAMi 异构 GPU 虚拟化(Device Plugin 模式下的共享方案)]]
-- [[_concepts/dra|DRA 概念卡片]]
-- [[_concepts/cdi|CDI 概念卡片]]
-- [[_concepts/hami|HAMi 概念卡片]]
-- [[_concepts/gpu-operator|NVIDIA GPU Operator(部署 DRA 驱动的载体)]]
-- [[_concepts/gpu-virtualization|GPU 虚拟化(MIG 切片调度)]]
-- [[_concepts/heterogeneous-gpu|异构 GPU 集群]]
+- [[概念/dra|DRA 概念卡片]]
+- [[概念/cdi|CDI 概念卡片]]
+- [[概念/hami|HAMi 概念卡片]]
+- [[概念/gpu-operator|NVIDIA GPU Operator(部署 DRA 驱动的载体)]]
+- [[概念/gpu-virtualization|GPU 虚拟化(MIG 切片调度)]]
+- [[概念/heterogeneous-gpu|异构 GPU 集群]]
 - [[架构基建/Architecture_Overview/AI_Infrastructure_2026|AI Infrastructure 2026]]

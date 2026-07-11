@@ -46,6 +46,6 @@ AI 领袖的公开演讲和访谈不仅是个人观点的表达，更是行业�
 ## Related
 
 - [[业界观点/README]]
-- [[AI入门/AI_Future_Trends]]
+- [[入门/AI_Future_Trends]]
 - [[深度学习/World_Models/README]]
 - [[_concepts/ai-technology-landscape]]

@@ -118,7 +118,7 @@ Use `${QMD_CLI:-qmd} get "#docid"` to retrieve a ranked document by docid when C
 
 The returned snippets or ranked files act as pre-read section summaries. If they answer the question fully, skip Step 3 and go straight to Step 4 (reading only the pages QMD ranked highest). If not, use the ranked file list to guide which files to grep or read in Step 3.
 
-**Also search `papers` when the question may have source material in `_raw/`:**
+**Also search `papers` when the question may have source material in `原始/`:**
 
 If `QMD_PAPERS_COLLECTION` is set and the user is asking about a topic likely covered by ingested papers (research, theory, background), run a parallel search against the papers collection. Cite raw sources separately from compiled wiki pages in your answer.
 

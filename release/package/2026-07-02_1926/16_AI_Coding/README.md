@@ -103,39 +103,39 @@ sources: []
 > **AI 编程已从"补全"进化为"结对编程伙伴"** — Cursor 以 72% 代码接受率领跑，Hermes Agent 以全平台开源和 17+模型支持成为最大变量，Agentic Coding 成为 2026 年主流。
 
 ## Related
-- [[AI编程/Practice/Vibe_Coding_Prompt_Templates|Vibe Coding 提示词模板库]]
-- [[AI编程/Practice/Vibe_Coding_Getting_Started|Vibe Coding 傻瓜指南 (Vibe Coding for Dummies)]]
-- [[AI编程/Practice/Vibe_Coding_Real_World_Cases|Vibe Coding 实战案例集]]
-- [[AI编程/Tools/OpenRouter/12-openrouter-enterprise-advanced|AI编程/Tools/OpenRouter/12-openrouter-enterprise-advanced]]
-- [[AI编程/Tools/Hermes_Agent_2026|Hermes Agent 2026 年专业指南]]
-- [[AI编程/Tools/Qoder_Guide|Qoder / QoderWork / QoderWake 使用指南]]
-- [[AI编程/Tools/DeepSeek_Guide|DeepSeek 使用指南]]
-- [[AI编程/Tools/Monica_Guide|Monica 使用指南]]
-- [[AI编程/AI_Coding-in-nutshell|AI 编程 - 速查版]]
-- [[AI编程/README|AI 编程 (AI Coding)]]
-- [[AI编程/MOC_OpenRouter_OpenCode|topic-ai-coding MOC]]
-- [[AI编程/README_for_dummy|17 AI 编程 — 小白版 💻]]
+- [[编程/Practice/Vibe_Coding_Prompt_Templates|Vibe Coding 提示词模板库]]
+- [[编程/Practice/Vibe_Coding_Getting_Started|Vibe Coding 傻瓜指南 (Vibe Coding for Dummies)]]
+- [[编程/Practice/Vibe_Coding_Real_World_Cases|Vibe Coding 实战案例集]]
+- [[编程/Tools/OpenRouter/12-openrouter-enterprise-advanced|AI编程/Tools/OpenRouter/12-openrouter-enterprise-advanced]]
+- [[编程/Tools/Hermes_Agent_2026|Hermes Agent 2026 年专业指南]]
+- [[编程/Tools/Qoder_Guide|Qoder / QoderWork / QoderWake 使用指南]]
+- [[编程/Tools/DeepSeek_Guide|DeepSeek 使用指南]]
+- [[编程/Tools/Monica_Guide|Monica 使用指南]]
+- [[编程/AI_Coding-in-nutshell|AI 编程 - 速查版]]
+- [[编程/README|AI 编程 (AI Coding)]]
+- [[编程/MOC_OpenRouter_OpenCode|topic-ai-coding MOC]]
+- [[编程/README_for_dummy|17 AI 编程 — 小白版 💻]]
 
 - [[_concepts/ai-agents]] — AI 智能体
 - [[_concepts/prompt-engineering]] — 提示工程
-- [[AI编程/Methodology/Vibe_Coding_Production_Practices]] — Vibe_Coding_Production_Practices
-- [[AI编程/Methodology/Agentic_Coding_Methodology]] — Agentic_Coding_Methodology
-- [[AI编程/Methodology/Vibe_Coding_Methodology]] — Vibe_Coding_Methodology
-- [[AI编程/Tools/MiMO_Guide]] — MiMO 使用指南
-- [[AI编程/Tools/Kilo_Guide]] — Kilo / KiloClaw 使用指南
-- [[AI编程/Tools/Grok_Guide]] — Grok / Grok Code 使用指南
-- [[AI编程/Tools/Kimi_Guide]] — Kimi Code / Kimi Chat 使用指南
-- [[AI编程/Tools/AI_Coding_Assistants_2026]] — AI_Coding_Assistants_2026
-- [[AI编程/Tools/Trae_Guide]] — Trae 使用指南
-- [[AI编程/Tools/MiniMax_Guide]] — MiniMax / MiniClaw 使用指南
-- [[AI编程/Tools/Manus_Guide]] — Manus 使用指南
-- [[AI编程/Tools/GLM_Guide]] — GLM 使用指南
-- [[AI编程/Tools/Qwen_Guide]] — Qwen (通义千问) 使用指南
-- [[AI编程/Tools/Cursor_Guide]] — Cursor 使用指南
-- [[AI编程/Tools/Comate_Guide]] — Comate 使用指南
-- [[AI编程/Tools/Ima_Guide]] — Ima 使用指南
-- [[AI编程/Tools/Coze_Guide]] — Coze 使用指南
-- [[AI编程/Tools/Pending_Tools_Catalog]] — 待探索工具目录
+- [[编程/Methodology/Vibe_Coding_Production_Practices]] — Vibe_Coding_Production_Practices
+- [[编程/Methodology/Agentic_Coding_Methodology]] — Agentic_Coding_Methodology
+- [[编程/Methodology/Vibe_Coding_Methodology]] — Vibe_Coding_Methodology
+- [[编程/Tools/MiMO_Guide]] — MiMO 使用指南
+- [[编程/Tools/Kilo_Guide]] — Kilo / KiloClaw 使用指南
+- [[编程/Tools/Grok_Guide]] — Grok / Grok Code 使用指南
+- [[编程/Tools/Kimi_Guide]] — Kimi Code / Kimi Chat 使用指南
+- [[编程/Tools/AI_Coding_Assistants_2026]] — AI_Coding_Assistants_2026
+- [[编程/Tools/Trae_Guide]] — Trae 使用指南
+- [[编程/Tools/MiniMax_Guide]] — MiniMax / MiniClaw 使用指南
+- [[编程/Tools/Manus_Guide]] — Manus 使用指南
+- [[编程/Tools/GLM_Guide]] — GLM 使用指南
+- [[编程/Tools/Qwen_Guide]] — Qwen (通义千问) 使用指南
+- [[编程/Tools/Cursor_Guide]] — Cursor 使用指南
+- [[编程/Tools/Comate_Guide]] — Comate 使用指南
+- [[编程/Tools/Ima_Guide]] — Ima 使用指南
+- [[编程/Tools/Coze_Guide]] — Coze 使用指南
+- [[编程/Tools/Pending_Tools_Catalog]] — 待探索工具目录
 
 - [[Claude_Enterprise_Use_Cases|Claude 企业实践案例]]
 - [[Claude_Cost_Optimization|Claude 成本优化与性能调优]]
@@ -144,4 +144,4 @@ sources: []
 
 ## 新增页面
 
-- [[AI编程/AI_Coding_2026_Guide|AI 编程 2026 全景指南]]
+- [[编程/AI_Coding_2026_Guide|AI 编程 2026 全景指南]]

@@ -86,12 +86,12 @@ graph TB
 
 | 主题 | 权威页 |
 |------|--------|
-| **AI 运维总览** | [[AI运维/AI_Ops_2026]] |
-| **事故响应** | [[AI运维/SRE_Reliability/AI_Incident_Response_Playbook]]、[[AI运维/Incident_Response_for_AI_Systems]] |
-| **SRE 实践** | [[AI运维/SRE_for_AI_Systems]] |
-| **混沌工程** | [[AI运维/Chaos_Engineering_AI]] |
-| **安全护栏（工具）** | [[AI运维/Guardrails_Deep_Dive]]（未迁移，留 16） |
-| **Prompt 管理（工具）** | [[AI运维/PromptLayer_Deep_Dive]]（未迁移，留 16） |
+| **AI 运维总览** | [[运维/AI_Ops_2026]] |
+| **事故响应** | [[运维/SRE_Reliability/AI_Incident_Response_Playbook]]、[[运维/Incident_Response_for_AI_Systems]] |
+| **SRE 实践** | [[运维/SRE_for_AI_Systems]] |
+| **混沌工程** | [[运维/Chaos_Engineering_AI]] |
+| **安全护栏（工具）** | [[运维/Guardrails_Deep_Dive]]（未迁移，留 16） |
+| **Prompt 管理（工具）** | [[运维/PromptLayer_Deep_Dive]]（未迁移，留 16） |
 
 ### 3.3 独占主题
 
@@ -154,7 +154,7 @@ graph TB
 
 - [[MLOps/README|章节导航]] — MLOps Pipeline 目录导航
 - [[README]] — 10 章节导航
-- [[AI运维/README]] — 16 章节导航
+- [[运维/README]] — 16 章节导航
 
 ---
 

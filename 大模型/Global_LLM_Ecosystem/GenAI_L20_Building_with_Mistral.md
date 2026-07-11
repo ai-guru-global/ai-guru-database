@@ -486,7 +486,7 @@ Mistral NeMo 是唯一带有 Apache 2.0 许可证的免费模型，采用 Tekken
 - [[大模型/Fine_tuning_Techniques/Fine_tuning_Techniques|微调技术综述]]
 - [[大模型/Edge_LLM/Edge_LLM_Deep_Dive|边缘LLM深度指南]]
 - [[大模型/Global_LLM_Ecosystem/Meta_LLaMA_Deep_Dive|Meta LLaMA 深度指南]]
-- [[90_Learn/courses/microsoft/microsoft_genai_for_beginners|Microsoft GenAI 入门课程]]
+- [[学习/courses/microsoft/microsoft_genai_for_beginners|Microsoft GenAI 入门课程]]
 
 ## 课程导航
 

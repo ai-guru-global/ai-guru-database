@@ -70,7 +70,7 @@ tier: supporting
 ### 产品经理路径
 1. 了解各行业 AI 应用场景和最新案例
 2. 学习 [Agent_Production](../Agent/) 了解 AI Agent 产品化
-3. 研究 [AI_Coding_Assistants](../AI编程/Tools/AI_Coding_Assistants_2026.md) 提升开发效率
+3. 研究 [AI_Coding_Assistants](../编程/Tools/AI_Coding_Assistants_2026.md) 提升开发效率
 
 ## 参考资源
 

@@ -15,7 +15,7 @@ sources: []
 ---
 
 > [!warning] 生产安全提示 · Production Safety
-> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # KServe 深度解析：Kubernetes 标准化模型服务平台
 
@@ -450,10 +450,10 @@ kubectl logs <predictor-pod>
 
 ## Related
 
-- [[_concepts/kserve]] — KServe 概念卡片
-- [[_concepts/model-serving]] — 模型服务
-- [[_concepts/vllm]] — vLLM 推理引擎
-- [[_concepts/hami]] — HAMi GPU 虚拟化
+- [[概念/kserve]] — KServe 概念卡片
+- [[概念/model-serving]] — 模型服务
+- [[概念/vllm]] — vLLM 推理引擎
+- [[概念/hami]] — HAMi GPU 虚拟化
 - [[部署推理/Inference_Engines/BentoML_Deep_Dive]] — BentoML
 - [[部署推理/Inference_Engines/TGI_Deep_Dive]] — TGI
 - [[架构基建/CNCF_Cloud_Native_AI/README]] — CNCF 云原生大模型全景

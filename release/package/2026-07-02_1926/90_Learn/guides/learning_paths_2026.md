@@ -175,7 +175,7 @@ flowchart LR
 
 **Phase 1: 认知建立（16-22h）**
 
-- **Ch.00** — [AI 简介 - nutshell](../../AI入门/AI_Fundamentals.md) → [主文档](../../AI入门/README.md) → [AI 伦理与社会](../../AI入门/AI_Ethics_Society.md)
+- **Ch.00** — [AI 简介 - nutshell](../../入门/AI_Fundamentals.md) → [主文档](../../入门/README.md) → [AI 伦理与社会](../../入门/AI_Ethics_Society.md)
 - **Ch.01** — [线性代数 for_dummy](../../数学基础/Linear_Algebra/Linear_Algebra_for_dummy.md) → [主文档](../../数学基础/Linear_Algebra/Linear_Algebra.md) → [概率统计](../../数学基础/Probability_Statistics/Probability_Statistics.md)
 - **Key Skills**: AI 发展脉络、矩阵运算、概率分布、梯度下降数学原理
 
@@ -188,7 +188,7 @@ flowchart LR
 **Phase 3: 工程化（32-44h）**
 
 - **Ch.07** — [Training nutshell](../../模型训练/Model-Training-in-nutshell.md) → [分布式训练](../../模型训练/Distributed_Training/index.md) → [混合精度](../../模型训练/Optimization/Mixed_Precision_Training.md)
-- **Ch.08** — [评估 for_dummy](../../模型评估/Model_Evaluation_for_dummy.md) → [主文档](../../模型评估/Model_Evaluation.md) → [A/B 测试](../../AI测试/AB_Testing_AI_Systems.md)
+- **Ch.08** — [评估 for_dummy](../../模型评估/Model_Evaluation_for_dummy.md) → [主文档](../../模型评估/Model_Evaluation.md) → [A/B 测试](../../测试/AB_Testing_AI_Systems.md)
 - **Ch.09** — [部署 for_dummy](../../部署推理/Deployment_Inference_for_dummy.md) → [Inference nutshell](../../部署推理/Inference-in-nutshell.md) → [推理引擎选型指南](../../部署推理/Inference_Engines/LLM_Inference_Engine_Selection_Guide.md) → [vLLM](../../部署推理/Inference_Engines/vLLM_Deep_Dive.md) → [推理性能基础](../../部署推理/Inference_Performance/Inference_Performance_Fundamentals.md) → 实践: Docker + FastAPI
 - **Key Skills**: FSDP/混合精度、Precision/Recall/F1/AUC、vLLM、推理引擎选型、容器化部署
 
@@ -253,7 +253,7 @@ flowchart LR
 **Phase 3: 生产运维（14-22h）**
 
 - **Ch.09** — [Inference nutshell](../../部署推理/Inference-in-nutshell.md) → [推理引擎选型指南](../../部署推理/Inference_Engines/LLM_Inference_Engine_Selection_Guide.md) → [vLLM](../../部署推理/Inference_Engines/vLLM_Deep_Dive.md) → [SGLang](../../部署推理/Inference_Engines/SGLang_Deep_Dive.md) → [量化](../../_concepts/quantization.md) → [推理引擎迁移指南](../../部署推理/Inference_Engines/LLM_Inference_Engine_Migration_Guide.md)
-- **Ch.16** — [AI Ops nutshell](../../AI运维/AIOps-in-nutshell.md) → [LLM 可观测性](../../MLOps/Observability/LLM_Observability.md) → [告警与灾难恢复](../../AI运维/SRE_Reliability/AI_Incident_Response_Playbook.md)
+- **Ch.16** — [AI Ops nutshell](../../运维/AIOps-in-nutshell.md) → [LLM 可观测性](../../MLOps/Observability/LLM_Observability.md) → [告警与灾难恢复](../../运维/SRE_Reliability/AI_Incident_Response_Playbook.md)
 - **Key Skills**: vLLM/SGLang 选型、量化 GPTQ/AWQ、KV Cache、LLM 监控、告警策略
 
 完成本路径后，参考 [milestones.md](../../90_Learn/guides/milestones.md) Stage 2-4 自测。
@@ -302,14 +302,14 @@ flowchart LR
 
 **Phase 1: AI 认知（10-14h）**
 
-- **Ch.00** — [AI nutshell](../../AI入门/AI_Fundamentals.md) → [主文档](../../AI入门/README.md) → [AI 伦理与社会](../../AI入门/AI_Ethics_Society.md)
+- **Ch.00** — [AI nutshell](../../入门/AI_Fundamentals.md) → [主文档](../../入门/README.md) → [AI 伦理与社会](../../入门/AI_Ethics_Society.md)
 - **Ch.20** — [行业应用概览](../../行业应用/README.md) → 选 2-3 个本行业案例深入 → 实践: 分析一个竞品 AI 产品技术选型
 - **Key Skills**: AI 发展脉络、能力边界判断、行业应用模式、ROI 评估
 
 **Phase 2: 技术理解（7-11h）**
 
 - **Ch.04 (速览)** — [LLM nutshell](../../大模型/LLM_Architectures/LLM-Basics-in-nutshell.md) → [LLM for_dummy](../../大模型/LLM_Architectures/LLM_Architectures_for_dummy.md) → [Prompt for_dummy](../../大模型/Prompt_Engineering/Prompt_Engineering_for_dummy.md)
-- **Ch.08 (速览)** — [评估 for_dummy](../../模型评估/Model_Evaluation_for_dummy.md) → [A/B 测试](../../AI测试/AB_Testing_AI_Systems.md) → [Benchmark](../../模型评估/Benchmarks/index.md)
+- **Ch.08 (速览)** — [评估 for_dummy](../../模型评估/Model_Evaluation_for_dummy.md) → [A/B 测试](../../测试/AB_Testing_AI_Systems.md) → [Benchmark](../../模型评估/Benchmarks/index.md)
 - **Key Skills**: LLM 能力边界、Token 与成本、Precision/Recall 业务权衡、Benchmark 解读
 
 **Phase 3: 责任 AI（6-10h）**
@@ -387,8 +387,8 @@ flowchart LR
 
 **Phase 3: 质量保障（18-26h）**
 
-- **Ch.15** — [AI 测试主文档](../../AI测试/README.md) → [Prompt 测试](../../AI测试/Testing_Frameworks/Promptfoo_Deep_Dive.md) → [RAG 评估](../../AI测试/RAGAS_Deep_Dive.md) → 实践: Prompt 回归测试套件
-- **Ch.16** — [AI Ops nutshell](../../AI运维/AIOps-in-nutshell.md) → [LLM 可观测性](../../MLOps/Observability/LLM_Observability.md) → [日志追踪](../../AI运维/README.md) → [告警恢复](../../AI运维/SRE_Reliability/AI_Incident_Response_Playbook.md) → 实践: Grafana + LangSmith 监控
+- **Ch.15** — [AI 测试主文档](../../测试/README.md) → [Prompt 测试](../../测试/Testing_Frameworks/Promptfoo_Deep_Dive.md) → [RAG 评估](../../测试/RAGAS_Deep_Dive.md) → 实践: Prompt 回归测试套件
+- **Ch.16** — [AI Ops nutshell](../../运维/AIOps-in-nutshell.md) → [LLM 可观测性](../../MLOps/Observability/LLM_Observability.md) → [日志追踪](../../运维/README.md) → [告警恢复](../../运维/SRE_Reliability/AI_Incident_Response_Playbook.md) → 实践: Grafana + LangSmith 监控
 - **Key Skills**: Prompt 测试、RAG 评估、合同测试、LLM 指标监控、SLO/SLA、灾难恢复
 
 完成本路径后，参考 [milestones.md](../../90_Learn/guides/milestones.md) Stage 3 自测。

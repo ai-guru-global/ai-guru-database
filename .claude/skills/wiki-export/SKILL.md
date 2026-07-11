@@ -46,7 +46,7 @@ Pages with no `visibility/` tag, or tagged `visibility/public`, are always inclu
 
 ## Step 1: Build the Node and Edge Lists
 
-Glob all `.md` files in the vault (excluding `_archives/`, `_raw/`, `.obsidian/`, `index.md`, `log.md`, `_insights.md`). Apply any active filters (project and/or visibility) after collecting the full file list.
+Glob all `.md` files in the vault (excluding `归档/`, `原始/`, `.obsidian/`, `index.md`, `log.md`, `_insights.md`). Apply any active filters (project and/or visibility) after collecting the full file list.
 
 For each page, extract from frontmatter:
 - `id` — relative path from vault root, without `.md` extension (e.g. `concepts/transformers`)

@@ -202,7 +202,7 @@ BAD_ALERT = {
 - [[MLOps/Cost/Cost_Optimization_MLOps]] — 成本也是可观测维度
 
 ### 跨章
-- [[AI运维/README]] — AI 运维（基础设施层）
+- [[运维/README]] — AI 运维（基础设施层）
 - [[架构基建/High_Availability_2026]] — 高可用架构
 - [[_concepts/mlops]] — MLOps 概念
 

@@ -479,8 +479,8 @@ Vibe Coding（氛围编程）：
 
 ## Related
 
-- [[AI编程/Theory/AI_Coding_Theory.md|AI_Coding_Theory]]
-- [[AI编程/Tools/AI_Coding_Assistants_2026.md|AI_Coding_Assistants_2026]]
-- [[AI编程/Tools/CodeBuddy_Guide.md|CodeBuddy_Guide]]
-- [[AI编程/Tools/Comate_Guide.md|Comate_Guide]]
-- [[AI编程/Tools/Coze_Guide.md|Coze_Guide]]
+- [[编程/Theory/AI_Coding_Theory.md|AI_Coding_Theory]]
+- [[编程/Tools/AI_Coding_Assistants_2026.md|AI_Coding_Assistants_2026]]
+- [[编程/Tools/CodeBuddy_Guide.md|CodeBuddy_Guide]]
+- [[编程/Tools/Comate_Guide.md|Comate_Guide]]
+- [[编程/Tools/Coze_Guide.md|Coze_Guide]]

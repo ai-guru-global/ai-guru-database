@@ -70,8 +70,8 @@ sources: []
 
 ### 产品经理路径
 1. 了解各行业 AI 应用场景和最新案例
-2. 学习 [Agent_Production](../Agent/) 了解 AI Agent 产品化
-3. 研究 [AI_Coding_Assistants](../AI编程/Tools/AI_Coding_Assistants_2026.md) 提升开发效率
+2. 学习 [Agent_Production](../智能体/) 了解 AI Agent 产品化
+3. 研究 [AI_Coding_Assistants](../编程/Tools/AI_Coding_Assistants_2026.md) 提升开发效率
 
 ## 参考资源
 
@@ -107,7 +107,7 @@ sources: []
 - [[行业应用/Finance/AI_Finance_2026]] — AI_Finance_2026
 - [[行业应用/AI_Applications_Industry_for_dummy.md|AI_Applications_Industry_for_dummy]]
 - [[行业应用/Industry-in-nutshell.md|Industry-in-nutshell]]
-- [[_synthesis/ai-industry-applications|Ai Industry Applications]]
+- [[治理/ai-industry-applications|Ai Industry Applications]]
 
 ## 新增页面
 

@@ -128,7 +128,7 @@ sources: []
 
 - [架构基建/AI_Gateway](../架构基建/AI_Gateway/) -- AI 网关与路由
 - [RAG系统](../RAG系统/) -- RAG 应用场景
-- [Agent](../Agent/) -- Agent 推理需求
+- [Agent](../智能体/) -- Agent 推理需求
 
 ---
 
@@ -161,11 +161,11 @@ sources: []
 - [[AI_Stack_Inference_Serving_Guide|AI Stack 推理服务指南]]
 - [[AI_Stack_GPU_Monitoring_Guide|AI Stack GPU 监控指南]]
 - [[AI_Stack_Model_Management_Guide|AI Stack 模型下载与管理指南]]
-- [[_concepts/sglang.md|SGLang]]
-- [[_concepts/dynamic-batch-scheduling.md|动态批调度]]
-- [[_concepts/gguf.md|GGUF]]
-- [[_concepts/smoothquant.md|SmoothQuant]]
-- [[_concepts/tensorrt-llm.md|TensorRT-LLM]]
+- [[概念/sglang.md|SGLang]]
+- [[概念/dynamic-batch-scheduling.md|动态批调度]]
+- [[概念/gguf.md|GGUF]]
+- [[概念/smoothquant.md|SmoothQuant]]
+- [[概念/tensorrt-llm.md|TensorRT-LLM]]
 - [[部署推理/Inference_Engines/CTranslate2_Deep_Dive.md|CTranslate2: 轻量跨平台 Transformer 推理]]
 - [[部署推理/Inference_Engines/MLC_LLM_Deep_Dive.md|MLC LLM: 移动端/异构 LLM 推理]]
 
@@ -220,7 +220,7 @@ sources: []
 ## 相关页面
 - [[部署推理/Quantization/Quantization_Techniques_2026.md|Quantization Techniques 2026]]
 
-- [[_concepts/model-compression.md|Model Compression]]
+- [[概念/model-compression.md|Model Compression]]
 
 ## 新增页面
 
@@ -245,5 +245,5 @@ sources: []
 - [[部署推理/Caching/Prompt_Caching_Advanced.md|Prompt 缓存高级技术]]
 - [[部署推理/GPU_Infrastructure/GPUStack_Deep_Dive.md|GPUStack 深度解析]]
 - [[部署推理/GPU_Infrastructure/GPUStack_for_dummy.md|GPUStack 入门指南]]
-- [[_concepts/gpustack.md|GPUStack 概念卡片]]
-- [[_concepts/kv-cache.md|KV Cache 概念卡片]]
+- [[概念/gpustack.md|GPUStack 概念卡片]]
+- [[概念/kv-cache.md|KV Cache 概念卡片]]

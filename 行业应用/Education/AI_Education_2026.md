@@ -281,7 +281,17 @@ AI导师 2025-2026:
 - [行业速览](../Industry-in-nutshell.md) — 30 分钟了解所有行业 AI 应用
 - [机器学习](../../机器学习/README.md) — 基础算法与模型
 - [深度学习](../../深度学习/README.md) — 神经网络核心技术
-- [MLOps](../../MLOps/README.md) — 模型生产化部署
+- [MLOps](../../模型运维/README.md) — 模型生产化部署
+
+---
+
+## Related
+
+- [[../../RAG系统/RAG_Fundamentals|RAG 基础]] — 教育知识库构建
+- [[../../智能体/Agent_Foundations|Agent 基础]] — 个性化学习 Agent
+- [[../../大模型/LLM_Fundamentals|LLM 基础]] — 教育场景大模型应用
+- [[../../模型评估/Human_Evaluation|人工评估]] — 教育效果评估方法
+- [[../../部署推理/Cost|推理成本]] — 教育普惠的成本优化
 
 ---
 

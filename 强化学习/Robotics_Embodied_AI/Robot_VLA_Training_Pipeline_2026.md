@@ -104,7 +104,7 @@ graph TD
 - [[强化学习/Robotics_Embodied_AI/Embodied_AI_2026]] — 具身智能概论
 - [[强化学习/Robotics_Embodied_AI/VLA_Models_2026]] — 模型架构深度解析
 - [[深度学习/World_Models/World_Models_2026]] — 世界模型在控制中的应用
-- [[_concepts/teleoperation]] — 遥操作基础
+- [[概念/teleoperation]] — 遥操作基础
 
 ---
 

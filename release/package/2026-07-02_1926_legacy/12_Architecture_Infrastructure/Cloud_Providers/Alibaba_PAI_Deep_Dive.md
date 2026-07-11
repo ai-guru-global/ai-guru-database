@@ -113,7 +113,7 @@ ACK 专有版 / 敏捷版
 1. EAS 控制台查看 QPS、延迟、GPU 利用率
 2. ACK 查看 Pod 资源和 HPA 状态
 3. 检查 vLLM/SGLang 的 KV Cache、batch size
-4. 参考 [[AI运维/SRE_Reliability/LLM_Inference_Slow_Unavailable_Runbook|LLM 推理延迟/不可用 Runbook]]
+4. 参考 [[运维/SRE_Reliability/LLM_Inference_Slow_Unavailable_Runbook|LLM 推理延迟/不可用 Runbook]]
 
 ### 场景 3：PAI-DSW 无法启动
 
@@ -143,6 +143,6 @@ ACK 专有版 / 敏捷版
 - [[_concepts/alibaba-cloud|Alibaba Cloud]]
 - [[架构基建/Alibaba_Cloud_Proprietary_K8s_Context|阿里云专有云 K8s 上下文]]
 - [[模型训练/Monitoring/LLM_Fine_Tuning_Job_Failure_Runbook_on_K8s|LLM 微调任务 K8s 失败排障]]
-- [[AI运维/SRE_Reliability/LLM_Inference_Slow_Unavailable_Runbook|LLM 推理延迟/不可用 Runbook]]
+- [[运维/SRE_Reliability/LLM_Inference_Slow_Unavailable_Runbook|LLM 推理延迟/不可用 Runbook]]
 
 - [[架构基建/README|架构与基础设施 (Architecture & Infrastructure)]]

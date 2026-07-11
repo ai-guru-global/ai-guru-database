@@ -1,10 +1,10 @@
 ---
 title: "Applied Scientist 面试指南"
 category: "21-interviews-applied-scientist"
-tags: ["interviews", "career", "experience", "practitioners", "applied-ml", "experiment-design", "model-deployment", "business-metrics"]
-summary: "Applied Scientist 面试题库，覆盖 ML 理论、业务建模、实验设计与模型上线，含难度与频率标注。"
+tags: ["interviews", "career", "experience", "practitioners", "applied-ml", "experiment-design", "model-deployment", "business-metrics", "a-b-testing", "deep-learning"]
+summary: "Applied Scientist 面试全流程指南，覆盖岗位定位、技术能力要求（基础/进阶/专家级）、核心知识领域、高频面试题（技术/系统设计/行为类）、系统设计题、编程实操题、学习路径和薪资参考。适用于 Amazon、Google、Microsoft、Meta 等大厂 Applied Scientist 岗位。"
 created: 2026-05-31
-updated: 2026-07-01
+updated: 2026-07-11
 tier: supporting
 aliases:
   - "Applied_Scientist"
@@ -15,37 +15,690 @@ sources: []
 
 # Applied Scientist 面试指南
 
-> 本页面由 4 个子文件（interview_preparing.md, question_bank.md, company_level_question_bank.md, interview_answers.md）合并而成，覆盖 Applied Scientist 岗位的面试全流程。
-
-
-## 面试准备
-
-## 核心职责
-- **研究成果落地**: 模型性能与业务指标对齐。
-- **快速实验迭代**: 建模、验证与上线策略。
-- **跨团队协作**: 连接研究、工程与业务。
-
-## 核心能力
-- **算法理解**: 经典模型与深度学习实践。
-- **指标驱动**: 线上指标与离线指标的映射。
-- **工程协同**: 训练与推理协作流程。
-
-## 常见考点
-- **从离线到线上**: 指标不一致的排查。
-- **高影响项目**: 业务价值与技术难点。
-- **A/B 实验**: 迭代与验证策略。
-
-## 项目准备
-- **完整落地案例**: 有上线与业务指标提升。
-- **复盘能力**: 为什么成功/失败，如何优化。
-
-## 简历要点
-- **业务指标导向**: 强调增收/降本/提效。
-- **技术与业务桥梁**: 你如何推动落地。
+> **一句话理解**: Applied Scientist 是连接前沿研究与商业价值的桥梁——既要具备 Research Scientist 的理论深度，又要有 ML Engineer 的工程落地能力，核心使命是将算法创新转化为可衡量的业务成果。
 
 ---
-*Last updated: 2026-06-04*
+
+## Table of Contents
+
+- [1. 岗位定位与核心职责](#1-岗位定位与核心职责)
+  - [1.1 岗位定位](#11-岗位定位)
+  - [1.2 核心职责](#12-核心职责)
+  - [1.3 核心技能栈](#13-核心技能栈)
+  - [1.4 与相近岗位的区别](#14-与相近岗位的区别)
+- [2. 技术能力要求](#2-技术能力要求)
+- [3. 核心知识领域](#3-核心知识领域)
+- [4. 高频面试问题](#4-高频面试问题)
+- [5. 系统设计题](#5-系统设计题)
+- [6. 编程与实操题](#6-编程与实操题)
+- [7. 备试策略与学习路径](#7-备考策略与学习路径)
+- [8. 行业薪资范围参考](#8-行业薪资范围参考)
+- [9. 面试 Checklist](#9-面试-checklist)
+- [Related](#related)
+
+---
+
+## 1. 岗位定位与核心职责
+
+### 1.1 岗位定位
+
+Applied Scientist（应用科学家）是 Amazon、Microsoft、Google、Meta 等大型科技公司特有的岗位级别，位于纯研究岗（Research Scientist）和纯工程岗（ML Engineer）之间。这个岗位的核心使命是**将前沿算法研究转化为生产级解决方案，并直接驱动业务指标提升**。
+
+与 Research Scientist 不同，Applied Scientist 不追求发表 SOTA 论文（虽然很多 Applied Scientist 也会发表），而是更关注**研究成果的业务落地速度和效果**。与 ML Engineer 不同，Applied Scientist 需要具备更深的数学和理论基础，能够独立设计和验证新算法，而不仅仅是使用已有工具。
+
+典型工作场景包括：
+- 从业务问题出发，定义可形式化的建模目标
+- 快速进行文献调研，选择和改进合适的算法方案
+- 设计严格的实验框架（包括离线评测和在线 A/B 测试）
+- 与工程团队合作将模型部署到生产环境
+- 持续监控模型性能并迭代优化
+
+### 1.2 核心职责
+
+| 职责领域 | 具体内容 | 交付物 |
+|---------|---------|--------|
+| **问题形式化** | 将模糊的业务需求转化为明确的机器学习问题 | 问题定义文档、数据规格 |
+| **算法研发** | 文献调研、方案设计、原型实现、实验验证 | 实验报告、原型代码、对比基线 |
+| **实验设计** | 设计离线评测方案和在线 A/B 测试方案 | 实验计划、统计功效分析 |
+| **模型部署** | 与工程团队协作，将模型推向生产 | 上线文档、监控指标定义 |
+| **业务分析** | 分析模型对业务指标的影响并提出改进建议 | 深度分析报告、下一步规划 |
+| **跨团队协作** | 与产品经理、工程团队、业务团队沟通对齐 | 技术方案文档、Review 文档 |
+
+### 1.3 核心技能栈
+
+| 维度 | 关键技能 | 常见工具/框架 |
+|------|---------|--------------|
+| **ML 基础理论** | 统计学习、优化理论、概率论、信息论 | Scikit-learn, XGBoost, LightGBM |
+| **深度学习** | CNN、RNN、Transformer、扩散模型、对比学习 | PyTorch, JAX, HuggingFace |
+| **大语言模型** | Fine-tuning、RLHF、RAG、Prompt Engineering | transformers, PEFT, vLLM, LangChain |
+| **实验方法** | A/B 测试设计、因果推断、假设检验 | Scipy.stats, CausalImpact, EconML |
+| **数据处理** | 大规模数据处理、特征工程 | Spark, Pandas, SQL, Airflow |
+| **工程能力** | 代码质量、版本控制、模型部署 | Git, Docker, Kubernetes, MLflow |
+| **领域专精** | 推荐系统/NLP/CV/时间序列（至少一个领域深度） | 领域特定工具 |
+| **业务理解** | 指标体系、ROI 分析、用户行为分析 | BI 工具、SQL 分析 |
+
+### 1.4 与相近岗位的区别
+
+| 岗位 | 核心关注点 | 与 Applied Scientist 的差异 |
+|------|-----------|---------------------------|
+| **Research Scientist** | 前沿理论创新、论文发表 | 更偏纯研究，Applied Scientist 更关注落地 |
+| **ML Engineer** | 模型工程化、部署、运维 | 更偏工程实现，Applied Scientist 需要更强的算法设计能力 |
+| **Data Scientist** | 数据分析、商业洞察 | 更偏描述性分析，Applied Scientist 偏建模和预测 |
+| **AI Research Engineer** | 研究系统的工程实现 | 更偏训练系统和基础设施，Applied Scientist 更偏业务问题 |
+| **AI Product Manager** | 产品策略和用户体验 | 更偏产品决策，Applied Scientist 偏技术方案 |
+
+---
+
+## 2. 技术能力要求
+
+### 基础级 (L3 / 初级 Applied Scientist)
+
+- **编程能力**: 熟练使用 Python，能写出生产级代码（类型提示、单元测试、异常处理）
+- **ML 基础**: 深入理解常见算法原理（LR、SVM、树模型、神经网络），能手推关键公式
+- **数据处理**: 熟练使用 SQL 和 Pandas 进行复杂数据操作，理解数据分布和统计特性
+- **实验方法**: 掌握基本的 A/B 测试设计和假设检验
+- **深度学习**: 理解 CNN、RNN、Transformer 的基本原理，能使用 PyTorch 实现简单模型
+- **模型评估**: 理解 Precision/Recall/F1/AUC 等指标的适用场景和局限性
+
+### 进阶级 (L4 / 中级 Applied Scientist)
+
+- **算法设计**: 能够根据业务需求设计端到端的建模方案，包括特征工程、模型选择和评估策略
+- **深度学习进阶**: 熟悉预训练模型、Fine-tuning 策略（LoRA/QLoRA/Full Fine-tuning）、RLHF/DPO
+- **实验设计进阶**: 理解因果推断、CUPED（方差缩减）、序贯检验等高级实验方法
+- **大规模数据处理**: 使用 Spark 或类似框架处理 TB 级数据，设计高效的特征工程流水线
+- **系统思维**: 理解模型在生产环境中的全生命周期，包括监控、漂移检测、自动重训练
+- **跨领域迁移**: 能够将在一个领域（如推荐系统）的方法迁移到另一个领域（如搜索排序）
+
+### 专家级 (L5+ / 高级 Applied Scientist)
+
+- **技术领导力**: 能主导复杂项目的端到端交付，指导初级和中级成员
+- **前沿研究**: 跟踪顶会论文（NeurIPS、ICML、ICLR、ACL、CVPR），能快速判断哪些方法值得尝试
+- **业务影响力**: 能将技术决策与公司级别的业务战略对齐，推动高影响力的项目
+- **架构设计**: 设计可扩展的 ML 系统架构，考虑多模型协作、在线学习和实时推理
+- **技术判断力**: 在众多可能的方案中做出有理有据的选择，平衡短期收益和长期技术债
+- **影响力扩展**: 在组织内推动最佳实践，参与技术评审，提升团队整体水平
+
+---
+
+## 3. 核心知识领域
+
+### 3.1 机器学习理论与方法
+
+这是 Applied Scientist 面试的基础考核领域，重点考察候选人对算法原理的深度理解。
+
+**核心主题**:
+- 偏差-方差分解、正则化理论（L1/L2/Elastic Net）
+- 梯度优化方法（SGD、Adam、AdamW、学习率调度策略）
+- 集成学习（Bagging、Boosting、Stacking）
+- 树模型深入（XGBoost 的二阶泰勒展开、LightGBM 的直方图加速）
+- 概率图模型（贝叶斯网络、马尔可夫随机场）
+- 核方法与 SVM 的对偶理论
+
+**面试要点**: 不仅要知道"是什么"，更要知道"为什么"和"什么时候用"。面试官常会追问公式推导和极端情况分析。
+
+### 3.2 深度学习核心
+
+**核心主题**:
+- 反向传播与梯度消失/爆炸
+- BatchNorm / LayerNorm / RMSNorm 的原理和适用场景
+- Attention 机制（Self-Attention、Multi-Head Attention、Flash Attention）
+- Transformer 架构（Encoder-Decoder、Decoder-only、Encoder-only）
+- 预训练范式（MLM、CLM、对比学习）
+- 大模型技术（Scaling Laws、Chinchilla 定律、MoE）
+
+**面试要点**: 要能画出 Transformer 的架构图，解释 Q/K/V 的计算过程，讨论位置编码的演进（绝对 → 相对 → RoPE → ALiBi）。
+
+### 3.3 大语言模型应用
+
+**核心主题**:
+- Fine-tuning 技术全览（Full FT、PEFT、LoRA、QLoRA、Adapter）
+- 对齐技术（RLHF、DPO、IPO、KTO、Constitutional AI）
+- RAG 系统（检索策略、重排序、上下文窗口管理）
+- Prompt Engineering（CoT、Few-shot、Self-Consistency、ToT）
+- 模型压缩与加速（量化、蒸馏、剪枝、投机解码）
+- Agent 系统（ReAct、Plan-and-Execute、Tool Use）
+
+### 3.4 实验设计与因果推断
+
+**核心主题**:
+- A/B 测试的统计基础（假设检验、功效分析、样本量计算）
+- CUPED 和方差缩减技术
+- 序贯检验与随时有效推断（Always-Valid Inference）
+- 因果推断方法（PSM、IPW、DID、合成控制）
+- uplift modeling 与个性化效果估计
+- 实验中的常见陷阱（Simpson 悖论、窥探偏置、交互效应）
+
+### 3.5 推荐系统与排序
+
+**核心主题**:
+- 推荐系统架构（召回 → 粗排 → 精排 → 重排）
+- 协同过滤与矩阵分解
+- 深度推荐模型（DeepFM、DIN、DIEN、SIM）
+- 多目标优化（多任务学习、帕累托最优）
+- 冷启动策略
+- 位置偏置与去偏方法
+
+### 3.6 模型部署与工程实践
+
+**核心主题**:
+- Training-Serving Skew 的识别与解决
+- 模型漂移检测（数据漂移、概念漂移、预测漂移）
+- 在线学习与增量更新
+- 模型版本管理与灰度发布
+- 推理优化（模型量化、知识蒸馏、Batch 策略）
+- 特征存储（Feature Store）的设计与一致性保证
+
+### 3.7 领域特定知识
+
+Applied Scientist 通常需要在以下至少一个领域有深度经验：
+
+- **NLP**: 文本分类、NER、机器翻译、摘要生成、对话系统
+- **CV**: 图像分类、目标检测、语义分割、图像生成
+- **时间序列**: 预测、异常检测、因果分析
+- **语音**: ASR、TTS、语音增强
+- **推荐/搜索**: 个性化推荐、搜索排序、广告竞价
+
+---
+
+## 4. 高频面试问题
+
+> **难度标注**: ⭐ Basic | ⭐⭐ Intermediate | ⭐⭐⭐ Advanced
+> **频率标注**: 🔴 高频 | 🟡 中频 | 🟢 低频
+
+### 4.1 机器学习理论 (8 题)
+
+| # | 问题 | 难度 | 频率 |
+|---|------|------|------|
+| 1 | 解释偏差-方差权衡。在你的项目中如何判断过拟合还是欠拟合？ | ⭐ | 🔴 |
+| 2 | L1 正则化为什么能产生稀疏解？从几何和优化两个角度解释 | ⭐⭐ | 🔴 |
+| 3 | 对比 SGD、Momentum、Adam、AdamW 的区别和适用场景 | ⭐⭐ | 🔴 |
+| 4 | GBDT 和随机森林的核心区别是什么？各自在什么场景下更优？ | ⭐ | 🔴 |
+| 5 | 如何处理类别不平衡问题？不同方法的优劣对比 | ⭐⭐ | 🔴 |
+| 6 | 解释 XGBoost 的目标函数，为什么使用二阶泰勒展开？ | ⭐⭐ | 🟡 |
+| 7 | 协同过滤中的冷启动问题如何解决？有哪些实际有效的方案？ | ⭐⭐ | 🟡 |
+| 8 | 如何选择离线评估指标？什么情况下离线指标与线上效果不一致？ | ⭐⭐ | 🔴 |
+
+### 4.2 深度学习与大模型 (8 题)
+
+| # | 问题 | 难度 | 频率 |
+|---|------|------|------|
+| 9 | 详细解释 Self-Attention 的计算过程，为什么除以 √d_k？ | ⭐⭐ | 🔴 |
+| 10 | BatchNorm 和 LayerNorm 的区别？为什么 NLP 任务更适合 LayerNorm？ | ⭐⭐ | 🔴 |
+| 11 | 对比 LoRA、QLoRA 和 Full Fine-tuning，在什么场景下选择哪种？ | ⭐⭐ | 🔴 |
+| 12 | 解释 RLHF 的三个阶段。DPO 相比 RLHF 的优势是什么？ | ⭐⭐⭐ | 🟡 |
+| 13 | Scaling Laws 对实际训练有什么指导意义？Chinchilla 定律如何改变训练策略？ | ⭐⭐⭐ | 🟡 |
+| 14 | 如何设计一个 RAG 系统？检索质量和生成质量如何平衡？ | ⭐⭐ | 🔴 |
+| 15 | 解释 MoE（Mixture of Experts）的负载均衡问题和解决方案 | ⭐⭐⭐ | 🟢 |
+| 16 | 模型量化（INT8/INT4）对精度的影响如何评估？有哪些缓解策略？ | ⭐⭐ | 🟡 |
+
+### 4.3 实验设计与分析 (6 题)
+
+| # | 问题 | 难度 | 频率 |
+|---|------|------|------|
+| 17 | 如何设计一个 A/B 测试？样本量怎么算？需要跑多久？ | ⭐⭐ | 🔴 |
+| 18 | A/B 测试结果显示不显著，但业务方想上线，你怎么处理？ | ⭐⭐ | 🔴 |
+| 19 | CUPED 的原理是什么？它能将实验所需样本量减少多少？ | ⭐⭐⭐ | 🟡 |
+| 20 | 什么情况下 A/B 测试不可行？此时如何做因果推断？ | ⭐⭐⭐ | 🟡 |
+| 21 | 你的离线指标提升了 5%，但线上 A/B 测试没有效果，可能原因有哪些？ | ⭐⭐ | 🔴 |
+| 22 | 如何设计一个多臂老虎机（MAB）实验来替代传统 A/B 测试？ | ⭐⭐⭐ | 🟢 |
+
+### 4.4 系统设计 (4 题)
+
+| # | 问题 | 难度 | 频率 |
+|---|------|------|------|
+| 23 | 设计一个电商推荐系统的完整 ML Pipeline | ⭐⭐⭐ | 🔴 |
+| 24 | 设计一个基于 LLM 的智能客服系统（RAG + Agent） | ⭐⭐⭐ | 🔴 |
+| 25 | 设计一个实时欺诈检测系统，要求 P99 延迟 < 100ms | ⭐⭐⭐ | 🟡 |
+| 26 | 设计一个模型监控和自动回滚系统 | ⭐⭐⭐ | 🟡 |
+
+### 4.5 行为面试 (6 题)
+
+| # | 问题 | 频率 |
+|---|------|------|
+| 27 | 描述一个你主导的从研究到上线的项目，最大的挑战是什么？ | 🔴 |
+| 28 | 你和工程团队在模型部署上有分歧时如何处理？ | 🔴 |
+| 29 | 描述一次离线效果好但线上效果差的经历，你是如何排查和解决的？ | 🔴 |
+| 30 | 你如何在探索新方法和保证业务交付之间平衡？ | 🟡 |
+| 31 | 描述一次你影响了技术路线决策的经历 | 🟡 |
+| 32 | 如何向非技术高管解释你的模型为什么有效？ | 🟡 |
+
+---
+
+## 5. 系统设计题
+
+### 5.1 设计电商推荐系统的完整 ML Pipeline
+
+**题目**: 为一个日活 1 亿用户的电商平台设计推荐系统，从数据采集到模型推理的完整方案。
+
+**考察要点**:
+
+1. **需求澄清**:
+   - 推荐什么？商品列表、商品详情页关联、首页 Feed
+   - 延迟要求？首页 Feed 召回 < 200ms，精排 < 50ms
+   - 评估指标？CTR、CVR、GMV、用户停留时长、多样性
+
+2. **架构设计**:
+   ```
+   用户请求 → 召回层（多路召回）→ 粗排 → 精排 → 重排 → 返回
+                  ↑               ↑       ↑       ↑
+              向量检索          轻量模型  深度模型  策略层
+              协同过滤          (DSSM)  (DIN/DIEN) (多样性/去重/位置)
+   ```
+
+3. **召回层设计**:
+   - 协同过滤（ItemCF / UserCF）
+   - 向量检索（User-Item 双塔模型 + Faiss/Milvus）
+   - 图神经网络（基于用户-商品交互图）
+   - 标签/规则召回（热门、新品、同类目）
+   - 多路召回融合策略
+
+4. **排序层设计**:
+   - 粗排: 轻量模型（DSSM 双塔），快速过滤到数百量级
+   - 精排: 深度模型（DIN/DIEN），考虑用户行为序列
+   - 多目标优化: CTR + CVR + 停留时长联合建模（MMoE / PLE）
+
+5. **特征工程**:
+   - 用户特征: 人口属性、行为序列、长期偏好
+   - 商品特征: 类目、价格、销量、评分、图文 Embedding
+   - 上下文特征: 时间、位置、设备、场景
+   - 交叉特征: 用户-商品交互统计
+
+6. **工程实现**:
+   - 特征存储: 在线 Feature Store（Redis）+ 离线 Feature Pipeline（Spark）
+   - 模型训练: 分布式训练（TensorFlow / PyTorch）
+   - 模型服务: TensorFlow Serving / TorchServe + 负载均衡
+   - 实时更新: Kafka 消费用户行为 → 实时特征更新 → 在线学习
+
+7. **监控与迭代**:
+   - 实时监控: CTR、推荐覆盖率、响应延迟
+   - 模型漂移检测: 特征分布 PSI、预测分布变化
+   - A/B 测试框架: 按用户分流、多指标评估
+
+**追问预判**:
+- "冷启动用户怎么推荐？" → 内容召回 + 探索策略 + 人口属性迁移
+- "如何保证推荐的多样性？" → MMR/DPP 重排、类目打散约束
+- "多路召回结果如何融合？" → 分数归一化 + 加权或学习排序
+
+### 5.2 设计基于 LLM 的智能客服系统
+
+**题目**: 为一个有 1000 万用户的 SaaS 产品设计智能客服系统，用 LLM 处理 70% 的常见问题，剩余转人工。
+
+**考察要点**:
+
+1. **需求分析**:
+   - 覆盖场景: 账户问题、功能咨询、Bug 报告、退款流程
+   - 质量要求: 准确率 > 90%，幻觉率 < 2%，响应时间 < 3s
+   - 安全要求: 不泄露用户隐私，不越权操作
+
+2. **架构设计**:
+   ```
+   用户消息 → 意图分类 → FAQ 匹配？
+                           ├─ 是 → 模板回复
+                           └─ 否 → RAG 检索 → LLM 生成 → 安全检查 → 回复
+                                                          ↓
+                                                     置信度低 → 转人工
+   ```
+
+3. **RAG 系统设计**:
+   - 知识库构建: 产品文档、FAQ、历史工单 → 切片 → Embedding → 向量库
+   - 检索策略: 混合检索（向量 + BM25）+ Cross-Encoder 重排序
+   - 上下文管理: 对话历史压缩 + 当前问题聚焦
+
+4. **安全与质量控制**:
+   - 输入过滤: Prompt Injection 检测
+   - 输出检查: 事实性校验、PII 过滤、安全分类器
+   - 兜底策略: 置信度阈值 + 不确定时主动转人工
+
+5. **评估体系**:
+   - 离线: 标注集准确率、RAG 命中率、幻觉率
+   - 在线: 用户满意度、转人工率、首问解决率
+   - 持续改进: 错误案例聚类 → 知识库补充 → Prompt 优化
+
+**追问预判**:
+- "如何处理多轮对话中的上下文？" → 上下文窗口管理 + 历史摘要
+- "知识更新频率？" → 增量索引 + 全量重建周期
+- "如何降低延迟和成本？" → 语义缓存 + 小模型路由 + 批处理
+
+### 5.3 设计实时欺诈检测系统
+
+**题目**: 为一个支付平台设计实时欺诈检测系统，要求 P99 延迟 < 100ms，日处理 1 亿笔交易。
+
+**考察要点**:
+
+1. **架构分层**:
+   - 规则引擎（< 10ms）: 基于规则的风控策略，拦截明显异常
+   - 轻量模型（< 30ms）: XGBoost / LightGBM，快速评分
+   - 深度模型（< 50ms）: 序列模型捕捉行为模式
+   - 图分析（异步）: 关联交易网络分析
+
+2. **特征工程**:
+   - 实时特征: 最近 N 分钟/小时/天的交易频率、金额统计
+   - 用户画像: 历史行为模式、设备指纹
+   - 上下文特征: 商户类型、地理位置、时间
+
+3. **数据管道**:
+   - Kafka 流式数据摄入
+   - Flink 实时特征计算
+   - Redis 在线特征服务
+   - 模型推理服务（低延迟部署）
+
+4. **模型策略**:
+   - 分层模型: 快速规则 → 轻量模型 → 深度模型 → 人工审核
+   - 模型更新: 每日增量训练 + 周度全量训练
+   - 冷启动: 基于规则 + 人口统计迁移
+
+---
+
+## 6. 编程与实操题
+
+### 6.1 实现一个简化版的 A/B 测试分析器
+
+```python
+import numpy as np
+from scipy import stats
+
+def ab_test_analysis(control_conversions, control_total, 
+                     treatment_conversions, treatment_total,
+                     alpha=0.05):
+    """
+    分析 A/B 测试结果，返回是否显著及置信区间。
+    
+    Returns:
+        dict: 包含 p-value, 置信区间, 提升幅度, 样本量是否充足
+    """
+    ctrl_rate = control_conversions / control_total
+    treat_rate = treatment_conversions / treatment_total
+    
+    # 双比例 Z 检验
+    pooled_rate = (control_conversions + treatment_conversions) / \
+                  (control_total + treatment_total)
+    se = np.sqrt(pooled_rate * (1 - pooled_rate) * 
+                 (1/control_total + 1/treatment_total))
+    z_stat = (treat_rate - ctrl_rate) / se
+    p_value = 2 * (1 - stats.norm.cdf(abs(z_stat)))
+    
+    # 置信区间
+    diff = treat_rate - ctrl_rate
+    ci_lower = diff - stats.norm.ppf(1 - alpha/2) * se
+    ci_upper = diff + stats.norm.ppf(1 - alpha/2) * se
+    
+    # 最小可检测效应（MDE）所需样本量
+    lift = diff / ctrl_rate if ctrl_rate > 0 else 0
+    
+    return {
+        'significant': p_value < alpha,
+        'p_value': p_value,
+        'lift_percent': lift * 100,
+        'ci_95': (ci_lower * 100, ci_upper * 100),
+        'control_rate': ctrl_rate,
+        'treatment_rate': treat_rate
+    }
+```
+
+**考察要点**: 假设检验原理、统计功效、样本量计算、实际显著性 vs 统计显著性。
+
+### 6.2 实现特征重要性分析 Pipeline
+
+```python
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.inspection import permutation_importance
+import pandas as pd
+import numpy as np
+
+def feature_importance_analysis(X, y, feature_names, top_k=20):
+    """
+    组合多种方法分析特征重要性。
+    """
+    # 1. 模型内置重要性
+    rf = RandomForestClassifier(n_estimators=100, random_state=42)
+    rf.fit(X, y)
+    builtin_imp = pd.Series(rf.feature_importances_, index=feature_names)
+    
+    # 2. 排列重要性（更鲁棒）
+    perm_imp = permutation_importance(rf, X, y, n_repeats=10, random_state=42)
+    perm_imp_series = pd.Series(perm_imp.importances_mean, index=feature_names)
+    
+    # 3. 特征间的冗余分析
+    corr_matrix = pd.DataFrame(X, columns=feature_names).corr()
+    
+    # 综合排序
+    combined = builtin_imp.rank(ascending=False) + perm_imp_series.rank(ascending=False)
+    
+    return {
+        'builtin_top': builtin_imp.nlargest(top_k),
+        'permutation_top': perm_imp_series.nlargest(top_k),
+        'combined_rank': combined.nsmallest(top_k),
+        'redundant_pairs': find_high_corr_pairs(corr_matrix, threshold=0.9)
+    }
+```
+
+**考察要点**: 不同特征重要性方法的优劣、排列重要性的计算复杂度、冗余特征的识别。
+
+### 6.3 实现 LoRA Fine-tuning 的核心逻辑
+
+```python
+import torch
+import torch.nn as nn
+
+class LoRALinear(nn.Module):
+    """
+    LoRA (Low-Rank Adaptation) 的核心实现。
+    冻结原始权重，仅训练低秩分解矩阵 ΔW = BA。
+    """
+    def __init__(self, original_linear: nn.Linear, r: int = 8, alpha: int = 16):
+        super().__init__()
+        self.original = original_linear
+        self.r = r
+        self.alpha = alpha
+        self.scaling = alpha / r
+        
+        d_out, d_in = original_linear.weight.shape
+        
+        # 低秩分解矩阵
+        self.lora_A = nn.Parameter(torch.randn(r, d_in) * 0.01)
+        self.lora_B = nn.Parameter(torch.zeros(d_out, r))  # B 初始化为 0
+        
+        # 冻结原始权重
+        self.original.weight.requires_grad = False
+        if self.original.bias is not None:
+            self.original.bias.requires_grad = False
+    
+    def forward(self, x):
+        # 原始输出 + 低秩适配
+        original_out = self.original(x)
+        lora_out = (x @ self.lora_A.T) @ self.lora_B.T * self.scaling
+        return original_out + lora_out
+```
+
+**考察要点**: LoRA 的数学原理、初始化策略（A 用高斯，B 用零）、scaling factor 的作用、参数量减少的估算。
+
+### 6.4 SQL + 数据分析实操
+
+给定一张交易表 `transactions(user_id, amount, category, timestamp, is_fraud)`，完成以下分析：
+
+```sql
+-- 1. 计算每个用户最近7天的欺诈率，并找出欺诈率异常高的用户
+WITH user_fraud AS (
+    SELECT 
+        user_id,
+        COUNT(*) AS total_txn,
+        SUM(CASE WHEN is_fraud THEN 1 ELSE 0 END) AS fraud_txn,
+        SUM(amount) AS total_amount
+    FROM transactions
+    WHERE timestamp >= NOW() - INTERVAL '7 days'
+    GROUP BY user_id
+    HAVING COUNT(*) >= 10  -- 至少10笔交易才统计
+)
+SELECT *,
+       fraud_txn * 1.0 / total_txn AS fraud_rate
+FROM user_fraud
+WHERE fraud_txn * 1.0 / total_txn > 0.05  -- 欺诈率 > 5%
+ORDER BY fraud_rate DESC;
+
+-- 2. 计算欺诈交易和正常交易的金额分布差异
+SELECT 
+    is_fraud,
+    PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY amount) AS median_amount,
+    AVG(amount) AS avg_amount,
+    STDDEV(amount) AS std_amount,
+    PERCENTILE_CONT(0.95) WITHIN GROUP (ORDER BY amount) AS p95_amount
+FROM transactions
+GROUP BY is_fraud;
+```
+
+### 6.5 实现简单的 RAG 检索-生成 Pipeline
+
+```python
+import numpy as np
+
+class SimpleRAG:
+    def __init__(self, embedder, llm_client, top_k=3):
+        self.embedder = embedder
+        self.llm = llm_client
+        self.top_k = top_k
+        self.documents = []
+        self.embeddings = []
+    
+    def add_documents(self, docs):
+        """添加文档到知识库"""
+        self.documents.extend(docs)
+        new_embeddings = [self.embedder.embed(d) for d in docs]
+        self.embeddings.extend(new_embeddings)
+    
+    def retrieve(self, query):
+        """检索最相关的文档"""
+        query_emb = self.embedder.embed(query)
+        scores = [np.dot(query_emb, doc_emb) for doc_emb in self.embeddings]
+        top_indices = np.argsort(scores)[-self.top_k:][::-1]
+        return [self.documents[i] for i in top_indices]
+    
+    def generate(self, query):
+        """检索增强生成"""
+        relevant_docs = self.retrieve(query)
+        context = "\n---\n".join(relevant_docs)
+        
+        prompt = f"""基于以下参考资料回答问题。如果资料中没有答案，请说明。
+
+参考资料:
+{context}
+
+问题: {query}
+
+回答:"""
+        return self.llm.generate(prompt)
+```
+
+**考察要点**: Embedding 检索原理、上下文窗口管理、Prompt 设计、幻觉控制。
+
+---
+
+## 7. 备考策略与学习路径
+
+### 7.1 基础阶段（2-3 个月）
+
+1. **ML 理论夯实**:
+   - 精读《Pattern Recognition and Machine Learning》（Bishop）前 4 章
+   - 完成吴恩达 ML 课程的编程作业
+   - 刷 LeetCode 上的 ML 编程题（50+ 道）
+
+2. **深度学习基础**:
+   - 学习《Deep Learning》（Goodfellow）第 6-9 章
+   - 动手实现 MLP、CNN、RNN、Transformer（从零写）
+   - 完成 Andrew Ng 的 Deep Learning Specialization
+
+3. **实验方法**:
+   - 学习因果推断入门（因果推断的统计基础）
+   - 理解 A/B 测试的统计原理和常见陷阱
+   - 阅读《Trustworthy Online Controlled Experiments》
+
+### 7.2 进阶阶段（2-3 个月）
+
+1. **大模型技术栈**:
+   - 精读 Attention is All You Need + GPT 系列 + LLaMA 论文
+   - 实践 LoRA/QLoRA Fine-tuning（HuggingFace PEFT）
+   - 搭建 RAG 系统（LangChain / LlamaIndex）
+
+2. **领域深耕**:
+   - 选择一个领域（推荐/NLP/CV）深入
+   - 阅读该领域近 2 年顶会的 10+ 篇高质量论文
+   - 复现至少 2 篇论文的核心实验
+
+3. **系统设计**:
+   - 研究典型 ML 系统设计题（推荐、搜索、广告、风控）
+   - 学习 ML 系统架构模式（Lambda/Kappa 架构、Feature Store）
+   - 练习画架构图并讲解 trade-off
+
+4. **实验设计进阶**:
+   - 学习 CUPED、序贯检验等高级实验方法
+   - 理解多臂老虎机和贝叶斯优化
+   - 阅读互联网公司实验平台的技术博客
+
+### 7.3 面试冲刺阶段（1 个月）
+
+1. **模拟面试**: 每周至少 2 次模拟面试（找朋友或使用平台）
+2. **项目复盘**: 准备 3 个深度项目案例，用 STAR 法则表达
+3. **行为面试**: 准备 Amazon Leadership Principles 的故事
+4. **公司专项**: 研究目标公司的技术博客和近期论文
+
+---
+
+## 8. 行业薪资范围参考
+
+> 以下数据基于 2025-2026 年美国科技大厂和一线 AI 公司的公开数据，仅供参考。
+
+| 级别 | 公司类型 | 年薪范围 (Base + Equity) | 说明 |
+|------|---------|------------------------|------|
+| L3 (初级) | FAANG / 顶级 AI 公司 | $180K - $280K | 博士应届或硕士 3 年经验 |
+| L4 (中级) | FAANG / 顶级 AI 公司 | $280K - $450K | 博士 + 2-4 年经验 |
+| L5 (高级) | FAANG / 顶级 AI 公司 | $400K - $650K | 博士 + 5+ 年经验 |
+| L6 (资深) | FAANG / 顶级 AI 公司 | $550K - $900K | 技术领导力 + 大影响力项目 |
+| L7+ (首席) | FAANG / 顶级 AI 公司 | $800K - $1.5M+ | 组织级影响力 |
+| 所有级别 | 初创公司 | Base 低 10-20%，Equity 波动大 | 可能有巨大上行空间 |
+
+**地区差异**:
+- 旧金山/纽约/西雅图: 基准线
+- 奥斯汀/丹佛: 基准线的 85-90%
+- 远程（低成本地区）: 基准线的 70-85%
+
+**中国市场** (人民币):
+- 初级 (1-3 年): 40-80 万
+- 中级 (3-5 年): 80-150 万
+- 高级 (5+ 年): 150-300 万
+- 资深/专家: 300-500 万+
+
+---
+
+## 9. 面试 Checklist
+
+面试前建议逐项确认：
+
+- [ ] 能手推至少 3 个核心算法（LR、SVM、Attention）
+- [ ] 能画出 Transformer 架构图并解释每个组件
+- [ ] 理解至少一个领域的 SOTA 方法（推荐/NLP/CV）
+- [ ] 能设计完整的 A/B 测试方案（含样本量计算）
+- [ ] 能解释离线指标与线上效果不一致的常见原因
+- [ ] 准备了 3 个深度项目案例（用 STAR 法则）
+- [ ] 能设计至少 2 个系统级 ML 方案（推荐/搜索/风控）
+- [ ] 熟悉 Fine-tuning 和 RAG 的技术细节
+- [ ] 理解模型部署的关键工程问题（漂移、延迟、一致性）
+- [ ] 准备了行为面试故事（冲突处理、失败复盘、影响力）
+- [ ] 研究了目标公司的业务和技术栈
+- [ ] 准备了向面试官提问的好问题
+
+---
+
 ## Related
 
-- [[面试岗位/README|面试岗位 总览]]
-- [[面试岗位/jobs|岗位地图 (jobs)]]
+- [[面试岗位/README|AI 面试准备 (Interviews)]]
+- [[面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[面试岗位/Research_Scientist/Research_Scientist|Research Scientist 面试指南]]
+- [[面试岗位/AI_Research_Scientist/AI_Research_Scientist|AI Research Scientist 面试指南]]
+- [[面试岗位/AI_Research_Engineer/AI_Research_Engineer|AI Research Engineer 面试指南]]
+- [[面试岗位/Machine_Learning_Engineer/question_bank|Machine Learning Engineer 题库]]
+- [[面试岗位/Agent_Engineer/Agent_Engineer_2026|Agent Engineer 面试指南]]
+- [[面试岗位/AI_Product_Manager/AI_Product_Manager|AI Product Manager 面试指南]]
+- [[面试岗位/Data_Scientist/question_bank|Data Scientist 题库]]
+
+---
+
+*Last updated: 2026-07-11*

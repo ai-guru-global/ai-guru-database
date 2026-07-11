@@ -101,5 +101,5 @@ RetNet 用一个衰减因子和位置编码，把历史信息压缩进一个状�
 - [[_concepts/mamba]] — Mamba
 - [[_concepts/state-space-models]] — 状态空间模型（SSM）
 - [[_concepts/kv-cache]] — KV Cache
-- [[AI入门/AI_New_Architectures]] — AI 新架构
+- [[入门/AI_New_Architectures]] — AI 新架构
 - [[深度学习/State_Space_Models_2026]] — 状态空间模型 2026

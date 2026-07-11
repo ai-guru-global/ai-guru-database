@@ -574,7 +574,7 @@ policies:
 #   span6:   AgentGateway response filter        1ms
 ```
 
-这条 trace 是排障"agent 为什么慢/为什么失败"的核心——能精确区分网关开销还是后端慢。可观测体系整体方法论见 [[MLOps/Observability/LLM_Observability]]。
+这条 trace 是排障"agent 为什么慢/为什么失败"的核心——能精确区分网关开销还是后端慢。可观测体系整体方法论见 [[模型运维/Observability/LLM_Observability]]。
 
 ### 7.3 工具调用审计日志
 

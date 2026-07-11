@@ -357,8 +357,8 @@ MoE + RAG 的混合架构:
 ## Related
 
 - [[大模型/LLM_Architectures/MoE_Routing_and_Load_Balancing]]
-- [[_concepts/transformer-architecture]]
+- [[概念/transformer-architecture]]
 - [[大模型/LLM_Architectures/LLM_Architectures]]
 - [[模型训练/Distributed_Training/Distributed_Training_2026]]
 - [[部署推理/Inference_Engines/vLLM_Deep_Dive]]
-- [[_synthesis/moe-inference-optimization|MoE × 推理优化]] — DeepSeek/Mixtral 推理实践
+- [[治理/moe-inference-optimization|MoE × 推理优化]] — DeepSeek/Mixtral 推理实践

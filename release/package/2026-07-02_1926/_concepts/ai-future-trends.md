@@ -179,6 +179,6 @@ AI催生六大新产业方向：
 
 ## Related
 
-- [[AI入门/AI_Future_Trends]] — AI未来趋势展望 (共享: agi, ai)
+- [[入门/AI_Future_Trends]] — AI未来趋势展望 (共享: agi, ai)
 - [[_concepts/ai-ethics]] — AI伦理 (共享: ai, 社会影响)
 - [[_synthesis/ai-ethics-future]]

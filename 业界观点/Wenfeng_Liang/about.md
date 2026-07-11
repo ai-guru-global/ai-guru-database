@@ -1,10 +1,10 @@
 ---
 title: "梁文锋 (Wenfeng Liang) — DeepSeek 创始人"
 category: 19-talks-wenfeng-liang
-tags: [wenfeng-liang, deepseek, high-flyer, moe, mla, open-source, chinese-ai, efficiency]
-summary: "梁文锋是幻方量化联合创始人、DeepSeek 创始人，用 $5.6M 训练出媲美 GPT-4 的模型，以开源和效率震惊全球 AI 界。"
+tags: [wenfeng-liang, deepseek, high-flyer, moe, mla, open-source, chinese-ai, efficiency, grpo, FP8, chinese-six-dragons]
+summary: "梁文锋是幻方量化联合创始人、DeepSeek 创始人，用 $5.6M 训练出媲美 GPT-4 的模型，以开源和效率震惊全球 AI 界，代表了中国 AI 在芯片受限下的极致创新。"
 created: 2026-06-12
-updated: 2026-06-12
+updated: 2026-07-11
 tier: supporting
 aliases:
   - About
@@ -13,84 +13,151 @@ sources: []
 ---
 # 梁文锋 (Wenfeng Liang) — DeepSeek 创始人
 
-> **一句话概括**: 从量化交易巨头转身 AI 创业，用不到 $6M 训练出 671B 参数的 DeepSeek-V3，证明了"效率比规模更重要"，并以全面开源震撼了整个行业。
+## 一句话概括
+
+> 从量化交易巨头转身 AI 创业，用不到 $6M 训练出 671B 参数的 DeepSeek-V3，证明了"效率比规模更重要"——以全面开源和极致成本控制震撼全球 AI 界，成为芯片制裁下中国 AI 自主创新的标志性人物。
 
 ---
 
-## 核心贡献
+## 核心贡献 (Key Contributions)
 
-- **幻方量化 (High-Flyer Capital)**: 联合创始人，中国顶级量化基金，管理数百亿资产
-- **DeepSeek 系列**: 从 7B 到 V4 (1.6T)，全部开源，成为开源 LLM 标杆
-- **DeepSeekMoE**: 细粒度专家 + 共享专家，开创 MoE 新范式
-- **MLA (Multi-head Latent Attention)**: KV Cache 压缩 95%，使长上下文成为可能
-- **GRPO 算法**: 无 Critic 的 RL 对齐方法，DeepSeek-R1 的核心创新
-- **FP8 训练**: 首个大规模 FP8 混合精度训练，成本降 50%
+- **幻方量化 (High-Flyer Capital)**: 联合创始人，中国顶级量化对冲基金，管理数百亿资产。幻方的核心竞争力之一是大规模 GPU 集群的算力部署——这为后来的 DeepSeek 奠定了算力基础。梁文锋将量化交易中"极致效率"的思维模式带入了 AI 训练。
+- **DeepSeek 系列开源模型**: 从 DeepSeek-7B 到 DeepSeek-V4 (1.6T)，全部以 MIT/DeepSeek License 开源，成为全球开源 LLM 的标杆。DeepSeek 的开源不仅是模型权重的开放，更包括完整的技术报告、训练方法和成本数据的全面透明。
+- **DeepSeekMoE**: 创新的细粒度混合专家架构——将传统 MoE 的少量大专家拆分为更多小专家 + 共享专家，实现更精细的专家路由。这一架构被后续多个开源模型借鉴，成为 MoE 设计的新范式。
+- **MLA (Multi-head Latent Attention)**: KV Cache 压缩 95% 的注意力机制创新，通过将 Key/Value 投影到低维潜在空间大幅减少推理时的内存占用，使 128K 甚至 1M 的超长上下文成为可能。MLA 是 DeepSeek 对 LLM 推理效率的最重要贡献之一。
+- **GRPO 算法**: 无 Critic 网络的 RL 对齐方法（Group Relative Policy Optimization），是 DeepSeek-R1 推理能力的核心创新。GRPO 简化了 RLHF 的训练流程，降低了推理模型训练的门槛。
+- **FP8 大规模训练**: 全球首个大规模 FP8 混合精度训练的实践者，将训练成本降低约 50%。这一技术创新直接打破了"训练大模型需要 H100 + BF16"的传统假设。
+- **DeepSeek-R1 的"Aha Moment"**: R1 在纯 RL 训练中自发涌现出了"自我反思"能力（模型自发地说出"Wait, let me reconsider..."），这一现象被称为 AI 的"顿悟时刻"，引发了全球 AI 界对 RL 与推理能力关系的重新思考。
 
-## 代表性成果
+---
 
-1. **DeepSeek-V2** (2024.5): 236B/21B MoE + MLA，$8.1M 训练
-   - 首次将 MoE + MLA 结合，引发行业关注
+## 代表性成果与技术里程碑
 
-2. **DeepSeek-V3** (2024.12): 671B/37B MoE，$5.6M 训练
-   - MMLU 88.5，媲美 GPT-4o
-   - 训练成本仅为 GPT-4 的 1/20，震惊全球
+### 1. DeepSeek-V2 (2024.5): 236B/21B MoE + MLA
 
-3. **DeepSeek-R1** (2025.1): RL 推理模型
-   - AIME 79.8%，Codeforces 96th percentile
-   - 自发的"顿悟时刻"(Aha Moment)
-   - 蒸馏出 1.5B-70B 系列，全面开源
+- 首次将细粒度 MoE + MLA 结合，以 $8.1M 训练成本引发行业关注
+- 推理成本仅为同规模 Dense 模型的 1/10
+- 开源后迅速成为中国最流行的基础模型
 
-4. **DeepSeek-V4** (2026.4): 1.6T/49B Pro + 284B/13B Flash
-   - CSA/HCA 混合注意力，1M 上下文
-   - Muon 优化器，自适应推理模式
+### 2. DeepSeek-V3 (2024.12): 671B/37B MoE
 
-## 技术观点
+- MMLU 88.5，媲美 GPT-4o 和 Claude 3.5 Sonnet
+- $5.6M 训练成本——仅为 GPT-4 估计成本的 1/20，震惊全球
+- 引发 NVIDIA 股价单日下跌约 17%（约 $6000 亿市值蒸发），市场重新评估"算力为王"的叙事
+- 全面开源权重和技术报告
 
-- **效率优于规模**: "不是谁的 GPU 多谁就赢，而是谁的算法更好"
-- **开源是最好的策略**: "开源让全世界帮你验证和改进，闭源是自我封闭"
-- **量化基金思维**: 将量化交易的效率思维带入 AI 训练
-- **成本意识**: 每篇技术报告都公布训练成本，推动行业透明化
+### 3. DeepSeek-R1 (2025.1): RL 推理模型
 
-## 名言金句
+- AIME 79.8%，Codeforces 96th percentile
+- 纯 RL + GRPO 即可匹敌 OpenAI o1
+- "Aha Moment": 模型自发涌现出自我反思和长链推理能力
+- 蒸馏出 1.5B-70B 系列，全面开源，推动开源推理模型生态爆发
 
-> "We trained DeepSeek-V3 for $5.6 million. GPT-4 cost over $100 million. Efficiency matters."
+### 4. DeepSeek-V4 (2026.4): 1.6T/49B Pro + 284B/13B Flash
 
-> "Open source is not a strategy, it's a belief. The best AI should belong to everyone."
+- CSA/HCA 混合注意力，1M 上下文
+- Muon 优化器，自适应推理模式
+- 双产品线：Pro（旗舰）+ Flash（高效）
 
-> "MoE is the future. You don't need to activate all parameters for every token."
+---
 
-> "中国不需要 10000 张 H100 来证明实力，需要的是 2048 张 H800 加上更好的算法。"
+## 技术观点 (Technical Positions & Beliefs)
 
-> "DeepSeek 不是要与 OpenAI 竞争，而是要证明高效训练是可能的。"
+### 效率优于规模
 
-## 公司/团队
+梁文锋的核心信念是"不是谁的 GPU 多谁就赢，而是谁的算法更好"。DeepSeek 的全部技术路线（MoE/MLA/FP8/GRPO）都在证明：通过极致的工程优化和算法创新，可以用 1/10 甚至 1/20 的算力成本匹敌巨头。这一理念直接挑战了 [[业界观点/Sam_Altman/about]] 的"规模即一切"路线，与 [[业界观点/Junjie_Yan/about]] (MiniMax) 的效率优先策略呼应。这一理念在芯片制裁背景下具有特殊的战略意义——证明了"受限条件下也能创新"。
 
-| 维度 | 详情 |
+### 开源是最好的策略
+
+> *"开源让全世界帮你验证和改进，闭源是自我封闭。"*
+
+DeepSeek 的全面开源（权重 + 技术报告 + 训练方法 + 成本数据）被梁文锋视为"不是策略而是信念"。他认为最好的 AI 应该属于所有人，开源社区的力量远超任何单一公司。这一立场与 [[业界观点/Emad_Mostaque/about]] 的 Stability AI 理念一致，与 [[业界观点/Sam_Altman/about]] 的闭源前沿模型策略形成尖锐对立。
+
+### 量化基金思维
+
+梁文锋将量化交易中"追求极致效率"和"数据驱动决策"的思维模式带入了 AI 训练。DeepSeek 的每一项技术创新——FP8 训练、MoE 细粒度化、KV Cache 压缩——都是在"如何在有限资源下最大化效果"这一框架下的产物。
+
+### 成本透明化
+
+DeepSeek 的每篇技术报告都详细公布训练成本（GPU 小时、总美元、推理成本等），这在 AI 行业是极为罕见的透明度。梁文锋认为"成本透明有助于行业对标和加速创新"，推动其他公司也开始披露训练成本数据。
+
+### 不做 API 生意
+
+与月之暗面、智谱 AI 不同，DeepSeek 不以 API 收入为主要商业模式。梁文锋将 DeepSeek 定位为"技术研究实验室"而非"商业产品公司"，幻方量化的长期资金支持使团队无需急于商业化。
+
+---
+
+## 对 AI 领域的影响力评估 (Impact Assessment)
+
+梁文锋的影响力是 2024-2025 年 AI 行业最出乎意料的变量。DeepSeek-V3 的 $5.6M 训练成本和与 GPT-4o 匹敌的性能直接动摇了"大模型需要巨额算力投入"的行业共识，引发了 NVIDIA 股价的剧烈波动和投资者对"算力叙事"的重新评估。DeepSeek-R1 的全面开源则将推理模型从 OpenAI o1 的"黑箱"变为"开源可复现"，催生了全球开源推理模型的爆发。在技术贡献层面，MoE 细粒度化、MLA、GRPO、FP8 训练等创新已被全球多个开源项目借鉴。在地缘政治层面，DeepSeek 证明了芯片制裁下中国 AI 仍有创新能力，这一象征意义远超技术本身。梁文锋被视为"中国 AI 效率之王"和"芯片制裁时代的破局者"。
+
+---
+
+## 名言金句 (Memorable Quotes)
+
+1. **"We trained DeepSeek-V3 for $5.6 million. GPT-4 cost over $100 million. Efficiency matters."**
+   *"我们用 $560 万训练了 DeepSeek-V3。GPT-4 花了超过 $1 亿。效率很重要。"*
+
+2. **"Open source is not a strategy, it's a belief. The best AI should belong to everyone."**
+   *"开源不是策略，是信念。最好的 AI 应该属于所有人。"*
+
+3. **"MoE is the future. You don't need to activate all parameters for every token."**
+   *"MoE 是未来。你不需要为每个 token 激活所有参数。"*
+
+4. **"中国不需要 10000 张 H100 来证明实力，需要的是 2048 张 H800 加上更好的算法。"**
+
+5. **"DeepSeek 不是要与 OpenAI 竞争，而是要证明高效训练是可能的。"**
+
+---
+
+## 公司/团队 (Current Role & Organization)
+
+| 项目 | 详情 |
 |------|------|
-| **公司** | DeepSeek (深度求索) / 幻方量化 |
+| **公司** | DeepSeek (深度求索) / 幻方量化 (High-Flyer) |
 | **成立** | DeepSeek: 2023; 幻方: 2015 |
 | **总部** | 杭州/上海 |
-| **GPU 集群** | 2048 NVIDIA H800 (V3 训练) |
+| **GPU 集群** | 2048 NVIDIA H800 (V3 训练)，幻方量化积累的超大规模集群 |
 | **开源策略** | 全部模型开源 (MIT/DeepSeek License) |
-| **团队规模** | ~100 人 (精而小) |
+| **团队规模** | ~100 人 (精而小，以应届生和年轻研究员为主) |
+| **融资** | 幻方量化自有资金，不接受外部融资 |
+| **定位** | 中国 AI 六小龙之一 |
+
+---
 
 ## 商业哲学
 
 - **不做 API 生意**: 不以 API 收入为目标，专注技术突破
 - **成本透明**: 每篇论文公布训练成本，推动行业对标
-- **小团队**: 100 人左右的精英团队，而非大厂模式
-- **长期主义**: 幻方量化的长期资金支持，不急于商业化
+- **小团队精英化**: 100 人左右的精英团队，而非大厂模式，偏爱招募有潜力的年轻人
+- **长期主义**: 幻方量化的长期资金支持，不急于商业化变现
+- **学术研究导向**: 团队以论文发表和技术报告为主要输出，而非产品发布
 
 ---
 
-## 相关文档
+## 交叉引用 (Cross-References)
 
 - [DeepSeek 技术全景](../../大模型/Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive.md)
 - [MoE 案例研究](../../大模型/LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md)
 - [DeepSeek-R1 技术分析](../../大模型/Reasoning_Models/DeepSeek_R1_Technical_Analysis.md)
+- [[业界观点/Zhilin_Yang/about]] — Kimi 与 DeepSeek 在 RL 推理、开源策略上的竞合
+- [[业界观点/Jie_Tang/about]] — 智谱 GLM 与 DeepSeek 在中国开源生态中的并行
+- [[业界观点/Jinze_Bai/about]] — Qwen 与 DeepSeek 在 MoE 架构上的对比
+- [[业界观点/Emad_Mostaque/about]] — Stability AI 与 DeepSeek 共同的开源信念
+- [[业界观点/Sam_Altman/about]] — OpenAI 闭源 vs DeepSeek 开源的根本对立
 
 ---
 
-*Last updated: 2026-06-12*
+## 最新动态与权威来源 (Latest Updates & Sources)
+
+- **DeepSeek 官网**: [deepseek.com](https://www.deepseek.com/)
+- **开源模型**: [HuggingFace — DeepSeek](https://huggingface.co/deepseek-ai)
+- **技术报告**: [GitHub — DeepSeek AI](https://github.com/deepseek-ai)
+- **DeepSeek-V3 报告**: [arXiv](https://arxiv.org/abs/2412.19437)
+- **DeepSeek-R1 报告**: [arXiv](https://arxiv.org/abs/2501.12948)
+
+---
+
+*Last updated: 2026-07-11*
 
 - [[业界观点/README|AI 名人演讲与观点 (Talks)]]

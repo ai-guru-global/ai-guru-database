@@ -487,8 +487,8 @@ AI编程使用风险评估:
 
 ## Related
 
-- [[AI编程/Tools/CodeBuddy_Guide]] — CodeBuddy / WorkBuddy 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
-- [[AI编程/Tools/Comate_Guide]] — Comate 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
-- [[AI编程/Tools/Coze_Guide]] — Coze 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
-- [[AI编程/Tools/Cursor_Guide]] — Cursor 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
-- [[AI编程/AI_Coding-in-nutshell.md|AI_Coding-in-nutshell]]
+- [[编程/Tools/CodeBuddy_Guide]] — CodeBuddy / WorkBuddy 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
+- [[编程/Tools/Comate_Guide]] — Comate 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
+- [[编程/Tools/Coze_Guide]] — Coze 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
+- [[编程/Tools/Cursor_Guide]] — Cursor 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
+- [[编程/AI_Coding-in-nutshell.md|AI_Coding-in-nutshell]]

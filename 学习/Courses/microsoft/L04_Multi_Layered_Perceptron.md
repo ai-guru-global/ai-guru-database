@@ -1,0 +1,101 @@
+---
+title: "L04 - 多层感知器及创建自己的框架"
+category: "90-learn-courses-microsoft"
+tags: ["microsoft-ai-course", "multilayer-perceptron", "backpropagation", "sgd", "numpy"]
+summary: "从单层感知器扩展到多层感知器（MLP），并用手写 NumPy 框架理解前向传播、反向传播与梯度下降。"
+source_url: "https://raw.githubusercontent.com/microsoft/AI-For-Beginners/main/lessons/3-NeuralNetworks/04-OwnFramework/README.md"
+created: "2026-06-12"
+updated: "2026-06-12"
+tier: supporting
+aliases:
+  - "L04 Multi Layered Perceptron"
+  - L04_Multi_Layered_Perceptron
+sources: []
+
+---
+# L04 - 多层感知器及创建自己的框架
+
+> 一句话理解：把线性感知器堆叠成非线性多层网络，并通过“反向传播”自动计算梯度，最终亲手搭建一个可训练的小型神经网络框架。
+
+## 本课概览
+
+本课承接“单层感知器”，将神经网络从二分类线性模型扩展为更通用的**多层感知器（Multi-Layered Perceptron, MLP）**。通过学习损失函数、梯度下降（Gradient Descent）和反向传播（Backpropagation），你将理解现代神经网络训练的本质：用可微计算图逼近任意函数，并通过自动求导更新参数。
+
+本课的核心价值在于“**造轮子**”——不直接调用 PyTorch/TensorFlow，而是用 NumPy 实现一个模块化的小型框架。亲手实现层、激活函数、损失、优化器后，前向/反向传播不再只是公式，而是可运行的代码。
+
+学习目标：
+- 区分回归与分类的损失函数，理解 softmax 输出的意义。
+- 掌握梯度下降与小批量随机梯度下降（SGD）的更新规则。
+- 理解链式法则在多层网络中的具体应用，即反向传播。
+- 能阅读并运行官方 `OwnFramework.ipynb`，看懂自定义框架的代码结构。
+
+## 核心概念
+
+- **损失函数（Loss Function）**：衡量模型预测 f(x) 与真实标签 y 的差距。回归常用绝对误差 Σ|f(x)-y| 或平方误差 Σ(f(x)-y)²；分类常用 0-1 损失（等价于准确率）或 logistic 损失。神经网络训练的目标就是最小化整体损失 ℒ。
+- **softmax 函数**：将网络输出的任意实数向量转换为概率分布。分类任务中常令 f(x)=σ(wx+b)，σ 即 softmax。
+- **参数 θ**：模型中所有可学习的量，通常记为 θ=⟨w,b⟩，w 为权重矩阵，b 为偏置向量。
+- **梯度下降（Gradient Descent）**：沿损失函数对参数的负梯度方向更新参数。迭代式为 w^(i+1)=w^(i)-η·∂ℒ/∂w，b^(i+1)=b^(i)-η·∂ℒ/∂b，其中 η 为学习率。
+- **小批量随机梯度下降（Mini-batch SGD）**：每次从训练集中随机抽取一个小批量（minibatch）计算梯度并更新参数，兼顾计算效率与收敛稳定性。
+- **多层感知器（MLP）**：将多个线性层与非线性激活函数堆叠。例如两层网络可写作 z₁=w₁x+b₁，z₂=w₂α(z₁)+b₂，f=σ(z₂)。α 是非线性激活函数（如 ReLU、Sigmoid），σ 是 softmax。
+- **反向传播（Backpropagation）**：利用链式法则从输出层向输入层逐层计算梯度，把公共子表达式复用，避免重复求导。对两层网络，∂ℒ/∂w₂ = ∂ℒ/∂σ · ∂σ/∂z₂ · ∂z₂/∂w₂；∂ℒ/∂w₁ = ∂ℒ/∂σ · ∂σ/∂z₂ · ∂z₂/∂α · ∂α/∂z₁ · ∂z₁/∂w₁。
+
+## 关键知识点
+
+- 单层感知器只能解决线性可分问题；引入隐藏层与非线性激活后，MLP 可以逼近更复杂的决策边界。
+- 非线性激活是堆叠多层的关键：去掉激活函数，多层线性变换仍等价于单层线性变换。
+- softmax + 交叉熵损失是分类任务的标准组合，输出可解释为各类别的后验概率。
+- 梯度下降的参数初始化通常采用随机值；学习率过大可能震荡，过小则收敛慢。
+- 计算图（Computational Graph）是理解反向传播的直观工具：每个节点是一次张量运算，边代表数据依赖，反向传播沿边回传梯度。
+
+## 代码/实验说明
+
+官方 notebook [`OwnFramework.ipynb`](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/3-NeuralNetworks/04-OwnFramework/OwnFramework.ipynb) 是本课的核心动手材料。它不使用现成深度学习框架，而是基于 NumPy 实现一个最小神经网络库，主要包含：
+
+- **Layer / Activation / Loss 抽象**：每个模块实现 `forward()` 与 `backward()`，分别计算输出和回传梯度。
+- **网络类**：按顺序组合各层，统一执行前向传播、损失计算、反向传播和参数更新。
+- **训练循环**：
+  1. 前向传播得到预测；
+  2. 计算损失；
+  3. 反向传播得到所有参数的梯度；
+  4. 用 SGD 更新权重与偏置。
+- **可视化**：在二维玩具数据集上观察决策边界随训练迭代的变化，直观感受非线性拟合能力。
+
+实验 [`lab/MyFW_MNIST.ipynb`](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/3-NeuralNetworks/04-OwnFramework/lab/MyFW_MNIST.ipynb) 要求用本课搭建的框架完成 MNIST 手写数字分类，是检验框架通用性的最佳练习。
+
+伪代码骨架：
+
+```python
+# 定义一个两层网络
+net = Net([
+    Linear(input_size=2, output_size=hidden_size),
+    Sigmoid(),           # 非线性激活
+    Linear(hidden_size, num_classes),
+    Softmax()
+])
+
+loss = CrossEntropyLoss()
+optimizer = SGD(net.parameters(), lr=0.01)
+
+for x, y in minibatches:
+    pred = net.forward(x)          # 前向传播
+    l = loss.forward(pred, y)      # 计算损失
+    grad = loss.backward()         # 从损失回传
+    net.backward(grad)             # 反向传播
+    optimizer.step()               # 更新参数
+```
+
+> 提示：本课代码以教学为目的，效率不及 PyTorch/TensorFlow；重点在于理解“框架底层到底做了什么”。
+
+## 本课不覆盖与延伸
+
+- **不覆盖**：卷积神经网络（CNN）、循环神经网络（RNN）、正则化与防止过拟合、GPU 加速、自动微分引擎（autograd）的完整实现、生产级框架的张量内存管理。
+- **延伸**：
+  - 想深入自动微分与计算图 → [[深度学习/Neural_Network_Core/Neural_Network_Core]]
+  - 想系统学习优化算法 → [[深度学习/Optimization/Optimization]]
+  - 想了解真实框架 API → 后续 L05“框架简介（PyTorch/TensorFlow）及过拟合”
+  - 想实践更复杂数据集 → 完成 MNIST Lab。
+
+## 相关阅读
+
+- 课程索引：[[学习/courses/microsoft/microsoft_ai_for_beginners]]
+- 本库相关页面：[[深度学习/Neural_Network_Core/Neural_Network_Core]]、[[深度学习/Optimization/Optimization]]

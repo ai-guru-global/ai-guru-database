@@ -118,9 +118,9 @@ sources: []
 - [[计算机视觉/Generative_Models/Generative_Models]] — Generative_Models
 - [[计算机视觉/Generative_Models/Generative_Models_for_dummy]] — Generative_Models_for_dummy
 - [[计算机视觉/CV-in-nutshell.md|CV-in-nutshell]]
-- [[_concepts/multimodal-vision.md|multimodal-vision]]
-- [[_synthesis/cv-deep-learning|Cv Deep Learning]]
+- [[概念/multimodal-vision.md|multimodal-vision]]
+- [[治理/cv-deep-learning|Cv Deep Learning]]
 
 ## 相关页面
 
-- [[_concepts/image-segmentation|Image Segmentation]]
+- [[概念/image-segmentation|Image Segmentation]]

@@ -646,7 +646,7 @@ AI在学习:
 ## 想深入了解?
 
 **下一步阅读**:
-- 📘 [AI智能体 - 小白版](../../Agent/Agent_Foundations/AI_Agents_for_dummy.md) - 学习自主决策系统
+- 📘 [AI智能体 - 小白版](../../智能体/Agent_Foundations/AI_Agents_for_dummy.md) - 学习自主决策系统
 - 📘 [Transformer - 小白版](../../大模型/Transformer_Revolution/Transformer_Revolution_for_dummy.md) - 理解 PPO 如何训练 ChatGPT
 
 **查看原版文档**(需要技术基础):
@@ -660,7 +660,7 @@ AI在学习:
 **相关主题**:
 - 🔙 [强化学习基础 - 小白版](../RL_Foundations/RL_Foundations_for_dummy.md) - 理解 Q-Learning 基础
 - 🔙 [CNN - 小白版](../../计算机视觉/Image_Classification_Detection/Image_Classification_Detection_for_dummy.md) - DQN 的视觉编码器
-- 🔜 [AI智能体 - 小白版](../../Agent/Agent_Foundations/AI_Agents_for_dummy.md) - RL 的高级应用
+- 🔜 [AI智能体 - 小白版](../../智能体/Agent_Foundations/AI_Agents_for_dummy.md) - RL 的高级应用
 
 ---
 

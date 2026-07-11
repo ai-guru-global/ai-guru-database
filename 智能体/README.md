@@ -1,0 +1,291 @@
+---
+title: Agent 生产部署 (Agent Production)
+category: 15-agent-production
+tags: ["ai-agents", "agent-framework", "production", "langgraph"]
+summary: "> **一句话理解**: 从 Agent 原型到生产级系统，需要 Harness 工程、框架选型、平台部署、记忆架构、安全合规的完整工程体系。"
+created: 2026-05-31
+updated: 2026-06-15
+tier: supporting
+sources: []
+
+---
+# Agent 生产部署 (Agent Production)
+
+> **一句话理解**: 从 Agent 原型到生产级系统，需要 Harness 工程、框架选型、平台部署、记忆架构、安全合规的完整工程体系。
+
+---
+
+## 本章分组
+
+> 全章 16 个 L2 子目录 + 若干 root 级课件，按关注域分 4 组：
+
+### 能力层 —— 构建 Agent 的核心组件
+
+| 文档 | 主题 |
+|------|------|
+| [**AI Agent 全景概览**](./Agent_Overview.md) | Agent 架构、设计模式、框架选型、生产部署、2026 趋势 |
+| [Agent_Foundations](./Agent_Foundations/) | 理论、协议、状态管理、路线图 |
+| [Agent_Frameworks](./Agent_Frameworks/) | LangChain / AutoGen / LangGraph / AgentScope / SmolAgents / agno |
+| [Agent_Protocols](./Agent_Protocols/) | MCP / A2A / UCP 协议栈 |
+| [Agent_Skills](./Agent_Skills/) | 工具 / 技能 / 调用范式 |
+| [Agent_Workflow](./Agent_Workflow/) | 设计模式、编排、UI/UX |
+| [Memory_Infrastructure](./Memory_Infrastructure/) | MemGPT / 向量库 / RAG 基础设施 |
+
+### 评测层 —— 把 Agent 从原型推向可信
+
+| 子目录 | 主题 |
+|--------|------|
+| [Agent_Evaluation](./Agent_Evaluation/) | 评估体系、Benchmark、评分框架 |
+| [Agent_Harness](./Agent_Harness/) | LangChain Harness 工程、架构、多角色指南 |
+
+### 生态层 —— 平台、企业与开源落地
+
+| 子目录 | 主题 |
+|--------|------|
+| [Agent_Platforms](./Agent_Platforms/) | Dify / Coze / PromptFlow / OpenRouter |
+| [Enterprise_Agent](./Enterprise_Agent/) | 企业级部署、Hermes Agent |
+| [Agent_Ecosystem_CN](./Agent_Ecosystem_CN/) | 国内 AI Agent 产品与开源 |
+| [OpenClaw_Ecosystem](./OpenClaw_Ecosystem/) | OpenClaw / CoPaw / QClaw / Manus |
+
+### 工具与学习 —— 编码工具 + 系列课件
+
+| 子目录 / 文件 | 主题 |
+|---------------|------|
+| [Agentic_Coding_Tools](./Agentic_Coding_Tools/) | Aider / Continue / Claude Code / OpenCode / Windsurf / Cursor / Devin |
+| [Course_Notes](./Course_Notes/) | Learn_Claude_Code / Microsoft_AI_Agents 系列课件 |
+| [Agentic_Design_Patterns_AndrewNg.md](./Agentic_Design_Patterns_AndrewNg.md) | Andrew Ng Agentic 设计模式 |
+| [Gradio_Deep_Dive.md](./Gradio_Deep_Dive.md) | ML Demo UI 框架 |
+| GenAI_L06 / L07 / L11 / L12 / L17 | GenAI 系列课件（文本生成 / Chat / Function Calling / UX / Agents） |
+| Hello_Agents_L06 / L08 / L10 / L13 / L15 | Hello_Agents 系列课件（框架 / Memory RAG / 协议 / 旅行助手 / 网络城） |
+
+---
+
+## 文档导航
+
+### Agent 理论基础 (Agent Foundations)
+
+| 文档 | 内容 | 适用角色 |
+|------|------|----------|
+| [AI Agents](智能体/Agent_Foundations/AI_Agents.md) | Agent 全景综述：架构、推理、记忆、工具使用 | 全角色 |
+| [Agent-in-nutshell](智能体/Agent_Foundations/Agent-in-nutshell.md) | Agent 速成指南 | 入门 |
+| [Agent Protocols 2026](智能体/Agent_Foundations/Agent_Protocols_2026.md) | MCP、A2A、UCP 协议规范 | 架构师、开发者 |
+| [Agent Protocols Comparison](智能体/Agent_Foundations/Agent_Protocols_Comparison_2026.md) | Agent 协议对比分析 | 选型参考 |
+| [Agent Protocols Detail](智能体/Agent_Foundations/Agent_Protocols_Detail.md) | Agent 协议详解 | 架构师 |
+| [MCP Implementation Guide](智能体/Agent_Foundations/MCP_Implementation_Guide.md) | MCP 协议实现指南 | 开发者 |
+| [Agent State Management](智能体/Agent_Foundations/Agent_State_Management.md) | Agent 状态管理 | 架构师、开发者 |
+| [Agent Observability 2026](智能体/Agent_Foundations/Agent_Observability_2026.md) | Agent 可观测性 | SRE、运维 |
+| [ADK Selection & Implementation](智能体/Agent_Foundations/ADK_Selection_and_Implementation_2026.md) | ADK 选型与跨协议实战 | 开发者 |
+| [Agent Future Roadmap](智能体/Agent_Foundations/Agent_Future_Roadmap_2026_2030.md) | Agent 2026-2030 路线图 | 前瞻研究 |
+
+### Agent Harness 工程
+
+| 文档 | 内容 | 适用角色 |
+|------|------|----------|
+| [Agent Harness README](./Agent_Harness/) | Harness 专题入口与角色指南 | 全角色 |
+| [The Anatomy of an Agent Harness](智能体/Agent_Harness/The_Anatomy_of_an_Agent_Harness.md) | LangChain 博客：Harness 工程定义与核心组件 | 设计师、架构师 |
+| [Agent Harness 技术架构 2026](智能体/Agent_Harness/Agent_Harness_Architecture_2026.md) | 技术架构、配置参数、性能指标、兼容性矩阵 | 全角色 |
+| [Agent 安全与评估大白话](智能体/Agent_Safety_Evaluation_for_dummy.md) | 工具调用安全、Agent 评估基准大白话 | 初学者 |
+
+### Agentic Coding 工具
+
+| 文档 | 内容 | 适用角色 |
+|------|------|----------|
+| [Agentic Coding Tools Overview](智能体/Agentic_Coding_Tools/Agentic_Coding_Tools_Overview.md) | AI Agent 全景图 (20+ 工具汇总) | 入门、选型 |
+| [Claude Code Deep Dive](编程/Tools/Claude_Code_Deep_Dive.md) | Anthropic 官方 Agent 编程 CLI | 开发者、评估师 |
+| [OpenCode Deep Dive](智能体/Agentic_Coding_Tools/OpenCode_Deep_Dive.md) | 自主执行式 AI 编程 Agent | 开发者、评估师 |
+| [Windsurf / Cursor / Devin](智能体/Agentic_Coding_Tools/Windsurf_Cursor_Devin_Dive.md) | CLI 工具全景对比 | 选型参考 |
+| [International Agentic Tools](智能体/Agentic_Coding_Tools/International_Agentic_Tools.md) | 国际工具 (Aider/Continue/CodeRabbit/Cody) | 开发者、选型 |
+
+### Agent 开发框架
+
+| 文档 | 内容 | 适用角色 |
+|------|------|----------|
+| [LangChain Deep Dive](智能体/Agent_Frameworks/LangChain_Deep_Dive.md) | 最流行的 LLM 应用开发框架：Chain/Agent/Tool/RAG | 开发者 |
+| [LangChain Agents Deep Dive](智能体/Agent_Frameworks/LangChain_Agents_Deep_Dive.md) | LangChain Agent 设计与工具调用 | 开发者 |
+| [AutoGen Deep Dive](智能体/Agent_Frameworks/AutoGen_Deep_Dive.md) | 微软多 Agent 对话框架：群聊、代码执行 | 开发者、架构师 |
+| [AutoGen / CrewAI / LangGraph](智能体/Agent_Frameworks/AutoGen_CrewAI_LangGraph_Dive.md) | 多 Agent 框架对比 | 开发者、架构师 |
+| [Agentic UI/UX Design 2026](智能体/Agent_Workflow/Agentic_UI_UX_Design_2026.md) | Canvas 模式、Artifacts 设计、Human-in-the-Loop 交互 | 设计师、产品经理 |
+| [Agentic Workflow Design Patterns 2026](智能体/Agent_Workflow/Agentic_Workflow_Design_Patterns_2026.md) | 路由、并行、编排者-执行者、评估者-优化者、蜂群模式 | 架构师、开发者 |
+| [AgentScope Deep Dive](智能体/Agent_Frameworks/AgentScope_Deep_Dive.md) | 阿里巴巴多智能体平台 | 开发者、架构师 |
+| [AutoGPT Deep Dive](智能体/Agent_Frameworks/AutoGPT_Deep_Dive.md) | 自主任务执行 Agent | 开发者、探索者 |
+| [SmolAgents Deep Dive](智能体/Agent_Frameworks/SmolAgents_Deep_Dive.md) | HuggingFace 轻量级框架 | HF 生态用户 |
+| [agno Deep Dive](智能体/Agent_Frameworks/Agno_Deep_Dive.md) | 现代化 Agent 框架：知识+记忆内置 | 快速构建生产级 Agent |
+
+### Agent 平台与部署
+
+| 文档 | 内容 | 适用角色 |
+|------|------|----------|
+| [Dify / Coze / LocalAI](智能体/Agent_Platforms/Dify_Coze_MLServe_Dive.md) | Agent 平台对比 | 产品经理、架构师 |
+| [OpenRouter Deep Dive](智能体/Agent_Platforms/OpenRouter_Deep_Dive.md) | 统一模型网关与智能路由 | 架构师、开发者 |
+| [PromptFlow Deep Dive](智能体/Agent_Platforms/PromptFlow_Deep_Dive.md) | 微软工作流编排与评估 | 开发者、企业用户 |
+| [Agent 生产环境部署 Runbook](智能体/Agent_Production_Deployment_Runbook.md) | Agent 系统上线生产环境的完整 Runbook | Agent 平台工程师、AI 应用架构师 |
+
+### 记忆与基础设施
+
+| 文档 | 内容 | 适用角色 |
+|------|------|----------|
+| [Agent Memory Systems 2026](智能体/Memory_Infrastructure/Agent_Memory_Systems_2026.md) | AI Agent 记忆系统架构 | 架构师、开发者 |
+| [RAG Memory Infrastructure Tools](智能体/Memory_Infrastructure/RAG_Memory_Infrastructure_Tools.md) | RAG/记忆/基础设施全栈 | 架构师、开发者 |
+
+### 企业级 Agent
+
+| 文档 | 内容 | 适用角色 |
+|------|------|----------|
+| [Agent Production 2026](智能体/Enterprise_Agent/Agent_Production_2026.md) | Agent 生产部署最佳实践 | 架构师、SRE |
+| [Hermes Agent Deep Dive](智能体/Enterprise_Agent/Hermes_Agent_Deep_Dive.md) | 企业级 Agent 运行时 | 架构师、安全工程师 |
+
+### 国内 AI Agent 生态
+
+| 文档 | 内容 | 适用角色 |
+|------|------|----------|
+| [国内 AI Agent 产品](智能体/Agent_Ecosystem_CN/Domestic_AI_Agent_Products_CN.md) | 通义千问/Kimi/智谱/豆包等 | 产品经理、选型 |
+| [国内开源 Agent 项目](智能体/Agent_Ecosystem_CN/Chinese_OpenSource_Agent_Projects.md) | ChatDev/XAgent/MetaGPT/SWE-agent | 开发者、选型 |
+| [CoPaw Deep Dive](智能体/OpenClaw_Ecosystem/CoPaw_Deep_Dive.md) | 阿里开源个人 AI 助手 | 开发者、参考 |
+
+---
+
+## 核心架构模式
+
+```text
+模式1: 无状态请求-响应
+适用: 文档分析、分类任务
+特点: 简单、易扩展、无记忆
+
+模式2: 有状态会话
+适用: 客服机器人、代码助手
+特点: 支持多轮对话、需状态管理
+
+模式3: 事件驱动异步
+适用: 复杂工作流、多Agent协作
+特点: 支持长时间任务、最终一致性
+```
+
+## 生产环境关键要素
+
+### 基础设施
+
+- **Kubernetes部署**: HPA自动扩缩容、PDB保证可用性
+- **服务网格**: Istio/Linkerd实现流量管理、可观测性
+- **模型路由**: 基于任务复杂度智能路由到不同模型
+- **推理引擎选型**: 参考 [LLM 推理引擎选型指南](部署推理/Inference_Engines/LLM_Inference_Engine_Selection_Guide.md) | [vLLM](部署推理/Inference_Engines/vLLM_Deep_Dive.md) | [SGLang](部署推理/Inference_Engines/SGLang_Deep_Dive.md) | [Groq](部署推理/Inference_Engines/Groq_Deep_Dive.md)
+
+### 状态管理
+
+```text
+L1: 工作记忆 → 内存/Redis
+L2: 短期记忆 → Redis (TTL: 24h)
+L3: 长期记忆 → 向量数据库
+L4: 持久化知识 → SQL/NoSQL
+```
+
+### 监控体系
+
+- **Metrics**: Prometheus收集延迟、错误率、吞吐量
+- **Logs**: 结构化日志，包含trace_id、session_id
+- **Traces**: Jaeger分布式追踪
+
+## 关键SLO
+
+| 指标 | 目标 |
+|------|------|
+| P99延迟 | <2s (简单), <10s (复杂) |
+| 可用性 | 99.9% |
+| 错误率 | <0.1% |
+
+---
+
+## 关联目录
+
+- [Agent_Evaluation](./Agent_Evaluation/) -- Agent 评估体系（Harness 评估视角、基准测试、评分框架）
+- [AI编程](../编程/) -- AI 编程方法论（Vibe Coding、Hermes Agent）
+- [OpenClaw_Ecosystem](./OpenClaw_Ecosystem/) -- OpenClaw 生态（CoPaw、QClaw）
+- [RAG系统](../RAG系统/) -- RAG 系统专题
+- [AI运维](../运维/) -- AI 系统运维
+- [部署推理](../部署推理/) -- 推理引擎（vLLM, SGLang, Groq）
+- [LLM 推理引擎选型指南](部署推理/Inference_Engines/LLM_Inference_Engine_Selection_Guide.md) -- Agent 后端推理引擎选型
+
+---
+
+## 参考
+
+- [Azure AI Agent Service](https://azure.microsoft.com/en-us/services/ai-agent/)
+- [AWS Bedrock Agents](https://aws.amazon.com/bedrock/agents/)
+- [Google SRE Book](https://sre.google/sre-book/)
+- [LlamaIndex](https://www.llamaindex.ai)
+- [LangChain](https://www.langchain.com)
+- [Dify](https://dify.ai)
+
+---
+
+*Last updated: 2026-04-14*
+
+## Related
+- [[智能体/OpenClaw_Ecosystem/OpenClaw_Ecosystem|OpenClaw Ecosystem: The AI Agent Revolution (2026)]]
+- [[智能体/OpenClaw_Ecosystem/OpenClaw_Technical_Deep_Dive|OpenClaw Technical Deep Dive: Architecture, Internals & Implementation]]
+- [[智能体/OpenClaw_Ecosystem/OpenClaw_Ecosystem_for_dummy|OpenClaw Ecosystem for Beginners: Your AI Assistant That Actually Does Things]]
+- [[智能体/OpenClaw_Ecosystem/Wuying_AgentBay|Wuying AgentBay: Alibaba Cloud's AI Agent Infrastructure]]
+- [[智能体/OpenClaw_Ecosystem/Skills_ClawHub|Skills & ClawHub: The OpenClaw Skill Ecosystem]]
+- [[智能体/OpenClaw_Ecosystem/CoPaw_Deep_Dive|CoPaw Deep Dive: Alibaba's Personal AI Agent Workstation]]
+- [[智能体/OpenClaw_Ecosystem/QClaw_Guide|QClaw Complete Guide: Tencent's WeChat-First AI Agent]]
+- [[智能体/OpenClaw_Ecosystem/Manus_My_Computer|Manus \"My Computer\": Meta's Desktop AI Agent Revolution]]
+- [[智能体/Agent_Evaluation/Benchmarking/Scoring_System|Scoring System]]
+- [[智能体/Agent_Evaluation/K8s_Agent_Evaluation_Report|Kubernetes 领域专项评测报告]]
+- [[智能体/Agent_Evaluation/Agent_Evaluation_Plugin_API|插件 API 参考文档]]
+- [[智能体/Agent_Evaluation/Agent_Evaluation_Guide|评估执行指南]]
+- [[智能体/Agent_Evaluation/Agent_Evaluation_System_Architecture|云产品智能体评估系统 - 系统架构文档]]
+- [[智能体/AI_OpenSource_Projects_Overview|AI 开源项目全景图]]
+- [[智能体/Gradio_Deep_Dive|Gradio: 机器学习 Demo 框架]]
+- [[智能体/README|Agent 生产部署 (Agent Production)]]
+- [[智能体/README_for_dummy|13 Agent 生产部署 — 小白版 🤖]]
+
+- [[智能体/Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
+- [[智能体/Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[智能体/Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[智能体/Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)
+- [[智能体/Agent_Workflow/Workflow-in-nutshell]] — AI 工作流速成指南
+- [[智能体/Agentic_Coding_Tools/International_Agentic_Tools]] — 国际顶级 Agentic Coding 工具
+- [[智能体/Agentic_Coding_Tools/Agentic_Coding_Tools_Overview]] — AI Agent 全景图 2026
+- [[智能体/Agentic_Coding_Tools/Aider_Deep_Dive]] — Aider_Deep_Dive
+- [[智能体/Agentic_Coding_Tools/Claude_Code_Deep_Dive]] — Claude_Code_Deep_Dive
+- [[智能体/Agentic_Coding_Tools/Windsurf_Cursor_Devin_Dive]] — Windsurf_Cursor_Devin_Dive
+- [[智能体/Agentic_Coding_Tools/Continue_Deep_Dive]] — Continue_Deep_Dive
+- [[智能体/Agentic_Coding_Tools/OpenCode_Deep_Dive]] — OpenCode_Deep_Dive
+- [[智能体/Agent_Platforms/OpenRouter_Deep_Dive]] — OpenRouter_Deep_Dive
+- [[智能体/Agent_Platforms/Dify_Coze_MLServe_Dive]] — Dify_Coze_MLServe_Dive
+- [[智能体/Agent_Platforms/PromptFlow_Deep_Dive]] — PromptFlow_Deep_Dive
+- [[智能体/Agent_Harness/The_Anatomy_of_an_Agent_Harness]] — The Anatomy of an Agent Harness
+- [[智能体/Agent_Harness/Harness_Deployment_Guide]] — Agent Harness 部署与运维指南
+- [[智能体/Agent_Harness/Harness_Testing_Guide]] — Agent Harness 测试指南
+- [[智能体/Agent_Harness/Harness_Ecosystem_Catalog]] — Agent Harness 生态目录
+- [[智能体/Agent_Harness/Harness-in-nutshell]] — Agent Harness 速览
+- [[治理/agent-framework-production|Agent 框架与生产部署]]
+- [[部署推理/Inference_Engines/LLM_Inference_Engine_Selection_Guide|LLM 推理引擎选型指南]]
+- [[部署推理/Inference_Engines/vLLM_Deep_Dive|vLLM 深度解析]]
+- [[部署推理/Inference_Engines/SGLang_Deep_Dive|SGLang 深度解析]]
+- [[部署推理/Inference_Engines/Groq_Deep_Dive|Groq 深度解析]]
+- [[概念/tool-calling|工具调用]]
+- [[概念/tool-calling-safety|工具调用安全]]
+- [[概念/agent-evaluation-benchmarks|Agent 评估基准]]
+- [[智能体/Agent_Safety_Evaluation_for_dummy|Agent 安全与评估大白话]]
+
+- [[智能体/Agent_Ecosystem_CN/README|国内 AI Agent 生态]]
+- [[智能体/Agent_Evaluation/Cloud_Agent_Evaluation/README|Cloud Agent Evaluation]]
+- [[智能体/Agent_Evaluation/Corpus_Assessment/README|Corpus Assessment]]
+- [[智能体/Agent_Evaluation/README|Agent Benchmarking Evaluation Framework]]
+- [[智能体/Agent_Evaluation/README_for_dummy|Agent Benchmarking Evaluation Framework - Beginner's Guide]]
+- [[智能体/Agent_Evaluation/Test_Bank/README|Test Bank]]
+- [[ADK_Selection_and_Implementation_2026|Agent Development Kits (ADK) 2026: Building with MCP, A2A, and UCP]]
+- [[AI_Agents_for_Beginners|AI 智能体入门]]
+- [[智能体/Agent_Frameworks/README|Agent 开发框架]]
+- [[智能体/Agent_Harness/README|Agent Harness 工程]]
+- [[智能体/Agent_Platforms/README|Agent 平台与部署]]
+- [[智能体/Agent_Skills/README|Agent Skills 文档索引]]
+- [[智能体/Agentic_Coding_Tools/README|Agentic Coding 工具]]
+- [[Enterprise_Agent_Governance_2026|Enterprise Agent Governance 2026: Managing Thousands of Agents]]
+- [[智能体/Enterprise_Agent/README|企业级 Agent]]
+- [[智能体/Memory_Infrastructure/README|记忆与基础设施]]
+
+## 新增页面
+
+- [[智能体/Agent_Protocols/A2A_Protocol_Deep_Dive|A2A 协议]]
+- [[智能体/Memory_Infrastructure/Agent_Memory_Techniques|Agent 记忆技术]]

@@ -500,3 +500,11 @@ for item_id in range(ratings.shape[1]):
 - 协同过滤的数学基础 - 余弦相似度、皮尔逊相关系数
 - 深度学习推荐 - Neural CF、Wide & Deep、DeepFM
 - 工业级推荐架构 - 召回/排序/重排的完整 pipeline
+
+## Related
+
+- [[../../数学基础/Linear_Algebra|线性代数]] — 矩阵分解推荐算法的数学基础
+- [[../../深度学习/Neural_Network_Core|神经网络核心]] — 深度推荐模型
+- [[../../模型评估/Online_Evaluation|在线评估]] — A/B 测试推荐效果
+- [[../../概念/General/ab-testing-framework|A/B 测试概念卡]] — 推荐系统评估方法论
+- [[../../RAG系统/RAG_Fundamentals|RAG 基础]] — 推荐系统与检索增强的关联

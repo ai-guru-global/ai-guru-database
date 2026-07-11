@@ -168,11 +168,11 @@ A/B 测试框架就像一场“公平对决”：随机抽一群人用新产品�
 
 ## Related
 
-- [[_concepts/bbh|BBH]]
-- [[_concepts/llm-arena|LLM Arena]]
-- [[_concepts/red-teaming|红队测试]]
-- [[_concepts/ci-integrated-evaluation|CI 集成评估]]
-- [[_concepts/ab-testing-framework|A/B 测试框架]]
-- [[_concepts/model-evaluation|模型评估]]
+- [[概念/bbh|BBH]]
+- [[概念/llm-arena|LLM Arena]]
+- [[概念/red-teaming|红队测试]]
+- [[概念/ci-integrated-evaluation|CI 集成评估]]
+- [[概念/ab-testing-framework|A/B 测试框架]]
+- [[概念/model-evaluation|模型评估]]
 - [[模型评估/Benchmarks/LLM_Benchmark_Suite_2026|LLM 基准套件 2026]]
 - [[模型评估/Evaluation_Automation_2026|评估自动化 2026]]

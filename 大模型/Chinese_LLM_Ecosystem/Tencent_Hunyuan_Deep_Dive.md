@@ -506,7 +506,7 @@ response = client.ChatCompletions(
 - [[大模型/Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]] — 国产模型对比矩阵
 - [[大模型/LLM_Architectures/MoE_Routing_and_Load_Balancing]] — MoE 路由
 - [[大模型/Multimodal_Models/Multimodal_Architectures_2026]] — 多模态架构
-- [[90_Learn/courses/microsoft/microsoft_genai_for_beginners]] — 生成式 AI 入门课程
+- [[学习/courses/microsoft/microsoft_genai_for_beginners]] — 生成式 AI 入门课程
 
 ---
 

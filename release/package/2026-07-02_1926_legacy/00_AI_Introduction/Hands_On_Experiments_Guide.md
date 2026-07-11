@@ -816,7 +816,7 @@ for q in questions:
 
 ## Related
 
-- [[AI入门/AI_Practical_Labs|AI 入门实验]] — 无需编程基础的体验实验
+- [[入门/AI_Practical_Labs|AI 入门实验]] — 无需编程基础的体验实验
 - [[_concepts/pytorch|PyTorch 概念卡片]] — PyTorch 基础
 - [[_concepts/concept-dependency-graph|概念依赖图谱]] — 学习顺序参考
-- [[AI入门/README|AI 入门与概览]]
+- [[入门/README|AI 入门与概览]]

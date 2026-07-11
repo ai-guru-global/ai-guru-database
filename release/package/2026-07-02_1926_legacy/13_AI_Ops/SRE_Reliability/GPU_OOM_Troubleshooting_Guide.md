@@ -208,7 +208,7 @@ Step 6: 调度层优化：避免超卖、Gang Scheduling、队列管理
 - [[_concepts/mig|MIG]]
 - [[_concepts/gradient-checkpointing|Gradient Checkpointing]]
 - [[_concepts/qlora|QLoRA]]
-- [[AI运维/SRE_Reliability/GPU_Troubleshooting_Cheat_Sheet|GPU 故障排查速查表]]
+- [[运维/SRE_Reliability/GPU_Troubleshooting_Cheat_Sheet|GPU 故障排查速查表]]
 - [[_concepts/deepspeed|DeepSpeed]]
 - [[_concepts/vllm|vLLM]]
 - [[模型训练/Monitoring/LLM_Fine_Tuning_Job_Failure_Runbook_on_K8s|LLM 微调任务 K8s 失败排障]]

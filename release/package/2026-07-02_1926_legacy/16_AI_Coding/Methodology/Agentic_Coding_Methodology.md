@@ -120,10 +120,10 @@ Reviewer Agent 在合并代码前自动运行 SAST (静态分析工具) 和红�
 
 ## Related
 
-- [[AI编程/Theory/AI_Coding_Theory]] — 编程范式演进
+- [[编程/Theory/AI_Coding_Theory]] — 编程范式演进
 - [[Agent/Agent_Frameworks/AutoGen_CrewAI_LangGraph_Dive]] — 协作框架的技术底层
 - [[Agent/Agent_Workflow/Agentic_Workflow_Design_Patterns_2026]] — 通用工作流模式
-- [[AI编程/Methodology/Vibe_Coding_Methodology]] — 个人开发者视角的方法论
+- [[编程/Methodology/Vibe_Coding_Methodology]] — 个人开发者视角的方法论
 
 ---
 

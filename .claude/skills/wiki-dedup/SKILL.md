@@ -33,7 +33,7 @@ If the user doesn't specify, run in **Audit** mode and present findings before a
 
 ## Step 1: Build the Page Registry
 
-Glob all `.md` files in the vault (excluding `_archives/`, `_raw/`, `.obsidian/`, `index.md`, `log.md`, `hot.md`, `_insights.md`, and any file that contains `redirects_to:` in its frontmatter — those are already merged redirect stubs).
+Glob all `.md` files in the vault (excluding `归档/`, `原始/`, `.obsidian/`, `index.md`, `log.md`, `hot.md`, `_insights.md`, and any file that contains `redirects_to:` in its frontmatter — those are already merged redirect stubs).
 
 For each remaining page, extract from frontmatter:
 - `node_id` — relative path from vault root, without `.md`

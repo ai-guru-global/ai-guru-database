@@ -54,7 +54,7 @@ sources: []
 | **标准以太网** | 中 | 高 | 推理、管理面 |
 | **NVLink/NVSwitch** | 极高 | 极低 | 单节点内 GPU 互联 |
 
-详见：[[_concepts/rdma-roce|RDMA/RoCE]]、[[_concepts/infiniBand|InfiniBand]]
+详见：[[概念/rdma-roce|RDMA/RoCE]]、[[概念/infiniBand|InfiniBand]]
 
 ---
 
@@ -108,7 +108,7 @@ spec:
 
 ## Related
 
-- [[_concepts/rdma-roce|RDMA/RoCE]]
-- [[_concepts/infiniBand|InfiniBand]]
-- [[_concepts/nvlink|NVLink]]
+- [[概念/rdma-roce|RDMA/RoCE]]
+- [[概念/infiniBand|InfiniBand]]
+- [[概念/nvlink|NVLink]]
 - [[模型训练/Distributed_Training/Distributed_Training_Hang_Runbook|分布式训练 Hang 排障]]

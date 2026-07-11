@@ -127,4 +127,4 @@ updated: 2026-06-01
 - [[数学基础/Python_Data_Science_Toolkit]] — 数据科学工具链
 - [[机器学习/Supervised_Learning/Your_First_ML_Model]] — 第一个 ML 模型
 - [[90_Learn/pathways/absolute-beginner]] — 零基础通识路径
-- [[AI入门/AI_Learning_Resources]] — AI 学习资源与方法论
+- [[入门/AI_Learning_Resources]] — AI 学习资源与方法论

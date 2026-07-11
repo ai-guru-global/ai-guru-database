@@ -107,7 +107,7 @@ Each `rollout-*.jsonl` line is an event envelope with:
 - Prioritize user intent and assistant-visible outputs
 - Favor `response_item` records with user/assistant message content
 - Use `event_msg` selectively for meaningful milestones; ignore pure telemetry
-- Treat `session_meta` as metadata (cwd, model, ids), not user knowledge
+- Treat `session治理` as metadata (cwd, model, ids), not user knowledge
 
 ### Skip/noise filters
 

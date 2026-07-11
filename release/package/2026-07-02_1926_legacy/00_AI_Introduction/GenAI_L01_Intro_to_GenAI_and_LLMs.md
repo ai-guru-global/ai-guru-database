@@ -346,7 +346,7 @@ LLM 的输出具有随机性。相同的提示在不同时间运行可能产生�
 - [[90_Learn/courses/microsoft/microsoft_genai_for_beginners]] — 课程总览与章节映射
 - [[大模型/GenAI_L02_Exploring_and_Comparing_LLMs]] — 第 2 课：探索和比较不同的 LLM
 - [[大模型/LLM_Architectures/LLM_Architectures]] — LLM 架构详解
-- [[AI入门/AI_Fundamentals]] — AI 基础概念
+- [[入门/AI_Fundamentals]] — AI 基础概念
 - [[大模型/Transformer_Revolution/Transformer_Revolution]] — Transformer 技术革命
 
 ## 课程导航

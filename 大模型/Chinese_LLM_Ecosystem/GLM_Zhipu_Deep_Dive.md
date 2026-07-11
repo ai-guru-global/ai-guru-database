@@ -1366,7 +1366,7 @@ print(response)
 
 ## GLM-5.2 正式发布与开源详解 (2026年6月)
 
-> **本节为 2026-06-17 官方公告落地页**。原文存档于 [[_sources/wechat/2026-06-glm-5.2-release]] (魔搭 ModelScope 公众号经授权转载)。
+> **本节为 2026-06-17 官方公告落地页**。原文存档于 [[来源/wechat/2026-06-glm-5.2-release]] (魔搭 ModelScope 公众号经授权转载)。
 >
 > **一句话理解**: GLM-5.2 是智谱为**长程任务 (Long-Horizon Task)** 而生的旗舰模型——以 Solid 1M 无损上下文 + 极致 Infra 协同设计 + MIT 纯开源 + Day 0 八家国产算力适配，把"团队数周"压缩为"Agent 一次跑完"，是当前排名最高的开源 Coding/Agent 模型。
 
@@ -1572,7 +1572,7 @@ GLM-5.2 首次引入 **effort level** 控制，开发者可在**能力 / 速度 
 ### 9. 信源与延伸阅读
 
 **原文存档**:
-- [[_sources/wechat/2026-06-glm-5.2-release]] — 本节原始信源 (魔搭 ModelScope 公众号转载)
+- [[来源/wechat/2026-06-glm-5.2-release]] — 本节原始信源 (魔搭 ModelScope 公众号转载)
 
 **官方资源**:
 - Blog: https://z.ai/blog/glm-5.2

@@ -478,6 +478,6 @@ helm uninstall hami -n kube-system
 - [[_concepts/hami]] — HAMi 概念卡片
 - [[架构基建/AI_Stack/HAMi_Deep_Dive]] — HAMi 深度解析
 - [[架构基建/AI_Stack/HAMi_for_dummy]] — HAMi 入门
-- [[AI运维/SRE_Reliability/HAMi_Troubleshooting_Guide]] — HAMi 问题排查
+- [[运维/SRE_Reliability/HAMi_Troubleshooting_Guide]] — HAMi 问题排查
 - [[_concepts/gpu-virtualization]] — GPU 虚拟化
 - [[_concepts/dra]] — DRA 动态资源分配

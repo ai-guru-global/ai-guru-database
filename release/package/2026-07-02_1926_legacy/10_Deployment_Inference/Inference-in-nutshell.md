@@ -648,7 +648,7 @@ response = client.chat.completions.create(
 - [模型训练](../模型训练/Model-Training-in-nutshell.md) - 模型是如何训练的
 - [RAG 系统](../RAG系统/RAG-in-nutshell.md) - 带检索的推理
 - [MLOps 流水线](../MLOps_Pipeline/) - 自动化部署
-- [SRE 实践](../AI运维/SRE_Reliability/SRE_for_AI_Systems.md) - SLI/SLO 与可靠性工程
+- [SRE 实践](../运维/SRE_Reliability/SRE_for_AI_Systems.md) - SLI/SLO 与可靠性工程
 - [可观测性](../MLOps/Observability/AI_Observability_Guide.md) - AI 系统监控与追踪
 
 ## Related

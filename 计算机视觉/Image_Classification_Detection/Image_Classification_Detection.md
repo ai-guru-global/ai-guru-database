@@ -667,6 +667,14 @@ car (0.75) at [50, 300, 150, 380]
 - [Papers with Code - Object Detection](https://paperswithcode.com/task/object-detection)
 - [YOLOv8 官方文档](https://docs.ultralytics.com/)
 
+## Related
+
+- [[../../大模型/Multimodal_Models/LLaVA_Deep_Dive|LLaVA]] — 视觉语言模型架构
+- [[../../深度学习/Generative_Models/Diffusion_Models_Deep_Dive|Diffusion 深度页]] — 条件图像生成
+- [[../../概念/Vision/object-detection|目标检测概念卡]] — 检测范式定义
+- [[../../部署推理/Inference_Engines|推理引擎]] — CV 模型高效推理
+- [[../../RAG系统/Advanced_RAG|高级 RAG]] — ColPali 等视觉检索方法
+
 ---
 
 *Last updated: 2026-02-10*

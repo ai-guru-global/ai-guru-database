@@ -99,12 +99,12 @@ LLM 应用的可观测性远超传统 APM，需覆盖成本（$/请求、缓存�
 - [[Agent/Agent_Production_Deployment_Runbook|Agent 生产部署 Runbook]] — Agent 系统的特殊部署挑战。
 - [[RAG系统/RAG_Production_Architecture_Deep_Dive|RAG 生产架构深潜]] — 检索增强生成的生产化。
 - [[模型评估/RAG_Evaluation_Deep_Dive|RAG 评估深潜]] — 生产质量评估方法。
-- [[AI测试/Agent_Evaluation_Deep_Dive|Agent 评估深潜]] — Agent 系统评估体系。
+- [[测试/Agent_Evaluation_Deep_Dive|Agent 评估深潜]] — Agent 系统评估体系。
 - [[强化学习/GRPO_Training_Deep_Dive|GRPO 训练深潜]] — 后训练与对齐技术。
 - [[大模型/Test_Time_Compute_Scaling_2026|测试时计算缩放 2026]] — 推理阶段能力扩展。
 - [[深度学习/DeepSeek_Architecture_2026|DeepSeek 架构 2026]] — 先进模型架构对部署的影响。
 - [[模型训练/Diffusion_Model_Training_2026|扩散模型训练 2026]] — 生成式模型生产化参考。
-- [[AI编程/AI_Code_Security_Audit_Runbook|AI 代码安全审计 Runbook]] — 安全与合规实践。
+- [[编程/AI_Code_Security_Audit_Runbook|AI 代码安全审计 Runbook]] — 安全与合规实践。
 - [[面试岗位/Agent_Engineer_2026|Agent 工程师面试 2026]] — 工程能力要求参考。
 - [[论文精读/Paper_Reading_and_Reproduction_Guide|论文阅读与复现指南]] — 从论文到工程落地。
 

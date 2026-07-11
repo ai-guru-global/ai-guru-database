@@ -78,7 +78,7 @@ npm run dev
 | I am a... | Start Here | Time to Productive |
 |-----------|-----------|-------------------|
 | **运维/开发工程师** | [9 篇速成指南](#-in-nutshell-guides) | 15-20 hours |
-| **大学生/自学者** | [AI入门](./AI入门/) | 16-20 hours |
+| **大学生/自学者** | [AI入门](./入门/) | 16-20 hours |
 | **产品经理** | [AI应用与行业融合](../行业应用/) | 8-10 hours |
 | **研究人员** | [10_Papers](../论文精读/) + [深度学习](./深度学习/) | Self-paced |
 | **教育者** | [Complete Curriculum](#-university-curriculum) | Full semester |
@@ -119,7 +119,7 @@ Complete AI general education for universities - **10 textbooks, 8 labs, 16-week
 | Learning Resources | Courses, books, platforms, career paths | 2h |
 | + Glossary + Cases + Labs | 100+ terms, 6 cases, 8 experiments | - |
 
-**[View Full Curriculum →](../AI入门/README.md)**
+**[View Full Curriculum →](../入门/README.md)**
 
 ### ⚡ In-Nutshell Guides (速成路径)
 
@@ -184,8 +184,8 @@ Cutting-edge content updated for 2026:
 | **[AI Hardware 2026](../数学基础/AI_Hardware/AI_Hardware_2026.md)** | H100 vs H200 vs B200, MI300X, GPU selection guide |
 | **[PEFT 2026](../大模型/Fine_tuning_Techniques/PEFT_2026.md)** | LoRA/QLoRA/DoRA/rsLoRA, single-GPU 70B fine-tuning |
 | **[RAG Advanced 2026](../RAG系统/RAG_Advanced_2026.md)** | Hybrid retrieval + RRF, Agentic RAG, 60%→90% accuracy |
-| **[AI Coding Assistants 2026](../AI编程/Tools/AI_Coding_Assistants_2026.md)** | Cursor (72% acc), Claude Code, Windsurf, Devin comparison |
-| **[Vibe Coding Methodology 2026](../AI编程/Methodology/Vibe_Coding_Methodology.md)** | DGRV loop, prompt engineering, quality system, production practices |
+| **[AI Coding Assistants 2026](../编程/Tools/AI_Coding_Assistants_2026.md)** | Cursor (72% acc), Claude Code, Windsurf, Devin comparison |
+| **[Vibe Coding Methodology 2026](../编程/Methodology/Vibe_Coding_Methodology.md)** | DGRV loop, prompt engineering, quality system, production practices |
 | **[Embodied AI 2026](../强化学习/Robotics_Embodied_AI/Embodied_AI_2026.md)** | VLA models (RT-2, π0, GR00T), humanoid robotics market |
 | **[World Models 2026](../深度学习/World_Models/World_Models_2026.md)** | JEPA/V-JEPA 2.1/LeJEPA, Yann LeCun's AGI path |
 | **[AI Video Generation 2026](../计算机视觉/Video_Generation/Video_Generation_2026.md)** | Veo3, Kling 3.0, Seedance, post-Sora landscape |

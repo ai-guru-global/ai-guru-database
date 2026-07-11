@@ -43,7 +43,7 @@ aliases:
 | 交互 | 一次性 | 多轮追问 |
 | 深度 | 表面 | Pro Search 深入 |
 
-> **关联**: -> [[大模型/README|NLP/LLM]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[大模型/README|NLP/LLM]] | [[学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
 
 ## Related
 

@@ -189,7 +189,7 @@ public class ChatController {
 **📚 核心阅读**：
 - [Spring AI 网关与安全](架构基建/AI_Gateway/Spring_AI_Gateway_Security.md)（重点）
 - [JVM AI 部署与推理](部署推理/Inference_Engines/JVM_AI_Deployment.md)（重点）
-- [Java AI 测试实践](AI测试/Testing_Frameworks/Java_AI_Testing.md)（重点）
+- [Java AI 测试实践](测试/Testing_Frameworks/Java_AI_Testing.md)（重点）
 - [Java Cloud SDK 指南](_projects/Cloud_Ops_Agent/Java_Cloud_SDK_Guide.md)（选读）
 
 **🔧 实践任务**：
@@ -477,7 +477,7 @@ Week 7: 测试
 Day 1-2: 单元测试
   □ Mock ChatModel 测试
   □ 测试数据工厂搭建
-  □ 阅读文档: → [Java AI 测试](AI测试/Testing_Frameworks/Java_AI_Testing.md)
+  □ 阅读文档: → [Java AI 测试](测试/Testing_Frameworks/Java_AI_Testing.md)
 
 Day 3-5: 集成测试 + 安全测试
   □ Testcontainers 集成测试

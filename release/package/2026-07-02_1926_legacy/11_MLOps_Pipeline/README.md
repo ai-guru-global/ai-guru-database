@@ -56,7 +56,7 @@ graph LR
 |--------|------|
 | 概念与方法论（什么是特征存储/为什么需要数据版本） | 本章上方「LLMOps 主线」/「传统 MLOps 主线」/「横切关注点」 |
 | 工具怎么用（Feast/DVC/MLflow/LangSmith…） | 本章下方「🔧 工具深度解析」 |
-| 事故响应 / SRE / 混沌工程 | [[AI运维/README]] — 运维专属 |
+| 事故响应 / SRE / 混沌工程 | [[运维/README]] — 运维专属 |
 
 ---
 
@@ -168,7 +168,7 @@ graph LR
 | [模型版本回滚](MLOps/Troubleshooting/Model_Version_Rollback_Playbook.md) | MLflow Registry + K8s/KServe 回滚流程 | MLOps / SRE |
 | [MLOps on K8s 排查速查表](MLOps/Troubleshooting/MLOps_K8s_Cheat_Sheet.md) | MLflow/Airflow/KServe/PostgreSQL/OSS 常用诊断命令 | MLOps / SRE |
 
-> Guardrails / PromptLayer 仍留 [[AI运维/README]]（安全护栏与 Prompt 管理更贴近运维场景）。
+> Guardrails / PromptLayer 仍留 [[运维/README]]（安全护栏与 Prompt 管理更贴近运维场景）。
 
 ---
 
@@ -194,8 +194,8 @@ graph LR
 - [部署推理](../部署推理/README.md) — MLOps 的最终交付环节
 
 ### 进阶方向
-- [AI Ops](../AI运维/README.md) — 模型监控、告警、自动回滚
-- [测试](../AI测试/README.md) — AI 系统的测试策略
+- [AI Ops](../运维/README.md) — 模型监控、告警、自动回滚
+- [测试](../测试/README.md) — AI 系统的测试策略
 - [架构基础设施](../架构基建/) — 底层基础设施支撑
 - [RAG 系统](../RAG系统/) — 知识密集型应用的 MLOps 实践
 

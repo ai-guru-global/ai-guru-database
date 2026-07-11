@@ -9,7 +9,7 @@ tags:
   - sub-agent
   - hello-agents
 sources:
-  - "_raw/github-sources/hello-agents/docs/chapter9/第九章 上下文工程.md"
+  - "原始/github-sources/hello-agents/docs/chapter9/第九章 上下文工程.md"
   - "https://github.com/datawhalechina/hello-agents"
 summary: "Datawhale Hello-Agents 第九章笔记：上下文工程是提示工程的演进，关注如何在推理阶段策划与维护最优信息集合，解决上下文腐蚀与长时程任务连贯性问题。"
 provenance:
@@ -143,5 +143,5 @@ aliases:
 
 - [[大模型/Prompt_Engineering/Prompt_Engineering]] — 提示工程基础
 - [[大模型/Prompt_Engineering/Prompt_Engineering_Principles_Ng]] — Ng 提示工程原则
-- [[Agent/Hello_Agents_L08_Memory_RAG]] — 记忆与 RAG
-- [[Agent/Agent_Workflow/Workflow-in-nutshell]] — Agent 工作流总览
+- [[智能体/Hello_Agents_L08_Memory_RAG]] — 记忆与 RAG
+- [[智能体/Agent_Workflow/Workflow-in-nutshell]] — Agent 工作流总览

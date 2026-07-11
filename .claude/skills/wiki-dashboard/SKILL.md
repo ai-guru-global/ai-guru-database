@@ -376,18 +376,18 @@ SORT file.mtime DESC
 
 ## Step 3: Write the File
 
-**Bases:** Target path `$OBSIDIAN_VAULT_PATH/_meta/<dashboard-name>.base`
+**Bases:** Target path `$OBSIDIAN_VAULT_PATH/治理/<dashboard-name>.base`
 
-**Dataview:** Write queries directly into any `.md` note. A dedicated dashboard note at `$OBSIDIAN_VAULT_PATH/_meta/dashboard.md` works well for multi-section views.
+**Dataview:** Write queries directly into any `.md` note. A dedicated dashboard note at `$OBSIDIAN_VAULT_PATH/治理/dashboard.md` works well for multi-section views.
 
 Slug examples:
-- "All concepts" → `_meta/concepts-index.base`
-- "Recent ingests" → `_meta/recent-ingests.base`
-- "Project overview" → `_meta/projects-overview.base`
-- "Stale pages" → `_meta/stale-pages.base`
-- "Full dashboard" → `_meta/dashboard.md`
+- "All concepts" → `治理/concepts-index.base`
+- "Recent ingests" → `治理/recent-ingests.base`
+- "Project overview" → `治理/projects-overview.base`
+- "Stale pages" → `治理/stale-pages.base`
+- "Full dashboard" → `治理/dashboard.md`
 
-Create `_meta/` if it doesn't exist yet.
+Create `治理/` if it doesn't exist yet.
 
 ## Step 4: Embed Bases (optional)
 
@@ -395,7 +395,7 @@ To embed a `.base` inside a note:
 
 ```markdown
 ## Entities
-![[_meta/entities-tracker.base]]
+![[治理/entities-tracker.base]]
 ```
 
 Ask before modifying an existing note.
@@ -429,9 +429,9 @@ No manifest or index update needed — dashboards are live queries, not static p
 - [ ] Bases: `formulas:` used for computed columns, referenced as `formula.<name>` in order/properties
 - [ ] Dataview: GROUP BY queries use `rows.property` not bare `property`
 - [ ] Dataview: date arithmetic uses `file.mtime`, not `choice(updated, ...)`
-- [ ] File written to `_meta/` with a descriptive slug
+- [ ] File written to `治理/` with a descriptive slug
 - [ ] `log.md` updated
-- [ ] User told how to embed Bases (`![[_meta/<name>.base]]`) or open the dashboard note
+- [ ] User told how to embed Bases (`![[治理/<name>.base]]`) or open the dashboard note
 
 ## QMD Refresh After Vault Writes
 

@@ -305,4 +305,4 @@ Android:
 - [[大模型/LLM_Products/chatgpt_overview]] — ChatGPT 概览
 - [[大模型/Multimodal_Models/README]] — 多模态模型
 - [[大模型/LLM_Architectures/Long_Context_Models_2026]] — 长上下文模型
-- [[Agent/Agent_Frameworks/README]] — Agent 框架
+- [[智能体/Agent_Frameworks/README]] — Agent 框架

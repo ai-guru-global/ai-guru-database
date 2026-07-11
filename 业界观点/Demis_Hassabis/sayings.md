@@ -13,11 +13,81 @@ sources: []
 ---
 # Demis Hassabis 关于 AI 的观点 (Demis Hassabis on AI)
 
-1. **“AGI is not about building robots; it’s about solving intelligence to solve everything else.” / “AGI 的目标不是造机器人，而是解决智能以解决其他问题。”** 
+## 1. AGI 与智能的本质 (AGI & The Nature of Intelligence)
+
+1. **"AGI is not about building robots; it's about solving intelligence to solve everything else." / "AGI 的目标不是造机器人，而是解决智能以解决其他问题。"** 
+ - **上下文**: 阐述 DeepMind 的使命——通用智能是攻克科学难题的元工具。
  - **来源**: [Google DeepMind 创始访谈，2023](https://www.nature.com/articles/d41586-023-02212-7)
 
-2. **“We need to work together on the governance of AI.” / “AI 治理需要合作。”** 
+2. **"Intelligence is the most general and powerful tool we have—solve that and you solve everything." / "智能是我们拥有的最通用、最强大的工具——解决了智能，你就解决了一切。"** 
+ - **上下文**: DeepMind 创始理念的核心表述。
+ - **来源**: [Demis Hassabis TED Talk，2017](https://www.ted.com/talks/demis_hassabis)
+
+3. **"We could be just a few years, maybe a handful of years, away from AGI." / "我们可能离 AGI 只有几年——也许是几年之内。"** 
+ - **上下文**: 对 AGI 时间线的判断，相比同行更为乐观。
+ - **来源**: [Demis Hassabis 公开采访，2024](https://deepmind.google/)
+
+## 2. 科学发现与 AI for Science (Scientific Discovery)
+
+4. **"AlphaFold is the proof that AI can make fundamental scientific discoveries." / "AlphaFold 证明 AI 能做出基础科学发现。"** 
+ - **上下文**: AlphaFold 解决蛋白质折叠五十年难题，获 2024 年诺贝尔化学奖。
+ - **来源**: [DeepMind AlphaFold 论文 Nature，2021](https://www.nature.com/articles/s41586-021-03819-2)
+
+5. **"AI will be the ultimate scientific assistant—helping us understand physics, biology, and mathematics." / "AI 将成为终极科学助手——帮助我们理解物理、生物和数学。"** 
+ - **上下文**: 展望 AI 在材料科学、核聚变、数学猜想证明中的应用 (AlphaGeometry, FunSearch)。
+ - **来源**: [Demis Hassabis 诺贝尔奖获奖感言，2024](https://deepmind.google/)
+
+6. **"The next Nobel Prizes will increasingly involve AI as a co-discoverer." / "未来的诺贝尔奖将越来越多地涉及 AI 作为共同发现者。"** 
+ - **上下文**: 2024 年 AI 相关研究横跨物理学奖和化学奖。
+ - **来源**: [Demis Hassabis 公开演讲，2024](https://deepmind.google/)
+
+## 3. 安全与治理 (Safety & Governance)
+
+7. **"We need to work together on the governance of AI." / "AI 治理需要合作。"** 
+ - **上下文**: 深度参与 UK AI Safety Summit，推动前沿模型安全测试国际标准。
  - **来源**: [DeepMind CEO 接受 FT 采访，2023](https://www.ft.com/content/5b1a3c3d-3f4c-4c67-8b9b-57f85890bf12)
+
+8. **"We must not let the competitive race override safety—responsible scaling is non-negotiable." / "竞争绝不能凌驾于安全之上——负责任扩展是不可妥协的。"** 
+ - **上下文**: DeepMind 发布 Frontier Safety Framework，设定能力红线。
+ - **来源**: [DeepMind 安全框架博客，2024](https://deepmind.google/safety/frontier-safety-framework/)
+
+## 4. AGI 路线与创造力 (AGI Path & Creativity)
+
+9. **"AGI won't come from just scaling LLMs—we need new architectural breakthroughs." / "AGI 不会仅来自扩大 LLM——我们需要新的架构突破。"** 
+ - **上下文**: 对纯 Scaling Law 的怀疑，主张基于世界模型和规划的新方法。
+ - **来源**: [Demis Hassabis 公开采访，2024](https://deepmind.google/)
+
+10. **"Creativity is the hallmark of intelligence—AI must not just imitate but truly innovate." / "创造力是智能的标志——AI 不应只模仿，而要真正创新。"** 
+ - **上下文**: AlphaGo 的"第 37 手"被视为 AI 创造力的里程碑，超越人类棋谱。
+ - **来源**: [Demis Hassabis 纪录片 AlphaGo 首映，2017](https://deepmind.google/)
+
+11. **"The intersection of AI and the scientific method is where the biggest breakthroughs will happen." / "AI 与科学方法的交汇处将产生最大的突破。"** 
+ - **上下文**: 强调 AI 不只是工程，而是实验科学的新范式。
+  - **来源**: [Demis Hassabis 诺贝尔奖获奖演讲，2024](https://deepmind.google/)
+
+## 5. 从 AlphaGo 到 AlphaFold (From AlphaGo to AlphaFold)
+
+12. **"AlphaGo's Move 37 was the moment AI showed true creativity—it invented a move no human would play." / "AlphaGo 的第 37 手是 AI 展现真正创造力的时刻——它发明了人类不会下的棋。"**
+  - **解读**: 将 AlphaGo 战胜李世石的"第 37 手"视为 AI 超越模仿、实现原创性思维的标志。这一手棋震惊了围棋界，也改变了人们对 AI 创造力的认知。
+  - **来源**: [Demis Hassabis 纪录片 AlphaGo, 2017](https://deepmind.google/)
+
+13. **"AlphaFold 2 was a moonshot that worked—we solved a 50-year-old grand challenge in biology." / "AlphaFold 2 是一个成功的登月项目——我们解决了生物学界 50 年的大挑战。"**
+  - **解读**: 回顾蛋白质结构预测从科研难题到工程突破的完整历程。AlphaFold 数据库已成为全球生物学研究的基础设施。
+  - **来源**: [Demis Hassabis Nature 评论, 2021](https://www.nature.com/articles/s41586-021-03819-2)
+
+14. **"Drug discovery with AI could cut the time from 10 years to 1 year." / "AI 驱动的药物发现可以将研发时间从 10 年缩短到 1 年。"**
+  - **解读**: 对 AI 在制药领域应用的预期。通过 Isomorphic Labs 将 AlphaFold 技术商业化，加速药物靶点发现和分子设计。
+  - **来源**: [Demis Hassabis 公开采访, 2024](https://deepmind.google/)
+
+## 6. 通用智能与未来 (General Intelligence & Future)
+
+15. **"The Turing Test is not a good measure of intelligence—we need better benchmarks." / "图灵测试不是衡量智能的好标准——我们需要更好的基准。"**
+  - **解读**: 批评经典智能测试的局限性。图灵测试太容易被表面行为欺骗，需要更深层的认知能力评估来衡量真正的智能。
+  - **来源**: [Demis Hassabis 学术演讲, 2017](https://deepmind.google/)
+
+16. **"Investors used to laugh at our long-term research approach—now everyone wants to do AI for Science." / "投资者曾经嘲笑我们的长期研究方法——现在每个人都想做 AI for Science。"**
+  - **解读**: 回顾 DeepMind 坚持 AI 科学应用方向所面临的早期质疑与最终验证。从 AlphaGo 到 AlphaFold，证明了长期主义的回报。
+  - **来源**: [Demis Hassabis 公开采访, 2024](https://deepmind.google/)
 
 ## 近期动态与更新入口 (Recent Updates & Sources)
 - **官方来源 (DeepMind)**: [DeepMind About](https://deepmind.google/about/)

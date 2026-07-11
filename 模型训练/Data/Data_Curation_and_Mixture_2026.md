@@ -2062,4 +2062,4 @@ Pre-training Data Quality Checklist / 预训练数据质量检查清单
 
 ## 延伸阅读
 
-- [[_synthesis/pretraining-synthetic-data|预训练数据 × 合成数据：从规模到质量的范式转移]]
+- [[治理/pretraining-synthetic-data|预训练数据 × 合成数据：从规模到质量的范式转移]]

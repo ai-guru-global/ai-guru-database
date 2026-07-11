@@ -128,7 +128,7 @@ sources: []
   - 物理世界交互
   - 持续学习（不遗忘旧知识的同时学新知识）
   方面仍有显著差距
-- **入门阅读**：[AI 未来趋势](../../AI入门/AI_Future_Trends.md)
+- **入门阅读**：[AI 未来趋势](../../入门/AI_Future_Trends.md)
 - **关联概念**：涌现能力、规模法则 (Scaling Law)、AI Safety
 
 ### 6. AI Safety 与对齐 (Alignment)

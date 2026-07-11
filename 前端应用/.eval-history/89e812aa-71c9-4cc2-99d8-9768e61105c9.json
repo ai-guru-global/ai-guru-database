@@ -1,0 +1,1962 @@
+{
+  "type": "batch",
+  "models": [
+    "qwen",
+    "kimi",
+    "minimax"
+  ],
+  "summary": {
+    "qwen": {
+      "modelName": "通义千问 Qwen-Max",
+      "model": "qwen-max",
+      "totalQuestions": 80,
+      "averageScore": 0,
+      "dimensionScores": {}
+    },
+    "kimi": {
+      "modelName": "Kimi (月之暗面)",
+      "model": "moonshot-v1-128k",
+      "totalQuestions": 80,
+      "averageScore": 0,
+      "dimensionScores": {}
+    },
+    "minimax": {
+      "modelName": "MiniMax abab7",
+      "model": "MiniMax-Text-01",
+      "totalQuestions": 80,
+      "averageScore": 0,
+      "dimensionScores": {}
+    }
+  },
+  "results": {
+    "qwen": [
+      {
+        "questionId": "cc-01",
+        "dimension": "core_concepts",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cc-02",
+        "dimension": "core_concepts",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cc-03",
+        "dimension": "core_concepts",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cc-04",
+        "dimension": "core_concepts",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cc-05",
+        "dimension": "core_concepts",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cc-06",
+        "dimension": "core_concepts",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cc-07",
+        "dimension": "core_concepts",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cc-08",
+        "dimension": "core_concepts",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ao-01",
+        "dimension": "api_objects",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ao-02",
+        "dimension": "api_objects",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ao-03",
+        "dimension": "api_objects",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ao-04",
+        "dimension": "api_objects",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ao-05",
+        "dimension": "api_objects",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ao-06",
+        "dimension": "api_objects",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ao-07",
+        "dimension": "api_objects",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ao-08",
+        "dimension": "api_objects",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ok-01",
+        "dimension": "ops_knowledge",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ok-02",
+        "dimension": "ops_knowledge",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ok-03",
+        "dimension": "ops_knowledge",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ok-04",
+        "dimension": "ops_knowledge",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ok-05",
+        "dimension": "ops_knowledge",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ok-06",
+        "dimension": "ops_knowledge",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ok-07",
+        "dimension": "ops_knowledge",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ok-08",
+        "dimension": "ops_knowledge",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vt-01",
+        "dimension": "version_timeliness",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vt-02",
+        "dimension": "version_timeliness",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vt-03",
+        "dimension": "version_timeliness",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vt-04",
+        "dimension": "version_timeliness",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vt-05",
+        "dimension": "version_timeliness",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vt-06",
+        "dimension": "version_timeliness",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vt-07",
+        "dimension": "version_timeliness",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vt-08",
+        "dimension": "version_timeliness",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cw-01",
+        "dimension": "config_writing",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cw-02",
+        "dimension": "config_writing",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cw-03",
+        "dimension": "config_writing",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cw-04",
+        "dimension": "config_writing",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cw-05",
+        "dimension": "config_writing",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cw-06",
+        "dimension": "config_writing",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cw-07",
+        "dimension": "config_writing",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cw-08",
+        "dimension": "config_writing",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ea-01",
+        "dimension": "error_analysis",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ea-02",
+        "dimension": "error_analysis",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ea-03",
+        "dimension": "error_analysis",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ea-04",
+        "dimension": "error_analysis",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ah-01",
+        "dimension": "alert_handling",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ah-02",
+        "dimension": "alert_handling",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ah-03",
+        "dimension": "alert_handling",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ah-04",
+        "dimension": "alert_handling",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vu-01",
+        "dimension": "version_upgrade",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vu-02",
+        "dimension": "version_upgrade",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vu-03",
+        "dimension": "version_upgrade",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vu-04",
+        "dimension": "version_upgrade",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "bp-01",
+        "dimension": "best_practices",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "bp-02",
+        "dimension": "best_practices",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "bp-03",
+        "dimension": "best_practices",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "bp-04",
+        "dimension": "best_practices",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "tm-01",
+        "dimension": "terminology",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "tm-02",
+        "dimension": "terminology",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "tm-03",
+        "dimension": "terminology",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "tm-04",
+        "dimension": "terminology",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cp-01",
+        "dimension": "command_parsing",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cp-02",
+        "dimension": "command_parsing",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cp-03",
+        "dimension": "command_parsing",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cp-04",
+        "dimension": "command_parsing",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "la-01",
+        "dimension": "log_analysis",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "la-02",
+        "dimension": "log_analysis",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "la-03",
+        "dimension": "log_analysis",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "la-04",
+        "dimension": "log_analysis",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "chp-01",
+        "dimension": "change_plan",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "chp-02",
+        "dimension": "change_plan",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "chp-03",
+        "dimension": "change_plan",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "chp-04",
+        "dimension": "change_plan",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ts-01",
+        "dimension": "troubleshooting",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ts-02",
+        "dimension": "troubleshooting",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ts-03",
+        "dimension": "troubleshooting",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ts-04",
+        "dimension": "troubleshooting",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "fe-01",
+        "dimension": "feature_explanation",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "fe-02",
+        "dimension": "feature_explanation",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "fe-03",
+        "dimension": "feature_explanation",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "fe-04",
+        "dimension": "feature_explanation",
+        "error": "API key not configured for qwen",
+        "score": {
+          "total": 0
+        }
+      }
+    ],
+    "kimi": [
+      {
+        "questionId": "cc-01",
+        "dimension": "core_concepts",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cc-02",
+        "dimension": "core_concepts",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cc-03",
+        "dimension": "core_concepts",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cc-04",
+        "dimension": "core_concepts",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cc-05",
+        "dimension": "core_concepts",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cc-06",
+        "dimension": "core_concepts",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cc-07",
+        "dimension": "core_concepts",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cc-08",
+        "dimension": "core_concepts",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ao-01",
+        "dimension": "api_objects",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ao-02",
+        "dimension": "api_objects",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ao-03",
+        "dimension": "api_objects",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ao-04",
+        "dimension": "api_objects",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ao-05",
+        "dimension": "api_objects",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ao-06",
+        "dimension": "api_objects",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ao-07",
+        "dimension": "api_objects",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ao-08",
+        "dimension": "api_objects",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ok-01",
+        "dimension": "ops_knowledge",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ok-02",
+        "dimension": "ops_knowledge",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ok-03",
+        "dimension": "ops_knowledge",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ok-04",
+        "dimension": "ops_knowledge",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ok-05",
+        "dimension": "ops_knowledge",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ok-06",
+        "dimension": "ops_knowledge",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ok-07",
+        "dimension": "ops_knowledge",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ok-08",
+        "dimension": "ops_knowledge",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vt-01",
+        "dimension": "version_timeliness",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vt-02",
+        "dimension": "version_timeliness",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vt-03",
+        "dimension": "version_timeliness",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vt-04",
+        "dimension": "version_timeliness",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vt-05",
+        "dimension": "version_timeliness",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vt-06",
+        "dimension": "version_timeliness",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vt-07",
+        "dimension": "version_timeliness",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vt-08",
+        "dimension": "version_timeliness",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cw-01",
+        "dimension": "config_writing",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cw-02",
+        "dimension": "config_writing",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cw-03",
+        "dimension": "config_writing",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cw-04",
+        "dimension": "config_writing",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cw-05",
+        "dimension": "config_writing",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cw-06",
+        "dimension": "config_writing",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cw-07",
+        "dimension": "config_writing",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cw-08",
+        "dimension": "config_writing",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ea-01",
+        "dimension": "error_analysis",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ea-02",
+        "dimension": "error_analysis",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ea-03",
+        "dimension": "error_analysis",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ea-04",
+        "dimension": "error_analysis",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ah-01",
+        "dimension": "alert_handling",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ah-02",
+        "dimension": "alert_handling",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ah-03",
+        "dimension": "alert_handling",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ah-04",
+        "dimension": "alert_handling",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vu-01",
+        "dimension": "version_upgrade",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vu-02",
+        "dimension": "version_upgrade",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vu-03",
+        "dimension": "version_upgrade",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vu-04",
+        "dimension": "version_upgrade",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "bp-01",
+        "dimension": "best_practices",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "bp-02",
+        "dimension": "best_practices",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "bp-03",
+        "dimension": "best_practices",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "bp-04",
+        "dimension": "best_practices",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "tm-01",
+        "dimension": "terminology",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "tm-02",
+        "dimension": "terminology",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "tm-03",
+        "dimension": "terminology",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "tm-04",
+        "dimension": "terminology",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cp-01",
+        "dimension": "command_parsing",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cp-02",
+        "dimension": "command_parsing",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cp-03",
+        "dimension": "command_parsing",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cp-04",
+        "dimension": "command_parsing",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "la-01",
+        "dimension": "log_analysis",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "la-02",
+        "dimension": "log_analysis",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "la-03",
+        "dimension": "log_analysis",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "la-04",
+        "dimension": "log_analysis",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "chp-01",
+        "dimension": "change_plan",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "chp-02",
+        "dimension": "change_plan",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "chp-03",
+        "dimension": "change_plan",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "chp-04",
+        "dimension": "change_plan",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ts-01",
+        "dimension": "troubleshooting",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ts-02",
+        "dimension": "troubleshooting",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ts-03",
+        "dimension": "troubleshooting",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ts-04",
+        "dimension": "troubleshooting",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "fe-01",
+        "dimension": "feature_explanation",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "fe-02",
+        "dimension": "feature_explanation",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "fe-03",
+        "dimension": "feature_explanation",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "fe-04",
+        "dimension": "feature_explanation",
+        "error": "API key not configured for kimi",
+        "score": {
+          "total": 0
+        }
+      }
+    ],
+    "minimax": [
+      {
+        "questionId": "cc-01",
+        "dimension": "core_concepts",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cc-02",
+        "dimension": "core_concepts",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cc-03",
+        "dimension": "core_concepts",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cc-04",
+        "dimension": "core_concepts",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cc-05",
+        "dimension": "core_concepts",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cc-06",
+        "dimension": "core_concepts",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cc-07",
+        "dimension": "core_concepts",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cc-08",
+        "dimension": "core_concepts",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ao-01",
+        "dimension": "api_objects",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ao-02",
+        "dimension": "api_objects",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ao-03",
+        "dimension": "api_objects",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ao-04",
+        "dimension": "api_objects",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ao-05",
+        "dimension": "api_objects",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ao-06",
+        "dimension": "api_objects",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ao-07",
+        "dimension": "api_objects",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ao-08",
+        "dimension": "api_objects",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ok-01",
+        "dimension": "ops_knowledge",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ok-02",
+        "dimension": "ops_knowledge",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ok-03",
+        "dimension": "ops_knowledge",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ok-04",
+        "dimension": "ops_knowledge",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ok-05",
+        "dimension": "ops_knowledge",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ok-06",
+        "dimension": "ops_knowledge",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ok-07",
+        "dimension": "ops_knowledge",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ok-08",
+        "dimension": "ops_knowledge",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vt-01",
+        "dimension": "version_timeliness",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vt-02",
+        "dimension": "version_timeliness",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vt-03",
+        "dimension": "version_timeliness",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vt-04",
+        "dimension": "version_timeliness",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vt-05",
+        "dimension": "version_timeliness",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vt-06",
+        "dimension": "version_timeliness",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vt-07",
+        "dimension": "version_timeliness",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vt-08",
+        "dimension": "version_timeliness",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cw-01",
+        "dimension": "config_writing",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cw-02",
+        "dimension": "config_writing",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cw-03",
+        "dimension": "config_writing",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cw-04",
+        "dimension": "config_writing",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cw-05",
+        "dimension": "config_writing",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cw-06",
+        "dimension": "config_writing",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cw-07",
+        "dimension": "config_writing",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cw-08",
+        "dimension": "config_writing",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ea-01",
+        "dimension": "error_analysis",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ea-02",
+        "dimension": "error_analysis",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ea-03",
+        "dimension": "error_analysis",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ea-04",
+        "dimension": "error_analysis",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ah-01",
+        "dimension": "alert_handling",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ah-02",
+        "dimension": "alert_handling",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ah-03",
+        "dimension": "alert_handling",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ah-04",
+        "dimension": "alert_handling",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vu-01",
+        "dimension": "version_upgrade",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vu-02",
+        "dimension": "version_upgrade",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vu-03",
+        "dimension": "version_upgrade",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "vu-04",
+        "dimension": "version_upgrade",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "bp-01",
+        "dimension": "best_practices",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "bp-02",
+        "dimension": "best_practices",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "bp-03",
+        "dimension": "best_practices",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "bp-04",
+        "dimension": "best_practices",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "tm-01",
+        "dimension": "terminology",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "tm-02",
+        "dimension": "terminology",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "tm-03",
+        "dimension": "terminology",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "tm-04",
+        "dimension": "terminology",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cp-01",
+        "dimension": "command_parsing",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cp-02",
+        "dimension": "command_parsing",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cp-03",
+        "dimension": "command_parsing",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "cp-04",
+        "dimension": "command_parsing",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "la-01",
+        "dimension": "log_analysis",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "la-02",
+        "dimension": "log_analysis",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "la-03",
+        "dimension": "log_analysis",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "la-04",
+        "dimension": "log_analysis",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "chp-01",
+        "dimension": "change_plan",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "chp-02",
+        "dimension": "change_plan",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "chp-03",
+        "dimension": "change_plan",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "chp-04",
+        "dimension": "change_plan",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ts-01",
+        "dimension": "troubleshooting",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ts-02",
+        "dimension": "troubleshooting",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ts-03",
+        "dimension": "troubleshooting",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "ts-04",
+        "dimension": "troubleshooting",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "fe-01",
+        "dimension": "feature_explanation",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "fe-02",
+        "dimension": "feature_explanation",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "fe-03",
+        "dimension": "feature_explanation",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      },
+      {
+        "questionId": "fe-04",
+        "dimension": "feature_explanation",
+        "error": "API key not configured for minimax",
+        "score": {
+          "total": 0
+        }
+      }
+    ]
+  },
+  "questionCount": 80,
+  "id": "89e812aa-71c9-4cc2-99d8-9768e61105c9",
+  "timestamp": "2026-04-14T03:18:48.554Z"
+}

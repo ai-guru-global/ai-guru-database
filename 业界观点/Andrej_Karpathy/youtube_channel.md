@@ -32,7 +32,7 @@ aliases:
 | [Building GPT from scratch](https://www.youtube.com/watch?v=kCc8FmEb1nY) | 2h | 从零构建 GPT |
 | [Let's build the GPT Tokenizer](https://www.youtube.com/watch?v=zduSFxRajkE) | 2h | 分词器实现 |
 
-> **关联**: -> [[业界观点/Andrej_Karpathy/index|Andrej Karpathy]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[业界观点/Andrej_Karpathy/index|Andrej Karpathy]] | [[学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
 
 
 ## Related

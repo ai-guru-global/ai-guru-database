@@ -30,7 +30,7 @@ sources: []
 - [实战代码](#实战代码)
 - [性能调优](#性能调优)
 - [常见问题](#常见问题)
-- [References](#_references)
+- [References](#参考)
 
 ---
 
@@ -1514,7 +1514,7 @@ if rank == 0:
 - 模型推理优化与部署，请参阅 [`../部署推理/README.md`](../../部署推理/README.md)
 - GPU 集群硬件配置与网络拓扑，请参阅 [`../架构基建/Architecture_Overview/AI_Infrastructure_2026`](架构基建/Architecture_Overview/AI_Infrastructure_2026)
 - 模型评估方法，请参阅 [`../模型评估/Model_Evaluation.md`](模型评估/Model_Evaluation.md)
-- MLOps 训练流水线，请参阅 [`../MLOps/MLOps_Pipeline.md`](MLOps/MLOps_Pipeline.md)
+- MLOps 训练流水线，请参阅 [`../MLOps/MLOps_Pipeline.md`](模型运维/MLOps_Pipeline.md)
 
 ### 核心论文
 

@@ -65,9 +65,9 @@ sources: []
 
 ## 与其他章节的关联
 
-- [AI 历史](../AI入门/AI_History_Timeline.md) — 演讲者的贡献与 AI 发展时间线
-- [AI 伦理](../AI入门/AI_Ethics_Society.md) — AI 安全与治理观点
-- [AI 未来趋势](../AI入门/AI_Future_Trends.md) — 行业领袖的前瞻判断
+- [AI 历史](../入门/AI_History_Timeline.md) — 演讲者的贡献与 AI 发展时间线
+- [AI 伦理](../入门/AI_Ethics_Society.md) — AI 安全与治理观点
+- [AI 未来趋势](../入门/AI_Future_Trends.md) — 行业领袖的前瞻判断
 
 ---
 
@@ -141,7 +141,7 @@ sources: []
 - [[业界观点/Sundar_Pichai/sayings.md|Sundar_Pichai sayings]]
 - [[业界观点/Yann_LeCun/about.md|Yann_LeCun about]]
 - [[业界观点/Yann_LeCun/sayings.md|Yann_LeCun sayings]]
-- [[_synthesis/talks-insights|AI 领袖演讲与行业洞察]]
+- [[治理/talks-insights|AI 领袖演讲与行业洞察]]
 
 
 

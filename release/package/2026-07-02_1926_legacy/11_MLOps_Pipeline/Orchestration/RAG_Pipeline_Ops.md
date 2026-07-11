@@ -444,7 +444,7 @@ jobs:
 - [[_concepts/rag-systems]] — RAG 概念
 - [[_concepts/embedding-models]] — Embedding 模型
 - [[_concepts/matryoshka-representation-learning]] — 可截断嵌入（节省存储）
-- [[AI测试/RAGAS_Deep_Dive]] — RAG 评估事实标准
+- [[测试/RAGAS_Deep_Dive]] — RAG 评估事实标准
 - [[部署推理/Caching/Prompt_Caching_Advanced]] — 缓存与 RAG
 
 ---

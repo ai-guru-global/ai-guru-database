@@ -22,7 +22,7 @@ sources: []
 
 ### 融合趋势
 
-传统上，MLOps（[[MLOps/README]]）和 AI 运维监控（[[AI运维/README]]）是两个独立领域。但在 2024-2026 年间，两者正在快速融合：
+传统上，MLOps（[[MLOps/README]]）和 AI 运维监控（[[运维/README]]）是两个独立领域。但在 2024-2026 年间，两者正在快速融合：
 
 ```
 传统模式:
@@ -63,6 +63,6 @@ sources: []
 
 - [[MLOps/MLOps_Pipeline]] — MLOps 流水线
 - [[MLOps/Observability/Model_Monitoring_and_Drift_Detection_2026]] — 模型监控与漂移检测
-- [[AI运维/AI_Observability_Deep_Dive]] — AI 可观测性
-- [[AI运维/Incident_Response_for_AI_Systems]] — AI 系统故障响应
+- [[运维/AI_Observability_Deep_Dive]] — AI 可观测性
+- [[运维/Incident_Response_for_AI_Systems]] — AI 系统故障响应
 - [[Agent/Agent_Evaluation/Agent_Harness_Deep_Dive]] — Agent 评估体系

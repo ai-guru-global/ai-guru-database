@@ -358,7 +358,7 @@ if __name__ == "__main__":
 - [[强化学习/README|强化学习]] — RL、RLHF、GRPO 论文落地路径
 - [[模型训练/README|模型训练]] — 训练工程、分布式训练与 FinOps
 - [[模型评估/README|模型评估]] — 论文指标验证与基准测评
-- [[AI测试/README|AI 测试]] — 复现后的回归、A/B 与红队测试
+- [[测试/README|AI 测试]] — 复现后的回归、A/B 与红队测试
 - [[部署推理/README|部署与推理]] — 论文方法产品化的最后一公里
 - [[MLOps/README|MLOps 流水线]] — 实验追踪、CI/CD 与模型治理
 - [[RAG系统/README|RAG 系统]] — 检索增强生成论文的工程化

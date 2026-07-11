@@ -159,8 +159,8 @@ spec:
 
 ## Related
 
-- [[_concepts/opa]] — OPA 概念卡片
-- [[_concepts/kyverno]] — Kyverno
-- [[_concepts/falco]] — Falco
-- [[_concepts/kubernetes]] — Kubernetes
+- [[概念/opa]] — OPA 概念卡片
+- [[概念/kyverno]] — Kyverno
+- [[概念/falco]] — Falco
+- [[概念/kubernetes]] — Kubernetes
 - [[伦理安全/AI_Security_2026/AI_Security_2026]] — AI 安全 2026

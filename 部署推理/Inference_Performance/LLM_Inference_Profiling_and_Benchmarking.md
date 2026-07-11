@@ -15,7 +15,7 @@ sources: []
 ---
 
 > [!warning] 生产安全提示 · Production Safety
-> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # 推理 Profiling 与 Benchmarking
 
@@ -237,7 +237,7 @@ FP16 vs INT4 的吞吐对比不公平，要说明精度和速度 trade-off。
 
 ## Related
 
-- [[_concepts/inference-performance]] — 推理性能概念卡
+- [[概念/inference-performance]] — 推理性能概念卡
 - [[部署推理/Inference_Performance/README|推理性能专题]]
 - [[部署推理/Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]]
 - [[部署推理/Inference_Engines/vLLM_Deep_Dive|vLLM Deep Dive]]

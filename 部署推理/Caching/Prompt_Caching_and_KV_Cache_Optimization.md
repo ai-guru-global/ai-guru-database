@@ -592,6 +592,6 @@ class PersistentKVCache:
 
 - [[部署推理/Caching/Speculative_Decoding_Advanced_2026]]
 - [[部署推理/Inference_Engines/vLLM_Deep_Dive]]
-- [[_concepts/model-serving]]
+- [[概念/model-serving]]
 - [[大模型/LLM_Architectures/LLM_Architectures]]
 - [[部署推理/Deployment_Inference_2026]]

@@ -58,8 +58,8 @@ aliases:
 | 模块 | 课号 | 本地课程页 | 本库建议配合阅读 | 官方 Notebook / 实验 |
 |------|------|------------|------------------|----------------------|
 | **环境设置** | 00 | [[90_Learn/courses/microsoft/L00_Course_Setup|课程环境设置]] | [[数学基础/AI_Development_Environment_Setup]] | [GitHub](https://github.com/microsoft/AI-For-Beginners/tree/main/lessons/0-course-setup) |
-| **I. 人工智能简介** | 01 | [[90_Learn/courses/microsoft/L01_Introduction_and_History_of_AI|人工智能介绍与历史]] | [[AI入门/AI_Fundamentals]]、[[AI入门/AI_History_Timeline]] | [GitHub](https://github.com/microsoft/AI-For-Beginners/tree/main/lessons/1-Intro) |
-| **II. 符号 AI** | 02 | [[90_Learn/courses/microsoft/L02_Knowledge_Representation_and_Expert_Systems|知识表示与专家系统]] | [[AI入门/AI_Fundamentals]]、[[大模型/Reasoning_Models/Neuro_Symbolic_and_Formal_Verification_2026]]（符号推理的现代延续） | [GitHub](https://github.com/microsoft/AI-For-Beginners/tree/main/lessons/2-Symbolic) |
+| **I. 人工智能简介** | 01 | [[90_Learn/courses/microsoft/L01_Introduction_and_History_of_AI|人工智能介绍与历史]] | [[入门/AI_Fundamentals]]、[[入门/AI_History_Timeline]] | [GitHub](https://github.com/microsoft/AI-For-Beginners/tree/main/lessons/1-Intro) |
+| **II. 符号 AI** | 02 | [[90_Learn/courses/microsoft/L02_Knowledge_Representation_and_Expert_Systems|知识表示与专家系统]] | [[入门/AI_Fundamentals]]、[[大模型/Reasoning_Models/Neuro_Symbolic_and_Formal_Verification_2026]]（符号推理的现代延续） | [GitHub](https://github.com/microsoft/AI-For-Beginners/tree/main/lessons/2-Symbolic) |
 | **III. 神经网络简介** | 03 | [[90_Learn/courses/microsoft/L03_Perceptron|感知器]] | [[深度学习/Neural_Network_Core/Neural_Network_Core]]、[[深度学习/Neural_Network_Core/Your_First_Neural_Network]] | [GitHub](https://github.com/microsoft/AI-For-Beginners/tree/main/lessons/3-NeuralNetworks/03-Perceptron) |
 | | 04 | [[90_Learn/courses/microsoft/L04_Multi_Layered_Perceptron|多层感知器及创建自己的框架]] | [[深度学习/Neural_Network_Core/Neural_Network_Core]]、[[深度学习/Optimization/Optimization]] | [GitHub](https://github.com/microsoft/AI-For-Beginners/tree/main/lessons/3-NeuralNetworks/04-OwnFramework) |
 | | 05 | [[90_Learn/courses/microsoft/L05_Frameworks_and_Overfitting|框架简介与过拟合]] | [[深度学习/Optimization/Optimization]]、[[机器学习/Supervised_Learning/Supervised_Learning]] | [GitHub](https://github.com/microsoft/AI-For-Beginners/tree/main/lessons/3-NeuralNetworks/05-Frameworks) |
@@ -112,5 +112,5 @@ aliases:
 - [[90_Learn/courses/hugging_face/official_courses]] — Hugging Face 官方 NLP / RL / Audio 系统课程
 - [[90_Learn/courses/deeplearning_ai/short_courses]] — DeepLearning.AI 前沿短课程映射
 - [[90_Learn/guides/learning_paths_2026]] — 本库 6 条学习路径总览
-- [[AI入门/AI_Learning_Resources]] — AI 学习资源与方法论
+- [[入门/AI_Learning_Resources]] — AI 学习资源与方法论
 - [[_references/microsoft-ai-for-beginners]] — 外部源引用索引

@@ -113,8 +113,8 @@ sources: []
 | 架构基建 | 62 | 99.28 万 | 8.9% |
 | 部署推理 | 53 | 60.13 万 | 5.4% |
 | 模型训练 | 25 | 53.11 万 | 4.8% |
-| AI编程 | 64 | 43.96 万 | 4.0% |
-| _concepts | 123 | 42.98 万 | 3.9% |
+| 编程 | 64 | 43.96 万 | 4.0% |
+| 概念 | 123 | 42.98 万 | 3.9% |
 | MLOps | 41 | 40.78 万 | 3.7% |
 | 机器学习 | 35 | 33.73 万 | 3.0% |
 | 伦理安全 | 31 | 33.68 万 | 3.0% |
@@ -123,17 +123,17 @@ sources: []
 | 数学基础 | 31 | 32.86 万 | 3.0% |
 | RAG系统 | 31 | 30.53 万 | 2.7% |
 | 模型评估 | 16 | 25.88 万 | 2.3% |
-| AI测试 | 12 | 22.87 万 | 2.1% |
+| 测试 | 12 | 22.87 万 | 2.1% |
 | 深度学习 | 21 | 22.68 万 | 2.0% |
 | 计算机视觉 | 23 | 19.63 万 | 1.8% |
-| AI运维 | 13 | 19.51 万 | 1.8% |
+| 运维 | 13 | 19.51 万 | 1.8% |
 | 强化学习 | 17 | 17.07 万 | 1.5% |
-| AI入门 | 17 | 16.87 万 | 1.5% |
+| 入门 | 17 | 16.87 万 | 1.5% |
 | 行业应用 | 26 | 15.92 万 | 1.4% |
 | 面试岗位 | 88 | 12.73 万 | 1.1% |
 | 业界观点 | 54 | 12.45 万 | 1.1% |
-| _synthesis | 29 | 8.55 万 | 0.8% |
-| _references | 37 | 5.88 万 | 0.5% |
+| 综合 | 29 | 8.55 万 | 0.8% |
+| 参考 | 37 | 5.88 万 | 0.5% |
 | **总计** | **1,216** | **1,110.97 万** | **100%** |
 
 > 💡 提示：运行 `python3 count_words.py` 可查看最新的实时统计
@@ -201,7 +201,7 @@ curl -L -o ai-guru.zip https://github.com/your-org/ai-guru-knowledge-base/archiv
 
 ⏱️ 16-20 周
 
-[大学课程 →](./AI入门/)
+[大学课程 →](./入门/)
 
 </td>
 <td align="center" width="25%">
@@ -233,7 +233,121 @@ curl -L -o ai-guru.zip https://github.com/your-org/ai-guru-knowledge-base/archiv
 
 ## 📚 内容导航
 
-### 🎓 大学通识课程（AI入门）
+### 🗺️ 全库知识图谱与学习路径
+
+```mermaid
+graph TD
+    %% ===== Layer 0: 入口 =====
+    ENTRY["🚪 入门<br/>AI Fundamentals"]
+    MATH["📐 数学基础<br/>线代 · 概率 · 微积分 · 信息论"]
+    CONCEPT["📋 概念<br/>560+ 术语卡片"]
+    PROGRAMMING["💻 编程<br/>AI Coding · OpenCode · Vibe Coding"]
+
+    %% ===== Layer 1: 基础理论 =====
+    ML["🤖 机器学习<br/>监督 · 无监督 · 集成 · 推荐"]
+    DL["🧠 深度学习<br/>神经网络 · 优化 · GAN/VAE/Diffusion"]
+    RL["🎮 强化学习<br/>MDP · DQN/PPO · SAC · RLHF"]
+    CV["👁️ 计算机视觉<br/>检测 · 分割 · 3D · 视频生成"]
+    NLP["💬 NLP/序列模型<br/>RNN · LSTM · Tokenizer"]
+
+    %% ===== Layer 2: 大模型核心 =====
+    LLM["🔨 大模型<br/>Transformer · MoE · 微调 · 推理模型"]
+    MULTIMODAL["🎭 多模态<br/>视觉语言 · 语音 · 视频"]
+    PAPERS["📖 论文精读<br/>Transformer · BERT · GPT · RLHF · DPO"]
+
+    %% ===== Layer 3: 训练与评估 =====
+    TRAINING["⚙️ 模型训练<br/>分布式 · 数据工程 · 对齐 · 压缩"]
+    EVAL["📊 模型评估<br/>Benchmark · LLM-as-Judge · 红队 · 人工评估"]
+    SAFETY["🛡️ 伦理安全<br/>价值对齐 · 护栏 · 联邦学习 · 供应链安全"]
+
+    %% ===== Layer 4: 部署与运维 =====
+    DEPLOY["🚀 部署推理<br/>vLLM/SGLang · 量化 · KV Cache · MoE推理"]
+    ARCH["🏗️ 架构基建<br/>CNCF · GPU虚拟化 · AI Gateway · K8s"]
+    OPS["🔧 模型运维<br/>MLOps · LLMOps · 可观测性 · CI/CD"]
+    SRE["📡 运维 SRE<br/>排障 · 容量规划 · 混沌工程 · FinOps"]
+
+    %% ===== Layer 5: 应用层 =====
+    RAG["🔍 RAG 系统<br/>向量数据库 · 混合检索 · Agentic RAG"]
+    AGENT["🤝 智能体<br/>Agent框架 · 评估 · Harness · 协议"]
+    INDUSTRY["🏭 行业应用<br/>金融 · 医疗 · 制造 · 自动驾驶 · AI4Science"]
+    INTERVIEW["👔 面试岗位<br/>25+ 岗位 · 题库 · 系统设计"]
+    VIZ["📈 可视化<br/>仪表盘 · 可解释性 · 训练监控"]
+    VIEWS["🌐 业界观点<br/>28位领袖 · 观点 · 语录"]
+    TEST["🧪 测试<br/>测试金字塔 · 契约测试 · Agent评估"]
+    LEARN["📚 学习<br/>课程映射 · 职业路径 · 参考书"]
+
+    %% ===== Edges: Foundation =====
+    ENTRY --> MATH & PROGRAMMING & CONCEPT
+    MATH --> ML & DL
+    PROGRAMMING --> ML
+
+    %% ===== Edges: Core Theory =====
+    ML --> DL & RL & CV
+    DL --> NLP & MULTIMODAL
+    NLP --> LLM
+    DL --> LLM
+    CONCEPT -.->|术语参考| ML & DL & LLM & RL
+
+    %% ===== Edges: LLM Core =====
+    LLM --> MULTIMODAL & PAPERS
+    RL -->|RLHF/DPO/GRPO| LLM
+    LLM --> TRAINING & DEPLOY
+
+    %% ===== Edges: Training & Eval =====
+    TRAINING --> EVAL
+    EVAL --> SAFETY
+    PAPERS -.->|理论支撑| TRAINING & EVAL
+
+    %% ===== Edges: Deploy & Ops =====
+    DEPLOY --> ARCH & OPS
+    ARCH --> SRE
+    OPS --> SRE
+    MATH -->|分布式/硬件| ARCH
+
+    %% ===== Edges: Application =====
+    LLM --> RAG
+    RAG --> AGENT
+    LLM --> AGENT
+    AGENT --> INDUSTRY
+    DEPLOY --> INDUSTRY
+
+    %% ===== Edges: Meta =====
+    EVAL --> TEST
+    OPS --> VIZ
+    EVAL --> VIZ
+    ENTRY --> LEARN
+    LEARN --> INTERVIEW
+    LLM --> VIEWS
+
+    %% ===== Styling =====
+    classDef entry fill:#4CAF50,stroke:#2E7D32,color:#fff
+    classDef math fill:#2196F3,stroke:#1565C0,color:#fff
+    classDef core fill:#9C27B0,stroke:#6A1B9A,color:#fff
+    classDef llm fill:#FF9800,stroke:#E65100,color:#fff
+    classDef deploy fill:#F44336,stroke:#C62828,color:#fff
+    classDef app fill:#00BCD4,stroke:#00838F,color:#fff
+    classDef meta fill:#607D8B,stroke:#37474F,color:#fff
+
+    class ENTRY entry
+    class MATH,CONCEPT,PROGRAMMING math
+    class ML,DL,RL,CV,NLP,MULTIMODAL,PAPERS core
+    class LLM,TRAINING,EVAL,SAFETY llm
+    class DEPLOY,ARCH,OPS,SRE deploy
+    class RAG,AGENT,INDUSTRY,INTERVIEW app
+    class VIZ,VIEWS,TEST,LEARN meta
+```
+
+**学习路径速查**:
+
+| 角色 | 推荐路径 | 预计时间 |
+|------|---------|---------|
+| **零基础入门** | 入门 → 数学基础 → 机器学习 → 深度学习 | 16-20周 |
+| **LLM 工程师** | 大模型 → 模型训练 → 部署推理 → RAG系统 → 智能体 | 8-12周 |
+| **运维/SRE** | 部署推理 → 架构基建 → 模型运维 → 运维 SRE | 4-8周 |
+| **AI 安全工程师** | 伦理安全 → 模型评估/红队 → 智能体/安全 → 架构基建/安全 | 4-6周 |
+| **面试备战** | 面试岗位 → 论文精读 → 概念速查 → 学习/参考书 | 2-4周 |
+
+### 🎓 大学通识课程（入门）
 
 完整的 AI 通识教育，支持 16 周学期制：
 
@@ -287,12 +401,12 @@ graph LR
 
 | 文档 | 内容 |
 |------|------|
-| ⭐ [LLMOps 2026](MLOps/LLMOps_2026.md) | 主线：传统 MLOps 失效的 7 大原因、三层架构、成熟度模型、事故复盘 |
-| [Prompt 工程化运维](MLOps/Prompt_Engineering_Ops.md) | Prompt 即代码、版本化、A/B 测试、CI 门禁、DSPy 自动优化 |
-| [LLM 评估流水线](MLOps/Evaluation/LLM_Evaluation_Pipeline.md) | LLM-as-Judge、人审闭环、Eval-Driven Development、评估陷阱 |
-| [RAG 流水线运维](MLOps/Orchestration/RAG_Pipeline_Ops.md) | 四维可变性、Embedding 升级迁移、索引重建灰度 |
-| [LLM 成本与延迟 SLO](MLOps/Cost/LLM_Cost_Latency_SLO.md) | 三层缓存、智能路由、Token 预算熔断、FinOps |
-| [LLM 可观测性](MLOps/Observability/LLM_Observability.md) | 五层监控、Trace 分布式追踪、幻觉/毒性/PII 在线检测 |
+| ⭐ [LLMOps 2026](模型运维/LLMOps_2026.md) | 主线：传统 MLOps 失效的 7 大原因、三层架构、成熟度模型、事故复盘 |
+| [Prompt 工程化运维](模型运维/Prompt_Engineering_Ops.md) | Prompt 即代码、版本化、A/B 测试、CI 门禁、DSPy 自动优化 |
+| [LLM 评估流水线](模型运维/Evaluation/LLM_Evaluation_Pipeline.md) | LLM-as-Judge、人审闭环、Eval-Driven Development、评估陷阱 |
+| [RAG 流水线运维](模型运维/Orchestration/RAG_Pipeline_Ops.md) | 四维可变性、Embedding 升级迁移、索引重建灰度 |
+| [LLM 成本与延迟 SLO](模型运维/Cost/LLM_Cost_Latency_SLO.md) | 三层缓存、智能路由、Token 预算熔断、FinOps |
+| [LLM 可观测性](模型运维/Observability/LLM_Observability.md) | 五层监控、Trace 分布式追踪、幻觉/毒性/PII 在线检测 |
 
 > 加上横切关注点（数据版本/再训练/系统 SLO/成本/合规）与 16 个工具深度解析，MLOps 共 41 篇文档。
 
@@ -306,7 +420,7 @@ graph LR
 | 章节 | 核心内容 | 难度 |
 |------|----------|------|
 | **L0 基础层** | | |
-| **00** [AI 简介与历史](./AI入门/) | 通识导入：基础概念、技术全景、历史、工具、伦理、未来 | ⭐ |
+| **00** [AI 简介与历史](./入门/) | 通识导入：基础概念、技术全景、历史、工具、伦理、未来 | ⭐ |
 | **01** [基础理论](./数学基础/) | 数学与计算机：线代、概率、数据结构、分布式、AI 硬件 2026 | ⭐⭐ |
 | **L1 模型层** | | |
 | **02** [经典机器学习](./机器学习/) | ML 基础：监督/无监督学习、特征工程、XGBoost | ⭐⭐ |
@@ -317,19 +431,19 @@ graph LR
 | **L2 工程层** | | |
 | **07** [模型训练](./模型训练/) | 训练工程：损失函数、优化器、分布式训练 | ⭐⭐⭐ |
 | **08** [模型评估](./模型评估/) | 评估方法：指标体系、基准测试、A/B 测试 | ⭐⭐⭐ |
-| **09** [AI 测试](./AI测试/) | 测试工程：测试框架（Ragas/DeepEval/Promptfoo）、契约测试 | ⭐⭐⭐ |
+| **09** [AI 测试](./测试/) | 测试工程：测试框架（Ragas/DeepEval/Promptfoo）、契约测试 | ⭐⭐⭐ |
 | **10** [部署与推理](./部署推理/) | 推理优化：vLLM、量化、模型服务 | ⭐⭐⭐⭐ |
 | **L3 平台层** | | |
-| **11** [MLOps 流水线](./MLOps/) | **LLMOps 完整主线** + 传统 MLOps + 工具深度解析（41 篇） | ⭐⭐⭐⭐ |
+| **11** [MLOps 流水线](./模型运维/) | **LLMOps 完整主线** + 传统 MLOps + 工具深度解析（41 篇） | ⭐⭐⭐⭐ |
 | **12** [架构与基础设施](./架构基建/) | 架构设计 + 基础设施：四层模型、多租户、高可用、容量规划、边缘 AI | ⭐⭐⭐⭐ |
-| **13** [AI 运维](./AI运维/) | AIOps：事故响应、SRE 实践、混沌工程 | ⭐⭐⭐⭐ |
+| **13** [AI 运维](./运维/) | AIOps：事故响应、SRE 实践、混沌工程 | ⭐⭐⭐⭐ |
 | **L4 应用层** | | |
 | **14** [RAG 系统](./RAG系统/) | 检索增强：向量数据库、混合检索、Agentic RAG、多模态检索 | ⭐⭐⭐ |
-| **15** [Agent 生产部署](./Agent/) | Agent 工程：框架、平台、Harness、技能、工作流、评估、OpenClaw 生态 | ⭐⭐⭐⭐ |
-| ↳ [Agent Skills](./Agent/Agent_Skills/) | 技能体系：技能注册、组合、生态 | ⭐⭐⭐ |
-| ↳ [Agent Workflow](./Agent/Agent_Workflow/) | 工作流：LangGraph、错误处理、编排 | ⭐⭐⭐ |
-| ↳ [Agent 评估](./Agent/Agent_Evaluation/) | 评估体系：Benchmark、红队测试、Leaderboard | ⭐⭐⭐⭐ |
-| **16** [AI 编程](./AI编程/) | 编程工具与方法论：Cursor、Claude Code、Vibe Coding | ⭐⭐ |
+| **15** [Agent 生产部署](./智能体/) | Agent 工程：框架、平台、Harness、技能、工作流、评估、OpenClaw 生态 | ⭐⭐⭐⭐ |
+| ↳ [Agent Skills](./智能体/Agent_Skills/) | 技能体系：技能注册、组合、生态 | ⭐⭐⭐ |
+| ↳ [Agent Workflow](./智能体/Agent_Workflow/) | 工作流：LangGraph、错误处理、编排 | ⭐⭐⭐ |
+| ↳ [Agent 评估](./智能体/Agent_Evaluation/) | 评估体系：Benchmark、红队测试、Leaderboard | ⭐⭐⭐⭐ |
+| **16** [AI 编程](./编程/) | 编程工具与方法论：Cursor、Claude Code、Vibe Coding | ⭐⭐ |
 | **L5 治理层** | | |
 | **17** [伦理与安全](./伦理安全/) | AI 安全：价值对齐、红队测试、隐私保护、OWASP LLM | ⭐⭐⭐ |
 | **L6 资源层** | | |
@@ -339,8 +453,8 @@ graph LR
 | **21** [面试与岗位](./面试岗位/) | 职业发展：21 个 AI 岗位面试指南 | ⭐⭐ |
 | **22** [课题研究](./论文精读/Methodology/) | 系统性研究：问题定义/文献调研/分析论证/结论产出 | ⭐⭐⭐ |
 | **拓展** | | |
-| **90** [学习资源](./90_Learn/) | 课程映射：微软/Datawhale/HuggingFace 等课程 | ⭐⭐ |
-| **91** [笔记](./_meta/notes/) | 知识图谱：AI 全栈概念图 | ⭐⭐⭐ |
+| **90** [学习资源](./学习/) | 课程映射：微软/Datawhale/HuggingFace 等课程 | ⭐⭐ |
+| **91** [笔记](./治理/notes/) | 知识图谱：AI 全栈概念图 | ⭐⭐⭐ |
 
 </details>
 
@@ -354,7 +468,7 @@ graph LR
 
 - [中国大模型生态全景](./大模型/Chinese_LLM_Ecosystem/README.md) - DeepSeek/Qwen/GLM/Kimi/MiniMax/MiMo 六大厂商
 - [国际大模型生态全景](./大模型/Global_LLM_Ecosystem/README.md) - OpenAI/Google/Anthropic/Meta/Mistral 五大厂商
-- [LLMOps 2026](MLOps/LLMOps_2026.md) - 大模型时代的 MLOps 升级（⭐ 独家主线）
+- [LLMOps 2026](模型运维/LLMOps_2026.md) - 大模型时代的 MLOps 升级（⭐ 独家主线）
 - [模型问题排查手册](模型训练/Monitoring/Model_Troubleshooting_Guide.md) - 预训练/微调/推理全链路故障诊断
 - [LLM 基准测试全景](模型评估/Benchmarks/LLM_Benchmark_Suite_2026.md) - MMLU/SWE-bench/AIME/GPQA 全基准解读
 - [量化技术深度 2026](部署推理/Quantization/Quantization_Techniques_2026.md) - GPTQ/AWQ/GGUF/NF4/FP8
@@ -366,7 +480,7 @@ graph LR
 - [AI 硬件 2026](数学基础/AI_Hardware/AI_Hardware_2026.md) - H100/H200/B200, GPU 选型
 - [Scaling Laws 与训练动力学](模型训练/Optimization/Scaling_Laws_and_Training_Dynamics.md) - Chinchilla/Kaplan/涌现能力
 - [GRPO 与新对齐方法](模型训练/Alignment/GRPO_and_New_Alignment_Methods.md) - GRPO/DPO/RLHF/RLOO
-- [Agent 协议 2026](Agent/Agent_Foundations/Agent_Protocols_2026.md) - MCP/A2A/UCP
+- [Agent 协议 2026](智能体/Agent_Foundations/Agent_Protocols_2026.md) - MCP/A2A/UCP
 - [AI 基础设施](架构基建/Architecture_Overview/AI_Infrastructure_2026) - SGLang, AI Gateway
 
 </td>
@@ -416,10 +530,10 @@ AI Guru 知识库可以作为高质量语料导入到各种 AI 工具中：
 # 下载精简版（仅核心内容）
 git clone --depth 1 --filter=blob:none --sparse https://github.com/your-org/ai-guru-knowledge-base.git
 cd ai-guru-knowledge-base
-git sparse-checkout set AI入门 大模型 MLOps Agent
+git sparse-checkout set 入门 大模型 MLOps Agent
 
 # 打包上传
-zip -r ai-guru-core.zip AI入门 大模型 MLOps Agent
+zip -r ai-guru-core.zip 入门 大模型 MLOps Agent
 ```
 
 ### Obsidian / Notion
@@ -440,14 +554,14 @@ zip -r ai-guru-core.zip AI入门 大模型 MLOps Agent
 - ✅ **代码可执行**: 包含可运行的代码示例
 - ✅ **中英文对照**: 技术术语保留英文，便于理解原始概念
 - ✅ **Wiki 链接**: 6,900+ 内部 wikilink，形成知识图谱
-- ✅ **概念词典**: 114 篇 _concepts/ 概念页 + 28 篇 _synthesis/ 跨域合成页
+- ✅ **概念词典**: 114 篇 概念/ 概念页 + 28 篇 治理/ 跨域合成页
 - ✅ **版本控制**: Git 历史记录，可追溯更新
 
 **建议的 Agent 使用方式**:
 1. 将整个仓库根目录作为知识库导入
 2. 使用文件路径作为上下文引用（如 `大模型/LLM_Architectures/LLM_Architectures.md`）
 3. 结合章节 README 快速定位内容
-4. 利用 _concepts/ 做概念查询，_synthesis/ 做跨域关联
+4. 利用 概念/ 做概念查询，治理/ 做跨域关联
 
 ---
 
@@ -468,7 +582,7 @@ npm run dev
 - 🌓 暗黑/亮色模式
 - 📱 响应式设计
 
-[查看前端详情 →](./Web/README.md)
+[查看前端详情 →](./前端应用/README.md)
 
 ---
 
@@ -541,7 +655,7 @@ git push origin feature/your-feature
 - [[README_for_dummy]] — 入门版 README
 - [[index]] — 知识库索引
 - [[hot.md]] — 热门页面
-- [[_meta/plan/README]] — 项目规划与评估报告
-- [[MLOps/Boundary_with_16.md]] — 10 与 16 边界声明
-- [[_synthesis/README]] — 跨域综合文档索引
-- [[AI入门/AI_Fundamentals.md]] — 知识库入门索引
+- [[治理/plan/README]] — 项目规划与评估报告
+- [[模型运维/Boundary_with_16.md]] — 10 与 16 边界声明
+- [[治理/README]] — 跨域综合文档索引
+- [[入门/AI_Fundamentals.md]] — 知识库入门索引

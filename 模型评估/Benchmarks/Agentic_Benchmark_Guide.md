@@ -14,7 +14,7 @@ sources: []
 ---
 
 > [!warning] 生产安全提示 · Production Safety
-> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # Agentic Benchmarks — AI Agent 评测全景指南
 
@@ -25,12 +25,12 @@ sources: []
 ## 相关阅读
 
 - [LLM Benchmark Suite 2026](./LLM_Benchmark_Suite_2026.md) — 通用 LLM 评测基准全景
-- [Agent 生产化部署](../../Agent/README.md) — Agent 从评测到生产的完整路径
+- [Agent 生产化部署](../../智能体/README.md) — Agent 从评测到生产的完整路径
 - [全球 LLM 生态总览](../../大模型/Global_LLM_Ecosystem/README.md) — 各模型家族与能力对比
 
 ---
 
-- [[_synthesis/benchmark-evaluation|评测基准 × 评测方法论：从分数到可信评估]]
+- [[治理/benchmark-evaluation|评测基准 × 评测方法论：从分数到可信评估]]
 ## 一、Agent 评测概述
 
 ### 1.1 为什么标准 Benchmark 对 Agent 失效
@@ -1276,7 +1276,7 @@ Agent 评测 Checklist:
 from inspect_ai import Task, task
 from inspect_ai.dataset import json_dataset
 from inspect_ai.scorer import model_graded_fact
-from inspect_ai.solver import chain_of_thought, generate, use_tools
+from inspect_ai.solver import chain_of_thought, generate, use工具
 from inspect_ai.tool import bash, python
 
 @task

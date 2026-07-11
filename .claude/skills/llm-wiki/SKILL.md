@@ -136,8 +136,8 @@ Chronological append-only record tracking every operation. Each entry is parseab
 - [2024-03-15T10:30:00Z] INGEST source="papers/attention.pdf" pages_updated=12 pages_created=3
 - [2024-03-15T11:00:00Z] QUERY query="How do transformers handle long sequences?" result_pages=4
 - [2024-03-16T09:00:00Z] LINT issues_found=2 orphans=1 contradictions=1
-- [2024-03-17T10:00:00Z] ARCHIVE reason="rebuild" pages=87 destination="_archives/..."
-- [2024-03-17T10:05:00Z] REBUILD archived_to="_archives/..." previous_pages=87
+- [2024-03-17T10:00:00Z] ARCHIVE reason="rebuild" pages=87 destination="归档/..."
+- [2024-03-17T10:05:00Z] REBUILD archived_to="归档/..." previous_pages=87
 ```
 
 ### `.manifest.json`
@@ -507,7 +507,7 @@ The wiki supports three ingest modes:
 | Mode | When to use | What happens |
 |---|---|---|
 | **Append** | Small delta, incremental updates | Compute delta via manifest, ingest only new/modified sources |
-| **Rebuild** | Major drift, fresh start needed | Archive current wiki to `_archives/`, clear, reprocess all sources |
+| **Rebuild** | Major drift, fresh start needed | Archive current wiki to `归档/`, clear, reprocess all sources |
 | **Restore** | Need to go back | Bring back a previous archive |
 
 Use `wiki-status` to see the delta and get a recommendation. Use `wiki-rebuild` for archive/rebuild/restore operations.

@@ -11,7 +11,7 @@ sources: []
 ---
 
 > [!warning] 生产安全提示 · Production Safety
-> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 
 # 昇腾 NPU LLM 推理部署指南
@@ -188,9 +188,9 @@ spec:
 
 ## Related
 
-- [[_concepts/ascend-npu|Ascend NPU]]
-- [[_concepts/cann|CANN]]
-- [[_concepts/mindie|MindIE]]
-- [[_concepts/hami|HAMi]]
+- [[概念/ascend-npu|Ascend NPU]]
+- [[概念/cann|CANN]]
+- [[概念/mindie|MindIE]]
+- [[概念/hami|HAMi]]
 - [[部署推理/Hardware/Chinese_AI_Chip_Inference_Matrix|国产芯片推理矩阵]]
 - [[数学基础/AI_Hardware/Chinese_AI_Chips_Deep_Dive|国产 AI 芯片深度解析]]

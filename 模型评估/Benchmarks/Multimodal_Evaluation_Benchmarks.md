@@ -395,6 +395,6 @@ def multimodal_llm_judge(image, question, model_answer, ground_truth):
 
 - [[模型评估/Model_Evaluation]]
 - [[模型评估/Benchmarks/Long_Context_Evaluation]]
-- [[_concepts/model-evaluation]]
+- [[概念/model-evaluation]]
 - [[大模型/Multimodal_Models/Native_Multimodal_Architectures]]
 - [[大模型/Multimodal_Models/Multimodal_Architectures_2026]]

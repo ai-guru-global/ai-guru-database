@@ -91,5 +91,5 @@ tier: supporting
 - [[_concepts/incident-response|Incident Response]]
 - [[_concepts/slo|SLO]]
 - [[_concepts/error-budget|Error Budget]]
-- [[AI运维/SRE_Reliability/AI_Incident_Response_Playbook|AI 事故响应 Playbook]]
-- [[AI运维/SRE_Reliability/SRE_for_AI_Systems|SRE for AI Systems]]
+- [[运维/SRE_Reliability/AI_Incident_Response_Playbook|AI 事故响应 Playbook]]
+- [[运维/SRE_Reliability/SRE_for_AI_Systems|SRE for AI Systems]]

@@ -94,5 +94,5 @@ AI 安全有两个经典问题：
 - [[伦理安全/Safety_Evaluation_Framework]]
 - [[伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming]]
 - [[模型评估/Model_Evaluation]]
-- [[AI测试/Testing_Frameworks/DeepEval_Deep_Dive]]
+- [[测试/Testing_Frameworks/DeepEval_Deep_Dive]]
 - [[_synthesis/ai-ethics-future]]

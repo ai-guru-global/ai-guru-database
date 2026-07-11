@@ -90,7 +90,7 @@ tier: supporting
 | 文档 | 内容 | 适用角色 |
 |------|------|----------|
 | [Agentic Coding Tools Overview](Agent/Agentic_Coding_Tools/Agentic_Coding_Tools_Overview.md) | AI Agent 全景图 (20+ 工具汇总) | 入门、选型 |
-| [Claude Code Deep Dive](AI编程/Tools/Claude_Code_Deep_Dive.md) | Anthropic 官方 Agent 编程 CLI | 开发者、评估师 |
+| [Claude Code Deep Dive](编程/Tools/Claude_Code_Deep_Dive.md) | Anthropic 官方 Agent 编程 CLI | 开发者、评估师 |
 | [OpenCode Deep Dive](Agent/Agentic_Coding_Tools/OpenCode_Deep_Dive.md) | 自主执行式 AI 编程 Agent | 开发者、评估师 |
 | [Windsurf / Cursor / Devin](Agent/Agentic_Coding_Tools/Windsurf_Cursor_Devin_Dive.md) | CLI 工具全景对比 | 选型参考 |
 | [International Agentic Tools](Agent/Agentic_Coding_Tools/International_Agentic_Tools.md) | 国际工具 (Aider/Continue/CodeRabbit/Cody) | 开发者、选型 |
@@ -196,10 +196,10 @@ L4: 持久化知识 → SQL/NoSQL
 ## 关联目录
 
 - [Agent_Evaluation](./Agent_Evaluation/) -- Agent 评估体系（Harness 评估视角、基准测试、评分框架）
-- [AI编程](../AI编程/) -- AI 编程方法论（Vibe Coding、Hermes Agent）
+- [AI编程](../编程/) -- AI 编程方法论（Vibe Coding、Hermes Agent）
 - [OpenClaw_Ecosystem](./OpenClaw_Ecosystem/) -- OpenClaw 生态（CoPaw、QClaw）
 - [RAG系统](../RAG系统/) -- RAG 系统专题
-- [AI运维](../AI运维/) -- AI 系统运维
+- [AI运维](../运维/) -- AI 系统运维
 - [部署推理](../部署推理/) -- 推理引擎（vLLM, SGLang, Groq）
 - [LLM 推理引擎选型指南](部署推理/Inference_Engines/LLM_Inference_Engine_Selection_Guide.md) -- Agent 后端推理引擎选型
 

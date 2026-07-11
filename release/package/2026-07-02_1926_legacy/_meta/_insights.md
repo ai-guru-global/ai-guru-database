@@ -51,9 +51,9 @@ updated: 2026-06-05
 
 ## Surprising Connections (top 5)
 
-- [[AI入门/AI_Ethics_Society]] → [[_concepts/ai-ethics]] — score 4
+- [[入门/AI_Ethics_Society]] → [[_concepts/ai-ethics]] — score 4
   - Reason: cross-layer (00_AI_Introduction ↔ concepts), peripheral→hub (4→10)
-- [[AI入门/AI_Glossary]] → [[AI编程/Tools/OpenRouter/05-openrouter-api-reference]] — score 4
+- [[入门/AI_Glossary]] → [[编程/Tools/OpenRouter/05-openrouter-api-reference]] — score 4
   - Reason: cross-layer (00_AI_Introduction ↔ 17_AI_Coding), peripheral→hub (2→41)
 - [[机器学习/Bayesian_Methods/Bayesian_Methods_Deep_Dive]] → [[_concepts/model-training]] — score 4
   - Reason: cross-layer (02_Machine_Learning ↔ concepts), peripheral→hub (4→18)

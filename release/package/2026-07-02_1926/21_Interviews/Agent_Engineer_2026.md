@@ -611,7 +611,7 @@ class ReActAgent:
 - [[Agent/README|Agent 生产 (Agent Production)]]
 - [[Agent/Agent_Production_Deployment_Runbook|Agent 生产部署 Runbook]]
 - [[Agent/Agent_Overview|Agent 技术概览]]
-- [[AI测试/Agent_Evaluation_Deep_Dive|Agent 评估深度解析]]
+- [[测试/Agent_Evaluation_Deep_Dive|Agent 评估深度解析]]
 - [[大模型/LLM_Production_Deployment_Runbook|LLM 生产部署 Runbook]]
 - [[强化学习/Multi_Agent_Systems|多智能体系统]]
 - [[MLOps/LLM_Guardrails_and_Safety_Ops_2026|LLM 护栏与安全运维]]

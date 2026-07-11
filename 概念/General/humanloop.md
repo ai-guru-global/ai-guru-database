@@ -1,0 +1,140 @@
+---
+title: "Humanloop (LLM Prompt 工程与评估平台)"
+category: -concepts
+tags: ["prompt-engineering", "evaluation", "human-feedback", "versioning", "llm-ops"]
+relationships:
+  - target: "概念/langsmith"
+    type: related_to
+  - target: "概念/promptlayer"
+    type: related_to
+  - target: "概念/promptfoo"
+    type: related_to
+sources:
+  - 架构基建/AI_Stack_Deep_Dive.md
+summary: "面向企业的 LLM Prompt 工程与评估平台，提供 Prompt 版本管理、A/B 测试、人类反馈收集和自动化评估的全流程工具。"
+provenance:
+  extracted: 0.55
+  inferred: 0.35
+  ambiguous: 0.10
+base_confidence: 0.78
+lifecycle: reviewed
+tier: supporting
+---
+
+# Humanloop
+
+[Humanloop](https://humanloop.com/) 是一个面向企业的 **LLM Prompt 工程与评估平台**，提供 Prompt 版本管理、A/B 测试、人类反馈收集和自动化评估的全流程工具。它解决的核心问题是：**Prompt 迭代是 AI 应用开发中最关键也最缺乏工具支持的环节**——Humanloop 将 Prompt 工程从"手工作坊"变成"工业化流水线"。
+
+## 核心特性
+
+### 1. Prompt 版本管理
+
+```python
+from humanloop import Humanloop
+
+hl = Humanloop(api_key="your-key")
+
+# 创建 Prompt 模板（版本化）
+prompt = hl.prompts.upsert(
+    path="my-app/summarize",
+    template="Summarize the following {{document_type}}:\n\n{{text}}",
+    model="gpt-4",
+    temperature=0.3,
+    version_message="v1: Initial version"
+)
+
+# 更新 Prompt（自动创建新版本）
+prompt_v2 = hl.prompts.upsert(
+    path="my-app/summarize",
+    template="Please provide a concise summary of this {{document_type}}:\n\n{{text}}",
+    model="gpt-4-turbo",
+    temperature=0.2,
+    version_message="v2: More concise instructions"
+)
+```
+
+### 2. A/B 测试
+
+```python
+# 自动 A/B 测试不同 Prompt 版本
+# Humanloop 自动分配流量:
+# - 50% → v1 (旧 Prompt)
+# - 50% → v2 (新 Prompt)
+
+# 收集每个版本的:
+# - 用户反馈 (👍👎)
+# - 自动评估分数
+# - 成本/延迟指标
+# - 最终决定哪个版本胜出
+```
+
+### 3. 人类反馈收集
+
+```python
+# 在应用中嵌入反馈按钮
+# 用户 👍👎 → 自动收集到 Humanloop
+
+# SDK 记录反馈
+hl.feedback.submit(
+    datapoint_id="dp-123",
+    value=1,  # 👍
+    comment="Great summary!",
+    annotator="user-456"
+)
+```
+
+### 4. 评估 Pipeline
+
+```python
+# 定义评估标准
+evaluator = hl.evaluators.upsert(
+    path="my-app/relevance-eval",
+    evaluator_type="llm-judge",
+    prompt="Rate the relevance of the response (1-5):\nQuestion: {{input}}\nResponse: {{output}}",
+)
+
+# 运行评估
+results = hl.evaluate(
+    flow_path="my-app/summarize",
+    dataset_path="my-app/test-set",
+    evaluators=["my-app/relevance-eval"]
+)
+```
+
+## 与 Promptlayer 对比
+
+| 维度 | Humanloop | Promptlayer |
+|------|-----------|-------------|
+| **定位** | 企业全流程 | Prompt 管理 |
+| **版本管理** | ✅ (Git-like) | ✅ |
+| **A/B 测试** | ✅ (原生) | 有限 |
+| **人类反馈** | ✅ (核心) | ❌ |
+| **自动评估** | ✅ | 部分 |
+| **团队协作** | ✅ | 部分 |
+| **定价** | 企业级 | 按量付费 |
+
+## 典型应用场景
+
+- **Prompt 迭代**: 系统化地改进 Prompt 质量
+- **质量保障**: 在 Prompt 变更前评估其效果
+- **团队协作**: 多人协作优化同一 Prompt
+- **回归测试**: 确保 Prompt 改动不引入退化
+- **合规审计**: 记录 Prompt 的变更历史
+
+## 安装
+
+```bash
+pip install humanloop
+```
+
+## 参考资源
+
+- [Humanloop 官网](https://humanloop.com/)
+- [Humanloop 文档](https://docs.humanloop.com/)
+- [Humanloop GitHub](https://github.com/humanloop)
+
+## 相关概念
+
+- [[概念/langsmith]] — LangSmith LLM 可观测性
+- [[概念/promptlayer]] — Promptlayer Prompt 管理平台
+- [[概念/promptfoo]] — Promptfoo Prompt 测试框架

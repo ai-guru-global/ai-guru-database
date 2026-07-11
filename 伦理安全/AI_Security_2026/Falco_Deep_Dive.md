@@ -10,7 +10,7 @@ sources: []
 ---
 
 > [!warning] 生产安全提示 · Production Safety
-> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 
 # Falco 深度解析：容器运行时安全检测
@@ -151,7 +151,7 @@ falcosidekick:
 
 ## Related
 
-- [[_concepts/falco]] — Falco 概念卡片
-- [[_concepts/opa]] — OPA
-- [[_concepts/kyverno]] — Kyverno
-- [[_concepts/kubernetes]] — Kubernetes
+- [[概念/falco]] — Falco 概念卡片
+- [[概念/opa]] — OPA
+- [[概念/kyverno]] — Kyverno
+- [[概念/kubernetes]] — Kubernetes

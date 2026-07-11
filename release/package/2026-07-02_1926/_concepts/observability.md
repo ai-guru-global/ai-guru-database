@@ -177,4 +177,4 @@ safety_violation_rate: < 0.1%     # 安全违规 ≤ 0.1%
 
 ---
 
-**参见**：[[Prometheus_Grafana_Deep_Dive]] · [[MLOps/Observability/LLM_Observability]] · [[_concepts/prometheus]] · [[_concepts/grafana]] · [[AI运维/README|AI运维]] · [[_meta/cheatsheets/cheatsheet-llm-inference]]
+**参见**：[[Prometheus_Grafana_Deep_Dive]] · [[MLOps/Observability/LLM_Observability]] · [[_concepts/prometheus]] · [[_concepts/grafana]] · [[运维/README|AI运维]] · [[_meta/cheatsheets/cheatsheet-llm-inference]]

@@ -638,6 +638,14 @@ result.save("controlnet_output.png")
 - [The Annotated Diffusion Model](https://huggingface.co/blog/annotated-diffusion)
 - [Lilian Weng's Blog - Diffusion Models](https://lilianweng.github.io/posts/2021-07-11-diffusion-models/)
 
+## Related
+
+- [[../../大模型/Multimodal_Models/Multimodal_Architectures_2026|多模态架构]] — 视觉语言模型的架构基础
+- [[../../深度学习/Generative_Models/Diffusion_Models_Deep_Dive|Diffusion 深度页]] — 扩散模型技术细节
+- [[../../深度学习/Generative_Models/GAN_Deep_Dive|GAN 深度页]] — 对抗生成网络详解
+- [[../../概念/Vision/generative-vision-models|生成式视觉模型概念卡]] — 概念定义与分类
+- [[../../RAG系统/RAG_Production|视觉 RAG]] — 图像生成与检索增强结合
+
 ---
 
 *Last updated: 2026-02-10*

@@ -542,7 +542,7 @@ stacking.fit(X_train, y_train)
 ### 7.3 纵向进阶
 - [**神经网络**](../../深度学习/Neural_Network_Core/Neural_Network_Core.md): 逻辑回归是单层神经网络
 - [**集成深度学习**](../../深度学习/): GBDT 特征 + 神经网络融合
-- [**AutoML**](../../MLOps/MLOps_Pipeline.md): 自动特征工程、超参数优化
+- [**AutoML**](../../模型运维/MLOps_Pipeline.md): 自动特征工程、超参数优化
 
 ## 8. 面试高频问题 (Interview FAQs)
 

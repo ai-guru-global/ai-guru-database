@@ -116,7 +116,7 @@ flowchart LR
 - [[大模型/Reasoning_Models/o1_Class_Reasoning_Models]] — 隐式推理与测试时计算
 - [[大模型/Reasoning_Models/DeepSeek_R1_Technical_Analysis]] — 强化学习如何提升推理
 - [[大模型/Reasoning_Models/Process_Reward_Models]] — 步骤级奖励与逻辑验证
-- [[_concepts/formal-logic]] — 符号逻辑基础
+- [[概念/formal-logic]] — 符号逻辑基础
 
 ---
 

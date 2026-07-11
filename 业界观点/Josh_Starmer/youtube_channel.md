@@ -46,5 +46,5 @@ aliases:
 
 1. 统计学基础 -> 2. 机器学习 -> 3. 深度学习
 
-> **关联**: -> [[数学基础/README|数学基础]] | [[机器学习/README|机器学习]] | [[深度学习/README|深度学习]] | [[90_Learn/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[数学基础/README|数学基础]] | [[机器学习/README|机器学习]] | [[深度学习/README|深度学习]] | [[学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
 

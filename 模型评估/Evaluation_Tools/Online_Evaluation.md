@@ -1299,9 +1299,9 @@ if __name__ == "__main__":
 - [自动化评估](../Evaluation_Automation_2026.md) — CI/CD 中的自动化评估流程
 
 ### 进阶方向
-- [MLOps 流水线](../../MLOps/MLOps_Pipeline.md) — 模型发布与 CI/CD 集成
-- [AI 测试框架](../../AI测试/README.md) — 线上测试与质量保证
-- [AI Ops 监控](../../AI运维/AI_Ops_2026.md) — 生产环境模型性能监控与告警
+- [MLOps 流水线](../../模型运维/MLOps_Pipeline.md) — 模型发布与 CI/CD 集成
+- [AI 测试框架](../../测试/README.md) — 线上测试与质量保证
+- [AI Ops 监控](../../运维/AI_Ops_2026.md) — 生产环境模型性能监控与告警
 
 ---
 
@@ -1336,8 +1336,8 @@ if __name__ == "__main__":
 
 - [[模型评估/Model_Evaluation.md|Model_Evaluation]]
 - [[模型评估/README.md|模型评估 README]]
-- [[Agent/Agent_Evaluation/Assessment/Evaluation_Workflow.md|Evaluation_Workflow]]
-- [[Agent/Agent_Evaluation/Cloud_Agent_Evaluation/README.md|Cloud_Agent_Evaluation README]]
-- [[Agent/Agent_Evaluation/Cloud_Agent_Evaluation_System_2026.md|Cloud_Agent_Evaluation_System_2026]]
+- [[智能体/Agent_Evaluation/Assessment/Evaluation_Workflow.md|Evaluation_Workflow]]
+- [[智能体/Agent_Evaluation/Cloud_Agent_Evaluation/README.md|Cloud_Agent_Evaluation README]]
+- [[智能体/Agent_Evaluation/Cloud_Agent_Evaluation_System_2026.md|Cloud_Agent_Evaluation_System_2026]]
 
-- [[_synthesis/benchmark-evaluation|评测基准 × 评测方法论：从分数到可信评估]]
+- [[治理/benchmark-evaluation|评测基准 × 评测方法论：从分数到可信评估]]

@@ -15,7 +15,7 @@ sources: []
 ---
 
 > [!warning] 生产安全提示 · Production Safety
-> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # 量化精度深度解析 (Quantization Precision Deep Dive)
 
@@ -541,10 +541,10 @@ Step 3: 人工抽样验证（1-2 小时）
 ### 相关文档
 
 - [[Quantization_Techniques_2026]] — 量化技术全景（方法实现细节）
-- [[_concepts/model-precision]] — 模型精度概念卡片（概览）
-- [[_concepts/mixed-precision]] — 混合精度训练与推理
-- [[_concepts/model-compression]] — 模型压缩（量化/剪枝/蒸馏）
-- [[_concepts/kv-cache]] — KV Cache 优化
+- [[概念/model-precision]] — 模型精度概念卡片（概览）
+- [[概念/mixed-precision]] — 混合精度训练与推理
+- [[概念/model-compression]] — 模型压缩（量化/剪枝/蒸馏）
+- [[概念/kv-cache]] — KV Cache 优化
 - [[vLLM_Deep_Dive]] — vLLM 中的量化配置
 - [[llama_cpp_Deep_Dive]] — llama.cpp GGUF 量化详解
 

@@ -846,9 +846,9 @@ flowchart TB
 
 ## Related
 
-- [[AI测试/AI_Testing_for_dummy]] — AI 测试 - 小白版 (共享: ai-testing, evaluation, prompt-testing, testing)
-- [[AI测试/Testing_Frameworks/Java_AI_Testing]] — Java AI 测试实践 (共享: ai-testing, evaluation, prompt-testing, testing)
-- [[AI测试/README]] — AI 测试与评估 (AI Testing) (共享: ai-testing, evaluation, prompt-testing, testing)
-- [[AI测试/Testing_Frameworks/Promptfoo_Deep_Dive.md|Promptfoo_Deep_Dive]]
-- [[AI测试/Testing_Frameworks/DeepEval_Deep_Dive.md|DeepEval_Deep_Dive]]
-- [[AI测试/AI_Test_Framework_2026.md|AI_Test_Framework_2026]]
+- [[测试/AI_Testing_for_dummy]] — AI 测试 - 小白版 (共享: ai-testing, evaluation, prompt-testing, testing)
+- [[测试/Testing_Frameworks/Java_AI_Testing]] — Java AI 测试实践 (共享: ai-testing, evaluation, prompt-testing, testing)
+- [[测试/README]] — AI 测试与评估 (AI Testing) (共享: ai-testing, evaluation, prompt-testing, testing)
+- [[测试/Testing_Frameworks/Promptfoo_Deep_Dive.md|Promptfoo_Deep_Dive]]
+- [[测试/Testing_Frameworks/DeepEval_Deep_Dive.md|DeepEval_Deep_Dive]]
+- [[测试/AI_Test_Framework_2026.md|AI_Test_Framework_2026]]

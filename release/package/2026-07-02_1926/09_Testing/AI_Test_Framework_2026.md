@@ -1391,9 +1391,9 @@ quality_gates:
 
 ## Related
 
-- [[AI测试/AI-Testing-in-nutshell.md|AI-Testing-in-nutshell]]
-- [[AI测试/AI_Testing_for_dummy.md|AI_Testing_for_dummy]]
-- [[AI测试/Testing_Frameworks/Java_AI_Testing.md|Java_AI_Testing]]
-- [[AI测试/README.md|AI测试 README]]
+- [[测试/AI-Testing-in-nutshell.md|AI-Testing-in-nutshell]]
+- [[测试/AI_Testing_for_dummy.md|AI_Testing_for_dummy]]
+- [[测试/Testing_Frameworks/Java_AI_Testing.md|Java_AI_Testing]]
+- [[测试/README.md|AI测试 README]]
 - [[Agent/Agent_Evaluation/Testing_Methodologies/Testing_Framework.md|Testing_Framework]]
 - [[_synthesis/testing-agents|测试 × Agent: 非确定性系统的测试方法论冲突]]

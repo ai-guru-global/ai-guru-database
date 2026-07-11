@@ -15,7 +15,7 @@ sources: []
 ---
 
 > [!warning] 生产安全提示 · Production Safety
-> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # AI Stack 容器与运行时指南
 
@@ -160,4 +160,4 @@ podman run -d --name qwen3-8b \
 - [[架构基建/AI_Stack_Exclusive_Tools_Guide|AI Stack 专属运维工具指南]]
 - [[架构基建/Hardware_Compute/CDI_Deep_Dive|CDI: 容器设备接口标准]]
 - [[架构基建/AI_Stack_Deep_Dive|阿里云 AI Stack 软硬一体推理平台]]
-- [[_concepts/oci-runtime|OCI Runtime]]
+- [[概念/oci-runtime|OCI Runtime]]

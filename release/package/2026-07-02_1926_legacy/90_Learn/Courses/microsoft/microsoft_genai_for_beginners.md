@@ -52,7 +52,7 @@ aliases:
 | 课号 | 课程名称 | 本库建议配合阅读 | 页面链接 |
 |------|----------|------------------|----------|
 | 00 | 课程设置 | [[数学基础/AI_Development_Environment_Setup]] | [[数学基础/GenAI_L00_Course_Setup]] |
-| 01 | 生成式 AI 与大型语言模型简介 | [[AI入门/AI_Fundamentals]]、[[大模型/LLM_Architectures/LLM_Architectures]] | [[AI入门/GenAI_L01_Intro_to_GenAI_and_LLMs]] |
+| 01 | 生成式 AI 与大型语言模型简介 | [[入门/AI_Fundamentals]]、[[大模型/LLM_Architectures/LLM_Architectures]] | [[入门/GenAI_L01_Intro_to_GenAI_and_LLMs]] |
 | 02 | 探索与比较不同的 LLM | [[大模型/LLM_Architectures/LLM_Architectures]]、[[大模型/Global_LLM_Ecosystem/README]] | [[大模型/GenAI_L02_Exploring_and_Comparing_LLMs]] |
 | 03 | 负责任地使用生成式 AI | [[伦理安全/Ethics-in-nutshell]]、[[伦理安全/AI_Governance_Compliance_2026]] | [[伦理安全/GenAI_L03_Using_GenAI_Responsibly]] |
 

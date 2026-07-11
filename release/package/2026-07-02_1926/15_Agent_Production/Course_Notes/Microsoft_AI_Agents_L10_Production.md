@@ -183,5 +183,5 @@ offline eval → deploy → online monitor → 收集新失败案例
 - [[Agent/Course_Notes/Microsoft_AI_Agents_L11_Agentic_Protocols]] — 下一课：Agentic 协议
 - [[Agent/Course_Notes/Microsoft_AI_Agents_L06_Trustworthy_Agents]] — L06 可信 Agent（审计与 HITL）
 - [[MLOps/GenAI_L14_GenAI_Application_Lifecycle]] — GenAI 应用生命周期
-- [[AI运维/README]] — 本仓库 AI Ops 主题（如有）
+- [[运维/README]] — 本仓库 AI Ops 主题（如有）
 - [[90_Learn/courses/microsoft/microsoft_ai_agents_for_beginners]] — 课程总览

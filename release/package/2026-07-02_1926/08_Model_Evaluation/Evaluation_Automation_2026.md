@@ -1356,9 +1356,9 @@ flowchart TD
 - [模型评估基础](./Model_Evaluation.md) — 评估指标与方法论
 
 ### 进阶方向
-- [AI 测试框架](../AI测试/README.md) — 测试框架与评估工具链
+- [AI 测试框架](../测试/README.md) — 测试框架与评估工具链
 - [MLOps 流水线](../MLOps/MLOps_Pipeline.md) — CI/CD 集成与模型生命周期
-- [AI Ops 监控](../AI运维/AI_Ops_2026.md) — 生产环境模型监控与自动告警
+- [AI Ops 监控](../运维/AI_Ops_2026.md) — 生产环境模型监控与自动告警
 - [在线评估](./Evaluation_Tools/Online_Evaluation.md) — 上线后的真实效果评估
 
 ---

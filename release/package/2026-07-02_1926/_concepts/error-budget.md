@@ -42,4 +42,4 @@ sources: []
 
 - [[_concepts/slo|SLO]]
 - [[_concepts/sli|SLI]]
-- [[AI运维/SRE_Reliability/LLM_Inference_SLO_Guide|LLM 推理 SLO 实践指南]]
+- [[运维/SRE_Reliability/LLM_Inference_SLO_Guide|LLM 推理 SLO 实践指南]]

@@ -15,7 +15,7 @@ sources: []
 ---
 
 > [!warning] 生产安全提示 · Production Safety
-> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../_meta/Production_Safety_Policy.md)。
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # vLLM: 生产级 LLM 推理引擎
 
@@ -59,7 +59,7 @@ vLLM: 生产级 LLM 推理引擎
 
 | 特性 | 说明 |
 |------|------|
-| **[[_concepts/paged-attention|PagedAttention]]** | 虚拟显存管理，消除 KV Cache 碎片 |
+| **[[概念/paged-attention|PagedAttention]]** | 虚拟显存管理，消除 KV Cache 碎片 |
 | **Continuous Batching** | 动态批处理，最大化 GPU 利用率 |
 | **Chunked Prefill** | 大 prompt 分块，降低 TTFT 抖动 |
 | **Prefix Caching** | 自动缓存共享前缀，多轮/RAG 加速 |
@@ -586,4 +586,4 @@ Decode 节点:  高显存带宽，专注 token 生成
 - [[部署推理/Inference_Engines/TGI_Deep_Dive.md|TGI_Deep_Dive]]
 - [[部署推理/Inference_Engines/LMDeploy_Deep_Dive.md|LMDeploy_Deep_Dive]]
 - [[架构基建/Hardware_Compute/CDI_Deep_Dive.md|CDI 容器设备接口（GPU 容器接入）]]
-- [[_synthesis/chinese-chips-inference|国产 AI 芯片 × 推理引擎: 硬件约束下的推理软件栈适配]]
+- [[治理/chinese-chips-inference|国产 AI 芯片 × 推理引擎: 硬件约束下的推理软件栈适配]]

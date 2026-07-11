@@ -138,7 +138,7 @@ sources: []
 
 ## 下一步
 
-- 想学技术？→ 从 [90_Learn/README.md](../90_Learn/README_for_dummy.md) 开始
+- 想学技术？→ 从 [90_Learn/README.md](../学习/README_for_dummy.md) 开始
 - 想看论文？→ [论文精读/README_for_dummy.md](../论文精读/README_for_dummy.md)
 
 ---

@@ -1,0 +1,164 @@
+{
+  "history": [
+    {
+      "date": "2026-04-15",
+      "timestamp": "2026-04-15T14:06:37.303Z",
+      "avgScore": 65,
+      "dimensionScores": {
+        "core_concepts": 65
+      },
+      "modelName": "Kimi K2.5",
+      "model": "moonshot-v1-8k"
+    },
+    {
+      "date": "2026-04-15",
+      "timestamp": "2026-04-15T14:06:57.173Z",
+      "avgScore": 76.3,
+      "dimensionScores": {
+        "core_concepts": 76.3
+      },
+      "modelName": "Kimi K2.5",
+      "model": "moonshot-v1-8k"
+    },
+    {
+      "date": "2026-04-15",
+      "timestamp": "2026-04-15T14:15:51.078Z",
+      "avgScore": 78,
+      "dimensionScores": {
+        "core_concepts": 78
+      },
+      "modelName": "Kimi K2.5",
+      "model": "moonshot-v1-8k"
+    },
+    {
+      "date": "2026-04-15",
+      "timestamp": "2026-04-15T14:16:20.612Z",
+      "avgScore": 77.3,
+      "dimensionScores": {
+        "core_concepts": 77.3
+      },
+      "modelName": "Kimi K2.5",
+      "model": "moonshot-v1-8k"
+    },
+    {
+      "date": "2026-04-15",
+      "timestamp": "2026-04-15T14:21:55.116Z",
+      "avgScore": 76.5,
+      "dimensionScores": {
+        "core_concepts": 76.5
+      },
+      "modelName": "Kimi K2.5",
+      "model": "moonshot-v1-8k"
+    },
+    {
+      "date": "2026-04-15",
+      "timestamp": "2026-04-15T15:22:13.843Z",
+      "avgScore": 76.5,
+      "dimensionScores": {
+        "core_concepts": 76.5
+      },
+      "modelName": "Kimi K2.5",
+      "model": "moonshot-v1-8k"
+    },
+    {
+      "date": "2026-04-15",
+      "timestamp": "2026-04-15T16:05:44.766Z",
+      "avgScore": 65.8,
+      "dimensionScores": {
+        "core_concepts": 75.1
+      },
+      "modelName": "Kimi K2.5",
+      "model": "moonshot-v1-8k"
+    },
+    {
+      "date": "2026-04-15",
+      "timestamp": "2026-04-15T16:06:01.384Z",
+      "avgScore": 68.1,
+      "dimensionScores": {
+        "core_concepts": 77.9
+      },
+      "modelName": "Kimi K2.5",
+      "model": "moonshot-v1-8k"
+    },
+    {
+      "date": "2026-04-15",
+      "timestamp": "2026-04-15T16:25:22.808Z",
+      "avgScore": 66.4,
+      "dimensionScores": {
+        "core_concepts": 75.9
+      },
+      "modelName": "Kimi K2.5",
+      "model": "moonshot-v1-8k"
+    },
+    {
+      "date": "2026-04-15",
+      "timestamp": "2026-04-15T16:25:33.948Z",
+      "avgScore": 77.4,
+      "dimensionScores": {
+        "core_concepts": 77.4
+      },
+      "modelName": "Kimi K2.5",
+      "model": "moonshot-v1-8k"
+    },
+    {
+      "date": "2026-04-15",
+      "timestamp": "2026-04-15T16:25:37.580Z",
+      "avgScore": 78,
+      "dimensionScores": {
+        "core_concepts": 78
+      },
+      "modelName": "Kimi K2.5",
+      "model": "moonshot-v1-8k"
+    },
+    {
+      "date": "2026-04-15",
+      "timestamp": "2026-04-15T16:25:38.875Z",
+      "avgScore": 78.8,
+      "dimensionScores": {
+        "core_concepts": 78.8
+      },
+      "modelName": "Kimi K2.5",
+      "model": "moonshot-v1-8k"
+    },
+    {
+      "date": "2026-04-15",
+      "timestamp": "2026-04-15T16:25:40.161Z",
+      "avgScore": 75.8,
+      "dimensionScores": {
+        "core_concepts": 75.8
+      },
+      "modelName": "Kimi K2.5",
+      "model": "moonshot-v1-8k"
+    },
+    {
+      "date": "2026-04-15",
+      "timestamp": "2026-04-15T16:25:41.865Z",
+      "avgScore": 80.5,
+      "dimensionScores": {
+        "core_concepts": 80.5
+      },
+      "modelName": "Kimi K2.5",
+      "model": "moonshot-v1-8k"
+    },
+    {
+      "date": "2026-04-15",
+      "timestamp": "2026-04-15T16:25:45.887Z",
+      "avgScore": 78.8,
+      "dimensionScores": {
+        "core_concepts": 78.8
+      },
+      "modelName": "Kimi K2.5",
+      "model": "moonshot-v1-8k"
+    },
+    {
+      "date": "2026-04-15",
+      "timestamp": "2026-04-15T16:55:57.419Z",
+      "avgScore": 68.4,
+      "dimensionScores": {
+        "core_concepts": 78.1
+      },
+      "modelName": "Kimi K2.5",
+      "model": "moonshot-v1-8k"
+    }
+  ]
+}

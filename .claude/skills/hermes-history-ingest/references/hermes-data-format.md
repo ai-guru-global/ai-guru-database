@@ -89,7 +89,7 @@ sessions/
 
 ```json
 {
-  "type": "session_meta",
+  "type": "session治理",
   "id": "abc123",
   "cwd": "/home/ubuntu/projects/my-app",
   "model": "claude-sonnet-4-6",

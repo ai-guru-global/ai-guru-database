@@ -785,8 +785,8 @@ print(response["result"])
 - [[大模型/Prompt_Engineering/GenAI_L04_Prompt_Engineering_Fundamentals]] — 提示工程基础
 - [[大模型/Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs]] — LLM 微调技术
 - [[RAG系统/GenAI_L15_RAG_and_Vector_Databases]] — RAG 与向量数据库
-- [[Agent/GenAI_L17_AI_Agents]] — AI Agent 概述
-- [[90_Learn/courses/microsoft/microsoft_genai_for_beginners]] — 生成式 AI 入门课程
+- [[智能体/GenAI_L17_AI_Agents]] — AI Agent 概述
+- [[学习/courses/microsoft/microsoft_genai_for_beginners]] — 生成式 AI 入门课程
 
 ---
 

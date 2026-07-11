@@ -388,8 +388,8 @@ optimized = dspy.BootstrapFewShot().compile(RAGModule(), trainset=trainset)
 
 本文讲 Prompt 工程化的**方法论**。具体 Prompt 管理工具的用法：
 
-- [[AI运维/PromptLayer_Deep_Dive]] — PromptLayer：Prompt 版本管理与追踪
-- [[AI测试/Testing_Frameworks/Promptfoo_Deep_Dive]] — Promptfoo：Prompt 对比与红队
+- [[运维/PromptLayer_Deep_Dive]] — PromptLayer：Prompt 版本管理与追踪
+- [[测试/Testing_Frameworks/Promptfoo_Deep_Dive]] — Promptfoo：Prompt 对比与红队
 
 ---
 
@@ -404,7 +404,7 @@ optimized = dspy.BootstrapFewShot().compile(RAGModule(), trainset=trainset)
 ### 跨章
 - [[大模型/Prompt_Engineering/README]] — Prompt 写作技巧（本文是工程化，那章是艺术化）
 - [[大模型/Prompt_Engineering/Prompt_Engineering_for_dummy]] — Prompt 入门
-- [[AI测试/Testing_Frameworks/Promptfoo_Deep_Dive]] — Promptfoo 工具详解
+- [[测试/Testing_Frameworks/Promptfoo_Deep_Dive]] — Promptfoo 工具详解
 - [[伦理安全/AI_Security_2026/README]] — Prompt 安全与红队
 - [[_concepts/mlops]] — MLOps 概念页
 

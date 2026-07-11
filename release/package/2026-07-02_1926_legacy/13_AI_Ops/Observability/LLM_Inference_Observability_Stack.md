@@ -147,4 +147,4 @@ groups:
 - [[_concepts/grafana|Grafana]]
 - [[_concepts/opentelemetry|OpenTelemetry]]
 - [[_concepts/jaeger|Jaeger]]
-- [[AI运维/SRE_Reliability/LLM_Inference_Slow_Unavailable_Runbook|LLM 推理延迟/不可用 Runbook]]
+- [[运维/SRE_Reliability/LLM_Inference_Slow_Unavailable_Runbook|LLM 推理延迟/不可用 Runbook]]

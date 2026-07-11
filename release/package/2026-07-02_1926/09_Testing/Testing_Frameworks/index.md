@@ -13,12 +13,12 @@ This page indexes the contents of `AI测试/Testing_Frameworks`.
 ## Files
 
 - Deepeval Deep Dive 2
-- [[AI测试/Testing_Frameworks/DeepEval_Deep_Dive|Deepeval Deep Dive]]
+- [[测试/Testing_Frameworks/DeepEval_Deep_Dive|Deepeval Deep Dive]]
 - Java AI Testing 2
-- [[AI测试/Testing_Frameworks/Java_AI_Testing|Java AI Testing]]
+- [[测试/Testing_Frameworks/Java_AI_Testing|Java AI Testing]]
 - LLM Safety Testing Deep Dive 2
-- [[AI测试/Testing_Frameworks/LLM_Safety_Testing_Deep_Dive|LLM Safety Testing Deep Dive]]
+- [[测试/Testing_Frameworks/LLM_Safety_Testing_Deep_Dive|LLM Safety Testing Deep Dive]]
 - Promptfoo Deep Dive 2
-- [[AI测试/Testing_Frameworks/Promptfoo_Deep_Dive|Promptfoo Deep Dive]]
+- [[测试/Testing_Frameworks/Promptfoo_Deep_Dive|Promptfoo Deep Dive]]
 - Regression Testing LLM Deep Dive 2
-- [[AI测试/Testing_Frameworks/Regression_Testing_LLM_Deep_Dive|Regression Testing LLM Deep Dive]]
+- [[测试/Testing_Frameworks/Regression_Testing_LLM_Deep_Dive|Regression Testing LLM Deep Dive]]

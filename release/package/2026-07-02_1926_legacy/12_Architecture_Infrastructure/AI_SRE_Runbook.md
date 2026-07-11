@@ -623,7 +623,7 @@ AI 服务的高维度标签（如 user_id、model_version、gpu_node）容易导
 
 ## Related
 
-- [[AI运维/README|AI Ops：运维监控与自动化]]
+- [[运维/README|AI Ops：运维监控与自动化]]
 - [[MLOps/README|MLOps Pipeline：模型生命周期与 CI/CD]]
 - [[部署推理/README|部署与推理：推理优化基础]]
 - [[架构基建/Architecture_Overview/Capacity_Planning_2026|AI 系统容量规划指南]]

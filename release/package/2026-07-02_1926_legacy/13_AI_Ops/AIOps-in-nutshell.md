@@ -212,10 +212,10 @@ flowchart LR
 
 | 主题 | 文档 |
 |------|------|
-| 完整架构 | [AI_Ops_2026.md](AI运维/AI_Ops_2026.md) |
-| 入门指南 | [AI_Ops_for_dummy.md](AI运维/AI_Ops_for_dummy.md) |
+| 完整架构 | [AI_Ops_2026.md](运维/AI_Ops_2026.md) |
+| 入门指南 | [AI_Ops_for_dummy.md](运维/AI_Ops_for_dummy.md) |
 | SRE 实践 | [SRE_for_AI_Systems.md](./SRE_Reliability/SRE_for_AI_Systems.md) |
-| 事故响应 | [AI_Incident_Response_Playbook.md](AI运维/SRE_Reliability/AI_Incident_Response_Playbook) |
+| 事故响应 | [AI_Incident_Response_Playbook.md](运维/SRE_Reliability/AI_Incident_Response_Playbook) |
 | 可观测性 | [AI_Observability_Guide.md](MLOps/Observability/AI_Observability_Guide.md) |
 
 ---
@@ -224,10 +224,10 @@ flowchart LR
 
 ## Related
 
-- [[AI运维/SRE_Reliability/AI_Incident_Response_Playbook]] — AI 系统事故响应手册 (共享: ai-ops, incident-response, monitoring, observability)
-- [[AI运维/AI_Ops_for_dummy]] — AI Ops 入门指南 (for Dummies) (共享: ai-ops, incident-response, monitoring, observability)
-- [[AI运维/README]] — AI 运维与可观测性 (AI Ops) (共享: ai-ops, incident-response, monitoring, observability)
-- [[AI运维/README_for_dummy]] — 16 AI Ops — 小白版 📡 (共享: ai-ops, incident-response, monitoring, observability)
+- [[运维/SRE_Reliability/AI_Incident_Response_Playbook]] — AI 系统事故响应手册 (共享: ai-ops, incident-response, monitoring, observability)
+- [[运维/AI_Ops_for_dummy]] — AI Ops 入门指南 (for Dummies) (共享: ai-ops, incident-response, monitoring, observability)
+- [[运维/README]] — AI 运维与可观测性 (AI Ops) (共享: ai-ops, incident-response, monitoring, observability)
+- [[运维/README_for_dummy]] — 16 AI Ops — 小白版 📡 (共享: ai-ops, incident-response, monitoring, observability)
 - [[MLOps/Observability/Phoenix_Deep_Dive.md|Phoenix_Deep_Dive]]
 - [[MLOps/Experiment_Tracking/Feast_Deep_Dive.md|Feast_Deep_Dive]]
 - [[MLOps/Orchestration/LakeFS_Deep_Dive.md|LakeFS_Deep_Dive]]

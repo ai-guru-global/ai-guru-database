@@ -517,8 +517,8 @@ response = client.chat(
 - [[大模型/Chinese_LLM_Ecosystem/Tencent_Hunyuan_Deep_Dive]] — 腾讯混元深度解析
 - [[大模型/Chinese_LLM_Ecosystem/Kimi_Moonshot_Deep_Dive]] — Kimi 月之暗面
 - [[大模型/Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]] — 国产模型对比矩阵
-- [[Agent/GenAI_L17_AI_Agents]] — AI Agent 概述
-- [[90_Learn/courses/microsoft/microsoft_genai_for_beginners]] — 生成式 AI 入门课程
+- [[智能体/GenAI_L17_AI_Agents]] — AI Agent 概述
+- [[学习/courses/microsoft/microsoft_genai_for_beginners]] — 生成式 AI 入门课程
 
 ---
 

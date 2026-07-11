@@ -213,3 +213,11 @@ A: 当然有用！对于表格数据（电商交易数据、银行风控数据�
 
 ---
 *本文是 [Supervised_Learning.md](./Supervised_Learning.md) 的简化版，适合零基础读者。*
+
+## Related
+
+- [[../../数学基础/Probability_Statistics/Probability_Statistics_for_dummy|概率统计]] — 监督学习的数学基础
+- [[../../深度学习/DL_Fundamentals|深度学习基础]] — 从监督学习到深度学习
+- [[../../模型评估/Evaluation_Fundamentals|评估基础]] — 分类/回归评估指标
+- [[../../概念/Math/feature-engineering|特征工程概念卡]] — 监督学习的特征处理
+- [[../../计算机视觉/Image_Classification_Detection/Image_Classification_Detection_for_dummy|图像分类]] — 监督学习在 CV 中的应用

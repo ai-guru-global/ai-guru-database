@@ -133,9 +133,9 @@ LeCun 认为监督学习受限于标注数据的规模和成本，而自监督�
 
 - [Talks 主题合成 2026](../Talks_Synthesis_2026.md) -- Scaling Laws、开源 vs 闭源、AI 安全等主题中 LeCun 的立场
 - [Yann LeCun 金句集](./sayings.md) -- 更多金句与权威来源链接
-- [AI 历史时间线](../../AI入门/AI_History_Timeline.md) -- CNN 的发明与深度学习革命
-- [AI 伦理与社会](../../AI入门/AI_Ethics_Society.md) -- 开源 vs 闭源、AI 安全争论
-- [AI 未来趋势](../../AI入门/AI_Future_Trends.md) -- 世界模型与后 LLM 架构
+- [AI 历史时间线](../../入门/AI_History_Timeline.md) -- CNN 的发明与深度学习革命
+- [AI 伦理与社会](../../入门/AI_Ethics_Society.md) -- 开源 vs 闭源、AI 安全争论
+- [AI 未来趋势](../../入门/AI_Future_Trends.md) -- 世界模型与后 LLM 架构
 - [深度学习基础](../../深度学习/README.md) -- CNN 架构与自监督学习理论
 - [计算机视觉](../../计算机视觉/README.md) -- LeNet 到现代视觉模型的演进
 - [LLM 基础](../../大模型/README.md) -- LLaMA 开源模型与 LLM 局限性讨论

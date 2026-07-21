@@ -22,7 +22,7 @@ base_confidence: 0.88
 lifecycle: reviewed
 tier: core
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-07-21
 aliases:
   - Grafana
 
@@ -72,3 +72,23 @@ aliases:
 - [[概念/prometheus]] — Prometheus 监控系统
 - [[概念/observability]] — 可观测性
 - [[运维/AI_Observability_Guide_2026]] — AI 可观测指南 2026
+
+---
+
+## 2026 Grafana 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Grafana 11** | 可视化平台，支持 100+ 数据源 | GA |
+| **Grafana Cloud** | 托管可观测性平台 | GA |
+| **Grafana Loki** | 日志聚合系统 | GA |
+| **Grafana Tempo** | 分布式追踪 | GA |
+| **Grafana Mimir** | 长期指标存储 | GA |
+
+## 生产最佳实践
+
+1. **统一可视化**：用 Grafana 统一展示指标/日志/追踪
+2. **告警配置**：配置关键指标告警
+3. **仪表板即代码**：仪表板纳入版本控制
+4. **与 Prometheus 配合**：Grafana + Prometheus 是标准组合
+5. **权限控制**：配置仪表板访问权限

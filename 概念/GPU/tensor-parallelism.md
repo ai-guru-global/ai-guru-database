@@ -4,7 +4,7 @@ category: -concepts
 tags: ["distributed-training", "inference", "llm", "gpu", "alibaba-cloud"]
 summary: "Tensor Parallelism（张量并行）是将单个张量计算拆分到多张 GPU 上并行执行的分布式策略，常用于大模型训练和推理。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
 aliases:
   - "张量并行"
@@ -57,3 +57,23 @@ python -m vllm.entrypoints.openai.api_server \
 - [[概念/pipeline-parallelism|Pipeline Parallelism]]
 - [[概念/vllm|vLLM]]
 - [[概念/megatron-lm|Megatron-LM]]
+
+---
+
+## 2026 Tensor Parallelism 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Megatron-LM TP** | NVIDIA 官方张量并行实现 | GA |
+| **vLLM TP** | vLLM 推理引擎张量并行 | GA |
+| **DeepSpeed TP** | DeepSpeed 张量并行支持 | GA |
+| **FSDP2 TP** | PyTorch FSDP2 张量并行 | GA |
+| **TP + PP 组合** | 张量并行 + 流水线并行组合 | GA |
+
+## 生产最佳实践
+
+1. **层内切分**：TP 适合切分 Attention/FFN 等大层
+2. **NVLink 必用**：TP 通信密集，必须用 NVLink
+3. **TP 度数选择**：TP 度数通常为 2/4/8，与 GPU 数匹配
+4. **与 PP 组合**：大模型用 TP + PP 组合策略
+5. **推理加速**：vLLM 推理用 TP 加速大模型

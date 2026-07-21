@@ -3,7 +3,7 @@ title: "K8s 概念索引"
 category: -concepts
 tags: ["kubernetes", "k8s", "index", "ai"]
 summary: "概念/K8s 目录导航索引，按 AI 核心关联度分类。"
-updated: 2026-07-11
+updated: 2026-07-21
 tier: core
 ---
 
@@ -135,3 +135,15 @@ tier: core
 
 - [[nerdctl]] — containerd CLI
 - [[crictl]] — CRI 调试工具
+
+---
+
+## 2026 K8s AI 生态新进展
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **DRA (Dynamic Resource Allocation)** | K8s 1.32+ 属性级 GPU 分配，替代 Device Plugin 计数模型 | Beta |
+| **Gateway API v1.1** | 替代 Ingress 的新一代流量入口，支持 AI 推理路由 | GA |
+| **LeaderWorkerSet (LWS)** | 分布式训练/推理的多 Pod 协调控制器 | Beta |
+| **Kueue v0.9** | 批作业排队 + 配额管理，支持多租户 GPU 集群 | GA |
+| **Sidecar Containers (restartPolicy)** | 原生 Sidecar 支持，简化推理服务 Sidecar 模式 | GA |

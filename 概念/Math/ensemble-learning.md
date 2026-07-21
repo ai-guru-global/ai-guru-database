@@ -17,11 +17,11 @@ provenance:
   inferred: 0.15
   ambiguous: 0.05
 base_confidence: 0.75
-lifecycle: draft
-lifecycle_changed: 2026-05-31
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
 tier: supporting
 created: 2026-05-31T00:00:00Z
-updated: 2026-05-31T00:00:00Z
+updated: 2026-07-21T00:00:00Z
 ---
 
 # 集成学习
@@ -118,3 +118,23 @@ Stacking 使用 K 折交叉验证生成元特征，数据利用更充分、过�
 ## Related
 
 - [[概念/supervised-learning]] — 监督学习 (共享: ml, xgboost)
+
+---
+
+## 2026 集成学习生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **XGBoost** | 梯度提升树，竞赛常胜 | GA |
+| **LightGBM** | 微软轻量级 GBDT | GA |
+| **CatBoost** | Yandex 类别特征友好 | GA |
+| **Random Forest** | 随机森林，Bagging 代表 | GA |
+| **Stacking** | 多层模型堆叠 | GA |
+
+## 生产最佳实践
+
+1. **表格数据首选**：表格数据优先用 XGBoost/LightGBM
+2. **特征工程**：集成学习需要特征工程
+3. **超参数调优**：用 Optuna 调优超参数
+4. **与深度学习对比**：表格数据集成学习常优于深度学习
+5. **模型融合**：多模型融合提升效果

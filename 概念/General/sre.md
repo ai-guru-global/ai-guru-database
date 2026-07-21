@@ -4,7 +4,7 @@ category: -concepts
 tags: ["sre", "reliability", "devops", "alibaba-cloud"]
 summary: "SRE（Site Reliability Engineering）是将软件工程方法应用于运维的实践，通过 SLO、自动化和错误预算保障系统可靠性。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
 aliases:
   - "Site Reliability Engineering"
@@ -47,3 +47,23 @@ sources: []
 - [[概念/sli|SLI]]
 - [[概念/error-budget|Error Budget]]
 - [[概念/incident-response|Incident Response]]
+
+---
+
+## 2026 SRE 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **SLO/SLI** | 服务水平目标/指标 | GA |
+| **Error Budget** | 错误预算管理 | GA |
+| **可观测性** | 指标/日志/追踪 | GA |
+| **混沌工程** | 故障注入测试 | GA |
+| **AIOps** | AI 驱动运维 | GA |
+
+## 生产最佳实践
+
+1. **SLO 定义**：为关键服务定义 SLO
+2. **错误预算**：用错误预算平衡可靠性与迭代速度
+3. **可观测性**：建立完整可观测性体系
+4. **自动化**：自动化重复运维任务
+5. **事后复盘**：事故后进行无责复盘

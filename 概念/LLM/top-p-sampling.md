@@ -26,7 +26,7 @@ summary: Top-p 采样从累积概率达到 p 的最小 token 集合（nucleus）
 lifecycle: reviewed
 tier: core
 created: 2026-06-25
-updated: 2026-06-25
+updated: 2026-07-21
 sources: []
 ---
 
@@ -150,3 +150,23 @@ model.generate(
 - [[概念/temperature-scaling|温度缩放]]
 - [[概念/top-k-sampling|Top-k 采样]]
 - [[概念/sampling-decoding|随机采样]]
+
+---
+
+## 2026 Top-p 采样生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Top-p (Nucleus)** | 动态截断累计概率达到 p 的 Token | GA |
+| **Min-p** | 截断低于最大概率 min_p 倍的 Token | GA |
+| **Top-p + Temperature** | 联合控制采样多样性 | GA |
+| **自适应 Top-p** | 根据上下文动态调整 p | 研究 |
+| **Typical Sampling** | 基于信息论的典型性采样 | GA |
+
+## 生产最佳实践
+
+1. **p 值选择**：生产环境推荐 p=0.9，平衡多样性与质量
+2. **与 Temperature 配合**：Top-p + Temperature 组合使用，效果更佳
+3. **任务匹配**：事实任务用小 p(0.7-0.8)，创意任务用大 p(0.9-0.95)
+4. **Min-p 替代**：考虑用 Min-p 替代 Top-p，更稳定
+5. **不要 p=1.0**：p=1.0 等价于无截断，可能引入低质量 Token

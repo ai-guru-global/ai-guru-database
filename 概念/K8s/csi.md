@@ -4,7 +4,7 @@ category: -concepts
 tags: ["kubernetes", "k8s", "storage", "cloud-native", "alibaba-cloud"]
 summary: "CSI 是 Kubernetes 定义的标准存储插件接口，让第三方存储系统能够以统一方式为 K8s 提供持久卷能力，无需改动 K8s 核心代码。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
 aliases:
   - "CSI"
@@ -129,3 +129,23 @@ kubectl logs -n kube-system -l app=csi-plugin --tail=200
 - [[概念/cri|CRI（Container Runtime Interface）]] — 容器运行时接口
 - [[概念/cni|CNI]] — 容器网络接口
 - [[架构基建/Architecture_Overview/AI_Infrastructure_2026|AI 基础设施 2026]] — AI 基础设施 overview
+
+---
+
+## 2026 CSI 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Generic Ephemeral Volumes** | Pod 级临时卷，生命周期与 Pod 绑定，由 CSI 动态供给 | GA |
+| **ReadWriteOncePod (RWOP)** | 单 Pod 独占访问模式，增强数据安全性 | GA |
+| **VolumeSnapshot v1** | 标准化卷快照/恢复，支持级联快照 | GA |
+| **CSI Migration** | In-Tree 插件自动迁移至 CSI，无需修改 PVC | GA |
+| **拓扑感知调度 (Topology)** | 确保 Pod 调度到与卷同可用区的节点 | GA |
+
+## 生产最佳实践
+
+1. **使用 WaitForFirstConsumer**：设置 `volumeBindingMode: WaitForFirstConsumer`，避免卷与 Pod 调度到不同可用区
+2. **启用卷扩容**：设置 `allowVolumeExpansion: true`，支持在线扩容而无需重建 PVC
+3. **回收策略明确**：生产数据卷使用 `reclaimPolicy: Retain`，避免误删 PVC 导致数据丢失
+4. **监控 CSI Driver 健康**：对 CSI Controller/Node Plugin Pod 设置健康检查和告警
+5. **定期快照备份**：配合 VolumeSnapshot + CronJob 实现关键数据卷的定时快照保护

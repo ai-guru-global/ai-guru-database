@@ -4,8 +4,9 @@ category: -concepts
 tags: ["kubernetes", "k8s", "toleration", "cloud-native", "alibaba-cloud", "scheduling"]
 summary: "Toleration 是 Pod 对节点 Taint 的容忍声明，允许 Pod 被调度到带污点的节点，常与 Taint 配合实现专用节点与运维驱逐控制。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
+lifecycle: reviewed
 aliases:
   - "Toleration"
   - "Pod Toleration"
@@ -110,5 +111,22 @@ kubectl describe pod <pod-name> | grep -A5 Events
 - [[概念/taint|Taint（污点）]] — 与 Toleration 配合的节点排斥机制
 - [[概念/pod|Pod]] — K8s 最小调度单元
 - [[概念/affinity|Affinity（亲和性调度）]] — 节点/ Pod 亲和与反亲和
+- [[概念/gpu-operator|GPU Operator]] — GPU 节点管理
 - [[概念/request-scheduling|Request Scheduling]] — K8s 调度机制
-- [[概念/kubectl|kubectl]] — K8s 命令行工具
+
+---
+
+## 2026 Toleration 最佳实践
+
+| 场景 | Toleration 配置 | 说明 |
+|------|-----------------|------|
+| GPU 专用节点 | dedicated=ai-training:NoSchedule | AI 训练/推理专用 |
+| DaemonSet | operator: Exists | 全节点部署 |
+| 优雅退出 | tolerationSeconds: 300 | 延迟驱逐 |
+
+## 生产最佳实践
+
+1. **与 Taint 配合**：Taint 设门槛，Toleration 拿通行证
+2. **GPU 节点**：AI 工作负载声明 GPU 节点 Toleration
+3. **DaemonSet 豁免**：监控/日志 Agent 容忍所有 Taint
+4. **优雅退出**：NoExecute 配合 tolerationSeconds

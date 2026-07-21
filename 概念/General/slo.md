@@ -4,7 +4,7 @@ category: -concepts
 tags: ["sre", "reliability", "slo", "observability", "alibaba-cloud"]
 summary: "SLO（Service Level Objective）是服务可靠性目标，用可量化的指标（如可用性、延迟）定义系统应该达到的服务水平。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: core
 aliases:
   - "Service Level Objective"
@@ -48,3 +48,23 @@ sources: []
 - [[概念/error-budget|Error Budget]]
 - [[概念/sla|SLA]]
 - [[运维/SRE_Reliability/LLM_Inference_SLO_Guide|LLM 推理 SLO 实践指南]]
+
+---
+
+## 2026 SLO 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **SLO 定义** | 服务水平目标 | GA |
+| **SLI 指标** | 服务水平指标 | GA |
+| **Error Budget** | 错误预算 | GA |
+| **SLO 监控** | SLO 达成率监控 | GA |
+| **LLM SLO** | LLM 推理延迟/吞吐 SLO | GA |
+
+## 生产最佳实践
+
+1. **SLO 定义**：为关键服务定义明确 SLO
+2. **SLI 测量**：准确测量 SLI 指标
+3. **错误预算**：用错误预算平衡可靠性与迭代
+4. **SLO 监控**：实时监控 SLO 达成率
+5. **LLM SLO**：LLM 服务定义延迟/吞吐 SLO

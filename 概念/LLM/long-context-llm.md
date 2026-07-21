@@ -28,7 +28,7 @@ summary: 长上下文 LLM 面临 Attention 复杂度平方增长、KV Cache 显�
 lifecycle: reviewed
 tier: core
 created: 2026-06-25
-updated: 2026-06-25
+updated: 2026-07-21
 sources: []
 ---
 
@@ -172,3 +172,23 @@ KV Cache = 2 × layers × hidden_dim × batch_size × seq_len × bytes
 - [[概念/flash-attention-kernels|FlashAttention]]
 - [[概念/attention-variants|Attention 变体]]
 - [[概念/paged-attention|PagedAttention]]
+
+---
+
+## 2026 长上下文生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Gemini 2M Token** | 原生支持 2M Token 上下文 | GA |
+| **Llama 4 10M Token** | MoE 架构支持 10M Token | GA |
+| **YaRN 扩展** | RoPE + YaRN 支持 128K-1M | GA |
+| **Ring Attention** | 分布式注意力，支持超长序列 | GA |
+| **KV Cache 压缩** | GQA/MLA 减少 KV Cache 内存 | GA |
+
+## 生产最佳实践
+
+1. **按需选择长度**：不要盲目追求长上下文，根据任务选择合适长度
+2. **KV Cache 优化**：长上下文必须优化 KV Cache，用 GQA/MLA
+3. **分块处理**：超长文档考虑分块处理，避免单次请求过长
+4. **成本意识**：长上下文 Token 消耗大，必须监控成本
+5. **位置编码选择**：长上下文模型优先选择 RoPE + YaRN

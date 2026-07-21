@@ -22,7 +22,7 @@ base_confidence: 0.88
 lifecycle: reviewed
 tier: archived
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-07-21
 aliases:
   - Opa
 
@@ -94,4 +94,23 @@ aliases:
 - [[概念/kyverno]] — Kyverno
 - [[概念/falco]] — Falco
 - [[概念/kubernetes]] — Kubernetes
+- [[概念/pod-security-standards]] — Pod 安全标准
 - [[伦理安全/LLM_Security_Complete_Guide]] — LLM 安全完整指南
+
+---
+
+## 2026 OPA 生态
+
+| 特性 | 说明 | 状态 |
+|------|------|------|
+| **CNCF 毕业** | 成熟稳定 | GA |
+| **Gatekeeper** | K8s 准入控制 | GA |
+| **Rego v1** | 语法简化 | GA |
+| **Conftest** | CI/CD 策略测试 | GA |
+
+## 生产最佳实践
+
+1. **与 Kyverno 对比**：K8s 场景优先 Kyverno，通用场景用 OPA
+2. **策略测试**：使用 conftest 在 CI/CD 中测试策略
+3. **渐进式采用**：先 audit 模式，再 enforce
+4. **策略库复用**：使用社区策略库减少重复工作

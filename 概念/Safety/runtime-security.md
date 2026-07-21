@@ -24,7 +24,7 @@ provenance:
   ambiguous: 0.05
 base_confidence: 0.85
 created: 2026-06-24
-updated: 2026-06-24
+updated: 2026-07-21
 ---
 
 # Runtime Security（运行时安全）
@@ -113,3 +113,23 @@ updated: 2026-06-24
 - [[概念/policy-as-code]] — Policy as Code
 - [[概念/observability]] — 可观测性
 - [[伦理安全/README|伦理安全]] — 安全章节
+
+---
+
+## 2026 运行时安全生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Falco** | CNCF 毕业项目，运行时威胁检测 | GA |
+| **Tetragon** | eBPF 运行时安全 | GA |
+| **Tracee** | eBPF 安全监控 | GA |
+| **KubeArmor** | 容器运行时防护 | GA |
+| **Runtime Class** | K8s 运行时类隔离 | GA |
+
+## 生产最佳实践
+
+1. **运行时监控**：用 Falco/Tetragon 监控运行时行为
+2. **eBPF 优势**：eBPF 工具性能开销低，适合生产
+3. **基线检测**：建立正常行为基线，检测异常
+4. **自动响应**：检测到威胁自动响应（隔离/告警）
+5. **与 SIEM 集成**：安全事件集成到 SIEM 系统

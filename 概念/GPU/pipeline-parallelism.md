@@ -24,7 +24,7 @@ provenance:
   ambiguous: 0.05
 base_confidence: 0.88
 created: 2026-06-24
-updated: 2026-06-24
+updated: 2026-07-21
 ---
 
 # Pipeline Parallelism（流水线并行）
@@ -82,3 +82,23 @@ GPU0: [Layer 0-7]   ──►  GPU1: [Layer 8-15]  ──►  GPU2: [Layer 16-23
 - [[概念/tensor-parallelism]] — 张量并行（互补）
 - [[概念/megatron-lm]] — Megatron-LM（PP 代表实现）
 - [[模型训练/Distributed_Training/Megatron_LM_Deep_Dive]] — 深度解析
+
+---
+
+## 2026 Pipeline Parallelism 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Megatron-LM PP** | NVIDIA 官方流水线并行 | GA |
+| **DeepSpeed PP** | DeepSpeed 流水线并行 | GA |
+| **GPipe** | Google 流水线并行 | GA |
+| **PipeDream** | 异步流水线并行 | GA |
+| **Interleaved Schedule** | 交错调度，降低气泡 | GA |
+
+## 生产最佳实践
+
+1. **层间切分**：PP 适合切分深层网络的不同层
+2. **气泡优化**：用 Interleaved Schedule 降低气泡
+3. **与 TP 组合**：大模型用 PP + TP 组合策略
+4. **微批次选择**：微批次数通常为 PP 度数的 2-4x
+5. **负载均衡**：确保各阶段计算量均衡

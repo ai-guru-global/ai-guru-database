@@ -21,7 +21,7 @@ provenance:
   ambiguous: 0.05
 base_confidence: 0.90
 created: 2026-06-24
-updated: 2026-06-24
+updated: 2026-07-21
 ---
 
 # llama.cpp（C++ LLM 推理引擎）
@@ -134,3 +134,23 @@ print(output['choices'][0]['message']['content'])
 - [[概念/LLM/edge-llm|边缘 LLM]]
 - [[概念/Inference/model-serving|模型服务]]
 - [[部署推理/Inference_Engines/llama_cpp_Deep_Dive|llama.cpp 深度解析]]
+
+---
+
+## 2026 llama.cpp 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **llama.cpp b4500+** | 支持 GGUF v3、Flash Attention、Metal/Vulkan/CUDA | GA |
+| **Ollama v0.6** | 最流行本地模型管理工具，底层基于 llama.cpp | GA |
+| **llama-server** | 官方 HTTP 服务，OpenAI 兼容 API + 流式输出 | GA |
+| **GGUF 量化生态** | Q4_K_M/Q5_K_M/Q6_K/Q8_0 多种精度 | GA |
+| **多模态支持** | LLaVA/Qwen-VL 等视觉模型推理 | GA |
+
+## 生产最佳实践
+
+1. **量化精度选择**：生产用 Q5_K_M（质量/速度平衡），资源受限用 Q4_K_M
+2. **硬件加速必开**：有 GPU 必开 CUDA/Metal，纯 CPU 推理速度极慢
+3. **上下文长度控制**：根据显存/内存调整 --ctx-size，避免 OOM
+4. **并发控制**：设置 --parallel 参数，平衡吐吐量与延迟
+5. **模型来源可靠**：仅从 HuggingFace 官方仓库下载 GGUF 模型，避免恶意文件

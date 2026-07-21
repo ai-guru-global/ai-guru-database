@@ -19,6 +19,8 @@ provenance:
 base_confidence: 0.82
 lifecycle: reviewed
 tier: supporting
+created: 2026-06-12
+updated: 2026-07-21
 ---
 
 # ExLlamaV2 量化推理引擎
@@ -169,3 +171,23 @@ convert_model(
 4. **社区生态**：大量 EXL2 预量化模型在 HuggingFace 上共享
 5. **vs vLLM**：ExLlamaV2 追求单请求速度，vLLM 追求多请求吞吐
 6. **适合场景**：个人工作站、研究探索、快速实验
+
+---
+
+## 2026 ExLlamaV2 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **ExLlamaV2 v0.2+** | EXL2 混合精度量化，2-8 bit | GA |
+| **动态量化** | 每层独立精度，质量/速度最优平衡 | GA |
+| **Flash Attention** | 支持 Flash Attention 加速 | GA |
+| **多 GPU 支持** | 张量并行，支持多 GPU 推理 | GA |
+| **TabbyAPI** | OpenAI 兼容 API 服务器 | GA |
+
+## 生产最佳实践
+
+1. **单用户极速**：ExLlamaV2 适合单用户场景，多用户用 vLLM
+2. **消费级 GPU**：RTX 4090 可运行 70B 模型（低 bpw）
+3. **EXL2 格式**：优先选择 EXL2 预量化模型，质量最好
+4. **bpw 选择**：生产用 4.0-5.0 bpw，平衡质量与速度
+5. **与 vLLM 对比**：高并发场景用 vLLM，单用户用 ExLlamaV2

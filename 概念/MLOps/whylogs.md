@@ -16,6 +16,8 @@ provenance:
   ambiguous: 0.10
 base_confidence: 0.82
 lifecycle: reviewed
+created: 2026-06-12
+updated: 2026-07-21
 tier: supporting
 ---
 
@@ -125,3 +127,23 @@ pip install whylogs
 - [[概念/wandb]] — Weights & Biases 实验追踪
 - [[概念/langfuse]] — Langfuse 开源 LLM 可观测性
 - [[概念/feature-store]] — Feature Store 特征存储
+
+---
+
+## 2026 whylogs 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **whylogs** | 数据日志/剖析库 | GA |
+| **数据漂移检测** | 自动检测数据分布变化 | GA |
+| **数据质量监控** | 实时数据质量指标 | GA |
+| **WhyLabs** | 云端数据可观测性 | GA |
+| **集成支持** | Spark/Pandas/Flink 集成 | GA |
+
+## 生产最佳实践
+
+1. **数据日志**：生产数据必须记录日志
+2. **漂移检测**：监控数据漂移，及时告警
+3. **与模型监控配合**：数据漂移 + 模型性能监控
+4. **基线对比**：建立数据基线，对比检测异常
+5. **与 MLflow 集成**：whylogs + MLflow 实现完整监控

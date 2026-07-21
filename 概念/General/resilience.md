@@ -4,7 +4,7 @@ category: -concepts
 tags: ["sre", "reliability", "resilience", "chaos-engineering", "alibaba-cloud"]
 summary: "Resilience（韧性）是指系统在面对故障、负载变化或攻击时，保持可接受服务水平并快速恢复的能力。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
 aliases:
   - "系统韧性"
@@ -48,3 +48,23 @@ sources: []
 - [[概念/sre|SRE]]
 - [[概念/chaos-engineering|Chaos Engineering]]
 - [[概念/incident-response|Incident Response]]
+
+---
+
+## 2026 韧性工程生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **混沌工程** | 故障注入测试韧性 | GA |
+| **熔断器** | 防止级联失败 | GA |
+| **限流降级** | 流量控制保护系统 | GA |
+| **多活架构** | 异地多活容灾 | GA |
+| **自动恢复** | 故障自动检测恢复 | GA |
+
+## 生产最佳实践
+
+1. **混沌工程**：定期混沌工程测试韧性
+2. **熔断降级**：关键服务配置熔断降级
+3. **多活架构**：核心系统异地多活
+4. **自动恢复**：故障自动检测恢复
+5. **韧性设计**：系统设计考虑失败场景

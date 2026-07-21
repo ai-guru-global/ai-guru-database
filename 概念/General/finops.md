@@ -4,7 +4,7 @@ category: -concepts
 tags: ["finops", "cost-optimization", "cloud", "ai", "gpu", "alibaba-cloud"]
 summary: "FinOps 是云成本管理的实践框架，通过技术、业务和财务的协作，实现云资源的可见性、优化与治理。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
 aliases:
   - "云成本管理"
@@ -51,3 +51,23 @@ Inform → Optimize → Operate
 - [[概念/cloud-cost|Cloud Cost]]
 - [[概念/gpu-sharing|GPU Sharing]]
 - [[运维/Cost_Management/FinOps_for_AI|AI 场景 FinOps]]
+
+---
+
+## 2026 FinOps 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **成本可视化** | 云成本可视化分析 | GA |
+| **资源优化** | 资源利用率优化 | GA |
+| **GPU 共享** | GPU 资源共享调度 | GA |
+| **预留实例** | 预留实例降低成本 | GA |
+| **AI 成本优化** | LLM 推理成本优化 | GA |
+
+## 生产最佳实践
+
+1. **成本可视化**：建立成本可视化体系
+2. **资源优化**：定期优化资源利用率
+3. **GPU 共享**：GPU 资源共享提高利用率
+4. **预留实例**：稳定负载用预留实例
+5. **AI 成本**：LLM 推理成本优化

@@ -22,11 +22,11 @@ provenance:
   inferred: 0.12
   ambiguous: 0.08
 base_confidence: 0.72
-lifecycle: draft
-lifecycle_changed: 2026-05-31
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
 tier: supporting
 created: 2026-05-31T00:00:00Z
-updated: 2026-05-31T00:00:00Z
+updated: 2026-07-21T00:00:00Z
 ---
 
 # 状态空间模型
@@ -158,3 +158,23 @@ SSM 的训练与 传统神经网络 有所不同：
 
 - [[../../大模型/Sequence_Models/Sequence_Models|序列模型深度解析]] — SSM/Mamba 与 Transformer 的系统性架构对比
 - [[../../大模型/LLM_Architectures/Transformer_Alternatives|Transformer 替代架构]] — Mamba/RWKV/RetNet 等新架构全景
+
+---
+
+## 2026 SSM 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Mamba-2** | 结构化状态空间模型，线性复杂度 | GA |
+| **Jamba** | Mamba + Transformer 混合架构 | GA |
+| **RWKV-6** | 线性注意力 RNN，支持 128K 上下文 | GA |
+| **RetNet** | 保留网络，训练并行/推理递归 | 研究 |
+| **Hyena** | 长卷积替代注意力 | 研究 |
+
+## 生产最佳实践
+
+1. **长序列优势**：SSM 适合超长序列(100K+)，内存复杂度线性
+2. **与 Transformer 混合**：生产环境考虑 Jamba 等混合架构
+3. **推理速度**：SSM 推理速度比 Transformer 快 2-5x
+4. **生态成熟度**：SSM 生态不如 Transformer 成熟，生产前充分测试
+5. **场景匹配**：长文档/代码/时间序列场景优先考虑 SSM

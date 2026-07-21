@@ -21,7 +21,7 @@ summary: 本页汇总 LLM 领域的经典论文、重要技术报告和优质课
 lifecycle: reviewed
 tier: supporting
 created: 2026-06-25
-updated: 2026-06-25
+updated: 2026-07-21
 sources: []
 ---
 
@@ -165,4 +165,24 @@ flowchart TD
 ## 延伸阅读
 
 - [[概念/llm-training-inference-key-concepts|LLM 训练与推理关键概念索引]]
-- [[大模型/Transformer_Training_vs_Inference|Transformer 在大模型训练与推理中的应用]]
+- [[大模型/Transformer_Training_vs_Inference|Transformer 在大模型训练与推理中的 应用]]
+
+---
+
+## 2026 学习资源生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Attention Is All You Need** | Transformer 原始论文，必读 | 经典 |
+| **LLM 可视化课程** | 3Blue1Brown/Andrej Karpathy 视频 | 推荐 |
+| **HuggingFace 课程** | 免费 NLP/LLM 课程 | GA |
+| **DeepLearning.AI** | Andrew Ng 的 LLM 系列课程 | GA |
+| **arXiv 每日论文** | 跟踪最新研究进展 | 持续 |
+
+## 生产最佳实践
+
+1. **基础先行**：先学 Transformer 架构，再学 LLM 应用
+2. **实践为主**：边学边做，用 HuggingFace 动手实验
+3. **跟踪前沿**：定期阅读 arXiv 论文，了解最新进展
+4. **社区参与**：加入 HuggingFace/GitHub 社区，交流学习
+5. **系统学习**：按学习路径系统学习，避免碎片化

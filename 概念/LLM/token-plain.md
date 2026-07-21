@@ -10,10 +10,10 @@ relationships:
   - target: "概念/context-window"
     type: builds_on
 summary: 用生活化的类比解释大模型的"Token"：模型不认字，只认积木——Token 是大模型吃进去和吐出来的最小颗粒度。
-lifecycle: draft
+lifecycle: reviewed
 tier: core
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-07-21
 aliases:
   - "token"
   - "Token"
@@ -127,3 +127,23 @@ sources: []
 ---
 
 *相关概念: [[概念/tokenization|Tokenization 详解]]、[[概念/context-window|上下文窗口]]、[[概念/model-weights|模型权重]]*
+
+---
+
+## 2026 Token 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **BPE/SentencePiece** | 主流分词算法，词汇表 3-15 万 | GA |
+| **多语言 Tokenizer** | 中文/日文/韩文等语言优化，减少 Token 消耗 | GA |
+| **Token 计数 API** | OpenAI/Anthropic 提供精确 Token 计数接口 | GA |
+| **长上下文模型** | 1M+ Token 上下文窗口，支持整本书输入 | GA |
+| **Token 成本优化** | 智能路由 + 缓存，降低 Token 消耗成本 | GA |
+
+## 生产最佳实践
+
+1. **Token 计数预估**：调用 API 前预估 Token 数，避免超出上下文窗口或预算
+2. **中文优化**：中文内容考虑使用多语言优化的模型，减少 Token 消耗
+3. **上下文管理**：长对话使用摘要/截断策略，控制 Token 使用量
+4. **成本监控**：按项目/用户统计 Token 消耗，设置配额与告警
+5. **缓存复用**：重复查询使用语义缓存，避免重复消耗 Token

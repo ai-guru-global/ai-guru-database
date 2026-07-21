@@ -4,7 +4,7 @@ category: -concepts
 tags: ["mlops", "data-validation", "data-quality", "alibaba-cloud"]
 summary: "Great Expectations（GE）是开源的数据验证框架，通过声明式 expectation suite 对数据进行 schema、统计和分布层面的校验。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
 aliases:
   - "GE"
@@ -56,3 +56,23 @@ validator.save_expectation_suite(discard_failed_expectations=False)
 - [[概念/pandera|Pandera]]
 - [[概念/mlops|MLOps]]
 - [[模型运维/Troubleshooting/Data_Validation_Failure_Runbook|数据验证失败 Runbook]]
+
+---
+
+## 2026 Great Expectations 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Great Expectations** | 数据质量框架 | GA |
+| **Expectations** | 声明式数据期望 | GA |
+| **Data Docs** | 自动生成数据文档 | GA |
+| **Checkpoint** | 验证检查点 | GA |
+| **Cloud 版** | 托管数据质量服务 | GA |
+
+## 生产最佳实践
+
+1. **期望定义**：为关键数据定义 Expectations
+2. **CI/CD 集成**：数据验证集成到 CI/CD
+3. **Data Docs**：自动生成数据质量文档
+4. **与 Pandera 对比**：GE 更强大，Pandera 更轻量
+5. **监控告警**：数据质量失败时告警

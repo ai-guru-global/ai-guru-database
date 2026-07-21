@@ -4,7 +4,7 @@ category: -concepts
 tags: ["kubernetes", "k8s", "rbac", "cloud-native", "alibaba-cloud", "security"]
 summary: "ClusterRole 是 Kubernetes 中集群级别的 RBAC 角色，用于定义跨所有命名空间乃至集群资源（如 Node、Namespace）的访问权限。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
 aliases:
   - "ClusterRole"
@@ -94,4 +94,23 @@ kubectl auth can-i get pods --as=system:serviceaccount:monitoring:monitor -A
 
 - [[概念/kubernetes|Kubernetes]] — 容器编排平台
 - [[概念/rbac|RBAC 基于角色的访问控制]] — ClusterRole 所属的授权模型
+- [[概念/clusterrolebinding|ClusterRoleBinding]] — 集群角色绑定
+- [[概念/serviceaccount|ServiceAccount]] — 服务账户
 - [[架构基建/AI_Stack_Deep_Dive|AI Stack 深度解析]] — 安全与 RBAC 实践
+
+---
+
+## 2026 RBAC 最佳实践
+
+| 场景 | 推荐角色 | 说明 |
+|------|----------|------|
+| 平台监控 | 自定义只读 ClusterRole | 读取所有 Namespace 指标 |
+| CI/CD | 自定义部署角色 | 限制到必要 API 组 |
+| 运维只读 | 自定义 readonly | 比 view 更窄 |
+
+## 生产最佳实践
+
+1. **最小权限**：只授予必要的 verb 和 resource
+2. **避免通配符**：不使用 * 通配符
+3. **定期审计**：检查 cluster-admin 绑定
+4. **聚合角色**：使用 aggregationRule 组装权限

@@ -17,11 +17,11 @@ provenance:
   inferred: 0.15
   ambiguous: 0.05
 base_confidence: 0.75
-lifecycle: draft
-lifecycle_changed: 2026-05-31
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
 tier: supporting
 created: 2026-05-31T00:00:00Z
-updated: 2026-05-31T00:00:00Z
+updated: 2026-07-21T00:00:00Z
 ---
 
 # 线性代数
@@ -168,3 +168,23 @@ LoRA约束参数更新为低秩形式：ΔW = BA（B∈ℝ^{d×r}, A∈ℝ^{r×k
 - 3Blue1Brown: Essence of Linear Algebra
 - LoRA: Low-Rank Adaptation of Large Language world-models-jepa (arXiv:2106.09685)
 - Attention Is All You Need (arXiv:1706.03762)
+
+---
+
+## 2026 线性代数生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **矩阵乘法** | 神经网络核心运算 | GA |
+| **特征分解** | PCA/谱聚类基础 | GA |
+| **SVD** | 奇异值分解，LoRA 基础 | GA |
+| **低秩近似** | LoRA/模型压缩 | GA |
+| **Tensor 运算** | 深度学习张量运算 | GA |
+
+## 生产最佳实践
+
+1. **LoRA 微调**：大模型微调用 LoRA 低秩适配
+2. **矩阵运算优化**：大矩阵乘法用 Tensor Core
+3. **SVD 压缩**：模型压缩用 SVD
+4. **数值稳定性**：线性代数运算注意数值稳定性
+5. **稀疏计算**：稀疏矩阵用稀疏计算加速

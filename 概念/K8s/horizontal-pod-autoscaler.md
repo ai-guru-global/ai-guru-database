@@ -4,8 +4,9 @@ category: -concepts
 tags: ["kubernetes", "k8s", "autoscaling", "cloud-native", "alibaba-cloud"]
 summary: "HPA 是 Kubernetes 内置的 Pod 水平自动扩缩容控制器，根据 CPU、内存或自定义指标自动调整 Deployment/StatefulSet 的副本数，是云原生应用弹性能力的核心组件。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
+lifecycle: reviewed
 aliases:
   - "HPA"
   - "Horizontal Pod Autoscaler"
@@ -109,4 +110,22 @@ kubectl scale deploy llm-serving --replicas=3
 - [[概念/kubernetes]] — Kubernetes 编排
 - [[概念/kubectl]] — kubectl 命令行工具
 - [[概念/prometheus]] — Prometheus 监控与指标
-- [[概念/containerd]] — containerd 容器运行时
+- [[概念/vertical-pod-autoscaler]] — VPA 纵向扩缩容
+- [[概念/deployment]] — Deployment 工作负载
+
+---
+
+## 2026 HPA 最佳实践
+
+| 指标类型 | 适用场景 | 说明 |
+|----------|----------|------|
+| CPU | Web/API 服务 | 默认指标 |
+| 内存 | 内存敏感应用 | 需设置 requests |
+| 自定义 | 推理服务 | QPS/GPU 利用率 |
+
+## 生产最佳实践
+
+1. **设置 requests**：必须设置 CPU/内存 requests
+2. **稳定窗口**：配置 stabilizationWindowSeconds 避免抖动
+3. **自定义指标**：AI 推理用 GPU 利用率/QPS 扩缩
+4. **与 VPA 分离**：避免同时对 CPU 使用 HPA 和 VPA

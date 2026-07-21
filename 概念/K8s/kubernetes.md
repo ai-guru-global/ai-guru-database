@@ -28,7 +28,7 @@ base_confidence: 0.95
 lifecycle: reviewed
 tier: core
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-07-21
 aliases:
   - Kubernetes
 
@@ -121,3 +121,23 @@ Worker Node
 - [[架构基建/Kubernetes_Networking_Deep_Dive]] — K8s 网络深度解析
 - [[架构基建/Kubernetes_Storage_Deep_Dive]] — K8s 存储深度解析
 - [[运维/Kubernetes_Troubleshooting_Playbook]] — K8s 运维排障 Playbook
+
+---
+
+## 2026 Kubernetes AI 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **K8s 1.32/1.33** | DRA Beta、Sidecar Containers GA、Gateway API 集成 | GA |
+| **LeaderWorkerSet (LWS)** | 分布式训练/推理的多 Pod 协调，支持 Gang Scheduling | Beta |
+| **Kueue + Volcano** | 批作业排队 + 高性能调度，AI 训练集群标配 | GA |
+| **Gateway API v1.1** | 替代 Ingress，支持 gRPC/HTTP 推理流量路由 | GA |
+| **Confidential Containers** | 基于 TEE 的机密容器，保护 AI 模型/数据安全 | Beta |
+
+## 生产最佳实践
+
+1. **版本策略**：生产集群保持 N-1 版本，每季度评估升级，避免大版本跳跃
+2. **GPU 节点池化**：GPU 节点使用独立节点池 + Taint/Toleration，与 CPU 工作负载隔离
+3. **资源配额必配**：每个 Namespace 设置 ResourceQuota + LimitRange，防止资源耗尽
+4. **监控全覆盖**：部署 Prometheus + Grafana + Alertmanager，监控控制面/节点/Pod 全链路
+5. **GitOps 管理**：使用 ArgoCD/Flux 管理集群配置，变更可追溯、可回滚

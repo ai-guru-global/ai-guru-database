@@ -4,8 +4,9 @@ category: -concepts
 tags: ["kubernetes", "k8s", "resilience", "cloud-native", "alibaba-cloud"]
 summary: "Pod Disruption Budget（PDB）是 Kubernetes 用于限制自愿中断（如节点维护、集群缩容）时同时不可用的 Pod 数量的保护机制，通过 minAvailable 或 maxUnavailable 与 Deployment/StatefulSet 配合，确保 AI 推理等关键服务在变更过程中保持最低可用副本。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
+lifecycle: reviewed
 aliases:
   - "PDB"
   - "PodDisruptionBudget"
@@ -90,4 +91,22 @@ kubectl get pdb ai-inference-pdb -n default -o jsonpath='{.status.disruptionsAll
 - [[概念/kubernetes|Kubernetes]] — K8s 编排平台
 - [[概念/pod|Pod]] — K8s 最小调度单元
 - [[概念/kubectl|kubectl]] — K8s 命令行工具
-- [[概念/apsara-stack|飞天企业版 Apsara Stack]] — 阿里云专有云
+- [[概念/deployment|Deployment]] — 无状态工作负载
+- [[概念/statefulset|StatefulSet]] — 有状态工作负载
+
+---
+
+## 2026 PDB 最佳实践
+
+| 场景 | 配置 | 说明 |
+|------|------|------|
+| AI 推理服务 | minAvailable: 2 | 保证最低可用副本 |
+| 滚动更新 | maxUnavailable: 1 | 限制同时不可用数 |
+| 有状态服务 | minAvailable: quorum | 保证多数派 |
+
+## 生产最佳实践
+
+1. **关键服务必配**：AI 推理、网关等关键服务配置 PDB
+2. **合理阈值**：根据副本数设置合理的 minAvailable
+3. **与 HPA 配合**：PDB 与 HPA 共同保障可用性
+4. **测试验证**：定期测试 kubectl drain 验证 PDB 生效

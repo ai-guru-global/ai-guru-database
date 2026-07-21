@@ -17,11 +17,11 @@ provenance:
   inferred: 0.15
   ambiguous: 0.10
 base_confidence: 0.70
-lifecycle: draft
-lifecycle_changed: 2026-05-31
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
 tier: supporting
 created: 2026-05-31T00:00:00Z
-updated: 2026-05-31T00:00:00Z
+updated: 2026-07-21T00:00:00Z
 ---
 
 # Transformer 架构
@@ -154,3 +154,23 @@ Transformer 训练 的标配配置：
 - [[../../大模型/Transformer/Transformer_Architecture|Transformer 架构深度解析]] — Self-Attention / Multi-Head / FFN 的数学推导与实现
 - [[../../大模型/Transformer/Transformer_Deep_Dive|Transformer 深度解读]] — 编码器-解码器、位置编码、归一化策略的技术细节
 - [[../../大模型/Transformer_Revolution/Self_Attention_Mechanism|自注意力机制]] — Attention 的工程优化 (Flash Attention 等)
+
+---
+
+## 2026 Transformer 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **FlashAttention-3** | H100 专用 IO 感知注意力，1.5-2x 加速 | GA |
+| **MoE (Mixture of Experts)** | 稀疏激活，推理成本降低 5-10x | GA |
+| **GQA (Grouped Query Attention)** | 分组查询注意力，KV Cache 减少 4-8x | GA |
+| **RoPE + YaRN** | 旋转位置编码 + 长上下文扩展 | GA |
+| **RMSNorm** | 简化归一化，训练更稳定 | GA |
+
+## 生产最佳实践
+
+1. **FlashAttention 必开**：生产环境必须启用 FlashAttention，速度提升 2x+
+2. **GQA 优先**：新模型优先选择 GQA，KV Cache 内存减少 4-8x
+3. **MoE 降本**：高并发场景用 MoE 模型，推理成本降低 5-10x
+4. **长上下文用 YaRN**：需要 128K+ 上下文时启用 YaRN 扩展
+5. **量化部署**：生产环境用 AWQ/GPTQ 4-bit 量化，平衡质量与速度

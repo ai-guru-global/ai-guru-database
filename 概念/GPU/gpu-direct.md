@@ -4,7 +4,7 @@ category: -concepts
 tags: ["gpu", "nvidia", "rdma", "distributed-training", "alibaba-cloud"]
 summary: "GPU Direct 是 NVIDIA 技术套件，允许 GPU 与网卡/存储设备直接交换数据，绕过 CPU 和系统内存，降低延迟并提升带宽。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
 aliases:
   - "NVIDIA GPU Direct"
@@ -47,3 +47,23 @@ nvidia-smi topo -p2p r
 - [[概念/infiniBand|InfiniBand]]
 - [[概念/nvlink|NVLink]]
 - [[概念/distributed-training|分布式训练]]
+
+---
+
+## 2026 GPU Direct 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **GPU Direct RDMA** | GPU 直接访问网络，绕过 CPU | GA |
+| **GPU Direct Storage** | GPU 直接访问存储，降低延迟 | GA |
+| **GPU Direct P2P** | GPU 间直接通信，无需 CPU 中转 | GA |
+| **GPUDirect Async** | 异步数据传输，重叠计算与通信 | GA |
+| **NVIDIA Magnum IO** | GPU Direct 技术套件 | GA |
+
+## 生产最佳实践
+
+1. **分布式训练必用**：多节点训练必须启用 GPU Direct RDMA
+2. **InfiniBand 配合**：GPU Direct + InfiniBand 实现最低延迟
+3. **存储加速**：GPU Direct Storage 加速数据加载
+4. **拓扑优化**：根据 GPU 拓扑优化通信路径
+5. **监控带宽**：监控 GPU Direct 带宽利用率，发现瓶颈

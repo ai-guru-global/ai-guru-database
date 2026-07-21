@@ -4,8 +4,9 @@ category: -concepts
 tags: ["kubernetes", "k8s", "label", "metadata", "cloud-native", "alibaba-cloud"]
 summary: "Label 是 Kubernetes 中附加在资源上的键值对元数据，通过 Label Selector 实现 Pod、Service、Deployment 等对象的关联、筛选与调度，是 K8s 资源管理的核心机制。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
+lifecycle: reviewed
 aliases:
   - "Label"
   - "Kubernetes Label"
@@ -108,5 +109,22 @@ kubectl label node node-01 accelerator=nvidia-a100
 - [[概念/pod|Pod]] — K8s 最小调度单元
 - [[概念/deployment|Deployment]] — 通过 Label 管理 Pod 副本
 - [[概念/service|Service]] — 通过 Label Selector 暴露 Pod
-- [[概念/apsara-stack|阿里云专有云 Apsara Stack]] — 专有云 K8s 环境
+- [[概念/selector|Selector]] — 标签选择器
 - [[概念/kubectl|kubectl]] — 操作 Label 的命令行工具
+
+---
+
+## 2026 Label 最佳实践
+
+| 场景 | 典型 Label | 说明 |
+|------|------------|------|
+| Service 关联 | app, tier | 服务发现 |
+| 节点调度 | accelerator, zone | GPU 节点选择 |
+| 环境隔离 | env, team | 多租户管理 |
+
+## 生产最佳实践
+
+1. **命名规范**：使用有意义的 key，如 app.kubernetes.io/name
+2. **一致性**：相同含义的 Label 在整个集群保持一致
+3. **与 Annotation 区分**：Label 用于选择，Annotation 用于描述
+4. **节点 Label**：GPU 节点打上 accelerator 标签便于调度

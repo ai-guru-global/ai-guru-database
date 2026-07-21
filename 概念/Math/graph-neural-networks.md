@@ -20,7 +20,7 @@ base_confidence: 0.88
 lifecycle: reviewed
 tier: core
 created: 2026-06-04
-updated: 2026-06-04
+updated: 2026-07-21
 aliases:
   - "Graph Neural Networks"
   - "graph neural networks"
@@ -147,3 +147,23 @@ Weisfeiler-Lehman (WL) 图同构测试是 GNN 表达能力的理论上限：
 - [[概念/neural-networks]] — 神经网络基础
 - [[概念/transformer-architecture]] — Transformer（Graph Transformer 基础）
 - [[概念/ai-for-science]] — AI for Science（GNN 在分子/材料中的核心应用）
+
+---
+
+## 2026 图神经网络生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **GCN** | 图卷积网络 | GA |
+| **GAT** | 图注意力网络 | GA |
+| **GraphSAGE** | 归纳式图学习 | GA |
+| **PyG** | PyTorch Geometric 图学习库 | GA |
+| **Graph Transformer** | 图 Transformer | 研究 |
+
+## 生产最佳实践
+
+1. **图数据建模**：关系数据用 GNN 建模
+2. **PyG 框架**：图学习用 PyTorch Geometric
+3. **分子/材料**：AI for Science 用 GNN
+4. **推荐系统**：图推荐用 GNN
+5. **与 Transformer 对比**：Graph Transformer 是研究方向

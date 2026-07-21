@@ -4,7 +4,7 @@ category: -concepts
 tags: ["kubernetes", "k8s", "rolebinding", "rbac", "cloud-native", "alibaba-cloud"]
 summary: "RoleBinding 是 Kubernetes RBAC 的命名空间级授权对象，用于将 Role 或 ClusterRole 的权限绑定到用户、用户组或 ServiceAccount。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
 aliases:
   - "RoleBinding"
@@ -119,3 +119,23 @@ kubectl auth can-i list pods \
 - [[概念/kubernetes|Kubernetes]] — 容器编排平台
 - [[概念/kubectl|kubectl]] — K8s 命令行工具
 - [[概念/pod|Pod]] — K8s 最小调度单元
+
+---
+
+## 2026 RBAC 授权生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Aggregated ClusterRole** | 通过标签自动聚合多个 ClusterRole 规则，简化大规模授权管理 | GA |
+| **ValidatingAdmissionPolicy (CEL)** | 用 CEL 表达式在准入阶段校验 RoleBinding 合规性，替代 Webhook | GA |
+| **kubectl auth can-i --list** | 一键列出 Subject 全部有效权限，审计利器 | GA |
+| **SSZ (Static Authorization)** | K8s 1.31+ 静态授权策略文件，无需 API Server 重启即可更新 | Beta |
+| **Kyverno/OPA 策略审计** | 自动检测过度授权的 RoleBinding 并告警 | GA |
+
+## 生产最佳实践
+
+1. **最小权限原则**：仅授予完成工作所需的 verbs/resources，避免直接绑定 `cluster-admin` 或 `edit`
+2. **一应用一 ServiceAccount**：每个工作负载使用独立 SA，RoleBinding 精确绑定到该 SA
+3. **定期权限审计**：使用 `kubectl auth can-i --list` 或 Kyverno 策略定期扫描过度授权
+4. **避免通配符规则**：`resources: ["*"]` 和 `verbs: ["*"]` 仅用于集群管理员，业务 Namespace 严禁使用
+5. **短期授权机制**：临时排障使用带 TTL 的 RoleBinding，配合自动清理 CronJob 防止权限残留

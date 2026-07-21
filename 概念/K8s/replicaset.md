@@ -4,8 +4,9 @@ category: -concepts
 tags: ["kubernetes", "k8s", "controller", "cloud-native", "alibaba-cloud"]
 summary: "Kubernetes ReplicaSet 是确保指定数量 Pod 副本持续运行的控制器，通过 selector 管理 Pod 生命周期，是 Deployment 实现滚动更新和自愈的基础层。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
+lifecycle: reviewed
 aliases:
   - "ReplicaSet"
   - "RS"
@@ -108,5 +109,22 @@ kubectl delete rs ai-inference-rs  # ⚠️ HIGH-RISK — 删除 K8s 资源，�
 - [[概念/kubernetes|Kubernetes]] — K8s 编排平台
 - [[概念/pod|Pod]] — ReplicaSet 管理的最小单元
 - [[概念/deployment|Deployment]] — 基于 ReplicaSet 的声明式无状态部署
+- [[概念/label|Label]] — 标签与选择器
 - [[概念/kubectl|kubectl]] — 管理 ReplicaSet 的 CLI 工具
-- [[概念/containerd|containerd]] — Pod 底层容器运行时
+
+---
+
+## 2026 ReplicaSet 最佳实践
+
+| 场景 | 使用方式 | 说明 |
+|------|----------|------|
+| 无状态应用 | Deployment | 推荐，支持滚动更新 |
+| 稳定副本 | 直接使用 RS | 不需要更新策略 |
+| 自定义 Operator | 底层资源 | Operator 管理 RS |
+
+## 生产最佳实践
+
+1. **优先用 Deployment**：Deployment 提供滚动更新和回滚
+2. **Label 匹配**：确保 selector 与 Pod template labels 一致
+3. **资源限制**：设置合理的 requests/limits
+4. **监控副本数**：关注期望副本数与实际副本数差异

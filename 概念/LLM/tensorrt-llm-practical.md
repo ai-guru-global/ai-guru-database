@@ -24,7 +24,7 @@ summary: TensorRT-LLM 是 NVIDIA 推出的高性能 LLM 推理 SDK，通过算�
 lifecycle: reviewed
 tier: supporting
 created: 2026-06-25
-updated: 2026-06-25
+updated: 2026-07-21
 sources: []
 ---
 
@@ -195,3 +195,23 @@ python examples/quantization/quantize.py \
 - [[概念/quantization|模型量化]]
 - [[概念/model-serving|模型服务选型]]
 - [[概念/llm-inference-checklist|推理上线检查清单]]
+
+---
+
+## 2026 TensorRT-LLM 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **TensorRT-LLM v0.12+** | NVIDIA 官方 LLM 推理库 | GA |
+| **In-Flight Batching** | 动态批处理，GPU 利用率提升 2-3x | GA |
+| **Paged KV Cache** | 分页 KV 管理，内存利用率提升 | GA |
+| **FP8 量化** | H100 原生 FP8，速度提升 2x | GA |
+| **Triton 集成** | 与 Triton Inference Server 集成 | GA |
+
+## 生产最佳实践
+
+1. **NVIDIA GPU 首选**：NVIDIA GPU 环境优先选择 TensorRT-LLM
+2. **FP8 量化**：H100+ GPU 启用 FP8 量化，速度提升 2x
+3. **In-Flight Batching 必开**：动态批处理最大化 GPU 利用率
+4. **与 vLLM 对比**：TensorRT-LLM 性能更高，vLLM 更易用
+5. **Triton 部署**：生产环境用 Triton Inference Server 部署

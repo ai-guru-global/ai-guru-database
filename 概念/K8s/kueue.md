@@ -24,7 +24,7 @@ base_confidence: 0.85
 lifecycle: reviewed
 tier: core
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-07-21
 aliases:
   - Kueue
 
@@ -106,3 +106,22 @@ aliases:
 - [[概念/volcano]] — Volcano
 - [[概念/kubeflow]] — Kubeflow
 - [[概念/ray]] — Ray
+- [[概念/hami]] — HAMi GPU 共享
+
+---
+
+## 2026 Kueue 生态
+
+| 特性 | 说明 | 状态 |
+|------|------|------|
+| **K8s SIG 官方** | 原生设计 | GA |
+| **ClusterQueue** | 集群级配额 | GA |
+| **ResourceFlavor** | 资源类型区分 | GA |
+| **与 Volcano 对比** | Kueue 更轻量 | - |
+
+## 生产最佳实践
+
+1. **多租户配额**：按团队/项目划分 ClusterQueue
+2. **与 Volcano 对比**：简单排队用 Kueue，Gang Scheduling 用 Volcano
+3. **ResourceFlavor**：区分 spot/on-demand GPU
+4. **与 Kubeflow 集成**：为训练作业提供排队能力

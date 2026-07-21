@@ -23,6 +23,8 @@ provenance:
 base_confidence: 0.85
 lifecycle: reviewed
 tier: core
+created: 2026-06-12
+updated: 2026-07-21
 ---
 
 # DeepSeek 模型系列
@@ -193,4 +195,24 @@ AI Stack V2.14.0 预置以下 DeepSeek 模型：
 - [[概念/llm-architectures]] — LLM 架构
 - [[概念/flash-attention-kernels]] — FlashMLA 算子
 - [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
-- [[治理/modern-ai-training-stack|现代 AI 训练栈]] — 从预训练到推理扩展的统一视角
+- [[治理/modern-ai-training-stack|现代 AI 训练栈]] — 从预训练到推理扩展的统一视 角
+
+---
+
+## 2026 DeepSeek 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **DeepSeek-V3** | MoE + MLA，671B 参数，激活 37B | GA |
+| **DeepSeek-R1** | RL 驱动推理模型，开源可复现 | GA |
+| **DeepSeek-V4** | 下一代模型，性能进一步提升 | 预览 |
+| **MLA 注意力** | 低秩 KV 压缩，KV Cache 减少 7-28x | GA |
+| **MTP 投机解码** | 多 Token 预测，推理加速 2x | GA |
+
+## 生产最佳实践
+
+1. **开源优势**：DeepSeek 完全开源，可本地部署，数据隐私有保障
+2. **MLA 必用**：部署 DeepSeek 必须启用 MLA，KV Cache 减少 7-28x
+3. **MoE 降本**：MoE 架构推理成本低，适合高并发场景
+4. **推理模型**：数学/代码/逻辑用 DeepSeek-R1
+5. **与 GPT 对比**：生产前对比 DeepSeek 与 GPT 的效果和成本

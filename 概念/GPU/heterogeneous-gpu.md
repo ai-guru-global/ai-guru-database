@@ -19,7 +19,7 @@ lifecycle: draft
 lifecycle_changed: 2026-06-03
 tier: supporting
 created: 2026-06-03 00:00:00+00:00
-updated: 2026-06-03 00:00:00+00:00
+updated: 2026-07-21 00:00:00+00:00
 aliases:
   - "Heterogeneous Gpu"
   - "heterogeneous gpu"
@@ -92,3 +92,23 @@ aliases:
 - [[架构基建/AI_Stack/HAMi_Deep_Dive]] — HAMi 深度解析
 - [[架构基建/AI_Stack_Deep_Dive]] — 阿里云 AI Stack
 - [[数学基础/AI_Hardware/Chinese_AI_Chips_Deep_Dive]] — 国产 AI 芯片12家厂商深度解析
+
+---
+
+## 2026 异构 GPU 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **HAMi** | 异构 GPU 统一虚拟化与调度 | GA |
+| **DRA** | K8s 动态资源分配 | Beta |
+| **NVIDIA GPU** | CUDA 生态，最成熟 | GA |
+| **AMD MI300X** | ROCm 生态，192GB HBM3 | GA |
+| **国产 GPU** | 华为 Ascend/寒武纪/海光 DCU | GA |
+
+## 生产最佳实践
+
+1. **统一调度**：用 HAMi 统一调度异构 GPU
+2. **CUDA 兼容**：优先选择 CUDA 兼容的 GPU
+3. **驱动管理**：不同 GPU 需要不同驱动，统一管理
+4. **性能对比**：生产前对比不同 GPU 的性能和成本
+5. **生态成熟度**：NVIDIA 生态最成熟，国产 GPU 需验证

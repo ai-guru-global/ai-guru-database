@@ -24,7 +24,7 @@ provenance:
   ambiguous: 0.05
 base_confidence: 0.90
 created: 2026-06-24
-updated: 2026-06-24
+updated: 2026-07-21
 ---
 
 # ArgoCD（GitOps 持续部署工具）
@@ -134,3 +134,23 @@ spec:
 - [[概念/helm]] — Helm（ArgoCD 也支持）
 - [[概念/ci-cd]] — CI/CD 流水线
 - [[概念/policy-as-code]] — Policy as Code
+
+---
+
+## 2026 ArgoCD 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **ArgoCD** | GitOps 持续交付工具 | GA |
+| **ApplicationSet** | 多集群/多应用管理 | GA |
+| **Notifications** | 事件通知集成 | GA |
+| **Image Updater** | 自动镜像更新 | GA |
+| **Helm/Kustomize** | 原生支持 | GA |
+
+## 生产最佳实践
+
+1. **GitOps 必用**：K8s 部署必须用 GitOps
+2. **自动同步**：配置自动同步，Git 变更自动部署
+3. **健康检查**：配置应用健康检查
+4. **与 Argo Rollouts 配合**：ArgoCD + Argo Rollouts 实现渐进式交付
+5. **权限控制**：配置 RBAC 权限控制

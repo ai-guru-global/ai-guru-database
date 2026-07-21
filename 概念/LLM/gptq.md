@@ -24,7 +24,7 @@ provenance:
   ambiguous: 0.05
 base_confidence: 0.88
 created: 2026-06-24
-updated: 2026-06-24
+updated: 2026-07-21
 ---
 
 # GPTQ（Post-Training Quantization for GPT）
@@ -148,3 +148,23 @@ llm = LLM(model="qwen2.5-7b-gptq", quantization="gptq")
 - [[概念/quantization]] — 量化总览
 - [[概念/model-compression]] — 模型压缩
 - [[部署推理/Quantization]] — 量化章节- [[概念/pruning]] — 剪枝
+
+---
+
+## 2026 GPTQ 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **GPTQ 4-bit** | 最常用量化精度，质量损失 <2% | GA |
+| **AutoGPTQ** | 官方量化工具，支持 CUDA 加速 | GA |
+| **GPTQ + ExLlamaV2** | 推理加速，吐吐量提升 2-3x | GA |
+| **GPTQ 8-bit** | 更高精度，质量损失 <1% | GA |
+| **GPTQ 3-bit** | 极端压缩，质量损失较大 | 实验 |
+
+## 生产最佳实践
+
+1. **精度选择**：生产用 4-bit，质量敏感场景用 8-bit
+2. **校准数据集**：用目标领域数据校准，提高量化质量
+3. **与 AWQ 对比**：GPTQ 适合 NVIDIA GPU，AWQ 适合边缘设备
+4. **推理框架配合**：GPTQ 模型用 vLLM/TGI/ExLlamaV2 推理
+5. **质量验证**：量化后必须验证输出质量，避免过度压缩

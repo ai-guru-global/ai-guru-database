@@ -4,8 +4,9 @@ category: -concepts
 tags: ["kubernetes", "k8s", "limit-range", "cloud-native", "alibaba-cloud", "resource-management"]
 summary: "LimitRange 是 Kubernetes 命名空间级策略，用于为 Pod、容器或 PVC 设置默认资源请求/限制及最小/最大值，防止资源滥用并简化 YAML 配置。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
+lifecycle: reviewed
 aliases:
   - "LimitRange"
   - "Limit Range"
@@ -103,4 +104,22 @@ kubectl run overload --image=nginx --requests='cpu=5' --limits='cpu=6' -n ai-wor
 - [[概念/kubernetes|Kubernetes]] — K8s 编排平台
 - [[概念/resource-quota|ResourceQuota]] — 命名空间级资源配额
 - [[概念/pod|Pod]] — LimitRange 的主要作用对象
+- [[概念/namespace|Namespace]] — 作用范围
 - [[概念/kubectl|kubectl]] — 管理 LimitRange 的 CLI 工具
+
+---
+
+## 2026 LimitRange 最佳实践
+
+| 场景 | 配置 | 说明 |
+|------|------|------|
+| 默认资源 | default/defaultRequest | 简化 YAML |
+| 防止滥用 | min/max | 限制资源边界 |
+| 控制超售 | maxLimitRequestRatio | 限制超售比例 |
+
+## 生产最佳实践
+
+1. **与 ResourceQuota 配合**：LimitRange 管单对象，Quota 管总量
+2. **设置默认值**：为未声明资源的 Pod 提供默认值
+3. **限制最大值**：防止单个容器占用过多资源
+4. **多租户模板**：按 Namespace 模板化下发 LimitRange

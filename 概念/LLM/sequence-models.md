@@ -14,11 +14,11 @@ provenance:
   inferred: 0.10
   ambiguous: 0.05
 base_confidence: 0.80
-lifecycle: draft
-lifecycle_changed: 2026-05-31
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
 tier: core
 created: 2026-05-31T00:00:00Z
-updated: 2026-05-31T00:00:00Z
+updated: 2026-07-21T00:00:00Z
 aliases:
   - "Sequence Models"
   - "sequence models"
@@ -128,3 +128,23 @@ Bahdanau et al.（2015）提出注意力机制，允许解码器在每步"回看
 - [[概念/LLM/transformer-architecture-plain|Transformer 大白话]]
 - [[概念/LLM/llm-architectures|LLM 架构]]
 - [[大模型/Sequence_Models/Sequence_Models|序列模型深度解析]]
+
+---
+
+## 2026 序列模型生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Mamba-2** | 选择性状态空间模型，线性复杂度，超长序列 | GA |
+| **RWKV-7** | 结合 RNN + Transformer 优势，流式推理 | GA |
+| **xLSTM** | 现代 LSTM 变体，指数门控 + 新记忆结构 | 研究 |
+| **混合架构** | Mamba + Attention 混合，兼顾效果和效率 | 趋势 |
+| **Jamba** | AI21 的 Mamba-Transformer 混合模型 | GA |
+
+## 生产最佳实践
+
+1. **通用场景用 Transformer**：GPT/Llama/Qwen 等主流模型仍是首选
+2. **超长序列考虑 Mamba**：1M+ 上下文场景，Mamba 线性复杂度优势明显
+3. **流式推理用 RWKV**：实时对话/流式生成场景，RWKV 天然支持
+4. **边缘设备考虑轻量级**：资源受限时考虑 RWKV/Mamba 等高效架构
+5. **混合架构关注**：Mamba + Attention 混合架构是 2026 年趋势，值得跟进

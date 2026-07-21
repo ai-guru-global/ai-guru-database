@@ -28,7 +28,7 @@ provenance:
   ambiguous: 0.05
 base_confidence: 0.85
 created: 2026-06-24
-updated: 2026-06-24
+updated: 2026-07-21
 ---
 
 # AI 可观测性（LLM Observability）
@@ -178,3 +178,23 @@ safety_violation_rate: < 0.1%     # 安全违规 ≤ 0.1%
 ---
 
 **参见**：[[Prometheus_Grafana_Deep_Dive]] · [[模型运维/Observability/LLM_Observability]] · [[概念/prometheus]] · [[概念/grafana]] · [[运维/README|运维]] · [[治理/cheatsheets/cheatsheet-llm-inference]]
+
+---
+
+## 2026 可观测性生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **OpenTelemetry** | 统一遥测标准 | GA |
+| **Prometheus + Grafana** | 指标 + 可视化 | GA |
+| **Loki** | 日志聚合 | GA |
+| **Tempo/Jaeger** | 分布式追踪 | GA |
+| **Langfuse** | LLM 可观测性 | GA |
+
+## 生产最佳实践
+
+1. **三大支柱**：指标 + 日志 + 追踪 全覆盖
+2. **OpenTelemetry**：用 OpenTelemetry 统一遥测
+3. **LLM 可观测**：LLM 应用用 Langfuse 追踪
+4. **告警配置**：关键指标配置告警
+5. **成本意识**：可观测性数据有成本，合理采样

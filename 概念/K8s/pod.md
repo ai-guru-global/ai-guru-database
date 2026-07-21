@@ -4,8 +4,9 @@ category: -concepts
 tags: ["kubernetes", "k8s", "pod", "workload", "container", "cloud-native", "alibaba-cloud"]
 summary: "Pod 是 Kubernetes 的最小可部署单元，封装一个或多个紧密耦合的容器，共享网络、存储与生命周期，是 AI 推理与训练服务运行的基本载体。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
+lifecycle: reviewed
 aliases:
   - "Pod"
   - "Kubernetes Pod"
@@ -113,3 +114,21 @@ kubectl exec -it ai-inference-pod -c vllm -- /bin/bash
 - [[概念/containerd|containerd]] — 主流 CRI 实现
 - [[概念/deployment|Deployment]] — Pod 控制器
 - [[概念/service|Service]] — Pod 服务发现与负载均衡
+- [[概念/pod-security-standards|Pod Security Standards]] — Pod 安全标准
+
+---
+
+## 2026 Pod 最佳实践
+
+| 场景 | 配置 | 说明 |
+|------|------|------|
+| AI 推理 | GPU + Sidecar | 主容器 + 日志/监控 |
+| 批处理 | restartPolicy: OnFailure | 失败重试 |
+| 长服务 | livenessProbe + readinessProbe | 健康检查 |
+
+## 生产最佳实践
+
+1. **资源限制**：设置合理的 requests/limits
+2. **健康检查**：配置 liveness/readiness/startup 探针
+3. **安全上下文**：设置 runAsNonRoot、readOnlyRootFilesystem
+4. **日志采集**：使用 Sidecar 或 DaemonSet 采集日志

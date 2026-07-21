@@ -22,7 +22,7 @@ provenance:
   ambiguous: 0.05
 base_confidence: 0.90
 created: 2026-06-24
-updated: 2026-06-24
+updated: 2026-07-21
 ---
 
 # LLM Inference Engine（LLM 推理引擎）
@@ -123,3 +123,23 @@ updated: 2026-06-24
 
 - [[../../大模型/LLM_Inference/LLM_Inference_Deep_Dive|LLM 推理深度解析]] — vLLM/TensorRT-LLM/SGLang 等推理引擎的架构与优化
 - [[../../大模型/LLM_Deployment/LLM_Production_Deployment_Runbook|LLM 生产部署 Runbook]] — 推理引擎的生产环境选型与运维
+
+---
+
+## 2026 推理引擎生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **SGLang RadixAttention** | 前缀复用，多轮对话/RAG 场景性能提升 29% | GA |
+| **vLLM v0.7** | PagedAttention + Speculative Decoding + 多 LoRA | GA |
+| **TensorRT-LLM v0.15** | NVIDIA 极致优化，FP8 原生支持 | GA |
+| **FP8 推理** | H100+ 默认精度，显存减半 + 速度提升 30% | GA |
+| **Prefill-Decode 分离** | 独立扩缩容，优化资源利用率 | Beta |
+
+## 生产最佳实践
+
+1. **引擎选型**：通用场景用 vLLM，性能优先用 SGLang/TensorRT-LLM，边缘用 llama.cpp
+2. **FP8 优先**：H100+ GPU 默认启用 FP8，质量保留 >99% 且性能大幅提升
+3. **Continuous Batching 必开**：动态批处理提升 GPU 利用率 5-10x
+4. **KV Cache 管理**：长上下文场景启用 GQA/MLA + PagedAttention，避免 OOM
+5. **监控全覆盖**：TTFT/TPOT/吐吐量 + GPU 利用率/显存/温度全链路监控

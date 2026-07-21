@@ -20,7 +20,7 @@ base_confidence: 0.90
 lifecycle: reviewed
 tier: core
 created: 2026-06-04
-updated: 2026-06-04
+updated: 2026-07-21
 aliases:
   - "Self Supervised Learning"
   - "self supervised learning"
@@ -86,3 +86,23 @@ aliases:
 - [[深度学习/Self_Supervised_Learning/README]] — 自监督学习深度解析
 - [[概念/neural-networks]] — 神经网络基础
 - [[概念/llm-architectures]] — LLM 架构（自监督预训练）
+
+---
+
+## 2026 自监督学习生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Next Token Prediction** | LLM 预训练目标 | GA |
+| **Masked LM** | BERT 式掩码预测 | GA |
+| **对比学习** | SimCLR/MoCo 图像表示学习 | GA |
+| **DINO** | 自监督视觉 Transformer | GA |
+| **多模态预训练** | 图文对比学习 | GA |
+
+## 生产最佳实践
+
+1. **预训练必用**：大模型预训练必须用自监督学习
+2. **数据效率**：自监督学习利用无标签数据
+3. **迁移学习**：预训练模型微调到下游任务
+4. **多模态**：图文/音视频用多模态自监督
+5. **与有监督对比**：自监督预训练 + 有监督微调

@@ -25,7 +25,7 @@ summary: 本页汇总 LLM 训练（预训练、SFT、对齐）过程中需要关
 lifecycle: reviewed
 tier: supporting
 created: 2026-06-25
-updated: 2026-06-25
+updated: 2026-07-21
 sources: []
 ---
 
@@ -135,3 +135,23 @@ LLM 训练需要在**数据质量**、**超参数**、**训练稳定性**、**�
 - [[概念/distributed-training|分布式训练]]
 - [[概念/mixed-precision|混合精度训练]]
 - [[概念/perplexity|困惑度 PPL]]
+
+---
+
+## 2026 训练生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **FP8 训练** | H100+ 原生支持，吐吐量提升 2x | GA |
+| **3D 并行** | 数据 + 模型 + 流水线并行线性扩展 | GA |
+| **FlashAttention-3** | H100 专用 IO 感知注意力，1.5-2x 加速 | GA |
+| **ZeRO-Infinity** | 优化器状态卸载到 NVMe，支持更大模型 | GA |
+| **GRPO/DPO** | 无需 Critic 的 RLHF 替代方案 | GA |
+
+## 生产最佳实践
+
+1. **FP8 优先**：H100+ GPU 默认启用 FP8 训练，质量保留且速度翻倍
+2. **学习率调度**：使用 Cosine Annealing + Warmup，避免训练不稳定
+3. **梯度累积**：显存不足时用梯度累积模拟大 batch，避免 OOM
+4. **Checkpoint 定期保存**：每 N 步保存 checkpoint，支持断点续训
+5. **监控 loss 曲线**：实时监控 train/eval loss，及时发现过拟合或发散

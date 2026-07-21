@@ -4,8 +4,9 @@ category: -concepts
 tags: ["kubernetes", "k8s", "cni", "cloud-native", "alibaba-cloud"]
 summary: "CNI（Container Network Interface）是 Kubernetes 与网络插件之间的标准接口，负责 Pod 的 IP 分配、虚拟网卡创建和跨节点通信，是 K8s 容器网络可插拔的基础。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
+lifecycle: reviewed
 aliases:
   - "CNI"
   - "Container Network Interface"
@@ -90,5 +91,23 @@ spec:
 - [[概念/kubernetes|Kubernetes]] — K8s 编排平台
 - [[概念/pod|Pod]] — Pod 网络主体
 - [[概念/service|Service]] — K8s 服务发现与负载均衡
+- [[概念/network-policy|NetworkPolicy]] — 网络策略
 - [[概念/cri|CRI]] — 容器运行时接口
-- [[概念/kubectl|kubectl]] — K8s 命令行工具
+
+---
+
+## 2026 CNI 生态
+
+| 插件 | 特点 | 适用场景 |
+|------|------|----------|
+| **Cilium** | eBPF、高性能 | 云原生安全 |
+| **Calico** | BGP、NetworkPolicy | 生产环境 |
+| **Flannel** | 轻量、简单 | 中小集群 |
+| **Terway** | 阿里云 ENI 直连 | 阿里云 ACK |
+
+## 生产最佳实践
+
+1. **生产用 Calico/Cilium**：支持 NetworkPolicy，性能高
+2. **网络策略**：启用 NetworkPolicy 限制 Pod 间访问
+3. **IP 规划**：合理规划 Pod CIDR，避免与主机网络冲突
+4. **性能监控**：关注网络延迟、丢包率

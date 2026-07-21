@@ -23,7 +23,7 @@ summary: 束搜索在解码的每一步保留概率最高的 k 个候选序列�
 lifecycle: reviewed
 tier: core
 created: 2026-06-25
-updated: 2026-06-25
+updated: 2026-07-21
 sources: []
 ---
 
@@ -156,3 +156,23 @@ Beam Search (k=1) = Greedy Decoding
 - [[概念/greedy-decoding|贪心解码]]
 - [[概念/autoregressive-generation|自回归生成]]
 - [[概念/model-inference|模型推理]]
+
+---
+
+## 2026 Beam Search 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Beam Search** | 保留 Top-k 候选序列，平衡质量与多样性 | GA |
+| **Diverse Beam Search** | 分组束搜索，增加输出多样性 | GA |
+| **Length Penalty** | 长度惩罚，避免过短/过长输出 | GA |
+| **No Repeat N-gram** | 禁止重复 N-gram，避免循环 | GA |
+| **Beam + Sampling** | 束搜索 + 采样混合策略 | 研究 |
+
+## 生产最佳实践
+
+1. **翻译任务适用**：机器翻译/摘要等确定性任务用 Beam Search
+2. **beam_size 选择**：生产环境用 beam_size=4-8，平衡质量与速度
+3. **长度惩罚必配**：设置 length_penalty=0.6-1.0，避免过短输出
+4. **创意任务不用**：创意写作/对话用采样策略，不用 Beam Search
+5. **与采样对比**：生产前对比 Beam Search 与采样的效果，选择最优

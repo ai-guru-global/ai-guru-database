@@ -19,11 +19,11 @@ provenance:
   inferred: 0.10
   ambiguous: 0.05
 base_confidence: 0.80
-lifecycle: draft
-lifecycle_changed: 2026-05-31
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
 tier: supporting
 created: 2026-05-31T00:00:00Z
-updated: 2026-05-31T00:00:00Z
+updated: 2026-07-21T00:00:00Z
 ---
 
 # 特征工程
@@ -124,3 +124,23 @@ updated: 2026-05-31T00:00:00Z
 - [[机器学习/Anomaly_Detection/Anomaly_Detection.md|Anomaly_Detection]]
 - [[机器学习/Anomaly_Detection/Anomaly_Detection_for_dummy.md|Anomaly_Detection_for_dummy]]
 - [[机器学习/AutoML/AutoML.md|AutoML]]
+
+---
+
+## 2026 特征工程生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Feature Store** | 特征存储/复用 | GA |
+| **Feast** | 开源 Feature Store | GA |
+| **自动特征工程** | AutoML 自动特征生成 | GA |
+| **特征监控** | 特征漂移检测 | GA |
+| **嵌入特征** | 深度学习嵌入作为特征 | GA |
+
+## 生产最佳实践
+
+1. **特征存储**：用 Feature Store 实现特征复用
+2. **特征监控**：监控特征漂移，及时告警
+3. **自动特征**：用 AutoML 自动特征工程
+4. **领域知识**：结合领域知识设计特征
+5. **特征选择**：用特征选择去除冗余特征

@@ -4,7 +4,7 @@ category: -concepts
 tags: ["kubernetes", "k8s", "persistent-volume", "storage", "cloud-native", "alibaba-cloud"]
 summary: "PersistentVolume（PV）是 Kubernetes 中由集群管理员或存储类动态供给的持久化存储资源，与 Pod 生命周期解耦，为有状态应用提供落盘能力。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
 aliases:
   - "PV"
@@ -138,3 +138,23 @@ kubectl get sc
 - [[概念/pod|Pod]] — K8s 最小调度单元
 - [[概念/cri|CRI]] — 容器运行时接口
 - [[概念/containerd|containerd]] — 容器运行时
+
+---
+
+## 2026 PersistentVolume 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **ReadWriteOncePod (RWOP)** | 单 Pod 独占访问模式，防止多 Pod 误挂载同一卷 | GA |
+| **VolumeSnapshot v1** | 标准化快照/恢复，支持级联快照与定时备份 | GA |
+| **Generic Ephemeral Volumes** | Pod 级临时卷，由 CSI 动态供给，生命周期与 Pod 绑定 | GA |
+| **CSI Migration** | In-Tree 插件自动迁移至 CSI，无需修改 PVC | GA |
+| **Volume Populator** | 从快照/镜像/自定义源初始化卷数据 | Beta |
+
+## 生产最佳实践
+
+1. **回收策略明确**：生产数据卷使用 `reclaimPolicy: Retain`，避免误删 PVC 导致数据丢失
+2. **WaitForFirstConsumer**：设置 `volumeBindingMode: WaitForFirstConsumer`，避免卷与 Pod 调度到不同可用区
+3. **定期快照备份**：配合 VolumeSnapshot + CronJob 实现关键数据卷的定时保护
+4. **监控 PV 状态**：对 PV/PVC 的 Pending/Lost 状态设置告警，及时发现存储异常
+5. **容量规划**：启用 `allowVolumeExpansion`，支持在线扩容而无需重建 PVC

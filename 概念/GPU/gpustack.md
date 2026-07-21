@@ -23,6 +23,8 @@ sources:
 - 部署推理/Inference_Engines/vLLM_Deep_Dive.md
 - 部署推理/Inference_Engines/SGLang_Deep_Dive.md
 summary: GPUStack 是开源的 GPU 集群管理器与私有 MaaS 平台，支持 NVIDIA/AMD/昇腾/摩尔线程等异构 GPU，通过可插拔的 vLLM、SGLang、llama-box、MindIE 等后端运行 LLM、VLM、Embedding、Reranker、语音和图像模型，并提供 OpenAI 兼容 API。
+created: 2026-06-12
+updated: 2026-07-21
 provenance:
   extracted: 0.85
   inferred: 0.1
@@ -86,3 +88,23 @@ GPUStack
 - [[部署推理/Inference_Engines/SGLang_Deep_Dive|SGLang 深度解析]]
 - [[概念/model-serving|模型服务]]
 - [[概念/model-deployment|模型部署]]
+
+---
+
+## 2026 GPUStack 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **GPUStack v0.5+** | 开源 GPU 集群管理器 | GA |
+| **异构 GPU 支持** | NVIDIA/AMD/昇腾/摩尔线程 | GA |
+| **多后端支持** | vLLM/SGLang/llama-box/MindIE | GA |
+| **OpenAI 兼容 API** | 无缝替换 OpenAI API | GA |
+| **Web UI** | 可视化管理界面 | GA |
+
+## 生产最佳实践
+
+1. **私有 MaaS**：企业私有化部署 LLM 服务用 GPUStack
+2. **异构 GPU**：支持多种 GPU，避免供应商锁定
+3. **后端选择**：高并发用 vLLM，单用户用 llama-box
+4. **与 K8s 对比**：GPUStack 更轻量，K8s 更强大
+5. **监控集成**：集成 Prometheus 监控 GPU 利用率

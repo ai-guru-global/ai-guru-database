@@ -25,7 +25,7 @@ summary: LLaMA 是 Meta 开源的 Transformer Decoder 架构模型系列，从 L
 lifecycle: reviewed
 tier: core
 created: 2026-06-25
-updated: 2026-06-25
+updated: 2026-07-21
 sources: []
 ---
 
@@ -143,3 +143,23 @@ LLaMA 系列均采用以下设计：
 ## See Also (深度专题)
 
 - [[../../大模型/Global_LLM_Ecosystem/Meta_LLaMA_Deep_Dive|Meta LLaMA 深度解析]] — LLaMA 系列架构演进、GQA 优化与开源生态影响
+
+---
+
+## 2026 LLaMA 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Llama 4** | MoE 架构，支持 10M Token 上下文 | GA |
+| **Llama 3.3** | 70B 参数，性能接近 405B | GA |
+| **Llama Guard** | 安全护栏模型，内容审核 | GA |
+| **Code Llama** | 代码专用模型，支持 70+ 语言 | GA |
+| **Llama Stack** | 官方部署框架，支持本地/云端 | GA |
+
+## 生产最佳实践
+
+1. **模型选择**：简单任务用 8B，复杂任务用 70B，极端场景用 405B
+2. **量化部署**：生产环境用 AWQ/GPTQ 4-bit 量化，平衡质量与速度
+3. **长上下文**：Llama 4 支持 10M Token，适合超长文档
+4. **微调优化**：用 LoRA/QLoRA 微调适配特定领域
+5. **开源优势**：完全开源，可本地部署，数据隐私有保障

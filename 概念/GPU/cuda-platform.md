@@ -20,7 +20,7 @@ base_confidence: 0.90
 lifecycle: reviewed
 tier: core
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-07-21
 aliases:
   - "CUDA"
   - "Compute Unified Device Architecture"
@@ -165,3 +165,23 @@ CUDA Graph 将一系列 kernel 调用捕获为静态计算图，减少 kernel la
 - [[概念/mixed-precision]] — 混合精度（Tensor Core 加速）
 - [[概念/heterogeneous-gpu]] — 异构 GPU（CUDA 兼容性需求）
 - [[架构基建/AI_Stack_Deep_Dive]] — AI Stack（CUDA 兼容）
+
+---
+
+## 2026 CUDA 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **CUDA 12.x** | 最新 CUDA 版本，支持 H100/B100 | GA |
+| **cuDNN** | 深度学习原语库 | GA |
+| **TensorRT** | 推理优化引擎 | GA |
+| **NCCL** | 多 GPU 集合通信库 | GA |
+| **CUDA Graph** | 计算图优化，降低启动开销 | GA |
+
+## 生产最佳实践
+
+1. **CUDA 版本匹配**：确保 CUDA 版本与 GPU 驱动/框架匹配
+2. **cuDNN 必装**：深度学习训练/推理必须安装 cuDNN
+3. **TensorRT 加速**：推理场景用 TensorRT 加速
+4. **CUDA Graph**：重复计算用 CUDA Graph 降低启动开销
+5. **驱动更新**：定期更新 NVIDIA 驱动，获取性能优化

@@ -4,8 +4,9 @@ category: -concepts
 tags: ["kubernetes", "k8s", "storage", "cloud-native", "alibaba-cloud"]
 summary: "PersistentVolumeClaim 是 Kubernetes 中 Pod 申请持久化存储的声明式对象，负责将工作负载与后端存储（云盘、NAS、OSS 等）解耦。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
+lifecycle: reviewed
 aliases:
   - "PVC"
   - "PersistentVolumeClaim"
@@ -104,4 +105,23 @@ kubectl get pv
 - [[概念/kubernetes|Kubernetes]] — 容器编排平台
 - [[概念/pod|Pod]] — PVC 的最终挂载对象
 - [[概念/statefulset|StatefulSet]] — 常与 PVC 配合的有状态工作负载
+- [[概念/persistent-volume|PersistentVolume]] — 持久卷
+- [[概念/csi|CSI]] — 容器存储接口
 - [[概念/configmap|ConfigMap]] — 配置数据挂载方式
+
+---
+
+## 2026 PVC 最佳实践
+
+| 访问模式 | 适用场景 | 后端存储 |
+|----------|----------|----------|
+| RWO | 数据库、单实例服务 | 云盘、本地盘 |
+| ROX | 共享只读数据集 | NAS、对象存储 |
+| RWX | 多副本训练、共享 Checkpoint | NAS、并行文件系统 |
+
+## 生产最佳实践
+
+1. **AI 训练用 RWX**：分布式训练需要共享存储
+2. **动态供给**：使用 StorageClass 自动创建 PV
+3. **容量规划**：合理设置存储容量，避免浪费
+4. **备份策略**：重要数据定期备份

@@ -17,11 +17,11 @@ provenance:
   inferred: 0.15
   ambiguous: 0.05
 base_confidence: 0.75
-lifecycle: draft
-lifecycle_changed: 2026-05-31
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
 tier: supporting
 created: 2026-05-31T00:00:00Z
-updated: 2026-05-31T00:00:00Z
+updated: 2026-07-21T00:00:00Z
 ---
 
 # 概率论与数理统计
@@ -186,3 +186,23 @@ Metropolis-Hastings算法：
 - 数学基础/Probability_Statistics/Probability_Statistics.md
 - deep-reinforcement-learning unsupervised-learning Book Chapter 3: Probability and Information Theory
 - Probability Theory: The Logic of Science - E.T. Jaynes
+
+---
+
+## 2026 概率统计生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Softmax** | 概率分布输出 | GA |
+| **最大似然估计** | 参数估计方法 | GA |
+| **假设检验** | 统计显著性检验 | GA |
+| **A/B 测试** | 实验设计/效果评估 | GA |
+| **概率图模型** | 贝叶斯网络/马尔可夫随机场 | GA |
+
+## 生产最佳实践
+
+1. **Softmax 输出**：分类模型用 Softmax 输出概率
+2. **A/B 测试**：产品决策用 A/B 测试
+3. **假设检验**：实验结果用假设检验验证
+4. **不确定性量化**：预测结果量化不确定性
+5. **贝叶斯思维**：决策用贝叶斯思维更新信念

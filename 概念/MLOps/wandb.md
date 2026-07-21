@@ -16,6 +16,8 @@ provenance:
   ambiguous: 0.10
 base_confidence: 0.90
 lifecycle: reviewed
+created: 2026-06-12
+updated: 2026-07-21
 tier: core
 ---
 
@@ -167,3 +169,23 @@ wandb.agent(sweep_id, function=train_fn, count=50)
 4. **Weave (LLM)**：新推出的 LLM 专属追踪，对标 LangSmith
 5. **闭源服务端**：数据存在 W&B 云端，企业版支持私有部署
 6. **学术免费**：学术和个人项目免费使用，门槛极低
+
+---
+
+## 2026 Weights & Biases 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **W&B Experiments** | 实验追踪/可视化 | GA |
+| **W&B Sweeps** | 超参数调优 | GA |
+| **W&B Artifacts** | 模型/数据版本控制 | GA |
+| **W&B Weave** | LLM 专属追踪 | GA |
+| **W&B Reports** | 实验报告生成 | GA |
+
+## 生产最佳实践
+
+1. **实验追踪**：所有实验用 W&B 追踪
+2. **Sweeps 调优**：用 Sweeps 进行超参数调优
+3. **Artifacts 版本**：模型/数据用 Artifacts 版本控制
+4. **Weave for LLM**：LLM 项目用 Weave 追踪
+5. **团队协作**：实验结果团队共享

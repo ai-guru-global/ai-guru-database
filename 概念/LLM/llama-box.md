@@ -19,11 +19,11 @@ provenance:
   inferred: 0.80
   ambiguous: 0.10
 base_confidence: 0.80
-lifecycle: draft
-lifecycle_changed: 2026-06-25
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
 tier: supporting
 created: 2026-06-25
-updated: 2026-06-25
+updated: 2026-07-21
 aliases:
   - LlamaBox
   - llama box
@@ -113,3 +113,23 @@ llama.cpp 本身是一个推理引擎库，直接调用需要写 C/C++ 代码或
 - [[概念/edge-llm]] — 边缘 LLM
 - [[概念/model-serving]] — 模型服务
 - [[部署推理/Inference_Engines/llama_cpp_Deep_Dive]] — llama.cpp 深度解析
+
+---
+
+## 2026 llama-box 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **llama.cpp b4000+** | 支持 GGUF v3、Flash Attention、Metal/Vulkan 加速 | GA |
+| **llama-server** | llama.cpp 官方 HTTP 服务，OpenAI 兼容 API | GA |
+| **Ollama** | 本地模型管理工具，底层基于 llama.cpp | GA |
+| **GGUF 量化生态** | Q4_K_M/Q5_K_M/Q8_0 多种量化精度可选 | GA |
+| **边缘推理优化** | Apple Metal/Android Vulkan 加速，端侧 7B 模型可用 | GA |
+
+## 生产最佳实践
+
+1. **量化精度选择**：生产环境优先 Q5_K_M（质量/速度平衡），资源受限用 Q4_K_M
+2. **并发控制**：设置合理的 `--parallel` 参数，避免显存溢出
+3. **KV Cache 管理**：根据上下文长度调整 `--ctx-size`，避免 OOM
+4. **健康检查**：配置服务健康检查端点，异常时自动重启
+5. **模型热加载**：支持多模型切换时实现懒加载，减少内存占用

@@ -4,7 +4,7 @@ category: -concepts
 tags: ["security", "ai", "model", "adversarial", "privacy", "alibaba-cloud"]
 summary: "Model Security（模型安全）是保护 AI 模型免受窃取、逆向、后门、对抗样本等攻击的安全实践。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
 aliases:
   - "模型安全"
@@ -48,3 +48,23 @@ sources: []
 - [[概念/adversarial-attack|Adversarial Attack]]
 - [[概念/prompt-injection|Prompt Injection]]
 - [[架构基建/Security/AI_Security_Fundamentals|AI 安全基础]]
+
+---
+
+## 2026 模型安全生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Prompt Injection 防护** | 输入过滤/输出验证 | GA |
+| **模型水印** | 模型版权保护 | GA |
+| **对抗训练** | 提升模型鲁棒性 | GA |
+| **模型加密** | 模型参数加密保护 | GA |
+| **安全评估框架** | 自动化安全评估 | GA |
+
+## 生产最佳实践
+
+1. **输入验证**：所有用户输入必须验证和过滤
+2. **输出过滤**：模型输出必须过滤敏感内容
+3. **对抗训练**：关键模型进行对抗训练
+4. **安全评估**：上线前进行安全评估
+5. **监控异常**：监控模型输出异常，发现攻击

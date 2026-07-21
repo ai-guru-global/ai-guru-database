@@ -28,11 +28,11 @@ provenance:
   inferred: 0.25
   ambiguous: 0.05
 base_confidence: 0.85
-lifecycle: draft
-lifecycle_changed: 2026-06-15
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
 tier: supporting
 created: 2026-06-15 00:00:00+00:00
-updated: 2026-06-15 00:00:00+00:00
+updated: 2026-07-21 00:00:00+00:00
 aliases:
   - Cdi
 
@@ -120,3 +120,23 @@ CDI (设备注入地基)
 - [[数学基础/AI_Hardware/Chinese_AI_Chips_Deep_Dive|国产 AI 芯片深度解析]]
 - [[概念/llm-infrastructure|LLM 基础设施]]
 - [[概念/model-deployment|模型部署]]
+
+---
+
+## 2026 CDI 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **CDI Spec v0.8** | 支持 Intel/AMD/华为昇腾/寒武纪多厂商统一描述 | GA |
+| **containerd 2.x 原生 CDI** | 默认启用 CDI 解析，无需手动配置 enable_cdi | GA |
+| **nvidia-ctk cdi generate** | GPU Operator v24+ 自动生成并注册 CDI Spec | GA |
+| **DRA + CDI 联动** | K8s 1.32+ DRA 分配后返回 CDI 设备 ID，运行时透明注入 | Beta |
+| **MIG CDI 切片** | H100/B200 MIG 实例独立 CDI device，精细隔离推理实例 | GA |
+
+## 生产最佳实践
+
+1. **统一使用 CDI 接入**：新集群优先采用 CDI 替代厂商私有环境变量，确保多厂商设备统一描述
+2. **自动化 Spec 生成**：使用 GPU Operator 或 nvidia-ctk 自动生成 CDI Spec，避免手动维护
+3. **版本锁定**：将 CDI Spec 纳入 GitOps 管理，变更走 PR 审核流程
+4. **与 DRA 配合**：K8s 1.32+ 集群建议启用 DRA，实现属性级设备匹配 + CDI 注入
+5. **多厂商验证**：异构集群中验证各厂商 CDI Spec 兼容性，确保 containerEdits 无冲突

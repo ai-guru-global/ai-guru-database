@@ -24,11 +24,11 @@ provenance:
   inferred: 0.4
   ambiguous: 0.1
 base_confidence: 0.85
-lifecycle: draft
-lifecycle_changed: 2026-06-15
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
 tier: supporting
 created: 2026-06-15 00:00:00+00:00
-updated: 2026-06-15 00:00:00+00:00
+updated: 2026-07-21 00:00:00+00:00
 aliases:
   - "Oci Runtime"
   - "oci runtime"
@@ -98,6 +98,26 @@ OCI Runtime Spec (容器运行时标准)
 - [[概念/cdi|CDI（注入 config.json 的预处理层）]]
 - [[概念/dra|DRA（分配层）]]
 - [[概念/gpu-operator|NVIDIA GPU Operator]]
+- [[概念/containerd|containerd]] — 高层运行时
+- [[概念/cri|CRI]] — 容器运行时接口
 - [[架构基建/Hardware_Compute/CDI_Deep_Dive|CDI 深度解析]]
 - [[架构基建/Hardware_Compute/DRA_Deep_Dive|DRA 深度解析]]
 - [[概念/llm-infrastructure|LLM 基础设施]]
+
+---
+
+## 2026 OCI 生态
+
+| 运行时 | 特点 | 适用场景 |
+|------|------|----------|
+| **runc** | 参考实现 | 通用场景 |
+| **crun** | C 语言、更快 | 性能敏感 |
+| **kata** | 轻量 VM、强隔离 | 多租户 |
+| **gVisor** | 系统调用拦截 | 不信任代码 |
+
+## 生产最佳实践
+
+1. **生产用 runc**：稳定、成熟、广泛使用
+2. **强隔离用 kata**：多租户场景用 kata-runtime
+3. **GPU 容器化**：配合 CDI 注入 GPU 设备
+4. **镜像标准**：使用 OCI Image Spec 格式

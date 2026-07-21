@@ -19,6 +19,8 @@ provenance:
 base_confidence: 0.80
 lifecycle: reviewed
 tier: archived
+created: 2026-06-16
+updated: 2026-07-21
 ---
 
 > **归档提示**: 此概念为通用云原生工具，与AI核心关联度较低。如需学习完整的K8s知识，请参考 CNCF 官方文档。
@@ -107,4 +109,23 @@ AI Stack 容器工具层级
 
 - [[概念/nerdctl]] — nerdctl 容器管理 CLI
 - [[概念/kubectl]] — kubectl Kubernetes CLI
+- [[概念/containerd]] — containerd 容器运行时
+- [[概念/cri]] — CRI 容器运行时接口
 - [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+
+---
+
+## 2026 crictl 最佳实践
+
+| 场景 | 命令 | 说明 |
+|------|------|------|
+| Pod 启动失败 | crictl ps -a | 查看容器状态 |
+| 镜像问题 | crictl images | 检查本地镜像 |
+| GPU 异常 | crictl inspect | 检查设备挂载 |
+
+## 生产最佳实践
+
+1. **排查专用**：生产环境仅用于排查，不用于日常操作
+2. **与 kubectl 配合**：先用 kubectl 定位，再用 crictl 深入
+3. **日志查看**：crictl logs 查看容器原始日志
+4. **权限控制**：限制 crictl 使用权限

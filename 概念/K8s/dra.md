@@ -29,11 +29,11 @@ provenance:
   inferred: 0.3
   ambiguous: 0.1
 base_confidence: 0.85
-lifecycle: draft
-lifecycle_changed: 2026-06-15
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
 tier: core
 created: 2026-06-15 00:00:00+00:00
-updated: 2026-06-15 00:00:00+00:00
+updated: 2026-07-21 00:00:00+00:00
 aliases:
   - Dra
 
@@ -123,3 +123,23 @@ DRA (分配层 - 新)
 - [[概念/heterogeneous-gpu|异构 GPU 集群]]
 - [[概念/gpu-operator|NVIDIA GPU Operator]]
 - [[概念/oci-runtime|OCI Runtime Spec]]
+
+---
+
+## 2026 DRA 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Structured Parameters** | 结构化参数替代不透明 Driver 分配，调度器可直接参与决策 | Beta (1.32) |
+| **NVIDIA DRA Driver** | 支持显存/MIG/拓扑属性匹配，替代 Device Plugin | Beta |
+| **AdminAccess 权限控制** | 管理员级设备访问与用户级分离，增强多租户安全 | Beta |
+| **Multi-host Devices** | 跨节点设备协调（如 NVLink 多机训练） | Alpha |
+| **ResourceSlice** | 节点级设备清单，驱动向调度器报告可用设备 | Beta |
+
+## 生产最佳实践
+
+1. **评估迁移时机**：K8s 1.32+ 集群可开始试点 DRA，但生产环境建议等待 GA（预计 1.34）
+2. **属性级匹配**：利用 CEL 表达式按显存/算力/拓扑属性精确匹配设备，避免资源浪费
+3. **与 CDI 联动验证**：确保 DRA 驱动返回的 CDI 设备 ID 能被 containerd/CRI-O 正确解析
+4. **多厂商测试**：异构集群中分别验证 NVIDIA/AMD/华为 DRA 驱动的兼容性
+5. **回退方案**：保留 Device Plugin 作为回退，DRA 异常时可快速切换

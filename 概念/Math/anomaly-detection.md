@@ -17,11 +17,11 @@ provenance:
   inferred: 0.15
   ambiguous: 0.05
 base_confidence: 0.75
-lifecycle: draft
-lifecycle_changed: 2026-05-31
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
 tier: supporting
 created: 2026-05-31T00:00:00Z
-updated: 2026-05-31T00:00:00Z
+updated: 2026-07-21T00:00:00Z
 ---
 
 # 异常检测
@@ -131,3 +131,23 @@ updated: 2026-05-31T00:00:00Z
 - [[机器学习/Anomaly_Detection/Anomaly_Detection_for_dummy.md|Anomaly_Detection_for_dummy]]
 - [[机器学习/AutoML/AutoML.md|AutoML]]
 - [[治理/anomaly-detection-automl|异常检测 × AutoML]] — 自动化异常发现的交叉合成
+
+---
+
+## 2026 异常检测生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Isolation Forest** | 孤立森林，高效异常检测 | GA |
+| **Autoencoder** | 自编码器异常检测 | GA |
+| **LOF** | 局部离群因子 | GA |
+| **PyOD** | Python 异常检测库 | GA |
+| **时序异常** | Prophet/ARIMA 时序异常 | GA |
+
+## 生产最佳实践
+
+1. **无监督优先**：异常检测优先用无监督方法
+2. **多方法融合**：多种异常检测方法融合
+3. **阈值调优**：根据业务调优异常阈值
+4. **实时监控**：生产数据实时异常检测
+5. **与可观测性配合**：异常检测 + 可观测性监控

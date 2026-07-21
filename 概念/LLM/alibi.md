@@ -21,7 +21,7 @@ summary: ALiBi 是一种无需显式位置编码的位置编码方案，通过�
 lifecycle: reviewed
 tier: supporting
 created: 2026-06-25
-updated: 2026-06-25
+updated: 2026-07-21
 sources: []
 ---
 
@@ -133,3 +133,23 @@ ALiBi 的核心优势在于**简单且外推稳定**，但在现代开源生态�
 - [[概念/transformer-architecture|Transformer 架构]]
 - [[概念/attention-variants|Attention 变体]]
 - [[概念/kv-cache|KV Cache]]
+
+---
+
+## 2026 位置编码生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **RoPE + YaRN** | 旋转位置编码 + NTK 扩展，支持 128K-1M 上下文 | GA |
+| **ALiBi** | 线性偏置，零参数外推，BLOOM/MPT 采用 | GA |
+| **NTK-aware RoPE** | 调整频率基数实现长序列外推 | GA |
+| **xPos** | 改进 RoPE 的外推能力 | 研究 |
+| **NoPE** | 无位置编码，依赖因果注意力隐式位置信息 | 研究 |
+
+## 生产最佳实践
+
+1. **主流用 RoPE**：新模型优先选择 RoPE + YaRN，生态支持最完善
+2. **长上下文用 YaRN**：需要 128K+ 上下文时启用 YaRN 扩展
+3. **ALiBi 适合外推**：需要零训练外推到更长序列时考虑 ALiBi
+4. **与 KV Cache 配合**：位置编码影响 KV Cache 复用策略，前缀缓存需位置编码兼容
+5. **模型选型关注**：选择模型时关注其位置编码方案对上下文长度的支持

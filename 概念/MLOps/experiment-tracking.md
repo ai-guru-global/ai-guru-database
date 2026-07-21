@@ -4,7 +4,7 @@ category: "概念"
 tags: ["experiment-tracking", "mlops", "mlflow", "wandb", "reproducibility", "model-registry"]
 summary: "Experiment Tracking 是 ML 工程化的基石——自动记录每次训练的参数、指标、产物和代码版本，使实验可复现、可对比、可审计。"
 created: "2026-06-25"
-updated: "2026-06-25"
+updated: "2026-07-21"
 tier: core
 aliases:
   - "Experiment Tracking"
@@ -115,3 +115,23 @@ LLM 应用的"实验"与传统 ML 有本质区别：
 - [[模型运维/Experiment_Tracking/MLflow_Deep_Dive]] — MLflow 深度解析
 - [[概念/feature-store]] — Feature Store 概念
 - [[概念/model-registry]] — Model Registry 概念
+
+---
+
+## 2026 实验追踪生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **MLflow Tracking** | 开源实验追踪 | GA |
+| **Weights & Biases** | 云端实验追踪/可视化 | GA |
+| **Neptune.ai** | 实验元数据管理 | GA |
+| **Comet ML** | 实验对比/可视化 | GA |
+| **TensorBoard** | TensorFlow 原生可视化 | GA |
+
+## 生产最佳实践
+
+1. **所有实验必追踪**：每次实验必须记录参数/指标/产物
+2. **可复现性**：记录完整环境信息，支持复现
+3. **实验对比**：用工具对比不同实验效果
+4. **与 CI/CD 集成**：实验追踪集成到 CI/CD
+5. **团队协作**：实验结果团队共享

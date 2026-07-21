@@ -4,7 +4,7 @@ category: -concepts
 tags: ["kubernetes", "k8s", "cronjob", "batch", "job", "scheduling", "cloud-native", "alibaba-cloud"]
 summary: "Kubernetes CronJob 基于 cron 表达式周期性地创建 Job，用于定时备份、清理、报表等批处理任务，是 K8s 工作负载对象之一。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
 aliases:
   - "CronJob"
@@ -131,3 +131,23 @@ kubectl describe cronjob nightly-backup
 - [[概念/kubernetes]] — Kubernetes
 - [[概念/kubectl]] — kubectl
 - [[概念/ack]] — 阿里云容器服务 ACK
+
+---
+
+## 2026 CronJob 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **CronJob v1 稳定版** | K8s 1.21+ 升级至 batch/v1，控制器更可靠 | GA |
+| **KEDA Cron Scaler** | 事件驱动扩缩，可触发 Deployment/Job 而非仅创建 Job | GA |
+| **Argo Workflows** | 复杂 DAG 依赖的定时工作流，替代简单 CronJob | GA |
+| **kubectl create job --from** | 手动触发一次 CronJob，调试利器 | GA |
+| **TimeZone 支持** | K8s 1.27+ CronJob 原生支持指定时区 | GA |
+
+## 生产最佳实践
+
+1. **并发控制**：生产环境设置 `concurrencyPolicy: Forbid`，避免任务重叠导致数据冲突
+2. **历史清理**：设置合理的 `successfulJobHistoryLimit`/`failedJobHistoryLimit`，避免 etcd 对象堆积
+3. **资源限制必配**：为 CronJob Pod 配置 requests/limits，防止定时任务耗尽节点资源
+4. **超时保护**：设置 `activeDeadlineSeconds` 和 `startingDeadlineSeconds`，避免任务无限挂起
+5. **监控告警**：对 CronJob 的 Job 失败率、执行时长设置告警，及时发现定时任务异常

@@ -16,11 +16,11 @@ provenance:
   inferred: 0.05
   ambiguous: 0.05
 base_confidence: 0.85
-lifecycle: draft
-lifecycle_changed: 2026-06-03
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
 tier: core
 created: 2026-06-03 00:00:00+00:00
-updated: 2026-06-15 00:00:00+00:00
+updated: 2026-07-21 00:00:00+00:00
 aliases:
   - "Paged Attention"
   - "paged attention"
@@ -148,3 +148,23 @@ Block Table: A→[1,5,8]  B→[2,6]  C→[3,7]
 - [[部署推理/Inference_Engines/SGLang_Deep_Dive]] — SGLang（结合 RadixAttention 的内存管理）
 - [[部署推理/Inference_Engines/LMDeploy_Deep_Dive]] — LMDeploy（TurboMind Paging KV Cache）
 - [[部署推理/Inference_Engines/TensorRT_LLM_Deep_Dive]] — TensorRT-LLM（In-Flight Batching + Paged KV）
+
+---
+
+## 2026 PagedAttention 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **vLLM PagedAttention** | 虚拟内存式 KV Cache 管理，内存利用率提升 2-4x | GA |
+| **Prefix Caching** | 前缀共享，多请求复用 KV Cache | GA |
+| **Chunked Prefill** | 分块预填充，降低首 Token 延迟 | GA |
+| **RadixAttention** | SGLang 的基数树缓存，自动前缀复用 | GA |
+| **Paged KV Cache** | TensorRT-LLM 的分页 KV 管理 | GA |
+
+## 生产最佳实践
+
+1. **必用 PagedAttention**：生产环境必须启用，内存利用率提升 2-4x
+2. **前缀缓存开启**：多轮对话/系统提示场景启用 Prefix Caching
+3. **块大小调优**：根据序列长度调整 block_size，平衡内存与性能
+4. **与 Continuous Batching 配合**：PagedAttention + Continuous Batching 最大化吐吐量
+5. **监控内存使用**：监控 KV Cache 内存占用，避免 OOM

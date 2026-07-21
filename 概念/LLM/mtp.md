@@ -19,6 +19,8 @@ provenance:
 base_confidence: 0.85
 lifecycle: reviewed
 tier: core
+created: 2026-06-16
+updated: 2026-07-21
 ---
 
 # Multi-Token Prediction (MTP)
@@ -126,3 +128,23 @@ DeepSeek-V3 MTP 架构
 - [[概念/flash-attention-kernels]] — FlashAttention 算子
 - [[概念/prefill-decode]] — Prefill/Decode 推理阶段
 - [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+
+---
+
+## 2026 MTP 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **DeepSeek-V3 MTP** | 原生多 Token 预测，接受率 80-95%，加速 2-3x | GA |
+| **vLLM MTP 支持** | 实验性支持 MTP 投机解码 | Beta |
+| **SGLang 原生支持** | 完整支持 MTP Draft-Verify 机制 | GA |
+| **EAGLE-2/3** | 外部 Draft 模型投机解码，加速 2.5x | GA |
+| **Medusa** | 多头并行预测，无需 Draft 模型 | GA |
+
+## 生产最佳实践
+
+1. **DeepSeek 模型优先用 MTP**：DeepSeek-V3 原生支持，接受率高，加速效果显著
+2. **预测深度调优**：N=2 是平衡点，接受率 ~90%，加速 2x；N=4 接受率下降但加速更高
+3. **框架选择**：SGLang 对 MTP 支持最完整，vLLM 实验性支持
+4. **与 KV Cache 配合**：MTP 验证失败的 Token 需回滚 KV Cache，确保状态一致性
+5. **监控接受率**：生产环境监控 MTP 接受率，低于 70% 时考虑调整预测深度

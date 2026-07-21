@@ -18,7 +18,7 @@ base_confidence: 0.88
 lifecycle: reviewed
 tier: core
 created: 2026-06-04
-updated: 2026-06-04
+updated: 2026-07-21
 aliases:
   - Rbac
 
@@ -144,3 +144,23 @@ AI Stack 安全分层
 - [[概念/model-gateway]] — 模型网关（API-Key 鉴权）
 - [[架构基建/AI_Stack_Deep_Dive]] — AI Stack（RBAC 实现）
 - [[概念/model-serving]] — 模型服务（多租户安全）
+
+---
+
+## 2026 RBAC 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **ValidatingAdmissionPolicy (CEL)** | 用 CEL 表达式在准入阶段校验 RBAC 配置合规性 | GA |
+| **SSZ (Static Authorization)** | K8s 1.31+ 静态授权策略文件，无需 API Server 重启 | Beta |
+| **kubectl auth can-i --list** | 一键列出 Subject 全部有效权限，审计利器 | GA |
+| **Kyverno/OPA 策略审计** | 自动检测过度授权的 RoleBinding/ClusterRoleBinding | GA |
+| **Workload Identity** | 将 K8s SA 映射到云 IAM，统一身份管理 | GA |
+
+## 生产最佳实践
+
+1. **最小权限原则**：仅授予完成工作所需的 verbs/resources，避免 `*` 通配符
+2. **三权分立**：管理员/安全管理员/审计管理员角色分离，相互制衡
+3. **定期权限审计**：使用 `kubectl auth can-i --list` 或 Kyverno 策略定期扫描过度授权
+4. **SSO 集成**：企业环境集成 AzureAD/SAML2/OIDC，避免本地账号管理
+5. **API-Key 安全**：密钥创建后不可查看，仅能重新生成，定期轮换

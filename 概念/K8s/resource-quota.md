@@ -4,8 +4,9 @@ category: -concepts
 tags: ["kubernetes", "k8s", "resource-management", "cloud-native", "alibaba-cloud"]
 summary: "Resource Quota 是 Kubernetes 命名空间级资源配额对象，用于限制 Namespace 内可创建的 Pod、Service、PVC、CPU、内存及扩展资源总量，防止单一租户耗尽集群资源。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
+lifecycle: reviewed
 aliases:
   - "ResourceQuota"
   - "资源配额"
@@ -88,3 +89,21 @@ kubectl get resourcequota --all-namespaces
 - [[概念/limit-range|LimitRange]] — 单对象资源限制与默认值
 - [[概念/scheduler|Scheduler]] — 资源调度与配额的关系
 - [[概念/pod|Pod]] — 受配额约束的最小调度单元
+- [[概念/gpu-operator|GPU Operator]] — GPU 资源管理
+
+---
+
+## 2026 资源配额最佳实践
+
+| 场景 | 配额维度 | 建议 |
+|------|----------|------|
+| 多租户 | CPU/内存/GPU | 按部门分配 |
+| AI 推理 | GPU/显存 | 限制 GPU 数量 |
+| 测试环境 | Pod 数量 | 防止资源滥用 |
+
+## 生产最佳实践
+
+1. **与 LimitRange 配合**：Quota 管总量，LimitRange 管单对象
+2. **GPU 配额**：AI 场景设置 requests.nvidia.com/gpu
+3. **监控告警**：监控配额使用率，及时扩容
+4. **分级配额**：生产/测试环境设置不同配额

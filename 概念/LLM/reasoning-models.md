@@ -23,11 +23,11 @@ provenance:
   inferred: 0.15
   ambiguous: 0.05
 base_confidence: 0.75
-lifecycle: draft
-lifecycle_changed: 2026-05-31
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
 tier: core
 created: 2026-05-31 00:00:00+00:00
-updated: 2026-05-31 00:00:00+00:00
+updated: 2026-07-21 00:00:00+00:00
 aliases:
   - "Reasoning Models"
   - "reasoning models"
@@ -132,3 +132,23 @@ DeepSeek-R1采用纯RL训练的思维链，无需监督数据。
 - [[../../大模型/Reasoning_Models/DeepSeek_R1_Technical_Analysis|DeepSeek-R1 技术分析]] — RL 驱动的推理模型训练全流程
 - [[../../大模型/Test_Time_Compute/Test_Time_Compute_Scaling_2026|Test-Time Compute Scaling 2026]] — 推理时计算扩展的生产实践
 - [[../../大模型/Test_Time_Compute/Test_Time_Training_2026|Test-Time Training (TTT) 2026]] — 测试时训练：推理时梯度更新的新技术路线
+
+---
+
+## 2026 推理模型生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **OpenAI o3/o4** | 多步推理 + 工具调用，数学/编程 SOTA | GA |
+| **DeepSeek-R1** | RL 驱动推理训练，开源可复现 | GA |
+| **QwQ/Qwen3-Thinking** | 阿里推理模型，支持思维链显示 | GA |
+| **Test-Time Compute Scaling** | 推理时增加计算量提升复杂任务表现 | GA |
+| **GRPO 训练** | 组相对策略优化，无需 Critic 模型 | GA |
+
+## 生产最佳实践
+
+1. **场景匹配**：数学/代码/逻辑用推理模型，简单问答用普通模型，避免过度消耗
+2. **思维链控制**：生产环境设置 thinking budget，避免推理链过长增加延迟和成本
+3. **成本监控**：推理模型 Token 消耗是普通模型 3-10x，必须设置配额告警
+4. **回退机制**：推理超时或失败时自动回退到普通模型
+5. **评估先行**：上线前用目标场景评估推理模型效果，确认 ROI 合理

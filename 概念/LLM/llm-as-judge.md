@@ -24,7 +24,7 @@ provenance:
   ambiguous: 0.05
 base_confidence: 0.90
 created: 2026-06-24
-updated: 2026-06-24
+updated: 2026-07-21
 ---
 
 # LLM-as-Judge（LLM 评判员）
@@ -139,3 +139,23 @@ JUDGE_PROMPT = """你是一个严格的评分员。请基于以下维度对 [A] 
 - [[概念/benchmark]] — Benchmark 总览
 - [[模型评估/Evaluation_Tools/LLM_as_Judge_Guide]] — LLM-as-Judge 深度
 - [[治理/cheatsheets/cheatsheet-evaluation]] — 评测速查表
+
+---
+
+## 2026 LLM-as-Judge 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **GPT-4o Judge** | 最常用评判模型，与人类一致性 >85% | GA |
+| **Claude Judge** | 长上下文评判，适合复杂任务 | GA |
+| **MT-Bench** | 多轮对话评判基准 | GA |
+| **AlpacaEval** | 自动化指令遵循评估 | GA |
+| **Judge 偏差校正** | 位置偏差/冗长偏差校正技术 | GA |
+
+## 生产最佳实践
+
+1. **多 Judge 交叉验证**：用 2-3 个不同模型评判，取平均减少偏差
+2. **位置偏差校正**：交换 A/B 顺序评判，避免位置偏好
+3. **评判标准明确**：提供详细的评分标准和示例，提高一致性
+4. **与人类评估校准**：定期与人类评估对比，确保 Judge 可靠性
+5. **成本意识**：Judge 调用成本高，仅用于关键评估场景

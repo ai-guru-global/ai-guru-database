@@ -4,7 +4,7 @@ category: concepts
 tags: [tensors, linear-algebra, deep-learning, matrix-operations, ai-fundamentals]
 summary: 张量（Tensor）是标量、向量、矩阵在任意维度上的统一推广，是深度学习中表示数据、参数和梯度的核心数据结构。
 created: 2026-07-02
-updated: 2026-07-02
+updated: 2026-07-21
 sources: []
 ---
 
@@ -58,3 +58,23 @@ sources: []
 - [[概念/pytorch|PyTorch]]
 - [[概念/ai-fundamentals|AI 基础]]
 - [[概念/index|概念索引]]
+
+---
+
+## 2026 Tensor 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **PyTorch Tensors** | 动态计算图，GPU 加速 | GA |
+| **JAX Arrays** | 函数式编程，自动并行 | GA |
+| **TensorRT** | NVIDIA 推理优化引擎 | GA |
+| **ONNX Tensors** | 跨框架张量交换格式 | GA |
+| **Sparse Tensors** | 稀疏张量，节省内存 | GA |
+
+## 生产最佳实践
+
+1. **GPU 加速**：张量计算放 GPU，速度提升 10-100x
+2. **内存管理**：及时释放不用的张量，避免 OOM
+3. **数据类型**：训练用 FP16/BF16，推理用 INT8/FP8
+4. **批处理**：张量批处理最大化 GPU 利用率
+5. **零拷贝**：避免不必要的张量拷贝，减少内存开销

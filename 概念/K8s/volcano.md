@@ -24,7 +24,7 @@ base_confidence: 0.88
 lifecycle: reviewed
 tier: core
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-07-21
 aliases:
   - Volcano
 
@@ -97,3 +97,22 @@ aliases:
 - [[概念/kubeflow]] — Kubeflow
 - [[概念/kueue]] — Kueue
 - [[概念/ray]] — Ray
+- [[概念/hami]] — HAMi GPU 共享
+
+---
+
+## 2026 Volcano 生态
+
+| 特性 | 说明 | 状态 |
+|------|------|------|
+| **CNCF 孵化** | 华为云捐赠 | GA |
+| **Gang Scheduling** | All-or-nothing 调度 | GA |
+| **队列管理** | 多租户资源隔离 | GA |
+| **与 Kueue 对比** | Volcano 更重，Kueue 更轻 | - |
+
+## 生产最佳实践
+
+1. **分布式训练**：PyTorch DDP、MPI 作业用 Volcano 调度
+2. **队列设计**：按团队/项目划分队列，设置优先级
+3. **与 Kueue 对比**：简单排队用 Kueue，复杂调度用 Volcano
+4. **GPU 共享**：配合 HAMi 实现 GPU 细粒度调度

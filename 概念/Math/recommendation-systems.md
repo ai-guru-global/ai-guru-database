@@ -17,11 +17,11 @@ provenance:
   inferred: 0.15
   ambiguous: 0.05
 base_confidence: 0.75
-lifecycle: draft
-lifecycle_changed: 2026-05-31
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
 tier: supporting
 created: 2026-05-31T00:00:00Z
-updated: 2026-05-31T00:00:00Z
+updated: 2026-07-21T00:00:00Z
 ---
 
 # 推荐系统
@@ -132,3 +132,23 @@ Netflix Prize 关键经验：集成方法效果最好、矩阵分解是核心、
 - [[机器学习/Anomaly_Detection/Anomaly_Detection.md|Anomaly_Detection]]
 - [[机器学习/Anomaly_Detection/Anomaly_Detection_for_dummy.md|Anomaly_Detection_for_dummy]]
 - [[机器学习/AutoML/AutoML.md|AutoML]]
+
+---
+
+## 2026 推荐系统生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **协同过滤** | 用户-物品协同过滤 | GA |
+| **深度学习推荐** | DeepFM/DIN 等深度模型 | GA |
+| **向量检索** | 嵌入向量相似度检索 | GA |
+| **LLM 推荐** | LLM 增强推荐系统 | 研究 |
+| **多目标优化** | 点击率/时长/转化多目标 | GA |
+
+## 生产最佳实践
+
+1. **召回+排序**：推荐系统分召回和排序两阶段
+2. **向量检索**：用向量检索实现高效召回
+3. **多目标优化**：平衡点击率/时长/转化等多目标
+4. **冷启动**：新用户/物品冷启动策略
+5. **A/B 测试**：推荐策略必须 A/B 测试

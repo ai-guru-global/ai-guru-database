@@ -27,7 +27,7 @@ provenance:
   ambiguous: 0.05
 base_confidence: 0.88
 created: 2026-06-24
-updated: 2026-06-24
+updated: 2026-07-21
 ---
 
 # Google Gemini
@@ -137,3 +137,23 @@ for chunk in model.generate_content(prompt, stream=True):
 - [[概念/LLM/multimodal-models|多模态模型]]
 - [[架构基建/Google_Vertex_AI_Deep_Dive|Vertex AI 深度解析]]
 - [[大模型/Global_LLM_Ecosystem/Google_Gemini_Deep_Dive|Google Gemini 深度解析]]
+
+---
+
+## 2026 Gemini 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Gemini 2.5 Pro/Flash** | 原生多模态 + 2M Token 上下文 | GA |
+| **Gemini API** | Google AI Studio / Vertex AI 双通道访问 | GA |
+| **Code Execution** | 内置代码执行环境，支持数据分析 | GA |
+| **Grounding with Search** | 搜索增强生成，减少幻觉 | GA |
+| **Gemini in Workspace** | Docs/Sheets/Gmail 原生集成 | GA |
+
+## 生产最佳实践
+
+1. **模型选择**：简单任务用 Flash（快/便宜），复杂任务用 Pro
+2. **长上下文利用**：Gemini 支持 2M Token，适合长文档分析
+3. **多模态输入**：充分利用原生图像/视频/音频理解能力
+4. **成本控制**：Flash 价格极低，适合高并发场景
+5. **与 GPT 对比评估**：生产前用目标场景对比 Gemini 与 GPT 效果

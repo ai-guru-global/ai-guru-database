@@ -16,11 +16,11 @@ provenance:
   inferred: 0.10
   ambiguous: 0.05
 base_confidence: 0.82
-lifecycle: draft
-lifecycle_changed: 2026-05-31
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
 tier: core
 created: 2026-05-31T00:00:00Z
-updated: 2026-05-31T00:00:00Z
+updated: 2026-07-21T00:00:00Z
 aliases:
   - "Prompt Engineering"
   - "prompt engineering"
@@ -145,4 +145,24 @@ Prefix Caching缓存共享的System Prompt前缀；LLMLingua等工具压缩长Pr
 
 - [[../../大模型/Prompt_Engineering/Prompt_Engineering|提示工程完全指南]] — CoT/Few-shot/ReAct 等策略的系统性方法论
 - [[../../大模型/Prompt_Engineering/Context_Engineering_Guide|上下文工程指南]] — 从 Prompt Engineering 到 Context Engineering 的演进
-- [[../../大模型/Prompt_Engineering/DSPy_Deep_Dive|DSPy 深度解析]] — 编程化提示优化框架
+- [[../../大模型/Prompt_Engineering/DSPy_Deep_Dive|DSPy 深度解析]] — 编程化提示 优化框架
+
+---
+
+## 2026 提示工程生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Context Engineering** | 从 Prompt Engineering 演进，关注上下文管理 | GA |
+| **DSPy** | 编程化提示优化框架，自动优化提示 | GA |
+| **结构化输出** | JSON Schema/Pydantic 约束输出格式 | GA |
+| **思维链 (CoT)** | 逐步推理，提升复杂任务表现 | GA |
+| **ReAct** | 推理 + 行动交替，支持工具调用 | GA |
+
+## 生产最佳实践
+
+1. **角色设定**：明确模型角色和任务边界，提高输出质量
+2. **Few-shot 示例**：提供 2-3 个高质量示例，比零样本效果好 20-30%
+3. **输出格式约束**：用 JSON Schema 约束输出，避免格式错误
+4. **迭代优化**：用 DSPy 等工具自动优化提示，减少手工调优
+5. **版本管理**：提示词纳入版本控制，支持 A/B 测试和回滚

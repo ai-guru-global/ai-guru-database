@@ -17,11 +17,11 @@ provenance:
   inferred: 0.15
   ambiguous: 0.05
 base_confidence: 0.75
-lifecycle: draft
-lifecycle_changed: 2026-05-31
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
 tier: supporting
 created: 2026-05-31T00:00:00Z
-updated: 2026-05-31T00:00:00Z
+updated: 2026-07-21T00:00:00Z
 ---
 
 # 优化与正则化
@@ -143,3 +143,23 @@ FP16 加速计算 + FP32 保证精度。损失缩放避免 FP16 下溢，主权�
 ## Related
 
 - [[论文精读/Vision/ResNet_Deep_Dive.md]] — ResNet 深度解读
+
+---
+
+## 2026 优化与正则化生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **AdamW** | LLM 训练标准优化器 | GA |
+| **学习率调度** | Cosine/Warmup 学习率调度 | GA |
+| **Dropout** | 经典正则化方法 | GA |
+| **Weight Decay** | 权重衰减正则化 | GA |
+| **梯度裁剪** | 防止梯度爆炸 | GA |
+
+## 生产最佳实践
+
+1. **AdamW 默认**：LLM 训练默认用 AdamW
+2. **学习率调度**：必须用学习率调度
+3. **梯度裁剪**：训练大模型必须梯度裁剪
+4. **正则化平衡**：正则化强度需要调优
+5. **大 batch 训练**：大 batch 训练需要调整学习率

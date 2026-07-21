@@ -4,8 +4,9 @@ category: -concepts
 tags: ["kubernetes", "k8s", "network-policy", "cloud-native", "alibaba-cloud"]
 summary: "Kubernetes Network Policy 用于在 Pod 级别定义入站/出站流量规则，实现零信任网络分段，是集群东西向流量安全的核心控制手段。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
+lifecycle: reviewed
 aliases:
   - "Network Policy"
   - "网络策略"
@@ -112,4 +113,22 @@ kubectl get pods -n default -l app=backend --show-labels
 - [[概念/pod|Pod]] — NetworkPolicy 作用的最小单元
 - [[概念/service|Service]] — 与 NetworkPolicy 共同构成服务网络边界
 - [[概念/namespace|Namespace]] — NetworkPolicy 的默认隔离边界
+- [[概念/cni|CNI]] — 网络插件
 - [[概念/rbac|RBAC]] — 防止未授权用户修改网络策略
+
+---
+
+## 2026 NetworkPolicy 最佳实践
+
+| 场景 | 策略 | 说明 |
+|------|------|------|
+| 默认拒绝 | deny-all | 先拒绝所有，再按需开放 |
+| 微服务隔离 | 按服务定义 | 只暴露必要端口 |
+| 多租户 | 按 Namespace | 配合 RBAC |
+
+## 生产最佳实践
+
+1. **默认拒绝**：生产环境先创建 deny-all 策略
+2. **CNI 支持**：确保 CNI 插件支持 NetworkPolicy
+3. **DNS 放行**：别忘了放行 kube-system DNS
+4. **渐进式采用**：先 audit，再 enforce

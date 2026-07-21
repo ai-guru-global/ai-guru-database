@@ -30,11 +30,11 @@ provenance:
   inferred: 0.25
   ambiguous: 0.05
 base_confidence: 0.88
-lifecycle: draft
-lifecycle_changed: 2026-06-15
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
 tier: supporting
 created: 2026-06-15 00:00:00+00:00
-updated: 2026-06-15 00:00:00+00:00
+updated: 2026-07-21 00:00:00+00:00
 aliases:
   - "Gpu Operator"
   - "gpu operator"
@@ -122,3 +122,23 @@ GPU Operator (运维层)
 - [[架构基建/Hardware_Compute/DRA_Deep_Dive|DRA 深度解析]]
 - [[数学基础/AI_Hardware/NVIDIA_AMD_GPU_Deep_Dive|NVIDIA/AMD GPU 深度解析]]
 - [[概念/llm-infrastructure|LLM 基础设施]]
+
+---
+
+## 2026 GPU Operator 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **GPU Operator v24.x** | 支持 B200/GB200，原生 CDI 生成 + DRA 驱动部署 | GA |
+| **Node Feature Discovery (NFD)** | 自动检测 GPU 型号/显存/拓扑，打标签供调度器筛选 | GA |
+| **DCGM 4.x** | 新一代 GPU 监控，支持 NVLink/PCIe 带宽、ECC 错误统计 | GA |
+| **MIG Manager v2** | 动态 MIG 重配无需重启节点，支持 H100/B200 新分区模式 | GA |
+| **GPU Operator + DRA** | 可选部署 NVIDIA DRA 驱动，实现属性级设备分配 | Beta |
+
+## 生产最佳实践
+
+1. **Helm 统一管理**：使用 Helm Chart 部署 GPU Operator，版本升级走滚动更新而非手动 SSH
+2. **CDI 模式优先**：新集群启用 CDI 注入替代 NVIDIA_VISIBLE_DEVICES，确保跨运行时可移植
+3. **驱动版本锁定**：在 values.yaml 中明确指定驱动版本，避免自动升级导致 CUDA 不兼容
+4. **监控先行**：部署后立即配置 dcgm-exporter + Grafana 大盘，监控 GPU 温度/利用率/显存
+5. **MIG 策略规划**：根据业务负载规划 MIG 分区方案，避免频繁重配影响在线服务

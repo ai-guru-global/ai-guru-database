@@ -20,7 +20,7 @@ base_confidence: 0.9
 lifecycle: reviewed
 tier: core
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-07-21
 aliases:
   - Prometheus
 
@@ -91,3 +91,23 @@ Prometheus Server
 - [[概念/grafana]] — Grafana 可视化平台
 - [[概念/observability]] — 可观测性
 - [[运维/AI_Observability_Guide_2026]] — AI 可观测指南 2026
+
+---
+
+## 2026 Prometheus 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Prometheus 3.x** | 云原生监控系统 | GA |
+| **PromQL** | 强大的查询语言 | GA |
+| **Alertmanager** | 告警路由/分组/静默 | GA |
+| **Thanos/Cortex** | 长期存储/多集群 | GA |
+| **OpenTelemetry** | 统一遥测标准 | GA |
+
+## 生产最佳实践
+
+1. **指标命名**：遵循 Prometheus 指标命名规范
+2. **告警规则**：配置关键指标告警规则
+3. **长期存储**：用 Thanos/Cortex 实现长期存储
+4. **与 Grafana 配合**：Prometheus + Grafana 是标准组合
+5. **服务发现**：用 K8s 服务发现自动监控新服务

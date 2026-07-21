@@ -20,11 +20,11 @@ provenance:
   inferred: 0.15
   ambiguous: 0.07
 base_confidence: 0.75
-lifecycle: draft
-lifecycle_changed: 2026-05-31
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
 tier: supporting
 created: 2026-05-31T00:00:00Z
-updated: 2026-05-31T00:00:00Z
+updated: 2026-07-21T00:00:00Z
 aliases:
   - "Llm Infrastructure"
   - "llm infrastructure"
@@ -114,3 +114,23 @@ AI服务容量规划的特殊性：资源维度新增GPU显存和Token配额、�
 - [[概念/model-compression.md|model-compression]]
 - [[概念/multi-head-latent-attention]] — Multi-head Latent Attention (MLA) 与 FlashMLA 算子
 - [[治理/llm-infrastructure-system-design|LLM 基础设施 × 传统系统架构]] — 从 Web 服务到 Token 工厂
+
+---
+
+## 2026 LLM 基础设施生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **B200/GB200** | NVIDIA Blackwell 架构，192GB HBM3e，8TB/s 带宽 | GA |
+| **SGLang v0.4** | RadixAttention + 前缀复用，吐吐量超越 vLLM 29% | GA |
+| **FP8 默认精度** | H100/H200/B200 原生支持，显存减半 + 速度提升 30% | GA |
+| **AI Gateway 标配化** | 智能路由 + 语义缓存，节省 40-70% 成本 | GA |
+| **Prefill-Decode 分离** | 独立扩缩容，优化资源利用率 | Beta |
+
+## 生产最佳实践
+
+1. **FP8 优先**：H100+ GPU 默认启用 FP8 精度，质量保留 >99% 且性能大幅提升
+2. **智能路由必配**：部署 AI Gateway，按复杂度路由到不同模型，节省 60%+ 成本
+3. **语义缓存**：启用向量相似度缓存，命中率 30-50%，显著降低重复调用成本
+4. **监控全覆盖**：GPU 利用率/显存/温度 + TTFT/TPOT/吐吐量全链路监控
+5. **容量规划**：根据 Token 消耗预测 GPU 需求，避免资源不足或过度配置

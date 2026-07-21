@@ -4,7 +4,7 @@ category: -concepts
 tags: ["formal-logic", "reasoning", "symbolic-ai", "knowledge-representation"]
 summary: "形式逻辑是 AI 推理能力的数学基础——从命题逻辑到一阶逻辑，再到现代 LLM 的神经符号推理。"
 created: 2026-06-12
-updated: 2026-06-12
+updated: 2026-07-21
 tier: core
 aliases:
   - "Formal Logic"
@@ -56,4 +56,24 @@ Process Reward Model ≈ 逐步验证逻辑正确性
 
 - [[大模型/Reasoning_Models/o1_Class_Reasoning_Models]] — o1 类推理模型
 - [[大模型/Reasoning_Models/Process_Reward_Models]] — 过程奖励模型
-- [[数学基础/Data_Structures_Algorithms/Data_Structures_Algorithms]] — 数据结构与算法
+- [[数学基础/Data_Structures_Algorithms/Data_Structures_Algorithms]] — 数据结构 与算法
+
+---
+
+## 2026 形式逻辑生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **CoT 推理** | 思维链推理，逻辑推理基础 | GA |
+| **过程奖励模型** | 奖励推理过程而非结果 | GA |
+| **逻辑编程** | Prolog 等逻辑编程语言 | GA |
+| **形式验证** | 程序正确性形式验证 | GA |
+| **神经符号 AI** | 神经网络 + 符号逻辑 | 研究 |
+
+## 生产最佳实践
+
+1. **CoT 提示**：复杂推理任务用 CoT 提示
+2. **逻辑验证**：关键决策用形式验证
+3. **过程奖励**：推理模型用过程奖励训练
+4. **符号约束**：输出用符号逻辑约束
+5. **可解释性**：逻辑推理提高可解释性

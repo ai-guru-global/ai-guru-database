@@ -26,7 +26,7 @@ summary: 随机采样解码按照模型输出的概率分布随机抽取下一�
 lifecycle: reviewed
 tier: core
 created: 2026-06-25
-updated: 2026-06-25
+updated: 2026-07-21
 sources: []
 ---
 
@@ -131,3 +131,23 @@ def sampling_decode(model, prompt, max_length):
 - [[概念/temperature-scaling|温度缩放]]
 - [[概念/top-p-sampling|Top-p 采样]]
 - [[概念/top-k-sampling|Top-k 采样]]
+
+---
+
+## 2026 采样解码生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **动态温度调度** | 根据生成进度自动调整 temperature，避免后期质量下降 | GA |
+| **Min-p 采样** | 动态截断低于最大概率 min_p 倍的 Token，比 Top-p 更稳定 | GA |
+| **Typical Sampling** | 基于信息论的典型性采样，选择“典型” Token | GA |
+| **Speculative Sampling** | 投机解码中的验证采样，保证分布一致性 | GA |
+| **结构化输出约束** | JSON Schema/正则约束下的受控采样 | GA |
+
+## 生产最佳实践
+
+1. **任务匹配参数**：事实任务 temperature=0-0.3，创意任务 0.7-1.0，代码生成 0-0.2
+2. **Top-p + Top-k 组合**：生产环境推荐 top_p=0.9 + top_k=50，平衡多样性与质量
+3. **重复惩罚必配**：设置 repetition_penalty=1.05-1.2，避免循环重复
+4. **Seed 固定**：测试/评估场景固定 seed 保证可复现性
+5. **A/B 测试参数**：不同采样参数进行 A/B 测试，找到最优配置

@@ -4,8 +4,9 @@ category: -concepts
 tags: ["kubernetes", "k8s", "namespace", "cloud-native", "alibaba-cloud"]
 summary: "Namespace 是 Kubernetes 在单一集群内划分的逻辑边界，用于按团队、项目或环境组织资源，并实现访问控制与资源配额的软隔离。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
+lifecycle: reviewed
 aliases:
   - "Namespace"
   - "命名空间"
@@ -106,4 +107,21 @@ EOF
 - [[概念/deployment|Deployment]] — 常用命名空间级工作负载
 - [[概念/resource-quota|ResourceQuota]] — 命名空间资源配额
 - [[概念/rbac|RBAC]] — 命名空间权限控制
-- [[概念/serviceaccount|ServiceAccount]] — 命名空间内服务身份
+- [[概念/network-policy|NetworkPolicy]] — 网络策略
+
+---
+
+## 2026 Namespace 最佳实践
+
+| 场景 | 划分方式 | 说明 |
+|------|----------|------|
+| 多团队 | 按团队/项目 | 配合 RBAC 和 Quota |
+| 多环境 | dev/test/prod | 生产建议独立集群 |
+| 系统组件 | kube-system | 避免普通用户修改 |
+
+## 生产最佳实践
+
+1. **合理划分**：按团队/项目/环境划分 Namespace
+2. **配额限制**：每个 Namespace 设置 ResourceQuota
+3. **网络策略**：启用 NetworkPolicy 限制跨 Namespace 访问
+4. **命名规范**：使用有意义的命名，便于管理

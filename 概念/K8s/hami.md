@@ -26,7 +26,7 @@ base_confidence: 0.90
 lifecycle: reviewed
 tier: core
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-07-21
 aliases:
   - Hami
 
@@ -140,3 +140,23 @@ Pod 提交
 - [[架构基建/AI_Stack/HAMi_Deep_Dive]] — HAMi 深度解析
 - [[架构基建/AI_Stack/HAMi_Operation_Guide]] — HAMi 运维指南
 - [[运维/SRE_Reliability/HAMi_Troubleshooting_Guide]] — HAMi 问题排查
+
+---
+
+## 2026 HAMi 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **HAMi v2.6** | 支持 8+ 芯片厂商，DRA/CDI 兼容，调度性能优化 | GA |
+| **CNCF Sandbox → Incubating** | 社区活跃度提升，生产用户增加至 50+ | GA |
+| **vGPUmonitor v2** | 每容器 GPU 用量监控，支持 Grafana 大盘与告警 | GA |
+| **Volcano 集成** | 与 Volcano 调度器配合，支持 Gang Scheduling + vGPU | GA |
+| **WebUI 可视化** | 集群 GPU 资源 overview、分配状态、使用率可视化 | GA |
+
+## 生产最佳实践
+
+1. **显存硬隔离必开**：生产环境启用 `gpumem` 限制，防止单容器 OOM 影响同卡其他服务
+2. **合理设置 deviceSplitCount**：根据 GPU 显存大小和业务需求设置切分数，避免过度碎片化
+3. **监控全覆盖**：部署 vGPUmonitor + Prometheus，监控每容器显存/算力使用率
+4. **多厂商分别验证**：异构集群中分别验证各厂商设备的显存/算力隔离支持度
+5. **与 GPU Operator 协同**：NVIDIA 节点使用 GPU Operator 管理驱动，HAMi 负责虚拟化层

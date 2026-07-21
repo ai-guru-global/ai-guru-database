@@ -20,7 +20,7 @@ base_confidence: 0.88
 lifecycle: reviewed
 tier: core
 created: 2026-06-04
-updated: 2026-06-04
+updated: 2026-07-21
 aliases:
   - "Gpu Virtualization"
   - "gpu virtualization"
@@ -159,3 +159,23 @@ GPU 共享模式决策树
 - [[概念/hami]] — HAMi（Kubernetes 异构 GPU 虚拟化中间件）
 - [[架构基建/AI_Stack/HAMi_Deep_Dive]] — HAMi 深度解析
 - [[架构基建/AI_Stack_Deep_Dive]] — AI Stack（GPU 共享模式）
+
+---
+
+## 2026 GPU 虚拟化生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **B200 MIG 新分区** | 支持更细粒度分区（最多 8 实例），显存带宽独立 | GA |
+| **DRA 属性化分配** | K8s 1.32+ 按显存/算力属性匹配 MIG 实例，替代计数模型 | Beta |
+| **HAMi v2.6** | 支持 NVIDIA/昇腾/寒武纪/海光等 8+ 厂商统一虚拟化 | GA |
+| **Confidential Computing** | GPU TEE（可信执行环境），硬件级数据加密隔离 | GA |
+| **GPU 池化 (GPU Pooling)** | 跨节点 GPU 资源池化，动态分配给不同租户 | Beta |
+
+## 生产最佳实践
+
+1. **场景分层**：生产推理用 MIG/独享，开发测试用 HAMi 软件共享，最大化资源利用率
+2. **显存监控必配**：共享模式下实时监控每容器显存使用，设置 OOM 告警阈值
+3. **避免超卖**：算力共享时总分配不超过 100%，显存分配留 10% 余量
+4. **定期评估分区方案**：根据业务负载变化调整 MIG 分区，避免资源闲置或不足
+5. **多厂商统一纳管**：异构集群使用 HAMi 统一调度接口，降低运维复杂度

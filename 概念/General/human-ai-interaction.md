@@ -4,12 +4,12 @@ category: -concepts
 tags: ["hci", "human-ai-interaction", "ux", "agentic-ui"]
 summary: "人机交互研究人类如何与 AI 系统有效协作——从传统的 GUI 到对话式 AI 再到 Agentic UI 的演进。"
 created: 2026-06-12
-updated: 2026-06-12
+updated: 2026-07-21
 tier: core
 aliases:
   - "Human Ai Interaction"
   - "human ai interaction"
-lifecycle: draft
+lifecycle: reviewed
 provenance:
   extracted: 0.70
   inferred: 0.25
@@ -49,3 +49,23 @@ CLI → GUI → Touch → Voice → Conversational AI → Agentic UI
 
 - [[智能体/Agent_Workflow/Agentic_UI_UX_Design_2026]] — Agentic UI/UX 设计
 - [[智能体/GenAI_L12_Designing_UX_for_AI_Applications]] — AI 应用 UX 设计
+
+---
+
+## 2026 人机交互生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **对话式 UI** | 自然语言交互界面 | GA |
+| **Agentic UI** | Agent 驱动交互 | GA |
+| **多模态交互** | 语音/图像/视频交互 | GA |
+| **可解释性** | AI 决策可解释 | GA |
+| **信任校准** | 用户信任校准 | 研究 |
+
+## 生产最佳实践
+
+1. **对话优先**：AI 应用优先对话式交互
+2. **可解释性**：AI 决策提供解释
+3. **渐进式披露**：复杂功能渐进式披露
+4. **错误处理**：优雅处理 AI 错误
+5. **用户控制**：保持用户对 AI 的控制

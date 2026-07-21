@@ -24,11 +24,11 @@ provenance:
   inferred: 0.1
   ambiguous: 0.05
 base_confidence: 0.82
-lifecycle: draft
-lifecycle_changed: 2026-06-03
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
 tier: core
 created: 2026-06-03 00:00:00+00:00
-updated: 2026-06-15 00:00:00+00:00
+updated: 2026-07-21 00:00:00+00:00
 aliases:
   - "Kv Cache"
   - "kv cache"
@@ -131,3 +131,23 @@ KV Cache 优化技术栈（从底到顶叠加）
 - [[概念/long-context-models]] — 长上下文模型
 - [[部署推理/Caching/KV_Cache_Deep_Dive]] — KV Cache 深度研究：从原理到工程实践
 - [[概念/kv-cache-compression]] — KV Cache 压缩
+
+---
+
+## 2026 KV Cache 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **PagedAttention v2** | vLLM 核心，显存利用率 95%+ | GA |
+| **MLA (Multi-head Latent Attention)** | DeepSeek 架构，KV Cache 压缩 7-28x | GA |
+| **FP8 KV 量化** | 显存减半，质量保留 >99% | GA |
+| **RadixAttention** | SGLang 前缀复用，命中率 60-85% | GA |
+| **滑动窗口注意力** | 恒定内存，适合局部推理 | GA |
+
+## 生产最佳实践
+
+1. **PagedAttention 必用**：vLLM/SGLang 默认启用，消除显存碎片
+2. **长上下文用 MLA**：DeepSeek 架构 MLA 压缩 28x，1M 上下文仅 8GB
+3. **FP8 量化**：H100+ GPU 启用 FP8 KV Cache，显存减半且质量几乎无损
+4. **前缀缓存**：多轮对话/RAG 场景启用前缀缓存，节省 5-12x 成本
+5. **监控显存**：实时监控 KV Cache 显存占用，避免 OOM

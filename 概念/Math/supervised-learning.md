@@ -19,11 +19,11 @@ provenance:
   inferred: 0.15
   ambiguous: 0.05
 base_confidence: 0.75
-lifecycle: draft
-lifecycle_changed: 2026-05-31
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
 tier: supporting
 created: 2026-05-31T00:00:00Z
-updated: 2026-05-31T00:00:00Z
+updated: 2026-07-21T00:00:00Z
 ---
 
 # 监督学习
@@ -110,3 +110,23 @@ SVM 寻找最大间隔超平面，核技巧（线性核、多项式核、RBF 核
 - [[机器学习/ML-in-nutshell]] — 机器学习速成指南 (共享: ml, supervised)
 - [[概念/recommendation-systems.md|recommendation-systems]]
 - [[概念/anomaly-detection.md|anomaly-detection]]
+
+---
+
+## 2026 有监督学习生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **SFT** | 有监督微调，LLM 对齐 | GA |
+| **RLHF/DPO** | 人类反馈强化学习 | GA |
+| **数据增强** | 扩充训练数据 | GA |
+| **主动学习** | 选择最有价值样本标注 | GA |
+| **半监督学习** | 少量标注 + 大量无标注 | GA |
+
+## 生产最佳实践
+
+1. **数据质量**：有监督学习数据质量最重要
+2. **数据增强**：数据不足时用数据增强
+3. **主动学习**：标注成本高时用主动学习
+4. **SFT 必用**：LLM 必须经过 SFT 对齐
+5. **与自监督配合**：自监督预训练 + 有监督微调

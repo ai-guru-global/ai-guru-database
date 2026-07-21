@@ -24,7 +24,7 @@ summary: 重复惩罚通过降低已生成 token 的采样概率来减少模型�
 lifecycle: reviewed
 tier: supporting
 created: 2026-06-25
-updated: 2026-06-25
+updated: 2026-07-21
 sources: []
 ---
 
@@ -135,3 +135,23 @@ z'_i = z_i - β × count(token_i)
 - [[概念/sampling-decoding|随机采样]]
 - [[概念/temperature-scaling|温度缩放]]
 - [[概念/top-p-sampling|Top-p 采样]]
+
+---
+
+## 2026 重复控制生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **repetition_penalty** | 对已出现 Token 施加惩罚，降低重复概率 | GA |
+| **frequency_penalty** | 按出现频次累加惩罚，比 repetition_penalty 更细粒度 | GA |
+| **presence_penalty** | 只要出现过就惩罚，不累计频次 | GA |
+| **no_repeat_ngram_size** | 禁止重复 N-gram，硬性去重 | GA |
+| **动态惩罚调度** | 根据生成进度动态调整惩罚强度 | 研究 |
+
+## 生产最佳实践
+
+1. **默认开启惩罚**：生产环境设置 repetition_penalty=1.05-1.2，避免循环重复
+2. **任务匹配参数**：代码生成用低值(1.0-1.05)，创意写作用高值(1.1-1.3)
+3. **不要过度惩罚**：过高惩罚会导致语义不连贯，建议不超过 1.5
+4. **与 Top-p 配合**：重复惩罚 + Top-p 采样组合使用，效果更佳
+5. **监控重复率**：生产环境监控输出重复率，异常时调整参数

@@ -22,6 +22,8 @@ provenance:
   ambiguous: 0.05
 base_confidence: 0.85
 lifecycle: reviewed
+created: 2026-06-12
+updated: 2026-07-21
 tier: core
 ---
 
@@ -150,3 +152,23 @@ AI Stack 异构 GPU 架构
 - [[概念/gpu-interconnect]] — GPU 互联
 - [[概念/ascend-npu]] — 华为昇腾 NPU
 - [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+
+---
+
+## 2026 APG 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **APG 加速卡** | 阿里自研 AI 加速卡 | GA |
+| **A-Speed** | APG 专用推理加速引擎 | GA |
+| **Qwen3-Pro** | APG 专有优化模型 | GA |
+| **AI Stack 集成** | 阿里云 AI Stack 原生支持 | GA |
+| **异构纳管** | 支持 APG + NVIDIA 混合部署 | GA |
+
+## 生产最佳实践
+
+1. **阿里云环境**：APG 仅阿里云环境可用，阿里云环境优先考虑
+2. **A-Speed 加速**：APG 推理用 A-Speed 加速
+3. **Qwen3-Pro**：APG 运行 Qwen3-Pro 性能最优
+4. **与 NVIDIA 对比**：对比 APG 与 NVIDIA 的性能和成本
+5. **异构部署**：支持 APG + NVIDIA 混合部署

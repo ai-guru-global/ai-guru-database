@@ -25,7 +25,7 @@ base_confidence: 0.88
 lifecycle: reviewed
 tier: core
 created: 2026-06-04
-updated: 2026-06-04
+updated: 2026-07-21
 aliases:
   - "Gpu Interconnect"
   - "gpu interconnect"
@@ -192,3 +192,23 @@ NVSwitch 优势：
 - [[概念/rdma-roce]] — RDMA/RoCE（机间网络通信）
 - [[概念/heterogeneous-gpu]] — 异构 GPU（国产互联挑战）
 - [[架构基建/AI_Stack_Deep_Dive]] — AI Stack（APG 互联架构）
+
+---
+
+## 2026 GPU 互联生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **NVLink 5.0** | B100/B200 专用，1.8 TB/s 带宽 | GA |
+| **NVSwitch** | 多 GPU 全互联交换机 | GA |
+| **InfiniBand NDR** | 400 Gb/s 机间互联 | GA |
+| **RoCE v2** | 以太网 RDMA，成本更低 | GA |
+| **GPU Direct RDMA** | GPU 直接访问网络 | GA |
+
+## 生产最佳实践
+
+1. **机内用 NVLink**：同一节点多 GPU 用 NVLink 互联
+2. **机间用 InfiniBand**：多节点训练用 InfiniBand
+3. **RoCE 替代**：成本敏感场景用 RoCE 替代 InfiniBand
+4. **GPU Direct**：启用 GPU Direct RDMA 降低延迟
+5. **拓扑优化**：根据 GPU 拓扑优化通信路径

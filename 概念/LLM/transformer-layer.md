@@ -10,10 +10,10 @@ relationships:
   - target: "概念/kv-cache-plain"
     type: related_to
 summary: 用生活化类比解释 Transformer 中的 Layer：大模型不是一次就想清楚，而是把输入反复经过多层“审稿人”，每层先做 Attention 收集上下文，再做 FFN 加工理解，逐步提炼出高级语义。
-lifecycle: draft
+lifecycle: reviewed
 tier: core
 created: 2026-06-15T00:00:00Z
-updated: 2026-06-15T00:00:00Z
+updated: 2026-07-21T00:00:00Z
 aliases:
   - "Transformer Layer"
   - "transformer layer"
@@ -125,3 +125,23 @@ FFN 就像一个全连接神经网络，把 Attention 出来的结果再做一�
 - [[概念/kv-cache]] — KV Cache 技术深潜
 - [[概念/kv-cache-plain]] — KV Cache 大白话解释
 - [[概念/attention-variants]] — Attention 的各种变体
+
+---
+
+## 2026 Transformer Layer 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **FlashAttention-3** | H100 专用 IO 感知注意力，1.5-2x 加速 | GA |
+| **GQA/MQA/MLA** | 分组/多查询/多头潜在注意力，减少 KV Cache | GA |
+| **MoE 层** | 混合专家 FFN，激活参数减少 80%+ | GA |
+| **RoPE 位置编码** | 旋转位置编码，支持长上下文外推 | GA |
+| **RMSNorm** | 替代 LayerNorm，计算更高效 | GA |
+
+## 生产最佳实践
+
+1. **层数选择**：7B 模型 32 层，70B 模型 80 层，根据任务复杂度选择
+2. **KV Cache 优化**：长上下文场景启用 GQA/MLA，减少每层 KV Cache 显存占用
+3. **FlashAttention 必用**：H100+ GPU 启用 FlashAttention-3，显著提升训练/推理速度
+4. **MoE 考虑**：大模型场景考虑 MoE 架构，激活参数少但总参数大
+5. **位置编码**：长上下文场景使用 RoPE + NTK 扩展，支持 128K+ 上下文

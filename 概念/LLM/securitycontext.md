@@ -4,7 +4,7 @@ category: concepts
 tags: ["kubernetes", "security", "container", "k8s", "cloud-native"]
 summary: "SecurityContext 是 Kubernetes Pod/Container 级别的安全配置字段，用于声明运行身份、权限提升、Capabilities、文件系统访问等安全属性。"
 created: 2026-07-02
-updated: 2026-07-02
+updated: 2026-07-21
 sources: []
 ---
 
@@ -66,3 +66,23 @@ SecurityContext 分为 Pod 级别与容器级别，二者可叠加，容器级�
 - [[概念/secret|Secret]]
 - [[概念/serviceaccount|ServiceAccount]]
 - [[概念/kubernetes|Kubernetes]]
+
+---
+
+## 2026 SecurityContext 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Pod Security Admission (PSA)** | 替代 PodSecurityPolicy，命名空间级安全策略强制执行 | GA |
+| **seccompProfile RuntimeDefault** | 默认 seccomp 配置，限制危险系统调用 | GA |
+| **AppArmor 集成** | K8s 1.30+ 原生支持 AppArmor 配置文件 | GA |
+| **User Namespaces** | 容器内 root 映射到宿主机非特权用户，防止逃逸 | Beta |
+| **Kyverno/OPA 策略校验** | 自动拒绝不符合安全基线的 SecurityContext 配置 | GA |
+
+## 生产最佳实践
+
+1. **禁止特权模式**：生产环境必须设置 `privileged: false`，避免容器逃逸风险
+2. **非 root 运行**：设置 `runAsNonRoot: true` + 指定 UID/GID，降低提权攻击面
+3. **只读根文件系统**：启用 `readOnlyRootFilesystem: true`，防止恶意文件写入
+4. **最小化 Capabilities**：`drop: ALL` 后按需添加必要能力，避免过度授权
+5. **PSA restricted 级别**：生产 Namespace 启用 `pod-security.kubernetes.io/enforce: restricted`

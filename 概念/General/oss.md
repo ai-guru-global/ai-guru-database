@@ -4,7 +4,7 @@ category: -concepts
 tags: ["storage", "object-storage", "cloud", "alibaba-cloud"]
 summary: "OSS（Object Storage Service）是阿里云提供的海量、安全、低成本、高可靠的对象存储服务，常用于 AI 训练数据、模型和日志的存储。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
 aliases:
   - "Object Storage Service"
@@ -47,3 +47,23 @@ sources: []
 - [[概念/storage|Storage]]
 - [[概念/nas|NAS]]
 - [[概念/alibaba-cloud|Alibaba Cloud]]
+
+---
+
+## 2026 OSS 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **阿里云 OSS** | 对象存储服务 | GA |
+| **S3 兼容** | 兼容 S3 API | GA |
+| **生命周期管理** | 自动分层/过期 | GA |
+| **跨区域复制** | 数据容灾 | GA |
+| **AI 数据湖** | 训练数据存储 | GA |
+
+## 生产最佳实践
+
+1. **数据存储**：训练数据/模型用 OSS 存储
+2. **生命周期**：配置生命周期自动分层
+3. **跨区域复制**：重要数据跨区域复制
+4. **访问控制**：配置 Bucket 访问权限
+5. **与 NAS 配合**：OSS + NAS 分层存储

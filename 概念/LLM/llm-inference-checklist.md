@@ -25,7 +25,7 @@ summary: 本页汇总 LLM 推理服务上线前需要检查的技术点，包括
 lifecycle: reviewed
 tier: supporting
 created: 2026-06-25
-updated: 2026-06-25
+updated: 2026-07-21
 sources: []
 ---
 
@@ -116,3 +116,23 @@ LLM 推理服务上线前，需要从**解码效果**、**性能**、**稳定性
 - [[概念/decoding-strategies|解码策略]]
 - [[概念/paged-attention|PagedAttention]]
 - [[概念/continuous-batching|Continuous Batching]]
+
+---
+
+## 2026 推理上线生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **vLLM v0.7** | PagedAttention + Continuous Batching + Speculative Decoding | GA |
+| **SGLang RadixAttention** | 前缀复用，多轮对话/RAG 场景性能提升 29% | GA |
+| **FP8 推理** | H100+ 默认精度，显存减半 + 速度提升 30% | GA |
+| **KV Cache 压缩** | GQA/MQA/MLA + 量化，长上下文显存优化 | GA |
+| **推理可观测** | Prometheus + Grafana 标准指标，TTFT/TPOT/吐吐量监控 | GA |
+
+## 生产最佳实践
+
+1. **解码参数调优**：根据任务类型选择 temperature/top_p，事实任务用低值，创意任务用高值
+2. **性能基线测试**：上线前测量 TTFT/TPOT/吐吐量，确保满足 SLA
+3. **安全过滤必配**：输入审查 + 输出内容安全过滤，防止注入攻击和有害内容
+4. **降级方案**：准备小模型回退 + 缓存回复，应对服务过载
+5. **持续监控**：GPU 利用率/显存/温度 + 推理指标全链路监控，异常及时告警

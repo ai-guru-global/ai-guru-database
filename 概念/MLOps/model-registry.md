@@ -20,7 +20,7 @@ base_confidence: 0.88
 lifecycle: reviewed
 tier: core
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-07-21
 ---
 
 # 模型仓库 (Model Registry)
@@ -119,3 +119,23 @@ AI Stack 内置模型仓库，提供预置模型和自定义模型管理：
 - [[概念/huggingface]] — Hugging Face（最大的开源模型社区）
 - [[概念/modelscope]] — ModelScope 魔搭（中文模型生态）
 - [[架构基建/AI_Stack_Deep_Dive]] — AI Stack（内置模型仓库）
+
+---
+
+## 2026 Model Registry 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **MLflow Registry** | 开源模型注册中心 | GA |
+| **Hugging Face Hub** | 最大开源模型社区 | GA |
+| **ModelScope** | 中文模型生态 | GA |
+| **SageMaker Registry** | AWS 托管模型仓库 | GA |
+| **Vertex AI Registry** | GCP 托管模型仓库 | GA |
+
+## 生产最佳实践
+
+1. **模型版本控制**：所有模型必须注册，版本可追溯
+2. **阶段管理**：模型分 Staging/Production/Archived 阶段
+3. **元数据记录**：记录模型训练数据/参数/指标
+4. **与部署集成**：Model Registry 与部署流水线集成
+5. **权限控制**：模型访问/部署权限控制

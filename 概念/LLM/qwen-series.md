@@ -23,7 +23,7 @@ summary: Qwen（通义千问）是阿里巴巴开源的大模型系列，从 Qwe
 lifecycle: reviewed
 tier: core
 created: 2026-06-25
-updated: 2026-06-25
+updated: 2026-07-21
 sources: []
 ---
 
@@ -140,3 +140,23 @@ sources: []
 ## See Also (深度专题)
 
 - [[../../大模型/Chinese_LLM_Ecosystem/Qwen_Deep_Dive|Qwen (通义千问) 深度解析]] — Qwen 系列架构演进、长上下文与多模态能力的技术分析
+
+---
+
+## 2026 Qwen 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Qwen3** | 混合注意力 + MoE，支持 128K 上下文 | GA |
+| **Qwen3-Thinking** | 推理模型，支持思维链显示 | GA |
+| **Qwen2.5-VL** | 视觉语言模型，动态分辨率 | GA |
+| **Qwen-Agent** | 官方 Agent 框架，支持工具调用 | GA |
+| **Qwen-Coder** | 代码专用模型，支持 92 种语言 | GA |
+
+## 生产最佳实践
+
+1. **模型选择**：简单任务用 Qwen3-8B，复杂任务用 Qwen3-72B 或 Qwen3-Pro
+2. **长上下文利用**：Qwen3 支持 128K，适合长文档分析
+3. **多模态能力**：需要图像理解时用 Qwen2.5-VL
+4. **成本优化**：MoE 架构推理成本低，适合高并发场景
+5. **中文场景优先**：Qwen 中文能力业界领先，中文场景优先考虑

@@ -24,7 +24,7 @@ summary: 多模态大语言模型将文本、图像、音频等多种模态信�
 lifecycle: reviewed
 tier: core
 created: 2026-06-25
-updated: 2026-06-25
+updated: 2026-07-21
 sources: []
 ---
 
@@ -137,4 +137,24 @@ flowchart LR
 
 - [[../../大模型/Multimodal_Models/Multimodal_Architectures_2026|多模态模型架构 2026]] — 从 GPT-4V 到原生多模态 AGI 的架构演进
 - [[../../大模型/Multimodal_Models/Native_Multimodal_Architectures|原生多模态架构]] — 统一编码器 vs 桥接编码器的路线对比
-- [[../../大模型/Multimodal_Models/Modality_Fusion_Mechanisms|模态融合机制]] — 早期/晚期/交叉注意力融合的技术解析
+- [[../../大模型/Multimodal_Models/Modality_Fusion_Mechanisms|模态融合机制]] —  早期/晚期/交叉注意力融合的技术解析
+
+---
+
+## 2026 多模态 LLM 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **GPT-4o 原生多模态** | 文本/图像/音频统一编码，端到端多模态 | GA |
+| **Gemini 2.5** | 原生多模态 + 2M Token 上下文 | GA |
+| **Qwen2.5-VL** | 视觉语言模型，支持视频理解 | GA |
+| **LLaVA-NeXT** | 开源多模态模型，动态分辨率 | GA |
+| **音频多模态** | 语音输入/输出原生支持 | GA |
+
+## 生产最佳实践
+
+1. **模态匹配**：根据任务选择模态，简单任务用纯文本，复杂任务用多模态
+2. **图像预处理**：输入图像统一分辨率，避免过大图像消耗过多 Token
+3. **成本控制**：多模态 Token 消耗是纯文本 2-5x，必须监控成本
+4. **幻觉检测**：多模态模型更容易产生幻觉，必须验证输出
+5. **渐进式采用**：先纯文本验证效果，再添加多模态能力

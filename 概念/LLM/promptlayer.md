@@ -19,6 +19,8 @@ provenance:
 base_confidence: 0.80
 lifecycle: reviewed
 tier: supporting
+created: 2026-06-16
+updated: 2026-07-21
 ---
 
 # Promptlayer
@@ -111,3 +113,23 @@ pip install promptlayer
 - [[概念/humanloop]] — Humanloop Prompt 工程与评估平台
 - [[概念/promptfoo]] — Promptfoo Prompt 测试框架
 - [[概念/langsmith]] — LangSmith LLM 可观测性
+
+---
+
+## 2026 Promptlayer 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Prompt Registry** | 集中管理 Prompt 模板，支持版本回滚与分支 | GA |
+| **自动追踪 (Auto-tracking)** | 无侵入记录 LLM 调用，支持 OpenAI/Anthropic/本地模型 | GA |
+| **评估工作流** | 可视化配置评估指标，自动计算分数趋势 | GA |
+| **A/B 测试** | 多版本 Prompt 并行测试，统计显著性分析 | GA |
+| **成本监控** | 按 Prompt/模型/用户维度统计 Token 消耗与费用 | GA |
+
+## 生产最佳实践
+
+1. **Prompt 即代码**：所有生产 Prompt 纳入版本管理，变更走审核流程
+2. **自动追踪必开**：生产环境启用 LLM 调用自动追踪，便于问题回溯
+3. **定期评估**：对核心 Prompt 定期运行评估套件，监控输出质量变化
+4. **成本告警**：设置 Token 消耗阈值告警，避免异常调用导致费用失控
+5. **与 CI/CD 集成**：Prompt 变更触发自动测试，确保新版本不降低输出质量

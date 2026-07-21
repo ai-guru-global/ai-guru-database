@@ -19,6 +19,8 @@ provenance:
 base_confidence: 0.80
 lifecycle: reviewed
 tier: core
+created: 2026-06-16
+updated: 2026-07-21
 ---
 
 # stackops / aioController AI Stack 专属运维工具
@@ -111,4 +113,22 @@ aioController 是运行在 K8s 集群中的 **Controller**，负责：
 - [[概念/synapse-gateway]] — Synapse 模型网关
 - [[概念/nerdctl]] — nerdctl 容器管理
 - [[概念/crictl]] — crictl 容器调试
+- [[概念/helm]] — Helm 包管理
 - [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+
+---
+
+## 2026 stackops 最佳实践
+
+| 场景 | 工具 | 说明 |
+|------|------|------|
+| 日常运维 | stackops | 一键部署/升级/诊断 |
+| K8s 操作 | kubectl | 资源管理 |
+| 容器调试 | crictl/nerdctl | 底层排查 |
+
+## 生产最佳实践
+
+1. **日常用 stackops**：AI Stack 用户优先使用 stackops
+2. **深度排查用 kubectl**：需要深入 K8s 资源时用 kubectl
+3. **日志收集**：故障时先用 stackops 收集日志
+4. **版本升级**：使用 stackops 进行 AI Stack 版本升级

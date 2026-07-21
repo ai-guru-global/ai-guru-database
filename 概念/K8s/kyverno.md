@@ -22,7 +22,7 @@ base_confidence: 0.85
 lifecycle: reviewed
 tier: archived
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-07-21
 aliases:
   - Kyverno
 
@@ -95,4 +95,23 @@ aliases:
 - [[概念/opa]] — OPA
 - [[概念/falco]] — Falco
 - [[概念/kubernetes]] — Kubernetes
+- [[概念/pod-security-standards]] — Pod 安全标准
 - [[伦理安全/LLM_Security_Complete_Guide]] — LLM 安全完整指南
+
+---
+
+## 2026 Kyverno 生态
+
+| 特性 | 说明 | 状态 |
+|------|------|------|
+| **CNCF 孵化** | 社区活跃 | GA |
+| **策略报告** | 合规状态可视化 | GA |
+| **镜像验证** | Cosign 集成 | GA |
+| **CEL 支持** | 表达式增强 | Beta |
+
+## 生产最佳实践
+
+1. **与 PSA 配合**：PSA 管基础，Kyverno 管企业策略
+2. **策略库**：使用 Kyverno Policies 官方库
+3. **渐进式采用**：先 audit，再 enforce
+4. **镜像签名**：启用镜像签名验证

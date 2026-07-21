@@ -4,7 +4,7 @@ category: -concepts
 tags: ["distributed-training", "gpu", "nvidia", "communication", "kubernetes", "k8s", "alibaba-cloud"]
 summary: "NCCL（NVIDIA Collective Communications Library）是 NVIDIA 提供的高性能多 GPU 集合通信库，是 PyTorch/TensorFlow 分布式训练的核心依赖。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
 aliases:
   - "NVIDIA Collective Communications Library"
@@ -53,3 +53,23 @@ export NCCL_TIMEOUT=1800
 - [[概念/infiniBand|InfiniBand]]
 - [[概念/nvlink|NVLink]]
 - [[模型训练/Distributed_Training/Distributed_Training_Hang_Runbook|分布式训练 Hang 排障]]
+
+---
+
+## 2026 NCCL 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **NCCL 2.20+** | 支持 NVLink/InfiniBand/RoCE | GA |
+| **AllReduce** | 多 GPU 梯度聚合 | GA |
+| **AllGather** | 多 GPU 数据收集 | GA |
+| **ReduceScatter** | 规约后分发 | GA |
+| **NCCL Tests** | 带宽/延迟测试工具 | GA |
+
+## 生产最佳实践
+
+1. **分布式训练必用**：多 GPU/多节点训练必须用 NCCL
+2. **拓扑优化**：根据 GPU 拓扑优化 NCCL 通信路径
+3. **InfiniBand 配合**：多节点用 InfiniBand + NCCL
+4. **监控带宽**：用 NCCL Tests 监控通信带宽
+5. **Hang 排障**：训练 Hang 时检查 NCCL 通信状态

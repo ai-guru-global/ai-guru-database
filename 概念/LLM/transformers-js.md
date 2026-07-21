@@ -19,6 +19,8 @@ provenance:
 base_confidence: 0.82
 lifecycle: reviewed
 tier: supporting
+created: 2026-06-12
+updated: 2026-07-21
 ---
 
 # Transformers.js
@@ -184,3 +186,23 @@ yarn add @huggingface/transformers
 - [[概念/huggingface-hub]] — Hugging Face Hub 模型平台
 - [[概念/safetensors]] — Safetensors 安全张量格式
 - [[概念/openvino]] — OpenVINO Intel 推理优化
+
+---
+
+## 2026 Transformers.js 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Transformers.js v3** | 支持 WebGPU 加速，性能提升 10x | GA |
+| **ONNX Runtime Web** | 浏览器端 ONNX 推理引擎 | GA |
+| **WebGPU 后端** | GPU 加速推理，支持大模型 | GA |
+| **Node.js 支持** | 服务器端运行，支持 Edge Runtime | GA |
+| **量化模型** | 支持 INT8/INT4 量化模型 | GA |
+
+## 生产最佳实践
+
+1. **WebGPU 优先**：支持 WebGPU 的浏览器优先使用，性能提升 10x
+2. **模型量化**：浏览器端用 INT8/INT4 量化模型，减少加载时间
+3. **CDN 缓存**：模型文件用 CDN 缓存，避免重复下载
+4. **渐进式加载**：大模型分块加载，改善用户体验
+5. **离线支持**：用 Service Worker 缓存模型，支持离线使用

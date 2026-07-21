@@ -22,7 +22,7 @@ summary: 贪心解码每一步都选择条件概率最高的 token，是最简�
 lifecycle: reviewed
 tier: core
 created: 2026-06-25
-updated: 2026-06-25
+updated: 2026-07-21
 sources: []
 ---
 
@@ -130,3 +130,23 @@ def greedy_decode(model, prompt, max_length):
 - [[概念/beam-search|束搜索]]
 - [[概念/temperature-scaling|温度缩放]]
 - [[概念/autoregressive-generation|自回归生成]]
+
+---
+
+## 2026 解码策略生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Speculative Decoding** | Draft-Verify 机制，加速 2-3x | GA |
+| **MTP (Multi-Token Prediction)** | DeepSeek-V3 原生多 Token 预测 | GA |
+| **EAGLE-2/3** | 外部 Draft 模型投机解码 | GA |
+| **Medusa** | 多头并行预测，无需 Draft 模型 | GA |
+| **温度调度** | 动态调整 temperature，平衡质量与多样性 | GA |
+
+## 生产最佳实践
+
+1. **任务匹配策略**：代码/数学用贪心，创意写作用采样，翻译用 Beam Search
+2. **重复惩罚必配**：即使贪心解码也设置 repetition_penalty=1.05-1.1
+3. **投机解码加速**：生产环境启用 Speculative Decoding，提升吞吐量 2-3x
+4. **温度调度**：长文本生成使用温度调度，避免后期质量下降
+5. **A/B 测试**：不同解码策略进行 A/B 测试，选择最优配置

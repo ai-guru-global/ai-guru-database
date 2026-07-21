@@ -5,15 +5,15 @@ tags: [deep-learning, neural-network, activation-function, fundamentals, for-dum
 sources:
   - conversation:2026-06-25
 created: 2026-06-25T15:59:34+08:00
-updated: 2026-06-25T15:59:34+08:00
+updated: 2026-07-21T15:59:34+08:00
 summary: "神经网络中单个神经元经过加权求和与激活函数后输出的数值，代表该神经元对当前输入的响应强度。"
 provenance:
   extracted: 0.85
   inferred: 0.15
   ambiguous: 0.00
 base_confidence: 0.42
-lifecycle: draft
-lifecycle_changed: 2026-06-25
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
 tier: supporting
 aliases:
   - "Activation Value"
@@ -64,3 +64,23 @@ aliases:
 - [[概念/gradient-descent]] — 训练神经网络时优化权重与偏置的核心算法
 - [[深度学习/Deep_Learning_For_Beginners]] — 深度学习入门：神经网络、梯度下降与主流架构
 - [[大模型/LLM_For_Beginners]] — 大语言模型入门：预训练、微调与推理基础
+
+---
+
+## 2026 激活值生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **ReLU/GELU** | 最常用激活函数 | GA |
+| **SwiGLU** | LLaMA/Qwen 采用的激活函数 | GA |
+| **激活检查点** | 重计算激活值，降低显存 | GA |
+| **激活量化** | 激活值量化，加速推理 | GA |
+| **激活监控** | 监控激活值分布，发现异常 | GA |
+
+## 生产最佳实践
+
+1. **激活函数选择**：LLM 用 SwiGLU，CNN 用 ReLU
+2. **激活检查点**：训练大模型启用激活检查点
+3. **激活量化**：推理时激活值量化加速
+4. **分布监控**：监控激活值分布，发现训练异常
+5. **梯度流**：激活函数影响梯度流，选择合适函数

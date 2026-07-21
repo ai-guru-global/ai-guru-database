@@ -30,7 +30,7 @@ lifecycle: reviewed
 lifecycle_changed: 2026-06-17
 tier: core
 created: 2026-06-17 00:00:00+00:00
-updated: 2026-06-17 00:00:00+00:00
+updated: 2026-07-21
 aliases:
   - "Cuda Graph"
   - "cuda graph"
@@ -175,3 +175,23 @@ V1 Engine（vLLM 0.8+）将调度器从 Python 移到 C++ 层，减少了 CPU �
 ## 关联概念
 
 > **关联**: -> [[概念/paged-attention|PagedAttention]] | [[概念/continuous-batching|Continuous Batching]] | [[概念/kv-cache|KV Cache]] | [[概念/prefill-decode|Prefill/Decode 阶段]] | [[概念/flash-attention-kernels|Flash Attention 算子]] | [[部署推理/Inference_Engines/vLLM_Deep_Dive|vLLM 深度解析]] | [[数学基础/AI_Hardware/T_Head_PPU_Deep_Dive|平头哥 PPU 深度解析]] | [[架构基建/AI_Stack_Deep_Dive|AI Stack 深度解析]]
+
+---
+
+## 2026 CUDA Graph 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **CUDA Graph** | 计算图优化，降低启动开销 | GA |
+| **vLLM CUDA Graph** | vLLM 推理加速 | GA |
+| **TensorRT CUDA Graph** | TensorRT 推理加速 | GA |
+| **PyTorch CUDA Graph** | PyTorch 训练加速 | GA |
+| **动态形状支持** | 支持动态输入形状 | GA |
+
+## 生产最佳实践
+
+1. **推理加速**：推理场景用 CUDA Graph 降低启动开销
+2. **重复计算**：重复计算用 CUDA Graph 优化
+3. **vLLM 集成**：vLLM 默认启用 CUDA Graph
+4. **动态形状**：动态输入形状需特殊处理
+5. **内存占用**：CUDA Graph 会增加内存占用，需权衡

@@ -22,6 +22,8 @@ relationships:
 summary: "vLLM 是 UC Berkeley 主导开源的高吞吐 LLM 推理引擎，通过 PagedAttention 与连续批处理将吞吐量较传统方案提升 14-24 倍，已成为开源 LLM 服务的事实标准。"
 lifecycle: reviewed
 tier: core
+created: 2026-06-12
+updated: 2026-07-21
 provenance:
   extracted: 0.65
   inferred: 0.30
@@ -170,3 +172,23 @@ vllm serve meta-llama/Llama-3-70B-Instruct \
 ---
 
 **参见**：[[vLLM_Deep_Dive]] · [[LLM_Inference_Deep_Dive]] · [[部署推理/Inference_Engines/README]] · [[部署推理/README|部署推理]]
+
+---
+
+## 2026 vLLM 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **vLLM v0.6+** | PagedAttention + Continuous Batching | GA |
+| **Prefix Caching** | 前缀共享，多轮对话加速 | GA |
+| **Chunked Prefill** | 分块预填充，降低首 Token 延迟 | GA |
+| **多模态支持** | 支持 LLaVA/Qwen-VL 等视觉模型 | GA |
+| **OpenAI 兼容 API** | 无缝替换 OpenAI API | GA |
+
+## 生产最佳实践
+
+1. **生产首选**：vLLM 是开源 LLM 服务的事实标准，生产首选
+2. **PagedAttention 必开**：内存利用率提升 2-4x
+3. **Continuous Batching 必开**：GPU 利用率提升 2-3x
+4. **Prefix Caching 开启**：多轮对话/系统提示场景启用
+5. **监控吐吐量**：实时监控 tokens/s 和 GPU 利用率

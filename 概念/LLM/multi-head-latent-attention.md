@@ -26,11 +26,11 @@ provenance:
   inferred: 0.05
   ambiguous: 0.05
 base_confidence: 0.85
-lifecycle: draft
-lifecycle_changed: 2026-06-03
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
 tier: core
-created: 2026-06-03 00:00:00+00:00
-updated: 2026-06-03 00:00:00+00:00
+created: 2026-06-03
+updated: 2026-07-21 00:00:00+00:00
 aliases:
   - "Multi Head Latent Attention"
   - "multi head latent attention"
@@ -175,3 +175,23 @@ MLA 的压缩效果可与 FP8 量化、前缀缓存等技术叠加：
 - [[概念/grouped-query-attention]] — GQA（Grouped-Query Attention）
 - [[部署推理/Inference_Performance/Inference_Terms_for_dummy|推理性能术语大白话解释]]
 - [[架构基建/AI_Stack_Deep_Dive]] — 阿里云 AI Stack（含 MLA 通用技术背景）
+
+---
+
+## 2026 MLA 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **DeepSeek-V3 MLA** | 低秩 KV 压缩，KV Cache 减少 7-28x | GA |
+| **FlashMLA** | H800 专用 MLA 算子，660 TFLOPS | GA |
+| **vLLM MLA 支持** | vLLM 原生支持 MLA 推理 | GA |
+| **SGLang MLA** | SGLang 支持 MLA 加速 | GA |
+| **MLA + 长上下文** | MLA 支持 128K-1M 上下文 | GA |
+
+## 生产最佳实践
+
+1. **DeepSeek 模型必用**：部署 DeepSeek-V3/R1 必须启用 MLA
+2. **KV Cache 优化**：MLA 将 KV Cache 减少 7-28x，长上下文必备
+3. **FlashMLA 加速**：H800 环境启用 FlashMLA，性能提升显著
+4. **与 GQA 对比**：MLA 比 GQA 压缩更激进，适合超长上下文
+5. **推理框架选择**：用 vLLM/SGLang 等支持 MLA 的框架

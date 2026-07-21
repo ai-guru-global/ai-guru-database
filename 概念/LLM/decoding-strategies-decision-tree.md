@@ -27,7 +27,7 @@ summary: 本页通过决策树和场景矩阵，帮助根据任务类型、质�
 lifecycle: reviewed
 tier: supporting
 created: 2026-06-25
-updated: 2026-06-25
+updated: 2026-07-21
 sources: []
 ---
 
@@ -154,3 +154,23 @@ model.generate(
 - [[概念/top-p-sampling|Top-p 采样]]
 - [[概念/top-k-sampling|Top-k 采样]]
 - [[概念/repetition-penalty|重复惩罚]]
+
+---
+
+## 2026 解码策略生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Speculative Decoding** | Draft-Verify 加速 2-3x | GA |
+| **Structured Output** | JSON Schema/正则约束解码 | GA |
+| **Grammar-Constrained** | 语法约束解码，保证格式正确 | GA |
+| **Parallel Decoding** | 并行解码多个位置 | 研究 |
+| **动态策略选择** | 根据任务自动选择解码策略 | 研究 |
+
+## 生产最佳实践
+
+1. **任务匹配策略**：事实任务用贪心/低温，创意任务用高温 + Top-p
+2. **结构化输出必用**：API 场景必须用 JSON Schema 约束输出
+3. **投机解码加速**：高并发场景启用 Speculative Decoding
+4. **重复惩罚必配**：设置 repetition_penalty=1.05-1.2
+5. **A/B 测试**：不同解码策略进行 A/B 测试，找到最优配置

@@ -17,6 +17,8 @@ provenance:
 base_confidence: 0.83
 lifecycle: reviewed
 tier: supporting
+created: 2026-06-12
+updated: 2026-07-21
 ---
 
 # Promptfoo Prompt 测试框架
@@ -159,3 +161,23 @@ jobs:
 4. **Web UI**：可视化展示测试结果矩阵（Prompt × Model × Test）
 5. **CI/CD 集成**：Prompt 修改自动触发测试，防止回归
 6. **开源 MIT**：完全免费，社区活跃
+
+---
+
+## 2026 Promptfoo 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Promptfoo v0.80+** | YAML 驱动测试，支持 50+ 模型提供商 | GA |
+| **红队测试** | 内置越狱/注入/有害内容测试 | GA |
+| **CI/CD 集成** | GitHub Actions/GitLab CI 自动测试 | GA |
+| **Web UI** | 可视化测试结果矩阵 | GA |
+| **自定义断言** | JavaScript/Python 自定义评估逻辑 | GA |
+
+## 生产最佳实践
+
+1. **CI/CD 必集成**：Prompt 修改自动触发测试，防止回归
+2. **多模型对比**：同一 Prompt 跑多个模型，找到最优
+3. **红队测试定期**：每月运行红队测试，发现安全漏洞
+4. **测试用例覆盖**：覆盖正常/边界/异常场景
+5. **版本管理**：测试配置纳入版本控制，支持回滚

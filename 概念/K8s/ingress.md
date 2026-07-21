@@ -4,8 +4,9 @@ category: -concepts
 tags: ["kubernetes", "k8s", "networking", "cloud-native", "alibaba-cloud"]
 summary: "Kubernetes Ingress 是集群七层（HTTP/HTTPS）流量入口的声明式 API，用于将外部请求按域名、路径路由到内部 Service，常与 Ingress Controller 配合使用。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
+lifecycle: reviewed
 aliases:
   - "Ingress"
   - "K8s Ingress"
@@ -99,5 +100,24 @@ kubectl get svc -n default
 - [[概念/kubernetes|Kubernetes]] — K8s 编排
 - [[概念/kubectl|kubectl]] — K8s 命令行工具
 - [[概念/helm|Helm]] — K8s 包管理
-- [[概念/cri|CRI]] — 容器运行时接口
-- [[概念/containerd|containerd]] — 容器运行时
+- [[概念/service|Service]] — K8s 服务
+- [[概念/cert-manager|cert-manager]] — 证书管理
+- [[概念/istio|Istio]] — 服务网格
+
+---
+
+## 2026 Ingress 生态
+
+| 方案 | 特点 | 适用场景 |
+|------|------|----------|
+| **NGINX Ingress** | 功能丰富、生态成熟 | 通用场景 |
+| **Traefik** | 自动发现、配置简单 | 中小集群 |
+| **Gateway API** | 下一代标准 | 新项目 |
+| **ALB Ingress** | 阿里云原生 | 阿里云 ACK |
+
+## 生产最佳实践
+
+1. **TLS 终止**：生产环境启用 HTTPS，配合 cert-manager
+2. **限流保护**：配置 rate limit 防止恶意请求
+3. **Gateway API**：新项目考虑使用 Gateway API
+4. **监控告警**：监控 Ingress Controller 性能指标

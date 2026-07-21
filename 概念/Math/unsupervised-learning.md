@@ -17,11 +17,11 @@ provenance:
   inferred: 0.15
   ambiguous: 0.05
 base_confidence: 0.75
-lifecycle: draft
-lifecycle_changed: 2026-05-31
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
 tier: supporting
 created: 2026-05-31T00:00:00Z
-updated: 2026-05-31T00:00:00Z
+updated: 2026-07-21T00:00:00Z
 ---
 
 # 无监督学习
@@ -116,3 +116,23 @@ updated: 2026-05-31T00:00:00Z
 - [[概念/time-series-analysis.md|time-series-analysis]]
 - [[概念/automl.md|automl]]
 - [[概念/ensemble-learning.md|ensemble-learning]]
+
+---
+
+## 2026 无监督学习生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **K-Means** | 经典聚类算法 | GA |
+| **DBSCAN** | 密度聚类 | GA |
+| **PCA/t-SNE** | 降维可视化 | GA |
+| **UMAP** | 统一流形逼近 | GA |
+| **自编码器** | 神经网络降维 | GA |
+
+## 生产最佳实践
+
+1. **探索性分析**：数据探索用无监督学习
+2. **聚类应用**：用户分群/异常检测用聚类
+3. **降维可视化**：高维数据用 t-SNE/UMAP 可视化
+4. **与有监督配合**：无监督特征 + 有监督分类
+5. **异常检测**：无监督学习适合异常检测

@@ -22,7 +22,7 @@ summary: 本文深入解析 MMLU、GSM8K、HumanEval、MT-Bench、AlpacaEval 等
 lifecycle: reviewed
 tier: supporting
 created: 2026-06-25
-updated: 2026-06-25
+updated: 2026-07-21
 sources: []
 ---
 
@@ -182,3 +182,23 @@ flowchart LR
 - [[概念/llm-benchmarks|Benchmark 概览]]
 - [[概念/model-evaluation|模型评估]]
 - [[概念/perplexity|困惑度]]
+
+---
+
+## 2026 Benchmark 深度生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **MMLU-Pro** | 多学科多任务，比 MMLU 更难 | GA |
+| **GPQA Diamond** | 研究生水平科学问答 | GA |
+| **LiveCodeBench** | 动态代码评估，避免数据污染 | GA |
+| **Arena-Hard** | 困难指令遵循评估 | GA |
+| **IFEval** | 指令遵循评估 | GA |
+
+## 生产最佳实践
+
+1. **多 Benchmark 综合**：不要只看单一 Benchmark，综合多个指标
+2. **场景匹配**：用目标场景的 Benchmark 评估
+3. **警惕数据污染**：关注 Benchmark 是否被训练数据污染
+4. **人类评估校准**：定期与人类评估对比
+5. **动态 Benchmark**：优先选择 LiveBench 等动态更新的 Benchmark

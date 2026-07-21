@@ -16,6 +16,8 @@ provenance:
   ambiguous: 0.10
 base_confidence: 0.90
 lifecycle: reviewed
+created: 2026-06-12
+updated: 2026-07-21
 tier: core
 ---
 
@@ -175,3 +177,23 @@ curl -X POST localhost:5000/invocations \
 4. **全生命周期**：从实验到注册到部署，覆盖 ML 全流程
 5. **Databricks 生态**：与 Databricks 平台深度集成
 6. **广泛采用**：几乎所有企业 ML 团队都在使用
+
+---
+
+## 2026 MLflow 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **MLflow Tracking** | 实验追踪 | GA |
+| **MLflow Registry** | 模型注册中心 | GA |
+| **MLflow Deployments** | 模型部署 | GA |
+| **MLflow Evaluate** | LLM/RAG 评估 | GA |
+| **Databricks 集成** | 深度 Databricks 集成 | GA |
+
+## 生产最佳实践
+
+1. **实验追踪**：所有实验用 MLflow 追踪
+2. **模型注册**：模型必须注册到 MLflow Registry
+3. **LLM 评估**：LLM 项目用 MLflow Evaluate
+4. **与 Databricks 配合**：Databricks 环境用 MLflow
+5. **开源优势**：MLflow 完全开源，可自托管

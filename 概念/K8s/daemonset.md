@@ -4,7 +4,7 @@ category: -concepts
 tags: ["kubernetes", "k8s", "daemonset", "cloud-native", "alibaba-cloud"]
 summary: "DaemonSet 确保每个（或指定）节点运行一份 Pod 副本，常用于日志采集、监控 Agent、网络/存储插件等节点级基础设施组件。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
 aliases:
   - "DaemonSet"
@@ -127,3 +127,23 @@ kubectl drain <node-name> --ignore-daemonsets --delete-emptydir-data
 - [[概念/apsara-stack]] — 飞天企业版 Apsara Stack
 - [[概念/kubectl]] — kubectl 命令行工具
 - [[概念/cni]] — CNI 容器网络接口
+
+---
+
+## 2026 DaemonSet 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **MaxSurge for DaemonSet** | 滚动更新时允许先启新 Pod 再停旧 Pod，实现零中断更新 | GA |
+| **DaemonSet 原生支持 TopologySpread** | 结合拓扑约束控制节点分布均匀性 | GA |
+| **eBPF 节点 Agent** | 基于 eBPF 的新一代网络/安全/可观测 DaemonSet，替代 iptables | GA |
+| **GPU Device Plugin DaemonSet** | NVIDIA/AMD/华为 NPU 设备插件以 DaemonSet 暴露异构算力 | GA |
+| **system-node-critical PriorityClass** | 保证基础设施 DaemonSet 不被业务 Pod 抢占 | GA |
+
+## 生产最佳实践
+
+1. **设置资源限制**：为 DaemonSet Pod 配置 requests/limits，避免节点级组件耗尽节点资源
+2. **高优先级保护**：使用 `priorityClassName: system-node-critical` 确保关键基础设施不被驱逐
+3. **滚动更新策略**：生产环境使用 `maxUnavailable: 10%` 控制更新节奏，避免大规模同时重启
+4. **Toleration 全覆盖**：为需要在 Master/特殊节点运行的 DaemonSet 添加对应 Toleration
+5. **健康检查必配**：配置 liveness/readiness Probe，确保节点级服务异常时自动重启

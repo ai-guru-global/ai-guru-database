@@ -4,7 +4,7 @@ category: -concepts
 tags: ["gpu", "cuda", "oom", "training", "inference", "troubleshooting", "alibaba-cloud"]
 summary: "GPU OOM 指 GPU 显存不足，可分为容器 cgroup OOM、CUDA 显存分配失败、host 内存不足、GPU 虚拟化超卖等类型，是 AI 训练/推理最常见故障之一。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
 aliases:
   - "CUDA OOM"
@@ -68,3 +68,23 @@ kubectl logs <pod> -n <ns> --previous | grep -i "out of memory"
 - [[概念/hami|HAMi]]
 - [[概念/vllm|vLLM]]
 - [[运维/SRE_Reliability/GPU_OOM_Troubleshooting_Guide|GPU OOM 排障指南]]
+
+---
+
+## 2026 GPU OOM 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **梯度累积** | 小 batch 模拟大 batch，降低显存 | GA |
+| **激活检查点** | 重计算激活值，降低显存 | GA |
+| **ZeRO 优化** | 优化器状态分片，降低显存 | GA |
+| **QLoRA** | 4-bit 量化 + LoRA 微调 | GA |
+| **vLLM PagedAttention** | 分页 KV Cache，降低显存 | GA |
+
+## 生产最佳实践
+
+1. **梯度累积**：显存不足时用梯度累积模拟大 batch
+2. **激活检查点**：训练大模型启用激活检查点
+3. **ZeRO 优化**：用 DeepSpeed ZeRO 优化显存
+4. **量化微调**：用 QLoRA 4-bit 量化微调
+5. **监控显存**：实时监控显存使用，设置告警

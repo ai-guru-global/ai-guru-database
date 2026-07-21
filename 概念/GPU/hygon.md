@@ -18,6 +18,8 @@ provenance:
   ambiguous: 0.10
 base_confidence: 0.75
 lifecycle: reviewed
+created: 2026-06-12
+updated: 2026-07-21
 tier: supporting
 ---
 
@@ -97,3 +99,23 @@ AI Stack 一体机硬件架构
 - [[概念/ascend-npu]] — 华为昇腾 NPU
 - [[概念/apsara-stack]] — 飞天企业版
 - [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+
+---
+
+## 2026 海光生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **海光 DCU** | 国产 GPU，CUDA 兼容 | GA |
+| **海光 CPU** | x86 架构国产 CPU | GA |
+| **DCU 训练** | 支持大模型训练 | GA |
+| **DCU 推理** | 支持 LLM 推理 | GA |
+| **AI Stack 集成** | 阿里云 AI Stack 支持 | GA |
+
+## 生产最佳实践
+
+1. **国产替代**：信创场景考虑海光 DCU
+2. **CUDA 兼容**：海光 DCU 兼容 CUDA，迁移成本低
+3. **性能验证**：生产前验证海光 DCU 性能
+4. **驱动支持**：确保海光驱动与框架兼容
+5. **与 NVIDIA 对比**：对比海光与 NVIDIA 的性能和成本

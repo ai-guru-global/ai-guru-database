@@ -19,6 +19,8 @@ provenance:
 base_confidence: 0.78
 lifecycle: reviewed
 tier: supporting
+created: 2026-06-12
+updated: 2026-07-21
 ---
 
 # LlamaIndex Cloud
@@ -161,3 +163,23 @@ pip install llama-index-cloud llama-parse
 - [[概念/chroma]] — Chroma 向量数据库
 - [[概念/milvus]] — Milvus 向量数据库
 - [[概念/langsmith]] — LangSmith LLM 可观测性
+
+---
+
+## 2026 LlamaIndex Cloud 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **LlamaParse** | 高级文档解析，支持表格/图像 | GA |
+| **LlamaHub** | 数据连接器市场，160+ 数据源 | GA |
+| **托管索引** | 云端向量索引，免运维 | GA |
+| **评估工具** | RAG 质量评估，检索/生成指标 | GA |
+| **API 服务** | REST API 访问，轻松集成 | GA |
+
+## 生产最佳实践
+
+1. **快速原型**：用 LlamaIndex Cloud 快速验证 RAG 想法
+2. **文档解析**：复杂文档用 LlamaParse，比开源解析器效果好
+3. **成本意识**：云端服务有成本，大规模场景考虑自建
+4. **数据安全**：敏感数据评估云端存储风险
+5. **与开源对比**：生产前对比云端与自建的效果和成本

@@ -4,7 +4,7 @@ category: -concepts
 tags: ["hardware", "gpu", "nvidia", "cuda", "training", "inference", "alibaba-cloud"]
 summary: "NVIDIA GPU 是目前 AI 训练与推理最主流的加速器，配合 CUDA 生态提供从消费级到数据中心级的完整算力方案。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: core
 aliases:
   - "NVIDIA Graphics Processing Unit"
@@ -51,3 +51,23 @@ sources: []
 - [[概念/nvidia-smi|nvidia-smi]]
 - [[概念/mig|MIG]]
 - [[概念/tensorrt|TensorRT]]
+
+---
+
+## 2026 NVIDIA GPU 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **H100/H200** | Hopper 架构，FP8 训练/推理 | GA |
+| **B100/B200** | Blackwell 架构，性能翻倍 | GA |
+| **L40S** | Ada 架构，推理/图形通用 | GA |
+| **A100/A800** | Ampere 架构，上一代旗舰 | GA |
+| **NVIDIA AI Enterprise** | 企业级 AI 软件套件 | GA |
+
+## 生产最佳实践
+
+1. **训练用 H100/H200**：大模型训练首选 H100/H200
+2. **推理用 L40S**：推理场景用 L40S，成本更低
+3. **FP8 量化**：H100+ 启用 FP8，速度提升 2x
+4. **MIG 切分**：多租户场景用 MIG 切分 GPU
+5. **驱动更新**：定期更新 NVIDIA 驱动，获取性能优化

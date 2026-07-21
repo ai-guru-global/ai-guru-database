@@ -4,8 +4,9 @@ category: -concepts
 tags: ["kubernetes", "k8s", "scheduling", "cloud-native", "alibaba-cloud"]
 summary: "Kubernetes 的 Taint 是一种节点属性标记机制，用于排斥不满足条件的 Pod 调度到该节点，常与 Toleration 配合使用以实现专用节点、硬件隔离等场景。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
+lifecycle: reviewed
 aliases:
   - "Taint"
   - "Node Taint"
@@ -95,5 +96,24 @@ spec:
 
 - [[概念/kubernetes|Kubernetes]] — K8s 编排平台
 - [[概念/pod|Pod]] — Pod 调度对象
+- [[概念/toleration|Toleration]] — 容忍度
 - [[概念/request-scheduling|Request Scheduling]] — 调度机制
 - [[概念/kueue|Kueue]] — Kubernetes 作业队列调度
+- [[概念/gpu-operator|GPU Operator]] — GPU 节点管理
+
+---
+
+## 2026 Taint 最佳实践
+
+| 场景 | Taint 配置 | 说明 |
+|------|------------|------|
+| GPU 专用节点 | nvidia.com/gpu=true:NoSchedule | AI 训练/推理专用 |
+| 控制平面 | node-role.kubernetes.io/control-plane | 隔离 Master |
+| 节点维护 | maintenance=true:NoExecute | 驱逐 Pod |
+
+## 生产最佳实践
+
+1. **GPU 节点隔离**：GPU 节点添加 Taint，防止普通 Pod 占用
+2. **与 Toleration 配合**：Pod 声明 Toleration 才能调度到 Taint 节点
+3. **维护场景**：节点维护时用 NoExecute 驱逐 Pod
+4. **软性偏好**：非强制场景用 PreferNoSchedule

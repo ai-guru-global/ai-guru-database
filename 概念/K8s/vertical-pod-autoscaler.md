@@ -4,8 +4,9 @@ category: -concepts
 tags: ["kubernetes", "k8s", "autoscaling", "cloud-native", "alibaba-cloud"]
 summary: "VPA 是 Kubernetes 生态中的 Pod 纵向自动扩缩容组件，依据历史与实时资源用量自动调整容器 CPU/内存 requests/limits，减少资源浪费并降低 OOM 风险。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
+lifecycle: reviewed
 aliases:
   - "VPA"
   - "Vertical Pod Autoscaler"
@@ -100,3 +101,21 @@ kubectl logs -n kube-system -l app=vpa-updater
 - [[概念/horizontal-pod-autoscaler]] — Horizontal Pod Autoscaler（HPA）
 - [[概念/deployment]] — Deployment 工作负载
 - [[概念/kubectl]] — kubectl 命令行工具
+- [[概念/pod]] — Pod 资源管理
+
+---
+
+## 2026 VPA 最佳实践
+
+| 模式 | 适用场景 | 风险 |
+|------|----------|------|
+| Off | 仅查看推荐 | 无 |
+| Initial | 新 Pod 注入 | 低 |
+| Recreate | 自动调整 | 中（Pod 重启） |
+
+## 生产最佳实践
+
+1. **先 Off 后 Auto**：先观察推荐值，再启用自动调整
+2. **与 HPA 分离**：避免同时对 CPU 使用 VPA 和 HPA
+3. **设置边界**：配置 minAllowed/maxAllowed 防止极端值
+4. **有状态服务慎用**：Recreate 模式会重启 Pod

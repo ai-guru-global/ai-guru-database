@@ -17,6 +17,8 @@ provenance:
 base_confidence: 0.88
 lifecycle: reviewed
 tier: core
+created: 2026-06-12
+updated: 2026-07-21
 ---
 
 # LiteLLM 统一 LLM API 代理
@@ -187,3 +189,23 @@ response = client.chat.completions.create(
 4. **开源 MIT**：完全开源，可自托管，数据不出企业
 5. **Proxy 模式**：作为中间层部署，现有应用零改动接入
 6. **AI Stack 意义**：企业多模型管理的统一入口，避免供应商锁定
+
+---
+
+## 2026 LiteLLM 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **LiteLLM v1.40+** | 支持 100+ LLM 提供商 | GA |
+| **统一 API** | OpenAI 格式调用所有模型 | GA |
+| **负载均衡** | 多模型/多 Key 负载均衡 | GA |
+| **成本追踪** | 实时 Token 消耗和费用统计 | GA |
+| **Fallback 机制** | 主模型失败自动切换备用 | GA |
+
+## 生产最佳实践
+
+1. **统一入口**：用 LiteLLM 作为所有 LLM 调用的统一入口
+2. **Fallback 必配**：配置主备模型，保障可用性
+3. **成本监控**：实时监控每个请求/用户/模型的成本
+4. **自托管**：敏感数据场景自托管 LiteLLM Proxy
+5. **与 AI Stack 集成**：企业环境用 AI Stack 集成 LiteLLM

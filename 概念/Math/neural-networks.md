@@ -17,11 +17,11 @@ provenance:
   inferred: 0.15
   ambiguous: 0.05
 base_confidence: 0.75
-lifecycle: draft
-lifecycle_changed: 2026-05-31
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
 tier: supporting
 created: 2026-05-31T00:00:00Z
-updated: 2026-05-31T00:00:00Z
+updated: 2026-07-21T00:00:00Z
 ---
 
 # 神经网络
@@ -159,3 +159,23 @@ $$\hat{x}_i = \frac{x_i - \mu_{\mathcal{B}}}{\sqrt{\sigma_{\mathcal{B}}^2 + \eps
 - [[深度学习/World_Models/JEPA_Architecture_2026]] — JEPA 架构深度解析：LeCun 的世界模型之路 (共享: backpropagation, dl)
 - [[深度学习/World_Models/README]] — 世界模型 (World Models) (共享: backpropagation, dl)
 - [[概念/world-models-jepa.md|world-models-jepa]]
+
+---
+
+## 2026 神经网络生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Transformer** | 当前主流架构 | GA |
+| **MLP/MoE** | 多层感知机/混合专家 | GA |
+| **CNN** | 卷积神经网络，视觉任务 | GA |
+| **RNN/LSTM** | 循环网络，时序任务 | GA |
+| **神经架构搜索** | NAS 自动架构设计 | 研究 |
+
+## 生产最佳实践
+
+1. **Transformer 优先**：NLP/多模态优先用 Transformer
+2. **预训练+微调**：大模型预训练 + 下游微调
+3. **正则化**：训练必须用正则化防止过拟合
+4. **批归一化**：深度网络用批归一化/LayerNorm
+5. **残差连接**：深层网络用残差连接

@@ -26,7 +26,7 @@ summary: 下一个 Token 预测是自回归语言模型的核心任务：给定�
 lifecycle: reviewed
 tier: core
 created: 2026-06-25
-updated: 2026-06-25
+updated: 2026-07-21
 sources: []
 ---
 
@@ -135,3 +135,23 @@ loss = F.cross_entropy(
 - [[概念/causal-mask|因果掩码]]
 - [[概念/transformer-architecture|Transformer 架构]]
 - [[概念/decoding-strategies|解码策略]]
+
+---
+
+## 2026 自回归生成生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Speculative Decoding** | Draft-Verify 加速 2-3x，保持分布一致 | GA |
+| **MTP (Multi-Token Prediction)** | DeepSeek-V3 原生多 Token 预测 | GA |
+| **Parallel Decoding** | 并行解码多个位置，提升吞吐量 | 研究 |
+| **Masked Prediction** | BERT 式掩码预测，双向理解 | GA |
+| **Flow Matching** | 连续流生成，非自回归新范式 | 研究 |
+
+## 生产最佳实践
+
+1. **理解自回归约束**：每次只生成 1 个 Token，吐吐量受限于序列长度
+2. **投机解码加速**：生产环境启用 Speculative Decoding，提升 2-3x 吐吐量
+3. **KV Cache 必用**：避免重复计算，将时间复杂度从 O(T²) 降至 O(T)
+4. **停止条件明确**：设置 EOS Token + max_new_tokens + 停止词，避免无限生成
+5. **温度控制**：根据任务类型调整 temperature，平衡确定性与多样性

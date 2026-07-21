@@ -18,6 +18,8 @@ provenance:
   ambiguous: 0.10
 base_confidence: 0.82
 lifecycle: reviewed
+created: 2026-06-12
+updated: 2026-07-21
 tier: supporting
 ---
 
@@ -133,3 +135,23 @@ response = client.chat.completions.create(
 4. **轻量监控**：专注成本和延迟监控，不做复杂的 Agent 追踪
 5. **适合场景**：需要快速监控 LLM API 成本但不想改代码的团队
 6. **vs LiteLLM**：Helicone 专注监控，LiteLLM 专注路由和 Fallback
+
+---
+
+## 2026 Helicone 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Helicone** | LLM 可观测性平台 | GA |
+| **成本追踪** | 实时 Token 消耗和费用统计 | GA |
+| **延迟监控** | API 延迟分析 | GA |
+| **缓存** | 请求缓存，降低成本 | GA |
+| **代理模式** | API 中间层，零侵入 | GA |
+
+## 生产最佳实践
+
+1. **成本监控**：用 Helicone 监控 LLM API 成本
+2. **缓存启用**：启用缓存降低重复请求成本
+3. **代理模式**：用代理模式零侵入接入
+4. **与 LiteLLM 对比**：Helicone 专注监控，LiteLLM 专注路由
+5. **告警配置**：成本/延迟异常时告警

@@ -4,7 +4,7 @@ category: -concepts
 tags: ["storage", "file-storage", "cloud", "alibaba-cloud"]
 summary: "NAS（Network Attached Storage）是网络附加存储，提供文件级访问接口（NFS/SMB），适合 AI 训练中的共享工作目录和模型仓库。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
 aliases:
   - "Network Attached Storage"
@@ -47,3 +47,23 @@ sources: []
 - [[概念/storage|Storage]]
 - [[概念/oss|OSS]]
 - [[概念/alibaba-cloud|Alibaba Cloud]]
+
+---
+
+## 2026 NAS 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **阿里云 NAS** | 共享文件存储 | GA |
+| **NFS/SMB** | 标准文件协议 | GA |
+| **POSIX 兼容** | 完全 POSIX 兼容 | GA |
+| **弹性扩容** | 自动扩容 | GA |
+| **AI 训练场景** | 训练数据共享存储 | GA |
+
+## 生产最佳实践
+
+1. **共享存储**：多节点训练用 NAS 共享数据
+2. **性能选择**：根据 IOPS 需求选择性能型/容量型
+3. **与 OSS 配合**：NAS + OSS 分层存储
+4. **权限控制**：配置文件访问权限
+5. **备份策略**：重要数据定期备份

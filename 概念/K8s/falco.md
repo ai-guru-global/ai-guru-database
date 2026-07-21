@@ -22,7 +22,7 @@ base_confidence: 0.85
 lifecycle: reviewed
 tier: archived
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-07-21
 aliases:
   - Falco
 
@@ -94,4 +94,23 @@ aliases:
 - [[概念/opa]] — OPA
 - [[概念/kyverno]] — Kyverno
 - [[概念/kubernetes]] — Kubernetes
+- [[概念/trivy]] — Trivy 漏洞扫描
 - [[伦理安全/LLM_Security_Complete_Guide]] — LLM 安全完整指南
+
+---
+
+## 2026 Falco 生态
+
+| 特性 | 说明 | 状态 |
+|------|------|------|
+| **CNCF 孵化** | 社区活跃 | GA |
+| **eBPF 探针** | 低开销采集 | GA |
+| **插件系统** | 扩展数据源 | GA |
+| **Falcosidekick** | 告警路由 | GA |
+
+## 生产最佳实践
+
+1. **eBPF 模式**：生产环境使用 eBPF 探针，降低开销
+2. **规则调优**：根据业务场景调优规则，减少误报
+3. **告警集成**：对接 Prometheus/Alertmanager/SIEM
+4. **与准入控制配合**：OPA/Kyverno 管部署前，Falco 管运行时

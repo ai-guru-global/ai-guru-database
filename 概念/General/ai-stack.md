@@ -4,7 +4,7 @@ category: -concepts
 tags: ["alibaba-cloud", "ai-stack", "inference", "training", "proprietary-cloud", "alibaba-cloud"]
 summary: "AI Stack 是阿里云推出的软硬一体 AI 平台，面向政企私有化场景提供模型管理、训练、推理、GPU 监控等全栈能力。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: core
 aliases:
   - "阿里云 AI Stack"
@@ -48,4 +48,24 @@ AI Stack 可与阿里云专有云 ACK 集成，作为私有化 AI 底座；也�
 - [[概念/alibaba-cloud|Alibaba Cloud]]
 - [[概念/ack|ACK]]
 - [[架构基建/AI_Stack_Deep_Dive|AI Stack Deep Dive]]
-- [[架构基建/AI_Stack/AI_Stack_MLOps_Reference_Architecture|AI Stack MLOps 参考架构]]
+- [[架构基建/AI_Stack/AI_Stack_MLOps_Reference_Architecture|AI Stack MLOps 参考 架构]]
+
+---
+
+## 2026 AI Stack 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **AI Stack** | 阿里云 AI 基础设施 | GA |
+| **GPU 调度** | 分布式训练 GPU 调度 | GA |
+| **模型仓库** | 内置模型注册中心 | GA |
+| **MLOps 流水线** | 端到端 ML 流水线 | GA |
+| **推理服务** | 模型推理服务 | GA |
+
+## 生产最佳实践
+
+1. **一体化平台**：用 AI Stack 一体化 AI 平台
+2. **GPU 调度**：训练任务用 AI Stack GPU 调度
+3. **模型管理**：模型注册到 AI Stack 仓库
+4. **与 ACK 配合**：AI Stack + ACK 容器编排
+5. **专有云部署**：专有云环境用 AI Stack

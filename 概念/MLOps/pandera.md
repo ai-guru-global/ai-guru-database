@@ -4,7 +4,7 @@ category: -concepts
 tags: ["mlops", "data-validation", "pandas", "data-quality", "alibaba-cloud"]
 summary: "Pandera 是面向 DataFrame 的声明式数据验证库，为 Pandas、Polars、Dask、PySpark 等提供 schema 校验能力。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
 aliases:
   - "Pandera Data Validation"
@@ -51,3 +51,23 @@ schema.validate(df)
 - [[概念/data-validation|Data Validation]]
 - [[概念/great-expectations|Great Expectations]]
 - [[概念/mlops|MLOps]]
+
+---
+
+## 2026 Pandera 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Pandera** | Python 数据验证库 | GA |
+| **Schema 定义** | 声明式数据 Schema | GA |
+| **Pydantic 集成** | 与 Pydantic 模型集成 | GA |
+| **FastAPI 集成** | API 输入输出验证 | GA |
+| **统计检查** | 假设检验/分布检查 | GA |
+
+## 生产最佳实践
+
+1. **Schema 先行**：数据处理前先定义 Schema
+2. **CI/CD 集成**：数据验证集成到 CI/CD
+3. **与 Great Expectations 对比**：Pandera 更轻量，GE 更强大
+4. **Pydantic 配合**：API 场景用 Pandera + Pydantic
+5. **统计检查**：关键数据用统计检查验证分布

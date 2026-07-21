@@ -26,7 +26,7 @@ lifecycle: draft
 lifecycle_changed: 2026-05-31
 tier: supporting
 created: 2026-05-31T00:00:00Z
-updated: 2026-05-31T00:00:00Z
+updated: 2026-07-21T00:00:00Z
 aliases:
   - Mlops
 
@@ -108,3 +108,23 @@ LLMOps面临新挑战：评估从固定指标转向LLM-as-Judge，版本管理�
 - [[模型运维/Orchestration/Data_Pipeline_Orchestration]] — 数据流水线编排 (Data Pipeline Orchestration) (共享: ci-cd, feature-store, mlops)
 - [[模型运维/MLOps-in-nutshell]] — MLOps 速成指南 (共享: ci-cd, feature-store, mlops)
 - [[概念/automl]] — 自动机器学习
+
+---
+
+## 2026 MLOps 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **MLflow** | 实验追踪/模型注册/部署 | GA |
+| **Kubeflow** | K8s 原生 ML 平台 | GA |
+| **Weights & Biases** | 实验追踪/可视化 | GA |
+| **Feast** | Feature Store | GA |
+| **Seldon/KServe** | 模型服务 | GA |
+
+## 生产最佳实践
+
+1. **实验追踪**：所有实验必须追踪，支持复现
+2. **模型版本控制**：模型纳入版本控制
+3. **CI/CD for ML**：ML 流水线集成 CI/CD
+4. **监控告警**：监控模型性能，漂移告警
+5. **特征存储**：用 Feature Store 实现特征复用

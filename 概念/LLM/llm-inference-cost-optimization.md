@@ -26,7 +26,7 @@ summary: LLM 推理成本主要由 GPU 租赁、电力、网络和运维组成�
 lifecycle: reviewed
 tier: supporting
 created: 2026-06-25
-updated: 2026-06-25
+updated: 2026-07-21
 sources: []
 ---
 
@@ -158,3 +158,23 @@ python -m vllm.entrypoints.openai.api_server \
 - [[概念/prefill-decode-disaggregated|Prefill-Decode 分离]]
 - [[概念/inference-cluster-scheduling|推理集群调度]]
 - [[概念/vllm-practical|vLLM 实战]]
+
+---
+
+## 2026 推理成本优化生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **量化 (AWQ/GPTQ)** | 4-bit 量化，内存减少 4x，速度提升 2x | GA |
+| **Speculative Decoding** | Draft-Verify 加速 2-3x | GA |
+| **Continuous Batching** | 动态批处理，GPU 利用率提升 2-3x | GA |
+| **KV Cache 压缩** | GQA/MQA 减少 KV Cache 内存 | GA |
+| **Prefill-Decode 分离** | 预填充/解码分离部署，独立扩展 | GA |
+
+## 生产最佳实践
+
+1. **量化必用**：生产环境必须用 4-bit 量化，成本降低 4x
+2. **Continuous Batching 必开**：动态批处理最大化 GPU 利用率
+3. **投机解码加速**：高并发场景启用 Speculative Decoding
+4. **模型选择**：简单任务用小模型，复杂任务用大模型
+5. **成本监控**：实时监控 Token 消耗和 GPU 利用率，设置告警

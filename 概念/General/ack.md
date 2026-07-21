@@ -4,7 +4,7 @@ category: -concepts
 tags: ["kubernetes", "k8s", "alibaba-cloud", "container-service", "cloud-native"]
 summary: "ACK（Alibaba Cloud Container Service for Kubernetes）是阿里云提供的容器服务 Kubernetes 版，支持公有云、专有云、边缘等多种部署形态。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: core
 aliases:
   - "Alibaba Cloud Container Service for Kubernetes"
@@ -49,3 +49,23 @@ sources: []
 - [[概念/kubernetes|Kubernetes]] — 开源容器编排
 - [[概念/apsara-stack|Apsara Stack]] — 阿里云专有云
 - [[架构基建/Alibaba_Cloud_Proprietary_K8s_Context|阿里云专有云 K8s 上下文]]
+
+---
+
+## 2026 ACK 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **ACK** | 阿里云托管 K8s | GA |
+| **ACK Pro** | 企业级 K8s | GA |
+| **ACK Serverless** | 无服务器 K8s | GA |
+| **GPU 调度** | AI 训练 GPU 调度 | GA |
+| **混合云** | 混合云 K8s 管理 | GA |
+
+## 生产最佳实践
+
+1. **托管 K8s**：阿里云环境用 ACK 托管 K8s
+2. **GPU 调度**：AI 训练用 ACK GPU 调度
+3. **Serverless**：弹性场景用 ACK Serverless
+4. **与 Apsara Stack 配合**：专有云用 Apsara Stack
+5. **安全加固**：K8s 集群安全加固

@@ -4,7 +4,7 @@ category: -concepts
 tags: ["mlops", "deployment", "model-serving", "reliability", "alibaba-cloud"]
 summary: "Model Rollback 是在线上模型出现回归、错误或安全问题时，将推理服务切回上一稳定模型版本的运维操作。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
 aliases:
   - "模型回滚"
@@ -48,3 +48,23 @@ sources: []
 - [[概念/mlflow|MLflow]]
 - [[部署推理/Model_Hot_Reload_and_Rollback_Runbook|LLM 模型热加载与回滚 Runbook]]
 - [[模型运维/Troubleshooting/Model_Version_Rollback_Playbook|模型版本回滚 Playbook]]
+
+---
+
+## 2026 模型回滚生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Model Registry** | 模型版本管理 | GA |
+| **金丝雀发布** | 渐进式发布降低风险 | GA |
+| **自动回滚** | 指标异常自动回滚 | GA |
+| **A/B 测试** | 模型对比测试 | GA |
+| **热加载** | 模型热切换 | GA |
+
+## 生产最佳实践
+
+1. **版本管理**：模型必须版本管理
+2. **金丝雀发布**：新模型先金丝雀发布
+3. **自动回滚**：配置自动回滚策略
+4. **监控指标**：回滚决策基于监控指标
+5. **回滚演练**：定期演练回滚流程

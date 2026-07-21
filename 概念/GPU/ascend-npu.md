@@ -22,6 +22,8 @@ provenance:
   ambiguous: 0.10
 base_confidence: 0.80
 lifecycle: reviewed
+created: 2026-06-12
+updated: 2026-07-21
 tier: core
 ---
 
@@ -172,3 +174,23 @@ FlashMLA 已被华为昇腾平台移植：
 - [[概念/cuda-platform]] — CUDA 计算平台
 - [[概念/flash-attention-kernels]] — FlashMLA 算子
 - [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+
+---
+
+## 2026 昇腾生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Ascend 910B/910C** | 华为最新 NPU，支持大模型训练 | GA |
+| **CANN** | 昇腾计算架构，类似 CUDA | GA |
+| **MindSpore** | 华为深度学习框架 | GA |
+| **MindIE** | 昇腾推理引擎 | GA |
+| **AI Stack 集成** | 阿里云 AI Stack 支持昇腾 | GA |
+
+## 生产最佳实践
+
+1. **国产替代**：信创场景考虑华为昇腾
+2. **CANN 兼容**：昇腾用 CANN 替代 CUDA
+3. **MindSpore 框架**：昇腾优先用 MindSpore 框架
+4. **性能验证**：生产前验证昇腾性能
+5. **与 NVIDIA 对比**：对比昇腾与 NVIDIA 的性能和成本

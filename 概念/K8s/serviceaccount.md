@@ -4,7 +4,7 @@ category: -concepts
 tags: ["kubernetes", "k8s", "serviceaccount", "cloud-native", "alibaba-cloud"]
 summary: "ServiceAccount 为 Kubernetes Pod 提供身份标识，使其以受控权限访问 kube-apiserver 及其他服务，是 K8s RBAC 权限体系的核心载体。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
 aliases:
   - "ServiceAccount"
@@ -128,3 +128,23 @@ kubectl create token ai-inference-sa -n model-serving --duration=1h
 - [[概念/rbac|RBAC]] — 基于角色的访问控制
 - [[概念/pod|Pod]] — K8s 最小调度单元
 - [[概念/kubectl|kubectl]] — K8s 命令行工具
+
+---
+
+## 2026 ServiceAccount 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Projected Token (BoundSAToken)** | 短期、绑定 Pod 的投影 Token，默认 1h 自动轮换 | GA |
+| **TokenRequest API** | 按需生成指定受众/时长的 Token，无需创建 Secret | GA |
+| **Workload Identity (云厂商)** | 将 SA 映射到云上 IAM 角色，免节点凭证访问云资源 | GA |
+| **automountServiceAccountToken: false** | 禁止自动挂载 Token，减少攻击面 | GA |
+| **SPIFFE/SPIRE 集成** | 为 SA 颁发 SVID 证书，实现跨集群工作负载身份互信 | GA |
+
+## 生产最佳实践
+
+1. **一应用一 SA**：为每个工作负载创建独立 ServiceAccount，禁止使用 default SA
+2. **关闭自动挂载**：不需要 API 访问的 Pod 设置 `automountServiceAccountToken: false`
+3. **短期 Token 优先**：使用 TokenRequest API 生成临时 Token，避免创建长期 Secret
+4. **云身份映射**：访问云资源时通过 Workload Identity / RRSA 映射，不在 Pod 内存储云 AK/SK
+5. **定期审计 SA 权限**：扫描集群中所有 SA 的 RoleBinding，清理不再使用的账号和过度授权

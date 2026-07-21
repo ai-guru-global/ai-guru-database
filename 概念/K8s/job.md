@@ -4,8 +4,9 @@ category: -concepts
 tags: ["kubernetes", "k8s", "batch-workload", "cloud-native", "alibaba-cloud"]
 summary: "Kubernetes Job 控制器用于运行一次性、可完成的批处理任务，确保指定数量的 Pod 成功执行到终止状态，适用于数据迁移、模型训练初始化、定时任务等场景。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
+lifecycle: reviewed
 aliases:
   - "Job"
   - "K8s Job"
@@ -100,6 +101,22 @@ kubectl delete job data-migration  # ⚠️ HIGH-RISK — 删除 K8s 资源，�
 - [[概念/cronjob|CronJob]] — 基于 Job 的定时任务
 - [[概念/pod|Pod]] — Job 调度的基本单元
 - [[概念/deployment|Deployment]] — 长期运行服务
-- [[概念/kubectl|kubectl]] — 管理 Job 的 CLI 工具
-- [[概念/containerd|containerd]] — Job Pod 的容器运行时
-- [[概念/apsara-stack|Apsara Stack]] — 阿里云专有云
+- [[概念/kueue|Kueue]] — 作业队列调度
+- [[概念/volcano|Volcano]] — 批处理调度器
+
+---
+
+## 2026 Job 最佳实践
+
+| 场景 | 配置 | 说明 |
+|------|------|------|
+| 数据迁移 | completions=1 | 一次性任务 |
+| 批量推理 | parallelism=N | 并行处理 |
+| 定时任务 | CronJob | 周期性执行 |
+
+## 生产最佳实践
+
+1. **设置重试**：配置 backoffLimit 处理临时失败
+2. **自动清理**：使用 ttlSecondsAfterFinished 清理历史 Job
+3. **资源限制**：设置合理的 requests/limits
+4. **日志采集**：配置日志持久化，便于事后排查

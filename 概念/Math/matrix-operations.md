@@ -11,11 +11,11 @@ relationships:
   - target: "[[概念/neural-networks]]"
     type: related_to
 summary: 矩阵运算就是对数字表格批量做计算的方法。它把大量数据组织成行和列，通过加法、数乘、乘法等操作一次性处理，是AI、图形学和数据分析的底层工具。
-lifecycle: draft
-lifecycle_changed: 2026-06-25
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
 tier: supporting
 created: 2026-06-25T16:01:28Z
-updated: 2026-06-25T16:01:28Z
+updated: 2026-07-21T16:01:28Z
 sources: []
 ---
 
@@ -155,3 +155,23 @@ sources: []
 
 - 数学基础/Linear_Algebra/Linear_Algebra.md
 - 当前对话中关于矩阵运算的白话解释
+
+---
+
+## 2026 矩阵运算生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **矩阵乘法** | 神经网络核心运算 | GA |
+| **SVD 分解** | 奇异值分解，降维/压缩 | GA |
+| **稀疏矩阵** | 稀疏计算加速 | GA |
+| **Tensor Core** | GPU 矩阵运算加速 | GA |
+| **FlashAttention** | 高效注意力矩阵运算 | GA |
+
+## 生产最佳实践
+
+1. **矩阵乘法优化**：大矩阵乘法用 Tensor Core
+2. **稀疏计算**：稀疏矩阵用稀疏计算
+3. **SVD 压缩**：模型压缩用 SVD
+4. **数值稳定性**：矩阵运算注意数值稳定性
+5. **内存布局**：矩阵内存布局影响性能

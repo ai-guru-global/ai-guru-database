@@ -4,7 +4,7 @@ category: -concepts
 tags: ["hardware", "gpu", "nvidia", "training", "inference", "alibaba-cloud"]
 summary: "GPU（Graphics Processing Unit）是适合大规模并行计算的处理器，是现代 AI 训练与推理的主要算力来源。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: core
 aliases:
   - "Graphics Processing Unit"
@@ -50,3 +50,23 @@ sources: []
 - [[概念/mig|MIG]]
 - [[概念/hami|HAMi]]
 - [[概念/gpu-oom|GPU OOM]]
+
+---
+
+## 2026 GPU 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **NVIDIA H100/H200** | Hopper 架构，FP8 训练/推理 | GA |
+| **NVIDIA B100/B200** | Blackwell 架构，性能翻倍 | GA |
+| **AMD MI300X** | CDNA 3 架构，192GB HBM3 | GA |
+| **Intel Gaudi 3** | 专用 AI 训练芯片 | GA |
+| **国产 GPU** | 华为 Ascend/寒武纪/海光 DCU | GA |
+
+## 生产最佳实践
+
+1. **训练用 H100/H200**：大模型训练首选 NVIDIA H100/H200
+2. **推理用 L40S/A10**：推理场景用 L40S/A10，成本更低
+3. **显存规划**：根据模型大小选择显存，避免 OOM
+4. **多卡互联**：多卡训练用 NVLink，多节点用 InfiniBand
+5. **监控利用率**：实时监控 GPU 利用率，发现瓶颈

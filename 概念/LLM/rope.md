@@ -21,6 +21,7 @@ base_confidence: 0.90
 lifecycle: reviewed
 tier: core
 created: 2026-06-12
+updated: 2026-07-21
 aliases:
   - Rope
 
@@ -155,3 +156,23 @@ DeepSeek-V3 在 MLA 架构中对 RoPE 做了特殊处理——**解耦 RoPE**：
 - [[概念/multi-head-latent-attention]] — Multi-head Latent Attention (MLA)
 - [[概念/attention-variants]] — GQA/MQA/SWA 注意力变体
 - [[概念/long-context-models]] — 长上下文模型
+
+---
+
+## 2026 RoPE 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **RoPE + YaRN** | NTK 扩展，支持 128K-1M 上下文 | GA |
+| **NTK-aware RoPE** | 调整频率基数实现长序列外推 | GA |
+| **Dynamic NTK** | 动态调整频率，自适应序列长度 | GA |
+| **xPos** | 改进 RoPE 的外推能力 | 研究 |
+| **RoPE + MLA** | DeepSeek-V3 的 RoPE + 多头潜在注意力 | GA |
+
+## 生产最佳实践
+
+1. **主流用 RoPE**：新模型优先选择 RoPE，生态支持最完善
+2. **长上下文用 YaRN**：需要 128K+ 上下文时启用 YaRN 扩展
+3. **与 KV Cache 配合**：RoPE 影响 KV Cache 复用策略，前缀缓存需位置编码兼容
+4. **模型选型关注**：选择模型时关注其 RoPE 配置对上下文长度的支持
+5. **外推测试**：部署前测试超出训练长度的外推能力

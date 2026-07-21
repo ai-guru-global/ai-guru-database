@@ -4,7 +4,7 @@ category: -concepts
 tags: ["gpu", "nvidia", "virtualization", "multi-tenant", "alibaba-cloud"]
 summary: "MIG（Multi-Instance GPU）是 NVIDIA 提供的 GPU 硬件级切片技术，可将单张 GPU 物理划分为多个独立实例，实现强隔离的多租户共享。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
 aliases:
   - "Multi-Instance GPU"
@@ -62,3 +62,23 @@ nvidia-smi mig -cgi 19 -C
 - [[概念/hami|HAMi]]
 - [[概念/time-slicing|Time Slicing]]
 - [[运维/SRE_Reliability/GPU_OOM_Troubleshooting_Guide|GPU OOM 排障指南]]
+
+---
+
+## 2026 MIG 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **MIG (A100/H100)** | 多实例 GPU，硬件级隔离 | GA |
+| **MIG 7 实例** | A100 最多切分 7 个实例 | GA |
+| **MIG + K8s** | Kubernetes 原生 MIG 支持 | GA |
+| **MIG 监控** | 每实例独立监控指标 | GA |
+| **MIG 配置文件** | 预定义 MIG 配置模板 | GA |
+
+## 生产最佳实践
+
+1. **多租户必用**：多租户场景用 MIG 硬件隔离
+2. **实例规格选择**：根据任务选择 1g/2g/3g/4g/7g 实例
+3. **与 Time-Slicing 对比**：MIG 硬件隔离，Time-Slicing 软件隔离
+4. **K8s 集成**：用 NVIDIA Device Plugin 管理 MIG
+5. **监控每实例**：监控每个 MIG 实例的利用率

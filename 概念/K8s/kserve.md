@@ -24,7 +24,7 @@ base_confidence: 0.9
 lifecycle: reviewed
 tier: core
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-07-21
 aliases:
   - Kserve
 
@@ -154,3 +154,23 @@ spec:
 - [[概念/hami]] — HAMi GPU 虚拟化
 - [[部署推理/Inference_Engines/BentoML_Deep_Dive]] — BentoML 模型服务框架
 - [[架构基建/CNCF_Cloud_Native_AI/README]] — CNCF 云原生大模型全景
+
+---
+
+## 2026 KServe 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **KServe v0.14** | 支持 Gateway API 替代 Istio，简化网络层依赖 | GA |
+| **vLLM Runtime 原生支持** | InferenceService 直接声明 vLLM 运行时，无需自定义镜像 | GA |
+| **LLM 专用 Autoscaler** | 基于 GPU 利用率/KV Cache 使用率的智能扩缩 | Beta |
+| **ModelMesh** | 多模型共享服务实例，降低小模型托管成本 | GA |
+| **Open Inference Protocol v2** | 标准化推理 API，支持流式响应与批处理 | GA |
+
+## 生产最佳实践
+
+1. **LLM 推理用 RawDeployment 模式**：避免 Knative 冷启动延迟，保证低延迟在线服务
+2. **金丝雀发布必用**：新模型版本上线使用 canaryTrafficPercent 逐步切流量
+3. **资源配额明确**：为 Predictor 设置 GPU/内存 limits，避免单模型耗尽节点资源
+4. **监控推理指标**：集成 Prometheus 监控 P99 延迟、吞吐量、GPU 利用率
+5. **多模型用 ModelMesh**：小模型/传统 ML 模型使用 ModelMesh 共享实例，降低成本

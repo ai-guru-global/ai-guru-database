@@ -4,7 +4,7 @@ category: -concepts
 tags: ["kubernetes", "k8s", "deployment", "progressive-delivery", "canary", "cloud-native", "alibaba-cloud"]
 summary: "Argo Rollouts 是 Kubernetes 的渐进式交付控制器，提供金丝雀、蓝绿、A/B 测试等高级发布策略，替代原生 Deployment 的滚动更新。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
 aliases:
   - "ArgoRollouts"
@@ -64,3 +64,23 @@ spec:
 - [[概念/argocd|ArgoCD]] — GitOps 交付
 - [[概念/prometheus|Prometheus]] — 发布指标
 - [[概念/kubernetes|Kubernetes]] — 容器编排
+
+---
+
+## 2026 Argo Rollouts 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Argo Rollouts** | K8s 渐进式交付控制器 | GA |
+| **金丝雀发布** | 逐步增加流量比例 | GA |
+| **蓝绿部署** | 双环境切换 | GA |
+| **实验分析** | A/B 测试集成 | GA |
+| **Istio 集成** | 服务网格流量控制 | GA |
+
+## 生产最佳实践
+
+1. **金丝雀发布**：生产环境用金丝雀发布降低风险
+2. **自动回滚**：配置自动回滚策略，失败时快速恢复
+3. **指标分析**：用 Prometheus 指标自动分析发布健康
+4. **与 ArgoCD 配合**：ArgoCD + Argo Rollouts 实现 GitOps 渐进式交付
+5. **流量控制**：用 Istio 精确控制流量比例

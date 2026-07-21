@@ -23,7 +23,7 @@ summary: GPT 系列从 GPT-1 的预训练探索，到 GPT-3 的上下文学习�
 lifecycle: reviewed
 tier: core
 created: 2026-06-25
-updated: 2026-06-25
+updated: 2026-07-21
 sources: []
 ---
 
@@ -164,3 +164,23 @@ GPT-1 (117M) → GPT-2 (1.5B) → GPT-3 (175B) → GPT-3.5 → GPT-4 → GPT-4o 
 
 - [[../../大模型/Global_LLM_Ecosystem/OpenAI_Deep_Dive|OpenAI 深度解析]] — GPT 系列架构演进、RLHF 对齐与产品战略
 - [[../../大模型/LLM_Architectures/LLM_Internals_Models_Frontiers|LLM 内部之：前沿模型]] — GPT/Claude/Gemini 的架构对比
+
+---
+
+## 2026 GPT 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **GPT-4o** | 原生多模态，文本/图像/音频统一 | GA |
+| **GPT-4.5** | 更大参数，更强推理能力 | GA |
+| **o3/o4-mini** | 推理模型，多步推理 + 工具调用 | GA |
+| **GPT API** | 结构化输出/函数调用/批量 API | GA |
+| **Assistants API** | 有状态对话，内置检索/代码执行 | GA |
+
+## 生产最佳实践
+
+1. **模型选择**：简单任务用 GPT-4o-mini，复杂任务用 GPT-4o
+2. **推理模型**：数学/代码/逻辑用 o3/o4-mini
+3. **结构化输出**：API 场景必须用 JSON Schema 约束输出
+4. **成本控制**：GPT-4o-mini 价格极低，适合高并发
+5. **与开源对比**：生产前对比 GPT 与开源模型的效果和成本

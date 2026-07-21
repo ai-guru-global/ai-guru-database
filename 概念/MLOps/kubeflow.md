@@ -24,7 +24,7 @@ base_confidence: 0.88
 lifecycle: reviewed
 tier: core
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-07-21
 aliases:
   - Kubeflow
 
@@ -111,3 +111,23 @@ Kubeflow Platform
 - [[概念/kserve]] — KServe
 - [[概念/volcano]] — Volcano
 - [[概念/kueue]] — Kueue
+
+---
+
+## 2026 Kubeflow 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Kubeflow Pipelines** | ML 工作流编排 | GA |
+| **Kubeflow Training** | 分布式训练 Operator | GA |
+| **Kubeflow Notebooks** | Jupyter Notebook 服务 | GA |
+| **KServe** | 模型推理服务 | GA |
+| **Katib** | 超参数调优 | GA |
+
+## 生产最佳实践
+
+1. **K8s 原生**：K8s 环境优先选择 Kubeflow
+2. **Pipeline 编排**：用 Kubeflow Pipelines 编排 ML 工作流
+3. **分布式训练**：用 Training Operator 管理分布式训练
+4. **与 KServe 配合**：Kubeflow + KServe 实现训练到部署
+5. **资源管理**：用 Kueue/Volcano 管理 GPU 资源

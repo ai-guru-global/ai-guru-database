@@ -4,8 +4,9 @@ category: -concepts
 tags: ["kubernetes", "k8s", "configmap", "cloud-native", "alibaba-cloud"]
 summary: "ConfigMap 是 Kubernetes 中用于存储非敏感配置数据的 API 对象，以键值对形式将配置与容器镜像解耦，支持以环境变量、命令行参数或挂载卷的方式注入 Pod。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
+lifecycle: reviewed
 aliases:
   - "ConfigMap"
   - "configmap"
@@ -114,4 +115,22 @@ kubectl rollout restart deployment/web-app
 - [[概念/kubernetes|Kubernetes]] — K8s 编排平台
 - [[概念/kubectl|kubectl]] — K8s 命令行工具
 - [[概念/helm|Helm]] — K8s 包管理与配置模板
-- [[概念/apsara-stack|阿里云专有云 Apsara Stack]] — 专有云架构
+- [[概念/secret|Secret]] — 敏感配置管理
+- [[概念/pod|Pod]] — 配置消费方
+
+---
+
+## 2026 ConfigMap 最佳实践
+
+| 场景 | 用法 | 说明 |
+|------|------|------|
+| 环境变量 | envFrom | 简单配置 |
+| 配置文件 | Volume 挂载 | 复杂配置 |
+| 动态开关 | Volume + 监听 | 需应用支持 |
+
+## 生产最佳实践
+
+1. **与 Secret 区分**：敏感数据用 Secret，非敏感用 ConfigMap
+2. **大小限制**：单个 ConfigMap 不超过 1MiB
+3. **不可变性**：生产环境设置 immutable: true
+4. **版本管理**：配合 Helm/Kustomize 管理多环境配置

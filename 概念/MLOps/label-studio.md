@@ -16,6 +16,8 @@ provenance:
   ambiguous: 0.10
 base_confidence: 0.85
 lifecycle: reviewed
+created: 2026-06-12
+updated: 2026-07-21
 tier: core
 ---
 
@@ -173,3 +175,23 @@ spec:
 - [[概念/mlflow]] — MLflow 实验追踪与模型管理
 - [[概念/giskard]] — Giskard AI 模型测试与评估
 - [[概念/scale-ai]] — Scale AI 数据标注平台
+
+---
+
+## 2026 Label Studio 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Label Studio** | 开源数据标注平台 | GA |
+| **多模态支持** | 图像/文本/音频/视频标注 | GA |
+| **ML 后端** | 模型辅助标注 | GA |
+| **Label Studio Cloud** | 托管标注服务 | GA |
+| **API 集成** | REST API 集成 | GA |
+
+## 生产最佳实践
+
+1. **开源优先**：数据标注优先选择 Label Studio
+2. **ML 辅助**：启用模型辅助标注，提升效率
+3. **质量控制**：多人标注 + 一致性检查
+4. **与训练集成**：标注数据直接用于训练
+5. **权限管理**：标注任务权限管理

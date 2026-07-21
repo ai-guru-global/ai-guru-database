@@ -17,11 +17,11 @@ provenance:
   inferred: 0.15
   ambiguous: 0.05
 base_confidence: 0.75
-lifecycle: draft
-lifecycle_changed: 2026-05-31
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
 tier: supporting
 created: 2026-05-31T00:00:00Z
-updated: 2026-05-31T00:00:00Z
+updated: 2026-07-21T00:00:00Z
 ---
 
 # 时间序列分析
@@ -139,3 +139,23 @@ Facebook 开发的可加模型：$y(t) = g(t) + s(t) + h(t) + \epsilon_t$
 - [[机器学习/Anomaly_Detection/Anomaly_Detection.md|Anomaly_Detection]]
 - [[机器学习/Anomaly_Detection/Anomaly_Detection_for_dummy.md|Anomaly_Detection_for_dummy]]
 - [[机器学习/AutoML/AutoML.md|AutoML]]
+
+---
+
+## 2026 时序分析生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Prophet** | Facebook 时序预测 | GA |
+| **ARIMA/SARIMA** | 经典时序模型 | GA |
+| **Transformer 时序** | PatchTST 等时序 Transformer | GA |
+| **时序基础模型** | TimesFM/Chronos 时序基础模型 | 研究 |
+| **异常检测** | 时序异常检测 | GA |
+
+## 生产最佳实践
+
+1. **季节性建模**：时序数据必须建模季节性
+2. **Prophet 快速**：快速预测用 Prophet
+3. **深度学习**：复杂时序用 Transformer
+4. **异常检测**：时序异常检测用于监控
+5. **特征工程**：时序特征工程很重要

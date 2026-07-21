@@ -19,6 +19,8 @@ provenance:
 base_confidence: 0.80
 lifecycle: reviewed
 tier: supporting
+created: 2026-06-16
+updated: 2026-07-21
 ---
 
 # ppu-smi APG GPU 监控工具
@@ -116,3 +118,23 @@ AI Stack GPU 监控体系
 - [[概念/nvidia-smi]] — nvidia-smi GPU 监控
 - [[概念/ascend-npu]] — 华为昇腾 NPU
 - [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+
+---
+
+## 2026 GPU 监控生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **ppu-smi v2** | APG 加速卡监控，支持功耗/温度/显存/利用率 | GA |
+| **nvidia-smi (DCGM)** | NVIDIA GPU 监控，支持 NVLink/ECC/健康检查 | GA |
+| **npu-smi (CANN)** | 华为昇腾 NPU 监控，支持 Ascend 910B/910C | GA |
+| **rocm-smi** | AMD GPU 监控，支持 MI300X | GA |
+| **Prometheus GPU Exporter** | 统一采集多厂商 GPU 指标，Grafana 大盘展示 | GA |
+
+## 生产最佳实践
+
+1. **监控全覆盖**：所有 GPU 节点部署对应监控工具，确保无盲区
+2. **告警阈值设置**：温度 >85°C、显存 >90%、利用率持续 <10% 时告警
+3. **定期健康检查**：每日自动运行 GPU 健康检查，及时发现硬件故障
+4. **统一大盘**：使用 Prometheus + Grafana 统一展示多厂商 GPU 指标
+5. **日志关联**：GPU 指标与推理服务日志关联，便于问题定位

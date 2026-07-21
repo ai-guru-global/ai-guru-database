@@ -26,7 +26,7 @@ provenance:
   ambiguous: 0.05
 base_confidence: 0.92
 created: 2026-06-24
-updated: 2026-06-24
+updated: 2026-07-21
 ---
 
 # CI/CD（持续集成 / 持续部署）
@@ -134,3 +134,23 @@ ArgoCD / Flux（监听变化）
 - [[概念/code-generation-workflow]] — AI 代码生成工作流
 - [[模型运维/CI_CD/index]] — MLOps CI/CD 章节
 - [[治理/cheatsheets/cheatsheet-mlops]] — LLMOps 速查表
+
+---
+
+## 2026 CI/CD 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **GitHub Actions** | GitHub 原生 CI/CD | GA |
+| **GitLab CI** | GitLab 原生 CI/CD | GA |
+| **Jenkins** | 老牌 CI/CD 工具 | GA |
+| **Tekton** | K8s 原生 CI/CD | GA |
+| **Argo Workflows** | K8s 工作流引擎 | GA |
+
+## 生产最佳实践
+
+1. **自动化必用**：所有构建/测试/部署必须自动化
+2. **快速反馈**：CI 流水线尽快反馈，<10分钟
+3. **测试覆盖**：单元测试 + 集成测试 + E2E 测试
+4. **GitOps 部署**：用 ArgoCD 实现 GitOps 部署
+5. **安全扫描**：CI/CD 中集成安全扫描

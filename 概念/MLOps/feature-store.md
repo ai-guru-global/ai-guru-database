@@ -4,7 +4,7 @@ category: "概念"
 tags: ["feature-store", "mlops", "feature-engineering", "real-time", "offline", "feast"]
 summary: "Feature Store 是 ML 系统中特征的统一管理平台——解决特征的复用、一致性、实时性和版本控制问题。"
 created: "2026-06-25"
-updated: "2026-06-25"
+updated: "2026-07-21"
 tier: core
 aliases:
   - "Feature Store"
@@ -96,3 +96,23 @@ sources: []
 - [[模型运维/Experiment_Tracking/Feast_Deep_Dive]] — Feast 框架深度解析
 - [[概念/experiment-tracking]] — 实验追踪概念
 - [[RAG系统/Vector_Databases/index]] — 向量数据库（非结构化特征存储）
+
+---
+
+## 2026 Feature Store 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Feast** | 开源 Feature Store | GA |
+| **Tecton** | 企业级 Feature Store | GA |
+| **Hopsworks** | 全功能 ML 平台 | GA |
+| **在线/离线存储** | 双存储架构 | GA |
+| **特征监控** | 特征漂移检测 | GA |
+
+## 生产最佳实践
+
+1. **特征复用**：用 Feature Store 实现特征复用
+2. **在线/离线一致**：确保在线/离线特征一致性
+3. **特征监控**：监控特征漂移，及时告警
+4. **与训练集成**：Feature Store 与训练流水线集成
+5. **权限控制**：特征访问权限控制

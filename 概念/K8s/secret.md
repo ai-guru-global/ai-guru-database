@@ -15,7 +15,7 @@ relationships:
 lifecycle: reviewed
 tier: supporting
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 aliases:
   - "Secret"
   - "K8s Secret"
@@ -130,3 +130,23 @@ kubectl create secret docker-registry regcred \
 - [[概念/rbac|RBAC]] — 基于角色的访问控制
 - [[概念/etcd|etcd]] — K8s 配置与 Secret 持久化存储
 - [[概念/apsara-stack|阿里云专有云 Apsara Stack]] — 专有云 K8s 环境
+
+---
+
+## 2026 Secret 管理生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **KMS v2 Provider** | etcd 加密集成外部 KMS，信封加密 + 自动轮换，性能优于 v1 | GA |
+| **External Secrets Operator (ESO)** | 从 Vault/AWS SM/阿里云 KMS 同步 Secret，支持自动轮换 | GA |
+| **Secrets Store CSI Driver** | 以 CSI 卷方式挂载外部 Secret，支持多 Provider 插件 | GA |
+| **BoundServiceAccountTokenVolume** | 短期投影 Token 替代长期 Secret，降低泄露风险 | GA |
+| **kubectl create secret --dry-run=client** | 生成 YAML 而不实际创建，配合 GitOps 安全审计 | GA |
+
+## 生产最佳实践
+
+1. **启用 etcd 加密**：配置 EncryptionConfiguration + KMS v2 Provider，确保静态数据加密而非仅 Base64
+2. **优先外部 Secret 存储**：使用 ESO 或 Secrets Store CSI Driver 将密钥托管在 Vault/KMS，K8s 中仅保留引用
+3. **最小权限 RBAC**：严格限制 Secret 的 get/list 权限，避免 default ServiceAccount 自动挂载
+4. **自动轮换策略**：配合 cert-manager、ESO 的 rotationPolicy 实现证书/密码定期轮换
+5. **审计与告警**：开启 API Server 审计日志，监控 Secret 的创建/读取/删除事件，异常访问实时告警

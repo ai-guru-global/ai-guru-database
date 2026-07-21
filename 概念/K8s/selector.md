@@ -4,7 +4,7 @@ category: -concepts
 tags: ["kubernetes", "k8s", "selector", "cloud-native", "alibaba-cloud"]
 summary: "Kubernetes 中的 Selector 是一组用于筛选资源的匹配规则，Label Selector 决定 Service 流量该转发到哪些 Pod，也决定 Deployment/Replicaset 该管理哪些 Pod。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
 aliases:
   - "Label Selector"
@@ -140,3 +140,23 @@ spec:
 - [[概念/deployment|Deployment]] — 通过 Selector 管理副本
 - [[概念/replicaset|ReplicaSet]] — Selector 的直接使用者
 - [[概念/pod|Pod]] — Label 与 Selector 的作用目标
+
+---
+
+## 2026 Selector 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **matchExpressions 增强** | 支持更复杂的集合型匹配，配合 CEL 表达式 | GA |
+| **Topology Spread Constraints** | 基于 Label 的拓扑分布约束，替代简单 nodeSelector | GA |
+| **Gateway API 路由匹配** | 基于 Header/Path/Query 的流量路由，超越 Label Selector | GA |
+| **kubectl label --overwrite** | 批量更新 Label，配合 Selector 实现灰度发布 | GA |
+| **Node Feature Discovery (NFD)** | 自动检测节点硬件特征并打 Label，供 Selector 筛选 | GA |
+
+## 生产最佳实践
+
+1. **Selector 不可变**：工作负载控制器的 `spec.selector` 创建后不要修改，避免孤儿 Pod
+2. **Label 规范命名**：使用 `app.kubernetes.io/*` 推荐标签，便于工具链统一识别
+3. **GPU 节点选择**：使用 NFD 自动打 GPU 型号 Label，配合 nodeSelector 精确调度
+4. **灰度发布用 Label**：通过 `version` Label + 不同 Selector 组合实现金丝雀/蓝绿发布
+5. **避免过度标签**：每个资源保持 3-5 个核心 Label，避免标签爆炸影响性能

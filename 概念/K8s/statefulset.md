@@ -4,8 +4,9 @@ category: -concepts
 tags: ["kubernetes", "k8s", "statefulset", "stateful-app", "cloud-native", "alibaba-cloud"]
 summary: "StatefulSet 是 Kubernetes 中用于管理有状态应用的工作负载控制器，为 Pod 提供稳定网络标识、有序部署和持久化存储，适用于数据库、消息队列等需要稳定身份的场景。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
+lifecycle: reviewed
 aliases:
   - "StatefulSet"
   - "K8s StatefulSet"
@@ -115,5 +116,23 @@ kubectl get pvc -l app=mysql
 - [[概念/deployment|Deployment]] — 无状态工作负载控制器
 - [[概念/pod|Pod]] — K8s 最小调度单元
 - [[概念/service|Service]] — K8s 服务发现
+- [[概念/persistent-volume-claim|PVC]] — 持久卷声明
 - [[概念/secret|Secret]] — 敏感配置管理
 - [[概念/helm|Helm]] — K8s 应用包管理
+
+---
+
+## 2026 StatefulSet 最佳实践
+
+| 场景 | 配置 | 说明 |
+|------|------|------|
+| 数据库 | volumeClaimTemplates | 独立存储 |
+| 消息队列 | Headless Service | 稳定网络标识 |
+| 分布式协调 | 有序部署 | 主从架构 |
+
+## 生产最佳实践
+
+1. **Headless Service**：必须配合 Headless Service
+2. **存储备份**：定期备份 PVC 数据
+3. **删除谨慎**：删除 StatefulSet 会删除 PVC
+4. **与 Deployment 区分**：无状态用 Deployment，有状态用 StatefulSet

@@ -22,7 +22,7 @@ base_confidence: 0.9
 lifecycle: reviewed
 tier: core
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-07-21
 aliases:
   - Containerd
 
@@ -107,4 +107,24 @@ systemctl status containerd
 - [[概念/cri]] — CRI 容器运行时接口
 - [[概念/oci-runtime]] — OCI Runtime
 - [[概念/cdi]] — CDI 容器设备接口
+- [[概念/docker]] — Docker 容器平台
+- [[概念/crictl]] — crictl 调试工具
 - [[架构基建/Architecture_Overview/AI_Infrastructure_2026]] — AI 基础设施 2026
+
+---
+
+## 2026 containerd 生态
+
+| 特性 | 说明 | 状态 |
+|------|------|------|
+| **CNCF 毕业** | 工业标准 | GA |
+| **CRI 实现** | K8s 默认运行时 | GA |
+| **CDI 支持** | GPU/NPU 设备注入 | GA |
+| **Nydus 镜像** | 懒加载镜像 | 社区 |
+
+## 生产最佳实践
+
+1. **生产首选**：稳定、高性能、K8s 默认
+2. **GPU 配置**：配合 nvidia-container-toolkit
+3. **镜像缓存**：合理配置镜像缓存策略
+4. **监控告警**：监控容器启动时间、资源使用

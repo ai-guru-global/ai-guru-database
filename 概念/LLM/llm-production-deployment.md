@@ -4,7 +4,7 @@ category: concepts
 tags: [llm, production-deployment, mlops, inference-engine, llm-gateway, guardrails, observability, finops, sre]
 summary: "LLM 生产部署是将大语言模型从实验环境迁移到高可用、可扩展、可治理的在线服务体系的工程实践，涵盖模型选型、推理服务化、网关治理、安全护栏、可观测性与成本优化等全链路能力。"
 created: 2026-07-02
-updated: 2026-07-02
+updated: 2026-07-21
 tier: concept
 aliases:
   - "LLM Production Deployment"
@@ -117,3 +117,23 @@ LLM 应用的可观测性远超传统 APM，需覆盖成本（$/请求、缓存�
 - [[概念/finops|FinOps]]
 - [[概念/model-serving|模型服务化]]
 - [[概念/canary-deployment|灰度发布]]
+
+---
+
+## 2026 LLM 生产部署生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **vLLM v0.7 / SGLang v0.4** | 生产级推理引擎，PagedAttention + Continuous Batching | GA |
+| **AI Gateway 标配** | 智能路由 + 语义缓存 + Fallback，节省 40-70% 成本 | GA |
+| **FP8 默认精度** | H100+ 原生支持，显存减半 + 速度提升 30% | GA |
+| **LLM 可观测平台** | Langfuse/Helicone/Arize，成本/性能/质量/安全四维监控 | GA |
+| **Prefill-Decode 分离** | 独立扩缩容，优化资源利用率 | Beta |
+
+## 生产最佳实践
+
+1. **推理引擎必用**：生产环境禁止裸 HF Transformers，必须使用 vLLM/SGLang/TensorRT-LLM
+2. **网关治理必配**：部署 AI Gateway 统一入口，实现认证/限流/路由/缓存/降级
+3. **安全护栏前置**：输入审查 + 输出过滤必须在设计阶段纳入，不可后期补加
+4. **灰度发布必用**：新模型版本先小流量验证，再全量切换，保留回滚能力
+5. **成本监控实时**：按项目/团队设置 Token 配额与告警，避免成本失控

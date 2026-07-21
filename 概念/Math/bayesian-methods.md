@@ -20,7 +20,7 @@ base_confidence: 0.90
 lifecycle: reviewed
 tier: core
 created: 2026-06-04
-updated: 2026-06-04
+updated: 2026-07-21
 aliases:
   - "Bayesian Methods"
   - "bayesian methods"
@@ -163,3 +163,23 @@ q^*(\theta) = \arg\min_{q \in \mathcal{Q}} D_{KL}(q(\theta) \| P(\theta|\mathcal
 - [[概念/probability-statistics]] — 概率统计基础
 - [[概念/information-theory]] — 信息论（KL 散度与变分推断）
 - [[概念/optimization-regularization]] — 优化与正则化（贝叶斯视角下的正则化）
+
+---
+
+## 2026 贝叶斯方法生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **贝叶斯推断** | 后验概率推断 | GA |
+| **变分推断** | 近似后验推断 | GA |
+| **MCMC** | 马尔可夫链蒙特卡洛 | GA |
+| **贝叶斯神经网络** | 不确定性量化 | 研究 |
+| **高斯过程** | 非参数贝叶斯模型 | GA |
+
+## 生产最佳实践
+
+1. **不确定性量化**：需要不确定性时用贝叶斯方法
+2. **变分推断**：大规模问题用变分推断
+3. **先验设计**：合理设计先验分布
+4. **与深度学习结合**：贝叶斯深度学习量化不确定性
+5. **小样本学习**：小样本场景贝叶斯方法有优势

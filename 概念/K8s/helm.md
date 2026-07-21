@@ -20,7 +20,7 @@ base_confidence: 0.9
 lifecycle: reviewed
 tier: core
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-07-21
 aliases:
   - Helm
 
@@ -97,4 +97,23 @@ helm rollback hami -n kube-system
 - [[概念/kubernetes]] — Kubernetes
 - [[概念/kustomize]] — Kustomize
 - [[概念/argocd]] — ArgoCD
+- [[概念/flux]] — Flux GitOps
 - [[架构基建/Architecture_Overview/AI_Infrastructure_2026]] — AI 基础设施 2026
+
+---
+
+## 2026 Helm 生态
+
+| 特性 | 说明 | 状态 |
+|------|------|------|
+| **CNCF 毕业** | 成熟稳定 | GA |
+| **Helm 3** | 无 Tiller、更安全 | GA |
+| **OCI Registry** | Chart 存储于 OCI 仓库 | GA |
+| **Helmfile** | 声明式 Release 管理 | 社区 |
+
+## 生产最佳实践
+
+1. **版本管理**：Chart 版本化，支持回滚
+2. **Values 分离**：环境差异用 values 文件覆盖
+3. **与 ArgoCD 配合**：GitOps 管理 Helm Release
+4. **Chart 测试**：使用 helm unittest 测试模板

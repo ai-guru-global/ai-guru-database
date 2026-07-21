@@ -21,7 +21,7 @@ base_confidence: 0.90
 lifecycle: reviewed
 tier: core
 created: 2026-06-04
-updated: 2026-06-04
+updated: 2026-07-21
 aliases:
   - Tokenization
 
@@ -193,3 +193,23 @@ Google 的统一 tokenization 框架，支持 BPE 和 Unigram：
 - [[概念/llm-architectures]] — LLM 架构
 - [[概念/transformer-architecture]] — Transformer 架构
 - [[大模型/LLM_Architectures]] — LLM 架构深度解析
+
+---
+
+## 2026 Tokenization 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **BPE (Byte Pair Encoding)** | 最常用分词算法，GPT/Llama 采用 | GA |
+| **SentencePiece** | 语言无关分词，支持多语言 | GA |
+| **Tokenizers (HF)** | HuggingFace 快速分词器 | GA |
+| **Unigram** | 基于概率的分词算法 | GA |
+| **Byte-level BPE** | 字节级 BPE，支持任意语言 | GA |
+
+## 生产最佳实践
+
+1. **模型匹配**：使用模型对应的分词器，不要混用
+2. **多语言支持**：多语言场景用 SentencePiece 或 Byte-level BPE
+3. **特殊 Token**：正确处理 BOS/EOS/PAD 等特殊 Token
+4. **Token 计数**：API 调用前用分词器计算 Token 数，控制成本
+5. **分词器缓存**：生产环境缓存分词器，避免重复加载

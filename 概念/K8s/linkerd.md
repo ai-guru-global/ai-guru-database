@@ -4,8 +4,9 @@ category: -concepts
 tags: ["kubernetes", "k8s", "service-mesh", "microservices", "traffic-management", "cloud-native", "alibaba-cloud"]
 summary: "Linkerd 是 CNCF 毕业的服务网格项目，以极简、轻量和安全著称，采用 Rust 编写的 micro-proxy 作为数据面，适合对延迟敏感的场景。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: archived
+lifecycle: reviewed
 aliases:
   - "Linkerd2"
 relationships:
@@ -51,3 +52,21 @@ sources: []
 - [[概念/istio|Istio]] — 功能更丰富的服务网格
 - [[概念/service-mesh|Service Mesh]] — 服务网格概念
 - [[概念/kubernetes|Kubernetes]] — 容器编排
+- [[概念/envoy|Envoy]] — Istio 数据面代理
+
+---
+
+## 2026 Linkerd 生态
+
+| 特性 | 说明 | 状态 |
+|------|------|------|
+| **CNCF 毕业** | 成熟稳定 | GA |
+| **Rust 代理** | 低资源占用 | GA |
+| **自动 mTLS** | 零配置安全 | GA |
+
+## 生产最佳实践
+
+1. **适用场景**：中小规模集群、资源敏感场景
+2. **与 Istio 对比**：追求简单用 Linkerd，追求功能用 Istio
+3. **资源监控**：关注 linkerd2-proxy 内存使用
+4. **渐进式采用**：先注入部分服务，验证后扩大范围

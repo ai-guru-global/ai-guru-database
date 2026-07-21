@@ -25,7 +25,7 @@ lifecycle: reviewed
 lifecycle_changed: 2026-06-16
 tier: core
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-07-21
 aliases:
   - Text2sql
 
@@ -106,5 +106,25 @@ SQL 校验（语法/安全）
 - [[概念/ai-agents]] — AI Agent
 - [[概念/code-generation]] — 代码生成
 - [[概念/prompt-engineering]] — 提示工程
+- [[概念/rag-production-architecture|RAG 生产架构]] — 生产级 RAG 设计
 - [[RAG系统/README]] — RAG 系统
 - [[编程/README]] — AI 编程工具
+
+---
+
+## 2026 Text2SQL 生态
+
+| 工具/模型 | 定位 | 核心优势 | 适用场景 |
+|---------|------|---------|----------|
+| **DIN-SQL** | 分解式 Text2SQL | 复杂查询分解、高准确率 | 企业 BI |
+| **DAIL-SQL** | 示例增强 | Few-shot、跨库泛化 | 通用场景 |
+| **SQLCoder** | 开源模型 | 15B 参数、可私有部署 | 数据安全敏感 |
+| **GPT-4 + Schema** | API 方案 | 零训练、快速集成 | 原型验证 |
+
+## 生产最佳实践
+
+1. **Schema 链接**：提供完整表结构、字段注释、示例数据提升生成准确率
+2. **SQL 验证**：生成后必须经过语法检查 + 沙箱执行验证
+3. **权限控制**：仅允许 SELECT 查询，禁止 DDL/DML 操作
+4. **结果解释**：将 SQL 结果转换为自然语言解释，提升可理解性
+5. **迭代优化**：收集失败案例构建 Few-shot 示例库，持续提升准确率

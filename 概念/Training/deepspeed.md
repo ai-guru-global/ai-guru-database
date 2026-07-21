@@ -23,6 +23,7 @@ provenance:
 base_confidence: 0.9
 lifecycle: reviewed
 tier: core
+updated: 2026-07-21
 created: 2026-06-16
 updated: 2026-06-16
 aliases:
@@ -117,3 +118,23 @@ Data Parallel Group
 - [[概念/hami]] — HAMi GPU 虚拟化
 - [[概念/ray]] — Ray 分布式框架
 - [[概念/training-cost-optimization|训练成本优化]] — ZeRO 在 FinOps 体系中的角色
+
+---
+
+## 2026 DeepSpeed 生态
+
+| 特性 | 说明 | 状态 |
+|------|------|------|
+| **ZeRO-3** | 参数/梯度/优化器全分片 | GA |
+| **ZeRO-Inference** | 推理时显存优化 | GA |
+| **DeepSpeed-Chat** | RLHF 训练框架 | GA |
+| **MoE 支持** | 专家并行训练 | GA |
+| **FP8 训练** | H100 原生支持 | GA |
+
+## 生产最佳实践
+
+1. **ZeRO 级别**：显存充足用 ZeRO-2，不足用 ZeRO-3 + Offload
+2. **配置简化**：使用 DeepSpeed Config JSON 生成器避免配置错误
+3. **与 Megatron 结合**：超大规模训练用 Megatron-DeepSpeed
+4. **通信优化**：启用通信重叠、梯度压缩降低带宽需求
+5. **监控指标**：关注 MFU、显存峰值、通信/计算比

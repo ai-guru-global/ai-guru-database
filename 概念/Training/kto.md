@@ -22,7 +22,7 @@ provenance:
   ambiguous: 0.05
 base_confidence: 0.85
 created: 2026-06-24
-updated: 2026-06-24
+updated: 2026-07-21
 ---
 
 # KTO（Kahneman-Tversky Optimization）
@@ -97,4 +97,25 @@ def kto_loss(policy_chosen_logps, policy_rejected_logps,
 - [[概念/dpo]] — DPO（更主流的替代）
 - [[概念/rlhf]] — RLHF 总览
 - [[概念/grpo]] — GRPO（另一种新算法）
-- [[概念/preference-learning]] — 偏好学习- [[概念/orpo]] — ORPO（几率比偏好优化）
+- [[概念/preference-learning]] — 偏好学习
+- [[概念/orpo]] — ORPO（几率比偏好优化）
+- [[概念/simpo]] — SimPO（无参考模型偏好优化）
+
+---
+
+## 2026 KTO 生态
+
+| 特性 | 说明 | 状态 |
+|------|------|------|
+| **TRL 集成** | HuggingFace TRL 原生支持 | GA |
+| **多语言** | 中文/英文/多语言场景验证 | GA |
+| **与 DPO 融合** | KTO + DPO 混合训练 | 实验性 |
+| **在线 KTO** | 结合在线采样的迭代式 KTO | 研究前沿 |
+
+## 生产最佳实践
+
+1. **数据质量**：二元反馈需明确标准，避免模糊标注
+2. **样本平衡**：好/坏样本比例建议 1:1 至 2:1，避免偏斜
+3. **beta 调优**：从 0.1 开始，根据 KL 散度调整
+4. **与 DPO 对比**：有 A/B 数据用 DPO，只有单边反馈用 KTO
+5. **评估指标**：使用胜率、人类评估、自动指标综合评估

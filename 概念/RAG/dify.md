@@ -19,6 +19,7 @@ provenance:
 base_confidence: 0.85
 lifecycle: reviewed
 tier: supporting
+updated: 2026-07-21
 ---
 
 # Dify 开源 LLM 应用平台
@@ -98,5 +99,26 @@ AI Stack LLM 应用构建层级
 - [[概念/rag-systems]] — RAG 系统
 - [[概念/langflow]] — LangFlow 可视化编排
 - [[概念/agentic-rag]] — Agentic RAG
+- [[概念/rag-production-architecture|RAG 生产架构]] — 生产级 RAG 设计
 - [[11_RAG_Systems/Dify_Deep_Dive]] — Dify 深度解析
 - [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+
+---
+
+## 2026 Dify 生态
+
+| 特性 | 说明 | 状态 |
+|------|------|------|
+| **可视化工作流** | 拖拽式编排、条件分支、循环 | GA |
+| **RAG 引擎** | 多数据源、自动分块、混合检索 | GA |
+| **Agent 框架** | ReAct/Function Calling/自定义 | GA |
+| **多模型支持** | 100+ LLM 提供商、本地模型 | GA |
+| **企业功能** | SSO/审计/多租户/权限 | GA |
+
+## 生产最佳实践
+
+1. **工作流设计**：复杂业务拆分为多个子工作流，便于维护和调试
+2. **RAG 调优**：根据业务场景调整分块策略、检索 Top-K、Rerank 参数
+3. **模型路由**：配置多模型 fallback，避免单点故障
+4. **监控告警**：启用日志审计、Token 用量监控、异常响应告警
+5. **版本管理**：应用配置导出纳入 Git，支持回滚和审计

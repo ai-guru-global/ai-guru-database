@@ -1,15 +1,20 @@
 ---
 title: Prefix Caching (前缀缓存)
 category: -concepts
-tags: [inference, kv-cache, caching, prefix, optimization]
+tags: [inference, kv-cache, caching, prefix, optimization, radix-attention, vllm, sglang]
 relationships:
-  - target: "概念/kv-cache"
+  - target: "概念/Inference/kv-cache"
     type: optimizes
-  - target: "概念/radix-attention"
+  - target: "概念/Inference/radix-attention"
     type: implemented_by
+  - target: "概念/Inference/request-scheduling"
+    type: related_to
+  - target: "概念/Inference/inference-performance"
+    type: improves
 sources:
   - 架构基建/AI_Stack_Deep_Dive.md
-summary: 前缀缓存通过复用多个请求共享的 prompt prefix 的 KV Cache 状态，避免重复 prefill 计算。命中率 60-85% 时每次调用成本降低 5-12×，是 2026 年推理侧最高杠杆的应用层优化。实现包括 vLLM APC（哈希匹配）和 SGLang RadixAttention（树形匹配）。
+  - "https://arxiv.org/abs/2312.07104"  # SGLang RadixAttention
+summary: 前缀缓存通过复用多个请求共享的 prompt prefix 的 KV Cache 状态，避免重复 prefill 计算。命中率 60-85% 时每次调用成本降低 5-12×，是 2026 年推理侧最高杠杆的应用层优化。
 provenance:
   extracted: 0.88
   inferred: 0.07
@@ -18,34 +23,27 @@ base_confidence: 0.83
 lifecycle: draft
 lifecycle_changed: 2026-06-03
 tier: core
-created: 2026-06-03 00:00:00+00:00
-updated: 2026-06-03 00:00:00+00:00
+created: 2026-06-03
+updated: 2026-07-21
 aliases:
   - "Prefix Caching"
   - "prefix caching"
+  - "前缀缓存"
+  - "Prompt Caching"
 
 ---
 # Prefix Caching (前缀缓存)
+
+> 前缀缓存是推理侧最高杠杆的应用层优化——共享前缀的 KV Cache 只算一次，后续请求直接复用。
 
 ## 核心要点
 
 - **复用共享 prompt prefix 的 KV Cache**：如果两个请求共享前 200K tokens 的 system prompt + 参考文档，前缀缓存使这 200K tokens 的 attention 计算变为内存读取
 - **命中率 60-85%**：在 Agent 循环、多轮对话、RAG 等场景下可达高命中率
-- **成本降低 5-12×**：命中时 per-call 成本大幅下降，是应用层最高杠杆优化
+- **成本降低 5-12×**：命中时 per-call 成本大幅下降
 - **越长的上下文越划算**：前缀越长，节省的 prefill 计算越多
 
-## 详细内容
-
-### 四种实现方案
-
-| 方案 | 引擎 | 匹配方式 | 最佳场景 |
-|------|------|---------|---------|
-| **vLLM APC** | vLLM 0.4+ | 基于哈希的精确前缀匹配 | 模板化 batch 推理 |
-| **SGLang RadixAttention** | SGLang | 基数树分支匹配 | 动态多轮对话/Agent |
-| **Anthropic Cache Markers** | Claude API | 应用层显式标记 | 多租户 SaaS |
-| **TensorRT-LLM KV Reuse** | TensorRT-LLM | 底层引擎 API | 稳定高流量生产 |
-
-### 工作原理
+## 工作原理
 
 ```
 Request 1: [System Prompt (10K)] + [Document (50K)] + [User Query A (200)]
@@ -54,28 +52,99 @@ Request 1: [System Prompt (10K)] + [Document (50K)] + [User Query A (200)]
 Request 2: [System Prompt (10K)] + [Document (50K)] + [User Query B (150)]
            → 检测到前 60K tokens 匹配 → 直接读取缓存
            → 仅计算 User Query B 的 150 tokens
+
+节省: 60K tokens 的 Prefill 计算 ≈ 节省 99.75% 的 Prefill 成本
 ```
 
-### 场景化命中率
+## 四种实现方案
 
-| 场景 | 预期命中率 | 原因 |
-|------|----------|------|
-| Agent 系统循环 | 70-85% | 共享 system prompt + tool 描述 |
-| RAG 文档问答 | 60-80% | 共享参考文档上下文 |
-| 多轮对话 | 50-70% | 共享对话历史前缀 |
-| Code Q&A | 65-80% | 共享代码仓库上下文 |
-| 一次性查询 | <10% | 低复用率 |
+| 方案 | 引擎 | 匹配方式 | 最佳场景 | 粒度 |
+|------|------|---------|---------|------|
+| **vLLM APC** | vLLM 0.4+ | 基于哈希的精确前缀匹配 | 模板化 batch 推理 | Block (16 tokens) |
+| **SGLang RadixAttention** | SGLang | 基数树分支匹配 | 动态多轮对话/Agent | 任意前缀 |
+| **Anthropic Cache Markers** | Claude API | 应用层显式标记 | 多租户 SaaS | 标记点 |
+| **TensorRT-LLM KV Reuse** | TensorRT-LLM | 底层引擎 API | 稳定高流量生产 | Block |
+| **OpenAI Prompt Caching** | GPT API | 自动前缀匹配 | API 调用 | 128 tokens |
 
-### 最佳实践
+### vLLM APC vs SGLang RadixAttention
 
-1. **保持前缀稳定**：将 system prompt 和参考文档放在 prompt 开头，用户查询放在末尾
-2. **设置合理 TTL**：热数据用 24h TTL，冷数据及时淘汰
-3. **监控命中率**：命中率 <30% 时考虑关闭前缀缓存（管理开销 > 收益）
-4. **配合 FP8 KV**：FP8 量化使缓存占用减半，可缓存更多前缀
+| 维度 | vLLM APC | SGLang RadixAttention |
+|------|----------|--------------------|
+| 匹配算法 | 哈希精确匹配 | Radix Tree 分支匹配 |
+| 灵活性 | 仅精确前缀 | 支持任意共享前缀 |
+| 多轮对话 | 支持 | 更优（树形结构） |
+| 实现复杂度 | 低 | 中 |
+| 命中率 | 高（模板化场景） | 更高（动态场景） |
+
+## 场景化命中率
+
+| 场景 | 预期命中率 | 原因 | 优化建议 |
+|------|----------|------|----------|
+| Agent 系统循环 | 70-85% | 共享 system prompt + tool 描述 | 保持 tool 描述顺序稳定 |
+| RAG 文档问答 | 60-80% | 共享参考文档上下文 | 文档放 prompt 前部 |
+| 多轮对话 | 50-70% | 共享对话历史前缀 | 历史追加而非重排 |
+| Code Q&A | 65-80% | 共享代码仓库上下文 | 代码上下文放前部 |
+| 批量翻译 | 80-90% | 共享 system prompt | 模板固定 |
+| 一次性查询 | <10% | 低复用率 | 不建议启用 |
+
+## 启用配置示例
+
+```python
+# vLLM 启用前缀缓存
+from vllm import LLM
+
+llm = LLM(
+    model="Qwen/Qwen2.5-72B-Instruct",
+    enable_prefix_caching=True,  # 启用 APC
+    gpu_memory_utilization=0.9,
+    max_model_len=131072,        # 128K 上下文
+)
+
+# SGLang 自动启用 RadixAttention
+# python -m sglang.launch_server --model Qwen/Qwen2.5-72B-Instruct
+# RadixAttention 默认启用，无需额外配置
+```
+
+```python
+# Anthropic Prompt Caching (API 层)
+import anthropic
+
+client = anthropic.Anthropic()
+response = client.messages.create(
+    model="claude-sonnet-4-20250514",
+    max_tokens=1024,
+    system=[{
+        "type": "text",
+        "text": long_system_prompt,  # >1024 tokens
+        "cache_control": {"type": "ephemeral"}  # 标记缓存点
+    }],
+    messages=[{"role": "user", "content": "..."}]
+)
+# 命中时: input tokens 成本降低 90%
+```
+
+## 性能影响
+
+| 指标 | 无缓存 | 有缓存 (命中) | 提升 |
+|------|--------|------------|------|
+| TTFT (60K前缀) | ~3s | ~100ms | 30× |
+| Prefill 计算量 | 60K tokens | 200 tokens | 300× 减少 |
+| 每次调用成本 | 1× | 0.08-0.2× | 5-12× 降低 |
+| 显存占用 | 基线 | +10-20% (缓存) | 略增 |
+
+## 最佳实践
+
+1. **保持前缀稳定**: 将 system prompt 和参考文档放在 prompt 开头，用户查询放在末尾
+2. **设置合理 TTL**: 热数据用 24h TTL，冷数据及时淘汰
+3. **监控命中率**: 命中率 <30% 时考虑关闭前缀缓存（管理开销 > 收益）
+4. **配合 FP8 KV**: FP8 量化使缓存占用减半，可缓存更多前缀
+5. **避免前缀变动**: 时间戳、随机 ID 等不要放在前缀中，会破坏缓存
+6. **Prompt 结构化**: 固定部分放前，可变部分放后，最大化共享前缀长度
 
 ## Related
 
-- [[概念/kv-cache]] — KV Cache
-- [[概念/radix-attention]] — RadixAttention（SGLang 实现）
-- [[概念/paged-attention]] — PagedAttention（底层内存管理）
-- [[部署推理/Caching/Prompt_Caching_and_KV_Cache_Optimization]] — Prompt Caching 全景
+- [[概念/Inference/kv-cache|KV Cache]]
+- [[概念/Inference/radix-attention|RadixAttention]]
+- [[概念/Inference/paged-attention|PagedAttention]]
+- [[概念/Inference/inference-performance|推理性能]]
+- [[部署推理/Caching/Prompt_Caching_and_KV_Cache_Optimization|Prompt Caching 全景]]

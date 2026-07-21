@@ -26,10 +26,12 @@ lifecycle: draft
 lifecycle_changed: 2026-06-03
 tier: core
 created: 2026-06-03 00:00:00+00:00
-updated: 2026-06-03 00:00:00+00:00
+updated: 2026-07-21
 aliases:
   - "Continuous Batching"
   - "continuous batching"
+  - "连续批处理"
+  - "In-flight Batching"
 
 ---
 # Continuous Batching (连续批处理)
@@ -88,6 +90,43 @@ Step 3: Prefill A[1024:1536] + Decode B, C, D  (A prefill 完成)
 Step 4: Decode A, B, C, D
 ```
 
+## 各引擎实现对比
+
+| 引擎 | 实现名称 | 特色 | 默认启用 |
+|------|----------|------|:---:|
+| **vLLM** | Continuous Batching | PagedAttention 协同 | ✅ |
+| **SGLang** | Zero-overhead Scheduling | RadixAttention 前缀复用 | ✅ |
+| **TensorRT-LLM** | In-flight Batching | 与 TRT Engine 深度融合 | ✅ |
+| **TGI** | Continuous Batching | 优先级队列 | ✅ |
+| **LMDeploy** | Continuous Batching | TurboMind 内核 | ✅ |
+
+## 配置示例 (vLLM)
+
+```python
+from vllm import LLM
+
+llm = LLM(
+    model="Qwen/Qwen2.5-72B-Instruct",
+    # Continuous Batching 相关配置
+    max_num_seqs=256,             # 最大并发序列数
+    max_num_batched_tokens=8192,  # 每步最大 token 数
+    enable_chunked_prefill=True,  # 启用 Chunked Prefill
+    # 抢占策略
+    preemption_mode="swap",       # swap / recompute
+    # 显存管理
+    gpu_memory_utilization=0.9,
+    block_size=16,                # PagedAttention block 大小
+)
+```
+
+## 生产最佳实践
+
+1. **必须启用**: 2026 年所有生产环境必须启用 Continuous Batching，吐吐提升 2-4×
+2. **配合 Chunked Prefill**: 输入长度方差大时必须启用，避免 TTFT 尖刺
+3. **max_num_seqs 调优**: 过小→GPU 吃不饱；过大→显存压力。从 256 开始调
+4. **监控 batch size**: 平均 batch size <30% 容量时考虑缩容
+5. **抢占策略**: 显存充足用 swap（恢复快），显存紧张用 recompute
+
 ## 来源
 
 - Yu et al., "Orca: A Distributed Serving System for Transformer-Based Generative Models," OSDI 2022
@@ -95,14 +134,10 @@ Step 4: Decode A, B, C, D
 
 ## Related
 
-- [[概念/paged-attention]] — PagedAttention（内存管理协同）
-- [[概念/kv-cache]] — KV Cache
-- [[概念/model-deployment]] — 模型部署
-- [[部署推理/Inference_Engines/vLLM_Deep_Dive]] — vLLM（Continuous Batching + PagedAttention）
-- [[部署推理/Inference_Engines/SGLang_Deep_Dive]] — SGLang（零开销调度 + Continuous Batching）
-- [[部署推理/Inference_Engines/TGI_Deep_Dive]] — TGI（Continuous Batching）
-- [[部署推理/Inference_Engines/LMDeploy_Deep_Dive]] — LMDeploy（Continuous Batching）
-- [[部署推理/Inference_Engines/TensorRT_LLM_Deep_Dive]] — TensorRT-LLM（In-Flight Batching）
-- [[概念/dynamic-batch-scheduling]] — 动态批调度
-- [[概念/sglang]] — SGLang
-- [[概念/tensorrt-llm]] — TensorRT-LLM
+- [[概念/Inference/paged-attention|PagedAttention]]
+- [[概念/Inference/kv-cache|KV Cache]]
+- [[概念/Inference/request-scheduling|请求调度]]
+- [[概念/Inference/model-serving|模型服务]]
+- [[概念/Inference/sglang|SGLang]]
+- [[概念/Inference/tensorrt-llm|TensorRT-LLM]]
+- [[部署推理/Inference_Engines/vLLM_Deep_Dive|vLLM 深度解析]]

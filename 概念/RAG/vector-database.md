@@ -29,7 +29,8 @@ provenance:
   inferred: 0.13
   ambiguous: 0.05
 base_confidence: 0.8
-lifecycle: draft
+lifecycle: reviewed
+updated: 2026-07-21
 lifecycle_changed: 2026-05-31
 tier: supporting
 created: 2026-05-31 00:00:00+00:00
@@ -125,4 +126,30 @@ IVF（Inverted File Index）将向量空间划分为聚类中心，查询时只�
 
 ## Related
 
+- [[概念/milvus]] — Milvus 分布式向量库
+- [[概念/qdrant]] — Qdrant 高性能向量库
+- [[概念/weaviate]] — Weaviate AI 原生向量库
+- [[概念/chroma]] — Chroma 嵌入式向量库
+- [[概念/embedding]] — Embedding 模型
+- [[概念/rag-production-architecture|RAG 生产架构]] — 向量库选型指南
 - [[治理/rag-vector-database]] — RAG 系统 × 向量数据库 (共享: milvus, qdrant, vector-database)
+
+---
+
+## 2026 向量数据库选型指南
+
+| 数据库 | 规模 | 核心优势 | 适用场景 |
+|--------|------|---------|----------|
+| **Milvus** | 十亿级 | 分布式、GPU 索引、生态完善 | 大型企业、海量数据 |
+| **Qdrant** | 亿级 | Rust 高性能、易部署、量化 | 中型生产、低延迟 |
+| **Weaviate** | 亿级 | 模块化、多模态、GraphQL | AI 原生应用 |
+| **Chroma** | 十万级 | 极简 API、嵌入式 | 原型、小规模 |
+| **pgvector** | 千万级 | PostgreSQL 扩展、无额外组件 | 已有 PG 基础设施 |
+
+## 生产最佳实践
+
+1. **规模匹配**：根据数据量选择合适数据库，避免小数据用重型方案
+2. **索引调优**：HNSW 参数（m/ef）根据召回率要求调整
+3. **量化压缩**：内存受限时启用 PQ/SQ/Binary 量化
+4. **混合检索**：向量 + 关键词融合提升召回率
+5. **监控告警**：关注 p99 延迟、内存使用率、索引构建时间

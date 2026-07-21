@@ -15,6 +15,7 @@ sources:
 summary: "Chroma 是面向 AI 应用的嵌入式向量数据库，以极简 API、原型友好、Python-first 设计著称；适合小型项目和原型，是 RAG 系统入门首选。"
 lifecycle: reviewed
 tier: supporting
+updated: 2026-07-21
 provenance:
   extracted: 0.80
   inferred: 0.15
@@ -97,5 +98,26 @@ print(results)
 
 - [[概念/milvus]] — Milvus（大规模场景）
 - [[概念/rag-systems]] — RAG 系统
+- [[概念/qdrant]] — Qdrant（中型生产场景）
+- [[概念/rag-production-architecture|RAG 生产架构]] — 向量库选型指南
 - [[RAG系统/Vector_Databases/Chroma_Deep_Dive]] — Chroma 深度
 - [[RAG系统/Vector_Databases/Milvus_Deep_Dive]] — Milvus 对比
+
+---
+
+## 2026 Chroma 生态
+
+| 特性 | 说明 | 状态 |
+|------|------|------|
+| **Chroma Cloud** | 托管服务，免运维 | GA |
+| **分布式模式** | 水平扩展、多节点 | Beta |
+| **多模态** | 图像/音频 Embedding 存储 | GA |
+| **集成生态** | LangChain/LlamaIndex/Dify 原生支持 | GA |
+
+## 生产最佳实践
+
+1. **规模边界**：Chroma 适合 <10万向量，超过则迁移至 Qdrant/Milvus
+2. **持久化**：生产环境必须配置持久化存储，避免数据丢失
+3. **批量操作**：使用 add() 批量插入而非逐条，提升 10x+ 吞吐
+4. **元数据过滤**：善用 where 条件缩小搜索范围，提升精度
+5. **原型转生产**：验证后迁移至 Qdrant/Milvus 获得更好性能和可扩展性

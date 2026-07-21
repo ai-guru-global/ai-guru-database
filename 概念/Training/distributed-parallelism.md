@@ -21,7 +21,7 @@ base_confidence: 0.92
 lifecycle: reviewed
 tier: core
 created: 2026-06-04
-updated: 2026-06-04
+updated: 2026-07-21
 aliases:
   - "Distributed Parallelism"
   - "distributed parallelism"
@@ -196,3 +196,27 @@ Experts 0-85    Experts 86-170   Experts 171-255
 - [[概念/model-training]] — 模型训练
 - [[概念/model-serving]] — 模型服务（推理并行策略）
 - [[概念/heterogeneous-gpu]] — 异构 GPU 集群
+- [[概念/deepspeed]] — DeepSpeed
+- [[概念/fsdp]] — FSDP
+- [[概念/megatron-lm]] — Megatron-LM
+- [[概念/dualpipe]] — DualPipe 双向流水线
+
+---
+
+## 2026 并行策略选型
+
+| 并行类型 | 适用场景 | 通信开销 | 代表实现 |
+|---------|---------|---------|----------|
+| **DP** | 扩展吞吐 | 低 | DDP/FSDP |
+| **TP** | 节点内大模型 | 高 | Megatron-LM |
+| **PP** | 节点间大模型 | 中 | DualPipe |
+| **EP** | MoE 模型 | 中 | DeepSpeed-MoE |
+| **SP** | 长序列 | 中 | Ring Attention |
+
+## 生产最佳实践
+
+1. **组合策略**：TP 节点内、PP 节点间、DP 扩展吞吐
+2. **通信优化**：启用通信重叠、梯度压缩
+3. **监控指标**：关注 MFU、通信/计算比、显存峰值
+4. **框架选择**：PyTorch 生态用 FSDP，复杂场景用 DeepSpeed/Megatron
+5. **负载均衡**：MoE 模型需注意专家负载均衡

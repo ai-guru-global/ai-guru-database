@@ -23,6 +23,7 @@ provenance:
 base_confidence: 0.88
 lifecycle: reviewed
 tier: core
+updated: 2026-07-21
 created: 2026-06-16
 updated: 2026-06-16
 aliases:
@@ -109,3 +110,23 @@ aliases:
 - [[概念/fsdp]] — FSDP
 - [[概念/tensor-parallelism]] — 张量并行
 - [[概念/pipeline-parallelism]] — 流水线并行
+- [[概念/dualpipe]] — DualPipe 双向流水线
+
+---
+
+## 2026 Megatron-LM 生态
+
+| 特性 | 说明 | 状态 |
+|------|------|------|
+| **Megatron-Core** | 模块化重构、更易扩展 | GA |
+| **FP8 训练** | H100/H200 原生支持 | GA |
+| **MoE 支持** | 专家并行 + 负载均衡 | GA |
+| **上下文并行** | 长序列训练 | GA |
+
+## 生产最佳实践
+
+1. **并行策略**：TP 节点内、PP 节点间、DP 扩展吞吐
+2. **微批次**：增加微批次数降低 PP 气泡率
+3. **混合精度**：BF16/FP8 训练 + FP32 主权重
+4. **与 DeepSpeed 结合**：Megatron-DeepSpeed 用于超大规模训练
+5. **监控指标**：关注 MFU、通信/计算比、显存峰值

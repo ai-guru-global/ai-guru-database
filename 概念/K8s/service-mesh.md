@@ -4,8 +4,9 @@ category: -concepts
 tags: ["kubernetes", "k8s", "service-mesh", "microservices", "traffic-management", "cloud-native", "alibaba-cloud"]
 summary: "Service Mesh（服务网格）是一种将服务间通信能力从应用中剥离出来的基础设施层，通过 Sidecar 代理统一实现流量管理、安全和可观测性。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: archived
+lifecycle: reviewed
 aliases:
   - "服务网格"
   - "Microservices Mesh"
@@ -51,3 +52,22 @@ App A Pod [App + Envoy Sidecar]  ←mTLS→  App B Pod [App + Envoy Sidecar]
 - [[概念/linkerd|Linkerd]] — 轻量服务网格实现
 - [[概念/envoy|Envoy]] — 数据面代理
 - [[概念/kubernetes|Kubernetes]] — 容器编排
+- [[概念/network-policy|NetworkPolicy]] — 网络策略
+
+---
+
+## 2026 服务网格生态
+
+| 方案 | 特点 | 适用场景 |
+|------|------|----------|
+| **Istio** | 功能全面、生态丰富 | 企业级微服务 |
+| **Linkerd** | 轻量、简单 | 中小规模 |
+| **Ambient Mesh** | 无 Sidecar、低开销 | 资源敏感 |
+| **eBPF** | 内核级、高性能 | 极致性能 |
+
+## 生产最佳实践
+
+1. **选型匹配**：根据规模和复杂度选择合适方案
+2. **渐进式采用**：先可观测性，再流量管理，最后安全
+3. **资源规划**：Sidecar 模式需额外资源开销
+4. **监控告警**：关注 Sidecar 资源使用、配置同步状态

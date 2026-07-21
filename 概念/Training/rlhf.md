@@ -21,8 +21,9 @@ provenance:
   inferred: 0.20
   ambiguous: 0.10
 base_confidence: 0.70
-lifecycle: draft
-lifecycle_changed: 2026-05-31
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
+updated: 2026-07-21
 tier: supporting
 created: 2026-05-31T00:00:00Z
 updated: 2026-06-16T00:00:00Z
@@ -102,5 +103,27 @@ RLHF训练后的模型表现出明显的"对齐效应"：拒绝有害请求的�
 ## Related
 
 - [[概念/lora-qlora-sft-rlhf-dpo]] — LoRA / QLoRA / SFT / RLHF / DPO 大白话串讲
-- [[论文精读/Alignment/RLHF_DPO_Deep_Dive]] — RLHF 与 DPO 深度解读 (从 InstructGPT 到 Direct Preference Optimization) (共享: alignment, rl, rlhf)
-- [[概念/deep-reinforcement-learning]] — 深度强化学习 (共享: ppo, rl)
+- [[概念/dpo]] — DPO（直接偏好优化）
+- [[概念/grpo]] — GRPO（组相对策略优化）
+- [[概念/reward-modeling]] — 奖励模型
+- [[论文精读/Alignment/RLHF_DPO_Deep_Dive]] — RLHF 与 DPO 深度解读
+- [[概念/deep-reinforcement-learning]] — 深度强化学习
+
+---
+
+## 2026 RLHF 生态
+
+| 算法 | 核心机制 | 优势 | 适用场景 |
+|------|---------|------|----------|
+| **PPO-RLHF** | 奖励模型 + PPO | 效果最佳、可控性强 | 高质量对齐 |
+| **DPO** | 直接偏好优化 | 无需奖励模型、简单 | 有 A/B 数据 |
+| **GRPO** | 组相对策略 | 无需 Critic、省资源 | 资源受限 |
+| **KTO** | 二元反馈 | 标注成本低 | 只有 👍/👎 数据 |
+
+## 生产最佳实践
+
+1. **算法选择**：资源充足用 PPO-RLHF，简单场景用 DPO，资源受限用 GRPO
+2. **奖励模型**：定期更新奖励模型，避免奖励黑客（reward hacking）
+3. **KL 约束**：保持与参考模型的 KL 散度在合理范围，避免过度偏离
+4. **人类评估**：自动指标 + 人类评估结合，确保对齐质量
+5. **迭代优化**：收集用户反馈持续迭代偏好数据

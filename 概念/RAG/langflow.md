@@ -17,6 +17,7 @@ provenance:
 base_confidence: 0.80
 lifecycle: reviewed
 tier: supporting
+updated: 2026-07-21
 ---
 
 # LangFlow 可视化 LLM 编排
@@ -93,4 +94,25 @@ AI Stack LLM 应用构建选项
 
 - [[概念/rag-systems]] — RAG 系统
 - [[概念/agentic-rag]] — Agentic RAG
+- [[概念/dify]] — Dify 低代码平台
+- [[概念/rag-production-architecture|RAG 生产架构]] — 生产级 RAG 设计
 - [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+
+---
+
+## 2026 可视化编排生态
+
+| 工具 | 定位 | 核心优势 | 适用场景 |
+|------|------|---------|----------|
+| **LangFlow** | 可视化 LLM 编排 | 拖拽式、DataStax 支持、组件丰富 | 快速原型、非开发者 |
+| **Dify** | 低代码 AI 平台 | 全功能、多模型、企业级 | 企业 AI 应用 |
+| **Flowise** | LangChain 可视化 | 轻量、LangChain 生态 | 开发者快速搭建 |
+| **n8n + AI** | 工作流自动化 | 集成丰富、自动化 | 业务流程自动化 |
+
+## 生产最佳实践
+
+1. **原型验证**：用 LangFlow 快速验证 RAG 流程可行性，再迁移至代码实现
+2. **组件复用**：将常用流程封装为可复用组件/模板
+3. **版本管理**：导出流程 JSON 纳入 Git 版本控制
+4. **性能边界**：复杂流程（>20 节点）考虑代码实现以获得更好性能
+5. **安全审计**：生产部署前审计自定义组件代码安全性

@@ -19,6 +19,7 @@ provenance:
 base_confidence: 0.80
 lifecycle: reviewed
 tier: supporting
+updated: 2026-07-21
 aliases:
   - "RS-LoRA"
   - "Rs Lora"
@@ -165,3 +166,28 @@ model = get_peft_model(base_model, config_rslora)
 4. **PEFT 已集成**：`use_rslora=True` 即可使用
 5. **可组合**：可以和 PiSSA、DoRA 等其他改进叠加使用
 6. **理论支撑**：基于随机矩阵理论，缩放与范数增长匹配
+
+---
+
+## Related
+
+- [[概念/lora-peft]] — LoRA 与参数高效微调
+- [[概念/peft]] — PEFT 库
+- [[概念/pissa]] — PiSSA 奇异值适配
+- [[概念/qlora]] — QLoRA 量化微调
+
+## 2026 rsLoRA 生态
+
+| 特性 | 说明 | 状态 |
+|------|------|------|
+| **PEFT 集成** | `use_rslora=True` 即可使用 | GA |
+| **与 DoRA 组合** | rsLoRA + DoRA 叠加 | 实验性 |
+| **高 rank 优化** | rank > 32 时效果显著 | GA |
+
+## 生产最佳实践
+
+1. **启用时机**：rank > 32 时建议启用 rsLoRA
+2. **配置简单**：仅需设置 `use_rslora=True`
+3. **无负面影响**：低 rank 时与标准 LoRA 效果相当
+4. **可组合**：与 PiSSA、DoRA 等方法叠加使用
+5. **适用场景**：追求高 rank 稳定训练时优先选择

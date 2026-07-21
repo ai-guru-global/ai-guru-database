@@ -4,8 +4,9 @@ category: -concepts
 tags: ["gpu", "virtualization", "kubernetes", "k8s", "multi-tenant", "alibaba-cloud"]
 summary: "GPU Sharing 是让多张工作负载共享同一张物理 GPU 的技术，可提升资源利用率，常见实现包括时间片调度、MIG、HAMi 等。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
+lifecycle: reviewed
 aliases:
   - "GPU 共享"
 relationships:
@@ -49,3 +50,23 @@ sources: []
 - [[概念/hami|HAMi]]
 - [[概念/time-slicing|Time Slicing]]
 - [[概念/gpu-oom|GPU OOM]]
+- [[概念/gpu-virtualization|GPU 虚拟化]]
+
+---
+
+## 2026 GPU 共享生态
+
+| 方案 | 隔离性 | 显存超卖 | 适用场景 |
+|------|--------|---------|----------|
+| **Time Slicing** | 低 | 否 | 开发测试 |
+| **MIG** | 高 | 否 | 生产推理 |
+| **HAMi** | 中 | 是 | 多租户平台 |
+| **vGPU** | 高 | 否 | 企业级 |
+
+## 生产最佳实践
+
+1. **场景匹配**：开发测试用 Time Slicing，生产用 MIG/HAMi
+2. **显存监控**：启用显存使用率告警，避免 OOM
+3. **配额管理**：设置合理的显存配额，防止资源争抢
+4. **性能隔离**：关键任务使用 MIG 硬件隔离
+5. **利用率优化**：低负载场景启用 GPU 共享提升利用率

@@ -22,7 +22,7 @@ base_confidence: 0.9
 lifecycle: reviewed
 tier: core
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-07-21
 aliases:
   - Fsdp
 
@@ -107,3 +107,23 @@ aliases:
 - [[概念/deepspeed]] — DeepSpeed
 - [[概念/megatron-lm]] — Megatron-LM
 - [[概念/pytorch]] — PyTorch
+- [[概念/training-cost-optimization]] — 训练成本优化
+
+---
+
+## 2026 FSDP 生态
+
+| 特性 | 说明 | 状态 |
+|------|------|------|
+| **FSDP2** | PyTorch 2.x 新版 API，更灵活 | GA |
+| **DTensor 集成** | 分布式张量抽象 | GA |
+| **混合分片** | 节点内 Full Shard + 节点间 Replicate | GA |
+| **激活检查点** | 显存优化 | GA |
+
+## 生产最佳实践
+
+1. **分片策略**：节点内 FULL_SHARD，节点间 HYBRID_SHARD 平衡通信
+2. **激活检查点**：显存受限时启用，牺牲 ~20% 计算换显存
+3. **与 DeepSpeed 对比**：PyTorch 生态优先用 FSDP，复杂场景用 DeepSpeed
+4. **混合精度**：BF16 训练 + FP32 优化器状态
+5. **监控指标**：关注通信/计算比、显存峰值、step time

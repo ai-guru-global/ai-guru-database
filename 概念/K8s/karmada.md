@@ -4,8 +4,9 @@ category: -concepts
 tags: ["kubernetes", "k8s", "multi-cluster", "federation", "cloud-native", "alibaba-cloud"]
 summary: "Karmada 是华为云捐赠给 CNCF 的多集群容器编排平台，原生兼容 Kubernetes API，支持跨多个 K8s 集群的应用分发、故障迁移和资源调度。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: archived
+lifecycle: reviewed
 aliases:
   - "Karmada 多集群"
 relationships:
@@ -47,3 +48,21 @@ sources: []
 
 - [[概念/kubernetes|Kubernetes]] — 单集群编排
 - [[概念/k3s|K3s]] — 轻量 K8s
+- [[概念/volcano|Volcano]] — AI 任务调度
+
+---
+
+## 2026 Karmada 生态
+
+| 特性 | 说明 | 状态 |
+|------|------|------|
+| **CNCF 孵化** | 华为云捐赠 | GA |
+| **多集群调度** | 跨集群应用分发 | GA |
+| **故障迁移** | 自动漂移 | GA |
+
+## 生产最佳实践
+
+1. **策略设计**：合理设计 PropagationPolicy 分发策略
+2. **网络连通**：确保成员集群与控制面网络连通
+3. **故障演练**：定期测试故障迁移机制
+4. **监控告警**：关注多集群应用状态一致性

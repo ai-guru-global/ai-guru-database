@@ -4,8 +4,9 @@ category: -concepts
 tags: ["rag", "production", "architecture", "retrieval", "observability", "compliance"]
 summary: "RAG 生产架构是将检索增强生成从原型推向企业级服务的端到端工程体系，强调数据摄取、检索质量、生成可信、成本可控与合规审计的全链路治理。"
 created: 2026-07-02
-updated: 2026-07-02
+updated: 2026-07-21
 tier: concept
+lifecycle: reviewed
 aliases:
   - "RAG Production Architecture"
   - "RAG 生产级架构"
@@ -69,6 +70,25 @@ sources: []
 - [[RAG系统/Advanced_RAG/RAG_Advanced_2026|RAG 高级实践 2026]] — 混合检索、重排序与上下文压缩进阶
 - [[模型运维/LLM_Production_Pipeline_2026|LLM 生产流水线 2026]] — LLM 应用端到端 MLOps 流水线
 - [[架构基建/AI_Stack_Deep_Dive|AI Stack 深度解析]] — AI 基础设施栈与云原生部署
+
+## 2026 年 RAG 生产架构生态
+
+| 组件 | 主流方案 | 趋势 |
+|------|----------|------|
+| **向量库** | Qdrant/Milvus/Weaviate/pgvector | 混合搜索成为标配 |
+| **Embedding** | BGE-M3/Cohere v3/OpenAI v3 | 多语言 + 多粒度 |
+| **Reranker** | Cohere Rerank/BGE-Reranker/Jina | 轻量化 + ColBERT |
+| **编排** | LangGraph/LlamaIndex/Dify | Agentic RAG 融合 |
+| **评估** | RAGAS/DeepEval/Opik | 自动化评估流水线 |
+| **可观测** | LangSmith/Langfuse/Phoenix | Trace + 成本归因 |
+
+## 生产最佳实践
+
+1. **检索质量先行**：先优化检索精度，再优化生成质量
+2. **混合检索 + Reranker**：向量 + BM25 + 重排序是 2026 标配
+3. **分块策略很关键**：语义分块 > 固定长度分块
+4. **全链路可观测**：从查询到回答每步可追踪
+5. **成本归因**：按用户/场景统计 Token 消耗
 
 ## Related
 

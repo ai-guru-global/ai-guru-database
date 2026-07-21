@@ -19,6 +19,7 @@ provenance:
 base_confidence: 0.85
 lifecycle: reviewed
 tier: core
+updated: 2026-07-21
 ---
 
 # 重排序模型 Reranker
@@ -126,4 +127,24 @@ AI Stack 知识库 RAG 流水线
 - [[概念/rag-systems]] — RAG 系统
 - [[概念/agentic-rag]] — Agentic RAG
 - [[概念/vector-database]] — 向量数据库
+- [[概念/rag-production-architecture|RAG 生产架构]] — 生产级 RAG 设计
 - [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+
+---
+
+## 2026 Reranker 生态
+
+| 模型 | 参数量 | 核心优势 | 适用场景 |
+|------|--------|---------|----------|
+| **bge-reranker-v2-m3** | 568M | 多语言、开源、效果好 | 通用生产 |
+| **Cohere Rerank** | API | 零部署、效果顶级 | 快速集成 |
+| **Jina Reranker v2** | 278M | 轻量、多语言 | 资源受限 |
+| **mxbai-rerank** | 335M | 英文优化、开源 | 英文场景 |
+
+## 生产最佳实践
+
+1. **两阶段检索**：向量粗筛 Top-100 → Reranker 精排 Top-10，平衡延迟与质量
+2. **模型选择**：多语言场景用 bge-reranker-v2-m3，英文场景可用轻量模型
+3. **批量处理**：Reranker 支持批量输入，充分利用 GPU 并行
+4. **阈值调优**：根据业务场景调整相关性阈值，过滤低质量结果
+5. **延迟预算**：Reranker 增加 50-200ms 延迟，需在质量与延迟间权衡

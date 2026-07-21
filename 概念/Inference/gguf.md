@@ -29,9 +29,11 @@ lifecycle: reviewed
 lifecycle_changed: 2026-06-16
 tier: core
 created: 2026-06-16
-updated: 2026-06-25
+updated: 2026-07-21
 aliases:
   - Gguf
+  - "GPT-Generated Unified Format"
+  - "GGUF 模型格式"
 
 ---
 # GGUF
@@ -123,21 +125,32 @@ python convert_hf_to_gguf.py /path/to/model --outfile model.gguf --outtype q4_k_
 llama-server -m model.gguf --port 8080
 ```
 
-## 开放问题
+## 2026 年生态现状
 
-- 极低量化（Q2/Q3）在长上下文、代码、数学任务上的效果衰退。
-- GGUF 与多模态模型、MoE 模型的兼容性。
-- 量化后的模型在法律/医疗等高风险场景的可用性边界。
+| 方面 | 状态 |
+|------|------|
+| **Ollama** | 最流行的本地 LLM 工具，底层用 GGUF |
+| **llama.cpp** | 持续活跃，支持最新模型架构 |
+| **量化精度** | Q4_K_M 是性价比最优点 |
+| **多模态** | 支持 LLaVA 等视觉模型 (mmproj) |
+| **MoE** | 支持 DeepSeek、Mixtral 等 MoE 模型 |
+| **硬件** | CPU/GPU(CUDA/Metal/Vulkan) 全支持 |
 
-## Related
+## 量化精度选择指南
 
-- [[概念/model-compression]] — 模型压缩
-- [[概念/quantization]] — 量化
-- [[概念/edge-llm]] — 边缘 LLM
-- [[概念/llama-cpp]] — llama.cpp
-- [[概念/llama-box]] — llama-box 推理后端
-- [[概念/model-formats]] — 模型格式全景
-- [[概念/safetensors]] — Safetensors 安全模型格式
-- [[概念/onnx]] — ONNX 开放神经网络交换格式
-- [[部署推理/Inference_Engines/llama_cpp_Deep_Dive]] — llama.cpp 深度解析
-- [[部署推理/Quantization/Quantization_Techniques_2026]] — 量化技术 2026
+| 量化 | 模型大小 (7B) | 质量 | 适用场景 |
+|:----:|:----------:|:----:|----------|
+| Q2_K | ~3 GB | 较差 | 极低资源设备 |
+| Q4_K_M | ~4.5 GB | 良好 | **推荐默认** |
+| Q5_K_M | ~5.5 GB | 很好 | 质量敏感场景 |
+| Q8_0 | ~7.5 GB | 接近原始 | 质量优先 |
+| FP16 | ~14 GB | 原始 | 基准对比 |
+
+## 延伸阅读
+
+- [[概念/Inference/model-formats|模型格式全景]]
+- [[概念/Inference/quantization|量化]]
+- [[概念/LLM/edge-llm|边缘 LLM]]
+- [[概念/LLM/llama-cpp|llama.cpp]]
+- [[部署推理/Inference_Engines/llama_cpp_Deep_Dive|llama.cpp 深度解析]]
+- [[部署推理/Quantization/Quantization_Techniques_2026|量化技术 2026]]

@@ -4,8 +4,9 @@ category: -concepts
 tags: ["gpu", "virtualization", "kubernetes", "k8s", "multi-tenant", "alibaba-cloud"]
 summary: "GPU Time Slicing 是 NVIDIA 提供的一种软件级 GPU 共享机制，让多个容器按时间片轮流使用同一张 GPU，适合延迟不敏感场景。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
+lifecycle: reviewed
 aliases:
   - "GPU Time Slicing"
   - "时间片调度"
@@ -50,3 +51,22 @@ sharing:
 - [[概念/gpu-sharing|GPU Sharing]]
 - [[概念/mig|MIG]]
 - [[概念/hami|HAMi]]
+- [[概念/gpu-virtualization|GPU 虚拟化]]
+
+---
+
+## 2026 Time Slicing 生态
+
+| 特性 | 说明 | 状态 |
+|------|------|------|
+| **NVIDIA Device Plugin** | 原生支持 | GA |
+| **K8s 集成** | 标准资源请求 | GA |
+| **与 MIG 对比** | 无需硬件支持 | - |
+
+## 生产最佳实践
+
+1. **适用场景**：开发测试、低优先级批量推理
+2. **副本数配置**：replicas 建议 2-4，过多影响性能
+3. **性能监控**：关注 GPU 利用率、任务等待时间
+4. **与 MIG 对比**：需要隔离时用 MIG，成本敏感用 Time Slicing
+5. **资源限制**：配合 ResourceQuota 防止资源滥用

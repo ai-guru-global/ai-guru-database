@@ -8,10 +8,10 @@ relationships:
   - target: "概念/transformer-architecture"
     type: builds_on
 summary: 用生活化的类比解释 KV Cache：大模型逐字生成文本时，把已经算过的“关键信息”存进小仓库，避免每次重复计算，从而显著加速推理。
-lifecycle: draft
+lifecycle: reviewed
 tier: core
 created: 2026-06-15
-updated: 2026-06-15T07:55:28.435Z
+updated: 2026-07-21
 aliases:
   - "Kv Cache Plain"
   - "kv cache plain"
@@ -107,9 +107,21 @@ KV Cache 就放在 **每个车间的 Attention 工位旁边**，是一本不断�
 
 ---
 
-## Related
+## KV Cache 为什么占显存？
 
-- [[概念/kv-cache]] — KV Cache 技术深潜与优化全景
-- [[概念/transformer-layer]] — Transformer Layer（层）大白话解释
-- [[概念/transformer-architecture]] — Transformer 架构简介
-- [[概念/transformer-architecture-plain]] — Transformer 大白话解释
+| 模型 | 上下文 | KV Cache 大小 | 说明 |
+|------|:------:|:----------:|------|
+| 7B (GQA) | 4K | ~1 GB | 可接受 |
+| 70B (GQA) | 4K | ~8 GB | 显存紧张 |
+| 70B (GQA) | 32K | ~64 GB | 几乎占满 A100 |
+| 70B (MLA) | 32K | ~8 GB | MLA 压缩后 |
+
+> 这就是为什么需要 [[概念/LLM/kv-cache-compression|KV Cache 压缩]] 和 [[概念/Inference/paged-attention|PagedAttention]]。
+
+## 延伸阅读
+
+- [[概念/Inference/kv-cache|KV Cache 技术深潜]]
+- [[概念/LLM/kv-cache-compression|KV Cache 压缩]]
+- [[概念/LLM/transformer-architecture-plain|Transformer 大白话]]
+- [[概念/LLM/radix-attention|RadixAttention]]
+- [[概念/Inference/prefix-caching|前缀缓存]]

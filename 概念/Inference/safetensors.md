@@ -19,6 +19,12 @@ provenance:
 base_confidence: 0.85
 lifecycle: reviewed
 tier: core
+created: 2026-06-25
+updated: 2026-07-21
+aliases:
+  - "Safetensors"
+  - "safetensors"
+  - "安全张量格式"
 ---
 
 # Safetensors 安全模型格式
@@ -138,10 +144,28 @@ save_file(state_dict, 'model.safetensors')
 
 ---
 
-## Related
+## 6. 2026 年现状与最佳实践
 
-- [[概念/model-formats]] — 模型格式
-- [[概念/huggingface-cli]] — HuggingFace CLI
-- [[概念/git-lfs]] — Git LFS 大文件管理
-- [[概念/ollama]] — Ollama 本地推理
-- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+| 方面 | 现状 |
+|------|------|
+| **采用率** | HuggingFace Hub 99%+ 新模型默认 Safetensors |
+| **Pickle 状态** | 已被标记为 deprecated，新模型不应使用 |
+| **分片格式** | 大模型 (>10GB) 自动分片，支持并行加载 |
+| **FP8 支持** | 原生支持 FP8 权重存储 (H100/B200) |
+| **流式加载** | 支持按需加载单层，减少启动时间 |
+| **安全扫描** | HF Hub 自动检测非 Safetensors 模型并警告 |
+
+### 生产最佳实践
+
+1. **始终使用 Safetensors**: 新模型保存/分发一律用 `.safetensors`
+2. **拒绝 pickle**: 不加载任何 `.bin`/`.pt` 格式的未知来源模型
+3. **校验哈希**: 下载后核对 SHA256 确保完整性
+4. **分片存储**: >10GB 模型使用分片格式，便于并行加载和断点续传
+5. **元数据嵌入**: 在 header 中记录训练配置、量化信息、许可证
+
+## 延伸阅读
+
+- [[概念/Inference/model-formats|模型格式全景]]
+- [[概念/Inference/gguf|GGUF 格式]]
+- [[概念/Inference/quantization|量化]]
+- [[架构基建/AI_Stack_Deep_Dive|AI Stack 深度解析]]

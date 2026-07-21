@@ -14,8 +14,9 @@ tags:
   - mfu
 summary: "训练成本优化是通过 FinOps 闭环、分布式并行策略、混合精度、Spot/抢占式实例与 Checkpoint 机制，在单位美元预算内最大化有效训练 token 数，使大模型训练在性能、稳定性与成本之间取得可度量平衡。"
 created: 2026-07-02
-updated: 2026-07-02
+updated: 2026-07-21
 tier: concept
+lifecycle: reviewed
 aliases:
   - "Training Cost Optimization"
   - "训练成本优化"
@@ -95,3 +96,22 @@ sources: []
 - [[行业应用/AI_Platform_Selection_2026.md|AI 平台选型 2026]] — 云厂商训练平台成本对比
 - [[行业应用/AI_Production_Architecture_2026.md|AI 生产架构 2026]] — 从训练到部署的整体架构视角
 - [[概念/finops.md|FinOps]] — 云成本治理基础概念
+
+---
+
+## 2026 成本优化工具链
+
+| 工具 | 功能 | 成本影响 |
+|------|------|----------|
+| **NVIDIA Nsight** | GPU 利用率分析 | 诊断 MFU 瓶颈 |
+| **DeepSpeed Flops Profiler** | 计算/通信分析 | 优化并行策略 |
+| **Kubecost** | K8s 成本归因 | 标签化账单 |
+| **Spot.io / Karpenter** | 抢占式实例管理 | 降低 50-70% 算力成本 |
+
+## 生产最佳实践
+
+1. **指标先行**：建立 MFU、$/1K tokens、time-to-convergence 基线
+2. **Spot + Checkpoint**：高频异步 Checkpoint（每 5-10 min）配合自动恢复
+3. **混合实例**：核心节点用按需，弹性节点用 Spot，平衡稳定性与成本
+4. **全链路 FinOps**：覆盖 GPU/存储/网络/ETL 全链路成本
+5. **实验预算**：每个实验设置成本上限，超预算自动告警/停止

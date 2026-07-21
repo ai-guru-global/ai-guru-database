@@ -12,10 +12,10 @@ relationships:
   - target: "概念/kv-cache-plain"
     type: related_to
 summary: 用生活化类比解释 Transformer：大模型像一场读书会，所有词同时到场、互相“点名”，通过 Attention 直接找出彼此关系，是现代大语言模型 GPT/BERT 的基础架构。
-lifecycle: draft
+lifecycle: reviewed
 tier: core
 created: 2026-06-15T00:00:00Z
-updated: 2026-06-15T00:00:00Z
+updated: 2026-07-21
 aliases:
   - "Transformer"
   - "transformer"
@@ -77,8 +77,34 @@ Transformer 厉害的地方在于：**不管两个词离得多远，它都能直
 | **Attention** | “谁和我有关？” | 找关系 |
 | **Multi-Head Attention** | “多个人从不同角度看关系” | 捕捉多种关系 |
 | **FFN** | “重新理解一下我当前这个词” | 加工信息 |
+| **Layer Norm** | “把数值调整到合适范围” | 稳定训练 |
 | **Layer** | “再看一遍，加深理解” | 多层逐步抽象 |
 | **Position Encoding** | “记住每个词的位置” | Attention 本身不知道顺序 |
+
+## 一个 Transformer 层长什么样？
+
+```
+输入 (N 个词的向量)
+  │
+  ├─→ Multi-Head Attention (每个词看看其他词)
+  │     └─→ 残差连接 + LayerNorm
+  │
+  ├─→ FFN (每个词独立思考)
+  │     └─→ 残差连接 + LayerNorm
+  │
+  └─→ 输出 (理解更深的向量)
+
+× 80 层 (GPT-5 级别) = 完整模型
+```
+
+## 关键数字感知
+
+| 模型 | 层数 | 注意力头 | 参数量 |
+|------|:----:|:------:|:------:|
+| BERT-base | 12 | 12 | 110M |
+| GPT-2 | 48 | 25 | 1.5B |
+| Llama-3-70B | 80 | 64 | 70B |
+| GPT-5 (估算) | ~120 | ~96 | ~2T (MoE) |
 
 ---
 
@@ -99,9 +125,10 @@ Transformer 厉害的地方在于：**不管两个词离得多远，它都能直
 
 ---
 
-## Related
+## 延伸阅读
 
-- [[概念/transformer-architecture]] — Transformer 架构技术总览
-- [[概念/transformer-layer]] — Transformer Layer（层）大白话解释
-- [[概念/attention-variants]] — Attention 的各种变体
-- [[概念/kv-cache-plain]] — KV Cache 大白话解释
+- [[概念/LLM/attention-variants|注意力变体]]
+- [[概念/LLM/kv-cache-plain|KV Cache 大白话]]
+- [[概念/LLM/grouped-query-attention|GQA]]
+- [[概念/LLM/mamba|Mamba (Transformer 替代)]]
+- [[大模型/Transformer/Transformer_Architecture|Transformer 架构技术详解]]

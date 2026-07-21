@@ -26,7 +26,7 @@ base_confidence: 0.90
 lifecycle: reviewed
 tier: core
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-07-21
 aliases:
   - "Pretrain Vs Finetune Vs Rag"
   - "pretrain vs finetune vs rag"
@@ -185,5 +185,26 @@ aliases:
 - [[概念/rag-systems]] — RAG 检索增强生成
 - [[概念/prompt-engineering]] — Prompt Engineering
 - [[概念/long-context-vs-rag]] — 长上下文 vs RAG 选型
+- [[概念/pre-training]] — 预训练
+- [[概念/sft]] — SFT 监督微调
 - [[大模型/LLM_Fundamentals]] — LLM 基础
 - [[RAG系统/README]] — RAG 系统
+
+---
+
+## 2026 选型决策树
+
+| 需求 | 推荐方案 | 成本 | 复杂度 |
+|------|---------|------|--------|
+| **知识更新** | RAG | 低 | 低 |
+| **行为调整** | 微调 | 中 | 中 |
+| **领域适配** | 微调 + RAG | 中高 | 中高 |
+| **全新能力** | 预训练 | 高 | 高 |
+
+## 生产最佳实践
+
+1. **优先顺序**：Prompt → RAG → 微调 → 预训练
+2. **成本意识**：先用最便宜的方案解决 80% 问题
+3. **组合使用**：微调 + RAG 组合效果最佳
+4. **评估先行**：建立评估基准，量化每次升级的收益
+5. **迭代优化**：根据效果逐步升级方案

@@ -20,6 +20,7 @@ sources:
 summary: "GRPO（Group Relative Policy Optimization）是 DeepSeek 在 R1 模型中提出的对齐算法，无需 Critic 模型，通过组内多个采样响应的相对优势进行策略优化，比 PPO 更简单高效。"
 lifecycle: reviewed
 tier: core
+updated: 2026-07-21
 provenance:
   extracted: 0.90
   inferred: 0.08
@@ -126,6 +127,26 @@ def grpo_objective(prompt, group_responses, rewards, ref_logprobs, beta=0.04):
 
 - [[概念/rlhf]] — RLHF 总览
 - [[概念/dpo]] — DPO（另一种简化方法）
-- [[概念/ppo]] — PPO（GRPO 的"父算法"）
+- [[概念/ppo]] — PPO（GRPO 的“父算法”）
 - [[概念/reasoning-models]] — 推理模型（GRPO 主要应用场景）
+- [[概念/preference-learning]] — 偏好学习总览
 - [[模型训练/Alignment/GRPO_and_New_Alignment_Methods]] — GRPO 深度
+
+---
+
+## 2026 GRPO 生态
+
+| 特性 | 说明 | 状态 |
+|------|------|------|
+| **DeepSeek-R1** | GRPO 原生应用 | GA |
+| **TRL 集成** | HuggingFace 原生支持 | GA |
+| **多框架支持** | OpenRLHF/Unsloth/LLaMA-Factory | GA |
+| **在线 GRPO** | 结合在线采样的迭代式 | 研究前沿 |
+
+## 生产最佳实践
+
+1. **组大小**：建议 8-16 个采样，平衡效果与成本
+2. **温度设置**：采样温度 0.7-1.0，确保多样性
+3. **与 DPO 对比**：推理任务用 GRPO，通用对齐用 DPO
+4. **奖励设计**：可验证任务用规则奖励，开放任务用奖励模型
+5. **监控指标**：关注奖励均值、KL 散度、响应多样性

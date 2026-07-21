@@ -21,7 +21,7 @@ base_confidence: 0.90
 lifecycle: reviewed
 tier: core
 created: 2026-06-04
-updated: 2026-06-04
+updated: 2026-07-21
 aliases:
   - "Knowledge Distillation"
   - "knowledge distillation"
@@ -146,4 +146,24 @@ q_i = \frac{\exp(z_i / T)}{\sum_j \exp(z_j / T)}
 - [[概念/mixture-of-experts]] — MoE（DeepSeek-R1 的 Teacher 架构）
 - [[概念/lora-peft]] — LoRA/PEFT（蒸馏后的微调方案）
 - [[概念/reasoning-models]] — 推理模型（DeepSeek-R1 蒸馏链）
+- [[概念/pruning]] — 剪枝
 - [[架构基建/AI_Stack_Deep_Dive]] — AI Stack
+
+---
+
+## 2026 知识蒸馏生态
+
+| 方法 | 核心机制 | 适用场景 |
+|------|---------|----------|
+| **Logit 蒸馏** | 软标签迁移 | 通用分类任务 |
+| **特征蒸馏** | 中间层特征对齐 | 视觉模型 |
+| **CoT 蒸馏** | 推理链迁移 | 推理模型 |
+| **黑盒蒸馏** | API 输出学习 | 商业模型 |
+
+## 生产最佳实践
+
+1. **Teacher 选择**：选择能力强、输出稳定的模型作为 Teacher
+2. **温度调优**：从 T=2 开始，根据任务调整
+3. **数据质量**：使用高质量、多样化的蒸馏数据
+4. **评估体系**：全面评估蒸馏后的知识保留程度
+5. **合规注意**：蒸馏商业模型需注意知识产权问题

@@ -4,8 +4,9 @@ category: -concepts
 tags: ["agent", "production", "deployment", "sre", "guardrails", "observability", "kubernetes", "sandbox", "ci-cd"]
 summary: "Agent 生产部署是将具备规划、记忆、工具调用能力的智能体系统从实验环境稳定、安全、可扩展地交付到线上业务环境的系统工程实践。"
 created: 2026-07-02
-updated: 2026-07-02
+updated: 2026-07-21
 tier: concept
+lifecycle: reviewed
 aliases:
   - "Agent Production Deployment"
   - "Agent 生产部署"
@@ -113,4 +114,16 @@ Agent 系统的生产部署与传统微服务存在本质差异：LLM 输出非�
 
 ---
 
-*created: 2026-07-02 | updated: 2026-07-02*
+## 2026 年 Agent 部署生态
+
+| 平台/工具 | 定位 | 特色 |
+|-----------|------|------|
+| **LangGraph Platform** | Agent 托管 | 图编排 + 持久化 + 人工审批 |
+| **CrewAI Enterprise** | 多 Agent 部署 | 角色 SOP + 护栏 + 监控 |
+| **Temporal + Agent** | 持久化执行 | 故障恢复 + 长时运行 |
+| **KServe + vLLM** | 推理服务 | GPU 调度 + 自动扩缩 |
+| **E2B / Daytona** | 工具沙箱 | 代码执行隔离 |
+
+---
+
+*created: 2026-07-02 | updated: 2026-07-21*

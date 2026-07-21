@@ -19,6 +19,8 @@ provenance:
 base_confidence: 0.80
 lifecycle: reviewed
 tier: supporting
+created: 2026-06-26
+updated: 2026-07-21
 ---
 
 > [!warning] 生产安全提示 · Production Safety
@@ -100,6 +102,24 @@ AgentOps 提供**会话级别的重放**能力：
 ```bash
 pip install agentops
 ```
+
+## 2026 年生态现状
+
+| 方面 | 状态 |
+|------|------|
+| **当前版本** | AgentOps 2.x |
+| **框架集成** | LangChain/CrewAI/AutoGen/OpenAI SDK 自动追踪 |
+| **与 LangSmith 对比** | AgentOps 偏 Agent 行为，LangSmith 偏 LLM 调用链 |
+| **与 Langfuse 对比** | AgentOps 商业 + 开源，Langfuse 纯开源 |
+| **部署模式** | SaaS + 自托管 |
+
+## 生产最佳实践
+
+1. **从开发就接入**：不要等到生产才加监控，开发期即追踪
+2. **设置成本告警**：每个 Agent 的 Token 消耗超阈即告警
+3. **会话回放定位问题**：用决策树回放找到 Agent 走错的步骤
+4. **与 CI/CD 集成**：每次发布后对比 Agent 行为变化
+5. **多 Agent 系统必用**：单 Agent 可看日志，多 Agent 必须用追踪平台
 
 ## 参考资源
 

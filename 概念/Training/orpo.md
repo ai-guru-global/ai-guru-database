@@ -18,6 +18,7 @@ sources:
 summary: "ORPO 将 SFT 与偏好对齐统一为单阶段训练，无需参考模型即可获得比 DPO 更好的对齐效果，是 2024 年轻量级对齐的代表性方法。"
 lifecycle: reviewed
 tier: supporting
+updated: 2026-07-21
 provenance:
   extracted: 0.80
   inferred: 0.15
@@ -140,3 +141,22 @@ trainer.train()
 - [[概念/ipo]] — IPO（正则化版本）
 - [[概念/kto]] — KTO（二元反馈）
 - [[概念/rlhf]] — RLHF 总览
+- [[概念/preference-learning]] — 偏好学习总览
+
+---
+
+## 2026 ORPO 生态
+
+| 特性 | 说明 | 状态 |
+|------|------|------|
+| **TRL 集成** | HuggingFace 原生支持 | GA |
+| **单阶段训练** | SFT + 对齐一体 | GA |
+| **无参考模型** | 无需额外参考模型 | GA |
+
+## 生产最佳实践
+
+1. **数据格式**：使用 (prompt, chosen, rejected) 格式
+2. **lambda 调优**：从 0.1 开始，根据效果调整
+3. **与 DPO 对比**：追求简单用 ORPO，追求效果用 DPO
+4. **适用场景**：资源受限、想简化训练流程时优先选择
+5. **评估指标**：胜率、人类评估、自动指标综合评估

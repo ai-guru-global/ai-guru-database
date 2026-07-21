@@ -19,6 +19,8 @@ provenance:
 base_confidence: 0.82
 lifecycle: reviewed
 tier: supporting
+created: 2026-06-26
+updated: 2026-07-21
 ---
 
 # CrewAI Tools
@@ -115,6 +117,24 @@ class MyCustomTool(BaseTool):
 ```bash
 pip install crewai-tools
 ```
+
+## 2026 年生态现状
+
+| 方面 | 状态 |
+|------|------|
+| **工具数量** | 60+ 官方工具 |
+| **MCP 支持** | 通过 MCP 接入任意工具 |
+| **与 LangChain Tools 对比** | CrewAI Tools 更简洁，LangChain 生态更大 |
+| **自定义工具** | 继承 BaseTool 即可 |
+| **社区工具** | crewai-tools-community 提供额外工具 |
+
+## 生产最佳实践
+
+1. **工具描述精确**：Agent 根据 description 选择工具，描述不清 = 调错工具
+2. **沙箱执行代码工具**：CodeInterpreterTool 必须在 Docker 中运行
+3. **限制工具数量**：每个 Agent ≤ 5 个工具，太多会降低选择准确率
+4. **错误处理**：工具必须返回有意义的错误信息，而非抛异常
+5. **权限最小化**：数据库工具只给只读权限，写操作需审批
 
 ## 参考资源
 

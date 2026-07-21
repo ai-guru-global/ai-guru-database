@@ -29,10 +29,11 @@ provenance:
   inferred: 0.1
   ambiguous: 0.05
 base_confidence: 0.8
-lifecycle: draft
-lifecycle_changed: 2026-05-31
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
 tier: core
 created: 2026-05-31 00:00:00+00:00
+updated: 2026-07-21
 updated: 2026-05-31 00:00:00+00:00
 aliases:
   - "Model Training"
@@ -129,5 +130,31 @@ BF16指数位与FP32相同，天然避免梯度下溢。FP8训练通过NVIDIA tr
 
 ## Related
 
-- [[治理/training-fine-tuning]] — 模型训练 × 微调技术 (共享: deepspeed, fsdp, lora, training)
-- [[概念/distributed-systems]] — 分布式系统 (共享: fsdp, training)
+- [[概念/distributed-training]] — 分布式训练
+- [[概念/deepspeed]] — DeepSpeed
+- [[概念/fsdp]] — FSDP
+- [[概念/megatron-lm]] — Megatron-LM
+- [[概念/mixed-precision]] — 混合精度训练
+- [[概念/training-cost-optimization]] — 训练成本优化
+- [[治理/training-fine-tuning]] — 模型训练 × 微调技术
+- [[概念/distributed-systems]] — 分布式系统
+
+---
+
+## 2026 训练技术栈
+
+| 层次 | 技术 | 说明 |
+|------|------|------|
+| **并行策略** | FSDP + TP + PP | 主流分布式方案 |
+| **精度格式** | BF16 / FP8 | 默认训练精度 |
+| **显存优化** | 梯度检查点 / ZeRO | 降低显存需求 |
+| **计算优化** | FlashAttention v3 | 注意力加速 |
+| **微调方法** | LoRA / QLoRA / DoRA | 参数高效微调 |
+
+## 生产最佳实践
+
+1. **并行策略**：节点内 TP，节点间 PP，全局 DP 扩展吞吐
+2. **混合精度**：BF16 训练 + FP32 主权重，H100 可用 FP8
+3. **显存优化**：启用梯度检查点，显存不足时用 ZeRO-3
+4. **监控指标**：关注 MFU、step time、显存峰值、loss 曲线
+5. **成本优化**：结合 Spot 实例 + 高频 Checkpoint 降低成本

@@ -23,6 +23,7 @@ provenance:
 base_confidence: 0.8
 lifecycle: reviewed
 lifecycle_changed: 2026-06-16
+updated: 2026-07-21
 tier: core
 created: 2026-06-16
 updated: 2026-06-16
@@ -99,5 +100,25 @@ Y = (X / s) · (W × s)
 - [[概念/model-compression]] — 模型压缩
 - [[概念/model-precision]] — 模型精度
 - [[概念/tensorrt-llm]] — TensorRT-LLM
+- [[概念/awq]] — AWQ 激活感知量化
 - [[部署推理/Quantization/Quantization_Techniques_2026]] — 量化技术 2026
 - [[部署推理/Inference_Engines/TensorRT_LLM_Deep_Dive]] — TensorRT-LLM 深度解析
+
+---
+
+## 2026 SmoothQuant 生态
+
+| 特性 | 说明 | 状态 |
+|------|------|------|
+| **TensorRT-LLM 集成** | 原生支持 SmoothQuant INT8 | GA |
+| **vLLM 支持** | 推理引擎集成 | GA |
+| **与 FP8 结合** | H100/H200 上的混合精度 | 实验性 |
+| **MoE 支持** | 专家模型量化 | 研究前沿 |
+
+## 生产最佳实践
+
+1. **alpha 调优**：从 0.5 开始，根据模型调整迁移强度
+2. **校准数据**：使用代表性校准集（128-512 样本）计算缩放因子
+3. **精度验证**：量化后必须验证下游任务精度损失 <2%
+4. **与 GPTQ/AWQ 对比**：SmoothQuant 适合 INT8，GPTQ/AWQ 适合 INT4
+5. **推理引擎**：优先使用 TensorRT-LLM/vLLM 获得最佳性能

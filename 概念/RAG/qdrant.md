@@ -24,7 +24,7 @@ base_confidence: 0.85
 lifecycle: reviewed
 tier: core
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-07-21
 aliases:
   - Qdrant
 
@@ -97,3 +97,24 @@ aliases:
 - [[概念/embedding]] — Embedding
 - [[概念/milvus]] — Milvus
 - [[概念/weaviate]] — Weaviate
+- [[概念/rag-production-architecture|RAG 生产架构]] — 向量库在生产 RAG 中的定位
+
+---
+
+## 2026 Qdrant 生态
+
+| 特性 | 说明 | 状态 |
+|------|------|------|
+| **稀疏向量** | SPLADE/学习型稀疏检索原生支持 | GA |
+| **多向量** | ColBERT 风格 late interaction | GA |
+| **量化压缩** | Scalar/Product/Binary 量化，内存降 4-32x | GA |
+| **分布式模式** | 多副本、分片、水平扩展 | GA |
+| **GPU 索引** | 索引构建 GPU 加速 | Beta |
+
+## 生产最佳实践
+
+1. **量化策略**：内存受限时启用 Binary 量化（内存降 32x，召回损失 <3%）
+2. **副本配置**：生产环境至少 2 副本，确保高可用
+3. **索引参数**：HNSW m=16, ef_construct=128 为通用起点，根据召回率调整
+4. **Payload 索引**：高频过滤字段建立 Payload Index 加速混合查询
+5. **监控告警**：关注 p99 延迟、内存使用率、索引构建队列

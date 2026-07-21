@@ -131,8 +131,9 @@ flowchart LR
 
 ## 延伸阅读
 
-- [[概念/vllm-practical|vLLM 实战]]
-- [[概念/prefill-decode-disaggregated|Prefill-Decode 分离]]
-- [[概念/llm-inference-cost-optimization|推理成本优化]]
-- [[概念/llm-inference-checklist|推理上线检查清单]]
-- [[概念/llm-production-deployment|LLM 生产部署]] — 推理服务的全链路生产治理
+- [[概念/Inference/model-serving|模型服务]]
+- [[概念/Inference/request-scheduling|请求调度]]
+- [[概念/Inference/inference-autoscaling|推理自动扩缩容]]
+- [[概念/Inference/ttft|TTFT]]
+- [[概念/LLM/llm-production-deployment|LLM 生产部署]]
+- [[部署推理/Inference_Engines/vLLM_Deep_Dive|vLLM 深度解析]]

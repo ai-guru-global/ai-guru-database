@@ -1,18 +1,20 @@
 ---
 title: "多 Agent 编排（Multi-Agent Orchestration）"
 category: -concepts
-tags: ["multi-agent", "orchestration", "coordination", "agent-swarm", "workflow", "crewai"]
+tags: ["multi-agent", "orchestration", "coordination", "agent-swarm", "workflow", "crewai", "langgraph", "a2a"]
 relationships:
-  - target: "概念/ai-agents"
+  - target: "概念/Agent/ai-agents"
     type: scales
-  - target: "概念/agent-planning"
+  - target: "概念/Agent/agent-planning"
     type: distributes
-  - target: "概念/agent-reflection"
+  - target: "概念/Agent/agent-reflection"
     type: coordinates
+  - target: "概念/Agent/a2a-protocol"
+    type: uses
 sources:
   - Agent/README.md
   - Agent/Agent_Workflow/README.md
-summary: "多 Agent 编排让多个专精 Agent 协作完成复杂任务。从'顺序流水线'到'并行 swarm'再到'层级委派'，编排模式决定协作效率。代表框架：CrewAI、AutoGen、LangGraph、OpenAI Swarm。"
+summary: "多 Agent 编排让多个专精 Agent 协作完成复杂任务。从'顺序流水线'到'并行 swarm'再到'层级委派'，编排模式决定协作效率。"
 provenance:
   extracted: 0.65
   inferred: 0.3
@@ -22,13 +24,16 @@ lifecycle: reviewed
 lifecycle_changed: 2026-06-23
 tier: core
 created: 2026-06-23
-updated: 2026-06-23
+updated: 2026-07-21
 aliases:
   - "Multi Agent Orchestration"
   - "multi agent orchestration"
+  - "多智能体编排"
 
 ---
 # 多 Agent 编排（Multi-Agent Orchestration）
+
+> 单 Agent 像“一人公司”什么都干但都不精；多 Agent 编排像“专业团队”——有产品经理、工程师、QA，分工协作完成大项目。
 
 ## 核心要点
 
@@ -36,69 +41,124 @@ aliases:
 - **多 Agent 的价值**：每个 Agent 专精一域，上下文隔离、可并行、可独立调试。
 - **三种编排模式**：顺序（流水线）、并行（swarm）、层级（supervisor-worker）。
 
-## 一句话理解
+## 三种编排模式
 
-单 Agent 像"一人公司"什么都干但都不精；多 Agent 编排像"专业团队"——有产品经理（规划）、工程师（执行）、QA（验证），分工协作完成大项目。
+| 模式 | 结构 | 适用场景 | 优势 | 劣势 |
+|------|------|----------|------|------|
+| **顺序流水线** | A→B→C→D | 内容生产、数据处理 | 简单、可预测 | 串行慢、错误传播 |
+| **并行 Swarm** | A,B,C→汇总 | 信息收集、对比分析 | 快、独立 | 汇总复杂 |
+| **层级委派** | Supervisor→Workers | 复杂项目、动态分工 | 灵活、可扩展 | Supervisor 瓶颈 |
+| **循环迭代** | A→B→A→B... | 质量改进、对话 | 质量提升 | 可能死循环 |
+| **混合** | 顺序+并行+层级 | 大型项目 | 最灵活 | 最复杂 |
 
-## 详细内容
-
-### 三种编排模式
+### 编排模式示意
 
 ```
-1. 顺序流水线（Sequential Pipeline）
+1. 顺序流水线:
    Researcher → Writer → Editor → Publisher
-   每个输出是下一个输入，串行执行
-   适合：内容生产、数据处理流水线
 
-2. 并行 Swarm（并行蜂群）
+2. 并行 Swarm:
    ┌→ Agent A（分析数据）
    ├→ Agent B（查文献）  → 汇总 Agent
    └→ Agent C（做图表）
-   多 Agent 并行，结果汇总
-   适合：信息收集、对比分析
 
-3. 层级委派（Hierarchical / Supervisor-Worker）
+3. 层级委派:
    Supervisor Agent（分配任务）
-   ├→ Worker 1（专精编码）
-   ├→ Worker 2（专精测试）
-   └→ Worker 3（专精文档）
-   Supervisor 决策"谁做什么"，Worker 执行
-   适合：复杂项目、需动态分工
+   ├→ Worker 1（编码）
+   ├→ Worker 2（测试）
+   └→ Worker 3（文档）
 ```
 
-### 主流框架对比
+## 主流框架对比
 
-| 框架 | 出品 | 编排模式 | 特点 |
-|------|------|----------|------|
-| **CrewAI** | 社区 | 角色+任务 | 简单直观，定义"船员"与"任务" |
-| **AutoGen** | 微软 | 对话式 | Agent 间对话协商 |
-| **LangGraph** | LangChain | 图（状态机） | 最灵活，支持循环/条件分支 |
-| **OpenAI Swarm** | OpenAI | 轻量 handoff | 极简，Agent 间转交控制权 |
-| **Magentic-One** | 微软 | 层级 | 通用型多 Agent 系统 |
+| 框架 | 出品 | 编排模式 | 特点 | 生产就绪 |
+|------|------|----------|------|----------|
+| **CrewAI** | 社区 | 角色+任务 | 简单直观 | 中 |
+| **AutoGen/AG2** | 微软 | 对话式 | Agent 间对话协商 | 中 |
+| **LangGraph** | LangChain | 图（状态机） | 最灵活，循环/条件 | 高 |
+| **OpenAI Swarm** | OpenAI | 轻量 handoff | 极简，转交控制权 | 低 |
+| **Magentic-One** | 微软 | 层级 | 通用型多 Agent | 研究 |
+| **A2A Protocol** | Google | 协议层 | 跨框架互操作 | 新兴 |
 
-### 编排的挑战
+## 编排的挑战与解法
 
 | 挑战 | 问题 | 解法 |
 |------|------|------|
 | **通信开销** | Agent 间传消息消耗 token | 紧凑消息格式 + 共享黑板 |
-| **错误传播** | 上游 Agent 错→下游连锁错 | 每步验证 + 兜底重试 |
-| **死锁** | 互相等待结果 | 超时机制 + 有向无环图 |
+| **错误传播** | 上游错→下游连锁错 | 每步验证 + 兆底重试 |
+| **死锁** | 互相等待结果 | 超时机制 + DAG |
 | **成本** | N 个 Agent = N 倍 LLM 调用 | 小模型做简单子任务 |
 | **调试** | 难追踪哪个 Agent 出错 | 全链路 trace（LangSmith） |
+| **一致性** | 多 Agent 状态同步 | 共享状态存储 + 事件源 |
 
-### 2026 趋势
+## 编排代码示例 (LangGraph)
 
-- **Agent 间协议标准化**：MCP（Model Context Protocol）让 Agent 互操作
-- **Swarm 涌现**：大规模 Agent 协作（数十/数百）做超复杂任务
-- **人机混合编排**：人在环中（Human-in-the-loop）做关键决策节点
+```python
+from langgraph.graph import StateGraph, END
+from typing import TypedDict, Annotated
+
+class ProjectState(TypedDict):
+    task: str
+    plan: str
+    code: str
+    review: str
+    final: str
+
+# 定义节点
+def planner(state):
+    plan = llm.invoke(f"分解任务: {state['task']}")
+    return {"plan": plan}
+
+def coder(state):
+    code = llm.invoke(f"根据计划写代码: {state['plan']}")
+    return {"code": code}
+
+def reviewer(state):
+    review = llm.invoke(f"审查代码: {state['code']}")
+    return {"review": review}
+
+# 构建图
+graph = StateGraph(ProjectState)
+graph.add_node("planner", planner)
+graph.add_node("coder", coder)
+graph.add_node("reviewer", reviewer)
+
+graph.add_edge("planner", "coder")
+graph.add_edge("coder", "reviewer")
+graph.add_conditional_edges("reviewer", should_revise,
+    {"revise": "coder", "done": END})
+
+app = graph.compile()
+result = app.invoke({"task": "写一个 REST API"})
+```
+
+## 2026 趋势
+
+| 趋势 | 说明 |
+|------|------|
+| **A2A 协议标准化** | Google A2A 让不同框架的 Agent 互操作 |
+| **MCP 工具共享** | Agent 通过 MCP 共享工具能力 |
+| **大规模 Swarm** | 数十/数百 Agent 协作做超复杂任务 |
+| **人机混合编排** | Human-in-the-loop 做关键决策节点 |
+| **自适应编排** | 根据任务复杂度动态选择编排模式 |
+| **成本感知路由** | 简单子任务用小模型，复杂子任务用大模型 |
+
+## 生产最佳实践
+
+1. **从简单开始**: 先用单 Agent，确认不够用再拆多 Agent
+2. **明确职责边界**: 每个 Agent 的 system prompt 要精确且不重叠
+3. **全链路可观测**: 必须接入 trace，否则无法调试
+4. **成本控制**: 设置每个 Agent 的 max_tokens 和总预算
+5. **错误隔离**: 单个 Worker 失败不应导致整个流程崩溃
+6. **超时保护**: 每个 Agent 设置超时，避免死锁
 
 ## Related
 
-- [[概念/multi-agent|Multi-Agent System]] — 系统概念视角
-- [[概念/ai-agents|AI Agent]] — 单 Agent 基础
-- [[概念/agent-planning|Agent 规划]] — Supervisor 的规划
-- [[概念/agent-reflection|Agent 反思]] — Worker 的自我修正
-- [[概念/agent-loop|Agent Loop]] — 单 Agent 的执行循环
-- [[智能体/README|Agent 生产部署]] — 编排实践
-- [[概念/autogen|AutoGen]] — 编排框架
-- [[概念/agent-production-deployment|Agent 生产部署]] — 编排后的生产交付
+- [[概念/Agent/ai-agents|AI Agent]]
+- [[概念/Agent/agent-planning|Agent 规划]]
+- [[概念/Agent/agent-reflection|Agent 反思]]
+- [[概念/Agent/autogen|AutoGen]]
+- [[概念/Agent/crewai|CrewAI]]
+- [[概念/Agent/langgraph|LangGraph]]
+- [[概念/Agent/a2a-protocol|A2A Protocol]]
+- [[概念/Agent/agent-production-deployment|Agent 生产部署]]

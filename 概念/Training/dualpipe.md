@@ -19,6 +19,7 @@ provenance:
 base_confidence: 0.80
 lifecycle: reviewed
 tier: supporting
+updated: 2026-07-21
 ---
 
 # DualPipe 双向流水线并行
@@ -108,4 +109,24 @@ DualPipe 是 DeepSeek 开源训练基础设施的重要组件：
 - [[概念/parallel-training]] — 并行训练
 - [[概念/megatron-lm]] — Megatron-LM
 - [[概念/deepgemm]] — DeepGEMM FP8 算子库
+- [[概念/pipeline-parallelism]] — 流水线并行
 - [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+
+---
+
+## 2026 流水线并行生态
+
+| 算法 | 气泡率 | 核心机制 | 适用场景 |
+|------|--------|---------|----------|
+| **DualPipe** | ~15% | 双向调度 + 计算通信重叠 | 大规模预训练 |
+| **Interleaved 1F1B** | ~30% | 交错微批次 | Megatron-LM 生态 |
+| **Zero Bubble** | ~0% | 理论最优 | 研究阶段 |
+| **Chimera** | ~20% | 双向流水线 | 学术探索 |
+
+## 生产最佳实践
+
+1. **微批次调优**：增加微批次数降低气泡率，但增加显存压力
+2. **与 TP/DP 组合**：DualPipe + TP + DP 组合用于千亿参数训练
+3. **通信重叠**：确保计算与通信充分重叠，最大化 GPU 利用率
+4. **负载均衡**：MoE 模型需注意专家负载均衡
+5. **监控指标**：关注气泡率、MFU、通信/计算比

@@ -22,9 +22,11 @@ base_confidence: 0.9
 lifecycle: reviewed
 tier: core
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-07-21
 aliases:
   - Tgi
+  - "Text Generation Inference"
+  - "HuggingFace TGI"
 
 ---
 # TGI (Text Generation Inference)
@@ -118,24 +120,33 @@ docker run --gpus all \
 
 ## 7. 优势与局限
 
-### 优势
-- HuggingFace 官方维护，模型生态最全。
-- 安装简单，Docker 一键启动。
-- 支持大量量化方案，降低显存门槛。
-- OpenAI 兼容 API 降低接入成本。
+✅ **优势**：
+- HuggingFace 官方维护，模型生态最全
+- 安装简单，Docker 一键启动
+- 支持大量量化方案，降低显存门槛
+- OpenAI 兼容 API 降低接入成本
+- 多模态支持 (VLM)
 
-### 局限
-- 极致吞吐通常不如 vLLM（PagedAttention）。
-- 部分新架构模型支持滞后于社区。
-- 多卡张量并行配置相对复杂。
+⚠️ **局限**：
+- 极致吞吐通常不如 vLLM/SGLang
+- 部分新架构模型支持滞后于社区
+- 多卡张量并行配置相对复杂
+- 缺少 RadixAttention 等高级缓存优化
 
----
+## 8. 2026 年现状
 
-## Related
+| 方面 | 状态 |
+|------|------|
+| **定位** | HuggingFace Inference Endpoints 底层引擎 |
+| **吐量** | 略低于 vLLM/SGLang，但差距缩小 |
+| **多模态** | 支持 LLaVA、Idefics 等 VLM |
+| **量化** | FP8、GPTQ、AWQ、BitsAndBytes |
+| **生态** | 与 HF Hub、Inference Endpoints、KServe 深度集成 |
 
-- [[部署推理/Inference_Engines/TGI_Deep_Dive]] — TGI 深度解析
-- [[概念/vllm]] — vLLM 推理引擎
-- [[概念/model-serving]] — 模型服务
-- [[概念/hami]] — HAMi GPU 虚拟化
-- [[部署推理/Inference_Engines/KServe_Deep_Dive]] — KServe
-- [[部署推理/Inference_Engines/vLLM_Deep_Dive]] — vLLM
+## 延伸阅读
+
+- [[概念/Inference/model-serving|模型服务]]
+- [[概念/Inference/sglang|SGLang]]
+- [[概念/LLM/tensorrt-llm|TensorRT-LLM]]
+- [[部署推理/Inference_Engines/TGI_Deep_Dive|TGI 深度解析]]
+- [[部署推理/Inference_Engines/vLLM_Deep_Dive|vLLM 深度解析]]

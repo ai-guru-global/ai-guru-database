@@ -6,7 +6,7 @@ summary: "当 LLM 支持 100K+ token 上下文窗口时,RAG 还有必要吗?本�
 sources:
   - "https://arxiv.org/abs/2307.03172"
 created: 2026-06-12
-updated: 2026-06-12
+updated: 2026-07-21
 lifecycle: reviewed
 tier: core
 aliases:
@@ -80,13 +80,42 @@ relationships:
 3. **摘要索引**: 对长文档先生成摘要索引,检索时用摘要定位,再用长上下文读全文
 4. **上下文压缩**: 检索后用 LLM 压缩上下文,减少 token 消耗
 
+## 成本量化对比 (100 页文档问答)
+
+| 方案 | 每次查询成本 | 延迟 | 准确率 |
+|------|:----------:|:----:|:------:|
+| 纯长上下文 (128K) | $0.15-0.50 | 3-8s | 75-85% |
+| 纯 RAG (Top-5) | $0.005-0.02 | 0.5-1.5s | 85-92% |
+| 混合 (RAG + 32K) | $0.02-0.08 | 1-3s | **90-95%** |
+
+> 假设: GPT-5 定价, 100 页 ≈ 80K token, 每天 1000 次查询
+
+## 2026 年最佳实践
+
+| 场景 | 推荐方案 | 理由 |
+|------|---------|------|
+| 单文档分析 (<50K) | 纯长上下文 | 简单、全局理解 |
+| 企业知识库 (>1M 文档) | RAG + 重排序 | 可扩展、低成本 |
+| 法律/医疗合规 | RAG + 引用源 | 可追溯、可审计 |
+| 多轮对话助手 | RAG + 前缀缓存 | 动态更新 + 低延迟 |
+| 代码库问答 | 分层 RAG + 长上下文 | 结构化检索 + 全局理解 |
+| 实时新闻 | RAG (实时索引) | 长上下文无法实时更新 |
+
 ## 关键研究
 
 | 研究 | 发现 |
 |------|------|
-| Lost in the Middle | LLM 对上下文中间位置的信息关注度最低 |
-| RAG vs Long Context | RAG 在精确信息检索任务上始终优于长上下文 |
-| RAPTOR | 递归摘要 + 检索 = 最佳分层方案 |
+| Lost in the Middle (2023) | LLM 对上下文中间位置的信息关注度最低 |
+| RAG vs Long Context (2024) | RAG 在精确信息检索任务上始终优于长上下文 |
+| RAPTOR (2024) | 递归摘要 + 检索 = 最佳分层方案 |
+| LongRAG (2025) | 4K 块 + 检索可匹配 128K 全上下文效果 |
+| Cache-Augmented Gen (2026) | KV Cache 预加载替代实时检索，延迟降低 80% |
 
-> **关联**: -> [[RAG系统/README|RAG 系统]] | [[大模型/README|NLP/LLM]] | [[学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
+## 延伸阅读
+
+- [[概念/RAG/rag-systems|RAG 系统]]
+- [[概念/LLM/kv-cache-compression|KV Cache 压缩]]
+- [[概念/LLM/radix-attention|RadixAttention]]
+- [[概念/Inference/prefix-caching|前缀缓存]]
+- [[学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
 

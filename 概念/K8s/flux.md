@@ -4,8 +4,9 @@ category: -concepts
 tags: ["kubernetes", "k8s", "gitops", "cd", "cloud-native", "alibaba-cloud"]
 summary: "Flux 是 CNCF 孵化的 GitOps 持续交付工具，原生支持 Git 仓库监听、自动同步、镜像自动更新和渐进式交付。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: archived
+lifecycle: reviewed
 aliases:
   - "Flux CD"
   - "Flux GitOps"
@@ -55,3 +56,20 @@ sources: []
 - [[概念/helm|Helm]] — 包管理
 - [[概念/kustomize|Kustomize]] — 配置覆盖
 - [[概念/kubernetes|Kubernetes]] — 容器编排
+
+---
+
+## 2026 Flux 生态
+
+| 特性 | 说明 | 状态 |
+|------|------|------|
+| **CNCF 毕业** | 成熟稳定 | GA |
+| **多源支持** | Git/Helm/OCI/Bucket | GA |
+| **镜像自动更新** | ImagePolicy | GA |
+
+## 生产最佳实践
+
+1. **Git 安全**：使用 SSH 或 Token 认证，保护仓库访问
+2. **同步监控**：关注 Kustomization Ready 状态
+3. **渐进式交付**：配合 Flagger 实现金丝雀发布
+4. **与 ArgoCD 对比**：Flux 更轻量，ArgoCD UI 更丰富

@@ -22,6 +22,7 @@ sources:
 summary: "SFT（Supervised Fine-Tuning）是让预训练 LLM 学会"按指令回答"的关键步骤，用 (prompt, response) 对训练模型，是 RLHF / DPO 等对齐方法的前置阶段。"
 lifecycle: reviewed
 tier: core
+updated: 2026-07-21
 provenance:
   extracted: 0.92
   inferred: 0.06
@@ -178,4 +179,24 @@ llamafactory-cli train \
 - [[概念/dpo]] — DPO（SFT 后阶段）
 - [[概念/fine-tuning-techniques]] — 微调技术
 - [[概念/lora-peft]] — LoRA / PEFT
+- [[概念/pre-training]] — 预训练（SFT 前置阶段）
 - [[模型训练/Fine_tuning_Techniques]] — 微调章节
+
+---
+
+## 2026 SFT 生态
+
+| 框架 | 特点 | 适用场景 |
+|------|------|----------|
+| **TRL** | HuggingFace 原生 | 通用场景 |
+| **LLaMA-Factory** | 中文友好、可视化 | 快速上手 |
+| **Unsloth** | 2-5x 加速 | 追求速度 |
+| **SWIFT** | 阿里开源 | 国产生态 |
+
+## 生产最佳实践
+
+1. **数据质量**：高质量指令数据 > 数据数量
+2. **学习率**：从 2e-5 开始，根据模型调整
+3. **防止过拟合**：早停 + dropout + 数据增强
+4. **灾难性遗忘**：混入通用数据 + KL 正则
+5. **评估体系**：建立任务特定评估基准

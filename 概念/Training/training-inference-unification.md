@@ -15,11 +15,11 @@ provenance:
   inferred: 0.1
   ambiguous: 0.05
 base_confidence: 0.80
-lifecycle: draft
-lifecycle_changed: 2026-06-03
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
 tier: supporting
 created: 2026-06-03 00:00:00+00:00
-updated: 2026-06-03 00:00:00+00:00
+updated: 2026-07-21
 aliases:
   - "Training Inference Unification"
   - "training inference unification"
@@ -90,4 +90,24 @@ LeMix（UC Riverside, 2025）提出细粒度训推共置调度框架：
 - [[概念/ai-architecture]] — AI 系统架构
 - [[概念/heterogeneous-gpu]] — 异构 GPU 集群
 - [[概念/continuous-batching]] — Continuous Batching
+- [[概念/distributed-training]] — 分布式训练
 - [[架构基建/AI_Stack_Deep_Dive]] — 阿里云 AI Stack
+
+---
+
+## 2026 训推一体生态
+
+| 方案 | 核心机制 | 适用场景 |
+|------|---------|----------|
+| **LeMix** | 细粒度训推共置调度 | 学术研究、原型验证 |
+| **Kubernetes + Volcano** | 任务队列 + 优先级调度 | 生产集群 |
+| **阿里云 PAI** | 训推一体平台 | 企业级托管 |
+| **Ray + KubeRay** | 弹性资源池 | 云原生场景 |
+
+## 生产最佳实践
+
+1. **SLO 优先**：推理 SLO 优先级高于训练，训练可暂停/降级
+2. **内存隔离**：使用 MIG/MPS 或显存配额隔离训推任务
+3. **热替换**：LoRA adapter 热替换无需重启，Full model 滚动更新
+4. **监控指标**：关注 GPU 利用率、推理延迟、训练吞吐、资源切换频率
+5. **渐进式采用**：先从低峰时段训练开始，逐步扩大训推共置比例

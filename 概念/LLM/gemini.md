@@ -74,22 +74,66 @@ updated: 2026-06-24
 - 需要严格的逻辑/数学推理（Claude / o1 更强）
 - 中国境内低延迟访问（Google 服务受限）
 
+## 架构特点
+
+| 特性 | 说明 |
+|------|------|
+| **原生多模态预训练** | 从第一天就联合训练文本/图像/音频/视频，而非后期拼接 |
+| **MoE 架构** | Gemini 3 Ultra 采用 Mixture-of-Experts，激活参数远小于总参数 |
+| **超长上下文** | 原生 1M token，部分版本支持 10M |
+| **Thinking Mode** | 类似 o1 的思维链推理，可配置思考深度 |
+| **原生工具调用** | Function Calling + Code Execution + Google Search |
+
+## API 接入示例
+
+```python
+import google.generativeai as genai
+
+genai.configure(api_key="YOUR_API_KEY")
+model = genai.GenerativeModel("gemini-3-pro")
+
+# 多模态输入
+response = model.generate_content([
+    "分析这张图表的趋势",
+    {"mime_type": "image/png", "data": image_bytes},
+])
+
+# 流式输出
+for chunk in model.generate_content(prompt, stream=True):
+    print(chunk.text, end="")
+```
+
+## 定价参考 (2026 中)
+
+| 模型 | 输入 | 输出 | 上下文 |
+|------|:----:|:----:|:------:|
+| Gemini 3 Ultra | $7/M tok | $21/M tok | 1M |
+| Gemini 3 Pro | $1.25/M tok | $5/M tok | 1M |
+| Gemini 3 Flash | $0.075/M tok | $0.30/M tok | 1M |
+| Gemini Nano | 端侧免费 | - | 32K |
+
 ## 相关生态
 
-- **Gemini App** — Google 的 ChatGPT 竞品（C 端）
-- **Gemini Live** — 实时语音对话（移动端）
-- **Gemini for Workspace** — 集成到 Gmail / Docs / Sheets
-- **Gemini Code Assist** — IDE 中的代码助手
-- **Gemini CLI** — 命令行 Agent 工具
+| 产品 | 定位 |
+|------|------|
+| **Gemini App** | C 端对话助手（对标 ChatGPT） |
+| **Gemini Live** | 实时语音对话（移动端） |
+| **Gemini for Workspace** | 集成 Gmail/Docs/Sheets |
+| **Gemini Code Assist** | IDE 代码助手 |
+| **Gemini CLI** | 命令行 Agent 工具 |
+| **Vertex AI** | 企业级 MLOps 平台 |
+| **AI Studio** | 开发者免费试验场 |
 
-## Related
+## 2026 生态定位
 
-- [[概念/cloud-ai-platform]] — 云 AI 平台对比
-- [[概念/vertex-ai]] — Vertex AI 平台
-- [[概念/foundation-model]] — 基础模型总览
-- [[概念/multimodal-models]] — 多模态模型
-- [[架构基建/Google_Vertex_AI_Deep_Dive]] — Vertex AI 深度解析
+- **多模态最强**: 视频理解、图表解析、音频转写一体化
+- **超长上下文领先**: 1M-10M token 窗口，可处理数小时视频
+- **性价比优选**: Flash 版本价格仅为 GPT-5 的 1/50
+- **企业级合规**: Vertex AI 提供 VPC-SC、CMEK、审计日志
 
-## See Also (深度专题)
+## 延伸阅读
 
-- [[../../大模型/Global_LLM_Ecosystem/Google_Gemini_Deep_Dive|Google Gemini 深度解析]] — Gemini 模型家族架构演进、多模态能力与产品生态
+- [[概念/LLM/foundation-model|基础模型]]
+- [[概念/LLM/multimodal-models|多模态模型]]
+- [[架构基建/Google_Vertex_AI_Deep_Dive|Vertex AI 深度解析]]
+- [[大模型/Global_LLM_Ecosystem/Google_Gemini_Deep_Dive|Google Gemini 深度解析]]

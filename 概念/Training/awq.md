@@ -20,6 +20,7 @@ sources:
 summary: "AWQ（Activation-aware Weight Quantization）是 MIT 韩松团队 2023 年提出的 LLM INT4 量化方法，通过保护"显著权重"（基于激活分布）实现 4-bit 量化下接近 FP16 的精度，是 GPTQ 的主要替代方案。"
 lifecycle: reviewed
 tier: core
+updated: 2026-07-21
 provenance:
   extracted: 0.85
   inferred: 0.10
@@ -153,4 +154,25 @@ llm = LLM(
 - [[概念/gptq]] — GPTQ（AWQ 主要替代）
 - [[概念/quantization]] — 量化总览
 - [[概念/model-compression]] — 模型压缩
-- [[部署推理/Quantization]] — 量化章节- [[概念/pruning]] — 剪枝
+- [[概念/smoothquant]] — SmoothQuant INT8 量化
+- [[部署推理/Quantization]] — 量化章节
+- [[概念/pruning]] — 剪枝
+
+---
+
+## 2026 AWQ 生态
+
+| 特性 | 说明 | 状态 |
+|------|------|------|
+| **AutoAWQ** | 参考实现（MIT） | GA |
+| **vLLM/TensorRT-LLM** | 推理引擎原生支持 | GA |
+| **与 GPTQ 对比** | AWQ 更快、GPTQ 精度略高 | - |
+| **多模态** | 视觉模型量化 | 实验性 |
+
+## 生产最佳实践
+
+1. **校准数据**：使用 128-512 条代表性数据计算激活分布
+2. **精度验证**：量化后验证下游任务精度损失 <2%
+3. **与 GPTQ 对比**：追求速度用 AWQ，追求精度用 GPTQ
+4. **推理引擎**：优先使用 vLLM/TensorRT-LLM 获得最佳性能
+5. **显存估算**：70B AWQ INT4 约需 35-40GB 显存

@@ -1,23 +1,27 @@
 ---
 title: "LLMOps"
 category: "概念"
-tags: ["llmops", "mlops", "llm", "operations", "observability", "prompt-engineering"]
-summary: "LLMOps 是 MLOps 在 LLM 时代的延伸——专注于大语言模型应用的部署、监控、评估和迭代运维。"
+tags: ["llmops", "mlops", "llm", "operations", "observability", "prompt-engineering", "evaluation", "rag"]
+summary: "LLMOps 是 MLOps 在 LLM 时代的延伸——专注于大语言模型应用的部署、监控、评估和迭代运维。核心关注 Prompt 版本管理、RAG 质量闭环、Token 成本控制、可观测性和安全合规。2026 年已成为 LLM 生产应用的必备方法论。"
 created: "2026-06-25"
-updated: "2026-06-25"
+updated: "2026-07-21"
 tier: core
 aliases:
   - "LLMOps"
   - "LLM Operations"
   - "LLM Ops"
-sources: []
+relationships:
+  - target: "概念/Inference/model-serving"
+    type: related_to
+  - target: "概念/Agent/agent-evaluation-benchmarks"
+    type: related_to
+sources:
+  - 模型运维/LLMOps_2026.md
 
 ---
 # LLMOps
 
 > **一句话定义**: LLMOps 是将大语言模型（LLM）从实验推向生产的全套运维方法论——涵盖 Prompt 管理、RAG 编排、推理部署、可观测性、评估和安全合规。
-
----
 
 ## 核心定义
 
@@ -29,8 +33,6 @@ LLMOps (Large Language Model Operations) 是 **MLOps 的进化分支**，专门�
 - **RAG 架构**: 检索增强生成引入了额外的数据管道和评估维度
 - **安全对齐**: 需要防御 Prompt Injection、数据泄漏等新型威胁
 
----
-
 ## LLMOps vs MLOps
 
 | 维度 | 传统 MLOps | LLMOps |
@@ -41,10 +43,9 @@ LLMOps (Large Language Model Operations) 是 **MLOps 的进化分支**，专门�
 | 监控重点 | 数据漂移 / 预测分布 | Token 成本 / 延迟 / 幻觉率 |
 | 部署单元 | 模型服务 | 推理引擎 + RAG Pipeline + Prompt |
 | 迭代速度 | 周级（重训） | 小时级（改 Prompt） |
+| 回归测试 | 模型指标对比 | Prompt 输出质量对比 |
 
----
-
-## LLMOps 技术栈
+## LLMOps 技术栈 (2026)
 
 ```
 ┌─────────────────────────────────────────┐
@@ -65,26 +66,100 @@ LLMOps (Large Language Model Operations) 是 **MLOps 的进化分支**，专门�
 └─────────────────────────────────────────┘
 ```
 
----
+## 核心工具链
+
+| 环节 | 工具 | 功能 |
+|------|------|------|
+| **Prompt 管理** | PromptLayer / Humanloop | 版本控制、A/B 测试 |
+| **评估** | Ragas / Promptfoo / DeepEval | RAG 质量、安全性评估 |
+| **可观测性** | Langfuse / LangSmith / Phoenix | Trace、成本、延迟监控 |
+| **推理网关** | LiteLLM / Portkey | 多模型路由、降级、限流 |
+| **RAG 编排** | LlamaIndex / LangChain | 检索增强生成管道 |
+| **安全** | Guardrails AI / NeMo Guardrails | 输入输出过滤 |
+| **微调** | Axolotl / LLaMA-Factory | LoRA/QLoRA 微调 |
 
 ## 核心实践
 
-1. **Prompt 版本管理**: 将 Prompt 模板存入 Git，每次修改跑回归测试
-2. **RAG 质量闭环**: Ragas 评估 → 发现问题 → 优化检索/Chunking → 重新评估
-3. **成本监控**: 按用户/功能/模型追踪 token 消耗，设置预算告警
-4. **安全防护**: 输入过滤（Prompt Injection 检测）+ 输出过滤（PII/有害内容）
-5. **A/B 测试**: 新 Prompt / 新模型上线前做 Champion-Challenger 对比
+### 1. Prompt 版本管理
 
----
+```yaml
+# prompt_v2.3.yaml
+name: "customer_support"
+version: "2.3"
+template: |
+  你是{{company}}的客服助手。
+  背景信息: {{context}}
+  用户问题: {{question}}
+  请用友好专业的语气回答。
+variables: [company, context, question]
+tests:
+  - input: {question: "如何退款?"}
+    expect: contains("退款流程")
+```
+
+### 2. RAG 质量闭环
+
+```
+Ragas 评估 → 发现问题 → 优化检索/Chunking → 重新评估
+
+核心指标:
+├── Faithfulness: 回答是否忠于检索内容 (目标 >0.85)
+├── Answer Relevancy: 回答是否切题 (目标 >0.80)
+├── Context Precision: 检索是否精准 (目标 >0.75)
+└── Context Recall: 检索是否完整 (目标 >0.70)
+```
+
+### 3. 成本监控
+
+| 指标 | 监控方式 | 告警阈值 |
+|------|----------|----------|
+| Token 消耗/用户 | 按 user_id 追踪 | 超日均 3× |
+| 单次调用成本 | input + output tokens | >$0.10/次 |
+| 月度总成本 | 按功能/模型汇总 | 超预算 80% |
+| 缓存命中率 | Prefix Cache hit rate | <40% |
+
+### 4. 安全防护
+
+```
+输入 → [Prompt Injection 检测] → LLM → [输出过滤] → 用户
+         │                              │
+         ├─ 拦截注入攻击              ├─ PII 检测
+         ├─ 拦截越狱尝试              ├─ 有害内容过滤
+         └─ 输入长度限制              └─ 幻觉检测
+```
+
+### 5. 灰度发布
+
+| 阶段 | 流量 | 监控 | 回滚条件 |
+|------|:----:|------|----------|
+| Canary | 5% | 延迟、错误率、质量 | 错误率 >1% |
+| 灰度 | 25% | + 用户反馈、成本 | 质量下降 >5% |
+| 全量 | 100% | 全指标 | P0 事故 |
+
+## 2026 趋势
+
+| 趋势 | 说明 |
+|------|------|
+| **AI 评估 AI** | 用 LLM 自动评估 LLM 输出质量 (LLM-as-Judge) |
+| **Agent 可观测** | 多步 Agent 的 Trace、工具调用监控 |
+| **成本优化自动化** | 自动模型路由（简单任务→小模型） |
+| **Prompt 回归测试 CI** | Prompt 修改自动触发质量回归 |
+| **统一网关** | LiteLLM/Portkey 统一管理多模型多供应商 |
+
+## 生产最佳实践
+
+1. **Prompt 纳入 Git**：每次修改跑回归测试，像代码一样管理
+2. **RAG 质量定期评估**：每周跑 Ragas，监控 Faithfulness 趋势
+3. **设置成本告警**：按用户/功能/模型追踪 token 消耗
+4. **输入输出双向过滤**：防御 Prompt Injection + 拦截有害输出
+5. **灰度发布新 Prompt/模型**：Champion-Challenger 对比后再全量
+6. **全链路 Trace**：每个请求可追溯 Prompt 版本、检索结果、模型输出
 
 ## Related
 
 - [[模型运维/LLMOps_2026]] — LLMOps 全景深度解析
-- [[概念/mlops]] — MLOps 概念
+- [[概念/Inference/model-serving]] — 模型服务
 - [[模型运维/Evaluation/LLM_Evaluation_Pipeline]] — LLM 评估流水线
 - [[模型运维/Observability/LLM_Observability]] — LLM 可观测性
-
-## See Also (深度专题)
-
-- [[../../大模型/LLM_Deployment/LLM_Production_Deployment_Runbook|LLM 生产部署 Runbook]] — 监控/灰度/回滚/成本管理的生产实践
-- [[../../大模型/LLM_Inference/LLM_Inference_Deep_Dive|LLM 推理深度解析]] — 推理引擎选型与运维
+- [[大模型/LLM_Deployment/LLM_Production_Deployment_Runbook|LLM 生产部署 Runbook]]
+- [[大模型/LLM_Inference/LLM_Inference_Deep_Dive|LLM 推理深度解析]]

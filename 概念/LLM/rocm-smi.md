@@ -19,6 +19,12 @@ provenance:
 base_confidence: 0.80
 lifecycle: reviewed
 tier: supporting
+created: 2026-06-25
+updated: 2026-07-21
+aliases:
+  - "rocm-smi"
+  - "ROCm SMI"
+  - "AMD GPU 监控"
 ---
 
 # rocm-smi AMD GPU 监控工具
@@ -92,9 +98,20 @@ rocm-smi --json
 
 ---
 
-## Related
+## 5. 2026 年 AMD GPU 生态
 
-- [[概念/nvidia-smi]] — nvidia-smi GPU 监控
-- [[概念/ppu-smi]] — ppu-smi APG GPU 监控
-- [[概念/cuda-platform]] — CUDA 计算平台
-- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+| GPU | 定位 | 显存 | AI Stack 支持 |
+|-----|------|:----:|:-----------:|
+| **MI300X** | 数据中心旗舰 | 192GB HBM3 | ✅ vLLM/ROCm |
+| **MI325X** | 升级版 | 256GB HBM3e | ✅ |
+| **MI400** (2026) | 下一代 | 288GB | 开发中 |
+| **RX 7900** | 消费级 | 24GB | 部分支持 |
+
+> AMD GPU 在 AI Stack 中作为 NVIDIA 的补充，主要用于成本敏感型推理集群。rocm-smi 是运维监控的必备工具。
+
+## 延伸阅读
+
+- [[概念/LLM/nvidia-smi|nvidia-smi]]
+- [[概念/LLM/ppu-smi|ppu-smi]]
+- [[概念/Inference/model-serving|模型服务]]
+- [[架构基建/AI_Stack_Deep_Dive|AI Stack 深度解析]]

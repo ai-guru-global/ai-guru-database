@@ -1,22 +1,22 @@
 ---
 title: "AutoGen"
 category: -concepts
-tags: ["autogen", "microsoft", "agent", "multi-agent", "llm", "framework", "conversation", "tool-use"]
+tags: ["autogen", "microsoft", "agent", "multi-agent", "llm", "framework", "conversation", "tool-use", "ag2"]
 relationships:
-  - target: "概念/agent-framework"
+  - target: "概念/Agent/agent-framework"
     type: extends
-  - target: "概念/multi-agent"
+  - target: "概念/Agent/multi-agent-orchestration"
     type: enables
-  - target: "概念/langchain"
+  - target: "概念/Agent/langchain"
     type: related_to
-  - target: "概念/llamaindex"
+  - target: "概念/Agent/crewai"
     type: related_to
-  - target: "概念/mcp"
+  - target: "概念/Agent/mcp"
     type: related_to
 sources:
   - Agent/Agent_Frameworks/AutoGen_Deep_Dive.md
-  - Agent/Agent_Frameworks/AutoGen_CrewAI_LangGraph_Dive.md
-summary: "AutoGen 是微软开源的多 Agent 对话框架，通过 ConversableAgent 抽象让多个 LLM Agent 互相协作、调用工具、执行代码，适合复杂任务分解和多角色协作场景。"
+  - "https://github.com/microsoft/autogen"
+summary: "AutoGen 是微软开源的多 Agent 对话框架，通过 ConversableAgent 抽象让多个 LLM Agent 互相协作、调用工具、执行代码。2025 年重构为 AG2。"
 provenance:
   extracted: 0.8
   inferred: 0.15
@@ -25,77 +25,121 @@ base_confidence: 0.88
 lifecycle: reviewed
 tier: core
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-07-21
 aliases:
   - Autogen
+  - "AG2"
+  - "AutoGen Studio"
 
 ---
 # AutoGen
 
 > 多 Agent 协作的「会议室」——让多个大模型角色分工、讨论、执行代码，共同解决复杂问题。
 
----
+## 1. 核心定义
 
-## 1. 一句话定义
+**AutoGen** 是微软开源的**多 Agent 对话框架**，通过 `ConversableAgent` 抽象让多个 LLM Agent 互相协作、调用工具、执行代码。2025 年社区重构为 **AG2**，引入事件驱动架构。
 
-**AutoGen** 是微软开源的**多 Agent 对话框架**，通过 `ConversableAgent` 抽象让多个 LLM Agent 互相协作、调用工具、执行代码。它适合需要多角色分工、多轮讨论、代码生成与执行的复杂任务场景。
+## 2. 核心组件
 
----
+| 组件 | 说明 | 作用 |
+|------|------|------|
+| **ConversableAgent** | 可对话的 Agent 基类 | 所有 Agent 的父类 |
+| **AssistantAgent** | 基于 LLM 的助手 | 生成回复、调用工具 |
+| **UserProxyAgent** | 代表人类用户 | 执行代码、调用工具、人机交互 |
+| **GroupChat** | 多 Agent 群聊 | 协调多 Agent 讨论 |
+| **GroupChatManager** | 群聊管理器 | 决定下一个发言者 |
+| **代码执行器** | Docker/本地执行 | 安全运行生成代码 |
 
-## 2. 核心能力
+## 3. 代码示例
 
-| 能力 | 说明 |
+```python
+from autogen import AssistantAgent, UserProxyAgent, GroupChat, GroupChatManager
+
+# 创建 Agent
+coder = AssistantAgent(
+    name="Coder",
+    llm_config={"model": "gpt-4o"},
+    system_message="你是一个 Python 专家，写高质量代码。"
+)
+
+executor = UserProxyAgent(
+    name="Executor",
+    code_execution_config={"work_dir": "output", "use_docker": True},
+    human_input_mode="NEVER"
+)
+
+critic = AssistantAgent(
+    name="Critic",
+    llm_config={"model": "gpt-4o"},
+    system_message="你是代码审查专家，找出 bug 和改进点。"
+)
+
+# 多 Agent 群聊
+groupchat = GroupChat(
+    agents=[coder, executor, critic],
+    messages=[],
+    max_round=10
+)
+manager = GroupChatManager(groupchat=groupchat)
+
+# 启动任务
+executor.initiate_chat(manager, message="写一个快速排序算法并测试")
+```
+
+## 4. 典型场景
+
+| 场景 | Agent 组合 | 效果 |
+|------|----------|------|
+| 代码生成与调试 | Coder + Critic + Executor | 自动写代码、审查、执行 |
+| 数据分析 | Cleaner + Modeler + Visualizer | 多步数据处理 |
+| 多角色内容创作 | Writer + Editor + Reviewer | 协作生成文档 |
+| 工具编排 | Planner + ToolAgent + Verifier | 多步 API 调用 |
+| 研究助手 | Searcher + Summarizer + Writer | 自动调研 |
+
+## 5. AutoGen vs 其他框架
+
+| 维度 | AutoGen/AG2 | CrewAI | LangGraph | OpenAI Swarm |
+|------|------------|--------|-----------|-------------|
+| 核心抽象 | 对话 | 角色/任务 | 状态图 | Handoff |
+| 多 Agent | 群聊模式 | 顺序/层级 | 图编排 | 轻量级 |
+| 代码执行 | 内置 Docker | 无 | 无 | 无 |
+| 学习曲线 | 中 | 低 | 高 | 低 |
+| 生产就绪 | 中 | 中 | 高 | 低 |
+| 维护方 | 微软/社区 | CrewAI Inc | LangChain | OpenAI |
+
+## 6. 2026 生态进展
+
+| 进展 | 说明 |
 |------|------|
-| **ConversableAgent** | 可对话的 Agent 基类 |
-| **UserProxyAgent** | 代表人类用户，可执行代码/调用工具 |
-| **AssistantAgent** | 基于 LLM 的助手 Agent |
-| **GroupChat** | 多 Agent 群聊协调 |
-| **代码执行** | 自动在 Docker/本地环境执行生成的代码 |
-| **工具注册** | Agent 可注册和调用函数/API |
-| **自定义 Agent** | 可扩展系统消息、终止条件、人机交互模式 |
+| **AG2 重构** | 事件驱动架构，更好的可观测性和控制流 |
+| **AutoGen Studio** | 可视化拖拽构建多 Agent 工作流 |
+| **MCP 集成** | Agent 可消费 MCP 服务器工具 |
+| **Azure 集成** | 与 Azure OpenAI、Azure Functions 深度整合 |
+| **多模态** | 支持图像、音频输入输出 |
 
----
+## 7. 优势与局限
 
-## 3. 典型场景
-
-1. **代码生成与调试**：Coder + Critic + Executor 协作写代码。
-2. **复杂数据分析**：多个 Agent 分别负责数据清洗、建模、可视化。
-3. **多角色内容创作**：Writer + Editor + Reviewer 协作生成文档。
-4. **工具编排 Agent**：调用搜索、计算、API 完成多步任务。
-
----
-
-## 4. 与相关技术的关系
-
-| 技术 | 关系 |
+| 优势 | 局限 |
 |------|------|
-| **LangChain** | 更通用，AutoGen 专注多 Agent 对话 |
-| **CrewAI** | 基于角色扮演的多 Agent 框架，灵感来自 AutoGen |
-| **LlamaIndex** | 可作为 AutoGen Agent 的 RAG 工具 |
-| **MCP** | AutoGen Agent 可消费 MCP 服务器 |
+| 多 Agent 协作抽象清晰 | 多 Agent 对话 token 成本高 |
+| 内置代码执行 | 调试复杂，对话流难预测 |
+| 微软维护，Azure 集成好 | 简单场景过度设计 |
+| 灵活的对话模式 | 版本迭代快，API 变动大 |
 
----
+## 8. 生产最佳实践
 
-## 5. 优势与局限
-
-### 优势
-- 多 Agent 协作抽象清晰。
-- 内置代码执行，适合编程任务。
-- 微软维护，与 Azure OpenAI 集成好。
-
-### 局限
-- 多 Agent 对话可能产生大量 LLM 调用，成本高。
-- 调试复杂，对话流程难以预测。
-- 对简单单 Agent 场景过度设计。
-
----
+1. **控制轮数**: GroupChat 设置 `max_round`，避免无限对话
+2. **明确角色**: 每个 Agent 的 system_message 要精确，避免角色混淆
+3. **Docker 执行**: 代码执行必须用 Docker 隔离，避免安全风险
+4. **成本监控**: 多 Agent 对话 token 消耗是单 Agent 的 3-10×
+5. **终止条件**: 设置明确的终止条件，避免无意义的继续对话
 
 ## Related
 
-- [[智能体/Agent_Frameworks/AutoGen_Deep_Dive]] — AutoGen 深度解析
-- [[智能体/Agent_Frameworks/AutoGen_CrewAI_LangGraph_Dive]] — AutoGen / CrewAI / LangGraph 对比
-- [[概念/agent-framework]] — Agent 框架
-- [[概念/multi-agent]] — 多 Agent 系统
-- [[概念/langchain]] — LangChain
-- [[概念/llamaindex]] — LlamaIndex
-- [[概念/multi-agent-orchestration]] — Multi Agent Orchestration
+- [[智能体/Agent_Frameworks/AutoGen_Deep_Dive|AutoGen 深度解析]]
+- [[概念/Agent/agent-framework|Agent 框架]]
+- [[概念/Agent/multi-agent-orchestration|多 Agent 编排]]
+- [[概念/Agent/langchain|LangChain]]
+- [[概念/Agent/crewai|CrewAI]]
+- [[概念/Agent/mcp|MCP]]

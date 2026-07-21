@@ -19,6 +19,7 @@ provenance:
 base_confidence: 0.85
 lifecycle: reviewed
 tier: supporting
+updated: 2026-07-21
 ---
 
 # RAGFlow 开源 RAG 引擎
@@ -99,4 +100,25 @@ RAGFlow 文档解析流水线
 - [[概念/docling]] — Docling 文档解析
 - [[概念/reranker]] — 重排序模型
 - [[概念/dify]] — Dify LLM 平台
+- [[概念/rag-production-architecture|RAG 生产架构]] — 生产级 RAG 设计
 - [[RAG系统/RAG_Frameworks/README]] — RAGFlow 深度解析
+
+---
+
+## 2026 RAGFlow 生态
+
+| 特性 | 说明 | 状态 |
+|------|------|------|
+| **深度文档解析** | PDF 表格/图片/公式/版面分析 | GA |
+| **可视化知识库** | 拖拽式文档管理、分块预览 | GA |
+| **混合检索** | 向量 + 关键词 + Rerank | GA |
+| **引用溯源** | 答案带原文引用、页码定位 | GA |
+| **多模态** | 图片/表格内容理解 | Beta |
+
+## 生产最佳实践
+
+1. **文档预处理**：复杂 PDF 先进行 OCR/版面分析，提升解析质量
+2. **分块策略**：根据文档类型选择分块方式（语义/固定/递归）
+3. **检索调优**：调整 Top-K、相似度阈值、Rerank 模型获得最佳召回
+4. **知识库隔离**：按业务域划分知识库，避免跨域干扰
+5. **引用验证**：生产环境开启引用溯源，便于用户验证答案来源

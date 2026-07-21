@@ -22,11 +22,11 @@ provenance:
   inferred: 0.60
   ambiguous: 0.10
 base_confidence: 0.82
-lifecycle: draft
+lifecycle: reviewed
 lifecycle_changed: 2026-06-25
 tier: core
 created: 2026-06-25
-updated: 2026-06-25
+updated: 2026-07-21
 aliases:
   - Model Format
   - 模型文件格式
@@ -109,19 +109,26 @@ PyTorch 训练模型
     │
     ├──▶ ONNX ──▶ ONNX Runtime / TensorRT / OpenVINO
     │
-    ├──▶ GGUF ──▶ llama.cpp / Ollama / llama-box / 边缘设备
+    ├──▶ GGUF ──▶ llama.cpp / Ollama / 边缘设备
     │
     └──▶ Core ML / TFLite ──▶ 移动端/嵌入式
 ```
 
----
+## 6. 2026 年趋势
 
-## Related
+| 趋势 | 说明 |
+|------|------|
+| **Safetensors 统一分发** | 几乎所有新模型默认 Safetensors，pickle 已淘汰 |
+| **GGUF 生态爆发** | Ollama/llama.cpp 普及，Q4_K_M 成为本地推理标配 |
+| **FP4 量化** | B200 支持 FP4，模型体积再缩小 50% |
+| **Sharded 格式** | 大模型分片存储，支持并行加载 |
+| **流式加载** | 按需加载层，减少启动时间和显存峰值 |
 
-- [[概念/gguf]] — GGUF 模型格式
-- [[概念/safetensors]] — Safetensors 安全模型格式
-- [[概念/onnx]] — ONNX 开放神经网络交换格式
-- [[概念/quantization]] — 量化
-- [[概念/llama-cpp]] — llama.cpp
-- [[概念/llama-box]] — llama-box 推理后端
-- [[概念/tensorrt-llm]] — TensorRT-LLM
+## 延伸阅读
+
+- [[概念/Inference/gguf|GGUF 模型格式]]
+- [[概念/Inference/safetensors|Safetensors]]
+- [[概念/Inference/quantization|量化]]
+- [[概念/LLM/tensorrt-llm|TensorRT-LLM]]
+- [[概念/LLM/llama-cpp|llama.cpp]]
+- [[部署推理/Quantization/Quantization_Techniques_2026|量化技术 2026]]

@@ -24,69 +24,90 @@ lifecycle: reviewed
 lifecycle_changed: 2026-06-16
 tier: core
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-07-21
 aliases:
   - "Llm Production Pipeline"
   - "llm production pipeline"
+  - "LLM 生产化流水线"
 
 ---
 # LLM 生产流水线
 
+> **一句话理解**: LLM 生产流水线就像一条造车的总装线：从原材料到整车下线，每个环节都有质检，出了问题能追溯到具体零件。
+
 ## 核心要点
 
-- **LLM 生产流水线 = 大模型从实验室到用户的完整工程链路**。
-- **核心阶段**：数据 → 训练/微调 → 评估 → 部署 → 监控 → 反馈 → 再训练。
-- **关键要求**：可复现、可回滚、可监控、风险可控。
-- **与传统 MLOps 的区别**：LLM 更依赖提示工程、RLHF、在线评估、A/B 测试。
+- **LLM 生产流水线 = 大模型从实验室到用户的完整工程链路**
+- **核心阶段**：数据 → 训练/微调 → 评估 → 部署 → 监控 → 反馈 → 再训练
+- **关键要求**：可复现、可回滚、可监控、风险可控
+- **与传统 MLOps 的区别**：LLM 更依赖提示工程、RLHF、在线评估、A/B 测试
 
-## 一句话理解
-
-LLM 生产流水线就像一条造车的总装线：从原材料到整车下线，每个环节都有质检，出了问题能追溯到具体零件。
-
-## 详细内容
-
-### 典型阶段
+## 典型阶段
 
 ```
-数据准备
+数据准备 (清洗/标注/版本管理)
   ↓
-预训练 / 微调 / RLHF
+预训练 / 微调 / RLHF / DPO
   ↓
-离线评估（基准测试）
+离线评估（基准测试 + 人工评估）
   ↓
 模型注册与版本管理
   ↓
-部署（蓝绿/金丝雀）
+部署（蓝绿 / 金丝雀 / 滚动更新）
   ↓
-在线评估（A/B 测试）
+在线评估（A/B 测试 + LLM-as-Judge）
   ↓
-监控与告警
+监控与告警 (P95 延迟 / 吐量 / 质量分)
   ↓
-收集反馈，重新训练
+收集反馈，重新训练 (Data Flywheel)
 ```
 
-### 关键组件
+## 关键组件与工具链
 
-| 组件 | 作用 |
-|------|------|
-| 数据版本管理 | DVC、LakeFS |
-| 实验追踪 | MLflow、W&B |
-| CI 评估 | 自动化基准测试 |
-| 模型注册 | MLflow Model Registry |
-| 模型服务 | vLLM、TGI、SGLang |
-| 可观测性 | Prometheus、Grafana、LangSmith |
-| 反馈闭环 | 在线指标回流训练 |
+| 组件 | 作用 | 2026 工具 |
+|------|------|----------|
+| 数据版本管理 | 训练数据可追溯 | DVC, LakeFS, HuggingFace Datasets |
+| 实验追踪 | 记录训练参数/指标 | MLflow, W&B, Neptune |
+| CI 评估 | 自动化基准测试 | lm-eval-harness, DeepEval |
+| 模型注册 | 版本控制 + 审批流 | MLflow Registry, HF Hub |
+| 模型服务 | 高性能推理 | vLLM, SGLang, TRT-LLM |
+| 可观测性 | 指标/日志/追踪 | Prometheus, Grafana, LangSmith |
+| 反馈闭环 | 在线指标回流训练 | Argilla, Label Studio |
+| 安全护栏 | 输入/输出安全过滤 | Guardrails AI, NeMo Guardrails |
 
-## Related
+## 部署策略对比
 
-- [[概念/mlops]] — MLOps
-- [[概念/ci-integrated-evaluation]] — CI 集成评估
-- [[概念/model-deployment]] — 模型部署
-- [[概念/ab-testing-framework]] — A/B 测试框架
-- [[模型运维/LLM_Production_Pipeline_2026]] — LLM 生产流水线 2026
-- [[概念/llm-production-deployment|LLM 生产部署]] — 推理服务化与上线治理
+| 策略 | 风险 | 回滚速度 | 适用场景 |
+|------|:----:|:--------:|----------|
+| **蓝绿部署** | 低 | 秒级 | 大版本更新 |
+| **金丝雀发布** | 极低 | 秒级 | 模型迭代、Prompt 变更 |
+| **滚动更新** | 中 | 分钟级 | 多副本服务 |
+| **影子流量** | 无 | - | 新模型验证 |
 
-## See Also (深度专题)
+## 监控指标体系
 
-- [[../../大模型/LLM_Deployment/LLM_Production_Deployment_Runbook|LLM 生产部署 Runbook]] — 从数据管线到服务上线的全流程实践
-- [[../../大模型/LLM_Training/LLM_Training_Deep_Dive|LLM 训练深度解析]] — 训练-评估-部署闭环的工程细节
+| 层级 | 指标 | 告警阈值 |
+|------|------|:--------:|
+| **服务层** | P95 TTFT, P95 TPOT, 吐量 | TTFT > 500ms |
+| **质量层** | LLM-as-Judge 分, 用户满意度 | 分 < 4.0/5 |
+| **业务层** | 任务完成率, 转化率 | 下降 > 5% |
+| **安全层** | 拒绝率, 有害输出率 | 有害 > 0.1% |
+| **成本层** | 每请求成本, GPU 利用率 | 利用率 < 30% |
+
+## 与传统 MLOps 的差异
+
+| 维度 | 传统 ML | LLM |
+|------|--------|-----|
+| **迭代单位** | 模型权重 | 模型 + Prompt + RAG |
+| **评估方式** | 确定性指标 | LLM-as-Judge + 人工 |
+| **发布粒度** | 模型版本 | Prompt/模型/RAG 独立发布 |
+| **回滚复杂度** | 单模型 | 多组件联动 |
+| **监控重点** | 数据漂移 | 质量分 + 安全护栏 |
+
+## 延伸阅读
+
+- [[概念/LLM/llmops|LLMOps]]
+- [[概念/LLM/llm-production-deployment|LLM 生产部署]]
+- [[概念/Inference/model-serving|模型服务]]
+- [[模型运维/LLM_Production_Pipeline_2026|LLM 生产流水线 2026]]
+- [[大模型/LLM_Deployment/LLM_Production_Deployment_Runbook|LLM 生产部署 Runbook]]

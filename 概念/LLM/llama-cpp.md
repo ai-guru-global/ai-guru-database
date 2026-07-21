@@ -116,9 +116,21 @@ print(output['choices'][0]['message']['content'])
 - 极致吞吐量需求
 - > 100B 模型（除非有大量 RAM）
 
-## Related
+## 2026 年生态
 
-- [[概念/gguf]] — GGUF 格式
-- [[概念/vllm]] — vLLM（GPU 生产）
-- [[部署推理/Inference_Engines/llama_cpp_Deep_Dive]] — llama.cpp 深度
-- [[概念/serverless]] — Serverless 推理- [[概念/inference-performance-gaps]] — Inference Performance Gaps
+| 方面 | 状态 |
+|------|------|
+| **Ollama** | 最流行前端，底层用 llama.cpp |
+| **模型支持** | Llama/Qwen/Mistral/DeepSeek/Phi 等主流模型 |
+| **多模态** | 支持 LLaVA (mmproj 文件) |
+| **硬件** | CPU/CUDA/Metal/Vulkan/SYCL 全平台 |
+| **服务化** | llama-server 提供 OpenAI 兼容 API |
+| **社区** | GitHub 80K+ stars，极活跃 |
+
+## 延伸阅读
+
+- [[概念/Inference/gguf|GGUF 格式]]
+- [[概念/Inference/model-formats|模型格式全景]]
+- [[概念/LLM/edge-llm|边缘 LLM]]
+- [[概念/Inference/model-serving|模型服务]]
+- [[部署推理/Inference_Engines/llama_cpp_Deep_Dive|llama.cpp 深度解析]]

@@ -111,12 +111,20 @@ Bahdanau et al.（2015）提出注意力机制，允许解码器在每步"回看
 | 流式推理 | 天然支持 | 需要额外设计 |
 | 内存效率 | 高 | 低（需存完整注意力矩阵） |
 
-## 关联主题
+## 2026 年序列模型格局
 
-- Transformer架构：序列模型的下一代范式
-- LLM架构：基于Transformer的现代大语言模型
+| 架构 | 状态 | 代表 | 适用场景 |
+|------|:----:|------|----------|
+| **Transformer** | 主流 | GPT-5, Llama 4, Qwen3 | 通用 LLM |
+| **Mamba/SSM** | 活跃 | Jamba, Falcon-Mamba | 超长序列、端侧 |
+| **RWKV** | 小众 | RWKV-7 | 流式、低资源 |
+| **xLSTM** | 研究 | - | 实验阶段 |
+| **混合架构** | 趋势 | Mamba + Attention | 兼顾效果和效率 |
 
-## Related
+## 延伸阅读
 
-- [[概念/neural-networks.md|neural-networks]]
-- [[概念/prompt-engineering.md|prompt-engineering]]
+- [[概念/LLM/mamba|Mamba]]
+- [[概念/LLM/retnet|RetNet]]
+- [[概念/LLM/transformer-architecture-plain|Transformer 大白话]]
+- [[概念/LLM/llm-architectures|LLM 架构]]
+- [[大模型/Sequence_Models/Sequence_Models|序列模型深度解析]]

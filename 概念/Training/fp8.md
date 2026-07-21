@@ -19,6 +19,7 @@ provenance:
 base_confidence: 0.85
 lifecycle: reviewed
 tier: core
+updated: 2026-07-21
 ---
 
 # FP8 浮点精度格式
@@ -128,4 +129,24 @@ FP8 两种变体的位分配
 - [[概念/deepgemm]] — DeepGEMM FP8 算子库
 - [[概念/model-formats]] — 模型格式
 - [[概念/mixed-precision]] — 混合精度训练
+- [[概念/smoothquant]] — SmoothQuant INT8 量化
 - [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+
+---
+
+## 2026 FP8 生态
+
+| 特性 | 说明 | 状态 |
+|------|------|------|
+| **Hopper 原生** | H100/H200 Tensor Core 支持 | GA |
+| **Transformer Engine** | NVIDIA 自动混合精度 | GA |
+| **DeepSpeed FP8** | 训练框架支持 | GA |
+| **vLLM FP8** | 推理引擎支持 | GA |
+
+## 生产最佳实践
+
+1. **格式选择**：前向用 E4M3，反向用 E5M2
+2. **缩放策略**：使用动态缩放（per-tensor/per-channel）
+3. **精度验证**：FP8 训练后验证下游任务精度损失 <1%
+4. **与 BF16 对比**：精度敏感场景优先 BF16，吞吐敏感用 FP8
+5. **硬件要求**：FP8 需要 Hopper 架构（H100/H200）

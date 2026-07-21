@@ -20,6 +20,7 @@ provenance:
 base_confidence: 0.82
 lifecycle: reviewed
 lifecycle_changed: 2026-06-23
+updated: 2026-07-21
 tier: core
 created: 2026-06-23
 updated: 2026-06-23
@@ -98,5 +99,25 @@ Level 4: Graph / Structured RAG（图结构 RAG）
 - [[概念/agentic-rag|Agentic RAG]] — Level 3 详解
 - [[概念/long-context-vs-rag|长上下文 vs RAG]] — 选型对比
 - [[概念/vector-database|向量数据库]] — RAG 存储基础
+- [[概念/reranker|Reranker]] — 重排序模型
 - [[RAG系统/README|RAG 系统]] — 章节主页
 - [[概念/rag-production-architecture|RAG 生产架构]] — 从模式到生产落地的工程体系
+
+---
+
+## 2026 RAG 模式选型指南
+
+| 模式 | 适用场景 | 复杂度 | 延迟 | 2026 代表实现 |
+|------|---------|--------|------|----------------|
+| **Naive RAG** | 简单 FAQ、知识库 | 低 | <1s | LangChain 基础链 |
+| **Modular RAG** | 企业搜索、客服 | 中 | 1-3s | LlamaIndex Query Engine |
+| **Agentic RAG** | 复杂推理、多步任务 | 高 | 3-10s | LangGraph/CrewAI |
+| **Graph RAG** | 关系推理、知识图谱 | 高 | 2-5s | Microsoft GraphRAG |
+
+## 生产最佳实践
+
+1. **渐进式升级**：从 Naive RAG 开始，根据效果逐步引入 Rerank/Query Rewrite/Agentic
+2. **模式组合**：生产系统常混合多种模式，如 Modular + Graph RAG
+3. **评估先行**：建立评估基准（RAGAS/TruLens），量化每次升级的收益
+4. **成本控制**：Agentic RAG Token 消耗高，设置迭代上限和成本预算
+5. **延迟预算**：根据用户体验要求设定延迟 SLA，反推可选模式

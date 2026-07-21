@@ -28,7 +28,7 @@ summary: 大模型预训练是在大规模无标注文本上进行自监督学�
 lifecycle: reviewed
 tier: core
 created: 2026-06-25
-updated: 2026-06-25
+updated: 2026-07-21
 sources: []
 ---
 
@@ -162,3 +162,24 @@ L = - sum_t log P(t_t | t_1, t_2, ..., t_{t-1}; θ)
 - [[概念/distributed-training|分布式训练]]
 - [[概念/mixed-precision|混合精度训练]]
 - [[概念/transformer-architecture|Transformer 架构]]
+- [[概念/model-training|模型训练]]
+
+---
+
+## 2026 预训练技术栈
+
+| 层次 | 技术 | 说明 |
+|------|------|------|
+| **数据** | 高质量语料 + 去重 + 过滤 | 数据质量决定上限 |
+| **并行** | FSDP + TP + PP | 主流分布式方案 |
+| **精度** | BF16 / FP8 | 默认训练精度 |
+| **优化** | FlashAttention + 梯度检查点 | 显存与速度优化 |
+| **评估** | PPL + 下游任务 | 多维度评估 |
+
+## 生产最佳实践
+
+1. **数据质量**：高质量数据 > 数据数量，严格清洗去重
+2. **学习率调度**：使用 cosine 调度 + warmup
+3. **监控指标**：关注 loss 曲线、PPL、MFU、显存峰值
+4. **Checkpoint**：高频保存，支持断点续训
+5. **评估体系**：定期在下游任务上评估，避免过拟合

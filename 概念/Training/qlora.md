@@ -19,6 +19,7 @@ provenance:
 base_confidence: 0.85
 lifecycle: reviewed
 tier: core
+updated: 2026-07-21
 ---
 
 # QLoRA 量化 LoRA 微调
@@ -109,4 +110,24 @@ model.print_trainable_parameters()
 - [[概念/llm-quantization]] — LLM 量化
 - [[概念/swift]] — SWIFT 微调框架
 - [[概念/fp8]] — FP8 精度格式
+- [[概念/nf4]] — NF4 量化格式
 - [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+
+---
+
+## 2026 QLoRA 生态
+
+| 特性 | 说明 | 状态 |
+|------|------|------|
+| **bitsandbytes** | 4-bit/8-bit 量化后端 | GA |
+| **GPTQ-LoRA** | GPTQ 量化 + LoRA | GA |
+| **AWQ-LoRA** | AWQ 量化 + LoRA | GA |
+| **多 GPU QLoRA** | 分布式 QLoRA 训练 | GA |
+
+## 生产最佳实践
+
+1. **量化格式**：NF4 优于 FP4，双重量化进一步省显存
+2. **rank 选择**：从 16 开始，复杂任务可增至 64/128
+3. **目标模块**：优先 q_proj/v_proj，效果不足时扩展至所有线性层
+4. **学习率**：QLoRA 学习率通常比全量微调高 10x（2e-4）
+5. **显存估算**：65B 模型 QLoRA 约需 48GB，70B 约需 80GB

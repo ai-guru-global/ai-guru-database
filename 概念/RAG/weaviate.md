@@ -24,7 +24,7 @@ base_confidence: 0.85
 lifecycle: reviewed
 tier: core
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-07-21
 aliases:
   - Weaviate
 
@@ -99,3 +99,23 @@ aliases:
 - [[概念/milvus]] — Milvus
 - [[概念/qdrant]] — Qdrant
 - [[概念/rag-production-architecture|RAG 生产架构]] — 向量库在生产 RAG 管线中的定位
+
+---
+
+## 2026 Weaviate 生态
+
+| 特性 | 说明 | 状态 |
+|------|------|------|
+| **多模态搜索** | 图像/音频/视频向量化+检索 | GA |
+| **生成式搜索** | 内置 RAG 生成模块 | GA |
+| **混合搜索** | BM25 + 向量融合 | GA |
+| **多租户** | 原生多租户隔离 | GA |
+| **Weaviate Cloud** | 托管服务、Serverless | GA |
+
+## 生产最佳实践
+
+1. **模块化配置**：仅启用需要的模块，减少资源开销
+2. **Schema 设计**：合理定义 Class/Property，避免过度嵌套
+3. **批量导入**：使用 batch API 提升写入吞吐 10x+
+4. **副本策略**：生产环境 replication factor ≥ 2
+5. **GraphQL 优化**：避免深层嵌套查询，使用 nearVector 替代复杂过滤

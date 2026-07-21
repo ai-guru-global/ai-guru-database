@@ -29,7 +29,7 @@ provenance:
   ambiguous: 0.05
 base_confidence: 0.85
 created: 2026-06-24
-updated: 2026-06-24
+updated: 2026-07-21
 ---
 
 # AI Agent 框架总览
@@ -115,6 +115,14 @@ updated: 2026-06-24
 - **可视化**：LangGraph Studio / AutoGen Studio / CrewAI Studio
 - **Harness 化**：从单 Agent Loop 演进到完整的执行治理层
 - **LLM-native**：框架本身逐步被模型能力内化（如 Claude Computer Use）
+
+## 生产最佳实践
+
+1. **从简单开始**：先用单 Agent + 少量工具验证，再扩展多 Agent
+2. **框架不是目的**：选择框架基于场景复杂度，而非流行度
+3. **MCP 标准化工具接入**：2026 年工具层应走 MCP 协议
+4. **可观测性必备**：生产环境必须接入 LangSmith/AgentOps/Langfuse
+5. **护栏不可省**：无论框架多强，输入/输出护栏是确定性安全边界
 
 ## Related
 

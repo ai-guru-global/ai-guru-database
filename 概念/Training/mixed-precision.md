@@ -23,6 +23,7 @@ base_confidence: 0.90
 lifecycle: reviewed
 tier: core
 created: 2026-06-04
+updated: 2026-07-21
 updated: 2026-06-04
 aliases:
   - "Mixed Precision"
@@ -161,5 +162,26 @@ AMP 训练流程:
 - [[概念/ai-hardware]] — AI 硬件（GPU 精度支持）
 - [[概念/distributed-parallelism]] — 分布式并行（训练加速策略）
 - [[概念/kv-cache]] — KV Cache（推理中的精度选择）
+- [[概念/fp8]] — FP8 精度格式
 - [[模型训练/Optimization/Mixed_Precision_Training]] — 混合精度训练详解
 - [[架构基建/AI_Stack_Deep_Dive]] — AI Stack
+
+---
+
+## 2026 精度格式选型
+
+| 格式 | 显存 | 速度 | 精度 | 适用场景 |
+|------|------|------|------|----------|
+| **FP32** | 最高 | 最慢 | 最高 | 主权重、优化器 |
+| **BF16** | 中 | 快 | 高 | 默认训练精度 |
+| **FP16** | 中 | 快 | 中 | 旧 GPU、推理 |
+| **FP8** | 低 | 最快 | 中 | H100 训练/推理 |
+| **INT8/INT4** | 最低 | 快 | 低 | 推理量化 |
+
+## 生产最佳实践
+
+1. **训练默认**：BF16 训练 + FP32 主权重
+2. **H100 优化**：启用 FP8 训练提升吞吐
+3. **损失缩放**：FP16 训练必须启用动态损失缩放
+4. **精度验证**：混合精度后验证下游任务精度
+5. **硬件匹配**：根据 GPU 架构选择支持的精度格式

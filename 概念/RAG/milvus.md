@@ -24,7 +24,7 @@ base_confidence: 0.88
 lifecycle: reviewed
 tier: core
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-07-21
 aliases:
   - Milvus
 
@@ -112,3 +112,24 @@ Milvus Cluster
 - [[概念/qdrant]] — Qdrant
 - [[概念/weaviate]] — Weaviate
 - [[概念/chroma]] — Chroma
+- [[概念/rag-production-architecture|RAG 生产架构]] — 向量库选型指南
+
+---
+
+## 2026 Milvus 生态
+
+| 特性 | 说明 | 状态 |
+|------|------|------|
+| **GPU 索引** | CAGRA/GPU-IVF 加速索引构建 | GA |
+| **混合搜索** | 向量 + 标量 + 全文检索融合 | GA |
+| **多租户** | Partition Key 原生多租户隔离 | GA |
+| **Milvus Lite** | 嵌入式轻量版，本地开发 | GA |
+| **Zilliz Cloud** | 托管服务、Serverless | GA |
+
+## 生产最佳实践
+
+1. **索引选择**：十亿级用 IVF_PQ，亿级用 HNSW，千万级用 FLAT
+2. **分片策略**：按业务维度分 Collection，避免单 Collection 过大
+3. **副本配置**：生产环境 replica_number ≥ 2，确保高可用
+4. **内存规划**：HNSW 索引内存 ≈ 向量数 × 维度 × 4B × 1.5
+5. **监控指标**：关注 QPS、p99 延迟、内存使用率、Compaction 队列

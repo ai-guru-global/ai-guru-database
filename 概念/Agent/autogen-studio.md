@@ -19,6 +19,8 @@ provenance:
 base_confidence: 0.80
 lifecycle: reviewed
 tier: supporting
+created: 2026-06-26
+updated: 2026-07-21
 ---
 
 # AutoGen Studio
@@ -95,6 +97,24 @@ autogenstudio ui --port 8080
 - **教育**: 学习 AutoGen 和多 Agent 模式
 - **调试**: 可视化调试 Agent 行为
 - **演示**: 向非技术人员展示 Agent 能力
+
+## 2026 年生态现状
+
+| 方面 | 状态 |
+|------|------|
+| **当前版本** | AutoGen 0.4+ / Studio 2.x |
+| **架构重构** | AutoGen 0.4 完全重写（事件驱动、异步） |
+| **与 LangGraph 对比** | AutoGen 偏多 Agent 对话，LangGraph 偏图编排 |
+| **MCP 支持** | 通过 MCP 接入外部工具 |
+| **社区** | GitHub 40k+ stars，Microsoft 维护 |
+
+## 生产最佳实践
+
+1. **原型用 Studio，生产用代码**：Studio 适合探索，生产应用 AutoGen SDK
+2. **工具沙箱化**：代码执行工具必须在 Docker 沙箱中运行
+3. **限制最大轮次**：多 Agent 对话设置 max_round 防止无限循环
+4. **成本监控**：多 Agent 场景 LLM 调用量大，必须监控 Token 消耗
+5. **与 AgentOps 集成**：生产环境接入可观测性平台
 
 ## 参考资源
 

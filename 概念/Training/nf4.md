@@ -18,6 +18,7 @@ sources:
 summary: "NF4（4-bit NormalFloat）是 bitsandbytes 库提出的 4-bit 数据类型，针对正态分布权重做了优化设计；QLoRA 用 NF4 实现单卡 24GB 量化微调 65B 模型。"
 lifecycle: reviewed
 tier: core
+updated: 2026-07-21
 provenance:
   extracted: 0.85
   inferred: 0.10
@@ -141,4 +142,24 @@ QLoRA = NF4 量化 + 双重量化 + 分页优化器
 - [[概念/gptq]] — GPTQ（学术首选）
 - [[概念/quantization]] — 量化总览
 - [[概念/lora-peft]] — LoRA / PEFT
+- [[概念/qlora]] — QLoRA 量化微调
 - [[概念/model-compression]] — 模型压缩
+
+---
+
+## 2026 NF4 生态
+
+| 特性 | 说明 | 状态 |
+|------|------|------|
+| **bitsandbytes** | 参考实现 | GA |
+| **QLoRA 集成** | 单卡微调 65B | GA |
+| **Unsloth 优化** | 2-5x 加速 | GA |
+| **双重量化** | 进一步省显存 | GA |
+
+## 生产最佳实践
+
+1. **与 FP4 对比**：NF4 精度优于 FP4，优先选择
+2. **双重量化**：启用双重量化进一步降低显存
+3. **适用场景**：NF4 主要用于训练，推理用 AWQ/GPTQ
+4. **显存估算**：70B NF4 约需 35GB 显存
+5. **框架支持**：使用 bitsandbytes + PEFT 组合

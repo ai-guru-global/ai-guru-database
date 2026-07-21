@@ -16,11 +16,11 @@ provenance:
   inferred: 0.10
   ambiguous: 0.05
 base_confidence: 0.78
-lifecycle: draft
+lifecycle: reviewed
 lifecycle_changed: 2026-05-31
 tier: core
 created: 2026-05-31T00:00:00Z
-updated: 2026-05-31T00:00:00Z
+updated: 2026-07-21
 aliases:
   - "Llm Architectures"
   - "llm architectures"
@@ -106,15 +106,12 @@ MHA每头独立KV（精度高但内存大），MQA所有头共享一组KV（省�
 
 优化技巧：梯度检查点（激活值降5-10×）、ZeRO（跨GPU分割状态）、8-bit Adam。
 
-## 关联主题
+## 延伸阅读
 
-- Transformer架构：LLM的底层架构
-- 微调技术：LoRA/QLoRA/rlhf对齐方法
-- 推理模型：LLM从"直觉型"到"思考型"的进化
-
-## Related
-
-- [[大模型/Fine_tuning_Techniques/PEFT_2026]] — PEFT 2026 (参数高效微调) (共享: bert, gpt, llm, nlp)
-- [[大模型/Fine_tuning_Techniques/README]] — 微调技术 (Fine-tuning Techniques) (共享: bert, gpt, llm, nlp)
-- [[大模型/LLM_Architectures/LLM-Basics-in-nutshell]] — 大语言模型基础速成指南 (共享: bert, gpt, llm, nlp)
-- [[大模型/Multimodal_Models/Multimodal_Architectures_2026]] — 多模态模型架构 2026：从 GPT-4V 到原生多模态 AGI (共享: bert, gpt, llm, nlp)
+- [[概念/LLM/transformer-architecture-plain|Transformer 大白话]]
+- [[概念/LLM/attention-variants|注意力变体]]
+- [[概念/LLM/grouped-query-attention|GQA]]
+- [[概念/LLM/mamba|Mamba (SSM)]]
+- [[概念/LLM/foundation-model|基础模型]]
+- [[大模型/LLM_Architectures/LLM-Basics-in-nutshell|大语言模型基础速成]]
+- [[大模型/Multimodal_Models/Multimodal_Architectures_2026|多模态架构 2026]]

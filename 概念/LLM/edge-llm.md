@@ -1,81 +1,139 @@
 ---
 title: "端侧 LLM (Edge LLM)"
 category: -concepts
-tags: ["nlp", "edge-llm", "small-language-model", "quantization", "on-device", "llama-cpp"]
+tags: ["nlp", "edge-llm", "small-language-model", "quantization", "on-device", "llama-cpp", "mlx", "npu"]
 relationships:
-  - target: "概念/llm-architectures"
+  - target: "概念/LLM/llm-architectures"
     type: builds_on
-  - target: "概念/llm-infrastructure"
+  - target: "概念/Inference/quantization"
+    type: uses
+  - target: "概念/Inference/model-serving"
     type: related_to
 sources:
   - 大模型/Edge_LLM
-summary: "端侧LLM通过高效小模型设计(Phi/Gemma/Qwen)、量化压缩(GPTQ/AWQ/GGUF)和端侧推理引擎(llama.cpp/MLC-LLM)实现手机/PC/嵌入式上的离线LLM推理。"
+  - "https://github.com/ggerganov/llama.cpp"
+summary: "端侧 LLM 通过高效小模型设计 (Phi/Gemma/Qwen)、量化压缩 (GGUF Q4_K_M) 和端侧推理引擎 (llama.cpp/MLC-LLM/Apple MLX) 实现手机/PC/嵌入式上的离线 LLM 推理。2026 年 NPU 加速和 3B 以下模型质量提升使端侧 AI 助手成为现实。"
 provenance:
-  extracted: 0.45
-  inferred: 0.45
+  extracted: 0.50
+  inferred: 0.40
   ambiguous: 0.10
 base_confidence: 0.87
 lifecycle: reviewed
 tier: core
 created: 2026-06-04
-updated: 2026-06-04
+updated: 2026-07-21
 aliases:
   - "Edge Llm"
   - "edge llm"
+  - "端侧大模型"
+  - "On-device LLM"
 
 ---
 # 端侧 LLM (Edge LLM)
 
 > 让 LLM 跑在手机/PC/嵌入式设备上——离线可用、隐私安全、低延迟。
 
----
+## 核心要点
 
-## 1. 定义
+- **离线推理**：无需网络，隐私数据不出设备
+- **低延迟**：无网络往返，首 token < 100ms
+- **3B 以下模型质量飞跃**：Phi-3-mini (3.8B) 超越 Mistral 7B，小模型不再“笨”
+- **NPU 加速时代**：2025+ 手机/PC 内置 NPU，端侧推理进入实用化
 
-**端侧 LLM**指在边缘设备（手机、PC、IoT）上本地运行的语言模型，通过高效模型设计、量化压缩和专用推理引擎实现。
+## 高效小模型 (2026)
 
----
+| 模型 | 参数量 | 亮点 | 端侧适用性 |
+|------|:------:|------|----------|
+| **Phi-3.5-mini** | 3.8B | 超越 Mistral 7B，教科书数据 | ★★★★★ |
+| **Gemma 2 2B** | 2.6B | 2B 级 SOTA | ★★★★★ |
+| **Qwen2.5-1.5B** | 1.5B | 中文最佳小模型 | ★★★★☆ |
+| **Llama 3.2 1B** | 1.2B | Meta 官方端侧 | ★★★★☆ |
+| **SmolLM2-135M** | 135M | 超轻量，IoT | ★★★☆☆ |
+| **Apple Foundation** | 3B | Apple Intelligence 专用 | ★★★★★ |
 
-## 2. 高效小模型
+## 量化方法
 
-| 模型 | 参数量 | 亮点 |
-|------|--------|------|
-| **Phi-3-mini** | 3.8B | 超越 Mistral 7B，教科书数据训练 |
-| **Gemma 2 2B** | 2.6B | 2B 级别 SOTA |
-| **Qwen2-0.5B** | 0.5B | 最小可用中文 LLM |
-| **SmolLM-135M** | 135M | 超轻量 |
+| 方法 | 位数 | 精度损失 | 推荐场景 | 模型大小 (3B) |
+|------|:----:|:------:|----------|:---------:|
+| **GGUF Q4_K_M** | 4-bit | 低 | **最佳性价比** | ~2 GB |
+| **GGUF Q5_K_M** | 5-bit | 最低 | 追求质量 | ~2.4 GB |
+| **GGUF Q8_0** | 8-bit | 极小 | 接近 FP16 | ~3.5 GB |
+| **AWQ** | 4-bit | 最低 | GPU 推理 | ~1.8 GB |
+| **GPTQ** | 4-bit | 低 | GPU 推理 | ~1.8 GB |
+| **INT4 (NPU)** | 4-bit | 低 | NPU 加速 | ~1.5 GB |
 
----
+## 推理引擎
 
-## 3. 量化方法
+| 引擎 | 平台 | 特色 | 硬件加速 |
+|------|------|------|----------|
+| **llama.cpp** | 全平台 | 最广泛，GGUF 格式 | CPU/GPU/Metal/CUDA |
+| **MLC-LLM** | iOS/Android/Web | 跨平台，TVM 编译 | GPU/NPU |
+| **Apple MLX** | macOS/iOS | Apple Silicon 原生 | ANE/GPU |
+| **ONNX Runtime** | Windows/Linux | NPU 加速 | Intel/Qualcomm NPU |
+| **MediaPipe** | Android/iOS | Google 端侧 AI | GPU/NNAPI |
+| **Ollama** | macOS/Linux | 一键运行 | CPU/GPU |
 
-| 方法 | 位数 | 精度损失 | 推荐场景 |
-|------|------|----------|----------|
-| **AWQ** | 4-bit | 最低 | GPU 推理 |
-| **GPTQ** | 4-bit | 低 | GPU 推理 |
-| **GGUF Q4_K_M** | 4-bit | 低 | **最佳性价比** |
-| **GGUF Q5_K_M** | 5-bit | 最低 | 追求质量 |
+## 部署示例
 
----
+### llama.cpp (全平台)
 
-## 4. 推理引擎
+```bash
+# 下载 GGUF 量化模型
+huggingface-cli download Qwen/Qwen2.5-1.5B-Instruct-GGUF \
+    qwen2.5-1.5b-instruct-q4_k_m.gguf
 
-| 引擎 | 平台 | 特色 |
-|------|------|------|
-| **llama.cpp** | 全平台 | 最广泛，GGUF 格式 |
-| **MLC-LLM** | iOS/Android/Web | 跨平台 |
-| **Apple MLX** | macOS/iOS | Apple Silicon 原生 |
-| **ONNX Runtime** | Windows/Linux | NPU 加速 |
+# CPU 推理
+./llama-cli -m qwen2.5-1.5b-instruct-q4_k_m.gguf \
+    -p "请解释量子计算" -n 256 --temp 0.7
 
----
+# Metal GPU 加速 (macOS)
+./llama-cli -m model.gguf -ngl 99 -p "Hello" -n 128
+```
+
+### Apple MLX (macOS/iOS)
+
+```python
+import mlx.core as mx
+from mlx_lm import load, generate
+
+model, tokenizer = load("mlx-community/Qwen2.5-1.5B-Instruct-4bit")
+response = generate(model, tokenizer, prompt="解释机器学习", max_tokens=256)
+```
+
+## 端侧 vs 云端对比
+
+| 维度 | 端侧 LLM | 云端 LLM |
+|------|----------|----------|
+| 隐私 | **数据不出设备** | 数据上传服务器 |
+| 延迟 | **< 100ms 首 token** | 200-2000ms |
+| 离线 | **完全离线** | 需网络 |
+| 模型质量 | 3B 以下 | 70B+ |
+| 成本 | 一次性硬件 | 持续 API 费用 |
+| 更新 | 手动下载 | 自动 |
+
+## 2026 趋势
+
+| 趋势 | 说明 |
+|------|------|
+| **NPU 标配** | 骁龙 8 Gen4、A18、Intel Lunar Lake 均内置 40+ TOPS NPU |
+| **3B 模型质量飞跃** | Phi-3.5/Gemma 2 在任务上接近 7B 水平 |
+| **混合推理** | 端侧处理简单任务，复杂任务上云 |
+| **Apple Intelligence** | iOS 18+ 系统级端侧 AI 集成 |
+| **多模态端侧** | 图片理解、语音识别端侧化 |
+
+## 生产最佳实践
+
+1. **量化选择 Q4_K_M**：最佳性价比，质量损失可接受
+2. **优先 NPU 加速**：比纯 CPU 快 3-5×，比 GPU 省电
+3. **模型选择 1.5-3.8B**：小于 1B 质量不足，大于 4B 端侧资源紧张
+4. **混合架构**：端侧处理意图识别/简单问答，复杂任务转发云端
+5. **预热模型**：应用启动时加载模型到内存，避免首次调用延迟
 
 ## Related
 
 - [[大模型/Edge_LLM/README]] — 端侧 LLM 深度解析
-- [[概念/llm-architectures]] — LLM 架构
-- [[概念/llm-infrastructure]] — LLM 基础设施
-
-## See Also (深度专题)
-
-- [[../../大模型/Edge_LLM/Edge_LLM_Deep_Dive|端侧 LLM 深度解析]] — 量化/蒸馏/蒸馏/架构优化的端侧部署技术
-- [[../../大模型/LLM_Inference/LLM_Inference_Deep_Dive|LLM 推理深度解析]] — CPU/GPU/NPU 推理引擎的优化策略
+- [[概念/LLM/llm-architectures]] — LLM 架构
+- [[概念/Inference/quantization]] — 量化
+- [[概念/Inference/model-serving]] — 模型服务
+- [[大模型/Edge_LLM/Edge_LLM_Deep_Dive|端侧 LLM 深度解析]]
+- [[大模型/LLM_Inference/LLM_Inference_Deep_Dive|LLM 推理深度解析]]

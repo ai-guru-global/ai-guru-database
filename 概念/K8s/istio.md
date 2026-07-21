@@ -4,8 +4,9 @@ category: -concepts
 tags: ["kubernetes", "k8s", "service-mesh", "microservices", "traffic-management", "cloud-native", "alibaba-cloud"]
 summary: "Istio 是目前最流行的开源服务网格之一，通过 Sidecar Proxy 为微服务提供流量管理、安全通信和可观测性，无需修改应用代码。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: archived
+lifecycle: reviewed
 aliases:
   - "Istio Service Mesh"
 relationships:
@@ -53,3 +54,21 @@ sources: []
 - [[概念/envoy|Envoy]] — 数据面代理
 - [[概念/service|Service]] — K8s 服务发现
 - [[概念/kubernetes|Kubernetes]] — 容器编排
+- [[概念/service-mesh|Service Mesh]] — 服务网格概念
+
+---
+
+## 2026 Istio 生态
+
+| 特性 | 说明 | 状态 |
+|------|------|------|
+| **Ambient Mesh** | 无 Sidecar 模式 | GA |
+| **多集群** | 跨集群流量管理 | GA |
+| **Wasm 扩展** | 自定义过滤器 | GA |
+
+## 生产最佳实践
+
+1. **Sidecar 资源**：设置合理的 CPU/内存请求和限制
+2. **mTLS 策略**：生产环境启用严格 mTLS
+3. **流量管理**：使用 VirtualService 实现金丝雀发布
+4. **可观测性**：启用指标、日志、追踪三位一体

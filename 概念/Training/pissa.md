@@ -19,6 +19,7 @@ provenance:
 base_confidence: 0.78
 lifecycle: reviewed
 tier: supporting
+updated: 2026-07-21
 ---
 
 # PiSSA 奇异值适配
@@ -132,3 +133,28 @@ model = get_peft_model(base_model, config)
 3. **收敛更快**：因为起点更好，同样的训练步数效果更好
 4. **可组合**：可以和 DoRA、LoRA+ 等方法叠加使用
 5. **理论支撑**：主奇异分量保留了权重矩阵最重要的信息，是理论上最优的低秩近似
+
+---
+
+## Related
+
+- [[概念/lora-peft]] — LoRA/PEFT 参数高效微调
+- [[概念/qlora]] — QLoRA 量化微调
+- [[概念/peft]] — PEFT 总览
+- [[概念/rslora]] — rsLoRA 秩稳定 LoRA
+
+## 2026 PiSSA 生态
+
+| 特性 | 说明 | 状态 |
+|------|------|------|
+| **PEFT 集成** | HuggingFace PEFT 原生支持 | GA |
+| **与 DoRA 组合** | PiSSA + DoRA 叠加 | 实验性 |
+| **多框架** | LLaMA-Factory/SWIFT 支持 | GA |
+
+## 生产最佳实践
+
+1. **rank 选择**：从 16 开始，复杂任务可增至 64
+2. **SVD 开销**：初始化 SVD 仅需几分钟，可忽略
+3. **与 LoRA 对比**：相同 rank 下 PiSSA 收敛更快
+4. **组合使用**：可与 LoRA+、DoRA 等方法叠加
+5. **适用场景**：追求更快收敛、更好效果时优先选择

@@ -25,7 +25,7 @@ lifecycle: reviewed
 lifecycle_changed: 2026-06-16
 tier: core
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-07-21
 aliases:
   - "Tool Calling Safety"
   - "tool calling safety"
@@ -89,6 +89,25 @@ aliases:
 - **默认拒绝**：不在白名单里的工具/参数一律拒绝。
 - **不可回滚操作需确认**：删除、转账、发送邮件等必须人工审批。
 - **全程审计**：记录谁、何时、为什么、调用了什么、结果如何。
+
+## 2026 年工具调用安全生态
+
+| 技术/框架 | 功能 | 适用场景 |
+|-----------|------|----------|
+| **MCP 安全策略** | 工具描述 + 权限控制 + 审计 | MCP 生态 |
+| **Nemo Guardrails** | 输入/输出护栏 + 工具调用拦截 | NVIDIA 生态 |
+| **Llama Guard 3** | 工具调用意图检测 | 开源部署 |
+| **E2B Sandbox** | 代码执行沙箱隔离 | 代码工具 |
+| **OpenAI Function Calling** | 严格 Schema + parallel_tool_calls | API 层 |
+| **Anthropic Tool Use** | 权限分级 + human-in-the-loop | Claude 生态 |
+
+## 生产最佳实践
+
+1. **最小权限原则**：每个工具只给最小必要权限，默认拒绝
+2. **不可回滚操作必须人工确认**：删除、转账、发送邮件等
+3. **全程审计**：记录谁、何时、为什么、调用了什么、结果如何
+4. **参数严格校验**：Schema 校验 + 类型检查 + 范围检查，拒绝注入
+5. **熔断与限流**：异常调用自动停止，防止无限循环
 
 ## 开放问题
 

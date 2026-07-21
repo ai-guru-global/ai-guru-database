@@ -137,11 +137,10 @@ def route_model(prompt, history=None):
 - **与缓存协同**：路由前先查缓存，命中直接返回（无需调用任何模型）
 - **成本即质量指标**：路由效果用"性价比曲线"评估，而非单纯质量
 
-## Related
+## 延伸阅读
 
-- [[概念/model-serving|模型服务]] — 路由的基础设施
-- [[概念/continuous-batching|连续批处理]] — 路由后各模型的批处理
-- [[概念/ab-testing-framework|A/B 测试]] — 路由策略的评估
-- [[运维/Cost_Optimization_AI_Deep_Dive|成本优化]] — 路由是降本核心手段
-- [[部署推理/README|部署与推理]] — 推理架构
-- [[架构基建/AI_Gateway/AI_Gateway_2026|AI Gateway]] — 网关层路由实现
+- [[概念/Inference/model-serving|模型服务]]
+- [[概念/Inference/continuous-batching|连续批处理]]
+- [[概念/Inference/inference-cluster-scheduling|推理集群调度]]
+- [[运维/Cost_Optimization_AI_Deep_Dive|成本优化]]
+- [[架构基建/AI_Gateway/AI_Gateway_2026|AI Gateway]]

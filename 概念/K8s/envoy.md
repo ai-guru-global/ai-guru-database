@@ -4,8 +4,9 @@ category: -concepts
 tags: ["kubernetes", "k8s", "service-mesh", "proxy", "load-balancer", "cloud-native", "alibaba-cloud"]
 summary: "Envoy 是 Lyft 开源的高性能边缘和服务代理，被 Istio、Contour、AWS App Mesh 等服务网格采用为数据面代理。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: archived
+lifecycle: reviewed
 aliases:
   - "Envoy Proxy"
 relationships:
@@ -51,3 +52,21 @@ sources: []
 - [[概念/linkerd|Linkerd]] — 使用自研代理的服务网格
 - [[概念/service-mesh|Service Mesh]] — 服务网格概念
 - [[概念/kubernetes|Kubernetes]] — 容器编排
+- [[概念/ingress|Ingress]] — 入口流量管理
+
+---
+
+## 2026 Envoy 生态
+
+| 特性 | 说明 | 状态 |
+|------|------|------|
+| **xDS API** | 动态配置下发 | GA |
+| **Wasm 扩展** | 自定义过滤器 | GA |
+| **gRPC 原生** | HTTP/2、gRPC 支持 | GA |
+
+## 生产最佳实践
+
+1. **资源限制**：设置 Sidecar CPU/内存限制，避免资源争抢
+2. **配置同步**：监控 xDS 连接状态，确保配置及时同步
+3. **可观测性**：启用 Prometheus 指标、访问日志、追踪
+4. **热重启**：利用热重启能力实现零停机更新

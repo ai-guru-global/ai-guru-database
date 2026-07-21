@@ -31,13 +31,16 @@ lifecycle: draft
 lifecycle_changed: 2026-05-31
 tier: core
 created: 2026-05-31T00:00:00Z
-updated: 2026-05-31T00:00:00Z
+updated: 2026-07-21
 aliases:
   - "Model Serving"
   - "model serving"
+  - "模型服务"
 
 ---
 # 模型服务
+
+> 模型服务框架是连接 AI 模型与业务应用的桥梁。选对引擎比堆 GPU 更重要。
 
 ## 核心要点
 
@@ -83,9 +86,47 @@ SGLang的RadixAttention用Radix Tree缓存和复用KV Cache前缀，对多轮对
 
 ## 开放问题
 
-- vLLM与TensorRT-LLM的性能差距在持续缩小，长期技术选型可能趋向统一
-- 开源推理引擎的MoE支持仍在快速迭代中
-- 多模态模型推理服务（图像+文本+音频混合）的标准化API尚未成熟
+- vLLM 与 TensorRT-LLM 的性能差距在持续缩小，长期技术选型可能趋向统一
+- 开源推理引擎的 MoE 支持仍在快速迭代中
+- 多模态模型推理服务（图像+文本+音频混合）的标准化 API 尚未成熟
+
+## 选型决策指南
+
+```
+场景判断:
+├─ 高并发 API 服务？ → vLLM（默认选择）
+├─ 极低延迟生产？ → TensorRT-LLM
+├─ 结构化输出 (JSON)？ → SGLang
+├─ HuggingFace 生态？ → TGI
+├─ 本地/边缘？ → Ollama / llama.cpp
+└─ 统一打包部署？ → BentoML
+```
+
+## 生产部署架构
+
+```
+Client → API Gateway / Load Balancer
+              ↓
+         Inference Service (vLLM/SGLang/TRT-LLM)
+              ├─ Model Weights (GPU HBM)
+              ├─ KV Cache Manager
+              ├─ Continuous Batcher
+              └─ Tokenizer
+              ↓
+         Monitoring (Prometheus + Grafana)
+              ├─ TTFT / TPOT / QPS
+              ├─ KV Cache Utilization
+              └─ GPU Utilization
+```
+
+## 生产最佳实践
+
+1. **先 vLLM 后优化**: 先用 vLLM 跑通，确认瓶颈后再考虑 TensorRT-LLM
+2. **开启前缀缓存**: 多轮对话/Agent 场景必须启用
+3. **FP8 量化**: H100+ 硬件首选 FP8，几乎无损且吐吐提升 50%
+4. **监控先行**: 部署前必须接入 TTFT/TPOT/KV Cache 监控
+5. **资源预留**: GPU 显存利用率不超过 90%，留余量给抢占
+6. **多副本 + LB**: 生产环境至少 2 副本，配合 Least-Load 负载均衡
 
 ## 来源
 
@@ -95,12 +136,11 @@ SGLang的RadixAttention用Radix Tree缓存和复用KV Cache前缀，对多轮对
 
 ## Related
 
-- [[治理/serving-deployment]] — 模型服务 × 模型部署 (共享: serving, sglang, tensorrt, vllm)
-- [[部署推理/Deployment_Inference]] — 模型部署与推理加速 (Deployment & Inference) (共享: serving, vllm)
-- [[部署推理/Deployment_Inference_2026]] — 部署推理 2026 趋势 (共享: serving, vllm)
-- [[部署推理/Deployment_Inference_for_dummy]] — 模型部署与推理加速 - 小白版 (共享: serving, vllm)
-- [[架构基建/Alibaba_Cloud_AI_Stack_Deep_Dive|阿里云 AI Stack]] — 专有云容器化推理服务部署
-- [[概念/sglang]] — SGLang
-- [[概念/tensorrt-llm]] — TensorRT-LLM
-- [[概念/dynamic-batch-scheduling]] — 动态批调度
-- [[概念/gguf]] — GGUF
+- [[概念/Inference/sglang|SGLang]]
+- [[概念/Inference/tensorrt-llm|TensorRT-LLM]]
+- [[概念/Inference/request-scheduling|请求调度]]
+- [[概念/Inference/inference-autoscaling|推理扩缩容]]
+- [[概念/Inference/prefix-caching|前缀缓存]]
+- [[概念/Inference/gguf|GGUF]]
+- [[部署推理/Inference_Engines/vLLM_Deep_Dive|vLLM 深度解析]]
+- [[架构基建/Alibaba_Cloud_AI_Stack_Deep_Dive|阿里云 AI Stack]]

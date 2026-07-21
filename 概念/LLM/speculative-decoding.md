@@ -16,11 +16,11 @@ provenance:
   inferred: 0.1
   ambiguous: 0.05
 base_confidence: 0.82
-lifecycle: draft
+lifecycle: reviewed
 lifecycle_changed: 2026-06-03
 tier: core
 created: 2026-06-03 00:00:00+00:00
-updated: 2026-06-03 00:00:00+00:00
+updated: 2026-07-21
 aliases:
   - "Speculative Decoding"
   - "speculative decoding"
@@ -82,7 +82,7 @@ DeepSeek-V3 的 MTP 在训练时增加辅助预测头，推理时天然作为 dr
 
 **限制**：DeepSeek 仅暴露单层 MTP 权重，MTP≥3 时质量不保证；算子限制 MTP ≤ 15。
 
-### 性能指标
+## 性能指标
 
 | 指标 | 典型值 |
 |------|--------|
@@ -92,17 +92,30 @@ DeepSeek-V3 的 MTP 在训练时增加辅助预测头，推理时天然作为 dr
 | 精度影响 | 无（统计等价） |
 | 额外显存 | draft model 大小（通常 <1GB） |
 
-## 来源
+## 2026 年推理引擎支持
 
-- Leviathan et al., "Fast Inference from Transformers via Speculative Decoding," ICML 2023
-- DeepSeek-V3 Technical Report, arXiv:2412.19437
+| 引擎 | 支持方法 | 配置示例 |
+|------|---------|----------|
+| **vLLM** | MTP, EAGLE, N-gram, Draft Model | `--speculative_config` |
+| **SGLang** | EAGLE, EAGLE-2 | `--speculative-algorithm EAGLE` |
+| **TRT-LLM** | Draft Model, Medusa | `--speculative_decoding_mode` |
+| **LMDEPLOY** | TurbMind (MTP) | 内置支持 |
 
-## Related
+## 方案选择指南
 
-- [[概念/kv-cache]] — KV Cache（投机解码中的验证步骤也利用 KV Cache）
-- [[概念/model-deployment]] — 模型部署
-- [[部署推理/Caching/Speculative_Decoding_Advanced_2026]] — 投机解码高级技术
+| 场景 | 推荐方案 | 理由 |
+|------|---------|------|
+| DeepSeek-V3/R1 | MTP | 内置，无额外开销 |
+| 通用开源模型 | EAGLE-2 | 接受率高，加速大 |
+| 重复性文本 | N-gram | 零成本，无需训练 |
+| 极致延迟 | EAGLE-2 + 大 Draft Tree | 3-4× 加速 |
+| 快速验证 | Medusa | 无需 draft model |
 
-## See Also (深度专题)
+## 延伸阅读
 
-- [[../../大模型/Sequence_Models/Text_Generation_Decoding_Strategies|文本生成解码策略 (深度专题)]] — 投机解码、Medusa、EAGLE 等加速方法的系统性技术解析
+- [[概念/LLM/eagle|EAGLE 推测解码]]
+- [[概念/LLM/medusa|Medusa]]
+- [[概念/LLM/mtp|Multi-Token Prediction]]
+- [[概念/Inference/kv-cache|KV Cache]]
+- [[部署推理/Caching/Speculative_Decoding_Advanced_2026|投机解码高级技术]]
+- [[大模型/Sequence_Models/Text_Generation_Decoding_Strategies|文本生成解码策略]]

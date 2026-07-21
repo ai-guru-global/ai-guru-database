@@ -3,6 +3,7 @@
 title: "Agent Harness (智能体驭具)"
 tags: [agent-harness, production-engineering, system-architecture, agent-loop, guardrails]
 created: 2026-06-17
+updated: 2026-07-21
 tier: core
 aliases:
   - "Agent Harness"
@@ -75,6 +76,24 @@ Harness 层级改进的效果已被多方验证：
 - [[a2a-protocol]] -- 编排引擎通过 A2A 等协议支持多智能体协作
 - [[prompt-engineering]] -- Harness 包含提示词管理，但远超提示词工程的范围
 
+## 2026 年 Harness 生态
+
+| 框架/产品 | Harness 层级 | 特色 |
+|-----------|--------------|------|
+| **Claude Code** | 完整 Harness | 工具沙箱 + 权限梯度 + 审计 |
+| **OpenAI Codex** | 完整 Harness | 云沙箱 + 多步规划 |
+| **LangGraph Platform** | 编排 + 状态 | 图编排 + 持久化 + 人工审批 |
+| **CrewAI Enterprise** | 编排 + 安全 | 角色 SOP + 护栏 |
+| **Temporal + Agent** | 持久化执行 | 故障恢复 + 长时运行 |
+
+## 生产最佳实践
+
+1. **先定义约束再赋能**：明确 Agent 不能做什么，比定义能做什么更重要
+2. **每步可观测**：OpenTelemetry 贯穿 Agent Loop 每个 Step
+3. **沙箱隔离高风险工具**：代码执行、数据库写入必须隔离
+4. **渐进信任**：新 Agent 从最低权限开始，基于证据逐步提升
+5. **故障假设**：每步都可能失败，预设重试、降级、检查点恢复
+
 ## 深入阅读
 
 - [[智能体/Agent_Harness/Harness_Engineering_Complete_Guide.md]] -- Harness 完整架构与五大设计原则
@@ -82,3 +101,5 @@ Harness 层级改进的效果已被多方验证：
 - [[智能体/Agent_Workflow/AgentOps_Production_Guide.md]] -- Harness 在生产中的故障模式与反模式
 - [[编程/Theory/Claude_Agent_Architecture.md]] -- Claude Code 的 Harness 设计模式
 - [[概念/agent-production-deployment]] -- Agent 生产部署系统工程
+- [[概念/Agent/agentops|AgentOps]] — Agent 可观测性平台
+- [[概念/Agent/agent-framework|Agent 框架总览]] — 主流框架对比

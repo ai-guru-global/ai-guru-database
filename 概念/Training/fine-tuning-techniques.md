@@ -32,7 +32,7 @@ lifecycle: reviewed
 lifecycle_changed: 2026-06-16
 tier: core
 created: 2026-05-31 00:00:00+00:00
-updated: 2026-06-16 00:00:00+00:00
+updated: 2026-07-21
 aliases:
   - "Fine Tuning Techniques"
   - "fine tuning techniques"
@@ -139,4 +139,26 @@ $$\mathcal{L}_{DPO} = -\mathbb{E}\left[\log \sigma\left(\beta \log \frac{\pi_\th
 - [[概念/lora-qlora-sft-rlhf-dpo]] — LoRA / QLoRA / SFT / RLHF / DPO 大白话串讲
 - [[概念/lora-peft]] — LoRA 与参数高效微调
 - [[概念/rlhf]] — 基于人类反馈的强化学习
-- [[治理/training-fine-tuning]] — 模型训练 × 微调技术 (共享: fine-tuning, peft)
+- [[概念/qlora]] — QLoRA 量化微调
+- [[概念/dpo]] — DPO 直接偏好优化
+- [[治理/training-fine-tuning]] — 模型训练 × 微调技术
+
+---
+
+## 2026 微调技术选型
+
+| 方法 | 显存需求 | 适用场景 | 效果 |
+|------|---------|---------|------|
+| **全量微调** | 最高 | 资源充足、追求最佳效果 | ★★★★★ |
+| **LoRA** | 中 | 通用微调 | ★★★★ |
+| **QLoRA** | 低 | 资源受限、大模型 | ★★★★ |
+| **DoRA** | 中 | 追求更好效果 | ★★★★☆ |
+| **DPO/RLHF** | 高 | 对齐人类偏好 | ★★★★★ |
+
+## 生产最佳实践
+
+1. **方法选择**：资源充足用全量/LoRA，受限用 QLoRA
+2. **数据质量**：高质量数据 > 数据数量
+3. **超参调优**：学习率、batch size、epochs 需根据任务调整
+4. **评估体系**：建立任务特定评估基准
+5. **版本管理**：微调模型纳入版本控制，支持回滚

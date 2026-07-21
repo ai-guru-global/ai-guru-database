@@ -4,8 +4,9 @@ category: -concepts
 tags: ["kubernetes", "k8s", "edge", "lightweight", "rancher", "cloud-native", "alibaba-cloud"]
 summary: "K3s 是 Rancher 推出的轻量级 Kubernetes 发行版，针对边缘计算、IoT、CI/CD 和资源受限场景优化，二进制仅约 100MB。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
+lifecycle: reviewed
 aliases:
   - "K3s 轻量 K8s"
   - "Rancher K3s"
@@ -59,3 +60,24 @@ k3s agent --server https://<server-ip>:6443 --token <token>
 
 - [[概念/kubernetes|Kubernetes]] — 标准 K8s
 - [[概念/karmada|Karmada]] — 多集群编排
+- [[概念/containerd|containerd]] — 容器运行时
+- [[概念/volcano|Volcano]] — AI 任务调度
+
+---
+
+## 2026 K3s 生态
+
+| 特性 | 说明 | 状态 |
+|------|------|------|
+| **CNCF 认证** | 通过一致性测试 | GA |
+| **嵌入式 etcd** | 可选 etcd/SQLite/MySQL | GA |
+| **边缘 AI** | 支持 GPU 设备插件 | GA |
+| **K3s + KubeEdge** | 云边协同 | 社区 |
+
+## 生产最佳实践
+
+1. **适用场景**：边缘计算、IoT、开发测试、CI/CD
+2. **存储选型**：生产用 etcd，开发测试用 SQLite
+3. **安全加固**：启用 NetworkPolicy、限制 API Server 访问
+4. **资源监控**：边缘设备资源有限，设置合理的资源限制
+5. **升级策略**：使用 System Upgrade Controller 自动化升级

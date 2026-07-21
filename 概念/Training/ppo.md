@@ -21,6 +21,7 @@ sources:
 summary: "PPO（Proximal Policy Optimization）是 OpenAI 2017 提出的策略梯度算法，通过 clip 机制稳定训练；是 RLHF 时代对齐 LLM 的事实标准算法（DPO / GRPO 等简化方法都源于 PPO 思想）。"
 lifecycle: reviewed
 tier: core
+updated: 2026-07-21
 provenance:
   extracted: 0.90
   inferred: 0.08
@@ -155,3 +156,23 @@ Step 3: PPO 优化 Policy
 - [[概念/grpo]] — GRPO（PPO 改进版，去 Critic）
 - [[概念/reinforcement-learning]] — 强化学习
 - [[概念/orpo]] / [[概念/ipo]] / [[概念/kto]] — 偏好学习变种
+- [[概念/preference-learning]] — 偏好学习总览
+
+---
+
+## 2026 PPO 生态
+
+| 框架 | 特点 | 适用场景 |
+|------|------|----------|
+| **TRL** | HuggingFace 原生 | 通用场景 |
+| **OpenRLHF** | 大规模分布式 | 生产环境 |
+| **DeepSpeed-Chat** | 微软出品 | DeepSpeed 生态 |
+| **Verl** | 字节高性能 | 超大规模 |
+
+## 生产最佳实践
+
+1. **奖励模型**：定期更新奖励模型，避免奖励黑客
+2. **KL 约束**：保持与参考模型的 KL 散度在合理范围
+3. **clip 调优**：从 0.2 开始，根据训练稳定性调整
+4. **与 DPO/GRPO 对比**：资源充足用 PPO，受限用 DPO/GRPO
+5. **监控指标**：关注奖励均值、KL 散度、策略熔

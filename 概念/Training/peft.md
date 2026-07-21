@@ -21,6 +21,7 @@ provenance:
 base_confidence: 0.90
 lifecycle: reviewed
 tier: core
+updated: 2026-07-21
 ---
 
 # PEFT 参数高效微调库
@@ -192,3 +193,31 @@ model = get_peft_model(model, LoraConfig(r=16, lora_alpha=32))
 4. **多适配器**：同一模型可挂载多个适配器，按需切换
 5. **合并部署**：`merge_and_unload()` 将适配器合并回基座模型，推理无额外开销
 6. **生态丰富**：支持 PiSSA、DoRA、rsLoRA 等最新变体
+
+---
+
+## Related
+
+- [[概念/lora-peft]] — LoRA 与参数高效微调
+- [[概念/qlora]] — QLoRA 量化微调
+- [[概念/pissa]] — PiSSA 奇异值适配
+- [[概念/rslora]] — rsLoRA 秩稳定 LoRA
+- [[概念/fine-tuning-techniques]] — 微调技术总览
+
+## 2026 PEFT 生态
+
+| 方法 | 核心机制 | 适用场景 |
+|------|---------|----------|
+| **LoRA** | 低秩分解 | 通用微调 |
+| **QLoRA** | 4-bit + LoRA | 资源受限 |
+| **DoRA** | 权重分解 | 追求更好效果 |
+| **PiSSA** | SVD 初始化 | 更快收敛 |
+| **rsLoRA** | 秩稳定缩放 | 高 rank 场景 |
+
+## 生产最佳实践
+
+1. **方法选择**：通用场景用 LoRA，资源受限用 QLoRA
+2. **rank 调优**：从 16 开始，复杂任务可增至 64/128
+3. **目标模块**：优先 q_proj/v_proj，效果不足时扩展
+4. **合并部署**：生产环境用 merge_and_unload() 合并适配器
+5. **版本管理**：适配器文件纳入版本控制

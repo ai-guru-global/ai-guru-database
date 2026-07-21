@@ -1,23 +1,17 @@
 ---
 title: "梯度下降 (Gradient Descent)"
 category: -concepts
-tags: [deep-learning, optimization, gradient-descent, neural-network, fundamentals, for-dummy]
-sources:
-  - conversation:2026-06-25
-created: 2026-06-25T15:59:34+08:00
-updated: 2026-06-25T15:59:34+08:00
+tags: [deep-learning, optimization, gradient-descent, neural-network, fundamentals]
+created: 2026-06-25
+updated: 2026-07-21
 summary: "通过计算损失函数对参数的梯度，并沿梯度反方向迭代更新参数，从而最小化模型误差的优化算法。"
-provenance:
-  extracted: 0.85
-  inferred: 0.15
-  ambiguous: 0.00
-base_confidence: 0.42
-lifecycle: draft
-lifecycle_changed: 2026-06-25
+lifecycle: reviewed
 tier: supporting
 aliases:
   - "Gradient Descent"
   - "梯度下降"
+sources:
+  - "https://arxiv.org/abs/1412.6980"  # Adam optimizer
 ---
 
 # 梯度下降 (Gradient Descent)
@@ -28,11 +22,9 @@ aliases:
 
 把模型训练想象成下山：
 
-- 你站在一座山上，目标是走到山谷最低点。
-- 每次你环顾四周，找到最陡的下坡方向，朝那个方向迈一小步。
-- 重复这个过程，最终就能到达山谷。
-
-在模型训练中：
+- 你站在一座山上，目标是走到山谷最低点
+- 每次你环顾四周，找到最陡的下坡方向，朝那个方向迈一小步
+- 重复这个过程，最终就能到达山谷
 
 | 爬山比喻 | 训练含义 |
 |---|---|
@@ -44,38 +36,91 @@ aliases:
 
 ## 算法步骤
 
-1. **计算损失**：用当前参数对训练数据做预测，计算预测值与真实值之间的误差。
-2. **求梯度**：计算损失函数对每个参数的偏导数，得到梯度。
-3. **更新参数**：每个参数都沿梯度的反方向移动一小步，步长由学习率控制。
-4. **重复迭代**：直到损失收敛或达到最大迭代次数。
+1. **计算损失**：用当前参数对训练数据做预测，计算误差
+2. **求梯度**：计算损失函数对每个参数的偏导数
+3. **更新参数**：每个参数沿梯度反方向移动一小步
+4. **重复迭代**：直到损失收敛或达到最大迭代次数
 
 参数更新公式：
 
 ```
-新参数 = 旧参数 − 学习率 × 梯度
+θ_new = θ_old − η × ∇L(θ_old)
+
+其中：
+  θ = 模型参数
+  η = 学习率 (learning rate)
+  ∇L = 损失函数的梯度
 ```
 
 ## 关键超参数
 
 | 超参数 | 作用 | 影响 |
 |---|---|---|
-| 学习率 | 控制每次更新的步长 | 太大可能震荡或发散，太小收敛极慢 |
-| 迭代次数 | 训练轮数 | 太少欠拟合，太多可能过拟合或浪费计算 |
-| 批量大小 | 每次计算梯度使用的样本数 | 影响梯度估计的噪声与训练速度 |
+| 学习率 | 控制每次更新的步长 | 太大震荡/发散，太小收敛极慢 |
+| 迭代次数 | 训练轮数 | 太少欠拟合，太多过拟合 |
+| 批量大小 | 每次计算梯度的样本数 | 影响梯度估计的噪声与速度 |
 
 ## 常见变体
 
-- **批量梯度下降（Batch GD）**：每次用全部数据计算梯度，稳定但慢。
-- **随机梯度下降（SGD）**：每次用一个样本，快但噪声大。
-- **小批量梯度下降（Mini-batch GD）**：每次用一小批样本，兼顾速度与稳定性，实际最常用。
-- **带动量的 SGD / Adam / AdamW**：在基础梯度下降上加入动量或自适应学习率，加速收敛并减少震荡。
+| 变体 | 原理 | 特点 |
+|------|------|------|
+| **Batch GD** | 每次用全部数据计算梯度 | 稳定但慢 |
+| **SGD** | 每次用一个样本 | 快但噪声大 |
+| **Mini-batch GD** | 每次用一小批样本 | 兼顾速度与稳定性，最常用 |
+| **SGD + Momentum** | 加入动量项加速 | 减少震荡，加速收敛 |
+| **Adam** | 自适应学习率 + 动量 | 默认选择，大多数场景好用 |
+| **AdamW** | Adam + 解耦权重衰减 | LLM 训练标配 |
+
+### 优化器对比
+
+| 优化器 | 适用场景 | 典型学习率 |
+|--------|----------|------------|
+| SGD + Momentum | CV 任务、精细调优 | 0.01-0.1 |
+| Adam | 通用默认 | 1e-3 到 3e-4 |
+| AdamW | LLM 预训练/微调 | 1e-4 到 5e-5 |
+| LAMB/LARS | 大 batch 分布式训练 | 1e-3 到 1e-2 |
+
+## LLM 训练中的学习率调度
+
+```
+典型 LLM 学习率调度 (Warmup + Cosine Decay):
+
+lr
+│    /\
+│   /  \
+│  /    \
+│ /      \
+│/        \___
+└───────────── steps
+  warmup  cosine decay
+```
+
+```python
+from transformers import get_cosine_schedule_with_warmup
+
+scheduler = get_cosine_schedule_with_warmup(
+    optimizer,
+    num_warmup_steps=1000,      # 预热 1000 步
+    num_training_steps=100000   # 总训练步数
+)
+```
 
 ## 为什么有效
 
 梯度指向损失函数增长最快的方向，因此反方向就是损失下降最快的方向。沿着这个方向不断更新参数，损失就会逐步减小，模型预测能力随之提升。
 
+## 常见问题与解决
+
+| 问题 | 现象 | 解法 |
+|------|------|------|
+| 梯度消失 | 深层网络梯度趋近 0 | ReLU、残差连接、LayerNorm |
+| 梯度爆炸 | 梯度变得极大 | 梯度裁剪 (gradient clipping) |
+| 局部最优 | 陷入非全局最优点 | 动量、随机性、多起点 |
+| 鞍点 | 梯度为 0 但非极值 | Adam 等自适应方法 |
+
 ## 相关
 
-- [[概念/activation-value]] — 神经网络中神经元输出的响应强度
-- [[深度学习/Deep_Learning_For_Beginners]] — 深度学习入门：神经网络、梯度下降与主流架构
-- [[大模型/LLM_Architectures/LLM_Internals_Training]] — 大模型训练内幕：优化器、学习率调度与分布式训练
+- [[概念/Training/gradient-checkpointing|梯度检查点]] — 训练显存优化
+- [[概念/Training/distributed-training|分布式训练]] — 多卡并行训练
+- [[深度学习/Deep_Learning_For_Beginners|深度学习入门]] — 神经网络基础
+- [[大模型/LLM_Architectures/LLM_Internals_Training|大模型训练内幕]] — 优化器与学习率调度

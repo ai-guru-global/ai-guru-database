@@ -23,6 +23,7 @@ sources:
 summary: "DPO（Direct Preference Optimization）是 Rafailov et al. 2023 提出的简化对齐方法，将 PPO 的两阶段（SFT + RM + PPO）合并为单阶段，直接用偏好数据训练，无需训练 Reward Model 和 Critic。"
 lifecycle: reviewed
 tier: core
+updated: 2026-07-21
 provenance:
   extracted: 0.92
   inferred: 0.06
@@ -173,7 +174,28 @@ llamafactory-cli train \
 ## Related
 
 - [[概念/rlhf]] — RLHF 总览
-- [[概念/ppo]] — PPO（DPO 的"父算法"）
+- [[概念/ppo]] — PPO（DPO 的“父算法”）
 - [[概念/orpo]] / [[概念/ipo]] / [[概念/kto]] — DPO 变种
 - [[概念/grpo]] — GRPO（DeepSeek-R1 路线）
+- [[概念/preference-learning]] — 偏好学习总览
+- [[概念/simpo]] — SimPO（无参考模型）
 - [[模型训练/Alignment/TRL_RLHF_DPO_Guide]] — DPO 深度
+
+---
+
+## 2026 DPO 生态
+
+| 特性 | 说明 | 状态 |
+|------|------|------|
+| **TRL 集成** | HuggingFace 原生支持 | GA |
+| **多框架** | LLaMA-Factory/OpenRLHF/Unsloth | GA |
+| **在线 DPO** | 结合在线采样的迭代式 | 研究前沿 |
+| **多模态 DPO** | 视觉-语言模型对齐 | 实验性 |
+
+## 生产最佳实践
+
+1. **数据质量**：偏好对需明确标准，避免模糊标注
+2. **beta 调优**：从 0.1 开始，根据 KL 散度调整
+3. **与 PPO 对比**：简单场景用 DPO，复杂对齐用 PPO
+4. **参考模型**：使用 SFT 后的模型作为参考
+5. **评估指标**：胜率、人类评估、自动指标综合评估

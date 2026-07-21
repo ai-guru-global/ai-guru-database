@@ -4,8 +4,9 @@ category: -concepts
 tags: ["kubernetes", "k8s", "storage", "cloud-native", "alibaba-cloud"]
 summary: "StorageClass 是 Kubernetes 的存储类抽象，管理员用它把云盘、NAS、对象存储等后端抽象为不同性能的存储模板，PVC 通过指定 StorageClass 名实现动态卷供应。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
+lifecycle: reviewed
 aliases:
   - "StorageClass"
   - "SC"
@@ -95,4 +96,24 @@ EOF
 - [[概念/kubernetes|Kubernetes]] — K8s 编排平台
 - [[概念/apsara-stack|飞天企业版 Apsara Stack]] — 阿里云专有云
 - [[概念/containerd|containerd]] — 容器运行时
+- [[概念/storage]] — AI 存储基础设施
 - [[架构基建/Architecture_Overview/AI_Infrastructure_2026]] — AI 基础设施 2026
+
+---
+
+## 2026 AI 场景 StorageClass 实践
+
+| 场景 | 推荐 StorageClass | 关键参数 | 说明 |
+|------|------------------|---------|------|
+| **模型 Checkpoint** | 高性能云盘 | WaitForFirstConsumer | 避免跨 AZ 调度 |
+| **训练数据集** | NAS/CPFS | ReadWriteMany | 多 Pod 共享读取 |
+| **向量库持久化** | ESSD 云盘 | volumeBindingMode | 低延迟随机读写 |
+| **日志/临时数据** | 本地盘 | 高 IOPS | 成本敏感场景 |
+
+## 生产最佳实践
+
+1. **绑定模式**：AI 训练场景必须设置 `WaitForFirstConsumer`，避免 PVC Pending
+2. **回收策略**：生产数据设置 `Retain`，防止误删；临时数据用 `Delete`
+3. **性能分级**：按业务重要性选择不同性能等级的 StorageClass
+4. **容量监控**：配置 PVC 使用率告警，避免磁盘写满导致训练中断
+5. **CSI 插件**：确认 Provisioner 与后端存储池匹配，定期检查 CSI 插件健康状态

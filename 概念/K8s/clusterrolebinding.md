@@ -4,8 +4,9 @@ category: -concepts
 tags: ["kubernetes", "k8s", "rbac", "cloud-native", "alibaba-cloud"]
 summary: "ClusterRoleBinding 将 ClusterRole 的权限绑定到用户、组或 ServiceAccount，使其在整个集群范围内生效，是 Kubernetes RBAC 授权机制的核心组件之一。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
+lifecycle: reviewed
 aliases:
   - "ClusterRoleBinding"
   - "CRB"
@@ -84,4 +85,24 @@ kubectl delete clusterrolebinding read-nodes-binding  # ⚠️ HIGH-RISK — 删
 
 - [[概念/kubernetes]] — Kubernetes 编排
 - [[概念/rbac]] — RBAC 基于角色的访问控制
+- [[概念/clusterrole]] — ClusterRole
+- [[概念/serviceaccount]] — ServiceAccount
 - [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 安全架构
+
+---
+
+## 2026 RBAC 最佳实践
+
+| 场景 | 推荐做法 | 风险等级 |
+|------|----------|----------|
+| 集群监控 | 只读 ClusterRole | 低 |
+| Ingress Controller | 读 Service/Endpoint | 低 |
+| CI/CD | 自定义最小权限 | 中 |
+| cluster-admin | 仅限管理员 | 高 |
+
+## 生产最佳实践
+
+1. **最小权限**：优先用 RoleBinding，必要时才用 ClusterRoleBinding
+2. **定期审计**：检查 cluster-admin 绑定，移除不必要的权限
+3. **专用 ServiceAccount**：避免使用 default ServiceAccount
+4. **权限分离**：开发/测试/生产环境分离授权

@@ -4,8 +4,9 @@ category: -concepts
 tags: ["kubernetes", "k8s", "security", "vulnerability", "container", "scanning", "cloud-native", "alibaba-cloud"]
 summary: "Trivy 是 Aqua Security 开源的轻量级安全扫描器，支持容器镜像、文件系统、Git 仓库、IaC 配置和 K8s 集群的漏洞与错误配置检测。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: archived
+lifecycle: reviewed
 aliases:
   - "镜像漏洞扫描"
   - "容器安全扫描"
@@ -67,3 +68,22 @@ trivy k8s --namespace prod --report all
 - [[概念/kyverno|Kyverno]] — K8s 策略引擎
 - [[概念/falco|Falco]] — 运行时威胁检测
 - [[概念/kubernetes|Kubernetes]] — 容器编排
+- [[概念/opa|OPA]] — 策略引擎
+
+---
+
+## 2026 Trivy 生态
+
+| 特性 | 说明 | 状态 |
+|------|------|------|
+| **Aqua 维护** | CNCF 项目 | GA |
+| **SBOM 生成** | CycloneDX/SPDX | GA |
+| **VM 扫描** | 虚拟机镜像 | GA |
+| **K8s Operator** | 集群内扫描 | GA |
+
+## 生产最佳实践
+
+1. **CI/CD 集成**：在镜像构建后自动扫描，阻断高危漏洞
+2. **定期扫描**：生产集群定期执行 trivy k8s 扫描
+3. **漏洞修复**：关注 CRITICAL/HIGH 级别漏洞，及时升级基础镜像
+4. **与 Harbor 集成**：镜像仓库内置 Trivy 扫描策略

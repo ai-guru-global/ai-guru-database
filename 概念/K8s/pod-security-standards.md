@@ -4,8 +4,9 @@ category: -concepts
 tags: ["kubernetes", "k8s", "security", "pod-security", "psa", "admission", "cloud-native", "alibaba-cloud"]
 summary: "Pod Security Standards 是 Kubernetes 官方定义的 Pod 安全策略集合，分为 Privileged、Baseline、Restricted 三级，用于限制危险容器配置。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
+lifecycle: reviewed
 aliases:
   - "Pod 安全标准"
   - "PSA"
@@ -69,3 +70,21 @@ metadata:
 - [[概念/opa|OPA]] — 通用策略引擎
 - [[概念/pod|Pod]] — Pod 安全上下文
 - [[概念/kubernetes|Kubernetes]] — 容器编排
+- [[概念/network-policy|NetworkPolicy]] — 网络策略
+
+---
+
+## 2026 Pod Security 生态
+
+| 特性 | 说明 | 状态 |
+|------|------|------|
+| **PSA 内置** | K8s 1.25+ 默认启用 | GA |
+| **Restricted** | 生产推荐级别 | GA |
+| **与 Kyverno 互补** | 企业级策略扩展 | GA |
+
+## 生产最佳实践
+
+1. **生产用 Restricted**：生产 Namespace 启用 restricted 级别
+2. **渐进式迁移**：先 audit/warn，再 enforce
+3. **系统组件豁免**：kube-system 用 privileged，业务用 restricted
+4. **与 Kyverno 结合**：PSA 管基础，Kyverno 管企业策略

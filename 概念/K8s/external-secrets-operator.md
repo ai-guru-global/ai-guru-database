@@ -4,8 +4,9 @@ category: -concepts
 tags: ["kubernetes", "k8s", "security", "secrets-management", "vault", "cloud-native", "alibaba-cloud"]
 summary: "External Secrets Operator（ESO）将 Vault、云 KMS、参数仓库等外部 Secrets 自动同步到 Kubernetes Secret，避免在 Git 中泄露敏感数据。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: archived
+lifecycle: reviewed
 aliases:
   - "ESO"
   - "External Secrets"
@@ -82,3 +83,22 @@ spec:
 - [[概念/secret|Secret]] — K8s Secret
 - [[概念/sealed-secrets|Sealed Secrets]] — Git 加密 Secret
 - [[概念/kubernetes|Kubernetes]] — 容器编排
+- [[概念/gitops|GitOps]] — GitOps 实践
+
+---
+
+## 2026 ESO 生态
+
+| 特性 | 说明 | 状态 |
+|------|------|------|
+| **CNCF 孵化** | 社区活跃 | GA |
+| **多 Provider** | Vault/AWS/GCP/阿里云 | GA |
+| **Push Secrets** | 反向同步 | Beta |
+| **Webhook 验证** | 安全增强 | GA |
+
+## 生产最佳实践
+
+1. **权限最小化**：SecretStore 使用最小权限的 ServiceAccount
+2. **刷新间隔**：根据业务需求设置合理的 refreshInterval
+3. **监控告警**：监控 ExternalSecret 同步状态
+4. **与 Sealed Secrets 对比**：需要动态轮换用 ESO，简单场景用 Sealed Secrets

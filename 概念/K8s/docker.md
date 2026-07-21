@@ -4,7 +4,8 @@ category: concepts
 tags: ["docker", "container", "container-runtime", "oci", "devops"]
 summary: "Docker 是业界最广泛使用的容器化平台，通过镜像将应用与依赖打包成标准化、可移植的运行单元，实现一次构建、到处运行。"
 created: 2026-07-02
-updated: 2026-07-02
+updated: 2026-07-21
+lifecycle: reviewed
 aliases:
   - "Docker"
 sources: []
@@ -63,3 +64,22 @@ Docker 的关键组件协同工作，把镜像转化为运行中的容器：
 - [[概念/ci-cd|CI/CD]] — 持续集成与持续交付
 - [[架构基建/Networking/Docker_Containerization_for_AI|Docker Containerization for AI]] — AI 场景下的 Docker 容器化
 - [[架构基建/AI_Stack/AI_Stack_Container_Runtime_Guide|AI Stack Container Runtime Guide]] — AI Stack 容器运行时指南
+
+---
+
+## 2026 Docker 生态
+
+| 特性 | 说明 | 状态 |
+|------|------|------|
+| **BuildKit** | 高性能构建引擎 | GA |
+| **Docker Desktop** | 开发环境集成 | GA |
+| **Docker Scout** | 供应链安全分析 | GA |
+| **AI 镜像优化** | 模型分层缓存 | 社区 |
+
+## 生产最佳实践
+
+1. **多阶段构建**：减小镜像体积，分离构建与运行环境
+2. **基础镜像选择**：使用 distroless/alpine 减小攻击面
+3. **镜像扫描**：集成 Docker Scout/Trivy 进行漏洞扫描
+4. **资源限制**：设置 CPU/内存限制，防止容器资源耗尽
+5. **日志管理**：配置日志驱动，避免磁盘占满

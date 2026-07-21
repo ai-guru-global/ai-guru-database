@@ -20,7 +20,7 @@ provenance:
   ambiguous: 0.05
 base_confidence: 0.85
 created: 2026-06-24
-updated: 2026-06-24
+updated: 2026-07-21
 ---
 
 # CRI（Container Runtime Interface）
@@ -85,4 +85,23 @@ runc / crun (实际容器进程)
 ## Related
 
 - [[概念/containerd]] — containerd（CRI 主流实现）
+- [[概念/oci-runtime]] — OCI 运行时标准
+- [[概念/docker]] — Docker 容器平台
 - [[架构基建/AI_Stack_Container_Runtime_Guide]] — 容器运行时实践
+
+---
+
+## 2026 CRI 生态
+
+| 实现 | 特点 | 适用场景 |
+|------|------|----------|
+| **containerd** | 工业标准、稳定 | 生产环境 |
+| **CRI-O** | 轻量、专为 K8s | OpenShift |
+| **Docker** | 开发友好 | 本地开发 |
+
+## 生产最佳实践
+
+1. **生产用 containerd**：稳定、高性能、CNCF 毕业项目
+2. **GPU 配置**：containerd + nvidia-container-toolkit
+3. **镜像格式**：使用 OCI 标准镜像格式
+4. **运行时监控**：关注容器启动时间、资源使用

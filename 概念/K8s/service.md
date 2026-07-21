@@ -4,8 +4,9 @@ category: -concepts
 tags: ["kubernetes", "k8s", "service", "networking", "cloud-native", "alibaba-cloud"]
 summary: "Service 是 Kubernetes 中为 Pod 提供稳定网络访问入口的抽象层，通过 Label Selector 实现服务发现与四层负载均衡，是 K8s 工作负载对外暴露能力的核心机制。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
+lifecycle: reviewed
 aliases:
   - "K8s Service"
   - "Kubernetes Service"
@@ -84,6 +85,23 @@ kubectl expose deploy web --type=NodePort --port=80 --target-port=8080
 
 - [[概念/kubernetes|Kubernetes]] — K8s 编排平台
 - [[概念/kubectl|kubectl]] — K8s 命令行工具
+- [[概念/ingress|Ingress]] — 七层入口
+- [[概念/network-policy|NetworkPolicy]] — 网络策略
 - [[概念/apsara-stack|阿里云专有云 Apsara Stack]] — 阿里云专有云平台
-- [[概念/cri|CRI]] — 容器运行时接口
-- [[概念/containerd|containerd]] — 容器运行时
+
+---
+
+## 2026 Service 生态
+
+| 特性 | 说明 | 状态 |
+|------|------|------|
+| **EndpointSlice** | 大规模集群优化 | GA |
+| **Gateway API** | 下一代入口 API | GA |
+| **Service Internal Traffic Policy** | 本地流量优先 | GA |
+
+## 生产最佳实践
+
+1. **类型选择**：内部用 ClusterIP，外部用 LoadBalancer/Gateway API
+2. **Headless Service**：StatefulSet 用 Headless Service
+3. **会话保持**：需要会话保持时用 SessionAffinity
+4. **健康检查**：配合 readinessProbe 确保流量只到健康 Pod

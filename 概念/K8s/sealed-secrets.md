@@ -4,8 +4,9 @@ category: -concepts
 tags: ["kubernetes", "k8s", "security", "secrets-management", "gitops", "cloud-native", "alibaba-cloud"]
 summary: "Sealed Secrets 允许将 Kubernetes Secret 加密后安全地存储在 Git 中，由集群内的 Sealed Secrets Controller 解密为原生 Secret。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: archived
+lifecycle: reviewed
 aliases:
   - "Bitnami Sealed Secrets"
   - "Git 加密 Secret"
@@ -67,3 +68,21 @@ kubectl get secret my-secret -n default
 - [[概念/secret|Secret]]
 - [[概念/argocd|ArgoCD]]
 - [[概念/kubernetes|Kubernetes]]
+- [[概念/gitops|GitOps]]
+
+---
+
+## 2026 Sealed Secrets 生态
+
+| 特性 | 说明 | 状态 |
+|------|------|------|
+| **Bitnami 维护** | 社区活跃 | GA |
+| **kubeseal CLI** | 客户端加密 | GA |
+| **多集群支持** | 每集群独立密钥 | GA |
+
+## 生产最佳实践
+
+1. **密钥备份**：定期备份集群私钥，防止数据丢失
+2. **Namespace 匹配**：确保加密时指定正确的 Namespace
+3. **与 ESO 对比**：需要动态轮换用 External Secrets Operator
+4. **密钥轮换**：定期轮换加密密钥，重新加密 Secret

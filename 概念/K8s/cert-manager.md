@@ -4,8 +4,9 @@ category: -concepts
 tags: ["kubernetes", "k8s", "security", "tls", "certificate", "cloud-native", "alibaba-cloud"]
 summary: "cert-manager 是 Kubernetes 上自动化 TLS 证书生命周期管理的 CNCF 项目，支持 ACME、Vault、自签及云厂商私有 CA。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: archived
+lifecycle: reviewed
 aliases:
   - "certmanager"
   - "K8s 证书管理"
@@ -84,3 +85,22 @@ spec:
 - [[概念/ingress|Ingress]] — 七层入口
 - [[概念/vault|Vault]] — 密钥管理
 - [[概念/kubernetes|Kubernetes]] — 容器编排
+- [[概念/istio|Istio]] — 服务网格
+
+---
+
+## 2026 cert-manager 生态
+
+| 特性 | 说明 | 状态 |
+|------|------|------|
+| **CNCF 毕业** | 成熟稳定 | GA |
+| **Gateway API** | 支持 Gateway TLS | GA |
+| **ACME DNS-01** | 通配符证书 | GA |
+| **csi-driver** | 证书注入 CSI | GA |
+
+## 生产最佳实践
+
+1. **ClusterIssuer 复用**：集群级 Issuer 减少重复配置
+2. **自动续期**：确保证书到期前自动续期
+3. **监控告警**：监控 Certificate Ready 状态
+4. **私有 CA**：内网环境对接企业私有 CA

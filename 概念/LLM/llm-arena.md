@@ -101,6 +101,49 @@ aliases:
 4. **结合自动基准**: Arena + MMLU + HumanEval 综合判断
 5. **实际测试**: 用自己的业务 prompt 做小规模测试
 
+## 2026 生态现状
+
+| 平台 | 运营方 | 特点 |
+|------|--------|------|
+| **Chatbot Arena** | LMSYS (UC Berkeley) | 最权威，100万+投票 |
+| **Arena Hard** | LMSYS | 难题子集，区分度更高 |
+| **AlpacaEval** | Stanford | 自动化评估，用 LLM-as-Judge |
+| **MT-Bench** | LMSYS | 多轮对话评估 |
+| **WildBench** | Allen AI | 真实用户查询评估 |
+| **中文 Arena** | 社区 | 中文能力专项评估 |
+
+## Elo 评分机制详解
+
+```python
+# Elo 评分简化计算
+def update_elo(rating_a, rating_b, result, k=32):
+    """
+    result: 1=A胜, 0.5=平局, 0=B胜
+    """
+    expected_a = 1 / (1 + 10 ** ((rating_b - rating_a) / 400))
+    expected_b = 1 - expected_a
+    new_a = rating_a + k * (result - expected_a)
+    new_b = rating_b + k * ((1 - result) - expected_b)
+    return new_a, new_b
+```
+
+## Arena 数据的正确使用方式
+
+| 用途 | 方法 | 注意事项 |
+|------|------|----------|
+| **模型选型** | 看同场景细分榜 | 不要只看总分 |
+| **版本追踪** | 观察新模型上榜趋势 | 初期投票少，排名不稳定 |
+| **能力对比** | 看胜率矩阵 | 注意置信区间 |
+| **商业决策** | 结合成本/延迟/合规 | Arena 不反映价格因素 |
+
+## 生产最佳实践
+
+1. **不要迷信排名**: Arena 反映平均偏好，不代表你的具体场景
+2. **多源交叉验证**: Arena + 自动基准 + 业务测试三者结合
+3. **关注细分**: 代码、数学、中文、多轮各有专项榜
+4. **定期复查**: 模型更新快，每季度重新评估
+5. **考虑成本**: 排名相近时选更便宜/更快的模型
+
 ## 延伸阅读
 
 - [[概念/LLM/llmops|LLMOps]]

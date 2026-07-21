@@ -180,6 +180,23 @@ pip install smolagents
 - [SmolAgents 文档](https://huggingface.co/docs/smolagents)
 - [HuggingFace](https://huggingface.co/)
 
+## 2026 生态与最佳实践
+
+| 类别 | 进展 | 说明 |
+|------|------|------|
+| **多模型支持** | 原生支持 | OpenAI, Anthropic, Gemini, 本地模型 |
+| **MCP 集成** | 工具接入 | 通过 MCP 服务器扩展工具能力 |
+| **Hub 工具共享** | 社区生态 | 从 HuggingFace Hub 加载社区工具 |
+| **多 Agent** | ManagedAgent | 支持 Agent 作为工具被其他 Agent 调用 |
+
+**生产最佳实践**：
+
+1. **CodeAgent 优先**: 代码执行比 JSON 调用更灵活，优先使用 CodeAgent
+2. **沙箱隔离**: 代码执行必须在沙箱中（E2B/Docker）
+3. **工具精简**: 保持工具集小而精，避免过多工具干扰模型
+4. **max_steps 限制**: 设置合理的最大步数（默认 6-10）
+5. **本地模型**: 用本地模型做简单任务，降低成本
+
 ## 相关概念
 
 - [[概念/crewai]] — CrewAI 多 Agent 协作框架

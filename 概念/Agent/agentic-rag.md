@@ -118,12 +118,93 @@ Agent 判断：需要检索吗？
 3. **成本监控**：多轮检索 = 多次 LLM 调用，必须监控 Token
 4. **与长上下文互补**：简单问题直接塞全文，复杂问题用 Agentic RAG
 5. **可解释性**：保留检索决策日志，方便审计和调试
+6. **缓存策略**：重复查询命中缓存，减少重复检索
+7. **降级机制**：多轮失败后降级到传统 RAG 或直接回答
+
+## 代码示例
+
+```python
+from langgraph.graph import StateGraph, END
+from typing import TypedDict, List
+
+class RAGState(TypedDict):
+    question: str
+    documents: List[str]
+    generation: str
+    search_count: int
+    quality_score: float
+
+def should_retrieve(state: RAGState) -> str:
+    """Agent 决策：是否需要检索"""
+    # 简单问题直接回答
+    if is_simple_question(state["question"]):
+        return "generate"
+    return "retrieve"
+
+def evaluate_retrieval(state: RAGState) -> str:
+    """评估检索质量"""
+    score = evaluate_relevance(state["documents"], state["question"])
+    if score > 0.8:
+        return "generate"
+    elif state["search_count"] < 3:
+        return "rewrite"  # 重写查询再检索
+    else:
+        return "generate"  # 达到最大次数，强制生成
+
+def rewrite_query(state: RAGState) -> RAGState:
+    """重写查询"""
+    new_query = llm.invoke(
+        f"基于以下问题生成更好的搜索查询: {state['question']}"
+    )
+    state["question"] = new_query
+    state["search_count"] += 1
+    return state
+
+# 构建图
+workflow = StateGraph(RAGState)
+workflow.add_node("retrieve", retrieve_documents)
+workflow.add_node("generate", generate_answer)
+workflow.add_node("rewrite", rewrite_query)
+
+workflow.set_conditional_entry_point(should_retrieve)
+workflow.add_conditional_edges("retrieve", evaluate_retrieval)
+workflow.add_edge("rewrite", "retrieve")
+workflow.add_edge("generate", END)
+
+app = workflow.compile()
+```
+
+## 评估指标
+
+| 指标 | 说明 | 目标值 |
+|------|------|--------|
+| **答案准确率** | 最终答案的正确性 | >90% |
+| **检索精确率** | 检索文档的相关性 | >80% |
+| **平均迭代次数** | Agent 检索轮数 | <2.5 |
+| **响应延迟** | 端到端时间 | <10s |
+| **成本/查询** | Token + API 费用 | <$0.05 |
+| **引用覆盖率** | 答案有来源支持的比例 | >95% |
 
 ## 开放问题
 
-- 如何在准确率、延迟、成本之间自动权衡。
-- Agentic RAG 的评估标准尚未统一。
-- 与长上下文模型（128K+）的边界：什么情况下直接塞全文比反复检索更好。
+- 如何在准确率、延迟、成本之间自动权衡
+- Agentic RAG 的评估标准尚未统一
+- 与长上下文模型（128K+）的边界：什么情况下直接塞全文比反复检索更好
+- 多模态 Agentic RAG（图片、表格、视频）的检索策略
+- 实时数据源的 Agentic RAG 如何处理数据新鲜度
+
+## 与传统 RAG 对比
+
+| 维度 | 传统 RAG | Agentic RAG |
+|------|----------|-------------|
+| **检索次数** | 固定 1 次 | 动态 0-N 次 |
+| **查询重写** | 无 | 自动重写 |
+| **质量评估** | 无 | 每轮评估 |
+| **多源验证** | 无 | 交叉验证 |
+| **可解释性** | 低 | 高（决策链可见） |
+| **成本** | 低 | 中-高 |
+| **延迟** | 低 | 中-高 |
+| **准确率** | 70-80% | 85-95% |
 
 ## Related
 

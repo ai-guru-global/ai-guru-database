@@ -4,7 +4,7 @@ category: -concepts
 tags: ["kubernetes", "k8s", "observability", "logging", "grafana", "cloud-native", "alibaba-cloud"]
 summary: "Loki 是 Grafana Labs 开源的轻量级日志聚合系统，采用类似 Prometheus 的标签索引模型，专为 Kubernetes 等云原生环境设计。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
 aliases:
   - "Grafana Loki"
@@ -72,3 +72,23 @@ rate({namespace="prod", app="order"} |= "error" [1m])
 - [[概念/fluent-bit|Fluent Bit]] — 日志采集器
 - [[概念/kubernetes|Kubernetes]] — 容器编排
 - [[架构基建/Kubernetes_Observability_Stack|Kubernetes 可观测性栈]]
+
+---
+
+## 2026 Loki 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Grafana Loki** | 日志聚合系统 | GA |
+| **LogQL** | 日志查询语言 | GA |
+| **与 Grafana 集成** | 日志可视化 | GA |
+| **与 Prometheus 关联** | 日志-指标关联 | GA |
+| **对象存储** | 日志对象存储 | GA |
+
+## 生产最佳实践
+
+1. **日志聚合**：K8s 日志用 Loki 聚合
+2. **LogQL 查询**：用 LogQL 查询日志
+3. **与 Grafana 配合**：Loki + Grafana 可视化
+4. **日志-指标关联**：日志与指标关联分析
+5. **采样策略**：配置合适的日志采样

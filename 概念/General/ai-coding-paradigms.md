@@ -22,7 +22,7 @@ lifecycle: reviewed
 lifecycle_changed: 2026-06-23
 tier: core
 created: 2026-06-23
-updated: 2026-06-23
+updated: 2026-07-21
 aliases:
   - "Ai Coding Paradigms"
   - "ai coding paradigms"
@@ -124,3 +124,23 @@ Agent 编程区别于补全/编辑的核心：
 - [[概念/ai-agents|AI Agent]] — Agent 编程的基础
 - [[编程/README|AI 编程]] — 章节主页
 - [[编程/README|AI 编程]] — 范式理论
+
+---
+
+## 2026 AI 编程范式生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Agentic Coding** | AI Agent 自主规划-执行-验证编程任务 | GA |
+| **Cursor/Windsurf** | AI-Native IDE 深度集成代码生成与重构 | GA |
+| **Spec-Driven Dev** | 先写规格说明，AI 生成实现代码 | GA |
+| **多文件编辑** | LLM 跨文件理解与一致性修改 | GA |
+| **AI Code Review** | 自动化代码审查 + 安全扫描 | GA |
+
+## 生产最佳实践
+
+1. **人机协作**：AI 生成初稿，人类审核关键逻辑，不盲目信任 AI 输出
+2. **测试先行**：AI 生成代码必须配套单元测试，覆盖率 > 80%
+3. **上下文管理**：给 AI 提供充分的项目规范、架构约束、代码风格指南
+4. **增量式采用**：从代码补全 → 函数生成 → 模块设计逐步提升信任度
+5. **知识产权**：注意 AI 生成代码的许可证合规性，商业项目需审查

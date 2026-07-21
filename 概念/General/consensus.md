@@ -22,7 +22,7 @@ provenance:
   ambiguous: 0.05
 base_confidence: 0.85
 created: 2026-06-24
-updated: 2026-06-24
+updated: 2026-07-21
 ---
 
 # Consensus Algorithm（共识算法）
@@ -104,3 +104,23 @@ Safety（安全性）
 - [[概念/etcd]] — etcd（K8s 用 Raft）
 - [[概念/distributed-systems]] — 分布式系统
 - [[数学基础/Distributed_Systems/Distributed_Systems]] — 分布式系统章节
+
+---
+
+## 2026 共识算法生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Raft** | 易理解的共识算法 | GA |
+| **Paxos** | 经典共识算法 | GA |
+| **PBFT** | 实用拜占庭容错 | GA |
+| **etcd** | Raft 实现 | GA |
+| **分布式一致性** | 分布式系统一致性 | GA |
+
+## 生产最佳实践
+
+1. **Raft 优先**：共识算法优先选择 Raft
+2. **etcd 使用**：K8s 用 etcd 实现共识
+3. **节点数**：共识集群奇数节点
+4. **网络分区**：处理网络分区场景
+5. **性能优化**：共识算法性能优化

@@ -20,11 +20,11 @@ provenance:
   inferred: 0.10
   ambiguous: 0.05
 base_confidence: 0.87
-lifecycle: draft
-lifecycle_changed: 2026-07-11
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
 tier: core
 created: 2026-07-11T00:00:00Z
-updated: 2026-07-11T00:00:00Z
+updated: 2026-07-21
 ---
 
 # Segment Anything Model (SAM)
@@ -192,3 +192,23 @@ SAM 2 将能力扩展到**视频分割**，引入了流式记忆架构：
 - [[概念/Vision/dino]] — DINOv2 (共享: self-supervised, foundation-model)
 - [[概念/computer-vision]] — 计算机视觉 (共享: cv, deep-learning)
 - [[概念/Vision/clip]] — CLIP (共享: foundation-model, zero-shot)
+
+---
+
+## 2026 SAM 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **SAM 2** | 支持视频分割的通用分割模型 | GA |
+| **MobileSAM** | 轻量级 SAM 端侧部署 | GA |
+| **Grounded-SAM** | 文本提示 + SAM 自动分割 | GA |
+| **医学影像** | SAM 在医学图像分割中的应用 | GA |
+| **自动标注** | SAM 辅助数据集自动标注 | GA |
+
+## 生产最佳实践
+
+1. **提示工程**：点/框/掩码提示组合使用，提升分割精度
+2. **后处理**：SAM 输出可能需要形态学后处理优化边界
+3. **批量处理**：图像编码器输出可缓存，多提示复用提升效率
+4. **端侧部署**：实时场景使用 MobileSAM/FastSAM 降低延迟
+5. **微调适配**：特定领域（医学/遥感）微调提升分割效果

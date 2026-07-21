@@ -22,7 +22,7 @@ base_confidence: 0.85
 lifecycle: reviewed
 tier: core
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-07-21
 aliases:
   - "Aws Bedrock"
   - "aws bedrock"
@@ -96,3 +96,23 @@ aliases:
 - [[概念/azure-openai]] — Azure OpenAI
 - [[概念/vertex-ai]] — Google Vertex AI
 - [[概念/foundation-model]] — 基础模型
+
+---
+
+## 2026 AWS Bedrock 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **AWS Bedrock** | AWS 托管大模型服务 | GA |
+| **Claude 系列** | Anthropic Claude 模型 | GA |
+| **Llama 系列** | Meta Llama 模型 | GA |
+| **Agents** | Bedrock Agents | GA |
+| **Knowledge Bases** | RAG 知识库 | GA |
+
+## 生产最佳实践
+
+1. **托管服务**：AWS 环境用 Bedrock 托管服务
+2. **多模型选择**：根据场景选择合适模型
+3. **Agents 构建**：用 Bedrock Agents 构建 Agent
+4. **Knowledge Bases**：RAG 用 Bedrock Knowledge Bases
+5. **与 Azure 对比**：根据云环境选择 Bedrock 或 Azure

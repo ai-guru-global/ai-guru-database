@@ -25,7 +25,7 @@ lifecycle: reviewed
 lifecycle_changed: 2026-06-16
 tier: core
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-07-21
 aliases:
   - "Ab Testing Framework"
   - "ab testing framework"
@@ -107,3 +107,23 @@ A/B 测试直接看真实用户身上的效果。
 - [[概念/ci-integrated-evaluation]] — CI 集成评估
 - [[模型评估/Evaluation_Tools/Online_Evaluation]] — 在线评估
 - [[模型运维/Evaluation/LLM_Evaluation_Pipeline]] — LLM 评估流水线
+
+---
+
+## 2026 A/B 测试生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **A/B 测试** | 在线对比测试 | GA |
+| **多臂老虎机** | 自适应流量分配 | GA |
+| **统计显著性** | 统计显著性检验 | GA |
+| **LLM A/B** | LLM 输出 A/B 测试 | GA |
+| **与在线评估配合** | A/B + 在线评估 | GA |
+
+## 生产最佳实践
+
+1. **模型上线**：模型上线必须 A/B 测试
+2. **统计显著**：A/B 测试达到统计显著
+3. **多臂老虎机**：用多臂老虎机优化流量
+4. **LLM A/B**：LLM 输出 A/B 测试
+5. **与离线评估配合**：A/B + 离线评估结合

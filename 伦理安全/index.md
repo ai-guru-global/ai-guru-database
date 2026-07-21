@@ -24,10 +24,8 @@ This page indexes the contents of `伦理安全`.
 ## Files
 
 - [[伦理安全/Agent_RAG_Security|Agent RAG Security]]
-- [[伦理安全/Agent_Security_Ethics_AGI 2|Agent Security Ethics AGI 2]]
 - [[伦理安全/Agent_Security_Ethics_AGI|Agent Security Ethics AGI]]
 - [[伦理安全/AI_Ethics_And_Future_For_Beginners|AI Ethics And Future For Beginners]]
-- [[伦理安全/AI_Ethics_Safety_Future 2|AI Ethics Safety Future 2]]
 - [[伦理安全/AI_Ethics_Safety_Future|AI Ethics Safety Future]]
 - [[伦理安全/AI_Governance_Compliance_2026|AI Governance Compliance 2026]]
 - [[伦理安全/AI_Red_Teaming_Guide|AI Red Teaming Guide]]

@@ -18,6 +18,8 @@ provenance:
   ambiguous: 0.10
 base_confidence: 0.80
 lifecycle: reviewed
+created: 2026-06-12
+updated: 2026-07-21
 tier: supporting
 ---
 
@@ -105,3 +107,23 @@ swift infer \
 - [[概念/torchrun]] — torchrun 分布式启动器
 - [[概念/accelerate]] — HF Accelerate 分布式训练
 - [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+
+---
+
+## 2026 SWIFT 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **SWIFT** | ModelScope 微调框架 | GA |
+| **LoRA/QLoRA** | 参数高效微调 | GA |
+| **多模型支持** | 支持多种模型 | GA |
+| **分布式训练** | 分布式微调 | GA |
+| **Web UI** | 可视化微调 | GA |
+
+## 生产最佳实践
+
+1. **ModelScope 微调**：ModelScope 模型用 SWIFT 微调
+2. **LoRA 微调**：大模型微调用 LoRA
+3. **分布式训练**：大模型用分布式训练
+4. **Web UI**：快速实验用 Web UI
+5. **与 LLaMA-Factory 对比**：根据需求选择微调框架

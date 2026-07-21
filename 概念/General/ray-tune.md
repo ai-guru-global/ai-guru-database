@@ -16,6 +16,8 @@ provenance:
   ambiguous: 0.10
 base_confidence: 0.88
 lifecycle: reviewed
+created: 2026-06-12
+updated: 2026-07-21
 tier: supporting
 ---
 
@@ -176,3 +178,23 @@ run_config = train.RunConfig(
 4. **LLM 调优**：可用于搜索 LoRA rank、学习率、warmup 等 LLM 微调超参数
 5. **Ray 生态**：与 Ray Train、Ray Serve 等组件无缝集成
 6. **开源免费**：Apache 2.0，Anyscale 提供商业托管版本
+
+---
+
+## 2026 Ray Tune 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **ASHA 调度** | 异步连续 Halving 算法加速搜索 | GA |
+| **PBT** | 基于种群的训练，动态调整超参 | GA |
+| **Optuna 集成** | 支持 Optuna 搜索算法 | GA |
+| **LLM 微调调优** | LoRA rank/alpha/lr 自动搜索 | GA |
+| **TensorBoard 集成** | 实时可视化调优过程 | GA |
+
+## 生产最佳实践
+
+1. **搜索算法选择**：超参少用 Grid，多用 Bayesian/Optuna
+2. **早停必配**：使用 ASHA/Hyperband 及时停止无希望试验
+3. **资源分配**：合理设置 num_samples 和并发数，平衡搜索广度与资源
+4. **可复现**：记录最优配置的完整参数，确保可复现
+5. **与 Ray Train 配合**：分布式训练 + 调优一体化，提升效率

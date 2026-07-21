@@ -24,7 +24,7 @@ summary: 困惑度（PPL）衡量语言模型对测试数据的预测能力，�
 lifecycle: reviewed
 tier: core
 created: 2026-06-25
-updated: 2026-06-25
+updated: 2026-07-21
 sources: []
 ---
 
@@ -132,3 +132,23 @@ ppl = torch.exp(loss)
 - [[概念/pre-training|预训练]]
 - [[概念/next-token-prediction|下一个 Token 预测]]
 - [[概念/model-evaluation|模型评估]]
+
+---
+
+## 2026 Perplexity 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **滑动窗口 PPL** | 长文本分窗计算困惑度，避免 OOM | GA |
+| **多粒度 PPL** | Token/句子/段落级别困惑度分析 | GA |
+| **领域 PPL 对比** | 不同领域数据上的 PPL 对比评估 | GA |
+| **量化影响评估** | 量化前后 PPL 变化衡量精度损失 | GA |
+| **HF Evaluate 集成** | HuggingFace evaluate 库原生 PPL 计算 | GA |
+
+## 生产最佳实践
+
+1. **不单独依赖 PPL**：PPL 低不代表生成质量好，需结合下游任务评估
+2. **统一计算方式**：对比不同模型时确保 PPL 计算方法一致（分词器、窗口大小）
+3. **领域匹配**：用目标领域数据计算 PPL，通用语料 PPL 参考价值有限
+4. **量化监控**：模型量化后跟踪 PPL 变化，超过 5% 需警惕
+5. **训练监控**：训练过程中跟踪验证集 PPL 曲线，检测过拟合

@@ -123,6 +123,77 @@ updated: 2026-07-21
 3. **MCP 标准化工具接入**：2026 年工具层应走 MCP 协议
 4. **可观测性必备**：生产环境必须接入 LangSmith/AgentOps/Langfuse
 5. **护栏不可省**：无论框架多强，输入/输出护栏是确定性安全边界
+6. **版本锁定**：框架版本升级可能破坏 API，生产环境锁定版本
+7. **逃逸路线**：避免过度依赖单一框架，保持核心逻辑可迁移
+
+## 代码示例对比
+
+### LangGraph 示例
+
+```python
+from langgraph.graph import StateGraph, END
+from typing import TypedDict, Annotated
+
+class AgentState(TypedDict):
+    messages: list
+    next_action: str
+
+def should_continue(state: AgentState) -> str:
+    if state["next_action"] == "end":
+        return END
+    return "tool"
+
+workflow = StateGraph(AgentState)
+workflow.add_node("agent", call_model)
+workflow.add_node("tool", call_tools)
+workflow.set_entry_point("agent")
+workflow.add_conditional_edges("agent", should_continue)
+workflow.add_edge("tool", "agent")
+
+app = workflow.compile()
+```
+
+### CrewAI 示例
+
+```python
+from crewai import Agent, Task, Crew
+
+researcher = Agent(
+    role="研究员",
+    goal="搜集信息",
+    backstory="经验丰富的分析师",
+    tools=[search_tool]
+)
+
+task = Task(
+    description="研究 {topic}",
+    expected_output="结构化报告",
+    agent=researcher
+)
+
+crew = Crew(agents=[researcher], tasks=[task])
+result = crew.kickoff(inputs={"topic": "AI Agent"})
+```
+
+## 框架迁移指南
+
+| 从 | 到 | 关键注意事项 |
+|-----|-----|----------------|
+| LangChain | LangGraph | 链式调用转为图节点，增加状态管理 |
+| AutoGen | CrewAI | 对话式转为角色式，定义明确 SOP |
+| 自研 | 框架 | 抽象核心逻辑，避免过度耦合 |
+| 单 Agent | 多 Agent | 先拆分职责，再设计协作协议 |
+
+## 2026 年框架生态
+
+| 框架 | 最新版本 | 重大更新 |
+|------|----------|----------|
+| **LangGraph** | 1.x | Platform 云托管、持久化执行 |
+| **AutoGen** | 0.4 | 事件驱动重构、异步支持 |
+| **CrewAI** | 1.x | 企业版、护栏、监控 |
+| **OpenAI Agents SDK** | 1.x | Swarm 继任者、原生工具调用 |
+| **Google ADK** | 新发布 | A2A 原生、多 Agent 编排 |
+| **Agno** | 2.x | 轻量级、快速原型 |
 
 ## Related
 

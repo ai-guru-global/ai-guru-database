@@ -65,6 +65,22 @@ aliases:
 | **Terminal Bench** | 终端操作任务 | 80+ | 命令行交互 | ~65% |
 | **MLAgentBench** | ML 实验自动化 | 13 | 科研任务 | ~40% |
 | **Tau-Bench** | 客服工具调用 | 300+ | 多轮对话+工具 | ~70% |
+| **OSWorld** | 操作系统级任务 | 369 | 多应用协作 | ~25% |
+| **AndroidWorld** | 移动端任务 | 116 | Android UI | ~30% |
+| **WorkArena** | 企业工作流 | 33 | ServiceNow | ~45% |
+
+### 基准选择指南
+
+```mermaid
+graph TD
+    A[评估目标] --> B{代码能力?}
+    B -->|Yes| C[SWE-bench Verified]
+    B -->|No| D{工具调用?}
+    D -->|Yes| E[ToolBench / Tau-Bench]
+    D -->|No| F{网页操作?}
+    F -->|Yes| G[WebArena]
+    F -->|No| H[GAIA 综合推理]
+```
 
 ## 评估维度体系
 
@@ -94,6 +110,52 @@ aliases:
 3. **可复现性**: 使用固定 seed、固定模型版本，确保结果可复现
 4. **分层评估**: 简单/中等/困难分别统计，避免均值掩盖问题
 5. **对比基线**: 与人类表现、纯 LLM（无工具）对比，确认 Agent 的增量价值
+6. **轨迹分析**: 不仅看结果，还要分析失败案例的失败模式
+7. **A/B 测试**: 不同 Harness 配置对比，量化工程改进效果
+
+## 评估工具与框架
+
+| 工具 | 用途 | 特点 |
+|------|------|------|
+| **LangSmith** | 轨迹追踪 + 评估 | LangChain 生态集成 |
+| **AgentOps** | Agent 可观测性 | 会话重放 + 成本分析 |
+| **Braintrust** | 评估平台 | 自定义评分器 + 回归测试 |
+| **Opik** | 开源评估框架 | Comet 生态 + 实验追踪 |
+| **Inspect AI** | UK AISI 评估框架 | 安全评估专用 + 可扩展 |
+
+### 评估代码示例
+
+```python
+from langsmith import Client, evaluate
+
+def agent_evaluator(run, example):
+    """自定义 Agent 评估器"""
+    # 1. 任务成功率
+    success = run.outputs["final_answer"] == example.outputs["expected"]
+    # 2. 步骤效率
+    steps = len(run.outputs["trajectory"])
+    optimal = example.metadata["optimal_steps"]
+    efficiency = optimal / steps if steps > 0 else 0
+    # 3. 工具调用准确率
+    tool_calls = [s for s in run.outputs["trajectory"] if s["type"] == "tool"]
+    correct_tools = sum(1 for t in tool_calls if t["name"] in example.metadata["valid_tools"])
+    tool_accuracy = correct_tools / len(tool_calls) if tool_calls else 1.0
+    
+    return {
+        "success": success,
+        "efficiency": efficiency,
+        "tool_accuracy": tool_accuracy,
+        "total_tokens": run.total_tokens,
+    }
+
+# 运行评估
+results = evaluate(
+    agent_runnable,
+    data="agent-benchmark-v1",
+    evaluators=[agent_evaluator],
+    max_concurrency=5,
+)
+```
 
 ## 开放问题
 
@@ -101,6 +163,33 @@ aliases:
 - 评估环境（沙箱、真实网站）的可复现性
 - 评估成本随任务复杂度指数增长
 - 基准污染：模型可能在训练数据中见过基准题目
+- 多模态 Agent 评估（视觉+语言+操作）缺乏统一基准
+- 长时任务评估（小时级）的成本与可行性
+
+## 构建自定义基准
+
+当公开基准不满足业务需求时，可构建内部基准：
+
+```yaml
+# 自定义基准设计模板
+benchmark_design:
+  name: "internal-agent-bench"
+  task_categories:
+    - data_analysis: "数据分析任务"
+    - report_generation: "报告生成任务"
+    - workflow_automation: "工作流自动化"
+  difficulty_levels:
+    easy: "单工具、单步骤"
+    medium: "多工具、多步骤"
+    hard: "多工具、错误恢复、多约束"
+  metrics:
+    primary: task_success_rate
+    secondary: [step_efficiency, tool_accuracy, cost_per_task]
+  environment:
+    sandbox: docker
+    timeout: 300s
+    tools: [file_ops, api_client, database]
+```
 
 ## Related
 

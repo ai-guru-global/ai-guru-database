@@ -26,7 +26,7 @@ provenance:
   ambiguous: 0.05
 base_confidence: 0.88
 created: 2026-06-24
-updated: 2026-06-24
+updated: 2026-07-21
 ---
 
 # Benchmark（基准测试）
@@ -125,3 +125,23 @@ updated: 2026-06-24
 - [[概念/llm-as-judge]] — LLM-as-Judge
 - [[治理/cheatsheets/cheatsheet-evaluation]] — 评测速查表
 - [[模型评估/README|模型评估]] — 评测章节
+
+---
+
+## 2026 Benchmark 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **MMLU-Pro** | 增强版多学科理解评测，难度更高 | GA |
+| **LiveBench** | 动态更新评测集防止数据污染 | GA |
+| **SWE-bench** | 真实 GitHub Issue 解决能力评测 | GA |
+| **多模态 Benchmark** | 图文/视频/音频统一评测框架 | GA |
+| **Arena-Hard-Auto** | 自动化高难度对话质量排名 | GA |
+
+## 生产最佳实践
+
+1. **不迷信单一分数**：综合多个 Benchmark 结果，避免过拟合特定评测集
+2. **关注数据污染**：优先使用动态更新的评测集（LiveBench、Arena）
+3. **业务相关性**：选择与业务场景匹配的评测，通用分数不代表实际效果
+4. **可复现性**：记录评测参数（temperature、prompt 模板），确保结果可复现
+5. **定期重评**：模型更新后必须重新跑全套 Benchmark，设置回归门禁

@@ -25,7 +25,7 @@ provenance:
   ambiguous: 0.05
 base_confidence: 0.90
 created: 2026-06-24
-updated: 2026-06-24
+updated: 2026-07-21
 ---
 
 # OpenAI 与 GPT 系列
@@ -81,3 +81,23 @@ updated: 2026-06-24
 - [[概念/cloud-ai-platform]] — 云 AI 平台
 - [[大模型/Global_LLM_Ecosystem/OpenAI_Deep_Dive]] — OpenAI 深度
 - [[架构基建/Azure_OpenAI_Deep_Dive]] — Azure OpenAI
+
+---
+
+## 2026 OpenAI 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **GPT-5** | 最新一代大模型 | GA |
+| **o3/o4** | 推理模型 | GA |
+| **API** | 模型 API 服务 | GA |
+| **Azure OpenAI** | 企业级合规部署 | GA |
+| **Assistants API** | Agent 构建 API | GA |
+
+## 生产最佳实践
+
+1. **API 调用**：用 OpenAI API 调用模型
+2. **Azure 合规**：企业合规用 Azure OpenAI
+3. **成本控制**：监控 API 调用成本
+4. **与开源对比**：根据场景选择 OpenAI 或开源
+5. **安全使用**：API Key 安全管理

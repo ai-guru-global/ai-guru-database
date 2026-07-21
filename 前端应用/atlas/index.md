@@ -22,5 +22,4 @@ This page indexes the contents of `前端应用/atlas`.
 
 ## Files
 
-- [[前端应用/atlas/README 2|README 2]]
 - [[前端应用/atlas/README|README]]

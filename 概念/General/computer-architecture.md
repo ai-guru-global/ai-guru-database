@@ -4,7 +4,7 @@ category: -concepts
 tags: ["computer-architecture", "gpu", "cpu", "tpu", "ai-hardware"]
 summary: "计算机体系结构是 AI 训练与推理的物理基础——从 CPU 到 GPU 到 TPU，硬件架构决定了 AI 系统的性能天花板。"
 created: 2026-06-12
-updated: 2026-06-12
+updated: 2026-07-21
 tier: core
 aliases:
   - "Computer Architecture"
@@ -55,3 +55,23 @@ CPU (通用计算) → GPU (并行矩阵运算) → TPU (张量专用) → NPU (
 - [[数学基础/AI_Hardware/AI_Hardware_2026]] — AI 硬件 2026
 - [[部署推理/Inference_Performance/Inference_Performance_Fundamentals]] — 量化技术
 - [[架构基建/Architecture_Overview/AI_Infrastructure_2026]] — AI 基础设施 2026
+
+---
+
+## 2026 计算机架构生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **GPU 架构** | NVIDIA Hopper/Blackwell | GA |
+| **CPU 架构** | x86/ARM/RISC-V | GA |
+| **内存层次** | HBM/DDR5/CXL | GA |
+| **互联技术** | NVLink/InfiniBand | GA |
+| **AI 加速器** | TPU/NPU/ASIC | GA |
+
+## 生产最佳实践
+
+1. **GPU 选择**：AI 训练选择合适 GPU 架构
+2. **内存带宽**：关注内存带宽瓶颈
+3. **互联优化**：分布式训练优化互联
+4. **AI 加速器**：特定场景用 AI 加速器
+5. **架构理解**：理解架构优化性能

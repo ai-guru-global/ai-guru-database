@@ -18,6 +18,8 @@ provenance:
   ambiguous: 0.10
 base_confidence: 0.78
 lifecycle: reviewed
+created: 2026-06-12
+updated: 2026-07-21
 tier: supporting
 ---
 
@@ -138,3 +140,23 @@ pip install humanloop
 - [[概念/langsmith]] — LangSmith LLM 可观测性
 - [[概念/promptlayer]] — Promptlayer Prompt 管理平台
 - [[概念/promptfoo]] — Promptfoo Prompt 测试框架
+
+---
+
+## 2026 Humanloop 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Prompt 版本管理** | Prompt 模板版本化、A/B 测试、回滚 | GA |
+| **评估自动化** | 自动评估 + 人工标注统一工作流 | GA |
+| **多模型对比** | 同一 Prompt 跨模型效果对比 | GA |
+| **SDK 集成** | Python/TS SDK 无缝嵌入应用代码 | GA |
+| **合规审计** | Prompt 变更审计日志与权限控制 | GA |
+
+## 生产最佳实践
+
+1. **Prompt 版本化**：所有生产 Prompt 通过 Humanloop 管理，禁止硬编码
+2. **评估先行**：修改 Prompt 前必须先建立评估基线
+3. **渐进发布**：新 Prompt 先小流量测试，确认效果后全量发布
+4. **团队协作**：产品/工程/标注团队在同一平台协作，减少沟通成本
+5. **成本跟踪**：监控不同 Prompt 版本的 token 消耗，优化成本效率

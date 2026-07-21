@@ -18,6 +18,8 @@ provenance:
   ambiguous: 0.10
 base_confidence: 0.82
 lifecycle: reviewed
+created: 2026-06-12
+updated: 2026-07-21
 tier: supporting
 ---
 
@@ -126,3 +128,23 @@ response = tru_app.query("什么是 vLLM？")
 4. **开源免费**：Apache 2.0，可自托管
 5. **适合定制**：当标准指标不够用时，TruLens 的自定义能力最强大
 6. **vs Ragas**：Ragas 是 RAG 专项标准指标，TruLens 是通用自定义评估
+
+---
+
+## 2026 TruLens 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Feedback Functions** | 自定义评估函数（相关性/忠实度/有害性） | GA |
+| **TruLens Dashboard** | 可视化评估结果与追踪链路 | GA |
+| **LangChain/LlamaIndex 集成** | 原生支持主流 RAG 框架评估 | GA |
+| **Guardrails 集成** | 实时输出质量护栏与拦截 | GA |
+| **OpenTelemetry 导出** | 评估指标导出到标准可观测性平台 | GA |
+
+## 生产最佳实践
+
+1. **自定义指标**：根据业务场景定义专属 Feedback Function，而非仅用默认指标
+2. **基线对比**：建立评估基线，每次变更后对比确认无回归
+3. **采样策略**：生产环境按比例采样评估，平衡成本与覆盖率
+4. **告警阈值**：设置质量分数下限，低于阈值自动告警
+5. **与 CI 集成**：将 TruLens 评估纳入发布流水线作为质量门禁

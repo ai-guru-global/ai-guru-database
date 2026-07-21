@@ -4,7 +4,7 @@ category: -concepts
 tags: ["kubernetes", "k8s", "observability", "tracing", "opentelemetry", "cloud-native", "alibaba-cloud"]
 summary: "Jaeger 是 CNCF 孵化的分布式链路追踪系统，源自 Uber，用于可视化微服务请求在 K8s 集群中的完整调用路径。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
 aliases:
   - "Jaeger Tracing"
@@ -64,3 +64,23 @@ http://jaeger-query:16686/trace/<trace-id>
 - [[概念/prometheus|Prometheus]] — 指标监控
 - [[概念/loki|Loki]] — 日志聚合
 - [[概念/kubernetes|Kubernetes]] — 容器编排
+
+---
+
+## 2026 Jaeger 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Jaeger** | 分布式追踪系统 | GA |
+| **OpenTelemetry** | 统一遥测标准 | GA |
+| **Trace 分析** | 追踪数据分析 | GA |
+| **与 Grafana 集成** | 追踪可视化 | GA |
+| **与 Tempo 对比** | Jaeger vs Tempo | GA |
+
+## 生产最佳实践
+
+1. **分布式追踪**：微服务用 Jaeger 追踪
+2. **OpenTelemetry**：用 OpenTelemetry 采集追踪
+3. **与 Grafana 配合**：Jaeger + Grafana 可视化
+4. **采样策略**：配置合适的采样策略
+5. **与 Tempo 对比**：根据需求选择 Jaeger 或 Tempo

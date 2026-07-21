@@ -23,7 +23,7 @@ summary: 视觉语言模型（VLM）融合视觉编码器与大语言模型，�
 lifecycle: reviewed
 tier: core
 created: 2026-06-25
-updated: 2026-06-25
+updated: 2026-07-21
 sources: []
 ---
 
@@ -146,3 +146,23 @@ loss = cross_entropy(logits, labels)
 - [[概念/qwen-series|Qwen 系列]]
 - [[概念/gpt-series-evolution|GPT 系列演进]]
 - [[概念/quantization|模型量化]]
+
+---
+
+## 2026 视觉语言模型生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **LLaVA-NeXT** | 开源视觉语言模型，高分辨率支持 | GA |
+| **Qwen2-VL** | 阿里开源多模态 VLM | GA |
+| **InternVL** | 上海 AI Lab 开源 VLM | GA |
+| **视觉 Grounding** | 图像区域定位与指代理解 | GA |
+| **OCR 融合** | VLM 原生支持文字识别 | GA |
+
+## 生产最佳实践
+
+1. **分辨率优化**：高分辨率提升细节理解但增加成本，根据任务选择
+2. **提示词设计**：VLM 提示词需明确指定关注区域和任务类型
+3. **幻觉控制**：VLM 容易产生视觉幻觉，关键场景需验证
+4. **推理加速**：使用 vLLM + 量化部署 VLM，降低延迟和成本
+5. **评估基准**：用 MMBench/SEED-Bench 等标准基准评估 VLM 能力

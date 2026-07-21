@@ -159,6 +159,56 @@ class AgentMemory:
 4. **用户可控**：允许用户查看、编辑、删除记忆
 5. **时间感知**：记忆带时间戳，近期记忆权重更高
 6. **容量管理**：设置上限，淘汰低价值记忆
+7. **分层存储**：热记忆用 Redis，冷记忆用向量库，归档用对象存储
+8. **安全审计**：记录记忆的读写操作，防止记忆注入攻击
+
+## 记忆架构设计模式
+
+```python
+class TieredMemorySystem:
+    """分层记忆架构"""
+    def __init__(self):
+        self.working = []           # 工作记忆（上下文窗口）
+        self.episodic = VectorStore()  # 情景记忆（向量库）
+        self.semantic = KnowledgeGraph()  # 语义记忆（知识图谱）
+        self.procedural = {}        # 程序记忆（工具配置）
+    
+    def consolidate(self):
+        """定期整合：情景 → 语义"""
+        recent_episodes = self.episodic.get_recent(days=7)
+        patterns = self.llm.extract_patterns(recent_episodes)
+        for pattern in patterns:
+            self.semantic.add_or_update(pattern)
+    
+    def forget(self, threshold=0.3):
+        """遗忘机制：淘汰低价值记忆"""
+        all_memories = self.episodic.get_all()
+        for mem in all_memories:
+            score = self._importance_score(mem)
+            if score < threshold:
+                self.episodic.archive(mem.id)
+```
+
+## 记忆系统评估指标
+
+| 指标 | 含义 | 目标值 |
+|------|------|--------|
+| 检索准确率 | Top-K 中相关记忆比例 | > 80% |
+| 写入延迟 | 从交互到记忆可检索 | < 2s |
+| 冲突检测率 | 新旧矛盾记忆识别率 | > 90% |
+| 记忆利用率 | 被实际使用的记忆比例 | > 40% |
+| 个性化提升 | 有记忆 vs 无记忆的任务完成质量差 | > 15% |
+
+## 生产部署考虑
+
+| 维度 | 建议 |
+|------|------|
+| **存储选型** | 小规模用 ChromaDB，大规模用 Pinecone/Weaviate |
+| **Embedding 模型** | text-embedding-3-large 或 BGE-M3 |
+| **缓存策略** | 高频访问记忆用 Redis 缓存 |
+| **多租户** | 每个用户/Agent 独立命名空间 |
+| **备份恢复** | 定期快照，支持回滚 |
+| **合规** | GDPR 要求支持记忆删除（被遗忘权） |
 
 ## Related
 

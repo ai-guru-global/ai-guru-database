@@ -10,7 +10,10 @@ lifecycle: reviewed
 aliases:
   - "Agent Production Deployment"
   - "Agent 生产部署"
-sources: []
+sources:
+  - "https://langchain-ai.github.io/langgraph/cloud/"
+  - "https://docs.crewai.com/"
+  - "https://temporal.io/"
 ---
 
 # Agent 生产部署
@@ -111,6 +114,148 @@ Agent 系统的生产部署与传统微服务存在本质差异：LLM 输出非�
 - [[概念/agentops|AgentOps]] — Agent 可观测性平台
 - [[概念/agent-memory-systems|Agent 记忆系统]] — 短期与长期记忆设计
 - [[概念/agent-harness|Agent Harness]] — Agent 运行时与编排抽象
+
+---
+
+## 参考架构
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                        接入层 (API Gateway)                       │
+│   • 认证/授权 • 限流 • 路由 • 成本归因 • 请求追踪 ID 注入      │
+└─────────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌─────────────────────────────────────────────────────────────────┐
+│                     Agent 编排层 (Orchestrator)                   │
+│   • 任务分解 • 状态机管理 • 多 Agent 协调 • 人工审批插入点      │
+└─────────────────────────────────────────────────────────────────┘
+                              │
+              ┌───────────────┼───────────────┐
+              ▼               ▼               ▼
+┌─────────────────┐ ┌─────────────────┐ ┌─────────────────┐
+│   Planner       │ │   Memory        │ │   Tools         │
+│   (规划引擎)    │ │   (记忆系统)    │ │   (工具层)      │
+│   • ReAct       │ │   • Redis       │ │   • MCP Server  │
+│   • Plan&Exec   │ │   • Vector DB   │ │   • Sandbox     │
+│   • Reflexion   │ │   • PostgreSQL  │ │   • API Client  │
+└─────────────────┘ └─────────────────┘ └─────────────────┘
+                              │
+                              ▼
+┌─────────────────────────────────────────────────────────────────┐
+│                     LLM 网关 (Model Gateway)                      │
+│   • 多模型路由 • Fallback • 缓存 • 成本监控 • A/B 测试          │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+## Kubernetes 部署示例
+
+```yaml
+# agent-deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: agent-orchestrator
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: agent-orchestrator
+  template:
+    metadata:
+      labels:
+        app: agent-orchestrator
+    spec:
+      containers:
+      - name: orchestrator
+        image: registry.example.com/agent-orchestrator:v1.2.0
+        resources:
+          requests:
+            cpu: "500m"
+            memory: "1Gi"
+          limits:
+            cpu: "2000m"
+            memory: "4Gi"
+        env:
+        - name: REDIS_URL
+          valueFrom:
+            secretKeyRef:
+              name: agent-secrets
+              key: redis-url
+        - name: LLM_API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: agent-secrets
+              key: llm-api-key
+        livenessProbe:
+          httpGet:
+            path: /healthz
+            port: 8080
+          initialDelaySeconds: 10
+        readinessProbe:
+          httpGet:
+            path: /ready
+            port: 8080
+---
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: agent-hpa
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: agent-orchestrator
+  minReplicas: 3
+  maxReplicas: 20
+  metrics:
+  - type: Pods
+    pods:
+      metric:
+        name: agent_queue_length
+      target:
+        type: AverageValue
+        averageValue: "10"
+```
+
+## 生产最佳实践
+
+1. **计算无状态、存储有状态**：Agent 运行时不保存会话状态，所有状态外置到 Redis/Vector DB
+2. **工具沙箱化**：代码执行、数据库写入等高风险工具必须在隔离环境中运行
+3. **Prompt 版本化**：System Prompt 和 Tool Schema 纳入 Git，通过 ConfigMap 管理
+4. **全链路追踪**：OpenTelemetry 贯穿 Gateway、Orchestrator、Tools、LLM Gateway
+5. **护栏即代码**：Guardrails 策略以 YAML 形式版本化，支持快速回滚
+6. **成本归因**：按 session_id/user_id/team_id 归因 Token 消耗和 API 调用成本
+7. **灰度发布**：新 Prompt/模型通过 Feature Flag 逐步放量，异常时快速回滚
+
+## 监控指标体系
+
+| 层级 | 指标 | 告警阈值 |
+|------|------|----------|
+| **接入层** | QPS、P99 延迟、错误率 | P99 > 5s、错误率 > 1% |
+| **编排层** | 任务成功率、平均步骤数、队列长度 | 成功率 < 90%、步骤 > 20 |
+| **工具层** | 工具调用成功率、沙箱超时率 | 失败率 > 5%、超时 > 1% |
+| **LLM 层** | Token 吞吐量、首 Token 延迟、成本/请求 | 延迟 > 3s、成本异常 |
+| **业务层** | 用户满意度、任务完成率、幻觉率 | 满意度 < 80% |
+
+## 灾难恢复
+
+```yaml
+# 灾难恢复策略
+disaster_recovery:
+  backup:
+    - redis_session: "每 5 分钟快照"
+    - vector_db: "每日全量 + 实时增量"
+    - postgres: "WAL 归档 + 每日备份"
+  
+  recovery:
+    rpo: "5 分钟"  # 最大数据丢失
+    rto: "15 分钟" # 最大恢复时间
+  
+  failover:
+    - llm_provider: "主 OpenAI → 备 Anthropic → 备本地模型"
+    - region: "主 us-east-1 → 备 us-west-2"
+```
 
 ---
 

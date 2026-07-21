@@ -18,11 +18,11 @@ provenance:
   inferred: 0.10
   ambiguous: 0.05
 base_confidence: 0.80
-lifecycle: draft
-lifecycle_changed: 2026-05-31
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
 tier: supporting
 created: 2026-05-31T00:00:00Z
-updated: 2026-05-31T00:00:00Z
+updated: 2026-07-21
 ---
 
 # 视觉生成模型
@@ -100,3 +100,23 @@ AI艺术创作（Midjourney、DALL-E 3）、图像编辑（Inpainting、超分�
 ## Related
 
 - [[论文精读/Vision/Diffusion_Models_Deep_Dive]] — Diffusion Models 深度解读 (从 DDPM 到 Stable Diffusion 再到 DiT) (共享: cv, diffusion, generative-models, stable-diffusion)
+
+---
+
+## 2026 生成式视觉模型生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Stable Diffusion 3** | 开源文生图模型，MMDiT 架构 | GA |
+| **FLUX** | Black Forest Labs 高质量文生图 | GA |
+| **DiT 架构** | Diffusion Transformer 替代 U-Net | GA |
+| **ControlNet/IP-Adapter** | 精确控制生成内容与风格 | GA |
+| **LoRA 微调** | 少样本定制风格/角色 | GA |
+
+## 生产最佳实践
+
+1. **模型选型**：根据质量/速度/成本权衡选择模型（SDXL vs FLUX vs SD3）
+2. **安全过滤**：生产环境必须配置 NSFW 检测与内容审核
+3. **提示词工程**：建立提示词模板库，确保输出一致性
+4. **批处理优化**：批量生成提升 GPU 利用率，降低单张成本
+5. **版本管理**：模型/LoRA/提示词全部版本化，确保可复现

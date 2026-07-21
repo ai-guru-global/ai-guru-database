@@ -18,6 +18,8 @@ provenance:
   ambiguous: 0.10
 base_confidence: 0.80
 lifecycle: reviewed
+created: 2026-06-12
+updated: 2026-07-21
 tier: supporting
 ---
 
@@ -195,3 +197,23 @@ pip install lm-format-enforcer
 - [[概念/guidance]] — Microsoft Guidance 结构化生成库
 - [[概念/vllm]] — vLLM 高性能推理引擎
 - [[概念/sglang]] — SGLang 结构化生成语言
+
+---
+
+## 2026 LM Format Enforcer 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **JSON Schema 强制** | 输出严格符合 JSON Schema | GA |
+| **正则表达式** | 用正则约束生成格式 | GA |
+| **vLLM 集成** | 与 vLLM 推理引擎原生集成 | GA |
+| **HF Transformers** | 支持 HuggingFace 模型 | GA |
+| **字符级约束** | 逐字符级别约束生成空间 | GA |
+
+## 生产最佳实践
+
+1. **Schema 设计**：先定义清晰的 JSON Schema，再用 Enforcer 强制输出
+2. **性能影响**：约束生成有额外开销，高并发场景评估延迟影响
+3. **与 Outlines 对比**：LM Format Enforcer 更轻量，Outlines 功能更丰富
+4. **回退策略**：约束失败时回退到自由生成 + 后处理解析
+5. **测试验证**：用属性测试确保输出始终符合 Schema

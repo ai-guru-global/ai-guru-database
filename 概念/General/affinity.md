@@ -4,7 +4,7 @@ category: -concepts
 tags: ["kubernetes", "k8s", "affinity", "cloud-native", "alibaba-cloud", "scheduling"]
 summary: "Affinity 是 Kubernetes 的亲和性调度机制，通过 nodeAffinity、podAffinity 与 podAntiAffinity 控制 Pod 倾向于落在哪些节点或与哪些 Pod 共处/分离，从而实现负载分布、故障隔离与硬件感知的精细化调度，是 AI 推理与训练场景中的常用调度策略。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
 aliases:
   - "Affinity"
@@ -115,3 +115,23 @@ kubectl get nodes --show-labels
 - [[概念/kubectl|kubectl]] — K8s 命令行工具
 - [[概念/apsara-stack|Apsara Stack]] — 阿里云专有云
 - [[概念/containerd|containerd]] — 主流 CRI 实现
+
+---
+
+## 2026 亲和性调度生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **GPU 亲和性** | 按 GPU 型号/拓扑绑定 Pod 到特定节点 | GA |
+| **NUMA 感知调度** | Topology Manager 保证 CPU/内存/GPU NUMA 对齐 | GA |
+| **DRA 动态资源** | Dynamic Resource Allocation 替代硬编码亲和性 | GA |
+| **Gang Scheduling** | Volcano/Kueue 保证分布式训练 Pod 组整体调度 | GA |
+| **拓扑感知路由** | Service Topology 优先同区域/同节点通信 | GA |
+
+## 生产最佳实践
+
+1. **GPU 训练必用**：多卡训练必须配置 nodeAffinity 保证同机型、同网络拓扑
+2. **反亲和性高可用**：推理服务 Pod 设置 podAntiAffinity 分散到不同节点
+3. **避免过度约束**：亲和性规则过多会导致调度失败，保持必要约束即可
+4. **结合污点容忍**：GPU 节点设置 taint，训练 Pod 配置 toleration 专用
+5. **监控调度延迟**：跟踪 Pending Pod 数量，亲和性过严会导致资源利用率低

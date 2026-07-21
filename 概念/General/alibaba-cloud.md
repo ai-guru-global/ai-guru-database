@@ -4,7 +4,7 @@ category: -concepts
 tags: ["cloud", "alibaba-cloud", "paas", "iaas", "ai", "alibaba-cloud"]
 summary: "阿里云（Alibaba Cloud）是阿里巴巴集团旗下的云计算及人工智能科技公司，提供 IaaS、PaaS、SaaS 及 AI 全栈云服务。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: core
 aliases:
   - "阿里云"
@@ -53,3 +53,23 @@ sources: []
 - [[概念/pai|PAI]]
 - [[概念/apsara-stack|Apsara Stack]]
 - [[架构基建/Cloud_Providers/Alibaba_PAI_Deep_Dive|阿里云 PAI 深度解析]]
+
+---
+
+## 2026 阿里云生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **PAI** | AI 平台 | GA |
+| **ACK** | 容器服务 K8s | GA |
+| **OSS** | 对象存储 | GA |
+| **AI Stack** | 软硬一体 AI 平台 | GA |
+| **百炼** | 大模型服务平台 | GA |
+
+## 生产最佳实践
+
+1. **AI 平台**：AI 项目用 PAI 平台
+2. **容器编排**：K8s 用 ACK 托管
+3. **数据存储**：训练数据用 OSS 存储
+4. **专有云**：政企场景用 Apsara Stack
+5. **大模型服务**：大模型用百炼平台

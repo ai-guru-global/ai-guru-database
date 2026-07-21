@@ -4,7 +4,7 @@ category: -concepts
 tags: ["protein-folding", "bioinformatics", "alphafold", "ai-for-science"]
 summary: "蛋白质折叠是 AI for Science 的里程碑应用——AlphaFold 2 在 2020 年解决了 50 年来的蛋白质结构预测难题。"
 created: 2026-06-12
-updated: 2026-06-12
+updated: 2026-07-21
 tier: core
 aliases:
   - "Protein Folding"
@@ -58,3 +58,23 @@ relationships:
 
 - [[行业应用/AI_for_Science/Protein_Folding_and_Drug_Discovery_2026]] — AI 蛋白质折叠与药物发现
 - [[行业应用/AI_for_Science/AI_for_Science_Deep_Dive]] — AI for Science 深度解读
+
+---
+
+## 2026 蛋白质折叠生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **AlphaFold 3** | DeepMind 蛋白质结构预测 | GA |
+| **ESMFold** | Meta 蛋白质语言模型 | GA |
+| **RoseTTAFold** | 蛋白质结构预测 | GA |
+| **蛋白质设计** | AI 蛋白质设计 | 研究 |
+| **药物发现** | AI 加速药物发现 | 研究 |
+
+## 生产最佳实践
+
+1. **AlphaFold 预测**：蛋白质结构用 AlphaFold 预测
+2. **ESMFold 快速**：快速预测用 ESMFold
+3. **药物发现**：AI 加速药物发现
+4. **蛋白质设计**：AI 设计新蛋白质
+5. **实验验证**：AI 预测需实验验证

@@ -18,6 +18,8 @@ provenance:
   ambiguous: 0.10
 base_confidence: 0.80
 lifecycle: reviewed
+created: 2026-06-12
+updated: 2026-07-21
 tier: supporting
 ---
 
@@ -151,3 +153,23 @@ print(lm["sentiment"])  # "正面"
 - [[概念/lm-format-enforcer]] — LLM 输出格式约束
 - [[概念/promptfoo]] — Promptfoo Prompt 测试框架
 - [[概念/guardrails-ai]] — Guardrails AI 安全防护框架
+
+---
+
+## 2026 Guidance 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **模板语法** | Handlebars 风格 Prompt 模板 + 逻辑控制 | GA |
+| **结构化输出** | 强制 LLM 输出符合 JSON Schema | GA |
+| **多轮对话管理** | 内置角色切换与上下文管理 | GA |
+| **Token 级控制** | 逐 token 约束生成空间 | GA |
+| **多后端支持** | OpenAI/HF/vLLM/Ollama 统一接口 | GA |
+
+## 生产最佳实践
+
+1. **模板复用**：将常用 Prompt 封装为 Guidance 模板，避免重复编写
+2. **约束优先**：用结构化输出约束代替自由生成，提高可靠性
+3. **版本管理**：模板纳入 Git 管理，变更走审核流程
+4. **测试覆盖**：为每个模板编写测试用例，验证输出格式正确性
+5. **性能监控**：跟踪模板渲染延迟和 token 消耗，优化成本

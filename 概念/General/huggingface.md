@@ -22,7 +22,7 @@ provenance:
   ambiguous: 0.02
 base_confidence: 0.95
 created: 2026-06-24
-updated: 2026-06-24
+updated: 2026-07-21
 ---
 
 # Hugging Face（AI 开源生态）
@@ -124,3 +124,23 @@ api.upload_folder(folder_path="./my_model", repo_id="myorg/my-model")
 - [[概念/vllm]] — vLLM（高性能推理）
 - [[概念/openai]] — OpenAI（闭源）
 - [[智能体/Agent_Skills/HuggingFace_Hub_Tools]] — HF Hub 工具
+
+---
+
+## 2026 HuggingFace 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Transformers 5.x** | 统一多模态模型加载与推理 API | GA |
+| **HF Inference Endpoints** | 托管式专属推理端点，支持自动扩缩 | GA |
+| **Safetensors** | 安全高效的模型权重格式，替代 pickle | GA |
+| **TRL + PEFT** | 一站式微调/对齐/量化训练工具链 | GA |
+| **HF Spaces GPU** | 免费/付费 GPU 演示空间，快速原型验证 | GA |
+
+## 生产最佳实践
+
+1. **模型卡片规范**：生产模型必须填写完整 Model Card，包含训练数据、评估结果、使用限制
+2. **版本管理**：使用 revision 固定模型版本，避免 main 分支意外更新
+3. **私有 Hub**：企业场景使用 Private Hub 管理内部模型资产
+4. **Token 安全**：生产环境使用 Fine-grained Token，最小权限原则
+5. **缓存策略**：配置 HF_HOME 统一缓存目录，避免重复下载大模型

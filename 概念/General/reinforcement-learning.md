@@ -18,11 +18,11 @@ provenance:
   inferred: 0.10
   ambiguous: 0.05
 base_confidence: 0.80
-lifecycle: draft
-lifecycle_changed: 2026-05-31
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
 tier: supporting
 created: 2026-05-31T00:00:00Z
-updated: 2026-05-31T00:00:00Z
+updated: 2026-07-21T00:00:00Z
 ---
 
 # 强化学习
@@ -106,3 +106,23 @@ Offline RL（从固定数据集学习，BCQ/CQL）、Meta-RL（快速适应新�
 - [[强化学习/AI_Agents/Agent-in-nutshell]] — AI 智能体速成指南 (共享: mdp, reinforcement-learning, rl)
 - [[强化学习/AI_Agents/Agent_Future_Roadmap_2026_2030]] — Agent 未来发展路线图 2026-2030 (共享: mdp, reinforcement-learning, rl)
 - [[强化学习/AI_Agents/Agent_Protocols_Detail]] — AI Agent 协议详解：MCP、A2A、UCP (共享: mdp, reinforcement-learning, rl)
+
+---
+
+## 2026 强化学习生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **RLHF** | 人类反馈强化学习 | GA |
+| **PPO** | 近端策略优化 | GA |
+| **DPO** | 直接偏好优化 | GA |
+| **GRPO** | 组相对策略优化 | GA |
+| **Agent RL** | Agent 强化学习 | 研究 |
+
+## 生产最佳实践
+
+1. **RLHF 对齐**：LLM 对齐用 RLHF/DPO
+2. **PPO 训练**：RL 训练用 PPO
+3. **DPO 简化**：简化对齐用 DPO
+4. **奖励设计**：合理设计奖励函数
+5. **与 SFT 配合**：SFT + RL 配合

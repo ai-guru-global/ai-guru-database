@@ -4,7 +4,7 @@ category: -concepts
 tags: ["kubernetes", "k8s", "role", "cloud-native", "alibaba-cloud"]
 summary: "Role 是 Kubernetes 命名空间级别的 RBAC 权限集合，通过 RoleBinding 绑定到用户或 ServiceAccount，决定主体能在指定 namespace 内执行哪些 API 操作。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
 aliases:
   - "Kubernetes Role"
@@ -99,3 +99,23 @@ kubectl auth can-i get configmaps \
 - [[概念/kubernetes|Kubernetes]] — K8s 编排平台
 - [[概念/rbac|RBAC]] — 基于角色的访问控制
 - [[概念/serviceaccount|ServiceAccount]] — Pod 在集群中的身份标识
+
+---
+
+## 2026 Role 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Role** | 命名空间级权限 | GA |
+| **ClusterRole** | 集群级权限 | GA |
+| **RoleBinding** | 权限绑定 | GA |
+| **RBAC** | 基于角色的访问控制 | GA |
+| **最小权限** | 最小权限原则 | GA |
+
+## 生产最佳实践
+
+1. **最小权限**：遵循最小权限原则
+2. **命名空间隔离**：用 Role 命名空间隔离
+3. **ClusterRole 谨慎**：ClusterRole 谨慎使用
+4. **定期审计**：定期审计权限配置
+5. **与 ServiceAccount 配合**：Role + ServiceAccount

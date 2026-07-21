@@ -20,11 +20,11 @@ provenance:
   inferred: 0.10
   ambiguous: 0.05
 base_confidence: 0.88
-lifecycle: draft
-lifecycle_changed: 2026-07-11
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
 tier: core
 created: 2026-07-11T00:00:00Z
-updated: 2026-07-11T00:00:00Z
+updated: 2026-07-21
 ---
 
 # Vision Transformer (ViT)
@@ -179,3 +179,23 @@ ViT 的注意力图可以通过 Attention Rollout 技术可视化：逐层累积
 - [[概念/Vision/dino]] — DINOv2 (共享: vit, self-supervised)
 - [[概念/Vision/sam]] — Segment Anything Model (共享: vit, foundation-model)
 - [[概念/Vision/data-augmentation-cv]] — 数据增强 (共享: cv, training)
+
+---
+
+## 2026 ViT 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **ViT-L/H** | 大规模 ViT 模型达到 SOTA | GA |
+| **DINOv2** | 自监督 ViT 预训练，强泛化能力 | GA |
+| **SigLIP** | Sigmoid 损失替代 Softmax 的视觉编码器 | GA |
+| **高效 ViT** | MobileViT/EfficientViT 端侧部署 | GA |
+| **多模态 ViT** | 作为 VLM 的视觉编码器 | GA |
+
+## 生产最佳实践
+
+1. **预训练选择**：根据任务选择 DINOv2（理解）或 SigLIP（图文匹配）
+2. **分辨率适配**：ViT 对输入分辨率敏感，使用位置编码插值适配
+3. **微调策略**：小数据集只微调最后几层 + 分类头
+4. **推理优化**：使用 TensorRT 加速 ViT 推理，降低延迟
+5. **数据增强**：ViT 需要更强的数据增强（RandAugment/Mixup）

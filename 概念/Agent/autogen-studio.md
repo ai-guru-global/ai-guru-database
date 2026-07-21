@@ -3,12 +3,14 @@ title: "AutoGen Studio (多 Agent 可视化 IDE)"
 category: -concepts
 tags: ["multi-agent", "autogen", "microsoft", "visualization", "low-code"]
 relationships:
-  - target: "概念/autogen"
-    type: related_to
-  - target: "概念/crewai"
-    type: related_to
-  - target: "概念/agentops"
-    type: related_to
+  - target: "概念/Agent/autogen"
+    type: extends
+  - target: "概念/Agent/crewai"
+    type: alternative_to
+  - target: "概念/Agent/agentops"
+    type: integrates_with
+  - target: "概念/Agent/multi-agent"
+    type: implements
 sources:
   - 架构基建/AI_Stack_Deep_Dive.md
 summary: "Microsoft 开源的 AutoGen 可视化 IDE，通过拖拽界面构建和测试多 Agent 工作流，降低 AutoGen 的使用门槛。"
@@ -97,6 +99,83 @@ autogenstudio ui --port 8080
 - **教育**: 学习 AutoGen 和多 Agent 模式
 - **调试**: 可视化调试 Agent 行为
 - **演示**: 向非技术人员展示 Agent 能力
+- **内部工具**: 构建企业内部自动化助手
+
+## 工作流示例
+
+### 示例 1: 代码审查团队
+
+```yaml
+# code_review_team.yaml
+team:
+  name: "Code Review Team"
+  agents:
+    - name: "Security Reviewer"
+      role: "安全专家，检查代码安全漏洞"
+      skills: [code_analysis, security_scan]
+    - name: "Performance Reviewer"
+      role: "性能专家，优化代码性能"
+      skills: [profiling, benchmark]
+    - name: "Style Reviewer"
+      role: "代码风格检查，确保规范一致"
+      skills: [linting, formatting]
+  workflow:
+    type: "parallel_review"
+    aggregation: "consensus"
+```
+
+### 示例 2: 研究助手团队
+
+```yaml
+# research_team.yaml
+team:
+  name: "Research Assistant Team"
+  agents:
+    - name: "Searcher"
+      role: "搜索和收集信息"
+      skills: [web_search, arxiv_search]
+    - name: "Analyzer"
+      role: "分析和综合信息"
+      skills: [summarization, comparison]
+    - name: "Writer"
+      role: "撰写研究报告"
+      skills: [writing, citation]
+  workflow:
+    type: "sequential"
+    steps: [Searcher, Analyzer, Writer]
+```
+
+## 自定义 Skill 开发
+
+```python
+# custom_skill.py
+from autogenstudio.datamodel import Skill
+
+class DatabaseQuerySkill(Skill):
+    name = "database_query"
+    description = "执行 SQL 查询并返回结果"
+    
+    def __init__(self, connection_string: str):
+        self.conn = create_connection(connection_string)
+    
+    def execute(self, query: str, params: dict = None) -> dict:
+        # 1. 安全检查：只允许 SELECT
+        if not query.strip().upper().startswith("SELECT"):
+            return {"error": "只允许 SELECT 查询"}
+        
+        # 2. 执行查询
+        result = self.conn.execute(query, params or {})
+        
+        # 3. 返回结果
+        return {
+            "columns": result.keys(),
+            "rows": result.fetchall(),
+            "row_count": result.rowcount
+        }
+
+# 注册到 Studio
+skill = DatabaseQuerySkill("postgresql://...")
+```
 
 ## 2026 年生态现状
 
@@ -107,14 +186,38 @@ autogenstudio ui --port 8080
 | **与 LangGraph 对比** | AutoGen 偏多 Agent 对话，LangGraph 偏图编排 |
 | **MCP 支持** | 通过 MCP 接入外部工具 |
 | **社区** | GitHub 40k+ stars，Microsoft 维护 |
+| **企业采用** | Microsoft 365 Copilot 内部使用 |
+
+## 与竞品对比
+
+| 特性 | AutoGen Studio | LangGraph Studio | CrewAI+ |
+|------|----------------|------------------|---------|
+| **可视化构建** | ✅ 拖拽式 | ✅ 图编辑器 | ⚠️ 部分 |
+| **多 Agent 模式** | 对话/群聊 | 图/DAG | 角色/SOP |
+| **代码执行** | ✅ 内置 | ✅ 内置 | ✅ 内置 |
+| **MCP 支持** | ✅ | ✅ | ✅ |
+| **生产部署** | ⚠️ 需 SDK | ✅ Platform | ✅ Enterprise |
+| **学习曲线** | 低 | 中 | 低 |
+| **适用场景** | 原型/教育 | 复杂工作流 | 业务自动化 |
 
 ## 生产最佳实践
 
-1. **原型用 Studio，生产用代码**：Studio 适合探索，生产应用 AutoGen SDK
+1. **原型用 Studio，生产用 SDK**：Studio 适合探索，生产应用 AutoGen SDK
 2. **工具沙箱化**：代码执行工具必须在 Docker 沙箱中运行
 3. **限制最大轮次**：多 Agent 对话设置 max_round 防止无限循环
 4. **成本监控**：多 Agent 场景 LLM 调用量大，必须监控 Token 消耗
 5. **与 AgentOps 集成**：生产环境接入可观测性平台
+6. **配置版本化**：Agent 配置导出为 JSON/YAML，纳入 Git 管理
+7. **渐进式复杂度**：从单 Agent 开始，验证后再增加多 Agent 协作
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| Agent 无限循环 | 未设置 max_round | 配置最大轮次限制 |
+| 代码执行失败 | 缺少依赖库 | 在 Skill 中声明 libraries |
+| 响应缓慢 | 多 Agent 串行调用 | 改用并行工作流 |
+| 成本过高 | 重复调用 LLM | 启用缓存 + 精简 Prompt |
 
 ## 参考资源
 

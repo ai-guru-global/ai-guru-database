@@ -38,11 +38,11 @@ provenance:
   inferred: 0.15
   ambiguous: 0.05
 base_confidence: 0.75
-lifecycle: draft
-lifecycle_changed: 2026-05-31
-tier: supporting
-created: 2026-05-31 00:00:00+00:00
-updated: 2026-05-31 00:00:00+00:00
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
+tier: core
+created: 2026-05-31
+updated: 2026-07-21
 ---
 
 # AI智能体
@@ -110,11 +110,78 @@ RAG是单次检索增强的问答系统，无状态、无规划。Agent是多轮
 
 ## 开放问题
 
-- Agent的幻觉控制仍不完善，多步推理中错误会逐步累积 ^[ambiguous]
+- Agent的幻觉控制仍不完善，多步推理中错误会逐步累积
 - 长上下文和记忆限制：LLM上下文窗口有限，长期任务管理需外部存储方案
 - Agent无限循环防护（最大步数、循环检测、进度监控）是工程必需
 - 多智能体系统的通信开销和冲突解决缺乏通用方案
 - 生产环境Agent的可解释性和责任归属仍是法律灰色地带
+- 多模态 Agent（视觉+语言+操作）的评估标准尚未统一
+
+## 2026 年 Agent 生态现状
+
+| 类别 | 代表产品/框架 | 特点 |
+|------|------------------|------|
+| **编程 Agent** | Claude Code, Cursor, Windsurf, Devin | 自主完成软件开发任务 |
+| **通用 Agent** | ChatGPT + Tools, Claude + MCP | 多工具调用、多模态 |
+| **企业 Agent** | Microsoft Copilot, Google Gemini | 企业应用集成 |
+| **开源框架** | LangGraph, CrewAI, AutoGen, Agno | 可定制、可自托管 |
+| **协议标准** | MCP, A2A, AAIF | 工具调用、Agent 协作 |
+| **评估平台** | LangSmith, AgentOps, Braintrust | 可观测性、评估 |
+
+## 生产最佳实践
+
+1. **从简单开始**：先用单 Agent + 少量工具验证价值，再扩展复杂度
+2. **工具沙箱化**：代码执行、数据库操作等高风险工具必须隔离
+3. **设置护栏**：输入过滤、输出检查、最大步数、成本限制
+4. **可观测性**：全链路追踪，每个决策点可回溯
+5. **人在回路**：高风险操作必须人工确认
+6. **版本化配置**：Prompt、工具定义、模型路由纳入 Git
+7. **持续评估**：生产环境持续监控任务成功率、用户满意度
+
+## Agent 成熟度模型
+
+```yaml
+# Agent 成熟度自评
+level_1_experimental:
+  - single_agent: "单 Agent + 基础工具"
+  - manual_testing: "手动测试验证"
+  - no_monitoring: "无监控"
+
+level_2_production:
+  - multi_tool: "多工具集成"
+  - observability: "OpenTelemetry 追踪"
+  - guardrails: "输入输出护栏"
+  - human_in_loop: "高风险操作人工确认"
+
+level_3_enterprise:
+  - multi_agent: "多 Agent 协作"
+  - governance: "完整治理体系"
+  - compliance: "合规审计"
+  - self_healing: "自动降级与恢复"
+```
+
+## 2026 Agent 生态全景
+
+| 层次 | 代表 | 说明 |
+|------|------|------|
+| **基础模型** | GPT-4o, Claude 4, Gemini 2.5, Qwen3 | 原生工具调用 + 超长上下文 |
+| **推理模型** | o3, R1, QwQ, Gemini 2.5 Pro | 内置规划与自我验证 |
+| **编排框架** | LangGraph, CrewAI, AutoGen/AG2 | 多 Agent 协作与状态管理 |
+| **工具协议** | MCP, A2A, OpenAPI | 标准化工具接入与跨框架互操作 |
+| **可观测性** | LangSmith, AgentOps, Arize | 全链路追踪与评估 |
+| **部署平台** | Vercel AI SDK, Cloudflare Agents, AWS Bedrock | 生产级 Agent 托管 |
+
+## Agent 设计核心原则
+
+1. **单一职责**: 每个 Agent 专注一个领域，避免“方能” Agent
+2. **明确边界**: 清晰定义 Agent 能做什么、不能做什么
+3. **可观测**: 每步决策可追踪、可解释
+4. **容错设计**: 工具失败、模型幻觉、超时都需处理
+5. **人在回路**: 高风险操作必须人工确认
+6. **渐进式自治**: 从 L0（纯工具）逐步升级到 L3（全自治）
+7. **成本意识**: 每个 Agent 设置 token 预算和调用上限
+8. **安全护栏**: 输入输出过滤 + 工具权限控制 + 审计日志
+9. **测试验证**: 上线前用基准测试集验证 Agent 行为符合预期
 
 ## 来源
 

@@ -18,6 +18,8 @@ provenance:
   ambiguous: 0.10
 base_confidence: 0.80
 lifecycle: reviewed
+created: 2026-06-12
+updated: 2026-07-21
 tier: supporting
 ---
 
@@ -100,3 +102,23 @@ tier: supporting
 - [[概念/moonshot-kimi]] — Moonshot/Kimi 系列
 - [[概念/llm-data-engineering]] — LLM 数据工程
 - [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+
+---
+
+## 2026 智谱 GLM 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **GLM-4** | 智谱最新大模型 | GA |
+| **ChatGLM** | 对话模型 | GA |
+| **CodeGeeX** | 代码生成模型 | GA |
+| **开源模型** | 开源模型生态 | GA |
+| **API 服务** | 模型 API 服务 | GA |
+
+## 生产最佳实践
+
+1. **国产模型**：国产场景考虑智谱 GLM
+2. **开源优势**：开源模型可自托管
+3. **CodeGeeX**：代码生成用 CodeGeeX
+4. **与 DeepSeek 对比**：根据场景选择 GLM 或 DeepSeek
+5. **API 调用**：用 API 调用 GLM 模型

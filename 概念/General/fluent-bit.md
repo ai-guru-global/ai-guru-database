@@ -4,7 +4,7 @@ category: -concepts
 tags: ["kubernetes", "k8s", "observability", "logging", "fluentd", "cloud-native", "alibaba-cloud"]
 summary: "Fluent Bit 是 CNCF 孵化的轻量级日志处理器和转发器，资源占用极低，是 Kubernetes 场景下替代 Fluentd 的主流日志 Agent。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
 aliases:
   - "FluentBit"
@@ -79,3 +79,23 @@ data:
 - [[概念/opentelemetry|OpenTelemetry]] — 统一可观测性
 - [[概念/kubernetes|Kubernetes]] — 容器编排
 - [[架构基建/Kubernetes_Observability_Stack|Kubernetes 可观测性栈]]
+
+---
+
+## 2026 Fluent Bit 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Fluent Bit** | 轻量级日志采集器 | GA |
+| **K8s DaemonSet** | K8s 日志采集 | GA |
+| **多输出** | 支持多种输出后端 | GA |
+| **与 Loki 配合** | Fluent Bit + Loki | GA |
+| **与 OpenTelemetry 配合** | Fluent Bit + OTel | GA |
+
+## 生产最佳实践
+
+1. **日志采集**：K8s 日志用 Fluent Bit 采集
+2. **轻量级**：Fluent Bit 比 Fluentd 更轻量
+3. **与 Loki 配合**：Fluent Bit + Loki 日志栈
+4. **资源限制**：配置 Fluent Bit 资源限制
+5. **过滤规则**：配置日志过滤规则

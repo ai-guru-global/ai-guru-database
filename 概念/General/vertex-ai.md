@@ -22,7 +22,7 @@ base_confidence: 0.85
 lifecycle: reviewed
 tier: core
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-07-21
 aliases:
   - "Vertex Ai"
   - "vertex ai"
@@ -97,3 +97,23 @@ aliases:
 - [[概念/gemini]] — Gemini
 - [[概念/aws-bedrock]] — AWS Bedrock
 - [[概念/azure-openai]] — Azure OpenAI
+
+---
+
+## 2026 Vertex AI 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Vertex AI** | GCP AI 平台 | GA |
+| **Gemini 系列** | Google Gemini 模型 | GA |
+| **Model Garden** | 模型市场 | GA |
+| **Vertex AI Search** | 企业搜索 | GA |
+| **Vertex AI Agent** | Agent 构建 | GA |
+
+## 生产最佳实践
+
+1. **GCP 环境**：GCP 环境用 Vertex AI
+2. **Gemini 模型**：Google 模型用 Gemini
+3. **Model Garden**：从 Model Garden 选择模型
+4. **Vertex AI Search**：企业搜索用 Vertex AI Search
+5. **与 AWS/Azure 对比**：根据云环境选择平台

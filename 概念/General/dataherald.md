@@ -16,6 +16,8 @@ provenance:
   ambiguous: 0.10
 base_confidence: 0.78
 lifecycle: reviewed
+created: 2026-06-12
+updated: 2026-07-21
 tier: supporting
 ---
 
@@ -106,3 +108,23 @@ pip install dataherald
 - [[概念/llamaindex]] — LlamaIndex RAG 框架
 - [[概念/langchain]] — LangChain 应用开发框架
 - [[概念/query]] — DuckDB SQL 查询
+
+---
+
+## 2026 Dataherald 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Dataherald** | NL2SQL 引擎 | GA |
+| **自然语言查询** | 自然语言转 SQL | GA |
+| **多数据库支持** | 支持多种数据库 | GA |
+| **LLM 集成** | LLM 驱动查询 | GA |
+| **与 LangChain 集成** | LangChain 集成 | GA |
+
+## 生产最佳实践
+
+1. **NL2SQL**：自然语言查询用 Dataherald
+2. **多数据库**：支持多种数据库
+3. **LLM 驱动**：用 LLM 驱动查询生成
+4. **与 LangChain 配合**：Dataherald + LangChain
+5. **安全查询**：查询安全控制

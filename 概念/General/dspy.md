@@ -18,6 +18,8 @@ provenance:
   ambiguous: 0.10
 base_confidence: 0.85
 lifecycle: reviewed
+created: 2026-06-12
+updated: 2026-07-21
 tier: core
 ---
 
@@ -128,3 +130,23 @@ pip install dspy-ai
 - [[概念/langchain]] — LangChain LLM 应用框架
 - [[概念/llamaindex]] — LlamaIndex RAG 框架
 - [[概念/humanloop]] — Humanloop Prompt 工程与评估
+
+---
+
+## 2026 DSPy 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **DSPy 2.x** | 声明式 LLM 编程框架，自动优化 Prompt | GA |
+| **MIPRO 优化器** | 多指令提示优化，自动搜索最优 Prompt | GA |
+| **DSPy Assertions** | 运行时约束检查与自动重试 | GA |
+| **RAG 模块** | 内置检索增强生成模块 | GA |
+| **多模型编排** | 支持多 LLM 组合的复杂工作流 | GA |
+
+## 生产最佳实践
+
+1. **签名先行**：先定义清晰的 Signature（输入输出规范），再组合模块
+2. **编译优化**：生产前必须用 MIPRO/BootstrapFewShot 编译优化 Prompt
+3. **评估驱动**：定义 metric 函数，用 evaluate 验证优化效果
+4. **缓存复用**：启用 LM 缓存避免重复调用，降低成本
+5. **版本管理**：编译后的 Prompt 纳入版本控制，确保可复现

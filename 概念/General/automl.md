@@ -17,11 +17,11 @@ provenance:
   inferred: 0.15
   ambiguous: 0.05
 base_confidence: 0.75
-lifecycle: draft
-lifecycle_changed: 2026-05-31
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
 tier: supporting
 created: 2026-05-31T00:00:00Z
-updated: 2026-05-31T00:00:00Z
+updated: 2026-07-21
 ---
 
 # AutoML
@@ -134,3 +134,23 @@ Featuretools 是最流行的自动化特征工程库，核心是**深度特征�
 - [[机器学习/Anomaly_Detection/Anomaly_Detection_for_dummy.md|Anomaly_Detection_for_dummy]]
 - [[机器学习/AutoML/AutoML.md|AutoML]]
 - [[治理/anomaly-detection-automl|异常检测 × AutoML]] — 自动化异常发现的交叉合成
+
+---
+
+## 2026 AutoML 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **AutoGPTQ/AWQ** | 自动量化搜索最优量化配置 | GA |
+| **NAS for LLM** | 神经架构搜索应用于大模型设计 | 研究 |
+| **HPO 平台** | Optuna/Ray Tune 超参优化即服务 | GA |
+| **AutoML 微调** | 自动选择 LoRA rank/alpha/目标层 | GA |
+| **数据自动工程** | 自动特征选择、数据增强、清洗 | GA |
+
+## 生产最佳实践
+
+1. **搜索空间约束**：合理限定超参搜索范围，避免无效搜索浪费资源
+2. **早停策略**：配置 early stopping 及时终止无希望的试验
+3. **可复现性**：记录每次试验的完整配置，确保最优结果可复现
+4. **资源预算**：设定 GPU 小时上限，避免 AutoML 无限消耗资源
+5. **人工审核**：AutoML 结果需人工审核合理性，不盲目采用

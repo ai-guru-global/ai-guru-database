@@ -72,6 +72,33 @@ aliases:
 7. 熔断与限流：异常调用自动停止
 ```
 
+### 安全校验流程
+
+```python
+class ToolCallSecurityGuard:
+    def validate(self, tool_call: ToolCall, context: Context) -> ValidationResult:
+        # 1. 权限检查
+        if not self.rbac.can_access(context.user, tool_call.tool_name):
+            return ValidationResult.denied("权限不足")
+        
+        # 2. 参数 Schema 校验
+        if not self.schema_validator.validate(tool_call.args, tool_call.schema):
+            return ValidationResult.denied("参数非法")
+        
+        # 3. 危险模式检测
+        if self.threat_detector.has_injection(tool_call.args):
+            return ValidationResult.denied("检测到注入攻击")
+        
+        # 4. 高风险操作人工确认
+        if tool_call.risk_level >= RiskLevel.HIGH:
+            if not self.human_approval.request(tool_call):
+                return ValidationResult.denied("用户拒绝执行")
+        
+        # 5. 审计日志
+        self.audit.log(tool_call, context)
+        return ValidationResult.approved()
+```
+
 ### 关键技术与实践
 
 | 技术 | 作用 |
@@ -108,12 +135,61 @@ aliases:
 3. **全程审计**：记录谁、何时、为什么、调用了什么、结果如何
 4. **参数严格校验**：Schema 校验 + 类型检查 + 范围检查，拒绝注入
 5. **熔断与限流**：异常调用自动停止，防止无限循环
+6. **工具描述安全**：防止 function schema 被 prompt 注入利用
+7. **定期红队测试**：模拟攻击场景，发现安全漏洞
+
+## 安全测试清单
+
+```yaml
+# 工具调用安全测试清单
+injection_tests:
+  - sql_injection: "参数中包含 SQL 注入语句"
+  - command_injection: "参数中包含 shell 命令"
+  - path_traversal: "参数中包含 ../ 路径穿越"
+  - prompt_injection: "工具描述中嵌入恶意指令"
+
+permission_tests:
+  - horizontal_escalation: "访问其他用户的数据"
+  - vertical_escalation: "调用管理员专用工具"
+  - tool_chain_abuse: "通过工具链绕过权限"
+
+resilience_tests:
+  - infinite_loop: "工具调用陷入死循环"
+  - resource_exhaustion: "大量并发调用耗尽资源"
+  - cascade_failure: "一个工具失败引发连锁反应"
+```
+
+## MCP 安全策略
+
+Model Context Protocol (MCP) 提供了标准化的工具安全机制：
+
+| 机制 | 说明 |
+|------|------|
+| **Tool Annotations** | 工具描述中标注风险等级、副作用、幂等性 |
+| **Capability Negotiation** | 客户端/服务端协商安全能力 |
+| **OAuth 2.1 授权** | 标准化的权限授权流程 |
+| **Sandbox Hints** | 提示客户端是否需要沙箱执行 |
+| **Audit Trail** | 标准化审计日志格式 |
 
 ## 开放问题
 
-- 多 Agent 协作时的责任归属与权限传递。
-- 工具描述（function schema）被 prompt 注入利用的风险。
-- 自主 Agent 的“停止条件”如何保证。
+- 多 Agent 协作时的责任归属与权限传递
+- 工具描述（function schema）被 prompt 注入利用的风险
+- 自主 Agent 的“停止条件”如何保证
+- 工具调用链的原子性与事务性保证
+- 分布式 Agent 系统的权限一致性问题
+
+## 安全事件响应
+
+当检测到工具调用安全事件时：
+
+```
+1. 检测 → 熔断器触发，立即停止当前 Agent
+2. 隔离 → 保存现场，断开外部连接
+3. 分析 → 审计日志回溯，确定影响范围
+4. 修复 → 修补漏洞，更新安全策略
+5. 复盘 → 形成报告，更新测试用例
+```
 
 ## Related
 

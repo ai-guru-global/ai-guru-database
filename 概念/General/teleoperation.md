@@ -4,7 +4,7 @@ category: -concepts
 tags: ["teleoperation", "robotics", "embodied-ai", "vla", "imitation-learning"]
 summary: "遥操作是具身智能数据采集的核心手段——人类远程控制机器人执行任务，记录操作轨迹用于模仿学习。"
 created: 2026-06-12
-updated: 2026-06-12
+updated: 2026-07-21
 tier: core
 aliases:
   - Teleoperation
@@ -56,3 +56,23 @@ sources:
 
 - [[强化学习/Robotics_Embodied_AI/VLA_Embodied_AI_2026]] — VLA 具身智能 2026
 - [[强化学习/Robotics_Embodied_AI/Humanoid_Robot_2026]] — 人形机器人 2026
+
+---
+
+## 2026 遥操作生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **遥操作** | 远程控制机器人 | GA |
+| **力反馈** | 触觉力反馈 | GA |
+| **VR/AR 控制** | 虚拟现实控制 | GA |
+| **数据收集** | 遥操作数据收集 | GA |
+| **模仿学习** | 从遥操作学习 | 研究 |
+
+## 生产最佳实践
+
+1. **数据收集**：遥操作收集训练数据
+2. **力反馈**：精细操作用力反馈
+3. **VR 控制**：VR 控制提高沉浸感
+4. **模仿学习**：从遥操作数据学习
+5. **低延迟**：遥操作需要低延迟

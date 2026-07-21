@@ -20,11 +20,11 @@ provenance:
   inferred: 0.1
   ambiguous: 0.05
 base_confidence: 0.82
-lifecycle: draft
-lifecycle_changed: 2026-06-03
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
 tier: supporting
 created: 2026-06-03 00:00:00+00:00
-updated: 2026-06-03 00:00:00+00:00
+updated: 2026-07-21 00:00:00+00:00
 aliases:
   - "Rdma Roce"
   - "rdma roce"
@@ -106,3 +106,23 @@ AI Stack 16 卡版网络
 - [[概念/distributed-systems]] — 分布式系统
 - [[概念/training-inference-unification]] — 训推一体
 - [[架构基建/AI_Stack_Deep_Dive]] — 阿里云 AI Stack
+
+---
+
+## 2026 RDMA/RoCE 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **RDMA** | 远程直接内存访问 | GA |
+| **RoCE** | 以太网 RDMA | GA |
+| **InfiniBand** | 高速互联 | GA |
+| **NCCL** | NVIDIA 集合通信 | GA |
+| **GPU Direct** | GPU 直接通信 | GA |
+
+## 生产最佳实践
+
+1. **分布式训练**：分布式训练用 RDMA/RoCE
+2. **NCCL 优化**：优化 NCCL 通信性能
+3. **GPU Direct**：启用 GPU Direct 减少拷贝
+4. **与 InfiniBand 对比**：根据场景选择 RoCE 或 IB
+5. **网络监控**：监控 RDMA 网络性能

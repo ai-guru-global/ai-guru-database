@@ -20,7 +20,7 @@ base_confidence: 0.88
 lifecycle: reviewed
 tier: core
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-07-21
 ---
 
 # 单租户架构 (Single-Tenant Architecture)
@@ -113,3 +113,23 @@ AI Stack 单租户架构
 - [[概念/ai-architecture]] — AI 架构（架构选型）
 - [[概念/model-gateway]] — 模型网关（单租户 API 管理）
 - [[架构基建/AI_Stack_Deep_Dive]] — AI Stack（单租户实现）
+
+---
+
+## 2026 单租户架构生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **专属 GPU 集群** | 客户独占 GPU 资源，数据不出域 | GA |
+| **VPC 私有部署** | 在客户 VPC 内部署完整 AI 栈 | GA |
+| **模型隔离** | 每个租户独立模型实例，避免资源争抢 | GA |
+| **合规审计** | 满足金融/医疗/政务行业数据主权要求 | GA |
+| **混合云单租** | 公有云控制面 + 私有数据面混合架构 | 研究 |
+
+## 生产最佳实践
+
+1. **资源隔离**：使用 Kubernetes Namespace + ResourceQuota 实现硬隔离
+2. **网络策略**：NetworkPolicy 限制租户间网络通信，默认拒绝所有跨租户流量
+3. **密钥管理**：每个租户独立加密密钥，使用 Vault/KMS 管理
+4. **成本透明**：按租户维度计量 GPU/存储/网络资源，提供账单明细
+5. **运维自动化**：单租户不代表手动运维，仍需 GitOps + 自动化巡检

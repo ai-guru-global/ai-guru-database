@@ -22,6 +22,8 @@ provenance:
   ambiguous: 0.10
 base_confidence: 0.85
 lifecycle: reviewed
+created: 2026-06-12
+updated: 2026-07-21
 tier: supporting
 ---
 
@@ -179,3 +181,23 @@ accelerate launch --mixed_precision fp8 train.py
 - [[概念/mixed-precision]] — 混合精度
 - [[概念/huggingface]] — Hugging Face 平台
 - [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+
+---
+
+## 2026 Accelerate 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **多卡训练** | 一行代码切换 DDP/FSDP/DeepSpeed | GA |
+| **混合精度** | FP16/BF16/FP8 自动混合精度训练 | GA |
+| **量化训练** | QLoRA/bitsandbytes 集成 | GA |
+| **多节点** | 跨节点分布式训练透明支持 | GA |
+| **CPU/NPU 支持** | 支持 Apple Silicon/华为 NPU | GA |
+
+## 生产最佳实践
+
+1. **配置先行**：用 `accelerate config` 生成配置文件，避免硬编码
+2. **FSDP 大模型**：70B+ 模型必用 FSDP 或 DeepSpeed ZeRO-3
+3. **梯度累积**：显存不足时用 gradient_accumulation_steps 模拟大 batch
+4. **日志集成**：配置 report_to 集成 W&B/TensorBoard 监控训练
+5. **断点续训**：启用 save_state/load_state 支持容错恢复

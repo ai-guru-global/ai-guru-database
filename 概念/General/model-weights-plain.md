@@ -10,10 +10,10 @@ relationships:
   - target: "概念/model-compression"
     type: extends
 summary: 用生活化的类比解释大模型的"权重"：模型从训练数据中学到的全部经验，以几十亿个浮点数的形式存储，就是模型的"大脑"。
-lifecycle: draft
+lifecycle: reviewed
 tier: core
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-07-21
 aliases:
   - "Model Weights"
   - "model weights"
@@ -103,4 +103,24 @@ sources: []
 
 ---
 
-*相关概念: [[概念/tokenization|Tokenization]]、[[概念/lora-peft|LoRA 与参数高效微调]]、[[概念/model-compression|模型压缩]]、[[概念/mixed-precision|混合精度训练与推理]]*
+*相关概念: [[概念/tokenization|Tokenization]]、[[概念/lora-peft|LoRA 与参数高效 微调]]、[[概念/model-compression|模型压缩]]、[[概念/mixed-precision|混合精度训练与推理]]*
+
+---
+
+## 2026 模型权重生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **SafeTensors** | 安全权重格式 | GA |
+| **量化权重** | INT8/INT4 量化 | GA |
+| **LoRA 权重** | 低秩适配权重 | GA |
+| **权重共享** | 多模型权重共享 | GA |
+| **权重流式加载** | 大模型流式加载 | GA |
+
+## 生产最佳实践
+
+1. **SafeTensors**：权重存储用 SafeTensors 格式
+2. **量化**：推理用量化权重节省显存
+3. **LoRA 权重**：微调用 LoRA 权重
+4. **权重管理**：权重版本管理
+5. **安全加载**：权重安全加载

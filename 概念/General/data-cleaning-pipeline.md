@@ -23,7 +23,7 @@ lifecycle: reviewed
 lifecycle_changed: 2026-06-16
 tier: core
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-07-21
 aliases:
   - "Data Cleaning Pipeline"
   - "data cleaning pipeline"
@@ -98,3 +98,23 @@ aliases:
 - [[概念/synthetic-data]] — 合成数据
 - [[模型训练/Data/Data_Curation_and_Mixture_2026]] — 数据策展与配比 2026
 - [[大模型/LLM_Data_Engineering/README]] — 大模型数据工程
+
+---
+
+## 2026 数据清洗生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **数据去重** | 重复数据去除 | GA |
+| **质量过滤** | 低质量数据过滤 | GA |
+| **敏感信息** | 敏感信息脱敏 | GA |
+| **数据配比** | 训练数据配比 | GA |
+| **合成数据** | 合成数据增强 | GA |
+
+## 生产最佳实践
+
+1. **数据去重**：训练数据必须去重
+2. **质量过滤**：过滤低质量数据
+3. **敏感信息**：敏感信息脱敏处理
+4. **数据配比**：合理配置数据配比
+5. **合成数据**：用合成数据增强

@@ -19,11 +19,11 @@ provenance:
   inferred: 0.15
   ambiguous: 0.05
 base_confidence: 0.75
-lifecycle: draft
-lifecycle_changed: 2026-05-31
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
 tier: core
 created: 2026-05-31T00:00:00Z
-updated: 2026-05-31T00:00:00Z
+updated: 2026-07-21
 ---
 
 # AI历史
@@ -176,3 +176,23 @@ AI发展呈现"技术突破→过度乐观→泡沫破裂→技术成熟"的周�
 
 - [[概念/ai-fundamentals]] — AI基础概念 (共享: ai, 深度学习)
 - [[概念/ai-technology-landscape]] — AI技术全景 (共享: ai, 深度学习)
+
+---
+
+## 2026 AI 历史生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Transformer 革命** | 2017 Attention Is All You Need 开启大模型时代 | 里程碑 |
+| **ChatGPT 时刻** | 2022 对话式 AI 引爆全球关注 | 里程碑 |
+| **开源追赶** | LLaMA/Qwen/Mistral 开源模型达到商用水平 | GA |
+| **多模态融合** | 2024-2026 图文音视频统一模型 | GA |
+| **Agent 时代** | 2025-2026 自主智能体成为主流范式 | GA |
+
+## 生产最佳实践
+
+1. **以史为鉴**：理解 AI 寒冬与复苏的规律，避免过度乐观或悲观
+2. **技术累积**：当前突破建立在数十年研究积累之上，重视基础研究
+3. **开源价值**：开源生态加速了 AI 民主化，积极参与社区贡献
+4. **伦理反思**：每次技术飞跃都伴随伦理挑战，提前思考应对
+5. **持续学习**：AI 发展速度前所未有，保持终身学习习惯

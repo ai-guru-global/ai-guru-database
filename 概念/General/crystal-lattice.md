@@ -4,12 +4,12 @@ category: -concepts
 tags: ["crystal-lattice", "materials-science", "ai-for-science", "gnn"]
 summary: "晶体点阵是材料科学的基础概念——原子在空间中的周期性排列结构，GNN 和图神经网络常用于建模晶体结构。"
 created: 2026-06-12
-updated: 2026-06-12
+updated: 2026-07-21
 tier: core
 aliases:
   - "Crystal Lattice"
   - "crystal lattice"
-lifecycle: draft
+lifecycle: reviewed
 provenance:
   extracted: 0.70
   inferred: 0.25
@@ -53,4 +53,24 @@ relationships:
 ## 相关阅读
 
 - [[行业应用/AI_for_Science/Materials_Science_and_Energy_2026]] — AI 材料科学
-- [[深度学习/Graph_Neural_Networks/Graph_Neural_Networks_Deep_Dive]] — 图神经网络深度解读
+- [[深度学习/Graph_Neural_Networks/Graph_Neural_Networks_Deep_Dive]] — 图神经网 络深度解读
+
+---
+
+## 2026 晶格生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **GNN 材料预测** | 图神经网络预测材料性质 | GA |
+| **晶体结构预测** | AI 预测晶体结构 | 研究 |
+| **材料发现** | AI 加速新材料发现 | 研究 |
+| **DFT 计算** | 密度泛函理论计算 | GA |
+| **材料数据库** | 材料性质数据库 | GA |
+
+## 生产最佳实践
+
+1. **GNN 建模**：材料性质用 GNN 建模
+2. **DFT 计算**：精确计算用 DFT
+3. **材料数据库**：利用材料数据库
+4. **AI 加速**：AI 加速材料发现
+5. **实验验证**：AI 预测需实验验证

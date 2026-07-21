@@ -20,6 +20,8 @@ provenance:
   ambiguous: 0.05
 base_confidence: 0.90
 lifecycle: reviewed
+created: 2026-06-12
+updated: 2026-07-21
 tier: core
 ---
 
@@ -156,3 +158,23 @@ curl -X POST http://<ai-stack-ip>:<gateway-port>/v1/chat/completions \
 - [[概念/single-tenant-architecture]] — 单租户架构
 - [[概念/model-serving]] — 模型服务
 - [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+
+---
+
+## 2026 Synapse Gateway 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **统一 API 网关** | 多模型提供商统一入口与路由 | GA |
+| **智能路由** | 基于成本/延迟/质量的动态模型选择 | GA |
+| **流量控制** | 限流、熔断、重试、超时策略 | GA |
+| **可观测性** | 请求级 tracing、token 计量、质量监控 | GA |
+| **安全护栏** | 输入/输出内容审核与敏感信息过滤 | GA |
+
+## 生产最佳实践
+
+1. **多模型回退**：配置主备模型，主模型不可用时自动切换
+2. **缓存策略**：相同请求启用语义缓存，降低重复调用成本
+3. **配额管理**：按团队/项目设置 token 配额，防止资源滥用
+4. **延迟监控**：跟踪 P50/P95/P99 延迟，设置 SLO 告警
+5. **版本管理**：模型版本更新走金丝雀发布，确认无回归后全量

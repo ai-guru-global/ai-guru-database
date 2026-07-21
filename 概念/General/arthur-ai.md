@@ -18,6 +18,8 @@ provenance:
   ambiguous: 0.10
 base_confidence: 0.78
 lifecycle: reviewed
+created: 2026-06-12
+updated: 2026-07-21
 tier: supporting
 ---
 
@@ -87,3 +89,23 @@ Arthur Shield 架构:
 - [[概念/guardrails-ai]] — Guardrails AI 安全防护框架
 - [[概念/llm-guard]] — LLM Guard 安全防护中间件
 - [[概念/nemo-guardrails]] — NVIDIA NeMo Guardrails
+
+---
+
+## 2026 Arthur AI 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Arthur Shield** | LLM 安全防护 | GA |
+| **模型监控** | 模型性能监控 | GA |
+| **漂移检测** | 数据/模型漂移检测 | GA |
+| **可解释性** | 模型可解释性 | GA |
+| **LLM 评估** | LLM 输出评估 | GA |
+
+## 生产最佳实践
+
+1. **LLM 安全**：LLM 应用用 Arthur Shield 防护
+2. **模型监控**：生产模型用 Arthur 监控
+3. **漂移检测**：监控数据/模型漂移
+4. **可解释性**：模型决策可解释
+5. **与 Guardrails 对比**：Arthur 企业级，Guardrails 开源

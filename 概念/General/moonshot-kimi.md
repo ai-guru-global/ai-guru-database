@@ -18,6 +18,8 @@ provenance:
   ambiguous: 0.10
 base_confidence: 0.80
 lifecycle: reviewed
+created: 2026-06-12
+updated: 2026-07-21
 tier: supporting
 ---
 
@@ -104,3 +106,23 @@ AI Stack 模型生态
 - [[概念/deepseek-models]] — DeepSeek 系列
 - [[概念/zhipu-glm]] — 智谱 GLM 系列
 - [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+
+---
+
+## 2026 Moonshot/Kimi 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Kimi** | Moonshot 大模型 | GA |
+| **长上下文** | 超长上下文支持 | GA |
+| **Kimi API** | 模型 API 服务 | GA |
+| **开源模型** | 开源模型生态 | GA |
+| **多模态** | 多模态能力 | GA |
+
+## 生产最佳实践
+
+1. **长上下文**：长文档处理用 Kimi
+2. **国产模型**：国产场景考虑 Kimi
+3. **API 调用**：用 API 调用 Kimi
+4. **与 DeepSeek 对比**：根据场景选择 Kimi 或 DeepSeek
+5. **开源优势**：开源模型可自托管

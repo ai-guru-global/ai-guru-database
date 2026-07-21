@@ -18,11 +18,11 @@ provenance:
   inferred: 0.13
   ambiguous: 0.05
 base_confidence: 0.83
-lifecycle: draft
-lifecycle_changed: 2026-07-11
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
 tier: core
 created: 2026-07-11T00:00:00Z
-updated: 2026-07-11T00:00:00Z
+updated: 2026-07-21
 ---
 
 # NeRF — 神经辐射场
@@ -193,3 +193,23 @@ NeRF 的 MLP 采用特殊设计以实现视图相关的颜色：
 - [[概念/Vision/vit]] — Vision Transformer (共享: neural-network, computer-vision)
 - [[概念/Vision/dino]] — DINOv2 (共享: feature-extraction, 3d-reconstruction)
 - [[概念/generative-vision-models]] — 生成式视觉模型 (共享: neural-rendering)
+
+---
+
+## 2026 NeRF 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **3D Gaussian Splatting** | 替代 NeRF 的实时三维重建 | GA |
+| **Instant-NGP** | 多分辨率哈希编码加速 NeRF 训练 | GA |
+| **动态 NeRF** | 动态场景重建与编辑 | GA |
+| **文本引导** | 文本指令编辑 3D 场景 | 研究 |
+| **工业应用** | 数字孪生/VR/AR 三维重建 | GA |
+
+## 生产最佳实践
+
+1. **3DGS 优先**：新项目优先考虑 3D Gaussian Splatting，速度更快
+2. **数据采集**：多角度、均匀光照的图像采集是重建质量的关键
+3. **训练加速**：使用 Instant-NGP 或 3DGS 大幅缩短训练时间
+4. **质量评估**：用 PSNR/SSIM/LPIPS 多维度评估重建质量
+5. **部署优化**：Web 端使用 WebGL 渲染，移动端用专用渲染器

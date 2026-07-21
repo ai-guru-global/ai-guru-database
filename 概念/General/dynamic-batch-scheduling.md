@@ -25,7 +25,7 @@ lifecycle: reviewed
 lifecycle_changed: 2026-06-16
 tier: core
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-07-21
 aliases:
   - "Dynamic Batch Scheduling"
   - "dynamic batch scheduling"
@@ -102,3 +102,23 @@ Step 4: A 完成退出，F 加入 → D + E + F
 - [[概念/inference-performance]] — 推理性能
 - [[部署推理/Inference_Performance/Request_Scheduling_for_LLMs]] — LLM 请求调度
 - [[部署推理/Inference_Engines/vLLM_Deep_Dive]] — vLLM 深度解析
+
+---
+
+## 2026 动态批调度生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Continuous Batching** | 连续批处理 | GA |
+| **vLLM** | 高性能推理引擎 | GA |
+| **TensorRT-LLM** | NVIDIA 推理优化 | GA |
+| **请求调度** | LLM 请求调度 | GA |
+| **PagedAttention** | 分页注意力 | GA |
+
+## 生产最佳实践
+
+1. **Continuous Batching**：推理用 Continuous Batching
+2. **vLLM 部署**：LLM 推理用 vLLM
+3. **请求调度**：优化请求调度策略
+4. **PagedAttention**：启用 PagedAttention
+5. **监控指标**：监控批处理效率指标

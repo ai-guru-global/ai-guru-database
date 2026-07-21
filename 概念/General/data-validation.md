@@ -4,7 +4,7 @@ category: -concepts
 tags: ["mlops", "data-quality", "pipeline", "alibaba-cloud"]
 summary: "Data Validation 是在 ML/LLM 训练流水线中对输入数据进行自动化校验的过程，确保数据符合预期的 schema、统计分布和语义质量。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
 aliases:
   - "数据验证"
@@ -52,3 +52,23 @@ sources: []
 - [[概念/evidently|Evidently]]
 - [[概念/mlops|MLOps]]
 - [[模型运维/Troubleshooting/Data_Validation_Failure_Runbook|数据验证失败 Runbook]]
+
+---
+
+## 2026 数据验证生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Great Expectations** | 数据质量框架 | GA |
+| **Pandera** | Python 数据验证库 | GA |
+| **Evidently** | 数据漂移检测 | GA |
+| **Schema 验证** | 数据结构验证 | GA |
+| **统计检查** | 数据分布统计检查 | GA |
+
+## 生产最佳实践
+
+1. **Schema 验证**：数据处理前验证 Schema
+2. **CI/CD 集成**：数据验证集成到 CI/CD
+3. **漂移检测**：监控数据漂移
+4. **与 Pandera 对比**：GE 更强大，Pandera 更轻量
+5. **告警配置**：数据验证失败时告警

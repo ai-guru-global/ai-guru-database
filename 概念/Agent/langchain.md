@@ -134,6 +134,62 @@ executor.invoke({"input": "如何配置 HPA？"})
 4. **流式输出**: 用户交互场景必须启用 streaming
 5. **错误重试**: 配置 `max_retries` 和 fallback 模型
 6. **避免过度抽象**: 简单场景直接用 SDK，不必强行套 LangChain
+7. **版本锁定**: langchain-core 和集成包版本要匹配，避免兼容问题
+
+## 9. MCP 集成
+
+```python
+from langchain_mcp_adapters import load_mcp_tools
+from langchain.agents import create_tool_calling_agent
+
+# 加载 MCP 服务器工具
+mcp_tools = load_mcp_tools(
+    server_params={"command": "npx", "args": ["-y", "@modelcontextprotocol/server-github"]}
+)
+
+# 创建支持 MCP 的 Agent
+agent = create_tool_calling_agent(llm, mcp_tools, prompt)
+executor = AgentExecutor(agent=agent, tools=mcp_tools)
+```
+
+## 10. 部署模式
+
+| 模式 | 适用场景 | 工具 |
+|------|----------|------|
+| **LangServe** | REST API 服务 | FastAPI + LangServe |
+| **LangGraph Cloud** | 托管 Agent | LangGraph Platform |
+| **Ray Serve** | 高吞吐 | Ray + LangChain |
+| **Kubernetes** | 企业级 | K8s + LangServe |
+| **Serverless** | 事件驱动 | AWS Lambda / Vercel |
+
+```python
+# LangServe 示例
+from langserve import add_routes
+from fastapi import FastAPI
+
+app = FastAPI()
+add_routes(app, chain, path="/my-chain")
+# POST /my-chain/invoke
+```
+
+## 11. 性能优化
+
+| 优化项 | 方法 | 效果 |
+|--------|------|------|
+| **批处理** | `chain.batch([...])` | 吞吐量提升 3-5× |
+| **流式** | `chain.stream()` | 首 Token 延迟降低 |
+| **缓存** | `set_llm_cache(RedisCache())` | 重复查询 0 延迟 |
+| **异步** | `await chain.ainvoke()` | 并发处理 |
+| **模型路由** | 简单任务用小模型 | 成本降低 50%+ |
+
+## 12. 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| API 不兼容 | 版本不匹配 | 锁定 langchain-core 版本 |
+| 性能开销 | 抽象层多 | 简单场景用原生 SDK |
+| 调试困难 | 链式调用难追踪 | 接入 LangSmith |
+| 内存泄漏 | 长对话未清理 | 使用 ConversationSummaryMemory |
 
 ## Related
 

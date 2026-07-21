@@ -16,6 +16,8 @@ provenance:
   ambiguous: 0.10
 base_confidence: 0.85
 lifecycle: reviewed
+created: 2026-06-12
+updated: 2026-07-21
 tier: core
 ---
 
@@ -105,3 +107,23 @@ text = sp.decode(tokens)
 - [[概念/tokenization]] — 分词与 Tokenization
 - [[概念/llm-architectures]] — LLM 架构
 - [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+
+---
+
+## 2026 SentencePiece 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **SentencePiece** | 语言无关分词器 | GA |
+| **BPE** | 字节对编码 | GA |
+| **Unigram** | Unigram 语言模型 | GA |
+| **多语言支持** | 多语言分词 | GA |
+| **与 Tokenizers 对比** | SentencePiece vs HF Tokenizers | GA |
+
+## 生产最佳实践
+
+1. **多语言分词**：多语言模型用 SentencePiece
+2. **BPE 训练**：用 BPE 训练分词器
+3. **与 Tokenizers 对比**：根据需求选择分词器
+4. **词表大小**：合理设置词表大小
+5. **特殊 token**：正确配置特殊 token

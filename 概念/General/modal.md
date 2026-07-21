@@ -22,7 +22,7 @@ base_confidence: 0.85
 lifecycle: reviewed
 tier: core
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-07-21
 aliases:
   - Modal
 
@@ -114,3 +114,23 @@ def main():
 - [[概念/serverless]] — 无服务器
 - [[概念/vllm]] — vLLM
 - [[概念/replicate]] — Replicate
+
+---
+
+## 2026 Modal 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Modal Functions** | Python 装饰器声明式 GPU 函数部署 | GA |
+| **Modal Volumes** | 持久化分布式存储，支持模型权重缓存 | GA |
+| **Modal Sandbox** | 安全沙箱执行不可信代码 | GA |
+| **A100/H100 弹性** | 按秒计费的多型号 GPU 弹性调度 | GA |
+| **Modal CI/CD** | 与 GitHub Actions 集成的自动化部署 | GA |
+
+## 生产最佳实践
+
+1. **冷启动优化**：使用 `@app.cls` 缓存模型加载，避免每次调用重新加载权重
+2. **并发控制**：通过 `concurrency_limit` 防止 GPU OOM，合理设置批处理大小
+3. **成本监控**：利用 Modal Dashboard 跟踪 GPU-seconds 消耗，设置预算告警
+4. **镜像精简**：使用 `modal.Image` 分层构建，只安装必要依赖减少启动时间
+5. **容错设计**：配置 `retries` 和 `timeout`，处理 GPU 节点故障和长尾请求

@@ -24,7 +24,7 @@ summary: 因果掩码通过将未来位置的注意力分数置为负无穷，�
 lifecycle: reviewed
 tier: core
 created: 2026-06-25
-updated: 2026-06-25
+updated: 2026-07-21
 sources: []
 ---
 
@@ -142,3 +142,23 @@ attn_weights = torch.softmax(scores, dim=-1)
 - [[概念/next-token-prediction|下一个 Token 预测]]
 - [[概念/autoregressive-generation|自回归生成]]
 - [[概念/attention-variants|Attention 变体]]
+
+---
+
+## 2026 Causal Mask 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **FlashAttention-3** | 融合 causal mask 的高效注意力实现 | GA |
+| **滑动窗口注意力** | Mistral/Gemma 用局部窗口替代全局 causal | GA |
+| **Prefix Caching** | 缓存前缀 KV 避免重复计算 | GA |
+| **双向注意力** | 编码器模型（BERT类）不使用 causal mask | GA |
+| **稀疏注意力** | Big Bird/Longformer 稀疏模式降低复杂度 | GA |
+
+## 生产最佳实践
+
+1. **理解语义**：causal mask 保证自回归性，训练和推理必须一致
+2. **Flash Attention**：生产环境必用 FlashAttention，内存和速度双优化
+3. **KV Cache 配合**：推理时 causal mask + KV Cache 避免重复计算
+4. **窗口大小**：滑动窗口注意力需根据任务选择合适窗口大小
+5. **调试技巧**：可视化 attention map 确认 mask 正确应用

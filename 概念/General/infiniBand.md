@@ -4,7 +4,7 @@ category: -concepts
 tags: ["networking", "rdma", "gpu", "distributed-training", "high-performance-computing", "alibaba-cloud"]
 summary: "InfiniBand 是高性能计算场景常用的高速网络技术，支持 RDMA，广泛用于大规模 GPU 集群的分布式训练。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
 aliases:
   - "IB"
@@ -55,3 +55,23 @@ ib_read_bw
 - [[概念/gpu-direct|GPU Direct]]
 - [[概念/distributed-training|分布式训练]]
 - [[模型训练/Distributed_Training/Distributed_Training_Hang_Runbook|分布式训练 Hang 排障]]
+
+---
+
+## 2026 InfiniBand 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **InfiniBand NDR** | 400Gbps 高速互联 | GA |
+| **RoCE** | 以太网 RDMA | GA |
+| **NCCL** | NVIDIA 集合通信库 | GA |
+| **GPU Direct** | GPU 直接通信 | GA |
+| **SHARP** | 网内计算加速 | GA |
+
+## 生产最佳实践
+
+1. **高速互联**：分布式训练用 InfiniBand 互联
+2. **NCCL 优化**：优化 NCCL 通信性能
+3. **GPU Direct**：启用 GPU Direct 减少拷贝
+4. **网络监控**：监控网络性能
+5. **与 RoCE 对比**：根据场景选择 IB 或 RoCE

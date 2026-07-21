@@ -4,7 +4,7 @@ category: -concepts
 tags: ["kubernetes", "k8s", "deployment", "cloud-native", "alibaba-cloud"]
 summary: "Kubernetes Deployment 是管理无状态应用负载的声明式控制器，负责 Pod 的创建、滚动更新、扩缩容和自愈，是 K8s 上部署 AI 推理与业务服务的最常用工作负载。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
 aliases:
   - "Deployment"
@@ -128,3 +128,23 @@ kubectl rollout undo deploy/llm-inference-svc
 - [[概念/cri|CRI]] — 容器运行时接口
 - [[概念/etcd|etcd]] — K8s 配置与状态存储
 - [[概念/apsara-stack|Apsara Stack]] — 阿里云专有云
+
+---
+
+## 2026 K8s Deployment 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **滚动更新策略** | maxSurge/maxUnavailable 精细控制发布节奏 | GA |
+| **Server-Side Apply** | 服务端声明式应用，解决冲突更智能 | GA |
+| **ProgressDeadline** | 部署超时自动回滚保护 | GA |
+| **AI 推理 Deployment** | GPU 资源声明 + 模型就绪探针 | GA |
+| **KEDA 扩缩** | 基于请求队列/自定义指标的事件驱动扩缩 | GA |
+
+## 生产最佳实践
+
+1. **就绪探针必配**：模型加载慢，readinessProbe 设置足够的 initialDelaySeconds
+2. **滚动更新保守**：maxUnavailable: 0 保证零停机，maxSurge: 1 控制资源开销
+3. **资源限制**：必须设置 resources.limits 防止 GPU 内存泄漏影响邻居 Pod
+4. **回滚策略**：保留 revisionHistoryLimit: 5，确保可快速回滚
+5. **Pod 反亲和**：多副本分散到不同节点，避免单点故障

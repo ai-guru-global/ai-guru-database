@@ -4,7 +4,7 @@ category: -concepts
 tags: ["kubernetes", "k8s", "annotation", "cloud-native", "alibaba-cloud"]
 summary: "Annotation 是 Kubernetes 对象 metadata 中的非标识性键值对，用于存储描述性、工具或控制器所需的元信息，不能用于选择器过滤。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
 aliases:
   - "Annotation"
@@ -104,3 +104,23 @@ kubectl get pods -n aio-system -o json | \
 - [[概念/service|Service]] — 服务发现与负载均衡
 - [[概念/ingress|Ingress]] — 七层入口路由
 - [[概念/kubectl|kubectl]] — K8s 命令行工具
+
+---
+
+## 2026 Annotation 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **K8s Annotation** | K8s 资源注解 | GA |
+| **元数据** | 资源元数据 | GA |
+| **工具集成** | 工具集成注解 | GA |
+| **与 Label 对比** | Annotation vs Label | GA |
+| **Ingress 注解** | Ingress 配置注解 | GA |
+
+## 生产最佳实践
+
+1. **元数据记录**：用 Annotation 记录元数据
+2. **与 Label 区分**：Label 用于选择，Annotation 用于元数据
+3. **工具集成**：工具配置用 Annotation
+4. **Ingress 配置**：Ingress 配置用 Annotation
+5. **命名规范**：Annotation 命名规范

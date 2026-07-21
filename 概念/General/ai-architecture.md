@@ -25,11 +25,11 @@ provenance:
   inferred: 0.15
   ambiguous: 0.07
 base_confidence: 0.75
-lifecycle: draft
-lifecycle_changed: 2026-05-31
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
 tier: supporting
 created: 2026-05-31 00:00:00+00:00
-updated: 2026-05-31 00:00:00+00:00
+updated: 2026-07-21
 aliases:
   - "Ai Architecture"
   - "ai architecture"
@@ -113,3 +113,23 @@ AI系统高可用的特殊挑战：GPU故障率比CPU高一个数量级（MTBF�
 - [[架构基建/Architecture-in-nutshell]] — AI 架构速成指南 (共享: high-availability, kubernetes)
 - [[架构基建/Architecture_Infrastructure_for_dummy]] — AI 架构基础设施 - 小白版 (共享: high-availability, kubernetes)
 - [[架构基建/Architecture_Overview/Spring_AI_Architecture]] — Spring AI 系统架构设计 (共享: high-availability, kubernetes)
+
+---
+
+## 2026 AI 系统架构生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **AI-Native 架构** | 以模型服务为中心的分布式架构范式 | GA |
+| **LLM Gateway** | 统一模型路由、限流、可观测性网关层 | GA |
+| **向量数据库层** | Milvus/Qdrant/Weaviate 作为语义检索基础设施 | GA |
+| **Agent 编排层** | LangGraph/CrewAI 多智能体协作架构 | GA |
+| **边缘-云协同** | 端侧小模型 + 云端大模型混合推理架构 | 研究 |
+
+## 生产最佳实践
+
+1. **分层解耦**：应用层、服务层、数据层、基础设施层严格分离，避免跨层调用
+2. **模型服务抽象**：通过统一 API 网关封装多模型提供商，支持热切换和故障转移
+3. **可观测性先行**：从第一天就嵌入 tracing/metrics/logging，而非事后补救
+4. **弹性设计**：GPU 资源池化 + 自动扩缩容，应对推理负载波动
+5. **安全纵深**：输入过滤、输出审核、数据加密、访问控制多层防护

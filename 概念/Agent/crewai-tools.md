@@ -135,6 +135,71 @@ pip install crewai-tools
 3. **限制工具数量**：每个 Agent ≤ 5 个工具，太多会降低选择准确率
 4. **错误处理**：工具必须返回有意义的错误信息，而非抛异常
 5. **权限最小化**：数据库工具只给只读权限，写操作需审批
+6. **工具测试**：每个工具必须有单元测试，验证输入输出
+7. **版本管理**：工具定义纳入 Git，变更走 Code Review
+
+## MCP 集成
+
+```python
+from crewai import Agent
+from crewai_tools import MCPServerAdapter
+
+# 连接 MCP 服务器
+mcp_adapter = MCPServerAdapter(
+    command="npx",
+    args=["-y", "@modelcontextprotocol/server-github"]
+)
+
+# Agent 使用 MCP 工具
+agent = Agent(
+    role="GitHub Assistant",
+    goal="Manage GitHub repositories",
+    tools=mcp_adapter.tools,  # 自动加载 MCP 工具
+)
+```
+
+## 工具测试
+
+```python
+import pytest
+from crewai_tools import FileReadTool
+
+def test_file_read_tool():
+    tool = FileReadTool()
+    
+    # 测试正常读取
+    result = tool._run("test.txt")
+    assert "expected content" in result
+    
+    # 测试文件不存在
+    result = tool._run("nonexistent.txt")
+    assert "error" in result.lower()
+    
+    # 测试权限拒绝
+    result = tool._run("/etc/passwd")
+    assert "permission" in result.lower()
+```
+
+## 工具安全指南
+
+| 工具类型 | 风险等级 | 安全措施 |
+|----------|----------|----------|
+| **文件读取** | 🟢 低 | 限制目录白名单 |
+| **文件写入** | 🟡 中 | 指定输出目录、禁止覆盖 |
+| **代码执行** | 🔴 高 | Docker 沙箱、超时限制 |
+| **数据库查询** | 🟡 中 | 只读权限、参数化查询 |
+| **Web 请求** | 🟡 中 | 域名白名单、速率限制 |
+| **API 调用** | 🟡 中 | API Key 管理、权限最小化 |
+
+## 工具性能优化
+
+| 优化项 | 方法 | 效果 |
+|--------|------|------|
+| **缓存** | 重复查询结果缓存 | 减少 API 调用 |
+| **批处理** | 多个文件一次读取 | 减少 I/O 次数 |
+| **异步** | 网络请求异步执行 | 提升并发 |
+| **超时** | 设置合理超时 | 避免阻塞 |
+| **重试** | 指数退避重试 | 提升成功率 |
 
 ## 参考资源
 

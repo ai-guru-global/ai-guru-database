@@ -25,7 +25,7 @@ base_confidence: 0.88
 lifecycle: reviewed
 tier: core
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-07-21
 aliases:
   - Ray
 
@@ -161,3 +161,23 @@ result = ray.get(predictor.predict.remote(x))
 - [[概念/hami]] — HAMi GPU 虚拟化
 - [[模型训练/Distributed_Training/DeepSpeed_Deep_Dive]] — DeepSpeed
 - [[部署推理/Inference_Engines/KServe_Deep_Dive]] — KServe
+
+---
+
+## 2026 Ray 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Ray 2.x** | 统一分布式计算框架（训练/推理/调优） | GA |
+| **Ray Serve** | 生产级模型服务，支持多模型组合 | GA |
+| **Ray Train** | 分布式训练（PyTorch/TF/XGBoost） | GA |
+| **Ray Data** | 分布式数据加载与预处理 | GA |
+| **Anyscale 平台** | 企业级 Ray 托管与可视化 | GA |
+
+## 生产最佳实践
+
+1. **资源规划**：合理设置 num_cpus/num_gpus，避免资源争抢
+2. **对象存储**：大对象用 Ray Object Store 传递，避免序列化开销
+3. **容错配置**：设置 max_retries 处理节点故障，训练启用 Checkpoint
+4. **监控必备**：部署 Ray Dashboard + Prometheus 监控集群状态
+5. **自动扩缩**：配置 autoscaler 根据负载动态调整集群规模

@@ -18,6 +18,8 @@ provenance:
   ambiguous: 0.10
 base_confidence: 0.85
 lifecycle: reviewed
+created: 2026-06-12
+updated: 2026-07-21
 tier: supporting
 ---
 
@@ -167,3 +169,23 @@ AI Stack 模型获取流程
 - [[概念/modelscope]] — ModelScope 魔搭
 - [[概念/git-lfs]] — Git LFS 大文件存储
 - [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+
+---
+
+## 2026 HuggingFace CLI 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **huggingface-cli download** | 命令行下载模型/数据集，支持断点续传 | GA |
+| **huggingface-cli upload** | 命令行上传模型到 Hub | GA |
+| **huggingface-cli scan-cache** | 扫描本地缓存占用空间 | GA |
+| **huggingface-cli lfs-enable-largefiles** | 启用大文件 LFS 跟踪 | GA |
+| **Token 管理** | 命令行登录/登出/切换 Token | GA |
+
+## 生产最佳实践
+
+1. **断点续传**：大模型下载必用 `--resume-download`，避免网络中断重来
+2. **选择性下载**：用 `--include` 只下载必要文件（如只要 safetensors）
+3. **缓存管理**：定期 `scan-cache` + `delete-cache` 清理磁盘空间
+4. **CI 集成**：流水线中用 CLI 下载模型，配合缓存加速构建
+5. **Token 安全**：生产环境用环境变量传递 Token，不硬编码在脚本中

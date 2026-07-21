@@ -16,6 +16,8 @@ provenance:
   ambiguous: 0.10
 base_confidence: 0.83
 lifecycle: reviewed
+created: 2026-06-12
+updated: 2026-07-21
 tier: supporting
 ---
 
@@ -151,3 +153,23 @@ result = generator("今天的日期是：")
 4. **多后端**：支持 vLLM、HuggingFace Transformers、Ollama 等
 5. **工程化必备**：LLM 应用的 API 响应需要稳定格式，Outlines 是解决方案
 6. **vs Instructor**：Outlines 更底层更灵活，Instructor 更面向 OpenAI API
+
+---
+
+## 2026 Outlines 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **JSON Schema 约束** | 强制输出符合任意 JSON Schema | GA |
+| **正则表达式引导** | 用正则约束生成格式 | GA |
+| **CFG 引导** | 上下文无关文法约束复杂结构 | GA |
+| **vLLM 集成** | 与 vLLM 推理引擎原生集成 | GA |
+| **多模型支持** | HF Transformers/Ollama/llama.cpp | GA |
+
+## 生产最佳实践
+
+1. **Schema 先行**：先定义完整的 JSON Schema，再用 Outlines 强制输出
+2. **性能考量**：约束生成有额外开销，高并发场景评估延迟影响
+3. **回退机制**：约束生成失败时回退到自由生成 + 后处理解析
+4. **测试验证**：用属性测试验证输出始终符合 Schema
+5. **与 API 配合**：封装为统一 API，对上层透明化约束细节

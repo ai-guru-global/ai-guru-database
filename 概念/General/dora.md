@@ -23,7 +23,7 @@ lifecycle: reviewed
 lifecycle_changed: 2026-06-16
 tier: core
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-07-21
 aliases:
   - Dora
 
@@ -103,3 +103,23 @@ DoRA 解决的是“方向更新更稳定”的问题；RS-LoRA 解决的是“r
 - [[概念/fine-tuning-techniques]] — 微调技术
 - [[概念/quantization]] — 量化
 - [[大模型/Fine_tuning_Techniques/LoRA_QLoRA_SFT_RLHF_DPO_in_Detail]] — LoRA/QLoRA/SFT/RLHF/DPO 详解
+
+---
+
+## 2026 DoRA 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **DoRA** | 权重分解低秩适配 | GA |
+| **LoRA** | 低秩适配 | GA |
+| **QLoRA** | 量化 LoRA | GA |
+| **rs-LoRA** | 秩稳定 LoRA | GA |
+| **PEFT** | 参数高效微调 | GA |
+
+## 生产最佳实践
+
+1. **DoRA 微调**：大模型微调用 DoRA
+2. **与 LoRA 对比**：DoRA 效果优于 LoRA
+3. **QLoRA 节省**：显存不足用 QLoRA
+4. **秩选择**：根据任务选择合适秩
+5. **与全量微调对比**：根据场景选择微调方法

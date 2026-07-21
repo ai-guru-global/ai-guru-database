@@ -100,6 +100,26 @@ aliases:
 - **生态快速发展**：专用 CUDA kernel 成熟，但主流引擎支持有限
 - **与 KV Cache 压缩互补**：Transformer + MLA/FP8 在多数场景仍是首选
 
+## 代表模型与框架
+
+| 模型/框架 | 参数 | 特点 |
+|----------|------|------|
+| **Mamba-2** | 1.3B-7B | 结构化状态空间对偶 (SSD) |
+| **Jamba** | 52B (AI21) | Mamba + Transformer 混合 |
+| **Zamba** | 7B (Zyphra) | 共享注意力 + Mamba |
+| **Falcon-Mamba** | 7B (TII) | 纯 Mamba 架构 |
+| **mamba-ssm** | - | 官方 PyTorch 实现 |
+| **vLLM** | - | 实验性 Mamba 推理支持 |
+
+## 生产最佳实践
+
+1. **场景匹配**: 超长序列/时序/基因组用 Mamba，复杂推理/代码用 Transformer
+2. **混合架构优先**: Jamba 等混合方案兼顾两者优势
+3. **显存规划**: Mamba 显存恒定，适合显存受限场景
+4. **吐量测试**: 实际测试长序列吐量，确认优势可复现
+5. **生态检查**: 确认推理引擎、量化工具链支持情况
+6. **与 Transformer 对比测试**: 同任务下对比质量和速度再决策
+
 ## 延伸阅读
 
 - [[概念/LLM/retnet|RetNet]]

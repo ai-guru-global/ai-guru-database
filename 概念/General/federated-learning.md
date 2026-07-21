@@ -18,7 +18,7 @@ base_confidence: 0.87
 lifecycle: reviewed
 tier: core
 created: 2026-06-04
-updated: 2026-06-04
+updated: 2026-07-21
 aliases:
   - "Federated Learning"
   - "federated learning"
@@ -71,3 +71,23 @@ aliases:
 - [[伦理安全/Federated_Learning/README]] — 联邦学习深度解析
 - [[概念/neural-networks]] — 神经网络基础
 - [[概念/bayesian-methods]] — 贝叶斯方法（不确定性量化）
+
+---
+
+## 2026 联邦学习生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **FedML** | 开源联邦学习平台 | GA |
+| **PySyft** | 隐私保护机器学习 | GA |
+| **FATE** | 微众银行联邦学习 | GA |
+| **差分隐私** | 隐私保护技术 | GA |
+| **安全聚合** | 安全模型聚合 | GA |
+
+## 生产最佳实践
+
+1. **隐私保护**：数据不出域用联邦学习
+2. **差分隐私**：启用差分隐私保护
+3. **安全聚合**：用安全聚合保护模型
+4. **通信优化**：优化联邦学习通信
+5. **与集中式对比**：根据场景选择联邦或集中式

@@ -4,7 +4,7 @@ category: -concepts
 tags: ["kubernetes", "k8s", "gitops", "devops", "cd", "cloud-native", "alibaba-cloud"]
 summary: "GitOps 是一种以 Git 为唯一可信源的持续交付范式，通过声明式配置和自动同步实现基础设施与应用部署的版本化、可审计和可回滚。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: core
 aliases:
   - "GitOps 方法论"
@@ -57,3 +57,23 @@ Developer → PR Merge → Git Repository → GitOps Controller → Kubernetes C
 - [[概念/helm|Helm]]
 - [[概念/kustomize|Kustomize]]
 - [[概念/kubernetes|Kubernetes]]
+
+---
+
+## 2026 GitOps 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **ArgoCD** | GitOps 持续交付 | GA |
+| **Flux** | GitOps 工具集 | GA |
+| **Helm** | K8s 包管理 | GA |
+| **Kustomize** | K8s 配置管理 | GA |
+| **GitOps 即代码** | 基础设施即代码 | GA |
+
+## 生产最佳实践
+
+1. **GitOps 必用**：K8s 部署必须用 GitOps
+2. **ArgoCD 首选**：GitOps 工具首选 ArgoCD
+3. **Git 单一来源**：Git 作为配置单一来源
+4. **自动同步**：配置自动同步部署
+5. **与 CI/CD 配合**：GitOps + CI/CD 流水线

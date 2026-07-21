@@ -23,7 +23,7 @@ lifecycle: reviewed
 lifecycle_changed: 2026-06-16
 tier: core
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-07-21
 aliases:
   - "Code Generation"
   - "code generation"
@@ -68,3 +68,23 @@ aliases:
 - [[概念/text2sql]] — Text2SQL
 - [[编程/README]] — AI 编程工具
 - [[编程/Tools/AI_Coding_Assistants_2026]] — GitHub Copilot 深度解析
+
+---
+
+## 2026 代码生成生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **GitHub Copilot** | AI 代码补全 | GA |
+| **Cursor** | AI 代码编辑器 | GA |
+| **Claude Code** | AI 编程助手 | GA |
+| **代码审查** | AI 代码审查 | GA |
+| **Agent 编程** | AI Agent 自主编程 | 研究 |
+
+## 生产最佳实践
+
+1. **AI 辅助**：用 AI 辅助代码编写
+2. **代码审查**：AI 生成代码必须审查
+3. **测试覆盖**：AI 生成代码必须测试
+4. **安全扫描**：AI 生成代码安全扫描
+5. **人机协作**：人机协作编程

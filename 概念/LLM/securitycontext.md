@@ -86,3 +86,110 @@ SecurityContext 分为 Pod 级别与容器级别，二者可叠加，容器级�
 3. **只读根文件系统**：启用 `readOnlyRootFilesystem: true`，防止恶意文件写入
 4. **最小化 Capabilities**：`drop: ALL` 后按需添加必要能力，避免过度授权
 5. **PSA restricted 级别**：生产 Namespace 启用 `pod-security.kubernetes.io/enforce: restricted`
+6. **seccomp 默认配置**：始终设置 `seccompProfile.type: RuntimeDefault`
+7. **定期审计**：用 Kyverno/OPA 自动检测不合规配置
+
+## 完整 YAML 示例
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: llm-inference
+  labels:
+    app: llm-serving
+spec:
+  securityContext:
+    runAsNonRoot: true
+    runAsUser: 1000
+    runAsGroup: 1000
+    fsGroup: 1000
+    seccompProfile:
+      type: RuntimeDefault
+  containers:
+  - name: vllm
+    image: vllm/vllm-openai:latest
+    securityContext:
+      privileged: false
+      allowPrivilegeEscalation: false
+      readOnlyRootFilesystem: true
+      capabilities:
+        drop:
+        - ALL
+    volumeMounts:
+    - name: model-cache
+      mountPath: /tmp
+    - name: model-weights
+      mountPath: /models
+      readOnly: true
+    resources:
+      limits:
+        nvidia.com/gpu: 1
+        memory: "32Gi"
+  volumes:
+  - name: model-cache
+    emptyDir: {}
+  - name: model-weights
+    persistentVolumeClaim:
+      claimName: model-pvc
+```
+
+## AI 推理服务特殊考虑
+
+| 场景 | 安全要求 | 配置建议 |
+|------|----------|----------|
+| **GPU 推理服务** | 限制 GPU 访问权限 | 通过 Device Plugin 控制 GPU 分配 |
+| **多租户模型服务** | 租户间模型权重隔离 | 独立 UID + ReadOnly PVC |
+| **Agent 代码执行** | 防止恶意代码逃逸 | 严格 seccomp + 只读 FS + 非 root |
+| **训练任务** | 保护训练数据 | fsGroup 控制共享存储访问 |
+| **模型下载** | 防止供应链攻击 | 只读挂载 + 校验和验证 |
+
+## 常见问题排查
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| Pod 被拒绝创建 | PSA enforce 策略不满足 | 检查 SecurityContext 是否符合 restricted 级别 |
+| 容器内无法写入文件 | readOnlyRootFilesystem | 挂载 emptyDir 到需要写入的路径 |
+| 权限拒绝 (Permission Denied) | UID 不匹配卷所有权 | 设置 fsGroup 或 initContainer chown |
+| GPU 不可用 | 缺少 NVIDIA 运行时权限 | 确保 Device Plugin 正确配置 |
+| 网络绑定失败 | drop ALL 后缺少 NET_BIND_SERVICE | 添加必要 capability 或用高端口 |
+
+## 安全审计检查清单
+
+```yaml
+# Kyverno 策略示例：禁止特权容器
+apiVersion: kyverno.io/v1
+kind: ClusterPolicy
+metadata:
+  name: disallow-privileged
+spec:
+  validationFailureAction: Enforce
+  rules:
+  - name: deny-privileged-containers
+    match:
+      resources:
+        kinds: ["Pod"]
+    validate:
+      message: "Privileged mode is not allowed"
+      pattern:
+        spec:
+          containers:
+          - securityContext:
+              privileged: false
+```
+
+## 与 AI 安全的关系
+
+在 AI 系统部署中，SecurityContext 是多层安全体系的基础层：
+
+```
+应用层安全: 输入过滤 / 输出审核 / 护栏 (Guardrails)
+    ↓
+网络安全: NetworkPolicy / mTLS / API Gateway
+    ↓
+运行时安全: SecurityContext / seccomp / AppArmor  ← 本卡片
+    ↓
+基础设施: 节点加固 / 内核更新 / 镜像扫描
+```
+
+对于 Agent 系统，SecurityContext 尤其重要——Agent 可能执行任意代码、调用外部工具，必须通过严格的容器安全配置限制其影响范围。

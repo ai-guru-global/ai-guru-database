@@ -22,7 +22,7 @@ lifecycle: reviewed
 lifecycle_changed: 2026-06-16
 tier: core
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-07-21
 aliases:
   - "Online Evaluation"
   - "online evaluation"
@@ -65,3 +65,23 @@ aliases:
 - [[概念/ab-testing-framework]] — A/B 测试框架
 - [[概念/model-deployment]] — 模型部署
 - [[模型评估/Evaluation_Tools/Online_Evaluation]] — 在线评估
+
+---
+
+## 2026 在线评估生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **A/B 测试** | 在线对比测试 | GA |
+| **多臂老虎机** | 自适应流量分配 | GA |
+| **在线指标** | 实时业务指标 | GA |
+| **用户反馈** | 用户反馈收集 | GA |
+| **LLM 在线评估** | LLM 输出在线评估 | 研究 |
+
+## 生产最佳实践
+
+1. **A/B 测试**：模型上线必须 A/B 测试
+2. **在线指标**：监控在线业务指标
+3. **用户反馈**：收集用户反馈
+4. **多臂老虎机**：用多臂老虎机优化流量
+5. **与离线评估配合**：在线 + 离线评估结合

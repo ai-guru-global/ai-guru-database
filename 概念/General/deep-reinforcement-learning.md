@@ -20,11 +20,11 @@ provenance:
   inferred: 0.10
   ambiguous: 0.05
 base_confidence: 0.80
-lifecycle: draft
-lifecycle_changed: 2026-05-31
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
 tier: supporting
 created: 2026-05-31T00:00:00Z
-updated: 2026-05-31T00:00:00Z
+updated: 2026-07-21T00:00:00Z
 ---
 
 # 深度强化学习
@@ -109,3 +109,23 @@ ChatGPT rlhf（PPO优化奖励模型）、AlphaGo（MCTS+Deep RL）、OpenAI Fiv
 - [[强化学习/AI_Agents/AI_Agents_for_dummy]] — AI智能体 - 小白版 🤖 (共享: reinforcement-learning, rl)
 - [[强化学习/AI_Agents/Agent-in-nutshell]] — AI 智能体速成指南 (共享: reinforcement-learning, rl)
 - [[强化学习/AI_Agents/Agent_Future_Roadmap_2026_2030]] — Agent 未来发展路线图 2026-2030 (共享: reinforcement-learning, rl)
+
+---
+
+## 2026 深度强化学习生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **DQN** | 深度 Q 网络 | GA |
+| **PPO** | 近端策略优化 | GA |
+| **SAC** | 软演员-评论家 | GA |
+| **RLHF** | 人类反馈强化学习 | GA |
+| **Agent RL** | Agent 强化学习 | 研究 |
+
+## 生产最佳实践
+
+1. **RLHF 对齐**：LLM 对齐用 RLHF
+2. **PPO 训练**：RL 训练用 PPO
+3. **奖励设计**：合理设计奖励函数
+4. **与 SFT 配合**：SFT + RL 配合
+5. **Agent RL**：Agent 用强化学习

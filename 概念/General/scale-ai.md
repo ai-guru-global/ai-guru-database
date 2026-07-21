@@ -16,6 +16,8 @@ provenance:
   ambiguous: 0.10
 base_confidence: 0.82
 lifecycle: reviewed
+created: 2026-06-12
+updated: 2026-07-21
 tier: supporting
 ---
 
@@ -72,3 +74,23 @@ tier: supporting
 - [[概念/label-studio]] — Label Studio 开源数据标注平台
 - [[概念/humanloop]] — Humanloop Prompt 工程与评估
 - [[概念/lm-eval-harness]] — LM Evaluation Harness 标准化评估
+
+---
+
+## 2026 Scale AI 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Scale AI** | 数据标注平台 | GA |
+| **RLHF 数据** | 人类反馈数据 | GA |
+| **模型评估** | 模型评估服务 | GA |
+| **企业级标注** | 企业数据标注 | GA |
+| **LLM 数据** | LLM 训练数据 | GA |
+
+## 生产最佳实践
+
+1. **数据标注**：高质量数据用 Scale AI 标注
+2. **RLHF 数据**：RLHF 训练用 Scale AI 数据
+3. **模型评估**：模型评估用 Scale AI
+4. **与 Label Studio 对比**：Scale AI 企业级，Label Studio 开源
+5. **质量控制**：标注数据质量控制

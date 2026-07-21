@@ -18,7 +18,7 @@ base_confidence: 0.85
 lifecycle: reviewed
 tier: core
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-07-21
 ---
 
 # SSO 与 SAML2 企业身份认证 (Enterprise SSO)
@@ -123,3 +123,23 @@ AI Stack 支持通过 **AzureAD + SAML2** 实现企业 SSO：
 - [[概念/rbac]] — RBAC 访问控制（SSO 用户角色映射）
 - [[概念/single-tenant-architecture]] — 单租户架构（安全体系）
 - [[架构基建/AI_Stack_Deep_Dive]] — AI Stack（AzureAD SSO）
+
+---
+
+## 2026 SSO/SAML 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **OIDC 主流化** | OpenID Connect 逐步替代 SAML 2.0 成为首选协议 | GA |
+| **SCIM 自动化** | 用户生命周期自动同步（创建/禁用/删除） | GA |
+| **Passkey/WebAuthn** | 无密码认证结合 SSO 提升安全性 | GA |
+| **AI 平台 SSO** | Databricks/Snowflake/MLflow 企业 SSO 集成 | GA |
+| **零信任 SSO** | 持续验证 + 设备信任 + 条件访问策略 | GA |
+
+## 生产最佳实践
+
+1. **协议选择**：新项目优先 OIDC，仅在遗留系统兼容时用 SAML 2.0
+2. **MFA 强制**：SSO 必须叠加多因素认证，尤其是 AI 平台管理控制台
+3. **会话管理**：设置合理的 token 过期时间，支持全局登出
+4. **角色映射**：IdP 组 → 平台 RBAC 角色自动映射，避免手动授权
+5. **审计日志**：记录所有 SSO 登录事件，异常登录实时告警

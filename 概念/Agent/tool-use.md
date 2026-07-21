@@ -24,7 +24,7 @@ summary: Tool Use 指大模型调用外部工具（API、数据库、计算器�
 lifecycle: reviewed
 tier: core
 created: 2026-06-25
-updated: 2026-06-25
+updated: 2026-07-21
 sources: []
 ---
 
@@ -152,6 +152,60 @@ flowchart LR
 | **自主性** | 中 | 高 |
 | **规划能力** | 通常单次或简单链式 | 多步规划、反思、记忆 |
 | **关系** | Agent 的核心组件之一 | 包含 Tool Use |
+
+---
+
+## 2026 年 Tool Use 生态
+
+| 类别 | 代表 | 特点 |
+|------|------|------|
+| **协议标准** | MCP, OpenAI Function Calling | 标准化工具接入 |
+| **代码执行** | E2B, Daytona, Code Interpreter | 沙箱隔离 |
+| **搜索工具** | Tavily, Exa, Serper | AI 优化搜索 |
+| **数据库** | NL2SQL, Text2SQL | 自然语言查询 |
+| **多模态** | Vision Tools, Audio Tools | 图像/音频处理 |
+| **企业集成** | Slack, GitHub, Jira MCP Servers | 工作流自动化 |
+
+## 生产最佳实践
+
+1. **工具描述精确**：清晰的 description 和参数说明提升调用准确率
+2. **限制工具数量**：每个 Agent ≤ 5-7 个工具，太多会降低选择准确率
+3. **沙箱执行**：代码执行工具必须在隔离环境中运行
+4. **错误处理**：工具失败时返回有意义的错误信息，而非抛异常
+5. **结果截断**：长结果自动截断 + 摘要，避免超出上下文
+6. **权限最小化**：工具只给最小必要权限
+7. **审计日志**：记录所有工具调用，便于排查和合规
+
+## 安全考虑
+
+| 风险 | 缓解措施 |
+|------|----------|
+| **注入攻击** | 参数 Schema 校验、输入过滤 |
+| **越权操作** | RBAC 权限控制、操作审批 |
+| **数据泄露** | 结果过滤、敏感信息脱敏 |
+| **资源耗尽** | 超时限制、速率限制 |
+| **供应链攻击** | 工具来源验证、签名校验 |
+
+## MCP 工具示例
+
+```python
+from langchain_mcp_adapters import load_mcp_tools
+
+# 加载 GitHub MCP 服务器
+tools = load_mcp_tools(
+    server_params={
+        "command": "npx",
+        "args": ["-y", "@modelcontextprotocol/server-github"],
+        "env": {"GITHUB_TOKEN": "..."}
+    }
+)
+
+# Agent 使用 MCP 工具
+for tool in tools:
+    print(f"{tool.name}: {tool.description}")
+# create_issue: Create a new GitHub issue
+# search_repositories: Search GitHub repositories
+# ...
 
 ---
 

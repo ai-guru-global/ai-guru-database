@@ -143,6 +143,68 @@ result = app.invoke({"task": "写一个 REST API"})
 | **自适应编排** | 根据任务复杂度动态选择编排模式 |
 | **成本感知路由** | 简单子任务用小模型，复杂子任务用大模型 |
 
+## 编排模式选择指南
+
+| 任务特征 | 推荐模式 | 理由 |
+|----------|----------|------|
+| 步骤固定、有明确顺序 | 顺序流水线 | 简单可预测，易调试 |
+| 子任务独立、可并行 | 并行 Swarm | 最大化吞吐 |
+| 任务复杂、需动态分工 | 层级委派 | Supervisor 按需分配 |
+| 需要质量迭代 | 循环迭代 | 生成-评审-修改闭环 |
+| 大型项目、多阶段 | 混合模式 | 阶段间顺序、阶段内并行 |
+
+## 通信与状态管理
+
+### 共享黑板模式
+
+```python
+class SharedBlackboard:
+    """多 Agent 共享状态存储"""
+    def __init__(self):
+        self.state = {}  # 全局共享状态
+        self.history = []  # 操作历史
+    
+    def write(self, agent_id: str, key: str, value):
+        self.state[key] = value
+        self.history.append({"agent": agent_id, "key": key, "ts": time.time()})
+    
+    def read(self, key: str):
+        return self.state.get(key)
+    
+    def get_updates_since(self, timestamp: float):
+        return [h for h in self.history if h["ts"] > timestamp]
+```
+
+### 消息传递 vs 共享状态
+
+| 方式 | 优势 | 劣势 | 适用场景 |
+|------|------|------|----------|
+| **消息传递** | 解耦、可追踪 | 序列化开销 | 跨进程/跨服务 |
+| **共享状态** | 低延迟、全局视图 | 并发冲突 | 单进程多 Agent |
+| **事件源** | 完整审计、可回放 | 存储开销 | 需要审计合规 |
+
+## 容错与恢复策略
+
+```python
+def resilient_orchestration(tasks, max_retries=3):
+    results = {}
+    for task in tasks:
+        for attempt in range(max_retries):
+            try:
+                result = execute_with_timeout(task, timeout=60)
+                results[task.id] = result
+                break
+            except TimeoutError:
+                if attempt == max_retries - 1:
+                    results[task.id] = fallback_result(task)
+                else:
+                    task = reassign_to_different_worker(task)
+            except AgentError as e:
+                log_error(task, e)
+                notify_supervisor(task, e)
+    return results
+```
+
 ## 生产最佳实践
 
 1. **从简单开始**: 先用单 Agent，确认不够用再拆多 Agent
@@ -151,6 +213,19 @@ result = app.invoke({"task": "写一个 REST API"})
 4. **成本控制**: 设置每个 Agent 的 max_tokens 和总预算
 5. **错误隔离**: 单个 Worker 失败不应导致整个流程崩溃
 6. **超时保护**: 每个 Agent 设置超时，避免死锁
+7. **渐进式拆分**: 先 2-3 个 Agent 验证模式，再逐步扩展
+8. **成本感知路由**: 简单子任务用小模型，复杂子任务用大模型
+
+## 监控与可观测性
+
+| 指标 | 含义 | 告警阈值 |
+|------|------|----------|
+| 编排总耗时 | 端到端完成时间 | > P95 基线 2x |
+| 单 Agent 耗时 | 各节点执行时间 | > 60s |
+| Token 消耗 | 每次编排总 token | > 预算 80% |
+| 重试率 | 需要重试的任务比例 | > 20% |
+| 失败率 | 最终失败的任务比例 | > 5% |
+| 通信轮次 | Agent 间消息数 | > 预期 1.5x |
 
 ## Related
 

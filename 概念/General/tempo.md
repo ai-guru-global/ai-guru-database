@@ -4,7 +4,7 @@ category: -concepts
 tags: ["kubernetes", "k8s", "observability", "tracing", "grafana", "cloud-native", "alibaba-cloud"]
 summary: "Tempo 是 Grafana Labs 开源的低成本分布式追踪后端，专为对象存储优化，可与 Grafana、Loki、Prometheus 组成完整可观测性栈。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
 aliases:
   - "Grafana Tempo"
@@ -55,3 +55,23 @@ App (OTel SDK) → Tempo Distributor → Ingester → Object Storage
 - [[概念/grafana|Grafana]] — 可视化平台
 - [[概念/opentelemetry|OpenTelemetry]] — 统一可观测性标准
 - [[概念/loki|Loki]] — 日志聚合
+
+---
+
+## 2026 Tempo 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Grafana Tempo** | 分布式追踪后端 | GA |
+| **OpenTelemetry** | 统一遥测标准 | GA |
+| **Trace 存储** | 追踪数据存储 | GA |
+| **与 Grafana 集成** | 追踪可视化 | GA |
+| **与 Loki 关联** | 追踪-日志关联 | GA |
+
+## 生产最佳实践
+
+1. **分布式追踪**：微服务用 Tempo 追踪
+2. **OpenTelemetry**：用 OpenTelemetry 采集追踪
+3. **与 Grafana 配合**：Tempo + Grafana 可视化
+4. **追踪-日志关联**：追踪与日志关联分析
+5. **采样策略**：配置合适的采样策略

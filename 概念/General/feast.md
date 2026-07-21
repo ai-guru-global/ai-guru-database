@@ -16,6 +16,8 @@ provenance:
   ambiguous: 0.10
 base_confidence: 0.85
 lifecycle: reviewed
+created: 2026-06-12
+updated: 2026-07-21
 tier: core
 ---
 
@@ -191,3 +193,23 @@ spec:
 - [[概念/mlflow]] — MLflow 实验追踪与模型管理
 - [[概念/whylogs]] — whylogs 数据质量与 ML 可观测性
 - [[概念/feature-store]] — Feature Store 特征存储概念
+
+---
+
+## 2026 Feast 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Offline Store** | BigQuery/Redshift/S3 离线特征存储 | GA |
+| **Online Store** | Redis/DynamoDB/Postgres 实时特征服务 | GA |
+| **Feature View** | 声明式特征定义与版本管理 | GA |
+| **流式摄入** | Kafka/Spark 实时特征更新 | GA |
+| **LLM 特征** | 嵌入向量作为特征存储与检索 | GA |
+
+## 生产最佳实践
+
+1. **训练-服务一致性**：用 Feast 统一离线/在线特征，避免训练服务偏差
+2. **特征监控**：跟踪特征分布漂移，设置告警阈值
+3. **TTL 管理**：设置特征过期时间，避免过期特征影响模型质量
+4. **权限控制**：按团队划分特征命名空间，避免冲突
+5. **文档化**：每个 Feature View 必须有清晰的描述和所有者

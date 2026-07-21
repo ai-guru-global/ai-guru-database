@@ -18,6 +18,8 @@ provenance:
   ambiguous: 0.10
 base_confidence: 0.75
 lifecycle: reviewed
+created: 2026-06-12
+updated: 2026-07-21
 tier: supporting
 ---
 
@@ -90,3 +92,23 @@ LeMix 统一调度架构
 - [[概念/heterogeneous-gpu]] — 异构 GPU 集群纳管
 - [[概念/continuous-batching]] — Continuous Batching
 - [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+
+---
+
+## 2026 LeMix 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **LeMix** | 训推一体调度系统 | GA |
+| **训推一体** | 训练推理统一调度 | GA |
+| **异构 GPU** | 异构 GPU 集群纳管 | GA |
+| **Continuous Batching** | 连续批处理 | GA |
+| **资源优化** | GPU 资源优化 | GA |
+
+## 生产最佳实践
+
+1. **训推一体**：训练推理统一调度用 LeMix
+2. **异构 GPU**：异构 GPU 集群用 LeMix 纳管
+3. **Continuous Batching**：推理用 Continuous Batching
+4. **资源优化**：GPU 资源优化提高利用率
+5. **与 AI Stack 配合**：LeMix + AI Stack

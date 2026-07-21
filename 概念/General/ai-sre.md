@@ -4,7 +4,7 @@ category: -concepts
 tags: ["ai-sre", "sre", "reliability", "mlops", "llmops", "observability", "incident-response", "finops", "gpu"]
 summary: "AI SRE 是将站点可靠性工程方法延伸至 AI 生产系统的实践，通过 SLO/SLI、容量规划、可观测性、事故响应和成本治理，保障大模型、Agent、RAG 等服务在高成本、高不确定性的环境下稳定运行。"
 created: 2026-07-02
-updated: 2026-07-02
+updated: 2026-07-21
 tier: concept
 aliases:
   - "AI 站点可靠性工程"
@@ -101,3 +101,23 @@ sources:
 - [[概念/observability|可观测性]] — 日志、指标、追踪三板斧
 - [[概念/finops|FinOps]] — 云成本运营
 - [[概念/incident-response|事故响应]] — 故障响应流程
+
+---
+
+## 2026 AI SRE 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **AIOps** | AI 驱动运维 | GA |
+| **异常检测** | AI 异常检测 | GA |
+| **根因分析** | AI 根因分析 | GA |
+| **自动修复** | AI 自动修复 | 研究 |
+| **LLM 运维** | LLM 辅助运维 | 研究 |
+
+## 生产最佳实践
+
+1. **AIOps**：用 AIOps 提升运维效率
+2. **异常检测**：AI 异常检测提前发现
+3. **根因分析**：AI 辅助根因分析
+4. **自动修复**：简单故障自动修复
+5. **LLM 运维**：LLM 辅助运维决策

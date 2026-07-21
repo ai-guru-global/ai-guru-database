@@ -20,11 +20,11 @@ provenance:
   inferred: 0.15
   ambiguous: 0.05
 base_confidence: 0.75
-lifecycle: draft
-lifecycle_changed: 2026-05-31
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
 tier: supporting
 created: 2026-05-31T00:00:00Z
-updated: 2026-05-31T00:00:00Z
+updated: 2026-07-21
 ---
 
 # 计算机视觉
@@ -107,3 +107,23 @@ OCR系统由文字检测+文字识别两阶段组成。经典CRNN架构采用CNN
 - [[计算机视觉/Segmentation/Segmentation_for_dummy]] — 图像分割 - 小白版 ✂️ (共享: cnn, cv)
 - [[计算机视觉/Video_Generation/README]] — AI视频生成 (Video Generation) (共享: cnn, cv)
 - [[治理/cv-deep-learning]]
+
+---
+
+## 2026 计算机视觉生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Vision Transformer** | ViT 及其变体成为视觉主流架构 | GA |
+| **SAM 2** | 通用图像/视频分割基础模型 | GA |
+| **多模态融合** | 视觉 + 语言统一理解与生成 | GA |
+| **边缘视觉** | 端侧实时目标检测/分割 | GA |
+| **3D 视觉** | NeRF/3DGS 三维重建与生成 | GA |
+
+## 生产最佳实践
+
+1. **数据增强**：充分的数据增强显著提升小数据集上的模型性能
+2. **预训练迁移**：优先使用预训练模型微调，而非从头训练
+3. **推理优化**：生产部署使用 TensorRT/ONNX 加速推理
+4. **边缘部署**：实时场景考虑边缘设备部署，降低延迟
+5. **持续评估**：生产环境持续监控模型准确率，检测数据漂移

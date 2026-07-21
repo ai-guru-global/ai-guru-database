@@ -4,7 +4,7 @@ category: -concepts
 tags: ["sre", "reliability", "chaos-engineering", "resilience", "alibaba-cloud"]
 summary: "Chaos Engineering（混沌工程）是通过在生产环境中主动注入故障，验证系统韧性和恢复能力的工程实践。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
 aliases:
   - "混沌工程"
@@ -55,3 +55,23 @@ sources: []
 - [[概念/resilience|Resilience]]
 - [[概念/incident-response|Incident Response]]
 - [[运维/Chaos_Engineering/Chaos_Engineering_for_AI_Systems|AI 系统混沌工程]]
+
+---
+
+## 2026 混沌工程生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Chaos Mesh** | K8s 原生混沌工程 | GA |
+| **Litmus** | K8s 混沌工程 | GA |
+| **Gremlin** | 企业级混沌工程 | GA |
+| **故障注入** | 网络/Pod/节点故障注入 | GA |
+| **AI 系统混沌** | AI 系统韧性测试 | 研究 |
+
+## 生产最佳实践
+
+1. **定期演练**：定期进行混沌工程演练
+2. **生产环境**：在生产环境进行混沌工程
+3. **自动化**：混沌工程自动化执行
+4. **AI 系统**：AI 系统也要混沌工程
+5. **事后复盘**：演练后复盘改进

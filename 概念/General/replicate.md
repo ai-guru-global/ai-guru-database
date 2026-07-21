@@ -22,7 +22,7 @@ base_confidence: 0.85
 lifecycle: reviewed
 tier: core
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-07-21
 aliases:
   - Replicate
 
@@ -122,3 +122,23 @@ class Predictor(BasePredictor):
 - [[概念/modal]] — Modal
 - [[概念/huggingface]] — HuggingFace
 - [[概念/serverless]] — 无服务器
+
+---
+
+## 2026 Replicate 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Cog 框架** | 开源模型打包框架，定义输入输出接口 | GA |
+| **Replicate API** | HTTP API 调用任意开源模型，按秒计费 | GA |
+| **Cold Boot 优化** | 模型预热 + 缓存减少冷启动延迟 | GA |
+| **Fine-tuning API** | 平台内 LoRA/DreamBooth 微调服务 | GA |
+| **多语言 SDK** | Python/JS/Go/Ruby SDK 覆盖主流语言 | GA |
+
+## 生产最佳实践
+
+1. **模型版本固定**：使用模型 hash 而非 latest 标签，避免意外更新导致输出变化
+2. **Webhook 异步**：长任务使用 webhook 回调而非轮询，减少无效请求
+3. **成本优化**：监控 prediction 时长，对高频调用考虑自建推理服务
+4. **输入验证**：在客户端验证输入参数，避免无效 prediction 产生费用
+5. **容错降级**：Replicate 不可用时回退到本地/备用推理服务

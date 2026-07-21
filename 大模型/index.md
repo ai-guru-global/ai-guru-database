@@ -43,5 +43,4 @@ This page indexes the contents of `大模型`.
 - [[大模型/Structured_Output_Guide|Structured Output Guide]]
 - [[大模型/Transformer_Architecture|Transformer Architecture]]
 - [[大模型/Transformer_Deep_Dive|Transformer Deep Dive]]
-- [[大模型/Transformer_Training_vs_Inference 2|Transformer Training Vs Inference 2]]
 - [[大模型/Transformer_Training_vs_Inference|Transformer Training Vs Inference]]

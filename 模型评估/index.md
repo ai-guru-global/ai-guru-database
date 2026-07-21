@@ -30,5 +30,4 @@ This page indexes the contents of `模型评估`.
 - [[模型评估/README|README]]
 - [[模型评估/README_for_dummy|README For Dummy]]
 - [[模型评估/Statistical_Evaluation_Methods|Statistical Evaluation Methods]]
-- [[模型评估/Unified_Benchmark_Comparison 2|Unified Benchmark Comparison 2]]
 - [[模型评估/Unified_Benchmark_Comparison|Unified Benchmark Comparison]]

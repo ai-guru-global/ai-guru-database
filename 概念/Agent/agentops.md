@@ -120,6 +120,85 @@ pip install agentops
 3. **会话回放定位问题**：用决策树回放找到 Agent 走错的步骤
 4. **与 CI/CD 集成**：每次发布后对比 Agent 行为变化
 5. **多 Agent 系统必用**：单 Agent 可看日志，多 Agent 必须用追踪平台
+6. **自定义事件**：业务关键节点添加自定义事件标记
+7. **定期审计**：每周回顾 Agent 行为报告，发现模式问题
+
+## 高级用法
+
+### 自定义事件追踪
+
+```python
+import agentops
+from agentops import record_action, record_tool
+
+# 记录自定义业务事件
+@record_action("business_decision")
+def make_decision(order_data):
+    # Agent 业务决策逻辑
+    decision = analyze_order(order_data)
+    return decision
+
+# 记录工具调用
+@record_tool("database_query")
+def query_database(sql: str):
+    result = db.execute(sql)
+    return result
+
+# 记录错误
+try:
+    risky_operation()
+except Exception as e:
+    agentops.record_error(e, context={"step": "payment"})
+```
+
+### 告警配置
+
+```yaml
+# agentops-alerts.yaml
+alerts:
+  cost_spike:
+    metric: session_cost
+    threshold: 10.0  # 美元
+    window: 1h
+    action: notify_slack
+  
+  high_error_rate:
+    metric: error_rate
+    threshold: 0.05  # 5%
+    window: 15m
+    action: page_oncall
+  
+  long_running:
+    metric: session_duration
+    threshold: 300  # 秒
+    action: log_warning
+  
+  tool_failure:
+    metric: tool_error_count
+    threshold: 10
+    window: 5m
+    action: notify_slack
+```
+
+### 与主流框架集成
+
+| 框架 | 集成方式 | 自动追踪内容 |
+|------|----------|----------------|
+| **LangChain** | Callback Handler | LLM、工具、链调用 |
+| **CrewAI** | 内置集成 | Agent、Task、Crew |
+| **AutoGen** | 事件钩子 | 对话、工具、多 Agent |
+| **OpenAI SDK** | 自动 Patch | ChatCompletion、Function |
+| **LangGraph** | Callback | 节点、边、状态 |
+
+## 监控仪表板指标
+
+| 指标类别 | 具体指标 | 用途 |
+|----------|----------|------|
+| **成本** | 每会话成本、Token 消耗、API 调用次数 | 成本控制 |
+| **性能** | P50/P95/P99 延迟、吞吐量 | 性能优化 |
+| **质量** | 任务成功率、工具调用成功率、幻觉率 | 质量监控 |
+| **行为** | 平均步数、循环次数、回溯次数 | 行为分析 |
+| **错误** | 错误率、错误类型分布、恢复时间 | 故障排查 |
 
 ## 参考资源
 

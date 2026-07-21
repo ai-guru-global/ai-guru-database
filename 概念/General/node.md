@@ -4,7 +4,7 @@ category: -concepts
 tags: ["kubernetes", "k8s", "node", "cloud-native", "alibaba-cloud"]
 summary: "Node 是 Kubernetes 集群中的工作节点，负责承载和运行 Pod；由 kubelet、kube-proxy 与容器运行时组成，是 Scheduler 调度工作负载、暴露计算/存储/网络资源的实际载体。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
 aliases:
   - "Node"
@@ -92,3 +92,23 @@ kubectl uncordon worker-01
 - [[概念/containerd|containerd]] — Node 常用容器运行时
 - [[概念/kubectl|kubectl]] — 节点运维命令行工具
 - [[概念/pod-disruption-budget|Pod Disruption Budget]] — 节点维护时的驱逐保护
+
+---
+
+## 2026 Node 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **K8s Node** | K8s 工作节点 | GA |
+| **kubelet** | 节点代理 | GA |
+| **containerd** | 容器运行时 | GA |
+| **GPU 节点** | GPU 工作节点 | GA |
+| **节点自动修复** | 节点故障自动修复 | GA |
+
+## 生产最佳实践
+
+1. **节点监控**：监控节点资源使用
+2. **GPU 节点**：AI 训练用 GPU 节点
+3. **节点池**：不同负载用不同节点池
+4. **自动修复**：配置节点自动修复
+5. **资源预留**：节点资源预留

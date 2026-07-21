@@ -18,6 +18,8 @@ provenance:
   ambiguous: 0.10
 base_confidence: 0.85
 lifecycle: reviewed
+created: 2026-06-12
+updated: 2026-07-21
 tier: supporting
 ---
 
@@ -101,3 +103,23 @@ QwQ 推理流程
 - [[概念/deepseek-models]] — DeepSeek 系列
 - [[概念/cot-react-reasoning-prompt]] — CoT 推理提示
 - [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+
+---
+
+## 2026 QwQ 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **QwQ** | 阿里推理模型 | GA |
+| **思维链推理** | CoT 推理能力 | GA |
+| **数学推理** | 数学问题推理 | GA |
+| **代码推理** | 代码问题推理 | GA |
+| **与 o1 对比** | QwQ vs OpenAI o1 | GA |
+
+## 生产最佳实践
+
+1. **推理任务**：复杂推理任务用 QwQ
+2. **数学/代码**：数学/代码问题用 QwQ
+3. **与 Qwen3 对比**：根据场景选择 QwQ 或 Qwen3
+4. **成本考虑**：推理模型成本较高
+5. **与 o1 对比**：根据场景选择 QwQ 或 o1

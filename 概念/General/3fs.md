@@ -18,6 +18,8 @@ provenance:
   ambiguous: 0.10
 base_confidence: 0.80
 lifecycle: reviewed
+created: 2026-06-12
+updated: 2026-07-21
 tier: supporting
 ---
 
@@ -106,3 +108,23 @@ tier: supporting
 - [[概念/dualpipe]] — DualPipe 双向流水线
 - [[概念/deepgemm]] — DeepGEMM FP8 算子库
 - [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+
+---
+
+## 2026 3FS 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **3FS** | DeepSeek 分布式文件系统 | GA |
+| **高性能存储** | AI 训练高性能存储 | GA |
+| **RDMA 支持** | RDMA 网络支持 | GA |
+| **并行 I/O** | 并行 I/O 优化 | GA |
+| **与 Lustre 对比** | 3FS vs Lustre | GA |
+
+## 生产最佳实践
+
+1. **AI 训练存储**：AI 训练用 3FS 高性能存储
+2. **RDMA 网络**：启用 RDMA 网络加速
+3. **并行 I/O**：优化并行 I/O 性能
+4. **与 Lustre 对比**：根据场景选择文件系统
+5. **DeepSeek 生态**：DeepSeek 训练用 3FS

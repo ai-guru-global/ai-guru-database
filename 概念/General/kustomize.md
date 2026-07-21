@@ -21,7 +21,7 @@ provenance:
   ambiguous: 0.05
 base_confidence: 0.85
 created: 2026-06-24
-updated: 2026-06-24
+updated: 2026-07-21
 ---
 
 # Kustomize（K8s 配置管理工具）
@@ -126,3 +126,23 @@ ArgoCD 原生支持 Kustomize：
 - [[概念/argocd]] — ArgoCD（GitOps）
 - [[概念/ci-cd]] — CI/CD 流水线
 - [[架构基建/AI_Stack_Container_Runtime_Guide]] — K8s 实践
+
+---
+
+## 2026 Kustomize 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **kubectl kustomize** | kubectl 内置 Kustomize 渲染，无需额外安装 | GA |
+| **多环境 Overlay** | base + overlays 模式管理 dev/staging/prod | GA |
+| **Helm 互操作** | Kustomize 渲染 Helm 输出实现二次定制 | GA |
+| **AI 推理服务配置** | GPU 资源、模型路径、扩缩策略环境差异化 | GA |
+| **FluxCD 集成** | GitOps 流水线原生支持 Kustomize | GA |
+
+## 生产最佳实践
+
+1. **Base 精简**：base 只包含通用配置，环境差异全部放 overlay
+2. **命名规范**：namePrefix/nameSuffix 统一资源命名，避免跨环境冲突
+3. **Secret 管理**：不在 Kustomize 中明文存储 Secret，结合 SOPS/Vault
+4. **CI 验证**：流水线中执行 `kubectl kustomize` 验证渲染结果合法性
+5. **避免过度嵌套**：overlay 层级不超过 3 层，保持可理解性

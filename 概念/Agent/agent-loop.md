@@ -183,6 +183,16 @@ for attempt in range(MAX_RETRIES):
 | Token 效率 | 每轮有效信息占比 | >60% |
 | 任务完成率 | 最终成功交付比例 | >85% |
 
+## 2026 趋势
+
+| 趋势 | 说明 |
+|------|------|
+| **推理模型简化循环** | o3/R1 内置规划，减少显式循环轮数 |
+| **流式循环** | 每步结果实时流式输出，降低感知延迟 |
+| **持久化循环** | Checkpoint + 恢复，支持长时间任务 |
+| **自适应循环** | 根据任务复杂度动态调整最大轮数 |
+| **多 Agent 循环** | Supervisor 循环协调多个 Worker Agent |
+
 ## Related
 
 - [[概念/Agent/agent-planning|Agent Planning]] — 循环中的规划策略

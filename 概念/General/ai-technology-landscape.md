@@ -19,11 +19,11 @@ provenance:
   inferred: 0.15
   ambiguous: 0.05
 base_confidence: 0.75
-lifecycle: draft
-lifecycle_changed: 2026-05-31
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
 tier: core
 created: 2026-05-31T00:00:00Z
-updated: 2026-05-31T00:00:00Z
+updated: 2026-07-21
 ---
 
 # AI技术全景
@@ -169,3 +169,23 @@ AI Agent核心技术栈：
 
 - [[概念/ai-fundamentals]] — AI基础概念 (共享: ai, 机器学习, 深度学习)
 - [[概念/ai-history]] — AI历史 (共享: ai, 深度学习)
+
+---
+
+## 2026 AI 技术全景生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **大模型层** | GPT/Claude/Gemini/Qwen 等基础模型 | GA |
+| **中间件层** | LangChain/LlamaIndex/DSPy 应用框架 | GA |
+| **基础设施层** | GPU 集群/向量数据库/MLOps 平台 | GA |
+| **应用层** | Agent/RAG/多模态/代码生成 | GA |
+| **边缘 AI** | 端侧小模型 + NPU 芯片 | GA |
+
+## 生产最佳实践
+
+1. **分层理解**：从基础设施到应用层逐层理解，找到自身定位
+2. **技术选型**：根据场景选择合适层级的工具，不过度工程化
+3. **跟踪趋势**：关注开源社区动态，及时评估新技术适用性
+4. **生态思维**：优先选择生态丰富的技术栈，降低集成成本
+5. **实践验证**：新技术先 PoC 验证，再决定是否生产采用

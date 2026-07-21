@@ -25,7 +25,7 @@ lifecycle: reviewed
 lifecycle_changed: 2026-06-16
 tier: core
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-07-21
 aliases:
   - "Code Generation Workflow"
   - "code generation workflow"
@@ -110,3 +110,23 @@ CI/CD 构建、部署
 - [[概念/mlops]] — MLOps
 - [[编程/README]] — AI 编程工具
 - [[模型运维/CI_CD/CI_CD_Pipeline_AI_2026]] — AI CI/CD 流水线 2026
+
+---
+
+## 2026 代码生成工作流生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **AI 代码生成** | AI 辅助代码生成 | GA |
+| **代码审查** | AI 代码审查 | GA |
+| **CI/CD 集成** | 代码生成 CI/CD 集成 | GA |
+| **Agent 编程** | AI Agent 自主编程 | 研究 |
+| **人机协作** | 人机协作编程 | GA |
+
+## 生产最佳实践
+
+1. **AI 辅助**：用 AI 辅助代码生成
+2. **代码审查**：AI 生成代码必须审查
+3. **CI/CD 集成**：代码生成集成到 CI/CD
+4. **测试覆盖**：AI 生成代码必须测试
+5. **人机协作**：人机协作编程

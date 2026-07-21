@@ -22,7 +22,7 @@ base_confidence: 0.9
 lifecycle: reviewed
 tier: core
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-07-21
 aliases:
   - "Azure Openai"
   - "azure openai"
@@ -97,3 +97,23 @@ aliases:
 - [[概念/openai]] — OpenAI
 - [[概念/aws-bedrock]] — AWS Bedrock
 - [[概念/vertex-ai]] — Google Vertex AI
+
+---
+
+## 2026 Azure OpenAI 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Azure OpenAI** | 企业级 OpenAI 服务 | GA |
+| **GPT-5** | 最新 GPT 模型 | GA |
+| **合规部署** | 企业合规部署 | GA |
+| **私有端点** | 私有网络访问 | GA |
+| **内容过滤** | 内容安全过滤 | GA |
+
+## 生产最佳实践
+
+1. **企业合规**：企业合规用 Azure OpenAI
+2. **私有端点**：敏感场景用私有端点
+3. **内容过滤**：启用内容安全过滤
+4. **与 AWS 对比**：根据云环境选择 Azure 或 AWS
+5. **成本优化**：监控 API 调用成本

@@ -25,7 +25,7 @@ lifecycle: reviewed
 lifecycle_changed: 2026-06-16
 tier: core
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-07-21
 aliases:
   - Bbh
 
@@ -94,3 +94,23 @@ Big-Bench 是 Google 发布的超大规模 LLM 基准，包含 200+ 任务，覆
 - [[概念/llm-arena]] — LLM Arena
 - [[概念/red-teaming]] — 红队测试
 - [[模型评估/Benchmarks/LLM_Benchmark_Suite_2026]] — LLM 基准套件 2026
+
+---
+
+## 2026 BBH 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **BIG-Bench Hard** | 困难推理基准测试 | GA |
+| **CoT 评估** | 思维链推理评估 | GA |
+| **多步推理** | 多步推理能力测试 | GA |
+| **与 MMLU 对比** | BBH vs MMLU | GA |
+| **推理模型评估** | 推理模型专项评估 | GA |
+
+## 生产最佳实践
+
+1. **推理评估**：推理能力用 BBH 评估
+2. **CoT 提示**：BBH 测试用 CoT 提示
+3. **与 MMLU 配合**：BBH + MMLU 全面评估
+4. **推理模型**：推理模型重点测 BBH
+5. **持续评估**：模型迭代持续 BBH 评估

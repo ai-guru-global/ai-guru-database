@@ -20,7 +20,7 @@ base_confidence: 0.9
 lifecycle: reviewed
 tier: core
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-07-21
 aliases:
   - Etcd
 
@@ -92,3 +92,23 @@ etcdctl snapshot save backup.db
 - [[概念/distributed-systems]] — 分布式系统
 - [[概念/consensus]] — 共识算法
 - [[架构基建/Architecture_Overview/AI_Infrastructure_2026]] — AI 基础设施 2026
+
+---
+
+## 2026 etcd 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **etcd** | 分布式键值存储 | GA |
+| **Raft 共识** | 分布式一致性 | GA |
+| **K8s 后端** | K8s 控制平面存储 | GA |
+| **服务发现** | 分布式服务发现 | GA |
+| **配置管理** | 分布式配置管理 | GA |
+
+## 生产最佳实践
+
+1. **K8s 必用**：K8s 控制平面必须用 etcd
+2. **高可用**：etcd 集群高可用部署
+3. **备份**：etcd 数据定期备份
+4. **性能优化**：etcd 性能优化
+5. **监控**：监控 etcd 集群健康

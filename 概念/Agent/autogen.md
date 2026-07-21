@@ -134,6 +134,78 @@ executor.initiate_chat(manager, message="写一个快速排序算法并测试")
 3. **Docker 执行**: 代码执行必须用 Docker 隔离，避免安全风险
 4. **成本监控**: 多 Agent 对话 token 消耗是单 Agent 的 3-10×
 5. **终止条件**: 设置明确的终止条件，避免无意义的继续对话
+6. **状态持久化**: 长时任务使用外部存储保存对话状态
+7. **可观测性**: 接入 AgentOps/LangSmith 追踪对话流程
+
+## 9. 高级特性
+
+### 嵌套对话
+
+```python
+# Agent 内部可以启动子对话
+class ManagerAgent(AssistantAgent):
+    def generate_reply(self, messages):
+        # 复杂任务委派给子团队
+        if is_complex(messages[-1]):
+            sub_chat = GroupChat(agents=[...])
+            result = sub_chat.run(messages[-1])
+            return summarize(result)
+        return super().generate_reply(messages)
+```
+
+### 自定义 Sprecher 选择
+
+```python
+def custom_speaker_selection(last_speaker, groupchat):
+    """自定义下一个发言者选择逻辑"""
+    messages = groupchat.messages
+    
+    # 代码写完后自动进入审查
+    if last_speaker.name == "Coder":
+        return groupchat.agent_by_name["Critic"]
+    
+    # 审查通过后执行
+    if last_speaker.name == "Critic" and "approved" in messages[-1]["content"]:
+        return groupchat.agent_by_name["Executor"]
+    
+    # 默认轮流
+    return groupchat.next_agent(last_speaker)
+
+groupchat = GroupChat(
+    agents=[coder, critic, executor],
+    speaker_selection_method=custom_speaker_selection
+)
+```
+
+## 10. AutoGen → AG2 迁移指南
+
+| AutoGen (旧) | AG2 (新) | 说明 |
+|--------------|----------|------|
+| `autogen` | `ag2` | 包名变更 |
+| 同步执行 | 事件驱动 | 异步架构 |
+| `llm_config` | `llm_config` + `model_client` | 更灵活的模型配置 |
+| 无追踪 | 内置可观测性 | OpenTelemetry 支持 |
+| `GroupChat` | `GroupChat` + `Team` | 更丰富的协作模式 |
+
+```bash
+# 迁移步骤
+pip uninstall autogen
+pip install ag2
+
+# 代码修改
+# from autogen import AssistantAgent
+from ag2 import AssistantAgent
+```
+
+## 11. 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| 无限循环 | 未设置 max_round | 配置最大轮次 |
+| 角色混淆 | system_message 不清晰 | 明确定义职责和边界 |
+| 代码执行失败 | Docker 未配置 | 启用 use_docker=True |
+| 成本过高 | 多 Agent 重复调用 | 精简 Prompt + 小模型做子任务 |
+| 版本兼容 | API 变动大 | 锁定版本 + 关注 CHANGELOG |
 
 ## Related
 

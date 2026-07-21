@@ -4,7 +4,7 @@ category: -concepts
 tags: ["kubernetes", "k8s", "observability", "tracing", "metrics", "logging", "cloud-native", "alibaba-cloud"]
 summary: "OpenTelemetry 是 CNCF 孵化的统一可观测性标准与工具集，提供 Metrics、Traces、Logs 的采集、转换和导出能力。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
 aliases:
   - "OTel"
@@ -82,3 +82,23 @@ service:
 - [[概念/loki|Loki]] — 日志聚合
 - [[概念/tempo|Tempo]] — 低成本追踪后端
 - [[概念/kubernetes|Kubernetes]] — 容器编排
+
+---
+
+## 2026 OpenTelemetry 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **OpenTelemetry** | 统一遥测标准 | GA |
+| **Traces/Metrics/Logs** | 三大支柱统一 | GA |
+| **Collector** | 遥测数据收集器 | GA |
+| **SDK** | 多语言 SDK | GA |
+| **自动插桩** | 自动遥测插桩 | GA |
+
+## 生产最佳实践
+
+1. **统一遥测**：用 OpenTelemetry 统一遥测
+2. **自动插桩**：用自动插桩减少代码侵入
+3. **Collector 部署**：部署 OTel Collector
+4. **与后端配合**：OTel + Prometheus/Loki/Tempo
+5. **采样策略**：配置合适的采样策略

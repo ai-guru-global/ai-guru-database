@@ -26,7 +26,7 @@ provenance:
   ambiguous: 0.05
 base_confidence: 0.85
 created: 2026-06-24
-updated: 2026-06-24
+updated: 2026-07-21
 ---
 
 # Multi-Agent System（多智能体系统）
@@ -122,6 +122,77 @@ Task: 各 Agent 按顺序执行自己的任务
 | **循环陷阱** | 最大步数限制 + 终止条件 |
 | **成本失控** | token 配额 + 模型路由（小模型做子任务）|
 | **结果不一致** | Reviewer Agent + 校验环节 |
+| **状态同步** | 分布式事务 + 最终一致性 |
+| **故障传播** | 熔断器 + 降级策略 |
+
+## 2026 年多智能体生态
+
+| 框架/协议 | 版本 | 特色 | 适用场景 |
+|-----------|------|------|----------|
+| **AutoGen 0.4** | 事件驱动重构 | 异步、可扩展 | 研究、复杂对话 |
+| **CrewAI 1.x** | 企业版 | SOP、护栏、监控 | 业务自动化 |
+| **LangGraph Platform** | 云托管 | 持久化、人工审批 | 生产工作流 |
+| **A2A Protocol** | v1.0 | 开放标准 | 跨平台 Agent 互操作 |
+| **OpenAI Agents SDK** | 原生 | Swarm 继任者 | OpenAI 生态 |
+| **Google ADK** | 新发布 | A2A 原生 | Google Cloud |
+
+## 生产最佳实践
+
+1. **单 Agent 优先**：只有任务确实需要多视角时才用多 Agent
+2. **明确角色边界**：每个 Agent 的 system prompt 必须清晰定义职责和边界
+3. **设置终止条件**：最大步数、最大时间、最大成本三重限制
+4. **成本分层**：Manager 用强模型，Worker 用性价比模型
+5. **状态外置**：多 Agent 共享状态存储在 Redis/DB，不依赖内存
+6. **可观测性**：每个 Agent 的输入输出、决策过程都要可追踪
+7. **渐进式扩展**：从 2-3 个 Agent 开始，验证后再增加
+
+## 代码示例
+
+```python
+# CrewAI 多 Agent 示例
+from crewai import Agent, Task, Crew
+
+# 定义 Agents
+researcher = Agent(
+    role="研究员",
+    goal="搜集和分析相关信息",
+    backstory="你是一位经验丰富的研究分析师",
+    tools=[search_tool, web_scraper],
+    llm="gpt-4o"
+)
+
+writer = Agent(
+    role="撰写者",
+    goal="将研究结果转化为清晰的报告",
+    backstory="你是一位专业的技术写作专家",
+    llm="gpt-4o-mini"  # 成本优化
+)
+
+# 定义 Tasks
+research_task = Task(
+    description="研究 {topic} 的最新进展",
+    expected_output="结构化的研究笔记",
+    agent=researcher
+)
+
+writing_task = Task(
+    description="基于研究结果撰写报告",
+    expected_output="Markdown 格式的报告",
+    agent=writer,
+    context=[research_task]  # 依赖研究任务
+)
+
+# 组建 Crew
+crew = Crew(
+    agents=[researcher, writer],
+    tasks=[research_task, writing_task],
+    verbose=True,
+    max_rpm=100,  # 速率限制
+    max_cost=5.0   # 成本限制
+)
+
+result = crew.kickoff(inputs={"topic": "AI Agent 2026"})
+```
 
 ## Related
 

@@ -20,7 +20,7 @@ base_confidence: 0.87
 lifecycle: reviewed
 tier: core
 created: 2026-06-04
-updated: 2026-06-04
+updated: 2026-07-21
 aliases:
   - "Ai For Science"
   - "ai for science"
@@ -183,3 +183,23 @@ AI 加速后:
 - [[概念/graph-neural-networks]] — GNN（AlphaFold/GNoMe 核心技术）
 - [[概念/generative-vision-models]] — 生成模型（扩散模型在分子生成中的应用）
 - [[概念/neural-networks]] — 神经网络基础
+
+---
+
+## 2026 AI for Science 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **AlphaFold 3** | 蛋白质/核酸/小分子复合物结构预测 | GA |
+| **GNoMe** | AI 发现 220万种新稳定材料 | GA |
+| **气象大模型** | AI 天气预报精度超越传统数值模式 | GA |
+| **药物发现** | AI 加速分子设计与筛选 | GA |
+| **数学推理** | AI 辅助定理证明与猜想生成 | 研究 |
+
+## 生产最佳实践
+
+1. **领域专家协作**：AI for Science 必须与领域科学家紧密合作
+2. **数据质量**：科学数据必须严格验证，错误数据导致错误发现
+3. **可解释性**：科学发现需要可解释的机制，而非黑箱预测
+4. **实验验证**：AI 预测必须经实验验证，不能仅依赖计算结果
+5. **开源共享**：科学模型和数据开源共享，加速社区进步

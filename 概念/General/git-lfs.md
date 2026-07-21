@@ -18,6 +18,8 @@ provenance:
   ambiguous: 0.10
 base_confidence: 0.85
 lifecycle: reviewed
+created: 2026-06-12
+updated: 2026-07-21
 tier: supporting
 ---
 
@@ -159,3 +161,23 @@ AI Stack 模型获取方式
 - [[概念/huggingface-cli]] — HuggingFace CLI
 - [[概念/modelscope]] — ModelScope 魔搭
 - [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+
+---
+
+## 2026 Git LFS 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **HF Hub LFS** | HuggingFace 模型仓库基于 Git LFS 存储权重 | GA |
+| **Safetensors** | 替代 .bin 的安全高效权重格式 | GA |
+| **增量下载** | 只下载变更的 LFS 文件，节省带宽 | GA |
+| **模型分片** | 大模型自动分片存储（每片 < 5GB） | GA |
+| **缓存管理** | huggingface-cli 统一缓存与清理 | GA |
+
+## 生产最佳实践
+
+1. **大文件必用 LFS**：模型权重、数据集等大文件必须通过 LFS 管理
+2. **分片存储**：单文件不超过 5GB，使用模型分片避免下载失败
+3. **缓存策略**：配置 HF_HOME 统一缓存目录，定期清理旧版本
+4. **网络优化**：国内使用镜像站或 ModelScope 替代直接访问 HF
+5. **CI 优化**：流水线中用 `--include` 只下载必要文件，加速构建

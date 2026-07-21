@@ -33,11 +33,11 @@ provenance:
   inferred: 0.1
   ambiguous: 0.05
 base_confidence: 0.78
-lifecycle: draft
-lifecycle_changed: 2026-05-31
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
 tier: core
 created: 2026-05-31 00:00:00+00:00
-updated: 2026-05-31 00:00:00+00:00
+updated: 2026-07-21
 aliases:
   - "Model Evaluation"
   - "model evaluation"
@@ -114,3 +114,23 @@ aliases:
 - [[概念/ci-integrated-evaluation]] — CI 集成评估
 - [[概念/ab-testing-framework]] — A/B 测试框架
 - [[模型评估/Benchmarks/LLM_Benchmarks_for_dummy]] — LLM 评估与测试大白话
+
+---
+
+## 2026 模型评估生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **LLM-as-Judge** | 用强模型自动评估弱模型输出质量 | GA |
+| **OpenCompass 2.0** | 统一多模态模型评估框架 | GA |
+| **Arena-Hard** | 高难度对话评估基准，区分度更强 | GA |
+| **评估可观测性** | LangSmith/Braintrust 评估链路追踪 | GA |
+| **红队自动化** | PyRIT/Garak 自动化安全评估 | GA |
+
+## 生产最佳实践
+
+1. **多维度评估**：结合准确性、安全性、延迟、成本四个维度综合判断
+2. **统计显著性**：A/B 测试必须达到 p < 0.05，避免小样本误导决策
+3. **评估集管理**：定期更新评估集防止过拟合，保持与生产分布一致
+4. **回归测试**：每次模型更新必须跑完整评估套件，设置质量门禁
+5. **人工+自动**：自动评估做初筛，关键决策仍需人工审核确认

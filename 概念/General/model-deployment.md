@@ -25,11 +25,11 @@ provenance:
   inferred: 0.1
   ambiguous: 0.05
 base_confidence: 0.78
-lifecycle: draft
-lifecycle_changed: 2026-05-31
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
 tier: core
 created: 2026-05-31 00:00:00+00:00
-updated: 2026-05-31 00:00:00+00:00
+updated: 2026-07-21
 aliases:
   - "Model Deployment"
   - "model deployment"
@@ -94,3 +94,23 @@ aliases:
 
 - [[治理/serving-deployment]] — 模型服务 × 模型部署 (共享: deployment, edge)
 - [[概念/multi-head-latent-attention]] — Multi-head Latent Attention (MLA): KV Cache 压缩 7-28× 的注意力架构创新
+
+---
+
+## 2026 模型部署生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **vLLM** | 高性能推理引擎 | GA |
+| **TensorRT-LLM** | NVIDIA 推理优化 | GA |
+| **KServe** | K8s 模型服务 | GA |
+| **Seldon Core** | 模型部署平台 | GA |
+| **边缘部署** | 边缘设备部署 | GA |
+
+## 生产最佳实践
+
+1. **推理引擎**：LLM 推理用 vLLM/TensorRT-LLM
+2. **K8s 部署**：K8s 环境用 KServe/Seldon
+3. **自动扩缩**：配置自动扩缩容
+4. **金丝雀发布**：新模型金丝雀发布
+5. **监控告警**：部署后监控告警

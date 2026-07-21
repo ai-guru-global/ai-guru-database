@@ -22,7 +22,7 @@ provenance:
   ambiguous: 0.02
 base_confidence: 0.95
 created: 2026-06-24
-updated: 2026-06-24
+updated: 2026-07-21
 ---
 
 # PyTorch（深度学习框架）
@@ -107,3 +107,23 @@ from torch.distributed.tensor import DTensor, Shard
 - [[概念/distributed-training]] — 分布式训练
 - [[概念/tensor-parallelism]] — 张量并行
 - [[深度学习/DL_Frameworks/pytorch_overview]] — PyTorch 深度解析
+
+---
+
+## 2026 PyTorch 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **PyTorch 2.x** | 深度学习框架 | GA |
+| **torch.compile** | 编译优化 | GA |
+| **FSDP** | 全分片数据并行 | GA |
+| **Tensor Parallel** | 张量并行 | GA |
+| **PyTorch Distributed** | 分布式训练 | GA |
+
+## 生产最佳实践
+
+1. **torch.compile**：启用 torch.compile 加速
+2. **FSDP 训练**：大模型训练用 FSDP
+3. **Tensor Parallel**：超大模型用 Tensor Parallel
+4. **混合精度**：训练用混合精度
+5. **与 TensorFlow 对比**：研究场景优先 PyTorch

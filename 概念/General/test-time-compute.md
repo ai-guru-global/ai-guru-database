@@ -25,7 +25,7 @@ summary: Test-Time Compute 指在推理阶段投入更多计算资源（如更�
 lifecycle: reviewed
 tier: core
 created: 2026-06-25
-updated: 2026-06-25
+updated: 2026-07-21
 sources: []
 ---
 
@@ -145,3 +145,23 @@ flowchart LR
 - [[概念/grpo|GRPO]]
 - [[概念/reasoning-models|推理模型]]
 - [[概念/decoding-strategies|解码策略]]
+
+---
+
+## 2026 Test-Time Compute 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Chain-of-Thought** | 多步推理链提升复杂任务准确率 | GA |
+| **Best-of-N 采样** | 多次采样取最优结果 | GA |
+| **推理模型 (o1/R1)** | 内置长思维链的专用推理模型 | GA |
+| **自适应计算** | 根据问题难度动态分配推理 token | 研究 |
+| **MCTS + LLM** | 蒙特卡洛树搜索结合 LLM 评估 | 研究 |
+
+## 生产最佳实践
+
+1. **成本平衡**：Test-Time Compute 提升质量但增加延迟和成本，根据场景权衡
+2. **难度分级**：简单问题直接回答，复杂问题才启用多步推理
+3. **超时控制**：设置推理 token 上限，避免无限思考
+4. **缓存复用**：相似问题的推理结果可缓存复用
+5. **评估验证**：用独立评估器验证推理结果正确性

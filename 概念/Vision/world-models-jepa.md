@@ -17,11 +17,11 @@ provenance:
   inferred: 0.12
   ambiguous: 0.08
 base_confidence: 0.72
-lifecycle: draft
-lifecycle_changed: 2026-05-31
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
 tier: supporting
 created: 2026-05-31T00:00:00Z
-updated: 2026-05-31T00:00:00Z
+updated: 2026-07-21
 ---
 
 # 世界模型与JEPA架构
@@ -170,3 +170,23 @@ Perception（编码器）
 - [[概念/state-space-models.md|state-space-models]]
 - [[概念/transformer-architecture.md|transformer-architecture]]
 - [[入门/AI_Future_Trends.md|AI_Future_Trends]]
+
+---
+
+## 2026 JEPA 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **I-JEPA** | 图像联合嵌入预测架构 | GA |
+| **V-JEPA** | 视频自监督预训练 | GA |
+| **抽象表示** | 在表示空间预测而非像素空间 | GA |
+| **规划能力** | JEPA 表示用于下游规划任务 | 研究 |
+| **与生成模型对比** | JEPA 重理解，生成模型重合成 | 研究 |
+
+## 生产最佳实践
+
+1. **理解 vs 生成**：JEPA 适合理解任务，生成任务用扩散模型
+2. **预训练数据**：JEPA 预训练需要大量无标注数据
+3. **表示质量**：评估 JEPA 表示的下游任务迁移效果
+4. **与 ViT 对比**：根据任务选择 JEPA 或 ViT 预训练
+5. **研究跟踪**：JEPA 仍在快速发展，关注 Meta FAIR 最新进展

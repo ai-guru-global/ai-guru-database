@@ -28,7 +28,7 @@ summary: TPOT 是模型生成阶段每输出一个 token 的平均时间，主�
 lifecycle: reviewed
 tier: supporting
 created: 2026-06-25
-updated: 2026-06-25
+updated: 2026-07-21
 sources: []
 ---
 
@@ -130,3 +130,23 @@ Throughput ≈ batch_size / TPOT
 - [[概念/paged-attention|PagedAttention]]
 - [[概念/speculative-decoding|推测解码]]
 - [[概念/continuous-batching|Continuous Batching]]
+
+---
+
+## 2026 TPOT 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **TPOT 优化** | 通过批处理、KV Cache、量化降低每 Token 延迟 | GA |
+| **Speculative Decoding** | 小模型草稿 + 大模型验证加速生成 | GA |
+| **Disaggregated 推理** | Prefill/Decode 分离部署优化 TPOT | GA |
+| **SLO 监控** | 实时跟踪 P50/P99 TPOT 指标 | GA |
+| **自适应批处理** | 根据 TPOT 目标动态调整 batch size | GA |
+
+## 生产最佳实践
+
+1. **SLO 定义**：明确 TPOT 目标（如 P99 < 50ms），作为容量规划基准
+2. **KV Cache 管理**：使用 PagedAttention 避免 KV Cache 内存碎片
+3. **批处理平衡**：batch size 越大吞吐越高但 TPOT 增加，找到最优平衡点
+4. **量化降延迟**：INT8/FP8 量化可显著降低 TPOT，精度损失可接受
+5. **分离架构**：高并发场景考虑 Prefill/Decode 分离，避免互相干扰

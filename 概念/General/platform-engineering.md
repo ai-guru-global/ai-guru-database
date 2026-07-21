@@ -4,7 +4,7 @@ category: -concepts
 tags: ["kubernetes", "k8s", "platform-engineering", "developer-experience", "idp", "cloud-native", "alibaba-cloud"]
 summary: "Platform Engineering（平台工程）是通过构建内部开发者平台（IDP），把基础设施、工具链和最佳实践产品化，降低应用团队的认知负担。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: core
 aliases:
   - "平台工程"
@@ -52,3 +52,23 @@ sources: []
 - [[概念/backstage|Backstage]] — 开发者门户
 - [[概念/gitops|GitOps]] — 交付入口
 - [[概念/kubernetes|Kubernetes]] — 平台底座
+
+---
+
+## 2026 平台工程生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Backstage** | 开发者门户 | GA |
+| **内部开发者平台** | IDP 平台建设 | GA |
+| **自助服务** | 开发者自助服务 | GA |
+| **Golden Path** | 标准化开发路径 | GA |
+| **平台即产品** | 平台产品化思维 | GA |
+
+## 生产最佳实践
+
+1. **开发者门户**：用 Backstage 建设开发者门户
+2. **自助服务**：提供开发者自助服务
+3. **Golden Path**：定义标准化开发路径
+4. **平台即产品**：用产品思维运营平台
+5. **与 GitOps 配合**：平台工程 + GitOps 交付

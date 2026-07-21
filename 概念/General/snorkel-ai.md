@@ -16,6 +16,8 @@ provenance:
   ambiguous: 0.10
 base_confidence: 0.78
 lifecycle: reviewed
+created: 2026-06-12
+updated: 2026-07-21
 tier: supporting
 ---
 
@@ -106,3 +108,23 @@ pip install snorkel
 - [[概念/label-studio]] — Label Studio 开源数据标注平台
 - [[概念/feast]] — Feast 开源特征存储
 - [[概念/mlflow]] — MLflow 实验追踪
+
+---
+
+## 2026 Snorkel AI 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Snorkel Flow** | 数据编程平台 | GA |
+| **弱监督** | 弱监督学习 | GA |
+| **标注函数** | 标注函数定义 | GA |
+| **数据编程** | 程序化标注 | GA |
+| **与 Label Studio 对比** | Snorkel vs Label Studio | GA |
+
+## 生产最佳实践
+
+1. **弱监督**：标注成本高用弱监督
+2. **数据编程**：程序化定义标注函数
+3. **与 Label Studio 对比**：根据场景选择工具
+4. **质量控制**：弱监督数据质量控制
+5. **迭代优化**：迭代优化标注函数

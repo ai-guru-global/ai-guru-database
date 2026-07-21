@@ -20,7 +20,7 @@ base_confidence: 0.87
 lifecycle: reviewed
 tier: core
 created: 2026-06-04
-updated: 2026-06-04
+updated: 2026-07-21
 aliases:
   - "Speech Audio Ai"
   - "speech audio ai"
@@ -177,3 +177,23 @@ aliases:
 - [[概念/llm-architectures]] — LLM 架构（语音 LLM 基础）
 - [[概念/multimodal-models]] — 多模态模型（音频多模态）
 - [[概念/transformer-architecture]] — Transformer（语音模型基础架构）
+
+---
+
+## 2026 语音音频 AI 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Whisper 3** | 多语言语音识别，支持 100+ 语言 | GA |
+| **TTS 克隆** | 少样本语音克隆（CosyVoice/F5-TTS） | GA |
+| **实时语音对话** | GPT-4o/Gemini 实时语音交互 | GA |
+| **音频理解** | 音乐/环境声/事件检测统一模型 | GA |
+| **端侧语音** | 手机/耳机本地 ASR/TTS | GA |
+
+## 生产最佳实践
+
+1. **降噪预处理**：生产环境音频必须降噪，显著提升 ASR 准确率
+2. **流式处理**：实时场景用流式 ASR，降低端到端延迟
+3. **多语言支持**：根据用户群体选择多语言模型，而非单语言
+4. **质量评估**：ASR 用 WER，TTS 用 MOS 评分，建立自动化评估
+5. **隐私保护**：语音数据含生物特征，必须加密存储、明确授权

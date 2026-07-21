@@ -20,11 +20,11 @@ provenance:
   inferred: 0.12
   ambiguous: 0.08
 base_confidence: 0.75
-lifecycle: draft
-lifecycle_changed: 2026-05-31
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
 tier: core
 created: 2026-05-31T00:00:00Z
-updated: 2026-05-31T00:00:00Z
+updated: 2026-07-21
 aliases:
   - "Multimodal Models"
   - "multimodal models"
@@ -140,3 +140,23 @@ KV Cache优化（2-3×）、Speculative Decoding（2-3×）、INT8/INT4量化（
 - [[部署推理/Inference_Performance/Multimodal_Inference_Optimization|多模态推理优化]]
 - [[大模型/Fine_tuning_Techniques/Axolotl_Deep_Dive.md|Axolotl_Deep_Dive]]
 - [[大模型/Fine_tuning_Techniques/Fine_tuning_Techniques.md|Fine_tuning_Techniques]]
+
+---
+
+## 2026 多模态模型生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **GPT-4o** | 原生多模态理解与生成 | GA |
+| **Gemini 2** | 图文音视频统一多模态 | GA |
+| **Qwen-VL** | 开源多模态视觉语言模型 | GA |
+| **多模态 RAG** | 图文混合检索增强生成 | GA |
+| **统一生成** | 同一模型理解 + 生成图文 | GA |
+
+## 生产最佳实践
+
+1. **模态选择**：根据业务需求选择必要模态，不追求全模态
+2. **图像处理**：输入图像质量直接影响效果，做好预处理
+3. **Token 成本**：图像 token 消耗大，优化图像分辨率和数量
+4. **评估体系**：多模态评估需覆盖图文一致性、幻觉率等
+5. **安全审核**：多模态输入增加攻击面，加强输入过滤

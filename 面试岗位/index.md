@@ -37,7 +37,6 @@ This page indexes the contents of `面试岗位`.
 
 ## Files
 
-- [[面试岗位/interview_notes_template 2|Interview Notes Template 2]]
 - [[面试岗位/interview_notes_template|Interview Notes Template]]
 - [[面试岗位/Interviews_for_dummy|Interviews For Dummy]]
 - [[面试岗位/jobs|Jobs]]

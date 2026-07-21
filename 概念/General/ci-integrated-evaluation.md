@@ -25,7 +25,7 @@ lifecycle: reviewed
 lifecycle_changed: 2026-06-16
 tier: core
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-07-21
 aliases:
   - "Ci Integrated Evaluation"
   - "ci integrated evaluation"
@@ -109,3 +109,23 @@ CI 集成评估让这些问题变成流水线的一部分。
 - [[概念/llm-production-pipeline]] — LLM 生产流水线
 - [[模型评估/Evaluation_Automation_2026]] — 评估自动化 2026
 - [[模型运维/Evaluation/LLM_Evaluation_Pipeline]] — LLM 评估流水线
+
+---
+
+## 2026 CI 集成评估生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **CI 评估** | CI/CD 集成评估 | GA |
+| **自动评估** | 自动化模型评估 | GA |
+| **评估门禁** | 评估通过门禁 | GA |
+| **LLM 评估** | LLM 输出评估 | GA |
+| **与 MLOps 配合** | CI 评估 + MLOps | GA |
+
+## 生产最佳实践
+
+1. **CI 集成**：模型评估集成到 CI/CD
+2. **自动评估**：模型变更自动评估
+3. **评估门禁**：评估不通过阻止部署
+4. **LLM 评估**：LLM 输出自动评估
+5. **与 A/B 配合**：CI 评估 + A/B 测试

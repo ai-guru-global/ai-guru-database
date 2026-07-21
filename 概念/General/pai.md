@@ -4,7 +4,7 @@ category: -concepts
 tags: ["alibaba-cloud", "pai", "machine-learning", "llm", "training", "inference", "alibaba-cloud"]
 summary: "PAI（Platform of Artificial Intelligence）是阿里云一站式人工智能平台，提供模型开发、训练、部署、推理全链路能力，包括 PAI-DSW、PAI-DLC、PAI-EAS 等核心产品。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: core
 aliases:
   - "Platform of Artificial Intelligence"
@@ -54,3 +54,23 @@ sources: []
 - [[概念/mlops|MLOps]]
 - [[架构基建/Cloud_Providers/Alibaba_PAI_Deep_Dive|阿里云 PAI 深度解析]]
 - [[架构基建/Alibaba_Cloud_Proprietary_K8s_Context|阿里云专有云 K8s 上下文]]
+
+---
+
+## 2026 PAI 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **PAI-Designer** | 可视化建模 | GA |
+| **PAI-DSW** | Notebook 开发 | GA |
+| **PAI-DLC** | 分布式训练 | GA |
+| **PAI-EAS** | 模型推理服务 | GA |
+| **PAI-Blade** | 推理优化 | GA |
+
+## 生产最佳实践
+
+1. **可视化建模**：快速原型用 PAI-Designer
+2. **Notebook 开发**：探索性分析用 PAI-DSW
+3. **分布式训练**：大模型训练用 PAI-DLC
+4. **推理服务**：模型部署用 PAI-EAS
+5. **推理优化**：推理加速用 PAI-Blade

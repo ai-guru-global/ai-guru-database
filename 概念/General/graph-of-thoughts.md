@@ -24,7 +24,7 @@ provenance:
   ambiguous: 0.05
 base_confidence: 0.85
 created: 2026-06-24
-updated: 2026-06-24
+updated: 2026-07-21
 ---
 
 # GoT（Graph of Thoughts）
@@ -187,3 +187,23 @@ class GoTAgent:
 - [[概念/reflexion]] — Reflexion（自我反思）
 - [[概念/agent-loop]] — Agent Loop
 - [[概念/reasoning-models]] — 推理模型
+
+---
+
+## 2026 Graph of Thoughts 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **GoT 框架** | 图结构思维允许合并/循环/精化 | GA |
+| **与 ToT 对比** | GoT 支持思维合并，ToT 只支持分叉 | GA |
+| **排序/集合任务** | 图搜索在组合优化任务中优势明显 | GA |
+| **Agent 规划** | GoT 作为 Agent 复杂规划器 | 研究 |
+| **质量评估器** | 图节点质量评估与剪枝策略 | GA |
+
+## 生产最佳实践
+
+1. **场景匹配**：GoT 适合需要合并/精化的任务，纯分叉用 ToT 即可
+2. **图复杂度控制**：限制图节点数和边数，避免组合爆炸
+3. **评估器设计**：节点评估质量决定搜索效率，投入设计好评估函数
+4. **与 CoT 组合**：简单步骤用 CoT，关键决策点用 GoT 探索
+5. **成本控制**：图搜索 token 消耗大，设置预算上限

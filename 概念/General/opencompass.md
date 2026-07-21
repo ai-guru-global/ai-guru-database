@@ -22,7 +22,7 @@ base_confidence: 0.88
 lifecycle: reviewed
 tier: core
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-07-21
 aliases:
   - Opencompass
 
@@ -93,3 +93,23 @@ aliases:
 - [[概念/benchmark]] — 基准测试
 - [[概念/lm-evaluation-harness]] — LM Evaluation Harness
 - [[模型评估/Benchmarks/LLM_Benchmark_Suite_2026]] — LLM 基准套件 2026
+
+---
+
+## 2026 OpenCompass 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **OpenCompass** | 开源模型评估框架 | GA |
+| **多基准测试** | 支持多种基准测试 | GA |
+| **自定义评估** | 自定义评估任务 | GA |
+| **排行榜** | 模型排行榜 | GA |
+| **与 LM Eval 对比** | OpenCompass vs LM Eval | GA |
+
+## 生产最佳实践
+
+1. **模型评估**：模型评估用 OpenCompass
+2. **多基准**：多种基准测试全面评估
+3. **自定义评估**：业务场景自定义评估
+4. **与 LM Eval 对比**：根据需求选择评估工具
+5. **持续评估**：模型迭代持续评估

@@ -12,9 +12,7 @@ This page indexes the contents of `大模型/Prompt_Engineering`.
 
 ## Files
 
-- [[大模型/Prompt_Engineering/Context_Engineering_Guide 2|Context Engineering Guide 2]]
 - [[大模型/Prompt_Engineering/Context_Engineering_Guide|Context Engineering Guide]]
-- [[大模型/Prompt_Engineering/Context_Engineering_Patterns 2|Context Engineering Patterns 2]]
 - [[大模型/Prompt_Engineering/Context_Engineering_Patterns|Context Engineering Patterns]]
 - [[大模型/Prompt_Engineering/DSPy_Deep_Dive|Dspy Deep Dive]]
 - [[大模型/Prompt_Engineering/GenAI_L04_Prompt_Engineering_Fundamentals|Genai L04 Prompt Engineering Fundamentals]]

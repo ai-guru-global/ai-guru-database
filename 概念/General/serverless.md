@@ -29,7 +29,7 @@ provenance:
   ambiguous: 0.05
 base_confidence: 0.80
 created: 2026-06-24
-updated: 2026-06-24
+updated: 2026-07-21
 ---
 
 # 无服务器 AI 推理（Serverless AI Inference）
@@ -188,3 +188,23 @@ def main():
 ---
 
 **参见**：[[Modal_Deep_Dive]] · [[KServe_Deep_Dive]] · [[概念/modal]] · [[概念/replicate]] · [[部署推理/README|部署推理]] · [[部署推理/Inference_Engines/README]]
+
+---
+
+## 2026 Serverless AI 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **GPU Serverless** | Modal/RunPod/Replicate 按秒计费 GPU | GA |
+| **KServe Serverless** | K8s 原生模型服务自动扩缩到零 | GA |
+| **冷启动优化** | 模型缓存 + 预热减少冷启动延迟 | GA |
+| **事件驱动** | 基于请求队列自动扩缩容 | GA |
+| **成本优化** | 闲时缩容到零，按实际使用付费 | GA |
+
+## 生产最佳实践
+
+1. **冷启动评估**：测试冷启动延迟是否满足业务 SLO，不满足则保留最小实例
+2. **批处理优化**：合并请求提升 GPU 利用率，降低单次调用成本
+3. **超时配置**：设置合理超时，避免长尾请求占用资源
+4. **监控告警**：跟踪冷启动率、并发数、错误率，设置告警
+5. **混合部署**：稳定负载用常驻实例，突发负载用 Serverless 弹性

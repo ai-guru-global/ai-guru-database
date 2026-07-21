@@ -16,6 +16,8 @@ provenance:
   ambiguous: 0.10
 base_confidence: 0.85
 lifecycle: reviewed
+created: 2026-06-12
+updated: 2026-07-21
 tier: supporting
 ---
 
@@ -110,3 +112,23 @@ demo.launch()
 - [[概念/ollama]] — Ollama 本地推理
 - [[概念/modelscope]] — ModelScope 魔搭社区
 - [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+
+---
+
+## 2026 Gradio 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Gradio** | ML 演示界面框架 | GA |
+| **快速原型** | 快速构建演示 | GA |
+| **Hugging Face 集成** | HF Spaces 集成 | GA |
+| **自定义组件** | 自定义 UI 组件 | GA |
+| **与 Streamlit 对比** | Gradio vs Streamlit | GA |
+
+## 生产最佳实践
+
+1. **快速演示**：ML 模型快速演示用 Gradio
+2. **HF Spaces**：演示部署到 HF Spaces
+3. **与 Streamlit 对比**：根据需求选择 Gradio 或 Streamlit
+4. **自定义组件**：需要自定义 UI 用自定义组件
+5. **原型验证**：快速原型验证用 Gradio

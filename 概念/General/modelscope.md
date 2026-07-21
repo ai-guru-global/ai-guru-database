@@ -20,7 +20,7 @@ base_confidence: 0.85
 lifecycle: reviewed
 tier: core
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-07-21
 ---
 
 # ModelScope 魔搭社区
@@ -149,3 +149,23 @@ swift sft --model_type qwen3-235b-a22b \
 - [[概念/embedding-models]] — 嵌入模型（ModelScope 托管嵌入模型）
 - [[概念/lora-peft]] — LoRA/PEFT（SWIFT 微调框架）
 - [[架构基建/AI_Stack_Deep_Dive]] — AI Stack（模型下载）
+
+---
+
+## 2026 ModelScope 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **SWIFT 微调** | 一站式 LoRA/QLoRA/全量微调框架 | GA |
+| **模型库** | 万级开源模型托管，国内镜像加速 | GA |
+| **推理服务** | 一键部署模型为 API 服务 | GA |
+| **数据集中心** | 中文数据集托管与版本管理 | GA |
+| **Agent 框架** | ModelScope-Agent 工具调用智能体 | GA |
+
+## 生产最佳实践
+
+1. **国内加速**：国内环境优先用 ModelScope 下载模型，避免 HF 网络问题
+2. **SWIFT 微调**：使用 SWIFT 统一微调接口，支持 200+ 模型架构
+3. **模型评估**：利用平台内置评估工具快速对比模型效果
+4. **私有部署**：企业场景使用私有化 ModelScope 管理内部模型
+5. **版本固定**：生产环境固定模型 revision，避免意外更新

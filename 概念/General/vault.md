@@ -4,7 +4,7 @@ category: -concepts
 tags: ["kubernetes", "k8s", "security", "secrets-management", "hashicorp", "cloud-native", "alibaba-cloud"]
 summary: "Vault 是 HashiCorp 开源的 secrets 管理与数据保护平台，提供动态凭据、加密即服务、K8s 集成等能力。"
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-21
 tier: supporting
 aliases:
   - "HashiCorp Vault"
@@ -51,3 +51,23 @@ Pod → CSI Driver → 从 Vault 读取 Secret → 挂载为 Volume
 - [[概念/cert-manager|cert-manager]] — 自动证书管理
 - [[概念/external-secrets-operator|External Secrets Operator]] — 将外部 Secret 同步到 K8s
 - [[概念/kubernetes|Kubernetes]] — 容器编排
+
+---
+
+## 2026 Vault 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **HashiCorp Vault** | 密钥管理系统 | GA |
+| **动态 Secret** | 动态生成临时凭证 | GA |
+| **加密即服务** | Encryption as a Service | GA |
+| **K8s 集成** | K8s 原生集成 | GA |
+| **自动轮换** | 凭证自动轮换 | GA |
+
+## 生产最佳实践
+
+1. **密钥管理**：敏感信息用 Vault 管理
+2. **动态 Secret**：用动态 Secret 降低泄露风险
+3. **自动轮换**：凭证自动轮换
+4. **与 K8s 集成**：K8s 环境用 Vault 集成
+5. **审计日志**：开启 Vault 审计日志

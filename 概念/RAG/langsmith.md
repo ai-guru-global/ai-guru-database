@@ -179,3 +179,34 @@ LangSmith 对 LangGraph Agent 的追踪:
 4. **Playground 独特**：在线调试 Prompt，A/B 对比不同模型
 5. **LangGraph 可视化**：Agent 状态图的每个节点都可追踪
 6. **付费但值得**：免费层够个人用，企业级需要 Developer/Enterprise 方案
+
+## 2026 LangSmith 生态现状
+
+| 特性 | 状态 | 说明 |
+|------|------|------|
+| 链路追踪 | ✅ 成熟 | 全链路可视化 |
+| 评估 | ✅ 成熟 | 自动 + 人工 |
+| Prompt Hub | ✅ 成熟 | 版本管理 |
+| 数据集 | ✅ 成熟 | 测试集管理 |
+| LangGraph 集成 | ✅ 成熟 | Agent 追踪 |
+| 自托管 | ✅ 成熟 | 企业级 |
+| 监控告警 | ✅ 成熟 | 生产监控 |
+
+## 检查清单
+
+- [ ] LangSmith 已接入
+- [ ] 链路追踪已启用
+- [ ] 评估流水线已配置
+- [ ] Prompt 版本已管理
+- [ ] 告警已配置
+- [ ] 数据保留策略已配置
+
+## 延伸阅读
+
+- [[概念/RAG/opik|Opik]] — 可观测性对比
+- [[概念/RAG/ragas|RAGAS]] — RAG 评估
+- [[概念/RAG/rag-patterns|RAG Patterns]] — RAG 模式
+- [[概念/MLOps/observability|Observability]] — 可观测性总览
+- [[概念/RAG/rag-production-architecture|RAG 生产架构]]
+
+> ℹ️ LangSmith 是 LangChain 官方可观测性平台，2026年以链路追踪 + 评估 + Prompt Hub 著称，是 LangChain 生态生产监控的首选。

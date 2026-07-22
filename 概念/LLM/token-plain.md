@@ -147,3 +147,56 @@ sources: []
 3. **上下文管理**：长对话使用摘要/截断策略，控制 Token 使用量
 4. **成本监控**：按项目/用户统计 Token 消耗，设置配额与告警
 5. **缓存复用**：重复查询使用语义缓存，避免重复消耗 Token
+6. **Tokenizer 选择**：不同模型 Tokenizer 不同，不要混用
+7. **批量处理**：合并多个请求，减少 Token 开销
+
+## Token 大白话解释
+
+> **一句话理解**: Token 就是 LLM 的“字数单位”——就像我们数“字”一样，LLM 数“Token”。
+
+## 中文 vs 英文 Token 对比
+
+| 语言 | 示例 | Token 数 | 说明 |
+|------|------|:--------:|------|
+| 英文 | "Hello world" | 2 | 1 词 ≈ 1-2 Token |
+| 中文 | "你好世界" | 4 | 1 字 ≈ 1-2 Token |
+| 代码 | "def hello():" | 4 | 符号也算 Token |
+| 数字 | "12345" | 2 | 数字切分 |
+
+## 常见 Tokenizer 对比
+
+| Tokenizer | 模型 | 词表大小 | 中文效率 |
+|---------|------|:--------:|:--------:|
+| **cl100k_base** | GPT-4 | 100K | 中 |
+| **o200k_base** | GPT-4o | 200K | 高 |
+| **Llama-3** | Llama 4 | 128K | 高 |
+| **Qwen** | Qwen3 | 150K | 极高 |
+| **SentencePiece** | 通用 | 32K-64K | 中 |
+
+## Token 计数代码示例
+
+```python
+import tiktoken
+
+# GPT-4o Token 计数
+enc = tiktoken.encoding_for_model("gpt-4o")
+text = "你好，世界！Hello, World!"
+tokens = enc.encode(text)
+print(f"文本: {text}")
+print(f"Token 数: {len(tokens)}")
+print(f"Token IDs: {tokens}")
+
+# 估算成本
+cost_per_1k = 0.01  # $/1K tokens
+estimated_cost = len(tokens) / 1000 * cost_per_1k
+print(f"估算成本: ${estimated_cost:.6f}")
+```
+
+## 常见问题 FAQ
+
+| 问题 | 答案 |
+|------|------|
+| 1 个中文字 = 几个 Token？ | 通常 1-2 个，取决于 Tokenizer |
+| 为什么中文比英文贵？ | 中文 Token 效率低，同样内容 Token 更多 |
+| 怎么减少 Token？ | 精简提示词 / 用 RAG / 缓存 |
+| Token 和字有什么区别？ | Token 是模型切分单位，不等于字/词 |

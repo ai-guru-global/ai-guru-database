@@ -195,3 +195,11 @@ V1 Engine（vLLM 0.8+）将调度器从 Python 移到 C++ 层，减少了 CPU �
 3. **vLLM 集成**：vLLM 默认启用 CUDA Graph
 4. **动态形状**：动态输入形状需特殊处理
 5. **内存占用**：CUDA Graph 会增加内存占用，需权衡
+
+## 延伸阅读
+
+- [[概念/GPU/cuda|CUDA]] — CUDA 基础
+- [[概念/GPU/cuda-platform|CUDA Platform]] — CUDA 平台
+- [[概念/Inference/inference-performance|推理性能]] — 推理优化
+
+> ℹ️ CUDA Graph 是 CUDA 的图执行模式，将多个 Kernel 打包为一个图，降低启动开销。

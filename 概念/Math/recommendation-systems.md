@@ -152,3 +152,69 @@ Netflix Prize 关键经验：集成方法效果最好、矩阵分解是核心、
 3. **多目标优化**：平衡点击率/时长/转化等多目标
 4. **冷启动**：新用户/物品冷启动策略
 5. **A/B 测试**：推荐策略必须 A/B 测试
+
+## 2026 推荐系统生态
+
+| 方法 | 代表 | 特点 | 状态 |
+|------|------|------|------|
+| **协同过滤** | Matrix Factorization | 经典方法 | GA |
+| **深度推荐** | DeepFM/DIN | 特征交互 | GA |
+| **序列推荐** | SASRec/BERT4Rec | 用户行为序列 | GA |
+| **图推荐** | LightGCN/PinSage | 图结构 | GA |
+| **LLM 推荐** | LLM as Recommender | 语义理解 | 研究 |
+
+## 推荐系统架构
+
+```
+推荐系统架构:
+用户请求
+    │
+    ▼
+┌─────────────────┐
+│  召回层          │ → 候选集 (1000+)
+│  (多路召回)      │
+└────────┬────────┘
+         │
+    ▼
+┌─────────────────┐
+│  粗排层          │ → 精排候选 (100+)
+└────────┬────────┘
+         │
+    ▼
+┌─────────────────┐
+│  精排层          │ → 排序结果 (10+)
+│  (CTR/CVR 预估) │
+└────────┬────────┘
+         │
+    ▼
+┌─────────────────┐
+│  重排层          │ → 最终展示
+│  (多样性/业务)   │
+└─────────────────┘
+```
+
+## 推荐系统代码示例
+
+```python
+# 使用 Surprise 进行协同过滤
+from surprise import SVD, Dataset, Reader
+from surprise.model_selection import cross_validate
+
+# 加载数据
+reader = Reader(rating_scale=(1, 5))
+data = Dataset.load_from_df(df[['user', 'item', 'rating']], reader)
+
+# SVD 矩阵分解
+algo = SVD(n_factors=100, n_epochs=20, lr_all=0.005)
+results = cross_validate(algo, data, measures=['RMSE', 'MAE'], cv=5)
+print(f"RMSE: {results['test_rmse'].mean():.4f}")
+```
+
+## 延伸阅读
+
+- [[概念/Math/feature-engineering|特征工程]] — 特征设计
+- [[概念/Math/graph-neural-networks|图神经网络]] — 图推荐
+- [[概念/Math/ensemble-learning|集成学习]] — 模型融合
+- [[概念/MLOps/ab-testing|A/B 测试]] — 实验评估
+
+> ℹ️ 推荐系统是 AI 最成功的商业应用之一，多阶段架构是标配。

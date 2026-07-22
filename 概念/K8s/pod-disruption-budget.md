@@ -110,3 +110,94 @@ kubectl get pdb ai-inference-pdb -n default -o jsonpath='{.status.disruptionsAll
 2. **合理阈值**：根据副本数设置合理的 minAvailable
 3. **与 HPA 配合**：PDB 与 HPA 共同保障可用性
 4. **测试验证**：定期测试 kubectl drain 验证 PDB 生效
+
+## PDB 核心概念
+
+| 概念 | 说明 |
+|------|------|
+| minAvailable | 最小可用 Pod 数 |
+| maxUnavailable | 最大不可用 Pod 数 |
+| Disruption | 主动驱逐 (drain/升级) |
+| Voluntary | 自愿中断 |
+| Involuntary | 非自愿中断 (节点故障) |
+
+## PDB 配置示例
+
+```yaml
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: app-pdb
+spec:
+  minAvailable: 2
+  selector:
+    matchLabels:
+      app: my-app
+---
+# 或使用 maxUnavailable
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: app-pdb-2
+spec:
+  maxUnavailable: 1
+  selector:
+    matchLabels:
+      app: my-app
+```
+
+## PDB 与控制器关系
+
+| 控制器 | PDB 支持 | 说明 |
+|------|------|------|
+| Deployment | ✅ | 滚动更新时遵守 |
+| StatefulSet | ✅ | 有序更新时遵守 |
+| ReplicaSet | ✅ | 缩容时遵守 |
+| DaemonSet | ❌ | 不适用 |
+| Job | ❌ | 不适用 |
+
+## AI 场景 PDB 配置
+
+| 场景 | 配置 | 说明 |
+|------|------|------|
+| 推理服务 | minAvailable: 2 | 保证至少2个实例 |
+| 训练任务 | 不需要 | 可中断重启 |
+| 模型服务 | maxUnavailable: 1 | 最多1个不可用 |
+| API 网关 | minAvailable: 50% | 百分比配置 |
+
+## 常用命令
+
+| 命令 | 用途 |
+|------|------|
+| `kubectl get pdb` | 查看 PDB |
+| `kubectl describe pdb <name>` | PDB 详情 |
+| `kubectl drain node1 --ignore-daemonsets` | 测试 PDB |
+
+> 💡 PDB 是 K8s 高可用保障机制，2026 年 AI 推理服务必须配置 PDB 保证滚动更新时服务可用性。
+
+## PDB 状态字段
+
+| 字段 | 说明 |
+|------|------|
+| currentHealthy | 当前健康 Pod 数 |
+| desiredHealthy | 期望健康 Pod 数 |
+| disruptionsAllowed | 允许的中断数 |
+| expectedPods | 期望 Pod 总数 |
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| drain 被阻止 | PDB 限制 | 等待 Pod 恢复 |
+| PDB 不生效 | Selector 不匹配 | 检查 Label |
+| 更新卡住 | minAvailable 过高 | 调整 PDB 配置 |
+| 状态异常 | Pod 未就绪 | 检查 Pod 健康检查 |
+
+## 最佳实践
+
+| 实践 | 说明 |
+|------|------|
+| 推理服务必配 | 保证可用性 |
+| 合理设置阈值 | 根据副本数 |
+| 配合 HPA | 共同保障 |
+| 定期测试 | drain 验证 |

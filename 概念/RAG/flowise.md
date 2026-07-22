@@ -187,3 +187,34 @@ DATABASE_HOST=localhost
 4. **可自托管**：开源 Apache 2.0，数据不出企业
 5. **低代码不低能**：支持自定义 JS 节点，复杂逻辑也能实现
 6. **快速原型**：5 分钟搭建 RAG 原型，验证可行性后再工程化
+
+## 2026 Flowise 生态现状
+
+| 特性 | 状态 | 说明 |
+|------|------|------|
+| 可视化编排 | ✅ 成熟 | 拖拽式流程 |
+| 自定义节点 | ✅ 成熟 | JS/Python 扩展 |
+| API 发布 | ✅ 成熟 | REST/Embed |
+| 多 LLM | ✅ 成熟 | 100+ 模型 |
+| 向量库集成 | ✅ 成熟 | 主流向量库 |
+| 多租户 | 🟡 发展中 | 企业级 |
+| 云托管 | ✅ 成熟 | Flowise Cloud |
+
+## 检查清单
+
+- [ ] Flowise 版本已固定
+- [ ] 流程已导出纳入 Git
+- [ ] 自定义节点已审计
+- [ ] API 认证已配置
+- [ ] 性能已测试
+- [ ] 监控已配置
+
+## 延伸阅读
+
+- [[概念/RAG/langflow|Langflow]] — 可视化编排对比
+- [[概念/RAG/dify|Dify]] — LLM 应用平台
+- [[概念/RAG/ragflow|RAGFlow]] — RAG 引擎
+- [[概念/RAG/rag-patterns|RAG Patterns]] — RAG 模式
+- [[概念/RAG/vector-database|Vector Database]] — 向量数据库
+
+> ℹ️ Flowise 是开源可视化 LLM 编排工具，2026年以快速原型 + 自定义节点 + 云托管著称，适合快速验证 RAG 流程。

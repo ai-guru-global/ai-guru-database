@@ -197,3 +197,11 @@ curl -X POST localhost:5000/invocations \
 3. **LLM 评估**：LLM 项目用 MLflow Evaluate
 4. **与 Databricks 配合**：Databricks 环境用 MLflow
 5. **开源优势**：MLflow 完全开源，可自托管
+
+## 延伸阅读
+
+- [[概念/MLOps/experiment-tracking|Experiment Tracking]] — 实验跟踪
+- [[概念/MLOps/model-registry|Model Registry]] — 模型注册
+- [[概念/MLOps/wandb|W&B]] — Weights & Biases
+
+> ℹ️ MLflow 是开源 ML 生命周期管理平台，提供实验跟踪、模型注册、部署等功能。

@@ -125,3 +125,79 @@ aliases:
 2. **与 Volcano 对比**：简单排队用 Kueue，Gang Scheduling 用 Volcano
 3. **ResourceFlavor**：区分 spot/on-demand GPU
 4. **与 Kubeflow 集成**：为训练作业提供排队能力
+
+## Kueue 核心概念
+
+| 概念 | 说明 |
+|------|------|
+| ClusterQueue | 集群级队列，定义配额 |
+| LocalQueue | 命名空间级队列 |
+| ResourceFlavor | 资源类型 (spot/on-demand) |
+| Workload | 排队的工作负载 |
+| Cohort | 队列组，共享配额 |
+
+## Kueue vs Volcano
+
+| 特性 | Kueue | Volcano |
+|------|------|------|
+| 定位 | 作业排队 | 批处理调度 |
+| Gang Scheduling | 依赖调度器 | 原生支持 |
+| 配额管理 | ✅ | ✅ |
+| 公平共享 | ✅ | ✅ |
+| 抢占 | ✅ | ✅ |
+| 适用场景 | 多租户排队 | 分布式训练 |
+
+## Kueue 配置示例
+
+```yaml
+# ClusterQueue 定义
+apiVersion: kueue.x-k8s.io/v1beta1
+kind: ClusterQueue
+metadata:
+  name: ml-cluster-queue
+spec:
+  cohort: ml-cohort
+  resourceGroups:
+  - coveredResources: ["cpu", "memory", "nvidia.com/gpu"]
+    flavors:
+    - name: on-demand
+      resources:
+      - name: cpu
+        nominalQuota: 100
+      - name: memory
+        nominalQuota: 200Gi
+      - name: nvidia.com/gpu
+        nominalQuota: 16
+    - name: spot
+      resources:
+      - name: nvidia.com/gpu
+        nominalQuota: 32
+---
+# LocalQueue 定义
+apiVersion: kueue.x-k8s.io/v1beta1
+kind: LocalQueue
+metadata:
+  name: ml-team-queue
+  namespace: ml-team
+spec:
+  clusterQueue: ml-cluster-queue
+```
+
+## 使用场景
+
+| 场景 | 说明 |
+|------|------|
+| 多租户 GPU 共享 | 按团队分配配额 |
+| Spot/On-demand 混合 | 优先使用 Spot |
+| 训练作业排队 | 避免资源争抢 |
+| 公平共享 | 团队间公平分配 |
+
+> 💡 Kueue 是 2026 年 K8s 作业排队的标准方案，多租户 AI 平台推荐 Kueue + Volcano 组合使用。
+
+## 常用命令
+
+| 命令 | 用途 |
+|------|------|
+| `kubectl get clusterqueues` | 查看集群队列 |
+| `kubectl get localqueues -A` | 查看本地队列 |
+| `kubectl get workloads -A` | 查看排队作业 |

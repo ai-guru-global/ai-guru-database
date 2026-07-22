@@ -86,9 +86,76 @@ class MultiHeadAttention(torch.nn.Module):
         return self.W_o(out)
 ```
 
+## 注意力机制变体（2026）
+
+| 变体 | 复杂度 | 代表 | 特点 |
+|------|------|------|------|
+| **标准 MHA** | O(n²) | Transformer | 全注意力 |
+| **GQA** | O(n²) 但 KV 压缩 | Llama 3, Qwen3 | 分组查询注意力 |
+| **MQA** | O(n²) 但 KV 最小 | Falcon | 多查询注意力 |
+| **MLA** | O(n²) 但 KV 压缩 | DeepSeek-V3 | 多头潜在注意力 |
+| **Flash Attention** | O(n²) 但 IO 优化 | 所有现代模型 | 硬件感知实现 |
+| **Linear Attention** | O(n) | RWKV, RetNet | 线性复杂度 |
+| **Sliding Window** | O(n·w) | Mistral | 局部注意力 |
+| **Ring Attention** | O(n²) 分布式 | 长上下文 | 跨设备注意力 |
+
+## 注意力机制的直觉理解
+
+```
+注意力 = “每个 token 看其他 token 的重要程度”
+
+Q (Query):  “我在找什么？”
+K (Key):    “我有什么？”
+V (Value):  “我的内容是什么？”
+
+Attention(Q,K,V) = softmax(QK^T / √d) · V
+
+类比：图书馆借书
+- Q = 你的搜索词
+- K = 每本书的标签
+- V = 书的内容
+- 注意力分数 = 搜索词与标签的匹配度
+- 输出 = 按匹配度加权的书内容摘要
+```
+
+## 2026 注意力优化技术
+
+| 技术 | 说明 | 效果 |
+|------|------|------|
+| **Flash Attention 3** | Hopper GPU 优化 | 2-4x 加速 |
+| **PagedAttention** | KV Cache 分页管理 | 显存效率提升 |
+| **KV Cache 量化** | FP8/INT8 KV | 显存减半 |
+| **前缀缓存** | 共享前缀 KV | 推理加速 |
+| **稀疏注意力** | 只计算重要 token | 长上下文加速 |
+
+## 生产最佳实践
+
+1. **使用 Flash Attention**：所有现代模型都应启用
+2. **GQA 优先**：新模型设计优先选择 GQA
+3. **KV Cache 管理**：使用 vLLM PagedAttention
+4. **长上下文**：使用 Ring Attention 或 Sliding Window
+5. **量化部署**：KV Cache 量化降低显存占用
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| 显存 OOM | KV Cache 过大 | GQA + KV 量化 |
+| 长文本慢 | O(n²) 复杂度 | Flash Attention + 稀疏注意力 |
+| 注意力分散 | 序列太长 | 使用局部注意力 + 全局 token |
+| 训练不稳定 | 学习率过高 | warmup + 梯度裁剪 |
+
 ## 相关阅读
 
 - [[大模型/Transformer_Revolution/Transformer_Revolution]] — Transformer 革命
 - [[大模型/Transformer_Revolution/Transformer_Revolution_for_dummy]] — Transformer 入门
 - [[论文精读/Architecture/Attention_Is_All_You_Need_Deep_Dive]] — Attention Is All You Need 深度解读
 - [[大模型/LLM_Architectures/LLM_Architectures]] — LLM 架构 2026
+- [[概念/transformer-architecture]] — Transformer 架构
+- [[概念/kv-cache]] — KV Cache
+
+## 总结
+
+自注意力机制是 Transformer 的灵魂，也是所有现代 LLM 的核心组件。从标准 MHA 到 GQA、MLA、Flash Attention，注意力机制的每一次优化都直接推动了 LLM 能力的边界。
+
+> 💡 自注意力的核心价值：让每个 token 能“看到”所有其他 token——这是 LLM 理解上下文、进行推理的基础。

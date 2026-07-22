@@ -176,3 +176,25 @@ Beam Search (k=1) = Greedy Decoding
 3. **长度惩罚必配**：设置 length_penalty=0.6-1.0，避免过短输出
 4. **创意任务不用**：创意写作/对话用采样策略，不用 Beam Search
 5. **与采样对比**：生产前对比 Beam Search 与采样的效果，选择最优
+6. **No Repeat N-gram**：启用 no_repeat_ngram_size=3 避免重复
+7. **Early Stopping**：启用 early_stopping 提升速度
+
+## Beam Search vs 采样策略
+
+| 维度 | Beam Search | 采样 (Top-p/Top-k) |
+|------|-------------|-------------------|
+| **输出确定性** | 高（确定性） | 低（随机性） |
+| **多样性** | 低 | 高 |
+| **适用任务** | 翻译、摘要 | 对话、创意写作 |
+| **速度** | 较慢 (beam_size x) | 快 |
+| **质量** | 稳定 | 波动 |
+| **生产建议** | 确定性任务 | 开放式任务 |
+
+## 延伸阅读
+
+- [[概念/LLM/greedy-decoding|贪婪解码]]
+- [[概念/LLM/sampling-decoding|采样解码]]
+- [[概念/LLM/top-p-sampling|Top-p 采样]]
+- [[大模型/Sequence_Models/Text_Generation_Decoding_Strategies|解码策略]]
+
+> ℹ️ 现代 LLM 应用中，采样策略 (Top-p/Top-k) 比 Beam Search 更常用，Beam Search 主要用于翻译/摘要等确定性任务。

@@ -144,3 +144,57 @@ Client → API Gateway / Load Balancer
 - [[概念/Inference/gguf|GGUF]]
 - [[部署推理/Inference_Engines/vLLM_Deep_Dive|vLLM 深度解析]]
 - [[架构基建/Alibaba_Cloud_AI_Stack_Deep_Dive|阿里云 AI Stack]]
+
+## 模型服务引擎对比 (2026)
+
+| 引擎 | 性能 | 易用性 | 硬件 | 特色 | 适用 |
+|------|------|--------|------|------|------|
+| **vLLM** | 高 | 高 | NVIDIA/AMD | PagedAttention | 通用服务 |
+| **SGLang** | 高 | 高 | NVIDIA | RadixAttention | 结构化生成 |
+| **TensorRT-LLM** | 极致 | 低 | NVIDIA | 编译优化 | 极致性能 |
+| **TGI** | 中 | 高 | NVIDIA/AMD | HF 生态 | 快速部署 |
+| **llama.cpp** | 中 | 极高 | 全平台 | GGUF | 边缘/本地 |
+| **LMDeploy** | 高 | 中 | NVIDIA | TurboMind | 国产模型 |
+
+## 模型服务架构全景
+
+```
+客户端 → API Gateway → 负载均衡 → 推理引擎集群
+                                      ├── vLLM Instance 1
+                                      ├── vLLM Instance 2
+                                      └── vLLM Instance N
+
+关键组件:
+├── 模型加载: SafeTensors/GGUF/TensorRT Engine
+├── 请求调度: Continuous Batching
+├── 显存管理: PagedAttention / KV Cache
+├── 并行策略: TP (Tensor Parallel) / PP (Pipeline Parallel)
+└── 监控: Prometheus + Grafana
+```
+
+## 生产最佳实践
+
+1. **通用服务选 vLLM/SGLang**：生态最成熟，部署最简单
+2. **极致性能选 TensorRT-LLM**：吐吐量要求极高时使用
+3. **边缘/本地选 llama.cpp**：无 GPU 或资源受限场景
+4. **多副本高可用**：每个模型至少 2 个副本
+5. **健康检查 + 自动重启**：异常实例自动摘除和恢复
+
+## 延伸阅读
+
+- [[概念/Inference/continuous-batching|连续批处理]] — 批处理优化
+- [[概念/Inference/model-routing|模型路由]] — 路由策略
+- [[概念/Inference/inference-autoscaling|扩缩容]] — 弹性伸缩
+- [[概念/Inference/model-gateway|AI Gateway]] — 网关层
+
+> ℹ️ 模型服务是 LLM 生产化的核心环节，引擎选择直接影响性能和成本。
+
+## 2026 模型服务生态
+
+| 服务方案 | 特点 | 适用场景 | 状态 |
+|----------|------|----------|------|
+| **vLLM** | 开源最流行，PagedAttention | 通用生产 | GA |
+| **SGLang** | RadixAttention，前缀复用 | 高并发 | GA |
+| **TensorRT-LLM** | NVIDIA 极致性能 | 延迟敏感 | GA |
+| **TGI** | HuggingFace 官方 | HF 生态 | GA |
+| **Together AI** | 托管服务 | 无运维团队 | GA |

@@ -150,6 +150,53 @@ for head_k in medusa_heads:
 4. **确定性任务加速更明显**：代码生成、格式化输出 > 开放对话
 5. **与 KV Cache 优化正交**：可同时使用 GQA + Medusa
 
+## Medusa vs 其他推测解码方案
+
+| 方案 | Draft 模型 | 训练成本 | 加速比 | 质量保留 |
+|------|-----------|---------|--------|----------|
+| **Medusa** | 额外 Head | 低（几小时） | 1.5-2.5x | 无损 |
+| **EAGLE** | 特征级 Draft | 中 | 2-3x | 无损 |
+| **标准 Speculative** | 小模型 | 无（用现有小模型） | 2-3x | 无损 |
+| **MTP** | 原生多 Token | 高（预训练时） | 1.5-2x | 无损 |
+| **Lookahead** | N-gram 匹配 | 无 | 1.3-1.8x | 无损 |
+
+## Medusa 工作原理
+
+```
+标准自回归:  t1 → t2 → t3 → t4 → t5  (串行 5 步)
+
+Medusa (3 heads):
+  Step 1: 主干生成 t1
+           Head1 预测 t2, Head2 预测 t3, Head3 预测 t4
+  Step 2: 验证 t2,t3,t4 → 接受 t2,t3，拒绝 t4
+  Step 3: 主干从 t3 继续...
+
+效果: 5 个 Token 只需 2-3 步完成
+```
+
+## Medusa 训练配置示例
+
+```python
+# Medusa 训练配置 (基于 HuggingFace)
+medusa_config = {
+    "num_heads": 4,           # 额外预测头数量
+    "num_layers": 1,          # 每个头的层数
+    "hidden_size": 4096,      # 与主干模型一致
+    "dropout": 0.1,
+    "learning_rate": 3e-4,
+    "num_epochs": 3,          # 通常 3-5 epoch 即可
+    "dataset": "sharegpt",    # 对话数据训练
+}
+# 训练时间: 7B 模型约 2-4 小时 (A100)
+```
+
+## 延伸阅读
+
+- [[概念/LLM/eagle|EAGLE]] — 更强的推测解码方案
+- [[概念/LLM/speculative-decoding|投机解码]] — 推测解码基础
+- [[概念/LLM/mtp|Multi-Token Prediction]] — 原生多 Token 预测
+- [[概念/LLM/sampling-decoding|采样与解码]] — 解码策略全景
+
 ## Related
 
 - [[概念/Inference/speculative-decoding]] — 投机解码

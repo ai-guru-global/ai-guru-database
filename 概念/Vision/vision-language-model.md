@@ -166,3 +166,46 @@ loss = cross_entropy(logits, labels)
 3. **幻觉控制**：VLM 容易产生视觉幻觉，关键场景需验证
 4. **推理加速**：使用 vLLM + 量化部署 VLM，降低延迟和成本
 5. **评估基准**：用 MMBench/SEED-Bench 等标准基准评估 VLM 能力
+
+## 2026 VLM 生态
+
+| 模型 | 开发商 | 特点 | 状态 |
+|------|--------|------|------|
+| **GPT-5o** | OpenAI | 原生多模态 | GA |
+| **Gemini 2.5 Pro** | Google | 长视频理解 | GA |
+| **Qwen2.5-VL-72B** | 阿里 | 开源最强 | GA |
+| **LLaVA-NeXT-34B** | 开源 | 社区活跃 | GA |
+| **InternVL2.5** | 上海 AI Lab | 中文优秀 | GA |
+
+## VLM 架构演进
+
+```
+VLM 架构演进:
+2023: CLIP + LLM (LLaVA) — 简单拼接
+2024: 高分辨率 + 动态分辨率 (LLaVA-NeXT)
+2025: 原生多模态 (GPT-4o/Gemini)
+2026: 视频原生 + 3D 理解 + 具身智能
+```
+
+## VLM 部署示例
+
+```python
+# 使用 vLLM 部署 Qwen2.5-VL
+from vllm import LLM, SamplingParams
+
+llm = LLM(model="Qwen/Qwen2.5-VL-72B-Instruct")
+
+# 图文理解
+prompt = "<image>\n请描述这张图片的内容"
+outputs = llm.generate(prompt, SamplingParams(max_tokens=512))
+print(outputs[0].outputs[0].text)
+```
+
+## 延伸阅读
+
+- [[概念/Vision/multimodal-models|多模态模型]] — 多模态总览
+- [[概念/Vision/computer-vision|计算机视觉]] — CV 基础
+- [[概念/LLM/multimodal-llm|多模态 LLM]] — LLM 视角
+- [[概念/Inference/model-serving|模型服务]] — 部署架构
+
+> ℹ️ VLM 是多模态 AI 的核心，图文理解能力已接近人类水平。

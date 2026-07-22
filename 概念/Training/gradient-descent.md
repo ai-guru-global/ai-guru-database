@@ -123,4 +123,81 @@ scheduler = get_cosine_schedule_with_warmup(
 - [[概念/Training/gradient-checkpointing|梯度检查点]] — 训练显存优化
 - [[概念/Training/distributed-training|分布式训练]] — 多卡并行训练
 - [[深度学习/Deep_Learning_For_Beginners|深度学习入门]] — 神经网络基础
-- [[大模型/LLM_Architectures/LLM_Internals_Training|大模型训练内幕]] — 优化器与学习率调度
+- [[大模型/LLM_Architectures/LLM_Internals_Training|大模型训练内幕]] — 优化器与 学习率调度
+
+## 2026 梯度下降生态现状
+
+| 优化器 | 特色 | 适用 | 状态 |
+|------|------|------|------|
+| AdamW | 权重衰减解耦 | 通用 | ✅ 主流 |
+| Lion | 符号更新、省显存 | 大模型 | ✅ 前沿 |
+| Sophia | 二阶信息 | 大模型 | ✅ 前沿 |
+| Adafactor | 省显存 | 超大模型 | ✅ 成熟 |
+| LAMB | 大 batch | 分布式 | ✅ 成熟 |
+
+## 检查清单
+
+- [ ] 优化器已根据任务选择
+- [ ] 学习率已调优（含 warmup）
+- [ ] 权重衰减已配置
+- [ ] 梯度裁剪已启用
+- [ ] 学习率调度已配置
+- [ ] 收敛性已验证
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| 不收敛 | 学习率太高 | 降低 lr + warmup |
+| 收敛慢 | 学习率太低 | 增大 lr |
+| 震荡 | batch 太小 | 增大 batch 或梯度累积 |
+| 过拟合 | 权重衰减不足 | 增大 weight decay |
+
+## 延伸阅读
+
+- [[概念/Training/pre-training|Pre-training]] — 预训练
+- [[概念/Training/mixed-precision|Mixed Precision]] — 混合精度
+- [[概念/Training/deepspeed|DeepSpeed]] — 分布式训练
+- [[概念/Training/fsdp|FSDP]] — PyTorch 全分片
+- [[深度学习/Deep_Learning_For_Beginners|深度学习入门]] — 神经网络基础
+
+> ℹ️ 梯度下降是深度学习的核心优化算法，2026年 AdamW 仍是主流，Lion/Sophia 是前沿 选择，学习率调优是关键。
+
+## 优化器对比
+
+| 优化器 | 原理 | 优势 | 适用场景 |
+|------|------|------|------|
+| SGD | 基础梯度下降 | 简单、泛化好 | CV/小模型 |
+| Momentum | 动量加速 | 收敛快 | 通用 |
+| Adam | 自适应学习率 | 收敛快、稳定 | 通用默认 |
+| AdamW | 解耦权重衰减 | 泛化更好 | LLM 训练 |
+| Lion | 符号更新 | 显存省 | 大模型 |
+| Sophia | 二阶信息 | 收敛快 | 研究前沿 |
+
+## 学习率调度策略
+
+| 策略 | 说明 | 适用场景 |
+|------|------|------|
+| Warmup + Cosine | 先升后降 | LLM 预训练 |
+| Warmup + Linear | 线性衰减 | 微调 |
+| OneCycleLR | 单周期 | 快速训练 |
+| ReduceOnPlateau | 自适应 | 验证集监控 |
+| Constant | 固定 | 简单场景 |
+
+## 超参数参考
+
+| 任务 | 优化器 | 学习率 | Batch Size | Warmup |
+|------|------|------|------|------|
+| LLM 预训练 | AdamW | 1e-4 ~ 3e-4 | 1M-4M tokens | 2000 steps |
+| LLM 微调 | AdamW | 1e-5 ~ 5e-5 | 32-128 | 100 steps |
+| LoRA 微调 | AdamW | 1e-4 ~ 3e-4 | 16-64 | 50 steps |
+| CV 分类 | SGD+M | 0.01-0.1 | 256-1024 | 5 epochs |
+
+## 梯度问题与解决
+
+| 问题 | 现象 | 解决方案 |
+|------|------|------|
+| 梯度爆炸 | loss 突变 NaN | 梯度裁剪 (max_norm=1.0) |
+| 梯度消失 | 训练停滞 | 残差连接 + LayerNorm |
+| 鞍点 | 收敛慢 | 动量 + 自适应 lr |
+| 局部极小 | 泛化差 | 大 batch + 高 lr |

@@ -137,3 +137,80 @@ flowchart LR
 - [[概念/Inference/ttft|TTFT]]
 - [[概念/LLM/llm-production-deployment|LLM 生产部署]]
 - [[部署推理/Inference_Engines/vLLM_Deep_Dive|vLLM 深度解析]]
+
+## 集群调度架构全景
+
+```
+用户请求 → API Gateway → 负载均衡器 → 推理集群
+                                         ├── GPU Node 1 (vLLM)
+                                         ├── GPU Node 2 (vLLM)
+                                         ├── GPU Node 3 (SGLang)
+                                         └── GPU Node N (...)
+
+调度层级:
+├── L1: 全局路由 (模型/优先级/成本)
+├── L2: 实例选择 (负载均衡/亲和性)
+└── L3: 请求调度 (Continuous Batching)
+```
+
+## 调度策略对比
+
+| 策略 | 说明 | 适用场景 |
+|------|------|----------|
+| **Round Robin** | 轮询分配 | 简单场景 |
+| **Least Connections** | 最少连接优先 | 长请求混合 |
+| **GPU Utilization** | 按 GPU 利用率 | 资源紧张 |
+| **Priority Queue** | 优先级队列 | SLA 分级 |
+| **Affinity** | 前缀亲和性 | 前缀缓存 |
+| **Cost-aware** | 成本感知路由 | 多模型混合 |
+
+## 生产最佳实践
+
+1. **健康检查必配**：每个实例配置健康检查，异常自动摘除
+2. **优雅下线**：实例下线前等待当前请求完成
+3. **多副本高可用**：每个模型至少 2 个副本
+4. **监控队列深度**：队列积压时触发扩容
+5. **前缀亲和**：相同 System Prompt 路由到同一实例，提高缓存命中
+
+## 2026 集群调度生态
+
+| 调度器/平台 | 特点 | 适用场景 | 状态 |
+|------------|------|----------|------|
+| **vLLM + K8s** | 原生 K8s 部署，HPA 扩缩 | 通用生产 | GA |
+| **Ray Serve** | 分布式计算框架，多模型编排 | 复杂 pipeline | GA |
+| **KServe** | K8s AI 服务网格，模型管理 | 企业级 | GA |
+| **SGLang Router** | 前缀感知路由，缓存亲和 | 高并发 | GA |
+| **BentoML** | 模型打包 + 服务化一体 | 快速部署 | GA |
+
+## K8s 调度配置示例
+
+```yaml
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: llm-inference-hpa
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: vllm-inference
+  minReplicas: 2
+  maxReplicas: 10
+  metrics:
+  - type: Pods
+    pods:
+      metric:
+        name: vllm_num_requests_waiting
+      target:
+        type: AverageValue
+        averageValue: "5"
+```
+
+## 延伸阅读
+
+- [[概念/Inference/inference-autoscaling|扩缩容]] — 弹性伸缩策略
+- [[概念/Inference/request-scheduling|请求调度]] — 单实例调度
+- [[概念/Inference/model-serving|模型服务]] — 服务架构
+- [[概念/K8s/kubernetes|Kubernetes]] — 容器编排基础
+
+> ℹ️ 集群调度是大规模推理的核心，合理的调度策略可提升 30-50% 资源利用率。

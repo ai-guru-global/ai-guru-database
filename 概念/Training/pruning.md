@@ -174,3 +174,31 @@ modifier.apply(model)
 3. **精度验证**：剪枝后必须验证下游任务精度
 4. **结构化优先**：生产环境优先选择结构化剪枝（硬件友好）
 5. **重训练**：剪枝后通常需要微调恢复精度
+
+## 2026 剪枝生态现状
+
+| 方法 | 类型 | 压缩比 | 精度损失 | 状态 |
+|------|------|------|------|------|
+| SparseGPT | 非结构化 | 2:4 | < 1% | ✅ 成熟 |
+| Wanda | 非结构化 | 2:4 | < 2% | ✅ 主流 |
+| LLM-Pruner | 结构化 | 20-50% | 2-5% | ✅ 主流 |
+| SliceGPT | 结构化 | 25% | < 2% | ✅ 前沿 |
+| ShortGPT | 层删除 | 25% | < 3% | ✅ 前沿 |
+
+## 延伸阅读
+
+- [[概念/Training/knowledge-distillation|Knowledge Distillation]] — 知识蒸馏
+- [[概念/Training/awq|AWQ]] — 激活感知量化
+- [[概念/Training/smoothquant|SmoothQuant]] — 平滑量化
+- [[概念/Training/model-compression|Model Compression]] — 模型压缩总览
+- [[概念/Inference/model-quantization|Model Quantization]] — 模型量化
+
+> ℹ️ 剪枝是模型压缩的重要手段，2026年结构化剪枝（SliceGPT/LLM-Pruner）更受生产环境青睐，硬件友好且可加速。
+
+## 检查清单
+
+- [ ] 剪枝方法已选择（结构化/非结构化）
+- [ ] 剪枝比例已确定
+- [ ] 精度验证已完成
+- [ ] 重训练/微调已规划
+- [ ] 推理引擎兼容性已确认

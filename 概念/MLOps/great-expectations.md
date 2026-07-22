@@ -76,3 +76,147 @@ validator.save_expectation_suite(discard_failed_expectations=False)
 3. **Data Docs**：自动生成数据质量文档
 4. **与 Pandera 对比**：GE 更强大，Pandera 更轻量
 5. **监控告警**：数据质量失败时告警
+
+## 2026 Great Expectations 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **GX Cloud** | 托管 SaaS 平台 | GA |
+| **GX 1.0+** | 新架构，性能提升 | GA |
+| **Spark 支持** | 分布式数据验证 | GA |
+| **Airflow 集成** | DAG 中数据质量检查 | GA |
+| **dbt 集成** | dbt 模型验证 | GA |
+
+## 架构：数据质量流程
+
+```
+数据源 → Expectation Suite 验证 → 通过 → 下游处理
+                ↓ 失败
+        Validation Result → Data Docs → 告警
+```
+
+## 代码示例：定义期望
+
+```python
+import great_expectations as gx
+
+# 创建上下文
+context = gx.get_context()
+
+# 添加数据源
+datasource = context.sources.add_postgres("my_pg", connection_string="...")
+asset = datasource.add_table_asset("users", table_name="users")
+batch_request = asset.build_batch_request()
+
+# 定义期望
+suite = context.add_expectation_suite("user_quality")
+suite.add_expectation(
+    gx.expectations.ExpectColumnValuesToNotBeNull("email")
+)
+suite.add_expectation(
+    gx.expectations.ExpectColumnValuesToBeBetween("age", min_value=0, max_value=150)
+)
+suite.add_expectation(
+    gx.expectations.ExpectColumnValuesToMatchRegex("email", r"^[\w.-]+@[\w.-]+\.\w+$")
+)
+
+# 验证
+validator = context.get_validator(batch_request=batch_request, expectation_suite_name="user_quality")
+results = validator.validate()
+print(results)
+```
+
+## 常用 Expectations
+
+| Expectation | 说明 |
+|------|------|
+| `ExpectColumnToExist` | 列存在 |
+| `ExpectColumnValuesToNotBeNull` | 非空 |
+| `ExpectColumnValuesToBeUnique` | 唯一 |
+| `ExpectColumnValuesToBeBetween` | 范围检查 |
+| `ExpectColumnValuesToMatchRegex` | 正则匹配 |
+| `ExpectTableRowCountToBeBetween` | 行数范围 |
+
+## 延伸阅读
+
+- [[概念/MLOps/pandera|Pandera]] — 轻量级数据验证
+- [[概念/MLOps/data-pipeline|Data Pipeline]] — 数据管道
+- [[概念/MLOps/evidently|Evidently]] — 数据漂移监控
+
+> ℹ️ Great Expectations 是企业级数据质量框架，提供完整的验证、文档和告警能力。
+
+## 生产最佳实践
+
+1. **Expectation Suite 版本控制**：纳入 Git 管理
+2. **Data Docs 自动生成**：每次验证后生成文档
+3. **Airflow 集成**：DAG 中嵌入数据质量检查
+4. **告警配置**：验证失败时发送 Slack/邮件
+5. **基线管理**：建立数据质量基线
+6. **增量验证**：大数据集用增量验证
+7. **自定义 Expectation**：业务规则用自定义 Expectation
+8. **多环境支持**：开发/测试/生产环境分离
+9. **性能优化**：合理设置验证频率
+10. **团队协作**：Expectation Suite 团队共享
+
+## 检查清单
+
+- [ ] Expectation Suite 定义完整
+- [ ] 关键列有非空/唯一检查
+- [ ] 数值列有范围检查
+- [ ] 验证集成到数据管道
+- [ ] Data Docs 自动生成
+- [ ] 验证失败有告警机制
+- [ ] 多环境配置分离
+
+## 工具对比
+
+| 工具 | 适用场景 | 特点 |
+|------|------|------|
+| **Great Expectations** | 企业级数据质量 | 功能强大 |
+| **Pandera** | Python 数据验证 | 轻量 |
+| **dbt Tests** | dbt 项目 | 集成好 |
+| **Soda** | 数据质量 | 简单 |
+
+## 常见问题
+
+| 问题 | 解决方案 |
+|------|------|
+| 配置复杂 | 用 GX Cloud |
+| 性能问题 | 用 Spark 后端 |
+| 学习曲线 | 从简单 Expectation 开始 |
+| 文档生成 | 自动 Data Docs |
+
+## 进阶用法
+
+### 自定义 Expectation
+
+```python
+from great_expectations.core import ExpectationConfiguration
+from great_expectations.expectations.expectation import Expectation
+
+class ExpectColumnValuesToBeValidEmail(Expectation):
+    """验证邮箱格式"""
+    
+    def _validate(self, metrics, runtime_configuration):
+        # 自定义验证逻辑
+        pass
+```
+
+### Checkpoint 配置
+
+```yaml
+# checkpoints/user_quality.yml
+name: user_quality
+config_version: 1.0
+class_name: Checkpoint
+validations:
+  - batch_request:
+      datasource_name: my_pg
+      data_asset_name: users
+    expectation_suite_name: user_quality
+action_list:
+  - name: store_validation_result
+    action: StoreValidationResultAction
+  - name: update_data_docs
+    action: UpdateDataDocsAction
+```

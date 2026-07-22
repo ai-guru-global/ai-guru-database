@@ -11,8 +11,8 @@ provenance:
   inferred: 0.6
   ambiguous: 0.1
 base_confidence: 0.70
-lifecycle: draft
-lifecycle_changed: 2026-05-31
+lifecycle: reviewed
+lifecycle_changed: 2026-07-10
 tier: core
 aliases:
   - "Transformer Llm Architecture"
@@ -43,15 +43,93 @@ Transformer（2017）本是一个序列到序列的翻译模型，却意外成�
 - **统一架构 vs 专用优化**：视觉 Transformer（ViT）试图将图像 patches 当作 tokens 处理，但 CNN 在边缘设备上仍更高效
 - **推理成本**：Transformer 的 KV Cache 内存随序列长度线性增长，是模型服务中的首要优化目标
 
+## 架构演进时间线
+
+| 年代 | 架构 | 代表模型 | 核心创新 |
+|------|------|------|------|
+| 2017 | Encoder-Decoder | Transformer | 自注意力机制 |
+| 2018 | Encoder-only | BERT | 双向预训练 |
+| 2018 | Decoder-only | GPT | 自回归生成 |
+| 2020 | Decoder-only | GPT-3 | 规模化 + 少样本 |
+| 2022 | Decoder-only | ChatGPT | RLHF 对齐 |
+| 2023 | MoE Decoder | Mixtral | 稀疏专家 |
+| 2024 | MoE Decoder | DeepSeek-V3 | MLA + 稀疏 MoE |
+| 2025 | 推理 Decoder | o3/R1 | 测试时计算扩展 |
+| 2026 | 原生多模态 | GPT-4o/Gemini 2 | 统一架构 |
+
+## 核心架构组件
+
+### 自注意力机制
+
+```python
+import torch
+import torch.nn.functional as F
+
+def scaled_dot_product_attention(Q, K, V, mask=None):
+    """Transformer 核心：缩放点积注意力"""
+    d_k = Q.size(-1)
+    scores = torch.matmul(Q, K.transpose(-2, -1)) / (d_k ** 0.5)
+    if mask is not None:
+        scores = scores.masked_fill(mask == 0, float('-inf'))
+    attn = F.softmax(scores, dim=-1)
+    return torch.matmul(attn, V)
+
+# 因果掩码（Decoder-only 的核心）
+def causal_mask(seq_len):
+    return torch.tril(torch.ones(seq_len, seq_len))
+```
+
+### Decoder Block 结构
+
+```
+Input → LayerNorm → Multi-Head Attention (Causal) → Residual
+      → LayerNorm → FFN (SwiGLU) → Residual → Output
+```
+
+## 2026 架构变体对比
+
+| 架构 | 代表 | 注意力 | FFN | 特点 |
+|------|------|------|------|------|
+| **Dense Decoder** | Llama 3 | MHA | SwiGLU | 标准架构 |
+| **MoE Decoder** | DeepSeek-V3 | MLA | MoE+SwiGLU | 稀疏激活 |
+| **GQA** | Qwen3 | GQA | SwiGLU | KV Cache 压缩 |
+| **Hybrid** | Jamba | Mamba+Attn | - | SSM+注意力混合 |
+| **RWKV** | RWKV-6 | 线性注意力 | - | 无 KV Cache |
+
+## Tensions and Trade-offs
+
+- **效率 vs 表达能力**：Transformer 的 O(n²) 注意力是长文本的瓶颈，催生了 [[概念/state-space-models]]（Mamba）等替代架构，但尚未动摇其统治地位
+- **统一架构 vs 专用优化**：视觉 Transformer（ViT）试图将图像 patches 当作 tokens 处理，但 CNN 在边缘设备上仍更高效
+- **推理成本**：Transformer 的 KV Cache 内存随序列长度线性增长，是模型服务中的首要优化目标
+- **训练 vs 推理**：训练时并行化，推理时自回归——架构设计需兼顾两者
+
+## 生产最佳实践
+
+1. **架构选择**：通用任务用 Dense Decoder，大规模用 MoE
+2. **注意力优化**：使用 GQA/MQA 减少 KV Cache 内存
+3. **长上下文**：使用 RoPE + YaRN 扩展上下文窗口
+4. **量化部署**：AWQ/GPTQ 量化降低推理成本
+5. **推理加速**：vLLM PagedAttention + Continuous Batching
+
 ## Open Questions
 
 - 状态空间模型（Mamba）能否在 10B+ 规模上追上 Transformer 的 perplexity？
 - 如果多模态成为主流，统一的 Transformer 架构是否会被模态专用模块侵蚀？
 - 测试时计算扩展（test-time compute）是否会改变 Transformer 的训练目标设计？
+- MoE 的专家路由是否会成为新的瓶颈？
 
 ## Related
 
-- [[大模型/Fine_tuning_Techniques/PEFT_2026]] — PEFT 2026 (参数高效微调) (共享: bert, gpt, llm, nlp, transformer)
-- [[大模型/Fine_tuning_Techniques/README]] — 微调技术 (Fine-tuning Techniques) (共享: bert, gpt, llm, nlp, transformer)
-- [[大模型/LLM_Architectures/LLM-Basics-in-nutshell]] — 大语言模型基础速成指南 (共享: bert, gpt, llm, nlp, transformer)
-- [[大模型/Multimodal_Models/Multimodal_Architectures_2026]] — 多模态模型架构 2026：从 GPT-4V 到原生多模态 AGI (共享: bert, gpt, llm, nlp, transformer)
+- [[大模型/Fine_tuning_Techniques/PEFT_2026]] — PEFT 2026
+- [[大模型/Fine_tuning_Techniques/README]] — 微调技术
+- [[大模型/LLM_Architectures/LLM-Basics-in-nutshell]] — 大语言模型基础速成指南
+- [[大模型/Multimodal_Models/Multimodal_Architectures_2026]] — 多模态模型架构 2026
+- [[概念/transformer-architecture]] — Transformer 架构
+- [[概念/mixture-of-experts]] — MoE 混合专家
+- [[概念/kv-cache]] — KV Cache
+
+## 总结
+
+Transformer 是 LLM 时代的“原子核”，从 BERT 到 GPT 到 MoE 到推理模型，所有创新都是在 Transformer 基础上的演进。Decoder-only + 自回归生成已成为规模化 LLM 的事实标准。
+
+> 💡 Transformer 的核心价值：一个架构统一所有 NLP 任务——从翻译到对话到推理到代码，全部基于同一个自注意力机制。

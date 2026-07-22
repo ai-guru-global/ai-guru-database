@@ -112,3 +112,110 @@ LeMix 统一调度架构
 3. **Continuous Batching**：推理用 Continuous Batching
 4. **资源优化**：GPU 资源优化提高利用率
 5. **与 AI Stack 配合**：LeMix + AI Stack
+
+## 训推统一调度配置示例
+
+```yaml
+# LeMix 调度策略配置
+scheduler:
+  mode: unified  # 训推统一模式
+  priority:
+    inference: high      # 推理优先
+    training: normal     # 训练填空
+  slo:
+    inference_p99_latency: 200ms
+    training_throughput_min: 80%
+  elasticity:
+    enabled: true
+    scale_up_threshold: 0.8   # GPU 利用率 > 80% 扩容
+    scale_down_threshold: 0.3  # GPU 利用率 < 30% 缩容
+  gpu_sharing:
+    mode: time_slice
+    slice_duration: 100ms
+    preemption: true  # 推理可抢占训练
+```
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| 推理延迟超标 | 训练任务抢占 GPU | 提高推理优先级/预留 GPU |
+| 训练吐量下降 | GPU 被推理占用 | 设置训练最低 GPU 保障 |
+| 调度抖动 | 任务频繁迁移 | 增大调度间隔/粘性调度 |
+| 显存不足 | 训推共享显存 | 显存分区/MPS |
+| 利用率仍低 | 任务量不足 | 引入更多任务/弹性缩容 |
+
+## 版本兼容性
+
+| 组件 | 状态 | 说明 |
+|------|------|------|
+| LeMix | 研究 | 学术原型 |
+| KubeRay | GA | K8s 训推调度 |
+| Volcano | GA | K8s 批调度 |
+| NVIDIA MPS | GA | GPU 共享 |
+| HAMi | GA | 异构 GPU 纳管 |
+
+## 生产检查清单
+
+1. 明确推理 SLO 和训练吐量目标
+2. 配置推理优先级和抢占策略
+3. 设置 GPU 弹性伸缩阈值
+4. 监控 GPU 利用率和任务等待时间
+5. 定期评估训推比例是否合理
+6. 建立资源争用升级处理流程
+
+## 总结
+
+LeMix 代表了 GPU 集群训推统一调度的前沿方向，通过时间片共享和智能调度将 GPU 利用率从 30-50% 提升到 70-90%。虽然目前仍处于研究阶段，但其理念已影响生产级调度系统设计。
+
+> 💡 训推统一调度的核心价值：GPU 是最昂贵的计算资源，任何空闲都是浪费——训推统一调度让每一块 GPU 每一秒都在工作。
+
+## 训推统一调度架构
+
+```yaml
+# LeMix 训推统一调度配置
+lemix_scheduler:
+  resource_pool:
+    gpu_type: [A100, H100]
+    total_gpus: 128
+  training_jobs:
+    priority: high
+    preemptible: false
+    gang_scheduling: true
+    min_gpus: 8
+  inference_jobs:
+    priority: medium
+    preemptible: true
+    auto_scaling:
+      min_replicas: 2
+      max_replicas: 16
+      target_utilization: 70%
+  scheduling_policy:
+    - time_sharing: true        # 分时复用
+    - priority_preemption: true  # 优先级抢占
+    - fair_share: true           # 公平共享
+```
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| 训练被推理抢占 | 优先级配置不当 | 训练设为不可抢占 |
+| 推理延迟波动 | 训练任务占用 | 推理预留资源 + QoS |
+| GPU 碎片化 | 调度不合理 | Gang Scheduling + 整理 |
+| 资源利用率低 | 任务间隙空闲 | 分时复用 + 背填任务 |
+
+## 生产检查清单
+
+1. ✅ 训练任务设为不可抢占
+2. ✅ 推理服务预留最小资源
+3. ✅ 配置优先级和公平共享策略
+4. ✅ 监控 GPU 利用率 + 空闲告警
+5. ✅ 定期评估训推资源分配比例
+6. ✅ 配置自动扩缩容适应流量波动
+
+## 总结
+
+LeMix 训推统一调度是 2026 年 GPU 资源优化的核心实践，通过分时复用、优先级抢占和自动扩缩容，将 GPU 利用率从 40% 提升到 80%+。其核心是“让每一块 GPU 每一秒都在工作”。
+
+> 💡 训推统一调度的核心：“GPU 空闲就是浪费”——通过智能调度消除每一秒空闲。

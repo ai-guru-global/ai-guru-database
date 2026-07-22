@@ -128,3 +128,75 @@ systemctl status containerd
 2. **GPU 配置**：配合 nvidia-container-toolkit
 3. **镜像缓存**：合理配置镜像缓存策略
 4. **监控告警**：监控容器启动时间、资源使用
+
+## containerd 架构
+
+| 组件 | 功能 |
+|------|------|
+| containerd | 守护进程，管理容器生命周期 |
+| runc | OCI 运行时，创建/运行容器 |
+| ctr | containerd 原生 CLI |
+| crictl | CRI 兼容 CLI |
+| CNI | 容器网络接口 |
+| CSI | 容器存储接口 |
+
+## containerd vs Docker
+
+| 特性 | containerd | Docker |
+|------|------|------|
+| 架构 | 轻量守护进程 | 完整平台 |
+| K8s 集成 | 原生 CRI | 需要 dockershim |
+| 性能 | 更高 | 略低 |
+| 镜像构建 | 需 buildkit | 内置 |
+| 适用场景 | K8s 生产 | 开发/构建 |
+
+## containerd 配置
+
+```toml
+# /etc/containerd/config.toml
+version = 2
+
+[plugins."io.containerd.grpc.v1.cri"]
+  sandbox_image = "registry.k8s.io/pause:3.9"
+  
+  [plugins."io.containerd.grpc.v1.cri".containerd]
+    default_runtime_name = "runc"
+    
+    [plugins."io.containerd.grpc.v1.cri".containerd.runtimes.runc]
+      runtime_type = "io.containerd.runc.v2"
+      
+    # NVIDIA GPU 运行时
+    [plugins."io.containerd.grpc.v1.cri".containerd.runtimes.nvidia]
+      runtime_type = "io.containerd.runc.v2"
+      [plugins."io.containerd.grpc.v1.cri".containerd.runtimes.nvidia.options]
+        BinaryName = "/usr/bin/nvidia-container-runtime"
+```
+
+## 常用命令
+
+| 命令 | 用途 |
+|------|------|
+| `systemctl status containerd` | 服务状态 |
+| `ctr images ls` | 列出镜像 |
+| `ctr containers ls` | 列出容器 |
+| `ctr tasks ls` | 列出任务 |
+| `crictl ps` | CRI 容器列表 |
+
+## GPU 运行时配置
+
+| 步骤 | 说明 |
+|------|------|
+| 1 | 安装 nvidia-container-toolkit |
+| 2 | 配置 containerd runtime |
+| 3 | 重启 containerd |
+| 4 | 验证 GPU 可见性 |
+
+> 💡 containerd 是 2026 年 K8s 默认容器运行时，轻量、高性能、原生 CRI 支持，AI 集群需配置 NVIDIA 运行时。
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| 容器启动失败 | 镜像拉取失败 | 检查网络/镜像仓库 |
+| GPU 不可见 | 运行时未配置 | 检查 nvidia runtime |
+| 性能下降 | 资源限制 | 调整 cgroup 配置 |

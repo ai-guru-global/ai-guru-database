@@ -150,3 +150,51 @@ aliases:
 - [[概念/llm-infrastructure]] — LLM 基础设施
 - [[概念/model-serving]] — 模型服务
 - [[架构基建/Alibaba_Cloud_AI_Stack_Deep_Dive|阿里云 AI Stack]] — 专有云推理平台的模型网关实现
+
+## AI Gateway 功能全景
+
+| 功能 | 说明 | 工具 |
+|------|------|------|
+| **模型路由** | 按规则分发到不同模型 | LiteLLM, Portkey |
+| **负载均衡** | 多实例流量分发 | Kong, Nginx |
+| **限流熔断** | 保护后端服务 | Kong, Envoy |
+| **认证鉴权** | API Key / OAuth | 所有 Gateway |
+| **缓存** | 语义缓存减少重复调用 | Redis + 向量 |
+| **可观测** | 日志/指标/追踪 | LangFuse, Arize |
+| **成本控制** | Token 配额/预算 | Portkey, 自实现 |
+| **安全过滤** | 输入输出内容审核 | Guardrails AI |
+
+## Gateway 架构示例
+
+```
+客户端 → AI Gateway → 模型服务集群
+            │
+            ├── 认证鉴权 (API Key 验证)
+            ├── 限流熔断 (QPS/并发控制)
+            ├── 模型路由 (复杂度/成本/延迟)
+            ├── 语义缓存 (Redis + 向量检索)
+            ├── 负载均衡 (多实例分发)
+            ├── 安全过滤 (输入/输出审核)
+            └── 可观测 (日志/指标/追踪)
+```
+
+## 生产最佳实践
+
+1. **Gateway 必配**：生产环境必须经过 AI Gateway，不要直连模型
+2. **语义缓存**：相似问题直接返回缓存，减少 30-50% 调用
+3. **多模型回退**：主模型失败自动回退备用模型
+4. **成本透明**：按用户/功能/模型维度统计 Token 消耗
+5. **安全过滤**：输入输出双向过滤，防止注入/泄露
+
+## 延伸阅读
+
+- [[概念/Inference/model-serving|模型服务]] — 服务架构
+- [[概念/Inference/model-routing|模型路由]] — 路由策略
+- [[概念/Inference/inference-autoscaling|扩缩容]] — 弹性伸缩
+- [[概念/LLM/llmops|LLMOps]] — 运维体系
+
+> ℹ️ AI Gateway 是生产环境的必备组件，提供路由/限流/缓存/安全等核心能力。
+推荐工具: LiteLLM (开源)、Portkey (商业)、Kong AI Gateway (企业)。
+选择建议: 小团队用 LiteLLM，企业用 Kong/Portkey。
+部署模式:  Sidecar / 独立网关 / 云原生 API Gateway。
+监控指标: 请求量/延迟/错误率/Token 消耗/缓存命中率。

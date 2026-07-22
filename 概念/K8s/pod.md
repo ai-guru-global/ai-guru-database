@@ -132,3 +132,72 @@ kubectl exec -it ai-inference-pod -c vllm -- /bin/bash
 2. **健康检查**：配置 liveness/readiness/startup 探针
 3. **安全上下文**：设置 runAsNonRoot、readOnlyRootFilesystem
 4. **日志采集**：使用 Sidecar 或 DaemonSet 采集日志
+
+## Pod 生命周期状态
+
+| 状态 | 说明 |
+|------|------|
+| Pending | 等待调度/拉取镜像 |
+| Running | 至少一个容器运行 |
+| Succeeded | 所有容器成功终止 |
+| Failed | 至少一个容器失败 |
+| Unknown | 状态无法获取 |
+
+## Pod 重启策略
+
+| 策略 | 说明 | 适用场景 |
+|------|------|------|
+| Always | 总是重启 | 长期服务 (默认) |
+| OnFailure | 失败时重启 | Job/CronJob |
+| Never | 从不重启 | 一次性任务 |
+
+## Pod 探针类型
+
+| 探针 | 作用 | 失败后果 |
+|------|------|------|
+| livenessProbe | 存活检查 | 重启容器 |
+| readinessProbe | 就绪检查 | 从 Service 移除 |
+| startupProbe | 启动检查 | 延迟其他探针 |
+
+## Pod 配置示例
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: app-pod
+  labels:
+    app: my-app
+spec:
+  containers:
+  - name: app
+    image: my-app:latest
+    resources:
+      requests:
+        cpu: 100m
+        memory: 128Mi
+      limits:
+        cpu: 500m
+        memory: 512Mi
+    livenessProbe:
+      httpGet:
+        path: /health
+        port: 8080
+      initialDelaySeconds: 10
+    readinessProbe:
+      httpGet:
+        path: /ready
+        port: 8080
+      initialDelaySeconds: 5
+```
+
+## Pod 安全上下文
+
+| 配置 | 说明 | 推荐值 |
+|------|------|------|
+| runAsNonRoot | 非 root 运行 | true |
+| readOnlyRootFilesystem | 只读根文件 | true |
+| allowPrivilegeEscalation | 禁止提权 | false |
+| capabilities.drop | 移除权限 | ["ALL"] |
+
+> 💡 Pod 是 K8s 最小调度单元，2026 年生产环境必须配置资源限制 + 健康检查 + 安全上下文。

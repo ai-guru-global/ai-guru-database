@@ -154,3 +154,47 @@ llama-server -m model.gguf --port 8080
 - [[概念/LLM/llama-cpp|llama.cpp]]
 - [[部署推理/Inference_Engines/llama_cpp_Deep_Dive|llama.cpp 深度解析]]
 - [[部署推理/Quantization/Quantization_Techniques_2026|量化技术 2026]]
+
+## GGUF 量化格式对比
+
+| 格式 | 位宽 | 质量 | 速度 | 适用 |
+|------|------|------|------|------|
+| **Q8_0** | 8-bit | 几乎无损 | 中 | 质量优先 |
+| **Q6_K** | 6-bit | 极小损失 | 中快 | 平衡 |
+| **Q5_K_M** | 5-bit | 微小损失 | 快 | 生产推荐 |
+| **Q4_K_M** | 4-bit | 轻微损失 | 最快 | 资源受限 |
+| **Q3_K_M** | 3-bit | 明显损失 | 极快 | 极端受限 |
+| **F16** | 16-bit | 无损 | 慢 | 基准 |
+
+## GGUF 文件结构
+
+```
+GGUF 文件布局:
+┌─────────────────────────┐
+│ Magic: "GGUF" (4 bytes)  │
+│ Version: 3               │
+│ Tensor Count             │
+│ Metadata KV Count        │
+├─────────────────────────┤
+│ Metadata (模型配置)      │
+│  - general.architecture  │
+│  - general.name          │
+│  - llama.context_length  │
+│  - tokenizer.*           │
+├─────────────────────────┤
+│ Tensor Info (名称/形状)  │
+├─────────────────────────┤
+│ Tensor Data (量化权重)   │
+└─────────────────────────┘
+```
+
+## 生产最佳实践
+
+1. **生产用 Q5_K_M**：质量/速度最佳平衡
+2. **资源受限用 Q4_K_M**：显存/内存不足时的选择
+3. **仅从官方下载**：HuggingFace 官方仓库，避免恶意文件
+4. **llama.cpp 版本匹配**：GGUF v3 需要 llama.cpp b3000+
+5. **元数据检查**：用 gguf-py 检查模型配置是否正确
+
+> ℹ️ GGUF 是边缘/本地推理的事实标准格式，llama.cpp 生态的核心。
+支持多种量化精度，从 Q3_K_M 到 Q8_0 满足不同资源约束。

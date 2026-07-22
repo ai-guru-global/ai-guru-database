@@ -125,3 +125,81 @@ kubectl get pv
 2. **动态供给**：使用 StorageClass 自动创建 PV
 3. **容量规划**：合理设置存储容量，避免浪费
 4. **备份策略**：重要数据定期备份
+
+## PVC 访问模式
+
+| 模式 | 缩写 | 说明 | 适用场景 |
+|------|------|------|------|
+| ReadWriteOnce | RWO | 单节点读写 | 数据库/单 Pod |
+| ReadOnlyMany | ROX | 多节点只读 | 共享配置 |
+| ReadWriteMany | RWX | 多节点读写 | 分布式训练 |
+| ReadWriteOncePod | RWOP | 单 Pod 读写 | 严格独占 |
+
+## PVC 生命周期
+
+| 阶段 | 说明 |
+|------|------|
+| Pending | 等待绑定 PV |
+| Bound | 已绑定 PV |
+| Lost | PV 丢失 |
+| Terminating | 删除中 |
+
+## PVC 配置示例
+
+```yaml
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: training-data
+spec:
+  accessModes:
+    - ReadWriteMany  # 分布式训练需要
+  storageClassName: nfs-client
+  resources:
+    requests:
+      storage: 500Gi
+---
+# Pod 中使用
+apiVersion: v1
+kind: Pod
+spec:
+  containers:
+  - name: trainer
+    volumeMounts:
+    - name: data
+      mountPath: /data
+  volumes:
+  - name: data
+    persistentVolumeClaim:
+      claimName: training-data
+```
+
+## 动态供给流程
+
+| 步骤 | 说明 |
+|------|------|
+| 1 | 用户创建 PVC |
+| 2 | PVC 引用 StorageClass |
+| 3 | Provisioner 监听 PVC |
+| 4 | 动态创建 PV |
+| 5 | PVC 绑定 PV |
+| 6 | Pod 挂载使用 |
+
+## AI 场景存储需求
+
+| 场景 | 访问模式 | 容量 | 性能要求 |
+|------|------|------|------|
+| 训练数据集 | RWX | 1-100 TB | 高吞吐 |
+| 检查点 | RWX | 100 GB-1 TB | 高 IOPS |
+| 模型仓库 | ROX | 10-100 GB | 中 |
+| 日志 | RWO | 10-100 GB | 低 |
+
+> 💡 PVC 是 K8s 存储请求的标准方式，2026 年 AI 训练推荐 RWX + 动态供给 + 高性能 StorageClass。
+
+## 常用命令
+
+| 命令 | 用途 |
+|------|------|
+| `kubectl get pvc` | 查看 PVC |
+| `kubectl describe pvc <name>` | PVC 详情 |
+| `kubectl delete pvc <name>` | 删除 PVC |

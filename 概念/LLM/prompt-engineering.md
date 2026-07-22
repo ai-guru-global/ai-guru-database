@@ -166,3 +166,44 @@ Prefix Caching缓存共享的System Prompt前缀；LLMLingua等工具压缩长Pr
 3. **输出格式约束**：用 JSON Schema 约束输出，避免格式错误
 4. **迭代优化**：用 DSPy 等工具自动优化提示，减少手工调优
 5. **版本管理**：提示词纳入版本控制，支持 A/B 测试和回滚
+6. **思维链 (CoT)**：复杂推理任务启用 CoT，提升准确率
+7. **上下文工程**：从 Prompt Engineering 演进到 Context Engineering
+
+## Prompt 设计检查清单
+
+| 检查项 | 说明 |
+|--------|------|
+| 角色明确 | 是否清晰定义了模型角色？ |
+| 任务具体 | 是否明确说明了任务要求？ |
+| 示例充分 | 是否提供了 2-3 个 Few-shot 示例？ |
+| 格式约束 | 是否用 JSON Schema 约束输出？ |
+| 边界清晰 | 是否说明了什么不该做？ |
+| 错误处理 | 是否说明了如何处理异常情况？ |
+
+## 延伸阅读
+
+- [[概念/LLM/context-engineering|上下文工程]]
+- [[概念/LLM/promptfoo|Promptfoo 测试]]
+- [[概念/Agent/react-agent|ReAct Agent]]
+- [[大模型/Prompt_Engineering/Prompt_Engineering_Guide_2026|Prompt 工程指南 2026]]
+
+## Prompt 模板示例
+
+```markdown
+# 角色
+你是一位专业的 {domain} 专家。
+
+# 任务
+请根据以下输入，{task_description}。
+
+# 输入
+{input}
+
+# 输出格式
+请以 JSON 格式输出：
+{{"result": "...", "confidence": 0.95}}
+
+# 示例
+输入: {example_input}
+输出: {example_output}
+```

@@ -158,3 +158,51 @@ kubectl get sc
 3. **定期快照备份**：配合 VolumeSnapshot + CronJob 实现关键数据卷的定时保护
 4. **监控 PV 状态**：对 PV/PVC 的 Pending/Lost 状态设置告警，及时发现存储异常
 5. **容量规划**：启用 `allowVolumeExpansion`，支持在线扩容而无需重建 PVC
+
+## PV 生命周期状态
+
+| 状态 | 说明 | 处理方式 |
+|------|------|------|
+| Available | 空闲可用 | 等待绑定 |
+| Bound | 已绑定 PVC | 正常使用 |
+| Released | PVC 已删除 | 根据回收策略处理 |
+| Failed | 自动回收失败 | 手动处理 |
+
+## 回收策略对比
+
+| 策略 | 说明 | 适用场景 |
+|------|------|------|
+| Retain | 保留数据 | 生产数据 |
+| Delete | 删除卷 | 临时数据 |
+| Recycle | 清除后复用 | 已废弃 |
+
+## 存储类型对比
+
+| 类型 | 性能 | 持久性 | 适用场景 |
+|------|------|------|------|
+| 本地 NVMe | 极高 | 节点级 | 临时缓存 |
+| 云盘 | 高 | 持久 | 通用存储 |
+| NFS | 中 | 持久 | 共享存储 |
+| Ceph RBD | 高 | 持久 | 分布式存储 |
+| 对象存储 | 中 | 持久 | 大文件/备份 |
+
+## PV 配置示例
+
+```yaml
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv-data
+spec:
+  capacity:
+    storage: 100Gi
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: fast-ssd
+  csi:
+    driver: disk.csi.everest.io
+    volumeHandle: vol-xxx
+```
+
+> 💡 PV 是 K8s 存储抽象的核心，2026 年生产环境推荐 CSI 驱动 + Retain 策略 + 定期快照。

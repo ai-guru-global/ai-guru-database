@@ -145,3 +145,59 @@ FFN 就像一个全连接神经网络，把 Attention 出来的结果再做一�
 3. **FlashAttention 必用**：H100+ GPU 启用 FlashAttention-3，显著提升训练/推理速度
 4. **MoE 考虑**：大模型场景考虑 MoE 架构，激活参数少但总参数大
 5. **位置编码**：长上下文场景使用 RoPE + NTK 扩展，支持 128K+ 上下文
+6. **层间通信**：多卡训练时优化层间通信，减少延迟
+7. **混合精度**：训练用 BF16/FP8，推理用 FP8/INT4
+
+## 2026 Transformer Layer 演进
+
+| 组件 | 2020 | 2023 | 2026 |
+|------|------|------|------|
+| **Attention** | MHA | GQA | MLA / 混合 |
+| **FFN** | Dense | MoE | MoE + 稀疏 |
+| **Norm** | LayerNorm | RMSNorm | RMSNorm |
+| **位置编码** | 绝对 PE | RoPE | RoPE + NTK |
+| **精度** | FP16 | BF16 | FP8 |
+| **KV Cache** | 无优化 | GQA | MLA + FP8 |
+
+## 单层计算流程
+
+```
+输入 x
+  │
+  ├─ RMSNorm(x)
+  ├─ Self-Attention (GQA/MLA)
+  │     ├─ Q = W_q × x
+  │     ├─ K = W_k × x  (共享头)
+  │     ├─ V = W_v × x  (共享头)
+  │     └─ Attention(Q,K,V) + RoPE
+  ├─ Residual: x = x + Attention
+  │
+  ├─ RMSNorm(x)
+  ├─ FFN / MoE
+  │     ├─ gate = W_gate × x
+  │     ├─ up = W_up × x
+  │     └─ down = W_down × (gate ⊙ up)
+  └─ Residual: x = x + FFN
+
+输出 x
+```
+
+## 延伸阅读
+
+- [[概念/LLM/transformer-architecture|Transformer 架构详解]]
+- [[概念/LLM/transformer-architecture-plain|Transformer 大白话]]
+- [[概念/LLM/grouped-query-attention|GQA]]
+- [[概念/LLM/multi-head-latent-attention|MLA]]
+- [[概念/LLM/rope|RoPE 位置编码]]
+- [[概念/LLM/flash-attention-kernels|Flash Attention]]
+- [[大模型/Transformer/Transformer_Architecture|Transformer 架构技术详解]]
+
+## 主流模型层数参考
+
+| 模型 | 参数 | 层数 | 隐藏维度 | Attention |
+|------|:----:|:----:|:--------:|:---------:|
+| Llama-4-8B | 8B | 32 | 4096 | GQA |
+| Llama-4-70B | 70B | 80 | 8192 | GQA |
+| Qwen3-72B | 72B | 80 | 8192 | GQA |
+| DeepSeek-V3 | 671B | 61 | 7168 | MLA |
+| GPT-5 | ~2T | ~120 | ~12288 | MoE+MLA |

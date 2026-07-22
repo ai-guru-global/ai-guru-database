@@ -154,3 +154,61 @@ spec:
 3. **健康检查**：配置应用健康检查
 4. **与 Argo Rollouts 配合**：ArgoCD + Argo Rollouts 实现渐进式交付
 5. **权限控制**：配置 RBAC 权限控制
+
+## 2026 ArgoCD 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **ArgoCD 2.10+** | 新 UI、性能提升 | GA |
+| **ApplicationSet** | 多集群应用管理 | GA |
+| **Notifications** | 告警通知 | GA |
+| **Image Updater** | 自动镜像更新 | GA |
+| **Helm/Kustomize** | 多种部署方式 | GA |
+
+## 架构：GitOps 流程
+
+```
+Git Repo (声明式配置)
+        ↓
+ArgoCD 监控 → 检测差异 → 自动/手动 Sync
+        ↓
+K8s 集群 (实际状态)
+```
+
+## Application 示例
+
+```yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: ml-service
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/org/k8s-configs.git
+    targetRevision: main
+    path: ml-service
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: ml-production
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+    retry:
+      limit: 5
+      backoff:
+        duration: 5s
+        factor: 2
+```
+
+## 延伸阅读
+
+- [[概念/MLOps/argo-rollouts|Argo Rollouts]] — 渐进式发布
+- [[概念/MLOps/ci-cd|CI/CD]] — 持续集成/交付
+- [[概念/K8s/kubernetes|Kubernetes]] — 容器编排
+
+> ℹ️ ArgoCD 是 K8s 上的 GitOps 工具，将 Git 作为单一事实来源，实现声明式持续交付。

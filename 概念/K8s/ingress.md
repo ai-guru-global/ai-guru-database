@@ -121,3 +121,81 @@ kubectl get svc -n default
 2. **限流保护**：配置 rate limit 防止恶意请求
 3. **Gateway API**：新项目考虑使用 Gateway API
 4. **监控告警**：监控 Ingress Controller 性能指标
+
+## Ingress Controller 对比
+
+| Controller | 厂商 | 特点 | 适用场景 |
+|------|------|------|------|
+| Nginx Ingress | K8s 社区 | 成熟稳定 | 通用场景 |
+| Traefik | Traefik | 自动发现 | 云原生 |
+| HAProxy | HAProxy | 高性能 | 高并发 |
+| Istio Gateway | Istio | 服务网格 | 微服务 |
+| Kong | Kong | API 网关 | API 管理 |
+| ALB Ingress | AWS | 云原生 | AWS 环境 |
+
+## Ingress 配置示例
+
+```yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: app-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+    nginx.ingress.kubernetes.io/rate-limit: "100"
+spec:
+  ingressClassName: nginx
+  tls:
+  - hosts:
+    - app.example.com
+    secretName: app-tls
+  rules:
+  - host: app.example.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: app-service
+            port:
+              number: 80
+```
+
+## Ingress vs Gateway API
+
+| 特性 | Ingress | Gateway API |
+|------|------|------|
+| 状态 | GA | GA (1.26+) |
+| 功能 | 基础路由 | 丰富路由 |
+| 扩展性 | 注解 | 原生扩展 |
+| 角色分离 | 无 | 支持 |
+| 推荐 | 简单场景 | 新项目 |
+
+## AI 推理服务 Ingress
+
+| 配置 | 说明 |
+|------|------|
+| 超时设置 | 推理可能耗时较长 |
+| 请求体大小 | 大模型输入可能很大 |
+| 限流 | 保护 GPU 资源 |
+| 负载均衡 | 多推理实例 |
+
+> 💡 Ingress 是 K8s 入口流量的标准方案，2026 年 AI 推理服务推荐 Nginx Ingress + 限流 + 超时配置。
+
+## 常用命令
+
+| 命令 | 用途 |
+|------|------|
+| `kubectl get ingress -A` | 查看 Ingress |
+| `kubectl describe ingress <name>` | Ingress 详情 |
+| `kubectl get ingressclass` | 查看 IngressClass |
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| 502 Bad Gateway | 后端服务不可用 | 检查 Service/Pod |
+| 404 Not Found | 路径不匹配 | 检查 path 配置 |
+| TLS 错误 | 证书问题 | 检查 Secret |
+| 超时 | 后端响应慢 | 增加超时时间 |

@@ -188,3 +188,57 @@ LoRA约束参数更新为低秩形式：ΔW = BA（B∈ℝ^{d×r}, A∈ℝ^{r×k
 3. **SVD 压缩**：模型压缩用 SVD
 4. **数值稳定性**：线性代数运算注意数值稳定性
 5. **稀疏计算**：稀疏矩阵用稀疏计算加速
+
+## 2026 线性代数与 AI
+
+| 概念 | AI 应用 | 说明 |
+|------|--------|------|
+| **矩阵乘法** | 全连接/注意力 | 核心计算 |
+| **特征值分解** | PCA/谱聚类 | 降维 |
+| **SVD** | 模型压缩/推荐 | 低秩近似 |
+| **梯度** | 反向传播 | 优化基础 |
+| **雅可比矩阵** | 自动微分 | 链式法则 |
+
+## 线性代数在 Transformer 中
+
+```
+Transformer 中的线性代数:
+1. 嵌入: x = Embedding(token) ∈ R^d
+2. 注意力: 
+   Q = xW_Q, K = xW_K, V = xW_V
+   Attention = softmax(QK^T/√d)V
+3. FFN: y = W_2 · GELU(W_1 · x + b_1) + b_2
+4. LayerNorm: y = (x - μ) / σ · γ + β
+```
+
+## 线性代数代码示例
+
+```python
+import torch
+
+# 矩阵乘法 (注意力计算)
+Q = torch.randn(32, 8, 128, 64)  # [batch, heads, seq, dim]
+K = torch.randn(32, 8, 128, 64)
+V = torch.randn(32, 8, 128, 64)
+
+# 注意力分数
+scores = torch.matmul(Q, K.transpose(-2, -1)) / (64 ** 0.5)
+attn = torch.softmax(scores, dim=-1)
+output = torch.matmul(attn, V)
+
+# SVD 压缩
+W = torch.randn(1024, 1024)
+U, S, Vh = torch.linalg.svd(W, full_matrices=False)
+# 保留前 k 个奇异值
+k = 256
+W_approx = U[:, :k] @ torch.diag(S[:k]) @ Vh[:k, :]
+```
+
+## 延伸阅读
+
+- [[概念/Math/matrix-operations|矩阵运算]] — 矩阵操作
+- [[概念/Math/neural-networks|神经网络]] — 网络中的线性代数
+- [[概念/LLM/transformer-architecture|Transformer]] — 注意力机制
+- [[概念/Inference/deepgemm|DeepGEMM]] — GEMM 优化
+
+> ℹ️ 线性代数是深度学习的数学语言，理解矩阵运算是理解 AI 的基础。

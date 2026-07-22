@@ -120,3 +120,81 @@ kubectl delete job data-migration  # ⚠️ HIGH-RISK — 删除 K8s 资源，�
 2. **自动清理**：使用 ttlSecondsAfterFinished 清理历史 Job
 3. **资源限制**：设置合理的 requests/limits
 4. **日志采集**：配置日志持久化，便于事后排查
+
+## Job 完成模式
+
+| 模式 | 说明 | 适用场景 |
+|------|------|------|
+| NonIndexed | 任意 Pod 完成 | 并行任务 |
+| Indexed | 每个索引完成 | 分片任务 |
+
+## Job 重启策略
+
+| 策略 | 说明 |
+|------|------|
+| OnFailure | 失败时重启容器 |
+| Never | 失败时创建新 Pod |
+
+## Job 配置示例
+
+```yaml
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: training-job
+spec:
+  completions: 1
+  parallelism: 1
+  backoffLimit: 3
+  ttlSecondsAfterFinished: 3600
+  template:
+    spec:
+      containers:
+      - name: trainer
+        image: pytorch/pytorch:2.0-cuda11.8
+        command: ["python", "train.py"]
+        resources:
+          limits:
+            nvidia.com/gpu: 1
+            memory: 16Gi
+      restartPolicy: Never
+```
+
+## AI 训练 Job 模式
+
+| 模式 | 说明 | 适用场景 |
+|------|------|------|
+| 单卡训练 | 1 GPU | 小模型/调试 |
+| 多卡并行 | N GPU | 分布式训练 |
+| PyTorchJob | Kubeflow | PyTorch 训练 |
+| MPIJob | Kubeflow | MPI 训练 |
+
+## Job 状态监控
+
+| 状态 | 说明 |
+|------|------|
+| Active | 运行中 |
+| Succeeded | 成功完成 |
+| Failed | 失败 |
+| Suspended | 已暂停 |
+
+## 常用命令
+
+| 命令 | 用途 |
+|------|------|
+| `kubectl get jobs` | 查看 Job |
+| `kubectl describe job <name>` | Job 详情 |
+| `kubectl logs job/<name>` | 查看日志 |
+| `kubectl delete job <name>` | 删除 Job |
+
+> 💡 Job 是 K8s 一次性任务的标准方案，2026 年 AI 训练推荐 Job + GPU + ttlSecondsAfterFinished 自动清理。
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| Job 一直运行 | 容器未退出 | 检查命令是否正确 |
+| Job 失败重试 | backoffLimit 达到 | 检查日志定位问题 |
+| GPU 不可用 | 资源未配置 | 检查 limits 配置 |
+| 清理失败 | TTL 未配置 | 添加 ttlSecondsAfterFinished |
+

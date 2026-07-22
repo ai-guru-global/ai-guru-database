@@ -135,3 +135,71 @@ for table in doc.tables:
 - [[概念/reranker]] — 重排序模型
 - [[概念/agentic-rag]] — Agentic RAG
 - [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+
+## 2026 Docling 生态现状
+
+| 特性 | 状态 | 说明 |
+|------|------|------|
+| PDF 解析 | ✅ 成熟 | 布局感知 |
+| 表格提取 | ✅ 成熟 | 结构化输出 |
+| OCR 集成 | ✅ 成熟 | 多语言 |
+| Markdown 输出 | ✅ 成熟 | RAG 友好 |
+| 批量处理 | ✅ 成熟 | 高吞吐 |
+| 图片理解 | 🟡 发展中 | 多模态 |
+| 手写体识别 | 🟡 发展中 | 特殊场景 |
+
+## 检查清单
+
+- [ ] Docling 版本已固定
+- [ ] 解析质量已验证
+- [ ] OCR 已配置（扫描件）
+- [ ] 输出格式已确定
+- [ ] 批量处理已配置
+- [ ] 性能已测试
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| 解析质量差 | 文档格式复杂 | 启用 OCR + 布局分析 |
+| 表格提取失败 | 表格结构复杂 | 使用深度学习表格检测 |
+| 速度慢 | 文档量大 | 批量处理 + GPU 加速 |
+| 中文支持差 | 模型不匹配 | 使用中文 OCR 模型 |
+
+## 延伸阅读
+
+- [[概念/RAG/ragflow|RAGFlow]] — RAG 引擎（内置解析）
+- [[概念/RAG/rag-patterns|RAG Patterns]] — RAG 模式
+- [[概念/RAG/vector-database|Vector Database]] — 向量数据库
+- [[概念/RAG/embedding-models|Embedding Models]] — 嵌入模型
+- [[概念/RAG/storage|Storage]] — 存储方案
+
+> ℹ️ Docling 是 IBM 开源的文档解析工具，2026年以布局感知 PDF 解析 + 表格提取 + Markdown 输出著称，是 RAG 数据预处理的关键组件。
+
+## Docling 配置示例
+
+```python
+from docling.document_converter import DocumentConverter
+converter = DocumentConverter()
+result = converter.convert("document.pdf")
+markdown = result.document.export_to_markdown()
+# 输出 RAG 友好的 Markdown 格式
+```
+
+## 支持格式对比
+
+| 格式 | 解析质量 | 表格 | 图片 | 状态 |
+|------|------|------|------|------|
+| PDF | 高 | ✅ | ✅ | ✅ 成熟 |
+| DOCX | 高 | ✅ | ✅ | ✅ 成熟 |
+| HTML | 高 | ✅ | ✅ | ✅ 成熟 |
+| PPTX | 中 | ✅ | ✅ | ✅ 成熟 |
+| 扫描件 | 中 | 🟡 | ✅ | 🟡 OCR |
+
+> ℹ️ Docling 是 2026 年最活跃的开源文档解析引擎，支持 30+ 格式统一输出，是 RAG 数据管道的首选前端组件。
+
+## 延伸阅读
+
+- [[概念/RAG/ragflow|RAGFlow]] — RAG 引擎
+- [[概念/RAG/dify|Dify]] — LLM 平台
+- [[概念/RAG/rag-patterns|RAG Patterns]] — RAG 模式

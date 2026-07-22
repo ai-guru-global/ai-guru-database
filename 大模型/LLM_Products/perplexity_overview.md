@@ -2,11 +2,11 @@
 title: "Perplexity AI 概览"
 category: "05-nlp-llms-llm-products"
 tags: ["llm", "search", "product", "ai-assistant", "research"]
-summary: "结合 LLM 与实时网络搜索的 AI 搜索引擎,提供带引用来源的精准回答,是信息检索的新范式。"
+summary: "结合 LLM 与实时网络搜索的 AI 搜索引擎，提供带引用来源的精准回答，是信息检索的新范式。"
 sources:
   - "https://www.perplexity.ai/"
 created: 2026-06-12
-updated: 2026-06-12
+updated: 2026-07-10
 lifecycle: reviewed
 tier: supporting
 aliases:
@@ -17,34 +17,97 @@ aliases:
 ---
 # Perplexity AI 概览
 
-> **一句话理解**: 结合 LLM 与实时网络搜索的 AI 搜索引擎,提供带引用来源的精准回答。
+> **一句话理解**: 结合 LLM 与实时网络搜索的 AI 搜索引擎，提供带引用来源的精准回答。
 
 ## 核心特性
 
-- **搜索+生成**: 先搜索互联网,再用 LLM 生成回答
+- **搜索+生成**: 先搜索互联网，再用 LLM 生成回答
 - **引用来源**: 每个回答都附带来源链接
-- **实时信息**: 获取最新信息,不受训练数据截止限制
+- **实时信息**: 获取最新信息，不受训练数据截止限制
 - **多模型**: 支持 GPT-4o、Claude、自研模型
-- **Pro Search**: 多步推理,更深入的研究
+- **Pro Search**: 多步推理，更深入的研究
+- **Deep Research**: 自主多轮深度研究
+- **Spaces**: 团队协作研究空间
+- **API**: 开发者搜索 API
 
 ## 产品版本
 
 | 版本 | 定价 | 特点 |
 |------|------|------|
-| Free | 免费 | 基础搜索,有限 Pro Search |
-| Pro | $20/月 | 无限 Pro Search,多模型选择 |
+| Free | 免费 | 基础搜索，有限 Pro Search |
+| Pro | $20/月 | 无限 Pro Search，多模型选择 |
+| Enterprise | 定制 | 企业安全、SSO、审计 |
+| API | 按量计费 | 开发者搜索接口 |
 
 ## 与传统搜索对比
 
-| 维度 | Google | Perplexity |
-|------|--------|------------|
-| 输出 | 链接列表 | 直接回答 |
-| 引用 | 无 | 每句话有引用 |
-| 交互 | 一次性 | 多轮追问 |
-| 深度 | 表面 | Pro Search 深入 |
+| 维度 | Google | Perplexity | ChatGPT Search |
+|------|--------|------------|----------------|
+| 输出 | 链接列表 | 直接回答 | 直接回答 |
+| 引用 | 无 | 每句话有引用 | 部分引用 |
+| 交互 | 一次性 | 多轮追问 | 多轮追问 |
+| 深度 | 表面 | Pro Search 深入 | 中等 |
+| 实时性 | 强 | 强 | 强 |
+| 广告 | 有 | 无 | 无 |
 
-> **关联**: -> [[大模型/README|NLP/LLM]] | [[学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
+## 2026 Perplexity 生态
 
-## Related
+| 功能 | 说明 | 状态 |
+|------|------|------|
+| **Pro Search** | 多步推理搜索 | GA |
+| **Deep Research** | 自主深度研究报告 | GA |
+| **Spaces** | 团队研究协作 | GA |
+| **Sonar API** | 开发者搜索 API | GA |
+| **Perplexity Assistant** | 移动端 AI 助手 | GA |
+| **Shopping** | AI 购物助手 | 预览 |
 
-- [[大模型/README|04 自然语言处理与大模型 (NLP & LLMs)]]
+## API 使用示例
+
+```python
+import requests
+
+url = "https://api.perplexity.ai/chat/completions"
+headers = {"Authorization": f"Bearer {API_KEY}"}
+
+response = requests.post(url, json={
+    "model": "sonar-pro",
+    "messages": [
+        {"role": "user", "content": "2026年最新的AI芯片市场格局"}
+    ],
+    "search_recency_filter": "week"
+})
+
+result = response.json()
+print(result["choices"][0]["message"]["content"])
+print("Citations:", result["citations"])  # 来源链接
+```
+
+## 生产最佳实践
+
+1. **搜索策略**：复杂问题用 Pro Search，简单问题用基础搜索
+2. **引用验证**：始终检查引用来源的可靠性
+3. **时效性**：使用 recency_filter 控制搜索时间范围
+4. **多轮追问**：利用多轮对话深入探索
+5. **API 集成**：将搜索能力嵌入自己的应用
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| 回答不准确 | 来源质量差 | 检查引用 + 交叉验证 |
+| 搜索速度慢 | Pro Search 多步 | 简单问题用基础搜索 |
+| API 限流 | 并发超限 | 实现重试 + 缓存 |
+| 中文效果差 | 英文优先 | 使用中文提示词引导 |
+
+## 相关概念
+
+- [[大模型/README|NLP & LLMs]]
+- [[概念/perplexity|Perplexity 概念卡片]]
+- [[概念/rag|RAG 检索增强生成]]
+- [[概念/ai-search|AI 搜索]]
+
+## 总结
+
+Perplexity 是 AI 搜索的领导者，将 LLM 与实时搜索结合，提供带引用的精准回答。它代表了信息检索从“找链接”到“给答案”的范式转变。
+
+> 💡 Perplexity 的核心价值：让搜索从“给你一堆链接”变为“给你一个答案”——并且告诉你答案从哪里来。

@@ -117,6 +117,62 @@ mpirun -n 4 trtllm-serve ./engine \
 - **多模态**: 支持 LLaVA、Qwen-VL 等视觉语言模型
 - **MoE 优化**: DeepSeek-V3、Mixtral 等 MoE 模型专项优化
 - **与 Triton 深度集成**: 支持多模型、多后端统一服务
+- **FP8 训练**: 支持 FP8 量化训练，降低显存占用
+- **推测解码**: 支持 Draft Model 和 Medusa 推测解码
+
+## 部署架构示例
+
+```yaml
+# Triton Inference Server + TensorRT-LLM
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: trt-llm-server
+spec:
+  replicas: 2
+  template:
+    spec:
+      containers:
+      - name: triton
+        image: nvcr.io/nvidia/tritonserver:24.12-trtllm-python-py3
+        ports:
+        - containerPort: 8000  # HTTP
+        - containerPort: 8001  # gRPC
+        - containerPort: 8002  # Metrics
+        resources:
+          limits:
+            nvidia.com/gpu: 2
+        volumeMounts:
+        - name: model-repo
+          mountPath: /models
+        env:
+        - name: CUDA_VISIBLE_DEVICES
+          value: "0,1"
+      volumes:
+      - name: model-repo
+        persistentVolumeClaim:
+          claimName: model-repo-pvc
+```
+
+## 性能优化检查清单
+
+| 优化项 | 配置 | 预期收益 |
+|--------|------|----------|
+| **FP8 量化** | `--quantization fp8` | 吐量 +50-100% |
+| **In-flight Batching** | 默认启用 | 并发 +2-4x |
+| **KV Cache INT8** | `--kv_cache_dtype int8` | 显存 -50% |
+| **推测解码** | `--speculative_decoding_mode` | 延迟 -30-50% |
+| **多 GPU 并行** | Tensor Parallel | 吐量线性扩展 |
+| **CUDA Graph** | 默认启用 | 减少 kernel launch 开销 |
+
+## 生产最佳实践
+
+1. **编译时间规划**: TRT-LLM 编译耗时 10-60 分钟，CI/CD 中预留时间
+2. **版本锁定**: TRT-LLM 与 CUDA/Driver 版本强绑定，升级前充分测试
+3. **监控指标**: 跟踪 TTFT、TPOT、吐量、GPU 利用率
+4. **回滚预案**: 保留上一版本 engine 文件，快速回滚
+5. **与 vLLM 对比**: 简单场景 vLLM 更灵活，极致性能选 TRT-LLM
+6. **Triton 集成**: 多模型服务用 Triton 统一管理
 
 ## 延伸阅读
 
@@ -126,3 +182,43 @@ mpirun -n 4 trtllm-serve ./engine \
 - [[概念/Inference/sglang|SGLang]]
 - [[部署推理/Inference_Engines/TensorRT_LLM_Deep_Dive|TensorRT-LLM 深度解析]]
 - [[部署推理/Inference_Engines/LLM_Inference_Engine_Selection_Guide|推理引擎选型指南]]
+
+## TensorRT-LLM vs vLLM vs SGLang
+
+| 维度 | TensorRT-LLM | vLLM | SGLang |
+|------|-------------|------|--------|
+| **性能** | 极致 (编译优化) | 高 | 高 |
+| **易用性** | 低 (需编译) | 高 | 高 |
+| **硬件** | 仅 NVIDIA | NVIDIA/AMD/TPU | NVIDIA |
+| **量化** | FP8/INT4/INT8 | GPTQ/AWQ/FP8 | FP8/INT4 |
+| **动态批处理** | In-flight Batching | Continuous Batching | Continuous Batching |
+| **适用场景** | 极致性能/生产 | 通用服务 | 结构化生成 |
+
+## TensorRT-LLM 部署流程
+
+```bash
+# 1. 模型转换 (HuggingFace → TensorRT)
+python convert_checkpoint.py \
+  --model_dir ./llama-3-8b \
+  --output_dir ./trt_ckpt \
+  --dtype float16
+
+# 2. 编译引擎
+trtllm-build \
+  --checkpoint_dir ./trt_ckpt \
+  --output_dir ./trt_engine \
+  --max_batch_size 64 \
+  --max_input_len 4096 \
+  --max_seq_len 8192
+
+# 3. 启动服务
+mpirun -n 1 python3 run.py --engine_dir ./trt_engine
+```
+
+## 生产最佳实践
+
+1. **性能优先选 TRT-LLM**：吐吐量要求极高时选择 TensorRT-LLM
+2. **编译时间预留**：引擎编译需 30min-2h，CI/CD 中缓存引擎
+3. **FP8 必开**：H100+ 必开 FP8，性能翻倍且质量保留
+4. **版本固定**：TensorRT-LLM 版本与 CUDA/驱动强绑定，固定版本
+5. **回退方案**：开发/测试用 vLLM，生产切 TensorRT-LLM

@@ -117,3 +117,89 @@ EOF
 3. **性能分级**：按业务重要性选择不同性能等级的 StorageClass
 4. **容量监控**：配置 PVC 使用率告警，避免磁盘写满导致训练中断
 5. **CSI 插件**：确认 Provisioner 与后端存储池匹配，定期检查 CSI 插件健康状态
+
+## 2026 StorageClass 生态现状
+
+| 存储类型 | Provisioner | 场景 | 状态 |
+|------|------|------|------|
+| 本地 NVMe | local-path-provisioner | Checkpoint | ✅ 成熟 |
+| 云 SSD | EBS/PD Provisioner | 通用 | ✅ 成熟 |
+| 并行文件系统 | Lustre CSI | 训练数据 | ✅ 成熟 |
+| 对象存储 | S3 CSI (Mountpoint) | 数据集 | ✅ 新增 |
+| 共享文件 | NFS/EFS CSI | 多节点共享 | ✅ 成熟 |
+
+## 检查清单
+
+- [ ] StorageClass 与场景匹配
+- [ ] 性能等级已确认
+- [ ] 容量监控已配置
+- [ ] CSI 插件健康
+- [ ] 备份策略已配置
+- [ ] 扩容策略已配置
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| PVC Pending | Provisioner 不可用 | 检查 CSI 插件状态 |
+| 性能不足 | 存储类型不匹配 | 更换更高性能 StorageClass |
+| 容量不足 | 未配置扩容 | 启用 allowVolumeExpansion |
+| 挂载失败 | 权限问题 | 检查 fsGroup/SELinux 配置 |
+
+## 延伸阅读
+
+- [[概念/RAG/storage|Storage]] — AI 存储总览
+- [[概念/K8s/persistent-volume|Persistent Volume]] — K8s 存储
+- [[概念/K8s/gpu-operator|GPU Operator]] — GPU 管理
+- [[概念/MLOps/data-versioning|数据版本]] — 数据管理
+- [[架构基建/Storage/AI_Storage_Patterns|AI 存储模式]]
+
+> ℹ️ StorageClass 是 K8s 存储抽象，2026年 AI 场景需根据工作负载选择 NVMe/并行文件系统/对象存储对应 StorageClass。
+
+## 2026 AI StorageClass 生态现状
+
+| StorageClass | 后端 | 场景 | 性能 | 状态 |
+|------|------|------|------|------|
+| local-nvme | 本地 NVMe | Checkpoint/缓存 | 极高 IOPS | ✅ 主流 |
+| lustre-fs | Lustre | 训练数据 | 高吞吐 | ✅ 成熟 |
+| ceph-rbd | Ceph | 通用持久化 | 中等 | ✅ 成熟 |
+| nfs-client | NAS | 共享数据 | 中等 | ✅ 主流 |
+| s3-csi | MinIO/S3 | 模型/数据集 | 高吞吐 | ✅ 主流 |
+| gp3-ebs | AWS EBS | 云上通用 | 中等 | ✅ 商业 |
+
+## 检查清单
+
+- [ ] 训练 Pod 已使用高速 StorageClass（NVMe/Lustre）
+- [ ] Checkpoint PVC 已配置高性能存储
+- [ ] 数据加载 PVC 已设置合适的 accessMode
+- [ ] 存储容量已预留 30% 余量
+- [ ] reclaimPolicy 已正确配置（Retain/Delete）
+- [ ] 存储监控告警已接入
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| Pod Pending | PVC 无法绑定 | 检查 StorageClass 和容量 |
+| I/O 性能差 | 使用了网络存储 | 改用 local-nvme |
+| 数据丢失 | reclaimPolicy=Delete | 改为 Retain |
+| 多 Pod 访问冲突 | accessMode 错误 | 使用 ReadWriteMany |
+
+## 延伸阅读
+
+- [[概念/RAG/storage|Storage]] — AI 存储总览
+- [[概念/K8s/persistent-volume|Persistent Volume]] — K8s 持久化存储
+- [[概念/K8s/gpu-operator|GPU Operator]] — GPU 管理
+- [[概念/MLOps/data-versioning|数据版本]] — 数据管理
+- [[架构基建/Storage/AI_Storage_Patterns|AI 存储模式]]
+
+> ℹ️ AI 工作负载 StorageClass 选型：训练数据用 Lustre/NVMe，Checkpoint 用 NVMe， 模型归档用 S3，避免用通用 NFS 承载高 I/O 场景。
+
+## 性能对比
+
+| StorageClass | IOPS | 吞吐 | 延迟 | 适用 |
+|------|------|------|------|------|
+| local-nvme | 100K+ | 6 GB/s | < 1ms | Checkpoint |
+| lustre-fs | 50K | 100 GB/s | 1-5ms | 训练数据 |
+| ceph-rbd | 10K | 1 GB/s | 5-10ms | 通用 |
+| s3-csi | N/A | 10 GB/s | 10-50ms | 归档 |

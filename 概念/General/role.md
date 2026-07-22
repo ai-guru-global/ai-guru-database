@@ -119,3 +119,117 @@ kubectl auth can-i get configmaps \
 3. **ClusterRole 谨慎**：ClusterRole 谨慎使用
 4. **定期审计**：定期审计权限配置
 5. **与 ServiceAccount 配合**：Role + ServiceAccount
+
+## AI 场景 RBAC 配置
+
+```yaml
+# AI 训练团队 Role
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  namespace: ai-training
+  name: ml-engineer
+rules:
+  - apiGroups: ["", "batch"]
+    resources: ["pods", "jobs", "configmaps"]
+    verbs: ["get", "list", "create", "delete"]
+  - apiGroups: ["kubeflow.org"]
+    resources: ["pytorchjobs", "mpijobs"]
+    verbs: ["*"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  namespace: ai-training
+  name: ml-engineer-binding
+subjects:
+  - kind: Group
+    name: ml-team
+roleRef:
+  kind: Role
+  name: ml-engineer
+  apiGroup: rbac.authorization.k8s.io
+```
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| 403 Forbidden | 权限不足 | 检查 Role/RoleBinding |
+| 权限过大 | 使用 cluster-admin | 细化为最小权限 |
+| 跨命名空间访问 | 用了 ClusterRole | 改用命名空间 Role |
+| Pod 无法访问 API | ServiceAccount 未绑定 | 配置 RoleBinding |
+| 审计困难 | 权限分散 | 统一权限管理平台 |
+
+## 版本兼容性
+
+| 组件 | 版本 | 说明 |
+|------|------|------|
+| Kubernetes RBAC | v1 | 稳定 API |
+| kubectl auth can-i | 1.28+ | 权限检查 |
+| OPA/Gatekeeper | 最新 | 策略引擎 |
+
+## 生产检查清单
+
+1. 每个团队/项目独立命名空间 + Role
+2. 禁止直接使用 cluster-admin
+3. ServiceAccount 绑定最小权限 Role
+4. 定期审计权限配置 (kubectl auth can-i)
+5. 使用 OPA/Gatekeeper 强制策略
+6. 权限变更走审批流程
+
+## 总结
+
+Role 是 Kubernetes RBAC 的核心资源，实现命名空间级别的最小权限控制。在 AI 场景中，Role 用于隔离训练、推理、数据团队的权限边界。
+
+> 💡 RBAC 的核心原则：永远不要给超过需要的权限——最小权限是安全的基石，尤其在多租户 AI 集群中。
+
+## AI 平台 RBAC 角色示例
+
+```yaml
+# AI 平台角色定义
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: ml-engineer
+  namespace: ai-platform
+rules:
+  - apiGroups: ["apps"]
+    resources: ["deployments", "statefulsets"]
+    verbs: ["get", "list", "watch", "create", "update"]
+  - apiGroups: [""]
+    resources: ["pods", "pods/log"]
+    verbs: ["get", "list", "watch"]
+  - apiGroups: ["batch"]
+    resources: ["jobs"]
+    verbs: ["*"]  # 训练任务全权限
+---
+kind: Role
+metadata:
+  name: model-viewer
+  namespace: ai-platform
+rules:
+  - apiGroups: ["apps"]
+    resources: ["deployments"]
+    verbs: ["get", "list", "watch"]  # 只读
+```
+
+## AI 平台角色矩阵
+
+| 角色 | 训练任务 | 推理服务 | 模型仓库 | 集群管理 |
+|------|----------|----------|----------|----------|
+| 平台管理员 | 全部 | 全部 | 全部 | 全部 |
+| ML 工程师 | 创建/查看 | 查看 | 读写 | 无 |
+| 数据科学家 | 查看 | 调用 | 只读 | 无 |
+| 运维工程师 | 查看 | 全部 | 查看 | 全部 |
+| 审计员 | 只读 | 只读 | 只读 | 只读 |
+
+## 生产检查清单
+
+1. ✅ 最小权限原则（只给需要的权限）
+2. ✅ 角色按职能分离（工程师/运维/审计）
+3. ✅ 定期审计权限分配
+4. ✅ 服务账户使用专用 Role
+5. ✅ 敏感操作需要审批流
+6. ✅ 多租户场景使用 RoleBinding 隔离
+

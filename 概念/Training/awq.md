@@ -176,3 +176,31 @@ llm = LLM(
 3. **与 GPTQ 对比**：追求速度用 AWQ，追求精度用 GPTQ
 4. **推理引擎**：优先使用 vLLM/TensorRT-LLM 获得最佳性能
 5. **显存估算**：70B AWQ INT4 约需 35-40GB 显存
+
+## 2026 AWQ 生态现状
+
+| 工具/引擎 | 支持 | 特色 | 状态 |
+|------|------|------|------|
+| vLLM | ✅ | 高性能推理 | ✅ 主流 |
+| TensorRT-LLM | ✅ | NVIDIA 优化 | ✅ 成熟 |
+| llama.cpp | ✅ | CPU/边缘 | ✅ 主流 |
+| AutoAWQ | ✅ | 量化工具 | ✅ 主流 |
+| SGLang | ✅ | 结构化生成 | ✅ 前沿 |
+
+## 延伸阅读
+
+- [[概念/Training/smoothquant|SmoothQuant]] — 平滑量化
+- [[概念/Training/nf4|NF4]] — 4-bit 量化
+- [[概念/Training/pruning|Pruning]] — 剪枝
+- [[概念/Training/knowledge-distillation|Knowledge Distillation]] — 知识蒸馏
+- [[概念/Inference/model-quantization|Model Quantization]] — 模型量化总览
+
+> ℹ️ AWQ 是 2026 年最主流的激活感知量化方案，INT4 精度损失 < 1%，配合 vLLM/TensorRT-LLM 可获得最佳推理性能。
+
+## 检查清单
+
+- [ ] 校准数据已准备（代表性样本）
+- [ ] 量化位宽已选择（INT4/INT8）
+- [ ] 推理引擎已验证兼容性
+- [ ] 精度已验证（下游任务）
+- [ ] 显存已规划

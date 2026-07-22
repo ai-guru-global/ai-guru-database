@@ -139,3 +139,66 @@ ranked = sorted(zip(candidates, scores), key=lambda x: -x[1])
 - [[概念/RAG/rag-systems|RAG Systems]]
 - [[概念/RAG/vector-index|向量索引]]
 - [[RAG系统/Advanced_RAG/RAG_Retrieval_Latency_Optimization|RAG 检索延迟优化]]
+
+## 2026 Cross-Encoder 生态
+
+| 模型 | 参数 | 多语言 | 特点 | 状态 |
+|------|:----:|:------:|------|:----:|
+| **bge-reranker-v2-m3** | 568M | ✅ | 多语言最佳，中文优秀 | GA |
+| **bge-reranker-v2-gemma** | 2B | ✅ | LLM-based，精度更高 | GA |
+| **Cohere Rerank 3** | - | ✅ | 商业 API，精度极高 | GA |
+| **Jina Reranker v2** | 278M | ✅ | 轻量级，速度快 | GA |
+| **mxbai-rerank-v2** | 340M | ✅ | 开源，性价比高 | GA |
+| **RankGPT** | - | ✅ | GPT 排序，精度极高但贵 | 实验 |
+
+## Cross-Encoder vs Bi-Encoder
+
+| 维度 | Cross-Encoder | Bi-Encoder |
+|------|:------------:|:----------:|
+| **精度** | 极高 | 中 |
+| **速度** | 慢 (O(n)) | 快 (O(1)) |
+| **适用** | 重排序 (Top-K) | 召回 (全库) |
+| **输入** | [query, doc] 对 | 独立编码 |
+| **交互** | 深度交叉注意力 | 无交互 |
+| **典型用法** | RAG 重排序 | 向量检索 |
+
+## RAG 中的使用模式
+
+```
+用户查询
+  │
+  ├─ 1. Bi-Encoder 召回 (Top-100)
+  │     └─ 向量相似度，快速
+  │
+  ├─ 2. Cross-Encoder 重排序 (Top-100 → Top-10)
+  │     └─ 精确打分，慢但准
+  │
+  └─ 3. LLM 生成 (Top-10 → 答案)
+        └─ 基于精排结果生成
+```
+
+## 性能优化建议
+
+| 策略 | 说明 | 效果 |
+|------|------|------|
+| **GPU 部署** | 生产必须 GPU | 延迟降 10x |
+| **批量推理** | 合并多个 query-doc 对 | 吐量提升 3-5x |
+| **截断策略** | 限制 doc 长度 (512 token) | 减少计算量 |
+| **超时降级** | rerank 超时则跳过 | 保证可用性 |
+| **缓存** | 缓存常见 query 的排序结果 | 减少重复计算 |
+
+## 生产最佳实践补充
+
+1. **召回+重排两阶段**：Bi-Encoder 召回 Top-100，Cross-Encoder 精排 Top-10
+2. **优先 bge-reranker-v2-m3**：多语言场景综合最佳，中文支持优秀
+3. **GPU 部署**：生产环境必须 GPU，CPU 延迟不可接受
+4. **设置超时降级**：rerank 超时则跳过，直接用召回结果
+5. **监控 NDCG 指标**：定期评估 rerank 后的检索质量
+6. **考虑 LLM-based Reranker**：bge-reranker-v2-gemma 精度更高，适合质量敏感场景
+
+## 延伸阅读
+
+- [[概念/LLM/llamaindex|LlamaIndex]] — RAG 框架集成
+- [[概念/RAG/rag-architecture|RAG 架构]] — RAG 系统全景
+- [[概念/LLM/context-engineering|上下文工程]] — 检索后上下文管理
+- [[概念/LLM/llm-inference-engine|推理引擎]] — 模型服务部署

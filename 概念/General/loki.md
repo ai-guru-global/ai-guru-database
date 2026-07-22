@@ -92,3 +92,126 @@ rate({namespace="prod", app="order"} |= "error" [1m])
 3. **与 Grafana 配合**：Loki + Grafana 可视化
 4. **日志-指标关联**：日志与指标关联分析
 5. **采样策略**：配置合适的日志采样
+
+## Loki 部署架构（微服务模式）
+
+```yaml
+# loki-distributed.yaml
+apiVersion: loki.grafana.com/v1
+kind: LokiStack
+metadata:
+  name: loki-production
+spec:
+  size: 1x.extra.small
+  storage:
+    schemas:
+      - version: v13
+        effectiveDate: "2026-01-01"
+    secret:
+      name: loki-s3-secret
+      type: s3
+  tenants:
+    mode: static
+  limits:
+    global:
+      retention:
+        days: 14
+      ingestion:
+        ingestionRate: 10MB
+        ingestionBurstSize: 20MB
+```
+
+## AI/LLM 场景日志实践
+
+| 场景 | 日志内容 | LogQL 示例 |
+|------|----------|----------|
+| **推理服务** | 请求延迟、token 数、错误 | `{app="vllm"} \|= "error"` |
+| **RAG 流水线** | 检索结果、重排分数 | `{app="rag"} \| json \| score < 0.5` |
+| **Agent 执行** | 工具调用、步骤日志 | `{app="agent"} \|= "tool_call"` |
+| **训练任务** | loss、梯度、异常 | `{job="training"} \|= "nan"` |
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| 日志丢失 | Promtail 缓冲溢出 | 增大 batchwait/batchsize |
+| 查询超时 | 时间范围太大 | 缩小查询范围、加标签过滤 |
+| 存储膨胀 | 未配置保留策略 | 设置 retention 14天 |
+| 标签基数爆炸 | 动态标签过多 | 避免用 trace_id 作标签 |
+| Ingester OOM | 突发流量 | 设置 HPA + 资源限制 |
+
+## 版本兼容性
+
+| 组件 | 推荐版本 | 说明 |
+|------|----------|------|
+| Loki | 3.x | 微服务架构 |
+| Grafana | 10.x | 可视化 |
+| Promtail | 3.x | 日志采集 |
+| Fluent Bit | 3.x | 替代采集器 |
+| MinIO/S3 | 最新 | 对象存储 |
+
+## 生产检查清单
+
+1. 配置日志保留策略（14 天）
+2. 避免高基数标签（不用 trace_id/pod_name 作标签）
+3. 设置 ingestion rate limit 防止突发流量
+4. 启用 WAL 防止 Ingester 崩溃丢数据
+5. 对象存储启用生命周期策略自动清理
+6. 配置 Grafana 告警规则监控日志异常
+
+## 总结
+
+Loki 是云原生日志聚合的轻量级首选，其“只索引标签”的设计使其存储成本仅为 Elasticsearch 的 1/10。与 Prometheus + Grafana 组合构成完整的 K8s 可观测性栈。
+
+> 💡 Loki 的核心优势：用 Prometheus 的思路做日志——标签索引而非全文索引，大幅降低存储成本，同时通过 LogQL 保持强大的查询能力。
+
+## LogQL 查询示例
+
+```logql
+# AI 推理服务错误日志
+{app="inference-server", level="error"} |= "OOM" | json | duration > 1000
+
+# 模型加载时间统计
+{app="model-loader"} |= "loaded" | json | unwrap duration_ms | avg by (model_name)
+
+# GPU 节点异常日志
+{node=~"gpu-.*"} |= "ECC error" | line_format "{{.time}} {{.message}}"
+
+# 推理延迟 P99
+{app="inference-server"} | json | unwrap latency_ms | quantile(0.99) by (model)
+```
+
+## Loki vs ELK vs Fluentd 对比
+
+| 维度 | Loki | ELK | Fluentd |
+|------|------|-----|----------|
+| 索引方式 | 标签 | 全文 | 无（转发） |
+| 存储成本 | 低 | 高 | N/A |
+| 查询能力 | LogQL | KQL/DSL | 无 |
+| 学习曲线 | 低 | 高 | 中 |
+| K8s 集成 | 原生 | 需配置 | 原生 |
+| 适用规模 | 中-大 | 大 | 任意 |
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| 查询慢 | 标签基数过高 | 减少标签数量 + 合理分级 |
+| 日志丢失 | 采集端缓冲溢出 | 增大 Fluent Bit 缓冲 |
+| 存储增长快 | 保留策略未配置 | 设置 retention 期限 |
+| 与 Grafana 集成失败 | 数据源配置错误 | 检查 URL + 认证配置 |
+
+## 生产检查清单
+
+1. ✅ 标签设计合理（低基数、高区分度）
+2. ✅ 配置日志保留策略（30-90 天）
+3. ✅ 采集端配置缓冲和重试
+4. ✅ 与 Grafana + Prometheus 统一可观测性
+5. ✅ 关键日志配置告警规则
+6. ✅ 定期审计标签基数和存储用量
+
+## 总结
+
+Loki 是云原生日志管理的最佳选择，其标签索引模式和 LogQL 查询语言使其与 Prometheus/Grafana 生态无缝集成。2026 年已成为 K8s 环境 AI 服务日志管理的事实标准。
+
+> 💡 Loki 的核心哲学：“像指标一样对待日志”——用标签而非全文索引，用 LogQL 而非 DSL，保持简单和低成本。

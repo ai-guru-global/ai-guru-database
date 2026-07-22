@@ -144,3 +144,66 @@ api.upload_folder(folder_path="./my_model", repo_id="myorg/my-model")
 3. **私有 Hub**：企业场景使用 Private Hub 管理内部模型资产
 4. **Token 安全**：生产环境使用 Fine-grained Token，最小权限原则
 5. **缓存策略**：配置 HF_HOME 统一缓存目录，避免重复下载大模型
+
+## HuggingFace 核心工具链
+
+```python
+# Transformers 5.x 统一加载
+from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
+
+model = AutoModelForCausalLM.from_pretrained(
+    "meta-llama/Llama-3-8B-Instruct",
+    revision="main",           # 固定版本
+    torch_dtype="auto",
+    device_map="auto",
+)
+tokenizer = AutoTokenizer.from_pretrained("meta-llama/Llama-3-8B-Instruct")
+
+# TRL 微调
+from trl import SFTConfig, SFTTrainer
+config = SFTConfig(output_dir="./sft", max_seq_length=2048)
+trainer = SFTTrainer(model=model, args=config, train_dataset=dataset)
+trainer.train()
+
+# PEFT 量化微调
+from peft import LoraConfig, get_peft_model
+lora_config = LoraConfig(r=16, lora_alpha=32, target_modules=["q_proj", "v_proj"])
+model = get_peft_model(model, lora_config)
+```
+
+## HuggingFace 生态组件对比
+
+| 组件 | 功能 | 替代方案 | 适用场景 |
+|------|------|----------|----------|
+| Transformers | 模型加载/推理 | vLLM/TGI | 研究/微调 |
+| Hub | 模型/数据集托管 | ModelScope | 开源分享 |
+| TRL | RLHF/对齐训练 | 自实现 | 对齐微调 |
+| PEFT | 参数高效微调 | 全量微调 | 资源受限 |
+| Datasets | 数据集加载 | 自实现 | 数据处理 |
+| Spaces | 演示部署 | Gradio 本地 | 快速演示 |
+| Inference API | 托管推理 | 自建 | 低频调用 |
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| 下载速度慢 | 网络限制 | 配置 HF_ENDPOINT 镜像站 |
+| Token 权限不足 | Fine-grained Token 限制 | 检查 Token 权限范围 |
+| 模型加载 OOM | 模型过大 | 使用 device_map="auto" + 量化 |
+| 版本不兼容 | Transformers 升级 | 固定 transformers 版本号 |
+| 缓存磁盘占满 | 多版本模型累积 | 定期清理 HF_HOME 缓存 |
+
+## 生产检查清单
+
+1. ✅ 使用 revision 固定模型版本
+2. ✅ 生产环境使用 Fine-grained Token（最小权限）
+3. ✅ 配置 HF_HOME 统一缓存目录
+4. ✅ 模型卡片填写完整（训练数据/评估/限制）
+5. ✅ 企业场景使用 Private Hub
+6. ✅ 定期清理过期缓存释放磁盘
+
+## 总结
+
+HuggingFace 是 2026 年开源 AI 生态的绝对中心，其 Transformers + Hub + TRL + PEFT 工具链覆盖了从模型加载、微调、对齐到部署的完整生命周期。它是研究和原型验证的首选，但高性能生产推理应使用 vLLM/TGI 等专业引擎。
+
+> 💡 HuggingFace 的核心价值是“让开源 AI 触手可及”，但生产环境需要在 HF 生态之上构建专业的推理、监控和运维层。

@@ -127,3 +127,75 @@ text = sp.decode(tokens)
 3. **与 Tokenizers 对比**：根据需求选择分词器
 4. **词表大小**：合理设置词表大小
 5. **特殊 token**：正确配置特殊 token
+
+## 训练配置示例
+
+```python
+import sentencepiece as spm
+
+# 训练 BPE 分词器
+spm.SentencePieceTrainer.train(
+    input='corpus.txt',
+    model_prefix='my_bpe',
+    vocab_size=32000,
+    model_type='bpe',
+    character_coverage=0.9995,
+    unk_id=0, bos_id=1, eos_id=2, pad_id=3
+)
+
+# 使用分词器
+sp = spm.SentencePieceProcessor()
+sp.load('my_bpe.model')
+tokens = sp.encode('你好世界', out_type=str)
+```
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| 中文分词差 | 训练数据不足 | 增加中文语料 |
+| 词表太大 | vocab_size 过高 | 调整到 32K-64K |
+| OOV 太多 | 覆盖率不足 | 提高 character_coverage |
+| 与 HF 不兼容 | 格式差异 | 用 HF Tokenizers |
+
+## 版本兼容性
+
+| 工具 | 版本 | 说明 |
+|------|------|------|
+| sentencepiece | 0.2+ | 核心库 |
+| HF Tokenizers | 0.19+ | 替代方案 |
+| tiktoken | 最新 | OpenAI 分词 |
+
+## 生产检查清单
+
+1. 词表大小 32K-64K 平衡效果和效率
+2. 训练数据覆盖目标语言
+3. 正确配置特殊 token (BOS/EOS/PAD/UNK)
+4. 测试多语言分词效果
+5. 与模型训练/推理流程集成验证
+6. 保存分词器版本便于追溯
+
+## 版本兼容性
+
+| 工具 | 版本 | 特性 | 备注 |
+|------|------|------|------|
+| **sentencepiece** | ≥ 0.2.0 | C++ 核心 | Python 绑定 |
+| **tokenizers (HF)** | ≥ 0.19 | Rust 实现 | 替代方案 |
+| **tiktoken** | ≥ 0.7 | OpenAI 分词 | GPT 系列 |
+| **transformers** | ≥ 4.40 | 集成支持 | 自动加载 |
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| 中文分词粒度粗 | 词表太小 | 增大 vocab_size |
+| 训练速度慢 | 语料太大 | 采样训练（--input_sentence_size） |
+| 与 HF 不兼容 | 格式差异 | 使用 convert_slow_tokenizer |
+| 特殊 token 丢失 | 未正确配置 | 显式添加 user_defined_symbols |
+
+## 总结
+
+SentencePiece 是语言无关的分词器，支持 BPE 和 Unigram 算法，是多语言 LLM 的标准分词方案。其直接处理原始文本的特性使其无需预分词。
+
+> 💡 SentencePiece 的核心价值：语言无关 + 无需预分词——直接把原始文本切成 token，中日韩英阿拉伯文一视同仁。
+

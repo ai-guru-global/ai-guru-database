@@ -143,4 +143,59 @@ aliases:
 - [[概念/Inference/inference-autoscaling|推理扩缩容]]
 - [[概念/Inference/prefix-caching|Prefix Caching]]
 - [[概念/Inference/model-serving|模型服务]]
-- [[部署推理/Inference_Performance/Remaining_Performance_Issues_2026|推理性能未解问题与缺口评估]]
+- [[部署推理/Inference_Performance/Remaining_Performance_Issues_2026|推理性能未 解问题与缺口评估]]
+
+## 性能缺口优先级矩阵
+
+| 优先级 | 缺口 | 影响 | 解决方向 | 状态 |
+|--------|------|------|---------|------|
+| **P0** | 长上下文 Prefill 慢 | 128K+ 输入延迟 10s+ | Chunked Prefill, PD 分离 | 部分解决 |
+| **P0** | 显存墙 | 大模型+长上下文 OOM | KV 压缩, MLA, 量化 | 持续改善 |
+| **P1** | 解码吐吐量 | 自回归串行瓶颈 | 投机解码, MTP | 部分解决 |
+| **P1** | 冷启动 | 模型加载 30s-5min | 预热, 懒加载, Serverless | 部分解决 |
+| **P2** | 多模态推理 | 图像/视频 prefill 极慢 | 视觉编码器优化 | 研究中 |
+| **P2** | 结构化生成 | JSON 约束降低速度 | 编译优化, 缓存 | 改善中 |
+
+## 生产最佳实践
+
+1. **识别瓶颈**：用 profiler 确定是 Prefill 还是 Decode 瓶颈
+2. **长上下文用 Chunked Prefill**：避免单次 prefill 阻塞解码请求
+3. **显存监控**：设置显存使用率告警，避免 OOM
+4. **投机解码加速**：延迟敏感场景启用 Speculative Decoding
+5. **定期评估**：跟踪引擎更新，新版本常有显著性能提升
+
+## 2026 性能优化生态
+
+| 优化方向 | 代表技术 | 典型提升 | 状态 |
+|----------|----------|----------|------|
+| **Prefill 加速** | Chunked Prefill / PD 分离 | TTFT 降 40-60% | GA |
+| **Decode 加速** | Speculative Decoding / Medusa | 吞吐提升 2-3x | GA |
+| **显存优化** | PagedAttention / FP8 KV | 显存降 50% | GA |
+| **算子融合** | FlashAttention-3 / DeepGEMM | 计算效率 +30% | GA |
+| **调度优化** | Continuous Batching / 优先级队列 | 吞吐 +2-5x | GA |
+
+## 性能分析工具链
+
+```bash
+# vLLM 内置性能分析
+python -m vllm.entrypoints.openai.api_server \
+  --model meta-llama/Llama-3-70B \
+  --disable-log-requests false
+
+# NVIDIA Nsight Systems 分析 GPU 算子
+nsys profile --stats=true python benchmark.py
+
+# 吐吐量基准测试
+python -m vllm.entrypoints.openai.benchmark_serving \
+  --model meta-llama/Llama-3-70B \
+  --num-prompts 1000 --request-rate 10
+```
+
+## 延伸阅读
+
+- [[概念/Inference/inference-performance|推理性能]] — 性能指标与优化总览
+- [[概念/Inference/prefill-decode|Prefill/Decode]] — 两阶段性能分析
+- [[概念/Inference/continuous-batching|连续批处理]] — 吐吐量优化核心
+- [[概念/Inference/quantization|量化]] — 精度与速度权衡
+
+> ℹ️ 性能优化是迭代过程，先测量再优化，避免盲目调参。

@@ -114,3 +114,87 @@ aliases:
 2. **规则调优**：根据业务场景调优规则，减少误报
 3. **告警集成**：对接 Prometheus/Alertmanager/SIEM
 4. **与准入控制配合**：OPA/Kyverno 管部署前，Falco 管运行时
+
+## Falco 架构
+
+| 组件 | 功能 |
+|------|------|
+| Falco | 运行时安全检测 |
+| falco-driver | 内核事件捕获 |
+| falco-exporter | Prometheus 指标 |
+| falcosidekick | 告警分发 |
+
+## Falco 规则类型
+
+| 类型 | 说明 |
+|------|------|
+| Rules | 检测规则 |
+| Macros | 可复用条件片段 |
+| Lists | 可复用列表 |
+
+## Falco 规则示例
+
+```yaml
+- rule: Detect GPU Container Escape
+  desc: 检测 GPU 容器逃逸尝试
+  condition: >
+    spawned_process and container
+    and proc.name in (nvidia-smi, nvidia-debugdump)
+    and not proc.pname in (containerd, docker)
+  output: >
+    GPU 工具异常执行 (user=%user.name command=%proc.cmdline container=%container.name)
+  priority: WARNING
+  tags: [container, gpu, escape]
+```
+
+## AI 场景检测规则
+
+| 规则 | 说明 |
+|------|------|
+| GPU 容器逃逸 | 检测异常 GPU 工具执行 |
+| 模型文件篡改 | 检测模型目录写入 |
+| 异常网络访问 | 检测训练数据外传 |
+| 特权容器 | 检测特权模式使用 |
+| 敏感文件访问 | 检测 Secret/ConfigMap 读取 |
+
+## Falco vs 其他安全工具
+
+| 工具 | 类型 | 时机 | 适用场景 |
+|------|------|------|------|
+| Falco | 运行时检测 | 运行时 | 入侵检测 |
+| Kyverno | 准入控制 | 部署前 | 策略验证 |
+| OPA | 策略引擎 | 部署前 | 通用策略 |
+| Trivy | 漏洞扫描 | 构建时 | 镜像安全 |
+
+> 💡 Falco 是 K8s 运行时安全的标准方案，2026 年 AI 集群推荐 Falco + Kyverno 实现全链路安全。
+
+## 部署方式
+
+| 方式 | 说明 | 适用场景 |
+|------|------|------|
+| DaemonSet | 每节点一个 | 生产环境 |
+| Helm | 一键部署 | 快速部署 |
+| 系统服务 | 直接安装 | 特殊环境 |
+
+## 告警级别
+
+| 级别 | 说明 | 响应 |
+|------|------|------|
+| Emergency | 系统不可用 | 立即处理 |
+| Alert | 严重安全事件 | 尽快处理 |
+| Critical | 关键错误 | 优先处理 |
+| Error | 错误 | 正常处理 |
+| Warning | 警告 | 关注 |
+| Notice | 通知 | 记录 |
+| Info | 信息 | 忽略 |
+| Debug | 调试 | 忽略 |
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| 误报多 | 规则不匹配 | 调优规则/添加排除 |
+| 性能影响 | 规则过多 | 优化规则数量 |
+| 驱动不兼容 | 内核版本 | 使用 eBPF 驱动 |
+| 告警丢失 | 资源不足 | 增加资源限制 |
+

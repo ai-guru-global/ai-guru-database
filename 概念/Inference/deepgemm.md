@@ -154,3 +154,47 @@ DeepGEMM 作为 DeepSeek 开源生态的一部分，间接支撑 AI Stack 的推
 - [[概念/cuda-platform]] — CUDA 计算平台
 - [[概念/quantization]] — 量化技术
 - [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+
+## DeepGEMM vs 其他 GEMM 库
+
+| 库 | 精度 | 硬件 | 特点 | 适用 |
+|------|------|------|------|------|
+| **DeepGEMM** | FP8 | H100+ | DeepSeek 专用，极致优化 | DeepSeek 推理 |
+| **cuBLAS** | FP16/FP8 | NVIDIA | 通用，稳定 | 通用场景 |
+| **CUTLASS** | 多种 | NVIDIA | 可定制，模板库 | 自定义 kernel |
+| **FlashAttention** | FP16/FP8 | NVIDIA | 注意力专用 | Attention 计算 |
+| **FlashMLA** | FP8 | H100+ | MLA 专用 | DeepSeek MLA |
+
+## DeepGEMM 工作原理
+
+```
+标准 GEMM: C = A × B  (FP16)
+  计算量: 2 × M × N × K FLOPs
+  内存访问: (M×K + K×N + M×N) × 2 bytes
+
+DeepGEMM (FP8):
+  A: FP8 (E4M3), B: FP8 (E4M3), C: FP16/BF16
+  计算量不变，但内存访问减半
+  + 针对 H100 TMA (Tensor Memory Accelerator) 优化
+  + 异步流水线: 数据加载与计算重叠
+
+效果: 相比 cuBLAS FP8，吐吐量提升 1.2-1.5x
+```
+
+## 生产最佳实践
+
+1. **DeepSeek 推理必用**：DeepGEMM 是 DeepSeek-V3 推理的标配
+2. **H100+ 才有效**：DeepGEMM 依赖 H100 TMA 硬件特性
+3. **与 FlashMLA 配合**：DeepGEMM (线性层) + FlashMLA (注意力)
+4. **非 DeepSeek 用 cuBLAS**：其他模型用标准 cuBLAS/CUTLASS
+5. **FP8 校准**：FP8 精度有限，需要正确的缩放因子
+
+## 延伸阅读
+
+- [[概念/Inference/flashmla|FlashMLA]] — MLA 注意力优化
+- [[概念/Inference/quantization|量化]] — FP8 量化技术
+- [[概念/LLM/flash-attention-kernels|Flash Attention]] — 注意力算子
+- [[概念/Inference/tensorrt|TensorRT]] — 编译优化
+
+> ℹ️ DeepGEMM 是 DeepSeek 推理性能的关键组件，与 FlashMLA 配合使用。
+仅适用于 H100+ GPU，其他硬件用标准 cuBLAS/CUTLASS。

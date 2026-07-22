@@ -142,4 +142,64 @@ updated: 2026-07-21
 2. **FP8 优先**：H100+ GPU 默认启用 FP8，质量保留 >99% 且性能大幅提升
 3. **Continuous Batching 必开**：动态批处理提升 GPU 利用率 5-10x
 4. **KV Cache 管理**：长上下文场景启用 GQA/MLA + PagedAttention，避免 OOM
-5. **监控全覆盖**：TTFT/TPOT/吐吐量 + GPU 利用率/显存/温度全链路监控
+5. **监控全覆盖**：TTFT/TPOT/吐量 + GPU 利用率/显存/温度全链路监控
+6. **版本固定**：生产环境固定引擎版本，避免升级引入不兼容
+7. **多引擎评估**：上线前对比多个引擎的性能和质量
+
+## 2026 推理引擎对比
+
+| 引擎 | 吐量 | 延迟 | 生态 | 适用 |
+|------|:----:|:----:|:----:|------|
+| **vLLM** | 高 | 中 | 极广 | 通用生产 |
+| **SGLang** | 极高 | 低 | 广 | 性能优先 |
+| **TensorRT-LLM** | 极高 | 极低 | NVIDIA | NVIDIA 专用 |
+| **TGI** | 中 | 中 | HF | HF 生态 |
+| **llama.cpp** | 中 | 中 | GGUF | 边缘/CPU |
+| **MLC-LLM** | 中 | 中 | 跨平台 | 移动端 |
+
+## 引擎选型决策树
+
+```
+需要极致性能？
+├── 是 → NVIDIA GPU？
+│   ├── 是 → TensorRT-LLM / SGLang
+│   └── 否 → vLLM
+└── 否 → 需要广泛模型支持？
+    ├── 是 → vLLM
+    └── 否 → 边缘/CPU 部署？
+        ├── 是 → llama.cpp / MLC-LLM
+        └── 否 → TGI / vLLM
+```
+
+## 关键优化技术
+
+| 技术 | 效果 | 引擎支持 |
+|------|------|----------|
+| **Continuous Batching** | 吐量 5-10x | 所有 |
+| **PagedAttention** | 显存效率 +2x | vLLM |
+| **RadixAttention** | 前缀复用 +29% | SGLang |
+| **FP8 推理** | 速度 +30% | vLLM/TRT-LLM |
+| **Speculative Decoding** | 延迟 -50% | vLLM/SGLang |
+| **KV Cache 压缩** | 显存 -50%+ | 所有 |
+| **Prefill-Decode 分离** | 资源优化 | vLLM (Beta) |
+
+## 延伸阅读
+
+- [[概念/LLM/vllm|vLLM]]
+- [[概念/LLM/tensorrt-llm|TensorRT-LLM]]
+- [[概念/LLM/llm-inference-checklist|推理上线检查清单]]
+- [[概念/LLM/llm-inference-cost-optimization|推理成本优化]]
+- [[部署推理/Inference_Engines|推理引擎专题]]
+- [[部署推理/Inference_Performance|推理性能优化]]
+
+## 性能基准参考 (7B 模型, H100)
+
+| 引擎 | 吐量 (tok/s) | TTFT (ms) | 显存 (GB) |
+|------|:----------:|:--------:|:--------:|
+| vLLM | ~2500 | ~150 | ~16 |
+| SGLang | ~2800 | ~120 | ~16 |
+| TensorRT-LLM | ~3200 | ~100 | ~15 |
+| TGI | ~2000 | ~200 | ~17 |
+| HF Transformers | ~500 | ~500 | ~18 |
+
+> 注：以上为典型配置下的参考值，实际取决于模型、硬件和配置。

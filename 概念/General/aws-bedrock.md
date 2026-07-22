@@ -116,3 +116,86 @@ aliases:
 3. **Agents 构建**：用 Bedrock Agents 构建 Agent
 4. **Knowledge Bases**：RAG 用 Bedrock Knowledge Bases
 5. **与 Azure 对比**：根据云环境选择 Bedrock 或 Azure
+
+## API 调用示例
+
+```python
+import boto3
+
+client = boto3.client("bedrock-runtime", region_name="us-east-1")
+
+response = client.converse(
+    modelId="anthropic.claude-sonnet-4-20250514-v1:0",
+    messages=[{"role": "user", "content": [{"text": "解释量子计算"}]}],
+    inferenceConfig={"maxTokens": 1024, "temperature": 0.7}
+)
+print(response["output"]["message"]["content"][0]["text"])
+```
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| 模型不可用 | 区域限制 | 检查区域可用性 |
+| 延迟高 | 跨区域调用 | 就近区域部署 |
+| 成本高 | 大模型过度使用 | 小模型分流 + 缓存 |
+| 吐量限制 | Service Quota | 申请提升配额 |
+| 合规问题 | 数据驻留 | 选择合规区域 |
+
+## 版本兼容性
+
+| 服务 | 状态 | 说明 |
+|------|------|------|
+| Bedrock Converse API | GA | 统一对话 API |
+| Bedrock Agents | GA | Agent 构建 |
+| Knowledge Bases | GA | RAG 知识库 |
+| Guardrails | GA | 内容安全 |
+| Model Evaluation | GA | 模型评估 |
+
+## 生产检查清单
+
+1. 确认模型在目标区域可用
+2. 配置 VPC Endpoint 私有访问
+3. 启用 Guardrails 内容安全过滤
+4. 设置 CloudWatch 监控和告警
+5. 配置 IAM 最小权限访问
+6. 建立成本监控和预算告警
+
+## 总结
+
+AWS Bedrock 是 AWS 生态中的统一大模型服务平台，提供 Claude、Llama、Mistral 等多模型选择。对于已在使用 AWS 的企业，Bedrock 是最低摩擦的 LLM 接入方式。
+
+> 💡 Bedrock 选型原则：已在 AWS 生态 → Bedrock；已在 Azure → Azure OpenAI；已在 GCP → Vertex AI。避免跨云调用增加延迟和复杂度。
+
+## Bedrock 模型目录
+
+| 提供商 | 模型 | 特色 | 适用场景 |
+|--------|------|------|----------|
+| Anthropic | Claude 4 | 长上下文/安全 | 企业应用 |
+| Meta | Llama 4 | 开源/可微调 | 自定义 |
+| Mistral | Mistral Large | 欧洲合规 | 多语言 |
+| Amazon | Titan/Nova | AWS 原生 | 成本敏感 |
+| Cohere | Command R+ | RAG 优化 | 检索增强 |
+
+## 生产检查清单
+
+1. ✅ 使用 VPC Endpoint 私有访问
+2. ✅ 配置 Guardrails 内容过滤
+3. ✅ 启用 Model Invocation Logging
+4. ✅ 设置用量配额 + 预算告警
+5. ✅ 评估多模型提供商容灾
+6. ✅ 使用 Knowledge Base 构建 RAG
+7. ✅ 定期审计 IAM 权限
+
+## 总结
+
+AWS Bedrock 是 AWS 的托管 LLM 服务平台，提供多模型统一接入、Guardrails 安全护栏、Knowledge Base RAG 等能力。对于 AWS 生态用户，Bedrock 是接入 LLM 的最便捷方式。
+
+> 💡 Bedrock 的核心价值：无需管理基础设施即可使用顶级 LLM——一个 API 接入 Claude、Llama、Mistral 等多家模型。
+
+## 相关概念
+
+- [[概念/azure-openai]] — Azure OpenAI 服务
+- [[概念/vertex-ai]] — Google Vertex AI
+- [[概念/cloud-ai-platform]] — 云 AI 平台对比
+

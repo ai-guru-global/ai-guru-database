@@ -69,3 +69,132 @@ Data Versioning 是对数据集、特征表、模型 Artifact 进行版本管理
 - [[概念/lakefs|LakeFS]]
 - [[概念/data-pipeline|Data Pipeline]]
 - [[概念/MLOps/evidently|Evidently]] — 数据质量监控
+
+## 2026 数据版本控制生态
+
+| 工具 | 特点 | 适用 | 状态 |
+|------|------|------|------|
+| **DVC** | Git 扩展，大文件 | 通用 | GA |
+| **LakeFS** | 数据湖版本控制 | 数据湖 | GA |
+| **Delta Lake** | ACID 事务 | 数据湖 | GA |
+| **Pachyderm** | 数据版本 + 管道 | 企业 | GA |
+| **HuggingFace Datasets** | 数据集版本 | NLP | GA |
+
+## 数据版本控制架构
+
+```
+数据版本控制:
+┌─────────────────────────────────────────┐
+│  Git: 代码版本控制                      │
+├─────────────────────────────────────────┤
+│  DVC/LakeFS: 数据版本控制              │
+├─────────────────────────────────────────┤
+│  MLflow/W&B: 实验版本控制              │
+├─────────────────────────────────────────┤
+│  模型仓库: 模型版本控制                │
+└─────────────────────────────────────────┘
+```
+
+## DVC 使用示例
+
+```bash
+# 初始化 DVC
+dvc init
+
+# 添加数据文件到 DVC
+dvc add data/train.csv
+
+# 推送到远程存储
+dvc push
+
+# 拉取数据
+dvc pull
+
+# 查看数据历史
+dvc metrics show
+```
+
+## 延伸阅读
+
+- [[概念/MLOps/data-pipeline|数据管道]] — 数据流水线
+- [[概念/MLOps/dvc|DVC]] — 数据版本工具
+- [[概念/MLOps/experiment-tracking|实验追踪]] — 实验管理
+- [[概念/MLOps/model-registry|模型仓库]] — 模型版本
+
+> ℹ️ 数据版本控制是 MLOps 的基础，确保实验可复现和数据可追溯。
+
+## 数据版本控制最佳实践
+
+| 实践 | 说明 | 工具 |
+|------|------|------|
+| **代码 + 数据一起版本** | 代码和数据关联 | Git + DVC |
+| **大文件用 DVC** | 避免 Git 膨胀 | DVC |
+| **远程存储** | 数据不存本地 | S3/GCS |
+| **数据血缘** | 追踪数据来源 | OpenLineage |
+| **实验关联** | 数据版本与实验关联 | MLflow |
+
+## 数据版本控制检查清单
+
+- [ ] 数据文件已用 DVC/LakeFS 管理
+- [ ] 远程存储已配置
+- [ ] 数据变更有审计日志
+- [ ] 数据血缘已记录
+- [ ] 实验与数据版本关联
+- [ ] 数据访问权限已控制
+- [ ] 定期备份已配置
+
+## 延伸阅读
+
+- [[概念/MLOps/data-pipeline|数据管道]] — 数据流水线
+- [[概念/MLOps/dvc|DVC]] — 数据版本工具
+- [[概念/MLOps/experiment-tracking|实验追踪]] — 实验管理
+- [[概念/MLOps/model-registry|模型仓库]] — 模型版本
+
+> ℹ️ 数据版本控制是 MLOps 的基础，确保实验可复现和数据可追溯。
+
+## LakeFS 使用示例
+
+```bash
+# 创建仓库
+lakectl repo create lakefs://my-repo s3://my-bucket
+
+# 创建分支
+lakectl branch create lakefs://my-repo/dev --source main
+
+# 提交变更
+lakectl commit lakefs://my-repo/dev -m "Add new training data"
+
+# 合并分支
+lakectl merge lakefs://my-repo/dev lakefs://my-repo/main
+```
+
+## 数据版本控制工具对比
+
+| 工具 | 优点 | 缺点 | 适用 |
+|------|------|------|------|
+| **DVC** | Git 集成，简单 | 需要远程存储 | 中小团队 |
+| **LakeFS** | 数据湖原生，分支 | 需要部署服务 | 数据湖 |
+| **Delta Lake** | ACID，时间旅行 | Spark 生态 | 数据湖 |
+| **Pachyderm** | 管道集成 | 复杂 | 企业 |
+
+## 延伸阅读
+
+- [[概念/MLOps/data-pipeline|数据管道]] — 数据流水线
+- [[概念/MLOps/dvc|DVC]] — 数据版本工具
+- [[概念/MLOps/experiment-tracking|实验追踪]] — 实验管理
+- [[概念/MLOps/model-registry|模型仓库]] — 模型版本
+
+> ℹ️ 数据版本控制是 MLOps 的基础，确保实验可复现和数据可追溯。
+
+## 数据版本控制常见场景
+
+| 场景 | 解决方案 | 工具 |
+|------|----------|------|
+| **实验复现** | 数据 + 代码 + 环境版本 | DVC + Git |
+| **数据回溯** | 时间旅行查询历史版本 | LakeFS/Delta |
+| **协作开发** | 分支 + 合并 | LakeFS |
+| **审计合规** | 变更日志 + 血缘 | OpenLineage |
+
+> 生产环境建议所有训练数据都纳入版本控制，确保模型可追溯。
+> 数据版本与实验版本关联，可快速定位问题数据。
+> 定期清理旧版本数据，控制存储成本。

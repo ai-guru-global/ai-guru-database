@@ -154,3 +154,51 @@ print(output['choices'][0]['message']['content'])
 3. **上下文长度控制**：根据显存/内存调整 --ctx-size，避免 OOM
 4. **并发控制**：设置 --parallel 参数，平衡吐吐量与延迟
 5. **模型来源可靠**：仅从 HuggingFace 官方仓库下载 GGUF 模型，避免恶意文件
+
+## llama.cpp 服务化部署示例
+
+```bash
+# 启动 OpenAI 兼容 API 服务
+llama-server \
+  -m models/qwen3-8b-q5_k_m.gguf \
+  --host 0.0.0.0 --port 8080 \
+  --ctx-size 8192 \
+  --parallel 4 \
+  --n-gpu-layers 99 \
+  --flash-attn
+
+# 客户端调用 (OpenAI SDK 兼容)
+from openai import OpenAI
+client = OpenAI(base_url="http://localhost:8080/v1", api_key="none")
+resp = client.chat.completions.create(
+    model="qwen3-8b",
+    messages=[{"role": "user", "content": "你好"}]
+)
+```
+
+## GGUF 量化格式对比
+
+| 格式 | 位宽 | 模型质量 | 推理速度 | 适用场景 |
+|------|------|---------|---------|----------|
+| **Q8_0** | 8-bit | 几乎无损 | 中 | 质量优先 |
+| **Q6_K** | 6-bit | 极小损失 | 中快 | 平衡选择 |
+| **Q5_K_M** | 5-bit | 微小损失 | 快 | 生产推荐 |
+| **Q4_K_M** | 4-bit | 轻微损失 | 最快 | 资源受限 |
+| **Q3_K_M** | 3-bit | 明显损失 | 极快 | 极端受限 |
+
+## llama.cpp vs 其他推理方案
+
+| 维度 | llama.cpp | vLLM | TensorRT-LLM |
+|------|-----------|------|-------------|
+| **硬件** | CPU/GPU/Apple | NVIDIA GPU | NVIDIA GPU |
+| **量化** | GGUF 多种 | GPTQ/AWQ/FP8 | FP8/INT4 |
+| **并发** | 中 | 高 (PagedAttn) | 极高 |
+| **部署难度** | 极低 | 中 | 高 |
+| **适用场景** | 本地/边缘 | 云端服务 | 极致性能 |
+
+## 延伸阅读
+
+- [[概念/LLM/llama-box|llama-box]] — 基于 llama.cpp 的容器化部署
+- [[概念/LLM/edge-llm|端侧 LLM]] — 边缘推理场景
+- [[概念/LLM/llm-quantization|LLM 量化]] — 量化技术详解
+- [[概念/LLM/llm-inference-engine|推理引擎]] — 推理引擎全景

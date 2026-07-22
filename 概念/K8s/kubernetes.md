@@ -141,3 +141,60 @@ Worker Node
 3. **资源配额必配**：每个 Namespace 设置 ResourceQuota + LimitRange，防止资源耗尽
 4. **监控全覆盖**：部署 Prometheus + Grafana + Alertmanager，监控控制面/节点/Pod 全链路
 5. **GitOps 管理**：使用 ArgoCD/Flux 管理集群配置，变更可追溯、可回滚
+
+## K8s 核心组件
+
+| 组件 | 类型 | 功能 |
+|------|------|------|
+| kube-apiserver | 控制面 | API 入口 |
+| etcd | 控制面 | 状态存储 |
+| kube-scheduler | 控制面 | Pod 调度 |
+| kube-controller-manager | 控制面 | 控制器 |
+| kubelet | 节点 | Pod 管理 |
+| kube-proxy | 节点 | 网络代理 |
+| containerd | 节点 | 容器运行时 |
+
+## K8s 发行版对比
+
+| 发行版 | 厂商 | 特点 | 适用场景 |
+|------|------|------|------|
+| 上游 K8s | CNCF | 标准 | 学习/定制 |
+| EKS | AWS | 托管 | 云上生产 |
+| GKE | GCP | 托管 | 云上生产 |
+| AKS | Azure | 托管 | 云上生产 |
+| ACK | 阿里云 | 托管 | 国内云上 |
+| K3s | Rancher | 轻量 | 边缘/IoT |
+| OpenShift | Red Hat | 企业 | 企业私有 |
+
+## AI 场景关键特性
+
+| 特性 | 说明 | AI 应用 |
+|------|------|------|
+| GPU 调度 | Device Plugin/DRA | 训练/推理 |
+| Gang Scheduling | Volcano/Kueue | 分布式训练 |
+| 弹性伸缩 | HPA/VPA/KEDA | 推理服务 |
+| 服务网格 | Istio/Linkerd | 流量管理 |
+| GitOps | ArgoCD/Flux | 模型部署 |
+
+## 版本生命周期
+
+| 版本 | 状态 | 支持截止 |
+|------|------|------|
+| 1.32 | 最新 | 2026-06 |
+| 1.31 | 维护 | 2025-12 |
+| 1.30 | 维护 | 2025-06 |
+| 1.29 | EOL | 已停止 |
+
+> 💡 Kubernetes 是 2026 年 AI 基础设施的事实标准，GPU 调度 + Gang Scheduling + 弹性伸缩是 AI 场景核心能力。
+
+## 常用 kubectl 命令
+
+| 命令 | 用途 |
+|------|------|
+| `kubectl get pods -A` | 查看所有 Pod |
+| `kubectl get nodes` | 查看节点 |
+| `kubectl describe pod <name>` | Pod 详情 |
+| `kubectl logs <pod>` | 查看日志 |
+| `kubectl exec -it <pod> -- bash` | 进入容器 |
+| `kubectl top pods` | 资源使用 |
+| `kubectl get events --sort-by=.lastTimestamp` | 事件排序 |

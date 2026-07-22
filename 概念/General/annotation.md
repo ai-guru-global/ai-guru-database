@@ -124,3 +124,104 @@ kubectl get pods -n aio-system -o json | \
 3. **工具集成**：工具配置用 Annotation
 4. **Ingress 配置**：Ingress 配置用 Annotation
 5. **命名规范**：Annotation 命名规范
+
+## Annotation vs Label
+
+| 维度 | Label | Annotation |
+|------|-------|------------|
+| **用途** | 选择/过滤资源 | 附加元数据 |
+| **查询** | 支持 kubectl -l | 不支持过滤 |
+| **值限制** | 63 字符 | 256KB |
+| **典型用法** | app=web, env=prod | 版本、描述、工具配置 |
+
+## AI 场景 Annotation 示例
+
+```yaml
+# AI 推理服务 Pod Annotation
+metadata:
+  annotations:
+    # 模型信息
+    ai.model/name: "qwen2.5-72b"
+    ai.model/version: "v2.1"
+    # 推理配置
+    ai.inference/gpu-count: "4"
+    ai.inference/max-batch-size: "256"
+    # 监控
+    prometheus.io/scrape: "true"
+    prometheus.io/port: "8080"
+    # Ingress 配置
+    nginx.ingress.kubernetes.io/proxy-read-timeout: "300"
+```
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| Annotation 不生效 | 格式错误 | 检查 key/value 格式 |
+| 与 Label 混淆 | 用途不清 | Label 选择，Annotation 元数据 |
+| Ingress 配置失败 | Annotation 错误 | 检查 Ingress Controller 文档 |
+| 元数据丢失 | 更新时覆盖 | 使用 kubectl annotate |
+
+## 版本兼容性
+
+| 组件 | 版本 | 说明 |
+|------|------|------|
+| Kubernetes | 1.28+ | 核心 API |
+| Nginx Ingress | 1.10+ | Ingress Annotation |
+| cert-manager | 1.14+ | 证书 Annotation |
+
+## 生产检查清单
+
+1. 建立 Annotation 命名规范
+2. Label 用于选择，Annotation 用于元数据
+3. Ingress 配置通过 Annotation 管理
+4. 避免在 Annotation 中存储敏感信息
+5. 定期清理无用 Annotation
+6. 文档化团队 Annotation 约定
+
+## 总结
+
+Annotation 是 Kubernetes 资源的元数据扩展机制，用于存储非标识性信息。在 AI 场景中，Annotation 用于记录模型版本、推理配置、监控设置等关键元数据。
+
+> 💡 Annotation 的核心价值：Label 告诉 K8s “这是什么”，Annotation 告诉工具和人类“这个资源的详细信息是什么”。
+
+## AI 服务常用 Annotation
+
+```yaml
+# AI 推理服务 Pod Annotation 示例
+metadata:
+  annotations:
+    # 模型信息
+    ai-platform/model-name: "llama-3-70b-instruct"
+    ai-platform/model-version: "v2.1.0"
+    ai-platform/model-size: "70B"
+    # 部署信息
+    ai-platform/deployed-by: "argocd"
+    ai-platform/deploy-time: "2026-01-15T10:30:00Z"
+    # 运维信息
+    ai-platform/oncall-team: "ml-platform"
+    ai-platform/runbook: "https://wiki.example.com/runbook/inference"
+    # 监控配置
+    prometheus.io/scrape: "true"
+    prometheus.io/port: "9090"
+```
+
+## Label vs Annotation 对比
+
+| 维度 | Label | Annotation |
+|------|-------|------------|
+| 用途 | 选择器/分组 | 元数据/描述 |
+| 可查询 | 是（kubectl -l） | 否 |
+| 值限制 | 63 字符 | 256KB |
+| 典型用途 | 环境/版本/组件 | 构建信息/文档链接 |
+| AI 场景 | GPU 类型/工作负载 | 模型版本/部署信息 |
+
+## 生产检查清单
+
+1. ✅ 模型信息通过 Annotation 记录
+2. ✅ 部署时间和责任人可追溯
+3. ✅ 监控配置通过 Annotation 声明
+4. ✅ Runbook 链接方便故障排查
+5. ✅ 与 Label 配合使用（Label 选择，Annotation 描述）
+6. ✅ 避免在 Annotation 中存储敏感信息
+

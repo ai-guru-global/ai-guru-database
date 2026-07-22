@@ -99,3 +99,123 @@ data:
 3. **与 Loki 配合**：Fluent Bit + Loki 日志栈
 4. **资源限制**：配置 Fluent Bit 资源限制
 5. **过滤规则**：配置日志过滤规则
+
+## AI/LLM 场景日志采集
+
+| 场景 | 采集内容 | 输出目标 |
+|------|----------|----------|
+| **vLLM 推理** | 请求日志、延迟、错误 | Loki + Prometheus |
+| **训练任务** | loss、梯度、异常 | Kafka → 分析平台 |
+| **Agent 执行** | 工具调用、步骤日志 | OpenTelemetry |
+| **数据管道** | ETL 状态、异常 | Elasticsearch |
+
+## 高级过滤配置
+
+```yaml
+# 过滤敏感信息 + 添加元数据
+[FILTER]
+    Name              modify
+    Match             kube.*
+    Remove            password
+    Remove            api_key
+    Add               cluster prod-cluster-01
+    Add               env production
+
+[FILTER]
+    Name              grep
+    Match             kube.*
+    Exclude           log ^DEBUG
+
+[FILTER]
+    Name              throttle
+    Match             kube.*
+    Rate              1000
+    Window            60
+```
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| 日志丢失 | 缓冲溢出/节点重启 | 增大 Mem_Buf_Limit + 启用 WAL |
+| CPU 占用高 | 日志量过大/正则复杂 | 简化解析、增加资源 |
+| 输出失败 | 后端不可达 | 配置 Retry_Limit + 备用输出 |
+| Pod 重启后日志重复 | DB 文件丢失 | 持久化 DB 到 PVC |
+| 多行日志截断 | 未配置 multiline | 启用 multiline.parser |
+
+## 版本兼容性
+
+| 组件 | 推荐版本 | 说明 |
+|------|----------|------|
+| Fluent Bit | 3.x | 最新稳定版 |
+| Kubernetes | 1.28+ | 部署平台 |
+| Loki | 3.x | 日志后端 |
+| OpenTelemetry | 1.25+ | 遥测输出 |
+| Helm Chart | 0.47+ | 部署工具 |
+
+## 生产检查清单
+
+1. 配置资源限制（CPU 200m / Memory 256Mi）
+2. 启用 DB 持久化防止重启后日志重复
+3. 配置 Retry_Limit 和备用输出防止数据丢失
+4. 过滤敏感字段（password、api_key）
+5. 设置日志采样率控制存储成本
+6. 监控 Fluent Bit 自身指标（input/output bytes）
+
+## 总结
+
+Fluent Bit 是 Kubernetes 日志采集的事实标准，以极低的资源占用提供强大的日志收集、解析、过滤和转发能力。在 AI/LLM 场景中，它是推理服务、训练任务、Agent 执行日志的统一采集层。
+
+> 💡 Fluent Bit 的核心价值：以 DaemonSet 形式跑在每个节点，内存仅占几 MB，却能处理 GB 级日志流量——是云原生日志管道的“最后一公里”。
+
+## Fluent Bit 配置示例
+
+```yaml
+# K8s DaemonSet 配置 - AI 推理服务日志采集
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: fluent-bit-config
+data:
+  fluent-bit.conf: |
+    [INPUT]
+        Name              tail
+        Path              /var/log/containers/inference-*.log
+        Parser            json
+        Tag               inference.*
+        Refresh_Interval  5
+    [FILTER]
+        Name              grep
+        Match             inference.*
+        Exclude           level debug
+    [OUTPUT]
+        Name              loki
+        Match             *
+        Host              loki-gateway.monitoring
+        Port              3100
+        Labels            job=fluentbit, app=$kubernetes['labels']['app']
+```
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| 日志丢失 | 缓冲溢出 | 增大 Mem_Buf_Limit |
+| CPU 占用高 | 解析规则复杂 | 简化 Parser + 采样 |
+| 背压严重 | 输出端慢 | 增加重试 + 备用输出 |
+| Pod 重启丢日志 | 未持久化缓冲 | 配置 storage.type filesystem |
+
+## 生产检查清单
+
+1. ✅ 以 DaemonSet 部署，每节点一个实例
+2. ✅ 配置资源限制（memory: 64Mi）
+3. ✅ 启用文件系统缓冲防丢失
+4. ✅ 与 Loki/ES 输出端集成
+5. ✅ 监控 Fluent Bit 自身指标
+6. ✅ 定期更新解析规则适应新服务
+
+## 总结
+
+Fluent Bit 是云原生日志采集的事实标准，2026 年已成为 K8s 环境 AI 服务日志管道的核心组件。其轻量、高性能和插件化架构使其成为 Loki/ES 等日志后端的最佳采集器。
+
+> 💡 Fluent Bit 的核心哲学：“轻量、可靠、无处不在”——每个节点一个 DaemonSet，日志采集零侵入。

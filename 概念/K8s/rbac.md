@@ -164,3 +164,52 @@ AI Stack 安全分层
 3. **定期权限审计**：使用 `kubectl auth can-i --list` 或 Kyverno 策略定期扫描过度授权
 4. **SSO 集成**：企业环境集成 AzureAD/SAML2/OIDC，避免本地账号管理
 5. **API-Key 安全**：密钥创建后不可查看，仅能重新生成，定期轮换
+
+## RBAC 核心对象
+
+| 对象 | 作用域 | 说明 |
+|------|------|------|
+| Role | Namespace | 命名空间内权限 |
+| ClusterRole | Cluster | 集群级权限 |
+| RoleBinding | Namespace | 绑定 Role 到用户 |
+| ClusterRoleBinding | Cluster | 绑定 ClusterRole |
+| ServiceAccount | Namespace | Pod 身份标识 |
+
+## 常见 RBAC 配置示例
+
+```yaml
+# 只读 Pod 权限
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  namespace: default
+  name: pod-reader
+rules:
+- apiGroups: [""]
+  resources: ["pods", "pods/log"]
+  verbs: ["get", "list", "watch"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: read-pods
+  namespace: default
+subjects:
+- kind: User
+  name: jane
+roleRef:
+  kind: Role
+  name: pod-reader
+  apiGroup: rbac.authorization.k8s.io
+```
+
+## 权限审计命令
+
+| 命令 | 用途 |
+|------|------|
+| `kubectl auth can-i --list` | 查看当前用户权限 |
+| `kubectl auth can-i create pods` | 检查特定权限 |
+| `kubectl get clusterrolebindings` | 查看集群绑定 |
+| `kubectl get rolebindings -A` | 查看所有命名空间绑定 |
+
+> 💡 RBAC 是 K8s 安全的基石，2026 年生产环境必须启用 RBAC + 最小权限 + 定期审计。

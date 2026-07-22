@@ -82,9 +82,120 @@ metadata:
 | **Restricted** | 生产推荐级别 | GA |
 | **与 Kyverno 互补** | 企业级策略扩展 | GA |
 
+## 三级对比
+
+| 维度 | Privileged | Baseline | Restricted |
+|------|-----------|----------|------------|
+| 定位 | 系统组件 | 普通应用 | 安全敏感应用 |
+| hostPath | 允许 | 禁止 | 禁止 |
+| hostNetwork | 允许 | 禁止 | 禁止 |
+| privileged | 允许 | 禁止 | 禁止 |
+| runAsNonRoot | 不要求 | 不要求 | 必须 |
+| capabilities | 不限制 | 限制危险 | 仅 NET_BIND_SERVICE |
+| volume 类型 | 不限制 | 禁止 hostPath | 仅安全类型 |
+
+## Pod 安全配置示例
+
+```yaml
+# 符合 Restricted 标准的 Pod
+apiVersion: v1
+kind: Pod
+metadata:
+  name: secure-inference
+spec:
+  securityContext:
+    runAsNonRoot: true
+    runAsUser: 1000
+    fsGroup: 2000
+    seccompProfile:
+      type: RuntimeDefault
+  containers:
+    - name: inference
+      image: inference-app:v1
+      securityContext:
+        allowPrivilegeEscalation: false
+        readOnlyRootFilesystem: true
+        capabilities:
+          drop: ["ALL"]
+      volumeMounts:
+        - name: tmp
+          mountPath: /tmp
+  volumes:
+    - name: tmp
+      emptyDir: {}
+```
+
+## 迁移策略
+
+| 阶段 | 动作 | 说明 |
+|------|------|------|
+| 1. 审计 | `audit: restricted` | 记录违规但不拒绝 |
+| 2. 告警 | `warn: restricted` | 用户可见告警 |
+| 3. 修复 | 修改 Pod 配置 | 根据审计日志修复 |
+| 4. 强制 | `enforce: restricted` | 拒绝违规 Pod |
+
+## AI 场景特殊考虑
+
+| 场景 | 级别 | 原因 |
+|------|------|------|
+| GPU Operator | Privileged | 需要主机设备访问 |
+| 训练任务 | Baseline | 需要部分权限 |
+| 推理服务 | Restricted | 生产安全要求 |
+| 监控 Agent | Privileged | 需要主机指标采集 |
+| Jupyter Hub | Baseline | 用户代码执行 |
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| Pod 被拒绝 | 不符合 enforce 级别 | 修改 securityContext |
+| GPU Pod 失败 | Restricted 禁止特权 | GPU NS 用 Baseline |
+| 审计日志多 | 未修复违规 | 逐步修复后启用 enforce |
+| 版本不兼容 | K8s < 1.23 | 升级或使用 PSP |
+
 ## 生产最佳实践
 
 1. **生产用 Restricted**：生产 Namespace 启用 restricted 级别
 2. **渐进式迁移**：先 audit/warn，再 enforce
 3. **系统组件豁免**：kube-system 用 privileged，业务用 restricted
 4. **与 Kyverno 结合**：PSA 管基础，Kyverno 管企业策略
+5. **GPU 场景特殊处理**：GPU 相关组件使用 Baseline 级别
+
+## 审计与监控
+
+```bash
+# 查看 Namespace PSA 标签
+kubectl get ns -o json | jq '.items[] | {name: .metadata.name, psa: .metadata.labels | with_entries(select(.key | startswith("pod-security")))}'
+
+# 查看审计日志中的 PSA 违规
+kubectl logs -n kube-system -l component=kube-apiserver | grep "pod-security"
+
+# 检查 Pod 是否符合 Restricted
+kubectl get pod <name> -o json | jq '.spec.securityContext'
+```
+
+## 与其他安全工具对比
+
+| 工具 | 作用层级 | 适用场景 |
+|------|----------|----------|
+| **PSA** | Pod 安全配置 | 基础安全防线 |
+| **Kyverno** | 任意资源策略 | 企业级策略 |
+| **OPA/Gatekeeper** | 任意资源策略 | 通用策略引擎 |
+| **NetworkPolicy** | 网络流量 | 网络隔离 |
+| **Trivy** | 镜像/配置扫描 | 漏洞检测 |
+
+## 相关概念
+
+- [[概念/kyverno|Kyverno]] — K8s 策略引擎
+- [[概念/opa|OPA]] — 通用策略引擎
+- [[概念/network-policy|NetworkPolicy]] — 网络策略
+
+## 总结
+
+Pod Security Standards 是 K8s 安全的第一道防线，分为 Privileged、Baseline、Restricted 三级。生产环境应始终启用 Restricted 级别，GPU 相关组件使用 Baseline。
+
+---
+
+> 💡 Pod Security Standards 是 K8s 安全的第一道防线，生产环境应始终启用 Restricted 级别。
+
+

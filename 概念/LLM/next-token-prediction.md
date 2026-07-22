@@ -155,3 +155,53 @@ loss = F.cross_entropy(
 3. **KV Cache 必用**：避免重复计算，将时间复杂度从 O(T²) 降至 O(T)
 4. **停止条件明确**：设置 EOS Token + max_new_tokens + 停止词，避免无限生成
 5. **温度控制**：根据任务类型调整 temperature，平衡确定性与多样性
+
+## 自回归生成过程图解
+
+```
+输入: "今天天气"
+
+Step 1: P(next | "今天天气") → "真" (p=0.35)
+Step 2: P(next | "今天天气真") → "好" (p=0.62)
+Step 3: P(next | "今天天气真好") → "！" (p=0.28)
+Step 4: P(next | "今天天气真好！") → <EOS> (p=0.71)
+
+输出: "今天天气真好！"
+
+关键特性:
+- 每步只生成 1 个 Token
+- 每步都看到之前所有 Token (KV Cache)
+- 生成质量取决于概率分布 + 采样策略
+```
+
+## 下一 Token 预测 vs 其他生成范式
+
+| 范式 | 生成方式 | 代表 | 优势 | 劣势 |
+|------|---------|------|------|------|
+| **自回归 (AR)** | 逐 Token 从左到右 | GPT, Llama | 质量最高 | 速度慢 |
+| **掩码预测 (MLM)** | 并行填充掩码 | BERT | 双向理解 | 不能生成 |
+| **非自回归 (NAR)** | 一次性并行生成 | 研究 | 极快 | 质量低 |
+| **扩散生成** | 迭代去噪 | Diffusion-LM | 可控性强 | 慢、不成熟 |
+| **Flow Matching** | 连续流变换 | 研究 | 理论优雅 | 早期 |
+
+## 训练目标与损失函数
+
+```python
+# 下一 Token 预测的训练目标 (Cross-Entropy Loss)
+import torch.nn.functional as F
+
+# logits: [batch, seq_len, vocab_size]
+# labels: [batch, seq_len] (shifted by 1)
+loss = F.cross_entropy(
+    logits[:, :-1, :].reshape(-1, vocab_size),
+    labels[:, 1:].reshape(-1)
+)
+# 困惑度 Perplexity = exp(loss)
+```
+
+## 延伸阅读
+
+- [[概念/LLM/sampling-decoding|采样与解码]] — 从概率分布中采样
+- [[概念/LLM/speculative-decoding|投机解码]] — 加速自回归生成
+- [[概念/LLM/kv-cache|KV Cache]] — 避免重复计算
+- [[概念/LLM/token-plain|Token 详解]] — Token 化基础

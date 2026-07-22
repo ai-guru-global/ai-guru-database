@@ -109,9 +109,92 @@ rocm-smi --json
 
 > AMD GPU 在 AI Stack 中作为 NVIDIA 的补充，主要用于成本敏感型推理集群。rocm-smi 是运维监控的必备工具。
 
+---
+
+## 6. 高级监控与自动化
+
+### Prometheus + Grafana 集成
+
+```bash
+# 安装 ROCm SMI Exporter（Prometheus 格式输出）
+rocm-smi --json > /tmp/gpu_metrics.json
+
+# 或使用 amd_smi_exporter 持续暴露指标
+# 默认端口 :9400/metrics
+amd_smi_exporter --port 9400 &
+```
+
+```yaml
+# prometheus.yml 配置
+scrape_configs:
+  - job_name: 'amd-gpu'
+    static_configs:
+      - targets: ['gpu-node-01:9400', 'gpu-node-02:9400']
+    scrape_interval: 15s
+```
+
+### 关键告警指标
+
+| 指标 | 阈值 | 含义 |
+|------|:----:|------|
+| GPU 温度 | >85°C | 过热降频风险 |
+| VRAM 使用率 | >95% | OOM 风险 |
+| GPU 利用率 | <10% 持续5min | 任务可能挂起 |
+| 功耗 | >TDP 90% | 接近功率上限 |
+| ECC 错误 | >0 | 显存硬件问题 |
+
+### 常见运维命令
+
+```bash
+# 查看 ECC 错误计数
+rocm-smi --showecc
+
+# 重置 GPU（需停止所有进程）
+rocm-smi --gpureset -d 0
+
+# 设置功耗上限（瓦特）
+rocm-smi --setpoweroverdrive 300 -d 0
+
+# 查看固件版本
+rocm-smi --showfwinfo
+
+# 查看 PCIe 带宽
+rocm-smi --showpciebwwidth
+
+# 查看 XGMI 互联拓扑（多卡）
+rocm-smi --showtopo
+```
+
+---
+
+## 7. ROCm 生态工具链
+
+| 工具 | 用途 | 对标 NVIDIA |
+|------|------|------------|
+| **rocm-smi** | GPU 监控管理 | nvidia-smi |
+| **rocprof** | 性能分析 | Nsight Compute |
+| **rocgdb** | GPU 调试 | cuda-gdb |
+| **rocBLAS** | 线性代数库 | cuBLAS |
+| **MIOpen** | 深度学习原语 | cuDNN |
+| **RCCL** | 集合通信 | NCCL |
+| **hipBLAS** | 统一 BLAS 接口 | - |
+
+---
+
+## 8. 生产最佳实践
+
+1. **持续监控**：部署 amd_smi_exporter + Prometheus + Grafana 全链路监控
+2. **温度管理**：数据中心保持进风温度 <25°C，避免 GPU 降频
+3. **ECC 巡检**：每日检查 ECC 错误，发现即换卡
+4. **固件更新**：定期更新 GPU 固件，修复已知问题
+5. **XGMI 拓扑**：多卡训练前确认 XGMI 互联拓扑最优
+6. **功耗调优**：推理场景适当降低功耗上限，节省电费
+7. **驱动兼容**：ROCm 版本与内核版本严格匹配，升级前充分测试
+
 ## 延伸阅读
 
 - [[概念/LLM/nvidia-smi|nvidia-smi]]
 - [[概念/LLM/ppu-smi|ppu-smi]]
 - [[概念/Inference/model-serving|模型服务]]
 - [[架构基建/AI_Stack_Deep_Dive|AI Stack 深度解析]]
+- [[运维/GPU_Monitoring|GPU 监控体系]]

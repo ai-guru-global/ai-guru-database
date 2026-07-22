@@ -89,6 +89,17 @@ Transformer 的 Attention 有两个硬伤：
 | **实用场景** | 超长序列流式处理、端侧低显存推理 |
 | **与 Mamba 对比** | Mamba 生态更成熟，实际效果更接近 Transformer |
 
+## 性能基准参考
+
+| 模型 | 参数 | 序列长度 | 推理速度 (vs Transformer) | 显存 |
+|------|:----:|:--------:|:-------------------:|------|
+| RetNet-7B (paper) | 7B | 2K | ~1.0x | 无 KV Cache |
+| RetNet-7B (paper) | 7B | 64K | ~3-5x | 恒定 |
+| Mamba-7B | 7B | 64K | ~4-6x | 恒定 |
+| Transformer-7B | 7B | 64K | 1.0x (baseline) | O(L) 增长 |
+
+> 注：以上数据为论文报告值，实际效果取决于硬件和实现。
+
 ## 适用场景与局限
 
 ✅ **适合**：
@@ -119,10 +130,75 @@ Transformer 的 Attention 有两个硬伤：
 4. **关注后续发展**: 等待更大规模验证和生态成熟后再考虑生产采用
 5. **流式场景**: 实时翻译/语音等流式处理是 RetNet 的潜在优势场景
 
+## Retention 机制代码示例
+
+```python
+import torch
+import torch.nn as nn
+
+class Retention(nn.Module):
+    """Multi-Scale Retention 简化实现"""
+    def __init__(self, d_model: int, n_heads: int):
+        super().__init__()
+        self.d_model = d_model
+        self.n_heads = n_heads
+        self.head_dim = d_model // n_heads
+        # 每个头独立的衰减率
+        self.decay = nn.Parameter(
+            1 - 2 ** (-5 - torch.arange(n_heads).float())
+        )  # γ ∈ (0.97, 0.999)
+        self.W_q = nn.Linear(d_model, d_model, bias=False)
+        self.W_k = nn.Linear(d_model, d_model, bias=False)
+        self.W_v = nn.Linear(d_model, d_model, bias=False)
+        self.W_o = nn.Linear(d_model, d_model, bias=False)
+
+    def forward_recurrent(self, x: torch.Tensor):
+        """推理模式：O(1)/步，无 KV Cache"""
+        B, L, D = x.shape
+        q, k, v = self.W_q(x), self.W_k(x), self.W_v(x)
+        q = q.view(B, L, self.n_heads, self.head_dim)
+        k = k.view(B, L, self.n_heads, self.head_dim)
+        v = v.view(B, L, self.n_heads, self.head_dim)
+        state = torch.zeros(B, self.n_heads, self.head_dim, self.head_dim,
+                           device=x.device)
+        outputs = []
+        for t in range(L):
+            decay = self.decay.view(1, -1, 1, 1)
+            state = decay * state + torch.einsum('bhd,bhe->bhde',
+                      k[:, t], v[:, t])
+            out_t = torch.einsum('bhd,bhde->bhe', q[:, t], state)
+            outputs.append(out_t)
+        return self.W_o(torch.stack(outputs, dim=1).reshape(B, L, D))
+```
+
+## 后续影响与衍生架构
+
+| 架构 | 年份 | 与 RetNet 关系 | 状态 |
+|------|:----:|------------|------|
+| **GLA** (Gated Linear Attention) | 2024 | 改进门控机制 | 活跃研究 |
+| **YOCO** (You Only Cache Once) | 2024 | 简化 KV 缓存 | 研究阶段 |
+| **HGRN2** | 2024 | 分层门控递归 | 研究阶段 |
+| **Mamba-2 SSD** | 2024 | SSM+注意力统一 | 生产可用 |
+| **DeltaNet** | 2025 | Delta Rule 更新 | 研究阶段 |
+
 ## 延伸阅读
 
 - [[概念/LLM/mamba|Mamba]]
 - [[概念/LLM/attention-variants|注意力变体]]
 - [[概念/LLM/transformer-architecture-plain|Transformer 架构]]
+- [[概念/LLM/state-space-models|状态空间模型]]
+- [[概念/LLM/transformer-architecture|Transformer 架构详解]]
 - [[概念/Inference/kv-cache|KV Cache]]
 - [[深度学习/State_Space_Models_2026|状态空间模型 2026]]
+- [[大模型/LLM_Architecture_Evolution|LLM 架构演进]]
+
+> **关键论文**: "Retentive Network: A Successor to Transformer for Large Language Models" (Sun et al., 2023, Microsoft Research)
+
+## 快速对比卡片
+
+| 如果你需要... | 选择 |
+|------------|------|
+| 生产环境长序列 | Mamba-2 / Jamba |
+| 研究线性注意力 | RetNet / GLA |
+| 极致推理效率 | Transformer + KV Cache 压缩 |
+| 流式处理 | RetNet / Mamba |

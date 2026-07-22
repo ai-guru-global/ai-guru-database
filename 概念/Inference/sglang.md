@@ -186,3 +186,43 @@ curl http://localhost:30000/v1/chat/completions \
 - [[概念/Inference/prefix-caching]] — 前缀缓存
 - [[部署推理/Inference_Engines/SGLang_Deep_Dive]] — SGLang 深度解析
 - [[部署推理/Inference_Engines/LLM_Inference_Engine_Selection_Guide]] — LLM 推理引擎选型指南
+
+## SGLang vs vLLM 对比
+
+| 维度 | SGLang | vLLM |
+|------|--------|------|
+| **核心创新** | RadixAttention | PagedAttention |
+| **前缀缓存** | Token 级 Radix Tree | Block 级 Hash |
+| **结构化生成** | 原生支持 (最强) | 支持 |
+| **多模态** | 支持 | 支持 |
+| **硬件** | NVIDIA | NVIDIA/AMD/TPU |
+| **社区** | LMSYS | UC Berkeley |
+| **适用场景** | 结构化输出/Agent | 通用服务 |
+
+## SGLang 部署示例
+
+```bash
+# 启动 SGLang 服务
+python -m sglang.launch_server \
+  --model-path Qwen/Qwen3-8B \
+  --port 8000 \
+  --tp 1 \
+  --mem-fraction-static 0.85
+
+# 结构化生成 (JSON Schema)
+import sglang as sgl
+
+@sgl.function
+def structured_gen(s, question):
+    s += sgl.system("You are a helpful assistant.")
+    s += sgl.user(question)
+    s += sgl.assistant(sgl.gen("answer", max_tokens=256))
+```
+
+## 生产最佳实践
+
+1. **结构化输出选 SGLang**：JSON/正则约束生成性能最优
+2. **前缀缓存利用**：保持 System Prompt 不变，最大化 Radix Tree 命中
+3. **与 vLLM 对比测试**：生产前用目标场景对比两个引擎
+4. **FlashInfer 必装**：SGLang 依赖 FlashInfer 算子库
+5. **监控缓存命中率**：prefix cache hit rate 低于 30% 需调整

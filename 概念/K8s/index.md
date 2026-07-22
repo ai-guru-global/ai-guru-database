@@ -147,3 +147,53 @@ tier: core
 | **LeaderWorkerSet (LWS)** | 分布式训练/推理的多 Pod 协调控制器 | Beta |
 | **Kueue v0.9** | 批作业排队 + 配额管理，支持多租户 GPU 集群 | GA |
 | **Sidecar Containers (restartPolicy)** | 原生 Sidecar 支持，简化推理服务 Sidecar 模式 | GA |
+
+## 学习路径建议
+
+| 阶段 | 内容 | 前置知识 |
+|------|------|----------|
+| 入门 | Pod、Deployment、Service、Namespace | Linux 基础 |
+| 进阶 | RBAC、NetworkPolicy、HPA、PDB | 入门完成 |
+| 高级 | Operator、CRD、调度器、etcd | 进阶完成 |
+| AI 专项 | GPU 调度、Volcano、Kueue、DRA | 高级完成 |
+
+## 常用工具链
+
+| 工具 | 用途 | 安装方式 |
+|------|------|----------|
+| kubectl | 集群管理 CLI | 官方二进制 |
+| helm | 应用包管理 | `brew install helm` |
+| kustomize | 配置管理 | kubectl 内置 |
+| kubectx/kubens | 上下文切换 | `brew install kubectx` |
+| stern | 多 Pod 日志 | `brew install stern` |
+| k9s | 终端 UI | `brew install k9s` |
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| Pod Pending | 资源不足/调度约束 | `kubectl describe pod` 查看事件 |
+| CrashLoopBackOff | 应用启动失败 | 查看日志 `kubectl logs` |
+| ImagePullBackOff | 镜像拉取失败 | 检查镜像名/网络/凭证 |
+| OOMKilled | 内存超限 | 调整 resources.limits.memory |
+| GPU 不可用 | 设备插件未安装 | 安装 nvidia-device-plugin |
+
+## AI 工作负载调度要点
+
+| 场景 | 调度策略 | 关键配置 |
+|------|----------|----------|
+| 单机推理 | GPU 独占 | `nvidia.com/gpu: 1` |
+| 分布式训练 | Gang Scheduling | Volcano PodGroup |
+| 批量推理 | 队列排队 | Kueue ClusterQueue |
+| GPU 共享 | 时间片/MIG | gpu-sharing 配置 |
+| 多集群 | 跨域分发 | Karmada PropagationPolicy |
+
+## 生产最佳实践
+
+1. **资源配额**：每个 Namespace 设置 ResourceQuota 和 LimitRange
+2. **网络策略**：默认拒绝所有入站流量，按需开放
+3. **镜像安全**：使用私有仓库 + 镜像签名验证
+4. **备份恢复**：定期备份 etcd，测试恢复流程
+5. **升级策略**：控制面先升级，工作节点滚动升级
+6. **监控告警**：部署 Prometheus + Grafana 监控集群健康
+7. **日志收集**：使用 Fluent Bit/Fluentd 集中收集日志

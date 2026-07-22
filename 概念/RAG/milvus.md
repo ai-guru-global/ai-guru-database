@@ -133,3 +133,82 @@ Milvus Cluster
 3. **副本配置**：生产环境 replica_number ≥ 2，确保高可用
 4. **内存规划**：HNSW 索引内存 ≈ 向量数 × 维度 × 4B × 1.5
 5. **监控指标**：关注 QPS、p99 延迟、内存使用率、Compaction 队列
+
+## 2026 Milvus 生态现状
+
+| 特性 | 状态 | 说明 |
+|------|------|------|
+| 分布式架构 | ✅ 成熟 | 水平扩展 |
+| GPU 加速 | ✅ 成熟 | 索引构建 + 检索 |
+| 混合检索 | ✅ 成熟 | 向量 + 标量过滤 |
+| 多向量 | ✅ 成熟 | ColBERT 支持 |
+| 动态 Schema | ✅ 成熟 | 灵活字段 |
+| 云托管 | ✅ 成熟 | Zilliz Cloud |
+| Lite 版本 | ✅ 成熟 | 嵌入式场景 |
+
+## 检查清单
+
+- [ ] Milvus 版本已固定
+- [ ] 副本数 ≥ 2
+- [ ] 索引类型已优化
+- [ ] 内存规划已完成
+- [ ] 监控已接入
+- [ ] 备份策略已配置
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| 检索慢 | 索引未优化 | 调整 HNSW/IVF 参数 |
+| 内存不足 | 数据量大 | 启用 PQ 量化或 DiskANN |
+| 写入慢 | Compaction 队列 | 调整 Compaction 策略 |
+| 节点故障 | 副本不足 | 增加 replica number |
+
+## 延伸阅读
+
+- [[概念/RAG/qdrant|Qdrant]] — 向量数据库对比
+- [[概念/RAG/weaviate|Weaviate]] — 向量数据库对比
+- [[概念/RAG/chroma|Chroma]] — 轻量向量库
+- [[概念/RAG/vector-database|Vector Database]] — 向量数据库总览
+- [[概念/RAG/hnsw|HNSW]] — 索引算法
+
+> ℹ️ Milvus 是最成熟的开源分布式向量数据库，2026年以 GPU 加速、水平扩展和云托管著称，适合大规模生产 RAG 部署。
+
+## 2026 Milvus 生态现状
+
+| 特性 | 状态 | 说明 |
+|------|------|------|
+| GPU 索引 (RAFT) | ✅ | NVIDIA 合作 |
+| 分布式架构 | ✅ | 水平扩展、多副本 |
+| 多租户 | ✅ | Partition 隔离 |
+| 混合检索 | ✅ | 稀疏 + 稠密 |
+| 云托管 (Zilliz) | ✅ | Serverless/专用 |
+| 多语言 SDK | ✅ | Python/Go/Java/Node |
+
+## 检查清单
+
+- [ ] Collection Schema 已合理设计
+- [ ] 索引类型已选择（HNSW/IVF/DiskANN）
+- [ ] 副本数满足可用性要求
+- [ ] 分区策略已配置（多租户）
+- [ ] 备份和恢复已验证
+- [ ] 监控已接入（Attu/Prometheus）
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| 查询慢 | 索引未构建 | 等待索引完成或手动触发 |
+| 内存 OOM | 数据超容量 | 启用量化或扩容 |
+| 写入失败 | Segment 已满 | 调整 segment 大小 |
+| 集群不稳定 | etcd 故障 | 检查 etcd 健康状态 |
+
+## 延伸阅读
+
+- [[概念/RAG/qdrant|Qdrant]] — Rust 向量数据库
+- [[概念/RAG/weaviate|Weaviate]] — 模块化向量库
+- [[概念/RAG/chroma|Chroma]] — 轻量向量库
+- [[概念/RAG/vector-database|Vector Database]] — 向量数据库总览
+- [[概念/RAG/hnsw|HNSW]] — 索引算法
+
+> ℹ️ Milvus 最佳实践：大规模生产首选，GPU 索引可提升 5-10x 检索性能，生产环境建议 3 节点 + 2 副本 + Attu 监控。

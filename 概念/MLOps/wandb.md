@@ -189,3 +189,21 @@ wandb.agent(sweep_id, function=train_fn, count=50)
 3. **Artifacts 版本**：模型/数据用 Artifacts 版本控制
 4. **Weave for LLM**：LLM 项目用 Weave 追踪
 5. **团队协作**：实验结果团队共享
+
+## 2026 W&B 生态
+
+| 特性 | 说明 | 状态 |
+|------|------|------|
+| **W&B Experiments** | 实验跟踪 | GA |
+| **W&B Models** | 模型注册 | GA |
+| **W&B Artifacts** | 工件管理 | GA |
+| **W&B Weave** | LLM 追踪 | GA |
+| **W&B Reports** | 实验报告 | GA |
+
+## 延伸阅读
+
+- [[概念/MLOps/experiment-tracking|Experiment Tracking]] — 实验跟踪
+- [[概念/MLOps/mlflow|MLflow]] — MLflow 平台
+- [[概念/MLOps/model-registry|Model Registry]] — 模型注册
+
+> ℹ️ W&B 是商业 ML 实验跟踪平台，提供强大的可视化、协作和 LLM 追踪能力。

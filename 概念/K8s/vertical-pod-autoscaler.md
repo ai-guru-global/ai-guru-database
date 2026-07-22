@@ -119,3 +119,82 @@ kubectl logs -n kube-system -l app=vpa-updater
 2. **与 HPA 分离**：避免同时对 CPU 使用 VPA 和 HPA
 3. **设置边界**：配置 minAllowed/maxAllowed 防止极端值
 4. **有状态服务慎用**：Recreate 模式会重启 Pod
+
+## VPA 更新模式
+
+| 模式 | 说明 | 适用场景 |
+|------|------|------|
+| Off | 仅推荐 | 观察阶段 |
+| Initial | 创建时应用 | 新 Pod |
+| Recreate | 重建 Pod | 无状态服务 |
+| Auto | 原地更新 | 支持原地升级 |
+
+## VPA 配置示例
+
+```yaml
+apiVersion: autoscaling.k8s.io/v1
+kind: VerticalPodAutoscaler
+metadata:
+  name: app-vpa
+spec:
+  targetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: my-app
+  updatePolicy:
+    updateMode: "Auto"
+  resourcePolicy:
+    containerPolicies:
+    - containerName: app
+      minAllowed:
+        cpu: 100m
+        memory: 128Mi
+      maxAllowed:
+        cpu: "4"
+        memory: 8Gi
+      controlledResources: ["cpu", "memory"]
+```
+
+## VPA vs HPA
+
+| 特性 | VPA | HPA |
+|------|------|------|
+| 调整对象 | 资源请求 | 副本数 |
+| 适用场景 | 资源优化 | 流量扩缩 |
+| 同时使用 | 冲突 (CPU) | 冲突 (CPU) |
+| 推荐指标 | CPU/内存 | 自定义指标 |
+
+## AI 场景 VPA 应用
+
+| 场景 | 说明 |
+|------|------|
+| 推理服务 | 根据负载调整资源 |
+| 开发环境 | 自动优化资源使用 |
+| 批处理任务 | 根据任务调整 |
+
+## 常用命令
+
+| 命令 | 用途 |
+|------|------|
+| `kubectl get vpa` | 查看 VPA |
+| `kubectl describe vpa <name>` | VPA 详情和推荐 |
+
+> 💡 VPA 是 K8s 垂直扩缩的标准方案，2026 年推荐用于资源优化，与 HPA 配合使用不同指标。
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| 推荐值不准确 | 历史数据不足 | 等待更多数据 |
+| Pod 频繁重启 | Recreate 模式 | 改用 Off 模式观察 |
+| 与 HPA 冲突 | 同时使用 CPU | 使用不同指标 |
+| 资源超出限制 | maxAllowed 设置低 | 调整边界 |
+
+## 最佳实践
+
+| 实践 | 说明 |
+|------|------|
+| 先 Off 后 Auto | 先观察推荐值 |
+| 设置合理边界 | 防止极端值 |
+| 与 HPA 分离 | 使用不同指标 |
+| 定期审查 | 检查推荐值合理性 |

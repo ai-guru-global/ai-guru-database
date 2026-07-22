@@ -126,3 +126,78 @@ AI Stack 16 卡版网络
 3. **GPU Direct**：启用 GPU Direct 减少拷贝
 4. **与 InfiniBand 对比**：根据场景选择 RoCE 或 IB
 5. **网络监控**：监控 RDMA 网络性能
+
+## RoCE vs InfiniBand
+
+| 维度 | RoCE v2 | InfiniBand |
+|------|---------|------------|
+| **带宽** | 100-400Gbps | 200-800Gbps |
+| **延迟** | ~2μs | ~1μs |
+| **成本** | 低（以太网） | 高（专用设备） |
+| **生态** | 广泛 | NVIDIA 主导 |
+| **适用** | 中小规模集群 | 大规模训练 |
+
+## NCCL 环境变量配置
+
+```bash
+# NCCL RDMA 优化配置
+export NCCL_IB_DISABLE=0          # 启用 IB/RoCE
+export NCCL_NET_GDR_LEVEL=5       # GPU Direct RDMA
+export NCCL_IB_HCA=mlx5_0,mlx5_1  # 指定 HCA 设备
+export NCCL_SOCKET_IFNAME=eth0    # 网络接口
+export NCCL_DEBUG=INFO            # 调试日志
+```
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| 通信慢 | 未启用 RDMA | 检查 NCCL_IB_DISABLE |
+| GPU Direct 失败 | 驱动/内核不支持 | 更新驱动、加载模块 |
+| 网络拥塞 | PFC 配置不当 | 配置 ECN + PFC |
+| 带宽不达标 | MTU/队列配置 | 调大 MTU、多队列 |
+| 训练挂起 | NCCL 超时 | 检查网络连通性 |
+
+## 版本兼容性
+
+| 组件 | 版本 | 说明 |
+|------|------|------|
+| NCCL | 2.20+ | 集合通信 |
+| MLNX OFED | 24.x | RDMA 驱动 |
+| CUDA | 12.x | GPU 环境 |
+| Linux Kernel | 5.15+ | 内核支持 |
+
+## 生产检查清单
+
+1. 确认 RDMA 网卡和驱动正常
+2. 启用 GPU Direct RDMA
+3. 配置 PFC/ECN 防止网络拥塞
+4. 监控 RDMA 带宽和延迟
+5. 测试 NCCL allreduce 性能
+6. 配置网络冗余防止单点故障
+
+## 版本兼容性
+
+| 组件 | 版本 | 带宽 | 备注 |
+|------|------|------|------|
+| **ConnectX-7** | MLNX 28.4+ | 400Gbps | NDR InfiniBand |
+| **ConnectX-6** | MLNX 23+ | 200Gbps | HDR |
+| **NCCL** | ≥ 2.20 | - | GPU 集合通信 |
+| **UCX** | ≥ 1.16 | - | 统一通信框架 |
+| **BlueField-3** | 2025+ | 400Gbps | DPU 卸载 |
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| 带宽未达标 | MTU 配置错误 | 设置 MTU 9000 + PFC |
+| 延迟抨动 | 网络拥塞 | 启用 ECN + 调整 QoS |
+| NCCL 超时 | 网络分区 | 检查交换机 + 冗余链路 |
+| GPU 利用率低 | 通信成为瓶颈 | 增大 micro-batch + 通信重叠 |
+
+## 总结
+
+RDMA/RoCE 是 AI 分布式训练的网络基石，提供低延迟、高带宽的 GPU 间通信。对于多节点训练，RDMA 网络性能直接决定训练效率。
+
+> 💡 RDMA 的核心价值：让 GPU 间通信像本地内存访问一样快——绕过 CPU 和内核协议栈，是大规模训练的必备网络。
+

@@ -191,3 +191,13 @@ convert_model(
 3. **EXL2 格式**：优先选择 EXL2 预量化模型，质量最好
 4. **bpw 选择**：生产用 4.0-5.0 bpw，平衡质量与速度
 5. **与 vLLM 对比**：高并发场景用 vLLM，单用户用 ExLlamaV2
+6. **TabbyAPI 部署**：用 TabbyAPI 提供 OpenAI 兼容接口
+7. **显存规划**：根据 GPU 显存选择合适的 bpw 和上下文长度
+8. **质量验证**：量化后用测试集验证质量损失可接受
+
+## 延伸阅读
+
+- [[概念/LLM/vllm|vLLM]]
+- [[概念/LLM/llm-quantization|LLM 量化]]
+- [[概念/LLM/gptq|GPTQ]]
+- [[部署推理/Quantization/ExLlamaV2_Deep_Dive|ExLlamaV2 深度解析]]

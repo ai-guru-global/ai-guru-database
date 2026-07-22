@@ -139,3 +139,76 @@ AI Stack 内置模型仓库，提供预置模型和自定义模型管理：
 3. **元数据记录**：记录模型训练数据/参数/指标
 4. **与部署集成**：Model Registry 与部署流水线集成
 5. **权限控制**：模型访问/部署权限控制
+
+## 2026 Model Registry 工具
+
+| 工具 | 说明 | 特点 |
+|------|------|------|
+| **MLflow Registry** | 开源标准 | 简单、集成广 |
+| **W&B Models** | 商业平台 | 功能强大 |
+| **SageMaker Registry** | AWS 托管 | AWS 集成 |
+| **Vertex AI Registry** | GCP 托管 | GCP 集成 |
+
+## 模型生命周期
+
+```
+None → Staging → Production → Archived
+  ↑         ↑           ↑           ↑
+注册    测试验证    生产部署    下线归档
+```
+
+## MLflow Registry 示例
+
+```python
+import mlflow
+from mlflow.tracking import MlflowClient
+
+client = MlflowClient()
+
+# 注册模型
+model_uri = f"runs:/{run_id}/model"
+result = mlflow.register_model(model_uri, "fraud-detector")
+
+# 转换阶段
+client.transition_model_version_stage(
+    name="fraud-detector",
+    version=1,
+    stage="Production",
+)
+
+# 加载生产模型
+model = mlflow.pyfunc.load_model("models:/fraud-detector/Production")
+predictions = model.predict(input_data)
+
+# 获取模型信息
+versions = client.search_model_versions("name='fraud-detector'")
+for v in versions:
+    print(f"Version {v.version}: {v.current_stage}")
+```
+
+## 延伸阅读
+
+- [[概念/MLOps/mlflow|MLflow]] — MLflow 平台
+- [[概念/MLOps/experiment-tracking|Experiment Tracking]] — 实验跟踪
+- [[概念/MLOps/ci-cd|CI/CD]] — 持续集成/交付
+
+> ℹ️ Model Registry 是模型版本管理平台，跟踪模型生命周期，实现模型的可追溯和可控发布。
+
+## 生产最佳实践
+
+1. **模型版本控制**：所有模型版本可追溯
+2. **阶段转换**：严格的阶段转换流程
+3. **元数据记录**：记录模型训练数据/参数/指标
+4. **与部署集成**：Model Registry 与部署流水线集成
+5. **权限控制**：模型访问/部署权限控制
+6. **模型卡片**：每个模型有模型卡片
+7. **审计日志**：记录模型操作历史
+8. **回滚机制**：快速回滚到稳定版本
+
+## 检查清单
+
+- [ ] Model Registry 已配置
+- [ ] 模型版本控制已启用
+- [ ] 阶段转换流程已定义
+- [ ] 权限控制已配置
+- [ ] 模型卡片已创建

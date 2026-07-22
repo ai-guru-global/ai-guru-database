@@ -181,3 +181,27 @@ AI Stack 模型获取方式
 3. **缓存策略**：配置 HF_HOME 统一缓存目录，定期清理旧版本
 4. **网络优化**：国内使用镜像站或 ModelScope 替代直接访问 HF
 5. **CI 优化**：流水线中用 `--include` 只下载必要文件，加速构建
+
+## 版本兼容性
+
+| 工具 | 版本 | 特性 | 备注 |
+|------|------|------|------|
+| **git-lfs** | ≥ 3.4 | 大文件存储 | 基础工具 |
+| **huggingface_hub** | ≥ 0.23 | HF 模型下载 | Python SDK |
+| **hf_transfer** | ≥ 0.1.6 | 加速下载 | Rust 实现 |
+| **ModelScope SDK** | ≥ 1.15 | 国内镜像 | 替代 HF |
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| 下载超时 | 文件过大/网络差 | 使用 hf_transfer 加速 |
+| 磁盘不足 | 缓存累积 | 定期清理 HF_HOME 缓存 |
+| LFS 指针未解析 | 未安装 git-lfs | `git lfs install` + `git lfs pull` |
+| 国内访问慢 | HF 被墙 | 使用 hf-mirror.com 或 ModelScope |
+
+## 总结
+
+Git LFS 是 AI 模型和数据集版本管理的基石，HuggingFace Hub 基于 Git LFS 实现了模型权重的版本控制和分发。掌握 LFS 是每个 AI 工程师的必备技能。
+
+> 💡 Git LFS 的核心价值：让 Git 能处理 GB 级大文件——模型权重、数据集、检查点都能像代码一样版本管理。

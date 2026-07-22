@@ -143,3 +143,63 @@ DRA (分配层 - 新)
 3. **与 CDI 联动验证**：确保 DRA 驱动返回的 CDI 设备 ID 能被 containerd/CRI-O 正确解析
 4. **多厂商测试**：异构集群中分别验证 NVIDIA/AMD/华为 DRA 驱动的兼容性
 5. **回退方案**：保留 Device Plugin 作为回退，DRA 异常时可快速切换
+
+## DRA vs Device Plugin
+
+| 特性 | DRA | Device Plugin |
+|------|------|------|
+| 设备匹配 | 属性级 (CEL) | 资源计数 |
+| 设备共享 | 原生支持 | 不支持 |
+| 设备拓扑 | 感知 | 不感知 |
+| 多设备类型 | 统一接口 | 每类型一个插件 |
+| 状态 | Beta (1.32+) | GA |
+| 适用场景 | GPU/NPU/FPGA | 简单设备 |
+
+## DRA 核心对象
+
+| 对象 | 说明 |
+|------|------|
+| ResourceClass | 设备类别定义 |
+| ResourceClaim | 设备请求声明 |
+| ResourceClaimTemplate | 请求模板 |
+| ResourceSlice | 设备资源切片 |
+| DeviceClass | 设备类别参数 |
+
+## DRA 配置示例
+
+```yaml
+# ResourceClass 定义
+apiVersion: resource.k8s.io/v1beta1
+kind: ResourceClass
+metadata:
+  name: gpu-class
+driverName: gpu.dra.example.com
+parametersRef:
+  name: gpu-params
+---
+# ResourceClaim 请求
+apiVersion: resource.k8s.io/v1beta1
+kind: ResourceClaim
+metadata:
+  name: my-gpu-claim
+spec:
+  resourceClassName: gpu-class
+  requests:
+  - name: gpu
+    deviceClassName: gpu
+    selectors:
+    - cel:
+        expression: "device.attributes['memory'] >= 40"
+```
+
+## DRA 支持的设备类型
+
+| 设备 | 厂商 | 状态 | 说明 |
+|------|------|------|------|
+| GPU | NVIDIA | Beta | A100/H100 |
+| GPU | AMD | Alpha | MI300 |
+| NPU | 华为 | Alpha | Ascend |
+| FPGA | Intel | Alpha | 可编程逻辑 |
+| NIC | Mellanox | 计划 | 智能网卡 |
+
+> 💡 DRA 是 K8s 设备管理的下一代方案，2026 年 Beta 状态，GPU/NPU 等复杂设备将逐步迁移到 DRA。

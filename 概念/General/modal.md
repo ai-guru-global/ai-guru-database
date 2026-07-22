@@ -134,3 +134,70 @@ def main():
 3. **成本监控**：利用 Modal Dashboard 跟踪 GPU-seconds 消耗，设置预算告警
 4. **镜像精简**：使用 `modal.Image` 分层构建，只安装必要依赖减少启动时间
 5. **容错设计**：配置 `retries` 和 `timeout`，处理 GPU 节点故障和长尾请求
+
+## Modal 函数部署示例
+
+```python
+import modal
+
+app = modal.App("llm-inference")
+image = modal.Image.debian_slim().pip_install("vllm", "torch")
+
+@app.cls(
+    gpu="A100",
+    image=image,
+    timeout=300,
+    concurrency_limit=4,
+    retries=2,
+)
+class LLMInference:
+    @modal.enter()
+    def load_model(self):
+        from vllm import LLM
+        self.llm = LLM(model="meta-llama/Llama-3-8B-Instruct")
+
+    @modal.method()
+    def generate(self, prompt: str, max_tokens: int = 512) -> str:
+        outputs = self.llm.generate(prompt, max_tokens=max_tokens)
+        return outputs[0].outputs[0].text
+
+@app.function(schedule=modal.Cron("0 */6 * * *"))
+def warmup():
+    """定时预热防止冷启动"""
+    LLMInference().generate.remote("hello")
+```
+
+## Modal vs Replicate vs AWS SageMaker 对比
+
+| 维度 | Modal | Replicate | SageMaker |
+|------|-------|-----------|------------|
+| 定位 | GPU 函数计算 | 模型市场 | 企业 ML 平台 |
+| 计费 | 按秒（GPU-seconds） | 按秒（prediction） | 按小时（实例） |
+| 冷启动 | 5-15s | 10-30s | 60s+ |
+| 自定义代码 | 完全自由 | Cog 框架 | 容器化 |
+| 学习曲线 | 低（Python 装饰器） | 低 | 高 |
+| 适用规模 | 初创/中型 | 初创/个人 | 大型企业 |
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| 冷启动慢 | 模型权重大，加载耗时 | 使用 Volume 缓存 + 定时预热 |
+| GPU OOM | 批处理过大 | 降低 batch_size，设置 concurrency_limit |
+| 费用超预期 | 未设置超时/并发限制 | 配置 timeout + 预算告警 |
+| 依赖冲突 | 镜像构建问题 | 分层构建 Image，固定版本号 |
+
+## 生产检查清单
+
+1. ✅ 模型加载使用 @modal.enter() 缓存
+2. ✅ 配置 timeout 和 retries 容错
+3. ✅ 设置 concurrency_limit 防止 OOM
+4. ✅ 定时预热关键模型端点
+5. ✅ 监控 GPU-seconds 消耗 + 预算告警
+6. ✅ 使用 Volume 缓存大模型权重
+
+## 总结
+
+Modal 是 2026 年最受欢迎的 GPU 函数计算平台，通过 Python 装饰器即可将任意 ML 代码部署为弹性 GPU 服务。其按秒计费、自动扩缩容和极低冷启动的特性，使其成为初创团队和中型企业的 AI 推理首选。
+
+> 💡 Modal 的核心价值是“让 GPU 像调用函数一样简单”，但大规模生产仍需关注成本控制和容错设计。

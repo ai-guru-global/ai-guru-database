@@ -145,6 +145,41 @@ KV Cache 大小: W × n_layers × 2 × d_model × bytes  (恒定)
 4. **SWA 不适合 RAG**：检索增强需要长程注意力
 5. **关注 MLA 生态扩展**：2026 年更多模型可能采用 MLA 架构
 
+## 注意力变体全景对比
+
+| 变体 | KV 头数 | 显存占用 | 推理速度 | 代表模型 |
+|------|---------|---------|---------|----------|
+| **MHA** | H | 最高 | 最慢 | GPT-3, 原始 Transformer |
+| **MQA** | 1 | 最低 | 最快 | Falcon, StarCoder |
+| **GQA** | G (1<G<H) | 中 | 快 | Llama 3/4, Qwen3, Mistral |
+| **MLA** | 压缩潜在 | 极低 | 快 | DeepSeek-V3 |
+| **SWA** | H (窗口内) | 低 | 快 | Mistral, Gemma |
+
+## 注意力计算复杂度
+
+```
+标准 Attention: O(T² × d)    T=序列长度, d=头维度
+Flash Attention: O(T² × d)   计算量不变，但 IO 减少 5-10x
+SWA:            O(T × W × d)  W=窗口大小，线性于 T
+Linear Attn:    O(T × d²)    线性于 T，但质量有损
+```
+
+## 2026 注意力架构选型指南
+
+| 场景 | 推荐架构 | 理由 |
+|------|---------|------|
+| 通用对话 (8K) | GQA | 生态最成熟，引擎全支持 |
+| 超长上下文 (128K+) | MLA / GQA+YaRN | KV Cache 显存可控 |
+| 端侧推理 | GQA + INT4 | 显存受限，需极致压缩 |
+| 高吐吐量服务 | MQA / GQA | KV 头少，批处理效率高 |
+| 流式/实时 | SWA | 固定窗口，延迟可预测 |
+
+## 延伸阅读
+
+- [[概念/LLM/alibi|ALiBi 位置编码]] — 位置编码与注意力的关系
+- [[概念/LLM/kv-cache|KV Cache]] — 注意力变体的核心优化目标
+- [[概念/LLM/flash-attention-kernels|Flash Attention]] — 注意力算子优化
+
 ## Related
 
 - [[概念/LLM/multi-head-latent-attention]] — MLA（最强压缩，DeepSeek 系列）
@@ -153,3 +188,13 @@ KV Cache 大小: W × n_layers × 2 × d_model × bytes  (恒定)
 - [[概念/Inference/kv-cache-compression]] — KV Cache 压缩
 - [[概念/LLM/transformer-architecture]] — Transformer 架构基础
 - [[概念/LLM/flash-attention-kernels]] — Flash 算子系列
+
+## 快速对比卡片
+
+> **MHA**: 每个 Q 头独立 KV → 质量最高，显存最大
+> **GQA**: 多个 Q 头共享 KV → 质量接近 MHA，显存降 4-8x
+> **MQA**: 所有 Q 头共享 1 组 KV → 显存最小，质量略降
+> **MLA**: KV 压缩到潜在空间 → 显存极低，DeepSeek 独创
+
+> ℹ️ 2026 年 GQA 已成为新模型默认选择，MLA 在长上下文场景增长迅速。
+选择注意力架构时优先考虑推理引擎兼容性和生态支持。

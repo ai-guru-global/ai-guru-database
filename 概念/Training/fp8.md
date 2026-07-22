@@ -150,3 +150,52 @@ FP8 两种变体的位分配
 3. **精度验证**：FP8 训练后验证下游任务精度损失 <1%
 4. **与 BF16 对比**：精度敏感场景优先 BF16，吞吐敏感用 FP8
 5. **硬件要求**：FP8 需要 Hopper 架构（H100/H200）
+
+## 2026 FP8 生态现状
+
+| 框架/工具 | 支持 | 特色 | 状态 |
+|------|------|------|------|
+| Transformer Engine | ✅ | NVIDIA 官方 | ✅ 主流 |
+| DeepSpeed FP8 | ✅ | 微软集成 | ✅ 主流 |
+| Megatron-LM | ✅ | 大规模训练 | ✅ 成熟 |
+| NeMo | ✅ | NVIDIA 全栈 | ✅ 主流 |
+| PyTorch native | ✅ | torch.float8 | ✅ 前沿 |
+
+## 检查清单
+
+- [ ] GPU 支持 FP8（Hopper+）
+- [ ] Transformer Engine 已配置
+- [ ] 缩放策略已选择（per-tensor/per-channel）
+- [ ] 精度验证已完成（< 1% 损失）
+- [ ] 与 BF16 效果已对比
+- [ ] 吐吐量提升已验证
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| 精度损失大 | 缩放策略不当 | 改用 per-channel 缩放 |
+| 训练不稳定 | 动态范围溢出 | 调整缩放因子 |
+| 吐吐量未提升 | 未充分利用 | 检查 kernel 融合 |
+| 兼容性问题 | 库版本旧 | 更新 TE/CUDA |
+
+## 延伸阅读
+
+- [[概念/Training/mixed-precision|Mixed Precision]] — 混合精度
+- [[概念/Training/smoothquant|SmoothQuant]] — 平滑量化
+- [[概念/Training/deepspeed|DeepSpeed]] — 分布式训练
+- [[概念/Training/megatron-lm|Megatron-LM]] — 分布式框架
+- [[概念/GPU/tensors|Tensors]] — 张量计算
+
+> ℹ️ FP8 是 2026 年大模型训练的前沿加速技术，H100/B200 上可提升 1.5-2x 吐吐量，精度损失 < 1%，是超大规模训练的必选。
+
+## 性能对比
+
+| 精度 | 吐吐量 | 显存 | 精度损失 | 硬件 |
+|------|------|------|------|------|
+| FP32 | 1x | 4x | 0% | 所有 |
+| BF16 | 2x | 2x | < 0.1% | Ampere+ |
+| FP8 | 3x | 1x | < 1% | Hopper+ |
+| INT8 | 2.5x | 1x | < 1% | 所有 |
+
+> ℹ️ FP8 训练在 H100/B200 上已成熟，是超大规模训练的必选加速技术。

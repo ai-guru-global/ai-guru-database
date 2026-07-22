@@ -128,3 +128,73 @@ kubectl delete rs ai-inference-rs  # ⚠️ HIGH-RISK — 删除 K8s 资源，�
 2. **Label 匹配**：确保 selector 与 Pod template labels 一致
 3. **资源限制**：设置合理的 requests/limits
 4. **监控副本数**：关注期望副本数与实际副本数差异
+
+## ReplicaSet vs Deployment
+
+| 特性 | ReplicaSet | Deployment |
+|------|------|------|
+| 更新策略 | 无 | 滚动更新/回滚 |
+| 版本管理 | 无 | 支持 |
+| 直接使用 | 不推荐 | 推荐 |
+| 所有者 | Deployment | 无 |
+| 适用场景 | 底层理解 | 生产使用 |
+
+## ReplicaSet 工作原理
+
+| 步骤 | 说明 |
+|------|------|
+| 1 | 监控当前 Pod 数量 |
+| 2 | 与期望副本数比较 |
+| 3 | 不足则创建新 Pod |
+| 4 | 过多则删除 Pod |
+| 5 | 持续循环监控 |
+
+## ReplicaSet 配置示例
+
+```yaml
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: my-replicaset
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: my-app
+  template:
+    metadata:
+      labels:
+        app: my-app
+    spec:
+      containers:
+      - name: app
+        image: my-app:latest
+        resources:
+          requests:
+            cpu: 100m
+            memory: 128Mi
+```
+
+## 控制器层级关系
+
+```
+Deployment
+  └── ReplicaSet (v1)
+        ├── Pod-1
+        ├── Pod-2
+        └── Pod-3
+  └── ReplicaSet (v2)  # 更新时创建新 RS
+        ├── Pod-4
+        └── Pod-5
+```
+
+## 常用命令
+
+| 命令 | 用途 |
+|------|------|
+| `kubectl get rs` | 查看 ReplicaSet |
+| `kubectl describe rs <name>` | RS 详情 |
+| `kubectl scale rs <name> --replicas=5` | 扩缩容 |
+| `kubectl delete rs <name>` | 删除 RS |
+
+> 💡 ReplicaSet 是 Deployment 的底层实现，2026 年生产环境应直接使用 Deployment，ReplicaSet 仅用于理解原理。

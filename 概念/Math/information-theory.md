@@ -178,3 +178,54 @@ BPE 不是最优的（贪心算法），但在实践中是计算效率与压缩�
 3. **KL 散度**：分布匹配用 KL 散度
 4. **信息瓶颈**：表示学习考虑信息瓶颈
 5. **互信息特征**：特征选择用互信息
+
+## 2026 信息论与 AI
+
+| 概念 | 公式 | AI 应用 |
+|------|------|--------|
+| **熔** | H(X) = -∑p(x)log p(x) | 损失函数 |
+| **交叉熔** | H(p,q) = -∑p(x)log q(x) | 分类损失 |
+| **KL 散度** | D_KL(p‖q) = ∑p(x)log(p(x)/q(x)) | VAE/蒸馏 |
+| **互信息** | I(X;Y) = H(X) - H(X|Y) | 特征选择 |
+| **JS 散度** | JSD = ½KL(p‖m) + ½KL(q‖m) | GAN |
+
+## 信息论在 LLM 中的应用
+
+```
+信息论在 LLM 中:
+1. 语言建模: 最小化交叉熔 = 最大化似然
+2. 采样策略: Temperature 控制分布熔
+3. 知识蒸馏: 最小化 KL 散度
+4. 注意力: 互信息最大化
+5. 压缩: 熔编码 = 最优压缩
+```
+
+## 信息论代码示例
+
+```python
+import torch
+import torch.nn.functional as F
+
+# 交叉熔损失
+logits = torch.randn(32, 10)  # 模型输出
+labels = torch.randint(0, 10, (32,))  # 真实标签
+loss = F.cross_entropy(logits, labels)
+
+# KL 散度
+p = F.softmax(logits, dim=-1)
+q = F.softmax(torch.randn(32, 10), dim=-1)
+kl_div = F.kl_div(q.log(), p, reduction='batchmean')
+
+# 熔计算
+probs = torch.tensor([0.5, 0.3, 0.2])
+entropy = -(probs * probs.log()).sum()
+```
+
+## 延伸阅读
+
+- [[概念/Math/bayesian-methods|贝叶斯方法]] — 概率推理
+- [[概念/Math/neural-networks|神经网络]] — 损失函数
+- [[概念/LLM/large-language-model|LLM]] — 语言建模
+- [[概念/Math/activation-value|激活函数]] — Softmax
+
+> ℹ️ 信息论是理解 AI 损失函数和优化的基础，交叉熔是最常用的损失。

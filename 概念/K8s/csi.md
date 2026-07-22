@@ -149,3 +149,63 @@ kubectl logs -n kube-system -l app=csi-plugin --tail=200
 3. **回收策略明确**：生产数据卷使用 `reclaimPolicy: Retain`，避免误删 PVC 导致数据丢失
 4. **监控 CSI Driver 健康**：对 CSI Controller/Node Plugin Pod 设置健康检查和告警
 5. **定期快照备份**：配合 VolumeSnapshot + CronJob 实现关键数据卷的定时快照保护
+
+## CSI 架构组件
+
+| 组件 | 部署方式 | 功能 |
+|------|------|------|
+| CSI Controller | Deployment/StatefulSet | 卷生命周期管理 |
+| CSI Node Plugin | DaemonSet | 节点挂载/卸载 |
+| CSI Identity | 所有插件 | 插件信息/健康检查 |
+| External Provisioner | Sidecar | 动态创建卷 |
+| External Attacher | Sidecar | 卷附加/分离 |
+| External Resizer | Sidecar | 卷扩容 |
+
+## 主流 CSI 驱动对比
+
+| 驱动 | 厂商 | 存储类型 | 特点 |
+|------|------|------|------|
+| EBS CSI | AWS | 块存储 | 云盘 |
+| PD CSI | GCP | 块存储 | 持久磁盘 |
+| Azure Disk CSI | Azure | 块存储 | 托管磁盘 |
+| Ceph RBD | 开源 | 块存储 | 分布式 |
+| NFS CSI | 开源 | 文件存储 | 共享存储 |
+| Longhorn | Rancher | 块存储 | 云原生 |
+
+## CSI 卷操作生命周期
+
+| 操作 | 说明 | 触发条件 |
+|------|------|------|
+| CreateVolume | 创建卷 | PVC 创建 |
+| DeleteVolume | 删除卷 | PV 删除 (Delete策略) |
+| ControllerPublish | 附加卷到节点 | Pod 调度 |
+| NodeStage | 节点准备 | 首次挂载 |
+| NodePublish | 挂载到 Pod | Pod 启动 |
+| ExpandVolume | 扩容 | PVC 扩容请求 |
+
+> 💡 CSI 是 K8s 存储插件的标准接口，2026 年所有主流存储厂商都提供 CSI 驱动，替代了旧的 FlexVolume。
+
+## StorageClass 配置示例
+
+```yaml
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: fast-ssd
+provisioner: disk.csi.everest.io
+parameters:
+  type: ssd
+  fstype: ext4
+reclaimPolicy: Retain
+volumeBindingMode: WaitForFirstConsumer
+allowVolumeExpansion: true
+```
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| PVC Pending | 驱动未安装 | 检查 CSI Driver Pod |
+| 挂载失败 | 节点插件异常 | 重启 Node Plugin |
+| 扩容失败 | 不支持扩容 | 检查 allowVolumeExpansion |
+| 性能差 | 存储类型不当 | 更换 SSD/高性能存储 |

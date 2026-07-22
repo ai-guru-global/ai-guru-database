@@ -142,3 +142,63 @@ GPU Operator (运维层)
 3. **驱动版本锁定**：在 values.yaml 中明确指定驱动版本，避免自动升级导致 CUDA 不兼容
 4. **监控先行**：部署后立即配置 dcgm-exporter + Grafana 大盘，监控 GPU 温度/利用率/显存
 5. **MIG 策略规划**：根据业务负载规划 MIG 分区方案，避免频繁重配影响在线服务
+
+## GPU Operator 组件架构
+
+| 组件 | 部署方式 | 功能 |
+|------|------|------|
+| gpu-operator | Deployment | 控制器 |
+| nvidia-driver-daemonset | DaemonSet | 驱动安装 |
+| nvidia-container-toolkit-daemonset | DaemonSet | 容器运行时 |
+| nvidia-device-plugin-daemonset | DaemonSet | 设备插件 |
+| dcgm-exporter | DaemonSet | 监控指标 |
+| gpu-feature-discovery | DaemonSet | 节点标签 |
+| mig-manager | DaemonSet | MIG 管理 |
+
+## 支持的 GPU 型号
+
+| 型号 | 架构 | 显存 | MIG 支持 |
+|------|------|------|------|
+| A100 | Ampere | 40/80 GB | ✅ |
+| H100 | Hopper | 80 GB | ✅ |
+| H200 | Hopper | 141 GB | ✅ |
+| L40S | Ada | 48 GB | ❌ |
+| T4 | Turing | 16 GB | ❌ |
+| A30 | Ampere | 24 GB | ✅ |
+
+## Helm 部署示例
+
+```bash
+# 添加 NVIDIA Helm 仓库
+helm repo add nvidia https://helm.ngc.nvidia.com/nvidia
+helm repo update
+
+# 部署 GPU Operator
+helm install gpu-operator nvidia/gpu-operator \
+  --namespace gpu-operator --create-namespace \
+  --set driver.version=535.129.03 \
+  --set toolkit.enabled=true \
+  --set dcgmExporter.enabled=true \
+  --set migManager.enabled=true
+```
+
+## 监控指标
+
+| 指标 | 说明 | 告警阈值 |
+|------|------|------|
+| DCGM_FI_DEV_GPU_TEMP | GPU 温度 | > 85°C |
+| DCGM_FI_DEV_GPU_UTIL | GPU 利用率 | < 10% (闲置) |
+| DCGM_FI_DEV_FB_USED | 显存使用 | > 90% |
+| DCGM_FI_DEV_POWER_USAGE | 功耗 | > TDP 90% |
+| DCGM_FI_DEV_XID_ERRORS | XID 错误 | > 0 |
+
+> 💡 GPU Operator 是 K8s 上 NVIDIA GPU 管理的标准方案，2026 年 AI 集群必装组件，实现驱动/运行时/监控全自动化。
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| GPU 不可见 | 驱动未安装 | 检查 driver-daemonset |
+| CUDA 不兼容 | 驱动版本低 | 升级驱动版本 |
+| MIG 失败 | GPU 不支持 | 检查 GPU 型号 |
+| 监控无数据 | dcgm-exporter 异常 | 重启 Pod |

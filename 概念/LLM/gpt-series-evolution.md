@@ -184,3 +184,47 @@ GPT-1 (117M) → GPT-2 (1.5B) → GPT-3 (175B) → GPT-3.5 → GPT-4 → GPT-4o 
 3. **结构化输出**：API 场景必须用 JSON Schema 约束输出
 4. **成本控制**：GPT-4o-mini 价格极低，适合高并发
 5. **与开源对比**：生产前对比 GPT 与开源模型的效果和成本
+
+## GPT 系列演进时间线 (2026)
+
+| 模型 | 发布 | 参数 | 上下文 | 关键突破 |
+|------|------|------|--------|----------|
+| **GPT-3** | 2020-06 | 175B | 4K | Few-shot 学习 |
+| **GPT-3.5** | 2022-11 | ~175B | 16K | RLHF 对齐 |
+| **GPT-4** | 2023-03 | ~1.8T MoE | 128K | 多模态、推理能力飞跃 |
+| **GPT-4o** | 2024-05 | MoE | 128K | 原生多模态、极速 |
+| **o3/o4** | 2025-01 | MoE | 200K | 推理时计算扩展 |
+| **GPT-5** | 2025-12 | ~2T MoE | 1M | 统一推理+生成 |
+
+## GPT API 调用最佳实践
+
+```python
+from openai import OpenAI
+client = OpenAI()
+
+# 结构化输出 (JSON Schema)
+response = client.chat.completions.create(
+    model="gpt-4o",
+    response_format={
+        "type": "json_schema",
+        "json_schema": {
+            "name": "analysis",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "summary": {"type": "string"},
+                    "score": {"type": "number"}
+                }
+            }
+        }
+    },
+    messages=[{"role": "user", "content": "分析这段文本"}]
+)
+```
+
+## 延伸阅读
+
+- [[概念/LLM/gemini|Gemini]] — Google 模型对比
+- [[概念/LLM/reasoning-models|推理模型]] — o3/o4 推理系列
+- [[概念/LLM/llm-architectures|LLM 架构]] — MoE 架构基础
+- [[概念/LLM/large-language-model|大语言模型]] — LLM 基础概念

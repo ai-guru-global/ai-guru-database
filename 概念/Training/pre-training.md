@@ -183,3 +183,23 @@ L = - sum_t log P(t_t | t_1, t_2, ..., t_{t-1}; θ)
 3. **监控指标**：关注 loss 曲线、PPL、MFU、显存峰值
 4. **Checkpoint**：高频保存，支持断点续训
 5. **评估体系**：定期在下游任务上评估，避免过拟合
+
+## 2026 预训练生态现状
+
+| 框架/工具 | 规模 | 特色 | 状态 |
+|------|------|------|------|
+| Megatron-LM | 万亿参数 | 3D 并行、NVIDIA | ✅ 成熟 |
+| DeepSpeed | 千亿参数 | ZeRO、微软 | ✅ 成熟 |
+| Colossal-AI | 千亿参数 | 易用、开源 | ✅ 主流 |
+| NeMo | 万亿参数 | NVIDIA 全栈 | ✅ 主流 |
+| LLaMA-Factory | 百亿参数 | 易用、开源 | ✅ 主流 |
+
+## 延伸阅读
+
+- [[概念/Training/megatron-lm|Megatron-LM]] — 分布式训练框架
+- [[概念/Training/deepspeed|DeepSpeed]] — 微软训练框架
+- [[概念/Training/mixed-precision|Mixed Precision]] — 混合精度
+- [[概念/Training/gradient-checkpointing|Gradient Checkpointing]] — 梯度检查点
+- [[概念/Training/fsdp|FSDP]] — 全分片数据并行
+
+> ℹ️ 预训练是 LLM 能力的基石，2026年趋势：数据质量 > 数据数量，MoE 架构成主流，FP8 训练加速普及。

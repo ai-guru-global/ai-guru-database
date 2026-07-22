@@ -158,3 +158,49 @@ BF16指数位与FP32相同，天然避免梯度下溢。FP8训练通过NVIDIA tr
 3. **显存优化**：启用梯度检查点，显存不足时用 ZeRO-3
 4. **监控指标**：关注 MFU、step time、显存峰值、loss 曲线
 5. **成本优化**：结合 Spot 实例 + 高频 Checkpoint 降低成本
+
+## 2026 模型训练生态现状
+
+| 阶段 | 工具 | 规模 | 状态 |
+|------|------|------|------|
+| 预训练 | Megatron/DeepSpeed | 万亿参数 | ✅ 成熟 |
+| SFT | LLaMA-Factory/TRL | 百亿参数 | ✅ 主流 |
+| RLHF/对齐 | OpenRLHF/veRL | 百亿参数 | ✅ 主流 |
+| 量化 | AutoAWQ/bitsandbytes | 推理优化 | ✅ 主流 |
+| 评估 | lm-eval/RAGAS | 全流程 | ✅ 主流 |
+
+## 检查清单
+
+- [ ] 训练目标已明确（预训练/SFT/对齐）
+- [ ] 数据已准备并验证质量
+- [ ] 硬件资源已规划（GPU/显存/存储）
+- [ ] 分布式策略已选择（DP/TP/PP/ZeRO）
+- [ ] Checkpoint 策略已配置
+- [ ] 监控和评估已接入
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| 训练不稳定 | 学习率/数据问题 | 调优 lr + 数据清洗 |
+| 显存 OOM | 模型/batch 太大 | 梯度检查点 + ZeRO |
+| 收敛慢 | 数据质量差 | 提升数据质量 |
+| 成本高 | 资源浪费 | Spot + 高频 Checkpoint |
+
+## 延伸阅读
+
+- [[概念/Training/pre-training|Pre-training]] — 预训练
+- [[概念/Training/fine-tuning-techniques|Fine-tuning Techniques]] — 微调技术
+- [[概念/Training/deepspeed|DeepSpeed]] — 分布式训练
+- [[概念/Training/megatron-lm|Megatron-LM]] — 分布式框架
+- [[概念/Training/mixed-precision|Mixed Precision]] — 混合精度
+
+> ℹ️ 模型训练是 AI 工程的核心环节，2026年趋势：数据质量 > 数量，MoE 架构普及，FP8 训练加速，评估驱动迭代。
+
+## 训练成本参考
+
+| 模型规模 | GPU | 时间 | 成本估算 |
+|------|------|------|------|
+| 7B SFT | 1×A100 | 2-4h | ~$10 |
+| 70B SFT | 8×A100 | 1-2d | ~$200 |
+| 7B 预训练 | 64×A100 | 1-2w | ~$50K |

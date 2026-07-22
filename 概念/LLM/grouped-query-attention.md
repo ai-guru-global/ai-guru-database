@@ -125,10 +125,86 @@ Decode 阶段每生成一个 token 都要读取全部 KV Cache。GQA 把 KV Cach
 3. **长上下文场景受益最大**：128K+ 场景下 GQA 的显存优势更加显著
 4. **不要混淆 GQA 和 MoE**：GQA 是注意力层优化，MoE 是 FFN 层优化，二者正交
 
+## GQA vs MHA vs MQA vs MLA
+
+| 架构 | KV 头数 | 显存占用 | 质量 | 代表模型 |
+|------|---------|----------|------|----------|
+| **MHA** | = Q 头数 | 最高 | 最佳 | GPT-3, Llama 1 |
+| **GQA** | 1 < KV < Q | 中 | 接近 MHA | Llama 3, Qwen3 |
+| **MQA** | 1 | 最低 | 略低 | Falcon, StarCoder |
+| **MLA** | 低秩压缩 | 极低 | 接近 MHA | DeepSeek-V3 |
+
+## 显存计算示例
+
+```python
+# 70B 模型，32K 上下文，GQA (8 KV heads)
+num_layers = 80
+num_kv_heads = 8
+head_dim = 128
+seq_len = 32768
+bytes_per_element = 2  # BF16
+
+# KV Cache 大小
+kv_cache_bytes = (
+    2 *  # K and V
+    num_layers *
+    num_kv_heads *
+    head_dim *
+    seq_len *
+    bytes_per_element
+)
+print(f"KV Cache: {kv_cache_bytes / 1e9:.1f} GB")  # ~10.7 GB
+
+# 对比 MHA (64 heads)
+mha_bytes = kv_cache_bytes * (64 / 8)
+print(f"MHA KV Cache: {mha_bytes / 1e9:.1f} GB")  # ~85.9 GB
+```
+
+## 2026 生态现状
+
+| 类别 | 状态 | 说明 |
+|------|------|------|
+| **新模型标配** | 普及 | 2024+ 几乎所有新模型采用 GQA |
+| **MLA 兴起** | 发展 | DeepSeek 推动 MLA 成为新趋势 |
+| **引擎支持** | 完善 | 所有主流引擎原生支持 |
+| **与量化叠加** | 成熟 | GQA + FP8 KV Cache 成为标配 |
+
 ## Related
 
 - [[概念/LLM/attention-variants]] — 注意力变体
 - [[概念/LLM/multi-head-latent-attention]] — MLA
 - [[概念/Inference/kv-cache]] — KV Cache
 - [[概念/Inference/kv-cache-compression]] — KV Cache 压缩
-- [[部署推理/Inference_Performance/Inference_Terms_for_dummy|推理性能术语大白话解释]]
+- [[部署推理/Inference_Performance/Inference_Terms_for_dummy|推理性能术语大白话 解释]]
+
+## GQA 显存计算示例
+
+```
+模型: Llama 3 70B
+- 层数: 80, Q 头数: 64, KV 头数: 8, 头维度: 128
+- 序列长度: 4096, 精度: FP16 (2 bytes)
+
+MHA KV Cache:  80 × 64 × 4096 × 128 × 2 × 2 = 10.7 GB
+GQA KV Cache:  80 × 8  × 4096 × 128 × 2 × 2 = 1.34 GB
+压缩比: 8x (等于 Q/KV 头数比 64/8)
+
+结论: GQA 使 70B 模型在单卡 80GB 上可服务 4K 上下文
+```
+
+## GQA 配置与推理引擎支持
+
+| 引擎 | GQA 支持 | 配置方式 |
+|------|---------|----------|
+| **vLLM** | 自动识别 | 无需配置 |
+| **SGLang** | 自动识别 | 无需配置 |
+| **TensorRT-LLM** | 自动识别 | 无需配置 |
+| **llama.cpp** | 自动识别 | GGUF 元数据 |
+| **HuggingFace** | 模型配置 | num_key_value_heads |
+
+## 生产最佳实践
+
+1. **无需手动配置**：推理引擎自动识别 GQA 架构
+2. **叠加 KV INT8**：GQA + KV 量化可进一步压缩 2x
+3. **长上下文优先 GQA**：避免 MHA 的显存爆炸
+4. **批处理效率**：GQA 模型批处理效率显著高于 MHA
+5. **模型选型关注**：优先选择 GQA/MLA 架构的模型

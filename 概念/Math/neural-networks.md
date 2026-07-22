@@ -179,3 +179,66 @@ $$\hat{x}_i = \frac{x_i - \mu_{\mathcal{B}}}{\sqrt{\sigma_{\mathcal{B}}^2 + \eps
 3. **正则化**：训练必须用正则化防止过拟合
 4. **批归一化**：深度网络用批归一化/LayerNorm
 5. **残差连接**：深层网络用残差连接
+
+## 2026 神经网络架构生态
+
+| 架构 | 代表 | 特点 | 状态 |
+|------|------|------|------|
+| **Transformer** | GPT/LLaMA | 注意力机制 | GA 主流 |
+| **CNN** | ConvNeXt | 卷积 | GA |
+| **RNN/LSTM** | - | 序列 | 衰退 |
+| **Mamba/SSM** | Mamba-2 | 状态空间 | 研究 |
+| **MoE** | Mixtral | 混合专家 | GA |
+| **RWKV** | RWKV-6 | 线性注意力 | 研究 |
+
+## 神经网络基础组件
+
+```
+神经网络组件:
+┌─────────────────────────────────────────┐
+│  输入层: 数据输入                        │
+├─────────────────────────────────────────┤
+│  隐藏层: 线性变换 + 激活函数            │
+│    - 全连接: y = Wx + b                 │
+│    - 卷积: y = Conv(x, W)               │
+│    - 注意力: y = Attention(Q, K, V)     │
+├─────────────────────────────────────────┤
+│  归一化: LayerNorm / BatchNorm          │
+├─────────────────────────────────────────┤
+│  残差连接: y = x + f(x)                 │
+├─────────────────────────────────────────┤
+│  输出层: 任务特定输出                    │
+└─────────────────────────────────────────┘
+```
+
+## 神经网络代码示例
+
+```python
+import torch
+import torch.nn as nn
+
+class MLP(nn.Module):
+    def __init__(self, input_dim, hidden_dim, output_dim):
+        super().__init__()
+        self.layers = nn.Sequential(
+            nn.Linear(input_dim, hidden_dim),
+            nn.GELU(),
+            nn.LayerNorm(hidden_dim),
+            nn.Dropout(0.1),
+            nn.Linear(hidden_dim, output_dim)
+        )
+    
+    def forward(self, x):
+        return self.layers(x)
+
+model = MLP(784, 256, 10)
+```
+
+## 延伸阅读
+
+- [[概念/Math/activation-value|激活函数]] — 非线性核心
+- [[概念/Math/optimization-regularization|优化与正则化]] — 训练优化
+- [[概念/LLM/transformer-architecture|Transformer]] — 主流架构
+- [[概念/Math/linear-algebra|线性代数]] — 数学基础
+
+> ℹ️ 神经网络是深度学习的核心，Transformer 是 2026 年的主流架构。

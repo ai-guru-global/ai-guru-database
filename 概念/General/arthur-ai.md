@@ -109,3 +109,105 @@ Arthur Shield 架构:
 3. **漂移检测**：监控数据/模型漂移
 4. **可解释性**：模型决策可解释
 5. **与 Guardrails 对比**：Arthur 企业级，Guardrails 开源
+
+## Shield 集成示例
+
+```python
+# Arthur Shield API 集成
+import requests
+
+def shield_check(user_input: str) -> dict:
+    response = requests.post(
+        "https://api.arthur.ai/v1/shield/check",
+        headers={"Authorization": f"Bearer {ARTHUR_API_KEY}"},
+        json={
+            "content": user_input,
+            "checks": ["prompt_injection", "toxicity", "pii", "jailbreak"],
+            "threshold": 0.8
+        }
+    )
+    result = response.json()
+    if result["blocked"]:
+        return {"safe": False, "reason": result["violations"]}
+    return {"safe": True}
+```
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| 误报率高 | 阈值设置过低 | 调高 threshold、自定义规则 |
+| 延迟增加 | 每次请求都检测 | 缓存 + 异步检测 |
+| 漏报 | 新型攻击手法 | 定期更新检测模型 |
+| 成本增加 | 全量检测 | 分层检测策略 |
+| 集成复杂 | 多模型多入口 | 统一网关层集成 |
+
+## 版本兼容性
+
+| 平台 | 状态 | 特点 |
+|------|------|------|
+| Arthur Shield | GA | LLM 防火墙 |
+| Arthur Performance | GA | 性能监控 |
+| Guardrails AI | GA | 开源替代 |
+| LLM Guard | GA | 开源替代 |
+| NeMo Guardrails | GA | NVIDIA 方案 |
+
+## 生产检查清单
+
+1. 在 LLM 入口部署 Shield 检测
+2. 配置 Prompt 注入 + 毒性 + PII 检测
+3. 设置拦截阈值和告警规则
+4. 监控 Shield 误报/漏报率
+5. 定期红队测试更新检测规则
+6. 建立安全事件响应流程
+
+## 总结
+
+Arthur AI 是企业级 LLM 安全与性能监控的代表，其 Shield 防火墙在毫秒级延迟下提供全面的安全检测。对于金融、医疗等合规行业，Arthur 是满足安全审计要求的重要工具。
+
+> 💡 LLM 安全的核心认知：安全检测不是“可选项”而是“必选项”——任何面向用户的 LLM 应用都必须部署输入/输出安全防护层。
+
+## Arthur AI 防护架构
+
+```yaml
+# LLM 安全防护层架构
+arthur_shield:
+  input_layer:
+    - prompt_injection_detection   # Prompt 注入检测
+    - pii_scrubbing                # PII 脱敏
+    - topic_classification         # 主题分类过滤
+    - toxicity_screening           # 毒性检测
+  output_layer:
+    - hallucination_detection      # 幻觉检测
+    - fact_checking                # 事实核查
+    - brand_safety                 # 品牌安全
+    - compliance_check             # 合规检查
+  monitoring:
+    - drift_detection              # 数据漂移检测
+    - quality_scoring              # 质量评分
+    - alert_system                 # 告警系统
+```
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| 误报率高 | 规则过严 | 调整阈值 + 白名单 |
+| 延迟增加 | 检测层过多 | 异步检测 + 缓存 |
+| 漏报严重 | 新型攻击 | 定期更新检测模型 |
+| 成本过高 | 全量检测 | 采样 + 分级检测 |
+
+## 生产检查清单
+
+1. ✅ 输入层部署 Prompt 注入检测
+2. ✅ 输出层部署幻觉/毒性检测
+3. ✅ PII 自动脱敏（输入+输出）
+4. ✅ 配置质量分数告警阈值
+5. ✅ 定期红队测试更新检测规则
+6. ✅ 审计日志保留 ≥ 90 天
+
+## 总结
+
+Arthur AI 是企业级 LLM 安全防护平台，2026 年已覆盖从 Prompt 注入检测、幻觉检测到合规审计的完整安全链路。其核心价值是将 LLM 安全从“事后补救”转变为“实时防护”。
+
+> 💡 LLM 安全的核心原则：“默认不信任”——假设每个输入都可能是攻击，每个输出都可能有错误。

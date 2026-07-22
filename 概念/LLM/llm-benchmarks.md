@@ -177,3 +177,25 @@ flowchart TD
 3. **警惕数据污染**：关注 Benchmark 是否被训练数据污染
 4. **人类评估校准**：定期与人类评估对比，确保 Benchmark 可靠性
 5. **成本意识**：Benchmark 评估成本高，仅用于关键决策
+6. **动态基准优先**：LiveBench 等动态更新的基准更可靠
+7. **业务测试集**：建立自己的业务测试集，比公开基准更相关
+
+## Benchmark 选择指南
+
+| 任务类型 | 推荐 Benchmark | 说明 |
+|----------|---------------|------|
+| 通用知识 | MMLU-Pro, GPQA | 多学科知识评估 |
+| 代码生成 | HumanEval, MBPP, LiveCodeBench | 代码正确性评估 |
+| 数学推理 | GSM8K, MATH, AIME | 数学问题求解 |
+| 多轮对话 | MT-Bench, Arena Hard | 对话质量评估 |
+| 中文能力 | C-Eval, CMMLU | 中文知识评估 |
+| 长上下文 | RULER, Needle-in-Haystack | 长文本检索能力 |
+| 安全性 | TruthfulQA, BBQ | 幻觉和偏见评估 |
+
+## 延伸阅读
+
+- [[概念/LLM/llm-arena|LLM Arena]]
+- [[概念/LLM/llm-as-judge|LLM-as-Judge]]
+- [[模型评估/Benchmarks/LLM_Benchmark_Suite_2026|LLM 基准套件 2026]]
+
+> ℹ️ Benchmark 只是参考，最终决策应结合业务测试集和实际体验。

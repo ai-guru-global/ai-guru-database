@@ -2,9 +2,9 @@
 title: 概念卡片索引 (Concept Cards Index)
 category: -concepts
 tags: [concepts, knowledge-graph, index]
-summary: 118 张 AI 概念卡片，每张 5-9KB，覆盖 AI 全栈核心概念，与主章节通过 sources 字段关联。
+summary: 562 张 AI 概念卡片，覆盖 AI 全栈核心概念，按 12 个子域组织，与主章节通过 sources 字段关联。
 created: 2026-06-03
-updated: 2026-06-15
+updated: 2026-07-10
 tier: core
 sources: []
 
@@ -328,10 +328,28 @@ tier: core | supporting
 
 ## 统计
 
-- **总数**: 214 张概念卡片
-- **平均大小**: ~5.8 KB
+- **总数**: 562 张概念卡片（12 个子域）
+- **平均大小**: ~6.2 KB
 - **覆盖章节**: 00-19 全部 20 个主章节
 - **关系类型**: related_to、prerequisite、builds_on
+- **质量标准**: 每张卡片 200+ 行，含 YAML frontmatter、2026 生态现状、生产最佳实践、wikilink 交叉引用
+
+### 子域统计
+
+| 子域 | 文件数 | 说明 |
+|------|------|------|
+| **General** | 147 | 基础与通识、平台工具、通用概念 |
+| **LLM** | 98 | 大语言模型架构、训练、对齐 |
+| **K8s** | 69 | Kubernetes 与云原生 AI 基础设施 |
+| **Training** | 49 | 模型训练、分布式训练、优化 |
+| **Inference** | 35 | 推理引擎、服务化、优化 |
+| **RAG** | 33 | 检索增强生成、向量数据库 |
+| **Agent** | 30 | AI 智能体、工具调用、多智能体 |
+| **GPU** | 27 | GPU 硬件、CUDA、集群管理 |
+| **MLOps** | 23 | ML 运维、CI/CD、监控 |
+| **Math** | 18 | 数学基础、优化理论 |
+| **Vision** | 18 | 计算机视觉、多模态 |
+| **Safety** | 15 | AI 安全、对齐、伦理 |
 
 ## 相关页面
 

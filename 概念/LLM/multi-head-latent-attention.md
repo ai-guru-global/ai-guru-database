@@ -195,3 +195,12 @@ MLA 的压缩效果可与 FP8 量化、前缀缓存等技术叠加：
 3. **FlashMLA 加速**：H800 环境启用 FlashMLA，性能提升显著
 4. **与 GQA 对比**：MLA 比 GQA 压缩更激进，适合超长上下文
 5. **推理框架选择**：用 vLLM/SGLang 等支持 MLA 的框架
+6. **显存监控**：MLA 显著降低显存，可支持更长上下文或更大批次
+7. **质量验证**：MLA 有轻微质量损失，生产前验证可接受
+
+## 延伸阅读
+
+- [[概念/LLM/grouped-query-attention|GQA]]
+- [[概念/Inference/kv-cache|KV Cache]]
+- [[概念/LLM/kv-cache-compression|KV Cache 压缩]]
+- [[大模型/Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive|DeepSeek 深度解析]]

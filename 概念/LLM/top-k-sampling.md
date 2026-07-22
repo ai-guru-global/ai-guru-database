@@ -169,3 +169,33 @@ model.generate(
 3. **任务匹配**：事实任务用小 k(10-30)，创意任务用大 k(50-100)
 4. **不要单独使用**：Top-k 单独使用可能导致质量下降，配合 Top-p
 5. **监控输出质量**：调整 k 后监控输出质量，找到最优配置
+6. **Min-p 替代**：考虑用 Min-p 替代 Top-k，更稳定
+7. **A/B 测试**：不同 k 值进行 A/B 测试，找到最优配置
+
+## Top-k vs Top-p 对比
+
+| 维度 | Top-k | Top-p |
+|------|-------|-------|
+| **截断方式** | 固定数量 | 累计概率 |
+| **适应性** | 不适应分布变化 | 动态适应 |
+| **稳定性** | 稳定 | 更稳定 |
+| **推荐场景** | 配合 Top-p 使用 | 单独或配合 Top-k |
+| **生产建议** | k=50 + p=0.9 | p=0.9 |
+
+## 延伸阅读
+
+- [[概念/LLM/top-p-sampling|Top-p 采样]]
+- [[概念/LLM/temperature-scaling|Temperature 缩放]]
+- [[概念/LLM/sampling-decoding|采样解码]]
+- [[概念/LLM/decoding-strategies-decision-tree|解码策略决策树]]
+
+## 参数配置示例
+
+```python
+# Top-k 采样配置
+config = {
+    "top_k": 50,           # 保留概率最高的 50 个 Token
+    "temperature": 0.7,    # 控制随机性
+    "top_p": 0.9,          # 配合 Top-p 使用
+}
+```

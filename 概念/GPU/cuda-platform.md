@@ -185,3 +185,28 @@ CUDA Graph 将一系列 kernel 调用捕获为静态计算图，减少 kernel la
 3. **TensorRT 加速**：推理场景用 TensorRT 加速
 4. **CUDA Graph**：重复计算用 CUDA Graph 降低启动开销
 5. **驱动更新**：定期更新 NVIDIA 驱动，获取性能优化
+
+## 延伸阅读
+
+- [[概念/GPU/cuda|CUDA]] — CUDA 基础
+- [[概念/GPU/cudnn|cuDNN]] — 深度学习加速
+- [[概念/GPU/nvidia-gpu|NVIDIA GPU]] — NVIDIA GPU
+
+> ℹ️ CUDA Platform 是 NVIDIA 的完整计算平台，包括 CUDA、cuDNN、TensorRT 等组件。
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| 组件版本冲突 | 各组件版本不匹配 | 使用 NVIDIA NGC 容器统一版本 |
+| TensorRT 转换失败 | 算子不支持 | 检查 TRT 插件或回退 cuDNN |
+| 安装失败 | 依赖缺失 | 使用 `apt install cuda-toolkit-13-x` 完整安装 |
+| 性能不佳 | 未启用 Tensor Core | 使用 TF32/FP16 精度 + cuBLAS |
+
+## 生产最佳实践
+
+1. **容器化部署**：使用 NGC 容器固定全套组件版本
+2. **组件协同**：确保 CUDA/cuDNN/TensorRT/NCCL 版本互相兼容
+3. **定期更新**：跟踪 NVIDIA 安全补丁，及时更新驱动
+4. **性能分析**：使用 Nsight Systems 全链路分析
+5. **多版本共存**：使用 `update-alternatives` 管理多 CUDA 版本

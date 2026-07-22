@@ -146,3 +146,86 @@ ArgoCD 原生支持 Kustomize：
 3. **Secret 管理**：不在 Kustomize 中明文存储 Secret，结合 SOPS/Vault
 4. **CI 验证**：流水线中执行 `kubectl kustomize` 验证渲染结果合法性
 5. **避免过度嵌套**：overlay 层级不超过 3 层，保持可理解性
+
+## Kustomize 目录结构示例
+
+```yaml
+# base/kustomization.yaml
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - deployment.yaml
+  - service.yaml
+  - hpa.yaml
+commonLabels:
+  app.kubernetes.io/managed-by: kustomize
+
+---
+# overlays/prod/kustomization.yaml
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - ../../base
+namePrefix: prod-
+patches:
+  - path: gpu-patch.yaml
+    target:
+      kind: Deployment
+      name: inference-server
+replicas:
+  - name: inference-server
+    count: 4
+
+---
+# overlays/prod/gpu-patch.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: inference-server
+spec:
+  template:
+    spec:
+      containers:
+        - name: vllm
+          resources:
+            limits:
+              nvidia.com/gpu: "2"
+            requests:
+              nvidia.com/gpu: "2"
+              memory: 32Gi
+```
+
+## Kustomize vs Helm vs jsonnet 对比
+
+| 维度 | Kustomize | Helm | jsonnet |
+|------|-----------|------|----------|
+| 语言 | YAML | Go 模板 | jsonnet |
+| 学习曲线 | 低 | 中 | 高 |
+| 内置 kubectl | 是 | 否 | 否 |
+| 模板能力 | 无（补丁） | 强 | 极强 |
+| GitOps 集成 | ArgoCD/Flux | ArgoCD/Flux | 需额外工具 |
+| 适用场景 | 环境差异化 | 应用分发 | 复杂配置生成 |
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| 渲染结果错误 | overlay 补丁路径错误 | 使用 kubectl kustomize 验证 |
+| 环境配置泄漏 | base 中硬编码环境值 | 环境差异全部放 overlay |
+| Secret 明文 | 直接写在 YAML 中 | 结合 SOPS/Vault 加密 |
+| 嵌套过深 | overlay 层级过多 | 控制在 3 层以内 |
+
+## 生产检查清单
+
+1. ✅ base 只包含通用配置，环境差异放 overlay
+2. ✅ CI 中执行 kubectl kustomize 验证渲染结果
+3. ✅ Secret 结合 SOPS/Vault 加密管理
+4. ✅ overlay 层级不超过 3 层
+5. ✅ namePrefix/nameSuffix 统一资源命名
+6. ✅ 与 ArgoCD/FluxCD GitOps 集成
+
+## 总结
+
+Kustomize 是 Kubernetes 原生配置管理工具，通过 base + overlay 模式实现多环境配置差异化。其无模板、纯 YAML 的特性使其学习曲线极低，是 GitOps 工作流中环境配置管理的首选方案。
+
+> 💡 Kustomize 的核心哲学是“无模板的声明式定制”——用补丁而非模板来管理差异，保持配置的可读性和可审计性。

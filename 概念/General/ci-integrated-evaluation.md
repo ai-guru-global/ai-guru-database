@@ -129,3 +129,112 @@ CI 集成评估让这些问题变成流水线的一部分。
 3. **评估门禁**：评估不通过阻止部署
 4. **LLM 评估**：LLM 输出自动评估
 5. **与 A/B 配合**：CI 评估 + A/B 测试
+
+## CI 评估流水线示例
+
+```yaml
+# GitHub Actions CI 评估
+name: model-evaluation
+on: [push, pull_request]
+jobs:
+  evaluate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run Evaluation
+        run: |
+          python evaluate.py \
+            --model ${{ github.event.pull_request.head.sha }} \
+            --benchmarks mmlu,bbh,humaneval \
+            --threshold 0.85
+      - name: Check Results
+        run: |
+          if [ $(cat results.json | jq '.passed') != "true" ]; then
+            echo "Evaluation failed" && exit 1
+          fi
+```
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| 评估太慢 | 基准太多 | 分层评估（快速+完整） |
+| 误报失败 | 阈值太严 | 调整阈值 + 容差 |
+| 评估不稳定 | 采样随机性 | temperature=0 + 多次运行 |
+| 与生产脱节 | 基准不相关 | 补充业务自定义评测 |
+
+## 版本兼容性
+
+| 工具 | 状态 | 说明 |
+|------|------|------|
+| GitHub Actions | GA | CI 平台 |
+| lm-eval-harness | GA | 评估框架 |
+| OpenCompass | GA | 国产评估 |
+| Weights & Biases | GA | 实验追踪 |
+
+## 生产检查清单
+
+1. 模型变更触发自动评估
+2. 设置评估通过门禁
+3. 分层评估（快速 PR + 完整发布）
+4. 评估结果可视化展示
+5. 建立评估基线和回归检测
+6. 定期更新评估基准
+
+## 总结
+
+CI 集成评估是 MLOps 的关键实践，确保每次模型变更都经过自动化评估验证。它是防止模型回归、保障生产质量的重要门禁。
+
+> 💡 CI 评估的核心价值：像代码测试一样测试模型——每次变更都自动验证，确保模型质量只升不降。
+
+## CI 评估流水线示例
+
+```yaml
+# GitHub Actions - 模型评估流水线
+name: Model Evaluation
+on: [pull_request]
+jobs:
+  evaluate:
+    runs-on: gpu-runner
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run Benchmark
+        run: |
+          python evaluate.py \
+            --model ${{ github.event.pull_request.head.sha }} \
+            --tasks mmlu,gsm8k,humaneval \
+            --output results.json
+      - name: Quality Gate
+        run: |
+          python check_quality.py results.json \
+            --min-mmlu 0.82 \
+            --min-gsm8k 0.90
+      - name: Post Results
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              body: require('./results.json').summary
+            })
+```
+
+## 质量门禁配置
+
+| 指标 | 阈值 | 动作 |
+|------|------|------|
+| MMLU 下降 > 2% | 阻断 | 拒绝合入 |
+| GSM8K 下降 > 3% | 阻断 | 拒绝合入 |
+| 延迟增加 > 10% | 警告 | 通知负责人 |
+| 安全测试失败 | 阻断 | 拒绝合入 |
+| 幻觉率增加 > 5% | 警告 | 人工审核 |
+
+## 生产检查清单
+
+1. ✅ 每次模型变更触发自动评估
+2. ✅ 设置明确的质量门禁阈值
+3. ✅ 评估结果自动发布到 PR
+4. ✅ 安全测试作为必过门禁
+5. ✅ 评估集定期更新防过拟合
+6. ✅ 保留历史评估结果用于趋势分析
+

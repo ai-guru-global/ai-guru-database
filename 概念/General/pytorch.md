@@ -126,4 +126,96 @@ from torch.distributed.tensor import DTensor, Shard
 2. **FSDP 训练**：大模型训练用 FSDP
 3. **Tensor Parallel**：超大模型用 Tensor Parallel
 4. **混合精度**：训练用混合精度
+5. **分布式检查点**：定期保存检查点
+
+## 训练配置示例
+
+```python
+import torch
+from torch.distributed.fsdp import FullyShardedDataParallel as FSDP
+
+# FSDP 大模型训练
+model = FSDP(
+    model,
+    sharding_strategy=ShardingStrategy.FULL_SHARD,
+    mixed_precision=MixedPrecision(
+        param_dtype=torch.bfloat16,
+        reduce_dtype=torch.bfloat16,
+    ),
+    auto_wrap_policy=size_based_auto_wrap_policy,
+)
+
+# torch.compile 加速
+model = torch.compile(model, mode="max-autotune")
+```
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| OOM | 模型/批太大 | FSDP/梯度累积/量化 |
+| 训练慢 | 未用编译优化 | torch.compile |
+| 通信瓶颈 | 网络带宽不足 | RDMA/梯度压缩 |
+| 数值不稳定 | 混合精度问题 | 调整 loss scaling |
+| 检查点太大 | 未分片保存 | 分布式检查点 |
+
+## 版本兼容性
+
+| 组件 | 版本 | 说明 |
+|------|------|------|
+| PyTorch | 2.4+ | 核心框架 |
+| CUDA | 12.x | GPU 环境 |
+| NCCL | 2.20+ | 集合通信 |
+| DeepSpeed | 0.14+ | 训练加速 |
+
+## 生产检查清单
+
+1. 启用 torch.compile 加速训练
+2. 使用 FSDP 分片大模型
+3. 启用混合精度 (bfloat16)
+4. 配置分布式检查点
+5. 监控 GPU 利用率和通信效率
+6. 定期更新 PyTorch 版本
+
+## 总结
+
+PyTorch 是 AI 研究和生产的事实标准框架，2026 年 PyTorch 2.x 的 torch.compile 和 FSDP 使其在大模型训练和部署中保持领先地位。
+
+> 💡 PyTorch 的核心价值：从研究到生产的无缝过渡——同一个框架既能做实验又能上生产，是 AI 工程师的必备技能。
+
 5. **与 TensorFlow 对比**：研究场景优先 PyTorch
+
+## PyTorch 2026 生态
+
+| 组件 | 功能 | 状态 |
+|------|------|------|
+| **PyTorch 2.x** | torch.compile 加速 | GA |
+| **torch.compile** | 图编译优化 | GA |
+| **FSDP2** | 分布式训练 | GA |
+| **torch.export** | 模型导出 | GA |
+| **ExecuTorch** | 边缘部署 | GA |
+| **DTensor** | 分布式张量 | GA |
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| OOM | 批处理过大 | 降低 batch_size + 梯度累积 |
+| 训练慢 | 未用 torch.compile | 启用编译优化 |
+| 多卡不均衡 | 数据分配不均 | 使用 DistributedSampler |
+| 导出失败 | 动态控制流 | 使用 torch.export + 静态化 |
+
+## 生产检查清单
+
+1. ✅ 启用 torch.compile 加速训练/推理
+2. ✅ 分布式训练使用 FSDP2
+3. ✅ 混合精度训练（bf16/fp16）
+4. ✅ 梯度累积降低显存占用
+5. ✅ 模型导出使用 torch.export
+6. ✅ 定期更新 PyTorch 版本
+
+## 总结
+
+PyTorch 是 2026 年 AI 研究和生产的绝对主流框架，torch.compile 和 FSDP2 使其在性能和分布式能力上达到新高度。从研究到生产的无缝过渡是其核心优势。
+
+> 💡 PyTorch 的核心价值：“同一个框架，从实验到生产”——不需要换框架就能部署。

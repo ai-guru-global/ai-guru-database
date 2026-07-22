@@ -135,3 +135,77 @@ LLM 应用的"实验"与传统 ML 有本质区别：
 3. **实验对比**：用工具对比不同实验效果
 4. **与 CI/CD 集成**：实验追踪集成到 CI/CD
 5. **团队协作**：实验结果团队共享
+
+## 2026 实验跟踪工具对比
+
+| 工具 | 说明 | 特点 |
+|------|------|------|
+| **MLflow** | 开源标准 | 简单、集成广 |
+| **W&B** | 商业平台 | 功能强大、可视化好 |
+| **Neptune** | 商业平台 | 企业级 |
+| **Comet** | 商业平台 | 代码对比 |
+| **Aim** | 开源 | 轻量、快速 |
+
+## MLflow 示例
+
+```python
+import mlflow
+import mlflow.sklearn
+from sklearn.ensemble import RandomForestClassifier
+
+# 设置跟踪服务器
+mlflow.set_tracking_uri("http://mlflow:5000")
+mlflow.set_experiment("rf-classifier")
+
+# 记录实验
+with mlflow.start_run(run_name="rf-v1"):
+    # 记录参数
+    mlflow.log_params({
+        "n_estimators": 100,
+        "max_depth": 10,
+        "random_state": 42,
+    })
+    
+    # 训练模型
+    model = RandomForestClassifier(n_estimators=100, max_depth=10)
+    model.fit(X_train, y_train)
+    
+    # 记录指标
+    mlflow.log_metrics({
+        "accuracy": accuracy_score(y_test, y_pred),
+        "f1": f1_score(y_test, y_pred),
+    })
+    
+    # 记录模型
+    mlflow.sklearn.log_model(model, "model")
+    
+    # 记录工件
+    mlflow.log_artifact("confusion_matrix.png")
+```
+
+## 延伸阅读
+
+- [[概念/MLOps/mlflow|MLflow]] — MLflow 平台
+- [[概念/MLOps/wandb|W&B]] — Weights & Biases
+- [[概念/MLOps/model-registry|Model Registry]] — 模型注册
+
+> ℹ️ 实验跟踪是 MLOps 的核心实践，记录每次实验的参数、指标、代码和模型，实现可复现性。
+
+## 生产最佳实践
+
+1. **所有实验必须记录**：参数/指标/代码/模型
+2. **实验命名规范**：有意义的实验名称
+3. **实验对比**：用工具对比不同实验效果
+4. **与 CI/CD 集成**：实验追踪集成到 CI/CD
+5. **团队协作**：实验结果团队共享
+6. **实验报告**：定期生成实验报告
+7. **超参搜索**：用工具进行超参搜索
+8. **实验复现**：确保实验可复现
+
+## 检查清单
+
+- [ ] 实验跟踪工具已配置
+- [ ] 所有实验都有记录
+- [ ] 实验命名规范
+- [ ] 实验结果可对比
+- [ ] 实验可复现

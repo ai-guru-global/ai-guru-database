@@ -125,10 +125,80 @@ Transformer 厉害的地方在于：**不管两个词离得多远，它都能直
 
 ---
 
+## 2026 年 Transformer 家族全景
+
+| 模型 | 架构类型 | 参数 | 特点 |
+|------|---------|:----:|------|
+| **GPT-5** | Decoder-only MoE | ~2T | 最强通用能力 |
+| **Llama 4** | Decoder-only Dense | 405B | 开源旗舰 |
+| **Qwen3** | Decoder-only MoE | 235B | 中文最强开源 |
+| **BERT 后继** | Encoder-only | 340M | 理解/分类任务 |
+| **T5 后继** | Encoder-Decoder | 11B | 翻译/摘要 |
+| **Mamba/Jamba** | SSM 混合 | 52B | 长序列替代方案 |
+
+## 为什么 Transformer 这么强？
+
+| 优势 | 说明 | 类比 |
+|------|------|------|
+| **并行计算** | 所有词同时处理，不用排队 | 全班同时做题 vs 一个个轮流 |
+| **全局视野** | 每个词能看到所有其他词 | 开卷考试，随便翻 |
+| **可扩展** | 加层/加宽就能变强 | 积木越堆越高 |
+| **通用性** | 文本/图像/音频都能用 | 万能工具 |
+
+## Transformer 的局限性
+
+| 局限 | 影响 | 解决方案 |
+|------|------|----------|
+| 计算量 O(L²) | 长文本很慢 | Flash Attention / 稀疏注意力 |
+| KV Cache 显存 | 长上下文显存爆炸 | MLA / KV 压缩 / PagedAttention |
+| 位置信息弱 | 需要额外位置编码 | RoPE / ALiBi |
+| 无归纳偏置 | 需要大量数据 | 预训练 + 微调 |
+
+## 学习路径建议
+
+```
+初学者：本文（大白话）→ attention-variants → kv-cache-plain
+进阶：transformer-architecture → grouped-query-attention → rope
+深入：flash-attention-kernels → multi-head-latent-attention → mamba
+```
+
+## 常见问题 FAQ
+
+| 问题 | 答案 |
+|------|------|
+| Transformer 和 RNN 有什么区别？ | RNN 逐词处理，Transformer 全部同时处理，更快更强 |
+| 为什么现在都是 Decoder-only？ | 生成任务只需“续写”，不需要双向理解，更简单高效 |
+| Attention 是什么？ | 每个词“看看”其他所有词，决定谁更重要 |
+| 为什么需要位置编码？ | Transformer 本身不知道词的顺序，需要额外告诉它 |
+| MoE 是什么？ | 多个“专家”只激活部分，省计算但保持能力 |
+| 为什么长文本慢？ | 每个词要和所有词算关系，文本越长计算越多 |
+
+## 核心组件速查
+
+| 组件 | 作用 | 大白话 |
+|------|------|--------|
+| **Self-Attention** | 计算词与词的关系 | 互相点名看谁重要 |
+| **FFN** | 非线性变换 | 独立思考加工 |
+| **Layer Norm** | 稳定训练 | 把数值调整到合适范围 |
+| **Residual** | 防止信息丢失 | 保留原始信息 + 新信息 |
+| **Position Encoding** | 告诉模型词序 | 给每个词编号 |
+| **KV Cache** | 加速推理 | 记住已算过的，不重复算 |
+
 ## 延伸阅读
 
+- [[概念/LLM/transformer-architecture|Transformer 架构详解]]
 - [[概念/LLM/attention-variants|注意力变体]]
 - [[概念/LLM/kv-cache-plain|KV Cache 大白话]]
 - [[概念/LLM/grouped-query-attention|GQA]]
 - [[概念/LLM/mamba|Mamba (Transformer 替代)]]
+- [[概念/LLM/rope|RoPE 位置编码]]
+- [[概念/LLM/flash-attention-kernels|Flash Attention]]
+- [[概念/LLM/multi-head-latent-attention|MLA 多头潜在注意力]]
 - [[大模型/Transformer/Transformer_Architecture|Transformer 架构技术详解]]
+
+## 学习路径建议
+
+1. 先理解“全员同时阅读”的直觉
+2. 再看 Attention 计算公式
+3. 最后理解 Encoder/Decoder 的区别
+4. 动手: 用 HuggingFace 加载一个 Transformer 模型跑一跑

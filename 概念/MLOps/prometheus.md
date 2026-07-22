@@ -111,3 +111,90 @@ Prometheus Server
 3. **长期存储**：用 Thanos/Cortex 实现长期存储
 4. **与 Grafana 配合**：Prometheus + Grafana 是标准组合
 5. **服务发现**：用 K8s 服务发现自动监控新服务
+
+## 2026 Prometheus 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Prometheus 3.0** | 新架构、性能提升 | GA |
+| **Thanos** | 长期存储 + 全局视图 | GA |
+| **Cortex/Mimir** | 水平扩展 | GA |
+| **Alertmanager** | 告警路由 | GA |
+| **OTel 集成** | OpenTelemetry 兼容 | GA |
+
+## 架构：监控流程
+
+```
+应用/服务 → /metrics 端点 → Prometheus 拉取 → 存储 (TSDB)
+                                        ↓
+                            Alertmanager → 告警通知
+                                        ↓
+                            Grafana → 可视化
+```
+
+## 配置示例
+
+```yaml
+# prometheus.yml
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+rule_files:
+  - "alerts.yml"
+
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets: ["alertmanager:9093"]
+
+scrape_configs:
+  - job_name: "kubernetes-pods"
+    kubernetes_sd_configs:
+      - role: pod
+    relabel_configs:
+      - source_labels: [__meta_kubernetes_pod_annotation_prometheus_io_scrape]
+        action: keep
+        regex: true
+      - source_labels: [__meta_kubernetes_pod_annotation_prometheus_io_path]
+        action: replace
+        target_label: __metrics_path__
+```
+
+## 告警规则示例
+
+```yaml
+# alerts.yml
+groups:
+  - name: ml-service
+    rules:
+      - alert: HighErrorRate
+        expr: rate(http_requests_total{status=~"5.."}[5m]) > 0.1
+        for: 5m
+        labels:
+          severity: critical
+        annotations:
+          summary: "High error rate on {{ $labels.instance }}"
+      - alert: HighLatency
+        expr: histogram_quantile(0.99, rate(http_duration_seconds_bucket[5m])) > 1
+        for: 5m
+        labels:
+          severity: warning
+```
+
+## 常用 PromQL
+
+| 查询 | 说明 |
+|------|------|
+| `rate(http_requests_total[5m])` | 请求速率 |
+| `histogram_quantile(0.99, ...)` | P99 延迟 |
+| `sum by (job) (up)` | 服务健康状态 |
+| `increase(http_requests_total[1h])` | 1小时请求增量 |
+
+## 延伸阅读
+
+- [[概念/MLOps/grafana|Grafana]] — 可视化仪表板
+- [[概念/MLOps/observability|Observability]] — 可观测性
+- [[概念/MLOps/argo-rollouts|Argo Rollouts]] — 渐进式发布
+
+> ℹ️ Prometheus 是云原生监控标准，提供指标采集、存储、查询和告警能力，是 CNCF 毕业项目。

@@ -120,3 +120,92 @@ AI艺术创作（Midjourney、DALL-E 3）、图像编辑（Inpainting、超分�
 3. **提示词工程**：建立提示词模板库，确保输出一致性
 4. **批处理优化**：批量生成提升 GPU 利用率，降低单张成本
 5. **版本管理**：模型/LoRA/提示词全部版本化，确保可复现
+
+## 2026 生成式视觉模型生态
+
+| 模型 | 类型 | 特点 | 状态 |
+|------|------|------|------|
+| **Stable Diffusion 3.5** | 扩散模型 | 开源最强 | GA |
+| **DALL-E 4** | 扩散模型 | OpenAI 商用 | GA |
+| **Midjourney v7** | 扩散模型 | 艺术质量最佳 | GA |
+| **FLUX.1** | 扩散模型 | Black Forest Labs | GA |
+| **Imagen 4** | 扩散模型 | Google 最新 | GA |
+
+## 扩散模型工作原理
+
+```
+扩散模型生成流程:
+噪声 z_T ──→ 去噪步骤 ──→ z_{T-1} ──→ ... ──→ z_0 ──→ 图像
+     │                                              │
+     │         条件引导 (文本/图像)                    │
+     └──────────────────────────────────────────────┘
+
+关键组件:
+- U-Net/DiT: 噪声预测网络
+- VAE: 潜空间编解码
+- Text Encoder: 文本条件编码
+- Scheduler: 采样策略 (DDIM/DPM-Solver)
+```
+
+## 生产部署示例
+
+```python
+# 使用 diffusers 部署 Stable Diffusion
+from diffusers import StableDiffusionXLPipeline
+import torch
+
+pipe = StableDiffusionXLPipeline.from_pretrained(
+    "stabilityai/stable-diffusion-xl-base-1.0",
+    torch_dtype=torch.float16
+).to("cuda")
+
+# 优化: 启用 xFormers 内存高效注意力
+pipe.enable_xformers_memory_efficient_attention()
+
+# 生成图像
+image = pipe(
+    prompt="a futuristic cityscape at sunset",
+    num_inference_steps=30,
+    guidance_scale=7.5
+).images[0]
+```
+
+## 延伸阅读
+
+- [[概念/Vision/computer-vision|计算机视觉]] — CV 基础
+- [[概念/Vision/video-generation|视频生成]] — 视频生成技术
+- [[概念/Vision/multimodal-models|多模态模型]] — 图文理解
+- [[概念/LLM/large-language-model|LLM]] — 语言模型基础
+
+> ℹ️ 生成式视觉模型已进入生产成熟期，扩散模型是主流架构。
+
+## 图像生成质量评估
+
+| 指标 | 说明 | 适用场景 |
+|------|------|----------|
+| **FID** | 生成图像与真实图像分布距离 | 通用评估 |
+| **CLIP Score** | 图文一致性 | 文本引导生成 |
+| **IS** | 图像质量和多样性 | 通用评估 |
+| **人工评估** | 主观质量评分 | 最终评估 |
+
+## LoRA 微调示例
+
+```python
+# 使用 LoRA 微调 Stable Diffusion
+from diffusers import StableDiffusionXLPipeline
+from peft import LoraConfig
+
+# 加载基础模型
+pipe = StableDiffusionXLPipeline.from_pretrained("sdxl-base")
+
+# 配置 LoRA
+lora_config = LoraConfig(
+    r=16,
+    lora_alpha=32,
+    target_modules=["to_q", "to_v"],
+    lora_dropout=0.1
+)
+
+# 训练后加载 LoRA 权重
+pipe.load_lora_weights("./my-lora-weights")
+```

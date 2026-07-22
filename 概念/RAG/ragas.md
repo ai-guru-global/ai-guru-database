@@ -177,3 +177,33 @@ print(results)
 4. **驱动优化**：指标低分直接指向优化方向（检索/生成/Prompt）
 5. **LangChain 生态**：与 LangSmith 配合使用效果最佳
 6. **CI/CD 集成**：可作为 RAG 系统的自动化质量门禁
+
+## 2026 RAGAS 生态现状
+
+| 指标 | 说明 | 计算方式 | 状态 |
+|------|------|------|------|
+| Faithfulness | 忠实度 | LLM 判断 | ✅ 成熟 |
+| Answer Relevancy | 答案相关性 | 余弦相似度 | ✅ 成熟 |
+| Context Precision | 上下文精度 | LLM 判断 | ✅ 成熟 |
+| Context Recall | 上下文召回 | LLM 判断 | ✅ 成熟 |
+| Answer Correctness | 答案正确性 | 语义相似度 | ✅ 成熟 |
+| Noise Sensitivity | 噪声敏感度 | 新增 | ✅ 新增 |
+
+## 检查清单
+
+- [ ] RAGAS 已安装且版本固定
+- [ ] 评估指标已选择
+- [ ] 测试集已构建
+- [ ] CI/CD 集成已配置
+- [ ] 评估基线已建立
+- [ ] 定期评估已配置
+
+## 延伸阅读
+
+- [[概念/RAG/langsmith|LangSmith]] — 可观测性
+- [[概念/RAG/opik|Opik]] — 可观测性对比
+- [[概念/RAG/rag-patterns|RAG Patterns]] — RAG 模式
+- [[概念/RAG/rag-production-architecture|RAG 生产架构]]
+- [[模型评估/index|Model Evaluation]] — 模型评估
+
+> ℹ️ RAGAS 是 RAG 评估的事实标准，2026年提供 6+ 评估指标，是 RAG 系统质量门禁的必备工具。

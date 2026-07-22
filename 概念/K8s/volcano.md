@@ -116,3 +116,88 @@ aliases:
 2. **队列设计**：按团队/项目划分队列，设置优先级
 3. **与 Kueue 对比**：简单排队用 Kueue，复杂调度用 Volcano
 4. **GPU 共享**：配合 HAMi 实现 GPU 细粒度调度
+
+## Volcano 核心组件
+
+| 组件 | 功能 |
+|------|------|
+| vc-scheduler | 批处理调度器 |
+| vc-controller-manager | 控制器 |
+| vc-webhook-manager | Webhook |
+| vc-agent | 节点代理 |
+
+## Volcano 核心概念
+
+| 概念 | 说明 |
+|------|------|
+| Queue | 资源队列，配额管理 |
+| Job | 批处理作业 |
+| PodGroup | Pod 组，Gang Scheduling |
+| Task | 作业中的任务 |
+
+## Volcano Job 配置示例
+
+```yaml
+apiVersion: batch.volcano.sh/v1alpha1
+kind: Job
+metadata:
+  name: pytorch-training
+spec:
+  minAvailable: 4
+  schedulerName: volcano
+  queue: ml-queue
+  plugins:
+    ssh: []
+    svc: []
+  tasks:
+  - replicas: 1
+    name: master
+    template:
+      spec:
+        containers:
+        - name: pytorch
+          image: pytorch/pytorch:2.0-cuda11.8
+          resources:
+            limits:
+              nvidia.com/gpu: 1
+  - replicas: 3
+    name: worker
+    template:
+      spec:
+        containers:
+        - name: pytorch
+          image: pytorch/pytorch:2.0-cuda11.8
+          resources:
+            limits:
+              nvidia.com/gpu: 1
+```
+
+## Volcano vs Kueue
+
+| 特性 | Volcano | Kueue |
+|------|------|------|
+| 定位 | 批处理调度 | 作业排队 |
+| Gang Scheduling | 原生支持 | 依赖调度器 |
+| 队列管理 | ✅ | ✅ |
+| 公平共享 | ✅ | ✅ |
+| 适用场景 | 分布式训练 | 多租户排队 |
+
+## AI 场景应用
+
+| 场景 | 说明 |
+|------|------|
+| 分布式训练 | Gang Scheduling 保证所有 Pod 同时启动 |
+| 多租户 GPU | Queue 配额管理 |
+| 优先级调度 | 高优先级任务抢占 |
+| 公平共享 | 团队间公平分配 |
+
+> 💡 Volcano 是 K8s 批处理调度的标准方案，2026 年 AI 分布式训练推荐 Volcano + Gang Scheduling。
+
+## 常用命令
+
+| 命令 | 用途 |
+|------|------|
+| `kubectl get vcjob` | 查看 Volcano Job |
+| `kubectl get queue` | 查看队列 |
+| `kubectl get podgroup` | 查看 PodGroup |
+| `kubectl describe vcjob <name>` | Job 详情 |

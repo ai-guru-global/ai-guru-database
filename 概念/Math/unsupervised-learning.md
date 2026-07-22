@@ -136,3 +136,65 @@ updated: 2026-07-21T00:00:00Z
 3. **降维可视化**：高维数据用 t-SNE/UMAP 可视化
 4. **与有监督配合**：无监督特征 + 有监督分类
 5. **异常检测**：无监督学习适合异常检测
+
+## 2026 无监督学习生态
+
+| 方法 | 类型 | 应用 | 状态 |
+|------|------|------|------|
+| **K-Means** | 聚类 | 通用聚类 | GA |
+| **DBSCAN** | 密度聚类 | 异常检测 | GA |
+| **GMM** | 概率聚类 | 软聚类 | GA |
+| **PCA/t-SNE/UMAP** | 降维 | 可视化 | GA |
+| **Autoencoder** | 表示学习 | 特征提取 | GA |
+| **GAN** | 生成模型 | 数据增强 | GA |
+
+## 无监督学习架构
+
+```
+无监督学习方法分类:
+├── 聚类: K-Means / DBSCAN / GMM / HDBSCAN
+├── 降维: PCA / t-SNE / UMAP / Autoencoder
+├── 关联规则: Apriori / FP-Growth
+├── 异常检测: Isolation Forest / LOF / Autoencoder
+└── 生成模型: GAN / VAE / Flow
+```
+
+## 聚类代码示例
+
+```python
+from sklearn.cluster import KMeans, DBSCAN
+from sklearn.decomposition import PCA
+import numpy as np
+
+# K-Means 聚类
+kmeans = KMeans(n_clusters=5, random_state=42)
+clusters = kmeans.fit_predict(features)
+
+# DBSCAN 密度聚类
+dbscan = DBSCAN(eps=0.5, min_samples=5)
+labels = dbscan.fit_predict(features)
+
+# PCA 降维可视化
+pca = PCA(n_components=2)
+reduced = pca.fit_transform(features)
+```
+
+## 延伸阅读
+
+- [[概念/Math/supervised-learning|有监督学习]] — 有监督学习
+- [[概念/Math/self-supervised-learning|自监督学习]] — 预训练基础
+- [[概念/Math/anomaly-detection|异常检测]] — 异常检测
+- [[概念/Math/feature-engineering|特征工程]] — 特征设计
+
+> ℹ️ 无监督学习是数据探索的基础，聚类和降维是最常用的方法。
+
+## 无监督学习评估指标
+
+| 指标 | 说明 | 适用 |
+|------|------|------|
+| **Silhouette Score** | 簇内紧密度/簇间分离度 | 聚类 |
+| **Davies-Bouldin** | 簇间相似度 | 聚类 |
+| **Calinski-Harabasz** | 簇间方差/簇内方差 | 聚类 |
+| **重建误差** | Autoencoder 重建质量 | 降维 |
+
+> 无监督学习评估困难，建议结合多种指标和可视化综合判断。

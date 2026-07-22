@@ -117,3 +117,84 @@ spec:
 2. **与 Toleration 配合**：Pod 声明 Toleration 才能调度到 Taint 节点
 3. **维护场景**：节点维护时用 NoExecute 驱逐 Pod
 4. **软性偏好**：非强制场景用 PreferNoSchedule
+
+## Taint 组成
+
+| 组件 | 说明 | 示例 |
+|------|------|------|
+| Key | 键 | nvidia.com/gpu |
+| Value | 值 | true |
+| Effect | 效果 | NoSchedule |
+
+## Taint Effect 详解
+
+| Effect | 新 Pod | 现有 Pod | 适用场景 |
+|------|------|------|------|
+| NoSchedule | 不调度 | 不影响 | 专用节点 |
+| PreferNoSchedule | 尽量不调度 | 不影响 | 优先避免 |
+| NoExecute | 不调度 | 驱逐 | 紧急隔离 |
+
+## 常见 Taint 场景
+
+| 场景 | Taint | 说明 |
+|------|------|------|
+| Master 节点 | node-role.kubernetes.io/master:NoSchedule | 控制面专用 |
+| GPU 节点 | nvidia.com/gpu:NoSchedule | GPU 专用 |
+| 节点维护 | node.kubernetes.io/unschedulable:NoSchedule | 维护模式 |
+| 节点故障 | node.kubernetes.io/not-ready:NoExecute | 故障隔离 |
+| 训练专用 | workload=training:NoSchedule | 训练节点池 |
+
+## Taint 操作命令
+
+| 命令 | 用途 |
+|------|------|
+| `kubectl taint nodes node1 key=value:NoSchedule` | 添加 Taint |
+| `kubectl taint nodes node1 key:NoSchedule-` | 移除 Taint |
+| `kubectl describe node node1` | 查看节点 Taint |
+| `kubectl get nodes -o custom-columns=NAME:.metadata.name,TAINTS:.spec.taints` | 列出所有 Taint |
+
+## AI 集群 Taint 策略
+
+```bash
+# GPU 训练节点专用
+kubectl taint nodes gpu-train-01 workload=training:NoSchedule
+
+# GPU 推理节点专用
+kubectl taint nodes gpu-infer-01 workload=inference:NoSchedule
+
+# 节点维护
+kubectl taint nodes node1 maintenance=true:NoExecute
+```
+
+> 💡 Taint 是 K8s 节点专用化的核心机制，2026 年 AI 集群中 GPU 训练/推理节点分离必须使用 Taint + Toleration。
+
+## Taint vs NodeAffinity
+
+| 特性 | Taint | NodeAffinity |
+|------|------|------|
+| 作用对象 | 节点拒绝 Pod | Pod 选择节点 |
+| 方向 | 节点 → Pod | Pod → 节点 |
+| 配合使用 | Toleration | nodeSelector |
+| 适用场景 | 节点专用化 | Pod 定向调度 |
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| Pod 无法调度 | 节点有 Taint | 添加 Toleration |
+| Pod 被驱逐 | NoExecute 生效 | 添加 Toleration + tolerationSeconds |
+| Taint 不生效 | Effect 错误 | 检查 Effect 拼写 |
+| 节点无法调度 | Taint 未移除 | 移除 Taint |
+
+## 最佳实践
+
+| 实践 | 说明 |
+|------|------|
+| GPU 节点专用 | nvidia.com/gpu:NoSchedule |
+| 训练/推理分离 | workload=training/inference |
+| 维护模式 | maintenance=true:NoExecute |
+| 配合 Toleration | Pod 声明对应 Toleration |
+
+> 📌 Taint 和 Toleration 是成对使用的，Taint 设在节点上，Toleration 设在 Pod 上。
+
+> 📌 生产环境建议：GPU 节点全部打 Taint，只有声明 Toleration 的 AI 工作负载才能调度上去。

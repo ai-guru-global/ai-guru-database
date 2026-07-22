@@ -76,6 +76,56 @@ Docker 的关键组件协同工作，把镜像转化为运行中的容器：
 | **Docker Scout** | 供应链安全分析 | GA |
 | **AI 镜像优化** | 模型分层缓存 | 社区 |
 
+## 5. Dockerfile 最佳实践
+
+```dockerfile
+# 多阶段构建示例（AI 推理服务）
+FROM python:3.11-slim AS builder
+WORKDIR /app
+COPY requirements.txt .
+RUN pip install --no-cache-dir --prefix=/install -r requirements.txt
+
+FROM python:3.11-slim AS runtime
+WORKDIR /app
+COPY --from=builder /install /usr/local
+COPY . .
+RUN useradd -m appuser
+USER appuser
+EXPOSE 8000
+CMD ["python", "-m", "uvicorn", "main:app", "--host", "0.0.0.0"]
+```
+
+## 6. 常用命令速查
+
+| 命令 | 作用 |
+|------|------|
+| `docker build -t app:v1 .` | 构建镜像 |
+| `docker run -d -p 8000:8000 app:v1` | 运行容器 |
+| `docker compose up -d` | 启动多容器应用 |
+| `docker exec -it <id> /bin/sh` | 进入容器 |
+| `docker logs -f <id>` | 查看日志 |
+| `docker system prune -a` | 清理无用资源 |
+| `docker scout cves app:v1` | 漏洞扫描 |
+
+## 7. AI 场景 Docker 实践
+
+| 场景 | 实践 | 说明 |
+|------|------|------|
+| **模型镜像** | 分层缓存 | 模型权重单独一层，加速构建 |
+| **GPU 容器** | `--gpus all` | 需要 nvidia-container-toolkit |
+| **大模型加载** | Volume 挂载 | 避免模型打包进镜像 |
+| **推理服务** | 健康检查 | 配置 HEALTHCHECK 指令 |
+| **多模型部署** | Compose 编排 | 一键拉起多个推理服务 |
+
+## 8. 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| 镜像过大 | 未用多阶段构建 | 使用 slim/distroless 基础镜像 |
+| GPU 不可用 | 缺少 runtime | 安装 nvidia-container-toolkit |
+| 构建慢 | 未利用缓存 | 优化 Dockerfile 层顺序 |
+| OOM Killed | 内存限制过低 | 调整 `--memory` 参数 |
+
 ## 生产最佳实践
 
 1. **多阶段构建**：减小镜像体积，分离构建与运行环境
@@ -83,3 +133,71 @@ Docker 的关键组件协同工作，把镜像转化为运行中的容器：
 3. **镜像扫描**：集成 Docker Scout/Trivy 进行漏洞扫描
 4. **资源限制**：设置 CPU/内存限制，防止容器资源耗尽
 5. **日志管理**：配置日志驱动，避免磁盘占满
+6. **安全加固**：非 root 运行、只读文件系统、最小权限
+
+## 相关概念
+
+- [[概念/containerd|containerd]] — Kubernetes 主流容器运行时
+- [[概念/oci-runtime|OCI Runtime]] — 开放容器运行时标准
+- [[概念/kubernetes|Kubernetes]] — 容器编排平台
+
+## 安全加固清单
+
+| 检查项 | 说明 |
+|--------|------|
+| 非 root 运行 | `USER appuser` |
+| 只读文件系统 | `--read-only` |
+| 最小权限 | 删除不必要 capabilities |
+| 镜像签名 | 使用 cosign/Notary |
+| 漏洞扫描 | 集成 Trivy/Scout |
+| 资源限制 | 设置 CPU/内存限制 |
+
+## 总结
+
+Docker 是 AI 应用容器化的基石，通过镜像将应用与依赖打包成标准化、可移植的运行单元。从模型推理服务到 MLOps 工具链，几乎所有 AI 工作负载都以容器形式交付。
+
+---
+
+> 💡 Docker 是 AI 应用容器化的基石，从模型推理服务到 MLOps 工具链，几乎所有 AI 工作负载都以容器形式交付。
+
+## 版本与运行时对比
+
+| 运行时 | 定位 | 适用场景 |
+|--------|------|----------|
+| **Docker Engine** | 全功能容器引擎 | 开发、构建镜像 |
+| **containerd** | 轻量运行时 | K8s 生产集群 |
+| **CRI-O** | K8s 专用运行时 | OpenShift |
+| **Podman** | 无守护进程 | 安全敏感环境 |
+
+## 常用命令速查
+
+| 命令 | 说明 |
+|------|------|
+| `docker build -t app:v1 .` | 构建镜像 |
+| `docker run --gpus all app:v1` | GPU 容器运行 |
+| `docker images --format '{{.Repository}}:{{.Tag}}'` | 列出镜像 |
+| `docker system prune -af` | 清理无用资源 |
+| `docker inspect <container>` | 查看容器详情 |
+
+## 生产检查清单
+
+1. **多阶段构建**：减小最终镜像体积
+2. **固定基础镜像版本**：避免 `latest` 标签
+3. **非 root 运行**：设置 `USER` 指令
+4. **健康检查**：配置 `HEALTHCHECK` 指令
+5. **日志管理**：使用 json-file 或 fluentd 驱动
+
+## 相关概念
+
+- [[概念/containerd|containerd]] — 轻量容器运行时
+- [[概念/cri|CRI]] — 容器运行时接口
+- [[概念/trivy|Trivy]] — 镜像漏洞扫描
+- [[概念/kubernetes|Kubernetes]] — 容器编排平台
+
+## 版本兼容性
+
+| Docker 版本 | containerd | K8s 兼容 | 状态 |
+|-------------|-----------|---------|------|
+| 27.x | 1.7+ | 1.29+ | 稳定 |
+| 26.x | 1.7 | 1.28+ | 维护 |
+| 25.x | 1.6 | 1.27+ | EOL |

@@ -119,3 +119,91 @@ def kto_loss(policy_chosen_logps, policy_rejected_logps,
 3. **beta 调优**：从 0.1 开始，根据 KL 散度调整
 4. **与 DPO 对比**：有 A/B 数据用 DPO，只有单边反馈用 KTO
 5. **评估指标**：使用胜率、人类评估、自动指标综合评估
+
+## 2026 KTO 生态现状
+
+| 框架/工具 | 支持 | 特色 | 状态 |
+|------|------|------|------|
+| TRL (HuggingFace) | ✅ | KTOTrainer | ✅ 主流 |
+| LLaMA-Factory | ✅ | 集成支持 | ✅ 主流 |
+| OpenRLHF | ✅ | 分布式 | ✅ 主流 |
+| Axolotl | ✅ | 配置支持 | ✅ 成熟 |
+
+## 检查清单
+
+- [ ] 单边反馈数据已收集
+- [ ] 数据质量已验证
+- [ ] beta 参数已调优
+- [ ] 评估基准已建立
+- [ ] 与 DPO 效果已对比
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| 效果不如 DPO | 数据质量差 | 提升数据质量 |
+| 训练不稳定 | beta 不当 | 调整 beta |
+| 过拟合 | 数据量少 | 增加数据 + 正则化 |
+| 生成质量下降 | 过度优化 | 早停 + KL 约束 |
+
+## 延伸阅读
+
+- [[概念/Training/dpo|DPO]] — 直接偏好优化
+- [[概念/Training/grpo|GRPO]] — 组相对策略优化
+- [[概念/Training/orpo|ORPO]] — 简化偏好优化
+- [[概念/Training/preference-learning|Preference Learning]] — 偏好学习
+- [[概念/Training/rlhf|RLHF]] — 人类反馈强化学习
+
+> ℹ️ KTO 是单边反馈场景的偏好对齐方案，无需 A/B 对比数据，2026年适合数据稀缺场景 。
+
+## KTO vs 其他偏好对齐方法
+
+| 方法 | 数据需求 | 参考模型 | 效果 | 复杂度 |
+|------|------|------|------|------|
+| PPO | A/B 对比 | 需要 | 最高 | 高 |
+| DPO | A/B 对比 | 需要 | 高 | 中 |
+| KTO | 单边反馈 | 需要 | 中高 | 中 |
+| ORPO | A/B 对比 | 不需要 | 中高 | 低 |
+| SimPO | A/B 对比 | 不需要 | 中高 | 最低 |
+
+## KTO 损失函数
+
+```
+L_KTO = E[λ_D · log σ(β · log π(y_w|x)/π_ref(y_w|x))]
+      + E[λ_U · log σ(β · log π_ref(y_l|x)/π(y_l|x))]
+
+其中:
+- y_w: 期望输出 (desirable)
+- y_l: 不期望输出 (undesirable)
+- λ_D, λ_U: 权重系数
+- β: 温度参数
+```
+
+## KTO 训练配置示例
+
+```python
+from trl import KTOTrainer, KTOConfig
+
+config = KTOConfig(
+    output_dir="./kto_output",
+    beta=0.1,                    # KL 惩罚系数
+    desirable_weight=1.0,        # 期望样本权重
+    undesirable_weight=1.0,      # 不期望样本权重
+    learning_rate=5e-7,
+    per_device_train_batch_size=4,
+    gradient_accumulation_steps=4,
+    max_length=1024,
+)
+
+# 数据格式: 单边反馈
+# {"prompt": "...", "completion": "...", "label": true/false}
+```
+
+## KTO 适用场景
+
+| 场景 | 说明 | 优势 |
+|------|------|------|
+| 用户反馈 | 点赞/点踩数据 | 无需配对 |
+| 安全对齐 | 有害/无害分类 | 单边标注 |
+| 质量过滤 | 好/差回答 | 数据易得 |
+| 数据稀缺 | 少量反馈数据 | 样本效率高 |

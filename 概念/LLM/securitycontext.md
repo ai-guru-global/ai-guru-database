@@ -193,3 +193,14 @@ spec:
 ```
 
 对于 Agent 系统，SecurityContext 尤其重要——Agent 可能执行任意代码、调用外部工具，必须通过严格的容器安全配置限制其影响范围。
+
+## 快速检查清单
+
+- [ ] `privileged: false` 已设置
+- [ ] `runAsNonRoot: true` 已设置
+- [ ] `readOnlyRootFilesystem: true` 已设置
+- [ ] `allowPrivilegeEscalation: false` 已设置
+- [ ] `capabilities.drop: ALL` 已设置
+- [ ] `seccompProfile.type: RuntimeDefault` 已设置
+- [ ] PSA restricted 级别已启用
+- [ ] Kyverno/OPA 策略已配置

@@ -139,3 +139,66 @@ vllm serve TheBloke/Llama-3-70B-AWQ \
 - [[概念/Training/model-compression|模型压缩]] — 量化的上位概念
 - [[大模型/LLM_Inference/LLM_Inference_Deep_Dive|LLM 推理深度解析]] — 量化在推理引擎中的部署
 - [[大模型/Edge_LLM/Edge_LLM_Deep_Dive|端侧 LLM 深度解析]] — 端侧量化实践
+
+## 2026 量化技术全景
+
+| 方法 | 精度 | 原理 | 质量 | 速度 | 状态 |
+|------|:----:|------|:----:|:----:|:----:|
+| **FP8 (E4M3)** | 8-bit | 浮点量化 | 极高 | 快 | GA |
+| **GPTQ** | 4-bit | 后训练量化 | 高 | 快 | GA |
+| **AWQ** | 4-bit | 激活感知 | 高 | 快 | GA |
+| **GGUF Q4_K_M** | 4-bit | 混合精度 | 高 | 快 | GA |
+| **GGUF Q5_K_M** | 5-bit | 混合精度 | 极高 | 中 | GA |
+| **bitsandbytes** | 4/8-bit | 动态量化 | 高 | 中 | GA |
+| **QuIP#** | 2-bit | 格量化 | 中 | 极快 | 研究 |
+| **AQLM** | 2-bit | 加性量化 | 中 | 极快 | 研究 |
+
+## 量化方法选择指南
+
+| 场景 | 推荐方法 | 说明 |
+|------|---------|------|
+| H100+ 生产推理 | FP8 | 原生支持，质量保留 >99% |
+| GPU 推理 (A100) | GPTQ/AWQ INT4 | 成熟稳定 |
+| 端侧/CPU | GGUF Q4_K_M | llama.cpp 生态 |
+| 微调 | QLoRA (4-bit) | 显存减半 |
+| 极端压缩 | QuIP#/AQLM 2-bit | 质量损失较大 |
+
+## 量化配置示例
+
+```python
+# AWQ 量化示例
+from awq import AutoAWQForCausalLM
+
+model = AutoAWQForCausalLM.from_pretrained("meta-llama/Llama-4-8B")
+tokenizer = AutoTokenizer.from_pretrained("meta-llama/Llama-4-8B")
+
+quant_config = {
+    "zero_point": True,
+    "q_group_size": 128,
+    "w_bit": 4,
+    "version": "GEMM"
+}
+model.quantize(tokenizer, quant_config=quant_config)
+model.save_quantized("./llama4-8b-awq")
+```
+
+## 生产最佳实践
+
+1. **FP8 优先**：H100+ GPU 首选 FP8，质量保留 >99% 且性能提升 30%
+2. **4-bit 是甜点**：INT4/AWQ 在大多数任务上质量损失 <5%
+3. **避免 <3 bit**：除非极端资源受限，否则质量下降明显
+4. **评估先行**：量化前后跑 benchmark 对比
+5. **分组量化**：使用 group_size=128 减少离群值影响
+6. **KV Cache 量化**：长上下文场景启用 FP8 KV Cache
+7. **与推理引擎配合**：确认 vLLM/TGI 支持目标量化格式
+
+## 量化质量影响参考
+
+| 精度 | 模型大小 (7B) | 质量保留 | 速度提升 | 适用 |
+|:----:|:----------:|:--------:|:--------:|------|
+| FP16 | ~14GB | 100% | 1.0x | 基线 |
+| FP8 | ~7GB | >99% | 1.3x | H100+ 生产 |
+| INT8 | ~7GB | >99% | 1.2x | 通用 |
+| INT4 (AWQ) | ~4GB | ~97% | 1.5x | 资源受限 |
+| INT4 (GGUF) | ~4.2GB | ~96% | 1.4x | 端侧/CPU |
+| INT2 | ~2.5GB | ~85% | 2.0x | 极端压缩 |

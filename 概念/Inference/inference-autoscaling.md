@@ -166,3 +166,53 @@ spec:
 - [[概念/Inference/request-scheduling|Request Scheduling]]
 - [[部署推理/Inference_Performance/Inference_Autoscaling_and_Load_Balancing|弹性扩缩容与负载均衡]]
 - [[概念/Inference/cuda-graph|CUDA Graph]]
+
+## 扩缩容策略对比
+
+| 策略 | 触发条件 | 响应速度 | 适用场景 |
+|------|---------|---------|----------|
+| **基于 QPS** | 请求量超阈值 | 中 | 流量可预测 |
+| **基于队列深度** | 积压请求数 | 快 | 延迟敏感 |
+| **基于 GPU 利用率** | GPU 使用率 >80% | 中 | 资源优化 |
+| **基于 TTFT** | 首 Token 延迟超标 | 快 | SLA 保障 |
+| **定时扩缩** | 时间规则 | 慢 | 流量规律明显 |
+| **预测式** | ML 预测流量 | 极快 | 大规模生产 |
+
+## K8s 扩缩容配置示例
+
+```yaml
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: llm-inference-hpa
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: vllm-inference
+  minReplicas: 2
+  maxReplicas: 10
+  metrics:
+  - type: Pods
+    pods:
+      metric:
+        name: gpu_utilization
+      target:
+        type: AverageValue
+        averageValue: "75"
+  - type: Pods
+    pods:
+      metric:
+        name: request_queue_depth
+      target:
+        type: AverageValue
+        averageValue: "10"
+```
+
+## 生产最佳实践
+
+1. **多指标组合**：GPU 利用率 + 队列深度 + TTFT 综合判断
+2. **缩容延迟**：缩容设置 5-10min 冷却期，避免频繁波动
+3. **预热新实例**：新实例加载模型需 30s-5min，提前扩容
+4. **最小副本数**：至少保持 2 个副本，避免单点故障
+5. **成本监控**：扩缩容与成本挂钩，设置预算上限

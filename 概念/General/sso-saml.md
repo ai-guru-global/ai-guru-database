@@ -143,3 +143,67 @@ AI Stack 支持通过 **AzureAD + SAML2** 实现企业 SSO：
 3. **会话管理**：设置合理的 token 过期时间，支持全局登出
 4. **角色映射**：IdP 组 → 平台 RBAC 角色自动映射，避免手动授权
 5. **审计日志**：记录所有 SSO 登录事件，异常登录实时告警
+
+## OIDC 集成配置示例
+
+```yaml
+# AI 平台 OIDC SSO 配置
+oidc:
+  issuer: "https://login.example.com/realms/ai-platform"
+  client_id: "ai-platform-prod"
+  client_secret: "${OIDC_CLIENT_SECRET}"
+  scopes: ["openid", "profile", "email", "groups"]
+  redirect_uri: "https://ai.example.com/auth/callback"
+  token_expiry: 3600
+  refresh_token_expiry: 86400
+  
+role_mapping:
+  idp_groups:
+    "ai-admins": "platform_admin"
+    "ml-engineers": "model_editor"
+    "data-analysts": "read_only"
+  
+mfa:
+  required: true
+  methods: ["totp", "webauthn"]
+  
+scim:
+  enabled: true
+  endpoint: "https://ai.example.com/scim/v2"
+  sync_interval: 300  # 秒
+```
+
+## SAML vs OIDC vs OAuth 2.0 对比
+
+| 维度 | SAML 2.0 | OIDC | OAuth 2.0 |
+|------|----------|------|------------|
+| 协议类型 | XML | JSON/JWT | JSON |
+| 主要用途 | 企业 SSO | 身份认证 | 授权委托 |
+| 移动端支持 | 差 | 优 | 优 |
+| 复杂度 | 高 | 中 | 中 |
+| 2026 趋势 | 遗留维护 | 主流首选 | 配合 OIDC |
+| AI 平台支持 | 部分 | 全部 | 全部 |
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| SSO 登录后权限丢失 | 角色映射未配置 | IdP 组 → RBAC 自动映射 |
+| Token 过期频繁 | 过期时间过短 | 调整 token_expiry + refresh |
+| SCIM 同步失败 | 端点不可达 | 检查网络 + 重试机制 |
+| 异常登录未检测 | 缺少审计日志 | 接入 SIEM + 实时告警 |
+
+## 生产检查清单
+
+1. ✅ SSO 强制叠加 MFA（TOTP/WebAuthn）
+2. ✅ IdP 组 → 平台角色自动映射
+3. ✅ Token 过期时间合理（Access 1h / Refresh 24h）
+4. ✅ SCIM 自动同步用户生命周期
+5. ✅ 所有登录事件记录审计日志
+6. ✅ 支持全局登出（Single Logout）
+
+## 总结
+
+SSO/SAML 是企业 AI 平台安全体系的基石，2026 年 OIDC 已成为新项目的首选协议，配合 SCIM 自动化、MFA 强制和零信任策略，构建完整的身份认证与访问控制体系。
+
+> 💡 SSO 的核心价值不仅是“一次登录”，更是“统一身份治理”——所有 AI 平台访问都通过统一身份源管控。

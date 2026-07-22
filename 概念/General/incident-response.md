@@ -83,3 +83,118 @@ Incident Response 是系统发生故障时，按预定流程进行检测、响�
 - [[概念/slo|SLO]]
 - [[概念/General/error-budget|Error Budget]]
 - [[运维/Incident_Response/AI_Incident_Response_Framework|AI 事故响应框架]]
+
+---
+
+## 事故响应工具链
+
+| 工具 | 职责 | 说明 |
+|------|------|------|
+| PagerDuty | 告警和 On-Call | 事故通知 |
+| Opsgenie | 告警管理 | Atlassian 生态 |
+| StatusPage | 状态页 | 用户通知 |
+| Slack/钉钉 | 战时沟通 | 事故频道 |
+| Jira | 事故跟踪 | 任务管理 |
+| Notion/Confluence | 复盘文档 | 知识沉淀 |
+
+## 复盘模板
+
+| 章节 | 内容 |
+|------|------|
+| 事故概述 | 时间、影响、级别 |
+| 时间线 | 检测→响应→修复全过程 |
+| 根因分析 | 5 Whys / 鱼骨图 |
+| 影响评估 | 用户数、时长、损失 |
+| 改进措施 | 短期 + 长期 Action Items |
+| 经验教训 | 可复用的经验 |
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| 告警风暴 | 阈值不合理 | 告警收敛/分组 |
+| 响应慢 | On-Call 流程不清 | 明确角色和职责 |
+| 复盘流于形式 | 责备文化 | 无责备复盘 |
+| 同样事故重复发生 | 改进未落地 | 跟踪 Action Items |
+
+## 相关概念
+
+- [[概念/sre|SRE]] — 站点可靠性工程
+- [[概念/slo|SLO]] — 服务等级目标
+- [[概念/General/error-budget|Error Budget]] — 错误预算
+- [[概念/chaos-engineering|Chaos Engineering]] — 混沌工程
+
+> 💡 事故响应的核心是“先止血再修”——不要试图在火场里找原因，先灭火再说。
+
+## 版本兼容性
+
+| 工具 | 版本 | 状态 |
+|------|------|------|
+| PagerDuty | SaaS | GA |
+| Opsgenie | SaaS | GA |
+| StatusPage | SaaS | GA |
+| Grafana OnCall | 1.0+ | GA |
+
+## 生产检查清单
+
+1. 建立事故分级标准和响应流程
+2. 配置 On-Call 轮值和升级策略
+3. 编写关键事故类型 Runbook
+4. 配置状态页和用户通知
+5. 建立无责备复盘文化
+6. 跟踪改进措施落地
+7. 定期进行事故演练
+8. 建立事故知识库
+
+## 总结
+
+Incident Response 是系统发生故障时按预定流程进行检测、响应、止血、定位、修复和复盘的全过程。目标是最大化 MTTR，最小化用户影响。
+
+> 💡 事故响应的终极目标不是“救火”，而是“防火”——通过复盘和混沌工程，让事故不再发生。
+
+## 常用命令
+
+| 命令 | 说明 |
+|------|------|
+| `kubectl rollout undo deployment/<name>` | 回滚部署 |
+| `kubectl scale deployment/<name> --replicas=0` | 停止服务 |
+| `kubectl logs <pod> --previous` | 查看崩溃前日志 |
+| `kubectl get events --sort-by=.metadata.creationTimestamp` | 查看事件 |
+
+## 学习资源
+
+| 资源 | 类型 | 说明 |
+|------|------|------|
+| Google SRE 书籍 | 书籍 | 事故响应最佳实践 |
+| PagerDuty 文档 | 文档 | On-Call 指南 |
+| Blameless 博客 | 博客 | 无责备复盘 |
+| Chaos Mesh | 工具 | 混沌工程演练 |
+
+## 事故响应成熟度
+
+| 级别 | 说明 | 特征 |
+|------|------|------|
+| L1 被动 | 用户报告才知道 | 无监控、无流程 |
+| L2 主动 | 告警自动触发 | 有监控、有 On-Call |
+| L3 标准化 | 标准化 Runbook | 有流程、有复盘 |
+| L4 自动化 | 自动止血和修复 | 自动回滚、自动扩容 |
+| L5 预防 | 混沌工程主动验证 | 事故不再发生 |
+
+## 总结
+
+Incident Response 是系统发生故障时按预定流程进行检测、响应、止血、定位、修复和复盘的全过程。目标是最大化 MTTR，最小化用户影响。无责备复盘和混沌工程是持续改进的关键。
+
+> 💡 事故响应的核心是“先止血再修”——不要试图在火场里找原因，先灭火再说。
+
+## 总结
+
+Incident Response 是 SRE 实践的核心环节。通过标准化流程、无责备复盘和混沌工程，将“被动救火”转变为“主动预防”，持续提升系统可靠性。
+
+> 💡 事故响应的终极目标不是“救火”，而是“防火”——通过复盘和混沌工程，让事故不再发生。
+
+## 相关概念
+
+- [[概念/sre|SRE]] — 站点可靠性工程
+- [[概念/slo|SLO]] — 服务等级目标
+- [[概念/chaos-engineering|Chaos Engineering]] — 混沌工程
+- [[概念/resilience|Resilience]] — 系统韧性

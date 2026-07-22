@@ -169,3 +169,56 @@ swift sft --model_type qwen3-235b-a22b \
 3. **模型评估**：利用平台内置评估工具快速对比模型效果
 4. **私有部署**：企业场景使用私有化 ModelScope 管理内部模型
 5. **版本固定**：生产环境固定模型 revision，避免意外更新
+
+## ModelScope 核心功能
+
+```python
+from modelscope import snapshot_download, pipeline
+
+# 下载模型
+model_dir = snapshot_download(
+    'qwen/Qwen2-7B-Instruct',
+    revision='v1.0.0',
+    cache_dir='/data/models'
+)
+
+# 快速推理
+pipe = pipeline('text-generation', model='qwen/Qwen2-7B-Instruct')
+result = pipe("解释量子计算")
+print(result[0]['generated_text'])
+```
+
+## ModelScope vs HuggingFace 对比
+
+| 维度 | ModelScope | HuggingFace |
+|------|------------|-------------|
+| 定位 | 国内开源社区 | 全球开源社区 |
+| 网络访问 | 国内快 | 需镜像 |
+| 模型数量 | 中 | 极大 |
+| 中文支持 | 强 | 中 |
+| 数据集 | 中文丰富 | 全球丰富 |
+| 企业适用 | 国内企业 | 全球企业 |
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| 下载速度慢 | 网络问题 | 使用国内镜像站 |
+| 模型加载失败 | 依赖缺失 | 安装 modelscope[framework] |
+| 版本不兼容 | SDK 升级 | 固定 modelscope 版本 |
+| Token 权限不足 | 私有模型 | 配置 SDK Token |
+
+## 生产检查清单
+
+1. ✅ 固定模型 revision 版本
+2. ✅ 配置统一缓存目录
+3. ✅ 生产环境使用私有模型库
+4. ✅ 定期清理过期缓存
+5. ✅ 监控下载速度和完整性
+6. ✅ 评估国内网络访问稳定性
+
+## 总结
+
+ModelScope（魔搭社区）是阿里云旗下的开源模型社区，2026 年已成为国内 AI 开发者的首选模型平台。其核心价值是为国内用户提供快速、稳定的模型下载和推理体验，是 HuggingFace 在国内的最佳替代。
+
+> 💡 ModelScope 的核心价值：“国内开发者的 HuggingFace”——解决网络访问问题，提供本土化模型生态。

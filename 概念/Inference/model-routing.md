@@ -144,3 +144,59 @@ def route_model(prompt, history=None):
 - [[概念/Inference/inference-cluster-scheduling|推理集群调度]]
 - [[运维/Cost_Optimization_AI_Deep_Dive|成本优化]]
 - [[架构基建/AI_Gateway/AI_Gateway_2026|AI Gateway]]
+
+## 模型路由策略全景
+
+| 策略 | 说明 | 适用场景 | 工具 |
+|------|------|---------|------|
+| **复杂度路由** | 简单问题→小模型，复杂问题→大模型 | 成本优化 | LiteLLM, Portkey |
+| **领域路由** | 代码→Coder，数学→Math，通用→Base | 质量优化 | 自实现 |
+| **成本路由** | 按预算选择最便宜可用模型 | 预算控制 | OpenRouter |
+| **延迟路由** | 实时→小模型，离线→大模型 | SLA 分级 | AI Gateway |
+| **回退路由** | 主模型失败→备用模型 | 高可用 | LiteLLM |
+| **A/B 路由** | 按比例分流测试新模型 | 模型评估 | 自实现 |
+
+## 路由决策示例
+
+```python
+# 基于复杂度的模型路由
+from openai import OpenAI
+
+def route_model(user_query: str) -> str:
+    """根据查询复杂度选择模型"""
+    # 简单规则路由
+    if len(user_query) < 50 and not any(kw in user_query for kw in ["代码", "数学", "证明"]):
+        return "qwen3-8b"       # 简单问题 → 小模型
+    elif "代码" in user_query or "code" in user_query.lower():
+        return "qwen3-coder"    # 代码问题 → 代码模型
+    else:
+        return "qwen3-235b"     # 复杂问题 → 大模型
+
+# 生产环境建议用 LLM 分类器做路由，更准确
+```
+
+## 生产最佳实践
+
+1. **路由 + 缓存组合**：先查缓存，未命中再路由到模型
+2. **监控路由效果**：跟踪各模型的调用量/质量/成本
+3. **回退必配**：主模型失败时自动回退到备用模型
+4. **渐进式切换**：新模型先分流 5%，确认效果后逐步增加
+5. **成本透明**：按用户/功能/模型维度统计 Token 消耗
+
+## 延伸阅读
+
+- [[概念/Inference/model-serving|模型服务]] — 服务架构
+- [[概念/Inference/model-gateway|AI Gateway]] — 网关实现
+- [[概念/Inference/inference-autoscaling|扩缩容]] — 弹性伸缩
+- [[概念/LLM/llmops|LLMOps]] — 运维体系
+
+> ℹ️ 模型路由是成本优化的核心手段，合理路由可降低 30-50% 成本。
+
+## 2026 模型路由生态
+
+| 路由方案 | 特点 | 适用场景 | 状态 |
+|----------|------|----------|------|
+| **LiteLLM** | 统一 API，多提供商 | 多模型管理 | GA |
+| **OpenRouter** | 托管路由服务 | 快速接入 | GA |
+| **SGLang Router** | 前缀感知路由 | 高并发 | GA |
+| **自研 Gateway** | 完全可控 | 大型企业 | 自定义 |

@@ -159,3 +159,56 @@ Facebook 开发的可加模型：$y(t) = g(t) + s(t) + h(t) + \epsilon_t$
 3. **深度学习**：复杂时序用 Transformer
 4. **异常检测**：时序异常检测用于监控
 5. **特征工程**：时序特征工程很重要
+
+## 2026 时序分析生态
+
+| 方法 | 代表 | 特点 | 状态 |
+|------|------|------|------|
+| **统计方法** | ARIMA/Prophet | 经典可解释 | GA |
+| **深度方法** | Transformer/TFT | 复杂模式 | GA |
+| **预训练** | TimesFM/Chronos | 零样本预测 | GA |
+| **图时序** | GNN + Temporal | 多变量 | GA |
+| **异常检测** | Anomaly Transformer | 时序异常 | GA |
+
+## 时序分析架构
+
+```
+时序分析方法分类:
+├── 统计方法: ARIMA / SARIMA / Prophet / ETS
+├── 机器学习: XGBoost / LightGBM + 时序特征
+├── 深度学习: LSTM / GRU / TCN / Transformer
+├── 预训练模型: TimesFM / Chronos / Lag-Llama
+└── 多变量: VAR / Graph Temporal / TFT
+```
+
+## 时序预测代码示例
+
+```python
+# 使用 Prophet 进行时序预测
+from prophet import Prophet
+import pandas as pd
+
+# 准备数据
+df = pd.DataFrame({'ds': dates, 'y': values})
+
+# 创建模型
+model = Prophet(
+    yearly_seasonality=True,
+    weekly_seasonality=True,
+    daily_seasonality=True
+)
+model.fit(df)
+
+# 预测
+future = model.make_future_dataframe(periods=30)
+forecast = model.predict(future)
+```
+
+## 延伸阅读
+
+- [[概念/Math/feature-engineering|特征工程]] — 时序特征
+- [[概念/Math/anomaly-detection|异常检测]] — 时序异常
+- [[概念/Math/neural-networks|神经网络]] — 深度时序
+- [[概念/MLOps/monitoring|监控]] — 时序监控
+
+> ℹ️ 时序分析是金融/运维/IoT 的核心，Transformer 预训练模型是新趋势。

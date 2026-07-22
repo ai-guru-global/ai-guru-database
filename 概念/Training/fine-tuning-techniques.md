@@ -162,3 +162,42 @@ $$\mathcal{L}_{DPO} = -\mathbb{E}\left[\log \sigma\left(\beta \log \frac{\pi_\th
 3. **超参调优**：学习率、batch size、epochs 需根据任务调整
 4. **评估体系**：建立任务特定评估基准
 5. **版本管理**：微调模型纳入版本控制，支持回滚
+
+## 2026 微调技术生态现状
+
+| 技术 | 类型 | 显存节省 | 精度 | 状态 |
+|------|------|------|------|------|
+| Full Fine-tuning | 全参数 | 0% | 最高 | ✅ 成熟 |
+| LoRA | PEFT | 60-80% | 高 | ✅ 主流 |
+| QLoRA | 量化 PEFT | 80-90% | 中高 | ✅ 主流 |
+| DoRA | PEFT | 60-80% | 高 | ✅ 前沿 |
+| Prefix Tuning | PEFT | 70-90% | 中 | ✅ 成熟 |
+| Adapter | PEFT | 60-80% | 中高 | ✅ 成熟 |
+
+## 检查清单
+
+- [ ] 微调方法已根据资源和目标选择
+- [ ] 数据质量已验证
+- [ ] 超参已调优（lr/batch/epochs）
+- [ ] 评估基准已建立
+- [ ] 模型版本已管理
+- [ ] 部署方案已规划
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| 过拟合 | 数据少/epochs 多 | 增加数据 + 早停 |
+| 效果差 | 学习率不当 | 调优 lr + warmup |
+| 显存不足 | 模型太大 | 用 QLoRA 或梯度检查点 |
+| 灾难性遗忘 | 全参数微调 | 用 PEFT 或混合数据 |
+
+## 延伸阅读
+
+- [[概念/Training/qlora|QLoRA]] — 量化 LoRA
+- [[概念/Training/pissa|PiSSA]] — 奇异值初始化
+- [[概念/Training/rslora|rsLoRA]] — 稳定 LoRA
+- [[概念/Training/pre-training|Pre-training]] — 预训练
+- [[概念/LLM/lora|LoRA]] — 低秩适配
+
+> ℹ️ 微调技术选型：资源充足用 Full FT，资源受限用 QLoRA，追求效果用 DoRA+PiSSA，始终配合评估和版本管理。

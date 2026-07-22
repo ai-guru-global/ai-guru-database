@@ -198,3 +198,11 @@ safety_violation_rate: < 0.1%     # 安全违规 ≤ 0.1%
 3. **LLM 可观测**：LLM 应用用 Langfuse 追踪
 4. **告警配置**：关键指标配置告警
 5. **成本意识**：可观测性数据有成本，合理采样
+
+## 延伸阅读
+
+- [[概念/MLOps/prometheus|Prometheus]] — 指标监控
+- [[概念/MLOps/grafana|Grafana]] — 可视化
+- [[概念/MLOps/evidently|Evidently]] — ML 监控
+
+> ℹ️ 可观测性是理解系统内部状态的能力，通过指标、日志、追踪三大支柱实现。

@@ -134,3 +134,78 @@ kubectl rollout restart deployment/web-app
 2. **大小限制**：单个 ConfigMap 不超过 1MiB
 3. **不可变性**：生产环境设置 immutable: true
 4. **版本管理**：配合 Helm/Kustomize 管理多环境配置
+
+## ConfigMap vs Secret
+
+| 特性 | ConfigMap | Secret |
+|------|------|------|
+| 用途 | 配置数据 | 敏感数据 |
+| 加密 | 明文 | 可启用 etcd 加密 |
+| 大小限制 | 1 MiB | 1 MiB |
+| 挂载方式 | 文件/环境变量 | 文件/环境变量 |
+| 访问控制 | RBAC | RBAC (更严格) |
+| 不可变性 | 支持 | 支持 |
+
+## ConfigMap 使用方式
+
+| 方式 | 说明 | 适用场景 |
+|------|------|------|
+| 环境变量 | 注入单个键值 | 简单配置 |
+| 文件挂载 | 挂载为文件 | 配置文件 |
+| 命令行参数 | 注入到命令 | 启动参数 |
+| 卷挂载 | 整个 ConfigMap | 多文件配置 |
+
+## ConfigMap 配置示例
+
+```yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+data:
+  # 键值对
+  LOG_LEVEL: "info"
+  MAX_CONNECTIONS: "100"
+  # 配置文件
+  config.yaml: |
+    server:
+      port: 8080
+      timeout: 30s
+    database:
+      host: postgres
+      port: 5432
+---
+# Pod 中使用
+apiVersion: v1
+kind: Pod
+spec:
+  containers:
+  - name: app
+    env:
+    - name: LOG_LEVEL
+      valueFrom:
+        configMapKeyRef:
+          name: app-config
+          key: LOG_LEVEL
+    volumeMounts:
+    - name: config
+      mountPath: /etc/app
+  volumes:
+  - name: config
+    configMap:
+      name: app-config
+```
+
+## 不可变 ConfigMap
+
+```yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: immutable-config
+immutable: true  # 创建后不可修改
+data:
+  key: value
+```
+
+> 💡 ConfigMap 是 K8s 配置管理的标准方案，2026 年生产环境推荐不可变 ConfigMap + Helm/Kustomize 版本管理。

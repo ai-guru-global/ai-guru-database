@@ -137,3 +137,67 @@ response = generate(model, tokenizer, prompt="解释机器学习", max_tokens=25
 - [[概念/Inference/model-serving]] — 模型服务
 - [[大模型/Edge_LLM/Edge_LLM_Deep_Dive|端侧 LLM 深度解析]]
 - [[大模型/LLM_Inference/LLM_Inference_Deep_Dive|LLM 推理深度解析]]
+
+## 2026 端侧模型生态
+
+| 模型 | 参数 | 平台 | 特点 |
+|------|:----:|------|------|
+| **Qwen3-1.7B** | 1.7B | 手机/PC | 中文能力强 |
+| **Llama 4 Scout** | 17B (MoE) | PC/平板 | 激活参数小 |
+| **Gemma 3 4B** | 4B | 手机/PC | Google 开源 |
+| **Phi-4-mini** | 3.8B | 手机/PC | 微软小模型 |
+| **Apple Intelligence** | ~3B | iPhone/Mac | 原生集成 |
+| **MediaTek NPU** | - | 手机 | 硬件加速 |
+
+## 端侧推理框架对比
+
+| 框架 | 平台 | 量化 | 加速 | 适用 |
+|------|------|:----:|:----:|------|
+| **llama.cpp** | 全平台 | GGUF | Metal/Vulkan/CUDA | 通用 |
+| **MLC-LLM** | 手机/PC | INT4 | Metal/Vulkan/OpenCL | 跨平台 |
+| **Core ML** | Apple | INT4/FP16 | ANE/GPU | iOS/macOS |
+| **ONNX Runtime** | 全平台 | INT4/INT8 | NPU/GPU | 企业 |
+| **MediaPipe** | 手机 | INT4 | GPU/DSP | 移动端 |
+| **Ollama** | PC | GGUF | Metal/CUDA | 开发/个人 |
+
+## 端云协同架构
+
+```
+用户请求
+  │
+  ├─ 简单任务 (意图识别/FAQ) → 端侧模型 (1-4B)
+  │     └─ 延迟 <100ms，离线可用
+  │
+  ├─ 中等任务 (摘要/翻译) → 边缘节点 (7-14B)
+  │     └─ 延迟 <500ms
+  │
+  └─ 复杂任务 (推理/代码) → 云端大模型 (70B+)
+        └─ 延迟 1-3s
+```
+
+## 生产最佳实践补充
+
+1. **量化选择 Q4_K_M**：最佳性价比，质量损失可接受
+2. **优先 NPU 加速**：比纯 CPU 快 3-5×，比 GPU 省电
+3. **模型选择 1.5-3.8B**：小于 1B 质量不足，大于 4B 端侧资源紧张
+4. **混合架构**：端侧处理意图识别/简单问答，复杂任务转发云端
+5. **预热模型**：应用启动时加载模型到内存，避免首次调用延迟
+6. **内存管理**：监控端侧内存使用，避免 OOM 崩溃
+7. **模型更新**：支持 OTA 模型更新，无需重新发布应用
+
+## 端侧性能基准 (2026)
+
+| 设备 | 芯片 | 模型 | 吐量 | 首 Token |
+|------|------|------|:------:|:--------:|
+| iPhone 16 Pro | A18 Pro | Phi-4-mini 3.8B Q4 | ~25 tok/s | ~200ms |
+| MacBook M4 | M4 Pro | Qwen3-8B Q4 | ~35 tok/s | ~150ms |
+| Pixel 9 | Tensor G4 | Gemma 3 4B Q4 | ~18 tok/s | ~300ms |
+| RTX 4090 PC | RTX 4090 | Llama 4 Scout Q4 | ~80 tok/s | ~50ms |
+| 骁龙 8 Gen 4 | Adreno 830 | Qwen3-1.7B Q4 | ~20 tok/s | ~250ms |
+
+## 延伸阅读
+
+- [[概念/LLM/llama-cpp|llama.cpp]] — 端侧推理引擎
+- [[概念/LLM/llm-quantization|LLM 量化]] — 端侧必用量化
+- [[概念/LLM/llm-inference-engine|推理引擎]] — 引擎全景
+- [[概念/LLM/kv-cache|KV Cache]] — 端侧显存管理

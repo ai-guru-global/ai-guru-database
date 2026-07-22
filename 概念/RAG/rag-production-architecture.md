@@ -96,3 +96,113 @@ sources: []
 - [[模型运维/index|MLOps Pipeline 章节]]
 - [[架构基建/index|Architecture & Infrastructure 章节]]
 - [[模型评估/index|Model Evaluation 章节]]
+
+## 2026 RAG 生产架构生态
+
+| 组件 | 代表产品 | 功能 | 状态 |
+|------|------|------|------|
+| 向量数据库 | Milvus/Qdrant | 向量存储检索 | ✅ 成熟 |
+| Embedding | BGE/E5 | 文本向量化 | ✅ 成熟 |
+| Reranker | BGE-Reranker/Cohere | 重排序 | ✅ 成熟 |
+| 编排框架 | LangChain/LlamaIndex | 流程编排 | ✅ 成熟 |
+| 评估 | RAGAS/DeepEval | 质量评估 | ✅ 成熟 |
+| 可观测 | LangSmith/Opik | 链路追踪 | ✅ 成熟 |
+| 网关 | LiteLLM/Portkey | LLM 路由 | ✅ 成熟 |
+
+## 生产架构检查清单
+
+- [ ] 向量数据库已部署且高可用
+- [ ] Embedding 模型已固定版本
+- [ ] Reranker 已配置
+- [ ] 检索延迟已监控（P50/P99）
+- [ ] 评估流水线已配置
+- [ ] 可观测性已接入
+- [ ] 回退策略已配置
+- [ ] 容量规划已完成
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| 检索质量差 | Embedding 不匹配 | 更换领域适配的 Embedding 模型 |
+| 延迟高 | 未优化索引 | HNSW + 缓存 + 异步 |
+| 幻觉严重 | 检索不相关 | 添加 Reranker + 阈值过滤 |
+| 成本高 | LLM 调用过多 | 缓存 + 小模型路由 |
+| 评估缺失 | 未配置评估 | 接入 RAGAS + 定期评估 |
+
+## 延伸阅读
+
+- [[概念/RAG/vector-database|Vector Database]] — 向量数据库
+- [[概念/RAG/reranker|Reranker]] — 重排序
+- [[概念/RAG/embedding-models|Embedding Models]] — 嵌入模型
+- [[概念/RAG/ragas|RAGAS]] — RAG 评估
+- [[概念/RAG/langsmith|LangSmith]] — 可观测性
+
+> ℹ️ RAG 生产架构需要向量数据库 + Embedding + Reranker + 评估 + 可观测性五大组件协同，2026年标准化架构已成熟。
+
+## 生产架构参考图
+
+```
+用户查询 → API Gateway → 语义缓存
+                ↓
+    Embedding Service (GPU)
+                ↓
+    向量数据库 (Milvus) + BM25 (ES)
+                ↓
+        RRF 融合 → Reranker
+                ↓
+        LLM 生成 (流式输出)
+                ↓
+    评估 + 可观测性 (RAGAS/LangSmith)
+```
+
+## 容量规划参考
+
+| 组件 | 小规模 | 中规模 | 大规模 |
+|------|------|------|------|
+| 向量 DB | 1 节点 | 3 节点 | 分布式集群 |
+| Embedding | 1 GPU | 2 GPU | GPU 集群 |
+| Reranker | CPU | 1 GPU | 2 GPU |
+| LLM | API 调用 | 自部署 1 节点 | 自部署集群 |
+
+## 2026 RAG 生产架构生态现状
+
+| 组件 | 代表产品 | 作用 | 状态 |
+|------|------|------|------|
+| 文档解析 | Docling/Unstructured | 多格式解析 | ✅ 成熟 |
+| 向量数据库 | Milvus/Qdrant | 存储与检索 | ✅ 成熟 |
+| Embedding | bge-m3/GTE | 向量化 | ✅ 主流 |
+| Reranker | bge-reranker/Cohere | 精排 | ✅ 主流 |
+| 编排 | LangChain/LlamaIndex | 流程编排 | ✅ 成熟 |
+| 评估 | RAGAS/DeepEval | 质量评估 | ✅ 主流 |
+| 可观测 | LangSmith/Opik | 监控追踪 | ✅ 主流 |
+
+## 检查清单
+
+- [ ] 文档解析管道已验证（多格式）
+- [ ] 分块策略已调优（大小/重叠）
+- [ ] 向量数据库已配置副本和备份
+- [ ] 混合检索已启用（向量 + BM25）
+- [ ] Reranker 已集成并调优
+- [ ] 评估指标已建立（召回率/准确率）
+- [ ] 监控和告警已配置
+- [ ] 容量规划已完成
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| 检索效果差 | 分块/Embedding 不当 | 调优分块 + 换模型 |
+| 延迟高 | 串行调用 | 异步并行 + 缓存 |
+| 吐吐量不足 | 单节点瓶颈 | 水平扩展 |
+| 成本高 | 全量 API 调用 | 自部署 + 缓存 |
+
+## 延伸阅读
+
+- [[概念/RAG/rag-patterns|RAG Patterns]] — RAG 模式分类
+- [[概念/RAG/vector-database|Vector Database]] — 向量数据库
+- [[概念/RAG/retrieval-latency|Retrieval Latency]] — 检索延迟
+- [[概念/RAG/reranker|Reranker]] — 重排序
+- [[概念/RAG/ragas|RAGAS]] — 评估框架
+
+> ℹ️ RAG 生产架构核心原则：分层解耦（解析/检索/生成/评估），每层可独立扩展和替换，始终配置监控和评估闭环。

@@ -139,4 +139,66 @@ CDI (设备注入地基)
 2. **自动化 Spec 生成**：使用 GPU Operator 或 nvidia-ctk 自动生成 CDI Spec，避免手动维护
 3. **版本锁定**：将 CDI Spec 纳入 GitOps 管理，变更走 PR 审核流程
 4. **与 DRA 配合**：K8s 1.32+ 集群建议启用 DRA，实现属性级设备匹配 + CDI 注入
-5. **多厂商验证**：异构集群中验证各厂商 CDI Spec 兼容性，确保 containerEdits 无冲突
+5. **多厂商验证**：异构集群中验证各厂商 CDI Spec 兼容性，确保 containerEdits 无 冲突
+
+## CDI vs 传统设备注入
+
+| 特性 | CDI | 环境变量 | Device Plugin |
+|------|------|------|------|
+| 标准化 | ✅ CNCF | ❌ 厂商私有 | 部分 |
+| 多运行时 | ✅ | 部分 | ✅ |
+| 设备描述 | 声明式 | 命令式 | 命令式 |
+| 设备共享 | 支持 | 不支持 | 不支持 |
+| 拓扑感知 | 支持 | 不支持 | 部分 |
+
+## CDI Spec 结构
+
+```yaml
+# /etc/cdi/nvidia.yaml
+cdiVersion: "0.6.0"
+kind: nvidia.com/gpu
+devices:
+- name: gpu0
+  containerEdits:
+    env:
+    - NVIDIA_VISIBLE_DEVICES=0
+    deviceNodes:
+    - /dev/nvidia0
+    - /dev/nvidiactl
+    - /dev/nvidia-uvm
+    mounts:
+    - hostPath: /usr/lib/x86_64-linux-gnu/libcuda.so
+      containerPath: /usr/lib/x86_64-linux-gnu/libcuda.so
+containerEdits:
+  hooks:
+  - hookName: createContainer
+    path: /usr/bin/nvidia-cdi-hook
+```
+
+## CDI 支持的运行时
+
+| 运行时 | 支持状态 | 说明 |
+|------|------|------|
+| containerd | ✅ GA | 默认推荐 |
+| CRI-O | ✅ GA | OpenShift 默认 |
+| Docker | ✅ GA | 开发环境 |
+| Podman | ✅ GA | 无守护进程 |
+
+## CDI 与 GPU Operator 集成
+
+| 组件 | 作用 |
+|------|------|
+| nvidia-ctk | 生成 CDI Spec |
+| gpu-operator | 自动管理 CDI |
+| device-plugin | 设备发现 |
+| containerd | CDI 注入 |
+
+> 💡 CDI 是 2026 年容器设备注入的标准方案，替代厂商私有环境变量，实现跨运行时可移植。
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| 设备不可见 | CDI Spec 未生成 | 运行 nvidia-ctk cdi generate |
+| 权限错误 | 设备节点权限 | 检查 deviceNodes 配置 |
+| 运行时不支持 | 版本太旧 | 升级 containerd/CRI-O |

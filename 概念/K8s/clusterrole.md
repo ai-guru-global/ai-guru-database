@@ -114,3 +114,95 @@ kubectl auth can-i get pods --as=system:serviceaccount:monitoring:monitor -A
 2. **避免通配符**：不使用 * 通配符
 3. **定期审计**：检查 cluster-admin 绑定
 4. **聚合角色**：使用 aggregationRule 组装权限
+
+## ClusterRole vs Role
+
+| 特性 | ClusterRole | Role |
+|------|------|------|
+| 作用域 | 集群级 | 命名空间级 |
+| 资源类型 | 所有资源 | 命名空间内资源 |
+| 绑定方式 | ClusterRoleBinding | RoleBinding |
+| 适用场景 | 集群管理/跨 NS | 单 NS 权限 |
+
+## 内置 ClusterRole
+
+| ClusterRole | 权限 | 适用场景 |
+|------|------|------|
+| cluster-admin | 所有权限 | 集群管理员 |
+| admin | NS 管理 (无 RBAC) | NS 管理员 |
+| edit | 读写 (无 RBAC) | 开发者 |
+| view | 只读 | 观察者 |
+
+## ClusterRole 配置示例
+
+```yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: gpu-manager
+rules:
+# GPU 节点管理
+- apiGroups: [""]
+  resources: ["nodes"]
+  verbs: ["get", "list", "watch"]
+# Pod 管理
+- apiGroups: [""]
+  resources: ["pods", "pods/log"]
+  verbs: ["get", "list", "watch", "delete"]
+# GPU 设备插件
+- apiGroups: ["nvidia.com"]
+  resources: ["*"]
+  verbs: ["*"]
+```
+
+## 聚合 ClusterRole
+
+```yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: monitoring
+aggregationRule:
+  clusterRoleSelectors:
+  - matchLabels:
+      rbac.example.com/aggregate-to-monitoring: "true"
+rules: []  # 自动聚合
+```
+
+## AI 场景 ClusterRole
+
+| ClusterRole | 权限 | 适用场景 |
+|------|------|------|
+| gpu-admin | GPU 节点管理 | GPU 管理员 |
+| training-admin | 训练任务管理 | 训练平台 |
+| inference-admin | 推理服务管理 | 推理平台 |
+| ml-namespace-admin | ML NS 管理 | 团队管理员 |
+
+> 💡 ClusterRole 是 K8s 集群级权限的核心，2026 年 AI 平台推荐按职责划分 ClusterRole + 最小权限原则。
+
+## 常用命令
+
+| 命令 | 用途 |
+|------|------|
+| `kubectl get clusterroles` | 查看 ClusterRole |
+| `kubectl describe clusterrole <name>` | 详情 |
+| `kubectl get clusterrolebindings` | 查看绑定 |
+| `kubectl auth can-i --list --as=system:serviceaccount:ns:sa` | 检查权限 |
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| 权限不足 | ClusterRole 未绑定 | 创建 ClusterRoleBinding |
+| 权限过大 | 使用了 cluster-admin | 创建自定义 ClusterRole |
+| 跨 NS 访问失败 | 使用 Role 而非 ClusterRole | 改用 ClusterRole |
+| 聚合不生效 | Label 不匹配 | 检查 clusterRoleSelectors |
+
+## 最佳实践
+
+| 实践 | 说明 |
+|------|------|
+| 最小权限 | 只授予必要权限 |
+| 避免通配符 | 不使用 * |
+| 定期审计 | 检查过度授权 |
+| 职责分离 | 按角色划分 |

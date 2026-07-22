@@ -77,3 +77,126 @@ Developer → PR Merge → Git Repository → GitOps Controller → Kubernetes C
 3. **Git 单一来源**：Git 作为配置单一来源
 4. **自动同步**：配置自动同步部署
 5. **与 CI/CD 配合**：GitOps + CI/CD 流水线
+
+## ArgoCD 配置示例
+
+```yaml
+# ArgoCD Application 示例
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: ai-inference
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://gitlab.com/ai-platform/k8s-configs.git
+    targetRevision: main
+    path: apps/inference
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: ai-inference
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+```
+
+## GitOps 成熟度模型
+
+| 级别 | 说明 | 特征 |
+|------|------|------|
+| L1 手动 | 手动 kubectl apply | 无版本控制 |
+| L2 CI 推送 | CI 流水线推送配置 | 有版本控制 |
+| L3 GitOps Pull | GitOps 控制器拉取同步 | 自动同步 |
+| L4 全自动化 | 镜像自动更新 + 自动回滚 | 无人值守 |
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| 同步失败 | 权限不足/网络问题 | 检查 RBAC 和网络 |
+| 配置漂移 | 手动修改集群 | 启用 selfHeal |
+| 回滚失败 | Git 历史不清晰 | 规范 commit 消息 |
+| 多环境管理 | 配置分散 | Kustomize/Helm 分层 |
+
+## 相关概念
+
+- [[概念/argocd|ArgoCD]] — GitOps 控制器
+- [[概念/flux|Flux]] — GitOps 工具集
+- [[概念/helm|Helm]] — K8s 包管理
+- [[概念/platform-engineering|Platform Engineering]] — 平台工程
+
+> 💡 GitOps 的核心价值是“可审计、可回滚、可复制”——所有变更都有 Git 记录，任何时候都可以回到上一个已知良好状态。
+
+## 版本兼容性
+
+| 工具 | 版本 | K8s | 状态 |
+|------|------|------|------|
+| ArgoCD | 2.10+ | 1.24+ | GA |
+| Flux | 2.2+ | 1.24+ | GA |
+| Helm | 3.14+ | 1.24+ | GA |
+| Kustomize | 5.3+ | 1.24+ | GA |
+
+## 生产检查清单
+
+1. 配置 Git 仓库作为唯一可信源
+2. 启用自动同步和 selfHeal
+3. 配置 RBAC 权限最小化
+4. 建立分支策略和 PR 审批流程
+5. 配置同步失败告警
+6. 建立多环境配置管理
+7. 配置镜像自动更新策略
+8. 定期审计 Git 提交历史
+
+## 总结
+
+GitOps 是以 Git 为唯一可信源的持续交付范式，通过声明式配置和自动同步实现基础设施与应用部署的版本化、可审计和可回滚。ArgoCD 和 Flux 是两大主流实现。
+
+> 💡 GitOps 的终极目标是“没有人手动触碰生产集群”——所有变更都通过 Git PR 流程，所有回滚都是 git revert。
+
+## 常用命令
+
+| 命令 | 说明 |
+|------|------|
+| `argocd app sync <app>` | 手动同步应用 |
+| `argocd app get <app>` | 查看应用状态 |
+| `argocd app history <app>` | 查看部署历史 |
+| `argocd app rollback <app> <id>` | 回滚应用 |
+| `flux reconcile source git <name>` | 手动同步 Git 源 |
+| `flux get kustomizations` | 查看 Kustomization 状态 |
+
+## 学习资源
+
+| 资源 | 类型 | 说明 |
+|------|------|------|
+| ArgoCD 官方文档 | 文档 | GitOps 控制器 |
+| Flux 官方文档 | 文档 | GitOps 工具集 |
+| OpenGitOps | 规范 | GitOps 原则 |
+| Weaveworks 博客 | 博客 | GitOps 最佳实践 |
+
+## GitOps vs 传统 CI/CD
+
+| 维度 | GitOps | 传统 CI/CD |
+|------|------|------|
+| 部署方式 | Pull（控制器拉取） | Push（流水线推送） |
+| 可信源 | Git 仓库 | 流水线产物 |
+| 回滚 | git revert | 重新部署旧版本 |
+| 审计 | Git 历史 | 流水线日志 |
+| 漂移检测 | 自动检测并修复 | 无 |
+| 安全性 | 无需集群凭证 | 需要集群凭证 |
+
+## 总结
+
+GitOps 是以 Git 为唯一可信源的持续交付范式，通过声明式配置和自动同步实现基础设施与应用部署的版本化、可审计和可回滚。ArgoCD 和 Flux 是两大主流实现。
+
+> 💡 GitOps 的核心价值是“可审计、可回滚、可复制”——所有变更都有 Git 记录，任何时候都可以回到上一个已知良好状态。
+
+## 相关概念
+
+- [[概念/argocd|ArgoCD]] — GitOps 控制器
+- [[概念/flux|Flux]] — GitOps 工具集
+- [[概念/helm|Helm]] — K8s 包管理
+- [[概念/platform-engineering|Platform Engineering]] — 平台工程

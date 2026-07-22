@@ -121,3 +121,81 @@ Level 4: Graph / Structured RAG（图结构 RAG）
 3. **评估先行**：建立评估基准（RAGAS/TruLens），量化每次升级的收益
 4. **成本控制**：Agentic RAG Token 消耗高，设置迭代上限和成本预算
 5. **延迟预算**：根据用户体验要求设定延迟 SLA，反推可选模式
+
+## 2026 RAG 模式生态现状
+
+| 模式 | 复杂度 | 质量 | 延迟 | 适用场景 |
+|------|------|------|------|------|
+| Naive RAG | 低 | 中 | 低 | 简单问答 |
+| Advanced RAG | 中 | 高 | 中 | 生产级问答 |
+| Modular RAG | 高 | 高 | 中 | 复杂流程 |
+| Agentic RAG | 极高 | 极高 | 高 | 多步推理 |
+| Graph RAG | 高 | 极高 | 高 | 知识图谱 |
+| Self-RAG | 高 | 极高 | 高 | 自反思 |
+
+## 模式选择指南
+
+- **简单 FAQ**：Naive RAG
+- **生产级问答**：Advanced RAG (Reranker + 混合检索)
+- **多数据源**：Modular RAG
+- **多步推理**：Agentic RAG
+- **结构化知识**：Graph RAG
+- **质量优先**：Self-RAG / CRAG
+
+## 检查清单
+
+- [ ] RAG 模式与场景匹配
+- [ ] 延迟预算已设定
+- [ ] 成本预算已设定
+- [ ] 评估指标已确定
+- [ ] 回退策略已配置
+- [ ] 迭代上限已设置（Agentic）
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| 质量不达标 | 模式太简单 | 升级至 Advanced/Modular |
+| 延迟太高 | Agentic 迭代多 | 设置迭代上限 + 缓存 |
+| 成本太高 | Token 消耗大 | 小模型路由 + 缓存 |
+| 幻觉严重 | 检索不相关 | 添加 Reranker + 阈值 |
+
+## 延伸阅读
+
+- [[概念/RAG/rag-production-architecture|RAG 生产架构]] — 架构设计
+- [[概念/RAG/reranker|Reranker]] — 重排序
+- [[概念/RAG/hybrid-search|Hybrid Search]] — 混合检索
+- [[概念/RAG/ragas|RAGAS]] — RAG 评估
+- [[概念/RAG/vector-database|Vector Database]] — 向量数据库
+
+> ℹ️ RAG 模式选择需平衡质量、延迟和成本，2026年 Advanced RAG 是生产标配，Agentic RAG 和 Graph RAG 在复杂场景表现突出。
+
+## 模式组合示例
+
+| 场景 | 推荐组合 | 说明 |
+|------|------|------|
+| 企业知识库 | Advanced + Hybrid | BM25 + 向量 + Rerank |
+| 客服问答 | Naive + 缓存 | 简单高效 |
+| 研究报告 | Agentic + Graph | 多步推理 + 结构化 |
+| 代码助手 | Modular + Self-RAG | 自反思 + 多数据源 |
+| 医疗问答 | Advanced + CRAG | 质量优先 + 可信度 |
+
+## 模式演进路线
+
+```
+Naive RAG → Advanced RAG → Modular RAG → Agentic RAG
+   ↓              ↓              ↓              ↓
+简单问答      生产级问答      复杂流程      多步推理
+```
+
+## 检查清单
+
+- [ ] RAG 模式与场景匹配
+- [ ] 延迟预算已设定
+- [ ] 成本预算已设定
+- [ ] 评估指标已确定
+- [ ] 回退策略已配置
+- [ ] 迭代上限已设置（Agentic）
+- [ ] 模式演进路线已规划
+
+> ℹ️ RAG 模式选择应遵循「简单优先」原则：Naive → Advanced → Modular → Agentic 逐步演进，避免过度工程化。

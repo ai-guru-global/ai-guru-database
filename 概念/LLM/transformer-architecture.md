@@ -174,3 +174,31 @@ Transformer 训练 的标配配置：
 3. **MoE 降本**：高并发场景用 MoE 模型，推理成本降低 5-10x
 4. **长上下文用 YaRN**：需要 128K+ 上下文时启用 YaRN 扩展
 5. **量化部署**：生产环境用 AWQ/GPTQ 4-bit 量化，平衡质量与速度
+6. **RMSNorm 稳定**：RMSNorm 比 LayerNorm 更稳定，新模型标配
+7. **推理引擎选择**：vLLM/SGLang/TensorRT-LLM 均支持现代 Transformer
+
+## 延伸阅读
+
+- [[概念/LLM/transformer-architecture-plain|Transformer 大白话]]
+- [[概念/LLM/attention-variants|注意力变体]]
+- [[概念/LLM/grouped-query-attention|GQA]]
+- [[概念/LLM/mamba|Mamba (SSM)]]
+- [[大模型/LLM_Architectures/LLM-Basics-in-nutshell|大语言模型基础速成]]
+
+## Transformer 架构演进
+
+| 时期 | 代表 | 关键创新 |
+|------|------|----------|
+| 2017 | Transformer (Vaswani) | 自注意力机制 |
+| 2018-2020 | GPT/BERT | 预训练 + 微调范式 |
+| 2021-2023 | GPT-3/4, Llama | 规模扩展 + RLHF |
+| 2024-2026 | GPT-5, Claude 4, Qwen3 | MoE + 长上下文 + 推理能力 |
+
+> ℹ️ Transformer 架构仍在快速演进，MoE、长上下文、推理能力是当前主要发展方向。
+
+## 延伸阅读
+
+- [[概念/LLM/attention-variants|注意力变体]] — 注意力机制全景
+- [[概念/LLM/llm-architectures|LLM 架构]] — 架构选型指南
+- [[概念/LLM/flash-attention-kernels|Flash Attention]] — 算子优化
+- [[概念/LLM/grouped-query-attention|GQA]] — 注意力压缩

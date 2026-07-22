@@ -186,3 +186,34 @@ flowchart TD
 3. **跟踪前沿**：定期阅读 arXiv 论文，了解最新进展
 4. **社区参与**：加入 HuggingFace/GitHub 社区，交流学习
 5. **系统学习**：按学习路径系统学习，避免碎片化
+
+## 2026 必读论文清单
+
+| 论文 | 年份 | 主题 | 重要性 |
+|------|------|------|--------|
+| Attention Is All You Need | 2017 | Transformer 架构 | ★★★★★ |
+| GPT-3: Language Models are Few-Shot | 2020 | 大模型涌现 | ★★★★★ |
+| InstructGPT / RLHF | 2022 | 人类对齐 | ★★★★★ |
+| LLaMA / LLaMA 2 | 2023 | 开源模型 | ★★★★☆ |
+| RAG: Retrieval-Augmented Generation | 2020 | 检索增强 | ★★★★☆ |
+| DeepSeek-V3 Technical Report | 2024 | MoE + MLA | ★★★★☆ |
+| SGLang / RadixAttention | 2024 | 推理优化 | ★★★★☆ |
+| DPO: Direct Preference Optimization | 2023 | 偏好对齐 | ★★★★☆ |
+| Chain-of-Thought Prompting | 2022 | 思维链推理 | ★★★★☆ |
+| FlashAttention | 2022 | 注意力优化 | ★★★☆☆ |
+
+## 推荐学习路径
+
+```
+入门: Transformer 论文 → Andrej Karpathy 视频 → HuggingFace 课程
+进阶: GPT/LLaMA 论文 → 分布式训练 → 推理优化
+实战: RAG 系统 → Agent 框架 → 生产部署
+前沿: 推理模型 → MoE → 多模态 → 世界模型
+```
+
+## 延伸阅读
+
+- [[概念/LLM/transformer-architecture|Transformer 架构]] — 架构基础
+- [[概念/LLM/large-language-model|大语言模型]] — LLM 全景
+- [[概念/LLM/reasoning-models|推理模型]] — 前沿方向
+- [[概念/LLM/llm-architectures|LLM 架构]] — 架构演进

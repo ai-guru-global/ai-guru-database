@@ -170,3 +170,34 @@ curl -s http://localhost:30000/v1/metrics | grep ttft
 - [[概念/Inference/continuous-batching|连续批处理]]
 - [[概念/Inference/request-scheduling|请求调度]]
 - [[概念/LLM/flash-attention-kernels|FlashAttention]]
+
+## TTFT 优化技术全景
+
+| 技术 | 加速比 | 复杂度 | 说明 |
+|------|--------|--------|------|
+| **Chunked Prefill** | 1.5-3x | 低 | 分块 prefill，避免阻塞 |
+| **Prefix Caching** | 2-5x | 低 | 缓存公共前缀 KV |
+| **Flash Attention** | 1.5-2x | 低 | IO 感知注意力算子 |
+| **量化 (FP8)** | 1.5x | 中 | 减少计算量 |
+| **PD 分离** | 1.5-2x | 高 | Prefill 专用 GPU |
+| **TensorRT 编译** | 2-3x | 高 | 图优化 + 算子融合 |
+
+## TTFT 计算公式
+
+```
+TTFT = 网络延迟 + 排队延迟 + Prefill 时间
+
+Prefill 时间 ≈ (input_tokens × model_flops) / gpu_throughput
+
+示例: Qwen3-8B, 4K 输入, A100
+  Prefill ≈ 4096 × 16GFLOP / 312TFLOPS ≈ 210ms
+  实际 TTFT ≈ 250-400ms (含网络和排队)
+```
+
+## 生产最佳实践
+
+1. **监控 TTFT P99**：关注尾部延迟，而非平均值
+2. **Prefix Caching 必开**：相同 System Prompt 可缓存 2-5x 加速
+3. **长输入用 Chunked Prefill**：避免 128K 输入阻塞其他请求
+4. **设置 TTFT SLA**：根据业务设置 TTFT 上限，超时降级
+5. **预热模型**：冷启动时 TTFT 极高，生产环境保持模型常驻

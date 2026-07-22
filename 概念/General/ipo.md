@@ -130,4 +130,79 @@ IPO 训练:
 2. **与 SFT 配合**：先完成高质量 SFT 再执行 IPO，跳过 SFT 直接 IPO 效果差
 3. **学习率调优**：IPO 对学习率敏感，建议 1e-6 ~ 5e-7 范围网格搜索
 4. **正则化强度**：τ 参数控制偏离参考模型程度，过大会欠拟合、过小会过拟合
-5. **评估闭环**：结合自动评估（MT-Bench）和人工评估验证对齐效果
+5. **评估闭环**：使用 MT-Bench / AlpacaEval 2.0 量化对齐效果，结合人工盲评
+
+## IPO 训练配置示例
+
+```python
+from trl import IPOConfig, IPOTrainer
+from transformers import AutoModelForCausalLM, AutoTokenizer
+
+model = AutoModelForCausalLM.from_pretrained("meta-llama/Llama-3-8B-SFT")
+ref_model = AutoModelForCausalLM.from_pretrained("meta-llama/Llama-3-8B-SFT")
+tokenizer = AutoTokenizer.from_pretrained("meta-llama/Llama-3-8B-SFT")
+
+config = IPOConfig(
+    output_dir="./ipo-llama3",
+    beta=0.1,              # 正则化系数 τ
+    learning_rate=5e-7,
+    per_device_train_batch_size=4,
+    gradient_accumulation_steps=8,
+    num_train_epochs=1,
+    bf16=True,
+    max_length=2048,
+    logging_steps=10,
+)
+
+trainer = IPOTrainer(
+    model=model,
+    ref_model=ref_model,
+    args=config,
+    train_dataset=preference_dataset,
+    tokenizer=tokenizer,
+)
+trainer.train()
+```
+
+## IPO vs DPO vs KTO 对比
+
+| 维度 | IPO | DPO | KTO |
+|------|-----|-----|-----|
+| 损失函数 | 平方误差 | 交叉熵 | 非对称 KL |
+| 过拟合风险 | 低（有界） | 中-高 | 低 |
+| 数据需求 | 偏好对 | 偏好对 | 单条+标签 |
+| 超参敏感度 | τ 敏感 | β 敏感 | β+λ 双参 |
+| 70B+ 稳定性 | 优秀 | 一般 | 良好 |
+| 多轮对齐 | 支持迭代 | 需重新训练 | 支持增量 |
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| 训练 loss 不下降 | 学习率过大/数据噪声 | 降低 lr 至 1e-7，清洗偏好对 |
+| 对齐后生成退化 | τ 过小导致过拟合 | 增大 τ，加入 KL 早停 |
+| 与 SFT 效果持平 | 偏好数据区分度不足 | 增加难度梯度，使用 GPT-4 标注 |
+| 多轮对话不一致 | 单轮训练分布偏移 | 采用迭代式 IPO + 多轮数据 |
+
+## 生产检查清单
+
+1. ✅ SFT 基线模型质量达标（MT-Bench ≥ 7.0）
+2. ✅ 偏好数据标注一致性 > 85%（Cohen's Kappa）
+3. ✅ 参考模型与训练模型初始化一致
+4. ✅ τ 参数网格搜索（0.05 / 0.1 / 0.2）
+5. ✅ 对齐后通过安全红队测试
+6. ✅ A/B 测试验证用户满意度提升
+
+## 总结
+
+IPO 通过直接优化偏好概率的平方误差损失，提供了比 DPO 更稳定的对齐训练方案，特别适合大规模模型和多轮迭代对齐场景。其有界损失特性有效避免了过拟合风险，是 2026 年生产级 RLHF 管线的重要选择。
+
+> 💡 当 DPO 训练出现 loss 震荡或过拟合时，切换到 IPO 通常能显著改善稳定性，代价是需要更精细的 τ 调参。
+
+## 版本兼容性
+
+| 组件 | 版本 | 状态 |
+|------|------|------|
+| TRL | ≥ 0.8 | 原生支持 IPOTrainer |
+| PyTorch | ≥ 2.1 | 支持 |
+| Transformers | ≥ 4.38 | 支持 |

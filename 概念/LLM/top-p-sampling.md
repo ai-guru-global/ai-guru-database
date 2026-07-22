@@ -170,3 +170,34 @@ model.generate(
 3. **任务匹配**：事实任务用小 p(0.7-0.8)，创意任务用大 p(0.9-0.95)
 4. **Min-p 替代**：考虑用 Min-p 替代 Top-p，更稳定
 5. **不要 p=1.0**：p=1.0 等价于无截断，可能引入低质量 Token
+6. **监控输出质量**：跟踪输出长度、重复率、用户满意度
+7. **A/B 测试**：不同 p 值进行 A/B 测试，找到最优配置
+
+## Top-p vs Top-k vs Min-p
+
+| 策略 | 原理 | 优势 | 劣势 |
+|------|------|------|------|
+| **Top-p** | 累计概率截断 | 动态适应分布 | 可能包含低质量 Token |
+| **Top-k** | 固定数量截断 | 简单稳定 | 不适应分布变化 |
+| **Min-p** | 相对概率截断 | 更稳定 | 较新，生态支持有限 |
+| **Typical** | 信息论典型性 | 理论最优 | 实现复杂 |
+
+## 延伸阅读
+
+- [[概念/LLM/top-k-sampling|Top-k 采样]]
+- [[概念/LLM/temperature-scaling|Temperature 缩放]]
+- [[概念/LLM/sampling-decoding|采样解码]]
+- [[概念/LLM/decoding-strategies-decision-tree|解码策略决策树]]
+
+## 参数调优建议
+
+```python
+# 推荐配置示例
+sampling_config = {
+    "temperature": 0.7,      # 控制随机性
+    "top_p": 0.9,            # 核采样阈值
+    "top_k": 50,             # 可选 Top-k 截断
+    "repetition_penalty": 1.1,  # 重复惩罚
+    "max_new_tokens": 2048   # 最大生成长度
+}
+```

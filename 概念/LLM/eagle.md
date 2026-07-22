@@ -144,3 +144,58 @@ python -m sglang.launch_server \
 - [[概念/Inference/flashinfer]] — FlashInfer 算子库
 - [[概念/Inference/inference-performance]] — 推理性能优化
 - [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+
+## 2026 EAGLE 生态
+
+| 版本 | 加速比 | 原理 | 状态 |
+|------|:------:|------|:----:|
+| **EAGLE-1** | 2-3x | 特征级推测 + 草稿头 | GA |
+| **EAGLE-2** | 3-4x | 动态草稿树 + 自适应 | GA |
+| **EAGLE-3** | 3-5x | 多模态推测 | 研究 |
+
+## EAGLE vs 其他推测解码
+
+| 方法 | 加速比 | 需要草稿模型 | 质量影响 | 适用 |
+|------|:------:|:----------:|:--------:|------|
+| **EAGLE** | 3-4x | 否 (草稿头) | 无损 | 通用 |
+| **标准推测** | 2-3x | 是 | 无损 | 通用 |
+| **Medusa** | 2-3x | 否 (多头) | 无损 | 通用 |
+| **MTP** | 2-3x | 否 (原生) | 无损 | 特定模型 |
+| **Lookahead** | 1.5-2x | 否 | 无损 | 实验 |
+
+## 工作原理
+
+```
+标准推测解码:
+  草稿模型 (独立) → 生成候选 → 目标模型验证
+
+EAGLE:
+  目标模型特征 → Draft Head → 生成候选 → 目标模型验证
+  └─ 无需独立草稿模型，共享特征表示
+```
+
+## 配置示例
+
+```python
+# vLLM 中启用 EAGLE
+from vllm import LLM, SamplingParams
+
+llm = LLM(
+    model="meta-llama/Llama-4-70B",
+    speculative_model="[EAGLE]",
+    speculative_model_revision="eagle-head-v2",
+    num_speculative_tokens=5,
+)
+
+params = SamplingParams(temperature=0, max_tokens=1024)
+outputs = llm.generate("解释量子计算", params)
+```
+
+## 生产最佳实践
+
+1. **EAGLE-2 优先**: 比 EAGLE-1 加速比更高，动态草稿树更智能
+2. **与量化结合**: FP8/INT4 量化 + EAGLE 可叠加加速
+3. **低延迟场景**: 单请求场景收益最大
+4. **批处理谨慎**: 高并发时收益可能下降
+5. **Draft Head 训练**: 用目标模型相同领域数据微调，提升接受率
+6. **监控接受率**: 接受率 <60% 时考虑重新训练 Draft Head

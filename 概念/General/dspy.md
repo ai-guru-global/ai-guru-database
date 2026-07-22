@@ -150,3 +150,76 @@ pip install dspy-ai
 3. **评估驱动**：定义 metric 函数，用 evaluate 验证优化效果
 4. **缓存复用**：启用 LM 缓存避免重复调用，降低成本
 5. **版本管理**：编译后的 Prompt 纳入版本控制，确保可复现
+
+## DSPy 编程示例
+
+```python
+import dspy
+
+# 配置 LM
+lm = dspy.OpenAI(model="gpt-4o", max_tokens=1024)
+dspy.settings.configure(lm=lm)
+
+# 定义 Signature
+class RAGSignature(dspy.Signature):
+    """基于检索上下文回答问题"""
+    context = dspy.InputField(desc="检索到的相关文档")
+    question = dspy.InputField()
+    answer = dspy.OutputField(desc="简洁准确的回答")
+
+# 组合模块
+class RAGPipeline(dspy.Module):
+    def __init__(self):
+        self.retrieve = dspy.Retrieve(k=5)
+        self.generate = dspy.ChainOfThought(RAGSignature)
+    
+    def forward(self, question):
+        context = self.retrieve(question).passages
+        return self.generate(context=context, question=question)
+
+# 编译优化
+from dspy.teleprompt import MIPRO
+optimizer = MIPRO(metric=answer_exact_match, num_candidates=10)
+compiled_rag = optimizer.compile(RAGPipeline(), trainset=train_examples)
+
+# 评估
+from dspy.evaluate import Evaluate
+evaluator = Evaluate(devset=dev_examples, metric=answer_exact_match)
+score = evaluator(compiled_rag)
+print(f"准确率: {score}%")
+```
+
+## DSPy vs LangChain vs 原生 Prompt 对比
+
+| 维度 | DSPy | LangChain | 原生 Prompt |
+|------|------|-----------|-------------|
+| 编程范式 | 声明式 | 链式 | 命令式 |
+| Prompt 优化 | 自动 | 手动 | 手动 |
+| 可复现性 | 高（编译） | 中 | 低 |
+| 学习曲线 | 中 | 中 | 低 |
+| 复杂工作流 | 强 | 强 | 弱 |
+| 评估集成 | 原生 | 需额外 | 需额外 |
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| 编译效果差 | 训练集太小/质量低 | 增加高质量示例 ≥ 50 条 |
+| 运行成本高 | 未启用缓存 | 配置 dspy.settings.cache |
+| 输出不稳定 | 未编译优化 | 必须用 MIPRO/Bootstrap 编译 |
+| 调试困难 | 黑盒优化 | 使用 dspy.inspect 查看中间步骤 |
+
+## 生产检查清单
+
+1. ✅ 定义清晰的 Signature（输入输出规范）
+2. ✅ 生产前必须编译优化（MIPRO/BootstrapFewShot）
+3. ✅ 定义 metric 函数验证优化效果
+4. ✅ 启用 LM 缓存降低成本
+5. ✅ 编译结果纳入版本控制
+6. ✅ 定期重新编译适应模型更新
+
+## 总结
+
+DSPy 是 2026 年最具革命性的 LLM 编程框架，通过声明式编程和自动 Prompt 优化，将“Prompt 工程”从手工调优转变为系统化编译过程。它代表了 LLM 应用开发从“手艺”到“工程”的范式转变。
+
+> 💡 DSPy 的核心洞察：“Prompt 不应该是人写的，而应该是编译出来的”——让算法找到最优 Prompt。

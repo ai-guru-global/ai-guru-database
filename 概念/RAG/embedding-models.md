@@ -156,3 +156,51 @@ Query → Embedding Model → 向量数据库 Top-100 → Reranker → Top-5 →
 - [[RAG系统/Embeddings/Embedding_Models_Guide]] — Embedding 模型选型与实践指南
 - [[部署推理/Inference_Performance/Embedding_Model_Serving|Embedding/Reranker 服务]]
 - [[架构基建/AI_Stack_Deep_Dive]] — AI Stack
+
+## 2026 Embedding 模型生态现状
+
+| 模型 | 维度 | 多语言 | 特色 | 状态 |
+|------|------|------|------|------|
+| text-embedding-3-large | 3072 | ✅ | OpenAI、MRL 支持 | ✅ 主流 |
+| bge-m3 | 1024 | ✅ | 多粒度、BAAI | ✅ 开源主流 |
+| jina-embeddings-v3 | 1024 | ✅ | 长文本、多任务 | ✅ 开源 |
+| e5-mistral-7b | 4096 | ✅ | LLM-based、SOTA | ✅ 开源 |
+| Cohere embed-v3 | 1024 | ✅ | 商业、多语言 | ✅ 商业 |
+| GTE-Qwen2 | 1536 | ✅ | 阿里、长文本 | ✅ 开源 |
+
+## 检查清单
+
+- [ ] 模型维度与向量数据库配置匹配
+- [ ] 多语言场景已选择多语言模型
+- [ ] Embedding 服务已配置批处理和并发
+- [ ] 模型版本固定（避免升级导致向量不兼容）
+- [ ] 向量归一化已确认（余弦相似度要求）
+- [ ] 成本已评估（API vs 自部署）
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| 检索效果差 | 模型与领域不匹配 | 换用领域微调模型 |
+| 向量不兼容 | 模型版本升级 | 固定版本 + 重建索引 |
+| 延迟高 | 未批处理 | 启用 batch inference |
+| 内存不足 | 维度太高 | 使用 MRL 降维 |
+
+> ℹ️ Embedding 模型选型核心原则：多语言选 bge-m3/GTE，纯英文选 e5-mistral，低延迟选小模型 + 量化，始终固定版本避免向量不兼容。
+
+## 性能基准参考
+
+| 模型 | MTEB 得分 | 延迟 (batch=32) | 内存 | 适用 |
+|------|------|------|------|------|
+| bge-m3 | 71.2 | 15ms | 2 GB | 多语言通用 |
+| e5-mistral-7b | 73.5 | 50ms | 14 GB | 高精度 |
+| GTE-Qwen2 | 72.8 | 20ms | 3 GB | 长文本 |
+| text-embedding-3 | 70.5 | API | N/A | 快速集成 |
+
+## 延伸阅读
+
+- [[概念/RAG/vector-database|Vector Database]] — 向量数据库
+- [[概念/RAG/hnsw|HNSW]] — 向量索引
+- [[概念/RAG/reranker|Reranker]] — 重排序
+- [[概念/RAG/hybrid-search|Hybrid Search]] — 混合检索
+- [[RAG系统/Embeddings/Embedding_Models_Guide|Embedding 模型选型指南]]

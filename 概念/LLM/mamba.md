@@ -119,6 +119,64 @@ aliases:
 4. **吐量测试**: 实际测试长序列吐量，确认优势可复现
 5. **生态检查**: 确认推理引擎、量化工具链支持情况
 6. **与 Transformer 对比测试**: 同任务下对比质量和速度再决策
+7. **混合比例调优**: Mamba:Attention 层比例通常 3:1 到 6:1
+
+## Mamba 核心代码示例
+
+```python
+import torch
+from mamba_ssm import Mamba
+
+# 初始化 Mamba 层
+model = Mamba(
+    d_model=2560,      # 隐藏维度
+    d_state=64,        # SSM 状态维度
+    d_conv=4,          # 局部卷积窗口
+    expand=2,          # 内部扩展因子
+).cuda()
+
+# 前向传播：线性复杂度 O(L)
+x = torch.randn(2, 4096, 2560).cuda()  # (batch, seq_len, d_model)
+y = model(x)  # 输出同形状
+print(f"Input: {x.shape} -> Output: {y.shape}")
+# 显存恒定，不随 seq_len 增长
+```
+
+```python
+# 混合架构示例（类 Jamba 结构）
+import torch.nn as nn
+from mamba_ssm import Mamba
+from transformers.models.llama.modeling_llama import LlamaAttention
+
+class HybridBlock(nn.Module):
+    """Mamba + Attention 混合层"""
+    def __init__(self, d_model, layer_idx):
+        super().__init__()
+        # 每 4 层插入 1 层 Attention
+        if layer_idx % 4 == 3:
+            self.attn = LlamaAttention(d_model, n_heads=32)
+            self.is_mamba = False
+        else:
+            self.mamba = Mamba(d_model=d_model, d_state=64)
+            self.is_mamba = True
+        self.norm = nn.RMSNorm(d_model)
+
+    def forward(self, x):
+        if self.is_mamba:
+            return x + self.mamba(self.norm(x))
+        else:
+            return x + self.attn(self.norm(x))
+```
+
+## 部署与推理
+
+| 引擎 | Mamba 支持 | 说明 |
+|------|:--------:|------|
+| **vLLM** | 实验性 | 支持 Jamba/Falcon-Mamba |
+| **HuggingFace** | ✅ | transformers 原生支持 |
+| **TensorRT-LLM** | 部分 | 通过 plugin 支持 |
+| **llama.cpp** | ❌ | 不支持 SSM 架构 |
+| **专用 kernel** | ✅ | mamba-ssm 包提供 CUDA kernel |
 
 ## 延伸阅读
 
@@ -126,5 +184,18 @@ aliases:
 - [[概念/LLM/attention-variants|注意力变体]]
 - [[概念/LLM/transformer-architecture-plain|Transformer 架构]]
 - [[概念/LLM/sequence-models|序列模型]]
+- [[概念/LLM/state-space-models|状态空间模型]]
 - [[深度学习/State_Space_Models_2026|状态空间模型 2026]]
 - [[大模型/Sequence_Models/Sequence_Models|序列模型深度解析]]
+
+> **关键论文**: "Mamba: Linear-Time Sequence Modeling with Selective State Spaces" (Gu & Dao, 2023)
+
+## 快速决策指南
+
+| 场景 | 推荐方案 | 原因 |
+|------|---------|------|
+| 通用 NLP / 代码 | Transformer | 生态成熟，效果最佳 |
+| >100K 序列 + 显存受限 | Mamba-2 / Jamba | 线性复杂度，显存恒定 |
+| 基因组 / 时序 | Mamba / Falcon-Mamba | 天然适合超长序列 |
+| 端侧低显存 | Mamba-7B | 无 KV Cache |
+| 生产环境混合 | Jamba 1.5 | 兼顾质量+效率 |

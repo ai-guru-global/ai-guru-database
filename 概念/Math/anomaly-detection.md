@@ -151,3 +151,54 @@ updated: 2026-07-21T00:00:00Z
 3. **阈值调优**：根据业务调优异常阈值
 4. **实时监控**：生产数据实时异常检测
 5. **与可观测性配合**：异常检测 + 可观测性监控
+
+## 2026 异常检测生态
+
+| 方法 | 类型 | 适用 | 状态 |
+|------|------|------|------|
+| **Isolation Forest** | 隔离 | 高维数据 | GA |
+| **LOF** | 密度 | 局部异常 | GA |
+| **Autoencoder** | 重建 | 复杂模式 | GA |
+| **DBSCAN** | 聚类 | 密度异常 | GA |
+| **One-Class SVM** | 边界 | 单类分类 | GA |
+| **Transformer AD** | 注意力 | 时序异常 | GA |
+
+## 异常检测架构
+
+```
+异常检测方法分类:
+├── 统计方法: Z-Score / IQR / Grubbs
+├── 距离方法: KNN / LOF
+├── 密度方法: DBSCAN / LOF
+├── 隔离方法: Isolation Forest
+├── 重建方法: Autoencoder / VAE
+├── 分类方法: One-Class SVM
+└── 深度方法: Transformer / GAN
+```
+
+## 异常检测代码示例
+
+```python
+from sklearn.ensemble import IsolationForest
+from sklearn.neighbors import LocalOutlierFactor
+import numpy as np
+
+# Isolation Forest
+iso_forest = IsolationForest(contamination=0.1, random_state=42)
+predictions = iso_forest.fit_predict(X)
+anomalies = X[predictions == -1]
+
+# Local Outlier Factor
+lof = LocalOutlierFactor(n_neighbors=20, contamination=0.1)
+labels = lof.fit_predict(X)
+scores = lof.negative_outlier_factor_
+```
+
+## 延伸阅读
+
+- [[概念/Math/unsupervised-learning|无监督学习]] — 无监督基础
+- [[概念/Math/time-series-analysis|时序分析]] — 时序异常
+- [[概念/Math/feature-engineering|特征工程]] — 特征设计
+- [[概念/MLOps/monitoring|监控]] — 生产监控
+
+> ℹ️ 异常检测是数据质量和安全的关键，无监督方法最常用。

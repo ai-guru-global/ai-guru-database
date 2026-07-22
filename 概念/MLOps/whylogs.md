@@ -147,3 +147,55 @@ pip install whylogs
 3. **与模型监控配合**：数据漂移 + 模型性能监控
 4. **基线对比**：建立数据基线，对比检测异常
 5. **与 MLflow 集成**：whylogs + MLflow 实现完整监控
+
+## 2026 WhyLabs/WhyLogs 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **whylogs 1.3+** | 数据日志库 | GA |
+| **WhyLabs 平台** | 托管监控 | GA |
+| **LLM 监控** | LLM 输出质量 | GA |
+| **数据漂移检测** | 自动漂移检测 | GA |
+
+## 代码示例
+
+```python
+import whylogs as why
+from whylogs.core import DatasetProfileView
+import pandas as pd
+
+# 记录数据 profile
+df = pd.read_csv("production_data.csv")
+results = why.log(df)
+profile = results.view()
+
+# 保存 profile
+profile.write("profile.bin")
+
+# 数据漂移检测
+from whylogs.viz import NotebookProfileVisualizer
+
+reference = why.log(pd.read_csv("reference.csv")).view()
+current = why.log(pd.read_csv("current.csv")).view()
+
+# 对比 profile
+drift_report = why.compare(reference, current)
+print(drift_report)
+```
+
+## 监控指标
+
+| 指标 | 说明 |
+|------|------|
+| **数据分布** | 特征分布变化 |
+| **缺失值** | 缺失率变化 |
+| **基数** | 唯一值数量变化 |
+| **统计量** | 均值/方差/分位数变化 |
+
+## 延伸阅读
+
+- [[概念/MLOps/evidently|Evidently]] — 数据漂移监控
+- [[概念/MLOps/observability|Observability]] — 可观测性
+- [[概念/MLOps/grafana|Grafana]] — 可视化
+
+> ℹ️ WhyLogs 是轻量级数据日志库，通过数据 profile 实现数据质量监控和漂移检测。

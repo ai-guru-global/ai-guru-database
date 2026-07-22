@@ -129,3 +129,75 @@ AI Stack 容器工具层级
 2. **与 kubectl 配合**：先用 kubectl 定位，再用 crictl 深入
 3. **日志查看**：crictl logs 查看容器原始日志
 4. **权限控制**：限制 crictl 使用权限
+
+## crictl vs docker vs kubectl
+
+| 工具 | 层级 | 用途 | 生产使用 |
+|------|------|------|------|
+| kubectl | K8s API | 集群管理 | ✅ 主要 |
+| crictl | CRI | 容器运行时排查 | ⚠️ 排查 |
+| docker | Docker | 镜像构建/开发 | ❌ 已弃用 |
+| ctr | containerd | 底层调试 | ⚠️ 调试 |
+
+## 常用 crictl 命令
+
+| 命令 | 用途 |
+|------|------|
+| `crictl ps` | 列出运行容器 |
+| `crictl ps -a` | 列出所有容器 |
+| `crictl pods` | 列出 Pod |
+| `crictl logs <container>` | 查看容器日志 |
+| `crictl exec -it <container> bash` | 进入容器 |
+| `crictl inspect <container>` | 容器详情 |
+| `crictl images` | 列出镜像 |
+| `crictl rmi <image>` | 删除镜像 |
+| `crictl stats` | 容器资源统计 |
+
+## crictl 配置
+
+```bash
+# /etc/crictl.yaml
+runtime-endpoint: unix:///run/containerd/containerd.sock
+image-endpoint: unix:///run/containerd/containerd.sock
+timeout: 10
+debug: false
+```
+
+## 排查流程
+
+| 步骤 | 命令 | 目的 |
+|------|------|------|
+| 1 | `kubectl get pods` | 定位问题 Pod |
+| 2 | `kubectl describe pod` | 查看事件 |
+| 3 | `crictl ps -a` | 查看容器状态 |
+| 4 | `crictl logs` | 查看容器日志 |
+| 5 | `crictl inspect` | 深入分析 |
+
+## 与 containerd 关系
+
+| 组件 | 说明 |
+|------|------|
+| containerd | 容器运行时守护进程 |
+| CRI | 容器运行时接口 |
+| crictl | CRI 命令行工具 |
+| runc | OCI 运行时 |
+
+> 💡 crictl 是 K8s 容器运行时排查的标准工具，2026 年生产环境仅用于故障排查，日常操作使用 kubectl。
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| 连接失败 | socket 路径错误 | 检查 /etc/crictl.yaml |
+| 权限拒绝 | 无权限访问 socket | 使用 sudo 或加入 docker 组 |
+| 容器不存在 | 容器已终止 | 使用 crictl ps -a |
+| 日志不完整 | 日志轮转 | 检查 kubelet 日志配置 |
+
+## 安全注意事项
+
+| 事项 | 说明 |
+|------|------|
+| 最小权限 | 限制 crictl 使用用户 |
+| 审计日志 | 记录 crictl 操作 |
+| 生产限制 | 仅用于排查，不用于日常 |
+| 只读模式 | 排查时避免修改操作 |

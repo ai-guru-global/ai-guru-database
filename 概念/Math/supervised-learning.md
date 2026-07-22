@@ -130,3 +130,72 @@ SVM 寻找最大间隔超平面，核技巧（线性核、多项式核、RBF 核
 3. **主动学习**：标注成本高时用主动学习
 4. **SFT 必用**：LLM 必须经过 SFT 对齐
 5. **与自监督配合**：自监督预训练 + 有监督微调
+
+## 2026 有监督学习生态
+
+| 任务 | 代表模型 | 指标 | 状态 |
+|------|----------|------|------|
+| **图像分类** | ViT-L / ConvNeXt | Top-1 Acc | GA |
+| **目标检测** | YOLOv10 / RT-DETR | mAP | GA |
+| **语义分割** | SAM 2 / Mask2Former | mIoU | GA |
+| **文本分类** | BERT / DeBERTa | F1 | GA |
+| **序列标注** | BERT + CRF | F1 | GA |
+
+## 有监督学习流程
+
+```
+有监督学习流程:
+数据收集 → 数据清洗 → 标注 → 划分训练/验证/测试
+    │
+    ▼
+模型选择 → 训练 → 验证 → 调参 → 测试 → 部署
+    │
+    ▼
+监控 → 数据漂移检测 → 重训练
+```
+
+## SFT 微调代码示例
+
+```python
+# LLM 有监督微调 (SFT)
+from transformers import AutoModelForCausalLM, Trainer
+from trl import SFTTrainer, SFTConfig
+
+model = AutoModelForCausalLM.from_pretrained("meta-llama/Llama-3-8B")
+
+# SFT 配置
+config = SFTConfig(
+    output_dir="./sft-output",
+    per_device_train_batch_size=4,
+    gradient_accumulation_steps=4,
+    learning_rate=2e-5,
+    num_train_epochs=3,
+    bf16=True
+)
+
+trainer = SFTTrainer(
+    model=model,
+    args=config,
+    train_dataset=train_data,
+    formatting_func=format_instruction
+)
+trainer.train()
+```
+
+## 延伸阅读
+
+- [[概念/Math/self-supervised-learning|自监督学习]] — 预训练基础
+- [[概念/Math/unsupervised-learning|无监督学习]] — 无监督学习
+- [[概念/Training/fine-tuning|微调]] — 模型微调技术
+- [[概念/Math/feature-engineering|特征工程]] — 特征设计
+
+> ℹ️ 有监督学习是 AI 应用的核心，SFT 是 LLM 对齐的关键步骤。
+
+## 有监督学习评估指标
+
+| 任务 | 指标 | 说明 |
+|------|------|------|
+| **分类** | Accuracy / F1 / AUC | 根据场景选择 |
+| **检测** | mAP / FPS | 精度与速度平衡 |
+| **分割** | mIoU / Dice | 像素级精度 |
+| **回归** | MSE / MAE / R² | 误差度量 |

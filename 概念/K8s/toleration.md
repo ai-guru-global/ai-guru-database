@@ -130,3 +130,75 @@ kubectl describe pod <pod-name> | grep -A5 Events
 2. **GPU 节点**：AI 工作负载声明 GPU 节点 Toleration
 3. **DaemonSet 豁免**：监控/日志 Agent 容忍所有 Taint
 4. **优雅退出**：NoExecute 配合 tolerationSeconds
+
+## Taint 与 Toleration 关系
+
+| 组件 | 作用 | 位置 |
+|------|------|------|
+| Taint | 节点拒绝 Pod | Node |
+| Toleration | Pod 容忍 Taint | Pod |
+| Effect | 拒绝类型 | Taint |
+| Operator | 匹配方式 | Toleration |
+
+## Taint Effect 类型
+
+| Effect | 说明 | 适用场景 |
+|------|------|------|
+| NoSchedule | 不调度新 Pod | 专用节点 |
+| PreferNoSchedule | 尽量不调度 | 优先避免 |
+| NoExecute | 驱逐现有 Pod | 紧急隔离 |
+
+## 常见 Taint 示例
+
+| Taint | 说明 | 来源 |
+|------|------|------|
+| node-role.kubernetes.io/master:NoSchedule | Master 节点 | kubeadm |
+| node.kubernetes.io/not-ready:NoExecute | 节点未就绪 | 控制器 |
+| node.kubernetes.io/unreachable:NoExecute | 节点不可达 | 控制器 |
+| nvidia.com/gpu:NoSchedule | GPU 专用节点 | 自定义 |
+
+## Toleration 配置示例
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: gpu-pod
+spec:
+  tolerations:
+  # 容忍 GPU 节点 Taint
+  - key: nvidia.com/gpu
+    operator: Exists
+    effect: NoSchedule
+  # 容忍 Master 节点
+  - key: node-role.kubernetes.io/master
+    operator: Exists
+    effect: NoSchedule
+  # 容忍节点未就绪 (300秒后驱逐)
+  - key: node.kubernetes.io/not-ready
+    operator: Exists
+    effect: NoExecute
+    tolerationSeconds: 300
+  containers:
+  - name: app
+    image: nvidia/cuda:12.0-base
+```
+
+## AI 场景应用
+
+| 场景 | Taint | Toleration |
+|------|------|------|
+| GPU 专用节点 | nvidia.com/gpu:NoSchedule | GPU 工作负载 |
+| 训练节点池 | training:NoSchedule | 训练任务 |
+| 推理节点池 | inference:NoSchedule | 推理服务 |
+| 高优先级 | critical:NoSchedule | 关键服务 |
+
+> 💡 Toleration 是 K8s 节点亲和性的补充机制，2026 年 AI 集群中 GPU 节点专用化必须使用 Taint + Toleration。
+
+## 常用命令
+
+| 命令 | 用途 |
+|------|------|
+| `kubectl taint nodes node1 key=value:NoSchedule` | 添加 Taint |
+| `kubectl taint nodes node1 key:NoSchedule-` | 移除 Taint |
+| `kubectl describe node node1` | 查看节点 Taint |

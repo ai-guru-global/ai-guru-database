@@ -136,3 +136,82 @@ Decode:  每次生成 1 个 token → 计算量小但要重复 N 次
 - [[概念/Inference/request-scheduling|请求调度]]
 - [[概念/Inference/quantization|量化]]
 - [[部署推理/Inference_Performance/README|推理性能专题]]
+
+## 推理性能优化全景
+
+| 优化技术 | 加速比 | 复杂度 | 适用场景 |
+|---------|--------|--------|----------|
+| **Continuous Batching** | 2-5x | 低 | 所有服务 |
+| **PagedAttention** | 1.5-2x | 低 | 显存受限 |
+| **Flash Attention** | 1.5-2x | 低 | 长序列 |
+| **量化 (FP8/INT4)** | 1.5-3x | 中 | 生产部署 |
+| **投机解码** | 2-3x | 中 | 延迟敏感 |
+| **KV Cache 压缩** | 1.5-2x | 中 | 长上下文 |
+| **TensorRT 编译** | 2-4x | 高 | 极致性能 |
+| **PD 分离** | 1.5-2x | 高 | 大规模服务 |
+
+## 性能基准测试方法
+
+```bash
+# 使用 vLLM benchmark 工具
+python -m vllm.entrypoints.openai.api_server \
+  --model Qwen/Qwen3-8B --tensor-parallel-size 1
+
+# 压测
+python -m vllm.entrypoints.benchmark_serving \
+  --model Qwen/Qwen3-8B \
+  --num-prompts 1000 \
+  --request-rate 10
+
+# 关注指标: TTFT, TPOT, E2E Latency, Throughput
+```
+
+## 生产最佳实践
+
+1. **先测基准线**：优化前先测量当前性能，建立基准
+2. **吐吐量 vs 延迟**：明确业务优先级，两者往往矛盾
+3. **并发测试**：单请求延迟 ≠ 生产性能，必须测并发
+4. **监控 P99**：关注尾部延迟，而非平均值
+5. **定期回归**：模型/引擎升级后重新测试性能
+
+## 2026 推理性能基准
+
+| 引擎 | 模型 | 吐吐量 (tok/s) | TTFT (ms) | 硬件 |
+|------|------|---------------|-----------|------|
+| **vLLM 0.8** | Llama-3-70B | 2,800 | 180 | 2×H100 |
+| **SGLang 0.4** | Llama-3-70B | 3,100 | 150 | 2×H100 |
+| **TensorRT-LLM** | Llama-3-70B | 3,500 | 120 | 2×H100 |
+| **vLLM 0.8** | Qwen2.5-72B | 2,600 | 200 | 2×H100 |
+
+## 性能测试代码示例
+
+```python
+import time
+from openai import OpenAI
+
+client = OpenAI(base_url="http://localhost:8000/v1")
+
+# 测量 TTFT + 吐吐量
+start = time.perf_counter()
+stream = client.chat.completions.create(
+    model="meta-llama/Llama-3-70B",
+    messages=[{"role": "user", "content": "Explain quantum computing"}],
+    stream=True
+)
+ttft = None; tokens = 0
+for chunk in stream:
+    if chunk.choices[0].delta.content and ttft is None:
+        ttft = (time.perf_counter() - start) * 1000
+    tokens += 1
+total = (time.perf_counter() - start) * 1000
+print(f"TTFT: {ttft:.0f}ms | Tokens: {tokens} | TPS: {tokens/(total/1000):.0f}")
+```
+
+## 延伸阅读
+
+- [[概念/Inference/inference-performance-gaps|性能缺口]] — 瓶颈分析与优化
+- [[概念/Inference/ttft|TTFT]] — 首 Token 延迟优化
+- [[概念/Inference/continuous-batching|连续批处理]] — 吐吐量优化
+- [[概念/Inference/quantization|量化]] — 精度与速度权衡
+
+> ℹ️ 推理性能优化需先建立基准线，再针对性优化，避免盲目调参。

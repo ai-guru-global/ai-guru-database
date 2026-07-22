@@ -74,3 +74,130 @@ sources: []
 3. **分布式训练**：大模型训练用 PAI-DLC
 4. **推理服务**：模型部署用 PAI-EAS
 5. **推理优化**：推理加速用 PAI-Blade
+
+## PAI 架构分层
+
+| 层级 | 组件 | 说明 |
+|------|------|------|
+| 开发层 | PAI-DSW | Notebook 开发环境 |
+| 训练层 | PAI-DLC | 分布式训练集群 |
+| 推理层 | PAI-EAS | 弹性推理服务 |
+| 优化层 | PAI-Blade | 推理加速引擎 |
+| 建模层 | PAI-Designer | 可视化建模 |
+| 特征层 | PAI-FeatureStore | 特征平台 |
+| 底座层 | ACK + GPU | 容器 + 算力 |
+
+## 配置示例
+
+```yaml
+# PAI-DLC 训练任务配置
+apiVersion: pai.alibaba.com/v1
+kind: DLCJob
+metadata:
+  name: qwen-finetune
+spec:
+  framework: PyTorch
+  workerCount: 4
+  workerSpec:
+    gpu: 8
+    gpuType: A100
+    memory: 512Gi
+  command:
+    - torchrun --nproc_per_node=8 train.py
+      --model Qwen-72B
+      --data /mnt/oss/train-data
+      --output /mnt/oss/checkpoints
+  dataSource:
+    - type: OSS
+      path: oss://bucket/train-data
+      mountPath: /mnt/oss
+```
+
+## 与其他平台对比
+
+| 维度 | PAI | SageMaker | Vertex AI | Azure ML |
+|------|------|------|------|------|
+| Notebook | DSW | Studio | Workbench | Notebook |
+| 训练 | DLC | Training | Training | Compute |
+| 推理 | EAS | Endpoint | Prediction | Endpoint |
+| 优化 | Blade | Neo | 无 | 无 |
+| 国产芯片 | 昇腾 | 无 | TPU | 无 |
+| 专有云 | Apsara | Outposts | Anthos | Stack |
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| DLC 任务失败 | GPU OOM | 减小 batch size/开启梯度累积 |
+| EAS 延迟高 | 实例数不足 | 增加副本/开启自动扩缩 |
+| DSW 无法启动 | 资源配额不足 | 申请配额/换可用区 |
+| 模型加载失败 | 格式不兼容 | 检查模型格式和框架版本 |
+| OSS 读取慢 | 跨地域访问 | 使用同地域 OSS |
+
+## 相关概念
+
+- [[概念/alibaba-cloud|Alibaba Cloud]] — 阿里云平台
+- [[概念/ack|ACK]] — 容器服务底座
+- [[概念/mlops|MLOps]] — ML 运维体系
+- [[概念/model-deployment|Model Deployment]] — 模型部署
+
+> 💡 PAI 的核心价值是将 AI 开发全链路（开发→训练→优化→部署）封装为统一平台，降低 AI 工程化门槛。
+
+## 生产检查清单
+
+1. 确认 GPU 类型和数量与任务匹配
+2. 配置 OSS 数据源和模型输出路径
+3. 设置任务超时和失败重试策略
+4. 配置 EAS 自动扩缩容规则
+5. 开启训练任务日志和指标监控
+6. 配置模型版本管理和回滚机制
+7. 设置资源配额和费用告警
+8. 建立 A/B 测试和金丝雀发布流程
+
+## 版本兼容性
+
+| 组件 | 版本 | 状态 |
+|------|------|------|
+| PAI-DSW | 2.0+ | GA |
+| PAI-DLC | 2.0+ | GA |
+| PAI-EAS | 2.0+ | GA |
+| PAI-Blade | 1.5+ | GA |
+| PyTorch | 2.0+ | 支持 |
+| CUDA | 12.x | 支持 |
+
+## 学习资源
+
+| 资源 | 类型 | 说明 |
+|------|------|------|
+| PAI 官方文档 | 文档 | 产品使用指南 |
+| PAI 最佳实践 | 博客 | 场景化教程 |
+| 天池实验室 | 平台 | 免费 GPU 实验 |
+| PAI SDK | 工具 | Python SDK |
+
+## 总结
+
+PAI 是阿里云一站式 AI 平台，覆盖从 Notebook 开发、分布式训练、推理优化到模型部署的全链路。其核心优势在于与阿里云生态深度集成（ACK、OSS、SLS）和国产化芯片支持（昇腾）。
+
+> 💡 选择 PAI 的三大理由：全链路覆盖、阿里云生态集成、国产芯片支持。
+
+## 常用命令
+
+| 命令 | 说明 |
+|------|------|
+| `pai -name pytorch_job` | 提交训练任务 |
+| `eascmd create service.json` | 创建推理服务 |
+| `eascmd scale <service> --replicas 3` | 扩容推理服务 |
+| `dsw list` | 查看 Notebook 实例 |
+| `blade optimize --model <path>` | 推理优化 |
+
+## 总结
+
+PAI 是阿里云一站式 AI 平台，覆盖从 Notebook 开发、分布式训练、推理优化到模型部署的全链路。其核心优势在于与阿里云生态深度集成和国产化芯片支持。
+
+> 💡 PAI 的核心价值是将 AI 开发全链路封装为统一平台，降低 AI 工程化门槛。
+
+## 相关概念
+
+- [[概念/alibaba-cloud|Alibaba Cloud]] — 阿里云平台
+- [[概念/ack|ACK]] — 容器服务底座
+- [[概念/mlops|MLOps]] — ML 运维体系

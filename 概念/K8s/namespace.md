@@ -125,3 +125,79 @@ EOF
 2. **配额限制**：每个 Namespace 设置 ResourceQuota
 3. **网络策略**：启用 NetworkPolicy 限制跨 Namespace 访问
 4. **命名规范**：使用有意义的命名，便于管理
+
+## Namespace 作用
+
+| 作用 | 说明 |
+|------|------|
+| 资源隔离 | 不同 Namespace 资源独立 |
+| 权限控制 | RBAC 按 Namespace 授权 |
+| 配额管理 | ResourceQuota 限制总量 |
+| 网络策略 | NetworkPolicy 隔离流量 |
+| 资源命名 | 同名资源可共存 |
+
+## 默认 Namespace
+
+| Namespace | 用途 |
+|------|------|
+| default | 未指定 Namespace 的资源 |
+| kube-system | K8s 系统组件 |
+| kube-public | 公开资源 |
+| kube-node-lease | 节点心跳 |
+
+## Namespace 配置示例
+
+```yaml
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: ml-team
+  labels:
+    team: ml
+    environment: production
+---
+# 配合 ResourceQuota
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: ml-quota
+  namespace: ml-team
+spec:
+  hard:
+    requests.cpu: "100"
+    requests.memory: 200Gi
+    requests.nvidia.com/gpu: "16"
+    limits.cpu: "200"
+    limits.memory: 400Gi
+    pods: "50"
+    services: "20"
+```
+
+## AI 场景 Namespace 划分
+
+| Namespace | 用途 | 资源配额 |
+|------|------|------|
+| ml-training | 训练任务 | GPU 配额高 |
+| ml-inference | 推理服务 | GPU 配额中 |
+| ml-data | 数据处理 | CPU/存储 |
+| ml-dev | 开发测试 | 低配额 |
+| ml-system | 平台组件 | 系统级 |
+
+## 常用命令
+
+| 命令 | 用途 |
+|------|------|
+| `kubectl get ns` | 列出 Namespace |
+| `kubectl create ns <name>` | 创建 Namespace |
+| `kubectl get pods -n <ns>` | 查看指定 NS 的 Pod |
+| `kubectl config set-context --current --namespace=<ns>` | 切换默认 NS |
+
+> 💡 Namespace 是 K8s 多租户隔离的基础，2026 年 AI 平台推荐按团队/环境/用途划分 Namespace + ResourceQuota。
+
+## 注意事项
+
+| 事项 | 说明 |
+|------|------|
+| 删除谨慎 | 删除 NS 会删除所有资源 |
+| 跨 NS 访问 | 需要 RBAC 授权 |
+| DNS 隔离 | service.ns.svc.cluster.local |

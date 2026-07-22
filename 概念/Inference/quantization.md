@@ -141,3 +141,68 @@ model.save_quantized("./qwen2.5-7b-awq-4bit")
 - [[概念/Inference/tensorrt|TensorRT]]
 - [[部署推理/Quantization/Quantization_Techniques_2026|Quantization Techniques 2026]]
 - [[概念/Inference/inference-performance|推理性能]]
+
+## 量化方案对比 (2026)
+
+| 方案 | 位宽 | 质量保留 | 速度提升 | 硬件要求 | 适用 |
+|------|------|---------|---------|---------|------|
+| **FP8 (E4M3)** | 8-bit | ~99% | 1.5-2x | H100+ | 生产首选 |
+| **INT8 (W8A8)** | 8-bit | ~98% | 1.5x | 所有 GPU | 通用 |
+| **GPTQ** | 4-bit | ~95% | 2-3x | 所有 GPU | 显存受限 |
+| **AWQ** | 4-bit | ~96% | 2-3x | 所有 GPU | 显存受限 |
+| **GGUF Q4_K_M** | 4-bit | ~94% | 2x | CPU/GPU | 边缘 |
+| **FP4** | 4-bit | ~93% | 2-3x | B200+ | 下一代 |
+
+## 量化选型决策
+
+```
+有 H100/B200?
+├── 是 → FP8 (质量最优 + 速度翻倍)
+└── 否 → 显存够吗?
+    ├── 够 → INT8 (W8A8)
+    └── 不够 → GPTQ/AWQ INT4
+
+边缘/CPU 部署? → GGUF Q4_K_M / Q5_K_M
+```
+
+## 生产最佳实践
+
+1. **H100+ 必用 FP8**：质量几乎无损，速度翻倍
+2. **大模型用 INT4**：70B+ 模型 INT4 质量可接受
+3. **小模型谨慎**：7B 以下 INT4 损失明显，用 INT8
+4. **KV Cache FP8**：长上下文场景启用 FP8 KV Cache
+5. **量化后评估**：上线前用目标场景评估量化后质量
+
+## 2026 量化技术生态
+
+| 量化方案 | 精度 | 硬件要求 | 质量损失 | 状态 |
+|----------|------|----------|----------|------|
+| **FP8 (E4M3)** | 8-bit | H100/H200 | <1% | GA 主流 |
+| **INT8 (W8A8)** | 8-bit | A100+ | 1-2% | GA |
+| **GPTQ INT4** | 4-bit | 通用 GPU | 2-5% | GA |
+| **AWQ INT4** | 4-bit | 通用 GPU | 1-3% | GA |
+| **GGUF Q4_K_M** | 4-bit | CPU/GPU | 2-4% | GA |
+| **INT2/FP4** | 2-4bit | 研究阶段 | 5-15% | 实验 |
+
+## 量化代码示例
+
+```python
+# AWQ 量化 (AutoAWQ)
+from awq import AutoAWQForCausalLM
+model = AutoAWQForCausalLM.from_pretrained("meta-llama/Llama-3-70B")
+model.quantize(tokenizer, quant_config={"w_bit": 4, "q_group_size": 128})
+model.save_quantized("./llama3-70b-awq")
+
+# vLLM 加载量化模型
+from vllm import LLM
+llm = LLM(model="./llama3-70b-awq", quantization="awq")
+```
+
+## 延伸阅读
+
+- [[概念/Inference/model-formats|模型格式]] — 格式与量化关系
+- [[概念/Inference/gguf|GGUF]] — 边缘量化格式
+- [[概念/Inference/inference-performance|推理性能]] — 量化对性能影响
+- [[概念/LLM/llama-cpp|llama.cpp]] — 本地量化推理
+
+> ℹ️ 量化是显存优化的第一手段，H100+ 优先用 FP8，资源受限用 INT4。

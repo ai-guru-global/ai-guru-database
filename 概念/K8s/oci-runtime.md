@@ -121,3 +121,84 @@ OCI Runtime Spec (容器运行时标准)
 2. **强隔离用 kata**：多租户场景用 kata-runtime
 3. **GPU 容器化**：配合 CDI 注入 GPU 设备
 4. **镜像标准**：使用 OCI Image Spec 格式
+
+## OCI 运行时对比
+
+| 运行时 | 隔离性 | 性能 | 适用场景 |
+|------|------|------|------|
+| runc | 容器级 | 最高 | 通用场景 |
+| kata-runtime | VM 级 | 中 | 多租户/安全 |
+| gVisor | 沙箱级 | 中高 | 不可信代码 |
+| crun | 容器级 | 高 | 轻量替代 |
+| nvidia | 容器级 | 最高 | GPU 容器 |
+
+## OCI 规范组成
+
+| 规范 | 说明 |
+|------|------|
+| Runtime Spec | 容器运行时标准 |
+| Image Spec | 镜像格式标准 |
+| Distribution Spec | 镜像分发标准 |
+
+## 运行时配置示例
+
+```toml
+# containerd 配置多运行时
+[plugins."io.containerd.grpc.v1.cri".containerd.runtimes.runc]
+  runtime_type = "io.containerd.runc.v2"
+
+[plugins."io.containerd.grpc.v1.cri".containerd.runtimes.kata]
+  runtime_type = "io.containerd.kata.v2"
+
+[plugins."io.containerd.grpc.v1.cri".containerd.runtimes.nvidia]
+  runtime_type = "io.containerd.runc.v2"
+  [plugins."io.containerd.grpc.v1.cri".containerd.runtimes.nvidia.options]
+    BinaryName = "/usr/bin/nvidia-container-runtime"
+```
+
+## RuntimeClass 使用
+
+```yaml
+apiVersion: node.k8s.io/v1
+kind: RuntimeClass
+metadata:
+  name: kata
+handler: kata
+---
+apiVersion: v1
+kind: Pod
+spec:
+  runtimeClassName: kata  # 使用 kata 运行时
+  containers:
+  - name: app
+    image: my-app:latest
+```
+
+## AI 场景运行时选择
+
+| 场景 | 运行时 | 说明 |
+|------|------|------|
+| GPU 训练 | nvidia | GPU 支持 |
+| GPU 推理 | nvidia | GPU 支持 |
+| 多租户 | kata | 强隔离 |
+| 开发测试 | runc | 高性能 |
+| 不可信代码 | gVisor | 沙箱隔离 |
+
+> 💡 OCI 运行时是容器执行的底层标准，2026 年 AI 集群推荐 runc + nvidia 运行时，多租户场景用 kata。
+
+## 常用命令
+
+| 命令 | 用途 |
+|------|------|
+| `runc --version` | 查看 runc 版本 |
+| `runc list` | 列出容器 |
+| `runc spec` | 生成配置模板 |
+| `crictl info` | 查看运行时信息 |
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| 容器启动失败 | 运行时未安装 | 检查二进制文件 |
+| GPU 不可见 | nvidia 运行时未配置 | 配置 containerd |
+| 性能下降 | 隔离开销 | 选择合适的运行时 |

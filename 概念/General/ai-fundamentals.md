@@ -159,3 +159,49 @@ AI系统生命周期分三阶段：
 3. **渐进式落地**：从简单场景开始，验证价值后再扩展复杂场景
 4. **评估体系**：建立完善的评估指标，用数据说话而非主观感受
 5. **持续学习**：AI 领域发展极快，保持每周跟进前沿动态的习惯
+
+## AI 基础概念地图
+
+```yaml
+ai_fundamentals_map:
+  machine_learning:
+    supervised: [分类, 回归, 序列标注]
+    unsupervised: [聚类, 降维, 异常检测]
+    reinforcement: [Q-Learning, Policy Gradient, RLHF]
+  deep_learning:
+    architectures: [CNN, RNN, Transformer, Mamba]
+    training: [反向传播, 优化器, 正则化]
+    techniques: [注意力机制, 残差连接, 层归一化]
+  llm_era:
+    pretraining: [自监督, 下一个Token预测, 对比学习]
+    alignment: [SFT, RLHF, DPO, IPO]
+    inference: [量化, 蒸馏, 剪枝, 推测解码]
+  applications:
+    nlp: [文本生成, 翻译, 摘要]
+    vision: [图像分类, 检测, 生成]
+    multimodal: [图文理解, 视频生成, 语音]
+```
+
+## 学习路径建议
+
+| 阶段 | 内容 | 时间 | 资源 |
+|------|------|------|------|
+| 入门 | 数学基础 + Python | 2-3月 | 3Blue1Brown + CS50 |
+| 基础 | ML + DL 原理 | 3-4月 | 吴恩达 + 动手学深度学习 |
+| 进阶 | Transformer + LLM | 2-3月 | 论文精读 + 实践 |
+| 实战 | 项目驱动 | 持续 | 开源项目 + 竞赛 |
+
+## 常见问题
+
+| 问题 | 建议 |
+|------|------|
+| 数学基础不足 | 先补线性代数/概率/微积分，不必精通 |
+| 理论与实践脱节 | 每学一个概念就动手实现 |
+| 技术更新太快 | 关注核心原理，工具会变但原理不变 |
+| 不知从何入手 | 从 Transformer 和 LLM 开始，向前追溯 |
+
+## 总结
+
+AI 基础知识是理解整个 AI 技术栈的根基，2026 年的核心是 Transformer 架构和大规模预训练范式。掌握基础原理比追逐最新工具更重要——工具会变，但数学和算法原理不会过时。
+
+> 💡 AI 学习的核心原则：“理解原理，实践验证，持续迭代”——不要试图一次学完所有东西。

@@ -113,3 +113,93 @@ All-to-All Combine（结果聚合回原 GPU）
 - [[部署推理/Inference_Performance/MoE_Inference_Optimization|MoE 推理优化]]
 - [[概念/GPU/flops|FLOPS 计算]] — 并行效率度量
 - [[概念/Inference/vllm|vLLM]] — 原生 EP 支持的推理引擎
+
+## 2026 专家并行生态
+
+| 框架 | 说明 | 状态 |
+|------|------|------|
+| **Megatron-LM** | NVIDIA MoE 支持 | GA |
+| **DeepSpeed-MoE** | 微软 MoE 支持 | GA |
+| **vLLM** | 推理 EP | GA |
+| **Mixtral** | 开源 MoE 模型 | GA |
+
+## 延伸阅读
+
+- [[概念/GPU/model-parallelism|Model Parallelism]] — 模型并行
+- [[概念/GPU/tensor-parallelism|Tensor Parallelism]] — 张量并行
+- [[概念/LLM/moe|MoE]] — 混合专家模型
+
+> ℹ️ 专家并行是将 MoE 模型的专家分布到多个 GPU 的技术，用于训练和推理 MoE 模型。
+
+## EP 配置示例
+
+```python
+# Megatron-LM EP 配置
+python pretrain_gpt.py \
+    --expert-model-parallel-size 8 \
+    --num-experts 64 \
+    --moe-router-topk 2
+```
+
+## EP vs TP
+
+| 维度 | EP | TP |
+|------|------|------|
+| **切分对象** | 专家 | 层内权重 |
+| **通信模式** | All-to-All | AllReduce |
+| **适用模型** | MoE | 通用 |
+| **负载均衡** | 需路由均衡 | 自动均衡 |
+
+## 生产最佳实践
+
+1. **专家数量**：专家数通常为 EP 度数的倍数
+2. **路由均衡**：确保路由负载均衡
+3. **与 TP 组合**：MoE 用 EP + TP 组合
+4. **All-to-All 优化**：优化 All-to-All 通信
+5. **监控负载**：监控专家负载
+
+## 检查清单
+
+- [ ] EP 度数已选择
+- [ ] 路由均衡已配置
+- [ ] All-to-All 已优化
+- [ ] 负载监控已配置
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| 专家负载不均 | 路由崩塔 | 添加 load balancing loss + 容量因子 |
+| All-to-All 慢 | 跨节点通信 | 节点内 EP + 节点间 DP |
+| 显存浪费 | 专家分配不均 | 使用 Expert Choice 路由 |
+| 精度下降 | 专家数不足 | 增加专家数 + 调整 top-k |
+| 推理延迟高 | 动态路由开销 | 使用静态路由或专家缓存 |
+
+## 延伸阅读
+
+- [[概念/GPU/tensor-parallelism|张量并行]] — 专家内部 TP 切分
+- [[概念/GPU/pipeline-parallelism|流水线并行]] — PP 与 EP 组合
+- [[概念/GPU/model-parallelism|模型并行]] — 并行策略总览
+- [[概念/GPU/nccl|NCCL]] — All-to-All 通信实现
+- [[概念/Training/distributed-training|分布式训练]] — MoE 训练架构
+
+> ℹ️ 专家并行是 MoE 模型的核心并行策略，2026年 DeepSeek-V3、Mixtral 8x22B 等模型均采用 EP + TP + DP 组合，配合 Expert Choice 路由实现万卡级 MoE 训练。
+
+## 2026 EP 生态现状
+
+| 框架/模型 | EP 支持 | 说明 |
+|------|------|------|
+| DeepSeek-V3 | ✅ 成熟 | 256 专家 EP + TP + DP |
+| Megatron-LM | ✅ 成熟 | 官方 EP 支持 |
+| Mixtral 8x22B | ✅ 成熟 | 8 专家 top-2 路由 |
+| vLLM | ✅ 成熟 | MoE 推理 EP 支持 |
+| FSDP2 | 🟡 发展中 | MoE 集成中 |
+| Expert Choice | ✅ 新增 | 专家选择 token 路由 |
+
+## 检查清单
+
+- [ ] 专家数与 top-k 已确定
+- [ ] EP 度数与节点拓扑匹配
+- [ ] 路由均衡 loss 已配置
+- [ ] All-to-All 通信已优化
+- [ ] 专家负载监控已配置

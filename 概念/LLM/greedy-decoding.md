@@ -147,6 +147,56 @@ def greedy_decode(model, prompt, max_length):
 
 1. **任务匹配策略**：代码/数学用贪心，创意写作用采样，翻译用 Beam Search
 2. **重复惩罚必配**：即使贪心解码也设置 repetition_penalty=1.05-1.1
-3. **投机解码加速**：生产环境启用 Speculative Decoding，提升吞吐量 2-3x
+3. **投机解码加速**：生产环境启用 Speculative Decoding，提升吐量 2-3x
 4. **温度调度**：长文本生成使用温度调度，避免后期质量下降
 5. **A/B 测试**：不同解码策略进行 A/B 测试，选择最优配置
+6. **监控输出质量**：跟踪重复率、连贯性指标
+7. **降级方案**：贪心解码失败时回退到采样
+
+## 2026 解码策略对比
+
+| 策略 | 确定性 | 多样性 | 质量 | 速度 | 适用 |
+|------|:------:|:------:|:----:|:----:|------|
+| **贪心** | 极高 | 无 | 中 | 极快 | 代码/数学 |
+| **Beam Search** | 高 | 低 | 高 | 慢 | 翻译 |
+| **Top-k** | 中 | 中 | 中-高 | 快 | 通用 |
+| **Top-p** | 中 | 中-高 | 高 | 快 | 通用 |
+| **Temperature** | 可调 | 可调 | 可调 | 快 | 通用 |
+
+## 贪心解码 vs 采样
+
+| 维度 | 贪心解码 | 采样解码 |
+|------|---------|----------|
+| **输出** | 确定性 | 随机性 |
+| **重复风险** | 高 | 低 |
+| **多样性** | 无 | 有 |
+| **可复现** | 是 | 需固定 seed |
+| **适用** | 事实/代码 | 创意/对话 |
+
+## 代码示例
+
+```python
+from transformers import AutoModelForCausalLM, AutoTokenizer
+
+model = AutoModelForCausalLM.from_pretrained("Qwen/Qwen3-8B")
+tokenizer = AutoTokenizer.from_pretrained("Qwen/Qwen3-8B")
+
+# 贪心解码
+inputs = tokenizer("解释量子计算", return_tensors="pt")
+outputs = model.generate(
+    **inputs,
+    max_new_tokens=512,
+    do_sample=False,          # 贪心解码
+    repetition_penalty=1.1,   # 重复惩罚
+)
+print(tokenizer.decode(outputs[0]))
+```
+
+## 常见问题
+
+| 问题 | 原因 | 解决 |
+|------|------|------|
+| 输出重复 | 贪心陷入循环 | 加 repetition_penalty |
+| 质量不稳定 | 任务不适合贪心 | 换用采样/Beam |
+| 速度不够快 | 未用加速技术 | 启用推测解码 |
+| 输出太短 | EOS 过早触发 | 调整 min_length |

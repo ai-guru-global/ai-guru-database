@@ -132,3 +132,69 @@ PyTorch 训练模型
 - [[概念/LLM/tensorrt-llm|TensorRT-LLM]]
 - [[概念/LLM/llama-cpp|llama.cpp]]
 - [[部署推理/Quantization/Quantization_Techniques_2026|量化技术 2026]]
+
+## 模型格式选型决策树
+
+```
+部署目标?
+├── NVIDIA GPU 极致性能 → TensorRT Engine (.engine)
+├── NVIDIA GPU 通用服务 → SafeTensors + vLLM/SGLang
+├── CPU/边缘/Apple → GGUF + llama.cpp
+├── Intel CPU/iGPU → OpenVINO IR
+├── 多框架兼容 → ONNX
+└── 训练/微调 → SafeTensors (HuggingFace)
+```
+
+## 格式对比速查表
+
+| 格式 | 体积 | 加载速度 | 推理速度 | 生态 | 适用 |
+|------|------|---------|---------|------|------|
+| **SafeTensors** | 大 (FP16) | 快 | 中 | HF 生态 | 训练/通用 |
+| **GGUF** | 小 (Q4-Q8) | 快 | 中 | llama.cpp | 边缘/CPU |
+| **TensorRT** | 中 | 慢(编译) | 极快 | NVIDIA | 生产极致 |
+| **ONNX** | 中 | 中 | 中 | 多框架 | 跨平台 |
+| **OpenVINO** | 中 | 中 | 快 | Intel | Intel 硬件 |
+
+## 生产最佳实践
+
+1. **生产用 SafeTensors + vLLM**：生态最成熟，部署最简单
+2. **极致性能用 TensorRT**：吐吐量要求极高时编译 TensorRT 引擎
+3. **边缘用 GGUF Q4_K_M**：资源受限场景的最佳选择
+4. **避免 pickle**：.bin 格式有安全风险，始终用 SafeTensors
+5. **版本管理**：模型文件纳入版本控制或对象存储，支持回滚
+
+## 2026 模型格式生态现状
+
+| 格式 | 主要用途 | 生态支持 | 状态 |
+|------|----------|----------|------|
+| **SafeTensors** | 云端训练/推理 | HuggingFace/vLLM/SGLang | GA 主流 |
+| **GGUF** | 边缘/本地推理 | llama.cpp/Ollama | GA 活跃 |
+| **TensorRT Engine** | NVIDIA 极致性能 | TensorRT-LLM | GA |
+| **ONNX** | 跨平台部署 | ONNX Runtime | GA 稳定 |
+| **CoreML** | Apple 设备 | Xcode/Apple ML | GA |
+| **ExecuTorch** | 移动端 | PyTorch/Meta | Beta |
+
+## 格式转换工作流
+
+```bash
+# PyTorch → SafeTensors (HuggingFace 默认)
+from safetensors.torch import save_file
+save_file(state_dict, "model.safetensors")
+
+# SafeTensors → GGUF (llama.cpp 工具链)
+python convert_hf_to_gguf.py model_dir --outtype f16
+llama-quantize model.gguf model-Q4_K_M.gguf Q4_K_M
+
+# SafeTensors → TensorRT (NVIDIA 编译)
+trtllm-build --checkpoint_dir ./ckpt --output_dir ./engine
+```
+
+## 延伸阅读
+
+- [[概念/Inference/safetensors|SafeTensors]] — 安全模型格式详解
+- [[概念/Inference/gguf|GGUF]] — 边缘推理量化格式
+- [[概念/Inference/tensorrt|TensorRT]] — NVIDIA 高性能推理引擎
+- [[概念/Inference/quantization|量化]] — 模型压缩与精度权衡
+- [[概念/Inference/model-serving|模型服务]] — 部署架构设计
+
+> ℹ️ 模型格式选择直接影响部署效率、推理速度和安全性，生产环境优先选择 SafeTensors。

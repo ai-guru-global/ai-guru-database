@@ -128,3 +128,74 @@ kubectl label node node-01 accelerator=nvidia-a100
 2. **一致性**：相同含义的 Label 在整个集群保持一致
 3. **与 Annotation 区分**：Label 用于选择，Annotation 用于描述
 4. **节点 Label**：GPU 节点打上 accelerator 标签便于调度
+
+## Label vs Annotation
+
+| 特性 | Label | Annotation |
+|------|------|------|
+| 用途 | 选择/分组 | 描述/元数据 |
+| 可查询 | ✅ | ❌ |
+| 长度限制 | 63 字符 | 256 KB |
+| 字符限制 | 字母数字-_. | 任意 |
+| 典型用途 | Service Selector | 构建信息/版本 |
+
+## 推荐 Label 规范
+
+| Label | 说明 | 示例 |
+|------|------|------|
+| `app.kubernetes.io/name` | 应用名 | `my-app` |
+| `app.kubernetes.io/instance` | 实例名 | `my-app-prod` |
+| `app.kubernetes.io/version` | 版本 | `1.2.3` |
+| `app.kubernetes.io/component` | 组件 | `frontend` |
+| `app.kubernetes.io/part-of` | 所属系统 | `ecommerce` |
+| `app.kubernetes.io/managed-by` | 管理工具 | `helm` |
+
+## Label 选择器语法
+
+| 语法 | 说明 | 示例 |
+|------|------|------|
+| `key=value` | 相等 | `app=web` |
+| `key!=value` | 不等 | `env!=dev` |
+| `key in (v1,v2)` | 集合 | `tier in (frontend,backend)` |
+| `key notin (v1,v2)` | 不在集合 | `env notin (test,dev)` |
+| `key` | 存在 | `gpu` |
+| `!key` | 不存在 | `!deprecated` |
+
+## 常用 Label 操作
+
+| 命令 | 用途 |
+|------|------|
+| `kubectl label pods pod-1 env=prod` | 添加 Label |
+| `kubectl label pods pod-1 env-` | 删除 Label |
+| `kubectl get pods -l app=web` | 按 Label 查询 |
+| `kubectl get pods -l 'env in (prod,staging)'` | 集合查询 |
+| `kubectl get nodes -l nvidia.com/gpu=true` | GPU 节点 |
+
+## AI 场景 Label 示例
+
+```yaml
+# GPU 节点 Label
+metadata:
+  labels:
+    nvidia.com/gpu: "true"
+    nvidia.com/gpu.product: "A100"
+    nvidia.com/gpu.memory: "80"
+    accelerator: "nvidia-a100"
+---
+# 训练任务 Label
+metadata:
+  labels:
+    workload-type: "training"
+    model-name: "llama-70b"
+    team: "ml-platform"
+```
+
+> 💡 Label 是 K8s 资源选择的核心机制，2026 年 AI 集群中 GPU 节点 Label + 工作负载 Label 是调度基础。
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| Label 无效 | 字符不合法 | 使用字母数字-_. |
+| 选择器不匹配 | Label 不一致 | 检查大小写/拼写 |
+| Label 过多 | 过度标签 | 保持 3-5 个核心 Label |

@@ -145,3 +145,63 @@ spec:
 3. **策略版本化**：策略文件纳入 Git 管理，变更走 PR 审核流程
 4. **例外机制**：提供明确的豁免流程，避免策略阻塞紧急发布
 5. **可观测性**：策略违规事件接入告警系统，定期审计合规率
+
+## OPA/Rego 策略示例
+
+```rego
+# AI 模型部署策略 - 禁止未审批模型上线
+package ai_model_governance
+
+deny[msg] {
+    input.kind == "ModelDeployment"
+    not input.metadata.annotations["approval.ai-platform/approved"]
+    msg := sprintf("模型 %s 未经审批不得部署到生产环境", [input.metadata.name])
+}
+
+deny[msg] {
+    input.kind == "ModelDeployment"
+    input.spec.gpu_count > 8
+    not input.metadata.annotations["finops/budget-approved"]
+    msg := sprintf("模型 %s 申请 %d GPU 超出配额，需 FinOps 审批", [input.metadata.name, input.spec.gpu_count])
+}
+
+deny[msg] {
+    input.kind == "ModelDeployment"
+    not input.spec.guardrails.enabled
+    msg := sprintf("模型 %s 必须启用安全护栏", [input.metadata.name])
+}
+```
+
+## Policy-as-Code 工具对比
+
+| 工具 | 语言 | 适用场景 | 学习曲线 | K8s 集成 |
+|------|------|----------|----------|----------|
+| OPA/Gatekeeper | Rego | 通用策略 | 高 | 原生 |
+| Kyverno | YAML | K8s 策略 | 低 | 原生 |
+| Conftest | Rego | CI 阶段检查 | 中 | 间接 |
+| Cedar | Cedar | AWS 权限 | 中 | 间接 |
+| Sentinel | HCL | Terraform | 中 | 无 |
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| 策略阻塞紧急发布 | 无例外机制 | 配置豁免流程 + 审批链 |
+| 误报率高 | 策略规则过严 | 先 audit 模式观察再 enforce |
+| 策略冲突 | 多策略重叠 | 统一策略库 + 优先级排序 |
+| 团队抵触 | 缺乏培训 | 策略文档化 + 自助查询 |
+
+## 生产检查清单
+
+1. ✅ 策略文件纳入 Git 版本管理
+2. ✅ 新策略先 audit 模式观察 1-2 周
+3. ✅ CI 阶段执行策略检查（左移）
+4. ✅ 提供明确的豁免/例外流程
+5. ✅ 策略违规事件接入告警系统
+6. ✅ 定期审计合规率 + 策略有效性
+
+## 总结
+
+Policy-as-Code 是将组织治理规则转化为可执行代码的实践，2026 年已扩展到 AI 模型治理、FinOps 成本控制和供应链安全等领域。其核心价值是将“人为约定”变为“自动执行”，确保合规性不依赖个人记忆。
+
+> 💡 Policy-as-Code 的核心原则：“策略即代码，代码即策略”——所有治理规则都应该可版本化、可测试、可审计。

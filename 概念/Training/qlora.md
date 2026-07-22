@@ -131,3 +131,71 @@ model.print_trainable_parameters()
 3. **目标模块**：优先 q_proj/v_proj，效果不足时扩展至所有线性层
 4. **学习率**：QLoRA 学习率通常比全量微调高 10x（2e-4）
 5. **显存估算**：65B 模型 QLoRA 约需 48GB，70B 约需 80GB
+
+## 2026 QLoRA 生态现状
+
+| 框架/工具 | 支持 | 特色 | 状态 |
+|------|------|------|------|
+| bitsandbytes | ✅ | NF4 量化 | ✅ 主流 |
+| PEFT (HuggingFace) | ✅ | 原生集成 | ✅ 主流 |
+| Unsloth | ✅ | 2x 加速 | ✅ 主流 |
+| LLaMA-Factory | ✅ | 易用 | ✅ 主流 |
+| Axolotl | ✅ | 配置灵活 | ✅ 成熟 |
+
+## 检查清单
+
+- [ ] GPU 支持 NF4（Ampere+）
+- [ ] bitsandbytes 版本已更新
+- [ ] 目标模块已选择（q_proj/v_proj 优先）
+- [ ] rank 已设置（通常 16-64）
+- [ ] 学习率已调优（2e-4 起点）
+- [ ] 梯度检查点已启用
+- [ ] 精度已验证
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| 显存 OOM | 模型太大 | 减小 batch + 梯度累积 |
+| 精度损失大 | rank 太低 | 增大 rank 至 64 |
+| 训练慢 | 未用 Unsloth | 启用 Unsloth 加速 |
+| 过拟合 | epochs 太多 | 减少 epochs + 早停 |
+
+## 延伸阅读
+
+- [[概念/Training/nf4|NF4]] — 4-bit 量化格式
+- [[概念/Training/rslora|rsLoRA]] — 稳定 LoRA
+- [[概念/Training/pissa|PiSSA]] — 奇异值初始化
+- [[概念/Training/fine-tuning-techniques|Fine-tuning Techniques]] — 微调技术
+- [[概念/LLM/lora|LoRA]] — 低秩适配
+
+> ℹ️ QLoRA 是 2026 年资源受限场景的微调标配，NF4 + LoRA 组合可节省 80-90% 显存，配合 Unsloth 可获 2x 加速。
+
+## 显存估算参考
+
+| 模型规模 | NF4 显存 | LoRA 显存 | 总计 | GPU |
+|------|------|------|------|------|
+| 7B | 4 GB | 1 GB | 5 GB | 1×RTX 3090 |
+| 13B | 8 GB | 1 GB | 9 GB | 1×RTX 4090 |
+| 70B | 35 GB | 2 GB | 37 GB | 1×A100 80G |
+| 70B (batch=4) | 35 GB | 8 GB | 43 GB | 1×A100 80G |
+
+## 延伸阅读
+
+- [[概念/Training/nf4|NF4]] — 4-bit 量化格式
+- [[概念/Training/rslora|rsLoRA]] — 稳定 LoRA
+- [[概念/Training/pissa|PiSSA]] — 奇异值初始化
+- [[概念/Training/fine-tuning-techniques|Fine-tuning Techniques]] — 微调技术
+- [[概念/LLM/lora|LoRA]] — 低秩适配
+
+> ℹ️ QLoRA 是 2026 年资源受限场景的微调标配，NF4 + LoRA 组合可节省 80-90% 显存。
+
+## 检查清单
+
+- [ ] GPU 支持 NF4
+- [ ] bitsandbytes 已更新
+- [ ] 目标模块已选择
+- [ ] rank 已设置
+- [ ] 精度已验证
+
+> ℹ️ QLoRA NF4 + LoRA 是资源受限微调的标配。

@@ -138,5 +138,67 @@ FlashInfer（[GitHub](https://github.com/flashinfer-ai/flashinfer)）是面向 L
 - [[概念/Inference/kv-cache]] — KV Cache
 - [[概念/LLM/attention-variants]] — GQA/MQA/SWA 注意力变体
 - [[概念/Inference/flashinfer]] — FlashInfer 算子库
-- [[部署推理/Inference_Performance/Flash_Kernels_Deep_Dive|Flash 系列 Kernel 深潜]]
+- [[部署推理/Inference_Performance/Flash_Kernels_Deep_Dive|Flash 系列 Kernel 深 潜]]
 - [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+
+## 2026 Flash Attention 生态
+
+| 版本/变体 | 特点 | 适用 | 状态 |
+|---------|------|------|:----:|
+| **FlashAttention-2** | 标准优化，广泛支持 | 通用 | GA |
+| **FlashAttention-3** | H100 异步优化，FP8 | H100+ | GA |
+| **FlashMLA** | MLA 专用，DeepSeek 优化 | MLA 架构 | GA |
+| **FlashInfer** | 统一算子库，多后端 | 推理引擎 | GA |
+| **FlashDecoding** | 解码阶段优化 | 推理 | GA |
+| **PagedAttention** | 分页 KV Cache | vLLM | GA |
+
+## 性能对比
+
+| Kernel | 序列长度 | 速度 (vs 标准) | 显存 | 适用 |
+|--------|:--------:|:------------:|:----:|------|
+| 标准 Attention | 2K | 1.0x | O(L²) | 基线 |
+| FlashAttention-2 | 2K | 2-3x | O(L) | 通用 |
+| FlashAttention-2 | 64K | 5-8x | O(L) | 长序列 |
+| FlashAttention-3 | 64K | 6-10x | O(L) | H100 |
+| FlashMLA | 128K | 8-12x | O(1) | MLA |
+
+## 工作原理简化
+
+```
+标准 Attention:
+  Q×K^T → Softmax → ×V
+  └─ 显存 O(L²)，慢
+
+Flash Attention:
+  分块计算 (Tiling)
+  ├─ 块1: Q1×K1^T → Softmax → ×V1
+  ├─ 块2: Q2×K2^T → Softmax → ×V2
+  └─ 合并结果
+  └─ 显存 O(L)，快 (IO-aware)
+```
+
+## 配置示例
+
+```python
+# HuggingFace Transformers 中启用 Flash Attention
+from transformers import AutoModelForCausalLM
+
+model = AutoModelForCausalLM.from_pretrained(
+    "meta-llama/Llama-4-8B",
+    torch_dtype=torch.float16,
+    attn_implementation="flash_attention_2",  # 启用 FA2
+).cuda()
+
+# vLLM 中自动使用 Flash Attention
+from vllm import LLM
+llm = LLM(model="meta-llama/Llama-4-8B")  # 自动启用
+```
+
+## 生产最佳实践
+
+1. **默认启用**: 所有生产环境必须启用 Flash Attention
+2. **H100 用 FA3**: H100+ GPU 使用 FlashAttention-3，支持 FP8
+3. **MLA 用 FlashMLA**: DeepSeek-V3 等 MLA 架构用 FlashMLA
+4. **长序列必用**: >4K 序列时 Flash Attention 优势明显
+5. **关注国产芯片移植**: FlashMLA 已支持海光/摩尔线程等
+6. **与量化结合**: FP8 + FlashAttention-3 叠加优化

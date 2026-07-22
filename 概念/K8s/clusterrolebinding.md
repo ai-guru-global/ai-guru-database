@@ -100,9 +100,103 @@ kubectl delete clusterrolebinding read-nodes-binding  # ⚠️ HIGH-RISK — 删
 | CI/CD | 自定义最小权限 | 中 |
 | cluster-admin | 仅限管理员 | 高 |
 
+## ClusterRoleBinding vs RoleBinding
+
+| 维度 | ClusterRoleBinding | RoleBinding |
+|------|-------------------|-------------|
+| 作用范围 | 整个集群 | 单个 Namespace |
+| 引用角色 | 仅 ClusterRole | ClusterRole 或 Role |
+| 使用场景 | 跨 NS 组件 | 单 NS 应用 |
+| 风险等级 | 高 | 中 |
+| 审计重点 | cluster-admin 绑定 | 过度授权 |
+
+## 内置 ClusterRole
+
+| ClusterRole | 权限 | 适用场景 |
+|-------------|------|----------|
+| **cluster-admin** | 所有资源所有操作 | 仅限管理员 |
+| **admin** | NS 内所有操作 | NS 管理员 |
+| **edit** | NS 内读写 | 开发者 |
+| **view** | NS 内只读 | 观察者 |
+| **system:node** | 节点操作 | kubelet |
+| **system:controller:*** | 控制器操作 | 各控制器 |
+
+## 审计命令
+
+```bash
+# 查看所有 cluster-admin 绑定
+kubectl get clusterrolebindings -o json | jq '.items[] | select(.roleRef.name=="cluster-admin") | .metadata.name'
+
+# 查看某 SA 的所有权限
+kubectl auth can-i --list --as=system:serviceaccount:ns:sa-name
+
+# 检查特定权限
+kubectl auth can-i create pods --as=system:serviceaccount:default:my-sa
+
+# 查看绑定详情
+kubectl describe clusterrolebinding <name>
+```
+
+## AI 场景权限设计
+
+| 组件 | 所需权限 | 绑定方式 |
+|------|----------|----------|
+| GPU Operator | 节点/设备管理 | ClusterRoleBinding |
+| 推理服务 | 只读 ConfigMap/Secret | RoleBinding |
+| 训练任务 | Pod/Job 管理 | RoleBinding |
+| 监控 Agent | 节点/Pod 只读 | ClusterRoleBinding |
+| KServe | 跨 NS 服务管理 | ClusterRoleBinding |
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| 权限不足 | 缺少绑定 | 创建对应 RoleBinding/CRB |
+| 权限过大 | 绑定了 cluster-admin | 替换为最小权限 ClusterRole |
+| 绑定不生效 | roleRef 错误 | 检查 ClusterRole 名称和 apiGroup |
+| 审计发现风险 | 过度授权 | 定期清理不必要绑定 |
+
 ## 生产最佳实践
 
 1. **最小权限**：优先用 RoleBinding，必要时才用 ClusterRoleBinding
 2. **定期审计**：检查 cluster-admin 绑定，移除不必要的权限
 3. **专用 ServiceAccount**：避免使用 default ServiceAccount
 4. **权限分离**：开发/测试/生产环境分离授权
+5. **自动化审计**：使用 Kyverno/OPA 策略检测过度授权
+
+## 权限过大检测
+
+```bash
+# 检测拥有 cluster-admin 的 ServiceAccount
+kubectl get clusterrolebindings -o json | \
+  jq -r '.items[] | select(.roleRef.name=="cluster-admin") | .subjects[]? | select(.kind=="ServiceAccount") | "\(.namespace)/\(.name)"'
+
+# 检测可创建 Pod 的 SA（潜在提权风险）
+kubectl auth can-i create pods --all-namespaces \
+  --as=system:serviceaccount:default:my-sa
+
+# 导出所有绑定用于审计
+kubectl get clusterrolebindings -o yaml > crb-audit.yaml
+```
+
+## 安全加固检查清单
+
+| 检查项 | 风险 | 建议 |
+|--------|------|------|
+| cluster-admin 绑定数 | 高 | 仅限管理员 |
+| default SA 绑定 | 高 | 移除所有绑定 |
+| 通配符权限 | 高 | 替换为具体资源 |
+| 跨 NS 权限 | 中 | 评估必要性 |
+| 临时权限未清理 | 中 | 定期清理 |
+
+## 相关概念
+
+- [[概念/rbac|RBAC]] — 基于角色的访问控制
+- [[概念/clusterrole|ClusterRole]] — 集群角色
+- [[概念/serviceaccount|ServiceAccount]] — 服务账户
+
+## 总结
+
+ClusterRoleBinding 是 K8s RBAC 的核心组件，用于集群级权限授予。始终遵循最小权限原则，定期审计 cluster-admin 绑定，确保集群安全。
+
+> 💡 ClusterRoleBinding 是 K8s 集群级授权的核心机制，应始终遵循最小权限原则，定期审计 cluster-admin 绑定。

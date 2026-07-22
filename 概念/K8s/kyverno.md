@@ -115,3 +115,94 @@ aliases:
 2. **策略库**：使用 Kyverno Policies 官方库
 3. **渐进式采用**：先 audit，再 enforce
 4. **镜像签名**：启用镜像签名验证
+
+## Kyverno vs OPA/Gatekeeper
+
+| 特性 | Kyverno | OPA/Gatekeeper |
+|------|------|------|
+| 策略语言 | YAML | Rego |
+| 学习曲线 | 低 | 高 |
+| K8s 原生 | ✅ | 部分 |
+| 变更请求 | ✅ | ❌ |
+| 镜像验证 | ✅ | 插件 |
+| 适用场景 | K8s 策略 | 通用策略 |
+
+## Kyverno 策略类型
+
+| 类型 | 说明 |
+|------|------|
+| Validate | 验证资源是否符合规则 |
+| Mutate | 修改资源 |
+| Generate | 自动生成资源 |
+| VerifyImages | 验证镜像签名 |
+
+## Kyverno 策略示例
+
+```yaml
+apiVersion: kyverno.io/v1
+kind: ClusterPolicy
+metadata:
+  name: require-gpu-limits
+spec:
+  validationFailureAction: Enforce
+  rules:
+  - name: check-gpu-limits
+    match:
+      any:
+      - resources:
+          kinds:
+          - Pod
+    validate:
+      message: "GPU Pod 必须设置 nvidia.com/gpu limits"
+      pattern:
+        spec:
+          containers:
+          - resources:
+              limits:
+                nvidia.com/gpu: "?*"
+```
+
+## AI 场景策略
+
+| 策略 | 说明 |
+|------|------|
+| GPU 资源限制 | 强制设置 GPU limits |
+| 镜像来源 | 只允许受信仓库 |
+| 资源配额 | 限制最大资源 |
+| 标签要求 | 强制添加团队标签 |
+| 安全上下文 | 禁止特权容器 |
+
+## 常用命令
+
+| 命令 | 用途 |
+|------|------|
+| `kubectl get clusterpolicy` | 查看策略 |
+| `kubectl get policy -A` | 查看命名空间策略 |
+| `kubectl get policyreport -A` | 查看策略报告 |
+
+> 💡 Kyverno 是 K8s 策略管理的云原生方案，2026 年 AI 平台推荐 Kyverno 实现 GPU 资源管控和安全合规。
+
+## 策略验证模式
+
+| 模式 | 说明 | 适用场景 |
+|------|------|------|
+| Audit | 仅记录违规 | 初期观察 |
+| Enforce | 阻止违规资源 | 生产环境 |
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| 策略不生效 | 未正确匹配 | 检查 match 规则 |
+| 误拦截 | 规则过严 | 调整规则/排除 |
+| 性能影响 | 策略过多 | 优化规则数量 |
+| 变更失败 | Enforce 模式 | 检查违规原因 |
+
+## 最佳实践
+
+| 实践 | 说明 |
+|------|------|
+| 先 Audit 后 Enforce | 渐进式采用 |
+| 使用官方策略库 | Kyverno Policies |
+| 定期审查策略 | 清理过时规则 |
+| 配合 CI/CD | 部署前验证 |

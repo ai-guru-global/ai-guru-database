@@ -113,3 +113,99 @@ aliases:
 3. **自定义评估**：业务场景自定义评估
 4. **与 LM Eval 对比**：根据需求选择评估工具
 5. **持续评估**：模型迭代持续评估
+
+## 评测配置示例
+
+```python
+# OpenCompass 评测配置
+from opencompass import Config
+
+config = Config({
+    "models": [
+        {"path": "Qwen/Qwen2.5-72B", "backend": "vllm"},
+        {"path": "gpt-4o", "backend": "api"},
+    ],
+    "datasets": [
+        "mmlu",        # 英文学科
+        "ceval",       # 中文学科
+        "cmmlu",       # 中文综合
+        "bbh",         # 困难推理
+        "humaneval",   # 代码
+        "gsm8k",       # 数学
+    ],
+    "summarizer": {
+        "type": "default",
+        "output_dir": "./results"
+    }
+})
+```
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| 评测分数异常低 | Prompt 格式不匹配 | 检查模型模板配置 |
+| 评测速度慢 | 未用加速后端 | 使用 vLLM/LMDeploy |
+| 中文基准缺失 | 数据集未下载 | 执行数据集下载脚本 |
+| API 调用失败 | Key/网络问题 | 检查 API 配置和代理 |
+| 结果不可复现 | 采样随机性 | 设置 temperature=0 |
+
+## 版本兼容性
+
+| 组件 | 版本 | 说明 |
+|------|------|------|
+| OpenCompass | 0.2+ | 评测平台 |
+| vLLM | 0.6+ | 加速后端 |
+| Python | 3.10+ | 运行环境 |
+| CUDA | 12.x | GPU 环境 |
+
+## 生产检查清单
+
+1. 选择与业务相关的基准组合
+2. 使用 vLLM 加速评测过程
+3. 设置 temperature=0 确保可复现
+4. 中英文基准组合评估
+5. 建立模型迭代评测基线
+6. 定期更新基准防止数据污染
+
+## 总结
+
+OpenCompass 是国产 LLM 评测的核心工具，其中文基准覆盖和多模态评测能力是独特优势。对于国内 AI 团队，OpenCompass 是模型选型、迭代评估、能力对比的首选平台。
+
+> 💡 评测的核心认知：没有单一基准能全面衡量模型能力——必须组合多个基准（学科+推理+代码+中文）才能得出可靠结论。
+
+## OpenCompass 评估配置示例
+
+```bash
+# OpenCompass 多任务评估
+python run.py \
+  --models llama3_70b_instruct \
+  --datasets mmlu_ppl gsm8k_gen humaneval_gen \
+  --work-dir ./results \
+  --max-num-workers 8
+
+# 自定义评估集
+python run.py \
+  --models qwen2_72b \
+  --datasets custom_benchmark \
+  --custom-dataset-path ./my_eval_set.json \
+  --debug
+```
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| 评估失败 | 模型加载 OOM | 降低 batch_size |
+| 结果不可复现 | 随机种子未固定 | 设置 --seed 参数 |
+| 评估慢 | 数据集大 | 使用子集 + 并行 |
+| 自定义集失败 | 格式不对 | 检查 JSON schema |
+
+## 生产检查清单
+
+1. ✅ 组合多个基准综合评估
+2. ✅ 固定随机种子确保可复现
+3. ✅ 自定义业务评估集
+4. ✅ CI/CD 集成自动评估
+5. ✅ 定期更新评估集防污染
+6. ✅ 记录全部评估参数

@@ -176,3 +176,31 @@ Step 3: PPO 优化 Policy
 3. **clip 调优**：从 0.2 开始，根据训练稳定性调整
 4. **与 DPO/GRPO 对比**：资源充足用 PPO，受限用 DPO/GRPO
 5. **监控指标**：关注奖励均值、KL 散度、策略熔
+
+## 2026 PPO 生态现状
+
+| 框架/工具 | 支持 | 特色 | 状态 |
+|------|------|------|------|
+| TRL (HuggingFace) | ✅ | PPOTrainer | ✅ 主流 |
+| OpenRLHF | ✅ | 分布式 PPO | ✅ 主流 |
+| DeepSpeed-Chat | ✅ | 微软全栈 | ✅ 成熟 |
+| ColossalChat | ✅ | 易用 | ✅ 主流 |
+| veRL (Volcano) | ✅ | 字节跳动 | ✅ 前沿 |
+
+## 延伸阅读
+
+- [[概念/Training/rlhf|RLHF]] — 人类反馈强化学习
+- [[概念/Training/grpo|GRPO]] — 组相对策略优化
+- [[概念/Training/reward-modeling|Reward Modeling]] — 奖励建模
+- [[概念/Training/dpo|DPO]] — 直接偏好优化
+- [[概念/Training/preference-learning|Preference Learning]] — 偏好学习
+
+> ℹ️ PPO 是 RLHF 的经典算法，2026年仍是大厂对齐首选，但 DPO/GRPO 在资源受限场景更受欢迎。
+
+## 检查清单
+
+- [ ] 奖励模型已训练并验证
+- [ ] KL 约束已配置
+- [ ] clip 参数已调优
+- [ ] 监控看板已配置
+- [ ] 回退策略已准备

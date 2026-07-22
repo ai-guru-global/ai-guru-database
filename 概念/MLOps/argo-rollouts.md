@@ -84,3 +84,128 @@ spec:
 3. **指标分析**：用 Prometheus 指标自动分析发布健康
 4. **与 ArgoCD 配合**：ArgoCD + Argo Rollouts 实现 GitOps 渐进式交付
 5. **流量控制**：用 Istio 精确控制流量比例
+
+## 2026 Argo Rollouts 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Argo Rollouts 1.7+** | 支持多容器、Header 路由 | GA |
+| **Istio 集成** | 精确流量控制 | GA |
+| **NGINX 集成** | Ingress 流量分割 | GA |
+| **Prometheus 分析** | 自动指标分析 | GA |
+| **ArgoCD 集成** | GitOps 渐进式交付 | GA |
+
+## 架构：渐进式发布流程
+
+```
+ArgoCD Sync → Rollout CR → 创建新 ReplicaSet
+                    ↓
+        逐步调整流量 (5% → 25% → 50% → 100%)
+                    ↓
+        AnalysisRun 检查指标 → 通过 → 完成
+                    ↓ 失败
+                自动回滚
+```
+
+## 配置示例：金丝雀发布
+
+```yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Rollout
+metadata:
+  name: ml-service
+spec:
+  replicas: 5
+  strategy:
+    canary:
+      steps:
+        - setWeight: 10
+        - pause: { duration: 5m }
+        - analysis:
+            templates:
+              - templateName: success-rate
+        - setWeight: 50
+        - pause: { duration: 10m }
+        - setWeight: 100
+      canaryService: ml-service-canary
+      stableService: ml-service-stable
+  selector:
+    matchLabels:
+      app: ml-service
+  template:
+    metadata:
+      labels:
+        app: ml-service
+    spec:
+      containers:
+        - name: ml-service
+          image: my-registry/ml-service:v2
+---
+apiVersion: argoproj.io/v1alpha1
+kind: AnalysisTemplate
+metadata:
+  name: success-rate
+spec:
+  metrics:
+    - name: success-rate
+      interval: 5m
+      successCondition: result[0] >= 0.95
+      provider:
+        prometheus:
+          address: http://prometheus:9090
+          query: |
+            sum(rate(http_requests_total{status=~"2.."}[5m]))
+            / sum(rate(http_requests_total[5m]))
+```
+
+## 发布策略对比
+
+| 策略 | 说明 | 适用场景 |
+|------|------|------|
+| **金丝雀** | 逐步增加流量 | 通用 |
+| **蓝绿** | 一次性切换 | 快速发布 |
+| **实验** | A/B 测试 | 功能验证 |
+
+## 延伸阅读
+
+- [[概念/MLOps/argocd|ArgoCD]] — GitOps 持续交付
+- [[概念/MLOps/prometheus|Prometheus]] — 指标监控
+- [[概念/MLOps/ci-cd|CI/CD]] — 持续集成/交付
+
+> ℹ️ Argo Rollouts 是 K8s 渐进式发布控制器，支持金丝雀、蓝绿、实验等发布策略。
+
+## 生产最佳实践
+
+1. **指标分析**：用 Prometheus 指标自动分析发布健康
+2. **自动回滚**：指标异常时自动回滚
+3. **渐进式流量**：逐步增加流量比例
+4. **与 ArgoCD 配合**：GitOps 渐进式交付
+5. **Header 路由**：用 Header 路由进行内部测试
+6. **多环境支持**：开发/测试/生产环境分离
+7. **告警配置**：发布异常时告警
+8. **审计日志**：记录发布历史
+
+## 检查清单
+
+- [ ] Rollout 配置已定义
+- [ ] AnalysisTemplate 已配置
+- [ ] 自动回滚已启用
+- [ ] 指标分析已配置
+- [ ] 告警机制已配置
+
+## 工具对比
+
+| 工具 | 适用场景 | 特点 |
+|------|------|------|
+| **Argo Rollouts** | K8s 渐进式发布 | 功能强大 |
+| **Flagger** | K8s 金丝雀 | 轻量 |
+| **Istio** | 流量管理 | 服务网格 |
+
+## 常见问题
+
+| 问题 | 解决方案 |
+|------|------|
+| 回滚失败 | 检查指标配置 |
+| 流量不均 | 检查 Service 配置 |
+| 分析失败 | 检查 Prometheus 连接 |
+| 发布卡住 | 检查 pause 配置 |

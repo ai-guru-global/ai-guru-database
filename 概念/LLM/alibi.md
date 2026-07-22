@@ -153,3 +153,48 @@ ALiBi 的核心优势在于**简单且外推稳定**，但在现代开源生态�
 3. **ALiBi 适合外推**：需要零训练外推到更长序列时考虑 ALiBi
 4. **与 KV Cache 配合**：位置编码影响 KV Cache 复用策略，前缀缓存需位置编码兼容
 5. **模型选型关注**：选择模型时关注其位置编码方案对上下文长度的支持
+
+## 位置编码方案对比
+
+| 方案 | 参数开销 | 外推能力 | 代表模型 | 生态支持 |
+|------|---------|---------|---------|----------|
+| **绝对位置 (Sinusoidal)** | 无 | 差 | 原始 Transformer | 淘汰 |
+| **可学习位置** | O(max_len) | 无 | BERT, GPT-2 | 淘汰 |
+| **RoPE** | 无 | 中（需扩展） | Llama, Qwen, Mistral | 主流 |
+| **RoPE + YaRN** | 无 | 强 (128K-1M) | Llama 4, Qwen3 | 主流 |
+| **ALiBi** | 无 | 强（零训练） | BLOOM, MPT | 小众 |
+| **MLA 位置** | 低 | 强 | DeepSeek-V3 | 增长 |
+
+## ALiBi 工作原理
+
+```
+标准 Attention:  score(i,j) = Q_i · K_j
+ALiBi:           score(i,j) = Q_i · K_j - m × |i - j|
+
+其中 m 是每个注意力头的固定斜率:
+  m_h = 1 / 2^(8h/H)   (h=头索引, H=总头数)
+
+效果: 距离越远的 Token 注意力分数越低，无需学习位置参数
+优势: 训练 1K 长度 → 推理可外推到 16K+
+```
+
+## 位置编码选型决策树
+
+```
+需要超长上下文 (128K+)?
+├── 是 → RoPE + YaRN / MLA
+│       └── 需要零训练外推? → ALiBi
+└── 否 → 标准 RoPE (生态最好)
+
+注意: 2026 年 ALiBi 已较少被新模型采用，
+RoPE + YaRN 成为事实标准。
+```
+
+## 延伸阅读
+
+- [[概念/LLM/attention-variants|注意力变体]] — 注意力机制全景
+- [[概念/LLM/grouped-query-attention|GQA]] — 分组查询注意力
+- [[概念/LLM/transformer-architecture|Transformer 架构]] — 架构基础
+- [[概念/LLM/context-window|上下文窗口]] — 位置编码决定窗口上限
+
+> ℹ️ 2026 年 RoPE + YaRN 已成为位置编码事实标准，ALiBi 主要用于理解历史模型。

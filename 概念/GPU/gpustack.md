@@ -108,3 +108,96 @@ GPUStack
 3. **后端选择**：高并发用 vLLM，单用户用 llama-box
 4. **与 K8s 对比**：GPUStack 更轻量，K8s 更强大
 5. **监控集成**：集成 Prometheus 监控 GPU 利用率
+
+## 2026 GPUStack 生态
+
+| 特性 | 说明 | 状态 |
+|------|------|------|
+| **GPUStack 0.3+** | 最新版本 | GA |
+| **多 GPU 支持** | 异构 GPU 管理 | GA |
+| **模型部署** | 一键部署 LLM | GA |
+| **API 兼容** | OpenAI API 兼容 | GA |
+
+## 延伸阅读
+
+- [[概念/GPU/gpu|GPU]] — GPU 基础
+- [[概念/GPU/heterogeneous-gpu|异构 GPU]] — 异构 GPU
+- [[概念/K8s/kubernetes|Kubernetes]] — 容器编排
+
+> ℹ️ GPUStack 是轻量级 GPU 管理平台，简化 LLM 部署和 GPU 资源管理。
+
+## GPUStack 架构
+
+```
+GPUStack 架构
+    ├── Server (管理节点)
+    │       ├── API Server
+    │       ├── Model Manager
+    │       └── GPU Scheduler
+    └── Worker (工作节点)
+            ├── GPU Agent
+            ├── Model Runtime
+            └── Monitoring
+```
+
+## 部署示例
+
+```bash
+# 安装 GPUStack
+curl -sfL https://get.gpustack.ai | sh -
+
+# 启动 Server
+gpustack server --port 8080
+
+# 启动 Worker
+gpustack worker --server-url http://server:8080 --gpu-index 0
+
+# 部署模型
+gpustack model deploy llama-3-8b --gpu-index 0
+```
+
+## 生产最佳实践
+
+1. **多 GPU 支持**：支持异构 GPU 管理
+2. **模型部署**：一键部署 LLM
+3. **API 兼容**：OpenAI API 兼容
+4. **监控集成**：集成 Prometheus 监控
+5. **与 K8s 对比**：GPUStack 更轻量
+
+## 检查清单
+
+- [ ] GPUStack 已安装
+- [ ] Worker 已注册
+- [ ] 模型已部署
+- [ ] 监控已配置
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| Worker 无法注册 | 网络不通 | 检查防火墙 + Server 端口可达 |
+| 模型加载失败 | 显存不足 | 启用模型切分或降低量化精度 |
+| 调度不均 | 未配置资源标签 | 为 Worker 添加 GPU 类型标签 |
+| 推理延迟高 | 未启用批处理 | 配置 dynamic batching 参数 |
+| 升级失败 | 版本不兼容 | 滚动升级，先升级 Worker 再升级 Server |
+
+## 延伸阅读
+
+- [[概念/GPU/heterogeneous-gpu|异构 GPU]] — 多厂商 GPU 管理
+- [[概念/GPU/nvidia-gpu|NVIDIA GPU]] — 主流 GPU 平台
+- [[概念/K8s/gpu-operator|GPU Operator]] — K8s GPU 管理
+- [[概念/Inference/model-serving|模型服务]] — 推理部署方案
+- [[概念/MLOps/observability|可观测性]] — 监控方案
+
+> ℹ️ GPUStack 是轻量级 GPU 集群管理工具，2026年支持异构 GPU 统一调度、模型自动切分、OpenAI 兼容 API，适合中小团队快速搭建 AI 推理平台。
+
+## 2026 GPUStack 生态现状
+
+| 特性 | 状态 | 说明 |
+|------|------|------|
+| 异构 GPU 支持 | ✅ 成熟 | NVIDIA/AMD/国产 GPU |
+| 模型自动切分 | ✅ 成熟 | 跨 GPU 自动分片 |
+| OpenAI API | ✅ 成熟 | 完全兼容 |
+| Web UI | ✅ 成熟 | 可视化管理 |
+| 多租户 | ✅ 新增 | 资源配额管理 |
+| 自动扩缩容 | 🟡 发展中 | 基于负载自动调整 |

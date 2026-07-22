@@ -183,3 +183,59 @@ q^*(\theta) = \arg\min_{q \in \mathcal{Q}} D_{KL}(q(\theta) \| P(\theta|\mathcal
 3. **先验设计**：合理设计先验分布
 4. **与深度学习结合**：贝叶斯深度学习量化不确定性
 5. **小样本学习**：小样本场景贝叶斯方法有优势
+
+## 2026 贝叶斯方法生态
+
+| 方法 | 说明 | 应用 | 状态 |
+|------|------|------|------|
+| **贝叶斯推断** | 后验计算 | 参数估计 | GA |
+| **MCMC** | 马尔可夫链采样 | 复杂后验 | GA |
+| **变分推断** | 近似后验 | 大规模 | GA |
+| **贝叶斯神经网络** | 权重分布 | 不确定性 | 研究 |
+| **高斯过程** | 函数分布 | 小样本回归 | GA |
+
+## 贝叶斯定理
+
+```
+贝叶斯定理:
+P(θ|D) = P(D|θ) · P(θ) / P(D)
+
+其中:
+- P(θ|D): 后验 (posterior) — 观测数据后的信念
+- P(D|θ): 似然 (likelihood) — 数据在参数下的概率
+- P(θ): 先验 (prior) — 观测前的信念
+- P(D): 证据 (evidence) — 归一化常数
+```
+
+## 贝叶斯推断代码示例
+
+```python
+import torch
+import pyro
+import pyro.distributions as dist
+
+def model(data):
+    # 先验
+    mu = pyro.sample("mu", dist.Normal(0., 10.))
+    sigma = pyro.sample("sigma", dist.LogNormal(0., 1.))
+    
+    # 似然
+    with pyro.plate("data", len(data)):
+        pyro.sample("obs", dist.Normal(mu, sigma), obs=data)
+
+# MCMC 推断
+from pyro.infer import MCMC, NUTS
+nuts_kernel = NUTS(model)
+mcmc = MCMC(nuts_kernel, num_samples=1000)
+mcmc.run(data)
+mcmc.summary()
+```
+
+## 延伸阅读
+
+- [[概念/Math/information-theory|信息论]] — KL 散度
+- [[概念/Math/neural-networks|神经网络]] — 贝叶斯深度学习
+- [[概念/Math/optimization-regularization|优化]] — 正则化视角
+- [[概念/Math/formal-logic|形式逻辑]] — 概率推理
+
+> ℹ️ 贝叶斯方法是不确定性量化的基础，在小样本和可解释 AI 中有优势。

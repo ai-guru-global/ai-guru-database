@@ -132,3 +132,74 @@ demo.launch()
 3. **与 Streamlit 对比**：根据需求选择 Gradio 或 Streamlit
 4. **自定义组件**：需要自定义 UI 用自定义组件
 5. **原型验证**：快速原型验证用 Gradio
+
+## Gradio 应用示例
+
+```python
+import gradio as gr
+from transformers import pipeline
+
+classifier = pipeline("sentiment-analysis", model="distilbert-base-uncased-finetuned-sst-2-english")
+
+def analyze(text: str) -> dict:
+    result = classifier(text)[0]
+    return {"label": result["label"], "score": f"{result['score']:.4f}"}
+
+demo = gr.Interface(
+    fn=analyze,
+    inputs=gr.Textbox(label="输入文本", placeholder="输入待分析文本..."),
+    outputs=gr.JSON(label="分析结果"),
+    title="情感分析演示",
+    description="基于 DistilBERT 的实时情感分析",
+    examples=[["这部电影太棒了！"], ["服务态度很差"]],
+)
+
+if __name__ == "__main__":
+    demo.launch(server_name="0.0.0.0", server_port=7860, share=False)
+```
+
+## Gradio vs Streamlit vs FastAPI 对比
+
+| 维度 | Gradio | Streamlit | FastAPI |
+|------|--------|-----------|----------|
+| 定位 | ML 演示/原型 | 数据应用 | 生产 API |
+| 学习曲线 | 极低 | 低 | 中 |
+| 自定义 UI | 中（组件） | 高 | 完全自由 |
+| 实时推理 | 原生支持 | 需封装 | 需自建 |
+| HF Spaces | 原生集成 | 支持 | 支持 |
+| 生产就绪 | 低 | 中 | 高 |
+| 多模态 | 强（图/音/视频） | 中 | 需自建 |
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| 启动后无法访问 | 默认绑定 127.0.0.1 | 设置 server_name="0.0.0.0" |
+| 大文件上传失败 | 默认文件大小限制 | 配置 max_file_size 参数 |
+| GPU 内存泄漏 | 模型未正确释放 | 使用单例模式加载模型 |
+| 并发性能差 | 单线程处理 | 配置 concurrency_count 参数 |
+| 样式不美观 | 默认主题简单 | 使用 gr.themes 自定义主题 |
+
+## 生产检查清单
+
+1. ✅ 模型使用单例加载，避免重复初始化
+2. ✅ 配置输入验证和最大长度限制
+3. ✅ 启用队列（queue）处理并发请求
+4. ✅ 添加速率限制防止滥用
+5. ✅ 日志记录推理时间和错误率
+6. ✅ 生产环境使用 Nginx 反向代理 + HTTPS
+
+## 总结
+
+Gradio 是 ML 模型快速演示和原型验证的首选框架，其极简 API 和多模态支持使其成为 Hugging Face 生态的核心组件。适合内部演示、客户 PoC 和教学场景，但生产级服务应迁移至 FastAPI/vLLM 等专业推理框架。
+
+> 💡 Gradio 的最佳定位是“从模型到演示的最短路径”，不要试图用它替代生产级 API 服务。
+
+## 版本兼容性
+
+| 组件 | 版本 | 状态 |
+|------|------|------|
+| Gradio | 5.x | GA |
+| Python | ≥ 3.10 | 支持 |
+| HuggingFace Spaces | 集成 | GA |
+| FastAPI 后端 | 内置 | GA |

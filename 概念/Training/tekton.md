@@ -126,3 +126,88 @@ spec:
 - [[概念/Training/flux|Flux]]
 - [[概念/Training/gitops|GitOps]]
 - [[概念/Training/kubernetes|Kubernetes]]
+
+## 2026 Tekton 生态现状
+
+| 特性 | 状态 | 说明 |
+|------|------|------|
+| Pipeline | ✅ | 工作流编排 |
+| Task | ✅ | 原子任务 |
+| Trigger | ✅ | 事件触发 |
+| Dashboard | ✅ | 可视化监控 |
+| Hub | ✅ | 任务市场 |
+| Chains | ✅ | 供应链安全 |
+
+## 检查清单
+
+- [ ] Pipeline 已定义并测试
+- [ ] Task 已复用（Hub）
+- [ ] Trigger 已配置
+- [ ] 监控已接入（Dashboard）
+- [ ] 安全已配置（Chains）
+- [ ] 资源限制已设置
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| Pipeline 失败 | Task 配置错误 | 检查 Task 日志 |
+| 资源不足 | 未设置限制 | 配置 resource limits |
+| 触发失败 | Trigger 配置错 | 检查 Trigger 绑定 |
+| 构建慢 | 未缓存 | 启用缓存 |
+
+## 延伸阅读
+
+- [[概念/Training/kubernetes|Kubernetes]] — K8s 编排
+- [[概念/Training/gitops|GitOps]] — Git 运维
+- [[概念/MLOps/mlops|MLOps]] — 机器学习运维
+- [[概念/MLOps/ci-cd|CI/CD]] — 持续集成/部署
+- [[运维/SRE_Reliability/SRE_Reliability|SRE]] — 站点可靠性
+
+> ℹ️ Tekton 是 2026 年云原生 CI/CD 的事实标准，K8s 原生、可扩展、安全，是 MLOps  管道的基础设施。
+
+## Tekton vs 其他 CI/CD 工具
+
+| 工具 | 类型 | K8s 原生 | 可扩展性 | 适用场景 |
+|------|------|------|------|------|
+| Tekton | 云原生 | ✅ | 高 | K8s MLOps |
+| Argo Workflows | 云原生 | ✅ | 高 | 数据管道 |
+| Jenkins | 传统 | ❌ | 中 | 传统 CI/CD |
+| GitHub Actions | SaaS | ❌ | 中 | 开源项目 |
+| GitLab CI | 自托管 | ❌ | 中 | 企业内部 |
+
+## MLOps 管道示例
+
+```yaml
+apiVersion: tekton.dev/v1
+kind: Pipeline
+metadata:
+  name: ml-training-pipeline
+spec:
+  tasks:
+    - name: data-validation
+      taskRef:
+        name: validate-data
+    - name: train-model
+      taskRef:
+        name: train-model
+      runAfter: [data-validation]
+    - name: evaluate-model
+      taskRef:
+        name: evaluate-model
+      runAfter: [train-model]
+    - name: deploy-model
+      taskRef:
+        name: deploy-model
+      runAfter: [evaluate-model]
+```
+
+## Tekton 核心组件
+
+| 组件 | 说明 | 用途 |
+|------|------|------|
+| Task | 最小执行单元 | 定义步骤 |
+| Pipeline | 任务编排 | DAG 执行 |
+| TaskRun | Task 实例 | 执行记录 |
+| PipelineRun | Pipeline 实例 | 执行跟踪 |
+| Trigger | 触发器 | 事件驱动 |

@@ -151,3 +151,60 @@ def sampling_decode(model, prompt, max_length):
 3. **重复惩罚必配**：设置 repetition_penalty=1.05-1.2，避免循环重复
 4. **Seed 固定**：测试/评估场景固定 seed 保证可复现性
 5. **A/B 测试参数**：不同采样参数进行 A/B 测试，找到最优配置
+6. **监控输出质量**：跟踪重复率、连贯性、用户满意度
+7. **降级方案**：采样质量不稳定时回退到贪心
+
+## 2026 采样策略对比
+
+| 策略 | 参数 | 多样性 | 质量 | 适用 |
+|------|------|:------:|:----:|------|
+| **Greedy** | temperature=0 | 无 | 中 | 代码/数学 |
+| **Top-k** | k=50 | 中 | 中-高 | 通用 |
+| **Top-p** | p=0.9 | 中-高 | 高 | 通用 |
+| **Temperature** | T=0.7 | 可调 | 可调 | 创意 |
+| **Min-p** | p=0.05 | 中 | 高 | 通用 |
+| **Typical** | p=0.5 | 中 | 高 | 实验 |
+
+## 采样参数调优指南
+
+| 任务类型 | temperature | top_p | top_k | repetition_penalty |
+|---------|:-----------:|:-----:|:-----:|:-----------------:|
+| 代码生成 | 0-0.2 | 0.95 | 50 | 1.05 |
+| 事实问答 | 0-0.3 | 0.9 | 50 | 1.0 |
+| 翻译 | 0.3-0.5 | 0.9 | - | 1.0 |
+| 创意写作 | 0.7-1.0 | 0.95 | - | 1.1 |
+| 对话 | 0.5-0.7 | 0.9 | 50 | 1.05 |
+| 摘要 | 0.3-0.5 | 0.9 | - | 1.0 |
+
+## 代码示例
+
+```python
+from transformers import AutoModelForCausalLM, AutoTokenizer
+
+model = AutoModelForCausalLM.from_pretrained("Qwen/Qwen3-8B")
+tokenizer = AutoTokenizer.from_pretrained("Qwen/Qwen3-8B")
+
+# 采样解码
+inputs = tokenizer("写一首关于春天的诗", return_tensors="pt")
+outputs = model.generate(
+    **inputs,
+    max_new_tokens=256,
+    do_sample=True,             # 启用采样
+    temperature=0.8,            # 温度
+    top_p=0.9,                  # 核采样
+    top_k=50,                   # Top-k
+    repetition_penalty=1.1,     # 重复惩罚
+    seed=42,                    # 固定种子
+)
+print(tokenizer.decode(outputs[0]))
+```
+
+## 延伸阅读
+
+- [[概念/LLM/greedy-decoding|贪心解码]]
+- [[概念/LLM/beam-search|Beam Search]]
+- [[概念/LLM/top-k-sampling|Top-k 采样]]
+- [[概念/LLM/top-p-sampling|Top-p 采样]]
+- [[概念/LLM/temperature-scaling|Temperature 缩放]]
+- [[概念/LLM/repetition-penalty|重复惩罚]]
+- [[大模型/Sequence_Models/Text_Generation_Decoding_Strategies|解码策略详解]]

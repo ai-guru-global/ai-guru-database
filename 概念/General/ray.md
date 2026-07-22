@@ -181,3 +181,28 @@ result = ray.get(predictor.predict.remote(x))
 3. **容错配置**：设置 max_retries 处理节点故障，训练启用 Checkpoint
 4. **监控必备**：部署 Ray Dashboard + Prometheus 监控集群状态
 5. **自动扩缩**：配置 autoscaler 根据负载动态调整集群规模
+
+## 版本兼容性
+
+| 组件 | 版本 | 特性 | 备注 |
+|------|------|------|------|
+| **Ray Core** | ≥ 2.10 | 分布式计算 | 基础框架 |
+| **Ray Train** | ≥ 2.10 | 分布式训练 | PyTorch/TF |
+| **Ray Serve** | ≥ 2.10 | 模型服务 | 在线推理 |
+| **Ray Data** | ≥ 2.10 | 数据处理 | 流式 ETL |
+| **Anyscale** | 企业版 | 托管 Ray | 商业平台 |
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| OOM | Object Store 溢出 | 调大 object_store_memory |
+| 任务堆积 | 资源不足 | 增加节点或调整并发度 |
+| GCS 故障 | 单点失败 | 启用 GCS HA（Redis 后端） |
+| 序列化慢 | 大对象传输 | 使用零拷贝 + 共享内存 |
+
+## 总结
+
+Ray 是 AI 时代的分布式计算框架，从训练到推理到数据处理提供统一的编程模型。它是 OpenAI、Anyscale、Uber 等公司的核心基础设施。
+
+> 💡 Ray 的核心价值：一个框架统一 AI 工作负载——训练、推理、数据处理无需切换不同分布式系统。

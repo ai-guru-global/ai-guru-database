@@ -150,3 +150,52 @@ docker run --gpus all \
 - [[概念/LLM/tensorrt-llm|TensorRT-LLM]]
 - [[部署推理/Inference_Engines/TGI_Deep_Dive|TGI 深度解析]]
 - [[部署推理/Inference_Engines/vLLM_Deep_Dive|vLLM 深度解析]]
+
+## TGI vs vLLM vs SGLang
+
+| 维度 | TGI | vLLM | SGLang |
+|------|-----|------|--------|
+| **开发方** | HuggingFace | UC Berkeley | LMSYS |
+| **易用性** | 极高 (HF 生态) | 高 | 高 |
+| **性能** | 中 | 高 | 高 |
+| **硬件** | NVIDIA/AMD/TPU | NVIDIA/AMD/TPU | NVIDIA |
+| **结构化生成** | 支持 | 支持 | 最强 |
+| **多模态** | 支持 | 支持 | 支持 |
+| **适用** | 快速部署/HF 生态 | 通用生产 | 结构化/Agent |
+
+## TGI 部署示例
+
+```bash
+# Docker 一键部署
+docker run --gpus all -p 8080:80 \
+  -v $PWD/data:/data \
+  ghcr.io/huggingface/text-generation-inference:3.0 \
+  --model-id Qwen/Qwen3-8B \
+  --max-input-length 4096 \
+  --max-total-tokens 8192
+
+# 客户端调用
+from huggingface_hub import InferenceClient
+client = InferenceClient("http://localhost:8080")
+response = client.chat_completion(
+    messages=[{"role": "user", "content": "你好"}],
+    max_tokens=512
+)
+```
+
+## 生产最佳实践
+
+1. **快速原型用 TGI**：HuggingFace 生态一键部署
+2. **生产性能对比 vLLM**：大规模服务前对比 TGI 与 vLLM 性能
+3. **多硬件支持**：TGI 支持 NVIDIA/AMD/TPU，灵活选择
+4. **监控集成**：TGI 内置 Prometheus 指标，直接接入 Grafana
+5. **量化支持**：支持 GPTQ/AWQ/EETQ 量化，按需启用
+
+## 延伸阅读
+
+- [[概念/Inference/model-serving|模型服务]] — 服务架构全景
+- [[概念/Inference/continuous-batching|连续批处理]] — 批处理优化
+- [[概念/Inference/quantization|量化]] — 模型压缩
+- [[概念/Inference/sglang|SGLang]] — 替代引擎
+
+> ℹ️ TGI 是 HuggingFace 官方推理服务，适合快速原型和 HF 生态用户。

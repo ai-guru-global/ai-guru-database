@@ -129,3 +129,76 @@ kubectl scale deploy llm-serving --replicas=3
 2. **稳定窗口**：配置 stabilizationWindowSeconds 避免抖动
 3. **自定义指标**：AI 推理用 GPU 利用率/QPS 扩缩
 4. **与 VPA 分离**：避免同时对 CPU 使用 HPA 和 VPA
+
+## HPA 指标类型
+
+| 指标类型 | 说明 | 适用场景 |
+|------|------|------|
+| Resource | CPU/内存利用率 | 通用服务 |
+| Pods | Pod 自定义指标 | 业务指标 |
+| Object | K8s 对象指标 | Ingress QPS |
+| External | 外部指标 | 云监控/队列 |
+
+## HPA 配置示例
+
+```yaml
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: app-hpa
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: my-app
+  minReplicas: 2
+  maxReplicas: 10
+  metrics:
+  - type: Resource
+    resource:
+      name: cpu
+      target:
+        type: Utilization
+        averageUtilization: 70
+  - type: Pods
+    pods:
+      metric:
+        name: http_requests_per_second
+      target:
+        type: AverageValue
+        averageValue: "100"
+  behavior:
+    scaleDown:
+      stabilizationWindowSeconds: 300
+    scaleUp:
+      stabilizationWindowSeconds: 60
+```
+
+## AI 推理场景指标
+
+| 指标 | 来源 | 目标值 |
+|------|------|------|
+| GPU 利用率 | dcgm-exporter | 70-80% |
+| 推理 QPS | Prometheus | 根据 SLA |
+| P99 延迟 | Prometheus | < 100ms |
+| 队列深度 | Kafka/RabbitMQ | < 100 |
+| 批处理大小 | 自定义 | 根据显存 |
+
+## HPA vs VPA vs KEDA
+
+| 特性 | HPA | VPA | KEDA |
+|------|------|------|------|
+| 扩缩维度 | 副本数 | 资源请求 | 副本数 |
+| 指标来源 | 内置/自定义 | 内置 | 丰富外部 |
+| 适用场景 | 无状态服务 | 资源优化 | 事件驱动 |
+| 同时使用 | 与 VPA 冲突 | 与 HPA 冲突 | 可组合 |
+
+> 💡 HPA 是 K8s 水平扩缩的标准方案，2026 年 AI 推理服务推荐 GPU 利用率 + QPS 双指标 HPA。
+
+## 常用命令
+
+| 命令 | 用途 |
+|------|------|
+| `kubectl get hpa` | 查看 HPA 状态 |
+| `kubectl describe hpa <name>` | HPA 详情 |
+| `kubectl autoscale deployment <name> --min=2 --max=10 --cpu-percent=70` | 快速创建 |

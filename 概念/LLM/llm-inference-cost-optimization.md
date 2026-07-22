@@ -178,3 +178,24 @@ python -m vllm.entrypoints.openai.api_server \
 3. **投机解码加速**：高并发场景启用 Speculative Decoding
 4. **模型选择**：简单任务用小模型，复杂任务用大模型
 5. **成本监控**：实时监控 Token 消耗和 GPU 利用率，设置告警
+6. **前缀缓存**：多轮对话/共享 System Prompt 场景启用 Prefix Caching
+7. **批处理优化**：合理设置 max_num_seqs，平衡吐量和显存
+8. **混合部署**：Prefill/Decode 分离部署，独立扩展
+
+## 成本优化检查清单
+
+| 优化项 | 预期收益 | 实施难度 |
+|--------|----------|----------|
+| INT4 量化 | 成本 -75% | 低 |
+| Continuous Batching | 吐量 +200% | 低 |
+| Prefix Caching | TTFT -50% | 低 |
+| Speculative Decoding | 延迟 -40% | 中 |
+| 模型路由 | 成本 -50% | 中 |
+| Prefill/Decode 分离 | 资源利用率 +50% | 高 |
+
+## 延伸阅读
+
+- [[概念/LLM/llm-quantization|LLM 量化]]
+- [[概念/LLM/speculative-decoding|推测解码]]
+- [[概念/Inference/continuous-batching|Continuous Batching]]
+- [[部署推理/Inference_Performance/LLM_Inference_Cost_Optimization_2026|推理成本优化 2026]]

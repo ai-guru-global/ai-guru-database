@@ -127,3 +127,83 @@ aliases:
 3. **与 DeepSpeed 对比**：PyTorch 生态优先用 FSDP，复杂场景用 DeepSpeed
 4. **混合精度**：BF16 训练 + FP32 优化器状态
 5. **监控指标**：关注通信/计算比、显存峰值、step time
+
+## 2026 FSDP 生态现状
+
+| 特性 | 状态 | 说明 |
+|------|------|------|
+| FSDP1 | ✅ | PyTorch 原生 | ✅ 成熟 |
+| FSDP2 | ✅ | 重构版 | ✅ 前沿 |
+| 混合精度 | ✅ | BF16/FP16 | ✅ 主流 |
+| 激活检查点 | ✅ | 显存优化 | ✅ 主流 |
+| 与 DeepSpeed 互操作 | ✅ | 灵活选择 | ✅ 成熟 |
+
+## 检查清单
+
+- [ ] 分片策略已配置（FULL_SHARD/SHARD_GRAD_OP）
+- [ ] 混合精度已启用
+- [ ] 激活检查点已启用
+- [ ] 通信优化已配置
+- [ ] 监控已接入
+- [ ] 与 DeepSpeed 已对比
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| 显存 OOM | 分片不够 | 启用 FULL_SHARD |
+| 通信瓶颈 | 带宽不足 | 优化通信重叠 |
+| 训练慢 | 未重叠通信 | 配置通信重叠 |
+| 收敛差 | 学习率不当 | 调优 lr + warmup |
+
+## 延伸阅读
+
+- [[概念/Training/deepspeed|DeepSpeed]] — 微软训练框架
+- [[概念/Training/megatron-lm|Megatron-LM]] — NVIDIA 分布式框架
+- [[概念/Training/mixed-precision|Mixed Precision]] — 混合精度
+- [[概念/Training/gradient-checkpointing|Gradient Checkpointing]] — 梯度检查点
+- [[概念/GPU/model-parallelism|Model Parallelism]] — 模型并行
+
+> ℹ️ FSDP 是 2026 年 PyTorch 生态的分布式训练标配，与 DeepSpeed 功能对标，PyTorch 原生集成更简洁。
+
+## FSDP vs DeepSpeed
+
+| 特性 | FSDP | DeepSpeed ZeRO |
+|------|------|------|
+| 框架 | PyTorch 原生 | 第三方库 |
+| 配置 | Python API | JSON 配置 |
+| 分片策略 | FULL/SHARD/NO | Stage 1/2/3 |
+| CPU Offload | ✅ | ✅ |
+| 混合精度 | ✅ | ✅ |
+| 生态集成 | HF/原生 | HF/原生 |
+| 学习曲线 | 低 | 中 |
+
+## FSDP 配置示例
+
+```python
+from torch.distributed.fsdp import FullyShardedDataParallel as FSDP
+from torch.distributed.fsdp import ShardingStrategy, MixedPrecision
+
+# FSDP 配置
+fsdp_config = {
+    "sharding_strategy": ShardingStrategy.FULL_SHARD,
+    "mixed_precision": MixedPrecision(
+        param_dtype=torch.bfloat16,
+        reduce_dtype=torch.bfloat16,
+        buffer_dtype=torch.bfloat16,
+    ),
+    "cpu_offload": False,
+    "backward_prefetch": True,
+    "limit_all_gathers": True,
+}
+
+model = FSDP(model, **fsdp_config)
+```
+
+## 显存优化对比
+
+| 模型 | 单卡 | DDP | FSDP | 节省 |
+|------|------|------|------|------|
+| 7B | 56 GB | 56 GB | 14 GB | 75% |
+| 13B | 104 GB | OOM | 26 GB | - |
+| 70B | OOM | OOM | 140 GB | - |

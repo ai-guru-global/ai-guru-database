@@ -195,3 +195,20 @@ spec:
 3. **质量控制**：多人标注 + 一致性检查
 4. **与训练集成**：标注数据直接用于训练
 5. **权限管理**：标注任务权限管理
+
+## 2026 Label Studio 生态
+
+| 特性 | 说明 | 状态 |
+|------|------|------|
+| **Label Studio 1.12+** | 新 UI、性能提升 | GA |
+| **Label Studio Cloud** | 托管 SaaS | GA |
+| **ML Backend** | 预标注集成 | GA |
+| **多模态支持** | 图片/文本/音频/视频 | GA |
+
+## 延伸阅读
+
+- [[概念/MLOps/data-pipeline|Data Pipeline]] — 数据管道
+- [[概念/MLOps/experiment-tracking|Experiment Tracking]] — 实验跟踪
+- [[概念/MLOps/mlops|MLOps]] — MLOps 方法论
+
+> ℹ️ Label Studio 是开源数据标注工具，支持多模态数据标注，是 ML 数据准备的重要工具。

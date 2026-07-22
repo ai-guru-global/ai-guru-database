@@ -123,3 +123,79 @@ DoRA 解决的是“方向更新更稳定”的问题；RS-LoRA 解决的是“r
 3. **QLoRA 节省**：显存不足用 QLoRA
 4. **秩选择**：根据任务选择合适秩
 5. **与全量微调对比**：根据场景选择微调方法
+
+## DoRA 配置示例
+
+```python
+from peft import LoraConfig, get_peft_model
+
+# DoRA 配置
+config = LoraConfig(
+    r=64,                    # 秩
+    lora_alpha=128,          # 缩放因子
+    target_modules=["q_proj", "v_proj", "k_proj", "o_proj"],
+    lora_dropout=0.05,
+    use_dora=True,           # 启用 DoRA
+    task_type="CAUSAL_LM"
+)
+model = get_peft_model(base_model, config)
+```
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| 效果不如预期 | 秩太小/目标模块少 | 增大秩、扩展目标模块 |
+| 显存不足 | 模型太大 | QLoRA + 4bit 量化 |
+| 训练不稳定 | 学习率太高 | 降低 lr、增大 warmup |
+| 推理速度慢 | 未合并权重 | merge_and_unload() |
+| 与 LoRA 差异小 | 任务简单 | 简单任务用 LoRA 即可 |
+
+## 版本兼容性
+
+| 工具 | 版本 | 说明 |
+|------|------|------|
+| PEFT | 0.10+ | DoRA 支持 |
+| transformers | 4.40+ | 模型加载 |
+| bitsandbytes | 0.43+ | QLoRA 量化 |
+
+## 生产检查清单
+
+1. 根据任务复杂度选择 DoRA/LoRA
+2. 秩从 64 开始，根据效果调整
+3. 显存不足时启用 QLoRA
+4. 训练后合并权重提升推理速度
+5. 在验证集上评估微调效果
+6. 保存适配器便于多任务切换
+
+# 版本兼容性
+
+| 框架/工具 | 最低版本 | DoRA 支持 | 备注 |
+|------|------|------|------|
+| **PEFT** | ≥ 0.9.0 | ✅ 原生支持 | `use_dora=True` 参数 |
+| **transformers** | ≥ 4.38.0 | ✅ 配合 PEFT | 需搭配 PEFT 库 |
+| **LLaMA-Factory** | ≥ 0.6.0 | ✅ 内置 | 训练配置 `finetuning_type: dora` |
+| **Axolotl** | ≥ 0.4.0 | ✅ 支持 | YAML 配置 `peft: dora` |
+| **Unsloth** | ≥ 2024.4 | ✅ 加速支持 | 2x 训练速度提升 |
+
+## 生产检查清单
+
+1. ✅ 确认基座模型权重已正确加载（FP16/BF16）
+2. ✅ 设置合理的 rank（推荐 16-64）和 alpha（= 2×rank）
+3. ✅ 对比 LoRA 基线确认 DoRA 增益显著
+4. ✅ 监控训练显存（DoRA 比 LoRA 多约 10-20%）
+5. ✅ 保存适配器权重并记录训练配置
+6. ✅ 在目标评估集上验证微调效果
+
+## 总结
+
+DoRA 是 LoRA 的增强版本，通过权重分解实现更接近全量微调的效果，同时保持参数高效。对于追求微调质量且资源有限的场景，DoRA 是最佳选择。
+
+> 💡 DoRA 的核心价值：用 LoRA 的成本获得接近全量微调的效果——是参数高效微调的"质量升级版"。
+
+## 相关概念
+
+- [[概念/lora]] — LoRA 低秩适配
+- [[概念/qlora]] — QLoRA 量化微调
+- [[概念/peft]] — PEFT 参数高效微调库
+

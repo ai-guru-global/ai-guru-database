@@ -175,3 +175,41 @@ model.save_pretrained("./openvino-model")
 4. **HuggingFace 集成**：optimum-intel 一键转换和量化
 5. **边缘场景**：VPU 和 NPU 支持让 AI 部署到边缘设备
 6. **AI Stack 意义**：企业中使用 Intel CPU 服务器时，OpenVINO 是推理优化的默认选择
+
+## OpenVINO vs 其他推理方案
+
+| 维度 | OpenVINO | vLLM | llama.cpp | TensorRT |
+|------|----------|------|-----------|----------|
+| **硬件** | Intel CPU/GPU/NPU | NVIDIA GPU | 全平台 | NVIDIA GPU |
+| **LLM 支持** | GenAI API | 原生 | GGUF | 原生 |
+| **量化** | INT8/INT4 | FP8/INT4 | GGUF 多种 | FP8/INT4 |
+| **性能** | Intel 上最优 | GPU 高 | 中 | 极致 |
+| **适用** | Intel 服务器 | 云端 GPU | 边缘/本地 | 极致性能 |
+
+## OpenVINO LLM 推理示例
+
+```python
+from openvino_genai import LLMPipeline
+
+# 加载模型 (自动量化)
+pipe = LLMPipeline("Qwen/Qwen3-8B", "CPU")
+
+# 推理
+result = pipe.generate(
+    "请解释什么是 Transformer 架构",
+    max_new_tokens=512,
+    temperature=0.7
+)
+print(result)
+
+# 流式输出
+pipe.generate("你好", streamer=lambda x: print(x, end=""))
+```
+
+## 生产最佳实践
+
+1. **Intel 硬件首选**：Intel CPU 服务器上 OpenVINO 性能远超其他
+2. **NNCF 量化**：用 NNCF 做 INT8/INT4 量化，提升 2-3x
+3. **GenAI API**：2024+ 版本用 openvino_genai，对标 vLLM 接口
+4. **异构推理**：自动选择 CPU/GPU/NPU 最优设备
+5. **optimum-intel**：HuggingFace 模型一键转换和量化

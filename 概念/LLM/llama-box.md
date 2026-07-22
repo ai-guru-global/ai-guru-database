@@ -133,3 +133,71 @@ llama.cpp 本身是一个推理引擎库，直接调用需要写 C/C++ 代码或
 3. **KV Cache 管理**：根据上下文长度调整 `--ctx-size`，避免 OOM
 4. **健康检查**：配置服务健康检查端点，异常时自动重启
 5. **模型热加载**：支持多模型切换时实现懒加载，减少内存占用
+6. **日志监控**：启用结构化日志，监控吐量/延迟/显存
+7. **版本管理**：固定 llama.cpp 版本，避免升级引入不兼容
+
+## 部署架构示例
+
+```yaml
+# docker-compose.yml - llama-box 服务部署
+services:
+  llama-box:
+    image: ghcr.io/gpustack/llama-box:latest
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./models:/models
+    command: >
+      --model /models/qwen3-8b-q5_k_m.gguf
+      --ctx-size 8192
+      --parallel 4
+      --n-gpu-layers 99
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+```
+
+## 量化格式对比
+
+| 格式 | 精度 | 模型大小 (7B) | 质量 | 速度 |
+|------|:----:|:----------:|:----:|:----:|
+| **Q8_0** | 8-bit | ~7.5GB | 极高 | 中 |
+| **Q5_K_M** | 5-bit | ~5.0GB | 高 | 快 |
+| **Q4_K_M** | 4-bit | ~4.2GB | 中-高 | 快 |
+| **Q3_K_M** | 3-bit | ~3.3GB | 中 | 极快 |
+| **Q2_K** | 2-bit | ~2.8GB | 低 | 极快 |
+
+## 延伸阅读
+
+- [[概念/LLM/llama-cpp|llama.cpp]]
+- [[概念/LLM/llm-quantization|LLM 量化]]
+- [[概念/LLM/edge-llm|端侧 LLM]]
+- [[概念/Inference/model-serving|模型服务]]
+- [[部署推理/Inference_Engines/llama_cpp_Deep_Dive|llama.cpp 深度解析]]
+
+## 常见问题排查
+
+| 问题 | 原因 | 解决 |
+|------|------|------|
+| OOM 崩溃 | ctx-size 过大 / parallel 过多 | 降低 ctx-size 或 parallel |
+| 吐量低 | GPU 层数不足 | 增加 --n-gpu-layers |
+| 响应慢 | 模型过大 / 量化过高 | 换用更小量化 |
+| 服务无响应 | 并发超载 | 增加实例 / 降低 parallel |
+| 输出乱码 | 模型文件损坏 | 重新下载 GGUF 文件 |
+
+## 与同类工具对比
+
+| 工具 | 定位 | API 兼容 | 量化 | 适用 |
+|------|------|:--------:|:----:|------|
+| **llama-box** | GPUStack 推理组件 | OpenAI | GGUF | 集群管理 |
+| **llama-server** | llama.cpp 官方 | OpenAI | GGUF | 单机服务 |
+| **Ollama** | 本地模型管理 | 自定义 | GGUF | 开发/个人 |
+| **vLLM** | 高性能推理 | OpenAI | HF/GPTQ | 生产环境 |
+| **TGI** | HF 官方推理 | 自定义 | HF/GPTQ | 生产环境 |

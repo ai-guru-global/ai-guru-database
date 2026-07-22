@@ -2,15 +2,32 @@
 title: Concepts
 type: index
 created: 2026-07-02
-updated: 2026-07-02
+updated: 2026-07-10
 sources: []
 ---
 
 # Concepts
 
-This page indexes the contents of `概念`.
+This page indexes the contents of `概念`. Total: 562 files across 12 subdomains.
 
-## Files
+## Subdomains
+
+| 子域 | 文件数 | 说明 |
+|------|------|------|
+| [[概念/General/]] | 147 | 基础与通识、平台工具、通用概念 |
+| [[概念/LLM/]] | 98 | 大语言模型架构、训练、对齐 |
+| [[概念/K8s/]] | 69 | Kubernetes 与云原生 AI 基础设施 |
+| [[概念/Training/]] | 49 | 模型训练、分布式训练、优化 |
+| [[概念/Inference/]] | 35 | 推理引擎、服务化、优化 |
+| [[概念/RAG/]] | 33 | 检索增强生成、向量数据库 |
+| [[概念/Agent/]] | 30 | AI 智能体、工具调用、多智能体 |
+| [[概念/GPU/]] | 27 | GPU 硬件、CUDA、集群管理 |
+| [[概念/MLOps/]] | 23 | ML 运维、CI/CD、监控 |
+| [[概念/Math/]] | 18 | 数学基础、优化理论 |
+| [[概念/Vision/]] | 18 | 计算机视觉、多模态 |
+| [[概念/Safety/]] | 15 | AI 安全、对齐、伦理 |
+
+## Files (General subdomain)
 
 - [[概念/3fs|3fs]]
 - [[概念/a-speed|A Speed]]

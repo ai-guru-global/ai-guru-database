@@ -132,3 +132,69 @@ kubectl get pods -n default -l app=backend --show-labels
 2. **CNI 支持**：确保 CNI 插件支持 NetworkPolicy
 3. **DNS 放行**：别忘了放行 kube-system DNS
 4. **渐进式采用**：先 audit，再 enforce
+
+## NetworkPolicy 类型
+
+| 类型 | 方向 | 说明 |
+|------|------|------|
+| Ingress | 入站 | 控制进入 Pod 的流量 |
+| Egress | 出站 | 控制离开 Pod 的流量 |
+
+## CNI 插件支持对比
+
+| CNI | NetworkPolicy | 性能 | 特点 |
+|------|------|------|------|
+| Calico | ✅ | 高 | BGP/eBPF |
+| Cilium | ✅ | 极高 | eBPF 原生 |
+| Weave | ✅ | 中 | 加密 |
+| Flannel | ❌ | 高 | 简单 |
+| Antrea | ✅ | 高 | OVS 基于 |
+
+## NetworkPolicy 配置示例
+
+```yaml
+# 默认拒绝所有入站
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: default-deny-ingress
+  namespace: production
+spec:
+  podSelector: {}
+  policyTypes:
+  - Ingress
+---
+# 允许特定来源
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: allow-frontend
+  namespace: production
+spec:
+  podSelector:
+    matchLabels:
+      app: backend
+  policyTypes:
+  - Ingress
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          app: frontend
+    ports:
+    - protocol: TCP
+      port: 8080
+```
+
+## 常见策略模式
+
+| 模式 | 说明 | 适用场景 |
+|------|------|------|
+| Default Deny | 拒绝所有 | 生产环境基线 |
+| Allow DNS | 放行 DNS | 所有 Namespace |
+| Namespace Isolation | 命名空间隔离 | 多租户 |
+| Pod-to-Pod | Pod 间通信 | 微服务 |
+| External Access | 外部访问 | 入口流量 |
+
+> 💡 NetworkPolicy 是 K8s 网络隔离的核心机制，2026 年生产环境必须启用 Default Deny + 白名单策略。
+

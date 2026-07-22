@@ -141,3 +141,60 @@ llm = LLM(
 - [[概念/Inference/sglang|SGLang]]
 - [[概念/Inference/tensorrt-llm|TensorRT-LLM]]
 - [[部署推理/Inference_Engines/vLLM_Deep_Dive|vLLM 深度解析]]
+
+## Continuous Batching vs Static Batching
+
+| 维度 | Static Batching | Continuous Batching |
+|------|----------------|--------------------|
+| **批处理时机** | 等待凑满一批 | 每个 step 可插入/移除 |
+| **GPU 利用率** | 低 (padding 浪费) | 高 (无 padding) |
+| **延迟** | 高 (等待最慢请求) | 低 (完成即释放) |
+| **吐吐量** | 低 | 高 (2-5x) |
+| **实现复杂度** | 低 | 中 |
+| **代表引擎** | 早期服务 | vLLM/SGLang/TGI |
+
+## 工作原理图解
+
+```
+Static Batching:
+  [Req1 ████████████]
+  [Req2 ██████________]  ← padding 浪费
+  [Req3 ████████████████]
+  等待所有完成 → 下一批
+
+Continuous Batching:
+  Step 1: [Req1, Req2, Req3]
+  Step 2: [Req1, Req2, Req3]
+  Step 3: [Req1, Req4, Req3]  ← Req2 完成，Req4 插入
+  Step 4: [Req1, Req4, Req5]  ← Req3 完成，Req5 插入
+  每个 step 动态调整批次
+```
+
+## 生产最佳实践
+
+1. **必用 Continuous Batching**：2026 年所有主流引擎默认启用
+2. **max_num_seqs 调优**：根据显存调整最大并发序列数
+3. **监控批次大小**：实际批次大小反映系统负载
+4. **与 PD 分离配合**：大规模场景下 Prefill/Decode 分离部署
+5. **超时保护**：设置请求超时，避免长请求占满批次
+
+## 延伸阅读
+
+- [[概念/Inference/paged-attention|PagedAttention]] — 显存管理
+- [[概念/Inference/request-scheduling|请求调度]] — 调度策略
+- [[概念/Inference/prefill-decode|Prefill/Decode]] — 两阶段优化
+- [[概念/Inference/model-serving|模型服务]] — 服务架构
+
+> ℹ️ Continuous Batching 是现代推理引擎的基石，吐吐量提升 2-5x。
+
+## 2026 Continuous Batching 生态
+
+| 引擎 | 批处理策略 | 特色 | 状态 |
+|------|------------|------|------|
+| **vLLM** | Continuous + PagedAttention | 显存效率最优 | GA |
+| **SGLang** | Continuous + RadixAttention | 前缀复用最强 | GA |
+| **TensorRT-LLM** | In-flight Batching | NVIDIA 极致性能 | GA |
+| **TGI** | Continuous + Flash Attention | HuggingFace 生态 | GA |
+
+> ℹ️ 2026 年所有主流推理引擎均已默认启用 Continuous Batching，差异在于显存管理和前缀复用策略。
+> 生产环境建议结合 PagedAttention + 前缀缓存，最大化吐吐量。

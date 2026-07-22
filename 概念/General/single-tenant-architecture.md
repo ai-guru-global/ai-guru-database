@@ -133,3 +133,85 @@ AI Stack 单租户架构
 3. **密钥管理**：每个租户独立加密密钥，使用 Vault/KMS 管理
 4. **成本透明**：按租户维度计量 GPU/存储/网络资源，提供账单明细
 5. **运维自动化**：单租户不代表手动运维，仍需 GitOps + 自动化巡检
+
+## 单租户部署架构示例
+
+```yaml
+# Kubernetes 单租户命名空间配置
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: tenant-acme-corp
+  labels:
+    tenant: acme-corp
+    isolation: dedicated
+---
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: acme-quota
+  namespace: tenant-acme-corp
+spec:
+  hard:
+    nvidia.com/gpu: "8"
+    memory: 128Gi
+    cpu: "64"
+    persistentvolumeclaims: "10"
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: deny-cross-tenant
+  namespace: tenant-acme-corp
+spec:
+  podSelector: {}
+  policyTypes: [Ingress, Egress]
+  ingress:
+    - from:
+        - namespaceSelector:
+            matchLabels:
+              tenant: acme-corp
+  egress:
+    - to:
+        - namespaceSelector:
+            matchLabels:
+              tenant: acme-corp
+```
+
+## 单租户 vs 多租户 vs 混合模式对比
+
+| 维度 | 单租户 | 多租户 | 混合模式 |
+|------|--------|--------|----------|
+| 数据隔离 | 物理隔离 | 逻辑隔离 | 分层隔离 |
+| 资源利用率 | 低（30-50%） | 高（70-90%） | 中（50-70%） |
+| 合规性 | 最强 | 需额外措施 | 强 |
+| 成本 | 高 | 低 | 中 |
+| 运维复杂度 | 高（N套环境） | 低 | 中 |
+| 适用客户 | 金融/医疗/政务 | SaaS/中小企业 | 大型企业 |
+| 定制化 | 完全自定义 | 受限 | 部分自定义 |
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| GPU 利用率低 | 专属资源无法共享 | 分时复用 + 弹性池化 |
+| 运维成本高 | 每租户独立环境 | GitOps 统一编排 + 自动化巡检 |
+| 版本升级困难 | 多环境并行维护 | 蓝绿部署 + 统一镜像仓库 |
+| 成本不透明 | 缺乏计量体系 | 按租户维度资源计量 + 账单系统 |
+| 安全审计复杂 | 分散的日志和配置 | 统一审计平台 + 合规扫描 |
+
+## 生产检查清单
+
+1. ✅ 租户间网络完全隔离（NetworkPolicy 默认拒绝）
+2. ✅ 独立加密密钥（KMS/Vault 每租户独立）
+3. ✅ 资源配额硬限制（ResourceQuota + LimitRange）
+4. ✅ 数据不出域（存储加密 + 传输 TLS 1.3）
+5. ✅ 审计日志完整（操作日志保留 ≥ 180 天）
+6. ✅ 自动化备份和灾难恢复（RPO < 1h, RTO < 4h）
+7. ✅ 定期合规扫描（CIS Benchmark + 行业规范）
+
+## 总结
+
+单租户架构是金融、医疗、政务等强监管行业的必然选择，通过物理隔离、专属资源和独立密钥管理满足最严格的数据主权要求。代价是资源利用率低和运维复杂度高，需要通过自动化和标准化来缓解。
+
+> 💡 单租户不等于“手工运维”——恰恰相反，多套环境的并行维护更需要 GitOps、自动化测试和统一编排来保证一致性。

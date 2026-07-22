@@ -111,3 +111,95 @@ spec:
 2. **网络策略**：启用 NetworkPolicy 限制 Pod 间访问
 3. **IP 规划**：合理规划 Pod CIDR，避免与主机网络冲突
 4. **性能监控**：关注网络延迟、丢包率
+
+## CNI 插件对比
+
+| 插件 | 模式 | NetworkPolicy | 性能 | 特点 |
+|------|------|------|------|------|
+| Calico | BGP/VXLAN | ✅ | 高 | 企业级 |
+| Cilium | eBPF | ✅ | 极高 | 云原生 |
+| Flannel | VXLAN | ❌ | 高 | 简单 |
+| Weave | VXLAN | ✅ | 中 | 加密 |
+| Antrea | OVS | ✅ | 高 | 企业级 |
+| kube-router | BGP | ✅ | 高 | 轻量 |
+
+## CNI 工作原理
+
+| 步骤 | 说明 |
+|------|------|
+| 1 | kubelet 创建 Pod |
+| 2 | 调用 CNI 插件 |
+| 3 | 配置网络命名空间 |
+| 4 | 分配 IP 地址 |
+| 5 | 设置路由规则 |
+| 6 | Pod 网络就绪 |
+
+## CNI 配置示例
+
+```json
+// /etc/cni/net.d/10-calico.conflist
+{
+  "name": "calico",
+  "cniVersion": "1.0.0",
+  "plugins": [
+    {
+      "type": "calico",
+      "etcd_endpoints": "http://etcd:2379",
+      "log_level": "info",
+      "ipam": {
+        "type": "calico-ipam"
+      },
+      "policy": {
+        "type": "k8s"
+      }
+    }
+  ]
+}
+```
+
+## AI 场景网络需求
+
+| 场景 | 网络要求 | 推荐 CNI |
+|------|------|------|
+| 分布式训练 | 高带宽/低延迟 | Cilium/Calico |
+| 推理服务 | 高并发 | Calico/Cilium |
+| 多租户 | 网络隔离 | Calico + NetworkPolicy |
+| 边缘计算 | 轻量 | Flannel |
+
+## 常用命令
+
+| 命令 | 用途 |
+|------|------|
+| `kubectl get pods -n kube-system -l k8s-app=calico-node` | 查看 CNI Pod |
+| `calicoctl node status` | Calico 节点状态 |
+| `cilium status` | Cilium 状态 |
+| `ip addr show` | 查看网络接口 |
+
+> 💡 CNI 是 K8s 容器网络的标准接口，2026 年 AI 集群推荐 Calico (企业) 或 Cilium (高性能)。
+
+## 网络模式对比
+
+| 模式 | 说明 | 性能 | 适用场景 |
+|------|------|------|------|
+| VXLAN | 覆盖网络 | 中 | 跨子网 |
+| BGP | 原生路由 | 高 | 同子网/高性能 |
+| eBPF | 内核旁路 | 极高 | 高性能/可观测 |
+| HostNetwork | 主机网络 | 最高 | 特殊场景 |
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| Pod 无法通信 | CNI 未安装 | 检查 CNI Pod |
+| IP 分配失败 | IPAM 耗尽 | 扩大 Pod CIDR |
+| 网络延迟高 | VXLAN 开销 | 改用 BGP/eBPF |
+| NetworkPolicy 无效 | CNI 不支持 | 更换支持 NP 的 CNI |
+
+## 最佳实践
+
+| 实践 | 说明 |
+|------|------|
+| 生产用 Calico/Cilium | 企业级功能 |
+| 启用 NetworkPolicy | 网络隔离 |
+| 监控网络指标 | 延迟/丢包/带宽 |
+| 合理规划 CIDR | 避免冲突 |

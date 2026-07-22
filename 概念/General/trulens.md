@@ -148,3 +148,74 @@ response = tru_app.query("什么是 vLLM？")
 3. **采样策略**：生产环境按比例采样评估，平衡成本与覆盖率
 4. **告警阈值**：设置质量分数下限，低于阈值自动告警
 5. **与 CI 集成**：将 TruLens 评估纳入发布流水线作为质量门禁
+
+## TruLens 评估示例
+
+```python
+from trulens_eval import TruChain, Feedback, Tru
+from trulens_eval.feedback.provider import OpenAI as fOpenAI
+
+provider = fOpenAI()
+
+# 定义自定义评估函数
+f_groundedness = Feedback(
+    provider.groundedness_measure_with_cot_reasons
+).on(TruChain.select_context()).on_output()
+
+f_relevance = Feedback(
+    provider.relevance
+).on_input_output()
+
+f_harmfulness = Feedback(
+    provider.harmfulness
+).on_output()
+
+# 包装 RAG Chain
+tru_recorder = TruChain(
+    rag_chain,
+    app_id="production-rag-v2",
+    feedbacks=[f_groundedness, f_relevance, f_harmfulness],
+)
+
+with tru_recorder as recording:
+    response = rag_chain.invoke("什么是向量数据库？")
+
+# 查看评估结果
+dashboard = Tru()
+dashboard.run(port=8501)
+```
+
+## TruLens vs Ragas vs LangSmith 对比
+
+| 维度 | TruLens | Ragas | LangSmith |
+|------|---------|-------|------------|
+| 定位 | 通用自定义评估 | RAG 专项 | 追踪+评估 |
+| 自定义能力 | 极强 | 中 | 中 |
+| RAG 指标 | 支持 | 原生 | 支持 |
+| 追踪集成 | 内置 | 无 | 原生 |
+| 开源 | Apache 2.0 | MIT | 部分 |
+| 生产就绪 | 高 | 中 | 高 |
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| 评估成本高 | 每次调用都评估 | 生产环境按比例采样 |
+| 自定义指标不稳定 | Prompt 设计不当 | 多次调用取平均 + 校准 |
+| Dashboard 加载慢 | 数据量大 | 定期清理历史数据 |
+| 与框架集成失败 | 版本不兼容 | 固定 trulens-eval 版本 |
+
+## 生产检查清单
+
+1. ✅ 定义业务专属 Feedback Function
+2. ✅ 建立评估基线 + 回归对比
+3. ✅ 生产环境按比例采样评估
+4. ✅ 设置质量分数下限告警
+5. ✅ CI/CD 集成质量门禁
+6. ✅ 定期清理历史评估数据
+
+## 总结
+
+TruLens 是最灵活的 LLM 应用评估框架，其自定义 Feedback Function 机制使其能够适应任何业务场景的评估需求。2026 年被 Snowflake 收购后，正在融入其数据平台生态，成为企业级 AI 质量保障的重要工具。
+
+> 💡 TruLens 的核心价值是“评估即代码”——将质量标准转化为可执行、可追踪、可审计的自动化检查。

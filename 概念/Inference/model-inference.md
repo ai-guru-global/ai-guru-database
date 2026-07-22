@@ -156,3 +156,46 @@ Attention 解决的是"指代消解"问题——当模型看到"它"时，需要
 - [[概念/speculative-decoding]] — 投机解码加速
 - [[概念/prefill-decode]] — Prefill-Decode 分离架构
 - [[概念/mixture-of-experts]] — MoE 稀疏激活降低推理计算量
+
+## 推理优化技术全景
+
+| 技术 | 加速比 | 复杂度 | 适用场景 |
+|------|--------|--------|----------|
+| **Continuous Batching** | 2-5x | 低 | 所有服务 |
+| **PagedAttention** | 1.5-2x | 低 | 显存受限 |
+| **Flash Attention** | 1.5-2x | 低 | 长序列 |
+| **量化 (FP8/INT4)** | 1.5-3x | 中 | 生产部署 |
+| **投机解码** | 2-3x | 中 | 延迟敏感 |
+| **KV Cache 压缩** | 1.5-2x | 中 | 长上下文 |
+| **PD 分离** | 1.5-2x | 高 | 大规模服务 |
+| **TensorRT 编译** | 2-4x | 高 | 极致性能 |
+
+## 推理流程图解
+
+```
+输入 Token 化 → Prefill (并行计算 KV) → Decode (逐 Token 生成)
+                    │                          │
+                    └─ TTFT                    └─ TPOT
+                    │                          │
+                    └─ Flash Attn              └─ 投机解码
+                    └─ Chunked Prefill         └─ KV Cache
+
+输出: Token → 反 Token 化 → 文本
+```
+
+## 生产最佳实践
+
+1. **引擎选择**：通用服务用 vLLM/SGLang，极致性能用 TensorRT-LLM
+2. **量化必用**：H100+ 用 FP8，其他用 INT8/INT4
+3. **监控 TTFT/TPOT**：分别监控两个阶段延迟
+4. **批处理调优**：调整 max_num_seqs 平衡吐吐量与延迟
+5. **显存管理**：监控 KV Cache 使用率，避免 OOM
+
+## 延伸阅读
+
+- [[概念/Inference/prefill-decode|Prefill/Decode]] — 推理两阶段
+- [[概念/Inference/continuous-batching|连续批处理]] — 批处理优化
+- [[概念/Inference/quantization|量化]] — 模型压缩
+- [[概念/Inference/model-serving|模型服务]] — 服务架构
+
+> ℹ️ 模型推理是 LLM 生产化的核心环节，优化空间巨大。

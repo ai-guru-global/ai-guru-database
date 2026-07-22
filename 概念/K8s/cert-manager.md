@@ -98,9 +98,112 @@ spec:
 | **ACME DNS-01** | 通配符证书 | GA |
 | **csi-driver** | 证书注入 CSI | GA |
 
+## 核心 CRD
+
+| CRD | 作用 | 范围 |
+|-----|------|------|
+| **Issuer** | 定义证书签发源 | Namespace 级 |
+| **ClusterIssuer** | 集群级证书签发源 | 集群级 |
+| **Certificate** | 声明需要的证书 | Namespace 级 |
+| **CertificateRequest** | 证书请求 | Namespace 级 |
+| **Order** | ACME 订单 | Namespace 级 |
+| **Challenge** | ACME 验证挑战 | Namespace 级 |
+
+## 签发源对比
+
+| 签发源 | 适用场景 | 说明 |
+|--------|----------|------|
+| **ACME (Let's Encrypt)** | 公网服务 | 免费、自动续期 |
+| **Vault** | 企业内网 | 对接私有 PKI |
+| **自签 CA** | 开发测试 | 简单快速 |
+| **云厂商 CA** | 云上服务 | AWS ACM/GCP CA |
+
+## 配置示例
+
+```yaml
+# 自签 CA Issuer
+apiVersion: cert-manager.io/v1
+kind: Issuer
+metadata:
+  name: selfsigned-ca
+  namespace: ai-inference
+spec:
+  selfSigned: {}
+---
+# Certificate 声明
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: inference-tls
+  namespace: ai-inference
+spec:
+  secretName: inference-tls-secret
+  duration: 2160h  # 90 天
+  renewBefore: 360h  # 15 天前续期
+  dnsNames:
+    - inference.example.com
+    - inference.ai-inference.svc.cluster.local
+  issuerRef:
+    name: selfsigned-ca
+    kind: Issuer
+```
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| Certificate 不就绪 | ACME 验证失败 | 检查 DNS/HTTP 可达性 |
+| 证书未续期 | Issuer 配置错误 | 检查 Issuer 状态 |
+| Secret 未创建 | Certificate 未匹配 | 检查 dnsNames 和 issuerRef |
+| 证书过期 | renewBefore 太短 | 调整续期时间 |
+
+## 相关概念
+
+- [[概念/ingress|Ingress]] — 七层入口
+- [[概念/vault|Vault]] — 密钥管理
+- [[概念/istio|Istio]] — 服务网格 mTLS
+
 ## 生产最佳实践
 
 1. **ClusterIssuer 复用**：集群级 Issuer 减少重复配置
 2. **自动续期**：确保证书到期前自动续期
 3. **监控告警**：监控 Certificate Ready 状态
 4. **私有 CA**：内网环境对接企业私有 CA
+5. **Gateway API**：新集群使用 Gateway API 替代 Ingress
+
+## 相关概念
+
+- [[概念/ingress|Ingress]] — 七层入口
+- [[概念/vault|Vault]] — 密钥管理
+- [[概念/istio|Istio]] — 服务网格 mTLS
+
+## 总结
+
+cert-manager 是 K8s 上 TLS 证书自动化管理的标准方案，支持 ACME、Vault、自签 CA 等多种签发源。确保服务间通信始终加密，证书到期前自动续期。
+
+---
+
+> 💡 cert-manager 是 K8s 上 TLS 证书自动化管理的标准方案，确保服务间通信始终加密。
+
+## 版本兼容性
+
+| cert-manager 版本 | K8s 兼容 | 状态 |
+|-------------------|---------|------|
+| v1.16.x | 1.29+ | 稳定 |
+| v1.15.x | 1.28+ | 维护 |
+| v1.14.x | 1.27+ | EOL |
+
+## 常用命令
+
+| 命令 | 说明 |
+|------|------|
+| `kubectl get certificates` | 查看证书状态 |
+| `kubectl get certificaterequests` | 查看证书请求 |
+| `kubectl describe issuer` | 查看签发源详情 |
+| `cmctl check api` | 检查 API 可用性 |
+
+
+
+
+
+

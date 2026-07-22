@@ -175,3 +175,53 @@ sources: []
 3. **SVD 压缩**：模型压缩用 SVD
 4. **数值稳定性**：矩阵运算注意数值稳定性
 5. **内存布局**：矩阵内存布局影响性能
+
+## 2026 矩阵运算生态
+
+| 库 | 特点 | 适用 | 状态 |
+|------|------|------|------|
+| **NumPy** | CPU 通用 | 通用 | GA |
+| **PyTorch** | GPU 自动微分 | 深度学习 | GA |
+| **JAX** | 函数式 + XLA | 研究 | GA |
+| **CuPy** | GPU NumPy | GPU 加速 | GA |
+| **cuBLAS/cuDNN** | NVIDIA 底层 | 极致性能 | GA |
+
+## 矩阵运算在 AI 中的应用
+
+```
+矩阵运算在 AI 中:
+1. 线性变换: y = Wx + b (全连接层)
+2. 注意力: Attention(Q,K,V) = softmax(QK^T/√d)V
+3. 卷积: im2col + GEMM
+4. 归一化: LayerNorm/BatchNorm
+5. 优化: 梯度下降 W = W - η∇L
+```
+
+## 矩阵运算代码示例
+
+```python
+import torch
+
+# 矩阵乘法
+A = torch.randn(1024, 512)
+B = torch.randn(512, 256)
+C = torch.matmul(A, B)  # 或 A @ B
+
+# SVD 分解
+U, S, Vh = torch.linalg.svd(A, full_matrices=False)
+
+# 特征值分解
+eigenvalues, eigenvectors = torch.linalg.eigh(A @ A.T)
+
+# 矩阵求逆
+A_inv = torch.linalg.inv(A @ A.T + 1e-6 * torch.eye(1024))
+```
+
+## 延伸阅读
+
+- [[概念/Math/linear-algebra|线性代数]] — 线性代数基础
+- [[概念/Math/neural-networks|神经网络]] — 网络中的矩阵
+- [[概念/Inference/deepgemm|DeepGEMM]] — GEMM 优化
+- [[概念/GPU/cuda|CUDA]] — GPU 计算
+
+> ℹ️ 矩阵运算是 AI 计算的基石，理解矩阵操作是理解深度学习的基础。

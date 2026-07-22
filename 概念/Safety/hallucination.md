@@ -83,3 +83,127 @@ sources: []
 - [[概念/LLM/llmops|LLMOps]]
 - [[概念/Safety/adversarial-attack|对抗攻击]]
 - [[伦理安全/Guardrails/Guardrails_2026|护栏技术 2026]]
+
+## 幻觉检测代码示例
+
+```python
+# 使用 RAGAS 检测 RAG 幻觉
+from ragas import evaluate
+from ragas.metrics import faithfulness, answer_relevancy
+from datasets import Dataset
+
+# 准备评估数据
+eval_data = {
+    "question": ["What is quantum computing?"],
+    "answer": [model_output],
+    "contexts": [[retrieved_docs]],
+    "ground_truth": [reference_answer]
+}
+dataset = Dataset.from_dict(eval_data)
+
+# 评估
+result = evaluate(
+    dataset,
+    metrics=[faithfulness, answer_relevancy]
+)
+print(f"忠实度: {result['faithfulness']:.2f}")
+print(f"相关性: {result['answer_relevancy']:.2f}")
+```
+
+## 幻觉缓解架构图
+
+```
+幻觉缓解多层架构:
+用户查询
+    │
+    ▼
+┌─────────────────┐
+│  意图理解 + 查询改写  │
+└────────┬────────┘
+         │
+    ▼
+┌─────────────────┐
+│  RAG 检索增强      │ ← 知识库
+└────────┬────────┘
+         │
+    ▼
+┌─────────────────┐
+│  LLM 生成 + 引用标注  │
+└────────┬────────┘
+         │
+    ▼
+┌─────────────────┐
+│  事实性验证 (Judge)  │
+└────────┬────────┘
+         │
+    ▼
+┌─────────────────┐
+│  护栏过滤 + 输出    │
+└─────────────────┘
+```
+
+## 2026 幻觉研究进展
+
+| 方向 | 说明 | 状态 |
+|------|------|------|
+| **归因训练** | 训练模型标注信息来源 | 研究 |
+| **不确定性量化** | 模型输出置信度 | GA |
+| **多模型交叉验证** | 多个模型答案对比 | GA |
+| **知识图谱增强** | 结构化知识约束 | GA |
+| **实时搜索增强** | 联网搜索验证 | GA |
+
+## 延伸阅读
+
+- [[概念/RAG/rag-systems|RAG 系统]] — 检索增强生成
+- [[概念/LLM/llmops|LLMOps]] — LLM 运维
+- [[概念/Safety/adversarial-attack|对抗攻击]] — 对抗攻击可诱发幻觉
+- [[伦理安全/Guardrails/Guardrails_2026|护栏技术 2026]] — 输出安全护栏
+
+> ℹ️ 幻觉是 LLM 的固有限制，无法完全消除，但可通过 RAG + 验证 + 护栏大幅降低。
+
+## 幻觉评估指标
+
+| 指标 | 说明 | 计算方式 |
+|------|------|----------|
+| **Faithfulness** | 答案是否忠于检索内容 | RAGAS |
+| **Answer Relevancy** | 答案与问题的相关性 | RAGAS |
+| **FActScore** | 原子事实正确率 | 分解+验证 |
+| **Hallucination Rate** | 幻觉内容占比 | LLM-as-Judge |
+| **Citation Accuracy** | 引用源正确性 | 自动校验 |
+
+## 行业场景幻觉风险
+
+| 场景 | 风险等级 | 缓解策略 |
+|------|----------|----------|
+| **医疗诊断** | 🔴 极高 | RAG + 专家审核 |
+| **法律咨询** | 🔴 极高 | 引用源强制 + 人工校验 |
+| **金融分析** | 🟡 高 | 工具调用 + 数据验证 |
+| **客服问答** | 🟡 中 | RAG + 置信度阈值 |
+| **创意写作** | 🟢 低 | 可接受创造性内容 |
+
+## 幻觉监控与告警
+
+```python
+# 生产环境幻觉监控
+from langsmith import Client
+
+client = Client()
+
+# 定期抽样评估
+def monitor_hallucination(run_id):
+    run = client.read_run(run_id)
+    # 用 LLM-as-Judge 评估事实性
+    score = evaluate_factuality(run.outputs["answer"])
+    if score < 0.7:
+        alert(f"幻觉风险: {run.id}, score={score}")
+    return score
+```
+
+## 延伸阅读
+
+- [[概念/RAG/rag-systems|RAG 系统]] — 检索增强生成
+- [[概念/LLM/llmops|LLMOps]] — LLM 运维
+- [[概念/Safety/adversarial-attack|对抗攻击]] — 对抗攻击可诱发幻觉
+- [[伦理安全/Guardrails/Guardrails_2026|护栏技术 2026]] — 输出安全护栏
+
+> ℹ️ 幻觉是 LLM 的固有限制，无法完全消除，但可通过 RAG + 验证 + 护栏大幅降低。

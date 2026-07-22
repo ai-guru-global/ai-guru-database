@@ -161,3 +161,40 @@ outputs = llm.generate(
 - [[概念/Inference/prefill-decode|Prefill / Decode 阶段]]
 - [[概念/Inference/inference-autoscaling|推理扩缩容]]
 - [[部署推理/Inference_Performance/Request_Scheduling_for_LLMs|LLM 请求调度]]
+
+## 请求调度策略全景
+
+| 策略 | 说明 | 适用场景 |
+|------|------|----------|
+| **FCFS** | 先来先服务 | 简单场景 |
+| **Priority Queue** | 优先级队列 | SLA 分级 |
+| **SJF** | 短作业优先 | 降低平均延迟 |
+| **Fair Share** | 公平分享 | 多租户 |
+| **Deadline-aware** | 截止时间感知 | 实时任务 |
+| **Prefill-aware** | 区分 Prefill/Decode | PD 分离 |
+
+## 调度与批处理协同
+
+```
+请求到达 → 等待队列 → 调度器 → Continuous Batching → GPU 执行
+                         │
+                         ├── 优先级排序
+                         ├── 显存预估 (KV Cache 需求)
+                         ├── 前缀匹配 (Prefix Cache)
+                         └── 超时检查 (SLA 保障)
+
+关键参数:
+- max_num_seqs: 最大并发序列数
+- max_num_batched_tokens: 最大批处理 Token 数
+- max_wait_time: 最大等待时间
+```
+
+## 生产最佳实践
+
+1. **优先级队列**：VIP 用户/实时任务优先处理
+2. **显存预估**：调度前预估 KV Cache 需求，避免 OOM
+3. **超时保护**：设置最大等待时间，超时返回 503
+4. **前缀亲和**：相同 System Prompt 路由到同一实例
+5. **监控队列**：队列深度 > 阈值时触发扩容
+
+> ℹ️ 请求调度是推理服务的核心组件，直接影响延迟和吐吐量。

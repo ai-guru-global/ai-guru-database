@@ -116,6 +116,76 @@ curl http://localhost:30000/get_server_info | jq '.cache_hit_rate'
 5. **避免频繁变更 System Prompt**：每次变更会导致缓存失效
 6. **与 FlashInfer 协同**：SGLang 默认使用 FlashInfer 算子，Cascade Attention 进一步提升
 
+## 与其他前缀缓存方案对比
+
+| 方案 | 实现 | 粒度 | 驱逐策略 | 代表 |
+|------|------|------|----------|------|
+| **RadixAttention** | Radix Tree | Token 级 | LRU | SGLang |
+| **Automatic Prefix Caching** | Hash Block | Block 级 | LRU | vLLM |
+| **Prompt Cache** | 手动标记 | Prompt 级 | 手动 | Anthropic API |
+| **KV Cache 预加载** | 离线计算 | 全量 | 无 | Cache-Augmented Gen |
+
+## 性能影响分析
+
+| 场景 | 缓存命中率 | TTFT 降低 | 说明 |
+|------|----------|----------|------|
+| 多轮对话 | 60-80% | 50-70% | 历史消息复用 |
+| Agent 工具调用 | 70-90% | 60-80% | System+Tool 前缀复用 |
+| 批量处理 | 30-50% | 20-40% | 相同模板复用 |
+| 随机查询 | 10-20% | 5-15% | 收益有限 |
+
+## 2026 生态现状
+
+| 类别 | 进展 | 说明 |
+|------|------|------|
+| **SGLang** | RadixAttention 首发 | 最完整的实现 |
+| **vLLM** | Automatic Prefix Caching | Block 级前缀缓存 |
+| **FlashInfer** | Cascade Attention | 与 RadixAttention 协同 |
+| **Cache-Augmented Gen** | KV 预加载 | 离线预计算替代实时检索 |
+
+## RadixAttention 工作原理
+
+```
+传统 KV Cache:  每个请求独立缓存，前缀重复计算
+RadixAttention: 用 Radix Tree 共享前缀 KV Cache
+
+请求 1: [System Prompt] + [User A Query]  → 生成 A
+请求 2: [System Prompt] + [User B Query]  → 生成 B
+请求 3: [System Prompt] + [User A Query] + [Follow-up] → 生成 C
+
+Radix Tree 结构:
+  root
+  └── [System Prompt KV] ← 共享
+      ├── [User A KV] ← 请求 1,3 共享
+      └── [User B KV] ← 请求 2 独享
+
+效果: 前缀命中时跳过 prefill，延迟降低 2-5x
+```
+
+## 前缀缓存技术对比
+
+| 技术 | 粒度 | 匹配策略 | 引擎 | 加速比 |
+|------|------|---------|------|--------|
+| **RadixAttention** | Token 级 | Radix Tree 前缀匹配 | SGLang | 2-5x |
+| **APC** | Block 级 | Hash 匹配 | vLLM | 1.5-3x |
+| **Prompt Cache** | 全量 | 精确匹配 | 自实现 | 2-4x |
+| **CacheBlend** | 混合 | 部分重用 | 研究 | 1.5-2x |
+
+## 生产最佳实践
+
+1. **System Prompt 统一**：保持 System Prompt 不变，最大化前缀命中率
+2. **LRU 淮汰策略**：显存有限时用 LRU 淮汰低频前缀
+3. **监控命中率**：关注 prefix cache hit rate，低于 30% 需调整策略
+4. **与 Chunked Prefill 配合**：长前缀分块加载，避免阻塞解码请求
+5. **多轮对话优化**：将历史对话放在前缀，充分利用缓存
+
+## 延伸阅读
+
+- [[概念/LLM/kv-cache|KV Cache]] — RadixAttention 优化对象
+- [[概念/LLM/kv-cache-compression|KV Cache 压缩]] — 显存优化
+- [[概念/LLM/paged-attention|PagedAttention]] — vLLM 显存管理
+- [[概念/LLM/llm-inference-engine|推理引擎]] — 引擎全景
+
 ## 来源
 
 - LMSYS, "Fast and Expressive LLM Inference with RadixAttention and SGLang", 2024

@@ -138,3 +138,63 @@ Stacking 使用 K 折交叉验证生成元特征，数据利用更充分、过�
 3. **超参数调优**：用 Optuna 调优超参数
 4. **与深度学习对比**：表格数据集成学习常优于深度学习
 5. **模型融合**：多模型融合提升效果
+
+## 2026 集成学习生态
+
+| 方法 | 代表 | 特点 | 状态 |
+|------|------|------|------|
+| **Bagging** | Random Forest | 并行降方差 | GA |
+| **Boosting** | XGBoost/LightGBM | 串行降偏差 | GA |
+| **Stacking** | 多层融合 | 元学习器 | GA |
+| **Voting** | 硬/软投票 | 简单融合 | GA |
+| **Snapshot Ensemble** | 单训练多模型 | 高效 | GA |
+
+## 集成学习架构
+
+```
+集成学习方法:
+1. Bagging (并行):
+   数据 → Bootstrap 采样 → 多个基学习器 → 平均/投票
+
+2. Boosting (串行):
+   数据 → 学习器1 → 残差 → 学习器2 → ... → 加权求和
+
+3. Stacking (分层):
+   数据 → 多个基学习器 → 元学习器 → 最终预测
+```
+
+## XGBoost 代码示例
+
+```python
+import xgboost as xgb
+from sklearn.model_selection import cross_val_score
+
+# 创建 XGBoost 分类器
+model = xgb.XGBClassifier(
+    n_estimators=500,
+    max_depth=6,
+    learning_rate=0.1,
+    subsample=0.8,
+    colsample_bytree=0.8,
+    eval_metric='logloss'
+)
+
+# 交叉验证
+scores = cross_val_score(model, X, y, cv=5, scoring='accuracy')
+print(f"Accuracy: {scores.mean():.4f} ± {scores.std():.4f}")
+
+# 训练并预测
+model.fit(X_train, y_train)
+predictions = model.predict(X_test)
+```
+
+## 延伸阅读
+
+- [[概念/Math/supervised-learning|有监督学习]] — 有监督学习
+- [[概念/Math/feature-engineering|特征工程]] — 特征设计
+- [[概念/Math/optimization-regularization|优化与正则化]] — 优化方法
+- [[概念/Math/neural-networks|神经网络]] — 深度学习
+
+> ℹ️ 集成学习是表格数据竞赛的霸主，XGBoost/LightGBM 仍是首选。
+> 生产环境建议结合交叉验证和早停，防止过拟合。
+> 表格数据优先尝试 XGBoost/LightGBM，深度学习不一定更好。

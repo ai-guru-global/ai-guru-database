@@ -160,3 +160,51 @@ sources: []
 3. **多模态能力**：需要图像理解时用 Qwen2.5-VL
 4. **成本优化**：MoE 架构推理成本低，适合高并发场景
 5. **中文场景优先**：Qwen 中文能力业界领先，中文场景优先考虑
+6. **推理框架**：vLLM/SGLang/TensorRT-LLM 均支持 Qwen 系列
+7. **微调优化**：用 LoRA/QLoRA 微调适配特定领域
+
+## Qwen 系列演进
+
+| 版本 | 发布时间 | 关键创新 |
+|------|----------|----------|
+| Qwen 1.0 | 2023-08 | 首发 7B-72B |
+| Qwen 1.5 | 2024-02 | 多语言优化 |
+| Qwen 2 | 2024-06 | 性能大幅提升 |
+| Qwen 2.5 | 2024-09 | VL/Coder/Math 专项 |
+| Qwen 3 | 2025-04 | MoE + 混合注意力 |
+
+## 延伸阅读
+
+- [[概念/LLM/llama-series|Llama 系列]]
+- [[概念/LLM/gpt-series-evolution|GPT 系列演进]]
+- [[大模型/Chinese_LLM_Ecosystem/Qwen_Deep_Dive|Qwen 深度解析]]
+
+## Qwen3 模型矩阵 (2026)
+
+| 模型 | 参数 | 架构 | 上下文 | 特点 |
+|------|------|------|--------|------|
+| **Qwen3-235B-A22B** | 235B (22B active) | MoE | 128K | 旗舰，中文 SOTA |
+| **Qwen3-32B** | 32B | Dense | 128K | 最强 Dense |
+| **Qwen3-14B** | 14B | Dense | 128K | 性价比之王 |
+| **Qwen3-8B** | 8B | Dense | 128K | 端侧/边缘 |
+| **Qwen3-4B** | 4B | Dense | 32K | 超轻量 |
+| **Qwen3-VL** | 多规格 | MoE/Dense | 128K | 多模态 |
+| **Qwen3-Coder** | 多规格 | Dense | 128K | 代码专项 |
+
+## Qwen 生态工具链
+
+| 工具 | 说明 | 状态 |
+|------|------|------|
+| **Qwen-Agent** | 官方 Agent 框架，工具调用 + RAG | GA |
+| **Qwen-VL-Utils** | 视觉输入处理工具 | GA |
+| **ModelScope** | 阿里模型托管平台 | GA |
+| **PAI-EAS** | 阿里云模型服务 | GA |
+| **vLLM/SGLang** | 第三方推理引擎全支持 | GA |
+
+## 生产最佳实践
+
+1. **中文场景优先 Qwen**：中文能力开源最强，无需额外微调
+2. **MoE 考虑显存**：235B MoE 需要多卡，小场景用 14B/8B
+3. **量化部署**：官方提供 GPTQ/AWQ 量化版本，直接用
+4. **工具调用**：Qwen3 原生支持 Function Calling，无需额外适配
+5. **混合思考**：Qwen3 支持 thinking/non-thinking 模式切换

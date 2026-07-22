@@ -147,4 +147,54 @@ response = client.messages.create(
 - [[概念/Inference/radix-attention|RadixAttention]]
 - [[概念/Inference/paged-attention|PagedAttention]]
 - [[概念/Inference/inference-performance|推理性能]]
-- [[部署推理/Caching/Prompt_Caching_and_KV_Cache_Optimization|Prompt Caching 全景]]
+- [[部署推理/Caching/Prompt_Caching_and_KV_Cache_Optimization|Prompt Caching 全 景]]
+
+## 前缀缓存技术对比
+
+| 技术 | 粒度 | 匹配策略 | 引擎 | 加速比 |
+|------|------|---------|------|--------|
+| **RadixAttention** | Token 级 | Radix Tree | SGLang | 2-5x |
+| **APC** | Block 级 | Hash | vLLM | 1.5-3x |
+| **Prompt Cache** | 全量 | 精确匹配 | 自实现 | 2-4x |
+| **CacheBlend** | 混合 | 部分重用 | 研究 | 1.5-2x |
+| **API Prompt Cache** | 全量 | 精确 | OpenAI/Anthropic | 2-4x |
+
+## 前缀缓存工作原理
+
+```
+请求 1: [System Prompt (1K tokens)] + [User Query A]
+请求 2: [System Prompt (1K tokens)] + [User Query B]
+请求 3: [System Prompt (1K tokens)] + [User Query A] + [Follow-up]
+
+无缓存: 每个请求都重新计算 System Prompt 的 KV
+有缓存: System Prompt KV 只计算一次，后续复用
+
+Radix Tree 结构:
+  root
+  └── [System Prompt KV] ← 共享
+      ├── [Query A KV] ← 请求 1,3 共享
+      └── [Query B KV] ← 请求 2 独享
+```
+
+## 生产最佳实践
+
+1. **System Prompt 统一**：保持 System Prompt 不变，最大化命中率
+2. **监控命中率**：prefix cache hit rate 低于 30% 需调整
+3. **LRU 淮汰**：显存有限时用 LRU 淮汰低频前缀
+4. **多轮对话优化**：历史对话放前缀，充分利用缓存
+5. **API 缓存利用**：OpenAI/Anthropic 自动缓存相同前缀
+
+## 延伸阅读
+
+- [[概念/Inference/radix-attention|RadixAttention]] — SGLang 前缀缓存
+- [[概念/Inference/paged-attention|PagedAttention]] — vLLM 显存管理
+- [[概念/Inference/kv-cache|KV Cache]] — 缓存基础
+- [[概念/Inference/ttft|TTFT]] — 前缀缓存降低 TTFT
+
+> ℹ️ 前缀缓存是推理服务的重要优化，相同 System Prompt 可加速 2-5x。
+实现: SGLang RadixAttention (Token 级)、vLLM APC (Block 级)。
+生产建议: 保持 System Prompt 不变，监控 cache hit rate > 30%。
+注意: 前缀缓存与 PagedAttention 配合使用，显存管理更高效。
+限制: 前缀必须完全匹配，部分匹配无法利用缓存。
+优化: 将不变内容 (System Prompt) 放在最前面，变化内容放后面。
+工具: SGLang RadixAttention / vLLM APC / OpenAI Prompt Caching。

@@ -138,4 +138,66 @@ kubectl auth can-i list pods \
 2. **一应用一 ServiceAccount**：每个工作负载使用独立 SA，RoleBinding 精确绑定到该 SA
 3. **定期权限审计**：使用 `kubectl auth can-i --list` 或 Kyverno 策略定期扫描过度授权
 4. **避免通配符规则**：`resources: ["*"]` 和 `verbs: ["*"]` 仅用于集群管理员，业务 Namespace 严禁使用
-5. **短期授权机制**：临时排障使用带 TTL 的 RoleBinding，配合自动清理 CronJob 防止权限残留
+5. **短期授权机制**：临时排障使用带 TTL 的 RoleBinding，配合自动清理 CronJob 防 止权限残留
+
+## RoleBinding vs ClusterRoleBinding
+
+| 特性 | RoleBinding | ClusterRoleBinding |
+|------|------|------|
+| 作用域 | Namespace | Cluster |
+| 引用 Role | Role/ClusterRole | ClusterRole |
+| 适用场景 | 命名空间内权限 | 集群级权限 |
+| 创建频率 | 高 | 低 |
+
+## 常见 ClusterRole
+
+| ClusterRole | 权限 | 适用场景 |
+|------|------|------|
+| cluster-admin | 所有权限 | 集群管理员 |
+| admin | 命名空间管理 | 命名空间管理员 |
+| edit | 读写 (无 RBAC) | 开发者 |
+| view | 只读 | 观察者 |
+
+## RoleBinding 配置示例
+
+```yaml
+# 绑定 SA 到 edit 角色
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: dev-edit
+  namespace: ml-team
+subjects:
+- kind: ServiceAccount
+  name: ml-sa
+  namespace: ml-team
+roleRef:
+  kind: ClusterRole
+  name: edit
+  apiGroup: rbac.authorization.k8s.io
+---
+# 绑定用户到自定义 Role
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: pod-reader-binding
+  namespace: default
+subjects:
+- kind: User
+  name: jane@example.com
+roleRef:
+  kind: Role
+  name: pod-reader
+  apiGroup: rbac.authorization.k8s.io
+```
+
+## 权限审计命令
+
+| 命令 | 用途 |
+|------|------|
+| `kubectl get rolebindings -A` | 所有 RoleBinding |
+| `kubectl get clusterrolebindings` | 集群级绑定 |
+| `kubectl auth can-i --list --as=system:serviceaccount:ns:sa` | 检查 SA 权限 |
+| `kubectl describe rolebinding <name> -n <ns>` | 绑定详情 |
+
+> 💡 RoleBinding 是 K8s RBAC 的核心绑定机制，2026 年生产环境必须遵循最小权限 + 定期审计原则。

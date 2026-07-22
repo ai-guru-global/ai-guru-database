@@ -155,3 +155,56 @@ response = client.chat.completions.create(
 3. **代理模式**：用代理模式零侵入接入
 4. **与 LiteLLM 对比**：Helicone 专注监控，LiteLLM 专注路由
 5. **告警配置**：成本/延迟异常时告警
+
+## 2026 Helicone 生态
+
+| 特性 | 说明 | 状态 |
+|------|------|------|
+| **LLM 可观测性** | 请求日志、成本跟踪 | GA |
+| **多提供商支持** | OpenAI/Anthropic/等 | GA |
+| **缓存** | 语义缓存 | GA |
+| **速率限制** | 请求限流 | GA |
+| **提示管理** | 提示版本控制 | GA |
+
+## 代码示例
+
+```python
+import openai
+from helicone import Helicone
+
+# 方式 1: 代理模式 (零侵入)
+openai.api_base = "https://oai.helicone.ai/v1"
+openai.default_headers = {
+    "Helicone-Auth": "Bearer YOUR_API_KEY",
+    "Helicone-Cache-Enabled": "true",
+}
+
+# 方式 2: SDK 集成
+helicone = Helicone(api_key="YOUR_API_KEY")
+
+response = helicone.chat.completions.create(
+    model="gpt-4",
+    messages=[{"role": "user", "content": "Hello"}],
+    properties={"session_id": "user-123"},
+)
+
+# 查看成本
+print(f"Cost: ${response.usage.cost}")
+```
+
+## 监控指标
+
+| 指标 | 说明 |
+|------|------|
+| **请求量** | 总请求数、成功率 |
+| **成本** | Token 消耗、费用 |
+| **延迟** | P50/P95/P99 延迟 |
+| **缓存命中率** | 缓存效果 |
+
+## 延伸阅读
+
+- [[概念/MLOps/observability|Observability]] — 可观测性
+- [[概念/LLM/llmops|LLMOps]] — LLM 运维
+- [[概念/MLOps/prometheus|Prometheus]] — 指标监控
+
+> ℹ️ Helicone 是 LLM 可观测性平台，提供请求日志、成本跟踪、缓存、速率限制等功能。

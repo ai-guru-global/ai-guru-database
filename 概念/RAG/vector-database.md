@@ -153,3 +153,53 @@ IVF（Inverted File Index）将向量空间划分为聚类中心，查询时只�
 3. **量化压缩**：内存受限时启用 PQ/SQ/Binary 量化
 4. **混合检索**：向量 + 关键词融合提升召回率
 5. **监控告警**：关注 p99 延迟、内存使用率、索引构建时间
+
+## 2026 向量数据库生态现状
+
+| 产品 | 类型 | 规模 | 特色 | 状态 |
+|------|------|------|------|------|
+| Milvus | 分布式 | 十亿级 | GPU 加速、多租户 | ✅ 成熟 |
+| Qdrant | 分布式 | 亿级 | Rust 高性能、过滤 | ✅ 成熟 |
+| Weaviate | 分布式 | 亿级 | 多模态、GraphQL | ✅ 成熟 |
+| Chroma | 嵌入式 | 百万级 | 轻量、开发友好 | ✅ 主流 |
+| pgvector | 插件 | 千万级 | PostgreSQL 生态 | ✅ 主流 |
+| Pinecone | 托管 | 十亿级 | 全托管、Serverless | ✅ 商业 |
+
+## 检查清单
+
+- [ ] 数据规模与数据库容量匹配
+- [ ] 索引类型已根据查询模式选择（HNSW/IVF）
+- [ ] 副本数满足可用性要求
+- [ ] 备份和恢复策略已配置
+- [ ] 监控指标已接入（延迟/QPS/内存）
+- [ ] 访问控制和认证已启用
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| 内存 OOM | 向量未量化、数据超容量 | 启用 PQ/SQ 量化或扩容 |
+| 查询延迟突增 | 索引未构建完成 | 等待索引 build 或预热 |
+| 召回率低 | ef_search 太小 | 增大 ef_search 或调整 m |
+| 写入吞吐低 | 单节点瓶颈 | 分布式部署或批量写入 |
+
+## 延伸阅读
+
+- [[概念/RAG/hnsw|HNSW]] — 主流向量索引算法
+- [[概念/RAG/ivf|IVF]] — 倒排索引算法
+- [[概念/RAG/embedding-models|Embedding Models]] — 嵌入模型选型
+- [[概念/RAG/hybrid-search|Hybrid Search]] — 混合检索
+- [[RAG系统/Vector_Databases/Vector_Databases|向量数据库专题]]
+
+> ℹ️ 向量数据库选型核心原则：小规模用 Chroma/pgvector，中规模用 Qdrant/Weaviate，大规模用 Milvus/Pinecone，始终结合量化和混合检索优化成本与效果。
+
+## 选型决策树
+
+```
+数据量 < 1M → Chroma / pgvector
+数据量 1M-100M → Qdrant / Weaviate
+数据量 > 100M → Milvus / Pinecone
+需要多模态 → Weaviate
+需要 SQL 生态 → pgvector
+需要全托管 → Pinecone / Zilliz Cloud
+```

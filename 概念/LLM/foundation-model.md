@@ -111,9 +111,96 @@ Foundation Model（基础模型）
 | **开源追赶** | DeepSeek/Llama/Qwen 与闭源差距缩小至 <5% |
 | **端侧模型** | 1-7B 参数模型在手机/PC 本地运行 |
 
+## 微调与适配路径
+
+| 方法 | 适用场景 | 数据量 | 成本 | 效果 |
+|------|---------|:------:|:----:|------|
+| **Prompt Engineering** | 通用任务 | 0 | 极低 | 中 |
+| **RAG** | 知识密集型 | 0 (外部库) | 低 | 高 |
+| **LoRA/QLoRA** | 领域适配 | 1K-50K | 低 | 高 |
+| **Full SFT** | 深度定制 | 10K-1M | 高 | 极高 |
+| **RLHF/DPO** | 对齐优化 | 10K-100K | 高 | 极高 |
+| **Continual Pretrain** | 新语言/新领域 | 1B+ tokens | 极高 | 极高 |
+
+## 评估框架
+
+```python
+# 基础模型评估流程示例
+from eval_framework import ModelEvaluator
+
+evaluator = ModelEvaluator(
+    model="qwen3-72b",
+    benchmarks=["mmlu", "humaneval", "gsm8k", "mt-bench"],
+    custom_tasks=["domain_qa", "code_review", "summarization"],
+    safety_checks=["toxicity", "bias", "hallucination"]
+)
+
+results = evaluator.run()
+print(results.summary())  # 各维度得分 + 成本分析
+```
+
+| 评估维度 | 工具 | 说明 |
+|---------|------|------|
+| 通用能力 | MMLU / ARC / HellaSwag | 知识+推理 |
+| 代码 | HumanEval / MBPP | 代码生成质量 |
+| 数学 | GSM8K / MATH | 数学推理 |
+| 对话 | MT-Bench / AlpacaEval | 多轮对话质量 |
+| 安全 | TruthfulQA / BBQ | 幻觉+偏见 |
+| 业务 | 自定义测试集 | 实际场景效果 |
+
+## 部署模式对比
+
+| 模式 | 延迟 | 成本 | 控制力 | 适用 |
+|------|:----:|:----:|:------:|------|
+| **API 调用** | 中 | 按量 | 低 | 快速验证/小规模 |
+| **自托管 (vLLM)** | 低 | 固定 | 高 | 大规模/数据敏感 |
+| **Serverless GPU** | 中 | 按量 | 中 | 波动负载 |
+| **端侧部署** | 极低 | 一次性 | 极高 | 离线/隐私 |
+
+## 模型生命周期管理
+
+```
+预训练 → SFT → 对齐 → 评估 → 部署 → 监控 → 迭代
+  │                                          │
+  └──── 数据飞轮（用户反馈 → 数据收集 → 重新训练）────┘
+```
+
+| 阶段 | 关键指标 | 工具 |
+|------|---------|------|
+| 预训练 | Loss 曲线 / 吐量 | Megatron / DeepSpeed |
+| SFT | 任务准确率 | Axolotl / LLaMA-Factory |
+| 对齐 | 胜率 / 安全性 | TRL / OpenRLHF |
+| 评估 | Benchmark 分数 | lm-eval-harness |
+| 部署 | 延迟 / 吐量 | vLLM / TGI |
+| 监控 | 幻觉率 / 用户满意度 | LangSmith / Langfuse |
+
+## 生产最佳实践
+
+1. **场景匹配**: 根据任务复杂度选择模型规模，不要过度配置
+2. **开源 vs 闭源**: 数据敏感/合规要求高选开源，追求极致能力选闭源
+3. **多模型策略**: 简单任务用小模型，复杂任务用大模型，降低成本
+4. **评估先行**: 上线前用业务测试集验证模型能力
+5. **版本管理**: 跟踪模型版本更新，定期重新评估
+6. **成本控制**: 监控 token 消耗，设置预算告警
+7. **回滚预案**: 模型升级后保留回滚能力
+
 ## 延伸阅读
 
 - [[概念/LLM/gemini|Google Gemini]]
 - [[概念/LLM/llm-architectures|LLM 架构]]
 - [[概念/LLM/edge-llm|端侧 LLM]]
+- [[概念/LLM/llm-quantization|LLM 量化]]
+- [[概念/LLM/llmops|LLMOps]]
+- [[概念/LLM/large-language-model|大语言模型]]
 - [[架构基建/AWS_Bedrock_Deep_Dive|AWS Bedrock 深度解析]]
+- [[大模型/Fine_tuning_Techniques|微调技术]]
+- [[模型评估/Benchmark_Deep_Dive|基准测试深度解析]]
+- [[概念/LLM/llm-benchmarks|LLM Benchmarks]]
+- [[概念/LLM/llm-production-pipeline|LLM 生产管线]]
+
+## 延伸阅读
+
+- [[概念/LLM/large-language-model|大语言模型]] — LLM 基础
+- [[概念/LLM/reasoning-models|推理模型]] — 前沿方向
+- [[概念/LLM/multimodal-llm|多模态 LLM]] — 多模态扩展
+- [[概念/LLM/edge-llm|端侧 LLM]] — 轻量化部署

@@ -167,3 +167,60 @@ Weisfeiler-Lehman (WL) 图同构测试是 GNN 表达能力的理论上限：
 3. **分子/材料**：AI for Science 用 GNN
 4. **推荐系统**：图推荐用 GNN
 5. **与 Transformer 对比**：Graph Transformer 是研究方向
+
+## 2026 GNN 生态
+
+| 模型 | 类型 | 特点 | 状态 |
+|------|------|------|------|
+| **GCN** | 谱方法 | 经典图卷积 | GA |
+| **GAT** | 注意力 | 节点重要性 | GA |
+| **GraphSAGE** | 采样聚合 | 大规模图 | GA |
+| **GIN** | 同构 | 图分类 | GA |
+| **Graph Transformer** | 注意力 | 全局交互 | 研究 |
+
+## GNN 架构
+
+```
+GNN 消息传递机制:
+节点 v 的更新:
+1. 聚合 (Aggregate): 收集邻居消息
+   m_v = AGG({h_u : u ∈ N(v)})
+
+2. 更新 (Update): 更新节点表示
+   h_v' = UPDATE(h_v, m_v)
+
+3. 读取 (Readout): 图级表示
+   h_G = READOUT({h_v : v ∈ G})
+```
+
+## GNN 代码示例
+
+```python
+import torch
+import torch_geometric
+from torch_geometric.nn import GCNConv, GATConv
+
+class GNN(torch.nn.Module):
+    def __init__(self, in_channels, hidden_channels, out_channels):
+        super().__init__()
+        self.conv1 = GCNConv(in_channels, hidden_channels)
+        self.conv2 = GCNConv(hidden_channels, out_channels)
+    
+    def forward(self, x, edge_index):
+        x = self.conv1(x, edge_index).relu()
+        x = self.conv2(x, edge_index)
+        return x
+
+# 训练
+model = GNN(128, 64, 7)
+optimizer = torch.optim.Adam(model.parameters(), lr=0.01)
+```
+
+## 延伸阅读
+
+- [[概念/Math/neural-networks|神经网络]] — 网络基础
+- [[概念/Math/recommendation-systems|推荐系统]] — 图推荐
+- [[概念/Math/linear-algebra|线性代数]] — 矩阵运算
+- [[概念/Vision/computer-vision|计算机视觉]] — 3D 视觉
+
+> ℹ️ GNN 是处理图结构数据的标准方法，社交/推荐/分子是主要应用。

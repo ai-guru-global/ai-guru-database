@@ -178,3 +178,23 @@ SSM 的训练与 传统神经网络 有所不同：
 3. **推理速度**：SSM 推理速度比 Transformer 快 2-5x
 4. **生态成熟度**：SSM 生态不如 Transformer 成熟，生产前充分测试
 5. **场景匹配**：长文档/代码/时间序列场景优先考虑 SSM
+6. **显存规划**：SSM 显存恒定，适合显存受限场景
+7. **与 Transformer 对比**：同任务下对比质量和速度再决策
+
+## SSM vs Transformer 对比
+
+| 维度 | SSM (Mamba) | Transformer |
+|------|-------------|-------------|
+| **训练复杂度** | O(n) | O(n²) |
+| **推理显存** | 恒定 | 随序列增长 (KV Cache) |
+| **长序列吐量** | 优势显著 | 受 KV Cache 限制 |
+| **复杂推理** | 较弱 | 强 |
+| **生态成熟度** | 发展中 | 成熟 |
+| **代表模型** | Mamba-2, Jamba | GPT-4, Llama 3, Qwen3 |
+
+## 延伸阅读
+
+- [[概念/LLM/mamba|Mamba]]
+- [[概念/LLM/retnet|RetNet]]
+- [[概念/LLM/transformer-architecture-plain|Transformer 架构]]
+- [[深度学习/State_Space_Models_2026|状态空间模型 2026]]

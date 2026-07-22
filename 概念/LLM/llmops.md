@@ -154,6 +154,27 @@ Ragas 评估 → 发现问题 → 优化检索/Chunking → 重新评估
 4. **输入输出双向过滤**：防御 Prompt Injection + 拦截有害输出
 5. **灰度发布新 Prompt/模型**：Champion-Challenger 对比后再全量
 6. **全链路 Trace**：每个请求可追溯 Prompt 版本、检索结果、模型输出
+7. **定期评估**：每周运行评估套件，追踪质量趋势
+8. **成本优化**：监控 token 消耗，设置预算告警
+
+## LLMOps 工具链
+
+| 类别 | 工具 | 用途 |
+|------|------|------|
+| **评估** | Promptfoo, Ragas, DeepEval | 质量评估 |
+| **可观测性** | LangSmith, Langfuse, Arize | 追踪与监控 |
+| **部署** | vLLM, TGI, TensorRT-LLM | 推理服务 |
+| **编排** | LangChain, LlamaIndex | 应用框架 |
+| **护栏** | Guardrails AI, NeMo Guardrails | 安全过滤 |
+
+## LLMOps 成熟度模型
+
+| 级别 | 特征 | 关键实践 |
+|------|------|----------|
+| L1 基础 | 手动部署，无监控 | 基本日志 |
+| L2 标准化 | CI/CD，基本监控 | 自动测试 |
+| L3 优化 | 全链路追踪，自动评估 | A/B 测试 |
+| L4 卓越 | 自愈，自动优化 | 智能运维 |
 
 ## Related
 
@@ -163,3 +184,32 @@ Ragas 评估 → 发现问题 → 优化检索/Chunking → 重新评估
 - [[模型运维/Observability/LLM_Observability]] — LLM 可观测性
 - [[大模型/LLM_Deployment/LLM_Production_Deployment_Runbook|LLM 生产部署 Runbook]]
 - [[大模型/LLM_Inference/LLM_Inference_Deep_Dive|LLM 推理深度解析]]
+
+## LLMOps 工具链全景 (2026)
+
+| 环节 | 工具 | 说明 |
+|------|------|------|
+| **提示管理** | PromptLayer, LangSmith | 版本控制 + A/B 测试 |
+| **评估** | Ragas, DeepEval, MT-Bench | 自动化质量评估 |
+| **可观测** | LangFuse, Arize, W&B Weave | 链路追踪 + 成本监控 |
+| **网关** | Portkey, LiteLLM, OpenRouter | 多模型路由 + 回退 |
+| **安全** | Guardrails AI, NeMo Guardrails | 输入输出过滤 |
+| **部署** | vLLM, SGLang, TGI | 推理服务 |
+
+## LLMOps vs MLOps vs DevOps
+
+| 维度 | DevOps | MLOps | LLMOps |
+|------|--------|-------|--------|
+| **核心资产** | 代码 | 模型+数据 | 提示+模型+上下文 |
+| **版本控制** | Git | Git+DVC | Git+提示版本 |
+| **测试** | 单元/集成 | 数据/模型 | 评估集/回归 |
+| **监控** | 延迟/错误 | 数据漂移 | 质量/幻觉/成本 |
+| **迭代周期** | 天 | 周 | 小时 (提示调整) |
+
+## 生产最佳实践
+
+1. **提示版本化**：所有提示词纳入版本控制，支持回滚
+2. **评估自动化**：每次提示/模型变更自动跑评估集
+3. **成本监控**：按用户/功能/模型维度监控 Token 消耗
+4. **多模型回退**：主模型失败时自动回退到备用模型
+5. **幻觉检测**：生产环境启用幻觉检测 + 事实核查

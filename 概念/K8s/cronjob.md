@@ -150,4 +150,59 @@ kubectl describe cronjob nightly-backup
 2. **历史清理**：设置合理的 `successfulJobHistoryLimit`/`failedJobHistoryLimit`，避免 etcd 对象堆积
 3. **资源限制必配**：为 CronJob Pod 配置 requests/limits，防止定时任务耗尽节点资源
 4. **超时保护**：设置 `activeDeadlineSeconds` 和 `startingDeadlineSeconds`，避免任务无限挂起
-5. **监控告警**：对 CronJob 的 Job 失败率、执行时长设置告警，及时发现定时任务异常
+5. **监控告警**：对 CronJob 的 Job 失败率、执行时长设置告警，及时发现定时任务异 常
+
+## CronJob 并发策略
+
+| 策略 | 说明 | 适用场景 |
+|------|------|------|
+| Allow | 允许并发 | 无状态任务 |
+| Forbid | 禁止并发 | 数据一致性 |
+| Replace | 替换旧任务 | 实时性要求 |
+
+## Cron 表达式参考
+
+| 表达式 | 说明 |
+|------|------|
+| `*/5 * * * *` | 每 5 分钟 |
+| `0 * * * *` | 每小时 |
+| `0 0 * * *` | 每天午夜 |
+| `0 0 * * 0` | 每周日 |
+| `0 0 1 * *` | 每月 1 号 |
+
+## CronJob 配置示例
+
+```yaml
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: data-cleanup
+spec:
+  schedule: "0 2 * * *"           # 每天凌晨2点
+  concurrencyPolicy: Forbid       # 禁止并发
+  successfulJobsHistoryLimit: 3   # 保留3个成功记录
+  failedJobsHistoryLimit: 3       # 保留3个失败记录
+  startingDeadlineSeconds: 300    # 启动超时
+  jobTemplate:
+    spec:
+      activeDeadlineSeconds: 3600 # 执行超时
+      template:
+        spec:
+          containers:
+          - name: cleanup
+            image: busybox
+            command: ["/bin/sh", "-c", "cleanup.sh"]
+          restartPolicy: OnFailure
+```
+
+## AI 场景应用
+
+| 场景 | 调度频率 | 说明 |
+|------|------|------|
+| 数据预处理 | 每天 | ETL 管道 |
+| 模型评估 | 每周 | 定期评估 |
+| 日志清理 | 每天 | 存储管理 |
+| 备份 | 每天 | 数据保护 |
+| 报告生成 | 每周 | 业务报告 |
+
+> 💡 CronJob 是 K8s 定时任务的标准方案，AI 场景常用于数据预处理、模型评估、日志清理等周期性任务。

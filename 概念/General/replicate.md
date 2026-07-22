@@ -142,3 +142,65 @@ class Predictor(BasePredictor):
 3. **成本优化**：监控 prediction 时长，对高频调用考虑自建推理服务
 4. **输入验证**：在客户端验证输入参数，避免无效 prediction 产生费用
 5. **容错降级**：Replicate 不可用时回退到本地/备用推理服务
+
+## Replicate API 调用示例
+
+```python
+import replicate
+
+# 同步调用
+output = replicate.run(
+    "meta/llama-3-8b-instruct",
+    input={"prompt": "解释量子计算", "max_tokens": 512}
+)
+
+# 异步调用（长任务）
+prediction = replicate.predictions.create(
+    version="meta/llama-3-8b-instruct",
+    input={"prompt": "生成一张图片", "num_outputs": 4},
+    webhook="https://api.example.com/webhook/replicate",
+)
+
+# 轮询状态
+import time
+while prediction.status not in ["succeeded", "failed"]:
+    time.sleep(2)
+    prediction.reload()
+
+print(prediction.output)  # 结果 URL 列表
+```
+
+## Replicate vs Modal vs HuggingFace 对比
+
+| 维度 | Replicate | Modal | HuggingFace |
+|------|-----------|-------|-------------|
+| 定位 | 模型市场 + API | GPU 函数计算 | 开源生态 |
+| 模型来源 | 社区上传 | 自定义部署 | HF Hub |
+| 计费 | 按秒 | 按秒 | 按小时/免费 |
+| 自定义代码 | Cog 框架 | 完全自由 | Transformers |
+| 微调支持 | LoRA/DreamBooth | 自定义 | TRL/PEFT |
+| 适用场景 | 快速原型 | 生产推理 | 研究/微调 |
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| 冷启动延迟高 | 模型未预热 | 使用 keep_warm 参数保持实例 |
+| 输出不一致 | 使用 latest 标签 | 固定模型版本 hash |
+| 费用累积快 | 高频调用 | 监控用量，超阈值迁移自建 |
+| Webhook 未触发 | URL 不可达 | 确保 webhook 端点公网可访问 |
+
+## 生产检查清单
+
+1. ✅ 固定模型版本 hash，避免意外更新
+2. ✅ 长任务使用 webhook 异步回调
+3. ✅ 客户端输入验证减少无效调用
+4. ✅ 监控 prediction 时长和费用
+5. ✅ 配置备用推理服务容错降级
+6. ✅ 定期评估自建 vs Replicate 成本平衡点
+
+## 总结
+
+Replicate 是最便捷的开源模型调用平台，通过 Cog 框架和 HTTP API 让任何开发者都能快速集成开源模型。适合快速原型、低频调用和多模型探索场景，高频生产负载应考虑迁移到 Modal 或自建推理服务。
+
+> 💡 Replicate 的最佳使用姿势是“验证想法的最快路径”，而非“生产推理的最终方案”。

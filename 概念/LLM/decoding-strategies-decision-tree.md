@@ -174,3 +174,36 @@ model.generate(
 3. **投机解码加速**：高并发场景启用 Speculative Decoding
 4. **重复惩罚必配**：设置 repetition_penalty=1.05-1.2
 5. **A/B 测试**：不同解码策略进行 A/B 测试，找到最优配置
+6. **监控输出质量**：跟踪输出长度、重复率、用户满意度
+7. **回滚预案**：解码策略变更后保留回滚能力
+
+## 解码策略选择指南
+
+| 任务类型 | 推荐策略 | 参数建议 |
+|----------|----------|----------|
+| 事实问答 | 贪心/低温 | temperature=0.1-0.3 |
+| 代码生成 | 低温 + Top-p | temperature=0.2, p=0.95 |
+| 创意写作 | 高温 + Top-p | temperature=0.8-1.0, p=0.9 |
+| 翻译/摘要 | Beam Search | beam_size=4-8 |
+| 对话 | Top-p + 重复惩罚 | p=0.9, repetition_penalty=1.1 |
+| 结构化输出 | 约束解码 | JSON Schema/正则 |
+
+## 延伸阅读
+
+- [[概念/LLM/greedy-decoding|贪婪解码]]
+- [[概念/LLM/sampling-decoding|采样解码]]
+- [[概念/LLM/beam-search|Beam Search]]
+- [[概念/LLM/speculative-decoding|推测解码]]
+
+> ℹ️ 解码策略选择应基于任务类型和质量要求，没有放之四海而皆准的最优策略。
+
+## 快速决策流程
+
+```
+任务类型?
+├── 确定性输出 (翻译/摘要) → Beam Search
+├── 结构化输出 (JSON/API) → 约束解码
+├── 事实问答 → 贪心/低温 (temp=0.1-0.3)
+├── 代码生成 → 低温 + Top-p (temp=0.2, p=0.95)
+└── 创意写作/对话 → 高温 + Top-p (temp=0.8-1.0, p=0.9)
+```

@@ -138,3 +138,69 @@ Data Parallel Group
 3. **与 Megatron 结合**：超大规模训练用 Megatron-DeepSpeed
 4. **通信优化**：启用通信重叠、梯度压缩降低带宽需求
 5. **监控指标**：关注 MFU、显存峰值、通信/计算比
+
+## 2026 DeepSpeed 生态现状
+
+| 特性 | 状态 | 说明 |
+|------|------|------|
+| ZeRO-1/2/3 | ✅ | 显存优化核心 |
+| ZeRO++ | ✅ | 量化通信 |
+| DeepSpeed-Chat | ✅ | RLHF 全栈 |
+| FP8 训练 | ✅ | Hopper 加速 |
+| MoE 支持 | ✅ | 专家并行 |
+| 推理优化 | ✅ | DeepSpeed-Inference |
+
+## 检查清单
+
+- [ ] ZeRO 阶段已根据显存需求选择
+- [ ] 混合精度已配置（BF16/FP16）
+- [ ] 梯度检查点已启用
+- [ ] 通信优化已配置（重叠/压缩）
+- [ ] Checkpoint 策略已配置
+- [ ] 监控已接入（MFU/显存/通信）
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| 显存 OOM | ZeRO 阶段不够 | 升级 ZeRO-3 + offload |
+| 通信瓶颈 | 带宽不足 | 启用 ZeRO++ 量化通信 |
+| 训练慢 | 未重叠通信 | 配置通信重叠 |
+| 收敛差 | 学习率不当 | 调优 lr + warmup |
+
+## 延伸阅读
+
+- [[概念/Training/megatron-lm|Megatron-LM]] — NVIDIA 分布式框架
+- [[概念/Training/fsdp|FSDP]] — PyTorch 全分片
+- [[概念/Training/mixed-precision|Mixed Precision]] — 混合精度
+- [[概念/Training/gradient-checkpointing|Gradient Checkpointing]] — 梯度检查点
+- [[概念/GPU/model-parallelism|Model Parallelism]] — 模型并行
+
+> ℹ️ DeepSpeed 是 2026 年最主流的分布式训练框架，ZeRO 系列是显存优化核心，与 Megatron 结合可支撑万亿参数训练。
+
+## ZeRO 阶段选择指南
+
+| 阶段 | 显存节省 | 通信开销 | 适用场景 |
+|------|------|------|------|
+| ZeRO-1 | 4x | 低 | 多卡训练 |
+| ZeRO-2 | 8x | 中 | 大模型训练 |
+| ZeRO-3 | 线性 | 高 | 超大模型 |
+| ZeRO++ | 线性 | 低 | 带宽受限 |
+
+## 延伸阅读
+
+- [[概念/Training/megatron-lm|Megatron-LM]] — NVIDIA 分布式框架
+- [[概念/Training/fsdp|FSDP]] — PyTorch 全分片
+- [[概念/Training/mixed-precision|Mixed Precision]] — 混合精度
+- [[概念/Training/gradient-checkpointing|Gradient Checkpointing]] — 梯度检查点
+- [[概念/GPU/model-parallelism|Model Parallelism]] — 模型并行
+
+> ℹ️ DeepSpeed ZeRO 是 2026 年显存优化的核心技术，与 Megatron 结合可支撑万亿参数 训练。
+
+## 性能参考
+
+| 配置 | MFU | 显存节省 | 适用 |
+|------|------|------|------|
+| ZeRO-1 | 45% | 4x | 多卡 |
+| ZeRO-2 | 42% | 8x | 大模型 |
+| ZeRO-3 | 38% | 线性 | 超大模型 |

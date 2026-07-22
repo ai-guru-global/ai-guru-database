@@ -164,3 +164,73 @@ AI Stack 容错层
 3. **多副本存储**：Checkpoint 同时写本地 + 对象存储，防止单点丢失
 4. **定期清理**：保留最近 N 个 + 最优 Checkpoint，避免存储爆炸
 5. **验证完整性**：加载前校验 Checkpoint 哈希，防止损坏文件导致训练崩溃
+
+## Checkpoint 管理示例
+
+```python
+import torch
+from pathlib import Path
+
+class CheckpointManager:
+    def __init__(self, save_dir: str, max_keep: int = 5):
+        self.save_dir = Path(save_dir)
+        self.max_keep = max_keep
+        self.save_dir.mkdir(parents=True, exist_ok=True)
+    
+    def save(self, model, optimizer, step: int, metrics: dict):
+        path = self.save_dir / f"checkpoint-step{step}.pt"
+        torch.save({
+            "step": step,
+            "model_state_dict": model.state_dict(),
+            "optimizer_state_dict": optimizer.state_dict(),
+            "metrics": metrics,
+        }, path)
+        self._cleanup()
+    
+    def _cleanup(self):
+        """保留最近 N 个 + 最优"""
+        checkpoints = sorted(self.save_dir.glob("checkpoint-*.pt"))
+        if len(checkpoints) > self.max_keep:
+            for ckpt in checkpoints[:-self.max_keep]:
+                ckpt.unlink()
+    
+    def load_latest(self):
+        checkpoints = sorted(self.save_dir.glob("checkpoint-*.pt"))
+        if not checkpoints:
+            return None
+        return torch.load(checkpoints[-1], weights_only=True)
+```
+
+## Checkpoint 策略对比
+
+| 策略 | 保存频率 | 存储开销 | 恢复粒度 | 适用场景 |
+|------|----------|----------|----------|----------|
+| 每 N 步 | 固定 | 中 | 细 | 通用训练 |
+| 最优保存 | 指标提升时 | 低 | 粗 | 微调 |
+| 异步保存 | 后台线程 | 中 | 细 | 大模型训练 |
+| 分布式保存 | 每卡独立 | 高 | 细 | 多机训练 |
+| 增量保存 | 仅变化参数 | 低 | 细 | 超大模型 |
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| 存储爆炸 | 未清理旧 Checkpoint | 设置 max_keep + 定期清理 |
+| 加载失败 | 文件损坏 | 保存时计算哈希 + 加载前校验 |
+| 保存阻塞训练 | 同步 I/O | 使用异步保存线程 |
+| 多机不一致 | 分布式保存失败 | 使用 DCP 分布式 Checkpoint |
+
+## 生产检查清单
+
+1. ✅ 异步保存避免阻塞训练
+2. ✅ 设置 max_keep 自动清理旧文件
+3. ✅ 保存时计算哈希 + 加载前校验
+4. ✅ 多机训练使用分布式 Checkpoint
+5. ✅ 存储到持久化存储（S3/NFS）
+6. ✅ 记录每个 Checkpoint 的训练指标
+
+## 总结
+
+Checkpoint 是训练容错和模型管理的核心机制，2026 年大模型训练必须使用异步保存、分布式 Checkpoint 和自动清理策略，确保训练中断后可快速恢复且不浪费存储资源。
+
+> 💡 Checkpoint 的核心价值是“训练保险”——任何长时间训练都必须有完善的 Checkpoint 策略，否则一次故障可能浪费数天工作。

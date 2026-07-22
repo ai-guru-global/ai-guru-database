@@ -154,3 +154,50 @@ results = collection.search(
 - [[概念/RAG/bm25|BM25]] — 关键词检索（互补）
 - [[RAG系统/Vector_Databases/Vector_Databases|向量数据库专题]]
 - [[RAG系统/Advanced_RAG/RAG_Retrieval_Latency_Optimization|检索延迟优化]]
+
+## 2026 HNSW 生态现状
+
+| 实现/库 | 语言 | 特色 | 状态 |
+|------|------|------|------|
+| hnswlib | C++/Python | 轻量、纯内存 | ✅ 成熟 |
+| FAISS HNSW | C++/Python | GPU 加速、Meta | ✅ 成熟 |
+| Milvus HNSW | Go/C++ | 分布式、持久化 | ✅ 主流 |
+| Qdrant HNSW | Rust | 高性能、过滤 | ✅ 主流 |
+| pgvector | C | PostgreSQL 集成 | ✅ 主流 |
+| Lucene HNSW | Java | ES/Solr 集成 | ✅ 成熟 |
+
+## 参数调优指南
+
+| 参数 | 建议值 | 影响 | 调优方向 |
+|------|------|------|------|
+| M | 16-64 | 连接数/内存 | 召回率低→增大 M |
+| ef_construction | 100-500 | 构建质量 | 召回率低→增大 |
+| ef_search | 50-500 | 查询精度 | 延迟高→减小 |
+| max_elements | 预估×1.5 | 容量 | 预留扩容空间 |
+
+## 检查清单
+
+- [ ] M 和 ef_construction 已根据数据规模调优
+- [ ] ef_search 已平衡延迟与召回率
+- [ ] 内存容量已规划（向量数 × 维度 × 4B + 索引开销）
+- [ ] 量化方案已评估（PQ/SQ/Binary）
+- [ ] 索引构建时间已纳入运维窗口
+- [ ] 监控已接入（QPS/延迟/内存）
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| 召回率 < 90% | ef_search 太小 | 增大 ef_search 至 200+ |
+| 内存 OOM | M 太大或数据超量 | 减小 M 或启用量化 |
+| 构建时间过长 | ef_construction 太大 | 降低 ef_construction |
+| 延迟波动大 | 内存不足触发 swap | 增加内存或减少数据 |
+
+> ℹ️ HNSW 是 2026 年向量检索的事实标准索引，核心调优三角：M（内存）↔ ef_search（ 延迟）↔ 召回率，生产环境建议 M=32, ef_search=128 作为起点。
+
+## 内存估算公式
+
+```
+内存 ≈ 向量数 × (维度 × 4B + M × 2 × 8B)
+示例: 1M × 768维, M=32 → ~3.5 GB
+```

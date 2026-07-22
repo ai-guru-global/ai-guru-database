@@ -131,3 +131,82 @@ Kubeflow Platform
 3. **分布式训练**：用 Training Operator 管理分布式训练
 4. **与 KServe 配合**：Kubeflow + KServe 实现训练到部署
 5. **资源管理**：用 Kueue/Volcano 管理 GPU 资源
+
+## 2026 Kubeflow 生态
+
+| 组件 | 说明 | 状态 |
+|------|------|------|
+| **Kubeflow Pipelines 2.0** | 工作流编排 | GA |
+| **Training Operator** | 分布式训练 | GA |
+| **Katib** | 超参数调优 | GA |
+| **KServe** | 模型服务 | GA |
+| **Notebooks** | Jupyter 环境 | GA |
+
+## 架构：Kubeflow 组件
+
+```
+Kubeflow Dashboard
+    ├── Notebooks (Jupyter)
+    ├── Pipelines (工作流)
+    ├── Training (分布式训练)
+    ├── Katib (超参调优)
+    └── KServe (模型服务)
+```
+
+## Pipeline 示例
+
+```python
+from kfp import dsl, compiler
+
+@dsl.component(base_image="python:3.11")
+def preprocess_data(input_path: str, output_path: str):
+    import pandas as pd
+    df = pd.read_csv(input_path)
+    df.to_parquet(output_path)
+
+@dsl.component(base_image="pytorch/pytorch:2.2.0-cuda12.1-cudnn8-runtime")
+def train_model(data_path: str, model_path: str, epochs: int = 10):
+    import torch
+    # 训练逻辑
+    torch.save(model, model_path)
+
+@dsl.pipeline(name="ml-training-pipeline")
+def training_pipeline(
+    input_data: str = "s3://bucket/data.csv",
+    model_output: str = "s3://bucket/model.pt",
+):
+    preprocess_task = preprocess_data(input_path=input_data, output_path="/tmp/data.parquet")
+    train_task = train_model(
+        data_path=preprocess_task.outputs["output_path"],
+        model_path=model_output,
+    )
+
+compiler.Compiler().compile(training_pipeline, "pipeline.yaml")
+```
+
+## 延伸阅读
+
+- [[概念/MLOps/mlops|MLOps]] — MLOps 方法论
+- [[概念/MLOps/experiment-tracking|Experiment Tracking]] — 实验跟踪
+- [[概念/K8s/kubernetes|Kubernetes]] — 容器编排
+
+> ℹ️ Kubeflow 是 K8s 上的 ML 工具集，提供从实验到部署的完整 ML 工作流支持。
+
+## 生产最佳实践
+
+1. **分布式训练**：用 Training Operator 管理分布式训练
+2. **与 KServe 配合**：Kubeflow + KServe 实现训练到部署
+3. **资源管理**：用 Kueue/Volcano 管理 GPU 资源
+4. **管道版本控制**：Pipeline 定义纳入 Git
+5. **实验跟踪**：集成 MLflow 跟踪实验
+6. **超参调优**：用 Katib 进行超参搜索
+7. **多租户**：配置多租户隔离
+8. **监控告警**：监控 Pipeline 运行状态
+
+## 检查清单
+
+- [ ] Kubeflow 已部署
+- [ ] Pipeline 已定义
+- [ ] 分布式训练已配置
+- [ ] 模型服务已配置
+- [ ] 监控告警已配置

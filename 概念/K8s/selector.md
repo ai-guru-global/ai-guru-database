@@ -160,3 +160,49 @@ spec:
 3. **GPU 节点选择**：使用 NFD 自动打 GPU 型号 Label，配合 nodeSelector 精确调度
 4. **灰度发布用 Label**：通过 `version` Label + 不同 Selector 组合实现金丝雀/蓝绿发布
 5. **避免过度标签**：每个资源保持 3-5 个核心 Label，避免标签爆炸影响性能
+
+## Selector 类型对比
+
+| 类型 | 语法 | 功能 | 适用场景 |
+|------|------|------|------|
+| equality-based | `key=value` | 精确匹配 | 简单选择 |
+| set-based | `key in (v1,v2)` | 集合匹配 | 多值选择 |
+| nodeSelector | `key: value` | 节点选择 | GPU 调度 |
+| nodeAffinity | 表达式 | 复杂节点选择 | 高级调度 |
+
+## 常用 Label 规范
+
+| Label | 说明 | 示例 |
+|------|------|------|
+| `app.kubernetes.io/name` | 应用名 | `my-app` |
+| `app.kubernetes.io/version` | 版本 | `v1.2.3` |
+| `app.kubernetes.io/component` | 组件 | `frontend` |
+| `environment` | 环境 | `production` |
+| `team` | 团队 | `ml-platform` |
+
+## Selector 使用示例
+
+```yaml
+# Service Selector
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-service
+spec:
+  selector:
+    app: my-app
+    tier: frontend
+  ports:
+  - port: 80
+---
+# Deployment with nodeSelector
+apiVersion: apps/v1
+kind: Deployment
+spec:
+  template:
+    spec:
+      nodeSelector:
+        nvidia.com/gpu.product: A100
+```
+
+> 💡 Selector 是 K8s 资源关联的核心机制，Service/Deployment/Job 都依赖 Selector 匹配 Pod。

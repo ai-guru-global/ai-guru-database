@@ -176,3 +176,27 @@ DeepSeek-V3 在 MLA 架构中对 RoPE 做了特殊处理——**解耦 RoPE**：
 3. **与 KV Cache 配合**：RoPE 影响 KV Cache 复用策略，前缀缓存需位置编码兼容
 4. **模型选型关注**：选择模型时关注其 RoPE 配置对上下文长度的支持
 5. **外推测试**：部署前测试超出训练长度的外推能力
+6. **频率基数调整**：长上下文模型通常调整 RoPE 频率基数 (theta)
+7. **与 MLA 配合**：DeepSeek-V3 的 RoPE + MLA 组合是长上下文最佳实践
+
+## 延伸阅读
+
+- [[概念/LLM/long-context-llm|长上下文 LLM]]
+- [[概念/LLM/multi-head-latent-attention|MLA]]
+- [[概念/LLM/transformer-architecture-plain|Transformer 架构]]
+- [[大模型/LLM_Architectures/Long_Context_Models_2026|长上下文模型 2026]]
+
+## RoPE 配置示例
+
+```python
+# 典型 RoPE 配置
+rope_config = {
+    "theta": 10000,        # 频率基数
+    "dim": 128,            # 每个头的维度
+    "max_position": 131072,  # 最大位置 (128K)
+    "scaling": {
+        "type": "yarn",     # YaRN 扩展
+        "factor": 4.0       # 扩展因子
+    }
+}
+```

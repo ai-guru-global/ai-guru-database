@@ -147,3 +147,60 @@ kubectl drain <node-name> --ignore-daemonsets --delete-emptydir-data
 3. **滚动更新策略**：生产环境使用 `maxUnavailable: 10%` 控制更新节奏，避免大规模同时重启
 4. **Toleration 全覆盖**：为需要在 Master/特殊节点运行的 DaemonSet 添加对应 Toleration
 5. **健康检查必配**：配置 liveness/readiness Probe，确保节点级服务异常时自动重启
+
+## DaemonSet vs Deployment
+
+| 特性 | DaemonSet | Deployment |
+|------|------|------|
+| Pod 分布 | 每节点一个 | 按副本数分布 |
+| 调度 | 自动全节点 | 调度器决定 |
+| 适用场景 | 节点级服务 | 应用服务 |
+| 更新策略 | RollingUpdate | RollingUpdate/Recreate |
+| 节点选择 | nodeSelector/affinity | nodeSelector/affinity |
+
+## 典型 DaemonSet 应用
+
+| 应用 | 类型 | 说明 |
+|------|------|------|
+| kube-proxy | 网络 | 网络代理 |
+| Calico/Flannel | 网络 | CNI 插件 |
+| Node Exporter | 监控 | 节点指标 |
+| Fluentd/Filebeat | 日志 | 日志收集 |
+| GPU Device Plugin | 设备 | GPU 管理 |
+| CSI Node Plugin | 存储 | 存储挂载 |
+
+## DaemonSet 配置示例
+
+```yaml
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: node-exporter
+spec:
+  selector:
+    matchLabels:
+      app: node-exporter
+  template:
+    metadata:
+      labels:
+        app: node-exporter
+    spec:
+      tolerations:
+      - key: node-role.kubernetes.io/master
+        effect: NoSchedule
+      containers:
+      - name: exporter
+        image: prom/node-exporter:latest
+        ports:
+        - containerPort: 9100
+```
+
+## 更新策略配置
+
+| 参数 | 说明 | 推荐值 |
+|------|------|------|
+| maxUnavailable | 最大不可用 | 10% |
+| maxSurge | 最大超出 | 0 |
+| minReadySeconds | 最小就绪时间 | 10 |
+
+> 💡 DaemonSet 是节点级服务的标准部署方式，2026 年 AI 集群中 GPU Device Plugin/监控/日志收集都使用 DaemonSet。

@@ -127,3 +127,84 @@ class TransformerBlock(nn.Module):
 - [[概念/Training/deepspeed|DeepSpeed]] — 分布式训练框架
 - [[概念/LLM/llm-quantization|LLM 量化]] — 推理时显存优化
 - [[运维/SRE_Reliability/GPU_OOM_Troubleshooting_Guide|GPU OOM 排障指南]]
+
+## 2026 梯度检查点生态现状
+
+| 框架/工具 | 支持 | 特色 | 状态 |
+|------|------|------|------|
+| PyTorch native | ✅ | torch.utils.checkpoint | ✅ 成熟 |
+| DeepSpeed | ✅ | 集成支持 | ✅ 主流 |
+| FSDP | ✅ | 原生集成 | ✅ 主流 |
+| Megatron-LM | ✅ | 大规模训练 | ✅ 成熟 |
+| Unsloth | ✅ | 加速训练 | ✅ 主流 |
+
+## 检查清单
+
+- [ ] 梯度检查点已启用
+- [ ] 检查点层已选择（全部/部分）
+- [ ] 显存节省已验证
+- [ ] 训练速度影响已评估
+- [ ] 与混合精度已组合
+- [ ] 监控已接入
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| 显存仍高 | 未启用检查点 | 启用 gradient checkpointing |
+| 训练变慢 | 重计算开销 | 部分层启用 |
+| 精度损失 | 检查点不当 | 检查关键层 |
+| 兼容性问题 | 框架不支持 | 更新框架 |
+
+## 延伸阅读
+
+- [[概念/Training/deepspeed|DeepSpeed]] — 分布式训练框架
+- [[概念/Training/fsdp|FSDP]] — PyTorch 全分片
+- [[概念/Training/mixed-precision|Mixed Precision]] — 混合精度
+- [[概念/Training/megatron-lm|Megatron-LM]] — 分布式框架
+- [[概念/GPU/gpu-oom|GPU OOM]] — 显存溢出
+
+> ℹ️ 梯度检查点是 2026 年大模型训练的显存优化标配，可节省 50-70% 激活显存，代价是 20-30% 训练时间。
+
+## 显存优化技术对比
+
+| 技术 | 显存节省 | 时间开销 | 复杂度 |
+|------|------|------|------|
+| 梯度检查点 | 50-70% | +20-30% | 低 |
+| ZeRO-Offload | 60-80% | +10-20% | 中 |
+| 混合精度 | 40-50% | 无 | 低 |
+| 模型并行 | 线性 | +通信 | 高 |
+| 序列并行 | 30-50% | +10% | 中 |
+
+## 配置示例
+
+```python
+# PyTorch 原生
+from torch.utils.checkpoint import checkpoint
+
+def forward_with_checkpoint(self, x):
+    # 对 Transformer 层启用检查点
+    for layer in self.layers:
+        x = checkpoint(layer, x, use_reentrant=False)
+    return x
+
+# HuggingFace Transformers
+model.gradient_checkpointing_enable(
+    gradient_checkpointing_kwargs={"use_reentrant": False}
+)
+
+# DeepSpeed 配置
+# "activation_checkpointing": {
+#     "partition_activations": true,
+#     "contiguous_memory_optimization": true
+# }
+```
+
+## 检查点策略选择
+
+| 策略 | 说明 | 适用场景 |
+|------|------|------|
+| 全检查点 | 每层都检查点 | 显存极度受限 |
+| 选择性 | 部分层检查点 | 平衡显存/速度 |
+| 分段 | 按段检查点 | 超长序列 |
+| 自适应 | 动态调整 | 通用场景 |

@@ -130,3 +130,72 @@ aliases:
 3. **混合精度**：BF16/FP8 训练 + FP32 主权重
 4. **与 DeepSpeed 结合**：Megatron-DeepSpeed 用于超大规模训练
 5. **监控指标**：关注 MFU、通信/计算比、显存峰值
+
+## 2026 Megatron-LM 生态现状
+
+| 特性 | 状态 | 说明 |
+|------|------|------|
+| 3D 并行 (DP/TP/PP) | ✅ | 核心能力 |
+| FP8 训练 | ✅ | Hopper 加速 |
+| MoE 支持 | ✅ | 专家并行 |
+| 上下文并行 | ✅ | 长序列 |
+| NeMo 集成 | ✅ | NVIDIA 全栈 |
+| 万亿参数 | ✅ | 已验证 |
+
+## 检查清单
+
+- [ ] 并行策略已配置（DP/TP/PP）
+- [ ] 混合精度已启用（BF16/FP8）
+- [ ] 通信优化已配置（重叠/压缩）
+- [ ] Checkpoint 策略已配置
+- [ ] 监控已接入（MFU/显存/通信）
+- [ ] 数据管道已优化
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| MFU 低 | 通信瓶颈 | 调整并行策略 |
+| 显存 OOM | TP 不够 | 增大 TP 或启用 PP |
+| 气泡率高 | PP 阶段不均 | 调整 micro-batch |
+| 收敛慢 | 学习率不当 | 调优 lr + warmup |
+
+## 延伸阅读
+
+- [[概念/Training/deepspeed|DeepSpeed]] — 微软训练框架
+- [[概念/Training/fsdp|FSDP]] — PyTorch 全分片
+- [[概念/Training/dualpipe|DualPipe]] — 双向流水线
+- [[概念/GPU/model-parallelism|Model Parallelism]] — 模型并行
+- [[概念/GPU/pipeline-parallelism|Pipeline Parallelism]] — 流水线并行
+
+> ℹ️ Megatron-LM 是 2026 年超大规模训练的事实标准，3D 并行 + FP8 + MoE 支撑万亿参数训练，与 DeepSpeed 结合是最佳实践。
+
+## 并行策略选择指南
+
+| 模型规模 | DP | TP | PP | GPU 数 |
+|------|------|------|------|------|
+| 7B | 8 | 1 | 1 | 8 |
+| 70B | 4 | 4 | 2 | 32 |
+| 175B | 2 | 8 | 4 | 64 |
+| 1T+ | 1 | 8 | 16 | 128+ |
+
+## 延伸阅读
+
+- [[概念/Training/deepspeed|DeepSpeed]] — 微软训练框架
+- [[概念/Training/fsdp|FSDP]] — PyTorch 全分片
+- [[概念/Training/dualpipe|DualPipe]] — 双向流水线
+- [[概念/GPU/model-parallelism|Model Parallelism]] — 模型并行
+- [[概念/GPU/pipeline-parallelism|Pipeline Parallelism]] — 流水线并行
+
+> ℹ️ Megatron-LM 是 2026 年超大规模训练的事实标准，3D 并行 + FP8 + MoE 支撑万亿参数训练。
+
+## 检查清单
+
+- [ ] 并行策略已配置
+- [ ] 混合精度已启用
+- [ ] 通信优化已配置
+- [ ] Checkpoint 已配置
+- [ ] 监控已接入
+- [ ] 数据管道已优化
+
+> ℹ️ Megatron-LM 3D 并行是超大规模训练的事实标准。

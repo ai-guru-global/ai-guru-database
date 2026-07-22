@@ -127,3 +127,75 @@ RLHF训练后的模型表现出明显的"对齐效应"：拒绝有害请求的�
 3. **KL 约束**：保持与参考模型的 KL 散度在合理范围，避免过度偏离
 4. **人类评估**：自动指标 + 人类评估结合，确保对齐质量
 5. **迭代优化**：收集用户反馈持续迭代偏好数据
+
+## 2026 RLHF 生态现状
+
+| 阶段 | 工具 | 特色 | 状态 |
+|------|------|------|------|
+| SFT | LLaMA-Factory/TRL | 监督微调 | ✅ 主流 |
+| 奖励建模 | TRL/OpenRLHF | 偏好学习 | ✅ 主流 |
+| PPO | TRL/OpenRLHF | 经典 RL | ✅ 成熟 |
+| DPO | TRL/LLaMA-Factory | 简化对齐 | ✅ 主流 |
+| GRPO | TRL/veRL | 推理对齐 | ✅ 前沿 |
+
+## 检查清单
+
+- [ ] SFT 基线已建立
+- [ ] 偏好数据已收集并验证
+- [ ] 对齐方法已选择（PPO/DPO/GRPO）
+- [ ] KL 约束已配置
+- [ ] 评估体系已建立（自动 + 人工）
+- [ ] 迭代优化流程已建立
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| 对齐效果差 | 数据质量低 | 提升数据质量 |
+| 奖励黑客 | KL 约束太弱 | 增大 KL 系数 |
+| 生成质量下降 | 过度优化 | 早停 + 正则化 |
+| 训练不稳定 | 学习率太高 | 降低 lr + warmup |
+
+## 延伸阅读
+
+- [[概念/Training/ppo|PPO]] — 近端策略优化
+- [[概念/Training/dpo|DPO]] — 直接偏好优化
+- [[概念/Training/grpo|GRPO]] — 组相对策略优化
+- [[概念/Training/reward-modeling|Reward Modeling]] — 奖励建模
+- [[概念/Training/preference-learning|Preference Learning]] — 偏好学习
+
+> ℹ️ RLHF 是 LLM 对齐的核心流程，2026年 DPO/GRPO 替代 PPO 成主流，数据质量和迭代优化是关键。
+
+## 对齐方法选择指南
+
+| 场景 | 推荐方法 | 理由 |
+|------|------|------|
+| 资源充足 + 效果优先 | PPO | 经典 RLHF，效果最佳 |
+| 资源受限 + 简化流程 | DPO | 无需 RM，稳定 |
+| 数学/代码推理 | GRPO | 组内排序，推理增强 |
+| 数据稀缺 | KTO | 单样本偏好 |
+| 最简化 | ORPO/SimPO | 无参考模型 |
+
+## 训练流程参考
+
+```
+1. SFT 基线 → 2. 偏好数据收集 → 3. 对齐训练 → 4. 评估 → 5. 迭代
+```
+
+## 延伸阅读
+
+- [[概念/Training/ppo|PPO]] — 近端策略优化
+- [[概念/Training/dpo|DPO]] — 直接偏好优化
+- [[概念/Training/grpo|GRPO]] — 组相对策略优化
+- [[概念/Training/reward-modeling|Reward Modeling]] — 奖励建模
+- [[概念/Training/preference-learning|Preference Learning]] — 偏好学习
+
+> ℹ️ RLHF 是 LLM 对齐的核心流程，2026年 DPO/GRPO 替代 PPO 成主流。
+
+## 检查清单
+
+- [ ] SFT 基线已建立
+- [ ] 偏好数据已收集
+- [ ] 对齐方法已选择
+- [ ] 评估体系已建立
+- [ ] 迭代优化流程已建立

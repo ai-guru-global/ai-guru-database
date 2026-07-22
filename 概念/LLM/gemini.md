@@ -157,3 +157,52 @@ for chunk in model.generate_content(prompt, stream=True):
 3. **多模态输入**：充分利用原生图像/视频/音频理解能力
 4. **成本控制**：Flash 价格极低，适合高并发场景
 5. **与 GPT 对比评估**：生产前用目标场景对比 Gemini 与 GPT 效果
+
+## Gemini 模型矩阵 (2026)
+
+| 模型 | 参数规模 | 上下文 | 特点 | 定价 |
+|------|---------|--------|------|------|
+| **Gemini 3 Ultra** | MoE ~2T | 2M | 最强推理+多模态 | $$$$ |
+| **Gemini 3 Pro** | MoE | 2M | 通用旗舰 | $$$ |
+| **Gemini 3 Flash** | 小型 MoE | 1M | 极速极便宜 | $ |
+| **Gemini 3 Nano** | 端侧 | 32K | 设备端推理 | 免费 |
+
+## Gemini vs GPT vs Claude 对比
+
+| 维度 | Gemini 3 | GPT-5 | Claude 4 |
+|------|----------|-------|----------|
+| **上下文窗口** | 2M (最长) | 1M | 500K |
+| **多模态** | 原生视频/音频 | 图像/音频 | 图像 |
+| **代码能力** | 强 | 极强 | 极强 |
+| **中文能力** | 强 | 强 | 强 |
+| **价格** | Flash 极便宜 | 中 | 中高 |
+| **开源** | 无 | 无 | 无 |
+| **工具调用** | 强 | 极强 | 强 |
+
+## Gemini API 调用示例
+
+```python
+import google.generativeai as genai
+
+genai.configure(api_key="YOUR_API_KEY")
+model = genai.GenerativeModel("gemini-3-flash")
+
+# 多模态输入
+response = model.generate_content([
+    "分析这张图表的趋势",
+    {"mime_type": "image/png", "data": image_bytes}
+])
+
+# 长文档分析 (2M 上下文)
+response = model.generate_content(
+    [long_document_text, "总结这份文档的核心要点"],
+    generation_config={"max_output_tokens": 4096}
+)
+```
+
+## 延伸阅读
+
+- [[概念/LLM/gpt-series-evolution|GPT 系列演进]] — OpenAI 模型对比
+- [[概念/LLM/multimodal-llm|多模态 LLM]] — 多模态能力详解
+- [[概念/LLM/context-window|上下文窗口]] — 长上下文技术
+- [[概念/LLM/llm-architectures|LLM 架构]] — MoE 架构基础

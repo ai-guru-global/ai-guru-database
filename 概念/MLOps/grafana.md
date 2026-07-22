@@ -92,3 +92,118 @@ aliases:
 3. **仪表板即代码**：仪表板纳入版本控制
 4. **与 Prometheus 配合**：Grafana + Prometheus 是标准组合
 5. **权限控制**：配置仪表板访问权限
+
+## 2026 Grafana 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Grafana 11+** | 新 UI、性能提升 | GA |
+| **Grafana Cloud** | 托管 SaaS 平台 | GA |
+| **Loki** | 日志聚合 | GA |
+| **Tempo** | 分布式追踪 | GA |
+| **Mimir** | 长期指标存储 | GA |
+| **OnCall** | 告警管理 | GA |
+
+## 架构：可观测性栈
+
+```
+应用/服务 → Prometheus (指标) → Grafana (可视化)
+              ↓
+        Loki (日志) → Grafana
+              ↓
+        Tempo (追踪) → Grafana
+```
+
+## 配置示例：Prometheus 数据源
+
+```yaml
+apiVersion: 1
+datasources:
+  - name: Prometheus
+    type: prometheus
+    access: proxy
+    url: http://prometheus:9090
+    isDefault: true
+  - name: Loki
+    type: loki
+    access: proxy
+    url: http://loki:3100
+```
+
+## 仪表板即代码示例
+
+```json
+{
+  "dashboard": {
+    "title": "ML Service Metrics",
+    "panels": [
+      {
+        "title": "Request Rate",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "rate(http_requests_total[5m])",
+            "legendFormat": "{{method}} {{status}}"
+          }
+        ]
+      },
+      {
+        "title": "P99 Latency",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "histogram_quantile(0.99, rate(http_duration_seconds_bucket[5m]))"
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
+## 告警规则示例
+
+```yaml
+apiVersion: 1
+groups:
+  - orgId: 1
+    name: ml-alerts
+    rules:
+      - uid: high-error-rate
+        title: High Error Rate
+        condition: C
+        data:
+          - refId: A
+            queryType: ""
+            relativeTimeRange: { from: 300, to: 0 }
+            datasourceUid: prometheus
+            model:
+              expr: rate(http_requests_total{status=~"5.."}[5m]) > 0.1
+```
+
+## 延伸阅读
+
+- [[概念/MLOps/prometheus|Prometheus]] — 指标监控
+- [[概念/MLOps/observability|Observability]] — 可观测性
+- [[概念/MLOps/evidently|Evidently]] — ML 监控
+
+> ℹ️ Grafana 是开源可视化平台，支持指标、日志、追踪的统一可视化，是可观测性栈的核心组件。
+
+## 生产最佳实践
+
+1. **仪表板即代码**：仪表板纳入版本控制
+2. **与 Prometheus 配合**：Grafana + Prometheus 是标准组合
+3. **权限控制**：配置仪表板访问权限
+4. **告警配置**：配置告警规则
+5. **模板变量**：用模板变量实现动态仪表板
+6. **数据源配置**：配置多数据源
+7. **自动刷新**：配置自动刷新间隔
+8. **导出分享**：仪表板导出和分享
+
+## 检查清单
+
+- [ ] 数据源已配置
+- [ ] 仪表板已创建
+- [ ] 告警规则已配置
+- [ ] 权限控制已配置
+- [ ] 仪表板已纳入版本控制

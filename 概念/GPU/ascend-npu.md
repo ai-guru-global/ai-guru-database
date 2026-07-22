@@ -194,3 +194,11 @@ FlashMLA 已被华为昇腾平台移植：
 3. **MindSpore 框架**：昇腾优先用 MindSpore 框架
 4. **性能验证**：生产前验证昇腾性能
 5. **与 NVIDIA 对比**：对比昇腾与 NVIDIA 的性能和成本
+
+## 延伸阅读
+
+- [[概念/GPU/cann|CANN]] — 昇腾软件栈
+- [[概念/GPU/gpu|GPU]] — GPU 基础
+- [[概念/GPU/nvidia-gpu|NVIDIA GPU]] — NVIDIA GPU
+
+> ℹ️ 昇腾 NPU 是华为的 AI 处理器，提供训练和推理能力，是国产替代的重要选择。

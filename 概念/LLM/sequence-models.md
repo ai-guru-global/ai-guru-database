@@ -148,3 +148,59 @@ Bahdanau et al.（2015）提出注意力机制，允许解码器在每步"回看
 3. **流式推理用 RWKV**：实时对话/流式生成场景，RWKV 天然支持
 4. **边缘设备考虑轻量级**：资源受限时考虑 RWKV/Mamba 等高效架构
 5. **混合架构关注**：Mamba + Attention 混合架构是 2026 年趋势，值得跟进
+6. **生态检查**：确认推理引擎、量化工具链支持情况
+7. **对比测试**：同任务下对比质量和速度再决策
+
+## 2026 序列模型全景
+
+| 架构 | 代表 | 复杂度 | 显存 | 生态 | 适用 |
+|------|------|:------:|:----:|:----:|------|
+| **Transformer** | GPT-5/Llama 4 | O(L²) | O(L) | 极成熟 | 通用 |
+| **Mamba/SSM** | Jamba/Falcon | O(L) | O(1) | 发展中 | 长序列 |
+| **RWKV** | RWKV-7 | O(L) | O(1) | 小众 | 流式 |
+| **RetNet** | 研究阶段 | O(L) | O(1) | 极早期 | 研究 |
+| **混合** | Jamba/Hymba | O(L) | O(1) | 发展中 | 平衡 |
+
+## 架构选择决策树
+
+```
+需要最强通用能力？
+├── 是 → Transformer (GPT-5/Llama 4/Qwen3)
+└── 否 → 需要超长序列 (>100K)？
+    ├── 是 → 显存受限？
+    │   ├── 是 → Mamba / Jamba
+    │   └── 否 → Transformer + MLA
+    └── 否 → 需要流式处理？
+        ├── 是 → RWKV / Mamba
+        └── 否 → Transformer
+```
+
+## 性能对比 (64K 序列)
+
+| 架构 | 吐量 (tok/s) | 显存 (GB) | 质量 |
+|------|:----------:|:--------:|:----:|
+| Transformer (7B) | ~100 | ~40 | 基线 |
+| Mamba (7B) | ~400 | ~14 | ~95% |
+| RWKV (7B) | ~350 | ~14 | ~90% |
+| Jamba (52B) | ~200 | ~24 | ~98% |
+
+## 延伸阅读
+
+- [[概念/LLM/transformer-architecture|Transformer 架构]]
+- [[概念/LLM/mamba|Mamba]]
+- [[概念/LLM/retnet|RetNet]]
+- [[概念/LLM/state-space-models|状态空间模型]]
+- [[概念/LLM/attention-variants|注意力变体]]
+- [[深度学习/State_Space_Models_2026|状态空间模型 2026]]
+- [[大模型/Sequence_Models/Sequence_Models|序列模型深度解析]]
+
+## 关键论文
+
+| 论文 | 年份 | 贡献 |
+|------|:----:|------|
+| Attention Is All You Need | 2017 | Transformer 奠基 |
+| Mamba | 2023 | 选择性 SSM |
+| RWKV | 2023 | 线性 RNN |
+| RetNet | 2023 | 保留机制 |
+| Mamba-2 (SSD) | 2024 | SSM+注意力统一 |
+| Jamba | 2024 | 混合架构产品化 |

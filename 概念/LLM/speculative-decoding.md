@@ -111,6 +111,25 @@ DeepSeek-V3 的 MTP 在训练时增加辅助预测头，推理时天然作为 dr
 | 极致延迟 | EAGLE-2 + 大 Draft Tree | 3-4× 加速 |
 | 快速验证 | Medusa | 无需 draft model |
 
+## 2026 生态现状
+
+| 类别 | 代表 | 说明 |
+|------|------|------|
+| **内置 MTP** | DeepSeek-V3/R1, Qwen3 | 模型原生支持多 token 预测 |
+| **EAGLE-2** | 开源 | 接受率最高，3-4x 加速 |
+| **Medusa** | 开源 | 多头并行预测，无需 draft model |
+| **N-gram** | vLLM/SGLang | 零成本，适合重复性文本 |
+| **引擎集成** | vLLM, SGLang, TRT-LLM | 主流引擎均支持 |
+
+## 生产最佳实践
+
+1. **优先用内置 MTP**: 如果模型原生支持（DeepSeek-V3），无需额外配置
+2. **通用模型用 EAGLE-2**: 接受率高，加速效果显著
+3. **监控接受率**: 接受率 <60% 时考虑更换 draft 策略
+4. **批处理场景谨慎**: 高并发时推测解码收益可能下降
+5. **与量化结合**: INT8/FP8 量化 + 推测解码可叠加加速
+6. **测试验证**: 确认推测解码不影响输出质量（理论上无损）
+
 ## 延伸阅读
 
 - [[概念/LLM/eagle|EAGLE 推测解码]]
@@ -119,3 +138,69 @@ DeepSeek-V3 的 MTP 在训练时增加辅助预测头，推理时天然作为 dr
 - [[概念/Inference/kv-cache|KV Cache]]
 - [[部署推理/Caching/Speculative_Decoding_Advanced_2026|投机解码高级技术]]
 - [[大模型/Sequence_Models/Text_Generation_Decoding_Strategies|文本生成解码策略]]
+
+## 2026 推测解码生态
+
+| 方法 | 加速比 | 原理 | 状态 |
+|------|:------:|------|:----:|
+| **标准推测** | 2-3x | 小模型草稿 + 大模型验证 | GA |
+| **EAGLE-2** | 3-4x | 特征级推测，无需独立草稿模型 | GA |
+| **Medusa** | 2-3x | 多头并行预测 | GA |
+| **MTP** | 2-3x | 模型原生多 Token 预测 | GA |
+| **Lookahead** | 1.5-2x | Jacobi 迭代并行解码 | 实验 |
+| **Self-Speculative** | 2-3x | 模型自草稿（跳层） | 研究 |
+
+## 工作原理图
+
+```
+标准自回归：
+  [A] → [B] → [C] → [D] → [E]  (5步)
+
+推测解码：
+  草稿模型: [A] → [B,C,D,E]  (1步生成4个候选)
+  目标模型: 验证 [B✓, C✓, D✓, E✗]  (1步验证)
+  结果: 3个 Token 仅用 2步 → 加速 ~1.5x
+```
+
+## 配置示例 (vLLM)
+
+```python
+from vllm import LLM, SamplingParams
+
+# 启用推测解码
+llm = LLM(
+    model="meta-llama/Llama-4-70B",
+    speculative_model="meta-llama/Llama-4-8B",  # 草稿模型
+    num_speculative_tokens=5,                    # 每步推测 Token 数
+    speculative_draft_tensor_parallel_size=1,
+)
+
+params = SamplingParams(temperature=0, max_tokens=1024)
+outputs = llm.generate("解释量子计算", params)
+```
+
+## 适用场景决策
+
+| 场景 | 推荐 | 说明 |
+|------|:----:|------|
+| 低延迟单请求 | ✅ | 加速效果最明显 |
+| 高并发批处理 | ⚠️ | 收益可能下降 |
+| 代码生成 | ✅ | 重复模式多，接受率高 |
+| 创意写作 | ⚠️ | 接受率可能较低 |
+| 端侧推理 | ✅ | 小模型草稿成本低 |
+
+## 生产最佳实践补充
+
+1. **草稿模型选择**: 同系列小模型（如 Llama-4-8B 为 70B 草稿）
+2. **推测长度调优**: 通常 3-7 个 Token，过长接受率下降
+3. **低延迟场景优先**: 单请求场景收益最大
+4. **批处理场景谨慎**: 高并发时推测解码收益可能下降
+5. **与量化结合**: INT8/FP8 量化 + 推测解码可叠加加速
+6. **测试验证**: 确认推测解码不影响输出质量（理论上无损）
+
+## 延伸阅读
+
+- [[概念/LLM/eagle|EAGLE]] — 最强推测解码方案
+- [[概念/LLM/medusa|Medusa]] — 多头并行解码
+- [[概念/LLM/mtp|Multi-Token Prediction]] — 原生多 Token
+- [[概念/LLM/kv-cache|KV Cache]] — 解码加速基础

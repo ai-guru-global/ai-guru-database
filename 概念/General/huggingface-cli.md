@@ -189,3 +189,21 @@ AI Stack 模型获取流程
 3. **缓存管理**：定期 `scan-cache` + `delete-cache` 清理磁盘空间
 4. **CI 集成**：流水线中用 CLI 下载模型，配合缓存加速构建
 5. **Token 安全**：生产环境用环境变量传递 Token，不硬编码在脚本中
+
+## 相关概念
+
+- [[概念/openai|OpenAI]] — 另一个 AI 平台
+- [[概念/model-deployment|Model Deployment]] — 模型部署
+- [[概念/ai-stack|AI Stack]] — AI 技术栈
+
+> 💡 HuggingFace CLI 的核心价值是将模型管理变得像 Git 一样简单——下载、上传、版本管理一站式完成。
+
+## 常用命令速查
+
+| 命令 | 功能 | 示例 |
+|------|------|------|
+| `huggingface-cli login` | 登录认证 | `huggingface-cli login --token hf_xxx` |
+| `huggingface-cli download` | 下载模型 | `huggingface-cli download meta-llama/Llama-3-8B` |
+| `huggingface-cli upload` | 上传模型 | `huggingface-cli upload user/model ./local` |
+| `huggingface-cli repo create` | 创建仓库 | `huggingface-cli repo create my-model` |
+| `huggingface-cli scan-cache` | 扫描缓存 | `huggingface-cli scan-cache` |

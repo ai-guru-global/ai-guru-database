@@ -169,3 +169,42 @@ save_file(state_dict, 'model.safetensors')
 - [[概念/Inference/gguf|GGUF 格式]]
 - [[概念/Inference/quantization|量化]]
 - [[架构基建/AI_Stack_Deep_Dive|AI Stack 深度解析]]
+
+## SafeTensors vs 其他格式
+
+| 维度 | SafeTensors | PyTorch (.bin) | GGUF | ONNX |
+|------|-------------|---------------|------|------|
+| **安全性** | 无代码执行 | pickle 风险 | 安全 | 安全 |
+| **加载速度** | 极快 (mmap) | 慢 | 快 | 中 |
+| **懒加载** | 支持 | 不支持 | 支持 | 部分 |
+| **跨框架** | 是 | 仅 PyTorch | llama.cpp | 多框架 |
+| **生态** | HuggingFace | PyTorch | 边缘 | 企业 |
+| **推荐** | ✅ 首选 | ⚠️ 避免 | 边缘用 | 跨平台 |
+
+## SafeTensors 使用示例
+
+```python
+from safetensors.torch import load_file, save_file
+import torch
+
+# 保存
+tensors = {"weight": torch.randn(1024, 1024)}
+save_file(tensors, "model.safetensors")
+
+# 加载 (极快，支持 mmap)
+loaded = load_file("model.safetensors")
+
+# 懒加载 (只加载需要的层)
+from safetensors import safe_open
+with safe_open("model.safetensors", framework="pt") as f:
+    keys = f.keys()  # 查看所有键
+    weight = f.get_tensor("weight")  # 只加载指定层
+```
+
+## 生产最佳实践
+
+1. **始终用 SafeTensors**：避免 pickle 安全风险
+2. **大模型分片**：>10GB 模型用分片存储 (model-00001-of-00003.safetensors)
+3. **元数据嵌入**：在 metadata 中存储模型信息 (framework, dtype)
+4. **对象存储**：生产环境用 S3/OSS 存储，支持流式加载
+5. **版本管理**：用 Git LFS 或 DVC 管理模型文件版本

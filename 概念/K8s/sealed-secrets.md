@@ -80,9 +80,122 @@ kubectl get secret my-secret -n default
 | **kubeseal CLI** | 客户端加密 | GA |
 | **多集群支持** | 每集群独立密钥 | GA |
 
+## 工作原理
+
+```
+加密流程:
+1. 用户创建普通 Secret YAML
+2. kubeseal 用集群公钥加密 → SealedSecret
+3. SealedSecret 提交到 Git
+4. Controller 监听到 SealedSecret
+5. Controller 用私钥解密 → 创建原生 Secret
+6. Pod 挂载原生 Secret
+```
+
+## 加密范围选项
+
+| 范围 | 说明 | 适用场景 |
+|------|------|----------|
+| **Strict** | 绑定 Namespace + Name | 默认，最安全 |
+| **Namespace-wide** | 仅绑定 Namespace | 同 NS 内可重命名 |
+| **Cluster-wide** | 不绑定 | 跨 NS 复用（谨慎） |
+
+## 配置示例
+
+```yaml
+# SealedSecret 示例
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  name: model-api-key
+  namespace: ai-inference
+spec:
+  encryptedData:
+    api-key: AgBy3i4OJkK4V2b+Mz8x...加密数据...
+  template:
+    metadata:
+      name: model-api-key
+      namespace: ai-inference
+    type: Opaque
+```
+
+```bash
+# 加密命令示例
+# Strict 模式（默认）
+kubeseal --format=yaml < secret.yaml > sealed.yaml
+
+# Namespace-wide 模式
+kubeseal --scope namespace-wide --format=yaml < secret.yaml > sealed.yaml
+
+# 指定控制器命名空间
+kubeseal --controller-namespace kube-system --format=yaml < secret.yaml > sealed.yaml
+```
+
+## 密钥管理
+
+| 操作 | 命令 |
+|------|------|
+| 查看当前密钥 | `kubectl get secret -n kube-system -l sealedsecrets.bitnami.com/sealed-secrets-key` |
+| 备份私钥 | `kubectl get secret -n kube-system <key-name> -o yaml > backup.yaml` |
+| 强制轮换 | 删除旧密钥，Controller 自动生成新密钥 |
+| 重新加密 | 轮换后需重新 `kubeseal` 所有 SealedSecret |
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| 解密失败 | 公钥不匹配 | 确认使用正确集群的公钥 |
+| Namespace 错误 | Strict 模式绑定 | 加密时指定正确 NS |
+| Controller 未运行 | Pod 异常 | 检查 Controller 状态 |
+| 密钥丢失 | 未备份 | 从备份恢复或重新加密 |
+
 ## 生产最佳实践
 
 1. **密钥备份**：定期备份集群私钥，防止数据丢失
 2. **Namespace 匹配**：确保加密时指定正确的 Namespace
 3. **与 ESO 对比**：需要动态轮换用 External Secrets Operator
 4. **密钥轮换**：定期轮换加密密钥，重新加密 Secret
+5. **审计跟踪**：SealedSecret 变更通过 Git 历史可追溯
+
+## 与 GitOps 集成
+
+```yaml
+# ArgoCD Application 中使用 SealedSecret
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: ai-secrets
+spec:
+  source:
+    repoURL: https://gitlab.example.com/ai/secrets.git
+    path: sealed-secrets/
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: ai-inference
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+```
+
+## 多集群管理
+
+| 场景 | 方案 | 说明 |
+|------|------|------|
+| 每集群独立密钥 | 默认行为 | 最安全，需每集群加密 |
+| 共享密钥 | 导出/导入密钥 | 简化管理，降低安全性 |
+| 分环境密钥 | dev/staging/prod 分离 | 推荐做法 |
+
+## 相关概念
+
+- [[概念/external-secrets-operator|External Secrets Operator]] — 外部 Secret 同步
+- [[概念/secret|Secret]] — K8s Secret
+- [[概念/gitops|GitOps]] — GitOps 实践
+
+## 总结
+
+Sealed Secrets 是 GitOps 场景下最轻量的 Secret 管理方案，通过非对称加密确保 Secret 安全存储在 Git 中。适合不想引入 Vault 的中小团队。
+
+---
+
+> 💡 Sealed Secrets 是 GitOps 场景下最轻量的 Secret 管理方案，适合不想引入 Vault 的中小团队。

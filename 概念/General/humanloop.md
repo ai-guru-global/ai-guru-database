@@ -160,3 +160,69 @@ pip install humanloop
 3. **渐进发布**：新 Prompt 先小流量测试，确认效果后全量发布
 4. **团队协作**：产品/工程/标注团队在同一平台协作，减少沟通成本
 5. **成本跟踪**：监控不同 Prompt 版本的 token 消耗，优化成本效率
+
+## Humanloop 工作流示例
+
+```python
+from humanloop import Humanloop
+
+hl = Humanloop(api_key="hl_xxx")
+
+# 创建 Prompt 实验
+experiment = hl.prompts.call(
+    path="production/qa-prompt",
+    inputs={"question": "什么是 RAG？", "context": retrieved_docs},
+    environment="staging",
+)
+
+# 评估输出质量
+evaluation = hl.evaluators.call(
+    evaluator="factual-accuracy",
+    output=experiment.output,
+    target="RAG 是检索增强生成...",
+)
+print(f"准确率: {evaluation.score}")
+
+# A/B 测试不同 Prompt 版本
+hl.experiments.create(
+    prompt_path="production/qa-prompt",
+    variants=["v1-baseline", "v2-cot", "v3-few-shot"],
+    dataset="qa-eval-set",
+    metrics=["accuracy", "helpfulness", "latency"],
+)
+```
+
+## Humanloop vs LangSmith vs PromptLayer 对比
+
+| 维度 | Humanloop | LangSmith | PromptLayer |
+|------|-----------|-----------|-------------|
+| 定位 | Prompt 工程平台 | 追踪+评估 | Prompt 管理 |
+| 版本控制 | 强 | 中 | 中 |
+| 评估集成 | 原生 | 原生 | 基础 |
+| A/B 测试 | 支持 | 支持 | 有限 |
+| 团队协作 | 强 | 中 | 中 |
+| 开源 | 否 | 部分 | 否 |
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| Prompt 版本混乱 | 缺乏统一管理 | 使用 Humanloop 版本控制 |
+| 评估结果不一致 | 评估标准不统一 | 定义明确的评估 Rubric |
+| 成本失控 | 未监控 token 消耗 | 设置预算告警 + 定期审计 |
+| 团队协作低效 | 工具分散 | 统一平台 + 角色分工 |
+
+## 生产检查清单
+
+1. ✅ 所有 Prompt 纳入版本管理
+2. ✅ 每次变更跑评估回归测试
+3. ✅ A/B 测试验证效果再上线
+4. ✅ 监控 token 消耗 + 成本告警
+5. ✅ 产品/工程/标注团队同平台协作
+6. ✅ 定期清理过期 Prompt 版本
+
+## 总结
+
+Humanloop 是 Prompt 工程和 LLM 应用评估的专业平台，2026 年已成为团队协作管理 Prompt 生命周期的首选工具。其核心价值是将 Prompt 管理从“个人笔记”升级为“工程化流程”。
+
+> 💡 Prompt 工程的核心不是“写一个好 Prompt”，而是“建立可迭代、可评估、可协作的 Prompt 管理流程”。

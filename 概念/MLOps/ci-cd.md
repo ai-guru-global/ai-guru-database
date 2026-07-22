@@ -154,3 +154,57 @@ ArgoCD / Flux（监听变化）
 3. **测试覆盖**：单元测试 + 集成测试 + E2E 测试
 4. **GitOps 部署**：用 ArgoCD 实现 GitOps 部署
 5. **安全扫描**：CI/CD 中集成安全扫描
+
+## 2026 CI/CD 工具
+
+| 工具 | 说明 | 特点 |
+|------|------|------|
+| **GitHub Actions** | GitHub 原生 | 集成好 |
+| **GitLab CI** | GitLab 原生 | 功能全 |
+| **Jenkins** | 开源老牌 | 插件多 |
+| **Tekton** | K8s 原生 | 云原生 |
+| **Argo Workflows** | K8s 工作流 | ML 管道 |
+
+## ML CI/CD 管道示例
+
+```yaml
+# .github/workflows/ml-pipeline.yml
+name: ML Pipeline
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run tests
+        run: |
+          pip install -r requirements.txt
+          pytest tests/ -v
+  
+  train:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Train model
+        run: python train.py
+      - name: Log to MLflow
+        run: mlflow run . --experiment-name=ci
+  
+  deploy:
+    needs: train
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to K8s
+        run: |
+          kubectl apply -f k8s/deployment.yaml
+          kubectl rollout status deployment/ml-service
+```
+
+## 延伸阅读
+
+- [[概念/MLOps/argocd|ArgoCD]] — GitOps 部署
+- [[概念/MLOps/argo-rollouts|Argo Rollouts]] — 渐进式发布
+- [[概念/MLOps/mlops|MLOps]] — MLOps 方法论
+
+> ℹ️ CI/CD for ML 是将持续集成/交付实践应用于 ML 系统，实现模型训练、测试、部署的自动化。

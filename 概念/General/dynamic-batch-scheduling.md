@@ -122,3 +122,83 @@ Step 4: A 完成退出，F 加入 → D + E + F
 3. **请求调度**：优化请求调度策略
 4. **PagedAttention**：启用 PagedAttention
 5. **监控指标**：监控批处理效率指标
+
+## 调度策略对比
+
+| 策略 | 延迟 | 吐量 | 适用场景 |
+|------|------|------|----------|
+| **FCFS** | 低 | 中 | 简单场景 |
+| **SJF** | 最低 | 中 | 短请求优先 |
+| **优先级** | 可控 | 中 | 多租户 QoS |
+| **公平调度** | 中 | 高 | 多用户均衡 |
+| **抢占式** | 最低 | 高 | 实时场景 |
+
+## vLLM 调度配置
+
+```python
+# vLLM 调度配置
+from vllm import LLM, SamplingParams
+
+llm = LLM(
+    model="Qwen/Qwen2.5-72B-Instruct",
+    tensor_parallel_size=4,
+    max_num_seqs=256,        # 最大并发序列数
+    max_num_batched_tokens=8192,  # 最大批处理 token
+    scheduler_delay_factor=0.0,   # 调度延迟因子
+    num_scheduler_steps=1,        # 调度步数
+    enable_chunked_prefill=True,  # 分块预填充
+)
+```
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| 吐量低 | 批大小太小 | 增大 max_num_seqs |
+| 延迟高 | 批大小太大 | 减小批大小/分块预填充 |
+| 显存不足 | 并发太多 | 减小 max_num_seqs |
+| 长请求阻塞 | 无抢占机制 | 启用抢占式调度 |
+| GPU 利用率低 | 请求不足 | 动态批 + 填充 |
+
+## 版本兼容性
+
+| 工具 | 版本 | 说明 |
+|------|------|------|
+| vLLM | 0.6+ | Continuous Batching |
+| TensorRT-LLM | 0.12+ | In-flight Batching |
+| TGI | 2.x | 连续批处理 |
+
+## 生产检查清单
+
+1. 根据 SLO 设置合适的批大小
+2. 启用 PagedAttention 优化显存
+3. 配置请求优先级和抢占策略
+4. 监控批处理效率和 GPU 利用率
+5. 压力测试确认吐量和延迟
+6. 配置请求超时和重试机制
+
+## 版本兼容性
+
+| 引擎 | 版本 | 批处理策略 | 备注 |
+|------|------|------|------|
+| **vLLM** | ≥ 0.4 | Continuous + PagedAttention | 行业标准 |
+| **TensorRT-LLM** | ≥ 0.9 | In-flight Batching | NVIDIA |
+| **SGLang** | ≥ 0.2 | RadixAttention | 前缀缓存 |
+| **TGI** | ≥ 2.0 | Continuous Batching | HF 官方 |
+| **llama.cpp** | 2025+ | 动态批处理 | CPU/边缘 |
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| 尾部延迟高 | 长序列占用资源 | 设置 max_tokens + 抢占机制 |
+| 显存 OOM | KV Cache 溢出 | PagedAttention + 动态分配 |
+| 吞吐量低 | batch size 太小 | 调大 max_num_seqs |
+| 首 token 慢 | Prefill 与 Decode 争抢 | 分离 Prefill/Decode 节点 |
+
+## 总结
+
+动态批调度是 LLM 推理性能的核心优化手段，Continuous Batching 相比静态批处理可提升 2-5× 吐量。vLLM 的 PagedAttention + Continuous Batching 已成为行业标准。
+
+> 💡 动态批调度的核心价值：让 GPU 永远不等待——请求完成即插入新请求，消除静态批处理的“木桶效应”。
+

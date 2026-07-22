@@ -136,3 +136,69 @@ kubectl get pvc -l app=mysql
 2. **存储备份**：定期备份 PVC 数据
 3. **删除谨慎**：删除 StatefulSet 会删除 PVC
 4. **与 Deployment 区分**：无状态用 Deployment，有状态用 StatefulSet
+
+## StatefulSet vs Deployment
+
+| 特性 | StatefulSet | Deployment |
+|------|------|------|
+| Pod 名称 | 稳定 (pod-0, pod-1) | 随机后缀 |
+| 网络标识 | 稳定 DNS | 不稳定 |
+| 存储 | 独立 PVC | 共享或无 |
+| 部署顺序 | 有序 (0→N) | 并行 |
+| 删除顺序 | 逆序 (N→0) | 并行 |
+| 适用场景 | 有状态应用 | 无状态应用 |
+
+## 典型 StatefulSet 应用
+
+| 应用 | 类型 | 说明 |
+|------|------|------|
+| MySQL/PostgreSQL | 数据库 | 主从复制 |
+| Redis Cluster | 缓存 | 集群模式 |
+| Kafka | 消息队列 | Broker 集群 |
+| Elasticsearch | 搜索 | 数据节点 |
+| ZooKeeper | 协调 | 选举依赖 |
+| etcd | KV 存储 | Raft 共识 |
+
+## StatefulSet 配置示例
+
+```yaml
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: mysql
+spec:
+  serviceName: mysql-headless
+  replicas: 3
+  selector:
+    matchLabels:
+      app: mysql
+  template:
+    metadata:
+      labels:
+        app: mysql
+    spec:
+      containers:
+      - name: mysql
+        image: mysql:8.0
+        volumeMounts:
+        - name: data
+          mountPath: /var/lib/mysql
+  volumeClaimTemplates:
+  - metadata:
+      name: data
+    spec:
+      accessModes: ["ReadWriteOnce"]
+      resources:
+        requests:
+          storage: 100Gi
+```
+
+## 更新策略
+
+| 策略 | 说明 | 适用场景 |
+|------|------|------|
+| RollingUpdate | 滚动更新 | 默认 |
+| OnDelete | 手动删除触发 | 精细控制 |
+| Parallel | 并行更新 | 快速更新 |
+
+> 💡 StatefulSet 是有状态应用的标准部署方式，2026 年数据库/消息队列/分布式存储都使用 StatefulSet + PVC。

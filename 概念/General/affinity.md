@@ -135,3 +135,77 @@ kubectl get nodes --show-labels
 3. **避免过度约束**：亲和性规则过多会导致调度失败，保持必要约束即可
 4. **结合污点容忍**：GPU 节点设置 taint，训练 Pod 配置 toleration 专用
 5. **监控调度延迟**：跟踪 Pending Pod 数量，亲和性过严会导致资源利用率低
+
+## 亲和性配置示例
+
+```yaml
+# GPU 训练任务亲和性配置
+apiVersion: v1
+kind: Pod
+metadata:
+  name: llm-training-worker
+spec:
+  affinity:
+    nodeAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+        nodeSelectorTerms:
+          - matchExpressions:
+              - key: nvidia.com/gpu.product
+                operator: In
+                values: ["NVIDIA-A100-SXM4-80GB"]
+              - key: topology.kubernetes.io/zone
+                operator: In
+                values: ["us-east-1a"]
+    podAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+        - labelSelector:
+            matchLabels:
+              job-name: llm-training
+          topologyKey: kubernetes.io/hostname
+    podAntiAffinity:
+      preferredDuringSchedulingIgnoredDuringExecution:
+        - weight: 100
+          podAffinityTerm:
+            labelSelector:
+              matchLabels:
+                app: inference-server
+            topologyKey: kubernetes.io/hostname
+  tolerations:
+    - key: nvidia.com/gpu
+      operator: Exists
+      effect: NoSchedule
+```
+
+## 亲和性类型对比
+
+| 类型 | 作用 | 强度 | 典型场景 |
+|------|------|------|----------|
+| nodeAffinity (required) | 必须调度到指定节点 | 硬约束 | GPU 型号绑定 |
+| nodeAffinity (preferred) | 优先调度到指定节点 | 软约束 | 区域偏好 |
+| podAffinity | Pod 共置同节点/区域 | 硬/软 | 分布式训练 |
+| podAntiAffinity | Pod 分散不同节点 | 硬/软 | 推理高可用 |
+| topologySpread | 均匀分布跨拓扑域 | 软 | 多 AZ 均衡 |
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| Pod 长期 Pending | 亲和性约束无满足节点 | 放宽约束或扩容节点 |
+| 训练性能差 | Pod 跨 NUMA/跨交换机 | 配置 Topology Manager + NUMA 对齐 |
+| 推理服务集中单节点 | 缺少反亲和性 | 添加 podAntiAffinity 分散 |
+| GPU 资源碎片化 | 调度策略不合理 | 使用 Gang Scheduling 整组调度 |
+
+## 生产检查清单
+
+1. ✅ GPU 训练任务配置 nodeAffinity 绑定 GPU 型号
+2. ✅ 推理服务配置 podAntiAffinity 分散部署
+3. ✅ 分布式训练使用 Gang Scheduling（Volcano/Kueue）
+4. ✅ GPU 节点设置 taint 防止普通 Pod 占用
+5. ✅ 监控 Pending Pod 数量，及时调整约束
+6. ✅ 多 AZ 部署配置 topologySpreadConstraints
+
+## 总结
+
+亲和性调度是 Kubernetes 中 GPU 工作负载优化的核心机制，通过 nodeAffinity、podAffinity、podAntiAffinity 和 topologySpread 四种策略，实现 GPU 资源的高效利用和服务高可用。2026 年 DRA 动态资源分配正在逐步替代硬编码亲和性规则。
+
+> 💡 亲和性配置的核心原则：“硬约束保证正确性，软约束优化性能”——能用 preferred 就不用 required。

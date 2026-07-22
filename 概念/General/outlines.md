@@ -173,3 +173,48 @@ result = generator("今天的日期是：")
 3. **回退机制**：约束生成失败时回退到自由生成 + 后处理解析
 4. **测试验证**：用属性测试验证输出始终符合 Schema
 5. **与 API 配合**：封装为统一 API，对上层透明化约束细节
+
+## Outlines 使用示例
+
+```python
+import outlines
+from pydantic import BaseModel
+
+model = outlines.models.transformers("meta-llama/Llama-3-8B-Instruct")
+
+# JSON 结构化输出
+class Answer(BaseModel):
+    explanation: str
+    answer: str
+    confidence: float
+
+generator = outlines.generate.json(model, Answer)
+result = generator("什么是量子计算？")
+print(result.answer)  # 保证符合 schema
+
+# 正则约束
+ip_gen = outlines.generate.regex(model, r"\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}")
+ip = ip_gen("生成一个 IP 地址")
+
+# 选择约束
+choice_gen = outlines.generate.choice(model, ["positive", "negative", "neutral"])
+sentiment = choice_gen("这部电影太棒了！")
+```
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| 生成速度慢 | 约束检查开销 | 使用 vLLM 后端加速 |
+| 输出质量下降 | 约束过严 | 放宽约束 + 后验证 |
+| 与模型不兼容 | 分词器差异 | 确认模型支持 |
+| 复杂 schema 失败 | 嵌套过深 | 简化 schema 结构 |
+
+## 生产检查清单
+
+1. ✅ 约束设计简洁明确
+2. ✅ 输出格式自动验证
+3. ✅ 与 vLLM/TGI 集成测试
+4. ✅ 性能基准测试
+5. ✅ 错误处理和回退逻辑
+6. ✅ 定期评估约束覆盖率

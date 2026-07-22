@@ -158,3 +158,47 @@ model = get_peft_model(base_model, config)
 3. **与 LoRA 对比**：相同 rank 下 PiSSA 收敛更快
 4. **组合使用**：可与 LoRA+、DoRA 等方法叠加
 5. **适用场景**：追求更快收敛、更好效果时优先选择
+
+## 2026 PiSSA 生态现状
+
+| 框架/工具 | 支持 | 特色 | 状态 |
+|------|------|------|------|
+| PEFT (HuggingFace) | ✅ | 原生支持 | ✅ 主流 |
+| Unsloth | ✅ | 加速训练 | ✅ 主流 |
+| LLaMA-Factory | ✅ | 集成支持 | ✅ 主流 |
+| Axolotl | ✅ | 配置支持 | ✅ 成熟 |
+
+## 检查清单
+
+- [ ] SVD 初始化已正确配置
+- [ ] rank 已选择（通常 16-64）
+- [ ] 与标准 LoRA 效果已对比
+- [ ] 训练稳定性已确认
+- [ ] 显存已规划
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| 初始化慢 | SVD 计算耗时 | 预计算 SVD |
+| 效果不明显 | rank 太低 | 增大 rank |
+| 与 LoRA 无差异 | 数据简单 | 复杂任务更明显 |
+| 显存高 | rank 太大 | 减小 rank 或用 QLoRA |
+
+## 延伸阅读
+
+- [[概念/Training/qlora|QLoRA]] — 量化 LoRA
+- [[概念/Training/rslora|rsLoRA]] — 稳定 LoRA
+- [[概念/Training/fine-tuning-techniques|Fine-tuning Techniques]] — 微调技术
+- [[概念/LLM/lora|LoRA]] — 低秩适配
+- [[概念/Training/dora|DoRA]] — 方向优化
+
+> ℹ️ PiSSA 通过奇异值初始化提升 LoRA 收敛速度，2026年与 rsLoRA/DoRA 组合使用是 PEFT 最佳实践。
+
+## 性能参考
+
+| 配置 | 收敛速度 | 精度 | 显存 |
+|------|------|------|------|
+| LoRA r=16 | 基线 | 基线 | 12 GB |
+| PiSSA r=16 | 1.5x 快 | +1-2% | 12 GB |
+| PiSSA+rsLoRA | 1.5x 快 | +2-3% | 12 GB |

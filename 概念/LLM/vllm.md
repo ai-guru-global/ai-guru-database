@@ -192,3 +192,13 @@ vllm serve meta-llama/Llama-3-70B-Instruct \
 3. **Continuous Batching 必开**：GPU 利用率提升 2-3x
 4. **Prefix Caching 开启**：多轮对话/系统提示场景启用
 5. **监控吐吐量**：实时监控 tokens/s 和 GPU 利用率
+6. **量化选择**：生产用 AWQ/GPTQ INT4，质量损失 <2%
+7. **多 GPU 并行**：大模型用 Tensor Parallel 跨 GPU
+8. **版本跟踪**：vLLM 迭代快，定期升级获取性能优化
+
+## 延伸阅读
+
+- [[概念/Inference/paged-attention|PagedAttention]]
+- [[概念/Inference/continuous-batching|Continuous Batching]]
+- [[概念/LLM/exllama|ExLlamaV2]]
+- [[部署推理/Inference_Engines/vLLM_Deep_Dive|vLLM 深度解析]]

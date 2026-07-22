@@ -144,3 +144,69 @@ updated: 2026-07-21T00:00:00Z
 3. **自动特征**：用 AutoML 自动特征工程
 4. **领域知识**：结合领域知识设计特征
 5. **特征选择**：用特征选择去除冗余特征
+
+## 2026 特征工程生态
+
+| 工具/方法 | 说明 | 应用 | 状态 |
+|----------|------|------|------|
+| **Featuretools** | 自动特征生成 | 表格数据 | GA |
+| **tsfresh** | 时序特征提取 | 时序数据 | GA |
+| **Category Encoders** | 类别编码 | 类别特征 | GA |
+| **Optuna** | 特征选择优化 | 超参搜索 | GA |
+| **SHAP** | 特征重要性解释 | 模型解释 | GA |
+
+## 特征工程流程
+
+```
+特征工程流程:
+原始数据
+    │
+    ▼
+┌─────────────────┐
+│  数据清洗        │ → 缺失值/异常值处理
+└────────┬────────┘
+         │
+    ▼
+┌─────────────────┐
+│  特征构造        │ → 数值/类别/时序/文本特征
+└────────┬────────┘
+         │
+    ▼
+┌─────────────────┐
+│  特征变换        │ → 标准化/归一化/对数
+└────────┬────────┘
+         │
+    ▼
+┌─────────────────┐
+│  特征选择        │ → 过滤/包装/嵌入
+└─────────────────┘
+```
+
+## 特征工程代码示例
+
+```python
+from sklearn.preprocessing import StandardScaler, OneHotEncoder
+from sklearn.feature_selection import SelectKBest, f_classif
+import pandas as pd
+
+# 数值特征标准化
+scaler = StandardScaler()
+X_num_scaled = scaler.fit_transform(X_num)
+
+# 类别特征编码
+encoder = OneHotEncoder(sparse_output=False)
+X_cat_encoded = encoder.fit_transform(X_cat)
+
+# 特征选择
+selector = SelectKBest(f_classif, k=20)
+X_selected = selector.fit_transform(X, y)
+```
+
+## 延伸阅读
+
+- [[概念/Math/supervised-learning|有监督学习]] — 有监督学习
+- [[概念/Math/ensemble-learning|集成学习]] — 集成方法
+- [[概念/Math/anomaly-detection|异常检测]] — 异常检测
+- [[概念/Math/time-series-analysis|时序分析]] — 时序特征
+
+> ℹ️ 特征工程是机器学习成功的关键，好的特征比复杂模型更重要。

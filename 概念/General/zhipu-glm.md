@@ -122,3 +122,79 @@ tier: supporting
 3. **CodeGeeX**：代码生成用 CodeGeeX
 4. **与 DeepSeek 对比**：根据场景选择 GLM 或 DeepSeek
 5. **API 调用**：用 API 调用 GLM 模型
+
+## API 调用示例
+
+```python
+from zhipuai import ZhipuAI
+
+client = ZhipuAI(api_key="your-key")
+response = client.chat.completions.create(
+    model="glm-4",
+    messages=[{"role": "user", "content": "解释量子计算"}],
+    temperature=0.7
+)
+print(response.choices[0].message.content)
+```
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| 中文效果一般 | 模型版本旧 | 升级 GLM-4 |
+| API 调用失败 | Key/网络问题 | 检查配置和代理 |
+| 开源模型效果差 | 未用指令微调版 | 用 Chat 版本 |
+| 显存不足 | 模型太大 | 量化/小模型 |
+| 合规问题 | 数据出境 | 自托管部署 |
+
+## 版本兼容性
+
+| 模型 | 状态 | 说明 |
+|------|------|------|
+| GLM-4 | GA | 最新旗舰 |
+| ChatGLM4-9B | GA | 开源 |
+| CodeGeeX4 | GA | 代码生成 |
+| CogVLM2 | GA | 多模态 |
+
+## 生产检查清单
+
+1. 选择与场景匹配的模型版本
+2. 开源模型自托管确保数据安全
+3. 监控 API 调用成本和延迟
+4. 与 Qwen/DeepSeek 对比评测
+5. 配置内容安全过滤
+6. 建立模型版本回滚机制
+
+## 总结
+
+智谱 GLM 是国产大模型的重要代表，其开源生态和 CodeGeeX 代码能力是独特优势。对于需要国产化合规和自托管的场景，GLM 是重要选择。
+
+> 💡 智谱 GLM 的定位：国产开源大模型的重要一极，与 Qwen、DeepSeek 共同构成国产 LLM 三强格局。
+
+## GLM 模型系列对比
+
+| 模型 | 参数 | 特色 | 适用场景 |
+|------|------|------|----------|
+| GLM-4-Plus | 超大 | 旗舰能力 | 复杂任务 |
+| GLM-4-Air | 中等 | 性价比 | 日常应用 |
+| GLM-4-Flash | 轻量 | 极速 | 高频调用 |
+| GLM-4V | 多模态 | 图文理解 | 视觉任务 |
+| CodeGeeX | 代码 | 编程助手 | 代码生成 |
+
+## 生产检查清单
+
+1. ✅ 评估 GLM vs Qwen/DeepSeek 场景适配
+2. ✅ 使用智谱开放平台 API 或私有化部署
+3. ✅ 配置用量限制 + 成本监控
+4. ✅ 输入/输出安全护栏
+5. ✅ 评估开源版本 vs API 成本效益
+6. ✅ 关注国产化合规要求
+
+## 版本兼容性
+
+| 组件 | 版本 | 状态 |
+|------|------|------|
+| zhipuai SDK | ≥ 2.1 | GA |
+| GLM-4 API | v4 | GA |
+| ChatGLM 开源 | 4.x | GA |
+

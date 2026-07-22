@@ -148,3 +148,94 @@ kubectl rollout undo deploy/llm-inference-svc
 3. **资源限制**：必须设置 resources.limits 防止 GPU 内存泄漏影响邻居 Pod
 4. **回滚策略**：保留 revisionHistoryLimit: 5，确保可快速回滚
 5. **Pod 反亲和**：多副本分散到不同节点，避免单点故障
+
+## AI 推理 Deployment 配置示例
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: llm-inference
+  labels:
+    app: llm-inference
+spec:
+  replicas: 3
+  revisionHistoryLimit: 5
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+  selector:
+    matchLabels:
+      app: llm-inference
+  template:
+    metadata:
+      labels:
+        app: llm-inference
+    spec:
+      affinity:
+        podAntiAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+            - weight: 100
+              podAffinityTerm:
+                labelSelector:
+                  matchLabels:
+                    app: llm-inference
+                topologyKey: kubernetes.io/hostname
+      containers:
+        - name: vllm
+          image: vllm/vllm-openai:latest
+          resources:
+            limits:
+              nvidia.com/gpu: "1"
+              memory: 32Gi
+            requests:
+              nvidia.com/gpu: "1"
+              memory: 24Gi
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 8000
+            initialDelaySeconds: 120
+            periodSeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8000
+            initialDelaySeconds: 180
+            periodSeconds: 30
+```
+
+## 部署策略对比
+
+| 策略 | 停机时间 | 资源开销 | 回滚速度 | 适用场景 |
+|------|----------|----------|----------|----------|
+| RollingUpdate | 零 | 中 | 快 | 推理服务 |
+| Recreate | 有 | 低 | 慢 | 开发环境 |
+| Blue-Green | 零 | 高 | 极快 | 关键服务 |
+| Canary | 零 | 中 | 快 | 大版本更新 |
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| Pod 启动慢 | 模型加载耗时 | 增大 initialDelaySeconds + 预热 |
+| 滚动更新失败 | 资源不足 | 检查 maxSurge 资源预留 |
+| OOMKilled | 内存限制过低 | 调整 resources.limits.memory |
+| 回滚失败 | 历史版本不足 | 设置 revisionHistoryLimit ≥ 5 |
+
+## 生产检查清单
+
+1. ✅ readinessProbe 配置充分 initialDelaySeconds
+2. ✅ maxUnavailable: 0 保证零停机
+3. ✅ resources.limits 防止资源泄漏
+4. ✅ revisionHistoryLimit ≥ 5 支持回滚
+5. ✅ podAntiAffinity 分散多副本
+6. ✅ progressDeadlineSeconds 超时自动回滚
+
+## 总结
+
+Kubernetes Deployment 是 AI 推理服务部署的核心资源类型，2026 年的最佳实践是结合滚动更新、就绪探针、资源限制和反亲和性，实现 GPU 推理服务的零停机发布和高可用部署。
+
+> 💡 AI 推理 Deployment 的核心挑战是“模型加载慢”——所有探针和更新策略都必须围绕这个特性设计。

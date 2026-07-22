@@ -162,3 +162,64 @@ attn_weights = torch.softmax(scores, dim=-1)
 3. **KV Cache 配合**：推理时 causal mask + KV Cache 避免重复计算
 4. **窗口大小**：滑动窗口注意力需根据任务选择合适窗口大小
 5. **调试技巧**：可视化 attention map 确认 mask 正确应用
+
+## Causal Mask 实现示例
+
+```python
+import torch
+
+def create_causal_mask(seq_len: int, dtype=torch.float32) -> torch.Tensor:
+    """创建因果注意力掩码"""
+    # 下三角矩阵：当前位置只能看到之前的 token
+    mask = torch.triu(
+        torch.full((seq_len, seq_len), float('-inf'), dtype=dtype),
+        diagonal=1
+    )
+    return mask
+
+# 使用示例
+seq_len = 8
+causal_mask = create_causal_mask(seq_len)
+# attention_scores: [batch, heads, seq_len, seq_len]
+# masked_scores = attention_scores + causal_mask
+# attention_weights = softmax(masked_scores, dim=-1)
+
+# Flash Attention 内置 causal mask
+from flash_attn import flash_attn_func
+# causal=True 自动应用因果掩码
+output = flash_attn_func(q, k, v, causal=True)
+```
+
+## 掩码类型对比
+
+| 掩码类型 | 可见范围 | 应用场景 | 复杂度 |
+|----------|----------|----------|--------|
+| Causal Mask | 当前及之前 | GPT/LLM 生成 | O(n²) |
+| Bidirectional | 全部 | BERT/编码 | O(n²) |
+| Sliding Window | 窗口内 | Mistral/长文本 | O(n·w) |
+| Prefix Mask | 前缀双向+后续因果 | T5/UniLM | O(n²) |
+| Block Diagonal | 块内可见 | 文档级注意力 | O(n·b) |
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| 生成质量差 | mask 方向错误 | 确认是上三角 -inf |
+| 显存溢出 | 全量 mask 占用大 | 使用 Flash Attention |
+| 长文本性能差 | O(n²) 复杂度 | 滑动窗口/稀疏注意力 |
+| 训练推理不一致 | mask 实现差异 | 统一使用 Flash Attention |
+
+## 生产检查清单
+
+1. ✅ 确认 mask 方向正确（上三角 -inf）
+2. ✅ 使用 Flash Attention 避免显存浪费
+3. ✅ 训练和推理使用相同的 mask 实现
+4. ✅ 长文本场景评估滑动窗口注意力
+5. ✅ 可视化 attention map 验证 mask 效果
+6. ✅ 多卡并行时确认 mask 广播正确
+
+## 总结
+
+Causal Mask 是自回归语言模型的核心机制，确保每个 token 只能看到之前的内容，从而实现从左到右的生成过程。2026 年 Flash Attention 已将 causal mask 内置为原生参数，开发者无需手动实现。
+
+> 💡 Causal Mask 的本质是“时间箭头”——它赋予了序列方向性，让模型学会“预测未来”而非“回顾过去”。

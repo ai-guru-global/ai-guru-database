@@ -184,3 +184,43 @@ print(response[0].text)
 - [[概念/Inference/quantization]] — 量化
 - [[概念/Inference/continuous-batching]] — Continuous Batching
 - [[概念/Inference/sglang]] — SGLang 推理引擎
+
+## LMDeploy vs vLLM vs SGLang
+
+| 维度 | LMDeploy | vLLM | SGLang |
+|------|----------|------|--------|
+| **核心引擎** | TurboMind | PagedAttention | RadixAttention |
+| **国产模型** | 最优 (InternLM/Qwen) | 好 | 好 |
+| **量化** | W4A16/W8A8 | GPTQ/AWQ/FP8 | FP8/INT4 |
+| **多模态** | InternVL 原生 | 支持 | 支持 |
+| **社区** | 上海 AI Lab | UC Berkeley | LMSYS |
+| **适用** | 国产模型生产 | 通用服务 | 结构化生成 |
+
+## LMDeploy 部署示例
+
+```bash
+# 启动 API 服务
+lmdeploy serve api_server \
+  Qwen/Qwen3-8B \
+  --model-format hf \
+  --quant-policy 4 \
+  --server-port 8000
+
+# Python 推理
+from lmdeploy import pipeline, TurbomindEngineConfig
+
+pipe = pipeline("Qwen/Qwen3-8B",
+    backend_config=TurbomindEngineConfig(
+        quant_policy=4,  # W4A16 量化
+        cache_max_entry_count=0.9
+    ))
+response = pipe("你好，请介绍一下自己")
+```
+
+## 生产最佳实践
+
+1. **国产模型优先 LMDeploy**：InternLM/Qwen 系列优化最深
+2. **W4A16 量化**：显存受限时启用 4-bit 权重量化
+3. **多模态用 InternVL**：LMDeploy 对 InternVL 支持最好
+4. **与 vLLM 对比**：生产前用目标场景对比性能
+5. **KV Cache 调优**：调整 cache_max_entry_count 平衡显存与并发

@@ -138,3 +138,87 @@ AI Stack GPU 监控体系
 3. **定期健康检查**：每日自动运行 GPU 健康检查，及时发现硬件故障
 4. **统一大盘**：使用 Prometheus + Grafana 统一展示多厂商 GPU 指标
 5. **日志关联**：GPU 指标与推理服务日志关联，便于问题定位
+6. **容量规划**：根据 GPU 利用率趋势规划扩容计划
+7. **固件管理**：定期更新 GPU 固件，修复已知问题
+
+## 多厂商 GPU 监控统一架构
+
+```
+┌─────────────────────────────────────────┐
+│  Grafana 统一大盘                        │
+├─────────────────────────────────────────┤
+│  Prometheus / VictoriaMetrics            │
+├───────┬───────┬───────┬─────────────────┤
+│ nvidia│ ppu   │ npu   │ rocm            │
+│ -smi  │ -smi  │ -smi  │ -smi            │
+│exporter│exporter│exporter│exporter       │
+├───────┼───────┼───────┼─────────────────┤
+│NVIDIA │阿里云 │华为   │ AMD             │
+│H100   │APG    │昇腾   │ MI300X          │
+└───────┴───────┴───────┴─────────────────┘
+```
+
+## 关键监控指标对比
+
+| 指标 | nvidia-smi | ppu-smi | npu-smi | rocm-smi |
+|------|:----------:|:-------:|:-------:|:--------:|
+| GPU 利用率 | ✅ | ✅ | ✅ | ✅ |
+| 显存使用 | ✅ | ✅ | ✅ | ✅ |
+| 温度 | ✅ | ✅ | ✅ | ✅ |
+| 功耗 | ✅ | ✅ | ✅ | ✅ |
+| ECC 错误 | ✅ | ✅ | ✅ | ✅ |
+| 进程列表 | ✅ | ✅ | ✅ | ✅ |
+| NVLink/XGMI | ✅ | - | - | ✅ |
+| JSON 输出 | ✅ | ✅ | ✅ | ✅ |
+
+## 延伸阅读
+
+- [[概念/LLM/nvidia-smi|nvidia-smi]]
+- [[概念/LLM/rocm-smi|rocm-smi]]
+- [[概念/LLM/llm-infrastructure|LLM 基础设施]]
+- [[架构基建/AI_Stack_Deep_Dive|AI Stack 深度解析]]
+- [[运维/GPU_Monitoring|GPU 监控体系]]
+- [[架构基建/GPU_Cluster_Management|GPU 集群管理]]
+
+## 常见运维场景
+
+| 场景 | 命令/操作 | 说明 |
+|------|---------|------|
+| 日常巡检 | `ppu-smi` | 查看概览状态 |
+| 显存泄漏排查 | `ppu-smi --showmeminfo` | 对比进程显存占用 |
+| 过热降频 | `ppu-smi --showtemp` | 检查温度是否超阈 |
+| 任务挂起 | `ppu-smi --showpids` | 查看占用进程 |
+| 性能下降 | `ppu-smi --showuse` | 检查利用率是否异常 |
+| 硬件故障 | `ppu-smi --showecc` | 检查 ECC 错误计数 |
+
+## 告警规则示例
+
+```yaml
+# Prometheus 告警规则
+groups:
+  - name: gpu-alerts
+    rules:
+      - alert: GPU_Temperature_High
+        expr: gpu_temperature_celsius > 85
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "GPU 温度过高: {{ $value }}°C"
+
+      - alert: GPU_Memory_Near_Full
+        expr: gpu_memory_used_bytes / gpu_memory_total_bytes > 0.95
+        for: 2m
+        labels:
+          severity: critical
+        annotations:
+          summary: "GPU 显存即将耗尽"
+
+      - alert: GPU_Underutilized
+        expr: gpu_utilization < 10
+        for: 10m
+        labels:
+          severity: info
+        annotations:
+          summary: "GPU 利用率过低，可能任务挂起"
+```

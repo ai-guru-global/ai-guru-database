@@ -126,9 +126,77 @@ aioController 是运行在 K8s 集群中的 **Controller**，负责：
 | K8s 操作 | kubectl | 资源管理 |
 | 容器调试 | crictl/nerdctl | 底层排查 |
 
+## 6. stackops 常用命令
+
+| 命令 | 作用 |
+|------|------|
+| `stackops deploy` | 一键部署 AI Stack |
+| `stackops upgrade` | 版本升级 |
+| `stackops check` | 健康检查 |
+| `stackops diagnose` | 故障诊断 |
+| `stackops logs` | 日志收集 |
+| `stackops config` | 配置管理 |
+| `stackops status` | 查看服务状态 |
+
+## 7. 故障排查流程
+
+```
+AI Stack 故障排查流程:
+
+1. stackops check        → 快速健康检查
+2. stackops diagnose     → 自动诊断常见问题
+3. stackops logs         → 收集日志
+4. kubectl get pods -A   → 查看 Pod 状态
+5. nvidia-smi            → 检查 GPU 状态
+6. crictl ps             → 检查容器状态
+7. 联系技术支持         → 提供日志包
+```
+
+## 8. 与通用工具協作
+
+| 场景 | 首选工具 | 补充工具 |
+|------|----------|----------|
+| 部署/升级 | stackops | - |
+| 健康检查 | stackops check | nvidia-smi |
+| Pod 排查 | kubectl | crictl |
+| 容器调试 | crictl/nerdctl | ctr |
+| GPU 问题 | nvidia-smi | stackops diagnose |
+| 模型服务 | stackops | kubectl logs |
+| 网络问题 | kubectl | 洛神控制台 |
+
+## 常见问题
+
+| 问题 | 可能原因 | 解决方案 |
+|------|----------|----------|
+| 部署失败 | 环境不满足 | `stackops check` 检查前置条件 |
+| GPU 不可用 | 驱动未安装 | 检查 nvidia-smi 输出 |
+| 推理服务异常 | 模型加载失败 | 检查模型路径和显存 |
+| 升级失败 | 版本不兼容 | 查看升级日志，联系支持 |
+
 ## 生产最佳实践
 
 1. **日常用 stackops**：AI Stack 用户优先使用 stackops
 2. **深度排查用 kubectl**：需要深入 K8s 资源时用 kubectl
 3. **日志收集**：故障时先用 stackops 收集日志
 4. **版本升级**：使用 stackops 进行 AI Stack 版本升级
+5. **定期检查**：每周执行 `stackops check` 确保系统健康
+
+## 9. 版本兼容性
+
+| AI Stack 版本 | K8s 版本 | GPU 驱动 | CUDA |
+|--------------|----------|----------|------|
+| 2.x | 1.26+ | 535+ | 12.x |
+| 3.x | 1.28+ | 545+ | 12.x |
+| 4.x | 1.30+ | 550+ | 12.x |
+
+## 10. 环境检查清单
+
+| 检查项 | 命令 | 期望结果 |
+|--------|------|----------|
+| GPU 驱动 | `nvidia-smi` | 显示 GPU 信息 |
+| K8s 状态 | `kubectl get nodes` | 所有节点 Ready |
+| 存储 | `df -h` | 磁盘空间充足 |
+| 网络 | `ping <gateway>` | 网络连通 |
+| 容器运行时 | `crictl info` | 运行时正常 |
+
+> 💡 stackops 是 AI Stack 一体机的「运维管家」，封装了 K8s/GPU/模型的复杂操作，提供开箱即用的运维体验。

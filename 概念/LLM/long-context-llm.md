@@ -192,3 +192,13 @@ KV Cache = 2 × layers × hidden_dim × batch_size × seq_len × bytes
 3. **分块处理**：超长文档考虑分块处理，避免单次请求过长
 4. **成本意识**：长上下文 Token 消耗大，必须监控成本
 5. **位置编码选择**：长上下文模型优先选择 RoPE + YaRN
+6. **前缀缓存**：多轮对话启用 Prefix Caching 降低重复计算
+7. **批处理优化**：长上下文请求占用显存大，合理设置并发数
+8. **质量验证**：长上下文中间位置信息关注度低，重要信息放开头/结尾
+
+## 延伸阅读
+
+- [[概念/LLM/long-context-vs-rag|长上下文 vs RAG]]
+- [[概念/LLM/kv-cache-compression|KV Cache 压缩]]
+- [[概念/LLM/rope|RoPE 位置编码]]
+- [[大模型/LLM_Architectures/Long_Context_Models_2026|长上下文模型 2026]]

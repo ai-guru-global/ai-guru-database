@@ -191,3 +191,21 @@ model = get_peft_model(base_model, config_rslora)
 3. **无负面影响**：低 rank 时与标准 LoRA 效果相当
 4. **可组合**：与 PiSSA、DoRA 等方法叠加使用
 5. **适用场景**：追求高 rank 稳定训练时优先选择
+
+## 2026 rsLoRA 生态现状
+
+| 框架/库 | 支持 | 说明 | 状态 |
+|------|------|------|------|
+| PEFT (HuggingFace) | ✅ | use_rslora 参数 | ✅ 主流 |
+| Unsloth | ✅ | 加速训练 | ✅ 主流 |
+| LLaMA-Factory | ✅ | 集成支持 | ✅ 主流 |
+| Axolotl | ✅ | 配置支持 | ✅ 成熟 |
+
+## 延伸阅读
+
+- [[概念/Training/qlora|QLoRA]] — 量化 LoRA
+- [[概念/Training/pissa|PiSSA]] — 奇异值初始化
+- [[概念/Training/fine-tuning-techniques|Fine-tuning Techniques]] — 微调技术总览
+- [[概念/LLM/lora|LoRA]] — 低秩适配
+
+> ℹ️ rsLoRA 是 LoRA 的稳定性改进，高 rank 场景必选，与 PiSSA/DoRA 可叠加使用，2026年已成为 PEFT 标配。

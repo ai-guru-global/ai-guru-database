@@ -166,3 +166,42 @@ result = pipe.run({
 
 - [[概念/rag-patterns|RAG 模式分类]] — RAG 架构选型
 - [[概念/rag-production-architecture|RAG 生产架构]] — 从原型到企业级服务的工程体系
+
+## 2026 Haystack 生态现状
+
+| 特性 | 状态 | 说明 |
+|------|------|------|
+| Pipeline 2.0 | ✅ | 组件化架构 |
+| 多模型支持 | ✅ | OpenAI/本地/多厂商 |
+| 向量数据库集成 | ✅ | 20+ 数据库 |
+| 评估工具 | ✅ | 内置评估管道 |
+| 生产部署 | ✅ | REST API 导出 |
+| Agent 能力 | 🟡 | 实验性支持 |
+
+## 检查清单
+
+- [ ] Pipeline 组件已正确连接
+- [ ] Retriever 参数已调优（top_k/filters）
+- [ ] Embedding 模型已固定版本
+- [ ] 评估管道已配置
+- [ ] API 端点已配置认证
+- [ ] 监控和日志已启用
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| 检索效果差 | Retriever 参数不当 | 调优 top_k 和 filters |
+| Pipeline 报错 | 组件接口不匹配 | 检查输入输出类型 |
+| 性能低 | 串行执行 | 使用并行分支 |
+| 部署失败 | 依赖缺失 | 检查环境和依赖 |
+
+## 延伸阅读
+
+- [[概念/RAG/rag-patterns|RAG Patterns]] — RAG 模式分类
+- [[概念/RAG/rag-production-architecture|RAG 生产架构]] — 生产架构
+- [[概念/RAG/vector-database|Vector Database]] — 向量数据库
+- [[概念/RAG/embedding-models|Embedding Models]] — 嵌入模型
+- [[概念/RAG/reranker|Reranker]] — 重排序
+
+> ℹ️ Haystack 是 deepset 开源的端到端 RAG 框架，2026年以 Pipeline 2.0 组件化架构和强评估能力著称，适合需要严格评估的生产场景。

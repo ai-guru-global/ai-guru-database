@@ -163,3 +163,50 @@ LLaMA 系列均采用以下设计：
 3. **长上下文**：Llama 4 支持 10M Token，适合超长文档
 4. **微调优化**：用 LoRA/QLoRA 微调适配特定领域
 5. **开源优势**：完全开源，可本地部署，数据隐私有保障
+6. **推理框架**：vLLM/SGLang/TensorRT-LLM 均支持 Llama 系列
+7. **多语言支持**：Llama 3+ 支持 8+ 语言，中文能力显著提升
+
+## Llama 系列演进
+
+| 版本 | 发布时间 | 关键创新 |
+|------|----------|----------|
+| Llama 1 | 2023-02 | 开源 7B-65B，引发开源浪潮 |
+| Llama 2 | 2023-07 | 商用许可，RLHF 对齐 |
+| Llama 3 | 2024-04 | 8B/70B，性能大幅提升 |
+| Llama 3.1 | 2024-07 | 405B，长上下文 128K |
+| Llama 3.3 | 2024-12 | 70B 接近 405B 性能 |
+| Llama 4 | 2025-04 | MoE 架构，10M 上下文 |
+
+## 延伸阅读
+
+- [[概念/LLM/qwen-series|Qwen 系列]]
+- [[概念/LLM/gpt-series-evolution|GPT 系列演进]]
+- [[大模型/Open_Source_LLM/Llama_Family_Complete_Guide|Llama 家族完整指南]]
+
+## 模型选择指南
+
+| 场景 | 推荐模型 | 理由 |
+|------|----------|------|
+| 简单对话 | Llama 3.3 8B | 速度快，成本低 |
+| 通用任务 | Llama 3.3 70B | 性能接近 405B |
+| 超长文档 | Llama 4 Scout | 10M 上下文 |
+| 代码生成 | Code Llama 70B | 代码专用优化 |
+| 内容审核 | Llama Guard 3 | 安全护栏专用 |
+
+## Llama 系列演进时间线
+
+| 模型 | 发布 | 参数 | 上下文 | 关键突破 |
+|------|------|------|--------|----------|
+| **LLaMA 1** | 2023-02 | 7-65B | 4K | 开源标杆 |
+| **LLaMA 2** | 2023-07 | 7-70B | 4K | 商用免费 + RLHF |
+| **Llama 3** | 2024-04 | 8-70B | 8K | 质量飞跃 |
+| **Llama 3.1** | 2024-07 | 8-405B | 128K | 405B 开源旗舰 |
+| **Llama 3.3** | 2024-12 | 8-70B | 128K | 70B 接近 405B |
+| **Llama 4** | 2025-04 | Scout/Maverick | 10M | MoE + 超长上下文 |
+
+## 延伸阅读
+
+- [[概念/LLM/qwen-series|Qwen 系列]] — 中文最强开源
+- [[概念/LLM/gpt-series-evolution|GPT 系列]] — 闭源标杆
+- [[概念/LLM/llm-architectures|LLM 架构]] — MoE 架构详解
+- [[概念/LLM/llama-cpp|llama.cpp]] — Llama 本地推理

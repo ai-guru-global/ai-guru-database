@@ -190,3 +190,12 @@ Perception（编码器）
 3. **表示质量**：评估 JEPA 表示的下游任务迁移效果
 4. **与 ViT 对比**：根据任务选择 JEPA 或 ViT 预训练
 5. **研究跟踪**：JEPA 仍在快速发展，关注 Meta FAIR 最新进展
+
+## 延伸阅读
+
+- [[概念/Vision/world-models|世界模型]] — 世界模型总览
+- [[概念/Vision/computer-vision|计算机视觉]] — CV 基础
+- [[概念/LLM/large-language-model|LLM]] — 语言模型
+- [[概念/Vision/video-generation|视频生成]] — 视频理解
+
+> ℹ️ JEPA 是 Yann LeCun 提出的 AGI 路径，强调预测而非生成。

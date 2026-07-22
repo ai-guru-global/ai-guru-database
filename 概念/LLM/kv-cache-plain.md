@@ -118,6 +118,26 @@ KV Cache 就放在 **每个车间的 Attention 工位旁边**，是一本不断�
 
 > 这就是为什么需要 [[概念/LLM/kv-cache-compression|KV Cache 压缩]] 和 [[概念/Inference/paged-attention|PagedAttention]]。
 
+## KV Cache 优化技术
+
+| 技术 | 原理 | 压缩比 | 代表 |
+|------|------|--------|------|
+| **GQA** | 多 Query 共享 KV 头 | 4-8x | Llama 3, Qwen3 |
+| **MLA** | 低秩压缩 KV | 10x+ | DeepSeek-V3 |
+| **PagedAttention** | 分页管理，消除碎片 | 2-4x 显存利用率 | vLLM |
+| **FP8 KV Cache** | 低精度存储 | 2x | TRT-LLM |
+| **Sliding Window** | 只保留最近 N 个 token | 固定大小 | Mistral |
+| **RadixAttention** | 前缀树复用 KV | 变化大 | SGLang |
+
+## 生产最佳实践
+
+1. **监控 KV Cache 占用**: 跟踪每个请求的 KV Cache 显存使用
+2. **启用 PagedAttention**: 使用 vLLM/SGLang 自动启用，消除显存碎片
+3. **选择 GQA/MLA 模型**: 新模型优先选择支持 KV 压缩的架构
+4. **前缀缓存**: 多轮对话/共享 system prompt 场景启用 prefix caching
+5. **批处理优化**: 合理设置 max_num_seqs，平衡吐量和显存
+6. **量化 KV Cache**: 显存紧张时启用 FP8 KV Cache
+
 ## 延伸阅读
 
 - [[概念/Inference/kv-cache|KV Cache 技术深潜]]
@@ -125,3 +145,57 @@ KV Cache 就放在 **每个车间的 Attention 工位旁边**，是一本不断�
 - [[概念/LLM/transformer-architecture-plain|Transformer 大白话]]
 - [[概念/LLM/radix-attention|RadixAttention]]
 - [[概念/Inference/prefix-caching|前缀缓存]]
+
+## KV Cache 大白话解释
+
+> **一句话理解**: KV Cache 就像考试的“草稿纸”——把已经算过的中间结果记下来，下次不用重新算，所以越写越快。
+
+## 为什么需要 KV Cache？
+
+| 无 KV Cache | 有 KV Cache |
+|------------|------------|
+| 每生成 1 个 Token，重新算所有历史 | 只算新 Token，复用历史结果 |
+| 生成 100 Token = 算 100+99+...+1 次 | 生成 100 Token = 算 100 次 |
+| 越写越慢 | 速度恒定 |
+
+## KV Cache 显存计算
+
+```
+显存 = 2 × 层数 × KV头数 × 头维度 × 序列长度 × 精度字节
+
+示例: Llama-4-8B, 128K 上下文, FP16
+     = 2 × 32 × 8 × 128 × 128000 × 2 bytes
+     = ~17 GB
+
+优化后 (GQA + FP8):
+     = 2 × 32 × 8 × 128 × 128000 × 1 byte
+     = ~8.5 GB  ← 省了一半
+```
+
+## 常见问题 FAQ
+
+| 问题 | 答案 |
+|------|------|
+| KV Cache 是什么？ | 缓存 Attention 的 Key/Value，避免重复计算 |
+| 为什么占显存？ | 每个 Token 都要存 K 和 V 向量 |
+| 怎么减少显存？ | GQA/MLA/FP8 量化/Token 稀疏化 |
+| 为什么长上下文贵？ | 序列越长，KV Cache 越大 |
+| PagedAttention 是什么？ | 像操作系统分页一样管理 KV Cache |
+
+## 生产最佳实践
+
+1. **长上下文必优化**: >32K 上下文时 KV Cache 是显存大头
+2. **GQA/MLA 优先**: 选择原生支持 GQA/MLA 的模型
+3. **FP8 KV Cache**: H100+ 启用 FP8 KV Cache，显存减半
+4. **PagedAttention**: vLLM 默认启用，提升显存效率
+5. **批处理优化**: 合理设置 max_num_seqs，平衡吐量和显存
+6. **量化 KV Cache**: 显存紧张时启用 FP8 KV Cache
+7. **监控显存**: 跟踪 KV Cache 占用，避免 OOM
+
+## 学习路径
+
+```
+初学者: 本文 (kv-cache-plain) → transformer-architecture-plain
+进阶: kv-cache → grouped-query-attention → paged-attention
+深入: kv-cache-compression → multi-head-latent-attention → radix-attention
+```

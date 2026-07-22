@@ -1,0 +1,244 @@
+{
+  "id": "2026-07-22-152410",
+  "generated_at": "2026-07-22T07:24:10.794279Z",
+  "language": "zh",
+  "pages": [
+    {
+      "slug": "1-xiang-mu-zong-lan-hello-agents-zhi-neng-ti-kai-fa-jiao-cheng-ti-xi",
+      "title": "项目总览：Hello Agents 智能体开发教程体系",
+      "file": "1-xiang-mu-zong-lan-hello-agents-zhi-neng-ti-kai-fa-jiao-cheng-ti-xi.md",
+      "section": "入门指南",
+      "level": "Beginner"
+    },
+    {
+      "slug": "2-kuai-su-shang-shou-huan-jing-pei-zhi-yu-di-ge-zhi-neng-ti-yun-xing",
+      "title": "快速上手：环境配置与第一个智能体运行",
+      "file": "2-kuai-su-shang-shou-huan-jing-pei-zhi-yu-di-ge-zhi-neng-ti-yun-xing.md",
+      "section": "入门指南",
+      "level": "Beginner"
+    },
+    {
+      "slug": "3-cong-eliza-dao-xian-dai-zhi-neng-ti-dui-hua-xi-tong-yan-jin-shi",
+      "title": "从 ELIZA 到现代智能体：对话系统演进史",
+      "file": "3-cong-eliza-dao-xian-dai-zhi-neng-ti-dui-hua-xi-tong-yan-jin-shi.md",
+      "section": "入门指南",
+      "level": "Beginner"
+    },
+    {
+      "slug": "4-fen-ci-yu-ci-qian-ru-bpe-n-gram-yu-word-embedding-yuan-li",
+      "title": "分词与词嵌入：BPE、N-gram 与 Word Embedding 原理",
+      "file": "4-fen-ci-yu-ci-qian-ru-bpe-n-gram-yu-word-embedding-yuan-li.md",
+      "section": "深度解析",
+      "group": "大语言模型基础",
+      "level": "Intermediate"
+    },
+    {
+      "slug": "5-cong-ling-shi-xian-transformer-duo-tou-zhu-yi-li-wei-zhi-bian-ma-yu-bian-jie-ma-qi",
+      "title": "从零实现 Transformer：多头注意力、位置编码与编解码器",
+      "file": "5-cong-ling-shi-xian-transformer-duo-tou-zhu-yi-li-wei-zhi-bian-ma-yu-bian-jie-ma-qi.md",
+      "section": "深度解析",
+      "group": "大语言模型基础",
+      "level": "Advanced"
+    },
+    {
+      "slug": "6-llm-ke-hu-duan-feng-zhuang-openai-jian-rong-jie-kou-yu-liu-shi-xiang-ying",
+      "title": "LLM 客户端封装：OpenAI 兼容接口与流式响应",
+      "file": "6-llm-ke-hu-duan-feng-zhuang-openai-jian-rong-jie-kou-yu-liu-shi-xiang-ying.md",
+      "section": "深度解析",
+      "group": "大语言模型基础",
+      "level": "Intermediate"
+    },
+    {
+      "slug": "7-react-mo-shi-si-kao-xing-dong-guan-cha-xun-huan-de-shi-xian-yu-jie-xi",
+      "title": "ReAct 模式：思考-行动-观察循环的实现与解析",
+      "file": "7-react-mo-shi-si-kao-xing-dong-guan-cha-xun-huan-de-shi-xian-yu-jie-xi.md",
+      "section": "深度解析",
+      "group": "Agent 推理范式",
+      "level": "Intermediate"
+    },
+    {
+      "slug": "8-ji-hua-yu-qiu-jie-plan-and-solve-mo-shi-duo-bu-ren-wu-fen-jie-ce-lue",
+      "title": "计划与求解（Plan-and-Solve）模式：多步任务分解策略",
+      "file": "8-ji-hua-yu-qiu-jie-plan-and-solve-mo-shi-duo-bu-ren-wu-fen-jie-ce-lue.md",
+      "section": "深度解析",
+      "group": "Agent 推理范式",
+      "level": "Intermediate"
+    },
+    {
+      "slug": "9-fan-si-reflection-mo-shi-zi-wo-ping-gu-yu-die-dai-you-hua",
+      "title": "反思（Reflection）模式：自我评估与迭代优化",
+      "file": "9-fan-si-reflection-mo-shi-zi-wo-ping-gu-yu-die-dai-you-hua.md",
+      "section": "深度解析",
+      "group": "Agent 推理范式",
+      "level": "Intermediate"
+    },
+    {
+      "slug": "10-di-dai-ma-ping-tai-dui-bi-coze-dify-fastgpt-yu-n8n",
+      "title": "低代码平台对比：Coze、Dify、FastGPT 与 n8n",
+      "file": "10-di-dai-ma-ping-tai-dui-bi-coze-dify-fastgpt-yu-n8n.md",
+      "section": "深度解析",
+      "group": "多智能体框架实战",
+      "level": "Intermediate"
+    },
+    {
+      "slug": "11-agentscope-shi-zhan-san-guo-lang-ren-sha-duo-zhi-neng-ti-xiao-xi-qu-dong-jia-gou",
+      "title": "AgentScope 实战：三国狼人杀多智能体消息驱动架构",
+      "file": "11-agentscope-shi-zhan-san-guo-lang-ren-sha-duo-zhi-neng-ti-xiao-xi-qu-dong-jia-gou.md",
+      "section": "深度解析",
+      "group": "多智能体框架实战",
+      "level": "Advanced"
+    },
+    {
+      "slug": "12-autogen-camel-yu-langgraph-kuang-jia-ying-yong-dui-bi",
+      "title": "AutoGen、CAMEL 与 LangGraph 框架应用对比",
+      "file": "12-autogen-camel-yu-langgraph-kuang-jia-ying-yong-dui-bi.md",
+      "section": "深度解析",
+      "group": "多智能体框架实战",
+      "level": "Intermediate"
+    },
+    {
+      "slug": "13-simpleagent-gou-jian-xi-tong-ti-shi-ci-gong-ju-zhu-ce-yu-duo-lun-dui-hua",
+      "title": "SimpleAgent 构建：系统提示词、工具注册与多轮对话",
+      "file": "13-simpleagent-gou-jian-xi-tong-ti-shi-ci-gong-ju-zhu-ce-yu-duo-lun-dui-hua.md",
+      "section": "深度解析",
+      "group": "HelloAgents 框架核心",
+      "level": "Beginner"
+    },
+    {
+      "slug": "14-gong-ju-xi-tong-she-ji-ji-suan-qi-gong-ju-sou-suo-gong-ju-yu-gong-ju-zhi-xing-qi",
+      "title": "工具系统设计：计算器工具、搜索工具与工具执行器",
+      "file": "14-gong-ju-xi-tong-she-ji-ji-suan-qi-gong-ju-sou-suo-gong-ju-yu-gong-ju-zhi-xing-qi.md",
+      "section": "深度解析",
+      "group": "HelloAgents 框架核心",
+      "level": "Intermediate"
+    },
+    {
+      "slug": "15-ji-yi-xi-tong-si-chong-ji-yi-lei-xing-yu-yi-wang-zheng-he-ji-zhi",
+      "title": "记忆系统：四种记忆类型与遗忘-整合机制",
+      "file": "15-ji-yi-xi-tong-si-chong-ji-yi-lei-xing-yu-yi-wang-zheng-he-ji-zhi.md",
+      "section": "深度解析",
+      "group": "HelloAgents 框架核心",
+      "level": "Advanced"
+    },
+    {
+      "slug": "16-rag-jian-suo-zeng-qiang-markitdown-duo-ge-shi-guan-dao-yu-zhi-neng-fen-kuai",
+      "title": "RAG 检索增强：MarkItDown 多格式管道与智能分块",
+      "file": "16-rag-jian-suo-zeng-qiang-markitdown-duo-ge-shi-guan-dao-yu-zhi-neng-fen-kuai.md",
+      "section": "深度解析",
+      "group": "HelloAgents 框架核心",
+      "level": "Advanced"
+    },
+    {
+      "slug": "17-shang-xia-wen-gong-cheng-contextbuilder-notetool-yu-terminaltool-xie-tong-gong-zuo-liu",
+      "title": "上下文工程：ContextBuilder、NoteTool 与 TerminalTool 协同工作流",
+      "file": "17-shang-xia-wen-gong-cheng-contextbuilder-notetool-yu-terminaltool-xie-tong-gong-zuo-liu.md",
+      "section": "深度解析",
+      "group": "HelloAgents 框架核心",
+      "level": "Intermediate"
+    },
+    {
+      "slug": "18-mcp-xie-yi-gong-ju-jie-ru-yu-gao-de-di-tu-fu-wu-ji-cheng",
+      "title": "MCP 协议：工具接入与高德地图服务集成",
+      "file": "18-mcp-xie-yi-gong-ju-jie-ru-yu-gao-de-di-tu-fu-wu-ji-cheng.md",
+      "section": "深度解析",
+      "group": "Agent 通信协议",
+      "level": "Intermediate"
+    },
+    {
+      "slug": "19-a2a-xie-yi-zhi-neng-ti-jian-tong-xin-yu-ren-wu-xie-shang",
+      "title": "A2A 协议：智能体间通信与任务协商",
+      "file": "19-a2a-xie-yi-zhi-neng-ti-jian-tong-xin-yu-ren-wu-xie-shang.md",
+      "section": "深度解析",
+      "group": "Agent 通信协议",
+      "level": "Advanced"
+    },
+    {
+      "slug": "20-anp-xie-yi-zhi-neng-ti-wang-luo-fa-xian-ren-wu-fen-fa-yu-fu-zai-jun-heng",
+      "title": "ANP 协议：智能体网络发现、任务分发与负载均衡",
+      "file": "20-anp-xie-yi-zhi-neng-ti-wang-luo-fa-xian-ren-wu-fen-fa-yu-fu-zai-jun-heng.md",
+      "section": "深度解析",
+      "group": "Agent 通信协议",
+      "level": "Advanced"
+    },
+    {
+      "slug": "21-sft-jian-du-wei-diao-quan-liu-cheng-shu-ju-jia-zai-lora-pei-zhi-yu-xun-lian",
+      "title": "SFT 监督微调全流程：数据加载、LoRA 配置与训练",
+      "file": "21-sft-jian-du-wei-diao-quan-liu-cheng-shu-ju-jia-zai-lora-pei-zhi-yu-xun-lian.md",
+      "section": "深度解析",
+      "group": "模型训练与微调",
+      "level": "Advanced"
+    },
+    {
+      "slug": "22-grpo-qiang-hua-xue-xi-xun-lian-jiang-li-han-shu-she-ji-yu-ce-lue-you-hua",
+      "title": "GRPO 强化学习训练：奖励函数设计与策略优化",
+      "file": "22-grpo-qiang-hua-xue-xi-xun-lian-jiang-li-han-shu-she-ji-yu-ce-lue-you-hua.md",
+      "section": "深度解析",
+      "group": "模型训练与微调",
+      "level": "Advanced"
+    },
+    {
+      "slug": "23-fen-bu-shi-xun-lian-pei-zhi-deepspeed-zero2-zero3-yu-duo-gpu-ddp",
+      "title": "分布式训练配置：DeepSpeed Zero2/Zero3 与多 GPU DDP",
+      "file": "23-fen-bu-shi-xun-lian-pei-zhi-deepspeed-zero2-zero3-yu-duo-gpu-ddp.md",
+      "section": "深度解析",
+      "group": "模型训练与微调",
+      "level": "Advanced"
+    },
+    {
+      "slug": "24-bfcl-ping-gu-han-shu-diao-yong-neng-li-ji-zhun-ce-shi",
+      "title": "BFCL 评估：函数调用能力基准测试",
+      "file": "24-bfcl-ping-gu-han-shu-diao-yong-neng-li-ji-zhun-ce-shi.md",
+      "section": "深度解析",
+      "group": "评估与优化",
+      "level": "Intermediate"
+    },
+    {
+      "slug": "25-gaia-ping-gu-tong-yong-zhi-neng-ti-neng-li-fen-ji-ping-ce",
+      "title": "GAIA 评估：通用智能体能力分级评测",
+      "file": "25-gaia-ping-gu-tong-yong-zhi-neng-ti-neng-li-fen-ji-ping-ce.md",
+      "section": "深度解析",
+      "group": "评估与优化",
+      "level": "Intermediate"
+    },
+    {
+      "slug": "26-he-cheng-shu-ju-zhi-liang-ping-gu-llm-judge-yu-win-rate-fang-fa-lun",
+      "title": "合成数据质量评估：LLM Judge 与 Win Rate 方法论",
+      "file": "26-he-cheng-shu-ju-zhi-liang-ping-gu-llm-judge-yu-win-rate-fang-fa-lun.md",
+      "section": "深度解析",
+      "group": "评估与优化",
+      "level": "Intermediate"
+    },
+    {
+      "slug": "27-zhi-neng-lu-xing-zhu-shou-vue3-fastapi-mcp-quan-zhan-jia-gou",
+      "title": "智能旅行助手：Vue3 + FastAPI + MCP 全栈架构",
+      "file": "27-zhi-neng-lu-xing-zhu-shou-vue3-fastapi-mcp-quan-zhan-jia-gou.md",
+      "section": "深度解析",
+      "group": "全栈应用案例",
+      "level": "Advanced"
+    },
+    {
+      "slug": "28-shen-du-yan-jiu-xi-tong-duo-lun-jian-suo-yu-bao-gao-sheng-cheng-de-duan-dao-duan-shi-xian",
+      "title": "深度研究系统：多轮检索与报告生成的端到端实现",
+      "file": "28-shen-du-yan-jiu-xi-tong-duo-lun-jian-suo-yu-bao-gao-sheng-cheng-de-duan-dao-duan-shi-xian.md",
+      "section": "深度解析",
+      "group": "全栈应用案例",
+      "level": "Advanced"
+    },
+    {
+      "slug": "29-ai-xiao-zhen-godot-you-xi-yin-qing-zhong-de-duo-zhi-neng-ti-npc-mo-ni",
+      "title": "AI 小镇：Godot 游戏引擎中的多智能体 NPC 模拟",
+      "file": "29-ai-xiao-zhen-godot-you-xi-yin-qing-zhong-de-duo-zhi-neng-ti-npc-mo-ni.md",
+      "section": "深度解析",
+      "group": "全栈应用案例",
+      "level": "Advanced"
+    },
+    {
+      "slug": "30-she-qu-gong-chuang-can-yu-helloagents-kai-yuan-sheng-tai",
+      "title": "社区共创：参与 HelloAgents 开源生态",
+      "file": "30-she-qu-gong-chuang-can-yu-helloagents-kai-yuan-sheng-tai.md",
+      "section": "深度解析",
+      "group": "全栈应用案例",
+      "level": "Beginner"
+    }
+  ]
+}

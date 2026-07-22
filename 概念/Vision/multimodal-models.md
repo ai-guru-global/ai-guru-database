@@ -160,3 +160,41 @@ KV Cache优化（2-3×）、Speculative Decoding（2-3×）、INT8/INT4量化（
 3. **Token 成本**：图像 token 消耗大，优化图像分辨率和数量
 4. **评估体系**：多模态评估需覆盖图文一致性、幻觉率等
 5. **安全审核**：多模态输入增加攻击面，加强输入过滤
+
+## 2026 多模态模型生态
+
+| 模型 | 开发商 | 模态 | 状态 |
+|------|--------|------|------|
+| **GPT-5o** | OpenAI | 文/图/音/视 | GA |
+| **Gemini 2.5 Pro** | Google | 文/图/音/视 | GA |
+| **Claude 4** | Anthropic | 文/图 | GA |
+| **Qwen2.5-VL** | 阿里 | 文/图/视 | GA |
+| **LLaVA-NeXT** | 开源 | 文/图 | GA |
+
+## 多模态架构
+
+```
+多模态模型架构:
+图像输入 ──→ Vision Encoder (ViT) ──→ 视觉 Token
+                                          │
+文本输入 ──→ Text Tokenizer ──→ 文本 Token │
+                                          │
+                              ┌───────────┘
+                              ▼
+                    LLM Decoder (Transformer)
+                              │
+                              ▼
+                        文本/多模态输出
+```
+
+## 延伸阅读
+
+- [[概念/Vision/vision-language-model|视觉语言模型]] — VLM 详解
+- [[概念/Vision/computer-vision|计算机视觉]] — CV 基础
+- [[概念/LLM/multimodal-llm|多模态 LLM]] — LLM 视角
+- [[概念/Vision/generative-vision-models|生成式视觉模型]] — 图像生成
+
+> ℹ️ 多模态模型是 2026 年 AI 的主流形态，原生多模态是趋势。
+> 生产环境需特别注意多模态输入的安全审核，防止图片中嵌入恶意指令。
+> 图像 Token 消耗大，优化图像分辨率和数量可显著降低成本。
+> 多模态评估需覆盖图文一致性、幻觉率、指令遵循等多维度。

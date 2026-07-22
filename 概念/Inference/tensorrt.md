@@ -166,3 +166,36 @@ Client → Triton Inference Server
 - [[概念/Inference/cuda|CUDA]]
 - [[概念/Inference/triton-inference-server|Triton Inference Server]]
 - [[概念/Inference/request-scheduling|Request Scheduling]]
+
+## TensorRT 优化技术全景
+
+| 技术 | 说明 | 加速比 |
+|------|------|--------|
+| **层融合** | 合并 Conv+BN+ReLU 等连续层 | 1.2-1.5x |
+| **精度校准** | FP32→FP16/INT8/FP8 自动转换 | 1.5-3x |
+| **Kernel 自动调优** | 选择最优 CUDA kernel | 1.1-1.3x |
+| **动态张量内存** | 减少显存分配开销 | 1.1x |
+| **多流执行** | 并行执行独立层 | 1.2-1.5x |
+
+## TensorRT 工作流
+
+```
+PyTorch/ONNX 模型
+    ↓
+TensorRT Builder (编译优化)
+    ↓
+TensorRT Engine (.engine / .plan)
+    ↓
+TensorRT Runtime (推理执行)
+
+注意: Engine 与 GPU 型号 + TensorRT 版本绑定
+不同 GPU 需重新编译
+```
+
+## 生产最佳实践
+
+1. **极致性能选 TensorRT**：吐吐量要求极高时使用
+2. **编译缓存**：Engine 编译耗时 30min-2h，CI/CD 中缓存
+3. **FP8 必开**：H100+ 必开 FP8，性能翻倍且质量保留
+4. **版本固定**：TensorRT 版本与 CUDA/驱动强绑定
+5. **回退方案**：开发用 vLLM，生产切 TensorRT-LLM

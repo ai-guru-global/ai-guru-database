@@ -173,3 +173,36 @@ Append 优化：将新 token 的 KV 写入与 Attention 计算融合，减少一
 - [[部署推理/Inference_Performance/Prefill_Decode_Disaggregation|Prefill-Decode 分离]]
 - [[部署推理/Inference_Performance/Inference_Terms_for_dummy|推理性能术语大白话解释]]
 - [[架构基建/AI_Stack_Deep_Dive]] — AI Stack
+
+## Prefill vs Decode 对比
+
+| 维度 | Prefill | Decode |
+|------|---------|--------|
+| **计算模式** | 并行 (所有输入 Token) | 串行 (逐 Token) |
+| **计算密集度** | 高 (Compute-bound) | 低 (Memory-bound) |
+| **GPU 利用率** | 高 | 低 |
+| **延迟影响** | TTFT | TPOT |
+| **优化方向** | Flash Attention, 分块 | 投机解码, 量化 |
+| **显存占用** | 一次性 | 逐步增长 (KV Cache) |
+
+## PD 分离架构
+
+```
+传统部署 (PD 混合):
+  [GPU] Prefill + Decode 在同一 GPU
+  问题: Prefill 阻塞 Decode，延迟波动大
+
+PD 分离部署:
+  [Prefill GPU Pool] → KV Transfer → [Decode GPU Pool]
+  优势: 各自优化，延迟稳定，利用率提升 30-50%
+
+实现: DistServe, Splitwise, Mooncake
+```
+
+## 生产最佳实践
+
+1. **监控 TTFT 和 TPOT**：分别监控两个阶段的延迟
+2. **长输入用 Chunked Prefill**：避免单次 prefill 阻塞解码
+3. **大规模用 PD 分离**：100+ GPU 时考虑 Prefill/Decode 分离
+4. **投机解码加速 Decode**：Decode 阶段用 Speculative Decoding
+5. **KV Cache 管理**：Decode 阶段显存主要是 KV Cache

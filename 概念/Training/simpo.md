@@ -136,3 +136,67 @@ trainer.train()
 - [[概念/Training/kto|KTO]]
 - [[概念/Training/grpo|GRPO 组相对策略优化]]
 - [[架构基建/AI_Stack_Deep_Dive|AI Stack 深度解析]]
+
+## 2026 SimPO 生态现状
+
+| 框架/工具 | 支持 | 特色 | 状态 |
+|------|------|------|------|
+| TRL (HuggingFace) | ✅ | SimPOTrainer | ✅ 主流 |
+| LLaMA-Factory | ✅ | 集成支持 | ✅ 主流 |
+| OpenRLHF | ✅ | 分布式 | ✅ 主流 |
+| Axolotl | ✅ | 配置支持 | ✅ 成熟 |
+
+## 检查清单
+
+- [ ] 偏好数据已准备（chosen/rejected）
+- [ ] 数据质量已验证
+- [ ] 超参已调优（lr/gamma）
+- [ ] 评估基准已建立
+- [ ] 与 DPO/ORPO 效果已对比
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| 效果不如 DPO | 数据质量差 | 提升数据质量 |
+| 训练不稳定 | 学习率太高 | 降低 lr + warmup |
+| 过拟合 | 数据量少 | 增加数据 + 正则化 |
+| 生成长度偏移 | gamma 不当 | 调整 gamma |
+
+## 延伸阅读
+
+- [[概念/Training/dpo|DPO]] — 直接偏好优化
+- [[概念/Training/orpo|ORPO]] — 简化偏好优化
+- [[概念/Training/grpo|GRPO]] — 组相对策略优化
+- [[概念/Training/preference-learning|Preference Learning]] — 偏好学习
+- [[概念/Training/rlhf|RLHF]] — 人类反馈强化学习
+
+> ℹ️ SimPO 是最简化的偏好对齐方案，无需参考模型，2026年适合资源极度受限场景，效果接近 DPO。
+
+## 方法对比
+
+| 方法 | 需要 RM | 需要参考 | 效果 | 复杂度 |
+|------|------|------|------|------|
+| PPO | ✅ | ✅ | 最高 | 高 |
+| DPO | ❌ | ✅ | 高 | 中 |
+| ORPO | ❌ | ❌ | 中高 | 低 |
+| SimPO | ❌ | ❌ | 中高 | 最低 |
+| GRPO | ❌ | ✅ | 高 | 中 |
+
+## 延伸阅读
+
+- [[概念/Training/dpo|DPO]] — 直接偏好优化
+- [[概念/Training/orpo|ORPO]] — 简化偏好优化
+- [[概念/Training/grpo|GRPO]] — 组相对策略优化
+- [[概念/Training/preference-learning|Preference Learning]] — 偏好学习
+- [[概念/Training/rlhf|RLHF]] — 人类反馈强化学习
+
+> ℹ️ SimPO 是最简化的偏好对齐方案，无需参考模型，2026年适合资源极度受限场景，效果接近 DPO。
+
+## 检查清单
+
+- [ ] 偏好数据已准备
+- [ ] 数据质量已验证
+- [ ] 超参已调优
+- [ ] 评估基准已建立
+- [ ] 与 DPO 效果已对比

@@ -152,3 +152,71 @@ ppl = torch.exp(loss)
 3. **领域匹配**：用目标领域数据计算 PPL，通用语料 PPL 参考价值有限
 4. **量化监控**：模型量化后跟踪 PPL 变化，超过 5% 需警惕
 5. **训练监控**：训练过程中跟踪验证集 PPL 曲线，检测过拟合
+
+## PPL 计算示例
+
+```python
+import torch
+from transformers import AutoModelForCausalLM, AutoTokenizer
+
+model = AutoModelForCausalLM.from_pretrained("meta-llama/Llama-3-8B")
+tokenizer = AutoTokenizer.from_pretrained("meta-llama/Llama-3-8B")
+
+def calculate_perplexity(text: str, stride: int = 512) -> float:
+    """滑动窗口计算困惑度"""
+    encodings = tokenizer(text, return_tensors="pt")
+    max_length = model.config.n_positions
+    seq_len = encodings.input_ids.size(1)
+    
+    nlls = []
+    for begin_loc in range(0, seq_len, stride):
+        end_loc = min(begin_loc + max_length, seq_len)
+        input_ids = encodings.input_ids[:, begin_loc:end_loc]
+        target_ids = input_ids.clone()
+        target_ids[:, :-stride] = -100  # 只计算新窗口
+        
+        with torch.no_grad():
+            outputs = model(input_ids, labels=target_ids)
+            nlls.append(outputs.loss * stride)
+    
+    ppl = torch.exp(torch.stack(nlls).sum() / seq_len)
+    return ppl.item()
+
+# 使用示例
+ppl = calculate_perplexity("这是一段待评估的文本...")
+print(f"Perplexity: {ppl:.2f}")
+```
+
+## PPL 应用场景对比
+
+| 场景 | PPL 作用 | 参考值 | 注意事项 |
+|------|----------|--------|----------|
+| 模型对比 | 语言能力指标 | 越低越好 | 需统一分词器 |
+| 量化评估 | 精度损失衡量 | 增幅 < 5% | 同模型对比 |
+| 训练监控 | 过拟合检测 | 验证集 PPL 上升 | 早停信号 |
+| 领域适配 | 微调效果 | 目标域 PPL 下降 | 用领域数据 |
+| 文本质量 | 异常检测 | 显著高于均值 | 辅助指标 |
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| PPL 低但生成质量差 | PPL 与生成不等价 | 结合下游任务评估 |
+| 不同模型 PPL 不可比 | 分词器不同 | 统一分词器或用 bits/byte |
+| PPL 计算 OOM | 文本过长 | 使用滑动窗口 + stride |
+| 量化后 PPL 飙升 | 量化过度 | 降低量化程度或混合精度 |
+
+## 生产检查清单
+
+1. ✅ 统一 PPL 计算方式（分词器/窗口/stride）
+2. ✅ 用目标领域数据计算 PPL
+3. ✅ 量化后跟踪 PPL 变化（阈值 5%）
+4. ✅ 训练中监控验证集 PPL 曲线
+5. ✅ PPL 作为辅助指标而非唯一标准
+6. ✅ 记录计算参数确保可复现
+
+## 总结
+
+Perplexity（困惑度）是衡量语言模型概率分布质量的基础指标，2026 年仍是模型对比、量化评估和训练监控的重要工具。但 PPL 低不等于生成质量好，必须结合下游任务评估综合判断。
+
+> 💡 PPL 的核心价值是“快速筛选”而非“最终判断”——用它排除明显差的模型，但最终决策要看实际任务表现。

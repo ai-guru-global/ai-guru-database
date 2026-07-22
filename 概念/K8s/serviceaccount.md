@@ -147,4 +147,56 @@ kubectl create token ai-inference-sa -n model-serving --duration=1h
 2. **关闭自动挂载**：不需要 API 访问的 Pod 设置 `automountServiceAccountToken: false`
 3. **短期 Token 优先**：使用 TokenRequest API 生成临时 Token，避免创建长期 Secret
 4. **云身份映射**：访问云资源时通过 Workload Identity / RRSA 映射，不在 Pod 内存储云 AK/SK
-5. **定期审计 SA 权限**：扫描集群中所有 SA 的 RoleBinding，清理不再使用的账号和过度授权
+5. **定期审计 SA 权限**：扫描集群中所有 SA 的 RoleBinding，清理不再使用的账号和 过度授权
+
+## ServiceAccount 核心概念
+
+| 概念 | 说明 |
+|------|------|
+| ServiceAccount | Pod 的身份标识 |
+| Token | API 访问凭证 |
+| RoleBinding | 权限绑定 |
+| ImagePullSecret | 镜像拉取凭证 |
+| automountToken | 自动挂载控制 |
+
+## SA Token 类型对比
+
+| 类型 | 有效期 | 用途 | 安全性 |
+|------|------|------|------|
+| Secret Token | 永久 | 传统方式 | 低 |
+| TokenRequest | 可配置 | 推荐方式 | 高 |
+| Projected Token | 可配置 | 多受众 | 高 |
+| OIDC Token | 短期 | 云身份映射 | 最高 |
+
+## 配置示例
+
+```yaml
+# 创建 ServiceAccount
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: app-sa
+  namespace: default
+automountServiceAccountToken: false
+---
+# Pod 中使用
+apiVersion: v1
+kind: Pod
+spec:
+  serviceAccountName: app-sa
+  automountServiceAccountToken: true
+  containers:
+  - name: app
+    image: my-app:latest
+```
+
+## 云身份映射方案
+
+| 云商 | 方案 | 说明 |
+|------|------|------|
+| AWS | IRSA/RRSA | IAM Role for SA |
+| GCP | Workload Identity | GCP SA 映射 |
+| Azure | Workload Identity | Azure AD 映射 |
+| 阿里云 | RRSA | RAM Role for SA |
+
+> 💡 ServiceAccount 是 K8s Pod 身份的核心，2026 年生产环境必须禁用 default SA + 使用短期 Token + 云身份映射。

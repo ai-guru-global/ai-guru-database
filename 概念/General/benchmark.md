@@ -145,3 +145,57 @@ updated: 2026-07-21
 3. **业务相关性**：选择与业务场景匹配的评测，通用分数不代表实际效果
 4. **可复现性**：记录评测参数（temperature、prompt 模板），确保结果可复现
 5. **定期重评**：模型更新后必须重新跑全套 Benchmark，设置回归门禁
+
+## 主流 Benchmark 对比
+
+| Benchmark | 评估维度 | 难度 | 数据污染风险 | 适用场景 |
+|-----------|----------|------|--------------|----------|
+| MMLU-Pro | 多学科知识 | 高 | 中 | 通用能力 |
+| GSM8K | 数学推理 | 中 | 高 | 数学场景 |
+| HumanEval | 代码生成 | 中 | 高 | 编程能力 |
+| SWE-bench | 真实 Issue | 高 | 低 | 工程能力 |
+| LiveBench | 动态更新 | 中-高 | 极低 | 防污染评估 |
+| MT-Bench | 多轮对话 | 中 | 中 | 对话质量 |
+| Arena-Hard | 高难度对话 | 高 | 低 | 模型排名 |
+| Chatbot Arena | 人类偏好 | 变化 | 无 | 综合体验 |
+
+## 评估配置示例
+
+```bash
+# lm-evaluation-harness 多任务评估
+lm_eval --model hf \
+  --model_args pretrained=meta-llama/Llama-3-70B-Instruct \
+  --tasks mmlu_pro,gsm8k,humaneval,mt_bench \
+  --batch_size 8 \
+  --num_fewshot 5 \
+  --output_path ./eval_results/ \
+  --log_samples
+
+# OpenCompass 多模态评估
+python run.py --models llama3_70b --datasets mmlu_pro gsm8k \
+  --work-dir ./opencompass_results
+```
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| 分数虚高 | 数据污染 | 使用 LiveBench/Arena 动态集 |
+| 结果不可复现 | 参数未固定 | 记录 temperature/seed/prompt |
+| 与用户体验不符 | 评测集偏离生产 | 构建业务专属评测集 |
+| 多模型对比不公平 | 评测条件不一致 | 统一 prompt 模板 + 参数 |
+
+## 生产检查清单
+
+1. ✅ 综合多个 Benchmark 而非单一分数
+2. ✅ 优先使用动态更新评测集防污染
+3. ✅ 记录全部评测参数确保可复现
+4. ✅ 构建业务专属评测集
+5. ✅ 模型更新后跑完整回归测试
+6. ✅ 设置质量门禁（分数下降 > 2% 阻断发布）
+
+## 总结
+
+Benchmark 是模型能力量化的核心工具，但任何单一 Benchmark 都无法全面反映模型真实能力。2026 年的最佳实践是“多基准组合 + 动态防污染 + 业务专属评测 + 人类偏好”四层评估体系。
+
+> 💡 Benchmark 的核心价值是“提供可比较的参考”，而非“绝对真理”——永远不要为了刷分而优化模型。

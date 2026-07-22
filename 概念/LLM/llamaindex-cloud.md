@@ -183,3 +183,31 @@ pip install llama-index-cloud llama-parse
 3. **成本意识**：云端服务有成本，大规模场景考虑自建
 4. **数据安全**：敏感数据评估云端存储风险
 5. **与开源对比**：生产前对比云端与自建的效果和成本
+
+## LlamaIndex Cloud 产品矩阵 (2026)
+
+| 产品 | 功能 | 定价 | 适用场景 |
+|------|------|------|----------|
+| **LlamaCloud** | 托管 RAG 服务 | 按用量 | 快速原型 |
+| **LlamaParse** | 复杂文档解析 | 按页数 | PDF/表格解析 |
+| **LlamaIndex TS** | TypeScript SDK | 开源 | 前端/Node.js |
+| **LlamaHub** | 数据连接器市场 | 免费 | 数据源接入 |
+| **LlamaIndex Core** | 开源框架 | 免费 | 自建 RAG |
+
+## LlamaCloud vs 自建 RAG
+
+| 维度 | LlamaCloud | 自建 RAG |
+|------|-----------|----------|
+| **上手速度** | 极快 (分钟级) | 慢 (天级) |
+| **文档解析** | LlamaParse 极强 | 需自己处理 |
+| **可控性** | 低 | 高 |
+| **成本** | 按用量付费 | 固定成本 |
+| **数据安全** | 云端存储 | 完全自控 |
+| **适用场景** | 原型/小规模 | 生产/大规模 |
+
+## 延伸阅读
+
+- [[概念/LLM/llamaindex|LlamaIndex]] — 开源框架详解
+- [[概念/RAG/rag-architecture|RAG 架构]] — RAG 系统全景
+- [[概念/LLM/cross-encoder|Cross-Encoder]] — 重排序技术
+- [[概念/LLM/context-engineering|上下文工程]] — 上下文管理

@@ -130,3 +130,72 @@ DualPipe 是 DeepSeek 开源训练基础设施的重要组件：
 3. **通信重叠**：确保计算与通信充分重叠，最大化 GPU 利用率
 4. **负载均衡**：MoE 模型需注意专家负载均衡
 5. **监控指标**：关注气泡率、MFU、通信/计算比
+
+## 2026 DualPipe 生态现状
+
+| 特性 | 状态 | 说明 |
+|------|------|------|
+| 双向流水线 | ✅ | 减少气泡 |
+| 与 3D 并行集成 | ✅ | Megatron 支持 |
+| MoE 支持 | ✅ | 专家并行 |
+| FP8 训练 | ✅ | Hopper 加速 |
+| 长序列支持 | ✅ | 上下文并行 |
+| 万亿参数 | ✅ | 已验证 |
+
+## 检查清单
+
+- [ ] 流水线阶段已合理划分
+- [ ] micro-batch 大小已调优
+- [ ] 通信重叠已配置
+- [ ] 负载均衡已验证（MoE）
+- [ ] 气泡率已监控
+- [ ] MFU 已达标（> 50%）
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| 气泡率高 | micro-batch 太少 | 增大 micro-batch |
+| 通信瓶颈 | 带宽不足 | 启用通信压缩 |
+| 负载不均 | 阶段划分不当 | 重新划分阶段 |
+| MFU 低 | 未重叠通信 | 配置通信重叠 |
+
+## 延伸阅读
+
+- [[概念/Training/megatron-lm|Megatron-LM]] — 分布式框架
+- [[概念/GPU/pipeline-parallelism|Pipeline Parallelism]] — 流水线并行
+- [[概念/GPU/model-parallelism|Model Parallelism]] — 模型并行
+- [[概念/Training/deepspeed|DeepSpeed]] — 微软训练框架
+- [[概念/Training/fsdp|FSDP]] — PyTorch 全分片
+
+> ℹ️ DualPipe 是 2026 年超大规模训练的流水线优化技术，双向调度减少气泡，与 Megatron 3D 并行结合是万亿参数训练标配。
+
+## 气泡率对比
+
+| 方案 | 气泡率 | MFU | 适用 |
+|------|------|------|------|
+| 单阶段 | 0% | 低 | 小模型 |
+| GPipe | 高 | 30-40% | 中等 |
+| 1F1B | 中 | 40-50% | 大模型 |
+| DualPipe | 低 | 50-60% | 超大模型 |
+| Interleaved | 最低 | 55-65% | 万亿参数 |
+
+## 延伸阅读
+
+- [[概念/Training/megatron-lm|Megatron-LM]] — 分布式框架
+- [[概念/GPU/pipeline-parallelism|Pipeline Parallelism]] — 流水线并行
+- [[概念/GPU/model-parallelism|Model Parallelism]] — 模型并行
+- [[概念/Training/deepspeed|DeepSpeed]] — 微软训练框架
+- [[概念/Training/fsdp|FSDP]] — PyTorch 全分片
+
+> ℹ️ DualPipe 是 2026 年超大规模训练的流水线优化技术，双向调度减少气泡，与 Megatron 3D 并行结合是万亿参数训练标配。
+
+## 检查清单
+
+- [ ] 流水线阶段已划分
+- [ ] micro-batch 已调优
+- [ ] 通信重叠已配置
+- [ ] 气泡率已监控
+- [ ] MFU 已达标
+
+> ℹ️ DualPipe 双向流水线是万亿参数训练的标配优化。

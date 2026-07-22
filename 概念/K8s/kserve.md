@@ -174,3 +174,34 @@ spec:
 3. **资源配额明确**：为 Predictor 设置 GPU/内存 limits，避免单模型耗尽节点资源
 4. **监控推理指标**：集成 Prometheus 监控 P99 延迟、吞吐量、GPU 利用率
 5. **多模型用 ModelMesh**：小模型/传统 ML 模型使用 ModelMesh 共享实例，降低成本
+
+## KServe 架构组件
+
+| 组件 | 功能 | 说明 |
+|------|------|------|
+| InferenceService | 核心 CRD | 定义推理服务 |
+| Predictor | 模型推理 | 主推理容器 |
+| Transformer | 预处理 | 输入转换 |
+| Explainer | 可解释性 | 模型解释 |
+| ModelMesh | 多模型 | 共享实例 |
+
+## 部署模式对比
+
+| 模式 | 说明 | 适用场景 |
+|------|------|------|
+| Serverless | Knative 自动伸缩 | 低流量/突发 |
+| RawDeployment | 原生 K8s | 高流量/低延迟 |
+| ModelMesh | 多模型共享 | 小模型集群 |
+
+## 支持的推理运行时
+
+| 运行时 | 框架 | 特点 |
+|------|------|------|
+| TGI | HuggingFace | LLM 优化 |
+| vLLM | vLLM | 高吞吐 LLM |
+| Triton | NVIDIA | 多框架 |
+| TorchServe | PyTorch | 原生支持 |
+| SKLearn | Scikit-learn | 传统 ML |
+| XGBoost | XGBoost | 树模型 |
+
+> 💡 KServe 是 2026 年 K8s 上模型服务化的事实标准，LLM 推理推荐 vLLM/TGI + RawDeployment 模式。

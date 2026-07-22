@@ -181,3 +181,34 @@ jobs:
 3. **红队测试定期**：每月运行红队测试，发现安全漏洞
 4. **测试用例覆盖**：覆盖正常/边界/异常场景
 5. **版本管理**：测试配置纳入版本控制，支持回滚
+6. **自定义断言**：用 JavaScript/Python 实现业务特定评估逻辑
+7. **结果可视化**：用 Web UI 查看测试结果矩阵，快速定位问题
+
+## 测试配置示例
+
+```yaml
+# promptfooconfig.yaml
+prompts:
+  - "Translate to French: {{text}}"
+  - "French translation: {{text}}"
+
+providers:
+  - openai:gpt-4o
+  - anthropic:messages:claude-4-sonnet
+
+tests:
+  - vars:
+      text: "Hello world"
+    assert:
+      - type: contains
+        value: "Bonjour"
+      - type: llm-rubric
+        value: "Is the translation accurate and natural?"
+
+  - vars:
+      text: "How are you?"
+    assert:
+      - type: similar
+        value: "Comment allez-vous?"
+        threshold: 0.8
+```

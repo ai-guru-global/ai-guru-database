@@ -6,7 +6,7 @@ summary: "高质量提示词集合与社区平台，提供经过社区验证的�
 sources:
   - "https://www.godtierprompts.com/"
 created: 2026-06-12
-updated: 2026-06-23
+updated: 2026-07-10
 lifecycle: reviewed
 tier: supporting
 aliases:
@@ -58,15 +58,85 @@ God Tier Prompts 处于"实践模板"端——适合**快速获得可用提示�
 
 ## 同类工具对比
 
-| 平台 | 特点 | 定位 |
+| 平台 | 特点 | 定位 | 适用模型 |
+|------|------|------|------|
+| **God Tier Prompts** | 社区投票、场景分类 | 实用模板库 | GPT/Claude/Gemini |
+| **PromptHero** | 图文提示词、艺术向 | SD/Midjourney | 图像生成 |
+| **OpenAI Cookbook** | 官方示例、API 集成 | 技术实现参考 | GPT 系列 |
+| **LangChain Hub** | 可编程、链式提示词 | Agent/RAG 集成 | 多模型 |
+| **Anthropic Prompt Library** | 官方模板 | Claude 专用 | Claude |
+| **Awesome ChatGPT Prompts** | GitHub 开源 | 角色扮演 | 通用 |
+
+## 提示词设计模式
+
+| 模式 | 说明 | 适用场景 |
 |------|------|------|
-| **God Tier Prompts** | 社区投票、场景分类 | 实用模板库 |
-| **PromptHero** | 图文提示词、艺术向 | Stable Diffusion/Midjourney |
-| **OpenAI Cookbook** | 官方示例、API 集成 | 技术实现参考 |
-| **LangChain Hub** | 可编程、链式提示词 | Agent/RAG 集成 |
+| **角色设定** | 定义 AI 的专业角色 | 专业咨询 |
+| **CoT 推理** | 要求逐步思考 | 复杂推理 |
+| **Few-shot** | 提供示例输入输出 | 格式控制 |
+| **约束列表** | 明确禁止/要求 | 输出控制 |
+| **分步任务** | 拆解复杂任务 | 多步骤工作流 |
+| **输出格式** | 指定 JSON/Markdown | 结构化输出 |
+
+## 提示词模板示例
+
+```markdown
+# 角色
+你是一位资深的 {domain} 专家，拥有 20 年经验。
+
+# 任务
+请分析以下 {input_type}，并提供：
+1. 核心问题识别
+2. 根因分析
+3. 解决方案（按优先级排序）
+4. 预防措施
+
+# 约束
+- 回答控制在 500 字以内
+- 使用 Markdown 格式
+- 每个方案附带成本估算
+
+# 输入
+{user_input}
+```
+
+## 2026 提示词工程趋势
+
+| 趋势 | 说明 | 影响 |
+|------|------|------|
+| **系统提示词** | 从用户提示转向系统级设计 | 更稳定的输出 |
+| **Context Engineering** | 上下文工程替代纯提示词 | 更精确的控制 |
+| **自动优化** | DSPy/MIPRO 自动搜索最优提示 | 减少手工设计 |
+| **多模态提示** | 图文音视频混合输入 | 更丰富的交互 |
+| **Agent 提示** | 工具调用 + 规划提示 | 自主任务执行 |
+
+## 生产最佳实践
+
+1. **版本管理**：提示词纳入 Git 版本控制
+2. **A/B 测试**：新提示词先小流量验证
+3. **评估指标**：定义明确的输出质量指标
+4. **模板化**：抽取可复用的提示词组件
+5. **文档化**：记录每个提示词的设计意图和效果
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| 输出不稳定 | 提示词模糊 | 添加明确约束和示例 |
+| 不遵循格式 | 缺乏格式指定 | 使用 JSON Schema 约束 |
+| 幻觉严重 | 缺乏事实约束 | 添加 RAG + 事实核查 |
+| 过长/过短 | 未指定长度 | 明确字数要求 |
 
 ## Related
 
 - [[大模型/Prompt_Engineering|提示词工程]] — 系统学习提示词原理与方法
 - [[学习/References/Courses/prompt-engineering-nirdiamant|Prompt 工程技术大全]] — 综合技术参考
 - [[大模型/Prompt_Engineering/README|God Tier Prompts 索引]] — 详细条目
+- [[概念/prompt-engineering|提示工程概念卡片]]
+- [[概念/dspy|DSPy 自动提示优化]]
+
+## 总结
+
+God Tier Prompts 是提示词工程的实践模板库，提供经过社区验证的高质量提示词。它是学习提示词设计模式、获取灵感的优质资源，但需结合系统学习才能掌握原理。
+
+> 💡 提示词工程的核心：不是“写得好”，而是“设计得对”——理解模型的工作原理，才能设计出有效的提示词。

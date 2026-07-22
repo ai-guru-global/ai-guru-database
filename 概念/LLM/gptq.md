@@ -168,3 +168,34 @@ llm = LLM(model="qwen2.5-7b-gptq", quantization="gptq")
 3. **与 AWQ 对比**：GPTQ 适合 NVIDIA GPU，AWQ 适合边缘设备
 4. **推理框架配合**：GPTQ 模型用 vLLM/TGI/ExLlamaV2 推理
 5. **质量验证**：量化后必须验证输出质量，避免过度压缩
+6. **group_size 选择**：group_size=128 是常用配置，平衡质量与速度
+7. **预量化模型**：优先使用 HuggingFace 上的预量化模型，节省时间
+
+## GPTQ vs AWQ vs GGUF
+
+| 格式 | 适用场景 | 优势 | 劣势 |
+|------|----------|------|------|
+| **GPTQ** | NVIDIA GPU 服务器 | 速度快，生态成熟 | 仅支持 NVIDIA |
+| **AWQ** | 边缘设备/移动端 | 激活感知，质量好 | 生态较新 |
+| **GGUF** | CPU/混合推理 | 跨平台，llama.cpp | 速度较慢 |
+| **EXL2** | 单用户极速 | 混合精度，质量最优 | 仅 ExLlamaV2 |
+
+## 延伸阅读
+
+- [[概念/LLM/llm-quantization|LLM 量化]]
+- [[概念/LLM/exllama|ExLlamaV2]]
+- [[概念/LLM/vllm|vLLM]]
+- [[部署推理/Quantization/GPTQ_AWQ_Comparison_2026|GPTQ vs AWQ 对比]]
+
+## 量化配置示例
+
+```python
+# AutoGPTQ 量化配置
+quantize_config = {
+    "bits": 4,              # 4-bit 量化
+    "group_size": 128,      # 分组大小
+    "desc_act": True,       # 按激活值降序处理
+    "sym": True,            # 对称量化
+    "damp_percent": 0.01    # 阻尼系数
+}
+```

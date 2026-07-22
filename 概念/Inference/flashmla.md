@@ -159,3 +159,42 @@ K,V: [B, d_c]    →  压缩为 latent vector (d_c << d)
 - [[概念/Inference/flashinfer]] — FlashInfer 算子库
 - [[概念/LLM/attention-variants]] — 注意力变体
 - [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+
+## FlashMLA vs FlashAttention
+
+| 维度 | FlashMLA | FlashAttention |
+|------|----------|----------------|
+| **目标架构** | MLA (DeepSeek) | MHA/GQA/MQA |
+| **KV 处理** | 潜在空间解码 | 标准 KV |
+| **显存占用** | 极低 (MLA 压缩) | 中 |
+| **适用模型** | DeepSeek-V3 | Llama/Qwen/Mistral |
+| **性能** | MLA 上 1.5-2x | 通用 1.5-2x |
+| **生态** | DeepSeek 专用 | 通用 |
+
+## FlashMLA 工作原理
+
+```
+标准 Attention:
+  Q × K^T → Softmax → × V
+  KV Cache: [layers, heads, seq, head_dim] × 2
+
+MLA (Multi-head Latent Attention):
+  KV 压缩到潜在空间: c_kv = Down(KV)  [layers, seq, latent_dim]
+  推理时解码: KV = Up(c_kv)
+  KV Cache 压缩 5-10x
+
+FlashMLA:
+  在 MLA 解码过程中应用 Flash Attention 的 IO 感知优化
+  避免显存中存储完整 KV，按需解码 + 计算
+```
+
+## 生产最佳实践
+
+1. **DeepSeek 模型必用**：FlashMLA 是 DeepSeek-V3 推理的标配
+2. **与 vLLM/SGLang 集成**：主流引擎已内置 FlashMLA 支持
+3. **显存监控**：MLA 显著降低 KV Cache 显存，可服务更长上下文
+4. **与 FP8 叠加**：FlashMLA + FP8 量化可进一步压缩
+5. **非 DeepSeek 用 FlashAttention**：其他模型用标准 FlashAttention
+
+> ℹ️ FlashMLA 是 DeepSeek-V3 推理性能的关键优化，KV Cache 压缩 5-10x。
+与 DeepGEMM 配合使用，实现 DeepSeek 推理的极致性能。

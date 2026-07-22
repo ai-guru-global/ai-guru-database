@@ -97,3 +97,110 @@ stages:
 - [[概念/lakefs|LakeFS]]
 - [[概念/data-pipeline|Data Pipeline]]
 - [[概念/MLOps/evidently|Evidently]] — 数据质量监控
+
+## 2026 DVC 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **DVC 3.0+** | 新架构，性能提升 | GA |
+| **DVC Studio** | 托管实验跟踪平台 | GA |
+| **CML** | 持续机器学习 (CI/CD for ML) | GA |
+| **MLEM** | 模型部署 | GA |
+| **多后端存储** | S3/GCS/Azure/SSH | GA |
+
+## 架构：数据版本控制流程
+
+```
+数据文件 → dvc add → .dvc 文件 (Git 跟踪) + 缓存
+                          ↓
+                    dvc push → 远程存储 (S3/GCS)
+                          ↓
+                    dvc pull → 恢复数据
+```
+
+## 命令示例
+
+```bash
+# 初始化 DVC
+dvc init
+dvc remote add -d myremote s3://my-bucket/dvc-store
+
+# 跟踪数据文件
+dvc add data/train.csv
+git add data/train.csv.dvc .gitignore
+git commit -m "Add training data v1"
+
+# 推送到远程
+dvc push
+
+# 创建管道
+dvc stage add -n preprocess \
+  -d data/raw.csv \
+  -o data/processed.csv \
+  python preprocess.py
+
+dvc stage add -n train \
+  -d data/processed.csv \
+  -o models/model.pkl \
+  python train.py
+
+# 运行管道
+dvc repro
+
+# 实验跟踪
+dvc exp run --set-param lr=0.001
+dvc exp show
+```
+
+## dvc.yaml 示例
+
+```yaml
+stages:
+  preprocess:
+    cmd: python preprocess.py
+    deps:
+      - data/raw.csv
+      - preprocess.py
+    outs:
+      - data/processed.csv
+  train:
+    cmd: python train.py
+    deps:
+      - data/processed.csv
+      - train.py
+    params:
+      - lr
+      - epochs
+    outs:
+      - models/model.pkl
+    metrics:
+      - metrics.json:
+          cache: false
+```
+
+## 延伸阅读
+
+- [[概念/MLOps/data-versioning|Data Versioning]] — 数据版本控制概念
+- [[概念/MLOps/experiment-tracking|Experiment Tracking]] — 实验跟踪
+- [[概念/MLOps/model-registry|Model Registry]] — 模型注册
+
+> ℹ️ DVC 是开源数据版本控制工具，将数据、模型、管道纳入 Git 工作流，实现 ML 项目的可复现性。
+
+## 生产最佳实践
+
+1. **远程存储**：配置 S3/GCS 远程存储
+2. **管道定义**：用 dvc.yaml 定义管道
+3. **实验跟踪**：用 dvc exp 跟踪实验
+4. **与 Git 配合**：.dvc 文件纳入 Git
+5. **缓存配置**：配置本地缓存加速
+6. **团队协作**：共享远程存储
+7. **CI 集成**：CI 中运行 dvc repro
+8. **数据血缘**：跟踪数据转换历史
+
+## 检查清单
+
+- [ ] DVC 已初始化
+- [ ] 远程存储已配置
+- [ ] 数据文件已跟踪
+- [ ] 管道已定义
+- [ ] .dvc 文件已纳入 Git

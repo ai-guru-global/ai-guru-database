@@ -149,4 +149,62 @@ kubectl create secret docker-registry regcred \
 2. **优先外部 Secret 存储**：使用 ESO 或 Secrets Store CSI Driver 将密钥托管在 Vault/KMS，K8s 中仅保留引用
 3. **最小权限 RBAC**：严格限制 Secret 的 get/list 权限，避免 default ServiceAccount 自动挂载
 4. **自动轮换策略**：配合 cert-manager、ESO 的 rotationPolicy 实现证书/密码定期轮换
-5. **审计与告警**：开启 API Server 审计日志，监控 Secret 的创建/读取/删除事件，异常访问实时告警
+5. **审计与告警**：开启 API Server 审计日志，监控 Secret 的创建/读取/删除事件， 异常访问实时告警
+
+## Secret 类型对比
+
+| 类型 | 用途 | 说明 |
+|------|------|------|
+| Opaque | 通用 | 默认类型 |
+| kubernetes.io/tls | TLS 证书 | cert + key |
+| kubernetes.io/dockerconfigjson | 镜像拉取 | 私有仓库认证 |
+| kubernetes.io/basic-auth | 基本认证 | username + password |
+| kubernetes.io/ssh-auth | SSH 认证 | ssh-privatekey |
+| kubernetes.io/service-account-token | SA Token | 自动创建 |
+
+## Secret vs ConfigMap
+
+| 特性 | Secret | ConfigMap |
+|------|------|------|
+| 用途 | 敏感数据 | 配置数据 |
+| 加密 | 可启用 etcd 加密 | 明文 |
+| 大小限制 | 1 MB | 1 MB |
+| 挂载方式 | 文件/环境变量 | 文件/环境变量 |
+| 访问控制 | RBAC 严格限制 | RBAC |
+
+## 外部 Secret 方案对比
+
+| 方案 | 后端 | 同步方式 | 适用场景 |
+|------|------|------|------|
+| ESO | Vault/AWS/GCP | CRD 同步 | 企业级 |
+| Secrets Store CSI | Vault/Azure | CSI 挂载 | 高安全 |
+| Sealed Secrets | Git | 加密存储 | GitOps |
+| SOPS | 文件加密 | 手动 | 小规模 |
+
+## Secret 配置示例
+
+```yaml
+apiVersion: v1
+kind: Secret
+metadata:
+  name: app-secrets
+type: Opaque
+stringData:
+  api-key: "sk-xxx"
+  db-password: "password123"
+---
+# Pod 中使用
+apiVersion: v1
+kind: Pod
+spec:
+  containers:
+  - name: app
+    env:
+    - name: API_KEY
+      valueFrom:
+        secretKeyRef:
+          name: app-secrets
+          key: api-key
+```
+
+> 💡 Secret 是 K8s 敏感数据存储的标准方案，2026 年生产环境推荐 ESO + Vault/KMS 实现密钥外部化管理。

@@ -151,3 +151,64 @@ KV Cache 优化技术栈（从底到顶叠加）
 3. **FP8 量化**：H100+ GPU 启用 FP8 KV Cache，显存减半且质量几乎无损
 4. **前缀缓存**：多轮对话/RAG 场景启用前缀缓存，节省 5-12x 成本
 5. **监控显存**：实时监控 KV Cache 显存占用，避免 OOM
+6. **GQA/MLA 优先**：选择原生支持 GQA/MLA 的模型
+7. **批处理优化**：合理设置 max_num_seqs，平衡吐量和显存
+
+## 2026 KV Cache 技术全景
+
+| 技术 | 压缩比 | 原理 | 状态 |
+|------|:------:|------|:----:|
+| **MHA** | 1x | 标准多头 | 基线 |
+| **GQA** | 4-8x | 共享 KV 头 | GA |
+| **MQA** | 8-16x | 单 KV 头 | GA |
+| **MLA** | 10-28x | 低秩分解 | GA |
+| **FP8 KV** | 2x | 精度降低 | GA |
+| **PagedAttention** | - | 分页管理 | GA |
+| **RadixAttention** | - | 前缀复用 | GA |
+
+## KV Cache 显存计算
+
+```
+显存 = 2 × n_layers × n_kv_heads × head_dim × seq_len × bytes
+
+示例: Llama-4-70B (GQA), 128K 上下文, FP16
+     = 2 × 80 × 8 × 128 × 128000 × 2 bytes
+     = ~42 GB
+
+优化后 (MLA + FP8, DeepSeek-V3):
+     = ~4 GB  ← 压缩 10x+
+```
+
+## 延伸阅读
+
+- [[概念/LLM/kv-cache-plain|KV Cache 大白话]]
+- [[概念/LLM/kv-cache-compression|KV Cache 压缩]]
+- [[概念/LLM/grouped-query-attention|GQA]]
+- [[概念/LLM/multi-head-latent-attention|MLA]]
+- [[概念/LLM/paged-attention|PagedAttention]]
+- [[概念/LLM/radix-attention|RadixAttention]]
+- [[部署推理/Caching/KV_Cache_Deep_Dive|KV Cache 深度研究]]
+
+## 常见问题 FAQ
+
+| 问题 | 答案 |
+|------|------|
+| KV Cache 为什么占显存？ | 每个 Token 都要存 K 和 V 向量 |
+| 怎么减少显存？ | GQA/MLA/FP8/PagedAttention |
+| 为什么长上下文贵？ | 序列越长，KV Cache 越大 |
+| PagedAttention 是什么？ | 像 OS 分页一样管理 KV Cache |
+| 前缀缓存有什么用？ | 复用相同前缀的 KV Cache |
+
+## 配置示例 (vLLM)
+
+```python
+from vllm import LLM
+
+llm = LLM(
+    model="deepseek-ai/DeepSeek-V3",
+    dtype="float8",              # FP8 精度
+    kv_cache_dtype="fp8",       # FP8 KV Cache
+    max_model_len=128000,        # 128K 上下文
+    gpu_memory_utilization=0.90, # 显存利用率
+    enable_prefix_caching=True,  # 前缀缓存
+)

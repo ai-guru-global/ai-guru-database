@@ -117,3 +117,84 @@ aliases:
 3. **内容过滤**：启用内容安全过滤
 4. **与 AWS 对比**：根据云环境选择 Azure 或 AWS
 5. **成本优化**：监控 API 调用成本
+
+## API 调用示例
+
+```python
+from openai import AzureOpenAI
+
+client = AzureOpenAI(
+    api_key="your-key",
+    api_version="2026-02-01",
+    azure_endpoint="https://your-resource.openai.azure.com"
+)
+
+response = client.chat.completions.create(
+    model="gpt-4o",  # deployment name
+    messages=[{"role": "user", "content": "你好"}],
+    temperature=0.7
+)
+```
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| 403 错误 | 权限不足/网络限制 | 检查 RBAC + 私有端点 |
+| 模型不可用 | 未创建 Deployment | 先创建模型部署 |
+| 吐量限制 | TPM/RPM 配额 | 申请提升配额 |
+| 内容被过滤 | 内容安全策略 | 调整过滤阈值 |
+| 延迟高 | 区域距离远 | 就近区域部署 |
+
+## 版本兼容性
+
+| 服务 | 状态 | 说明 |
+|------|------|------|
+| GPT-5 | GA | 最新旗舰 |
+| GPT-4o | GA | 性价比主力 |
+| o3/o4-mini | GA | 推理模型 |
+| DALL-E 3 | GA | 图像生成 |
+| Whisper | GA | 语音识别 |
+
+## 生产检查清单
+
+1. 配置私有端点避免公网暴露
+2. 启用内容安全过滤
+3. 设置 API 调用监控和告警
+4. 配置 RBAC 最小权限
+5. 建立成本预算和告警
+6. 多区域部署确保高可用
+
+## 总结
+
+Azure OpenAI 是企业级 OpenAI 服务的首选部署方式，提供合规、安全、私有的 GPT 模型访问。对于中国/合规场景，Azure OpenAI 是最佳选择。
+
+> 💡 Azure OpenAI 的核心优势：与直接调用 OpenAI API 相比，Azure 提供企业级 SLA、私有网络、合规认证、内容过滤——是企业生产的必选项。
+
+## Azure OpenAI 部署模式
+
+| 模式 | 特点 | 适用场景 |
+|------|------|----------|
+| 全球标准 | 多区域路由 | 通用场景 |
+| 数据区域 | 数据不出区 | 合规要求 |
+| 专属部署 | 独享资源 | 高性能/稳定 |
+| 私有端点 | VPC 内访问 | 安全敏感 |
+
+## 生产检查清单
+
+1. ✅ 使用私有端点 + VPC 集成
+2. ✅ 启用内容过滤（输入+输出）
+3. ✅ 配置 TPM/RPM 配额限制
+4. ✅ 使用 Managed Identity 认证
+5. ✅ 启用诊断日志 + 审计
+6. ✅ 多区域部署 + 故障转移
+7. ✅ 定期轮换 API Key
+
+## 版本兼容性
+
+| 组件 | 版本 | 状态 |
+|------|------|------|
+| openai SDK | ≥ 1.30 | GA |
+| API 版本 | 2026-01-01 | 最新 |
+| Azure CLI | ≥ 2.60 | GA |
+

@@ -179,4 +179,35 @@ opik configure --use-local
 3. **评估一体化**：追踪 + 评估在同一平台，可直接用追踪数据做评估
 4. **框架无关**：不绑定特定 LLM 框架，通过 SDK 和回调集成
 5. **Comet 背书**：Comet 在 ML 可观测性领域有多年积累
-6. **生产必备**：LLM 应用上线后的"眼睛"，没有可观测性等于盲飞
+6. **生产必备**：LLM 应用上线后的“眼睛”，没有可观测性等于盲飞
+
+## 2026 Opik 生态现状
+
+| 特性 | 状态 | 说明 |
+|------|------|------|
+| 链路追踪 | ✅ 成熟 | 全链路可视化 |
+| 评估集成 | ✅ 成熟 | 自动评估 |
+| Prompt 管理 | ✅ 成熟 | 版本控制 |
+| 数据集管理 | ✅ 成熟 | 测试集管理 |
+| LangChain 集成 | ✅ 成熟 | 自动追踪 |
+| 开源部署 | ✅ 成熟 | Docker/K8s |
+| 多语言 SDK | ✅ 成熟 | Python/JS |
+
+## 检查清单
+
+- [ ] Opik 版本已固定
+- [ ] 链路追踪已接入
+- [ ] 评估流水线已配置
+- [ ] Prompt 版本已管理
+- [ ] 告警已配置
+- [ ] 数据保留策略已配置
+
+## 延伸阅读
+
+- [[概念/RAG/langsmith|LangSmith]] — 可观测性对比
+- [[概念/RAG/ragas|RAGAS]] — RAG 评估
+- [[概念/RAG/rag-patterns|RAG Patterns]] — RAG 模式
+- [[概念/MLOps/observability|Observability]] — 可观测性总览
+- [[概念/RAG/rag-production-architecture|RAG 生产架构]]
+
+> ℹ️ Opik 是 Comet 开源的 LLM 可观测性平台，2026年以链路追踪 + 评估集成 + 开源部署著称，是 RAG 生产监控的重要工具。

@@ -102,3 +102,114 @@ service:
 3. **Collector 部署**：部署 OTel Collector
 4. **与后端配合**：OTel + Prometheus/Loki/Tempo
 5. **采样策略**：配置合适的采样策略
+
+## AI/LLM 场景遥测
+
+| 场景 | 采集内容 | 信号类型 |
+|------|----------|----------|
+| **LLM 推理** | token 数、延迟、模型版本 | Metrics + Traces |
+| **RAG 流水线** | 检索分数、重排延迟、生成质量 | Traces + Logs |
+| **Agent 执行** | 工具调用链、步骤耗时 | Traces |
+| **训练任务** | loss、GPU 利用率、吞吐量 | Metrics |
+
+## 自动插桩示例
+
+```python
+# Python 自动插桩
+from opentelemetry import trace
+from opentelemetry.sdk.trace import TracerProvider
+from opentelemetry.exporter.otlp.proto.grpc.trace_exporter import OTLPSpanExporter
+
+# 初始化
+provider = TracerProvider()
+provider.add_span_processor(
+    BatchSpanProcessor(OTLPSpanExporter(endpoint="http://otel-collector:4317"))
+)
+trace.set_tracer_provider(provider)
+
+# LLM 调用追踪
+tracer = trace.get_tracer("llm-service")
+with tracer.start_as_current_span("llm_inference") as span:
+    span.set_attribute("model", "gpt-4o")
+    span.set_attribute("input_tokens", 150)
+    span.set_attribute("output_tokens", 320)
+    # ... LLM 调用
+```
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| 数据丢失 | Collector 缓冲溢出 | 增大 queue_size + 批处理 |
+| 性能影响 | 同步导出 | 使用 BatchProcessor |
+| 标签爆炸 | 动态属性过多 | 限制属性数量 |
+| 版本不兼容 | SDK/Collector 版本不匹配 | 统一版本管理 |
+| 采样不当 | 全量采集成本高 | 尾部采样保留异常 |
+
+## 版本兼容性
+
+| 组件 | 推荐版本 | 说明 |
+|------|----------|------|
+| OTel Collector | 0.105+ | 核心收集器 |
+| Python SDK | 1.25+ | 自动插桩 |
+| Go SDK | 1.28+ | 自动插桩 |
+| Java Agent | 2.x | 零代码插桩 |
+| OTLP 协议 | 1.x | 传输协议 |
+
+## 生产检查清单
+
+1. Collector 部署为 DaemonSet + Deployment 双层
+2. 配置 BatchProcessor 减少网络开销
+3. 启用尾部采样保留错误和慢请求
+4. 统一服务命名规范 (service.name)
+5. 监控 Collector 自身健康指标
+6. 定期审查属性基数防止存储膨胀
+
+## 总结
+
+OpenTelemetry 是云原生可观测性的统一标准，一次埋点即可产出 Metrics、Traces、Logs 三大信号。在 AI/LLM 场景中，OTel 是追踪 RAG 流水线、Agent 调用链、推理服务性能的基础设施。
+
+> 💡 OTel 的核心价值：消除可观测性厂商锁定——一次埋点，后端可自由切换 Prometheus/Jaeger/Loki/Tempo，是云原生可观测性的“普通话”。
+
+## OTel AI 服务埋点示例
+
+```python
+from opentelemetry import trace
+from opentelemetry.sdk.trace import TracerProvider
+from opentelemetry.exporter.otlp.proto.grpc.trace_exporter import OTLPSpanExporter
+
+# 初始化 Tracer
+provider = TracerProvider()
+provider.add_span_processor(
+    BatchSpanProcessor(OTLPSpanExporter(endpoint="http://otel-collector:4317"))
+)
+trace.set_tracer_provider(provider)
+tracer = trace.get_tracer("inference-service")
+
+# 推理服务埋点
+with tracer.start_as_current_span("llm_inference") as span:
+    span.set_attribute("model.name", "llama-3-70b")
+    span.set_attribute("model.tokens.input", len(input_tokens))
+    span.set_attribute("model.tokens.output", len(output_tokens))
+    span.set_attribute("inference.latency_ms", latency)
+    span.set_attribute("inference.batch_size", batch_size)
+    result = model.generate(prompt)
+```
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| 数据丢失 | 导出端不可达 | 配置重试 + 本地缓冲 |
+| 性能影响 | 同步导出 | 使用 BatchSpanProcessor |
+| 标签基数高 | 动态值作标签 | 限制标签值范围 |
+| 与框架集成难 | 版本不兼容 | 使用官方 instrumentation 库 |
+
+## 生产检查清单
+
+1. ✅ 使用 OTLP 标准协议导出
+2. ✅ 异步批量导出避免性能影响
+3. ✅ AI 服务关键指标埋点（延迟/token/批次）
+4. ✅ 与 Grafana/Prometheus/Jaeger 集成
+5. ✅ 控制标签基数避免存储爆炸
+6. ✅ 定期审计埋点覆盖率

@@ -159,4 +159,44 @@ Pod 提交
 2. **合理设置 deviceSplitCount**：根据 GPU 显存大小和业务需求设置切分数，避免过度碎片化
 3. **监控全覆盖**：部署 vGPUmonitor + Prometheus，监控每容器显存/算力使用率
 4. **多厂商分别验证**：异构集群中分别验证各厂商设备的显存/算力隔离支持度
-5. **与 GPU Operator 协同**：NVIDIA 节点使用 GPU Operator 管理驱动，HAMi 负责虚拟化层
+5. **与 GPU Operator 协同**：NVIDIA 节点使用 GPU Operator 管理驱动，HAMi 负责虚 拟化层
+
+## HAMi vs 其他 GPU 共享方案
+
+| 方案 | 类型 | 显存隔离 | 算力隔离 | 多厂商 |
+|------|------|------|------|------|
+| HAMi | 软件 | ✅ | ✅ | ✅ |
+| MIG | 硬件 | ✅ | ✅ | ❌ (NVIDIA) |
+| vGPU | 驱动 | ✅ | ✅ | 部分 |
+| Time-slicing | 时间片 | ❌ | ❌ | ✅ |
+| MPS | 进程 | ❌ | 部分 | ❌ (NVIDIA) |
+
+## HAMi 配置示例
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: gpu-pod
+spec:
+  containers:
+  - name: app
+    image: nvidia/cuda:12.0-base
+    resources:
+      limits:
+        nvidia.com/gpu: 1          # GPU 数量
+        nvidia.com/gpumem: 4096    # 显存限制 (MB)
+        nvidia.com/gpucores: 50    # 算力限制 (%)
+```
+
+## 支持的 GPU 厂商
+
+| 厂商 | 设备类型 | 显存隔离 | 算力隔离 |
+|------|------|------|------|
+| NVIDIA | GPU | ✅ | ✅ |
+| AMD | GPU | ✅ | ✅ |
+| 华为 | Ascend NPU | ✅ | ✅ |
+| 寒武纪 | MLU | ✅ | ✅ |
+| 海光 | DCU | ✅ | ✅ |
+
+> 💡 HAMi 是 2026 年云原生 GPU 共享的首选方案，支持多厂商异构集群，显存+算力双隔离。

@@ -116,3 +116,89 @@ sources: []
 3. **特征监控**：监控特征漂移，及时告警
 4. **与训练集成**：Feature Store 与训练流水线集成
 5. **权限控制**：特征访问权限控制
+
+## 2026 Feature Store 生态
+
+| 工具 | 说明 | 状态 |
+|------|------|------|
+| **Feast** | 开源 Feature Store | GA |
+| **Tecton** | 企业级 Feature Store | GA |
+| **Hopsworks** | 开源 + 企业版 | GA |
+| **AWS SageMaker FS** | AWS 托管 | GA |
+| **Databricks FS** | Databricks 集成 | GA |
+
+## 架构：Feature Store 流程
+
+```
+数据源 → 特征计算 → Feature Store (离线/在线)
+                          ↓
+        训练: 离线特征 → 训练数据
+        推理: 在线特征 → 实时预测
+```
+
+## Feast 示例
+
+```python
+from feast import FeatureStore, Entity, FeatureView, Field
+from feast.types import Float32, Int64
+from datetime import timedelta
+
+# 定义实体
+user = Entity(name="user_id", join_keys=["user_id"])
+
+# 定义特征视图
+user_features = FeatureView(
+    name="user_features",
+    entities=[user],
+    ttl=timedelta(days=7),
+    schema=[
+        Field(name="age", dtype=Int64),
+        Field(name="income", dtype=Float32),
+        Field(name="click_rate", dtype=Float32),
+    ],
+    source=BigQuerySource(
+        table="project.dataset.user_features",
+        timestamp_field="event_timestamp",
+    ),
+)
+
+# 获取训练数据
+store = FeatureStore(repo_path=".")
+training_df = store.get_historical_features(
+    entity_df=entity_df,
+    features=["user_features:age", "user_features:income"],
+).to_df()
+
+# 获取在线特征
+features = store.get_online_features(
+    features=["user_features:age", "user_features:click_rate"],
+    entity_rows=[{"user_id": 123}],
+).to_dict()
+```
+
+## 延伸阅读
+
+- [[概念/MLOps/data-pipeline|Data Pipeline]] — 数据管道
+- [[概念/MLOps/experiment-tracking|Experiment Tracking]] — 实验跟踪
+- [[概念/MLOps/model-registry|Model Registry]] — 模型注册
+
+> ℹ️ Feature Store 是 ML 特征管理平台，实现特征复用、一致性保证和实时/离线特征服务。
+
+## 生产最佳实践
+
+1. **特征目录**：建立特征目录，方便发现和复用
+2. **特征监控**：监控特征漂移，及时告警
+3. **与训练集成**：Feature Store 与训练流水线集成
+4. **权限控制**：特征访问权限控制
+5. **特征版本**：特征定义版本控制
+6. **在线/离线一致**：保证训练和推理特征一致
+7. **特征血缘**：跟踪特征来源和转换
+8. **性能优化**：在线特征低延迟服务
+
+## 检查清单
+
+- [ ] 特征目录已建立
+- [ ] 特征监控已配置
+- [ ] 在线/离线特征一致
+- [ ] 权限控制已配置
+- [ ] 特征版本控制已启用

@@ -139,3 +139,66 @@ GQA/MLA：直接减少需要保存的 KV 数量
 - [[概念/LLM/attention-variants]] — 注意力变体
 - [[部署推理/Caching/KV_Cache_Deep_Dive]] — KV Cache 深度研究
 - [[部署推理/Inference_Performance/Long_Context_Inference_2026]] — 长上下文推理 2026
+
+## 2026 KV Cache 压缩技术全景
+
+| 技术 | 压缩比 | 原理 | 质量影响 | 状态 |
+|------|:------:|------|:--------:|:----:|
+| **GQA** | 4-8x | 共享 KV 头 | 极小 | GA |
+| **MQA** | 8-16x | 单 KV 头 | 小 | GA |
+| **MLA** | 10-20x | 低秩分解 | 极小 | GA |
+| **FP8 KV** | 2x | 精度降低 | 极小 | GA |
+| **INT4 KV** | 4x | 量化 | 小 | GA |
+| **H2O** | 5-10x | Token 稀疏化 | 中 | 研究 |
+| **SnapKV** | 5-10x | 智能驱逐 | 小 | 研究 |
+| **StreamingLLM** | ∞ | 滑动窗口 | 中 | GA |
+
+## 压缩技术对比
+
+| 维度 | 架构级 (GQA/MLA) | 量化级 (FP8/INT4) | 稀疏级 (H2O) |
+|------|:--------------:|:--------------:|:------------:|
+| 压缩比 | 4-20x | 2-4x | 5-10x |
+| 质量损失 | 极小 | 小 | 中 |
+| 实现复杂度 | 高 (训练时) | 低 (推理时) | 中 |
+| 硬件要求 | 无 | H100+ (FP8) | 无 |
+| 生产就绪 | ✅ | ✅ | ⚠️ |
+
+## 生产配置示例
+
+```python
+# vLLM 中启用 KV Cache 优化
+from vllm import LLM
+
+llm = LLM(
+    model="deepseek-ai/DeepSeek-V3",  # 原生 MLA
+    dtype="float8",                    # FP8 精度
+    kv_cache_dtype="fp8",             # KV Cache FP8
+    max_model_len=128000,              # 128K 上下文
+    gpu_memory_utilization=0.90,
+)
+```
+
+## 生产最佳实践
+
+1. **架构级优先**: 选择原生 GQA/MLA 模型，压缩效果最佳
+2. **FP8 KV Cache**: H100+ 必开，显存减半且质量保留 >99%
+3. **长上下文必用**: >32K 上下文时 KV Cache 压缩是必须的
+4. **监控显存**: 跟踪 KV Cache 占用，避免 OOM
+5. **与推测解码协同**: 压缩后的 KV Cache 与 speculative decoding 可叠加优化
+6. **Token 稀疏化谨慎**: H2O/SnapKV 在生产中稳定性待验证
+
+## 显存计算示例
+
+```
+模型: Llama-4-70B (GQA, 8 KV heads)
+上下文: 128K tokens
+精度: FP16
+
+KV Cache 显存 = 2 × n_layers × n_kv_heads × head_dim × seq_len × bytes
+           = 2 × 80 × 8 × 128 × 128000 × 2 bytes
+           = ~42 GB (FP16)
+           = ~21 GB (FP8)  ← 压缩 2x
+
+对比 MLA (DeepSeek-V3):
+           = ~4 GB (MLA 压缩后)  ← 压缩 10x+
+```

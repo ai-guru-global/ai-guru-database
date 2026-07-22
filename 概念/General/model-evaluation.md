@@ -134,3 +134,69 @@ aliases:
 3. **评估集管理**：定期更新评估集防止过拟合，保持与生产分布一致
 4. **回归测试**：每次模型更新必须跑完整评估套件，设置质量门禁
 5. **人工+自动**：自动评估做初筛，关键决策仍需人工审核确认
+
+## 评估流水线示例
+
+```python
+from opencompass import OpenCompass
+from lm_eval import evaluator
+
+# 1. 自动化基准评估
+results = evaluator.simple_evaluate(
+    model="hf",
+    model_args="pretrained=meta-llama/Llama-3-70B-Instruct",
+    tasks=["mmlu", "gsm8k", "humaneval", "mt_bench"],
+    batch_size=8,
+)
+
+# 2. LLM-as-Judge 评估
+from langsmith import Client
+client = Client()
+judge_results = client.run_on_dataset(
+    dataset_name="production-qa-samples",
+    llm_or_chain_to_evaluate=production_chain,
+    evaluation=[
+        {"evaluator": "qa_correctness", "criteria": "accuracy"},
+        {"evaluator": "qa_helpfulness", "criteria": "helpfulness"},
+    ],
+)
+
+# 3. 质量门禁
+assert results["mmlu"] >= 0.82, "MMLU 回归"
+assert results["gsm8k"] >= 0.90, "GSM8K 回归"
+print("✅ 所有评估门禁通过")
+```
+
+## 评估方法对比
+
+| 方法 | 适用场景 | 成本 | 可靠性 | 规模 |
+|------|----------|------|--------|------|
+| 自动基准（MMLU等） | 能力回归检测 | 低 | 中 | 大 |
+| LLM-as-Judge | 开放域质量 | 中 | 中-高 | 大 |
+| 人工评估 | 关键决策 | 高 | 高 | 小 |
+| A/B 测试 | 生产验证 | 中 | 高 | 大 |
+| 红队测试 | 安全性 | 中 | 高 | 中 |
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| 基准分数高但用户体验差 | 评估集与生产分布不一致 | 使用生产日志构建评估集 |
+| LLM-Judge 偏见 | 位置偏见/长度偏见 | 多次随机排序 + 取平均 |
+| 评估结果不可复现 | 随机种子/温度未固定 | 固定 seed + temperature=0 |
+| 过拟合评估集 | 评估集长期未更新 | 每季度更新 20% 评估数据 |
+
+## 生产检查清单
+
+1. ✅ 建立多维度评估体系（准确性 + 安全性 + 延迟 + 成本）
+2. ✅ CI/CD 集成自动评估，设置质量门禁
+3. ✅ 评估集与生产分布保持一致
+4. ✅ 每次模型更新跑完整回归测试
+5. ✅ 关键决策结合人工审核
+6. ✅ 定期红队测试 + 安全扫描
+
+## 总结
+
+模型评估是 AI 系统质量保障的核心环节，2026 年的最佳实践是“自动基准 + LLM-Judge + 人工审核 + A/B 测试”四层评估体系。评估不是一次性活动，而是贯穿模型全生命周期的持续过程。
+
+> 💡 评估的核心原则：“你无法改进你无法度量的东西”——先建立可量化的评估基线，再谈优化。

@@ -127,3 +127,75 @@ OCR系统由文字检测+文字识别两阶段组成。经典CRNN架构采用CNN
 3. **推理优化**：生产部署使用 TensorRT/ONNX 加速推理
 4. **边缘部署**：实时场景考虑边缘设备部署，降低延迟
 5. **持续评估**：生产环境持续监控模型准确率，检测数据漂移
+
+## 2026 计算机视觉生态
+
+| 方向 | 代表模型 | 应用 | 状态 |
+|------|----------|------|------|
+| **图像分类** | ViT / ConvNeXt | 通用分类 | GA |
+| **目标检测** | YOLOv10 / RT-DETR | 实时检测 | GA |
+| **语义分割** | SAM 2 / Mask2Former | 图像分割 | GA |
+| **姿态估计** | ViTPose / HRNet | 人体姿态 | GA |
+| **3D 视觉** | NeRF / 3D Gaussian | 3D 重建 | GA |
+| **视觉基础模型** | DINOv2 / SAM | 通用表示 | GA |
+
+## 视觉 Transformer 架构
+
+```
+ViT 架构:
+输入图像 (224×224×3)
+    │
+    ▼
+Patch Embedding (16×16 patches)
+    │
+    ▼
+[CLS] + Patch Tokens + Position Embedding
+    │
+    ▼
+Transformer Encoder × N
+    │
+    ▼
+[CLS] Token → 分类头 → 输出
+```
+
+## 目标检测部署示例
+
+```python
+# 使用 YOLOv10 进行目标检测
+from ultralytics import YOLO
+
+# 加载模型
+model = YOLO("yolov10x.pt")
+
+# 推理
+results = model("image.jpg")
+
+# 处理结果
+for r in results:
+    boxes = r.boxes
+    for box in boxes:
+        print(f"Class: {box.cls}, Conf: {box.conf:.2f}")
+
+# 导出 TensorRT
+model.export(format="engine", half=True)
+```
+
+## 延伸阅读
+
+- [[概念/Vision/generative-vision-models|生成式视觉模型]] — 图像生成
+- [[概念/Vision/vision-language-model|视觉语言模型]] — 图文理解
+- [[概念/Vision/video-generation|视频生成]] — 视频生成技术
+- [[概念/Inference/tensorrt|TensorRT]] — 推理加速
+
+> ℹ️ 计算机视觉是 AI 最成熟的领域之一，ViT 架构已成为主流。
+
+## CV 任务性能基准 (2026)
+
+| 任务 | 模型 | 指标 | 性能 |
+|------|------|------|------|
+| **ImageNet 分类** | ViT-L | Top-1 Acc | 90.5% |
+| **COCO 检测** | YOLOv10x | mAP | 54.4 |
+| **COCO 分割** | SAM 2 | mIoU | 82.1 |
+| **实时检测** | RT-DETR | FPS | 120+ |
+
+> 生产环境建议使用 TensorRT/ONNX 加速推理，实时场景考虑边缘部署。

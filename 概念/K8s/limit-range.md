@@ -123,3 +123,82 @@ kubectl run overload --image=nginx --requests='cpu=5' --limits='cpu=6' -n ai-wor
 2. **设置默认值**：为未声明资源的 Pod 提供默认值
 3. **限制最大值**：防止单个容器占用过多资源
 4. **多租户模板**：按 Namespace 模板化下发 LimitRange
+
+## LimitRange vs ResourceQuota
+
+| 特性 | LimitRange | ResourceQuota |
+|------|------|------|
+| 作用对象 | 单个容器/Pod | Namespace 总量 |
+| 功能 | 默认值/最大最小值 | 总配额限制 |
+| 粒度 | 细粒度 | 粗粒度 |
+| 配合使用 | ✅ 推荐 | ✅ 推荐 |
+
+## LimitRange 配置示例
+
+```yaml
+apiVersion: v1
+kind: LimitRange
+metadata:
+  name: ml-limits
+  namespace: ml-team
+spec:
+  limits:
+  # 容器级限制
+  - type: Container
+    default:           # 默认 limits
+      cpu: "2"
+      memory: 4Gi
+    defaultRequest:    # 默认 requests
+      cpu: 500m
+      memory: 1Gi
+    max:               # 最大值
+      cpu: "16"
+      memory: 64Gi
+      nvidia.com/gpu: "8"
+    min:               # 最小值
+      cpu: 100m
+      memory: 128Mi
+  # Pod 级限制
+  - type: Pod
+    max:
+      cpu: "32"
+      memory: 128Gi
+      nvidia.com/gpu: "8"
+```
+
+## AI 场景 LimitRange 模板
+
+| 场景 | CPU | 内存 | GPU |
+|------|------|------|------|
+| 开发测试 | 100m-4 | 256Mi-8Gi | 0-1 |
+| 训练任务 | 1-16 | 4Gi-64Gi | 1-8 |
+| 推理服务 | 500m-8 | 1Gi-32Gi | 1-4 |
+| 数据处理 | 100m-8 | 256Mi-16Gi | 0 |
+
+## 默认值注入流程
+
+| 步骤 | 说明 |
+|------|------|
+| 1 | 用户创建 Pod (未声明资源) |
+| 2 | LimitRange 注入默认 requests |
+| 3 | LimitRange 注入默认 limits |
+| 4 | 验证是否在 max/min 范围内 |
+| 5 | Pod 创建成功 |
+
+> 💡 LimitRange 是 K8s 资源默认值管理工具，2026 年 AI 平台推荐 LimitRange + ResourceQuota 组合实现精细化资源管理。
+
+## 常用命令
+
+| 命令 | 用途 |
+|------|------|
+| `kubectl get limitrange -n <ns>` | 查看 LimitRange |
+| `kubectl describe limitrange <name> -n <ns>` | 详情 |
+| `kubectl delete limitrange <name> -n <ns>` | 删除 |
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| Pod 创建失败 | 超出 max 限制 | 调整资源请求 |
+| 默认值不生效 | LimitRange 未创建 | 检查 Namespace |
+| GPU 限制无效 | 未配置 GPU 限制 | 添加 nvidia.com/gpu |

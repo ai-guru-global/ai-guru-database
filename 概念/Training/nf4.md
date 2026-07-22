@@ -163,3 +163,40 @@ QLoRA = NF4 量化 + 双重量化 + 分页优化器
 3. **适用场景**：NF4 主要用于训练，推理用 AWQ/GPTQ
 4. **显存估算**：70B NF4 约需 35GB 显存
 5. **框架支持**：使用 bitsandbytes + PEFT 组合
+
+## 2026 NF4 生态现状
+
+| 框架/工具 | 支持 | 特色 | 状态 |
+|------|------|------|------|
+| bitsandbytes | ✅ | 原生 NF4 | ✅ 主流 |
+| PEFT/QLoRA | ✅ | 量化微调 | ✅ 主流 |
+| Unsloth | ✅ | 加速训练 | ✅ 主流 |
+| LLaMA-Factory | ✅ | 集成支持 | ✅ 主流 |
+| Axolotl | ✅ | 配置支持 | ✅ 成熟 |
+
+## 检查清单
+
+- [ ] GPU 支持 NF4（Ampere+）
+- [ ] bitsandbytes 版本已更新
+- [ ] 量化精度已验证
+- [ ] 显存已规划
+- [ ] 训练稳定性已确认
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| 精度损失大 | 量化过度 | 改用 INT8 或混合精度 |
+| 训练不稳定 | 学习率太高 | 降低学习率 + warmup |
+| 兼容性问题 | 库版本不匹配 | 更新 bitsandbytes |
+| 显存仍高 | 未启用梯度检查点 | 启用 gradient checkpointing |
+
+## 延伸阅读
+
+- [[概念/Training/qlora|QLoRA]] — 量化 LoRA
+- [[概念/Training/awq|AWQ]] — 激活感知量化
+- [[概念/Training/smoothquant|SmoothQuant]] — 平滑量化
+- [[概念/Training/mixed-precision|Mixed Precision]] — 混合精度
+- [[概念/Inference/model-quantization|Model Quantization]] — 模型量化总览
+
+> ℹ️ NF4 是 QLoRA 的核心量化格式，2026年仍是量化微调的标配，训练用 NF4、推理用 AWQ/GPTQ 是最佳实践。

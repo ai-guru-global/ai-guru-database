@@ -99,9 +99,102 @@ kubectl expose deploy web --type=NodePort --port=80 --target-port=8080
 | **Gateway API** | 下一代入口 API | GA |
 | **Service Internal Traffic Policy** | 本地流量优先 | GA |
 
+## AI 推理场景 Service 配置
+
+```yaml
+# 推理服务 Service
+apiVersion: v1
+kind: Service
+metadata:
+  name: inference-svc
+  namespace: ai-inference
+spec:
+  type: ClusterIP
+  selector:
+    app: inference-server
+  ports:
+    - name: http
+      protocol: TCP
+      port: 80
+      targetPort: 8000
+    - name: grpc
+      protocol: TCP
+      port: 9000
+      targetPort: 9000
+  sessionAffinity: None
+---
+# Headless Service（用于 StatefulSet 推理服务）
+apiVersion: v1
+kind: Service
+metadata:
+  name: inference-headless
+spec:
+  clusterIP: None
+  selector:
+    app: inference-server
+  ports:
+    - port: 8000
+```
+
+## kube-proxy 模式对比
+
+| 模式 | 性能 | 适用规模 | 特点 |
+|------|------|----------|------|
+| **iptables** | 中 | <1000 Service | 默认模式，规则线性增长 |
+| **IPVS** | 高 | >1000 Service | 哈希表查找，支持多种 LB 算法 |
+| **nftables** | 高 | 大规模 | K8s 1.31+ 新选项 |
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| Endpoint 为空 | Label 不匹配 | 检查 selector 与 Pod label |
+| ClusterIP 不通 | kube-proxy 异常 | 检查 kube-proxy 状态和规则 |
+| LoadBalancer Pending | 云资源不足 | 检查 CCM 日志和权限 |
+| DNS 解析失败 | CoreDNS 异常 | 检查 CoreDNS Pod 状态 |
+| 连接超时 | NetworkPolicy 限制 | 检查网络策略规则 |
+
 ## 生产最佳实践
 
 1. **类型选择**：内部用 ClusterIP，外部用 LoadBalancer/Gateway API
 2. **Headless Service**：StatefulSet 用 Headless Service
 3. **会话保持**：需要会话保持时用 SessionAffinity
 4. **健康检查**：配合 readinessProbe 确保流量只到健康 Pod
+5. **IPVS 模式**：大规模集群使用 IPVS 提升性能
+
+## Service 调试命令
+
+```bash
+# 查看 Service 详情
+kubectl describe svc inference-svc -n ai-inference
+
+# 查看 EndpointSlice
+kubectl get endpointslices -n ai-inference -l kubernetes.io/service-name=inference-svc
+
+# 测试集群内 DNS 解析
+kubectl run -it --rm debug --image=busybox --restart=Never -- nslookup inference-svc.ai-inference.svc.cluster.local
+
+# 检查 kube-proxy 模式
+kubectl get configmap kube-proxy -n kube-system -o yaml | grep mode
+
+# 临时端口转发测试
+kubectl port-forward svc/inference-svc 8000:80 -n ai-inference
+```
+
+## 相关概念
+
+- [[概念/ingress|Ingress]] — 七层入口
+- [[概念/network-policy|NetworkPolicy]] — 网络策略
+- [[概念/kubernetes|Kubernetes]] — 容器编排
+
+## 总结
+
+Service 是 K8s 服务发现和负载均衡的核心机制，通过 Label Selector 关联 Pod。AI 推理服务通常通过 ClusterIP + Ingress/Gateway 暴露，大规模集群使用 IPVS 模式提升性能。
+
+---
+
+> 💡 Service 是 K8s 服务发现和负载均衡的核心，AI 推理服务通常通过 ClusterIP + Ingress/Gateway 暴露。
+
+
+
+

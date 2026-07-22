@@ -168,3 +168,36 @@ Block Table: A→[1,5,8]  B→[2,6]  C→[3,7]
 3. **块大小调优**：根据序列长度调整 block_size，平衡内存与性能
 4. **与 Continuous Batching 配合**：PagedAttention + Continuous Batching 最大化吐吐量
 5. **监控内存使用**：监控 KV Cache 内存占用，避免 OOM
+6. **推理引擎选择**：vLLM/SGLang 默认启用 PagedAttention
+7. **长上下文场景**：长上下文请求占用显存大，PagedAttention 必不可少
+
+## PagedAttention 工作原理
+
+```
+传统 KV Cache 管理:
+[Request 1: ████████████________]  <- 预分配，有碎片
+[Request 2: ██████______________]  <- 预分配，有碎片
+[Request 3: 等待内存释放...      ]  <- 无法分配
+
+PagedAttention 管理:
+[Block Pool: [B1][B2][B3][B4][B5][B6][B7][B8]...]
+[Request 1: B1 -> B3 -> B5 -> B7]  <- 按需分配，无碎片
+[Request 2: B2 -> B4]              <- 按需分配，无碎片
+[Request 3: B6 -> B8]              <- 可以分配
+```
+
+## 延伸阅读
+
+- [[概念/Inference/kv-cache|KV Cache]]
+- [[概念/Inference/continuous-batching|Continuous Batching]]
+- [[概念/LLM/vllm|vLLM]]
+- [[部署推理/Inference_Engines/vLLM_Deep_Dive|vLLM 深度解析]]
+
+> ℹ️ PagedAttention 是 vLLM 的核心创新，已成为 LLM 推理服务的事实标准。
+
+## 延伸阅读
+
+- [[概念/LLM/kv-cache|KV Cache]] — PagedAttention 管理对象
+- [[概念/LLM/radix-attention|RadixAttention]] — 前缀缓存优化
+- [[概念/LLM/llm-inference-engine|推理引擎]] — 引擎全景
+- [[概念/LLM/grouped-query-attention|GQA]] — 注意力架构优化

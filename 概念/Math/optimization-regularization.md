@@ -163,3 +163,62 @@ FP16 加速计算 + FP32 保证精度。损失缩放避免 FP16 下溢，主权�
 3. **梯度裁剪**：训练大模型必须梯度裁剪
 4. **正则化平衡**：正则化强度需要调优
 5. **大 batch 训练**：大 batch 训练需要调整学习率
+
+## 2026 优化器生态
+
+| 优化器 | 特点 | 适用 | 状态 |
+|--------|------|------|------|
+| **AdamW** | 解耦权重衰减 | 通用首选 | GA |
+| **Lion** | 符号更新 | 大模型 | GA |
+| **Sophia** | 二阶信息 | 大模型 | 研究 |
+| **Adafactor** | 内存高效 | 大模型 | GA |
+| **LAMB** | 大 batch | 分布式 | GA |
+
+## 正则化方法对比
+
+| 方法 | 原理 | 效果 | 适用 |
+|------|------|------|------|
+| **L1 (Lasso)** | 绝对值惩罚 | 稀疏化 | 特征选择 |
+| **L2 (Ridge)** | 平方惩罚 | 平滑化 | 通用 |
+| **Dropout** | 随机失活 | 防过拟合 | 深度学习 |
+| **Weight Decay** | 权重衰减 | 泛化 | 通用 |
+| **Early Stopping** | 早停 | 防过拟合 | 通用 |
+| **Label Smoothing** | 标签平滑 | 校准 | 分类 |
+
+## 优化器代码示例
+
+```python
+import torch
+from torch.optim import AdamW
+from torch.optim.lr_scheduler import CosineAnnealingLR
+
+# AdamW 优化器
+optimizer = AdamW(
+    model.parameters(),
+    lr=1e-4,
+    betas=(0.9, 0.999),
+    weight_decay=0.01
+)
+
+# 余弦退火学习率调度
+scheduler = CosineAnnealingLR(optimizer, T_max=1000, eta_min=1e-6)
+
+# 训练循环
+for epoch in range(100):
+    for batch in dataloader:
+        loss = model(batch)
+        loss.backward()
+        torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
+        optimizer.step()
+        scheduler.step()
+        optimizer.zero_grad()
+```
+
+## 延伸阅读
+
+- [[概念/Math/neural-networks|神经网络]] — 网络基础
+- [[概念/Training/training-optimization|训练优化]] — 训练技巧
+- [[概念/Math/linear-algebra|线性代数]] — 矩阵运算
+- [[概念/LLM/llm-training-checklist|训练清单]] — LLM 训练
+
+> ℹ️ 优化器和正则化是训练成功的关键，AdamW + 余弦退火是标配。

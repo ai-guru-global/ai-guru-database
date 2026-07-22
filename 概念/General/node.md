@@ -112,3 +112,92 @@ kubectl uncordon worker-01
 3. **节点池**：不同负载用不同节点池
 4. **自动修复**：配置节点自动修复
 5. **资源预留**：节点资源预留
+
+## AI 场景节点规划
+
+| 节点类型 | GPU | 用途 | 调度策略 |
+|----------|-----|------|----------|
+| **训练节点** | A100/H100 ×8 | 大模型训练 | Taint: dedicated=training |
+| **推理节点** | A10/L40 ×4 | 模型服务 | Label: workload=inference |
+| **CPU 节点** | 无 | 数据处理/控制面 | 默认调度 |
+| **混合节点** | T4 ×2 | 开发测试 | 低优先级 |
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| Node NotReady | kubelet 崩溃/网络断开 | 检查 kubelet 日志、重启服务 |
+| Pod Pending | 资源不足/调度约束 | 检查 requests、Taint/Toleration |
+| 磁盘压力驱逐 | 镜像/日志占满磁盘 | 配置 imageGC、日志轮转 |
+| GPU 不可见 | 驱动/Device Plugin 异常 | 检查 nvidia-device-plugin |
+| 节点 OOM | 内存超分严重 | 设置合理 requests/limits |
+
+## 版本兼容性
+
+| 组件 | 推荐版本 | 说明 |
+|------|----------|------|
+| Kubernetes | 1.28+ | 编排平台 |
+| containerd | 1.7+ | 容器运行时 |
+| kubelet | 与 K8s 同版 | 节点代理 |
+| NVIDIA Driver | 535+ | GPU 驱动 |
+| Device Plugin | 0.14+ | GPU 设备插件 |
+
+## 生产检查清单
+
+1. 节点跨可用区部署避免单点
+2. 配置 Node Problem Detector 自动检测故障
+3. GPU 节点安装监控 (DCGM/nvidia-smi)
+4. 设置合理的资源预留 (system-reserved)
+5. 配置 PDB 保护关键服务驱逐
+6. 定期节点健康巡检和补丁更新
+
+## 总结
+
+Node 是 Kubernetes 集群的算力基石，在 AI 场景中承担 GPU 训练、推理服务、数据处理等关键工作负载。合理的节点池规划和调度策略是 AI 基础设施高效运行的前提。
+
+> 💡 Node 管理的核心原则：不同负载用不同节点池，通过 Label/Taint 精确控制调度，确保 GPU 资源用在刀刃上。
+
+## 节点池规划示例
+
+```yaml
+# GPU 训练节点池
+node_pool_training:
+  instance_type: p4d.24xlarge  # 8x A100 80GB
+  labels:
+    workload: training
+    gpu-type: a100-80g
+  taints:
+    - key: nvidia.com/gpu
+      effect: NoSchedule
+  min_nodes: 4
+  max_nodes: 32
+
+# GPU 推理节点池
+node_pool_inference:
+  instance_type: g5.2xlarge    # 1x A10G
+  labels:
+    workload: inference
+    gpu-type: a10g
+  min_nodes: 2
+  max_nodes: 20
+  autoscaling:
+    target_gpu_utilization: 70%
+```
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| GPU 节点 NotReady | 驱动/运行时故障 | 自动重启 + 健康检查 |
+| 节点资源碎片 | 调度不合理 | 整理节点 + Gang Scheduling |
+| 扩容慢 | 节点初始化耗时 | 预热镜像 + 快速启动脚本 |
+| 混合负载干扰 | 未隔离节点池 | Label/Taint 严格隔离 |
+
+## 生产检查清单
+
+1. ✅ 训练/推理节点池严格隔离
+2. ✅ GPU 节点配置健康检查和自动修复
+3. ✅ 自动扩缩容策略（基于 GPU 利用率）
+4. ✅ 节点镜像预热减少启动时间
+5. ✅ 监控节点级 GPU/内存/网络指标
+6. ✅ 定期维护窗口更新驱动和运行时

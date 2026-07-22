@@ -66,9 +66,136 @@ sources: []
 | **多集群** | 跨集群流量管理 | GA |
 | **Wasm 扩展** | 自定义过滤器 | GA |
 
+## 架构组件
+
+| 组件 | 职责 |
+|------|------|
+| **istiod** | 控制面（合并了 Pilot/Citadel/Galley） |
+| **Envoy Sidecar** | 数据面代理，拦截 Pod 流量 |
+| **istio-ingressgateway** | 南北向入口网关 |
+| **istio-egressgateway** | 出站流量网关 |
+| **ztunnel** | Ambient Mesh 零信任隧道 |
+
+## 配置示例
+
+```yaml
+# 金丝雀发布 - VirtualService
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: inference-vs
+spec:
+  hosts:
+    - inference-svc
+  http:
+    - match:
+        - headers:
+            x-canary:
+              exact: "true"
+      route:
+        - destination:
+            host: inference-svc
+            subset: v2
+    - route:
+        - destination:
+            host: inference-svc
+            subset: v1
+          weight: 90
+        - destination:
+            host: inference-svc
+            subset: v2
+          weight: 10
+---
+# DestinationRule
+apiVersion: networking.istio.io/v1beta1
+kind: DestinationRule
+metadata:
+  name: inference-dr
+spec:
+  host: inference-svc
+  subsets:
+    - name: v1
+      labels:
+        version: v1
+    - name: v2
+      labels:
+        version: v2
+  trafficPolicy:
+    connectionPool:
+      http:
+        h2UpgradePolicy: UPGRADE
+    outlierDetection:
+      consecutive5xxErrors: 3
+      interval: 10s
+      baseEjectionTime: 30s
+```
+
+## Ambient Mesh 模式
+
+| 维度 | Sidecar 模式 | Ambient 模式 |
+|------|------------|------------|
+| 资源开销 | ~100MB/Pod | ~10MB/Pod |
+| 延迟 | +1-3ms | +<1ms |
+| 升级影响 | 需重启 Pod | 无感知 |
+| 功能 | 完整 | 完整 |
+| 状态 | 成熟 | GA (1.22+) |
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|----------|
+| Sidecar 未注入 | 缺少 label/annotation | 检查 `istio-injection=enabled` |
+| 503 错误 | 上游未就绪 | 配置 `holdApplicationUntilProxyStarts` |
+| mTLS 失败 | 策略不一致 | 统一 PeerAuthentication |
+| 配置不生效 | CRD 冲突 | 检查 VirtualService 优先级 |
+| 内存占用高 | 连接数过多 | 调整 Sidecar 资源限制 |
+
 ## 生产最佳实践
 
 1. **Sidecar 资源**：设置合理的 CPU/内存请求和限制
 2. **mTLS 策略**：生产环境启用严格 mTLS
 3. **流量管理**：使用 VirtualService 实现金丝雀发布
 4. **可观测性**：启用指标、日志、追踪三位一体
+5. **升级策略**：评估 Ambient Mesh 降低 Sidecar 开销
+
+## 常用命令
+
+```bash
+# 检查 Sidecar 注入状态
+kubectl get pods -n ai-inference -o jsonpath='{.items[*].spec.containers[*].name}'
+
+# 查看 Envoy 配置
+istioctl proxy-config routes <pod-name> -n ai-inference
+
+# 检查 mTLS 状态
+istioctl authn tls-check <pod-name>.ai-inference.svc.cluster.local
+
+# 分析配置问题
+istioctl analyze -n ai-inference
+
+# 查看 Sidecar 日志
+kubectl logs <pod-name> -c istio-proxy -n ai-inference
+```
+
+## 资源调优
+
+| 参数 | 默认值 | 建议值 | 说明 |
+|------|--------|--------|------|
+| proxy CPU request | 100m | 50m | 低流量场景 |
+| proxy Memory request | 128Mi | 64Mi | 低流量场景 |
+| proxy CPU limit | 2 | 1 | 避免资源争抢 |
+| proxy Memory limit | 1Gi | 256Mi | 根据流量调整 |
+
+## 相关概念
+
+- [[概念/linkerd|Linkerd]] — 轻量服务网格
+- [[概念/envoy|Envoy]] — 数据面代理
+- [[概念/service-mesh|Service Mesh]] — 服务网格概念
+
+## 总结
+
+Istio 是功能最全面的服务网格，提供流量管理、安全通信和可观测性。在 AI 推理场景中用于模型灰度发布、服务熔断和流量治理。评估 Ambient Mesh 可降低 Sidecar 开销。
+
+---
+
+> 💡 Istio 是功能最全面的服务网格，在 AI 推理场景中用于模型灰度发布、服务熔断和流量治理。

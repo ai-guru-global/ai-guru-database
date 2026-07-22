@@ -128,3 +128,79 @@ LLMOps面临新挑战：评估从固定指标转向LLM-as-Judge，版本管理�
 3. **CI/CD for ML**：ML 流水线集成 CI/CD
 4. **监控告警**：监控模型性能，漂移告警
 5. **特征存储**：用 Feature Store 实现特征复用
+
+## 2026 MLOps 成熟度模型
+
+| 级别 | 说明 | 特征 |
+|------|------|------|
+| **Level 0** | 手动流程 | 无自动化 |
+| **Level 1** | ML 管道自动化 | 训练自动化 |
+| **Level 2** | CI/CD 管道 | 完整自动化 |
+| **Level 3** | 自动化运维 | 自愈系统 |
+
+## MLOps 核心组件
+
+```
+数据管理 → 实验跟踪 → 模型注册 → 部署 → 监控
+    ↓           ↓           ↓         ↓       ↓
+DVC/LakeFS  MLflow/W&B  MLflow    KServe  Prometheus
+```
+
+## MLOps 工具链对比
+
+| 组件 | 开源工具 | 商业工具 |
+|------|------|------|
+| **实验跟踪** | MLflow, W&B | Neptune, Comet |
+| **模型注册** | MLflow | SageMaker |
+| **部署** | KServe, Seldon | SageMaker, Vertex AI |
+| **监控** | Evidently, Prometheus | Datadog, Fiddler |
+| **编排** | Airflow, Kubeflow | SageMaker Pipelines |
+
+## 延伸阅读
+
+- [[概念/MLOps/experiment-tracking|Experiment Tracking]] — 实验跟踪
+- [[概念/MLOps/model-registry|Model Registry]] — 模型注册
+- [[概念/MLOps/ci-cd|CI/CD]] — 持续集成/交付
+- [[概念/MLOps/observability|Observability]] — 可观测性
+
+> ℹ️ MLOps 是将 DevOps 实践应用于 ML 系统的方法论，目标是实现 ML 系统的可靠、高效交付。
+
+## 生产最佳实践
+
+1. **实验跟踪**：所有实验必须记录参数/指标/代码
+2. **模型版本控制**：模型纳入版本管理
+3. **数据版本控制**：训练数据可追溯
+4. **CI/CD 管道**：自动化测试和部署
+5. **监控告警**：模型性能持续监控
+6. **漂移检测**：数据/模型漂移自动检测
+7. **特征存储**：特征复用和一致性
+8. **A/B 测试**：新模型渐进式发布
+9. **回滚机制**：快速回滚到稳定版本
+10. **文档完善**：模型卡片和文档
+
+## 检查清单
+
+- [ ] 实验跟踪已配置
+- [ ] 模型注册已配置
+- [ ] CI/CD 管道已建立
+- [ ] 监控告警已配置
+- [ ] 漂移检测已配置
+- [ ] 回滚机制已测试
+
+## 工具对比
+
+| 组件 | 开源 | 商业 |
+|------|------|------|
+| **实验跟踪** | MLflow, W&B | Neptune |
+| **模型注册** | MLflow | SageMaker |
+| **部署** | KServe | SageMaker |
+| **监控** | Evidently | Datadog |
+
+## 常见问题
+
+| 问题 | 解决方案 |
+|------|------|
+| 工具太多 | 从核心开始 |
+| 团队抵触 | 渐进式引入 |
+| 成本高 | 用开源工具 |
+| 集成复杂 | 用托管服务 |

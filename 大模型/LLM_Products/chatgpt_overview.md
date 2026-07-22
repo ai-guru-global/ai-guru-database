@@ -110,6 +110,60 @@ tools = [{
 | 输出截断 | max_tokens 不足 | 调大 max_tokens 参数 |
 | 幻觉问题 | 模型编造事实 | 使用 RAG + 事实核查 |
 | API 限流 | 并发超限 | 实现令牌桶限流 |
+| 中文效果差 | 训练数据偏英文 | 使用中文优化提示词 |
+| 成本过高 | 调用频繁 | 缓存 + 批量处理 |
+
+## 版本兼容性
+
+| 组件 | 版本 | 特性 | 备注 |
+|------|------|------|------|
+| OpenAI API | v1 (2026) | 统一接口 | 兼容旧版 |
+| GPT-4o | 2026-05 | 多模态旗舰 | 默认模型 |
+| o3/o4-mini | 2026 | 推理模型 | 复杂任务 |
+| Python SDK | 1.30+ | 官方 SDK | pip install openai |
+| Node SDK | 4.50+ | 官方 SDK | npm install openai |
+
+## 高级 API 用法
+
+```python
+# 结构化输出 + 工具调用
+from openai import OpenAI
+from pydantic import BaseModel
+
+client = OpenAI()
+
+class WeatherInfo(BaseModel):
+    city: str
+    temperature: float
+    condition: str
+
+response = client.beta.chat.completions.parse(
+    model="gpt-4o",
+    messages=[{"role": "user", "content": "北京今天天气如何？"}],
+    response_format=WeatherInfo,
+    tools=[{
+        "type": "function",
+        "function": {
+            "name": "get_weather",
+            "parameters": {"type": "object", "properties": {"city": {"type": "string"}}}
+        }
+    }]
+)
+
+weather = response.choices[0].message.parsed
+print(f"{weather.city}: {weather.temperature}°C, {weather.condition}")
+```
+
+## 生产检查清单
+
+1. ✅ 确认 API Key 权限和速率限制
+2. ✅ 实现请求重试和指数退避
+3. ✅ 使用流式输出提升用户体验
+4. ✅ 设置合理的 max_tokens 和 temperature
+5. ✅ 实现输入安全过滤
+6. ✅ 监控 API 用量和成本
+7. ✅ 实现降级策略（API 不可用时回退）
+8. ✅ 建立评估基准和测试集
 
 ## 相关概念
 
@@ -117,9 +171,33 @@ tools = [{
 - [[大模型/Global_LLM_Ecosystem/README|全球 LLM 生态]]
 - [[概念/openai|OpenAI]]
 - [[概念/prompt-engineering|提示工程]]
+- [[大模型/LLM_Products/perplexity_overview|Perplexity 概览]]
+- [[大模型/Prompt_Engineering/Prompt_Engineering|提示工程指南]]
 
 ## 总结
 
-ChatGPT 是 AI 行业的标杆产品，定义了 LLM 交互的标准范式。2026 年已从纯对话工具演进为集搜索、代码、研究、自动化于一体的 AI 平台。
+ChatGPT 是 AI 行业的标杆产品，定义了 LLM 交互的标准范式。2026 年已从纯对话工具演进为集搜索、代码、研究、自动化于一体的 AI 平台。其 API 生态已成为开发者构建 AI 应用的首选。
 
-> 💡 ChatGPT 的核心价值：将 AI 能力民主化——让每个人都能用自然语言访问最强大的 AI 模型。
+> 💡 ChatGPT 的核心价值：将 AI 能力民主化——让每个人都能用自然语言访问最强大的 AI 模型。在 2026 年，ChatGPT 已不仅是聊天工具，更是完整的 AI 工作平台。
+
+## 附录：ChatGPT 模型选择指南
+
+| 任务类型 | 推荐模型 | 理由 |
+|------|------|------|
+| 简单问答 | GPT-4o mini | 快速、低成本 |
+| 复杂推理 | o3/o4-mini | 深度思考 |
+| 代码生成 | GPT-4o | 代码能力强 |
+| 多模态 | GPT-4o | 图文理解 |
+| 长文本 | GPT-4o | 128K 上下文 |
+| 批量处理 | GPT-4o mini | 成本效益 |
+
+## 附录：ChatGPT API 成本估算
+
+| 模型 | 输入价格 | 输出价格 | 适用场景 |
+|------|------|------|------|
+| GPT-4o | $2.5/1M tokens | $10/1M tokens | 复杂任务 |
+| GPT-4o mini | $0.15/1M tokens | $0.6/1M tokens | 简单任务 |
+| o3 | $10/1M tokens | $40/1M tokens | 深度推理 |
+| o4-mini | $1.1/1M tokens | $4.4/1M tokens | 性价比推理 |
+
+> 💡 选择模型的核心原则：先用小模型验证可行性，再根据需要升级到大模型。

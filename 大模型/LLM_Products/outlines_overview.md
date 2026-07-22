@@ -172,3 +172,29 @@ cfg_gen = outlines.generate.cfg(model, grammar)
 | 多语言输出 | 词表限制 | 使用多语言模型 |
 | 批量处理慢 | 串行生成 | 使用 vLLM 批量推理 |
 | 与 LangChain 集成 | 接口不兼容 | 使用自定义 LLM 包装器 |
+
+## 生产检查清单
+
+1. ✅ 使用 Pydantic 定义清晰的输出结构
+2. ✅ 选择 7B+ 模型确保理解力
+3. ✅ 使用 vLLM 后端提升吞吐量
+4. ✅ 实现约束失败的回退机制
+5. ✅ 对每种输出格式编写单元测试
+6. ✅ 缓存编译后的 FSM
+7. ✅ 监控生成速度和质量
+8. ✅ 实现批量推理优化
+
+## 相关概念
+
+- [[大模型/Structured_Output_Guide|结构化输出指南]]
+- [[大模型/README|NLP & LLMs]]
+- [[概念/outlines|Outlines 概念卡片]]
+- [[概念/structured-output|结构化输出]]
+- [[大模型/LLM_Products/instructor_overview|Instructor 概览]]
+- [[大模型/LLM_Products/chatgpt_overview|ChatGPT 概览]]
+
+## 总结
+
+Outlines 是本地 LLM 结构化输出的最佳方案，通过 FSM 底层约束保证 100% 格式正确。对于需要可靠结构化输出的生产场景，Outlines 是首选工具。2026 年，Outlines 已支持 vLLM、CFG 等高级特性，成为本地 LLM 结构化输出的事实标准。
+
+> 💡 Outlines 的核心价值：让 LLM 输出从"可能正确"变为"一定正确"——通过底层约束而非重试实现 100% 格式保证。在 2026 年，结构化输出已成为 AI 应用的标准实践。 |

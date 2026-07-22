@@ -186,3 +186,41 @@ flowchart LR
 - [[大模型/Fine_tuning_Techniques/Fine_tuning_Techniques]] — 微调技术全景
 - [[大模型/LLM_Architectures/Long_Context_Models_2026]] — 长上下文模型 2026
 - [[大模型/GenAI_L02_Exploring_and_Comparing_LLMs]] — LLM 对比与选型
+- [[大模型/LLM_Fundamentals/llm-nlp|LLM 与 NLP 融合]]
+- [[大模型/LLM_Fundamentals/NLP_Fundamentals|NLP 基础]]
+
+## 版本兼容性
+
+| 组件 | 版本 | 特性 | 备注 |
+|------|------|------|------|
+| HuggingFace | 4.40+ | 统一模型接口 | transformers |
+| vLLM | 0.5+ | 推理优化 | PagedAttention |
+| PyTorch | 2.3+ | 深度学习框架 | CUDA 12.x |
+| DeepSpeed | 0.14+ | 分布式训练 | ZeRO |
+| PEFT | 0.10+ | 参数高效微调 | LoRA/DoRA |
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| 显存不足 | 模型太大 | 量化 + LoRA |
+| 推理慢 | 自回归生成 | Speculative Decoding |
+| 幻觉 | 知识截止 | RAG + 事实核查 |
+| 中文效果差 | 训练数据偏英文 | 使用中文优化模型 |
+
+## 生产检查清单
+
+1. ✅ 确认任务需求和性能要求
+2. ✅ 选择合适的模型（规模/架构）
+3. ✅ 实现推理优化（量化/KV Cache）
+4. ✅ 使用 vLLM 或 TGI 部署
+5. ✅ 实现 RAG 增强知识
+6. ✅ 建立评估基准
+7. ✅ 监控延迟和成本
+8. ✅ 实现安全过滤
+
+## 总结
+
+大语言模型 (LLM) = Transformer 架构 + 海量文本预训练 + 人类反馈对齐。它不"理解"语言，但通过预测下一个 token 的概率分布，涌现出了翻译、推理、编程等惊人能力。2026 年，LLM 已进入推理模型时代，o3、DeepSeek-R1 等模型通过测试时计算扩展实现了深度思考能力。
+
+> 💡 LLM 的核心价值：一个模型统一所有 NLP 任务——从翻译到对话到推理到代码，全部基于同一个 next-token prediction 机制。在 2026 年，LLM 已成为 AI 应用的核心基础设施。

@@ -145,6 +145,27 @@ Attention(Q,K,V) = softmax(QK^T / √d) · V
 | 注意力分散 | 序列太长 | 使用局部注意力 + 全局 token |
 | 训练不稳定 | 学习率过高 | warmup + 梯度裁剪 |
 
+## 版本兼容性
+
+| 组件 | 版本 | 特性 | 备注 |
+|------|------|------|------|
+| PyTorch | 2.3+ | SDPA 原生支持 | 推荐 |
+| Flash Attention | 2.5+ | IO 感知优化 | 必装 |
+| vLLM | 0.5+ | PagedAttention | 推理优化 |
+| xFormers | 0.0.26+ | 内存高效注意力 | 备选 |
+| DeepSpeed | 0.14+ | 分布式训练 | 大模型 |
+
+## 生产检查清单
+
+1. ✅ 启用 Flash Attention 加速
+2. ✅ 使用 GQA/MQA 优化 KV Cache
+3. ✅ 实现 KV Cache 量化（FP8/INT8）
+4. ✅ 配置 PagedAttention（vLLM）
+5. ✅ 对长上下文使用 Ring Attention
+6. ✅ 监控注意力分布
+7. ✅ 实现梯度裁剪
+8. ✅ 建立性能基准
+
 ## 相关阅读
 
 - [[大模型/Transformer_Revolution/Transformer_Revolution]] — Transformer 革命
@@ -153,9 +174,32 @@ Attention(Q,K,V) = softmax(QK^T / √d) · V
 - [[大模型/LLM_Architectures/LLM_Architectures]] — LLM 架构 2026
 - [[概念/transformer-architecture]] — Transformer 架构
 - [[概念/kv-cache]] — KV Cache
+- [[大模型/Transformer/transformer-llm-architecture|Transformer × LLM 架构]]
 
 ## 总结
 
-自注意力机制是 Transformer 的灵魂，也是所有现代 LLM 的核心组件。从标准 MHA 到 GQA、MLA、Flash Attention，注意力机制的每一次优化都直接推动了 LLM 能力的边界。
+自注意力机制是 Transformer 的灵魂，也是所有现代 LLM 的核心组件。从标准 MHA 到 GQA、MLA、Flash Attention，注意力机制的每一次优化都直接推动了 LLM 能力的边界。2026 年，注意力机制继续演进：Flash Attention 3 优化 Hopper GPU、PagedAttention 实现高效推理、稀疏注意力支持超长上下文。
 
-> 💡 自注意力的核心价值：让每个 token 能“看到”所有其他 token——这是 LLM 理解上下文、进行推理的基础。
+> 💡 自注意力的核心价值：让每个 token 能"看到"所有其他 token——这是 LLM 理解上下文、进行推理的基础。在 2026 年，注意力机制的优化仍是 LLM 性能提升的关键。
+
+## 附录：注意力机制公式速查
+
+| 公式 | 说明 |
+|------|------|
+| Attention(Q,K,V) = softmax(QK^T/√d_k)V | 标准注意力 |
+| GQA: Q 分组共享 K,V | 分组查询注意力 |
+| MLA: 压缩 KV 到低维空间 | 多头潜在注意力 |
+| Flash Attention: IO 感知分块计算 | 硬件优化实现 |
+| PagedAttention: KV Cache 分页管理 | 推理优化 |
+
+## 附录：注意力机制变体对比
+
+| 变体 | 复杂度 | 适用场景 | 代表模型 |
+|------|------|------|------|
+| Full Attention | O(n²) | 短序列 | BERT, GPT-2 |
+| Sparse Attention | O(n√n) | 长序列 | Longformer |
+| Linear Attention | O(n) | 超长序列 | Linear Transformer |
+| Flash Attention | O(n²) IO优化 | 训练加速 | 所有现代 LLM |
+| GQA | O(n²) KV压缩 | 推理优化 | Llama 3, Qwen3 |
+
+> 💡 自注意力的本质：让每个 token 能够“看到”序列中的所有其他 token，实现全局信息流动。

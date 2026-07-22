@@ -95,6 +95,37 @@ model = Word2Vec(sentences, vector_size=300, window=5)
 4. **社区参与**：加入 ApacheCN、HuggingFace 社区
 5. **持续跟踪**：关注 arXiv、Papers With Code 最新进展
 
+## 实战项目建议
+
+| 阶段 | 项目 | 技术栈 | 难度 |
+|------|------|------|------|
+| 基础 | 中文文本分类器 | jieba + sklearn | ⭐⭐ |
+| 经典 | 机器翻译系统 | PyTorch + Seq2Seq | ⭐⭐⭐ |
+| 现代 | BERT 微调 NER | HuggingFace | ⭐⭐⭐ |
+| 应用 | RAG 问答机器人 | LangChain + 向量库 | ⭐⭐⭐⭐ |
+| 进阶 | 多模态 Agent | LLM API + MCP | ⭐⭐⭐⭐⭐ |
+
+## 版本兼容性
+
+| 工具 | 推荐版本 | 说明 | 备注 |
+|------|------|------|------|
+| Python | 3.10+ | 基础环境 | 建议用 conda |
+| PyTorch | 2.3+ | 深度学习框架 | CUDA 12.x |
+| HuggingFace | 4.40+ | 模型库 | transformers |
+| jieba | 0.42+ | 中文分词 | 基础 NLP |
+| LangChain | 0.2+ | RAG 框架 | 应用层 |
+
+## 学习路径检查清单
+
+1. ✅ 掌握 Python 编程和数据结构基础
+2. ✅ 理解线性代数和概率论核心概念
+3. ✅ 完成文本预处理实战（分词、向量化）
+4. ✅ 理解 RNN/LSTM 序列建模原理
+5. ✅ 掌握 Transformer 自注意力机制
+6. ✅ 完成 BERT/GPT 微调实战
+7. ✅ 构建一个完整的 RAG 应用
+8. ✅ 了解 LLM Agent 和工具调用
+
 ## 常见问题
 
 | 问题 | 建议 |
@@ -103,6 +134,8 @@ model = Word2Vec(sentences, vector_size=300, window=5)
 | 不知从何入手 | 从 HuggingFace 教程开始实践 |
 | 论文读不懂 | 先看博客解读，再读原论文 |
 | 缺乏 GPU | 使用 Colab/Kaggle 免费 GPU |
+| 中文资源少 | ApacheCN + 知乎 + B站视频 |
+| 跟不上进展 | 关注 arXiv 每日精选 + Papers With Code |
 
 ## Related
 
@@ -111,12 +144,58 @@ model = Word2Vec(sentences, vector_size=300, window=5)
 - [[学习/Courses/apachecn/ailearning_guide|ApacheCN AILearning]]
 - [[概念/transformer-architecture|Transformer 架构]]
 - [[概念/tokenization|分词技术]]
+- [[大模型/LLM_Fundamentals/llm-nlp|LLM 与 NLP 融合]]
+- [[大模型/Prompt_Engineering/Prompt_Engineering|提示工程]]
 
 ## 总结
 
-ApacheCN NLP 学习路径为中文学习者提供了从基础到进阶的完整路线图。2026 年 NLP 已进入 LLM 时代，但经典 NLP 知识仍是理解大模型的基础。
+ApacheCN NLP 学习路径为中文学习者提供了从基础到进阶的完整路线图。2026 年 NLP 已进入 LLM 时代，但经典 NLP 知识仍是理解大模型的基础。建议学习者按阶段推进，每个阶段都要有项目实践，最终构建自己的 AI 应用。
 
-> 💡 学习 NLP 的最佳路径：基础 → 经典 → Transformer → LLM 应用，每个阶段都要有项目实践。
+> 💡 学习 NLP 的最佳路径：基础 → 经典 → Transformer → LLM 应用，每个阶段都要有项目实践。2026 年的 NLP 学习者应该站在巨人的肩膀上，直接以 LLM 为核心展开学习。
+
+## 附录：学习资源链接
+
+| 资源 | 链接 | 说明 |
+|------|------|------|
+| ApacheCN AILearning | https://github.com/apachecn/AiLearning | 中文 AI 学习教程 |
+| HuggingFace NLP Course | https://huggingface.co/learn/nlp-course | 实战 NLP 课程 |
+| CS224N | http://web.stanford.edu/class/cs224n/ | Stanford NLP 课程 |
+| Papers With Code | https://paperswithcode.com/ | 论文 + 代码 |
+| arXiv | https://arxiv.org/ | 最新论文 |
+
+## 附录：NLP 学习路径检查清单
+
+| 阶段 | 检查项 | 完成标志 |
+|------|------|------|
+| 基础 | Python 编程 | 能写文本处理脚本 |
+| 基础 | 线性代数/概率论 | 理解矩阵运算和概率分布 |
+| 经典 | RNN/LSTM | 能实现序列模型 |
+| 现代 | Transformer | 理解自注意力机制 |
+| 应用 | BERT/GPT 微调 | 完成 HuggingFace 微调 |
+| 进阶 | RAG/Agent | 构建完整 AI 应用 |
+
+## 附录：NLP 学习常见误区
+
+| 误区 | 正确做法 |
+|------|------|
+| 只看不练 | 每个阶段都要有项目实践 |
+| 追求完美 | 先完成再完善，迭代优化 |
+| 跳过基础 | 数学和编程基础是必须的 |
+| 只学理论 | 理论与实践结合，动手最重要 |
+| 跟风追新 | 先掌握经典，再跟进前沿 |
+| 只关注英文 | 中文 NLP 有独特挑战（分词、语义） |
+| 忽略评估 | 每个项目都要有量化评估指标 |
+
+## 附录：2026 NLP 学习优先级
+
+| 优先级 | 技能 | 原因 |
+|------|------|------|
+| P0 | Prompt Engineering | LLM 时代核心技能 |
+| P0 | Python + PyTorch | 基础编程能力 |
+| P1 | RAG 应用开发 | 最热门的 LLM 应用模式 |
+| P1 | Transformer 原理 | 理解模型的基础 |
+| P2 | 微调技术 | 定制化模型能力 |
+| P3 | Agent 开发 | 前沿方向 |
 
 ---
 *Last updated: 2026-07-10*

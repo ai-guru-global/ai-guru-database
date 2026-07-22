@@ -149,7 +149,37 @@ flowchart TB
 
 ---
 
-*Last updated: 2026-05-07*
+*Last updated: 2026-07-10*
+
+## 版本兼容性
+
+| 模型 | 版本 | 特性 | 备注 |
+|------|------|------|------|
+| GPT-4o | 2026-05 | 原生多模态 | 推荐 |
+| Claude 3.5 | 2026 | 图片理解 | 推荐 |
+| Gemini 2 | 2026 | 视频理解 | 推荐 |
+| LLaVA | 1.6+ | 开源 | 本地部署 |
+| Qwen-VL | 2.5+ | 中文优化 | 推荐 |
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| 图片识别错误 | 分辨率低 | 使用高清图片 |
+| 响应慢 | 图片太大 | 压缩图片 |
+| 中文效果差 | 训练数据偏英文 | 使用中文优化模型 |
+| 成本高 | 图片 token 多 | 批量处理 + 缓存 |
+
+## 生产检查清单
+
+1. ✅ 确认模型支持的多模态类型
+2. ✅ 优化图片分辨率和大小
+3. ✅ 实现输入安全过滤
+4. ✅ 设置合理的超时时间
+5. ✅ 实现缓存和降级策略
+6. ✅ 监控 API 用量和成本
+7. ✅ 建立评估基准
+8. ✅ 处理隐私和安全问题
 
 ## Related
 
@@ -158,3 +188,21 @@ flowchart TB
 - [[大模型/Fine_tuning_Techniques/Fine_tuning_Techniques.md|Fine_tuning_Techniques]]
 - [[大模型/Fine_tuning_Techniques/Fine_tuning_Techniques_for_dummy.md|Fine_tuning_Techniques_for_dummy]]
 - [[大模型/Fine_tuning_Techniques/Model_Merging_2026.md|Model_Merging_2026]]
+- [[大模型/LLM_Architectures/LLM_Architectures|LLM 架构总览]]
+- [[概念/multimodal-ai|多模态 AI 概念]]
+
+## 总结
+
+多模态模型是 AI 从"只懂文字"到"能看能听"的关键进化。2026 年，GPT-4o、Gemini 2 等原生多模态模型已成为主流，能够同时处理图文音视频。理解多模态模型的工作原理（编码器-对齐-生成器）是构建多模态应用的基础。
+
+> 💡 多模态的核心价值：让 AI 像人类一样，通过多种"感官"综合理解世界——不仅能读文字，还能看图片、听声音、理解视频。
+
+## 附录：多模态模型选择指南
+
+| 任务类型 | 推荐模型 | 理由 |
+|------|------|------|
+| 图片理解 | GPT-4o, Claude 3.5 | 理解力强 |
+| 视频分析 | Gemini 2 | 原生视频支持 |
+| 中文场景 | Qwen-VL | 中文优化 |
+| 本地部署 | LLaVA | 开源、可本地 |
+| 语音交互 | GPT-4o, Gemini | 原生语音 |

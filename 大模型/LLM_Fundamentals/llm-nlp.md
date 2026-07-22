@@ -107,6 +107,47 @@ response = client.chat.completions.create(
 4. **成本优化**：批量处理 + 缓存 + 模型降级
 5. **可靠性**：结构化输出 + 事实核查
 
+## 版本兼容性
+
+| 组件 | 版本 | 特性 | 备注 |
+|------|------|------|------|
+| HuggingFace | 4.40+ | 统一模型接口 | transformers |
+| spaCy | 3.7+ | 工业级 NLP | 传统 NLP |
+| OpenAI API | v1 (2026) | GPT-4o/o3 | LLM 调用 |
+| LangChain | 0.2+ | RAG 框架 | 应用层 |
+| vLLM | 0.5+ | 推理优化 | 本地部署 |
+
+## 性能对比
+
+| 任务 | 传统 NLP | LLM | 混合方案 |
+|------|------|------|------|
+| 情感分析 | 92% (10ms) | 95% (500ms) | 94% (50ms) |
+| NER | 90% (15ms) | 93% (600ms) | 92% (80ms) |
+| 文本摘要 | 75% (50ms) | 88% (1s) | 85% (200ms) |
+| 机器翻译 | 80% (100ms) | 90% (800ms) | 88% (300ms) |
+| 问答 | 70% (30ms) | 85% (1.2s) | 82% (400ms) |
+
+## 生产检查清单
+
+1. ✅ 确认任务类型和性能要求
+2. ✅ 选择合适的模型（专用 vs 通用）
+3. ✅ 实现输入预处理和清洗
+4. ✅ 设置输出格式约束
+5. ✅ 实现缓存和降级策略
+6. ✅ 监控延迟和成本
+7. ✅ 建立评估基准
+8. ✅ 实现安全过滤
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| LLM 输出不稳定 | 温度过高 | 降低 temperature |
+| 延迟太高 | 模型太大 | 使用小模型或缓存 |
+| 成本过高 | 调用频繁 | 批量处理 + 缓存 |
+| 中文效果差 | 训练数据偏英文 | 使用中文优化模型 |
+| 幻觉问题 | 知识截止 | RAG + 事实核查 |
+
 ## Related
 
 - [[大模型/README]]
@@ -116,9 +157,44 @@ response = client.chat.completions.create(
 - [[论文精读/Scaling/GPT3_Deep_Dive]]
 - [[概念/tokenization]]
 - [[概念/prompt-engineering]]
+- [[大模型/LLM_Fundamentals/ApacheCN_NLP_Track|ApacheCN NLP 学习路径]]
+- [[大模型/RAG_Frameworks/RAG_Frameworks|RAG 框架]]
 
 ## 总结
 
-LLM 与 NLP 的融合是 AI 领域最重要的范式转变。LLM 不是替代了 NLP，而是将 NLP 的所有任务统一到一个通用框架下。理解传统 NLP 仍是理解 LLM 的基础。
+LLM 与 NLP 的融合是 AI 领域最重要的范式转变。LLM 不是替代了 NLP，而是将 NLP 的所有任务统一到一个通用框架下。理解传统 NLP 仍是理解 LLM 的基础。2026 年的最佳实践是混合架构：传统 NLP 处理结构化任务，LLM 处理复杂理解和生成。
 
-> 💡 LLM 与 NLP 的关系：NLP 定义了“要解决什么问题”，LLM 提供了“统一的解决方案”——但领域知识和严谨方法仍然不可或缺。
+> 💡 LLM 与 NLP 的关系：NLP 定义了"要解决什么问题"，LLM 提供了"统一的解决方案"——但领域知识和严谨方法仍然不可或缺。在 2026 年，最成功的系统是传统 NLP 与 LLM 的混合体。
+
+## 附录：NLP/LLM 技术栈速查
+
+| 层次 | 技术 | 说明 |
+|------|------|------|
+| 基础 | Python, PyTorch | 编程和深度学习框架 |
+| 模型 | HuggingFace, vLLM | 模型库和推理引擎 |
+| 应用 | LangChain, LlamaIndex | RAG 和 Agent 框架 |
+| 评估 | lm-eval-harness, RAGAS | 模型评估工具 |
+| 部署 | Docker, Kubernetes | 容器化和编排 |
+
+## 附录：NLP 任务与 LLM 能力映射
+
+| NLP 任务 | 传统方法 | LLM 方法 | 混合方案 |
+|------|------|------|------|
+| 文本分类 | SVM/BERT | Zero-shot | 小模型 + LLM 验证 |
+| NER | BiLSTM-CRF | Few-shot | 规则 + LLM |
+| 机器翻译 | Seq2Seq | Prompt | 专用模型 + LLM 润色 |
+| 文本摘要 | Extractive | Generate | 抽取 + LLM 生成 |
+| 问答 | IR + 分类 | RAG | 检索 + LLM 生成 |
+| 关系抽取 | 远程监督 | Few-shot | 规则 + LLM 验证 |
+| 文本生成 | 模板填充 | Prompt | 模板 + LLM 生成 |
+| 对话系统 | 意图识别+槽位 | Chat | 小模型 + LLM |
+
+## 附录：NLP/LLM 融合关键术语
+
+| 术语 | 英文 | 说明 |
+|------|------|------|
+| 预训练 | Pre-training | 在大规模语料上学习通用表示 |
+| 微调 | Fine-tuning | 在特定任务上调整模型 |
+| 涌现能力 | Emergent Abilities | 规模带来的质变 |
+| 上下文学习 | In-Context Learning | 无需微调的任务适应 |
+| 对齐 | Alignment | 使模型输出符合人类意图 |

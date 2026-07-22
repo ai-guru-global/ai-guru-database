@@ -145,3 +145,80 @@ aliases:
 - [[大模型/Prompt_Engineering/Prompt_Engineering_Principles_Ng]] — Ng 提示工程原则
 - [[智能体/Hello_Agents_L08_Memory_RAG]] — 记忆与 RAG
 - [[智能体/Agent_Workflow/Workflow-in-nutshell]] — Agent 工作流总览
+- [[大模型/Prompt_Engineering/Hello_Agents_L04_ReAct|ReAct 模式]]
+
+## 8. 代码示例：ContextBuilder
+
+```python
+from dataclasses import dataclass
+from typing import List, Optional
+
+@dataclass
+class ContextBuilder:
+    """GSSC 上下文构建器"""
+    role: str
+    task: str
+    state: dict
+    evidence: List[str]
+    history: List[dict]
+    max_tokens: int = 8000
+    
+    def gather(self) -> List[str]:
+        """收集所有可用信息"""
+        items = []
+        items.append(f"[Role] {self.role}")
+        items.append(f"[Task] {self.task}")
+        items.append(f"[State] {self.state}")
+        items.extend([f"[Evidence] {e}" for e in self.evidence])
+        items.extend([f"[History] {h}" for h in self.history[-5:]])
+        return items
+    
+    def select(self, items: List[str]) -> List[str]:
+        """选择最相关的信息"""
+        # 简单策略：按相关性排序，截断到 max_tokens
+        return items[:self.max_tokens // 100]
+    
+    def structure(self, items: List[str]) -> str:
+        """结构化组织上下文"""
+        return "\n\n".join(items)
+    
+    def compress(self, context: str) -> str:
+        """压缩过长上下文"""
+        if len(context) > self.max_tokens * 4:
+            # 调用 LLM 进行摘要
+            return self._summarize(context)
+        return context
+    
+    def build(self) -> str:
+        """GSSC 流水线"""
+        items = self.gather()
+        selected = self.select(items)
+        structured = self.structure(selected)
+        return self.compress(structured)
+```
+
+## 9. 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| 上下文超限 | 信息太多 | 压缩整合 |
+| 信息丢失 | 过度压缩 | 结构化笔记 |
+| 检索不准 | 查询模糊 | JIT 上下文 |
+| 长任务失败 | 上下文腐蚀 | 子代理架构 |
+
+## 10. 生产检查清单
+
+1. ✅ 实现 GSSC 上下文流水线
+2. ✅ 设置上下文窗口限制
+3. ✅ 实现压缩整合机制
+4. ✅ 使用结构化笔记持久化
+5. ✅ 对复杂任务使用子代理
+6. ✅ 监控上下文使用率
+7. ✅ 实现 JIT 上下文检索
+8. ✅ 建立上下文质量评估
+
+## 总结
+
+上下文工程是提示工程在 Agent 长程交互场景下的自然演进。它关注如何在有限的上下文窗口内策划并维护最优信息集合，解决上下文腐蚀和长时程任务连贯性问题。GSSC（Gather-Select-Structure-Compress）流水线是上下文工程的核心方法论，配合压缩整合、结构化笔记和子代理架构，可以构建可靠的长程 Agent。
+
+> 💡 上下文工程的核心：不是"塞得越多越好"，而是"选得越准越好"——在有限的上下文窗口内，放入最相关的信息，才能获得最佳的推理效果。

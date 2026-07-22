@@ -119,7 +119,87 @@ sources: []
 
 ---
 
+## 4. 2026 年 Prompt Engineering 新趋势
+
+随着 LLM 能力的提升，Prompt Engineering 也在不断演进：
+
+| 趋势 | 说明 | 代表技术 |
+|------|------|------|
+| **推理模型** | 无需手动 CoT，模型自动思考 | o3, R1, QwQ |
+| **结构化输出** | 原生 JSON Schema 约束 | Structured Outputs |
+| **工具调用** | 函数调用成为标准 | Function Calling, MCP |
+| **多模态** | 图文音视频统一提示 | GPT-4o, Gemini |
+| **Agent** | 自主任务分解与执行 | ReAct, Plan-and-Execute |
+
+## 5. 实战代码示例
+
+```python
+from openai import OpenAI
+
+client = OpenAI()
+
+# 法则一：清晰明确的指令 + 分隔符
+prompt_clear = """
+请总结由三个反引号包裹的文本，要求：
+1. 不超过 50 字
+2. 使用中文
+3. 输出 JSON 格式：{"summary": "..."}
+
+```{text}```
+"""
+
+# 法则二：给模型思考时间 (CoT)
+prompt_cot = """
+请按照以下步骤解决这个数学问题：
+1. 首先，理解题目要求
+2. 然后，列出已知条件
+3. 接着，一步一步推导
+4. 最后，给出答案并验证
+
+问题：{question}
+"""
+
+# 迭代式开发：测试多个 Prompt 变体
+def test_prompts(prompts, test_cases):
+    results = []
+    for prompt in prompts:
+        score = evaluate(prompt, test_cases)
+        results.append((prompt, score))
+    return max(results, key=lambda x: x[1])
+```
+
+## 6. 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| 输出不稳定 | 指令模糊 | 增加明确约束 |
+| 格式错误 | 未指定格式 | 要求 JSON/XML 输出 |
+| 幻觉 | 模型编造 | 要求引用来源 |
+| 过长输出 | 未限制长度 | 指定字数/段落 |
+| 忽略指令 | 指令冲突 | 简化并分层 |
+
+## 7. 生产检查清单
+
+1. ✅ 使用分隔符明确区分指令和数据
+2. ✅ 指定输出格式和长度限制
+3. ✅ 对复杂任务使用 CoT 分步
+4. ✅ 建立测试集评估 Prompt 效果
+5. ✅ 实现 Prompt 版本控制
+6. ✅ 监控生产环境 Prompt 表现
+7. ✅ 定期迭代优化 Prompt
+8. ✅ 防范 Prompt Injection 攻击
+
+---
+
 ## 相关阅读
 - [[大模型/Prompt_Engineering/Prompt_Engineering]]
 - [[智能体/Agentic_Design_Patterns_AndrewNg]]
 - [[模型评估/Evaluation_Tools/LLM_as_Judge_Deep_Dive]]
+- [[大模型/Prompt_Engineering/Hello_Agents_L04_ReAct|ReAct 模式]]
+- [[概念/prompt-engineering|提示工程概念]]
+
+## 总结
+
+吴恩达与 OpenAI 的两大黄金法则是 Prompt Engineering 的基石：清晰明确的指令确保模型理解任务，给模型思考时间确保推理质量。2026 年，随着推理模型的普及，手动 CoT 的需求减少，但这两条法则的核心思想——明确性和结构化思考——仍然是所有 Prompt 设计的基础。
+
+> 💡 Prompt Engineering 的核心：不是写"咒语"，而是写"清晰的任务说明书"——像给一个聪明但缺乏上下文的新员工写工作指南一样。

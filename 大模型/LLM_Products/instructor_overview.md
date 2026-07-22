@@ -150,6 +150,28 @@ result = client.chat.completions.create(
 | 输出质量低 | 模型能力不足 | 使用 GPT-4o 级别模型 |
 | 流式输出慢 | 网络延迟 | 使用异步流式 |
 | 嵌套解析失败 | 层级太深 | 拆分为多次调用 |
+| 验证失败 | 约束太严格 | 调整 Field 约束 |
+
+## 版本兼容性
+
+| 组件 | 版本 | 特性 | 备注 |
+|------|------|------|------|
+| Instructor | 1.3+ | 核心库 | pip install instructor |
+| Pydantic | 2.7+ | 验证引擎 | 高性能 |
+| OpenAI SDK | 1.30+ | API 客户端 | 兼容 |
+| Anthropic SDK | 0.28+ | Claude 支持 | 兼容 |
+| Python | 3.10+ | 运行环境 | 推荐 3.11+ |
+
+## 生产检查清单
+
+1. ✅ 使用 Field 添加约束（gt, lt, pattern）
+2. ✅ 用 field_validator 实现业务规则
+3. ✅ 设置 max_retries=3 平衡可靠性和速度
+4. ✅ 捕获 ValidationError 实现优雅降级
+5. ✅ 对每种 Schema 编写单元测试
+6. ✅ 监控重试率和成功率
+7. ✅ 实现缓存减少重复调用
+8. ✅ 记录 Schema 版本变更
 
 ## 相关概念
 
@@ -157,9 +179,23 @@ result = client.chat.completions.create(
 - [[大模型/README|NLP & LLMs]]
 - [[概念/structured-output|结构化输出]]
 - [[概念/pydantic|Pydantic 数据验证]]
+- [[大模型/LLM_Products/outlines_overview|Outlines 概览]]
+- [[大模型/LLM_Products/chatgpt_overview|ChatGPT 概览]]
 
 ## 总结
 
-Instructor 是 LLM 结构化输出的事实标准，通过 Pydantic 定义输出结构，自动重试确保可靠性。它是将 LLM 输出从“文本”变为“数据”的关键工具。
+Instructor 是 LLM 结构化输出的事实标准，通过 Pydantic 定义输出结构，自动重试确保可靠性。它是将 LLM 输出从"文本"变为"数据"的关键工具。2026 年，Instructor 已支持所有主流 LLM API，成为构建可靠 AI 应用的必备组件。
 
-> 💡 Instructor 的核心价值：让 LLM 输出变成类型安全的 Python 对象——不再需要手动解析 JSON，不再担心格式错误。
+> 💡 Instructor 的核心价值：让 LLM 输出变成类型安全的 Python 对象——不再需要手动解析 JSON，不再担心格式错误。在 2026 年，结构化输出已成为 AI 应用的标准实践。
+
+## 附录：Instructor 模式选择
+
+| 模式 | 说明 | 适用场景 |
+|------|------|------|
+| TOOLS | 工具调用模式 | 默认模式，兼容性好 |
+| TOOLS_STRICT | 严格工具调用 | 需要 100% 格式正确 |
+| JSON | JSON 模式 | 简单结构化输出 |
+| MD_JSON | Markdown JSON | 需要可读性 |
+| FUNCTIONS | 函数调用 | 旧版 API |
+
+> 💡 Instructor 的核心价值：让 LLM 输出可靠的结构化数据，是构建生产级 AI 应用的基础设施。

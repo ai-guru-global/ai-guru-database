@@ -170,3 +170,41 @@ flowchart LR
 - [[大模型/Prompt_Engineering/Prompt_Engineering]] — 提示词工程
 - [[大模型/LLM_Fundamentals]] — 大语言模型基础
 - [[大模型/Transformer_Architecture]] — Transformer 架构详解
+- [[大模型/LLM_Fundamentals/llm-nlp|LLM 与 NLP 融合]]
+- [[大模型/LLM_Fundamentals/ApacheCN_NLP_Track|ApacheCN NLP 学习路径]]
+
+## 版本兼容性
+
+| 工具 | 版本 | 特性 | 备注 |
+|------|------|------|------|
+| HuggingFace | 4.40+ | 统一模型接口 | transformers |
+| spaCy | 3.7+ | 工业级 NLP | 传统 NLP |
+| jieba | 0.42+ | 中文分词 | 中文 NLP |
+| NLTK | 3.8+ | 教学工具 | 学习用 |
+| gensim | 4.3+ | 词向量训练 | Word2Vec |
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| 分词不准 | 词典不全 | 添加自定义词典 |
+| OOV 问题 | 词汇表限制 | 使用 BPE/SentencePiece |
+| 长文本慢 | 序列太长 | 使用 Transformer |
+| 中文效果差 | 训练数据偏英文 | 使用中文优化模型 |
+
+## 生产检查清单
+
+1. ✅ 确认任务类型和性能要求
+2. ✅ 选择合适的分词策略
+3. ✅ 实现文本预处理流水线
+4. ✅ 选择合适的词嵌入方法
+5. ✅ 建立评估基准
+6. ✅ 实现缓存和降级策略
+7. ✅ 监控延迟和成本
+8. ✅ 定期更新模型和词典
+
+## 总结
+
+NLP 是让机器"读懂"人类语言的学科，从分词、词嵌入到序列模型，每一步都在把非结构化的文本转化为机器可理解的数学表示。2026 年，NLP 已进入 LLM 时代，但经典 NLP 知识仍是理解大模型的基础。Transformer 架构统一了几乎所有 NLP 任务，而 BPE/SentencePiece 成为标准的分词方法。
+
+> 💡 NLP 的核心价值：让机器理解人类语言——从"听不懂"到"听得懂"再到"会思考"，每一步都是人工智能的重要突破。

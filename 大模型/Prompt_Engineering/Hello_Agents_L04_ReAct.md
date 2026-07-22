@@ -140,3 +140,77 @@ Reflection 可视为在 ReAct 循环之上增加了一层**元认知（Metacogni
 - [[大模型/Prompt_Engineering/Prompt_Engineering]] — 提示工程基础
 - [[大模型/Prompt_Engineering/GenAI_L05_Advanced_Prompts]] — 高级提示技术
 - [[智能体/Hello_Agents_L06_Frameworks_AutoGen_LangGraph]] — 主流框架实践
+- [[大模型/Prompt_Engineering/Hello_Agents_L09_Context_Engineering|上下文工程]]
+
+## 7. 代码示例：ReAct 实现
+
+```python
+import re
+from openai import OpenAI
+
+client = OpenAI()
+
+def react_agent(question: str, tools: dict, max_steps: int = 5):
+    """ReAct Agent 简化实现"""
+    trajectory = []
+    
+    for step in range(max_steps):
+        # 构建提示
+        prompt = f"问题：{question}\n\n历史轨迹：\n"
+        for t in trajectory:
+            prompt += f"Thought: {t['thought']}\nAction: {t['action']}\nObservation: {t['observation']}\n\n"
+        prompt += "请继续思考并给出下一步行动（Thought/Action/Action Input）或最终答案（Final Answer）："
+        
+        # 调用 LLM
+        response = client.chat.completions.create(
+            model="gpt-4o",
+            messages=[{"role": "user", "content": prompt}]
+        )
+        output = response.choices[0].message.content
+        
+        # 解析输出
+        if "Final Answer:" in output:
+            return output.split("Final Answer:")[1].strip()
+        
+        thought = re.search(r"Thought: (.+)", output)
+        action = re.search(r"Action: (.+)", output)
+        action_input = re.search(r"Action Input: (.+)", output)
+        
+        if action and action_input:
+            tool_name = action.group(1).strip()
+            tool_input = action_input.group(1).strip()
+            observation = tools.get(tool_name, lambda x: "Tool not found")(tool_input)
+            trajectory.append({
+                "thought": thought.group(1) if thought else "",
+                "action": f"{tool_name}[{tool_input}]",
+                "observation": observation
+            })
+    
+    return "达到最大步数，未得到答案"
+```
+
+## 8. 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| 死循环 | 工具调用失败 | 设置最大步数 |
+| 格式解析失败 | 输出不规范 | 增加 few-shot 示例 |
+| 幻觉 | 缺乏事实依据 | 强制工具调用 |
+| 效率低 | 步数太多 | 优化提示词 |
+
+## 9. 生产检查清单
+
+1. ✅ 设置最大步数防止死循环
+2. ✅ 实现工具调用失败重试
+3. ✅ 使用 few-shot 稳定输出格式
+4. ✅ 记录完整轨迹用于调试
+5. ✅ 实现超时机制
+6. ✅ 对工具输入进行验证
+7. ✅ 监控 Agent 执行成本
+8. ✅ 建立评估基准
+
+## 总结
+
+ReAct、Plan-and-Solve 和 Reflection 是三种经典的 Agent 范式，分别适用于动态环境、结构化任务和需要自我修正的场景。亲手实现这些范式是理解 Agent 内部机制的最佳方式。2026 年，这些范式已被集成到 LangChain、AutoGen 等主流框架中，但理解底层原理仍是构建可靠 Agent 的基础。
+
+> 💡 Agent 范式的核心：ReAct 是"边想边做"，Plan-and-Solve 是"三思而后行"，Reflection 是"吾日三省吾身"——三者结合，构建可靠的自主智能体。

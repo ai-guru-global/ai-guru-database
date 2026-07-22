@@ -154,7 +154,37 @@ RetNet 用 **Retention（保留机制）** 代替 Attention：
 
 ---
 
-*Last updated: 2026-06-16*
+*Last updated: 2026-07-10*
+
+## 版本兼容性
+
+| 架构 | 版本 | 特性 | 备注 |
+|------|------|------|------|
+| Transformer | 2017+ | 自注意力 | 主流 |
+| GQA | 2023+ | KV 压缩 | Llama 3, Qwen3 |
+| MLA | 2024+ | 潜在注意力 | DeepSeek-V3 |
+| Mamba | 2024+ | 状态空间 | Jamba |
+| RetNet | 2023+ | 保留机制 | 研究阶段 |
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| 显存不足 | KV Cache 太大 | GQA/MLA + 量化 |
+| 长文本慢 | O(n²) 复杂度 | Mamba/RetNet |
+| 效果下降 | 压缩过度 | 调整压缩比 |
+| 部署复杂 | 新架构不成熟 | 使用成熟框架 |
+
+## 生产检查清单
+
+1. ✅ 确认场景需求（长上下文/低延迟/高并发）
+2. ✅ 选择合适的架构（Transformer/Mamba/RetNet）
+3. ✅ 实现 KV Cache 优化（GQA/MLA/量化）
+4. ✅ 使用 Flash Attention 加速
+5. ✅ 监控显存使用和延迟
+6. ✅ 建立性能基准
+7. ✅ 实现降级策略
+8. ✅ 定期评估新架构
 
 ## Related
 
@@ -166,3 +196,10 @@ RetNet 用 **Retention（保留机制）** 代替 Attention：
 - [[概念/transformer-architecture|Transformer 架构]]
 - [[大模型/LLM_Architecture_Evolution|LLM 架构演进]]
 - [[深度学习/State_Space_Models_2026|状态空间模型 2026]]
+- [[大模型/Transformer/transformer-llm-architecture|Transformer × LLM 架构]]
+
+## 总结
+
+Transformer 是大模型的"标配发动机"，但长文本时它耗油（显存）又慢。KV 压缩、Mamba、RetNet 分别从"省油"和"换发动机"两个方向解决这个难题。2026 年，GQA/MLA 已成为新模型的标配，Mamba 在超长序列场景展现优势，而 Transformer 仍是主流。
+
+> 💡 架构演进的核心：不是"取代 Transformer"，而是"让 Transformer 更高效"——KV 压缩让现有模型支持更长上下文，新架构为特定场景提供替代方案。

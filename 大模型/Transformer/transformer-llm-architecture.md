@@ -118,6 +118,37 @@ Input → LayerNorm → Multi-Head Attention (Causal) → Residual
 - 测试时计算扩展（test-time compute）是否会改变 Transformer 的训练目标设计？
 - MoE 的专家路由是否会成为新的瓶颈？
 
+## 版本兼容性
+
+| 组件 | 版本 | 特性 | 备注 |
+|------|------|------|------|
+| PyTorch | 2.3+ | SDPA 原生支持 | Flash Attention |
+| HuggingFace | 4.40+ | 统一模型接口 | transformers |
+| vLLM | 0.5+ | PagedAttention | 推理优化 |
+| Flash Attention | 2.5+ | IO 感知注意力 | 训练加速 |
+| DeepSpeed | 0.14+ | ZeRO 优化 | 分布式训练 |
+
+## 常见问题
+
+| 问题 | 原因 | 解决方案 |
+|------|------|------|
+| KV Cache 内存爆炸 | 序列太长 | GQA/MQA + PagedAttention |
+| 训练不稳定 | 学习率过高 | Warmup + 余弦退火 |
+| 长文本效果差 | 位置编码外推 | RoPE + YaRN 扩展 |
+| 推理延迟高 | 自回归生成 | Speculative Decoding |
+| 显存不足 | 模型太大 | 量化 + 模型并行 |
+
+## 生产检查清单
+
+1. ✅ 确认架构选择（Dense vs MoE）
+2. ✅ 使用 GQA/MQA 优化 KV Cache
+3. ✅ 实现 Flash Attention 加速
+4. ✅ 配置 RoPE 位置编码
+5. ✅ 使用 vLLM 或 TGI 部署
+6. ✅ 实现量化（AWQ/GPTQ）
+7. ✅ 监控推理延迟和吞吐量
+8. ✅ 建立评估基准
+
 ## Related
 
 - [[大模型/Fine_tuning_Techniques/PEFT_2026]] — PEFT 2026
@@ -127,9 +158,47 @@ Input → LayerNorm → Multi-Head Attention (Causal) → Residual
 - [[概念/transformer-architecture]] — Transformer 架构
 - [[概念/mixture-of-experts]] — MoE 混合专家
 - [[概念/kv-cache]] — KV Cache
+- [[大模型/Transformer_Revolution/Self_Attention_Mechanism|自注意力机制]]
+- [[大模型/LLM_Architectures/LLM_Architectures|LLM 架构总览]]
 
 ## 总结
 
-Transformer 是 LLM 时代的“原子核”，从 BERT 到 GPT 到 MoE 到推理模型，所有创新都是在 Transformer 基础上的演进。Decoder-only + 自回归生成已成为规模化 LLM 的事实标准。
+Transformer 是 LLM 时代的"原子核"，从 BERT 到 GPT 到 MoE 到推理模型，所有创新都是在 Transformer 基础上的演进。Decoder-only + 自回归生成已成为规模化 LLM 的事实标准。2026 年，Transformer 架构继续演进：GQA 优化 KV Cache、MoE 实现稀疏激活、推理模型扩展测试时计算。
 
-> 💡 Transformer 的核心价值：一个架构统一所有 NLP 任务——从翻译到对话到推理到代码，全部基于同一个自注意力机制。
+> 💡 Transformer 的核心价值：一个架构统一所有 NLP 任务——从翻译到对话到推理到代码，全部基于同一个自注意力机制。在 2026 年，Transformer 仍是 LLM 的唯一基座，所有创新都是在其之上的演进。
+
+## 附录：Transformer 架构检查清单
+
+| 检查项 | 说明 |
+|------|------|
+| 注意力类型 | MHA/GQA/MQA/MLA？ |
+| 位置编码 | RoPE/ALiBi/绝对位置？ |
+| FFN 类型 | SwiGLU/GeGLU/标准 FFN？ |
+| 归一化 | Pre-LN/Post-LN/RMSNorm？ |
+| 上下文长度 | 4K/32K/128K/1M+？ |
+| 推理优化 | Flash Attention/KV Cache 量化？ |
+
+## 附录：Transformer 架构演进时间线
+
+| 年代 | 架构 | 代表模型 | 核心创新 |
+|------|------|------|------|
+| 2017 | Encoder-Decoder | Transformer | 自注意力机制 |
+| 2018 | Encoder-only | BERT | 双向预训练 |
+| 2018 | Decoder-only | GPT | 自回归生成 |
+| 2020 | Decoder-only | GPT-3 | 规模化 + 少样本 |
+| 2023 | MoE Decoder | Mixtral | 稀疏专家 |
+| 2024 | MoE Decoder | DeepSeek-V3 | MLA + 稀疏 MoE |
+| 2025 | 推理 Decoder | o3/R1 | 测试时计算扩展 |
+| 2026 | 原生多模态 | GPT-4o/Gemini 2 | 统一架构 |
+
+## 附录：Transformer 关键组件速查
+
+| 组件 | 功能 | 关键参数 |
+|------|------|------|
+| Multi-Head Attention | 并行注意力计算 | num_heads, d_model |
+| Feed-Forward Network | 非线性变换 | d_ff, activation |
+| Layer Normalization | 稳定训练 | Pre-LN vs Post-LN |
+| Positional Encoding | 位置信息 | RoPE, ALiBi |
+| KV Cache | 推理加速 | 显存占用优化 |
+
+> 💡 Transformer 的核心创新：用自注意力机制替代循环结构，实现并行计算和长距离依赖建模。

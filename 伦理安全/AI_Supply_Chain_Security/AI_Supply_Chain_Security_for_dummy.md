@@ -237,3 +237,12 @@ flowchart TB
 - [ ] 常见问题能独立解决
 - [ ] 持续关注前沿趋势
 - [ ] 知识已文档化沉淀
+
+## 相关链接
+
+- [[伦理安全/AI_Supply_Chain_Security/AI_Supply_Chain_Security|AI 供应链安全 (完整版)]] — 本篇小白版对应的详细版
+- [[伦理安全/AI_Supply_Chain_Security/index|AI 供应链安全索引]] — 主题导览
+- [[概念/Safety/supply-chain-security|供应链安全]] — 概念卡片
+- [[概念/K8s/trivy|Trivy]] — 容器镜像漏洞扫描
+- [[概念/K8s/detect-secrets|detect-secrets]] — 密钥泄露检测
+- [[概念/MLOps/data-versioning|数据版本管理]] — 数据供应链管理

@@ -1115,3 +1115,12 @@ Vibe Coding 演进路线:
 ---
 
 *Last updated: 2026-04-11* | Vibe Coding 方法论 v2.0
+
+## 相关链接
+
+- [[编程/Methodology/Vibe_Coding_Production_Practices|Vibe Coding 生产实践]] — 生产环境实践
+- [[编程/Methodology/Agentic_Coding_Methodology|Agentic Coding 方法论]] — 相关编程方法论
+- [[编程/Methodology/index|编程方法论索引]] — 方法论主题导览
+- [[编程/Practice/Vibe_Coding_Getting_Started|Vibe Coding 入门]] — 入门实践
+- [[编程/Practice/Vibe_Coding_Prompt_Templates|Vibe Coding Prompt 模板]] — Prompt 模板
+- [[编程/Coding_Fundamentals/AI_Coding-in-nutshell|AI 编程速览]] — AI 编程全景

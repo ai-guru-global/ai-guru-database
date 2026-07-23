@@ -342,3 +342,12 @@ best_mask = masks[scores.argmax()]  # 取最高分的掩码
 
 ---
 *Last updated: 2026-02-10*
+
+## 相关链接
+
+- [[计算机视觉/Segmentation/Segmentation_for_dummy|图像分割 (小白版)]] — 本篇的零基础版本
+- [[计算机视觉/Segmentation/index|图像分割索引]] — 主题导览
+- [[计算机视觉/Image_Classification_Detection/Object_Detection_Deep_Dive|目标检测深度解析]] — 分割与检测的关系
+- [[概念/Vision/image-segmentation|图像分割]] — 概念卡片
+- [[概念/Vision/sam|SAM]] — 分割代表模型
+- [[计算机视觉/CV_Fundamentals/CV_Fundamentals|计算机视觉基础]] — CV 基础知识

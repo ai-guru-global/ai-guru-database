@@ -265,3 +265,12 @@ AI定价 2025-2026:
 ---
 
 *Last updated: 2026-05-07*
+
+## 相关链接
+
+- [[行业应用/Retail_Ecommerce_index|零售与电商索引]] — 主题导览
+- [[行业应用/index|行业应用首页]] — 行业应用知识总览
+- [[行业应用/Industry_Overview/Industry_Applications-in-nutshell|行业应用速览]] — 全行业速览
+- [[机器学习/Recommendation_Systems/Recommendation_Systems|推荐系统]] — 零售推荐核心技术
+- [[智能体/index|智能体]] — AI 购物助手技术
+- [[RAG系统/index|RAG 系统]] — 商品检索技术

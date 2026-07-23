@@ -222,3 +222,12 @@ sources: []
 ---
 
 *Last updated: 2026-07-02*
+
+## 相关链接
+
+- [[学习/guides/index|学习指南索引]] — 学习指南主题导览
+- [[学习/guides/skills_self_assessment|AI 技能自评清单]] — 项目前的技能定位
+- [[学习/guides/ai_engineering_roadmap_2026|AI 工程师路线图 2026]] — 工程师成长路径
+- [[学习/guides/learning_paths_2026|学习路径 2026]] — 系统化学习路径
+- [[学习/References/Projects/500-ai-projects|500 AI 项目]] — 项目灵感参考
+- [[学习/index|学习首页]] — 学习路径总览

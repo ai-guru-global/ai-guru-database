@@ -142,6 +142,77 @@ aliases:
 - **可观测性**: Traces（LangSmith / Langfuse）、Metrics、Logs
 - **容错**: 重试、降级、超时、熔断
 
+## 核心章节逐章详解
+
+### Ch 1-2 详解: Agent 基础与 LLM 大脑
+
+**Agent 的形式化定义**: 一个 Agent 可以抽象为函数 `Agent(state) → action`，其中 state 包含当前观察、历史记忆、目标。与聊天机器人的关键区别在于 **目标驱动（goal-driven）** 和 **多步闭环（closed-loop）**：
+
+| 维度 | 聊天机器人 (Chatbot) | AI Agent |
+|------|---------------------|----------|
+| 交互模式 | 单轮一问一答 | 多轮、目标驱动 |
+| 状态 | 无状态或短期上下文 | 跨步骤、跨会话记忆 |
+| 行动能力 | 只能输出文本 | 能调用工具、影响外部 |
+| 终止条件 | 用户结束对话 | 目标达成或明确失败 |
+| 错误处理 | 无 | 可反思、重试、回溯 |
+
+**LLM 作为大脑**: Agent 的推理核心是 LLM，但不是"裸"调用 LLM。需要：
+- **System Prompt 设定角色与约束**: 定义 Agent 的身份、能力边界、行为准则
+- **工具描述注入**: 把可用工具的 schema 告诉 LLM
+- **输出解析**: 把 LLM 的文本输出解析为可执行的结构化指令（JSON）
+
+### Ch 3 详解: 工具调用的工程实现
+
+工具调用并非 LLM 原生能力，而是通过提示工程 + 后处理实现：
+
+```
+1. 系统把工具定义（名称、描述、参数 schema）注入 prompt
+2. LLM 输出包含工具调用意图的文本（或结构化 JSON）
+3. 系统解析输出，匹配到对应工具
+4. 执行工具（可能涉及鉴权、限流、超时）
+5. 把工具返回结果拼回上下文
+6. LLM 基于新上下文继续推理或回复
+```
+
+**工具设计原则**:
+- 描述要清晰（LLM 靠描述决定何时调用）
+- 参数 schema 要严格（用 JSON Schema 约束类型）
+- 错误信息要可读（LLM 需理解失败原因以重试）
+- 幂等性（同一调用多次执行结果一致，便于重试）
+
+### Ch 5 详解: 规划模式的深度对比
+
+| 模式 | 机制 | 优势 | 劣势 | 适用场景 |
+|------|------|------|------|---------|
+| **ReAct** | Thought→Action→Observation 循环 | 简单、可调试 | 可能陷入循环 | 简单任务、2-5 步 |
+| **Plan-and-Execute** | 先生成完整计划再执行 | 长程任务可控 | 计划可能脱离实际 | 复杂多步任务 |
+| **Reflexion** | 失败后反思并修正 | 自我改进 | 反思可能不准 | 需要纠错的任务 |
+| **Tree of Thoughts** | 树形探索多路径 | 可回溯、最优 | 计算成本高 | 推理/搜索任务 |
+
+### Ch 7 详解: 多 Agent 协作模式实战
+
+**CrewAI 角色化示例**:
+```python
+# 一个内容创作团队
+researcher = Agent(role='研究员', goal='收集资料')
+writer = Agent(role='撰稿人', goal='撰写初稿')
+editor = Agent(role='编辑', goal='审校润色')
+
+crew = Crew(agents=[researcher, writer, editor],
+            process=Process.sequential)  # 串行流水线
+result = crew.kickoff(topic='AI Agent 发展趋势')
+```
+
+**AutoGen 对话式示例**:
+```python
+# 两个 Agent 对话协作
+coder = AssistantAgent("coder", system_prompt="你是程序员")
+reviewer = AssistantAgent("reviewer", system_prompt="你是代码审查者")
+groupchat = GroupChat(agents=[coder, reviewer], messages=[])
+manager = GroupChatManager(groupchat)
+# coder 写代码 → reviewer 审查 → coder 修改 → 循环直到满意
+```
+
 ## 关键概念与模式
 
 ### ReAct 循环
@@ -167,6 +238,11 @@ Action: reply(列出 5 个航班供用户选择)
               ↓
           重要信息 → 写入长期记忆（Embedding + 存储）
 ```
+
+**记忆的三个层次**（2026 主流设计）:
+- **短期记忆（Working Memory）**: 当前对话窗口内的 Token，受上下文长度限制
+- **长期记忆（Long-term Memory）**: 向量库存储的历史事实，按语义检索召回
+- **情景记忆（Episodic Memory）**: 重要事件的结构化归档（如"用户上周订了机票去上海"）
 
 ### 多 Agent 通信协议（2026 视角）
 
@@ -252,6 +328,33 @@ Action: reply(列出 5 个航班供用户选择)
 - **评估部分较浅**: Agent 评估仍是开放难题，本书未深入
 
 ## 延伸阅读
+
+### Agent 工程的演进时间线
+
+理解本书在 Agent 技术演进中的位置，有助于判断哪些内容仍然有效、哪些已更新：
+
+| 时间 | 里程碑 | 影响 |
+|------|--------|------|
+| 2022 | ReAct 论文（Yao et al.） | 确立 Thought-Action-Observation 范式 |
+| 2023 | AutoGen / LangChain Agents | 框架化，降低开发门槛 |
+| 2024 | CrewAI / LangGraph | 角色化、图结构编排成熟 |
+| 2024 | 本书第 2 版 | 系统化总结上述实践 |
+| 2025 | MCP 协议发布 | 工具调用标准化 |
+| 2026 | A2A / UCP 协议 | Agent 互操作与计算机操控标准化 |
+
+### 从本书到生产的差距清单
+
+读完本书后，要进入生产级 Agent 开发，还需补齐以下能力（本书未深入）：
+
+| 能力 | 本书覆盖 | 生产级要求 | 补充来源 |
+|------|---------|-----------|---------|
+| 框架使用 | 充分 | 同 | 本书 + 官方文档 |
+| 评估体系 | 基础 | 系统化（RAPS 模型） | [[学习/concepts/stage3_engineering]] |
+| 可观测性 | 基础 | Traces/Metrics/Logs 全套 | [[部署推理/]] |
+| 成本控制 | 提及 | 模型路由 + 缓存 + 量化 | [[学习/References/books/ai-engineering-huyen]] |
+| 安全护栏 | 基础 | 输入/输出/工具三层护栏 | [[伦理安全/]] |
+| 协议标准化 | 未覆盖 | MCP/A2A/UCP | 社区文档 |
+| 多 Agent 架构 | 基础 | 系统设计级 | [[学习/References/books/build-multi-agent-system]] |
 
 - [[学习/References/books/prompt-engineering-for-llms|Prompt Engineering for LLMs]] — Agent 交互基础（提示工程）
 - [[学习/References/books/build-multi-agent-system|Building Multi-Agent Systems]] — 多 Agent 架构进阶

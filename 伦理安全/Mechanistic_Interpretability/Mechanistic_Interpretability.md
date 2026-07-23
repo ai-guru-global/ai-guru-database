@@ -748,3 +748,12 @@ for layer in range(model.cfg.n_layers):
 ---
 
 *Last updated: 2026-04-10*
+
+## 相关链接
+
+- [[伦理安全/Mechanistic_Interpretability/Mechanistic_Interpretability_for_dummy|机制可解释性 (小白版)]] — 本篇的零基础版本
+- [[伦理安全/Mechanistic_Interpretability/index|机制可解释性索引]] — 主题导览
+- [[概念/Safety/explainable-ai|可解释 AI]] — 可解释性概念卡片
+- [[概念/LLM/emergent-abilities|涌现能力]] — 可解释性研究的涌现现象
+- [[伦理安全/Value_Alignment/Value_Alignment|价值对齐]] — 可解释性辅助对齐
+- [[大模型/LLM_Architectures/LLM_Internals_Architecture|LLM 内部：架构]] — LLM 内部机制

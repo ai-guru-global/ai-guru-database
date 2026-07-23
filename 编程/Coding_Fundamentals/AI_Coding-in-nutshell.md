@@ -597,3 +597,12 @@ flowchart TD
 ---
 
 *Last updated: 2026-06-05*
+
+## 相关链接
+
+- [[编程/Coding_Fundamentals/AI_Coding_2026_Guide|AI 编程 2026 指南]] — 详细指南
+- [[编程/Coding_Fundamentals/AI_Coding_for_dummy|AI 编程 (小白版)]] — 零基础版本
+- [[编程/index|编程索引]] — AI 编程主题导览
+- [[编程/Methodology/Vibe_Coding_Methodology|Vibe Coding 方法论]] — AI 编程方法论
+- [[智能体/Agentic_Coding_Tools/Agentic_Coding_Tools_Overview|Agentic Coding 工具概览]] — 编程工具全景
+- [[编程/Tools/AI_Coding_Assistants_2026|AI 编程助手 2026]] — 编程助手对比

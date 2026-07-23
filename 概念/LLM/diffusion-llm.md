@@ -231,7 +231,7 @@ def llada_generate(prompt, K=64, length=512):
 ## 相关链接
 
 - [[概念/Vision/stable-diffusion|Stable Diffusion]] — 扩散模型在视觉领域的代表
-- [[概念/Vision/diffusion-models|扩散模型]] — 扩散模型概念总览
+- [[概念/General/diffusion-models|扩散模型]] — 扩散模型概念总览
 - [[概念/LLM/autoregressive-generation|自回归生成]] — 扩散 LLM 对比的自回归生成
 - [[大模型/LLM_Architectures/Transformer_Alternatives|Transformer 替代架构]] — 扩散 LLM 作为替代范式
 - [[概念/Math/probability-statistics|概率统计]] — 扩散过程的数学基础

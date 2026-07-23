@@ -1155,3 +1155,12 @@ flowchart TB
 
 *Last updated: 2026-06-04*
 
+
+## 相关链接
+
+- [[模型训练/Optimization/index|优化索引]] — 优化主题导览
+- [[模型训练/Optimization/Optimizer_Advanced_2026|优化器进阶 2026]] — 优化器选择
+- [[概念/LLM/chinchilla-scaling-laws|Chinchilla 缩放定律]] — 缩放定律概念卡片
+- [[概念/LLM/emergent-abilities|涌现能力]] — 缩放驱动的涌现
+- [[大模型/LLM_Training_Deep_Dive|LLM 训练深度解析]] — 训练实践
+- [[模型训练/Pretraining_Playbook|预训练手册]] — 预训练工程实践

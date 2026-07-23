@@ -1601,3 +1601,13 @@ flowchart TB
 ---
 
 *Last updated: 2026-06-04*
+
+## 相关链接
+
+- [[模型训练/Alignment/index|对齐索引]] — 对齐主题导览
+- [[模型训练/Alignment/RLHF_at_Scale_2026|大规模 RLHF 2026]] — GRPO 的对比方法
+- [[强化学习/RLHF_Alignment/GRPO_Training_Deep_Dive|GRPO 训练深度解析]] — GRPO 训练实践
+- [[概念/Training/grpo|GRPO]] — GRPO 概念卡片
+- [[概念/Training/dpo|DPO]] — 同类对齐方法
+- [[概念/LLM/rlvr|RLVR]] — GRPO 在推理模型中的应用
+- [[大模型/Reasoning_Models/Reasoning_RL_Training_Pipeline|推理模型 RL 训练流水线]] — GRPO 训练推理模型

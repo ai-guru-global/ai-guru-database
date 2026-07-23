@@ -64,7 +64,128 @@ aliases:
 
 ## 核心内容
 
-全书 7 章，每章在前一章代码基础上递进构建，最终得到一个可生成文本的完整 GPT。
+全书 7 章，每章在前一章代码基础上递进构建，最终得到一个可生成文本的完整 GPT。以下是逐章详解。
+
+### 各章代码递进关系
+
+本书最大特色是"代码像搭积木一样层层叠加"。理解这个递进结构至关重要：
+
+```
+Ch 2: 数据处理        → 得到 (input, target) Token 对
+Ch 3: 注意力机制      → MultiHeadAttention 模块
+Ch 4: 拼装 GPT        → 完整 GPTModel 类
+Ch 5: 预训练          → 训练循环 + 加载 GPT-2 权重
+Ch 6: 分类微调        → 加分类头，微调
+Ch 7: 指令微调        → 改造为 ChatGPT 风格
+```
+
+**关键**: 不能跳读——每章代码依赖前一章。建议建立 `llm/` 包目录，逐章添加模块。
+
+### Ch 2 详解: 文本数据处理的工程细节
+
+**BPE 分词的完整实现要点**（Raschka 从零实现而非调库）:
+
+1. **构建词表**: 从训练语料统计相邻 Token 对频率
+2. **迭代合并**: 每轮合并最高频对，直到达到目标词表大小
+3. **编码**: 新文本按学到的合并规则切分
+4. **特殊 Token**: `<|endoftext|>` 标记文档边界
+
+**滑动窗口数据集的注意点**:
+- `stride` 决定样本重叠程度（stride=1 时样本最多但冗余）
+- batch 维度、序列维度、特征维度的对齐
+- 动态 padding vs 固定长度
+
+**Embedding 层的本质**:
+- 是一个 `nn.Embedding(vocab_size, dim)` 查找表
+- 反向传播时只更新被查到的行
+- Token Embedding + Positional Embedding 相加（不是拼接）
+
+### Ch 3 详解: 注意力机制的三层递进教学
+
+这是全书最难也最精华的章节。Raschka 用三层递进讲法：
+
+**第一层 — 简化注意力（无参数）**:
+```python
+# 用原始 Token Embedding 直接算注意力
+attn_scores = inputs @ inputs.T  # 词与词的点积
+attn_weights = softmax(attn_scores)
+context_vec = attn_weights @ inputs
+```
+目的: 让读者先理解"加权求和"的本质。
+
+**第二层 — 引入 Q/K/V 可学习参数**:
+```python
+Q = inputs @ W_Q  # 投影到 Query 空间
+K = inputs @ W_K
+V = inputs @ W_V
+attn = softmax(Q @ K.T / sqrt(d_k)) @ V
+```
+目的: 引入可训练性，让模型学"该关注谁"。
+
+**第三层 — 因果掩码 + 多头**:
+```python
+# 因果掩码：上三角置 -inf
+mask = torch.triu(torch.ones(n, n), diagonal=1).bool()
+attn_scores.masked_fill_(mask, -inf)
+# 多头：复制多组 Q/K/V 并行计算
+```
+目的: 实现 GPT 真正使用的注意力。
+
+**为什么这样教有效**: 每层只增加一个概念复杂度，读者不会一步面对完整的 Q/K/V + 掩码 + 多头。
+
+### Ch 4 详解: GPT 组件的实现要点
+
+**LayerNorm vs BatchNorm**:
+- BatchNorm: 跨样本归一化（适合 CNN）
+- LayerNorm: 跨特征归一化（适合序列，因为序列长度可变）
+
+**GELU vs ReLU**:
+```python
+# GELU 比 ReLU 更平滑，在零点附近可微
+gelu(x) = 0.5 * x * (1 + tanh(sqrt(2/pi) * (x + 0.044715 * x^3)))
+```
+
+**残差连接（Residual）的作用**:
+- 缓解梯度消失（梯度可直接流过 shortcut）
+- 让深层网络可训练（源自 ResNet，详见 [[学习/References/Papers/ResNet_Reading]]）
+
+**TransformerBlock 的完整数据流**:
+```
+x → LayerNorm → MultiHeadAttention → + x (残差) → LayerNorm → FFN → + x → 输出
+```
+
+### Ch 5 详解: 预训练的关键工程
+
+**损失函数**: 交叉熵，预测下一个 Token 的概率分布
+```python
+loss = -sum(log(model(input)[i, target[i]]) for i in range(seq_len))
+```
+
+**AdamW 优化器**: Adam + 权重衰减解耦，是 LLM 训练标准选择
+
+**学习率调度**: Warmup（前期小学习率）+ Cosine Decay（后期衰减），防止训练崩溃
+
+**加载 GPT-2 权重的验证**:
+- 从 OpenAI 发布的权重文件读取参数
+- 逐层映射到自己实现的模型
+- 生成文本验证正确性（如果实现正确，应生成连贯英文）
+
+### Ch 6-7 详解: 微调的两种场景
+
+**分类微调（Ch 6）的关键改动**:
+- 冻结大部分 Transformer 层（只训练最后一两层 + 分类头）
+- 用最后一个 Token 的输出作为整句表示
+- 接一个线性分类头输出类别概率
+
+**指令微调（Ch 7）的数据格式**:
+```
+### Instruction: 判断以下评论是正面还是负面
+### Input: 这个产品太棒了！
+### Response: 正面
+```
+这种 Alpaca 格式让模型学会"按指令行事"，是 ChatGPT 的 SFT 阶段基础。
+
+
 
 ### Ch 1: 理解大型语言模型
 
@@ -281,6 +402,31 @@ GPT-2 small (124M):
 - **不含 RLHF**: 止步于 SFT，对齐技术需另找资料
 
 ## 延伸阅读
+
+### 动手实验清单
+
+读完本书后，建议完成以下验证性实验，巩固理解：
+
+| 实验 | 章节 | 目标 | 验证标准 |
+|------|------|------|---------|
+| 实现 BPE 分词 | Ch 2 | 理解 Tokenizer | 能正确切分新词 |
+| 手推注意力 | Ch 3 | 理解 Q/K/V | 输出与公式一致 |
+| 拼装 GPT | Ch 4 | 理解架构 | 模型能前向传播 |
+| 加载 GPT-2 权重 | Ch 5 | 验证正确性 | 生成连贯英文 |
+| 分类微调 | Ch 6 | 掌握微调 | 分类准确率合理 |
+| 指令微调 | Ch 7 | 掌握 SFT | 能跟随简单指令 |
+
+### 常见踩坑与调试
+
+本书代码虽清晰，但读者实践中常见以下问题：
+
+| 问题 | 原因 | 解决 |
+|------|------|------|
+| 形状不匹配（shape mismatch） | 维度对齐错误 | 检查 batch/seq/dim 维度 |
+| 生成乱码 | 因果掩码未正确应用 | 检查 mask 的上三角设置 |
+| 训练不收敛 | 学习率过大/过小 | 用 Warmup + 调小学习率 |
+| 加载权重失败 | 参数名映射错 | 对照 OpenAI 权重名逐层核对 |
+| 显存不足 | batch/序列太长 | 减小 batch 或用梯度累积 |
 
 - [[学习/References/books/nlp-with-transformers|NLP with Transformers]] — 高层抽象互补
 - [[学习/References/books/hands-on-llms-alammar|Hands-On LLMs]] — 图解式概念互补

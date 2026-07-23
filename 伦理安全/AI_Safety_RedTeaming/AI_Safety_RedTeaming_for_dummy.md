@@ -851,3 +851,12 @@ AI 生成回答后:
 ---
 
 *本文是 [AI_Safety_RedTeaming.md](./AI_Safety_RedTeaming.md) 的简化版,适合零基础读者。完整攻防技术和高级防御策略请参考原文档。*
+
+## 相关链接
+
+- [[伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming|AI 安全与红队测试 (完整版)]] — 本篇小白版对应的详细版
+- [[伦理安全/AI_Safety_RedTeaming/index|AI 安全与红队测试索引]] — 主题导览
+- [[概念/Safety/red-teaming|红队测试]] — 红队测试概念卡片
+- [[概念/Safety/jailbreak|越狱攻击]] — 红队测试的核心攻击手法
+- [[概念/Safety/prompt-injection|提示注入]] — 红队测试重点防御对象
+- [[伦理安全/AI_Security_2026/AI_Security_2026|AI 安全 2026 完全指南]] — 安全工程总览

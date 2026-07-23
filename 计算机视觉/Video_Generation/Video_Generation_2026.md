@@ -676,3 +676,12 @@ class VideoQualityMetrics:
 ---
 
 *Last updated: 2026-04-01* (Post-Sora era market analysis)
+
+## 相关链接
+
+- [[计算机视觉/Video_Generation/Video_Generation_for_dummy|AI 视频生成 (小白版)]] — 本篇的零基础版本
+- [[计算机视觉/Video_Generation/Video_Frontier_Models_2026|视频前沿模型 2026]] — 前沿模型详解
+- [[计算机视觉/Video_Generation/index|视频生成索引]] — 主题导览
+- [[计算机视觉/Generative_Models/Diffusion_Models_Deep_Dive|扩散模型深度解析]] — 视频生成的底层技术
+- [[概念/Vision/video-generation|视频生成]] — 概念卡片
+- [[伦理安全/Deepfake_Security/Deepfake_Security|Deepfake 安全]] — 视频生成的安全影响

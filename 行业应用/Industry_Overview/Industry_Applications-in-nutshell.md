@@ -523,3 +523,12 @@ flowchart TB
 ---
 
 *Last updated: 2026-06-05*
+
+## 相关链接
+
+- [[行业应用/index|行业应用首页]] — 行业应用知识总览
+- [[行业应用/README|行业应用 README]] — 行业应用导览
+- [[行业应用/Finance/index|金融行业]] — 重点行业应用
+- [[行业应用/Healthcare/index|医疗行业]] — 重点行业应用
+- [[行业应用/Autonomous_Driving_index|自动驾驶]] — 重点行业应用
+- [[行业应用/Education/index|教育行业]] — 重点行业应用

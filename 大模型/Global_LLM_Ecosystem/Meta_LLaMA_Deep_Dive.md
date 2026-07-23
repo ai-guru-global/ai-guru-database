@@ -1556,4 +1556,4 @@ LLaMA 模型选择指南
 - [[大模型/Chinese_LLM_Ecosystem/Qwen_Deep_Dive|Qwen 深度解析]] — 开源生态中的另一强力竞争者
 - [[大模型/Edge_LLM/Edge_LLM_Deep_Dive|端侧 LLM 深度解读]] — LLaMA 在端侧部署中的应用
 - [[概念/LLM/llama-series|LLaMA 系列]] — LLaMA 模型家族概念卡片
-- [[概念/Inference/llama-cpp|llama.cpp]] — LLaMA 主流端侧推理引擎
+- [[概念/LLM/llama-cpp|llama.cpp]] — LLaMA 主流端侧推理引擎

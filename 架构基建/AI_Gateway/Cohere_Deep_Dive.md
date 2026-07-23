@@ -352,3 +352,12 @@ co = cohere.Client(
 
 *Last updated: 2026-04-26*
 *Version: 1.0.0*
+
+## 相关链接
+
+- [[架构基建/AI_Gateway/index|AI Gateway 索引]] — 网关主题导览
+- [[架构基建/AI_Gateway/AI_Gateway_2026|AI Gateway 2026]] — 网关综合实践
+- [[架构基建/AI_Gateway/Portkey_Deep_Dive|Portkey 深度解析]] — 同类企业级网关对比
+- [[概念/RAG/embedding-models|Embedding 模型]] — Cohere 核心能力
+- [[概念/RAG/reranker|Rerank]] — Cohere 排序能力
+- [[RAG系统/index|RAG 系统]] — Cohere 服务的核心场景

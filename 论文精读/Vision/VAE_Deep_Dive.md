@@ -317,3 +317,12 @@ z_4 → 控制面部特征
 - Higgins et al., "β-VAE: Learning Basic Visual Concepts" (2017)
 - van den Oord et al., "Neural Discrete Representation Learning" (VQ-VAE, 2017)
 - Rombach et al., "High-Resolution Image Synthesis with Latent Diffusion Models" (2022)
+
+## 相关链接
+
+- [[论文精读/Vision/Diffusion_Models_Deep_Dive|扩散模型论文精读]] — VAE 的直接后继
+- [[论文精读/Vision/GAN_Deep_Dive|GAN 论文精读]] — 同类生成模型对比
+- [[论文精读/Vision/index|视觉论文索引]] — 视觉论文主题导览
+- [[深度学习/Generative_Models/VAE_Deep_Dive|VAE 深度解析]] — VAE 技术详解
+- [[概念/Math/probability-statistics|概率统计]] — 变分推断的数学基础
+- [[概念/Vision/generative-vision-models|生成式视觉模型]] — 生成模型概念

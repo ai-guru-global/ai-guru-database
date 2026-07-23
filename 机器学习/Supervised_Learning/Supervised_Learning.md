@@ -662,3 +662,12 @@ $$Var(\bar{f}) = \rho \sigma^2 + \frac{1-\rho}{m} \sigma^2$$
 
 ---
 *Last updated: 2026-02-10*
+
+## 相关链接
+
+- [[机器学习/Supervised_Learning/index|监督学习索引]] — 主题导览
+- [[机器学习/Unsupervised_Learning/Unsupervised_Learning|无监督学习]] — 监督学习的对应范式
+- [[概念/Math/supervised-learning|监督学习]] — 概念卡片
+- [[概念/Math/unsupervised-learning|无监督学习]] — 对比范式
+- [[机器学习/ML_Fundamentals/ML_Fundamentals|机器学习基础]] — ML 基础知识
+- [[机器学习/index|机器学习首页]] — 机器学习知识总览

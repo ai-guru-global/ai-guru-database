@@ -473,3 +473,12 @@ A: "它看起来很放松惬意,可能正在享受温暖的阳光"
 ---
 
 *本文是多模态视觉技术的简化版,适合零基础读者。*
+
+## 相关链接
+
+- [[计算机视觉/Multimodal_Vision/Multimodal_Vision|多模态视觉 (完整版)]] — 本篇小白版对应的详细版
+- [[计算机视觉/Multimodal_Vision/index|多模态视觉索引]] — 主题导览
+- [[计算机视觉/Multimodal_Vision/CLIP_Deep_Dive|CLIP 深度解析]] — 多模态视觉里程碑模型
+- [[概念/Vision/multimodal-vision|多模态视觉]] — 概念卡片
+- [[大模型/Multimodal_Models/Multimodal_Models_for_dummy|多模态模型 (小白版)]] — 多模态模型基础
+- [[计算机视觉/CV_Fundamentals/CV_Fundamentals|计算机视觉基础]] — CV 基础知识

@@ -26,7 +26,7 @@ summary: 自回归生成是 LLM 推理的基本范式——每次只生成一个
 lifecycle: reviewed
 tier: core
 created: 2026-06-25
-updated: 2026-06-25
+updated: 2026-07-21
 sources: []
 ---
 
@@ -256,3 +256,23 @@ print(tokenizer.decode(input_ids[0], skip_special_tokens=True))
 - [[概念/transformer-architecture|Transformer 架构]]
 - [[概念/paged-attention|PagedAttention]]
 - [[概念/speculative-decoding|推测解码]]
+
+---
+
+## 2026 自回归生成生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Speculative Decoding** | 小模型草稿加速自回归 | GA |
+| **Parallel Decoding** | 并行解码突破自回归瓶颈 | 研究 |
+| **Medusa** | 多头并行预测加速 | GA |
+| **KV Cache 优化** | PagedAttention/MLA 降低显存 | GA |
+| **非自回归探索** | Diffusion LM/MaskGIT 替代方案 | 研究 |
+
+## 生产最佳实践
+
+1. **KV Cache 管理**：启用 PagedAttention 避免显存碎片
+2. **投机解码**：Decode-bound 场景启用 Speculative Decoding
+3. **批处理**：Continuous Batching 提升 GPU 利用率
+4. **序列长度**：合理规划 max_seq_len，避免显存溢出
+5. **流式输出**：生产环境必须启用 streaming 提升用户体验

@@ -24,8 +24,8 @@ sources:
   - "RAG系统/Matryoshka_Representation_Learning_for_dummy.md"
   - "概念/embeddings-vectors-mrl-plain.md"
 created: "2026-06-12"
-updated: "2026-06-15"
-lifecycle: "stable"
+updated: "2026-07-21"
+lifecycle: "reviewed"
 tier: "core"
 aliases:
   - "Matryoshka Representation Learning"
@@ -252,3 +252,23 @@ $$
 - 模型: [nomic-embed-text-v1.5](https://huggingface.co/nomic-ai/nomic-embed-text-v1.5)
 - 模型: [OpenAI text-embedding-3](https://platform.openai.com/docs/guides/embeddings)
 - 相关阅读：[[概念/embedding-models]]、[[概念/vector-database]]、[[概念/rag-systems]]
+
+---
+
+## 2026 MRL 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **text-embedding-3** | OpenAI MRL Embedding 模型 | GA |
+| **Nomic Embed** | 开源 MRL Embedding | GA |
+| **可变维度** | 根据需求选择 Embedding 维度 | GA |
+| **多语言 MRL** | 多语言 MRL 模型 | GA |
+| **量化兼容** | MRL + 量化组合优化 | GA |
+
+## 生产最佳实践
+
+1. **维度选择**：根据存储和精度需求选择合适维度
+2. **截断位置**：MRL 模型截断后需重新归一化
+3. **评估验证**：截断后验证检索质量是否满足需求
+4. **与量化结合**：MRL + INT8 量化进一步降低存储
+5. **模型选择**：优先选择原生支持 MRL 的模型

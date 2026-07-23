@@ -18,8 +18,10 @@ provenance:
   inferred: 0.2
   ambiguous: 0.08
 base_confidence: 0.82
-lifecycle: draft
-lifecycle_changed: 2026-07-11
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
+created: 2026-06-12
+updated: 2026-07-21
 tier: supporting
 created: 2026-07-11T00:00:00Z
 updated: 2026-07-11T00:00:00Z
@@ -600,3 +602,23 @@ class BackdoorWatermarkVerifier:
 - [[概念/Safety/hallucination]] — 幻觉（水印与内容质量的权衡）
 - [[概念/Safety/guardrails]] — AI护栏（水印检测可作为输出护栏）
 - [[概念/Safety/ai-ethics]] — AI伦理（版权与隐私的伦理考量）
+
+---
+
+## 2026 模型水印生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **文本水印** | LLM 输出文本水印 | GA |
+| **图像水印** | 生成图像隐形水印 | GA |
+| **C2PA 标准** | 内容来源认证标准 | GA |
+| **水印检测** | 自动检测 AI 生成内容 | GA |
+| **鲁棒水印** | 抗篡改水印技术 | 研究 |
+
+## 生产最佳实践
+
+1. **合规要求**：部分地区要求 AI 生成内容必须标注
+2. **水印强度**：平衡水印鲁棒性和内容质量
+3. **多模态**：文本/图像/视频都需考虑水印
+4. **检测工具**：部署水印检测工具验证内容来源
+5. **用户告知**：向用户说明内容可能包含水印

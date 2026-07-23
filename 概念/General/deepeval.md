@@ -215,3 +215,11 @@ jobs:
 4. **开源免费**：核心评估功能完全开源
 5. **Confident AI Dashboard**：可选的云端仪表盘，可视化评估趋势
 6. **组合使用**：Ragas 做 RAG 专项深度评估，DeepEval 做全面质量覆盖
+
+## 相关链接
+
+- [[概念/General/trulens|TruLens]] — 同类 LLM 评估框架对比
+- [[概念/LLM/llm-as-judge|LLM as Judge]] — DeepEval 核心评估机制
+- [[概念/General/giskard|Giskard]] — 另一 LLM 评估与测试工具
+- [[概念/Safety/hallucination|幻觉]] — DeepEval 检测的核心问题
+- [[概念/MLOps/observability|可观测性]] — 评估与可观测性的关系

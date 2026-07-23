@@ -20,7 +20,7 @@ sources: []
 
 > **一句话理解**: Braintrust 是开源 LLM 评估平台——evals 数据集、A/B 测试、回归检测、成本追踪，开源的 LLM 质量保障工具。
 
-> 📐 **概念与选型方法论**: LLM 评估流水线（LLM-as-Judge/人审/Eval-Driven）见 [[模型运维/Evaluation/LLM_Evaluation_Pipeline]]。本文聚焦 Braintrust 工具用法。
+> 📐 **概念与选型方法论**: LLM 评估流水线（LLM-as-Judge/人审/Eval-Driven）见 [[模型运维/LLM_Evaluation_Pipeline]]。本文聚焦 Braintrust 工具用法。
 
 ---
 

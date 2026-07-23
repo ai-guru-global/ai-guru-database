@@ -306,3 +306,11 @@ flowchart TB
 ---
 
 *Last updated: 2026-05-07*
+
+## 相关链接
+
+- [[大模型/Fine_tuning_Techniques/README|微调技术概览]] — 微调技术主题导览
+- [[大模型/Fine_tuning_Techniques/PEFT_2026|PEFT 2026 完全指南]] — 参数高效微调（合并常用基础）
+- [[大模型/Fine_tuning_Techniques/Fine_tuning_Techniques|微调技术]] — 微调技术完整版
+- [[概念/Training/lora-peft|LoRA/PEFT]] — 合并通常基于 LoRA 适配器
+- [[概念/LLM/llama-series|LLaMA 系列]] — 合并生态最活跃的开源模型族

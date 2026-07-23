@@ -8,20 +8,20 @@ sources: []
 
 # Concepts
 
-This page indexes the contents of `概念`. Total: 562 files across 12 subdomains.
+This page indexes the contents of `概念`. Total: 584 files across 12 subdomains.
 
 ## Subdomains
 
 | 子域 | 文件数 | 说明 |
 |------|------|------|
 | [[概念/General/]] | 147 | 基础与通识、平台工具、通用概念 |
-| [[概念/LLM/]] | 98 | 大语言模型架构、训练、对齐 |
-| [[概念/K8s/]] | 69 | Kubernetes 与云原生 AI 基础设施 |
+| [[概念/LLM/]] | 116 | 大语言模型架构、训练、对齐 |
+| [[概念/K8s/]] | 70 | Kubernetes 与云原生 AI 基础设施 |
 | [[概念/Training/]] | 49 | 模型训练、分布式训练、优化 |
 | [[概念/Inference/]] | 35 | 推理引擎、服务化、优化 |
 | [[概念/RAG/]] | 33 | 检索增强生成、向量数据库 |
 | [[概念/Agent/]] | 30 | AI 智能体、工具调用、多智能体 |
-| [[概念/GPU/]] | 27 | GPU 硬件、CUDA、集群管理 |
+| [[概念/GPU/]] | 30 | GPU 硬件、CUDA、集群管理 |
 | [[概念/MLOps/]] | 23 | ML 运维、CI/CD、监控 |
 | [[概念/Math/]] | 18 | 数学基础、优化理论 |
 | [[概念/Vision/]] | 18 | 计算机视觉、多模态 |
@@ -39,6 +39,7 @@ This page indexes the contents of `概念`. Total: 562 files across 12 subdomain
 - [[概念/adversarial-attack|Adversarial Attack]]
 - [[概念/adversarial-training|Adversarial Training]]
 - [[概念/affinity|Affinity]]
+- [[概念/agent-benchmarks|Agent Benchmarks]]
 - [[概念/agent-evaluation-benchmarks|Agent Evaluation Benchmarks]]
 - [[概念/agent-framework|Agent Framework]]
 - [[概念/agent-harness|Agent Harness]]
@@ -95,8 +96,11 @@ This page indexes the contents of `概念`. Total: 562 files across 12 subdomain
 - [[概念/chainlit|Chainlit]]
 - [[概念/chaos-engineering|Chaos Engineering]]
 - [[概念/checkpoint|Checkpoint]]
+- [[概念/chinchilla-scaling-laws|Chinchilla Scaling Laws]]
 - [[概念/chinese-ai-chips|Chinese Ai Chips]]
+- [[概念/chinese-llm-others|Chinese Llm Others]]
 - [[概念/chroma|Chroma]]
+- [[概念/claude-series|Claude Series]]
 - [[概念/ci-cd|Ci Cd]]
 - [[概念/ci-integrated-evaluation|Ci Integrated Evaluation]]
 - [[概念/cloud-ai-platform|Cloud Ai Platform]]
@@ -113,6 +117,7 @@ This page indexes the contents of `概念`. Total: 562 files across 12 subdomain
 - [[概念/concept-dependency-graph|Concept Dependency Graph]]
 - [[概念/configmap|Configmap]]
 - [[概念/consensus|Consensus]]
+- [[概念/constitutional-ai|Constitutional Ai]]
 - [[概念/container-security|Container Security]]
 - [[概念/containerd|Containerd]]
 - [[概念/context-engineering|Context Engineering]]
@@ -147,6 +152,7 @@ This page indexes the contents of `概念`. Total: 562 files across 12 subdomain
 - [[概念/deepspeed|Deepspeed]]
 - [[概念/deployment|Deployment]]
 - [[概念/detect-secrets|Detect Secrets]]
+- [[概念/diffusion-llm|Diffusion Llm]]
 - [[概念/dify|Dify]]
 - [[概念/distributed-filesystem|Distributed Filesystem]]
 - [[概念/distributed-parallelism|Distributed Parallelism]]
@@ -154,6 +160,7 @@ This page indexes the contents of `概念`. Total: 562 files across 12 subdomain
 - [[概念/distributed-training|Distributed Training]]
 - [[概念/docling|Docling]]
 - [[概念/dora|Dora]]
+- [[概念/doubao-series|Doubao Series]]
 - [[概念/dpo|Dpo]]
 - [[概念/dra|Dra]]
 - [[概念/dspy|Dspy]]
@@ -164,6 +171,7 @@ This page indexes the contents of `概念`. Total: 562 files across 12 subdomain
 - [[概念/edge-llm|Edge Llm]]
 - [[概念/embedding-models|Embedding Models]]
 - [[概念/embeddings-vectors-mrl-plain|Embeddings Vectors Mrl Plain]]
+- [[概念/emergent-abilities|Emergent Abilities]]
 - [[概念/ensemble-learning|Ensemble Learning]]
 - [[概念/envoy|Envoy]]
 - [[概念/error-budget|Error Budget]]
@@ -194,11 +202,13 @@ This page indexes the contents of `概念`. Total: 562 files across 12 subdomain
 - [[概念/fsdp|Fsdp]]
 - [[概念/function-calling|Function Calling]]
 - [[概念/gemini|Gemini]]
+- [[概念/gemma-series|Gemma Series]]
 - [[概念/generative-vision-models|Generative Vision Models]]
 - [[概念/gguf|Gguf]]
 - [[概念/giskard|Giskard]]
 - [[概念/git-lfs|Git Lfs]]
 - [[概念/gitops|Gitops]]
+- [[概念/glm-4-5-series|Glm 4 5 Series]]
 - [[概念/gpt-series-evolution|Gpt Series Evolution]]
 - [[概念/gptcache|Gptcache]]
 - [[概念/gptq|Gptq]]
@@ -238,6 +248,7 @@ This page indexes the contents of `概念`. Total: 562 files across 12 subdomain
 - [[概念/huggingface|Huggingface]]
 - [[概念/human-ai-interaction|Human Ai Interaction]]
 - [[概念/humanloop|Humanloop]]
+- [[概念/hunyuan-series|Hunyuan Series]]
 - [[概念/hybrid-search|Hybrid Search]]
 - [[概念/hygon|Hygon]]
 - [[概念/image-segmentation|Image Segmentation]]
@@ -249,6 +260,7 @@ This page indexes the contents of `概念`. Total: 562 files across 12 subdomain
 - [[概念/infiniBand|Infiniband]]
 - [[概念/information-theory|Information Theory]]
 - [[概念/ingress|Ingress]]
+- [[概念/internlm-3-series|Internlm 3 Series]]
 - [[概念/ipo|Ipo]]
 - [[概念/istio|Istio]]
 - [[概念/ivf|Ivf]]
@@ -317,6 +329,7 @@ This page indexes the contents of `概念`. Total: 562 files across 12 subdomain
 - [[概念/lora-peft|Lora Peft]]
 - [[概念/lora-qlora-sft-rlhf-dpo|Lora Qlora Sft Rlhf Dpo]]
 - [[概念/mamba|Mamba]]
+- [[概念/mamba-2-ssm|Mamba 2 Ssm]]
 - [[概念/matrix-operations|Matrix Operations]]
 - [[概念/matryoshka-representation-learning|Matryoshka Representation Learning]]
 - [[概念/mcp|Mcp]]
@@ -327,6 +340,7 @@ This page indexes the contents of `概念`. Total: 562 files across 12 subdomain
 - [[概念/milvus|Milvus]]
 - [[概念/mindie|Mindie]]
 - [[概念/miniconda|Miniconda]]
+- [[概念/mistral-series|Mistral Series]]
 - [[概念/mixed-precision|Mixed Precision]]
 - [[概念/mixture-of-experts|Mixture Of Experts]]
 - [[概念/mlflow|Mlflow]]
@@ -370,6 +384,7 @@ This page indexes the contents of `概念`. Total: 562 files across 12 subdomain
 - [[概念/next-token-prediction|Next Token Prediction]]
 - [[概念/nf4|Nf4]]
 - [[概念/node|Node]]
+- [[概念/nsa-sparse-attention|Nsa Sparse Attention]]
 - [[概念/nvidia-gpu|Nvidia Gpu]]
 - [[概念/nvidia-smi|Nvidia Smi]]
 - [[概念/nvlink|Nvlink]]
@@ -396,6 +411,7 @@ This page indexes the contents of `概念`. Total: 562 files across 12 subdomain
 - [[概念/perplexity|Perplexity]]
 - [[概念/persistent-volume-claim|Persistent Volume Claim]]
 - [[概念/persistent-volume|Persistent Volume]]
+- [[概念/phi-series|Phi Series]]
 - [[概念/phoenix-langsmith|Phoenix Langsmith]]
 - [[概念/pipeline-parallelism|Pipeline Parallelism]]
 - [[概念/pissa|Pissa]]
@@ -422,6 +438,7 @@ This page indexes the contents of `概念`. Total: 562 files across 12 subdomain
 - [[概念/promptlayer|Promptlayer]]
 - [[概念/protein-folding|Protein Folding]]
 - [[概念/pruning|Pruning]]
+- [[概念/prm-process-reward-model|Prm Process Reward Model]]
 - [[概念/pytorch|Pytorch]]
 - [[概念/qdrant|Qdrant]]
 - [[概念/qlora|Qlora]]
@@ -457,6 +474,7 @@ This page indexes the contents of `概念`. Total: 562 files across 12 subdomain
 - [[概念/reward-model|Reward Model]]
 - [[概念/reward-modeling|Reward Modeling]]
 - [[概念/rlhf|Rlhf]]
+- [[概念/rlvr|Rlvr]]
 - [[概念/rocm-smi|Rocm Smi]]
 - [[概念/role|Role]]
 - [[概念/rolebinding|Rolebinding]]
@@ -471,6 +489,7 @@ This page indexes the contents of `概念`. Total: 562 files across 12 subdomain
 - [[概念/sealed-secrets|Sealed Secrets]]
 - [[概念/secret|Secret]]
 - [[概念/selector|Selector]]
+- [[概念/self-rewarding|Self Rewarding]]
 - [[概念/self-supervised-learning|Self Supervised Learning]]
 - [[概念/sentencepiece|Sentencepiece]]
 - [[概念/sequence-models|Sequence Models]]
@@ -496,6 +515,7 @@ This page indexes the contents of `概念`. Total: 562 files across 12 subdomain
 - [[概念/stackops|Stackops]]
 - [[概念/state-space-models|State Space Models]]
 - [[概念/statefulset|Statefulset]]
+- [[概念/stepfun-series|Stepfun Series]]
 - [[概念/storage|Storage]]
 - [[概念/storageclass|Storageclass]]
 - [[概念/streamlit|Streamlit]]
@@ -558,5 +578,6 @@ This page indexes the contents of `概念`. Total: 562 files across 12 subdomain
 - [[概念/whylogs|Whylogs]]
 - [[概念/world-models-jepa|World Models Jepa]]
 - [[概念/world-models|World Models]]
+- [[概念/yi-series|Yi Series]]
 - [[概念/zep|Zep]]
 - [[概念/zhipu-glm|Zhipu Glm]]

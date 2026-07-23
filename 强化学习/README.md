@@ -107,3 +107,94 @@ sources: []
 - [[强化学习/Deep_RL/DQN_Deep_Dive]] — DQN_Deep_Dive
 - [[概念/rlhf.md|rlhf]]
 
+## 强化学习核心算法对比
+
+| 算法 | 类型 | 动作空间 | 样本效率 | 典型应用 |
+|------|------|----------|----------|----------|
+| Q-Learning | 值函数 | 离散 | 低 | 表格游戏 |
+| DQN | 值函数+深度 | 离散 | 中 | Atari游戏 |
+| PPO | 策略梯度 | 连续/离散 | 中 | 通用控制 |
+| SAC | Actor-Critic | 连续 | 高 | 机器人控制 |
+| TD3 | Actor-Critic | 连续 | 高 | 连续控制 |
+| Decision Transformer | 序列建模 | 任意 | 高 | 离线RL |
+| GRPO | 策略优化 | 离散(Token) | 中 | LLM对齐 |
+
+## 子域学习路径
+
+| 阶段 | 推荐文档 | 目标 |
+|------|----------|------|
+| 入门 | RL_Foundations/ | 理解MDP、Q-Learning、策略梯度 |
+| 进阶 | Deep_RL/ | 掌握DQN、PPO、SAC |
+| 对齐 | RLHF_Alignment/ | 理解RLHF、DPO、GRPO |
+| 多智能体 | Multi_Agent_RL/ | 协作/竞争博弈 |
+| 具身智能 | Robotics_Embodied_AI/ | VLA、Sim-to-Real |
+| 迁移 | Sim_to_Real/ | 仿真到现实迁移 |
+| 应用 | RL_Applications/ | 推荐、游戏、控制 |
+
+## 常见问题
+
+| 问题 | 解答 |
+|------|------|
+| RL和监督学习的核心区别？ | RL通过延迟奖励学习，无标准答案；监督学习有即时标签 |
+| 为什么RL训练不稳定？ | 数据分布随策略变化（非平稳）、奖励稀疏、高方差 |
+| PPO为什么流行？ | 实现简单、超参不敏感、性能稳定 |
+| RLHF和DPO的区别？ | RLHF需训练奖励模型+在线采样；DPO直接用偏好对优化 |
+| 强化学习需要GPU吗？ | 表格方法不需要；深度RL建议至少一张GPU |
+
+## 统计
+
+| 指标 | 数值 |
+|------|------|
+| 子域数量 | 7 |
+| 文档总数 | 20+ |
+| 核心算法 | 15+ |
+| 覆盖应用 | 游戏/机器人/LLM/推荐 |
+
+> 💡 强化学习是AI从“感知”走向“决策”的核心桥梁。2026年，RL与LLM的融合（RLHF/GRPO）和具身智能是最活跃的研究方向。
+
+---
+*Last updated: 2026-07-21*
+
+## 附录：知识图谱
+
+| 知识节点 | 前置依赖 | 后续延伸 |
+|----------|----------|----------|
+| MDP基础 | 概率论 | Q-Learning、策略梯度 |
+| Q-Learning | MDP基础 | DQN、Double DQN |
+| 策略梯度 | 微积分、MDP | REINFORCE、PPO |
+| Actor-Critic | 策略梯度+值函数 | SAC、TD3、A3C |
+| DQN | Q-Learning+深度网络 | Rainbow、离线RL |
+| PPO | 策略梯度+截断 | RLHF、机器人控制 |
+| RLHF | PPO+奖励模型 | DPO、GRPO |
+| 多智能体RL | 博弈论+RL | 协作/竞争场景 |
+| Sim-to-Real | 仿真环境+域随机化 | 具身智能 |
+| VLA模型 | 多模态+RL | 机器人操作 |
+
+## 附录：术语表
+
+| 术语 | 英文 | 说明 |
+|------|------|------|
+| 马尔可夫决策过程 | MDP | RL的数学框架 |
+| 贝尔曼方程 | Bellman Equation | 价值函数递推关系 |
+| 经验回放 | Experience Replay | 存储并重用转换 |
+| 目标网络 | Target Network | 稳定训练的延迟更新网络 |
+| 优势函数 | Advantage Function | A(s,a)=Q(s,a)-V(s) |
+| 广义优势估计 | GAE | 平衡偏差与方差 |
+| 域随机化 | Domain Randomization | Sim-to-Real核心技术 |
+| 奖励塑形 | Reward Shaping | 设计中间奖励加速学习 |
+
+## 附录：快速导航
+
+| 我想... | 去看 | 难度 |
+|---------|------|------|
+| 零基础入门RL | RL_Foundations/RL_Foundations_for_dummy | ⭐ |
+| 理解DQN原理 | Deep_RL/DQN_Deep_Dive | ⭐⭐ |
+| 掌握PPO实现 | Deep_RL/PPO_Deep_Dive | ⭐⭐ |
+| 了解RLHF对齐 | RLHF_Alignment/RLHF_DPO_GRPO_Deep_Dive | ⭐⭐⭐ |
+| 学习具身智能 | Robotics_Embodied_AI/ | ⭐⭐⭐ |
+| 多智能体协作 | Multi_Agent_RL/Multi_Agent_RL | ⭐⭐⭐ |
+| Sim-to-Real迁移 | Sim_to_Real/index | ⭐⭐⭐ |
+
+---
+*Last updated: 2026-07-21*
+

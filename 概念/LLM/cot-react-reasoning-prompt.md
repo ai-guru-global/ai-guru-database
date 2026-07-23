@@ -23,7 +23,7 @@ base_confidence: 0.92
 lifecycle: reviewed
 tier: core
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-07-21
 aliases:
   - "Cot React Reasoning Prompt"
   - "cot react reasoning prompt"
@@ -240,3 +240,23 @@ CoT 是单路径推理,ToT 让模型**同时探索多条推理路径**,用评估
 - [[大模型/Prompt_Engineering]] — Prompt 详解
 - [[大模型/Reasoning_Models/README]] — Reasoning Models 详解
 - [[概念/reflexion]] — 自我反思
+
+---
+
+## 2026 CoT/ReAct 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **原生推理模型** | o3/R1 内置 CoT 无需 Prompt | GA |
+| **ReAct 框架** | 推理+行动循环的 Agent 范式 | GA |
+| **DSPy** | 编程式 Prompt 优化框架 | GA |
+| **多步推理** | Tree-of-Thought/Graph-of-Thought | GA |
+| **推理链监控** | 可观测思维链质量 | GA |
+
+## 生产最佳实践
+
+1. **模型选择**：强推理模型可省略显式 CoT Prompt
+2. **ReAct 循环**：设置最大迭代次数，避免无限循环
+3. **工具调用**：ReAct 中工具描述要精确，减少幻觉调用
+4. **成本控制**：CoT 增加 token 消耗，简单任务无需 CoT
+5. **质量监控**：跟踪推理链质量，发现异常及时干预

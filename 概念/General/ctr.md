@@ -199,3 +199,11 @@ nerdctl ←→ containerd (Docker 兼容 CLI)
 3. **命名空间隔离**：K8s 容器在 `k8s.io` 命名空间，直接操作时注意区分
 4. **调试终极手段**：当 crictl 和 kubectl 都无法定位问题时，用 ctr 直连排查
 5. **AI Stack 场景**：GPU 容器调试、镜像层检查、运行时问题排查的底层工具
+
+## 相关链接
+
+- [[概念/K8s/containerd|containerd]] — ctr 对应的容器运行时
+- [[概念/K8s/crictl|crictl]] — Kubernetes 场景下的互补 CLI 工具
+- [[概念/K8s/docker|Docker]] — 高层容器工具对比
+- [[概念/K8s/oci-runtime|OCI Runtime]] — ctr 调用的底层运行时
+- [[概念/K8s/kubernetes|Kubernetes]] — AI Stack 底层编排

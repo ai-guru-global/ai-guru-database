@@ -654,7 +654,7 @@ Agent 执行步骤:
 > - [[LLM/README|大语言模型]]
 > - [[Agent/README|AI Agent]]
 > - [[RAG/README|RAG 检索增强生成]]
-> - [[行业应用/Code_Generation/AI_Code_Generation_2026|AI 代码生成]]
+> - [[行业应用/AI_Code_Generation_2026|AI 代码生成]]
 > - [[数据科学/README|数据科学]]
 > - [[强化学习/README|强化学习]]
 > - [[知识图谱/README|知识图谱]]

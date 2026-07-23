@@ -22,7 +22,7 @@ sources:
 lifecycle: reviewed
 tier: supporting
 created: "2026-06-15"
-updated: "2026-06-15T08:05:00+08:00"
+updated: "2026-07-21"
 aliases:
   - "Embeddings Vectors Mrl Plain"
   - "embeddings vectors mrl plain"
@@ -309,4 +309,24 @@ MRL 的解决办法：**只训练一个模型，输出一个向量，按需截�
 
 ---
 
-*Last updated: 2026-06-15*
+*Last updated: 2026-07-21*
+
+---
+
+## 2026 Embedding 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **text-embedding-3** | OpenAI 最新 Embedding 模型 | GA |
+| **MRL** | Matryoshka 可变维度 Embedding | GA |
+| **多语言 Embedding** | 支持 100+ 语言 | GA |
+| **多模态 Embedding** | 图文统一 Embedding 空间 | GA |
+| **量化 Embedding** | INT8/二值化降低存储 | GA |
+
+## 生产最佳实践
+
+1. **模型选择**：根据语言和领域选择合适的 Embedding 模型
+2. **维度选择**：MRL 模型可根据存储需求选择维度
+3. **归一化**：使用余弦相似度时先归一化向量
+4. **批量处理**：大批量 Embedding 用批处理提升效率
+5. **版本管理**：Embedding 模型更新后需重新生成向量

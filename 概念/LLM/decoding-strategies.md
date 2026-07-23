@@ -33,7 +33,7 @@ summary: 解码策略决定 LLM 如何从模型输出的概率分布中选择下
 lifecycle: reviewed
 tier: core
 created: 2026-06-25
-updated: 2026-06-25
+updated: 2026-07-21
 sources: []
 ---
 
@@ -241,3 +241,23 @@ P'(t_i) = f(P(t_i), history, hyperparameters)
 
 - [[../../大模型/Sequence_Models/Text_Generation_Decoding_Strategies|文本生成解码策略]] — Greedy/Beam/Sampling/Speculative 的数学推导与工程实现
 - [[../../大模型/Sequence_Models/Sequence_Models|序列模型深度解析]] — 自回归生成的底层架构支撑
+
+---
+
+## 2026 解码策略生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Speculative Decoding** | 小模型草稿加速解码 | GA |
+| **Medusa** | 多头并行解码 | GA |
+| **结构化解码** | JSON/正则约束生成 | GA |
+| **自适应采样** | 动态调整 temperature/top_p | GA |
+| **并行解码** | 非自回归并行生成 | 研究 |
+
+## 生产最佳实践
+
+1. **场景匹配**：创意用高 temperature，精确用低 temperature
+2. **结构化输出**：需要 JSON 时用约束解码而非后处理
+3. **投机解码**：长输出场景启用 Speculative Decoding
+4. **停止条件**：设置 max_tokens + stop sequences 双重保护
+5. **A/B 测试**：不同解码参数对输出质量影响大，需实验验证

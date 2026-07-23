@@ -178,4 +178,30 @@ PPO → PPO2 → Generalized PPO
 
 ---
 
+## 附录：PPO 关键超参数速查
+
+| 参数 | 推荐值 | 说明 |
+|------|--------|------|
+| clip ε | 0.1–0.3 | 截断范围 |
+| GAE λ | 0.95 | 优势估计平滑 |
+| Epochs | 3–10 | 每批数据复用次数 |
+| Mini-batch Size | 64–4096 | 小批量大小 |
+| Entropy Coef | 0.01 | 探索鼓励系数 |
+| Value Loss Coef | 0.5 | 价值损失权重 |
+| Learning Rate | 3e-4 (Adam) | 学习率 |
+| Rollout Steps | 2048 | 每次采集步数 |
+
+## 附录：PPO 应用场景
+
+| 场景 | 代表项目 | 说明 |
+|------|----------|------|
+| 游戏AI | OpenAI Five, Hide-and-Seek | 多智能体协作 |
+| 机器人控制 | MuJoCo, Isaac Gym | 连续动作空间 |
+| LLM对齐 | InstructGPT, ChatGPT | RLHF核心算法 |
+| 自动驾驶 | 路径规划决策 | 安全约束优化 |
+
+> 💡 PPO 因其“开箱即用”的稳定性，已成为从游戏AI到LLM对齐的事实标准策略梯度算法。
+
+---
+
 *原始论文: [arXiv:1707.06347](https://arxiv.org/abs/1707.06347)*

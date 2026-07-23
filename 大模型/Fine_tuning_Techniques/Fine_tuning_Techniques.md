@@ -607,3 +607,13 @@ lora_config = LoraConfig(
 ---
 
 *Last updated: 2026-02-10*
+
+## 相关链接
+
+- [[大模型/Fine_tuning_Techniques/Fine_tuning_Techniques_for_dummy|微调技术 (小白版)]] — 本篇的零基础版本
+- [[大模型/Fine_tuning_Techniques/README|微调技术概览]] — 微调技术主题导览
+- [[大模型/Fine_tuning_Techniques/LoRA_QLoRA_SFT_RLHF_DPO_in_Detail|LoRA/QLoRA/SFT/RLHF/DPO 详解]] — 主流微调方法详解
+- [[大模型/Fine_tuning_Techniques/PEFT_2026|PEFT 2026 完全指南]] — 参数高效微调最新进展
+- [[大模型/Fine_tuning_Techniques/Fine_tuning_Strategies|微调策略]] — 微调策略选择指南
+- [[概念/Training/fine-tuning-techniques|微调技术]] — 微调技术概念卡片
+- [[大模型/Fine_tuning_Techniques/Axolotl_Deep_Dive|Axolotl 深度解析]] — 主流微调框架

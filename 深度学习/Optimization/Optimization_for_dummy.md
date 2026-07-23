@@ -1238,3 +1238,12 @@ A100       40GB    Batch=128-256
 ---
 
 *本文是 [Optimization.md](./Optimization.md) 的简化版,适合零基础读者。想看数学公式和深入原理,请阅读原文档。*
+
+## 相关链接
+
+- [[深度学习/Optimization/Optimization|训练优化 (完整版)]] — 本篇小白版对应的详细版
+- [[深度学习/Optimization/index|训练优化索引]] — 优化主题导览
+- [[深度学习/Neural_Network_Core/Neural_Network_Core_for_dummy|神经网络核心 (小白版)]] — 优化的对象
+- [[概念/Math/optimization-regularization|优化与正则化]] — 优化概念卡片
+- [[概念/Training/gradient-descent|梯度下降]] — 核心优化算法
+- [[模型训练/Optimization/Optimizer_Advanced_2026|优化器进阶 2026]] — 高级优化器

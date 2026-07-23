@@ -209,3 +209,11 @@ response = client.chat.completions.create(
 3. **成本监控**：实时监控每个请求/用户/模型的成本
 4. **自托管**：敏感数据场景自托管 LiteLLM Proxy
 5. **与 AI Stack 集成**：企业环境用 AI Stack 集成 LiteLLM
+
+## 相关链接
+
+- [[概念/Inference/model-gateway|模型网关]] — LiteLLM 作为轻量级网关
+- [[概念/General/openai|OpenAI]] — LiteLLM 统一调用的主要提供商
+- [[架构基建/AI_Gateway/index|AI Gateway 索引]] — 网关架构总览
+- [[概念/Inference/model-routing|模型路由]] — LiteLLM 的路由能力
+- [[概念/Inference/inference-autoscaling|推理自动扩缩容]] — 网关配合的扩缩容

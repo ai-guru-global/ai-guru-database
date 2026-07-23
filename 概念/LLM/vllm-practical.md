@@ -28,7 +28,7 @@ summary: vLLM 是专为高吞吐 LLM 推理设计的开源引擎，核心创新�
 lifecycle: reviewed
 tier: core
 created: 2026-06-25
-updated: 2026-06-25
+updated: 2026-07-21
 sources: []
 ---
 
@@ -203,3 +203,23 @@ python -m vllm.entrypoints.openai.api_server \
 - [[概念/huggingface-generate-deep-dive|Hugging Face generate()]]
 - [[概念/model-serving|模型服务选型]]
 - [[概念/llm-inference-checklist|推理上线检查清单]]
+
+---
+
+## 2026 vLLM 实践生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **vLLM 0.8+** | 最流行的开源 LLM 推理引擎 | GA |
+| **PagedAttention** | 分页 KV Cache 管理 | GA |
+| **多模态** | 图文/视频输入推理 | GA |
+| **分布式** | TP/PP 多卡并行 | GA |
+| **OpenAI 兼容** | 完全兼容 OpenAI API | GA |
+
+## 生产最佳实践
+
+1. **显存规划**：gpu_memory_utilization 设置 0.85-0.90
+2. **批处理**：max_num_seqs 根据显存调整，通常 256-512
+3. **量化**：AWQ/GPTQ 量化降低显存占用
+4. **监控**：导出 Prometheus 指标，跟踪 TTFT/TPOT/吐吐量
+5. **滚动更新**：K8s 部署配置 rolling update 零停机

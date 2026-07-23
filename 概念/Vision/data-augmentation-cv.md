@@ -18,8 +18,10 @@ provenance:
   inferred: 0.10
   ambiguous: 0.05
 base_confidence: 0.85
-lifecycle: draft
-lifecycle_changed: 2026-07-11
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
+created: 2026-06-12
+updated: 2026-07-21
 tier: supporting
 created: 2026-07-11T00:00:00Z
 updated: 2026-07-11T00:00:00Z
@@ -300,3 +302,23 @@ def cutmix_data(x, y, alpha=1.0):
 - [[概念/Vision/dino]] — DINOv2 (共享: multi-crop, self-supervised)
 - [[概念/Vision/object-detection]] — 目标检测 (共享: mosaic, augmentation)
 - [[概念/Vision/image-segmentation]] — 图像分割 (共享: augmentation, medical)
+
+---
+
+## 2026 CV 数据增强生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Albumentations** | 最流行的 CV 增强库 | GA |
+| **AutoAugment** | 自动搜索增强策略 | GA |
+| **Mosaic 增强** | YOLO 系列多图像拼接 | GA |
+| **合成数据** | 生成式 AI 创建训练数据 | GA |
+| **3D 增强** | 点云/深度图增强 | GA |
+
+## 生产最佳实践
+
+1. **任务匹配**：检测用 Mosaic，分类用 RandAugment
+2. **强度控制**：增强过强会损害性能，需调参
+3. **在线增强**：训练时在线增强，避免存储膨胀
+4. **验证集不增强**：验证/测试集只用基础 resize
+5. **领域适配**：医学/遥感等特殊领域需定制增强策略

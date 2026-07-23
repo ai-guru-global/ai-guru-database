@@ -449,3 +449,12 @@ Agentic Coding 工具发展趋势
 - [Windsurf 官网](https://codeium.com/windsurf)
 - [Devin 官网](https://cognition.ai/devin)
 - [SWE-agent GitHub](https://github.com/princeton-nlp/SWE-agent)
+
+## 相关链接
+
+- [[智能体/Agentic_Coding_Tools/Agentic_Coding_Tools_Overview|Agentic Coding 工具概览]] — 工具全景对比
+- [[智能体/Agentic_Coding_Tools/Claude_Code_Deep_Dive|Claude Code 深度解析]] — CLI 类工具对比
+- [[智能体/Agentic_Coding_Tools/International_Agentic_Tools|国际 Agentic 工具]] — 国际工具生态
+- [[智能体/Agentic_Coding_Tools/index|Agentic Coding 索引]] — 工具主题导览
+- [[行业应用/Code_Generation_index|代码生成索引]] — 代码生成应用
+- [[编程/index|编程索引]] — AI 编程主题导览

@@ -201,3 +201,23 @@ Prefill 时间 ≈ (input_tokens × model_flops) / gpu_throughput
 3. **长输入用 Chunked Prefill**：避免 128K 输入阻塞其他请求
 4. **设置 TTFT SLA**：根据业务设置 TTFT 上限，超时降级
 5. **预热模型**：冷启动时 TTFT 极高，生产环境保持模型常驻
+
+---
+
+## 2026 TTFT 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Chunked Prefill** | 分块预填充降低 TTFT 峰值 | GA |
+| **Speculative Prefill** | 投机预填充加速首 Token | 研究 |
+| **Disaggregated Prefill** | Prefill/Decode 分离降低 TTFT | GA |
+| **TTFT SLO 监控** | 实时 P50/P99 TTFT 跟踪 | GA |
+| **预热策略** | 模型常驻 + 定期心跳保持热度 | GA |
+
+## 生产最佳实践
+
+1. **SLO 定义**：明确 TTFT 目标（如 P99 < 500ms）
+2. **Chunked Prefill**：长输入场景启用分块预填充
+3. **队列监控**：跟踪请求排队时间，队列过长需扩容
+4. **模型预热**：部署后发送预热请求，避免首次请求高延迟
+5. **与 TPOT 平衡**：TTFT 和 TPOT 往往需要权衡优化

@@ -27,7 +27,7 @@ lifecycle: draft
 lifecycle_changed: 2026-06-15
 tier: core
 created: 2026-06-15 00:00:00+00:00
-updated: 2026-06-15 00:00:00+00:00
+updated: 2026-07-21
 aliases:
   - "Model Inference"
   - "model inference"
@@ -199,3 +199,23 @@ Attention 解决的是"指代消解"问题——当模型看到"它"时，需要
 - [[概念/Inference/model-serving|模型服务]] — 服务架构
 
 > ℹ️ 模型推理是 LLM 生产化的核心环节，优化空间巨大。
+
+---
+
+## 2026 模型推理生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **vLLM 0.8+** | 最流行的开源 LLM 推理引擎 | GA |
+| **SGLang** | 高性能结构化生成推理 | GA |
+| **TensorRT-LLM** | NVIDIA 官方 LLM 推理优化 | GA |
+| **推理成本优化** | 量化+缓存+批处理综合降本 | GA |
+| **边缘推理** | 端侧小模型推理方案成熟 | GA |
+
+## 生产最佳实践
+
+1. **引擎选择**：通用场景 vLLM，结构化输出 SGLang，极致性能 TRT-LLM
+2. **量化部署**：AWQ/GPTQ INT4 量化降低 50%+ 显存
+3. **批处理优化**：Continuous Batching 是基本要求
+4. **监控体系**：TTFT/TPOT/吐吐量/GPU 利用率全链路监控
+5. **容量规划**：基于峰值流量 1.5x 规划 GPU 资源

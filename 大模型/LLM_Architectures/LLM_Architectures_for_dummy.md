@@ -461,3 +461,11 @@ MoE = 虽然有很多"专家"(参数),但每次只用一部分,省计算量!
 ---
 
 *最后更新: 2026-02-10*
+
+## 相关链接
+
+- [[大模型/LLM_Architectures/LLM_Architectures|大语言模型架构 (完整版)]] — 本篇小白版对应的详细版
+- [[大模型/LLM_Architectures/index|LLM 架构索引]] — LLM 架构主题导览
+- [[大模型/Transformer_Revolution/Transformer_Revolution_for_dummy|Transformer 革命 (小白版)]] — LLM 的底层架构
+- [[概念/LLM/llm-architectures|LLM 架构]] — LLM 架构概念卡片
+- [[大模型/LLM_Architectures/LLM-Basics-in-nutshell|LLM 基础速成]] — LLM 基础知识速览

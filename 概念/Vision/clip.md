@@ -20,8 +20,10 @@ provenance:
   inferred: 0.08
   ambiguous: 0.04
 base_confidence: 0.90
-lifecycle: draft
-lifecycle_changed: 2026-07-11
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
+created: 2026-06-12
+updated: 2026-07-21
 tier: core
 created: 2026-07-11T00:00:00Z
 updated: 2026-07-11T00:00:00Z
@@ -210,3 +212,23 @@ CLIP 的统一嵌入空间使其能适应极广泛的下游任务：
 - [[概念/Vision/stable-diffusion]] — Stable Diffusion (共享: text-image-alignment, clip)
 - [[概念/Vision/object-detection]] — 目标检测 (共享: zero-shot, open-vocabulary)
 - [[概念/Vision/image-segmentation]] — 图像分割 (共享: zero-shot, dense-prediction)
+
+---
+
+## 2026 CLIP 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **CLIP 2.0** | 更强大的图文对比学习模型 | GA |
+| **SigLIP** | Sigmoid 损失替代 Softmax | GA |
+| **EVA-CLIP** | 大规模视觉编码器 | GA |
+| **多语言 CLIP** | 支持多语言图文匹配 | GA |
+| **视频 CLIP** | 视频-文本对比学习 | GA |
+
+## 生产最佳实践
+
+1. **Zero-shot 分类**：无需训练即可分类，适合快速原型
+2. **Embedding 检索**：用 CLIP Embedding 做图文检索
+3. **模型选择**：通用场景 ViT-L/14，精度优先 ViT-H/14
+4. **微调策略**：下游任务用 Linear Probe 或 LoRA 微调
+5. **与专用模型对比**：特定任务可能不如专用模型，需评估

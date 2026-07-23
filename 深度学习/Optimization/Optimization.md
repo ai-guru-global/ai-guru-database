@@ -1057,3 +1057,12 @@ $$\mathbf{g}_{\text{clipped}} = \begin{cases} \mathbf{g} & ||\mathbf{g}|| \leq \
 
 ---
 *Last updated: 2026-02-10*
+
+## 相关链接
+
+- [[深度学习/Optimization/Optimization_for_dummy|训练优化 (小白版)]] — 本篇的零基础版本
+- [[深度学习/Optimization/index|训练优化索引]] — 优化主题导览
+- [[模型训练/Optimization/Optimizer_Advanced_2026|优化器进阶 2026]] — AdamW/Lion 等现代优化器
+- [[模型训练/Optimization/Scaling_Laws_and_Training_Dynamics|缩放定律与训练动力学]] — 训练动力学
+- [[概念/Training/gradient-descent|梯度下降]] — 核心优化算法
+- [[概念/Math/optimization-regularization|优化与正则化]] — 优化概念卡片

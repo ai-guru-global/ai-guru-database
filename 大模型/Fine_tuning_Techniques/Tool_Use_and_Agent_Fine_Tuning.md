@@ -1505,3 +1505,12 @@ Tool-Use 和 Agent 微调是 LLM 从"能说"到"能做"的关键跨越。核心�
 ---
 
 *Last updated: 2026-06-04*
+
+## 相关链接
+
+- [[大模型/Fine_tuning_Techniques/README|微调技术概览]] — 微调技术主题导览
+- [[大模型/Fine_tuning_Techniques/PEFT_2026|PEFT 2026 完全指南]] — Agent 微调常用 PEFT 方法
+- [[概念/Agent/function-calling|Function Calling]] — Tool Use 核心机制
+- [[概念/Agent/tool-use|Tool Use]] — 工具调用概念卡片
+- [[概念/Agent/mcp|Model Context Protocol]] — MCP 训练相关协议
+- [[概念/Training/grpo|GRPO]] — Agentic RL 常用对齐方法

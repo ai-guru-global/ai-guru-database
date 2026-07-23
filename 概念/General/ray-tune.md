@@ -198,3 +198,11 @@ run_config = train.RunConfig(
 3. **资源分配**：合理设置 num_samples 和并发数，平衡搜索广度与资源
 4. **可复现**：记录最优配置的完整参数，确保可复现
 5. **与 Ray Train 配合**：分布式训练 + 调优一体化，提升效率
+
+## 相关链接
+
+- [[概念/General/ray|Ray]] — Ray Tune 的底层分布式框架
+- [[概念/MLOps/experiment-tracking|实验追踪]] — 超参调优与实验追踪
+- [[概念/MLOps/mlflow|MLflow]] — 配合 Ray Tune 的实验管理
+- [[概念/General/automl|AutoML]] — 自动化机器学习相关
+- [[概念/MLOps/wandb|W&B]] — 配合 Ray Tune 的可视化工具

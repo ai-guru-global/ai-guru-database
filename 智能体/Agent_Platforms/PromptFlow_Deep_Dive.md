@@ -359,3 +359,11 @@ def process_text(text: str) -> str:
 
 *Last updated: 2026-04-25*
 *Version: 1.0.0*
+## 相关链接
+
+- [[大模型/Prompt_Engineering/Prompt_Engineering|Prompt Engineering]] — PromptFlow 服务的提示词工程
+- [[智能体/Agent_Platforms/index|Agent 平台索引]] — Agent 平台导览
+- [[智能体/Agent_Platforms/Dify_Coze_MLServe_Dive|Dify/Coze/MLServe 对比]] — 同类平台对比
+- [[概念/RAG/rag-patterns|RAG 模式]] — PromptFlow 支持的 RAG 模式
+- [[RAG系统/index|RAG 系统]] — PromptFlow 集成的 RAG 系统
+- [[大模型/Prompt_Engineering/DSPy_Deep_Dive|DSPy 深度解析]] — 同类提示词工程框架

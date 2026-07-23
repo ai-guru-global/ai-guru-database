@@ -223,3 +223,12 @@ A: 从零训练超大模型对个人来说确实不现实。但你可以：
 
 ---
 *本文是 [Distributed_Systems.md](./Distributed_Systems.md) 的简化版，适合零基础读者。*
+
+## 相关链接
+
+- [[数学基础/Distributed_Systems/Distributed_Systems|分布式系统 (完整版)]] — 本篇小白版对应的详细版
+- [[数学基础/Distributed_Systems/index|分布式系统索引]] — 主题导览
+- [[概念/Training/distributed-systems|分布式系统]] — 概念卡片
+- [[概念/Training/distributed-training|分布式训练]] — 分布式系统的 AI 应用
+- [[概念/Training/distributed-parallelism|分布式并行]] — 并行策略详解
+- [[数学基础/index|数学基础首页]] — 数学基础知识总览

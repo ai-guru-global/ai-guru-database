@@ -222,7 +222,7 @@ kubectl logs -n ingress-nginx -l app.kubernetes.io/name=ingress-nginx --tail=200
 - [[概念/sglang|SGLang]]
 - [[概念/kserve|KServe]]
 - [[概念/inference-autoscaling|推理自动扩缩容]]
-- [[运维/Observability/LLM_Inference_Observability_Stack|LLM 推理可观测性栈]]
+- [[运维/LLM_Inference_Observability_Stack|LLM 推理可观测性栈]]
 - [[运维/SRE_Reliability/LLM_Inference_SLO_Guide|LLM 推理 SLO 实践指南]]
 - [[运维/SRE_Reliability/K8s_AI_Troubleshooting_Cheat_Sheet|K8s for AI 排查速查表]]
 - [[部署推理/Inference_Tuning_Cheat_Sheet|LLM 推理调优速查表]]

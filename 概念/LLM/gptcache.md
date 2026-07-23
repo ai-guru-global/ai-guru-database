@@ -18,6 +18,8 @@ provenance:
   ambiguous: 0.10
 base_confidence: 0.82
 lifecycle: reviewed
+created: 2026-06-12
+updated: 2026-07-21
 tier: supporting
 ---
 
@@ -215,3 +217,23 @@ pip install gptcache
 - [[概念/litellm]] — LiteLLM 统一 LLM API 代理
 - [[概念/milvus]] — Milvus 向量数据库
 - [[概念/langsmith]] — LangSmith LLM 可观测性
+
+---
+
+## 2026 GPTCache 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **GPTCache 0.1+** | 语义缓存开源框架 | GA |
+| **向量相似度** | 基于 Embedding 的语义匹配 | GA |
+| **多后端** | 支持 Redis/Milvus/SQLite | GA |
+| **API 网关集成** | 与 LiteLLM/Kong 集成 | GA |
+| **云服务商缓存** | OpenAI/Anthropic 原生 Prompt Caching | GA |
+
+## 生产最佳实践
+
+1. **相似度阈值**：设置合理的相似度阈值，避免错误命中
+2. **失效策略**：模型更新后清空缓存，避免过期响应
+3. **监控命中率**：跟踪 cache hit rate，低于 30% 需调整策略
+4. **敏感数据**：含 PII 的请求不应缓存
+5. **与云缓存对比**：简单场景用云服务商原生缓存更简单

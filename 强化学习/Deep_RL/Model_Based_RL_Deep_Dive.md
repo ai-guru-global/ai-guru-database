@@ -1161,7 +1161,7 @@ flowchart TB
 - [[强化学习/Deep_RL/SAC_Deep_Dive]] — SAC（无模型对比）
 - [[强化学习/Deep_RL/Offline_RL_Deep_Dive]] — 离线RL（模型可用于离线数据增强）
 - [[强化学习/RL_Foundations/RL_Foundations]] — RL基础（MDP/规划）
-- [[强化学习/Multi_Agent_RL/Multi_Agent_RL]] — 多智能体RL（建模其他智能体）
+- [[强化学习/Multi_Agent_RL]] — 多智能体RL（建模其他智能体）
 - [[强化学习/Sim_to_Real/Sim_to_Real]] — Sim-to-Real（模型=simulator）
 - [[深度学习/World_Models/World_Models_2026]] — 世界模型（JEPA/Sora）
 - [[深度学习/DL_Fundamentals/DL_Fundamentals]] — 深度学习基础

@@ -18,6 +18,8 @@ provenance:
   ambiguous: 0.10
 base_confidence: 0.82
 lifecycle: reviewed
+created: 2026-06-12
+updated: 2026-07-21
 tier: supporting
 ---
 
@@ -218,3 +220,23 @@ spec:
 - [[概念/mem0]] — Mem0 AI 记忆层基础设施
 - [[概念/zep]] — Zep LLM 长期记忆平台
 - [[概念/langgraph]] — LangGraph 有状态 Agent 编排
+
+---
+
+## 2026 Letta 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Letta (MemGPT)** | 有状态 LLM Agent 框架 | GA |
+| **长期记忆** | Agent 持久化记忆管理 | GA |
+| **工具调用** | 丰富的工具集成 | GA |
+| **多 Agent** | 多 Agent 协作 | GA |
+| **自托管** | 本地部署选项 | GA |
+
+## 生产最佳实践
+
+1. **记忆管理**：合理设计记忆层次，避免记忆爆炸
+2. **工具权限**：限制 Agent 工具调用权限
+3. **状态持久化**：定期保存 Agent 状态，支持恢复
+4. **监控告警**：监控 Agent 行为异常，及时干预
+5. **成本控制**：有状态 Agent token 消耗高，设置预算

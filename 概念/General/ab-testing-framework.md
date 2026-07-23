@@ -106,7 +106,7 @@ A/B 测试直接看真实用户身上的效果。
 - [[概念/online-evaluation]] — 在线评估
 - [[概念/ci-integrated-evaluation]] — CI 集成评估
 - [[模型评估/Evaluation_Tools/Online_Evaluation]] — 在线评估
-- [[模型运维/Evaluation/LLM_Evaluation_Pipeline]] — LLM 评估流水线
+- [[模型运维/LLM_Evaluation_Pipeline]] — LLM 评估流水线
 
 ---
 

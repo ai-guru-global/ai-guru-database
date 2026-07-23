@@ -108,7 +108,7 @@ CI 集成评估让这些问题变成流水线的一部分。
 - [[概念/ab-testing-framework]] — A/B 测试框架
 - [[概念/llm-production-pipeline]] — LLM 生产流水线
 - [[模型评估/Evaluation_Automation_2026]] — 评估自动化 2026
-- [[模型运维/Evaluation/LLM_Evaluation_Pipeline]] — LLM 评估流水线
+- [[模型运维/LLM_Evaluation_Pipeline]] — LLM 评估流水线
 
 ---
 

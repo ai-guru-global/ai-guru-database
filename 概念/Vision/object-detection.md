@@ -20,8 +20,10 @@ provenance:
   inferred: 0.10
   ambiguous: 0.05
 base_confidence: 0.82
-lifecycle: draft
-lifecycle_changed: 2026-07-11
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
+created: 2026-06-12
+updated: 2026-07-21
 tier: core
 created: 2026-05-31T00:00:00Z
 updated: 2026-07-11T00:00:00Z
@@ -225,3 +227,23 @@ flowchart LR
 - [[概念/Vision/clip]] — CLIP (共享: open-vocabulary, zero-shot)
 - [[概念/Vision/vit]] — Vision Transformer (共享: transformer, detection)
 - [[概念/Vision/data-augmentation-cv]] — 数据增强 (共享: mosaic, training)
+
+---
+
+## 2026 目标检测生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **YOLO11** | Ultralytics 最新实时检测 | GA |
+| **RT-DETR** | 实时 Transformer 检测器 | GA |
+| **开放词汇检测** | 检测任意类别物体 | GA |
+| **3D 检测** | 点云/多视角 3D 检测 | GA |
+| **小目标检测** | 无人机/遥感小目标 | GA |
+
+## 生产最佳实践
+
+1. **模型选择**：实时用 YOLO，精度优先用 DETR 变体
+2. **数据质量**：检测框标注质量直接影响性能
+3. **NMS 调优**：调整 NMS 阈值平衡召回和精度
+4. **边缘部署**：移动端用量化 + TensorRT 加速
+5. **持续学习**：定期用新数据微调，适应场景变化

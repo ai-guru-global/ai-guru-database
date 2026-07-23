@@ -20,8 +20,10 @@ provenance:
   inferred: 0.15
   ambiguous: 0.05
 base_confidence: 0.85
-lifecycle: draft
-lifecycle_changed: 2026-07-11
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
+created: 2026-06-12
+updated: 2026-07-21
 tier: core
 created: 2026-07-11T00:00:00Z
 updated: 2026-07-11T00:00:00Z
@@ -201,3 +203,23 @@ DINOv2 引入了两个额外的训练稳定技术：
 - [[概念/Vision/sam]] — Segment Anything Model (共享: foundation-model, dense-feature)
 - [[概念/computer-vision]] — 计算机视觉 (共享: cv, deep-learning)
 - [[概念/Vision/data-augmentation-cv]] — 数据增强 (共享: training, augmentation)
+
+---
+
+## 2026 DINO 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **DINOv2** | Meta 自监督视觉基础模型 | GA |
+| **DINOv3** | 更大规模自监督训练 | 研究 |
+| **密集特征** | 像素级特征提取 | GA |
+| **下游任务** | 分割/深度/检测通用特征 | GA |
+| **与 SAM 结合** | DINO 特征 + SAM 分割 | GA |
+
+## 生产最佳实践
+
+1. **特征提取**：用 DINOv2 作为通用视觉特征提取器
+2. **微调策略**：下游任务用 Linear Probe 或 LoRA
+3. **模型选择**：通用 ViT-L/14，精度优先 ViT-G/14
+4. **与 CLIP 对比**：DINO 擅长密集特征，CLIP 擅长语义匹配
+5. **计算资源**：大模型推理需 GPU，边缘设备用小模型

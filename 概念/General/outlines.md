@@ -218,3 +218,11 @@ sentiment = choice_gen("这部电影太棒了！")
 4. ✅ 性能基准测试
 5. ✅ 错误处理和回退逻辑
 6. ✅ 定期评估约束覆盖率
+
+## 相关链接
+
+- [[大模型/Prompt_Engineering/Outlines_Deep_Dive|Outlines 深度解析]] — Outlines 框架深度剖析
+- [[大模型/Constrained_Decoding_2026|约束解码 2026]] — Outlines 实现的约束解码
+- [[大模型/Structured_Output_Guide|结构化输出指南]] — 结构化输出方法总览
+- [[概念/LLM/decoding-strategies|解码策略]] — Outlines 的解码机制
+- [[大模型/LLM_Products/outlines_overview|Outlines 产品概览]] — Outlines 产品速览

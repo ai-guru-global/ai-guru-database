@@ -21,7 +21,9 @@ provenance:
   ambiguous: 0.05
 base_confidence: 0.82
 lifecycle: reviewed
-lifecycle_changed: 2026-06-16
+lifecycle_changed: 2026-07-21
+created: 2026-06-12
+updated: 2026-07-21
 tier: core
 created: 2026-06-16
 updated: 2026-07-21
@@ -199,3 +201,23 @@ benchmark_design:
 - [[概念/Agent/agentic-rag|Agentic RAG]]
 - [[模型评估/Benchmarks/Agentic_Benchmark_Guide|Agentic 评估指南]]
 - [[智能体/Agent_Evaluation/README|Agent 评估]]
+
+---
+
+## 2026 Agent 评估生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **AgentBench** | 多环境 Agent 评估基准 | GA |
+| **GAIA** | 通用 AI 助手评估 | GA |
+| **WebArena** | Web 任务 Agent 评估 | GA |
+| **SWE-bench** | 软件工程 Agent 评估 | GA |
+| **自动化评估** | LLM 辅助 Agent 评估 | GA |
+
+## 生产最佳实践
+
+1. **多维度评估**：任务完成率 + 效率 + 安全性综合评估
+2. **真实场景**：用真实任务评估，而非仅合成测试
+3. **基线对比**：与人类表现和简单基线对比
+4. **失败分析**：深入分析失败案例，发现系统性问题
+5. **持续评估**：Agent 更新后重新评估，防止退化

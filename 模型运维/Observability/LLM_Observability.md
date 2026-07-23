@@ -299,7 +299,7 @@ graph TD
 
 ### 本章内
 - [[模型运维/LLMOps_2026]] — 本系列主线（§7 是本文概览版）
-- [[模型运维/Evaluation/LLM_Evaluation_Pipeline]] — 评估方法（本文是在线版）
+- [[模型运维/LLM_Evaluation_Pipeline]] — 评估方法（本文是在线版）
 - [[模型运维/Observability/Model_Monitoring_and_Drift_Detection_2026]] — 传统漂移监控
 - [[模型运维/Observability/ML_Observability_SLO]] — 系统层 SLO/SLI
 

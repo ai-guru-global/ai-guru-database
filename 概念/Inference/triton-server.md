@@ -16,6 +16,8 @@ provenance:
   ambiguous: 0.10
 base_confidence: 0.90
 lifecycle: reviewed
+created: 2026-06-12
+updated: 2026-07-21
 tier: core
 aliases:
   - "Triton"
@@ -223,3 +225,32 @@ logits = result.as_numpy("logits")
 4. **多 GPU 多模型**：模型实例可分布在多张 GPU 上，负载均衡
 5. **NVIDIA 官方**：与 TensorRT、CUDA 深度集成，NVIDIA GPU 上的标准推理方案
 6. **LLM 集成**：可通过 vLLM 后端或 TensorRT-LLM 引擎服务大模型
+
+---
+
+## 2026 Triton Server 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Triton 24.x** | NVIDIA 官方推理服务器 | GA |
+| **vLLM 后端** | 原生支持 vLLM 作为推理后端 | GA |
+| **TensorRT-LLM 后端** | TRT-LLM 引擎服务化 | GA |
+| **BLS 编排** | Business Logic Scripting 多模型编排 | GA |
+| **K8s 部署** | Helm Chart + KServe 集成 | GA |
+
+## 生产最佳实践
+
+1. **后端选择**：LLM 用 vLLM/TRT-LLM 后端，传统模型用 ONNX/PyTorch
+2. **动态批处理**：配置 max_queue_delay 平衡延迟与吞吐
+3. **模型仓库**：使用 model repository 管理多模型版本
+4. **健康检查**：配置 readiness/liveness 探针确保服务可用
+5. **GPU 监控**：集成 DCGM 监控 GPU 利用率、显存、温度
+
+## 相关链接
+
+- [[概念/Inference/triton-inference-server|Triton Inference Server (主卡片)]] — 同名主卡片
+- [[概念/Inference/onnx|ONNX]] — Triton 支持的后端格式
+- [[概念/Inference/tensorrt|TensorRT]] — Triton 的高性能后端
+- [[概念/Inference/model-serving|模型服务]] — 模型服务化总览
+- [[概念/Inference/continuous-batching|连续批处理]] — Triton 的批处理机制
+- [[概念/GPU/nvidia-gpu|NVIDIA GPU]] — Triton 针对的硬件平台

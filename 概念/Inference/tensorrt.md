@@ -199,3 +199,23 @@ TensorRT Runtime (推理执行)
 3. **FP8 必开**：H100+ 必开 FP8，性能翻倍且质量保留
 4. **版本固定**：TensorRT 版本与 CUDA/驱动强绑定
 5. **回退方案**：开发用 vLLM，生产切 TensorRT-LLM
+
+---
+
+## 2026 TensorRT 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **TensorRT 10.x** | NVIDIA 高性能推理优化器 | GA |
+| **TensorRT-LLM** | LLM 专用推理引擎 | GA |
+| **FP8 推理** | H100 FP8 精度推理加速 | GA |
+| **torch.compile 集成** | PyTorch 编译后端 | GA |
+| **Triton 集成** | Triton Server TRT 后端 | GA |
+
+## 生产最佳实践
+
+1. **版本固定**：TensorRT 版本与 CUDA/驱动强绑定，必须锁定
+2. **引擎缓存**：启用 engine cache 避免重复编译
+3. **精度策略**：FP16 为默认，FP8 需 H100+ 且验证精度
+4. **回退方案**：开发用 vLLM，生产切 TensorRT-LLM
+5. **性能对比**：与 vLLM/SGLang 对比，确认实际收益

@@ -136,7 +136,7 @@ response = generate(model, tokenizer, prompt="解释机器学习", max_tokens=25
 - [[概念/Inference/quantization]] — 量化
 - [[概念/Inference/model-serving]] — 模型服务
 - [[大模型/Edge_LLM/Edge_LLM_Deep_Dive|端侧 LLM 深度解析]]
-- [[大模型/LLM_Inference/LLM_Inference_Deep_Dive|LLM 推理深度解析]]
+- [[大模型/LLM_Inference_Deep_Dive|LLM 推理深度解析]]
 
 ## 2026 端侧模型生态
 

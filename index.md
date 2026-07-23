@@ -215,7 +215,7 @@ graph LR
 - [[数学基础/README|基础理论 (Fundamentals)]] — 数学核心 + 工程基础两层架构总览 ( #fundamentals #math)
 - [[数学基础/Linear_Algebra/Linear_Algebra|线性代数]] — 张量运算、特征值分解、SVD，模型参数表示基础 ( #linear-algebra #math)
 - [[数学基础/Probability_Statistics/Probability_Statistics|概率论与统计]] — 贝叶斯定理、高斯分布、信息论，处理不确定性 ( #probability #statistics #math)
-- [[数学基础/Calculus_Optimization/Calculus_Optimization|微积分与优化]] — 导数/链式法则/梯度下降/凸优化/KKT 条件 ( #calculus #optimization #math)
+- [[数学基础/Calculus_Optimization|微积分与优化]] — 导数/链式法则/梯度下降/凸优化/KKT 条件 ( #calculus #optimization #math)
 - [[数学基础/Information_Theory/Information_Theory_Fundamentals|信息论]] — 香农熵、交叉熵、KL 散度，损失函数设计的理论基础 ( #information-theory #math)
 - [[数学基础/Data_Structures_Algorithms/|数据结构与算法]] — 计算机工程基础 ( #algorithms #data-structures)
 
@@ -237,7 +237,7 @@ graph LR
 - [[模型训练/Optimization/Optimizer_Advanced_2026|优化器进阶]] — AdamW/Lion/Muon/Sophia/Shampoo + 学习率调度 ( #optimizer #training)
 - [[模型训练/Data/Data_Curation_and_Mixture_2026|数据策展与配比]] — 数据清洗/去重/配比/合成数据/多语言 ( #data-engineering #pretraining)
 - [[模型训练/Data/Tokenizer_Design_2026|Tokenizer 设计]] — BPE/SentencePiece/tiktoken/Unigram ( #tokenizer #pretraining)
-- [[伦理安全/Constitutional_AI/Constitutional_AI_Deep_Dive|对齐 (Alignment)]] — RLHF / DPO / Constitutional AI 安全对齐 ( #alignment #rlhf #safety)
+- [[伦理安全/Constitutional_AI_Deep_Dive|对齐 (Alignment)]] — RLHF / DPO / Constitutional AI 安全对齐 ( #alignment #rlhf #safety)
 
 ### 部署与推理技能 (Deployment & Inference)
 - [[部署推理/README|模型部署与推理]] — 高效、可靠、可扩展的推理服务最后一公里 ( #deployment #inference #serving)
@@ -451,7 +451,7 @@ graph LR
 - [[模型运维/Observability/Prometheus_Grafana_Deep_Dive]] — Prometheus + Grafana 深度解析：AI 系统监控与可视化基座 ( #prometheus #grafana #monitoring #observability)
 
 ### 安全与对齐
-- [[伦理安全/Constitutional_AI/Constitutional_AI_Deep_Dive]] — Constitutional AI 深度解析：Anthropic 核心安全方法论 ( #constitutional-ai #alignment #anthropic #safety)
+- [[伦理安全/Constitutional_AI_Deep_Dive]] — Constitutional AI 深度解析：Anthropic 核心安全方法论 ( #constitutional-ai #alignment #anthropic #safety)
 
 ### MLOps 流水线
 - [[模型运维/LLM_Production_Pipeline_2026]] — LLM 生产流水线完全指南：七阶段闭环架构 ( #mlops #llm-pipeline #production #ci-cd)

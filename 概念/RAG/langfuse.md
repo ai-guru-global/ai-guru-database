@@ -18,6 +18,8 @@ provenance:
   ambiguous: 0.10
 base_confidence: 0.82
 lifecycle: reviewed
+created: 2026-06-12
+updated: 2026-07-21
 tier: supporting
 ---
 
@@ -254,3 +256,23 @@ pip install langfuse
 - [[概念/opik]] — Opik LLM 可观测性平台
 - [[概念/helicone]] — Helicone LLM API 监控
 - [[概念/wandb]] — Weights & Biases 实验追踪
+
+---
+
+## 2026 Langfuse 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Langfuse 2.x** | 开源 LLM 可观测性平台 | GA |
+| **Tracing** | 请求级调用链追踪 | GA |
+| **评估** | 自动化 + 人工评估 | GA |
+| **Prompt 管理** | Prompt 版本管理和 A/B 测试 | GA |
+| **成本追踪** | Token 消耗和成本分析 | GA |
+
+## 生产最佳实践
+
+1. **全链路追踪**：从用户请求到 LLM 响应全链路追踪
+2. **评估闭环**：建立自动化评估 + 人工审核闭环
+3. **Prompt 版本**：Prompt 变更必须版本化，支持回滚
+4. **成本监控**：设置成本告警，防止超支
+5. **隐私保护**：敏感数据脱敏后再上传 Langfuse

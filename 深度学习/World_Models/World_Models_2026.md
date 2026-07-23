@@ -757,3 +757,12 @@ class WorldModelPlanner:
 ---
 
 *Last updated: 2026-04-01* (Added V-JEPA 2.1, LeJEPA, VL-JEPA updates)
+
+## 相关链接
+
+- [[深度学习/World_Models/JEPA_Architecture_2026|JEPA 架构 2026]] — 世界模型的代表架构
+- [[深度学习/World_Models/README|世界模型概览]] — 世界模型主题导览
+- [[深度学习/World_Models/index|世界模型索引]] — 世界模型索引
+- [[概念/Vision/world-models|世界模型]] — 世界模型概念卡片
+- [[概念/Vision/world-models-jepa|JEPA]] — JEPA 概念卡片
+- [[强化学习/Robotics_Embodied_AI/index|机器人与具身智能]] — 世界模型在具身智能中的应用

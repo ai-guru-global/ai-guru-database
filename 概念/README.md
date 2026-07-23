@@ -2,7 +2,7 @@
 title: 概念卡片索引 (Concept Cards Index)
 category: -concepts
 tags: [concepts, knowledge-graph, index]
-summary: 562 张 AI 概念卡片，覆盖 AI 全栈核心概念，按 12 个子域组织，与主章节通过 sources 字段关联。
+summary: 584 张 AI 概念卡片，覆盖 AI 全栈核心概念，按 12 个子域组织，与主章节通过 sources 字段关联。
 created: 2026-06-03
 updated: 2026-07-10
 tier: core
@@ -62,7 +62,7 @@ sources: []
 | [self-supervised-learning](./self-supervised-learning.md) | 03_Deep_Learning | SimCLR、MoCo、MAE、对比学习 |
 | [distributed-systems](./distributed-systems.md) | 01_Fundamentals | CAP 定理、一致性、分布式训练 |
 
-### NLP 与大模型（14 张）
+### NLP 与大模型（22 张）
 
 | 概念 | 来源章节 | 关键词 |
 |------|----------|--------|
@@ -86,6 +86,14 @@ sources: []
 | [agentic-rag](./agentic-rag.md) | 14_RAG_Systems | Agentic RAG、Self-RAG、CRAG |
 | [text2sql](./text2sql.md) | 14_RAG_Systems / 16_AI_Coding | 自然语言转 SQL、数据库查询 |
 | [code-generation-workflow](./code-generation-workflow.md) | 17_AI_Coding | AI 辅助代码工作流、CI/CD |
+| [claude-series](./claude-series.md) | 04_NLP_LLMs | Anthropic Claude 3/3.5/3.7/Opus 4.5/4.6 + MCP 协议 + Claude Code |
+| [mistral-series](./mistral-series.md) | 04_NLP_LLMs | Mistral 7B / Mixtral 8x7B / Mistral Large 3 675B MoE |
+| [phi-series](./phi-series.md) | 04_NLP_LLMs | Microsoft Phi-1 → Phi-3 → Phi-4 / Phi-4 Multimodal |
+| [gemma-series](./gemma-series.md) | 04_NLP_LLMs | Google Gemma 1/2/3 + PaliGemma + CodeGemma + ShieldGemma |
+| [yi-series](./yi-series.md) | 04_NLP_LLMs | 01.AI Yi-6B/9B/34B/VL/Lightning |
+| [chinese-llm-others](./chinese-llm-others.md) | 04_NLP_LLMs | 百度文心 / 华为盘古 / 昆仑天工 / 智源悟道 / CodeGeeX |
+| [prm-process-reward-model](./prm-process-reward-model.md) | 04_NLP_LLMs | PRM 过程奖励模型 / o1 核心 / PRM800K |
+| [mamba-2-ssm](./mamba-2-ssm.md) | 04_NLP_LLMs | Mamba-2 / SSD 状态空间对偶 / 训练 2-8× 加速 |
 
 ### 计算机视觉（6 张）
 
@@ -299,6 +307,65 @@ sources: []
 
 ---
 
+
+## 2026-07-23 新增与错位修正
+
+> 本次由 taste_top 质量基线补齐 14 张 LLM 核心概念卡(13 个新增 + 1 个升级),并修正 4 张错位文件(应放 GPU/K8s 而非 LLM)。
+
+### 新增 13 张概念卡(LLM 子域)
+
+| 概念 | 类别 | 关键来源 |
+|------|------|----------|
+| [agent-benchmarks](./agent-benchmarks.md) | Agent 评估综合 | SWE-bench / GAIA / WebArena / OSWorld / ARC-AGI / HLE |
+| [chinchilla-scaling-laws](./chinchilla-scaling-laws.md) | Scaling 理论 | DeepMind arXiv:2203.15556 NeurIPS 2022 Outstanding |
+| [constitutional-ai](./constitutional-ai.md) | 对齐 / RLAIF | Anthropic arXiv:2212.08073, Claude 3-Opus 4.5 训练基线 |
+| [diffusion-llm](./diffusion-llm.md) | 新架构 / 范式 | LLaDA arXiv:2502.09992, Mercury 商用 1000 t/s |
+| [doubao-series](./doubao-series.md) | 国产主流 | ByteDance Doubao 1.5 / Seed1.5-VL |
+| [emergent-abilities](./emergent-abilities.md) | Scaling 现象 | Wei arXiv:2206.07682, Schaeffer Mirage NeurIPS 2023 Outstanding |
+| [glm-4-5-series](./glm-4-5-series.md) | 国产主流 | 智谱 GLM-4.5 (HuggingFace) |
+| [hunyuan-series](./hunyuan-series.md) | 国产主流 | 腾讯 Hunyuan-Large arXiv:2411.02265 |
+| [internlm-3-series](./internlm-3-series.md) | 国产主流 | 上海 AI Lab InternLM3 / InternVL 3.5 |
+| [nsa-sparse-attention](./nsa-sparse-attention.md) | 架构 / 推理加速 | DeepSeek arXiv:2502.11089, 64K 序列 11.6× 加速 |
+| [rlvr](./rlvr.md) | 训练范式 / GRPO | DeepSeek-R1 arXiv:2501.12948 Nature 2025 |
+| [self-rewarding](./self-rewarding.md) | 自改进 | Meta arXiv:2401.10020 |
+| [stepfun-series](./stepfun-series.md) | 国产主流 | StepFun Step-3 / Step-Audio 2 / Step-Video-T2V |
+
+### 升级 1 张(test-time-compute)
+
+| 概念 | 升级内容 |
+|------|----------|
+| [test-time-compute](./test-time-compute.md) | 由"Test Time Compute"占位升级为完整卡(Snell arXiv:2408.03314、o1/R1 工业落地) |
+
+### 错位修正 4 张(移出 LLM,迁至正确子域)
+
+| 错位文件 | 原位置 | 正确位置 | 类型 |
+|----------|--------|----------|------|
+| `nvidia-smi.md` | 概念/LLM/ | 概念/GPU/ | GPU 监控工具 |
+| `ppu-smi.md` | 概念/LLM/ | 概念/GPU/ | APG GPU 监控 |
+| `rocm-smi.md` | 概念/LLM/ | 概念/GPU/ | AMD GPU 监控 |
+| `securitycontext.md` | 概念/LLM/ | 概念/K8s/ | K8s 安全 |
+
+---
+
+## 2026-07-23 查漏补缺(8 张新卡)
+
+> 在 14 张基础卡完成后,基于 108 个 LLM 文件做覆盖度扫描,识别 8 个空缺主题并以 taste_top 质量补齐:覆盖国际旗舰(Claude/Mistral/Phi/Gemma)、国产次主流(文心/盘古/天工/悟道/CodeGeeX)、关键算法(PRM 过程奖励、Mamba-2 状态空间对偶)、中文长上下文主力(Yi)。
+
+### 新增 8 张概念卡(LLM 子域)
+
+| 概念 | 类别 | 关键来源 |
+|------|------|----------|
+| [claude-series](./claude-series.md) | 国际旗舰 | Anthropic Claude 3/3.5/3.7/Opus 4.5/4.6 + MCP 协议,2026 估值 3800 亿 |
+| [mistral-series](./mistral-series.md) | 国际旗舰 | Mistral 7B / Mixtral 8x7B (arXiv:2401.04088) / Mistral Large 3 675B MoE |
+| [phi-series](./phi-series.md) | 国际旗舰 | Microsoft Phi-1→Phi-4,arXiv:2404.14219 / arXiv:2412.08905 |
+| [gemma-series](./gemma-series.md) | 国际旗舰 | Google Gemma 1/2/3 1B-27B 多模态,128K 上下文,5:1 局部-全局注意力 |
+| [yi-series](./yi-series.md) | 国产主流 | 01.AI Yi-6B/9B/34B/VL/Lightning,200K 长上下文 |
+| [chinese-llm-others](./chinese-llm-others.md) | 国产次主流合并卡 | 百度文心 4.5/X1 / 华为盘古 5.0 / 昆仑天工 Skywork 4 / 智源悟道 3.0 / CodeGeeX / BGE |
+| [prm-process-reward-model](./prm-process-reward-model.md) | 训练范式 | Lightman arXiv:2305.20050 Let's Verify Step by Step,PRM800K,o1 核心 |
+| [mamba-2-ssm](./mamba-2-ssm.md) | 架构创新 | Dao & Gu arXiv:2405.21060 SSD,ICML 2024,训练 2-8× 加速 |
+
+---
+
 ## 元数据规范
 
 每张概念卡片遵循以下 frontmatter 规范：
@@ -328,7 +395,7 @@ tier: core | supporting
 
 ## 统计
 
-- **总数**: 562 张概念卡片（12 个子域）
+- **总数**: 584 张概念卡片(2026-07-23 更新:基础 14 张 + 查漏 8 张 = 新增 22 张,移动 4 张至正确子域)（12 个子域）
 - **平均大小**: ~6.2 KB
 - **覆盖章节**: 00-19 全部 20 个主章节
 - **关系类型**: related_to、prerequisite、builds_on
@@ -339,13 +406,13 @@ tier: core | supporting
 | 子域 | 文件数 | 说明 |
 |------|------|------|
 | **General** | 147 | 基础与通识、平台工具、通用概念 |
-| **LLM** | 98 | 大语言模型架构、训练、对齐 |
-| **K8s** | 69 | Kubernetes 与云原生 AI 基础设施 |
+| **LLM** | 116 | 大语言模型架构、训练、对齐 |
+| **K8s** | 70 | Kubernetes 与云原生 AI 基础设施 |
 | **Training** | 49 | 模型训练、分布式训练、优化 |
 | **Inference** | 35 | 推理引擎、服务化、优化 |
 | **RAG** | 33 | 检索增强生成、向量数据库 |
 | **Agent** | 30 | AI 智能体、工具调用、多智能体 |
-| **GPU** | 27 | GPU 硬件、CUDA、集群管理 |
+| **GPU** | 30 | GPU 硬件、CUDA、集群管理 |
 | **MLOps** | 23 | ML 运维、CI/CD、监控 |
 | **Math** | 18 | 数学基础、优化理论 |
 | **Vision** | 18 | 计算机视觉、多模态 |

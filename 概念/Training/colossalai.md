@@ -18,6 +18,8 @@ provenance:
   ambiguous: 0.10
 base_confidence: 0.85
 lifecycle: reviewed
+created: 2026-06-12
+updated: 2026-07-21
 tier: supporting
 aliases:
   - "Colossal-AI"
@@ -206,3 +208,32 @@ model = auto_parallelize(
 4. **中国团队**：HPC-AI Tech 在新加坡，核心团队来自中国和东南亚
 5. **AI Stack 意义**：为中等规模团队提供低门槛的大模型训练方案
 6. **生态整合**：支持 HuggingFace 模型、OpenAI CLIP 等主流模型
+
+---
+
+## 2026 ColossalAI 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **ColossalAI 0.3+** | 开源大模型训练框架 | GA |
+| **自动并行** | 自动搜索最优并行策略 | GA |
+| **ZeRO 优化** | 显存优化技术 | GA |
+| **LoRA 微调** | 低秩适配微调 | GA |
+| **多模态训练** | 图文/视频多模态训练 | GA |
+
+## 生产最佳实践
+
+1. **并行策略**：根据模型规模和集群配置选择并行策略
+2. **显存优化**：启用 ZeRO + 激活检查点降低显存
+3. **与 DeepSpeed 对比**：ColossalAI 自动并行更易用，DeepSpeed 生态更成熟
+4. **混合精度**：默认启用 BF16/FP16 混合精度训练
+5. **故障恢复**：配置定期 checkpoint，支持断点续训
+
+## 相关链接
+
+- [[概念/Training/distributed-training|分布式训练]] — ColossalAI 的核心领域
+- [[概念/Training/distributed-parallelism|分布式并行]] — ColossalAI 实现的并行策略
+- [[概念/Training/deepspeed|DeepSpeed]] — 同类分布式训练框架对比
+- [[概念/Training/megatron-lm|Megatron-LM]] — 同类大模型训练框架
+- [[概念/Training/fsdp|FSDP]] — ColossalAI 支持的并行方案
+- [[概念/GPU/model-parallelism|模型并行]] — ColossalAI 的并行机制

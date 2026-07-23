@@ -18,6 +18,8 @@ provenance:
   ambiguous: 0.10
 base_confidence: 0.82
 lifecycle: reviewed
+created: 2026-06-12
+updated: 2026-07-21
 tier: supporting
 ---
 
@@ -251,3 +253,23 @@ pip install llm-guard
 - [[概念/nemo-guardrails]] — NVIDIA NeMo Guardrails
 - [[概念/presidio]] — Microsoft Presidio PII 检测
 - [[概念/detect-secrets]] — detect-secrets 密钥泄露检测
+
+---
+
+## 2026 LLM Guard 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **LLM Guard** | 开源 LLM 输入/输出安全扫描 | GA |
+| **NeMo Guardrails** | NVIDIA 对话护栏框架 | GA |
+| **Prompt 注入检测** | 识别并拦截 Prompt 注入攻击 | GA |
+| **PII 检测** | 自动识别并脱敏个人信息 | GA |
+| **内容审核** | 有害内容/偏见/幻觉检测 | GA |
+
+## 生产最佳实践
+
+1. **双层防护**：输入和输出都要扫描，不能只防一侧
+2. **延迟控制**：Guard 扫描增加延迟，用轻量模型或并行处理
+3. **规则更新**：定期更新检测规则，应对新型攻击
+4. **日志审计**：记录所有被拦截的请求，用于分析和改进
+5. **误报处理**：监控误报率，过高需调整阈值

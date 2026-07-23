@@ -633,3 +633,12 @@ $$
 ---
 
 *Last updated: 2026-02-10*
+
+## 相关链接
+
+- [[数学基础/Probability_Statistics/Probability_Statistics_for_dummy|概率统计 (小白版)]] — 本篇的零基础版本
+- [[数学基础/Probability_Statistics/index|概率统计索引]] — 主题导览
+- [[概念/Math/probability-statistics|概率统计]] — 概念卡片
+- [[数学基础/Probability_Statistics/Skill_Statistics_Cheatsheet|统计速查表]] — 统计速查
+- [[数学基础/Information_Theory/Information_Theory_Fundamentals|信息论基础]] — 概率与信息的关联
+- [[概念/Math/bayesian-methods|贝叶斯方法]] — 概率统计的重要分支

@@ -732,7 +732,7 @@ flowchart TD
 
 - [[论文精读/Scaling/Scaling_Laws_Deep_Dive|Scaling Laws 深度解读]]
 - [[论文精读/Architecture/Mixture_of_Experts_Deep_Dive|MoE 深度解读]]
-- [[论文精读/Frontier/DeepSeek_V3_Technical_Report|DeepSeek-V3 技术报告]]
+- [[论文精读/DeepSeek_V3_Technical_Report|DeepSeek-V3 技术报告]]
 - [[论文精读/Alignment/RLHF_DPO_Deep_Dive|RLHF 与 DPO 深度解读]]
 - [[论文精读/Alignment/Chain_of_Thought_Deep_Dive|Chain-of-Thought 深度解读]]
 - [[论文精读/Scaling/Chinchilla_Deep_Dive|Chinchilla 深度解读]]

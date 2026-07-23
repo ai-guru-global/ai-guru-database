@@ -18,6 +18,8 @@ provenance:
   ambiguous: 0.10
 base_confidence: 0.82
 lifecycle: reviewed
+created: 2026-06-12
+updated: 2026-07-21
 tier: supporting
 ---
 
@@ -254,3 +256,23 @@ pip install "langserve[all]"
 - [[概念/chainlit]] — Chainlit 生产级 AI 聊天 UI
 - [[概念/litellm]] — LiteLLM 统一 LLM API 代理
 - [[概念/flowise]] — Flowise Node.js LLM 编排
+
+---
+
+## 2026 LangServe 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **LangServe** | LangChain 应用部署服务 | GA |
+| **OpenAPI 文档** | 自动生成 API 文档 | GA |
+| **流式响应** | 支持 SSE 流式输出 | GA |
+| **批处理** | 批量请求处理 | GA |
+| **K8s 部署** | Kubernetes 部署支持 | GA |
+
+## 生产最佳实践
+
+1. **与 LangSmith 集成**：部署后启用 LangSmith 监控
+2. **流式优先**：用户交互场景启用流式响应
+3. **错误处理**：配置合理的超时和重试策略
+4. **扩缩容**：根据流量配置自动扩缩容
+5. **安全认证**：生产环境启用 API Key 认证

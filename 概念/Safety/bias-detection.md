@@ -20,8 +20,10 @@ provenance:
   inferred: 0.18
   ambiguous: 0.07
 base_confidence: 0.84
-lifecycle: draft
-lifecycle_changed: 2026-07-11
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
+created: 2026-06-12
+updated: 2026-07-21
 tier: core
 created: 2026-07-11T00:00:00Z
 updated: 2026-07-11T00:00:00Z
@@ -688,3 +690,23 @@ print(f"\n公平性评估: {'通过' if report['is_fair'] else '未通过'}")
 - [[概念/Safety/guardrails]] — AI护栏（输出护栏可检测偏见内容）
 - [[概念/model-evaluation]] — 模型评估（偏见是评估的关键维度）
 - [[概念/ai-fundamentals]] — AI基础
+
+---
+
+## 2026 偏见检测生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Fairlearn** | 微软公平性评估工具包 | GA |
+| **AIF360** | IBM AI 公平性 360 | GA |
+| **LLM 偏见评估** | 大模型偏见自动检测 | GA |
+| **多模态偏见** | 图文/视频偏见检测 | 研究 |
+| **去偏训练** | 训练阶段去偏技术 | GA |
+
+## 生产最佳实践
+
+1. **多维度评估**：评估性别/种族/年龄等多维度偏见
+2. **数据审计**：训练数据偏见是模型偏见的根源
+3. **持续监控**：生产环境持续监控输出偏见
+4. **用户反馈**：收集用户反馈发现新型偏见
+5. **透明报告**：发布模型卡片说明已知偏见和局限

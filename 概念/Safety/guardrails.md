@@ -20,8 +20,10 @@ provenance:
   inferred: 0.15
   ambiguous: 0.07
 base_confidence: 0.86
-lifecycle: draft
-lifecycle_changed: 2026-07-11
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
+created: 2026-06-12
+updated: 2026-07-21
 tier: core
 created: 2026-07-11T00:00:00Z
 updated: 2026-07-11T00:00:00Z
@@ -580,3 +582,23 @@ return output_result.modified_text or llm_response
 - [[概念/Safety/runtime-security]] — 运行时安全（护栏是其中的组件）
 - [[概念/Safety/ai-alignment]] — AI对齐（训练级安全，与护栏互补）
 - [[伦理安全/LLM_Security_Defense_Guide]] — LLM安全防御指南
+
+---
+
+## 2026 AI 护栏生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **NeMo Guardrails** | NVIDIA 对话护栏框架 | GA |
+| **Guardrails AI** | 开源输出验证框架 | GA |
+| **LLM Guard** | 输入/输出安全扫描 | GA |
+| **内容审核** | 有害内容/PII 检测 | GA |
+| **自定义规则** | 业务规则护栏 | GA |
+
+## 生产最佳实践
+
+1. **双层防护**：输入和输出都要设置护栏
+2. **延迟控制**：护栏检查增加延迟，用轻量模型或并行处理
+3. **规则更新**：定期更新护栏规则，应对新型攻击
+4. **日志审计**：记录所有被拦截的请求，用于分析改进
+5. **误报处理**：监控误报率，过高需调整阈值

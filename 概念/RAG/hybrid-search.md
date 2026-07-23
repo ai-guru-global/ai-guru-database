@@ -142,7 +142,7 @@ results = client.query_points(
 - [[概念/RAG/bm25|BM25]] — 关键词检索
 - [[概念/RAG/vector-database|Vector Database]] — 向量检索
 - [[概念/RAG/hnsw|HNSW]] — 向量索引
-- [[RAG系统/Hybrid_Search/Hybrid_Search|混合检索专题]] — 深度解析
+- [[RAG系统/Hybrid_Search|混合检索专题]] — 深度解析
 - [[RAG系统/Advanced_RAG/RAG_Retrieval_Latency_Optimization|检索延迟优化]]
 
 ## 2026 混合检索生态现状
@@ -179,7 +179,7 @@ results = client.query_points(
 - [[概念/RAG/vector-database|Vector Database]] — 向量检索
 - [[概念/RAG/reranker|Reranker]] — 重排序
 - [[概念/RAG/retrieval-latency|Retrieval Latency]] — 检索延迟
-- [[RAG系统/Hybrid_Search/Hybrid_Search|混合检索专题]]
+- [[RAG系统/Hybrid_Search|混合检索专题]]
 
 > ℹ️ 混合检索是 2026年 RAG 生产标配，BM25 + 向量 + RRF 融合在大多数场景下效果最佳，配合 Reranker 进一步提升质量。
 

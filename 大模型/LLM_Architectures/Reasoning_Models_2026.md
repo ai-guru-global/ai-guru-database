@@ -755,3 +755,12 @@ def solve_math_problem(problem: str, use_reasoning: bool = True):
 ---
 
 *Last updated: 2026-04-10*
+
+## 相关链接
+
+- [[大模型/Reasoning_Models/o1_Class_Reasoning_Models|o1 类推理模型]] — o1/o3 推理模型架构解析
+- [[大模型/Reasoning_Models/Test_Time_Compute_2026|测试时计算 2026]] — 推理模型核心机制
+- [[大模型/Reasoning_Models/Reasoning_RL_Training_Pipeline|推理模型 RL 训练流水线]] — RL 训练方法
+- [[概念/LLM/reasoning-models|推理模型]] — 推理模型概念卡片
+- [[概念/LLM/test-time-compute|Test-Time Compute]] — 测试时计算概念
+- [[大模型/LLM_Architectures/index|LLM 架构索引]] — LLM 架构主题导览

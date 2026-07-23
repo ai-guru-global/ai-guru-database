@@ -198,3 +198,23 @@ Radix Tree 结构:
 限制: 前缀必须完全匹配，部分匹配无法利用缓存。
 优化: 将不变内容 (System Prompt) 放在最前面，变化内容放后面。
 工具: SGLang RadixAttention / vLLM APC / OpenAI Prompt Caching。
+
+---
+
+## 2026 Prefix Caching 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **vLLM APC** | Automatic Prefix Caching 自动前缀缓存 | GA |
+| **SGLang RadixAttention** | 前缀树索引的 KV Cache 复用 | GA |
+| **OpenAI Prompt Caching** | API 层自动缓存共享前缀 | GA |
+| **TensorRT-LLM** | KV Cache 重用优化 | GA |
+| **跨请求缓存** | 多用户共享 System Prompt 缓存 | GA |
+
+## 生产最佳实践
+
+1. **Prompt 结构**：不变内容（System Prompt）放最前，变化内容放后
+2. **缓存命中率**：监控 cache hit rate，低于 50% 需调整 Prompt 结构
+3. **显存平衡**：缓存占用显存，需与 batch size 平衡
+4. **多租户**：不同租户的缓存隔离，避免信息泄漏
+5. **失效策略**：模型更新后自动失效旧缓存

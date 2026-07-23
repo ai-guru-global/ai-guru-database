@@ -18,6 +18,8 @@ provenance:
   ambiguous: 0.10
 base_confidence: 0.80
 lifecycle: reviewed
+created: 2026-06-12
+updated: 2026-07-21
 tier: supporting
 ---
 
@@ -258,3 +260,23 @@ spec:
 - [[概念/vllm]] — vLLM 高性能推理引擎
 - [[概念/flash-attn]] — Flash Attention 高效注意力内核
 - [[概念/lm-format-enforcer]] — LM Format Enforcer 输出格式约束
+
+---
+
+## 2026 SGLang Frontend 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **SGLang 0.4+** | 高性能 LLM 服务框架，RadixAttention | GA |
+| **结构化输出** | JSON/正则/CFG 约束生成 | GA |
+| **多模态支持** | 图文/视频输入推理 | GA |
+| **分布式推理** | 多卡 TP/PP 并行服务 | GA |
+| **OpenAI 兼容** | 完全兼容 OpenAI API 格式 | GA |
+
+## 生产最佳实践
+
+1. **RadixAttention**：利用前缀树缓存共享 System Prompt，降低 TTFT
+2. **批处理调优**：根据显存调整 max_running_requests
+3. **量化部署**：AWQ/GPTQ 量化降低显存占用
+4. **监控指标**：跟踪 cache hit rate、queue size、TTFT/TPOT
+5. **与 vLLM 对比**：结构化输出场景 SGLang 更优，纯吞吐 vLLM 更优

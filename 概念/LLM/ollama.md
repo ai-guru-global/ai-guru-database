@@ -22,6 +22,8 @@ provenance:
   ambiguous: 0.10
 base_confidence: 0.85
 lifecycle: reviewed
+created: 2026-06-12
+updated: 2026-07-21
 tier: supporting
 ---
 
@@ -223,3 +225,23 @@ AI Stack 模型开发流程
 - [[概念/model-serving]] — 模型服务
 - [[概念/a-speed]] — A-Speed 加速推理
 - [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+
+---
+
+## 2026 Ollama 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Ollama 0.6+** | 本地 LLM 运行工具 | GA |
+| **模型库** | 一键拉取运行开源模型 | GA |
+| **OpenAI 兼容** | 兼容 OpenAI API 格式 | GA |
+| **多平台** | macOS/Linux/Windows 全支持 | GA |
+| **GPU 加速** | 自动检测并使用 GPU | GA |
+
+## 生产最佳实践
+
+1. **开发环境**：本地开发/测试用 Ollama，生产用 vLLM/TRT-LLM
+2. **模型选择**：根据硬件选择合适大小的模型
+3. **量化版本**：显存不足时用 Q4 量化版本
+4. **API 服务**：用 Ollama 的 OpenAI 兼容 API 快速集成
+5. **资源限制**：设置 OLLAMA_MAX_LOADED_MODELS 限制并发模型数

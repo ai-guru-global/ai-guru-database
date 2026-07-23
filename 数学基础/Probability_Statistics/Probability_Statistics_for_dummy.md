@@ -217,3 +217,12 @@ A: ChatGPT 生成每个字的时候，其实都在计算"下一个字是什么�
 
 ---
 *本文是 [Probability_Statistics.md](./Probability_Statistics.md) 的简化版，适合零基础读者。*
+
+## 相关链接
+
+- [[数学基础/Probability_Statistics/Probability_Statistics|概率统计 (完整版)]] — 本篇小白版对应的详细版
+- [[数学基础/Probability_Statistics/index|概率统计索引]] — 主题导览
+- [[概念/Math/probability-statistics|概率统计]] — 概念卡片
+- [[数学基础/Probability_Statistics/Skill_Statistics_Cheatsheet|统计速查表]] — 统计速查
+- [[数学基础/index|数学基础首页]] — 数学基础知识总览
+- [[概念/Math/bayesian-methods|贝叶斯方法]] — 概率统计的重要分支

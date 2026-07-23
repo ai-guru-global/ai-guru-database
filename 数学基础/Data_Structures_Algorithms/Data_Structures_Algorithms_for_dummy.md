@@ -201,3 +201,11 @@ A: 百度搜索是"关键词匹配"——你搜"苹果手机"，它找包含这�
 
 ---
 *本文是 [Data_Structures_Algorithms.md](./Data_Structures_Algorithms.md) 的简化版，适合零基础读者。*
+
+## 相关链接
+
+- [[数学基础/Data_Structures_Algorithms/Data_Structures_Algorithms|数据结构与算法 (完整版)]] — 本篇小白版对应的详细版
+- [[数学基础/Data_Structures_Algorithms/index|数据结构与算法索引]] — 主题导览
+- [[概念/General/data-structures-algorithms|数据结构与算法]] — 概念卡片
+- [[数学基础/index|数学基础首页]] — 数学基础知识总览
+- [[数学基础/Math_Fundamentals/Mathematics_for_AI|AI 数学基础]] — AI 所需数学基础

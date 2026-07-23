@@ -741,7 +741,7 @@ response = openai.chat.completions.create(
 | MoE Deep Dive | GPT-4 推测架构 | [Mixture_of_Experts_Deep_Dive.md](论文精读/Architecture/Mixture_of_Experts_Deep_Dive.md) |
 | RLHF & DPO | 对齐方法 | [RLHF_DPO_Deep_Dive.md](论文精读/Alignment/RLHF_DPO_Deep_Dive.md) |
 | Scaling Laws | 规模扩展理论 | [Scaling_Laws_Deep_Dive.md](论文精读/Scaling/Scaling_Laws_Deep_Dive.md) |
-| DeepSeek-V3 | 开源追赶者 | [DeepSeek_V3_Technical_Report.md](论文精读/Frontier/DeepSeek_V3_Technical_Report.md) |
+| DeepSeek-V3 | 开源追赶者 | [DeepSeek_V3_Technical_Report.md](论文精读/DeepSeek_V3_Technical_Report.md) |
 | 多模态模型架构 | GPT-4o 原生多模态 | [../大模型/Multimodal_Models/Multimodal_Architectures_2026.md](大模型/Multimodal_Models/Multimodal_Architectures_2026.md) |
 | GRPO 与新对齐方法 | GPT-4 之后的对齐演进 | [../模型训练/GRPO_and_New_Alignment_Methods.md](模型训练/Alignment/GRPO_and_New_Alignment_Methods.md) |
 | AI Agent 架构 | 基于 GPT-4 的 Agent 开发 | [../强化学习/AI_Agents/](../强化学习/AI_Agents/) |

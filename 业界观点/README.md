@@ -169,3 +169,38 @@ sources: []
 - [[业界观点/Zhilin_Yang/about|杨植麟 (Zhilin Yang) — 月之暗面/Moonshot AI 创始人]]
 - [[业界观点/Zhilin_Yang/sayings|杨植麟关于 AI 的观点 (Zhilin Yang on AI)]]
 - [[业界观点/3Blue1Brown/about|Grant Sanderson (3Blue1Brown)]]
+
+## 附录：人物影响力排名
+
+| 排名 | 人物 | 核心贡献 | 影响力 |
+|------|------|----------|--------|
+| 1 | Sam Altman | ChatGPT/AGI愿景 | ★★★★★ |
+| 2 | Jensen Huang | AI基础设施 | ★★★★★ |
+| 3 | Geoffrey Hinton | 深度学习理论 | ★★★★★ |
+| 4 | Demis Hassabis | AlphaGo/AlphaFold | ★★★★★ |
+| 5 | Yann LeCun | CNN/自监督 | ★★★★★ |
+
+## 附录：2026年热点话题
+
+| 话题 | 相关人物 | 核心争议 |
+|------|----------|----------|
+| AGI时间线 | 全员 | 2年vs20年 |
+| 开源vs闭源 | Liang/Zuckerberg vs Altman | 安全vs创新 |
+| AI监管 | Bengio/Hinton | 强监管vs轻监管 |
+| 具身智能 | Huang/Musk | 机器人+AI |
+| AI就业 | Gates/Ng | 增强vs替代 |
+
+## 附录：检查清单
+
+| 检查项 | 说明 | 状态 |
+|--------|------|------|
+| 了解5位核心领袖 | about.md | ☐ |
+| 阅读核心语录 | sayings.md | ☐ |
+| 观看代表演讲 | YouTube | ☐ |
+| 对比不同观点 | Talks_Synthesis | ☐ |
+| 关注最新动态 | 社交媒体 | ☐ |
+
+> 💡 理解AI领袖的思想，是把握AI未来方向的高效捷径。
+
+---
+*Last updated: 2026-07-21*

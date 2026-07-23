@@ -344,3 +344,12 @@ src/
 
 *Last updated: 2026-04-26*
 *Version: 1.0.0*
+
+## 相关链接
+
+- [[智能体/Agentic_Coding_Tools/Agentic_Coding_Tools_Overview|Agentic Coding 工具概览]] — 工具全景对比
+- [[智能体/Agentic_Coding_Tools/Claude_Code_Deep_Dive|Claude Code 深度解析]] — 同类 CLI 工具对比
+- [[智能体/Agentic_Coding_Tools/Continue_Deep_Dive|Continue 深度解析]] — IDE 插件类工具对比
+- [[智能体/Agentic_Coding_Tools/index|Agentic Coding 索引]] — 工具主题导览
+- [[编程/index|编程索引]] — AI 编程主题导览
+- [[行业应用/Code_Generation_index|代码生成索引]] — 代码生成应用

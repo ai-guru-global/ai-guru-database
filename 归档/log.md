@@ -580,7 +580,7 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
 - 创建 11 个高级主题和应用场景的深度中文页面
 
 ### 高级主题页面(7 个)
-- `智能体/Agent_Protocols/A2A_Protocol_Deep_Dive.md` — Agent-to-Agent 协议,含 A2A vs MCP 对比
+- `智能体/A2A_Protocol_Deep_Dive.md` — Agent-to-Agent 协议,含 A2A vs MCP 对比
 - `大模型/Structured_Output_Guide.md` — 结构化输出完全指南(Instructor/PydanticAI/Outlines)
 - `模型评估/Evaluation_Tools/LLM_as_Judge_Guide.md` — LLM-as-Judge 评估指南(Ragas/DeepEval/Promptfoo)
 - `概念/long-context-vs-rag.md` — 长上下文 vs RAG 技术选型决策框架
@@ -589,7 +589,7 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
 - `RAG系统/Advanced_RAG/Agentic_RAG_Guide.md` — Agentic RAG 架构(Self-RAG/CRAG/Adaptive RAG)
 
 ### 应用场景页面(4 个)
-- `行业应用/Code_Generation/AI_Code_Generation_2026.md` — AI 代码生成应用
+- `行业应用/AI_Code_Generation_2026.md` — AI 代码生成应用
 - `行业应用/Finance/AI_Finance_Applications_2026.md` — AI 金融应用(风控/量化/合规)
 - `行业应用/Education/AI_Education_Applications_2026.md` — AI 教育应用(个性化辅导/自动评分)
 - `行业应用/Healthcare/AI_Healthcare_Applications_2026.md` — AI 医疗应用(辅助诊断/药物发现)
@@ -612,7 +612,7 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
 - `14_AI_Gateway/LLM_Gateway_Comparison_2026.md` — LLM 网关对比(LiteLLM/Portkey/Kong)
 - `RAG系统/Embeddings/Embedding_Models_Guide.md` — Embedding 模型选型指南(闭源/开源模型对比)
 - `智能体/Memory_Infrastructure/Agent_Memory_Techniques.md` — Agent 记忆技术(Mem0/Zep/Graphiti)
-- `部署推理/Cost/LLM_Cost_Optimization.md` — LLM 成本优化(模型路由/缓存/量化/批处理)
+- `部署推理/LLM_Cost_Optimization.md` — LLM 成本优化(模型路由/缓存/量化/批处理)
 
 ### 页面统计
 - 新增页面: 7 个

@@ -225,3 +225,11 @@ flowchart TB
 ---
 
 *Last updated: 2026-05-07*
+
+## 相关链接
+
+- [[数学基础/Java_Ecosystem_AI/Java_Ecosystem_AI_Overview|Java AI 生态概览]] — Java AI 生态导览
+- [[数学基础/Java_Ecosystem_AI/Spring_AI_Deep_Dive|Spring AI 深度解析]] — Java AI 主流框架
+- [[数学基础/Java_Ecosystem_AI/index|Java AI 生态索引]] — 主题导览
+- [[数学基础/index|数学基础首页]] — 数学基础知识总览
+- [[智能体/Agent_Skills/Spring_AI_Skills_Integration|Spring AI 技能集成]] — Spring AI 与 Agent 技能

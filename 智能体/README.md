@@ -287,5 +287,5 @@ L4: 持久化知识 → SQL/NoSQL
 
 ## 新增页面
 
-- [[智能体/Agent_Protocols/A2A_Protocol_Deep_Dive|A2A 协议]]
+- [[智能体/A2A_Protocol_Deep_Dive|A2A 协议]]
 - [[智能体/Memory_Infrastructure/Agent_Memory_Techniques|Agent 记忆技术]]

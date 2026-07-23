@@ -1,0 +1,203 @@
+---
+title: Contract Testing
+type: index
+created: 2026-07-02
+updated: 2026-07-11
+sources: []
+tags: [auto-index]
+---
+
+# Contract Testing
+
+契约测试（Contract Testing）— 微服务架构下 AI API 的消费者驱动契约测试（consumer-driven contract testing）方法。
+
+## 文件导航
+
+| 文件 | 说明 | 适用人群 |
+|------|------|----------|
+| [[测试/Contract_Testing|Contract Testing]] | Contract testing practice: Pact, schema validation and API compatibility checking | backend engineers / QA engineers |
+
+## Related
+
+- [[测试/index|测试首页]]
+- [[测试/Testing_Fundamentals/index|Testing Fundamentals]]
+
+## 核心概念
+
+| 概念 | 说明 | 应用场景 |
+|------|------|----------|
+| 消费者驱动契约 | 由 API 消费者定义期望接口 | 微服务间调用 |
+| Provider 验证 | 服务提供者验证契约合规 | CI/CD 流水线 |
+| Schema 验证 | JSON Schema 校验请求/响应 | API 网关 |
+| 向后兼容 | 新版本不破坏旧契约 | API 版本管理 |
+| Pact 框架 | 主流契约测试工具 | 分布式系统 |
+
+## 契约测试 vs 其他测试
+
+| 测试类型 | 关注点 | 粒度 | 速度 |
+|----------|--------|------|------|
+| 单元测试 | 函数/方法逻辑 | 细 | 快 |
+| 集成测试 | 组件间交互 | 中 | 中 |
+| 契约测试 | API 接口兼容性 | 中 | 快 |
+| E2E 测试 | 完整用户流程 | 粗 | 慢 |
+
+## AI API 契约测试要点
+
+| 要点 | 说明 | 实践建议 |
+|------|------|----------|
+| 响应格式稳定性 | LLM 输出结构可能变化 | 严格定义输出 Schema |
+| 延迟契约 | 响应时间 SLA | P99 延迟上限 |
+| 错误格式 | 统一错误响应结构 | 错误码+消息规范 |
+| 流式响应 | SSE 格式契约 | 事件类型定义 |
+| 版本管理 | API 版本兼容 | 语义化版本 |
+
+## 学习路径建议
+
+| 阶段 | 推荐内容 | 目标 |
+|------|----------|------|
+| 入门 | Contract Testing 主文档 | 理解契约测试原理 |
+| 实践 | Pact 框架教程 | 掌握工具使用 |
+| 进阶 | CI/CD 集成 | 自动化验证 |
+
+## 常见问题
+
+| 问题 | 解答 |
+|------|------|
+| 契约测试能替代集成测试吗？ | 不能，它们是互补关系 |
+| LLM API 如何做契约测试？ | 定义输出 Schema + 延迟 SLA |
+| 契约破坏如何处理？ | 版本化 + 废弃策略 |
+| 哪些工具推荐？ | Pact, Spring Cloud Contract |
+
+## 统计
+
+| 指标 | 数值 |
+|------|------|
+| 子域文件数 | 1 |
+| 核心工具 | Pact, OpenAPI |
+| 适用架构 | 微服务、API-first |
+| 测试速度 | 快（秒级） |
+
+> 💡 契约测试是微服务架构下保证 API 兼容性的最高效手段，特别适合 AI API 服务化场景。
+
+## 附录：契约测试工作流
+
+| 步骤 | 操作 | 工具 |
+|------|------|------|
+| 1. 定义契约 | 消费者编写期望 | Pact DSL |
+| 2. 生成 Pact 文件 | 导出契约规范 | Pact Broker |
+| 3. Provider 验证 | 服务端验证契约 | Pact Verify |
+| 4. CI 集成 | 自动化检查 | GitHub Actions |
+| 5. 版本管理 | 契约版本追踪 | Pact Broker |
+| 6. 破坏检测 | 兼容性报告 | can-i-deploy |
+
+## 附录：AI API 契约示例
+
+| 契约项 | 规范 | 验证方式 |
+|--------|------|----------|
+| 请求格式 | JSON, max_tokens 必填 | Schema 校验 |
+| 响应结构 | choices[].message.content | 结构断言 |
+| 状态码 | 200/400/429/500 | 状态码检查 |
+| 延迟 | P99 < 30s | 性能测试 |
+| 流式 | SSE text/event-stream | 格式验证 |
+| 错误体 | {error: {code, message}} | 结构断言 |
+
+## 附录：契约测试工具对比
+
+| 工具 | 语言支持 | 特点 | 适用场景 |
+|------|----------|------|----------|
+| Pact | 多语言 | 消费者驱动 | 微服务 |
+| Spring Cloud Contract | Java | Spring 生态 | Java 微服务 |
+| OpenAPI Validator | 多语言 | 基于规范 | REST API |
+| Dredd | 多语言 | API Blueprint | 文档驱动 |
+| Schemathesis | Python | 模糊测试 | API 健壮性 |
+
+## 附录：常见问题补充
+
+| 问题 | 解答 |
+|------|------|
+| 契约测试与 Mock 的区别？ | Mock 模拟行为，契约验证接口规范 |
+| 如何处理异步 API？ | 消息契约 + 事件 Schema |
+| 契约测试的 ROI？ | 减少 80% 集成问题 |
+| 团队如何推广？ | 从核心 API 开始，逐步扩展 |
+
+## 附录：2026 年契约测试趋势
+
+| 趋势 | 说明 | 影响 |
+|------|------|------|
+| AI API 契约标准化 | OpenAI 兼容格式成事实标准 | 互操作性提升 |
+| 自动化契约生成 | 从流量自动生成契约 | 降低维护成本 |
+| 实时契约监控 | 生产环境契约验证 | 主动发现问题 |
+| GraphQL 契约 | Schema 变更管理 | 类型安全 |
+
+## 附录：契约测试代码示例
+
+```python
+# Pact 契约测试示例
+from pact import Consumer, Provider
+
+pact = Consumer('AI_Client').has_pact_with(Provider('LLM_API'))
+
+# 定义契约
+(pact
+ .given('model is available')
+ .upon_receiving('a chat completion request')
+ .with_request('post', '/v1/chat/completions',
+     body={'model': 'gpt-4', 'messages': [{'role': 'user', 'content': 'Hi'}]})
+ .will_respond_with(200,
+     body={'choices': [{'message': {'content': 'Hello!'}}]}))
+
+# 验证契约
+with pact:
+    response = client.chat_completions.create(...)
+    assert response.choices[0].message.content
+```
+
+## 附录：契约测试最佳实践
+
+| 实践 | 说明 | 价值 |
+|------|------|------|
+| 消费者先行 | 由调用方定义契约 | 需求驱动 |
+| 版本化契约 | 契约纳入版本控制 | 可追溯 |
+| CI 自动验证 | 每次提交检查契约 | 早期发现 |
+| 向后兼容 | 新版本不破坏旧契约 | 平滑升级 |
+| 文档化 | 契约即文档 | 沟通效率 |
+
+## 附录：契约测试成熟度
+
+| 级别 | 特征 | 实践 |
+|------|------|------|
+| L1 | 手动检查 API | 人工验证 |
+| L2 | 基本 Schema 验证 | OpenAPI |
+| L3 | 自动化契约测试 | Pact CI |
+| L4 | 契约即代码 | 全自动化 |
+| L5 | 智能契约管理 | AI 辅助 |
+
+## 附录：契约测试快速导航
+
+| 我想... | 去看 | 难度 |
+|---------|------|------|
+| 了解契约测试基础 | 本文档核心概念 | ★☆☆ |
+| 选择工具 | 工具对比表 | ★☆☆ |
+| 编写契约 | 代码示例 | ★★☆ |
+| CI/CD 集成 | 工作流 | ★★☆ |
+
+## 附录：契约测试资源
+
+| 资源 | 类型 | 特点 |
+|------|------|------|
+| Pact 文档 | 官方文档 | 全面指南 |
+| OpenAPI 规范 | 标准 | API 定义 |
+| Pact Broker | 工具 | 契约管理 |
+| 本文档 | 知识库 | 中文体系化 |
+
+## 附录：契约测试统计
+
+| 指标 | 数值 |
+|------|------|
+| 核心工具 | Pact, OpenAPI |
+| 适用架构 | 微服务、API-first |
+| 测试速度 | 快（秒级） |
+| ROI | 减少 80% 集成问题 |
+
+---
+*Last updated: 2026-07-21*

@@ -718,3 +718,13 @@ FLOPs ≈ 6 × N × D
 ---
 
 *Last updated: 2026-04-01* (Added 2026 model updates: GPT-5.2, Claude 4.5, Gemini 3, Llama 4)
+
+## 相关链接
+
+- [[大模型/LLM_Architectures/LLM_Architectures_for_dummy|大语言模型架构 (小白版)]] — 本篇的零基础版本
+- [[大模型/LLM_Architectures/index|LLM 架构索引]] — LLM 架构主题导览
+- [[大模型/LLM_Architectures/LLM_Internals_Architecture|LLM 内部：架构]] — 架构内部细节深入
+- [[大模型/Transformer_Revolution/Transformer_Revolution|Transformer 革命]] — LLM 底层 Transformer 架构
+- [[大模型/LLM_Architectures/MoE_Routing_and_Load_Balancing|MoE 路由与负载均衡]] — MoE 架构核心机制
+- [[概念/LLM/llm-architectures|LLM 架构]] — LLM 架构概念卡片
+- [[大模型/LLM_Architectures/Transformer_Alternatives|Transformer 替代架构]] — Mamba/SSM 等替代方案

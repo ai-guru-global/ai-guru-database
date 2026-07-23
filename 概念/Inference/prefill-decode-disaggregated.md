@@ -30,7 +30,7 @@ summary: Prefill-Decode 分离将 LLM 推理的两个阶段部署到不同硬件
 lifecycle: reviewed
 tier: supporting
 created: 2026-06-25
-updated: 2026-06-25
+updated: 2026-07-21
 sources: []
 ---
 
@@ -198,3 +198,23 @@ KV Transfer 方式:
 关键挑战: KV Cache 跨节点传输需要高速网络 (RDMA/InfiniBand)。
 性能收益: TTFT 降低 30-50%，Decode 吐吐量提升 20-40%。
 监控重点: KV Transfer 延迟、Prefill/Decode 池利用率。
+
+---
+
+## 2026 Prefill/Decode 分离生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **vLLM Disagg** | vLLM 原生 Prefill/Decode 分离 | GA |
+| **Mooncake** | 月之暗面分离式推理架构 | GA |
+| **DistServe** | 分布式 Prefill/Decode 调度 | 研究 |
+| **KV Transfer** | 跨节点 KV Cache 传输优化 | GA |
+| **动态比例** | 根据负载动态调整 P/D 比例 | GA |
+
+## 生产最佳实践
+
+1. **规模门槛**：小规模部署无需分离，大规模（10+ GPU）才考虑
+2. **KV Transfer**：监控 KV 传输延迟，确保不超过 Prefill 时间
+3. **比例调优**：根据输入/输出长度比调整 Prefill:Decode 池比例
+4. **故障隔离**：Prefill 池故障不影响 Decode 池正在生成的请求
+5. **与 Chunked Prefill 对比**：中小规模用 Chunked Prefill 更简单

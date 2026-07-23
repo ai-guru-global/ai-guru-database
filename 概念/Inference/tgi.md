@@ -199,3 +199,23 @@ response = client.chat_completion(
 - [[概念/Inference/sglang|SGLang]] — 替代引擎
 
 > ℹ️ TGI 是 HuggingFace 官方推理服务，适合快速原型和 HF 生态用户。
+
+---
+
+## 2026 TGI 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **TGI 3.x** | HuggingFace 官方 LLM 推理服务 | GA |
+| **Flash Attention** | 内置 Flash Attention 2 加速 | GA |
+| **量化支持** | GPTQ/AWQ/EETQ 量化推理 | GA |
+| **多模态** | 支持 VLM 图文推理 | GA |
+| **K8s Helm** | 官方 Helm Chart 一键部署 | GA |
+
+## 生产最佳实践
+
+1. **与 vLLM 对比**：TGI 适合 HF 生态，vLLM 吐吐量更高
+2. **批处理配置**：调整 max_batch_prefill_tokens 优化吐吐
+3. **显存管理**：设置 max_total_tokens 避免 OOM
+4. **监控集成**：导出 Prometheus 指标到 Grafana
+5. **滚动更新**：K8s 部署配置 rolling update 零停机

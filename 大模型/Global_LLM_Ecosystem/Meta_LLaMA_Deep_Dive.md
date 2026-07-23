@@ -1547,3 +1547,13 @@ LLaMA 模型选择指南
 ---
 
 *Last updated: 2026-06-02*
+
+## 相关链接
+
+- [[大模型/Global_LLM_Ecosystem/README|国际大模型生态全景]] — 五大国际大模型厂商横向对比
+- [[大模型/Global_LLM_Ecosystem/Mistral_AI_Deep_Dive|Mistral AI 技术深度解析]] — 同为开源 LLM 旗手的技术路线对比
+- [[大模型/LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral|MoE 案例：DeepSeek 与 Mixtral]] — LLaMA MoE 与 Mixtral 架构对比
+- [[大模型/Chinese_LLM_Ecosystem/Qwen_Deep_Dive|Qwen 深度解析]] — 开源生态中的另一强力竞争者
+- [[大模型/Edge_LLM/Edge_LLM_Deep_Dive|端侧 LLM 深度解读]] — LLaMA 在端侧部署中的应用
+- [[概念/LLM/llama-series|LLaMA 系列]] — LLaMA 模型家族概念卡片
+- [[概念/Inference/llama-cpp|llama.cpp]] — LLaMA 主流端侧推理引擎

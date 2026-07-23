@@ -212,3 +212,11 @@ tests:
         value: "Comment allez-vous?"
         threshold: 0.8
 ```
+
+## 相关链接
+
+- [[大模型/Prompt_Engineering/Prompt_Engineering|Prompt Engineering]] — Promptfoo 测试的对象
+- [[概念/LLM/llm-as-judge|LLM as Judge]] — Promptfoo 的评估机制
+- [[概念/General/deepeval|DeepEval]] — 同类 LLM 测试框架对比
+- [[概念/MLOps/ci-cd|CI/CD]] — Promptfoo 集成的 CI 流水线
+- [[概念/Safety/red-teaming|红队测试]] — Promptfoo 支持的安全测试

@@ -18,6 +18,8 @@ provenance:
   ambiguous: 0.10
 base_confidence: 0.80
 lifecycle: reviewed
+created: 2026-06-12
+updated: 2026-07-21
 tier: supporting
 ---
 
@@ -235,3 +237,23 @@ spec:
 - [[概念/langfuse]] — Langfuse 开源 LLM 可观测性
 - [[概念/opik]] — Opik LLM 可观测性平台
 - [[概念/helicone]] — Helicone LLM API 监控
+
+---
+
+## 2026 LLM 可观测性生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Phoenix (Arize)** | 开源 LLM 可观测性平台 | GA |
+| **LangSmith** | LangChain 官方可观测性 | GA |
+| **OpenTelemetry** | 标准化 LLM 追踪 | GA |
+| **评估集成** | 可观测性 + 评估一体化 | GA |
+| **成本分析** | Token 消耗和成本分析 | GA |
+
+## 生产最佳实践
+
+1. **全链路追踪**：从用户请求到 LLM 响应全链路追踪
+2. **评估闭环**：可观测性数据驱动评估改进
+3. **告警配置**：延迟/错误率/成本异常告警
+4. **隐私保护**：敏感数据脱敏后再上传
+5. **工具选择**：开源用 Phoenix，LangChain 生态用 LangSmith

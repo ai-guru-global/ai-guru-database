@@ -317,7 +317,7 @@ def cascade(query: str):
 | 租户月预算 | > 80% | 告警 + 降级到便宜模型 |
 | 全局日 Token | > 日均 3 倍 | P0 告警 + 自动熔断 |
 
-详见 [[部署推理/Cost/LLM_Cost_Optimization]]。
+详见 [[部署推理/LLM_Cost_Optimization]]。
 
 ---
 
@@ -484,7 +484,7 @@ def rag_answer(question):
 
 ### 跨章
 - [[概念/mlops]] — MLOps 概念页（含 LLMOps 简述）
-- [[部署推理/Cost/LLM_Cost_Optimization]] — 成本优化细节
+- [[部署推理/LLM_Cost_Optimization]] — 成本优化细节
 - [[部署推理/Caching/Prompt_Caching_Advanced]] — Prompt 缓存工程实现
 - [[RAG系统/README]] — RAG 系统架构（本文 §6 侧重其 Ops）
 - [[测试/Testing_Frameworks/Promptfoo_Deep_Dive]] — Prompt 红队与测试

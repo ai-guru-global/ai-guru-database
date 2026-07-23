@@ -1238,7 +1238,7 @@ class CFGDiffusion:
 - [[深度学习/DL_Fundamentals/DL_Fundamentals]] — 深度学习基础
 - [[深度学习/Neural_Network_Core/Neural_Network_Core]] — 神经网络核心（U-Net/Attention）
 - [[深度学习/State_Space_Models/State_Space_Models]] — 状态空间模型（与SDE的联系）
-- [[深度学习/Transfer_Learning/Transfer_Learning]] — 迁移学习（预训练扩散模型）
+- [[深度学习/Transfer_Learning]] — 迁移学习（预训练扩散模型）
 - [[数学基础/Probability_Statistics/Probability_Statistics]] — 概率统计（扩散过程基础）
 - [[数学基础/Information_Theory/Information_Theory]] — 信息论（ELBO/KL散度）
 - [[概念/Safety/model-watermark]] — 模型水印（AI生成内容检测）

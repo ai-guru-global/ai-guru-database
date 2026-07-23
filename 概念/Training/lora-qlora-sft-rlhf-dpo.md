@@ -30,7 +30,7 @@ base_confidence: 0.88
 lifecycle: reviewed
 tier: core
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-07-21
 ---
 
 # LoRA / QLoRA / SFT / RLHF / DPO 大白话串讲
@@ -342,3 +342,23 @@ Aligned Chat Model（又好又安全）
 - [[大模型/Fine_tuning_Techniques/Fine_tuning_Techniques_for_dummy]] — 微调技术小白版
 - [[模型训练/Alignment/TRL_RLHF_DPO_Guide]] — TRL 实战：RLHF 与 DPO
 - [[模型训练/Alignment/GRPO_and_New_Alignment_Methods]] — GRPO 与新一代对齐方法
+
+---
+
+## 2026 微调对齐全链路生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **SFT** | 监督微调基础流程 | GA |
+| **QLoRA** | 4bit 量化 + LoRA 微调 | GA |
+| **DPO/GRPO** | 直接偏好优化对齐 | GA |
+| **TRL** | HuggingFace 对齐训练库 | GA |
+| **LLaMA-Factory** | 一站式微调框架 | GA |
+
+## 生产最佳实践
+
+1. **流程顺序**：SFT → DPO/GRPO，不要跳过 SFT 直接对齐
+2. **数据配比**：SFT 数据质量 > 数量，对齐数据需多样化
+3. **显存优化**：显存不足用 QLoRA，充足用 LoRA
+4. **评估闭环**：每步微调后评估，确认效果提升
+5. **版本管理**：微调模型版本化，支持回滚

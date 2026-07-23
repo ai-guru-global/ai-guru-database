@@ -215,3 +215,23 @@ from ag2 import AssistantAgent
 - [[概念/Agent/langchain|LangChain]]
 - [[概念/Agent/crewai|CrewAI]]
 - [[概念/Agent/mcp|MCP]]
+
+---
+
+## 2026 AutoGen 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **AutoGen 0.4+** | 微软多 Agent 对话框架 | GA |
+| **多 Agent 协作** | 多角色 Agent 协作完成任务 | GA |
+| **代码执行** | 安全的代码执行环境 | GA |
+| **人机协作** | 人类参与 Agent 决策 | GA |
+| **分布式 Agent** | 分布式 Agent 部署 | GA |
+
+## 生产最佳实践
+
+1. **角色设计**：明确每个 Agent 的角色和职责边界
+2. **对话管理**：设置最大对话轮数，避免无限循环
+3. **代码安全**：代码执行在沙箱环境中
+4. **错误处理**：Agent 失败时优雅降级
+5. **成本控制**：监控 token 消耗，设置预算上限

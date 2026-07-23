@@ -470,6 +470,6 @@ Fireworks AI 生产使用 checklist
 - [[部署推理/Inference_Engines/Together_AI_Deep_Dive.md|Together_AI_Deep_Dive]]
 - [[部署推理/Inference_Engines/vLLM_Deep_Dive.md|vLLM_Deep_Dive]]
 - [[部署推理/Inference_Engines/LLM_Inference_Engine_Selection_Guide.md|LLM_Inference_Engine_Selection_Guide]]
-- [[部署推理/Cost/LLM_Cost_Optimization.md|LLM_Cost_Optimization]]
+- [[部署推理/LLM_Cost_Optimization.md|LLM_Cost_Optimization]]
 - [[架构基建/AI_Gateway/LiteLLM_Deep_Dive|LiteLLM_Deep_Dive]]
 - [[架构基建/AI_Gateway/AI_Gateway_2026|AI_Gateway_2026]]

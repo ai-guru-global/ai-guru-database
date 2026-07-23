@@ -18,6 +18,8 @@ provenance:
   ambiguous: 0.10
 base_confidence: 0.85
 lifecycle: reviewed
+created: 2026-06-12
+updated: 2026-07-21
 tier: supporting
 ---
 
@@ -247,3 +249,23 @@ docker pull nvcr.io/nvidia/pytorch:24.05-py3
 - [[概念/onnx]] — ONNX 开放神经网络交换格式
 - [[概念/flash-attn]] — Flash Attention 高效注意力内核
 - [[概念/openvino]] — OpenVINO Intel 推理优化
+
+---
+
+## 2026 Torch-TensorRT 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Torch-TensorRT 2.x** | PyTorch 原生 TensorRT 编译集成 | GA |
+| **torch.compile 后端** | 作为 torch.compile 的 TensorRT 后端 | GA |
+| **动态 Shape** | 支持动态输入形状的 TRT 编译 | GA |
+| **FP8 支持** | H100 上 FP8 精度推理 | GA |
+| **LLM 优化** | 与 TensorRT-LLM 配合服务大模型 | GA |
+
+## 生产最佳实践
+
+1. **编译缓存**：启用 TRT 引擎缓存，避免每次启动重新编译
+2. **精度选择**：FP16 是性价比最优，FP8 需 H100+ 硬件
+3. **动态形状**：使用 optimization profiles 覆盖实际输入范围
+4. **版本锁定**：TensorRT/CUDA/PyTorch 版本必须严格匹配
+5. **回退机制**：TRT 不支持的算子自动回退 PyTorch，监控回退率

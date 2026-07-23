@@ -22,4 +22,4 @@ tags: [auto-index]
 
 - [[可视化/index|可视化首页]]
 - [[可视化/Best_Practices/index|Best Practices]]
-- [[测试/Weights_Biases/index|Weights & Biases]]
+- [[测试/Weights_Biases_index|Weights & Biases]]

@@ -464,7 +464,7 @@ python3 -m pytest 工具/tests/test_restructure_2026.py -v
 - [[工具/export_corpus_Deep_Dive|export_corpus.py 源码深度解析]] — 核心导出引擎的架构、算法与扩展指南
 - [[工具/wiki_health_Deep_Dive|wiki_health.py 源码解析]] — 健康检查的核心函数与评分算法
 - [[工具/Source_Code_Analysis|其余脚本批量解析]] — 所有其他脚本的逐一源码分析
-- [[工具/tests/index|测试目录]]
+- [[工具/tests_index|测试目录]]
 
 ---
 

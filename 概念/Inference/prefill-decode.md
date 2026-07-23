@@ -28,7 +28,7 @@ base_confidence: 0.92
 lifecycle: reviewed
 tier: core
 created: 2026-06-04
-updated: 2026-06-04
+updated: 2026-07-21
 aliases:
   - "Prefill Decode"
   - "prefill decode"
@@ -206,3 +206,23 @@ PD 分离部署:
 3. **大规模用 PD 分离**：100+ GPU 时考虑 Prefill/Decode 分离
 4. **投机解码加速 Decode**：Decode 阶段用 Speculative Decoding
 5. **KV Cache 管理**：Decode 阶段显存主要是 KV Cache
+
+---
+
+## 2026 Prefill/Decode 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Chunked Prefill** | 分块预填充降低 TTFT 峰值 | GA |
+| **PagedAttention** | vLLM 分页 KV Cache 管理 | GA |
+| **Prefill/Decode 分离** | 独立资源池优化各阶段 | GA |
+| **投机解码** | 小模型加速 Decode 阶段 | GA |
+| **KV Cache 压缩** | 量化/稀疏化降低显存占用 | GA |
+
+## 生产最佳实践
+
+1. **阶段识别**：监控 Prefill/Decode 时间占比，确定瓶颈
+2. **Chunked Prefill**：长输入场景启用分块预填充
+3. **KV Cache 预算**：根据序列长度规划 KV Cache 显存
+4. **投机解码**：Decode-bound 场景启用 Speculative Decoding
+5. **分离部署**：大规模场景考虑 Prefill/Decode 分离架构

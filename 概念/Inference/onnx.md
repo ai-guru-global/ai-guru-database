@@ -218,3 +218,11 @@ quantizer.quantize(save_dir="./quantized-model", quantization_config=qconfig)
 4. **图优化**：ONNX Runtime 自动做算子融合、常量折叠等优化
 5. **边缘友好**：ONNX Runtime Mobile 支持手机、IoT 设备
 6. **HuggingFace 桥接**：Optimum 库让 HF 模型一键导出 ONNX
+
+## 相关链接
+
+- [[概念/Inference/model-formats|模型格式]] — ONNX 作为模型交换格式
+- [[概念/Inference/triton-server|Triton Inference Server]] — 支持 ONNX 后端的推理服务器
+- [[概念/Inference/openvino|OpenVINO]] — 同类跨平台推理优化方案
+- [[概念/Inference/inference-performance|推理性能]] — ONNX Runtime 的性能优化
+- [[大模型/Edge_LLM/Edge_LLM_Deep_Dive|端侧 LLM 深度解读]] — ONNX 在端侧推理中的应用

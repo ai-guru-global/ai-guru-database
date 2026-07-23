@@ -28,7 +28,7 @@ provenance:
   ambiguous: 0.05
 base_confidence: 0.88
 created: 2026-06-24
-updated: 2026-06-24
+updated: 2026-07-21
 ---
 
 # 分布式训练（Distributed Training）
@@ -228,3 +228,23 @@ GPU 3: Layer 24-31 ──► 输出
 ---
 
 **参见**：[[Ray_Deep_Dive]] · [[FSDP_Deep_Dive]] · [[Megatron_LM_Deep_Dive]] · [[概念/distributed-parallelism]] · [[模型训练/README|模型训练]] · [[模型训练/Distributed_Training/index]]
+
+---
+
+## 2026 分布式训练生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **FSDP2** | PyTorch 原生全分片数据并行 | GA |
+| **DeepSpeed 0.15+** | 微软分布式训练库 | GA |
+| **Megatron-LM** | NVIDIA 大模型训练框架 | GA |
+| **3D 并行** | DP + TP + PP 组合并行 | GA |
+| **万卡训练** | 10K+ GPU 集群训练 | GA |
+
+## 生产最佳实践
+
+1. **并行策略**：根据模型规模选择 DP/FSDP/3D 并行
+2. **通信优化**：多机训练用 NCCL + RDMA 优化通信
+3. **显存管理**：启用激活检查点 + ZeRO 降低显存
+4. **扩展性测试**：从小规模验证扩展效率再扩大
+5. **故障恢复**：配置定期 checkpoint，支持断点续训

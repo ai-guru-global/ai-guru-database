@@ -535,3 +535,12 @@ Transformer 的计算复杂度为 $O(n^2 d)$,内存复杂度为 $O(n^2)$,在长�
 ---
 
 *Last updated: 2026-02-10*
+
+## 相关链接
+
+- [[大模型/Transformer_Revolution/Transformer_Revolution_for_dummy|Transformer 革命 (小白版)]] — 本篇的零基础版本
+- [[大模型/Transformer_Revolution/index|Transformer 革命索引]] — Transformer 主题导览
+- [[大模型/Transformer_Revolution/Self_Attention_Mechanism|自注意力机制]] — Transformer 核心机制深入
+- [[大模型/LLM_Architectures/LLM_Architectures|大语言模型架构]] — 基于 Transformer 的 LLM 架构
+- [[大模型/Transformer/Transformer_Deep_Dive|Transformer 深度解析]] — Transformer 架构深度剖析
+- [[概念/LLM/transformer-architecture|Transformer 架构]] — Transformer 架构概念卡片

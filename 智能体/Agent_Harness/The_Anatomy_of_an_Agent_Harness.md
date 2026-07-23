@@ -292,3 +292,12 @@ To more harness building, better systems, and better agents.
 ## 更新时间
 
 - 2026-04-14
+
+## 相关链接
+
+- [[智能体/Agent_Harness/Agent_Harness_Architecture_2026|Agent Harness 架构 2026]] — Harness 架构详解
+- [[智能体/Agent_Harness/Harness_Core_Subsystems|Harness 核心子系统]] — Harness 子系统拆解
+- [[智能体/Agent_Harness/index|Agent Harness 索引]] — Harness 主题导览
+- [[概念/Agent/agent-harness|Agent Harness]] — Harness 概念卡片
+- [[智能体/Agent_Harness/Harness_Implementation_Guide|Harness 实现指南]] — Harness 工程实现
+- [[智能体/Agent_Harness/Harness-in-nutshell|Harness 速成]] — Harness 速览版本

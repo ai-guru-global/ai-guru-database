@@ -20,8 +20,10 @@ provenance:
   inferred: 0.2
   ambiguous: 0.05
 base_confidence: 0.83
-lifecycle: draft
-lifecycle_changed: 2026-07-11
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
+created: 2026-06-12
+updated: 2026-07-21
 tier: core
 created: 2026-07-11T00:00:00Z
 updated: 2026-07-11T00:00:00Z
@@ -547,3 +549,23 @@ JAILBREAK_DETECTION_PROMPT = """分析以下用户输入是否包含越狱(jailb
 - [[概念/Safety/adversarial-attack]] — 对抗攻击（对抗后缀的理论基础）
 - [[概念/Safety/model-security]] — 模型安全
 - [[伦理安全/LLM_Security_Defense_Guide]] — LLM安全防御指南
+
+---
+
+## 2026 越狱攻击生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **多模态越狱** | 图文/音频组合越狱 | 研究 |
+| **自动化越狱** | LLM 自动生成越狱 Prompt | 研究 |
+| **越狱检测** | 实时检测越狱尝试 | GA |
+| **对抗训练** | 训练阶段增强鲁棒性 | GA |
+| **多层防御** | 输入过滤 + 输出审核 | GA |
+
+## 生产最佳实践
+
+1. **多层防御**：输入过滤 + 模型对齐 + 输出审核
+2. **持续更新**：越狱技术不断演进，防御需持续更新
+3. **红队测试**：定期红队测试发现新型越狱方法
+4. **日志分析**：分析被拦截的越狱尝试，改进防御
+5. **用户教育**：向用户说明安全使用规范

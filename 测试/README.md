@@ -121,10 +121,83 @@ AI 测试类型
 - [[测试/Testing_Frameworks/Regression_Testing_LLM_Deep_Dive|LLM 回归测试深度指南]]
 - [[测试/Testing_Frameworks/LLM_Safety_Testing_Deep_Dive|LLM 安全测试深度指南]]
 - [[测试/Testing_Frameworks/Java_AI_Testing|Java AI 测试实践]]
-- [[测试/RAGAS/RAGAS_Deep_Dive|RAGAS: RAG 评估框架]]
-- [[测试/Agent_Evaluation/Agent_Evaluation_Deep_Dive|Agent 评估深度解析]]
-- [[测试/Contract_Testing/Contract_Testing|契约测试 (Contract Testing for AI Systems)]]
-- [[测试/Test_Data/Test_Data_Management|测试数据管理 (Test Data Management)]]
-- [[测试/Weights_Biases/Weights_Biases_Deep_Dive|Weights & Biases: ML 实验追踪平台]]
-- [[测试/AB_Testing/AB_Testing_AI_Systems|AI 系统 A/B 测试]]
+- [[测试/RAGAS_Deep_Dive|RAGAS: RAG 评估框架]]
+- [[测试/Agent_Evaluation_Deep_Dive|Agent 评估深度解析]]
+- [[测试/Contract_Testing|契约测试 (Contract Testing for AI Systems)]]
+- [[测试/Test_Data_Management|测试数据管理 (Test Data Management)]]
+- [[测试/Weights_Biases_Deep_Dive|Weights & Biases: ML 实验追踪平台]]
+- [[测试/AB_Testing_AI_Systems|AI 系统 A/B 测试]]
 - [[测试/README_for_dummy|15 AI 测试 — 小白版 🧪]]
+
+## 测试工具全景
+
+| 工具 | 类型 | 语言 | 适用场景 |
+|------|------|------|----------|
+| DeepEval | 评估框架 | Python | 通用 LLM 测试 |
+| Promptfoo | Prompt 测试 | Node.js | Prompt 工程 |
+| RAGAS | RAG 评估 | Python | RAG 系统 |
+| LangSmith | 追踪评估 | Python/JS | LangChain 生态 |
+| W&B | 实验跟踪 | Python | 模型迭代 |
+| Pact | 契约测试 | 多语言 | 微服务 API |
+| Garak | 安全测试 | Python | 红队测试 |
+| Optimizely | A/B 测试 | SaaS | 在线实验 |
+
+## 测试金字塔
+
+| 层级 | 测试类型 | 占比 | 速度 | 工具 |
+|------|----------|------|------|------|
+| 底层 | 单元测试 | 60% | 快 | pytest |
+| 中层 | 集成/契约 | 25% | 中 | Pact |
+| 顶层 | E2E/评估 | 15% | 慢 | DeepEval |
+
+## 学习路径
+
+| 阶段 | 推荐文档 | 目标 |
+|------|----------|------|
+| 入门 | Testing Fundamentals | 建立测试认知 |
+| 实践 | Testing Frameworks | 掌握工具使用 |
+| 进阶 | RAGAS + Agent Eval | 专项评估 |
+| 精通 | AB Testing + W&B | 生产级体系 |
+
+## 常见问题
+
+| 问题 | 解答 |
+|------|------|
+| AI 测试与传统测试有何不同？ | 非确定性输出需语义/统计断言 |
+| 应该先学什么？ | 从 Testing Fundamentals 开始 |
+| 测试需要多少成本？ | 采样评估可控制成本 |
+| 如何构建测试体系？ | 金字塔模型 + CI/CD 集成 |
+
+## 统计
+
+| 指标 | 数值 |
+|------|------|
+| 子域总数 | 9 |
+| 文件总数 | 15+ |
+| 核心工具 | 10+ |
+| 覆盖场景 | 单元/集成/E2E/安全/性能 |
+
+> 💡 AI 测试是保障 AI 系统可靠性的核心实践，从基础方法论到工具化实践，构建全面质量保障体系。
+
+## 快速导航
+
+| 我想... | 去看 | 难度 |
+|---------|------|------|
+| 零基础入门 | README_for_dummy | ★☆☆ |
+| 了解测试基础 | Testing Fundamentals | ★☆☆ |
+| 选择测试工具 | Testing Frameworks | ★★☆ |
+| 评估 RAG | RAGAS | ★★☆ |
+| 评估 Agent | Agent Evaluation | ★★☆ |
+
+## 资源汇总
+
+| 资源 | 类型 | 特点 |
+|------|------|------|
+| DeepEval | 框架 | 全面指标 |
+| Promptfoo | 工具 | 快速上手 |
+| RAGAS | 框架 | RAG 专用 |
+| W&B | 平台 | 实验管理 |
+| 本知识库 | 综合 | 中文体系化 |
+
+---
+*Last updated: 2026-07-21*

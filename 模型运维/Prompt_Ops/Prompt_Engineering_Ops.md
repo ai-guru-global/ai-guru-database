@@ -397,7 +397,7 @@ optimized = dspy.BootstrapFewShot().compile(RAGModule(), trainset=trainset)
 
 ### 本章内
 - [[模型运维/LLMOps_2026]] — 本系列主线（§3 是本文的概览版）
-- [[模型运维/Evaluation/LLM_Evaluation_Pipeline]] — 本文 §4 回归测试的评估方法深扩
+- [[模型运维/LLM_Evaluation_Pipeline]] — 本文 §4 回归测试的评估方法深扩
 - [[模型运维/CI_CD/ML_CI_CD]] — 传统 ML CI/CD，本文是其 Prompt 时代的扩展
 - [[模型运维/MLOps_Maturity_Model]] — 成熟度模型
 

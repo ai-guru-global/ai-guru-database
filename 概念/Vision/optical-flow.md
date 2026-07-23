@@ -18,8 +18,10 @@ provenance:
   inferred: 0.17
   ambiguous: 0.05
 base_confidence: 0.80
-lifecycle: draft
-lifecycle_changed: 2026-07-11
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
+created: 2026-06-12
+updated: 2026-07-21
 tier: supporting
 created: 2026-07-11T00:00:00Z
 updated: 2026-07-11T00:00:00Z
@@ -247,3 +249,23 @@ Two-Stream Network:
 - [[概念/Vision/image-segmentation]] — 图像分割 (共享: video, dense-prediction)
 - [[概念/Vision/video-generation]] — 视频生成 (共享: video, motion)
 - [[概念/Vision/vit]] — Vision Transformer (共享: transformer, video)
+
+---
+
+## 2026 光流生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **RAFT** | 递归光流估计 Transformer | GA |
+| **CoTracker** | Meta 点跟踪光流 | GA |
+| **视频理解** | 光流辅助视频分析 | GA |
+| **实时光流** | 移动端实时光流估计 | GA |
+| **3D 光流** | 场景流/点云运动估计 | 研究 |
+
+## 生产最佳实践
+
+1. **模型选择**：通用场景用 RAFT，点跟踪用 CoTracker
+2. **计算资源**：光流计算密集，实时场景需 GPU 加速
+3. **遮挡处理**：大遮挡场景光流不可靠，需结合其他方法
+4. **视频稳定**：光流可用于视频防抖和稳定
+5. **与深度学习结合**：光流作为辅助特征提升视频理解

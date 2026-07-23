@@ -758,3 +758,12 @@ $$
 ---
 
 *Last updated: 2026-02-10*
+
+## 相关链接
+
+- [[数学基础/Distributed_Systems/Distributed_Systems_for_dummy|分布式系统 (小白版)]] — 本篇的零基础版本
+- [[数学基础/Distributed_Systems/index|分布式系统索引]] — 主题导览
+- [[概念/Training/distributed-training|分布式训练]] — 分布式系统的 AI 应用
+- [[概念/Training/distributed-parallelism|分布式并行]] — 数据/模型/流水线并行
+- [[概念/Training/fsdp|FSDP]] — 主流分布式训练策略
+- [[概念/Training/deepspeed|DeepSpeed]] — 分布式训练框架代表

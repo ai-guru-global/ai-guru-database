@@ -20,6 +20,8 @@ provenance:
   ambiguous: 0.10
 base_confidence: 0.80
 lifecycle: reviewed
+created: 2026-06-12
+updated: 2026-07-21
 tier: supporting
 ---
 
@@ -198,3 +200,23 @@ DeepGEMM (FP8):
 
 > ℹ️ DeepGEMM 是 DeepSeek 推理性能的关键组件，与 FlashMLA 配合使用。
 仅适用于 H100+ GPU，其他硬件用标准 cuBLAS/CUTLASS。
+
+---
+
+## 2026 DeepGEMM 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **FP8 GEMM** | H100 WGMMA 指令的 FP8 矩阵乘法 | GA |
+| **JIT 编译** | 运行时编译最优 GEMM kernel | GA |
+| **与 FlashMLA 配合** | DeepSeek 推理链的核心组件 | GA |
+| **Grouped GEMM** | MoE 专家并行计算 | GA |
+| **开源免费** | MIT 许可，可自由集成 | GA |
+
+## 生产最佳实践
+
+1. **硬件要求**：仅支持 H100/H200+，A100 无法使用
+2. **与 vLLM 集成**：通过 vLLM 后端自动调用 DeepGEMM
+3. **精度验证**：FP8 量化后验证输出质量，确保精度损失可接受
+4. **性能基准**：与 cuBLAS FP16 对比，确认实际加速比
+5. **回退方案**：非 H100 环境自动回退标准 GEMM，不影响功能

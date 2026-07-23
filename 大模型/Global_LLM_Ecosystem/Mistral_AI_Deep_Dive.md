@@ -1480,3 +1480,12 @@ curl http://localhost:11434/api/generate -d '{
 ---
 
 *Last updated: 2026-06-02*
+
+## 相关链接
+
+- [[大模型/Global_LLM_Ecosystem/README|国际大模型生态全景]] — 五大国际大模型厂商横向对比
+- [[大模型/Global_LLM_Ecosystem/Meta_LLaMA_Deep_Dive|Meta LLaMA 深度解析]] — 同为开源 LLM 旗手的技术路线对比
+- [[大模型/LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral|MoE 案例：DeepSeek 与 Mixtral]] — Mixtral MoE 架构深度剖析
+- [[概念/LLM/mistral-series|Mistral 系列]] — Mistral 模型家族概念卡片
+- [[概念/LLM/mamba|Mamba]] — Mistral 探索的 SSM 替代架构
+- [[大模型/Global_LLM_Ecosystem/GenAI_L20_Building_with_Mistral|GenAI L20: 构建 Mistral 应用]] — 基于 Mistral 的实战课程

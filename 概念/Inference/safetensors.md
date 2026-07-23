@@ -208,3 +208,23 @@ with safe_open("model.safetensors", framework="pt") as f:
 3. **元数据嵌入**：在 metadata 中存储模型信息 (framework, dtype)
 4. **对象存储**：生产环境用 S3/OSS 存储，支持流式加载
 5. **版本管理**：用 Git LFS 或 DVC 管理模型文件版本
+
+---
+
+## 2026 Safetensors 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Safetensors 0.5+** | 安全模型序列化格式 | GA |
+| **零拷贝加载** | mmap 直接映射无需反序列化 | GA |
+| **HF 默认格式** | HuggingFace Hub 默认存储格式 | GA |
+| **多框架支持** | PyTorch/TF/JAX/Flax 全支持 | GA |
+| **流式加载** | 支持分片流式读取大模型 | GA |
+
+## 生产最佳实践
+
+1. **优先 Safetensors**：新模型一律用 .safetensors 而非 .bin
+2. **分片存储**：大模型按 5GB 分片，加速并行加载
+3. **完整性校验**：加载时验证文件 hash，防止损坏
+4. **对象存储**：生产环境用 S3/OSS 存储，支持流式加载
+5. **权限控制**：模型文件设置严格访问权限，防止未授权下载

@@ -214,3 +214,11 @@ optimizer = bnb.optim.PagedAdam8bit(
 4. **一行代码**：`load_in_4bit=True` 即可启用，与 HuggingFace 深度集成
 5. **消费级 GPU 可能**：70B 模型推理可在 RTX 4090 上运行
 6. **HuggingFace 官方**：已被 HuggingFace 收购并集成到 transformers 中
+
+## 相关链接
+
+- [[概念/Training/qlora|QLoRA]] — bitsandbytes 4bit 量化的核心应用
+- [[概念/Training/nf4|NF4]] — bitsandbytes 实现的 4bit 数据类型
+- [[概念/Inference/quantization|量化]] — 量化技术总览
+- [[概念/Training/lora-peft|LoRA/PEFT]] — 配合 bitsandbytes 的参数高效微调
+- [[大模型/Fine_tuning_Techniques/PEFT_2026|PEFT 2026 完全指南]] — bitsandbytes 在 PEFT 中的应用

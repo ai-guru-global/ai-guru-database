@@ -181,4 +181,29 @@ DQN → Double DQN (解决过估计)
 
 ---
 
+## 附录：DQN 关键参数速查
+
+| 参数 | 推荐值 | 说明 |
+|------|--------|------|
+| Replay Buffer Size | 1M | 经验回放容量 |
+| Batch Size | 32/64 | 每次采样批量 |
+| Target Update Freq | 10000 steps | 目标网络更新频率 |
+| Discount γ | 0.99 | 折扣因子 |
+| ε-decay | 1M steps | 探索衰减周期 |
+| Learning Rate | 1e-4 (Adam) | 学习率 |
+
+## 附录：DQN 变体对比
+
+| 变体 | 核心改进 | 性能提升 |
+|------|----------|----------|
+| Double DQN | 解耦选择与评估 | 减少过估计 |
+| Dueling DQN | 分离状态价值与优势 | 加速收敛 |
+| Prioritized Replay | 按TD误差优先采样 | 提升样本效率 |
+| Rainbow | 集成6种改进 | Atari SOTA |
+| Noisy DQN | 参数噪声探索 | 替代ε-greedy |
+
+> 💡 DQN 开创了深度强化学习时代，其核心思想（经验回放 + 目标网络）至今仍是所有离线RL算法的基础组件。
+
+---
+
 *原始论文: [arXiv:1312.5602](https://arxiv.org/abs/1312.5602)*

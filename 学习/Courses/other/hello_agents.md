@@ -83,7 +83,7 @@ aliases:
 |------|----------|----------|------------------|----------|
 | 08 | 记忆与检索 | 感觉/工作/长期记忆、情景/语义/程序性记忆、MemoryManager、RAG Pipeline、Qdrant、Neo4j、SQLite | [[RAG系统/RAG_Systems]]、[[RAG系统/GenAI_L15_RAG_and_Vector_Databases]]、[[RAG系统/Vector_Databases/Qdrant_Deep_Dive]] | [[智能体/Hello_Agents_L08_Memory_RAG]] |
 | 09 | 上下文工程 | Prompt Engineering vs Context Engineering、上下文腐蚀、JIT 上下文、GSSC 流水线、压缩整合、结构化笔记、子代理架构 | [[大模型/Prompt_Engineering/Prompt_Engineering]]、[[智能体/Agent_Workflow/Workflow-in-nutshell]] | [[大模型/Prompt_Engineering/Hello_Agents_L09_Context_Engineering]] |
-| 10 | 智能体通信协议 | MCP、A2A、ANP、FastMCP、a2a-sdk、服务发现、去中心化网络 | [[智能体/Agent_Protocols/A2A_Protocol_Deep_Dive]]、[[学习/References/Articles/awesome-mcp-servers]] | [[智能体/Hello_Agents_L10_Agent_Protocols]] |
+| 10 | 智能体通信协议 | MCP、A2A、ANP、FastMCP、a2a-sdk、服务发现、去中心化网络 | [[智能体/A2A_Protocol_Deep_Dive]]、[[学习/References/Articles/awesome-mcp-servers]] | [[智能体/Hello_Agents_L10_Agent_Protocols]] |
 | 11 | Agentic-RL | 预训练、SFT、奖励建模、PPO、RLHF/RLAIF、Agentic RL、MDP、GRPO、推理与工具使用训练 | [[模型训练/Alignment/GRPO_and_New_Alignment_Methods]]、[[模型训练/Alignment/TRL_RLHF_DPO_Guide]]、[[强化学习/RL_Fundamentals]] | [[模型训练/Hello_Agents_L11_Agentic_RL]] |
 | 12 | 智能体性能评估 | BFCL、GAIA、ToolBench、API-Bank、AgentBench、WebArena、LLM Judge、准精确匹配、Win Rate | [[模型评估/Benchmarks/Agentic_Benchmark_Guide]]、[[模型评估/Evaluation_Tools/LLM_as_Judge_Guide]]、[[模型评估/Benchmarks/LLM_Benchmark_Suite_2026]] | [[模型评估/Benchmarks/Agentic_Benchmark_Guide]] |
 
@@ -91,7 +91,7 @@ aliases:
 
 | 章号 | 章节名称 | 关键概念 | 本库建议配合阅读 | 页面链接 |
 |------|----------|----------|------------------|----------|
-| 13 | 智能旅行助手 | 多智能体协作、MCP、FastAPI、Vue3、高德地图 API、行程规划、预算计算、地图可视化 | [[智能体/GenAI_L17_AI_Agents]]、[[智能体/Agent_Protocols/A2A_Protocol_Deep_Dive]] | [[智能体/Hello_Agents_L13_Travel_Assistant]] |
+| 13 | 智能旅行助手 | 多智能体协作、MCP、FastAPI、Vue3、高德地图 API、行程规划、预算计算、地图可视化 | [[智能体/GenAI_L17_AI_Agents]]、[[智能体/A2A_Protocol_Deep_Dive]] | [[智能体/Hello_Agents_L13_Travel_Assistant]] |
 | 14 | 自动化深度研究智能体 | DeepResearch、TODO Planner、Task Summarizer、Report Writer、SearchTool、NoteTool、SSE 流式 | [[智能体/Agent_Workflow/Workflow-in-nutshell]]、[[RAG系统/Advanced_RAG/Agentic_RAG_Guide]] | [[RAG系统/Advanced_RAG/Agentic_RAG_Guide]] |
 | 15 | 构建赛博小镇 | Godot 游戏引擎、AI NPC、记忆与好感度系统、2D 像素办公室、情感分析、社会动态模拟 | [[智能体/GenAI_L17_AI_Agents]]、[[智能体/Hello_Agents_L08_Memory_RAG]] | [[智能体/Hello_Agents_L15_Cyber_Town]] |
 
@@ -128,3 +128,74 @@ aliases:
 1. **快速体验**: 阅读 [[学习/Courses/other/hello_agents]] 了解项目背景，直接跳到 [[智能体/Hello_Agents_L13_Travel_Assistant]] 看完整项目效果。
 2. **系统学习**: 按 01 → 03 → 04 → 06 → 07 → 08 → 09 → 10 → 11 → 12 → 13 的顺序阅读，配合 [[学习/guides/ai_engineering_roadmap_2026]] 查漏补缺。
 3. **工程实战**: 重点看 [[智能体/Hello_Agents_L06_Frameworks_AutoGen_LangGraph]]、[[智能体/Hello_Agents_L10_Agent_Protocols]]、[[智能体/Hello_Agents_L13_Travel_Assistant]]，并结合 [[智能体/Agent_Frameworks/AutoGen_Deep_Dive]]、[[RAG系统/RAG_Frameworks/Dify_Deep_Dive]] 做项目迁移。
+
+## 核心知识框架
+
+| 知识层 | 内容 | 深度要求 | 优先级 |
+|--------|------|----------|--------|
+| 基础概念 | 定义/原理/分类 | 理解并能解释 | P0 |
+| 核心方法 | 算法/技术/工具 | 掌握并能应用 | P0 |
+| 工程实践 | 设计/实现/优化 | 独立完成项目 | P1 |
+| 前沿进展 | 最新研究/趋势 | 了解并跟踪 | P2 |
+| 应用案例 | 实际场景/经验 | 参考并借鉴 | P1 |
+
+## 技术要点速查
+
+| 要点 | 说明 | 注意事项 |
+|------|------|----------|
+| 核心原理 | 理解底层机制 | 不要死记硬背 |
+| 实践方法 | 动手验证理论 | 从简单开始 |
+| 性能优化 | 瓶颈分析+调优 | 数据驱动 |
+| 错误排查 | 系统化定位问题 | 日志+复现 |
+| 最佳实践 | 遵循行业标准 | 因地制宜 |
+| 持续学习 | 跟踪技术发展 | 选择性深入 |
+
+## 对比分析表
+
+| 维度 | 方案一 | 方案二 | 方案三 | 推荐 |
+|------|--------|--------|--------|------|
+| 复杂度 | 低 | 中 | 高 | 按需选择 |
+| 性能 | 基础 | 良好 | 优秀 | 按需求 |
+| 可维护性 | 高 | 中 | 低 | 优先高 |
+| 学习曲线 | 平缓 | 中等 | 陡峭 | 按团队 |
+| 社区支持 | 广泛 | 一般 | 有限 | 优先广泛 |
+
+## 常见问题FAQ
+
+| 问题 | 解答 |
+|------|------|
+| 如何快速入门? | 先理解核心概念，再通过实践加深理解 |
+| 如何选择技术方案? | 根据场景需求、团队能力、成本约束综合评估 |
+| 遇到问题如何排查? | 复现问题→定位范围→分析原因→验证修复 |
+| 如何持续提升? | 系统学习+项目实践+社区交流+定期复盘 |
+| 如何评估效果? | 设定明确指标→对比基线→持续监控 |
+
+## 学习路径
+
+| 阶段 | 内容 | 时间 | 产出 |
+|------|------|------|------|
+| 入门 | 核心概念+基础操作 | 1-2周 | 基本理解 |
+| 基础 | 工具使用+简单实践 | 2-3周 | 能独立操作 |
+| 进阶 | 深入原理+复杂场景 | 3-4周 | 能解决问题 |
+| 实战 | 生产级应用 | 4-6周 | 独立负责 |
+| 精通 | 架构+创新 | 持续 | 技术领导 |
+
+## 术语表
+
+| 术语 | 含义 |
+|------|------|
+| Best Practice | 行业最佳实践 |
+| Trade-off | 权衡取舍 |
+| Scalability | 可扩展性 |
+| Maintainability | 可维护性 |
+| Observability | 可观测性 |
+| Reliability | 可靠性 |
+
+## 检查清单
+
+- [ ] 核心概念已理解
+- [ ] 基本操作已掌握
+- [ ] 实践项目已完成
+- [ ] 常见问题能解决
+- [ ] 前沿趋势有关注
+- [ ] 知识已沉淀文档化

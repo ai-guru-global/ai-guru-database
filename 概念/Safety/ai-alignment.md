@@ -22,8 +22,10 @@ provenance:
   inferred: 0.2
   ambiguous: 0.08
 base_confidence: 0.83
-lifecycle: draft
-lifecycle_changed: 2026-07-11
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
+created: 2026-06-12
+updated: 2026-07-21
 tier: core
 created: 2026-07-11T00:00:00Z
 updated: 2026-07-11T00:00:00Z
@@ -749,3 +751,23 @@ class ConstitutionalAI:
 - [[概念/Safety/hallucination]] — 幻觉（诚实维度的对齐）
 - [[概念/ai-fundamentals]] — AI基础
 - [[概念/ai-future-trends]] — AI未来趋势（AGI安全）
+
+---
+
+## 2026 AI 对齐生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **RLHF/DPO** | 人类反馈强化学习/直接偏好优化 | GA |
+| **Constitutional AI** | Anthropic 宪法 AI 对齐 | GA |
+| **可扩展监督** | 弱到强泛化/辩论 | 研究 |
+| **价值学习** | 从人类行为学习价值 | 研究 |
+| **对齐税** | 对齐与能力的权衡 | 研究 |
+
+## 生产最佳实践
+
+1. **多层对齐**：训练对齐 + 运行时护栏 + 人工审核
+2. **持续评估**：定期评估对齐效果，发现退化及时修复
+3. **红队测试**：上线前进行红队测试，发现安全漏洞
+4. **透明性**：向用户说明模型能力和局限
+5. **反馈闭环**：收集用户反馈持续改进对齐

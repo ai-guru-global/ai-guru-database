@@ -20,8 +20,10 @@ provenance:
   inferred: 0.2
   ambiguous: 0.05
 base_confidence: 0.85
-lifecycle: draft
-lifecycle_changed: 2026-07-11
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
+created: 2026-06-12
+updated: 2026-07-21
 tier: core
 created: 2026-07-11T00:00:00Z
 updated: 2026-07-11T00:00:00Z
@@ -486,3 +488,23 @@ define flow block injection
 - [[概念/Safety/runtime-security]] — 运行时安全
 - [[概念/Safety/ai-alignment]] — AI对齐（从训练层面增强安全）
 - [[伦理安全/LLM_Security_Defense_Guide]] — LLM安全防御指南
+
+---
+
+## 2026 Prompt 注入生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **间接注入** | 通过外部数据源注入 | 研究 |
+| **多模态注入** | 图像/音频中的注入 | 研究 |
+| **注入检测** | 实时检测注入尝试 | GA |
+| **输入过滤** | 过滤可疑注入内容 | GA |
+| **权限隔离** | 限制 LLM 工具权限 | GA |
+
+## 生产最佳实践
+
+1. **输入验证**：严格验证和过滤用户输入
+2. **权限最小化**：LLM 工具调用权限最小化
+3. **输出验证**：验证 LLM 输出是否符合预期格式
+4. **沙箱执行**：代码执行在沙箱环境中
+5. **持续监控**：监控异常调用模式，发现注入攻击

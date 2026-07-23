@@ -199,3 +199,23 @@ KV Cache 就放在 **每个车间的 Attention 工位旁边**，是一本不断�
 进阶: kv-cache → grouped-query-attention → paged-attention
 深入: kv-cache-compression → multi-head-latent-attention → radix-attention
 ```
+
+---
+
+## 2026 KV Cache 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **PagedAttention** | vLLM 分页 KV Cache 管理 | GA |
+| **MLA** | DeepSeek Multi-head Latent Attention 压缩 | GA |
+| **KV Cache 量化** | INT8/FP8 量化降低显存 | GA |
+| **Prefix Caching** | 共享前缀 KV Cache 复用 | GA |
+| **Sliding Window** | 滑动窗口限制 KV 长度 | GA |
+
+## 生产最佳实践
+
+1. **PagedAttention**：必须启用，避免显存碎片化
+2. **KV 量化**：长序列场景启用 INT8 KV Cache 降低显存
+3. **Prefix Caching**：多用户共享 System Prompt 时启用
+4. **显存规划**：根据 max_seq_len 和 batch_size 规划 KV 显存
+5. **监控指标**：跟踪 KV Cache 使用率，接近 100% 需扩容

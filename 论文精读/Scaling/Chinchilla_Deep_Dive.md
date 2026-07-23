@@ -613,7 +613,7 @@ flowchart TB
 | Kaplan et al. Scaling Laws | Chinchilla 修正了其结论 | [Scaling_Laws_Deep_Dive.md](论文精读/Scaling/Scaling_Laws_Deep_Dive.md) |
 | GPT-3 | 使用了 Kaplan 路线（欠训练） | [GPT3_Deep_Dive.md](论文精读/Scaling/GPT3_Deep_Dive.md) |
 | LLaMA | 首个大规模遵循 Chinchilla 的开源模型 | [LLaMA_Deep_Dive.md](论文精读/Architecture/LLaMA_Deep_Dive.md) |
-| DeepSeek-V3 | 在 MoE 架构中隐含遵循 Chinchilla 精神 | [DeepSeek_V3_Technical_Report.md](论文精读/Frontier/DeepSeek_V3_Technical_Report.md) |
+| DeepSeek-V3 | 在 MoE 架构中隐含遵循 Chinchilla 精神 | [DeepSeek_V3_Technical_Report.md](论文精读/DeepSeek_V3_Technical_Report.md) |
 | Scaling Laws 与训练动力学 | 系统性综述 | [../模型训练/Scaling_Laws_and_Training_Dynamics.md](模型训练/Optimization/Scaling_Laws_and_Training_Dynamics.md) |
 | MoE 深度解读 | MoE 模型的 Scaling 特殊性 | [Mixture_of_Experts_Deep_Dive.md](论文精读/Architecture/Mixture_of_Experts_Deep_Dive.md) |
 

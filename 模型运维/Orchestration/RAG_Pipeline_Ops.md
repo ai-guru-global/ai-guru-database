@@ -433,7 +433,7 @@ jobs:
 
 ### 本章内
 - [[模型运维/LLMOps_2026]] — 本系列主线（§6 是本文的概览版）
-- [[模型运维/Evaluation/LLM_Evaluation_Pipeline]] — RAG 质量评估方法
+- [[模型运维/LLM_Evaluation_Pipeline]] — RAG 质量评估方法
 - [[模型运维/Observability/Model_Monitoring_and_Drift_Detection_2026]] — 漂移检测理论
 - [[模型运维/Orchestration/Data_Pipeline_Orchestration]] — 数据编排（RAG Pipeline 的基础）
 

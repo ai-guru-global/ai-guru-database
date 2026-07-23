@@ -32,8 +32,10 @@ provenance:
   inferred: 0.1
   ambiguous: 0.05
 base_confidence: 0.82
-lifecycle: draft
-lifecycle_changed: 2026-07-11
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
+created: 2026-06-12
+updated: 2026-07-21
 tier: core
 created: 2026-05-31 00:00:00+00:00
 updated: 2026-07-11T00:00:00+00:00
@@ -256,3 +258,23 @@ Thing（可数物体）:   人、车、建筑 → 实例标签
 - [[概念/Vision/object-detection]] — 目标检测 (共享: localization, detection)
 - [[概念/Vision/dino]] — DINOv2 (共享: dense-feature, segmentation)
 - [[概念/Vision/data-augmentation-cv]] — 数据增强 (共享: training, medical)
+
+---
+
+## 2026 图像分割生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **SAM 2** | Meta 通用分割模型 | GA |
+| **Mask2Former** | 统一分割架构 | GA |
+| **医学分割** | 医学图像专用分割模型 | GA |
+| **实时分割** | 移动端实时语义分割 | GA |
+| **3D 分割** | 点云/体素分割 | GA |
+
+## 生产最佳实践
+
+1. **模型选择**：通用分割用 SAM，实时用轻量级模型
+2. **标注质量**：分割标注成本高，用 SAM 辅助标注
+3. **后处理**：CRF/形态学操作优化分割边界
+4. **领域适配**：医学/遥感需领域微调
+5. **评估指标**：用 mIoU/Dice 系数评估分割质量

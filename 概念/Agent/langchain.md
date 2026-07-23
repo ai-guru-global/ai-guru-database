@@ -199,3 +199,23 @@ add_routes(app, chain, path="/my-chain")
 - [[概念/RAG/rag-patterns|RAG]]
 - [[概念/Agent/autogen|AutoGen]]
 - [[概念/Agent/mcp|MCP]]
+
+---
+
+## 2026 LangChain 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **LangChain 0.3+** | 最流行的 LLM 应用框架 | GA |
+| **LangGraph** | 有状态 Agent 编排 | GA |
+| **LangSmith** | LLM 应用可观测性平台 | GA |
+| **LangServe** | LLM 应用部署服务 | GA |
+| **集成生态** | 700+ 第三方集成 | GA |
+
+## 生产最佳实践
+
+1. **版本管理**：LangChain 更新频繁，锁定版本避免破坏性变更
+2. **LangSmith**：生产环境必须启用 LangSmith 监控
+3. **错误处理**：LLM 调用失败时优雅降级
+4. **缓存策略**：重复请求启用缓存降低成本
+5. **安全护栏**：输入输出设置安全护栏

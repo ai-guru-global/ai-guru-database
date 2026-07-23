@@ -227,3 +227,11 @@ CMD ["chainlit", "run", "/app/app.py", "--host", "0.0.0.0"]
 4. **生产就绪**：内置认证、持久化、反馈收集等生产特性
 5. **Python 原生**：不需要前端知识，纯 Python 构建完整聊天应用
 6. **Copilot 模式**：可以作为嵌入式小部件集成到任何网站
+
+## 相关链接
+
+- [[概念/General/streamlit|Streamlit]] — 同类 Python 数据应用框架对比
+- [[概念/General/gradio|Gradio]] — 另一主流 ML Demo 界面框架
+- [[概念/Agent/langchain|LangChain]] — Chainlit 常集成的 Agent 框架
+- [[概念/Agent/agent-framework|Agent 框架]] — Chainlit 作为 Agent 前端
+- [[概念/General/human-ai-interaction|人机交互]] — Chat UI 的交互设计

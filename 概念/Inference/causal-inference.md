@@ -20,7 +20,7 @@ base_confidence: 0.88
 lifecycle: reviewed
 tier: core
 created: 2026-06-04
-updated: 2026-06-04
+updated: 2026-07-21
 aliases:
   - "Causal Inference"
   - "causal inference"
@@ -198,3 +198,23 @@ P(Y|do(X=x)) = \sum_z P(Y|X=x, Z=z) \cdot P(Z=z)
 
 > ℹ️ 因果推断是数据科学的核心方法论，与 LLM 推理是完全不同的概念。
 不要混淆“因果推断 (Causal Inference)”和“模型推理 (Model Inference)”。
+
+---
+
+## 2026 因果推断生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **DoWhy 0.11+** | Microsoft 因果推断框架 | GA |
+| **CausalML** | Uber 因果 ML 工具包 | GA |
+| **LLM + 因果** | LLM 辅助因果图构建 | 研究 |
+| **因果发现** | 从数据自动发现因果关系 | 研究 |
+| **A/B 测试平台** | 工业级因果实验平台 | GA |
+
+## 生产最佳实践
+
+1. **因果图先行**：分析前先画因果图，明确假设
+2. **敏感性分析**：检验结论对未观测混淆因子的鲁棒性
+3. **与相关性区分**：相关不等于因果，必须有因果机制支撑
+4. **实验优先**：能做 A/B 测试就不做观察性研究
+5. **LLM 辅助**：用 LLM 生成因果图初稿，人工审核确认

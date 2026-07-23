@@ -16,6 +16,8 @@ provenance:
   ambiguous: 0.10
 base_confidence: 0.85
 lifecycle: reviewed
+created: 2026-06-12
+updated: 2026-07-21
 tier: supporting
 ---
 
@@ -285,3 +287,23 @@ spec:
 - [[概念/opik]] — Opik LLM 可观测性平台
 - [[概念/langsmith]] — LangSmith LLM 可观测性
 - [[概念/ne-mo]] — NVIDIA NeMo 训练与推理框架
+
+---
+
+## 2026 Presidio 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Presidio 2.x** | Microsoft PII 检测脱敏框架 | GA |
+| **多语言支持** | 支持 50+ 语言 PII 检测 | GA |
+| **自定义识别器** | 自定义 PII 类型识别 | GA |
+| **LLM 集成** | 与 LLM 应用集成脱敏 | GA |
+| **图像 PII** | 图像中的 PII 检测 | GA |
+
+## 生产最佳实践
+
+1. **输入脱敏**：LLM 输入前脱敏 PII，防止数据泄漏
+2. **输出检查**：LLM 输出后检查是否泄漏 PII
+3. **自定义规则**：根据业务添加自定义 PII 类型
+4. **性能优化**：大批量处理时用异步/批处理
+5. **合规审计**：记录脱敏日志，支持合规审计

@@ -103,7 +103,7 @@ aliases:
 | 课号 | 课程名称 | 关键概念 | 本库建议配合阅读 | 页面链接 |
 |------|----------|----------|------------------|----------|
 | 07 | 规划设计模式 | 目标定义、任务分解、结构化输出、Planner Agent、迭代重规划 | [[智能体/Agent_Workflow/Workflow-in-nutshell]]、[[智能体/Agent_Workflow/LangGraph_Deep_Dive]]、[[概念/ai-agents]] | [[智能体/Agent_Workflow/Workflow-in-nutshell|规划设计模式]] |
-| 08 | 多代理设计模式 | 通信、协调、Agent 架构、可见性、Group Chat / Hand-off / Collaborative Filtering | [[智能体/Agent_Frameworks/AutoGen_Deep_Dive]]、[[智能体/Agent_Workflow/Agentic_Workflow_Design_Patterns_2026]]、[[智能体/Agent_Protocols/A2A_Protocol_Deep_Dive]] | [[智能体/Course_Notes/Microsoft_AI_Agents_L08_Multi_Agent]] |
+| 08 | 多代理设计模式 | 通信、协调、Agent 架构、可见性、Group Chat / Hand-off / Collaborative Filtering | [[智能体/Agent_Frameworks/AutoGen_Deep_Dive]]、[[智能体/Agent_Workflow/Agentic_Workflow_Design_Patterns_2026]]、[[智能体/A2A_Protocol_Deep_Dive]] | [[智能体/Course_Notes/Microsoft_AI_Agents_L08_Multi_Agent]] |
 | 09 | 元认知设计模式 | 自我反思、Corrective RAG、预加载上下文、LLM 重排序、代码生成 | [[智能体/Agentic_Design_Patterns_AndrewNg]]、[[RAG系统/Advanced_RAG/RAG_Advanced_2026]] | — |
 
 ### 生产、协议与上下文（L10-L12）
@@ -111,7 +111,7 @@ aliases:
 | 课号 | 课程名称 | 关键概念 | 本库建议配合阅读 | 页面链接 |
 |------|----------|----------|------------------|----------|
 | 10 | 生产中的 AI 代理 | Trace/Span、OpenTelemetry、离线/在线评估、成本管理、常见故障 | [[运维/AI_Observability_Guide_2026]]、[[智能体/Agent_Evaluation/README]]、[[运维/AIOps-in-nutshell]] | — |
-| 11 | 使用 Agentic 协议（MCP、A2A、NLWeb） | MCP client-server、A2A Agent Card/Artifact/事件队列、NLWeb 语义网 | [[学习/References/Articles/awesome-mcp-servers]]、[[智能体/Agent_Protocols/A2A_Protocol_Deep_Dive]]、[[架构基建/AI_Gateway/AI_Gateway_2026]] | [[智能体/Course_Notes/Microsoft_AI_Agents_L11_Agentic_Protocols]] |
+| 11 | 使用 Agentic 协议（MCP、A2A、NLWeb） | MCP client-server、A2A Agent Card/Artifact/事件队列、NLWeb 语义网 | [[学习/References/Articles/awesome-mcp-servers]]、[[智能体/A2A_Protocol_Deep_Dive]]、[[架构基建/AI_Gateway/AI_Gateway_2026]] | [[智能体/Course_Notes/Microsoft_AI_Agents_L11_Agentic_Protocols]] |
 | 12 | AI 代理的上下文工程 | 上下文类型、Scratchpad、记忆、压缩、多代理、上下文失败模式 | [[智能体/Memory_Infrastructure/README]]、[[智能体/Memory_Infrastructure/Agent_Memory_Techniques]]、[[概念/ai-agents]] | — |
 
 ### 记忆、框架、浏览器与安全（L13-L18）
@@ -159,3 +159,74 @@ aliases:
 - [[学习/courses/microsoft/microsoft_ai_for_beginners]] — Microsoft 12 周 AI 基础课程映射
 - [[学习/guides/ai_engineering_roadmap_2026]] — AI 工程师学习路线
 - [[学习/guides/learning_paths_2026]] — 本库学习路径总览
+
+## 核心知识框架
+
+| 知识层 | 内容 | 深度要求 | 优先级 |
+|--------|------|----------|--------|
+| 基础概念 | 定义/原理/分类 | 理解并能解释 | P0 |
+| 核心方法 | 算法/技术/工具 | 掌握并能应用 | P0 |
+| 工程实践 | 设计/实现/优化 | 独立完成项目 | P1 |
+| 前沿进展 | 最新研究/趋势 | 了解并跟踪 | P2 |
+| 应用案例 | 实际场景/经验 | 参考并借鉴 | P1 |
+
+## 技术要点速查
+
+| 要点 | 说明 | 注意事项 |
+|------|------|----------|
+| 核心原理 | 理解底层机制 | 不要死记硬背 |
+| 实践方法 | 动手验证理论 | 从简单开始 |
+| 性能优化 | 瓶颈分析+调优 | 数据驱动 |
+| 错误排查 | 系统化定位问题 | 日志+复现 |
+| 最佳实践 | 遵循行业标准 | 因地制宜 |
+| 持续学习 | 跟踪技术发展 | 选择性深入 |
+
+## 对比分析表
+
+| 维度 | 方案一 | 方案二 | 方案三 | 推荐 |
+|------|--------|--------|--------|------|
+| 复杂度 | 低 | 中 | 高 | 按需选择 |
+| 性能 | 基础 | 良好 | 优秀 | 按需求 |
+| 可维护性 | 高 | 中 | 低 | 优先高 |
+| 学习曲线 | 平缓 | 中等 | 陡峭 | 按团队 |
+| 社区支持 | 广泛 | 一般 | 有限 | 优先广泛 |
+
+## 常见问题FAQ
+
+| 问题 | 解答 |
+|------|------|
+| 如何快速入门? | 先理解核心概念，再通过实践加深理解 |
+| 如何选择技术方案? | 根据场景需求、团队能力、成本约束综合评估 |
+| 遇到问题如何排查? | 复现问题→定位范围→分析原因→验证修复 |
+| 如何持续提升? | 系统学习+项目实践+社区交流+定期复盘 |
+| 如何评估效果? | 设定明确指标→对比基线→持续监控 |
+
+## 学习路径
+
+| 阶段 | 内容 | 时间 | 产出 |
+|------|------|------|------|
+| 入门 | 核心概念+基础操作 | 1-2周 | 基本理解 |
+| 基础 | 工具使用+简单实践 | 2-3周 | 能独立操作 |
+| 进阶 | 深入原理+复杂场景 | 3-4周 | 能解决问题 |
+| 实战 | 生产级应用 | 4-6周 | 独立负责 |
+| 精通 | 架构+创新 | 持续 | 技术领导 |
+
+## 术语表
+
+| 术语 | 含义 |
+|------|------|
+| Best Practice | 行业最佳实践 |
+| Trade-off | 权衡取舍 |
+| Scalability | 可扩展性 |
+| Maintainability | 可维护性 |
+| Observability | 可观测性 |
+| Reliability | 可靠性 |
+
+## 检查清单
+
+- [ ] 核心概念已理解
+- [ ] 基本操作已掌握
+- [ ] 实践项目已完成
+- [ ] 常见问题能解决
+- [ ] 前沿趋势有关注
+- [ ] 知识已沉淀文档化

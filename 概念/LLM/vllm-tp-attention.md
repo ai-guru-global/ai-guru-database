@@ -18,6 +18,8 @@ provenance:
   ambiguous: 0.10
 base_confidence: 0.82
 lifecycle: reviewed
+created: 2026-06-12
+updated: 2026-07-21
 tier: supporting
 ---
 
@@ -237,3 +239,23 @@ spec:
 - [[概念/flash-attn]] — Flash Attention 高效注意力内核
 - [[概念/sglang]] — SGLang 结构化生成语言
 - [[概念/colossalai]] — ColossalAI 分布式训练
+
+---
+
+## 2026 vLLM TP/Attention 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Tensor Parallel** | 多卡张量并行推理 | GA |
+| **PagedAttention** | 分页 KV Cache 管理 | GA |
+| **Flash Attention** | 高效注意力内核集成 | GA |
+| **MLA 支持** | DeepSeek Multi-head Latent Attention | GA |
+| **Chunked Prefill** | 分块预填充优化 | GA |
+
+## 生产最佳实践
+
+1. **TP 度数**：TP 度数不超过单机 GPU 数，跨机用 PP
+2. **显存平衡**：TP 切分后各卡显存应均衡
+3. **NVLink**：多卡 TP 必须用 NVLink 互联，PCIe 性能差
+4. **Attention 后端**：优先用 Flash Attention 2/3
+5. **性能调优**：用 vLLM benchmark 工具测试不同配置

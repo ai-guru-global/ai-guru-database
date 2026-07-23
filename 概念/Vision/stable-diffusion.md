@@ -20,8 +20,10 @@ provenance:
   inferred: 0.10
   ambiguous: 0.05
 base_confidence: 0.88
-lifecycle: draft
-lifecycle_changed: 2026-07-11
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
+created: 2026-06-12
+updated: 2026-07-21
 tier: core
 created: 2026-07-11T00:00:00Z
 updated: 2026-07-11T00:00:00Z
@@ -213,3 +215,23 @@ L = E_{z_0, ε, t} [ ||ε - ε_θ(z_t, t, c)||² ]
 - [[概念/generative-vision-models]] — 生成式视觉模型 (共享: generation, diffusion)
 - [[概念/Vision/video-generation]] — 视频生成 (共享: diffusion, generation)
 - [[概念/multimodal-vision]] — 多模态视觉 (共享: multimodal, text-image)
+
+---
+
+## 2026 Stable Diffusion 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **SDXL/SD3** | Stability AI 最新扩散模型 | GA |
+| **Flux** | Black Forest Labs 高质量生成 | GA |
+| **ControlNet** | 精确控制生成结构 | GA |
+| **LoRA 微调** | 轻量级风格/人物定制 | GA |
+| **ComfyUI** | 节点式工作流编排 | GA |
+
+## 生产最佳实践
+
+1. **模型选择**：高质量用 SDXL/Flux，快速原型用 SD 1.5
+2. **ControlNet**：需要精确控制时用 ControlNet 引导
+3. **LoRA 定制**：风格/人物定制用 LoRA，避免全量微调
+4. **推理优化**：用 TensorRT/ONNX 加速推理
+5. **内容安全**：生产环境必须启用 NSFW 过滤

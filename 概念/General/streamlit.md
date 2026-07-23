@@ -271,3 +271,11 @@ CMD ["streamlit", "run", "/app/app.py"]
 4. **数据看板首选**：在数据可视化和分析场景中优于 Gradio
 5. **不适合生产高并发**：重跑机制限制了扩展性，生产环境考虑 Chainlit 或 FastAPI
 6. **AI 快速原型**：5 分钟做出一个 LLM 聊天界面或模型评估看板
+
+## 相关链接
+
+- [[概念/General/chainlit|Chainlit]] — 同类 AI 聊天界面框架对比
+- [[概念/General/gradio|Gradio]] — 另一主流 ML Demo 界面框架
+- [[概念/General/ray|Ray]] — Streamlit 常配合的分布式后端
+- [[概念/Agent/agent-framework|Agent 框架]] — Streamlit 作为 Agent 前端
+- [[概念/General/human-ai-interaction|人机交互]] — 数据应用交互设计

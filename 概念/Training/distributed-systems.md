@@ -17,8 +17,10 @@ provenance:
   inferred: 0.15
   ambiguous: 0.05
 base_confidence: 0.75
-lifecycle: draft
-lifecycle_changed: 2026-05-31
+lifecycle: reviewed
+lifecycle_changed: 2026-07-21
+created: 2026-06-12
+updated: 2026-07-21
 tier: supporting
 created: 2026-05-31T00:00:00Z
 updated: 2026-05-31T00:00:00Z
@@ -206,3 +208,23 @@ PyTorch对ZeRO-3的实现。与DDP的主要区别：
 
 - [[概念/model-training]] — 模型训练 (共享: fsdp, training)
 - [[治理/training-fine-tuning]] — 模型训练 × 微调技术 (共享: fsdp, training)
+
+---
+
+## 2026 分布式系统生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **Ray 2.x** | 分布式计算框架 | GA |
+| **K8s 训练** | Kubernetes 上的分布式训练 | GA |
+| **弹性训练** | 节点故障自动恢复 | GA |
+| **异构集群** | 混合 GPU 类型训练 | GA |
+| **训练调度** | 多任务训练资源调度 | GA |
+
+## 生产最佳实践
+
+1. **容错设计**：分布式训练必须考虑节点故障恢复
+2. **网络优化**：多机训练用 RDMA/InfiniBand 降低通信延迟
+3. **资源调度**：用 K8s/Ray 调度训练任务，提高 GPU 利用率
+4. **监控告警**：监控训练速度、GPU 利用率、网络带宽
+5. **成本控制**：低峰期训练，使用抢占式实例降低成本

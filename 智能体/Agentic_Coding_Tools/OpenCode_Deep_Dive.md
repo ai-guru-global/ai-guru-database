@@ -520,3 +520,12 @@ opencode "补充集成测试和性能测试"
 - [OpenCode 文档](https://docs.opencode.ai)
 - [Agent Harness 评估框架](../Agent_Evaluation/Agent_Harness_Complete_2026.md)
 - [SWE-bench 基准测试](../Agent_Evaluation/Agent_Harness_Complete_2026.md#33-swe-bench)
+
+## 相关链接
+
+- [[智能体/Agentic_Coding_Tools/Agentic_Coding_Tools_Overview|Agentic Coding 工具概览]] — 工具全景对比
+- [[智能体/Agentic_Coding_Tools/Continue_Deep_Dive|Continue 深度解析]] — 同类开源工具对比
+- [[智能体/Agentic_Coding_Tools/Aider_Deep_Dive|Aider 深度解析]] — 同类 CLI 工具对比
+- [[智能体/Agentic_Coding_Tools/index|Agentic Coding 索引]] — 工具主题导览
+- [[编程/OpenCode/index|OpenCode 索引]] — OpenCode 相关主题
+- [[编程/index|编程索引]] — AI 编程主题导览

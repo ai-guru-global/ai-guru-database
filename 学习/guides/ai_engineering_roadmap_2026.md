@@ -248,7 +248,7 @@ flowchart TB
 | [Introduction to RAG - Coursera](https://www.coursera.org/projects/introduction-to-rag) | 课程 | RAG 入门实践 |
 | [RAG Techniques](https://github.com/NirDiamant/RAG_Techniques) | GitHub | ⭐ RAG 技术大全 |
 
-> **关联**: → [[RAG系统/RAG_Fundamentals|RAG 基础]] · [[论文精读/Retrieval/RAG_Deep_Dive|RAG 论文]]
+> **关联**: → [[RAG系统/RAG_Fundamentals|RAG 基础]] · [[论文精读/RAG_Deep_Dive|RAG 论文]]
 
 ---
 
@@ -459,7 +459,7 @@ flowchart TB
 - [[深度学习/DL_Frameworks/keras_overview|Keras]]
 
 ### 高级主题
-- [[智能体/Agent_Protocols/A2A_Protocol_Deep_Dive|A2A 协议]]
+- [[智能体/A2A_Protocol_Deep_Dive|A2A 协议]]
 - [[大模型/Structured_Output_Guide|结构化输出指南]]
 - [[模型评估/Evaluation_Tools/LLM_as_Judge_Guide|LLM-as-Judge 评估]]
 - [[概念/long-context-vs-rag|长上下文 vs RAG]]
@@ -472,10 +472,10 @@ flowchart TB
 - [[架构基建/AI_Gateway/LLM_Gateway_Comparison_2026|LLM 网关对比]]
 - [[RAG系统/Embeddings/Embedding_Models_Guide|Embedding 模型选型]]
 - [[智能体/Memory_Infrastructure/Agent_Memory_Techniques|Agent 记忆技术]]
-- [[部署推理/Cost/LLM_Cost_Optimization|LLM 成本优化]]
+- [[部署推理/LLM_Cost_Optimization|LLM 成本优化]]
 
 ### 应用场景
-- [[行业应用/Code_Generation/AI_Code_Generation_2026|AI 代码生成]]
+- [[行业应用/AI_Code_Generation_2026|AI 代码生成]]
 - [[行业应用/Finance/AI_Finance_Applications_2026|AI 金融应用]]
 - [[行业应用/Education/AI_Education_Applications_2026|AI 教育应用]]
 - [[行业应用/Healthcare/AI_Healthcare_Applications_2026|AI 医疗应用]]

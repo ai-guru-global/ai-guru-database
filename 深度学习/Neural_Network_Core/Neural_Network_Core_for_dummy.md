@@ -691,3 +691,12 @@ Tanh(拉伸版Sigmoid):
 ---
 
 *本文是 [Neural_Network_Core.md](./Neural_Network_Core.md) 的简化版,适合零基础读者。想看数学公式和深入原理,请阅读原文档。*
+
+## 相关链接
+
+- [[深度学习/Neural_Network_Core/Neural_Network_Core|神经网络核心 (完整版)]] — 本篇小白版对应的详细版
+- [[深度学习/Neural_Network_Core/index|神经网络核心索引]] — 神经网络核心主题导览
+- [[深度学习/DL_Fundamentals/DL_Fundamentals|深度学习基础]] — 深度学习基础知识
+- [[概念/Math/neural-networks|神经网络]] — 神经网络概念卡片
+- [[深度学习/Neural_Network_Core/Your_First_Neural_Network|你的第一个神经网络]] — 入门实践
+- [[深度学习/Optimization/Optimization_for_dummy|训练优化 (小白版)]] — 神经网络训练的优化方法

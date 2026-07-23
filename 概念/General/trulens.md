@@ -219,3 +219,11 @@ dashboard.run(port=8501)
 TruLens 是最灵活的 LLM 应用评估框架，其自定义 Feedback Function 机制使其能够适应任何业务场景的评估需求。2026 年被 Snowflake 收购后，正在融入其数据平台生态，成为企业级 AI 质量保障的重要工具。
 
 > 💡 TruLens 的核心价值是“评估即代码”——将质量标准转化为可执行、可追踪、可审计的自动化检查。
+
+## 相关链接
+
+- [[概念/General/deepeval|DeepEval]] — 同类 LLM 评估框架对比
+- [[概念/LLM/llm-as-judge|LLM as Judge]] — TruLens 核心评估机制
+- [[概念/RAG/ragas|RAGAS]] — RAG 评估专用工具
+- [[概念/MLOps/observability|可观测性]] — TruLens 提供的可观测能力
+- [[概念/LLM/llmops|LLMOps]] — LLM 运维与评估体系

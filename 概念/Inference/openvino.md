@@ -16,6 +16,8 @@ provenance:
   ambiguous: 0.10
 base_confidence: 0.88
 lifecycle: reviewed
+created: 2026-06-12
+updated: 2026-07-21
 tier: supporting
 ---
 
@@ -213,3 +215,31 @@ pipe.generate("你好", streamer=lambda x: print(x, end=""))
 3. **GenAI API**：2024+ 版本用 openvino_genai，对标 vLLM 接口
 4. **异构推理**：自动选择 CPU/GPU/NPU 最优设备
 5. **optimum-intel**：HuggingFace 模型一键转换和量化
+
+---
+
+## 2026 OpenVINO 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **OpenVINO 2026** | Intel 统一推理 toolkit | GA |
+| **NNCF 量化** | INT8/INT4 训练后量化 | GA |
+| **GenAI 管道** | LLM/扩散模型端到端推理 | GA |
+| **多硬件** | CPU/GPU/NPU 自动调度 | GA |
+| **optimum-intel** | HF 模型一键转换 | GA |
+
+## 生产最佳实践
+
+1. **硬件选择**：Intel CPU 用 OpenVINO，NVIDIA GPU 用 TensorRT
+2. **量化优先**：INT8 量化通常精度损失 < 1%，速度提升 2-4x
+3. **模型优化**：使用 MO 转换时启用 fuse_operations 优化
+4. **端侧部署**：边缘设备用 OpenVINO Runtime C++ API
+5. **性能分析**：用 Benchmark Tool 评估不同硬件上的延迟/吞吐
+
+## 相关链接
+
+- [[概念/Inference/onnx|ONNX]] — 同类跨平台推理格式对比
+- [[概念/Inference/quantization|量化]] — OpenVINO 的模型量化能力
+- [[概念/Inference/triton-server|Triton Inference Server]] — 同类推理服务方案
+- [[概念/GPU/cuda|CUDA]] — 对标 Intel 方案的 NVIDIA 生态
+- [[大模型/Edge_LLM/Edge_LLM_Deep_Dive|端侧 LLM 深度解读]] — OpenVINO 在端侧推理的应用

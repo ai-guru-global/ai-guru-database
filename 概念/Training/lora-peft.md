@@ -27,7 +27,7 @@ base_confidence: 0.92
 lifecycle: reviewed
 tier: core
 created: 2026-06-04
-updated: 2026-06-16
+updated: 2026-07-21
 aliases:
   - "Lora Peft"
   - "lora peft"
@@ -227,3 +227,23 @@ W_final = W₀ + B×A
 - [[概念/dora]] — DoRA
 - [[概念/rs-lora]] — RS-LoRA
 - [[模型训练/Data_and_FineTuning_for_dummy]] — 数据与微调大白话
+
+---
+
+## 2026 LoRA/PEFT 生态
+
+| 特性/工具 | 说明 | 状态 |
+|------|------|------|
+| **PEFT 0.15+** | HuggingFace 参数高效微调库 | GA |
+| **LoRA** | 低秩适配微调 | GA |
+| **QLoRA** | 量化 + LoRA 极低显存微调 | GA |
+| **DoRA** | 权重分解低秩适配 | GA |
+| **多 LoRA 服务** | 单模型多 LoRA 切换 | GA |
+
+## 生产最佳实践
+
+1. **秩选择**：rank 8-64 通常足够，过大增加显存且收益递减
+2. **目标模块**：优先微调 attention 的 q/v 投影层
+3. **学习率**：LoRA 学习率通常比全量微调高 10x
+4. **合并部署**：生产环境将 LoRA 合并到基座模型
+5. **多 LoRA**：多租户场景用 LoRA 切换，避免多模型部署

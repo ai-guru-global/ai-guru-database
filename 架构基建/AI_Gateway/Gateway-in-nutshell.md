@@ -172,7 +172,7 @@ response = client.chat.completions.create(
 | 入门指南 | [AI_Gateway_for_dummy.md](./AI_Gateway_for_dummy.md) |
 | SRE 实践 | [../AI_Ops/SRE_for_AI_Systems.md](运维/SRE_Reliability/SRE_for_AI_Systems.md) |
 | 可观测性 | [../AI_Ops/AI_Observability_Guide.md](../../模型运维/Observability/AI_Observability_Guide.md) |
-| 成本优化 | [../AI_Cost_Optimization_2026.md](.架构基建/Architecture_Overview/AI_Cost_Optimization_2026.md) |
+| 成本优化 | [../AI_Cost_Optimization_2026.md](架构基建/Architecture_Overview/AI_Cost_Optimization_2026.md) |
 
 ---
 

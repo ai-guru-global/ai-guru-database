@@ -17,7 +17,7 @@ sources: []
 
 > **一句话理解**: 2026 年的 AI 正在从云端走向"最后一公里"——Apple Intelligence、高通 AI Hub、专用 NPU 芯片让 70B 参数的模型能在手机本地运行，"隐私优先、离线可用、毫秒响应"不再是云端专属。
 
-> **相关文档**: [AI 基础设施指南](../Architecture_Overview/AI_Infrastructure_2026.md) | [成本优化](.架构基建/Architecture_Overview/AI_Cost_Optimization_2026.md) | [AI 系统架构](../Architecture_Overview/AI_System_Architecture_2026.md)
+> **相关文档**: [AI 基础设施指南](../Architecture_Overview/AI_Infrastructure_2026.md) | [成本优化](架构基建/Architecture_Overview/AI_Cost_Optimization_2026.md) | [AI 系统架构](../Architecture_Overview/AI_System_Architecture_2026.md)
 
 ---
 

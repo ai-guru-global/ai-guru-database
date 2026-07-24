@@ -180,9 +180,9 @@ flowchart TB
 
 ## 🔗 相关主题
 
-- [AI Supply Chain Security](.伦理安全/AI_Supply_Chain_Security/AI_Supply_Chain_Security.md) — 数据安全
+- [AI Supply Chain Security](伦理安全/AI_Supply_Chain_Security/AI_Supply_Chain_Security.md) — 数据安全
 - [AI Governance](伦理安全/Governance/AI_Governance_Compliance_2026.md) — 隐私法规
-- [Deepfake Security](.伦理安全/Deepfake_Security/Deepfake_Security.md) — 个人信息保护
+- [Deepfake Security](伦理安全/Deepfake_Security/Deepfake_Security.md) — 个人信息保护
 
 ---
 

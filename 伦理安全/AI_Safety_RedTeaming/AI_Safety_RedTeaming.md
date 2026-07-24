@@ -776,7 +776,7 @@ APD = mean(||x_adv - x_orig||_p)
 
 ### 前置知识
 
-- [价值对齐](.伦理安全/Value_Alignment/Value_Alignment.md) - 对齐是安全的基础
+- [价值对齐](伦理安全/Value_Alignment/Value_Alignment.md) - 对齐是安全的基础
 - [Prompt 工程](大模型/Prompt_Engineering/Prompt_Engineering.md) - 理解提示机制才能防御注入
 - [RAG 系统](RAG系统/RAG_Fundamentals/RAG_Systems.md) - 间接注入攻击的高发场景
 

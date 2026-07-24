@@ -157,9 +157,9 @@ flowchart TB
 
 ## 🔗 相关主题
 
-- [AI 安全红队测试](.伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming.md) — 主动发现安全漏洞
+- [AI 安全红队测试](伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming.md) — 主动发现安全漏洞
 - [AI 治理合规](伦理安全/Governance/AI_Governance_Compliance_2026.md) — 法规要求
-- [Value Alignment](.伦理安全/Value_Alignment/Value_Alignment.md) — 模型价值观对齐
+- [Value Alignment](伦理安全/Value_Alignment/Value_Alignment.md) — 模型价值观对齐
 
 ---
 

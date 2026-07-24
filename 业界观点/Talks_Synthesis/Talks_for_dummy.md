@@ -279,7 +279,7 @@ flowchart LR
 - [Andrej Karpathy 演讲集](Andrej_Karpathy/) —— 最易懂的技术讲解
 - [Andrew Ng 演讲集](Andrew_Ng/) —— 实用的落地建议
 - [Sam Altman 演讲集](Sam_Altman/) —— OpenAI 的发展方向
-- [AI 基础 - 小白版](.数学基础/README_for_dummy.md) —— 补充基础知识
+- [AI 基础 - 小白版](./数学基础/README_for_dummy.md) —— 补充基础知识
 
 ---
 

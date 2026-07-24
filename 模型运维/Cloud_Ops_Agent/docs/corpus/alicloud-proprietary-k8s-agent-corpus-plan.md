@@ -161,8 +161,8 @@ sources: []
 
 ## Related
 
-- [[18_Cloud_Ops_Agent/docs/corpus/index]] — 语料工程总指南
-- [[18_Cloud_Ops_Agent/Cloud_Product_Ops_2026]] — 云产品运维 Agent 体系
+- [[_projects/Cloud_Ops_Agent/docs/corpus/index]] — 语料工程总指南
+- [[_projects/Cloud_Ops_Agent/Cloud_Product_Ops_2026]] — 云产品运维 Agent 体系
 - [[12_Architecture_Infrastructure/CNCF_Cloud_Native_AI/kagent_Deep_Dive]] — kagent K8s Agent 框架
 - [[12_Architecture_Infrastructure/AI_Stack/AI_Stack_K8s_Operations_Guide]] — AI Stack K8s 运维
 - [[概念/kubernetes]] — Kubernetes 概念

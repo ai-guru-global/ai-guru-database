@@ -86,7 +86,7 @@ R - Risk & Safety             安全合规        15%
 ## 2. 目录结构
 
 ```
-Agent/Agent_Evaluation/
+智能体/Agent_Evaluation/
 ├── demo/                              # 评估框架源码
 │   ├── run_evaluation.py              # 主入口脚本
 │   ├── config.yaml                    # 评估配置
@@ -125,7 +125,7 @@ Agent/Agent_Evaluation/
 ### 3.1 运行评估 Demo
 
 ```bash
-cd Agent/Agent_Evaluation/demo
+cd 智能体/Agent_Evaluation/demo
 
 # 安装依赖
 pip install -r requirements.txt
@@ -359,7 +359,7 @@ agents:
 ## 9. 文档归档结构
 
 ```
-Agent/Agent_Evaluation/
+智能体/Agent_Evaluation/
 ├── docs/                                    # 文档归档目录
 │   ├── architecture/                        # 系统架构文档
 │   │   └── system_architecture.md           # 四层 Harness 架构说明

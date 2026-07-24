@@ -63,7 +63,7 @@ title: Wiki Log
  - `治理/career-interviews.md` — AI 面试与职业发展
  - `治理/talks-insights.md` — AI 领袖演讲与行业洞察
 - 合成页面内链接全部验证通过（✓）
-- 在 Agent/README、面试岗位/README、业界观点/README 中注入合成链接
+- 在 智能体/README、面试岗位/README、业界观点/README 中注入合成链接
 - 最终健康度:
  - 页面: 743
  - Frontmatter: 743/743 (100%)

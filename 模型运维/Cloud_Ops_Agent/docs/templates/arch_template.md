@@ -49,10 +49,10 @@ sources: []
 
 ## Related
 
-- [[18_Cloud_Ops_Agent/CloudOps-in-nutshell]] — 云产品运维 Agent 速成指南 (共享: automation, cloud-ops, devops, sre)
-- [[18_Cloud_Ops_Agent/Cloud_Product_Ops_for_dummy]] — 云产品运维 Agent 入门指南 (for Dummies) (共享: automation, cloud-ops, devops, sre)
-- [[18_Cloud_Ops_Agent/Java_Cloud_SDK_Guide]] — Java Cloud SDK AI 集成指南 (共享: automation, cloud-ops, devops, sre)
-- [[18_Cloud_Ops_Agent/docs/architecture/index]] — 云产品运维 Agent 架构设计指南 (Architecture) (共享: automation, cloud-ops, devops, sre)
+- [[_projects/Cloud_Ops_Agent/CloudOps-in-nutshell]] — 云产品运维 Agent 速成指南 (共享: automation, cloud-ops, devops, sre)
+- [[_projects/Cloud_Ops_Agent/Cloud_Product_Ops_for_dummy]] — 云产品运维 Agent 入门指南 (for Dummies) (共享: automation, cloud-ops, devops, sre)
+- [[_projects/Cloud_Ops_Agent/Java_Cloud_SDK_Guide]] — Java Cloud SDK AI 集成指南 (共享: automation, cloud-ops, devops, sre)
+- [[_projects/Cloud_Ops_Agent/docs/architecture/index]] — 云产品运维 Agent 架构设计指南 (Architecture) (共享: automation, cloud-ops, devops, sre)
 
 ## MLOps核心流程对比
 

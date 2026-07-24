@@ -298,9 +298,9 @@ AI能源消耗 2025-2026:
 
 - [行业对比分析](行业应用/Industry_Overview/Industry_Comparison_2026.md) — 全行业的横向对比
 - [行业速览](行业应用/Industry_Overview/Industry-in-nutshell.md) — 30 分钟了解所有行业 AI 应用
-- [机器学习](../../机器学习/README.md) — 基础算法与模型
-- [深度学习](../../深度学习/README.md) — 神经网络核心技术
-- [MLOps](../../模型运维/README.md) — 模型生产化部署
+- [机器学习](../机器学习/README.md) — 基础算法与模型
+- [深度学习](../深度学习/README.md) — 神经网络核心技术
+- [MLOps](../模型运维/README.md) — 模型生产化部署
 
 ---
 

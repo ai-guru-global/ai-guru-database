@@ -1,4 +1,4 @@
---
+---
 title: TTFT（Time To First Token）
 category: concepts
 tags:

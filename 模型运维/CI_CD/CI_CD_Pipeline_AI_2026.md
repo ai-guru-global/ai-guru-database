@@ -375,7 +375,7 @@ git tag -a data-v2.1 -m "Training data version 2.1"
 
 - [MLOps 流水线](.README.md) — 训练到部署的完整流程
 - [模型评估](../../模型评估/README.md) — 质量门禁的评估方法
-- [部署推理](../.部署推理/README.md) — 模型服务化技术
+- [部署推理](../../部署推理/README.md) — 模型服务化技术
 - [混沌工程](运维/SRE_Reliability/Chaos_Engineering_AI.md) — 故障注入测试
 - [AI Ops 概述](运维/AIOps_Fundamentals/AI_Ops_2026.md) — 运维监控体系
 

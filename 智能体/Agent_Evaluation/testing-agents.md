@@ -4,9 +4,9 @@ category: -synthesis
 tags: ["testing", "ai-agents", "agent-evaluation", "deterministic-testing", "llm-as-judge", "synthesis"]
 sources:
   - "AI测试/AI_Test_Framework_2026"
-  - "Agent/Agent_Evaluation/Testing_Methodologies/Testing_Framework"
+  - "智能体/Agent_Evaluation/Testing_Methodologies/Testing_Framework"
   - "AI测试/AI-Testing-in-nutshell.md"
-  - "Agent/Agent_Evaluation/Agent_Evaluation_Guide"
+  - "智能体/Agent_Evaluation/Agent_Evaluation_Guide"
 created: 2026-06-30
 updated: 2026-06-30
 summary: "传统测试依赖确定性断言（assert expected == actual），但 Agent 系统的输出是概率性的——测试方法论必须从'正确性验证'转向'行为边界验证'和'统计质量保障'。"

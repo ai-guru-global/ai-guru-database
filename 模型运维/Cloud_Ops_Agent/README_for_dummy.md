@@ -171,8 +171,8 @@ AI → 检测问题 → 分析 → 执行修复脚本 → 验证
 - [[模型运维/Cloud_Ops_Agent/CloudOps-in-nutshell.md|CloudOps-in-nutshell]]
 - [[模型运维/Cloud_Ops_Agent/Cloud_Product_Ops_for_dummy.md|Cloud_Product_Ops_for_dummy]]
 - [[模型运维/Cloud_Ops_Agent/Java_Cloud_SDK_Guide.md|Java_Cloud_SDK_Guide]]
-- [[18_Cloud_Ops_Agent/docs/architecture/index.md|index]]
-- [[18_Cloud_Ops_Agent/docs/corpus/index.md|index]]
+- [[_projects/Cloud_Ops_Agent/docs/architecture/index.md|index]]
+- [[_projects/Cloud_Ops_Agent/docs/corpus/index.md|index]]
 
 ## MLOps核心流程对比
 

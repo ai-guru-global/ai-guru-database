@@ -164,7 +164,7 @@ AI 分析:
 
 - 想学监控？→ 查看子目录具体文档
 - 想学 DevOps？→ [MLOps/README_for_dummy.md](../模型运维/README_for_dummy.md)
-- 想学云运维？→ [18_Cloud_Ops_Agent/README_for_dummy.md](../模型运维/README_for_dummy.md)
+- 想学云运维？→ [_projects/Cloud_Ops_Agent/README_for_dummy.md](../模型运维/README_for_dummy.md)
 
 ---
 

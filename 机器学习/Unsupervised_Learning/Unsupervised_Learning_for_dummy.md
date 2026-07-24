@@ -187,7 +187,7 @@ A: 部分是的。推荐系统会用聚类把用户分成不同群体（"爱看�
 
 - 专业版: [无监督学习完整版](./Unsupervised_Learning.md)
 - 前置知识: [线性代数小白版](数学基础/Linear_Algebra/Linear_Algebra_for_dummy.md)
-- 下一站: [第3章：深度学习](../.深度学习/README_for_dummy.md)
+- 下一站: [第3章：深度学习](../../深度学习/README_for_dummy.md)
 
 ---
 *本文是 [Unsupervised_Learning.md](./Unsupervised_Learning.md) 的简化版，适合零基础读者。*

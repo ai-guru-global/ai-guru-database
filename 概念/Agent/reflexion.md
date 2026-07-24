@@ -14,7 +14,7 @@ relationships:
   - target: "概念/cot-react-reasoning-prompt"
     type: alternative
 sources:
-  - Agent/Agent_Foundations/
+  - 智能体/Agent_Foundations/
 summary: "Reflexion 是 Shinn et al. 2023 提出的 Agent 自我反思框架，通过"尝试-失败-反思-记忆注入"循环让 Agent 从错误中学习，无需额外训练即可显著提升性能。"
 lifecycle: reviewed
 tier: core

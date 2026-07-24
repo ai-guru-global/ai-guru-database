@@ -116,7 +116,7 @@ AI 说："这笔交易有风险"
 ## 下一步
 
 - 想深入技术？→ 查看各子目录的具体文档
-- 想学深度学习？→ [深度学习/README_for_dummy.md](.深度学习/README_for_dummy.md)
+- 想学深度学习？→ [深度学习/README_for_dummy.md](./深度学习/README_for_dummy.md)
 - 想学模型评估？→ [模型评估/README_for_dummy.md](../模型评估/README_for_dummy.md)
 
 ---

@@ -131,7 +131,7 @@ Huang 将数据中心视为 AI 时代的"工厂"，其核心产品不仅是 GPU 
 - [AI 未来趋势](入门/Ethics_and_Future/AI_Future_Trends.md) -- "AI 工厂"与"物理 AI"趋势预判
 - [架构与基础设施](../../架构基建/README.md) -- GPU 集群、数据中心与 AI 计算架构
 - [模型训练](../../模型训练/README.md) -- 大规模分布式训练与 GPU 算力需求
-- [部署与推理](../.部署推理/README.md) -- 推理优化与 GPU 推理引擎
+- [部署与推理](../../部署推理/README.md) -- 推理优化与 GPU 推理引擎
 - [机器人系统](../../模型运维/README.md) -- Physical AI、Isaac 平台与机器人仿真
 - [Sam Altman](业界观点/Jensen_Huang/about.md) -- Scaling Laws 信仰与算力需求共识
 - [Demis Hassabis](业界观点/Jensen_Huang/about.md) -- AI for Science 与 GPU 算力支撑

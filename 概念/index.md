@@ -14,7 +14,7 @@ This page indexes the contents of `概念`. Total: 584 files across 12 subdomain
 
 | 子域 | 文件数 | 说明 |
 |------|------|------|
-| [[概念/General/]] | 147 | 基础与通识、平台工具、通用概念 |
+| [[概念/General/]] | 2 | 顶层索引(index + README),各子域分目录组织 |
 | [[概念/LLM/]] | 116 | 大语言模型架构、训练、对齐 |
 | [[概念/K8s/]] | 70 | Kubernetes 与云原生 AI 基础设施 |
 | [[概念/Training/]] | 49 | 模型训练、分布式训练、优化 |
@@ -24,8 +24,8 @@ This page indexes the contents of `概念`. Total: 584 files across 12 subdomain
 | [[概念/GPU/]] | 30 | GPU 硬件、CUDA、集群管理 |
 | [[概念/MLOps/]] | 23 | ML 运维、CI/CD、监控 |
 | [[概念/Math/]] | 18 | 数学基础、优化理论 |
-| [[概念/Vision/]] | 18 | 计算机视觉、多模态 |
-| [[概念/Safety/]] | 15 | AI 安全、对齐、伦理 |
+| [[概念/Vision/]] | 24 | 计算机视觉、多模态 |
+| [[概念/Safety/]] | 20 | AI 安全、对齐、伦理 |
 
 ## Files (General subdomain)
 

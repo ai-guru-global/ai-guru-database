@@ -276,11 +276,11 @@ AI 不是中立的,会放大训练数据中的偏见!
 - [AI 安全与红队 - 小白版](./AI_Safety_RedTeaming/AI_Safety_RedTeaming_for_dummy.md)
 
 ### 🔙 回顾前置知识
-- [大语言模型](.大模型/README_for_dummy.md)
-- [强化学习基础](.强化学习/README_for_dummy.md)
+- [大语言模型](./大模型/README_for_dummy.md)
+- [强化学习基础](./强化学习/README_for_dummy.md)
 
 ### ⏭️ 探索相关主题
-- [AI 工程化](.部署推理/README.md) - 安全部署实践
+- [AI 工程化](./部署推理/README.md) - 安全部署实践
 - [RAG 系统](RAG系统/RAG_Fundamentals/RAG_Systems_for_dummy.md) - 间接注入攻击
 
 ## 学习资源推荐

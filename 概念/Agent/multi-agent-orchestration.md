@@ -13,7 +13,7 @@ relationships:
     type: uses
 sources:
   - 智能体/README.md
-  - Agent/Agent_Workflow/README.md
+  - 智能体/Agent_Workflow/README.md
 summary: "多 Agent 编排让多个专精 Agent 协作完成复杂任务。从'顺序流水线'到'并行 swarm'再到'层级委派'，编排模式决定协作效率。"
 provenance:
   extracted: 0.65

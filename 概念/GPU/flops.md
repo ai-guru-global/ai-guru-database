@@ -1,4 +1,4 @@
---
+---
 title: FLOPS
 category: -concepts
 tags: [hardware, gpu, flops, performance, inference, compute-bound, memory-bound]

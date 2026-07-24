@@ -26,12 +26,12 @@ summary: AI 系统的站点可靠性工程实践，包括 SLO 管理、事故响
 
 > **AI SRE (本目录)** vs **运维/ (运维目录)**:
 > - 本目录聚焦**架构层面**的 SRE 设计原则和 SLO 体系
-> - [[../../运维/SRE_Reliability/SRE_for_AI_Systems|运维 SRE]] 聚焦**执行层面**的 Runbook 和排障命令
+> - [[../运维/SRE_Reliability/SRE_for_AI_Systems|运维 SRE]] 聚焦**执行层面**的 Runbook 和排障命令
 
 ## Related
 
-- [[../../运维/SRE_Reliability/SRE_for_AI_Systems|AI 系统 SRE 实践]]
-- [[../../运维/Troubleshooting/K8s_Troubleshooting_Playbook|K8s 排障手册]]
+- [[../运维/SRE_Reliability/SRE_for_AI_Systems|AI 系统 SRE 实践]]
+- [[../运维/Troubleshooting/K8s_Troubleshooting_Playbook|K8s 排障手册]]
 - [[../Architecture_Overview/System_Architecture|系统架构]]
 - [[../CNCF_Cloud_Native_AI/|CNCF 云原生 AI]]
 

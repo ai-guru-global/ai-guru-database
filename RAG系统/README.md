@@ -80,7 +80,7 @@ sources: []
 
 ### 前置知识
 - [大模型基础](../大模型/README.md) — Transformer、Prompt Engineering
-- [部署推理](.部署推理/README.md) — 模型服务化部署
+- [部署推理](./部署推理/README.md) — 模型服务化部署
 - [Java 生态](../数学基础/Java_Ecosystem_AI/) — Spring AI 集成
 
 ### RAG 推理引擎推荐
@@ -95,7 +95,7 @@ RAG 的生成阶段对 TTFT（首个 token 时间）和前缀缓存命中率非�
 | 极致低延迟云 API | [Groq](部署推理/Inference_Engines/Groq_Deep_Dive.md) | LPU、毫秒级 TTFT |
 | 推理引擎统一选型 | [LLM Inference Engine Selection Guide](部署推理/Inference_Engines/LLM_Inference_Engine_Selection_Guide.md) | 决策树与场景速查 |
 
-详见 [部署推理](.部署推理/README.md) 完整专题。
+详见 [部署推理](./部署推理/README.md) 完整专题。
 
 ### 进阶方向
 - [Agent 生产](../智能体/README.md) — Agentic RAG、记忆系统

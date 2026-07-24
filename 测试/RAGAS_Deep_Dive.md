@@ -372,4 +372,4 @@ response: "量子计算可以破解所有密码系统。"
 - [[测试/Testing_Fundamentals/AI_Testing_for_dummy.md|AI_Testing_for_dummy]]
 - [[测试/Testing_Frameworks/Java_AI_Testing.md|Java_AI_Testing]]
 - [[测试/README.md|测试 README]]
-- [[../../RAG系统/RAG_Fundamentals/RAG-in-nutshell|RAG-in-nutshell]]
+- [[../RAG系统/RAG_Fundamentals/RAG-in-nutshell|RAG-in-nutshell]]

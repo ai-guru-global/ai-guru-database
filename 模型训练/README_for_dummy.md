@@ -189,8 +189,8 @@ sources: []
 
 ## 下一步
 
-- 想学深度学习？→ [深度学习/README_for_dummy.md](.深度学习/README_for_dummy.md)
-- 想学优化？→ [深度学习/Optimization/README_for_dummy.md](.深度学习/README_for_dummy.md)
+- 想学深度学习？→ [深度学习/README_for_dummy.md](./深度学习/README_for_dummy.md)
+- 想学优化？→ [深度学习/Optimization/README_for_dummy.md](./深度学习/README_for_dummy.md)
 - 想学部署？→ [部署推理/README_for_dummy.md](../部署推理/README_for_dummy.md)
 
 ---

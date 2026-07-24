@@ -652,7 +652,7 @@ Agent 执行步骤:
 > - [[行业应用/Finance/index|金融 AI]]
 > - [[伦理安全/README|伦理安全]]
 > - [[LLM/README|大语言模型]]
-> - [[Agent/README|AI Agent]]
+> - [[智能体/README|AI Agent]]
 > - [[RAG/README|RAG 检索增强生成]]
 > - [[行业应用/AI_Code_Generation_2026|AI 代码生成]]
 > - [[数据科学/README|数据科学]]

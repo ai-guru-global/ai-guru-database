@@ -607,12 +607,12 @@ Tanh(拉伸版Sigmoid):
 
 **前置知识**:
 - [线性代数小白版](数学基础/Linear_Algebra/Linear_Algebra_for_dummy.md) - 理解矩阵计算(可选)
-- [机器学习小白版](../.机器学习/README_for_dummy.md) - 对比传统方法
+- [机器学习小白版](../../机器学习/README_for_dummy.md) - 对比传统方法
 
 **进阶学习**:
-- [卷积神经网络(CNN)](../.计算机视觉/README_for_dummy.md) - 专门处理图像的神经网络
-- [循环神经网络(RNN)](../.大模型/README_for_dummy.md) - 处理文字和序列数据
-- [Transformer](../.大模型/README_for_dummy.md) - ChatGPT 的核心技术
+- [卷积神经网络(CNN)](../../计算机视觉/README_for_dummy.md) - 专门处理图像的神经网络
+- [循环神经网络(RNN)](../../大模型/README_for_dummy.md) - 处理文字和序列数据
+- [Transformer](../../大模型/README_for_dummy.md) - ChatGPT 的核心技术
 
 ### 🎯 实战建议:
 

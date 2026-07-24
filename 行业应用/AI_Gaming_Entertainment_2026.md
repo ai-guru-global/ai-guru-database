@@ -623,7 +623,7 @@ AI 生成初稿 → 自动化质检 → 人工审核 → 修改反馈 → AI 迭
 > - [[行业应用/Content_Media_index|内容与媒体 AI]]
 > - [[多模态/README|多模态 AI]]
 > - [[LLM/README|大语言模型]]
-> - [[Agent/README|AI Agent]]
+> - [[智能体/README|AI Agent]]
 > - [[强化学习/README|强化学习]]
 > - [[计算机视觉/README|计算机视觉]]
 > - [[生成模型/README|生成模型]]

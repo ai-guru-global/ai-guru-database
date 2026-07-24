@@ -172,7 +172,7 @@ FIELD_RE = re.compile(r"^([A-Za-z_][\w-]*)\s*:\s*(.+)$", re.MULTILINE)  # 字段
 ### 3.3 入口页
 
 ```python
-ENTRY = "_synthesis/diagnosis-work-order-hub.md"
+ENTRY = "概念/synthesis/diagnosis-work-order-hub.md"
 ```
 
 这是智能体的**诊断总入口**——收到工单后首先读取此页，沿 wikilink 遍历到各故障决策树（Pod/Network/Storage/GPU）。
@@ -565,7 +565,7 @@ if args.clean and output_dir.resolve() in (root.resolve(), *root.resolve().paren
   "exported_at": "2026-07-11T10:30:00",
   "usage": {
     "mode": "llm-wiki",
-    "entry_point": "_synthesis/diagnosis-work-order-hub.md"
+    "entry_point": "概念/synthesis/diagnosis-work-order-hub.md"
   },
   "stats": {
     "total_pages": 1216,

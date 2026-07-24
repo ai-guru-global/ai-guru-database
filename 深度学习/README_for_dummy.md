@@ -111,8 +111,8 @@ A: 这章是入门,工作还需要更多实战经验。但理解这些概念是�
 - [概率统计小白版](数学基础/Probability_Statistics/Probability_Statistics_for_dummy.md) - 理解为什么要用概率
 
 ### 学完之后可以看:
-- [机器学习基础小白版](.机器学习/README_for_dummy.md) - 对比传统方法和深度学习
-- [自然语言处理小白版](.大模型/README_for_dummy.md) - ChatGPT 是怎么工作的
+- [机器学习基础小白版](./机器学习/README_for_dummy.md) - 对比传统方法和深度学习
+- [自然语言处理小白版](./大模型/README_for_dummy.md) - ChatGPT 是怎么工作的
 
 ## 关键术语速查
 

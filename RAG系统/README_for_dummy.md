@@ -220,7 +220,7 @@ RAG 流程:
 
 - 想深入技术？→ 查看子目录具体文档
 - 想学向量数据库？→ [Vector_Database_for_dummy.md](RAG系统/Vector_Databases/Vector_Database_for_dummy.md)
-- 想学 Agent？→ [强化学习/README_for_dummy.md](.强化学习/README_for_dummy.md)
+- 想学 Agent？→ [强化学习/README_for_dummy.md](./强化学习/README_for_dummy.md)
 
 ---
 

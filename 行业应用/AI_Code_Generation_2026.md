@@ -632,7 +632,7 @@ L_FIM = -Σ log P(token_i | prefix, suffix, token_<i)
 > - [[编程/README|AI 编程]]
 > - [[测试/README|测试]]
 > - [[学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
-> - [[Agent/README|AI Agent]]
+> - [[智能体/README|AI Agent]]
 > - [[LLM/README|大语言模型]]
 > - [[RAG/README|RAG 检索增强生成]]
 > - [[行业应用/Code_Generation_index|代码生成目录]]

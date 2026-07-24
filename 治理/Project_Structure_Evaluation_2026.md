@@ -43,7 +43,7 @@ sources: []
 - `模型评估/` — 只有 2 个文件（Model_Evaluation.md + for_dummy），无章节导览
 - `RAG系统/` — 有 `README_Advanced.md` 但无标准 `README.md`，命名不一致
 - `架构基建/` — 8 个技术文件但无导航入口
-- `18_Cloud_Ops_Agent/` — 5 个核心文件 + mkdocs 配置，无章节导览
+- `_projects/Cloud_Ops_Agent/` — 5 个核心文件 + mkdocs 配置，无章节导览
 
 ### 2.2 for_dummy 简化版覆盖度
 
@@ -407,7 +407,7 @@ AI测试/Testing_Frameworks/Java_AI_Testing.md
 MLOps/README.md
 RAG系统/README.md          （将 README_Advanced.md 重命名或合并）
 架构基建/README.md
-18_Cloud_Ops_Agent/README.md
+_projects/Cloud_Ops_Agent/README.md
 业界观点/README.md
 面试岗位/README.md
 治理/notes/README.md

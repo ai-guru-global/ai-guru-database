@@ -204,7 +204,7 @@ print(probs)  # [0.92, 0.05, 0.03] → 是猫！
 
 - [深度学习基础](../深度学习/README.md) — CNN、Transformer 原理
 - [NLP & LLMs](../大模型/README.md) — 多模态模型（CLIP、LLaVA）
-- [部署推理](.部署推理/README.md) — 模型上线与优化
+- [部署推理](./部署推理/README.md) — 模型上线与优化
 - [AI 应用](../行业应用/) — 行业应用案例
 
 ---

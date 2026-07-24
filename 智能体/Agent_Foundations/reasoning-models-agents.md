@@ -5,8 +5,8 @@ tags: ["reasoning", "agent", "o1", "deepseek-r1", "mcts", "planning", "synthesis
 sources:
   - "大模型/Reasoning_Models/o1_Class_Reasoning_Models"
   - "大模型/Reasoning_Models/DeepSeek_R1_Technical_Analysis"
-  - "Agent/Agent_Frameworks/LangChain_Agents_Deep_Dive"
-  - "Agent/Agent_Workflow/Workflow-in-nutshell"
+  - "智能体/Agent_Frameworks/LangChain_Agents_Deep_Dive"
+  - "智能体/Agent_Workflow/Workflow-in-nutshell"
 created: 2026-06-01
 updated: 2026-06-01
 summary: "推理模型（o1-class / DeepSeek R1）与 AI Agent 的结合正在重塑自主系统——从快速反应到深度规划，让 Agent 具备'先思考再行动'的能力。"

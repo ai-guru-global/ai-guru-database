@@ -623,7 +623,7 @@ ROI = (年节省成本 - 年运营成本) / 总投资成本
 > - [[强化学习/README|强化学习]]
 > - [[多模态/README|多模态 AI]]
 > - [[LLM/README|大语言模型]]
-> - [[Agent/README|AI Agent]]
+> - [[智能体/README|AI Agent]]
 > - [[计算机视觉/README|计算机视觉]]
 > - [[行业应用/Autonomous_Driving_index|自动驾驶]]
 > - [[行业应用/Robotics/index|机器人 AI 目录]]

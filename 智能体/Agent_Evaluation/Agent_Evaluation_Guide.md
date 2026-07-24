@@ -21,7 +21,7 @@ sources: []
 
 ```bash
 # Python 3.11+
-cd Agent/Agent_Evaluation/demo
+cd 智能体/Agent_Evaluation/demo
 pip install -r requirements.txt
 ```
 

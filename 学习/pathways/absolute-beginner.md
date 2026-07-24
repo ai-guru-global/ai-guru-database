@@ -103,7 +103,7 @@ Stage 1: 基础概念（轻量浏览，重点理解概念名称）
 **🎯 目标**：理解 ChatGPT、Claude 为什么能对话，它们背后的 Transformer 是什么。
 
 **🔗 深入阅读**：
-- [自然语言处理与大模型（小白版）](../.大模型/README_for_dummy.md)
+- [自然语言处理与大模型（小白版）](../../大模型/README_for_dummy.md)
 - [Transformer 革命（小白版）](大模型/Transformer_Revolution/Transformer_Revolution_for_dummy.md)
 - [提示词工程（小白版）](大模型/Prompt_Engineering/Prompt_Engineering_for_dummy.md)
 - [大语言模型架构（小白版）](大模型/LLM_Architectures/LLM_Architectures_for_dummy.md)
@@ -121,7 +121,7 @@ Stage 1: 基础概念（轻量浏览，重点理解概念名称）
 **🎯 目标**：理解 AI 怎么看图片和视频，为什么它能认出照片里的人脸。
 
 **🔗 深入阅读**：
-- [计算机视觉（小白版）](../.计算机视觉/README_for_dummy.md)
+- [计算机视觉（小白版）](../../计算机视觉/README_for_dummy.md)
 - [图像分类与检测（小白版）](计算机视觉/Image_Classification_Detection/Image_Classification_Detection_for_dummy.md)
 - [生成模型（小白版）](计算机视觉/Generative_Models/Generative_Models_for_dummy.md)
 

@@ -241,7 +241,7 @@ flowchart TD
 
 ```python
 orphans_sorted = sorted(orphans, key=lambda x: (
-    0 if '_concepts/' in x else           # 概念页优先级最高
+    0 if '概念/' in x else           # 概念页优先级最高
     1 if 'SRE_Reliability' in x or
       'Troubleshooting' in x else         # 其次是 SRE/排障
     2 if 'Cloud_Ops' in x else            # 再次是云运维
@@ -336,9 +336,9 @@ Scanning 1216 markdown files...
 1. ORPHAN PAGES (no incoming links) — corpus dirs only
 ======================================================================
 Total orphans in corpus dirs: 23
-  ORPHAN (0 refs): _concepts/clusterrole.md
-  ORPHAN (0 refs): _concepts/storageclass.md
-  ORPHAN (0 refs): _concepts/network-policy.md
+  ORPHAN (0 refs): 概念/clusterrole.md
+  ORPHAN (0 refs): 概念/storageclass.md
+  ORPHAN (0 refs): 概念/network-policy.md
   ...
 
 ======================================================================
@@ -370,8 +370,8 @@ Full report saved to /tmp/wiki_health.json
 {
   "orphan_count": 23,
   "orphans": [
-    "_concepts/clusterrole.md",
-    "_concepts/storageclass.md"
+    "概念/clusterrole.md",
+    "概念/storageclass.md"
   ],
   "tier_distribution": {
     "core": 85,

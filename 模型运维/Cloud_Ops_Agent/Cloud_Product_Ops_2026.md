@@ -1866,6 +1866,6 @@ class AgentMetrics:
 
 - [[模型运维/Cloud_Ops_Agent/CloudOps-in-nutshell.md|CloudOps-in-nutshell]]
 - [[模型运维/Cloud_Ops_Agent/Cloud_Product_Ops_for_dummy.md|Cloud_Product_Ops_for_dummy]]
-- [[18_Cloud_Ops_Agent/docs/architecture/index.md|index]]
-- [[18_Cloud_Ops_Agent/docs/corpus/index.md|index]]
-- [[18_Cloud_Ops_Agent/docs/development/index.md|index]]
+- [[_projects/Cloud_Ops_Agent/docs/architecture/index.md|index]]
+- [[_projects/Cloud_Ops_Agent/docs/corpus/index.md|index]]
+- [[_projects/Cloud_Ops_Agent/docs/development/index.md|index]]

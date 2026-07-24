@@ -65,12 +65,12 @@ sources:
 
 | 类别 | 触发条件 | 示例 |
 |------|----------|------|
-| `missing_concept` | `_concepts/X` 但文件不存在 | `[[_concepts/never-created]]` |
+| `missing_concept` | `概念/X` 但文件不存在 | `[[概念/never-created]]` |
 | `missing_file` | 常规路径但文件不存在 | `[[some/missing/page]]` |
 | `stale_path` | 引用已搬迁的旧路径 | `[[_meta/_synthesis-old]]` |
 | `dir_reference` | 引用章节目录 | `[[12_Architecture_Infrastructure]]` |
-| `missing_synthesis` | `_synthesis/X` 但不存在 | `[[_synthesis/missing]]` |
-| `missing_reference` | `_references/X` 但不存在 | `[[_references/missing]]` |
+| `missing_synthesis` | `概念/synthesis/X` 但不存在 | `[[概念/synthesis/missing]]` |
+| `missing_reference` | `来源/X` 但不存在 | `[[来源/missing]]` |
 
 **核心函数**：
 

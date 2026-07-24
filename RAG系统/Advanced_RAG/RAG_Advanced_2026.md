@@ -586,7 +586,7 @@ print(results)
 | 长上下文 RAG | [TensorRT-LLM](部署推理/Inference_Engines/TensorRT_LLM_Deep_Dive.md) | FP8、长上下文 kernel 优化 |
 | 统一选型 | [LLM Inference Engine Selection Guide](部署推理/Inference_Engines/LLM_Inference_Engine_Selection_Guide.md) | 决策树与成本模型 |
 
-完整引擎专题见 [部署推理](../.部署推理/README.md)。
+完整引擎专题见 [部署推理](../../部署推理/README.md)。
 
 ---
 

@@ -1568,8 +1568,8 @@ class QualityGate:
 
 ## Related
 
-- [[18_Cloud_Ops_Agent/docs/testing/index]] — 云产品运维 Agent 评测指南 (Testing & Evaluation) (共享: ai-agents, automation, cloud-ops, devops, sre, testing)
-- [[18_Cloud_Ops_Agent/CloudOps-in-nutshell]] — 云产品运维 Agent 速成指南 (共享: ai-agents, automation, cloud-ops, devops, sre)
-- [[18_Cloud_Ops_Agent/Cloud_Product_Ops_for_dummy]] — 云产品运维 Agent 入门指南 (for Dummies) (共享: ai-agents, automation, cloud-ops, devops, sre)
-- [[18_Cloud_Ops_Agent/docs/architecture/index]] — 云产品运维 Agent 架构设计指南 (Architecture) (共享: ai-agents, automation, cloud-ops, devops, sre)
-- [[18_Cloud_Ops_Agent/docs/templates/ops_template.md|ops_template]]
+- [[_projects/Cloud_Ops_Agent/docs/testing/index]] — 云产品运维 Agent 评测指南 (Testing & Evaluation) (共享: ai-agents, automation, cloud-ops, devops, sre, testing)
+- [[_projects/Cloud_Ops_Agent/CloudOps-in-nutshell]] — 云产品运维 Agent 速成指南 (共享: ai-agents, automation, cloud-ops, devops, sre)
+- [[_projects/Cloud_Ops_Agent/Cloud_Product_Ops_for_dummy]] — 云产品运维 Agent 入门指南 (for Dummies) (共享: ai-agents, automation, cloud-ops, devops, sre)
+- [[_projects/Cloud_Ops_Agent/docs/architecture/index]] — 云产品运维 Agent 架构设计指南 (Architecture) (共享: ai-agents, automation, cloud-ops, devops, sre)
+- [[_projects/Cloud_Ops_Agent/docs/templates/ops_template.md|ops_template]]

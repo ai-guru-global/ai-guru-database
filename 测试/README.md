@@ -106,7 +106,7 @@ AI 测试类型
 ## 关联目录
 
 - [AI运维](../运维/) -- AI 运维与可观测性
-- [Agent/Agent_Evaluation](../智能体/Agent_Evaluation/) -- Agent 评估
+- [智能体/Agent_Evaluation](../智能体/Agent_Evaluation/) -- Agent 评估
 
 ---
 

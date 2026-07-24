@@ -610,7 +610,7 @@ CT/MRI 数据 → [AI 分割] → [3D 重建] → [手术规划] → [模拟验�
 > - [[伦理安全/README|伦理安全]]
 > - [[LLM/README|大语言模型]]
 > - [[多模态/README|多模态 AI]]
-> - [[Agent/README|AI Agent]]
+> - [[智能体/README|AI Agent]]
 > - [[计算机视觉/README|计算机视觉]]
 > - [[强化学习/README|强化学习]]
 > - [[知识图谱/README|知识图谱]]

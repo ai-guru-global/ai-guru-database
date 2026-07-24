@@ -353,7 +353,7 @@ flowchart LR
 | 金融 AI | [Finance 文件夹](Finance/) |
 | 自动驾驶 | [Autonomous_Driving 文件夹](Autonomous_Driving/) |
 | 行业全景 | [行业应用速成指南](./Industry-in-nutshell.md) |
-| 技术基础 | [AI 基础 - 小白版](.数学基础/README_for_dummy.md) |
+| 技术基础 | [AI 基础 - 小白版](./数学基础/README_for_dummy.md) |
 
 ---
 

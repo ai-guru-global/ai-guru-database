@@ -86,7 +86,7 @@ sources: []
 - [AI 基础](../入门/README.md) — 面试中的通用知识
 - [机器学习](../机器学习/README.md) — ML 岗位核心理论
 - [深度学习](../深度学习/README.md) — DL 岗位核心理论
-- [部署推理](.部署推理/README.md) — MLE/MLOps 岗位实操
+- [部署推理](./部署推理/README.md) — MLE/MLOps 岗位实操
 - [Agent 生产](../智能体/README.md) — Agent 相关岗位前沿知识
 - [测试](../测试/README.md) — AI Evaluation Engineer 核心技能
 

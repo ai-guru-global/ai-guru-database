@@ -190,7 +190,7 @@ flowchart LR
 
 **核心能力**：
 - **鲁棒 wikilink 解析器**：5 级回退策略（精确路径 → 空格/下划线变体 → 目录 hub → 相对路径上溯 → 唯一 basename）
-- **BFS 可达性分析**：从入口页 `_synthesis/diagnosis-work-order-hub.md` 出发，沿 wikilink 广度优先遍历，标记所有可达页
+- **BFS 可达性分析**：从入口页 `概念/synthesis/diagnosis-work-order-hub.md` 出发，沿 wikilink 广度优先遍历，标记所有可达页
 - **死链重写**：无法解析的 `[[wikilink]]` 自动转为纯文本显示，确保智能体永不跟随死链
 - **验证断言**：导出后二次扫描磁盘文件，强制重写残余死链，最终断言零断链
 
@@ -217,11 +217,11 @@ flowchart LR
 
 | 类别 | 含义 |
 |------|------|
-| `missing_concept` | 引用 `_concepts/X` 但文件不存在 |
+| `missing_concept` | 引用 `概念/X` 但文件不存在 |
 | `missing_file` | 引用常规路径但文件不存在 |
 | `stale_path` | 引用已搬迁的旧路径 |
 | `dir_reference` | 引用章节目录（Obsidian 显示目录列表） |
-| `missing_synthesis` | 引用 `_synthesis/X` 但不存在 |
+| `missing_synthesis` | 引用 `概念/synthesis/X` 但不存在 |
 | `external` | 外部 URL（跳过） |
 
 支持 `--json` 输出供 `batch_fix_links.py` 消费，`--strict` 将目录引用也标记为断链。
@@ -269,7 +269,7 @@ flowchart LR
 
 #### `rename_to_chinese.py` — 根目录中文化
 
-将 22 个英文编号目录（`00_AI_Introduction` → `AI入门`）重命名为中文短名，保留 `90-94` 拓展目录和 `_concepts/_synthesis/_references` 知识图谱层不动。
+将 22 个英文编号目录（`00_AI_Introduction` → `AI入门`）重命名为中文短名，保留 `90-94` 拓展目录和 `概念/_synthesis/_references` 知识图谱层不动。
 
 ### 4.5 元数据维护
 
@@ -279,7 +279,7 @@ flowchart LR
 
 | 条件 | tier |
 |------|------|
-| `_concepts/*` 或 `_synthesis/*` | `core` |
+| `概念/*` 或 `概念/synthesis/*` | `core` |
 | 含 `Deep_Dive` / `for_dummy` / `in-nutshell` 或 > 10KB | `core` |
 | `README.md` / `INDEX.md` | `supporting` |
 | < 2KB | `peripheral` |
@@ -307,7 +307,7 @@ flowchart LR
 
 #### `count_words.py` / `count_words.sh` — 字数统计
 
-统计所有 `NN_*` 编号目录和 `_concepts/_synthesis/_references` 下的 `.md` 文件字符数。Python 版按目录分组输出，Shell 版用 `find + wc` 高效统计。
+统计所有 `NN_*` 编号目录和 `概念/_synthesis/_references` 下的 `.md` 文件字符数。Python 版按目录分组输出，Shell 版用 `find + wc` 高效统计。
 
 ---
 

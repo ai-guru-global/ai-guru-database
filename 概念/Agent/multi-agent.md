@@ -15,7 +15,7 @@ relationships:
   - target: "概念/a2a-protocol"
     type: standardized_by
 sources:
-  - Agent/Agent_Foundations/Multi_Agent_Systems_Guide.md
+  - 智能体/Agent_Foundations/Multi_Agent_Systems_Guide.md
   - 概念/autogen.md
 summary: "Multi-Agent System（MAS）是多个 LLM Agent 通过协作 / 竞争 / 角色扮演完成复杂任务的系统；2026 年通过 A2A 协议标准化、CrewAI / AutoGen 等框架普及，成为企业级 Agent 应用的主流范式。"
 lifecycle: reviewed

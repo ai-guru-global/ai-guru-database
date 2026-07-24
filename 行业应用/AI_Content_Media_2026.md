@@ -320,19 +320,19 @@ sources: []
 
 - [行业对比分析](行业应用/Industry_Overview/Industry_Comparison_2026.md) — 全行业的横向对比
 - [行业速览](行业应用/Industry_Overview/Industry-in-nutshell.md) — 30 分钟了解所有行业 AI 应用
-- [机器学习](../../机器学习/README.md) — 基础算法与模型
-- [深度学习](../../深度学习/README.md) — 神经网络核心技术
-- [MLOps](../../模型运维/README.md) — 模型生产化部署
+- [机器学习](../机器学习/README.md) — 基础算法与模型
+- [深度学习](../深度学习/README.md) — 神经网络核心技术
+- [MLOps](../模型运维/README.md) — 模型生产化部署
 
 ---
 
 ## Related
 
-- [[../../RAG系统/RAG_Production|RAG 生产部署]] — 内容创作知识库增强
-- [[../../智能体/Agent_Workflow|Agent 工作流]] — 内容生成自动化 Agent
-- [[../../大模型/Multimodal_Models/Multimodal_Architectures_2026|多模态架构]] — 图文视频多模态生成
-- [[../../模型评估/LLM_Evaluation|LLM 评估]] — AI 内容质量评估
-- [[../../部署推理/Deployment_Strategies|部署策略]] — 高并发内容生成部署
+- [[../RAG系统/RAG_Production|RAG 生产部署]] — 内容创作知识库增强
+- [[../智能体/Agent_Workflow|Agent 工作流]] — 内容生成自动化 Agent
+- [[../大模型/Multimodal_Models/Multimodal_Architectures_2026|多模态架构]] — 图文视频多模态生成
+- [[../模型评估/LLM_Evaluation|LLM 评估]] — AI 内容质量评估
+- [[../部署推理/Deployment_Strategies|部署策略]] — 高并发内容生成部署
 
 ---
 

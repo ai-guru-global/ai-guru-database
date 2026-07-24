@@ -103,7 +103,7 @@ Agent_Skills_Ecosystem_Catalog.md → 按领域或团队查找
 ## 🗂️ 文件夹结构
 
 ```
-Agent/Agent_Skills/
+智能体/Agent_Skills/
 ├── README.md                           ← 本文件
 ├── Skills-in-nutshell.md               ← 速览版 / 书写速查
 ├── Agent_Skills_Deep_Dive.md           ← 完整规范、核心机制、最佳实践

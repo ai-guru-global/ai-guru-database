@@ -81,12 +81,12 @@ sources: []
 
 ## Related
 
-- [[RAG系统/RAG-in-nutshell.md]] — RAG (检索增强生成) 速成指南 (共享: embedding, rag, retrieval, vector-database)
-- [[RAG系统/RAG_Systems.md]] — RAG 系统 (RAG Systems) (共享: embedding, rag, retrieval, vector-database)
+- [[RAG系统/RAG_Fundamentals/RAG-in-nutshell.md]] — RAG (检索增强生成) 速成指南 (共享: embedding, rag, retrieval, vector-database)
+- [[RAG系统/RAG_Fundamentals/RAG_Systems.md]] — RAG 系统 (RAG Systems) (共享: embedding, rag, retrieval, vector-database)
 - [[RAG系统/RAG_Frameworks/Spring_AI_RAG_Deep_Dive.md]] — Spring AI RAG 深度解析 (共享: embedding, rag, retrieval, vector-database)
-- [[治理/rag-vector-database.md]] — RAG 系统 × 向量数据库 (共享: embedding, rag, retrieval, vector-database)
+- [[RAG系统/Vector_Databases/rag-vector-database.md]] — RAG 系统 × 向量数据库 (共享: embedding, rag, retrieval, vector-database)
 - [[RAG系统/README.md|README]]
-- [[RAG系统/Vector_Database_for_dummy.md|Vector_Database_for_dummy]]
+- [[RAG系统/Vector_Databases/Vector_Database_for_dummy.md|Vector_Database_for_dummy]]
 - [[RAG系统/README_for_dummy.md|README_for_dummy]]
 
 ## 进阶知识拓展

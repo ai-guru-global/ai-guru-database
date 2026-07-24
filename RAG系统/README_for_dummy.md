@@ -219,17 +219,17 @@ RAG 流程:
 ## 下一步
 
 - 想深入技术？→ 查看子目录具体文档
-- 想学向量数据库？→ [Vector_Database_for_dummy.md](./Vector_Database_for_dummy.md)
-- 想学 Agent？→ [强化学习/README_for_dummy.md](../强化学习/README_for_dummy.md)
+- 想学向量数据库？→ [Vector_Database_for_dummy.md](RAG系统/Vector_Databases/Vector_Database_for_dummy.md)
+- 想学 Agent？→ [强化学习/README_for_dummy.md](.强化学习/README_for_dummy.md)
 
 ---
 
-*本文是 [README.md](./README.md) 的简化版，适合零基础读者。*
+*本文是 [README.md](README.md) 的简化版，适合零基础读者。*
 
 ## Related
 
-- [[RAG系统/RAG-in-nutshell.md|RAG-in-nutshell]]
-- [[RAG系统/RAG_Systems.md|RAG_Systems]]
+- [[RAG系统/RAG_Fundamentals/RAG-in-nutshell.md|RAG-in-nutshell]]
+- [[RAG系统/RAG_Fundamentals/RAG_Systems.md|RAG_Systems]]
 - [[RAG系统/README_Advanced.md|README_Advanced]]
 - [[RAG系统/RAG_Frameworks/Spring_AI_RAG_Deep_Dive.md|Spring_AI_RAG_Deep_Dive]]
-- [[治理/rag-vector-database.md|rag-vector-database]]
+- [[RAG系统/Vector_Databases/rag-vector-database.md|rag-vector-database]]

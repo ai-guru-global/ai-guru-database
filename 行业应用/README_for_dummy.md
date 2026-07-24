@@ -172,11 +172,11 @@ sources: []
 
 - 想深入某个行业？→ 查看对应子目录
 - 想学技术？→ 从 [AI入门](../入门/README_for_dummy.md) 开始
-- 想找工作？→ [面试岗位/Interviews_for_dummy.md](../面试岗位/Interviews_for_dummy.md)
+- 想找工作？→ [面试岗位/Interviews_for_dummy.md](面试岗位/Interview_Guide/Interviews_for_dummy.md)
 
 ---
 
-*本文是 [README.md](./README.md) 的简化版，适合零基础读者。*
+*本文是 [README.md](README.md) 的简化版，适合零基础读者。*
 
 ## Related
 

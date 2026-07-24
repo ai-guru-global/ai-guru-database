@@ -141,7 +141,7 @@ sources: []
 
 - 17 个文件包含 `TODO:`、`WIP`、`占位符`、`待补充` 等标记，分布在：
   - `AI测试/Test_Data_Management.md`
-  - `18_Cloud_Ops_Agent/Mobile_AI_Ops_Design.md`
+  - `模型运维/Cloud_Ops_Agent/Mobile_AI_Ops_Design.md`
   - `模型评估/README.md`
   - `AI编程/` 下的 Vibe Coding 系列
   - `智能体/` 的评估与 OpenClaw 生态

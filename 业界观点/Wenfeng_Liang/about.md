@@ -137,9 +137,9 @@ DeepSeek 的每篇技术报告都详细公布训练成本（GPU 小时、总美�
 
 ## 交叉引用 (Cross-References)
 
-- [DeepSeek 技术全景](../../大模型/Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive.md)
-- [MoE 案例研究](../../大模型/LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md)
-- [DeepSeek-R1 技术分析](../../大模型/Reasoning_Models/DeepSeek_R1_Technical_Analysis.md)
+- [DeepSeek 技术全景](大模型/Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive.md)
+- [MoE 案例研究](大模型/LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md)
+- [DeepSeek-R1 技术分析](大模型/Reasoning_Models/DeepSeek_R1_Technical_Analysis.md)
 - [[业界观点/Zhilin_Yang/about]] — Kimi 与 DeepSeek 在 RL 推理、开源策略上的竞合
 - [[业界观点/Jie_Tang/about]] — 智谱 GLM 与 DeepSeek 在中国开源生态中的并行
 - [[业界观点/Jinze_Bai/about]] — Qwen 与 DeepSeek 在 MoE 架构上的对比

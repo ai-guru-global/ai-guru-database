@@ -104,13 +104,13 @@ sources: []
 | 缺失的概念页（`概念/distributed-training`, `概念/vllm`, `概念/rag` 等） | ~12 | 应存在但未创建 | 🔴 中 |
 | 残留旧路径（`14_AI_Gateway/AI_Gateway_for_dummy.md`） | ~10 | 重命名前的路径，重构时漏改 | 🟡 中 |
 | `[[arxiv]]`、`[[大模型安全权威指南]]` 等 | ~8 | 可能本意是标签或外部资料 | 🟢 低 |
-| `治理/综合-*` 在 hot.md / index.md 中的引用 | ~6 | 路径写法不一致（文件实际在 `治理/`） | 🟡 中 |
+| `治理/综合-*` 在 治理/hot.md / index.md 中的引用 | ~6 | 路径写法不一致（文件实际在 `治理/`） | 🟡 中 |
 | 其他混合 | ~51 | 单源文件（90_Learn/guides/ai_engineering_roadmap_2026 单文件贡献 21 条）| 🟢 低 |
 
 **问题：**
 - ⚠️ **113 个孤立页面**（无任何入链）需要回查 — 但其中约 30 个是 19_Talks 人物 `about.md`（资源层合理孤立），约 40 个是 10/11/15/17 章节新建立的 Deep_Dive 类页面（被引用但通过目录导航而非 wikilink）
 - ⚠️ 单文件 `ai_engineering_roadmap_2026.md` 贡献 21 条断链 — 这是 `学习/guides/` 下的导航页，需要单独治理
-- ⚠️ hot.md 和 index.md 仍用 `治理/综合-` 前缀引用，实际文件位于 `治理/` —— 上一轮重构时这两份顶层导航文件被遗漏
+- ⚠️ 治理/hot.md 和 index.md 仍用 `治理/综合-` 前缀引用，实际文件位于 `治理/` —— 上一轮重构时这两份顶层导航文件被遗漏
 
 ### 4. Frontmatter / 元数据   评分：9.0 / 10
 **优点：**
@@ -153,7 +153,7 @@ sources: []
 - ✅ `概念/` 194 概念原子页 — 知识图谱基底层
 - ✅ `治理/` 33 跨域综合页（提示词→上下文→Harness、安全全链路、架构选型决策树等）
 - ✅ 概念 + 综合双层结构是 peace-lab / open-cognition 之外的中文知识库少见设计
-- ✅ `hot.md` / `index.md` 双导航（hot 偏新增热点，index 偏全库）
+- ✅ `治理/hot.md` / `index.md` 双导航（hot 偏新增热点，index 偏全库）
 
 **问题：**
 - ⚠️ **缺失核心概念页**（被 wikilink 引用但未创建）：
@@ -162,7 +162,7 @@ sources: []
   - `概念/rag`（5 处）
   - `概念/cloud-ai-platform`（6 处）
   - `概念/serverless` / `observability` / `embedding`（各 3 处）
-- ⚠️ cheatsheet 数量偏少：`治理/cheatsheets/` 仅 3 篇（llm-inference / agent-design / security-defense），但被 hot.md / index.md 高频引用
+- ⚠️ cheatsheet 数量偏少：`治理/cheatsheets/` 仅 3 篇（llm-inference / agent-design / security-defense），但被 治理/hot.md / index.md 高频引用
 - ⚠️ 无 `治理/_README.md` — 综合页缺少导航入口
 
 ### 7. 提交节奏与风险         评分：7.5 / 10
@@ -174,7 +174,7 @@ sources: []
 **问题：**
 - ⚠️ 基线报告（2026-06-15）已识别"提交节奏断档"风险（6 月仅 1 个 commit 但本地 4000+ 文件变更未入库）。当前 6 月下旬 commit 节奏明显恢复（最近 9 个 commit 都是 `content/subdir-reorganization` 分支），但仍未合回 main
 - ⚠️ 分支名 `content/subdir-reorganization` 暗示工作仍在进行，但实际从 commit 69110e0 起已进入收尾阶段（"全量重写子目录重组后的 wikilink/内链"），建议尽快合并
-- ⚠️ `KNOWN_ISSUES.md`（437 行）+ `ROADMAP.md`（197 行）有 2026-06-15 之后的更新频率需要核实
+- ⚠️ `治理/KNOWN_ISSUES.md`（437 行）+ `治理/ROADMAP.md`（197 行）有 2026-06-15 之后的更新频率需要核实
 
 ---
 
@@ -222,7 +222,7 @@ sources: []
 
 可一并消除 ~30 条断链。
 
-### 🔴 P0-2：hot.md / index.md 路径修正（约 30 分钟）
+### 🔴 P0-2：治理/hot.md / index.md 路径修正（约 30 分钟）
 将 `治理/综合-*` 前缀改为 `治理/*`（或反之，统一一处），消除 ~6 条断链。这两份顶层导航是用户最常访问的入口。
 
 ### 🟡 P1-1：90_Learn/guides 导航页断链治理（约 1 小时）

@@ -401,8 +401,8 @@ graph LR
 
 | 文档 | 内容 |
 |------|------|
-| ⭐ [LLMOps 2026](模型运维/LLMOps_2026.md) | 主线：传统 MLOps 失效的 7 大原因、三层架构、成熟度模型、事故复盘 |
-| [Prompt 工程化运维](模型运维/Prompt_Engineering_Ops.md) | Prompt 即代码、版本化、A/B 测试、CI 门禁、DSPy 自动优化 |
+| ⭐ [LLMOps 2026](模型运维/LLMOps/LLMOps_2026.md) | 主线：传统 MLOps 失效的 7 大原因、三层架构、成熟度模型、事故复盘 |
+| [Prompt 工程化运维](模型运维/Prompt_Ops/Prompt_Engineering_Ops.md) | Prompt 即代码、版本化、A/B 测试、CI 门禁、DSPy 自动优化 |
 | [LLM 评估流水线](模型运维/LLM_Evaluation_Pipeline.md) | LLM-as-Judge、人审闭环、Eval-Driven Development、评估陷阱 |
 | [RAG 流水线运维](模型运维/Orchestration/RAG_Pipeline_Ops.md) | 四维可变性、Embedding 升级迁移、索引重建灰度 |
 | [LLM 成本与延迟 SLO](模型运维/Cost/LLM_Cost_Latency_SLO.md) | 三层缓存、智能路由、Token 预算熔断、FinOps |
@@ -468,7 +468,7 @@ graph LR
 
 - [中国大模型生态全景](./大模型/Chinese_LLM_Ecosystem/README.md) - DeepSeek/Qwen/GLM/Kimi/MiniMax/MiMo 六大厂商
 - [国际大模型生态全景](./大模型/Global_LLM_Ecosystem/README.md) - OpenAI/Google/Anthropic/Meta/Mistral 五大厂商
-- [LLMOps 2026](模型运维/LLMOps_2026.md) - 大模型时代的 MLOps 升级（⭐ 独家主线）
+- [LLMOps 2026](模型运维/LLMOps/LLMOps_2026.md) - 大模型时代的 MLOps 升级（⭐ 独家主线）
 - [模型问题排查手册](模型训练/Monitoring/Model_Troubleshooting_Guide.md) - 预训练/微调/推理全链路故障诊断
 - [LLM 基准测试全景](模型评估/Benchmarks/LLM_Benchmark_Suite_2026.md) - MMLU/SWE-bench/AIME/GPQA 全基准解读
 - [量化技术深度 2026](部署推理/Quantization/Quantization_Techniques_2026.md) - GPTQ/AWQ/GGUF/NF4/FP8
@@ -611,7 +611,7 @@ git commit -m "feat: 添加 XX 内容"
 git push origin feature/your-feature
 ```
 
-[查看完整贡献指南 →](./CONTRIBUTING.md)
+[查看完整贡献指南 →](治理/CONTRIBUTING.md)
 
 ---
 
@@ -648,14 +648,14 @@ git push origin feature/your-feature
 
 ## Related
 
-- [[ROADMAP.md]] — AI Guru 知识库路线图
-- [[KNOWN_ISSUES.md]] — 已知问题追踪
+- [[治理/ROADMAP.md]] — AI Guru 知识库路线图
+- [[治理/KNOWN_ISSUES.md]] — 已知问题追踪
 - [[README_EN]] — English Version
 - [[CONTRIBUTING]] — 贡献指南
 - [[README_for_dummy]] — 入门版 README
 - [[index]] — 知识库索引
-- [[hot.md]] — 热门页面
+- [[治理/hot.md]] — 热门页面
 - [[治理/plan/README]] — 项目规划与评估报告
 - [[模型运维/Boundary_with_16.md]] — 10 与 16 边界声明
 - [[治理/README]] — 跨域综合文档索引
-- [[入门/AI_Fundamentals.md]] — 知识库入门索引
+- [[入门/Fundamentals/AI_Fundamentals.md]] — 知识库入门索引

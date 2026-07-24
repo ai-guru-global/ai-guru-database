@@ -142,7 +142,7 @@ description: Deploy a Spring Boot application. Use when the user wants to deploy
 
 Spring AI 框架的深度技术文档（ChatClient、Advisor、RAG、MCP、Observability 等）已迁移至：
 
-📄 [Java 生态 AI / Spring AI 深度解析](../../数学基础/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md)
+📄 [Java 生态 AI / Spring AI 深度解析](数学基础/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md)
 
 ---
 
@@ -151,7 +151,7 @@ Spring AI 框架的深度技术文档（ChatClient、Advisor、RAG、MCP、Obser
 - [Agent Skills 深度解析](./Agent_Skills_Deep_Dive.md) — Agent Skills 完整规范
 - [Agent Skills 实战指南](./Agent_Skills_Practical_Guide.md) — 创建和优化 Skill
 - [Spring AI 架构设计](../../架构基建/Architecture_Overview/Spring_AI_Architecture)
-- [Spring AI RAG 深度解析](../../RAG系统/RAG_Frameworks/Spring_AI_RAG_Deep_Dive.md)
+- [Spring AI RAG 深度解析](RAG系统/RAG_Frameworks/Spring_AI_RAG_Deep_Dive.md)
 
 ## Related
 

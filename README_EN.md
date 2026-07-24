@@ -37,7 +37,7 @@ sources: []
 </p>
 
 <p>
- <a href="./README.md">🇨🇳 中文版</a>
+ <a href="README.md">🇨🇳 中文版</a>
 </p>
 
 </div>
@@ -276,9 +276,9 @@ Complete path from math to production:
 
 Latest tech trends and industry insights:
 
-- [LLM Architectures 2026](./大模型/LLM_Architectures/LLM_Architectures.md) - GPT-5.2, Claude 4.5, reasoning models
-- [AI Hardware 2026](./数学基础/AI_Hardware/AI_Hardware_2026.md) - H100/H200/B200 comparison
-- [PEFT Fine-tuning 2026](./大模型/Fine_tuning_Techniques/PEFT_2026.md) - LoRA/QLoRA/DoRA, 70B on single GPU
+- [LLM Architectures 2026](大模型/LLM_Architectures/LLM_Architectures.md) - GPT-5.2, Claude 4.5, reasoning models
+- [AI Hardware 2026](数学基础/AI_Hardware/AI_Hardware_2026.md) - H100/H200/B200 comparison
+- [PEFT Fine-tuning 2026](大模型/Fine_tuning_Techniques/PEFT_2026.md) - LoRA/QLoRA/DoRA, 70B on single GPU
 - [Advanced RAG](./RAG系统/) - Hybrid search, Agentic RAG
 - [AI Coding Assistants](./编程/) - Cursor, Claude Code, Devin
 - [Vibe Coding Methodology](./编程/) - Natural language driven dev, DGRV loop, production practices
@@ -394,7 +394,7 @@ git commit -m "feat: add XX content"
 git push origin feature/your-feature
 ```
 
-[View Full Contributing Guide →](./CONTRIBUTING.md)
+[View Full Contributing Guide →](治理/CONTRIBUTING.md)
 
 ---
 

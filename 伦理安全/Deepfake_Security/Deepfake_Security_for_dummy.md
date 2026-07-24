@@ -152,9 +152,9 @@ flowchart TB
 
 ## 🔗 相关主题
 
-- [AI 安全红队测试](../AI_Safety_RedTeaming/AI_Safety_RedTeaming.md) — 主动测试 AI 安全
-- [AI 治理合规](../AI_Governance_Compliance_2026.md) — 法律法规
-- [Privacy Preserving AI](../Privacy_Preserving_AI/Privacy_Preserving_AI.md) — 保护个人数据
+- [AI 安全红队测试](.伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming.md) — 主动测试 AI 安全
+- [AI 治理合规](伦理安全/Governance/AI_Governance_Compliance_2026.md) — 法律法规
+- [Privacy Preserving AI](.伦理安全/Privacy_Preserving_AI/Privacy_Preserving_AI.md) — 保护个人数据
 
 ---
 

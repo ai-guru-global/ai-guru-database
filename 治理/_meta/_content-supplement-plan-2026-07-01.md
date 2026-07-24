@@ -42,7 +42,7 @@ sources: []
   - 可观测性三板斧（metrics/logs/traces）
   - 与 `AI运维`、 `MLOps`、 `部署推理` 的交叉引用
 
-### 2. `模型运维/LLM_Guardrails_and_Safety_Ops_2026.md`
+### 2. `模型运维/LLMOps/LLM_Guardrails_and_Safety_Ops_2026.md`
 
 - **定位**: LLM 生产环境输入输出护栏的工程化实践。
 - **目标读者**: MLOps/LLMOps 工程师、AI 安全工程师。
@@ -66,7 +66,7 @@ sources: []
   - 多模型路由与 Fallback 策略
   - 安全、监控、成本优化 checklist
 
-### 4. `智能体/Agent_Production_Deployment_Runbook.md`
+### 4. `智能体/Agent_Foundations/Agent_Production_Deployment_Runbook.md`
 
 - **定位**: Agent 系统上线生产环境的完整 Runbook。
 - **目标读者**: Agent 平台工程师、AI 应用架构师。
@@ -79,7 +79,7 @@ sources: []
   - 可观测性：Trace、Step 级别监控、成本 Dashboard
   - 灾难恢复：会话状态、长期记忆、任务队列备份
 
-### 5. `RAG系统/RAG_Production_Architecture_Deep_Dive.md`
+### 5. `RAG系统/RAG_Production/RAG_Production_Architecture_Deep_Dive.md`
 
 - **定位**: RAG 系统生产级架构设计与最佳实践。
 - **目标读者**: RAG 系统架构师、AI 应用工程师。

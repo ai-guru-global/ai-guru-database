@@ -13,7 +13,7 @@ relationships:
     type: related_to
 sources:
   - 模型评估/Benchmarks/Agentic_Benchmark_Guide.md
-  - Agent/Agent_Evaluation/README.md
+  - 智能体/Agent_Evaluation/README.md
 summary: "Agent 评估基准是专门测试 AI Agent 综合能力的数据集和指标。它不只考模型会不会答题，而是考 Agent 能否正确规划、调用工具、多步推理、处理错误、最终完成任务。"
 provenance:
   extracted: 0.75

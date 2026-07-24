@@ -125,13 +125,13 @@ Huang 将数据中心视为 AI 时代的"工厂"，其核心产品不仅是 GPU 
 
 ## 交叉引用 (Cross-References)
 
-- [Talks 主题合成 2026](业界观点/Talks_Synthesis_2026.md) -- Scaling Laws、AI 安全、中国 AI 与全球格局等主题中 Huang 的立场
+- [Talks 主题合成 2026](业界观点/Talks_Synthesis/Talks_Synthesis_2026.md) -- Scaling Laws、AI 安全、中国 AI 与全球格局等主题中 Huang 的立场
 - [Jensen Huang 金句集](业界观点/Jensen_Huang/sayings.md) -- 更多金句与权威来源链接
-- [AI 历史时间线](入门/AI_History_Timeline.md) -- CUDA 发布与 GPU 计算革命
-- [AI 未来趋势](入门/AI_Future_Trends.md) -- "AI 工厂"与"物理 AI"趋势预判
+- [AI 历史时间线](入门/Fundamentals/AI_History_Timeline.md) -- CUDA 发布与 GPU 计算革命
+- [AI 未来趋势](入门/Ethics_and_Future/AI_Future_Trends.md) -- "AI 工厂"与"物理 AI"趋势预判
 - [架构与基础设施](../../架构基建/README.md) -- GPU 集群、数据中心与 AI 计算架构
 - [模型训练](../../模型训练/README.md) -- 大规模分布式训练与 GPU 算力需求
-- [部署与推理](../../部署推理/README.md) -- 推理优化与 GPU 推理引擎
+- [部署与推理](../.部署推理/README.md) -- 推理优化与 GPU 推理引擎
 - [机器人系统](../../模型运维/README.md) -- Physical AI、Isaac 平台与机器人仿真
 - [Sam Altman](业界观点/Jensen_Huang/about.md) -- Scaling Laws 信仰与算力需求共识
 - [Demis Hassabis](业界观点/Jensen_Huang/about.md) -- AI for Science 与 GPU 算力支撑

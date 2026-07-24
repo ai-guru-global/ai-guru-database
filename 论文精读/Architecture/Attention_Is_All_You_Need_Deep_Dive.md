@@ -405,7 +405,7 @@ flowchart TB
 - [Transformer 革命](../大模型/Transformer_Revolution/) — Transformer 变体与演进
 - [LLM 架构](../大模型/LLM_Architectures/) — 现代大模型的架构选择
 - [序列模型](../大模型/Sequence_Models/) — RNN/LSTM 与 Transformer 的对比
-- [Transformer 革命](../../大模型/Transformer_Revolution/Transformer_Revolution.md) — Attention 的数学细节
+- [Transformer 革命](大模型/Transformer_Revolution/Transformer_Revolution.md) — Attention 的数学细节
 
 ---
 
@@ -416,4 +416,4 @@ flowchart TB
 - [[论文精读/Architecture/BERT_Deep_Dive]] — BERT 深度解读 (Bidirectional Encoder Representations from Transformers) (共享: google, nlp, transformer)
 - [[治理/transformer-llm-architecture]] — Transformer 架构 × LLM 架构 (共享: attention, nlp, transformer)
 - [[大模型/Fine_tuning_Techniques/PEFT_2026]] — PEFT 2026 (参数高效微调) (共享: nlp, transformer)
-- [[概念/long-context-models.md|long-context-models]]
+- [[概念/LLM/long-context-models.md|long-context-models]]

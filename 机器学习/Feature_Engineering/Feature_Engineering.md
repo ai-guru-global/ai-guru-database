@@ -306,14 +306,14 @@ def create_time_features(df, date_col='date', target_col='sales'):
 ## 7. 与其他主题的关联 (Connections)
 
 ### 前置知识
-- [概率论与数理统计](../../数学基础/Probability_Statistics/Probability_Statistics.md) — 理解分布变换和统计量
-- [线性代数](../../数学基础/Linear_Algebra/Linear_Algebra.md) — PCA 降维的数学基础
+- [概率论与数理统计](数学基础/Probability_Statistics/Probability_Statistics.md) — 理解分布变换和统计量
+- [线性代数](数学基础/Linear_Algebra/Linear_Algebra.md) — PCA 降维的数学基础
 
 ### 进阶方向
 - [监督学习](../Supervised_Learning/Supervised_Learning.md) — 特征工程的下游消费者
 - [无监督学习](../Unsupervised_Learning/Unsupervised_Learning.md) — PCA/t-SNE 作为降维特征
-- [模型评估](../../模型评估/Model_Evaluation.md) — 评估特征工程的效果
-- [MLOps Pipeline](../../模型运维/MLOps_Pipeline.md) — 特征存储与特征管道
+- [模型评估](模型评估/Evaluation_Fundamentals/Model_Evaluation.md) — 评估特征工程的效果
+- [MLOps Pipeline](模型运维/MLOps_Fundamentals/MLOps_Pipeline.md) — 特征存储与特征管道
 
 ---
 

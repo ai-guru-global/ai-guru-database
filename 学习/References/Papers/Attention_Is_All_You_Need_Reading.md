@@ -219,6 +219,122 @@ Transformer 不仅统治 NLP，还扩散到：
 - 注意力的 O(n²) 复杂度能否被根本性解决？
 - 多头注意力学到的模式能否被完全解释？
 
+## Attention 计算的逐步推导
+
+**Step 1: 输入编码**
+输入序列 `X = [x₁, x₂, ..., xₙ]`（每个 xᵢ 是 d_model 维向量）
+
+**Step 2: 线性投影得到 Q/K/V**
+```
+Q = X · WQ    (n × d_model)
+K = X · WK    (n × d_model)
+V = X · WV    (n × d_model)
+```
+
+**Step 3: 计算注意力分数**
+```
+scores = Q · Kᵀ              (n × n 矩阵)
+# 每个元素 scores[i][j] = 第 i 个 token 对第 j 个 token 的关注度
+```
+
+**Step 4: 缩放（为什么除以 √dk？）**
+```
+scaled_scores = scores / √dk
+```
+**为什么除以 √dk？** 当 dk 较大时，Q·K 的点积方差变大，使 softmax 进入饱和区（梯度极小）。除以 √dk 把方差稳定回 1。
+
+**Step 5: Softmax 归一化**
+```
+attention_weights = softmax(scaled_scores)   (n × n, 每行和为 1)
+```
+
+**Step 6: 加权求和**
+```
+output = attention_weights · V    (n × d_model)
+```
+
+## Multi-Head Attention 的"分头"逻辑
+
+**直觉**: 不同的"头"关注不同的关系（语法/语义/共指/长距离依赖等）。
+
+```
+单头: 1 个 (d_model=512) 的 Q/K/V
+多头: h=8 个 (d=64) 的 Q/K/V，并行计算后拼接
+
+head_i = Attention(Q·WQ_i, K·WK_i, V·WV_i)   # 每个 head 是 64 维
+output = Concat(head_1, ..., head_8) · WO     # 拼接回 512 维
+```
+
+**关键**: 总计算量与单头相同（因为 8×64=512），但表达能力更强。
+
+## Positional Encoding 的设计哲学
+
+**为什么需要位置编码？** Self-Attention 本身是置换不变的（permutation-invariant），即打乱输入顺序结果不变。需要额外注入位置信息。
+
+**论文使用的 Sinusoidal 编码**:
+```
+PE(pos, 2i)   = sin(pos / 10000^(2i/d_model))
+PE(pos, 2i+1) = cos(pos / 10000^(2i/d_model))
+```
+
+**优点**:
+- 可以外推到比训练时更长的序列
+- 相对位置可被线性表示（sin/cos 的平移性质）
+
+**后续发展**:
+- **Learned PE**（GPT/BERT）: 学习一个位置嵌入表
+- **ALiBi**: 基于相对距离的线性偏置
+- **RoPE（Rotary PE）**: 旋转位置编码，Llama 系标配
+
+## 三个变体的角色分工
+
+| 变体 | Encoder | Decoder | 典型任务 |
+|------|---------|---------|---------|
+| Encoder-only | ✓ | ✗ | 理解类（BERT 系列） |
+| Decoder-only | ✗ | ✓ | 生成类（GPT 系列） |
+| Encoder-Decoder | ✓ | ✓ | 序列到序列（T5/BART） |
+
+**Masked Self-Attention 的关键**: Decoder 中用三角矩阵 mask 掉"未来"位置，保证生成第 t 个 token 时只能看到前 t-1 个。
+
+## 论文的实验数据回顾
+
+**WMT 2014 英德翻译**:
+- Big 模型: BLEU 28.4（超越之前所有结果）
+- 训练 3.5 天，8×P100 GPU
+
+**WMT 2014 英法翻译**:
+- Big 模型: BLEU 41.8（SOTA）
+- 训练 3.5 天
+
+**训练成本对比**: 相比 RNN/CNN 基线，Transformer 训练时间大幅缩短（并行性优势）。
+
+## 代码实现要点（PyTorch 伪代码）
+
+```python
+class MultiHeadAttention(nn.Module):
+    def forward(self, Q, K, V, mask=None):
+        # 1. 线性投影
+        Q = self.WQ(Q); K = self.WK(K); V = self.WV(V)
+        # 2. 分头
+        Q, K, V = split_heads(Q), split_heads(K), split_heads(V)
+        # 3. Scaled Dot-Product Attention
+        scores = Q @ K.transpose(-2,-1) / math.sqrt(d_k)
+        if mask is not None:
+            scores = scores.masked_fill(mask == 0, -1e9)
+        attn = softmax(scores, dim=-1)
+        output = attn @ V
+        # 4. 合并头 + 输出投影
+        return self.WO(merge_heads(output))
+```
+
+## 与知识库其他内容的连接
+
+- [[学习/concepts/stage2_core_tech|Transformer]] — 概念分阶中的核心概念
+- [[大模型/Transformer|Transformer 详解]] — 知识库的架构章节
+- [[学习/References/Papers/BERT_Reading|BERT 论文]] — Encoder 方向的延伸
+- [[学习/References/Papers/GPT3_Reading|GPT-3 论文]] — Decoder 方向的延伸
+- [[学习/References/books/build-llm-from-scratch-raschka|Raschka 实现 LLM]] — 从零实现 Transformer
+
 ## 如何精读这篇论文
 
 ### 推荐阅读顺序

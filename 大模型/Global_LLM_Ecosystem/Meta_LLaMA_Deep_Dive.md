@@ -1421,7 +1421,7 @@ KV Cache for 10M tokens 需要巨大内存
 
 ### 11.1 关联文档
 
-- **LLaMA 论文深度解读** → [../../论文精读/LLaMA_Deep_Dive.md](../../论文精读/Architecture/LLaMA_Deep_Dive.md)
+- **LLaMA 论文深度解读** → [../../论文精读/LLaMA_Deep_Dive.md](论文精读/Architecture/LLaMA_Deep_Dive.md)
  - LLaMA 1/2/3 论文的核心技术细节、训练方法和实验分析
 
 - **LLM 架构综述** → [../LLM_Architectures/LLM_Architectures.md](../LLM_Architectures/LLM_Architectures.md)

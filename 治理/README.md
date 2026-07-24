@@ -41,10 +41,10 @@ aliases:
 
 | 职能 | 说明 | 核心载体 |
 |------|------|---------|
-| **导航与索引** | 为知识库的所有内容提供入口和地图 | `hot.md`、`ROADMAP.md`、各 `index.md` |
+| **导航与索引** | 为知识库的所有内容提供入口和地图 | `治理/hot.md`、`治理/ROADMAP.md`、各 `index.md` |
 | **规范与约定** | 统一文档格式、目录结构、导入流程、协作规则 | `Document_Templates.md`、`Import_Guide.md`、`AGENTS.md` |
 | **质量保障** | 持续评估内容完整性、概念覆盖度、标签一致性 | `_quality-assessment.md`、`_lint-report.md`、`_content-audit-*` |
-| **规划与路线** | 记录项目发展方向、季度目标和执行状态 | `ROADMAP.md`、`plan/` |
+| **规划与路线** | 记录项目发展方向、季度目标和执行状态 | `治理/ROADMAP.md`、`plan/` |
 | **速查参考** | 提供各领域可快速查阅的技术速查表 | `cheatsheets/` |
 | **知识沉淀** | 维护概念知识图谱和全栈术语字典 | `notes/` |
 
@@ -177,8 +177,8 @@ flowchart LR
 
 | 文件 | 用途 |
 |------|------|
-| [hot.md](./hot.md) | **最近新增与高价值页面**——记录最新的内容更新、概念卡片和大白话专题页，是了解"最近发生了什么"的入口 |
-| [ROADMAP.md](./ROADMAP.md) | **项目路线图**——年度/季度规划、愿景、任务状态跟踪 |
+| [治理/hot.md](./hot.md) | **最近新增与高价值页面**——记录最新的内容更新、概念卡片和大白话专题页，是了解"最近发生了什么"的入口 |
+| [治理/ROADMAP.md](./ROADMAP.md) | **项目路线图**——年度/季度规划、愿景、任务状态跟踪 |
 | [index.md](./index.md) | 治理目录的自动生成索引页 |
 | [log.md](./log.md) | 项目变更日志，记录重大结构和内容变动 |
 
@@ -189,10 +189,10 @@ flowchart LR
 | [AGENTS.md](./AGENTS.md) | **AI Agent 协作指令**——所有 AI agent 在本仓库工作时的统一规则，含生产安全风险评估规范（最高优先级） |
 | [Import_Guide.md](./Import_Guide.md) | **导入指南**——如何将外部资源导入知识库的标准化流程 |
 | [Document_Templates.md](./Document_Templates.md) | **文档模板规范**——各类文档的标准格式模板（速查表、概念页、for_dummy 等） |
-| [CONTRIBUTING.md](./CONTRIBUTING.md) | **贡献指南**——如何 Fork、创建分支、提交 PR |
+| [治理/CONTRIBUTING.md](治理/CONTRIBUTING.md) | **贡献指南**——如何 Fork、创建分支、提交 PR |
 | [Production_Safety_Policy.md](./Production_Safety_Policy.md) | **生产安全策略**——生产环境操作的安全规范 |
 | [_directory-conventions.md](./_meta/_directory-conventions.md) | **目录结构规范**——知识库目录命名和组织约定 |
-| [KNOWN_ISSUES.md](./KNOWN_ISSUES.md) | **已知问题**——当前存在的已知问题和待修复项 |
+| [治理/KNOWN_ISSUES.md](./KNOWN_ISSUES.md) | **已知问题**——当前存在的已知问题和待修复项 |
 | [knowledge_base_metadata.json](./knowledge_base_metadata.json) | 知识库元数据（JSON 格式），供工具链消费 |
 
 ---
@@ -267,7 +267,7 @@ flowchart LR
 
 ## 分析与洞察
 
-- [hot.md](./hot.md) — 最近新增与高价值页面
+- [治理/hot.md](./hot.md) — 最近新增与高价值页面
 - [_insights.md](./_meta/_insights.md) — 知识洞察（中心页面、桥梁节点）
 - [_wiki-status.md](./_meta/_wiki-status.md) — Wiki 当前状态
 - [_wiki-digest.md](./_meta/_wiki-digest.md) — Wiki 周期摘要
@@ -289,15 +289,15 @@ flowchart LR
 
 如果你是第一次接触本知识库：
 
-1. 先看 [hot.md](./hot.md) 了解最近新增的高价值内容
-2. 再看 [ROADMAP.md](./ROADMAP.md) 了解项目整体方向
+1. 先看 [治理/hot.md](./hot.md) 了解最近新增的高价值内容
+2. 再看 [治理/ROADMAP.md](./ROADMAP.md) 了解项目整体方向
 3. 最后看 [notes/KNOWLEDGE_BASE.md](./notes/KNOWLEDGE_BASE.md) 了解知识库的使用方式
 
 ### 2. 贡献内容
 
 如果你想添加或修改内容：
 
-1. 阅读 [CONTRIBUTING.md](./CONTRIBUTING.md) 了解贡献流程
+1. 阅读 [治理/CONTRIBUTING.md](治理/CONTRIBUTING.md) 了解贡献流程
 2. 参考 [Document_Templates.md](./Document_Templates.md) 使用标准模板
 3. 遵循 [Import_Guide.md](./Import_Guide.md) 的导入流程
 4. 遵守 [AGENTS.md](./AGENTS.md) 中的协作规则（特别是生产安全规范）
@@ -338,14 +338,14 @@ flowchart LR
 ├── README.md                          ← 本文件（治理层总入口）
 ├── index.md                           ← 自动生成索引
 ├── AGENTS.md                          ← AI Agent 协作指令（含生产安全规范）
-├── CONTRIBUTING.md                    ← 贡献指南
-├── ROADMAP.md                         ← 项目路线图
-├── hot.md                             ← 最近新增与高价值页面
+├── 治理/CONTRIBUTING.md                    ← 贡献指南
+├── 治理/ROADMAP.md                         ← 项目路线图
+├── 治理/hot.md                             ← 最近新增与高价值页面
 ├── log.md                             ← 项目变更日志
 ├── Import_Guide.md                    ← 导入指南
 ├── Document_Templates.md              ← 文档模板规范
 ├── Production_Safety_Policy.md        ← 生产安全策略
-├── KNOWN_ISSUES.md                    ← 已知问题
+├── 治理/KNOWN_ISSUES.md                    ← 已知问题
 ├── knowledge_base_metadata.json       ← 知识库元数据（JSON）
 │
 ├── _meta/                             ← 元文件归组（26 个）
@@ -414,7 +414,7 @@ flowchart LR
 
 欢迎为 AI Guru 知识库贡献内容！请遵循以下流程：
 
-1. **阅读规范**: [CONTRIBUTING.md](./CONTRIBUTING.md) → [AGENTS.md](./AGENTS.md) → [Document_Templates.md](./Document_Templates.md)
+1. **阅读规范**: [治理/CONTRIBUTING.md](治理/CONTRIBUTING.md) → [AGENTS.md](./AGENTS.md) → [Document_Templates.md](./Document_Templates.md)
 2. **Fork 仓库**: 创建你的 feature 分支
 3. **遵循模板**: 使用 [Document_Templates.md](./Document_Templates.md) 中的标准模板
 4. **导入流程**: 新增外部资源时遵循 [Import_Guide.md](./Import_Guide.md)
@@ -425,8 +425,8 @@ flowchart LR
 
 - `_meta` 元文件（`_` 开头）由工具链或维护者定期更新，贡献者一般无需手动修改
 - 正式报告（如 `Content_Evaluation_2026.md`）按季度更新
-- `hot.md` 和 `log.md` 在每次重大内容更新后手动维护
-- `ROADMAP.md` 在季度规划会议后更新
+- `治理/hot.md` 和 `log.md` 在每次重大内容更新后手动维护
+- `治理/ROADMAP.md` 在季度规划会议后更新
 
 ---
 

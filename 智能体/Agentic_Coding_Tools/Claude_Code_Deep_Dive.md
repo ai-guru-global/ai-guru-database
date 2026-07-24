@@ -14,7 +14,7 @@ sources: []
 ---
 
 > [!warning] 生产安全提示 · Production Safety
-> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../治理/Production_Safety_Policy.md)。
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # Claude Code: Anthropic 官方 Agent 编程 CLI
 
@@ -323,7 +323,7 @@ Claude Code 安全配置
 - [Claude Code 官网](https://claude.ai/code)
 - [Anthropic API 文档](https://docs.anthropic.com/)
 - [OpenCode Deep Dive](./OpenCode_Deep_Dive.md)
-- [Vibe Coding 方法论](../../编程/Methodology/Vibe_Coding_Methodology.md) — 如何系统化地使用 Claude Code 进行 Vibe Coding
+- [Vibe Coding 方法论](编程/Methodology/Vibe_Coding_Methodology.md) — 如何系统化地使用 Claude Code 进行 Vibe Coding
 
 ## 相关链接
 

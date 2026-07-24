@@ -859,7 +859,7 @@ if __name__ == "__main__":
 ### 进阶方向
 - [训练优化](模型训练/Optimization/Training_Optimization_2026.md) — MoE 推理优化
 - [RLHF 与 DPO 深度解读](论文精读/Alignment/RLHF_DPO_Deep_Dive.md) — MoE 模型的对齐
-- [AI 开源项目](智能体/AI_OpenSource_Projects_Overview.md) — 开源 MoE 模型生态
+- [AI 开源项目](智能体/Agent_Foundations/AI_OpenSource_Projects_Overview.md) — 开源 MoE 模型生态
 
 ---
 

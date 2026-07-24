@@ -338,6 +338,39 @@ Nadella 的影响呈现为五个层面：
 - 工会化的压力
 - AI 伦理与商业的平衡
 
+### 《Hit Refresh》的领导哲学
+
+Nadella 2017 年的著作在 2026 年仍是领导力经典：
+
+| 原则 | 说明 |
+|------|------|
+| 成长思维 | "learn-it-all"vs"know-it-all" |
+| 同理心 | 理解客户和员工 |
+| 普遍赋能 | "empower every person" |
+| 转型勇气 | 敢于打破过去 |
+| 文化先行 | 文化变革驱动业务 |
+
+### Nadella 的收购哲学
+
+| 收购 | 年份 | 金额 | 战略价值 |
+|------|------|------|----------|
+| LinkedIn | 2016 | $262 亿 | 职场数据 |
+| GitHub | 2018 | $75 亿 | 开发者平台 |
+| Nuance | 2021 | $197 亿 | 医疗 AI |
+| Activision Blizzard | 2023 | $690 亿 | 游戏+AI |
+| 多家 AI 初创 | 2024-2026 | 累计 $100 亿+ | AI 人才+技术 |
+
+### Nadella 与关键人物的关系网络
+
+| 人物 | 关系 | 2026 互动 |
+|------|------|-----------|
+| [[业界观点/Sam_Altman/index\|Altman]] | 合作者 | 复杂竞合 |
+| [[业界观点/Sundar_Pichai/index\|Pichai]] | 竞争对手 | 云+AI 竞争 |
+| [[业界观点/Bill_Gates/index\|Gates]] | 前任 | 微软顾问 |
+| [[业界观点/Mustafa_Suleyman/index\|Suleyman]] | 下属 | Microsoft AI CEO |
+| [[业界观点/Elon_Musk/index\|Musk]] | 竞争对手 | 多线 |
+| [[业界观点/Andrew_Ng/index\|Ng]] | 行业同行 | 偶有交流 |
+
 ---
 
 ## 关联与延伸

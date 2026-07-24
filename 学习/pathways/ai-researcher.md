@@ -56,7 +56,7 @@ Phase 6: 前沿专题（多模态 / Agent / 世界模型）
 **🔗 深入阅读**：
 - [线性代数（小白版）](数学基础/Linear_Algebra/Linear_Algebra_for_dummy.md) + 完整版
 - [概率统计（小白版）](数学基础/Probability_Statistics/Probability_Statistics_for_dummy.md) + 完整版
-- [优化（小白版）](../../深度学习/Optimization/Optimization_for_dummy.md)
+- [优化（小白版）](深度学习/Optimization/Optimization_for_dummy.md)
 
 **💡 研究者重点**：
 - 矩阵分解（SVD）与表示学习的关系
@@ -214,7 +214,7 @@ Phase 6: 前沿专题（多模态 / Agent / 世界模型）
 - 核心论文：V-JEPA、GAIA-1、World Models Survey
 
 **专题 B: VLA 与具身智能**
-- [机器人与具身智能（2026）](../../强化学习/Robotics_Embodied_AI/Embodied_AI_2026.md)
+- [机器人与具身智能（2026）](强化学习/Robotics_Embodied_AI/Embodied_AI_2026.md)
 - 核心论文：RT-2、OpenVLA、Figure AI 相关工作
 
 **专题 C: AI Safety 与对齐**

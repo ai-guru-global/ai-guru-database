@@ -12,7 +12,7 @@ relationships:
   - target: "概念/Agent/agent-evaluation-benchmarks"
     type: evaluated_by
 sources:
-  - Agent/Agent_Foundations/AI_Agents.md
+  - 智能体/Agent_Foundations/AI_Agents.md
   - "https://arxiv.org/abs/2303.11366"  # Reflexion
   - "https://arxiv.org/abs/2303.17651"  # Self-Refine
 summary: "Agent 反思是让 Agent 评估自身输出、发现错误并自我修正的能力。Reflexion、Self-Refine、Self-Verification 让 Agent 从'一次性回答'进化为'迭代改进'。"

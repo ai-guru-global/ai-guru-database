@@ -128,8 +128,8 @@ Featuretools 是最流行的自动化特征工程库，核心是**深度特征�
 
 ## Related
 
-- [[概念/supervised-learning.md|supervised-learning]]
-- [[概念/unsupervised-learning.md|unsupervised-learning]]
+- [[概念/Math/supervised-learning.md|supervised-learning]]
+- [[概念/Math/unsupervised-learning.md|unsupervised-learning]]
 - [[机器学习/Anomaly_Detection/Anomaly_Detection.md|Anomaly_Detection]]
 - [[机器学习/Anomaly_Detection/Anomaly_Detection_for_dummy.md|Anomaly_Detection_for_dummy]]
 - [[机器学习/AutoML/AutoML.md|AutoML]]

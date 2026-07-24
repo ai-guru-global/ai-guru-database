@@ -142,12 +142,12 @@ Suleyman 的核心论点：
 
 ## 交叉引用 (Cross-References)
 
-- [Talks 主题合成 2026](../Talks_Synthesis_2026.md) — 查看 Suleyman 在各主题中的立场
+- [Talks 主题合成 2026](业界观点/Talks_Synthesis/Talks_Synthesis_2026.md) — 查看 Suleyman 在各主题中的立场
 - [[业界观点/Sundar_Pichai/about]] — Pichai (Google/Alphabet) 与 Suleyman 有 DeepMind 共同背景
 - [[业界观点/Yoshua_Bengio/about]] — Bengio 与 Suleyman 同样主张全球 AI 治理框架
 - [[业界观点/Bill_Gates/about]] — Gates 与 Suleyman 在 Microsoft 有间接关联
-- [AI 伦理与社会](../../入门/AI_Ethics_Society.md) — AI 治理、遏制与监管
-- [AI 未来趋势](../../入门/AI_Future_Trends.md) — 技术浪潮与社会适应
+- [AI 伦理与社会](入门/Ethics_and_Future/AI_Ethics_Society.md) — AI 治理、遏制与监管
+- [AI 未来趋势](入门/Ethics_and_Future/AI_Future_Trends.md) — 技术浪潮与社会适应
 
 ---
 

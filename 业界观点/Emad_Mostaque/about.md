@@ -115,9 +115,9 @@ Mostaque 的职业生涯充满争议：被指控夸大学历背景（声称拥�
 
 ## 交叉引用 (Cross-References)
 
-- [Talks 主题合成 2026](业界观点/Talks_Synthesis_2026.md) — 查看 Emad Mostaque 在 Scaling Laws、开源 vs 闭源、AI 安全等主题中的立场
-- [AI 历史时间线](入门/AI_History_Timeline.md) — Stable Diffusion 发布与 AI 图像生成爆发
-- [AI 未来趋势](入门/AI_Future_Trends.md) — 去中心化 AI 与边缘推理的趋势
+- [Talks 主题合成 2026](业界观点/Talks_Synthesis/Talks_Synthesis_2026.md) — 查看 Emad Mostaque 在 Scaling Laws、开源 vs 闭源、AI 安全等主题中的立场
+- [AI 历史时间线](入门/Fundamentals/AI_History_Timeline.md) — Stable Diffusion 发布与 AI 图像生成爆发
+- [AI 未来趋势](入门/Ethics_and_Future/AI_Future_Trends.md) — 去中心化 AI 与边缘推理的趋势
 - [[业界观点/Yann_LeCun/about]] — 同为开源 AI 倡导者，路线高度一致
 - [[业界观点/Sam_Altman/about]] — 闭源 vs 开源的核心对立面
 - [[业界观点/Wenfeng_Liang/about]] — DeepSeek 的全面开源策略，类似理念的中国实践

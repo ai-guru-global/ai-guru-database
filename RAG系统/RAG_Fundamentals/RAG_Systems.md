@@ -503,18 +503,18 @@ evaluation_prompt = f"""
 
 ### 前置知识
 
-- [Transformer 架构](../大模型/Transformer_Revolution/Transformer_Revolution.md) - 理解 Embedding 和 Attention 机制
-- [向量检索基础](../数学基础/Data_Structures_Algorithms/Data_Structures_Algorithms.md) - HNSW、IVF 索引原理
-- [自然语言处理基础](../大模型/LLM_Architectures/LLM_Architectures.md) - 文本预处理和分词
+- [Transformer 架构](大模型/Transformer_Revolution/Transformer_Revolution.md) - 理解 Embedding 和 Attention 机制
+- [向量检索基础](数学基础/Data_Structures_Algorithms/Data_Structures_Algorithms.md) - HNSW、IVF 索引原理
+- [自然语言处理基础](大模型/LLM_Architectures/LLM_Architectures.md) - 文本预处理和分词
 
 ### 进阶推荐
 
-- [LLM 推理引擎选型指南](../部署推理/Inference_Engines/LLM_Inference_Engine_Selection_Guide.md) - RAG 系统的推理引擎选型
-- [vLLM Deep Dive](../部署推理/Inference_Engines/vLLM_Deep_Dive.md) - 通用生产级 RAG 推理引擎
-- [SGLang Deep Dive](../部署推理/Inference_Engines/SGLang_Deep_Dive.md) - 多轮 / RAG 前缀缓存优化
-- [模型部署与推理](../部署推理/Deployment_Inference.md) - RAG 系统的生产环境部署
-- [Prompt 工程](../大模型/Prompt_Engineering/Prompt_Engineering.md) - 优化 RAG 的 Prompt 设计
-- [模型评估](../模型评估/Model_Evaluation.md) - RAG 系统的效果评估方法
+- [LLM 推理引擎选型指南](部署推理/Inference_Engines/LLM_Inference_Engine_Selection_Guide.md) - RAG 系统的推理引擎选型
+- [vLLM Deep Dive](部署推理/Inference_Engines/vLLM_Deep_Dive.md) - 通用生产级 RAG 推理引擎
+- [SGLang Deep Dive](部署推理/Inference_Engines/SGLang_Deep_Dive.md) - 多轮 / RAG 前缀缓存优化
+- [模型部署与推理](部署推理/Deployment_Fundamentals/Deployment_Inference.md) - RAG 系统的生产环境部署
+- [Prompt 工程](大模型/Prompt_Engineering/Prompt_Engineering.md) - 优化 RAG 的 Prompt 设计
+- [模型评估](模型评估/Evaluation_Fundamentals/Model_Evaluation.md) - RAG 系统的效果评估方法
 
 ## 8. 面试高频问题 (Interview FAQs)
 
@@ -664,7 +664,7 @@ evaluation_prompt = f"""
 - [[RAG系统/README_Advanced]] — RAG高级实践 2026 (共享: embedding, rag, retrieval, vector-database)
 - [[RAG系统/RAG_Frameworks/Spring_AI_RAG_Deep_Dive]] — Spring AI RAG 深度解析 (共享: embedding, rag, retrieval, vector-database)
 - [[治理/rag-vector-database]] — RAG 系统 × 向量数据库 (共享: embedding, rag, retrieval, vector-database)
-- [[RAG系统/RAG_Systems_for_dummy.md|RAG_Systems_for_dummy]]
+- [[RAG系统/RAG_Fundamentals/RAG_Systems_for_dummy.md|RAG_Systems_for_dummy]]
 - [[RAG系统/Advanced_RAG/RAG_Advanced_2026.md|RAG_Advanced_2026]]
 - [[RAG系统/Vector_Databases/Chroma_Deep_Dive.md|Chroma_Deep_Dive]]
 - [[RAG系统/Vector_Databases/Qdrant_Deep_Dive.md|Qdrant_Deep_Dive]]

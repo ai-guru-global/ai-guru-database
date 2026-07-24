@@ -113,9 +113,9 @@ updated: 2026-07-21T00:00:00Z
 - [[机器学习/Feature_Engineering/Feature_Engineering]] — 特征工程 (Feature Engineering) (共享: ml, unsupervised)
 - [[机器学习/Feature_Engineering/Feature_Engineering_for_dummy]] — 特征工程 - 小白版 (共享: ml, unsupervised)
 - [[机器学习/ML-in-nutshell]] — 机器学习速成指南 (共享: ml, unsupervised)
-- [[概念/time-series-analysis.md|time-series-analysis]]
-- [[概念/automl.md|automl]]
-- [[概念/ensemble-learning.md|ensemble-learning]]
+- [[概念/Math/time-series-analysis.md|time-series-analysis]]
+- [[概念/General/automl.md|automl]]
+- [[概念/Math/ensemble-learning.md|ensemble-learning]]
 
 ---
 

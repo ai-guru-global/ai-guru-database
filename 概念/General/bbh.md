@@ -13,8 +13,8 @@ relationships:
     type: differs_from
 sources:
   - 模型评估/Benchmarks/LLM_Benchmark_Suite_2026.md
-  - 模型评估/Model_Evaluation.md
-  - 模型评估/Evaluation-in-nutshell.md
+  - 模型评估/Evaluation_Fundamentals/Model_Evaluation.md
+  - 模型评估/Evaluation_Fundamentals/Evaluation-in-nutshell.md
 summary: "BBH（Big-Bench Hard）是从 Google Big-Bench 中挑选的 23 个困难任务子集，专门测试大模型在复杂推理、多步思考和少样本学习上的能力。它被认为是衡量模型‘聪明程度’的重要基准之一。"
 provenance:
   extracted: 0.8

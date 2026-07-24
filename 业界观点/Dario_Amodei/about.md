@@ -124,11 +124,11 @@ Amodei 是少数公开讨论 AI 对劳动力市场冲击的 AI CEO 之一。他�
 
 ## 交叉引用 (Cross-References)
 
-- [Talks 主题合成 2026](../Talks_Synthesis_2026.md) -- Scaling Laws、开源 vs 闭源、AI 安全、Agent 未来等主题中 Amodei 的立场
+- [Talks 主题合成 2026](业界观点/Talks_Synthesis/Talks_Synthesis_2026.md) -- Scaling Laws、开源 vs 闭源、AI 安全、Agent 未来等主题中 Amodei 的立场
 - [Dario Amodei 金句集](./sayings.md) -- 更多金句与权威来源链接
-- [AI 历史时间线](../../入门/AI_History_Timeline.md) -- Anthropic 创立与 Claude 系列发布
-- [AI 伦理与社会](../../入门/AI_Ethics_Society.md) -- Constitutional AI 与 AI 安全治理
-- [AI 未来趋势](../../入门/AI_Future_Trends.md) -- AGI 竞赛与安全并行发展
+- [AI 历史时间线](入门/Fundamentals/AI_History_Timeline.md) -- Anthropic 创立与 Claude 系列发布
+- [AI 伦理与社会](入门/Ethics_and_Future/AI_Ethics_Society.md) -- Constitutional AI 与 AI 安全治理
+- [AI 未来趋势](入门/Ethics_and_Future/AI_Future_Trends.md) -- AGI 竞赛与安全并行发展
 - [AI 伦理与安全](../../伦理安全/README.md) -- AI 对齐、可解释性与安全评估
 - [LLM 基础](../../大模型/README.md) -- Claude 模型架构与技术特点
 - [RAG 系统](../../RAG系统/README.md) -- Claude 在企业 RAG 场景中的应用

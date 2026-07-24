@@ -359,8 +359,8 @@ vLLM (PagedAttention):
 
 ### 📄 进阶阅读
 - [模型部署与推理加速(完整版)](./Deployment_Inference.md) - 技术细节和公式
-- [RAG 系统 - 小白版](../RAG系统/RAG_Systems_for_dummy.md) - 推理的实战应用
-- [MLOps 流水线 - 小白版](../模型运维/MLOps_Pipeline_for_dummy.md) - 部署自动化
+- [RAG 系统 - 小白版](RAG系统/RAG_Fundamentals/RAG_Systems_for_dummy.md) - 推理的实战应用
+- [MLOps 流水线 - 小白版](模型运维/MLOps_Fundamentals/MLOps_Pipeline_for_dummy.md) - 部署自动化
 
 ### 🛠️ 动手实践
 - [vLLM 官方教程](https://docs.vllm.ai/en/latest/getting_started/quickstart.html)
@@ -368,8 +368,8 @@ vLLM (PagedAttention):
 - [Hugging Face 量化指南](https://huggingface.co/docs/transformers/main/quantization)
 
 ### 🎓 相关知识
-- [Transformer 架构 - 小白版](../大模型/Transformer_Revolution/Transformer_Revolution_for_dummy.md)
-- [神经网络核心 - 小白版](../深度学习/Neural_Network_Core/Neural_Network_Core_for_dummy.md)
+- [Transformer 架构 - 小白版](大模型/Transformer_Revolution/Transformer_Revolution_for_dummy.md)
+- [神经网络核心 - 小白版](深度学习/Neural_Network_Core/Neural_Network_Core_for_dummy.md)
 
 ---
 

@@ -65,9 +65,9 @@ sources: []
 
 ## 与其他章节的关联
 
-- [AI 历史](../入门/AI_History_Timeline.md) — 演讲者的贡献与 AI 发展时间线
-- [AI 伦理](../入门/AI_Ethics_Society.md) — AI 安全与治理观点
-- [AI 未来趋势](../入门/AI_Future_Trends.md) — 行业领袖的前瞻判断
+- [AI 历史](入门/Fundamentals/AI_History_Timeline.md) — 演讲者的贡献与 AI 发展时间线
+- [AI 伦理](入门/Ethics_and_Future/AI_Ethics_Society.md) — AI 安全与治理观点
+- [AI 未来趋势](入门/Ethics_and_Future/AI_Future_Trends.md) — 行业领袖的前瞻判断
 
 ---
 

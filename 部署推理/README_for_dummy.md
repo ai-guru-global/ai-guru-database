@@ -219,12 +219,12 @@ FP16 (16位) → INT8 (8位) → INT4 (4位)
 
 ---
 
-*本文是 [README.md](./README.md) 的简化版，适合零基础读者。*
+*本文是 [README.md](README.md) 的简化版，适合零基础读者。*
 
 ## Related
 
-- [[部署推理/Deployment_Inference.md|Deployment_Inference]]
-- [[部署推理/Deployment_Inference_2026.md|Deployment_Inference_2026]]
-- [[部署推理/Deployment_Inference_for_dummy.md|Deployment_Inference_for_dummy]]
-- [[部署推理/Inference-in-nutshell.md|Inference-in-nutshell]]
+- [[部署推理/Deployment_Fundamentals/Deployment_Inference.md|Deployment_Inference]]
+- [[部署推理/Deployment_Fundamentals/Deployment_Inference_2026.md|Deployment_Inference_2026]]
+- [[部署推理/Deployment_Fundamentals/Deployment_Inference_for_dummy.md|Deployment_Inference_for_dummy]]
+- [[部署推理/Deployment_Fundamentals/Inference-in-nutshell.md|Inference-in-nutshell]]
 - [[部署推理/Inference_Engines/JVM_AI_Deployment.md|JVM_AI_Deployment]]

@@ -62,8 +62,8 @@ Phase 5 企业级实践（安全 + 部署 + 多云）
 
 **🔗 深入阅读**：
 - [LLM 架构（小白版）](大模型/LLM_Architectures/LLM_Architectures_for_dummy.md)
-- [RAG 系统入门](RAG系统/RAG_Systems_for_dummy.md)
-- [AI 系统架构全景图](../../架构基建/Architecture_Overview/AI_System_Architecture_2026.md)
+- [RAG 系统入门](RAG系统/RAG_Fundamentals/RAG_Systems_for_dummy.md)
+- [AI 系统架构全景图](架构基建/Architecture_Overview/AI_System_Architecture_2026.md)
 
 **💡 重点理解**：
 - LLM 的工作原理：Token、上下文窗口、Temperature
@@ -163,7 +163,7 @@ public class ChatController {
 **🎯 目标**：掌握 Agent 编排、MCP 协议、多步骤工作流。
 
 **📚 核心阅读**：
-- [Spring AI 深度解析 - MCP 部分](../../数学基础/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md#9-mcp-协议集成)
+- [Spring AI 深度解析 - MCP 部分](数学基础/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md#9-mcp-协议集成)
 - [Agent Skills 深度解析](智能体/Agent_Skills/Agent_Skills_Deep_Dive.md)
 
 **🔧 实践任务**：
@@ -190,7 +190,7 @@ public class ChatController {
 - [Spring AI 网关与安全](架构基建/AI_Gateway/Spring_AI_Gateway_Security.md)（重点）
 - [JVM AI 部署与推理](部署推理/Inference_Engines/JVM_AI_Deployment.md)（重点）
 - [Java AI 测试实践](测试/Testing_Frameworks/Java_AI_Testing.md)（重点）
-- [Java Cloud SDK 指南](项目/Cloud_Ops_智能体/Java_Cloud_SDK_Guide.md)（选读）
+- [Java Cloud SDK 指南](模型运维/Cloud_Ops_Agent/Java_Cloud_SDK_Guide.md)（选读）
 
 **🔧 实践任务**：
 

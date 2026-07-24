@@ -133,9 +133,9 @@ MiniMax 在相对较少的融资规模下做出了与头部公司比肩的全模
 
 ## 交叉引用 (Cross-References)
 
-- [MiniMax 技术全景](../../大模型/Chinese_LLM_Ecosystem/MiniMax_Deep_Dive.md)
-- [中国大模型生态全景](../../大模型/Chinese_LLM_Ecosystem/README.md)
-- [长上下文模型 2026](../../大模型/LLM_Architectures/Long_Context_Models_2026.md)
+- [MiniMax 技术全景](大模型/Chinese_LLM_Ecosystem/MiniMax_Deep_Dive.md)
+- [中国大模型生态全景](大模型/Chinese_LLM_Ecosystem/README.md)
+- [长上下文模型 2026](大模型/LLM_Architectures/Long_Context_Models_2026.md)
 - [[业界观点/Zhilin_Yang/about]] — Kimi 与 MiniMax 在长上下文上的技术竞赛
 - [[业界观点/Wenfeng_Liang/about]] — DeepSeek 与 MiniMax 的效率路线对比
 - [[业界观点/Jie_Tang/about]] — 智谱与 MiniMax 的多模态竞争

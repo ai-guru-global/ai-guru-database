@@ -52,15 +52,15 @@ tags: [system-visualization, index, navigation]
 
 ### 3.2 推理服务可视化
 
-详见 [[可视化/System_Viz/Inference_Serving_Visualization\|推理服务可视化]]。
+详见 [[可视化/System_Viz/Inference_Serving_Visualization|推理服务可视化]]。
 
 ### 3.3 模型架构可视化
 
-详见 [[可视化/System_Viz/Model_Architecture_Viz\|模型架构可视化]]。
+详见 [[可视化/System_Viz/Model_Architecture_Viz|模型架构可视化]]。
 
 ### 3.4 知识图谱可视化
 
-详见 [[可视化/System_Viz/Knowledge_Graph_Visualization\|知识图谱可视化]]。
+详见 [[可视化/System_Viz/Knowledge_Graph_Visualization|知识图谱可视化]]。
 
 ---
 
@@ -189,13 +189,13 @@ flowchart LR
 
 ## 关联
 
-- [[可视化/index\|可视化首页]]
-- [[可视化/Best_Practices/index\|Best Practices]]
-- [[架构基建/index\|架构基建]]
-- [[模型运维/index\|模型运维]]
-- [[部署推理/index\|部署推理]]
-- [[RAG系统/index\|RAG 系统]]
-- [[工具/index\|工具]]
+- [[可视化/index|可视化首页]]
+- [[可视化/Best_Practices/index|Best Practices]]
+- [[架构基建/index|架构基建]]
+- [[模型运维/index|模型运维]]
+- [[部署推理/index|部署推理]]
+- [[RAG系统/index|RAG 系统]]
+- [[工具/index|工具]]
 
 ---
 

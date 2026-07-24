@@ -46,7 +46,7 @@ sources: []
 | 监督学习 (Supervised Learning) | 入门 | 分类、回归、集成学习（XGBoost/LightGBM），掌握有标签数据建模 | [Supervised_Learning.md](./Supervised_Learning/Supervised_Learning.md) |
 | 特征工程 (Feature Engineering) | 进阶 | 特征选择、特征构造、特征编码，提升模型性能的关键技能 | [Feature_Engineering/](./Feature_Engineering/) |
 | 无监督学习 (Unsupervised Learning) | 进阶 | 聚类（K-Means/DBSCAN）、降维（PCA/t-SNE），挖掘无标签数据 | [Unsupervised_Learning.md](./Unsupervised_Learning/Unsupervised_Learning.md) |
-| **经典算法速查表** | **入门** | **12 个经典 ML 算法对比，用类比建立算法选择直觉** | **[ML_Algorithms_Cheatsheet.md](./ML_Algorithms_Cheatsheet.md)** |
+| **经典算法速查表** | **入门** | **12 个经典 ML 算法对比，用类比建立算法选择直觉** | **[ML_Algorithms_Cheatsheet.md](机器学习/ML_Fundamentals/ML_Algorithms_Cheatsheet.md)** |
 
 ### 进阶主题
 
@@ -73,9 +73,9 @@ sources: []
 
 ## 前置知识 (Prerequisites)
 
-- **必修**: [线性代数](../数学基础/Linear_Algebra/Linear_Algebra.md)、[概率统计](../数学基础/Probability_Statistics/Probability_Statistics.md)
+- **必修**: [线性代数](数学基础/Linear_Algebra/Linear_Algebra.md)、[概率统计](数学基础/Probability_Statistics/Probability_Statistics.md)
 - **推荐**: Python 数据分析库（Pandas、Scikit-learn）
-- **可选**: [数据结构与算法](../数学基础/Data_Structures_Algorithms/Data_Structures_Algorithms.md)（理解树模型）
+- **可选**: [数据结构与算法](数学基础/Data_Structures_Algorithms/Data_Structures_Algorithms.md)（理解树模型）
 
 ## 关键术语速查 (Key Terms)
 
@@ -114,7 +114,7 @@ sources: []
 - [[机器学习/Supervised_Learning/Supervised_Learning]] — Supervised_Learning
 - [[机器学习/Ensemble_Learning/Ensemble_Learning_for_dummy]] — Ensemble_Learning_for_dummy
 - [[机器学习/README_for_dummy.md|README_for_dummy]]
-- [[概念/feature-engineering.md|feature-engineering]]
+- [[概念/Math/feature-engineering.md|feature-engineering]]
 
 ## 相关页面
 - [[机器学习/Bayesian_Methods/Bayesian_Methods_Deep_Dive|贝叶斯方法深度解读: 从贝叶斯定理到概率编程]]

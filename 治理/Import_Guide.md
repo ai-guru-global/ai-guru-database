@@ -15,7 +15,7 @@ sources: []
 ---
 
 > [!warning] 生产安全提示 · Production Safety
-> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../治理/Production_Safety_Policy.md)。
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # 📥 导入指南
 
@@ -145,7 +145,7 @@ zip -r ai-guru-claude.zip claude_upload/
 - `AI入门/AI_Glossary.md`
 - `大模型/LLM_Architectures/LLM_Architectures.md`
 - `大模型/Prompt_Engineering/Prompt-Engineering-in-nutshell.md`
-- `RAG系统/RAG-in-nutshell.md`
+- `RAG系统/RAG_Fundamentals/RAG-in-nutshell.md`
 - `强化学习/AI_Agents/Agent-in-nutshell.md`
 
 ---

@@ -448,4 +448,4 @@ Agent 的权限要小心配置！
 - [[18_Cloud_Ops_Agent/docs/architecture/index]] — 云产品运维 Agent 架构设计指南 (Architecture) (共享: ai-agents, automation, cloud-ops, devops, sre)
 - [[18_Cloud_Ops_Agent/docs/corpus/index]] — 云产品运维 Agent 语料工程指南 (Corpus Engineering) (共享: ai-agents, automation, cloud-ops, devops, sre)
 - [[18_Cloud_Ops_Agent/docs/development/index]] — 云产品运维 Agent 研发指南 (Development) (共享: ai-agents, automation, cloud-ops, devops, sre)
-- [[18_Cloud_Ops_Agent/Mobile_AI_Ops_Design.md|Mobile_AI_Ops_Design]]
+- [[模型运维/Cloud_Ops_Agent/Mobile_AI_Ops_Design.md|Mobile_AI_Ops_Design]]

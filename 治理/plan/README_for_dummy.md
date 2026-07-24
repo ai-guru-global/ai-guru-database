@@ -28,8 +28,8 @@ sources: []
 
 | 文档 | 内容 | 用途 |
 |------|------|------|
-| [Project Comprehensive Evaluation 2026](../治理/Project_Comprehensive_Evaluation_2026.md) | 从角色视角看项目：Agent 工程师、大模型工程师等视角的评估 | 了解不同角色的需求 |
-| [Project Structure Evaluation 2026](../治理/Project_Structure_Evaluation_2026.md) | 数据驱动的项目结构评估：结构一致性、内容深度、交叉引用 | 了解内容健康度 |
+| [Project Comprehensive Evaluation 2026](治理/Project_Comprehensive_Evaluation_2026.md) | 从角色视角看项目：Agent 工程师、大模型工程师等视角的评估 | 了解不同角色的需求 |
+| [Project Structure Evaluation 2026](治理/Project_Structure_Evaluation_2026.md) | 数据驱动的项目结构评估：结构一致性、内容深度、交叉引用 | 了解内容健康度 |
 | Implementation Plan 2026 (已归档) | 2026 年实施计划已全部完成，4 阶段 19 项任务已执行 | 历史记录 |
 
 ## 评估体系
@@ -131,19 +131,19 @@ Q4-P2 (已完成 ✅)
 
 - 想贡献内容？→ 查看 [治理/Import_Guide.md](../Import_Guide.md)
 - 想学习？→ 查看 [90_Learn/README.md](../学习/README.md)
-- 想了解整体结构？→ 查看 [治理/notes/KNOWLEDGE_BASE.md](../治理/notes/KNOWLEDGE_BASE.md)
+- 想了解整体结构？→ 查看 [治理/notes/KNOWLEDGE_BASE.md](治理/notes/KNOWLEDGE_BASE.md)
 
 ---
 
-*本文是 [README.md](./README.md) 的简化版，适合零基础读者。*
+*本文是 [README.md](README.md) 的简化版，适合零基础读者。*
 
 ## Related
 
-- [[治理/plan/Content_Evaluation_2026.md|Content_Evaluation_2026]]
+- [[治理/Content_Evaluation_2026.md|Content_Evaluation_2026]]
 - [[治理/plan/README|项目规划]]
-- [[治理/plan/Project_Comprehensive_Evaluation_2026.md|Project_Comprehensive_Evaluation_2026]]
-- [[治理/plan/Project_Structure_Evaluation_2026.md|Project_Structure_Evaluation_2026]]
-- [[治理/agents-reinforcement-learning.md|agents-reinforcement-learning]]
+- [[治理/Project_Comprehensive_Evaluation_2026.md|Project_Comprehensive_Evaluation_2026]]
+- [[治理/Project_Structure_Evaluation_2026.md|Project_Structure_Evaluation_2026]]
+- [[智能体/Agent_Foundations/agents-reinforcement-learning.md|agents-reinforcement-learning]]
 
 ## 核心知识体系
 

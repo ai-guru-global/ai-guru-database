@@ -28,7 +28,7 @@ sources: []
 | 顶层章节连续 00-21，无缺口 | ✅ |
 | 知识图谱层 概念/治理/参考 | ✅ |
 | 嵌套子目录去编号前缀（Agent_Evaluation/OpenClaw_Ecosystem/Theory/Tools/Practice/Methodology） | ✅ |
-| 去重（根 _evaluation / _staging hot.md） | ✅ |
+| 去重（根 _evaluation / _staging 治理/hot.md） | ✅ |
 | 治理 错位文件归位（synthesis-*→综合，cheatsheet-*→治理/cheatsheets） | ✅ |
 | wikilink/内链/反引号/裸路径全量重写（1161 文件） | ✅ |
 | Web/src 路径与 categoryId 同步 | ✅ |

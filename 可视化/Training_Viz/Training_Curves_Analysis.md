@@ -263,7 +263,7 @@ for step, batch in enumerate(loader):
     wandb.log({"loss": loss, "grad_norm": grad_norm}, step=step)
 ```
 
-详见 [[测试/Weights_Biases/index|Weights & Biases]]。
+详见 [[测试/Weights_Biases_Deep_Dive|Weights & Biases]]。
 
 ---
 
@@ -458,7 +458,7 @@ loss       ──── 几乎不动
 - [[可视化/Training_Viz/Neural_Network_Visualization_Guide|神经网络可视化]]
 - [[模型训练/index|模型训练]]
 - [[深度学习/index|深度学习]]
-- [[测试/Weights_Biases/index|Weights & Biases]]
+- [[测试/Weights_Biases_Deep_Dive|Weights & Biases]]
 - [[数学基础/index|数学基础]]
 
 ---

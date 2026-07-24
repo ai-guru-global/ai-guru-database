@@ -132,7 +132,7 @@ class AgentBoundaryTests:
 
 - [[测试/AI_Test_Framework_2026]]
 - [[智能体/Agent_Evaluation/Testing_Methodologies/Testing_Framework]]
-- [[测试/AI-Testing-in-nutshell.md]]
+- [[测试/Testing_Fundamentals/AI-Testing-in-nutshell.md]]
 - [[智能体/Agent_Evaluation/Agent_Evaluation_Guide]]
 - [[治理/agent-evaluation-model-evaluation]]
 

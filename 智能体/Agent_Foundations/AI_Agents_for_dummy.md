@@ -742,9 +742,9 @@ agent.run("帮我规划明天的行程")
 ## 想深入了解?
 
 **下一步阅读**:
-- 📘 [LLM架构 - 小白版](../../大模型/LLM_Architectures/LLM_Architectures_for_dummy.md) - 理解 Agent 的"大脑"
-- 📘 [Prompt工程 - 小白版](../../大模型/Prompt_Engineering/Prompt_Engineering_for_dummy.md) - 设计 Agent 的系统提示
-- 📘 [RAG系统 - 小白版](../../RAG系统/RAG_Systems_for_dummy.md) - Agent 的记忆系统
+- 📘 [LLM架构 - 小白版](大模型/LLM_Architectures/LLM_Architectures_for_dummy.md) - 理解 Agent 的"大脑"
+- 📘 [Prompt工程 - 小白版](大模型/Prompt_Engineering/Prompt_Engineering_for_dummy.md) - 设计 Agent 的系统提示
+- 📘 [RAG系统 - 小白版](RAG系统/RAG_Fundamentals/RAG_Systems_for_dummy.md) - Agent 的记忆系统
 
 **查看原版文档**(需要技术基础):
 - 📄 [AI智能体(原版)](./AI_Agents.md) - 包含 ReAct 实现代码和架构设计
@@ -755,9 +755,9 @@ agent.run("帮我规划明天的行程")
 - 🔗 LangChain Hub - Agent 示例库
 
 **相关主题**:
-- 🔙 [深度强化学习 - 小白版](../../强化学习/Deep_RL/Deep_RL_for_dummy.md) - Agent 决策的理论基础
-- 🔙 [Transformer - 小白版](../../大模型/Transformer_Revolution/Transformer_Revolution_for_dummy.md) - Agent 的语言理解能力
-- 🔜 [部署与推理 - 小白版](../../部署推理/Deployment_Inference_for_dummy.md) - Agent 的生产部署
+- 🔙 [深度强化学习 - 小白版](强化学习/Deep_RL/Deep_RL_for_dummy.md) - Agent 决策的理论基础
+- 🔙 [Transformer - 小白版](大模型/Transformer_Revolution/Transformer_Revolution_for_dummy.md) - Agent 的语言理解能力
+- 🔜 [部署与推理 - 小白版](部署推理/Deployment_Fundamentals/Deployment_Inference_for_dummy.md) - Agent 的生产部署
 
 ---
 

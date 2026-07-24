@@ -32,7 +32,7 @@ aliases:
 | **开源协议** | **Apache-2.0**(完全开源) |
 | **治理** | **CNCF Tags**(topic: `tag-runtime`);模型基于 [CNI](https://github.com/containernetworking/cni) |
 | **最新版本** | v1.1.0(2025-12-10);规范 `cdiVersion` 当前到 0.6.0+ |
-| **社区** | Issues / PR 在 GitHub;贡献见 CONTRIBUTING.md |
+| **社区** | Issues / PR 在 GitHub;贡献见 治理/CONTRIBUTING.md |
 
 ## 设备命名约定(规范核心)
 

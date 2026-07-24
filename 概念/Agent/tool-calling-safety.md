@@ -12,7 +12,7 @@ relationships:
   - target: "概念/red-teaming"
     type: tested_by
 sources:
-  - Agent/Agent_Skills/Agent_Skills_Multi_Role_Analysis.md
+  - 智能体/Agent_Skills/Agent_Skills_Multi_Role_Analysis.md
   - 伦理安全/LLM_Security_Defense_Guide.md
   - Agent/Agentic_Design_Patterns_AndrewNg.md
 summary: "工具调用安全是指防止 AI Agent 在调用外部工具（函数、API、数据库、代码执行）时造成危害的一整套防护措施。核心风险包括越权操作、数据泄露、恶意输入、错误调用链和不可控的自主行为。"
@@ -33,7 +33,7 @@ aliases:
 ---
 
 > [!warning] 生产安全提示 · Production Safety
-> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../治理/Production_Safety_Policy.md)。
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # 工具调用安全
 

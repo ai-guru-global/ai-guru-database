@@ -1,210 +1,168 @@
 ---
-title: Andrej Karpathy
-type: index
+title: Andrej Karpathy 人物索引
+category: 19-talks-andrej-karpathy
+tags: ["talks", "index", "leaders", "Tesla", "OpenAI", "Software-2.0", "Vibe-Coding", "AI-education", "autonomous-driving", "nanoGPT", "CS231n"]
+summary: "> **一句话概括**: 前 Tesla AI 总监、OpenAI 创始成员、知名 AI 教育者——'Software 2.0'概念提出者、'Vibe Coding'术语首创者，将前沿 AI 研究转化为大众可及教育内容的标杆人物。"
 created: 2026-07-02
-updated: 2026-07-11
-sources: []
+updated: 2026-07-23
+tier: supporting
+aliases:
+  - Andrej Karpathy 索引
+  - Software 2.0 提出者
+sources:
+  - "https://karpathy.medium.com/software-2-0-a64152b37c35"
+  - "https://github.com/karpathy/nanoGPT"
 ---
 
-# Andrej Karpathy
+# Andrej Karpathy 人物索引
 
-前 Tesla AI 总监、OpenAI 创始成员、知名 AI 教育者——"Software 2.0" 概念提出者、"Vibe Coding" 术语首创者，将前沿 AI 研究转化为大众可及的教育内容的标杆人物。
+> **一句话概括**: 前 Tesla AI 总监（2017-2022）、OpenAI 创始成员（2015-2017, 2023-2024）、知名 AI 教育者——"Software 2.0"概念提出者、"Vibe Coding"术语首创者，Stanford CS231n 课程的缔造者，将自动驾驶、大模型和深度学习教育融为一体，是全球最具影响力的 AI 实践型布道者之一。
+
+---
+
+## 人物定位
+
+Andrej Karpathy 是 AI 教育与实践的标杆。他在 [[业界观点/Fei_Fei_Li/about|Fei-Fei Li]] 指导下创建 Stanford CS231n 课程，成为全球深度学习教育标杆。担任 Tesla AI 总监期间领导自动驾驶视觉感知系统，推动纯视觉（Pure Vision）路线。他 2017 年提出"Software 2.0"概念（神经网络权重即新型源代码），深刻影响行业对 AI 工程化的认知。2025 年他提出"Vibe Coding"术语，描述用自然语言指挥 AI 编程的新范式，迅速成为行业热词。
+
+| 维度 | 定位 |
+|------|------|
+| 现任 | 独立 AI 教育者、Eureka Labs 创始人 |
+| 前职 | Tesla AI 总监（2017-2022）、OpenAI 创始成员 |
+| 核心信念 | Software 2.0 + 开源教育 |
+| 安全立场 | 务实 |
+| 开源立场 | 坚决支持（nanoGPT / llm.c）|
+| 独特贡献 | Software 2.0 + Vibe Coding + CS231n |
+
+---
 
 ## 文件导航
 
-| 文件 | 说明 | 适用人群 |
+| 文件 | 内容 | 适用人群 |
 |------|------|----------|
-| [[业界观点/Andrej_Karpathy/about|about]] | 人物简介 | 所有读者 |
-| [[业界观点/Andrej_Karpathy/sayings|sayings]] | 金句语录 | 需要引用/了解观点者 |
-| [[业界观点/Andrej_Karpathy/youtube_channel|youtube_channel]] | YouTube 频道 | 视频学习者 |
+| [[业界观点/Andrej_Karpathy/about\|about]] | 完整人物简介：Tesla、OpenAI、教育 | 所有读者 |
+| [[业界观点/Andrej_Karpathy/sayings\|sayings]] | 重要语录合集 | 研究者 |
 
-## Related
+---
 
-- [[业界观点/Andrew_Ng/index|Andrew Ng]]
-- [[业界观点/3Blue1Brown/index|3Blue1Brown]]
-- [[业界观点/Josh_Starmer/index|Josh Starmer]]
-- [[业界观点/Sebastian_Thrun/index|Sebastian Thrun]]
+## 核心贡献
 
-## Andrej Karpathy 核心观点
+| 贡献 | 时间 | 意义 |
+|------|------|------|
+| "Software 2.0" 概念 | 2017.11 | 重新定义软件开发范式 |
+| Stanford CS231n 课程 | 2015- | 全球深度学习教育标杆 |
+| Tesla Autopilot 感知栈 | 2017-2022 | 纯视觉自动驾驶 |
+| "Vibe Coding" 术语 | 2025.02 | 行业热词 |
+| nanoGPT / llm.c | —— | 教育性开源实现 |
+| YouTube 教学 | —— | "Let's build GPT"等百万观看 |
 
-| 主题 | 核心观点 | 影响 |
-|------|----------|------|
-| AI发展 | Software 2.0、Vibe Coding、AI教育 | 行业方向 |
-| 技术路线 | 前沿研究+工程实践 | 技术选择 |
-| 社会影响 | AI对人类未来的影响 | 政策制定 |
-| 教育理念 | 知识传播与人才培养 | 教育变革 |
+---
 
-## 关键贡献时间线
+## 真实时间线
 
 | 时间 | 事件 | 意义 |
 |------|------|------|
-| 早期 | 学术/职业起步 | 奠定基础 |
-| 中期 | 核心突破/创业 | 行业影响 |
-| 近期 | 最新观点/项目 | 前沿引领 |
-| 2026 | 当前动态 | 持续关注 |
+| ~2011-2015 | Stanford 博士（Fei-Fei Li 指导）| 学术起点 |
+| 2015 | 创建 CS231n | 教育标杆 |
+| 2015-2017 | OpenAI 创始成员 | 早期加入 |
+| 2017 | "Software 2.0" 博文 | 范式概念 |
+| 2017-2022 | Tesla AI 总监 | 自动驾驶 |
+| 2022 | 离开 Tesla | 转向教育 |
+| 2023 | 重回 OpenAI（短暂）| —— |
+| 2023- | 独立教育者 + Eureka Labs | AI 教育创业 |
+| 2025.02 | "Vibe Coding" 术语 | 行业热词 |
+| 2025-2026 | 持续教学 + nanoGPT | 持续 |
+
+---
+
+## 代表性观点
+
+| 主题 | 代表观点 | 来源 |
+|------|----------|------|
+| Software 2.0 | "神经网络的权重就是 Software 2.0 的源代码" | 2017 博文 |
+| 自动驾驶 | "端到端可微的神经网络——从像素到方向盘" | 2019 演讲 |
+| Vibe Coding | 用自然语言指挥 AI 编程，凭感觉迭代 | 2025 |
+| 开源 | "开源加速创新，降低准入门槛" | 多次 |
+| 教育 | "最好的学习方式是动手做项目" | 多次 |
+
+完整语录见 [[业界观点/Andrej_Karpathy/sayings|Karpathy 语录]]。
+
+---
+
+## 行业定位与派别归属
+
+| 派别 | 归属 |
+|------|------|
+| AI 教育普及派 | 旗手 |
+| 开源倡导派 | 成员 |
+| 实践工程派 | 代表 |
+
+Karpathy 的独特之处是**横跨研究、工程、教育三界**。参见 [[业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026|开源 vs 闭源]]。
+
+---
+
+## 相关人物网络
+
+| 关系 | 人物 |
+|------|------|
+| 博士导师 | [[业界观点/Fei_Fei_Li/about\|Fei-Fei Li]] |
+| Tesla CEO | [[业界观点/Elon_Musk/about\|Elon Musk]] |
+| OpenAI 同事 | [[业界观点/Sam_Altman/about\|Sam Altman]]、[[业界观点/Ilya_Sutskever/about\|Ilya Sutskever]] |
+| 教育呼应 | [[业界观点/3Blue1Brown/about\|3Blue1Brown]]、[[业界观点/Andrew_Ng/about\|Andrew Ng]] |
+
+---
 
 ## 学习路径建议
 
 | 阶段 | 推荐内容 | 目标 |
 |------|----------|------|
-| 入门 | about.md 人物简介 | 了解背景 |
-| 进阶 | sayings.md 核心语录 | 理解观点 |
-| 深入 | 原始演讲/论文 | 第一手资料 |
-| 实践 | 相关项目/课程 | 动手体验 |
+| 入门 | [[业界观点/Andrej_Karpathy/about\|about]] | 了解多元角色 |
+| 进阶 | [[业界观点/Andrej_Karpathy/sayings\|sayings]] | 掌握 Software 2.0 |
+| 实践 | nanoGPT / CS231n | 动手理解 LLM |
+
+---
 
 ## 常见问题
 
 | 问题 | 解答 |
 |------|------|
-| Andrej Karpathy的核心主张是什么？ | Software 2.0、Vibe Coding、AI教育 |
-| 为什么值得关注？ | 前Tesla AI总监、OpenAI创始成员，对AI发展有深远影响 |
-| 如何学习其思想？ | 从about.md开始，再看sayings.md |
-| 与其他领袖有何不同？ | 各有侧重：技术/产品/政策/教育 |
+| Software 2.0 是什么？ | 用数据训练神经网络替代人写代码 |
+| Vibe Coding 是什么？ | 用自然语言指挥 AI 编程 |
+| 他在 Tesla 做什么？ | 领导自动驾驶视觉感知 |
+| 他现在做什么？ | AI 教育（Eureka Labs）|
+
+---
 
 ## 统计
 
 | 指标 | 数值 |
 |------|------|
-| 文档数量 | 2-4 |
-| 覆盖主题 | Software 2.0、Vibe Coding、AI教育 |
-| 角色定位 | 前Tesla AI总监、OpenAI创始成员 |
-| 影响力 | 全球AI领域 |
+| 文档数量 | 2（about / sayings）|
+| 角色定位 | AI 教育者 / 实践工程 |
+| 影响力 | 教育 + 工程 |
+| 派别 | 教育普及 + 开源 |
 
-## 附录：知识图谱
+---
 
-| 知识节点 | 前置依赖 | 后续延伸 |
-|----------|----------|----------|
-| 人物背景 | 无 | 技术观点 |
-| 核心观点 | 人物背景 | 行业影响 |
-| 技术贡献 | 专业领域 | 后续研究 |
-| 社会影响 | 核心观点 | 政策/伦理 |
-| 教育理念 | 人物经历 | 学习资源 |
-
-## 附录：术语表
+## 术语表
 
 | 术语 | 英文 | 说明 |
 |------|------|------|
-| 通用人工智能 | AGI | 人类水平AI |
-| 对齐 | Alignment | AI目标与人类一致 |
-| 缩放定律 | Scaling Laws | 模型越大性能越好 |
-| 开源 | Open Source | 公开模型权重/代码 |
-| 多模态 | Multimodal | 处理多种数据类型 |
-
-## 附录：快速导航
-
-| 我想... | 去看 | 难度 |
-|---------|------|------|
-| 了解人物背景 | about.md | ⭐ |
-| 查看核心语录 | sayings.md | ⭐ |
-| 深入技术观点 | 原始演讲/论文 | ⭐⭐ |
-| 对比不同领袖 | Talks_Synthesis_2026 | ⭐⭐ |
-
-## 附录：检查清单
-
-| 检查项 | 说明 | 状态 |
-|--------|------|------|
-| 阅读人物简介 | about.md | ☐ |
-| 了解核心观点 | sayings.md | ☐ |
-| 观看代表演讲 | YouTube/原始来源 | ☐ |
-| 对比其他领袖 | 横向比较 | ☐ |
-| 关注最新动态 | 2026年进展 | ☐ |
-
-> �� Andrej Karpathy 是 AI 领域的重要声音。理解其观点有助于把握 AI 发展方向和产业趋势。
+| Software 2.0 | —— | 数据驱动编程范式 |
+| Vibe Coding | —— | 自然语言指挥 AI 编程 |
+| 纯视觉 | Pure Vision | 仅摄像头自动驾驶 |
+| nanoGPT | —— | 约 300 行的 GPT 实现 |
+| CS231n | —— | Stanford 视觉 CNN 课程 |
 
 ---
-*Last updated: 2026-07-21*
 
-## 附录：AI领袖观点对比框架
+## 关联导航
 
-| 维度 | 技术乐观派 | 安全谨慎派 | 开源倡导派 | 商业务实派 |
-|------|----------|----------|----------|----------|
-| AGI时间 | 2-5年 | 5-20年 | 不确定 | 渐进式 |
-| 风险态度 | 可控 | 需警惕 | 透明化 | 渐进管理 |
-| 开源立场 | 部分开源 | 受限发布 | 完全开源 | 商业优先 |
-| 监管态度 | 轻监管 | 强监管 | 社区自治 | 行业自律 |
-
-## 附录：2026年AI领袖动态
-
-| 趋势 | 说明 | 代表人物 |
-|------|------|----------|
-| AGI竞赛加速 | 多家公司宣称接近AGI | Altman/Hassabis |
-| 开源vs闭源 | 模型发布策略分化 | Liang/Zuckerberg |
-| AI安全立法 | 各国出台AI法规 | Bengio/Hinton |
-| 具身智能 | 机器人+AI融合 | Huang/Musk |
-| AI教育普及 | 大规模在线课程 | Ng/Karpathy |
-| 多模态融合 | 视觉+语言+动作 | Pichai/Nadella |
-
-## 附录：推荐阅读顺序
-
-| 顺序 | 内容 | 目的 |
-|------|------|------|
-| 1 | about.md | 了解人物背景 |
-| 2 | sayings.md | 掌握核心观点 |
-| 3 | 代表演讲 | 感受表达方式 |
-| 4 | 相关论文/产品 | 深入技术细节 |
-| 5 | Talks_Synthesis | 横向对比 |
-
-## 附录：影响力评估
-
-| 评估维度 | 说明 | 权重 |
-|----------|------|------|
-| 技术贡献 | 论文/专利/产品 | 30% |
-| 行业影响 | 公司/生态/标准 | 25% |
-| 思想引领 | 观点/预测/框架 | 25% |
-| 教育贡献 | 课程/书籍/视频 | 10% |
-| 社会影响 | 政策/伦理/公益 | 10% |
-
-## 附录：相关资源
-
-| 资源类型 | 推荐 | 说明 |
-|----------|------|------|
-| 视频 | YouTube频道 | 演讲/访谈 |
-| 文字 | 博客/Twitter | 第一手观点 |
-| 论文 | arXiv/Google Scholar | 学术贡献 |
-| 播客 | Lex Fridman等 | 深度对话 |
-| 书籍 | 人物传记/技术书 | 系统了解 |
-
-> 💡 每位AI领袖都有独特的视角和贡献。多元观点的碰撞与融合，推动了整个AI领域的快速发展。
+- [[业界观点/Andrej_Karpathy/about\|人物简介]] · [[业界观点/Andrej_Karpathy/sayings\|核心语录]]
+- [[业界观点/Fei_Fei_Li/about\|Fei-Fei Li]] · [[业界观点/Elon_Musk/about\|Elon Musk]]
+- [[业界观点/Andrew_Ng/about\|Andrew Ng]] · [[业界观点/3Blue1Brown/about\|3Blue1Brown]]
+- [[业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026\|开源 vs 闭源]]
+- [[业界观点/index\|业界观点首页]]
 
 ---
-*Last updated: 2026-07-21*
 
-## 附录：AI发展关键里程碑
-
-| 年份 | 里程碑 | 意义 |
-|------|--------|------|
-| 2012 | AlexNet | 深度学习爆发 |
-| 2016 | AlphaGo | AI超越人类棋手 |
-| 2017 | Transformer | 现代LLM基础 |
-| 2020 | GPT-3 | 大模型时代 |
-| 2022 | ChatGPT | AI大众化 |
-| 2023 | GPT-4/多模态 | 能力飞跃 |
-| 2024 | 开源LLM爆发 | LLaMA/Mistral/DeepSeek |
-| 2025 | Agent/具身智能 | AI走向行动 |
-| 2026 | AGI竞赛白热化 | 多家公司角逐 |
-
-## 附录：观点分类标签
-
-| 标签 | 含义 | 相关人物 |
-|------|------|----------|
-| #AGI | 通用人工智能愿景 | Altman/Hassabis/Musk |
-| #Safety | AI安全与对齐 | Bengio/Hinton/Amodei |
-| #OpenSource | 开源AI倡导 | Liang/Zuckerberg/LeCun |
-| #Education | AI教育普及 | Ng/Karpathy/3B1B |
-| #Product | AI产品化 | Nadella/Pichai/Murati |
-| #Research | 前沿研究 | Sutskever/Hinton/LeCun |
-
-## 附录：跨人物主题索引
-
-| 主题 | 相关人物 | 核心分歧 |
-|------|----------|----------|
-| AGI时间线 | 全员 | 2年vs20年 |
-| 开源策略 | Liang/Zuckerberg vs Altman | 开放vs受限 |
-| AI监管 | Bengio/Hinton vs Musk | 强监管vs轻监管 |
-| 就业影响 | Gates/Ng vs Musk | 增强vs替代 |
-| 技术路线 | LeCun vs Hassabis | 世界模型vs缩放 |
-
-> �� 理解AI领袖的观点分歧，比记住单一观点更重要。正是这些碰撞推动了AI的健康发展。
-
----
-*Last updated: 2026-07-21*
+*Last updated: 2026-07-23*

@@ -13,7 +13,7 @@ relationships:
     type: belongs_to
 sources:
   - RAG系统/README.md
-  - Agent/Agent_Skills/Agent_Skills_Ecosystem_Catalog.md
+  - 智能体/Agent_Skills/Agent_Skills_Ecosystem_Catalog.md
   - AI编程/README.md
 summary: "Text2SQL（也叫 NL2SQL）是把自然语言问题自动转换成可执行 SQL 查询的技术。它让不懂 SQL 的人能用大白话查数据库，是数据分析、智能客服、企业 BI 的核心能力。"
 provenance:
@@ -32,7 +32,7 @@ aliases:
 ---
 
 > [!warning] 生产安全提示 · Production Safety
-> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../治理/Production_Safety_Policy.md)。
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # Text2SQL
 

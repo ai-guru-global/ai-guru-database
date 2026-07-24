@@ -215,13 +215,13 @@ ChatGPT、Claude、Gemini
 
 ## 下一步
 
-- 想学技术？→ [数学基础/README_for_dummy.md](../数学基础/README_for_dummy.md)
-- 想学机器学习？→ [机器学习/README_for_dummy.md](../机器学习/README_for_dummy.md)
-- 想学深度学习？→ [深度学习/README_for_dummy.md](../深度学习/README_for_dummy.md)
+- 想学技术？→ [数学基础/README_for_dummy.md](.数学基础/README_for_dummy.md)
+- 想学机器学习？→ [机器学习/README_for_dummy.md](.机器学习/README_for_dummy.md)
+- 想学深度学习？→ [深度学习/README_for_dummy.md](.深度学习/README_for_dummy.md)
 
 ---
 
-*本文是 [README.md](./README.md) 的简化版，适合零基础读者。*
+*本文是 [README.md](README.md) 的简化版，适合零基础读者。*
 
 ## Related
 

@@ -367,7 +367,7 @@ client = OpenAI(
 | [11 - 安全与隐私](./11-openrouter-security-privacy.md) | 安全加固与合规 |
 | [topic-coding/03](../OpenCode/23-opencode-providers-models.md) | OpenCode 配置 OpenRouter Provider |
 | [topic-ai-agent](../topic-ai-agent/) | Agent CLI 统一 LLM 后端 |
-| [domain-11-ai-infra/17](../../部署推理/README.md) | LLM 推理服务层 |
+| [domain-11-ai-infra/17](../.部署推理/README.md) | LLM 推理服务层 |
 | [domain-40](../domain-40-cloud-native-api-gateway/) | 云原生 Gateway 模式 |
 
 ---

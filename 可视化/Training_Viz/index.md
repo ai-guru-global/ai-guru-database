@@ -52,7 +52,7 @@ tags: [training-visualization, index, navigation]
 | 学习率 | step | lr | 调度策略是否合理 |
 | 指标曲线 | step | accuracy/F1 | 性能走势 |
 
-详见 [[可视化/Training_Viz/Training_Curves_Analysis\|训练曲线分析]]。
+详见 [[可视化/Training_Viz/Training_Curves_Analysis|训练曲线分析]]。
 
 ### 3.2 权重与梯度分布
 
@@ -64,7 +64,7 @@ tags: [training-visualization, index, navigation]
 
 ### 3.3 嵌入与网络结构
 
-详见 [[可视化/Training_Viz/Embedding_Visualization_Guide\|嵌入可视化]] 与 [[可视化/Training_Viz/Neural_Network_Visualization_Guide\|网络可视化]]。
+详见 [[可视化/Training_Viz/Embedding_Visualization_Guide|嵌入可视化]] 与 [[可视化/Training_Viz/Neural_Network_Visualization_Guide|网络可视化]]。
 
 ---
 
@@ -89,7 +89,7 @@ flowchart TD
 | 工具 | 训练可视化强项 | 关联 |
 |------|----------------|------|
 | TensorBoard | 原生曲线/直方图/嵌入投影 | 训练监控 |
-| Weights & Biases | 实验对比/超参搜索/协作 | [[测试/Weights_Biases/index\|W&B]] |
+| Weights & Biases | 实验对比/超参搜索/协作 | [[测试/Weights_Biases_Deep_Dive\|W&B]] |
 | MLflow | 实验追踪/模型注册 | 实验追踪 |
 | ClearML / Comet | 实验管理 | 实验追踪 |
 | 自建 Dashboard | 定制化监控 | ECharts/Plotly |
@@ -187,13 +187,13 @@ flowchart TD
 
 ## 关联
 
-- [[可视化/index\|可视化首页]]
-- [[可视化/Best_Practices/index\|Best Practices]]
-- [[可视化/Evaluation_Viz/index\|Evaluation Viz]]
-- [[模型训练/index\|模型训练]]
-- [[测试/Weights_Biases/index\|Weights & Biases]]
-- [[深度学习/index\|深度学习]]
-- [[模型运维/index\|模型运维]]
+- [[可视化/index|可视化首页]]
+- [[可视化/Best_Practices/index|Best Practices]]
+- [[可视化/Evaluation_Viz/index|Evaluation Viz]]
+- [[模型训练/index|模型训练]]
+- [[测试/Weights_Biases_Deep_Dive|Weights & Biases]]
+- [[深度学习/index|深度学习]]
+- [[模型运维/index|模型运维]]
 
 ---
 

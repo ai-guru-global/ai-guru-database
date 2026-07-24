@@ -1059,11 +1059,11 @@ if __name__ == "__main__":
 
 - [API 设计 for AI](../架构基建/AI_Gateway/API_Design_for_AI.md) - API 文档的基础
 - [Prompt 管理平台](./Prompt_Ops/Prompt_Management_Platform.md) - Prompt 文档管理
-- [AI Gateway 对比](../架构基建/AI_Gateway/AI_Gateway_Comparison_2026.md) - 网关文档自动化
+- [AI Gateway 对比](架构基建/AI_Gateway/AI_Gateway_Comparison_2026.md) - 网关文档自动化
 
 ## Related
 
 - [[治理/Document_Templates|文档模板规范]]
 - [[治理/Import_Guide|导入指南]]
 - [[治理/index|项目治理]]
-- [[入门/AI_Tools_Practical_Guide.md|AI_Tools_Practical_Guide]]
+- [[入门/Learning_Path/AI_Tools_Practical_Guide.md|AI_Tools_Practical_Guide]]

@@ -191,13 +191,13 @@ tags: [best-practices, index, navigation]
 
 ## 关联
 
-- [[可视化/index\|可视化首页]]
-- [[可视化/Training_Viz/index\|Training Viz]]
-- [[可视化/Evaluation_Viz/index\|Evaluation Viz]]
-- [[可视化/System_Viz/index\|System Viz]]
-- [[模型评估/index\|模型评估]]
-- [[数据/...|数据]]
-- [[治理/Best_Practices|治理最佳实践]]
+- [[可视化/index|可视化首页]]
+- [[可视化/Training_Viz/index|Training Viz]]
+- [[可视化/Evaluation_Viz/index|Evaluation Viz]]
+- [[可视化/System_Viz/index|System Viz]]
+- [[模型评估/index|模型评估]]
+- [[机器学习/index|机器学习]]
+- [[治理/index|项目治理]]
 
 ---
 

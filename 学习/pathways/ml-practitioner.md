@@ -153,10 +153,10 @@ Phase 6: 完成端到端项目
 **📚 核心概念**：[Stage 3: 工程实践](学习/concepts/stage3_engineering.md)
 
 **🔗 深入阅读**：
-- [部署与推理（小白版）](部署推理/Deployment_Inference_for_dummy.md)
-- [RAG 系统（小白版）](RAG系统/RAG_Systems_for_dummy.md)
-- [MLOps 流水线（小白版）](模型运维/MLOps_Pipeline_for_dummy.md)
-- [模型评估（小白版）](模型评估/Model_Evaluation_for_dummy.md)
+- [部署与推理（小白版）](部署推理/Deployment_Fundamentals/Deployment_Inference_for_dummy.md)
+- [RAG 系统（小白版）](RAG系统/RAG_Fundamentals/RAG_Systems_for_dummy.md)
+- [MLOps 流水线（小白版）](模型运维/MLOps_Fundamentals/MLOps_Pipeline_for_dummy.md)
+- [模型评估（小白版）](模型评估/Evaluation_Fundamentals/Model_Evaluation_for_dummy.md)
 - [AI 工作流（速查版）](智能体/Agent_Workflow/Workflow-in-nutshell.md)
 
 **💡 动手实践建议**：

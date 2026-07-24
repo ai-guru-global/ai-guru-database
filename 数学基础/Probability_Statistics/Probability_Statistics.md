@@ -532,13 +532,13 @@ $$
 
 ### 前置知识
 - **[线性代数](../Linear_Algebra/Linear_Algebra.md)**: 协方差矩阵、多元高斯分布
-- **[微积分](../Calculus_Optimization/Calculus_Optimization.md)**: 期望（积分）、最大化（求导）
+- **[微积分](数学基础/Calculus_Optimization.md)**: 期望（积分）、最大化（求导）
 
 ### 进阶推荐
 - **[机器学习基础](../../机器学习/README.md)**: MLE/MAP 在具体算法中的应用
-- **[优化方法](../../深度学习/Optimization/Optimization.md)**: 随机优化的概率视角
-- **[贝叶斯深度学习](../../机器学习/Bayesian_Methods/Bayesian_Methods_Deep_Dive.md)**: 不确定性量化
-- **[生成模型](../../计算机视觉/Generative_Models/Generative_Models.md)**: VAE、GAN 的概率基础
+- **[优化方法](深度学习/Optimization/Optimization.md)**: 随机优化的概率视角
+- **[贝叶斯深度学习](机器学习/Bayesian_Methods/Bayesian_Methods_Deep_Dive.md)**: 不确定性量化
+- **[生成模型](计算机视觉/Generative_Models/Generative_Models.md)**: VAE、GAN 的概率基础
 
 ---
 

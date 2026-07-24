@@ -567,7 +567,7 @@ AI学玩游戏:
 - 🔗 AlphaGo 纪录片 - 看 AI 如何学习围棋
 
 **相关主题**:
-- 🔙 [概率统计 - 小白版](../../数学基础/Probability_Statistics/Probability_Statistics_for_dummy.md) - 理解期望和折扣
+- 🔙 [概率统计 - 小白版](数学基础/Probability_Statistics/Probability_Statistics_for_dummy.md) - 理解期望和折扣
 - 🔜 [深度强化学习 - 小白版](../Deep_RL/Deep_RL_for_dummy.md) - Q-Learning 的神经网络版
 
 ---

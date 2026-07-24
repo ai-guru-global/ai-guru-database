@@ -58,7 +58,7 @@ flowchart LR
 | **U-Net (2015)** Ronneberger et al. | 编码器-解码器 + 跳跃连接，医学图像分割的经典架构，影响扩散模型 U-Net backbone | 分割任务的起点，也是 Stable Diffusion 的核心组件 | [分割](../计算机视觉/Segmentation/) |
 | **Faster R-CNN (2015)** Ren et al. | RPN + Fast R-CNN 端到端训练，两阶段检测的速度突破，mAP 73.2% | 目标检测的奠基工作，理解 R-CNN 系列演进的关键节点 | [目标检测](../计算机视觉/Image_Classification_Detection/) |
 | **An Image is Worth 16x16 Words (2020)** Dosovitskiy et al. | ViT：将图像切分为 patch 序列，纯 Transformer 超越 ResNet，开启视觉 Transformer 时代 | 2020 年后视觉领域最重要的架构转变，理解"CNN → Transformer"的迁移 | [计算机视觉](../计算机视觉/README.md) [Transformer 革命](../大模型/Transformer_Revolution/) |
-| **Matryoshka Representation Learning (2022)** Kusupati et al. | MRL：训练可截断的多尺度向量表示，任意前缀维度都保持语义有效性 | 向量表示的"弹性维度"革命，RAG、向量数据库和端侧部署的核心技术 | [RAG 系统](../RAG系统/README.md) [嵌入模型](概念/embedding-models.md) |
+| **Matryoshka Representation Learning (2022)** Kusupati et al. | MRL：训练可截断的多尺度向量表示，任意前缀维度都保持语义有效性 | 向量表示的"弹性维度"革命，RAG、向量数据库和端侧部署的核心技术 | [RAG 系统](../RAG系统/README.md) [嵌入模型](概念/RAG/embedding-models.md) |
 
 ---
 
@@ -71,7 +71,7 @@ flowchart LR
 | **BERT (2018)** Devlin et al. | 双向 Transformer + MLM + NSP，预训练-微调范式，GLUE 基准大幅提升 | "预训练+微调"时代的开启，理解自监督学习的威力 | [NLP 与 LLMs](../大模型/README.md) [LLM 架构](../大模型/LLM_Architectures/) |
 | **Language Models are Few-Shot Learners (GPT-3, 2020)** Brown et al. | 175B 参数，上下文学习（In-Context Learning）涌现，无需微调即可完成任务 | Scaling Laws 的首次大规模验证，"大模型时代"的标志性论文 | [LLM 架构](../大模型/LLM_Architectures/) [Prompt Engineering](../大模型/Prompt_Engineering/) |
 | **Training language models to follow instructions with human feedback (InstructGPT, 2022)** Ouyang et al. | SFT + RLHF 三阶段训练，1.3B InstructGPT 超越 175B GPT-3，证明对齐的重要性 | ChatGPT 的技术基础，理解"有用、无害、诚实"的训练方法 | [Fine-tuning](../大模型/Fine_tuning_Techniques/) [RL](../强化学习/) |
-| **LLaMA (2023)** Touvron et al. | 开源高效大模型，7B-65B，仅使用公开数据训练，性能接近 GPT-3，引发开源大模型浪潮 | 开源大模型的分水岭，理解高效训练和数据质量的重要性 | [LLM 架构](../大模型/LLM_Architectures/) [开源 Agent](智能体/AI_OpenSource_Projects_Overview.md) |
+| **LLaMA (2023)** Touvron et al. | 开源高效大模型，7B-65B，仅使用公开数据训练，性能接近 GPT-3，引发开源大模型浪潮 | 开源大模型的分水岭，理解高效训练和数据质量的重要性 | [LLM 架构](../大模型/LLM_Architectures/) [开源 Agent](智能体/Agent_Foundations/AI_OpenSource_Projects_Overview.md) |
 | **GPT-4 Technical Report (2023)** OpenAI | 多模态大模型（文本+图像输入），1.7T MoE 架构，在多项专业考试中达到人类水平 | 标志 LLM 进入"通用智能"阶段，MoE 架构在超大规模模型中的首次验证 | [LLM 架构](../大模型/LLM_Architectures/) [Global LLM](../大模型/Global_LLM_Ecosystem/) |
 | **DeepSeek-V3 Technical Report (2024)** DeepSeek | 671B MoE + MLA + FP8 混合精度训练，$5.6M 训练成本达到 GPT-4 级性能 | 颠覆"只有巨头才能训练大模型"的认知，效率优先路线的里程碑 | [Chinese LLM](../大模型/Chinese_LLM_Ecosystem/) [LLM 架构](../大模型/LLM_Architectures/) |
 

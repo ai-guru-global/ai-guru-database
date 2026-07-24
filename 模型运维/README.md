@@ -39,10 +39,10 @@ graph LR
 
 | 你的场景 | 推荐起点 |
 |---------|---------|
-| 我在做 LLM/RAG/Agent 应用 | **[[模型运维/LLMOps_2026.md]]** → 然后 Prompt/Eval/RAG 三专题 |
-| 我在做传统 ML（推荐/分类/预测） | [[模型运维/MLOps_Pipeline.md]] → 然后特征/CI-CD/监控 |
-| 我想知道 MLOps 是什么 | [[模型运维/MLOps-in-nutshell.md]]（30 分钟速览） |
-| 我是纯初学者 | [[模型运维/MLOps_Pipeline_for_dummy.md]] |
+| 我在做 LLM/RAG/Agent 应用 | **[[模型运维/LLMOps/LLMOps_2026.md]]** → 然后 Prompt/Eval/RAG 三专题 |
+| 我在做传统 ML（推荐/分类/预测） | [[模型运维/MLOps_Fundamentals/MLOps_Pipeline.md]] → 然后特征/CI-CD/监控 |
+| 我想知道 MLOps 是什么 | [[模型运维/MLOps_Fundamentals/MLOps-in-nutshell.md]]（30 分钟速览） |
+| 我是纯初学者 | [[模型运维/MLOps_Fundamentals/MLOps_Pipeline_for_dummy.md]] |
 | 我想知道工具怎么用 | 见下方「🔧 工具深度解析」区（已从 16 迁入本章） |
 
 ---
@@ -67,27 +67,27 @@ graph LR
 
 | 文档 | 内容 | 适用读者 |
 |------|------|----------|
-| ⭐ **[LLMOps 2026](模型运维/LLMOps_2026.md)** | **LLM 时代主线**：传统 MLOps 失效的 7 大原因、Prompt/模型/RAG 三层架构、成本与延迟 SLO、可观测性、成熟度模型、3 个事故复盘 | 所有人必读 |
-| [Prompt 工程化运维](模型运维/Prompt_Engineering_Ops.md) | Prompt 版本化、A/B 测试、回归门禁、Prompt Registry（Promptflow/LangSmith/Promptfoo） | LLM 应用工程师 |
+| ⭐ **[LLMOps 2026](模型运维/LLMOps/LLMOps_2026.md)** | **LLM 时代主线**：传统 MLOps 失效的 7 大原因、Prompt/模型/RAG 三层架构、成本与延迟 SLO、可观测性、成熟度模型、3 个事故复盘 | 所有人必读 |
+| [Prompt 工程化运维](模型运维/Prompt_Ops/Prompt_Engineering_Ops.md) | Prompt 版本化、A/B 测试、回归门禁、Prompt Registry（Promptflow/LangSmith/Promptfoo） | LLM 应用工程师 |
 | [LLM 评估流水线](模型运维/LLM_Evaluation_Pipeline.md) | LLM-as-Judge、人审工作流、Eval 数据集版本化、CI 门禁、Ragas/DeepEval 实战 | LLM 应用工程师 |
 | [RAG 流水线运维](模型运维/Orchestration/RAG_Pipeline_Ops.md) | 切块版本化、Embedding 升级策略、索引重建、检索质量监控（侧重 Ops） | RAG 系统工程师 |
 | [LLM 成本与延迟 SLO](模型运维/Cost/LLM_Cost_Latency_SLO.md) | 三层缓存、智能路由、级联、Token 预算熔断、FinOps | LLM 平台工程师 |
 | [LLM 可观测性](模型运维/Observability/LLM_Observability.md) | 五层监控、Trace 分布式追踪、幻觉/毒性/PII 在线检测、Runbook | SRE / LLM 平台 |
-| [LLM 护栏与安全运维 2026](模型运维/LLM_Guardrails_and_Safety_Ops_2026.md) | Prompt Injection/PII/毒性检测、Guardrails 编排、审计合规 | AI 安全工程师 / MLOps |
+| [LLM 护栏与安全运维 2026](模型运维/LLMOps/LLM_Guardrails_and_Safety_Ops_2026.md) | Prompt Injection/PII/毒性检测、Guardrails 编排、审计合规 | AI 安全工程师 / MLOps |
 
 ### 传统 MLOps 主线
 
 | 文档 | 内容 | 适用读者 |
 |------|------|----------|
-| [MLOps-in-nutshell](模型运维/MLOps-in-nutshell.md) | 30 分钟速览：成熟度模型、生命周期、关键工具 | 快速入门 |
-| [MLOps Pipeline](模型运维/MLOps_Pipeline.md) | 完整流水线设计：数据版本化、特征存储、模型注册、持续部署 | 系统学习 |
-| [MLOps Pipeline for Dummy](模型运维/MLOps_Pipeline_for_dummy.md) | MLOps 概念的简化版解释 | 初学者 |
+| [MLOps-in-nutshell](模型运维/MLOps_Fundamentals/MLOps-in-nutshell.md) | 30 分钟速览：成熟度模型、生命周期、关键工具 | 快速入门 |
+| [MLOps Pipeline](模型运维/MLOps_Fundamentals/MLOps_Pipeline.md) | 完整流水线设计：数据版本化、特征存储、模型注册、持续部署 | 系统学习 |
+| [MLOps Pipeline for Dummy](模型运维/MLOps_Fundamentals/MLOps_Pipeline_for_dummy.md) | MLOps 概念的简化版解释 | 初学者 |
 | [Feature Store 深度解析](模型运维/Experiment_Tracking/Feature_Store_Deep_Dive.md) | Feast/Tecton/Hopsworks 对比，训练-服务偏差解决方案 | 进阶 |
 | [实验追踪深度解析](模型运维/Experiment_Tracking/Experiment_Tracking_Deep_Dive.md) | MLflow/W&B/Neptune 全面对比，实验管理与复现 | 进阶 |
 | [ML CI/CD 流水线](模型运维/CI_CD/ML_CI_CD.md) | 数据验证、模型测试、金丝雀部署、GitHub Actions for ML | 进阶 |
 | [Model Monitoring & Drift Detection 2026](模型运维/Observability/Model_Monitoring_and_Drift_Detection_2026.md) | 漂移检测理论、PSI/KS 统计、语义漂移、Evidently/WhyLabs 实战 | 进阶 |
 | [数据流水线编排](模型运维/Orchestration/Data_Pipeline_Orchestration.md) | Airflow/Dagster/Prefect 对比，DAG 设计最佳实践 | 进阶 |
-| [MLOps 成熟度模型](模型运维/MLOps_Maturity_Model.md) | Level 0-3 成熟度评估、团队建设、工具选型、ROI 衡量 | 管理者 |
+| [MLOps 成熟度模型](模型运维/MLOps_Fundamentals/MLOps_Maturity_Model.md) | Level 0-3 成熟度评估、团队建设、工具选型、ROI 衡量 | 管理者 |
 | [Model Registry & Model Cards](模型运维/Experiment_Tracking/Model_Registry_and_Cards_Deep_Dive.md) | MLflow Registry、版本管理、阶段转换、Model Card 文档化 | 进阶 |
 
 ### 数据工程（MLOps 数据基础）
@@ -118,7 +118,7 @@ graph LR
 | [数据版本控制](模型运维/Orchestration/Data_Versioning_DVC_LakeFS.md) | DVC/LakeFS/Delta Lake 对比，可复现性的基石 | 数据工程师 |
 | [AI 文档自动化](模型运维/Documentation_Automation.md) | Sphinx/MkDocs/Docusaurus/Vale 文档自动化工具链 | 技术写作者 / 工程师 |
 | [Prompt 管理平台](模型运维/Prompt_Ops/Prompt_Management_Platform.md) | LangSmith/PromptLayer/Helicone/Langfuse 深度对比 | LLM 应用工程师 |
-| [自动化再训练](模型运维/Automated_Retraining.md) | 触发机制、数据回流、增量 vs 全量、自动门禁、灾难性遗忘 | ML 平台 |
+| [自动化再训练](模型运维/Model_Serving/Automated_Retraining.md) | 触发机制、数据回流、增量 vs 全量、自动门禁、灾难性遗忘 | ML 平台 |
 | [ML 系统可观测与 SLO](模型运维/Observability/ML_Observability_SLO.md) | 三大支柱、SLI/SLO/SLA、错误预算、USE 方法、告警设计 | SRE |
 | [MLOps 成本优化](模型运维/Cost/Cost_Optimization_MLOps.md) | GPU 调度、Spot 实例、弹性伸缩、训练/推理优化、FinOps | 平台 / FinOps |
 | [隐私与合规流水线](模型运维/Orchestration/Privacy_Compliance_Pipeline.md) | PII 检测、数据血源、模型卡强制化、公平性门禁、审计、GDPR/AI Act | 合规 / 风控 |
@@ -166,7 +166,7 @@ graph LR
 | [AI Observability Guide](模型运维/Observability/AI_Observability_Guide.md) | [[模型运维/Observability/ML_Observability_SLO.md]] |
 | [AI Observability Guide 2026](模型运维/Observability/AI_Observability_Guide_2026.md) | [[模型运维/Observability/ML_Observability_SLO.md]] |
 | [CI/CD Pipeline AI 2026](模型运维/CI_CD/CI_CD_Pipeline_AI_2026.md) | [[模型运维/CI_CD/ML_CI_CD.md]] |
-| [LLM Production Pipeline 2026](模型运维/LLM_Production_Pipeline_2026.md) | [[模型运维/LLMOps_2026.md]] |
+| [LLM Production Pipeline 2026](模型运维/LLMOps/LLM_Production_Pipeline_2026.md) | [[模型运维/LLMOps/LLMOps_2026.md]] |
 
 ### 🛠 MLOps / LLMOps 排障 Runbook
 
@@ -186,14 +186,14 @@ graph LR
 ## 学习路径
 
 ### LLM 应用开发者路径（2026 主流）
-- **主线** → [LLMOps 2026](模型运维/LLMOps_2026.md)（1 小时，必读）
-- **深扩** → [Prompt Ops](模型运维/Prompt_Engineering_Ops.md) → [LLM Eval](模型运维/LLM_Evaluation_Pipeline.md) → [RAG Ops](模型运维/Orchestration/RAG_Pipeline_Ops.md)
+- **主线** → [LLMOps 2026](模型运维/LLMOps/LLMOps_2026.md)（1 小时，必读）
+- **深扩** → [Prompt Ops](模型运维/Prompt_Ops/Prompt_Engineering_Ops.md) → [LLM Eval](模型运维/LLM_Evaluation_Pipeline.md) → [RAG Ops](模型运维/Orchestration/RAG_Pipeline_Ops.md)
 - **成本** → 跨章参考 [[部署推理/LLM_Cost_Optimization.md]]
 
 ### 传统 ML 工程师路径
-- **快速入门** → [MLOps-in-nutshell](模型运维/MLOps-in-nutshell.md)（30 分钟）
-- **系统学习** → [MLOps Pipeline](模型运维/MLOps_Pipeline.md)（2-3 小时）
-- **简化版** → [MLOps Pipeline for Dummy](模型运维/MLOps_Pipeline_for_dummy.md)
+- **快速入门** → [MLOps-in-nutshell](模型运维/MLOps_Fundamentals/MLOps-in-nutshell.md)（30 分钟）
+- **系统学习** → [MLOps Pipeline](模型运维/MLOps_Fundamentals/MLOps_Pipeline.md)（2-3 小时）
+- **简化版** → [MLOps Pipeline for Dummy](模型运维/MLOps_Fundamentals/MLOps_Pipeline_for_dummy.md)
 
 ---
 
@@ -202,7 +202,7 @@ graph LR
 ### 前置知识
 - [模型训练](../模型训练/) — 训练流程是 MLOps 的输入
 - [模型评估](../模型评估/) — 评估是流水线中的质量门禁
-- [部署推理](../部署推理/README.md) — MLOps 的最终交付环节
+- [部署推理](.部署推理/README.md) — MLOps 的最终交付环节
 
 ### 进阶方向
 - [AI Ops](../运维/README.md) — 模型监控、告警、自动回滚
@@ -253,28 +253,28 @@ flowchart TB
 ## Related
 - [[模型运维/Boundary_with_16.md|📍 10 与 16 边界声明]] 📐 治理
 - [[模型运维/Boundary_with_16|10 vs 16 边界声明]] ✅ 已完成
-- [[模型运维/LLMOps_2026.md|LLMOps 2026：大模型时代的 MLOps 升级]] ⭐ LLM 时代主线
-- [[模型运维/Prompt_Engineering_Ops.md|Prompt 工程化运维]]
+- [[模型运维/LLMOps/LLMOps_2026.md|LLMOps 2026：大模型时代的 MLOps 升级]] ⭐ LLM 时代主线
+- [[模型运维/Prompt_Ops/Prompt_Engineering_Ops.md|Prompt 工程化运维]]
 - [[模型运维/LLM_Evaluation_Pipeline.md|LLM 评估流水线]]
 - [[模型运维/Orchestration/RAG_Pipeline_Ops.md|RAG 流水线运维]]
 - [[模型运维/Cost/LLM_Cost_Latency_SLO.md|LLM 成本与延迟 SLO]]
 - [[模型运维/Observability/LLM_Observability.md|LLM 可观测性]]
 - [[模型运维/Orchestration/Data_Versioning_DVC_LakeFS.md|数据版本控制：DVC 与 LakeFS]]
-- [[模型运维/Automated_Retraining.md|自动化再训练]]
+- [[模型运维/Model_Serving/Automated_Retraining.md|自动化再训练]]
 - [[模型运维/Observability/ML_Observability_SLO.md|ML 系统可观测与 SLO]]
 - [[模型运维/Cost/Cost_Optimization_MLOps.md|MLOps 成本优化]]
 - [[模型运维/Orchestration/Privacy_Compliance_Pipeline.md|隐私与合规流水线]]
 - [[模型运维/Experiment_Tracking/Model_Registry_and_Cards_Deep_Dive.md|模型注册与模型卡片深度解析 (Model Registry & Model Cards Deep Dive)]]
-- [[模型运维/MLOps_Pipeline.md|MLOps 流水线 (MLOps Pipeline)]]
+- [[模型运维/MLOps_Fundamentals/MLOps_Pipeline.md|MLOps 流水线 (MLOps Pipeline)]]
 - [[模型运维/CI_CD/ML_CI_CD.md|ML CI/CD 流水线 (ML CI/CD Pipeline)]]
-- [[模型运维/MLOps_Pipeline_for_dummy.md|MLOps 流水线 - 小白版]]
+- [[模型运维/MLOps_Fundamentals/MLOps_Pipeline_for_dummy.md|MLOps 流水线 - 小白版]]
 - [[模型运维/README_for_dummy|10 MLOps 流水线 — 小白版 🔄]]
 - [[模型运维/Experiment_Tracking/Experiment_Tracking_Deep_Dive.md|实验追踪深度解析 (Experiment Tracking Deep Dive)]]
-- [[模型运维/MLOps_Maturity_Model.md|MLOps 成熟度模型与最佳实践 (MLOps Maturity Model)]]
+- [[模型运维/MLOps_Fundamentals/MLOps_Maturity_Model.md|MLOps 成熟度模型与最佳实践 (MLOps Maturity Model)]]
 - [[模型运维/Experiment_Tracking/Feature_Store_Deep_Dive.md|Feature Store 深度解析 (Feature Store Deep Dive)]]
 
-- [[概念/mlops.md]] — MLOps
-- [[概念/model-deployment.md]] — 模型部署
+- [[概念/MLOps/mlops.md]] — MLOps
+- [[概念/General/model-deployment.md]] — 模型部署
 
 
 

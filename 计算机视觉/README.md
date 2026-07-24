@@ -58,12 +58,12 @@ sources: []
 
 | 论文 | 内容 | 文档链接 |
 |------|------|---------|
-| ViT (Vision Transformer) | 将 Transformer 引入视觉，图像即 16×16 tokens | [ViT_Deep_Dive.md](./ViT_Deep_Dive.md) |
+| ViT (Vision Transformer) | 将 Transformer 引入视觉，图像即 16×16 tokens | [ViT_Deep_Dive.md](计算机视觉/CV_Fundamentals/ViT_Deep_Dive.md) |
 | CLIP | 多模态学习里程碑，zero-shot 图像分类 | [CLIP_Deep_Dive.md](./Multimodal_Vision/CLIP_Deep_Dive.md) |
 
 ### 小白版入门 (for_dummy)
 
-- [计算机视觉 - 小白版](./README_for_dummy.md) — 零基础入门
+- [计算机视觉 - 小白版](README_for_dummy.md) — 零基础入门
 - [图像分类与检测 - 小白版](./Image_Classification_Detection/Image_Classification_Detection_for_dummy.md)
 - [图像分割 - 小白版](./Segmentation/Segmentation_for_dummy.md)
 - [多模态视觉 - 小白版](./Multimodal_Vision/Multimodal_Vision_for_dummy.md)
@@ -74,10 +74,10 @@ sources: []
 
 ## 前置知识 (Prerequisites)
 
-- **必修**: [神经网络核心](../深度学习/Neural_Network_Core/Neural_Network_Core.md)（理解 CNN 架构）
-- **必修**: [优化与正则化](../深度学习/Optimization/Optimization.md)（训练视觉模型）
-- **推荐**: [Transformer 革命](../大模型/Transformer_Revolution/Transformer_Revolution.md)（理解 ViT 和多模态）
-- **可选**: [概率统计](../数学基础/Probability_Statistics/Probability_Statistics.md)（理解扩散模型）
+- **必修**: [神经网络核心](深度学习/Neural_Network_Core/Neural_Network_Core.md)（理解 CNN 架构）
+- **必修**: [优化与正则化](深度学习/Optimization/Optimization.md)（训练视觉模型）
+- **推荐**: [Transformer 革命](大模型/Transformer_Revolution/Transformer_Revolution.md)（理解 ViT 和多模态）
+- **可选**: [概率统计](数学基础/Probability_Statistics/Probability_Statistics.md)（理解扩散模型）
 
 ## 关键术语速查 (Key Terms)
 
@@ -117,8 +117,8 @@ sources: []
 - [[计算机视觉/Image_Classification_Detection/Image_Classification_Detection]] — Image_Classification_Detection
 - [[计算机视觉/Generative_Models/Generative_Models]] — Generative_Models
 - [[计算机视觉/Generative_Models/Generative_Models_for_dummy]] — Generative_Models_for_dummy
-- [[计算机视觉/CV-in-nutshell.md|CV-in-nutshell]]
-- [[概念/multimodal-vision.md|multimodal-vision]]
+- [[计算机视觉/CV_Fundamentals/CV-in-nutshell.md|CV-in-nutshell]]
+- [[概念/Vision/multimodal-vision.md|multimodal-vision]]
 - [[治理/cv-deep-learning|Cv Deep Learning]]
 
 ## 相关页面

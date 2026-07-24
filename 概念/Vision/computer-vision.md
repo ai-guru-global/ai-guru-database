@@ -12,7 +12,7 @@ relationships:
     type: related_to
 sources:
   - 计算机视觉/image-segmentation_supervised-learning_object-detection/Image_Classification_Detection.md
-  - 计算机视觉/ViT_Deep_Dive.md
+  - 计算机视觉/CV_Fundamentals/ViT_Deep_Dive.md
   - 计算机视觉/3D_Vision/3D_Vision.md
 summary: 计算机视觉让机器理解图像和视频，涵盖分类、检测、分割等任务，CNN与ViT是两大支柱架构。
 provenance:
@@ -96,7 +96,7 @@ OCR系统由文字检测+文字识别两阶段组成。经典CRNN架构采用CNN
 ## 来源
 
 - 计算机视觉/Image_Classification_Detection/Image_Classification_Detection.md
-- 计算机视觉/ViT_Deep_Dive.md
+- 计算机视觉/CV_Fundamentals/ViT_Deep_Dive.md
 - 计算机视觉/3D_Vision/3D_Vision.md
 - 计算机视觉/OCR_Text_Recognition/OCR_Text_Recognition.md
 

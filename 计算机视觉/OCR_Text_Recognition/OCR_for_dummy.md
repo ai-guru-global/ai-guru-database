@@ -186,8 +186,8 @@ ETC 识别 或 车牌识别 → 计费
 ## 下一步
 
 - 想深入技术？→ [OCR_Text_Recognition.md](./OCR_Text_Recognition.md)
-- 想学计算机视觉？→ [计算机视觉 - 小白版](../../README_for_dummy.md)
-- 想学深度学习？→ [神经网络核心 - 小白版](../../深度学习/Neural_Network_Core/Neural_Network_Core_for_dummy.md)
+- 想学计算机视觉？→ [计算机视觉 - 小白版](../.README_for_dummy.md)
+- 想学深度学习？→ [神经网络核心 - 小白版](深度学习/Neural_Network_Core/Neural_Network_Core_for_dummy.md)
 
 ---
 

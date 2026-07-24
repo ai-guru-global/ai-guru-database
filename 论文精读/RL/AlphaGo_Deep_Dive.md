@@ -371,7 +371,7 @@ flowchart TB
 
 ---
 
-*本文是 [README.md](../../README.md) 的补充，适合想深入理解 AlphaGo 和深度 RL 原理的读者。*
+*本文是 [README.md](../.README.md) 的补充，适合想深入理解 AlphaGo 和深度 RL 原理的读者。*
 *原始论文: [Mastering the Game of Go with Deep Neural Networks and Tree Search](https://www.nature.com/articles/nature16961)*
 
 ## Related

@@ -95,7 +95,7 @@ sources: []
 - [[架构基建/AI_SRE_Runbook.md|AI SRE Runbook]] — AI 基础设施稳定性与故障恢复
 - [[行业应用/AI_Platform_Selection_2026.md|AI 平台选型 2026]] — 云厂商训练平台成本对比
 - [[行业应用/AI_Production_Architecture_2026.md|AI 生产架构 2026]] — 从训练到部署的整体架构视角
-- [[概念/finops.md|FinOps]] — 云成本治理基础概念
+- [[概念/General/finops.md|FinOps]] — 云成本治理基础概念
 
 ---
 

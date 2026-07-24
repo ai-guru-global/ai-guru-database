@@ -423,12 +423,12 @@ flowchart TB
 
 ## 🔗 相关主题
 
-- [行业应用完整版](./AI_Applications_Industry.md) —— 深入各行业案例
+- [行业应用完整版](行业应用/Industry_Overview/AI_Applications_Industry.md) —— 深入各行业案例
 - [行业应用 - 小白版](./AI_Applications_Industry_for_dummy.md) —— 零基础入门
 - [医疗 AI](Healthcare/) —— 医疗行业深度
 - [金融 AI](Finance/) —— 金融行业深度
 - [自动驾驶](Autonomous_Driving/) —— 自动驾驶深度
-- [AI 伦理安全速成指南](../伦理安全/Ethics-in-nutshell.md) —— 合规基础
+- [AI 伦理安全速成指南](伦理安全/Ethics_Fundamentals/Ethics-in-nutshell.md) —— 合规基础
 
 ---
 
@@ -436,7 +436,7 @@ flowchart TB
 
 ## Related
 
-- [[行业应用/Industry_Comparison_2026.md|Industry_Comparison_2026]]
+- [[行业应用/Industry_Overview/Industry_Comparison_2026.md|Industry_Comparison_2026]]
 - [[行业应用/README.md|行业应用 README]]
 - [[行业应用/README_for_dummy.md|README_for_dummy]]
 - [[行业应用/AI_Agriculture_2026.md|AI_Agriculture_2026]]

@@ -788,14 +788,14 @@ AI Stack 一体机交付后，日常生产环境涉及容器运行时、GPU 监�
 
 | 文档 | 内容 | 适用角色 |
 |------|------|----------|
-| [AI Stack 生产工具链总览](./AI_Stack/AI_Stack_Production_Toolchain.md) | 工具全景速查与生命周期流程图 | 所有 AI Stack 用户 |
-| [容器与运行时](./AI_Stack/AI_Stack_Container_Runtime_Guide.md) | nerdctl / crictl / ctr / docker / podman | SRE、平台工程师 |
-| [GPU 监控](./AI_Stack/AI_Stack_GPU_Monitoring_Guide.md) | nvidia-smi / ppu-smi / rocm-smi / pmon | 运维、性能工程师 |
-| [模型下载与管理](./AI_Stack/AI_Stack_Model_Management_Guide.md) | huggingface-cli / modelscope / git-lfs | 模型工程师 |
-| [推理服务](./AI_Stack/AI_Stack_Inference_Serving_Guide.md) | vLLM / SGLang / Ollama / llama-server | 推理工程师 |
-| [训练启动器](./AI_Stack/AI_Stack_Training_Launchers_Guide.md) | torchrun / accelerate / deepspeed / swift | 训练工程师 |
-| [K8s 编排](./AI_Stack/AI_Stack_K8s_Operations_Guide.md) | kubectl / helm | K8s 工程师 |
-| [AI Stack 专属工具](./AI_Stack/AI_Stack_Exclusive_Tools_Guide.md) | stackops / aioController | AI Stack 运维 |
+| [AI Stack 生产工具链总览](架构基建/AI_Stack/AI_Stack_Production_Toolchain.md) | 工具全景速查与生命周期流程图 | 所有 AI Stack 用户 |
+| [容器与运行时](架构基建/AI_Stack/AI_Stack_Container_Runtime_Guide.md) | nerdctl / crictl / ctr / docker / podman | SRE、平台工程师 |
+| [GPU 监控](架构基建/AI_Stack/AI_Stack_GPU_Monitoring_Guide.md) | nvidia-smi / ppu-smi / rocm-smi / pmon | 运维、性能工程师 |
+| [模型下载与管理](架构基建/AI_Stack/AI_Stack_Model_Management_Guide.md) | huggingface-cli / modelscope / git-lfs | 模型工程师 |
+| [推理服务](架构基建/AI_Stack/AI_Stack_Inference_Serving_Guide.md) | vLLM / SGLang / Ollama / llama-server | 推理工程师 |
+| [训练启动器](架构基建/AI_Stack/AI_Stack_Training_Launchers_Guide.md) | torchrun / accelerate / deepspeed / swift | 训练工程师 |
+| [K8s 编排](架构基建/AI_Stack/AI_Stack_K8s_Operations_Guide.md) | kubectl / helm | K8s 工程师 |
+| [AI Stack 专属工具](架构基建/AI_Stack/AI_Stack_Exclusive_Tools_Guide.md) | stackops / aioController | AI Stack 运维 |
 
 ---
 

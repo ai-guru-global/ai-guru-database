@@ -14,7 +14,7 @@ sources: []
 ---
 
 > [!warning] 生产安全提示 · Production Safety
-> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../治理/Production_Safety_Policy.md)。
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # LLM 量化技术深度解析 2026
 
@@ -831,7 +831,7 @@ NF4 误差:  ▁▁▂▁▁▁▁▁▂▁▁  (中心几乎为 0)
 
 ```python
 # QLoRA 4-bit 加载 (NF4 + Double Quantization)
-# 参考: ../大模型/Fine_tuning_Techniques/PEFT_2026.md
+# 参考: 大模型/Fine_tuning_Techniques/PEFT_2026.md
 # ═══════════════════════════════════════════════════════════════
 
 from transformers import AutoModelForCausalLM, BitsAndBytesConfig
@@ -1596,7 +1596,7 @@ Q2_K         3.2 GB   7.94    68 tok/s            极限压缩
 
 ```python
 # QLoRA: 4-bit NF4 加载 + LoRA 微调
-# 参考: ../大模型/Fine_tuning_Techniques/PEFT_2026.md
+# 参考: 大模型/Fine_tuning_Techniques/PEFT_2026.md
 # ═══════════════════════════════════════════════════════════════
 
 import torch

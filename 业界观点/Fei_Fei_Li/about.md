@@ -137,13 +137,13 @@ sources: []
 
 ## 交叉引用 (Cross-References)
 
-- [Talks 主题合成 2026](../Talks_Synthesis_2026.md) — 查看 Fei-Fei Li 在各主题中的立场
+- [Talks 主题合成 2026](业界观点/Talks_Synthesis/Talks_Synthesis_2026.md) — 查看 Fei-Fei Li 在各主题中的立场
 - [[业界观点/Andrej_Karpathy/about]] — Karpathy 是李飞飞的博士生
 - [[业界观点/Andrew_Ng/about]] — Ng 与李飞飞同为斯坦福教授，关注 AI 教育与社会影响
 - [[业界观点/Yann_LeCun/about]] — LeCun 与李飞飞在视觉 AI 方向有技术共鸣
 - [计算机视觉](../../计算机视觉/README.md) — ImageNet 与视觉识别发展
-- [AI 历史时间线](../../入门/AI_History_Timeline.md) — ImageNet 革命
-- [AI 伦理与社会](../../入门/AI_Ethics_Society.md) — 以人为本 AI 与多样性
+- [AI 历史时间线](入门/Fundamentals/AI_History_Timeline.md) — ImageNet 革命
+- [AI 伦理与社会](入门/Ethics_and_Future/AI_Ethics_Society.md) — 以人为本 AI 与多样性
 
 ---
 

@@ -187,7 +187,7 @@ AI 开源项目分类
 
 | 工具 | 类型 | 开发商 | 文档 |
 |------|------|--------|------|
-| **Claude Code** | CLI | Anthropic | [Deep Dive](./Agentic_Coding_Tools/Claude_Code_Deep_Dive.md) |
+| **Claude Code** | CLI | Anthropic | [Deep Dive](智能体/Agentic_Coding_Tools/Claude_Code_Deep_Dive.md) |
 | **OpenCode** | CLI | OpenCode | [Deep Dive](智能体/Agentic_Coding_Tools/OpenCode_Deep_Dive.md) |
 | **Cursor** | IDE | Cursor | [Deep Dive](智能体/Agentic_Coding_Tools/Windsurf_Cursor_Devin_Dive.md) |
 | **Windsurf** | IDE | Codeium | [Deep Dive](智能体/Agentic_Coding_Tools/Windsurf_Cursor_Devin_Dive.md) |
@@ -254,7 +254,7 @@ AI 开源项目分类
 
 | 工具 | 特点 | 文档 |
 |------|------|------|
-| **PromptLayer** | 请求追踪 | [Deep Dive](../模型运维/Observability/PromptLayer_Deep_Dive.md) |
+| **PromptLayer** | 请求追踪 | [Deep Dive](模型运维/Observability/PromptLayer_Deep_Dive.md) |
 | **LangSmith** | LLM 调试 | [Deep Dive](模型运维/Observability/LangSmith_Deep_Dive.md) |
 
 ### 7.4 MLOps 平台
@@ -271,7 +271,7 @@ AI 开源项目分类
 
 | 工具 | 特点 | 文档 |
 |------|------|------|
-| **Guardrails AI** | 输入/输出护栏 | [Deep Dive](../运维/SRE_Reliability/Guardrails_Deep_Dive.md) |
+| **Guardrails AI** | 输入/输出护栏 | [Deep Dive](运维/SRE_Reliability/Guardrails_Deep_Dive.md) |
 | **Llama Guard** | 内容安全 | (见 AI_Safety_2026.md) |
 
 ### 7.6 LLM 评估

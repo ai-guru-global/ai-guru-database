@@ -22,8 +22,8 @@ sources: []
 ## 前置知识
 
 - **必修**: [概率统计](../Probability_Statistics/Probability_Statistics.md)（期望计算）
-- **必修**: [微积分与优化](../Calculus_Optimization/Calculus_Optimization.md)（最优响应）
-- **推荐**: [强化学习基础](../../强化学习/RL_Foundations/RL_Foundations.md)（MDP 与博弈的关系）
+- **必修**: [微积分与优化](数学基础/Calculus_Optimization.md)（最优响应）
+- **推荐**: [强化学习基础](强化学习/RL_Foundations/RL_Foundations.md)（MDP 与博弈的关系）
 
 ## 与其他模块的关联
 

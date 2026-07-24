@@ -933,8 +933,8 @@ print(plate)
 ### 相关文档
 
 - [3D 计算机视觉](../3D_Vision/3D_Vision.md)
-- [计算机视觉概述](../CV-in-nutshell.md)
-- [部署推理 2026](../../部署推理/Deployment_Inference_2026.md)
+- [计算机视觉概述](计算机视觉/CV_Fundamentals/CV-in-nutshell.md)
+- [部署推理 2026](部署推理/Deployment_Fundamentals/Deployment_Inference_2026.md)
 - [PaddleOCR 官方文档](https://github.com/PaddlePaddle/PaddleOCR)
 - [Tesseract 官方文档](https://github.com/tesseract-ocr/tesseract)
 

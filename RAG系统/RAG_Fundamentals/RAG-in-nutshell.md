@@ -583,9 +583,9 @@ flowchart TB
 
 ## 🔗 相关主题
 
-- [推理](../部署推理/Inference-in-nutshell.md) - 运行大模型部分
-- [智能体](../智能体/Agent_Foundations/Agent-in-nutshell.md) - RAG + 动作
-- [工作流](../智能体/Agent_Workflow/Workflow-in-nutshell.md) - 生产环境中的 RAG
+- [推理](部署推理/Deployment_Fundamentals/Inference-in-nutshell.md) - 运行大模型部分
+- [智能体](智能体/Agent_Foundations/Agent-in-nutshell.md) - RAG + 动作
+- [工作流](智能体/Agent_Workflow/Workflow-in-nutshell.md) - 生产环境中的 RAG
 
 ## Related
 

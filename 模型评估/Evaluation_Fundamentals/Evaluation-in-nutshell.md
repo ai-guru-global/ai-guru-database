@@ -496,11 +496,11 @@ flowchart TB
 
 ## 🔗 相关主题
 
-- [模型训练速成指南](../模型训练/Model-Training-in-nutshell.md) —— 如何训练模型
-- [RAG 速成指南](../RAG系统/RAG-in-nutshell.md) —— LLM 应用评估
-- [模型评估完整版](./Model_Evaluation.md) —— 深入评估方法论
-- [模型评估 - 小白版](./Model_Evaluation_for_dummy.md) —— 零基础入门
-- [自动化评估](./Evaluation_Automation_2026.md) —— 2026 自动化评估趋势
+- [模型训练速成指南](模型训练/Training_Fundamentals/Model-Training-in-nutshell.md) —— 如何训练模型
+- [RAG 速成指南](RAG系统/RAG_Fundamentals/RAG-in-nutshell.md) —— LLM 应用评估
+- [模型评估完整版](模型评估/Evaluation_Fundamentals/Model_Evaluation.md) —— 深入评估方法论
+- [模型评估 - 小白版](模型评估/Evaluation_Fundamentals/Model_Evaluation_for_dummy.md) —— 零基础入门
+- [自动化评估](模型评估/Automation/Evaluation_Automation_2026.md) —— 2026 自动化评估趋势
 
 ---
 
@@ -508,7 +508,7 @@ flowchart TB
 
 ## Related
 
-- [[模型评估/Model_Evaluation.md|Model_Evaluation]]
+- [[模型评估/Evaluation_Fundamentals/Model_Evaluation.md|Model_Evaluation]]
 - [[模型评估/README.md|模型评估 README]]
 - [[智能体/Agent_Evaluation/Assessment/Evaluation_Workflow.md|Evaluation_Workflow]]
 - [[智能体/Agent_Evaluation/Cloud_Agent_Evaluation/README.md|Cloud_Agent_Evaluation README]]

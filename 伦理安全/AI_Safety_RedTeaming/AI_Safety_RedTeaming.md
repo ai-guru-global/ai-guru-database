@@ -776,14 +776,14 @@ APD = mean(||x_adv - x_orig||_p)
 
 ### 前置知识
 
-- [价值对齐](../Value_Alignment/Value_Alignment.md) - 对齐是安全的基础
-- [Prompt 工程](../../大模型/Prompt_Engineering/Prompt_Engineering.md) - 理解提示机制才能防御注入
-- [RAG 系统](../../RAG系统/RAG_Systems.md) - 间接注入攻击的高发场景
+- [价值对齐](.伦理安全/Value_Alignment/Value_Alignment.md) - 对齐是安全的基础
+- [Prompt 工程](大模型/Prompt_Engineering/Prompt_Engineering.md) - 理解提示机制才能防御注入
+- [RAG 系统](RAG系统/RAG_Fundamentals/RAG_Systems.md) - 间接注入攻击的高发场景
 
 ### 进阶推荐
 
-- [模型部署与推理](../../部署推理/Deployment_Inference.md) - 生产环境安全加固
-- [分布式系统](../../数学基础/Distributed_Systems/Distributed_Systems.md) - 理解系统层面的攻击面
+- [模型部署与推理](部署推理/Deployment_Fundamentals/Deployment_Inference.md) - 生产环境安全加固
+- [分布式系统](数学基础/Distributed_Systems/Distributed_Systems.md) - 理解系统层面的攻击面
 
 ## 8. 面试高频问题 (Interview FAQs)
 

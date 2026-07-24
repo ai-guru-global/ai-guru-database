@@ -10,7 +10,7 @@ relationships:
   - target: "概念/data-cleaning-pipeline"
     type: complementary
 sources:
-  - 概念/data-cleaning-pipeline.md
+  - 概念/General/data-cleaning-pipeline.md
   - 治理/pretraining-synthetic-data.md
 summary: "Synthetic Data（合成数据）是用 LLM 或算法生成的人工标注数据，用于训练数据增强 / 蒸馏 / 隐私保护；2026 年是高质量领域数据和隐私敏感场景的核心方案。"
 lifecycle: reviewed

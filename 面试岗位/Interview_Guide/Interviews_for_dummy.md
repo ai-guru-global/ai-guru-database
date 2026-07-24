@@ -353,11 +353,11 @@ AI 岗位 LeetCode 重点:
 
 ## 🔗 推荐资源
 
-- [面试问题库](./LLM_Platform_Engineer/question_bank.md) —— 按岗位分类的问题
-- [面试答案参考](./LLM_Platform_Engineer/interview_answers.md) —— 参考回答模板
-- [AI 基础 - 小白版](../数学基础/README_for_dummy.md) —— 补基础知识
-- [模型训练速成指南](../模型训练/Model-Training-in-nutshell.md) —— 训练原理
-- [模型评估 - 小白版](../模型评估/Model_Evaluation_for_dummy.md) —— 评估指标
+- [面试问题库](面试岗位/LLM_Platform_Engineer/question_bank.md) —— 按岗位分类的问题
+- [面试答案参考](面试岗位/LLM_Platform_Engineer/interview_answers.md) —— 参考回答模板
+- [AI 基础 - 小白版](.数学基础/README_for_dummy.md) —— 补基础知识
+- [模型训练速成指南](模型训练/Training_Fundamentals/Model-Training-in-nutshell.md) —— 训练原理
+- [模型评估 - 小白版](模型评估/Evaluation_Fundamentals/Model_Evaluation_for_dummy.md) —— 评估指标
 
 ---
 

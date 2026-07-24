@@ -126,7 +126,7 @@ flowchart LR
 | 工具 | 强项 | 适用场景 | 关联 |
 |------|------|----------|------|
 | TensorBoard | 训练日志原生支持 | 训练曲线/嵌入 | [[可视化/Training_Viz/index\|Training Viz]] |
-| Weights & Biases | 实验追踪/协作 | 多实验对比 | [[测试/Weights_Biases/index\|Weights & Biases]] |
+| Weights & Biases | 实验追踪/协作 | 多实验对比 | [[测试/Weights_Biases_Deep_Dive\|Weights & Biases]] |
 | Plotly / Dash | 交互式图表 | 评估图表/仪表盘 | [[可视化/Evaluation_Viz/index\|Evaluation Viz]] |
 | ECharts / D3.js | Web 可视化 | 系统仪表盘 | [[可视化/System_Viz/index\|System Viz]] |
 | t-SNE / UMAP | 降维投影 | 嵌入/特征 | [[可视化/Evaluation_Viz/Dimensionality_Reduction_Viz\|降维可视化]] |
@@ -150,9 +150,9 @@ flowchart LR
 ## 八、章节维护说明
 
 - 本 index 是可视化章节的总入口，新增文件后请同步更新"文件导航"与子域 index。
-- 深度页（Deep Dive）须 ≥ 450 行，含 ≥ 3 表格、≥ 7 wikilink，遵循 [[治理/Document_Templates\|文档模板规范]]。
+- 深度页（Deep Dive）须 ≥ 450 行，含 ≥ 3 表格、≥ 7 wikilink，遵循 [[治理/Document_Templates|文档模板规范]]。
 - 图表示例首选 Mermaid，次选 ASCII/表格，避免依赖外链图片。
-- 质量验收参见 [[治理/Quality_Metrics\|质量度量]] 的深度评分卡。
+- 质量验收参见 [[治理/Quality_Metrics|质量度量]] 的深度评分卡。
 
 ---
 
@@ -195,7 +195,7 @@ flowchart LR
 - [[模型评估/index|模型评估]] — 可视化的评估侧来源
 - [[架构基建/index|架构基建]] — 系统可视化的架构基础
 - [[模型运维/index|模型运维]] — 仪表盘与告警的运维上下文
-- [[测试/Weights_Biases/index|Weights & Biases]] — 实验追踪工具
+- [[测试/Weights_Biases_Deep_Dive|Weights & Biases]] — 实验追踪工具
 - [[深度学习/index|深度学习]] — 注意力/嵌入/降维的理论基础
 - [[治理/Best_Practices|治理最佳实践]] — 跨章节最佳实践参考
 

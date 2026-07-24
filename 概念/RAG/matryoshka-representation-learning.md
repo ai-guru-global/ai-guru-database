@@ -21,7 +21,7 @@ relationships:
 sources:
   - "RAG系统/Embeddings/Matryoshka_Representation_Learning_Deep_Dive.md"
   - "论文精读/Efficiency/Matryoshka_Representation_Learning_Deep_Dive.md"
-  - "RAG系统/Matryoshka_Representation_Learning_for_dummy.md"
+  - "RAG系统/Embeddings/Matryoshka_Representation_Learning_for_dummy.md"
   - "概念/embeddings-vectors-mrl-plain.md"
 created: "2026-06-12"
 updated: "2026-07-21"

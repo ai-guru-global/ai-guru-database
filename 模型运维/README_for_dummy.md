@@ -134,13 +134,13 @@ MLOps 流程:
 
 ---
 
-*本文是 [README.md](./README.md) 的简化版，适合零基础读者。*
+*本文是 [README.md](README.md) 的简化版，适合零基础读者。*
 
 ## Related
 
 - [[模型运维/Orchestration/Data_Pipeline_Orchestration.md|Data_Pipeline_Orchestration]]
-- [[模型运维/MLOps-in-nutshell.md|MLOps-in-nutshell]]
-- [[概念/mlops.md|mlops]]
+- [[模型运维/MLOps_Fundamentals/MLOps-in-nutshell.md|MLOps-in-nutshell]]
+- [[概念/MLOps/mlops.md|mlops]]
 
 ## MLOps核心流程对比
 

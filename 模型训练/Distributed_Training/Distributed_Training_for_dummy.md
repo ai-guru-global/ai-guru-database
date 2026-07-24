@@ -424,7 +424,7 @@ FSDP 是 PyTorch 版本的 ZeRO-3
 你已经了解了分布式训练的基础知识！🎉
 
 建议接下来：
-1. **了解训练基础**：阅读 [模型训练入门](../Model_Training_for_dummy.md)
+1. **了解训练基础**：阅读 [模型训练入门](模型训练/Training_Fundamentals/Model_Training_for_dummy.md)
 2. **深入学习**：阅读 [分布式训练专业版](./Distributed_Training_2026.md)
 3. **动手实践**：用 Hugging Face `accelerate` 库体验简单的分布式训练
 

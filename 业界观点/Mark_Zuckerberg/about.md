@@ -143,11 +143,11 @@ Zuckerberg 的 AI 核心哲学：
 
 ## 交叉引用 (Cross-References)
 
-- [Talks 主题合成 2026](../Talks_Synthesis_2026.md) — 查看 Zuckerberg 在各主题中的立场
+- [Talks 主题合成 2026](业界观点/Talks_Synthesis/Talks_Synthesis_2026.md) — 查看 Zuckerberg 在各主题中的立场
 - [[业界观点/Yann_LeCun/about]] — LeCun 是 Zuckerberg 聘请的首席 AI 科学家，两人共享开源理念
 - [[业界观点/Elon_Musk/about]] — Musk 离开 OpenAI (转向闭源)，Zuckerberg 推动开源，形成对比
 - [[业界观点/Sundar_Pichai/about]] — Pichai (Google) 与 Zuckerberg 在 AI 商业化策略上有差异
-- [AI 伦理与社会](../../入门/AI_Ethics_Society.md) — 开源 vs 闭源之争
+- [AI 伦理与社会](入门/Ethics_and_Future/AI_Ethics_Society.md) — 开源 vs 闭源之争
 - [大模型基础](../../大模型/README.md) — LLaMA 系列与开源 LLM 生态
 
 ---

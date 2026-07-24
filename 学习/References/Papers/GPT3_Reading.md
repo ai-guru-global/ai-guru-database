@@ -218,6 +218,90 @@ GPT-3 论文对 In-Context Learning 的解释（也是后续研究的核心议�
 - 模型是"记忆"还是"推理"？如何区分？
 - 如何根本性解决幻觉？
 
+## In-Context Learning 的机制详解
+
+**Zero-Shot（零样本）**:
+```
+Prompt: "Translate English to French: cheese => "
+```
+模型仅靠预训练知识完成任务，没有任何示例。
+
+**One-Shot（单样本）**:
+```
+Prompt: "Translate English to French: sea otter => loutre de mer;
+         cheese => "
+```
+给一个示例，模型从示例中"领悟"任务模式。
+
+**Few-Shot（少样本，通常 2-10 个示例）**:
+```
+Prompt: "Translate: cat => chat; dog => chien; bird => oiseau; cheese => "
+```
+给多个示例，模型表现随示例数增加而提升。
+
+**核心洞察**: 这些"学习"都不更新权重，只在推理时通过 prompt 上下文完成。模型似乎真正"理解"了任务格式。
+
+**为什么规模重要？** 小模型（如 GPT-2 1.5B）几乎无法做 Few-Shot；GPT-3 175B 才展现出这种"涌现能力"。这印证了 Scaling Law。
+
+## 模型规模与能力的对照
+
+| 参数 | GPT-3 规模 | 对比 |
+|------|-----------|------|
+| 参数量 | 175B | GPT-2 的 117 倍 |
+| 上下文窗口 | 2048 tokens | 现代 LLM 已达 128K+ |
+| 训练数据 | 300B tokens（含 Common Crawl） | 约 570GB 文本 |
+| 训练算力 | ~355 GPU-年 | 当时最大规模 |
+| Embedding 维度 | 12288 | - |
+| 层数 | 96 | - |
+| 注意力头数 | 96 | - |
+
+**架构**: 与 GPT-2 基本相同（Decoder-only Transformer + Sparse Attention 变体），主要靠**规模**取胜。
+
+## 评估任务全景（论文最厚重的部分）
+
+论文在 50+ 个任务上评估，主要类别：
+
+| 任务类别 | 代表任务 | Few-Shot 表现 |
+|---------|---------|--------------|
+| 翻译 | WMT / XSum | 良好（尤其常见语种） |
+| 问答 | TriviaQA / NaturalQS | 接近 SOTA（无需微调） |
+| 数学 | 算术应用题 | 中等（小学水平） |
+| 代码生成 | 简单函数 | 出乎意料地好 |
+| 新闻生成 | 新文章 | 人类仅 52% 准确率识别 |
+| 创意写作 | 故事/诗歌 | 流畅但深度有限 |
+| 推理 | analogies/logic | 较弱，是局限 |
+
+**关键发现**: 在许多任务上，Few-Shot 已接近或超过专门微调的小模型——展示了通用大模型的潜力。
+
+## Scaling Law 的实证
+
+论文隐含验证了 Kaplan et al. (2020) 的 Scaling Law:
+```
+Loss ≈ A / N^α + B / D^β + C
+
+模型从 1.25B → 175B，Loss 持续下降，未见饱和。
+```
+这为后续的 GPT-4/PaLM/Gemini 奠定了"大力出奇迹"的信心。
+
+## 批判性思考的扩展
+
+**值得反思的问题**:
+1. **数据污染**: 训练数据来自全网，部分测试集可能被"见过"。后续研究（如 Carlini et al.）证实 memorization 现象严重。
+2. **评估偏差**: Few-Shot 示例的选择对结果影响大，复现性存疑。
+3. **"涌现"的本质**: 是真涌现还是被低估的小模型？后续研究（Schaeffer 2023）质疑"涌现"可能是评估指标的非线性造成的错觉。
+4. **环境影响**: 训练一次 GPT-3 的碳排放相当于 5 辆汽车的终身排放。
+5. **公平性**: 训练成本让学术界几乎无法参与大规模 LLM 研究。
+
+**长期影响**: 这篇论文定义了 2020-2023 年的 LLM 范式（大模型 + Prompt + Few-Shot），直到 ChatGPT（RLHF + 对话）开启新阶段。
+
+## 与知识库其他内容的连接
+
+- [[学习/concepts/stage4_frontier|Scaling Law]] — 前沿探索中的核心概念
+- [[学习/References/Papers/Attention_Is_All_You_Need_Reading|Transformer 论文]] — 架构源头
+- [[大模型/Prompt_Engineering/Prompt_Engineering|Prompt Engineering]] — Few-Shot 是核心技巧
+- [[学习/concepts/stage2_core_tech|预训练 vs 微调]] — ICL 是"第三条路"
+- [[学习/References/books/hands-on-llms-alammar|Hands-On LLMs]] — 可视化理解 LLM
+
 ## 如何精读这篇论文
 
 ### 推荐阅读顺序

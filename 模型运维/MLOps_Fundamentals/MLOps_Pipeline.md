@@ -15,7 +15,7 @@ sources: []
 ---
 
 > [!warning] 生产安全提示 · Production Safety
-> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../治理/Production_Safety_Policy.md)。
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # MLOps 流水线 (MLOps Pipeline)
 
@@ -719,14 +719,14 @@ METRICS = {
 ## 8. 与其他主题的关联 (Connections)
 
 ### 前置知识
-- [监督学习](../机器学习/Supervised_Learning/Supervised_Learning.md) — 理解模型训练流程
-- [特征工程](../机器学习/Feature_Engineering/Feature_Engineering.md) — Feature Store 的基础
-- [分布式系统](../数学基础/Distributed_Systems/Distributed_Systems.md) — 分布式训练基础设施
+- [监督学习](机器学习/Supervised_Learning/Supervised_Learning.md) — 理解模型训练流程
+- [特征工程](机器学习/Feature_Engineering/Feature_Engineering.md) — Feature Store 的基础
+- [分布式系统](数学基础/Distributed_Systems/Distributed_Systems.md) — 分布式训练基础设施
 
 ### 进阶方向
-- [模型部署与推理](../部署推理/Deployment_Inference.md) — MLOps 的推理服务层
-- [模型评估](../模型评估/Model_Evaluation.md) — Pipeline 中的评估环节
-- [RAG 系统](../RAG系统/RAG_Systems.md) — LLMOps 中 RAG Pipeline 的管理
+- [模型部署与推理](部署推理/Deployment_Fundamentals/Deployment_Inference.md) — MLOps 的推理服务层
+- [模型评估](模型评估/Evaluation_Fundamentals/Model_Evaluation.md) — Pipeline 中的评估环节
+- [RAG 系统](RAG系统/RAG_Fundamentals/RAG_Systems.md) — LLMOps 中 RAG Pipeline 的管理
 
 ---
 
@@ -774,5 +774,5 @@ METRICS = {
 ## Related
 
 - [[模型运维/Orchestration/Data_Pipeline_Orchestration.md|Data_Pipeline_Orchestration]]
-- [[模型运维/MLOps-in-nutshell.md|MLOps-in-nutshell]]
-- [[概念/mlops.md|mlops]]
+- [[模型运维/MLOps_Fundamentals/MLOps-in-nutshell.md|MLOps-in-nutshell]]
+- [[概念/MLOps/mlops.md|mlops]]

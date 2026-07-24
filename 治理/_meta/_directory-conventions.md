@@ -149,7 +149,7 @@ ai-guru-database/
 | 目录 | 用途 | 状态 |
 |------|------|------|
 | `原始/` | 原始素材（未处理） | 暂存区，处理后移入正式目录 |
-| `_staging/` | 待审核内容 & 生成缓存 | 含 `hot.md` 等运行时生成文件 |
+| `_staging/` | 待审核内容 & 生成缓存 | 含 `治理/hot.md` 等运行时生成文件 |
 | `归档/` | 已归档的旧版本 | 长期保留，不再更新（含 `log.md`） |
 
 **生命周期**: `原始/` → `_staging/` → 主章节/辅助目录 → `归档/`
@@ -196,12 +196,12 @@ git config core.hooksPath .githooks
 | `README.md` | 项目主页（中文） |
 | `README_EN.md` | 项目主页（英文） |
 | `README_for_dummy.md` | 入门版说明 |
-| `ROADMAP.md` | 年度规划 |
-| `CONTRIBUTING.md` | 贡献指南 |
-| `KNOWN_ISSUES.md` | 已知问题追踪 |
+| `治理/ROADMAP.md` | 年度规划 |
+| `治理/CONTRIBUTING.md` | 贡献指南 |
+| `治理/KNOWN_ISSUES.md` | 已知问题追踪 |
 | `LICENSE` | MIT 许可证 |
 | `index.md` | Wiki 索引页（自动生成） |
-| `hot.md` | 热门页面导航（**正式入口**，非暂存；用户与 Agent 的快捷入口） |
+| `治理/hot.md` | 热门页面导航（**正式入口**，非暂存；用户与 Agent 的快捷入口） |
 | `.gitignore` | Git 忽略规则 |
 
 ---

@@ -129,12 +129,12 @@ Sutskever 认为：
 
 ## 交叉引用 (Cross-References)
 
-- [Talks 主题合成 2026](../Talks_Synthesis_2026.md) — 查看 Sutskever 在 Scaling Laws、开源 vs 闭源、AI 安全等主题中的立场
+- [Talks 主题合成 2026](业界观点/Talks_Synthesis/Talks_Synthesis_2026.md) — 查看 Sutskever 在 Scaling Laws、开源 vs 闭源、AI 安全等主题中的立场
 - [[业界观点/Geoffrey_Hinton/about]] — Hinton 是 Sutskever 的博士导师，两人共同开发 AlexNet
 - [[业界观点/Mira_Murati/about]] — Murati 与 Sutskever 同为 OpenAI 核心领导层
 - [大模型基础](../../大模型/README.md) — GPT 系列与 Scaling Laws
-- [AI 历史时间线](../../入门/AI_History_Timeline.md) — AlexNet、Seq2Seq、GPT 的发展
-- [AI 伦理与社会](../../入门/AI_Ethics_Society.md) — 对齐研究与 AI 安全
+- [AI 历史时间线](入门/Fundamentals/AI_History_Timeline.md) — AlexNet、Seq2Seq、GPT 的发展
+- [AI 伦理与社会](入门/Ethics_and_Future/AI_Ethics_Society.md) — 对齐研究与 AI 安全
 
 ---
 

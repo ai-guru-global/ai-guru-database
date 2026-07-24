@@ -259,6 +259,6 @@ graph TD
 - [[学习/pathways/index|学习路径]]
 - [[大模型/]] — 大模型知识章节
 - [[伦理安全/Value_Alignment/Value_Alignment_for_dummy|价值对齐]]
-- [[入门/AI_Learning_Resources.md|AI_Learning_Resources]]
+- [[入门/Learning_Path/AI_Learning_Resources.md|AI_Learning_Resources]]
 
 > **关联**: → [[学习/concepts/index|概念分阶]] | [[学习/concepts/stage1_foundation|Stage 1 基础]] | [[学习/pathways/absolute-beginner|零基础路径]] | [[大模型/]] | [[伦理安全/]]

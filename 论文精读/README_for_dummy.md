@@ -55,13 +55,13 @@ sources: []
 
 | 主题 | 难度 | 你会学到什么 | 文档链接 |
 |------|------|------------|---------|
-| 深度学习基础 | ⭐⭐ | 深度学习为什么在 2012 年后爆发 | [查看 README](./README.md#01-深度学习基础与优化) |
-| 视觉与表征学习 | ⭐⭐⭐ | CNN、ResNet、ViT 的核心贡献 | [查看 README](./README.md#02-视觉与表征学习) |
-| NLP 与 Transformer | ⭐⭐⭐⭐ | 从 Attention 到 GPT、BERT 的演进 | [查看 README](./README.md#03-nlp-与-transformer) |
-| 生成式模型 | ⭐⭐⭐⭐ | GAN、VAE、Diffusion 的原理 | [查看 README](./README.md#04-生成式模型) |
-| 强化学习 | ⭐⭐⭐ | DQN、PPO、AlphaGo 的秘密 | [查看 README](./README.md#05-强化学习与智能体) |
-| 规模化与工程化 | ⭐⭐⭐⭐ | Scaling Laws、ZeRO、LoRA、FlashAttention | [查看 README](./README.md#06-规模化与工程化) |
-| 对齐与安全 | ⭐⭐⭐⭐ | RLHF、Constitutional AI、DPO | [查看 README](./README.md#07-对齐与安全) |
+| 深度学习基础 | ⭐⭐ | 深度学习为什么在 2012 年后爆发 | [查看 README](README.md#01-深度学习基础与优化) |
+| 视觉与表征学习 | ⭐⭐⭐ | CNN、ResNet、ViT 的核心贡献 | [查看 README](README.md#02-视觉与表征学习) |
+| NLP 与 Transformer | ⭐⭐⭐⭐ | 从 Attention 到 GPT、BERT 的演进 | [查看 README](README.md#03-nlp-与-transformer) |
+| 生成式模型 | ⭐⭐⭐⭐ | GAN、VAE、Diffusion 的原理 | [查看 README](README.md#04-生成式模型) |
+| 强化学习 | ⭐⭐⭐ | DQN、PPO、AlphaGo 的秘密 | [查看 README](README.md#05-强化学习与智能体) |
+| 规模化与工程化 | ⭐⭐⭐⭐ | Scaling Laws、ZeRO、LoRA、FlashAttention | [查看 README](README.md#06-规模化与工程化) |
+| 对齐与安全 | ⭐⭐⭐⭐ | RLHF、Constitutional AI、DPO | [查看 README](README.md#07-对齐与安全) |
 
 ## 深度解读系列（精华！）
 
@@ -82,7 +82,7 @@ sources: []
 
 **必备基础** (建议先看这些):
 - [神经网络核心 - 小白版](深度学习/Neural_Network_Core/Neural_Network_Core_for_dummy.md) - 理解 AI 大脑的工作原理
-- [深度学习优化 - 小白版](../深度学习/Optimization/Optimization_for_dummy.md) - 理解训练过程
+- [深度学习优化 - 小白版](深度学习/Optimization/Optimization_for_dummy.md) - 理解训练过程
 
 **不需要的基础**:
 - ❌ 不需要会写论文
@@ -137,7 +137,7 @@ sources: []
 
 ---
 
-*本文是 [README.md](./README.md) 的简化版，适合零基础读者。准备好探索 AI 武林秘籍了吗？让我们开始吧！* 🚀
+*本文是 [README.md](README.md) 的简化版，适合零基础读者。准备好探索 AI 武林秘籍了吗？让我们开始吧！* 🚀
 
 ## Related
 

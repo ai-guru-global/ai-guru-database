@@ -53,7 +53,7 @@ sources: []
 
 - [20_Papers](../论文精读/README.md) — 论文阅读，可为课题提供文献支撑
 - [综合](../治理/README.md) — 综合分析，课题成果可沉淀为 synthesis 文章
-- [治理/notes](../治理/notes/README.md) — 概念笔记，课题中产生的新概念可补充至此
+- [治理/notes](治理/notes/README.md) — 概念笔记，课题中产生的新概念可补充至此
 
 ---
 

@@ -233,16 +233,16 @@ BIG-Bench:
 ## 下一步
 
 - 想学模型训练？→ [模型训练/README_for_dummy.md](../模型训练/README_for_dummy.md)
-- 想学深度学习？→ [深度学习/README_for_dummy.md](../深度学习/README_for_dummy.md)
+- 想学深度学习？→ [深度学习/README_for_dummy.md](.深度学习/README_for_dummy.md)
 - 想学测试？→ [AI测试/README_for_dummy.md](../测试/README_for_dummy.md)
 
 ---
 
-*本文是 [README.md](./README.md) 的简化版，适合零基础读者。*
+*本文是 [README.md](README.md) 的简化版，适合零基础读者。*
 
 ## Related
 
-- [[模型评估/Model_Evaluation.md|Model_Evaluation]]
+- [[模型评估/Evaluation_Fundamentals/Model_Evaluation.md|Model_Evaluation]]
 - [[模型评估/README.md|模型评估 README]]
 - [[智能体/Agent_Evaluation/Assessment/Evaluation_Workflow.md|Evaluation_Workflow]]
 - [[智能体/Agent_Evaluation/Cloud_Agent_Evaluation/README.md|Cloud_Agent_Evaluation README]]

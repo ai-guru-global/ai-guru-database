@@ -19,7 +19,7 @@ sources: []
 >
 > **一句话理解**: Spring AI RAG 是用 Spring 的方式构建检索增强生成系统 —— 从文档加载、分块策略、向量存储到检索增强的完整 Pipeline，让 Java 企业应用拥有知识库问答能力。
 
-> **相关文档**: [Spring AI 深度解析](数学基础/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md) | [Spring AI 架构设计](架构基建/Architecture_Overview/Spring_AI_Architecture) | [Milvus 深度解析](RAG系统/Vector_Databases/Milvus_Deep_Dive.md) | [RAG 高级专题](RAG系统/Advanced_RAG/RAG_Advanced_2026.md) | [RAG 基础入门](RAG系统/RAG_Systems_for_dummy.md)
+> **相关文档**: [Spring AI 深度解析](数学基础/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md) | [Spring AI 架构设计](架构基建/Architecture_Overview/Spring_AI_Architecture) | [Milvus 深度解析](RAG系统/Vector_Databases/Milvus_Deep_Dive.md) | [RAG 高级专题](RAG系统/Advanced_RAG/RAG_Advanced_2026.md) | [RAG 基础入门](RAG系统/RAG_Fundamentals/RAG_Systems_for_dummy.md)
 
 ---
 

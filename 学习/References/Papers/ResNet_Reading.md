@@ -210,6 +210,113 @@ ResNet 作为骨干网络，在目标检测任务上也大幅超越 VGG 基线�
 - 残差连接能否被更优雅的机制替代？
 - 在 Transformer 中，残差连接的作用与 CNN 中是否完全一致？
 
+## 残差连接的数学推导
+
+**核心公式**:
+```
+H(x) = F(x) + x
+```
+其中：
+- `x` 是该层的输入（identity / 恒等映射）
+- `F(x)` 是残差网络要学习的"残差" = H(x) - x
+- `H(x)` 是期望的输出
+
+**为什么叫"残差"？** 网络不直接学 H(x)，而是学 F(x) = H(x) - x（即"在恒等基础上要加多少"）。
+
+**为什么有效？梯度反传视角**:
+```
+∂L/∂x = ∂L/∂H(x) · (∂F(x)/∂x + 1)
+                                ↑
+                    这个 "+1" 让梯度可以直接回流，不经过 F
+```
+即使 F 的梯度极小，"+1" 也能保证梯度顺利传到浅层，解决梯度消失。
+
+## 退化问题（Degradation）vs 过拟合
+
+**关键区分**:
+- **过拟合**: 训练误差低 + 测试误差高
+- **退化问题**: 训练误差随网络加深而**升高**（不是过拟合！）
+
+**实验证据**: 论文图 1 显示 56 层网络的训练误差和测试误差都高于 20 层网络。这说明深层网络的**优化困难**，不是表达能力问题。
+
+**思想实验**: 理论上一个 56 层网络可以退化成 20 层网络（后 36 层做恒等映射），所以 56 层的最优解至少不会比 20 层差。但 SGD 找不到这个解——残差连接让"恒等映射"成为容易学的默认解。
+
+## 残差块的变体演进
+
+| 变体 | 结构 | 特点 |
+|------|------|------|
+| 原始 ResNet Block | Conv-BN-ReLU-Conv-BN + shortcut | 两层卷积 |
+| Bottleneck Block | 1×1 → 3×3 → 1×1 | 降维再升维，省计算 |
+| ResNeXt | 分组卷积的 Bottleneck | 引入"基数"（cardinality）|
+| DenseNet | 每层连接到所有后续层 | 特征复用 |
+| Pre-activation | BN-ReLU-Conv 顺序 | 训练更稳定 |
+
+**Bottleneck 设计**: 先用 1×1 卷积降维（256→64），3×3 卷积处理，再用 1×1 升维（64→256）。大幅降低参数量，让 50/101/152 层网络可行。
+
+## 不同深度 ResNet 的架构
+
+| 网络 | 层数 | 参数量 | Top-5 错误率 |
+|------|------|--------|-------------|
+| ResNet-18 | 18 | 11.7M | 10.92% |
+| ResNet-34 | 34 | 21.8M | 8.58% |
+| ResNet-50 | 50 | 25.6M | 7.13% |
+| ResNet-101 | 101 | 44.5M | 6.44% |
+| ResNet-152 | 152 | 60.2M | 5.71% |
+
+**观察**: 从 50 层开始用 Bottleneck Block；152 层仍未明显过拟合——残差连接的威力。
+
+## ImageNet 实验的关键数据
+
+**ImageNet 2015 分类（Top-5 错误率）**:
+- VGG（2014）: 7.3%
+- GoogLeNet（2014）: 6.7%
+- **ResNet（2015）: 3.57%** ← 首次超越人类（~5%）
+
+**集成 6 个模型**: 3.57% → 3.57%（论文报告）
+
+**COCO 目标检测**: 相比 VGG，mAP 提升约 28%，彻底改变了检测/分割领域。
+
+## 代码实现要点（PyTorch 伪代码）
+
+```python
+class BasicBlock(nn.Module):
+    def __init__(self, in_ch, out_ch, stride=1):
+        super().__init__()
+        self.conv1 = nn.Conv2d(in_ch, out_ch, 3, stride, 1, bias=False)
+        self.bn1 = nn.BatchNorm2d(out_ch)
+        self.conv2 = nn.Conv2d(out_ch, out_ch, 3, 1, 1, bias=False)
+        self.bn2 = nn.BatchNorm2d(out_ch)
+        # shortcut: 若通道/尺寸变化，用 1×1 卷积调整
+        self.shortcut = nn.Sequential()
+        if stride != 1 or in_ch != out_ch:
+            self.shortcut = nn.Sequential(
+                nn.Conv2d(in_ch, out_ch, 1, stride, bias=False),
+                nn.BatchNorm2d(out_ch))
+
+    def forward(self, x):
+        out = F.relu(self.bn1(self.conv1(x)))
+        out = self.bn2(self.conv2(out))
+        out = out + self.shortcut(x)   # 残差连接：相加
+        return F.relu(out)
+```
+
+## 残差思想在其他架构中的体现
+
+- **Transformer**: 每个 Block 都是 `x + Sublayer(LN(x))`，残差连接让深堆叠成为可能
+- **U-Net**: 跨层的 skip connection 也是残差思想的延伸
+- **Diffusion Model**: U-Net 中的残差块
+- **Modern CNN**: ConvNeXt、EfficientNet 都依赖残差连接
+
+**总结**: 残差连接是深度学习的"基础设施"之一，影响远超 CNN 领域。
+
+## 与知识库其他内容的连接
+
+- [[学习/concepts/stage1_foundation|深度学习基础]] — 概念分阶
+- [[学习/References/Papers/Attention_Is_All_You_Need_Reading|Transformer]] — 残差连接在新架构中的应用
+- [[学习/References/books/hands-on-ml-geron|Hands-On ML]] — 第 14 章 CNN 详解
+- [[计算机视觉/]] — ResNet 是 CV 的基石
+- [[学习/concepts/stage0_awakening|Stage 0]] — AI 的第三次浪潮起点
+
 ## 如何精读这篇论文
 
 ### 推荐阅读顺序

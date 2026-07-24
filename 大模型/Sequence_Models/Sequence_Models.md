@@ -364,14 +364,14 @@ class Seq2SeqDecoder(nn.Module):
 ## 7. 与其他主题的关联 (Connections)
 
 ### 前置知识
-- [神经网络核心](../../深度学习/Neural_Network_Core/Neural_Network_Core.md) — 理解前馈网络和反向传播
-- [训练优化](../../深度学习/Optimization/Optimization.md) — 梯度裁剪、学习率调度
-- [线性代数](../../数学基础/Linear_Algebra/Linear_Algebra.md) — 矩阵运算基础
+- [神经网络核心](深度学习/Neural_Network_Core/Neural_Network_Core.md) — 理解前馈网络和反向传播
+- [训练优化](深度学习/Optimization/Optimization.md) — 梯度裁剪、学习率调度
+- [线性代数](数学基础/Linear_Algebra/Linear_Algebra.md) — 矩阵运算基础
 
 ### 进阶方向
 - [Transformer 革命](../Transformer_Revolution/Transformer_Revolution.md) — 序列模型的下一代（从 Attention 机制演进而来）
 - [大语言模型架构](../LLM_Architectures/LLM_Architectures.md) — 现代 LLM 如何完全基于 Transformer
-- [强化学习基础](../../强化学习/RL_Foundations/RL_Foundations.md) — 序列决策问题
+- [强化学习基础](强化学习/RL_Foundations/RL_Foundations.md) — 序列决策问题
 
 ---
 

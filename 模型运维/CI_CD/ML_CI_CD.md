@@ -472,5 +472,5 @@ class MLPipelineMonitor:
 ## Related
 
 - [[模型运维/Orchestration/Data_Pipeline_Orchestration.md|Data_Pipeline_Orchestration]]
-- [[模型运维/MLOps-in-nutshell.md|MLOps-in-nutshell]]
-- [[概念/mlops.md|mlops]]
+- [[模型运维/MLOps_Fundamentals/MLOps-in-nutshell.md|MLOps-in-nutshell]]
+- [[概念/MLOps/mlops.md|mlops]]

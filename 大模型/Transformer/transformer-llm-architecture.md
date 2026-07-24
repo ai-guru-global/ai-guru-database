@@ -2,7 +2,7 @@
 title: Transformer 架构 × LLM 架构
 category: -synthesis
 tags: [nlp, transformer, llm, bert, gpt, attention, architecture]
-sources: [概念/transformer-architecture.md, 概念/llm-architectures.md]
+sources: [概念/LLM/transformer-architecture.md, 概念/LLM/llm-architectures.md]
 created: 2026-05-31T21:30:00+08:00
 updated: 2026-05-31T21:30:00+08:00
 summary: "从自注意力机制到Decoder-only范式：Transformer如何成为所有现代大语言模型的唯一基座，以及MoE、推理模型等架构演进如何在此之上生长。"

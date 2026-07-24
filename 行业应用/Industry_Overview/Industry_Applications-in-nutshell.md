@@ -505,19 +505,19 @@ flowchart TB
 
 ## 相关主题 (Cross-References)
 
-- [AI 应用与行业融合全景](./AI_Applications_Industry.md) -- 各行业深度案例与综合分析
+- [AI 应用与行业融合全景](行业应用/Industry_Overview/AI_Applications_Industry.md) -- 各行业深度案例与综合分析
 - [AI 行业应用对比 2026](./Industry_Comparison_2026.md) -- 10 大行业横向对比详表
-- [AI 金融深度报告](./Finance/AI_Finance_2026.md) -- 量化交易、风控、反欺诈技术细节
-- [AI 医疗深度报告](./Healthcare/AI_Healthcare_2026.md) -- 影像诊断、AlphaFold、药物研发细节
-- [AI 自动驾驶深度报告](./Autonomous_Driving/AI_Autonomous_Driving_2026.md) -- L1-L5 技术演进与 Waymo/Tesla/百度对比
-- [AI 零售电商深度报告](./Retail_Ecommerce/AI_Retail_Ecommerce_2026.md) -- 推荐系统、动态定价、智能供应链
-- [AI 制造业深度报告](./Manufacturing/AI_Manufacturing_2026.md) -- 视觉质检、数字孪生、黑灯工厂
-- [AI 教育深度报告](./Education/AI_Education_2026.md) -- 个性化学习、AI 导师、编程教育
-- [AI 内容媒体深度报告](./Content_Media/AI_Content_Media_2026.md) -- AIGC 文本/图像/视频/音乐生成
-- [AI 法律政务深度报告](./Legal_Government/AI_Legal_Government_2026.md) -- 合同审查、诉讼预测、智能政务
+- [AI 金融深度报告](行业应用/Finance/AI_Finance_2026.md) -- 量化交易、风控、反欺诈技术细节
+- [AI 医疗深度报告](行业应用/Healthcare/AI_Healthcare_2026.md) -- 影像诊断、AlphaFold、药物研发细节
+- [AI 自动驾驶深度报告](行业应用/AI_Autonomous_Driving_2026.md) -- L1-L5 技术演进与 Waymo/Tesla/百度对比
+- [AI 零售电商深度报告](行业应用/AI_Retail_Ecommerce_2026.md) -- 推荐系统、动态定价、智能供应链
+- [AI 制造业深度报告](行业应用/AI_Manufacturing_2026.md) -- 视觉质检、数字孪生、黑灯工厂
+- [AI 教育深度报告](行业应用/Education/AI_Education_2026.md) -- 个性化学习、AI 导师、编程教育
+- [AI 内容媒体深度报告](行业应用/AI_Content_Media_2026.md) -- AIGC 文本/图像/视频/音乐生成
+- [AI 法律政务深度报告](行业应用/AI_Legal_Government_2026.md) -- 合同审查、诉讼预测、智能政务
 - [AI 行业应用速成指南](./Industry-in-nutshell.md) -- 面向初学者的行业 AI 入门指南
 - [AI 行业应用小白版](./AI_Applications_Industry_for_dummy.md) -- 零基础行业 AI 科普
-- [AI 伦理安全速成指南](../伦理安全/Ethics-in-nutshell.md) -- 跨行业 AI 合规与伦理基础
+- [AI 伦理安全速成指南](伦理安全/Ethics_Fundamentals/Ethics-in-nutshell.md) -- 跨行业 AI 合规与伦理基础
 - [Agent 产品化](../智能体/) -- Agentic AI 在各行业的产品化实践
 
 ---

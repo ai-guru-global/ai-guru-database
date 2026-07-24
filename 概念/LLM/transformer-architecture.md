@@ -146,7 +146,7 @@ Transformer 训练 的标配配置：
 - [[大模型/Fine_tuning_Techniques/PEFT_2026]] — PEFT 2026 (参数高效微调) (共享: bert, gpt, nlp, transformer)
 - [[大模型/Fine_tuning_Techniques/README]] — 微调技术 (Fine-tuning Techniques) (共享: bert, gpt, nlp, transformer)
 - [[大模型/LLM_Architectures/LLM-Basics-in-nutshell]] — 大语言模型基础速成指南 (共享: bert, gpt, nlp, transformer)
-- [[概念/multimodal-models.md|multimodal-models]]
+- [[概念/Vision/multimodal-models.md|multimodal-models]]
 - [[治理/llm-nlp]]
 
 ## See Also (深度专题)

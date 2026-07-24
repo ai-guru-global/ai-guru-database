@@ -49,7 +49,7 @@ sources:
 2. **死链重写**：无法解析的链接自动转为纯文本显示文本（可通过 `--no-rewrite` 禁用），确保智能体永不跟随死链。
 3. **BFS 可达性分析**：从入口页出发，沿 wikilink 计算所有可达页面，标记不可达的 Core 页为孤儿。
 4. **验证断言**：导出后二次扫描磁盘文件，强制重写残余死链，**最终断言零断链**——这是硬保证。
-5. **清单生成**：自动生成 `corpus_manifest.json`、`index.md`、`hot.md`、`README.md`。
+5. **清单生成**：自动生成 `corpus_manifest.json`、`index.md`、`治理/hot.md`、`README.md`。
 
 ---
 
@@ -347,7 +347,7 @@ graph LR
 
 **用途**：
 - 在 `index.md` 中用 🔒 标记不可达页面
-- 在 `hot.md` 中列出不可达的 Core 页（需手动链入）
+- 在 `治理/hot.md` 中列出不可达的 Core 页（需手动链入）
 - 在 `corpus_manifest.json` 中每页记录 `reachable_from_entry: true/false`
 
 ### 4.5 双 Scope 导出策略
@@ -375,7 +375,7 @@ def select_full(root):
 **特点**：
 - 使用 `os.walk` 的 `dirnames[:] =` 原地修剪，高效跳过排除目录
 - `is_macos_dup()` 过滤 macOS 副本文件（`foo 2.md`）
-- `EXTRA_ROOT_FILES` 强制包含 `README.md`、`ROADMAP.md` 等根级文件
+- `EXTRA_ROOT_FILES` 强制包含 `README.md`、`治理/ROADMAP.md` 等根级文件
 
 #### `select_subset(base)` — `export_corpus.py:147-162`
 
@@ -469,7 +469,7 @@ flowchart TD
 第一轮重写在 `export_files` 中进行，但存在以下风险：
 1. 源文件在导出过程中被修改（竞态条件）
 2. 解析器可能有边界 case 遗漏
-3. 生成文件（`index.md`、`hot.md`）中的链接可能引用了不存在的页面
+3. 生成文件（`index.md`、`治理/hot.md`）中的链接可能引用了不存在的页面
 
 `verify_output` 从磁盘读取**ground truth**（实际写入的文件），独立计算可解析集（包含所有已导出页面），确保万无一失。
 
@@ -602,7 +602,7 @@ if args.clean and output_dir.resolve() in (root.resolve(), *root.resolve().paren
 - 入链数用反引号标注（如 `` `15` ``）
 - 不可达页面用 🔒 标记
 
-### 6.3 hot.md
+### 6.3 治理/hot.md
 
 热点页排行：
 - Core 页按入链数降序排列（Top 30）

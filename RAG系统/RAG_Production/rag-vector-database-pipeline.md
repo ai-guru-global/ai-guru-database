@@ -2,7 +2,7 @@
 title: "RAG x 向量数据库: 从 Embedding 到检索的端到端 Pipeline 工程"
 category: synthesis
 tags: [rag, vector-database, embedding, retrieval, hnsw, ivf, hybrid-search, reranking, milvus, qdrant]
-sources: [概念/rag-systems.md, 概念/vector-database.md]
+sources: [概念/RAG/rag-systems.md, 概念/RAG/vector-database.md]
 summary: "RAG 系统的检索质量上限由向量数据库的索引算法、Embedding 模型和检索策略共同决定。本文梳理从文档分块到上下文注入的完整 Pipeline，以及向量数据库选型如何影响 RAG 的最终效果。"
 created: 2026-07-02
 updated: 2026-07-02

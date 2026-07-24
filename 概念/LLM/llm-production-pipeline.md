@@ -12,7 +12,7 @@ relationships:
   - target: "概念/ab-testing-framework"
     type: includes
 sources:
-  - MLOps/LLM_Production_Pipeline_2026.md
+  - 模型运维/LLMOps/LLM_Production_Pipeline_2026.md
   - MLOps/README.md
 summary: "LLM 生产流水线是把大模型从实验环境交付到线上服务的完整工程链路，包括数据准备、训练/微调、评估、部署、监控、反馈闭环，确保模型可持续迭代且风险可控。"
 provenance:

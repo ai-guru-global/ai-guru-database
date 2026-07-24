@@ -14,7 +14,7 @@ sources: []
 ---
 
 > [!warning] 生产安全提示 · Production Safety
-> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../治理/Production_Safety_Policy.md)。
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # MLOps 速成指南
 
@@ -361,10 +361,10 @@ flowchart TB
 |------|------|
 | 完整架构 | [MLOps_Pipeline.md](./MLOps_Pipeline.md) |
 | 入门指南 | [MLOps_Pipeline_for_dummy.md](./MLOps_Pipeline_for_dummy.md) |
-| 部署推理 | [../Deployment_Inference/Inference-in-nutshell.md](../部署推理/Inference-in-nutshell.md) |
-| AI Ops | [../AI_Ops/AI_Ops_2026.md](../运维/AI_Ops_2026.md) |
-| SRE 实践 | [../AI_Ops/SRE_for_AI_Systems.md](../运维/SRE_Reliability/SRE_for_AI_Systems.md) |
-| 成本优化 | [../AI_Cost_Optimization_2026.md](../架构基建/Architecture_Overview/AI_Cost_Optimization_2026.md) |
+| 部署推理 | [../Deployment_Inference/Inference-in-nutshell.md](部署推理/Deployment_Fundamentals/Inference-in-nutshell.md) |
+| AI Ops | [../AI_Ops/AI_Ops_2026.md](运维/AIOps_Fundamentals/AI_Ops_2026.md) |
+| SRE 实践 | [../AI_Ops/SRE_for_AI_Systems.md](运维/SRE_Reliability/SRE_for_AI_Systems.md) |
+| 成本优化 | [../AI_Cost_Optimization_2026.md](架构基建/Architecture_Overview/AI_Cost_Optimization_2026.md) |
 
 ---
 

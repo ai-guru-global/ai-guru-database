@@ -14,7 +14,7 @@ sources: []
 ---
 
 > [!warning] 生产安全提示 · Production Safety
-> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../治理/Production_Safety_Policy.md)。
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # 模型推理速成指南
 
@@ -646,11 +646,11 @@ response = client.chat.completions.create(
 
 ## 🔗 相关主题
 
-- [模型训练](../模型训练/Model-Training-in-nutshell.md) - 模型是如何训练的
-- [RAG 系统](../RAG系统/RAG-in-nutshell.md) - 带检索的推理
+- [模型训练](模型训练/Training_Fundamentals/Model-Training-in-nutshell.md) - 模型是如何训练的
+- [RAG 系统](RAG系统/RAG_Fundamentals/RAG-in-nutshell.md) - 带检索的推理
 - [MLOps 流水线](../MLOps_Pipeline/) - 自动化部署
-- [SRE 实践](../运维/SRE_Reliability/SRE_for_AI_Systems.md) - SLI/SLO 与可靠性工程
-- [可观测性](../模型运维/Observability/AI_Observability_Guide.md) - AI 系统监控与追踪
+- [SRE 实践](运维/SRE_Reliability/SRE_for_AI_Systems.md) - SLI/SLO 与可靠性工程
+- [可观测性](模型运维/Observability/AI_Observability_Guide.md) - AI 系统监控与追踪
 
 ## Related
 

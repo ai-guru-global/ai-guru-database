@@ -17,6 +17,7 @@ This page indexes the contents of `部署推理`.
 - [[部署推理/GPU_Infrastructure/index|GPU Infrastructure]]
 - [[部署推理/Hardware/index|Hardware]]
 - [[部署推理/Inference_Engines/index|Inference Engines]]
+- [[部署推理/Inference_Optimization/index|Inference Optimization]]
 - [[部署推理/Inference_Performance/index|Inference Performance]]
 - [[部署推理/Quantization/index|Quantization]]
 

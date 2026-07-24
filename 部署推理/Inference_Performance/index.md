@@ -12,6 +12,8 @@ This page indexes the contents of `部署推理/Inference_Performance`.
 
 ## Files
 
+- [[部署推理/Inference_Performance/Communication_Systems_Deep_Dive|通信系统全景 (Communication Systems)]]
+- [[部署推理/Inference_Performance/Disaggregated_Serving_2026|2026 PD 分离前沿架构 (Disaggregated Serving)]]
 - [[部署推理/Inference_Performance/Embedding_Model_Serving|Embedding Model Serving]]
 - [[部署推理/Inference_Performance/Flash_Kernels_Deep_Dive|Flash Kernels Deep Dive]]
 - [[部署推理/Inference_Performance/Inference_Autoscaling_and_Load_Balancing|Inference Autoscaling And Load Balancing]]

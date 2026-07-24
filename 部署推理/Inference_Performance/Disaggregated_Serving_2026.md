@@ -237,7 +237,7 @@ Chunked（chunk_size = 512）：
 | **NVLink / NVSwitch** | 300–900 GB/s | 极低 | 同节点内多 GPU |
 | **PCIe + 主机内存中转** | 32–64 GB/s | 中 | 无 RDMA 的降级方案 |
 
-传输链路指标与 AI 集群网络设计强相关，参见 [[架构基建/AI_Networking/index|AI网络]]。
+传输链路指标与 AI 集群网络设计强相关，参见 [[架构基建/Networking/index|AI网络]]。
 
 ### 5.3 迁移延迟建模
 
@@ -540,12 +540,13 @@ MoE 模型 prefill 时专家负载波动大，分离后 prefill 池可专门做�
 ## 相关知识
 
 - [[部署推理/Inference_Performance/Prefill_Decode_Disaggregation|PD分离基础]] — 本页的基础概念版
+- [[部署推理/Inference_Optimization/Parallel_Strategies_Deep_Dive|并行策略]] — 双池如何与 TP/PP 组合
 - [[部署推理/Inference_Performance/Request_Scheduling_for_LLMs|请求调度]] — 连续批处理、抢占、优先级
 - [[部署推理/Inference_Performance/Long_Context_Inference_2026|长上下文推理]] — 长上下文为何放大 PD 分离收益
 - [[部署推理/Caching/KV_Cache_Deep_Dive|KV Cache 深度]] — paging、GQA/MLA、量化（迁移的基础）
 - [[部署推理/Inference_Performance/index|推理性能]] — 性能专题索引
 - [[部署推理/index|部署推理]] — 部署推理总索引
-- [[架构基建/AI_Networking/index|AI网络]] — RDMA/InfiniBand 与迁移链路
+- [[架构基建/Networking/index|AI网络]] — RDMA/InfiniBand 与迁移链路
 - [[大模型/index|大模型]] — 大模型总索引
 
 ---

@@ -900,7 +900,7 @@ $$\theta \leftarrow \theta - \mathbf{H}^{-1} \nabla_{\theta} J(\theta)$$
 - [**概率统计**](数学基础/Probability_Statistics/Probability_Statistics.md): 随机梯度、期望
 
 ### 7.2 横向关联
-- [**神经网络核心**](.深度学习/Neural_Network_Core/Neural_Network_Core.md): 反向传播算法
+- [**神经网络核心**](深度学习/Neural_Network_Core/Neural_Network_Core.md): 反向传播算法
 - [**正则化技术**](../): Dropout、权重衰减、Label Smoothing
 - [**超参数调优**](模型运维/MLOps_Fundamentals/MLOps_Pipeline.md): 学习率/batch size 搜索
 

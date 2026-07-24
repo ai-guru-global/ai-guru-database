@@ -260,7 +260,7 @@ git commit -m "feat: add new guide on X"
 git push origin feature/your-feature
 ```
 
-**[Full Contributing Guide →](.治理/CONTRIBUTING.md)**
+**[Full Contributing Guide →](治理/CONTRIBUTING.md)**
 
 ---
 

@@ -145,12 +145,12 @@ Musk 的核心立场：
 
 ## 交叉引用 (Cross-References)
 
-- [Talks 主题合成 2026](../Talks_Synthesis_2026.md) — 查看 Musk 在各主题中的立场
+- [Talks 主题合成 2026](业界观点/Talks_Synthesis/Talks_Synthesis_2026.md) — 查看 Musk 在各主题中的立场
 - [[业界观点/Yoshua_Bengio/about]] — Bengio 与 Musk 共同签署 Pause 公开信
 - [[业界观点/Andrej_Karpathy/about]] — Karpathy 曾在 Tesla (Musk 麾下) 领导 AI
 - [[业界观点/Sundar_Pichai/about]] — Pichai (Google) 与 Musk 在 AI 商业化和安全上有微妙关系
-- [AI 伦理与社会](../../入门/AI_Ethics_Society.md) — AI 存在性风险与监管
-- [AI 历史时间线](../../入门/AI_History_Timeline.md) — OpenAI 创立、xAI 成立
+- [AI 伦理与社会](入门/Ethics_and_Future/AI_Ethics_Society.md) — AI 存在性风险与监管
+- [AI 历史时间线](入门/Fundamentals/AI_History_Timeline.md) — OpenAI 创立、xAI 成立
 
 ---
 

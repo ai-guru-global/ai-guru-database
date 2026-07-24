@@ -1038,12 +1038,12 @@ W&B 适合:
 
 ## 相关阅读
 
-- [模型可解释性可视化](./Model_Interpretability_Visualization.md) - 深入理解模型内部
-- [AI 系统仪表盘](./AI_System_Dashboard.md) - 生产环境监控
-- [可视化入门](./Visualization_for_dummy.md) - 可视化基础概念
-- [模型训练 - 小白版](../模型训练/Model_Training_for_dummy.md) - 训练基础
-- [模型评估 - 小白版](../模型评估/Model_Evaluation_for_dummy.md) - 评估指标
-- [Training Monitoring 2026](../模型训练/Monitoring/Training_Monitoring_2026.md) - 训练监控进阶
+- [模型可解释性可视化](可视化/Evaluation_Viz/Model_Interpretability_Visualization.md) - 深入理解模型内部
+- [AI 系统仪表盘](可视化/System_Viz/AI_System_Dashboard.md) - 生产环境监控
+- [可视化入门](可视化/Best_Practices/Visualization_for_dummy.md) - 可视化基础概念
+- [模型训练 - 小白版](模型训练/Training_Fundamentals/Model_Training_for_dummy.md) - 训练基础
+- [模型评估 - 小白版](模型评估/Evaluation_Fundamentals/Model_Evaluation_for_dummy.md) - 评估指标
+- [Training Monitoring 2026](模型训练/Monitoring/Training_Monitoring_2026.md) - 训练监控进阶
 
 ---
 

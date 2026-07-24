@@ -537,12 +537,12 @@ stacking.fit(X_train, y_train)
 ### 7.2 横向关联
 - [**无监督学习**](../Unsupervised_Learning/Unsupervised_Learning.md): 可用 PCA 降维后再做监督学习
 - [**特征工程**](../Feature_Engineering/): 决定监督学习的上限
-- [**模型评估**](../../模型评估/Model_Evaluation.md): A/B 测试、模型监控
+- [**模型评估**](模型评估/Evaluation_Fundamentals/Model_Evaluation.md): A/B 测试、模型监控
 
 ### 7.3 纵向进阶
-- [**神经网络**](../../深度学习/Neural_Network_Core/Neural_Network_Core.md): 逻辑回归是单层神经网络
+- [**神经网络**](深度学习/Neural_Network_Core/Neural_Network_Core.md): 逻辑回归是单层神经网络
 - [**集成深度学习**](../../深度学习/): GBDT 特征 + 神经网络融合
-- [**AutoML**](../../模型运维/MLOps_Pipeline.md): 自动特征工程、超参数优化
+- [**AutoML**](模型运维/MLOps_Fundamentals/MLOps_Pipeline.md): 自动特征工程、超参数优化
 
 ## 8. 面试高频问题 (Interview FAQs)
 
@@ -662,3 +662,12 @@ $$Var(\bar{f}) = \rho \sigma^2 + \frac{1-\rho}{m} \sigma^2$$
 
 ---
 *Last updated: 2026-02-10*
+
+## 相关链接
+
+- [[机器学习/Supervised_Learning/index|监督学习索引]] — 主题导览
+- [[机器学习/Unsupervised_Learning/Unsupervised_Learning|无监督学习]] — 监督学习的对应范式
+- [[概念/Math/supervised-learning|监督学习]] — 概念卡片
+- [[概念/Math/unsupervised-learning|无监督学习]] — 对比范式
+- [[机器学习/ML_Fundamentals/ML_Fundamentals|机器学习基础]] — ML 基础知识
+- [[机器学习/index|机器学习首页]] — 机器学习知识总览

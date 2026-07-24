@@ -24,7 +24,7 @@ sources: []
 - AI测试/Contract_Testing.md
 - AI测试/AI_Test_Framework_2026.md
 - AI测试/RAGAS_Deep_Dive.md
-- 18_Cloud_Ops_Agent/Mobile_AI_Ops_Design.md
+- 模型运维/Cloud_Ops_Agent/Mobile_AI_Ops_Design.md
 - 18_Cloud_Ops_Agent/Cloud_Product_Ops_2026.md
 - 18_Cloud_Ops_Agent/docs/product/index.md
 - 18_Cloud_Ops_Agent/docs/operations/index.md

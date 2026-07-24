@@ -423,12 +423,12 @@ flowchart TB
 
 ## 🔗 相关主题
 
-- [AI 基础速成](../数学基础/Fundamentals-in-nutshell.md) —— 线性代数、微积分、概率基础
-- [机器学习速成](../机器学习/ML-in-nutshell.md) —— 传统 ML 方法
-- [计算机视觉速成](../计算机视觉/CV-in-nutshell.md) —— CNN 和视觉 Transformer
-- [训练速成](../模型训练/Model-Training-in-nutshell.md) —— 端到端训练实践
-- [神经网络核心](./Neural_Network_Core/Neural_Network_Core.md) —— 更深入的理论讲解
-- [优化详解](./Optimization/Optimization.md) —— 优化器与正则化深入
+- [AI 基础速成](数学基础/Math_Fundamentals/Fundamentals-in-nutshell.md) —— 线性代数、微积分、概率基础
+- [机器学习速成](机器学习/ML_Fundamentals/ML-in-nutshell.md) —— 传统 ML 方法
+- [计算机视觉速成](计算机视觉/CV_Fundamentals/CV-in-nutshell.md) —— CNN 和视觉 Transformer
+- [训练速成](模型训练/Training_Fundamentals/Model-Training-in-nutshell.md) —— 端到端训练实践
+- [神经网络核心](深度学习/Neural_Network_Core/Neural_Network_Core.md) —— 更深入的理论讲解
+- [优化详解](深度学习/Optimization/Optimization.md) —— 优化器与正则化深入
 
 ---
 

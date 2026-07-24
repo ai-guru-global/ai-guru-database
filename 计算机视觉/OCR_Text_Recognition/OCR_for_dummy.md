@@ -186,8 +186,8 @@ ETC 识别 或 车牌识别 → 计费
 ## 下一步
 
 - 想深入技术？→ [OCR_Text_Recognition.md](./OCR_Text_Recognition.md)
-- 想学计算机视觉？→ [计算机视觉 - 小白版](../../README_for_dummy.md)
-- 想学深度学习？→ [神经网络核心 - 小白版](../../深度学习/Neural_Network_Core/Neural_Network_Core_for_dummy.md)
+- 想学计算机视觉？→ [计算机视觉 - 小白版](../.README_for_dummy.md)
+- 想学深度学习？→ [神经网络核心 - 小白版](深度学习/Neural_Network_Core/Neural_Network_Core_for_dummy.md)
 
 ---
 
@@ -249,3 +249,11 @@ ETC 识别 或 车牌识别 → 计费
 - [ ] 掌握常见问题排查方法
 - [ ] 关注最新技术动态
 - [ ] 知识已文档化沉淀
+
+## 相关链接
+
+- [[计算机视觉/OCR_Text_Recognition/OCR_Text_Recognition|OCR 与文字识别 (完整版)]] — 本篇小白版对应的详细版
+- [[计算机视觉/OCR_Text_Recognition/index|OCR 文字识别索引]] — 主题导览
+- [[概念/Vision/document-ai|文档 AI]] — OCR 在文档 AI 中的应用
+- [[RAG系统/index|RAG 系统]] — OCR 在 RAG 文档解析中的作用
+- [[计算机视觉/CV_Fundamentals/CV_Fundamentals|计算机视觉基础]] — CV 基础知识

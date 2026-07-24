@@ -133,9 +133,9 @@ sources: []
 
 ## 交叉引用 (Cross-References)
 
-- [GLM/智谱 AI 技术全景](../../大模型/Chinese_LLM_Ecosystem/GLM_Zhipu_Deep_Dive.md)
-- [中国大模型生态全景](../../大模型/Chinese_LLM_Ecosystem/README.md)
-- [Multimodal Architectures](../../大模型/Multimodal_Models/Multimodal_Architectures_2026.md)
+- [GLM/智谱 AI 技术全景](大模型/Chinese_LLM_Ecosystem/GLM_Zhipu_Deep_Dive.md)
+- [中国大模型生态全景](大模型/Chinese_LLM_Ecosystem/README.md)
+- [Multimodal Architectures](大模型/Multimodal_Models/Multimodal_Architectures_2026.md)
 - [[业界观点/Zhilin_Yang/about]] — 师生关系，清华 KEG → 月之暗面
 - [[业界观点/Wenfeng_Liang/about]] — DeepSeek 与智谱在中国开源生态中的竞合
 - [[业界观点/Junjie_Yan/about]] — MiniMax 与智谱的全模态竞争

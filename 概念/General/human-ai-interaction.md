@@ -16,7 +16,7 @@ provenance:
   ambiguous: 0.05
 base_confidence: 0.7
 sources:
-  - Agent/Agent_Workflow/Agentic_UI_UX_Design_2026.md
+  - 智能体/Agent_Workflow/Agentic_UI_UX_Design_2026.md
   - Agent/GenAI_L12_Designing_UX_for_AI_Applications.md
 ---
 # 人机交互 (Human-AI Interaction)

@@ -863,5 +863,5 @@ loss_tensor = all_reduce_average(loss_tensor)
 - [[模型训练/Distributed_Training/Distributed_Training_2026.md|Distributed_Training_2026]]
 - [[模型训练/Distributed_Training/Distributed_Training_for_dummy.md|Distributed_Training_for_dummy]]
 - [[模型训练/Optimization/Mixed_Precision_Training.md|Mixed_Precision_Training]]
-- [[模型训练/Model-Training-in-nutshell.md|Model-Training-in-nutshell]]
-- [[模型训练/Model_Training_for_dummy.md|Model_Training_for_dummy]]
+- [[模型训练/Training_Fundamentals/Model-Training-in-nutshell.md|Model-Training-in-nutshell]]
+- [[模型训练/Training_Fundamentals/Model_Training_for_dummy.md|Model_Training_for_dummy]]

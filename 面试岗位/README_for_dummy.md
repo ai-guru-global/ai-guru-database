@@ -156,12 +156,12 @@ sources: []
 
 ## 下一步
 
-- 想看具体岗位？→ 查看 [面试岗位/Interviews_for_dummy.md](./Interviews_for_dummy.md)
+- 想看具体岗位？→ 查看 [面试岗位/Interviews_for_dummy.md](面试岗位/Interview_Guide/Interviews_for_dummy.md)
 - 想学技术？→ 从 [90_Learn/README.md](../学习/README_for_dummy.md) 选择路径
 
 ---
 
-*本文是 [README.md](./README.md) 的简化版，适合零基础读者。*
+*本文是 [README.md](README.md) 的简化版，适合零基础读者。*
 
 ## Related
 

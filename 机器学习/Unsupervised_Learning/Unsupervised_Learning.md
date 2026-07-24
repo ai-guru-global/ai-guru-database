@@ -762,7 +762,7 @@ compressed_img = compressed.reshape(h, w, c)
 ### 7.2 横向关联
 - [**监督学习**](../Supervised_Learning/Supervised_Learning.md): PCA 降维后可提升监督模型性能
 - [**特征工程**](../Feature_Engineering/): 聚类标签可作为新特征
-- [**深度学习**](../../深度学习/Neural_Network_Core/Neural_Network_Core.md): 自编码器 (Autoencoder) 是非线性降维
+- [**深度学习**](深度学习/Neural_Network_Core/Neural_Network_Core.md): 自编码器 (Autoencoder) 是非线性降维
 
 ### 7.3 纵向进阶
 - **半监督学习**: 结合少量标签数据与聚类

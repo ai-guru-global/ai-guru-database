@@ -960,3 +960,12 @@ class ModelInversionDefense:
 ---
 
 *Last updated: 2026-04-10*
+
+## 相关链接
+
+- [[伦理安全/Privacy_Preserving_AI/Privacy_Preserving_AI_for_dummy|隐私保护 AI (小白版)]] — 本篇的零基础版本
+- [[伦理安全/Privacy_Preserving_AI/index|隐私保护 AI 索引]] — 主题导览
+- [[伦理安全/Federated_Learning/Federated_Learning_Deep_Dive|联邦学习深度解读]] — 隐私保护核心技术
+- [[概念/Safety/privacy-preserving-ai|隐私保护 AI]] — 概念卡片
+- [[概念/General/federated-learning|联邦学习]] — 联邦学习概念卡片
+- [[概念/Safety/presidio|Presidio]] — 隐私数据脱敏工具

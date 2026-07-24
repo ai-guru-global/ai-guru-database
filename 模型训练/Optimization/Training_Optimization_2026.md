@@ -925,7 +925,7 @@ return checkpoint(forward_fn, x, use_reentrant=False)
 | CUDA Graphs | ⚠️ | ✅ | 推理 shape 固定 |
 | 序列并行 | ✅ | ✅ | 长上下文推理必需 |
 
-**推理专属优化** → [../部署推理/Inference-in-nutshell.md](部署推理/Inference-in-nutshell.md)
+**推理专属优化** → [部署推理/Deployment_Fundamentals/Inference-in-nutshell.md](部署推理/Deployment_Fundamentals/Inference-in-nutshell.md)
 
 ---
 
@@ -941,9 +941,9 @@ return checkpoint(forward_fn, x, use_reentrant=False)
 - [长上下文模型](大模型/LLM_Architectures/Long_Context_Models_2026.md) — Ring Attention、稀疏注意力
 
 ### 纵向进阶
-- [模型评估](模型评估/Model_Evaluation.md) — 训练后验证模型质量
-- [部署推理优化](部署推理/Inference-in-nutshell.md) — 模型上线推理加速
-- [MLOps 流水线](模型运维/MLOps_Pipeline.md) — 自动化训练与监控
+- [模型评估](模型评估/Evaluation_Fundamentals/Model_Evaluation.md) — 训练后验证模型质量
+- [部署推理优化](部署推理/Deployment_Fundamentals/Inference-in-nutshell.md) — 模型上线推理加速
+- [MLOps 流水线](模型运维/MLOps_Fundamentals/MLOps_Pipeline.md) — 自动化训练与监控
 - [AI 基础设施](架构基建/Architecture_Overview/AI_Infrastructure_2026) — 集群网络与存储优化
 
 ---
@@ -983,5 +983,5 @@ return checkpoint(forward_fn, x, use_reentrant=False)
 - [[模型训练/Distributed_Training/Distributed_Training_2026.md|Distributed_Training_2026]]
 - [[模型训练/Distributed_Training/Distributed_Training_for_dummy.md|Distributed_Training_for_dummy]]
 - [[模型训练/Optimization/Mixed_Precision_Training.md|Mixed_Precision_Training]]
-- [[模型训练/Model-Training-in-nutshell.md|Model-Training-in-nutshell]]
-- [[模型训练/Model_Training_for_dummy.md|Model_Training_for_dummy]]
+- [[模型训练/Training_Fundamentals/Model-Training-in-nutshell.md|Model-Training-in-nutshell]]
+- [[模型训练/Training_Fundamentals/Model_Training_for_dummy.md|Model_Training_for_dummy]]

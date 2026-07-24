@@ -284,8 +284,8 @@ sources: []
 
 ## 扩展章节：跨行业关联
 
-- [行业对比分析](../Industry_Comparison_2026.md) — 全行业的横向对比
-- [行业速览](../Industry-in-nutshell.md) — 30 分钟了解所有行业 AI 应用
+- [行业对比分析](行业应用/Industry_Overview/Industry_Comparison_2026.md) — 全行业的横向对比
+- [行业速览](行业应用/Industry_Overview/Industry-in-nutshell.md) — 30 分钟了解所有行业 AI 应用
 - [机器学习](../../机器学习/README.md) — 基础算法与模型
 - [深度学习](../../深度学习/README.md) — 神经网络核心技术
 - [MLOps](../../模型运维/README.md) — 模型生产化部署
@@ -293,3 +293,12 @@ sources: []
 ---
 
 *Last updated: 2026-05-07*
+
+## 相关链接
+
+- [[行业应用/Manufacturing_index|智能制造索引]] — 主题导览
+- [[行业应用/index|行业应用首页]] — 行业应用知识总览
+- [[行业应用/Industry_Overview/Industry_Applications-in-nutshell|行业应用速览]] — 全行业速览
+- [[计算机视觉/index|计算机视觉]] — 视觉质检核心技术
+- [[概念/Vision/object-detection|目标检测]] — 质检核心算法
+- [[架构基建/Hardware_Compute/Edge_AI_2026|边缘 AI 2026]] — 工厂边缘部署

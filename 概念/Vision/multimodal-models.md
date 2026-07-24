@@ -134,9 +134,9 @@ KV Cache优化（2-3×）、Speculative Decoding（2-3×）、INT8/INT4量化（
 
 ## Related
 
-- [[概念/generative-vision-models.md|generative-vision-models]]
-- [[概念/llm-architectures.md|llm-architectures]]
-- [[概念/transformer-architecture.md|transformer-architecture]]
+- [[概念/Vision/generative-vision-models.md|generative-vision-models]]
+- [[概念/LLM/llm-architectures.md|llm-architectures]]
+- [[概念/LLM/transformer-architecture.md|transformer-architecture]]
 - [[部署推理/Inference_Performance/Multimodal_Inference_Optimization|多模态推理优化]]
 - [[大模型/Fine_tuning_Techniques/Axolotl_Deep_Dive.md|Axolotl_Deep_Dive]]
 - [[大模型/Fine_tuning_Techniques/Fine_tuning_Techniques.md|Fine_tuning_Techniques]]

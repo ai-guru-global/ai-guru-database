@@ -1200,3 +1200,12 @@ flowchart LR
 ---
 
 *Last updated: 2026-06-04*
+
+## 相关链接
+
+- [[模型训练/Compression/Model_Compression_Complete_Guide|模型压缩完全指南]] — 压缩方法总览
+- [[模型训练/Compression/index|压缩索引]] — 压缩主题导览
+- [[概念/Training/pruning|剪枝]] — 剪枝概念卡片
+- [[概念/Training/knowledge-distillation|知识蒸馏]] — 蒸馏概念卡片
+- [[概念/Training/model-compression|模型压缩]] — 压缩概念卡片
+- [[深度学习/Knowledge_Distillation|知识蒸馏]] — 蒸馏技术详解

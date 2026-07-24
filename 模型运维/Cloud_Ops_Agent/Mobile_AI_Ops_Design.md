@@ -1068,10 +1068,10 @@ MVP 发布
 
 | 文档 | 说明 |
 |------|------|
-| [Edge AI 2026](../../12_Architecture_Infrastructure/Edge_AI_2026.md) | 边缘 AI 技术栈、框架对比 |
-| [AI 硬件 2026](../../01_Fundamentals/AI_Hardware/AI_Hardware_2026.md) | NPU/Edge TPU 规格 |
+| [Edge AI 2026](架构基建/Hardware_Compute/Edge_AI_2026.md) | 边缘 AI 技术栈、框架对比 |
+| [AI 硬件 2026](数学基础/AI_Hardware/AI_Hardware_2026.md) | NPU/Edge TPU 规格 |
 | [Cloud Ops Agent](./Cloud_Product_Ops_2026.md) | 云端运维 Agent 架构 |
-| [Agent Harness](../智能体/Agent_Evaluation/Agent_Harness_Complete_2026.md) | Agent 评测框架 |
+| [Agent Harness](智能体/Agent_Evaluation/Agent_Harness_Complete_2026.md) | Agent 评测框架 |
 
 ### 12.2 参考资源
 
@@ -1114,8 +1114,8 @@ A: 通过 RAG 增强 + 本地知识库 + 持续的案例学习，持续优化模
 
 ## Related
 
-- [[18_Cloud_Ops_Agent/CloudOps-in-nutshell.md|CloudOps-in-nutshell]]
-- [[18_Cloud_Ops_Agent/Cloud_Product_Ops_for_dummy.md|Cloud_Product_Ops_for_dummy]]
-- [[18_Cloud_Ops_Agent/Java_Cloud_SDK_Guide.md|Java_Cloud_SDK_Guide]]
+- [[模型运维/Cloud_Ops_Agent/CloudOps-in-nutshell.md|CloudOps-in-nutshell]]
+- [[模型运维/Cloud_Ops_Agent/Cloud_Product_Ops_for_dummy.md|Cloud_Product_Ops_for_dummy]]
+- [[模型运维/Cloud_Ops_Agent/Java_Cloud_SDK_Guide.md|Java_Cloud_SDK_Guide]]
 - [[18_Cloud_Ops_Agent/docs/architecture/index.md|index]]
 - [[18_Cloud_Ops_Agent/docs/corpus/index.md|index]]

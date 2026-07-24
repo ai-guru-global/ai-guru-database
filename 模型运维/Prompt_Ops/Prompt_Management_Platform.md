@@ -1197,4 +1197,4 @@ async def rollback_prompt(name: str, version: int):
 - [[治理/Document_Templates|文档模板规范]]
 - [[治理/Import_Guide|导入指南]]
 - [[治理/index|项目治理]]
-- [[入门/AI_Tools_Practical_Guide.md|AI_Tools_Practical_Guide]]
+- [[入门/Learning_Path/AI_Tools_Practical_Guide.md|AI_Tools_Practical_Guide]]

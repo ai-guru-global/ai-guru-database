@@ -135,11 +135,11 @@ Andrew Ng 的核心哲学是"实用主义"：
 
 ## 交叉引用 (Cross-References)
 
-- [Talks 主题合成 2026](../Talks_Synthesis_2026.md) — 查看 Ng 在 Scaling Laws、开源 vs 闭源、AI 安全等主题中的立场
+- [Talks 主题合成 2026](业界观点/Talks_Synthesis/Talks_Synthesis_2026.md) — 查看 Ng 在 Scaling Laws、开源 vs 闭源、AI 安全等主题中的立场
 - [[业界观点/Geoffrey_Hinton/about]] — Hinton 关注 AGI 风险，Ng 更关注近期应用，形成对比
 - [[业界观点/Andrej_Karpathy/about]] — Karpathy 与 Ng 同为 AI 教育领域标杆人物
 - [[业界观点/Fei_Fei_Li/about]] — Fei-Fei Li 与 Ng 同为斯坦福教授，关注 AI 社会影响
-- [AI 历史时间线](../../入门/AI_History_Timeline.md) — MOOC 运动与百度 AI
+- [AI 历史时间线](入门/Fundamentals/AI_History_Timeline.md) — MOOC 运动与百度 AI
 - [深度学习基础](../../深度学习/README.md) — CS229 与深度学习教育
 
 ---

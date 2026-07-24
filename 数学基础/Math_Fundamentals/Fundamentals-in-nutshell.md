@@ -387,10 +387,10 @@ flowchart TB
 
 ## 🔗 相关主题
 
-- [机器学习速成](../机器学习/ML-in-nutshell.md) —— 用这些基础构建 ML 模型
-- [深度学习速成](../深度学习/DL-in-nutshell.md) —— 神经网络的核心机制
-- [推理速成](../部署推理/Inference-in-nutshell.md) —— 把模型跑起来
-- [AI 硬件对比](./AI_Hardware/AI_Hardware_2026.md) —— 2026 年硬件选型指南
+- [机器学习速成](机器学习/ML_Fundamentals/ML-in-nutshell.md) —— 用这些基础构建 ML 模型
+- [深度学习速成](深度学习/DL_Fundamentals/DL-in-nutshell.md) —— 神经网络的核心机制
+- [推理速成](部署推理/Deployment_Fundamentals/Inference-in-nutshell.md) —— 把模型跑起来
+- [AI 硬件对比](数学基础/AI_Hardware/AI_Hardware_2026.md) —— 2026 年硬件选型指南
 
 ---
 

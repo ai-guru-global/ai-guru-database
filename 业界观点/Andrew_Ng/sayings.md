@@ -88,7 +88,7 @@ sources: []
 - [[业界观点/Andrew_Ng/about]] — Andrew Ng 简介 (Andrew Ng) (共享: insights, leaders, speeches, talks)
 - [[业界观点/Bill_Gates/about]] — Bill Gates 简介 (Bill Gates) (共享: insights, leaders, speeches, talks)
 - [[业界观点/Bill_Gates/sayings]] — Bill Gates 关于 AI 的观点 (Bill Gates on AI) (共享: insights, leaders, speeches, talks)
-- [[业界观点/Talks_Synthesis_2026.md|Talks_Synthesis_2026]]
+- [[业界观点/Talks_Synthesis/Talks_Synthesis_2026.md|Talks_Synthesis_2026]]
 
 ## 观点影响力评估
 

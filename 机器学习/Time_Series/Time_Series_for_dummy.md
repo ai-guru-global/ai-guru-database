@@ -468,3 +468,12 @@ print(f"RMSE: {rmse:.1f}")
 5. **注意数据质量**：缺失值、异常值、数据格式不对，这些都会搞乱你的预测
 
 > 时间序列分析的本质：**从历史中寻找规律，用规律推测未来**。虽然我们不能 100% 预测未来，但好的预测能帮我们做出更好的决策！
+
+## 相关链接
+
+- [[机器学习/Time_Series/Time_Series_Analysis|时间序列分析 (完整版)]] — 本篇小白版对应的详细版
+- [[机器学习/Time_Series/index|时间序列索引]] — 主题导览
+- [[概念/Math/time-series-analysis|时间序列分析]] — 概念卡片
+- [[机器学习/ML_Fundamentals/ML_Fundamentals|机器学习基础]] — ML 基础知识
+- [[机器学习/Anomaly_Detection/Anomaly_Detection|异常检测]] — 时序异常检测应用
+- [[机器学习/index|机器学习首页]] — 机器学习知识总览

@@ -751,7 +751,7 @@ print(f"英语: {english}")
 
 ### 横向关联
 - [序列模型](../大模型/Sequence_Models/) — 语言建模基础
-- [模型训练](模型训练/Model-Training-in-nutshell.md) — 分布式训练与优化策略
+- [模型训练](模型训练/Training_Fundamentals/Model-Training-in-nutshell.md) — 分布式训练与优化策略
 
 ### 进阶方向
 - [分布式训练](模型训练/Distributed_Training/Distributed_Training_2026.md) — GPT-3 级别的模型如何分布式训练

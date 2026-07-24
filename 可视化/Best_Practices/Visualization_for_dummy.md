@@ -638,15 +638,15 @@ tensorboard --logdir=runs
 ## 想深入了解?
 
 ### 📄 进阶阅读
-- [训练监控可视化](./Training_Monitoring_Visualization.md) - TensorBoard/W&B 深度教程
-- [模型可解释性可视化](./Model_Interpretability_Visualization.md) - 注意力/SHAP/Grad-CAM
-- [AI 系统仪表盘](./AI_System_Dashboard.md) - RAG/Agent/成本看板
+- [训练监控可视化](可视化/Training_Viz/Training_Monitoring_Visualization.md) - TensorBoard/W&B 深度教程
+- [模型可解释性可视化](可视化/Evaluation_Viz/Model_Interpretability_Visualization.md) - 注意力/SHAP/Grad-CAM
+- [AI 系统仪表盘](可视化/System_Viz/AI_System_Dashboard.md) - RAG/Agent/成本看板
 
 ### 🎓 相关知识
-- [模型训练 - 小白版](../模型训练/Model_Training_for_dummy.md) - 训练基础概念
-- [模型评估 - 小白版](../模型评估/Model_Evaluation_for_dummy.md) - 评估指标详解
-- [RAG 系统 - 小白版](../RAG系统/RAG_Systems_for_dummy.md) - RAG 原理入门
-- [深度学习核心 - 小白版](../深度学习/Neural_Network_Core/Neural_Network_Core_for_dummy.md) - 神经网络基础
+- [模型训练 - 小白版](模型训练/Training_Fundamentals/Model_Training_for_dummy.md) - 训练基础概念
+- [模型评估 - 小白版](模型评估/Evaluation_Fundamentals/Model_Evaluation_for_dummy.md) - 评估指标详解
+- [RAG 系统 - 小白版](RAG系统/RAG_Fundamentals/RAG_Systems_for_dummy.md) - RAG 原理入门
+- [深度学习核心 - 小白版](深度学习/Neural_Network_Core/Neural_Network_Core_for_dummy.md) - 神经网络基础
 
 ---
 

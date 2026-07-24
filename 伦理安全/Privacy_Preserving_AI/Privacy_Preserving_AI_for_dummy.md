@@ -180,9 +180,9 @@ flowchart TB
 
 ## 🔗 相关主题
 
-- [AI Supply Chain Security](../AI_Supply_Chain_Security/AI_Supply_Chain_Security.md) — 数据安全
-- [AI Governance](../AI_Governance_Compliance_2026.md) — 隐私法规
-- [Deepfake Security](../Deepfake_Security/Deepfake_Security.md) — 个人信息保护
+- [AI Supply Chain Security](伦理安全/AI_Supply_Chain_Security/AI_Supply_Chain_Security.md) — 数据安全
+- [AI Governance](伦理安全/Governance/AI_Governance_Compliance_2026.md) — 隐私法规
+- [Deepfake Security](伦理安全/Deepfake_Security/Deepfake_Security.md) — 个人信息保护
 
 ---
 
@@ -260,3 +260,12 @@ flowchart TB
 - [ ] 常见问题能独立解决
 - [ ] 持续关注前沿趋势
 - [ ] 知识已文档化沉淀
+
+## 相关链接
+
+- [[伦理安全/Privacy_Preserving_AI/Privacy_Preserving_AI|隐私保护 AI (完整版)]] — 本篇小白版对应的详细版
+- [[伦理安全/Privacy_Preserving_AI/index|隐私保护 AI 索引]] — 主题导览
+- [[伦理安全/Federated_Learning/Federated_Learning_Deep_Dive|联邦学习深度解读]] — 隐私保护核心技术
+- [[概念/Safety/privacy-preserving-ai|隐私保护 AI]] — 概念卡片
+- [[概念/General/federated-learning|联邦学习]] — 联邦学习概念卡片
+- [[伦理安全/index|伦理安全首页]] — 伦理安全知识总览

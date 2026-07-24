@@ -69,7 +69,7 @@ sources: []
 - [[计算机视觉/Segmentation/Segmentation_for_dummy]] — 图像分割 - 小白版 ✂️ (共享: cnn, computer-vision, cv, image-processing)
 - [[论文精读/Vision/ResNet_Deep_Dive]] — ResNet 深度解读 (Deep Residual Learning for Image Recognition) (共享: cnn, cv)
 - [[概念/computer-vision]] — 计算机视觉 (共享: cnn, cv)
-- [[计算机视觉/ViT_Deep_Dive.md|ViT_Deep_Dive]]
+- [[计算机视觉/CV_Fundamentals/ViT_Deep_Dive.md|ViT_Deep_Dive]]
 - [[计算机视觉/README_for_dummy.md|README_for_dummy]]
 
 ## 进阶知识拓展

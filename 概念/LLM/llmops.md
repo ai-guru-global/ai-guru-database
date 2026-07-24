@@ -16,7 +16,7 @@ relationships:
   - target: "概念/Agent/agent-evaluation-benchmarks"
     type: related_to
 sources:
-  - 模型运维/LLMOps_2026.md
+  - 模型运维/LLMOps/LLMOps_2026.md
 
 ---
 # LLMOps

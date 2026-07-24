@@ -70,7 +70,119 @@ aliases:
 
 ## 核心内容
 
-全书围绕"HF 库 + NLP 任务"展开，每章一个任务类型。
+全书围绕"HF 库 + NLP 任务"展开，每章一个任务类型。以下是分章详解。
+
+### HF 工程实践的核心模式
+
+本书反复使用一个标准模式，掌握它就掌握了 HF 的精髓：
+
+**HF Trainer 的工程化优势**:
+- 自动处理梯度累积、混合精度、分布式训练
+- 内置评估回调、早停、检查点保存
+- 与 Datasets/Tokenizers 无缝集成
+
+**Dataset 的高效处理**:
+- `map` 函数支持批量处理（batched=True），比循环快 100 倍
+- 内存映射（memory-mapped）处理超大数据集不全加载
+- 动态 padding（按 batch 最长序列 padding）节省计算
+
+### Ch 3 详解: Transformer 剖析的工程视角
+
+本章从工程实现角度拆解 Transformer，区别于论文的理论视角：
+
+**Encoder 的数据流（代码级）**:
+```python
+# 一层 Transformer Encoder 的前向传播
+def encoder_layer_forward(x):
+    # Self-Attention
+    attn_output = MultiHeadAttention(x, x, x)  # Q=K=V=x
+    x = LayerNorm(x + attn_output)             # 残差 + 归一化
+    # FFN
+    ffn_output = FFN(x)                         # 两层 MLP
+    x = LayerNorm(x + ffn_output)              # 残差 + 归一化
+    return x
+```
+
+**三种注意力的工程区别**:
+- Self-Attention: Q=K=V 同源（编码器内部）
+- Masked Attention: 加因果掩码（解码器）
+- Cross-Attention: Q 来自解码器，K/V 来自编码器
+
+### Ch 4 详解: NER 与序列标注的子词对齐
+
+**子词对齐问题**:
+```
+原文: "ChatGPT"
+分词: ["Chat", "##G", "##PT"]  (3 个子词)
+标签: [ORG,    ?,     ?]        (只有第一个子词有标签)
+```
+
+**解决策略**:
+- 只对每个词的第一个子词计算 loss
+- 推理时取第一个子词的预测作为整个词的标签
+- HF 的 `token-classification` pipeline 自动处理
+
+### Ch 5-6 详解: 生成与 Seq2Seq 的解码策略
+
+**解码策略的工程实现**:
+```python
+# HF 的 generate 方法封装了多种策略
+output = model.generate(
+    input_ids,
+    max_length=100,
+    num_beams=5,              # Beam Search
+    temperature=0.7,          # 温度
+    top_p=0.9,                # Nucleus Sampling
+    no_repeat_ngram_size=2    # 防重复
+)
+```
+
+**评估指标的陷阱**:
+- BLEU 基于 n-gram 匹配，对同义改写不敏感
+- ROUGE 关注召回，适合摘要
+- 自动指标与人工评估有差距，最终要人工校验
+
+### Ch 8 详解: 模型压缩的实战
+
+**知识蒸馏的完整流程**:
+```
+1. 训练 Teacher（大模型，如 BERT-large）
+2. Teacher 对训练数据生成软标签（概率分布）
+3. 训练 Student（小模型），损失 = α·硬标签 + (1-α)·软标签
+4. Student 学到 Teacher 的"暗知识"（类间相似度）
+```
+
+**DistilBERT 的成果**: 比 BERT 小 40%、快 60%，保留 97% 能力。
+
+**量化的工程实践**:
+- INT8 量化：用 8 位整数表示权重，显存减半，速度提升
+- 动态量化 vs 静态量化：后者更精确但需校准数据
+
+### Ch 10 详解: 从头训练的工程挑战
+
+**领域适应的场景**:
+- 代码模型（如 CodeParrot）：用 GitHub 代码训练
+- 医疗模型：用医学文献训练
+- 小语种模型：用目标语言语料
+
+**Tokenizer 训练**:
+```python
+from tokenizers import Tokenizer
+from tokenizers.models import BPE
+from tokenizers.trainers import BpeTrainer
+
+tokenizer = Tokenizer(BPE(unk_token="<unk>"))
+trainer = BpeTrainer(vocab_size=50000, special_tokens=["<unk>"])
+tokenizer.train_from_iterator(text_iterator, trainer)
+```
+
+**训练配置要点**:
+- 分布式训练（DDP / FSDP）
+- 混合精度（fp16/bf16）
+- 梯度检查点（省显存换计算）
+- 监控 Loss 曲线与生成样本质量
+
+
 
 ### Ch 1: Hello Transformers
 

@@ -94,7 +94,7 @@ LLM 可观测性和 AIOps 的融合正在产生**三层统一观测架构**：
 ## Related
 
 - [[模型运维/Observability/LLM_Observability]]
-- [[运维/AIOps-in-nutshell.md]]
+- [[运维/AIOps_Fundamentals/AIOps-in-nutshell.md]]
 - [[运维/AI_Ops_2026]]
 - [[模型运维/Observability/AI_Observability_Guide_2026]]
 - [[治理/mlops-monitoring-convergence]]

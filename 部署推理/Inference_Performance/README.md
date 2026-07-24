@@ -97,8 +97,8 @@ LLM 推理性能优化技术栈
 
 ## 关联内容
 
-- [09 部署与推理总览](../README.md)
-- [Deployment Inference](部署推理/Deployment_Inference.md) — 部署与推理加速概览
+- [09 部署与推理总览](.README.md)
+- [Deployment Inference](部署推理/Deployment_Fundamentals/Deployment_Inference.md) — 部署与推理加速概览
 - [KV Cache Deep Dive](部署推理/Caching/KV_Cache_Deep_Dive.md) — KV Cache 深度优化
 - [Quantization Techniques 2026](部署推理/Quantization/Quantization_Techniques_2026.md) — 量化技术全景
 - [Speculative Decoding Advanced 2026](部署推理/Caching/Speculative_Decoding_Advanced_2026.md) — 投机解码

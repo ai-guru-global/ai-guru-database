@@ -109,7 +109,7 @@ Dify适合企业内部平台（功能完整、可视化），Haystack适合企�
 
 ## 来源
 
-- RAG系统/RAG_Systems.md — RAG完整技术体系、Pipeline流程、评估指标
+- RAG系统/RAG_Fundamentals/RAG_Systems.md — RAG完整技术体系、Pipeline流程、评估指标
 - RAG系统/Advanced_RAG/RAG_Advanced_2026.md — 混合检索、重排序、Agentic RAG、上下文压缩
 - RAG系统/README.md — 学习路径与框架选型
 - RAG系统/README_Advanced.md — 框架选型与关键技术速查

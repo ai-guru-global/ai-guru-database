@@ -224,7 +224,7 @@ class RedTeamHarness:
         return sum(r["success"] for r in results) / len(results)
 ```
 
-> **行业数据**: 2026 年主流模型未经防御时 Jailbreak 成功率可达 40-88%；加多层防御后可降至 5% 以下。详见 [AI Safety RedTeaming](./AI_Safety_RedTeaming/AI_Safety_RedTeaming.md)。
+> **行业数据**: 2026 年主流模型未经防御时 Jailbreak 成功率可达 40-88%；加多层防御后可降至 5% 以下。详见 [AI Safety RedTeaming](伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming.md)。
 
 ---
 
@@ -347,7 +347,7 @@ text = "John Smith 的邮箱是 john@example.com, 电话 138-0013-8000"
 # 输出: [{"type": "PERSON", ...}, {"type": "EMAIL", ...}, {"type": "PHONE", ...}]
 ```
 
-> **深入阅读**: 详见 [Privacy Preserving AI](./Privacy_Preserving_AI/Privacy_Preserving_AI.md) 与 [Federated Learning](./Federated_Learning/Federated_Learning_Deep_Dive.md)。
+> **深入阅读**: 详见 [Privacy Preserving AI](伦理安全/Privacy_Preserving_AI/Privacy_Preserving_AI.md) 与 [Federated Learning](伦理安全/Federated_Learning/Federated_Learning_Deep_Dive.md)。
 
 ---
 
@@ -448,7 +448,7 @@ flowchart TB
     └── 紧急停止机制 (Kill Switch)
 ```
 
-> **延伸阅读**: [AI 治理与合规 2026](./AI_Governance_Compliance_2026.md)。
+> **延伸阅读**: [AI 治理与合规 2026](伦理安全/Governance/AI_Governance_Compliance_2026.md)。
 
 ---
 
@@ -526,7 +526,7 @@ def activation_patching(model, clean_input, corrupted_input, target_layer):
     └── 通用"为什么"问答
 ```
 
-> **深入阅读**: [Mechanistic Interpretability](./Mechanistic_Interpretability/Mechanistic_Interpretability.md)。
+> **深入阅读**: [Mechanistic Interpretability](伦理安全/Mechanistic_Interpretability/Mechanistic_Interpretability.md)。
 
 ---
 
@@ -588,7 +588,7 @@ class SafetyEvalHarness:
         )
 ```
 
-> **延伸阅读**: [Safety Evaluation Framework](./Safety_Evaluation_Framework.md)。
+> **延伸阅读**: [Safety Evaluation Framework](伦理安全/Safety_Evaluation_Framework.md)。
 
 ---
 
@@ -650,29 +650,38 @@ AI 伦理与安全 10 条底线:
 ## 相关主题 (Cross References)
 
 ### 本章节深度文档
-- [Value Alignment (价值对齐)](./Value_Alignment/Value_Alignment.md) — RLHF/DPO/CAI 完整技术细节
-- [AI Safety & Red Teaming](./AI_Safety_RedTeaming/AI_Safety_RedTeaming.md) — 红队方法论大全
-- [Mechanistic Interpretability](./Mechanistic_Interpretability/Mechanistic_Interpretability.md) — 电路追踪与特征分解
-- [Privacy Preserving AI](./Privacy_Preserving_AI/Privacy_Preserving_AI.md) — 差分隐私与联邦学习
-- [Safety Evaluation Framework](./Safety_Evaluation_Framework.md) — 评测基准与 Pipeline
-- [AI Governance & Compliance 2026](./AI_Governance_Compliance_2026.md) — 全球法规详解
-- [AI Security 2026](./AI_Security_2026/AI_Security_2026.md) — OWASP LLM Top 10 与 Agentic 安全
-- [AI Supply Chain Security](./AI_Supply_Chain_Security/AI_Supply_Chain_Security.md) — 数据投毒与后门检测
-- [Deepfake Security](./Deepfake_Security/Deepfake_Security.md) — 深度伪造检测
-- [Federated Learning](./Federated_Learning/Federated_Learning_Deep_Dive.md) — 联邦学习深度解读
+- [Value Alignment (价值对齐)](伦理安全/Value_Alignment/Value_Alignment.md) — RLHF/DPO/CAI 完整技术细节
+- [AI Safety & Red Teaming](伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming.md) — 红队方法论大全
+- [Mechanistic Interpretability](伦理安全/Mechanistic_Interpretability/Mechanistic_Interpretability.md) — 电路追踪与特征分解
+- [Privacy Preserving AI](伦理安全/Privacy_Preserving_AI/Privacy_Preserving_AI.md) — 差分隐私与联邦学习
+- [Safety Evaluation Framework](伦理安全/Safety_Evaluation_Framework.md) — 评测基准与 Pipeline
+- [AI Governance & Compliance 2026](伦理安全/Governance/AI_Governance_Compliance_2026.md) — 全球法规详解
+- [AI Security 2026](伦理安全/AI_Security_2026/AI_Security_2026.md) — OWASP LLM Top 10 与 Agentic 安全
+- [AI Supply Chain Security](伦理安全/AI_Supply_Chain_Security/AI_Supply_Chain_Security.md) — 数据投毒与后门检测
+- [Deepfake Security](伦理安全/Deepfake_Security/Deepfake_Security.md) — 深度伪造检测
+- [Federated Learning](伦理安全/Federated_Learning/Federated_Learning_Deep_Dive.md) — 联邦学习深度解读
 
 ### 跨章节关联
-- [LLM 架构](../大模型/LLM_Architectures/LLM-Basics-in-nutshell.md) — 理解被对齐的对象
+- [LLM 架构](大模型/LLM_Architectures/LLM-Basics-in-nutshell.md) — 理解被对齐的对象
 - [微调技术](../大模型/Fine_tuning_Techniques/) — SFT 是对齐的第一步
-- [深度强化学习](../强化学习/Deep_RL/Deep_RL.md) — PPO 是 RLHF 的核心算法
-- [Prompt Engineering](../大模型/Prompt_Engineering/Prompt-Engineering-in-nutshell.md) — 理解 Prompt Injection 攻击面
-- [AI Agent](../智能体/Agent_Foundations/Agent-in-nutshell.md) — Agentic AI 安全是新前线
-- [Model Evaluation](../模型评估/Evaluation-in-nutshell.md) — 评测方法论基础
+- [深度强化学习](强化学习/Deep_RL/Deep_RL.md) — PPO 是 RLHF 的核心算法
+- [Prompt Engineering](大模型/Prompt_Engineering/Prompt-Engineering-in-nutshell.md) — 理解 Prompt Injection 攻击面
+- [AI Agent](智能体/Agent_Foundations/Agent-in-nutshell.md) — Agentic AI 安全是新前线
+- [Model Evaluation](模型评估/Evaluation_Fundamentals/Evaluation-in-nutshell.md) — 评测方法论基础
 
 ### 同系列速览
-- [本章节 README](./README.md) — 章节导航
+- [本章节 README](README.md) — 章节导航
 - [Ethics-in-nutshell (旧版)](./Ethics-in-nutshell.md) — 更精简的速成指南
 
 ---
 
 *Last updated: 2026-06-05*
+
+## 相关链接
+
+- [[伦理安全/Ethics_Fundamentals/AI_Ethics_Safety_Future|AI 伦理安全未来]] — 伦理安全深度探讨
+- [[伦理安全/index|伦理安全首页]] — 伦理安全知识总览
+- [[概念/Safety/ai-ethics|AI 伦理]] — AI 伦理概念卡片
+- [[概念/Safety/ai-alignment|AI 对齐]] — 对齐技术总览
+- [[伦理安全/Value_Alignment/Value_Alignment|价值对齐]] — 对齐工程实践
+- [[伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming|AI 安全与红队测试]] — 安全评估方法

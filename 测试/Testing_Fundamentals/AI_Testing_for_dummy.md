@@ -465,7 +465,7 @@ AI 在训练时没见过"特殊场景"
 
 ---
 
-*本文是 [AI Testing](../README.md) 的简化版，适合零基础读者。*
+*本文是 [AI Testing](.README.md) 的简化版，适合零基础读者。*
 
 ## Related
 

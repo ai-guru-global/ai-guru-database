@@ -298,10 +298,10 @@ flowchart TB
 
 ## 6. 与其他章节的关联
 
-- [Fine-tuning 策略](../../大模型/Fine_tuning_Techniques/Fine_tuning_Strategies.md) — 模型合并 vs 参数高效微调
+- [Fine-tuning 策略](大模型/Fine_tuning_Techniques/Fine_tuning_Strategies.md) — 模型合并 vs 参数高效微调
 - [LLaMA 模型](../../大模型/LLM_Architectures/) — 最常用的合并基础模型
 - [模型评估](../../模型评估/) — 合并后如何评估模型质量
-- [开源项目概览](../../智能体/AI_OpenSource_Projects_Overview.md) — 开源社区的热门合并模型
+- [开源项目概览](智能体/Agent_Foundations/AI_OpenSource_Projects_Overview.md) — 开源社区的热门合并模型
 
 ---
 

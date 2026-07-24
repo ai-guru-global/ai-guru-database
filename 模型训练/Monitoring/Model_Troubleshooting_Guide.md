@@ -14,7 +14,7 @@ sources: []
 ---
 
 > [!warning] 生产安全提示 · Production Safety
-> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../治理/Production_Safety_Policy.md)。
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # 模型问题排查手册 — 预训练/微调/推理全链路故障诊断
 
@@ -639,3 +639,12 @@ python -m vllm.entrypoints.openai.api_server \
 ---
 
 *Last updated: 2026-06-12*
+
+## 相关链接
+
+- [[模型训练/Monitoring/index|监控索引]] — 训练监控主题导览
+- [[模型训练/Monitoring/Training_Monitoring_2026|训练监控 2026]] — 监控实践
+- [[模型训练/Monitoring/Training_Job_Diagnosis_Workflow|训练任务诊断流程]] — 诊断方法论
+- [[模型训练/Monitoring/LLM_Fine_Tuning_Job_Failure_Runbook_on_K8s|K8s 微调任务故障 Runbook]] — 故障排查手册
+- [[模型训练/Distributed_Training/Distributed_Training_Hang_Runbook|分布式训练卡死 Runbook]] — 分布式训练故障
+- [[概念/GPU/gpu-oom|GPU OOM]] — 常见训练故障

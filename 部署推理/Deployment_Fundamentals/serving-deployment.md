@@ -2,7 +2,7 @@
 title: 模型服务 × 模型部署
 category: -synthesis
 tags: [deployment, serving, inference, vllm, sglang, tensorrt, kubernetes, edge]
-sources: [概念/model-serving.md, 概念/model-deployment.md]
+sources: [概念/model-serving.md, 概念/General/model-deployment.md]
 created: 2026-05-31T21:30:00+08:00
 updated: 2026-05-31T21:30:00+08:00
 summary: "部署解决'如何上线'，服务解决'如何高效运行'：两者共同构成 LLM 推理的工程闭环，2026年的核心矛盾是吞吐量与延迟的权衡。"

@@ -316,11 +316,11 @@ sources: []
  - knowledge_gap.md (知识缺口模板)
 
 **2. 新增项目路线图**
-- 文件: `ROADMAP.md`
+- 文件: `治理/ROADMAP.md`
 - 内容: 2026 各季度规划
 
 **3. 新增已知问题追踪**
-- 文件: `KNOWN_ISSUES.md`
+- 文件: `治理/KNOWN_ISSUES.md`
 - 内容: 问题状态追踪表
 
 **4. 新增变更日志规范**

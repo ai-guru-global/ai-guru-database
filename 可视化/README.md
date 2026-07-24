@@ -73,9 +73,9 @@ python -m http.server 8080
 
 - [[前端应用/atlas/README]] — AI Guru Knowledge Atlas（D3） (共享: charts, dashboards, data-viz, visualization)
 - [[前端应用/atlas/docs/performance]] — 性能审计报告（Lighthouse） (共享: charts, dashboards, data-viz, visualization)
-- [[可视化/Training_Monitoring_Visualization.md|Training_Monitoring_Visualization]]
-- [[可视化/Visualization_for_dummy.md|Visualization_for_dummy]]
-- [[可视化/AI_System_Dashboard.md|AI_System_Dashboard]]
+- [[可视化/Training_Viz/Training_Monitoring_Visualization.md|Training_Monitoring_Visualization]]
+- [[可视化/Best_Practices/Visualization_for_dummy.md|Visualization_for_dummy]]
+- [[可视化/System_Viz/AI_System_Dashboard.md|AI_System_Dashboard]]
 - [[可视化/README_for_dummy.md|README_for_dummy]]
-- [[可视化/Model_Interpretability_Visualization.md|Model_Interpretability_Visualization]]
+- [[可视化/Evaluation_Viz/Model_Interpretability_Visualization.md|Model_Interpretability_Visualization]]
 

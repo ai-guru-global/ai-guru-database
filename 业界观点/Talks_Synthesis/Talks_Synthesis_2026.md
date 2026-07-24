@@ -211,7 +211,7 @@ flowchart TB
 4. 形成自己的判断
 
 ### 按人物研究
-1. 从 [Talks 目录](./README.md) 选择感兴趣的人物
+1. 从 [Talks 目录](README.md) 选择感兴趣的人物
 2. 阅读 `about.md` 了解背景
 3. 阅读 `sayings.md` 获取金句和来源
 4. 回到本文件查看该人物在哪些主题中活跃
@@ -220,9 +220,9 @@ flowchart TB
 
 ## 与其他章节的关联
 
-- [AI 历史](../入门/AI_History_Timeline.md) — 演讲者贡献与历史时间线
-- [AI 伦理](../入门/AI_Ethics_Society.md) — AI 安全争议的深入分析
-- [AI 未来趋势](../入门/AI_Future_Trends.md) — 行业前瞻判断的汇总
+- [AI 历史](入门/Fundamentals/AI_History_Timeline.md) — 演讲者贡献与历史时间线
+- [AI 伦理](入门/Ethics_and_Future/AI_Ethics_Society.md) — AI 安全争议的深入分析
+- [AI 未来趋势](入门/Ethics_and_Future/AI_Future_Trends.md) — 行业前瞻判断的汇总
 - [Agent 生产](../智能体/README.md) — Agent 技术实现
 
 ---

@@ -647,7 +647,7 @@ AI在学习:
 
 **下一步阅读**:
 - 📘 [AI智能体 - 小白版](../../智能体/Agent_Foundations/AI_Agents_for_dummy.md) - 学习自主决策系统
-- 📘 [Transformer - 小白版](../../大模型/Transformer_Revolution/Transformer_Revolution_for_dummy.md) - 理解 PPO 如何训练 ChatGPT
+- 📘 [Transformer - 小白版](大模型/Transformer_Revolution/Transformer_Revolution_for_dummy.md) - 理解 PPO 如何训练 ChatGPT
 
 **查看原版文档**(需要技术基础):
 - 📄 [深度强化学习(原版)](./Deep_RL.md) - 包含 DQN、PPO 的代码实现
@@ -659,9 +659,18 @@ AI在学习:
 
 **相关主题**:
 - 🔙 [强化学习基础 - 小白版](../RL_Foundations/RL_Foundations_for_dummy.md) - 理解 Q-Learning 基础
-- 🔙 [CNN - 小白版](../../计算机视觉/Image_Classification_Detection/Image_Classification_Detection_for_dummy.md) - DQN 的视觉编码器
+- 🔙 [CNN - 小白版](计算机视觉/Image_Classification_Detection/Image_Classification_Detection_for_dummy.md) - DQN 的视觉编码器
 - 🔜 [AI智能体 - 小白版](../../智能体/Agent_Foundations/AI_Agents_for_dummy.md) - RL 的高级应用
 
 ---
 
 *本文是 [Deep_RL.md](./Deep_RL.md) 的简化版,适合零基础读者。*
+
+## 相关链接
+
+- [[强化学习/Deep_RL/Deep_RL|深度强化学习 (完整版)]] — 本篇小白版对应的详细版
+- [[强化学习/Deep_RL/index|深度强化学习索引]] — 主题导览
+- [[强化学习/RL_Foundations/RL_Fundamentals_overview|强化学习基础]] — DRL 的理论基础
+- [[强化学习/Deep_RL/DQN_Deep_Dive|DQN 深度解析]] — DRL 开山之作
+- [[强化学习/Deep_RL/PPO_Deep_Dive|PPO 深度解析]] — 主流 DRL 算法
+- [[概念/General/deep-reinforcement-learning|深度强化学习]] — 概念卡片

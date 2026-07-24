@@ -46,7 +46,7 @@ sources: []
 - [[智能体/Agent_Evaluation/Metrics/Evaluation_Metrics]] — Evaluation Metrics (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
 - [[智能体/Agent_Evaluation/Multi_Agent_Evaluation_2026]] — Multi-Agent System Evaluation Framework 2026 (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
 - [[模型运维/Cloud_Ops_Agent/docs/index|index]]
-- [[智能体/AI_OpenSource_Projects_Overview.md|AI_OpenSource_Projects_Overview]]
+- [[智能体/Agent_Foundations/AI_OpenSource_Projects_Overview.md|AI_OpenSource_Projects_Overview]]
 - [[智能体/Gradio_Deep_Dive.md|Gradio_Deep_Dive]]
 - [[智能体/README.md|README]]
 - [[智能体/README_for_dummy.md|README_for_dummy]]

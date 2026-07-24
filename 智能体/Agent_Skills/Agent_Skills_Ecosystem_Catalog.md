@@ -372,7 +372,7 @@ awesome-agent-skills 仓库强调**人工审核**，不接受 AI 批量生成的
 # 提交 PR
 ```
 
-详见：[CONTRIBUTING.md](https://github.com/Volt智能体/awesome-agent-skills/blob/main/CONTRIBUTING.md)
+详见：[治理/CONTRIBUTING.md](https://github.com/Volt智能体/awesome-agent-skills/blob/main/CONTRIBUTING.md)
 
 ---
 

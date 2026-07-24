@@ -933,7 +933,15 @@ print(plate)
 ### 相关文档
 
 - [3D 计算机视觉](../3D_Vision/3D_Vision.md)
-- [计算机视觉概述](../CV-in-nutshell.md)
-- [部署推理 2026](../../部署推理/Deployment_Inference_2026.md)
+- [计算机视觉概述](计算机视觉/CV_Fundamentals/CV-in-nutshell.md)
+- [部署推理 2026](部署推理/Deployment_Fundamentals/Deployment_Inference_2026.md)
 - [PaddleOCR 官方文档](https://github.com/PaddlePaddle/PaddleOCR)
 - [Tesseract 官方文档](https://github.com/tesseract-ocr/tesseract)
+
+## 相关链接
+
+- [[计算机视觉/OCR_Text_Recognition/OCR_for_dummy|OCR 与文字识别 (小白版)]] — 本篇的零基础版本
+- [[计算机视觉/OCR_Text_Recognition/index|OCR 文字识别索引]] — 主题导览
+- [[概念/Vision/document-ai|文档 AI]] — OCR 在文档 AI 中的应用
+- [[RAG系统/index|RAG 系统]] — OCR 在 RAG 文档解析中的作用
+- [[大模型/Multimodal_Models/Multimodal_Architectures_2026|多模态架构 2026]] — OCR 的多模态架构基础

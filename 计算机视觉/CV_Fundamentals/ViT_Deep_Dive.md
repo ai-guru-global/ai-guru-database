@@ -388,7 +388,7 @@ predicted_class = outputs.logits.argmax(-1)
 
 ---
 
-*本文是 [README.md](./README.md) 的补充，适合想深入理解 ViT 和视觉 Transformer 原理的读者。*
+*本文是 [README.md](README.md) 的补充，适合想深入理解 ViT 和视觉 Transformer 原理的读者。*
 *原始论文: [An Image is Worth 16x16 Words](https://arxiv.org/abs/2010.11929)*
 
 ## Related

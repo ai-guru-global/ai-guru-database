@@ -378,7 +378,7 @@ flowchart TB
 
 ## 🔗 相关主题
 
-- 学习 [推理](../部署推理/Inference-in-nutshell.md) - 使用训练好的模型
+- 学习 [推理](部署推理/Deployment_Fundamentals/Inference-in-nutshell.md) - 使用训练好的模型
 - 探索 [MLOps](../MLOps_Pipeline/) - 自动化训练流水线
 - 理解 [模型评估](../Model_Evaluation/) - 衡量模型质量
 

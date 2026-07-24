@@ -14,7 +14,7 @@ sources: []
 ---
 
 > [!warning] 生产安全提示 · Production Safety
-> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../治理/Production_Safety_Policy.md)。
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # 自动化模型评估 2026 (Evaluation Automation)
 
@@ -1352,14 +1352,14 @@ flowchart TD
 ## 9. 与其他主题的关联 (Connections)
 
 ### 前置知识
-- [模型训练](../模型训练/Model-Training-in-nutshell.md) — 理解训练过程对评估的影响
-- [模型评估基础](./Model_Evaluation.md) — 评估指标与方法论
+- [模型训练](模型训练/Training_Fundamentals/Model-Training-in-nutshell.md) — 理解训练过程对评估的影响
+- [模型评估基础](模型评估/Evaluation_Fundamentals/Model_Evaluation.md) — 评估指标与方法论
 
 ### 进阶方向
 - [AI 测试框架](../测试/README.md) — 测试框架与评估工具链
-- [MLOps 流水线](../模型运维/MLOps_Pipeline.md) — CI/CD 集成与模型生命周期
-- [AI Ops 监控](../运维/AI_Ops_2026.md) — 生产环境模型监控与自动告警
-- [在线评估](./Evaluation_Tools/Online_Evaluation.md) — 上线后的真实效果评估
+- [MLOps 流水线](模型运维/MLOps_Fundamentals/MLOps_Pipeline.md) — CI/CD 集成与模型生命周期
+- [AI Ops 监控](运维/AIOps_Fundamentals/AI_Ops_2026.md) — 生产环境模型监控与自动告警
+- [在线评估](模型评估/Evaluation_Tools/Online_Evaluation.md) — 上线后的真实效果评估
 
 ---
 
@@ -1392,7 +1392,7 @@ flowchart TD
 
 ## Related
 
-- [[模型评估/Model_Evaluation.md|Model_Evaluation]]
+- [[模型评估/Evaluation_Fundamentals/Model_Evaluation.md|Model_Evaluation]]
 - [[模型评估/README.md|模型评估 README]]
 - [[智能体/Agent_Evaluation/Assessment/Evaluation_Workflow.md|Evaluation_Workflow]]
 - [[智能体/Agent_Evaluation/Cloud_Agent_Evaluation/README.md|Cloud_Agent_Evaluation README]]

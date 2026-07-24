@@ -145,11 +145,11 @@ Pichai 的核心判断：
 
 ## 交叉引用 (Cross-References)
 
-- [Talks 主题合成 2026](../Talks_Synthesis_2026.md) — 查看 Pichai 在各主题中的立场
+- [Talks 主题合成 2026](业界观点/Talks_Synthesis/Talks_Synthesis_2026.md) — 查看 Pichai 在各主题中的立场
 - [[业界观点/Bill_Gates/about]] — Gates 与 Pichai 同样强调 AI 的革命性和社会影响
 - [[业界观点/Mark_Zuckerberg/about]] — Zuckerberg (Meta) 与 Pichai 在 AI 商业化和开源策略上有差异
 - [[业界观点/Mustafa_Suleyman/about]] — Suleyman 是前 Google/DeepMind 成员
-- [AI 伦理与社会](../../入门/AI_Ethics_Society.md) — Responsible AI 框架
+- [AI 伦理与社会](入门/Ethics_and_Future/AI_Ethics_Society.md) — Responsible AI 框架
 - [大模型基础](../../大模型/README.md) — Gemini 系列与 Transformer 演进
 
 ---

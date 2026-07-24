@@ -165,11 +165,11 @@ Perception（编码器）
 
 ## Related
 
-- [[概念/neural-networks.md|neural-networks]]
-- [[概念/optimization-regularization.md|optimization-regularization]]
-- [[概念/state-space-models.md|state-space-models]]
-- [[概念/transformer-architecture.md|transformer-architecture]]
-- [[入门/AI_Future_Trends.md|AI_Future_Trends]]
+- [[概念/Math/neural-networks.md|neural-networks]]
+- [[概念/Math/optimization-regularization.md|optimization-regularization]]
+- [[概念/LLM/state-space-models.md|state-space-models]]
+- [[概念/LLM/transformer-architecture.md|transformer-architecture]]
+- [[入门/Ethics_and_Future/AI_Future_Trends.md|AI_Future_Trends]]
 
 ---
 

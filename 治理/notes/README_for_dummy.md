@@ -155,11 +155,11 @@ Stage 4: 前沿探索 ─── 多模态、世界模型、AGI
 
 - 想系统学习？→ [90_Learn/README.md](../学习/README.md)
 - 想贡献内容？→ [治理/Import_Guide.md](../Import_Guide.md)
-- 想了解项目规划？→ [治理/plan/README.md](../治理/plan/README.md)
+- 想了解项目规划？→ [治理/plan/README.md](治理/plan/README.md)
 
 ---
 
-*本文是 [README.md](./README.md) 的简化版，适合零基础读者。*
+*本文是 [README.md](README.md) 的简化版，适合零基础读者。*
 
 ## Related
 

@@ -128,8 +128,8 @@ Stage 4 前沿（Agent / 多模态）
 **📚 核心概念**：[Stage 3: 工程实践 — RAG / 向量数据库](学习/concepts/stage3_engineering.md)
 
 **🔗 深入阅读**：
-- [RAG 系统（小白版）](RAG系统/RAG_Systems_for_dummy.md)
-- [RAG 系统（速查版）](RAG系统/RAG-in-nutshell.md)
+- [RAG 系统（小白版）](RAG系统/RAG_Fundamentals/RAG_Systems_for_dummy.md)
+- [RAG 系统（速查版）](RAG系统/RAG_Fundamentals/RAG-in-nutshell.md)
 - [AI Skills 速查版](智能体/Agent_Skills/Skills-in-nutshell.md)（AI Skills 的设计模式）
 
 **💡 RAG 全链路技术栈**：
@@ -222,10 +222,10 @@ Agent 框架选择：
 **📚 核心概念**：[Stage 3: 工程实践 — 部署 / AI Gateway](学习/concepts/stage3_engineering.md)
 
 **🔗 深入阅读**：
-- [部署与推理（小白版）](部署推理/Deployment_Inference_for_dummy.md)
-- [部署与推理（速查版）](部署推理/Inference-in-nutshell.md)
+- [部署与推理（小白版）](部署推理/Deployment_Fundamentals/Deployment_Inference_for_dummy.md)
+- [部署与推理（速查版）](部署推理/Deployment_Fundamentals/Inference-in-nutshell.md)
 - [AI Gateway（速查版）](架构基建/AI_Gateway/Gateway-in-nutshell.md)
-- [AIOps（速查版）](运维/AIOps-in-nutshell.md)
+- [AIOps（速查版）](运维/AIOps_Fundamentals/AIOps-in-nutshell.md)
 
 **💡 生产优化技术栈**：
 ```

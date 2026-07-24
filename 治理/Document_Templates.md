@@ -963,9 +963,9 @@ AI 领域领袖人物的简介、核心观点和动态追踪。
 
 ## 相关主题与延伸阅读
 
-- [Talks Synthesis 2026](业界观点/Talks_Synthesis_2026.md) — 查看 [姓名] 在 Scaling Laws、AI 安全等主题中的立场
-- [AI 历史](入门/AI_History_Timeline.md) — [姓名] 的关键贡献时间线
-- [AI 未来趋势](入门/AI_Future_Trends.md) — 行业前瞻判断汇总
+- [Talks Synthesis 2026](业界观点/Talks_Synthesis/Talks_Synthesis_2026.md) — 查看 [姓名] 在 Scaling Laws、AI 安全等主题中的立场
+- [AI 历史](入门/Fundamentals/AI_History_Timeline.md) — [姓名] 的关键贡献时间线
+- [AI 未来趋势](入门/Ethics_and_Future/AI_Future_Trends.md) — 行业前瞻判断汇总
 
 ---
 

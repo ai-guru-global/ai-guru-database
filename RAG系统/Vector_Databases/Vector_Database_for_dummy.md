@@ -423,20 +423,20 @@ AI 会自动学习每个词/句子的"数字表示"
 你已经了解了向量数据库的基础知识！🎉
 
 建议接下来：
-1. **了解 RAG 系统**：阅读 [RAG 系统入门](./RAG_Systems_for_dummy.md)，看看向量数据库怎么用在 AI 问答中
+1. **了解 RAG 系统**：阅读 [RAG 系统入门](RAG系统/RAG_Fundamentals/RAG_Systems_for_dummy.md)，看看向量数据库怎么用在 AI 问答中
 2. **动手实践**：用 Chroma 做一个简单的文档搜索工具
-3. **深入学习**：阅读 [Milvus 深度指南](./Vector_Databases/Milvus_Deep_Dive.md) 或 [Chroma 深度指南](./Vector_Databases/Chroma_Deep_Dive.md)
+3. **深入学习**：阅读 [Milvus 深度指南](RAG系统/Vector_Databases/Milvus_Deep_Dive.md) 或 [Chroma 深度指南](RAG系统/Vector_Databases/Chroma_Deep_Dive.md)
 
 > 记住：向量数据库是 AI 应用的"记忆库"。没有它，AI 只能用训练时学到的知识；有了它，AI 可以查阅任何你给它的资料。
 
 ---
 
-*本文是向量数据库的入门版，适合零基础读者。想了解更多 RAG 相关知识？[点这里](./RAG_Systems_for_dummy.md)*
+*本文是向量数据库的入门版，适合零基础读者。想了解更多 RAG 相关知识？[点这里](RAG系统/RAG_Fundamentals/RAG_Systems_for_dummy.md)*
 
 ## Related
 
-- [[RAG系统/RAG-in-nutshell.md|RAG-in-nutshell]]
-- [[RAG系统/RAG_Systems.md|RAG_Systems]]
+- [[RAG系统/RAG_Fundamentals/RAG-in-nutshell.md|RAG-in-nutshell]]
+- [[RAG系统/RAG_Fundamentals/RAG_Systems.md|RAG_Systems]]
 - [[RAG系统/README_Advanced.md|README_Advanced]]
 - [[RAG系统/RAG_Frameworks/Spring_AI_RAG_Deep_Dive.md|Spring_AI_RAG_Deep_Dive]]
-- [[治理/rag-vector-database.md|rag-vector-database]]
+- [[RAG系统/Vector_Databases/rag-vector-database.md|rag-vector-database]]

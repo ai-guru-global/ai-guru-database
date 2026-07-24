@@ -15,7 +15,7 @@ sources: []
 ---
 
 > [!warning] 生产安全提示 · Production Safety
-> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../治理/Production_Safety_Policy.md)。
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # MLC LLM: 移动端/异构设备 LLM 推理框架
 
@@ -504,4 +504,4 @@ engine = MLCEngine(
 - [[部署推理/Inference_Engines/Ollama_Deep_Dive|Ollama_Deep_Dive]]
 - [[部署推理/Inference_Engines/vLLM_Deep_Dive|vLLM_Deep_Dive]]
 - [[部署推理/Inference_Engines/LLM_Inference_Engine_Selection_Guide|LLM_Inference_Engine_Selection_Guide]]
-- [[部署推理/Deployment_Inference.md|Deployment_Inference]]
+- [[部署推理/Deployment_Fundamentals/Deployment_Inference.md|Deployment_Inference]]

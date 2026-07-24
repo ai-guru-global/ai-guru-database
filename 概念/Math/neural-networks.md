@@ -158,7 +158,7 @@ $$\hat{x}_i = \frac{x_i - \mu_{\mathcal{B}}}{\sqrt{\sigma_{\mathcal{B}}^2 + \eps
 - [[深度学习/README]] — 03 深度学习基础 (Deep Learning Foundations) (共享: backpropagation, dl)
 - [[深度学习/World_Models/JEPA_Architecture_2026]] — JEPA 架构深度解析：LeCun 的世界模型之路 (共享: backpropagation, dl)
 - [[深度学习/World_Models/README]] — 世界模型 (World Models) (共享: backpropagation, dl)
-- [[概念/world-models-jepa.md|world-models-jepa]]
+- [[概念/Vision/world-models-jepa.md|world-models-jepa]]
 
 ---
 

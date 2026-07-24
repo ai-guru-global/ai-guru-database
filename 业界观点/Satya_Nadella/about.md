@@ -127,9 +127,9 @@ Nadella 的核心影响力在于他是"将 GPT 推向全球企业的人"。OpenA
 
 ## 交叉引用 (Cross-References)
 
-- [Talks 主题合成 2026](业界观点/Talks_Synthesis_2026.md) — 查看 Satya Nadella 在 Scaling Laws、开源 vs 闭源、AI 安全等主题中的立场
-- [AI 历史时间线](入门/AI_History_Timeline.md) — 微软 × OpenAI 合作的关键节点
-- [AI 未来趋势](入门/AI_Future_Trends.md) — 企业 AI 的普及趋势
+- [Talks 主题合成 2026](业界观点/Talks_Synthesis/Talks_Synthesis_2026.md) — 查看 Satya Nadella 在 Scaling Laws、开源 vs 闭源、AI 安全等主题中的立场
+- [AI 历史时间线](入门/Fundamentals/AI_History_Timeline.md) — 微软 × OpenAI 合作的关键节点
+- [AI 未来趋势](入门/Ethics_and_Future/AI_Future_Trends.md) — 企业 AI 的普及趋势
 - [[业界观点/Sam_Altman/about]] — OpenAI 与微软的战略伙伴关系
 - [[业界观点/Sundar_Pichai/about]] — Google vs 微软的 AI 竞赛
 - [[业界观点/Jensen_Huang/about]] — NVIDIA 算力与微软云基础设施的协同

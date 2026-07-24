@@ -137,12 +137,12 @@ Gates 的核心信念：
 
 ## 交叉引用 (Cross-References)
 
-- [Talks 主题合成 2026](../Talks_Synthesis_2026.md) — 查看 Gates 在各主题中的立场
+- [Talks 主题合成 2026](业界观点/Talks_Synthesis/Talks_Synthesis_2026.md) — 查看 Gates 在各主题中的立场
 - [[业界观点/Sundar_Pichai/about]] — Pichai (Google/Alphabet CEO) 同样强调 AI 的革命性
 - [[业界观点/Andrew_Ng/about]] — Ng 与 Gates 同样强调 AI 的务实落地与社会影响
 - [[业界观点/Geoffrey_Hinton/about]] — Hinton 警告 AI 风险，Gates 更为乐观
-- [AI 未来趋势](../../入门/AI_Future_Trends.md) — AI 在健康、教育等领域的应用
-- [AI 伦理与社会](../../入门/AI_Ethics_Society.md) — AI 与全球不平等
+- [AI 未来趋势](入门/Ethics_and_Future/AI_Future_Trends.md) — AI 在健康、教育等领域的应用
+- [AI 伦理与社会](入门/Ethics_and_Future/AI_Ethics_Society.md) — AI 与全球不平等
 
 ---
 
@@ -163,7 +163,7 @@ Gates 的核心信念：
 - [[业界观点/Andrew_Ng/about]] — Andrew Ng 简介 (Andrew Ng) (共享: insights, leaders, speeches, talks)
 - [[业界观点/Andrew_Ng/sayings]] — Andrew Ng 关于 AI 的观点与格言 (共享: insights, leaders, speeches, talks)
 - [[业界观点/Bill_Gates/sayings]] — Bill Gates 关于 AI 的观点 (Bill Gates on AI) (共享: insights, leaders, speeches, talks)
-- [[业界观点/Talks_for_dummy.md|Talks_for_dummy]]
+- [[业界观点/Talks_Synthesis/Talks_for_dummy.md|Talks_for_dummy]]
 
 ## 附录：人物影响力评估
 

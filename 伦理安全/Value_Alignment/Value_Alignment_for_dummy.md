@@ -730,7 +730,7 @@ Anthropic 的 Claude:
 ### 📄 进阶阅读
 - [价值对齐(完整版)](./Value_Alignment.md) - 技术细节和算法原理
 - [AI 安全与红队 - 小白版](../AI_Safety_RedTeaming/AI_Safety_RedTeaming_for_dummy.md) - 对齐的验证
-- [强化学习基础 - 小白版](../../强化学习/RL_Foundations/RL_Foundations_for_dummy.md) - RLHF 的 RL 基础
+- [强化学习基础 - 小白版](强化学习/RL_Foundations/RL_Foundations_for_dummy.md) - RLHF 的 RL 基础
 
 ### 🛠️ 动手实践
 - [Hugging Face RLHF 教程](https://huggingface.co/blog/rlhf)
@@ -738,8 +738,8 @@ Anthropic 的 Claude:
 - [AI Fairness 360](https://github.com/Trusted-AI/AIF360) - 偏见检测
 
 ### 🎓 相关知识
-- [大语言模型 - 小白版](../../大模型/LLM_Architectures/LLM_Architectures_for_dummy.md)
-- [监督学习 - 小白版](../../机器学习/Supervised_Learning/Supervised_Learning_for_dummy.md)
+- [大语言模型 - 小白版](大模型/LLM_Architectures/LLM_Architectures_for_dummy.md)
+- [监督学习 - 小白版](机器学习/Supervised_Learning/Supervised_Learning_for_dummy.md)
 
 ---
 

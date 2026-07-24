@@ -110,9 +110,9 @@ Thrun 的影响力横跨三个维度：**学术研究**（概率机器人学、S
 
 ## 交叉引用 (Cross-References)
 
-- [Talks 主题合成 2026](业界观点/Talks_Synthesis_2026.md) — 查看 Sebastian Thrun 在 Scaling Laws、开源 vs 闭源、AI 安全等主题中的立场
-- [AI 历史时间线](入门/AI_History_Timeline.md) — DARPA 大挑战赛与自动驾驶产业起源
-- [AI 未来趋势](入门/AI_Future_Trends.md) — 自动驾驶与教育科技的前瞻判断
+- [Talks 主题合成 2026](业界观点/Talks_Synthesis/Talks_Synthesis_2026.md) — 查看 Sebastian Thrun 在 Scaling Laws、开源 vs 闭源、AI 安全等主题中的立场
+- [AI 历史时间线](入门/Fundamentals/AI_History_Timeline.md) — DARPA 大挑战赛与自动驾驶产业起源
+- [AI 未来趋势](入门/Ethics_and_Future/AI_Future_Trends.md) — 自动驾驶与教育科技的前瞻判断
 - [[业界观点/Andrew_Ng/about]] — 同为 MOOC 教育先驱，Coursera vs Udacity 路线对比
 - [[业界观点/Andrej_Karpathy/about]] — 同为斯坦福 AI 教育体系出身的技术领袖
 - [[业界观点/Elon_Musk/about]] — 自动驾驶路线之争：激光雷达 vs 纯视觉

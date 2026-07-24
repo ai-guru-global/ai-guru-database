@@ -850,7 +850,7 @@ Q: Vibe Coding 生产环境实践
 A: AI编程/Methodology/Vibe_Coding_Production_Practices.md
 
 Q: Agent 评估框架
-A: Agent/Agent_Evaluation/Agent_Harness_Complete_2026.md
+A: 智能体/Agent_Evaluation/Agent_Harness_Complete_2026.md
 
 Q: Agent 未来发展
 A: 强化学习/AI_Agents/Agent_Future_Roadmap_2026_2030.md
@@ -886,7 +886,7 @@ Q: AI 对齐与价值观
 A: 伦理安全/Value_Alignment/
 
 Q: LLM 评估基准 (MMLU/HumanEval)
-A: 模型评估/Model_Evaluation.md
+A: 模型评估/Evaluation_Fundamentals/Model_Evaluation.md
 
 Q: 特征工程
 A: 机器学习/Feature_Engineering/Feature_Engineering.md

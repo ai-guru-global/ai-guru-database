@@ -15,7 +15,7 @@ sources: []
 ---
 
 > [!warning] 生产安全提示 · Production Safety
-> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../治理/Production_Safety_Policy.md)。
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # KitOps (ModelKit): 大模型制品打包标准
 
@@ -120,7 +120,7 @@ datasets:
   - name: qa-finetune
     path: ./data/qa_train.jsonl
 docs:
-  - path: ./README.md
+  - path: README.md
   - path: ./RUNBOOK.md
 ```
 
@@ -443,7 +443,7 @@ datasets:
   - name: qa-eval-v3
     path: ./data/qa_eval_v3.jsonl
 docs:
-  - path: ./README.md
+  - path: README.md
   - path: ./RUNBOOK.md
   - path: ./MODEL_CARD.md
   - path: ./COMPLIANCE.md

@@ -1,208 +1,173 @@
 ---
-title: Demis_Hassabis
-type: index
+title: Demis Hassabis 人物索引
+category: 19-talks-demis-hassabis
+tags: ["talks", "index", "leaders", "DeepMind", "AGI", "AlphaGo", "AlphaFold", "Nobel-Prize", "Gemini", "AI-for-Science", "world-model"]
+summary: "> **一句话概括**: Google DeepMind CEO、2024 诺贝尔化学奖得主——用 AlphaGo 击败围棋世界冠军、AlphaFold 破解蛋白质折叠，证明 AI 可以攻克人类最复杂的智力与科学难题。"
 created: 2026-07-02
-updated: 2026-07-11
-sources: []
-tags: [auto-index]
+updated: 2026-07-23
+tier: supporting
+aliases:
+  - Demis Hassabis 索引
+  - DeepMind CEO
+sources:
+  - "https://www.nature.com/articles/d41586-023-02212-7"
+  - "https://deepmind.google/"
 ---
 
-# Demis_Hassabis
+# Demis Hassabis 人物索引
 
-Demis Hassabis — Google DeepMind CEO，AlphaGo、AlphaFold 缔造者，强化学习（RL）与科学发现（scientific discovery）先驱。
+> **一句话概括**: Google DeepMind 联合创始人兼 CEO——以 AlphaGo 击败围棋世界冠军、AlphaFold 破解蛋白质折叠难题，证明 AI 可以攻克人类最复杂的智力与科学挑战，2024 年因 AlphaFold 获诺贝尔化学奖。
+
+---
+
+## 人物定位
+
+Demis Hassabis 是"科学导向 AGI 研究"的代表。他领导 DeepMind 开发 AlphaGo（2016 击败李世石）、AlphaFold（2020 破解蛋白质折叠 50 年难题）、Gemini 多模态大模型。他将蒙特卡洛树搜索（MCTS）与深度神经网络结合，开创"深度强化学习+搜索"范式，影响了 AlphaZero、MuZero。2024 年因 AlphaFold 与 John Jumper 共获诺贝尔化学奖，是 AI 研究者首次获此殊荣。
+
+| 维度 | 定位 |
+|------|------|
+| 现任 | Google DeepMind CEO |
+| 桂冠 | 2024 诺贝尔化学奖 |
+| 核心信念 | "解决智能以解决其他问题" |
+| 安全立场 | 科学责任派（负责任部署）|
+| 开源立场 | 反对开源前沿（闭源 + API）|
+| AGI 时间表 | "几年到十年"（3-10 年）|
+| 独特贡献 | AI for Science 范式革命 |
+
+---
 
 ## 文件导航
 
-| 文件 | 说明 | 适用人群 |
+| 文件 | 内容 | 适用人群 |
 |------|------|----------|
-| [[业界观点/Demis_Hassabis/about|about]] | Profile: academic background, career trajectory and core contributions | all readers interested in AI leaders |
-| [[业界观点/Demis_Hassabis/sayings|sayings]] | Collection of important quotes and public statements | all readers / researchers |
+| [[业界观点/Demis_Hassabis/about\|about]] | 完整人物简介：AlphaGo、AlphaFold、Gemini | 所有读者 |
+| [[业界观点/Demis_Hassabis/sayings\|sayings]] | 重要语录合集 | 研究者 |
 
-## Related
+---
 
-- [[业界观点/index|业界观点首页]]
-- [[强化学习/Deep_RL/index|Deep RL]]
+## 核心贡献
 
-## Demis Hassabis 核心观点
+| 贡献 | 时间 | 意义 |
+|------|------|------|
+| AlphaGo | 2016 | 击败围棋世界冠军，AI 里程碑 |
+| AlphaFold | 2020 | 破解蛋白质折叠 50 年难题 |
+| Gemini 多模态大模型 | 2023- | 百万 token、原生多模态、Thinking |
+| 深度强化学习+搜索范式 | —— | AlphaZero、MuZero |
+| 2024 诺贝尔化学奖 | 2024 | AI 研究者首次获此殊荣 |
+| AI for Science 生态 | —— | AlphaMissense、AlphaGeometry、GNoME |
 
-| 主题 | 核心观点 | 影响 |
-|------|----------|------|
-| AI发展 | AlphaGo/AlphaFold、AGI愿景 | 行业方向 |
-| 技术路线 | 前沿研究+工程实践 | 技术选择 |
-| 社会影响 | AI对人类未来的影响 | 政策制定 |
-| 教育理念 | 知识传播与人才培养 | 教育变革 |
+---
 
-## 关键贡献时间线
+## 真实时间线
 
 | 时间 | 事件 | 意义 |
 |------|------|------|
-| 早期 | 学术/职业起步 | 奠定基础 |
-| 中期 | 核心突破/创业 | 行业影响 |
-| 近期 | 最新观点/项目 | 前沿引领 |
-| 2026 | 当前动态 | 持续关注 |
+| 2010 | 联合创立 DeepMind | 科学导向 AI |
+| 2014 | DeepMind 被 Google 收购 | 资源扩展 |
+| 2016 | AlphaGo 击败李世石 | AI 里程碑 |
+| 2017 | AlphaGo Master 击败柯洁 | 围棋超越人类 |
+| 2017 | AlphaZero | 通用棋类系统 |
+| 2019 | MuZero | 无需规则学习 |
+| 2020 | AlphaFold 2 (CASP14) | 蛋白质折叠突破 |
+| 2022.07 | AlphaFold 数据库发布 | 2 亿+ 蛋白质结构 |
+| 2023 | Gemini 1.0 | 多模态大模型 |
+| 2023 | Nature 访谈 | "解决智能以解决其他问题" |
+| 2024 | 诺贝尔化学奖 | AI for Science 最高认可 |
+| 2025-2026 | Gemini 2.5 / 世界模型 | 持续推进 |
+
+---
+
+## 代表性观点
+
+| 主题 | 代表观点 | 来源 |
+|------|----------|------|
+| AGI 哲学 | "AGI 的目标不是造机器人，而是解决智能以解决其他问题" | Nature 2023 |
+| 时间表 | "几年到十年" | 多次采访 |
+| Agent | "Agent 需要世界模型和长期规划能力" | 多次 |
+| 科学 | 智能是通用工具，可攻克科学难题 | Nature |
+
+完整语录见 [[业界观点/Demis_Hassabis/sayings|Hassabis 语录]]。
+
+---
+
+## 行业定位与派别归属
+
+| 派别 | 归属 |
+|------|------|
+| 科学导向 AGI 派 | 代表 |
+| 闭源负责任部署派 | 成员 |
+| 规模信仰派 | 成员（Gemini 也 Scaling）|
+
+Hassabis 的独特之处是**同时追求科学突破和商业部署**——AlphaFold 推动科学，Gemini 参与商业竞赛。他认同世界模型重要性（DeepMind 的 Genie/Dreamer 系列），是世界模型研究的另一支主力。参见 [[业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix|AGI 时间表矩阵]]、[[业界观点/Talks_Synthesis/Hinton_vs_LeCun_World_Model_Debate|Hinton vs LeCun 之争]]。
+
+---
+
+## 相关人物网络
+
+| 关系 | 人物 |
+|------|------|
+| Google 同事 | [[业界观点/Sundar_Pichai/about|Sundar Pichai]] |
+| 闭源同盟 | [[业界观点/Dario_Amodei/about|Amodei]]、[[业界观点/Sam_Altman/about|Altman]] |
+| 世界模型呼应 | [[业界观点/Yann_LeCun/about|LeCun]] |
+| AI for Science 先驱 | 共获诺奖的 John Jumper |
+
+---
 
 ## 学习路径建议
 
 | 阶段 | 推荐内容 | 目标 |
 |------|----------|------|
-| 入门 | about.md 人物简介 | 了解背景 |
-| 进阶 | sayings.md 核心语录 | 理解观点 |
-| 深入 | 原始演讲/论文 | 第一手资料 |
-| 实践 | 相关项目/课程 | 动手体验 |
+| 入门 | [[业界观点/Demis_Hassabis/about\|about]] | 了解 AlphaGo/AlphaFold |
+| 进阶 | [[业界观点/Demis_Hassabis/sayings\|sayings]] | 掌握 AGI 哲学 |
+| 深入 | AlphaFold 论文 / Nature 访谈 | 科学突破 |
+| 对比 | [[业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix\|时间表]] | 路线定位 |
+
+---
 
 ## 常见问题
 
 | 问题 | 解答 |
 |------|------|
-| Demis Hassabis的核心主张是什么？ | AlphaGo/AlphaFold、AGI愿景 |
-| 为什么值得关注？ | Google DeepMind CEO，对AI发展有深远影响 |
-| 如何学习其思想？ | 从about.md开始，再看sayings.md |
-| 与其他领袖有何不同？ | 各有侧重：技术/产品/政策/教育 |
+| Hassabis 为何获诺奖？ | AlphaFold 破解蛋白质折叠 |
+| AlphaGo 意义？ | 证明深度强化学习可超越人类 |
+| 他的 AGI 哲学？ | 解决智能以解决其他问题 |
+| Gemini 与 GPT 区别？ | 原生多模态 + 长上下文 |
+
+---
 
 ## 统计
 
 | 指标 | 数值 |
 |------|------|
-| 文档数量 | 2-4 |
-| 覆盖主题 | AlphaGo/AlphaFold、AGI愿景 |
-| 角色定位 | Google DeepMind CEO |
-| 影响力 | 全球AI领域 |
+| 文档数量 | 2（about / sayings）|
+| 角色定位 | DeepMind CEO / 诺奖得主 |
+| 影响力 | 科学 + 商业 |
+| 派别 | 科学导向 + 闭源 |
 
-## 附录：知识图谱
+---
 
-| 知识节点 | 前置依赖 | 后续延伸 |
-|----------|----------|----------|
-| 人物背景 | 无 | 技术观点 |
-| 核心观点 | 人物背景 | 行业影响 |
-| 技术贡献 | 专业领域 | 后续研究 |
-| 社会影响 | 核心观点 | 政策/伦理 |
-| 教育理念 | 人物经历 | 学习资源 |
-
-## 附录：术语表
+## 术语表
 
 | 术语 | 英文 | 说明 |
 |------|------|------|
-| 通用人工智能 | AGI | 人类水平AI |
-| 对齐 | Alignment | AI目标与人类一致 |
-| 缩放定律 | Scaling Laws | 模型越大性能越好 |
-| 开源 | Open Source | 公开模型权重/代码 |
+| 蒙特卡洛树搜索 | MCTS | AlphaGo 的搜索算法 |
+| 蛋白质折叠 | Protein Folding | AlphaFold 解决的难题 |
+| 深度强化学习 | Deep RL | 深度网络 + 强化学习 |
 | 多模态 | Multimodal | 处理多种数据类型 |
-
-## 附录：快速导航
-
-| 我想... | 去看 | 难度 |
-|---------|------|------|
-| 了解人物背景 | about.md | ⭐ |
-| 查看核心语录 | sayings.md | ⭐ |
-| 深入技术观点 | 原始演讲/论文 | ⭐⭐ |
-| 对比不同领袖 | Talks_Synthesis_2026 | ⭐⭐ |
-
-## 附录：检查清单
-
-| 检查项 | 说明 | 状态 |
-|--------|------|------|
-| 阅读人物简介 | about.md | ☐ |
-| 了解核心观点 | sayings.md | ☐ |
-| 观看代表演讲 | YouTube/原始来源 | ☐ |
-| 对比其他领袖 | 横向比较 | ☐ |
-| 关注最新动态 | 2026年进展 | ☐ |
-
-> �� Demis Hassabis 是 AI 领域的重要声音。理解其观点有助于把握 AI 发展方向和产业趋势。
+| AI for Science | —— | AI 用于科学发现 |
 
 ---
-*Last updated: 2026-07-21*
 
-## 附录：AI领袖观点对比框架
+## 关联导航
 
-| 维度 | 技术乐观派 | 安全谨慎派 | 开源倡导派 | 商业务实派 |
-|------|----------|----------|----------|----------|
-| AGI时间 | 2-5年 | 5-20年 | 不确定 | 渐进式 |
-| 风险态度 | 可控 | 需警惕 | 透明化 | 渐进管理 |
-| 开源立场 | 部分开源 | 受限发布 | 完全开源 | 商业优先 |
-| 监管态度 | 轻监管 | 强监管 | 社区自治 | 行业自律 |
-
-## 附录：2026年AI领袖动态
-
-| 趋势 | 说明 | 代表人物 |
-|------|------|----------|
-| AGI竞赛加速 | 多家公司宣称接近AGI | Altman/Hassabis |
-| 开源vs闭源 | 模型发布策略分化 | Liang/Zuckerberg |
-| AI安全立法 | 各国出台AI法规 | Bengio/Hinton |
-| 具身智能 | 机器人+AI融合 | Huang/Musk |
-| AI教育普及 | 大规模在线课程 | Ng/Karpathy |
-| 多模态融合 | 视觉+语言+动作 | Pichai/Nadella |
-
-## 附录：推荐阅读顺序
-
-| 顺序 | 内容 | 目的 |
-|------|------|------|
-| 1 | about.md | 了解人物背景 |
-| 2 | sayings.md | 掌握核心观点 |
-| 3 | 代表演讲 | 感受表达方式 |
-| 4 | 相关论文/产品 | 深入技术细节 |
-| 5 | Talks_Synthesis | 横向对比 |
-
-## 附录：影响力评估
-
-| 评估维度 | 说明 | 权重 |
-|----------|------|------|
-| 技术贡献 | 论文/专利/产品 | 30% |
-| 行业影响 | 公司/生态/标准 | 25% |
-| 思想引领 | 观点/预测/框架 | 25% |
-| 教育贡献 | 课程/书籍/视频 | 10% |
-| 社会影响 | 政策/伦理/公益 | 10% |
-
-## 附录：相关资源
-
-| 资源类型 | 推荐 | 说明 |
-|----------|------|------|
-| 视频 | YouTube频道 | 演讲/访谈 |
-| 文字 | 博客/Twitter | 第一手观点 |
-| 论文 | arXiv/Google Scholar | 学术贡献 |
-| 播客 | Lex Fridman等 | 深度对话 |
-| 书籍 | 人物传记/技术书 | 系统了解 |
-
-> 💡 每位AI领袖都有独特的视角和贡献。多元观点的碰撞与融合，推动了整个AI领域的快速发展。
+- [[业界观点/Demis_Hassabis/about\|人物简介]] · [[业界观点/Demis_Hassabis/sayings\|核心语录]]
+- [[业界观点/Sundar_Pichai/about\|Sundar Pichai]] · [[业界观点/Dario_Amodei/about\|Dario Amodei]]
+- [[业界观点/Yann_LeCun/about\|Yann LeCun]]（世界模型呼应）
+- [[业界观点/Talks_Synthesis/Hinton_vs_LeCun_World_Model_Debate\|Hinton vs LeCun]]
+- [[业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix\|AGI 时间表矩阵]]
+- [[业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix\|AI 安全立场矩阵]]
+- [[业界观点/index\|业界观点首页]]
 
 ---
-*Last updated: 2026-07-21*
 
-## 附录：AI发展关键里程碑
-
-| 年份 | 里程碑 | 意义 |
-|------|--------|------|
-| 2012 | AlexNet | 深度学习爆发 |
-| 2016 | AlphaGo | AI超越人类棋手 |
-| 2017 | Transformer | 现代LLM基础 |
-| 2020 | GPT-3 | 大模型时代 |
-| 2022 | ChatGPT | AI大众化 |
-| 2023 | GPT-4/多模态 | 能力飞跃 |
-| 2024 | 开源LLM爆发 | LLaMA/Mistral/DeepSeek |
-| 2025 | Agent/具身智能 | AI走向行动 |
-| 2026 | AGI竞赛白热化 | 多家公司角逐 |
-
-## 附录：观点分类标签
-
-| 标签 | 含义 | 相关人物 |
-|------|------|----------|
-| #AGI | 通用人工智能愿景 | Altman/Hassabis/Musk |
-| #Safety | AI安全与对齐 | Bengio/Hinton/Amodei |
-| #OpenSource | 开源AI倡导 | Liang/Zuckerberg/LeCun |
-| #Education | AI教育普及 | Ng/Karpathy/3B1B |
-| #Product | AI产品化 | Nadella/Pichai/Murati |
-| #Research | 前沿研究 | Sutskever/Hinton/LeCun |
-
-## 附录：跨人物主题索引
-
-| 主题 | 相关人物 | 核心分歧 |
-|------|----------|----------|
-| AGI时间线 | 全员 | 2年vs20年 |
-| 开源策略 | Liang/Zuckerberg vs Altman | 开放vs受限 |
-| AI监管 | Bengio/Hinton vs Musk | 强监管vs轻监管 |
-| 就业影响 | Gates/Ng vs Musk | 增强vs替代 |
-| 技术路线 | LeCun vs Hassabis | 世界模型vs缩放 |
-
-> �� 理解AI领袖的观点分歧，比记住单一观点更重要。正是这些碰撞推动了AI的健康发展。
-
----
-*Last updated: 2026-07-21*
+*Last updated: 2026-07-23*

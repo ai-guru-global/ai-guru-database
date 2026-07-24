@@ -29,7 +29,7 @@ sources: []
 | **aliases 字段覆盖** | 2.8% (38/1,359) | **94.7% (1,292/1,364)** | ⬆ +91.9pp |
 | **概念页数量** | 194 | **199** (+5) | ⬆ +2.6% |
 | **速查表数量** | 3 | **8** (+5) | ⬆ +167% |
-| **hot.md / index.md 断链** | 14 (8+6) | **0** | ⬇ -100% |
+| **治理/hot.md / index.md 断链** | 14 (8+6) | **0** | ⬇ -100% |
 | **断链治理工具** | 简单计数 | **分类 JSON 报告** | 升级 |
 | **自动化脚本** | 7 | **9** (+2) | ⬆ +28.6% |
 
@@ -48,16 +48,16 @@ sources: []
 | `概念/observability.md` | 8.2 KB | 新建 | 3 处 |
 | `概念/serverless.md` | 7.4 KB | 新建 | 3 处 |
 | `概念/distributed-training.md` | 8.8 KB | 新建 | 11 处 |
-| `概念/rag-systems.md` | （已有）| 加 aliases: `RAG`, `Retrieval-Augmented Generation`, `检索增强生成` | 5 处 |
-| `概念/embedding-models.md` | （已有）| 加 aliases: `Embedding`, `embedding-models`, `嵌入模型` | 3 处 |
+| `概念/RAG/rag-systems.md` | （已有）| 加 aliases: `RAG`, `Retrieval-Augmented Generation`, `检索增强生成` | 5 处 |
+| `概念/RAG/embedding-models.md` | （已有）| 加 aliases: `Embedding`, `embedding-models`, `嵌入模型` | 3 处 |
 
 **P0-1 收益**: 消除 39 处断链（高频引用概念全部可解析）。
 
-### ✅ P0-2：修复 hot.md / index.md 路径
+### ✅ P0-2：修复 治理/hot.md / index.md 路径
 
 | 文件 | 修复内容 |
 |------|---------|
-| `hot.md` | `治理/综合-*` → `治理/synthesis-*`（4 处）<br>治理/cheatsheet-* → `治理/cheatsheets/cheatsheet-*`（3 处）|
+| `治理/hot.md` | `治理/综合-*` → `治理/synthesis-*`（4 处）<br>治理/cheatsheet-* → `治理/cheatsheets/cheatsheet-*`（3 处）|
 | `index.md` | 同上（7 处）|
 
 **P0-2 收益**: 两个顶层导航文件 14 条断链 → 0。
@@ -77,7 +77,7 @@ sources: []
 
 ## 三、P1 — 重要改进（100% 完成）
 
-### ✅ P1-1：90_Learn/guides/ai_engineering_roadmap_2026.md 断链治理
+### ✅ P1-1：学习/guides/ai_engineering_roadmap_2026.md 断链治理
 
 - 21 条断链 → 0 条
 - 导航表中 18 条章节级 `[[XX_Pillar]]` 转换为 `[[XX_Pillar/README]]`
@@ -202,7 +202,7 @@ python3 工具/check_links.py . --json report.json # 输出 JSON
 | 概念 | 195 | 新增 5 个 + 2 个 alias + 188 个 tier/aliases |
 | 治理/cheatsheets | 8 | 5 新增 + 3 已有 |
 | 治理 报告 | 2 | 本次新增 |
-| hot.md / index.md | 2 | 路径重写 |
+| 治理/hot.md / index.md | 2 | 路径重写 |
 | **总计** | **1328** | |
 
 ---
@@ -292,7 +292,7 @@ python3 工具/check_links.py . --json report.json # 输出 JSON
 
 **重点关注**：
 1. 剩余 371 条断链治理（按章节分批）
-2. 90_Learn/guides/learning_paths_2026.md 中 32 条 stale 引用清理
+2. 学习/guides/learning_paths_2026.md 中 32 条 stale 引用清理
 3. `参考/` 缺失文件补全
 4. Web/ 前端 vitest 修复
 5. 分支合并到 main 后验证

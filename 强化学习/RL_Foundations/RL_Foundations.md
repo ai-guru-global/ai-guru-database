@@ -520,16 +520,16 @@ print("训练完成！Q表已学习最优策略。")
 
 ### 7.1 前置知识
 - **数学基础**:
- - [概率统计](../../数学基础/Probability_Statistics/Probability_Statistics.md): 期望、方差、条件概率
- - [线性代数](../../数学基础/Linear_Algebra/Linear_Algebra.md): 矩阵运算、特征分解
- - [微积分](../../数学基础/Linear_Algebra/Linear_Algebra.md): 梯度、链式法则
+ - [概率统计](数学基础/Probability_Statistics/Probability_Statistics.md): 期望、方差、条件概率
+ - [线性代数](数学基础/Linear_Algebra/Linear_Algebra.md): 矩阵运算、特征分解
+ - [微积分](数学基础/Linear_Algebra/Linear_Algebra.md): 梯度、链式法则
 
 - **机器学习基础**:
- - [监督学习](../../机器学习/Supervised_Learning/Supervised_Learning.md): 理解损失函数、梯度下降
- - [优化方法](../../深度学习/Optimization/Optimization.md): SGD, Adam 等优化器
+ - [监督学习](机器学习/Supervised_Learning/Supervised_Learning.md): 理解损失函数、梯度下降
+ - [优化方法](深度学习/Optimization/Optimization.md): SGD, Adam 等优化器
 
 ### 7.2 后续进阶
-- **深度强化学习**: [Deep RL](../Deep_RL/Deep_RL.md) —— DQN, PPO, SAC 等现代算法
+- **深度强化学习**: [Deep RL](强化学习/Deep_RL/Deep_RL.md) —— DQN, PPO, SAC 等现代算法
 - **AI 智能体**: [AI Agents](../../智能体/Agent_Foundations/AI_Agents.md) —— 基于 LLM 的自主规划系统
 - **多智能体系统**: 博弈论、协作学习
 - **模仿学习**: 从人类演示中学习（Behavior Cloning, GAIL）

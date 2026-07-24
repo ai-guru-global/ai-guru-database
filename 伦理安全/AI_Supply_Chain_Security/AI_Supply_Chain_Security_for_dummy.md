@@ -15,7 +15,7 @@ sources: []
 ---
 
 > [!warning] 生产安全提示 · Production Safety
-> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../治理/Production_Safety_Policy.md)。
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # AI 供应链安全小白指南 (AI Supply Chain Security for Dummy)
 
@@ -157,9 +157,9 @@ flowchart TB
 
 ## 🔗 相关主题
 
-- [AI 安全红队测试](../AI_Safety_RedTeaming/AI_Safety_RedTeaming.md) — 主动发现安全漏洞
-- [AI 治理合规](../AI_Governance_Compliance_2026.md) — 法规要求
-- [Value Alignment](../Value_Alignment/Value_Alignment.md) — 模型价值观对齐
+- [AI 安全红队测试](伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming.md) — 主动发现安全漏洞
+- [AI 治理合规](伦理安全/Governance/AI_Governance_Compliance_2026.md) — 法规要求
+- [Value Alignment](伦理安全/Value_Alignment/Value_Alignment.md) — 模型价值观对齐
 
 ---
 
@@ -237,3 +237,12 @@ flowchart TB
 - [ ] 常见问题能独立解决
 - [ ] 持续关注前沿趋势
 - [ ] 知识已文档化沉淀
+
+## 相关链接
+
+- [[伦理安全/AI_Supply_Chain_Security/AI_Supply_Chain_Security|AI 供应链安全 (完整版)]] — 本篇小白版对应的详细版
+- [[伦理安全/AI_Supply_Chain_Security/index|AI 供应链安全索引]] — 主题导览
+- [[概念/Safety/supply-chain-security|供应链安全]] — 概念卡片
+- [[概念/K8s/trivy|Trivy]] — 容器镜像漏洞扫描
+- [[概念/K8s/detect-secrets|detect-secrets]] — 密钥泄露检测
+- [[概念/MLOps/data-versioning|数据版本管理]] — 数据供应链管理

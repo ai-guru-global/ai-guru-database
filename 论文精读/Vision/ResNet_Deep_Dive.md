@@ -790,9 +790,9 @@ flowchart LR
 ## 9. 与其他章节的关联
 
 ### 前置知识
-- [神经网络核心](../../深度学习/Neural_Network_Core/Neural_Network_Core.md) — 理解反向传播、梯度消失与激活函数
+- [神经网络核心](深度学习/Neural_Network_Core/Neural_Network_Core.md) — 理解反向传播、梯度消失与激活函数
 - [卷积神经网络](../计算机视觉/Image_Classification_Detection/) — CNN 基础架构
-- [优化与正则化](../../深度学习/Optimization/Optimization.md) — BatchNorm、权重初始化
+- [优化与正则化](深度学习/Optimization/Optimization.md) — BatchNorm、权重初始化
 
 ### 横向关联
 - [计算机视觉](../../计算机视觉/README.md) — ResNet 在 CV 各任务中的应用

@@ -141,9 +141,9 @@ Hybrid Thinking 模式让用户通过简单的标签（`<think>` / `<no-think>`)
 
 ## 交叉引用 (Cross-References)
 
-- [Qwen 技术全景](../../大模型/Chinese_LLM_Ecosystem/Qwen_Deep_Dive.md)
-- [中国大模型生态全景](../../大模型/Chinese_LLM_Ecosystem/README.md)
-- [MoE 案例研究](../../大模型/LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md)
+- [Qwen 技术全景](大模型/Chinese_LLM_Ecosystem/Qwen_Deep_Dive.md)
+- [中国大模型生态全景](大模型/Chinese_LLM_Ecosystem/README.md)
+- [MoE 案例研究](大模型/LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md)
 - [ModelScope Qwen 模型索引](../../大模型/Chinese_LLM_Ecosystem/ModelScope_Model_Index_Qwen.md)
 - [[业界观点/Wenfeng_Liang/about]] — DeepSeek 与 Qwen 在 MoE 和开源策略上的竞合
 - [[业界观点/Jie_Tang/about]] — GLM 与 Qwen 在中国开源生态中的并行

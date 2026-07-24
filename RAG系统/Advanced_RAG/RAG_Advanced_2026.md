@@ -586,7 +586,7 @@ print(results)
 | 长上下文 RAG | [TensorRT-LLM](部署推理/Inference_Engines/TensorRT_LLM_Deep_Dive.md) | FP8、长上下文 kernel 优化 |
 | 统一选型 | [LLM Inference Engine Selection Guide](部署推理/Inference_Engines/LLM_Inference_Engine_Selection_Guide.md) | 决策树与成本模型 |
 
-完整引擎专题见 [部署推理](../../部署推理/README.md)。
+完整引擎专题见 [部署推理](../.部署推理/README.md)。
 
 ---
 
@@ -618,9 +618,9 @@ print(results)
 
 ## Related
 
-- [[RAG系统/RAG-in-nutshell.md|RAG-in-nutshell]]
-- [[RAG系统/RAG_Systems.md|RAG_Systems]]
+- [[RAG系统/RAG_Fundamentals/RAG-in-nutshell.md|RAG-in-nutshell]]
+- [[RAG系统/RAG_Fundamentals/RAG_Systems.md|RAG_Systems]]
 - [[RAG系统/README_Advanced.md|README_Advanced]]
 - [[RAG系统/RAG_Frameworks/Spring_AI_RAG_Deep_Dive.md|Spring_AI_RAG_Deep_Dive]]
-- [[治理/rag-vector-database.md|rag-vector-database]]
+- [[RAG系统/Vector_Databases/rag-vector-database.md|rag-vector-database]]
 - [[治理/multimodal-rag|多模态 × RAG]] — 图文音视频统一检索

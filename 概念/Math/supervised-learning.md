@@ -108,8 +108,8 @@ SVM 寻找最大间隔超平面，核技巧（线性核、多项式核、RBF 核
 - [[机器学习/Feature_Engineering/Feature_Engineering]] — 特征工程 (Feature Engineering) (共享: ml, supervised)
 - [[机器学习/Feature_Engineering/Feature_Engineering_for_dummy]] — 特征工程 - 小白版 (共享: ml, supervised)
 - [[机器学习/ML-in-nutshell]] — 机器学习速成指南 (共享: ml, supervised)
-- [[概念/recommendation-systems.md|recommendation-systems]]
-- [[概念/anomaly-detection.md|anomaly-detection]]
+- [[概念/Math/recommendation-systems.md|recommendation-systems]]
+- [[概念/Math/anomaly-detection.md|anomaly-detection]]
 
 ---
 

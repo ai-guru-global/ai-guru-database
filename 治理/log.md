@@ -79,7 +79,7 @@
 - 桥页 Top 1：`学习/guides/ai_engineering_roadmap_2026.md`（跨 66 章）
 - 孤儿页 706（按章：05=101, 15=91, 21=90, 12=52, 19=31）
 - 陈旧核心页（updated ≥90 天 且 incoming ≥5）：0
-- `治理/` 目录当前 4 篇，hot.md 引用 OK，但跨域综合扫描 overdue
+- `治理/` 目录当前 4 篇，治理/hot.md 引用 OK，但跨域综合扫描 overdue
 - `原始/github-sources/` 含 13548 文件（多为 `ailearning` 第三方归档）
 
 ### 阶段 C：后续动作（本 session 继续）

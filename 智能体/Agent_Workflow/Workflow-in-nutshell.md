@@ -1020,7 +1020,7 @@ flowchart TB
 - [智能体](../Agent_Foundations/Agent-in-nutshell.md) - 智能体工作流
 - [技能](../Agent_Skills/Skills-in-nutshell.md) - 构建工作流组件
 - [MLOps](../../模型运维/) - ML 专用流水线
-- [模型训练](../../模型训练/Model-Training-in-nutshell.md) - 训练工作流
+- [模型训练](模型训练/Training_Fundamentals/Model-Training-in-nutshell.md) - 训练工作流
 
 ## Related
 

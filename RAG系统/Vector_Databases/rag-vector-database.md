@@ -2,7 +2,7 @@
 title: RAG 系统 × 向量数据库
 category: -synthesis
 tags: [rag, vector-database, embedding, retrieval, hnsw, milvus, qdrant]
-sources: [概念/rag-systems.md, 概念/vector-database.md]
+sources: [概念/RAG/rag-systems.md, 概念/RAG/vector-database.md]
 created: 2026-05-31T21:30:00+08:00
 updated: 2026-05-31T21:30:00+08:00
 summary: "检索增强生成的精度瓶颈不在生成端，而在检索端：向量数据库的近似最近邻算法决定了语义检索的上限，进而决定了整个 RAG 系统的天花板。"

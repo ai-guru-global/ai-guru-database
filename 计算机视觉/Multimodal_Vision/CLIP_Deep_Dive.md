@@ -344,3 +344,11 @@ pred = C[argmax(similarity)]
 ---
 
 *原始论文: [Learning Transferable Visual Models From Natural Language Supervision](https://arxiv.org/abs/2103.00020)*
+## 相关链接
+
+- [[计算机视觉/Multimodal_Vision/Multimodal_Vision|多模态视觉]] — CLIP 所属的多模态视觉领域
+- [[计算机视觉/Multimodal_Vision/Multimodal_Vision_for_dummy|多模态视觉 (小白版)]] — 零基础版本
+- [[计算机视觉/Multimodal_Vision/index|多模态视觉索引]] — 主题导览
+- [[概念/Vision/clip|CLIP]] — CLIP 概念卡片
+- [[大模型/Multimodal_Models/Multimodal_Architectures_2026|多模态架构 2026]] — CLIP 启发的多模态架构
+- [[深度学习/Self_Supervised_Learning/Self_Supervised_Learning_Deep_Dive|自监督学习深度解读]] — CLIP 的对比学习范式

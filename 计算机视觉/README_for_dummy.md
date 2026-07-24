@@ -59,8 +59,8 @@ sources: []
 ## 开始之前你需要知道
 
 **必备基础** (建议先看这些):
-- [神经网络核心 - 小白版](../深度学习/Neural_Network_Core/Neural_Network_Core_for_dummy.md) - 理解 AI 大脑的基本工作原理
-- [优化方法 - 小白版](../深度学习/Optimization/Optimization_for_dummy.md) - 理解 AI 怎么从错误中学习
+- [神经网络核心 - 小白版](深度学习/Neural_Network_Core/Neural_Network_Core_for_dummy.md) - 理解 AI 大脑的基本工作原理
+- [优化方法 - 小白版](深度学习/Optimization/Optimization_for_dummy.md) - 理解 AI 怎么从错误中学习
 
 **不需要的基础**:
 - ❌ 不需要会编程(我们用生活例子解释)
@@ -124,7 +124,7 @@ sources: []
 
 ---
 
-*本文是 [README.md](./README.md) 的简化版,适合零基础读者。准备好让AI拥有"视觉"能力了吗?让我们开始吧!* 🚀
+*本文是 [README.md](README.md) 的简化版,适合零基础读者。准备好让AI拥有"视觉"能力了吗?让我们开始吧!* 🚀
 
 ## Related
 

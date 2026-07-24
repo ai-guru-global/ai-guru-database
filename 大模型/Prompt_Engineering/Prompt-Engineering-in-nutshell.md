@@ -743,9 +743,9 @@ flowchart TB
 ## 🔗 相关主题
 
 - [LLM 基础](../LLM_Architectures/LLM-Basics-in-nutshell.md) - 理解大语言模型
-- [RAG 系统](../../RAG系统/RAG-in-nutshell.md) - 结合检索的提示
+- [RAG 系统](RAG系统/RAG_Fundamentals/RAG-in-nutshell.md) - 结合检索的提示
 - [AI 智能体](../../智能体/Agent_Foundations/Agent-in-nutshell.md) - 智能体中的提示设计
-- [AI 测试](../../测试/AI-Testing-in-nutshell.md) - 测试提示词效果
+- [AI 测试](测试/Testing_Fundamentals/AI-Testing-in-nutshell.md) - 测试提示词效果
 
 ## Related
 

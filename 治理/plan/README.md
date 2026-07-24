@@ -21,8 +21,8 @@ sources: []
 
 | 文档 | 内容 | 更新频率 |
 |------|------|--------|
-| [Project Comprehensive Evaluation 2026](../治理/Project_Comprehensive_Evaluation_2026.md) | 项目全面评估报告（角色视角） | 季度 |
-| [Project Structure Evaluation 2026](../治理/Project_Structure_Evaluation_2026.md) | 项目结构评估报告（数据驱动） | 季度 |
+| [Project Comprehensive Evaluation 2026](治理/Project_Comprehensive_Evaluation_2026.md) | 项目全面评估报告（角色视角） | 季度 |
+| [Project Structure Evaluation 2026](治理/Project_Structure_Evaluation_2026.md) | 项目结构评估报告（数据驱动） | 季度 |
 
 ### 已执行归档的历史计划
 

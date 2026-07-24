@@ -244,14 +244,14 @@ sources: []
 部署推理/Inference_Engines/JVM_AI_Deployment.md
 RAG系统/RAG_Frameworks/Spring_AI_RAG_Deep_Dive.md
 架构基建/Spring_AI_Architecture.md
-Agent/Agent_Skills/Spring_AI_Skills_Integration.md
-Agent/Agent_Skills/README.md
-Agent/Agent_Skills/Agent_Skills_Deep_Dive.md
+智能体/Agent_Skills/Spring_AI_Skills_Integration.md
+智能体/Agent_Skills/README.md
+智能体/Agent_Skills/Agent_Skills_Deep_Dive.md
 14_AI_Gateway/Spring_AI_Gateway_Security.md
 AI测试/Testing_Frameworks/Java_AI_Testing.md
-18_Cloud_Ops_Agent/Java_Cloud_SDK_Guide.md
-ROADMAP.md
-90_Learn/pathways/java-developer.md
+模型运维/Cloud_Ops_Agent/Java_Cloud_SDK_Guide.md
+治理/ROADMAP.md
+学习/pathways/java-developer.md
 ```
 
 **问题**：
@@ -487,14 +487,14 @@ RAG系统/README.md          （将 README_Advanced.md 重命名或合并）
 - `伦理安全/Privacy_Preserving_AI/Privacy_Preserving_AI_for_dummy.md`
 
 **nutshell 缺失清单**（关键 8 个）：
-- `数学基础/Fundamentals-in-nutshell.md`
-- `机器学习/ML-in-nutshell.md`
-- `深度学习/DL-in-nutshell.md`
-- `计算机视觉/CV-in-nutshell.md`
-- `模型评估/Evaluation-in-nutshell.md`
-- `架构基建/Architecture-in-nutshell.md`
-- `伦理安全/Ethics-in-nutshell.md`
-- `行业应用/Industry-in-nutshell.md`
+- `数学基础/Math_Fundamentals/Fundamentals-in-nutshell.md`
+- `机器学习/ML_Fundamentals/ML-in-nutshell.md`
+- `深度学习/DL_Fundamentals/DL-in-nutshell.md`
+- `计算机视觉/CV_Fundamentals/CV-in-nutshell.md`
+- `模型评估/Evaluation_Fundamentals/Evaluation-in-nutshell.md`
+- `架构基建/Architecture_Fundamentals/Architecture-in-nutshell.md`
+- `伦理安全/Ethics_Fundamentals/Ethics-in-nutshell.md`
+- `行业应用/Industry_Overview/Industry-in-nutshell.md`
 
 #### 6. 重构 21_Talks 和 22_Papers
 

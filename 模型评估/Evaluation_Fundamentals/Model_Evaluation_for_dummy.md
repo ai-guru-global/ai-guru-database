@@ -679,9 +679,9 @@ B:新模型
 ## 想深入了解?
 
 ### 📄 进阶阅读
-- [模型部署 - 小白版](../部署推理/Deployment_Inference_for_dummy.md)
-- [MLOps 流水线 - 小白版](../模型运维/MLOps_Pipeline_for_dummy.md)
-- [RAG 系统 - 小白版](../RAG系统/RAG_Systems_for_dummy.md)
+- [模型部署 - 小白版](部署推理/Deployment_Fundamentals/Deployment_Inference_for_dummy.md)
+- [MLOps 流水线 - 小白版](模型运维/MLOps_Fundamentals/MLOps_Pipeline_for_dummy.md)
+- [RAG 系统 - 小白版](RAG系统/RAG_Fundamentals/RAG_Systems_for_dummy.md)
 
 ### 🛠️ 动手实践
 - [Scikit-learn 评估指标](https://scikit-learn.org/stable/modules/model_evaluation.html)
@@ -689,8 +689,8 @@ B:新模型
 - [A/B 测试计算器](https://www.optimizely.com/sample-size-calculator/)
 
 ### 🎓 相关知识
-- [监督学习 - 小白版](../机器学习/Supervised_Learning/Supervised_Learning_for_dummy.md)
-- [大语言模型 - 小白版](../大模型/LLM_Architectures/LLM_Architectures_for_dummy.md)
+- [监督学习 - 小白版](机器学习/Supervised_Learning/Supervised_Learning_for_dummy.md)
+- [大语言模型 - 小白版](大模型/LLM_Architectures/LLM_Architectures_for_dummy.md)
 
 ---
 
@@ -698,7 +698,7 @@ B:新模型
 
 ## Related
 
-- [[模型评估/Model_Evaluation.md|Model_Evaluation]]
+- [[模型评估/Evaluation_Fundamentals/Model_Evaluation.md|Model_Evaluation]]
 - [[模型评估/README.md|模型评估 README]]
 - [[智能体/Agent_Evaluation/Assessment/Evaluation_Workflow.md|Evaluation_Workflow]]
 - [[智能体/Agent_Evaluation/Cloud_Agent_Evaluation/README.md|Cloud_Agent_Evaluation README]]

@@ -2,7 +2,7 @@
 title: 模型训练 × 微调技术
 category: -synthesis
 tags: ["model-training", "fine-tuning", "lora", "deepspeed", "fsdp", "optimization", "peft"]
-sources: [概念/model-training.md, 概念/fine-tuning-techniques.md]
+sources: [概念/Training/model-training.md, 概念/fine-tuning-techniques.md]
 created: 2026-05-31T21:30:00+08:00
 updated: 2026-05-31T21:30:00+08:00
 summary: "从预训练到对齐的完整闭环：分布式训练解决规模问题，参数高效微调（LoRA/QLoRA/DoRA）解决适配问题，RLHF/DPO 解决价值观问题。"

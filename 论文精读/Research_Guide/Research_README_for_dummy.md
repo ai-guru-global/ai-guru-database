@@ -26,7 +26,7 @@ sources: []
 ## 怎么用？
 
 ### 第一步：选一个你感兴趣的课题
-在 [论文精读](./README.md) 目录下新建一个子目录，比如 `RAG_vs_FineTuning/`。
+在 [论文精读](README.md) 目录下新建一个子目录，比如 `RAG_vs_FineTuning/`。
 
 ### 第二步：套模板
 把 [Research_Template.md](./Research_Template.md) 的内容复制到你的目录里，按章节填写。

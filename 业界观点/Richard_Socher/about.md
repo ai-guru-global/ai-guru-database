@@ -112,9 +112,9 @@ Socher 的影响力主要体现在三个层面：**学术研究**（SST、RNTN�
 
 ## 交叉引用 (Cross-References)
 
-- [Talks 主题合成 2026](业界观点/Talks_Synthesis_2026.md) — 查看 Richard Socher 在 Scaling Laws、开源 vs 闭源、AI 安全等主题中的立场
-- [AI 历史时间线](入门/AI_History_Timeline.md) — 深度学习进入 NLP 的关键时期
-- [AI 未来趋势](入门/AI_Future_Trends.md) — 搜索对话化的行业前瞻
+- [Talks 主题合成 2026](业界观点/Talks_Synthesis/Talks_Synthesis_2026.md) — 查看 Richard Socher 在 Scaling Laws、开源 vs 闭源、AI 安全等主题中的立场
+- [AI 历史时间线](入门/Fundamentals/AI_History_Timeline.md) — 深度学习进入 NLP 的关键时期
+- [AI 未来趋势](入门/Ethics_and_Future/AI_Future_Trends.md) — 搜索对话化的行业前瞻
 - [[业界观点/Sundar_Pichai/about]] — Google 搜索与 AI 集成的路线对比
 - [[业界观点/Satya_Nadella/about]] — 微软 Bing+Copilot 搜索策略的竞品视角
 - [[业界观点/Andrew_Ng/about]] — 同为 Stanford AI 博士背景的技术领袖

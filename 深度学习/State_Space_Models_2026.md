@@ -696,7 +696,7 @@ SSM在AGI中的角色:
 
 ## Related
 
-- [[深度学习/DL-in-nutshell.md|DL-in-nutshell]]
+- [[深度学习/DL_Fundamentals/DL-in-nutshell.md|DL-in-nutshell]]
 - [[深度学习/README.md|深度学习 README]]
 - [[深度学习/Neural_Network_Core/Neural_Network_Core.md|Neural_Network_Core]]
 - [[深度学习/Neural_Network_Core/Neural_Network_Core_for_dummy.md|Neural_Network_Core_for_dummy]]

@@ -796,15 +796,15 @@ L = α × L_hard(y_true, y_student) + (1-α) × L_soft(y_teacher, y_student)
 
 ### 前置知识
 
-- [Transformer 架构](../大模型/Transformer_Revolution/Transformer_Revolution.md) - 理解 Self-Attention 和 KV Cache 机制
-- [神经网络优化](../深度学习/Optimization/Optimization.md) - 量化和剪枝的数学基础
-- [分布式系统](../数学基础/Distributed_Systems/Distributed_Systems.md) - 多 GPU/多节点推理
+- [Transformer 架构](大模型/Transformer_Revolution/Transformer_Revolution.md) - 理解 Self-Attention 和 KV Cache 机制
+- [神经网络优化](深度学习/Optimization/Optimization.md) - 量化和剪枝的数学基础
+- [分布式系统](数学基础/Distributed_Systems/Distributed_Systems.md) - 多 GPU/多节点推理
 
 ### 进阶推荐
 
-- [MLOps 流水线](../模型运维/MLOps_Pipeline.md) - 部署自动化与监控
-- [RAG 系统](../RAG系统/RAG_Systems.md) - 实际应用中的推理场景
-- [AI 安全与红队](../伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming.md) - 生产环境的安全防护
+- [MLOps 流水线](模型运维/MLOps_Fundamentals/MLOps_Pipeline.md) - 部署自动化与监控
+- [RAG 系统](RAG系统/RAG_Fundamentals/RAG_Systems.md) - 实际应用中的推理场景
+- [AI 安全与红队](伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming.md) - 生产环境的安全防护
 
 ## 8. 面试高频问题 (Interview FAQs)
 

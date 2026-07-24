@@ -1511,10 +1511,10 @@ if rank == 0:
 ### 交叉引用
 
 - 神经网络基础与反向传播原理，请参阅 [`../深度学习/README.md`](../../深度学习/README.md)
-- 模型推理优化与部署，请参阅 [`../部署推理/README.md`](../../部署推理/README.md)
+- 模型推理优化与部署，请参阅 [`.部署推理/README.md`](../.部署推理/README.md)
 - GPU 集群硬件配置与网络拓扑，请参阅 [`../架构基建/Architecture_Overview/AI_Infrastructure_2026`](架构基建/Architecture_Overview/AI_Infrastructure_2026)
-- 模型评估方法，请参阅 [`../模型评估/Model_Evaluation.md`](模型评估/Model_Evaluation.md)
-- MLOps 训练流水线，请参阅 [`../MLOps/MLOps_Pipeline.md`](模型运维/MLOps_Pipeline.md)
+- 模型评估方法，请参阅 [`模型评估/Evaluation_Fundamentals/Model_Evaluation.md`](模型评估/Evaluation_Fundamentals/Model_Evaluation.md)
+- MLOps 训练流水线，请参阅 [`模型运维/MLOps_Fundamentals/MLOps_Pipeline.md`](模型运维/MLOps_Fundamentals/MLOps_Pipeline.md)
 
 ### 核心论文
 

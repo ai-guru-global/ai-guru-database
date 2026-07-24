@@ -2,7 +2,7 @@
 title: "KV Cache x Continuous Batching: 推理引擎的显存-调度协同优化"
 category: synthesis
 tags: [kv-cache, continuous-batching, inference, memory-pressure, prefill, decode, chunked-prefill, prefix-caching]
-sources: [概念/kv-cache.md, 概念/continuous-batching.md]
+sources: [概念/LLM/kv-cache.md, 概念/continuous-batching.md]
 summary: "KV Cache 是 Continuous Batching 的显存约束——batch 中每个请求的 KV Cache 占用决定了系统能同时服务多少请求。现代推理引擎通过 prefix caching、chunked prefill 和 prefill/decode 分离等策略，同时优化两者以实现最大吞吐。"
 created: 2026-07-02
 updated: 2026-07-02

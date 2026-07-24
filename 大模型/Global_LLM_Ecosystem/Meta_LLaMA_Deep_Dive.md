@@ -1421,7 +1421,7 @@ KV Cache for 10M tokens 需要巨大内存
 
 ### 11.1 关联文档
 
-- **LLaMA 论文深度解读** → [../../论文精读/LLaMA_Deep_Dive.md](../../论文精读/Architecture/LLaMA_Deep_Dive.md)
+- **LLaMA 论文深度解读** → [../../论文精读/LLaMA_Deep_Dive.md](论文精读/Architecture/LLaMA_Deep_Dive.md)
  - LLaMA 1/2/3 论文的核心技术细节、训练方法和实验分析
 
 - **LLM 架构综述** → [../LLM_Architectures/LLM_Architectures.md](../LLM_Architectures/LLM_Architectures.md)
@@ -1556,4 +1556,4 @@ LLaMA 模型选择指南
 - [[大模型/Chinese_LLM_Ecosystem/Qwen_Deep_Dive|Qwen 深度解析]] — 开源生态中的另一强力竞争者
 - [[大模型/Edge_LLM/Edge_LLM_Deep_Dive|端侧 LLM 深度解读]] — LLaMA 在端侧部署中的应用
 - [[概念/LLM/llama-series|LLaMA 系列]] — LLaMA 模型家族概念卡片
-- [[概念/Inference/llama-cpp|llama.cpp]] — LLaMA 主流端侧推理引擎
+- [[概念/LLM/llama-cpp|llama.cpp]] — LLaMA 主流端侧推理引擎

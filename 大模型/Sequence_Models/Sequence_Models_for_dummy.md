@@ -249,7 +249,7 @@ GRU 是 LSTM 的"减肥版"——少了一些零件,但大部分时候效果差�
 
 ### 🔗 相关内容
 
-- **前置知识**: [深度学习基础 (小白版)](../../深度学习/README_for_dummy.md)
+- **前置知识**: [深度学习基础 (小白版)](../.深度学习/README_for_dummy.md)
 - **后续主题**: [Transformer 革命 (小白版)](../Transformer_Revolution/Transformer_Revolution_for_dummy.md)
 - **实际应用**: [提示词工程 (小白版)](../Prompt_Engineering/Prompt_Engineering_for_dummy.md)
 

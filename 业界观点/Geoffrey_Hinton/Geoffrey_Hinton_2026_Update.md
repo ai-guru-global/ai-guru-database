@@ -167,6 +167,36 @@ Hinton 与 [[业界观点/Yann_LeCun/index\|LeCun]] 在 2026 年的分歧更加�
 | 公开度 | 高（与 SSI 的封闭形成对比） |
 | 与 LawZero 关系 | 互补合作 |
 
+#### 与其他安全机构的分工
+
+| 机构 | 创始人 | 角色 |
+|------|--------|------|
+| Hinton Institute | Hinton | 公众警示+政策倡导 |
+| LawZero | [[业界观点/Yoshua_Bengio/index\|Bengio]] | 治理框架+学术研究 |
+| SSI | [[业界观点/Ilya_Sutskever/index\|Sutskever]] | 技术路线（可证明安全） |
+| Anthropic | [[业界观点/Dario_Amodei/Amodei_2026_Update\|Amodei]] | 公司化安全实践 |
+| CAIS | Dan Hendrycks | 政策倡导+红队 |
+
+### "AI 时代的奥本海默"叙事
+
+2026 年媒体普遍将 Hinton 类比为"AI 时代的奥本海默"——既推动了技术的诞生，又在晚年反思其后果。
+
+#### Hinton vs 奥本海默的类比
+
+| 维度 | 奥本海默 | Hinton |
+|------|----------|--------|
+| 核心贡献 | 曼哈顿计划 | 反向传播+深度学习 |
+| 转折事件 | 广岛核爆 | ChatGPT 发布 |
+| 反思时刻 | "我成了死亡，世界的毁灭者" | "我对自己所做工作的部分后果感到后悔" |
+| 政策立场 | 呼吁核军控 | 呼吁 AI 治理 |
+| 政府关系 | 被边缘化 | 受尊重但影响力受限 |
+
+Hinton 本人在采访中对此类比持保留态度：
+
+> "I'm no Oppenheimer. I didn't build a weapon. But I understand his regret — when you see what you created used in ways you didn't intend."
+> "我不是奥本海默。我没有制造武器。但我理解他的遗憾——当你看到你创造的东西被以你意想不到的方式使用。"
+> -- Geoffrey Hinton, BBC 2026
+
 ---
 
 ## 技术观点/行业立场
@@ -255,6 +285,79 @@ Hinton 的影响呈现为三个层面：
 - 影响欧盟 AI Act 修订
 - 推动联合国 AI 顾问机构升级
 - 影响 G7 AI 治理框架
+
+### 对公众认知的影响
+
+Hinton 的诺贝尔奖+离职事件在 2026 年的公众认知中形成强大叙事：
+
+| 议题 | 公众认知变化 |
+|------|--------------|
+| AI 风险 | 从"科幻"到"严肃议题" |
+| AI 公司治理 | 质疑闭源公司的安全承诺 |
+| AI 监管 | 支持率上升 |
+| AI 就业冲击 | 担忧加剧 |
+| AI 与民主 | 虚假信息威胁被重视 |
+
+### 对深度学习教育的影响
+
+Hinton 在 2026 年仍是 AI 教育的核心人物：
+
+- 反向传播算法是所有深度学习课程的必修
+- 他早期的 Coursera 讲座视频仍是经典
+- "深度学习教父"形象被纳入中小学 AI 启蒙教材
+- 与 [[业界观点/Andrej_Karpathy/index\|Karpathy]]、[[业界观点/Andrew_Ng/index\|Andrew Ng]] 形成"教育三巨头"
+
+### 对科学哲学的辐射
+
+Hinton 2026 年的言论触及科学哲学层面：
+
+- "数字智能 vs 生物智能"的本体论差异
+- "AI 是否有意识"的认识论问题
+- "可解释性"在科学方法论中的地位
+- 推动"AI 哲学"成为独立学科
+
+### 与图灵奖同侪的论战时间线
+
+| 时间 | 事件 |
+|------|------|
+| 2023.05 | Hinton 离开 Google 警告风险 |
+| 2023.06 | [[业界观点/Yann_LeCun/index\|LeCun]] 称"末日论荒谬" |
+| 2024.10 | Hinton 获诺贝尔奖 |
+| 2025.03 | LeCun 重申"LLM 不是 AGI 路径" |
+| 2025.06 | Hinton 与 [[业界观点/Yoshua_Bengio/index\|Bengio]] 联合呼吁治理 |
+| 2026.02 | Hinton 与 LeCun 在 X 平台公开交锋 |
+| 2026.06 | 三巨头路线彻底分流 |
+
+## 经典语录与关键数据
+
+### Hinton 2026 金句
+
+1. **"The intelligence we are developing is fundamentally different from biological intelligence."**
+   *"我们正在开发的智能与生物智能根本不同。"* — Nobel Lecture
+
+2. **"If I hadn't done it, somebody else would have."**
+   *"如果我不做，总会有人做。"* — 谈推动深度学习
+
+3. **"Five years ago, I thought AGI was 30-50 years away. Today, I think it could be 5-10 years."**
+   *"五年前，我以为 AGI 还有 30-50 年。今天我认为可能只要 5-10 年。"* — BBC
+
+4. **"I'm no Oppenheimer. But I understand his regret."**
+   *"我不是奥本海默。但我理解他的遗憾。"*
+
+5. **"These models are starting to do things that we didn't explicitly tell them to do."**
+   *"这些模型开始做一些我们没有明确告诉它们要做的事情。"*
+
+### 关键数据
+
+| 指标 | 数据 |
+|------|------|
+| 学术引用 | 500,000+（最高被引计算机科学家之一） |
+| 诺奖年份 | 2024 物理学 |
+| 图灵奖年份 | 2018 |
+| 在 Google 年限 | 2013-2023 |
+| 培养的顶尖学生 | Ilya Sutskever、Alex Krizhevsky 等 |
+| 反向传播论文被引 | 40,000+ |
+| 深度信念网络论文被引 | 20,000+ |
 
 ---
 

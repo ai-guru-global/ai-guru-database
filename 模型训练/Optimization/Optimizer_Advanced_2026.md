@@ -1248,3 +1248,12 @@ class Muon(torch.optim.Optimizer):
 ---
 
 *Last updated: 2026-06-04*
+
+## 相关链接
+
+- [[模型训练/Optimization/index|优化索引]] — 优化主题导览
+- [[模型训练/Optimization/Optimization_for_dummy|训练优化 (小白版)]] — 优化入门
+- [[模型训练/Optimization/Scaling_Laws_and_Training_Dynamics|缩放定律与训练动力学]] — 训练动力学
+- [[模型训练/Optimization/Training_Optimization_2026|训练优化 2026]] — 优化综合实践
+- [[深度学习/Optimization/Optimization|训练优化]] — 优化理论基础
+- [[概念/Training/gradient-descent|梯度下降]] — 核心优化算法

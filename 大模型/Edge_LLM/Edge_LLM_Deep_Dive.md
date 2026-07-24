@@ -360,4 +360,4 @@ Android:
 - [[概念/LLM/phi-series|Phi 系列]] — 微软 Phi 小模型概念卡片
 - [[概念/LLM/gemma-series|Gemma 系列]] — Google Gemma 小模型概念卡片
 - [[概念/Inference/quantization|量化]] — GPTQ/AWQ/GGUF 量化技术详解
-- [[概念/Inference/llama-cpp|llama.cpp]] — 主流端侧推理引擎
+- [[概念/LLM/llama-cpp|llama.cpp]] — 主流端侧推理引擎

@@ -156,7 +156,7 @@ flowchart LR
         OUT[release/<br/>自包含语料]
         MF[corpus_manifest.json]
         IDX[index.md]
-        HOT[hot.md]
+        HOT[治理/hot.md]
     end
 
     MD --> S1

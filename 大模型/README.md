@@ -85,10 +85,10 @@ flowchart LR
 
 ## 前置知识 (Prerequisites)
 
-- **必修**: [神经网络核心](../深度学习/Neural_Network_Core/Neural_Network_Core.md)（理解反向传播）
-- **必修**: [优化与正则化](../深度学习/Optimization/Optimization.md)（训练大模型）
-- **推荐**: [线性代数](../数学基础/Linear_Algebra/Linear_Algebra.md)（理解注意力机制的矩阵运算）
-- **可选**: [概率统计](../数学基础/Probability_Statistics/Probability_Statistics.md)（理解语言模型概率建模）
+- **必修**: [神经网络核心](深度学习/Neural_Network_Core/Neural_Network_Core.md)（理解反向传播）
+- **必修**: [优化与正则化](深度学习/Optimization/Optimization.md)（训练大模型）
+- **推荐**: [线性代数](数学基础/Linear_Algebra/Linear_Algebra.md)（理解注意力机制的矩阵运算）
+- **可选**: [概率统计](数学基础/Probability_Statistics/Probability_Statistics.md)（理解语言模型概率建模）
 
 ## 关键术语速查 (Key Terms)
 

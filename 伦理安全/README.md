@@ -56,35 +56,35 @@ sources: []
 
 | 主题 | 难度 | 描述 | 文档链接 |
 |------|------|------|---------|
-| 价值对齐 (Value Alignment) | 进阶 | RLHF、DPO、奖励建模，让 AI 输出符合人类偏好 | [Value_Alignment.md](./Value_Alignment/Value_Alignment.md) |
-| AI 安全与红队 (AI Safety & Red Teaming) | 实战 | 对抗样本、提示词注入、越狱攻击、安全护栏，防御恶意使用 | [AI_Safety_RedTeaming.md](./AI_Safety_RedTeaming/AI_Safety_RedTeaming.md) |
+| 价值对齐 (Value Alignment) | 进阶 | RLHF、DPO、奖励建模，让 AI 输出符合人类偏好 | [Value_Alignment.md](伦理安全/Value_Alignment/Value_Alignment.md) |
+| AI 安全与红队 (AI Safety & Red Teaming) | 实战 | 对抗样本、提示词注入、越狱攻击、安全护栏，防御恶意使用 | [AI_Safety_RedTeaming.md](伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming.md) |
 
 ### 专业安全研究层
 
 | 主题 | 难度 | 描述 | 文档链接 |
 |------|------|------|---------|
-| 模型安全机制 (Mechanistic Interpretability) | 专业 | 逆向工程神经网络、电路追踪、形式化验证，实现可证明的 AI 安全 | [Mechanistic_Interpretability.md](./Mechanistic_Interpretability/Mechanistic_Interpretability.md) |
-| 隐私保护 AI (Privacy-Preserving AI) | 专业 | 差分隐私、联邦学习、同态加密、成员推断攻击防御 | [Privacy_Preserving_AI.md](./Privacy_Preserving_AI/Privacy_Preserving_AI.md) |
-| 深度伪造检测 (Deepfake Detection) | 专业 | 深度伪造检测技术、音视频伪造识别、内容真实性验证 | [Deepfake_Security.md](./Deepfake_Security/Deepfake_Security.md) |
-| AI 供应链安全 (Supply Chain Security) | 专业 | 数据投毒防御、模型后门检测、依赖安全、SBOM 管理 | [AI_Supply_Chain_Security.md](./AI_Supply_Chain_Security/AI_Supply_Chain_Security.md) |
+| 模型安全机制 (Mechanistic Interpretability) | 专业 | 逆向工程神经网络、电路追踪、形式化验证，实现可证明的 AI 安全 | [Mechanistic_Interpretability.md](伦理安全/Mechanistic_Interpretability/Mechanistic_Interpretability.md) |
+| 隐私保护 AI (Privacy-Preserving AI) | 专业 | 差分隐私、联邦学习、同态加密、成员推断攻击防御 | [Privacy_Preserving_AI.md](伦理安全/Privacy_Preserving_AI/Privacy_Preserving_AI.md) |
+| 深度伪造检测 (Deepfake Detection) | 专业 | 深度伪造检测技术、音视频伪造识别、内容真实性验证 | [Deepfake_Security.md](伦理安全/Deepfake_Security/Deepfake_Security.md) |
+| AI 供应链安全 (Supply Chain Security) | 专业 | 数据投毒防御、模型后门检测、依赖安全、SBOM 管理 | [AI_Supply_Chain_Security.md](伦理安全/AI_Supply_Chain_Security/AI_Supply_Chain_Security.md) |
 | **联邦学习 (Federated Learning)** | **专业** | **FedAvg/FedProx/SCAFFOLD、差分隐私+安全聚合、联邦 LLM 微调** | **[Federated_Learning/](./Federated_Learning/)** |
 
 ### 生产实践层
 
 | 主题 | 难度 | 描述 | 文档链接 |
 |------|------|------|---------|
-| AI 安全 2026 (AI Security 2026) | 实战 | OWASP LLM Top 10 + ASI Agentic AI 安全框架，生产级防御 | [AI_Security_2026.md](./AI_Security_2026/AI_Security_2026.md) |
+| AI 安全 2026 (AI Security 2026) | 实战 | OWASP LLM Top 10 + ASI Agentic AI 安全框架，生产级防御 | [AI_Security_2026.md](伦理安全/AI_Security_2026/AI_Security_2026.md) |
 | K8s 策略引擎 — OPA/Gatekeeper | 实战 | 通用策略即代码：Rgo 语言、K8s 准入控制、API 授权 | [OPA_Deep_Dive.md](./AI_Security_2026/OPA_Deep_Dive.md) |
 | K8s 原生策略 — Kyverno | 实战 | YAML 策略引擎：验证、变更、生成、镜像签名 | [Kyverno_Deep_Dive.md](./AI_Security_2026/Kyverno_Deep_Dive.md) |
 | 运行时安全 — Falco | 实战 | 容器系统调用监控：逃逸检测、敏感文件访问、异常网络 | [Falco_Deep_Dive.md](./AI_Security_2026/Falco_Deep_Dive.md) |
-| AI 监管工程化 2026 | 实战 | 欧盟 AI 法案、监管即代码、合规生命周期管理、可审计性 | [AI_Regulatory_Engineering_2026.md](./AI_Regulatory_Engineering_2026.md) |
-| AI 安全评测框架 (Safety Evaluation) | 实战 | 毒性/偏见/幻觉评测、对抗鲁棒性、红队测试方法论与基准 | [Safety_Evaluation_Framework.md](./Safety_Evaluation_Framework.md) |
+| AI 监管工程化 2026 | 实战 | 欧盟 AI 法案、监管即代码、合规生命周期管理、可审计性 | [AI_Regulatory_Engineering_2026.md](伦理安全/Governance/AI_Regulatory_Engineering_2026.md) |
+| AI 安全评测框架 (Safety Evaluation) | 实战 | 毒性/偏见/幻觉评测、对抗鲁棒性、红队测试方法论与基准 | [Safety_Evaluation_Framework.md](伦理安全/Safety_Evaluation_Framework.md) |
 
 ## 前置知识 (Prerequisites)
 
-- **必修**: [大语言模型架构](../大模型/LLM_Architectures/LLM_Architectures.md)（理解 LLM 行为）
-- **必修**: [微调技术](../大模型/Fine_tuning_Techniques/Fine_tuning_Techniques.md)（RLHF 是微调的一种）
-- **推荐**: [深度强化学习](../强化学习/Deep_RL/Deep_RL.md)（RLHF 中的 PPO）
+- **必修**: [大语言模型架构](大模型/LLM_Architectures/LLM_Architectures.md)（理解 LLM 行为）
+- **必修**: [微调技术](大模型/Fine_tuning_Techniques/Fine_tuning_Techniques.md)（RLHF 是微调的一种）
+- **推荐**: [深度强化学习](强化学习/Deep_RL/Deep_RL.md)（RLHF 中的 PPO）
 - **推荐**: [提示词工程](../大模型/Prompt_Engineering/)（理解越狱攻击）
 
 ## 关键术语速查 (Key Terms)
@@ -159,7 +159,7 @@ sources: []
 - [[伦理安全/Mechanistic_Interpretability/Mechanistic_Interpretability_for_dummy]] — Mechanistic_Interpretability_for_dummy
 - [[伦理安全/AI_Security_2026/AI_Security_2026]] — AI_Security_2026
 - [[伦理安全/AI_Supply_Chain_Security/AI_Supply_Chain_Security_for_dummy]] — AI_Supply_Chain_Security_for_dummy
-- [[伦理安全/AI_Governance_Compliance_2026.md|AI_Governance_Compliance_2026]]
+- [[伦理安全/Governance/AI_Governance_Compliance_2026.md|AI_Governance_Compliance_2026]]
 - [[伦理安全/README_for_dummy.md|README_for_dummy]]
 - [[治理/ai-ethics-future|Ai Ethics Future]]
 - [[伦理安全/Safety_Evaluation_Framework|AI 安全评测框架]] — 安全评测基准与红队测试方法论

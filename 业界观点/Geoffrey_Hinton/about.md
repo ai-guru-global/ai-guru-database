@@ -126,12 +126,12 @@ Hinton 是深度学习领域内部最高声警告 AI 风险的人物之一：
 
 ## 交叉引用 (Cross-References)
 
-- [Talks 主题合成 2026](../Talks_Synthesis_2026.md) — 查看 Hinton 在 Scaling Laws、开源 vs 闭源、AI 安全等主题中的立场
+- [Talks 主题合成 2026](业界观点/Talks_Synthesis/Talks_Synthesis_2026.md) — 查看 Hinton 在 Scaling Laws、开源 vs 闭源、AI 安全等主题中的立场
 - [[业界观点/Yann_LeCun/about]] — LeCun 与 Hinton 在 AI 风险问题上的立场对比（乐观派 vs 担忧派）
 - [[业界观点/Yoshua_Bengio/about]] — Bengio 同为图灵奖得主，同样转向 AI 安全倡导
 - [[业界观点/Ilya_Sutskever/about]] — Sutskever 是 Hinton 的学生，共同开发 AlexNet
-- [AI 历史时间线](../../入门/AI_History_Timeline.md) — 反向传播与深度学习复兴
-- [AI 伦理与社会](../../入门/AI_Ethics_Society.md) — AI 安全争论与治理
+- [AI 历史时间线](入门/Fundamentals/AI_History_Timeline.md) — 反向传播与深度学习复兴
+- [AI 伦理与社会](入门/Ethics_and_Future/AI_Ethics_Society.md) — AI 安全争论与治理
 - [深度学习基础](../../深度学习/README.md) — 反向传播、深度信念网络的技术详解
 
 ---

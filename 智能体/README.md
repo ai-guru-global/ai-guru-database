@@ -23,7 +23,7 @@ sources: []
 
 | 文档 | 主题 |
 |------|------|
-| [**AI Agent 全景概览**](./Agent_Overview.md) | Agent 架构、设计模式、框架选型、生产部署、2026 趋势 |
+| [**AI Agent 全景概览**](智能体/Agent_Foundations/Agent_Overview.md) | Agent 架构、设计模式、框架选型、生产部署、2026 趋势 |
 | [Agent_Foundations](./Agent_Foundations/) | 理论、协议、状态管理、路线图 |
 | [Agent_Frameworks](./Agent_Frameworks/) | LangChain / AutoGen / LangGraph / AgentScope / SmolAgents / agno |
 | [Agent_Protocols](./Agent_Protocols/) | MCP / A2A / UCP 协议栈 |
@@ -84,7 +84,7 @@ sources: []
 | [Agent Harness README](./Agent_Harness/) | Harness 专题入口与角色指南 | 全角色 |
 | [The Anatomy of an Agent Harness](智能体/Agent_Harness/The_Anatomy_of_an_Agent_Harness.md) | LangChain 博客：Harness 工程定义与核心组件 | 设计师、架构师 |
 | [Agent Harness 技术架构 2026](智能体/Agent_Harness/Agent_Harness_Architecture_2026.md) | 技术架构、配置参数、性能指标、兼容性矩阵 | 全角色 |
-| [Agent 安全与评估大白话](智能体/Agent_Safety_Evaluation_for_dummy.md) | 工具调用安全、Agent 评估基准大白话 | 初学者 |
+| [Agent 安全与评估大白话](智能体/Agent_Foundations/Agent_Safety_Evaluation_for_dummy.md) | 工具调用安全、Agent 评估基准大白话 | 初学者 |
 
 ### Agentic Coding 工具
 
@@ -118,7 +118,7 @@ sources: []
 | [Dify / Coze / LocalAI](智能体/Agent_Platforms/Dify_Coze_MLServe_Dive.md) | Agent 平台对比 | 产品经理、架构师 |
 | [OpenRouter Deep Dive](智能体/Agent_Platforms/OpenRouter_Deep_Dive.md) | 统一模型网关与智能路由 | 架构师、开发者 |
 | [PromptFlow Deep Dive](智能体/Agent_Platforms/PromptFlow_Deep_Dive.md) | 微软工作流编排与评估 | 开发者、企业用户 |
-| [Agent 生产环境部署 Runbook](智能体/Agent_Production_Deployment_Runbook.md) | Agent 系统上线生产环境的完整 Runbook | Agent 平台工程师、AI 应用架构师 |
+| [Agent 生产环境部署 Runbook](智能体/Agent_Foundations/Agent_Production_Deployment_Runbook.md) | Agent 系统上线生产环境的完整 Runbook | Agent 平台工程师、AI 应用架构师 |
 
 ### 记忆与基础设施
 

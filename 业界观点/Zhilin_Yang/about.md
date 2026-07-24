@@ -133,9 +133,9 @@ Kimi k1.5 的工作证明，不需要 MCTS（蒙特卡洛树搜索）、value fu
 
 ## 交叉引用 (Cross-References)
 
-- [Kimi/Moonshot AI 技术全景](../../大模型/Chinese_LLM_Ecosystem/Kimi_Moonshot_Deep_Dive.md)
-- [中国大模型生态全景](../../大模型/Chinese_LLM_Ecosystem/README.md)
-- [Reasoning Models 2026](../../大模型/LLM_Architectures/Reasoning_Models_2026.md)
+- [Kimi/Moonshot AI 技术全景](大模型/Chinese_LLM_Ecosystem/Kimi_Moonshot_Deep_Dive.md)
+- [中国大模型生态全景](大模型/Chinese_LLM_Ecosystem/README.md)
+- [Reasoning Models 2026](大模型/LLM_Architectures/Reasoning_Models_2026.md)
 - [[业界观点/Jie_Tang/about]] — 师生关系，清华 KEG 实验室 → 月之暗面
 - [[业界观点/Wenfeng_Liang/about]] — DeepSeek 与 Kimi 在开源、RL 推理方面的竞合关系
 - [[业界观点/Junjie_Yan/about]] — MiniMax 与 Kimi 在长上下文方面的技术竞赛

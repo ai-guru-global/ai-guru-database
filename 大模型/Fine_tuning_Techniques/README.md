@@ -21,8 +21,8 @@ sources: []
 | [PEFT_2026](./PEFT_2026.md) | PEFT 2026 最佳实践 | 实战学习 |
 | [Unsloth Deep Dive](./Unsloth_Deep_Dive.md) | 高速微调框架：2x 加速、24GB 单卡 | 快速实验 |
 | [Axolotl Deep Dive](./Axolotl_Deep_Dive.md) | 开源微调工具：全参数/LoRA/QLoRA 支持 | 生产微调 |
-| [**ms-swift Deep Dive**](../../模型训练/Distributed_Training/ms_swift_Deep_Dive.md) | 魔搭全链路框架：SFT/GRPO/RLHF/Megatron/部署/评测 | 全链路实战 |
-| [**ms-swift 命令行参数**](../../模型训练/Distributed_Training/ms_swift_Command_Line_Parameters.md) | 200+参数全量速查手册 | 参数手册 |
+| [**ms-swift Deep Dive**](模型训练/Distributed_Training/ms_swift_Deep_Dive.md) | 魔搭全链路框架：SFT/GRPO/RLHF/Megatron/部署/评测 | 全链路实战 |
+| [**ms-swift 命令行参数**](模型训练/Distributed_Training/ms_swift_Command_Line_Parameters.md) | 200+参数全量速查手册 | 参数手册 |
 
 ## 内容概览
 

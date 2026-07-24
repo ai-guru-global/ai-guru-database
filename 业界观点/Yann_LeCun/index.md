@@ -1,209 +1,193 @@
 ---
-title: Yann_LeCun
-type: index
+title: Yann LeCun 人物索引
+category: 19-talks-yann-lecun
+tags: ["talks", "index", "leaders", "Meta-AI", "CNN", "self-supervised-learning", "world-models", "JEPA", "Turing-Award", "open-source", "NYU"]
+summary: "> **一句话概括**: Meta 首席 AI 科学家、NYU 教授、2018 图灵奖得主——CNN 之父，自监督学习与世界模型 (JEPA) 的坚定倡导者，AI '末日论'最直言不讳的反对者。"
 created: 2026-07-02
-updated: 2026-07-11
-sources: []
-tags: [auto-index]
+updated: 2026-07-23
+tier: supporting
+aliases:
+  - Yann LeCun 索引
+  - CNN 之父
+sources:
+  - "https://openreview.net/pdf?id=BZ5a1r-kVsf"
+  - "https://www.nature.com/articles/nature14539"
+  - "https://ai.meta.com/llama/"
 ---
 
-# Yann_LeCun
+# Yann LeCun 人物索引
 
-Yann LeCun — Meta 首席 AI 科学家，CNN 之父（Father of CNN），自监督学习（self-supervised learning）与世界模型（world model）的理论引领者。
+> **一句话概括**: Meta 首席 AI 科学家、NYU Silver 教授、2018 年图灵奖得主——卷积神经网络 (CNN) 的奠基人之一（LeNet），自监督学习和世界模型 (World Models) 的坚定倡导者，AI"末日论" (doomerism) 最直言不讳的反对者。
+
+---
+
+## 人物定位
+
+Yann LeCun 是计算机视觉与深度学习的奠基人。1989 年提出 LeNet，1998 年发布 LeNet-5，首次将 CNN 成功应用于手写数字识别（美国邮政支票系统），奠定了现代视觉模型基础。在 Meta，他推动 LLaMA 系列开源，直接催生全球开源 LLM 生态。2022 年他提出"自主 AI 系统"蓝图与 JEPA (Joint Embedding Predictive Architecture)，明确反对"LLM Scaling 即 AGI"的主流叙事，主张 AI 必须在抽象表征空间进行预测。
+
+| 维度 | 定位 |
+|------|------|
+| 现任 | Meta 首席 AI 科学家、NYU Silver 教授 |
+| 桂冠 | 2018 图灵奖（三人共获）|
+| 核心主张 | LLM 不是 AGI 路径，需世界模型 + JEPA |
+| 安全立场 | 风险被高估派（反末日论）|
+| 开源立场 | 坚决支持（安全最佳防线）|
+| AGI 时间表 | 数十年（怀疑）|
+
+---
 
 ## 文件导航
 
-| 文件 | 说明 | 适用人群 |
+| 文件 | 内容 | 适用人群 |
 |------|------|----------|
-| [[业界观点/Yann_LeCun/about|about]] | Profile: one of the godfathers of deep learning, LeNet and JEPA architecture | all readers interested in AI leaders |
-| [[业界观点/Yann_LeCun/sayings|sayings]] | Collection of important quotes and public statements | all readers / researchers |
+| [[业界观点/Yann_LeCun/about\|about]] | 完整人物简介：CNN 缔造、世界模型、开源战略 | 所有读者 |
+| [[业界观点/Yann_LeCun/sayings\|sayings]] | 重要语录合集 | 研究者 |
 
-## Related
+---
 
-- [[业界观点/index|业界观点首页]]
-- [[深度学习/Self_Supervised_Learning/index|Self-Supervised Learning]]
-- [[深度学习/World_Models/index|World Models]]
+## 核心贡献
 
-## Yann LeCun 核心观点
+| 贡献 | 时间 | 意义 |
+|------|------|------|
+| CNN 缔造（LeNet）| 1989/1998 | 现代视觉模型鼻祖 |
+| 自监督学习理论倡导 | 持续 | 通往真正智能的关键路径 |
+| 能量模型 (EBM) 统一框架 | —— | 理解深度学习的理论框架 |
+| 世界模型 + JEPA 架构 | 2022 | LLM 替代路线，自主 AI 蓝图 |
+| LLaMA 开源战略推动 | 2023- | 改变 AI 行业竞争格局 |
+| V-JEPA / V-JEPA 2 | 2024-2025 | 世界模型研究的里程碑 |
 
-| 主题 | 核心观点 | 影响 |
-|------|----------|------|
-| AI发展 | CNN、自监督学习、世界模型 | 行业方向 |
-| 技术路线 | 前沿研究+工程实践 | 技术选择 |
-| 社会影响 | AI对人类未来的影响 | 政策制定 |
-| 教育理念 | 知识传播与人才培养 | 教育变革 |
+---
 
-## 关键贡献时间线
+## 真实时间线
 
 | 时间 | 事件 | 意义 |
 |------|------|------|
-| 早期 | 学术/职业起步 | 奠定基础 |
-| 中期 | 核心突破/创业 | 行业影响 |
-| 近期 | 最新观点/项目 | 前沿引领 |
-| 2026 | 当前动态 | 持续关注 |
+| 1980s | 巴黎博士 + Bell Labs | 学术起点 |
+| 1989 | LeNet 提出 | CNN 诞生 |
+| 1996-2013 | NYU 教授 | 学术基地 |
+| 1998 | LeNet-5 发布 | CNN 工业化（邮政识别）|
+| 2013 | 加入 Facebook，创立 FAIR | 工业 + 学术 |
+| 2015 | Nature 综述（与 Hinton/Bengio）| 领域权威 |
+| 2018 | 共获图灵奖 | 最高学术认可 |
+| 2022 | "A Path Towards Autonomous Machine Intelligence" | 世界模型蓝图 |
+| 2023 | LLaMA 系列开源 | 催生开源 LLM 生态 |
+| 2024-2025 | I-JEPA / V-JEPA / V-JEPA 2 | 世界模型验证 |
+| 2026 | India AI Impact Summit 演讲 | "AI 连猫都不如" |
+
+---
+
+## 代表性观点
+
+| 主题 | 代表观点 | 来源 |
+|------|----------|------|
+| LLM 路径 | "当前的 LLM 不是通往 AGI 的路径。我们需要世界模型" | 2022 论文 |
+| LLM 本质 | "LLM 有用但只是记忆机器" | 2026 演讲 |
+| AI 能力 | "AI 至今连像 17 岁孩子那样学开车都做不到" | 2026 |
+| 末日论 | "担忧被过度夸大，现在的 AI 连猫都不如" | 多次表态 |
+| 开源安全 | "开源是安全的，因为更多眼睛可以发现漏洞" | 多次 |
+| 行业 | "LLaMA 开源让 Meta 成为行业标准" | 2023 |
+
+完整语录见 [[业界观点/Yann_LeCun/sayings|LeCun 语录]]。
+
+---
+
+## 与 Hinton 的路线之争
+
+LeCun 与 [[业界观点/Geoffrey_Hinton/about|Hinton]] 在 LLM 路径、AGI 风险、反向传播地位上分歧明显。LeCun 认为必须换架构（JEPA），Hinton 倾向承认 LLM 能力但担忧后果。完整对比见 [[业界观点/Talks_Synthesis/Hinton_vs_LeCun_World_Model_Debate|Hinton vs LeCun 世界模型之争]]。
+
+| 议题 | LeCun | Hinton |
+|------|-------|--------|
+| LLM 是否理解世界 | 否（记忆机器）| 有早期迹象 |
+| AGI 风险 | 过度夸大 | 高声警告 |
+| 开源 | 坚决支持 | 谨慎 |
+
+---
+
+## JEPA 世界模型技术要点
+
+LeCun 的自主 AI 系统包含六个可微模块：配置器、感知、世界模型、代价、行动者、短期记忆。核心是 JEPA——在表征空间（而非像素/token 空间）做预测，避免预测无关细节。V-JEPA 2 在机器人任务上展示超越纯 LLM 的能力。
+
+---
+
+## 行业定位与派别归属
+
+| 派别 | 归属 |
+|------|------|
+| 架构创新派 | 旗手 |
+| 风险被高估派 | 旗手 |
+| 开源倡导派 | 核心（与 [[业界观点/Mark_Zuckerberg/about|Zuckerberg]]）|
+
+参见 [[业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix|AI 安全立场矩阵]]、[[业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026|开源 vs 闭源之争]]。
+
+---
+
+## 相关人物网络
+
+| 关系 | 人物 |
+|------|------|
+| 图灵奖共获者 | [[业界观点/Geoffrey_Hinton/about|Hinton]]、[[业界观点/Yoshua_Bengio/about|Bengio]] |
+| Meta 同事 | [[业界观点/Mark_Zuckerberg/about|Mark Zuckerberg]] |
+| 路线争论对手 | [[业界观点/Geoffrey_Hinton/about|Hinton]] |
+| Scaling 派对手 | [[业界观点/Sam_Altman/about|Altman]]、[[业界观点/Ilya_Sutskever/about|Sutskever]] |
+
+---
 
 ## 学习路径建议
 
 | 阶段 | 推荐内容 | 目标 |
 |------|----------|------|
-| 入门 | about.md 人物简介 | 了解背景 |
-| 进阶 | sayings.md 核心语录 | 理解观点 |
-| 深入 | 原始演讲/论文 | 第一手资料 |
-| 实践 | 相关项目/课程 | 动手体验 |
+| 入门 | [[业界观点/Yann_LeCun/about\|about]] | 了解 CNN 与世界模型 |
+| 进阶 | [[业界观点/Yann_LeCun/sayings\|sayings]] | 掌握反末日论立场 |
+| 深入 | 2022 OpenReview 论文 | JEPA 技术细节 |
+| 对比 | [[业界观点/Talks_Synthesis/Hinton_vs_LeCun_World_Model_Debate\|Hinton vs LeCun]] | 路线之争 |
+
+---
 
 ## 常见问题
 
 | 问题 | 解答 |
 |------|------|
-| Yann LeCun的核心主张是什么？ | CNN、自监督学习、世界模型 |
-| 为什么值得关注？ | Meta首席AI科学家、图灵奖，对AI发展有深远影响 |
-| 如何学习其思想？ | 从about.md开始，再看sayings.md |
-| 与其他领袖有何不同？ | 各有侧重：技术/产品/政策/教育 |
+| LeCun 为何反对 LLM？ | 认为缺世界理解、持久记忆、规划 |
+| 他与 Hinton 为何分歧？ | Hinton 承认 LLM 能力，LeCun 认为是死路 |
+| JEPA 是什么？ | 在表征空间联合嵌入预测的架构 |
+| 他支持开源吗？ | 坚决，视为安全最佳防线 |
+
+---
 
 ## 统计
 
 | 指标 | 数值 |
 |------|------|
-| 文档数量 | 2-4 |
-| 覆盖主题 | CNN、自监督学习、世界模型 |
-| 角色定位 | Meta首席AI科学家、图灵奖 |
-| 影响力 | 全球AI领域 |
+| 文档数量 | 2（about / sayings）|
+| 角色定位 | CNN 之父 / 世界模型倡导者 |
+| 影响力 | 学术 + 开源生态 |
+| 派别 | 架构创新 + 反末日论 |
 
-## 附录：知识图谱
+---
 
-| 知识节点 | 前置依赖 | 后续延伸 |
-|----------|----------|----------|
-| 人物背景 | 无 | 技术观点 |
-| 核心观点 | 人物背景 | 行业影响 |
-| 技术贡献 | 专业领域 | 后续研究 |
-| 社会影响 | 核心观点 | 政策/伦理 |
-| 教育理念 | 人物经历 | 学习资源 |
-
-## 附录：术语表
+## 术语表
 
 | 术语 | 英文 | 说明 |
 |------|------|------|
-| 通用人工智能 | AGI | 人类水平AI |
-| 对齐 | Alignment | AI目标与人类一致 |
-| 缩放定律 | Scaling Laws | 模型越大性能越好 |
-| 开源 | Open Source | 公开模型权重/代码 |
-| 多模态 | Multimodal | 处理多种数据类型 |
-
-## 附录：快速导航
-
-| 我想... | 去看 | 难度 |
-|---------|------|------|
-| 了解人物背景 | about.md | ⭐ |
-| 查看核心语录 | sayings.md | ⭐ |
-| 深入技术观点 | 原始演讲/论文 | ⭐⭐ |
-| 对比不同领袖 | Talks_Synthesis_2026 | ⭐⭐ |
-
-## 附录：检查清单
-
-| 检查项 | 说明 | 状态 |
-|--------|------|------|
-| 阅读人物简介 | about.md | ☐ |
-| 了解核心观点 | sayings.md | ☐ |
-| 观看代表演讲 | YouTube/原始来源 | ☐ |
-| 对比其他领袖 | 横向比较 | ☐ |
-| 关注最新动态 | 2026年进展 | ☐ |
-
-> �� Yann LeCun 是 AI 领域的重要声音。理解其观点有助于把握 AI 发展方向和产业趋势。
+| 卷积神经网络 | CNN | LeCun 缔造的视觉模型 |
+| 联合嵌入预测架构 | JEPA | 表征空间预测架构 |
+| 世界模型 | World Model | 理解预测物理世界的内部模型 |
+| 自监督学习 | Self-Supervised Learning | 无需人工标注的学习 |
+| 能量模型 | Energy-Based Model | 用能量函数统一描述模型 |
+| LeNet | LeNet | 首个成功 CNN |
 
 ---
-*Last updated: 2026-07-21*
 
-## 附录：AI领袖观点对比框架
+## 关联导航
 
-| 维度 | 技术乐观派 | 安全谨慎派 | 开源倡导派 | 商业务实派 |
-|------|----------|----------|----------|----------|
-| AGI时间 | 2-5年 | 5-20年 | 不确定 | 渐进式 |
-| 风险态度 | 可控 | 需警惕 | 透明化 | 渐进管理 |
-| 开源立场 | 部分开源 | 受限发布 | 完全开源 | 商业优先 |
-| 监管态度 | 轻监管 | 强监管 | 社区自治 | 行业自律 |
-
-## 附录：2026年AI领袖动态
-
-| 趋势 | 说明 | 代表人物 |
-|------|------|----------|
-| AGI竞赛加速 | 多家公司宣称接近AGI | Altman/Hassabis |
-| 开源vs闭源 | 模型发布策略分化 | Liang/Zuckerberg |
-| AI安全立法 | 各国出台AI法规 | Bengio/Hinton |
-| 具身智能 | 机器人+AI融合 | Huang/Musk |
-| AI教育普及 | 大规模在线课程 | Ng/Karpathy |
-| 多模态融合 | 视觉+语言+动作 | Pichai/Nadella |
-
-## 附录：推荐阅读顺序
-
-| 顺序 | 内容 | 目的 |
-|------|------|------|
-| 1 | about.md | 了解人物背景 |
-| 2 | sayings.md | 掌握核心观点 |
-| 3 | 代表演讲 | 感受表达方式 |
-| 4 | 相关论文/产品 | 深入技术细节 |
-| 5 | Talks_Synthesis | 横向对比 |
-
-## 附录：影响力评估
-
-| 评估维度 | 说明 | 权重 |
-|----------|------|------|
-| 技术贡献 | 论文/专利/产品 | 30% |
-| 行业影响 | 公司/生态/标准 | 25% |
-| 思想引领 | 观点/预测/框架 | 25% |
-| 教育贡献 | 课程/书籍/视频 | 10% |
-| 社会影响 | 政策/伦理/公益 | 10% |
-
-## 附录：相关资源
-
-| 资源类型 | 推荐 | 说明 |
-|----------|------|------|
-| 视频 | YouTube频道 | 演讲/访谈 |
-| 文字 | 博客/Twitter | 第一手观点 |
-| 论文 | arXiv/Google Scholar | 学术贡献 |
-| 播客 | Lex Fridman等 | 深度对话 |
-| 书籍 | 人物传记/技术书 | 系统了解 |
-
-> 💡 每位AI领袖都有独特的视角和贡献。多元观点的碰撞与融合，推动了整个AI领域的快速发展。
+- [[业界观点/Yann_LeCun/about\|人物简介]] · [[业界观点/Yann_LeCun/sayings\|核心语录]]
+- [[业界观点/Geoffrey_Hinton/about\|Geoffrey Hinton]] · [[业界观点/Yoshua_Bengio/about\|Yoshua Bengio]]
+- [[业界观点/Mark_Zuckerberg/about\|Mark Zuckerberg]]
+- [[业界观点/Talks_Synthesis/Hinton_vs_LeCun_World_Model_Debate\|Hinton vs LeCun 之争]]
+- [[业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026\|开源 vs 闭源]]
+- [[业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix\|AI 安全立场矩阵]]
+- [[业界观点/index\|业界观点首页]]
 
 ---
-*Last updated: 2026-07-21*
 
-## 附录：AI发展关键里程碑
-
-| 年份 | 里程碑 | 意义 |
-|------|--------|------|
-| 2012 | AlexNet | 深度学习爆发 |
-| 2016 | AlphaGo | AI超越人类棋手 |
-| 2017 | Transformer | 现代LLM基础 |
-| 2020 | GPT-3 | 大模型时代 |
-| 2022 | ChatGPT | AI大众化 |
-| 2023 | GPT-4/多模态 | 能力飞跃 |
-| 2024 | 开源LLM爆发 | LLaMA/Mistral/DeepSeek |
-| 2025 | Agent/具身智能 | AI走向行动 |
-| 2026 | AGI竞赛白热化 | 多家公司角逐 |
-
-## 附录：观点分类标签
-
-| 标签 | 含义 | 相关人物 |
-|------|------|----------|
-| #AGI | 通用人工智能愿景 | Altman/Hassabis/Musk |
-| #Safety | AI安全与对齐 | Bengio/Hinton/Amodei |
-| #OpenSource | 开源AI倡导 | Liang/Zuckerberg/LeCun |
-| #Education | AI教育普及 | Ng/Karpathy/3B1B |
-| #Product | AI产品化 | Nadella/Pichai/Murati |
-| #Research | 前沿研究 | Sutskever/Hinton/LeCun |
-
-## 附录：跨人物主题索引
-
-| 主题 | 相关人物 | 核心分歧 |
-|------|----------|----------|
-| AGI时间线 | 全员 | 2年vs20年 |
-| 开源策略 | Liang/Zuckerberg vs Altman | 开放vs受限 |
-| AI监管 | Bengio/Hinton vs Musk | 强监管vs轻监管 |
-| 就业影响 | Gates/Ng vs Musk | 增强vs替代 |
-| 技术路线 | LeCun vs Hassabis | 世界模型vs缩放 |
-
-> �� 理解AI领袖的观点分歧，比记住单一观点更重要。正是这些碰撞推动了AI的健康发展。
-
----
-*Last updated: 2026-07-21*
+*Last updated: 2026-07-23*

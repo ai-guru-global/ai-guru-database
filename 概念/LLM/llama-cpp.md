@@ -11,7 +11,7 @@ relationships:
     type: uses_format
 sources:
   - 部署推理/Inference_Engines/llama_cpp_Deep_Dive.md
-  - 概念/gguf.md
+  - 概念/Inference/gguf.md
 summary: "llama.cpp 是用纯 C++ 实现的 LLM 推理引擎，专为 CPU 和边缘设备优化，支持 GGUF 量化格式；在消费级硬件（Mac / 普通 PC）上即可运行 7B-70B 模型，是本地 LLM 部署的事实标准。"
 lifecycle: reviewed
 tier: core

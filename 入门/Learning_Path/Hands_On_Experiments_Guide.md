@@ -10,7 +10,7 @@ sources: []
 ---
 
 > [!warning] 生产安全提示 · Production Safety
-> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../治理/Production_Safety_Policy.md)。
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 
 # AI 知识库配套实验指南 — 从理论到可运行代码
@@ -569,7 +569,7 @@ generated = generate(model)
 
 ## 实验 8: Chroma + OpenAI 构建 RAG 问答
 
-> **对应章节**: [11_RAG_Systems](../../模型运维/README.md) · [论文精读/RAG_Deep_Dive](../../论文精读/Retrieval/RAG_Deep_Dive.md)  
+> **对应章节**: [11_RAG_Systems](../../模型运维/README.md) · [论文精读/RAG_Deep_Dive](论文精读/RAG_Deep_Dive.md)  
 > **学习目标**: 理解"先检索、后生成"的 RAG 工作流
 
 ```python

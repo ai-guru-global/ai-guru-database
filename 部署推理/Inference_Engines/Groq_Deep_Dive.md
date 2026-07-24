@@ -14,7 +14,7 @@ sources: []
 ---
 
 > [!warning] 生产安全提示 · Production Safety
-> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](../../治理/Production_Safety_Policy.md)。
+> 本文档含可执行命令/操作步骤。执行前请核对风险等级（🟢低/🔶中/🔴高），高危命令必须 dry-run 并确认回滚方案。完整策略见 [生产安全策略](治理/Production_Safety_Policy.md)。
 <!-- op-safety-banner v1 -->
 # Groq: LPU 高速推理云平台
 
@@ -497,6 +497,6 @@ Groq 生产使用 checklist
 - [[部署推理/Inference_Engines/SGLang_Deep_Dive.md|SGLang_Deep_Dive]]
 - [[部署推理/Inference_Engines/TensorRT_LLM_Deep_Dive.md|TensorRT_LLM_Deep_Dive]]
 - [[部署推理/LLM_Cost_Optimization.md|LLM_Cost_Optimization]]
-- [[部署推理/Deployment_Inference_2026.md|Deployment_Inference_2026]]
+- [[部署推理/Deployment_Fundamentals/Deployment_Inference_2026.md|Deployment_Inference_2026]]
 - [[架构基建/AI_Gateway/AI_Gateway_2026|AI_Gateway_2026]]
 - [[架构基建/AI_Gateway/LiteLLM_Deep_Dive|LiteLLM_Deep_Dive]]

@@ -15,9 +15,9 @@ relationships:
   - target: "概念/how-llm-answers-plain"
     type: "related_to"
 sources:
-  - "概念/embedding-models.md"
+  - "概念/RAG/embedding-models.md"
   - "概念/matryoshka-representation-learning.md"
-  - "RAG系统/Matryoshka_Representation_Learning_for_dummy.md"
+  - "RAG系统/Embeddings/Matryoshka_Representation_Learning_for_dummy.md"
   - "概念/how-llm-answers-plain.md"
 lifecycle: reviewed
 tier: supporting

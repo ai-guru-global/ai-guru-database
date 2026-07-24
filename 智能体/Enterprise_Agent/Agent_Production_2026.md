@@ -997,7 +997,7 @@ class PromptVersionManager:
 - [Google SRE Book](https://sre.google/sre-book/table-of-contents/)
 - [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/)
 - [Microsoft Azure Architecture Center](https://docs.microsoft.com/en-us/azure/architecture/)
-- [Vibe Coding 生产实践](../../编程/Methodology/Vibe_Coding_Production_Practices.md) - AI 辅助编码的生产环境最佳实践
+- [Vibe Coding 生产实践](编程/Methodology/Vibe_Coding_Production_Practices.md) - AI 辅助编码的生产环境最佳实践
 
 ---
 

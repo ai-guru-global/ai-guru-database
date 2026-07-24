@@ -19,7 +19,7 @@ sources: []
 
 | 文档 | 内容 | 适用读者 |
 |------|------|----------|
-| [Model-Training-in-nutshell](模型训练/Model-Training-in-nutshell.md) | 30 分钟速览：训练循环、超参数、监控工具 | 快速入门 |
+| [Model-Training-in-nutshell](模型训练/Training_Fundamentals/Model-Training-in-nutshell.md) | 30 分钟速览：训练循环、超参数、监控工具 | 快速入门 |
 | [**模型问题排查手册**](模型训练/Monitoring/Model_Troubleshooting_Guide.md) | 预训练/微调/推理全链路故障诊断，14 个常见问题 + 解决方案 | 实战排查 |
 | [**LLM 微调任务 K8s 失败排障**](模型训练/Monitoring/LLM_Fine_Tuning_Job_Failure_Runbook_on_K8s.md) | 把训练失败模式与 K8s Pod 事件/日志结合，面向阿里云专有云 | K8s 训练运维 |
 | [**训练任务诊断工作流**](模型训练/Monitoring/Training_Job_Diagnosis_Workflow.md) | 从告警到根因的可落地排查总线与命令 | 训练 SRE |
@@ -41,7 +41,7 @@ sources: []
 | [**ms-swift 命令行参数参考**](模型训练/Distributed_Training/ms_swift_Command_Line_Parameters.md) | 200+ 命令行参数全量速查 | 参数手册 |
 | [**数据增强完全指南**](模型训练/Data/Data_Augmentation.md) | 图像/文本/音频增强、MixUp/CutMix/Mosaic、合成数据生成 | 数据工程师 |
 | [**超参数优化完全指南**](模型训练/Optimization/Hyperparameter_Tuning.md) | 网格搜索、贝叶斯优化、Optuna/W&B、LLM 训练超参数 | 训练工程师 |
-| [**数据与微调大白话**](模型训练/Data_and_FineTuning_for_dummy.md) | 数据清洗 Pipeline、DoRA、RS-LoRA 大白话解释 | 初学者 |
+| [**数据与微调大白话**](模型训练/Training_Fundamentals/Data_and_FineTuning_for_dummy.md) | 数据清洗 Pipeline、DoRA、RS-LoRA 大白话解释 | 初学者 |
 
 > ⚠️ **注意**: 本章内容正在全面扩充中。当前仅包含速览指南，深度专题（分布式训练、混合精度、训练优化）即将上线。
 
@@ -49,10 +49,10 @@ sources: []
 
 ## 学习路径
 
-- **快速入门** → [Model-Training-in-nutshell](模型训练/Model-Training-in-nutshell.md)（30 分钟）
+- **快速入门** → [Model-Training-in-nutshell](模型训练/Training_Fundamentals/Model-Training-in-nutshell.md)（30 分钟）
 - **遇到问题?** → [模型问题排查手册](模型训练/Monitoring/Model_Troubleshooting_Guide.md)（实战故障诊断）
 - **系统学习** → [Scaling Laws](模型训练/Optimization/Scaling_Laws_and_Training_Dynamics.md) → [Tokenizer](模型训练/Data/Tokenizer_Design_2026.md) → [优化器](模型训练/Optimization/Optimizer_Advanced_2026.md) → [数据策展](模型训练/Data/Data_Curation_and_Mixture_2026.md) → [GRPO 对齐](模型训练/Alignment/GRPO_and_New_Alignment_Methods.md) → [剪枝蒸馏](模型训练/Compression/Pruning_and_Knowledge_Distillation.md) → [分布式训练](模型训练/Distributed_Training/Ray_Deep_Dive.md) → [训练优化](模型训练/Distributed_Training/DeepSpeed_Deep_Dive.md) → [并行框架](模型训练/Distributed_Training/Megatron_LM_Deep_Dive.md)
-- **简化版** → [Model_Training_for_dummy](模型训练/Model_Training_for_dummy.md)
+- **简化版** → [Model_Training_for_dummy](模型训练/Training_Fundamentals/Model_Training_for_dummy.md)
 
 ## AI Stack 训练启动器
 
@@ -60,10 +60,10 @@ sources: []
 
 | 文档 | 内容 | 适用角色 |
 |------|------|----------|
-| [AI Stack 生产工具链总览](../架构基建/AI_Stack/AI_Stack_Production_Toolchain.md) | AI Stack 工具全景与生命周期 | 所有 AI Stack 用户 |
-| [AI Stack 训练启动器](../架构基建/AI_Stack/AI_Stack_Training_Launchers_Guide.md) | torchrun / accelerate / deepspeed / swift | 训练工程师 |
-| [AI Stack GPU 监控](../架构基建/AI_Stack/AI_Stack_GPU_Monitoring_Guide.md) | nvidia-smi / ppu-smi 训练监控 | 运维、训练工程师 |
-| [AI Stack 模型管理](../架构基建/AI_Stack/AI_Stack_Model_Management_Guide.md) | 模型下载与版本组织 | 模型工程师 |
+| [AI Stack 生产工具链总览](架构基建/AI_Stack/AI_Stack_Production_Toolchain.md) | AI Stack 工具全景与生命周期 | 所有 AI Stack 用户 |
+| [AI Stack 训练启动器](架构基建/AI_Stack/AI_Stack_Training_Launchers_Guide.md) | torchrun / accelerate / deepspeed / swift | 训练工程师 |
+| [AI Stack GPU 监控](架构基建/AI_Stack/AI_Stack_GPU_Monitoring_Guide.md) | nvidia-smi / ppu-smi 训练监控 | 运维、训练工程师 |
+| [AI Stack 模型管理](架构基建/AI_Stack/AI_Stack_Model_Management_Guide.md) | 模型下载与版本组织 | 模型工程师 |
 
 ---
 
@@ -76,7 +76,7 @@ sources: []
 
 ### 进阶方向
 - [模型评估](../模型评估/) — 训练后如何评估模型质量
-- [部署推理](../部署推理/README.md) — 训练好的模型如何上线
+- [部署推理](.部署推理/README.md) — 训练好的模型如何上线
 - [MLOps 流水线](../模型运维/) — 自动化训练与持续交付
 - [RAG 系统](../RAG系统/) — 检索增强生成的训练策略
 
@@ -119,14 +119,14 @@ sources: []
 - [[AI_Stack_Training_Launchers_Guide|AI Stack 训练启动器指南]]
 - [[AI_Stack_GPU_Monitoring_Guide|AI Stack GPU 监控指南]]
 - [[AI_Stack_Model_Management_Guide|AI Stack 模型下载与管理指南]]
-- [[模型训练/Data_and_FineTuning_for_dummy.md|数据与微调大白话]]
-- [[概念/data-cleaning-pipeline.md|数据清洗 Pipeline]]
-- [[概念/dora.md|DoRA]]
-- [[概念/rs-lora.md|RS-LoRA]]
+- [[模型训练/Training_Fundamentals/Data_and_FineTuning_for_dummy.md|数据与微调大白话]]
+- [[概念/General/data-cleaning-pipeline.md|数据清洗 Pipeline]]
+- [[概念/General/dora.md|DoRA]]
+- [[概念/Training/rs-lora.md|RS-LoRA]]
 
-- [[概念/model-training.md]] — 模型训练
-- [[概念/distributed-systems.md]] — 分布式系统
-- [[概念/optimization-regularization.md]] — 优化与正则化
+- [[概念/Training/model-training.md]] — 模型训练
+- [[概念/Training/distributed-systems.md]] — 分布式系统
+- [[概念/Math/optimization-regularization.md]] — 优化与正则化
 
 
 

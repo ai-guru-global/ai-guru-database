@@ -130,8 +130,8 @@ Stage 0: AI 觉醒 ────────────────────�
 | [概念层次卡片](./概念/) | Stage 0-4 每个阶段的核心概念卡片 |
 | [里程碑自测](./guides/milestones.md) | 每个 Stage 的自测问题与检查点 |
 | [概念知识图谱](../治理/notes/AI_Concept_Knowledge_Graph.md) | 800+ 概念的完整依赖关系图 |
-| [新手导航（章节版）](../README_for_dummy.md) | 按章节组织的入门指南 |
-| [500+ AI Projects](../参考/500-ai-projects.md) | 500+ AI/ML/DL/CV/NLP 实战项目合集索引 |
+| [新手导航（章节版）](.README_for_dummy.md) | 按章节组织的入门指南 |
+| [500+ AI Projects](学习/References/Projects/500-ai-projects.md) | 500+ AI/ML/DL/CV/NLP 实战项目合集索引 |
 
 ---
 

@@ -408,11 +408,11 @@ flowchart TB
 
 ## 🔗 相关主题
 
-- [AI 基础速成](../数学基础/Fundamentals-in-nutshell.md) —— ML 需要的数学和工程基础
-- [深度学习速成](../深度学习/DL-in-nutshell.md) —— 神经网络进阶
-- [特征工程详解](./Feature_Engineering/Feature_Engineering.md) —— 深入特征构造与选择
-- [模型评估详解](../模型评估/Model_Evaluation.md) —— 全面评估方法论
-- [训练速成](../模型训练/Model-Training-in-nutshell.md) —— 端到端训练流程
+- [AI 基础速成](数学基础/Math_Fundamentals/Fundamentals-in-nutshell.md) —— ML 需要的数学和工程基础
+- [深度学习速成](深度学习/DL_Fundamentals/DL-in-nutshell.md) —— 神经网络进阶
+- [特征工程详解](机器学习/Feature_Engineering/Feature_Engineering.md) —— 深入特征构造与选择
+- [模型评估详解](模型评估/Evaluation_Fundamentals/Model_Evaluation.md) —— 全面评估方法论
+- [训练速成](模型训练/Training_Fundamentals/Model-Training-in-nutshell.md) —— 端到端训练流程
 
 ---
 

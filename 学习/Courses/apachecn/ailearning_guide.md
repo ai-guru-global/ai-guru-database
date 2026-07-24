@@ -97,7 +97,7 @@ MIT 18.06 的中文笔记，从方程组几何解释到 SVD、伪逆，是理解
 ## 相关页面
 
 - [[学习/Courses/apachecn/ailearning_guide]] — 外部源引用索引
-- [[入门/AI_Learning_Resources.md]] — AI 学习资源与方法论
+- [[入门/Learning_Path/AI_Learning_Resources.md]] — AI 学习资源与方法论
 - [[学习/guides/learning_paths_2026.md]] — 本库学习路径总览
 
 ## 核心知识框架

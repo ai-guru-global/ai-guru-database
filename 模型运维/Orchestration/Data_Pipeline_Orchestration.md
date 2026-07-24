@@ -497,7 +497,7 @@ if __name__ == "__main__":
 ## Related
 
 - [[模型运维/MLOps-in-nutshell]] — MLOps 速成指南 (共享: ci-cd, feature-store, mlops, pipeline)
-- [[模型运维/MLOps_Pipeline.md|MLOps_Pipeline]]
+- [[模型运维/MLOps_Fundamentals/MLOps_Pipeline.md|MLOps_Pipeline]]
 - [[模型运维/CI_CD/ML_CI_CD.md|ML_CI_CD]]
-- [[模型运维/MLOps_Pipeline_for_dummy.md|MLOps_Pipeline_for_dummy]]
-- [[模型运维/MLOps_Maturity_Model.md|MLOps_Maturity_Model]]
+- [[模型运维/MLOps_Fundamentals/MLOps_Pipeline_for_dummy.md|MLOps_Pipeline_for_dummy]]
+- [[模型运维/MLOps_Fundamentals/MLOps_Maturity_Model.md|MLOps_Maturity_Model]]

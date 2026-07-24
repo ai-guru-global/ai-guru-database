@@ -188,15 +188,15 @@ Kubernetes (K8s) 部署:
 
 ---
 
-*本文是 [README.md](./README.md) 的简化版，适合零基础读者。*
+*本文是 [README.md](README.md) 的简化版，适合零基础读者。*
 
 ## Related
 
 - [[架构基建/Architecture_Overview/AI_Infrastructure_2026|AI_Infrastructure_2026]]
-- [[架构基建/Architecture-in-nutshell.md|Architecture-in-nutshell]]
-- [[架构基建/Architecture_Infrastructure_for_dummy.md|Architecture_Infrastructure_for_dummy]]
+- [[架构基建/Architecture_Fundamentals/Architecture-in-nutshell.md|Architecture-in-nutshell]]
+- [[架构基建/Architecture_Fundamentals/Architecture_Infrastructure_for_dummy.md|Architecture_Infrastructure_for_dummy]]
 - [[架构基建/Architecture_Overview/Spring_AI_Architecture|Spring_AI_Architecture]]
-- [[概念/llm-infrastructure.md|llm-infrastructure]]
+- [[概念/LLM/llm-infrastructure.md|llm-infrastructure]]
 
 ## 架构核心组件对比
 

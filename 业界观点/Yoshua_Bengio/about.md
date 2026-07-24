@@ -136,13 +136,13 @@ Bengio 是 AI 安全与治理领域最活跃的学术声音之一：
 
 ## 交叉引用 (Cross-References)
 
-- [Talks 主题合成 2026](../Talks_Synthesis_2026.md) — 查看 Bengio 在 Scaling Laws、开源 vs 闭源、AI 安全等主题中的立场
+- [Talks 主题合成 2026](业界观点/Talks_Synthesis/Talks_Synthesis_2026.md) — 查看 Bengio 在 Scaling Laws、开源 vs 闭源、AI 安全等主题中的立场
 - [[业界观点/Geoffrey_Hinton/about]] — Hinton 与 Bengio 同为图灵奖得主，同转向 AI 安全倡导
 - [[业界观点/Yann_LeCun/about]] — LeCun 与 Bengio 在 AI 风险严重性上有分歧（LeCun 乐观，Bengio 谨慎）
 - [[业界观点/Elon_Musk/about]] — Musk 与 Bengio 共同签署 Pause 公开信
-- [AI 伦理与社会](../../入门/AI_Ethics_Society.md) — AI 安全治理与国际合作
+- [AI 伦理与社会](入门/Ethics_and_Future/AI_Ethics_Society.md) — AI 安全治理与国际合作
 - [深度学习基础](../../深度学习/README.md) — RNN、注意力机制的理论基础
-- [AI 历史时间线](../../入门/AI_History_Timeline.md) — 深度学习理论发展
+- [AI 历史时间线](入门/Fundamentals/AI_History_Timeline.md) — 深度学习理论发展
 
 ---
 

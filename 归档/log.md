@@ -6,9 +6,9 @@ title: Wiki Log
 
 - [2026-06-15T15:10:00+08:00] MRL_DEEP_DIVE 新增 Matryoshka Representation Learning 深度专题:
   - 创建主章节深度解析: RAG系统/Embeddings/Matryoshka_Representation_Learning_Deep_Dive.md
-  - 创建小白版: RAG系统/Matryoshka_Representation_Learning_for_dummy.md
+  - 创建小白版: RAG系统/Embeddings/Matryoshka_Representation_Learning_for_dummy.md
   - 创建论文深度解读: 论文精读/Efficiency/Matryoshka_Representation_Learning_Deep_Dive.md
-  - 更新 RAG系统/README.md、概念/matryoshka-representation-learning.md、概念/embedding-models.md、论文精读/README.md、index.md
+  - 更新 RAG系统/README.md、概念/matryoshka-representation-learning.md、概念/RAG/embedding-models.md、论文精读/README.md、index.md
 - [2026-05-31T00:00:00Z] INIT
 - [2026-05-31T21:30:00+08:00] CROSS_LINK 概念/ core layer
 - [2026-05-31T21:30:00+08:00] WIKI_SYNTHESIZE 5 pages
@@ -81,7 +81,7 @@ title: Wiki Log
 - Frontmatter YAML 修复:
  - 第一轮: 修复 263 个文件的 title/summary 引号问题
  - 第二轮: 修复 190 个文件的中文引号导致的解析失败
- - 手动修复: 概念/multimodal-vision.md 的 relationships/sources 列表格式
+ - 手动修复: 概念/Vision/multimodal-vision.md 的 relationships/sources 列表格式
  - 最终 bad frontmatter: 0
 - 报告生成:
  - `_tag-taxonomy-report.md` — 完整标签分布与规范化映射
@@ -916,7 +916,7 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
 | 500+ AI Projects | `原始/github-sources/500-ai-projects` | [[学习/References/Projects/500-ai-projects]] |
 
 **统计**: 35 个 wiki 页面创建/更新，6 个仓库浅克隆到 `原始/github-sources/`。
-**更新文件**: `index.md`, `学习/README.md`, `学习/Learning_Paths_2026.md`, `.manifest.json`, `hot.md`。
+**更新文件**: `index.md`, `学习/README.md`, `学习/Learning_Paths_2026.md`, `.manifest.json`, `治理/hot.md`。
 
 ---
 
@@ -932,14 +932,14 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
     - 代表性模型：nomic-embed-text-v1.5、OpenAI text-embedding-3、Jina v3
     - 应用场景：RAG 多级检索、向量数据库存储优化、端侧部署
     - 局限与开放问题
-- 更新 `概念/embedding-models.md`
+- 更新 `概念/RAG/embedding-models.md`
   - 模型对比表中 nomic-embed-text-v1.5 链接到 MRL 专题
   - 工程最佳实践表中 Matryoshka 表示链接到 MRL 专题
   - frontmatter 增加 `matryoshka-representation-learning` 关系
-- 更新 `概念/vector-database.md`
+- 更新 `概念/RAG/vector-database.md`
   - 新增“可截断嵌入：Matryoshka Representation Learning”小节
   - frontmatter 增加 MRL 关系
-- 更新 `概念/rag-systems.md`
+- 更新 `概念/RAG/rag-systems.md`
   - Embedding 模型选型段落补充 MRL 模型推荐
   - frontmatter 增加 MRL 关系
 - 更新 `index.md`
@@ -961,10 +961,10 @@ Created 13 new deep-dive pages to fill identified weaknesses in LLM lifecycle co
 - 新增页面:
   - `部署推理/GPU_Infrastructure/GPUStack_Deep_Dive.md` — GPUStack 深度解析 (27,950 bytes)
   - `部署推理/GPU_Infrastructure/GPUStack_for_dummy.md` — GPUStack 入门指南 (8,704 bytes)
-  - `概念/gpustack.md` — GPUStack 概念卡片 (3,564 bytes)
+  - `概念/GPU/gpustack.md` — GPUStack 概念卡片 (3,564 bytes)
 - 更新页面:
   - `部署推理/README.md` — 新增 GPUStack 导航、对比表与 Related 链接
-  - `部署推理/Deployment_Inference.md` — 新增 GPUStack 选型建议与资源链接
+  - `部署推理/Deployment_Fundamentals/Deployment_Inference.md` — 新增 GPUStack 选型建议与资源链接
   - `index.md` — Concepts 部分新增 GPUStack 索引
   - `README.md` — 2026 专题新增 GPUStack 深度解析入口
   - `mkdocs.yml` — Deployment & Inference 导航新增 GPUStack 两个页面

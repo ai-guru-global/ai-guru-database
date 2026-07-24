@@ -2,7 +2,7 @@
 title: "KV Cache x PagedAttention: 从显存碎片到虚拟内存的推理革命"
 category: synthesis
 tags: [kv-cache, paged-attention, inference, memory-management, vllm, optimization, gpu]
-sources: [概念/kv-cache.md, 概念/paged-attention.md]
+sources: [概念/LLM/kv-cache.md, 概念/paged-attention.md]
 summary: "KV Cache 是自回归推理的性能基石，但显存碎片化使其利用率仅 50-65%；PagedAttention 借鉴操作系统虚拟内存分页思想，将利用率提升至 95%+，成为 2026 年所有主流推理引擎的必选基座。"
 created: 2026-07-02
 updated: 2026-07-02

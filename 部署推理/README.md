@@ -19,9 +19,9 @@ sources: []
 
 | 文档 | 内容 | 适用角色 |
 |------|------|----------|
-| [Deployment Inference](部署推理/Deployment_Inference.md) | 部署与推理加速：PagedAttention、量化、批处理 | 架构师、开发者 |
+| [Deployment Inference](部署推理/Deployment_Fundamentals/Deployment_Inference.md) | 部署与推理加速：PagedAttention、量化、批处理 | 架构师、开发者 |
 | [LLM 模型热加载与回滚 Runbook](部署推理/Model_Hot_Reload_and_Rollback_Runbook.md) | 权重/tokenizer/LoRA/quant 一致性检查与回滚流程 | SRE、模型工程师 |
-| [LLM 推理调优速查表](部署推理/Inference_Tuning_Cheat_Sheet.md) | vLLM/SGLang/TGI/TRT-LLM 关键参数、性能诊断、场景配置 | 推理工程师、SRE |
+| [LLM 推理调优速查表](部署推理/Inference_Optimization/Inference_Tuning_Cheat_Sheet.md) | vLLM/SGLang/TGI/TRT-LLM 关键参数、性能诊断、场景配置 | 推理工程师、SRE |
 | [LLM Inference Engine Selection Guide](部署推理/Inference_Engines/LLM_Inference_Engine_Selection_Guide.md) | 推理引擎统一选型：决策树、成本模型、场景速查 | 架构师、决策者 |
 | [LLM Inference Benchmarking Guide](部署推理/Inference_Engines/LLM_Inference_Benchmarking_Guide.md) | 推理引擎基准测试：指标、工具、方法、报告模板 | 性能工程师、架构师 |
 | [LLM Inference Engine Migration Guide](部署推理/Inference_Engines/LLM_Inference_Engine_Migration_Guide.md) | 引擎迁移：vLLM/SGLang/TGI/TRT-LLM/云 API 切换策略 | 架构师、SRE |
@@ -104,10 +104,10 @@ sources: []
 
 | 文档 | 内容 | 适用角色 |
 |------|------|----------|
-| [AI Stack 生产工具链总览](../架构基建/AI_Stack/AI_Stack_Production_Toolchain.md) | AI Stack 工具全景与生命周期 | 所有 AI Stack 用户 |
-| [AI Stack 推理服务](../架构基建/AI_Stack/AI_Stack_Inference_Serving_Guide.md) | vLLM / SGLang / Ollama / llama-server 启动与运维 | 推理工程师 |
-| [AI Stack GPU 监控](../架构基建/AI_Stack/AI_Stack_GPU_Monitoring_Guide.md) | nvidia-smi / ppu-smi 等 GPU 监控 | 运维、SRE |
-| [AI Stack 模型管理](../架构基建/AI_Stack/AI_Stack_Model_Management_Guide.md) | 模型下载与版本组织 | 模型工程师 |
+| [AI Stack 生产工具链总览](架构基建/AI_Stack/AI_Stack_Production_Toolchain.md) | AI Stack 工具全景与生命周期 | 所有 AI Stack 用户 |
+| [AI Stack 推理服务](架构基建/AI_Stack/AI_Stack_Inference_Serving_Guide.md) | vLLM / SGLang / Ollama / llama-server 启动与运维 | 推理工程师 |
+| [AI Stack GPU 监控](架构基建/AI_Stack/AI_Stack_GPU_Monitoring_Guide.md) | nvidia-smi / ppu-smi 等 GPU 监控 | 运维、SRE |
+| [AI Stack 模型管理](架构基建/AI_Stack/AI_Stack_Model_Management_Guide.md) | 模型下载与版本组织 | 模型工程师 |
 
 ## 推理优化大白话
 
@@ -115,7 +115,7 @@ sources: []
 
 | 文档 | 内容 | 适用读者 |
 |------|------|----------|
-| [推理优化大白话](部署推理/Inference_Optimization_for_dummy.md) | SGLang、动态批调度、GGUF、SmoothQuant、TensorRT-LLM | 初学者 |
+| [推理优化大白话](部署推理/Inference_Optimization/Inference_Optimization_for_dummy.md) | SGLang、动态批调度、GGUF、SmoothQuant、TensorRT-LLM | 初学者 |
 
 ## 国产 AI 芯片推理
 
@@ -156,23 +156,23 @@ sources: []
 - [[部署推理/GPU_Infrastructure/GPUStack_Deep_Dive.md|GPUStack: 开源 GPU 集群管理与模型服务平台]]
 - [[部署推理/Inference_Engines/LLM_Inference_Benchmarking_Guide.md|LLM 推理引擎基准测试指南]]
 - [[部署推理/Inference_Engines/LLM_Inference_Engine_Migration_Guide.md|LLM 推理引擎迁移指南]]
-- [[部署推理/Inference_Optimization_for_dummy.md|推理优化大白话]]
+- [[部署推理/Inference_Optimization/Inference_Optimization_for_dummy.md|推理优化大白话]]
 - [[AI_Stack_Production_Toolchain|AI Stack 生产工具链总览]]
 - [[AI_Stack_Inference_Serving_Guide|AI Stack 推理服务指南]]
 - [[AI_Stack_GPU_Monitoring_Guide|AI Stack GPU 监控指南]]
 - [[AI_Stack_Model_Management_Guide|AI Stack 模型下载与管理指南]]
-- [[概念/sglang.md|SGLang]]
-- [[概念/dynamic-batch-scheduling.md|动态批调度]]
-- [[概念/gguf.md|GGUF]]
-- [[概念/smoothquant.md|SmoothQuant]]
-- [[概念/tensorrt-llm.md|TensorRT-LLM]]
+- [[概念/Inference/sglang.md|SGLang]]
+- [[概念/General/dynamic-batch-scheduling.md|动态批调度]]
+- [[概念/Inference/gguf.md|GGUF]]
+- [[概念/Training/smoothquant.md|SmoothQuant]]
+- [[概念/LLM/tensorrt-llm.md|TensorRT-LLM]]
 - [[部署推理/Inference_Engines/CTranslate2_Deep_Dive.md|CTranslate2: 轻量跨平台 Transformer 推理]]
 - [[部署推理/Inference_Engines/MLC_LLM_Deep_Dive.md|MLC LLM: 移动端/异构 LLM 推理]]
 
-- [[部署推理/Deployment_Inference.md]] — 模型部署与推理加速 (Deployment & Inference) (共享: deployment, inference, serving, vllm)
-- [[部署推理/Deployment_Inference_2026.md]] — 部署推理 2026 趋势 (共享: deployment, inference, serving, vllm)
-- [[部署推理/Deployment_Inference_for_dummy.md]] — 模型部署与推理加速 - 小白版 (共享: deployment, inference, serving, vllm)
-- [[部署推理/Inference-in-nutshell.md]] — 模型推理速成指南 (共享: deployment, inference, serving, vllm)
+- [[部署推理/Deployment_Fundamentals/Deployment_Inference.md]] — 模型部署与推理加速 (Deployment & Inference) (共享: deployment, inference, serving, vllm)
+- [[部署推理/Deployment_Fundamentals/Deployment_Inference_2026.md]] — 部署推理 2026 趋势 (共享: deployment, inference, serving, vllm)
+- [[部署推理/Deployment_Fundamentals/Deployment_Inference_for_dummy.md]] — 模型部署与推理加速 - 小白版 (共享: deployment, inference, serving, vllm)
+- [[部署推理/Deployment_Fundamentals/Inference-in-nutshell.md]] — 模型推理速成指南 (共享: deployment, inference, serving, vllm)
 - [[部署推理/Caching/Speculative_Decoding_Advanced_2026.md|Speculative_Decoding_Advanced_2026]]
 - [[部署推理/Caching/Prompt_Caching_and_KV_Cache_Optimization.md|Prompt_Caching_And_Kv_Cache_Optimization]]
 - [[部署推理/Caching/KV_Cache_Deep_Dive.md|KV Cache 深度研究]]
@@ -220,7 +220,7 @@ sources: []
 ## 相关页面
 - [[部署推理/Quantization/Quantization_Techniques_2026.md|Quantization Techniques 2026]]
 
-- [[概念/model-compression.md|Model Compression]]
+- [[概念/Training/model-compression.md|Model Compression]]
 
 ## 新增页面
 
@@ -245,5 +245,5 @@ sources: []
 - [[部署推理/Caching/Prompt_Caching_Advanced.md|Prompt 缓存高级技术]]
 - [[部署推理/GPU_Infrastructure/GPUStack_Deep_Dive.md|GPUStack 深度解析]]
 - [[部署推理/GPU_Infrastructure/GPUStack_for_dummy.md|GPUStack 入门指南]]
-- [[概念/gpustack.md|GPUStack 概念卡片]]
-- [[概念/kv-cache.md|KV Cache 概念卡片]]
+- [[概念/GPU/gpustack.md|GPUStack 概念卡片]]
+- [[概念/LLM/kv-cache.md|KV Cache 概念卡片]]

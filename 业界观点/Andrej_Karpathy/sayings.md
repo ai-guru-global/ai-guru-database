@@ -26,7 +26,7 @@ sources: []
 3. **"I just vibe code." / "我就是氛围编程。" (Vibe Coding 概念首创)** 
  - **含义**: 开发者用自然语言描述意图，AI 生成代码，开发者基于直觉和经验审查——核心是从"编写代码"转变为"导演代码"。
  - **来源**: [Karpathy 在 X/Twitter，2025 年 2 月](https://x.com/karpathy/status/1886192184808213008)
- - **延伸阅读**: [Vibe Coding 方法论](../../编程/Methodology/Vibe_Coding_Methodology.md) — 基于这一概念发展的完整方法论体系
+ - **延伸阅读**: [Vibe Coding 方法论](编程/Methodology/Vibe_Coding_Methodology.md) — 基于这一概念发展的完整方法论体系
 
 ## 2. LLM 能力与局限 (LLM Capabilities & Limits)
 

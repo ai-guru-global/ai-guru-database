@@ -164,13 +164,13 @@ AI → 检测问题 → 分析 → 执行修复脚本 → 验证
 
 ---
 
-*本文是 [README.md](./README.md) 的简化版，适合零基础读者。*
+*本文是 [README.md](README.md) 的简化版，适合零基础读者。*
 
 ## Related
 
-- [[18_Cloud_Ops_Agent/CloudOps-in-nutshell.md|CloudOps-in-nutshell]]
-- [[18_Cloud_Ops_Agent/Cloud_Product_Ops_for_dummy.md|Cloud_Product_Ops_for_dummy]]
-- [[18_Cloud_Ops_Agent/Java_Cloud_SDK_Guide.md|Java_Cloud_SDK_Guide]]
+- [[模型运维/Cloud_Ops_Agent/CloudOps-in-nutshell.md|CloudOps-in-nutshell]]
+- [[模型运维/Cloud_Ops_Agent/Cloud_Product_Ops_for_dummy.md|Cloud_Product_Ops_for_dummy]]
+- [[模型运维/Cloud_Ops_Agent/Java_Cloud_SDK_Guide.md|Java_Cloud_SDK_Guide]]
 - [[18_Cloud_Ops_Agent/docs/architecture/index.md|index]]
 - [[18_Cloud_Ops_Agent/docs/corpus/index.md|index]]
 

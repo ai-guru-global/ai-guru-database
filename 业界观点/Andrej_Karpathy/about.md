@@ -137,11 +137,11 @@ Karpathy 的核心信念：
 
 ## 交叉引用 (Cross-References)
 
-- [Talks 主题合成 2026](../Talks_Synthesis_2026.md) — 查看 Karpathy 在各主题中的立场
+- [Talks 主题合成 2026](业界观点/Talks_Synthesis/Talks_Synthesis_2026.md) — 查看 Karpathy 在各主题中的立场
 - [[业界观点/Fei_Fei_Li/about]] — Fei-Fei Li 是 Karpathy 的博士导师
 - [[业界观点/Elon_Musk/about]] — Musk 是 Tesla CEO，Karpathy 在其麾下领导 AI
-- [Vibe Coding 方法论](../../编程/Methodology/Vibe_Coding_Methodology.md) — 详细方法论
-- [AI 历史时间线](../../入门/AI_History_Timeline.md) — Software 2.0 与自动驾驶
+- [Vibe Coding 方法论](编程/Methodology/Vibe_Coding_Methodology.md) — 详细方法论
+- [AI 历史时间线](入门/Fundamentals/AI_History_Timeline.md) — Software 2.0 与自动驾驶
 - [深度学习基础](../../深度学习/README.md) — CS231n 与视觉模型
 - [大模型基础](../../大模型/README.md) — nanoGPT 与 GPT 架构
 
@@ -152,7 +152,7 @@ Karpathy 的核心信念：
 - **个人主页 (Official Site)**: [karpathy.ai](https://karpathy.ai/)
 - **Vibe Coding 原始推文**: [2025 年 2 月提出 "Vibe Coding" 概念](https://x.com/karpathy/status/1886192184808213008)
 - **Software 2.0 博文**: [karpathy.medium.com](https://karpathy.medium.com/software-2-0-a64152b37c35)
-- **Vibe Coding 方法论详解**: [Vibe Coding 方法论](../../编程/Methodology/Vibe_Coding_Methodology.md)
+- **Vibe Coding 方法论详解**: [Vibe Coding 方法论](编程/Methodology/Vibe_Coding_Methodology.md)
 - **YouTube 频道**: [Andrej Karpathy](https://www.youtube.com/@AndrejKarpathy)
 - **GitHub**: [github.com/karpathy](https://github.com/karpathy)
 

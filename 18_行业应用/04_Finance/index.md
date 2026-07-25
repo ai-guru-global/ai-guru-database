@@ -20,8 +20,8 @@ tags: [auto-index]
 
 ## Related
 
-- [[18_行业应用/Legal_Government_index|Legal & Government]]
-- [[18_行业应用/Security_Cybersecurity_index|Security & Cybersecurity]]
+- [[18_行业应用/11_Legal_Government/Legal_Government_index|Legal & Government]]
+- [[18_行业应用/15_Security_Cybersecurity/Security_Cybersecurity_index|Security & Cybersecurity]]
 - [[02_机器学习/08_Anomaly_Detection/index|Anomaly Detection]]
 
 ## 进阶知识拓展

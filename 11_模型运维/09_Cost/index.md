@@ -22,7 +22,7 @@ tags: [auto-index]
 
 - [[11_模型运维/07_Model_Serving/index|Model Serving]]
 - [[13_运维/05_Cost_Management/index|Cost Management]]
-- [[10_部署推理/Cost_index|部署推理 Cost]]
+- [[10_部署推理/09_Cost/Cost_index|部署推理 Cost]]
 
 ## MLOps核心流程对比
 

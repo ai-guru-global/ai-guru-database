@@ -162,7 +162,7 @@ flowchart TB
 - [[03_深度学习/03_Optimization/Optimization]] — 优化算法与训练技巧
 - [[03_深度学习/08_DL_Frameworks/DL_Frameworks]] — PyTorch / JAX 框架实战
 - [[03_深度学习/07_World_Models/README]] — 世界模型与预测编码前沿
-- [[03_深度学习/State_Space_Models_2026]] — Mamba 与 Transformer 后继者
+- [[03_深度学习/02_Neural_Network_Core/State_Space_Models_2026]] — Mamba 与 Transformer 后继者
 
 ## 进阶知识拓展
 

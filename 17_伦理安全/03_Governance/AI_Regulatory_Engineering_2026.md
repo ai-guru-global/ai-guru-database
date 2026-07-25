@@ -114,7 +114,7 @@ graph LR
 
 ## Related
 
-- [[17_伦理安全/Safety_Evaluation_Framework]] — 具体的安全评估指标
+- [[17_伦理安全/04_AI_Safety_RedTeaming/Safety_Evaluation_Framework]] — 具体的安全评估指标
 - [[11_模型运维/06_CI_CD/ML_CI_CD]] — 如何将合规集成到流水线
 - [[05_大模型/09_Reasoning_Models/Neuro_Symbolic_and_Formal_Verification_2026]] — 形式化验证的技术底层
 - [[概念/ai-ethics]] — 伦理基础理论

@@ -17,7 +17,7 @@ sources: []
 
 ## 本章分组
 
-> 全章 16 个 L2 子目录 + 若干 root 级课件，按关注域分 4 组：
+> 全章 17 个 L2 子目录 + 若干 root 级课件，按关注域分 4 组：
 
 ### 能力层 —— 构建 Agent 的核心组件
 
@@ -26,7 +26,7 @@ sources: []
 | [**AI Agent 全景概览**](15_智能体/01_Agent_Foundations/Agent_Overview.md) | Agent 架构、设计模式、框架选型、生产部署、2026 趋势 |
 | [Agent_Foundations](./01_Agent_Foundations/) | 理论、协议、状态管理、路线图 |
 | [Agent_Frameworks](./02_Agent_Frameworks/) | LangChain / AutoGen / LangGraph / AgentScope / SmolAgents / agno |
-| [Agent_Protocols](./Agent_Protocols/) | MCP / A2A / UCP 协议栈 |
+| [Agent_Protocols](./16_Agent_Protocols/) | MCP / A2A / UCP 协议栈、A2A 深度解析 |
 | [Agent_Skills](./05_Agent_Skills/) | 工具 / 技能 / 调用范式 |
 | [Agent_Workflow](./03_Agent_Workflow/) | 设计模式、编排、UI/UX |
 | [Memory_Infrastructure](./06_Memory_Infrastructure/) | MemGPT / 向量库 / RAG 基础设施 |
@@ -45,6 +45,7 @@ sources: []
 | [Agent_Platforms](./09_Agent_Platforms/) | Dify / Coze / PromptFlow / OpenRouter |
 | [Enterprise_Agent](./10_Enterprise_Agent/) | 企业级部署、Hermes Agent |
 | [Agent_Ecosystem_CN](./12_Agent_Ecosystem_CN/) | 国内 AI Agent 产品与开源 |
+| [Agent_Applications](./17_Agent_Applications/) | Computer Use / Voice Agents 应用形态 |
 | [OpenClaw_Ecosystem](./11_OpenClaw_Ecosystem/) | OpenClaw / CoPaw / QClaw / Manus |
 
 ### 工具与学习 —— 编码工具 + 系列课件
@@ -53,8 +54,8 @@ sources: []
 |---------------|------|
 | [Agentic_Coding_Tools](./08_Agentic_Coding_Tools/) | Aider / Continue / Claude Code / OpenCode / Windsurf / Cursor / Devin |
 | [Course_Notes](./15_Course_Notes/) | Learn_Claude_Code / Microsoft_AI_Agents 系列课件 |
-| [Agentic_Design_Patterns_AndrewNg.md](./Agentic_Design_Patterns_AndrewNg.md) | Andrew Ng Agentic 设计模式 |
-| [Gradio_Deep_Dive.md](./Gradio_Deep_Dive.md) | ML Demo UI 框架 |
+| [Agentic_Design_Patterns_AndrewNg.md](./01_Agent_Foundations/Agentic_Design_Patterns_AndrewNg.md) | Andrew Ng Agentic 设计模式 |
+| [Gradio_Deep_Dive.md](../10_部署推理/02_Inference_Engines/Gradio_Deep_Dive.md) | ML Demo UI 框架 |
 | GenAI_L06 / L07 / L11 / L12 / L17 | GenAI 系列课件（文本生成 / Chat / Function Calling / UX / Agents） |
 | Hello_Agents_L06 / L08 / L10 / L13 / L15 | Hello_Agents 系列课件（框架 / Memory RAG / 协议 / 旅行助手 / 网络城） |
 
@@ -234,7 +235,7 @@ L4: 持久化知识 → SQL/NoSQL
 - [[15_智能体/07_Agent_Evaluation/Agent_Evaluation_Guide|评估执行指南]]
 - [[15_智能体/07_Agent_Evaluation/Agent_Evaluation_System_Architecture|云产品智能体评估系统 - 系统架构文档]]
 - [[15_智能体/AI_OpenSource_Projects_Overview|AI 开源项目全景图]]
-- [[15_智能体/Gradio_Deep_Dive|Gradio: 机器学习 Demo 框架]]
+- [[10_部署推理/02_Inference_Engines/Gradio_Deep_Dive|Gradio: 机器学习 Demo 框架]]
 - [[15_智能体/README|Agent 生产部署 (Agent Production)]]
 - [[15_智能体/README_for_dummy|13 Agent 生产部署 — 小白版 🤖]]
 
@@ -287,5 +288,5 @@ L4: 持久化知识 → SQL/NoSQL
 
 ## 新增页面
 
-- [[15_智能体/A2A_Protocol_Deep_Dive|A2A 协议]]
+- [[15_智能体/16_Agent_Protocols/A2A_Protocol_Deep_Dive|A2A 协议]]
 - [[15_智能体/06_Memory_Infrastructure/Agent_Memory_Techniques|Agent 记忆技术]]

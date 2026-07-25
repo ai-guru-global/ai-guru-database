@@ -353,7 +353,7 @@ async def get_weather(city: str):
 ## 相关链接
 
 - [[15_智能体/01_Agent_Foundations/MCP_Implementation_Guide|MCP 协议实现指南]] — MCP 协议深度实现
-- [[15_智能体/A2A_Protocol_Deep_Dive|A2A 协议深度解析]] — Agent 间通信协议
+- [[15_智能体/16_Agent_Protocols/A2A_Protocol_Deep_Dive|A2A 协议深度解析]] — Agent 间通信协议
 - [[概念/Agent/mcp|Model Context Protocol]] — MCP 概念卡片
 - [[概念/Agent/a2a-protocol|A2A 协议]] — A2A 概念卡片
 - [[15_智能体/01_Agent_Foundations/Agent_Protocols_Comparison_2026|Agent 协议对比 2026]] — 协议横向对比

@@ -138,7 +138,7 @@ aliases:
 
 - [[15_智能体/15_Course_Notes/Microsoft_AI_Agents_L07_Planning_Design]] — 上一课：Planner 触发多 Agent
 - [[15_智能体/15_Course_Notes/Microsoft_AI_Agents_L09_Metacognition]] — 下一课：元认知
-- [[15_智能体/Agentic_Design_Patterns_AndrewNg]] — Andrew Ng 的 Multi-Agent 模式
+- [[15_智能体/01_Agent_Foundations/Agentic_Design_Patterns_AndrewNg]] — Andrew Ng 的 Multi-Agent 模式
 - [[15_智能体/03_Agent_Workflow/README]] — 工作流编排概览
 - [[90_学习/courses/microsoft/microsoft_ai_agents_for_beginners]] — 课程总览
 

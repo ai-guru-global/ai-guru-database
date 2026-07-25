@@ -195,7 +195,7 @@ flowchart LR
 - [[08_模型评估/index|模型评估]] — 可视化的评估侧来源
 - [[12_架构基建/index|架构基建]] — 系统可视化的架构基础
 - [[11_模型运维/index|模型运维]] — 仪表盘与告警的运维上下文
-- [[09_测试/Weights_Biases_Deep_Dive|Weights & Biases]] — 实验追踪工具
+- [[09_测试/02_Testing_Frameworks/Weights_Biases_Deep_Dive|Weights & Biases]] — 实验追踪工具
 - [[03_深度学习/index|深度学习]] — 注意力/嵌入/降维的理论基础
 - [[治理/Best_Practices|治理最佳实践]] — 跨章节最佳实践参考
 

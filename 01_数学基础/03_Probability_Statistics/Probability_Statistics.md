@@ -532,7 +532,7 @@ $$
 
 ### 前置知识
 - **[线性代数](../02_Linear_Algebra/Linear_Algebra.md)**: 协方差矩阵、多元高斯分布
-- **[微积分](01_数学基础/Calculus_Optimization.md)**: 期望（积分）、最大化（求导）
+- **[微积分](01_数学基础/01_Math_Fundamentals/Calculus_Optimization.md)**: 期望（积分）、最大化（求导）
 
 ### 进阶推荐
 - **[机器学习基础](../../02_机器学习/README.md)**: MLE/MAP 在具体算法中的应用

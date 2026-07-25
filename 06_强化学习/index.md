@@ -18,8 +18,8 @@ This page indexes the contents of `强化学习`.
 
 ## Files
 
-- [[06_强化学习/Multi_Agent_RL|Multi Agent RL]]
-- [[06_强化学习/Multi_Agent_Systems|Multi Agent Systems]]
+- [[06_强化学习/06_Multi_Agent/Multi_Agent_RL|Multi Agent RL]]
+- [[06_强化学习/06_Multi_Agent/Multi_Agent_Systems|Multi Agent Systems]]
 - [[06_强化学习/README|README]]
 - [[06_强化学习/README_for_dummy|README For Dummy]]
 - [[06_强化学习/RL-in-nutshell|RL In Nutshell]]

@@ -22,13 +22,13 @@ This page indexes the contents of `数学基础`.
 
 ## Files
 
-- [[01_数学基础/AI_Development_Environment_Setup|AI Development Environment Setup]]
-- [[01_数学基础/ApacheCN_Data_Analysis_Track|Apachecn Data Analysis Track]]
-- [[01_数学基础/ApacheCN_Linear_Algebra_Track|Apachecn Linear Algebra Track]]
-- [[01_数学基础/Calculus_Optimization|Calculus Optimization]]
+- [[01_数学基础/08_Python_Toolkit/AI_Development_Environment_Setup|AI Development Environment Setup]]
+- [[01_数学基础/08_Python_Toolkit/ApacheCN_Data_Analysis_Track|Apachecn Data Analysis Track]]
+- [[01_数学基础/02_Linear_Algebra/ApacheCN_Linear_Algebra_Track|Apachecn Linear Algebra Track]]
+- [[01_数学基础/01_Math_Fundamentals/Calculus_Optimization|Calculus Optimization]]
 - [[01_数学基础/Fundamentals-in-nutshell|Fundamentals In Nutshell]]
-- [[01_数学基础/GenAI_L00_Course_Setup|Genai L00 Course Setup]]
-- [[01_数学基础/GPU_Programming_CUDA_Basics|GPU Programming CUDA Basics]]
+- [[01_数学基础/08_Python_Toolkit/GenAI_L00_Course_Setup|Genai L00 Course Setup]]
+- [[01_数学基础/10_AI_Hardware/GPU_Programming_CUDA_Basics|GPU Programming CUDA Basics]]
 - [[01_数学基础/Math_Foundations|Math Foundations]]
 - [[01_数学基础/Mathematics_for_AI|Mathematics For AI]]
 - [[01_数学基础/Python_Data_Science_Toolkit|Python Data Science Toolkit]]

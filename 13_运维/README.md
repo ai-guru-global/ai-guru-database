@@ -19,7 +19,7 @@ sources: []
 
 > **本章专注「AI 系统运维」（Run-time），10 章 focus「ML 流水线建设」（Build-time，含工具实现）。**
 > 2026-06-15 起，工具深度解析（DVC/Feast/MLflow/Kubeflow/LangSmith 等 16 篇）已迁入 [[11_模型运维/README]]。
-> 完整边界声明见 [[11_模型运维/Boundary_with_16]]。
+> 完整边界声明见 [[11_模型运维/01_MLOps_Fundamentals/Boundary_with_16]]。
 
 | 想了解 | 去哪 |
 |--------|------|
@@ -47,7 +47,7 @@ sources: []
 | [GPU_OOM_Troubleshooting_Guide](./02_SRE_Reliability/GPU_OOM_Troubleshooting_Guide.md) | 区分四类 GPU OOM 并给出修复阶梯 | AI 训练/推理 SRE |
 | [LLM_Inference_Slow_Unavailable_Runbook](./02_SRE_Reliability/LLM_Inference_Slow_Unavailable_Runbook.md) | LLM 推理延迟/不可用分层排障 | 推理 SRE |
 | [LLM_Inference_SLO_Guide](./02_SRE_Reliability/LLM_Inference_SLO_Guide.md) | LLM 推理 SLO、SLI、错误预算与发布门控 | SRE |
-| [LLM_Inference_Observability_Stack](13_运维/LLM_Inference_Observability_Stack.md) | TTFT/TPOT/KV Cache 指标与 Prometheus/Grafana | 可观测性工程师 |
+| [LLM_Inference_Observability_Stack](13_运维/06_Observability/LLM_Inference_Observability_Stack.md) | TTFT/TPOT/KV Cache 指标与 Prometheus/Grafana | 可观测性工程师 |
 
 ## 事故响应 (Incident Response)
 
@@ -79,7 +79,7 @@ sources: []
 
 | 文档 | 内容 | 适用角色 |
 |------|------|----------|
-| [AI 系统混沌工程](13_运维/Chaos_Engineering_for_AI_Systems.md) | AI 平台故障注入实验设计与工具 | 可靠性工程师 |
+| [AI 系统混沌工程](13_运维/02_SRE_Reliability/Chaos_Engineering_for_AI_Systems.md) | AI 平台故障注入实验设计与工具 | 可靠性工程师 |
 | [Chaos_Engineering_AI](./02_SRE_Reliability/Chaos_Engineering_AI.md) | AI 系统混沌工程：故障注入、韧性测试 | 可靠性工程师 |
 
 ## 成本治理
@@ -132,7 +132,7 @@ sources: []
 - [12_架构基建/11_AI_Gateway](../12_架构基建/11_AI_Gateway/) — AI 网关与路由
 - [AI测试](../09_测试/) — AI 测试框架
 
-> 边界声明详见 [[11_模型运维/Boundary_with_16]]。
+> 边界声明详见 [[11_模型运维/01_MLOps_Fundamentals/Boundary_with_16]]。
 
 ---
 
@@ -140,7 +140,7 @@ sources: []
 
 ## Related
 
-- [[11_模型运维/Boundary_with_16]] — 10 与 16 边界声明 📐
+- [[11_模型运维/01_MLOps_Fundamentals/Boundary_with_16]] — 10 与 16 边界声明 📐
 - [[13_运维/01_AIOps_Fundamentals/AI_Ops_2026]] — AI Ops 2026: 智能运维体系与实践
 - [[13_运维/02_SRE_Reliability/AI_Incident_Response_Playbook]] — AI 系统事故响应手册
 - [[13_运维/02_SRE_Reliability/Incident_Response_for_AI_Systems]] — AI 系统事件响应
@@ -157,7 +157,7 @@ sources: []
 - [[12_架构基建/AI_Stack_K8s_Operations_Guide]] — AI Stack K8s 编排指南
 - [[12_架构基建/AI_Stack_Exclusive_Tools_Guide]] — AI Stack 专属运维工具指南
 
-- [[13_运维/Chaos_Engineering_for_AI_Systems|AI 系统混沌工程]]
+- [[13_运维/02_SRE_Reliability/Chaos_Engineering_for_AI_Systems|AI 系统混沌工程]]
 - [[13_运维/03_Incident_Response/On_Call_Runbook_Template|On-Call Runbook 模板]]
 - [[13_运维/02_SRE_Reliability/LLM_Inference_SLO_Guide|LLM 推理 SLO 实践指南]]
 

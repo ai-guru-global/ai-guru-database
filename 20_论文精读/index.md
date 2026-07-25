@@ -23,10 +23,10 @@ AI 论文精读中心（Paper Reading Center）— 按方向分类的顶会论�
 
 - [[20_论文精读/06_Alignment/index|Alignment]]
 - [[20_论文精读/04_Efficiency/index|Efficiency]]
-- [[20_论文精读/Retrieval_index|Retrieval]]
+- [[20_论文精读/10_Retrieval/Retrieval_index|Retrieval]]
 - [[20_论文精读/07_RL/index|RL]]
-- [[20_论文精读/Frontier_index|Frontier]]
-- [[20_论文精读/Methodology_index|Methodology]]
+- [[20_论文精读/09_Frontier/Frontier_index|Frontier]]
+- [[20_论文精读/01_Research_Guide/Methodology_index|Methodology]]
 
 ## 进阶知识拓展
 

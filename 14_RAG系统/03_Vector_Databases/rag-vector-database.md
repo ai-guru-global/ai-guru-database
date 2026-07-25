@@ -53,7 +53,7 @@ RAG（检索增强生成）的直觉很简单：LLM 记不住所有知识，所�
 
 - [[14_RAG系统/RAG-in-nutshell]] — RAG (检索增强生成) 速成指南 (共享: embedding, rag, retrieval, vector-database)
 - [[14_RAG系统/RAG_Systems]] — RAG 系统 (RAG Systems) (共享: embedding, rag, retrieval, vector-database)
-- [[14_RAG系统/README_Advanced]] — RAG高级实践 2026 (共享: embedding, rag, retrieval, vector-database)
+- [[14_RAG系统/04_Advanced_RAG/README_Advanced]] — RAG高级实践 2026 (共享: embedding, rag, retrieval, vector-database)
 - [[14_RAG系统/06_RAG_Frameworks/Spring_AI_RAG_Deep_Dive]] — Spring AI RAG 深度解析 (共享: embedding, rag, retrieval, vector-database)
 
 ## 进阶知识拓展

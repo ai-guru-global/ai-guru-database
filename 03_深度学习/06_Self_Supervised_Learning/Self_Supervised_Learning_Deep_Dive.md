@@ -469,4 +469,4 @@ LLM 的自监督任务:
 - [[概念/Math/self-supervised-learning|自监督学习]] — 自监督学习概念卡片
 - [[04_计算机视觉/08_Multimodal_Vision/CLIP_Deep_Dive|CLIP 深度解析]] — 对比学习代表
 - [[概念/Training/pre-training|预训练]] — 自监督预训练范式
-- [[03_深度学习/Transfer_Learning|迁移学习]] — 自监督预训练的迁移应用
+- [[03_深度学习/09_Advanced_Topics/Transfer_Learning|迁移学习]] — 自监督预训练的迁移应用

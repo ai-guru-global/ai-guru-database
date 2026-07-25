@@ -536,5 +536,5 @@ LLM 推理引擎选型 Checklist
 
 - [[10_部署推理/README|模型部署与推理目录]]
 - [[10_部署推理/Deployment_Inference_2026|部署推理 2026 趋势]]
-- [[10_部署推理/LLM_Cost_Optimization|LLM 成本优化]]
+- [[10_部署推理/09_Cost/LLM_Cost_Optimization|LLM 成本优化]]
 - [[12_架构基建/11_AI_Gateway/AI_Gateway_2026|AI Gateway 2026]]

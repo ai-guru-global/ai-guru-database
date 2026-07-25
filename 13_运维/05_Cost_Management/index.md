@@ -2,7 +2,7 @@
 title: Cost Management
 type: index
 created: 2026-07-02
-updated: 2026-07-11
+updated: 2026-07-25
 sources: []
 tags: [auto-index]
 ---
@@ -17,11 +17,12 @@ tags: [auto-index]
 |------|------|----------|
 | [[13_运维/05_Cost_Management/FinOps_for_AI|FinOps for AI]] | AI FinOps: cost visibility, optimization recommendations and budget alerting | FinOps practitioners / platform managers |
 | [[13_运维/05_Cost_Management/GPU_Cost_Optimization|GPU Cost Optimization]] | GPU cost optimization: scheduling, sharing and spot instance strategies | infrastructure engineers / FinOps |
+| [[13_运维/05_Cost_Management/Cost_Operations|AI 成本运营 (Cost Operations / FinOps for AI)]] | AI 成本运营完整体系：GPU 成本分析、推理成本优化、训练成本控制、FinOps 实践、成本分摊模型与 2026 降本策略。 | - | - |
 
 ## Related
 
 - [[13_运维/index|运维首页]]
-- [[13_运维/Capacity_Planning_index|Capacity Planning]]
+- [[13_运维/02_SRE_Reliability/Capacity_Planning_index|Capacity Planning]]
 - [[11_模型运维/09_Cost/index|模型运维 Cost]]
 
 ## 进阶知识拓展

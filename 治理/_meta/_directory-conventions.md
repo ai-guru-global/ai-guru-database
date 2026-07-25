@@ -123,7 +123,7 @@ ai-guru-database/
 
 | 文件 | 用途 |
 |------|------|
-| `_project-evaluation.md` | 项目整体评估报告 |
+| `治理/_project-evaluation.md` | 项目整体评估报告 |
 | `_quality-assessment.md` | 全库质量评估 |
 | `_content-gap-analysis.md` | 内容缺口分析 |
 | `_Content_Evaluation_2026.md` | 内容评估报告 |
@@ -141,7 +141,7 @@ ai-guru-database/
 | `_post-restructure-2026-06-19.md` | 目录重构后验证报告 |
 | `cheatsheets/` | 速查表子目录（cheatsheet-*.md 归位） |
 
-**命名规则**: `_` 前缀 + kebab-case，如 `_project-evaluation.md`
+**命名规则**: `_` 前缀 + kebab-case，如 `治理/_project-evaluation.md`
 **定期报告**: 附加日期后缀 `_xxx-YYYY-MM-DD.md`
 **子目录**: `cheatsheets/` 存放速查类文档（非治理报告）
 
@@ -239,5 +239,5 @@ git config core.hooksPath .githooks
 
 - [[README]] — 项目主页
 - [[ROADMAP]] — 年度规划
-- [[_project-evaluation]] — 项目整体评估
+- [[治理/_project-evaluation]] — 项目整体评估
 - [[_content-gap-analysis]] — 内容缺口分析

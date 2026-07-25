@@ -658,7 +658,7 @@ flowchart TB
 | GPT-3 深度解读 | 首次大规模应用 Scaling Laws | [GPT3_Deep_Dive.md](20_论文精读/03_Scaling/GPT3_Deep_Dive.md) |
 | Scaling Laws 与训练动力学 | 系统性综述所有 Scaling Laws 工作 | [../07_模型训练/Scaling_Laws_and_Training_Dynamics.md](07_模型训练/03_Optimization/Scaling_Laws_and_Training_Dynamics.md) |
 | LLaMA 深度解读 | Chinchilla Scaling Laws 的开源实践 | [LLaMA_Deep_Dive.md](20_论文精读/02_Architecture/LLaMA_Deep_Dive.md) |
-| DeepSeek-V3 深度解读 | 低成本验证 Scaling Laws 精神 | [DeepSeek_V3_Technical_Report.md](20_论文精读/DeepSeek_V3_Technical_Report.md) |
+| DeepSeek-V3 深度解读 | 低成本验证 Scaling Laws 精神 | [DeepSeek_V3_Technical_Report.md](20_论文精读/09_Frontier/DeepSeek_V3_Technical_Report.md) |
 
 ---
 

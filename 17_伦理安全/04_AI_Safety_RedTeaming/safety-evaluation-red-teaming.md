@@ -91,7 +91,7 @@ AI 安全有两个经典问题：
 
 ## Related
 
-- [[17_伦理安全/Safety_Evaluation_Framework]]
+- [[17_伦理安全/04_AI_Safety_RedTeaming/Safety_Evaluation_Framework]]
 - [[17_伦理安全/04_AI_Safety_RedTeaming/AI_Safety_RedTeaming]]
 - [[08_模型评估/Model_Evaluation]]
 - [[09_测试/02_Testing_Frameworks/DeepEval_Deep_Dive]]

@@ -158,7 +158,7 @@ Microsoft 是 company（概率 0.87），也是 brand（概率 0.75）。
 ### 1. Animals.ipynb —— 动物识别专家系统
 - **官方链接**：[Animals.ipynb](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/2-Symbolic/Animals.ipynb)
 - **内容**：用 OAV 三元组表示动物特征，分别实现**正向推理**与**反向推理**，根据用户输入逐步推断动物类别。
-- **运行方式**：下载 Notebook 后，在本地 Python 环境（如本库 [[01_数学基础/AI_Development_Environment_Setup]] 配置的环境）中运行即可；该示例无需 GPU。
+- **运行方式**：下载 Notebook 后，在本地 Python 环境（如本库 [[01_数学基础/08_Python_Toolkit/AI_Development_Environment_Setup]] 配置的环境）中运行即可；该示例无需 GPU。
 - **核心结构概述**：
   - 定义规则库（IF-THEN 规则）。
   - 工作记忆初始化为用户提供的事实。

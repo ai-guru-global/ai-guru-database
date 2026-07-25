@@ -18,7 +18,7 @@ sources: []
 
 > **一句话理解**: LLM 推理成本比传统 ML 高 100–1000 倍——成本管理不是优化项，是 LLMOps 的生死线，必须从架构层设计缓存、路由、预算三道防线。
 
-本文是 [[LLMOps_2026]] §5「成本与延迟 SLO」的深扩专题。传统 ML 基础设施成本（GPU 调度 / Spot）见 [[Cost_Optimization_MLOps]]，推理引擎层优化见 [[10_部署推理/LLM_Cost_Optimization]]。
+本文是 [[LLMOps_2026]] §5「成本与延迟 SLO」的深扩专题。传统 ML 基础设施成本（GPU 调度 / Spot）见 [[Cost_Optimization_MLOps]]，推理引擎层优化见 [[10_部署推理/09_Cost/LLM_Cost_Optimization]]。
 
 ---
 
@@ -341,7 +341,7 @@ graph LR
 - [[11_模型运维/08_Observability/LLM_Observability]] — 成本是可观测性的核心维度
 
 ### 跨章
-- [[10_部署推理/LLM_Cost_Optimization]] — 推理引擎层成本优化
+- [[10_部署推理/09_Cost/LLM_Cost_Optimization]] — 推理引擎层成本优化
 - [[10_部署推理/06_Caching/Prompt_Caching_Advanced]] — Prompt 缓存工程实现
 - [[10_部署推理/06_Caching/Prompt_Caching_and_KV_Cache_Optimization]] — KV Cache
 - [[12_架构基建/11_AI_Gateway/README]] — AI 网关（路由/限流/计费）

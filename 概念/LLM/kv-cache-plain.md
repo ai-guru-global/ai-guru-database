@@ -7,6 +7,8 @@ relationships:
     type: simplified_version_of
   - target: "概念/transformer-architecture"
     type: builds_on
+  - target: "概念/prefill-plain"
+    type: produced_by
 summary: 用生活化的类比解释 KV Cache：大模型逐字生成文本时，把已经算过的“关键信息”存进小仓库，避免每次重复计算，从而显著加速推理。
 lifecycle: reviewed
 tier: core

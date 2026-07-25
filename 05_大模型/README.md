@@ -71,7 +71,7 @@ flowchart LR
 | 大语言模型架构 (LLM Architectures) | 进阶 | GPT（Decoder-only）、BERT（Encoder-only）、MoE，预训练范式 | [LLM_Architectures.md](./05_LLM_Architectures/LLM_Architectures.md) |
 | **推理模型 2026 (Reasoning Models)** | **2026 新增** | **o1/o3 推理模型、思维链进化、Test-Time Compute Scaling** | **[Reasoning_Models_2026.md](./05_LLM_Architectures/Reasoning_Models_2026.md)** |
 | **长上下文模型 2026 (Long Context)** | **2026 新增** | **100K-1M Token处理、稀疏注意力、KV Cache优化** | **[Long_Context_Models_2026.md](./05_LLM_Architectures/Long_Context_Models_2026.md)** |
-| **架构演进大白话 (Architecture Evolution for Dummy)** | **2026 新增** | **KV 压缩、Mamba、RetNet 大白话解释** | **[Architecture_Evolution_for_dummy.md](./Architecture_Evolution_for_dummy.md)** |
+| **架构演进大白话 (Architecture Evolution for Dummy)** | **2026 新增** | **KV 压缩、Mamba、RetNet 大白话解释** | **[Architecture_Evolution_for_dummy.md](./05_LLM_Architectures/Architecture_Evolution_for_dummy.md)** |
 | **多模态模型 (Multimodal)** | 进阶 | **视觉-语言统一架构、GPT-4V/Gemini/LLaVA** | **[Multimodal_Architectures_2026.md](./10_Multimodal_Models/Multimodal_Architectures_2026.md)** |
 | 微调技术 (Fine-tuning Techniques) | 实战 | LoRA、QLoRA、Prefix Tuning，参数高效微调方法 | [Fine_tuning_Techniques.md](./07_Fine_tuning_Techniques/Fine_tuning_Techniques.md) |
 | 提示词工程 (Prompt Engineering) | 实战 | Few-shot、Chain-of-Thought、提示优化，零代码调用 LLM | [Prompt_Engineering/](./08_Prompt_Engineering/) |
@@ -81,7 +81,7 @@ flowchart LR
 | **语音与音频 AI** | **2026 新增** | **Whisper ASR、CosyVoice TTS、GPT-4o 实时对话、音乐生成** | **[Speech_Audio_AI/](./11_Speech_Audio_AI/)** |
 | **LLM 数据工程** | **2026 新增** | **预训练数据清洗、SFT 数据构建、合成数据飞轮、数据配比** | **[LLM_Data_Engineering/](./06_LLM_Data_Engineering/)** |
 | **小模型与端侧 LLM** | **2026 新增** | **Phi-3/Gemma/Qwen 小模型、GPTQ/AWQ 量化、llama.cpp/MLC-LLM 端侧部署** | **[Edge_LLM/](./12_Edge_LLM/)** |
-| **LLM 生产部署 Runbook** | **生产必备** | **vLLM/TGI/SGLang 推理引擎、KV Cache、量化、多模型路由、安全监控** | **[LLM_Production_Deployment_Runbook.md](./LLM_Production_Deployment_Runbook.md)** |
+| **LLM 生产部署 Runbook** | **生产必备** | **vLLM/TGI/SGLang 推理引擎、KV Cache、量化、多模型路由、安全监控** | **[LLM_Production_Deployment_Runbook.md](../10_部署推理/01_Deployment_Fundamentals/LLM_Production_Deployment_Runbook.md)** |
 
 ## 前置知识 (Prerequisites)
 
@@ -187,21 +187,21 @@ flowchart LR
 - [[概念/kv-cache-compression|KV Cache 压缩]]
 - [[概念/mamba|Mamba]]
 - [[概念/retnet|RetNet]]
-- [[05_大模型/Architecture_Evolution_for_dummy|架构演进大白话]]
+- [[05_大模型/05_LLM_Architectures/Architecture_Evolution_for_dummy|架构演进大白话]]
 
 - [[概念/sequence-models|Sequence Models]]
 
 ## 新增页面
 
-- [[05_大模型/Structured_Output_Guide|结构化输出指南]]
+- [[05_大模型/16_Constrained_Generation/Structured_Output_Guide|结构化输出指南]]
 
 ## 域统计
 
 | 指标 | 数值 |
 |------|------|
-| 子目录数 | 22 |
+| 子目录数 | 16 |
 | 内容文件数 | 126 |
 | 全部达 200+ 行 | ✅ |
-| 最后更新 | 2026-07-21 |
+| 最后更新 | 2026-07-25 |
 
 > 💡 大模型域是知识库中最大的域之一，覆盖从 Transformer 基础到 LLM 应用的全栈知识。

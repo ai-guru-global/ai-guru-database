@@ -2,7 +2,7 @@
 title: Agent Foundations
 type: index
 created: 2026-07-02
-updated: 2026-07-11
+updated: 2026-07-25
 sources: []
 ---
 
@@ -29,6 +29,7 @@ sources: []
 | [[15_智能体/01_Agent_Foundations/Agent_Protocols_Detail|Agent Protocols Detail]] | Agent Protocols Detail | 开发者/学习者 |
 | [[15_智能体/01_Agent_Foundations/Agent_Safety_Evaluation_for_dummy|Agent Safety Evaluation for dummy]] | Agent Safety Evaluation for dummy | 开发者/学习者 |
 | [[15_智能体/01_Agent_Foundations/Agent_State_Management|Agent State Management]] | Agent State Management | 开发者/学习者 |
+| [[15_智能体/01_Agent_Foundations/Agentic_Design_Patterns_AndrewNg|吴恩达：Agentic Design Patterns 深度解析 (含 Prompt 与代码实现)]] | 吴恩达提出了推动 AI Agent 走向生产的四大核心模式：Reflection、Tool Use、Planning 和 Multi-agent。本文深入... | - | - |
 
 ## Related
 

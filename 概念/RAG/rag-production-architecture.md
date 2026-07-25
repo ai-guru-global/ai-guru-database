@@ -56,13 +56,13 @@ sources: []
 ## 推荐阅读
 
 - [[14_RAG系统/RAG_Production_Architecture_Deep_Dive|RAG 生产架构深度解析]] — 生产架构完整设计、组件拓扑与上线 Checklist
-- [[12_架构基建/AI_SRE_Runbook|AI SRE Runbook]] — 生产系统故障响应、SLO 治理与灾备演练
+- [[13_运维/02_SRE_Reliability/AI_SRE_Runbook|AI SRE Runbook]] — 生产系统故障响应、SLO 治理与灾备演练
 - [[11_模型运维/LLM_Guardrails_and_Safety_Ops_2026|LLM Guardrails 与安全运维 2026]] — 输入/输出护栏、敏感信息识别与模型安全
-- [[05_大模型/LLM_Production_Deployment_Runbook|LLM 生产部署 Runbook]] — LLM 推理服务、vLLM/SGLang 部署与容量规划
+- [[10_部署推理/01_Deployment_Fundamentals/LLM_Production_Deployment_Runbook|LLM 生产部署 Runbook]] — LLM 推理服务、vLLM/SGLang 部署与容量规划
 - [[08_模型评估/RAG_Evaluation_Deep_Dive|RAG 评估深度解析]] — RAG 离线/在线评估指标与迭代飞轮
-- [[09_测试/RAGAS_Deep_Dive|RAGAS 深度解析]] — RAG 评估框架与核心指标实践
+- [[09_测试/02_Testing_Frameworks/RAGAS_Deep_Dive|RAGAS 深度解析]] — RAG 评估框架与核心指标实践
 - [[15_智能体/Agent_Production_Deployment_Runbook|Agent 生产部署 Runbook]] — Agentic RAG 与 Agent 服务上线要点
-- [[18_行业应用/AI_Production_Architecture_2026|AI 生产架构 2026]] — AI 应用整体生产架构与平台选型视角
+- [[18_行业应用/01_Industry_Overview/AI_Production_Architecture_2026|AI 生产架构 2026]] — AI 应用整体生产架构与平台选型视角
 - [[14_RAG系统/RAG_Systems|RAG 系统]] — RAG 基础概念、Pipeline 与框架选型
 - [[概念/rag-systems|RAG 检索增强生成]] — RAG 核心概念总览
 - [[概念/rag-patterns|RAG 模式分类]] — Naive / Modular / Agentic / Graph RAG 选型

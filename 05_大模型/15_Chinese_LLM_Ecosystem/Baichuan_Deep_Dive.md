@@ -704,7 +704,7 @@ print(response)
 - [[05_大模型/15_Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive]] — DeepSeek 深度解析
 - [[05_大模型/15_Chinese_LLM_Ecosystem/GLM_Zhipu_Deep_Dive]] — 智谱 GLM 深度解析
 - [[05_大模型/15_Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]] — 国产模型对比矩阵
-- [[14_RAG系统/GenAI_L15_RAG_and_Vector_Databases]] — RAG 与向量数据库
+- [[14_RAG系统/01_RAG_Fundamentals/GenAI_L15_RAG_and_Vector_Databases]] — RAG 与向量数据库
 - [[05_大模型/07_Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs]] — LLM 微调技术
 - [[90_学习/courses/microsoft/microsoft_genai_for_beginners]] — 生成式 AI 入门课程
 

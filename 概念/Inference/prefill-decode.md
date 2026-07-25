@@ -15,6 +15,8 @@ relationships:
     type: optimized_by
   - target: "10_部署推理/04_Inference_Performance/Inference_Terms_for_dummy"
     type: simplified_by
+  - target: "概念/prefill-plain"
+    type: simplified_by
 sources:
   - 12_架构基建/AI_Stack_Deep_Dive.md
   - 10_部署推理/04_Inference_Performance/Prefill_Decode_Disaggregation.md

@@ -2,7 +2,7 @@
 title: DL Frameworks
 type: index
 created: 2026-07-02
-updated: 2026-07-11
+updated: 2026-07-25
 sources: []
 ---
 
@@ -18,6 +18,8 @@ sources: []
 | [[03_深度学习/08_DL_Frameworks/pytorch_overview|PyTorch]] | PyTorch 深度学习框架 |
 | [[03_深度学习/08_DL_Frameworks/tensorflow_overview|TensorFlow]] | TensorFlow 框架 |
 | [[03_深度学习/08_DL_Frameworks/keras_overview|Keras]] | Keras 高级 API |
+| [[03_深度学习/08_DL_Frameworks/ApacheCN_PyTorch_Track|ApacheCN PyTorch 学习路径]] | ApacheCN 中文 PyTorch 学习路线索引，覆盖张量、自动微分、CNN、RNN、GAN 与部署实践。 | - |
+| [[03_深度学习/08_DL_Frameworks/ApacheCN_TensorFlow_Track|ApacheCN TensorFlow 2.x 学习路径]] | ApacheCN 中文 TensorFlow 2.x 学习路线索引，覆盖 Keras 高层 API、自定义训练、SavedModel 与生产部署。 | - |
 
 ## Related
 

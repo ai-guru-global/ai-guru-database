@@ -48,7 +48,7 @@ sources: []
 | 无监督学习 | 聚类、降维、异常检测 | [[Unsupervised_Learning]] |
 | 特征工程 | 特征选择、构造、编码 | [[Feature_Engineering]] |
 | 模型评估 | 交叉验证、指标选择 | [[Evaluation_Metrics]] |
-| 实战项目 | Kaggle 竞赛 | [[kaggle_overview]] |
+| 实战项目 | Kaggle 竞赛 | [[Kaggle_Overview]] |
 
 ### 阶段三：深度学习与专项（3-4个月）
 

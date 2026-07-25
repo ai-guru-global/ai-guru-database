@@ -20,8 +20,8 @@ tags: [auto-index]
 ## Related
 
 - [[21_面试岗位/MLOps_Engineer/index|MLOps Engineer]]
-- [[13_运维/Observability_index|Observability]]
-- [[13_运维/Capacity_Planning_index|Capacity Planning]]
+- [[13_运维/06_Observability/Observability_index|Observability]]
+- [[13_运维/02_SRE_Reliability/Capacity_Planning_index|Capacity Planning]]
 
 ## 岗位核心能力模型
 

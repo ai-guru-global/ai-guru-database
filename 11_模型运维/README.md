@@ -51,7 +51,7 @@ graph LR
 
 > **本章是「ML 建设」（概念 + 工具实现，Build-time），16 是「AI 运维」（线上运营 + 应急，Run-time）。**
 > 2026-06-15 起，16 个工具深度解析已从 16 迁入本章。16 仅保留 Incident Response / SRE / Chaos Engineering。
-> 完整边界声明与归属矩阵见 [[11_模型运维/Boundary_with_16.md]]。
+> 完整边界声明与归属矩阵见 [[11_模型运维/01_MLOps_Fundamentals/Boundary_with_16.md]]。
 
 | 想了解 | 去哪 |
 |--------|------|
@@ -69,7 +69,7 @@ graph LR
 |------|------|----------|
 | ⭐ **[LLMOps 2026](11_模型运维/10_LLMOps/LLMOps_2026.md)** | **LLM 时代主线**：传统 MLOps 失效的 7 大原因、Prompt/模型/RAG 三层架构、成本与延迟 SLO、可观测性、成熟度模型、3 个事故复盘 | 所有人必读 |
 | [Prompt 工程化运维](11_模型运维/11_Prompt_Ops/Prompt_Engineering_Ops.md) | Prompt 版本化、A/B 测试、回归门禁、Prompt Registry（Promptflow/LangSmith/Promptfoo） | LLM 应用工程师 |
-| [LLM 评估流水线](11_模型运维/LLM_Evaluation_Pipeline.md) | LLM-as-Judge、人审工作流、Eval 数据集版本化、CI 门禁、Ragas/DeepEval 实战 | LLM 应用工程师 |
+| [LLM 评估流水线](11_模型运维/13_Evaluation/LLM_Evaluation_Pipeline.md) | LLM-as-Judge、人审工作流、Eval 数据集版本化、CI 门禁、Ragas/DeepEval 实战 | LLM 应用工程师 |
 | [RAG 流水线运维](11_模型运维/05_Orchestration/RAG_Pipeline_Ops.md) | 切块版本化、Embedding 升级策略、索引重建、检索质量监控（侧重 Ops） | RAG 系统工程师 |
 | [LLM 成本与延迟 SLO](11_模型运维/09_Cost/LLM_Cost_Latency_SLO.md) | 三层缓存、智能路由、级联、Token 预算熔断、FinOps | LLM 平台工程师 |
 | [LLM 可观测性](11_模型运维/08_Observability/LLM_Observability.md) | 五层监控、Trace 分布式追踪、幻觉/毒性/PII 在线检测、Runbook | SRE / LLM 平台 |
@@ -116,7 +116,7 @@ graph LR
 | 文档 | 内容 | 适用读者 |
 |------|------|----------|
 | [数据版本控制](11_模型运维/05_Orchestration/Data_Versioning_DVC_LakeFS.md) | DVC/LakeFS/Delta Lake 对比，可复现性的基石 | 数据工程师 |
-| [AI 文档自动化](11_模型运维/Documentation_Automation.md) | Sphinx/MkDocs/Docusaurus/Vale 文档自动化工具链 | 技术写作者 / 工程师 |
+| [AI 文档自动化](11_模型运维/01_MLOps_Fundamentals/Documentation_Automation.md) | Sphinx/MkDocs/Docusaurus/Vale 文档自动化工具链 | 技术写作者 / 工程师 |
 | [Prompt 管理平台](11_模型运维/11_Prompt_Ops/Prompt_Management_Platform.md) | LangSmith/PromptLayer/Helicone/Langfuse 深度对比 | LLM 应用工程师 |
 | [自动化再训练](11_模型运维/07_Model_Serving/Automated_Retraining.md) | 触发机制、数据回流、增量 vs 全量、自动门禁、灾难性遗忘 | ML 平台 |
 | [ML 系统可观测与 SLO](11_模型运维/08_Observability/ML_Observability_SLO.md) | 三大支柱、SLI/SLO/SLA、错误预算、USE 方法、告警设计 | SRE |
@@ -153,10 +153,10 @@ graph LR
 
 | 文档 | 对应概念页 |
 |------|-----------|
-| [LangSmith Deep Dive](11_模型运维/08_Observability/LangSmith_Deep_Dive.md) | [[11_模型运维/LLM_Evaluation_Pipeline.md]] / [[11_模型运维/08_Observability/LLM_Observability.md]] |
+| [LangSmith Deep Dive](11_模型运维/08_Observability/LangSmith_Deep_Dive.md) | [[11_模型运维/13_Evaluation/LLM_Evaluation_Pipeline.md]] / [[11_模型运维/08_Observability/LLM_Observability.md]] |
 | [Helicone Deep Dive](11_模型运维/08_Observability/Helicone_Deep_Dive.md) | [[11_模型运维/08_Observability/LLM_Observability.md]] |
 | [Phoenix Deep Dive](11_模型运维/08_Observability/Phoenix_Deep_Dive.md) | [[11_模型运维/08_Observability/LLM_Observability.md]] |
-| [Braintrust Deep Dive](11_模型运维/08_Observability/Braintrust_Deep_Dive.md) | [[11_模型运维/LLM_Evaluation_Pipeline.md]] |
+| [Braintrust Deep Dive](11_模型运维/08_Observability/Braintrust_Deep_Dive.md) | [[11_模型运维/13_Evaluation/LLM_Evaluation_Pipeline.md]] |
 
 #### 可观测性与 CI/CD（综合）
 
@@ -187,8 +187,8 @@ graph LR
 
 ### LLM 应用开发者路径（2026 主流）
 - **主线** → [LLMOps 2026](11_模型运维/10_LLMOps/LLMOps_2026.md)（1 小时，必读）
-- **深扩** → [Prompt Ops](11_模型运维/11_Prompt_Ops/Prompt_Engineering_Ops.md) → [LLM Eval](11_模型运维/LLM_Evaluation_Pipeline.md) → [RAG Ops](11_模型运维/05_Orchestration/RAG_Pipeline_Ops.md)
-- **成本** → 跨章参考 [[10_部署推理/LLM_Cost_Optimization.md]]
+- **深扩** → [Prompt Ops](11_模型运维/11_Prompt_Ops/Prompt_Engineering_Ops.md) → [LLM Eval](11_模型运维/13_Evaluation/LLM_Evaluation_Pipeline.md) → [RAG Ops](11_模型运维/05_Orchestration/RAG_Pipeline_Ops.md)
+- **成本** → 跨章参考 [[10_部署推理/09_Cost/LLM_Cost_Optimization.md]]
 
 ### 传统 ML 工程师路径
 - **快速入门** → [MLOps-in-nutshell](11_模型运维/01_MLOps_Fundamentals/MLOps-in-nutshell.md)（30 分钟）
@@ -251,11 +251,11 @@ flowchart TB
 *本章内容持续完善中。*
 
 ## Related
-- [[11_模型运维/Boundary_with_16.md|📍 10 与 16 边界声明]] 📐 治理
-- [[11_模型运维/Boundary_with_16|10 vs 16 边界声明]] ✅ 已完成
+- [[11_模型运维/01_MLOps_Fundamentals/Boundary_with_16.md|📍 10 与 16 边界声明]] 📐 治理
+- [[11_模型运维/01_MLOps_Fundamentals/Boundary_with_16|10 vs 16 边界声明]] ✅ 已完成
 - [[11_模型运维/10_LLMOps/LLMOps_2026.md|LLMOps 2026：大模型时代的 MLOps 升级]] ⭐ LLM 时代主线
 - [[11_模型运维/11_Prompt_Ops/Prompt_Engineering_Ops.md|Prompt 工程化运维]]
-- [[11_模型运维/LLM_Evaluation_Pipeline.md|LLM 评估流水线]]
+- [[11_模型运维/13_Evaluation/LLM_Evaluation_Pipeline.md|LLM 评估流水线]]
 - [[11_模型运维/05_Orchestration/RAG_Pipeline_Ops.md|RAG 流水线运维]]
 - [[11_模型运维/09_Cost/LLM_Cost_Latency_SLO.md|LLM 成本与延迟 SLO]]
 - [[11_模型运维/08_Observability/LLM_Observability.md|LLM 可观测性]]

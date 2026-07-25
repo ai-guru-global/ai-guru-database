@@ -43,7 +43,7 @@ sources: []
 **建议补充**:
 - `01_数学基础/Python_for_AI_Basics.md`
 - `01_数学基础/Python_Data_Science_Toolkit.md`
-- `01_数学基础/AI_Development_Environment_Setup.md`
+- `01_数学基础/08_Python_Toolkit/AI_Development_Environment_Setup.md`
 
 ### 🟡 P2: 第一个 AI 程序（Hello World 断点）
 
@@ -112,7 +112,7 @@ sources: []
 |----------|------|------|
 | `01_数学基础/Python_for_AI_Basics.md` | ⏳ 待创建 | |
 | `01_数学基础/Python_Data_Science_Toolkit.md` | ⏳ 待创建 | |
-| `01_数学基础/AI_Development_Environment_Setup.md` | ⏳ 待创建 | |
+| `01_数学基础/08_Python_Toolkit/AI_Development_Environment_Setup.md` | ⏳ 待创建 | |
 | `02_机器学习/02_Supervised_Learning/Your_First_ML_Model.md` | ⏳ 待创建 | |
 | `03_深度学习/02_Neural_Network_Core/Your_First_Neural_Network.md` | ⏳ 待创建 | |
 | `02_机器学习/05_Feature_Engineering/Data_Preprocessing_for_dummy.md` | ⏳ 待创建 | |

@@ -279,7 +279,7 @@ def route_inference(query, budget):
 ## 相关链接
 
 - [[05_大模型/09_Reasoning_Models/Test_Time_Compute_2026|测试时计算 2026]] — 深入解析
-- [[05_大模型/Test_Time_Compute_Scaling_2026|测试时计算扩展 2026]] — 扩展机制详解
+- [[05_大模型/09_Reasoning_Models/Test_Time_Compute_Scaling_2026|测试时计算扩展 2026]] — 扩展机制详解
 - [[05_大模型/09_Reasoning_Models/o1_Class_Reasoning_Models|o1 类推理模型]] — 利用测试时计算的模型
 - [[概念/LLM/reasoning-models|推理模型]] — 推理模型概念总览
 - [[概念/LLM/rlvr|RLVR]] — 配合测试时计算的对齐方法

@@ -2,7 +2,7 @@
 title: Testing Fundamentals
 type: index
 created: 2026-07-02
-updated: 2026-07-11
+updated: 2026-07-25
 sources: []
 tags: [auto-index]
 ---
@@ -18,11 +18,14 @@ tags: [auto-index]
 | [[09_测试/01_Testing_Fundamentals/AI_Testing_for_dummy|AI Testing for dummy]] | AI testing beginner guide: from unit testing to evaluation benchmarks | beginners / QA engineers |
 | [[09_测试/01_Testing_Fundamentals/AI_Test_Framework_2026|AI Test Framework 2026]] | AI testing framework landscape 2026: toolchain and methodology overview | QA engineers / test architects |
 | [[09_测试/01_Testing_Fundamentals/AI-Testing-in-nutshell|AI-Testing-in-nutshell]] | AI testing in a nutshell: core concepts quick reference | all practitioners |
+| [[09_测试/01_Testing_Fundamentals/LLM_Unit_Testing|LLM 单元测试 (LLM Unit Testing)]] | LLM 应用单元测试完整指南：非确定性输出测试策略、断言设计、快照测试、Mock 策略、评估驱动测试与 2026 工具链。 | - | - |
+| [[09_测试/01_Testing_Fundamentals/Test_Data_Management|测试数据管理 (Test Data Management)]] | 测试数据管理是 AI 系统测试的"后勤保障"——系统化地创建、维护、版本化测试数据，确保测试可重复、结果可信、回归高效。 | - | - |
+| [[09_测试/01_Testing_Fundamentals/Test_Data_index|Test Data]] |  | - | - |
 
 ## Related
 
 - [[09_测试/index|测试首页]]
-- [[09_测试/Contract_Testing_index|Contract Testing]]
+- [[09_测试/01_Testing_Fundamentals/Contract_Testing_index|Contract Testing]]
 - [[08_模型评估/index|模型评估]]
 
 ## 核心概念

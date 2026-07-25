@@ -60,7 +60,7 @@ aliases:
 
 | 课号 | 课程名称 | 引入的 Harness 机制 | 本库相关概念/页面 |
 |------|----------|---------------------|-------------------|
-| s05 | TodoWrite | `todo_write` 计划工具 + nag reminder，先列清单再执行 | [[15_智能体/03_Agent_Workflow/Workflow-in-nutshell|工作流概述]], [[15_智能体/Agentic_Design_Patterns_AndrewNg|代理设计模式]] |
+| s05 | TodoWrite | `todo_write` 计划工具 + nag reminder，先列清单再执行 | [[15_智能体/03_Agent_Workflow/Workflow-in-nutshell|工作流概述]], [[15_智能体/01_Agent_Foundations/Agentic_Design_Patterns_AndrewNg|代理设计模式]] |
 | s06 | Subagent | 子 Agent：独立 `messages[]`、只回传结论、禁止递归 | [[15_智能体/15_Course_Notes/Learn_Claude_Code_L06_Subagent|L06 笔记]] |
 | s07 | Skill Loading | 技能两级加载：SYSTEM 放目录，`load_skill` 按需注入完整内容 | [[15_智能体/Learn_Claude_Code_L07_Skill_Loading|L07 笔记]], [[15_智能体/05_Agent_Skills/Skills-in-nutshell|Agent Skills 速览]] |
 | s08 | Context Compact | 四层压缩管线：snip / micro / budget / LLM 摘要 + reactive 应急 | [[15_智能体/15_Course_Notes/Learn_Claude_Code_L08_Context_Compact|L08 笔记]] |
@@ -86,8 +86,8 @@ aliases:
 | 课号 | 课程名称 | 引入的 Harness 机制 | 本库相关概念/页面 |
 |------|----------|---------------------|-------------------|
 | s15 | Agent Teams | `MessageBus` 文件收件箱；Lead + 持久队友线程并行工作 | [[15_智能体/15_Course_Notes/Learn_Claude_Code_L15_Agent_Teams|L15 笔记]], [[15_智能体/02_Agent_Frameworks/AutoGen_CrewAI_LangGraph_Dive|多 Agent 框架对比]] |
-| s16 | Team Protocols | 结构化请求-响应协议：`request_id` 关联、`shutdown` / `plan_approval` 握手 | [[15_智能体/A2A_Protocol_Deep_Dive|A2A 协议]] |
-| s17 | Autonomous Agents | 队友自组织：`idle_poll` 轮询收件箱 + 任务板自动认领 | [[15_智能体/15_Course_Notes/Learn_Claude_Code_L17_Autonomous_Agents|L17 笔记]], [[15_智能体/Agentic_Design_Patterns_AndrewNg|代理设计模式]] |
+| s16 | Team Protocols | 结构化请求-响应协议：`request_id` 关联、`shutdown` / `plan_approval` 握手 | [[15_智能体/16_Agent_Protocols/A2A_Protocol_Deep_Dive|A2A 协议]] |
+| s17 | Autonomous Agents | 队友自组织：`idle_poll` 轮询收件箱 + 任务板自动认领 | [[15_智能体/15_Course_Notes/Learn_Claude_Code_L17_Autonomous_Agents|L17 笔记]], [[15_智能体/01_Agent_Foundations/Agentic_Design_Patterns_AndrewNg|代理设计模式]] |
 | s18 | Worktree Isolation | 任务绑定 git worktree，队友在独立目录并行执行 | [[15_智能体/08_Agentic_Coding_Tools/Claude_Code_Deep_Dive|Claude Code 深度解析]] |
 
 ### 第六阶段：外部能力与综合（s19-s20）

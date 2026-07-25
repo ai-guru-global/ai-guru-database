@@ -66,7 +66,7 @@ sources: []
 
 | 模块 | 课号 | 本地课程页 | 本库建议配合阅读 | 官方 Notebook / 实验 |
 |------|------|------------|------------------|----------------------|
-| **环境设置** | 00 | [[90_学习/courses/microsoft/L00_Course_Setup|课程环境设置]] | [[01_数学基础/AI_Development_Environment_Setup]] | [GitHub](https://github.com/microsoft/AI-For-Beginners/tree/main/lessons/0-course-setup) |
+| **环境设置** | 00 | [[90_学习/courses/microsoft/L00_Course_Setup|课程环境设置]] | [[01_数学基础/08_Python_Toolkit/AI_Development_Environment_Setup]] | [GitHub](https://github.com/microsoft/AI-For-Beginners/tree/main/lessons/0-course-setup) |
 | **I. 人工智能简介** | 01 | [[90_学习/courses/microsoft/L01_Introduction_and_History_of_AI|人工智能介绍与历史]] | [[00_入门/AI_Fundamentals]]、[[00_入门/AI_History_Timeline]] | [GitHub](https://github.com/microsoft/AI-For-Beginners/tree/main/lessons/1-Intro) |
 | **II. 符号 AI** | 02 | [[90_学习/courses/microsoft/L02_Knowledge_Representation_and_Expert_Systems|知识表示与专家系统]] | [[00_入门/AI_Fundamentals]]、[[05_大模型/09_Reasoning_Models/Neuro_Symbolic_and_Formal_Verification_2026]]（符号推理的现代延续） | [GitHub](https://github.com/microsoft/AI-For-Beginners/tree/main/lessons/2-Symbolic) |
 | **III. 神经网络简介** | 03 | [[90_学习/courses/microsoft/L03_Perceptron|感知器]] | [[03_深度学习/02_Neural_Network_Core/Neural_Network_Core]]、[[03_深度学习/02_Neural_Network_Core/Your_First_Neural_Network]] | [GitHub](https://github.com/microsoft/AI-For-Beginners/tree/main/lessons/3-NeuralNetworks/03-Perceptron) |

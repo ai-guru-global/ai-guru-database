@@ -912,7 +912,7 @@ RAG成本优化检查清单 (按优先级):
 - [[14_RAG系统/02_Embeddings/Matryoshka_Representation_Learning_Deep_Dive|Matryoshka表示学习]] — 降维节约
 - [[14_RAG系统/03_Vector_Databases/Qdrant_Deep_Dive|Qdrant深度解析]] — 向量数据库成本
 - [[14_RAG系统/05_RAG_Production/RAG_Production_Architecture_Deep_Dive|RAG生产架构]] — 生产部署
-- [[14_RAG系统/RAG_Monitoring_and_Observability|RAG监控与可观测性]] — 成本监控
+- [[14_RAG系统/05_RAG_Production/RAG_Monitoring_and_Observability|RAG监控与可观测性]] — 成本监控
 - [[14_RAG系统/04_Advanced_RAG/Agentic_RAG_Guide|Agentic RAG指南]] — 自适应检索
 
 ---

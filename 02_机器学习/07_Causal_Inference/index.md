@@ -20,7 +20,7 @@ tags: [auto-index]
 
 ## Related
 
-- [[09_测试/AB_Testing_index|AB Testing]]
+- [[09_测试/04_Online_Testing/AB_Testing_index|AB Testing]]
 - [[01_数学基础/03_Probability_Statistics/index|Probability & Statistics]]
 
 ## 进阶知识拓展

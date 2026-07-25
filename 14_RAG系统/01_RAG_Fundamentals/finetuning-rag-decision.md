@@ -99,7 +99,7 @@ RAG 的失败是**可诊断的**：检索不到 → 扩大搜索范围；检索�
 ## Related
 
 - [[05_大模型/07_Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs]]
-- [[14_RAG系统/GenAI_L15_RAG_and_Vector_Databases]]
+- [[14_RAG系统/01_RAG_Fundamentals/GenAI_L15_RAG_and_Vector_Databases]]
 - [[05_大模型/07_Fine_tuning_Techniques/Fine_tuning_Techniques]]
 - [[14_RAG系统/04_Advanced_RAG/RAG_Advanced_2026]]
 - [[治理/multimodal-rag]]

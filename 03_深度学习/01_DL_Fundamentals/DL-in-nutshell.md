@@ -439,4 +439,4 @@ flowchart TB
 - [[03_深度学习/README]] — 03 深度学习基础 (Deep Learning Foundations) (共享: backpropagation, deep-learning, dl, neural-networks)
 - [[03_深度学习/07_World_Models/JEPA_Architecture_2026]] — JEPA 架构深度解析：LeCun 的世界模型之路 (共享: backpropagation, deep-learning, dl, neural-networks)
 - [[03_深度学习/07_World_Models/README]] — 世界模型 (World Models) (共享: backpropagation, deep-learning, dl, neural-networks)
-- [[03_深度学习/State_Space_Models_2026.md|State_Space_Models_2026]]
+- [[03_深度学习/02_Neural_Network_Core/State_Space_Models_2026.md|State_Space_Models_2026]]

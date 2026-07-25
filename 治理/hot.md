@@ -19,7 +19,7 @@ sources: []
 - [[概念/gradient-descent|梯度下降]] — 最小化模型误差的参数优化算法
 
 ### 主章节大白话专题页
-- [[05_大模型/Architecture_Evolution_for_dummy|LLM 架构演进大白话]] — KV 压缩、Mamba、RetNet
+- [[05_大模型/05_LLM_Architectures/Architecture_Evolution_for_dummy|LLM 架构演进大白话]] — KV 压缩、Mamba、RetNet
 - [[07_模型训练/Data_and_FineTuning_for_dummy|数据与微调大白话]] — 数据清洗 Pipeline、DoRA、RS-LoRA
 - [[10_部署推理/Inference_Optimization_for_dummy|推理优化大白话]] — SGLang、动态批调度、GGUF、SmoothQuant、TensorRT-LLM
 - [[14_RAG系统/Agentic_RAG_Applications_for_dummy|Agentic RAG 应用大白话]] — Agentic RAG、Text2SQL、代码生成工作流
@@ -156,9 +156,9 @@ sources: []
 
 ### LLM 原理与架构
 - [[05_大模型/Transformer_Deep_Dive]] — Transformer 深度解析
-- [[05_大模型/LLM_Training_Deep_Dive]] — LLM 训练深度解析
-- [[05_大模型/LLM_Inference_Deep_Dive]] — LLM 推理深度解析
-- [[05_大模型/LLM_Architecture_Evolution]] — LLM 架构演进
+- [[07_模型训练/01_Training_Fundamentals/LLM_Training_Deep_Dive]] — LLM 训练深度解析
+- [[10_部署推理/03_Inference_Optimization/LLM_Inference_Deep_Dive]] — LLM 推理深度解析
+- [[05_大模型/05_LLM_Architectures/LLM_Architecture_Evolution]] — LLM 架构演进
 
 ### AI 入门与新架构
 - [[00_入门/AI_Reasoning_Models_Guide]] — 推理模型指南

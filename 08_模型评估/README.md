@@ -27,12 +27,12 @@ sources: []
 | [LLM-as-Judge 深度解析](./04_Evaluation_Tools/LLM_as_Judge_Deep_Dive.md) | 单点评分、成对比较、Rubric 评估、偏差缓解 | 进阶 |
 | [Multimodal Evaluation Benchmarks](./02_Benchmarks/Multimodal_Evaluation_Benchmarks.md) | MMMU/MathVista/DocVQA/POPE 等视觉评测 | 进阶 |
 | [Long Context Evaluation](./02_Benchmarks/Long_Context_Evaluation.md) | 128K+ 长上下文模型评估方法 | 进阶 |
-| [**Unified Benchmark Comparison**](./Unified_Benchmark_Comparison.md) | 跨领域 AI 基准对比: LLM/CV/Speech/Multimodal/Agent SOTA | 进阶 |
+| [**Unified Benchmark Comparison**](./02_Benchmarks/Unified_Benchmark_Comparison.md) | 跨领域 AI 基准对比: LLM/CV/Speech/Multimodal/Agent SOTA | 进阶 |
 | [**LLM Benchmark Suite 2026**](./02_Benchmarks/LLM_Benchmark_Suite_2026.md) | MMLU/GSM8K/HumanEval/SWE-bench/AIME/GPQA 全基准解读 | 进阶 |
 | [**Agentic Benchmark Guide**](./02_Benchmarks/Agentic_Benchmark_Guide.md) | τ-bench/BFCL/SWE-bench/BrowseComp Agent 评测全景 | 进阶 |
 | [LM Evaluation Harness Deep Dive](./04_Evaluation_Tools/LM_Evaluation_Harness_Deep_Dive.md) | EleutherAI 学术基准评测框架：MMLU/GSM8K/HumanEval 等 | 进阶 |
 | [OpenCompass Deep Dive](./04_Evaluation_Tools/OpenCompass_Deep_Dive.md) | 上海 AI Lab 一站式评测平台：中文/多模态/CompassRank | 进阶 |
-| [Fairness Evaluation](./Fairness_Evaluation_for_dummy.md) | 公平性评估入门 | 初学者 |
+| [Fairness Evaluation](./06_Safety_Evaluation/Fairness_Evaluation_for_dummy.md) | 公平性评估入门 | 初学者 |
 | [LLM 评估与测试大白话](./02_Benchmarks/LLM_Benchmarks_for_dummy.md) | BBH、Arena、红队测试、CI 集成评估、A/B 测试框架大白话 | 初学者 |
 | [**LLM 评估方法论 2026**](08_模型评估/03_LLM_Evaluation/LLM_Evaluation_2026.md) | 自动化基准、人工评估、LLM-as-Judge、评估流水线 | 所有从业者 |
 | [**RAG 评估深度解析**](08_模型评估/03_LLM_Evaluation/RAG_Evaluation_Deep_Dive.md) | 检索/生成评估、RAGAS/Ares/TruLens、LLM-as-Judge 偏见控制、A/B 测试 | RAG 开发者 |
@@ -82,7 +82,7 @@ sources: []
 - [[08_模型评估/04_Evaluation_Tools/LLM_as_Judge_Deep_Dive|LLM-as-Judge 深度解析 (LLM-as-Judge Deep Dive)]]
 - [[08_模型评估/Evaluation-in-nutshell|模型评估速成指南]]
 - [[08_模型评估/04_Evaluation_Tools/Online_Evaluation|在线评估 (Online Evaluation)]]
-- [[08_模型评估/Fairness_Evaluation_for_dummy|公平性评估 - 小白版]]
+- [[08_模型评估/06_Safety_Evaluation/Fairness_Evaluation_for_dummy|公平性评估 - 小白版]]
 - [[08_模型评估/Evaluation_Automation_2026|自动化模型评估 2026 (Evaluation Automation)]]
 - [[08_模型评估/README_for_dummy|08 模型评估 — 小白版 📝]]
 - [[08_模型评估/02_Benchmarks/LLM_Benchmarks_for_dummy|LLM 评估与测试大白话]]
@@ -94,7 +94,7 @@ sources: []
 
 - [[08_模型评估/Model_Evaluation]] — 模型评估 (Model Evaluation) (共享: ab-testing, benchmark, metrics, model-evaluation)
 - [[08_模型评估/04_Evaluation_Tools/Online_Evaluation.md|Online_Evaluation]]
-- [[08_模型评估/Fairness_Evaluation_for_dummy.md|Fairness_Evaluation_for_dummy]]
+- [[08_模型评估/06_Safety_Evaluation/Fairness_Evaluation_for_dummy.md|Fairness_Evaluation_for_dummy]]
 - [[08_模型评估/05_Automation/Evaluation_Automation_2026.md|Evaluation_Automation_2026]]
 - [[08_模型评估/README_for_dummy.md|README_for_dummy]]
 - [[08_模型评估/02_Benchmarks/Multimodal_Evaluation_Benchmarks|Multimodal_Evaluation_Benchmarks]]
@@ -108,7 +108,7 @@ sources: []
 ## 新增页面
 
 - [[08_模型评估/04_Evaluation_Tools/LLM_as_Judge_Guide|LLM-as-Judge 评估指南]]
-- [[08_模型评估/Unified_Benchmark_Comparison|统一 Benchmark 对比表]]
+- [[08_模型评估/02_Benchmarks/Unified_Benchmark_Comparison|统一 Benchmark 对比表]]
 
 ## 进阶知识拓展
 

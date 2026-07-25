@@ -441,7 +441,7 @@ except openai.BadRequestError as err:
 
 - [[90_学习/courses/microsoft/microsoft_genai_for_beginners]]
 - [[05_大模型/10_Multimodal_Models/Multimodal_Models_for_dummy]]
-- [[18_行业应用/GenAI_L10_Building_Low_Code_AI_Applications]]
+- [[16_编程/05_Tools/GenAI_L10_Building_Low_Code_AI_Applications]]
 - [[14_RAG系统/04_Advanced_RAG/Multimodal_RAG_Architecture_2026]]
 - [[15_智能体/GenAI_L06_Text_Generation_Apps]]
 
@@ -449,4 +449,4 @@ except openai.BadRequestError as err:
 
 | 上一课 | 下一课 |
 |--------|--------|
-| [[14_RAG系统/GenAI_L08_Building_Search_Applications|L08 构建搜索应用程序]] | [[18_行业应用/GenAI_L10_Building_Low_Code_AI_Applications|L10 构建低代码AI应用]] |
+| [[14_RAG系统/01_RAG_Fundamentals/GenAI_L08_Building_Search_Applications|L08 构建搜索应用程序]] | [[16_编程/05_Tools/GenAI_L10_Building_Low_Code_AI_Applications|L10 构建低代码AI应用]] |

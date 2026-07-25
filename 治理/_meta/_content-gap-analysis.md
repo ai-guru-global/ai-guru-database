@@ -94,7 +94,7 @@ sources: []
 - 何时选择替代架构？长序列、低延迟、内存受限场景
 
 **建议新建页面**:
-- ✅ `03_深度学习/State_Space_Models_2026.md` — 已扩充 RWKV/RetNet
+- ✅ `03_深度学习/02_Neural_Network_Core/State_Space_Models_2026.md` — 已扩充 RWKV/RetNet
 - ✅ `05_大模型/05_LLM_Architectures/Transformer_Alternatives.md` — 已创建 (13.7 KB)
 
 ---

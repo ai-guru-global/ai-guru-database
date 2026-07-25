@@ -588,7 +588,7 @@ class SafetyEvalHarness:
         )
 ```
 
-> **延伸阅读**: [Safety Evaluation Framework](17_伦理安全/Safety_Evaluation_Framework.md)。
+> **延伸阅读**: [Safety Evaluation Framework](17_伦理安全/04_AI_Safety_RedTeaming/Safety_Evaluation_Framework.md)。
 
 ---
 
@@ -654,7 +654,7 @@ AI 伦理与安全 10 条底线:
 - [AI Safety & Red Teaming](17_伦理安全/04_AI_Safety_RedTeaming/AI_Safety_RedTeaming.md) — 红队方法论大全
 - [Mechanistic Interpretability](17_伦理安全/05_Mechanistic_Interpretability/Mechanistic_Interpretability.md) — 电路追踪与特征分解
 - [Privacy Preserving AI](17_伦理安全/10_Privacy_Preserving_AI/Privacy_Preserving_AI.md) — 差分隐私与联邦学习
-- [Safety Evaluation Framework](17_伦理安全/Safety_Evaluation_Framework.md) — 评测基准与 Pipeline
+- [Safety Evaluation Framework](17_伦理安全/04_AI_Safety_RedTeaming/Safety_Evaluation_Framework.md) — 评测基准与 Pipeline
 - [AI Governance & Compliance 2026](17_伦理安全/03_Governance/AI_Governance_Compliance_2026.md) — 全球法规详解
 - [AI Security 2026](17_伦理安全/07_AI_Security_2026/AI_Security_2026.md) — OWASP LLM Top 10 与 Agentic 安全
 - [AI Supply Chain Security](17_伦理安全/08_AI_Supply_Chain_Security/AI_Supply_Chain_Security.md) — 数据投毒与后门检测

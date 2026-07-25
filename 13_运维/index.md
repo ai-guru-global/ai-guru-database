@@ -20,10 +20,10 @@ AI 运维知识体系（Ops Knowledge Base）— 涵盖可观测性、事件响�
 
 ## Related
 
-- [[13_运维/Observability_index|Observability]]
+- [[13_运维/06_Observability/Observability_index|Observability]]
 - [[13_运维/03_Incident_Response/index|Incident Response]]
-- [[13_运维/Chaos_Engineering_index|Chaos Engineering]]
-- [[13_运维/Capacity_Planning_index|Capacity Planning]]
+- [[13_运维/02_SRE_Reliability/Chaos_Engineering_index|Chaos Engineering]]
+- [[13_运维/02_SRE_Reliability/Capacity_Planning_index|Capacity Planning]]
 - [[13_运维/05_Cost_Management/index|Cost Management]]
 - [[11_模型运维/index|模型运维]]
 

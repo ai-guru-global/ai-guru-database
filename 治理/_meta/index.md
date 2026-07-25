@@ -74,7 +74,7 @@ aliases:
 
 | 文件 | 用途 |
 |------|------|
-| [\_project-evaluation.md](./_project-evaluation.md) | **当前项目整体评估**——健康度、风险、优先改进项 |
+| [\治理/_project-evaluation.md](./_project-evaluation.md) | **当前项目整体评估**——健康度、风险、优先改进项 |
 | [\_evaluation-2026-06-15.md](./_evaluation-2026-06-15.md) | 项目评估历史快照（2026-06-15） |
 | [\_evaluation-2026-06-24.md](./_evaluation-2026-06-24.md) | 项目评估历史快照（2026-06-24） |
 | [\_project-assessment-2026-06-22.md](./_project-assessment-2026-06-22.md) | 项目评估历史快照（2026-06-22） |

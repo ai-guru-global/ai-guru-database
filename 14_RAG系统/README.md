@@ -105,7 +105,7 @@ RAG 的生成阶段对 TTFT（首个 token 时间）和前缀缓存命中率非�
 
 ---
 
-*详见 [RAG 高级实践导航](14_RAG系统/README_Advanced.md) 获取框架选型与关键技术速查。*
+*详见 [RAG 高级实践导航](14_RAG系统/04_Advanced_RAG/README_Advanced.md) 获取框架选型与关键技术速查。*
 
 ## Related
 - [[14_RAG系统/06_RAG_Frameworks/Haystack_Deep_Dive.md|Haystack: 开源 RAG 框架]]
@@ -137,7 +137,7 @@ RAG 的生成阶段对 TTFT（首个 token 时间）和前缀缓存命中率非�
 - [[14_RAG系统/05_RAG_Production/Agentic_RAG_Applications_for_dummy.md|Agentic RAG 应用大白话]]
 
 - [[RAG_Retrieval_Latency_Optimization|RAG 检索延迟优化]]
-- [[14_RAG系统/HF_Datasets_Streaming|HuggingFace Datasets Streaming 模式实战指南]]
+- [[14_RAG系统/02_Embeddings/HF_Datasets_Streaming_Guide|HuggingFace Datasets Streaming 模式实战指南]]
 
 ## 新增页面
 

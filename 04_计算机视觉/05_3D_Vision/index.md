@@ -22,7 +22,7 @@ tags: [auto-index]
 
 - [[04_计算机视觉/index|计算机视觉首页]]
 - [[04_计算机视觉/08_Multimodal_Vision/index|Multimodal Vision]]
-- [[18_行业应用/Autonomous_Driving_index|Autonomous Driving]]
+- [[18_行业应用/06_Autonomous_Driving/Autonomous_Driving_index|Autonomous Driving]]
 
 ## 进阶知识拓展
 

@@ -2,7 +2,7 @@
 title: Training Data
 type: index
 created: 2026-07-02
-updated: 2026-07-11
+updated: 2026-07-25
 sources: []
 ---
 
@@ -19,6 +19,7 @@ sources: []
 | [[07_模型训练/02_Data/pretraining-synthetic-data|合成数据]] | 合成数据预训练实践 |
 | [[07_模型训练/02_Data/Tokenizer_Design_2026|分词器设计]] | Tokenizer 设计与优化 |
 | [[07_模型训练/02_Data/Datasheet_Template|数据表模板]] | 数据集文档模板 |
+| [[07_模型训练/02_Data/Curriculum_Learning|课程学习 (Curriculum Learning)]] | 课程学习完整技术体系：数据排序策略、难度递进方法、自动课程学习、在 LLM 预训练/微调/RL 中的应用与 2026 最佳实践。 | - |
 
 ## Related
 

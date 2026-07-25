@@ -1162,5 +1162,5 @@ flowchart TB
 - [[07_模型训练/03_Optimization/Optimizer_Advanced_2026|优化器进阶 2026]] — 优化器选择
 - [[概念/LLM/chinchilla-scaling-laws|Chinchilla 缩放定律]] — 缩放定律概念卡片
 - [[概念/LLM/emergent-abilities|涌现能力]] — 缩放驱动的涌现
-- [[05_大模型/LLM_Training_Deep_Dive|LLM 训练深度解析]] — 训练实践
-- [[07_模型训练/Pretraining_Playbook|预训练手册]] — 预训练工程实践
+- [[07_模型训练/01_Training_Fundamentals/LLM_Training_Deep_Dive|LLM 训练深度解析]] — 训练实践
+- [[07_模型训练/01_Training_Fundamentals/Pretraining_Playbook|预训练手册]] — 预训练工程实践

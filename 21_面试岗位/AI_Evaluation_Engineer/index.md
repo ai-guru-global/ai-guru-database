@@ -20,7 +20,7 @@ AI 评估工程师 — 设计与执行模型评估方案，涵盖离线指标（
 ## Related
 
 - [[08_模型评估/index|模型评估]]
-- [[09_测试/Agent_Evaluation_index|Agent Evaluation]]
+- [[09_测试/03_Agent_Evaluation/Agent_Evaluation_index|Agent Evaluation]]
 - [[21_面试岗位/MLOps_Engineer/index|MLOps Engineer]]
 
 ## 岗位核心能力模型

@@ -82,7 +82,7 @@ aliases:
 | 34 | Corrective RAG | 纠正性 RAG |
 | 35 | Sophisticated Controllable Agent | 复杂可控 Agent |
 
-> **关联**: -> [[14_RAG系统|RAG 系统]] | [[20_论文精读/RAG_Deep_Dive|RAG 论文]] | [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[14_RAG系统|RAG 系统]] | [[20_论文精读/10_Retrieval/RAG_Deep_Dive|RAG 论文]] | [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
 
 
 ## 核心知识框架

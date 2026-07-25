@@ -1145,5 +1145,5 @@ class DecisionTransformer(nn.Module):
 - [[06_强化学习/02_Deep_RL/Model_Based_RL_Deep_Dive]] — 基于模型的RL（模型辅助离线RL）
 - [[06_强化学习/01_RL_Foundations/RL_Foundations]] — RL基础（贝尔曼方程）
 - [[06_强化学习/03_RLHF_Alignment/RLHF_Alignment]] — RLHF（LLM中的RL应用）
-- [[03_深度学习/Transfer_Learning]] — 迁移学习（离线RL是迁移的一种）
+- [[03_深度学习/09_Advanced_Topics/Transfer_Learning]] — 迁移学习（离线RL是迁移的一种）
 - [[概念/Safety/ai-alignment]] — AI对齐（离线安全RL）

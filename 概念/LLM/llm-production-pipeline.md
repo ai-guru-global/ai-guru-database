@@ -145,7 +145,7 @@ pre_launch_checklist:
 - [[概念/LLM/llm-production-deployment|LLM 生产部署]]
 - [[概念/Inference/model-serving|模型服务]]
 - [[11_模型运维/LLM_Production_Pipeline_2026|LLM 生产流水线 2026]]
-- [[05_大模型/LLM_Production_Deployment_Runbook|LLM 生产部署 Runbook]]
+- [[10_部署推理/01_Deployment_Fundamentals/LLM_Production_Deployment_Runbook|LLM 生产部署 Runbook]]
 
 ## 2026 LLM 生产流水线全景
 

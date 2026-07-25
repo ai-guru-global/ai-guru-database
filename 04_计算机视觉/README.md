@@ -52,7 +52,7 @@ sources: []
 | AI 视频生成 (Video Generation) | 前沿 | 2026 年视频生成格局，Veo3/Kling/Seedance/Sora 后时代 | [Video_Generation/](./07_Video_Generation/) |
 | 3D 视觉 (3D Vision) | 进阶 | 深度估计、点云分割、NeRF、3D 检测 | [3D_Vision.md](./05_3D_Vision/3D_Vision.md) |
 | OCR 文字识别 (OCR) | 入门 | 文本检测、文本识别、端到端 OCR | [OCR_Text_Recognition.md](./04_OCR_Text_Recognition/OCR_Text_Recognition.md) |
-| **CV 生产部署与推理 2026** | **生产必备** | **ONNX/TensorRT/OpenVINO 服务化、量化剪枝、边缘部署与工业案例** | **[CV_Deployment_and_Inference_2026.md](./CV_Deployment_and_Inference_2026.md)** |
+| **CV 生产部署与推理 2026** | **生产必备** | **ONNX/TensorRT/OpenVINO 服务化、量化剪枝、边缘部署与工业案例** | **[CV_Deployment_and_Inference_2026.md](./09_CV_Deployment/CV_Deployment_and_Inference_2026.md)** |
 
 ### 深度解读 (Deep Dive)
 

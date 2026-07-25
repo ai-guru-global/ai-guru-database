@@ -26,13 +26,13 @@ This page indexes the contents of `机器学习`.
 
 ## Files
 
-- [[02_机器学习/ApacheCN_Machine_Learning_Track|Apachecn Machine Learning Track]]
-- [[02_机器学习/kaggle_overview|Kaggle Overview]]
+- [[02_机器学习/01_ML_Fundamentals/ApacheCN_Machine_Learning_Track|Apachecn Machine Learning Track]]
+- [[02_机器学习/01_ML_Fundamentals/Kaggle_Overview|Kaggle Overview]]
 - [[02_机器学习/ML-in-nutshell|ML In Nutshell]]
 - [[02_机器学习/ML_Algorithms_Cheatsheet|ML Algorithms Cheatsheet]]
 - [[02_机器学习/ML_For_Beginners|ML For Beginners]]
 - [[02_机器学习/01_ML_Fundamentals|ML Fundamentals]]
-- [[02_机器学习/Model_Interpretability_Explainability|Model Interpretability Explainability]]
+- [[02_机器学习/01_ML_Fundamentals/Model_Interpretability_Explainability|Model Interpretability Explainability]]
 - [[02_机器学习/README|README]]
 - [[02_机器学习/README_for_dummy|README For Dummy]]
 

@@ -191,7 +191,7 @@ flowchart TD
 - [[94_可视化/Best_Practices/index|Best Practices]]
 - [[94_可视化/Evaluation_Viz/index|Evaluation Viz]]
 - [[07_模型训练/index|模型训练]]
-- [[09_测试/Weights_Biases_Deep_Dive|Weights & Biases]]
+- [[09_测试/02_Testing_Frameworks/Weights_Biases_Deep_Dive|Weights & Biases]]
 - [[03_深度学习/index|深度学习]]
 - [[11_模型运维/index|模型运维]]
 

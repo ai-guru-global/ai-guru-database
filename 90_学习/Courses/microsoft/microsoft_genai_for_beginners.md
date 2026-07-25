@@ -60,10 +60,10 @@ sources: []
 
 | 课号 | 课程名称 | 本库建议配合阅读 | 页面链接 |
 |------|----------|------------------|----------|
-| 00 | 课程设置 | [[01_数学基础/AI_Development_Environment_Setup]] | [[01_数学基础/GenAI_L00_Course_Setup]] |
+| 00 | 课程设置 | [[01_数学基础/08_Python_Toolkit/AI_Development_Environment_Setup]] | [[01_数学基础/08_Python_Toolkit/GenAI_L00_Course_Setup]] |
 | 01 | 生成式 AI 与大型语言模型简介 | [[00_入门/AI_Fundamentals]]、[[05_大模型/05_LLM_Architectures/LLM_Architectures]] | [[00_入门/GenAI_L01_Intro_to_GenAI_and_LLMs]] |
-| 02 | 探索与比较不同的 LLM | [[05_大模型/05_LLM_Architectures/LLM_Architectures]]、[[05_大模型/14_Global_LLM_Ecosystem/README]] | [[05_大模型/GenAI_L02_Exploring_and_Comparing_LLMs]] |
-| 03 | 负责任地使用生成式 AI | [[17_伦理安全/Ethics-in-nutshell]]、[[17_伦理安全/AI_Governance_Compliance_2026]] | [[17_伦理安全/GenAI_L03_Using_GenAI_Responsibly]] |
+| 02 | 探索与比较不同的 LLM | [[05_大模型/05_LLM_Architectures/LLM_Architectures]]、[[05_大模型/14_Global_LLM_Ecosystem/README]] | [[05_大模型/01_LLM_Fundamentals/GenAI_L02_Exploring_and_Comparing_LLMs]] |
+| 03 | 负责任地使用生成式 AI | [[17_伦理安全/Ethics-in-nutshell]]、[[17_伦理安全/AI_Governance_Compliance_2026]] | [[17_伦理安全/01_Ethics_Fundamentals/GenAI_L03_Using_GenAI_Responsibly]] |
 
 ### 提示工程（L04-L05）
 
@@ -78,31 +78,31 @@ sources: []
 |------|----------|------------------|----------|
 | 06 | 构建文本生成应用 | [[15_智能体/README]]、[[05_大模型/13_LLM_Products/chatgpt_overview]] | [[15_智能体/GenAI_L06_Text_Generation_Apps]] |
 | 07 | 构建聊天应用 | [[15_智能体/README]]、[[15_智能体/02_Agent_Frameworks/README]] | [[15_智能体/GenAI_L07_Building_Chat_Applications]] |
-| 08 | 构建搜索和向量数据库应用 | [[14_RAG系统/RAG_Systems]]、[[14_RAG系统/Vector_Database_for_dummy]] | [[14_RAG系统/GenAI_L08_Building_Search_Applications]] |
+| 08 | 构建搜索和向量数据库应用 | [[14_RAG系统/RAG_Systems]]、[[14_RAG系统/Vector_Database_for_dummy]] | [[14_RAG系统/01_RAG_Fundamentals/GenAI_L08_Building_Search_Applications]] |
 | 09 | 构建图像生成应用 | [[05_大模型/10_Multimodal_Models/Multimodal_Models_for_dummy]] | [[05_大模型/10_Multimodal_Models/GenAI_L09_Building_Image_Applications]] |
-| 10 | 构建低代码 AI 应用 | [[18_行业应用/README]] | [[18_行业应用/GenAI_L10_Building_Low_Code_AI_Applications]] |
+| 10 | 构建低代码 AI 应用 | [[18_行业应用/README]] | [[16_编程/05_Tools/GenAI_L10_Building_Low_Code_AI_Applications]] |
 | 11 | 使用函数调用集成外部应用 | [[15_智能体/02_Agent_Frameworks/README]]、[[15_智能体/03_Agent_Workflow/Workflow-in-nutshell]] | [[15_智能体/GenAI_L11_Integrating_with_Function_Calling]] |
 
 ### 设计与运维（L12-L14）
 
 | 课号 | 课程名称 | 本库建议配合阅读 | 页面链接 |
 |------|----------|------------------|----------|
-| 12 | 设计 AI 应用的用户体验 | [[15_智能体/README]]、[[15_智能体/Agentic_Design_Patterns_AndrewNg]] | [[15_智能体/GenAI_L12_Designing_UX_for_AI_Applications]] |
-| 13 | 保障生成式 AI 应用安全 | [[17_伦理安全/07_AI_Security_2026/README]]、[[17_伦理安全/Ethics-in-nutshell]] | [[17_伦理安全/GenAI_L13_Securing_AI_Applications]] |
-| 14 | 生成式 AI 应用生命周期 | [[11_模型运维/MLOps_Pipeline]]、[[11_模型运维/MLOps_Maturity_Model]] | [[11_模型运维/GenAI_L14_GenAI_Application_Lifecycle]] |
+| 12 | 设计 AI 应用的用户体验 | [[15_智能体/README]]、[[15_智能体/01_Agent_Foundations/Agentic_Design_Patterns_AndrewNg]] | [[15_智能体/GenAI_L12_Designing_UX_for_AI_Applications]] |
+| 13 | 保障生成式 AI 应用安全 | [[17_伦理安全/07_AI_Security_2026/README]]、[[17_伦理安全/Ethics-in-nutshell]] | [[17_伦理安全/06_Security/GenAI_L13_Securing_AI_Applications]] |
+| 14 | 生成式 AI 应用生命周期 | [[11_模型运维/MLOps_Pipeline]]、[[11_模型运维/MLOps_Maturity_Model]] | [[11_模型运维/10_LLMOps/GenAI_L14_GenAI_Application_Lifecycle]] |
 
 ### RAG 与开源（L15-L16）
 
 | 课号 | 课程名称 | 本库建议配合阅读 | 页面链接 |
 |------|----------|------------------|----------|
-| 15 | 检索增强生成（RAG）与向量数据库 | [[14_RAG系统/RAG_Systems]]、[[14_RAG系统/04_Advanced_RAG/RAG_Advanced_2026]] | [[14_RAG系统/GenAI_L15_RAG_and_Vector_Databases]] |
-| 16 | 开源模型与 Hugging Face | [[05_大模型/14_Global_LLM_Ecosystem/README]]、[[90_学习/courses/hugging_face/official_courses]] | [[05_大模型/GenAI_L16_Open_Source_Models_and_Hugging_Face]] |
+| 15 | 检索增强生成（RAG）与向量数据库 | [[14_RAG系统/RAG_Systems]]、[[14_RAG系统/04_Advanced_RAG/RAG_Advanced_2026]] | [[14_RAG系统/01_RAG_Fundamentals/GenAI_L15_RAG_and_Vector_Databases]] |
+| 16 | 开源模型与 Hugging Face | [[05_大模型/14_Global_LLM_Ecosystem/README]]、[[90_学习/courses/hugging_face/official_courses]] | [[05_大模型/14_Global_LLM_Ecosystem/GenAI_L16_Open_Source_Models_and_Hugging_Face]] |
 
 ### AI 代理（L17）
 
 | 课号 | 课程名称 | 本库建议配合阅读 | 页面链接 |
 |------|----------|------------------|----------|
-| 17 | AI 代理 | [[15_智能体/02_Agent_Frameworks/README]]、[[15_智能体/Agentic_Design_Patterns_AndrewNg]] | [[15_智能体/GenAI_L17_AI_Agents]] |
+| 17 | AI 代理 | [[15_智能体/02_Agent_Frameworks/README]]、[[15_智能体/01_Agent_Foundations/Agentic_Design_Patterns_AndrewNg]] | [[15_智能体/GenAI_L17_AI_Agents]] |
 
 ### 微调与模型家族（L18-L21）
 

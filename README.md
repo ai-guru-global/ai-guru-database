@@ -403,7 +403,7 @@ graph LR
 |------|------|
 | ⭐ [LLMOps 2026](11_模型运维/10_LLMOps/LLMOps_2026.md) | 主线：传统 MLOps 失效的 7 大原因、三层架构、成熟度模型、事故复盘 |
 | [Prompt 工程化运维](11_模型运维/11_Prompt_Ops/Prompt_Engineering_Ops.md) | Prompt 即代码、版本化、A/B 测试、CI 门禁、DSPy 自动优化 |
-| [LLM 评估流水线](11_模型运维/LLM_Evaluation_Pipeline.md) | LLM-as-Judge、人审闭环、Eval-Driven Development、评估陷阱 |
+| [LLM 评估流水线](11_模型运维/13_Evaluation/LLM_Evaluation_Pipeline.md) | LLM-as-Judge、人审闭环、Eval-Driven Development、评估陷阱 |
 | [RAG 流水线运维](11_模型运维/05_Orchestration/RAG_Pipeline_Ops.md) | 四维可变性、Embedding 升级迁移、索引重建灰度 |
 | [LLM 成本与延迟 SLO](11_模型运维/09_Cost/LLM_Cost_Latency_SLO.md) | 三层缓存、智能路由、Token 预算熔断、FinOps |
 | [LLM 可观测性](11_模型运维/08_Observability/LLM_Observability.md) | 五层监控、Trace 分布式追踪、幻觉/毒性/PII 在线检测 |
@@ -656,6 +656,6 @@ git push origin feature/your-feature
 - [[index]] — 知识库索引
 - [[治理/hot.md]] — 热门页面
 - [[治理/plan/README]] — 项目规划与评估报告
-- [[11_模型运维/Boundary_with_16.md]] — 10 与 16 边界声明
+- [[11_模型运维/01_MLOps_Fundamentals/Boundary_with_16.md]] — 10 与 16 边界声明
 - [[治理/README]] — 跨域综合文档索引
 - [[00_入门/01_Fundamentals/AI_Fundamentals.md]] — 知识库入门索引

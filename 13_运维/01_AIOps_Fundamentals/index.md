@@ -20,7 +20,7 @@ sources: []
 
 ## Related
 
-- [[13_运维/Observability_index|Observability]]
+- [[13_运维/06_Observability/Observability_index|Observability]]
 - [[13_运维/03_Incident_Response/index|Incident Response]]
 
 ## 进阶知识拓展

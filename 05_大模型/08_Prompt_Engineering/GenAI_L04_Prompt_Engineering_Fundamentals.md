@@ -501,4 +501,4 @@ Notebook 中没有绝对的"对错"答案——目标是通过反复试验探索
 
 | 上一课 | 下一课 |
 |--------|--------|
-| [[17_伦理安全/GenAI_L03_Using_GenAI_Responsibly|L03 负责任使用AI]] | [[05_大模型/08_Prompt_Engineering/GenAI_L05_Advanced_Prompts|L05 高级提示技术]] |
+| [[17_伦理安全/01_Ethics_Fundamentals/GenAI_L03_Using_GenAI_Responsibly|L03 负责任使用AI]] | [[05_大模型/08_Prompt_Engineering/GenAI_L05_Advanced_Prompts|L05 高级提示技术]] |

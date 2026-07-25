@@ -22,8 +22,8 @@ relationships:
   - target: "概念/incident-response"
     type: uses
 sources:
-  - 12_架构基建/AI_SRE_Runbook.md
-  - 18_行业应用/AI_Production_Architecture_2026.md
+  - 13_运维/02_SRE_Reliability/AI_SRE_Runbook.md
+  - 18_行业应用/01_Industry_Overview/AI_Production_Architecture_2026.md
 ---
 
 # AI SRE
@@ -74,26 +74,26 @@ sources:
 ## 推荐阅读
 
 ### 核心 Runbook 与架构
-- [[12_架构基建/AI_SRE_Runbook|AI 系统 SRE Runbook]] — SLO/SLI、GPU 容量规划、事故响应、模型回滚、灾备与可观测性完整手册
-- [[18_行业应用/AI_Production_Architecture_2026|AI 生产架构 2026]] — 企业级 AI 生产部署的整体架构视角
-- [[18_行业应用/AI_Platform_Selection_2026|AI 平台选型 2026]] — 自建与云服务平台的选型参考
+- [[13_运维/02_SRE_Reliability/AI_SRE_Runbook|AI 系统 SRE Runbook]] — SLO/SLI、GPU 容量规划、事故响应、模型回滚、灾备与可观测性完整手册
+- [[18_行业应用/01_Industry_Overview/AI_Production_Architecture_2026|AI 生产架构 2026]] — 企业级 AI 生产部署的整体架构视角
+- [[18_行业应用/01_Industry_Overview/AI_Platform_Selection_2026|AI 平台选型 2026]] — 自建与云服务平台的选型参考
 
 ### 各子系统生产部署
-- [[05_大模型/LLM_Production_Deployment_Runbook|LLM 生产部署 Runbook]] — 大模型上线、推理优化与运维
+- [[10_部署推理/01_Deployment_Fundamentals/LLM_Production_Deployment_Runbook|LLM 生产部署 Runbook]] — 大模型上线、推理优化与运维
 - [[15_智能体/Agent_Production_Deployment_Runbook|Agent 生产部署 Runbook]] — Agent 系统的发布、监控与回滚
 - [[14_RAG系统/RAG_Production_Architecture_Deep_Dive|RAG 生产架构深度解析]] — RAG pipeline 的可靠性设计
-- [[04_计算机视觉/CV_Deployment_and_Inference_2026|CV 部署与推理 2026]] — 视觉模型生产化要点
+- [[04_计算机视觉/09_CV_Deployment/CV_Deployment_and_Inference_2026|CV 部署与推理 2026]] — 视觉模型生产化要点
 
 ### 安全、护栏与成本
 - [[11_模型运维/LLM_Guardrails_and_Safety_Ops_2026|LLM 护栏与安全运维 2026]] — 输入输出安全与护栏运营
 - [[16_编程/AI_Code_Security_Audit_Runbook|AI 代码安全审计 Runbook]] — AI 应用代码层安全审计
-- [[07_模型训练/Training_Cost_Optimization_and_FinOps_2026|训练成本优化与 FinOps 2026]] — 成本治理与 FinOps 实践
+- [[07_模型训练/08_Cost_Optimization/Training_Cost_Optimization_and_FinOps_2026|训练成本优化与 FinOps 2026]] — 成本治理与 FinOps 实践
 
 ### 网关、评估与前沿技术
 - [[12_架构基建/11_AI_Gateway/LLM_Gateway_Deep_Dive|LLM Gateway 深度解析]] — 统一入口、路由、限流与可观测
 - [[08_模型评估/RAG_Evaluation_Deep_Dive|RAG 评估深度解析]] — RAG 系统质量评估
-- [[09_测试/Agent_Evaluation_Deep_Dive|Agent 评估深度解析]] — Agent 系统稳定性评估
-- [[05_大模型/Test_Time_Compute_Scaling_2026|测试时计算缩放 2026]] — 推理阶段资源与质量权衡
+- [[09_测试/03_Agent_Evaluation/Agent_Evaluation_Deep_Dive|Agent 评估深度解析]] — Agent 系统稳定性评估
+- [[05_大模型/09_Reasoning_Models/Test_Time_Compute_Scaling_2026|测试时计算缩放 2026]] — 推理阶段资源与质量权衡
 
 ### 相关概念
 - [[概念/sre|SRE]] — 传统站点可靠性工程

@@ -2,7 +2,7 @@
 title: Generative Models
 type: index
 created: 2026-07-02
-updated: 2026-07-11
+updated: 2026-07-25
 sources: []
 tags: [auto-index]
 ---
@@ -18,6 +18,7 @@ tags: [auto-index]
 | [[04_计算机视觉/06_Generative_Models/Generative_Models|Generative Models]] | Generative models knowledge system: DDPM, Stable Diffusion and DALL-E | generative AI researchers / CV engineers |
 | [[04_计算机视觉/06_Generative_Models/Generative_Models_for_dummy|Generative Models for dummy]] | Generative models beginner guide: from GAN to Diffusion | beginners / generative AI learners |
 | [[04_计算机视觉/06_Generative_Models/Diffusion_Models_Deep_Dive|Diffusion Models Deep Dive]] | Diffusion models deep dive: math foundations, sampling acceleration and applications | researchers / senior practitioners |
+| [[04_计算机视觉/06_Generative_Models/HF_Diffusers_Practical_Guide|Hugging Face Diffusers 实战：从图像到视频生成的底层引擎]] | `diffusers` 是计算机视觉生成领域的“Transformers 库”。无论是经典的 Stable Diffusion、最强的 FLUX.1，还是... | - | - |
 
 ## Related
 

@@ -20,9 +20,9 @@ This page indexes the contents of `RAG系统`.
 ## Files
 
 - [[14_RAG系统/Agentic_RAG_Applications_for_dummy|Agentic RAG Applications For Dummy]]
-- [[14_RAG系统/GenAI_L08_Building_Search_Applications|Genai L08 Building Search Applications]]
-- [[14_RAG系统/GenAI_L15_RAG_and_Vector_Databases|Genai L15 RAG And Vector Databases]]
-- [[14_RAG系统/HF_Datasets_Streaming|HF Datasets Streaming]]
+- [[14_RAG系统/01_RAG_Fundamentals/GenAI_L08_Building_Search_Applications|Genai L08 Building Search Applications]]
+- [[14_RAG系统/01_RAG_Fundamentals/GenAI_L15_RAG_and_Vector_Databases|Genai L15 RAG And Vector Databases]]
+- [[14_RAG系统/02_Embeddings/HF_Datasets_Streaming_Guide|HF Datasets Streaming]]
 - [[14_RAG系统/Matryoshka_Representation_Learning_for_dummy|Matryoshka Representation Learning For Dummy]]
 - [[14_RAG系统/RAG-in-nutshell|RAG In Nutshell]]
 - [[14_RAG系统/01_RAG_Fundamentals|RAG Fundamentals]]
@@ -30,7 +30,7 @@ This page indexes the contents of `RAG系统`.
 - [[14_RAG系统/RAG_Systems|RAG Systems]]
 - [[14_RAG系统/RAG_Systems_for_dummy|RAG Systems For Dummy]]
 - [[14_RAG系统/README|README]]
-- [[14_RAG系统/README_Advanced|README Advanced]]
+- [[14_RAG系统/04_Advanced_RAG/README_Advanced|README Advanced]]
 - [[14_RAG系统/README_for_dummy|README For Dummy]]
 - [[14_RAG系统/Vector_Database_for_dummy|Vector Database For Dummy]]
 

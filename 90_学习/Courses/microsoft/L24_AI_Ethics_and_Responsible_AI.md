@@ -79,8 +79,8 @@ sources: []
 - **延伸**：
   - 想了解 AI 伦理全景 → [[17_伦理安全/Ethics-in-nutshell]]
   - 想了解企业级 AI 治理、合规框架与落地流程 → [[17_伦理安全/AI_Governance_Compliance_2026]]
-  - 想了解生成式 AI 的安全风险与缓解 → [[17_伦理安全/GenAI_L03_Using_GenAI_Responsibly]]
-  - 想了解红队测试与模型安全评估 → [[17_伦理安全/AI_Red_Teaming_Guide]]、[[17_伦理安全/Safety_Evaluation_Framework]]
+  - 想了解生成式 AI 的安全风险与缓解 → [[17_伦理安全/01_Ethics_Fundamentals/GenAI_L03_Using_GenAI_Responsibly]]
+  - 想了解红队测试与模型安全评估 → [[17_伦理安全/AI_Red_Teaming_Guide]]、[[17_伦理安全/04_AI_Safety_RedTeaming/Safety_Evaluation_Framework]]
 
 ---
 

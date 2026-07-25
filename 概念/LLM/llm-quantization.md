@@ -137,7 +137,7 @@ vllm serve TheBloke/Llama-3-70B-AWQ \
 - [[概念/LLM/edge-llm|边缘 LLM]] — 量化是端侧部署的核心使能技术
 - [[概念/LLM/kv-cache|KV Cache]] — KV Cache 量化降低长上下文显存
 - [[概念/Training/model-compression|模型压缩]] — 量化的上位概念
-- [[05_大模型/LLM_Inference_Deep_Dive|LLM 推理深度解析]] — 量化在推理引擎中的部署
+- [[10_部署推理/03_Inference_Optimization/LLM_Inference_Deep_Dive|LLM 推理深度解析]] — 量化在推理引擎中的部署
 - [[05_大模型/12_Edge_LLM/Edge_LLM_Deep_Dive|端侧 LLM 深度解析]] — 端侧量化实践
 
 ## 2026 量化技术全景

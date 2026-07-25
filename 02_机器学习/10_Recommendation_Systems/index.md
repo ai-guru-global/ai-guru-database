@@ -21,7 +21,7 @@ tags: [auto-index]
 ## Related
 
 - [[02_机器学习/04_Ensemble_Learning/index|Ensemble Learning]]
-- [[18_行业应用/Retail_Ecommerce_index|Retail & E-commerce]]
+- [[18_行业应用/08_Retail_Ecommerce/Retail_Ecommerce_index|Retail & E-commerce]]
 - [[05_大模型/02_Sequence_Models/index|Sequence Models]]
 
 ## 进阶知识拓展

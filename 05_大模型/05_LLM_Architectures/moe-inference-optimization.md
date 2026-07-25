@@ -522,4 +522,4 @@ DeepSeek-V3 的共享专家设计让 SGLang 的 RadixAttention 命中率达到 7
 - [[05_大模型/05_LLM_Architectures/LLM_Internals_Inference]]
 - [[10_部署推理/06_Caching/Speculative_Decoding_Advanced_2026]]
 - [[10_部署推理/06_Caching/Prompt_Caching_and_KV_Cache_Optimization]]
-- [[05_大模型/Structured_Output_Guide|结构化输出指南]]
+- [[05_大模型/16_Constrained_Generation/Structured_Output_Guide|结构化输出指南]]

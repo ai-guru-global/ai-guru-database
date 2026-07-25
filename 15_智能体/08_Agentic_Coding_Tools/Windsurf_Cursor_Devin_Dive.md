@@ -456,5 +456,5 @@ Agentic Coding 工具发展趋势
 - [[15_智能体/08_Agentic_Coding_Tools/Claude_Code_Deep_Dive|Claude Code 深度解析]] — CLI 类工具对比
 - [[15_智能体/08_Agentic_Coding_Tools/International_Agentic_Tools|国际 Agentic 工具]] — 国际工具生态
 - [[15_智能体/08_Agentic_Coding_Tools/index|Agentic Coding 索引]] — 工具主题导览
-- [[18_行业应用/Code_Generation_index|代码生成索引]] — 代码生成应用
+- [[18_行业应用/18_Code_Generation/Code_Generation_index|代码生成索引]] — 代码生成应用
 - [[16_编程/index|编程索引]] — AI 编程主题导览

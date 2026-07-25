@@ -237,7 +237,7 @@ flowchart TB
 
 - [[17_伦理安全/09_Deepfake_Security/Deepfake_Security|Deepfake 安全 (完整版)]] — 本篇小白版对应的详细版
 - [[17_伦理安全/09_Deepfake_Security/index|Deepfake 安全索引]] — 主题导览
-- [[17_伦理安全/AI_Watermarking|AI 水印]] — Deepfake 防御的溯源手段
+- [[17_伦理安全/09_Deepfake_Security/AI_Watermarking|AI 水印]] — Deepfake 防御的溯源手段
 - [[概念/Vision/video-generation|视频生成]] — Deepfake 背后的生成技术
 - [[04_计算机视觉/07_Video_Generation/Video_Generation_2026|AI 视频生成 2026]] — 视频生成技术全景
 - [[概念/Safety/model-watermark|模型水印]] — 内容溯源技术

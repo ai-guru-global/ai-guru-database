@@ -614,4 +614,4 @@ CT/MRI 数据 → [AI 分割] → [3D 重建] → [手术规划] → [模拟验�
 > - [[04_计算机视觉/README|计算机视觉]]
 > - [[06_强化学习/README|强化学习]]
 > - [[知识图谱/README|知识图谱]]
-> - [[18_行业应用/AI_Robotics_Industry_2026|AI 机器人]]
+> - [[18_行业应用/17_Robotics_Industry/AI_Robotics_Industry_2026|AI 机器人]]

@@ -138,7 +138,7 @@ sources: []
 - [[02_机器学习/12_ML_Frameworks/xgboost_overview|XGBoost]]
 - [[02_机器学习/12_ML_Frameworks/lightgbm_overview|LightGBM]]
 - [[02_机器学习/12_ML_Frameworks/catboost_overview|CatBoost]]
-- [[02_机器学习/kaggle_overview|Kaggle 数据科学竞赛平台概览]]
+- [[02_机器学习/01_ML_Fundamentals/Kaggle_Overview|Kaggle 数据科学竞赛平台概览]]
 
 ## 进阶知识拓展
 

@@ -299,7 +299,7 @@ graph TD
 
 ### 本章内
 - [[11_模型运维/LLMOps_2026]] — 本系列主线（§7 是本文概览版）
-- [[11_模型运维/LLM_Evaluation_Pipeline]] — 评估方法（本文是在线版）
+- [[11_模型运维/13_Evaluation/LLM_Evaluation_Pipeline]] — 评估方法（本文是在线版）
 - [[11_模型运维/08_Observability/Model_Monitoring_and_Drift_Detection_2026]] — 传统漂移监控
 - [[11_模型运维/08_Observability/ML_Observability_SLO]] — 系统层 SLO/SLI
 
@@ -308,7 +308,7 @@ graph TD
 - [[17_伦理安全/07_AI_Security_2026/README]] — 安全与红队
 - [[17_伦理安全/10_Privacy_Preserving_AI/README]] — 隐私保护
 - [[15_智能体/07_Agent_Evaluation/README]] — Agent 调用链评估
-- [[09_测试/Weights_Biases_Deep_Dive]] — W&B 实验追踪
+- [[09_测试/02_Testing_Frameworks/Weights_Biases_Deep_Dive]] — W&B 实验追踪
 - [[治理/llm-observability-aiops|LLM 可观测性 × AIOps: 从系统监控到语义监控的范式跃迁]]
 
 ---

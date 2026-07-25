@@ -404,5 +404,5 @@ KV Cache 内存估算:
 - [[05_大模型/Transformer_Architecture]] — Transformer 架构
 - [[05_大模型/Transformer_Deep_Dive]] — Transformer 深度解析
 - [[04_计算机视觉/ViT_Deep_Dive]] — Vision Transformer
-- [[05_大模型/LLM_Inference_Deep_Dive]] — LLM 推理优化
+- [[10_部署推理/03_Inference_Optimization/LLM_Inference_Deep_Dive]] — LLM 推理优化
 - [[10_部署推理/05_Quantization/Quantization]] — 量化技术

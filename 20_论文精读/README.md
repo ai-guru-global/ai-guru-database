@@ -83,7 +83,7 @@ flowchart LR
 - [GPT-4 深度解读](20_论文精读/03_Scaling/GPT4_Deep_Dive.md) — 多模态 MoE 架构、系统提示词与涌现能力跃迁
 - [BERT 深度解读](20_论文精读/02_Architecture/BERT_Deep_Dive.md) — 双向编码、MLM/NSP 与预训练-微调范式
 - [LLaMA 深度解读](20_论文精读/02_Architecture/LLaMA_Deep_Dive.md) — 开源 LLM 革命、RoPE/SwiGLU/RMSNorm 架构创新
-- [DeepSeek-V3 技术报告](20_论文精读/DeepSeek_V3_Technical_Report.md) — MLA、MoE、FP8 训练与 $5.6M 成本奇迹
+- [DeepSeek-V3 技术报告](20_论文精读/09_Frontier/DeepSeek_V3_Technical_Report.md) — MLA、MoE、FP8 训练与 $5.6M 成本奇迹
 - [Diffusion Models 深度解读](04_计算机视觉/06_Generative_Models/Diffusion_Models_Deep_Dive.md) — 从 DDPM 到 Stable Diffusion 再到 DiT
 - [RLHF 与 DPO 深度解读](20_论文精读/06_Alignment/RLHF_DPO_Deep_Dive.md) — InstructGPT 三阶段训练、DPO 数学推导与对齐方法
 - [DPO 深度解读](20_论文精读/06_Alignment/DPO_Deep_Dive.md) — 直接偏好优化的数学推导、与 RLHF 对比及对齐方法演进
@@ -95,7 +95,7 @@ flowchart LR
 - [LoRA 深度解读](20_论文精读/04_Efficiency/LoRA_Deep_Dive.md) — 低秩适配微调：从 LoRA 到 QLoRA 的参数高效训练
 - [VAE 深度解读](20_论文精读/08_Vision/VAE_Deep_Dive.md) — 变分自编码器：重参数化技巧、潜空间生成、扩散模型前身
 - [Chain-of-Thought 深度解读](20_论文精读/06_Alignment/Chain_of_Thought_Deep_Dive.md) — 思维链提示：让 LLM 逐步推理，o1/R1 的思想源头
-- [RAG 深度解读](20_论文精读/RAG_Deep_Dive.md) — 检索增强生成：先查后答，解决 LLM 知识过时和幻觉问题
+- [RAG 深度解读](20_论文精读/10_Retrieval/RAG_Deep_Dive.md) — 检索增强生成：先查后答，解决 LLM 知识过时和幻觉问题
 - [Matryoshka Representation Learning 深度解读](14_RAG系统/02_Embeddings/Matryoshka_Representation_Learning_Deep_Dive.md) — 可截断的多尺度向量表示，RAG 与向量数据库的弹性维度方案
 - [Chinchilla 深度解读](20_论文精读/03_Scaling/Chinchilla_Deep_Dive.md) — 计算最优训练：数据量比参数量更重要，重塑 Scaling Laws
 - [AlexNet 深度解读](20_论文精读/08_Vision/AlexNet_Deep_Dive.md) — 深度学习革命起点：ReLU + Dropout + GPU 训练
@@ -195,7 +195,7 @@ flowchart TB
 
 - [x] 论文清单与核心贡献摘要
 - [ ] 论文深度解读系列（持续更新）
-- [x] [[20_论文精读/Paper_Reading_and_Reproduction_Guide|论文阅读与复现工程指南]]
+- [x] [[20_论文精读/01_Research_Guide/Paper_Reading_and_Reproduction_Guide|论文阅读与复现工程指南]]
 - [ ] 论文阅读路径推荐（按角色：研究者/工程师/产品经理）
 
 ---
@@ -203,7 +203,7 @@ flowchart TB
 *Last updated: 2026-06-15*
 
 ## Related
-- [[20_论文精读/RAG_Deep_Dive.md|论文深度解读: RAG — 检索增强生成 (Retrieval-Augmented Generation)]]
+- [[20_论文精读/10_Retrieval/RAG_Deep_Dive.md|论文深度解读: RAG — 检索增强生成 (Retrieval-Augmented Generation)]]
 - [[20_论文精读/08_Vision/CLIP_Deep_Dive|CLIP 深度解读 (Learning Transferable Visual Models From Natural Language Supervision)]]
 - [[20_论文精读/08_Vision/GAN_Deep_Dive.md|GAN 深度解读 (Generative Adversarial Networks)]]
 - [[20_论文精读/06_Alignment/Chain_of_Thought_Deep_Dive.md|论文深度解读: Chain-of-Thought — 让 LLM 逐步推理]]
@@ -223,4 +223,4 @@ flowchart TB
 - [[Chinchilla_Deep_Dive|Training Compute-Optimal Large Language Models (Chinchilla) 深度解读]]
 - [[GPT4_Deep_Dive|GPT-4 Technical Report 深度解读]]
 - [[UNet_Deep_Dive|论文深度解读: U-Net — Convolutional Networks for Biomedical Image Segmentation]]
-- [[papers-with-code_overview|Papers with Code 概览]]
+- [[Papers_With_Code_Overview|Papers with Code 概览]]

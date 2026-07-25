@@ -22,7 +22,7 @@ tags: [auto-index]
 ## Related
 
 - [[11_模型运维/07_Model_Serving/index|Model Serving]]
-- [[11_模型运维/Evaluation_index|Evaluation]]
+- [[11_模型运维/13_Evaluation/Evaluation_index|Evaluation]]
 - [[21_面试岗位/MLOps_Engineer/index|MLOps Engineer]]
 
 ## MLOps核心流程对比

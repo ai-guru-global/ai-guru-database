@@ -185,7 +185,7 @@ flowchart LR
 - [[05_大模型/08_Prompt_Engineering/Prompt_Engineering]] — 提示词工程实战
 - [[05_大模型/07_Fine_tuning_Techniques/Fine_tuning_Techniques]] — 微调技术全景
 - [[05_大模型/05_LLM_Architectures/Long_Context_Models_2026]] — 长上下文模型 2026
-- [[05_大模型/GenAI_L02_Exploring_and_Comparing_LLMs]] — LLM 对比与选型
+- [[05_大模型/01_LLM_Fundamentals/GenAI_L02_Exploring_and_Comparing_LLMs]] — LLM 对比与选型
 - [[05_大模型/01_LLM_Fundamentals/llm-nlp|LLM 与 NLP 融合]]
 - [[05_大模型/01_LLM_Fundamentals/NLP_Fundamentals|NLP 基础]]
 

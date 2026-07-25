@@ -175,7 +175,7 @@ result = client.chat.completions.create(
 
 ## 相关概念
 
-- [[05_大模型/Structured_Output_Guide|结构化输出指南]]
+- [[05_大模型/16_Constrained_Generation/Structured_Output_Guide|结构化输出指南]]
 - [[05_大模型/README|NLP & LLMs]]
 - [[概念/structured-output|结构化输出]]
 - [[概念/pydantic|Pydantic 数据验证]]

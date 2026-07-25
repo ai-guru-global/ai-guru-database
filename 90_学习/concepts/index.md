@@ -161,7 +161,7 @@ graph LR
     P --> G[学习指南<br/>方法论]
 ```
 
-详细的交叉映射见 [[90_学习/pathways_concepts_mapping|路径↔概念映射表]]。
+详细的交叉映射见 [[90_学习/pathways/pathways_concepts_mapping|路径↔概念映射表]]。
 
 ## 常见误解与澄清
 
@@ -241,10 +241,10 @@ graph LR
 
 - [[90_学习/pathways/index|学习路径]] — 角色化学习路线
 - [[90_学习/guides/index|学习指南]] — 方法论与工具
-- [[90_学习/pathways_concepts_mapping|路径↔概念映射表]] — 交叉引用
+- [[90_学习/pathways/pathways_concepts_mapping|路径↔概念映射表]] — 交叉引用
 - [[05_大模型/]] — 大模型知识章节
 - [[03_深度学习/]] — 深度学习知识章节
 - [[02_机器学习/]] — 机器学习知识章节
 - [[15_智能体/]] — Agent 知识章节
 
-> **关联**: → [[90_学习/pathways/index|学习路径]] | [[90_学习/guides/index|学习指南]] | [[90_学习/pathways_concepts_mapping|路径↔概念映射]] | [[05_大模型/]] | [[03_深度学习/]]
+> **关联**: → [[90_学习/pathways/index|学习路径]] | [[90_学习/guides/index|学习指南]] | [[90_学习/pathways/pathways_concepts_mapping|路径↔概念映射]] | [[05_大模型/]] | [[03_深度学习/]]

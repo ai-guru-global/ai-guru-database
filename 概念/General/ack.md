@@ -48,7 +48,7 @@ sources: []
 
 - [[概念/kubernetes|Kubernetes]] — 开源容器编排
 - [[概念/apsara-stack|Apsara Stack]] — 阿里云专有云
-- [[12_架构基建/Alibaba_Cloud_Proprietary_K8s_Context|阿里云专有云 K8s 上下文]]
+- [[12_架构基建/06_Cloud_Providers/Alibaba_Cloud_Proprietary_K8s_Context|阿里云专有云 K8s 上下文]]
 
 ---
 

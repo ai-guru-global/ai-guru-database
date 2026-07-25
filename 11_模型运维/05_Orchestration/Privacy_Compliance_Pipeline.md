@@ -252,7 +252,7 @@ def fairness_gate(model, test_set):
     return approve(results)
 ```
 
-详见 [[08_模型评估/Fairness_Evaluation_for_dummy]]。
+详见 [[08_模型评估/06_Safety_Evaluation/Fairness_Evaluation_for_dummy]]。
 
 ---
 
@@ -332,7 +332,7 @@ WHERE user_id = 'X' AND consent_status = 'consented';
 - [[17_伦理安全/README]] — 伦理与安全
 - [[17_伦理安全/10_Privacy_Preserving_AI/README]] — 联邦学习/差分隐私
 - [[17_伦理安全/02_Value_Alignment/README]] — 价值对齐
-- [[08_模型评估/Fairness_Evaluation_for_dummy]] — 公平性评估
+- [[08_模型评估/06_Safety_Evaluation/Fairness_Evaluation_for_dummy]] — 公平性评估
 - [[概念/mlops]] — MLOps 概念
 
 ---

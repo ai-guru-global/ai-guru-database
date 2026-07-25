@@ -2,7 +2,7 @@
 title: AI Safety & Red Teaming
 type: index
 created: 2026-07-02
-updated: 2026-07-11
+updated: 2026-07-25
 sources: []
 ---
 
@@ -18,10 +18,12 @@ AI 安全与红队测试 — 通过对抗性测试发现模型漏洞，评估和
 | [[17_伦理安全/04_AI_Safety_RedTeaming/AI_Safety_RedTeaming_for_dummy|入门版]] | 零基础红队测试入门 |
 | [[17_伦理安全/04_AI_Safety_RedTeaming/AI_Red_Teaming_Guide|红队指南]] | AI 红队测试实战指南 |
 | [[17_伦理安全/04_AI_Safety_RedTeaming/safety-evaluation-red-teaming|安全评估]] | 安全评估与红队方法论 |
+| [[17_伦理安全/04_AI_Safety_RedTeaming/Guardrails_Production_Guide|AI 护栏 (Guardrails) 生产实践指南]] | 在生产环境中为 LLM 应用添加安全护栏:输入过滤、输出验证、主题限制、事实检查等技术方案与工具。 | - |
+| [[17_伦理安全/04_AI_Safety_RedTeaming/Safety_Evaluation_Framework|AI 安全评测框架 2026: 从基准测试到红队实战]] | 系统性梳理 AI 安全评测的完整方法论，涵盖内容安全（毒性/偏见/幻觉）、对抗鲁棒性（越狱/提示注入）、红队测试流程，以及主流评测基准（ToxiGen、B... | - |
 
 ## Related
 
-- [[08_模型评估/Red_Team_Evaluation_index|Red Team Evaluation]]
+- [[08_模型评估/06_Safety_Evaluation/Red_Team_Evaluation_index|Red Team Evaluation]]
 - [[17_伦理安全/02_Value_Alignment/index|Value Alignment]]
 
 ## 核心知识体系

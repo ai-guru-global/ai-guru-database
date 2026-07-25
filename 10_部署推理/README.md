@@ -20,7 +20,7 @@ sources: []
 | 文档 | 内容 | 适用角色 |
 |------|------|----------|
 | [Deployment Inference](10_部署推理/01_Deployment_Fundamentals/Deployment_Inference.md) | 部署与推理加速：PagedAttention、量化、批处理 | 架构师、开发者 |
-| [LLM 模型热加载与回滚 Runbook](10_部署推理/Model_Hot_Reload_and_Rollback_Runbook.md) | 权重/tokenizer/LoRA/quant 一致性检查与回滚流程 | SRE、模型工程师 |
+| [LLM 模型热加载与回滚 Runbook](10_部署推理/01_Deployment_Fundamentals/Model_Hot_Reload_and_Rollback_Runbook.md) | 权重/tokenizer/LoRA/quant 一致性检查与回滚流程 | SRE、模型工程师 |
 | [LLM 推理调优速查表](10_部署推理/03_Inference_Optimization/Inference_Tuning_Cheat_Sheet.md) | vLLM/SGLang/TGI/TRT-LLM 关键参数、性能诊断、场景配置 | 推理工程师、SRE |
 | [LLM Inference Engine Selection Guide](10_部署推理/02_Inference_Engines/LLM_Inference_Engine_Selection_Guide.md) | 推理引擎统一选型：决策树、成本模型、场景速查 | 架构师、决策者 |
 | [LLM Inference Benchmarking Guide](10_部署推理/02_Inference_Engines/LLM_Inference_Benchmarking_Guide.md) | 推理引擎基准测试：指标、工具、方法、报告模板 | 性能工程师、架构师 |
@@ -43,8 +43,8 @@ sources: []
 | [Fireworks AI Deep Dive](10_部署推理/02_Inference_Engines/Fireworks_AI_Deep_Dive.md) | 快速推理云平台：FireAttention、批量、FireFunction | 高性价比批量 |
 | [BentoML Deep Dive](10_部署推理/02_Inference_Engines/BentoML_Deep_Dive.md) | AI 模型服务框架：vLLM/TGI 集成、K8s、A/B 测试 | 模型服务 |
 | [GPUStack Deep Dive](10_部署推理/07_GPU_Infrastructure/GPUStack_Deep_Dive.md) | 开源 GPU 集群管理器：异构 GPU、MaaS、OpenAI 兼容 API | 企业私有部署 |
-| [模型注册中心](10_部署推理/Model_Registry.md) | 模型版本管理、生命周期治理、MLflow/W&B | MLOps 工程师 |
-| [蓝绿部署与金丝雀发布](10_部署推理/Blue_Green_Canary_Deployment.md) | 渐进式发布、自动化回滚、A/B 测试集成 | SRE、部署工程师 |
+| [模型注册中心](11_模型运维/04_Experiment_Tracking/Model_Registry.md) | 模型版本管理、生命周期治理、MLflow/W&B | MLOps 工程师 |
+| [蓝绿部署与金丝雀发布](10_部署推理/01_Deployment_Fundamentals/Blue_Green_Canary_Deployment.md) | 渐进式发布、自动化回滚、A/B 测试集成 | SRE、部署工程师 |
 | [CTranslate2 Deep Dive](10_部署推理/02_Inference_Engines/CTranslate2_Deep_Dive.md) | 轻量跨平台 Transformer 推理：CPU/GPU 高效服务 | CPU/GPU 轻量服务 |
 | [MLC LLM Deep Dive](10_部署推理/02_Inference_Engines/MLC_LLM_Deep_Dive.md) | 移动端/异构 LLM 推理：手机、Web、边缘部署 | 手机/Web/边缘 |
 | [KV Cache Deep Dive](10_部署推理/06_Caching/KV_Cache_Deep_Dive.md) | KV Cache 深度研究：从原理、架构压缩到量化与生产实践 | 推理优化工程师、架构师 |
@@ -241,7 +241,7 @@ sources: []
 - [[10_部署推理/02_Inference_Engines/MLC_LLM_Deep_Dive.md|MLC LLM 深度解析]]
 - [[10_部署推理/02_Inference_Engines/LLM_Inference_Benchmarking_Guide.md|LLM 推理引擎基准测试指南]]
 - [[10_部署推理/02_Inference_Engines/LLM_Inference_Engine_Migration_Guide.md|LLM 推理引擎迁移指南]]
-- [[10_部署推理/LLM_Cost_Optimization.md|LLM 成本优化]]
+- [[10_部署推理/09_Cost/LLM_Cost_Optimization.md|LLM 成本优化]]
 - [[10_部署推理/06_Caching/Prompt_Caching_Advanced.md|Prompt 缓存高级技术]]
 - [[10_部署推理/07_GPU_Infrastructure/GPUStack_Deep_Dive.md|GPUStack 深度解析]]
 - [[10_部署推理/07_GPU_Infrastructure/GPUStack_for_dummy.md|GPUStack 入门指南]]

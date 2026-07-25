@@ -51,7 +51,7 @@ Layer 1: Python 语法 → Layer 2: 开发环境 → Layer 3: 数据工具链 �
 
 **Week 1: Python 语法 + 环境**
 - Days 1-3: 变量、列表、字典、循环、函数（[[01_数学基础/Python_for_AI_Basics]]）
-- Days 4-5: Conda 环境 + Jupyter Notebook + VS Code 配置（[[01_数学基础/AI_Development_Environment_Setup]]）
+- Days 4-5: Conda 环境 + Jupyter Notebook + VS Code 配置（[[01_数学基础/08_Python_Toolkit/AI_Development_Environment_Setup]]）
 - 里程碑: 能写 50 行 Python 脚本，能启动 Jupyter
 
 **Week 2: 数据工具链 + 第一个模型**
@@ -80,7 +80,7 @@ Layer 1: Python 语法 → Layer 2: 开发环境 → Layer 3: 数据工具链 �
 
 - [[01_数学基础/Python_for_AI_Basics]]
 - [[01_数学基础/Python_Data_Science_Toolkit]]
-- [[01_数学基础/AI_Development_Environment_Setup]]
+- [[01_数学基础/08_Python_Toolkit/AI_Development_Environment_Setup]]
 - [[02_机器学习/02_Supervised_Learning/Your_First_ML_Model]]
 - [[90_学习/pathways/ml-practitioner]]
 

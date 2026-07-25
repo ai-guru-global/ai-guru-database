@@ -1016,6 +1016,6 @@ VAE的作用:
 - [[03_深度学习/01_DL_Fundamentals/DL_Fundamentals]] — 深度学习基础
 - [[03_深度学习/02_Neural_Network_Core/Neural_Network_Core]] — 神经网络核心
 - [[03_深度学习/06_Self_Supervised_Learning/Self_Supervised_Learning]] — 自监督学习（表征学习）
-- [[03_深度学习/Transfer_Learning]] — 迁移学习
+- [[03_深度学习/09_Advanced_Topics/Transfer_Learning]] — 迁移学习
 - [[01_数学基础/03_Probability_Statistics/Probability_Statistics]] — 概率统计（变分推断基础）
 - [[01_数学基础/04_Information_Theory/Information_Theory]] — 信息论（KL散度/ELBO）

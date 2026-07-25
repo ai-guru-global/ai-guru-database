@@ -30,17 +30,17 @@ This page indexes the contents of `伦理安全`.
 - [[17_伦理安全/AI_Governance_Compliance_2026|AI Governance Compliance 2026]]
 - [[17_伦理安全/AI_Red_Teaming_Guide|AI Red Teaming Guide]]
 - [[17_伦理安全/AI_Regulatory_Engineering_2026|AI Regulatory Engineering 2026]]
-- [[17_伦理安全/Constitutional_AI_Deep_Dive|Constitutional AI Deep Dive]]
+- [[17_伦理安全/02_Value_Alignment/Constitutional_AI_Deep_Dive|Constitutional AI Deep Dive]]
 - [[17_伦理安全/Ethics-in-nutshell|Ethics In Nutshell]]
 - [[17_伦理安全/Ethics_Safety-in-nutshell|Ethics Safety In Nutshell]]
-- [[17_伦理安全/GenAI_L03_Using_GenAI_Responsibly|Genai L03 Using Genai Responsibly]]
-- [[17_伦理安全/GenAI_L13_Securing_AI_Applications|Genai L13 Securing AI Applications]]
-- [[17_伦理安全/Guardrails_Production_Guide|Guardrails Production Guide]]
+- [[17_伦理安全/01_Ethics_Fundamentals/GenAI_L03_Using_GenAI_Responsibly|Genai L03 Using Genai Responsibly]]
+- [[17_伦理安全/06_Security/GenAI_L13_Securing_AI_Applications|Genai L13 Securing AI Applications]]
+- [[17_伦理安全/04_AI_Safety_RedTeaming/Guardrails_Production_Guide|Guardrails Production Guide]]
 - [[17_伦理安全/LLM_Security_Complete_Guide|LLM Security Complete Guide]]
 - [[17_伦理安全/LLM_Security_Defense_Guide|LLM Security Defense Guide]]
 - [[17_伦理安全/README|README]]
 - [[17_伦理安全/README_for_dummy|README For Dummy]]
-- [[17_伦理安全/Safety_Evaluation_Framework|Safety Evaluation Framework]]
+- [[17_伦理安全/04_AI_Safety_RedTeaming/Safety_Evaluation_Framework|Safety Evaluation Framework]]
 
 ## 核心知识体系
 

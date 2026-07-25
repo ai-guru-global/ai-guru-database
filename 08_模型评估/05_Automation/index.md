@@ -21,7 +21,7 @@ sources: []
 
 ## Related
 
-- [[08_模型评估/Online_Evaluation_index|Online Evaluation]]
+- [[08_模型评估/04_Evaluation_Tools/Online_Evaluation_index|Online Evaluation]]
 - [[09_测试/02_Testing_Frameworks/index|Testing Frameworks]]
 
 ## 进阶知识拓展

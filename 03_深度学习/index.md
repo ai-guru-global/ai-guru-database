@@ -27,9 +27,9 @@ This page indexes the contents of `深度学习`.
 - [[03_深度学习/DL_Overview|DL Overview]]
 - [[03_深度学习/README|README]]
 - [[03_深度学习/README_for_dummy|README For Dummy]]
-- [[03_深度学习/State_Space_Models_2026|State Space Models 2026]]
-- [[03_深度学习/Transfer_Learning|Transfer Learning]]
-- [[03_深度学习/Transfer_Learning_Guide|Transfer Learning Guide]]
+- [[03_深度学习/02_Neural_Network_Core/State_Space_Models_2026|State Space Models 2026]]
+- [[03_深度学习/09_Advanced_Topics/Transfer_Learning|Transfer Learning]]
+- [[03_深度学习/09_Advanced_Topics/Transfer_Learning_Guide|Transfer Learning Guide]]
 
 ## 进阶知识拓展
 

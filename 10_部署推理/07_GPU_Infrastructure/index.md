@@ -22,7 +22,7 @@ GPU 基础设施（GPU Infrastructure）— GPU 集群管理（cluster managemen
 
 - [[10_部署推理/index|部署推理首页]]
 - [[10_部署推理/08_Hardware/index|Hardware]]
-- [[13_运维/Capacity_Planning_index|Capacity Planning]]
+- [[13_运维/02_SRE_Reliability/Capacity_Planning_index|Capacity Planning]]
 
 ## 核心知识体系
 

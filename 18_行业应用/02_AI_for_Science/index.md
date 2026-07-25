@@ -22,7 +22,7 @@ AI for Science — AI 驱动的科学发现，涵盖蛋白质折叠、药物发�
 ## Related
 
 - [[18_行业应用/03_Healthcare/index|Healthcare]]
-- [[18_行业应用/Energy_Climate_index|Energy & Climate]]
+- [[18_行业应用/09_Energy_Climate/Energy_Climate_index|Energy & Climate]]
 
 ## 进阶知识拓展
 

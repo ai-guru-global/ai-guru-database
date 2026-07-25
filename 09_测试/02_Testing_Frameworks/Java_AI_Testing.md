@@ -1439,5 +1439,5 @@ AI 服务混沌实验清单
 - [[09_测试/01_Testing_Fundamentals/AI-Testing-in-nutshell]] — AI 测试与评估速成指南 (共享: ai-testing, evaluation, prompt-testing, testing)
 - [[09_测试/01_Testing_Fundamentals/AI_Testing_for_dummy]] — AI 测试 - 小白版 (共享: ai-testing, evaluation, prompt-testing, testing)
 - [[09_测试/README]] — AI 测试与评估 (AI Testing) (共享: ai-testing, evaluation, prompt-testing, testing)
-- [[09_测试/Test_Data_Management.md|Test_Data_Management]]
-- [[09_测试/RAGAS_Deep_Dive.md|RAGAS_Deep_Dive]]
+- [[09_测试/01_Testing_Fundamentals/Test_Data_Management.md|Test_Data_Management]]
+- [[09_测试/02_Testing_Frameworks/RAGAS_Deep_Dive.md|RAGAS_Deep_Dive]]

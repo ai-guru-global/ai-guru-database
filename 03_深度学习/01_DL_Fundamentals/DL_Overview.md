@@ -409,7 +409,7 @@ Chinchilla Scaling Laws (2022):
 
 - [[03_深度学习/02_Neural_Network_Core/Neural_Network_Core]] — 神经网络核心
 - [[03_深度学习/02_Neural_Network_Core/Attention_Mechanisms_Deep_Dive]] — 注意力机制
-- [[03_深度学习/Transfer_Learning]] — 迁移学习
+- [[03_深度学习/09_Advanced_Topics/Transfer_Learning]] — 迁移学习
 - [[03_深度学习/08_DL_Frameworks/DL_Frameworks]] — 深度学习框架
 - [[03_深度学习/03_Optimization/Optimization]] — 优化技术
 - [[05_大模型/Transformer_Architecture]] — Transformer 架构

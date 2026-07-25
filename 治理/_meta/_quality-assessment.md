@@ -2,17 +2,17 @@
 title: AI Guru 知识库内容完整性评估
 category: meta
 tags: [meta, audit, evaluation, project-health, completeness]
-summary: 2026-06-15 全库内容完整性评估，对比 06-03 基线，识别增长风险与缺口。基线对照见 _project-evaluation.md。
+summary: 2026-06-15 全库内容完整性评估，对比 06-03 基线，识别增长风险与缺口。基线对照见 治理/_project-evaluation.md。
 created: 2026-06-15
 updated: 2026-06-15
-baseline: _project-evaluation.md
+baseline: 治理/_project-evaluation.md
 sources: []
 ---
 
 # AI Guru 知识库内容完整性评估
 
 > **评估日期**: 2026-06-15
-> **基线对照**: [[_project-evaluation|2026-06-03 评估]] (492 文档 / 683 万字)
+> **基线对照**: [[治理/_project-evaluation|2026-06-03 评估]] (492 文档 / 683 万字)
 > **评估范围**: 核心知识库（排除 `原始/`、`归档/`、`94_可视化/`、`前端应用/node_modules/`、`.venv/`）
 
 ---
@@ -254,7 +254,7 @@ sources: []
 
 - **统计工具**: `find` + `wc` + `git log`（核心库口径：排除 `原始`/`归档`/`94_Visualization`/`Web`/`node_modules`/`.venv`/`.git`/`mkdocs-docs`/`.obsidian`）
 - **字数口径**: 英文 `wc -w`（中文每字算 1 词偏低估，实际中文体量约为显示值的 3–4 倍）
-- **基线对照**: [[_project-evaluation]] (2026-06-03)
+- **基线对照**: [[治理/_project-evaluation]] (2026-06-03)
 - **辅助参考**: [[_content-gap-analysis]]、[[_wiki-status]]、[[_lint-report]]、[[_insights]]
 
 ---

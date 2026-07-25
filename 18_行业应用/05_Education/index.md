@@ -20,7 +20,7 @@ tags: [auto-index]
 
 ## Related
 
-- [[18_行业应用/HR_Recruitment_index|HR & Recruitment]]
+- [[18_行业应用/12_HR_Recruitment/HR_Recruitment_index|HR & Recruitment]]
 - [[18_行业应用/03_Healthcare/index|Healthcare]]
 
 ## 进阶知识拓展

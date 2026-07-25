@@ -569,7 +569,7 @@ generated = generate(model)
 
 ## 实验 8: Chroma + OpenAI 构建 RAG 问答
 
-> **对应章节**: [11_RAG_Systems](../../11_模型运维/README.md) · [20_论文精读/RAG_Deep_Dive](20_论文精读/RAG_Deep_Dive.md)  
+> **对应章节**: [11_RAG_Systems](../../11_模型运维/README.md) · [20_论文精读/RAG_Deep_Dive](20_论文精读/10_Retrieval/RAG_Deep_Dive.md)  
 > **学习目标**: 理解"先检索、后生成"的 RAG 工作流
 
 ```python

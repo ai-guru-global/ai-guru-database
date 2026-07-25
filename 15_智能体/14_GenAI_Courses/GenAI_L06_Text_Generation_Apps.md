@@ -518,7 +518,7 @@ completion = client.chat.completions.create(model=deployment, messages=messages,
 - [[90_学习/courses/microsoft/microsoft_genai_for_beginners]]
 - [[15_智能体/GenAI_L07_Building_Chat_Applications]]
 - [[15_智能体/GenAI_L11_Integrating_with_Function_Calling]]
-- [[15_智能体/Agentic_Design_Patterns_AndrewNg]]
+- [[15_智能体/01_Agent_Foundations/Agentic_Design_Patterns_AndrewNg]]
 - [[05_大模型/10_Multimodal_Models/Multimodal_Models_for_dummy]]
 
 ## 课程导航

@@ -590,7 +590,7 @@ flowchart TB
 ## Related
 
 - [[14_RAG系统/RAG_Systems]] — RAG 系统 (RAG Systems) (共享: embedding, rag, retrieval, vector-database)
-- [[14_RAG系统/README_Advanced]] — RAG高级实践 2026 (共享: embedding, rag, retrieval, vector-database)
+- [[14_RAG系统/04_Advanced_RAG/README_Advanced]] — RAG高级实践 2026 (共享: embedding, rag, retrieval, vector-database)
 - [[14_RAG系统/06_RAG_Frameworks/Spring_AI_RAG_Deep_Dive]] — Spring AI RAG 深度解析 (共享: embedding, rag, retrieval, vector-database)
 - [[治理/rag-vector-database]] — RAG 系统 × 向量数据库 (共享: embedding, rag, retrieval, vector-database)
 - [[14_RAG系统/06_RAG_Frameworks/Haystack_Deep_Dive.md|Haystack_Deep_Dive]]

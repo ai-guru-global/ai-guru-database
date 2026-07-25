@@ -21,7 +21,7 @@ tags: [auto-index]
 ## Related
 
 - [[02_机器学习/08_Anomaly_Detection/index|Anomaly Detection]]
-- [[18_行业应用/Supply_Chain_Logistics_index|Supply Chain & Logistics]]
+- [[18_行业应用/16_Supply_Chain_Logistics/Supply_Chain_Logistics_index|Supply Chain & Logistics]]
 
 ## 进阶知识拓展
 

@@ -78,7 +78,7 @@ sources: []
 | K8s 原生策略 — Kyverno | 实战 | YAML 策略引擎：验证、变更、生成、镜像签名 | [Kyverno_Deep_Dive.md](./07_AI_Security_2026/Kyverno_Deep_Dive.md) |
 | 运行时安全 — Falco | 实战 | 容器系统调用监控：逃逸检测、敏感文件访问、异常网络 | [Falco_Deep_Dive.md](./07_AI_Security_2026/Falco_Deep_Dive.md) |
 | AI 监管工程化 2026 | 实战 | 欧盟 AI 法案、监管即代码、合规生命周期管理、可审计性 | [AI_Regulatory_Engineering_2026.md](17_伦理安全/03_Governance/AI_Regulatory_Engineering_2026.md) |
-| AI 安全评测框架 (Safety Evaluation) | 实战 | 毒性/偏见/幻觉评测、对抗鲁棒性、红队测试方法论与基准 | [Safety_Evaluation_Framework.md](17_伦理安全/Safety_Evaluation_Framework.md) |
+| AI 安全评测框架 (Safety Evaluation) | 实战 | 毒性/偏见/幻觉评测、对抗鲁棒性、红队测试方法论与基准 | [Safety_Evaluation_Framework.md](17_伦理安全/04_AI_Safety_RedTeaming/Safety_Evaluation_Framework.md) |
 
 ## 前置知识 (Prerequisites)
 
@@ -162,14 +162,14 @@ sources: []
 - [[17_伦理安全/03_Governance/AI_Governance_Compliance_2026.md|AI_Governance_Compliance_2026]]
 - [[17_伦理安全/README_for_dummy.md|README_for_dummy]]
 - [[治理/ai-ethics-future|Ai Ethics Future]]
-- [[17_伦理安全/Safety_Evaluation_Framework|AI 安全评测框架]] — 安全评测基准与红队测试方法论
+- [[17_伦理安全/04_AI_Safety_RedTeaming/Safety_Evaluation_Framework|AI 安全评测框架]] — 安全评测基准与红队测试方法论
 
 - [[AI_Ethics_Safety_Future|AI 伦理、安全与未来]]
 - [[Agent_Security_Ethics_AGI|智能体安全、价值对齐与 AGI 路径]]
 
 ## 新增页面
 
-- [[17_伦理安全/Guardrails_Production_Guide|AI 护栏生产实践]]
+- [[17_伦理安全/04_AI_Safety_RedTeaming/Guardrails_Production_Guide|AI 护栏生产实践]]
 - [[17_伦理安全/AI_Red_Teaming_Guide|AI 红队测试指南]]
 
 ## 核心知识体系

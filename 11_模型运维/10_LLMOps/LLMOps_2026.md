@@ -252,7 +252,7 @@ Eval 数据集本身也是代码资产，必须版本化：
 | **LangSmith** | 商业 | 全栈（数据集+Judge+Trace） | 与 LangChain 深度集成 | LangChain 用户 |
 | **Arize Phoenix** | 商业 | 可观测+评估一体 | 开源版功能完整 | 重度可观测需求 |
 
-详见 [[09_测试/RAGAS_Deep_Dive]]、[[09_测试/02_Testing_Frameworks/DeepEval_Deep_Dive]]、[[09_测试/02_Testing_Frameworks/Promptfoo_Deep_Dive]]。
+详见 [[09_测试/02_Testing_Frameworks/RAGAS_Deep_Dive]]、[[09_测试/02_Testing_Frameworks/DeepEval_Deep_Dive]]、[[09_测试/02_Testing_Frameworks/Promptfoo_Deep_Dive]]。
 
 ---
 
@@ -317,7 +317,7 @@ def cascade(query: str):
 | 租户月预算 | > 80% | 告警 + 降级到便宜模型 |
 | 全局日 Token | > 日均 3 倍 | P0 告警 + 自动熔断 |
 
-详见 [[10_部署推理/LLM_Cost_Optimization]]。
+详见 [[10_部署推理/09_Cost/LLM_Cost_Optimization]]。
 
 ---
 
@@ -484,11 +484,11 @@ def rag_answer(question):
 
 ### 跨章
 - [[概念/mlops]] — MLOps 概念页（含 LLMOps 简述）
-- [[10_部署推理/LLM_Cost_Optimization]] — 成本优化细节
+- [[10_部署推理/09_Cost/LLM_Cost_Optimization]] — 成本优化细节
 - [[10_部署推理/06_Caching/Prompt_Caching_Advanced]] — Prompt 缓存工程实现
 - [[14_RAG系统/README]] — RAG 系统架构（本文 §6 侧重其 Ops）
 - [[09_测试/02_Testing_Frameworks/Promptfoo_Deep_Dive]] — Prompt 红队与测试
-- [[09_测试/RAGAS_Deep_Dive]] — RAG 评估事实标准
+- [[09_测试/02_Testing_Frameworks/RAGAS_Deep_Dive]] — RAG 评估事实标准
 - [[13_运维/README]] — AI 系统运维（基础设施层）
 - [[17_伦理安全/07_AI_Security_2026/README]] — 安全与红队
 - [[12_架构基建/11_AI_Gateway/README]] — AI 网关（路由/限流/计费）

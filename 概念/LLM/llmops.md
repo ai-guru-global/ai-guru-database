@@ -180,10 +180,10 @@ Ragas 评估 → 发现问题 → 优化检索/Chunking → 重新评估
 
 - [[11_模型运维/LLMOps_2026]] — LLMOps 全景深度解析
 - [[概念/Inference/model-serving]] — 模型服务
-- [[11_模型运维/LLM_Evaluation_Pipeline]] — LLM 评估流水线
+- [[11_模型运维/13_Evaluation/LLM_Evaluation_Pipeline]] — LLM 评估流水线
 - [[11_模型运维/08_Observability/LLM_Observability]] — LLM 可观测性
-- [[05_大模型/LLM_Production_Deployment_Runbook|LLM 生产部署 Runbook]]
-- [[05_大模型/LLM_Inference_Deep_Dive|LLM 推理深度解析]]
+- [[10_部署推理/01_Deployment_Fundamentals/LLM_Production_Deployment_Runbook|LLM 生产部署 Runbook]]
+- [[10_部署推理/03_Inference_Optimization/LLM_Inference_Deep_Dive|LLM 推理深度解析]]
 
 ## LLMOps 工具链全景 (2026)
 

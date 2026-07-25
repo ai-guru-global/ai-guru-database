@@ -2,7 +2,7 @@
 title: Neural Network Core
 type: index
 created: 2026-07-02
-updated: 2026-07-19
+updated: 2026-07-25
 sources: []
 ---
 
@@ -23,6 +23,8 @@ sources: []
 | [[03_深度学习/02_Neural_Network_Core/Neural_Architecture_Search|神经架构搜索]] | NAS 方法: DARTS/ENAS/EfficientNet |
 | [[03_深度学习/02_Neural_Network_Core/Convolutional_Architectures_Evolution|卷积架构演进]] | LeNet→ResNet→ConvNeXt 30年演进 |
 | [[03_深度学习/02_Neural_Network_Core/Embedding_Representation_Learning|嵌入与表示学习]] | Word2Vec→RoPE→多模态嵌入 |
+| [[03_深度学习/02_Neural_Network_Core/Attention_Mechanisms_index|注意力机制 (Attention Mechanisms)]] | 注意力机制子目录：从 Self-Attention 到 Flash Attention、GQA、MLA 的完整技术图谱。 | - |
+| [[03_深度学习/02_Neural_Network_Core/State_Space_Models_2026|状态空间模型 2026: Mamba 与 Transformer 后继者]] | Transformer统治了AI 7年，但2026年状态空间模型(SSM)开始挑战它的霸主地位——Mamba、S4、RetNet等新架构承诺O(n)线性复... | - |
 
 ## Related
 

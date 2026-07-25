@@ -200,14 +200,14 @@ AI 开源项目分类
 | **Aider** | 命令行代码编辑 | [Deep Dive](15_智能体/08_Agentic_Coding_Tools/Aider_Deep_Dive.md) |
 | **Continue** | VS Code 插件 | [Deep Dive](15_智能体/08_Agentic_Coding_Tools/Continue_Deep_Dive.md) |
 | **CodeRabbit** | 代码审查 | (见 International_Agentic_Tools.md) |
-| **Gradio** | ML Demo 框架 | [Deep Dive](15_智能体/Gradio_Deep_Dive.md) |
+| **Gradio** | ML Demo 框架 | [Deep Dive](10_部署推理/02_Inference_Engines/Gradio_Deep_Dive.md) |
 
 ### 5.3 模型服务
 
 | 工具 | 特点 | 文档 |
 |------|------|------|
 | **BentoML** | 一键打包 API | [Deep Dive](10_部署推理/02_Inference_Engines/BentoML_Deep_Dive.md) |
-| **Gradio** | Demo 界面 | [Deep Dive](15_智能体/Gradio_Deep_Dive.md) |
+| **Gradio** | Demo 界面 | [Deep Dive](10_部署推理/02_Inference_Engines/Gradio_Deep_Dive.md) |
 | **LangServe** | LangChain 服务 | (见 LangChain_Deep_Dive.md) |
 
 ---
@@ -240,7 +240,7 @@ AI 开源项目分类
 | 工具 | 特点 | 文档 |
 |------|------|------|
 | **MLflow** | 全流程，开源 | [Deep Dive](11_模型运维/04_Experiment_Tracking/MLflow_Deep_Dive.md) |
-| **Weights & Biases** | SaaS，易用 | [Deep Dive](09_测试/Weights_Biases_Deep_Dive.md) |
+| **Weights & Biases** | SaaS，易用 | [Deep Dive](09_测试/02_Testing_Frameworks/Weights_Biases_Deep_Dive.md) |
 | **ClearML** | 一站式，开源 | [Deep Dive](11_模型运维/04_Experiment_Tracking/ClearML_Deep_Dive.md) |
 
 ### 7.2 数据版本控制
@@ -281,7 +281,7 @@ AI 开源项目分类
 | **Braintrust** | 开源评估 | [Deep Dive](11_模型运维/08_Observability/Braintrust_Deep_Dive.md) |
 | **Helicone** | 可观测性 | [Deep Dive](11_模型运维/08_Observability/Helicone_Deep_Dive.md) |
 | **Promptfoo** | Prompt 测试 | [Deep Dive](09_测试/02_Testing_Frameworks/Promptfoo_Deep_Dive.md) |
-| **RAGAS** | RAG 评估 | [Deep Dive](09_测试/RAGAS_Deep_Dive.md) |
+| **RAGAS** | RAG 评估 | [Deep Dive](09_测试/02_Testing_Frameworks/RAGAS_Deep_Dive.md) |
 | **DeepEval** | LLM 评估 | [Deep Dive](09_测试/02_Testing_Frameworks/DeepEval_Deep_Dive.md) |
 
 ### 7.7 结构化输出

@@ -24,7 +24,7 @@ AI 编程知识体系（AI Coding Knowledge Base）— 涵盖编程基础、方�
 - [[16_编程/05_Tools/index|Tools]]
 - [[16_编程/03_Methodology/index|Methodology]]
 - [[16_编程/04_Practice/index|Practice]]
-- [[18_行业应用/Code_Generation_index|Code Generation]]
+- [[18_行业应用/18_Code_Generation/Code_Generation_index|Code Generation]]
 
 ## 核心知识体系
 

@@ -170,10 +170,10 @@ PRODUCTION_EVAL_PRACTICES = {
 ## 6. 交叉引用
 
 - [[15_智能体/|智能体系统]]
-- [[08_模型评估/Agent_Evaluation|Agent 评估 (模型评估视角)]]
+- [[08_模型评估/03_LLM_Evaluation/Agent_Evaluation|Agent 评估 (模型评估视角)]]
 - [[09_测试/|测试]]
 - [[17_伦理安全/|伦理安全]]
-- [[15_智能体/Computer_Use_Agents|Computer Use Agent]]
+- [[15_智能体/17_Agent_Applications/Computer_Use_Agents|Computer Use Agent]]
 
 ## 附录：核心概念速查
 

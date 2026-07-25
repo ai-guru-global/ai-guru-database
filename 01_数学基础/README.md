@@ -100,7 +100,7 @@ sources: []
 - [[01_数学基础/02_Linear_Algebra/Linear_Algebra_for_dummy]] — 线性代数入门
 - [[01_数学基础/03_Probability_Statistics/Probability_Statistics]] — 概率论与统计
 - [[01_数学基础/03_Probability_Statistics/Probability_Statistics_for_dummy]] — 概率统计入门
-- [[01_数学基础/Calculus_Optimization]] — 微积分与优化
+- [[01_数学基础/01_Math_Fundamentals/Calculus_Optimization]] — 微积分与优化
 - [[01_数学基础/04_Information_Theory/Information_Theory_Fundamentals]] — 信息论基础
 - [[01_数学基础/Fundamentals-in-nutshell]] — AI 基础速成指南
 

@@ -20,7 +20,7 @@ AI 安全工程师 — 防御对抗攻击（adversarial attack）、Prompt 注�
 ## Related
 
 - [[21_面试岗位/AI_Policy_Specialist/index|AI Policy Specialist]]
-- [[08_模型评估/Red_Team_Evaluation_index|Red Team Evaluation]]
+- [[08_模型评估/06_Safety_Evaluation/Red_Team_Evaluation_index|Red Team Evaluation]]
 - [[17_伦理安全/08_AI_Supply_Chain_Security/index|AI Supply Chain Security]]
 
 ## 岗位核心能力模型

@@ -11,7 +11,7 @@ relationships:
     type: alternative
 sources:
   - 15_智能体/05_Agent_Skills/HuggingFace_Hub_Tools.md
-  - 14_RAG系统/HF_Datasets_Streaming.md
+  - 14_RAG系统/02_Embeddings/HF_Datasets_Streaming_Guide.md
   - 概念/replicate.md
 summary: "Hugging Face 是全球最大的 AI 开源生态平台，提供 Transformers / Datasets / Hub 模型市场 / Inference API 等全套工具；2026 年已成为 LLM / 多模态模型的事实开源标准。"
 lifecycle: reviewed

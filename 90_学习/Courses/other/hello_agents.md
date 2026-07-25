@@ -81,17 +81,17 @@ aliases:
 
 | 章号 | 章节名称 | 关键概念 | 本库建议配合阅读 | 页面链接 |
 |------|----------|----------|------------------|----------|
-| 08 | 记忆与检索 | 感觉/工作/长期记忆、情景/语义/程序性记忆、MemoryManager、RAG Pipeline、Qdrant、Neo4j、SQLite | [[14_RAG系统/RAG_Systems]]、[[14_RAG系统/GenAI_L15_RAG_and_Vector_Databases]]、[[14_RAG系统/03_Vector_Databases/Qdrant_Deep_Dive]] | [[15_智能体/Hello_Agents_L08_Memory_RAG]] |
+| 08 | 记忆与检索 | 感觉/工作/长期记忆、情景/语义/程序性记忆、MemoryManager、RAG Pipeline、Qdrant、Neo4j、SQLite | [[14_RAG系统/RAG_Systems]]、[[14_RAG系统/01_RAG_Fundamentals/GenAI_L15_RAG_and_Vector_Databases]]、[[14_RAG系统/03_Vector_Databases/Qdrant_Deep_Dive]] | [[15_智能体/Hello_Agents_L08_Memory_RAG]] |
 | 09 | 上下文工程 | Prompt Engineering vs Context Engineering、上下文腐蚀、JIT 上下文、GSSC 流水线、压缩整合、结构化笔记、子代理架构 | [[05_大模型/08_Prompt_Engineering/Prompt_Engineering]]、[[15_智能体/03_Agent_Workflow/Workflow-in-nutshell]] | [[05_大模型/08_Prompt_Engineering/Hello_Agents_L09_Context_Engineering]] |
-| 10 | 智能体通信协议 | MCP、A2A、ANP、FastMCP、a2a-sdk、服务发现、去中心化网络 | [[15_智能体/A2A_Protocol_Deep_Dive]]、[[90_学习/References/Articles/awesome-mcp-servers]] | [[15_智能体/Hello_Agents_L10_Agent_Protocols]] |
-| 11 | Agentic-RL | 预训练、SFT、奖励建模、PPO、RLHF/RLAIF、Agentic RL、MDP、GRPO、推理与工具使用训练 | [[07_模型训练/06_Alignment/GRPO_and_New_Alignment_Methods]]、[[07_模型训练/06_Alignment/TRL_RLHF_DPO_Guide]]、[[06_强化学习/RL_Fundamentals]] | [[07_模型训练/Hello_Agents_L11_Agentic_RL]] |
+| 10 | 智能体通信协议 | MCP、A2A、ANP、FastMCP、a2a-sdk、服务发现、去中心化网络 | [[15_智能体/16_Agent_Protocols/A2A_Protocol_Deep_Dive]]、[[90_学习/References/Articles/awesome-mcp-servers]] | [[15_智能体/Hello_Agents_L10_Agent_Protocols]] |
+| 11 | Agentic-RL | 预训练、SFT、奖励建模、PPO、RLHF/RLAIF、Agentic RL、MDP、GRPO、推理与工具使用训练 | [[07_模型训练/06_Alignment/GRPO_and_New_Alignment_Methods]]、[[07_模型训练/06_Alignment/TRL_RLHF_DPO_Guide]]、[[06_强化学习/RL_Fundamentals]] | [[15_智能体/13_Hello_Agents/Hello_Agents_L11_Agentic_RL]] |
 | 12 | 智能体性能评估 | BFCL、GAIA、ToolBench、API-Bank、AgentBench、WebArena、LLM Judge、准精确匹配、Win Rate | [[08_模型评估/02_Benchmarks/Agentic_Benchmark_Guide]]、[[08_模型评估/04_Evaluation_Tools/LLM_as_Judge_Guide]]、[[08_模型评估/02_Benchmarks/LLM_Benchmark_Suite_2026]] | [[08_模型评估/02_Benchmarks/Agentic_Benchmark_Guide]] |
 
 ### 第四部分：综合案例进阶
 
 | 章号 | 章节名称 | 关键概念 | 本库建议配合阅读 | 页面链接 |
 |------|----------|----------|------------------|----------|
-| 13 | 智能旅行助手 | 多智能体协作、MCP、FastAPI、Vue3、高德地图 API、行程规划、预算计算、地图可视化 | [[15_智能体/GenAI_L17_AI_Agents]]、[[15_智能体/A2A_Protocol_Deep_Dive]] | [[15_智能体/Hello_Agents_L13_Travel_Assistant]] |
+| 13 | 智能旅行助手 | 多智能体协作、MCP、FastAPI、Vue3、高德地图 API、行程规划、预算计算、地图可视化 | [[15_智能体/GenAI_L17_AI_Agents]]、[[15_智能体/16_Agent_Protocols/A2A_Protocol_Deep_Dive]] | [[15_智能体/Hello_Agents_L13_Travel_Assistant]] |
 | 14 | 自动化深度研究智能体 | DeepResearch、TODO Planner、Task Summarizer、Report Writer、SearchTool、NoteTool、SSE 流式 | [[15_智能体/03_Agent_Workflow/Workflow-in-nutshell]]、[[14_RAG系统/04_Advanced_RAG/Agentic_RAG_Guide]] | [[14_RAG系统/04_Advanced_RAG/Agentic_RAG_Guide]] |
 | 15 | 构建赛博小镇 | Godot 游戏引擎、AI NPC、记忆与好感度系统、2D 像素办公室、情感分析、社会动态模拟 | [[15_智能体/GenAI_L17_AI_Agents]]、[[15_智能体/Hello_Agents_L08_Memory_RAG]] | [[15_智能体/Hello_Agents_L15_Cyber_Town]] |
 
@@ -113,10 +113,10 @@ aliases:
 | Extra04 | Hello-Agents 课程常见问题 | FAQ | [[90_学习/Courses/other/hello_agents]] |
 | Extra05 | Agent Skills 与 MCP 对比解读 | Agent Skills vs MCP | [[15_智能体/05_Agent_Skills/Agent_Skills_Deep_Dive]]、[[90_学习/References/Articles/awesome-mcp-servers]] |
 | Extra06 | GUI Agent 科普与实战 | GUI Agent 多场景实战 | [[15_智能体/11_OpenClaw_Ecosystem/Manus_My_Computer]] |
-| Extra07 | 环境配置 | 本地环境配置 | [[01_数学基础/AI_Development_Environment_Setup]] |
+| Extra07 | 环境配置 | 本地环境配置 | [[01_数学基础/08_Python_Toolkit/AI_Development_Environment_Setup]] |
 | Extra08 | 如何写出好的 Skill | Skill 写作最佳实践 | [[15_智能体/05_Agent_Skills/Agent_Skills_Practical_Guide]] |
 | Extra09 | Agent 应用开发实践踩坑与经验分享 | Code Agent 踩坑总结 | [[15_智能体/README]] |
-| Extra10 | Agent Self-Evolution 智能体自进化 | 自进化四类闭环与代表项目 | [[15_智能体/Agentic_Design_Patterns_AndrewNg]] |
+| Extra10 | Agent Self-Evolution 智能体自进化 | 自进化四类闭环与代表项目 | [[15_智能体/01_Agent_Foundations/Agentic_Design_Patterns_AndrewNg]] |
 | Extra11 | WebAgent 科普与实战 | Web Agent 原理与反爬实战 | [[15_智能体/11_OpenClaw_Ecosystem/README]] |
 | Extra12 | 旅行助手后训练实战 | 旅行助手 Demo 打磨成 Planner | [[15_智能体/Hello_Agents_L13_Travel_Assistant]] |
 | Extra13 | Hello-Agents 视频课录制共创 | 视频课程共创资源 | [[90_学习/Courses/other/hello_agents]] |

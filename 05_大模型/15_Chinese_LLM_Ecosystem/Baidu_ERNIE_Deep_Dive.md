@@ -784,7 +784,7 @@ print(response["result"])
 - [[05_大模型/15_Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]] — 国产模型对比矩阵
 - [[05_大模型/08_Prompt_Engineering/GenAI_L04_Prompt_Engineering_Fundamentals]] — 提示工程基础
 - [[05_大模型/07_Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs]] — LLM 微调技术
-- [[14_RAG系统/GenAI_L15_RAG_and_Vector_Databases]] — RAG 与向量数据库
+- [[14_RAG系统/01_RAG_Fundamentals/GenAI_L15_RAG_and_Vector_Databases]] — RAG 与向量数据库
 - [[15_智能体/GenAI_L17_AI_Agents]] — AI Agent 概述
 - [[90_学习/courses/microsoft/microsoft_genai_for_beginners]] — 生成式 AI 入门课程
 

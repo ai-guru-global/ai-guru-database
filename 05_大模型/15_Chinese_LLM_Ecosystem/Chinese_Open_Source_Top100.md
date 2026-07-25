@@ -554,7 +554,7 @@ Kimi-Linear-48B — 2025年12月发布
 - [[05_大模型/15_Chinese_LLM_Ecosystem/Kimi_Moonshot_Deep_Dive]] — Kimi 深度解析
 - [[05_大模型/15_Chinese_LLM_Ecosystem/InternLM_Deep_Dive]] — 书生浦语深度解析
 - [[05_大模型/15_Chinese_LLM_Ecosystem/Chinese_LLM_Training_Inference_Platforms]] — 训推平台实战
-- [[05_大模型/GenAI_L16_Open_Source_Models_and_Hugging_Face]] — 开源模型与 Hugging Face
+- [[05_大模型/14_Global_LLM_Ecosystem/GenAI_L16_Open_Source_Models_and_Hugging_Face]] — 开源模型与 Hugging Face
 - [[01_数学基础/10_AI_Hardware/Chinese_AI_Chips_Deep_Dive]] — 国产 AI 芯片
 
 ---

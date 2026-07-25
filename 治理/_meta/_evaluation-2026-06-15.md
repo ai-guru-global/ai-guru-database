@@ -5,7 +5,7 @@ tags: [meta, audit, evaluation, project-health, completeness]
 summary: 2026-06-15 全库内容完整性评估，基于实际扫描统计，覆盖规模、结构、内容质量、工程化水平及改进建议。
 created: 2026-06-15
 updated: 2026-06-15
-baseline: _project-evaluation.md
+baseline: 治理/_project-evaluation.md
 quality: final
 sources: []
 ---
@@ -203,7 +203,7 @@ AI Guru 知识库在**中文 AI 全栈知识库赛道**中属于**内容最丰�
 
 - **统计工具**: Python `pathlib` + `re`，排除 `前端应用/`、`94_可视化/`、`mkdocs-docs/`、`原始/`、`归档/`、`.venv/`、`.git/`、`node_modules/` 及 macOS 副本文件
 - **字数口径**: 字符总数（UTF-8）
-- **基线对照**: `_project-evaluation.md` (2026-06-03)、`_quality-assessment.md` (2026-06-15)
+- **基线对照**: `治理/_project-evaluation.md` (2026-06-03)、`_quality-assessment.md` (2026-06-15)
 - **辅助参考**: `_content-gap-analysis.md`、`_lint-report.md`、`_wiki-status.md`
 
 ---

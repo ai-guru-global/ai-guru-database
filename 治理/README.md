@@ -222,7 +222,7 @@ flowchart LR
 
 | 元文件 | 用途 |
 |--------|------|
-| `_project-evaluation.md` | **当前项目整体评估**——健康度、风险、优先改进项 |
+| `治理/_project-evaluation.md` | **当前项目整体评估**——健康度、风险、优先改进项 |
 | `_evaluation-2026-06-15.md` | 项目评估历史快照（2026-06-15） |
 | `_evaluation-2026-06-24.md` | 项目评估历史快照（2026-06-24） |
 | `_project-assessment-2026-06-22.md` | 项目评估历史快照（2026-06-22） |
@@ -310,7 +310,7 @@ flowchart LR
 1. 查看 [_quality-assessment.md](./_meta/_quality-assessment.md) 获取当前质量评估
 2. 查看 [_lint-report.md](./_meta/_lint-report.md) 获取格式和链接问题
 3. 查看 [_content-gap-analysis.md](./_meta/_content-gap-analysis.md) 识别内容缺口
-4. 查看 [_project-evaluation.md](./_meta/_project-evaluation.md) 获取整体项目评估
+4. 查看 [治理/_project-evaluation.md](./_meta/_project-evaluation.md) 获取整体项目评估
 
 ### 4. 快速查阅
 
@@ -353,7 +353,7 @@ flowchart LR
 │   ├── _directory-conventions.md      ← 目录结构规范
 │   ├── _lint-report*.md               ← Lint 报告
 │   ├── _quality-assessment.md         ← 质量评估
-│   ├── _project-evaluation.md         ← 项目评估
+│   ├── 治理/_project-evaluation.md         ← 项目评估
 │   ├── _content-audit-*.md            ← 内容审计
 │   ├── _evaluation-*.md               ← 项目评估历史快照
 │   ├── _insights.md                   ← 知识洞察

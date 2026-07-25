@@ -16,7 +16,7 @@ sources: []
 ## orphan: 281
 - 14_AI_Gateway/AI_Gateway_Comparison_2026.md
 - 14_AI_Gateway/LiteLLM_Deep_Dive.md
-- 03_深度学习/State_Space_Models_2026.md
+- 03_深度学习/02_Neural_Network_Core/State_Space_Models_2026.md
 - AI测试/Testing_Frameworks/Promptfoo_Deep_Dive.md
 - AI测试/Weights_Biases_Deep_Dive.md
 - AI测试/Testing_Frameworks/DeepEval_Deep_Dive.md

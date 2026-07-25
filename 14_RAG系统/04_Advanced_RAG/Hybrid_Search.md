@@ -1,0 +1,228 @@
+---
+title: 混合检索 (Hybrid Search)
+category: 05-rag
+tags: ["hybrid-search", "bm25", "vector-search", "reranking", "colbert"]
+summary: "混合检索完整指南：BM25+向量融合、重排序（Reranking）、ColBERT/RRF 算法、Elasticsearch/Weaviate 实战、2026 检索最佳实践。"
+created: 2026-07-21
+updated: 2026-07-21
+tier: supporting
+sources: []
+
+---
+# 混合检索 (Hybrid Search)
+
+## 1. 为什么需要混合检索？
+
+```
+单一检索的局限:
+
+BM25 (关键词):
+  ✅ 精确匹配 (产品名/错误码/专有名词)
+  ❌ 语义理解弱 ("汽车" 搜不到 "轿车")
+
+向量检索 (语义):
+  ✅ 语义理解强 (同义词/释义)
+  ❌ 精确匹配弱 (长尾词/稀有词)
+
+混合检索 = BM25 + 向量 + 重排序
+  → 兼顾精确匹配和语义理解
+  → 2026 生产 RAG 的标配
+```
+
+## 2. 架构
+
+```python
+class HybridSearchEngine:
+    """混合检索: BM25 + 向量 + 重排序"""
+    
+    def __init__(self, vector_db, bm25_index, reranker):
+        self.vector_db = vector_db      # 向量数据库
+        self.bm25 = bm25_index          # BM25 索引
+        self.reranker = reranker        # 重排序模型
+    
+    async def search(self, query, top_k=10):
+        """混合检索流程"""
+        # 1. 并行检索
+        vector_results = await self.vector_db.search(
+            query_embedding=embed(query),
+            top_k=top_k * 2,  # 多取一些
+        )
+        bm25_results = self.bm25.search(
+            query=query,
+            top_k=top_k * 2,
+        )
+        
+        # 2. 融合 (RRF)
+        merged = self.reciprocal_rank_fusion(
+            [vector_results, bm25_results],
+            k=60,  # RRF 常数
+        )
+        
+        # 3. 重排序 (Cross-Encoder)
+        reranked = await self.reranker.rerank(
+            query=query,
+            documents=merged[:top_k * 2],
+            top_k=top_k,
+        )
+        
+        return reranked
+    
+    def reciprocal_rank_fusion(self, result_lists, k=60):
+        """
+        RRF (Reciprocal Rank Fusion):
+        score(d) = Σ 1/(k + rank_i(d))
+        """
+        scores = {}
+        for results in result_lists:
+            for rank, doc in enumerate(results):
+                if doc.id not in scores:
+                    scores[doc.id] = {"doc": doc, "score": 0}
+                scores[doc.id]["score"] += 1.0 / (k + rank + 1)
+        
+        # 按融合分数排序
+        sorted_docs = sorted(
+            scores.values(), key=lambda x: x["score"], reverse=True
+        )
+        return [item["doc"] for item in sorted_docs]
+```
+
+## 3. 重排序 (Reranking)
+
+```python
+RERANKING_MODELS = {
+    "开源": {
+        "bge-reranker-v2-m3": "BAAI, 多语言, 最常用",
+        "jina-reranker-v2": "Jina AI, 多语言",
+        "ms-marco-MiniLM": "经典, 英文",
+        "Cohere Rerank 3": "API, 最强",
+    },
+    "2026 新": {
+        "ColBERT v3": "延迟交互, 高效",
+        "RankGPT": "LLM-as-Reranker",
+        "bge-reranker-v3": "BAAI 最新",
+    },
+}
+
+# ColBERT 风格: 延迟交互
+class ColBERTRetrieval:
+    """
+    ColBERT: token 级交互
+    - 文档 token 独立编码 (可预计算)
+    - 查询 token 与文档 token 逐一交互
+    - 比 Cross-Encoder 快 100x, 比 Bi-Encoder 准
+    """
+    def search(self, query, documents):
+        query_tokens = self.encode_query(query)  # [num_tokens, dim]
+        
+        scores = []
+        for doc in documents:
+            doc_tokens = self.get_precomputed(doc.id)  # 预计算
+            # MaxSim: 每个 query token 找最相似的 doc token
+            sim_matrix = query_tokens @ doc_tokens.T
+            score = sim_matrix.max(dim=1).values.sum()
+            scores.append(score)
+        
+        return sorted(zip(documents, scores), key=lambda x: -x[1])
+```
+
+## 4. 实现方案对比
+
+| 方案 | BM25 | 向量 | 重排序 | 适用 |
+|------|------|------|--------|------|
+| Elasticsearch 8+ | ✅ 原生 | ✅ kNN | 需外接 | 已有 ES |
+| Weaviate | ✅ BM25 | ✅ 原生 | ✅ 内置 | 一体化 |
+| Qdrant | 需外接 | ✅ 原生 | ✅ 内置 | 向量为主 |
+| Vespa | ✅ 原生 | ✅ 原生 | ✅ 内置 | 大规模 |
+| LlamaIndex | 可组合 | 可组合 | 可组合 | Python |
+| 自建 | BM25库 | pgvector | HF模型 | 完全控制 |
+
+## 5. 2026 最佳实践
+
+```python
+HYBRID_SEARCH_BEST_PRACTICES = {
+    "检索": [
+        "BM25 + 向量并行 (不要只用一种)",
+        "向量: 使用最新嵌入模型 (bge-m3/text-embedding-3)",
+        "BM25: 中文需分词 (jieba/ik)",
+        "多路召回: top_k * 2~3 再重排",
+    ],
+    "重排序": [
+        "必加! 重排序可提升 10-20% 准确率",
+        "Cross-Encoder 最准但慢",
+        "ColBERT 平衡速度和准确率",
+        "LLM Rerank 最贵但最灵活",
+    ],
+    "优化": [
+        "查询改写: 扩展/分解查询",
+        "元数据过滤: 先过滤再检索",
+        "缓存: 热门查询缓存结果",
+        "A/B 测试: 持续优化权重",
+    ],
+}
+```
+
+## 6. 交叉引用
+
+- [[14_RAG系统/|RAG 系统]]
+- [[14_RAG系统/01_RAG_Fundamentals/Chunking_Strategies|分块策略]]
+- [[14_RAG系统/04_Advanced_RAG/Knowledge_Graph_RAG|知识图谱 RAG]]
+- [[概念/RAG/embedding-models|嵌入模型]]
+- [[概念/RAG/rag-patterns|RAG 模式]]
+
+## 进阶知识拓展
+
+| 主题 | 深度内容 | 应用场景 | 参考资源 |
+|------|----------|----------|----------|
+| 核心原理 | 底层机制和数学推导 | 深度理解+优化 | 经典教材+论文 |
+| 工程实践 | 生产级实现细节 | 项目落地 | 开源项目+案例 |
+| 性能优化 | 瓶颈分析+调优策略 | 提升效率 | 性能分析工具 |
+| 安全合规 | 安全威胁+防护措施 | 风险管控 | 安全框架+标准 |
+| 前沿研究 | 最新进展+未来方向 | 技术预判 | 顶会论文+博客 |
+
+## 实践指南
+
+| 步骤 | 行动 | 工具/方法 | 预期产出 |
+|------|------|-----------|----------|
+| 1. 学习 | 系统学习核心知识 | 教材/课程/文档 | 知识体系建立 |
+| 2. 练习 | 动手实践加深理解 | 实验/项目/练习 | 技能熟练 |
+| 3. 应用 | 在实际项目中应用 | 工作项目/开源 | 经验积累 |
+| 4. 优化 | 持续改进和优化 | 性能分析/重构 | 质量提升 |
+| 5. 分享 | 输出和分享知识 | 博客/演讲/教学 | 影响力建设 |
+
+## 常见误区
+
+| 误区 | 正确认知 | 建议 |
+|------|----------|------|
+| 只学理论不实践 | 实践是检验理解的唯一标准 | 每学一个概念就动手验证 |
+| 追求完美再开始 | 完成比完美更重要 | 先做MVP再迭代 |
+| 忽视基础知识 | 基础决定上限 | 定期回顾基础 |
+| 盲目追新 | 新技术需要验证 | 评估后再采用 |
+| 单打独斗 | 协作效率更高 | 积极参与社区 |
+
+## 知识图谱关联
+
+| 关联主题 | 关系类型 | 参考路径 |
+|----------|----------|----------|
+| 基础理论 | 前置依赖 | 相关基础目录 |
+| 工具实践 | 实现支撑 | 工具/编程相关 |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
+
+## 版本更新记录
+
+| 版本 | 日期 | 变更 |
+|------|------|------|
+| v1.0 | 2025-01 | 初始创建 |
+| v1.1 | 2025-06 | 内容补充 |
+| v2.0 | 2026-01 | 全面扩写 |
+| v2.1 | 2026-07 | 质量强化+结构化增强 |
+
+## 快速自检
+
+- [ ] 核心概念能向他人清晰解释
+- [ ] 已完成至少一个实践项目
+- [ ] 了解主流方案优劣势和适用场景
+- [ ] 掌握常见问题排查方法
+- [ ] 关注最新技术动态
+- [ ] 知识已文档化沉淀

@@ -34,9 +34,9 @@ sources: []
 
 - [[05_大模型/Transformer_Architecture]] — Transformer 架构详解（入门版）
 - [[05_大模型/04_Transformer_Revolution/Self_Attention_Mechanism]] — Self-Attention 机制
-- [[05_大模型/LLM_Training_Deep_Dive]] — LLM 训练深度剖析
-- [[05_大模型/LLM_Inference_Deep_Dive]] — LLM 推理深度剖析
-- [[05_大模型/LLM_Architecture_Evolution]] — LLM 架构演进
+- [[07_模型训练/01_Training_Fundamentals/LLM_Training_Deep_Dive]] — LLM 训练深度剖析
+- [[10_部署推理/03_Inference_Optimization/LLM_Inference_Deep_Dive]] — LLM 推理深度剖析
+- [[05_大模型/05_LLM_Architectures/LLM_Architecture_Evolution]] — LLM 架构演进
 
 ---
 
@@ -249,7 +249,7 @@ $$\text{RMSNorm}(x) = \frac{x}{\sqrt{\frac{1}{d}\sum x_i^2 + \epsilon}} \cdot \g
 | 8,192 | 67M | 128 MB | 256x |
 | 131,072 | 17.2B | 32 GB | 65,536x |
 
-平方复杂度催生了 [[kv-cache]]、[[05_大模型/05_LLM_Architectures/Long_Context_Models_2026]]、稀疏注意力、[[mixture-of-experts]]、SSM/Mamba 等优化方向，详见 [[05_大模型/LLM_Inference_Deep_Dive]]。
+平方复杂度催生了 [[kv-cache]]、[[05_大模型/05_LLM_Architectures/Long_Context_Models_2026]]、稀疏注意力、[[mixture-of-experts]]、SSM/Mamba 等优化方向，详见 [[10_部署推理/03_Inference_Optimization/LLM_Inference_Deep_Dive]]。
 
 ---
 

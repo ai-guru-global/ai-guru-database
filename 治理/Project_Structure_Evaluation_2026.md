@@ -442,7 +442,7 @@ _projects/Cloud_Ops_Agent/README.md
 
 #### 2. 统一命名规范
 
-- `14_RAG系统/README_Advanced.md` → 重命名为 `README.md` 或合并为双栏导航
+- `14_RAG系统/04_Advanced_RAG/README_Advanced.md` → 重命名为 `README.md` 或合并为双栏导航
 - 确保所有主要目录都有 `README.md`（而非 `README_Advanced.md` 或其他变体）
 
 ### 7.2 短期执行（1-2 周）

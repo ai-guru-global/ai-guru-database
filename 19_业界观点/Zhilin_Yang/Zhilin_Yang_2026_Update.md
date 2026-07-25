@@ -169,7 +169,7 @@ Kimi 用户量大但付费转化与 ARPU 面临中国 C 端 AI 应用的普遍�
 ### 技术关联
 - [[10_部署推理/04_Inference_Performance/Long_Context_Inference_2026|长上下文推理]]
 - [[10_部署推理/03_Inference_Optimization/kv-cache-inference-optimization|KV Cache 优化]]
-- [[03_深度学习/Attention_Mechanisms|注意力机制]]（Transformer-XL 的基础）
+- [[03_深度学习/02_Neural_Network_Core/Attention_Mechanisms|注意力机制]]（Transformer-XL 的基础）
 - [[05_大模型/index|大模型生态]]
 - [[19_业界观点/Talks_Synthesis/China_US_AI_Race_Leaders_Views|中美 AI 竞赛观点]]
 

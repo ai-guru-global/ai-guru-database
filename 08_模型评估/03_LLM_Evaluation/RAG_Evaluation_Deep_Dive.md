@@ -461,5 +461,5 @@ rag_evaluation:
 - [[08_模型评估/Evaluation_Automation_2026|自动化模型评估 2026 — CI/CD 评估流水线]]
 - [[08_模型评估/04_Evaluation_Tools/LLM_as_Judge_Deep_Dive|LLM-as-Judge 深度解析 — 评委模型与偏见控制]]
 - [[08_模型评估/04_Evaluation_Tools/Online_Evaluation|在线评估 — A/B 测试与线上监控]]
-- [[09_测试/RAGAS_Deep_Dive|RAGAS — RAG 评估框架]]
+- [[09_测试/02_Testing_Frameworks/RAGAS_Deep_Dive|RAGAS — RAG 评估框架]]
 - [[14_RAG系统/RAG_Production_Architecture_Deep_Dive|RAG 生产架构深度解析 — RAG 系统生产级设计]]

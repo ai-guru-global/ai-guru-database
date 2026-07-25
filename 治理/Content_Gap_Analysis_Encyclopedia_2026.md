@@ -95,7 +95,7 @@ ASR（Whisper）、TTS（VITS/CosyVoice）、音频理解（AudioLM）、音乐�
 12. ✅ 论文补充: VAE/CoT/RAG → `20_论文精读/`
 
 ### P2 - 实践价值增强
-13. ✅ 统一 Benchmark 对比表 → `08_模型评估/Unified_Benchmark_Comparison.md`
+13. ✅ 统一 Benchmark 对比表 → `08_模型评估/02_Benchmarks/Unified_Benchmark_Comparison.md`
 14. ✅ 各章节配套实验 → `AI入门/Hands_On_Experiments_Guide.md`
 15. ✅ 概念间依赖关系图谱 → `概念/concept-dependency-graph.md`
 

@@ -22,7 +22,7 @@ sources: []
 | [AI System Architecture 2026](./02_Architecture_Overview/AI_System_Architecture_2026.md) | 四层架构全景图：应用层→服务层→数据层→基础设施层 | 架构师、技术负责人 |
 | [AI Infrastructure 2026](./02_Architecture_Overview/AI_Infrastructure_2026.md) | GPU 集群、存储网络、训练/推理基础设施 | 基础设施工程师 |
 | [Capacity Planning 2026](./02_Architecture_Overview/Capacity_Planning_2026.md) | QPS/并发模型、GPU 显存估算、成本预测 | 架构师、SRE |
-| [AI SRE Runbook](./AI_SRE_Runbook.md) | AI 系统 SLO/SLI、GPU 容量规划、事故响应、模型回滚、灾备 | AI SRE、平台负责人 |
+| [AI SRE Runbook](../13_运维/02_SRE_Reliability/AI_SRE_Runbook.md) | AI 系统 SLO/SLI、GPU 容量规划、事故响应、模型回滚、灾备 | AI SRE、平台负责人 |
 | [High Availability 2026](12_架构基建/02_Architecture_Overview/High_Availability_2026.md) | 多活架构、故障转移、灾备演练 | 运维工程师 |
 | [AI Cost Optimization 2026](12_架构基建/02_Architecture_Overview/AI_Cost_Optimization_2026.md) | 模型量化、缓存策略、批处理优化 | 成本敏感型团队 |
 | [Edge AI 2026](./07_Hardware_Compute/Edge_AI_2026.md) | 边缘部署、模型压缩、端侧推理 | 移动端/IoT 开发者 |
@@ -48,7 +48,7 @@ sources: []
 | [Kubernetes 网络深度解析](12_架构基建/04_Kubernetes_Core/Kubernetes_Networking_Deep_Dive.md) | CNI、Service、DNS、Ingress、NetworkPolicy 与排障 | 网络工程师、SRE |
 | [Kubernetes 存储深度解析](12_架构基建/04_Kubernetes_Core/Kubernetes_Storage_Deep_Dive.md) | PV/PVC/StorageClass、CSI、StatefulSet 与分布式存储 | 存储工程师、SRE |
 | [Kubernetes 可观测性栈](12_架构基建/04_Kubernetes_Core/Kubernetes_Observability_Stack.md) | Metrics/Logs/Traces 三支柱与阿里云专有云集成 | 可观测性工程师 |
-| [阿里云专有云 K8s 上下文](./Alibaba_Cloud_Proprietary_K8s_Context.md) | ACK 专有版/敏捷版、天基、ASCM、飞天底座映射 | 专有云运维、工单处理 |
+| [阿里云专有云 K8s 上下文](./06_Cloud_Providers/Alibaba_Cloud_Proprietary_K8s_Context.md) | ACK 专有版/敏捷版、天基、ASCM、飞天底座映射 | 专有云运维、工单处理 |
 
 ### 阿里云 AI 平台
 

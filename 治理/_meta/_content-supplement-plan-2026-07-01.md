@@ -29,7 +29,7 @@ sources: []
 
 ## 三、第一批：横向生产基础设施（5 个文件）
 
-### 1. `12_架构基建/AI_SRE_Runbook.md`
+### 1. `13_运维/02_SRE_Reliability/AI_SRE_Runbook.md`
 
 - **定位**: AI 系统的站点可靠性工程 Runbook，覆盖 SLO/SLI、on-call、事故响应、容量规划、灾备。
 - **目标读者**: AI Infra 工程师、SRE、平台负责人。
@@ -54,7 +54,7 @@ sources: []
   - Guardrails as Code：配置版本化、CI/CD 集成
   - 审计日志与合规留痕
 
-### 3. `05_大模型/LLM_Production_Deployment_Runbook.md`
+### 3. `10_部署推理/01_Deployment_Fundamentals/LLM_Production_Deployment_Runbook.md`
 
 - **定位**: 大语言模型从模型文件到线上服务的完整部署 Runbook。
 - **目标读者**: LLM Platform 工程师、后端工程师。
@@ -93,7 +93,7 @@ sources: []
 
 ## 四、第二批：评估、训练、成本（4 个文件）
 
-### 6. `07_模型训练/Training_Cost_Optimization_and_FinOps_2026.md`
+### 6. `07_模型训练/08_Cost_Optimization/Training_Cost_Optimization_and_FinOps_2026.md`
 
 - **定位**: 大模型训练的成本优化与 FinOps 实践。
 - **必须包含**:
@@ -138,7 +138,7 @@ sources: []
 
 ## 五、第三批：应用、代码、岗位、模板（5 个文件）
 
-### 10. `18_行业应用/AI_Production_Architecture_2026.md`
+### 10. `18_行业应用/01_Industry_Overview/AI_Production_Architecture_2026.md`
 
 - **定位**: 跨行业的 AI 生产架构通用模式与参考实现。
 - **必须包含**:
@@ -158,7 +158,7 @@ sources: []
   - 审计 checklist 与高危漏洞样例库
   - CI/CD 集成与企业合规要求
 
-### 12. `04_计算机视觉/CV_Deployment_and_Inference_2026.md`
+### 12. `04_计算机视觉/09_CV_Deployment/CV_Deployment_and_Inference_2026.md`
 
 - **定位**: 计算机视觉模型生产部署与推理优化。
 - **必须包含**:

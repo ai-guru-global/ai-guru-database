@@ -2,7 +2,7 @@
 title: Reasoning Models
 type: index
 created: 2026-07-02
-updated: 2026-07-21
+updated: 2026-07-25
 sources: []
 ---
 
@@ -30,6 +30,8 @@ sources: []
 | [[05_大模型/09_Reasoning_Models/DeepSeek_R1_Technical_Analysis|DeepSeek R1]] | DeepSeek R1 技术分析 |
 | [[05_大模型/09_Reasoning_Models/Neuro_Symbolic_and_Formal_Verification_2026|神经符号与形式验证]] | 神经符号推理方法 |
 | [[05_大模型/09_Reasoning_Models/README|README]] | 目录说明 |
+| [[05_大模型/09_Reasoning_Models/Test_Time_Compute_Scaling_2026|Test-Time Compute Scaling 2026: 推理时计算扩展的生产实践]] | 从生产环境视角系统梳理 Test-Time Compute Scaling（测试时计算扩展）: 核心原理、系统架构、成本-延迟-质量三角权衡、2026 年... | - |
+| [[05_大模型/09_Reasoning_Models/Test_Time_Training_2026|Test-Time Training: 测试时训练 (TTT 2026)]] | Test-Time Training (TTT) 与 Test-Time Compute 截然不同——它不是让模型"多想想"，而是在推理过程中对模型参数（... | - |
 
 ## 核心概念速查
 

@@ -1208,4 +1208,4 @@ flowchart LR
 - [[概念/Training/pruning|剪枝]] — 剪枝概念卡片
 - [[概念/Training/knowledge-distillation|知识蒸馏]] — 蒸馏概念卡片
 - [[概念/Training/model-compression|模型压缩]] — 压缩概念卡片
-- [[03_深度学习/Knowledge_Distillation|知识蒸馏]] — 蒸馏技术详解
+- [[03_深度学习/09_Advanced_Topics/Knowledge_Distillation|知识蒸馏]] — 蒸馏技术详解

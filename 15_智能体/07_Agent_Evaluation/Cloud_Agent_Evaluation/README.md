@@ -47,7 +47,7 @@ sources: []
 - [[15_智能体/07_Agent_Evaluation/Multi_Agent_Evaluation_2026]] — Multi-Agent System Evaluation Framework 2026 (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
 - [[11_模型运维/Cloud_Ops_Agent/docs/index|index]]
 - [[15_智能体/01_Agent_Foundations/AI_OpenSource_Projects_Overview.md|AI_OpenSource_Projects_Overview]]
-- [[15_智能体/Gradio_Deep_Dive.md|Gradio_Deep_Dive]]
+- [[10_部署推理/02_Inference_Engines/Gradio_Deep_Dive.md|Gradio_Deep_Dive]]
 - [[15_智能体/README.md|README]]
 - [[15_智能体/README_for_dummy.md|README_for_dummy]]
 - [[15_智能体/04_Agent_Harness/Agent_Harness_Architecture_2026.md|Agent_Harness_Architecture_2026]]

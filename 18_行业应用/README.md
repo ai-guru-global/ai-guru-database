@@ -17,8 +17,8 @@ sources: []
 
 ### 行业应用全景
 - [AI应用与行业融合全景](18_行业应用/01_Industry_Overview/AI_Applications_Industry.md) - 综合概览与跨行业趋势
-- [AI 生产架构 2026](./AI_Production_Architecture_2026.md) - 跨行业通用 AI 生产架构、模型治理、合规与 FinOps
-- [AI 平台选型 2026](./AI_Platform_Selection_2026.md) - 云 API、私有化、开源与企业级 AI 平台选型指南
+- [AI 生产架构 2026](./01_Industry_Overview/AI_Production_Architecture_2026.md) - 跨行业通用 AI 生产架构、模型治理、合规与 FinOps
+- [AI 平台选型 2026](./01_Industry_Overview/AI_Platform_Selection_2026.md) - 云 API、私有化、开源与企业级 AI 平台选型指南
 
 ### 按行业深度分析 (2025-2026)
 
@@ -26,17 +26,17 @@ sources: []
 |------|------|----------|--------|
 | **医疗健康** | [AI_Healthcare_2026](18_行业应用/03_Healthcare/AI_Healthcare_2026.md) | 65% | 影像诊断、药物研发、精准医疗、手术机器人 |
 | **金融服务** | [AI_Finance_2026](18_行业应用/04_Finance/AI_Finance_2026.md) | 75% | 风控反欺诈、算法交易、智能投顾、RegTech |
-| **智能制造** | [AI_Manufacturing_2026](18_行业应用/AI_Manufacturing_2026.md) | 55% | 数字孪生、预测性维护、视觉质检、黑灯工厂 |
-| **零售电商** | [AI_Retail_Ecommerce_2026](18_行业应用/AI_Retail_Ecommerce_2026.md) | 70% | 个性化推荐、动态定价、智能供应链、无人零售 |
-| **自动驾驶** | [AI_Autonomous_Driving_2026](18_行业应用/AI_Autonomous_Driving_2026.md) | 45% | Robotaxi、ADAS、自动驾驶卡车、智能交通 |
+| **智能制造** | [AI_Manufacturing_2026](18_行业应用/07_Manufacturing/AI_Manufacturing_2026.md) | 55% | 数字孪生、预测性维护、视觉质检、黑灯工厂 |
+| **零售电商** | [AI_Retail_Ecommerce_2026](18_行业应用/08_Retail_Ecommerce/AI_Retail_Ecommerce_2026.md) | 70% | 个性化推荐、动态定价、智能供应链、无人零售 |
+| **自动驾驶** | [AI_Autonomous_Driving_2026](18_行业应用/06_Autonomous_Driving/AI_Autonomous_Driving_2026.md) | 45% | Robotaxi、ADAS、自动驾驶卡车、智能交通 |
 | **教育** | [AI_Education_2026](18_行业应用/05_Education/AI_Education_2026.md) | 50% | AI 导师、个性化学习、编程教育、智能评估 |
-| **内容创作与媒体** | [AI_Content_Media_2026](18_行业应用/AI_Content_Media_2026.md) | 60%+ | 文本/图像/视频/音乐生成、AI 游戏 |
-| **法律与政务** | [AI_Legal_Government_2026](18_行业应用/AI_Legal_Government_2026.md) | 45% | 合同审查、诉讼预测、智慧城市、智能政务 |
-| **农业** | [AI_Agriculture_2026](18_行业应用/AI_Agriculture_2026.md) | 30% | 精准农业、农业机器人、产量预测、智能畜牧 |
-| **能源与气候** | [AI_Energy_Climate_2026](18_行业应用/AI_Energy_Climate_2026.md) | 45% | 智能电网、天气预测、碳监测、核聚变 |
-| **网络安全** | [AI_Security_Cybersecurity_2026](18_行业应用/AI_Security_Cybersecurity_2026.md) | 70% | 威胁检测、LLM 安全、渗透测试、零信任 |
-| **人力资源** | [AI_HR_Recruitment_2026](18_行业应用/AI_HR_Recruitment_2026.md) | 50% | 智能招聘、人才分析、员工体验、组织发展 |
-| **供应链物流** | [AI_Supply_Chain_2026](18_行业应用/AI_Supply_Chain_2026.md) | 55% | 需求预测、路径优化、仓储自动化、供应链韧性 |
+| **内容创作与媒体** | [AI_Content_Media_2026](18_行业应用/13_Content_Media/AI_Content_Media_2026.md) | 60%+ | 文本/图像/视频/音乐生成、AI 游戏 |
+| **法律与政务** | [AI_Legal_Government_2026](18_行业应用/11_Legal_Government/AI_Legal_Government_2026.md) | 45% | 合同审查、诉讼预测、智慧城市、智能政务 |
+| **农业** | [AI_Agriculture_2026](18_行业应用/10_Agriculture/AI_Agriculture_2026.md) | 30% | 精准农业、农业机器人、产量预测、智能畜牧 |
+| **能源与气候** | [AI_Energy_Climate_2026](18_行业应用/09_Energy_Climate/AI_Energy_Climate_2026.md) | 45% | 智能电网、天气预测、碳监测、核聚变 |
+| **网络安全** | [AI_Security_Cybersecurity_2026](18_行业应用/15_Security_Cybersecurity/AI_Security_Cybersecurity_2026.md) | 70% | 威胁检测、LLM 安全、渗透测试、零信任 |
+| **人力资源** | [AI_HR_Recruitment_2026](18_行业应用/12_HR_Recruitment/AI_HR_Recruitment_2026.md) | 50% | 智能招聘、人才分析、员工体验、组织发展 |
+| **供应链物流** | [AI_Supply_Chain_2026](18_行业应用/16_Supply_Chain_Logistics/AI_Supply_Chain_2026.md) | 55% | 需求预测、路径优化、仓储自动化、供应链韧性 |
 
 ## 2026 年行业应用特点
 
@@ -93,17 +93,17 @@ sources: []
 - [[18_行业应用/Industry_Applications-in-nutshell|AI 行业应用速览]] — 横向速览 AI 在各行业的落地全景 (共享: ai-applications, industry, finance, healthcare)
 - [[18_行业应用/Industry-in-nutshell|AI 行业应用速成指南]]
 
-- [[18_行业应用/AI_Energy_Climate_2026]] — AI 能源与气候行业应用 (2025-2026) (共享: ai-applications, finance, healthcare, industry)
+- [[18_行业应用/09_Energy_Climate/AI_Energy_Climate_2026]] — AI 能源与气候行业应用 (2025-2026) (共享: ai-applications, finance, healthcare, industry)
 - [[18_行业应用/Industry_Comparison_2026]] — AI 行业应用对比 2026 (Industry Comparison) (共享: ai-applications, finance, healthcare, industry)
 - [[18_行业应用/README_for_dummy]] — AI 行业应用 — 小白版 🏭 (共享: ai-applications, finance, healthcare, industry)
-- [[18_行业应用/AI_Agriculture_2026]] — AI_Agriculture_2026
-- [[18_行业应用/AI_Retail_Ecommerce_2026]] — AI_Retail_Ecommerce_2026
+- [[18_行业应用/10_Agriculture/AI_Agriculture_2026]] — AI_Agriculture_2026
+- [[18_行业应用/08_Retail_Ecommerce/AI_Retail_Ecommerce_2026]] — AI_Retail_Ecommerce_2026
 - [[18_行业应用/03_Healthcare/AI_Healthcare_2026]] — AI_Healthcare_2026
-- [[18_行业应用/AI_Content_Media_2026]] — AI_Content_Media_2026
+- [[18_行业应用/13_Content_Media/AI_Content_Media_2026]] — AI_Content_Media_2026
 - [[18_行业应用/05_Education/AI_Education_2026]] — AI_Education_2026
-- [[18_行业应用/AI_Manufacturing_2026]] — AI_Manufacturing_2026
-- [[18_行业应用/AI_Legal_Government_2026]] — AI_Legal_Government_2026
-- [[18_行业应用/AI_Autonomous_Driving_2026]] — AI_Autonomous_Driving_2026
+- [[18_行业应用/07_Manufacturing/AI_Manufacturing_2026]] — AI_Manufacturing_2026
+- [[18_行业应用/11_Legal_Government/AI_Legal_Government_2026]] — AI_Legal_Government_2026
+- [[18_行业应用/06_Autonomous_Driving/AI_Autonomous_Driving_2026]] — AI_Autonomous_Driving_2026
 - [[18_行业应用/04_Finance/AI_Finance_2026]] — AI_Finance_2026
 - [[18_行业应用/01_Industry_Overview/AI_Applications_Industry_for_dummy.md|AI_Applications_Industry_for_dummy]]
 - [[18_行业应用/01_Industry_Overview/Industry-in-nutshell.md|Industry-in-nutshell]]
@@ -111,7 +111,7 @@ sources: []
 
 ## 新增页面
 
-- [[18_行业应用/AI_Code_Generation_2026|AI 代码生成]]
+- [[18_行业应用/18_Code_Generation/AI_Code_Generation_2026|AI 代码生成]]
 - [[18_行业应用/04_Finance/AI_Finance_Applications_2026|AI 金融应用]]
 - [[18_行业应用/05_Education/AI_Education_Applications_2026|AI 教育应用]]
 - [[18_行业应用/03_Healthcare/AI_Healthcare_Applications_2026|AI 医疗应用]]

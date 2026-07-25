@@ -2,7 +2,7 @@
 title: Inference Optimization
 type: index
 created: 2026-07-24
-updated: 2026-07-24
+updated: 2026-07-25
 sources: []
 tags: [auto-index, inference-optimization]
 ---
@@ -23,6 +23,8 @@ tags: [auto-index, inference-optimization]
 | [[10_部署推理/03_Inference_Optimization/Multi_LoRA_Serving_Deep_Dive\|Multi-LoRA 推理服务]] | 单基座多适配器高效服务（S-LoRA/Punica） | 深度 |
 | [[10_部署推理/03_Inference_Optimization/Inference_Optimization_for_dummy\|推理优化小白指南]] | 零基础入门 | 入门 |
 | [[10_部署推理/03_Inference_Optimization/Inference_Tuning_Cheat_Sheet\|推理调优速查表]] | 实战调优 checklist | 速查 |
+| [[10_部署推理/03_Inference_Optimization/Model_Compression|模型压缩统一视角 (Model Compression)]] | 模型压缩统一技术体系：剪枝/蒸馏/量化/低秩分解的完整对比、组合策略、2026 LLM 压缩实践与部署优化。 | - | - |
+| [[10_部署推理/03_Inference_Optimization/LLM_Inference_Deep_Dive|LLM 推理深度剖析：解码策略、推理优化与服务引擎]] | > 系统覆盖 LLM 推理全链路：解码策略（贪心/束搜索/温度/Top-k/Top-p/Gumbel-Max）、推理优化（KV 缓存/GQA/MLA/Fl... | - | - |
 
 ## 核心知识体系
 

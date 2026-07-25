@@ -252,6 +252,6 @@ R0 → R1 → R2 → R3
 - [[15_智能体/15_Course_Notes/Microsoft_AI_Agents_L15_Browser_Use]] — 上一课：浏览器 Agent
 - [[15_智能体/15_Course_Notes/Microsoft_AI_Agents_L06_Trustworthy_Agents]] — L06：威胁建模（输入校验前置）
 - [[15_智能体/15_Course_Notes/Microsoft_AI_Agents_L10_Production]] — L10：可观测性（OTel）
-- [[17_伦理安全/GenAI_L13_Securing_AI_Applications]] — GenAI 安全基础
+- [[17_伦理安全/06_Security/GenAI_L13_Securing_AI_Applications]] — GenAI 安全基础
 - [[17_伦理安全/README]] — 伦理与安全主题（如有）
 - [[90_学习/courses/microsoft/microsoft_ai_agents_for_beginners]] — 课程总览

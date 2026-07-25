@@ -185,7 +185,7 @@ agent.recommend(strategy="balanced")  # 重新算
 
 - 本课是 [[15_智能体/15_Course_Notes/Microsoft_AI_Agents_L08_Multi_Agent]] 的深化——多 Agent 中每个成员都可以具备元认知
 - Corrective RAG 是 [[15_智能体/15_Course_Notes/Microsoft_AI_Agents_L05_Agentic_RAG]] 的进阶版
-- 与 [[15_智能体/Agentic_Design_Patterns_AndrewNg]] 的 Reflection 模式高度相关，本课提供了 Reflection 的工程化实现 ^[inferred]
+- 与 [[15_智能体/01_Agent_Foundations/Agentic_Design_Patterns_AndrewNg]] 的 Reflection 模式高度相关，本课提供了 Reflection 的工程化实现 ^[inferred]
 
 ---
 
@@ -194,7 +194,7 @@ agent.recommend(strategy="balanced")  # 重新算
 - [[15_智能体/15_Course_Notes/Microsoft_AI_Agents_L08_Multi_Agent]] — 上一课：多 Agent
 - [[15_智能体/15_Course_Notes/Microsoft_AI_Agents_L10_Production]] — 下一课：生产化
 - [[15_智能体/15_Course_Notes/Microsoft_AI_Agents_L05_Agentic_RAG]] — Agentic RAG 基础
-- [[15_智能体/Agentic_Design_Patterns_AndrewNg]] — Reflection 模式
+- [[15_智能体/01_Agent_Foundations/Agentic_Design_Patterns_AndrewNg]] — Reflection 模式
 - [[14_RAG系统/README]] — 本仓库 RAG 主题总览
 - [[90_学习/courses/microsoft/microsoft_ai_agents_for_beginners]] — 课程总览
 

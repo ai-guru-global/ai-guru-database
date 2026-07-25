@@ -1464,6 +1464,6 @@ class LLMEvaluationPipeline:
 - [[08_模型评估/README]] — 模型评估 (Model Evaluation) (共享: ab-testing, benchmark, metrics, model-evaluation)
 - [[08_模型评估/01_Evaluation_Fundamentals/Evaluation-in-nutshell.md|Evaluation-in-nutshell]]
 - [[08_模型评估/01_Evaluation_Fundamentals/Model_Evaluation_for_dummy.md|Model_Evaluation_for_dummy]]
-- [[17_伦理安全/Safety_Evaluation_Framework|AI 安全评测框架]] — 安全评测基准与红队测试方法论
+- [[17_伦理安全/04_AI_Safety_RedTeaming/Safety_Evaluation_Framework|AI 安全评测框架]] — 安全评测基准与红队测试方法论
 - [[治理/safety-evaluation-red-teaming|安全评测 × 红队]] — 模型评估与安全
 - [[治理/agent-evaluation-model-evaluation|Agent 评估 × 模型评估]] — 从指标到行为的评估范式迁移

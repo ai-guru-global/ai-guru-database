@@ -664,6 +664,6 @@ Agent 系统的灾备不仅要恢复服务，还要恢复用户的会话状态�
 - [[15_智能体/01_Agent_Foundations/Agent_State_Management|Agent 状态管理]]
 - [[15_智能体/06_Memory_Infrastructure/Agent_Memory_Systems_2026|AI Agent 记忆系统架构]]
 - [[15_智能体/04_Agent_Harness/Agent_Harness_Architecture_2026|Agent Harness 技术架构 2026]]
-- [[12_架构基建/AI_SRE_Runbook|AI SRE Runbook]]
+- [[13_运维/02_SRE_Reliability/AI_SRE_Runbook|AI SRE Runbook]]
 - [[10_部署推理/02_Inference_Engines/LLM_Inference_Engine_Selection_Guide|LLM 推理引擎选型指南]]
 - [[治理/ai-production-readiness|AI 生产就绪]] — 跨 LLM/RAG/Agent/SRE 的综合治理体系

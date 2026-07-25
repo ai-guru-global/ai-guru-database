@@ -6,7 +6,7 @@ sources:
   - "[[01_数学基础/Python_Data_Science_Toolkit]]"
   - "[[02_机器学习/02_Supervised_Learning/Your_First_ML_Model]]"
   - "[[01_数学基础/Python_for_AI_Basics]]"
-  - "[[01_数学基础/AI_Development_Environment_Setup]]"
+  - "[[01_数学基础/08_Python_Toolkit/AI_Development_Environment_Setup]]"
 created: 2026-06-05
 updated: 2026-06-05
 summary: "连接 Python 数据科学基础与第一个机器学习模型的完整实战路径——2 周内从 Pandas 入门到 Titanic 模型提交的 14 天计划。"
@@ -71,7 +71,7 @@ Day 14:   Kaggle 提交 + 总结复盘
 - [[01_数学基础/Python_Data_Science_Toolkit]] — Python 数据科学工具链
 - [[02_机器学习/02_Supervised_Learning/Your_First_ML_Model]] — 第一个 ML 模型
 - [[01_数学基础/Python_for_AI_Basics]] — Python AI 基础
-- [[01_数学基础/AI_Development_Environment_Setup]] — 开发环境配置
+- [[01_数学基础/08_Python_Toolkit/AI_Development_Environment_Setup]] — 开发环境配置
 - [[02_机器学习/02_Supervised_Learning/EDA_Quick_Start]] — EDA 快速入门
 - [[02_机器学习/05_Feature_Engineering/Data_Preprocessing_for_dummy]] — 数据预处理入门
 - [[治理/python-data-science-pipeline]] — Python × 数据科学管道

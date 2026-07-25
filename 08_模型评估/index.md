@@ -23,14 +23,14 @@ This page indexes the contents of `模型评估`.
 - [[08_模型评估/05_Automation/Evaluation_Report_Template|模型评估报告模板]]
 - [[08_模型评估/Evaluation_Automation_2026|Evaluation Automation 2026]]
 - [[08_模型评估/Evaluation_Metrics|Evaluation Metrics]]
-- [[08_模型评估/Fairness_Evaluation_for_dummy|Fairness Evaluation For Dummy]]
+- [[08_模型评估/06_Safety_Evaluation/Fairness_Evaluation_for_dummy|Fairness Evaluation For Dummy]]
 - [[08_模型评估/LLM_Evaluation_2026|LLM Evaluation 2026]]
 - [[08_模型评估/Model_Evaluation|Model Evaluation]]
 - [[08_模型评估/Model_Evaluation_for_dummy|Model Evaluation For Dummy]]
 - [[08_模型评估/README|README]]
 - [[08_模型评估/README_for_dummy|README For Dummy]]
 - [[08_模型评估/Statistical_Evaluation_Methods|Statistical Evaluation Methods]]
-- [[08_模型评估/Unified_Benchmark_Comparison|Unified Benchmark Comparison]]
+- [[08_模型评估/02_Benchmarks/Unified_Benchmark_Comparison|Unified Benchmark Comparison]]
 
 ## 进阶知识拓展
 

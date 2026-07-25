@@ -22,7 +22,7 @@ sources: []
 ## Related
 
 - [[20_论文精读/02_Architecture/index|Architecture]]
-- [[20_论文精读/Frontier_index|Frontier]]
+- [[20_论文精读/09_Frontier/Frontier_index|Frontier]]
 
 ## 进阶知识拓展
 

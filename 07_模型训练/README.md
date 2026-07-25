@@ -31,7 +31,7 @@ sources: []
 | [数据集文档模板 (Datasheet)](07_模型训练/02_Data/Datasheet_Template.md) | 记录数据集来源、构成、偏差与使用限制的标准模板 | 数据工程师 / 合规 |
 | [**GRPO 与新对齐方法**](07_模型训练/06_Alignment/GRPO_and_New_Alignment_Methods.md) | PPO/DPO/KTO/GRPO/RLOO/Reasoning RL | 对齐训练 |
 | [**剪枝与知识蒸馏**](07_模型训练/05_Compression/Pruning_and_Knowledge_Distillation.md) | Wanda/SparseGPT/LLM-Pruner/SFT 蒸馏 | 模型压缩 |
-| [**训练成本优化与 FinOps 2026**](07_模型训练/Training_Cost_Optimization_and_FinOps_2026.md) | GPU 利用率、Spot 实例、Checkpoint、成本归因与预算告警 | 训练 FinOps |
+| [**训练成本优化与 FinOps 2026**](07_模型训练/08_Cost_Optimization/Training_Cost_Optimization_and_FinOps_2026.md) | GPU 利用率、Spot 实例、Checkpoint、成本归因与预算告警 | 训练 FinOps |
 | [**Ray Deep Dive**](07_模型训练/04_Distributed_Training/Ray_Deep_Dive.md) | 分布式 AI 计算框架：Train/Serve/Data/Tune | 分布式训练与推理 |
 | [**DeepSpeed Deep Dive**](07_模型训练/04_Distributed_Training/DeepSpeed_Deep_Dive.md) | 微软大模型训练与推理优化：ZeRO / Offload / MoE | 大模型训练优化 |
 | [**Megatron-LM Deep Dive**](07_模型训练/04_Distributed_Training/Megatron_LM_Deep_Dive.md) | NVIDIA 大规模 Transformer 训练：TP / PP / 3D 并行 | 超大规模预训练 |

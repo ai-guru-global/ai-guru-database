@@ -1120,7 +1120,7 @@ class RecommendationEnv(gym.Env):
 - [[06_强化学习/05_Robotics_Embodied_AI/Robot_VLA_Training_Pipeline_2026|VLA 训练流水线]] — 端到端机器人训练
 
 #### Sim2Real
-- [[06_强化学习/Sim_to_Real_Transfer_Guide|Sim2Real 迁移指南]] — 仿真到现实迁移（机器人/自动驾驶 RL 的关键）
+- [[06_强化学习/05_Robotics_Embodied_AI/Sim_to_Real_Transfer_Guide|Sim2Real 迁移指南]] — 仿真到现实迁移（机器人/自动驾驶 RL 的关键）
 
 #### 智能体
 - [[15_智能体/01_Agent_Foundations/Agent-in-nutshell|Agent 速览]] — Agent RL 的架构基础

@@ -142,7 +142,7 @@ ACK 专有版 / 敏捷版
 - [[概念/pai|PAI]]
 - [[概念/ack|ACK]]
 - [[概念/alibaba-cloud|Alibaba Cloud]]
-- [[12_架构基建/Alibaba_Cloud_Proprietary_K8s_Context|阿里云专有云 K8s 上下文]]
+- [[12_架构基建/06_Cloud_Providers/Alibaba_Cloud_Proprietary_K8s_Context|阿里云专有云 K8s 上下文]]
 - [[07_模型训练/07_Monitoring/LLM_Fine_Tuning_Job_Failure_Runbook_on_K8s|LLM 微调任务 K8s 失败排障]]
 - [[13_运维/02_SRE_Reliability/LLM_Inference_Slow_Unavailable_Runbook|LLM 推理延迟/不可用 Runbook]]
 

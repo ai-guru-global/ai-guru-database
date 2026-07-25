@@ -64,7 +64,7 @@ MiniMax 的核心架构创新是 **Lightning Attention**，突破传统 Softmax 
 
 Lightning Attention 使 MiniMax 模型能够处理百万级 token 的超长上下文，在长上下文赛道与 [[19_业界观点/Zhilin_Yang/Zhilin_Yang_2026_Update|Kimi]] 形成直接竞争（Kimi 走产品级长文本，MiniMax 走效率型线性注意力）。
 
-线性注意力属于 State Space Model / 线性注意力家族，关联 [[03_深度学习/State_Space_Models_2026|状态空间模型]] 与 [[20_论文精读/02_Architecture/Mamba_SSM_Paper_Deep_Dive|Mamba 论文]]。
+线性注意力属于 State Space Model / 线性注意力家族，关联 [[03_深度学习/02_Neural_Network_Core/State_Space_Models_2026|状态空间模型]] 与 [[20_论文精读/02_Architecture/Mamba_SSM_Paper_Deep_Dive|Mamba 论文]]。
 
 ### 海螺 AI（Hailuo）：视频生成
 
@@ -178,7 +178,7 @@ Talkie 用户规模大，但角色扮演类 AI 应用的长期留存、付费转
 - [[19_业界观点/Jinze_Bai/about|白辰甲（阶跃星辰）]]
 
 ### 技术关联
-- [[03_深度学习/State_Space_Models_2026|状态空间模型]]（线性注意力家族）
+- [[03_深度学习/02_Neural_Network_Core/State_Space_Models_2026|状态空间模型]]（线性注意力家族）
 - [[20_论文精读/02_Architecture/Mamba_SSM_Paper_Deep_Dive|Mamba 论文]]
 - [[04_计算机视觉/index|计算机视觉]]（视频生成）
 - [[10_部署推理/04_Inference_Performance/Long_Context_Inference_2026|长上下文推理]]

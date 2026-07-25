@@ -13,7 +13,7 @@ This page indexes the contents of `部署推理`.
 ## Subdirectories
 
 - [[10_部署推理/06_Caching/index|Caching]]
-- [[10_部署推理/Cost_index|Cost]]
+- [[10_部署推理/09_Cost/Cost_index|Cost]]
 - [[10_部署推理/07_GPU_Infrastructure/index|GPU Infrastructure]]
 - [[10_部署推理/08_Hardware/index|Hardware]]
 - [[10_部署推理/02_Inference_Engines/index|Inference Engines]]
@@ -23,15 +23,15 @@ This page indexes the contents of `部署推理`.
 
 ## Files
 
-- [[10_部署推理/Blue_Green_Canary_Deployment|Blue Green Canary Deployment]]
+- [[10_部署推理/01_Deployment_Fundamentals/Blue_Green_Canary_Deployment|Blue Green Canary Deployment]]
 - [[10_部署推理/Deployment_Inference|Deployment Inference]]
 - [[10_部署推理/Deployment_Inference_2026|Deployment Inference 2026]]
 - [[10_部署推理/Deployment_Inference_for_dummy|Deployment Inference For Dummy]]
 - [[10_部署推理/Inference-in-nutshell|Inference In Nutshell]]
 - [[10_部署推理/Inference_Optimization_for_dummy|Inference Optimization For Dummy]]
 - [[10_部署推理/Inference_Tuning_Cheat_Sheet|Inference Tuning Cheat Sheet]]
-- [[10_部署推理/Model_Hot_Reload_and_Rollback_Runbook|Model Hot Reload And Rollback Runbook]]
-- [[10_部署推理/Model_Registry|Model Registry]]
+- [[10_部署推理/01_Deployment_Fundamentals/Model_Hot_Reload_and_Rollback_Runbook|Model Hot Reload And Rollback Runbook]]
+- [[11_模型运维/04_Experiment_Tracking/Model_Registry|Model Registry]]
 - [[10_部署推理/README|README]]
 - [[10_部署推理/README_for_dummy|README For Dummy]]
 

@@ -566,7 +566,7 @@ car (0.75) at [50, 300, 150, 380]
 - [多模态视觉](../08_Multimodal_Vision/Multimodal_Vision.md): CLIP, BLIP
 
 ### 跨领域应用
-- [迁移学习](03_深度学习/Transfer_Learning.md): 预训练模型微调
+- [迁移学习](03_深度学习/09_Advanced_Topics/Transfer_Learning.md): 预训练模型微调
 - [模型评估](08_模型评估/01_Evaluation_Fundamentals/Model_Evaluation.md): 混淆矩阵、ROC 曲线
 
 ---

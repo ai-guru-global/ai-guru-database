@@ -22,7 +22,7 @@ tags: [auto-index]
 ## Related
 
 - [[12_架构基建/index|架构基建首页]]
-- [[13_运维/Observability_index|Observability]]
+- [[13_运维/06_Observability/Observability_index|Observability]]
 
 ## 架构核心组件对比
 

@@ -176,7 +176,7 @@ result = client.chat.completions.create(
 - [[概念/LLM/llmops|LLMOps]]
 - [[概念/LLM/llm-as-judge|LLM-as-Judge]]
 - [[概念/LLM/promptfoo|Promptfoo]]
-- [[11_模型运维/LLM_Observability|LLM 可观测性]]
+- [[11_模型运维/08_Observability/LLM_Observability_2026|LLM 可观测性]]
 
 ## 典型工作流
 

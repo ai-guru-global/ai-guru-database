@@ -2,7 +2,7 @@
 title: Testing Frameworks
 type: index
 created: 2026-07-02
-updated: 2026-07-11
+updated: 2026-07-25
 sources: []
 ---
 
@@ -19,11 +19,14 @@ sources: []
 | [[09_测试/02_Testing_Frameworks/LLM_Safety_Testing_Deep_Dive|LLM 安全测试]] | 大模型安全测试方法论 |
 | [[09_测试/02_Testing_Frameworks/Regression_Testing_LLM_Deep_Dive|LLM 回归测试]] | 大模型回归测试策略 |
 | [[09_测试/02_Testing_Frameworks/Java_AI_Testing|Java AI 测试]] | Java 生态 AI 测试实践 |
+| [[09_测试/02_Testing_Frameworks/RAGAS_Deep_Dive|RAGAS: RAG 评估框架]] | RAGAS 是一个专门评估 RAG 系统质量的开源框架——通过多维度指标（Faithfulness、Answer Relevancy、Context Pr... | - |
+| [[09_测试/02_Testing_Frameworks/Weights_Biases_Deep_Dive|Weights & Biases: ML 实验追踪平台]] | Weights & Biases (W&B) 是 ML 实验追踪平台——参数记录、可视化、协作、模型管理，AI 研究者的实验瑞士军刀。 | - |
+| [[09_测试/02_Testing_Frameworks/Weights_Biases_index|Weights & Biases]] |  | - |
 
 ## Related
 
 - [[09_测试/01_Testing_Fundamentals/index|Testing Fundamentals]]
-- [[09_测试/RAGAS_index|RAGAS]]
+- [[09_测试/02_Testing_Frameworks/RAGAS_index|RAGAS]]
 
 ## 框架全景
 

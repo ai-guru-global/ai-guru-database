@@ -608,7 +608,7 @@ aliases:
 > - [[15_智能体/README|AI Agent]]
 > - [[多模态/README|多模态 AI]]
 > - [[RAG/README|RAG 检索增强生成]]
-> - [[18_行业应用/AI_Code_Generation_2026|AI 代码生成]]
+> - [[18_行业应用/18_Code_Generation/AI_Code_Generation_2026|AI 代码生成]]
 > - [[知识图谱/README|知识图谱]]
 > - [[06_强化学习/README|强化学习]]
 > - [[Prompt_Engineering/README|Prompt Engineering]]

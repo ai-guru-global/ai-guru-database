@@ -173,7 +173,7 @@ sources: []
 
 ## Related
 
-- [[05_大模型/LLM_Training_Deep_Dive|LLM Training]]
+- [[07_模型训练/01_Training_Fundamentals/LLM_Training_Deep_Dive|LLM Training]]
 - [[05_大模型/07_Fine_tuning_Techniques/index|Fine-tuning]]
 - [[05_大模型/index|大模型首页]]
 

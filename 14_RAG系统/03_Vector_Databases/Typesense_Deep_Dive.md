@@ -283,6 +283,6 @@ results = client.collections['documents'].documents.search(search_params)
 
 - [[14_RAG系统/01_RAG_Fundamentals/RAG-in-nutshell.md|RAG-in-nutshell]]
 - [[14_RAG系统/01_RAG_Fundamentals/RAG_Systems.md|RAG_Systems]]
-- [[14_RAG系统/README_Advanced.md|README_Advanced]]
+- [[14_RAG系统/04_Advanced_RAG/README_Advanced.md|README_Advanced]]
 - [[14_RAG系统/06_RAG_Frameworks/Spring_AI_RAG_Deep_Dive.md|Spring_AI_RAG_Deep_Dive]]
 - [[14_RAG系统/03_Vector_Databases/rag-vector-database.md|rag-vector-database]]

@@ -18,7 +18,7 @@ sources: []
 
 ## 核心论点
 
-当 LLM 从实验室模型变成面向用户的生产系统，评估对象也从"模型能不能答对题"扩展为"整个系统是否持续、安全、经济地满足用户需求"。[[08_模型评估/LLM_Evaluation_2026|LLM 评估方法论]]关注基础能力，[[08_模型评估/RAG_Evaluation_Deep_Dive|RAG 评估]]拆分检索与生成，[[09_测试/Agent_Evaluation_Deep_Dive|Agent 评估]]追踪多步行为轨迹，而[[11_模型运维/LLM_Guardrails_and_Safety_Ops_2026|安全护栏运维]]则确保这些能力在开放环境中不被滥用。四层评估既相互独立又层层递进，缺任何一层都会让生产系统陷入"指标好看、体验崩盘"的陷阱。
+当 LLM 从实验室模型变成面向用户的生产系统，评估对象也从"模型能不能答对题"扩展为"整个系统是否持续、安全、经济地满足用户需求"。[[08_模型评估/LLM_Evaluation_2026|LLM 评估方法论]]关注基础能力，[[08_模型评估/RAG_Evaluation_Deep_Dive|RAG 评估]]拆分检索与生成，[[09_测试/03_Agent_Evaluation/Agent_Evaluation_Deep_Dive|Agent 评估]]追踪多步行为轨迹，而[[11_模型运维/LLM_Guardrails_and_Safety_Ops_2026|安全护栏运维]]则确保这些能力在开放环境中不被滥用。四层评估既相互独立又层层递进，缺任何一层都会让生产系统陷入"指标好看、体验崩盘"的陷阱。
 
 ## 四层评估的联系与区别
 
@@ -47,7 +47,7 @@ MMLU 提升 2% 未必带来用户满意度提升，但 RAG 的幻觉率下降 1%
 
 **3. 评估流水线化，与 CI/CD 和线上监控打通**
 
-[[08_模型评估/Evaluation_Automation_2026|自动化评估]]不仅是离线跑 benchmark，更应成为发布门禁：模型更新触发回归测试，RAG 配置变更触发检索/生成评估，Agent 策略变更触发轨迹评估，护栏规则变更触发对抗测试。上线后通过[[12_架构基建/AI_SRE_Runbook|AI SRE 运行手册]]中的可观测体系持续收集真实用户反馈，形成"离线评估 → 上线 A/B → 线上监控 → 失败复盘 → 测试集补充"的闭环。
+[[08_模型评估/Evaluation_Automation_2026|自动化评估]]不仅是离线跑 benchmark，更应成为发布门禁：模型更新触发回归测试，RAG 配置变更触发检索/生成评估，Agent 策略变更触发轨迹评估，护栏规则变更触发对抗测试。上线后通过[[13_运维/02_SRE_Reliability/AI_SRE_Runbook|AI SRE 运行手册]]中的可观测体系持续收集真实用户反馈，形成"离线评估 → 上线 A/B → 线上监控 → 失败复盘 → 测试集补充"的闭环。
 
 ## 落地建议
 
@@ -55,7 +55,7 @@ MMLU 提升 2% 未必带来用户满意度提升，但 RAG 的幻觉率下降 1%
 
 **对 Agent 系统**：把评估从"答案对不对"转为"轨迹可不可靠"。建立黄金测试集覆盖常见任务路径与边界场景，使用[[08_模型评估/04_Evaluation_Tools/LLM_as_Judge_Deep_Dive|LLM-as-Judge]]对中间步骤评分，同时监控成本与延迟约束。多 Agent 协作场景还需关注涌现行为与工具权限边界。
 
-**对生产部署**：将评估嵌入发布流程。参考[[05_大模型/LLM_Production_Deployment_Runbook|LLM 生产部署运行手册]]与[[15_智能体/Agent_Production_Deployment_Runbook|Agent 生产部署运行手册]]，在 Canary 阶段同时跑能力回归、RAG 端到端、Agent 任务集与安全红队测试，任何一层未达标即阻止全量发布。
+**对生产部署**：将评估嵌入发布流程。参考[[10_部署推理/01_Deployment_Fundamentals/LLM_Production_Deployment_Runbook|LLM 生产部署运行手册]]与[[15_智能体/Agent_Production_Deployment_Runbook|Agent 生产部署运行手册]]，在 Canary 阶段同时跑能力回归、RAG 端到端、Agent 任务集与安全红队测试，任何一层未达标即阻止全量发布。
 
 **对安全护栏**：采用"评测 + 红队"双轨。用自动化有害内容评测建立底线，用对抗性 prompt、多轮诱导、角色扮演等红队方法探测边界。安全评估不是一次性审计，而应随模型版本迭代持续进行。
 
@@ -63,10 +63,10 @@ MMLU 提升 2% 未必带来用户满意度提升，但 RAG 的幻觉率下降 1%
 
 - [[08_模型评估/LLM_Evaluation_2026|LLM 评估方法论 2026]] — 基础能力评估全景
 - [[08_模型评估/RAG_Evaluation_Deep_Dive|RAG 系统评估深度解析]] — 检索与生成分层评估
-- [[09_测试/Agent_Evaluation_Deep_Dive|Agent 评估深度解析]] — 多步行为与轨迹评估
+- [[09_测试/03_Agent_Evaluation/Agent_Evaluation_Deep_Dive|Agent 评估深度解析]] — 多步行为与轨迹评估
 - [[08_模型评估/Evaluation_Automation_2026|自动化模型评估 2026]] — CI/CD 中的评估流水线
 - [[11_模型运维/LLM_Guardrails_and_Safety_Ops_2026|LLM 护栏与安全运维 2026]] — 生产安全评估与运维
-- [[05_大模型/LLM_Production_Deployment_Runbook|LLM 生产部署运行手册]] — 模型上线评估实践
+- [[10_部署推理/01_Deployment_Fundamentals/LLM_Production_Deployment_Runbook|LLM 生产部署运行手册]] — 模型上线评估实践
 - [[15_智能体/Agent_Production_Deployment_Runbook|Agent 生产部署运行手册]] — Agent 系统上线评估
 - [[08_模型评估/04_Evaluation_Tools/LLM_as_Judge_Deep_Dive|LLM-as-Judge 深度解读]] — 自动化评判的核心方法
 - [[治理/agent-evaluation-model-evaluation|Agent 评估 × 模型评估]] — 从指标到行为的范式迁移

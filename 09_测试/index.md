@@ -21,12 +21,12 @@ AI 测试知识体系（Testing Knowledge Base）— 涵盖测试方法论、评
 ## Related
 
 - [[09_测试/01_Testing_Fundamentals/index|Testing Fundamentals]]
-- [[09_测试/Agent_Evaluation_index|Agent Evaluation]]
-- [[09_测试/AB_Testing_index|AB Testing]]
-- [[09_测试/RAGAS_index|RAGAS]]
-- [[09_测试/Weights_Biases_index|Weights & Biases]]
-- [[09_测试/Test_Data_index|Test Data]]
-- [[09_测试/Contract_Testing_index|Contract Testing]]
+- [[09_测试/03_Agent_Evaluation/Agent_Evaluation_index|Agent Evaluation]]
+- [[09_测试/04_Online_Testing/AB_Testing_index|AB Testing]]
+- [[09_测试/02_Testing_Frameworks/RAGAS_index|RAGAS]]
+- [[09_测试/02_Testing_Frameworks/Weights_Biases_index|Weights & Biases]]
+- [[09_测试/01_Testing_Fundamentals/Test_Data_index|Test Data]]
+- [[09_测试/01_Testing_Fundamentals/Contract_Testing_index|Contract Testing]]
 - [[08_模型评估/index|模型评估]]
 
 ## 子域简介

@@ -193,7 +193,7 @@ def test_prompts(prompts, test_cases):
 
 ## 相关阅读
 - [[05_大模型/08_Prompt_Engineering/Prompt_Engineering]]
-- [[15_智能体/Agentic_Design_Patterns_AndrewNg]]
+- [[15_智能体/01_Agent_Foundations/Agentic_Design_Patterns_AndrewNg]]
 - [[08_模型评估/04_Evaluation_Tools/LLM_as_Judge_Deep_Dive]]
 - [[05_大模型/08_Prompt_Engineering/Hello_Agents_L04_ReAct|ReAct 模式]]
 - [[概念/prompt-engineering|提示工程概念]]

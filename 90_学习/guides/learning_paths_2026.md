@@ -188,7 +188,7 @@ flowchart LR
 **Phase 3: 工程化（32-44h）**
 
 - **Ch.07** — [Training nutshell](07_模型训练/01_Training_Fundamentals/Model-Training-in-nutshell.md) → [分布式训练](07_模型训练/04_Distributed_Training/index.md) → [混合精度](07_模型训练/03_Optimization/Mixed_Precision_Training.md)
-- **Ch.08** — [评估 for_dummy](08_模型评估/01_Evaluation_Fundamentals/Model_Evaluation_for_dummy.md) → [主文档](08_模型评估/01_Evaluation_Fundamentals/Model_Evaluation.md) → [A/B 测试](09_测试/AB_Testing_AI_Systems.md)
+- **Ch.08** — [评估 for_dummy](08_模型评估/01_Evaluation_Fundamentals/Model_Evaluation_for_dummy.md) → [主文档](08_模型评估/01_Evaluation_Fundamentals/Model_Evaluation.md) → [A/B 测试](09_测试/04_Online_Testing/AB_Testing_AI_Systems.md)
 - **Ch.09** — [部署 for_dummy](10_部署推理/01_Deployment_Fundamentals/Deployment_Inference_for_dummy.md) → [Inference nutshell](10_部署推理/01_Deployment_Fundamentals/Inference-in-nutshell.md) → [推理引擎选型指南](10_部署推理/02_Inference_Engines/LLM_Inference_Engine_Selection_Guide.md) → [vLLM](10_部署推理/02_Inference_Engines/vLLM_Deep_Dive.md) → [推理性能基础](10_部署推理/04_Inference_Performance/Inference_Performance_Fundamentals.md) → 实践: Docker + FastAPI
 - **Key Skills**: FSDP/混合精度、Precision/Recall/F1/AUC、vLLM、推理引擎选型、容器化部署
 
@@ -309,7 +309,7 @@ flowchart LR
 **Phase 2: 技术理解（7-11h）**
 
 - **Ch.04 (速览)** — [LLM nutshell](05_大模型/05_LLM_Architectures/LLM-Basics-in-nutshell.md) → [LLM for_dummy](05_大模型/05_LLM_Architectures/LLM_Architectures_for_dummy.md) → [Prompt for_dummy](05_大模型/08_Prompt_Engineering/Prompt_Engineering_for_dummy.md)
-- **Ch.08 (速览)** — [评估 for_dummy](08_模型评估/01_Evaluation_Fundamentals/Model_Evaluation_for_dummy.md) → [A/B 测试](09_测试/AB_Testing_AI_Systems.md) → [Benchmark](08_模型评估/02_Benchmarks/index.md)
+- **Ch.08 (速览)** — [评估 for_dummy](08_模型评估/01_Evaluation_Fundamentals/Model_Evaluation_for_dummy.md) → [A/B 测试](09_测试/04_Online_Testing/AB_Testing_AI_Systems.md) → [Benchmark](08_模型评估/02_Benchmarks/index.md)
 - **Key Skills**: LLM 能力边界、Token 与成本、Precision/Recall 业务权衡、Benchmark 解读
 
 **Phase 3: 责任 AI（6-10h）**
@@ -387,7 +387,7 @@ flowchart LR
 
 **Phase 3: 质量保障（18-26h）**
 
-- **Ch.15** — [AI 测试主文档](../../09_测试/README.md) → [Prompt 测试](09_测试/02_Testing_Frameworks/Promptfoo_Deep_Dive.md) → [RAG 评估](09_测试/RAGAS_Deep_Dive.md) → 实践: Prompt 回归测试套件
+- **Ch.15** — [AI 测试主文档](../../09_测试/README.md) → [Prompt 测试](09_测试/02_Testing_Frameworks/Promptfoo_Deep_Dive.md) → [RAG 评估](09_测试/02_Testing_Frameworks/RAGAS_Deep_Dive.md) → 实践: Prompt 回归测试套件
 - **Ch.16** — [AI Ops nutshell](13_运维/01_AIOps_Fundamentals/AIOps-in-nutshell.md) → [LLM 可观测性](../../11_模型运维/08_Observability/LLM_Observability.md) → [日志追踪](../../13_运维/README.md) → [告警恢复](13_运维/02_SRE_Reliability/AI_Incident_Response_Playbook.md) → 实践: Grafana + LangSmith 监控
 - **Key Skills**: Prompt 测试、RAG 评估、合同测试、LLM 指标监控、SLO/SLA、灾难恢复
 

@@ -248,7 +248,7 @@ flowchart TB
 | [Introduction to RAG - Coursera](https://www.coursera.org/projects/introduction-to-rag) | 课程 | RAG 入门实践 |
 | [RAG Techniques](https://github.com/NirDiamant/RAG_Techniques) | GitHub | ⭐ RAG 技术大全 |
 
-> **关联**: → [[14_RAG系统/01_RAG_Fundamentals|RAG 基础]] · [[20_论文精读/RAG_Deep_Dive|RAG 论文]]
+> **关联**: → [[14_RAG系统/01_RAG_Fundamentals|RAG 基础]] · [[20_论文精读/10_Retrieval/RAG_Deep_Dive|RAG 论文]]
 
 ---
 
@@ -459,23 +459,23 @@ flowchart TB
 - [[03_深度学习/08_DL_Frameworks/keras_overview|Keras]]
 
 ### 高级主题
-- [[15_智能体/A2A_Protocol_Deep_Dive|A2A 协议]]
-- [[05_大模型/Structured_Output_Guide|结构化输出指南]]
+- [[15_智能体/16_Agent_Protocols/A2A_Protocol_Deep_Dive|A2A 协议]]
+- [[05_大模型/16_Constrained_Generation/Structured_Output_Guide|结构化输出指南]]
 - [[08_模型评估/04_Evaluation_Tools/LLM_as_Judge_Guide|LLM-as-Judge 评估]]
 - [[概念/long-context-vs-rag|长上下文 vs RAG]]
 - [[16_编程/AI_Coding_2026_Guide|AI 编程 2026 全景]]
 - [[10_部署推理/06_Caching/Prompt_Caching_Advanced|Prompt 缓存高级]]
 - [[14_RAG系统/04_Advanced_RAG/Agentic_RAG_Guide|Agentic RAG]]
-- [[17_伦理安全/Guardrails_Production_Guide|AI 护栏实践]]
+- [[17_伦理安全/04_AI_Safety_RedTeaming/Guardrails_Production_Guide|AI 护栏实践]]
 - [[13_运维/AI_Observability_Guide_2026|AI 可观测性]]
 - [[17_伦理安全/AI_Red_Teaming_Guide|AI 红队测试]]
 - [[12_架构基建/11_AI_Gateway/LLM_Gateway_Comparison_2026|LLM 网关对比]]
 - [[14_RAG系统/02_Embeddings/Embedding_Models_Guide|Embedding 模型选型]]
 - [[15_智能体/06_Memory_Infrastructure/Agent_Memory_Techniques|Agent 记忆技术]]
-- [[10_部署推理/LLM_Cost_Optimization|LLM 成本优化]]
+- [[10_部署推理/09_Cost/LLM_Cost_Optimization|LLM 成本优化]]
 
 ### 应用场景
-- [[18_行业应用/AI_Code_Generation_2026|AI 代码生成]]
+- [[18_行业应用/18_Code_Generation/AI_Code_Generation_2026|AI 代码生成]]
 - [[18_行业应用/04_Finance/AI_Finance_Applications_2026|AI 金融应用]]
 - [[18_行业应用/05_Education/AI_Education_Applications_2026|AI 教育应用]]
 - [[18_行业应用/03_Healthcare/AI_Healthcare_Applications_2026|AI 医疗应用]]

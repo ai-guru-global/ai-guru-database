@@ -213,6 +213,6 @@ sources: []
 - [[03_深度学习/06_Self_Supervised_Learning/Self_Supervised_Learning_Deep_Dive|自监督学习深度解读]] — 对比学习与掩码建模深入
 - [[03_深度学习/06_Self_Supervised_Learning/index|自监督学习索引]] — 自监督学习主题导览
 - [[概念/Math/self-supervised-learning|自监督学习]] — 自监督学习概念卡片
-- [[03_深度学习/Transfer_Learning|迁移学习]] — 自监督预训练的下游应用
+- [[03_深度学习/09_Advanced_Topics/Transfer_Learning|迁移学习]] — 自监督预训练的下游应用
 - [[概念/Training/pre-training|预训练]] — 自监督学习的预训练范式
 - [[04_计算机视觉/08_Multimodal_Vision/CLIP_Deep_Dive|CLIP 深度解析]] — 对比学习代表模型

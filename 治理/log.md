@@ -40,7 +40,7 @@
    - `模板/API_Templates/API_Design_for_AI.md` → `12_架构基建/11_AI_Gateway/API_Design_for_AI.md`
    - `模板/LLM_Gateway/LLM_Gateway_Deep_Dive.md` → `12_架构基建/11_AI_Gateway/LLM_Gateway_Deep_Dive.md`
    - `模板/API_Templates/Prompt_Management_Platform.md` → `11_模型运维/11_Prompt_Ops/Prompt_Management_Platform.md`
-   - `模板/API_Templates/Documentation_Automation.md` → `11_模型运维/Documentation_Automation.md`
+   - `模板/API_Templates/Documentation_Automation.md` → `11_模型运维/01_MLOps_Fundamentals/Documentation_Automation.md`
 
 2. **可复用模板迁至实践场景旁边**
    - `Model_Card_Template.md` → `11_模型运维/04_Experiment_Tracking/`

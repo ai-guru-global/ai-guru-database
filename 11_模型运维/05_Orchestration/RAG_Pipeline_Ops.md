@@ -433,7 +433,7 @@ jobs:
 
 ### 本章内
 - [[11_模型运维/LLMOps_2026]] — 本系列主线（§6 是本文的概览版）
-- [[11_模型运维/LLM_Evaluation_Pipeline]] — RAG 质量评估方法
+- [[11_模型运维/13_Evaluation/LLM_Evaluation_Pipeline]] — RAG 质量评估方法
 - [[11_模型运维/08_Observability/Model_Monitoring_and_Drift_Detection_2026]] — 漂移检测理论
 - [[11_模型运维/05_Orchestration/Data_Pipeline_Orchestration]] — 数据编排（RAG Pipeline 的基础）
 
@@ -445,7 +445,7 @@ jobs:
 - [[概念/rag-systems]] — RAG 概念
 - [[概念/embedding-models]] — Embedding 模型
 - [[概念/matryoshka-representation-learning]] — 可截断嵌入（节省存储）
-- [[09_测试/RAGAS_Deep_Dive]] — RAG 评估事实标准
+- [[09_测试/02_Testing_Frameworks/RAGAS_Deep_Dive]] — RAG 评估事实标准
 - [[10_部署推理/06_Caching/Prompt_Caching_Advanced]] — 缓存与 RAG
 
 ---

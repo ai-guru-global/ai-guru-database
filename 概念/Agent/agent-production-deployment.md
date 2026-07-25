@@ -102,14 +102,14 @@ Agent 系统的生产部署与传统微服务存在本质差异：LLM 输出非�
 
 - [[15_智能体/Agent_Production_Deployment_Runbook|Agent 生产环境部署 Runbook]] — 从架构、K8s 部署、沙箱、版本化、可观测性到灾备的完整 Runbook
 - [[11_模型运维/LLM_Guardrails_and_Safety_Ops_2026|LLM 护栏与安全运维 2026]] — Guardrails as Code 与多层输入输出防护体系
-- [[05_大模型/LLM_Production_Deployment_Runbook|LLM 生产环境部署 Runbook]] — 推理引擎选型、KV Cache、Prefix Caching、量化与多模型路由
+- [[10_部署推理/01_Deployment_Fundamentals/LLM_Production_Deployment_Runbook|LLM 生产环境部署 Runbook]] — 推理引擎选型、KV Cache、Prefix Caching、量化与多模型路由
 - [[14_RAG系统/RAG_Production_Architecture_Deep_Dive|RAG 生产架构深度解析]] — RAG 与 Agent 结合时的检索质量、幻觉抑制与合规审计
-- [[09_测试/Agent_Evaluation_Deep_Dive|Agent 评估深度解析]] — 任务成功率、轨迹评估、LLM-as-Judge 与生产评估流水线
-- [[12_架构基建/AI_SRE_Runbook|AI SRE Runbook]] — AI 系统的 SLO/SLI、容量规划、事故响应与模型回滚
-- [[18_行业应用/AI_Production_Architecture_2026|AI 生产架构 2026]] — 跨行业通用五层架构、模型治理与 FinOps
+- [[09_测试/03_Agent_Evaluation/Agent_Evaluation_Deep_Dive|Agent 评估深度解析]] — 任务成功率、轨迹评估、LLM-as-Judge 与生产评估流水线
+- [[13_运维/02_SRE_Reliability/AI_SRE_Runbook|AI SRE Runbook]] — AI 系统的 SLO/SLI、容量规划、事故响应与模型回滚
+- [[18_行业应用/01_Industry_Overview/AI_Production_Architecture_2026|AI 生产架构 2026]] — 跨行业通用五层架构、模型治理与 FinOps
 - [[16_编程/AI_Code_Security_Audit_Runbook|AI 代码安全审计 Runbook]] — AI 生成代码的安全风险与 DevSecOps 集成
-- [[07_模型训练/Training_Cost_Optimization_and_FinOps_2026|训练成本优化与 FinOps 2026]] — 大模型训练的 GPU 利用率、Spot 实例与成本归因
-- [[18_行业应用/AI_Platform_Selection_2026|AI 平台选型 2026]] — 云 API、私有化、开源模型与企业级套件的选型框架
+- [[07_模型训练/08_Cost_Optimization/Training_Cost_Optimization_and_FinOps_2026|训练成本优化与 FinOps 2026]] — 大模型训练的 GPU 利用率、Spot 实例与成本归因
+- [[18_行业应用/01_Industry_Overview/AI_Platform_Selection_2026|AI 平台选型 2026]] — 云 API、私有化、开源模型与企业级套件的选型框架
 - [[21_面试岗位/Agent_Engineer_2026|Agent Engineer 岗位面试指南 2026]] — Agent 工程师核心考点与系统设计题
 - [[概念/agentops|AgentOps]] — Agent 可观测性平台
 - [[概念/agent-memory-systems|Agent 记忆系统]] — 短期与长期记忆设计

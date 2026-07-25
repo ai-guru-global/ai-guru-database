@@ -11,7 +11,7 @@ relationships:
     type: follows
 sources:
   - 08_模型评估/04_Evaluation_Tools/Online_Evaluation.md
-  - 11_模型运维/LLM_Evaluation_Pipeline.md
+  - 11_模型运维/13_Evaluation/LLM_Evaluation_Pipeline.md
 summary: "在线评估是在真实用户环境中验证模型效果的方法。相比离线基准，它直接测量业务指标（转化率、留存、满意度），常用 A/B 测试、影子部署、金丝雀发布等手段。"
 provenance:
   extracted: 0.8

@@ -12,9 +12,9 @@ relationships:
   - target: "概念/long-context-models"
     type: enables
 sources:
-  - 03_深度学习/State_Space_Models_2026.md
+  - 03_深度学习/02_Neural_Network_Core/State_Space_Models_2026.md
   - AI入门/AI_New_Architectures.md
-  - 05_大模型/LLM_Architecture_Evolution.md
+  - 05_大模型/05_LLM_Architectures/LLM_Architecture_Evolution.md
 summary: "Mamba 是一种‘用线性扫描代替注意力’的模型结构。它像一条传送带，边读边更新一个隐藏状态，不必像 Transformer 那样回头看所有词，因此在超长序列上更快、更省显存。"
 provenance:
   extracted: 0.75
@@ -185,7 +185,7 @@ class HybridBlock(nn.Module):
 - [[概念/LLM/transformer-architecture-plain|Transformer 架构]]
 - [[概念/LLM/sequence-models|序列模型]]
 - [[概念/LLM/state-space-models|状态空间模型]]
-- [[03_深度学习/State_Space_Models_2026|状态空间模型 2026]]
+- [[03_深度学习/02_Neural_Network_Core/State_Space_Models_2026|状态空间模型 2026]]
 - [[05_大模型/02_Sequence_Models/Sequence_Models|序列模型深度解析]]
 
 > **关键论文**: "Mamba: Linear-Time Sequence Modeling with Selective State Spaces" (Gu & Dao, 2023)

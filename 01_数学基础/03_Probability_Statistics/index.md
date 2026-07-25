@@ -23,7 +23,7 @@ tags: [auto-index]
 
 - [[01_数学基础/index|数学基础首页]]
 - [[02_机器学习/06_Bayesian_Methods/index|Bayesian Methods]]
-- [[09_测试/AB_Testing_index|AB Testing]]
+- [[09_测试/04_Online_Testing/AB_Testing_index|AB Testing]]
 
 ## 进阶知识拓展
 

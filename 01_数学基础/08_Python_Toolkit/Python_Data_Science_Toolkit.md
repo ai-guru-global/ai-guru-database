@@ -332,7 +332,7 @@ pip install jupyter notebook  # 交互式编程环境
 ## Related
 
 - [[01_数学基础/Python_for_AI_Basics]] — Python 语法基础
-- [[01_数学基础/AI_Development_Environment_Setup]] — Jupyter / Conda / GPU 环境
+- [[01_数学基础/08_Python_Toolkit/AI_Development_Environment_Setup]] — Jupyter / Conda / GPU 环境
 - [[02_机器学习/02_Supervised_Learning/Your_First_ML_Model]] — 你的第一个 ML 模型实战
 - [[02_机器学习/ML_Algorithms_Cheatsheet]] — 经典算法速查表
 - [[治理/python-data-science-pipeline|Python × 数据科学]] — 从语法到实战

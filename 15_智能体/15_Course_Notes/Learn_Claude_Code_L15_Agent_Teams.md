@@ -79,7 +79,7 @@ if inbox:
 - [[90_学习/Courses/share_ai/learn_claude_code]] — 仓库引用索引
 - [[15_智能体/15_Course_Notes/Learn_Claude_Code_L06_Subagent]] — 子 Agent
 - [[15_智能体/15_Course_Notes/Learn_Claude_Code_L17_Autonomous_Agents]] — 自治 Agent
-- [[15_智能体/A2A_Protocol_Deep_Dive]] — A2A 协议
+- [[15_智能体/16_Agent_Protocols/A2A_Protocol_Deep_Dive]] — A2A 协议
 
 ## 附录：核心概念速查
 

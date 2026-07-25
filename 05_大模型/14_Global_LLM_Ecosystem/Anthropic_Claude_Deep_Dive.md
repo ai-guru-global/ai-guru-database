@@ -1635,7 +1635,7 @@ for block in response.content:
 ### AI 安全与对齐
 
 - [Value Alignment (价值对齐)](17_伦理安全/02_Value_Alignment/Value_Alignment.md) — RLHF, DPO, RLAIF 等对齐方法的全面对比
-- [Safety Evaluation Framework](17_伦理安全/Safety_Evaluation_Framework.md) — AI 安全评估框架
+- [Safety Evaluation Framework](17_伦理安全/04_AI_Safety_RedTeaming/Safety_Evaluation_Framework.md) — AI 安全评估框架
 - [Mechanistic Interpretability](../../17_伦理安全/05_Mechanistic_Interpretability/) — 机械可解释性研究
 
 ### 全球 LLM 生态

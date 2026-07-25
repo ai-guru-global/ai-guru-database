@@ -443,9 +443,9 @@ results = vector_db.search(
 - [[14_RAG系统/04_Advanced_RAG/RAG_Retrieval_Latency_Optimization|RAG 检索延迟优化]]
 - [[14_RAG系统/04_Advanced_RAG/Multimodal_RAG_Architecture_2026|Multimodal RAG 2026]]
 - [[14_RAG系统/06_RAG_Frameworks/LlamaIndex_Deep_Dive|LlamaIndex 深度解析]]
-- [[09_测试/RAGAS_Deep_Dive|RAGAS 深度解析]]
+- [[09_测试/02_Testing_Frameworks/RAGAS_Deep_Dive|RAGAS 深度解析]]
 - [[15_智能体/Agent_Production_Deployment_Runbook|Agent 生产部署 Runbook]]
-- [[12_架构基建/AI_SRE_Runbook|AI SRE Runbook]]
+- [[13_运维/02_SRE_Reliability/AI_SRE_Runbook|AI SRE Runbook]]
 
 ---
 

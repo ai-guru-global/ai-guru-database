@@ -284,7 +284,7 @@ def detect_cost_anomaly():
 ### 跨章
 - [[07_模型训练/03_Optimization/Training_Optimization_2026]] — 训练优化
 - [[07_模型训练/03_Optimization/Mixed_Precision_Training]] — 混合精度
-- [[10_部署推理/LLM_Cost_Optimization]] — LLM 推理成本
+- [[10_部署推理/09_Cost/LLM_Cost_Optimization]] — LLM 推理成本
 - [[10_部署推理/05_Quantization/Quantization_Techniques_2026]] — 量化
 - [[12_架构基建/AI_Cost_Optimization_2026]] — 架构层成本
 - [[概念/mlops]] — MLOps 概念

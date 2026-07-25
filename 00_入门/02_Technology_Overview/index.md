@@ -2,7 +2,7 @@
 title: Technology Overview
 type: index
 created: 2026-07-02
-updated: 2026-07-21
+updated: 2026-07-25
 sources: []
 ---
 
@@ -19,6 +19,7 @@ sources: []
 | [[00_入门/02_Technology_Overview/AI_Multimodal_GenAI|多模态与生成式 AI]] | 多模态与 GenAI 概览 |
 | [[00_入门/02_Technology_Overview/AI_New_Architectures|AI 新架构]] | 新型 AI 架构介绍 |
 | [[00_入门/02_Technology_Overview/AI_Reasoning_Models_Guide|推理模型指南]] | 推理模型入门指南 |
+| [[00_入门/02_Technology_Overview/AI_Tools_Landscape_2026|AI 工具全景 2026 (AI Tools Landscape)]] | 2026 AI 工具全景图：编码（Cursor/Copilot）、对话（ChatGPT/Claude）、图像（Midjourney/SD）、视频（Sora... | - |
 
 ## Related
 

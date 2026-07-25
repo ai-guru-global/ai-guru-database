@@ -214,7 +214,7 @@ Harm de Vries(2023)推导:当模型缩到 Chinchilla-optimal 的 **30%**,训练�
 ## 相关链接
 
 - [[概念/LLM/emergent-abilities|涌现能力]] — 缩放定律驱动的涌现现象
-- [[05_大模型/LLM_Training_Deep_Dive|LLM 训练深度解析]] — 缩放定律指导训练
+- [[07_模型训练/01_Training_Fundamentals/LLM_Training_Deep_Dive|LLM 训练深度解析]] — 缩放定律指导训练
 - [[07_模型训练/03_Optimization/Scaling_Laws_and_Training_Dynamics|缩放定律与训练动力学]] — 缩放定律深入
 - [[05_大模型/14_Global_LLM_Ecosystem/Meta_LLaMA_Deep_Dive|Meta LLaMA 深度解析]] — 应用 Chinchilla 定律的代表
 - [[05_大模型/05_LLM_Architectures/LLM_Architectures|大语言模型架构]] — 缩放定律影响架构设计

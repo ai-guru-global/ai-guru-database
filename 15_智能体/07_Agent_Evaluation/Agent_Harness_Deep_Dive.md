@@ -991,7 +991,7 @@ class ProtocolPerformanceHarness:
         )
 ```
 
-**参考文档**: [Agent Protocols 2026](../Agent_Foundations/Agent_Protocols_2026.md)
+**参考文档**: [Agent Protocols 2026](../01_Agent_Foundations/Agent_Protocols_2026.md)
 
 ---
 

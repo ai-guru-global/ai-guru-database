@@ -437,10 +437,10 @@ Transformer 的计算复杂度为 $O(n^2 d)$,内存复杂度为 $O(n^2)$,在长�
 - [注意力机制](05_大模型/04_Transformer_Revolution/Transformer_Revolution.md): Seq2Seq Attention
 
 ### 后续推荐
-- [大语言模型架构](../LLM_Architectures/LLM_Architectures.md): GPT/BERT/T5 详解
-- [微调技术](../Fine_tuning_Techniques/Fine_tuning_Techniques.md): LoRA, RLHF
-- [预训练方法](../LLM_Architectures/LLM_Architectures.md): MLM, CLM, Seq2Seq
-- [提示工程](../Prompt_Engineering/Prompt_Engineering.md): Few-shot, CoT
+- [大语言模型架构](../05_LLM_Architectures/LLM_Architectures.md): GPT/BERT/T5 详解
+- [微调技术](../07_Fine_tuning_Techniques/Fine_tuning_Techniques.md): LoRA, RLHF
+- [预训练方法](../05_LLM_Architectures/LLM_Architectures.md): MLM, CLM, Seq2Seq
+- [提示工程](../08_Prompt_Engineering/Prompt_Engineering.md): Few-shot, CoT
 
 ### 跨领域应用
 - [Vision Transformer](04_计算机视觉/01_CV_Fundamentals/ViT_Deep_Dive.md): Transformer 在 CV 的应用

@@ -457,8 +457,8 @@ Musk 同时管理 6+ 公司引发精力分散质疑：
 ### 技术与基础设施
 
 - [[05_大模型/xAI]] -- xAI 模型技术全景
-- [[05_大模型/Reasoning_Models]] -- 推理模型路线
-- [[10_部署推理/GPU_Infrastructure]] -- Colossus 算力基建
+- [[05_大模型/09_Reasoning_Models]] -- 推理模型路线
+- [[10_部署推理/07_GPU_Infrastructure]] -- Colossus 算力基建
 - [[00_入门/AI_Future_Trends]] -- 具身智能与 AGI 讨论
 - [[17_伦理安全/README]] -- AI 治理与监管
 - [[00_入门/AI_Ethics_Society]] -- AI 伦理与社会影响

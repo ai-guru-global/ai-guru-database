@@ -32,8 +32,8 @@ summary: AI 系统的站点可靠性工程实践，包括 SLO 管理、事故响
 
 - [[../13_运维/02_SRE_Reliability/SRE_for_AI_Systems|AI 系统 SRE 实践]]
 - [[../13_运维/04_Troubleshooting/K8s_Troubleshooting_Playbook|K8s 排障手册]]
-- [[../Architecture_Overview/System_Architecture|系统架构]]
-- [[../CNCF_Cloud_Native_AI/|CNCF 云原生 AI]]
+- [[../02_Architecture_Overview/System_Architecture|系统架构]]
+- [[../05_CNCF_Cloud_Native_AI/|CNCF 云原生 AI]]
 
 ## 架构核心组件对比
 

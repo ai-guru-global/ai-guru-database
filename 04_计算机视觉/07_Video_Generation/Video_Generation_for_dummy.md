@@ -249,7 +249,7 @@ AI需要同时理解:
 
 - 想深入技术原理？→ [Video_Generation_2026.md](./Video_Generation_2026.md)
 - 想学其他 AI 技术？→ [计算机视觉总览](04_计算机视觉/01_CV_Fundamentals/CV-in-nutshell.md)
-- 想学 AI 画画？→ [生成模型 - 小白版](../Generative_Models/Generative_Models_for_dummy.md)
+- 想学 AI 画画？→ [生成模型 - 小白版](../06_Generative_Models/Generative_Models_for_dummy.md)
 
 ---
 

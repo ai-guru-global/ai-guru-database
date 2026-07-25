@@ -23,7 +23,7 @@ This page indexes the contents of `深度学习`.
 
 - [[03_深度学习/Deep_Learning_For_Beginners|Deep Learning For Beginners]]
 - [[03_深度学习/DL-in-nutshell|DL In Nutshell]]
-- [[03_深度学习/DL_Fundamentals|DL Fundamentals]]
+- [[03_深度学习/01_DL_Fundamentals|DL Fundamentals]]
 - [[03_深度学习/DL_Overview|DL Overview]]
 - [[03_深度学习/README|README]]
 - [[03_深度学习/README_for_dummy|README For Dummy]]

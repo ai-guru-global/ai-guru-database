@@ -854,12 +854,12 @@ flowchart TB
 
 ### 前置知识
 - [Attention Is All You Need 深度解读](./Attention_Is_All_You_Need_Deep_Dive.md) — Transformer 基础架构
-- [GPT-3 深度解读](../Scaling/GPT3_Deep_Dive.md) — Decoder-only 架构与 Scaling Laws
+- [GPT-3 深度解读](../03_Scaling/GPT3_Deep_Dive.md) — Decoder-only 架构与 Scaling Laws
 - [BERT 深度解读](./BERT_Deep_Dive.md) — 预训练-微调范式的对比
 
 ### 横向关联
 - [LLM 架构](../05_大模型/05_LLM_Architectures/) — 现代大模型架构设计
-- [RLHF 与 DPO 深度解读](../Alignment/RLHF_DPO_Deep_Dive.md) — LLaMA 2 Chat 的 RLHF 对齐
+- [RLHF 与 DPO 深度解读](../06_Alignment/RLHF_DPO_Deep_Dive.md) — LLaMA 2 Chat 的 RLHF 对齐
 - [Mixture of Experts 深度解读](./Mixture_of_Experts_Deep_Dive.md) — MoE 架构在 LLM 中的应用
 
 ### 进阶方向

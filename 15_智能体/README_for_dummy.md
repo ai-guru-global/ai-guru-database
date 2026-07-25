@@ -173,7 +173,7 @@ Manager Agent ─── 分配任务
 ## 下一步
 
 - 想深入技术？→ 查看子目录具体文档
-- 想学 Agent 评估？→ [Agent_Evaluation/README_for_dummy.md](./Agent_Evaluation/README_for_dummy.md)
+- 想学 Agent 评估？→ [Agent_Evaluation/README_for_dummy.md](./07_Agent_Evaluation/README_for_dummy.md)
 - 想学 RAG？→ [14_RAG系统/README_for_dummy.md](../14_RAG系统/README_for_dummy.md)
 
 ---

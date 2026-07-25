@@ -353,6 +353,6 @@ L1 工具结果磁盘缓存 -> L2 微压缩 (60min) -> L3 Session Memory -> L4 �
 - [[AgentOps_Production_Guide]] -- Part 3: 工程实践与落地
 - [[Context_Engineering_Guide]] -- 上下文工程完整指南
 - [[Prompt_Engineering_Complete_Guide]] -- 提示词工程指南
-- [[Agent_Foundations/Agent_Protocols_2026]] -- 协议详解
-- [[Agent_Foundations/MCP_Implementation_Guide]] -- MCP 实现指南
-- [[Agent_Workflow/Agentic_Workflow_Design_Patterns_2026]] -- 工作流设计模式
+- [[01_Agent_Foundations/Agent_Protocols_2026]] -- 协议详解
+- [[01_Agent_Foundations/MCP_Implementation_Guide]] -- MCP 实现指南
+- [[03_Agent_Workflow/Agentic_Workflow_Design_Patterns_2026]] -- 工作流设计模式

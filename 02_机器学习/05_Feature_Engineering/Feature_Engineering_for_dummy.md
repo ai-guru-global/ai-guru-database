@@ -188,8 +188,8 @@ A: 说实话，它确实是 AI 项目中最"脏活累活"的部分。但它也�
 ## 想深入了解？
 
 - 专业版: [特征工程完整版](./Feature_Engineering.md)
-- 前置知识: [监督学习小白版](../Supervised_Learning/Supervised_Learning_for_dummy.md)
-- 下一站: [无监督学习小白版](../Unsupervised_Learning/Unsupervised_Learning_for_dummy.md)
+- 前置知识: [监督学习小白版](../02_Supervised_Learning/Supervised_Learning_for_dummy.md)
+- 下一站: [无监督学习小白版](../03_Unsupervised_Learning/Unsupervised_Learning_for_dummy.md)
 
 ---
 *本文是 [Feature_Engineering.md](./Feature_Engineering.md) 的简化版，适合零基础读者。*

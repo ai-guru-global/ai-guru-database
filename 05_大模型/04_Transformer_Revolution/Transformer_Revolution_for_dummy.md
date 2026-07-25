@@ -389,14 +389,14 @@ Multi-Head = 让 AI 同时从多个角度理解句子,就像你用多个摄像�
 ### 📚 推荐学习路径
 
 1. **本文 (你现在在这)**: 理解 Transformer 的核心思想
-2. **[大语言模型架构 (小白版)](../LLM_Architectures/LLM_Architectures_for_dummy.md)**: 看 GPT、BERT 如何基于 Transformer 构建
+2. **[大语言模型架构 (小白版)](../05_LLM_Architectures/LLM_Architectures_for_dummy.md)**: 看 GPT、BERT 如何基于 Transformer 构建
 3. **[原版技术文档](./Transformer_Revolution.md)**: 深入数学公式和实现细节
 
 ### 🔗 相关内容
 
-- **前置知识**: [序列模型 (小白版)](../Sequence_Models/Sequence_Models_for_dummy.md)
-- **后续主题**: [大语言模型架构 (小白版)](../LLM_Architectures/LLM_Architectures_for_dummy.md)
-- **实际应用**: [提示词工程 (小白版)](../Prompt_Engineering/Prompt_Engineering_for_dummy.md)
+- **前置知识**: [序列模型 (小白版)](../02_Sequence_Models/Sequence_Models_for_dummy.md)
+- **后续主题**: [大语言模型架构 (小白版)](../05_LLM_Architectures/LLM_Architectures_for_dummy.md)
+- **实际应用**: [提示词工程 (小白版)](../08_Prompt_Engineering/Prompt_Engineering_for_dummy.md)
 
 ---
 

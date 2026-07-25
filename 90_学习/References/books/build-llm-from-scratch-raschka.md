@@ -60,7 +60,7 @@ aliases:
 在知识库的书籍谱系中：
 - 上承 [[nlp-with-transformers]]（高层抽象的 Transformer 应用）
 - 平行 [[hands-on-llms-alammar]]（图解式 LLM 教程，互补）
-- 是 [[05_大模型/LLM_Fundamentals]] 的**深度实践配套**
+- 是 [[05_大模型/01_LLM_Fundamentals]] 的**深度实践配套**
 
 ## 核心内容
 
@@ -328,10 +328,10 @@ GPT-2 small (124M):
 
 | 本书章节 | 本书概念 | 知识库主题 | 关联说明 |
 |----------|----------|------------|----------|
-| Ch 1 LLM 概览 | GPT 发展史 | [[05_大模型/LLM_Fundamentals]] | LLM 基础 |
-| Ch 2 文本处理 | BPE 分词 | [[05_大模型/LLM_Fundamentals]] | Tokenizer |
+| Ch 1 LLM 概览 | GPT 发展史 | [[05_大模型/01_LLM_Fundamentals]] | LLM 基础 |
+| Ch 2 文本处理 | BPE 分词 | [[05_大模型/01_LLM_Fundamentals]] | Tokenizer |
 | Ch 3 注意力 | Self/Multi-Head Attention | [[03_深度学习/]] | 注意力机制 |
-| Ch 4 GPT 实现 | Transformer Block | [[05_大模型/LLM_Fundamentals]] | 架构实现 |
+| Ch 4 GPT 实现 | Transformer Block | [[05_大模型/01_LLM_Fundamentals]] | 架构实现 |
 | Ch 5 预训练 | 训练循环、损失 | [[07_模型训练/]] | 预训练流程 |
 | Ch 6-7 微调 | SFT 分类/指令 | [[05_大模型/07_Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs]] | 微调技术 |
 | 全书 | 从零实现 | [[90_学习/References/Papers/Attention_Is_All_You_Need_Reading]] | Transformer 论文导读 |
@@ -432,8 +432,8 @@ GPT-2 small (124M):
 - [[90_学习/References/books/hands-on-llms-alammar|Hands-On LLMs]] — 图解式概念互补
 - [[90_学习/References/Papers/Attention_Is_All_You_Need_Reading|Attention Is All You Need 导读]] — 架构源头
 - [[90_学习/References/Papers/GPT3_Reading|GPT-3 论文导读]] — 规模化方向
-- [[05_大模型/LLM_Fundamentals]] — 知识库 LLM 基础章节
+- [[05_大模型/01_LLM_Fundamentals]] — 知识库 LLM 基础章节
 - [[03_深度学习/]] — 神经网络基础
 - [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图 2026]]
 
-> **关联**: → [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]] | [[05_大模型/LLM_Fundamentals]] | [[03_深度学习/]] | [[90_学习/References/Papers/]]
+> **关联**: → [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]] | [[05_大模型/01_LLM_Fundamentals]] | [[03_深度学习/]] | [[90_学习/References/Papers/]]

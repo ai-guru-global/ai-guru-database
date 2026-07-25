@@ -43,33 +43,33 @@ sources: []
 
 | 主题 | 难度 | 描述 | 文档链接 |
 |------|------|------|---------|
-| 监督学习 (Supervised Learning) | 入门 | 分类、回归、集成学习（XGBoost/LightGBM），掌握有标签数据建模 | [Supervised_Learning.md](./Supervised_Learning/Supervised_Learning.md) |
-| 特征工程 (Feature Engineering) | 进阶 | 特征选择、特征构造、特征编码，提升模型性能的关键技能 | [Feature_Engineering/](./Feature_Engineering/) |
-| 无监督学习 (Unsupervised Learning) | 进阶 | 聚类（K-Means/DBSCAN）、降维（PCA/t-SNE），挖掘无标签数据 | [Unsupervised_Learning.md](./Unsupervised_Learning/Unsupervised_Learning.md) |
+| 监督学习 (Supervised Learning) | 入门 | 分类、回归、集成学习（XGBoost/LightGBM），掌握有标签数据建模 | [Supervised_Learning.md](./02_Supervised_Learning/Supervised_Learning.md) |
+| 特征工程 (Feature Engineering) | 进阶 | 特征选择、特征构造、特征编码，提升模型性能的关键技能 | [Feature_Engineering/](./05_Feature_Engineering/) |
+| 无监督学习 (Unsupervised Learning) | 进阶 | 聚类（K-Means/DBSCAN）、降维（PCA/t-SNE），挖掘无标签数据 | [Unsupervised_Learning.md](./03_Unsupervised_Learning/Unsupervised_Learning.md) |
 | **经典算法速查表** | **入门** | **12 个经典 ML 算法对比，用类比建立算法选择直觉** | **[ML_Algorithms_Cheatsheet.md](02_机器学习/01_ML_Fundamentals/ML_Algorithms_Cheatsheet.md)** |
 
 ### 进阶主题
 
 | 主题 | 难度 | 描述 | 文档链接 |
 |------|------|------|---------|
-| 集成学习 (Ensemble Learning) | 进阶 | Bagging/Boosting/Stacking，XGBoost/LightGBM/CatBoost 全面对比 | [Ensemble_Learning.md](./Ensemble_Learning/Ensemble_Learning.md) |
-| 时间序列 (Time Series) | 进阶 | ARIMA/Prophet/Transformer 时序方法，预测未来趋势 | [Time_Series_Analysis.md](./Time_Series/Time_Series_Analysis.md) |
-| 异常检测 (Anomaly Detection) | 进阶 | Isolation Forest/AutoEncoder/统计方法，发现数据中的异常 | [Anomaly_Detection.md](./Anomaly_Detection/Anomaly_Detection.md) |
-| 推荐系统 (Recommendation Systems) | 进阶 | 协同过滤/矩阵分解/深度推荐，淘宝/Netflix 核心技术 | [Recommendation_Systems.md](./Recommendation_Systems/Recommendation_Systems.md) |
-| AutoML | 进阶 | 自动化模型选择与调参，Optuna/Ray Tune/FLAML 实战 | [AutoML.md](./AutoML/AutoML.md) |
+| 集成学习 (Ensemble Learning) | 进阶 | Bagging/Boosting/Stacking，XGBoost/LightGBM/CatBoost 全面对比 | [Ensemble_Learning.md](./04_Ensemble_Learning/Ensemble_Learning.md) |
+| 时间序列 (Time Series) | 进阶 | ARIMA/Prophet/Transformer 时序方法，预测未来趋势 | [Time_Series_Analysis.md](./09_Time_Series/Time_Series_Analysis.md) |
+| 异常检测 (Anomaly Detection) | 进阶 | Isolation Forest/AutoEncoder/统计方法，发现数据中的异常 | [Anomaly_Detection.md](./08_Anomaly_Detection/Anomaly_Detection.md) |
+| 推荐系统 (Recommendation Systems) | 进阶 | 协同过滤/矩阵分解/深度推荐，淘宝/Netflix 核心技术 | [Recommendation_Systems.md](./10_Recommendation_Systems/Recommendation_Systems.md) |
+| AutoML | 进阶 | 自动化模型选择与调参，Optuna/Ray Tune/FLAML 实战 | [AutoML.md](./11_AutoML/AutoML.md) |
 
 ### 小白版 (for Dummy)
 
 | 主题 | 文档链接 |
 |------|---------|
-| 集成学习入门 | [Ensemble_Learning_for_dummy.md](./Ensemble_Learning/Ensemble_Learning_for_dummy.md) |
-| 时间序列入门 | [Time_Series_for_dummy.md](./Time_Series/Time_Series_for_dummy.md) |
-| 异常检测入门 | [Anomaly_Detection_for_dummy.md](./Anomaly_Detection/Anomaly_Detection_for_dummy.md) |
-| 推荐系统入门 | [Recommendation_Systems_for_dummy.md](./Recommendation_Systems/Recommendation_Systems_for_dummy.md) |
-| AutoML 入门 | [AutoML_for_dummy.md](./AutoML/AutoML_for_dummy.md) |
-| **数据预处理入门** | [Data_Preprocessing_for_dummy.md](./Feature_Engineering/Data_Preprocessing_for_dummy.md) |
-| **第一个 ML 模型** | [Your_First_ML_Model.md](./Supervised_Learning/Your_First_ML_Model.md) |
-| **EDA 快速入门** | [EDA_Quick_Start.md](./Supervised_Learning/EDA_Quick_Start.md) |
+| 集成学习入门 | [Ensemble_Learning_for_dummy.md](./04_Ensemble_Learning/Ensemble_Learning_for_dummy.md) |
+| 时间序列入门 | [Time_Series_for_dummy.md](./09_Time_Series/Time_Series_for_dummy.md) |
+| 异常检测入门 | [Anomaly_Detection_for_dummy.md](./08_Anomaly_Detection/Anomaly_Detection_for_dummy.md) |
+| 推荐系统入门 | [Recommendation_Systems_for_dummy.md](./10_Recommendation_Systems/Recommendation_Systems_for_dummy.md) |
+| AutoML 入门 | [AutoML_for_dummy.md](./11_AutoML/AutoML_for_dummy.md) |
+| **数据预处理入门** | [Data_Preprocessing_for_dummy.md](./05_Feature_Engineering/Data_Preprocessing_for_dummy.md) |
+| **第一个 ML 模型** | [Your_First_ML_Model.md](./02_Supervised_Learning/Your_First_ML_Model.md) |
+| **EDA 快速入门** | [EDA_Quick_Start.md](./02_Supervised_Learning/EDA_Quick_Start.md) |
 
 ## 前置知识 (Prerequisites)
 

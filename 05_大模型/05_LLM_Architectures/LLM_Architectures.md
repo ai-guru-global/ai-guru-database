@@ -609,13 +609,13 @@ if __name__ == "__main__":
 ## 7. 与其他主题的关联 (Connections)
 
 ### 前置知识
-- [Transformer 革命](../Transformer_Revolution/Transformer_Revolution.md): Self-Attention 机制
-- [注意力机制](../Transformer_Revolution/Transformer_Revolution.md): Seq2Seq Attention
+- [Transformer 革命](../04_Transformer_Revolution/Transformer_Revolution.md): Self-Attention 机制
+- [注意力机制](../04_Transformer_Revolution/Transformer_Revolution.md): Seq2Seq Attention
 
 ### 后续推荐
-- [预训练方法](../LLM_Architectures/LLM_Architectures.md): MLM, CLM, T5 的 Span Corruption
-- [微调技术](../Fine_tuning_Techniques/Fine_tuning_Techniques.md): LoRA, RLHF
-- [提示工程](../Prompt_Engineering/Prompt_Engineering.md): Few-shot, Chain-of-Thought
+- [预训练方法](../05_LLM_Architectures/LLM_Architectures.md): MLM, CLM, T5 的 Span Corruption
+- [微调技术](../07_Fine_tuning_Techniques/Fine_tuning_Techniques.md): LoRA, RLHF
+- [提示工程](../08_Prompt_Engineering/Prompt_Engineering.md): Few-shot, Chain-of-Thought
 
 ### 跨领域应用
 - [多模态模型](04_计算机视觉/08_Multimodal_Vision/Multimodal_Vision.md): CLIP, Flamingo, GPT-4V

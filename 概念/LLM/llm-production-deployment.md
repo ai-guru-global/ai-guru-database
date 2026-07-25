@@ -183,7 +183,7 @@ LLM 应用的可观测性远超传统 APM，需覆盖成本（$/请求、缓存�
 - [[概念/LLM/llm-inference-checklist|推理上线检查清单]]
 - [[概念/LLM/llm-inference-cost-optimization|推理成本优化]]
 - [[概念/LLM/llmops|LLMOps]]
-- [[10_部署推理/Inference_Engines|推理引擎专题]]
+- [[10_部署推理/02_Inference_Engines|推理引擎专题]]
 - [[11_模型运维/LLM_Observability|LLM 可观测性]]
 
 ## 常见部署问题排查

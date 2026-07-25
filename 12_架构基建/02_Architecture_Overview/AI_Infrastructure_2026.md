@@ -34,7 +34,7 @@ sources: []
 11. [行业案例研究](#11-行业案例研究)
 12. [未来趋势](#12-未来趋势)
 
-> **相关文档**: [AI 系统架构全景图](./AI_System_Architecture_2026.md) | [容量规划](./Capacity_Planning_2026.md) | [成本优化](./AI_Cost_Optimization_2026.md) | [边缘 AI](../Hardware_Compute/Edge_AI_2026.md) | [高可用设计](./High_Availability_2026.md)
+> **相关文档**: [AI 系统架构全景图](./AI_System_Architecture_2026.md) | [容量规划](./Capacity_Planning_2026.md) | [成本优化](./AI_Cost_Optimization_2026.md) | [边缘 AI](../07_Hardware_Compute/Edge_AI_2026.md) | [高可用设计](./High_Availability_2026.md)
 
 ---
 

@@ -244,14 +244,14 @@ GRU 是 LSTM 的"减肥版"——少了一些零件,但大部分时候效果差�
 ### 📚 推荐学习路径
 
 1. **本文 (你现在在这)**: 理解序列模型的基本概念
-2. **[Transformer 革命 (小白版)](../Transformer_Revolution/Transformer_Revolution_for_dummy.md)**: 了解为什么 Transformer 能取代 LSTM
+2. **[Transformer 革命 (小白版)](../04_Transformer_Revolution/Transformer_Revolution_for_dummy.md)**: 了解为什么 Transformer 能取代 LSTM
 3. **[原版技术文档](./Sequence_Models.md)**: 包含数学公式和代码实现
 
 ### 🔗 相关内容
 
 - **前置知识**: [深度学习基础 (小白版)](../../03_深度学习/README_for_dummy.md)
-- **后续主题**: [Transformer 革命 (小白版)](../Transformer_Revolution/Transformer_Revolution_for_dummy.md)
-- **实际应用**: [提示词工程 (小白版)](../Prompt_Engineering/Prompt_Engineering_for_dummy.md)
+- **后续主题**: [Transformer 革命 (小白版)](../04_Transformer_Revolution/Transformer_Revolution_for_dummy.md)
+- **实际应用**: [提示词工程 (小白版)](../08_Prompt_Engineering/Prompt_Engineering_for_dummy.md)
 
 ---
 

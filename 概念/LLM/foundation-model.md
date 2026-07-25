@@ -193,7 +193,7 @@ print(results.summary())  # 各维度得分 + 成本分析
 - [[概念/LLM/llmops|LLMOps]]
 - [[概念/LLM/large-language-model|大语言模型]]
 - [[12_架构基建/AWS_Bedrock_Deep_Dive|AWS Bedrock 深度解析]]
-- [[05_大模型/Fine_tuning_Techniques|微调技术]]
+- [[05_大模型/07_Fine_tuning_Techniques|微调技术]]
 - [[08_模型评估/Benchmark_Deep_Dive|基准测试深度解析]]
 - [[概念/LLM/llm-benchmarks|LLM Benchmarks]]
 - [[概念/LLM/llm-production-pipeline|LLM 生产管线]]

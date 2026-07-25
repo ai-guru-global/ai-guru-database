@@ -168,7 +168,7 @@ flowchart LR
 - [[05_大模型/02_Sequence_Models/Sequence_Models]] — 序列模型详解 (RNN/LSTM)
 - [[05_大模型/04_Transformer_Revolution/Transformer_Revolution]] — Transformer 架构革命
 - [[05_大模型/08_Prompt_Engineering/Prompt_Engineering]] — 提示词工程
-- [[05_大模型/LLM_Fundamentals]] — 大语言模型基础
+- [[05_大模型/01_LLM_Fundamentals]] — 大语言模型基础
 - [[05_大模型/Transformer_Architecture]] — Transformer 架构详解
 - [[05_大模型/01_LLM_Fundamentals/llm-nlp|LLM 与 NLP 融合]]
 - [[05_大模型/01_LLM_Fundamentals/ApacheCN_NLP_Track|ApacheCN NLP 学习路径]]

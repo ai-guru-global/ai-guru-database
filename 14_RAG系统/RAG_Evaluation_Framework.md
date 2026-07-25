@@ -1354,8 +1354,8 @@ RAG 评估最佳实践 Checklist
 ## Related
 
 - [[../08_模型评估/03_LLM_Evaluation/RAG_Evaluation_Deep_Dive|RAG评估深度解析]] — 更深入的 RAG 评估理论，LLM-as-Judge 偏见控制
-- [[../Advanced_RAG/RAG_Advanced_2026|RAG高级实践 2026年完全指南]] — 高级检索策略（混合检索、重排序）直接影响检索质量
-- [[../RAG_Fundamentals/RAG_Fundamentals|RAG 基础]] — RAG 基本流程理解
+- [[../04_Advanced_RAG/RAG_Advanced_2026|RAG高级实践 2026年完全指南]] — 高级检索策略（混合检索、重排序）直接影响检索质量
+- [[../01_RAG_Fundamentals/RAG_Fundamentals|RAG 基础]] — RAG 基本流程理解
 - [[../RAG_Monitoring/RAG_Monitoring_and_Observability|RAG 监控与可观测性]] — 线上监控是评估的延伸
 - [[../08_模型评估/index|模型评估]] — 更广泛的 LLM 评估方法
 - [[index|RAG 评估目录]] — 本目录导航

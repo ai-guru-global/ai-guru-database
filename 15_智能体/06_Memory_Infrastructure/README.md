@@ -37,8 +37,8 @@ sources: []
 
 ## 关联目录
 
-- [Agent Harness](../Agent_Harness/) -- Harness 记忆配置与上下文工程
-- [Enterprise Agent](../Enterprise_Agent/) -- 生产环境记忆部署模式
+- [Agent Harness](../04_Agent_Harness/) -- Harness 记忆配置与上下文工程
+- [Enterprise Agent](../10_Enterprise_Agent/) -- 生产环境记忆部署模式
 - [RAG系统](../../14_RAG系统/) -- RAG 系统专题
 
 ---

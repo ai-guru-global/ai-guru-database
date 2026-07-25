@@ -545,7 +545,7 @@ kubectl patch igraph qwen-canary --type=json -p='[{"op":"replace","path":"/spec/
 | Kueue / Volcano 排队 | 弱（Pod 级抢占） | ✓ 原生 Workload |
 | 推荐 | 多模型弹性、闲时省 GPU | 核心 LLM、固定 SLA、批次排队 |
 
-> 经验：同一集群混用——长尾小模型走 Serverless 缩 0 省 GPU，核心大模型走 RawDeployment 叠 Kueue 排队，互不干扰。排队细节见 [[CNCF_Cloud_Native_AI/Kueue_Deep_Dive]]。
+> 经验：同一集群混用——长尾小模型走 Serverless 缩 0 省 GPU，核心大模型走 RawDeployment 叠 Kueue 排队，互不干扰。排队细节见 [[05_CNCF_Cloud_Native_AI/Kueue_Deep_Dive]]。
 
 ---
 
@@ -601,7 +601,7 @@ spec:
 | 低延迟、不接受 cold start | `minReplicas=1`，关 scale-to-zero |
 | 突发流量、闲时省钱 | KPA + `target=并发`，允许缩到 0 |
 | GPU 紧张、要排队 | 在 KServe 之上叠 Kueue（LocalQueue） |
-| 超大规模、要 disaggregated | 考虑迁移到 [[CNCF_Cloud_Native_AI/llm-d_Deep_Dive]] |
+| 超大规模、要 disaggregated | 考虑迁移到 [[05_CNCF_Cloud_Native_AI/llm-d_Deep_Dive]] |
 
 ### 7.5 升级路径
 
@@ -676,8 +676,8 @@ kubectl rollout status deploy/kserve-controller-manager -n kserve-serverless
 
 ## Related
 
-- [[CNCF_Cloud_Native_AI/README]] —— CNCF 云原生 LLM 项目全景
-- [[CNCF_Cloud_Native_AI/KAITO_Deep_Dive]] —— 更轻量的「一键 LLM」兄弟项目
+- [[05_CNCF_Cloud_Native_AI/README]] —— CNCF 云原生 LLM 项目全景
+- [[05_CNCF_Cloud_Native_AI/KAITO_Deep_Dive]] —— 更轻量的「一键 LLM」兄弟项目
 - [[10_部署推理/02_Inference_Engines/vLLM_Deep_Dive]] —— KServe 默认 LLM 引擎深度解析
 - [[10_部署推理/02_Inference_Engines/LLM_Inference_Engine_Selection_Guide]] —— 底层引擎如何选
 - [[12_架构基建/05_CNCF_Cloud_Native_AI/Knative_Deep_Dive]] —— KServe 的弹性底座

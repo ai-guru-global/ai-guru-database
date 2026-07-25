@@ -997,7 +997,7 @@ async def governed_workflow(user_request):
 | 复杂业务流程 | MCP + A2A | 完整能力 |
 | 企业级生产 | All + AAIF | 安全合规 |
 
-**详细参考**: [Agent Protocols 2026](../Agent_Foundations/Agent_Protocols_2026.md)
+**详细参考**: [Agent Protocols 2026](../01_Agent_Foundations/Agent_Protocols_2026.md)
 
 ---
 
@@ -1017,8 +1017,8 @@ flowchart TB
 
 ## 🔗 相关主题
 
-- [智能体](../Agent_Foundations/Agent-in-nutshell.md) - 智能体工作流
-- [技能](../Agent_Skills/Skills-in-nutshell.md) - 构建工作流组件
+- [智能体](../01_Agent_Foundations/Agent-in-nutshell.md) - 智能体工作流
+- [技能](../05_Agent_Skills/Skills-in-nutshell.md) - 构建工作流组件
 - [MLOps](../../11_模型运维/) - ML 专用流水线
 - [模型训练](07_模型训练/01_Training_Fundamentals/Model-Training-in-nutshell.md) - 训练工作流
 

@@ -432,7 +432,7 @@ Altman 在 2026 年的政治操作引发"科技寡头"担忧：
 - [[05_大模型/OpenAI]] -- OpenAI 模型技术全景
 - [[05_大模型/GPT]] -- GPT 系列演进
 - [[10_部署推理/Stargate]] -- Stargate 算力基础设施
-- [[05_大模型/Reasoning_Models]] -- 推理模型路线
+- [[05_大模型/09_Reasoning_Models]] -- 推理模型路线
 - [[00_入门/AI_Future_Trends]] -- AGI 时间线讨论
 - [[17_伦理安全/README]] -- AI 治理与对齐
 

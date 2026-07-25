@@ -390,7 +390,7 @@ print(f"XGBoost 准确率: {model.score(X_test, y_test):.2%}")
 ## Related
 
 - [[../../01_数学基础/03_Probability_Statistics/Probability_Statistics_for_dummy|概率统计]] — 集成投票的数学基础
-- [[../../03_深度学习/Neural_Network_Core|神经网络核心]] — 深度学习中的集成方法
-- [[../../08_模型评估/Evaluation_Fundamentals|评估基础]] — 集成模型评估指标
+- [[../../03_深度学习/02_Neural_Network_Core|神经网络核心]] — 深度学习中的集成方法
+- [[../../08_模型评估/01_Evaluation_Fundamentals|评估基础]] — 集成模型评估指标
 - [[../../概念/Math/ensemble-learning|集成学习概念卡]] — 概念定义与分类
-- [[../../05_大模型/Fine_tuning_Techniques|微调技术]] — 模型集成在 LLM 中的应用
+- [[../../05_大模型/07_Fine_tuning_Techniques|微调技术]] — 模型集成在 LLM 中的应用

@@ -8,7 +8,7 @@ sources: []
 
 # Cloud Providers
 
-This page indexes the contents of `12_架构基建/Cloud_Providers`.
+This page indexes the contents of `12_架构基建/06_Cloud_Providers`.
 
 ## Files
 

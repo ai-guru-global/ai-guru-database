@@ -8,7 +8,7 @@ sources: []
 
 # AI Gateway
 
-This page indexes the contents of `12_架构基建/AI_Gateway`.
+This page indexes the contents of `12_架构基建/11_AI_Gateway`.
 
 ## Files
 

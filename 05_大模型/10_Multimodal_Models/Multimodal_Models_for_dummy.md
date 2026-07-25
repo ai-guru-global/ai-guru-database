@@ -143,8 +143,8 @@ flowchart TB
 
 ## 🔗 相关主题
 
-- [LLM 架构](../LLM_Architectures/LLM_Architectures.md) — 大模型基础架构
-- [Prompt Engineering](../Prompt_Engineering/Prompt_Engineering.md) — 如何给多模态模型下指令
+- [LLM 架构](../05_LLM_Architectures/LLM_Architectures.md) — 大模型基础架构
+- [Prompt Engineering](../08_Prompt_Engineering/Prompt_Engineering.md) — 如何给多模态模型下指令
 - [计算机视觉](../../04_计算机视觉/README.md) — 视觉技术基础
 
 ---

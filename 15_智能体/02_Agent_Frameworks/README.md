@@ -51,9 +51,9 @@ sources: []
 
 ## 关联目录
 
-- [Agent Harness](../Agent_Harness/) -- Harness 工程与框架集成
-- [Agent Platforms](../Agent_Platforms/) -- Agent 开发平台
-- [Enterprise Agent](../Enterprise_Agent/) -- 企业级 Agent 架构
+- [Agent Harness](../04_Agent_Harness/) -- Harness 工程与框架集成
+- [Agent Platforms](../09_Agent_Platforms/) -- Agent 开发平台
+- [Enterprise Agent](../10_Enterprise_Agent/) -- 企业级 Agent 架构
 
 ---
 

@@ -64,7 +64,7 @@ Harness 是模型之外的一切代码、配置和执行逻辑。裸模型不是
 | **Safety Harness** | 会不会做错事或越权？ | 对抗测试、权限边界、沙箱隔离 | 安全报告、风险分级 |
 | **Monitoring Harness** | 上线后是否持续可靠？ | Trace、Metrics、成本监控、告警 | 仪表盘、回归报告 |
 
-> 详细的评估维度与指标，参见 [Agent_Evaluation/Agent_Harness_Complete_2026.md](../Agent_Evaluation/Agent_Harness_Complete_2026.md)。
+> 详细的评估维度与指标，参见 [Agent_Evaluation/Agent_Harness_Complete_2026.md](../07_Agent_Evaluation/Agent_Harness_Complete_2026.md)。
 
 ---
 
@@ -400,7 +400,7 @@ Agent 需要自我验证以保持正确性：
 **推荐阅读顺序**:
 1. [The Anatomy of an Agent Harness](./The_Anatomy_of_an_Agent_Harness.md) -- 理解核心概念
 2. 本文第二、三章 -- 架构与组件
-3. [Agent Production 2026](../Enterprise_Agent/Agent_Production_2026.md) -- 生产模式
+3. [Agent Production 2026](../10_Enterprise_Agent/Agent_Production_2026.md) -- 生产模式
 
 ### 7.2 开发者
 
@@ -444,8 +444,8 @@ planner.initiate_chat(manager, message="Implement user authentication")
 
 **推荐阅读顺序**:
 1. 本文第三、四章 -- 组件与配置
-2. [Agentic Coding Tools](../Agentic_Coding_Tools/) -- 选择开发工具
-3. [Agent Frameworks](../Agent_Frameworks/) -- 选择框架
+2. [Agentic Coding Tools](../08_Agentic_Coding_Tools/) -- 选择开发工具
+3. [Agent Frameworks](../02_Agent_Frameworks/) -- 选择框架
 
 ### 7.3 产品经理
 
@@ -505,7 +505,7 @@ test_case:
     - no_network_access: true
 ```
 
-> 完整的评估方法论和基准测试，参见 [Agent_Evaluation](../Agent_Evaluation/)。
+> 完整的评估方法论和基准测试，参见 [Agent_Evaluation](../07_Agent_Evaluation/)。
 
 ### 7.5 评估师
 
@@ -521,7 +521,7 @@ test_case:
 | **安全** | 越权率、泄漏率、危险操作 | 20% |
 | **用户体验** | 解释质量、透明度、可中断性 | 15% |
 
-> 详细的评估维度、指标计算和评分卡模板，参见 [Agent_Harness_Complete_2026.md](../Agent_Evaluation/Agent_Harness_Complete_2026.md#四评估维度与指标)。
+> 详细的评估维度、指标计算和评分卡模板，参见 [Agent_Harness_Complete_2026.md](../07_Agent_Evaluation/Agent_Harness_Complete_2026.md#四评估维度与指标)。
 
 ### 7.6 架构师
 
@@ -884,8 +884,8 @@ class CostMonitor:
 - [Harness Testing Guide](./Harness_Testing_Guide.md) -- 测试策略与 CI/CD
 - [Harness Ecosystem Catalog](./Harness_Ecosystem_Catalog.md) -- 平台与框架选型
 - [Multi Agent Harness Design](./Multi_Agent_Harness_Design.md) -- 多 Agent 设计模式
-- [Enterprise Agent / Agent Production 2026](../Enterprise_Agent/Agent_Production_2026.md) -- 生产部署最佳实践
-- [Agent_Evaluation](../Agent_Evaluation/) -- Agent 评估体系
+- [Enterprise Agent / Agent Production 2026](../10_Enterprise_Agent/Agent_Production_2026.md) -- 生产部署最佳实践
+- [Agent_Evaluation](../07_Agent_Evaluation/) -- Agent 评估体系
 
 ---
 

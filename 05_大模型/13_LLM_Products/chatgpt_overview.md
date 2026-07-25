@@ -167,7 +167,7 @@ print(f"{weather.city}: {weather.temperature}°C, {weather.condition}")
 
 ## 相关概念
 
-- [[05_大模型/LLM_Fundamentals|LLM 基础]]
+- [[05_大模型/01_LLM_Fundamentals|LLM 基础]]
 - [[05_大模型/14_Global_LLM_Ecosystem/README|全球 LLM 生态]]
 - [[概念/openai|OpenAI]]
 - [[概念/prompt-engineering|提示工程]]

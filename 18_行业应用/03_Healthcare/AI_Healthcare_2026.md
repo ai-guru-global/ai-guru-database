@@ -326,8 +326,8 @@ flowchart TB
 
 ## Related
 
-- [[../../14_RAG系统/RAG_Production|RAG 生产部署]] — 医疗知识库与临床检索增强
-- [[../../15_智能体/Agent_Frameworks|Agent 框架]] — 医疗辅助诊断 Agent
+- [[../../14_RAG系统/05_RAG_Production|RAG 生产部署]] — 医疗知识库与临床检索增强
+- [[../../15_智能体/02_Agent_Frameworks|Agent 框架]] — 医疗辅助诊断 Agent
 - [[../../05_大模型/10_Multimodal_Models/Multimodal_Architectures_2026|多模态架构]] — 医学影像多模态分析
 - [[../../08_模型评估/Fairness|公平性评估]] — 医疗 AI 偏见与公平性
 - [[../../10_部署推理/Deployment_Strategies|部署策略]] — 医疗级高可用部署

@@ -153,7 +153,7 @@ modifier.apply(model)
 - [[概念/quantization]] — 量化
 - [[概念/awq]] / [[概念/gptq]] / [[概念/nf4]] — 量化方法
 - [[概念/knowledge-distillation]] — 知识蒸馏
-- [[10_部署推理/Quantization]] — 量化章节
+- [[10_部署推理/05_Quantization]] — 量化章节
 - [[07_模型训练/05_Compression/README]] — 压缩章节
 
 ---

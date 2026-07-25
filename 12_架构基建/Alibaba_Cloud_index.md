@@ -37,10 +37,10 @@ summary: 阿里云专有云（Apsara Stack）环境下的 AI 基础设施实践�
 
 ## Related
 
-- [[../AI_Stack/|阿里云 AI Stack 工具链]]
-- [[../Hardware_Compute/HAMi_Deep_Dive|HAMi GPU 虚拟化]]
+- [[../03_AI_Stack/|阿里云 AI Stack 工具链]]
+- [[../07_Hardware_Compute/HAMi_Deep_Dive|HAMi GPU 虚拟化]]
 - [[../13_运维/04_Troubleshooting/K8s_Troubleshooting_Playbook|K8s 排障手册]]
-- [[../Architecture_Overview/System_Architecture|系统架构]]
+- [[../02_Architecture_Overview/System_Architecture|系统架构]]
 
 ## 架构核心组件对比
 

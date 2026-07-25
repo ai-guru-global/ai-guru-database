@@ -25,7 +25,7 @@ This page indexes the contents of `RAG系统`.
 - [[14_RAG系统/HF_Datasets_Streaming|HF Datasets Streaming]]
 - [[14_RAG系统/Matryoshka_Representation_Learning_for_dummy|Matryoshka Representation Learning For Dummy]]
 - [[14_RAG系统/RAG-in-nutshell|RAG In Nutshell]]
-- [[14_RAG系统/RAG_Fundamentals|RAG Fundamentals]]
+- [[14_RAG系统/01_RAG_Fundamentals|RAG Fundamentals]]
 - [[14_RAG系统/RAG_Production_Architecture_Deep_Dive|RAG Production Architecture Deep Dive]]
 - [[14_RAG系统/RAG_Systems|RAG Systems]]
 - [[14_RAG系统/RAG_Systems_for_dummy|RAG Systems For Dummy]]

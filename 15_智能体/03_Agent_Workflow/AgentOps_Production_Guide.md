@@ -495,9 +495,9 @@ Agentic Coding (理解 -> 规划 -> 执行 -> 验证 -> 迭代)
 - [[Multi_Agent_Systems_Guide]] -- Part 2: 多智能体系统
 - [[Context_Engineering_Guide]] -- 上下文工程完整指南
 - [[Prompt_Engineering_Complete_Guide]] -- 提示词工程指南
-- [[Agent_Harness/The_Anatomy_of_an_Agent_Harness]] -- Harness 解剖
-- [[Agent_Workflow/LangGraph_Deep_Dive]] -- LangGraph 深度解析
-- [[Agent_Workflow/Agentic_Workflow_Design_Patterns_2026]] -- 设计模式
-- [[Agent_Frameworks/LangChain_Deep_Dive]] -- LangChain 深度解析
-- [[Agent_Foundations/Agent_Observability_2026]] -- 可观测性
-- [[Agentic_Coding_Tools/Claude_Code_Deep_Dive]] -- Claude Code 深度解析
+- [[04_Agent_Harness/The_Anatomy_of_an_Agent_Harness]] -- Harness 解剖
+- [[03_Agent_Workflow/LangGraph_Deep_Dive]] -- LangGraph 深度解析
+- [[03_Agent_Workflow/Agentic_Workflow_Design_Patterns_2026]] -- 设计模式
+- [[02_Agent_Frameworks/LangChain_Deep_Dive]] -- LangChain 深度解析
+- [[01_Agent_Foundations/Agent_Observability_2026]] -- 可观测性
+- [[08_Agentic_Coding_Tools/Claude_Code_Deep_Dive]] -- Claude Code 深度解析

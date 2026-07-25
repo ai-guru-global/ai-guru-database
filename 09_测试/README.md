@@ -19,8 +19,8 @@ sources: []
 
 | 文档 | 内容 | 适用角色 |
 |------|------|----------|
-| [AI_Test_Framework_2026](./Testing_Fundamentals/AI_Test_Framework_2026.md) | AI 测试框架全栈指南 | QA、开发者 |
-| [AI-Testing-in-nutshell](./Testing_Fundamentals/AI-Testing-in-nutshell.md) | AI 测试速查：核心概念快速掌握 | 快速入门 |
+| [AI_Test_Framework_2026](./01_Testing_Fundamentals/AI_Test_Framework_2026.md) | AI 测试框架全栈指南 | QA、开发者 |
+| [AI-Testing-in-nutshell](./01_Testing_Fundamentals/AI-Testing-in-nutshell.md) | AI 测试速查：核心概念快速掌握 | 快速入门 |
 | [Contract_Testing](09_测试/Contract_Testing.md) | LLM 契约测试：输入输出规范验证 | 开发者、QA |
 | [Test_Data_Management](09_测试/Test_Data_Management.md) | 测试数据管理：合成数据、边界案例 | 数据工程师 |
 
@@ -30,17 +30,17 @@ sources: []
 
 | 文档 | 内容 | 适用角色 |
 |------|------|----------|
-| [Promptfoo Deep Dive](./Testing_Frameworks/Promptfoo_Deep_Dive.md) | Prompt 测试框架：批量测试、版本对比 | 开发者、Prompt 工程师 |
+| [Promptfoo Deep Dive](./02_Testing_Frameworks/Promptfoo_Deep_Dive.md) | Prompt 测试框架：批量测试、版本对比 | 开发者、Prompt 工程师 |
 | [RAGAS Deep Dive](09_测试/RAGAS_Deep_Dive.md) | RAG 评估框架：答案质量、召回率 | RAG 开发者 |
-| [DeepEval Deep Dive](./Testing_Frameworks/DeepEval_Deep_Dive.md) | LLM 评估框架：单元测试、集成测试 | 开发者、QA |
+| [DeepEval Deep Dive](./02_Testing_Frameworks/DeepEval_Deep_Dive.md) | LLM 评估框架：单元测试、集成测试 | 开发者、QA |
 | [Agent 评估深度解析](09_测试/Agent_Evaluation_Deep_Dive.md) | Agent 系统评估方法论、基准、LLM-as-Judge、成本约束 | Agent 开发者、QA |
 
 ### 安全测试
 
 | 文档 | 内容 | 适用角色 |
 |------|------|----------|
-| [LLM 安全测试](./Testing_Frameworks/LLM_Safety_Testing_Deep_Dive.md) | 红队、越狱、对抗防御、OWASP LLM Top 10 | 安全工程师、QA |
-| [回归测试](./Testing_Frameworks/Regression_Testing_LLM_Deep_Dive.md) | 非确定性输出的回归策略、黄金集、CI 门控 | QA、平台工程师 |
+| [LLM 安全测试](./02_Testing_Frameworks/LLM_Safety_Testing_Deep_Dive.md) | 红队、越狱、对抗防御、OWASP LLM Top 10 | 安全工程师、QA |
+| [回归测试](./02_Testing_Frameworks/Regression_Testing_LLM_Deep_Dive.md) | 非确定性输出的回归策略、黄金集、CI 门控 | QA、平台工程师 |
 
 ### 实验追踪
 
@@ -106,7 +106,7 @@ AI 测试类型
 ## 关联目录
 
 - [AI运维](../13_运维/) -- AI 运维与可观测性
-- [15_智能体/Agent_Evaluation](../15_智能体/07_Agent_Evaluation/) -- Agent 评估
+- [15_智能体/07_Agent_Evaluation](../15_智能体/07_Agent_Evaluation/) -- Agent 评估
 
 ---
 

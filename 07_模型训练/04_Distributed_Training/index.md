@@ -8,7 +8,7 @@ sources: []
 
 # Distributed Training
 
-This page indexes the contents of `07_模型训练/Distributed_Training`.
+This page indexes the contents of `07_模型训练/04_Distributed_Training`.
 
 ## Files
 

@@ -8,7 +8,7 @@ relationships:
   - target: "概念/bayesian-methods"
     type: related_to
 sources:
-  - 17_伦理安全/Federated_Learning
+  - 17_伦理安全/11_Federated_Learning
 summary: "联邦学习让多个参与方在不共享原始数据的前提下协作训练模型——数据不动模型动。核心算法FedAvg/FedProx，隐私保护用差分隐私+安全聚合。"
 provenance:
   extracted: 0.45

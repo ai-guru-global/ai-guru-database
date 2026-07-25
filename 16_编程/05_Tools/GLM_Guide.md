@@ -132,7 +132,7 @@ crush config set base-url https://open.bigmodel.cn/api/paas/v4
 
 ## 7. 与 OpenCode 集成详情
 
-参见 [OpenCode 集成指南](.././OpenCode/23-opencode-providers-models.md)
+参见 [OpenCode 集成指南](.././07_OpenCode/23-opencode-providers-models.md)
 
 ---
 

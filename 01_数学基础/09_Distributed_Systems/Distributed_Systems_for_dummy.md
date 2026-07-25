@@ -218,7 +218,7 @@ A: 从零训练超大模型对个人来说确实不现实。但你可以：
 ## 想深入了解？
 
 - 专业版: [分布式系统完整版](./Distributed_Systems.md)
-- 前置知识: [线性代数小白版](../Linear_Algebra/Linear_Algebra_for_dummy.md)
+- 前置知识: [线性代数小白版](../02_Linear_Algebra/Linear_Algebra_for_dummy.md)
 - 下一站: [第2章：机器学习](../../02_机器学习/README_for_dummy.md)
 
 ---

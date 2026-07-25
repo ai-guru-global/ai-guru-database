@@ -24,35 +24,35 @@ sources: []
 | 文档 | 主题 |
 |------|------|
 | [**AI Agent 全景概览**](15_智能体/01_Agent_Foundations/Agent_Overview.md) | Agent 架构、设计模式、框架选型、生产部署、2026 趋势 |
-| [Agent_Foundations](./Agent_Foundations/) | 理论、协议、状态管理、路线图 |
-| [Agent_Frameworks](./Agent_Frameworks/) | LangChain / AutoGen / LangGraph / AgentScope / SmolAgents / agno |
+| [Agent_Foundations](./01_Agent_Foundations/) | 理论、协议、状态管理、路线图 |
+| [Agent_Frameworks](./02_Agent_Frameworks/) | LangChain / AutoGen / LangGraph / AgentScope / SmolAgents / agno |
 | [Agent_Protocols](./Agent_Protocols/) | MCP / A2A / UCP 协议栈 |
-| [Agent_Skills](./Agent_Skills/) | 工具 / 技能 / 调用范式 |
-| [Agent_Workflow](./Agent_Workflow/) | 设计模式、编排、UI/UX |
-| [Memory_Infrastructure](./Memory_Infrastructure/) | MemGPT / 向量库 / RAG 基础设施 |
+| [Agent_Skills](./05_Agent_Skills/) | 工具 / 技能 / 调用范式 |
+| [Agent_Workflow](./03_Agent_Workflow/) | 设计模式、编排、UI/UX |
+| [Memory_Infrastructure](./06_Memory_Infrastructure/) | MemGPT / 向量库 / RAG 基础设施 |
 
 ### 评测层 —— 把 Agent 从原型推向可信
 
 | 子目录 | 主题 |
 |--------|------|
-| [Agent_Evaluation](./Agent_Evaluation/) | 评估体系、Benchmark、评分框架 |
-| [Agent_Harness](./Agent_Harness/) | LangChain Harness 工程、架构、多角色指南 |
+| [Agent_Evaluation](./07_Agent_Evaluation/) | 评估体系、Benchmark、评分框架 |
+| [Agent_Harness](./04_Agent_Harness/) | LangChain Harness 工程、架构、多角色指南 |
 
 ### 生态层 —— 平台、企业与开源落地
 
 | 子目录 | 主题 |
 |--------|------|
-| [Agent_Platforms](./Agent_Platforms/) | Dify / Coze / PromptFlow / OpenRouter |
-| [Enterprise_Agent](./Enterprise_Agent/) | 企业级部署、Hermes Agent |
-| [Agent_Ecosystem_CN](./Agent_Ecosystem_CN/) | 国内 AI Agent 产品与开源 |
-| [OpenClaw_Ecosystem](./OpenClaw_Ecosystem/) | OpenClaw / CoPaw / QClaw / Manus |
+| [Agent_Platforms](./09_Agent_Platforms/) | Dify / Coze / PromptFlow / OpenRouter |
+| [Enterprise_Agent](./10_Enterprise_Agent/) | 企业级部署、Hermes Agent |
+| [Agent_Ecosystem_CN](./12_Agent_Ecosystem_CN/) | 国内 AI Agent 产品与开源 |
+| [OpenClaw_Ecosystem](./11_OpenClaw_Ecosystem/) | OpenClaw / CoPaw / QClaw / Manus |
 
 ### 工具与学习 —— 编码工具 + 系列课件
 
 | 子目录 / 文件 | 主题 |
 |---------------|------|
-| [Agentic_Coding_Tools](./Agentic_Coding_Tools/) | Aider / Continue / Claude Code / OpenCode / Windsurf / Cursor / Devin |
-| [Course_Notes](./Course_Notes/) | Learn_Claude_Code / Microsoft_AI_Agents 系列课件 |
+| [Agentic_Coding_Tools](./08_Agentic_Coding_Tools/) | Aider / Continue / Claude Code / OpenCode / Windsurf / Cursor / Devin |
+| [Course_Notes](./15_Course_Notes/) | Learn_Claude_Code / Microsoft_AI_Agents 系列课件 |
 | [Agentic_Design_Patterns_AndrewNg.md](./Agentic_Design_Patterns_AndrewNg.md) | Andrew Ng Agentic 设计模式 |
 | [Gradio_Deep_Dive.md](./Gradio_Deep_Dive.md) | ML Demo UI 框架 |
 | GenAI_L06 / L07 / L11 / L12 / L17 | GenAI 系列课件（文本生成 / Chat / Function Calling / UX / Agents） |
@@ -81,7 +81,7 @@ sources: []
 
 | 文档 | 内容 | 适用角色 |
 |------|------|----------|
-| [Agent Harness README](./Agent_Harness/) | Harness 专题入口与角色指南 | 全角色 |
+| [Agent Harness README](./04_Agent_Harness/) | Harness 专题入口与角色指南 | 全角色 |
 | [The Anatomy of an Agent Harness](15_智能体/04_Agent_Harness/The_Anatomy_of_an_Agent_Harness.md) | LangChain 博客：Harness 工程定义与核心组件 | 设计师、架构师 |
 | [Agent Harness 技术架构 2026](15_智能体/04_Agent_Harness/Agent_Harness_Architecture_2026.md) | 技术架构、配置参数、性能指标、兼容性矩阵 | 全角色 |
 | [Agent 安全与评估大白话](15_智能体/01_Agent_Foundations/Agent_Safety_Evaluation_for_dummy.md) | 工具调用安全、Agent 评估基准大白话 | 初学者 |
@@ -196,9 +196,9 @@ L4: 持久化知识 → SQL/NoSQL
 
 ## 关联目录
 
-- [Agent_Evaluation](./Agent_Evaluation/) -- Agent 评估体系（Harness 评估视角、基准测试、评分框架）
+- [Agent_Evaluation](./07_Agent_Evaluation/) -- Agent 评估体系（Harness 评估视角、基准测试、评分框架）
 - [AI编程](../16_编程/) -- AI 编程方法论（Vibe Coding、Hermes Agent）
-- [OpenClaw_Ecosystem](./OpenClaw_Ecosystem/) -- OpenClaw 生态（CoPaw、QClaw）
+- [OpenClaw_Ecosystem](./11_OpenClaw_Ecosystem/) -- OpenClaw 生态（CoPaw、QClaw）
 - [RAG系统](../14_RAG系统/) -- RAG 系统专题
 - [AI运维](../13_运维/) -- AI 系统运维
 - [部署推理](../10_部署推理/) -- 推理引擎（vLLM, SGLang, Groq）

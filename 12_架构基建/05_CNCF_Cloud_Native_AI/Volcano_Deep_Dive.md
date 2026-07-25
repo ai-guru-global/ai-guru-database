@@ -696,8 +696,8 @@ Training-Operator 负责生成 PyTorchJob/TensorFlowJob 的 Pod，并通过 `sch
 
 ## Related
 
-- [[CNCF_Cloud_Native_AI/README]]
-- [[CNCF_Cloud_Native_AI/KAI_Scheduler_Deep_Dive]]
-- [[CNCF_Cloud_Native_AI/Kueue_Deep_Dive]]
+- [[05_CNCF_Cloud_Native_AI/README]]
+- [[05_CNCF_Cloud_Native_AI/KAI_Scheduler_Deep_Dive]]
+- [[05_CNCF_Cloud_Native_AI/Kueue_Deep_Dive]]
 - [[11_模型运维/05_Orchestration/Kubeflow_Deep_Dive]]
 - [[12_架构基建/02_Architecture_Overview/AI_Infrastructure_2026]]

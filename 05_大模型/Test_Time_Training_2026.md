@@ -538,23 +538,23 @@ Q6: 能否将 TTT 扩展为"跨会话持久学习" (真正的在线学习)?
 ### 核心关联
 
 - [[Test_Time_Compute_Scaling_2026|Test-Time Compute Scaling 2026（推理时计算扩展）]] — **最关键的对照页**，系统介绍 TTC（o1/R1 式推理扩展），与本文 TTT 互为补充
-- [[../Reasoning_Models/Test_Time_Compute_2026|测试时计算 (Test-Time Compute)]] — TTC 的概念入口页
+- [[../09_Reasoning_Models/Test_Time_Compute_2026|测试时计算 (Test-Time Compute)]] — TTC 的概念入口页
 
 ### 序列建模关联
 
-- [[../Sequence_Models/Sequence_Models|序列模型深度解析]] — Transformer / RNN / SSM / TTT 的统一视角
-- [[../LLM_Architectures/Transformer_Alternatives|Transformer 替代架构]] — Mamba / RWKV / RetNet / TTT 等新兴架构对比
-- [[../LLM_Architectures/Long_Context_Models_2026|长上下文模型 2026]] — TTT 在长序列中的核心应用场景
+- [[../02_Sequence_Models/Sequence_Models|序列模型深度解析]] — Transformer / RNN / SSM / TTT 的统一视角
+- [[../05_LLM_Architectures/Transformer_Alternatives|Transformer 替代架构]] — Mamba / RWKV / RetNet / TTT 等新兴架构对比
+- [[../05_LLM_Architectures/Long_Context_Models_2026|长上下文模型 2026]] — TTT 在长序列中的核心应用场景
 
 ### 推理与学习关联
 
-- [[../Reasoning_Models/o1_Class_Reasoning_Models|o1 类推理模型]] — TTC 的代表，与 TTT 形成对照
-- [[../Reasoning_Models/DeepSeek_R1_Technical_Analysis|DeepSeek-R1 技术分析]] — RL 驱动的推理模型，推理时计算扩展的另一路线
-- [[../Fine_tuning_Techniques/PEFT_2026|PEFT 2026（参数高效微调）]] — 另一种"轻量参数更新"范式（离线 vs TTT 的在线）
+- [[../09_Reasoning_Models/o1_Class_Reasoning_Models|o1 类推理模型]] — TTC 的代表，与 TTT 形成对照
+- [[../09_Reasoning_Models/DeepSeek_R1_Technical_Analysis|DeepSeek-R1 技术分析]] — RL 驱动的推理模型，推理时计算扩展的另一路线
+- [[../07_Fine_tuning_Techniques/PEFT_2026|PEFT 2026（参数高效微调）]] — 另一种"轻量参数更新"范式（离线 vs TTT 的在线）
 
 ### 多模态关联
 
-- [[../Multimodal_Models/Video_Understanding_Architectures|视频理解架构]] — TTT 在长视频理解中的应用前景
+- [[../10_Multimodal_Models/Video_Understanding_Architectures|视频理解架构]] — TTT 在长视频理解中的应用前景
 
 ### 参考文献
 

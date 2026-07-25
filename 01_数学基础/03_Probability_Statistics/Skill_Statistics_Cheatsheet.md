@@ -89,7 +89,7 @@ Skill 的 A/B 测试能力通常需要以下统计支撑。
 - [[90_学习/References/index|References Index]]
 - [[09_测试/AB_Testing_AI_Systems|A/B Testing AI Systems]]
 - [[08_模型评估/Evaluation_Metrics|Evaluation Metrics]]
-- [[02_机器学习/Probability_Statistics/index|Probability and Statistics]]
+- [[02_机器学习/03_Probability_Statistics/index|Probability and Statistics]]
 
 ## 进阶知识拓展
 

@@ -15,7 +15,7 @@ relationships:
     type: simplified_by
 sources:
   - 12_架构基建/AI_Stack_Deep_Dive.md
-  - 05_大模型/LLM_Architectures
+  - 05_大模型/05_LLM_Architectures
   - 10_部署推理/04_Inference_Performance/MoE_Inference_Optimization.md
   - 10_部署推理/04_Inference_Performance/Inference_Terms_for_dummy.md
 summary: "MoE 将 FFN 替换为多个专家网络，每次仅激活 Top-K 个专家，实现参数规模↑ 但计算量→不变。2026年主流大模型（DeepSeek-V3/Qwen3.5/Kimi-K2）均采用 MoE 架构。"
@@ -196,7 +196,7 @@ AI Stack 支持的模型中，多个采用 MoE 架构：
 
 ## Related
 
-- [[05_大模型/LLM_Architectures]] — LLM 架构全景
+- [[05_大模型/05_LLM_Architectures]] — LLM 架构全景
 - [[概念/llm-architectures]] — LLM 架构
 - [[概念/transformer-architecture]] — Transformer 架构
 - [[概念/distributed-parallelism]] — 分布式并行策略（Expert Parallelism）

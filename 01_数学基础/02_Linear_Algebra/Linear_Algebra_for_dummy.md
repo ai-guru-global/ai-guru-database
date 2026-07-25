@@ -187,7 +187,7 @@ A: LoRA 是一种"偷懒"的训练方法。大模型有几十亿个参数，全�
 
 - 专业版: [线性代数完整版](./Linear_Algebra.md)
 - 推荐视频: 3Blue1Brown 的"线性代数的本质"系列（B站有中文字幕），用动画把矩阵变换讲得超级直观
-- 下一站: [概率统计小白版](../Probability_Statistics/Probability_Statistics_for_dummy.md)
+- 下一站: [概率统计小白版](../03_Probability_Statistics/Probability_Statistics_for_dummy.md)
 
 ---
 *本文是 [Linear_Algebra.md](./Linear_Algebra.md) 的简化版，适合零基础读者。*

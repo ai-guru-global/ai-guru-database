@@ -1058,7 +1058,7 @@ if __name__ == "__main__":
 ### 相关文档
 
 - [API 设计 for AI](../12_架构基建/11_AI_Gateway/API_Design_for_AI.md) - API 文档的基础
-- [Prompt 管理平台](./Prompt_Ops/Prompt_Management_Platform.md) - Prompt 文档管理
+- [Prompt 管理平台](./11_Prompt_Ops/Prompt_Management_Platform.md) - Prompt 文档管理
 - [AI Gateway 对比](12_架构基建/11_AI_Gateway/AI_Gateway_Comparison_2026.md) - 网关文档自动化
 
 ## Related

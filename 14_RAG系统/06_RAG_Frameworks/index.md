@@ -8,7 +8,7 @@ sources: []
 
 # RAG Frameworks
 
-This page indexes the contents of `14_RAG系统/RAG_Frameworks`.
+This page indexes the contents of `14_RAG系统/06_RAG_Frameworks`.
 
 ## Files
 

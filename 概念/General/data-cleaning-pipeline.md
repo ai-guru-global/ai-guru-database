@@ -11,7 +11,7 @@ relationships:
     type: influences
 sources:
   - 07_模型训练/02_Data/Data_Curation_and_Mixture_2026.md
-  - 05_大模型/LLM_Data_Engineering.md
+  - 05_大模型/06_LLM_Data_Engineering.md
   - 07_模型训练/README.md
 summary: "数据清洗 Pipeline 就像给 AI 准备‘干净食材’的中央厨房：把从网上抓来的原始数据，经过去重、去噪、格式统一、质量打分、毒性过滤等步骤，变成适合训练大模型的高质量语料。"
 provenance:

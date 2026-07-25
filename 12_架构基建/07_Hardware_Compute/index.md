@@ -8,7 +8,7 @@ sources: []
 
 # Hardware Compute
 
-This page indexes the contents of `12_架构基建/Hardware_Compute`.
+This page indexes the contents of `12_架构基建/07_Hardware_Compute`.
 
 ## Files
 

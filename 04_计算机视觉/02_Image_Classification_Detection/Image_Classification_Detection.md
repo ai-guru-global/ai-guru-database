@@ -561,9 +561,9 @@ car (0.75) at [50, 300, 150, 380]
 - [优化算法](03_深度学习/03_Optimization/Optimization.md): SGD, Adam
 
 ### 后续推荐
-- [图像分割](../Segmentation/Segmentation.md): 语义分割、实例分割
-- [生成模型](../Generative_Models/Generative_Models.md): GAN, Diffusion
-- [多模态视觉](../Multimodal_Vision/Multimodal_Vision.md): CLIP, BLIP
+- [图像分割](../03_Segmentation/Segmentation.md): 语义分割、实例分割
+- [生成模型](../06_Generative_Models/Generative_Models.md): GAN, Diffusion
+- [多模态视觉](../08_Multimodal_Vision/Multimodal_Vision.md): CLIP, BLIP
 
 ### 跨领域应用
 - [迁移学习](03_深度学习/Transfer_Learning.md): 预训练模型微调
@@ -672,8 +672,8 @@ car (0.75) at [50, 300, 150, 380]
 - [[../../05_大模型/10_Multimodal_Models/LLaVA_Deep_Dive|LLaVA]] — 视觉语言模型架构
 - [[../../03_深度学习/04_Generative_Models/Diffusion_Models_Deep_Dive|Diffusion 深度页]] — 条件图像生成
 - [[../../概念/Vision/object-detection|目标检测概念卡]] — 检测范式定义
-- [[../../10_部署推理/Inference_Engines|推理引擎]] — CV 模型高效推理
-- [[../../14_RAG系统/Advanced_RAG|高级 RAG]] — ColPali 等视觉检索方法
+- [[../../10_部署推理/02_Inference_Engines|推理引擎]] — CV 模型高效推理
+- [[../../14_RAG系统/04_Advanced_RAG|高级 RAG]] — ColPali 等视觉检索方法
 
 ---
 

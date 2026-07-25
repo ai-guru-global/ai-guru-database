@@ -21,7 +21,7 @@ sources: []
 
 > **一句话理解**: K8sGPT 是 CNCF 沙箱级的"[[概念/ai-sre|AI SRE]]"——用一组分析器扫集群里的失败信号，再交给 LLM（可本地 Ollama）翻译成"哪里坏了、怎么修"的人话，支持 CLI 和常驻 Operator 两种模式。
 
-> 📐 **概念方法论**: K8sGPT 把 SRE 的"读告警 → 读 Event/Pod 日志 → 在脑子里推理根因 → 写处置建议"这条认知链路，拆成**确定性**（Analyzers 提取结构化失败信号）+ **概率性**（LLM 翻译成自然语言）两段。这种"用 LLM 操作 LLM 基础设施"的范式与 [[13_运维/SRE_for_AI_Systems]] 一脉相承；与同类项目 [[CNCF_Cloud_Native_AI/HolmesGPT_Deep_Dive]] 相比，K8sGPT 更偏"集群健康扫描器"，HolmesGPT 更偏"告警分诊员"。
+> 📐 **概念方法论**: K8sGPT 把 SRE 的"读告警 → 读 Event/Pod 日志 → 在脑子里推理根因 → 写处置建议"这条认知链路，拆成**确定性**（Analyzers 提取结构化失败信号）+ **概率性**（LLM 翻译成自然语言）两段。这种"用 LLM 操作 LLM 基础设施"的范式与 [[13_运维/SRE_for_AI_Systems]] 一脉相承；与同类项目 [[05_CNCF_Cloud_Native_AI/HolmesGPT_Deep_Dive]] 相比，K8sGPT 更偏"集群健康扫描器"，HolmesGPT 更偏"告警分诊员"。
 
 ---
 
@@ -706,10 +706,10 @@ K8sGPT 内置 prompt 模板，可通过 `extraOptions` 传额外参数微调语�
 
 ### 8.3 何时考虑其它
 
-- 主要痛点是**给已有 Prometheus 告警加解释** → [[CNCF_Cloud_Native_AI/HolmesGPT_Deep_Dive]]。
+- 主要痛点是**给已有 Prometheus 告警加解释** → [[05_CNCF_Cloud_Native_AI/HolmesGPT_Deep_Dive]]。
 - 需要**自动执行修复动作**（不止给建议）→ Robusta。
 - 团队习惯**在 Slack 里手动跑命令** → Botkube。
-- 需要**自主多步 Agent**（自动调多个工具收尾）→ [[CNCF_Cloud_Native_AI/kagent_Deep_Dive]]。
+- 需要**自主多步 Agent**（自动调多个工具收尾）→ [[05_CNCF_Cloud_Native_AI/kagent_Deep_Dive]]。
 - 只要**指标告警，不要 LLM** → 直接 Prometheus + Alertmanager。
 
 ---
@@ -738,8 +738,8 @@ A: 排障场景至少 14B（如 `qwen2.5:14b`、`llama3.1:8b` 勉强）。复杂
 
 ## Related
 
-- [[CNCF_Cloud_Native_AI/README]] — CNCF 云原生 LLM 项目全景
-- [[CNCF_Cloud_Native_AI/HolmesGPT_Deep_Dive]] — 告警分诊员，K8sGPT 的互补项
-- [[CNCF_Cloud_Native_AI/kagent_Deep_Dive]] — 自主多步 Agent，更强的自动修复方向
+- [[05_CNCF_Cloud_Native_AI/README]] — CNCF 云原生 LLM 项目全景
+- [[05_CNCF_Cloud_Native_AI/HolmesGPT_Deep_Dive]] — 告警分诊员，K8sGPT 的互补项
+- [[05_CNCF_Cloud_Native_AI/kagent_Deep_Dive]] — 自主多步 Agent，更强的自动修复方向
 - [[13_运维/SRE_for_AI_Systems]] — 用 LLM 做 SRE 的方法论总论
 - [[10_部署推理/02_Inference_Engines/Ollama_Deep_Dive]] — K8sGPT 离线模式依赖的本地推理引擎

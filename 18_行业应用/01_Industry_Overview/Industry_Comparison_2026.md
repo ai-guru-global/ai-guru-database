@@ -197,10 +197,10 @@ quadrantChart
 | 农业 | [Agriculture](./Agriculture/) |
 | 自动驾驶 | [Autonomous Driving](./Autonomous_Driving/) |
 | 内容媒体 | [Content Media](./Content_Media/) |
-| 教育 | [Education](./Education/) |
+| 教育 | [Education](./05_Education/) |
 | 能源气候 | [Energy & Climate](./Energy_Climate/) |
-| 金融 | [Finance](./Finance/) |
-| 医疗健康 | [Healthcare](./Healthcare/) |
+| 金融 | [Finance](./04_Finance/) |
+| 医疗健康 | [Healthcare](./03_Healthcare/) |
 | 法律政务 | [Legal & Government](./Legal_Government/) |
 | 制造 | [Manufacturing](./Manufacturing/) |
 | 零售电商 | [Retail & E-commerce](./Retail_Ecommerce/) |

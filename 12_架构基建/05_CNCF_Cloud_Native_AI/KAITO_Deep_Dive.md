@@ -17,7 +17,7 @@ sources: []
 
 > **一句话理解**: KAITO 让你用一行 preset 名字（如 mistral-7b-instruct）就能在 K8s 上拉起一个大模型推理服务——自动选 GPU、自动配 vLLM/TGI、自动暴露 API，是 LLM on K8s 最快的"开箱即用"方案。
 
-> 📐 **概念方法论**: KAITO 把"在 K8s 上跑大模型"这件事从「写 Deployment + 选镜像 + 调 GPU + 配 vLLM 参数 + 暴露服务」压缩成一个 **preset 名字**。它解决的不是"如何更快地推理"（那是 vLLM/TGI 的事），而是"如何更快地把推理服务部署起来"。与 [[CNCF_Cloud_Native_AI/KServe_Deep_Dive]] 的"通用推理平台"定位不同，KAITO 更像 LLM 时代的 **Helm Chart + GPU Autoscaler 合体**；选型时可参考 [[10_部署推理/02_Inference_Engines/LLM_Inference_Engine_Selection_Guide]]。
+> 📐 **概念方法论**: KAITO 把"在 K8s 上跑大模型"这件事从「写 Deployment + 选镜像 + 调 GPU + 配 vLLM 参数 + 暴露服务」压缩成一个 **preset 名字**。它解决的不是"如何更快地推理"（那是 vLLM/TGI 的事），而是"如何更快地把推理服务部署起来"。与 [[05_CNCF_Cloud_Native_AI/KServe_Deep_Dive]] 的"通用推理平台"定位不同，KAITO 更像 LLM 时代的 **Helm Chart + GPU Autoscaler 合体**；选型时可参考 [[10_部署推理/02_Inference_Engines/LLM_Inference_Engine_Selection_Guide]]。
 
 ---
 
@@ -689,7 +689,7 @@ docker tag mistral-7b-instruct:0.0.7 harbor.internal/kaito/mistral-7b-instruct:0
 - 需要**多模型金丝雀 / 流量切分** → KServe InferenceService。
 - 需要**模型版本化、P2P 权重分发** → llmaz。
 - 需要**极致性能调优 / 自定义 batching** → 裸 vLLM + 自写 Operator。
-- 需要**多租户 + API Gateway + 计费** → KServe + [[CNCF_Cloud_Native_AI/Envoy_AI_Gateway_Deep_Dive]]。
+- 需要**多租户 + API Gateway + 计费** → KServe + [[05_CNCF_Cloud_Native_AI/Envoy_AI_Gateway_Deep_Dive]]。
 
 ---
 
@@ -717,8 +717,8 @@ A: 单租户 / 小集群（几个到十几个模型实例）非常合适。大�
 
 ## Related
 
-- [[CNCF_Cloud_Native_AI/README]] — CNCF 云原生 LLM 项目全景
-- [[CNCF_Cloud_Native_AI/KServe_Deep_Dive]] — 通用推理平台，KAITO 的互补项
-- [[CNCF_Cloud_Native_AI/llmaz_Deep_Dive]] — 另一个 LLM 模型管理 Operator
+- [[05_CNCF_Cloud_Native_AI/README]] — CNCF 云原生 LLM 项目全景
+- [[05_CNCF_Cloud_Native_AI/KServe_Deep_Dive]] — 通用推理平台，KAITO 的互补项
+- [[05_CNCF_Cloud_Native_AI/llmaz_Deep_Dive]] — 另一个 LLM 模型管理 Operator
 - [[10_部署推理/02_Inference_Engines/vLLM_Deep_Dive]] — KAITO 默认推理运行时
 - [[10_部署推理/02_Inference_Engines/TGI_Deep_Dive]] — KAITO 备选推理运行时

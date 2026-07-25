@@ -476,9 +476,9 @@ AI编程使用风险评估:
 
 ## 参考资源
 
-- [AI编程助手对比](../Tools/AI_Coding_Assistants_2026.md) — 主流工具能力对比
-- [Vibe Coding 方法论](../Methodology/Vibe_Coding_Methodology.md) — DGRV 模型与实践框架
-- [Agentic Coding 方法论](../Methodology/Agentic_Coding_Methodology.md) — 多 Agent 协作开发
+- [AI编程助手对比](../05_Tools/AI_Coding_Assistants_2026.md) — 主流工具能力对比
+- [Vibe Coding 方法论](../03_Methodology/Vibe_Coding_Methodology.md) — DGRV 模型与实践框架
+- [Agentic Coding 方法论](../03_Methodology/Agentic_Coding_Methodology.md) — 多 Agent 协作开发
 - [Prompt Engineering 专题](05_大模型/08_Prompt_Engineering/Prompt_Engineering.md) — 提示工程理论基础
 
 ---

@@ -286,11 +286,11 @@ Attention 是本阶段最核心也最常考的概念。完整推导：
 - [[90_学习/concepts/stage1_foundation|Stage 1: 基础]]
 - [[90_学习/concepts/stage3_engineering|Stage 3: 工程]]
 - [[90_学习/pathways/index|学习路径]]
-- [[05_大模型/LLM_Fundamentals]] — LLM 基础
+- [[05_大模型/01_LLM_Fundamentals]] — LLM 基础
 - [[03_深度学习/]] — 深度学习章节
 - [[04_计算机视觉/]] — CV 章节
 
-> **关联**: → [[90_学习/concepts/index|概念分阶]] | [[90_学习/concepts/stage3_engineering|Stage 3 工程]] | [[05_大模型/LLM_Fundamentals]] | [[03_深度学习/]] | [[90_学习/References/Papers/]]
+> **关联**: → [[90_学习/concepts/index|概念分阶]] | [[90_学习/concepts/stage3_engineering|Stage 3 工程]] | [[05_大模型/01_LLM_Fundamentals]] | [[03_深度学习/]] | [[90_学习/References/Papers/]]
 
 ## 相关链接
 

@@ -51,10 +51,10 @@ sources: []
 
 | 主题 | 难度 | 你会学到什么 | 文档链接 |
 |------|------|------------|---------|
-| 图像分类与检测 | ⭐⭐ | CNN 怎么像放大镜一样扫描图片,YOLO 如何一眼认出所有东西 | [点这里](./Image_Classification_Detection/Image_Classification_Detection_for_dummy.md) |
-| 图像分割 | ⭐⭐⭐ | 如何像涂色书一样给图片的每个部分上色 | [点这里](./Segmentation/Segmentation_for_dummy.md) |
-| 多模态视觉 | ⭐⭐⭐ | AI 怎么同时理解图片和文字 | [点这里](./Multimodal_Vision/Multimodal_Vision_for_dummy.md) |
-| 生成模型 | ⭐⭐⭐⭐ | AI 如何画画、修图、生成全新图片 | [点这里](./Generative_Models/Generative_Models_for_dummy.md) |
+| 图像分类与检测 | ⭐⭐ | CNN 怎么像放大镜一样扫描图片,YOLO 如何一眼认出所有东西 | [点这里](./02_Image_Classification_Detection/Image_Classification_Detection_for_dummy.md) |
+| 图像分割 | ⭐⭐⭐ | 如何像涂色书一样给图片的每个部分上色 | [点这里](./03_Segmentation/Segmentation_for_dummy.md) |
+| 多模态视觉 | ⭐⭐⭐ | AI 怎么同时理解图片和文字 | [点这里](./08_Multimodal_Vision/Multimodal_Vision_for_dummy.md) |
+| 生成模型 | ⭐⭐⭐⭐ | AI 如何画画、修图、生成全新图片 | [点这里](./06_Generative_Models/Generative_Models_for_dummy.md) |
 
 ## 开始之前你需要知道
 

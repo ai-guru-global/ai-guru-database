@@ -315,8 +315,8 @@ Agent 控制检索-生成循环:
 
 ## Related
 
-- [[../14_RAG系统/RAG_Fundamentals|RAG 基础]] — 检索增强生成系统架构
-- [[../05_大模型/LLM_Fundamentals|LLM 基础]] — RAG 中的语言模型组件
+- [[../14_RAG系统/01_RAG_Fundamentals|RAG 基础]] — 检索增强生成系统架构
+- [[../05_大模型/01_LLM_Fundamentals|LLM 基础]] — RAG 中的语言模型组件
 - [[../../概念/General|通用概念]] — 检索、嵌入、重排序概念
 - [[../08_模型评估/RAG_Evaluation|RAG 评估]] — RAG 系统评估框架
-- [[../03_深度学习/Generative_Models|生成模型]] — 生成式检索方法
+- [[../03_深度学习/04_Generative_Models|生成模型]] — 生成式检索方法

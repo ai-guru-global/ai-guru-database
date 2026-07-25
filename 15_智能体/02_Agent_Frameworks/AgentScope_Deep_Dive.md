@@ -606,8 +606,8 @@ class HeavyComputationStage:
 
 - [AgentScope GitHub](https://github.com/alibaba/agentscope)
 - [AgentScope 文档](https://agentscope.readthedocs.io)
-- [CoPaw (基于 AgentScope)](../OpenClaw_Ecosystem/CoPaw_Deep_Dive.md)
-- [Multi-Agent 评估框架](../Agent_Evaluation/Multi_Agent_Evaluation_2026.md)
+- [CoPaw (基于 AgentScope)](../11_OpenClaw_Ecosystem/CoPaw_Deep_Dive.md)
+- [Multi-Agent 评估框架](../07_Agent_Evaluation/Multi_Agent_Evaluation_2026.md)
 
 ## Related
 

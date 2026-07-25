@@ -1948,7 +1948,7 @@ Phase 5: 持续优化 (持续)
 - [Kubeflow](11_模型运维/05_Orchestration/Kubeflow_Deep_Dive.md) - 云原生 ML 平台
 - [LakeFS](11_模型运维/05_Orchestration/LakeFS_Deep_Dive.md) - 数据湖版本控制
 - [Feast](11_模型运维/04_Experiment_Tracking/Feast_Deep_Dive.md) - 特征存储平台
-- [Guardrails](../SRE_Reliability/Guardrails_Deep_Dive.md) - LLM 安全护栏
+- [Guardrails](../02_SRE_Reliability/Guardrails_Deep_Dive.md) - LLM 安全护栏
 - [Helicone](11_模型运维/08_Observability/Helicone_Deep_Dive.md) - LLM 可观测性平台
 - [Braintrust](11_模型运维/08_Observability/Braintrust_Deep_Dive.md) - LLM 评估平台
 - [Prefect](11_模型运维/05_Orchestration/Prefect_Deep_Dive.md) - Python 工作流编排

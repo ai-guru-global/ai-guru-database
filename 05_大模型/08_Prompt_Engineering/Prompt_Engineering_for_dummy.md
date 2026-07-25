@@ -561,8 +561,8 @@ Prompt: "逐步分析并解释你的推理过程"
 
 ### 🔗 相关内容
 
-- **基础知识**: [大语言模型架构 (小白版)](../LLM_Architectures/LLM_Architectures_for_dummy.md)
-- **进阶技能**: [微调技术 (小白版)](../Fine_tuning_Techniques/Fine_tuning_Techniques_for_dummy.md)
+- **基础知识**: [大语言模型架构 (小白版)](../05_LLM_Architectures/LLM_Architectures_for_dummy.md)
+- **进阶技能**: [微调技术 (小白版)](../07_Fine_tuning_Techniques/Fine_tuning_Techniques_for_dummy.md)
 - **实战应用**: [RAG 系统 (小白版)](14_RAG系统/01_RAG_Fundamentals/RAG_Systems_for_dummy.md)
 
 ---

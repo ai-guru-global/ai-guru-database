@@ -8,7 +8,7 @@ sources: []
 
 # AI Hardware
 
-This page indexes the contents of `01_数学基础/AI_Hardware`.
+This page indexes the contents of `01_数学基础/10_AI_Hardware`.
 
 ## Files
 

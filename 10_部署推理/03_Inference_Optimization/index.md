@@ -9,7 +9,7 @@ tags: [auto-index, inference-optimization]
 
 # Inference Optimization
 
-本页索引 `10_部署推理/Inference_Optimization` 的内容，聚焦 LLM 推理的优化技术——从 KV Cache 与分页注意力，到并行策略、算子编译与 Multi-LoRA 服务。
+本页索引 `10_部署推理/03_Inference_Optimization` 的内容，聚焦 LLM 推理的优化技术——从 KV Cache 与分页注意力，到并行策略、算子编译与 Multi-LoRA 服务。
 
 ## 文件导航
 

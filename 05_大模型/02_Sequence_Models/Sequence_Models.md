@@ -206,7 +206,7 @@ $$c_t = \sum_i \alpha_{t,i} h_i^{enc}$$
 
 这一机制后来发展为 Transformer 中的 Self-Attention——从"Encoder-Decoder 之间关注"扩展为"序列内部互相关注"。
 
-→ 详见 [Transformer 革命](../Transformer_Revolution/Transformer_Revolution.md)
+→ 详见 [Transformer 革命](../04_Transformer_Revolution/Transformer_Revolution.md)
 
 ### 3.4 序列标注 (Sequence Labeling)
 
@@ -369,8 +369,8 @@ class Seq2SeqDecoder(nn.Module):
 - [线性代数](01_数学基础/02_Linear_Algebra/Linear_Algebra.md) — 矩阵运算基础
 
 ### 进阶方向
-- [Transformer 革命](../Transformer_Revolution/Transformer_Revolution.md) — 序列模型的下一代（从 Attention 机制演进而来）
-- [大语言模型架构](../LLM_Architectures/LLM_Architectures.md) — 现代 LLM 如何完全基于 Transformer
+- [Transformer 革命](../04_Transformer_Revolution/Transformer_Revolution.md) — 序列模型的下一代（从 Attention 机制演进而来）
+- [大语言模型架构](../05_LLM_Architectures/LLM_Architectures.md) — 现代 LLM 如何完全基于 Transformer
 - [强化学习基础](06_强化学习/01_RL_Foundations/RL_Foundations.md) — 序列决策问题
 
 ---

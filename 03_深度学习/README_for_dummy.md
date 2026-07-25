@@ -51,7 +51,7 @@ sources: []
 - 激活函数的作用?(像开关一样决定是否激活)
 - 反向传播怎么工作?(像找出错题原因,改正错误)
 
-📖 [开始学习 → Neural_Network_Core_for_dummy.md](./Neural_Network_Core/Neural_Network_Core_for_dummy.md)
+📖 [开始学习 → Neural_Network_Core_for_dummy.md](./02_Neural_Network_Core/Neural_Network_Core_for_dummy.md)
 
 ---
 
@@ -63,7 +63,7 @@ sources: []
 - 学习率怎么调?(像开车速度,太快会翻车,太慢走不动)
 - 怎么防止模型"死记硬背"?(让它学会举一反三)
 
-📖 [开始学习 → Optimization_for_dummy.md](./Optimization/Optimization_for_dummy.md)
+📖 [开始学习 → Optimization_for_dummy.md](./03_Optimization/Optimization_for_dummy.md)
 
 ---
 
@@ -149,7 +149,7 @@ A: 这章是入门,工作还需要更多实战经验。但理解这些概念是�
 
 **准备好了吗?从第一节开始你的深度学习之旅吧!** 🚀
 
-👉 [神经网络核心 - 小白版](./Neural_Network_Core/Neural_Network_Core_for_dummy.md)
+👉 [神经网络核心 - 小白版](./02_Neural_Network_Core/Neural_Network_Core_for_dummy.md)
 
 ---
 

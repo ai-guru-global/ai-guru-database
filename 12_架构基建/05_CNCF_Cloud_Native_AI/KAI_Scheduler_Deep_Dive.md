@@ -17,7 +17,7 @@ sources: []
 
 > **一句话理解**: KAI Scheduler 是为万卡级 AI 集群设计的 CNCF 沙箱调度器——靠拓扑感知（同机架/同交换机优先）+ 主动碎片整理 + 大规模公平调度，在 GPU 紧张时把吞吐和拓扑带宽同时拉满。
 
-> 📐 **概念方法论**: 把 kube-scheduler 当作"单 Pod 资源匹配器"，那 KAI Scheduler 就是"集群级 GPU 拓扑优化器 + 碎片整理器 + 公平仲裁器"。它解决的不是"Pod 能不能调度"，而是"在一个万卡集群里，**分布式训练的 N 张卡能不能放在同一台交换机下面、整体碎片率最低、各团队排队公平**"。与 [[CNCF_Cloud_Native_AI/Volcano_Deep_Dive]] 同属"批调度"族，但 KAI 把拓扑感知做到了第一公民；选型时结合 [[12_架构基建/02_Architecture_Overview/AI_Infrastructure_2026]] 看 GPU 集群规模与训练拓扑诉求。
+> 📐 **概念方法论**: 把 kube-scheduler 当作"单 Pod 资源匹配器"，那 KAI Scheduler 就是"集群级 GPU 拓扑优化器 + 碎片整理器 + 公平仲裁器"。它解决的不是"Pod 能不能调度"，而是"在一个万卡集群里，**分布式训练的 N 张卡能不能放在同一台交换机下面、整体碎片率最低、各团队排队公平**"。与 [[05_CNCF_Cloud_Native_AI/Volcano_Deep_Dive]] 同属"批调度"族，但 KAI 把拓扑感知做到了第一公民；选型时结合 [[12_架构基建/02_Architecture_Overview/AI_Infrastructure_2026]] 看 GPU 集群规模与训练拓扑诉求。
 
 ---
 
@@ -624,8 +624,8 @@ rate(kai_preemptions_total[1m]) * 60
 
 ### 8.3 何时考虑其它
 
-- **小集群 / 推理为主** → kube-scheduler + [[CNCF_Cloud_Native_AI/Kueue_Deep_Dive]]（作业排队）。
-- **通用批处理 / HPC** → [[CNCF_Cloud_Native_AI/Volcano_Deep_Dive]]（生态成熟、CRD 多）。
+- **小集群 / 推理为主** → kube-scheduler + [[05_CNCF_Cloud_Native_AI/Kueue_Deep_Dive]]（作业排队）。
+- **通用批处理 / HPC** → [[05_CNCF_Cloud_Native_AI/Volcano_Deep_Dive]]（生态成熟、CRD 多）。
 - **大数据 / Spark/Flink 队列治理** → YuniKorn。
 - **DRA 设备细粒度分配** → kube-scheduler + [[12_架构基建/07_Hardware_Compute/DRA_Deep_Dive]]（KAI 关注调度拓扑，DRA 关注设备声明式分配，二者可互补）。
 
@@ -646,7 +646,7 @@ A: 依次排查：(1) 集群总量是否够；(2) 该 Queue 是否超 `maxQuota`
 A: 会迁移低优先级 Pod（受 `onlyLowerPriorityThan` 与 `aggressiveness` 约束）。建议把关键训练设为高优先级、把可中断作业设为低优先级，让 defrag 优先动后者。`medium` 强度通常足够安全。
 
 **Q5: KAI 和 Kueue 是竞争关系吗？**
-A: 定位不同。Kueue 做"作业排队与外部协调"（批处理入队、配额管理），KAI 做"集群内 GPU 调度决策"。生产里可见 Kueue 在上、KAI 在下，Kueue 把已批准的 job 交给 KAI 绑定。详见 [[CNCF_Cloud_Native_AI/Kueue_Deep_Dive]]。
+A: 定位不同。Kueue 做"作业排队与外部协调"（批处理入队、配额管理），KAI 做"集群内 GPU 调度决策"。生产里可见 Kueue 在上、KAI 在下，Kueue 把已批准的 job 交给 KAI 绑定。详见 [[05_CNCF_Cloud_Native_AI/Kueue_Deep_Dive]]。
 
 **Q6: 单个 KAI 实例能扛多大集群？**
 A: 万级 GPU、万级 Pod 是设计目标区间。再往上通常按 Queue/namespace 分片跑多个 KAI 实例分而治之；HA 靠 `leaderElect` 多副本（注意：副本只做主备不扩吞吐）。
@@ -655,8 +655,8 @@ A: 万级 GPU、万级 Pod 是设计目标区间。再往上通常按 Queue/name
 
 ## Related
 
-- [[CNCF_Cloud_Native_AI/README]] — CNCF 云原生 AI 项目全景
-- [[CNCF_Cloud_Native_AI/Volcano_Deep_Dive]] — 同族批调度器，生态更成熟
-- [[CNCF_Cloud_Native_AI/Kueue_Deep_Dive]] — 作业排队与配额，可与 KAI 上下层协作
+- [[05_CNCF_Cloud_Native_AI/README]] — CNCF 云原生 AI 项目全景
+- [[05_CNCF_Cloud_Native_AI/Volcano_Deep_Dive]] — 同族批调度器，生态更成熟
+- [[05_CNCF_Cloud_Native_AI/Kueue_Deep_Dive]] — 作业排队与配额，可与 KAI 上下层协作
 - [[12_架构基建/02_Architecture_Overview/AI_Infrastructure_2026]] — 大规模 AI 集群基础设施总览
 - [[12_架构基建/07_Hardware_Compute/DRA_Deep_Dive]] — 设备声明式分配，与调度拓扑互补

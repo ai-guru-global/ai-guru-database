@@ -575,7 +575,7 @@ AI是工具,不是替代
 ## 想深入了解?
 
 **下一步阅读**:
-- 📘 [多模态视觉 - 小白版](../Multimodal_Vision/Multimodal_Vision_for_dummy.md) - 理解CLIP如何理解文字提示
+- 📘 [多模态视觉 - 小白版](../08_Multimodal_Vision/Multimodal_Vision_for_dummy.md) - 理解CLIP如何理解文字提示
 - 📘 [Transformer - 小白版](05_大模型/04_Transformer_Revolution/Transformer_Revolution_for_dummy.md) - 理解Diffusion中的注意力机制
 
 **查看原版文档**(需要技术基础):
@@ -588,8 +588,8 @@ AI是工具,不是替代
 - 🔗 Leonardo.ai - 游戏素材生成
 
 **相关主题**:
-- 🔙 [CNN基础 - 小白版](../Image_Classification_Detection/Image_Classification_Detection_for_dummy.md) - 理解生成器的卷积结构
-- 🔙 [U-Net分割 - 小白版](../Segmentation/Segmentation_for_dummy.md) - Diffusion用的就是U-Net!
+- 🔙 [CNN基础 - 小白版](../02_Image_Classification_Detection/Image_Classification_Detection_for_dummy.md) - 理解生成器的卷积结构
+- 🔙 [U-Net分割 - 小白版](../03_Segmentation/Segmentation_for_dummy.md) - Diffusion用的就是U-Net!
 - 🔜 [强化学习 - 小白版](06_强化学习/01_RL_Foundations/RL_Foundations_for_dummy.md) - 理解RLHF如何改进生成质量
 
 ## Related
@@ -597,7 +597,7 @@ AI是工具,不是替代
 - [[../../05_大模型/10_Multimodal_Models/Multimodal_Architectures_2026|多模态架构]] — 文本到图像的多模态生成
 - [[../../03_深度学习/04_Generative_Models/Diffusion_Models_Deep_Dive|Diffusion 深度页]] — 扩散模型的核心原理
 - [[../../概念/Vision/generative-vision-models|生成式视觉模型概念卡]] — GAN/Diffusion/VAE 概念定义
-- [[../../10_部署推理/Quantization|量化部署]] — 生成模型推理优化
+- [[../../10_部署推理/05_Quantization|量化部署]] — 生成模型推理优化
 - [[../../08_模型评估/02_Benchmarks/Multimodal_Evaluation_Benchmarks|多模态评估]] — 生成质量评估指标
 
 ---

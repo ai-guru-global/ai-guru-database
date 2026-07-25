@@ -21,7 +21,7 @@ sources: []
 
 > **一句话理解**: KubeRay 是 Ray 的 Kubernetes Operator——把 RayCluster/RayJob/RayService 声明式跑在 K8s 上，是大模型多机多卡分布式推理（Ray Serve + vLLM tensor parallel）的标配底座。
 
-> 📐 **概念方法论**: KubeRay 解决的是「分布式 Python 计算框架 Ray 如何被 Kubernetes 原生纳管」——它把 Ray 的运行时拓扑（head + worker）、批作业、长期服务三种形态分别抽象为 CRD，再用 Operator 把 Ray Autoscaler 接到 K8s Pod 调度链上。理解它的前提是理解 vLLM 的多机 tensor parallel 怎么把一个模型拆到多张 GPU 上（详见 [[10_部署推理/02_Inference_Engines/vLLM_Deep_Dive]]），以及推理服务编排的标准接口为什么需要 Ray Serve 而非纯 KServe（详见 [[CNCF_Cloud_Native_AI/KServe_Deep_Dive]]）。
+> 📐 **概念方法论**: KubeRay 解决的是「分布式 Python 计算框架 Ray 如何被 Kubernetes 原生纳管」——它把 Ray 的运行时拓扑（head + worker）、批作业、长期服务三种形态分别抽象为 CRD，再用 Operator 把 Ray Autoscaler 接到 K8s Pod 调度链上。理解它的前提是理解 vLLM 的多机 tensor parallel 怎么把一个模型拆到多张 GPU 上（详见 [[10_部署推理/02_Inference_Engines/vLLM_Deep_Dive]]），以及推理服务编排的标准接口为什么需要 Ray Serve 而非纯 KServe（详见 [[05_CNCF_Cloud_Native_AI/KServe_Deep_Dive]]）。
 
 ---
 
@@ -651,7 +651,7 @@ Ray 大版本升级不能原地滚——runtime state 不向后兼容。正确�
 
 一句话决策：**70B+ 多机 TP 或 Python 重业务 → KubeRay；标准化推理 + scale-to-zero → KServe；万卡级 disaggregated → llm-d；单卡快速验证 → 原生 Deployment；单团队 ML CI/CD → BentoML。**
 
-实际生产中并非互斥。最常见的组合是 **KubeRay（多机分布式底座）+ KServe（标准化对外接口 + Knative 灰度）**：KServe `ServingRuntime` 把流量转给 Ray Serve，KubeRay 专注底层 GPU 拓扑与 actor 调度；上层用 Kueue 做 GPU 配额排队，详见 [[CNCF_Cloud_Native_AI/Kueue_Deep_Dive]]。
+实际生产中并非互斥。最常见的组合是 **KubeRay（多机分布式底座）+ KServe（标准化对外接口 + Knative 灰度）**：KServe `ServingRuntime` 把流量转给 Ray Serve，KubeRay 专注底层 GPU 拓扑与 actor 调度；上层用 Kueue 做 GPU 配额排队，详见 [[05_CNCF_Cloud_Native_AI/Kueue_Deep_Dive]]。
 
 ---
 
@@ -676,14 +676,14 @@ Ray 2.x 起支持 GCS 外部存储（Redis / etcd），head Pod 重建后能恢�
 能力上有 `minReplicas: 0`，但 Ray 集群冷启动 + 模型重新加载常达数分钟，不适合面向用户的在线服务。推荐对低 QPS 辅助模型用 KServe + Knative 做 scale-to-zero，主推理服务保持 `minReplicas >= 1`。
 
 **Q7：怎么和 Volcano / Kueue 做批量排队？**
-给 `RayJob` 加 `kueue.x-k8s.io/queue-name` 标签即可让 Kueue 把整个 Ray 集群当 Workload 排队；Volcano 场景下用 Pod group annotation。适合多团队共享 GPU 池、夜间跑批量训练的混部场景，详见 [[CNCF_Cloud_Native_AI/Kueue_Deep_Dive]]。
+给 `RayJob` 加 `kueue.x-k8s.io/queue-name` 标签即可让 Kueue 把整个 Ray 集群当 Workload 排队；Volcano 场景下用 Pod group annotation。适合多团队共享 GPU 池、夜间跑批量训练的混部场景，详见 [[05_CNCF_Cloud_Native_AI/Kueue_Deep_Dive]]。
 
 ---
 
 ## Related
 
-- [[CNCF_Cloud_Native_AI/README]] —— CNCF 云原生 LLM 项目全景
-- [[CNCF_Cloud_Native_AI/KServe_Deep_Dive]] —— 与 KubeRay 互补的标准化推理接口层
-- [[CNCF_Cloud_Native_AI/Kueue_Deep_Dive]] —— 把 Ray 集群当 Workload 排队的调度器
+- [[05_CNCF_Cloud_Native_AI/README]] —— CNCF 云原生 LLM 项目全景
+- [[05_CNCF_Cloud_Native_AI/KServe_Deep_Dive]] —— 与 KubeRay 互补的标准化推理接口层
+- [[05_CNCF_Cloud_Native_AI/Kueue_Deep_Dive]] —— 把 Ray 集群当 Workload 排队的调度器
 - [[10_部署推理/02_Inference_Engines/vLLM_Deep_Dive]] —— KubeRay 上最常见的推理引擎
 - [[10_部署推理/02_Inference_Engines/SGLang_Deep_Dive]] —— 另一个常跑在 Ray 上的高性能推理引擎

@@ -8,7 +8,7 @@ sources: []
 
 # CNCF Cloud Native AI
 
-This page indexes the contents of `12_架构基建/CNCF_Cloud_Native_AI`.
+This page indexes the contents of `12_架构基建/05_CNCF_Cloud_Native_AI`.
 
 ## Files
 

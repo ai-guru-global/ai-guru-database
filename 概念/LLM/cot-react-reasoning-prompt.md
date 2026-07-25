@@ -237,7 +237,7 @@ CoT 是单路径推理,ToT 让模型**同时探索多条推理路径**,用评估
 - [[概念/reasoning-models]] — 推理模型(o1/o3/R1)
 - [[概念/ai-agents]] — AI Agent(ReAct 是 Agent 核心)
 - [[概念/rag-systems]] — RAG(ReAct 决定何时检索)
-- [[05_大模型/Prompt_Engineering]] — Prompt 详解
+- [[05_大模型/08_Prompt_Engineering]] — Prompt 详解
 - [[05_大模型/09_Reasoning_Models/README]] — Reasoning Models 详解
 - [[概念/reflexion]] — 自我反思
 

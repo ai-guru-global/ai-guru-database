@@ -448,8 +448,8 @@ class DiffusionUNet(nn.Module):
 - [[20_论文精读/08_Vision/Diffusion_Models_Deep_Dive|Diffusion Models 深度解读]] — U-Net 在生成模型中的角色
 - [[20_论文精读/08_Vision/AlexNet_Deep_Dive|AlexNet 深度解读]] — CNN 在视觉中的起点
 - [[20_论文精读/08_Vision/ResNet_Deep_Dive|ResNet 深度解读]] — 残差连接: 另一种跳跃连接
-- [[04_计算机视觉/Segmentation|分割]] — 图像分割全景
-- [[04_计算机视觉/Generative_Models|生成模型]] — 从 GAN 到 Diffusion
+- [[04_计算机视觉/03_Segmentation|分割]] — 图像分割全景
+- [[04_计算机视觉/06_Generative_Models|生成模型]] — 从 GAN 到 Diffusion
 
 ---
 

@@ -189,8 +189,8 @@ updated: 2026-07-21
 - [[概念/LLM/tensorrt-llm|TensorRT-LLM]]
 - [[概念/LLM/llm-inference-checklist|推理上线检查清单]]
 - [[概念/LLM/llm-inference-cost-optimization|推理成本优化]]
-- [[10_部署推理/Inference_Engines|推理引擎专题]]
-- [[10_部署推理/Inference_Performance|推理性能优化]]
+- [[10_部署推理/02_Inference_Engines|推理引擎专题]]
+- [[10_部署推理/04_Inference_Performance|推理性能优化]]
 
 ## 性能基准参考 (7B 模型, H100)
 

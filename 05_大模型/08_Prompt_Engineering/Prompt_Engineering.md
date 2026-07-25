@@ -363,12 +363,12 @@ final_prompt = ChatPromptTemplate.from_messages([
 ## 7. 与其他主题的关联 (Connections)
 
 ### 前置知识
-- [序列模型](../Sequence_Models/Sequence_Models.md) — 理解语言模型的序列处理基础
-- [Transformer 革命](../Transformer_Revolution/Transformer_Revolution.md) — LLM 的底层架构
-- [大语言模型架构](../LLM_Architectures/LLM_Architectures.md) — 理解不同 LLM 的能力边界
+- [序列模型](../02_Sequence_Models/Sequence_Models.md) — 理解语言模型的序列处理基础
+- [Transformer 革命](../04_Transformer_Revolution/Transformer_Revolution.md) — LLM 的底层架构
+- [大语言模型架构](../05_LLM_Architectures/LLM_Architectures.md) — 理解不同 LLM 的能力边界
 
 ### 进阶方向
-- [微调技术](../Fine_tuning_Techniques/Fine_tuning_Techniques.md) — Prompt 优化不够时的下一步
+- [微调技术](../07_Fine_tuning_Techniques/Fine_tuning_Techniques.md) — Prompt 优化不够时的下一步
 - [RAG 系统](14_RAG系统/01_RAG_Fundamentals/RAG_Systems.md) — Prompt 与检索增强的结合
 - [AI 智能体](../../15_智能体/01_Agent_Foundations/AI_Agents.md) — Prompt 在 Agent 系统中的核心作用
 - [AI 安全与红队](17_伦理安全/04_AI_Safety_RedTeaming/AI_Safety_RedTeaming.md) — Prompt 注入防御

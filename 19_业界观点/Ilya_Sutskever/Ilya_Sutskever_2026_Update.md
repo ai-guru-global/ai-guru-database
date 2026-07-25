@@ -440,7 +440,7 @@ Sutskever 在 2023 年 11 月 OpenAI 董事会事件中的角色仍被讨论：
 ### 技术与理论
 
 - [[05_大模型/OpenAI]] -- GPT 系列技术路线
-- [[05_大模型/Reasoning_Models]] -- 推理模型与对齐
+- [[05_大模型/09_Reasoning_Models]] -- 推理模型与对齐
 - [[17_伦理安全/README]] -- AI 安全与对齐
 - [[00_入门/AI_Future_Trends]] -- AGI 时间线
 - [[00_入门/AI_Ethics_Society]] -- AI 伦理与社会

@@ -594,8 +594,8 @@ request_cost_dollars = Counter(
 
 ## 🔗 相关主题
 
-- [AI Ops 2026](../AIOps_Fundamentals/AI_Ops_2026.md) — 智能运维完整体系
-- [AI Ops 速成](../AIOps_Fundamentals/AIOps-in-nutshell.md) — AI Ops 核心概念
+- [AI Ops 2026](../01_AIOps_Fundamentals/AI_Ops_2026.md) — 智能运维完整体系
+- [AI Ops 速成](../01_AIOps_Fundamentals/AIOps-in-nutshell.md) — AI Ops 核心概念
 - [Cloud Ops 2026](../../11_模型运维/Cloud_Ops_Agent/Cloud_Product_Ops_2026.md) — 云产品运维
 - [部署与推理](../../10_部署推理/01_Deployment_Fundamentals/Inference-in-nutshell.md) — 推理优化
 - [AI 成本优化](12_架构基建/02_Architecture_Overview/AI_Cost_Optimization_2026.md) — Token 经济学

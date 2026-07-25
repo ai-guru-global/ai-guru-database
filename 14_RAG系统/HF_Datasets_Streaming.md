@@ -591,7 +591,7 @@ ds_slim = ds.select_columns(["text", "url"])  # 只下载需要的列
 
 ## Related
 
-- [[14_RAG系统/RAG_Fundamentals]] — RAG 基础架构
+- [[14_RAG系统/01_RAG_Fundamentals]] — RAG 基础架构
 - [[14_RAG系统/04_Advanced_RAG/Advanced_RAG_DLAI_Practices]] — 高阶 RAG 实战
 - [[05_大模型/07_Fine_tuning_Techniques/README]] — 微调技术目录
 - [[07_模型训练/06_Alignment/TRL_RLHF_DPO_Guide]] — TRL 训练框架

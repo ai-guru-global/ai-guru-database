@@ -90,7 +90,7 @@ flowchart TB
 | [LightGBM](https://lightgbm.readthedocs.io/en/stable/) | 微软高性能 GBDT |
 | [CatBoost](https://catboost.ai/) | Yandex 出品，支持类别特征 |
 
-> **关联**: → [[02_机器学习/ML_Fundamentals|机器学习基础]]
+> **关联**: → [[02_机器学习/01_ML_Fundamentals|机器学习基础]]
 
 ---
 
@@ -111,7 +111,7 @@ flowchart TB
 | [TensorFlow](https://www.tensorflow.org/) | Google 生产框架 |
 | [Keras](https://keras.io/) | 高层 API |
 
-> **关联**: → [[03_深度学习/DL_Fundamentals|深度学习基础]]
+> **关联**: → [[03_深度学习/01_DL_Fundamentals|深度学习基础]]
 
 ---
 
@@ -119,7 +119,7 @@ flowchart TB
 
 ### 计算机视觉
 - [DL for CV - Stanford CS231n](https://cs231n.stanford.edu/) — 斯坦福经典 CV 课程
-- **关联**: → [[04_计算机视觉/CV_Fundamentals|计算机视觉基础]]
+- **关联**: → [[04_计算机视觉/01_CV_Fundamentals|计算机视觉基础]]
 
 ### NLP
 - [NLP Specialization - Coursera](https://www.coursera.org/specializations/natural-language-processing)
@@ -193,7 +193,7 @@ flowchart TB
 | [Gemini API](https://ai.google.dev/gemini-api/docs) | Google Gemini |
 | [Groq](https://groq.com/) | 高速推理 |
 
-> **关联**: → [[05_大模型/LLM_Fundamentals|LLM 基础]] · [[20_论文精读/02_Architecture/Attention_Is_All_You_Need_Deep_Dive|Attention 论文]] · [[20_论文精读/03_Scaling/GPT3_Deep_Dive|GPT-3 论文]]
+> **关联**: → [[05_大模型/01_LLM_Fundamentals|LLM 基础]] · [[20_论文精读/02_Architecture/Attention_Is_All_You_Need_Deep_Dive|Attention 论文]] · [[20_论文精读/03_Scaling/GPT3_Deep_Dive|GPT-3 论文]]
 
 ---
 
@@ -222,7 +222,7 @@ flowchart TB
 | [Claude Code](https://code.claude.com/docs/en/overview) | Anthropic CLI Agent |
 | [Codex](https://openai.com/codex/) | OpenAI 编程 Agent |
 
-> **关联**: → [[16_编程/Tools|AI 编程工具]]
+> **关联**: → [[16_编程/05_Tools|AI 编程工具]]
 
 ---
 
@@ -237,7 +237,7 @@ flowchart TB
 | [Getting Structured LLM Output](https://www.deeplearning.ai/short-courses/getting-structured-llm-output/) | 课程 | 结构化输出 |
 | [God Tier Prompts](https://www.godtierprompts.com/) | 工具 | 高质量提示词库 |
 
-> **关联**: → [[05_大模型/Prompt_Engineering|提示词工程]]
+> **关联**: → [[05_大模型/08_Prompt_Engineering|提示词工程]]
 
 ---
 
@@ -248,7 +248,7 @@ flowchart TB
 | [Introduction to RAG - Coursera](https://www.coursera.org/projects/introduction-to-rag) | 课程 | RAG 入门实践 |
 | [RAG Techniques](https://github.com/NirDiamant/RAG_Techniques) | GitHub | ⭐ RAG 技术大全 |
 
-> **关联**: → [[14_RAG系统/RAG_Fundamentals|RAG 基础]] · [[20_论文精读/RAG_Deep_Dive|RAG 论文]]
+> **关联**: → [[14_RAG系统/01_RAG_Fundamentals|RAG 基础]] · [[20_论文精读/RAG_Deep_Dive|RAG 论文]]
 
 ---
 

@@ -66,7 +66,7 @@ sources: []
 
 ## 关联目录
 
-- [微调技术](../Fine_tuning_Techniques/) -- LoRA/QLoRA 微调框架
+- [微调技术](../07_Fine_tuning_Techniques/) -- LoRA/QLoRA 微调框架
 - [RAG 系统](../../14_RAG系统/) -- RAG 与提示词结合
 - [Agent 框架](../../15_智能体/02_Agent_Frameworks/) -- Agent 中的提示词设计
 

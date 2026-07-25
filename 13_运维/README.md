@@ -34,68 +34,68 @@ sources: []
 
 | 文档 | 内容 | 适用角色 |
 |------|------|----------|
-| [AI_Ops_2026](./AIOps_Fundamentals/AI_Ops_2026.md) | AI 运维全栈指南：监控、日志、成本控制、灾难恢复 | 架构师、SRE |
-| [AI_Ops_for_dummy](./AIOps_Fundamentals/AI_Ops_for_dummy.md) | AI 运维入门：基础概念与实践 | 初学者 |
-| [AIOps-in-nutshell](./AIOps_Fundamentals/AIOps-in-nutshell.md) | AI 运维速查：核心概念快速掌握 | 快速入门 |
+| [AI_Ops_2026](./01_AIOps_Fundamentals/AI_Ops_2026.md) | AI 运维全栈指南：监控、日志、成本控制、灾难恢复 | 架构师、SRE |
+| [AI_Ops_for_dummy](./01_AIOps_Fundamentals/AI_Ops_for_dummy.md) | AI 运维入门：基础概念与实践 | 初学者 |
+| [AIOps-in-nutshell](./01_AIOps_Fundamentals/AIOps-in-nutshell.md) | AI 运维速查：核心概念快速掌握 | 快速入门 |
 
 ## 运维实践
 
 | 文档 | 内容 | 适用角色 |
 |------|------|----------|
-| [AI_Incident_Response_Playbook](./SRE_Reliability/AI_Incident_Response_Playbook.md) | AI 事故响应手册：分级、流程、Runbook | SRE、DevOps |
-| [Kubernetes_Troubleshooting_Playbook](./Troubleshooting/Kubernetes_Troubleshooting_Playbook.md) | K8s 系统排障：Pod、节点、网络、存储、调度、控制平面 | K8s 工程师、SRE |
-| [GPU_OOM_Troubleshooting_Guide](./SRE_Reliability/GPU_OOM_Troubleshooting_Guide.md) | 区分四类 GPU OOM 并给出修复阶梯 | AI 训练/推理 SRE |
-| [LLM_Inference_Slow_Unavailable_Runbook](./SRE_Reliability/LLM_Inference_Slow_Unavailable_Runbook.md) | LLM 推理延迟/不可用分层排障 | 推理 SRE |
-| [LLM_Inference_SLO_Guide](./SRE_Reliability/LLM_Inference_SLO_Guide.md) | LLM 推理 SLO、SLI、错误预算与发布门控 | SRE |
+| [AI_Incident_Response_Playbook](./02_SRE_Reliability/AI_Incident_Response_Playbook.md) | AI 事故响应手册：分级、流程、Runbook | SRE、DevOps |
+| [Kubernetes_Troubleshooting_Playbook](./04_Troubleshooting/Kubernetes_Troubleshooting_Playbook.md) | K8s 系统排障：Pod、节点、网络、存储、调度、控制平面 | K8s 工程师、SRE |
+| [GPU_OOM_Troubleshooting_Guide](./02_SRE_Reliability/GPU_OOM_Troubleshooting_Guide.md) | 区分四类 GPU OOM 并给出修复阶梯 | AI 训练/推理 SRE |
+| [LLM_Inference_Slow_Unavailable_Runbook](./02_SRE_Reliability/LLM_Inference_Slow_Unavailable_Runbook.md) | LLM 推理延迟/不可用分层排障 | 推理 SRE |
+| [LLM_Inference_SLO_Guide](./02_SRE_Reliability/LLM_Inference_SLO_Guide.md) | LLM 推理 SLO、SLI、错误预算与发布门控 | SRE |
 | [LLM_Inference_Observability_Stack](13_运维/LLM_Inference_Observability_Stack.md) | TTFT/TPOT/KV Cache 指标与 Prometheus/Grafana | 可观测性工程师 |
 
 ## 事故响应 (Incident Response)
 
 | 文档 | 内容 | 适用角色 |
 |------|------|----------|
-| [AI 事故响应框架](./Incident_Response/AI_Incident_Response_Framework.md) | 事件分级、响应流程、沟通机制、复盘模板 | SRE、DevOps |
-| [On-Call Runbook 模板](./Incident_Response/On_Call_Runbook_Template.md) | 值班交接、告警总线、升级路径、常见场景速查 | 值班工程师 |
-| [AI_Incident_Response_Playbook](./SRE_Reliability/AI_Incident_Response_Playbook.md) | AI 事故响应手册：分级、流程、Runbook | SRE、DevOps |
-| [Incident_Response_for_AI_Systems](./SRE_Reliability/Incident_Response_for_AI_Systems.md) | AI 系统事件响应实践 | SRE |
+| [AI 事故响应框架](./03_Incident_Response/AI_Incident_Response_Framework.md) | 事件分级、响应流程、沟通机制、复盘模板 | SRE、DevOps |
+| [On-Call Runbook 模板](./03_Incident_Response/On_Call_Runbook_Template.md) | 值班交接、告警总线、升级路径、常见场景速查 | 值班工程师 |
+| [AI_Incident_Response_Playbook](./02_SRE_Reliability/AI_Incident_Response_Playbook.md) | AI 事故响应手册：分级、流程、Runbook | SRE、DevOps |
+| [Incident_Response_for_AI_Systems](./02_SRE_Reliability/Incident_Response_for_AI_Systems.md) | AI 系统事件响应实践 | SRE |
 
 ## SRE 与可靠性
 
 | 文档 | 内容 | 适用角色 |
 |------|------|----------|
-| [SRE_for_AI_Systems](./SRE_Reliability/SRE_for_AI_Systems.md) | AI 系统 SRE 实践：SLI/SLO、错误预算 | SRE |
-| [SLO 与错误预算](./SRE_Reliability/SLO_Error_Budget_AI_Deep_Dive.md) | 多维度 SLO（可用性+质量+成本）、发版门控 | SRE、架构师 |
-| [GPU_OOM_Troubleshooting_Guide](./SRE_Reliability/GPU_OOM_Troubleshooting_Guide.md) | 区分四类 GPU OOM 并给出修复阶梯 | AI 训练/推理 SRE |
-| [LLM_Inference_Slow_Unavailable_Runbook](./SRE_Reliability/LLM_Inference_Slow_Unavailable_Runbook.md) | LLM 推理延迟/不可用分层排障 | 推理 SRE |
-| [LLM_Inference_SLO_Guide](./SRE_Reliability/LLM_Inference_SLO_Guide.md) | LLM 推理 SLO、SLI、错误预算与发布门控 | SRE |
+| [SRE_for_AI_Systems](./02_SRE_Reliability/SRE_for_AI_Systems.md) | AI 系统 SRE 实践：SLI/SLO、错误预算 | SRE |
+| [SLO 与错误预算](./02_SRE_Reliability/SLO_Error_Budget_AI_Deep_Dive.md) | 多维度 SLO（可用性+质量+成本）、发版门控 | SRE、架构师 |
+| [GPU_OOM_Troubleshooting_Guide](./02_SRE_Reliability/GPU_OOM_Troubleshooting_Guide.md) | 区分四类 GPU OOM 并给出修复阶梯 | AI 训练/推理 SRE |
+| [LLM_Inference_Slow_Unavailable_Runbook](./02_SRE_Reliability/LLM_Inference_Slow_Unavailable_Runbook.md) | LLM 推理延迟/不可用分层排障 | 推理 SRE |
+| [LLM_Inference_SLO_Guide](./02_SRE_Reliability/LLM_Inference_SLO_Guide.md) | LLM 推理 SLO、SLI、错误预算与发布门控 | SRE |
 
 ## 运维速查表
 
 | 文档 | 内容 | 适用角色 |
 |------|------|----------|
-| [GPU 故障排查速查表](./SRE_Reliability/GPU_Troubleshooting_Cheat_Sheet.md) | nvidia-smi、CUDA、驱动、显存、温度、NCCL 常用命令 | SRE、平台工程师 |
-| [K8s for AI 排查速查表](./SRE_Reliability/K8s_AI_Troubleshooting_Cheat_Sheet.md) | Pod/Job/节点/调度/网络/存储问题常用命令 | K8s 工程师、SRE |
+| [GPU 故障排查速查表](./02_SRE_Reliability/GPU_Troubleshooting_Cheat_Sheet.md) | nvidia-smi、CUDA、驱动、显存、温度、NCCL 常用命令 | SRE、平台工程师 |
+| [K8s for AI 排查速查表](./02_SRE_Reliability/K8s_AI_Troubleshooting_Cheat_Sheet.md) | Pod/Job/节点/调度/网络/存储问题常用命令 | K8s 工程师、SRE |
 
 ## 混沌工程
 
 | 文档 | 内容 | 适用角色 |
 |------|------|----------|
 | [AI 系统混沌工程](13_运维/Chaos_Engineering_for_AI_Systems.md) | AI 平台故障注入实验设计与工具 | 可靠性工程师 |
-| [Chaos_Engineering_AI](./SRE_Reliability/Chaos_Engineering_AI.md) | AI 系统混沌工程：故障注入、韧性测试 | 可靠性工程师 |
+| [Chaos_Engineering_AI](./02_SRE_Reliability/Chaos_Engineering_AI.md) | AI 系统混沌工程：故障注入、韧性测试 | 可靠性工程师 |
 
 ## 成本治理
 
 | 文档 | 内容 | 适用角色 |
 |------|------|----------|
-| [AI 场景 FinOps](./Cost_Management/FinOps_for_AI.md) | 成本分摊、利用率监控、预算与告警 | FinOps、平台工程师 |
-| [GPU 成本优化](./Cost_Management/GPU_Cost_Optimization.md) | 利用率提升、调度优化、弹性伸缩、模型压缩 | 平台/SRE |
-| [成本优化](./SRE_Reliability/Cost_Optimization_AI_Deep_Dive.md) | 推理降本六板斧（批处理/量化/缓存/路由/投机/KV）、FinOps | FinOps、平台工程师 |
+| [AI 场景 FinOps](./05_Cost_Management/FinOps_for_AI.md) | 成本分摊、利用率监控、预算与告警 | FinOps、平台工程师 |
+| [GPU 成本优化](./05_Cost_Management/GPU_Cost_Optimization.md) | 利用率提升、调度优化、弹性伸缩、模型压缩 | 平台/SRE |
+| [成本优化](./02_SRE_Reliability/Cost_Optimization_AI_Deep_Dive.md) | 推理降本六板斧（批处理/量化/缓存/路由/投机/KV）、FinOps | FinOps、平台工程师 |
 
 ## 保留在本章的工具页
 
 | 文档 | 内容 | 适用角色 |
 |------|------|----------|
 | [Prometheus + Grafana Deep Dive](../11_模型运维/08_Observability/Prometheus_Grafana_Deep_Dive.md) | AI 系统监控与可视化基座：GPU/推理/训练指标 | SRE、平台工程师 |
-| [Guardrails Deep Dive](./SRE_Reliability/Guardrails_Deep_Dive.md) | LLM 输入/输出安全护栏 | 安全工程师 |
+| [Guardrails Deep Dive](./02_SRE_Reliability/Guardrails_Deep_Dive.md) | LLM 输入/输出安全护栏 | 安全工程师 |
 | [PromptLayer Deep Dive](11_模型运维/08_Observability/PromptLayer_Deep_Dive.md) | Prompt 版本管理与追踪 | Prompt 工程师 |
 
 > 其余工具深度解析（DVC/LakeFS/Feast/MLflow/ClearML/Kubeflow/Prefect/LangSmith/Helicone/Phoenix/Braintrust + 3 篇 Observability + CI_CD_Pipeline + LLM_Production_Pipeline）已迁入 [[11_模型运维/README]]。
@@ -129,7 +129,7 @@ sources: []
 
 - [MLOps](../11_模型运维/) — ML 流水线建设（概念 + 工具实现，工具深度解析已迁入此章）
 - [部署推理](../10_部署推理/) — 推理引擎 (vLLM, SGLang)
-- [12_架构基建/AI_Gateway](../12_架构基建/11_AI_Gateway/) — AI 网关与路由
+- [12_架构基建/11_AI_Gateway](../12_架构基建/11_AI_Gateway/) — AI 网关与路由
 - [AI测试](../09_测试/) — AI 测试框架
 
 > 边界声明详见 [[11_模型运维/Boundary_with_16]]。

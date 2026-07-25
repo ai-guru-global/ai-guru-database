@@ -20,8 +20,8 @@ updated: 2026-07-21
 
 ## Related
 
-- [[../Fundamentals/index|基础概念]]
-- [[../Technology_Overview/index|技术全景]]
+- [[../01_Fundamentals/index|基础概念]]
+- [[../02_Technology_Overview/index|技术全景]]
 
 ## 学习阶段
 

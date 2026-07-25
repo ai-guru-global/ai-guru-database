@@ -8,7 +8,7 @@ sources: []
 
 # SRE Reliability
 
-This page indexes the contents of `13_运维/SRE_Reliability`.
+This page indexes the contents of `13_运维/02_SRE_Reliability`.
 
 ## Files
 

@@ -71,8 +71,8 @@ LLM 产品概览索引，覆盖主流 AI 助手、结构化输出工具和 AI �
 
 ## 相关概念
 
-- [[05_大模型/Global_LLM_Ecosystem|全球 LLM 生态]]
-- [[05_大模型/Prompt_Engineering|提示词工程]]
+- [[05_大模型/14_Global_LLM_Ecosystem|全球 LLM 生态]]
+- [[05_大模型/08_Prompt_Engineering|提示词工程]]
 - [[概念/structured-output|结构化输出]]
 
 ## 统计

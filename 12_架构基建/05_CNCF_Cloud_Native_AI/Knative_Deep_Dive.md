@@ -16,7 +16,7 @@ sources: []
 
 > **一句话理解**: Knative Serving 是 CNCF 毕业级的 Serverless 层——靠 KPA 实现「按并发自动扩缩 + 闲时缩到 0 个 Pod」，让昂贵的 GPU 推理 Pod 不再空转，并能对模型版本做金丝雀流量切分。
 
-> 📐 **概念方法论**: Knative 解决的是「Kubernetes 上请求驱动的弹性抽象」——它不关心你跑的是 Web 服务还是 LLM 推理，只提供 `Service`/`Revision`/`Route`/`PodAutoscaler` 一组 CRD，把「按并发扩缩 + 闲时归零 + 流量切分」变成声明式能力。对 LLM 场景而言，它是 KServe 的弹性底座（见 [[CNCF_Cloud_Native_AI/KServe_Deep_Dive]]），也是降低推理成本/延迟权衡的关键杠杆（见 [[11_模型运维/09_Cost/LLM_Cost_Latency_SLO]]）。
+> 📐 **概念方法论**: Knative 解决的是「Kubernetes 上请求驱动的弹性抽象」——它不关心你跑的是 Web 服务还是 LLM 推理，只提供 `Service`/`Revision`/`Route`/`PodAutoscaler` 一组 CRD，把「按并发扩缩 + 闲时归零 + 流量切分」变成声明式能力。对 LLM 场景而言，它是 KServe 的弹性底座（见 [[05_CNCF_Cloud_Native_AI/KServe_Deep_Dive]]），也是降低推理成本/延迟权衡的关键杠杆（见 [[11_模型运维/09_Cost/LLM_Cost_Latency_SLO]]）。
 
 ---
 
@@ -691,7 +691,7 @@ kubectl rollout status deploy/controller -n knative-serving
                       └─ 否 ─► raw Deployment + HPA (够用就好)
 ```
 
-> 与 KServe 的关系：KServe 把 Knative 当作弹性底座，在其上叠加推理 CRD（InferenceService）、多框架 ServingRuntime、推理专属指标。如果你只要「弹性 + 灰度」，直接用 Knative 更轻；如果要「标准化推理平台 + 多框架」，用 KServe（详见 [[CNCF_Cloud_Native_AI/KServe_Deep_Dive]]）。
+> 与 KServe 的关系：KServe 把 Knative 当作弹性底座，在其上叠加推理 CRD（InferenceService）、多框架 ServingRuntime、推理专属指标。如果你只要「弹性 + 灰度」，直接用 Knative 更轻；如果要「标准化推理平台 + 多框架」，用 KServe（详见 [[05_CNCF_Cloud_Native_AI/KServe_Deep_Dive]]）。
 
 ---
 
@@ -713,13 +713,13 @@ LLM 推荐 **KPA**（请求并发驱动，直接反映推理负载）。HPA 基�
 可以但分工不同：Knative 自己已提供 canary/回滚（Route 层），通常不需要 KEDA。若你的扩缩信号来自 Kafka 队列等外部源，可用 KEDA 驱动副本，Knative 负责 Route——但更常见是二选一。多数推理场景 KPA 已足够。
 
 **Q6：Knative 有没有「最少冷启动」的推理特化？**
-Knative 本身不感知「模型」。推理特化（按 KV cache 路由、按 prefill/decode 分离）是 KServe / llm-d 等上层项目的职责。Knative 提供「弹性 + 灰度」通用能力，把推理语义留给上层（见 [[CNCF_Cloud_Native_AI/KServe_Deep_Dive]]、[[CNCF_Cloud_Native_AI/llm-d_Deep_Dive]]）。
+Knative 本身不感知「模型」。推理特化（按 KV cache 路由、按 prefill/decode 分离）是 KServe / llm-d 等上层项目的职责。Knative 提供「弹性 + 灰度」通用能力，把推理语义留给上层（见 [[05_CNCF_Cloud_Native_AI/KServe_Deep_Dive]]、[[05_CNCF_Cloud_Native_AI/llm-d_Deep_Dive]]）。
 
 ---
 
 ## Related
 
-- [[CNCF_Cloud_Native_AI/README]] —— CNCF 云原生 LLM 项目全景
-- [[CNCF_Cloud_Native_AI/KServe_Deep_Dive]] —— 在 Knative 之上的标准化推理平台
+- [[05_CNCF_Cloud_Native_AI/README]] —— CNCF 云原生 LLM 项目全景
+- [[05_CNCF_Cloud_Native_AI/KServe_Deep_Dive]] —— 在 Knative 之上的标准化推理平台
 - [[10_部署推理/02_Inference_Engines/vLLM_Deep_Dive]] —— Knative 上跑的 LLM 推理引擎
 - [[11_模型运维/09_Cost/LLM_Cost_Latency_SLO]] —— scale-to-zero 与延迟/成本的权衡

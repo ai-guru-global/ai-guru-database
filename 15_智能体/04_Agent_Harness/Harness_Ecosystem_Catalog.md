@@ -274,8 +274,8 @@ with Sandbox() as sandbox:
 - [Harness Deployment Guide](./Harness_Deployment_Guide.md) — 容器化部署
 - [Harness Testing Guide](./Harness_Testing_Guide.md) — 测试策略
 - [Multi Agent Harness Design](./Multi_Agent_Harness_Design.md) — 多 Agent 设计
-- [Agent Skills 生态目录](../Agent_Skills/Agent_Skills_Ecosystem_Catalog.md) — Skills 选型
-- [Agent_Evaluation](../Agent_Evaluation/) — 评估体系
+- [Agent Skills 生态目录](../05_Agent_Skills/Agent_Skills_Ecosystem_Catalog.md) — Skills 选型
+- [Agent_Evaluation](../07_Agent_Evaluation/) — 评估体系
 
 ---
 

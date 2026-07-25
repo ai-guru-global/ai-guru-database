@@ -31,7 +31,7 @@ This page indexes the contents of `机器学习`.
 - [[02_机器学习/ML-in-nutshell|ML In Nutshell]]
 - [[02_机器学习/ML_Algorithms_Cheatsheet|ML Algorithms Cheatsheet]]
 - [[02_机器学习/ML_For_Beginners|ML For Beginners]]
-- [[02_机器学习/ML_Fundamentals|ML Fundamentals]]
+- [[02_机器学习/01_ML_Fundamentals|ML Fundamentals]]
 - [[02_机器学习/Model_Interpretability_Explainability|Model Interpretability Explainability]]
 - [[02_机器学习/README|README]]
 - [[02_机器学习/README_for_dummy|README For Dummy]]

@@ -10,7 +10,7 @@ relationships:
   - target: "概念/llm-architectures"
     type: enables
 sources:
-  - 03_深度学习/Self_Supervised_Learning
+  - 03_深度学习/06_Self_Supervised_Learning
 summary: "自监督学习从无标注数据中构造预测任务来学习通用表示，是现代AI预训练的核心范式。三大方法：对比学习(SimCLR/MoCo)、掩码建模(BERT/MAE)、自回归(GPT)。"
 provenance:
   extracted: 0.45

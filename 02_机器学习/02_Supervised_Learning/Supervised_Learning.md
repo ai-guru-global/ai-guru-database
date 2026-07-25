@@ -535,8 +535,8 @@ stacking.fit(X_train, y_train)
 - **优化理论**: 凸优化、拉格朗日乘子法 (SVM 对偶问题)
 
 ### 7.2 横向关联
-- [**无监督学习**](../Unsupervised_Learning/Unsupervised_Learning.md): 可用 PCA 降维后再做监督学习
-- [**特征工程**](../Feature_Engineering/): 决定监督学习的上限
+- [**无监督学习**](../03_Unsupervised_Learning/Unsupervised_Learning.md): 可用 PCA 降维后再做监督学习
+- [**特征工程**](../05_Feature_Engineering/): 决定监督学习的上限
 - [**模型评估**](08_模型评估/01_Evaluation_Fundamentals/Model_Evaluation.md): A/B 测试、模型监控
 
 ### 7.3 纵向进阶

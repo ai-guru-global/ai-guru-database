@@ -291,13 +291,13 @@ best_mask = masks[scores.argmax()]  # 取最高分的掩码
 ## 7. 与其他主题的关联 (Connections)
 
 ### 前置知识
-- [图像分类与检测](../Image_Classification_Detection/Image_Classification_Detection.md) — CNN 基础和目标检测概念
+- [图像分类与检测](../02_Image_Classification_Detection/Image_Classification_Detection.md) — CNN 基础和目标检测概念
 - [神经网络核心](03_深度学习/02_Neural_Network_Core/Neural_Network_Core.md) — 卷积操作、反向传播
 - [Transformer 革命](05_大模型/04_Transformer_Revolution/Transformer_Revolution.md) — ViT 在分割中的应用（SAM）
 
 ### 进阶方向
-- [生成模型](../Generative_Models/Generative_Models.md) — 分割掩码可用于引导图像生成（ControlNet）
-- [多模态视觉](../Multimodal_Vision/Multimodal_Vision.md) — 文本引导的开放词汇分割
+- [生成模型](../06_Generative_Models/Generative_Models.md) — 分割掩码可用于引导图像生成（ControlNet）
+- [多模态视觉](../08_Multimodal_Vision/Multimodal_Vision.md) — 文本引导的开放词汇分割
 - [模型部署与推理](10_部署推理/01_Deployment_Fundamentals/Deployment_Inference.md) — 分割模型的实时部署优化
 
 ---

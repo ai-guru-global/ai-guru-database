@@ -502,12 +502,12 @@ lora_config = LoraConfig(
 ## 7. 与其他主题的关联 (Connections)
 
 ### 前置知识
-- [Transformer 革命](../Transformer_Revolution/Transformer_Revolution.md): 理解模型架构
-- [大语言模型架构](../LLM_Architectures/LLM_Architectures.md): GPT/LLaMA 原理
+- [Transformer 革命](../04_Transformer_Revolution/Transformer_Revolution.md): 理解模型架构
+- [大语言模型架构](../05_LLM_Architectures/LLM_Architectures.md): GPT/LLaMA 原理
 - [优化算法](03_深度学习/03_Optimization/Optimization.md): Adam, SGD
 
 ### 后续推荐
-- [提示工程](../Prompt_Engineering/Prompt_Engineering.md): 微调的替代方案
+- [提示工程](../08_Prompt_Engineering/Prompt_Engineering.md): 微调的替代方案
 - [模型评估](08_模型评估/01_Evaluation_Fundamentals/Model_Evaluation.md): 如何评估微调效果
 - [推理部署](10_部署推理/01_Deployment_Fundamentals/Deployment_Inference.md): INT8/INT4 量化与部署
 

@@ -81,7 +81,7 @@ Qwen 系列是中国大模型开源生态中最具影响力的项目之一。与
 4. **中文能力领先**: 在中文理解和生成上持续领先英文竞品
 5. **推理能力突破**: Qwen3 混合思维模式匹敌 DeepSeek-R1 和 OpenAI o1
 
-> **相关文档**: 关于 LLM 架构范式的详细介绍，参见 [LLM Architectures](../LLM_Architectures/LLM_Architectures.md)
+> **相关文档**: 关于 LLM 架构范式的详细介绍，参见 [LLM Architectures](../05_LLM_Architectures/LLM_Architectures.md)
 
 ---
 
@@ -623,7 +623,7 @@ response = client.chat.completions.create(
 # API 用法详见本文末尾 "Qwen 3.7 系列最新更新" 章节
 ```
 
-> **相关文档**: 关于 MoE 路由策略和负载均衡的深入分析，参见 [MoE Case Studies](../LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md)
+> **相关文档**: 关于 MoE 路由策略和负载均衡的深入分析，参见 [MoE Case Studies](../05_LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md)
 
 ---
 
@@ -972,7 +972,7 @@ Qwen3    (2025-04):  32K-128K ━━━━━━━━━━━━━━━━�
 | **Sliding Window Attention** | 局部注意力，降低长序列计算量 | Qwen2+ (小模型) |
 | **稀疏注意力** | 降低长序列的注意力复杂度 | Qwen3 |
 
-> **相关文档**: 关于多模态位置编码和视觉-语言融合的详细分析，参见 [Multimodal Architectures 2026](../Multimodal_Models/Multimodal_Architectures_2026.md)
+> **相关文档**: 关于多模态位置编码和视觉-语言融合的详细分析，参见 [Multimodal Architectures 2026](../10_Multimodal_Models/Multimodal_Architectures_2026.md)
 
 ---
 
@@ -1174,7 +1174,7 @@ QwQ-32B-Preview 特性:
 └── 定位: Qwen3 混合思维模式的前驱
 ```
 
-> **相关文档**: 关于推理模型的全面介绍，参见 [Reasoning Models for Dummy](../Reasoning_Models/Reasoning_Models_for_dummy.md)
+> **相关文档**: 关于推理模型的全面介绍，参见 [Reasoning Models for Dummy](../09_Reasoning_Models/Reasoning_Models_for_dummy.md)
 
 ---
 
@@ -1844,27 +1844,27 @@ Qwen 3.7 系列全面支持以下高级功能：
 
 ### 架构基础
 
-- [LLM Architectures (大语言模型架构)](../LLM_Architectures/LLM_Architectures.md) — Transformer, GPT, BERT, MoE 等核心架构的全面介绍
-- [MoE Case Studies: DeepSeek & Mixtral](../LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md) — MoE 路由策略、专家专业化的深度分析
-- [MoE Routing and Load Balancing](../LLM_Architectures/MoE_Routing_and_Load_Balancing.md) — MoE 负载均衡技术详解
+- [LLM Architectures (大语言模型架构)](../05_LLM_Architectures/LLM_Architectures.md) — Transformer, GPT, BERT, MoE 等核心架构的全面介绍
+- [MoE Case Studies: DeepSeek & Mixtral](../05_LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md) — MoE 路由策略、专家专业化的深度分析
+- [MoE Routing and Load Balancing](../05_LLM_Architectures/MoE_Routing_and_Load_Balancing.md) — MoE 负载均衡技术详解
 
 ### 多模态
 
-- [Multimodal Architectures 2026 (多模态架构)](../Multimodal_Models/Multimodal_Architectures_2026.md) — GPT-4V, Gemini, Qwen2-VL 等多模态架构的全面对比
-- [LLaVA Deep Dive](../Multimodal_Models/LLaVA_Deep_Dive.md) — LLaVA 视觉语言模型的深入分析
-- [Native Multimodal Architectures](../Multimodal_Models/Native_Multimodal_Architectures.md) — 原生多模态架构设计
+- [Multimodal Architectures 2026 (多模态架构)](../10_Multimodal_Models/Multimodal_Architectures_2026.md) — GPT-4V, Gemini, Qwen2-VL 等多模态架构的全面对比
+- [LLaVA Deep Dive](../10_Multimodal_Models/LLaVA_Deep_Dive.md) — LLaVA 视觉语言模型的深入分析
+- [Native Multimodal Architectures](../10_Multimodal_Models/Native_Multimodal_Architectures.md) — 原生多模态架构设计
 
 ### 推理模型
 
-- [Reasoning Models for Dummy (推理模型小白指南)](../Reasoning_Models/Reasoning_Models_for_dummy.md) — 推理模型的基础概念和核心原理
-- [DeepSeek-R1 Technical Analysis](../Reasoning_Models/DeepSeek_R1_Technical_Analysis.md) — DeepSeek-R1 的 GRPO 训练和自进化机制
-- [o1 Class Reasoning Models](../Reasoning_Models/o1_Class_Reasoning_Models.md) — OpenAI o1/o3 类推理模型分析
-- [Process Reward Models](../Reasoning_Models/Process_Reward_Models.md) — 过程奖励模型详解
+- [Reasoning Models for Dummy (推理模型小白指南)](../09_Reasoning_Models/Reasoning_Models_for_dummy.md) — 推理模型的基础概念和核心原理
+- [DeepSeek-R1 Technical Analysis](../09_Reasoning_Models/DeepSeek_R1_Technical_Analysis.md) — DeepSeek-R1 的 GRPO 训练和自进化机制
+- [o1 Class Reasoning Models](../09_Reasoning_Models/o1_Class_Reasoning_Models.md) — OpenAI o1/o3 类推理模型分析
+- [Process Reward Models](../09_Reasoning_Models/Process_Reward_Models.md) — 过程奖励模型详解
 
 ### 训练与微调
 
-- [Fine-tuning Techniques (微调技术)](../Fine_tuning_Techniques/Fine_tuning_Techniques.md) — LoRA, QLoRA, PEFT 等微调方法
-- [PEFT 2026](../Fine_tuning_Techniques/PEFT_2026.md) — 参数高效微调最新进展
+- [Fine-tuning Techniques (微调技术)](../07_Fine_tuning_Techniques/Fine_tuning_Techniques.md) — LoRA, QLoRA, PEFT 等微调方法
+- [PEFT 2026](../07_Fine_tuning_Techniques/PEFT_2026.md) — 参数高效微调最新进展
 
 ---
 

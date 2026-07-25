@@ -70,8 +70,8 @@ AI 系统威胁面
 
 - [[概念/model-security|Model Security]]
 - [[概念/supply-chain-security|Supply Chain Security]]
-- [[17_伦理安全/AI_Security_2026|AI Security 2026]]
-- [[17_伦理安全/AI_Supply_Chain_Security|AI Supply Chain Security]]
+- [[17_伦理安全/07_AI_Security_2026|AI Security 2026]]
+- [[17_伦理安全/08_AI_Supply_Chain_Security|AI Supply Chain Security]]
 
 ## 架构核心组件对比
 

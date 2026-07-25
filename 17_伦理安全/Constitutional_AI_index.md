@@ -23,8 +23,8 @@ summary: Anthropic 提出的基于宪法原则的 AI 对齐方法，通过 RLAIF
 
 ## Related
 
-- [[../Value_Alignment/Value_Alignment_for_dummy|价值对齐入门]]
-- [[../Ethics_Fundamentals/AI_Ethics_And_Future|AI 伦理与未来]]
+- [[../02_Value_Alignment/Value_Alignment_for_dummy|价值对齐入门]]
+- [[../01_Ethics_Fundamentals/AI_Ethics_And_Future|AI 伦理与未来]]
 - [[../07_模型训练/06_Alignment/GRPO_Deep_Dive|GRPO 深度解析]]
 - [[../20_论文精读/06_Alignment/DPO_Deep_Dive|DPO 论文精读]]
 

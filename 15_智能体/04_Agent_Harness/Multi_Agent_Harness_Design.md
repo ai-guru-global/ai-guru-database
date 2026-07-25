@@ -651,8 +651,8 @@ Please merge these versions intelligently, preserving all valuable changes.
 - [Agent Harness 技术架构 2026](./Agent_Harness_Architecture_2026.md) — 框架选型与性能基线
 - [Harness Security Guide](./Harness_Security_Guide.md) — 多 Agent 安全隔离
 - [Harness Testing Guide](./Harness_Testing_Guide.md) — 多 Agent 测试策略
-- [Agent Skills 书写速览](../Agent_Skills/Skills-in-nutshell.md) — 为 Agent 注入领域知识
-- [Agent_Evaluation](../Agent_Evaluation/) — 多 Agent 评估方法
+- [Agent Skills 书写速览](../05_Agent_Skills/Skills-in-nutshell.md) — 为 Agent 注入领域知识
+- [Agent_Evaluation](../07_Agent_Evaluation/) — 多 Agent 评估方法
 
 ---
 

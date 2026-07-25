@@ -8,7 +8,7 @@ sources: []
 
 # Monitoring
 
-This page indexes the contents of `07_模型训练/Monitoring`.
+This page indexes the contents of `07_模型训练/07_Monitoring`.
 
 ## Files
 

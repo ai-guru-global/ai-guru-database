@@ -260,7 +260,7 @@ Action: reply(列出 5 个航班供用户选择)
 | Ch 4 记忆 | 短期/长期记忆 | [[14_RAG系统/RAG_Systems]] | 记忆即个性化 RAG |
 | Ch 5 ReAct | 规划模式 | [[05_大模型/08_Prompt_Engineering/Prompt_Engineering]] | ReAct 提示模式 |
 | Ch 7 多 Agent | CrewAI/AutoGen | [[build-multi-agent-system]] | 多 Agent 架构 |
-| Ch 8 护栏 | Guardrails | [[17_伦理安全/AI_Safety_RedTeaming]] | 安全与护栏 |
+| Ch 8 护栏 | Guardrails | [[17_伦理安全/04_AI_Safety_RedTeaming]] | 安全与护栏 |
 | Ch 9 部署 | 可观测性 | [[10_部署推理/]] | 生产化部署 |
 
 ## 适合人群

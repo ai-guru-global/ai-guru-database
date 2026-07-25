@@ -8,7 +8,7 @@ sources: []
 
 # Observability
 
-This page indexes the contents of `11_模型运维/Observability`.
+This page indexes the contents of `11_模型运维/08_Observability`.
 
 ## Files
 

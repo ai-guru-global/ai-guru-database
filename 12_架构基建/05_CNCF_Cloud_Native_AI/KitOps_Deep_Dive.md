@@ -21,7 +21,7 @@ sources: []
 
 > **一句话理解**: KitOps 定义了 ModelKit——把大模型权重/代码/数据集/配置/文档打成一个 OCI 制品(可签名、可版本、可推任意镜像仓库),解决「模型在生产环境的散装搬运」和供应链安全问题。
 
-> 📐 **概念方法论**: ModelKit 解决的是「AI 制品的物流标准化」——它把模型权重、推理代码、训练数据集、配置、文档全部封装成一个 OCI 制品,让 Data Scientist / MLOps / Security 用同一份不可变工件各取所需。它是模型注册表(Model Registry)与制品仓库(Artifact Registry)之间的桥梁,见 [[11_模型运维/04_Experiment_Tracking/Model_Registry_and_Cards_Deep_Dive]];其底层使用 OCI 分层存储与 P2P 分发,与 [[CNCF_Cloud_Native_AI/Dragonfly_Deep_Dive]] 共享同一套 registry 协议。
+> 📐 **概念方法论**: ModelKit 解决的是「AI 制品的物流标准化」——它把模型权重、推理代码、训练数据集、配置、文档全部封装成一个 OCI 制品,让 Data Scientist / MLOps / Security 用同一份不可变工件各取所需。它是模型注册表(Model Registry)与制品仓库(Artifact Registry)之间的桥梁,见 [[11_模型运维/04_Experiment_Tracking/Model_Registry_and_Cards_Deep_Dive]];其底层使用 OCI 分层存储与 P2P 分发,与 [[05_CNCF_Cloud_Native_AI/Dragonfly_Deep_Dive]] 共享同一套 registry 协议。
 
 ---
 
@@ -569,7 +569,7 @@ ModelKit 单包动辄几十 GB,registry 存储增长极快:
 | **垃圾回收** | 定期 `registry garbage-collect`(停写或只读窗口) |
 | **Layer 去重** | OCI 内容寻址天然去重,相同权重层只存一份 |
 | **分层存储** | 权重层放对象存储(S3),metadata 放本地 SSD |
-| **跨地域复制** | Harbor replication 把热门包推到边缘 registry,见 [[CNCF_Cloud_Native_AI/Dragonfly_Deep_Dive]] 做 P2P 加速 |
+| **跨地域复制** | Harbor replication 把热门包推到边缘 registry,见 [[05_CNCF_Cloud_Native_AI/Dragonfly_Deep_Dive]] 做 P2P 加速 |
 | **生命周期** | 对象存储侧配置 lifecycle,旧层转冷归档 |
 
 ### 7.2 Provenance 与 SBOM
@@ -661,8 +661,8 @@ A: 2025 年 v1.0 已 GA,Kitfile 与 OCI 布局稳定,多家企业在生产使用
 
 ## Related
 
-- [[CNCF_Cloud_Native_AI/README]]
-- [[CNCF_Cloud_Native_AI/Dragonfly_Deep_Dive]] —— OCI 制品的 P2P 分发加速,ModelKit 的最佳分发搭档
-- [[CNCF_Cloud_Native_AI/KServe_Deep_Dive]] —— 消费 ModelKit 部署推理服务的标准平台
+- [[05_CNCF_Cloud_Native_AI/README]]
+- [[05_CNCF_Cloud_Native_AI/Dragonfly_Deep_Dive]] —— OCI 制品的 P2P 分发加速,ModelKit 的最佳分发搭档
+- [[05_CNCF_Cloud_Native_AI/KServe_Deep_Dive]] —— 消费 ModelKit 部署推理服务的标准平台
 - [[11_模型运维/04_Experiment_Tracking/Model_Registry_and_Cards_Deep_Dive]] —— ModelKit 是模型注册表的制品载体
 - [[11_模型运维/05_Orchestration/DVC_Deep_Dive]] —— 数据/模型版本管理,可与 ModelKit 的 datasets 层互补

@@ -166,8 +166,8 @@ flowchart TD
 **推荐阅读顺序**:
 1. 先读本文的对比表格，建立全局视野
 2. 选择感兴趣的厂商，深入其 Deep Dive 文档
-3. 参考 [../LLM_Architectures/LLM_Architectures.md](../LLM_Architectures/LLM_Architectures.md) 了解架构共性
-4. 参考 [../Reasoning_Models/o1_Class_Reasoning_Models.md](../Reasoning_Models/o1_Class_Reasoning_Models.md) 了解推理模型
+3. 参考 [../LLM_Architectures/LLM_Architectures.md](../05_LLM_Architectures/LLM_Architectures.md) 了解架构共性
+4. 参考 [../Reasoning_Models/o1_Class_Reasoning_Models.md](../09_Reasoning_Models/o1_Class_Reasoning_Models.md) 了解推理模型
 
 ---
 
@@ -183,15 +183,15 @@ flowchart TD
 | MoE 架构 | Mistral Mixtral (先驱) | DeepSeek-V3 (671B) | 中国更大规模 |
 | 训练效率 | DeepSeek-V3 ($5.6M) | — | 中国成本更低 |
 
-详见 [../Chinese_LLM_Ecosystem/README.md](../Chinese_LLM_Ecosystem/README.md)
+详见 [../Chinese_LLM_Ecosystem/README.md](../15_Chinese_LLM_Ecosystem/README.md)
 
 ---
 
 ## 前置知识 (Prerequisites)
 
-- **必修**: [../LLM_Architectures/LLM_Architectures.md](../LLM_Architectures/LLM_Architectures.md) — Transformer、MoE、GQA 基础
-- **推荐**: [../Reasoning_Models/o1_Class_Reasoning_Models.md](../Reasoning_Models/o1_Class_Reasoning_Models.md) — 推理模型原理
-- **推荐**: [../LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md](../LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md) — MoE 架构详解
+- **必修**: [../LLM_Architectures/LLM_Architectures.md](../05_LLM_Architectures/LLM_Architectures.md) — Transformer、MoE、GQA 基础
+- **推荐**: [../Reasoning_Models/o1_Class_Reasoning_Models.md](../09_Reasoning_Models/o1_Class_Reasoning_Models.md) — 推理模型原理
+- **推荐**: [../LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md](../05_LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md) — MoE 架构详解
 - **可选**: [../../20_论文精读/GPT3_Deep_Dive.md](20_论文精读/03_Scaling/GPT3_Deep_Dive.md) — GPT-3 论文解读
 - **可选**: [../../20_论文精读/LLaMA_Deep_Dive.md](20_论文精读/02_Architecture/LLaMA_Deep_Dive.md) — LLaMA 论文解读
 

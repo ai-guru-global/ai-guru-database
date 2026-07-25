@@ -8,9 +8,9 @@ sources: []
 
 # RL Foundations
 
-本页面索引 `06_强化学习/RL_Foundations` 目录下的所有内容。
+本页面索引 `06_强化学习/01_RL_Foundations` 目录下的所有内容。
 
-> **合并说明**: 原 `RL_Fundamentals/` 目录已合并至 `RL_Foundations/`。以下两个文件从 RL_Fundamentals 迁入。
+> **合并说明**: 原 `RL_Fundamentals/` 目录已合并至 `01_RL_Foundations/`。以下两个文件从 RL_Fundamentals 迁入。
 
 ## 内容导航
 

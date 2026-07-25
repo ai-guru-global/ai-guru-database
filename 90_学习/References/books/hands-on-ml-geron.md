@@ -378,7 +378,7 @@ Transformer = 完全基于 Attention，抛弃 RNN
 | Ch 6-7 树/集成 | 树模型 | [[02_机器学习/]] | 经典算法 |
 | Ch 10-11 神经网络 | DL 基础 | [[03_深度学习/]] | 神经网络核心 |
 | Ch 14 CNN | 卷积网络 | [[04_计算机视觉/]] | CV 基础 |
-| Ch 15-16 RNN/Transformer | 序列模型 | [[05_大模型/LLM_Fundamentals]] | 序列处理 |
+| Ch 15-16 RNN/Transformer | 序列模型 | [[05_大模型/01_LLM_Fundamentals]] | 序列处理 |
 | Ch 16 Transformer | Attention | [[90_学习/References/Papers/Attention_Is_All_You_Need_Reading]] | 架构源头 |
 | Ch 19 部署 | TF Serving | [[10_部署推理/]] | 模型部署 |
 

@@ -639,8 +639,8 @@ for batch in dataloader:
 ## 7. 与其他主题的关联 (Connections)
 
 ### 前置知识
-- **[线性代数](../Linear_Algebra/Linear_Algebra.md)**: 矩阵乘法的切分方式
-- **[数据结构与算法](../Data_Structures_Algorithms/Data_Structures_Algorithms.md)**: 通信原语的实现
+- **[线性代数](../02_Linear_Algebra/Linear_Algebra.md)**: 矩阵乘法的切分方式
+- **[数据结构与算法](../07_Data_Structures_Algorithms/Data_Structures_Algorithms.md)**: 通信原语的实现
 
 ### 进阶推荐
 - **[模型压缩](10_部署推理/01_Deployment_Fundamentals/Deployment_Inference.md)**: 量化与分布式训练结合

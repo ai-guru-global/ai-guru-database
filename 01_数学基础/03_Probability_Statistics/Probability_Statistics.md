@@ -531,7 +531,7 @@ $$
 ## 7. 与其他主题的关联 (Connections)
 
 ### 前置知识
-- **[线性代数](../Linear_Algebra/Linear_Algebra.md)**: 协方差矩阵、多元高斯分布
+- **[线性代数](../02_Linear_Algebra/Linear_Algebra.md)**: 协方差矩阵、多元高斯分布
 - **[微积分](01_数学基础/Calculus_Optimization.md)**: 期望（积分）、最大化（求导）
 
 ### 进阶推荐

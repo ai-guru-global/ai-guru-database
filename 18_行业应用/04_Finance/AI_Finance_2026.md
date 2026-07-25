@@ -271,9 +271,9 @@ AI保险 2025-2026:
 
 ## Related
 
-- [[../../14_RAG系统/Advanced_RAG|高级 RAG]] — 金融知识库与合规检索
-- [[../../15_智能体/Agent_Workflow|Agent 工作流]] — 金融分析 Agent
-- [[../../05_大模型/LLM_Fundamentals|LLM 基础]] — 金融大模型应用
+- [[../../14_RAG系统/04_Advanced_RAG|高级 RAG]] — 金融知识库与合规检索
+- [[../../15_智能体/03_Agent_Workflow|Agent 工作流]] — 金融分析 Agent
+- [[../../05_大模型/01_LLM_Fundamentals|LLM 基础]] — 金融大模型应用
 - [[../../08_模型评估/Fairness|公平性评估]] — 金融 AI 公平与合规
 - [[../../10_部署推理/Deployment_Strategies|部署策略]] — 金融级低延迟部署
 

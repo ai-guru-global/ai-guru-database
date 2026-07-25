@@ -355,7 +355,7 @@ MoE架构通过路由器将输入分配给最合适的专家模型，只有被�
 
 - [[90_学习/courses/microsoft/microsoft_genai_for_beginners]] - 课程总览
 - [[05_大模型/05_LLM_Architectures/LLM_Architectures]] - LLM架构详解
-- [[05_大模型/Fine_tuning_Techniques]] - 微调技术
+- [[05_大模型/07_Fine_tuning_Techniques]] - 微调技术
 - [[05_大模型/14_Global_LLM_Ecosystem/README]] - 全球LLM生态
 - [[15_智能体/GenAI_L17_AI_Agents]] - AI代理
 

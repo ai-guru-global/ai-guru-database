@@ -91,7 +91,7 @@ AI:"我建议通过合法途径,如投资理财、
     提升技能、创业等..." ✓
 ```
 
-👉 [阅读详细版](./Value_Alignment/Value_Alignment_for_dummy.md)
+👉 [阅读详细版](./02_Value_Alignment/Value_Alignment_for_dummy.md)
 
 ### 2️⃣ AI 安全与红队 - AI 的"防火墙"
 
@@ -115,7 +115,7 @@ AI:"我建议通过合法途径,如投资理财、
 "我不能提供危险或非法活动的相关信息。" ✓
 ```
 
-👉 [阅读详细版](./AI_Safety_RedTeaming/AI_Safety_RedTeaming_for_dummy.md)
+👉 [阅读详细版](./04_AI_Safety_RedTeaming/AI_Safety_RedTeaming_for_dummy.md)
 
 ## 核心概念速览
 
@@ -272,8 +272,8 @@ AI 不是中立的,会放大训练数据中的偏见!
 ## 接下来去哪儿?
 
 ### 📚 继续深入本章
-- [价值对齐 - 小白版](./Value_Alignment/Value_Alignment_for_dummy.md)
-- [AI 安全与红队 - 小白版](./AI_Safety_RedTeaming/AI_Safety_RedTeaming_for_dummy.md)
+- [价值对齐 - 小白版](./02_Value_Alignment/Value_Alignment_for_dummy.md)
+- [AI 安全与红队 - 小白版](./04_AI_Safety_RedTeaming/AI_Safety_RedTeaming_for_dummy.md)
 
 ### 🔙 回顾前置知识
 - [大语言模型](./05_大模型/README_for_dummy.md)

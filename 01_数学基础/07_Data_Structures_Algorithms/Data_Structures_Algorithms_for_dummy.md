@@ -196,8 +196,8 @@ A: 百度搜索是"关键词匹配"——你搜"苹果手机"，它找包含这�
 ## 想深入了解？
 
 - 专业版: [数据结构与算法完整版](./Data_Structures_Algorithms.md)
-- 前置知识: [线性代数小白版](../Linear_Algebra/Linear_Algebra_for_dummy.md) | [概率统计小白版](../Probability_Statistics/Probability_Statistics_for_dummy.md)
-- 下一站: [分布式系统小白版](../Distributed_Systems/Distributed_Systems_for_dummy.md)
+- 前置知识: [线性代数小白版](../02_Linear_Algebra/Linear_Algebra_for_dummy.md) | [概率统计小白版](../03_Probability_Statistics/Probability_Statistics_for_dummy.md)
+- 下一站: [分布式系统小白版](../09_Distributed_Systems/Distributed_Systems_for_dummy.md)
 
 ---
 *本文是 [Data_Structures_Algorithms.md](./Data_Structures_Algorithms.md) 的简化版，适合零基础读者。*

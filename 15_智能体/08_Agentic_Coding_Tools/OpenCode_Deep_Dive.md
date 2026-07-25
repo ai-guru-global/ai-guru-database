@@ -518,8 +518,8 @@ opencode "补充集成测试和性能测试"
 
 - [OpenCode GitHub](https://github.com/opencode-ai/opencode)
 - [OpenCode 文档](https://docs.opencode.ai)
-- [Agent Harness 评估框架](../Agent_Evaluation/Agent_Harness_Complete_2026.md)
-- [SWE-bench 基准测试](../Agent_Evaluation/Agent_Harness_Complete_2026.md#33-swe-bench)
+- [Agent Harness 评估框架](../07_Agent_Evaluation/Agent_Harness_Complete_2026.md)
+- [SWE-bench 基准测试](../07_Agent_Evaluation/Agent_Harness_Complete_2026.md#33-swe-bench)
 
 ## 相关链接
 

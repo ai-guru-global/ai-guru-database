@@ -86,13 +86,13 @@ Wikilinks pointing to pages that do not exist in the vault.
 | `14_AI_Gateway/AI_Gateway_2026.md` | 3 | Moved/merged into AI_Gateway_README |
 | `Agent` | 3 | Chapter-level link |
 | `AI测试` | 3 | Chapter-level link |
-| `05_大模型/Chinese_LLM_Ecosystem` | 3 | Subdirectory link without page match |
+| `05_大模型/15_Chinese_LLM_Ecosystem` | 3 | Subdirectory link without page match |
 | `03_深度学习/ApacheCN_PyTorch_Track` | 3 | Archived/removed |
 | `03_深度学习/ApacheCN_TensorFlow_Track` | 3 | Archived/removed |
 | `05_大模型/ApacheCN_NLP_Track` | 3 | Archived/removed |
 | `模型训练` | 3 | Chapter-level link |
 
-**Pattern analysis**: ~30 broken links are chapter-level or directory-level references (e.g., `[[机器学习]]`) that don't resolve to a specific file. ~14 are `[[arxiv]]` references that should be external links. The remaining ~55 are genuine broken references to moved/deleted pages.
+**Pattern analysis**: ~30 broken links are chapter-level or directory-level references (e.g., `[[02_机器学习]]`) that don't resolve to a specific file. ~14 are `[[arxiv]]` references that should be external links. The remaining ~55 are genuine broken references to moved/deleted pages.
 
 ---
 

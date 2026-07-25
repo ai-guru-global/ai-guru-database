@@ -10,7 +10,7 @@ relationships:
   - target: "概念/ai-for-science"
     type: enables
 sources:
-  - 03_深度学习/Graph_Neural_Networks
+  - 03_深度学习/05_Graph_Neural_Networks
 summary: "图神经网络处理图结构数据（社交网络、分子、知识图谱），核心思想是消息传递：节点聚合邻居信息并更新自身表示。主要变体包括 GCN/GAT/GraphSAGE/GIN/Graph Transformer。"
 provenance:
   extracted: 0.45

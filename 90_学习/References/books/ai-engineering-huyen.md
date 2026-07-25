@@ -278,7 +278,7 @@ MRR (Mean Reciprocal Rank) = 1/第一个相关结果的排名
 
 | 本书章节 | 知识库主题 | 关联说明 |
 |----------|------------|----------|
-| Ch 1-2 基础模型 | [[05_大模型/LLM_Fundamentals]] | 模型原理与选型 |
+| Ch 1-2 基础模型 | [[05_大模型/01_LLM_Fundamentals]] | 模型原理与选型 |
 | Ch 3-4 推理优化 | [[10_部署推理/]] | 量化、推测解码、推理引擎 |
 | Ch 5 提示/上下文工程 | [[05_大模型/08_Prompt_Engineering/Prompt_Engineering]] | 提示技术 |
 | Ch 6 RAG | [[14_RAG系统/RAG_Systems]] | 检索增强生成 |

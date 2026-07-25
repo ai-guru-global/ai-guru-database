@@ -165,7 +165,7 @@ aliases:
 
 | 核心概念 | 最相关角色 | 知识库章节 |
 |---------|-----------|-----------|
-| Transformer/Attention | LLM 工程师、NLP、研究员 | [[05_大模型/LLM_Fundamentals]]、[[90_学习/References/Papers/Attention_Is_All_You_Need_Reading]] |
+| Transformer/Attention | LLM 工程师、NLP、研究员 | [[05_大模型/01_LLM_Fundamentals]]、[[90_学习/References/Papers/Attention_Is_All_You_Need_Reading]] |
 | RAG | LLM 工程师、NLP、MLOps | [[14_RAG系统/RAG_Systems]] |
 | AI Agent | LLM 工程师、PM | [[15_智能体/]] |
 | 部署推理 | MLOps、LLM 工程师 | [[10_部署推理/]] |

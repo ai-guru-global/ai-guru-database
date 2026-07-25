@@ -840,7 +840,7 @@ class TestContext:
 - [Harness Deployment Guide](./Harness_Deployment_Guide.md) — 容器化与 K8s 部署
 - [Harness Testing Guide](./Harness_Testing_Guide.md) — 测试策略与 CI/CD
 - [Multi Agent Harness Design](./Multi_Agent_Harness_Design.md) — 多 Agent 设计模式
-- [Agent Skills 书写速览](../Agent_Skills/Skills-in-nutshell.md) — 为 Harness 注入领域知识
+- [Agent Skills 书写速览](../05_Agent_Skills/Skills-in-nutshell.md) — 为 Harness 注入领域知识
 
 ---
 

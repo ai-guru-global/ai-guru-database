@@ -832,7 +832,7 @@ AI 生成回答后:
 
 ### 📄 进阶阅读
 - [AI 安全与红队(完整版)](./AI_Safety_RedTeaming.md) - 技术细节和防御算法
-- [价值对齐 - 小白版](../Value_Alignment/Value_Alignment_for_dummy.md) - 安全的基础
+- [价值对齐 - 小白版](../02_Value_Alignment/Value_Alignment_for_dummy.md) - 安全的基础
 - [RAG 系统 - 小白版](14_RAG系统/01_RAG_Fundamentals/RAG_Systems_for_dummy.md) - 间接注入的高发场景
 
 ### 🛠️ 动手实践

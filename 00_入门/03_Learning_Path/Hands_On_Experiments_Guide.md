@@ -204,7 +204,7 @@ for epoch in range(10):
 
 ## 实验 3: SimCLR 对比学习 (简化版)
 
-> **对应章节**: [03_深度学习/Self_Supervised_Learning](../../03_深度学习/06_Self_Supervised_Learning/)  
+> **对应章节**: [03_深度学习/06_Self_Supervised_Learning](../../03_深度学习/06_Self_Supervised_Learning/)  
 > **学习目标**: 理解"正样本拉近、负样本推远"的对比学习原理
 
 ```python
@@ -404,7 +404,7 @@ cd llama.cpp && make -j
 
 ## 实验 6: U-Net 语义分割 (合成数据)
 
-> **对应章节**: [04_计算机视觉/Segmentation](../../04_计算机视觉/03_Segmentation/) · [20_论文精读/08_Vision/UNet_Deep_Dive](../../20_论文精读/08_Vision/UNet_Deep_Dive.md)  
+> **对应章节**: [04_计算机视觉/03_Segmentation](../../04_计算机视觉/03_Segmentation/) · [20_论文精读/08_Vision/UNet_Deep_Dive](../../20_论文精读/08_Vision/UNet_Deep_Dive.md)  
 > **学习目标**: 理解编码器-解码器 + 跳跃连接的分割效果
 
 ```python
@@ -476,7 +476,7 @@ for epoch in range(20):
 
 ## 实验 7: DDPM 扩散模型 (MNIST)
 
-> **对应章节**: [04_计算机视觉/Generative_Models](../../04_计算机视觉/06_Generative_Models/)  
+> **对应章节**: [04_计算机视觉/06_Generative_Models](../../04_计算机视觉/06_Generative_Models/)  
 > **学习目标**: 理解前向加噪 → 反向去噪的扩散过程
 
 ```python

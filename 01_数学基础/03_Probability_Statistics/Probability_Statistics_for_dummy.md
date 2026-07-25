@@ -212,8 +212,8 @@ A: ChatGPT 生成每个字的时候，其实都在计算"下一个字是什么�
 
 - 专业版: [概率统计完整版](./Probability_Statistics.md)
 - 推荐视频: 3Blue1Brown 的"贝叶斯定理"视频（B 站有中文字幕）
-- 前置知识: [线性代数小白版](../Linear_Algebra/Linear_Algebra_for_dummy.md)
-- 下一站: [数据结构与算法小白版](../Data_Structures_Algorithms/Data_Structures_Algorithms_for_dummy.md)
+- 前置知识: [线性代数小白版](../02_Linear_Algebra/Linear_Algebra_for_dummy.md)
+- 下一站: [数据结构与算法小白版](../07_Data_Structures_Algorithms/Data_Structures_Algorithms_for_dummy.md)
 
 ---
 *本文是 [Probability_Statistics.md](./Probability_Statistics.md) 的简化版，适合零基础读者。*

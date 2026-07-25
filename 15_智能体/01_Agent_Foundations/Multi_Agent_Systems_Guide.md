@@ -456,7 +456,7 @@ Mixture of Agents 更像**答案聚合器**, 不是动态组队本身:
 - [[AgentOps_Production_Guide]] -- Part 3: 工程实践与落地
 - [[Context_Engineering_Guide]] -- 上下文工程完整指南
 - [[Prompt_Engineering_Complete_Guide]] -- 提示词工程指南
-- [[Agent_Foundations/Agent_Protocols_2026]] -- 协议详解
+- [[01_Agent_Foundations/Agent_Protocols_2026]] -- 协议详解
 - [[Agent_Protocols/A2A_Protocol_Deep_Dive]] -- A2A 协议深度解析
-- [[Agent_Frameworks/CrewAI_Deep_Dive]] -- CrewAI 实战
-- [[Agent_Frameworks/AutoGen_CrewAI_LangGraph_Dive]] -- 多智能体框架对比
+- [[02_Agent_Frameworks/CrewAI_Deep_Dive]] -- CrewAI 实战
+- [[02_Agent_Frameworks/AutoGen_CrewAI_LangGraph_Dive]] -- 多智能体框架对比

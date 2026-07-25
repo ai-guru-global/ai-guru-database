@@ -8,7 +8,7 @@ sources: []
 
 # Opencode
 
-This page indexes the contents of `AI编程/Tools/OpenCode`.
+This page indexes the contents of `AI编程/05_Tools/OpenCode`.
 
 ## Files
 

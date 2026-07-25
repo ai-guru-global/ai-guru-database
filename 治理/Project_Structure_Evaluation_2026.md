@@ -72,8 +72,8 @@ sources: []
 
 | 有 Nutshell | 无 Nutshell（关键缺失） |
 |------------|----------------------|
-| 05_大模型/LLM_Architectures | **01_Fundamentals**（无） |
-| 05_大模型/Prompt_Engineering | **02_Machine_Learning**（无） |
+| 05_大模型/05_LLM_Architectures | **01_Fundamentals**（无） |
+| 05_大模型/08_Prompt_Engineering | **02_Machine_Learning**（无） |
 | 06_RL/AI_Agents | **03_Deep_Learning**（无） |
 | 07_Model_Training | **05_Computer_Vision**（无） |
 | 09_Deployment_Inference | **08_Model_Evaluation**（无） |

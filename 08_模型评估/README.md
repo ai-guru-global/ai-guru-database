@@ -24,20 +24,20 @@ sources: []
 | [Evaluation-in-nutshell](08_模型评估/01_Evaluation_Fundamentals/Evaluation-in-nutshell.md) | 模型评估速成指南 | 快速入门 |
 | [Evaluation Automation 2026](08_模型评估/05_Automation/Evaluation_Automation_2026.md) | CI/CD 中的自动评估流水线 | 进阶 |
 | [Online Evaluation](08_模型评估/04_Evaluation_Tools/Online_Evaluation.md) | A/B 测试、影子流量、金丝雀发布 | 进阶 |
-| [LLM-as-Judge 深度解析](./Evaluation_Tools/LLM_as_Judge_Deep_Dive.md) | 单点评分、成对比较、Rubric 评估、偏差缓解 | 进阶 |
-| [Multimodal Evaluation Benchmarks](./Benchmarks/Multimodal_Evaluation_Benchmarks.md) | MMMU/MathVista/DocVQA/POPE 等视觉评测 | 进阶 |
-| [Long Context Evaluation](./Benchmarks/Long_Context_Evaluation.md) | 128K+ 长上下文模型评估方法 | 进阶 |
+| [LLM-as-Judge 深度解析](./04_Evaluation_Tools/LLM_as_Judge_Deep_Dive.md) | 单点评分、成对比较、Rubric 评估、偏差缓解 | 进阶 |
+| [Multimodal Evaluation Benchmarks](./02_Benchmarks/Multimodal_Evaluation_Benchmarks.md) | MMMU/MathVista/DocVQA/POPE 等视觉评测 | 进阶 |
+| [Long Context Evaluation](./02_Benchmarks/Long_Context_Evaluation.md) | 128K+ 长上下文模型评估方法 | 进阶 |
 | [**Unified Benchmark Comparison**](./Unified_Benchmark_Comparison.md) | 跨领域 AI 基准对比: LLM/CV/Speech/Multimodal/Agent SOTA | 进阶 |
-| [**LLM Benchmark Suite 2026**](./Benchmarks/LLM_Benchmark_Suite_2026.md) | MMLU/GSM8K/HumanEval/SWE-bench/AIME/GPQA 全基准解读 | 进阶 |
-| [**Agentic Benchmark Guide**](./Benchmarks/Agentic_Benchmark_Guide.md) | τ-bench/BFCL/SWE-bench/BrowseComp Agent 评测全景 | 进阶 |
-| [LM Evaluation Harness Deep Dive](./Evaluation_Tools/LM_Evaluation_Harness_Deep_Dive.md) | EleutherAI 学术基准评测框架：MMLU/GSM8K/HumanEval 等 | 进阶 |
-| [OpenCompass Deep Dive](./Evaluation_Tools/OpenCompass_Deep_Dive.md) | 上海 AI Lab 一站式评测平台：中文/多模态/CompassRank | 进阶 |
+| [**LLM Benchmark Suite 2026**](./02_Benchmarks/LLM_Benchmark_Suite_2026.md) | MMLU/GSM8K/HumanEval/SWE-bench/AIME/GPQA 全基准解读 | 进阶 |
+| [**Agentic Benchmark Guide**](./02_Benchmarks/Agentic_Benchmark_Guide.md) | τ-bench/BFCL/SWE-bench/BrowseComp Agent 评测全景 | 进阶 |
+| [LM Evaluation Harness Deep Dive](./04_Evaluation_Tools/LM_Evaluation_Harness_Deep_Dive.md) | EleutherAI 学术基准评测框架：MMLU/GSM8K/HumanEval 等 | 进阶 |
+| [OpenCompass Deep Dive](./04_Evaluation_Tools/OpenCompass_Deep_Dive.md) | 上海 AI Lab 一站式评测平台：中文/多模态/CompassRank | 进阶 |
 | [Fairness Evaluation](./Fairness_Evaluation_for_dummy.md) | 公平性评估入门 | 初学者 |
-| [LLM 评估与测试大白话](./Benchmarks/LLM_Benchmarks_for_dummy.md) | BBH、Arena、红队测试、CI 集成评估、A/B 测试框架大白话 | 初学者 |
+| [LLM 评估与测试大白话](./02_Benchmarks/LLM_Benchmarks_for_dummy.md) | BBH、Arena、红队测试、CI 集成评估、A/B 测试框架大白话 | 初学者 |
 | [**LLM 评估方法论 2026**](08_模型评估/03_LLM_Evaluation/LLM_Evaluation_2026.md) | 自动化基准、人工评估、LLM-as-Judge、评估流水线 | 所有从业者 |
 | [**RAG 评估深度解析**](08_模型评估/03_LLM_Evaluation/RAG_Evaluation_Deep_Dive.md) | 检索/生成评估、RAGAS/Ares/TruLens、LLM-as-Judge 偏见控制、A/B 测试 | RAG 开发者 |
-| [A/B 测试方案模板](./Automation/AB_Testing_Template.md) | 标准化 ML 模型 A/B 测试方案模板 | 算法 / 产品 |
-| [模型评估报告模板](./Automation/Evaluation_Report_Template.md) | 标准化模型评估报告模板 | 算法工程师 |
+| [A/B 测试方案模板](./05_Automation/AB_Testing_Template.md) | 标准化 ML 模型 A/B 测试方案模板 | 算法 / 产品 |
+| [模型评估报告模板](./05_Automation/Evaluation_Report_Template.md) | 标准化模型评估报告模板 | 算法工程师 |
 
 ---
 
@@ -68,7 +68,7 @@ sources: []
 
 - [x] ✅ [Evaluation Automation 2026](08_模型评估/05_Automation/Evaluation_Automation_2026.md) — CI/CD 自动评估流程
 - [x] ✅ [Online Evaluation](08_模型评估/04_Evaluation_Tools/Online_Evaluation.md) — A/B 测试、影子流量、金丝雀发布
-- [x] ✅ [LLM-as-Judge 深度解析](./Evaluation_Tools/LLM_as_Judge_Deep_Dive.md) — LLM 评委评估方法论
+- [x] ✅ [LLM-as-Judge 深度解析](./04_Evaluation_Tools/LLM_as_Judge_Deep_Dive.md) — LLM 评委评估方法论
 - [ ] 领域特定评估（医疗/金融/法律场景评估规范）
 - [ ] 评估数据集构建（高质量评估集的采集与维护）
 

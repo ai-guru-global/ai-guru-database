@@ -756,7 +756,7 @@ flowchart TB
 
 ## Related
 
-- [[../../05_大模型/Fine_tuning_Techniques|微调技术]] — DPO 与 RLHF 微调方法对比
+- [[../../05_大模型/07_Fine_tuning_Techniques|微调技术]] — DPO 与 RLHF 微调方法对比
 - [[../../05_大模型/05_LLM_Architectures/LLM_Internals_Training|LLM 训练内部机制]] — 对齐训练技术细节
 - [[../../概念/LLM/decoding-strategies|解码策略概念卡]] — 偏好优化对生成的影响
 - [[../../03_深度学习/03_Optimization/Optimization|优化方法]] — 损失函数与优化理论

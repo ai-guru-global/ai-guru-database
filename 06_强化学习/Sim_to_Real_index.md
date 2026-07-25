@@ -35,8 +35,8 @@ summary: Sim2Real 迁移学习和数字孪生训练方法。
 
 ## Related
 
-- [[../Robotics_Embodied_AI/index|机器人与具身智能]]
-- [[../Deep_RL/index|深度强化学习]]
+- [[../05_Robotics_Embodied_AI/index|机器人与具身智能]]
+- [[../02_Deep_RL/index|深度强化学习]]
 - [[Sim_to_Real/Sim_to_Real_Transfer_Guide|Sim2Real 迁移完整指南]]
 
 ## 学习路径建议

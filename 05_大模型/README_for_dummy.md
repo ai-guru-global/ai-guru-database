@@ -56,7 +56,7 @@ sources: []
 
 ### 🔰 入门篇
 
-#### [序列模型 (小白版)](./Sequence_Models/Sequence_Models_for_dummy.md)
+#### [序列模型 (小白版)](./02_Sequence_Models/Sequence_Models_for_dummy.md)
 **一句话**: AI 如何像人一样"边读边记住前文"
 
 **你将学到**:
@@ -72,7 +72,7 @@ sources: []
 
 ### 🚀 核心篇
 
-#### [Transformer 革命 (小白版)](./Transformer_Revolution/Transformer_Revolution_for_dummy.md)
+#### [Transformer 革命 (小白版)](./04_Transformer_Revolution/Transformer_Revolution_for_dummy.md)
 **一句话**: 把"排队轮流说话"变成"全班一起讨论"的革命性发明
 
 **你将学到**:
@@ -86,7 +86,7 @@ sources: []
 
 ---
 
-#### [大语言模型架构 (小白版)](./LLM_Architectures/LLM_Architectures_for_dummy.md)
+#### [大语言模型架构 (小白版)](./05_LLM_Architectures/LLM_Architectures_for_dummy.md)
 **一句话**: GPT、BERT、ChatGPT 这些明星 AI 的内部构造
 
 **你将学到**:
@@ -103,7 +103,7 @@ sources: []
 
 ### 🛠️ 实战篇
 
-#### [微调技术 (小白版)](./Fine_tuning_Techniques/Fine_tuning_Techniques_for_dummy.md)
+#### [微调技术 (小白版)](./07_Fine_tuning_Techniques/Fine_tuning_Techniques_for_dummy.md)
 **一句话**: 把"通才 AI"变成"专家 AI"的训练方法
 
 **你将学到**:
@@ -117,7 +117,7 @@ sources: []
 
 ---
 
-#### [提示词工程 (小白版)](./Prompt_Engineering/Prompt_Engineering_for_dummy.md)
+#### [提示词工程 (小白版)](./08_Prompt_Engineering/Prompt_Engineering_for_dummy.md)
 **一句话**: 学会"问对问题"让 AI 给出完美答案的技巧
 
 **你将学到**:
@@ -163,7 +163,7 @@ sources: []
 3. 微调技术可以最后看(稍微难一点)
 
 **如果你只想"会用":**
-- 直接跳到 [提示词工程 (小白版)](./Prompt_Engineering/Prompt_Engineering_for_dummy.md)
+- 直接跳到 [提示词工程 (小白版)](./08_Prompt_Engineering/Prompt_Engineering_for_dummy.md)
 - 学会写好 Prompt 就能 80% 的效果!
 
 **如果你想"深入理解":**
@@ -278,11 +278,11 @@ sources: []
 **下一章**: [→ 05 计算机视觉 (小白版)](./04_计算机视觉/README_for_dummy.md)
 
 **本章内容**:
-1. [序列模型 (小白版)](./Sequence_Models/Sequence_Models_for_dummy.md)
-2. [Transformer 革命 (小白版)](./Transformer_Revolution/Transformer_Revolution_for_dummy.md)
-3. [大语言模型架构 (小白版)](./LLM_Architectures/LLM_Architectures_for_dummy.md)
-4. [微调技术 (小白版)](./Fine_tuning_Techniques/Fine_tuning_Techniques_for_dummy.md)
-5. [提示词工程 (小白版)](./Prompt_Engineering/Prompt_Engineering_for_dummy.md)
+1. [序列模型 (小白版)](./02_Sequence_Models/Sequence_Models_for_dummy.md)
+2. [Transformer 革命 (小白版)](./04_Transformer_Revolution/Transformer_Revolution_for_dummy.md)
+3. [大语言模型架构 (小白版)](./05_LLM_Architectures/LLM_Architectures_for_dummy.md)
+4. [微调技术 (小白版)](./07_Fine_tuning_Techniques/Fine_tuning_Techniques_for_dummy.md)
+5. [提示词工程 (小白版)](./08_Prompt_Engineering/Prompt_Engineering_for_dummy.md)
 
 ---
 

@@ -470,11 +470,11 @@ flowchart TB
 
 ## 🔗 相关主题
 
-- [AI 安全与红队](AI_Safety_RedTeaming/) —— 深入红队方法论
-- [隐私保护 AI](Privacy_Preserving_AI/) —— 联邦学习、差分隐私详解
+- [AI 安全与红队](04_AI_Safety_RedTeaming/) —— 深入红队方法论
+- [隐私保护 AI](10_Privacy_Preserving_AI/) —— 联邦学习、差分隐私详解
 - [AI 治理合规](17_伦理安全/03_Governance/AI_Governance_Compliance_2026.md) —— 法规与合规实践
-- [价值对齐](Value_Alignment/) —— 对齐技术深入
-- [AI 供应链安全](AI_Supply_Chain_Security/) —— 供应链风险
+- [价值对齐](02_Value_Alignment/) —— 对齐技术深入
+- [AI 供应链安全](08_AI_Supply_Chain_Security/) —— 供应链风险
 - [伦理安全 - 小白版](README_for_dummy.md) —— 零基础入门
 
 ---

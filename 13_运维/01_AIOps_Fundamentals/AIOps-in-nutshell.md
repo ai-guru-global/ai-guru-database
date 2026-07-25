@@ -215,7 +215,7 @@ flowchart LR
 |------|------|
 | 完整架构 | [AI_Ops_2026.md](13_运维/01_AIOps_Fundamentals/AI_Ops_2026.md) |
 | 入门指南 | [AI_Ops_for_dummy.md](13_运维/01_AIOps_Fundamentals/AI_Ops_for_dummy.md) |
-| SRE 实践 | [SRE_for_AI_Systems.md](../SRE_Reliability/SRE_for_AI_Systems.md) |
+| SRE 实践 | [SRE_for_AI_Systems.md](../02_SRE_Reliability/SRE_for_AI_Systems.md) |
 | 事故响应 | [AI_Incident_Response_Playbook.md](13_运维/02_SRE_Reliability/AI_Incident_Response_Playbook) |
 | 可观测性 | [AI_Observability_Guide.md](11_模型运维/08_Observability/AI_Observability_Guide.md) |
 

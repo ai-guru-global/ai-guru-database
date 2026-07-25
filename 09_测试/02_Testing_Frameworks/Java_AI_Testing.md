@@ -23,7 +23,7 @@ sources: []
 >
 > **一句话理解**: 用 JUnit 5、Spring Boot Test、TestContainers 构建 Java AI 应用的完整测试体系 —— 从单元测试到集成测试，从 Prompt 测试到 RAG 评估，确保 Spring AI 应用的质量和可靠性。
 
-> **相关文档**: [AI 测试框架](../Testing_Fundamentals/AI_Test_Framework_2026.md) | [DeepEval 深度解析](./DeepEval_Deep_Dive.md) | [Spring AI 深度解析](01_数学基础/11_Java_Ecosystem_AI/Spring_AI_Deep_Dive.md) | [Java 生态 AI 概览](01_数学基础/11_Java_Ecosystem_AI/Java_Ecosystem_AI_Overview.md)
+> **相关文档**: [AI 测试框架](../01_Testing_Fundamentals/AI_Test_Framework_2026.md) | [DeepEval 深度解析](./DeepEval_Deep_Dive.md) | [Spring AI 深度解析](01_数学基础/11_Java_Ecosystem_AI/Spring_AI_Deep_Dive.md) | [Java 生态 AI 概览](01_数学基础/11_Java_Ecosystem_AI/Java_Ecosystem_AI_Overview.md)
 
 ---
 

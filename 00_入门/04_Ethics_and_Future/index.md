@@ -168,9 +168,9 @@ tags: [auto-index]
 | 阶段 | 推荐内容 | 目标 |
 |------|----------|------|
 | 入门 | AI Ethics Society | 理解基本伦理问题 |
-| 进阶 | 17_伦理安全/Governance | 掌握治理框架 |
-| 深入 | 17_伦理安全/Value_Alignment | 理解对齐技术 |
-| 实践 | 17_伦理安全/AI_Safety_RedTeaming | 安全测试实践 |
+| 进阶 | 17_伦理安全/03_Governance | 掌握治理框架 |
+| 深入 | 17_伦理安全/02_Value_Alignment | 理解对齐技术 |
+| 实践 | 17_伦理安全/04_AI_Safety_RedTeaming | 安全测试实践 |
 
 ## 附录：推荐书籍与资源
 

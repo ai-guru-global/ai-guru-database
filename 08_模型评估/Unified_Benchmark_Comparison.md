@@ -59,7 +59,7 @@ sources: []
 | 4 | Claude 3.5 Sonnet | 1365 | 代码生成 |
 | 5 | DeepSeek-R1 | 1335 | 数学推理 |
 
-> 详细 LLM 基准: [LLM Benchmark Suite 2026](./Benchmarks/LLM_Benchmark_Suite_2026.md)
+> 详细 LLM 基准: [LLM Benchmark Suite 2026](./02_Benchmarks/LLM_Benchmark_Suite_2026.md)
 
 ---
 
@@ -236,7 +236,7 @@ ASR 进化: HMM-GMM(2010, ~20%WER) → DNN-Hybrid(2012, ~13%)
 | **BFCL v3** | 72.0 | 68.0 | 60.0 | 65.0 |
 | **BrowseComp** | — | ~10 | — | — |
 
-> 详细 Agent 基准: [Agentic Benchmark Guide](./Benchmarks/Agentic_Benchmark_Guide.md)
+> 详细 Agent 基准: [Agentic Benchmark Guide](./02_Benchmarks/Agentic_Benchmark_Guide.md)
 
 ---
 

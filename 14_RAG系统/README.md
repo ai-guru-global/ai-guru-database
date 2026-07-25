@@ -35,7 +35,7 @@ sources: []
 | [RAG 调试速查表](14_RAG系统/04_Advanced_RAG/RAG_Debugging_Cheat_Sheet.md) | Query/检索/重排序/生成四环节诊断与评估指标 | RAG 工程师 |
 | [Agentic RAG 应用大白话](14_RAG系统/05_RAG_Production/Agentic_RAG_Applications_for_dummy.md) | Agentic RAG、Text2SQL、代码生成工作流大白话 | 初学者 |
 | [Multimodal RAG 2026](14_RAG系统/04_Advanced_RAG/Multimodal_RAG_Architecture_2026.md) | 多模态 RAG：复杂 PDF 解析、视频 RAG、ColPali 架构 | 进阶学习 |
-| [Matryoshka Representation Learning Deep Dive](./Embeddings/Matryoshka_Representation_Learning_Deep_Dive.md) | MRL 可截断嵌入：精度与成本的动态平衡 | 进阶学习 |
+| [Matryoshka Representation Learning Deep Dive](./02_Embeddings/Matryoshka_Representation_Learning_Deep_Dive.md) | MRL 可截断嵌入：精度与成本的动态平衡 | 进阶学习 |
 | [Spring AI RAG Deep Dive](14_RAG系统/06_RAG_Frameworks/Spring_AI_RAG_Deep_Dive.md) | Spring AI 生态中的 RAG 实现 | Java 开发者 |
 
 ### 向量数据库
@@ -63,7 +63,7 @@ sources: []
 | 文档 | 内容 |
 |------|------|
 | [Sentence Transformers Deep Dive](14_RAG系统/02_Embeddings/Sentence_Transformers_Deep_Dive.md) | 开源 Embedding 模型：多语言支持、100+ 模型 |
-| [Matryoshka Representation Learning Deep Dive](./Embeddings/Matryoshka_Representation_Learning_Deep_Dive.md) | MRL 可截断嵌入：同一向量按需取前缀 |
+| [Matryoshka Representation Learning Deep Dive](./02_Embeddings/Matryoshka_Representation_Learning_Deep_Dive.md) | MRL 可截断嵌入：同一向量按需取前缀 |
 
 ---
 

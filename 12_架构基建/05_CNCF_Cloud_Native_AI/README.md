@@ -92,7 +92,7 @@ LLM 生产化的 10 个痛点              ←→   云原生解法
 
 | # | 项目 | 状态 | 层次 | 一句话定位 | 深度文档 |
 |---|------|------|------|-----------|---------|
-| 1 | **KServe** | Incubating | 推理 | Kubernetes 上的标准化推理平台（GenAI + 传统 ML） | [[CNCF_Cloud_Native_AI/KServe_Deep_Dive]] |
+| 1 | **KServe** | Incubating | 推理 | Kubernetes 上的标准化推理平台（GenAI + 传统 ML） | [[05_CNCF_Cloud_Native_AI/KServe_Deep_Dive]] |
 | 2 | **KAITO** | Sandbox | 推理 | 一键在 K8s 跑 LLM 推理/微调/RAG 的 Operator | [[12_架构基建/05_CNCF_Cloud_Native_AI/KAITO_Deep_Dive.md]] |
 | 3 | **llm-d** | Landscape | 推理 | K8s 原生高性能分布式 LLM 推理框架 | [[12_架构基建/05_CNCF_Cloud_Native_AI/llm-d_Deep_Dive.md]] |
 | 4 | **llmaz** | Landscape | 推理 | K8s 上「易用优先」的 LLM 推理平台 | [[12_架构基建/05_CNCF_Cloud_Native_AI/llmaz_Deep_Dive.md]] |
@@ -224,7 +224,7 @@ LLM 工作负载的特点是 **GPU 密集 + 长任务 + 资源争抢**，K8s 默
 按角色推荐阅读顺序：
 
 **👨‍💻 平台工程师 / SRE（最推荐）**
-1. 本导览（建立全景） → 2. [[12_架构基建/05_CNCF_Cloud_Native_AI/KAITO_Deep_Dive.md]]（最快上手） → 3. [[CNCF_Cloud_Native_AI/KServe_Deep_Dive]]（企业标准） → 4. [[12_架构基建/05_CNCF_Cloud_Native_AI/Kueue_Deep_Dive.md]]（多租户） → 5. [[12_架构基建/05_CNCF_Cloud_Native_AI/K8sGPT_Deep_Dive.md]]（运维）
+1. 本导览（建立全景） → 2. [[12_架构基建/05_CNCF_Cloud_Native_AI/KAITO_Deep_Dive.md]]（最快上手） → 3. [[05_CNCF_Cloud_Native_AI/KServe_Deep_Dive]]（企业标准） → 4. [[12_架构基建/05_CNCF_Cloud_Native_AI/Kueue_Deep_Dive.md]]（多租户） → 5. [[12_架构基建/05_CNCF_Cloud_Native_AI/K8sGPT_Deep_Dive.md]]（运维）
 
 **🏗️ 架构师**
 1. 本导览 → 2. [[12_架构基建/05_CNCF_Cloud_Native_AI/llm-d_Deep_Dive.md]]（超大规模） → 3. [[12_架构基建/05_CNCF_Cloud_Native_AI/KAI_Scheduler_Deep_Dive.md]]（万卡调度） → 4. [[12_架构基建/05_CNCF_Cloud_Native_AI/Envoy_AI_Gateway_Deep_Dive.md]]（流量入口）

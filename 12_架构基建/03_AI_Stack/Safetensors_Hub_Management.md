@@ -164,7 +164,7 @@ for m in models:
 ## 相关阅读
 - [[12_架构基建/02_Architecture_Overview/AI_Infrastructure_2026]]
 - [[11_模型运维/04_Experiment_Tracking/Model_Registry_and_Cards_Deep_Dive]]
-- [[17_伦理安全/AI_Security_2026]]
+- [[17_伦理安全/07_AI_Security_2026]]
 
 ## Related
 

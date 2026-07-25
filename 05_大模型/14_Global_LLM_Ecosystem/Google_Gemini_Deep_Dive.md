@@ -103,7 +103,7 @@ Google DeepMind 是全球 AI 研究的"三极"之一 (OpenAI / Google / Anthropi
 4. **Thinking as a Feature**: Gemini 2.5 把推理深度变成可调参数，而非独立模型
 5. **开源 + 商业双轨**: Gemma 开源生态培育社区，Gemini API 驱动商业变现
 
-> **相关文档**: 关于原生多模态架构的详细分析，参见 [Native Multimodal Architectures](../Multimodal_Models/Native_Multimodal_Architectures.md)
+> **相关文档**: 关于原生多模态架构的详细分析，参见 [Native Multimodal Architectures](../10_Multimodal_Models/Native_Multimodal_Architectures.md)
 
 ---
 
@@ -654,7 +654,7 @@ Agent 能力:            完整              完整             基础
   └── 端侧部署         ✗                ✗                ✗
 ```
 
-> **相关文档**: 关于推理模型的技术原理，参见 [Long Context Models 2026](../LLM_Architectures/Long_Context_Models_2026.md) 和 [LLM Architectures](../LLM_Architectures/LLM_Architectures.md)
+> **相关文档**: 关于推理模型的技术原理，参见 [Long Context Models 2026](../05_LLM_Architectures/Long_Context_Models_2026.md) 和 [LLM Architectures](../05_LLM_Architectures/LLM_Architectures.md)
 
 ---
 
@@ -1476,26 +1476,26 @@ graph TD
 
 ### 架构基础
 
-- [LLM Architectures (大语言模型架构)](../LLM_Architectures/LLM_Architectures.md) — Transformer, GPT, BERT, MoE 等核心架构的全面介绍
-- [MoE Routing and Load Balancing](../LLM_Architectures/MoE_Routing_and_Load_Balancing.md) — MoE 路由策略与负载均衡技术详解
-- [MoE Case Studies: DeepSeek & Mixtral](../LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md) — MoE 在实际模型中的应用案例分析
+- [LLM Architectures (大语言模型架构)](../05_LLM_Architectures/LLM_Architectures.md) — Transformer, GPT, BERT, MoE 等核心架构的全面介绍
+- [MoE Routing and Load Balancing](../05_LLM_Architectures/MoE_Routing_and_Load_Balancing.md) — MoE 路由策略与负载均衡技术详解
+- [MoE Case Studies: DeepSeek & Mixtral](../05_LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md) — MoE 在实际模型中的应用案例分析
 
 ### 多模态与长上下文
 
-- [Native Multimodal Architectures (原生多模态架构)](../Multimodal_Models/Native_Multimodal_Architectures.md) — 从拼接式到原生多模态的架构演进深度解析
-- [Long Context Models 2026 (长上下文模型)](../LLM_Architectures/Long_Context_Models_2026.md) — 万级到百万级 token 处理技术的全面分析
-- [Multimodal Architectures 2026](../Multimodal_Models/Multimodal_Architectures_2026.md) — 多模态模型的最新架构进展
+- [Native Multimodal Architectures (原生多模态架构)](../10_Multimodal_Models/Native_Multimodal_Architectures.md) — 从拼接式到原生多模态的架构演进深度解析
+- [Long Context Models 2026 (长上下文模型)](../05_LLM_Architectures/Long_Context_Models_2026.md) — 万级到百万级 token 处理技术的全面分析
+- [Multimodal Architectures 2026](../10_Multimodal_Models/Multimodal_Architectures_2026.md) — 多模态模型的最新架构进展
 
 ### 推理模型
 
-- [Reasoning Models 2026 (推理模型)](../Reasoning_Models/Reasoning_Models_for_dummy.md) — 推理模型的基础概念和核心原理
-- [o1 Class Reasoning Models](../Reasoning_Models/o1_Class_Reasoning_Models.md) — OpenAI o1/o3 类推理模型分析
-- [DeepSeek-R1 Technical Analysis](../Reasoning_Models/DeepSeek_R1_Technical_Analysis.md) — GRPO 训练和自进化机制详细分析
+- [Reasoning Models 2026 (推理模型)](../09_Reasoning_Models/Reasoning_Models_for_dummy.md) — 推理模型的基础概念和核心原理
+- [o1 Class Reasoning Models](../09_Reasoning_Models/o1_Class_Reasoning_Models.md) — OpenAI o1/o3 类推理模型分析
+- [DeepSeek-R1 Technical Analysis](../09_Reasoning_Models/DeepSeek_R1_Technical_Analysis.md) — GRPO 训练和自进化机制详细分析
 
 ### 全球 LLM 生态
 
-- [DeepSeek Deep Dive (深度求索技术深度解析)](../Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive.md) — MLA、MoE、GRPO 等核心技术创新
-- [Qwen Deep Dive (通义千问技术深度解析)](../Chinese_LLM_Ecosystem/Qwen_Deep_Dive.md) — 阿里 Qwen 系列全面分析
+- [DeepSeek Deep Dive (深度求索技术深度解析)](../15_Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive.md) — MLA、MoE、GRPO 等核心技术创新
+- [Qwen Deep Dive (通义千问技术深度解析)](../15_Chinese_LLM_Ecosystem/Qwen_Deep_Dive.md) — 阿里 Qwen 系列全面分析
 
 ---
 

@@ -600,7 +600,7 @@ Tanh(拉伸版Sigmoid):
 ### 📚 推荐阅读顺序:
 
 1. **本文档** (你在这里!) - 建立基础概念
-2. **[训练优化小白版](../Optimization/Optimization_for_dummy.md)** - 学习怎么让训练更快更好
+2. **[训练优化小白版](../03_Optimization/Optimization_for_dummy.md)** - 学习怎么让训练更快更好
 3. **[原版文档](./Neural_Network_Core.md)** - 看数学公式和深入原理(有基础后再看)
 
 ### 🔗 相关主题:
@@ -686,7 +686,7 @@ Tanh(拉伸版Sigmoid):
 
 **恭喜你完成了神经网络核心的学习!** 🎉
 
-下一步: 👉 [训练优化小白版](../Optimization/Optimization_for_dummy.md) - 学习让训练更快更好的技巧!
+下一步: 👉 [训练优化小白版](../03_Optimization/Optimization_for_dummy.md) - 学习让训练更快更好的技巧!
 
 ---
 

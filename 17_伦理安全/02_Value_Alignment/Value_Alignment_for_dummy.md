@@ -729,7 +729,7 @@ Anthropic 的 Claude:
 
 ### 📄 进阶阅读
 - [价值对齐(完整版)](./Value_Alignment.md) - 技术细节和算法原理
-- [AI 安全与红队 - 小白版](../AI_Safety_RedTeaming/AI_Safety_RedTeaming_for_dummy.md) - 对齐的验证
+- [AI 安全与红队 - 小白版](../04_AI_Safety_RedTeaming/AI_Safety_RedTeaming_for_dummy.md) - 对齐的验证
 - [强化学习基础 - 小白版](06_强化学习/01_RL_Foundations/RL_Foundations_for_dummy.md) - RLHF 的 RL 基础
 
 ### 🛠️ 动手实践

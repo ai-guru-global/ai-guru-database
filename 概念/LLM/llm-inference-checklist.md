@@ -199,4 +199,4 @@ LLM 推理服务上线前，需要从**解码效果**、**性能**、**稳定性
 - [[概念/LLM/llm-inference-engine|LLM 推理引擎]]
 - [[概念/LLM/llm-production-deployment|LLM 生产部署]]
 - [[概念/LLM/llm-inference-cost-optimization|推理成本优化]]
-- [[10_部署推理/Inference_Engines|推理引擎专题]]
+- [[10_部署推理/02_Inference_Engines|推理引擎专题]]

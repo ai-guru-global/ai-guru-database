@@ -8,7 +8,7 @@ sources: []
 
 # Robotics Embodied AI
 
-This page indexes the contents of `06_强化学习/Robotics_Embodied_AI`.
+This page indexes the contents of `06_强化学习/05_Robotics_Embodied_AI`.
 
 ## Files
 

@@ -287,9 +287,9 @@ AI导师 2025-2026:
 
 ## Related
 
-- [[../../14_RAG系统/RAG_Fundamentals|RAG 基础]] — 教育知识库构建
-- [[../../15_智能体/Agent_Foundations|Agent 基础]] — 个性化学习 Agent
-- [[../../05_大模型/LLM_Fundamentals|LLM 基础]] — 教育场景大模型应用
+- [[../../14_RAG系统/01_RAG_Fundamentals|RAG 基础]] — 教育知识库构建
+- [[../../15_智能体/01_Agent_Foundations|Agent 基础]] — 个性化学习 Agent
+- [[../../05_大模型/01_LLM_Fundamentals|LLM 基础]] — 教育场景大模型应用
 - [[../../08_模型评估/Human_Evaluation|人工评估]] — 教育效果评估方法
 - [[../../10_部署推理/Cost|推理成本]] — 教育普惠的成本优化
 

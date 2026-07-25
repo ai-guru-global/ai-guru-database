@@ -10,7 +10,7 @@ relationships:
   - target: "概念/bayesian-methods"
     type: related_to
 sources:
-  - 02_机器学习/Causal_Inference
+  - 02_机器学习/07_Causal_Inference
 summary: "因果推断超越相关性分析，回答「如果干预X，Y会怎样变化」的因果问题。核心工具包括因果图(DAG)、do-演算、工具变量、倾向评分匹配和反事实推理。"
 provenance:
   extracted: 0.45

@@ -8,7 +8,7 @@ sources: []
 
 # Architecture Overview
 
-This page indexes the contents of `12_架构基建/Architecture_Overview`.
+This page indexes the contents of `12_架构基建/02_Architecture_Overview`.
 
 ## Files
 

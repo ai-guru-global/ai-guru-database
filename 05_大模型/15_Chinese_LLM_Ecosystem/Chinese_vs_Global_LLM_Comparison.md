@@ -3,11 +3,11 @@ title: "中国 vs 国际大模型全面对比 (Chinese vs Global LLM Comparison)
 category: -synthesis
 tags: ["synthesis", "chinese-llm", "global-llm", "comparison", "benchmark", "pricing", "moe", "open-source", "reasoning", "multimodal", "agent"]
 sources:
-  - "05_大模型/Chinese_LLM_Ecosystem"
-  - "05_大模型/Global_LLM_Ecosystem"
+  - "05_大模型/15_Chinese_LLM_Ecosystem"
+  - "05_大模型/14_Global_LLM_Ecosystem"
   - "05_大模型/15_Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix"
-  - "05_大模型/LLM_Architectures"
-  - "05_大模型/Reasoning_Models"
+  - "05_大模型/05_LLM_Architectures"
+  - "05_大模型/09_Reasoning_Models"
 summary: "横切合成文档：从技术路线、模型规模、Benchmark、定价、上下文、开源、推理、多模态、Agent、训练成本、安全对齐、生态系统 12 个维度，全面对比中国 15 家与国际 5 大巨头的大模型生态。"
 created: 2026-06-15
 updated: 2026-06-15

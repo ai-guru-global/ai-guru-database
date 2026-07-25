@@ -423,14 +423,14 @@ MoE = 虽然有很多"专家"(参数),但每次只用一部分,省计算量!
 ### 📚 推荐学习路径
 
 1. **本文 (你现在在这)**: 理解各种 LLM 的区别
-2. **[微调技术 (小白版)](../Fine_tuning_Techniques/Fine_tuning_Techniques_for_dummy.md)**: 学习如何定制 LLM
-3. **[提示词工程 (小白版)](../Prompt_Engineering/Prompt_Engineering_for_dummy.md)**: 学会"调教" LLM
+2. **[微调技术 (小白版)](../07_Fine_tuning_Techniques/Fine_tuning_Techniques_for_dummy.md)**: 学习如何定制 LLM
+3. **[提示词工程 (小白版)](../08_Prompt_Engineering/Prompt_Engineering_for_dummy.md)**: 学会"调教" LLM
 4. **[原版技术文档](./LLM_Architectures.md)**: 深入数学公式和架构细节
 
 ### 🔗 相关内容
 
-- **前置知识**: [Transformer 革命 (小白版)](../Transformer_Revolution/Transformer_Revolution_for_dummy.md)
-- **实战技能**: [提示词工程 (小白版)](../Prompt_Engineering/Prompt_Engineering_for_dummy.md)
+- **前置知识**: [Transformer 革命 (小白版)](../04_Transformer_Revolution/Transformer_Revolution_for_dummy.md)
+- **实战技能**: [提示词工程 (小白版)](../08_Prompt_Engineering/Prompt_Engineering_for_dummy.md)
 - **进阶主题**: [RAG 系统 (小白版)](14_RAG系统/01_RAG_Fundamentals/RAG_Systems_for_dummy.md)
 
 ---

@@ -25,7 +25,7 @@ AI 系统的底层是数值计算。本模块覆盖浮点运算、稀疏矩阵�
 
 ## 前置知识
 
-- **必修**: [线性代数](../Linear_Algebra/Linear_Algebra.md)（矩阵运算基础）
+- **必修**: [线性代数](../02_Linear_Algebra/Linear_Algebra.md)（矩阵运算基础）
 - **必修**: [微积分与优化](01_数学基础/Calculus_Optimization.md)（梯度计算）
 - **推荐**: [GPU 编程](../GPU_Programming/)（硬件浮点实现）
 

@@ -17,7 +17,7 @@ sources: []
 
 > **一句话理解**: kagent 是 CNCF 沙箱级的「在 Kubernetes 里声明式运行 AI Agent」的框架——把 Agent 变成 K8s CRD(配模型+工具+指令),由控制器跑 Agent 循环,天生支持 GitOps/RBAC/多租户,专为 DevOps 自动化设计。
 
-> 📐 **概念方法论**: kagent 解决的是「把 AI Agent 从应用代码里搬到 Kubernetes 控制平面」——它不提供"现成的 SRE 助手",而是给你一组 CRD（`Agent`/`Tool`/`Model`/`Binding`）让你**声明式定义自己的平台 Agent**,再由 controller 调起 Autogen 运行时跑 plan→act→observe 循环。理解它的前提是先理解 Agent 在生产里跑起来的全链路（见 [[15_智能体/index]] 的 Agent 生产部署），以及它和"诊断型"工具的差异——K8sGPT 是"你问我答"的单轮诊断器（见 [[CNCF_Cloud_Native_AI/K8sGPT_Deep_Dive]]），而 kagent 是"你给我工具和指令、我自主多步执行"的可编程 Agent 框架。
+> 📐 **概念方法论**: kagent 解决的是「把 AI Agent 从应用代码里搬到 Kubernetes 控制平面」——它不提供"现成的 SRE 助手",而是给你一组 CRD（`Agent`/`Tool`/`Model`/`Binding`）让你**声明式定义自己的平台 Agent**,再由 controller 调起 Autogen 运行时跑 plan→act→observe 循环。理解它的前提是先理解 Agent 在生产里跑起来的全链路（见 [[15_智能体/index]] 的 Agent 生产部署），以及它和"诊断型"工具的差异——K8sGPT 是"你问我答"的单轮诊断器（见 [[05_CNCF_Cloud_Native_AI/K8sGPT_Deep_Dive]]），而 kagent 是"你给我工具和指令、我自主多步执行"的可编程 Agent 框架。
 
 ---
 
@@ -675,8 +675,8 @@ A: v1.0（2025）后 API 趋稳，但仍处 CNCF Sandbox，schema 可能演进�
 
 ## Related
 
-- [[CNCF_Cloud_Native_AI/README]] — CNCF 云原生 AI 项目总览
-- [[CNCF_Cloud_Native_AI/K8sGPT_Deep_Dive]] — 单轮诊断型 SRE 助手（与 kagent 多步执行型互补）
-- [[CNCF_Cloud_Native_AI/HolmesGPT_Deep_Dive]] — 另一诊断型工具，定位参考
+- [[05_CNCF_Cloud_Native_AI/README]] — CNCF 云原生 AI 项目总览
+- [[05_CNCF_Cloud_Native_AI/K8sGPT_Deep_Dive]] — 单轮诊断型 SRE 助手（与 kagent 多步执行型互补）
+- [[05_CNCF_Cloud_Native_AI/HolmesGPT_Deep_Dive]] — 另一诊断型工具，定位参考
 - [[15_智能体/index]] — Agent 生产部署的完整方法论
 - [[11_模型运维/08_Observability/LLM_Observability]] — LLM/Agent 可观测体系（token、成本、轨迹追踪）

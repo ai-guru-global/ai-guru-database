@@ -60,8 +60,8 @@ sources: []
 
 ## 相关概念
 
-- [[05_大模型/Chinese_LLM_Ecosystem|中国 LLM 生态]]
-- [[05_大模型/LLM_Products|LLM 产品]]
+- [[05_大模型/15_Chinese_LLM_Ecosystem|中国 LLM 生态]]
+- [[05_大模型/13_LLM_Products|LLM 产品]]
 - [[概念/llm-architectures|LLM 架构]]
 
 ## 统计
@@ -165,9 +165,9 @@ sources: []
 
 ## 相关域
 
-- [[05_大模型/Chinese_LLM_Ecosystem|中国 LLM 生态]] — 国内大模型厂商
-- [[05_大模型/LLM_Architectures|LLM 架构]] — 技术架构详解
-- [[05_大模型/LLM_Products|LLM 产品]] — 产品概览
+- [[05_大模型/15_Chinese_LLM_Ecosystem|中国 LLM 生态]] — 国内大模型厂商
+- [[05_大模型/05_LLM_Architectures|LLM 架构]] — 技术架构详解
+- [[05_大模型/13_LLM_Products|LLM 产品]] — 产品概览
 - [[10_部署推理/README|部署推理]] — 模型部署技术
 
 ---

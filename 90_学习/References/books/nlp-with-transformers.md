@@ -66,7 +66,7 @@ aliases:
 在知识库的书籍谱系中：
 - 上承 [[hands-on-ml-geron]]（ML/DL 基础）
 - 平行 [[hands-on-llms-alammar]]（图解式概念）、[[build-llm-from-scratch-raschka]]（底层实现）
-- 是 [[05_大模型/LLM_Fundamentals]] 的**应用层配套**
+- 是 [[05_大模型/01_LLM_Fundamentals]] 的**应用层配套**
 
 ## 核心内容
 
@@ -348,12 +348,12 @@ Student（小模型，如 DistilBERT）
 
 | 本书章节 | 本书概念 | 知识库主题 | 关联说明 |
 |----------|----------|------------|----------|
-| Ch 1 Transformer 概览 | 三大架构族 | [[05_大模型/LLM_Fundamentals]] | LLM 基础 |
+| Ch 1 Transformer 概览 | 三大架构族 | [[05_大模型/01_LLM_Fundamentals]] | LLM 基础 |
 | Ch 2 分类 | BERT 微调 | [[05_大模型/07_Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs]] | 微调实战 |
 | Ch 3 剖析 | Attention 实现 | [[03_深度学习/]] | 架构原理 |
 | Ch 4 NER | 序列标注 | [[02_机器学习/]] | 标注任务 |
 | Ch 5 生成 | 采样策略 | [[05_大模型/08_Prompt_Engineering/Prompt_Engineering]] | 解码控制 |
-| Ch 6 摘要/翻译 | Seq2Seq | [[05_大模型/LLM_Fundamentals]] | 生成任务 |
+| Ch 6 摘要/翻译 | Seq2Seq | [[05_大模型/01_LLM_Fundamentals]] | 生成任务 |
 | Ch 7 问答 | 抽取式 QA | [[14_RAG系统/RAG_Systems]] | QA 衔接 RAG |
 | Ch 8 高效化 | 蒸馏/量化 | [[10_部署推理/]] | 模型压缩 |
 | Ch 9 少样本 | 数据增强 | [[02_机器学习/]] | 数据策略 |
@@ -436,7 +436,7 @@ Student（小模型，如 DistilBERT）
 - [[90_学习/References/Papers/Attention_Is_All_You_Need_Reading|Attention 论文导读]] — 架构源头
 - [[90_学习/References/Papers/BERT_Reading|BERT 论文导读]] — 编码器代表
 - [[90_学习/References/Papers/GPT3_Reading|GPT-3 论文导读]] — 解码器代表
-- [[05_大模型/LLM_Fundamentals]] — 知识库 LLM 基础
+- [[05_大模型/01_LLM_Fundamentals]] — 知识库 LLM 基础
 - [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图 2026]]
 
-> **关联**: → [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]] | [[05_大模型/LLM_Fundamentals]] | [[03_深度学习/]] | [[10_部署推理/]] | [[90_学习/References/Papers/]]
+> **关联**: → [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]] | [[05_大模型/01_LLM_Fundamentals]] | [[03_深度学习/]] | [[10_部署推理/]] | [[90_学习/References/Papers/]]

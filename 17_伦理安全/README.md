@@ -67,16 +67,16 @@ sources: []
 | 隐私保护 AI (Privacy-Preserving AI) | 专业 | 差分隐私、联邦学习、同态加密、成员推断攻击防御 | [Privacy_Preserving_AI.md](17_伦理安全/10_Privacy_Preserving_AI/Privacy_Preserving_AI.md) |
 | 深度伪造检测 (Deepfake Detection) | 专业 | 深度伪造检测技术、音视频伪造识别、内容真实性验证 | [Deepfake_Security.md](17_伦理安全/09_Deepfake_Security/Deepfake_Security.md) |
 | AI 供应链安全 (Supply Chain Security) | 专业 | 数据投毒防御、模型后门检测、依赖安全、SBOM 管理 | [AI_Supply_Chain_Security.md](17_伦理安全/08_AI_Supply_Chain_Security/AI_Supply_Chain_Security.md) |
-| **联邦学习 (Federated Learning)** | **专业** | **FedAvg/FedProx/SCAFFOLD、差分隐私+安全聚合、联邦 LLM 微调** | **[Federated_Learning/](./Federated_Learning/)** |
+| **联邦学习 (Federated Learning)** | **专业** | **FedAvg/FedProx/SCAFFOLD、差分隐私+安全聚合、联邦 LLM 微调** | **[Federated_Learning/](./11_Federated_Learning/)** |
 
 ### 生产实践层
 
 | 主题 | 难度 | 描述 | 文档链接 |
 |------|------|------|---------|
 | AI 安全 2026 (AI Security 2026) | 实战 | OWASP LLM Top 10 + ASI Agentic AI 安全框架，生产级防御 | [AI_Security_2026.md](17_伦理安全/07_AI_Security_2026/AI_Security_2026.md) |
-| K8s 策略引擎 — OPA/Gatekeeper | 实战 | 通用策略即代码：Rgo 语言、K8s 准入控制、API 授权 | [OPA_Deep_Dive.md](./AI_Security_2026/OPA_Deep_Dive.md) |
-| K8s 原生策略 — Kyverno | 实战 | YAML 策略引擎：验证、变更、生成、镜像签名 | [Kyverno_Deep_Dive.md](./AI_Security_2026/Kyverno_Deep_Dive.md) |
-| 运行时安全 — Falco | 实战 | 容器系统调用监控：逃逸检测、敏感文件访问、异常网络 | [Falco_Deep_Dive.md](./AI_Security_2026/Falco_Deep_Dive.md) |
+| K8s 策略引擎 — OPA/Gatekeeper | 实战 | 通用策略即代码：Rgo 语言、K8s 准入控制、API 授权 | [OPA_Deep_Dive.md](./07_AI_Security_2026/OPA_Deep_Dive.md) |
+| K8s 原生策略 — Kyverno | 实战 | YAML 策略引擎：验证、变更、生成、镜像签名 | [Kyverno_Deep_Dive.md](./07_AI_Security_2026/Kyverno_Deep_Dive.md) |
+| 运行时安全 — Falco | 实战 | 容器系统调用监控：逃逸检测、敏感文件访问、异常网络 | [Falco_Deep_Dive.md](./07_AI_Security_2026/Falco_Deep_Dive.md) |
 | AI 监管工程化 2026 | 实战 | 欧盟 AI 法案、监管即代码、合规生命周期管理、可审计性 | [AI_Regulatory_Engineering_2026.md](17_伦理安全/03_Governance/AI_Regulatory_Engineering_2026.md) |
 | AI 安全评测框架 (Safety Evaluation) | 实战 | 毒性/偏见/幻觉评测、对抗鲁棒性、红队测试方法论与基准 | [Safety_Evaluation_Framework.md](17_伦理安全/Safety_Evaluation_Framework.md) |
 

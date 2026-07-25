@@ -120,7 +120,7 @@ MiniMax 是中国 AI 领域 "六小龙" (AI 六小龙) 成员之一。这六家�
 
 MiniMax 的差异化优势在于：**唯一同时拥有底层注意力机制创新 (Lightning Attention) + 全模态产品线 (文本/视频/语音/音乐) 的公司**。
 
-> **📎 相关阅读**: [长上下文模型 2026](../LLM_Architectures/Long_Context_Models_2026.md) 中对各大长上下文方案进行了横向对比，MiniMax 的 Lightning Attention 是最具创新性的方案之一。
+> **📎 相关阅读**: [长上下文模型 2026](../05_LLM_Architectures/Long_Context_Models_2026.md) 中对各大长上下文方案进行了横向对比，MiniMax 的 Lightning Attention 是最具创新性的方案之一。
 
 ---
 
@@ -212,7 +212,7 @@ MiniMax 模型家族:
 
 ## 3. Lightning Attention 深度解析
 
-> **📎 前置知识**: [LLM 架构详解](../LLM_Architectures/LLM_Architectures.md) 中对标准 Self-Attention 和各类注意力变体有详细讲解。
+> **📎 前置知识**: [LLM 架构详解](../05_LLM_Architectures/LLM_Architectures.md) 中对标准 Self-Attention 和各类注意力变体有详细讲解。
 
 ### 3.1 为什么需要 Lightning Attention?
 
@@ -827,7 +827,7 @@ MSA (MiniMax Sparse Attention):
   • 算子已单独开源: https://github.com/MiniMax-AI/MSA
 ```
 
-> **📎 关联阅读**: MSA 与 Lightning Attention、DeepSeek MLA / DSA、GLM IndexShare 同属 2026 年长上下文注意力的主流稀疏化路线，详见 [[概念/long-context-models]] 与 [长上下文模型 2026](../LLM_Architectures/Long_Context_Models_2026.md) 的横向对比。
+> **📎 关联阅读**: MSA 与 Lightning Attention、DeepSeek MLA / DSA、GLM IndexShare 同属 2026 年长上下文注意力的主流稀疏化路线，详见 [[概念/long-context-models]] 与 [长上下文模型 2026](../05_LLM_Architectures/Long_Context_Models_2026.md) 的横向对比。
 
 #### 5.6.4 三种思考模式 (thinking)
 
@@ -1562,9 +1562,9 @@ MiniMax 给我们的技术启示:
 
 ### 10.4 延伸阅读
 
-- [长上下文模型 2026: 万级 Token 处理](../LLM_Architectures/Long_Context_Models_2026.md) — 各大长上下文方案的全面对比，包括 Lightning Attention 在长上下文生态中的定位
-- [LLM 架构详解](../LLM_Architectures/LLM_Architectures.md) — Transformer 架构基础、MoE 路由机制、注意力变体的系统性讲解
-- [多模态架构 2026](../Multimodal_Models/Multimodal_Architectures_2026.md) — 多模态模型架构范式演进，视觉-语言融合技术详解
+- [长上下文模型 2026: 万级 Token 处理](../05_LLM_Architectures/Long_Context_Models_2026.md) — 各大长上下文方案的全面对比，包括 Lightning Attention 在长上下文生态中的定位
+- [LLM 架构详解](../05_LLM_Architectures/LLM_Architectures.md) — Transformer 架构基础、MoE 路由机制、注意力变体的系统性讲解
+- [多模态架构 2026](../10_Multimodal_Models/Multimodal_Architectures_2026.md) — 多模态模型架构范式演进，视觉-语言融合技术详解
 
 ---
 

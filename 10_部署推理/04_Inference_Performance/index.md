@@ -8,7 +8,7 @@ sources: []
 
 # Inference Performance
 
-This page indexes the contents of `10_部署推理/Inference_Performance`.
+This page indexes the contents of `10_部署推理/04_Inference_Performance`.
 
 ## Files
 

@@ -48,7 +48,7 @@ sources: []
 | 强化学习基础 (RL Foundations) | 入门 | MDP、贝尔曼方程、策略梯度、价值函数，RL 数学框架 | [RL_Foundations.md](06_强化学习/01_RL_Foundations/RL_Foundations.md) |
 | 深度强化学习 (Deep RL) | 进阶 | DQN、PPO、SAC、离线 RL，结合神经网络的 RL 算法 | [Deep_RL.md](06_强化学习/02_Deep_RL/Deep_RL.md) |
 | **多智能体系统 (Multi-Agent Systems)** | **进阶** | **合作/竞争/混合场景、CTDE、QMIX、MAPPO、涌现行为** | **[Multi_Agent_Systems.md](./Multi_Agent_Systems.md)** |
-| 具身智能 (Embodied AI) | 前沿 | 机器人基础模型、VLA架构、Sim-to-Real、人形机器人产业 | [Embodied_AI_2026.md](./Robotics_Embodied_AI/Embodied_AI_2026.md) |
+| 具身智能 (Embodied AI) | 前沿 | 机器人基础模型、VLA架构、Sim-to-Real、人形机器人产业 | [Embodied_AI_2026.md](./05_Robotics_Embodied_AI/Embodied_AI_2026.md) |
 
 ### 深度解读 (Deep Dive)
 
@@ -62,8 +62,8 @@ sources: []
 ### 小白版入门 (for_dummy)
 
 - [强化学习与智能体 - 小白版](README_for_dummy.md) — 零基础入门
-- [RL 基础 - 小白版](./RL_Foundations/RL_Foundations_for_dummy.md)
-- [深度强化学习 - 小白版](./Deep_RL/Deep_RL_for_dummy.md)
+- [RL 基础 - 小白版](./01_RL_Foundations/RL_Foundations_for_dummy.md)
+- [深度强化学习 - 小白版](./02_Deep_RL/Deep_RL_for_dummy.md)
 
 ## 前置知识 (Prerequisites)
 

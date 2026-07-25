@@ -129,18 +129,18 @@ Starmer 的影响力在于他填补了 AI 教育金字塔的"中间层"——3Bl
 
 | 系列 | 对应知识库章节 | 学习价值 |
 |------|---------------|---------|
-| Statistics Fundamentals | [[01_数学基础/Probability_Statistics]] | p-value/贝叶斯/假设检验 |
-| PCA / SVD | [[01_数学基础/Linear_Algebra]] | 降维与特征分解 |
+| Statistics Fundamentals | [[01_数学基础/03_Probability_Statistics]] | p-value/贝叶斯/假设检验 |
+| PCA / SVD | [[01_数学基础/02_Linear_Algebra]] | 降维与特征分解 |
 | ML Algorithms | [[02_机器学习/README|机器学习]] | SVM/RF/XGBoost 直觉理解 |
-| Neural Networks | [[03_深度学习/Neural_Network_Core]] | 反向传播与梯度 |
-| Transformers/Attention | [[05_大模型/Transformer_Revolution]] | 注意力机制拆解 |
+| Neural Networks | [[03_深度学习/02_Neural_Network_Core]] | 反向传播与梯度 |
+| Transformers/Attention | [[05_大模型/04_Transformer_Revolution]] | 注意力机制拆解 |
 
 ---
 
 ## 交叉引用 (Cross-References)
 
 - [[19_业界观点/Josh_Starmer/youtube_channel]] — StatQuest 必看系列
-- [[01_数学基础/Probability_Statistics]] — 概率统计知识库
+- [[01_数学基础/03_Probability_Statistics]] — 概率统计知识库
 - [[02_机器学习/README|机器学习]] — 机器学习知识库
 - [[90_学习/Courses/other/statquest.md]] — StatQuest 课程笔记
 - [[19_业界观点/3Blue1Brown/about]] — 同为 AI 数学可视化教育的前驱者

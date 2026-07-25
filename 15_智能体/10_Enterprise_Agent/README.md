@@ -45,10 +45,10 @@ sources: []
 
 ## 关联目录
 
-- [Agent Harness](../Agent_Harness/) -- Harness 工程架构
-- [Agent Platforms](../Agent_Platforms/) -- Agent 开发平台
-- [Memory Infrastructure](../Memory_Infrastructure/) -- 记忆与 RAG 基础设施
-- [Agent_Evaluation](../Agent_Evaluation/) -- Agent 评估体系
+- [Agent Harness](../04_Agent_Harness/) -- Harness 工程架构
+- [Agent Platforms](../09_Agent_Platforms/) -- Agent 开发平台
+- [Memory Infrastructure](../06_Memory_Infrastructure/) -- 记忆与 RAG 基础设施
+- [Agent_Evaluation](../07_Agent_Evaluation/) -- Agent 评估体系
 - [AI运维](../../13_运维/) -- AI 系统运维
 
 ---

@@ -425,8 +425,8 @@ flowchart TB
 
 - [行业应用完整版](18_行业应用/01_Industry_Overview/AI_Applications_Industry.md) —— 深入各行业案例
 - [行业应用 - 小白版](./AI_Applications_Industry_for_dummy.md) —— 零基础入门
-- [医疗 AI](Healthcare/) —— 医疗行业深度
-- [金融 AI](Finance/) —— 金融行业深度
+- [医疗 AI](03_Healthcare/) —— 医疗行业深度
+- [金融 AI](04_Finance/) —— 金融行业深度
 - [自动驾驶](Autonomous_Driving/) —— 自动驾驶深度
 - [AI 伦理安全速成指南](17_伦理安全/01_Ethics_Fundamentals/Ethics-in-nutshell.md) —— 合规基础
 

@@ -491,7 +491,7 @@ sources: []
 
 #### P0 — 生产环境必备
 
-- Agent 评估方法论与工具：当前仅在 `in-nutshell` 中提及 Agent 指标，缺少系统性的 Agent 任务成功率、工具选择准确率、轨迹评估、Human-in-the-loop 评估实践（虽然 `15_智能体/Agent_Evaluation` 存在，但 `AI测试` 作为测试主章应独立成章）。
+- Agent 评估方法论与工具：当前仅在 `in-nutshell` 中提及 Agent 指标，缺少系统性的 Agent 任务成功率、工具选择准确率、轨迹评估、Human-in-the-loop 评估实践（虽然 `15_智能体/07_Agent_Evaluation` 存在，但 `AI测试` 作为测试主章应独立成章）。
 - LLM-as-Judge 的偏见控制与校准：现有文档多处使用 Judge LLM，但缺少位置偏差、自我偏好、verbosity bias 的识别与缓解方法。
 - 测试成本优化与 CI 预算管理：LLM 测试调用费用高昂，缺少按影响面选择测试子集、缓存策略、本地小模型预筛选、成本上限控制。
 - A/B 测试与影子测试（Shadow Testing）：生产环境模型切换缺少离线/在线 A/B、灰度、影子流量对比方法论。

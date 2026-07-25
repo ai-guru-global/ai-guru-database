@@ -112,7 +112,7 @@ aliases:
 | 复杂架构设计 | 中 | 需要人工主导 |
 | 安全关键代码 | 差 | 必须人工审查 |
 
-> **关联**: -> [[16_编程/README|AI 编程]] | [[16_编程/Tools|编程工具]] | [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[16_编程/README|AI 编程]] | [[16_编程/05_Tools|编程工具]] | [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
 
 
 ## 核心知识体系

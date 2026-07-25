@@ -8,7 +8,7 @@ sources: []
 
 # Vector Databases
 
-This page indexes the contents of `14_RAG系统/Vector_Databases`.
+This page indexes the contents of `14_RAG系统/03_Vector_Databases`.
 
 ## Files
 

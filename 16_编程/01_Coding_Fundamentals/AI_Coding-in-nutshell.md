@@ -527,17 +527,17 @@ flowchart TD
 
 | 主题 | 文档 | 说明 |
 |------|------|------|
-| AI 编程理论基础 | [AI_Coding_Theory.md](.././Theory/AI_Coding_Theory.md) | 编程范式演进、LLM 与代码生成原理 |
-| 工具全景对比 | [AI_Coding_Assistants_2026.md](.././Tools/AI_Coding_Assistants_2026.md) | 完整工具评测与选型决策树 |
-| Vibe Coding 入门 | [Vibe_Coding_Getting_Started.md](.././Practice/Vibe_Coding_Getting_Started.md) | 5 分钟入门、4 步安全法 |
-| 提示词模板库 | [Vibe_Coding_Prompt_Templates.md](.././Practice/Vibe_Coding_Prompt_Templates.md) | STAR 框架、8 大场景模板 |
-| Agentic Coding 方法论 | [Agentic_Coding_Methodology.md](.././Methodology/Agentic_Coding_Methodology.md) | 多 Agent 协作架构与编排 |
-| 生产实践 | [Vibe_Coding_Production_Practices.md](.././Methodology/Vibe_Coding_Production_Practices.md) | 安全工程、质量监控、技术债管理 |
+| AI 编程理论基础 | [AI_Coding_Theory.md](.././02_Theory/AI_Coding_Theory.md) | 编程范式演进、LLM 与代码生成原理 |
+| 工具全景对比 | [AI_Coding_Assistants_2026.md](.././05_Tools/AI_Coding_Assistants_2026.md) | 完整工具评测与选型决策树 |
+| Vibe Coding 入门 | [Vibe_Coding_Getting_Started.md](.././04_Practice/Vibe_Coding_Getting_Started.md) | 5 分钟入门、4 步安全法 |
+| 提示词模板库 | [Vibe_Coding_Prompt_Templates.md](.././04_Practice/Vibe_Coding_Prompt_Templates.md) | STAR 框架、8 大场景模板 |
+| Agentic Coding 方法论 | [Agentic_Coding_Methodology.md](.././03_Methodology/Agentic_Coding_Methodology.md) | 多 Agent 协作架构与编排 |
+| 生产实践 | [Vibe_Coding_Production_Practices.md](.././03_Methodology/Vibe_Coding_Production_Practices.md) | 安全工程、质量监控、技术债管理 |
 | Prompt Engineering 速览 | [05_大模型/08_Prompt_Engineering/Prompt-Engineering-in-nutshell.md](05_大模型/08_Prompt_Engineering/Prompt-Engineering-in-nutshell.md) | 通用提示工程方法论 |
 | AI Agent 速览 | [../06_强化学习/AI_Agents/Agent-in-nutshell.md](../../15_智能体/01_Agent_Foundations/Agent-in-nutshell.md) | Agent 架构与能力概述 |
 | RAG 系统速览 | [../../14_RAG系统/01_RAG_Fundamentals/RAG-in-nutshell.md](../../14_RAG系统/01_RAG_Fundamentals/RAG-in-nutshell.md) | 检索增强生成，AI 编程中的文档检索基础 |
-| Hermes Agent 指南 | [./Tools/Hermes_Agent_2026.md](.././Tools/Hermes_Agent_2026.md) | 17+ Provider 全平台开源 Agent |
-| Qoder 使用指南 | [./Tools/Qoder_Guide.md](.././Tools/Qoder_Guide.md) | Qoder / QoderWork / QoderWake 详解 |
+| Hermes Agent 指南 | [./Tools/Hermes_Agent_2026.md](.././05_Tools/Hermes_Agent_2026.md) | 17+ Provider 全平台开源 Agent |
+| Qoder 使用指南 | [./Tools/Qoder_Guide.md](.././05_Tools/Qoder_Guide.md) | Qoder / QoderWork / QoderWake 详解 |
 
 ---
 

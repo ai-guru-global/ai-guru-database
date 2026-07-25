@@ -8,7 +8,7 @@ sources: []
 
 # Caching
 
-This page indexes the contents of `10_部署推理/Caching`.
+This page indexes the contents of `10_部署推理/06_Caching`.
 
 ## Files
 

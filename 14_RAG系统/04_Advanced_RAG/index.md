@@ -8,7 +8,7 @@ sources: []
 
 # Advanced RAG
 
-This page indexes the contents of `14_RAG系统/Advanced_RAG`.
+This page indexes the contents of `14_RAG系统/04_Advanced_RAG`.
 
 ## Files
 

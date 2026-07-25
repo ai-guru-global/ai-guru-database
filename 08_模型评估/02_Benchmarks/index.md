@@ -8,7 +8,7 @@ sources: []
 
 # Benchmarks
 
-This page indexes the contents of `08_模型评估/Benchmarks`.
+This page indexes the contents of `08_模型评估/02_Benchmarks`.
 
 ## Files
 

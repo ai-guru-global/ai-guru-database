@@ -8,7 +8,7 @@ sources: []
 
 # AI Stack
 
-This page indexes the contents of `12_架构基建/AI_Stack`.
+This page indexes the contents of `12_架构基建/03_AI_Stack`.
 
 ## Files
 

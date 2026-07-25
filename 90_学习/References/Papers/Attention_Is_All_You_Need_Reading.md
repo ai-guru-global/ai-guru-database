@@ -330,7 +330,7 @@ class MultiHeadAttention(nn.Module):
 ## 与知识库其他内容的连接
 
 - [[90_学习/concepts/stage2_core_tech|Transformer]] — 概念分阶中的核心概念
-- [[05_大模型/Transformer|Transformer 详解]] — 知识库的架构章节
+- [[05_大模型/03_Transformer|Transformer 详解]] — 知识库的架构章节
 - [[90_学习/References/Papers/BERT_Reading|BERT 论文]] — Encoder 方向的延伸
 - [[90_学习/References/Papers/GPT3_Reading|GPT-3 论文]] — Decoder 方向的延伸
 - [[90_学习/References/books/build-llm-from-scratch-raschka|Raschka 实现 LLM]] — 从零实现 Transformer
@@ -364,8 +364,8 @@ class MultiHeadAttention(nn.Module):
 - [[90_学习/References/books/build-llm-from-scratch-raschka|Build LLM From Scratch]] — 逐行实现 Transformer
 - [[90_学习/References/books/nlp-with-transformers|NLP with Transformers]] — HF 生态应用
 - [[90_学习/References/books/hands-on-llms-alammar|Hands-On LLMs]] — 图解 Transformer 内部
-- [[05_大模型/LLM_Fundamentals]] — 知识库 LLM 基础
+- [[05_大模型/01_LLM_Fundamentals]] — 知识库 LLM 基础
 - [[03_深度学习/]] — 深度学习章节
 - [[90_学习/concepts/stage2_core_tech|Stage 2: 核心技术]] — Transformer 在学习路径中的位置
 
-> **关联**: → [[90_学习/References/Papers/]] | [[90_学习/References/Papers/BERT_Reading|BERT]] | [[90_学习/References/Papers/GPT3_Reading|GPT-3]] | [[05_大模型/LLM_Fundamentals]] | [[90_学习/References/books/build-llm-from-scratch-raschka|从零实现]]
+> **关联**: → [[90_学习/References/Papers/]] | [[90_学习/References/Papers/BERT_Reading|BERT]] | [[90_学习/References/Papers/GPT3_Reading|GPT-3]] | [[05_大模型/01_LLM_Fundamentals]] | [[90_学习/References/books/build-llm-from-scratch-raschka|从零实现]]

@@ -658,7 +658,7 @@ AI在学习:
 - 🔗 AlphaGo 纪录片 - 理解深度 RL 的威力
 
 **相关主题**:
-- 🔙 [强化学习基础 - 小白版](../RL_Foundations/RL_Foundations_for_dummy.md) - 理解 Q-Learning 基础
+- 🔙 [强化学习基础 - 小白版](../01_RL_Foundations/RL_Foundations_for_dummy.md) - 理解 Q-Learning 基础
 - 🔙 [CNN - 小白版](04_计算机视觉/02_Image_Classification_Detection/Image_Classification_Detection_for_dummy.md) - DQN 的视觉编码器
 - 🔜 [AI智能体 - 小白版](../../15_智能体/01_Agent_Foundations/AI_Agents_for_dummy.md) - RL 的高级应用
 

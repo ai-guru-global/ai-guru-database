@@ -625,8 +625,8 @@ $$
 ## 7. 与其他主题的关联 (Connections)
 
 ### 前置知识
-- **[线性代数](../Linear_Algebra/Linear_Algebra.md)**: 矩阵运算的复杂度分析
-- **[概率论](../Probability_Statistics/Probability_Statistics.md)**: Beam Search 中的概率计算
+- **[线性代数](../02_Linear_Algebra/Linear_Algebra.md)**: 矩阵运算的复杂度分析
+- **[概率论](../03_Probability_Statistics/Probability_Statistics.md)**: Beam Search 中的概率计算
 
 ### 进阶推荐
 - **[神经网络核心](03_深度学习/02_Neural_Network_Core/Neural_Network_Core.md)**: 计算图与反向传播

@@ -8,7 +8,7 @@ relationships:
   - target: "概念/self-supervised-learning"
     type: builds_on
 sources:
-  - 05_大模型/LLM_Data_Engineering
+  - 05_大模型/06_LLM_Data_Engineering
 summary: "LLM 数据工程覆盖预训练数据收集清洗(去重/过滤/配比)、SFT数据构建(人工标注/自我指令/蒸馏)、RLHF偏好数据和合成数据生成的全链路。"
 provenance:
   extracted: 0.45

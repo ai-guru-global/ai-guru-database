@@ -1696,7 +1696,7 @@ flowchart TB
 
 - [[../RAG_Evaluation/RAG_Evaluation_Framework|RAG 评估框架完全指南]] — 评估是监控的基础，离线评估方法论
 - [[../RAG_Evaluation/index|RAG 评估目录]] — 评估相关文档导航
-- [[../Advanced_RAG/RAG_Advanced_2026|RAG高级实践 2026年完全指南]] — 高级 RAG 架构影响监控策略设计
-- [[../RAG_Fundamentals/RAG_Fundamentals|RAG 基础]] — 理解 RAG 基本流程是设计监控的前提
+- [[../04_Advanced_RAG/RAG_Advanced_2026|RAG高级实践 2026年完全指南]] — 高级 RAG 架构影响监控策略设计
+- [[../01_RAG_Fundamentals/RAG_Fundamentals|RAG 基础]] — 理解 RAG 基本流程是设计监控的前提
 - [[../08_模型评估/03_LLM_Evaluation/RAG_Evaluation_Deep_Dive|RAG评估深度解析]] — 深入的评估理论
 - [[index|RAG 监控目录]] — 本目录导航

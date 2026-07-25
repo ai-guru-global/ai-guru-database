@@ -325,4 +325,4 @@ z_4 → 控制面部特征
 - [[20_论文精读/08_Vision/index|视觉论文索引]] — 视觉论文主题导览
 - [[03_深度学习/04_Generative_Models/VAE_Deep_Dive|VAE 深度解析]] — VAE 技术详解
 - [[概念/Math/probability-statistics|概率统计]] — 变分推断的数学基础
-- [[概念/Vision/generative-vision-models|生成式视觉模型]] — 生成模型概念
+- [[概念/08_Vision/generative-vision-models|生成式视觉模型]] — 生成模型概念

@@ -123,9 +123,9 @@ Sanderson 的影响力是独特而深远的——他不是 AI 研究者，却深
 
 | 系列 | 对应知识库章节 | 学习价值 |
 |------|---------------|---------|
-| Linear Algebra | [[01_数学基础/Linear_Algebra]] | 理解向量/矩阵/特征分解 |
-| Neural Networks | [[03_深度学习/Neural_Network_Core]] | 直觉理解反向传播 |
-| Attention/Transformer | [[05_大模型/Transformer_Revolution]] | 可视化 Q/K/V 机制 |
+| Linear Algebra | [[01_数学基础/02_Linear_Algebra]] | 理解向量/矩阵/特征分解 |
+| Neural Networks | [[03_深度学习/02_Neural_Network_Core]] | 直觉理解反向传播 |
+| Attention/Transformer | [[05_大模型/04_Transformer_Revolution]] | 可视化 Q/K/V 机制 |
 | Calculus | [[01_数学基础/Math_Foundations]] | 梯度下降的数学直觉 |
 
 ---
@@ -133,8 +133,8 @@ Sanderson 的影响力是独特而深远的——他不是 AI 研究者，却深
 ## 交叉引用 (Cross-References)
 
 - [[19_业界观点/3Blue1Brown/youtube_channel]] — 3Blue1Brown 必看系列
-- [[01_数学基础/Linear_Algebra]] — 线性代数知识库
-- [[03_深度学习/Neural_Network_Core]] — 神经网络核心
+- [[01_数学基础/02_Linear_Algebra]] — 线性代数知识库
+- [[03_深度学习/02_Neural_Network_Core]] — 神经网络核心
 - [[90_学习/guides/ai_engineering_roadmap_2026]] — AI 工程学习路线
 - [[19_业界观点/Andrej_Karpathy/about]] — 底层 AI 技术教育的同行者
 - [[19_业界观点/Josh_Starmer/about]] — 统计学可视化的教育同侪

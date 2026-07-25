@@ -68,7 +68,7 @@ tier: supporting
 
 - [[概念/Safety/presidio]] — Presidio PII 检测 (共享: pii, privacy)
 - [[概念/Safety/ai-governance]] — AI 治理 (共享: governance, compliance)
-- [[17_伦理安全/Privacy_Preserving_AI]] — 隐私保护 AI 专题
+- [[17_伦理安全/10_Privacy_Preserving_AI]] — 隐私保护 AI 专题
 
 ## 核心知识框架
 

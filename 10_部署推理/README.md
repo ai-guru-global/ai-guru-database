@@ -29,7 +29,7 @@ sources: []
 | [SGLang Deep Dive](10_部署推理/02_Inference_Engines/SGLang_Deep_Dive.md) | 高性能推理框架：RadixAttention 前缀缓存、SRT、多 LoRA、结构化输出 | 追求极致性能 |
 | [vLLM Deep Dive](10_部署推理/02_Inference_Engines/vLLM_Deep_Dive.md) | PagedAttention 显存优化：UC Berkeley 生产级引擎 | 通用生产 |
 | [vLLM for Dummy](10_部署推理/02_Inference_Engines/vLLM_for_dummy.md) | vLLM 大白话解释：PagedAttention 与 KV Cache | 初学者快速入门 |
-| [vLLM + PagedAttention 架构链路图](./Inference_Engines/vLLM_PagedAttention_Architecture.md) | 一张图看懂 vLLM 为什么能服务更多请求、生成更快 | 架构师、初学者 |
+| [vLLM + PagedAttention 架构链路图](./02_Inference_Engines/vLLM_PagedAttention_Architecture.md) | 一张图看懂 vLLM 为什么能服务更多请求、生成更快 | 架构师、初学者 |
 | [LMDeploy Deep Dive](10_部署推理/02_Inference_Engines/LMDeploy_Deep_Dive.md) | 国产推理引擎：TurboMind/PyTorch 双后端、AWQ、国产芯片、多模态 | 中文场景 |
 | [LiteRT Deep Dive](10_部署推理/02_Inference_Engines/LiteRT_Deep_Dive.md) | 边缘 AI 推理：Android/iOS/嵌入式、Delegate 加速、端侧 LLM | 移动端部署 |
 | [llama.cpp Deep Dive](10_部署推理/02_Inference_Engines/llama_cpp_Deep_Dive.md) | 纯 C/C++ 本地推理：CPU/GPU 多后端、GGUF 量化、llamafile | 边缘/本地 |
@@ -57,7 +57,7 @@ sources: []
 
 | 文档 | 内容 | 适用读者 |
 |------|------|----------|
-| [推理性能专题首页](./Inference_Performance/README.md) | 专题导航与技术全景 | 性能工程师、架构师 |
+| [推理性能专题首页](./04_Inference_Performance/README.md) | 专题导航与技术全景 | 性能工程师、架构师 |
 | [推理性能基础](10_部署推理/04_Inference_Performance/Inference_Performance_Fundamentals.md) | TTFT/TPOT/吞吐指标、Roofline 瓶颈分析、优化决策树 | 所有从业者 |
 | [决定模型推理速度的要素（大白话版）](10_部署推理/04_Inference_Performance/Inference_Speed_Factors_for_dummy.md) | 用生活化语言解释影响推理速度的六大因素 | 初学者、产品经理 |
 | [推理性能术语大白话解释](10_部署推理/04_Inference_Performance/Inference_Terms_for_dummy.md) | MoE、MLA/GQA、FLOPS、Prefill、Decode、TTFT、量化、NVLink/IB、PD 分离 | 初学者 |
@@ -126,7 +126,7 @@ sources: []
 
 ## 关联目录
 
-- [12_架构基建/AI_Gateway](../12_架构基建/11_AI_Gateway/) -- AI 网关与路由
+- [12_架构基建/11_AI_Gateway](../12_架构基建/11_AI_Gateway/) -- AI 网关与路由
 - [RAG系统](../14_RAG系统/) -- RAG 应用场景
 - [Agent](../15_智能体/) -- Agent 推理需求
 

@@ -107,7 +107,7 @@ flowchart TB
 | 11 | `RAG系统` | 向量数据库、Embedding、检索增强 |
 | 12 | `架构基建` | Kubernetes、高可用、GPU 集群 |
 | 13 | `Agent` | LangGraph、Harness、Agent 框架 |
-| 14 | `12_架构基建/AI_Gateway` | LiteLLM、路由、限流、成本控制 |
+| 14 | `12_架构基建/11_AI_Gateway` | LiteLLM、路由、限流、成本控制 |
 | 15 | `AI测试` | Prompt 测试、RAG 评估、合同测试 |
 | 16 | `AI运维` | 监控、日志、告警、灾难恢复 |
 | 19 | `伦理安全` | RLHF/DPO、红队测试、对齐 |

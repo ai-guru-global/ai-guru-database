@@ -628,7 +628,7 @@ Track 2: 原生多模态 (11B / 90B Vision)
 
 ## 5. LLaMA 4 MoE 架构深度剖析
 
-> 更多关于 MoE 架构的通用原理，请参阅 → [MoE 案例研究：DeepSeek-MoE 与 Mixtral](../LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md)
+> 更多关于 MoE 架构的通用原理，请参阅 → [MoE 案例研究：DeepSeek-MoE 与 Mixtral](../05_LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md)
 
 ### 5.1 MoE 转型的战略意义
 
@@ -901,7 +901,7 @@ MetaP 方法:
 
 ## 6. 原生多模态能力
 
-> 更多关于多模态架构的讨论，请参阅 → [多模态架构综述 2026](../Multimodal_Models/Multimodal_Architectures_2026.md)
+> 更多关于多模态架构的讨论，请参阅 → [多模态架构综述 2026](../10_Multimodal_Models/Multimodal_Architectures_2026.md)
 
 ### 6.1 从外挂视觉到原生融合
 
@@ -1424,13 +1424,13 @@ KV Cache for 10M tokens 需要巨大内存
 - **LLaMA 论文深度解读** → [../../20_论文精读/LLaMA_Deep_Dive.md](20_论文精读/02_Architecture/LLaMA_Deep_Dive.md)
  - LLaMA 1/2/3 论文的核心技术细节、训练方法和实验分析
 
-- **LLM 架构综述** → [../LLM_Architectures/LLM_Architectures.md](../LLM_Architectures/LLM_Architectures.md)
+- **LLM 架构综述** → [../LLM_Architectures/LLM_Architectures.md](../05_LLM_Architectures/LLM_Architectures.md)
  - Transformer 架构变体、位置编码、注意力机制的横向对比
 
-- **MoE 案例研究** → [../LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md](../LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md)
+- **MoE 案例研究** → [../LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md](../05_LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md)
  - DeepSeek-MoE 和 Mixtral 的 MoE 架构详解，与 LLaMA 4 MoE 对比
 
-- **多模态架构 2026** → [../Multimodal_Models/Multimodal_Architectures_2026.md](../Multimodal_Models/Multimodal_Architectures_2026.md)
+- **多模态架构 2026** → [../Multimodal_Models/Multimodal_Architectures_2026.md](../10_Multimodal_Models/Multimodal_Architectures_2026.md)
  - 原生多模态 vs 外挂式多模态的全面对比
 
 ### 11.2 技术概念索引

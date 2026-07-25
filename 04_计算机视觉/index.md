@@ -23,7 +23,7 @@ This page indexes the contents of `计算机视觉`.
 ## Files
 
 - [[04_计算机视觉/CV-in-nutshell|CV In Nutshell]]
-- [[04_计算机视觉/CV_Fundamentals|CV Fundamentals]]
+- [[04_计算机视觉/01_CV_Fundamentals|CV Fundamentals]]
 - [[04_计算机视觉/HF_Diffusers_Practical_Guide|HF Diffusers Practical Guide]]
 - [[04_计算机视觉/README|README]]
 - [[04_计算机视觉/README_for_dummy|README For Dummy]]

@@ -555,7 +555,7 @@ AI学玩游戏:
 ## 想深入了解?
 
 **下一步阅读**:
-- 📘 [深度强化学习 - 小白版](../Deep_RL/Deep_RL_for_dummy.md) - 学习 DQN 如何玩 Atari 游戏
+- 📘 [深度强化学习 - 小白版](../02_Deep_RL/Deep_RL_for_dummy.md) - 学习 DQN 如何玩 Atari 游戏
 - 📘 [AI智能体 - 小白版](../../15_智能体/01_Agent_Foundations/AI_Agents_for_dummy.md) - 学习自主决策系统
 
 **查看原版文档**(需要技术基础):
@@ -568,7 +568,7 @@ AI学玩游戏:
 
 **相关主题**:
 - 🔙 [概率统计 - 小白版](01_数学基础/03_Probability_Statistics/Probability_Statistics_for_dummy.md) - 理解期望和折扣
-- 🔜 [深度强化学习 - 小白版](../Deep_RL/Deep_RL_for_dummy.md) - Q-Learning 的神经网络版
+- 🔜 [深度强化学习 - 小白版](../02_Deep_RL/Deep_RL_for_dummy.md) - Q-Learning 的神经网络版
 
 ---
 

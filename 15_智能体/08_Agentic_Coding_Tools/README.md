@@ -44,9 +44,9 @@ Codeium             Claude Code
 
 ## 关联目录
 
-- [Agent Harness](../Agent_Harness/) -- Harness 工程与架构
-- [Agent Frameworks](../Agent_Frameworks/) -- 多 Agent 开发框架
-- [Agent_Evaluation](../Agent_Evaluation/) -- 工具评估基准 (SWE-bench 等)
+- [Agent Harness](../04_Agent_Harness/) -- Harness 工程与架构
+- [Agent Frameworks](../02_Agent_Frameworks/) -- 多 Agent 开发框架
+- [Agent_Evaluation](../07_Agent_Evaluation/) -- 工具评估基准 (SWE-bench 等)
 
 ---
 

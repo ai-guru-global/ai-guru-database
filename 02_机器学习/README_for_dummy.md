@@ -31,9 +31,9 @@ sources: []
 
 | 主题 | 你能学到 | 开始学习 |
 |------|---------|---------|
-| 监督学习 | AI 怎么像学生一样"看答案学习"，比如判断邮件是不是垃圾邮件 | [点这里](./Supervised_Learning/Supervised_Learning_for_dummy.md) |
-| 特征工程 | 怎么把原始数据变成 AI 能理解的格式，就像厨师备菜一样 | [点这里](./Feature_Engineering/Feature_Engineering_for_dummy.md) |
-| 无监督学习 | AI 怎么在没人告诉答案的情况下自己发现规律 | [点这里](./Unsupervised_Learning/Unsupervised_Learning_for_dummy.md) |
+| 监督学习 | AI 怎么像学生一样"看答案学习"，比如判断邮件是不是垃圾邮件 | [点这里](./02_Supervised_Learning/Supervised_Learning_for_dummy.md) |
+| 特征工程 | 怎么把原始数据变成 AI 能理解的格式，就像厨师备菜一样 | [点这里](./05_Feature_Engineering/Feature_Engineering_for_dummy.md) |
+| 无监督学习 | AI 怎么在没人告诉答案的情况下自己发现规律 | [点这里](./03_Unsupervised_Learning/Unsupervised_Learning_for_dummy.md) |
 
 ## 学习建议
 

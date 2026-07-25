@@ -428,7 +428,7 @@ app = graph.compile()
 - [CrewAI GitHub](https://github.com/crewAI/crewAI)
 - [LangGraph 文档](https://langchain-ai.github.io/langgraph/)
 - [AgentScope Deep Dive](./AgentScope_Deep_Dive.md)
-- [Multi-Agent Evaluation](../Agent_Evaluation/Multi_Agent_Evaluation_2026.md)
+- [Multi-Agent Evaluation](../07_Agent_Evaluation/Multi_Agent_Evaluation_2026.md)
 
 ## Related
 

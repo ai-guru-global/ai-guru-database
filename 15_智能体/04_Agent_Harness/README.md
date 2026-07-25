@@ -121,7 +121,7 @@ Agent_Harness_Architecture_2026.md（架构选型与配置）
 
 ### 关联文档 (Agent_Evaluation)
 
-Agent Harness 的**评估视角**内容位于 `Agent_Evaluation/`，与本目录的**生产视角**互补：
+Agent Harness 的**评估视角**内容位于 `07_Agent_Evaluation/`，与本目录的**生产视角**互补：
 
 | 文档 | 内容 | 适用角色 |
 |------|------|----------|
@@ -147,30 +147,30 @@ Agent Harness 的**评估视角**内容位于 `Agent_Evaluation/`，与本目录
 - 阅读 [技术架构](15_智能体/04_Agent_Harness/Agent_Harness_Architecture_2026.md) 获取代码示例和集成指南
 - 跟随 [Implementation Guide](15_智能体/04_Agent_Harness/Harness_Implementation_Guide.md) 从零搭建
 - 查看框架适配器模式（LangChain、AutoGen 等）
-- 参考 [Agentic Coding Tools](../Agentic_Coding_Tools/) 选择开发工具
+- 参考 [Agentic Coding Tools](../08_Agentic_Coding_Tools/) 选择开发工具
 
 ### 产品经理
 
 - 阅读 [Harness-in-nutshell.md](15_智能体/04_Agent_Harness/Harness-in-nutshell.md) 理解 Harness 能力边界
 - 阅读 [技术架构](15_智能体/04_Agent_Harness/Agent_Harness_Architecture_2026.md) 中的功能规划与选型矩阵
-- 参考 [Agent_Evaluation 评估维度](../Agent_Evaluation/Agent_Harness_Complete_2026.md#四评估维度与指标) 设定产品质量标准
+- 参考 [Agent_Evaluation 评估维度](../07_Agent_Evaluation/Agent_Harness_Complete_2026.md#四评估维度与指标) 设定产品质量标准
 
 ### 集成测试工程师
 
 - 从 [Harness-in-nutshell.md](15_智能体/04_Agent_Harness/Harness-in-nutshell.md) 了解调试排错方法
 - 从 [技术架构](15_智能体/04_Agent_Harness/Agent_Harness_Architecture_2026.md) 获取测试策略与验证标准
-- 深入 [Agent_Evaluation](../Agent_Evaluation/) 获取完整基准测试和评估方法
+- 深入 [Agent_Evaluation](../07_Agent_Evaluation/) 获取完整基准测试和评估方法
 
 ### 评估师
 
-- 直接前往 [Agent_Evaluation](../Agent_Evaluation/) 获取评估框架与基准
+- 直接前往 [Agent_Evaluation](../07_Agent_Evaluation/) 获取评估框架与基准
 - 参考本目录理解生产环境中的 Harness 工程实践
 
 ### 架构师
 
 - 阅读 [The Anatomy](15_智能体/04_Agent_Harness/The_Anatomy_of_an_Agent_Harness.md) 理解 Harness 设计哲学
 - 阅读 [技术架构](15_智能体/04_Agent_Harness/Agent_Harness_Architecture_2026.md) 中的系统设计和扩展性章节
-- 结合 [Enterprise Agent](../Enterprise_Agent/) 了解企业级架构模式
+- 结合 [Enterprise Agent](../10_Enterprise_Agent/) 了解企业级架构模式
 - 参考 [Implementation Guide](15_智能体/04_Agent_Harness/Harness_Implementation_Guide.md) 验证技术可行性
 
 ---

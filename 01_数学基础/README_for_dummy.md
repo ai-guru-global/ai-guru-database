@@ -33,10 +33,10 @@ sources: []
 
 | 主题 | 你能学到 | 开始学习 |
 |------|---------|---------|
-| 线性代数 | 理解数据怎么被"打包"成数字、怎么被"变形"处理 | [点这里](./Linear_Algebra/Linear_Algebra_for_dummy.md) |
-| 概率统计 | 理解 AI 怎么在不确定的情况下做出"猜测"和"判断" | [点这里](./Probability_Statistics/Probability_Statistics_for_dummy.md) |
-| 数据结构与算法 | 理解电脑怎么"组织信息"和"高效搜索" | [点这里](./Data_Structures_Algorithms/Data_Structures_Algorithms_for_dummy.md) |
-| 分布式系统 | 理解怎么让几千台电脑一起训练一个超大 AI | [点这里](./Distributed_Systems/Distributed_Systems_for_dummy.md) |
+| 线性代数 | 理解数据怎么被"打包"成数字、怎么被"变形"处理 | [点这里](./02_Linear_Algebra/Linear_Algebra_for_dummy.md) |
+| 概率统计 | 理解 AI 怎么在不确定的情况下做出"猜测"和"判断" | [点这里](./03_Probability_Statistics/Probability_Statistics_for_dummy.md) |
+| 数据结构与算法 | 理解电脑怎么"组织信息"和"高效搜索" | [点这里](./07_Data_Structures_Algorithms/Data_Structures_Algorithms_for_dummy.md) |
+| 分布式系统 | 理解怎么让几千台电脑一起训练一个超大 AI | [点这里](./09_Distributed_Systems/Distributed_Systems_for_dummy.md) |
 
 ## 学习建议
 

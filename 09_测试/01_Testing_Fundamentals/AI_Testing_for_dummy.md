@@ -459,7 +459,7 @@ AI 在训练时没见过"特殊场景"
 建议接下来：
 1. **动手试试**：拿 ChatGPT 做一次简单的测试，用上面学到的方法
 2. **深入学习**：阅读 [AI 测试框架](./AI_Test_Framework_2026.md) 了解专业测试方法
-3. **工具实践**：试试 [Promptfoo](../Testing_Frameworks/Promptfoo_Deep_Dive.md) 这样的测试工具
+3. **工具实践**：试试 [Promptfoo](../02_Testing_Frameworks/Promptfoo_Deep_Dive.md) 这样的测试工具
 
 > 记住：测试不是挑毛病，而是让 AI 变得更好。每一次测试都是在帮 AI 进步！
 

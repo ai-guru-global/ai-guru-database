@@ -8,7 +8,7 @@ sources: []
 
 # Optimization
 
-This page indexes the contents of `07_模型训练/Optimization`.
+This page indexes the contents of `07_模型训练/03_Optimization`.
 
 ## Files
 

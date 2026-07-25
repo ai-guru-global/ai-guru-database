@@ -530,7 +530,7 @@ class MixtralMoELayer(nn.Module):
 | 模型质量 | 部分专家过度拟合 | 专家专业化 + 均衡 |
 | 实现复杂度 | 简单 | 需额外损失项，权重需调优 |
 
-> **深入阅读**: Mixtral 的 MoE 路由策略与 DeepSeek 的对比分析，详见 [MoE Case Studies: DeepSeek & Mixtral](../LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md)。负载均衡技术的详细讨论见 [MoE Routing and Load Balancing](../LLM_Architectures/MoE_Routing_and_Load_Balancing.md)。
+> **深入阅读**: Mixtral 的 MoE 路由策略与 DeepSeek 的对比分析，详见 [MoE Case Studies: DeepSeek & Mixtral](../05_LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md)。负载均衡技术的详细讨论见 [MoE Routing and Load Balancing](../05_LLM_Architectures/MoE_Routing_and_Load_Balancing.md)。
 
 ### 4.2 Mixtral 8x22B — 最大开源 MoE
 
@@ -667,7 +667,7 @@ Devstral 是 Mistral 2025 年发布的工程导向模型，专注于仓库级代
 
 Codestral Mamba 是 Mistral 对非 Transformer 架构的重要探索，使用 State Space Model (SSM) 替代注意力机制。
 
-> **深入阅读**: Mamba 和 SSM 架构的完整技术分析，详见 [Transformer Alternatives](../LLM_Architectures/Transformer_Alternatives.md)。
+> **深入阅读**: Mamba 和 SSM 架构的完整技术分析，详见 [Transformer Alternatives](../05_LLM_Architectures/Transformer_Alternatives.md)。
 
 ```
 Transformer vs Mamba (SSM) 架构对比
@@ -1455,10 +1455,10 @@ curl http://localhost:11434/api/generate -d '{
 
 ### 架构基础
 
-- [LLM Architectures (大语言模型架构)](../LLM_Architectures/LLM_Architectures.md) — Transformer, GPT, BERT, MoE 等核心架构的全面介绍
-- [MoE Case Studies: DeepSeek & Mixtral](../LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md) — MoE 路由策略、专家专业化的深度对比分析
-- [MoE Routing and Load Balancing](../LLM_Architectures/MoE_Routing_and_Load_Balancing.md) — MoE 负载均衡技术详解，含 Mixtral 辅助损失分析
-- [Transformer Alternatives](../LLM_Architectures/Transformer_Alternatives.md) — Mamba, SSM 等非 Transformer 架构的全面分析
+- [LLM Architectures (大语言模型架构)](../05_LLM_Architectures/LLM_Architectures.md) — Transformer, GPT, BERT, MoE 等核心架构的全面介绍
+- [MoE Case Studies: DeepSeek & Mixtral](../05_LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md) — MoE 路由策略、专家专业化的深度对比分析
+- [MoE Routing and Load Balancing](../05_LLM_Architectures/MoE_Routing_and_Load_Balancing.md) — MoE 负载均衡技术详解，含 Mixtral 辅助损失分析
+- [Transformer Alternatives](../05_LLM_Architectures/Transformer_Alternatives.md) — Mamba, SSM 等非 Transformer 架构的全面分析
 
 ### MoE 深度研究
 
@@ -1466,16 +1466,16 @@ curl http://localhost:11434/api/generate -d '{
 
 ### 中国 LLM 生态
 
-- [DeepSeek Deep Dive (深度求索技术深度解析)](../Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive.md) — DeepSeek V3/V4 MoE、MLA、GRPO 全面分析
-- [Qwen Deep Dive (通义千问技术深度解析)](../Chinese_LLM_Ecosystem/Qwen_Deep_Dive.md) — 阿里 Qwen 系列全面分析
+- [DeepSeek Deep Dive (深度求索技术深度解析)](../15_Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive.md) — DeepSeek V3/V4 MoE、MLA、GRPO 全面分析
+- [Qwen Deep Dive (通义千问技术深度解析)](../15_Chinese_LLM_Ecosystem/Qwen_Deep_Dive.md) — 阿里 Qwen 系列全面分析
 
 ### 推理模型
 
-- [Reasoning Models for Dummy (推理模型小白指南)](../Reasoning_Models/Reasoning_Models_for_dummy.md) — 推理模型的基础概念和核心原理
+- [Reasoning Models for Dummy (推理模型小白指南)](../09_Reasoning_Models/Reasoning_Models_for_dummy.md) — 推理模型的基础概念和核心原理
 
 ### 训练与微调
 
-- [Fine-tuning Techniques (微调技术)](../Fine_tuning_Techniques/Fine_tuning_Techniques.md) — LoRA, QLoRA, PEFT 等微调方法
+- [Fine-tuning Techniques (微调技术)](../07_Fine_tuning_Techniques/Fine_tuning_Techniques.md) — LoRA, QLoRA, PEFT 等微调方法
 
 ---
 

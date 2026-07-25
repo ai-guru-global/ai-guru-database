@@ -324,7 +324,7 @@ vs GeLU(x) = x · Φ(x)
 
 GLM-4.5 是智谱 AI 目前的旗舰模型，代表了其技术积累的最高水平。
 
-> 关于 MoE 架构的通用原理，参见 [LLM 架构详解](../LLM_Architectures/LLM_Architectures.md)；关于 MoE 路由策略与 DeepSeek 对比，参见 [MoE 案例研究](../LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md)。
+> 关于 MoE 架构的通用原理，参见 [LLM 架构详解](../05_LLM_Architectures/LLM_Architectures.md)；关于 MoE 路由策略与 DeepSeek 对比，参见 [MoE 案例研究](../05_LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md)。
 
 #### GLM-4.5 架构全景
 
@@ -620,7 +620,7 @@ graph TB
     style E fill:#0288d1,color:#fff
 ```
 
-> 更多多模态架构对比，参见 [多模态架构 2026](../Multimodal_Models/Multimodal_Architectures_2026.md)。
+> 更多多模态架构对比，参见 [多模态架构 2026](../10_Multimodal_Models/Multimodal_Architectures_2026.md)。
 
 ### 5.2 CogVLM: 视觉语言模型
 
@@ -1590,9 +1590,9 @@ GLM-5.2 首次引入 **effort level** 控制，开发者可在**能力 / 速度 
 
 ## Cross-References / 相关文档
 
-- [LLM 架构详解](../LLM_Architectures/LLM_Architectures.md): Transformer 架构、GPT/BERT/T5 对比，理解 GLM 架构演进的基础
-- [MoE 案例研究：DeepSeek-MoE 与 Mixtral](../LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md): MoE 路由策略与专家设计，与 GLM-4.5 MoE 对比
-- [多模态架构 2026](../Multimodal_Models/Multimodal_Architectures_2026.md): 多模态模型全景，CogVLM/CogAgent 在行业中的位置
+- [LLM 架构详解](../05_LLM_Architectures/LLM_Architectures.md): Transformer 架构、GPT/BERT/T5 对比，理解 GLM 架构演进的基础
+- [MoE 案例研究：DeepSeek-MoE 与 Mixtral](../05_LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md): MoE 路由策略与专家设计，与 GLM-4.5 MoE 对比
+- [多模态架构 2026](../10_Multimodal_Models/Multimodal_Architectures_2026.md): 多模态模型全景，CogVLM/CogAgent 在行业中的位置
 
 ---
 

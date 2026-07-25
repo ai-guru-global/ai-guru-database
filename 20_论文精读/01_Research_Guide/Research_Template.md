@@ -106,11 +106,11 @@ sources: []
 
 ## Related
 
-- [[../../05_大模型/LLM_Fundamentals|LLM 基础]] — 论文精读的前置知识
-- [[../../03_深度学习/DL_Fundamentals|深度学习基础]] — 论文中常见模型架构基础
+- [[../../05_大模型/01_LLM_Fundamentals|LLM 基础]] — 论文精读的前置知识
+- [[../../03_深度学习/01_DL_Fundamentals|深度学习基础]] — 论文中常见模型架构基础
 - [[../../概念/General/ai-fundamentals|AI 基础概念]] — 通用 AI 概念参考
-- [[../../08_模型评估/Benchmarks|评估基准]] — 论文中的评估方法参考
-- [[../../04_计算机视觉/CV_Fundamentals|CV 基础]] — 视觉论文的前置知识
+- [[../../08_模型评估/02_Benchmarks|评估基准]] — 论文中的评估方法参考
+- [[../../04_计算机视觉/01_CV_Fundamentals|CV 基础]] — 视觉论文的前置知识
 
 ## 进阶知识拓展
 

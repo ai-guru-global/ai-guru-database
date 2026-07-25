@@ -349,8 +349,8 @@ flowchart LR
 
 | 你想了解... | 去看... |
 |-------------|---------|
-| 医疗 AI | [Healthcare 文件夹](Healthcare/) |
-| 金融 AI | [Finance 文件夹](Finance/) |
+| 医疗 AI | [Healthcare 文件夹](03_Healthcare/) |
+| 金融 AI | [Finance 文件夹](04_Finance/) |
 | 自动驾驶 | [Autonomous_Driving 文件夹](Autonomous_Driving/) |
 | 行业全景 | [行业应用速成指南](./Industry-in-nutshell.md) |
 | 技术基础 | [AI 基础 - 小白版](./01_数学基础/README_for_dummy.md) |

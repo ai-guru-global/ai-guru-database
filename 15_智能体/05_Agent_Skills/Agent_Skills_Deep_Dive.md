@@ -1368,8 +1368,8 @@ skills-ref validate .agents/skills/my-skill
 - [Agent Skills 实战指南](./Agent_Skills_Practical_Guide.md) — 创建、测试、优化和发布
 - [Agent Skills 多角色全景分析](./Agent_Skills_Multi_Role_Analysis.md) — 五角色视角深度解析完整生命周期
 - [AI Skills 速成](./Skills-in-nutshell.md) — 传统 Skill 编程实现
-- [AI Agents](../Agent_Foundations/Agent-in-nutshell.md) — Agent 基础概念
-- [AI Workflow](../Agent_Workflow/) — 工作流编排
+- [AI Agents](../01_Agent_Foundations/Agent-in-nutshell.md) — Agent 基础概念
+- [AI Workflow](../03_Agent_Workflow/) — 工作流编排
 - [官方文档](https://agentskills.io) — Agent Skills 官方文档
 - [官方目录](https://officialskills.sh) — 451+ Skills 在线浏览
 - [Vercel Skills](https://github.com/vercel-labs/agent-skills) — React/Next.js 最佳实践（24.9k⭐）

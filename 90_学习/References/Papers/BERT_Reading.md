@@ -259,9 +259,9 @@ BERT 在 SWAG 上也大幅超越基线。
 - [[90_学习/References/books/nlp-with-transformers|NLP with Transformers]] — HF 生态应用
 - [[90_学习/References/books/hands-on-llms-alammar|Hands-On LLMs]] — 图解 BERT 微调
 - [[90_学习/References/books/build-llm-from-scratch-raschka|Build LLM From Scratch]] — 理解 Transformer 内部
-- [[05_大模型/LLM_Fundamentals]] — LLM 基础
+- [[05_大模型/01_LLM_Fundamentals]] — LLM 基础
 - [[05_大模型/07_Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs]] — 微调技术
 - [[14_RAG系统/RAG_Systems]] — BERT 嵌入在检索中的应用
 - [[90_学习/concepts/stage2_core_tech|Stage 2: 核心技术]] — BERT 在学习路径中的位置
 
-> **关联**: → [[90_学习/References/Papers/]] | [[90_学习/References/Papers/Attention_Is_All_You_Need_Reading|Transformer]] | [[90_学习/References/Papers/GPT3_Reading|GPT-3]] | [[05_大模型/LLM_Fundamentals]] | [[05_大模型/07_Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs]] | [[14_RAG系统/]]
+> **关联**: → [[90_学习/References/Papers/]] | [[90_学习/References/Papers/Attention_Is_All_You_Need_Reading|Transformer]] | [[90_学习/References/Papers/GPT3_Reading|GPT-3]] | [[05_大模型/01_LLM_Fundamentals]] | [[05_大模型/07_Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs]] | [[14_RAG系统/]]

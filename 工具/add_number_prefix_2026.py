@@ -348,6 +348,144 @@ def rewrite_links():
     return changed
 
 
+# === Phase C2: rewrite-intra（章节内裸子目录引用） ===
+
+def rewrite_intra_chapter():
+    """重写「章节内部」对子目录的裸名引用（不含父目录名）。
+
+    典型形式：./Architecture_Overview/xxx.md、[[Agent_Skills/xxx]]、
+    `Vector_Databases/`。第一轮全路径规则（父名/子名/）覆盖不到这类。
+
+    安全约束：
+      1. 作用域限定在各章节目录树内，且只用该章节自己的子目录映射
+         （Optimization/Security 等名称跨章节重复，全局替换会错编号）。
+      2. 只在链接目标上下文中替换：md 链接目标 ](...)、wikilink [[...]]、
+         反引号、frontmatter sources/parent；不碰普通正文。
+      3. 左边界同样用 _LEFT_BOUND，已加前缀的 02_Architecture_Overview 中
+         子名前是 '_'，不会被重复加前缀。
+    """
+    changed = 0
+    for parent, subs in NESTED_ORDER.items():
+        num = TOP_LEVEL_ORDER[parent]
+        chapter_dir = REPO_ROOT / f"{num}_{parent}"
+        if not chapter_dir.exists():
+            print(f"  跳过(不存在): {chapter_dir.name}")
+            continue
+        # 该章节内的裸子目录规则，最长优先
+        rules = sorted(
+            [(sub, f"{i:02d}_{sub}") for i, sub in enumerate(subs, start=1)],
+            key=lambda kv: len(kv[0]), reverse=True)
+        for root, dirs, files in os.walk(chapter_dir):
+            dirs[:] = [d for d in dirs if d not in _EXCLUDE_DIRS
+                       and not d.startswith('.')]
+            for fn in files:
+                if not fn.endswith('.md'):
+                    continue
+                fp = Path(root) / fn
+                if _rewrite_intra_file(fp, rules):
+                    changed += 1
+    print(f"rewrite-intra 完成：{changed} 个文件被修改")
+    return changed
+
+
+def _rewrite_intra_file(filepath, rules):
+    """在链接目标上下文中把裸 sub/ 替换为 NN_sub/。"""
+    text = Path(filepath).read_text(encoding="utf-8", errors="ignore")
+    original = text
+    for old, new in rules:
+        pat = re.compile(_LEFT_BOUND + re.escape(old) + r"/")
+
+        def _sub_in(m, _p=pat, _n=new):
+            return _p.sub(_n + "/", m.group(0))
+
+        # md 链接目标部分 ](...)（不碰链接文本）
+        text = re.sub(r"\]\(([^)]+)\)", _sub_in, text)
+        # wikilink [[...]]
+        text = re.sub(r"\[\[[^\]]+\]\]", _sub_in, text)
+        # 反引号内联代码
+        text = re.sub(r"`[^`\n]+`", _sub_in, text)
+        # frontmatter sources / parent
+        text = re.sub(r"sources:\s*\[[^\]]+\]", _sub_in, text)
+        text = re.sub(r'parent:\s*"[^"]*"', _sub_in, text)
+    if text != original:
+        Path(filepath).write_text(text, encoding="utf-8")
+        return True
+    return False
+
+
+# === Phase C3: rewrite-tails（无尾斜杠的子目录引用） ===
+
+def rewrite_tail_refs():
+    """修复「新父 + 旧子」混合路径：NN_父/子名 → NN_父/MM_子名。
+
+    成因：引用写法不带尾斜杠（如 [[大模型/LLM_Products]]、
+    ../../模型评估/Evaluation_Fundamentals），第一轮只改了父级前缀，
+    子目录名未被全路径规则（需要尾斜杠）命中。
+
+    安全性：模式含「NN_中文父名/英文子名」强路径特征，正文不会误中；
+    右边界 (?![A-Za-z0-9_/]) 避免截断更长名称或重复处理带斜杠路径；
+    已编号的 NN_父/MM_子 不会匹配（字面不同）。
+    """
+    rules = []
+    for parent, subs in NESTED_ORDER.items():
+        num = TOP_LEVEL_ORDER[parent]
+        for i, sub in enumerate(subs, start=1):
+            old = f"{num}_{parent}/{sub}"
+            new = f"{num}_{parent}/{i:02d}_{sub}"
+            rules.append((re.compile(re.escape(old) + r"(?![A-Za-z0-9_/])"), new))
+    changed = 0
+    for root, dirs, files in os.walk(REPO_ROOT):
+        dirs[:] = [d for d in dirs if d not in _EXCLUDE_DIRS
+                   and not d.startswith('.')]
+        for fn in files:
+            if not fn.endswith('.md'):
+                continue
+            fp = Path(root) / fn
+            text = fp.read_text(encoding="utf-8", errors="ignore")
+            original = text
+            for pat, new in rules:
+                text = pat.sub(new, text)
+            if text != original:
+                fp.write_text(text, encoding="utf-8")
+                changed += 1
+    print(f"rewrite-tails 完成：{changed} 个文件被修改")
+    return changed
+
+
+# === Phase C4: rewrite-bare（无斜杠的裸章节 wikilink） ===
+
+def rewrite_bare_wikilinks():
+    """修复裸章节名 wikilink：[[机器学习]] / [[大模型|文本]] → 加数字前缀。
+
+    成因：无斜杠引用不被「old + /」路径段规则命中；目录改名前这类
+    wikilink 被 checker 识别为目录引用（跳过），改名后成为断链。
+
+    安全性：仅匹配「[[ 紧跟章节名，且后接 ]/|/#」的 wikilink 目标位，
+    不碰正文与链接文本；已带前缀的 [[NN_章节]] 因 [[ 后是数字不会命中。
+    """
+    rules = []
+    for name, num in TOP_LEVEL_ORDER.items():
+        pat = re.compile(r"\[\[" + re.escape(name) + r"(?=[\]|#])")
+        rules.append((pat, f"[[{num}_{name}"))
+    changed = 0
+    for root, dirs, files in os.walk(REPO_ROOT):
+        dirs[:] = [d for d in dirs if d not in _EXCLUDE_DIRS
+                   and not d.startswith('.')]
+        for fn in files:
+            if not fn.endswith('.md'):
+                continue
+            fp = Path(root) / fn
+            text = fp.read_text(encoding="utf-8", errors="ignore")
+            original = text
+            for pat, new in rules:
+                text = pat.sub(new, text)
+            if text != original:
+                fp.write_text(text, encoding="utf-8")
+                changed += 1
+    print(f"rewrite-bare 完成：{changed} 个文件被修改")
+    return changed
+
+
 # === Phase D: verify ===
 
 def _count_broken():
@@ -372,7 +510,9 @@ def verify(baseline=None):
 
 def main():
     p = argparse.ArgumentParser(description="顶层+二级目录加数字前缀迁移")
-    p.add_argument("cmd", choices=["dry-run", "rename", "rewrite-links", "verify"])
+    p.add_argument("cmd", choices=["dry-run", "rename", "rewrite-links",
+                                   "rewrite-intra", "rewrite-tails",
+                                   "rewrite-bare", "verify"])
     p.add_argument("--no-commit", action="store_true")
     p.add_argument("--baseline", type=int, default=None,
                    help="verify 用的断链基线")
@@ -383,6 +523,12 @@ def main():
         rename(commit=not args.no_commit)
     elif args.cmd == "rewrite-links":
         rewrite_links()
+    elif args.cmd == "rewrite-intra":
+        rewrite_intra_chapter()
+    elif args.cmd == "rewrite-tails":
+        rewrite_tail_refs()
+    elif args.cmd == "rewrite-bare":
+        rewrite_bare_wikilinks()
     elif args.cmd == "verify":
         verify(baseline=args.baseline)
 

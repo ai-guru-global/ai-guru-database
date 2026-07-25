@@ -262,13 +262,13 @@ print(answer)
 ## 7. 与其他主题的关联 (Connections)
 
 ### 前置知识
-- [图像分类与检测](../Image_Classification_Detection/Image_Classification_Detection.md) — CNN/ViT 视觉编码器基础
+- [图像分类与检测](../02_Image_Classification_Detection/Image_Classification_Detection.md) — CNN/ViT 视觉编码器基础
 - [Transformer 革命](05_大模型/04_Transformer_Revolution/Transformer_Revolution.md) — 注意力机制和 ViT
 - [大语言模型架构](05_大模型/05_LLM_Architectures/LLM_Architectures.md) — LLM 作为多模态模型的"大脑"
 
 ### 进阶方向
-- [图像分割](../Segmentation/Segmentation.md) — SAM 的多模态分割能力
-- [生成模型](../Generative_Models/Generative_Models.md) — 文本引导的图像生成（DALL-E、SD）
+- [图像分割](../03_Segmentation/Segmentation.md) — SAM 的多模态分割能力
+- [生成模型](../06_Generative_Models/Generative_Models.md) — 文本引导的图像生成（DALL-E、SD）
 - [AI 智能体](../../15_智能体/01_Agent_Foundations/AI_Agents.md) — 多模态 Agent 的视觉感知能力
 - [具身智能](06_强化学习/05_Robotics_Embodied_AI/Embodied_AI_2026.md) — VLA 模型: 视觉-语言-动作端到端机器人控制
 - [微调技术](05_大模型/07_Fine_tuning_Techniques/Fine_tuning_Techniques.md) — 多模态模型的微调方法

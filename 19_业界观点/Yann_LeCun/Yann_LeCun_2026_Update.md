@@ -354,8 +354,8 @@ V-JEPA 2 作为 LeCun 世界模型愿景的核心实现：
 ### 技术与理论
 
 - [[05_大模型/Meta]] -- Llama 系列技术
-- [[05_大模型/LLM_Architectures]] -- 模型架构演进
-- [[05_大模型/Reasoning_Models]] -- 推理模型路线
+- [[05_大模型/05_LLM_Architectures]] -- 模型架构演进
+- [[05_大模型/09_Reasoning_Models]] -- 推理模型路线
 - [[00_入门/AI_Future_Trends]] -- 世界模型与 AGI
 - [[17_伦理安全/README]] -- AI 安全辩论
 

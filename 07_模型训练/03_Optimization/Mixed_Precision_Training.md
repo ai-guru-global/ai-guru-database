@@ -814,7 +814,7 @@ training_args = TrainingArguments(
 ## 🔗 相关章节
 
 - 更多训练优化技巧 → [训练优化 2026](./Training_Optimization_2026.md)
-- 分布式训练中的混合精度 → [分布式训练 2026](../Distributed_Training/Distributed_Training_2026.md)
+- 分布式训练中的混合精度 → [分布式训练 2026](../04_Distributed_Training/Distributed_Training_2026.md)
 - 优化器基础与原理 → [03_深度学习/03_Optimization/Optimization.md](03_深度学习/03_Optimization/Optimization.md)
 - 模型评估指标 → [08_模型评估/01_Evaluation_Fundamentals/Model_Evaluation.md](08_模型评估/01_Evaluation_Fundamentals/Model_Evaluation.md)
 - 部署推理优化 → [10_部署推理/01_Deployment_Fundamentals/Inference-in-nutshell.md](10_部署推理/01_Deployment_Fundamentals/Inference-in-nutshell.md)

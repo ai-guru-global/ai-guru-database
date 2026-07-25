@@ -1623,14 +1623,14 @@ for block in response.content:
 
 ### 架构基础
 
-- [LLM Architectures (大语言模型架构)](../LLM_Architectures/LLM_Architectures.md) — Transformer, GPT, BERT, MoE 等核心架构的全面介绍
-- [MoE Case Studies: DeepSeek & Mixtral](../LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md) — MoE 路由策略与专家专业化分析
+- [LLM Architectures (大语言模型架构)](../05_LLM_Architectures/LLM_Architectures.md) — Transformer, GPT, BERT, MoE 等核心架构的全面介绍
+- [MoE Case Studies: DeepSeek & Mixtral](../05_LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md) — MoE 路由策略与专家专业化分析
 
 ### 推理模型
 
-- [o1 Class Reasoning Models (推理模型深度解析)](../Reasoning_Models/o1_Class_Reasoning_Models.md) — OpenAI o1/o3 推理模型分析，与 Claude Extended Thinking 的对比
-- [Reasoning Models for Dummy (推理模型小白指南)](../Reasoning_Models/Reasoning_Models_for_dummy.md) — 推理模型的基础概念和核心原理
-- [DeepSeek-R1 Technical Analysis](../Reasoning_Models/DeepSeek_R1_Technical_Analysis.md) — DeepSeek R1 的 GRPO 训练和自进化机制
+- [o1 Class Reasoning Models (推理模型深度解析)](../09_Reasoning_Models/o1_Class_Reasoning_Models.md) — OpenAI o1/o3 推理模型分析，与 Claude Extended Thinking 的对比
+- [Reasoning Models for Dummy (推理模型小白指南)](../09_Reasoning_Models/Reasoning_Models_for_dummy.md) — 推理模型的基础概念和核心原理
+- [DeepSeek-R1 Technical Analysis](../09_Reasoning_Models/DeepSeek_R1_Technical_Analysis.md) — DeepSeek R1 的 GRPO 训练和自进化机制
 
 ### AI 安全与对齐
 
@@ -1641,13 +1641,13 @@ for block in response.content:
 ### 全球 LLM 生态
 
 - [Google Gemini Deep Dive](./Google_Gemini_Deep_Dive.md) — Google Gemini 系列技术深度解析
-- [DeepSeek Deep Dive](../Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive.md) — DeepSeek 从 V1 到 V4 的完整技术演进
-- [Qwen Deep Dive (通义千问技术深度解析)](../Chinese_LLM_Ecosystem/Qwen_Deep_Dive.md) — 阿里 Qwen 系列全面分析
+- [DeepSeek Deep Dive](../15_Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive.md) — DeepSeek 从 V1 到 V4 的完整技术演进
+- [Qwen Deep Dive (通义千问技术深度解析)](../15_Chinese_LLM_Ecosystem/Qwen_Deep_Dive.md) — 阿里 Qwen 系列全面分析
 
 ### 训练与微调
 
-- [Fine-tuning Techniques (微调技术)](../Fine_tuning_Techniques/Fine_tuning_Techniques.md) — LoRA, QLoRA, PEFT 等微调方法
-- [Multimodal Architectures](../Multimodal_Models/Multimodal_Architectures_2026.md) — 多模态模型架构详解
+- [Fine-tuning Techniques (微调技术)](../07_Fine_tuning_Techniques/Fine_tuning_Techniques.md) — LoRA, QLoRA, PEFT 等微调方法
+- [Multimodal Architectures](../10_Multimodal_Models/Multimodal_Architectures_2026.md) — 多模态模型架构详解
 
 ---
 

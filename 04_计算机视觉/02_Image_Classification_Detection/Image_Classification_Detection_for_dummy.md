@@ -342,8 +342,8 @@ YOLO: 只能识别物体("这是一个人")
 ## 想深入了解?
 
 **下一步阅读**:
-- 📘 [图像分割 - 小白版](../Segmentation/Segmentation_for_dummy.md) - 学习像素级图像理解
-- 📘 [生成模型 - 小白版](../Generative_Models/Generative_Models_for_dummy.md) - 学习 AI 如何画画
+- 📘 [图像分割 - 小白版](../03_Segmentation/Segmentation_for_dummy.md) - 学习像素级图像理解
+- 📘 [生成模型 - 小白版](../06_Generative_Models/Generative_Models_for_dummy.md) - 学习 AI 如何画画
 
 **查看原版文档**(需要一定技术基础):
 - 📄 [图像分类与检测(原版)](./Image_Classification_Detection.md) - 包含代码和数学公式
@@ -355,15 +355,15 @@ YOLO: 只能识别物体("这是一个人")
 
 **相关主题**:
 - 🔙 [神经网络核心 - 小白版](03_深度学习/02_Neural_Network_Core/Neural_Network_Core_for_dummy.md) - 理解 CNN 的基础
-- 🔜 [多模态视觉 - 小白版](../Multimodal_Vision/Multimodal_Vision_for_dummy.md) - 让 AI 同时理解图片和文字
+- 🔜 [多模态视觉 - 小白版](../08_Multimodal_Vision/Multimodal_Vision_for_dummy.md) - 让 AI 同时理解图片和文字
 
 ## Related
 
 - [[../../05_大模型/10_Multimodal_Models/Multimodal_Architectures_2026|多模态架构]] — 图像分类与语言理解的融合
 - [[../../概念/Vision/object-detection|目标检测概念卡]] — 检测算法的概念定义
-- [[../../03_深度学习/Neural_Network_Core|神经网络核心]] — CNN 底层原理
-- [[../../10_部署推理/Deployment_Fundamentals|部署基础]] — CV 模型边缘部署
-- [[../../14_RAG系统/RAG_Fundamentals|视觉 RAG]] — 图像特征检索
+- [[../../03_深度学习/02_Neural_Network_Core|神经网络核心]] — CNN 底层原理
+- [[../../10_部署推理/01_Deployment_Fundamentals|部署基础]] — CV 模型边缘部署
+- [[../../14_RAG系统/01_RAG_Fundamentals|视觉 RAG]] — 图像特征检索
 
 ---
 

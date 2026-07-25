@@ -16,7 +16,7 @@ sources: []
 
 > **一句话理解**: Dragonfly 是 CNCF 毕业级的 P2P 分发系统——把"100 个 GPU 节点同时拉 70GB 模型把镜像仓库打爆"变成"节点越多反而越快"，是大模型镜像/权重分发的首选加速层。
 
-> 📐 **概念方法论**: Dragonfly 把 BitTorrent 的 P2P 思想搬进 Kubernetes 集群内部——当一个 70GB 的模型权重或 OCI 镜像要分发给上百个节点时，中心化 Registry 的出口带宽是物理天花板，Dragonfly 引入 **Seed Peer / Peer / Scheduler / Manager** 四层抽象，让每个下载者同时成为上传者，把"出口带宽瓶颈"转化为"集群内部带宽红利"。它与 [[CNCF_Cloud_Native_AI/KitOps_Deep_Dive]] 的 ModelKit 打包层正交（一个负责打包、一个负责传输），共同构成大模型分发栈；选型背景可参考 [[12_架构基建/02_Architecture_Overview/AI_Infrastructure_2026]]。
+> 📐 **概念方法论**: Dragonfly 把 BitTorrent 的 P2P 思想搬进 Kubernetes 集群内部——当一个 70GB 的模型权重或 OCI 镜像要分发给上百个节点时，中心化 Registry 的出口带宽是物理天花板，Dragonfly 引入 **Seed Peer / Peer / Scheduler / Manager** 四层抽象，让每个下载者同时成为上传者，把"出口带宽瓶颈"转化为"集群内部带宽红利"。它与 [[05_CNCF_Cloud_Native_AI/KitOps_Deep_Dive]] 的 ModelKit 打包层正交（一个负责打包、一个负责传输），共同构成大模型分发栈；选型背景可参考 [[12_架构基建/02_Architecture_Overview/AI_Infrastructure_2026]]。
 
 ---
 
@@ -687,7 +687,7 @@ Preheat 失败不影响业务——后续 Pod 拉镜像时仍会自动走 Dragon
 
 ## Related
 
-- [[CNCF_Cloud_Native_AI/README]] — CNCF 云原生 AI 全景总览
-- [[CNCF_Cloud_Native_AI/KitOps_Deep_Dive]] — ModelKit 打包层（与 Dragonfly 传输层正交，组合成完整分发栈）
-- [[CNCF_Cloud_Native_AI/KAITO_Deep_Dive]] — KAITO preset 镜像正是 Dragonfly 加速的首选对象
+- [[05_CNCF_Cloud_Native_AI/README]] — CNCF 云原生 AI 全景总览
+- [[05_CNCF_Cloud_Native_AI/KitOps_Deep_Dive]] — ModelKit 打包层（与 Dragonfly 传输层正交，组合成完整分发栈）
+- [[05_CNCF_Cloud_Native_AI/KAITO_Deep_Dive]] — KAITO preset 镜像正是 Dragonfly 加速的首选对象
 - [[12_架构基建/02_Architecture_Overview/AI_Infrastructure_2026]] — 2026 AI 基础设施演进背景

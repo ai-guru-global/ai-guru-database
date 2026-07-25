@@ -8,7 +8,7 @@ sources: []
 
 # Openrouter
 
-This page indexes the contents of `AI编程/Tools/OpenRouter`.
+This page indexes the contents of `AI编程/05_Tools/OpenRouter`.
 
 ## Files
 

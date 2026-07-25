@@ -68,7 +68,7 @@ AI 治理是组织管理 AI 风险的核心框架：
 
 - [[概念/Safety/ai-alignment]] — AI 对齐 (共享: alignment, safety)
 - [[概念/Safety/ai-ethics]] — AI 伦理 (共享: ethics, governance)
-- [[17_伦理安全/Governance]] — 治理专题
+- [[17_伦理安全/03_Governance]] — 治理专题
 
 ## 核心知识框架
 

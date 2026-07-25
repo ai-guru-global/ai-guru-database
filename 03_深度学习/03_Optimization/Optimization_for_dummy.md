@@ -1120,7 +1120,7 @@ A100       40GB    Batch=128-256
 ### 🔗 相关主题:
 
 **前置知识**:
-- [神经网络核心小白版](../Neural_Network_Core/Neural_Network_Core_for_dummy.md) - 理解前向和反向传播(必读!)
+- [神经网络核心小白版](../02_Neural_Network_Core/Neural_Network_Core_for_dummy.md) - 理解前向和反向传播(必读!)
 
 **横向扩展**:
 - [监督学习小白版](02_机器学习/02_Supervised_Learning/Supervised_Learning_for_dummy.md) - 理解过拟合/欠拟合

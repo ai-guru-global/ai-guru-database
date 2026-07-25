@@ -10,7 +10,7 @@ relationships:
   - target: "概念/model-evaluation"
     type: related_to
 sources:
-  - 01_数学基础/Information_Theory
+  - 01_数学基础/04_Information_Theory
 summary: "信息论量化信息的基本理论——熵、交叉熵、KL散度、互信息，是几乎所有ML损失函数和模型评估指标的数学基础。"
 provenance:
   extracted: 0.50

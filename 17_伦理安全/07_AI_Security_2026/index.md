@@ -8,7 +8,7 @@ sources: []
 
 # AI Security 2026
 
-This page indexes the contents of `17_伦理安全/AI_Security_2026`.
+This page indexes the contents of `17_伦理安全/07_AI_Security_2026`.
 
 ## Files
 

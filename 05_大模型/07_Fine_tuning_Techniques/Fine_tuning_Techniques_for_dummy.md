@@ -470,14 +470,14 @@ ChatGPT: "抱歉,我不能提供非法活动的指导。
 ### 📚 推荐学习路径
 
 1. **本文 (你现在在这)**: 理解微调的基本概念
-2. **[提示词工程 (小白版)](../Prompt_Engineering/Prompt_Engineering_for_dummy.md)**: 学习不微调也能优化的方法
+2. **[提示词工程 (小白版)](../08_Prompt_Engineering/Prompt_Engineering_for_dummy.md)**: 学习不微调也能优化的方法
 3. **实践**: 用 Hugging Face PEFT 库试试 LoRA
 4. **[原版技术文档](./Fine_tuning_Techniques.md)**: 深入数学原理和代码实现
 
 ### 🔗 相关内容
 
-- **前置知识**: [大语言模型架构 (小白版)](../LLM_Architectures/LLM_Architectures_for_dummy.md)
-- **替代方案**: [提示词工程 (小白版)](../Prompt_Engineering/Prompt_Engineering_for_dummy.md)
+- **前置知识**: [大语言模型架构 (小白版)](../05_LLM_Architectures/LLM_Architectures_for_dummy.md)
+- **替代方案**: [提示词工程 (小白版)](../08_Prompt_Engineering/Prompt_Engineering_for_dummy.md)
 - **进阶应用**: [RAG 系统 (小白版)](14_RAG系统/01_RAG_Fundamentals/RAG_Systems_for_dummy.md)
 
 ---

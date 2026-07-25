@@ -8,7 +8,7 @@ sources: []
 
 # Embeddings
 
-This page indexes the contents of `14_RAG系统/Embeddings`.
+This page indexes the contents of `14_RAG系统/02_Embeddings`.
 
 ## Files
 

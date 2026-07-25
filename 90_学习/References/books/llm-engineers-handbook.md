@@ -278,7 +278,7 @@ LoRA 通常可将微调成本降至全量微调的 10-20%
 
 | 本书章节 | 知识库主题 | 关联说明 |
 |----------|------------|----------|
-| Ch 1 概览 | [[05_大模型/LLM_Fundamentals]] | LLM 生态 |
+| Ch 1 概览 | [[05_大模型/01_LLM_Fundamentals]] | LLM 生态 |
 | Ch 2 数据工程 | [[02_机器学习/]] | 数据管道 |
 | Ch 3 训练 | [[07_模型训练/]] 、 [[05_大模型/07_Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs]] | SFT、LoRA |
 | Ch 4 评估 | [[08_模型评估/]] | 自动评估、LLM-as-Judge |

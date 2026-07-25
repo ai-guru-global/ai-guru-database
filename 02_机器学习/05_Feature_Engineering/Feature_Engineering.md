@@ -310,8 +310,8 @@ def create_time_features(df, date_col='date', target_col='sales'):
 - [线性代数](01_数学基础/02_Linear_Algebra/Linear_Algebra.md) — PCA 降维的数学基础
 
 ### 进阶方向
-- [监督学习](../Supervised_Learning/Supervised_Learning.md) — 特征工程的下游消费者
-- [无监督学习](../Unsupervised_Learning/Unsupervised_Learning.md) — PCA/t-SNE 作为降维特征
+- [监督学习](../02_Supervised_Learning/Supervised_Learning.md) — 特征工程的下游消费者
+- [无监督学习](../03_Unsupervised_Learning/Unsupervised_Learning.md) — PCA/t-SNE 作为降维特征
 - [模型评估](08_模型评估/01_Evaluation_Fundamentals/Model_Evaluation.md) — 评估特征工程的效果
 - [MLOps Pipeline](11_模型运维/01_MLOps_Fundamentals/MLOps_Pipeline.md) — 特征存储与特征管道
 

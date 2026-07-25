@@ -211,5 +211,5 @@ class MultiHeadAttention(nn.Module):
 - [[05_大模型/04_Transformer_Revolution/Self_Attention_Mechanism]] — Self-Attention 机制详解
 - [[05_大模型/04_Transformer_Revolution/Transformer_Revolution]] — Transformer 革命全景
 - [[05_大模型/NLP_Fundamentals]] — NLP 基础知识
-- [[05_大模型/LLM_Fundamentals]] — 大语言模型基础
+- [[05_大模型/01_LLM_Fundamentals]] — 大语言模型基础
 - [[20_论文精读/02_Architecture/Attention_Is_All_You_Need_Deep_Dive]] — "Attention Is All You Need" 论文深度解读

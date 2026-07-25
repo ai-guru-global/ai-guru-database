@@ -422,8 +422,8 @@ AI辅助(U-Net):
 ## 想深入了解?
 
 **下一步阅读**:
-- 📘 [多模态视觉 - 小白版](../Multimodal_Vision/Multimodal_Vision_for_dummy.md) - 学习 AI 如何同时理解图像和文字
-- 📘 [生成模型 - 小白版](../Generative_Models/Generative_Models_for_dummy.md) - 学习 AI 如何画画
+- 📘 [多模态视觉 - 小白版](../08_Multimodal_Vision/Multimodal_Vision_for_dummy.md) - 学习 AI 如何同时理解图像和文字
+- 📘 [生成模型 - 小白版](../06_Generative_Models/Generative_Models_for_dummy.md) - 学习 AI 如何画画
 
 **查看原版文档**(需要技术基础):
 - 📄 图像分割(原版文档待创建) - 包含 U-Net 代码和数学推导
@@ -434,8 +434,8 @@ AI辅助(U-Net):
 - 🔗 Segment Anything - Meta 官方演示
 
 **相关主题**:
-- 🔙 [图像分类与检测 - 小白版](../Image_Classification_Detection/Image_Classification_Detection_for_dummy.md) - 分割的基础
-- 🔜 [生成模型 - 小白版](../Generative_Models/Generative_Models_for_dummy.md) - 用分割后的结果生成新图
+- 🔙 [图像分类与检测 - 小白版](../02_Image_Classification_Detection/Image_Classification_Detection_for_dummy.md) - 分割的基础
+- 🔜 [生成模型 - 小白版](../06_Generative_Models/Generative_Models_for_dummy.md) - 用分割后的结果生成新图
 
 ---
 

@@ -19,22 +19,22 @@ sources: []
 
 | # | 文档 | 主题 | 预计时间 | 内容概要 |
 |---|------|------|----------|----------|
-| 1 | [AI基础概念入门](./Fundamentals/AI_Fundamentals.md) | AI 是什么 | 2-3 小时 | AI 定义、三大类型、核心技术、工作原理、应用场景 |
-| 2 | [AI技术全景概览](./Technology_Overview/AI_Technology_Landscape.md) | AI 技术生态 | 3-4 小时 | 技术栈全景、机器学习、深度学习、大模型、工具链 |
-| 3 | [AI历史与发展时间线](./Fundamentals/AI_History_Timeline.md) | AI 发展史 | 2-3 小时 | 1950-2026 完整历史、4 次 AI 浪潮、关键人物与里程碑 |
-| 4 | [AI工具与实践指南](./Learning_Path/AI_Tools_Practical_Guide.md) | 工具使用 | 3-4 小时 | 主流 AI 工具、提示工程、专业领域工具、使用策略 |
-| 5 | [AI伦理与社会影响](./Ethics_and_Future/AI_Ethics_Society.md) | 伦理与社会 | 3-4 小时 | 算法偏见、隐私保护、就业影响、信息生态、治理 |
-| 6 | [AI未来趋势展望](./Ethics_and_Future/AI_Future_Trends.md) | 未来趋势 | 2-3 小时 | AGI 路径、产业变革、社会变革、风险挑战、行动指南 |
-| 7 | [AI学习资源与方法论](./Learning_Path/AI_Learning_Resources.md) | 学习指南 | 2 小时 | 学习路径、课程推荐、书籍、平台、实践项目 |
+| 1 | [AI基础概念入门](./01_Fundamentals/AI_Fundamentals.md) | AI 是什么 | 2-3 小时 | AI 定义、三大类型、核心技术、工作原理、应用场景 |
+| 2 | [AI技术全景概览](./02_Technology_Overview/AI_Technology_Landscape.md) | AI 技术生态 | 3-4 小时 | 技术栈全景、机器学习、深度学习、大模型、工具链 |
+| 3 | [AI历史与发展时间线](./01_Fundamentals/AI_History_Timeline.md) | AI 发展史 | 2-3 小时 | 1950-2026 完整历史、4 次 AI 浪潮、关键人物与里程碑 |
+| 4 | [AI工具与实践指南](./03_Learning_Path/AI_Tools_Practical_Guide.md) | 工具使用 | 3-4 小时 | 主流 AI 工具、提示工程、专业领域工具、使用策略 |
+| 5 | [AI伦理与社会影响](./04_Ethics_and_Future/AI_Ethics_Society.md) | 伦理与社会 | 3-4 小时 | 算法偏见、隐私保护、就业影响、信息生态、治理 |
+| 6 | [AI未来趋势展望](./04_Ethics_and_Future/AI_Future_Trends.md) | 未来趋势 | 2-3 小时 | AGI 路径、产业变革、社会变革、风险挑战、行动指南 |
+| 7 | [AI学习资源与方法论](./03_Learning_Path/AI_Learning_Resources.md) | 学习指南 | 2 小时 | 学习路径、课程推荐、书籍、平台、实践项目 |
 
 ### 教学辅助资源
 
 | 文档 | 用途 | 内容 |
 |------|------|------|
-| [AI术语表与概念词典](./Fundamentals/AI_Glossary.md) | 快速查阅 | 100+核心术语，从 A-Z 排序，含定义、示例、关联概念 |
-| [AI经典案例分析集](./Ethics_and_Future/AI_Classic_Cases.md) | 案例教学 | 6 个深度案例：AlphaGo、ChatGPT、ImageNet、自动驾驶、人脸识别、GPT 系列 |
-| [AI课堂实验与实践指导](./Learning_Path/AI_Practical_Labs.md) | 实验教学 | 8 个动手实验 + 期末项目建议，无需编程基础 |
-| [**AI 配套实验指南**](./Learning_Path/Hands_On_Experiments_Guide.md) | 技术实验 | 10 个可运行实验: CNN/SimCLR/BERT微调/DQN/RAG/vLLM 等 |
+| [AI术语表与概念词典](./01_Fundamentals/AI_Glossary.md) | 快速查阅 | 100+核心术语，从 A-Z 排序，含定义、示例、关联概念 |
+| [AI经典案例分析集](./04_Ethics_and_Future/AI_Classic_Cases.md) | 案例教学 | 6 个深度案例：AlphaGo、ChatGPT、ImageNet、自动驾驶、人脸识别、GPT 系列 |
+| [AI课堂实验与实践指导](./03_Learning_Path/AI_Practical_Labs.md) | 实验教学 | 8 个动手实验 + 期末项目建议，无需编程基础 |
+| [**AI 配套实验指南**](./03_Learning_Path/Hands_On_Experiments_Guide.md) | 技术实验 | 10 个可运行实验: CNN/SimCLR/BERT微调/DQN/RAG/vLLM 等 |
 
 ### 教学大纲建议
 
@@ -174,18 +174,18 @@ sources: []
 ## 2026 特别专题
 
 ### 核心教材
-- [AI基础概念入门](./Fundamentals/AI_Fundamentals.md) - AI 定义、能力边界、核心要素
-- [AI技术全景概览](./Technology_Overview/AI_Technology_Landscape.md) - 2026 技术栈全景、前沿趋势
-- [AI历史与发展时间线](./Fundamentals/AI_History_Timeline.md) - 涵盖 2026 年 Agentic AI 发展
-- [AI工具与实践指南](./Learning_Path/AI_Tools_Practical_Guide.md) - GPT-5.2、Claude 4.5 等最新工具
-- [AI伦理与社会影响](./Ethics_and_Future/AI_Ethics_Society.md) - AI 治理最新进展、EU AI Act
-- [AI未来趋势展望](./Ethics_and_Future/AI_Future_Trends.md) - AGI 路径、2026-2040 预测
-- [AI学习资源与方法论](./Learning_Path/AI_Learning_Resources.md) - 最新课程、平台、实践建议
+- [AI基础概念入门](./01_Fundamentals/AI_Fundamentals.md) - AI 定义、能力边界、核心要素
+- [AI技术全景概览](./02_Technology_Overview/AI_Technology_Landscape.md) - 2026 技术栈全景、前沿趋势
+- [AI历史与发展时间线](./01_Fundamentals/AI_History_Timeline.md) - 涵盖 2026 年 Agentic AI 发展
+- [AI工具与实践指南](./03_Learning_Path/AI_Tools_Practical_Guide.md) - GPT-5.2、Claude 4.5 等最新工具
+- [AI伦理与社会影响](./04_Ethics_and_Future/AI_Ethics_Society.md) - AI 治理最新进展、EU AI Act
+- [AI未来趋势展望](./04_Ethics_and_Future/AI_Future_Trends.md) - AGI 路径、2026-2040 预测
+- [AI学习资源与方法论](./03_Learning_Path/AI_Learning_Resources.md) - 最新课程、平台、实践建议
 
 ### 教学资源
-- [AI术语表与概念词典](./Fundamentals/AI_Glossary.md) - 100+核心术语，完整概念体系
-- [AI经典案例分析集](./Ethics_and_Future/AI_Classic_Cases.md) - 7 个里程碑案例深度剖析 (新增 AlphaFold 3)
-- [AI课堂实验与实践指导](./Learning_Path/AI_Practical_Labs.md) - 8 个实验 + 期末项目
+- [AI术语表与概念词典](./01_Fundamentals/AI_Glossary.md) - 100+核心术语，完整概念体系
+- [AI经典案例分析集](./04_Ethics_and_Future/AI_Classic_Cases.md) - 7 个里程碑案例深度剖析 (新增 AlphaFold 3)
+- [AI课堂实验与实践指导](./03_Learning_Path/AI_Practical_Labs.md) - 8 个实验 + 期末项目
 
 ### 教材统计
 - **核心教材**: 7 篇，约 100 页内容

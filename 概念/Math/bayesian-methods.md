@@ -10,7 +10,7 @@ relationships:
   - target: "概念/optimization-regularization"
     type: related_to
 sources:
-  - 02_机器学习/Bayesian_Methods
+  - 02_机器学习/06_Bayesian_Methods
 summary: "贝叶斯方法将参数视为随机变量，通过先验+似然=后验的框架量化不确定性。核心工具包括MCMC采样、变分推断、贝叶斯神经网络和贝叶斯优化。"
 provenance:
   extracted: 0.45

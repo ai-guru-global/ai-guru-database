@@ -74,7 +74,7 @@ sources: []
 | [GPT-3](20_论文精读/03_Scaling/GPT3_Deep_Dive.md) | 规模化、上下文学习与涌现能力 |
 | [BERT](20_论文精读/02_Architecture/BERT_Deep_Dive.md) | 双向编码、MLM/NSP 与预训练-微调范式 |
 | [LLaMA](20_论文精读/02_Architecture/LLaMA_Deep_Dive.md) | 开源 LLM 革命、RoPE/SwiGLU/RMSNorm |
-| [Diffusion Models](./Vision/Diffusion_Models_Deep_Dive.md) | 从 DDPM 到 Stable Diffusion 再到 DiT |
+| [Diffusion Models](./08_Vision/Diffusion_Models_Deep_Dive.md) | 从 DDPM 到 Stable Diffusion 再到 DiT |
 | [RLHF 与 DPO](20_论文精读/06_Alignment/RLHF_DPO_Deep_Dive.md) | InstructGPT 三阶段训练、DPO 数学推导 |
 | [Mixture of Experts](20_论文精读/02_Architecture/Mixture_of_Experts_Deep_Dive.md) | Switch Transformer、Mixtral、DeepSeek MoE |
 

@@ -58,7 +58,7 @@ sources: []
 | 开源许可 | Apache 2.0，最宽松 |
 | 生态 | HuggingFace/ModelScope 高下载量 |
 
-> 详见 [[大模型/Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix|中国大模型对比矩阵]]。
+> 详见 [[05_大模型/15_Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix|中国大模型对比矩阵]]。
 
 ### 阶跃星辰（StepFun）：多模态战略
 
@@ -71,7 +71,7 @@ sources: []
 | Step-1Flash | 轻量高效 | 端侧/高吞吐 |
 | Step-2 | 旗舰 | 架构升级 |
 
-多模态能力关联 [[计算机视觉/Multimodal_Vision/Vision_Language_Models_2026|视觉语言模型]]。
+多模态能力关联 [[04_计算机视觉/08_Multimodal_Vision/Vision_Language_Models_2026|视觉语言模型]]。
 
 ### 多模态 + Agent 方向
 
@@ -100,18 +100,18 @@ sources: []
 | 公司 | 创始人 | 核心战略 |
 |------|--------|----------|
 | **阶跃星辰** | 白辰甲 | 多模态基座 + Agent |
-| [[业界观点/Junjie_Yan/Junjie_Yan_2026_Update\|MiniMax]] | 闫俊杰 | 全模态 + C 端出海 |
-| [[业界观点/Wenfeng_Liang/Wenfeng_Liang_2026_Update\|DeepSeek]] | 梁文锋 | 效率 + 开源文本 |
+| [[19_业界观点/Junjie_Yan/Junjie_Yan_2026_Update\|MiniMax]] | 闫俊杰 | 全模态 + C 端出海 |
+| [[19_业界观点/Wenfeng_Liang/Wenfeng_Liang_2026_Update\|DeepSeek]] | 梁文锋 | 效率 + 开源文本 |
 
 ---
 
 ## 关联与延伸
 
-- [[业界观点/Jinze_Bai/about|白辰甲 概述]]
-- [[业界观点/Jinze_Bai/index|白辰甲 主页]]
-- [[大模型/Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix|中国大模型对比矩阵]]
-- [[计算机视觉/Multimodal_Vision/Vision_Language_Models_2026|视觉语言模型 2026]]
-- [[业界观点/Talks_Synthesis/China_US_AI_Race_Leaders_Views|中美 AI 竞赛观点]]
+- [[19_业界观点/Jinze_Bai/about|白辰甲 概述]]
+- [[19_业界观点/Jinze_Bai/index|白辰甲 主页]]
+- [[05_大模型/15_Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix|中国大模型对比矩阵]]
+- [[04_计算机视觉/08_Multimodal_Vision/Vision_Language_Models_2026|视觉语言模型 2026]]
+- [[19_业界观点/Talks_Synthesis/China_US_AI_Race_Leaders_Views|中美 AI 竞赛观点]]
 
 ---
 

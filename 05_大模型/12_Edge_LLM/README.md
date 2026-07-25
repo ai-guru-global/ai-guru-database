@@ -184,9 +184,9 @@ sources: []
 
 ## Related
 
-- [[大模型/LLM_Architectures/index|LLM Architectures]]
-- [[大模型/index|大模型首页]]
-- [[部署推理/index|部署推理]]
+- [[05_大模型/05_LLM_Architectures/index|LLM Architectures]]
+- [[05_大模型/index|大模型首页]]
+- [[10_部署推理/index|部署推理]]
 
 > 💡 随着 NPU 普及和小模型进化，端侧 AI 将成为每个人的标配。
 

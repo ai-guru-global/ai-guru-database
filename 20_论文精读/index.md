@@ -15,18 +15,18 @@ AI 论文精读中心（Paper Reading Center）— 按方向分类的顶会论�
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[论文精读/README|README]] | Paper reading module overview and knowledge map | all readers |
-| [[论文精读/README_for_dummy|README for dummy]] | Paper reading beginner guide and quick start | newcomers / beginners |
-| [[论文精读/Paper_Reading_Guide|Paper Reading Guide]] | Paper reading methodology: how to efficiently read AI papers | students / junior researchers |
+| [[20_论文精读/README|README]] | Paper reading module overview and knowledge map | all readers |
+| [[20_论文精读/README_for_dummy|README for dummy]] | Paper reading beginner guide and quick start | newcomers / beginners |
+| [[20_论文精读/Paper_Reading_Guide|Paper Reading Guide]] | Paper reading methodology: how to efficiently read AI papers | students / junior researchers |
 
 ## Related
 
-- [[论文精读/Alignment/index|Alignment]]
-- [[论文精读/Efficiency/index|Efficiency]]
-- [[论文精读/Retrieval_index|Retrieval]]
-- [[论文精读/RL/index|RL]]
-- [[论文精读/Frontier_index|Frontier]]
-- [[论文精读/Methodology_index|Methodology]]
+- [[20_论文精读/06_Alignment/index|Alignment]]
+- [[20_论文精读/04_Efficiency/index|Efficiency]]
+- [[20_论文精读/Retrieval_index|Retrieval]]
+- [[20_论文精读/07_RL/index|RL]]
+- [[20_论文精读/Frontier_index|Frontier]]
+- [[20_论文精读/Methodology_index|Methodology]]
 
 ## 进阶知识拓展
 
@@ -64,9 +64,9 @@ AI 论文精读中心（Paper Reading Center）— 按方向分类的顶会论�
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

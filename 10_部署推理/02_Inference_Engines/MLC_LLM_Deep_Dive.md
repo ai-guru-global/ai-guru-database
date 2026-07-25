@@ -499,9 +499,9 @@ engine = MLCEngine(
 
 ## Related
 
-- [[部署推理/Inference_Engines/llama_cpp_Deep_Dive|llama_cpp_Deep_Dive]]
-- [[部署推理/Inference_Engines/LiteRT_Deep_Dive|LiteRT_Deep_Dive]]
-- [[部署推理/Inference_Engines/Ollama_Deep_Dive|Ollama_Deep_Dive]]
-- [[部署推理/Inference_Engines/vLLM_Deep_Dive|vLLM_Deep_Dive]]
-- [[部署推理/Inference_Engines/LLM_Inference_Engine_Selection_Guide|LLM_Inference_Engine_Selection_Guide]]
-- [[部署推理/Deployment_Fundamentals/Deployment_Inference.md|Deployment_Inference]]
+- [[10_部署推理/02_Inference_Engines/llama_cpp_Deep_Dive|llama_cpp_Deep_Dive]]
+- [[10_部署推理/02_Inference_Engines/LiteRT_Deep_Dive|LiteRT_Deep_Dive]]
+- [[10_部署推理/02_Inference_Engines/Ollama_Deep_Dive|Ollama_Deep_Dive]]
+- [[10_部署推理/02_Inference_Engines/vLLM_Deep_Dive|vLLM_Deep_Dive]]
+- [[10_部署推理/02_Inference_Engines/LLM_Inference_Engine_Selection_Guide|LLM_Inference_Engine_Selection_Guide]]
+- [[10_部署推理/01_Deployment_Fundamentals/Deployment_Inference.md|Deployment_Inference]]

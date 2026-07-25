@@ -888,9 +888,9 @@ class CachedMoEInference:
 - [[Neural_Network_Core]] — 神经网络核心架构
 - [[Optimization]] — MoE 训练的优化挑战
 - [[Normalization_Techniques_Deep_Dive]] — MoE 层中的归一化选择
-- [[深度学习/DL_Fundamentals/index|深度学习基础]] — 稀疏计算的理论基础
-- [[深度学习/Transfer_Learning/index|迁移学习]] — MoE 模型的微调策略
-- [[深度学习/DL_Frameworks/index|深度学习框架]] — Megablocks, Tutel 等 MoE 框架
+- [[03_深度学习/01_DL_Fundamentals/index|深度学习基础]] — 稀疏计算的理论基础
+- [[03_深度学习/Transfer_Learning/index|迁移学习]] — MoE 模型的微调策略
+- [[03_深度学习/08_DL_Frameworks/index|深度学习框架]] — Megablocks, Tutel 等 MoE 框架
 
 ---
 

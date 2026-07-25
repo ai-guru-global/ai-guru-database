@@ -774,16 +774,16 @@ class CodeQueryRouter:
 
 ## 7. 相关概念 (Related)
 
-- [[RAG系统/Advanced_RAG/RAG_Advanced_2026|RAG高级实践2026]] — 通用RAG高级技术
-- [[RAG系统/Advanced_RAG/Agentic_RAG_Guide|Agentic RAG指南]] — Agent驱动的检索
-- [[RAG系统/Embeddings/Embedding_Models_Guide|嵌入模型指南]] — 嵌入模型选型
-- [[RAG系统/Embeddings/Sentence_Transformers_Deep_Dive|Sentence Transformers]] — 嵌入模型训练
-- [[RAG系统/Vector_Databases/Qdrant_Deep_Dive|Qdrant深度解析]] — 向量数据库
-- [[RAG系统/Advanced_RAG/Long_Context_vs_RAG_2026|长上下文vs RAG]] — 何时用RAG何时用长上下文
-- [[RAG系统/RAG_Production/RAG_Cost_Optimization|RAG成本优化]] — 代码RAG成本控制
-- [[RAG系统/Advanced_RAG/Graph_RAG_Architecture|Graph RAG架构]] — 图结构检索
-- [[智能体/Agent_Foundations/Agent_Overview|AI Agent全景]] — Agent + 代码理解
-- [[编程/Tree_sitter|Tree-sitter]] — AST解析工具
+- [[14_RAG系统/04_Advanced_RAG/RAG_Advanced_2026|RAG高级实践2026]] — 通用RAG高级技术
+- [[14_RAG系统/04_Advanced_RAG/Agentic_RAG_Guide|Agentic RAG指南]] — Agent驱动的检索
+- [[14_RAG系统/02_Embeddings/Embedding_Models_Guide|嵌入模型指南]] — 嵌入模型选型
+- [[14_RAG系统/02_Embeddings/Sentence_Transformers_Deep_Dive|Sentence Transformers]] — 嵌入模型训练
+- [[14_RAG系统/03_Vector_Databases/Qdrant_Deep_Dive|Qdrant深度解析]] — 向量数据库
+- [[14_RAG系统/04_Advanced_RAG/Long_Context_vs_RAG_2026|长上下文vs RAG]] — 何时用RAG何时用长上下文
+- [[14_RAG系统/05_RAG_Production/RAG_Cost_Optimization|RAG成本优化]] — 代码RAG成本控制
+- [[14_RAG系统/04_Advanced_RAG/Graph_RAG_Architecture|Graph RAG架构]] — 图结构检索
+- [[15_智能体/01_Agent_Foundations/Agent_Overview|AI Agent全景]] — Agent + 代码理解
+- [[16_编程/Tree_sitter|Tree-sitter]] — AST解析工具
 
 ---
 

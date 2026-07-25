@@ -112,7 +112,7 @@ A2A 与 MCP 互补：MCP 管 Agent↔工具，A2A 管 Agent↔Agent。
 
 ## Related
 
-- [[智能体/README|Agent 生产部署 (Agent Production)]]
+- [[15_智能体/README|Agent 生产部署 (Agent Production)]]
 
 ## 附录：核心概念速查
 

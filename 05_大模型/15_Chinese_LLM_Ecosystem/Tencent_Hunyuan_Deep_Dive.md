@@ -498,15 +498,15 @@ response = client.ChatCompletions(
 
 ## 14. 扩展阅读
 
-- [[大模型/Chinese_LLM_Ecosystem/README]] — 中国大模型生态总览
-- [[大模型/Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive]] — DeepSeek 深度解析
-- [[大模型/Chinese_LLM_Ecosystem/GLM_Zhipu_Deep_Dive]] — 智谱 GLM 深度解析
-- [[大模型/Chinese_LLM_Ecosystem/Qwen_Deep_Dive]] — 通义千问深度解析
-- [[大模型/Chinese_LLM_Ecosystem/Baidu_ERNIE_Deep_Dive]] — 百度文心深度解析
-- [[大模型/Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]] — 国产模型对比矩阵
-- [[大模型/LLM_Architectures/MoE_Routing_and_Load_Balancing]] — MoE 路由
-- [[大模型/Multimodal_Models/Multimodal_Architectures_2026]] — 多模态架构
-- [[学习/courses/microsoft/microsoft_genai_for_beginners]] — 生成式 AI 入门课程
+- [[05_大模型/15_Chinese_LLM_Ecosystem/README]] — 中国大模型生态总览
+- [[05_大模型/15_Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive]] — DeepSeek 深度解析
+- [[05_大模型/15_Chinese_LLM_Ecosystem/GLM_Zhipu_Deep_Dive]] — 智谱 GLM 深度解析
+- [[05_大模型/15_Chinese_LLM_Ecosystem/Qwen_Deep_Dive]] — 通义千问深度解析
+- [[05_大模型/15_Chinese_LLM_Ecosystem/Baidu_ERNIE_Deep_Dive]] — 百度文心深度解析
+- [[05_大模型/15_Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]] — 国产模型对比矩阵
+- [[05_大模型/05_LLM_Architectures/MoE_Routing_and_Load_Balancing]] — MoE 路由
+- [[05_大模型/10_Multimodal_Models/Multimodal_Architectures_2026]] — 多模态架构
+- [[90_学习/courses/microsoft/microsoft_genai_for_beginners]] — 生成式 AI 入门课程
 
 ---
 

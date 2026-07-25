@@ -10,7 +10,7 @@ relationships:
   - target: "概念/helm"
     type: related_to
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
 summary: "nerdctl 是 containerd 的原生 CLI 客户端，提供类 Docker 的容器管理体验。AI Stack 所有模型服务以 containerd 容器形式部署，nerdctl 是日常运维的核心工具。"
 provenance:
   extracted: 0.35
@@ -258,4 +258,4 @@ nerdctl compose ps
 - [[概念/kubernetes]] — Kubernetes 编排
 - [[概念/helm]] — Helm 包管理
 - [[概念/kustomize]] — Kustomize 配置管理
-- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析

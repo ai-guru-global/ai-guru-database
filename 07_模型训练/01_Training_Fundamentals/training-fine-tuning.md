@@ -51,9 +51,9 @@ aliases:
 
 ## Related
 
-- [[模型训练/Distributed_Training/Distributed_Training_2026]] — Distributed Training 2026 (共享: fsdp, optimization)
-- [[模型训练/Distributed_Training/Distributed_Training_for_dummy]] — 分布式训练 - 小白版 (共享: fsdp, optimization)
-- [[模型训练/Optimization/Mixed_Precision_Training]] — 混合精度训练 (Mixed Precision Training) (共享: fsdp, optimization)
+- [[07_模型训练/04_Distributed_Training/Distributed_Training_2026]] — Distributed Training 2026 (共享: fsdp, optimization)
+- [[07_模型训练/04_Distributed_Training/Distributed_Training_for_dummy]] — 分布式训练 - 小白版 (共享: fsdp, optimization)
+- [[07_模型训练/03_Optimization/Mixed_Precision_Training]] — 混合精度训练 (Mixed Precision Training) (共享: fsdp, optimization)
 
 ## 进阶知识拓展
 
@@ -91,9 +91,9 @@ aliases:
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

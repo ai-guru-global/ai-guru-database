@@ -14,18 +14,18 @@ sources: []
 
 | 文件 | 说明 |
 |------|------|
-| [[论文精读/Vision/AlexNet_Deep_Dive|AlexNet]] | ImageNet 冠军，引爆深度学习革命 |
-| [[论文精读/Vision/ResNet_Deep_Dive|ResNet]] | 残差连接实现超深网络训练 |
-| [[论文精读/Vision/CLIP_Deep_Dive|CLIP]] | 对比学习连接图像与文本 |
-| [[论文精读/Vision/GAN_Deep_Dive|GAN]] | 生成对抗网络 |
-| [[论文精读/Vision/VAE_Deep_Dive|VAE]] | 变分自编码器 |
-| [[论文精读/Vision/Diffusion_Models_Deep_Dive|Diffusion Models]] | 扩散模型，现代图像生成基础 |
-| [[论文精读/Vision/UNet_Deep_Dive|U-Net]] | 编解码器结构，医学图像经典 |
+| [[20_论文精读/08_Vision/AlexNet_Deep_Dive|AlexNet]] | ImageNet 冠军，引爆深度学习革命 |
+| [[20_论文精读/08_Vision/ResNet_Deep_Dive|ResNet]] | 残差连接实现超深网络训练 |
+| [[20_论文精读/08_Vision/CLIP_Deep_Dive|CLIP]] | 对比学习连接图像与文本 |
+| [[20_论文精读/08_Vision/GAN_Deep_Dive|GAN]] | 生成对抗网络 |
+| [[20_论文精读/08_Vision/VAE_Deep_Dive|VAE]] | 变分自编码器 |
+| [[20_论文精读/08_Vision/Diffusion_Models_Deep_Dive|Diffusion Models]] | 扩散模型，现代图像生成基础 |
+| [[20_论文精读/08_Vision/UNet_Deep_Dive|U-Net]] | 编解码器结构，医学图像经典 |
 
 ## Related
 
-- [[论文精读/Architecture/index|Architecture]]
-- [[计算机视觉/index|计算机视觉]]
+- [[20_论文精读/02_Architecture/index|Architecture]]
+- [[04_计算机视觉/index|计算机视觉]]
 
 ## 进阶知识拓展
 
@@ -63,9 +63,9 @@ sources: []
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

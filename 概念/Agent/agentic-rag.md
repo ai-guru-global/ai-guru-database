@@ -12,9 +12,9 @@ relationships:
   - target: "概念/reasoning-models"
     type: related_to
 sources:
-  - RAG系统/Advanced_RAG/Agentic_RAG_Guide.md
-  - RAG系统/Advanced_RAG/RAG_Advanced_2026.md
-  - RAG系统/README_Advanced.md
+  - 14_RAG系统/04_Advanced_RAG/Agentic_RAG_Guide.md
+  - 14_RAG系统/04_Advanced_RAG/RAG_Advanced_2026.md
+  - 14_RAG系统/README_Advanced.md
 summary: "Agentic RAG 是让大模型在检索时拥有‘自主权’的 RAG 升级版。模型不再一次性检索就回答，而是可以判断要不要检索、检索什么、检索结果够不够好，必要时重写查询多轮迭代，把准确率从 70% 提升到 90%+。"
 provenance:
   extracted: 0.8
@@ -212,8 +212,8 @@ app = workflow.compile()
 - [[概念/ai-agents]] — AI Agent
 - [[概念/tool-calling]] — 工具调用
 - [[概念/reasoning-models]] — 推理模型
-- [[RAG系统/Advanced_RAG/Agentic_RAG_Guide]] — Agentic RAG 指南
-- [[RAG系统/Advanced_RAG/RAG_Advanced_2026]] — RAG 高级技术 2026
+- [[14_RAG系统/04_Advanced_RAG/Agentic_RAG_Guide]] — Agentic RAG 指南
+- [[14_RAG系统/04_Advanced_RAG/RAG_Advanced_2026]] — RAG 高级技术 2026
 - [[概念/agent-memory-systems]] — Agent Memory Systems
 - [[概念/ai-coding-paradigms]] — Ai Coding Paradigms
 - [[概念/rag-patterns]] — Rag Patterns

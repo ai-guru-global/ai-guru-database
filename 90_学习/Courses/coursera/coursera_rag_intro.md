@@ -40,7 +40,7 @@ aliases:
 - 想快速上手 RAG 的开发者
 - 需要实操经验的工程师
 
-> **关联**: -> [[RAG系统/README|RAG 系统]] | [[学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[14_RAG系统/README|RAG 系统]] | [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
 
 
 ## 核心知识框架

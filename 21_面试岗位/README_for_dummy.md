@@ -156,8 +156,8 @@ sources: []
 
 ## 下一步
 
-- 想看具体岗位？→ 查看 [面试岗位/Interviews_for_dummy.md](面试岗位/Interview_Guide/Interviews_for_dummy.md)
-- 想学技术？→ 从 [90_Learn/README.md](../学习/README_for_dummy.md) 选择路径
+- 想看具体岗位？→ 查看 [21_面试岗位/Interviews_for_dummy.md](21_面试岗位/Interview_Guide/Interviews_for_dummy.md)
+- 想学技术？→ 从 [90_Learn/README.md](../90_学习/README_for_dummy.md) 选择路径
 
 ---
 
@@ -165,10 +165,10 @@ sources: []
 
 ## Related
 
-- [[面试岗位/Interviews_for_dummy|AI 面试准备 - 小白版]]
-- [[面试岗位/README|AI 面试准备 (Interviews)]]
-- [[面试岗位/jobs|AI 相关岗位与工种清单]]
-- [[面试岗位/interview_notes_template|面试复盘模板]]
+- [[21_面试岗位/Interviews_for_dummy|AI 面试准备 - 小白版]]
+- [[21_面试岗位/README|AI 面试准备 (Interviews)]]
+- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/interview_notes_template|面试复盘模板]]
 
 ## 面试核心知识框架
 

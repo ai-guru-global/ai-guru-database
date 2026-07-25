@@ -307,11 +307,11 @@ flowchart TB
 
 ## 9. 与其他章节的关联
 
-- [计算机视觉](../../计算机视觉/README.md) — 医学影像识别技术
-- [NLP & LLMs](../../大模型/README.md) — 临床文本处理、病历分析
-- [RAG 系统](../../RAG系统/README.md) — 医学知识库问答
-- [伦理安全](../../伦理安全/README.md) — 医疗 AI 的隐私与公平性
-- [模型评估](../../模型评估/README.md) — 医疗 AI 的评估指标
+- [计算机视觉](../../04_计算机视觉/README.md) — 医学影像识别技术
+- [NLP & LLMs](../../05_大模型/README.md) — 临床文本处理、病历分析
+- [RAG 系统](../../14_RAG系统/README.md) — 医学知识库问答
+- [伦理安全](../../17_伦理安全/README.md) — 医疗 AI 的隐私与公平性
+- [模型评估](../../08_模型评估/README.md) — 医疗 AI 的评估指标
 
 ---
 
@@ -326,11 +326,11 @@ flowchart TB
 
 ## Related
 
-- [[../../RAG系统/RAG_Production|RAG 生产部署]] — 医疗知识库与临床检索增强
-- [[../../智能体/Agent_Frameworks|Agent 框架]] — 医疗辅助诊断 Agent
-- [[../../大模型/Multimodal_Models/Multimodal_Architectures_2026|多模态架构]] — 医学影像多模态分析
-- [[../../模型评估/Fairness|公平性评估]] — 医疗 AI 偏见与公平性
-- [[../../部署推理/Deployment_Strategies|部署策略]] — 医疗级高可用部署
+- [[../../14_RAG系统/RAG_Production|RAG 生产部署]] — 医疗知识库与临床检索增强
+- [[../../15_智能体/Agent_Frameworks|Agent 框架]] — 医疗辅助诊断 Agent
+- [[../../05_大模型/10_Multimodal_Models/Multimodal_Architectures_2026|多模态架构]] — 医学影像多模态分析
+- [[../../08_模型评估/Fairness|公平性评估]] — 医疗 AI 偏见与公平性
+- [[../../10_部署推理/Deployment_Strategies|部署策略]] — 医疗级高可用部署
 
 ---
 

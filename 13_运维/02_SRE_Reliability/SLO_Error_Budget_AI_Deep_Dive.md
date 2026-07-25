@@ -390,11 +390,11 @@ AI SLO 仪表板（单页总览）
 
 ## Related
 
-- [[运维/AIOps_Fundamentals/AI_Ops_2026|AI 运维 2026]] — 运维全栈
-- [[运维/SRE_Reliability/SRE_for_AI_Systems|AI 系统 SRE]] — SRE 实践
-- [[运维/SRE_Reliability/AI_Incident_Response_Playbook|事故响应手册]] — 预算违约时的响应
-- [[运维/SRE_Reliability/Cost_Optimization_AI_Deep_Dive|成本优化]] — 成本 SLO 的优化手段
-- [[模型运维/Observability/Prometheus_Grafana_Deep_Dive|Prometheus + Grafana]] — SLI 监控工具
+- [[13_运维/01_AIOps_Fundamentals/AI_Ops_2026|AI 运维 2026]] — 运维全栈
+- [[13_运维/02_SRE_Reliability/SRE_for_AI_Systems|AI 系统 SRE]] — SRE 实践
+- [[13_运维/02_SRE_Reliability/AI_Incident_Response_Playbook|事故响应手册]] — 预算违约时的响应
+- [[13_运维/02_SRE_Reliability/Cost_Optimization_AI_Deep_Dive|成本优化]] — 成本 SLO 的优化手段
+- [[11_模型运维/08_Observability/Prometheus_Grafana_Deep_Dive|Prometheus + Grafana]] — SLI 监控工具
 - [[概念/ab-testing-framework|A/B 测试]] — SLO 验证方法
 
 ---

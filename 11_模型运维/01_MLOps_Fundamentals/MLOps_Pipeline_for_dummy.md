@@ -567,9 +567,9 @@ jobs:
 ## 想深入了解?
 
 ### 📄 进阶阅读
-- [模型部署 - 小白版](部署推理/Deployment_Fundamentals/Deployment_Inference_for_dummy.md)
-- [模型评估 - 小白版](模型评估/Evaluation_Fundamentals/Model_Evaluation_for_dummy.md)
-- [RAG 系统 - 小白版](RAG系统/RAG_Fundamentals/RAG_Systems_for_dummy.md)
+- [模型部署 - 小白版](10_部署推理/01_Deployment_Fundamentals/Deployment_Inference_for_dummy.md)
+- [模型评估 - 小白版](08_模型评估/01_Evaluation_Fundamentals/Model_Evaluation_for_dummy.md)
+- [RAG 系统 - 小白版](14_RAG系统/01_RAG_Fundamentals/RAG_Systems_for_dummy.md)
 
 ### 🛠️ 动手实践
 - [MLflow 快速开始](https://mlflow.org/docs/latest/quickstart.html)
@@ -586,6 +586,6 @@ jobs:
 
 ## Related
 
-- [[模型运维/Orchestration/Data_Pipeline_Orchestration.md|Data_Pipeline_Orchestration]]
-- [[模型运维/MLOps_Fundamentals/MLOps-in-nutshell.md|MLOps-in-nutshell]]
+- [[11_模型运维/05_Orchestration/Data_Pipeline_Orchestration.md|Data_Pipeline_Orchestration]]
+- [[11_模型运维/01_MLOps_Fundamentals/MLOps-in-nutshell.md|MLOps-in-nutshell]]
 - [[概念/MLOps/mlops.md|mlops]]

@@ -12,8 +12,8 @@ relationships:
   - target: "概念/code-generation"
     type: belongs_to
 sources:
-  - RAG系统/README.md
-  - 智能体/Agent_Skills/Agent_Skills_Ecosystem_Catalog.md
+  - 14_RAG系统/README.md
+  - 15_智能体/05_Agent_Skills/Agent_Skills_Ecosystem_Catalog.md
   - AI编程/README.md
 summary: "Text2SQL（也叫 NL2SQL）是把自然语言问题自动转换成可执行 SQL 查询的技术。它让不懂 SQL 的人能用大白话查数据库，是数据分析、智能客服、企业 BI 的核心能力。"
 provenance:
@@ -107,8 +107,8 @@ SQL 校验（语法/安全）
 - [[概念/code-generation]] — 代码生成
 - [[概念/prompt-engineering]] — 提示工程
 - [[概念/rag-production-architecture|RAG 生产架构]] — 生产级 RAG 设计
-- [[RAG系统/README]] — RAG 系统
-- [[编程/README]] — AI 编程工具
+- [[14_RAG系统/README]] — RAG 系统
+- [[16_编程/README]] — AI 编程工具
 
 ---
 

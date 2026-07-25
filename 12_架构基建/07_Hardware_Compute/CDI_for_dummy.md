@@ -123,21 +123,21 @@ flowchart LR
 
 入门看懂了，想要 spec 文件结构、MIG 切片、RDMA、与 DRA 的关系等完整内容：
 
-→ [[架构基建/Hardware_Compute/CDI_Deep_Dive|CDI 容器设备接口标准深度解析]]
+→ [[12_架构基建/07_Hardware_Compute/CDI_Deep_Dive|CDI 容器设备接口标准深度解析]]
 
 ## Related
 
-- [[架构基建/Hardware_Compute/CDI_Deep_Dive|CDI 深度解析]]
-- [[架构基建/Architecture_Infrastructure_for_dummy|架构基础设施 - 小白版]]
-- [[架构基建/README|架构与基础设施]]
-- [[数学基础/AI_Hardware/Chinese_AI_Chips_Deep_Dive|国产 AI 芯片（CDI 的最大受益者）]]
+- [[12_架构基建/07_Hardware_Compute/CDI_Deep_Dive|CDI 深度解析]]
+- [[12_架构基建/Architecture_Infrastructure_for_dummy|架构基础设施 - 小白版]]
+- [[12_架构基建/README|架构与基础设施]]
+- [[01_数学基础/10_AI_Hardware/Chinese_AI_Chips_Deep_Dive|国产 AI 芯片（CDI 的最大受益者）]]
 - [[概念/cdi|CDI 概念卡片]]
 
 ## 架构核心组件对比
 
 | 组件层 | 功能 | 关键技术 | 选型考量 |
 |--------|------|----------|----------|
-| 计算层 | 模型训练/推理 | GPU/TPU/NPU集群 | 算力需求+成本 |
+| 计算层 | 07_模型训练/推理 | GPU/TPU/NPU集群 | 算力需求+成本 |
 | 存储层 | 数据/模型/检查点 | 分布式存储/对象存储 | 容量+IOPS+成本 |
 | 网络层 | 节点间通信 | RDMA/RoCE/InfiniBand | 带宽+延迟 |
 | 调度层 | 资源编排 | K8s/Slurm/Ray | 弹性+效率 |

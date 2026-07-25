@@ -253,5 +253,5 @@ PD 分离就是：**让擅长查资料的人去 prefill，让擅长写字的人�
 - [[概念/gpu-interconnect]] — GPU 互联
 - [[概念/rdma-roce]] — RDMA / InfiniBand
 - [[概念/prefill-decode-disaggregation]] — PD 分离
-- [[部署推理/Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]]
-- [[部署推理/Inference_Performance/Inference_Speed_Factors_for_dummy|决定模型推理速度的要素]]
+- [[10_部署推理/04_Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]]
+- [[10_部署推理/04_Inference_Performance/Inference_Speed_Factors_for_dummy|决定模型推理速度的要素]]

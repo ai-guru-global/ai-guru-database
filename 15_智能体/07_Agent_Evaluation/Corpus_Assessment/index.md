@@ -14,19 +14,19 @@ sources: []
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[智能体/Agent_Evaluation/Corpus_Assessment/Corpus_Coverage_Framework|Corpus Coverage Framework]] | Corpus Coverage Framework | 评估工程师/研究者 |
-| [[智能体/Agent_Evaluation/Corpus_Assessment/Corpus_Improvement_Guide|Corpus Improvement Guide]] | Corpus Improvement Guide | 评估工程师/研究者 |
-| [[智能体/Agent_Evaluation/Corpus_Assessment/Corpus_Quality_Metrics|Corpus Quality Metrics]] | Corpus Quality Metrics | 评估工程师/研究者 |
+| [[15_智能体/07_Agent_Evaluation/Corpus_Assessment/Corpus_Coverage_Framework|Corpus Coverage Framework]] | Corpus Coverage Framework | 评估工程师/研究者 |
+| [[15_智能体/07_Agent_Evaluation/Corpus_Assessment/Corpus_Improvement_Guide|Corpus Improvement Guide]] | Corpus Improvement Guide | 评估工程师/研究者 |
+| [[15_智能体/07_Agent_Evaluation/Corpus_Assessment/Corpus_Quality_Metrics|Corpus Quality Metrics]] | Corpus Quality Metrics | 评估工程师/研究者 |
 
 ## 入门
 
-- [[智能体/Agent_Evaluation/Corpus_Assessment/README|README]]
+- [[15_智能体/07_Agent_Evaluation/Corpus_Assessment/README|README]]
 
 ## Related
 
-- [[智能体/Agent_Evaluation/Test_Bank/index|题库管理]]
-- [[智能体/Agent_Evaluation/Metrics/index|评估指标]]
-- [[智能体/Agent_Evaluation/index|← 返回智能体评估]]
+- [[15_智能体/07_Agent_Evaluation/Test_Bank/index|题库管理]]
+- [[15_智能体/07_Agent_Evaluation/Metrics/index|评估指标]]
+- [[15_智能体/07_Agent_Evaluation/index|← 返回智能体评估]]
 
 ## Corpus_Assessment 核心概念
 

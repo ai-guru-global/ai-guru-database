@@ -12,22 +12,22 @@ This page indexes the contents of `计算机视觉`.
 
 ## Subdirectories
 
-- [[计算机视觉/3D_Vision/index|3D Vision]]
-- [[计算机视觉/Generative_Models/index|Generative Models]]
-- [[计算机视觉/Image_Classification_Detection/index|Image Classification Detection]]
-- [[计算机视觉/Multimodal_Vision/index|Multimodal Vision]]
-- [[计算机视觉/OCR_Text_Recognition/index|OCR Text Recognition]]
-- [[计算机视觉/Segmentation/index|Segmentation]]
-- [[计算机视觉/Video_Generation/index|Video Generation]]
+- [[04_计算机视觉/05_3D_Vision/index|3D Vision]]
+- [[04_计算机视觉/06_Generative_Models/index|Generative Models]]
+- [[04_计算机视觉/02_Image_Classification_Detection/index|Image Classification Detection]]
+- [[04_计算机视觉/08_Multimodal_Vision/index|Multimodal Vision]]
+- [[04_计算机视觉/04_OCR_Text_Recognition/index|OCR Text Recognition]]
+- [[04_计算机视觉/03_Segmentation/index|Segmentation]]
+- [[04_计算机视觉/07_Video_Generation/index|Video Generation]]
 
 ## Files
 
-- [[计算机视觉/CV-in-nutshell|CV In Nutshell]]
-- [[计算机视觉/CV_Fundamentals|CV Fundamentals]]
-- [[计算机视觉/HF_Diffusers_Practical_Guide|HF Diffusers Practical Guide]]
-- [[计算机视觉/README|README]]
-- [[计算机视觉/README_for_dummy|README For Dummy]]
-- [[计算机视觉/ViT_Deep_Dive|Vit Deep Dive]]
+- [[04_计算机视觉/CV-in-nutshell|CV In Nutshell]]
+- [[04_计算机视觉/CV_Fundamentals|CV Fundamentals]]
+- [[04_计算机视觉/HF_Diffusers_Practical_Guide|HF Diffusers Practical Guide]]
+- [[04_计算机视觉/README|README]]
+- [[04_计算机视觉/README_for_dummy|README For Dummy]]
+- [[04_计算机视觉/ViT_Deep_Dive|Vit Deep Dive]]
 
 ## 进阶知识拓展
 
@@ -65,9 +65,9 @@ This page indexes the contents of `计算机视觉`.
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

@@ -15,19 +15,19 @@ AI 测试知识体系（Testing Knowledge Base）— 涵盖测试方法论、评
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[测试/README|README]] | Testing module overview and knowledge map | all readers |
-| [[测试/README_for_dummy|README for dummy]] | Testing beginner guide and quick start | newcomers / beginners |
+| [[09_测试/README|README]] | Testing module overview and knowledge map | all readers |
+| [[09_测试/README_for_dummy|README for dummy]] | Testing beginner guide and quick start | newcomers / beginners |
 
 ## Related
 
-- [[测试/Testing_Fundamentals/index|Testing Fundamentals]]
-- [[测试/Agent_Evaluation_index|Agent Evaluation]]
-- [[测试/AB_Testing_index|AB Testing]]
-- [[测试/RAGAS_index|RAGAS]]
-- [[测试/Weights_Biases_index|Weights & Biases]]
-- [[测试/Test_Data_index|Test Data]]
-- [[测试/Contract_Testing_index|Contract Testing]]
-- [[模型评估/index|模型评估]]
+- [[09_测试/01_Testing_Fundamentals/index|Testing Fundamentals]]
+- [[09_测试/Agent_Evaluation_index|Agent Evaluation]]
+- [[09_测试/AB_Testing_index|AB Testing]]
+- [[09_测试/RAGAS_index|RAGAS]]
+- [[09_测试/Weights_Biases_index|Weights & Biases]]
+- [[09_测试/Test_Data_index|Test Data]]
+- [[09_测试/Contract_Testing_index|Contract Testing]]
+- [[08_模型评估/index|模型评估]]
 
 ## 子域简介
 

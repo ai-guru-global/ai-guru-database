@@ -14,14 +14,14 @@ sources: []
 
 | 文件 | 说明 |
 |------|------|
-| [[运维/AIOps_Fundamentals/AI_Ops_for_dummy|入门版]] | 零基础 AIOps 入门 |
-| [[运维/AIOps_Fundamentals/AIOps-in-nutshell|速览]] | AIOps 精华速览 |
-| [[运维/AIOps_Fundamentals/AI_Ops_2026|AI Ops 2026]] | 2026 年智能运维全景 |
+| [[13_运维/01_AIOps_Fundamentals/AI_Ops_for_dummy|入门版]] | 零基础 AIOps 入门 |
+| [[13_运维/01_AIOps_Fundamentals/AIOps-in-nutshell|速览]] | AIOps 精华速览 |
+| [[13_运维/01_AIOps_Fundamentals/AI_Ops_2026|AI Ops 2026]] | 2026 年智能运维全景 |
 
 ## Related
 
-- [[运维/Observability_index|Observability]]
-- [[运维/Incident_Response/index|Incident Response]]
+- [[13_运维/Observability_index|Observability]]
+- [[13_运维/03_Incident_Response/index|Incident Response]]
 
 ## 进阶知识拓展
 
@@ -59,9 +59,9 @@ sources: []
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

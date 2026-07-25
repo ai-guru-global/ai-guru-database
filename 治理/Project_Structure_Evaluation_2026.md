@@ -39,10 +39,10 @@ sources: []
 | **无 README** | **12** | **07, 08, 10, 11, 12, 18, 21, 23, 91, 92, 93, 94** |
 
 **关键缺失**：
-- `模型训练/` — 核心工程环节，无入口导航
-- `模型评估/` — 只有 2 个文件（Model_Evaluation.md + for_dummy），无章节导览
-- `RAG系统/` — 有 `README_Advanced.md` 但无标准 `README.md`，命名不一致
-- `架构基建/` — 8 个技术文件但无导航入口
+- `07_模型训练/` — 核心工程环节，无入口导航
+- `08_模型评估/` — 只有 2 个文件（Model_Evaluation.md + for_dummy），无章节导览
+- `14_RAG系统/` — 有 `README_Advanced.md` 但无标准 `README.md`，命名不一致
+- `12_架构基建/` — 8 个技术文件但无导航入口
 - `_projects/Cloud_Ops_Agent/` — 5 个核心文件 + mkdocs 配置，无章节导览
 
 ### 2.2 for_dummy 简化版覆盖度
@@ -72,8 +72,8 @@ sources: []
 
 | 有 Nutshell | 无 Nutshell（关键缺失） |
 |------------|----------------------|
-| 大模型/LLM_Architectures | **01_Fundamentals**（无） |
-| 大模型/Prompt_Engineering | **02_Machine_Learning**（无） |
+| 05_大模型/LLM_Architectures | **01_Fundamentals**（无） |
+| 05_大模型/Prompt_Engineering | **02_Machine_Learning**（无） |
 | 06_RL/AI_Agents | **03_Deep_Learning**（无） |
 | 07_Model_Training | **05_Computer_Vision**（无） |
 | 09_Deployment_Inference | **08_Model_Evaluation**（无） |
@@ -238,20 +238,20 @@ sources: []
 **Spring AI** 主题分散在 **12** 个不同文件中：
 
 ```
-数学基础/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md
-数学基础/Java_Ecosystem_AI/Java_Ecosystem_AI_Overview.md
-数学基础/README.md
-部署推理/Inference_Engines/JVM_AI_Deployment.md
-RAG系统/RAG_Frameworks/Spring_AI_RAG_Deep_Dive.md
-架构基建/Spring_AI_Architecture.md
-智能体/Agent_Skills/Spring_AI_Skills_Integration.md
-智能体/Agent_Skills/README.md
-智能体/Agent_Skills/Agent_Skills_Deep_Dive.md
+01_数学基础/11_Java_Ecosystem_AI/Spring_AI_Deep_Dive.md
+01_数学基础/11_Java_Ecosystem_AI/Java_Ecosystem_AI_Overview.md
+01_数学基础/README.md
+10_部署推理/02_Inference_Engines/JVM_AI_Deployment.md
+14_RAG系统/06_RAG_Frameworks/Spring_AI_RAG_Deep_Dive.md
+12_架构基建/Spring_AI_Architecture.md
+15_智能体/05_Agent_Skills/Spring_AI_Skills_Integration.md
+15_智能体/05_Agent_Skills/README.md
+15_智能体/05_Agent_Skills/Agent_Skills_Deep_Dive.md
 14_AI_Gateway/Spring_AI_Gateway_Security.md
 AI测试/Testing_Frameworks/Java_AI_Testing.md
-模型运维/Cloud_Ops_Agent/Java_Cloud_SDK_Guide.md
+11_模型运维/Cloud_Ops_Agent/Java_Cloud_SDK_Guide.md
 治理/ROADMAP.md
-学习/pathways/java-developer.md
+90_学习/pathways/java-developer.md
 ```
 
 **问题**：
@@ -260,8 +260,8 @@ AI测试/Testing_Frameworks/Java_AI_Testing.md
 - 维护成本高（一处更新需同步 12 处）
 
 **建议**：
-- 建立 `数学基础/Java_Ecosystem_AI/` 为主入口
-- 其他章节使用统一引用：`[Spring AI](../数学基础/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md)`
+- 建立 `01_数学基础/11_Java_Ecosystem_AI/` 为主入口
+- 其他章节使用统一引用：`[Spring AI](../01_数学基础/11_Java_Ecosystem_AI/Spring_AI_Deep_Dive.md)`
 - 各章节只写与自身领域相关的 Spring AI 扩展（如 RAG 章节只写 Spring AI RAG，不重复基础介绍）
 
 ### 4.4 连通性评分
@@ -402,14 +402,14 @@ AI测试/Testing_Frameworks/Java_AI_Testing.md
 为以下目录创建标准化 README：
 
 ```
-模型训练/README.md
-模型评估/README.md
+07_模型训练/README.md
+08_模型评估/README.md
 MLOps/README.md
-RAG系统/README.md          （将 README_Advanced.md 重命名或合并）
-架构基建/README.md
+14_RAG系统/README.md          （将 README_Advanced.md 重命名或合并）
+12_架构基建/README.md
 _projects/Cloud_Ops_Agent/README.md
-业界观点/README.md
-面试岗位/README.md
+19_业界观点/README.md
+21_面试岗位/README.md
 治理/notes/README.md
 治理/plan/README.md
 93_Templates/README.md
@@ -442,7 +442,7 @@ _projects/Cloud_Ops_Agent/README.md
 
 #### 2. 统一命名规范
 
-- `RAG系统/README_Advanced.md` → 重命名为 `README.md` 或合并为双栏导航
+- `14_RAG系统/README_Advanced.md` → 重命名为 `README.md` 或合并为双栏导航
 - 确保所有主要目录都有 `README.md`（而非 `README_Advanced.md` 或其他变体）
 
 ### 7.2 短期执行（1-2 周）
@@ -452,7 +452,7 @@ _projects/Cloud_Ops_Agent/README.md
 新增以下文件，目标总量达到 3,000+ 行：
 
 ```
-模型训练/
+07_模型训练/
 ├── README.md                           ← 新建
 ├── Model-Training-in-nutshell.md       ← 现有（可保留）
 ├── Distributed_Training_2026.md        ← 新建（DDP / FSDP / DeepSpeed / Megatron）
@@ -466,7 +466,7 @@ _projects/Cloud_Ops_Agent/README.md
 #### 4. 扩充 08_Model_Evaluation
 
 ```
-模型评估/
+08_模型评估/
 ├── README.md                           ← 新建
 ├── Model_Evaluation.md                 ← 扩充至 1,500+ 行
 ├── Model_Evaluation_for_dummy.md       ← 精简至正常版的 60-80%
@@ -478,23 +478,23 @@ _projects/Cloud_Ops_Agent/README.md
 #### 5. 补齐 for_dummy 和 nutshell
 
 **for_dummy 缺失清单**（12 个）：
-- `数学基础/Java_Ecosystem_AI/Java_Ecosystem_AI_for_dummy.md`
-- `大模型/Multimodal_Models/Multimodal_Models_for_dummy.md`
-- `大模型/Reasoning_Models/Reasoning_Models_for_dummy.md`
-- `伦理安全/AI_Supply_Chain_Security/AI_Supply_Chain_Security_for_dummy.md`
-- `伦理安全/Deepfake_Security/Deepfake_Security_for_dummy.md`
-- `伦理安全/Mechanistic_Interpretability/Mechanistic_Interpretability_for_dummy.md`
-- `伦理安全/Privacy_Preserving_AI/Privacy_Preserving_AI_for_dummy.md`
+- `01_数学基础/11_Java_Ecosystem_AI/Java_Ecosystem_AI_for_dummy.md`
+- `05_大模型/10_Multimodal_Models/Multimodal_Models_for_dummy.md`
+- `05_大模型/09_Reasoning_Models/Reasoning_Models_for_dummy.md`
+- `17_伦理安全/08_AI_Supply_Chain_Security/AI_Supply_Chain_Security_for_dummy.md`
+- `17_伦理安全/09_Deepfake_Security/Deepfake_Security_for_dummy.md`
+- `17_伦理安全/05_Mechanistic_Interpretability/Mechanistic_Interpretability_for_dummy.md`
+- `17_伦理安全/10_Privacy_Preserving_AI/Privacy_Preserving_AI_for_dummy.md`
 
 **nutshell 缺失清单**（关键 8 个）：
-- `数学基础/Math_Fundamentals/Fundamentals-in-nutshell.md`
-- `机器学习/ML_Fundamentals/ML-in-nutshell.md`
-- `深度学习/DL_Fundamentals/DL-in-nutshell.md`
-- `计算机视觉/CV_Fundamentals/CV-in-nutshell.md`
-- `模型评估/Evaluation_Fundamentals/Evaluation-in-nutshell.md`
-- `架构基建/Architecture_Fundamentals/Architecture-in-nutshell.md`
-- `伦理安全/Ethics_Fundamentals/Ethics-in-nutshell.md`
-- `行业应用/Industry_Overview/Industry-in-nutshell.md`
+- `01_数学基础/01_Math_Fundamentals/Fundamentals-in-nutshell.md`
+- `02_机器学习/01_ML_Fundamentals/ML-in-nutshell.md`
+- `03_深度学习/01_DL_Fundamentals/DL-in-nutshell.md`
+- `04_计算机视觉/01_CV_Fundamentals/CV-in-nutshell.md`
+- `08_模型评估/01_Evaluation_Fundamentals/Evaluation-in-nutshell.md`
+- `12_架构基建/01_Architecture_Fundamentals/Architecture-in-nutshell.md`
+- `17_伦理安全/01_Ethics_Fundamentals/Ethics-in-nutshell.md`
+- `18_行业应用/01_Industry_Overview/Industry-in-nutshell.md`
 
 #### 6. 重构 21_Talks 和 22_Papers
 
@@ -504,8 +504,8 @@ _projects/Cloud_Ops_Agent/README.md
 - 在每个 `sayings.md` 底部增加"相关章节"链接
 
 **22_Papers 建议**：
-- 选择 Top 10 最具影响力论文，在对应章节中撰写深度解读（如 Attention Is All You Need 在 `大模型/Transformer_Revolution/` 中扩充）
-- `论文精读/README.md` 改为"论文索引 + 对应章节链接"，而非纯外链列表
+- 选择 Top 10 最具影响力论文，在对应章节中撰写深度解读（如 Attention Is All You Need 在 `05_大模型/04_Transformer_Revolution/` 中扩充）
+- `20_论文精读/README.md` 改为"论文索引 + 对应章节链接"，而非纯外链列表
 
 ### 7.3 中期规划（2-4 周）
 
@@ -552,18 +552,18 @@ _projects/Cloud_Ops_Agent/README.md
 
 以 Spring AI 为试点：
 
-1. **主入口**：`数学基础/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md`（全面介绍）
+1. **主入口**：`01_数学基础/11_Java_Ecosystem_AI/Spring_AI_Deep_Dive.md`（全面介绍）
 2. **其他章节**只写领域特定扩展：
- - `RAG系统/RAG_Frameworks/Spring_AI_RAG_Deep_Dive.md` → 只写 RAG 相关，基础部分引用主入口
+ - `14_RAG系统/06_RAG_Frameworks/Spring_AI_RAG_Deep_Dive.md` → 只写 RAG 相关，基础部分引用主入口
  - `14_AI_Gateway/Spring_AI_Gateway_Security.md` → 只写安全相关，基础部分引用主入口
 3. **在每个相关文件顶部添加**：
    ```markdown
-   > 📚 **Spring AI 基础**: 如果你还不熟悉 Spring AI，请先阅读 [Spring AI 深度解析](../数学基础/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md)。
+   > 📚 **Spring AI 基础**: 如果你还不熟悉 Spring AI，请先阅读 [Spring AI 深度解析](../01_数学基础/11_Java_Ecosystem_AI/Spring_AI_Deep_Dive.md)。
    ```
 
 #### 9. 扩充行业应用章节
 
-将 `行业应用/` 的 10 个行业文件从平均 220 行扩充至 500+ 行：
+将 `18_行业应用/` 的 10 个行业文件从平均 220 行扩充至 500+ 行：
 
 每个行业文件应包含：
 - 行业背景与 AI 应用场景（100 行）

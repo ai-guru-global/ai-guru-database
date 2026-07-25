@@ -322,4 +322,4 @@ image_square_size: 336
 
 ## Related
 
-- [[大模型/README.md|README]]
+- [[05_大模型/README.md|README]]

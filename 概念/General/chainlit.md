@@ -10,7 +10,7 @@ relationships:
   - target: "概念/opik"
     type: related_to
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
 summary: "Chainlit 是专为 AI 聊天应用设计的 Python UI 框架——原生支持流式输出、多轮对话、文件上传、Agent 步骤可视化。比 Streamlit/Gradio 更适合生产级 AI 聊天场景。"
 provenance:
   extracted: 0.15

@@ -71,15 +71,15 @@ sources: []
 
 ## Related
 
-- [[业界观点/Zhilin_Yang/about]] — 杨植麟简介
-- [[大模型/Chinese_LLM_Ecosystem/Kimi_Moonshot_Deep_Dive]] — Kimi/月之暗面深度解析
-- [[大模型/LLM_Architectures/Long_Context_Models_2026]] — 长上下文模型全景
+- [[19_业界观点/Zhilin_Yang/about]] — 杨植麟简介
+- [[05_大模型/15_Chinese_LLM_Ecosystem/Kimi_Moonshot_Deep_Dive]] — Kimi/月之暗面深度解析
+- [[05_大模型/05_LLM_Architectures/Long_Context_Models_2026]] — 长上下文模型全景
 
 ---
 
 *Last updated: 2026-06-24*
 
-- [[业界观点/README|AI 名人演讲与观点 (Talks)]]
+- [[19_业界观点/README|AI 名人演讲与观点 (Talks)]]
 
 ## 观点影响力评估
 
@@ -142,7 +142,7 @@ sources: []
 | 安全伦理 | 对齐/监管/风险 | #安全 |
 | 商业洞察 | 市场/竞争/战略 | #商业 |
 | 社会影响 | 就业/教育/公平 | #社会 |
-| 个人成长 | 学习/思维/习惯 | #成长 |
+| 个人成长 | 90_学习/思维/习惯 | #成长 |
 
 ## 附录：引用指南
 

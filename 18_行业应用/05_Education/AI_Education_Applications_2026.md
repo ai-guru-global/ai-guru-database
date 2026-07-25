@@ -602,13 +602,13 @@ aliases:
 ## 相关概念
 
 > **关联**:
-> - [[行业应用/Education/index|教育 AI]]
-> - [[伦理安全/README|伦理安全]]
+> - [[18_行业应用/05_Education/index|教育 AI]]
+> - [[17_伦理安全/README|伦理安全]]
 > - [[LLM/README|大语言模型]]
-> - [[智能体/README|AI Agent]]
+> - [[15_智能体/README|AI Agent]]
 > - [[多模态/README|多模态 AI]]
 > - [[RAG/README|RAG 检索增强生成]]
-> - [[行业应用/AI_Code_Generation_2026|AI 代码生成]]
+> - [[18_行业应用/AI_Code_Generation_2026|AI 代码生成]]
 > - [[知识图谱/README|知识图谱]]
-> - [[强化学习/README|强化学习]]
+> - [[06_强化学习/README|强化学习]]
 > - [[Prompt_Engineering/README|Prompt Engineering]]

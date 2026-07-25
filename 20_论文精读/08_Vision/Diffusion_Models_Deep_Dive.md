@@ -852,18 +852,18 @@ class ConditionalDiffusion:
 ## 11. 与其他章节的关联
 
 ### 前置知识
-- [Attention Is All You Need 深度解读](论文精读/Architecture/Attention_Is_All_You_Need_Deep_Dive.md) — Transformer 架构基础
-- [ResNet 深度解读](论文精读/Vision/ResNet_Deep_Dive.md) — U-Net 中的残差连接
-- [计算机视觉](../../计算机视觉/README.md) — 生成模型基础
+- [Attention Is All You Need 深度解读](20_论文精读/02_Architecture/Attention_Is_All_You_Need_Deep_Dive.md) — Transformer 架构基础
+- [ResNet 深度解读](20_论文精读/08_Vision/ResNet_Deep_Dive.md) — U-Net 中的残差连接
+- [计算机视觉](../../04_计算机视觉/README.md) — 生成模型基础
 
 ### 横向关联
-- [生成模型](../计算机视觉/Generative_Models/) — GAN / VAE / Diffusion 对比
-- [RLHF 与 DPO 深度解读](论文精读/Alignment/RLHF_DPO_Deep_Dive.md) — RLHF 用于对齐生成模型
-- [LLaMA 深度解读](论文精读/Architecture/LLaMA_Deep_Dive.md) — DiT 与 LLM 架构的融合
+- [生成模型](../04_计算机视觉/06_Generative_Models/) — GAN / VAE / Diffusion 对比
+- [RLHF 与 DPO 深度解读](20_论文精读/06_Alignment/RLHF_DPO_Deep_Dive.md) — RLHF 用于对齐生成模型
+- [LLaMA 深度解读](20_论文精读/02_Architecture/LLaMA_Deep_Dive.md) — DiT 与 LLM 架构的融合
 
 ### 进阶方向
-- [Mixture of Experts 深度解读](论文精读/Architecture/Mixture_of_Experts_Deep_Dive.md) — MoE 在扩散模型中的应用
-- [模型训练](../../模型训练/README.md) — 大规模扩散模型训练
+- [Mixture of Experts 深度解读](20_论文精读/02_Architecture/Mixture_of_Experts_Deep_Dive.md) — MoE 在扩散模型中的应用
+- [模型训练](../../07_模型训练/README.md) — 大规模扩散模型训练
 
 ---
 

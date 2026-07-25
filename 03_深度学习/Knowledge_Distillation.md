@@ -279,8 +279,8 @@ def online_mutual_distillation(models, x, y, temperature=3.0):
 
 ## 相关文档
 
-- [[深度学习/Neural_Architecture_Search/|NAS]] — 架构搜索
-- [[部署推理/Model_Compression/|模型压缩]] — 量化/剪枝
-- [[大模型/Edge_LLM/|边缘 LLM]] — 小模型部署
-- [[大模型/Fine_tuning_Techniques/|微调技术]] — LoRA/QLoRA
-- [[大模型/Reasoning_Models/|推理模型]] — 思维链蒸馏
+- [[03_深度学习/Neural_Architecture_Search/|NAS]] — 架构搜索
+- [[10_部署推理/Model_Compression/|模型压缩]] — 量化/剪枝
+- [[05_大模型/12_Edge_LLM/|边缘 LLM]] — 小模型部署
+- [[05_大模型/07_Fine_tuning_Techniques/|微调技术]] — LoRA/QLoRA
+- [[05_大模型/09_Reasoning_Models/|推理模型]] — 思维链蒸馏

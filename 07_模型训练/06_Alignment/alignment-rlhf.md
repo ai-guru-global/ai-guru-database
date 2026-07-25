@@ -37,11 +37,11 @@ sources: []
 
 ## 跨域连接
 
-- [[大模型/Reasoning_Models/o1_Class_Reasoning_Models|推理模型]] — o1-class 模型的思维链与对齐目标的张力
-- [[大模型/Fine_tuning_Techniques/Fine_tuning_Strategies|微调策略]] — SFT → RLHF → DPO 的完整流水线
-- [[论文精读/Alignment/RLHF_DPO_Deep_Dive|RLHF 与 DPO 深度解读]] — 从 PPO 到 Direct Preference Optimization
-- [[伦理安全/Value_Alignment|价值对齐]] — 对齐的理论基础与伦理框架
-- [[伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming|红队测试]] — 对齐后的对抗验证
+- [[05_大模型/09_Reasoning_Models/o1_Class_Reasoning_Models|推理模型]] — o1-class 模型的思维链与对齐目标的张力
+- [[05_大模型/07_Fine_tuning_Techniques/Fine_tuning_Strategies|微调策略]] — SFT → RLHF → DPO 的完整流水线
+- [[20_论文精读/06_Alignment/RLHF_DPO_Deep_Dive|RLHF 与 DPO 深度解读]] — 从 PPO 到 Direct Preference Optimization
+- [[17_伦理安全/Value_Alignment|价值对齐]] — 对齐的理论基础与伦理框架
+- [[17_伦理安全/04_AI_Safety_RedTeaming/AI_Safety_RedTeaming|红队测试]] — 对齐后的对抗验证
 
 ## 前沿方向
 
@@ -90,9 +90,9 @@ sources: []
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

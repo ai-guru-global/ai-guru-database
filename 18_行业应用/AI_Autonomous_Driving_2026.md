@@ -265,21 +265,21 @@ AI交通管理 2025-2026:
 
 ## 扩展章节：跨行业关联
 
-- [行业对比分析](行业应用/Industry_Overview/Industry_Comparison_2026.md) — 全行业的横向对比
-- [行业速览](行业应用/Industry_Overview/Industry-in-nutshell.md) — 30 分钟了解所有行业 AI 应用
-- [机器学习](../机器学习/README.md) — 基础算法与模型
-- [深度学习](../深度学习/README.md) — 神经网络核心技术
-- [MLOps](../模型运维/README.md) — 模型生产化部署
+- [行业对比分析](18_行业应用/01_Industry_Overview/Industry_Comparison_2026.md) — 全行业的横向对比
+- [行业速览](18_行业应用/01_Industry_Overview/Industry-in-nutshell.md) — 30 分钟了解所有行业 AI 应用
+- [机器学习](../02_机器学习/README.md) — 基础算法与模型
+- [深度学习](../03_深度学习/README.md) — 神经网络核心技术
+- [MLOps](../11_模型运维/README.md) — 模型生产化部署
 
 ---
 
 ## Related
 
-- [[../RAG系统/RAG_Production|RAG 生产部署]] — 车载知识库与实时检索
-- [[../智能体/Agent_Frameworks/LangChain_Deep_Dive|Agent 框架]] — 自动驾驶决策 Agent
-- [[../大模型/Multimodal_Models/Multimodal_Architectures_2026|多模态架构]] — 多传感器融合感知
-- [[../模型评估/Benchmarks/LLM_Benchmark_Suite_2026|评估基准]] — 自动驾驶安全评估指标
-- [[../部署推理/Deployment_Strategies|部署策略]] — 车端模型部署方案
+- [[../14_RAG系统/RAG_Production|RAG 生产部署]] — 车载知识库与实时检索
+- [[../15_智能体/02_Agent_Frameworks/LangChain_Deep_Dive|Agent 框架]] — 自动驾驶决策 Agent
+- [[../05_大模型/10_Multimodal_Models/Multimodal_Architectures_2026|多模态架构]] — 多传感器融合感知
+- [[../08_模型评估/02_Benchmarks/LLM_Benchmark_Suite_2026|评估基准]] — 自动驾驶安全评估指标
+- [[../10_部署推理/Deployment_Strategies|部署策略]] — 车端模型部署方案
 
 ---
 

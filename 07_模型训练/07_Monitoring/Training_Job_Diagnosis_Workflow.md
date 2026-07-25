@@ -148,9 +148,9 @@ kubectl exec -it <pod> -n <ns> -- python train.py --batch_size 1 --max_steps 10
 
 ## Related
 
-- [[模型训练/Monitoring/LLM_Fine_Tuning_Job_Failure_Runbook_on_K8s|LLM 微调任务 K8s 失败排障]]
-- [[模型训练/Distributed_Training/Distributed_Training_Hang_Runbook|分布式训练 Hang 排障]]
-- [[运维/SRE_Reliability/K8s_AI_Troubleshooting_Cheat_Sheet|K8s for AI 排查速查表]]
+- [[07_模型训练/07_Monitoring/LLM_Fine_Tuning_Job_Failure_Runbook_on_K8s|LLM 微调任务 K8s 失败排障]]
+- [[07_模型训练/04_Distributed_Training/Distributed_Training_Hang_Runbook|分布式训练 Hang 排障]]
+- [[13_运维/02_SRE_Reliability/K8s_AI_Troubleshooting_Cheat_Sheet|K8s for AI 排查速查表]]
 
 ## 进阶知识拓展
 
@@ -188,9 +188,9 @@ kubectl exec -it <pod> -n <ns> -- python train.py --batch_size 1 --max_steps 10
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

@@ -14,7 +14,7 @@ relationships:
   - target: "概念/ray"
     type: related_to
 sources:
-  - 架构基建/CNCF_Cloud_Native_AI/Kueue_Deep_Dive.md
+  - 12_架构基建/05_CNCF_Cloud_Native_AI/Kueue_Deep_Dive.md
 summary: "Kueue 是 Kubernetes 原生的作业排队和配额管理系统，通过 ClusterQueue、LocalQueue、Workload 等 CRD 实现多租户资源公平共享，是 K8s SIG Scheduling 官方项目。"
 provenance:
   extracted: 0.75
@@ -101,7 +101,7 @@ aliases:
 
 ## Related
 
-- [[架构基建/CNCF_Cloud_Native_AI/Kueue_Deep_Dive]] — Kueue 深度解析
+- [[12_架构基建/05_CNCF_Cloud_Native_AI/Kueue_Deep_Dive]] — Kueue 深度解析
 - [[概念/kubernetes]] — Kubernetes
 - [[概念/volcano]] — Volcano
 - [[概念/kubeflow]] — Kubeflow

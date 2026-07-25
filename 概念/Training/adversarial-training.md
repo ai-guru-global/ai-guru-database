@@ -116,8 +116,8 @@ for x, y in dataloader:
 
 - [[概念/Safety/prompt-injection|Prompt 注入]] — LLM 中的对抗攻击
 - [[概念/LLM/llm-safety|LLM 安全]] — 对抗训练的应用场景
-- [[伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming|红队测试]] — 生成对抗样本
-- [[架构基建/Security/AI_Security_Fundamentals|AI 安全基础]]
+- [[17_伦理安全/04_AI_Safety_RedTeaming/AI_Safety_RedTeaming|红队测试]] — 生成对抗样本
+- [[12_架构基建/10_Security/AI_Security_Fundamentals|AI 安全基础]]
 
 ## 2026 对抗训练生态现状
 
@@ -150,8 +150,8 @@ for x, y in dataloader:
 
 - [[概念/LLM/llm-safety|LLM Safety]] — LLM 安全
 - [[概念/Safety/adversarial-attacks|Adversarial Attacks]] — 对抗攻击
-- [[伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming|红队测试]] — 红队测试
-- [[架构基建/Security/AI_Security_Fundamentals|AI 安全基础]] — AI 安全
+- [[17_伦理安全/04_AI_Safety_RedTeaming/AI_Safety_RedTeaming|红队测试]] — 红队测试
+- [[12_架构基建/10_Security/AI_Security_Fundamentals|AI 安全基础]] — AI 安全
 - [[概念/Training/pre-training|Pre-training]] — 预训练
 
 > ℹ️ 对抗训练是提升模型鲁棒性的核心技术，2026年 LLM 安全场景中红队测试 + 对抗微调是标配。

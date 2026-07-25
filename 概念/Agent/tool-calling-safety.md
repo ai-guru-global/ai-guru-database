@@ -12,8 +12,8 @@ relationships:
   - target: "概念/red-teaming"
     type: tested_by
 sources:
-  - 智能体/Agent_Skills/Agent_Skills_Multi_Role_Analysis.md
-  - 伦理安全/LLM_Security_Defense_Guide.md
+  - 15_智能体/05_Agent_Skills/Agent_Skills_Multi_Role_Analysis.md
+  - 17_伦理安全/LLM_Security_Defense_Guide.md
   - Agent/Agentic_Design_Patterns_AndrewNg.md
 summary: "工具调用安全是指防止 AI Agent 在调用外部工具（函数、API、数据库、代码执行）时造成危害的一整套防护措施。核心风险包括越权操作、数据泄露、恶意输入、错误调用链和不可控的自主行为。"
 provenance:
@@ -197,7 +197,7 @@ Model Context Protocol (MCP) 提供了标准化的工具安全机制：
 - [[概念/tool-calling]] — 工具调用
 - [[概念/guardrails]] — Guardrails 安全护栏
 - [[概念/red-teaming]] — 红队测试
-- [[伦理安全/LLM_Security_Defense_Guide]] — LLM 安全防御指南
-- [[智能体/Agent_Skills/Agent_Skills_Multi_Role_Analysis]] — Agent 技能多角色分析
+- [[17_伦理安全/LLM_Security_Defense_Guide]] — LLM 安全防御指南
+- [[15_智能体/05_Agent_Skills/Agent_Skills_Multi_Role_Analysis]] — Agent 技能多角色分析
 - [[概念/agent-production-deployment|Agent 生产部署]] — 工具安全在生产部署中的落地
 - [[治理/Production_Safety_Policy|生产安全策略]] — 风险评估与操作安全规范

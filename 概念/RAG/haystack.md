@@ -10,7 +10,7 @@ relationships:
   - target: "概念/dify"
     type: related_to
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
 summary: "Haystack 是 deepset 开源的端到端 NLP/LLM 框架，以 Pipeline 架构为核心——支持 RAG、搜索、问答等多种 NLP 任务。模块化设计优秀，是企业级 RAG 系统的重要选择。"
 provenance:
   extracted: 0.20

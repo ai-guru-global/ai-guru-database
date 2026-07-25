@@ -400,9 +400,9 @@ KV Cache 内存估算:
 
 ## 相关阅读
 
-- [[深度学习/Neural_Network_Core/Neural_Network_Core]] — 神经网络核心
-- [[大模型/Transformer_Architecture]] — Transformer 架构
-- [[大模型/Transformer_Deep_Dive]] — Transformer 深度解析
-- [[计算机视觉/ViT_Deep_Dive]] — Vision Transformer
-- [[大模型/LLM_Inference_Deep_Dive]] — LLM 推理优化
-- [[部署推理/Quantization/Quantization]] — 量化技术
+- [[03_深度学习/02_Neural_Network_Core/Neural_Network_Core]] — 神经网络核心
+- [[05_大模型/Transformer_Architecture]] — Transformer 架构
+- [[05_大模型/Transformer_Deep_Dive]] — Transformer 深度解析
+- [[04_计算机视觉/ViT_Deep_Dive]] — Vision Transformer
+- [[05_大模型/LLM_Inference_Deep_Dive]] — LLM 推理优化
+- [[10_部署推理/05_Quantization/Quantization]] — 量化技术

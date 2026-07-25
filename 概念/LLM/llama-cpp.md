@@ -10,7 +10,7 @@ relationships:
   - target: "概念/gguf"
     type: uses_format
 sources:
-  - 部署推理/Inference_Engines/llama_cpp_Deep_Dive.md
+  - 10_部署推理/02_Inference_Engines/llama_cpp_Deep_Dive.md
   - 概念/Inference/gguf.md
 summary: "llama.cpp 是用纯 C++ 实现的 LLM 推理引擎，专为 CPU 和边缘设备优化，支持 GGUF 量化格式；在消费级硬件（Mac / 普通 PC）上即可运行 7B-70B 模型，是本地 LLM 部署的事实标准。"
 lifecycle: reviewed
@@ -133,7 +133,7 @@ print(output['choices'][0]['message']['content'])
 - [[概念/Inference/model-formats|模型格式全景]]
 - [[概念/LLM/edge-llm|边缘 LLM]]
 - [[概念/Inference/model-serving|模型服务]]
-- [[部署推理/Inference_Engines/llama_cpp_Deep_Dive|llama.cpp 深度解析]]
+- [[10_部署推理/02_Inference_Engines/llama_cpp_Deep_Dive|llama.cpp 深度解析]]
 
 ---
 

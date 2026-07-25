@@ -269,8 +269,8 @@ def prototypical_classification(support_embeddings, support_labels,
 
 ## 相关文档
 
-- [[机器学习/Semi_Supervised_Learning|半监督学习]] — 对比学习
-- [[RAG系统/Embeddings/|Embedding 模型]] — RAG 检索
-- [[深度学习/Self_Supervised_Learning/|自监督学习]] — 表示学习
-- [[计算机视觉/|计算机视觉]] — 人脸识别/检索
-- [[机器学习/Recommendation_Systems/|推荐系统]] — 相似度计算
+- [[02_机器学习/Semi_Supervised_Learning|半监督学习]] — 对比学习
+- [[14_RAG系统/02_Embeddings/|Embedding 模型]] — RAG 检索
+- [[03_深度学习/06_Self_Supervised_Learning/|自监督学习]] — 表示学习
+- [[04_计算机视觉/|计算机视觉]] — 人脸识别/检索
+- [[02_机器学习/10_Recommendation_Systems/|推荐系统]] — 相似度计算

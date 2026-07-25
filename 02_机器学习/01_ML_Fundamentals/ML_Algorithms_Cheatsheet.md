@@ -368,8 +368,8 @@ PCA 做什么?
 
 ## Related
 
-- [[机器学习/Supervised_Learning/Supervised_Learning]] — 监督学习深入
-- [[机器学习/Supervised_Learning/Your_First_ML_Model]] — 动手训练第一个模型
-- [[机器学习/Unsupervised_Learning/Unsupervised_Learning]] — 无监督学习深入
-- [[机器学习/Ensemble_Learning/Ensemble_Learning]] — 集成学习 (随机森林/XGBoost)
-- [[深度学习/Neural_Network_Core/Neural_Network_Core_for_dummy]] — 神经网络原理
+- [[02_机器学习/02_Supervised_Learning/Supervised_Learning]] — 监督学习深入
+- [[02_机器学习/02_Supervised_Learning/Your_First_ML_Model]] — 动手训练第一个模型
+- [[02_机器学习/03_Unsupervised_Learning/Unsupervised_Learning]] — 无监督学习深入
+- [[02_机器学习/04_Ensemble_Learning/Ensemble_Learning]] — 集成学习 (随机森林/XGBoost)
+- [[03_深度学习/02_Neural_Network_Core/Neural_Network_Core_for_dummy]] — 神经网络原理

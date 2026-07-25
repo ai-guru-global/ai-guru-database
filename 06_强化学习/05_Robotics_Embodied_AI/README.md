@@ -48,14 +48,14 @@ sources: []
 > **具身智能 = AI的"身体化"** — 从数字世界走向物理世界，让AI能像人类一样感知环境、理解任务并执行行动。
 
 ## Related
-- [[强化学习/Robotics_Embodied_AI/README|具身智能与机器人 (Robotics & Embodied AI)]]
+- [[06_强化学习/05_Robotics_Embodied_AI/README|具身智能与机器人 (Robotics & Embodied AI)]]
 
-- [[强化学习/AI_Agents/AI_Agents_for_dummy]] — AI智能体 - 小白版 🤖 (共享: agent, mdp, reinforcement-learning, rl)
-- [[强化学习/AI_Agents/Agent-in-nutshell]] — AI 智能体速成指南 (共享: agent, mdp, reinforcement-learning, rl)
-- [[强化学习/AI_Agents/Agent_Future_Roadmap_2026_2030]] — Agent 未来发展路线图 2026-2030 (共享: agent, mdp, reinforcement-learning, rl)
-- [[强化学习/AI_Agents/Agent_Protocols_Detail]] — AI Agent 协议详解：MCP、A2A、UCP (共享: agent, mdp, reinforcement-learning, rl)
+- [[06_强化学习/AI_Agents/AI_Agents_for_dummy]] — AI智能体 - 小白版 🤖 (共享: agent, mdp, reinforcement-learning, rl)
+- [[06_强化学习/AI_Agents/Agent-in-nutshell]] — AI 智能体速成指南 (共享: agent, mdp, reinforcement-learning, rl)
+- [[06_强化学习/AI_Agents/Agent_Future_Roadmap_2026_2030]] — Agent 未来发展路线图 2026-2030 (共享: agent, mdp, reinforcement-learning, rl)
+- [[06_强化学习/AI_Agents/Agent_Protocols_Detail]] — AI Agent 协议详解：MCP、A2A、UCP (共享: agent, mdp, reinforcement-learning, rl)
 
-- [[强化学习/Robotics_Embodied_AI/Robot_VLA_Training_Pipeline_2026|Robot VLA Training Pipeline 2026]]
+- [[06_强化学习/05_Robotics_Embodied_AI/Robot_VLA_Training_Pipeline_2026|Robot VLA Training Pipeline 2026]]
 
 ## 学习路径建议
 

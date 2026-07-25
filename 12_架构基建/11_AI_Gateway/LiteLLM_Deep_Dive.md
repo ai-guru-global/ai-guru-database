@@ -496,12 +496,12 @@ response = completion(
 
 ## Related
 
-- [[架构基建/AI_Gateway/AI_Gateway_2026.md|AI_Gateway_2026]]
-- [[架构基建/AI_Gateway/AI_Gateway_for_dummy.md|AI_Gateway_for_dummy]]
-- [[架构基建/AI_Gateway/Cohere_Deep_Dive.md|Cohere_Deep_Dive]]
-- [[架构基建/AI_Gateway/Gateway-in-nutshell.md|Gateway-in-nutshell]]
-- [[架构基建/AI_Gateway/Kong_AI_Gateway_Deep_Dive.md|Kong_AI_Gateway_Deep_Dive]]
-- [[部署推理/Inference_Engines/LLM_Inference_Engine_Selection_Guide|LLM 推理引擎选型指南]]
-- [[部署推理/Inference_Engines/LLM_Inference_Engine_Migration_Guide|LLM 推理引擎迁移指南]]
-- [[部署推理/Inference_Engines/vLLM_Deep_Dive|vLLM 深度解析]]
-- [[部署推理/Inference_Engines/SGLang_Deep_Dive|SGLang 深度解析]]
+- [[12_架构基建/11_AI_Gateway/AI_Gateway_2026.md|AI_Gateway_2026]]
+- [[12_架构基建/11_AI_Gateway/AI_Gateway_for_dummy.md|AI_Gateway_for_dummy]]
+- [[12_架构基建/11_AI_Gateway/Cohere_Deep_Dive.md|Cohere_Deep_Dive]]
+- [[12_架构基建/11_AI_Gateway/Gateway-in-nutshell.md|Gateway-in-nutshell]]
+- [[12_架构基建/11_AI_Gateway/Kong_AI_Gateway_Deep_Dive.md|Kong_AI_Gateway_Deep_Dive]]
+- [[10_部署推理/02_Inference_Engines/LLM_Inference_Engine_Selection_Guide|LLM 推理引擎选型指南]]
+- [[10_部署推理/02_Inference_Engines/LLM_Inference_Engine_Migration_Guide|LLM 推理引擎迁移指南]]
+- [[10_部署推理/02_Inference_Engines/vLLM_Deep_Dive|vLLM 深度解析]]
+- [[10_部署推理/02_Inference_Engines/SGLang_Deep_Dive|SGLang 深度解析]]

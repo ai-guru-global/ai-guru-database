@@ -320,9 +320,9 @@ z_4 → 控制面部特征
 
 ## 相关链接
 
-- [[论文精读/Vision/Diffusion_Models_Deep_Dive|扩散模型论文精读]] — VAE 的直接后继
-- [[论文精读/Vision/GAN_Deep_Dive|GAN 论文精读]] — 同类生成模型对比
-- [[论文精读/Vision/index|视觉论文索引]] — 视觉论文主题导览
-- [[深度学习/Generative_Models/VAE_Deep_Dive|VAE 深度解析]] — VAE 技术详解
+- [[20_论文精读/08_Vision/Diffusion_Models_Deep_Dive|扩散模型论文精读]] — VAE 的直接后继
+- [[20_论文精读/08_Vision/GAN_Deep_Dive|GAN 论文精读]] — 同类生成模型对比
+- [[20_论文精读/08_Vision/index|视觉论文索引]] — 视觉论文主题导览
+- [[03_深度学习/04_Generative_Models/VAE_Deep_Dive|VAE 深度解析]] — VAE 技术详解
 - [[概念/Math/probability-statistics|概率统计]] — 变分推断的数学基础
 - [[概念/Vision/generative-vision-models|生成式视觉模型]] — 生成模型概念

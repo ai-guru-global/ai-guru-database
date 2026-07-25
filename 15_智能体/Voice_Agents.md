@@ -178,11 +178,11 @@ VOICE_AGENT_APPLICATIONS = {
 
 ## 5. 交叉引用
 
-- [[智能体/|智能体系统]]
-- [[智能体/Computer_Use_Agents|Computer Use Agent]]
-- [[大模型/Multimodal_Models/Audio_LLM_2026|音频 LLM]]
-- [[部署推理/Serving_Architecture|服务架构]]
-- [[伦理安全/|伦理安全]]
+- [[15_智能体/|智能体系统]]
+- [[15_智能体/Computer_Use_Agents|Computer Use Agent]]
+- [[05_大模型/10_Multimodal_Models/Audio_LLM_2026|音频 LLM]]
+- [[10_部署推理/Serving_Architecture|服务架构]]
+- [[17_伦理安全/|伦理安全]]
 
 ## 附录：核心概念速查
 

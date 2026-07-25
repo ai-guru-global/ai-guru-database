@@ -13,7 +13,7 @@ sources: []
 # AI Guru 知识库整体内容完整性评估
 
 > **评估时间**: 2026-06-15  
-> **评估范围**: 当前工作目录全部 Markdown 内容（排除 `前端应用/`、`可视化/`、`mkdocs-docs/`、`原始/`、`归档/`、`.venv/`、`.git/`、`node_modules/` 及 macOS 副本文件）
+> **评估范围**: 当前工作目录全部 Markdown 内容（排除 `前端应用/`、`94_可视化/`、`mkdocs-docs/`、`原始/`、`归档/`、`.venv/`、`.git/`、`node_modules/` 及 macOS 副本文件）
 
 ---
 
@@ -49,7 +49,7 @@ sources: []
 
 - **README.md 覆盖**: 29/29 ✅
 - **README_for_dummy.md 覆盖**: 29/29 ✅
-- **in-nutshell 速成指南**: 约 18/29（62%），应用/资源型章节（业界观点/论文精读/23_Interviews 等）缺速成入口，按体裁可接受 🟡
+- **in-nutshell 速成指南**: 约 18/29（62%），应用/资源型章节（19_业界观点/20_论文精读/23_Interviews 等）缺速成入口，按体裁可接受 🟡
 
 ### 2.3 章节体量分布
 
@@ -101,9 +101,9 @@ sources: []
 ### 4.1 Frontmatter 问题
 
 - **YAML 语法错误**: 3 个文件因中文引号未转义导致解析失败
-  - `部署推理/Quantization/Quantization_Techniques_2026.md`
-  - `大模型/LLM_Fundamentals.md`
-  - `大模型/NLP_Fundamentals.md`
+  - `10_部署推理/05_Quantization/Quantization_Techniques_2026.md`
+  - `05_大模型/LLM_Fundamentals.md`
+  - `05_大模型/NLP_Fundamentals.md`
 - **空 summary 字段**: 43 个
 - **缺失 category**: 9 个
 - **缺失 tags**: 9 个
@@ -134,17 +134,17 @@ sources: []
 
 ### 6.1 目录健康
 
-- **空目录**: 214 个，其中大量来自 `前端应用/public/mkdocs/` 下带 ` 2`/` 3`/` 4` 后缀的重复副本目录，以及 `智能体/src`、`智能体/config` 等代码目录混入知识库
+- **空目录**: 214 个，其中大量来自 `前端应用/public/mkdocs/` 下带 ` 2`/` 3`/` 4` 后缀的重复副本目录，以及 `15_智能体/src`、`15_智能体/config` 等代码目录混入知识库
 - **辅助目录边界模糊**: `概念/`、`治理/`、`参考/`、`journal/` 与主章节关系未明确文档化
 
 ### 6.2 待完成内容
 
 - 17 个文件包含 `TODO:`、`WIP`、`占位符`、`待补充` 等标记，分布在：
   - `AI测试/Test_Data_Management.md`
-  - `模型运维/Cloud_Ops_Agent/Mobile_AI_Ops_Design.md`
-  - `模型评估/README.md`
+  - `11_模型运维/Cloud_Ops_Agent/Mobile_AI_Ops_Design.md`
+  - `08_模型评估/README.md`
   - `AI编程/` 下的 Vibe Coding 系列
-  - `智能体/` 的评估与 OpenClaw 生态
+  - `15_智能体/` 的评估与 OpenClaw 生态
 
 ### 6.3 版本控制
 
@@ -179,7 +179,7 @@ sources: []
 
 4. **运行链接清洗**: 区分真假失效链接，修复 `./docs#` 错误锚点和目录链接
 5. **提升 `MLOps` 标杆长文密度**: 现有 25 文件 / 22.7 万字符，但缺少 >5000 词单篇标杆，建议将 LLMOps/Feature Store/Model Registry 之一扩写为深度长文
-6. **治理 `前端应用/public/mkdocs/` 重复目录** 和 `智能体/src|tests|config` 代码混入
+6. **治理 `前端应用/public/mkdocs/` 重复目录** 和 `15_智能体/src|tests|config` 代码混入
 7. **建立统一统计脚本**（`scripts/count_core.py`），让 README badge、manifest、wiki-status 同源
 
 ### 🟢 P2 — 持续优化
@@ -201,7 +201,7 @@ AI Guru 知识库在**中文 AI 全栈知识库赛道**中属于**内容最丰�
 
 ## 附录: 评估方法
 
-- **统计工具**: Python `pathlib` + `re`，排除 `前端应用/`、`可视化/`、`mkdocs-docs/`、`原始/`、`归档/`、`.venv/`、`.git/`、`node_modules/` 及 macOS 副本文件
+- **统计工具**: Python `pathlib` + `re`，排除 `前端应用/`、`94_可视化/`、`mkdocs-docs/`、`原始/`、`归档/`、`.venv/`、`.git/`、`node_modules/` 及 macOS 副本文件
 - **字数口径**: 字符总数（UTF-8）
 - **基线对照**: `_project-evaluation.md` (2026-06-03)、`_quality-assessment.md` (2026-06-15)
 - **辅助参考**: `_content-gap-analysis.md`、`_lint-report.md`、`_wiki-status.md`

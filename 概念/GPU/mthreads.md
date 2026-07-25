@@ -69,7 +69,7 @@ sources: []
 - [[概念/ascend-npu|Ascend NPU]]
 - [[概念/hygon|Hygon]]
 - [[概念/GPU/cambricon|Cambricon]] — 国产 AI 芯片对比
-- [[部署推理/Hardware/Chinese_AI_Chip_Inference_Matrix|国产芯片推理矩阵]]
+- [[10_部署推理/08_Hardware/Chinese_AI_Chip_Inference_Matrix|国产芯片推理矩阵]]
 
 ## 2026 摩尔线程生态
 

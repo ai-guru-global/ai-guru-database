@@ -198,7 +198,7 @@ PyTorch对ZeRO-3的实现。与DDP的主要区别：
 
 ## 来源
 
-- 数学基础/Distributed_Systems/Distributed_Systems.md
+- 01_数学基础/09_Distributed_Systems/Distributed_Systems.md
 - ZeRO: Memory Optimizations Toward Training Trillion Parameter Models (arXiv:1910.02054)
 - Megatron-LM (arXiv:1909.08053)
 - GPipe (arXiv:1811.06965)

@@ -62,7 +62,7 @@ sources: []
 
 ### 开源 vs 闭源的核心战场
 
-Mostaque 是开源 AI 的最激进的倡导者之一。他的核心论点有三个：第一，**透明性**——闭源 AI 模型无法被独立审计，存在偏见和安全风险；第二，**主权**——依赖少数公司的 API 等于让外国公司控制你的 AI 基础设施，各国需要自己的开源模型；第三，**效率**——开源社区的创新速度（LoRA、ControlNet 等）远超闭源公司的迭代速度。这一立场与 [[业界观点/Yann_LeCun/about]] 的"开源是最佳防线"高度一致，与 [[业界观点/Sam_Altman/about]] 的闭源前沿模型策略形成尖锐对立。参见 [[业界观点/Wenfeng_Liang/about]] (DeepSeek) 在中国的类似实践。
+Mostaque 是开源 AI 的最激进的倡导者之一。他的核心论点有三个：第一，**透明性**——闭源 AI 模型无法被独立审计，存在偏见和安全风险；第二，**主权**——依赖少数公司的 API 等于让外国公司控制你的 AI 基础设施，各国需要自己的开源模型；第三，**效率**——开源社区的创新速度（LoRA、ControlNet 等）远超闭源公司的迭代速度。这一立场与 [[19_业界观点/Yann_LeCun/about]] 的"开源是最佳防线"高度一致，与 [[19_业界观点/Sam_Altman/about]] 的闭源前沿模型策略形成尖锐对立。参见 [[19_业界观点/Wenfeng_Liang/about]] (DeepSeek) 在中国的类似实践。
 
 ### 去中心化与个性化
 
@@ -115,13 +115,13 @@ Mostaque 的职业生涯充满争议：被指控夸大学历背景（声称拥�
 
 ## 交叉引用 (Cross-References)
 
-- [Talks 主题合成 2026](业界观点/Talks_Synthesis/Talks_Synthesis_2026.md) — 查看 Emad Mostaque 在 Scaling Laws、开源 vs 闭源、AI 安全等主题中的立场
-- [AI 历史时间线](入门/Fundamentals/AI_History_Timeline.md) — Stable Diffusion 发布与 AI 图像生成爆发
-- [AI 未来趋势](入门/Ethics_and_Future/AI_Future_Trends.md) — 去中心化 AI 与边缘推理的趋势
-- [[业界观点/Yann_LeCun/about]] — 同为开源 AI 倡导者，路线高度一致
-- [[业界观点/Sam_Altman/about]] — 闭源 vs 开源的核心对立面
-- [[业界观点/Wenfeng_Liang/about]] — DeepSeek 的全面开源策略，类似理念的中国实践
-- [[业界观点/Zhilin_Yang/about]] — 月之暗面与 Stability AI 的产品路线对比
+- [Talks 主题合成 2026](19_业界观点/Talks_Synthesis/Talks_Synthesis_2026.md) — 查看 Emad Mostaque 在 Scaling Laws、开源 vs 闭源、AI 安全等主题中的立场
+- [AI 历史时间线](00_入门/01_Fundamentals/AI_History_Timeline.md) — Stable Diffusion 发布与 AI 图像生成爆发
+- [AI 未来趋势](00_入门/04_Ethics_and_Future/AI_Future_Trends.md) — 去中心化 AI 与边缘推理的趋势
+- [[19_业界观点/Yann_LeCun/about]] — 同为开源 AI 倡导者，路线高度一致
+- [[19_业界观点/Sam_Altman/about]] — 闭源 vs 开源的核心对立面
+- [[19_业界观点/Wenfeng_Liang/about]] — DeepSeek 的全面开源策略，类似理念的中国实践
+- [[19_业界观点/Zhilin_Yang/about]] — 月之暗面与 Stability AI 的产品路线对比
 
 ---
 
@@ -138,10 +138,10 @@ Mostaque 的职业生涯充满争议：被指控夸大学历背景（声称拥�
 
 ## Related
 
-- [[业界观点/Andrej_Karpathy/about]] — Andrej Karpathy 简介 (共享: insights, leaders, speeches, talks)
-- [[业界观点/Andrew_Ng/about]] — Andrew Ng 简介 (共享: insights, leaders, speeches, talks)
-- [[业界观点/Andrew_Ng/sayings]] — Andrew Ng 关于 AI 的观点与格言 (共享: insights, leaders, speeches, talks)
-- [[业界观点/Bill_Gates/about]] — Bill Gates 简介 (共享: insights, leaders, speeches, talks)
+- [[19_业界观点/Andrej_Karpathy/about]] — Andrej Karpathy 简介 (共享: insights, leaders, speeches, talks)
+- [[19_业界观点/Andrew_Ng/about]] — Andrew Ng 简介 (共享: insights, leaders, speeches, talks)
+- [[19_业界观点/Andrew_Ng/sayings]] — Andrew Ng 关于 AI 的观点与格言 (共享: insights, leaders, speeches, talks)
+- [[19_业界观点/Bill_Gates/about]] — Bill Gates 简介 (共享: insights, leaders, speeches, talks)
 
 ## 附录：人物影响力评估
 

@@ -232,9 +232,9 @@ AI 对齐 = 确保 AI 的行为符合人类意图
 
 ## 相关文档
 
-- [[数学基础/Game_Theory/Game_Theory|博弈论总论]]
-- [[伦理安全/Value_Alignment/|价值对齐]]
-- [[伦理安全/Constitutional_AI/|Constitutional AI]]
-- [[强化学习/RLHF_Alignment/|RLHF 对齐训练]]
-- [[智能体/Agent_Foundations/Multi_Agent_Systems_Guide|多智能体系统]]
-- [[伦理安全/Governance/|AI 治理]]
+- [[01_数学基础/06_Game_Theory/Game_Theory|博弈论总论]]
+- [[17_伦理安全/02_Value_Alignment/|价值对齐]]
+- [[17_伦理安全/Constitutional_AI/|Constitutional AI]]
+- [[06_强化学习/03_RLHF_Alignment/|RLHF 对齐训练]]
+- [[15_智能体/01_Agent_Foundations/Multi_Agent_Systems_Guide|多智能体系统]]
+- [[17_伦理安全/03_Governance/|AI 治理]]

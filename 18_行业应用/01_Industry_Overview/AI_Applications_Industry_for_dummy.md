@@ -353,7 +353,7 @@ flowchart LR
 | 金融 AI | [Finance 文件夹](Finance/) |
 | 自动驾驶 | [Autonomous_Driving 文件夹](Autonomous_Driving/) |
 | 行业全景 | [行业应用速成指南](./Industry-in-nutshell.md) |
-| 技术基础 | [AI 基础 - 小白版](./数学基础/README_for_dummy.md) |
+| 技术基础 | [AI 基础 - 小白版](./01_数学基础/README_for_dummy.md) |
 
 ---
 
@@ -361,8 +361,8 @@ flowchart LR
 
 ## Related
 
-- [[行业应用/Industry_Overview/Industry_Comparison_2026.md|Industry_Comparison_2026]]
-- [[行业应用/README.md|行业应用 README]]
-- [[行业应用/README_for_dummy.md|README_for_dummy]]
-- [[行业应用/AI_Agriculture_2026.md|AI_Agriculture_2026]]
-- [[行业应用/AI_Autonomous_Driving_2026.md|AI_Autonomous_Driving_2026]]
+- [[18_行业应用/01_Industry_Overview/Industry_Comparison_2026.md|Industry_Comparison_2026]]
+- [[18_行业应用/README.md|行业应用 README]]
+- [[18_行业应用/README_for_dummy.md|README_for_dummy]]
+- [[18_行业应用/AI_Agriculture_2026.md|AI_Agriculture_2026]]
+- [[18_行业应用/AI_Autonomous_Driving_2026.md|AI_Autonomous_Driving_2026]]

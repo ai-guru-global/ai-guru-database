@@ -1940,19 +1940,19 @@ Phase 5: 持续优化 (持续)
 - [Thanos](https://thanos.io/) - 长存储
 - [Opentelemetry](https://opentelemetry.io/) - 可观测性
 - [Alerta](https://alerta.io/) - 告警管理
-- [MLflow](模型运维/Experiment_Tracking/MLflow_Deep_Dive.md) - 机器学习生命周期管理
-- [DVC](模型运维/Orchestration/DVC_Deep_Dive.md) - 数据版本控制
-- [PromptLayer](../../模型运维/Observability/PromptLayer_Deep_Dive.md) - 提示词管理与追踪
-- [Phoenix](模型运维/Observability/Phoenix_Deep_Dive.md) - LLM 可观测性
-- [LangSmith](模型运维/Observability/LangSmith_Deep_Dive.md) - LLM 应用调试与监控
-- [Kubeflow](模型运维/Orchestration/Kubeflow_Deep_Dive.md) - 云原生 ML 平台
-- [LakeFS](模型运维/Orchestration/LakeFS_Deep_Dive.md) - 数据湖版本控制
-- [Feast](模型运维/Experiment_Tracking/Feast_Deep_Dive.md) - 特征存储平台
+- [MLflow](11_模型运维/04_Experiment_Tracking/MLflow_Deep_Dive.md) - 机器学习生命周期管理
+- [DVC](11_模型运维/05_Orchestration/DVC_Deep_Dive.md) - 数据版本控制
+- [PromptLayer](../../11_模型运维/08_Observability/PromptLayer_Deep_Dive.md) - 提示词管理与追踪
+- [Phoenix](11_模型运维/08_Observability/Phoenix_Deep_Dive.md) - LLM 可观测性
+- [LangSmith](11_模型运维/08_Observability/LangSmith_Deep_Dive.md) - LLM 应用调试与监控
+- [Kubeflow](11_模型运维/05_Orchestration/Kubeflow_Deep_Dive.md) - 云原生 ML 平台
+- [LakeFS](11_模型运维/05_Orchestration/LakeFS_Deep_Dive.md) - 数据湖版本控制
+- [Feast](11_模型运维/04_Experiment_Tracking/Feast_Deep_Dive.md) - 特征存储平台
 - [Guardrails](../SRE_Reliability/Guardrails_Deep_Dive.md) - LLM 安全护栏
-- [Helicone](模型运维/Observability/Helicone_Deep_Dive.md) - LLM 可观测性平台
-- [Braintrust](模型运维/Observability/Braintrust_Deep_Dive.md) - LLM 评估平台
-- [Prefect](模型运维/Orchestration/Prefect_Deep_Dive.md) - Python 工作流编排
-- [ClearML](模型运维/Experiment_Tracking/ClearML_Deep_Dive.md) - 一站式 ML 平台
+- [Helicone](11_模型运维/08_Observability/Helicone_Deep_Dive.md) - LLM 可观测性平台
+- [Braintrust](11_模型运维/08_Observability/Braintrust_Deep_Dive.md) - LLM 评估平台
+- [Prefect](11_模型运维/05_Orchestration/Prefect_Deep_Dive.md) - Python 工作流编排
+- [ClearML](11_模型运维/04_Experiment_Tracking/ClearML_Deep_Dive.md) - 一站式 ML 平台
 
 ### 学习资源
 - [Gartner AIOps Guide](https://www.gartner.com/)
@@ -1965,8 +1965,8 @@ Phase 5: 持续优化 (持续)
 
 ## Related
 
-- [[运维/AIOps_Fundamentals/AIOps-in-nutshell.md|AIOps-in-nutshell]]
-- [[运维/SRE_Reliability/AI_Incident_Response_Playbook|AI_Incident_Response_Playbook]]
-- [[运维/AIOps_Fundamentals/AI_Ops_for_dummy.md|AI_Ops_for_dummy]]
-- [[运维/README.md|运维 README]]
-- [[运维/README_for_dummy.md|README_for_dummy]]
+- [[13_运维/01_AIOps_Fundamentals/AIOps-in-nutshell.md|AIOps-in-nutshell]]
+- [[13_运维/02_SRE_Reliability/AI_Incident_Response_Playbook|AI_Incident_Response_Playbook]]
+- [[13_运维/01_AIOps_Fundamentals/AI_Ops_for_dummy.md|AI_Ops_for_dummy]]
+- [[13_运维/README.md|运维 README]]
+- [[13_运维/README_for_dummy.md|README_for_dummy]]

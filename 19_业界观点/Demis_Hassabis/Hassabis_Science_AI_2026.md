@@ -76,7 +76,7 @@ AlphaEvolve（2025）是 DeepMind 在"AI 做研究"方向的前沿探索：
 | 成果 | 发现矩阵乘法新算法、改进排序网络等 |
 | 意义 | AI 不再只是工具，而是"研究合作者" |
 
-AlphaEvolve 代表了 AI 从"辅助科学"到"自主科研"的跨越，关联 [[强化学习/index|强化学习]] 的搜索与 [[智能体/index|智能体]] 的自主性。
+AlphaEvolve 代表了 AI 从"辅助科学"到"自主科研"的跨越，关联 [[06_强化学习/index|强化学习]] 的搜索与 [[15_智能体/index|智能体]] 的自主性。
 
 ### Isomorphic Labs：AI 药物设计
 
@@ -166,14 +166,14 @@ AI 预测的科学结果（如蛋白结构）有时缺乏可解释的机理，�
 
 ## 关联与延伸
 
-- [[业界观点/Demis_Hassabis/about|Demis Hassabis 概述]]
-- [[业界观点/Demis_Hassabis/index|Demis Hassabis 主页]]
-- [[业界观点/Demis_Hassabis/Hassabis_2026_Update|Hassabis 2026 更新]]
-- [[业界观点/Demis_Hassabis/sayings|Hassabis 语录]]
-- [[强化学习/index|强化学习]]（AlphaGo/Zero 的技术根基）
-- [[智能体/index|智能体]]（AlphaEvolve 的自主性）
-- [[行业应用/Healthcare/AI_Healthcare_Applications_2026|AI 医疗应用]]（Isomorphic Labs 方向）
-- [[业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix|AGI 时间表预测矩阵]]
+- [[19_业界观点/Demis_Hassabis/about|Demis Hassabis 概述]]
+- [[19_业界观点/Demis_Hassabis/index|Demis Hassabis 主页]]
+- [[19_业界观点/Demis_Hassabis/Hassabis_2026_Update|Hassabis 2026 更新]]
+- [[19_业界观点/Demis_Hassabis/sayings|Hassabis 语录]]
+- [[06_强化学习/index|强化学习]]（AlphaGo/Zero 的技术根基）
+- [[15_智能体/index|智能体]]（AlphaEvolve 的自主性）
+- [[18_行业应用/03_Healthcare/AI_Healthcare_Applications_2026|AI 医疗应用]]（Isomorphic Labs 方向）
+- [[19_业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix|AGI 时间表预测矩阵]]
 
 ---
 
@@ -184,8 +184,8 @@ AI 预测的科学结果（如蛋白结构）有时缺乏可解释的机理，�
 - Nature/Science 相关论文
 - 诺贝尔奖委员会公告（2024 化学奖）
 
-> **说明**: 本文聚焦 Hassabis 的 Science AI 维度，与 [[业界观点/Demis_Hassabis/Hassabis_2026_Update|Hassabis 2026 更新]] 互补。
+> **说明**: 本文聚焦 Hassabis 的 Science AI 维度，与 [[19_业界观点/Demis_Hassabis/Hassabis_2026_Update|Hassabis 2026 更新]] 互补。
 
 ---
 
-*本文为 AI Guru 知识库内容，2026-07-23 更新。关联 [[业界观点/index|业界观点]] 与 [[行业应用/index|行业应用]]。*
+*本文为 AI Guru 知识库内容，2026-07-23 更新。关联 [[19_业界观点/index|业界观点]] 与 [[18_行业应用/index|行业应用]]。*

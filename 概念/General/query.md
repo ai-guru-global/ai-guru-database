@@ -49,9 +49,9 @@ sources: []
 - [[概念/rag-patterns|RAG 模式]]
 - [[概念/prompt-engineering|提示工程]]
 - [[概念/vector-database|向量数据库]]
-- [[RAG系统/README|RAG 系统章节]]
-- [[大模型/Prompt_Engineering/README|提示工程章节]]
-- [[大模型/README|自然语言处理与大模型章节]]
+- [[14_RAG系统/README|RAG 系统章节]]
+- [[05_大模型/08_Prompt_Engineering/README|提示工程章节]]
+- [[05_大模型/README|自然语言处理与大模型章节]]
 
 ---
 

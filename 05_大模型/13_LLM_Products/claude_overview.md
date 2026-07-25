@@ -325,9 +325,9 @@ message = client.messages.create(
 
 ## 相关阅读
 
-- [[大模型/Global_LLM_Ecosystem/Anthropic_Claude_Deep_Dive]] — Anthropic 深度解析
-- [[大模型/LLM_Products/chatgpt_overview]] — ChatGPT 概览
-- [[大模型/LLM_Inference_Deep_Dive]] — LLM 推理优化
-- [[大模型/Prompt_Engineering/Prompt_Engineering]] — 提示工程
-- [[智能体/Agentic_Coding_Tools/README]] — AI 编程工具
-- [[伦理安全/Constitutional_AI_Deep_Dive]] — Constitutional AI
+- [[05_大模型/14_Global_LLM_Ecosystem/Anthropic_Claude_Deep_Dive]] — Anthropic 深度解析
+- [[05_大模型/13_LLM_Products/chatgpt_overview]] — ChatGPT 概览
+- [[05_大模型/LLM_Inference_Deep_Dive]] — LLM 推理优化
+- [[05_大模型/08_Prompt_Engineering/Prompt_Engineering]] — 提示工程
+- [[15_智能体/08_Agentic_Coding_Tools/README]] — AI 编程工具
+- [[17_伦理安全/Constitutional_AI_Deep_Dive]] — Constitutional AI

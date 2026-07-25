@@ -31,7 +31,7 @@ aliases:
 - 多模态能力
 - 安全最佳实践
 
-> **关联**: -> [[大模型/Global_LLM_Ecosystem/Anthropic_Claude_Deep_Dive|Claude 深度解读]] | [[学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[05_大模型/14_Global_LLM_Ecosystem/Anthropic_Claude_Deep_Dive|Claude 深度解读]] | [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
 
 
 ## 核心知识框架

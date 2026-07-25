@@ -135,12 +135,12 @@ Andrew Ng 的核心哲学是"实用主义"：
 
 ## 交叉引用 (Cross-References)
 
-- [Talks 主题合成 2026](业界观点/Talks_Synthesis/Talks_Synthesis_2026.md) — 查看 Ng 在 Scaling Laws、开源 vs 闭源、AI 安全等主题中的立场
-- [[业界观点/Geoffrey_Hinton/about]] — Hinton 关注 AGI 风险，Ng 更关注近期应用，形成对比
-- [[业界观点/Andrej_Karpathy/about]] — Karpathy 与 Ng 同为 AI 教育领域标杆人物
-- [[业界观点/Fei_Fei_Li/about]] — Fei-Fei Li 与 Ng 同为斯坦福教授，关注 AI 社会影响
-- [AI 历史时间线](入门/Fundamentals/AI_History_Timeline.md) — MOOC 运动与百度 AI
-- [深度学习基础](../../深度学习/README.md) — CS229 与深度学习教育
+- [Talks 主题合成 2026](19_业界观点/Talks_Synthesis/Talks_Synthesis_2026.md) — 查看 Ng 在 Scaling Laws、开源 vs 闭源、AI 安全等主题中的立场
+- [[19_业界观点/Geoffrey_Hinton/about]] — Hinton 关注 AGI 风险，Ng 更关注近期应用，形成对比
+- [[19_业界观点/Andrej_Karpathy/about]] — Karpathy 与 Ng 同为 AI 教育领域标杆人物
+- [[19_业界观点/Fei_Fei_Li/about]] — Fei-Fei Li 与 Ng 同为斯坦福教授，关注 AI 社会影响
+- [AI 历史时间线](00_入门/01_Fundamentals/AI_History_Timeline.md) — MOOC 运动与百度 AI
+- [深度学习基础](../../03_深度学习/README.md) — CS229 与深度学习教育
 
 ---
 
@@ -158,11 +158,11 @@ Andrew Ng 的核心哲学是"实用主义"：
 
 ## Related
 
-- [[业界观点/Andrej_Karpathy/about]] — Andrej Karpathy 简介 (Andrej Karpathy) (共享: insights, leaders, speeches, talks)
-- [[业界观点/Andrew_Ng/sayings]] — Andrew Ng 关于 AI 的观点与格言 (共享: insights, leaders, speeches, talks)
-- [[业界观点/Bill_Gates/about]] — Bill Gates 简介 (Bill Gates) (共享: insights, leaders, speeches, talks)
-- [[业界观点/Bill_Gates/sayings]] — Bill Gates 关于 AI 的观点 (Bill Gates on AI) (共享: insights, leaders, speeches, talks)
-- [[业界观点/README_for_dummy.md|README_for_dummy]]
+- [[19_业界观点/Andrej_Karpathy/about]] — Andrej Karpathy 简介 (Andrej Karpathy) (共享: insights, leaders, speeches, talks)
+- [[19_业界观点/Andrew_Ng/sayings]] — Andrew Ng 关于 AI 的观点与格言 (共享: insights, leaders, speeches, talks)
+- [[19_业界观点/Bill_Gates/about]] — Bill Gates 简介 (Bill Gates) (共享: insights, leaders, speeches, talks)
+- [[19_业界观点/Bill_Gates/sayings]] — Bill Gates 关于 AI 的观点 (Bill Gates on AI) (共享: insights, leaders, speeches, talks)
+- [[19_业界观点/README_for_dummy.md|README_for_dummy]]
 
 ## 附录：人物影响力评估
 

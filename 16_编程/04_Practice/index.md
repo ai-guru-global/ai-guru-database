@@ -14,15 +14,15 @@ AI 编程实战 — Vibe Coding 上手指南、提示模板和企业级应用案
 
 | 文件 | 说明 |
 |------|------|
-| [[编程/Practice/Vibe_Coding_Getting_Started|Vibe Coding 入门]] | Vibe Coding 快速上手 |
-| [[编程/Practice/Vibe_Coding_Prompt_Templates|Prompt 模板]] | Vibe Coding 提示词模板集 |
-| [[编程/Practice/Vibe_Coding_Real_World_Cases|实战案例]] | Vibe Coding 真实案例分析 |
-| [[编程/Practice/Claude_Enterprise_Use_Cases|Claude 企业案例]] | Claude 企业级使用场景 |
+| [[16_编程/04_Practice/Vibe_Coding_Getting_Started|Vibe Coding 入门]] | Vibe Coding 快速上手 |
+| [[16_编程/04_Practice/Vibe_Coding_Prompt_Templates|Prompt 模板]] | Vibe Coding 提示词模板集 |
+| [[16_编程/04_Practice/Vibe_Coding_Real_World_Cases|实战案例]] | Vibe Coding 真实案例分析 |
+| [[16_编程/04_Practice/Claude_Enterprise_Use_Cases|Claude 企业案例]] | Claude 企业级使用场景 |
 
 ## Related
 
-- [[编程/Methodology/index|编程方法论]]
-- [[编程/Theory/index|编程理论]]
+- [[16_编程/03_Methodology/index|编程方法论]]
+- [[16_编程/02_Theory/index|编程理论]]
 
 ## 核心知识体系
 
@@ -133,9 +133,9 @@ AI 编程实战 — Vibe Coding 上手指南、提示模板和企业级应用案
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

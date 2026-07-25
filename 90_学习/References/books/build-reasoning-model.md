@@ -286,13 +286,13 @@ ri = R(q, oi)                                      # 奖励函数
 
 | 本书章节 | 知识库主题 | 关联说明 |
 |----------|------------|----------|
-| Ch 1-2 CoT 与推理范式 | [[大模型/Prompt_Engineering/Prompt_Engineering]] | CoT 提示技术 |
-| Ch 3 RL 基础 | [[强化学习/]] | RL 核心概念 |
-| Ch 4-5 PPO/GRPO | [[模型训练/]] | 后训练方法 |
-| Ch 6 奖励建模 | [[模型训练/]] | RLHF 奖励设计 |
-| Ch 7 数据工程 | [[机器学习/]] | 训练数据构建 |
-| Ch 9 评估 | [[模型评估/]] | 推理能力评估 |
-| Ch 10 部署 | [[部署推理/]] | 长输出推理优化 |
+| Ch 1-2 CoT 与推理范式 | [[05_大模型/08_Prompt_Engineering/Prompt_Engineering]] | CoT 提示技术 |
+| Ch 3 RL 基础 | [[06_强化学习/]] | RL 核心概念 |
+| Ch 4-5 PPO/GRPO | [[07_模型训练/]] | 后训练方法 |
+| Ch 6 奖励建模 | [[07_模型训练/]] | RLHF 奖励设计 |
+| Ch 7 数据工程 | [[02_机器学习/]] | 训练数据构建 |
+| Ch 9 评估 | [[08_模型评估/]] | 推理能力评估 |
+| Ch 10 部署 | [[10_部署推理/]] | 长输出推理优化 |
 
 ### 与相关书籍的关系
 
@@ -398,10 +398,10 @@ ri = R(q, oi)                                      # 奖励函数
 
 ## 延伸阅读
 
-- [[学习/References/books/build-llm-from-scratch-raschka|Build LLM from Scratch]] — 前置阅读
-- [[学习/References/books/deep-learning-goodfellow|Deep Learning (花书)]] — 数学基础
-- [[强化学习/]] — RL 知识库章节
-- [[模型训练/]] — 训练方法知识库章节
-- [[学习/guides/ai_engineering_roadmap_2026|AI 工程路线图 2026]]
+- [[90_学习/References/books/build-llm-from-scratch-raschka|Build LLM from Scratch]] — 前置阅读
+- [[90_学习/References/books/deep-learning-goodfellow|Deep Learning (花书)]] — 数学基础
+- [[06_强化学习/]] — RL 知识库章节
+- [[07_模型训练/]] — 训练方法知识库章节
+- [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图 2026]]
 
-> **关联**: → [[学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]] | [[强化学习/]] | [[模型训练/]] | [[模型评估/]]
+> **关联**: → [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]] | [[06_强化学习/]] | [[07_模型训练/]] | [[08_模型评估/]]

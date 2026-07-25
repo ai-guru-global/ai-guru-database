@@ -14,15 +14,15 @@ sources: []
 
 | 文件 | 说明 |
 |------|------|
-| [[论文精读/Scaling/Scaling_Laws_Deep_Dive|Scaling Laws]] | 模型缩放定律基础理论 |
-| [[论文精读/Scaling/GPT3_Deep_Dive|GPT-3]] | 少样本学习的 In-Context Learning |
-| [[论文精读/Scaling/Chinchilla_Deep_Dive|Chinchilla]] | 计算最优的模型-数据配比 |
-| [[论文精读/Scaling/GPT4_Deep_Dive|GPT-4]] | 多模态超大规模模型 |
+| [[20_论文精读/03_Scaling/Scaling_Laws_Deep_Dive|Scaling Laws]] | 模型缩放定律基础理论 |
+| [[20_论文精读/03_Scaling/GPT3_Deep_Dive|GPT-3]] | 少样本学习的 In-Context Learning |
+| [[20_论文精读/03_Scaling/Chinchilla_Deep_Dive|Chinchilla]] | 计算最优的模型-数据配比 |
+| [[20_论文精读/03_Scaling/GPT4_Deep_Dive|GPT-4]] | 多模态超大规模模型 |
 
 ## Related
 
-- [[论文精读/Architecture/index|Architecture]]
-- [[论文精读/Frontier_index|Frontier]]
+- [[20_论文精读/02_Architecture/index|Architecture]]
+- [[20_论文精读/Frontier_index|Frontier]]
 
 ## 进阶知识拓展
 
@@ -60,9 +60,9 @@ sources: []
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

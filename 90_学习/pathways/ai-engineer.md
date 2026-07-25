@@ -86,9 +86,9 @@ AI 工程师（AI Engineer）是介于 ML 研究员和软件工程师之间的�
     └── 输出格式控制
 
 推荐资源:
-  - [[入门/AI_Fundamentals_for_dummy]]
-  - [[数学基础/Python_for_AI_Basics]]
-  - [[大模型/Prompt_Engineering/Prompt_Engineering_for_dummy]]
+  - [[00_入门/AI_Fundamentals_for_dummy]]
+  - [[01_数学基础/Python_for_AI_Basics]]
+  - [[05_大模型/08_Prompt_Engineering/Prompt_Engineering_for_dummy]]
   - DeepLearning.AI 短课程
 ```
 
@@ -121,10 +121,10 @@ AI 工程师（AI Engineer）是介于 ML 研究员和软件工程师之间的�
     └── 部署到生产环境
 
 推荐资源:
-  - [[RAG系统/RAG_Systems_for_dummy]]
-  - [[智能体/Agent_Foundations/Agent_Foundations]]
-  - [[智能体/Agent_Frameworks/Agent_Frameworks]]
-  - [[大模型/Fine_tuning_Techniques/Fine_tuning_Techniques_for_dummy]]
+  - [[14_RAG系统/RAG_Systems_for_dummy]]
+  - [[15_智能体/01_Agent_Foundations/Agent_Foundations]]
+  - [[15_智能体/02_Agent_Frameworks/Agent_Frameworks]]
+  - [[05_大模型/07_Fine_tuning_Techniques/Fine_tuning_Techniques_for_dummy]]
 ```
 
 ### 阶段 3: 工程深化 (3-6 个月)
@@ -156,10 +156,10 @@ AI 工程师（AI Engineer）是介于 ML 研究员和软件工程师之间的�
     └── 优化系统性能和成本
 
 推荐资源:
-  - [[部署推理/Deployment_Inference_for_dummy]]
-  - [[模型运维/MLOps_Pipeline_for_dummy]]
-  - [[伦理安全/Agent_Security_Ethics_AGI]]
-  - [[架构基建/Architecture_Infrastructure_for_dummy]]
+  - [[10_部署推理/Deployment_Inference_for_dummy]]
+  - [[11_模型运维/MLOps_Pipeline_for_dummy]]
+  - [[17_伦理安全/Agent_Security_Ethics_AGI]]
+  - [[12_架构基建/Architecture_Infrastructure_for_dummy]]
 ```
 
 ### 阶段 4: 高级专家 (6-12 个月)
@@ -307,9 +307,9 @@ AI 基础:
 
 ## 相关阅读
 
-- [[学习/pathways/llm-engineer]] — LLM 工程师路径
-- [[学习/pathways/ml-practitioner]] — ML 实践者路径
-- [[学习/guides/ai_engineering_roadmap_2026]] — AI 工程路线图
-- [[学习/guides/learning_paths_2026]] — 学习路径 2026
-- [[面试岗位/AI_Product_Manager//index]] — AI 产品经理面试
-- [[面试岗位/Machine_Learning_Engineer//index]] — ML 工程师面试
+- [[90_学习/pathways/llm-engineer]] — LLM 工程师路径
+- [[90_学习/pathways/ml-practitioner]] — ML 实践者路径
+- [[90_学习/guides/ai_engineering_roadmap_2026]] — AI 工程路线图
+- [[90_学习/guides/learning_paths_2026]] — 学习路径 2026
+- [[21_面试岗位/AI_Product_Manager//index]] — AI 产品经理面试
+- [[21_面试岗位/Machine_Learning_Engineer//index]] — ML 工程师面试

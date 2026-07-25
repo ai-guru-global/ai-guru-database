@@ -51,7 +51,7 @@ sources: []
 - [[概念/pandera|Pandera]]
 - [[概念/evidently|Evidently]]
 - [[概念/mlops|MLOps]]
-- [[模型运维/Troubleshooting/Data_Validation_Failure_Runbook|数据验证失败 Runbook]]
+- [[11_模型运维/12_Troubleshooting/Data_Validation_Failure_Runbook|数据验证失败 Runbook]]
 
 ---
 

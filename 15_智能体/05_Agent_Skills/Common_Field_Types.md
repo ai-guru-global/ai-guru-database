@@ -112,11 +112,11 @@ Skill schema 升级时，遵循以下原则：
 
 ## Related
 
-- [[智能体/Agent_Skills/README|Agent Skills]]
-- [[学习/References/index|References Index]]
-- [[智能体/Agent_Skills/Agent_Skill_Reference|Agent Skill Reference]]
-- [[数学基础/Probability_Statistics/Skill_Statistics_Cheatsheet|Skill Statistics]]
-- [[智能体/Agent_Skills/Skill_Mapping_Guide|Skill Mapping]]
+- [[15_智能体/05_Agent_Skills/README|Agent Skills]]
+- [[90_学习/References/index|References Index]]
+- [[15_智能体/05_Agent_Skills/Agent_Skill_Reference|Agent Skill Reference]]
+- [[01_数学基础/03_Probability_Statistics/Skill_Statistics_Cheatsheet|Skill Statistics]]
+- [[15_智能体/05_Agent_Skills/Skill_Mapping_Guide|Skill Mapping]]
 
 ## 附录：核心概念速查
 

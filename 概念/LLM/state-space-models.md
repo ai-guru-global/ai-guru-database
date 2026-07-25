@@ -15,7 +15,7 @@ relationships:
   - target: "概念/retnet"
     type: related_to
 sources:
-  - 深度学习/State_Space_Models_2026.md
+  - 03_深度学习/State_Space_Models_2026.md
 summary: Transformer 的潜在替代架构，通过状态空间方程实现 O(n) 线性复杂度序列建模，Mamba 引入选择性机制在长序列任务上展现优势。
 provenance:
   extracted: 0.80
@@ -141,7 +141,7 @@ SSM 的训练与 传统神经网络 有所不同：
 
 ## 来源
 
-- 深度学习/State_Space_Models_2026.md
+- 03_深度学习/State_Space_Models_2026.md
 - Gu & Dao (2023) "Mamba: Linear-Time Sequence Modeling with Selective State Spaces"
 - Dao & Gu (2024) "Mamba-2: Transforming State Space Models"
 - Lieber et al. (2024) "Jamba: A Hybrid Transformer-Mamba Language Model"
@@ -152,12 +152,12 @@ SSM 的训练与 传统神经网络 有所不同：
 - [[概念/retnet]] — RetNet
 - [[概念/transformer-architecture]] — Transformer 架构
 - [[概念/long-context-models]] — 长上下文模型
-- [[深度学习/State_Space_Models_2026]] — 状态空间模型 2026
+- [[03_深度学习/State_Space_Models_2026]] — 状态空间模型 2026
 
 ## See Also (深度专题)
 
-- [[../../大模型/Sequence_Models/Sequence_Models|序列模型深度解析]] — SSM/Mamba 与 Transformer 的系统性架构对比
-- [[../../大模型/LLM_Architectures/Transformer_Alternatives|Transformer 替代架构]] — Mamba/RWKV/RetNet 等新架构全景
+- [[../../05_大模型/02_Sequence_Models/Sequence_Models|序列模型深度解析]] — SSM/Mamba 与 Transformer 的系统性架构对比
+- [[../../05_大模型/05_LLM_Architectures/Transformer_Alternatives|Transformer 替代架构]] — Mamba/RWKV/RetNet 等新架构全景
 
 ---
 
@@ -197,4 +197,4 @@ SSM 的训练与 传统神经网络 有所不同：
 - [[概念/LLM/mamba|Mamba]]
 - [[概念/LLM/retnet|RetNet]]
 - [[概念/LLM/transformer-architecture-plain|Transformer 架构]]
-- [[深度学习/State_Space_Models_2026|状态空间模型 2026]]
+- [[03_深度学习/State_Space_Models_2026|状态空间模型 2026]]

@@ -653,7 +653,7 @@ class RLHF_PPO:
 | **推理时** | 不需要 RM | 不需要 RM |
 | **适用场景** | 大规模 RLHF (ChatGPT) | 资源受限的 RLHF |
 
-> **详见**: [[论文精读/Alignment/DPO_Deep_Dive]]
+> **详见**: [[20_论文精读/06_Alignment/DPO_Deep_Dive]]
 
 ---
 
@@ -833,11 +833,11 @@ PPO 的"一句话哲学":
 
 ## Related
 
-- [[论文精读/Alignment/DPO_Deep_Dive]] — DPO: PPO 在 RLHF 中的主要替代方案
-- [[论文精读/RL/DQN_Deep_Dive]] — DQN: 另一类 RL 算法（基于价值），PPO 的前身之一
-- [[论文精读/RL/AlphaGo_Deep_Dive]] — AlphaGo: 使用了类似的策略梯度方法
-- [[论文精读/Alignment/RLHF_DPO_Deep_Dive]] — RLHF 的完整流程详解
-- [[论文精读/Alignment/Chain_of_Thought_Deep_Dive]] — 推理能力与 RL 的关系
+- [[20_论文精读/06_Alignment/DPO_Deep_Dive]] — DPO: PPO 在 RLHF 中的主要替代方案
+- [[20_论文精读/07_RL/DQN_Deep_Dive]] — DQN: 另一类 RL 算法（基于价值），PPO 的前身之一
+- [[20_论文精读/07_RL/AlphaGo_Deep_Dive]] — AlphaGo: 使用了类似的策略梯度方法
+- [[20_论文精读/06_Alignment/RLHF_DPO_Deep_Dive]] — RLHF 的完整流程详解
+- [[20_论文精读/06_Alignment/Chain_of_Thought_Deep_Dive]] — 推理能力与 RL 的关系
 - [[概念/Training/policy-gradient]] — 策略梯度方法基础
 - [[概念/Training/gae]] — GAE 详解
 - [[概念/LLM/rlhf]] — RLHF 技术概览

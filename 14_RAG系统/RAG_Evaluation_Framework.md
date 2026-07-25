@@ -112,7 +112,7 @@ flowchart LR
     style Layer3 fill:#7b6cd9,color:#fff
 ```
 
-> **深入阅读**: 关于 RAG 评估的理论基础，参见 [[../模型评估/LLM_Evaluation/RAG_Evaluation_Deep_Dive|RAG评估深度解析]]，该文档对评估分层和 LLM-as-Judge 有更深入的讨论。
+> **深入阅读**: 关于 RAG 评估的理论基础，参见 [[../08_模型评估/03_LLM_Evaluation/RAG_Evaluation_Deep_Dive|RAG评估深度解析]]，该文档对评估分层和 LLM-as-Judge 有更深入的讨论。
 
 ---
 
@@ -1353,9 +1353,9 @@ RAG 评估最佳实践 Checklist
 
 ## Related
 
-- [[../模型评估/LLM_Evaluation/RAG_Evaluation_Deep_Dive|RAG评估深度解析]] — 更深入的 RAG 评估理论，LLM-as-Judge 偏见控制
+- [[../08_模型评估/03_LLM_Evaluation/RAG_Evaluation_Deep_Dive|RAG评估深度解析]] — 更深入的 RAG 评估理论，LLM-as-Judge 偏见控制
 - [[../Advanced_RAG/RAG_Advanced_2026|RAG高级实践 2026年完全指南]] — 高级检索策略（混合检索、重排序）直接影响检索质量
 - [[../RAG_Fundamentals/RAG_Fundamentals|RAG 基础]] — RAG 基本流程理解
 - [[../RAG_Monitoring/RAG_Monitoring_and_Observability|RAG 监控与可观测性]] — 线上监控是评估的延伸
-- [[../模型评估/index|模型评估]] — 更广泛的 LLM 评估方法
+- [[../08_模型评估/index|模型评估]] — 更广泛的 LLM 评估方法
 - [[index|RAG 评估目录]] — 本目录导航

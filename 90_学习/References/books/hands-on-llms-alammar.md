@@ -71,7 +71,7 @@ aliases:
 在知识库的书籍谱系中：
 - 上承 [[hands-on-ml-geron]]（ML/DL 基础）
 - 平行 [[nlp-with-transformers]]（HF 生态应用）、[[build-llm-from-scratch-raschka]]（底层实现）
-- 是 [[大模型/LLM_Fundamentals]] 的**最佳入门配套**
+- 是 [[05_大模型/LLM_Fundamentals]] 的**最佳入门配套**
 
 ## 核心内容
 
@@ -241,7 +241,7 @@ Grootendorst 自己开发的 BERTopic 是本章核心：
   - Self-Consistency（多次采样取多数）
   - Chain-of-Thought（让模型展示推理过程）
   - ReAct（推理 + 行动）
-- 详见 [[大模型/Prompt_Engineering/Prompt_Engineering]]
+- 详见 [[05_大模型/08_Prompt_Engineering/Prompt_Engineering]]
 
 ### Ch 7: Advanced Text Generation Techniques
 
@@ -259,7 +259,7 @@ Grootendorst 自己开发的 BERTopic 是本章核心：
 - **RAG（检索增强生成）**:
   - 索引（Embedding + 向量库）→ 检索 → 拼接上下文 → 生成
   - Chunking 策略、Reranking
-- 详见 [[RAG系统/RAG_Systems]]
+- 详见 [[14_RAG系统/RAG_Systems]]
 
 ### Ch 9: Multimodal Large Language Models
 
@@ -346,14 +346,14 @@ Grootendorst 自己开发的 BERTopic 是本章核心：
 
 | 本书章节 | 本书概念 | 知识库主题 | 关联说明 |
 |----------|----------|------------|----------|
-| Ch 1-2 基础 | Token/Embedding | [[大模型/LLM_Fundamentals]] | LLM 基础概念 |
-| Ch 3 内部机制 | Attention/Transformer | [[深度学习/]] | 注意力与架构 |
-| Ch 4-5 分类/聚类 | 表示学习 | [[机器学习/]] | 文本分析应用 |
-| Ch 6-7 提示/生成 | Prompt/采样 | [[大模型/Prompt_Engineering/Prompt_Engineering]] | 提示与解码 |
-| Ch 8 搜索/RAG | 语义检索 | [[RAG系统/RAG_Systems]] | RAG 系统 |
-| Ch 9 多模态 | CLIP/VLM | [[计算机视觉/]] | 多模态 |
-| Ch 10 嵌入模型 | Embedding 训练 | [[大模型/LLM_Fundamentals]] | 嵌入模型 |
-| Ch 11-12 微调 | LoRA/QLoRA/SFT | [[大模型/Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs]] | 微调技术 |
+| Ch 1-2 基础 | Token/Embedding | [[05_大模型/LLM_Fundamentals]] | LLM 基础概念 |
+| Ch 3 内部机制 | Attention/Transformer | [[03_深度学习/]] | 注意力与架构 |
+| Ch 4-5 分类/聚类 | 表示学习 | [[02_机器学习/]] | 文本分析应用 |
+| Ch 6-7 提示/生成 | Prompt/采样 | [[05_大模型/08_Prompt_Engineering/Prompt_Engineering]] | 提示与解码 |
+| Ch 8 搜索/RAG | 语义检索 | [[14_RAG系统/RAG_Systems]] | RAG 系统 |
+| Ch 9 多模态 | CLIP/VLM | [[04_计算机视觉/]] | 多模态 |
+| Ch 10 嵌入模型 | Embedding 训练 | [[05_大模型/LLM_Fundamentals]] | 嵌入模型 |
+| Ch 11-12 微调 | LoRA/QLoRA/SFT | [[05_大模型/07_Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs]] | 微调技术 |
 
 ## 适合人群
 
@@ -423,12 +423,12 @@ Grootendorst 自己开发的 BERTopic 是本章核心：
 
 ## 延伸阅读
 
-- [[学习/References/books/nlp-with-transformers|NLP with Transformers]] — HF 生态深入
-- [[学习/References/books/build-llm-from-scratch-raschka|Build LLM From Scratch]] — 底层实现互补
-- [[学习/References/books/hands-on-ml-geron|Hands-On ML]] — ML/DL 基础
-- [[大模型/LLM_Fundamentals]] — 知识库 LLM 基础
-- [[大模型/Prompt_Engineering/Prompt_Engineering]] — 提示工程总览
-- [[RAG系统/RAG_Systems]] — RAG 系统专题
-- [[学习/guides/ai_engineering_roadmap_2026|AI 工程路线图 2026]]
+- [[90_学习/References/books/nlp-with-transformers|NLP with Transformers]] — HF 生态深入
+- [[90_学习/References/books/build-llm-from-scratch-raschka|Build LLM From Scratch]] — 底层实现互补
+- [[90_学习/References/books/hands-on-ml-geron|Hands-On ML]] — ML/DL 基础
+- [[05_大模型/LLM_Fundamentals]] — 知识库 LLM 基础
+- [[05_大模型/08_Prompt_Engineering/Prompt_Engineering]] — 提示工程总览
+- [[14_RAG系统/RAG_Systems]] — RAG 系统专题
+- [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图 2026]]
 
-> **关联**: → [[学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]] | [[大模型/LLM_Fundamentals]] | [[深度学习/]] | [[RAG系统/]] | [[计算机视觉/]]
+> **关联**: → [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]] | [[05_大模型/LLM_Fundamentals]] | [[03_深度学习/]] | [[14_RAG系统/]] | [[04_计算机视觉/]]

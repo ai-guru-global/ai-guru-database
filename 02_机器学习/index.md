@@ -12,29 +12,29 @@ This page indexes the contents of `机器学习`.
 
 ## Subdirectories
 
-- [[机器学习/Anomaly_Detection/index|Anomaly Detection]]
-- [[机器学习/AutoML/index|Automl]]
-- [[机器学习/Bayesian_Methods/index|Bayesian Methods]]
-- [[机器学习/Causal_Inference/index|Causal Inference]]
-- [[机器学习/Ensemble_Learning/index|Ensemble Learning]]
-- [[机器学习/Feature_Engineering/index|Feature Engineering]]
-- [[机器学习/ML_Frameworks/index|ML Frameworks]]
-- [[机器学习/Recommendation_Systems/index|Recommendation Systems]]
-- [[机器学习/Supervised_Learning/index|Supervised Learning]]
-- [[机器学习/Time_Series/index|Time Series]]
-- [[机器学习/Unsupervised_Learning/index|Unsupervised Learning]]
+- [[02_机器学习/08_Anomaly_Detection/index|Anomaly Detection]]
+- [[02_机器学习/11_AutoML/index|Automl]]
+- [[02_机器学习/06_Bayesian_Methods/index|Bayesian Methods]]
+- [[02_机器学习/07_Causal_Inference/index|Causal Inference]]
+- [[02_机器学习/04_Ensemble_Learning/index|Ensemble Learning]]
+- [[02_机器学习/05_Feature_Engineering/index|Feature Engineering]]
+- [[02_机器学习/12_ML_Frameworks/index|ML Frameworks]]
+- [[02_机器学习/10_Recommendation_Systems/index|Recommendation Systems]]
+- [[02_机器学习/02_Supervised_Learning/index|Supervised Learning]]
+- [[02_机器学习/09_Time_Series/index|Time Series]]
+- [[02_机器学习/03_Unsupervised_Learning/index|Unsupervised Learning]]
 
 ## Files
 
-- [[机器学习/ApacheCN_Machine_Learning_Track|Apachecn Machine Learning Track]]
-- [[机器学习/kaggle_overview|Kaggle Overview]]
-- [[机器学习/ML-in-nutshell|ML In Nutshell]]
-- [[机器学习/ML_Algorithms_Cheatsheet|ML Algorithms Cheatsheet]]
-- [[机器学习/ML_For_Beginners|ML For Beginners]]
-- [[机器学习/ML_Fundamentals|ML Fundamentals]]
-- [[机器学习/Model_Interpretability_Explainability|Model Interpretability Explainability]]
-- [[机器学习/README|README]]
-- [[机器学习/README_for_dummy|README For Dummy]]
+- [[02_机器学习/ApacheCN_Machine_Learning_Track|Apachecn Machine Learning Track]]
+- [[02_机器学习/kaggle_overview|Kaggle Overview]]
+- [[02_机器学习/ML-in-nutshell|ML In Nutshell]]
+- [[02_机器学习/ML_Algorithms_Cheatsheet|ML Algorithms Cheatsheet]]
+- [[02_机器学习/ML_For_Beginners|ML For Beginners]]
+- [[02_机器学习/ML_Fundamentals|ML Fundamentals]]
+- [[02_机器学习/Model_Interpretability_Explainability|Model Interpretability Explainability]]
+- [[02_机器学习/README|README]]
+- [[02_机器学习/README_for_dummy|README For Dummy]]
 
 ## 进阶知识拓展
 
@@ -72,9 +72,9 @@ This page indexes the contents of `机器学习`.
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

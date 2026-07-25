@@ -182,9 +182,9 @@ Kubernetes (K8s) 部署:
 
 ## 下一步
 
-- 想学部署？→ [部署推理/README_for_dummy.md](../部署推理/README_for_dummy.md)
-- 想学 MLOps？→ [MLOps/README_for_dummy.md](../模型运维/README_for_dummy.md)
-- 想学监控？→ [AI运维/README_for_dummy.md](../运维/README_for_dummy.md)
+- 想学部署？→ [10_部署推理/README_for_dummy.md](../10_部署推理/README_for_dummy.md)
+- 想学 MLOps？→ [MLOps/README_for_dummy.md](../11_模型运维/README_for_dummy.md)
+- 想学监控？→ [AI运维/README_for_dummy.md](../13_运维/README_for_dummy.md)
 
 ---
 
@@ -192,17 +192,17 @@ Kubernetes (K8s) 部署:
 
 ## Related
 
-- [[架构基建/Architecture_Overview/AI_Infrastructure_2026|AI_Infrastructure_2026]]
-- [[架构基建/Architecture_Fundamentals/Architecture-in-nutshell.md|Architecture-in-nutshell]]
-- [[架构基建/Architecture_Fundamentals/Architecture_Infrastructure_for_dummy.md|Architecture_Infrastructure_for_dummy]]
-- [[架构基建/Architecture_Overview/Spring_AI_Architecture|Spring_AI_Architecture]]
+- [[12_架构基建/02_Architecture_Overview/AI_Infrastructure_2026|AI_Infrastructure_2026]]
+- [[12_架构基建/01_Architecture_Fundamentals/Architecture-in-nutshell.md|Architecture-in-nutshell]]
+- [[12_架构基建/01_Architecture_Fundamentals/Architecture_Infrastructure_for_dummy.md|Architecture_Infrastructure_for_dummy]]
+- [[12_架构基建/02_Architecture_Overview/Spring_AI_Architecture|Spring_AI_Architecture]]
 - [[概念/LLM/llm-infrastructure.md|llm-infrastructure]]
 
 ## 架构核心组件对比
 
 | 组件层 | 功能 | 关键技术 | 选型考量 |
 |--------|------|----------|----------|
-| 计算层 | 模型训练/推理 | GPU/TPU/NPU集群 | 算力需求+成本 |
+| 计算层 | 07_模型训练/推理 | GPU/TPU/NPU集群 | 算力需求+成本 |
 | 存储层 | 数据/模型/检查点 | 分布式存储/对象存储 | 容量+IOPS+成本 |
 | 网络层 | 节点间通信 | RDMA/RoCE/InfiniBand | 带宽+延迟 |
 | 调度层 | 资源编排 | K8s/Slurm/Ray | 弹性+效率 |

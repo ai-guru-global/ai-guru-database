@@ -186,9 +186,9 @@ Roofline 把性能上限表示为：
 - [[概念/kv-cache]] — KV Cache 优化
 - [[概念/continuous-batching]] — Continuous Batching
 - [[概念/speculative-decoding]] — 投机解码
-- [[部署推理/Inference_Performance/README|推理性能专题]]
-- [[部署推理/Caching/KV_Cache_Deep_Dive|KV Cache Deep Dive]]
-- [[部署推理/Quantization/Quantization_Techniques_2026|Quantization Techniques 2026]]
+- [[10_部署推理/04_Inference_Performance/README|推理性能专题]]
+- [[10_部署推理/06_Caching/KV_Cache_Deep_Dive|KV Cache Deep Dive]]
+- [[10_部署推理/05_Quantization/Quantization_Techniques_2026|Quantization Techniques 2026]]
 
 ## 核心知识体系
 

@@ -424,17 +424,17 @@ Anthropic 的 Long-Term Benefit Trust (LTBT) 是其独特治理结构的核心�
 
 ## 交叉引用 (Cross-References)
 
-- [[业界观点/Dario_Amodei/about]] -- Dario Amodei 简介与核心贡献
-- [[业界观点/Dario_Amodei/sayings]] -- Dario Amodei 金句集
-- [[业界观点/Sam_Altman/about]] -- OpenAI CEO（共享: 前沿AI竞争、Scaling）
-- [[业界观点/Demis_Hassabis/Hassabis_2026_Update]] -- DeepMind CEO（共享: AI安全、AGI路线图）
-- [[业界观点/Jensen_Huang/GTC_2026_Keynote_Deep_Dive]] -- NVIDIA GTC 2026（共享: AI算力需求）
-- [[业界观点/Mark_Zuckerberg/Zuckerberg_AI_Pivot_2026]] -- Meta AI（共享: 开源vs闭源辩论）
-- [[业界观点/Wang_Huiwen/about]] -- 王慧文（共享: AI商业化、产品思维）
-- [[业界观点/Geoffrey_Hinton/about]] -- Geoffrey Hinton（共享: AI存在性风险）
-- [[业界观点/Ilya_Sutskever/about]] -- Ilya Sutskever（共享: OpenAI历史、对齐研究）
-- [[伦理安全/README]] -- AI伦理与安全
-- [[大模型/README]] -- 大语言模型技术
+- [[19_业界观点/Dario_Amodei/about]] -- Dario Amodei 简介与核心贡献
+- [[19_业界观点/Dario_Amodei/sayings]] -- Dario Amodei 金句集
+- [[19_业界观点/Sam_Altman/about]] -- OpenAI CEO（共享: 前沿AI竞争、Scaling）
+- [[19_业界观点/Demis_Hassabis/Hassabis_2026_Update]] -- DeepMind CEO（共享: AI安全、AGI路线图）
+- [[19_业界观点/Jensen_Huang/GTC_2026_Keynote_Deep_Dive]] -- NVIDIA GTC 2026（共享: AI算力需求）
+- [[19_业界观点/Mark_Zuckerberg/Zuckerberg_AI_Pivot_2026]] -- Meta AI（共享: 开源vs闭源辩论）
+- [[19_业界观点/Wang_Huiwen/about]] -- 王慧文（共享: AI商业化、产品思维）
+- [[19_业界观点/Geoffrey_Hinton/about]] -- Geoffrey Hinton（共享: AI存在性风险）
+- [[19_业界观点/Ilya_Sutskever/about]] -- Ilya Sutskever（共享: OpenAI历史、对齐研究）
+- [[17_伦理安全/README]] -- AI伦理与安全
+- [[05_大模型/README]] -- 大语言模型技术
 
 ---
 
@@ -505,12 +505,12 @@ Anthropic 2026 产品矩阵
 
 ## Related
 
-- [[业界观点/Dario_Amodei/about]] -- Dario Amodei 简介 (本页扩展)
-- [[业界观点/Dario_Amodei/sayings]] -- Dario Amodei 金句集
-- [[业界观点/Sam_Altman/about]] -- Sam Altman 简介 (共享: frontier AI competition)
-- [[业界观点/Demis_Hassabis/about]] -- Demis Hassabis 简介 (共享: AI safety, AGI)
-- [[业界观点/Jensen_Huang/about]] -- Jensen Huang 简介 (共享: AI compute demand)
-- [[业界观点/Mark_Zuckerberg/about]] -- Mark Zuckerberg 简介 (共享: open vs closed AI)
-- [[业界观点/Wang_Huiwen/about]] -- 王慧文简介 (共享: AI商业化)
-- [[业界观点/Geoffrey_Hinton/about]] -- Geoffrey Hinton 简介 (共享: AI existential risk)
-- [[业界观点/Ilya_Sutskever/about]] -- Ilya Sutskever 简介 (共享: OpenAI history, alignment)
+- [[19_业界观点/Dario_Amodei/about]] -- Dario Amodei 简介 (本页扩展)
+- [[19_业界观点/Dario_Amodei/sayings]] -- Dario Amodei 金句集
+- [[19_业界观点/Sam_Altman/about]] -- Sam Altman 简介 (共享: frontier AI competition)
+- [[19_业界观点/Demis_Hassabis/about]] -- Demis Hassabis 简介 (共享: AI safety, AGI)
+- [[19_业界观点/Jensen_Huang/about]] -- Jensen Huang 简介 (共享: AI compute demand)
+- [[19_业界观点/Mark_Zuckerberg/about]] -- Mark Zuckerberg 简介 (共享: open vs closed AI)
+- [[19_业界观点/Wang_Huiwen/about]] -- 王慧文简介 (共享: AI商业化)
+- [[19_业界观点/Geoffrey_Hinton/about]] -- Geoffrey Hinton 简介 (共享: AI existential risk)
+- [[19_业界观点/Ilya_Sutskever/about]] -- Ilya Sutskever 简介 (共享: OpenAI history, alignment)

@@ -208,5 +208,5 @@ Schaeffer 承认存在**真正的涌现**,但只占 BIG-bench 一小部分,且�
 - [[概念/LLM/chinchilla-scaling-laws|Chinchilla 缩放定律]] — 涌现能力的驱动因素
 - [[概念/LLM/large-language-model|大语言模型]] — 涌现能力的研究对象
 - [[概念/LLM/reasoning-models|推理模型]] — 涌现的推理能力
-- [[大模型/LLM_Training_Deep_Dive|LLM 训练深度解析]] — 规模与涌现的关系
+- [[05_大模型/LLM_Training_Deep_Dive|LLM 训练深度解析]] — 规模与涌现的关系
 - [[概念/Safety/ai-alignment|AI 对齐]] — 涌现能力带来的对齐挑战

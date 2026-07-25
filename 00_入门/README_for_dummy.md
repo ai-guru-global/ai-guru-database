@@ -215,9 +215,9 @@ ChatGPT、Claude、Gemini
 
 ## 下一步
 
-- 想学技术？→ [数学基础/README_for_dummy.md](./数学基础/README_for_dummy.md)
-- 想学机器学习？→ [机器学习/README_for_dummy.md](./机器学习/README_for_dummy.md)
-- 想学深度学习？→ [深度学习/README_for_dummy.md](./深度学习/README_for_dummy.md)
+- 想学技术？→ [01_数学基础/README_for_dummy.md](./01_数学基础/README_for_dummy.md)
+- 想学机器学习？→ [02_机器学习/README_for_dummy.md](./02_机器学习/README_for_dummy.md)
+- 想学深度学习？→ [03_深度学习/README_for_dummy.md](./03_深度学习/README_for_dummy.md)
 
 ---
 
@@ -225,6 +225,6 @@ ChatGPT、Claude、Gemini
 
 ## Related
 
-- [[入门/Fundamentals/AI_Fundamentals]] — AI基础概念入门 (共享: ai, introduction)
-- [[入门/Fundamentals/AI_Fundamentals_for_dummy]] — AI 基础入门 - 小白版 (共享: ai, introduction)
-- [[入门/README]] — 00 - AI 简介与历史 (共享: ai, introduction)
+- [[00_入门/01_Fundamentals/AI_Fundamentals]] — AI基础概念入门 (共享: ai, introduction)
+- [[00_入门/01_Fundamentals/AI_Fundamentals_for_dummy]] — AI 基础入门 - 小白版 (共享: ai, introduction)
+- [[00_入门/README]] — 00 - AI 简介与历史 (共享: ai, introduction)

@@ -3,10 +3,10 @@ title: "Agent 评估 × 模型评估 — 从指标到行为的评估范式迁移
 category: -synthesis
 tags: [agent-evaluation, model-evaluation, benchmark, evaluation, llm-as-judge, agentic-ai]
 sources:
-  - "[[智能体/Agent_Evaluation/Assessment/Evaluation_Workflow]]"
-  - "[[模型评估/Model_Evaluation]]"
-  - "[[模型评估/Evaluation_Tools/LLM_as_Judge_Deep_Dive]]"
-  - "[[模型评估/Benchmarks/Agentic_Benchmark_Guide]]"
+  - "[[15_智能体/07_Agent_Evaluation/Assessment/Evaluation_Workflow]]"
+  - "[[08_模型评估/Model_Evaluation]]"
+  - "[[08_模型评估/04_Evaluation_Tools/LLM_as_Judge_Deep_Dive]]"
+  - "[[08_模型评估/02_Benchmarks/Agentic_Benchmark_Guide]]"
 created: 2026-06-05
 updated: 2026-06-05
 summary: "传统模型评估关注'输出是否正确'，Agent 评估关注'行为是否达成目标'。两者交汇催生了 LLM-as-Judge、过程奖励、轨迹评估等新范式。"
@@ -67,11 +67,11 @@ Agent 评估不是模型评估的简单扩展，而是一次**范式迁移**：
 
 ## Related
 
-- [[智能体/Agent_Evaluation/Assessment/Evaluation_Workflow]] — Agent 评估工作流
-- [[模型评估/Model_Evaluation]] — 模型评估基础
-- [[模型评估/Evaluation_Tools/LLM_as_Judge_Deep_Dive]] — LLM-as-Judge 深度解读
-- [[模型评估/Benchmarks/Agentic_Benchmark_Guide]] — Agent 评估基准指南
-- [[模型评估/Evaluation_Tools/Online_Evaluation]] — 在线评估方法
+- [[15_智能体/07_Agent_Evaluation/Assessment/Evaluation_Workflow]] — Agent 评估工作流
+- [[08_模型评估/Model_Evaluation]] — 模型评估基础
+- [[08_模型评估/04_Evaluation_Tools/LLM_as_Judge_Deep_Dive]] — LLM-as-Judge 深度解读
+- [[08_模型评估/02_Benchmarks/Agentic_Benchmark_Guide]] — Agent 评估基准指南
+- [[08_模型评估/04_Evaluation_Tools/Online_Evaluation]] — 在线评估方法
 - [[治理/benchmark-evaluation]] — 评测基准 × 评测方法论
 
 ## 附录：核心概念速查
@@ -193,14 +193,14 @@ Agent 评估不是模型评估的简单扩展，而是一次**范式迁移**：
 
 | 关联主题 | 关系 | 参考路径 |
 |----------|------|----------|
-| Agent基础理论 | 前置知识 | 智能体/Agent_Foundations/ |
-| 框架与工具 | 实现支撑 | 智能体/Agent_Frameworks/ |
-| 评估与测试 | 质量保障 | 智能体/Agent_Evaluation/ |
-| 协议与标准 | 互操作基础 | 智能体/Agent_Protocols/ |
-| 生产部署 | 运维实践 | 智能体/Enterprise_Agent/ |
-| 记忆系统 | 核心能力 | 智能体/Memory_Infrastructure/ |
-| 工作流编排 | 执行引擎 | 智能体/Agent_Workflow/ |
-| 技能扩展 | 能力增强 | 智能体/Agent_Skills/ |
+| Agent基础理论 | 前置知识 | 15_智能体/01_Agent_Foundations/ |
+| 框架与工具 | 实现支撑 | 15_智能体/02_Agent_Frameworks/ |
+| 评估与测试 | 质量保障 | 15_智能体/07_Agent_Evaluation/ |
+| 协议与标准 | 互操作基础 | 15_智能体/Agent_Protocols/ |
+| 生产部署 | 运维实践 | 15_智能体/10_Enterprise_Agent/ |
+| 记忆系统 | 核心能力 | 15_智能体/06_Memory_Infrastructure/ |
+| 工作流编排 | 执行引擎 | 15_智能体/03_Agent_Workflow/ |
+| 技能扩展 | 能力增强 | 15_智能体/05_Agent_Skills/ |
 
 ## 版本与更新记录
 

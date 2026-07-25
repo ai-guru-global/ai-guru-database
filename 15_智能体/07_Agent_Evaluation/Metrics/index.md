@@ -14,15 +14,15 @@ Agent 评估指标体系定义与数据采集方法。
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[智能体/Agent_Evaluation/Metrics/Evaluation_Metrics|Evaluation Metrics]] | Evaluation Metrics | 评估工程师/研究者 |
-| [[智能体/Agent_Evaluation/Metrics/Metrics_Collection|Metrics Collection]] | Metrics Collection | 评估工程师/研究者 |
+| [[15_智能体/07_Agent_Evaluation/Metrics/Evaluation_Metrics|Evaluation Metrics]] | Evaluation Metrics | 评估工程师/研究者 |
+| [[15_智能体/07_Agent_Evaluation/Metrics/Metrics_Collection|Metrics Collection]] | Metrics Collection | 评估工程师/研究者 |
 
 ## Related
 
-- [[智能体/Agent_Evaluation/Assessment/index|评估流程]]
-- [[智能体/Agent_Evaluation/Benchmarking/index|基准测试]]
-- [[智能体/Agent_Evaluation/Implementation/index|实现指南]]
-- [[智能体/Agent_Evaluation/index|← 返回智能体评估]]
+- [[15_智能体/07_Agent_Evaluation/Assessment/index|评估流程]]
+- [[15_智能体/07_Agent_Evaluation/Benchmarking/index|基准测试]]
+- [[15_智能体/07_Agent_Evaluation/Implementation/index|实现指南]]
+- [[15_智能体/07_Agent_Evaluation/index|← 返回智能体评估]]
 
 ## Metrics 核心概念
 

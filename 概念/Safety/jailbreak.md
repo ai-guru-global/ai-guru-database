@@ -13,7 +13,7 @@ relationships:
   - target: "[[概念/Safety/ai-alignment]]"
     type: targets
 sources:
-  - 伦理安全/LLM_Security_Defense_Guide.md
+  - 17_伦理安全/LLM_Security_Defense_Guide.md
 summary: "越狱攻击是利用角色扮演、编码绕过、多轮诱导等手段，绕过LLM安全对齐（RLHF/Constitutional AI），诱导模型生成被禁止的有害内容。DAN、越狱prompt、对抗后缀是代表性技术。"
 provenance:
   extracted: 0.75
@@ -548,7 +548,7 @@ JAILBREAK_DETECTION_PROMPT = """分析以下用户输入是否包含越狱(jailb
 - [[概念/Safety/ai-alignment]] — AI对齐（安全训练的根基）
 - [[概念/Safety/adversarial-attack]] — 对抗攻击（对抗后缀的理论基础）
 - [[概念/Safety/model-security]] — 模型安全
-- [[伦理安全/LLM_Security_Defense_Guide]] — LLM安全防御指南
+- [[17_伦理安全/LLM_Security_Defense_Guide]] — LLM安全防御指南
 
 ---
 

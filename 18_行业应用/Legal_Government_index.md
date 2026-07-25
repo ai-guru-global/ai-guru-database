@@ -15,13 +15,13 @@ tags: [auto-index]
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[行业应用/AI_Legal_Government_2026|AI Legal Government 2026]] | Legal government AI landscape: intelligent compliance, judicial assistance and digital government | LegalTech practitioners / government technologists |
+| [[18_行业应用/AI_Legal_Government_2026|AI Legal Government 2026]] | Legal government AI landscape: intelligent compliance, judicial assistance and digital government | LegalTech practitioners / government technologists |
 
 ## Related
 
-- [[行业应用/Finance/index|Finance]]
-- [[行业应用/Security_Cybersecurity_index|Security & Cybersecurity]]
-- [[伦理安全/index|伦理安全]]
+- [[18_行业应用/04_Finance/index|Finance]]
+- [[18_行业应用/Security_Cybersecurity_index|Security & Cybersecurity]]
+- [[17_伦理安全/index|伦理安全]]
 
 ## 进阶知识拓展
 
@@ -59,9 +59,9 @@ tags: [auto-index]
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

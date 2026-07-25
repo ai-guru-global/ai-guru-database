@@ -19,30 +19,30 @@ sources: []
 ### 1.1 图神经网络（GNN）— 完全空白
 作为深度学习三大架构之一（CNN/RNN/GNN），项目没有 GNN 相关文档。GCN、GAT、GraphSAGE、消息传递范式、分子图预测等内容缺失。
 
-**归属**: `深度学习/Graph_Neural_Networks/`
+**归属**: `03_深度学习/05_Graph_Neural_Networks/`
 
 ### 1.2 贝叶斯方法与概率编程 — 完全空白
 贝叶斯推断、变分推断、MCMC、PyMC/Stan 概率编程是 ML 理论基石。
 
-**归属**: `机器学习/Bayesian_Methods/`
+**归属**: `02_机器学习/06_Bayesian_Methods/`
 
 ### 1.3 因果推断（Causal Inference）— 完全空白
 Judea Pearl 因果阶梯、Do-calculus、因果发现算法（PC/FCI）、工具变量法。当前 AI 研究热点，也是 LLM 推理能力评估的理论基础。
 
-**归属**: `机器学习/Causal_Inference/`
+**归属**: `02_机器学习/07_Causal_Inference/`
 
 ### 1.4 联邦学习与隐私计算 — 已有独立章节
-✅ 已创建独立章节 `伦理安全/Federated_Learning/`，覆盖 FedAvg/FedProx、差分隐私、安全聚合、联邦 LLM 微调。
+✅ 已创建独立章节 `17_伦理安全/11_Federated_Learning/`，覆盖 FedAvg/FedProx、差分隐私、安全聚合、联邦 LLM 微调。
 
 ### 1.5 AI for Science — 完全空白
 AlphaFold 蛋白质结构预测、AI 药物发现、AI 气象预测（GraphCast/Pangu-Weather）、AI 材料科学。2024-2026 最具影响力的 AI 应用方向之一。
 
-**归属**: `行业应用/AI_for_Science/`
+**归属**: `18_行业应用/02_AI_for_Science/`
 
 ### 1.6 语音与音频 AI — 完全空白
 ASR（Whisper）、TTS（VITS/CosyVoice）、音频理解（AudioLM）、音乐生成（MusicGen/Suno）。语音是 AI 感知层的核心模态。
 
-**归属**: `大模型/Speech_Audio_AI/`
+**归属**: `05_大模型/11_Speech_Audio_AI/`
 
 ---
 
@@ -79,23 +79,23 @@ ASR（Whisper）、TTS（VITS/CosyVoice）、音频理解（AudioLM）、音乐�
 ## 4. 优先级与执行计划
 
 ### P0 - 百科级必备（影响完整性）
-1. ✅ GNN 专题 → `深度学习/Graph_Neural_Networks/`
-2. ✅ AI for Science → `行业应用/AI_for_Science/`
-3. ✅ 语音与音频 AI → `大模型/Speech_Audio_AI/`
-4. ✅ 信息论基础 → `数学基础/Information_Theory/`
-5. ✅ 因果推断 → `机器学习/Causal_Inference/`
-6. ✅ 贝叶斯方法 → `机器学习/Bayesian_Methods/`
-7. ✅ 核心论文补充 → `论文精读/` (GAN/VAE/CLIP/LoRA/CoT)
+1. ✅ GNN 专题 → `03_深度学习/05_Graph_Neural_Networks/`
+2. ✅ AI for Science → `18_行业应用/02_AI_for_Science/`
+3. ✅ 语音与音频 AI → `05_大模型/11_Speech_Audio_AI/`
+4. ✅ 信息论基础 → `01_数学基础/04_Information_Theory/`
+5. ✅ 因果推断 → `02_机器学习/07_Causal_Inference/`
+6. ✅ 贝叶斯方法 → `02_机器学习/06_Bayesian_Methods/`
+7. ✅ 核心论文补充 → `20_论文精读/` (GAN/VAE/CLIP/LoRA/CoT)
 
 ### P1 - 理论深度提升
-8. ✅ 自监督学习专题 → `深度学习/Self_Supervised_Learning/`
-9. ✅ LLM 数据工程 → `大模型/LLM_Data_Engineering/`
-10. ✅ 小模型/端侧 LLM → `大模型/Edge_LLM/`
-11. ✅ 联邦学习独立章节 → `伦理安全/Federated_Learning/`
-12. ✅ 论文补充: VAE/CoT/RAG → `论文精读/`
+8. ✅ 自监督学习专题 → `03_深度学习/06_Self_Supervised_Learning/`
+9. ✅ LLM 数据工程 → `05_大模型/06_LLM_Data_Engineering/`
+10. ✅ 小模型/端侧 LLM → `05_大模型/12_Edge_LLM/`
+11. ✅ 联邦学习独立章节 → `17_伦理安全/11_Federated_Learning/`
+12. ✅ 论文补充: VAE/CoT/RAG → `20_论文精读/`
 
 ### P2 - 实践价值增强
-13. ✅ 统一 Benchmark 对比表 → `模型评估/Unified_Benchmark_Comparison.md`
+13. ✅ 统一 Benchmark 对比表 → `08_模型评估/Unified_Benchmark_Comparison.md`
 14. ✅ 各章节配套实验 → `AI入门/Hands_On_Experiments_Guide.md`
 15. ✅ 概念间依赖关系图谱 → `概念/concept-dependency-graph.md`
 
@@ -224,9 +224,9 @@ ASR（Whisper）、TTS（VITS/CosyVoice）、音频理解（AudioLM）、音乐�
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

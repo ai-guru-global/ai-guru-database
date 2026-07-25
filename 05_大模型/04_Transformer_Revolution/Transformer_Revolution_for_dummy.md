@@ -429,8 +429,8 @@ Multi-Head = 让 AI 同时从多个角度理解句子,就像你用多个摄像�
 
 ## 相关链接
 
-- [[大模型/Transformer_Revolution/Transformer_Revolution|Transformer 革命 (完整版)]] — 本篇小白版对应的详细版
-- [[大模型/Transformer_Revolution/index|Transformer 革命索引]] — Transformer 主题导览
-- [[大模型/Transformer_Revolution/Self_Attention_Mechanism|自注意力机制]] — Transformer 核心机制深入
-- [[大模型/LLM_Architectures/LLM_Architectures_for_dummy|大语言模型架构 (小白版)]] — 基于 Transformer 的 LLM 架构
+- [[05_大模型/04_Transformer_Revolution/Transformer_Revolution|Transformer 革命 (完整版)]] — 本篇小白版对应的详细版
+- [[05_大模型/04_Transformer_Revolution/index|Transformer 革命索引]] — Transformer 主题导览
+- [[05_大模型/04_Transformer_Revolution/Self_Attention_Mechanism|自注意力机制]] — Transformer 核心机制深入
+- [[05_大模型/05_LLM_Architectures/LLM_Architectures_for_dummy|大语言模型架构 (小白版)]] — 基于 Transformer 的 LLM 架构
 - [[概念/LLM/transformer-architecture|Transformer 架构]] — Transformer 架构概念卡片

@@ -101,8 +101,8 @@ sentiment = choice_gen("I love this product!")
 
 ## 相关概念
 
-- [[大模型/Structured_Output_Guide|结构化输出指南]]
-- [[大模型/README|NLP & LLMs]]
+- [[05_大模型/Structured_Output_Guide|结构化输出指南]]
+- [[05_大模型/README|NLP & LLMs]]
 - [[概念/outlines|Outlines 概念卡片]]
 - [[概念/structured-output|结构化输出]]
 
@@ -186,12 +186,12 @@ cfg_gen = outlines.generate.cfg(model, grammar)
 
 ## 相关概念
 
-- [[大模型/Structured_Output_Guide|结构化输出指南]]
-- [[大模型/README|NLP & LLMs]]
+- [[05_大模型/Structured_Output_Guide|结构化输出指南]]
+- [[05_大模型/README|NLP & LLMs]]
 - [[概念/outlines|Outlines 概念卡片]]
 - [[概念/structured-output|结构化输出]]
-- [[大模型/LLM_Products/instructor_overview|Instructor 概览]]
-- [[大模型/LLM_Products/chatgpt_overview|ChatGPT 概览]]
+- [[05_大模型/13_LLM_Products/instructor_overview|Instructor 概览]]
+- [[05_大模型/13_LLM_Products/chatgpt_overview|ChatGPT 概览]]
 
 ## 总结
 

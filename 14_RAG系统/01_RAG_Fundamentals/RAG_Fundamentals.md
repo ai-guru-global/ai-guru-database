@@ -93,11 +93,11 @@ response = llm.invoke(f"基于以下信息回答问题:\n{context}\n\n问题: {q
 
 ## 相关阅读
 
-- [[RAG系统/RAG_Systems]] — RAG 系统全景
-- [[RAG系统/Vector_Database_for_dummy]] — 向量数据库入门
-- [[RAG系统/Advanced_RAG/Data_Ingestion_Pipeline]] — 数据摄入管道
-- [[RAG系统/Advanced_RAG/RAG_Advanced_2026]] — RAG 高级实践
-- [[RAG系统/Advanced_RAG/Advanced_RAG_DLAI_Practices]] — RAG 高级实践 (DLAI)
+- [[14_RAG系统/RAG_Systems]] — RAG 系统全景
+- [[14_RAG系统/Vector_Database_for_dummy]] — 向量数据库入门
+- [[14_RAG系统/04_Advanced_RAG/Data_Ingestion_Pipeline]] — 数据摄入管道
+- [[14_RAG系统/04_Advanced_RAG/RAG_Advanced_2026]] — RAG 高级实践
+- [[14_RAG系统/04_Advanced_RAG/Advanced_RAG_DLAI_Practices]] — RAG 高级实践 (DLAI)
 
 ## 进阶知识拓展
 
@@ -135,9 +135,9 @@ response = llm.invoke(f"基于以下信息回答问题:\n{context}\n\n问题: {q
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

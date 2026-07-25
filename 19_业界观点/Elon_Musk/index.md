@@ -23,7 +23,7 @@ sources:
 
 ## 人物定位
 
-Elon Musk 在 AI 领域的角色充满矛盾：他既是 AI 存在性风险最知名的警告者（2014 称"召唤恶魔"、2023 签 Pause 信），又是 xAI 的创始人和 Tesla AI 的推动者——一边警告风险一边加速研发。他与 [[业界观点/Sam_Altman/about|Altman]] 的恩怨（2018 离开 OpenAI，2024 起诉 OpenAI"背叛开源使命"）是 AI 行业最具戏剧性的关系。
+Elon Musk 在 AI 领域的角色充满矛盾：他既是 AI 存在性风险最知名的警告者（2014 称"召唤恶魔"、2023 签 Pause 信），又是 xAI 的创始人和 Tesla AI 的推动者——一边警告风险一边加速研发。他与 [[19_业界观点/Sam_Altman/about|Altman]] 的恩怨（2018 离开 OpenAI，2024 起诉 OpenAI"背叛开源使命"）是 AI 行业最具戏剧性的关系。
 
 | 维度 | 定位 |
 |------|------|
@@ -40,8 +40,8 @@ Elon Musk 在 AI 领域的角色充满矛盾：他既是 AI 存在性风险最�
 
 | 文件 | 内容 | 适用人群 |
 |------|------|----------|
-| [[业界观点/Elon_Musk/about\|about]] | 完整人物简介：OpenAI 创立、Tesla AI、xAI | 所有读者 |
-| [[业界观点/Elon_Musk/sayings\|sayings]] | 重要语录合集 | 研究者 |
+| [[19_业界观点/Elon_Musk/about\|about]] | 完整人物简介：OpenAI 创立、Tesla AI、xAI | 所有读者 |
+| [[19_业界观点/Elon_Musk/sayings\|sayings]] | 重要语录合集 | 研究者 |
 
 ---
 
@@ -64,11 +64,11 @@ Elon Musk 在 AI 领域的角色充满矛盾：他既是 AI 存在性风险最�
 | 时间 | 事件 | 意义 |
 |------|------|------|
 | 2014.10 | MIT 演讲"召唤恶魔" | 最早公开警告 AI 风险 |
-| 2015 | 联合创立 OpenAI | 与 [[业界观点/Sam_Altman/about|Altman]]、[[业界观点/Ilya_Sutskever/about|Sutskever]] |
+| 2015 | 联合创立 OpenAI | 与 [[19_业界观点/Sam_Altman/about|Altman]]、[[19_业界观点/Ilya_Sutskever/about|Sutskever]] |
 | 2018 | 离开 OpenAI | 方向分歧 + 利益冲突 |
 | 2021 | Tesla AI Day / Dojo | 自动驾驶算力 |
 | 2022 | Optimus 原型 | 人形机器人 |
-| 2023.03 | 签 Pause Giant AI 公开信 | 与 [[业界观点/Yoshua_Bengio/about|Bengio]] 等 |
+| 2023.03 | 签 Pause Giant AI 公开信 | 与 [[19_业界观点/Yoshua_Bengio/about|Bengio]] 等 |
 | 2023.07 | 创立 xAI，推 Grok | 差异化竞争 |
 | 2024 | 起诉 OpenAI"背叛开源" | 与 Altman 恩怨升级 |
 | 2024- | Memphis Colossus 超算 | xAI 算力扩张 |
@@ -86,7 +86,7 @@ Elon Musk 在 AI 领域的角色充满矛盾：他既是 AI 存在性风险最�
 | AGI | 多次称"明年 AGI"（反复推迟）| 多次 |
 | OpenAI | 起诉其"背叛开源使命" | 2024 |
 
-完整语录见 [[业界观点/Elon_Musk/sayings|Musk 语录]]。
+完整语录见 [[19_业界观点/Elon_Musk/sayings|Musk 语录]]。
 
 ---
 
@@ -100,7 +100,7 @@ Musk 的 AI 立场充满矛盾，需要批判性看待：
 | 起诉 OpenAI 不开源 vs Grok 闭源 | Grok-1 开源，Grok-2/3 走闭源 API |
 | AGI 时间表反复 | 多次称"明年"，反复推迟 |
 
-外界普遍认为 Musk 的部分安全叙事带有**打压竞争对手**的动机。参见 [[业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix|AI 安全立场矩阵]] 把他放入完整光谱。
+外界普遍认为 Musk 的部分安全叙事带有**打压竞争对手**的动机。参见 [[19_业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix|AI 安全立场矩阵]] 把他放入完整光谱。
 
 ---
 
@@ -118,10 +118,10 @@ Musk 的 AI 立场充满矛盾，需要批判性看待：
 
 | 关系 | 人物 |
 |------|------|
-| OpenAI 联合创始人 | [[业界观点/Sam_Altman/about|Altman]]（恩怨）、[[业界观点/Ilya_Sutskever/about|Sutskever]] |
-| 安全立场呼应 | [[业界观点/Yoshua_Bengio/about|Bengio]]、[[业界观点/Geoffrey_Hinton/about|Hinton]] |
-| 算力供应商 | [[业界观点/Jensen_Huang/about|Jensen Huang]] |
-| 自动驾驶同行 | [[业界观点/Andrej_Karpathy/about|Karpathy]]（前 Tesla AI 总监）|
+| OpenAI 联合创始人 | [[19_业界观点/Sam_Altman/about|Altman]]（恩怨）、[[19_业界观点/Ilya_Sutskever/about|Sutskever]] |
+| 安全立场呼应 | [[19_业界观点/Yoshua_Bengio/about|Bengio]]、[[19_业界观点/Geoffrey_Hinton/about|Hinton]] |
+| 算力供应商 | [[19_业界观点/Jensen_Huang/about|Jensen Huang]] |
+| 自动驾驶同行 | [[19_业界观点/Andrej_Karpathy/about|Karpathy]]（前 Tesla AI 总监）|
 
 ---
 
@@ -129,9 +129,9 @@ Musk 的 AI 立场充满矛盾，需要批判性看待：
 
 | 阶段 | 推荐内容 | 目标 |
 |------|----------|------|
-| 入门 | [[业界观点/Elon_Musk/about\|about]] | 了解多元角色 |
-| 进阶 | [[业界观点/Elon_Musk/sayings\|sayings]] | 掌握风险立场 |
-| 批判 | [[业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix\|安全矩阵]] | 理解矛盾性 |
+| 入门 | [[19_业界观点/Elon_Musk/about\|about]] | 了解多元角色 |
+| 进阶 | [[19_业界观点/Elon_Musk/sayings\|sayings]] | 掌握风险立场 |
+| 批判 | [[19_业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix\|安全矩阵]] | 理解矛盾性 |
 
 ---
 
@@ -171,13 +171,13 @@ Musk 的 AI 立场充满矛盾，需要批判性看待：
 
 ## 关联导航
 
-- [[业界观点/Elon_Musk/about\|人物简介]] · [[业界观点/Elon_Musk/sayings\|核心语录]]
-- [[业界观点/Sam_Altman/about\|Sam Altman]] · [[业界观点/Ilya_Sutskever/about\|Ilya Sutskever]]
-- [[业界观点/Yoshua_Bengio/about\|Yoshua Bengio]] · [[业界观点/Andrej_Karpathy/about\|Andrej Karpathy]]
-- [[业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix\|AI 安全立场矩阵]]
-- [[业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026\|开源 vs 闭源]]
-- [[业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix\|AGI 时间表矩阵]]
-- [[业界观点/index\|业界观点首页]]
+- [[19_业界观点/Elon_Musk/about\|人物简介]] · [[19_业界观点/Elon_Musk/sayings\|核心语录]]
+- [[19_业界观点/Sam_Altman/about\|Sam Altman]] · [[19_业界观点/Ilya_Sutskever/about\|Ilya Sutskever]]
+- [[19_业界观点/Yoshua_Bengio/about\|Yoshua Bengio]] · [[19_业界观点/Andrej_Karpathy/about\|Andrej Karpathy]]
+- [[19_业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix\|AI 安全立场矩阵]]
+- [[19_业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026\|开源 vs 闭源]]
+- [[19_业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix\|AGI 时间表矩阵]]
+- [[19_业界观点/index\|业界观点首页]]
 
 ---
 

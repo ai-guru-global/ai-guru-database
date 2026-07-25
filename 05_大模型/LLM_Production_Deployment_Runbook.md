@@ -454,9 +454,9 @@ LLM 生产部署的核心矛盾是**质量、延迟、成本、可用性**四者
 
 ## Related
 
-- [[大模型/Edge_LLM/Edge_LLM_Deep_Dive|小模型与端侧 LLM 深度解读]]
-- [[大模型/LLM_Architectures/Reasoning_Models_2026|LLM 推理模型 2026]]
-- [[大模型/Fine_tuning_Techniques/Fine_tuning_Techniques|微调技术 (Fine-tuning Techniques)]]
-- [[架构基建/AI_SRE_Runbook|AI SRE Runbook]]
-- [[智能体/Agent_Production_Deployment_Runbook|Agent 生产部署 Runbook]]
+- [[05_大模型/12_Edge_LLM/Edge_LLM_Deep_Dive|小模型与端侧 LLM 深度解读]]
+- [[05_大模型/05_LLM_Architectures/Reasoning_Models_2026|LLM 推理模型 2026]]
+- [[05_大模型/07_Fine_tuning_Techniques/Fine_tuning_Techniques|微调技术 (Fine-tuning Techniques)]]
+- [[12_架构基建/AI_SRE_Runbook|AI SRE Runbook]]
+- [[15_智能体/Agent_Production_Deployment_Runbook|Agent 生产部署 Runbook]]
 - [[治理/ai-production-readiness|AI 生产就绪]] — 跨 LLM/RAG/Agent/SRE 的系统工程视角

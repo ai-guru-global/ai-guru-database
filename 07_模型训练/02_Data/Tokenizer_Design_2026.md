@@ -145,7 +145,7 @@ flowchart LR
 | **Token 粒度** | 影响模型学习难度 | 过细的切分需要更多层来组合语义 |
 | **Byte fallback** | 避免 UNK 但增加序列长度 | 罕见字符退化为 1-4 个 byte token |
 
-> **延伸阅读**: Tokenizer 的设计与模型整体架构紧密相关，详见 [LLM Architectures](大模型/LLM_Architectures/LLM_Architectures.md)。
+> **延伸阅读**: Tokenizer 的设计与模型整体架构紧密相关，详见 [LLM Architectures](05_大模型/05_LLM_Architectures/LLM_Architectures.md)。
 
 ---
 
@@ -350,7 +350,7 @@ GPT-2 使用了 **50,257** 个 token 的词表：
 | 特殊 token | 1 | `<\|endoftext\|>` |
 | **总计** | **50,257** | |
 
-GPT-2 tokenizer 的关键创新是 **Byte-level BPE**。关于 GPT 系列的更多技术细节，参见 [GPT-3 Deep Dive](论文精读/Scaling/GPT3_Deep_Dive.md)。
+GPT-2 tokenizer 的关键创新是 **Byte-level BPE**。关于 GPT 系列的更多技术细节，参见 [GPT-3 Deep Dive](20_论文精读/03_Scaling/GPT3_Deep_Dive.md)。
 
 ### 2.6 Byte-level BPE
 
@@ -810,7 +810,7 @@ def sample_segmentation(sentence: str, probs: dict,
 | **ALBERT** | 30,000 | SentencePiece Unigram |
 | **XLNet** | 32,000 | SentencePiece Unigram |
 
-> **注意**: LLaMA 1/2 虽然使用 SentencePiece，但实际选择的是 BPE 模式而非 Unigram 模式。T5 和 mBART 是使用 Unigram 的典型代表。更多 LLaMA 系列的技术细节见 [LLaMA Deep Dive](论文精读/Architecture/LLaMA_Deep_Dive.md)。
+> **注意**: LLaMA 1/2 虽然使用 SentencePiece，但实际选择的是 BPE 模式而非 Unigram 模式。T5 和 mBART 是使用 Unigram 的典型代表。更多 LLaMA 系列的技术细节见 [LLaMA Deep Dive](20_论文精读/02_Architecture/LLaMA_Deep_Dive.md)。
 
 ---
 
@@ -1790,17 +1790,17 @@ for model_name in model_names:
 ---
 
 > **相关文档**:
-> - [LLM Architectures](大模型/LLM_Architectures/LLM_Architectures.md) - 模型架构详解
-> - [GPT-3 Deep Dive](论文精读/Scaling/GPT3_Deep_Dive.md) - GPT-3 论文深度解读
-> - [LLaMA Deep Dive](论文精读/Architecture/LLaMA_Deep_Dive.md) - LLaMA 系列论文深度解读
+> - [LLM Architectures](05_大模型/05_LLM_Architectures/LLM_Architectures.md) - 模型架构详解
+> - [GPT-3 Deep Dive](20_论文精读/03_Scaling/GPT3_Deep_Dive.md) - GPT-3 论文深度解读
+> - [LLaMA Deep Dive](20_论文精读/02_Architecture/LLaMA_Deep_Dive.md) - LLaMA 系列论文深度解读
 
 *Last updated: 2026-06-04*
 
 ## 相关链接
 
-- [[模型训练/Data/index|训练数据索引]] — 训练数据主题导览
-- [[模型训练/Data/Data_Curation_and_Mixture_2026|数据治理与配比 2026]] — 数据工程相关
+- [[07_模型训练/02_Data/index|训练数据索引]] — 训练数据主题导览
+- [[07_模型训练/02_Data/Data_Curation_and_Mixture_2026|数据治理与配比 2026]] — 数据工程相关
 - [[概念/LLM/tokenization|分词]] — 分词概念卡片
 - [[概念/General/sentencepiece|SentencePiece]] — 主流分词器
 - [[概念/LLM/token-plain|Token]] — Token 概念卡片
-- [[大模型/LLM_Data_Engineering/LLM_Data_Engineering_Deep_Dive|LLM 数据工程深度解析]] — 数据工程全景
+- [[05_大模型/06_LLM_Data_Engineering/LLM_Data_Engineering_Deep_Dive|LLM 数据工程深度解析]] — 数据工程全景

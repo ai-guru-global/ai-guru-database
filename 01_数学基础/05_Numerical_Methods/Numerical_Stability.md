@@ -283,8 +283,8 @@ Loss 异常?
 
 ## 相关文档
 
-- [[数学基础/Numerical_Methods/Numerical_Methods|数值方法总论]]
-- [[数学基础/Numerical_Methods/Floating_Point_Precision|浮点精度]]
-- [[深度学习/Optimization/|优化方法]] — 优化器与收敛
-- [[模型训练/Distributed_Training/|分布式训练]] — 多卡数值同步
-- [[大模型/LLM_Architectures/LLM_Internals_Training|训练内幕]] — 大模型训练稳定性
+- [[01_数学基础/05_Numerical_Methods/Numerical_Methods|数值方法总论]]
+- [[01_数学基础/05_Numerical_Methods/Floating_Point_Precision|浮点精度]]
+- [[03_深度学习/03_Optimization/|优化方法]] — 优化器与收敛
+- [[07_模型训练/04_Distributed_Training/|分布式训练]] — 多卡数值同步
+- [[05_大模型/05_LLM_Architectures/LLM_Internals_Training|训练内幕]] — 大模型训练稳定性

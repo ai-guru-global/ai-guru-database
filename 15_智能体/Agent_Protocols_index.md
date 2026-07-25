@@ -15,13 +15,13 @@ tags: [auto-index]
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[智能体/A2A_Protocol_Deep_Dive|A2A Protocol Deep Dive]] | A2A protocol deep dive: architecture, message format and interoperability analysis | agent developers / system architects |
+| [[15_智能体/A2A_Protocol_Deep_Dive|A2A Protocol Deep Dive]] | A2A protocol deep dive: architecture, message format and interoperability analysis | agent developers / system architects |
 
 ## Related
 
-- [[智能体/Agent_Foundations/index|Agent Foundations]]
-- [[智能体/Agent_Workflow/index|Agent Workflow]]
-- [[智能体/Multi_Agent_Systems/index|Multi-Agent Systems]]
+- [[15_智能体/01_Agent_Foundations/index|Agent Foundations]]
+- [[15_智能体/03_Agent_Workflow/index|Agent Workflow]]
+- [[15_智能体/Multi_Agent_Systems/index|Multi-Agent Systems]]
 
 ## Agent_Protocols 核心概念
 

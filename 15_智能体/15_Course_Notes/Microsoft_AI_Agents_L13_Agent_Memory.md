@@ -126,21 +126,21 @@ Azure AI Search 提供生产级 Structured RAG，从对话历史、邮件、图�
 
 ## 与其他课的衔接
 
-- 本课是 [[智能体/Course_Notes/Microsoft_AI_Agents_L12_Context_Engineering]] 的具体落地——记忆是上下文工程六大策略之一
-- Episodic Memory 与 [[智能体/Course_Notes/Microsoft_AI_Agents_L09_Metacognition]] 中的"反思过往经验"同源 ^[inferred]
-- Cognee 知识图谱呼应 [[智能体/Course_Notes/Microsoft_AI_Agents_L11_Agentic_Protocols]] 中 A2A 的 Agent Card 概念
+- 本课是 [[15_智能体/15_Course_Notes/Microsoft_AI_Agents_L12_Context_Engineering]] 的具体落地——记忆是上下文工程六大策略之一
+- Episodic Memory 与 [[15_智能体/15_Course_Notes/Microsoft_AI_Agents_L09_Metacognition]] 中的"反思过往经验"同源 ^[inferred]
+- Cognee 知识图谱呼应 [[15_智能体/15_Course_Notes/Microsoft_AI_Agents_L11_Agentic_Protocols]] 中 A2A 的 Agent Card 概念
 
 ---
 
 ## 关联阅读
 
-- [[智能体/Course_Notes/Microsoft_AI_Agents_L12_Context_Engineering]] — 上一课：上下文工程
-- [[智能体/Course_Notes/Microsoft_AI_Agents_L14_Microsoft_Agent_Framework]] — 下一课：MAF 深度
-- [[智能体/Course_Notes/Microsoft_AI_Agents_L09_Metacognition]] — L09：元认知 + 反思
-- [[智能体/Memory_Infrastructure/README]] — 本仓库记忆基础设施总览
-- [[智能体/Hello_Agents_L08_Memory_RAG]] — Hello-Agents 课程的 Memory+RAG
-- [[RAG系统/README]] — RAG 主题
-- [[学习/courses/microsoft/microsoft_ai_agents_for_beginners]] — 课程总览
+- [[15_智能体/15_Course_Notes/Microsoft_AI_Agents_L12_Context_Engineering]] — 上一课：上下文工程
+- [[15_智能体/15_Course_Notes/Microsoft_AI_Agents_L14_Microsoft_Agent_Framework]] — 下一课：MAF 深度
+- [[15_智能体/15_Course_Notes/Microsoft_AI_Agents_L09_Metacognition]] — L09：元认知 + 反思
+- [[15_智能体/06_Memory_Infrastructure/README]] — 本仓库记忆基础设施总览
+- [[15_智能体/Hello_Agents_L08_Memory_RAG]] — Hello-Agents 课程的 Memory+RAG
+- [[14_RAG系统/README]] — RAG 主题
+- [[90_学习/courses/microsoft/microsoft_ai_agents_for_beginners]] — 课程总览
 
 ## 附录：核心概念速查
 

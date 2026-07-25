@@ -126,10 +126,10 @@ graph TD
 
 ## Related
 
-- [[智能体/README]] — 智能体生产全景图
-- [[编程/Tools/Cursor_Guide]] — 典型的 Canvas 模式应用
-- [[智能体/Agent_Workflow/Agentic_Workflow_Design_Patterns_2026]] — 后端工作流与前端界面的衔接
-- [[大模型/Reasoning_Models/o1_Class_Reasoning_Models]] — 隐式思维链的 UI 处理
+- [[15_智能体/README]] — 智能体生产全景图
+- [[16_编程/05_Tools/Cursor_Guide]] — 典型的 Canvas 模式应用
+- [[15_智能体/03_Agent_Workflow/Agentic_Workflow_Design_Patterns_2026]] — 后端工作流与前端界面的衔接
+- [[05_大模型/09_Reasoning_Models/o1_Class_Reasoning_Models]] — 隐式思维链的 UI 处理
 - [[概念/human-ai-interaction]] — 人机交互基础理论
 
 ---

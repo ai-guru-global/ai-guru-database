@@ -37,11 +37,11 @@ sources: []
 
 | 子模块 | 核心内容 | 链接 |
 |--------|---------|------|
-| **图像分类与检测** | ResNet、YOLO、DETR | [[计算机视觉/Image_Classification_Detection/Image_Classification_Detection]] |
-| **图像分割** | 语义分割、实例分割、SAM | [[计算机视觉/Segmentation/Segmentation]] |
-| **生成模型** | GAN、Diffusion、VAE | [[计算机视觉/Generative_Models/Generative_Models]] |
-| **视频生成** | Sora、Runway、Kling | [[计算机视觉/Video_Generation/Video_Generation_2026]] |
-| **3D 视觉** | NeRF、3D Gaussian Splatting | [[计算机视觉/3D_Vision/3D_Vision]] |
+| **图像分类与检测** | ResNet、YOLO、DETR | [[04_计算机视觉/02_Image_Classification_Detection/Image_Classification_Detection]] |
+| **图像分割** | 语义分割、实例分割、SAM | [[04_计算机视觉/03_Segmentation/Segmentation]] |
+| **生成模型** | GAN、Diffusion、VAE | [[04_计算机视觉/06_Generative_Models/Generative_Models]] |
+| **视频生成** | Sora、Runway、Kling | [[04_计算机视觉/07_Video_Generation/Video_Generation_2026]] |
+| **3D 视觉** | NeRF、3D Gaussian Splatting | [[04_计算机视觉/05_3D_Vision/3D_Vision]] |
 
 ---
 
@@ -166,13 +166,13 @@ YOLO (You Only Look Once) 将目标检测转化为单次回归问题，是实时
 
 ## 延伸阅读 (Further Reading)
 
-- [[计算机视觉/CV-in-nutshell]] — 计算机视觉速成指南
-- [[计算机视觉/ViT_Deep_Dive]] — Vision Transformer 深度解读
-- [[计算机视觉/Image_Classification_Detection/Image_Classification_Detection]] — 图像分类与检测
-- [[计算机视觉/Segmentation/Segmentation]] — 图像分割
-- [[计算机视觉/Generative_Models/Generative_Models]] — 生成模型
-- [[计算机视觉/Video_Generation/Video_Generation_2026]] — 视频生成 2026
-- [[计算机视觉/3D_Vision/3D_Vision]] — 3D 视觉
+- [[04_计算机视觉/CV-in-nutshell]] — 计算机视觉速成指南
+- [[04_计算机视觉/ViT_Deep_Dive]] — Vision Transformer 深度解读
+- [[04_计算机视觉/02_Image_Classification_Detection/Image_Classification_Detection]] — 图像分类与检测
+- [[04_计算机视觉/03_Segmentation/Segmentation]] — 图像分割
+- [[04_计算机视觉/06_Generative_Models/Generative_Models]] — 生成模型
+- [[04_计算机视觉/07_Video_Generation/Video_Generation_2026]] — 视频生成 2026
+- [[04_计算机视觉/05_3D_Vision/3D_Vision]] — 3D 视觉
 
 ## 进阶知识拓展
 
@@ -210,9 +210,9 @@ YOLO (You Only Look Once) 将目标检测转化为单次回归问题，是实时
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

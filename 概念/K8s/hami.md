@@ -14,8 +14,8 @@ relationships:
   - target: "概念/gpu-operator"
     type: related_to
 sources:
-  - 架构基建/AI_Stack/HAMi_Deep_Dive.md
-  - 架构基建/AI_Stack/HAMi_Operation_Guide.md
+  - 12_架构基建/03_AI_Stack/HAMi_Deep_Dive.md
+  - 12_架构基建/03_AI_Stack/HAMi_Operation_Guide.md
   - AI运维/SRE_Reliability/HAMi_Troubleshooting_Guide.md
 summary: "HAMi 是 CNCF Sandbox 级异构 AI 算力虚拟化中间件，前身 k8s-vGPU-scheduler，可在 Kubernetes 上共享和隔离 GPU/NPU/MLU 等加速器，实现细粒度切分、显存硬隔离、拓扑感知调度与多厂商统一纳管。"
 provenance:
@@ -137,9 +137,9 @@ Pod 提交
 - [[概念/cdi]] — CDI 容器设备接口
 - [[概念/dra]] — DRA 动态资源分配
 - [[概念/gpu-operator]] — NVIDIA GPU Operator
-- [[架构基建/AI_Stack/HAMi_Deep_Dive]] — HAMi 深度解析
-- [[架构基建/AI_Stack/HAMi_Operation_Guide]] — HAMi 运维指南
-- [[运维/SRE_Reliability/HAMi_Troubleshooting_Guide]] — HAMi 问题排查
+- [[12_架构基建/03_AI_Stack/HAMi_Deep_Dive]] — HAMi 深度解析
+- [[12_架构基建/03_AI_Stack/HAMi_Operation_Guide]] — HAMi 运维指南
+- [[13_运维/02_SRE_Reliability/HAMi_Troubleshooting_Guide]] — HAMi 问题排查
 
 ---
 

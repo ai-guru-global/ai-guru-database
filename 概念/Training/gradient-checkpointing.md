@@ -126,7 +126,7 @@ class TransformerBlock(nn.Module):
 - [[概念/Training/qlora|QLoRA]] — 量化 + LoRA
 - [[概念/Training/deepspeed|DeepSpeed]] — 分布式训练框架
 - [[概念/LLM/llm-quantization|LLM 量化]] — 推理时显存优化
-- [[运维/SRE_Reliability/GPU_OOM_Troubleshooting_Guide|GPU OOM 排障指南]]
+- [[13_运维/02_SRE_Reliability/GPU_OOM_Troubleshooting_Guide|GPU OOM 排障指南]]
 
 ## 2026 梯度检查点生态现状
 

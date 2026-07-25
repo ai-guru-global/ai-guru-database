@@ -101,7 +101,7 @@ aliases:
 | AlpacaEval | 指令跟随 | Stanford |
 | Chatbot Arena | 人类偏好排名 | LMSYS |
 
-> **关联**: -> [[模型评估/README|模型评估]] | [[测试/Testing_Frameworks/DeepEval_Deep_Dive|DeepEval]] | [[测试/RAGAS_Deep_Dive|RAGAS]] | [[测试/Testing_Frameworks/Promptfoo_Deep_Dive|Promptfoo]]
+> **关联**: -> [[08_模型评估/README|模型评估]] | [[09_测试/02_Testing_Frameworks/DeepEval_Deep_Dive|DeepEval]] | [[09_测试/RAGAS_Deep_Dive|RAGAS]] | [[09_测试/02_Testing_Frameworks/Promptfoo_Deep_Dive|Promptfoo]]
 
 
 ## 进阶知识拓展
@@ -140,9 +140,9 @@ aliases:
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

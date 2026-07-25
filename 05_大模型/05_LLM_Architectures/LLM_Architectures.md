@@ -618,7 +618,7 @@ if __name__ == "__main__":
 - [提示工程](../Prompt_Engineering/Prompt_Engineering.md): Few-shot, Chain-of-Thought
 
 ### 跨领域应用
-- [多模态模型](计算机视觉/Multimodal_Vision/Multimodal_Vision.md): CLIP, Flamingo, GPT-4V
+- [多模态模型](04_计算机视觉/08_Multimodal_Vision/Multimodal_Vision.md): CLIP, Flamingo, GPT-4V
 
 ---
 
@@ -721,10 +721,10 @@ FLOPs ≈ 6 × N × D
 
 ## 相关链接
 
-- [[大模型/LLM_Architectures/LLM_Architectures_for_dummy|大语言模型架构 (小白版)]] — 本篇的零基础版本
-- [[大模型/LLM_Architectures/index|LLM 架构索引]] — LLM 架构主题导览
-- [[大模型/LLM_Architectures/LLM_Internals_Architecture|LLM 内部：架构]] — 架构内部细节深入
-- [[大模型/Transformer_Revolution/Transformer_Revolution|Transformer 革命]] — LLM 底层 Transformer 架构
-- [[大模型/LLM_Architectures/MoE_Routing_and_Load_Balancing|MoE 路由与负载均衡]] — MoE 架构核心机制
+- [[05_大模型/05_LLM_Architectures/LLM_Architectures_for_dummy|大语言模型架构 (小白版)]] — 本篇的零基础版本
+- [[05_大模型/05_LLM_Architectures/index|LLM 架构索引]] — LLM 架构主题导览
+- [[05_大模型/05_LLM_Architectures/LLM_Internals_Architecture|LLM 内部：架构]] — 架构内部细节深入
+- [[05_大模型/04_Transformer_Revolution/Transformer_Revolution|Transformer 革命]] — LLM 底层 Transformer 架构
+- [[05_大模型/05_LLM_Architectures/MoE_Routing_and_Load_Balancing|MoE 路由与负载均衡]] — MoE 架构核心机制
 - [[概念/LLM/llm-architectures|LLM 架构]] — LLM 架构概念卡片
-- [[大模型/LLM_Architectures/Transformer_Alternatives|Transformer 替代架构]] — Mamba/SSM 等替代方案
+- [[05_大模型/05_LLM_Architectures/Transformer_Alternatives|Transformer 替代架构]] — Mamba/SSM 等替代方案

@@ -159,9 +159,9 @@ accelerate launch --num_processes=4 my_script.py
 ---
 
 ## 相关阅读
-- [[模型训练/Optimization/Optimization_for_dummy]]
-- [[大模型/Fine_tuning_Techniques/PEFT_Advanced_2026]]
-- [[架构基建/Architecture_Overview/AI_Infrastructure_2026]]
+- [[07_模型训练/03_Optimization/Optimization_for_dummy]]
+- [[05_大模型/07_Fine_tuning_Techniques/PEFT_Advanced_2026]]
+- [[12_架构基建/02_Architecture_Overview/AI_Infrastructure_2026]]
 
 ## 进阶知识拓展
 
@@ -199,9 +199,9 @@ accelerate launch --num_processes=4 my_script.py
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

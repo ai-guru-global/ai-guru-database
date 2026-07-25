@@ -173,11 +173,11 @@ theorem pythagorean_theorem (a b c : ℝ)
 
 ## Related
 
-- [[大模型/Reasoning_Models/o1_Class_Reasoning_Models]] — 隐式推理与测试时计算
-- [[大模型/Reasoning_Models/DeepSeek_R1_Technical_Analysis]] — 强化学习如何提升推理
-- [[大模型/Reasoning_Models/Process_Reward_Models]] — 步骤级奖励与逻辑验证
+- [[05_大模型/09_Reasoning_Models/o1_Class_Reasoning_Models]] — 隐式推理与测试时计算
+- [[05_大模型/09_Reasoning_Models/DeepSeek_R1_Technical_Analysis]] — 强化学习如何提升推理
+- [[05_大模型/09_Reasoning_Models/Process_Reward_Models]] — 步骤级奖励与逻辑验证
 - [[概念/formal-logic]] — 符号逻辑基础
-- [[大模型/Reasoning_Models/Reasoning_Models|推理模型总览]]
+- [[05_大模型/09_Reasoning_Models/Reasoning_Models|推理模型总览]]
 
 ## 总结
 

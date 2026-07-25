@@ -524,11 +524,11 @@ class RedTeamOrchestrator:
 
 ## Related
 
-- [[伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming]] — 红队测试实战
-- [[伦理安全/AI_Security_2026/AI_Security_2026]] — AI 安全 2026 框架
-- [[伦理安全/Value_Alignment/Value_Alignment]] — 价值对齐技术
-- [[模型评估/Model_Evaluation]] — 通用模型评测
-- [[模型评估/Model_Evaluation_for_dummy]] — 模型评测入门
+- [[17_伦理安全/04_AI_Safety_RedTeaming/AI_Safety_RedTeaming]] — 红队测试实战
+- [[17_伦理安全/07_AI_Security_2026/AI_Security_2026]] — AI 安全 2026 框架
+- [[17_伦理安全/02_Value_Alignment/Value_Alignment]] — 价值对齐技术
+- [[08_模型评估/Model_Evaluation]] — 通用模型评测
+- [[08_模型评估/Model_Evaluation_for_dummy]] — 模型评测入门
 - [[治理/safety-evaluation-red-teaming|安全评测 × 红队]] — 攻防闭环
 
 - [[治理/benchmark-evaluation|评测基准 × 评测方法论：从分数到可信评估]]

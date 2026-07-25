@@ -382,8 +382,8 @@ def select_test_strategy(context: dict) -> list:
 
 ## 7. 交叉引用
 
-- [[编程/AI_IDE_Landscape_2026|AI IDE 全景]]
-- [[编程/Code_Review_AI_2026|AI 代码审查]]
-- [[测试/|测试]]
-- [[编程/Security/|编程安全]]
-- [[模型运维/|模型运维 CI/CD]]
+- [[16_编程/AI_IDE_Landscape_2026|AI IDE 全景]]
+- [[16_编程/Code_Review_AI_2026|AI 代码审查]]
+- [[09_测试/|测试]]
+- [[16_编程/09_Security/|编程安全]]
+- [[11_模型运维/|模型运维 CI/CD]]

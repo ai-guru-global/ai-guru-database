@@ -2,7 +2,7 @@
 title: 数据流水线编排 (Data Pipeline Orchestration)
 category: 11-mlops-pipeline
 tags: ["mlops", "ci-cd", "pipeline", "feature-store"]
-summary: "> **一句话理解**: 数据流水线编排就像铁路调度中心——协调各列火车（任务）的运行顺序、到站时间、异常处理，确保原材料（数据）按时、保质到达目的地（模型训练/推理）。"
+summary: "> **一句话理解**: 数据流水线编排就像铁路调度中心——协调各列火车（任务）的运行顺序、到站时间、异常处理，确保原材料（数据）按时、保质到达目的地（07_模型训练/推理）。"
 created: 2026-05-31
 updated: 2026-05-31
 tier: core
@@ -14,7 +14,7 @@ sources: []
 ---
 # 数据流水线编排 (Data Pipeline Orchestration)
 
-> **一句话理解**: 数据流水线编排就像铁路调度中心——协调各列火车（任务）的运行顺序、到站时间、异常处理，确保原材料（数据）按时、保质到达目的地（模型训练/推理）。
+> **一句话理解**: 数据流水线编排就像铁路调度中心——协调各列火车（任务）的运行顺序、到站时间、异常处理，确保原材料（数据）按时、保质到达目的地（07_模型训练/推理）。
 
 ---
 
@@ -496,8 +496,8 @@ if __name__ == "__main__":
 
 ## Related
 
-- [[模型运维/MLOps-in-nutshell]] — MLOps 速成指南 (共享: ci-cd, feature-store, mlops, pipeline)
-- [[模型运维/MLOps_Fundamentals/MLOps_Pipeline.md|MLOps_Pipeline]]
-- [[模型运维/CI_CD/ML_CI_CD.md|ML_CI_CD]]
-- [[模型运维/MLOps_Fundamentals/MLOps_Pipeline_for_dummy.md|MLOps_Pipeline_for_dummy]]
-- [[模型运维/MLOps_Fundamentals/MLOps_Maturity_Model.md|MLOps_Maturity_Model]]
+- [[11_模型运维/MLOps-in-nutshell]] — MLOps 速成指南 (共享: ci-cd, feature-store, mlops, pipeline)
+- [[11_模型运维/01_MLOps_Fundamentals/MLOps_Pipeline.md|MLOps_Pipeline]]
+- [[11_模型运维/06_CI_CD/ML_CI_CD.md|ML_CI_CD]]
+- [[11_模型运维/01_MLOps_Fundamentals/MLOps_Pipeline_for_dummy.md|MLOps_Pipeline_for_dummy]]
+- [[11_模型运维/01_MLOps_Fundamentals/MLOps_Maturity_Model.md|MLOps_Maturity_Model]]

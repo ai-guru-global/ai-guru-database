@@ -379,14 +379,14 @@ Phi-3 Cookbook 包含：
 
 ## 扩展阅读
 
-- [[大模型/Edge_LLM/Edge_LLM_Deep_Dive|边缘LLM深度指南]]
-- [[大模型/Fine_tuning_Techniques/Fine_tuning_Techniques|微调技术综述]]
-- [[大模型/Global_LLM_Ecosystem/Mistral_AI_Deep_Dive|Mistral AI 深度指南]]
-- [[大模型/Global_LLM_Ecosystem/Meta_LLaMA_Deep_Dive|Meta LLaMA 深度指南]]
-- [[学习/courses/microsoft/microsoft_genai_for_beginners|Microsoft GenAI 入门课程]]
+- [[05_大模型/12_Edge_LLM/Edge_LLM_Deep_Dive|边缘LLM深度指南]]
+- [[05_大模型/07_Fine_tuning_Techniques/Fine_tuning_Techniques|微调技术综述]]
+- [[05_大模型/14_Global_LLM_Ecosystem/Mistral_AI_Deep_Dive|Mistral AI 深度指南]]
+- [[05_大模型/14_Global_LLM_Ecosystem/Meta_LLaMA_Deep_Dive|Meta LLaMA 深度指南]]
+- [[90_学习/courses/microsoft/microsoft_genai_for_beginners|Microsoft GenAI 入门课程]]
 
 ## 课程导航
 
 | 上一课 | 下一课 |
 |--------|--------|
-| [[大模型/Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs|L18 微调大型语言模型]] | [[大模型/Global_LLM_Ecosystem/GenAI_L20_Building_with_Mistral|L20 使用Mistral模型构建]] |
+| [[05_大模型/07_Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs|L18 微调大型语言模型]] | [[05_大模型/14_Global_LLM_Ecosystem/GenAI_L20_Building_with_Mistral|L20 使用Mistral模型构建]] |

@@ -17,12 +17,12 @@ tags: [auto-index]
 
 ## Related
 
-- [[论文精读/index|论文精读首页]]
-- [[论文精读/Frontier_index|Frontier Papers]]
-- [[论文精读/Efficiency/index|Efficiency Papers]]
-- [[论文精读/Alignment/index|Alignment Papers]]
-- [[论文精读/RL/index|RL Papers]]
-- [[论文精读/Retrieval_index|Retrieval Papers]]
+- [[20_论文精读/index|论文精读首页]]
+- [[20_论文精读/Frontier_index|Frontier Papers]]
+- [[20_论文精读/04_Efficiency/index|Efficiency Papers]]
+- [[20_论文精读/06_Alignment/index|Alignment Papers]]
+- [[20_论文精读/07_RL/index|RL Papers]]
+- [[20_论文精读/Retrieval_index|Retrieval Papers]]
 
 ## 进阶知识拓展
 
@@ -60,9 +60,9 @@ tags: [auto-index]
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

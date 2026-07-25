@@ -11,8 +11,8 @@ relationships:
     type: used_by
 sources:
   - Agent/GenAI_L11_Integrating_with_Function_Calling.md
-  - 智能体/Agent_Skills/Agent_Skills_Ecosystem_Catalog.md
-  - 智能体/Agent_Protocols/MCP_Deep_Dive.md
+  - 15_智能体/05_Agent_Skills/Agent_Skills_Ecosystem_Catalog.md
+  - 15_智能体/Agent_Protocols/MCP_Deep_Dive.md
 summary: "此页面已合并至主卡片。"
 provenance:
   extracted: 0.8

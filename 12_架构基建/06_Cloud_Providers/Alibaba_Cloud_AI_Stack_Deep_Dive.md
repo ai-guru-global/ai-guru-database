@@ -235,9 +235,9 @@ API Key 与观测支持矩阵：
 - [[概念/model-serving]] — 模型服务化部署概念
 - [[概念/model-gateway]] — 模型网关概念
 - [[概念/llm-infrastructure]] — LLM 基础设施
-- [[部署推理/Deployment_Inference]] — 部署与推理系统全景
-- [[RAG系统/RAG_Systems]] — RAG 系统全景
-- [[架构基建/Architecture_Overview/AI_Infrastructure_2026]] — AI 基础设施 2026
-- [[架构基建/AI_Gateway/AI_Gateway_2026]] — AI Gateway 2026
+- [[10_部署推理/Deployment_Inference]] — 部署与推理系统全景
+- [[14_RAG系统/RAG_Systems]] — RAG 系统全景
+- [[12_架构基建/02_Architecture_Overview/AI_Infrastructure_2026]] — AI 基础设施 2026
+- [[12_架构基建/11_AI_Gateway/AI_Gateway_2026]] — AI Gateway 2026
 - [[治理/llm-infrastructure-system-design|LLM 基础设施 × 传统系统架构]] — 从 Web 服务到 Token 工厂
 - [[治理/rag-vector-database|RAG × 向量数据库]] — RAG 系统合成

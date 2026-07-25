@@ -31,10 +31,10 @@ tags: [system-visualization, index, navigation]
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[可视化/System_Viz/AI_System_Dashboard\|AI System Dashboard]] | 监控、告警与运维仪表盘设计 | 平台工程师 / 运维仪表盘设计者 |
-| [[可视化/System_Viz/Inference_Serving_Visualization\|Inference Serving Visualization]] | 推理服务延迟、吞吐与链路可视化 | 推理工程师 |
-| [[可视化/System_Viz/Knowledge_Graph_Visualization\|Knowledge Graph Visualization]] | 知识图谱布局、交互与探索 | 知识图谱工程师 / 可视化开发者 |
-| [[可视化/System_Viz/Model_Architecture_Viz\|Model Architecture Viz]] | 模型架构可视化（结构图/计算图） | 架构师 / 研究员 |
+| [[94_可视化/System_Viz/AI_System_Dashboard\|AI System Dashboard]] | 监控、告警与运维仪表盘设计 | 平台工程师 / 运维仪表盘设计者 |
+| [[94_可视化/System_Viz/Inference_Serving_Visualization\|Inference Serving Visualization]] | 推理服务延迟、吞吐与链路可视化 | 推理工程师 |
+| [[94_可视化/System_Viz/Knowledge_Graph_Visualization\|Knowledge Graph Visualization]] | 知识图谱布局、交互与探索 | 知识图谱工程师 / 可视化开发者 |
+| [[94_可视化/System_Viz/Model_Architecture_Viz\|Model Architecture Viz]] | 模型架构可视化（结构图/计算图） | 架构师 / 研究员 |
 
 ---
 
@@ -52,15 +52,15 @@ tags: [system-visualization, index, navigation]
 
 ### 3.2 推理服务可视化
 
-详见 [[可视化/System_Viz/Inference_Serving_Visualization|推理服务可视化]]。
+详见 [[94_可视化/System_Viz/Inference_Serving_Visualization|推理服务可视化]]。
 
 ### 3.3 模型架构可视化
 
-详见 [[可视化/System_Viz/Model_Architecture_Viz|模型架构可视化]]。
+详见 [[94_可视化/System_Viz/Model_Architecture_Viz|模型架构可视化]]。
 
 ### 3.4 知识图谱可视化
 
-详见 [[可视化/System_Viz/Knowledge_Graph_Visualization|知识图谱可视化]]。
+详见 [[94_可视化/System_Viz/Knowledge_Graph_Visualization|知识图谱可视化]]。
 
 ---
 
@@ -189,12 +189,12 @@ flowchart LR
 
 ## 关联
 
-- [[可视化/index|可视化首页]]
-- [[可视化/Best_Practices/index|Best Practices]]
-- [[架构基建/index|架构基建]]
-- [[模型运维/index|模型运维]]
-- [[部署推理/index|部署推理]]
-- [[RAG系统/index|RAG 系统]]
+- [[94_可视化/index|可视化首页]]
+- [[94_可视化/Best_Practices/index|Best Practices]]
+- [[12_架构基建/index|架构基建]]
+- [[11_模型运维/index|模型运维]]
+- [[10_部署推理/index|部署推理]]
+- [[14_RAG系统/index|RAG 系统]]
 - [[工具/index|工具]]
 
 ---

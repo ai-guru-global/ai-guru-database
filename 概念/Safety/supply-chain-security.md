@@ -70,7 +70,7 @@ Supply Chain Security 是保护软件、模型、数据从开发到部署全链�
 - [[概念/container-security|Container Security]]
 - [[概念/model-security|Model Security]]
 - [[概念/Safety/adversarial-attack|Adversarial Attack]] — 模型层攻击
-- [[架构基建/Security/Container_and_Supply_Chain_Security_for_AI|容器与供应链安全 for AI]]
+- [[12_架构基建/10_Security/Container_and_Supply_Chain_Security_for_AI|容器与供应链安全 for AI]]
 
 ## 供应链安全架构图
 

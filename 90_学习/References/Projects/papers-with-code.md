@@ -30,7 +30,7 @@ aliases:
 - **SOTA 排行榜**: 各任务的最先进结果对比
 - **数据集**: 常用数据集的索引和统计
 
-> **关联**: -> [[20_Papers|论文精读]] | [[学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[20_Papers|论文精读]] | [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
 
 
 ## 核心知识框架

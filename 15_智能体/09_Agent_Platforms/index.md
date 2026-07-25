@@ -14,19 +14,19 @@ sources: []
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[智能体/Agent_Platforms/Dify_Coze_MLServe_Dive|Dify Coze MLServe Dive]] | Dify Coze MLServe Dive | 开发者/学习者 |
-| [[智能体/Agent_Platforms/OpenRouter_Deep_Dive|OpenRouter Deep Dive]] | OpenRouter Deep Dive | 开发者/学习者 |
-| [[智能体/Agent_Platforms/PromptFlow_Deep_Dive|PromptFlow Deep Dive]] | PromptFlow Deep Dive | 开发者/学习者 |
+| [[15_智能体/09_Agent_Platforms/Dify_Coze_MLServe_Dive|Dify Coze MLServe Dive]] | Dify Coze MLServe Dive | 开发者/学习者 |
+| [[15_智能体/09_Agent_Platforms/OpenRouter_Deep_Dive|OpenRouter Deep Dive]] | OpenRouter Deep Dive | 开发者/学习者 |
+| [[15_智能体/09_Agent_Platforms/PromptFlow_Deep_Dive|PromptFlow Deep Dive]] | PromptFlow Deep Dive | 开发者/学习者 |
 
 ## 入门
 
-- [[智能体/Agent_Platforms/README|README]]
+- [[15_智能体/09_Agent_Platforms/README|README]]
 
 ## Related
 
-- [[智能体/Agent_Frameworks/index|Agent Frameworks]]
-- [[智能体/Agent_Workflow/index|Agent Workflow]]
-- [[智能体/Agent_Ecosystem_CN/index|Agent Ecosystem CN]]
+- [[15_智能体/02_Agent_Frameworks/index|Agent Frameworks]]
+- [[15_智能体/03_Agent_Workflow/index|Agent Workflow]]
+- [[15_智能体/12_Agent_Ecosystem_CN/index|Agent Ecosystem CN]]
 
 ## Agent_Platforms 核心概念
 

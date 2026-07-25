@@ -20,7 +20,7 @@ sources: []
 
 > **一句话理解**: Guardrails AI 是 LLM 安全护栏框架——输入验证、输出过滤、有害内容检测、数据隐私保护，确保 AI 应用安全合规。
 
-> 📐 **概念与选型方法论**: 隐私合规流水线（PII/数据血源/Model Card 门禁）见 [[模型运维/Orchestration/Privacy_Compliance_Pipeline]]，LLM 安全监控见 [[模型运维/Observability/LLM_Observability]]。本文聚焦 Guardrails 工具用法。
+> 📐 **概念与选型方法论**: 隐私合规流水线（PII/数据血源/Model Card 门禁）见 [[11_模型运维/05_Orchestration/Privacy_Compliance_Pipeline]]，LLM 安全监控见 [[11_模型运维/08_Observability/LLM_Observability]]。本文聚焦 Guardrails 工具用法。
 
 ---
 
@@ -319,8 +319,8 @@ for log in guard.audit():
 
 ## Related
 
-- [[运维/AIOps_Fundamentals/AIOps-in-nutshell.md|AIOps-in-nutshell]]
-- [[运维/SRE_Reliability/AI_Incident_Response_Playbook|AI_Incident_Response_Playbook]]
-- [[运维/AIOps_Fundamentals/AI_Ops_for_dummy.md|AI_Ops_for_dummy]]
-- [[运维/README.md|运维 README]]
-- [[运维/README_for_dummy.md|README_for_dummy]]
+- [[13_运维/01_AIOps_Fundamentals/AIOps-in-nutshell.md|AIOps-in-nutshell]]
+- [[13_运维/02_SRE_Reliability/AI_Incident_Response_Playbook|AI_Incident_Response_Playbook]]
+- [[13_运维/01_AIOps_Fundamentals/AI_Ops_for_dummy.md|AI_Ops_for_dummy]]
+- [[13_运维/README.md|运维 README]]
+- [[13_运维/README_for_dummy.md|README_for_dummy]]

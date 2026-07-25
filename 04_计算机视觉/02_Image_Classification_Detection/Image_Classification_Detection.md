@@ -557,8 +557,8 @@ car (0.75) at [50, 300, 150, 380]
 ## 7. 与其他主题的关联 (Connections)
 
 ### 前置知识
-- [卷积神经网络基础](深度学习/Neural_Network_Core/Neural_Network_Core.md)
-- [优化算法](深度学习/Optimization/Optimization.md): SGD, Adam
+- [卷积神经网络基础](03_深度学习/02_Neural_Network_Core/Neural_Network_Core.md)
+- [优化算法](03_深度学习/03_Optimization/Optimization.md): SGD, Adam
 
 ### 后续推荐
 - [图像分割](../Segmentation/Segmentation.md): 语义分割、实例分割
@@ -566,8 +566,8 @@ car (0.75) at [50, 300, 150, 380]
 - [多模态视觉](../Multimodal_Vision/Multimodal_Vision.md): CLIP, BLIP
 
 ### 跨领域应用
-- [迁移学习](深度学习/Transfer_Learning.md): 预训练模型微调
-- [模型评估](模型评估/Evaluation_Fundamentals/Model_Evaluation.md): 混淆矩阵、ROC 曲线
+- [迁移学习](03_深度学习/Transfer_Learning.md): 预训练模型微调
+- [模型评估](08_模型评估/01_Evaluation_Fundamentals/Model_Evaluation.md): 混淆矩阵、ROC 曲线
 
 ---
 
@@ -669,11 +669,11 @@ car (0.75) at [50, 300, 150, 380]
 
 ## Related
 
-- [[../../大模型/Multimodal_Models/LLaVA_Deep_Dive|LLaVA]] — 视觉语言模型架构
-- [[../../深度学习/Generative_Models/Diffusion_Models_Deep_Dive|Diffusion 深度页]] — 条件图像生成
+- [[../../05_大模型/10_Multimodal_Models/LLaVA_Deep_Dive|LLaVA]] — 视觉语言模型架构
+- [[../../03_深度学习/04_Generative_Models/Diffusion_Models_Deep_Dive|Diffusion 深度页]] — 条件图像生成
 - [[../../概念/Vision/object-detection|目标检测概念卡]] — 检测范式定义
-- [[../../部署推理/Inference_Engines|推理引擎]] — CV 模型高效推理
-- [[../../RAG系统/Advanced_RAG|高级 RAG]] — ColPali 等视觉检索方法
+- [[../../10_部署推理/Inference_Engines|推理引擎]] — CV 模型高效推理
+- [[../../14_RAG系统/Advanced_RAG|高级 RAG]] — ColPali 等视觉检索方法
 
 ---
 

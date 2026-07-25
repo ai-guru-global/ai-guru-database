@@ -667,4 +667,4 @@ class WalkingController:
 
 ## Related
 
-- [[强化学习/Robotics_Embodied_AI/README.md|README]]
+- [[06_强化学习/05_Robotics_Embodied_AI/README.md|README]]

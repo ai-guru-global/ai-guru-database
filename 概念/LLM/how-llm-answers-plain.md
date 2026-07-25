@@ -10,10 +10,10 @@ relationships:
     type: related_to
   - target: "概念/transformer"
     type: related_to
-  - target: "大模型/LLM_For_Beginners"
+  - target: "05_大模型/LLM_For_Beginners"
     type: related_to
 sources:
-  - "大模型/LLM_For_Beginners.md"
+  - "05_大模型/LLM_For_Beginners.md"
   - "概念/embeddings-vectors-mrl-plain.md"
 lifecycle: reviewed
 tier: supporting
@@ -208,7 +208,7 @@ updated: "2026-07-21"
 ## 延伸阅读
 
 - [[概念/embeddings-vectors-mrl-plain]] — Embedding、向量与 MRL 大白话
-- [[大模型/LLM_For_Beginners]] — 大语言模型入门
+- [[05_大模型/LLM_For_Beginners]] — 大语言模型入门
 - [[概念/large-language-model]] — 大语言模型概念卡片
 - [[概念/transformer]] — Transformer 概念卡片
 - [[概念/hallucination]] — LLM 幻觉根因与缓解

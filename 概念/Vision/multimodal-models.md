@@ -9,11 +9,11 @@ relationships:
     type: extends
   - target: "概念/long-context-models"
     type: related_to
-  - target: "部署推理/Inference_Performance/Multimodal_Inference_Optimization"
+  - target: "10_部署推理/04_Inference_Performance/Multimodal_Inference_Optimization"
     type: optimized_by
 sources:
-  - 大模型/Multimodal_world-models-jepa/Multimodal_llm-architectures_2026.md
-  - 部署推理/Inference_Performance/Multimodal_Inference_Optimization.md
+  - 05_大模型/Multimodal_world-models-jepa/Multimodal_llm-architectures_2026.md
+  - 10_部署推理/04_Inference_Performance/Multimodal_Inference_Optimization.md
 summary: 多模态模型从CLIP时代的图文对齐，发展到2026年的原生多模态统一架构。三大范式为模块化（LLaVA）、统一（GPT-4V/Claude）和原生多模态（GPT-4o/Gemini 2），支持文本、图像、音频、视频的无缝理解和生成。
 provenance:
   extracted: 0.80
@@ -137,9 +137,9 @@ KV Cache优化（2-3×）、Speculative Decoding（2-3×）、INT8/INT4量化（
 - [[概念/Vision/generative-vision-models.md|generative-vision-models]]
 - [[概念/LLM/llm-architectures.md|llm-architectures]]
 - [[概念/LLM/transformer-architecture.md|transformer-architecture]]
-- [[部署推理/Inference_Performance/Multimodal_Inference_Optimization|多模态推理优化]]
-- [[大模型/Fine_tuning_Techniques/Axolotl_Deep_Dive.md|Axolotl_Deep_Dive]]
-- [[大模型/Fine_tuning_Techniques/Fine_tuning_Techniques.md|Fine_tuning_Techniques]]
+- [[10_部署推理/04_Inference_Performance/Multimodal_Inference_Optimization|多模态推理优化]]
+- [[05_大模型/07_Fine_tuning_Techniques/Axolotl_Deep_Dive.md|Axolotl_Deep_Dive]]
+- [[05_大模型/07_Fine_tuning_Techniques/Fine_tuning_Techniques.md|Fine_tuning_Techniques]]
 
 ---
 

@@ -17,19 +17,19 @@ sources: []
 
 ## 页面列表
 
-- [[大模型/Multimodal_Models/Native_Multimodal_Architectures|Native Multimodal Architectures: From GPT-4V to Gemini 2.5]]
-- [[大模型/Multimodal_Models/Modality_Fusion_Mechanisms|Modality Fusion Mechanisms: Deep Dive]]
-- [[大模型/Multimodal_Models/Video_Understanding_Architectures|Video Understanding Architectures]]
+- [[05_大模型/10_Multimodal_Models/Native_Multimodal_Architectures|Native Multimodal Architectures: From GPT-4V to Gemini 2.5]]
+- [[05_大模型/10_Multimodal_Models/Modality_Fusion_Mechanisms|Modality Fusion Mechanisms: Deep Dive]]
+- [[05_大模型/10_Multimodal_Models/Video_Understanding_Architectures|Video Understanding Architectures]]
 
 ## 相关页面
 
-- [[大模型/Multimodal_Models/Multimodal_Models_for_dummy|多模态模型小白指南 (Multimodal Models for Dummy)]]
-- [[大模型/Multimodal_Models/README|多模态模型目录]]
-- [[大模型/Multimodal_Models/LLaVA_Deep_Dive|LLaVA: 开源多模态大模型]]
+- [[05_大模型/10_Multimodal_Models/Multimodal_Models_for_dummy|多模态模型小白指南 (Multimodal Models for Dummy)]]
+- [[05_大模型/10_Multimodal_Models/README|多模态模型目录]]
+- [[05_大模型/10_Multimodal_Models/LLaVA_Deep_Dive|LLaVA: 开源多模态大模型]]
 
 ## Related
 
-- [[大模型/README|04 自然语言处理与大模型 (NLP & LLMs)]]
+- [[05_大模型/README|04 自然语言处理与大模型 (NLP & LLMs)]]
 
 ## 多模态模型对比
 
@@ -171,9 +171,9 @@ sources: []
 
 ## Related
 
-- [[大模型/Speech_Audio_AI/index|Speech Audio AI]]
-- [[计算机视觉/index|计算机视觉]]
-- [[大模型/index|大模型首页]]
+- [[05_大模型/11_Speech_Audio_AI/index|Speech Audio AI]]
+- [[04_计算机视觉/index|计算机视觉]]
+- [[05_大模型/index|大模型首页]]
 
 ## 附录：视频理解
 

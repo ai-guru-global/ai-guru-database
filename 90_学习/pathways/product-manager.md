@@ -57,9 +57,9 @@ Stage 3: 工程实践（理解 AI 产品的工程边界）
 **📚 核心概念**：[Stage 0: AI 觉醒](../concepts/stage0_awakening.md)（全量）
 
 **🔗 深入阅读**：
-- [AI 基础概念入门](入门/Fundamentals/AI_Fundamentals.md)
-- [AI 经典案例分析集](入门/Ethics_and_Future/AI_Classic_Cases.md)（重点关注 AlphaGo、ChatGPT 两个案例）
-- [AI 工具与实践指南](入门/Learning_Path/AI_Tools_Practical_Guide.md)（了解当前工具生态）
+- [AI 基础概念入门](00_入门/01_Fundamentals/AI_Fundamentals.md)
+- [AI 经典案例分析集](00_入门/04_Ethics_and_Future/AI_Classic_Cases.md)（重点关注 AlphaGo、ChatGPT 两个案例）
+- [AI 工具与实践指南](00_入门/03_Learning_Path/AI_Tools_Practical_Guide.md)（了解当前工具生态）
 
 **💡 产品经理视角重点**：
 - 不要被"AI"标签迷惑，看清技术本质
@@ -77,13 +77,13 @@ Stage 3: 工程实践（理解 AI 产品的工程边界）
 
 **🎯 目标**：理解 AI 产品的工程约束，知道 AI 项目为什么常常延期和失败。
 
-**📚 核心概念**：[Stage 1 基础概念](学习/concepts/stage1_foundation.md) + [Stage 3 工程实践](学习/concepts/stage3_engineering.md)
+**📚 核心概念**：[Stage 1 基础概念](90_学习/concepts/stage1_foundation.md) + [Stage 3 工程实践](90_学习/concepts/stage3_engineering.md)
 
 **🔗 深入阅读**：
-- [README_for_dummy.md](伦理安全/README_for_dummy.md) — 新手导航（快速浏览）
-- [RAG 系统（小白版）](RAG系统/RAG_Fundamentals/RAG_Systems_for_dummy.md) — 理解 AI + 知识库的工程路径
-- [部署与推理（小白版）](部署推理/Deployment_Fundamentals/Deployment_Inference_for_dummy.md) — 理解 AI 的性能与成本
-- [模型评估（小白版）](模型评估/Evaluation_Fundamentals/Model_Evaluation_for_dummy.md) — 理解 AI 质量评估的复杂性
+- [README_for_dummy.md](17_伦理安全/README_for_dummy.md) — 新手导航（快速浏览）
+- [RAG 系统（小白版）](14_RAG系统/01_RAG_Fundamentals/RAG_Systems_for_dummy.md) — 理解 AI + 知识库的工程路径
+- [部署与推理（小白版）](10_部署推理/01_Deployment_Fundamentals/Deployment_Inference_for_dummy.md) — 理解 AI 的性能与成本
+- [模型评估（小白版）](08_模型评估/01_Evaluation_Fundamentals/Model_Evaluation_for_dummy.md) — 理解 AI 质量评估的复杂性
 
 **💡 产品经理必须理解的技术事实**：
 ```
@@ -114,12 +114,12 @@ AI 成本结构：
 
 **🎯 目标**：掌握 AI 产品设计的核心方法论，知道如何将 AI 能力转化为用户价值。
 
-**📚 核心概念**：[Stage 3 工程实践 — Agent / 工作流部分](学习/concepts/stage3_engineering.md)（重点理解 Agent 能做什么）
+**📚 核心概念**：[Stage 3 工程实践 — Agent / 工作流部分](90_学习/concepts/stage3_engineering.md)（重点理解 Agent 能做什么）
 
 **🔗 深入阅读**：
-- [AI Agent（小白版）](智能体/Agent_Foundations/AI_Agents_for_dummy.md) — 理解 AI Agent 的能力边界
-- [AI 工作流（速查版）](智能体/Agent_Workflow/Workflow-in-nutshell.md) — 理解 AI 工作流设计
-- [AI 工具与实践指南](入门/Technology_Overview/AI_Technology_Landscape.md) — 理解 AI 工具生态
+- [AI Agent（小白版）](15_智能体/01_Agent_Foundations/AI_Agents_for_dummy.md) — 理解 AI Agent 的能力边界
+- [AI 工作流（速查版）](15_智能体/03_Agent_Workflow/Workflow-in-nutshell.md) — 理解 AI 工作流设计
+- [AI 工具与实践指南](00_入门/02_Technology_Overview/AI_Technology_Landscape.md) — 理解 AI 工具生态
 
 **💡 AI 产品设计的核心原则**：
 ```
@@ -176,7 +176,7 @@ AI 成本结构：
 **📚 核心概念**：综合 Stage 0-3
 
 **🔗 行业案例深入阅读**：
-- [AI 在各行业的应用概览](行业应用/Industry_Overview/AI_Applications_Industry.md)
+- [AI 在各行业的应用概览](18_行业应用/01_Industry_Overview/AI_Applications_Industry.md)
 - [金融行业 AI 应用](../../13_AI_Applications_Industry/Finance/)
 - [医疗健康 AI 应用](../../13_AI_Applications_Industry/Healthcare/)
 - [教育行业 AI 应用](../../13_AI_Applications_Industry/Education/)
@@ -201,12 +201,12 @@ AI 成本结构：
 
 **🎯 目标**：理解 AI 的发展趋势，制定 AI 产品路线图。
 
-**📚 核心概念**：[Stage 4 前沿探索](学习/concepts/stage4_frontier.md)（浏览为主）
+**📚 核心概念**：[Stage 4 前沿探索](90_学习/concepts/stage4_frontier.md)（浏览为主）
 
 **🔗 深入阅读**：
-- [AI 未来趋势展望](入门/Ethics_and_Future/AI_Future_Trends.md)
-- [AI 伦理与社会影响](入门/Ethics_and_Future/AI_Ethics_Society.md)
-- [AI 学习资源与方法论](入门/Learning_Path/AI_Learning_Resources.md)
+- [AI 未来趋势展望](00_入门/04_Ethics_and_Future/AI_Future_Trends.md)
+- [AI 伦理与社会影响](00_入门/04_Ethics_and_Future/AI_Ethics_Society.md)
+- [AI 学习资源与方法论](00_入门/03_Learning_Path/AI_Learning_Resources.md)
 
 **💡 2026 AI 产品趋势**：
 - **Agentic AI**：从"问答"到"自主执行"，产品设计范式转变
@@ -232,7 +232,7 @@ Step 5: 迭代计划（如何持续优化 AI 效果？）
 
 ## 里程碑自测
 
-完成本路径后，请回顾 [milestones.md](学习/guides/milestones.md) 中 Stage 0-1 的自测题，重点检查：
+完成本路径后，请回顾 [milestones.md](90_学习/guides/milestones.md) 中 Stage 0-1 的自测题，重点检查：
 - [ ] 能理解 AI 术语并与 AI 团队有效沟通
 - [ ] 能评估 AI 产品需求的可行性和成本
 - [ ] 能设计包含 AI 功能的完整产品方案
@@ -242,18 +242,18 @@ Step 5: 迭代计划（如何持续优化 AI 效果？）
 
 | 你的打算 | 推荐去向 |
 |---------|---------|
-| 想动手实现 AI 产品原型 | [LLM 工程师路径](学习/pathways/llm-engineer.md)（专注 Phase 2-3） |
-| 想全面理解 AI 技术 | [ML 从业者路径](学习/pathways/ml-practitioner.md) |
+| 想动手实现 AI 产品原型 | [LLM 工程师路径](90_学习/pathways/llm-engineer.md)（专注 Phase 2-3） |
+| 想全面理解 AI 技术 | [ML 从业者路径](90_学习/pathways/ml-practitioner.md) |
 | 想深入某个行业 | 参见 [13_AI_Applications_Industry/](../../13_AI_Applications_Industry/) 各行业深度内容 |
 | 准备 AI PM 面试 | [AI 面试指南 — AI Product Manager](../../11_Interviews/AI_Product_Manager/) |
 
 ---
 
-*本路径专注于 AI 产品思维，不要求你写代码。但如果你有兴趣动手实践，强烈建议试试 [LLM 工程师路径](学习/pathways/llm-engineer.md) 的 Phase 2（Prompt Engineering），亲手体验 AI 的能力边界会大大加深你的产品直觉。*
+*本路径专注于 AI 产品思维，不要求你写代码。但如果你有兴趣动手实践，强烈建议试试 [LLM 工程师路径](90_学习/pathways/llm-engineer.md) 的 Phase 2（Prompt Engineering），亲手体验 AI 的能力边界会大大加深你的产品直觉。*
 
 ## Related
 
-- [[学习/guides/milestones]] — 里程碑自测 (共享: courses, education, learning, study-path)
-- [[学习/pathways/absolute-beginner]] — 零基础通识路径 (共享: courses, education, learning, study-path)
-- [[学习/pathways/ai-researcher]] — AI 研究者路径 (共享: courses, education, learning, study-path)
-- [[学习/pathways/java-developer]] — Java 开发者 AI 路径 (共享: courses, education, learning, study-path)
+- [[90_学习/guides/milestones]] — 里程碑自测 (共享: courses, education, learning, study-path)
+- [[90_学习/pathways/absolute-beginner]] — 零基础通识路径 (共享: courses, education, learning, study-path)
+- [[90_学习/pathways/ai-researcher]] — AI 研究者路径 (共享: courses, education, learning, study-path)
+- [[90_学习/pathways/java-developer]] — Java 开发者 AI 路径 (共享: courses, education, learning, study-path)

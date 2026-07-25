@@ -14,16 +14,16 @@ LLM 平台工程师 — 构建大模型推理服务平台，处理高并发、�
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[面试岗位/LLM_Platform_Engineer/question_bank|question_bank]] | 面试题库总览，按知识点分类 | 所有备考者 |
-| [[面试岗位/LLM_Platform_Engineer/company_level_question_bank|company_level_question_bank]] | 按公司/难度分级的真题集 | 有明确目标公司的候选人 |
-| [[面试岗位/LLM_Platform_Engineer/interview_answers|interview_answers]] | 高频面试题参考答案与解析 | 需要参考思路的备考者 |
-| [[面试岗位/LLM_Platform_Engineer/interview_preparing|interview_preparing]] | 备考策略与时间规划指南 | 首次面试 / 转岗求职者 |
+| [[21_面试岗位/LLM_Platform_Engineer/question_bank|question_bank]] | 面试题库总览，按知识点分类 | 所有备考者 |
+| [[21_面试岗位/LLM_Platform_Engineer/company_level_question_bank|company_level_question_bank]] | 按公司/难度分级的真题集 | 有明确目标公司的候选人 |
+| [[21_面试岗位/LLM_Platform_Engineer/interview_answers|interview_answers]] | 高频面试题参考答案与解析 | 需要参考思路的备考者 |
+| [[21_面试岗位/LLM_Platform_Engineer/interview_preparing|interview_preparing]] | 备考策略与时间规划指南 | 首次面试 / 转岗求职者 |
 
 ## Related
 
-- [[面试岗位/AI_Infrastructure_Engineer/index|AI Infrastructure Engineer]]
-- [[面试岗位/MLOps_Engineer/index|MLOps Engineer]]
-- [[面试岗位/Prompt_Engineer/index|Prompt Engineer]]
+- [[21_面试岗位/AI_Infrastructure_Engineer/index|AI Infrastructure Engineer]]
+- [[21_面试岗位/MLOps_Engineer/index|MLOps Engineer]]
+- [[21_面试岗位/Prompt_Engineer/index|Prompt Engineer]]
 
 ## 岗位核心能力模型
 
@@ -40,7 +40,7 @@ LLM 平台工程师 — 构建大模型推理服务平台，处理高并发、�
 | 轮次 | 内容 | 时长 | 考察重点 |
 |------|------|------|----------|
 | 简历筛选 | HR初筛 | - | 背景匹配度 |
-| 技术笔试 | 编程/选择题 | 60-90min | 基础功底 |
+| 技术笔试 | 16_编程/选择题 | 60-90min | 基础功底 |
 | 技术一面 | 算法+项目 | 45-60min | 编码能力+项目深度 |
 | 技术二面 | 系统设计+深度 | 45-60min | 架构思维+技术广度 |
 | 技术三面 | 综合+前沿 | 30-45min | 技术视野+潜力 |

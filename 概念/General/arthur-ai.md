@@ -10,7 +10,7 @@ relationships:
   - target: "概念/arthur-ai"
     type: related_to
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
 summary: "面向企业的 LLM 安全与性能监控平台，提供 Arthur Shield 防火墙（Prompt 注入/毒性检测）和 Arthur Performance 性能追踪能力。"
 provenance:
   extracted: 0.50

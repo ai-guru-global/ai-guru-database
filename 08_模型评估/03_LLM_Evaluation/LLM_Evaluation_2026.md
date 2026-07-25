@@ -363,9 +363,9 @@ LLM-as-Judge 的偏见:
 
 ## 相关阅读
 
-- [[模型评估/Model_Evaluation]] — 模型评估
-- [[模型评估/Evaluation_Metrics]] — 评估指标
-- [[模型评估/Benchmarks/index]] — 基准测试
-- [[测试/RAGAS_Deep_Dive]] — RAG 评估
-- [[测试/Testing_Frameworks/DeepEval_Deep_Dive]] — DeepEval
-- [[伦理安全/Safety_Evaluation_Framework]] — 安全评估框架
+- [[08_模型评估/Model_Evaluation]] — 模型评估
+- [[08_模型评估/Evaluation_Metrics]] — 评估指标
+- [[08_模型评估/02_Benchmarks/index]] — 基准测试
+- [[09_测试/RAGAS_Deep_Dive]] — RAG 评估
+- [[09_测试/02_Testing_Frameworks/DeepEval_Deep_Dive]] — DeepEval
+- [[17_伦理安全/Safety_Evaluation_Framework]] — 安全评估框架

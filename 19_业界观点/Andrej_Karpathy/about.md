@@ -137,13 +137,13 @@ Karpathy 的核心信念：
 
 ## 交叉引用 (Cross-References)
 
-- [Talks 主题合成 2026](业界观点/Talks_Synthesis/Talks_Synthesis_2026.md) — 查看 Karpathy 在各主题中的立场
-- [[业界观点/Fei_Fei_Li/about]] — Fei-Fei Li 是 Karpathy 的博士导师
-- [[业界观点/Elon_Musk/about]] — Musk 是 Tesla CEO，Karpathy 在其麾下领导 AI
-- [Vibe Coding 方法论](编程/Methodology/Vibe_Coding_Methodology.md) — 详细方法论
-- [AI 历史时间线](入门/Fundamentals/AI_History_Timeline.md) — Software 2.0 与自动驾驶
-- [深度学习基础](../../深度学习/README.md) — CS231n 与视觉模型
-- [大模型基础](../../大模型/README.md) — nanoGPT 与 GPT 架构
+- [Talks 主题合成 2026](19_业界观点/Talks_Synthesis/Talks_Synthesis_2026.md) — 查看 Karpathy 在各主题中的立场
+- [[19_业界观点/Fei_Fei_Li/about]] — Fei-Fei Li 是 Karpathy 的博士导师
+- [[19_业界观点/Elon_Musk/about]] — Musk 是 Tesla CEO，Karpathy 在其麾下领导 AI
+- [Vibe Coding 方法论](16_编程/03_Methodology/Vibe_Coding_Methodology.md) — 详细方法论
+- [AI 历史时间线](00_入门/01_Fundamentals/AI_History_Timeline.md) — Software 2.0 与自动驾驶
+- [深度学习基础](../../03_深度学习/README.md) — CS231n 与视觉模型
+- [大模型基础](../../05_大模型/README.md) — nanoGPT 与 GPT 架构
 
 ---
 
@@ -152,7 +152,7 @@ Karpathy 的核心信念：
 - **个人主页 (Official Site)**: [karpathy.ai](https://karpathy.ai/)
 - **Vibe Coding 原始推文**: [2025 年 2 月提出 "Vibe Coding" 概念](https://x.com/karpathy/status/1886192184808213008)
 - **Software 2.0 博文**: [karpathy.medium.com](https://karpathy.medium.com/software-2-0-a64152b37c35)
-- **Vibe Coding 方法论详解**: [Vibe Coding 方法论](编程/Methodology/Vibe_Coding_Methodology.md)
+- **Vibe Coding 方法论详解**: [Vibe Coding 方法论](16_编程/03_Methodology/Vibe_Coding_Methodology.md)
 - **YouTube 频道**: [Andrej Karpathy](https://www.youtube.com/@AndrejKarpathy)
 - **GitHub**: [github.com/karpathy](https://github.com/karpathy)
 
@@ -162,12 +162,12 @@ Karpathy 的核心信念：
 
 ## Related
 
-- [[业界观点/Andrew_Ng/about]] — Andrew Ng 简介 (Andrew Ng) (共享: insights, leaders, speeches, talks)
-- [[业界观点/Andrew_Ng/sayings]] — Andrew Ng 关于 AI 的观点与格言 (共享: insights, leaders, speeches, talks)
-- [[业界观点/Bill_Gates/about]] — Bill Gates 简介 (Bill Gates) (共享: insights, leaders, speeches, talks)
-- [[业界观点/Bill_Gates/sayings]] — Bill Gates 关于 AI 的观点 (Bill Gates on AI) (共享: insights, leaders, speeches, talks)
-- [[业界观点/README.md|README]]
-- [[业界观点/Andrej_Karpathy/sayings.md|sayings]]
+- [[19_业界观点/Andrew_Ng/about]] — Andrew Ng 简介 (Andrew Ng) (共享: insights, leaders, speeches, talks)
+- [[19_业界观点/Andrew_Ng/sayings]] — Andrew Ng 关于 AI 的观点与格言 (共享: insights, leaders, speeches, talks)
+- [[19_业界观点/Bill_Gates/about]] — Bill Gates 简介 (Bill Gates) (共享: insights, leaders, speeches, talks)
+- [[19_业界观点/Bill_Gates/sayings]] — Bill Gates 关于 AI 的观点 (Bill Gates on AI) (共享: insights, leaders, speeches, talks)
+- [[19_业界观点/README.md|README]]
+- [[19_业界观点/Andrej_Karpathy/sayings.md|sayings]]
 
 ## 附录：人物影响力评估
 

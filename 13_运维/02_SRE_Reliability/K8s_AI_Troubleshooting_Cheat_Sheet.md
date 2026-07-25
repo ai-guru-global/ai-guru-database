@@ -158,9 +158,9 @@ curl http://localhost:8000/v1/chat/completions -d '{...}'
 
 ## Related
 
-- [[运维/Troubleshooting/Kubernetes_Troubleshooting_Playbook|K8s 系统排障 Playbook]]
-- [[运维/SRE_Reliability/GPU_Troubleshooting_Cheat_Sheet|GPU 故障排查速查表]]
-- [[模型训练/Monitoring/LLM_Fine_Tuning_Job_Failure_Runbook_on_K8s|LLM 微调任务 K8s 失败排障]]
+- [[13_运维/04_Troubleshooting/Kubernetes_Troubleshooting_Playbook|K8s 系统排障 Playbook]]
+- [[13_运维/02_SRE_Reliability/GPU_Troubleshooting_Cheat_Sheet|GPU 故障排查速查表]]
+- [[07_模型训练/07_Monitoring/LLM_Fine_Tuning_Job_Failure_Runbook_on_K8s|LLM 微调任务 K8s 失败排障]]
 
 ## 进阶知识拓展
 
@@ -198,9 +198,9 @@ curl http://localhost:8000/v1/chat/completions -d '{...}'
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

@@ -132,11 +132,11 @@ HelloAgents RAG 系统
 
 ## 6. 关联阅读
 
-- [[RAG系统/RAG_Systems]] — RAG 系统总览
-- [[RAG系统/GenAI_L15_RAG_and_Vector_Databases]] — RAG 与向量数据库
-- [[RAG系统/Vector_Databases/Qdrant_Deep_Dive]] — Qdrant 向量数据库
-- [[RAG系统/Advanced_RAG/Agentic_RAG_Guide]] — Agentic RAG 指南
-- [[大模型/Prompt_Engineering/Hello_Agents_L09_Context_Engineering]] — 上下文工程
+- [[14_RAG系统/RAG_Systems]] — RAG 系统总览
+- [[14_RAG系统/GenAI_L15_RAG_and_Vector_Databases]] — RAG 与向量数据库
+- [[14_RAG系统/03_Vector_Databases/Qdrant_Deep_Dive]] — Qdrant 向量数据库
+- [[14_RAG系统/04_Advanced_RAG/Agentic_RAG_Guide]] — Agentic RAG 指南
+- [[05_大模型/08_Prompt_Engineering/Hello_Agents_L09_Context_Engineering]] — 上下文工程
 
 ## 附录：核心概念速查
 

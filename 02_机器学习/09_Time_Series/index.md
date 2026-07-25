@@ -15,13 +15,13 @@ tags: [auto-index]
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[机器学习/Time_Series/Time_Series_Analysis|Time Series Analysis]] | Time series analysis: classical methods, deep learning and Transformer-based approaches | data scientists / forecasting engineers |
-| [[机器学习/Time_Series/Time_Series_for_dummy|Time Series for dummy]] | Time series beginner guide: trend, seasonality and forecasting fundamentals | beginners / analysts |
+| [[02_机器学习/09_Time_Series/Time_Series_Analysis|Time Series Analysis]] | Time series analysis: classical methods, deep learning and Transformer-based approaches | data scientists / forecasting engineers |
+| [[02_机器学习/09_Time_Series/Time_Series_for_dummy|Time Series for dummy]] | Time series beginner guide: trend, seasonality and forecasting fundamentals | beginners / analysts |
 
 ## Related
 
-- [[机器学习/Anomaly_Detection/index|Anomaly Detection]]
-- [[行业应用/Supply_Chain_Logistics_index|Supply Chain & Logistics]]
+- [[02_机器学习/08_Anomaly_Detection/index|Anomaly Detection]]
+- [[18_行业应用/Supply_Chain_Logistics_index|Supply Chain & Logistics]]
 
 ## 进阶知识拓展
 
@@ -59,9 +59,9 @@ tags: [auto-index]
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

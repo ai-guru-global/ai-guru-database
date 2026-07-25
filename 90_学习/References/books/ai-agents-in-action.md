@@ -93,7 +93,7 @@ aliases:
   - 向量存储 + 语义检索（基于 Embedding 的召回）
   - 摘要压缩（对历史对话做总结以节省 Token）
 - **记忆管理策略**: 写入、检索、遗忘、更新的生命周期
-- **与 RAG 的关系**: Agent 长期记忆本质上是"个性化 RAG"（详见 [[RAG系统/RAG_Systems]]）
+- **与 RAG 的关系**: Agent 长期记忆本质上是"个性化 RAG"（详见 [[14_RAG系统/RAG_Systems]]）
 
 ### Ch 5: ReAct 与规划模式（Planning）
 
@@ -255,13 +255,13 @@ Action: reply(列出 5 个航班供用户选择)
 
 | 本书章节 | 本书概念 | 知识库主题 | 关联说明 |
 |----------|----------|------------|----------|
-| Ch 1-2 Agent 基础 | Agent 定义/四大支柱 | [[智能体/Agent_Foundations/AI_Agents_for_dummy]] | Agent 基础概念 |
-| Ch 3 工具调用 | Function Calling | [[智能体/Agent_Foundations/Agent-in-nutshell]] | 工具调用机制 |
-| Ch 4 记忆 | 短期/长期记忆 | [[RAG系统/RAG_Systems]] | 记忆即个性化 RAG |
-| Ch 5 ReAct | 规划模式 | [[大模型/Prompt_Engineering/Prompt_Engineering]] | ReAct 提示模式 |
+| Ch 1-2 Agent 基础 | Agent 定义/四大支柱 | [[15_智能体/01_Agent_Foundations/AI_Agents_for_dummy]] | Agent 基础概念 |
+| Ch 3 工具调用 | Function Calling | [[15_智能体/01_Agent_Foundations/Agent-in-nutshell]] | 工具调用机制 |
+| Ch 4 记忆 | 短期/长期记忆 | [[14_RAG系统/RAG_Systems]] | 记忆即个性化 RAG |
+| Ch 5 ReAct | 规划模式 | [[05_大模型/08_Prompt_Engineering/Prompt_Engineering]] | ReAct 提示模式 |
 | Ch 7 多 Agent | CrewAI/AutoGen | [[build-multi-agent-system]] | 多 Agent 架构 |
-| Ch 8 护栏 | Guardrails | [[伦理安全/AI_Safety_RedTeaming]] | 安全与护栏 |
-| Ch 9 部署 | 可观测性 | [[部署推理/]] | 生产化部署 |
+| Ch 8 护栏 | Guardrails | [[17_伦理安全/AI_Safety_RedTeaming]] | 安全与护栏 |
+| Ch 9 部署 | 可观测性 | [[10_部署推理/]] | 生产化部署 |
 
 ## 适合人群
 
@@ -306,7 +306,7 @@ Action: reply(列出 5 个航班供用户选择)
 
 ### 路径 C: 配合知识库
 
-1. 先读 [[智能体/Agent_Foundations/AI_Agents_for_dummy]] 建立概念
+1. 先读 [[15_智能体/01_Agent_Foundations/AI_Agents_for_dummy]] 建立概念
 2. 本书 Ch 1-5 做代码实战
 3. 读 [[build-multi-agent-system]] 进阶架构
 4. 回到 [[ai-engineering-huyen]] Ch 8 理解 Agent 在系统中的位置
@@ -349,18 +349,18 @@ Action: reply(列出 5 个航班供用户选择)
 | 能力 | 本书覆盖 | 生产级要求 | 补充来源 |
 |------|---------|-----------|---------|
 | 框架使用 | 充分 | 同 | 本书 + 官方文档 |
-| 评估体系 | 基础 | 系统化（RAPS 模型） | [[学习/concepts/stage3_engineering]] |
-| 可观测性 | 基础 | Traces/Metrics/Logs 全套 | [[部署推理/]] |
-| 成本控制 | 提及 | 模型路由 + 缓存 + 量化 | [[学习/References/books/ai-engineering-huyen]] |
-| 安全护栏 | 基础 | 输入/输出/工具三层护栏 | [[伦理安全/]] |
+| 评估体系 | 基础 | 系统化（RAPS 模型） | [[90_学习/concepts/stage3_engineering]] |
+| 可观测性 | 基础 | Traces/Metrics/Logs 全套 | [[10_部署推理/]] |
+| 成本控制 | 提及 | 模型路由 + 缓存 + 量化 | [[90_学习/References/books/ai-engineering-huyen]] |
+| 安全护栏 | 基础 | 输入/输出/工具三层护栏 | [[17_伦理安全/]] |
 | 协议标准化 | 未覆盖 | MCP/A2A/UCP | 社区文档 |
-| 多 Agent 架构 | 基础 | 系统设计级 | [[学习/References/books/build-multi-agent-system]] |
+| 多 Agent 架构 | 基础 | 系统设计级 | [[90_学习/References/books/build-multi-agent-system]] |
 
-- [[学习/References/books/prompt-engineering-for-llms|Prompt Engineering for LLMs]] — Agent 交互基础（提示工程）
-- [[学习/References/books/build-multi-agent-system|Building Multi-Agent Systems]] — 多 Agent 架构进阶
-- [[学习/References/books/ai-engineering-huyen|AI Engineering]] — Agent 在 AI 工程全景中的位置
-- [[智能体/Agent_Foundations/AI_Agents_for_dummy]] — 知识库 Agent 基础
-- [[大模型/Prompt_Engineering/Prompt_Engineering]] — ReAct / Plan-and-Execute 提示模式
-- [[学习/guides/ai_engineering_roadmap_2026|AI 工程路线图 2026]] — Agent 在整体路线中的位置
+- [[90_学习/References/books/prompt-engineering-for-llms|Prompt Engineering for LLMs]] — Agent 交互基础（提示工程）
+- [[90_学习/References/books/build-multi-agent-system|Building Multi-Agent Systems]] — 多 Agent 架构进阶
+- [[90_学习/References/books/ai-engineering-huyen|AI Engineering]] — Agent 在 AI 工程全景中的位置
+- [[15_智能体/01_Agent_Foundations/AI_Agents_for_dummy]] — 知识库 Agent 基础
+- [[05_大模型/08_Prompt_Engineering/Prompt_Engineering]] — ReAct / Plan-and-Execute 提示模式
+- [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图 2026]] — Agent 在整体路线中的位置
 
-> **关联**: → [[学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]] | [[智能体/]] | [[工具/]] | [[RAG系统/]] | [[部署推理/]]
+> **关联**: → [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]] | [[15_智能体/]] | [[工具/]] | [[14_RAG系统/]] | [[10_部署推理/]]

@@ -356,9 +356,9 @@ experiment:
 
 ## 相关阅读
 
-- [[测试/Testing_Fundamentals/AI_Test_Framework_2026]] — AI 测试框架
-- [[测试/Testing_Frameworks/DeepEval_Deep_Dive]] — DeepEval 评估
-- [[测试/RAGAS_Deep_Dive]] — RAG 评估
-- [[模型评估/Model_Evaluation]] — 模型评估
-- [[模型运维/Observability/Observability]] — 可观测性
-- [[模型运维/Experiment_Tracking/index]] — 实验跟踪
+- [[09_测试/01_Testing_Fundamentals/AI_Test_Framework_2026]] — AI 测试框架
+- [[09_测试/02_Testing_Frameworks/DeepEval_Deep_Dive]] — DeepEval 评估
+- [[09_测试/RAGAS_Deep_Dive]] — RAG 评估
+- [[08_模型评估/Model_Evaluation]] — 模型评估
+- [[11_模型运维/08_Observability/Observability]] — 可观测性
+- [[11_模型运维/04_Experiment_Tracking/index]] — 实验跟踪

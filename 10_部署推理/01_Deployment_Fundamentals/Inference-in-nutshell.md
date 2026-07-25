@@ -646,17 +646,17 @@ response = client.chat.completions.create(
 
 ## 🔗 相关主题
 
-- [模型训练](模型训练/Training_Fundamentals/Model-Training-in-nutshell.md) - 模型是如何训练的
-- [RAG 系统](RAG系统/RAG_Fundamentals/RAG-in-nutshell.md) - 带检索的推理
+- [模型训练](07_模型训练/01_Training_Fundamentals/Model-Training-in-nutshell.md) - 模型是如何训练的
+- [RAG 系统](14_RAG系统/01_RAG_Fundamentals/RAG-in-nutshell.md) - 带检索的推理
 - [MLOps 流水线](../MLOps_Pipeline/) - 自动化部署
-- [SRE 实践](运维/SRE_Reliability/SRE_for_AI_Systems.md) - SLI/SLO 与可靠性工程
-- [可观测性](模型运维/Observability/AI_Observability_Guide.md) - AI 系统监控与追踪
+- [SRE 实践](13_运维/02_SRE_Reliability/SRE_for_AI_Systems.md) - SLI/SLO 与可靠性工程
+- [可观测性](11_模型运维/08_Observability/AI_Observability_Guide.md) - AI 系统监控与追踪
 
 ## Related
 
-- [[部署推理/Deployment_Inference]] — 模型部署与推理加速 (Deployment & Inference) (共享: deployment, inference, serving, vllm)
-- [[部署推理/Deployment_Inference_2026]] — 部署推理 2026 趋势 (共享: deployment, inference, serving, vllm)
-- [[部署推理/Deployment_Inference_for_dummy]] — 模型部署与推理加速 - 小白版 (共享: deployment, inference, serving, vllm)
-- [[部署推理/Inference_Engines/JVM_AI_Deployment]] — JVM AI 部署与推理 (共享: deployment, inference, serving, vllm)
-- [[部署推理/Inference_Engines/vLLM_Deep_Dive.md|vLLM_Deep_Dive]]
-- [[部署推理/README_for_dummy.md|README_for_dummy]]
+- [[10_部署推理/Deployment_Inference]] — 模型部署与推理加速 (Deployment & Inference) (共享: deployment, inference, serving, vllm)
+- [[10_部署推理/Deployment_Inference_2026]] — 部署推理 2026 趋势 (共享: deployment, inference, serving, vllm)
+- [[10_部署推理/Deployment_Inference_for_dummy]] — 模型部署与推理加速 - 小白版 (共享: deployment, inference, serving, vllm)
+- [[10_部署推理/02_Inference_Engines/JVM_AI_Deployment]] — JVM AI 部署与推理 (共享: deployment, inference, serving, vllm)
+- [[10_部署推理/02_Inference_Engines/vLLM_Deep_Dive.md|vLLM_Deep_Dive]]
+- [[10_部署推理/README_for_dummy.md|README_for_dummy]]

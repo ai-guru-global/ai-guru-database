@@ -55,14 +55,14 @@ Stage 4 前沿（Agent / 多模态）
 **🎯 目标**：理解 LLM 的工作原理、架构差异和核心能力边界。
 
 **📚 核心概念**：
-- [Stage 1: 基础概念](学习/concepts/stage1_foundation.md)（快速浏览）
-- [Stage 2: 核心技术 — LLM 相关部分](学习/concepts/stage2_core_tech.md)（深入）
+- [Stage 1: 基础概念](90_学习/concepts/stage1_foundation.md)（快速浏览）
+- [Stage 2: 核心技术 — LLM 相关部分](90_学习/concepts/stage2_core_tech.md)（深入）
 
 **🔗 深入阅读**：
-- [LLM 架构（小白版）](大模型/LLM_Architectures/LLM_Architectures_for_dummy.md)
-- [LLM 架构（速查版）](大模型/LLM_Architectures/LLM-Basics-in-nutshell.md)
-- [Transformer 革命（小白版）](大模型/Transformer_Revolution/Transformer_Revolution_for_dummy.md)
-- [微调技术（小白版）](大模型/Fine_tuning_Techniques/Fine_tuning_Techniques_for_dummy.md)
+- [LLM 架构（小白版）](05_大模型/05_LLM_Architectures/LLM_Architectures_for_dummy.md)
+- [LLM 架构（速查版）](05_大模型/05_LLM_Architectures/LLM-Basics-in-nutshell.md)
+- [Transformer 革命（小白版）](05_大模型/04_Transformer_Revolution/Transformer_Revolution_for_dummy.md)
+- [微调技术（小白版）](05_大模型/07_Fine_tuning_Techniques/Fine_tuning_Techniques_for_dummy.md)
 
 **💡 重点理解**：
 - Token 是什么，LLM 的上下文窗口限制
@@ -82,11 +82,11 @@ Stage 4 前沿（Agent / 多模态）
 
 **🎯 目标**：成为 Prompt 高手，能用 Prompt 解决复杂问题。
 
-**📚 核心概念**：[Stage 3 工程实践 — Prompt Engineering 部分](学习/concepts/stage3_engineering.md)
+**📚 核心概念**：[Stage 3 工程实践 — Prompt Engineering 部分](90_学习/concepts/stage3_engineering.md)
 
 **🔗 深入阅读**：
-- [提示词工程（小白版）](大模型/Prompt_Engineering/Prompt_Engineering_for_dummy.md)
-- [提示词工程（速查版）](大模型/Prompt_Engineering/Prompt-Engineering-in-nutshell.md)
+- [提示词工程（小白版）](05_大模型/08_Prompt_Engineering/Prompt_Engineering_for_dummy.md)
+- [提示词工程（速查版）](05_大模型/08_Prompt_Engineering/Prompt-Engineering-in-nutshell.md)
 
 **💡 Prompt 技巧体系**：
 ```
@@ -125,12 +125,12 @@ Stage 4 前沿（Agent / 多模态）
 
 **🎯 目标**：构建生产级 RAG 应用，理解从文档到答案的完整链路。
 
-**📚 核心概念**：[Stage 3: 工程实践 — RAG / 向量数据库](学习/concepts/stage3_engineering.md)
+**📚 核心概念**：[Stage 3: 工程实践 — RAG / 向量数据库](90_学习/concepts/stage3_engineering.md)
 
 **🔗 深入阅读**：
-- [RAG 系统（小白版）](RAG系统/RAG_Fundamentals/RAG_Systems_for_dummy.md)
-- [RAG 系统（速查版）](RAG系统/RAG_Fundamentals/RAG-in-nutshell.md)
-- [AI Skills 速查版](智能体/Agent_Skills/Skills-in-nutshell.md)（AI Skills 的设计模式）
+- [RAG 系统（小白版）](14_RAG系统/01_RAG_Fundamentals/RAG_Systems_for_dummy.md)
+- [RAG 系统（速查版）](14_RAG系统/01_RAG_Fundamentals/RAG-in-nutshell.md)
+- [AI Skills 速查版](15_智能体/05_Agent_Skills/Skills-in-nutshell.md)（AI Skills 的设计模式）
 
 **💡 RAG 全链路技术栈**：
 ```
@@ -174,12 +174,12 @@ Stage 4 前沿（Agent / 多模态）
 
 **🎯 目标**：构建能自主执行复杂任务的 AI Agent。
 
-**📚 核心概念**：[Stage 3: 工程实践 — Agent 部分](学习/concepts/stage3_engineering.md) + [Stage 4 前沿 — Agent 深度](学习/concepts/stage4_frontier.md)
+**📚 核心概念**：[Stage 3: 工程实践 — Agent 部分](90_学习/concepts/stage3_engineering.md) + [Stage 4 前沿 — Agent 深度](90_学习/concepts/stage4_frontier.md)
 
 **🔗 深入阅读**：
-- [AI Agent（小白版）](智能体/Agent_Foundations/AI_Agents_for_dummy.md)
-- [AI Agent（速查版）](智能体/Agent_Foundations/Agent-in-nutshell.md)
-- [AI 工作流（速查版）](智能体/Agent_Workflow/Workflow-in-nutshell.md)
+- [AI Agent（小白版）](15_智能体/01_Agent_Foundations/AI_Agents_for_dummy.md)
+- [AI Agent（速查版）](15_智能体/01_Agent_Foundations/Agent-in-nutshell.md)
+- [AI 工作流（速查版）](15_智能体/03_Agent_Workflow/Workflow-in-nutshell.md)
 
 **💡 Agent 核心架构**：
 ```
@@ -219,13 +219,13 @@ Agent 框架选择：
 
 **🎯 目标**：掌握 LLM 生产部署的成本优化和性能调优。
 
-**📚 核心概念**：[Stage 3: 工程实践 — 部署 / AI Gateway](学习/concepts/stage3_engineering.md)
+**📚 核心概念**：[Stage 3: 工程实践 — 部署 / AI Gateway](90_学习/concepts/stage3_engineering.md)
 
 **🔗 深入阅读**：
-- [部署与推理（小白版）](部署推理/Deployment_Fundamentals/Deployment_Inference_for_dummy.md)
-- [部署与推理（速查版）](部署推理/Deployment_Fundamentals/Inference-in-nutshell.md)
-- [AI Gateway（速查版）](架构基建/AI_Gateway/Gateway-in-nutshell.md)
-- [AIOps（速查版）](运维/AIOps_Fundamentals/AIOps-in-nutshell.md)
+- [部署与推理（小白版）](10_部署推理/01_Deployment_Fundamentals/Deployment_Inference_for_dummy.md)
+- [部署与推理（速查版）](10_部署推理/01_Deployment_Fundamentals/Inference-in-nutshell.md)
+- [AI Gateway（速查版）](12_架构基建/11_AI_Gateway/Gateway-in-nutshell.md)
+- [AIOps（速查版）](13_运维/01_AIOps_Fundamentals/AIOps-in-nutshell.md)
 
 **💡 生产优化技术栈**：
 ```
@@ -264,24 +264,24 @@ Agent 框架选择：
 
 ## 里程碑自测
 
-完成本路径后，请回顾 [milestones.md](学习/guides/milestones.md) 中 Stage 2-4 的自测题，重点关注 LLM、Agent、RAG 相关问题。
+完成本路径后，请回顾 [milestones.md](90_学习/guides/milestones.md) 中 Stage 2-4 的自测题，重点关注 LLM、Agent、RAG 相关问题。
 
 ## 下一步推荐
 
 | 你的打算 | 推荐去向 |
 |---------|---------|
-| 想深入 Agent 评估 | [Agent 评估框架](../../智能体/Agent_Evaluation/README.md) |
-| 想做 AI 研究 | [AI 研究者路径](学习/pathways/ai-researcher.md) |
-| 想补充 CV 能力 | [ML 从业者路径](学习/pathways/ml-practitioner.md) 方向 B（CV） |
-| 想进入 AI 产品领域 | [AI 产品经理路径](学习/pathways/product-manager.md) |
+| 想深入 Agent 评估 | [Agent 评估框架](../../15_智能体/07_Agent_Evaluation/README.md) |
+| 想做 AI 研究 | [AI 研究者路径](90_学习/pathways/ai-researcher.md) |
+| 想补充 CV 能力 | [ML 从业者路径](90_学习/pathways/ml-practitioner.md) 方向 B（CV） |
+| 想进入 AI 产品领域 | [AI 产品经理路径](90_学习/pathways/product-manager.md) |
 
 ---
 
-*本路径聚焦 LLM 应用开发。如需深入模型训练或预训练，建议先完成 [ML 从业者路径](学习/pathways/ml-practitioner.md) 的 Phase 1-3。*
+*本路径聚焦 LLM 应用开发。如需深入模型训练或预训练，建议先完成 [ML 从业者路径](90_学习/pathways/ml-practitioner.md) 的 Phase 1-3。*
 
 ## Related
 
-- [[学习/guides/milestones]] — 里程碑自测 (共享: courses, education, learning, study-path)
-- [[学习/pathways/absolute-beginner]] — 零基础通识路径 (共享: courses, education, learning, study-path)
-- [[学习/pathways/ai-researcher]] — AI 研究者路径 (共享: courses, education, learning, study-path)
-- [[学习/pathways/java-developer]] — Java 开发者 AI 路径 (共享: courses, education, learning, study-path)
+- [[90_学习/guides/milestones]] — 里程碑自测 (共享: courses, education, learning, study-path)
+- [[90_学习/pathways/absolute-beginner]] — 零基础通识路径 (共享: courses, education, learning, study-path)
+- [[90_学习/pathways/ai-researcher]] — AI 研究者路径 (共享: courses, education, learning, study-path)
+- [[90_学习/pathways/java-developer]] — Java 开发者 AI 路径 (共享: courses, education, learning, study-path)

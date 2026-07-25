@@ -14,13 +14,13 @@ AI 可靠性工程师 (AIRE) — 保障 AI 系统的稳定性、可观测性与�
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[面试岗位/AI_Reliability_Engineer/AI_Reliability_Engineer|AI_Reliability_Engineer]] | 岗位面试全攻略（知识点 + 真题 + 策略） | 所有该岗位备考者 |
+| [[21_面试岗位/AI_Reliability_Engineer/AI_Reliability_Engineer|AI_Reliability_Engineer]] | 岗位面试全攻略（知识点 + 真题 + 策略） | 所有该岗位备考者 |
 
 ## Related
 
-- [[面试岗位/MLOps_Engineer/index|MLOps Engineer]]
-- [[面试岗位/AI_Infrastructure_Engineer/index|AI Infrastructure Engineer]]
-- [[面试岗位/AI_Security_Engineer/index|AI Security Engineer]]
+- [[21_面试岗位/MLOps_Engineer/index|MLOps Engineer]]
+- [[21_面试岗位/AI_Infrastructure_Engineer/index|AI Infrastructure Engineer]]
+- [[21_面试岗位/AI_Security_Engineer/index|AI Security Engineer]]
 
 ## 岗位核心能力模型
 
@@ -37,7 +37,7 @@ AI 可靠性工程师 (AIRE) — 保障 AI 系统的稳定性、可观测性与�
 | 轮次 | 内容 | 时长 | 考察重点 |
 |------|------|------|----------|
 | 简历筛选 | HR初筛 | - | 背景匹配度 |
-| 技术笔试 | 编程/选择题 | 60-90min | 基础功底 |
+| 技术笔试 | 16_编程/选择题 | 60-90min | 基础功底 |
 | 技术一面 | 算法+项目 | 45-60min | 编码能力+项目深度 |
 | 技术二面 | 系统设计+深度 | 45-60min | 架构思维+技术广度 |
 | 技术三面 | 综合+前沿 | 30-45min | 技术视野+潜力 |

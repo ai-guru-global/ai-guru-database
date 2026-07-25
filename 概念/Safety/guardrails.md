@@ -13,7 +13,7 @@ relationships:
   - target: "[[概念/Safety/runtime-security]]"
     type: component_of
 sources:
-  - 伦理安全/LLM_Security_Defense_Guide.md
+  - 17_伦理安全/LLM_Security_Defense_Guide.md
 summary: "AI护栏(Guardrails)是在LLM应用的输入和输出两端部署的运行时安全过滤机制，用于检测和阻止有害内容、越狱攻击、隐私泄露等风险。代表方案包括Llama Guard、NeMo Guardrails、Guardrails AI等。"
 provenance:
   extracted: 0.78
@@ -581,7 +581,7 @@ return output_result.modified_text or llm_response
 - [[概念/Safety/hallucination]] — 幻觉检测（输出护栏）
 - [[概念/Safety/runtime-security]] — 运行时安全（护栏是其中的组件）
 - [[概念/Safety/ai-alignment]] — AI对齐（训练级安全，与护栏互补）
-- [[伦理安全/LLM_Security_Defense_Guide]] — LLM安全防御指南
+- [[17_伦理安全/LLM_Security_Defense_Guide]] — LLM安全防御指南
 
 ---
 

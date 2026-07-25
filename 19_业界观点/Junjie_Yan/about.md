@@ -22,7 +22,7 @@ sources: []
 ## 核心贡献 (Key Contributions)
 
 - **MiniMax 创始** (2021.12): 离开商汤创办 MiniMax，定位为"全模态通用 AI 平台"。MiniMax 名字的含义是"用最小化的计算实现最大化的智能 (Minimum compute, Maximum intelligence)"，体现了创始人对效率的核心追求。MiniMax 成为中国 AI 六小龙之一。
-- **Lightning Attention**: 线性复杂度 O(n) 的注意力机制，突破传统 Softmax Attention 的 O(n²) 复杂度瓶颈。这一创新使 MiniMax 模型能够处理百万级 Token 的超长上下文（训练上下文 1M，推理外推至 4M），在长上下文赛道与 [[业界观点/Zhilin_Yang/about]] 的 Kimi 形成直接竞争。
+- **Lightning Attention**: 线性复杂度 O(n) 的注意力机制，突破传统 Softmax Attention 的 O(n²) 复杂度瓶颈。这一创新使 MiniMax 模型能够处理百万级 Token 的超长上下文（训练上下文 1M，推理外推至 4M），在长上下文赛道与 [[19_业界观点/Zhilin_Yang/about]] 的 Kimi 形成直接竞争。
 - **abab 模型系列**: 从 abab 5 到 abab 7，为 Talkie（星野）和海螺 AI 提供基础模型能力。abab 系列在国内各项评测中持续名列前茅，尤其在多轮对话和角色扮演方面表现突出。
 - **MiniMax-Text-01** (2025.1): 456B/45.9B MoE + Lightning Attention，训练上下文 1M tokens，推理外推至 4M tokens。性能匹配 GPT-4o 和 Claude 3.5 Sonnet，同时保持极低的推理成本。
 - **M2.5/M2.7** (2026): M2.5 (230B/10B 稀疏 MoE) 在 SWE-bench Verified 达 80.2%，Multi-SWE-bench 第一名，比前版本快 37%。MiniMax 在编码能力上实现了对多个国际模型的超越。
@@ -73,7 +73,7 @@ sources: []
 
 > *"线性复杂度不是优化技巧，而是让 AI 处理真实世界长序列的基础。"*
 
-闫俊杰认为传统 Softmax Attention 的 O(n²) 复杂度是 LLM 处理真实世界长文本（整本书、完整代码库、长视频）的根本障碍。Lightning Attention 的线性复杂度不是"锦上添花"，而是"让 AI 能像人类一样阅读整本书"的基础设施。参见 [[业界观点/Zhilin_Yang/about]] 的长上下文理念，二者从不同技术路径（Lightning Attention vs 长窗口）追求同一目标。
+闫俊杰认为传统 Softmax Attention 的 O(n²) 复杂度是 LLM 处理真实世界长文本（整本书、完整代码库、长视频）的根本障碍。Lightning Attention 的线性复杂度不是"锦上添花"，而是"让 AI 能像人类一样阅读整本书"的基础设施。参见 [[19_业界观点/Zhilin_Yang/about]] 的长上下文理念，二者从不同技术路径（Lightning Attention vs 长窗口）追求同一目标。
 
 ### C 端产品驱动
 
@@ -133,14 +133,14 @@ MiniMax 在相对较少的融资规模下做出了与头部公司比肩的全模
 
 ## 交叉引用 (Cross-References)
 
-- [MiniMax 技术全景](大模型/Chinese_LLM_Ecosystem/MiniMax_Deep_Dive.md)
-- [中国大模型生态全景](大模型/Chinese_LLM_Ecosystem/README.md)
-- [长上下文模型 2026](大模型/LLM_Architectures/Long_Context_Models_2026.md)
-- [[业界观点/Zhilin_Yang/about]] — Kimi 与 MiniMax 在长上下文上的技术竞赛
-- [[业界观点/Wenfeng_Liang/about]] — DeepSeek 与 MiniMax 的效率路线对比
-- [[业界观点/Jie_Tang/about]] — 智谱与 MiniMax 的多模态竞争
-- [[业界观点/Jinze_Bai/about]] — Qwen 与 MiniMax 的全栈产品线对比
-- [[业界观点/Sam_Altman/about]] — Sora vs Hailuo 在视频生成上的竞争
+- [MiniMax 技术全景](05_大模型/15_Chinese_LLM_Ecosystem/MiniMax_Deep_Dive.md)
+- [中国大模型生态全景](05_大模型/15_Chinese_LLM_Ecosystem/README.md)
+- [长上下文模型 2026](05_大模型/05_LLM_Architectures/Long_Context_Models_2026.md)
+- [[19_业界观点/Zhilin_Yang/about]] — Kimi 与 MiniMax 在长上下文上的技术竞赛
+- [[19_业界观点/Wenfeng_Liang/about]] — DeepSeek 与 MiniMax 的效率路线对比
+- [[19_业界观点/Jie_Tang/about]] — 智谱与 MiniMax 的多模态竞争
+- [[19_业界观点/Jinze_Bai/about]] — Qwen 与 MiniMax 的全栈产品线对比
+- [[19_业界观点/Sam_Altman/about]] — Sora vs Hailuo 在视频生成上的竞争
 
 ---
 
@@ -155,7 +155,7 @@ MiniMax 在相对较少的融资规模下做出了与头部公司比肩的全模
 
 *Last updated: 2026-07-11*
 
-- [[业界观点/README|AI 名人演讲与观点 (Talks)]]
+- [[19_业界观点/README|AI 名人演讲与观点 (Talks)]]
 
 ## 附录：人物影响力评估
 

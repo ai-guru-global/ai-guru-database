@@ -28,9 +28,9 @@ sources: []
 
 ## 前置知识
 
-- [[数学基础/Linear_Algebra/Linear_Algebra|线性代数]]
-- [[深度学习/Neural_Network_Core/Neural_Network_Core|神经网络核心]]
-- [[大模型/Transformer_Revolution/Transformer_Revolution|Transformer 革命]]
+- [[01_数学基础/02_Linear_Algebra/Linear_Algebra|线性代数]]
+- [[03_深度学习/02_Neural_Network_Core/Neural_Network_Core|神经网络核心]]
+- [[05_大模型/04_Transformer_Revolution/Transformer_Revolution|Transformer 革命]]
 - [[概念/Python|Python 编程基础]]
 - [[概念/pytorch|PyTorch 深度学习框架]]
 
@@ -139,13 +139,13 @@ model = Word2Vec(sentences, vector_size=300, window=5)
 
 ## Related
 
-- [[大模型/README|NLP & LLMs]]
-- [[大模型/LLM_Architectures/LLM_Architectures|LLM 架构]]
-- [[学习/Courses/apachecn/ailearning_guide|ApacheCN AILearning]]
+- [[05_大模型/README|NLP & LLMs]]
+- [[05_大模型/05_LLM_Architectures/LLM_Architectures|LLM 架构]]
+- [[90_学习/Courses/apachecn/ailearning_guide|ApacheCN AILearning]]
 - [[概念/transformer-architecture|Transformer 架构]]
 - [[概念/tokenization|分词技术]]
-- [[大模型/LLM_Fundamentals/llm-nlp|LLM 与 NLP 融合]]
-- [[大模型/Prompt_Engineering/Prompt_Engineering|提示工程]]
+- [[05_大模型/01_LLM_Fundamentals/llm-nlp|LLM 与 NLP 融合]]
+- [[05_大模型/08_Prompt_Engineering/Prompt_Engineering|提示工程]]
 
 ## 总结
 

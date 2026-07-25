@@ -68,7 +68,7 @@ sources: []
 | 对话系统 | 多轮对话、状态管理 | 实战项目 |
 | 机器翻译 | Seq2Seq, 多语言模型 | 实战项目 |
 | 语音AI | ASR, TTS | [[Speech_Audio_AI_Deep_Dive]] |
-| 中文NLP | 中文分词、中文LLM | [[大模型/Chinese_LLM_Ecosystem/README]] |
+| 中文NLP | 中文分词、中文LLM | [[05_大模型/15_Chinese_LLM_Ecosystem/README]] |
 
 ---
 

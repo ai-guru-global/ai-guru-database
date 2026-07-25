@@ -17,7 +17,7 @@ sources: []
 
 > **一句话理解**: AI Research Scientist 是 AI 前沿研究的探索者——通过创新性的算法设计和严谨的实验验证，推动 AI 能力边界的扩展，在 LLM、多模态、强化学习等核心方向上产出有影响力的研究成果。
 
-> **与相关岗位的关系**: 本岗位聚焦 **AI/ML 算法的前沿研究**，是四个研究类岗位中最核心的 AI 研究角色。与 [[面试岗位/Research_Scientist/Research_Scientist|Research Scientist]] 相比更聚焦 AI 领域而非通用理论；与 [[面试岗位/AI_Research_Engineer/AI_Research_Engineer|AI Research Engineer]] 相比更偏算法创新而非工程实现；与 [[面试岗位/Applied_Scientist/Applied_Scientist|Applied Scientist]] 相比更偏学术前沿而非业务落地。
+> **与相关岗位的关系**: 本岗位聚焦 **AI/ML 算法的前沿研究**，是四个研究类岗位中最核心的 AI 研究角色。与 [[21_面试岗位/Research_Scientist/Research_Scientist|Research Scientist]] 相比更聚焦 AI 领域而非通用理论；与 [[21_面试岗位/AI_Research_Engineer/AI_Research_Engineer|AI Research Engineer]] 相比更偏算法创新而非工程实现；与 [[21_面试岗位/Applied_Scientist/Applied_Scientist|Applied Scientist]] 相比更偏学术前沿而非业务落地。
 
 ---
 
@@ -727,14 +727,14 @@ def visualize_attention(model, input_tokens, layer_idx=0, head_idx=0):
 
 ## Related
 
-- [[面试岗位/README|AI 面试准备 (Interviews)]]
-- [[面试岗位/jobs|AI 相关岗位与工种清单]]
-- [[面试岗位/Research_Scientist/Research_Scientist|Research Scientist 面试指南]]
-- [[面试岗位/AI_Research_Engineer/AI_Research_Engineer|AI Research Engineer 面试指南]]
-- [[面试岗位/Applied_Scientist/Applied_Scientist|Applied Scientist 面试指南]]
-- [[面试岗位/Machine_Learning_Engineer/question_bank|Machine Learning Engineer 题库]]
-- [[面试岗位/NLP_Engineer/question_bank|NLP Engineer 题库]]
-- [[面试岗位/Computer_Vision_Engineer/question_bank|Computer Vision Engineer 题库]]
+- [[21_面试岗位/README|AI 面试准备 (Interviews)]]
+- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/Research_Scientist/Research_Scientist|Research Scientist 面试指南]]
+- [[21_面试岗位/AI_Research_Engineer/AI_Research_Engineer|AI Research Engineer 面试指南]]
+- [[21_面试岗位/Applied_Scientist/Applied_Scientist|Applied Scientist 面试指南]]
+- [[21_面试岗位/Machine_Learning_Engineer/question_bank|Machine Learning Engineer 题库]]
+- [[21_面试岗位/NLP_Engineer/question_bank|NLP Engineer 题库]]
+- [[21_面试岗位/Computer_Vision_Engineer/question_bank|Computer Vision Engineer 题库]]
 
 ---
 

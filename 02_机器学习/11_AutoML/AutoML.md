@@ -900,7 +900,7 @@ study.optimize(
 ## Related
 
 - [[概念/automl]] — AutoML 概念总览
-- [[机器学习/Supervised_Learning/Supervised_Learning]] — 监督学习：AutoML 自动选择的模型空间
-- [[机器学习/Feature_Engineering/Feature_Engineering]] — 特征工程：自动化特征构造方法
-- [[大模型/Fine_tuning_Techniques/Fine_tuning_Strategies]] — 微调策略：神经架构搜索 (NAS) 的应用
-- [[模型运维/Experiment_Tracking/Experiment_Tracking_Deep_Dive]] — 实验追踪：AutoML 搜索过程管理
+- [[02_机器学习/02_Supervised_Learning/Supervised_Learning]] — 监督学习：AutoML 自动选择的模型空间
+- [[02_机器学习/05_Feature_Engineering/Feature_Engineering]] — 特征工程：自动化特征构造方法
+- [[05_大模型/07_Fine_tuning_Techniques/Fine_tuning_Strategies]] — 微调策略：神经架构搜索 (NAS) 的应用
+- [[11_模型运维/04_Experiment_Tracking/Experiment_Tracking_Deep_Dive]] — 实验追踪：AutoML 搜索过程管理

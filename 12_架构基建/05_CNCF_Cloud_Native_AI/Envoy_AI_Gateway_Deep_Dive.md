@@ -17,7 +17,7 @@ sources: []
 
 > **一句话理解**: Envoy AI Gateway 是架在 Envoy Gateway 之上的 LLM 扩展——用 Kubernetes Gateway API + AIGatewayRoute CRD，把企业级 L7 能力(限流/鉴权/可观测/mTLS)和大模型路由(多 provider/失败转移/Token 限流/模型别名)合二为一。
 
-> 📐 **概念方法论**: Envoy AI Gateway 的核心思想是 **"不重新发明轮子"**——Envoy Gateway 已经是生产级的 L7 网关(限流/鉴权/mTLS/可观测一应俱全)，AI Gateway 只在其上"嫁接"一层 LLM 智能：用 extproc 拦截并解析 LLM 的流式响应、统计 Token、做模型路由。这与 Kgateway(同样基于 Envoy、走 Gateway API)思路同源，可对照 [[架构基建/AI_Gateway/AI_Gateway_2026]] 的总论与 [[CNCF_Cloud_Native_AI/Kgateway_Deep_Dive]] 一起理解。它的工程哲学是：**让 AI 流量治理复用云原生已有的治理平面，而不是再造一个 Python 代理**。
+> 📐 **概念方法论**: Envoy AI Gateway 的核心思想是 **"不重新发明轮子"**——Envoy Gateway 已经是生产级的 L7 网关(限流/鉴权/mTLS/可观测一应俱全)，AI Gateway 只在其上"嫁接"一层 LLM 智能：用 extproc 拦截并解析 LLM 的流式响应、统计 Token、做模型路由。这与 Kgateway(同样基于 Envoy、走 Gateway API)思路同源，可对照 [[12_架构基建/11_AI_Gateway/AI_Gateway_2026]] 的总论与 [[CNCF_Cloud_Native_AI/Kgateway_Deep_Dive]] 一起理解。它的工程哲学是：**让 AI 流量治理复用云原生已有的治理平面，而不是再造一个 Python 代理**。
 
 ---
 
@@ -682,5 +682,5 @@ Envoy 默认对 extproc 失败有降级行为，但建议配置 failureModeAllow
 - [[CNCF_Cloud_Native_AI/README]] — CNCF 云原生 AI 总览
 - [[CNCF_Cloud_Native_AI/Kgateway_Deep_Dive]] — 同为 Envoy + Gateway API 的 AI 网关对照
 - [[CNCF_Cloud_Native_AI/AgentGateway_Deep_Dive]] — 面向 Agent 流量的网关
-- [[架构基建/AI_Gateway/AI_Gateway_2026]] — AI Gateway 总论与方法论
-- [[架构基建/AI_Gateway/AI_Gateway_Comparison_2026]] — 各类 AI 网关横向对比
+- [[12_架构基建/11_AI_Gateway/AI_Gateway_2026]] — AI Gateway 总论与方法论
+- [[12_架构基建/11_AI_Gateway/AI_Gateway_Comparison_2026]] — 各类 AI 网关横向对比

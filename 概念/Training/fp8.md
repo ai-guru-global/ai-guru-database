@@ -10,7 +10,7 @@ relationships:
   - target: "概念/model-formats"
     type: related_to
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
 summary: "FP8 是 8-bit 浮点格式（E4M3/E5M2 两种变体），相比 FP16/BF16 减少一半显存占用，同时比 INT8 保留更好的精度。Hopper 架构原生支持 FP8 Tensor Core。"
 provenance:
   extracted: 0.30
@@ -130,7 +130,7 @@ FP8 两种变体的位分配
 - [[概念/model-formats]] — 模型格式
 - [[概念/mixed-precision]] — 混合精度训练
 - [[概念/smoothquant]] — SmoothQuant INT8 量化
-- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
 
 ---
 

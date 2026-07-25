@@ -37,7 +37,7 @@ AI Guru 知识库包含 24 个章节、500+ 文档。本指南基于 **5 个核�
 flowchart TB
     subgraph "AI Guru 学习路径全景 (5 Career Paths)"
         ML["ML Engineer<br/>机器学习工程师<br/>Ch.00→01→02→03→07→08→09"]
-        LLM["LLM/Agent Engineer<br/>大模型/Agent 工程师<br/>Ch.04→07→11→13→09→16"]
+        LLM["LLM/Agent Engineer<br/>05_大模型/Agent 工程师<br/>Ch.04→07→11→13→09→16"]
         PM["AI Product Manager<br/>AI 产品经理<br/>Ch.00→20→04(速览)→08(速览)→19"]
         OPS["MLOps Engineer<br/>MLOps 工程师<br/>Ch.09→10→12→14→15→16"]
         RES["AI Research<br/>AI 研究员<br/>Ch.01→03→22→04→07→06"]
@@ -71,21 +71,21 @@ flowchart TB
 
 ## 外部精选路线图
 
-> 另一份高质量免费资源路线图：→ [[学习/guides/ai_engineering_roadmap_2026.md|AI 工程学习路线图 2026]]（基于 ashishps1/learn-ai-engineering ⭐5.7k，涵盖课程、论文、书籍、工具）
+> 另一份高质量免费资源路线图：→ [[90_学习/guides/ai_engineering_roadmap_2026.md|AI 工程学习路线图 2026]]（基于 ashishps1/learn-ai-engineering ⭐5.7k，涵盖课程、论文、书籍、工具）
 
 ### 推荐系统课程
 
 | 课程 | 定位 | 适合路径 | 本库索引 |
 |------|------|---------|---------|
-| **Microsoft AI For Beginners** | 12 周 AI 入门，覆盖符号 AI、神经网络、CV、NLP、RL、伦理，含 PyTorch/TensorFlow 双框架 Notebook | 所有路径的入门阶段 | [[学习/Courses/microsoft/microsoft_ai_for_beginners.md]] |
-| **Microsoft AI Agents for Beginners** | 微软官方 16 课 AI Agent 入门（MAF + Azure AI Foundry + .NET/Python） | LLM/Agent Engineer | [[学习/Courses/microsoft/microsoft_ai_agents_for_beginners.md]] |
-| **Hello-Agents (Datawhale)** | 中文 Agent 系统教程，16 章 + 综合项目，从零构建 ReAct/LangGraph/AutoGen/MCP/A2A/ANP | LLM/Agent Engineer、中文学习者 | [[学习/Courses/other/hello_agents.md]] |
-| **Learn Claude Code** | 20 课渐进式 Claude Code 式 Harness 工程教程 | LLM/Agent Engineer、Agent 工具开发者 | [[学习/Courses/share_ai/learn_claude_code.md]] |
-| **Hands-On Large Language Models** | 《图解 LLM》12 章 + 近 300 张图 + Jupyter Notebook，覆盖 Token 到 BERT/生成模型微调 | LLM/Agent Engineer、AI Research | [[学习/Courses/other/hands_on_llms.md]] |
-| **ApacheCN AILearning** | 中文全栈 AI 学习资料库（数据分析、线性代数、ML、PyTorch、TensorFlow 2.x、NLP） | ML Engineer、AI Research、中文学习者 | [[学习/Courses/apachecn/ailearning_guide.md]] |
-| **500+ AI Projects** | 500+ AI/ML/DL/CV/NLP 实战项目合集索引 | 所有路径项目实践 | [[学习/References/Projects/500-ai-projects]] |
-| **Hugging Face 官方课程** | Transformer / NLP / RL / Audio 系统课程 | LLM/Agent Engineer、AI Research | [[学习/Courses/hugging_face/official_courses.md]] |
-| **DeepLearning.AI 短课程** | 前沿技术短课程集合 | 各路径进阶补充 | [[学习/Courses/deeplearning_ai/short_courses.md]] |
+| **Microsoft AI For Beginners** | 12 周 AI 入门，覆盖符号 AI、神经网络、CV、NLP、RL、伦理，含 PyTorch/TensorFlow 双框架 Notebook | 所有路径的入门阶段 | [[90_学习/Courses/microsoft/microsoft_ai_for_beginners.md]] |
+| **Microsoft AI Agents for Beginners** | 微软官方 16 课 AI Agent 入门（MAF + Azure AI Foundry + .NET/Python） | LLM/Agent Engineer | [[90_学习/Courses/microsoft/microsoft_ai_agents_for_beginners.md]] |
+| **Hello-Agents (Datawhale)** | 中文 Agent 系统教程，16 章 + 综合项目，从零构建 ReAct/LangGraph/AutoGen/MCP/A2A/ANP | LLM/Agent Engineer、中文学习者 | [[90_学习/Courses/other/hello_agents.md]] |
+| **Learn Claude Code** | 20 课渐进式 Claude Code 式 Harness 工程教程 | LLM/Agent Engineer、Agent 工具开发者 | [[90_学习/Courses/share_ai/learn_claude_code.md]] |
+| **Hands-On Large Language Models** | 《图解 LLM》12 章 + 近 300 张图 + Jupyter Notebook，覆盖 Token 到 BERT/生成模型微调 | LLM/Agent Engineer、AI Research | [[90_学习/Courses/other/hands_on_llms.md]] |
+| **ApacheCN AILearning** | 中文全栈 AI 学习资料库（数据分析、线性代数、ML、PyTorch、TensorFlow 2.x、NLP） | ML Engineer、AI Research、中文学习者 | [[90_学习/Courses/apachecn/ailearning_guide.md]] |
+| **500+ AI Projects** | 500+ AI/ML/DL/CV/NLP 实战项目合集索引 | 所有路径项目实践 | [[90_学习/References/Projects/500-ai-projects]] |
+| **Hugging Face 官方课程** | Transformer / NLP / RL / Audio 系统课程 | LLM/Agent Engineer、AI Research | [[90_学习/Courses/hugging_face/official_courses.md]] |
+| **DeepLearning.AI 短课程** | 前沿技术短课程集合 | 各路径进阶补充 | [[90_学习/Courses/deeplearning_ai/short_courses.md]] |
 
 ---
 
@@ -107,7 +107,7 @@ flowchart TB
 | 11 | `RAG系统` | 向量数据库、Embedding、检索增强 |
 | 12 | `架构基建` | Kubernetes、高可用、GPU 集群 |
 | 13 | `Agent` | LangGraph、Harness、Agent 框架 |
-| 14 | `架构基建/AI_Gateway` | LiteLLM、路由、限流、成本控制 |
+| 14 | `12_架构基建/AI_Gateway` | LiteLLM、路由、限流、成本控制 |
 | 15 | `AI测试` | Prompt 测试、RAG 评估、合同测试 |
 | 16 | `AI运维` | 监控、日志、告警、灾难恢复 |
 | 19 | `伦理安全` | RLHF/DPO、红队测试、对齐 |
@@ -175,28 +175,28 @@ flowchart LR
 
 **Phase 1: 认知建立（16-22h）**
 
-- **Ch.00** — [AI 简介 - nutshell](入门/Fundamentals/AI_Fundamentals.md) → [主文档](../../入门/README.md) → [AI 伦理与社会](入门/Ethics_and_Future/AI_Ethics_Society.md)
-- **Ch.01** — [线性代数 for_dummy](数学基础/Linear_Algebra/Linear_Algebra_for_dummy.md) → [主文档](数学基础/Linear_Algebra/Linear_Algebra.md) → [概率统计](数学基础/Probability_Statistics/Probability_Statistics.md)
+- **Ch.00** — [AI 简介 - nutshell](00_入门/01_Fundamentals/AI_Fundamentals.md) → [主文档](../../00_入门/README.md) → [AI 伦理与社会](00_入门/04_Ethics_and_Future/AI_Ethics_Society.md)
+- **Ch.01** — [线性代数 for_dummy](01_数学基础/02_Linear_Algebra/Linear_Algebra_for_dummy.md) → [主文档](01_数学基础/02_Linear_Algebra/Linear_Algebra.md) → [概率统计](01_数学基础/03_Probability_Statistics/Probability_Statistics.md)
 - **Key Skills**: AI 发展脉络、矩阵运算、概率分布、梯度下降数学原理
 
 **Phase 2: 核心技能（32-40h）**
 
-- **Ch.02** — [监督学习 for_dummy](机器学习/Supervised_Learning/Supervised_Learning_for_dummy.md) → [主文档](机器学习/Supervised_Learning/Supervised_Learning.md) → [无监督学习](机器学习/Unsupervised_Learning/Unsupervised_Learning.md) → [特征工程](机器学习/Feature_Engineering/Feature_Engineering_for_dummy.md)
-- **Ch.03** — [神经网络 for_dummy](深度学习/Neural_Network_Core/Neural_Network_Core_for_dummy.md) → [主文档](深度学习/Neural_Network_Core/Neural_Network_Core.md) → [优化与正则化](深度学习/Optimization/Optimization.md) → 实践: PyTorch MNIST
+- **Ch.02** — [监督学习 for_dummy](02_机器学习/02_Supervised_Learning/Supervised_Learning_for_dummy.md) → [主文档](02_机器学习/02_Supervised_Learning/Supervised_Learning.md) → [无监督学习](02_机器学习/03_Unsupervised_Learning/Unsupervised_Learning.md) → [特征工程](02_机器学习/05_Feature_Engineering/Feature_Engineering_for_dummy.md)
+- **Ch.03** — [神经网络 for_dummy](03_深度学习/02_Neural_Network_Core/Neural_Network_Core_for_dummy.md) → [主文档](03_深度学习/02_Neural_Network_Core/Neural_Network_Core.md) → [优化与正则化](03_深度学习/03_Optimization/Optimization.md) → 实践: PyTorch MNIST
 - **Key Skills**: 分类/回归/聚类、特征工程、反向传播、Adam/SGD、Dropout
 
 **Phase 3: 工程化（32-44h）**
 
-- **Ch.07** — [Training nutshell](模型训练/Training_Fundamentals/Model-Training-in-nutshell.md) → [分布式训练](模型训练/Distributed_Training/index.md) → [混合精度](模型训练/Optimization/Mixed_Precision_Training.md)
-- **Ch.08** — [评估 for_dummy](模型评估/Evaluation_Fundamentals/Model_Evaluation_for_dummy.md) → [主文档](模型评估/Evaluation_Fundamentals/Model_Evaluation.md) → [A/B 测试](测试/AB_Testing_AI_Systems.md)
-- **Ch.09** — [部署 for_dummy](部署推理/Deployment_Fundamentals/Deployment_Inference_for_dummy.md) → [Inference nutshell](部署推理/Deployment_Fundamentals/Inference-in-nutshell.md) → [推理引擎选型指南](部署推理/Inference_Engines/LLM_Inference_Engine_Selection_Guide.md) → [vLLM](部署推理/Inference_Engines/vLLM_Deep_Dive.md) → [推理性能基础](部署推理/Inference_Performance/Inference_Performance_Fundamentals.md) → 实践: Docker + FastAPI
+- **Ch.07** — [Training nutshell](07_模型训练/01_Training_Fundamentals/Model-Training-in-nutshell.md) → [分布式训练](07_模型训练/04_Distributed_Training/index.md) → [混合精度](07_模型训练/03_Optimization/Mixed_Precision_Training.md)
+- **Ch.08** — [评估 for_dummy](08_模型评估/01_Evaluation_Fundamentals/Model_Evaluation_for_dummy.md) → [主文档](08_模型评估/01_Evaluation_Fundamentals/Model_Evaluation.md) → [A/B 测试](09_测试/AB_Testing_AI_Systems.md)
+- **Ch.09** — [部署 for_dummy](10_部署推理/01_Deployment_Fundamentals/Deployment_Inference_for_dummy.md) → [Inference nutshell](10_部署推理/01_Deployment_Fundamentals/Inference-in-nutshell.md) → [推理引擎选型指南](10_部署推理/02_Inference_Engines/LLM_Inference_Engine_Selection_Guide.md) → [vLLM](10_部署推理/02_Inference_Engines/vLLM_Deep_Dive.md) → [推理性能基础](10_部署推理/04_Inference_Performance/Inference_Performance_Fundamentals.md) → 实践: Docker + FastAPI
 - **Key Skills**: FSDP/混合精度、Precision/Recall/F1/AUC、vLLM、推理引擎选型、容器化部署
 
-完成本路径后，参考 [milestones.md](../../学习/guides/milestones.md) Stage 0-3 自测。
+完成本路径后，参考 [milestones.md](../../90_学习/guides/milestones.md) Stage 0-3 自测。
 
 ---
 
-## 路径 2: LLM/Agent Engineer (大模型/Agent 工程师)
+## 路径 2: LLM/Agent Engineer (05_大模型/Agent 工程师)
 
 > **一句话理解**: LLM/Agent Engineer 就像"交响乐团指挥"——不需要自己演奏每件乐器（训练底层模型），但必须精通如何让各个声部（RAG、Agent、工具链）协调配合。
 
@@ -240,23 +240,23 @@ flowchart LR
 
 **Phase 1: LLM 核心（24-32h）**
 
-- **Ch.04** — [LLM nutshell](大模型/LLM_Architectures/LLM-Basics-in-nutshell.md) → [Transformer](大模型/Transformer_Revolution/Transformer_Revolution.md) → [LLM 架构](大模型/LLM_Architectures/LLM_Architectures.md) → [Prompt Engineering](大模型/Prompt_Engineering/Prompt_Engineering.md) → [微调 LoRA/QLoRA](大模型/Fine_tuning_Techniques/Fine_tuning_Techniques.md) → 选读: [推理模型 2026](大模型/LLM_Architectures/Reasoning_Models_2026.md) | [中国大模型](../../大模型/README.md)
-- **Ch.07** — [Training nutshell](模型训练/Training_Fundamentals/Model-Training-in-nutshell.md) → [分布式训练](模型训练/Distributed_Training/index.md) → 实践: HuggingFace PEFT LoRA 微调
+- **Ch.04** — [LLM nutshell](05_大模型/05_LLM_Architectures/LLM-Basics-in-nutshell.md) → [Transformer](05_大模型/04_Transformer_Revolution/Transformer_Revolution.md) → [LLM 架构](05_大模型/05_LLM_Architectures/LLM_Architectures.md) → [Prompt Engineering](05_大模型/08_Prompt_Engineering/Prompt_Engineering.md) → [微调 LoRA/QLoRA](05_大模型/07_Fine_tuning_Techniques/Fine_tuning_Techniques.md) → 选读: [推理模型 2026](05_大模型/05_LLM_Architectures/Reasoning_Models_2026.md) | [中国大模型](../../05_大模型/README.md)
+- **Ch.07** — [Training nutshell](07_模型训练/01_Training_Fundamentals/Model-Training-in-nutshell.md) → [分布式训练](07_模型训练/04_Distributed_Training/index.md) → 实践: HuggingFace PEFT LoRA 微调
 - **Key Skills**: Transformer/Attention、Prompt Engineering、LoRA 微调、PEFT
 
 **Phase 2: 应用构建（22-30h）**
 
-- **Ch.11** — [RAG for_dummy](RAG系统/RAG_Fundamentals/RAG_Systems_for_dummy.md) → [RAG nutshell](RAG系统/RAG_Fundamentals/RAG-in-nutshell.md) → [主文档](RAG系统/RAG_Fundamentals/RAG_Systems.md) → [向量数据库](RAG系统/Vector_Databases/index.md) → 实践: LangChain + Qdrant 知识库问答
-- **Ch.13** — [Agent nutshell](../../智能体/Agent_Workflow/Workflow-in-nutshell.md) → [Agent Harness](../../智能体/README.md) → [LangGraph](../../智能体/Agent_Frameworks/LangChain_Deep_Dive.md) → [Agent 记忆](../../智能体/README.md) → 实践: 多步推理 + 工具调用 Agent
+- **Ch.11** — [RAG for_dummy](14_RAG系统/01_RAG_Fundamentals/RAG_Systems_for_dummy.md) → [RAG nutshell](14_RAG系统/01_RAG_Fundamentals/RAG-in-nutshell.md) → [主文档](14_RAG系统/01_RAG_Fundamentals/RAG_Systems.md) → [向量数据库](14_RAG系统/03_Vector_Databases/index.md) → 实践: LangChain + Qdrant 知识库问答
+- **Ch.13** — [Agent nutshell](../../15_智能体/03_Agent_Workflow/Workflow-in-nutshell.md) → [Agent Harness](../../15_智能体/README.md) → [LangGraph](../../15_智能体/02_Agent_Frameworks/LangChain_Deep_Dive.md) → [Agent 记忆](../../15_智能体/README.md) → 实践: 多步推理 + 工具调用 Agent
 - **Key Skills**: 文档切分、Embedding、向量检索、Reranking、LangGraph、MCP 协议、工具编排
 
 **Phase 3: 生产运维（14-22h）**
 
-- **Ch.09** — [Inference nutshell](部署推理/Deployment_Fundamentals/Inference-in-nutshell.md) → [推理引擎选型指南](部署推理/Inference_Engines/LLM_Inference_Engine_Selection_Guide.md) → [vLLM](部署推理/Inference_Engines/vLLM_Deep_Dive.md) → [SGLang](部署推理/Inference_Engines/SGLang_Deep_Dive.md) → [量化](概念/Inference/quantization.md) → [推理引擎迁移指南](部署推理/Inference_Engines/LLM_Inference_Engine_Migration_Guide.md)
-- **Ch.16** — [AI Ops nutshell](运维/AIOps_Fundamentals/AIOps-in-nutshell.md) → [LLM 可观测性](../../模型运维/Observability/LLM_Observability.md) → [告警与灾难恢复](运维/SRE_Reliability/AI_Incident_Response_Playbook.md)
+- **Ch.09** — [Inference nutshell](10_部署推理/01_Deployment_Fundamentals/Inference-in-nutshell.md) → [推理引擎选型指南](10_部署推理/02_Inference_Engines/LLM_Inference_Engine_Selection_Guide.md) → [vLLM](10_部署推理/02_Inference_Engines/vLLM_Deep_Dive.md) → [SGLang](10_部署推理/02_Inference_Engines/SGLang_Deep_Dive.md) → [量化](概念/Inference/quantization.md) → [推理引擎迁移指南](10_部署推理/02_Inference_Engines/LLM_Inference_Engine_Migration_Guide.md)
+- **Ch.16** — [AI Ops nutshell](13_运维/01_AIOps_Fundamentals/AIOps-in-nutshell.md) → [LLM 可观测性](../../11_模型运维/08_Observability/LLM_Observability.md) → [告警与灾难恢复](13_运维/02_SRE_Reliability/AI_Incident_Response_Playbook.md)
 - **Key Skills**: vLLM/SGLang 选型、量化 GPTQ/AWQ、KV Cache、LLM 监控、告警策略
 
-完成本路径后，参考 [milestones.md](../../学习/guides/milestones.md) Stage 2-4 自测。
+完成本路径后，参考 [milestones.md](../../90_学习/guides/milestones.md) Stage 2-4 自测。
 
 ---
 
@@ -302,19 +302,19 @@ flowchart LR
 
 **Phase 1: AI 认知（10-14h）**
 
-- **Ch.00** — [AI nutshell](入门/Fundamentals/AI_Fundamentals.md) → [主文档](../../入门/README.md) → [AI 伦理与社会](入门/Ethics_and_Future/AI_Ethics_Society.md)
-- **Ch.20** — [行业应用概览](../../行业应用/README.md) → 选 2-3 个本行业案例深入 → 实践: 分析一个竞品 AI 产品技术选型
+- **Ch.00** — [AI nutshell](00_入门/01_Fundamentals/AI_Fundamentals.md) → [主文档](../../00_入门/README.md) → [AI 伦理与社会](00_入门/04_Ethics_and_Future/AI_Ethics_Society.md)
+- **Ch.20** — [行业应用概览](../../18_行业应用/README.md) → 选 2-3 个本行业案例深入 → 实践: 分析一个竞品 AI 产品技术选型
 - **Key Skills**: AI 发展脉络、能力边界判断、行业应用模式、ROI 评估
 
 **Phase 2: 技术理解（7-11h）**
 
-- **Ch.04 (速览)** — [LLM nutshell](大模型/LLM_Architectures/LLM-Basics-in-nutshell.md) → [LLM for_dummy](大模型/LLM_Architectures/LLM_Architectures_for_dummy.md) → [Prompt for_dummy](大模型/Prompt_Engineering/Prompt_Engineering_for_dummy.md)
-- **Ch.08 (速览)** — [评估 for_dummy](模型评估/Evaluation_Fundamentals/Model_Evaluation_for_dummy.md) → [A/B 测试](测试/AB_Testing_AI_Systems.md) → [Benchmark](模型评估/Benchmarks/index.md)
+- **Ch.04 (速览)** — [LLM nutshell](05_大模型/05_LLM_Architectures/LLM-Basics-in-nutshell.md) → [LLM for_dummy](05_大模型/05_LLM_Architectures/LLM_Architectures_for_dummy.md) → [Prompt for_dummy](05_大模型/08_Prompt_Engineering/Prompt_Engineering_for_dummy.md)
+- **Ch.08 (速览)** — [评估 for_dummy](08_模型评估/01_Evaluation_Fundamentals/Model_Evaluation_for_dummy.md) → [A/B 测试](09_测试/AB_Testing_AI_Systems.md) → [Benchmark](08_模型评估/02_Benchmarks/index.md)
 - **Key Skills**: LLM 能力边界、Token 与成本、Precision/Recall 业务权衡、Benchmark 解读
 
 **Phase 3: 责任 AI（6-10h）**
 
-- **Ch.19** — [伦理 nutshell](伦理安全/Ethics_Fundamentals/Ethics-in-nutshell.md) → [AI 对齐](伦理安全/Value_Alignment/Value_Alignment.md) → [红队测试](../../伦理安全/README.md) → [安全合规](../../伦理安全/README.md)
+- **Ch.19** — [伦理 nutshell](17_伦理安全/01_Ethics_Fundamentals/Ethics-in-nutshell.md) → [AI 对齐](17_伦理安全/02_Value_Alignment/Value_Alignment.md) → [红队测试](../../17_伦理安全/README.md) → [安全合规](../../17_伦理安全/README.md)
 - **Key Skills**: RLHF/DPO 概念、偏见检测、数据安全、合规框架
 
 ### 产品经理专属决策框架
@@ -375,23 +375,23 @@ flowchart LR
 
 **Phase 1: 部署基础（26-34h）**
 
-- **Ch.09** — [Inference nutshell](部署推理/Deployment_Fundamentals/Inference-in-nutshell.md) → [主文档](部署推理/Deployment_Fundamentals/Deployment_Inference.md) → [推理引擎选型指南](部署推理/Inference_Engines/LLM_Inference_Engine_Selection_Guide.md) → [vLLM](部署推理/Inference_Engines/vLLM_Deep_Dive.md) → [推理引擎基准测试指南](部署推理/Inference_Engines/LLM_Inference_Benchmarking_Guide.md) → [量化](概念/Inference/quantization.md) → 实践: vLLM + Docker 部署
-- **Ch.10** — [MLOps for_dummy](模型运维/MLOps_Fundamentals/MLOps_Pipeline_for_dummy.md) → [主文档](模型运维/MLOps_Fundamentals/MLOps_Pipeline.md) → [Feature Store](../../模型运维/Feature_Store/Feature_Store_Fundamentals.md) → [模型版本管理](../../模型运维/Experiment_Tracking/Model_Registry_and_Cards_Deep_Dive.md)
+- **Ch.09** — [Inference nutshell](10_部署推理/01_Deployment_Fundamentals/Inference-in-nutshell.md) → [主文档](10_部署推理/01_Deployment_Fundamentals/Deployment_Inference.md) → [推理引擎选型指南](10_部署推理/02_Inference_Engines/LLM_Inference_Engine_Selection_Guide.md) → [vLLM](10_部署推理/02_Inference_Engines/vLLM_Deep_Dive.md) → [推理引擎基准测试指南](10_部署推理/02_Inference_Engines/LLM_Inference_Benchmarking_Guide.md) → [量化](概念/Inference/quantization.md) → 实践: vLLM + Docker 部署
+- **Ch.10** — [MLOps for_dummy](11_模型运维/01_MLOps_Fundamentals/MLOps_Pipeline_for_dummy.md) → [主文档](11_模型运维/01_MLOps_Fundamentals/MLOps_Pipeline.md) → [Feature Store](../../11_模型运维/03_Feature_Store/Feature_Store_Fundamentals.md) → [模型版本管理](../../11_模型运维/04_Experiment_Tracking/Model_Registry_and_Cards_Deep_Dive.md)
 - **Key Skills**: vLLM/TGI 选型、量化、推理基准测试、CI/CD for ML、DVC、Feature Store、Model Registry
 
 **Phase 2: 平台构建（22-30h）**
 
-- **Ch.12** — [主文档](../../架构基建/README.md) → [K8s for AI](架构基建/Kubernetes_Core/Kubernetes_Core_Components_Deep_Dive.md) → [GPU 集群](架构基建/Architecture_Overview/AI_Infrastructure_2026.md) → [高可用](架构基建/Architecture_Overview/High_Availability_2026.md)
-- **Ch.14** — [Gateway nutshell](架构基建/AI_Gateway/Gateway-in-nutshell.md) → [主文档](架构基建/AI_Gateway/AI_Gateway_2026.md) → [LiteLLM](架构基建/AI_Gateway/LiteLLM_Deep_Dive.md) → 实践: LiteLLM Proxy 多模型路由
+- **Ch.12** — [主文档](../../12_架构基建/README.md) → [K8s for AI](12_架构基建/04_Kubernetes_Core/Kubernetes_Core_Components_Deep_Dive.md) → [GPU 集群](12_架构基建/02_Architecture_Overview/AI_Infrastructure_2026.md) → [高可用](12_架构基建/02_Architecture_Overview/High_Availability_2026.md)
+- **Ch.14** — [Gateway nutshell](12_架构基建/11_AI_Gateway/Gateway-in-nutshell.md) → [主文档](12_架构基建/11_AI_Gateway/AI_Gateway_2026.md) → [LiteLLM](12_架构基建/11_AI_Gateway/LiteLLM_Deep_Dive.md) → 实践: LiteLLM Proxy 多模型路由
 - **Key Skills**: K8s 编排、GPU 调度、自动扩缩容、API 路由、Token 缓存、限流降级
 
 **Phase 3: 质量保障（18-26h）**
 
-- **Ch.15** — [AI 测试主文档](../../测试/README.md) → [Prompt 测试](测试/Testing_Frameworks/Promptfoo_Deep_Dive.md) → [RAG 评估](测试/RAGAS_Deep_Dive.md) → 实践: Prompt 回归测试套件
-- **Ch.16** — [AI Ops nutshell](运维/AIOps_Fundamentals/AIOps-in-nutshell.md) → [LLM 可观测性](../../模型运维/Observability/LLM_Observability.md) → [日志追踪](../../运维/README.md) → [告警恢复](运维/SRE_Reliability/AI_Incident_Response_Playbook.md) → 实践: Grafana + LangSmith 监控
+- **Ch.15** — [AI 测试主文档](../../09_测试/README.md) → [Prompt 测试](09_测试/02_Testing_Frameworks/Promptfoo_Deep_Dive.md) → [RAG 评估](09_测试/RAGAS_Deep_Dive.md) → 实践: Prompt 回归测试套件
+- **Ch.16** — [AI Ops nutshell](13_运维/01_AIOps_Fundamentals/AIOps-in-nutshell.md) → [LLM 可观测性](../../11_模型运维/08_Observability/LLM_Observability.md) → [日志追踪](../../13_运维/README.md) → [告警恢复](13_运维/02_SRE_Reliability/AI_Incident_Response_Playbook.md) → 实践: Grafana + LangSmith 监控
 - **Key Skills**: Prompt 测试、RAG 评估、合同测试、LLM 指标监控、SLO/SLA、灾难恢复
 
-完成本路径后，参考 [milestones.md](../../学习/guides/milestones.md) Stage 3 自测。
+完成本路径后，参考 [milestones.md](../../90_学习/guides/milestones.md) Stage 3 自测。
 
 ---
 
@@ -439,23 +439,23 @@ flowchart LR
 
 **Phase 1: 理论根基（32-40h）**
 
-- **Ch.01 (深入)** — [线性代数](数学基础/Linear_Algebra/Linear_Algebra.md) (5h) → [概率统计](数学基础/Probability_Statistics/Probability_Statistics.md) (5h) → [数据结构](数学基础/Data_Structures_Algorithms/Data_Structures_Algorithms.md) (4h) → [分布式系统](数学基础/Distributed_Systems/Distributed_Systems.md) (3h)
-- **Ch.03 (深入)** — [神经网络核心](深度学习/Neural_Network_Core/Neural_Network_Core.md) (5h) → [优化与正则化](深度学习/Optimization/Optimization.md) (5h) → 实践: NumPy 反向传播 (4h) → 实践: PyTorch ResNet/VGG (3h)
+- **Ch.01 (深入)** — [线性代数](01_数学基础/02_Linear_Algebra/Linear_Algebra.md) (5h) → [概率统计](01_数学基础/03_Probability_Statistics/Probability_Statistics.md) (5h) → [数据结构](01_数学基础/07_Data_Structures_Algorithms/Data_Structures_Algorithms.md) (4h) → [分布式系统](01_数学基础/09_Distributed_Systems/Distributed_Systems.md) (3h)
+- **Ch.03 (深入)** — [神经网络核心](03_深度学习/02_Neural_Network_Core/Neural_Network_Core.md) (5h) → [优化与正则化](03_深度学习/03_Optimization/Optimization.md) (5h) → 实践: NumPy 反向传播 (4h) → 实践: PyTorch ResNet/VGG (3h)
 - **Key Skills**: 矩阵分解、概率图模型、信息论、反向传播推导、优化器收敛性分析
 
 **Phase 2: 前沿视野（36-54h）**
 
-- **Ch.22** — [必读书单](../../论文精读/README.md) → 精读: Attention Is All You Need → BERT/GPT → ResNet/BatchNorm → RLHF/DPO → MoE → 选读 5-10 篇
-- **Ch.04 (深入)** — [Transformer](大模型/Transformer_Revolution/Transformer_Revolution.md) → [LLM 架构](大模型/LLM_Architectures/LLM_Architectures.md) → [推理模型](大模型/LLM_Architectures/Reasoning_Models_2026.md) → [长上下文](大模型/LLM_Architectures/Long_Context_Models_2026.md) → [多模态](大模型/Multimodal_Models/Multimodal_Architectures_2026.md) → [微调](大模型/Fine_tuning_Techniques/Fine_tuning_Techniques.md)
+- **Ch.22** — [必读书单](../../20_论文精读/README.md) → 精读: Attention Is All You Need → BERT/GPT → ResNet/BatchNorm → RLHF/DPO → MoE → 选读 5-10 篇
+- **Ch.04 (深入)** — [Transformer](05_大模型/04_Transformer_Revolution/Transformer_Revolution.md) → [LLM 架构](05_大模型/05_LLM_Architectures/LLM_Architectures.md) → [推理模型](05_大模型/05_LLM_Architectures/Reasoning_Models_2026.md) → [长上下文](05_大模型/05_LLM_Architectures/Long_Context_Models_2026.md) → [多模态](05_大模型/10_Multimodal_Models/Multimodal_Architectures_2026.md) → [微调](05_大模型/07_Fine_tuning_Techniques/Fine_tuning_Techniques.md)
 - **Key Skills**: 论文精读、Attention 变体、Scaling Laws、MoE、推理链、多模态融合
 
 **Phase 3: 研究实践（26-36h）**
 
-- **Ch.07** — [分布式训练](模型训练/Distributed_Training/index.md) → [混合精度](模型训练/Optimization/Mixed_Precision_Training.md) → 实践: 复现一篇论文训练实验 (6h)
-- **Ch.06** — [RL for_dummy](强化学习/RL_Foundations/RL_Foundations_for_dummy.md) → [RL 基础](强化学习/RL_Foundations/RL_Foundations.md) → [深度 RL](强化学习/Deep_RL/Deep_RL.md) → [AI Agent](../../智能体/Agent_Foundations/AI_Agents.md)
+- **Ch.07** — [分布式训练](07_模型训练/04_Distributed_Training/index.md) → [混合精度](07_模型训练/03_Optimization/Mixed_Precision_Training.md) → 实践: 复现一篇论文训练实验 (6h)
+- **Ch.06** — [RL for_dummy](06_强化学习/01_RL_Foundations/RL_Foundations_for_dummy.md) → [RL 基础](06_强化学习/01_RL_Foundations/RL_Foundations.md) → [深度 RL](06_强化学习/02_Deep_RL/Deep_RL.md) → [AI Agent](../../15_智能体/01_Agent_Foundations/AI_Agents.md)
 - **Key Skills**: 3D 并行、训练稳定性、MDP/Bellman、PPO、RLHF、Agent 推理与规划
 
-完成本路径后，参考 [milestones.md](../../学习/guides/milestones.md) Stage 1-4 自测。
+完成本路径后，参考 [milestones.md](../../90_学习/guides/milestones.md) Stage 1-4 自测。
 
 ---
 
@@ -626,25 +626,25 @@ flowchart TB
 | 资源 | 说明 |
 |------|------|
 | [概念入门路径](../README.md) | 按认知层次组织的入门指南（Stage 0-4） |
-| [里程碑自测](../../学习/guides/milestones.md) | 每个 Stage 的检查点问题 |
+| [里程碑自测](../../90_学习/guides/milestones.md) | 每个 Stage 的检查点问题 |
 | [概念知识卡片](./概念/) | 每个 Stage 的核心概念卡片 |
-| [新手导航（章节版）](../../伦理安全/README_for_dummy.md) | 按章节组织的入门指南 |
+| [新手导航（章节版）](../../17_伦理安全/README_for_dummy.md) | 按章节组织的入门指南 |
 | [已有路径 (pathways/)](./pathways/) | 原版 6 条路径（按认知层次组织） |
 
 ---
 
 ## Related
 
-- [[学习/README|Learn — AI Guru 概念入门路径]]
-- [[学习/guides/milestones.md|里程碑自测]]
-- [[学习/pathways/ml-practitioner.md|ML 从业者路径 (原版)]]
-- [[学习/pathways/llm-engineer.md|LLM 工程师路径 (原版)]]
-- [[学习/pathways/ai-researcher.md|AI 研究者路径 (原版)]]
-- [[学习/pathways/product-manager.md|AI 产品经理路径 (原版)]]
-- [[学习/pathways/java-developer.md|Java 开发者 AI 路径 (原版)]]
-- [[学习/pathways/absolute-beginner.md|零基础通识路径 (原版)]]
-- [[学习/pathways/data-scientist.md|数据科学家路径 (原版)]]
-- [[学习/guides/skills_self_assessment|AI 技能自评清单]] — 配合路径使用的技能自评工具
+- [[90_学习/README|Learn — AI Guru 概念入门路径]]
+- [[90_学习/guides/milestones.md|里程碑自测]]
+- [[90_学习/pathways/ml-practitioner.md|ML 从业者路径 (原版)]]
+- [[90_学习/pathways/llm-engineer.md|LLM 工程师路径 (原版)]]
+- [[90_学习/pathways/ai-researcher.md|AI 研究者路径 (原版)]]
+- [[90_学习/pathways/product-manager.md|AI 产品经理路径 (原版)]]
+- [[90_学习/pathways/java-developer.md|Java 开发者 AI 路径 (原版)]]
+- [[90_学习/pathways/absolute-beginner.md|零基础通识路径 (原版)]]
+- [[90_学习/pathways/data-scientist.md|数据科学家路径 (原版)]]
+- [[90_学习/guides/skills_self_assessment|AI 技能自评清单]] — 配合路径使用的技能自评工具
 
 ---
 

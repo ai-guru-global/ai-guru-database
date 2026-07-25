@@ -324,8 +324,8 @@ NAS 最有价值的场景:
 
 ## 相关文档
 
-- [[深度学习/Knowledge_Distillation/|知识蒸馏]] — 模型压缩
-- [[深度学习/DL_Frameworks/|深度学习框架]] — 实现工具
-- [[大模型/LLM_Architectures/|LLM 架构]] — 手动设计
-- [[模型训练/Optimization/|优化方法]] — 训练策略
-- [[部署推理/Edge_Deployment/|边缘部署]] — 约束优化
+- [[03_深度学习/Knowledge_Distillation/|知识蒸馏]] — 模型压缩
+- [[03_深度学习/08_DL_Frameworks/|深度学习框架]] — 实现工具
+- [[05_大模型/05_LLM_Architectures/|LLM 架构]] — 手动设计
+- [[07_模型训练/03_Optimization/|优化方法]] — 训练策略
+- [[10_部署推理/Edge_Deployment/|边缘部署]] — 约束优化

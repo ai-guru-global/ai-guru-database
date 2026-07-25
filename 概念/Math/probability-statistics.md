@@ -183,7 +183,7 @@ Metropolis-Hastings算法：
 
 ## 来源
 
-- 数学基础/Probability_Statistics/Probability_Statistics.md
+- 01_数学基础/03_Probability_Statistics/Probability_Statistics.md
 - deep-reinforcement-learning unsupervised-learning Book Chapter 3: Probability and Information Theory
 - Probability Theory: The Logic of Science - E.T. Jaynes
 

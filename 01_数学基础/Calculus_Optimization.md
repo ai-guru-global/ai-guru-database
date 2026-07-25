@@ -479,13 +479,13 @@ def grad_check(f, x, analytic_grad, num_samples=10):
 
 ## Related
 
-- [[数学基础/Linear_Algebra/Linear_Algebra|线性代数]] — 向量/矩阵运算基础
-- [[数学基础/Probability_Statistics/Probability_Statistics|概率统计]] — 贝叶斯推断与分布
-- [[数学基础/Information_Theory/Information_Theory|信息论]] — 交叉熵与 KL 散度
-- [[深度学习/Optimization/Optimization|深度学习优化]] — 深度学习专用优化技术
-- [[模型训练/Optimization/Optimizer_Advanced|优化器进阶]] — AdamW/Lion/Muon 深度解析
-- [[模型训练/Optimization/Scaling_Laws|Scaling Laws]] — 大模型训练的数学规律
-- [[模型训练/Monitoring/Training_Troubleshooting_Runbook|训练故障排查]] — 梯度异常诊断
+- [[01_数学基础/02_Linear_Algebra/Linear_Algebra|线性代数]] — 向量/矩阵运算基础
+- [[01_数学基础/03_Probability_Statistics/Probability_Statistics|概率统计]] — 贝叶斯推断与分布
+- [[01_数学基础/04_Information_Theory/Information_Theory|信息论]] — 交叉熵与 KL 散度
+- [[03_深度学习/03_Optimization/Optimization|深度学习优化]] — 深度学习专用优化技术
+- [[07_模型训练/03_Optimization/Optimizer_Advanced|优化器进阶]] — AdamW/Lion/Muon 深度解析
+- [[07_模型训练/03_Optimization/Scaling_Laws|Scaling Laws]] — 大模型训练的数学规律
+- [[07_模型训练/07_Monitoring/Training_Troubleshooting_Runbook|训练故障排查]] — 梯度异常诊断
 
 ---
 

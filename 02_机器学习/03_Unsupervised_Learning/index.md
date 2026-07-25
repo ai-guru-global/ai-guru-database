@@ -15,13 +15,13 @@ tags: [auto-index]
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[机器学习/Unsupervised_Learning/Unsupervised_Learning|Unsupervised Learning]] | Unsupervised learning knowledge system: K-Means, DBSCAN, PCA and t-SNE | ML engineers / data scientists |
-| [[机器学习/Unsupervised_Learning/Unsupervised_Learning_for_dummy|Unsupervised Learning for dummy]] | Unsupervised learning beginner guide: from clustering to self-supervised methods | beginners / ML learners |
+| [[02_机器学习/03_Unsupervised_Learning/Unsupervised_Learning|Unsupervised Learning]] | Unsupervised learning knowledge system: K-Means, DBSCAN, PCA and t-SNE | ML engineers / data scientists |
+| [[02_机器学习/03_Unsupervised_Learning/Unsupervised_Learning_for_dummy|Unsupervised Learning for dummy]] | Unsupervised learning beginner guide: from clustering to self-supervised methods | beginners / ML learners |
 
 ## Related
 
-- [[机器学习/Anomaly_Detection/index|Anomaly Detection]]
-- [[深度学习/Self_Supervised_Learning/index|Self-Supervised Learning]]
+- [[02_机器学习/08_Anomaly_Detection/index|Anomaly Detection]]
+- [[03_深度学习/06_Self_Supervised_Learning/index|Self-Supervised Learning]]
 
 ## 进阶知识拓展
 
@@ -59,9 +59,9 @@ tags: [auto-index]
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

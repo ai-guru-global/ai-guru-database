@@ -318,9 +318,9 @@ AI 在量子安全中的角色:
 
 ## 相关阅读
 
-- [[伦理安全/Agent_Security_Ethics_AGI]] — Agent 安全伦理
-- [[伦理安全/LLM_Security_Complete_Guide]] — LLM 安全指南
-- [[伦理安全/AI_Red_Teaming_Guide]] — AI 红队指南
-- [[伦理安全/Guardrails_Production_Guide]] — 护栏生产指南
-- [[行业应用/Finance/AI_Finance_2026]] — AI 金融应用
-- [[行业应用/AI_Legal_Government_2026]] — AI 法律政务
+- [[17_伦理安全/Agent_Security_Ethics_AGI]] — Agent 安全伦理
+- [[17_伦理安全/LLM_Security_Complete_Guide]] — LLM 安全指南
+- [[17_伦理安全/AI_Red_Teaming_Guide]] — AI 红队指南
+- [[17_伦理安全/Guardrails_Production_Guide]] — 护栏生产指南
+- [[18_行业应用/04_Finance/AI_Finance_2026]] — AI 金融应用
+- [[18_行业应用/AI_Legal_Government_2026]] — AI 法律政务

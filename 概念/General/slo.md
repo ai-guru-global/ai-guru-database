@@ -47,7 +47,7 @@ sources: []
 - [[概念/sli|SLI]]
 - [[概念/error-budget|Error Budget]]
 - [[概念/sla|SLA]]
-- [[运维/SRE_Reliability/LLM_Inference_SLO_Guide|LLM 推理 SLO 实践指南]]
+- [[13_运维/02_SRE_Reliability/LLM_Inference_SLO_Guide|LLM 推理 SLO 实践指南]]
 
 ---
 

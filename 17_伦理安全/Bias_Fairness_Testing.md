@@ -126,11 +126,11 @@ BIAS_MITIGATION = {
 
 ## 5. 交叉引用
 
-- [[伦理安全/|伦理安全]]
-- [[伦理安全/Model_Card_Documentation|模型卡]]
-- [[伦理安全/AI_Liability/|AI 责任]]
-- [[模型评估/|模型评估]]
-- [[行业应用/Public_Safety|公共安全 (偏见风险)]]
+- [[17_伦理安全/|伦理安全]]
+- [[17_伦理安全/Model_Card_Documentation|模型卡]]
+- [[17_伦理安全/AI_Liability/|AI 责任]]
+- [[08_模型评估/|模型评估]]
+- [[18_行业应用/Public_Safety|公共安全 (偏见风险)]]
 
 ## 核心知识体系
 

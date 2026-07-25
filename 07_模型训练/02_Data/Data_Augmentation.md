@@ -315,8 +315,8 @@ LLM 生成文本数据:
 
 ## 相关阅读
 
-- [[模型训练/Data/Data_Curation_and_Mixture_2026]] — 数据管理
-- [[模型训练/Data/Tokenizer_Design_2026]] — 分词器设计
-- [[机器学习/Feature_Engineering/Feature_Engineering]] — 特征工程
-- [[计算机视觉/Generative_Models/Diffusion_Models_Deep_Dive]] — 扩散模型
-- [[大模型/LLM_Data_Engineering/LLM_Data_Engineering_Deep_Dive]] — LLM 数据工程
+- [[07_模型训练/02_Data/Data_Curation_and_Mixture_2026]] — 数据管理
+- [[07_模型训练/02_Data/Tokenizer_Design_2026]] — 分词器设计
+- [[02_机器学习/05_Feature_Engineering/Feature_Engineering]] — 特征工程
+- [[04_计算机视觉/06_Generative_Models/Diffusion_Models_Deep_Dive]] — 扩散模型
+- [[05_大模型/06_LLM_Data_Engineering/LLM_Data_Engineering_Deep_Dive]] — LLM 数据工程

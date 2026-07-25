@@ -14,20 +14,20 @@ sources: []
 
 | 文件 | 说明 |
 |------|------|
-| [[深度学习/Neural_Network_Core/Neural_Network_Core|神经网络核心]] | 核心理论与架构综述 |
-| [[深度学习/Neural_Network_Core/Neural_Network_Core_for_dummy|入门版]] | 零基础神经网络入门 |
-| [[深度学习/Neural_Network_Core/Attention_Mechanisms_Deep_Dive|注意力机制]] | Attention 原理深度解读 |
-| [[深度学习/Neural_Network_Core/Your_First_Neural_Network|第一个神经网络]] | 从零搭建神经网络 |
-| [[深度学习/Neural_Network_Core/Normalization_Techniques_Deep_Dive|归一化技术]] | BN/LN/GN/RMSNorm 深度解析 |
-| [[深度学习/Neural_Network_Core/Mixture_of_Experts_Theory|混合专家模型]] | MoE 理论、路由与工程实践 |
-| [[深度学习/Neural_Network_Core/Neural_Architecture_Search|神经架构搜索]] | NAS 方法: DARTS/ENAS/EfficientNet |
-| [[深度学习/Neural_Network_Core/Convolutional_Architectures_Evolution|卷积架构演进]] | LeNet→ResNet→ConvNeXt 30年演进 |
-| [[深度学习/Neural_Network_Core/Embedding_Representation_Learning|嵌入与表示学习]] | Word2Vec→RoPE→多模态嵌入 |
+| [[03_深度学习/02_Neural_Network_Core/Neural_Network_Core|神经网络核心]] | 核心理论与架构综述 |
+| [[03_深度学习/02_Neural_Network_Core/Neural_Network_Core_for_dummy|入门版]] | 零基础神经网络入门 |
+| [[03_深度学习/02_Neural_Network_Core/Attention_Mechanisms_Deep_Dive|注意力机制]] | Attention 原理深度解读 |
+| [[03_深度学习/02_Neural_Network_Core/Your_First_Neural_Network|第一个神经网络]] | 从零搭建神经网络 |
+| [[03_深度学习/02_Neural_Network_Core/Normalization_Techniques_Deep_Dive|归一化技术]] | BN/LN/GN/RMSNorm 深度解析 |
+| [[03_深度学习/02_Neural_Network_Core/Mixture_of_Experts_Theory|混合专家模型]] | MoE 理论、路由与工程实践 |
+| [[03_深度学习/02_Neural_Network_Core/Neural_Architecture_Search|神经架构搜索]] | NAS 方法: DARTS/ENAS/EfficientNet |
+| [[03_深度学习/02_Neural_Network_Core/Convolutional_Architectures_Evolution|卷积架构演进]] | LeNet→ResNet→ConvNeXt 30年演进 |
+| [[03_深度学习/02_Neural_Network_Core/Embedding_Representation_Learning|嵌入与表示学习]] | Word2Vec→RoPE→多模态嵌入 |
 
 ## Related
 
-- [[深度学习/DL_Frameworks/index|DL Frameworks]]
-- [[深度学习/Optimization/index|Optimization]]
+- [[03_深度学习/08_DL_Frameworks/index|DL Frameworks]]
+- [[03_深度学习/03_Optimization/index|Optimization]]
 
 ## 进阶知识拓展
 
@@ -65,9 +65,9 @@ sources: []
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

@@ -10,8 +10,8 @@ relationships:
   - target: "概念/replicate"
     type: alternative
 sources:
-  - 智能体/Agent_Skills/HuggingFace_Hub_Tools.md
-  - RAG系统/HF_Datasets_Streaming.md
+  - 15_智能体/05_Agent_Skills/HuggingFace_Hub_Tools.md
+  - 14_RAG系统/HF_Datasets_Streaming.md
   - 概念/replicate.md
 summary: "Hugging Face 是全球最大的 AI 开源生态平台，提供 Transformers / Datasets / Hub 模型市场 / Inference API 等全套工具；2026 年已成为 LLM / 多模态模型的事实开源标准。"
 lifecycle: reviewed
@@ -123,7 +123,7 @@ api.upload_folder(folder_path="./my_model", repo_id="myorg/my-model")
 - [[概念/replicate]] — Replicate（模型市场替代）
 - [[概念/vllm]] — vLLM（高性能推理）
 - [[概念/openai]] — OpenAI（闭源）
-- [[智能体/Agent_Skills/HuggingFace_Hub_Tools]] — HF Hub 工具
+- [[15_智能体/05_Agent_Skills/HuggingFace_Hub_Tools]] — HF Hub 工具
 
 ---
 

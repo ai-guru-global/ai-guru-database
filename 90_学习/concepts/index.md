@@ -32,23 +32,23 @@ aliases:
 
 | 阶段 | 主题 | 核心问题 | 预计时间 | 前置依赖 |
 |------|------|----------|----------|----------|
-| **Stage 0** | [[学习/concepts/stage0_awakening\|觉醒]] | AI 是什么？能做什么？ | 3-5 小时 | 无（起点） |
-| **Stage 1** | [[学习/concepts/stage1_foundation\|基础]] | AI 的通用词汇有哪些？ | 5-8 小时 | Stage 0 |
-| **Stage 2** | [[学习/concepts/stage2_core_tech\|核心技术]] | 为什么 AI 在 2012 年后爆发？ | 10-15 小时 | Stage 1 |
-| **Stage 3** | [[学习/concepts/stage3_engineering\|工程]] | 如何把模型变成产品？ | 8-12 小时 | Stage 2 |
-| **Stage 4** | [[学习/concepts/stage4_frontier\|前沿]] | AI 的边界在哪里？ | 5-8 小时 | Stage 3 |
-| **Stage 5** | [[学习/concepts/stage5_professional\|职业化]] | 如何在团队中发挥价值？ | 持续 | Stage 3+ |
+| **Stage 0** | [[90_学习/concepts/stage0_awakening\|觉醒]] | AI 是什么？能做什么？ | 3-5 小时 | 无（起点） |
+| **Stage 1** | [[90_学习/concepts/stage1_foundation\|基础]] | AI 的通用词汇有哪些？ | 5-8 小时 | Stage 0 |
+| **Stage 2** | [[90_学习/concepts/stage2_core_tech\|核心技术]] | 为什么 AI 在 2012 年后爆发？ | 10-15 小时 | Stage 1 |
+| **Stage 3** | [[90_学习/concepts/stage3_engineering\|工程]] | 如何把模型变成产品？ | 8-12 小时 | Stage 2 |
+| **Stage 4** | [[90_学习/concepts/stage4_frontier\|前沿]] | AI 的边界在哪里？ | 5-8 小时 | Stage 3 |
+| **Stage 5** | [[90_学习/concepts/stage5_professional\|职业化]] | 如何在团队中发挥价值？ | 持续 | Stage 3+ |
 
 ## 文件导航
 
 | 文件 | 说明 | 核心概念数 |
 |------|------|-----------|
-| [[学习/concepts/stage0_awakening\|Stage 0 · 觉醒]] | AI 认知觉醒，理解基本概念 | 8 |
-| [[学习/concepts/stage1_foundation\|Stage 1 · 基础]] | 数学与编程基础词汇 | 10 |
-| [[学习/concepts/stage2_core_tech\|Stage 2 · 核心技术]] | 神经网络到 Transformer | 10 |
-| [[学习/concepts/stage3_engineering\|Stage 3 · 工程]] | 系统工程与生产实践 | 10 |
-| [[学习/concepts/stage4_frontier\|Stage 4 · 前沿]] | 大模型与 Agent 前沿 | 8 |
-| [[学习/concepts/stage5_professional\|Stage 5 · 职业化]] | 团队协作与影响力 | 8 |
+| [[90_学习/concepts/stage0_awakening\|Stage 0 · 觉醒]] | AI 认知觉醒，理解基本概念 | 8 |
+| [[90_学习/concepts/stage1_foundation\|Stage 1 · 基础]] | 数学与编程基础词汇 | 10 |
+| [[90_学习/concepts/stage2_core_tech\|Stage 2 · 核心技术]] | 神经网络到 Transformer | 10 |
+| [[90_学习/concepts/stage3_engineering\|Stage 3 · 工程]] | 系统工程与生产实践 | 10 |
+| [[90_学习/concepts/stage4_frontier\|Stage 4 · 前沿]] | 大模型与 Agent 前沿 | 8 |
+| [[90_学习/concepts/stage5_professional\|Stage 5 · 职业化]] | 团队协作与影响力 | 8 |
 
 ## 概念依赖图
 
@@ -77,7 +77,7 @@ graph TD
 
 | 概念 | 一句话定义 | 详细 |
 |------|-----------|------|
-| AI 定义 | 让机器表现出智能行为的技术总称 | [[学习/concepts/stage0_awakening]] |
+| AI 定义 | 让机器表现出智能行为的技术总称 | [[90_学习/concepts/stage0_awakening]] |
 | AI 三大类型 | ANI / AGI / ASI 的能力分级 | 同上 |
 | AI 能力边界 | 当前 AI 擅长与不擅长的分界 | 同上 |
 | ML vs 传统编程 | 人写规则 vs 机器学规则 | 同上 |
@@ -86,7 +86,7 @@ graph TD
 
 | 概念 | 一句话定义 | 详细 |
 |------|-----------|------|
-| 数据/特征/模型 | AI 三要素 | [[学习/concepts/stage1_foundation]] |
+| 数据/特征/模型 | AI 三要素 | [[90_学习/concepts/stage1_foundation]] |
 | 训练 vs 推理 | 学习阶段 vs 应用阶段 | 同上 |
 | 损失函数/梯度下降 | 优化的指挥棒与方法 | 同上 |
 | 过拟合/欠拟合 | ML 最核心的实践问题 | 同上 |
@@ -96,7 +96,7 @@ graph TD
 
 | 概念 | 一句话定义 | 详细 |
 |------|-----------|------|
-| 神经网络/反向传播 | 深度学习的基石与训练法 | [[学习/concepts/stage2_core_tech]] |
+| 神经网络/反向传播 | 深度学习的基石与训练法 | [[90_学习/concepts/stage2_core_tech]] |
 | CNN | 图像处理的专用架构 | 同上 |
 | RNN/LSTM | 序列模型的早期方案 | 同上 |
 | Attention/Transformer | 现代 AI 的核心架构 | 同上 |
@@ -106,7 +106,7 @@ graph TD
 
 | 概念 | 一句话定义 | 详细 |
 |------|-----------|------|
-| 部署推理 | 模型上线的工程挑战 | [[学习/concepts/stage3_engineering]] |
+| 部署推理 | 模型上线的工程挑战 | [[90_学习/concepts/stage3_engineering]] |
 | RAG | 检索增强生成 | 同上 |
 | 向量数据库 | 语义检索基础设施 | 同上 |
 | Prompt Engineering | 提示词工程 | 同上 |
@@ -117,7 +117,7 @@ graph TD
 
 | 概念 | 一句话定义 | 详细 |
 |------|-----------|------|
-| 多模态 AI | 跨模态理解与生成 | [[学习/concepts/stage4_frontier]] |
+| 多模态 AI | 跨模态理解与生成 | [[90_学习/concepts/stage4_frontier]] |
 | 世界模型/JEPA | 学习物理世界规律 | 同上 |
 | VLA/具身智能 | AI 长出手脚 | 同上 |
 | AGI 路径 | 通用人工智能的探索 | 同上 |
@@ -128,7 +128,7 @@ graph TD
 
 | 概念 | 一句话定义 | 详细 |
 |------|-----------|------|
-| 技术领导力 | 从执行者到决策者 | [[学习/concepts/stage5_professional]] |
+| 技术领导力 | 从执行者到决策者 | [[90_学习/concepts/stage5_professional]] |
 | 跨职能协作 | 与产品/业务/运维协同 | 同上 |
 | 影响力建设 | 技术布道与社区贡献 | 同上 |
 | 技术战略 | 长期技术方向规划 | 同上 |
@@ -153,7 +153,7 @@ graph TD
 
 ## 与学习路径的关系
 
-本概念分阶是**知识地图**，而 [[学习/pathways/index|学习路径]] 是**路线图**。概念分阶告诉你"AI 有哪些核心概念、它们如何递进"，学习路径告诉你"作为某个角色（如 LLM 工程师），你应该按什么顺序学哪些"。
+本概念分阶是**知识地图**，而 [[90_学习/pathways/index|学习路径]] 是**路线图**。概念分阶告诉你"AI 有哪些核心概念、它们如何递进"，学习路径告诉你"作为某个角色（如 LLM 工程师），你应该按什么顺序学哪些"。
 
 ```mermaid
 graph LR
@@ -161,7 +161,7 @@ graph LR
     P --> G[学习指南<br/>方法论]
 ```
 
-详细的交叉映射见 [[学习/pathways_concepts_mapping|路径↔概念映射表]]。
+详细的交叉映射见 [[90_学习/pathways_concepts_mapping|路径↔概念映射表]]。
 
 ## 常见误解与澄清
 
@@ -225,26 +225,26 @@ graph LR
 
 ### 每阶段配套资源
 
-- **Stage 0-1**: [[学习/References/books/why-machines-learn]]（数学科普）、[[学习/References/books/hands-on-ml-geron]] 前 3 章
-- **Stage 2**: [[学习/References/books/hands-on-ml-geron]] Part 2、[[学习/References/books/hands-on-llms-alammar]]、[[学习/References/Papers/Attention_Is_All_You_Need_Reading]]
-- **Stage 3**: [[学习/References/books/ai-engineering-huyen]]、[[学习/References/books/designing-ml-systems-huyen]]
-- **Stage 4**: [[学习/References/Papers/]] 论文导读系列、[[学习/References/books/build-reasoning-model]]
-- **Stage 5**: [[学习/guides/ai_engineering_roadmap_2026]]、[[学习/References/Articles/]]
+- **Stage 0-1**: [[90_学习/References/books/why-machines-learn]]（数学科普）、[[90_学习/References/books/hands-on-ml-geron]] 前 3 章
+- **Stage 2**: [[90_学习/References/books/hands-on-ml-geron]] Part 2、[[90_学习/References/books/hands-on-llms-alammar]]、[[90_学习/References/Papers/Attention_Is_All_You_Need_Reading]]
+- **Stage 3**: [[90_学习/References/books/ai-engineering-huyen]]、[[90_学习/References/books/designing-ml-systems-huyen]]
+- **Stage 4**: [[90_学习/References/Papers/]] 论文导读系列、[[90_学习/References/books/build-reasoning-model]]
+- **Stage 5**: [[90_学习/guides/ai_engineering_roadmap_2026]]、[[90_学习/References/Articles/]]
 
 ### 在线课程
 
-- [[学习/References/Courses/anthropic-courses|Anthropic Courses]]
-- [[学习/References/Courses/llm-course-mlabonne|LLM Course (mlabonne)]]
-- [[学习/Courses/microsoft/microsoft_ai_for_beginners|Microsoft AI for Beginners]]
+- [[90_学习/References/Courses/anthropic-courses|Anthropic Courses]]
+- [[90_学习/References/Courses/llm-course-mlabonne|LLM Course (mlabonne)]]
+- [[90_学习/Courses/microsoft/microsoft_ai_for_beginners|Microsoft AI for Beginners]]
 
 ## Related
 
-- [[学习/pathways/index|学习路径]] — 角色化学习路线
-- [[学习/guides/index|学习指南]] — 方法论与工具
-- [[学习/pathways_concepts_mapping|路径↔概念映射表]] — 交叉引用
-- [[大模型/]] — 大模型知识章节
-- [[深度学习/]] — 深度学习知识章节
-- [[机器学习/]] — 机器学习知识章节
-- [[智能体/]] — Agent 知识章节
+- [[90_学习/pathways/index|学习路径]] — 角色化学习路线
+- [[90_学习/guides/index|学习指南]] — 方法论与工具
+- [[90_学习/pathways_concepts_mapping|路径↔概念映射表]] — 交叉引用
+- [[05_大模型/]] — 大模型知识章节
+- [[03_深度学习/]] — 深度学习知识章节
+- [[02_机器学习/]] — 机器学习知识章节
+- [[15_智能体/]] — Agent 知识章节
 
-> **关联**: → [[学习/pathways/index|学习路径]] | [[学习/guides/index|学习指南]] | [[学习/pathways_concepts_mapping|路径↔概念映射]] | [[大模型/]] | [[深度学习/]]
+> **关联**: → [[90_学习/pathways/index|学习路径]] | [[90_学习/guides/index|学习指南]] | [[90_学习/pathways_concepts_mapping|路径↔概念映射]] | [[05_大模型/]] | [[03_深度学习/]]

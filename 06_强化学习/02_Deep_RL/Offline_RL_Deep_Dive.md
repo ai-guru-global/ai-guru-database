@@ -1139,11 +1139,11 @@ class DecisionTransformer(nn.Module):
 
 ## Related
 
-- [[强化学习/Deep_RL/Deep_RL]] — 深度强化学习（总览）
-- [[强化学习/Deep_RL/SAC_Deep_Dive]] — SAC（off-policy对比）
-- [[强化学习/Deep_RL/PPO_Deep_Dive]] — PPO（on-policy对比）
-- [[强化学习/Deep_RL/Model_Based_RL_Deep_Dive]] — 基于模型的RL（模型辅助离线RL）
-- [[强化学习/RL_Foundations/RL_Foundations]] — RL基础（贝尔曼方程）
-- [[强化学习/RLHF_Alignment/RLHF_Alignment]] — RLHF（LLM中的RL应用）
-- [[深度学习/Transfer_Learning]] — 迁移学习（离线RL是迁移的一种）
+- [[06_强化学习/02_Deep_RL/Deep_RL]] — 深度强化学习（总览）
+- [[06_强化学习/02_Deep_RL/SAC_Deep_Dive]] — SAC（off-policy对比）
+- [[06_强化学习/02_Deep_RL/PPO_Deep_Dive]] — PPO（on-policy对比）
+- [[06_强化学习/02_Deep_RL/Model_Based_RL_Deep_Dive]] — 基于模型的RL（模型辅助离线RL）
+- [[06_强化学习/01_RL_Foundations/RL_Foundations]] — RL基础（贝尔曼方程）
+- [[06_强化学习/03_RLHF_Alignment/RLHF_Alignment]] — RLHF（LLM中的RL应用）
+- [[03_深度学习/Transfer_Learning]] — 迁移学习（离线RL是迁移的一种）
 - [[概念/Safety/ai-alignment]] — AI对齐（离线安全RL）

@@ -15,12 +15,12 @@ tags: [auto-index]
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[行业应用/AI_HR_Recruitment_2026|AI HR Recruitment 2026]] | HR AI landscape: intelligent recruiting, talent profiling and organizational analytics | HR tech practitioners / people analytics teams |
+| [[18_行业应用/AI_HR_Recruitment_2026|AI HR Recruitment 2026]] | HR AI landscape: intelligent recruiting, talent profiling and organizational analytics | HR tech practitioners / people analytics teams |
 
 ## Related
 
-- [[行业应用/Education/index|Education]]
-- [[行业应用/Finance/index|Finance]]
+- [[18_行业应用/05_Education/index|Education]]
+- [[18_行业应用/04_Finance/index|Finance]]
 
 ## 进阶知识拓展
 
@@ -58,9 +58,9 @@ tags: [auto-index]
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

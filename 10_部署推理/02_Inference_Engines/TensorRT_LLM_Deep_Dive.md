@@ -634,13 +634,13 @@ trtllm-build \
 
 ## Related
 
-- [[部署推理/Deployment_Fundamentals/Deployment_Inference.md|Deployment_Inference]]
-- [[部署推理/Deployment_Fundamentals/Deployment_Inference_2026.md|Deployment_Inference_2026]]
-- [[部署推理/Deployment_Fundamentals/Deployment_Inference_for_dummy.md|Deployment_Inference_for_dummy]]
-- [[部署推理/Deployment_Fundamentals/Inference-in-nutshell.md|Inference-in-nutshell]]
-- [[部署推理/Inference_Engines/vLLM_Deep_Dive.md|vLLM_Deep_Dive]]
-- [[部署推理/Inference_Engines/SGLang_Deep_Dive.md|SGLang_Deep_Dive]]
-- [[部署推理/Inference_Engines/TGI_Deep_Dive.md|TGI_Deep_Dive]]
-- [[部署推理/Inference_Engines/LMDeploy_Deep_Dive.md|LMDeploy_Deep_Dive]]
-- [[架构基建/Hardware_Compute/CDI_Deep_Dive.md|CDI 容器设备接口（GPU 容器接入）]]
+- [[10_部署推理/01_Deployment_Fundamentals/Deployment_Inference.md|Deployment_Inference]]
+- [[10_部署推理/01_Deployment_Fundamentals/Deployment_Inference_2026.md|Deployment_Inference_2026]]
+- [[10_部署推理/01_Deployment_Fundamentals/Deployment_Inference_for_dummy.md|Deployment_Inference_for_dummy]]
+- [[10_部署推理/01_Deployment_Fundamentals/Inference-in-nutshell.md|Inference-in-nutshell]]
+- [[10_部署推理/02_Inference_Engines/vLLM_Deep_Dive.md|vLLM_Deep_Dive]]
+- [[10_部署推理/02_Inference_Engines/SGLang_Deep_Dive.md|SGLang_Deep_Dive]]
+- [[10_部署推理/02_Inference_Engines/TGI_Deep_Dive.md|TGI_Deep_Dive]]
+- [[10_部署推理/02_Inference_Engines/LMDeploy_Deep_Dive.md|LMDeploy_Deep_Dive]]
+- [[12_架构基建/07_Hardware_Compute/CDI_Deep_Dive.md|CDI 容器设备接口（GPU 容器接入）]]
 - [[治理/chinese-chips-inference|国产 AI 芯片 × 推理引擎: 硬件约束下的推理软件栈适配]]

@@ -116,13 +116,13 @@ graph.add_node("grade", grade_docs)
 
 Agentic RAG 涉及多次 LLM 调用，低延迟和高吞吐至关重要：
 
-- **多轮推理 + 前缀缓存**: [[部署推理/Inference_Engines/SGLang_Deep_Dive|SGLang]]
-- **通用生产环境**: [[部署推理/Inference_Engines/vLLM_Deep_Dive|vLLM]]
-- **极低延迟云 API**: [[部署推理/Inference_Engines/Groq_Deep_Dive|Groq]]
-- **推理引擎统一选型**: [[部署推理/Inference_Engines/LLM_Inference_Engine_Selection_Guide|LLM 推理引擎选型指南]]
-- **迁移与基准测试**: [[部署推理/Inference_Engines/LLM_Inference_Engine_Migration_Guide|迁移指南]] / [[部署推理/Inference_Engines/LLM_Inference_Benchmarking_Guide|基准测试指南]]
+- **多轮推理 + 前缀缓存**: [[10_部署推理/02_Inference_Engines/SGLang_Deep_Dive|SGLang]]
+- **通用生产环境**: [[10_部署推理/02_Inference_Engines/vLLM_Deep_Dive|vLLM]]
+- **极低延迟云 API**: [[10_部署推理/02_Inference_Engines/Groq_Deep_Dive|Groq]]
+- **推理引擎统一选型**: [[10_部署推理/02_Inference_Engines/LLM_Inference_Engine_Selection_Guide|LLM 推理引擎选型指南]]
+- **迁移与基准测试**: [[10_部署推理/02_Inference_Engines/LLM_Inference_Engine_Migration_Guide|迁移指南]] / [[10_部署推理/02_Inference_Engines/LLM_Inference_Benchmarking_Guide|基准测试指南]]
 
-> **关联**: -> [[RAG系统/README|RAG 系统]] | [[智能体/README|Agent 生产]] | [[治理/rag-agents|RAG x Agent 合成]]
+> **关联**: -> [[14_RAG系统/README|RAG 系统]] | [[15_智能体/README|Agent 生产]] | [[治理/rag-agents|RAG x Agent 合成]]
 
 
 ## 进阶知识拓展
@@ -161,9 +161,9 @@ Agentic RAG 涉及多次 LLM 调用，低延迟和高吞吐至关重要：
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

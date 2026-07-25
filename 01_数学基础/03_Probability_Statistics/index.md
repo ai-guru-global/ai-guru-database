@@ -15,15 +15,15 @@ tags: [auto-index]
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[数学基础/Probability_Statistics/Probability_Statistics|Probability Statistics]] | Probability and statistics knowledge system: distributions, inference and information theory | ML engineers / data scientists / students |
-| [[数学基础/Probability_Statistics/Probability_Statistics_for_dummy|Probability Statistics for dummy]] | Probability and statistics beginner guide: core concepts for ML | beginners / ML learners |
-| [[数学基础/Probability_Statistics/Skill_Statistics_Cheatsheet|Skill Statistics Cheatsheet]] | Probability and statistics quick reference cheatsheet | all practitioners / exam preparation |
+| [[01_数学基础/03_Probability_Statistics/Probability_Statistics|Probability Statistics]] | Probability and statistics knowledge system: distributions, inference and information theory | ML engineers / data scientists / students |
+| [[01_数学基础/03_Probability_Statistics/Probability_Statistics_for_dummy|Probability Statistics for dummy]] | Probability and statistics beginner guide: core concepts for ML | beginners / ML learners |
+| [[01_数学基础/03_Probability_Statistics/Skill_Statistics_Cheatsheet|Skill Statistics Cheatsheet]] | Probability and statistics quick reference cheatsheet | all practitioners / exam preparation |
 
 ## Related
 
-- [[数学基础/index|数学基础首页]]
-- [[机器学习/Bayesian_Methods/index|Bayesian Methods]]
-- [[测试/AB_Testing_index|AB Testing]]
+- [[01_数学基础/index|数学基础首页]]
+- [[02_机器学习/06_Bayesian_Methods/index|Bayesian Methods]]
+- [[09_测试/AB_Testing_index|AB Testing]]
 
 ## 进阶知识拓展
 
@@ -61,9 +61,9 @@ tags: [auto-index]
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

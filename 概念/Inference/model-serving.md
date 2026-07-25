@@ -15,12 +15,12 @@ relationships:
     type: uses
 sources:
   - 09_model-deployment_Inference/Deployment_Inference_2026.md
-  - 部署推理/Inference_Engines/vLLM_Deep_Dive.md
-  - 部署推理/Inference_Engines/SGLang_Deep_Dive.md
-  - 部署推理/Inference_Engines/TensorRT_LLM_Deep_Dive.md
-  - 部署推理/Inference_Engines/BentoML_Deep_Dive.md
-  - 部署推理/Inference_Engines/Ollama_Deep_Dive.md
-  - 部署推理/llm-architectures_cpp_Deep_Dive.md
+  - 10_部署推理/02_Inference_Engines/vLLM_Deep_Dive.md
+  - 10_部署推理/02_Inference_Engines/SGLang_Deep_Dive.md
+  - 10_部署推理/02_Inference_Engines/TensorRT_LLM_Deep_Dive.md
+  - 10_部署推理/02_Inference_Engines/BentoML_Deep_Dive.md
+  - 10_部署推理/02_Inference_Engines/Ollama_Deep_Dive.md
+  - 10_部署推理/llm-architectures_cpp_Deep_Dive.md
 summary: 模型服务框架是连接AI模型与业务应用的桥梁。2026年GPU推理三强鼎立：vLLM以PagedAttention实现高吞吐、TensorRT-LLM提供NVIDIA极致低延迟优化、SGLang擅长结构化生成。CPU/本地场景有Ollama（易用）和llama.cpp（极致量化）。BentoML提供统一的模型打包部署框架。
 provenance:
   extracted: 0.85
@@ -142,8 +142,8 @@ Client → API Gateway / Load Balancer
 - [[概念/Inference/inference-autoscaling|推理扩缩容]]
 - [[概念/Inference/prefix-caching|前缀缓存]]
 - [[概念/Inference/gguf|GGUF]]
-- [[部署推理/Inference_Engines/vLLM_Deep_Dive|vLLM 深度解析]]
-- [[架构基建/Alibaba_Cloud_AI_Stack_Deep_Dive|阿里云 AI Stack]]
+- [[10_部署推理/02_Inference_Engines/vLLM_Deep_Dive|vLLM 深度解析]]
+- [[12_架构基建/Alibaba_Cloud_AI_Stack_Deep_Dive|阿里云 AI Stack]]
 
 ## 模型服务引擎对比 (2026)
 

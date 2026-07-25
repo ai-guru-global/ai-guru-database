@@ -215,9 +215,9 @@ HireVue:
 
 ## 相关阅读
 
-- [[行业应用/AI_Applications_Industry]] — AI 行业应用
-- [[伦理安全/AI_Ethics_Safety_Future]] — AI 伦理安全
-- [[伦理安全/AI_Governance_Compliance_2026]] — AI 治理合规
-- [[机器学习/Recommendation_Systems/Recommendation_Systems]] — 推荐系统
-- [[大模型/NLP_Fundamentals]] — NLP 基础
-- [[行业应用/AI_Legal_Government_2026]] — AI 法律政务
+- [[18_行业应用/AI_Applications_Industry]] — AI 行业应用
+- [[17_伦理安全/AI_Ethics_Safety_Future]] — AI 伦理安全
+- [[17_伦理安全/AI_Governance_Compliance_2026]] — AI 治理合规
+- [[02_机器学习/10_Recommendation_Systems/Recommendation_Systems]] — 推荐系统
+- [[05_大模型/NLP_Fundamentals]] — NLP 基础
+- [[18_行业应用/AI_Legal_Government_2026]] — AI 法律政务

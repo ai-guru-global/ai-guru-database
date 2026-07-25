@@ -111,7 +111,7 @@ results = m.search("编程语言偏好", user_id="alice")
 4. **记忆清理**: 定期清理过时和低价值记忆
 5. **个性化**: 基于记忆提供个性化响应
 
-> **关联**: -> [[智能体/README|Agent 生产]] | [[智能体/Memory_Infrastructure/README|记忆基础设施]] | [[RAG系统/README|RAG 系统]]
+> **关联**: -> [[15_智能体/README|Agent 生产]] | [[15_智能体/06_Memory_Infrastructure/README|记忆基础设施]] | [[14_RAG系统/README|RAG 系统]]
 
 
 ## 附录：核心概念速查

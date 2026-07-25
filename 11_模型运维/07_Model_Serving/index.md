@@ -15,15 +15,15 @@ tags: [auto-index]
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[模型运维/Model_Serving/Model_Serving_Patterns|Model Serving Patterns]] | Model serving patterns: batch, real-time, streaming and edge serving | ML platform engineers / MLOps |
-| [[模型运维/Model_Serving/Automated_Retraining|Automated Retraining]] | Automated retraining: data drift detection and trigger-based retraining pipeline | MLOps engineers / data scientists |
-| [[模型运维/Model_Serving/Deployment_Runbook_Template|Deployment Runbook Template]] | Deployment runbook template: release process, rollback strategy and on-call schedule | ops engineers / SRE |
+| [[11_模型运维/07_Model_Serving/Model_Serving_Patterns|Model Serving Patterns]] | Model serving patterns: batch, real-time, streaming and edge serving | ML platform engineers / MLOps |
+| [[11_模型运维/07_Model_Serving/Automated_Retraining|Automated Retraining]] | Automated retraining: data drift detection and trigger-based retraining pipeline | MLOps engineers / data scientists |
+| [[11_模型运维/07_Model_Serving/Deployment_Runbook_Template|Deployment Runbook Template]] | Deployment runbook template: release process, rollback strategy and on-call schedule | ops engineers / SRE |
 
 ## Related
 
-- [[模型运维/CI_CD/index|CI/CD]]
-- [[部署推理/index|部署推理]]
-- [[模型运维/Cost/index|Cost]]
+- [[11_模型运维/06_CI_CD/index|CI/CD]]
+- [[10_部署推理/index|部署推理]]
+- [[11_模型运维/09_Cost/index|Cost]]
 
 ## MLOps核心流程对比
 
@@ -158,12 +158,12 @@ tags: [auto-index]
 
 | 关联主题 | 关系 | 参考路径 |
 |----------|------|----------|
-| 模型训练 | 上游输入 | 模型训练/ |
-| 模型评估 | 质量门禁 | 模型评估/ |
-| 部署推理 | 服务化交付 | 部署推理/ |
-| 架构基建 | 底层支撑 | 架构基建/ |
-| 测试 | 质量保障 | 测试/ |
-| 运维 | 通用运维实践 | 运维/ |
+| 模型训练 | 上游输入 | 07_模型训练/ |
+| 模型评估 | 质量门禁 | 08_模型评估/ |
+| 部署推理 | 服务化交付 | 10_部署推理/ |
+| 架构基建 | 底层支撑 | 12_架构基建/ |
+| 测试 | 质量保障 | 09_测试/ |
+| 运维 | 通用运维实践 | 13_运维/ |
 
 ## 快速自检清单
 

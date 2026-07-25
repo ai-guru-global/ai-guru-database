@@ -17,7 +17,7 @@ sources: []
 
 > **一句话理解**: 在 AI 知识爆炸的时代，知道学什么、怎么学、去哪里学，比单纯积累知识更重要——这套方法论将帮助你建立高效的 AI 学习体系。
 
-> **外部精选路线图**: → [[学习/guides/ai_engineering_roadmap_2026|AI 工程学习路线图 2026]]（ashishps1/learn-ai-engineering ⭐5.7k，免费课程+论文+书籍+工具精选）
+> **外部精选路线图**: → [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程学习路线图 2026]]（ashishps1/learn-ai-engineering ⭐5.7k，免费课程+论文+书籍+工具精选）
 
 ---
 
@@ -975,7 +975,7 @@ AI领域职业路径:
 
 ## Related
 
-- [[学习/guides/milestones]] — 里程碑自测 (共享: education, learning)
-- [[学习/pathways/absolute-beginner]] — 零基础通识路径 (共享: education, learning)
-- [[学习/pathways/ai-researcher]] — AI 研究者路径 (共享: education, learning)
-- [[学习/pathways/java-developer]] — Java 开发者 AI 路径 (共享: education, learning)
+- [[90_学习/guides/milestones]] — 里程碑自测 (共享: education, learning)
+- [[90_学习/pathways/absolute-beginner]] — 零基础通识路径 (共享: education, learning)
+- [[90_学习/pathways/ai-researcher]] — AI 研究者路径 (共享: education, learning)
+- [[90_学习/pathways/java-developer]] — Java 开发者 AI 路径 (共享: education, learning)

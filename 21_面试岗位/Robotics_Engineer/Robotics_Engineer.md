@@ -718,12 +718,12 @@ def main():
 
 ## Related
 
-- [[面试岗位/README|AI 面试准备 (Interviews)]]
-- [[面试岗位/jobs|AI 相关岗位与工种清单]]
-- [[面试岗位/Computer_Vision_Engineer/question_bank|Computer Vision Engineer 题库]]
-- [[面试岗位/Machine_Learning_Engineer/question_bank|Machine Learning Engineer 题库]]
-- [[面试岗位/AI_Infrastructure_Engineer/question_bank|AI Infrastructure Engineer 题库]]
-- [[面试岗位/AI_Research_Engineer/AI_Research_Engineer|AI Research Engineer 面试指南]]
+- [[21_面试岗位/README|AI 面试准备 (Interviews)]]
+- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/Computer_Vision_Engineer/question_bank|Computer Vision Engineer 题库]]
+- [[21_面试岗位/Machine_Learning_Engineer/question_bank|Machine Learning Engineer 题库]]
+- [[21_面试岗位/AI_Infrastructure_Engineer/question_bank|AI Infrastructure Engineer 题库]]
+- [[21_面试岗位/AI_Research_Engineer/AI_Research_Engineer|AI Research Engineer 面试指南]]
 
 ---
 

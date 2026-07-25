@@ -267,8 +267,8 @@ image = pipe(
 
 ## 相关阅读
 
-- [[计算机视觉/Generative_Models/Generative_Models]] — 生成模型全景
-- [[计算机视觉/Generative_Models/Generative_Models_for_dummy]] — 生成模型入门版
-- [[计算机视觉/Video_Generation/Video_Generation_2026]] — AI 视频生成 2026
-- [[计算机视觉/HF_Diffusers_Practical_Guide]] — HuggingFace Diffusers 实战
-- [[深度学习/World_Models/JEPA_Architecture_2026]] — 世界模型（另一条 AGI 路径）
+- [[04_计算机视觉/06_Generative_Models/Generative_Models]] — 生成模型全景
+- [[04_计算机视觉/06_Generative_Models/Generative_Models_for_dummy]] — 生成模型入门版
+- [[04_计算机视觉/07_Video_Generation/Video_Generation_2026]] — AI 视频生成 2026
+- [[04_计算机视觉/HF_Diffusers_Practical_Guide]] — HuggingFace Diffusers 实战
+- [[03_深度学习/07_World_Models/JEPA_Architecture_2026]] — 世界模型（另一条 AGI 路径）

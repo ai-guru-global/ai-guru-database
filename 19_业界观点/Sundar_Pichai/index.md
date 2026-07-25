@@ -39,8 +39,8 @@ Sundar Pichai 是 Google AI 全栈布局的掌舵者。他于 2016 年提出"AI 
 
 | 文件 | 内容 | 适用人群 |
 |------|------|----------|
-| [[业界观点/Sundar_Pichai/about\|about]] | 完整人物简介：Google AI 转型、Gemini | 所有读者 |
-| [[业界观点/Sundar_Pichai/sayings\|sayings]] | 重要语录合集 | 研究者 |
+| [[19_业界观点/Sundar_Pichai/about\|about]] | 完整人物简介：Google AI 转型、Gemini | 所有读者 |
+| [[19_业界观点/Sundar_Pichai/sayings\|sayings]] | 重要语录合集 | 研究者 |
 
 ---
 
@@ -81,7 +81,7 @@ Sundar Pichai 是 Google AI 全栈布局的掌舵者。他于 2016 年提出"AI 
 | 负责任 | Responsible AI 框架 | Google 实践 |
 | 全球 | 全球部署与本地化 | 务实低调 |
 
-完整语录见 [[业界观点/Sundar_Pichai/sayings|Pichai 语录]]。
+完整语录见 [[19_业界观点/Sundar_Pichai/sayings|Pichai 语录]]。
 
 ---
 
@@ -89,11 +89,11 @@ Sundar Pichai 是 Google AI 全栈布局的掌舵者。他于 2016 年提出"AI 
 
 | 派别 | 归属 |
 |------|------|
-| 闭源负责任部署派 | 成员（与 [[业界观点/Demis_Hassabis/about|Hassabis]]）|
+| 闭源负责任部署派 | 成员（与 [[19_业界观点/Demis_Hassabis/about|Hassabis]]）|
 | 产品落地派 | 代表 |
 | 务实低调派 | 代表 |
 
-Pichai 的独特之处是**统管全球最大 AI 公司之一却保持低调**。参见 [[业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026|开源 vs 闭源]]。
+Pichai 的独特之处是**统管全球最大 AI 公司之一却保持低调**。参见 [[19_业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026|开源 vs 闭源]]。
 
 ---
 
@@ -101,9 +101,9 @@ Pichai 的独特之处是**统管全球最大 AI 公司之一却保持低调**�
 
 | 关系 | 人物 |
 |------|------|
-| DeepMind CEO | [[业界观点/Demis_Hassabis/about|Demis Hassabis]] |
-| 闭源同盟 | [[业界观点/Sam_Altman/about|Altman]]、[[业界观点/Dario_Amodei/about|Amodei]] |
-| 竞争对手 | [[业界观点/Satya_Nadella/about|Satya Nadella]]（微软）|
+| DeepMind CEO | [[19_业界观点/Demis_Hassabis/about|Demis Hassabis]] |
+| 闭源同盟 | [[19_业界观点/Sam_Altman/about|Altman]]、[[19_业界观点/Dario_Amodei/about|Amodei]] |
+| 竞争对手 | [[19_业界观点/Satya_Nadella/about|Satya Nadella]]（微软）|
 
 ---
 
@@ -111,9 +111,9 @@ Pichai 的独特之处是**统管全球最大 AI 公司之一却保持低调**�
 
 | 阶段 | 推荐内容 | 目标 |
 |------|----------|------|
-| 入门 | [[业界观点/Sundar_Pichai/about\|about]] | 了解 Google AI 转型 |
-| 进阶 | [[业界观点/Sundar_Pichai/sayings\|sayings]] | 掌握务实立场 |
-| 对比 | [[业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026\|开源 vs 闭源]] | 立场定位 |
+| 入门 | [[19_业界观点/Sundar_Pichai/about\|about]] | 了解 Google AI 转型 |
+| 进阶 | [[19_业界观点/Sundar_Pichai/sayings\|sayings]] | 掌握务实立场 |
+| 对比 | [[19_业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026\|开源 vs 闭源]] | 立场定位 |
 
 ---
 
@@ -152,10 +152,10 @@ Pichai 的独特之处是**统管全球最大 AI 公司之一却保持低调**�
 
 ## 关联导航
 
-- [[业界观点/Sundar_Pichai/about\|人物简介]] · [[业界观点/Sundar_Pichai/sayings\|核心语录]]
-- [[业界观点/Demis_Hassabis/about\|Demis Hassabis]] · [[业界观点/Satya_Nadella/about\|Satya Nadella]]
-- [[业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026\|开源 vs 闭源]]
-- [[业界观点/index\|业界观点首页]]
+- [[19_业界观点/Sundar_Pichai/about\|人物简介]] · [[19_业界观点/Sundar_Pichai/sayings\|核心语录]]
+- [[19_业界观点/Demis_Hassabis/about\|Demis Hassabis]] · [[19_业界观点/Satya_Nadella/about\|Satya Nadella]]
+- [[19_业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026\|开源 vs 闭源]]
+- [[19_业界观点/index\|业界观点首页]]
 
 ---
 

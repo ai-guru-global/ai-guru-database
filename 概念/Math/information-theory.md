@@ -10,7 +10,7 @@ relationships:
   - target: "概念/model-evaluation"
     type: related_to
 sources:
-  - 数学基础/Information_Theory
+  - 01_数学基础/Information_Theory
 summary: "信息论量化信息的基本理论——熵、交叉熵、KL散度、互信息，是几乎所有ML损失函数和模型评估指标的数学基础。"
 provenance:
   extracted: 0.50
@@ -153,7 +153,7 @@ BPE 不是最优的（贪心算法），但在实践中是计算效率与压缩�
 
 ## Related
 
-- [[数学基础/Information_Theory/README]] — 信息论基础
+- [[01_数学基础/04_Information_Theory/README]] — 信息论基础
 - [[概念/probability-statistics]] — 概率统计基础
 - [[概念/llm-architectures]] — LLM 架构（交叉熵与困惑度）
 - [[概念/model-evaluation]] — 模型评估（PPL、信息准则）

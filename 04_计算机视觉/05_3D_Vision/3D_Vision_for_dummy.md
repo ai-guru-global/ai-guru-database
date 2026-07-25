@@ -188,15 +188,15 @@ CT 和 MRI:
 
 - 想深入技术？→ [3D_Vision.md](./3D_Vision.md)
 - 想学 2D 视觉？→ [图像分类与检测](../Image_Classification_Detection/Image_Classification_Detection_for_dummy.md)
-- 想学深度学习？→ [神经网络核心 - 小白版](深度学习/Neural_Network_Core/Neural_Network_Core_for_dummy.md)
+- 想学深度学习？→ [神经网络核心 - 小白版](03_深度学习/02_Neural_Network_Core/Neural_Network_Core_for_dummy.md)
 
 ## Related
 
-- [[../../大模型/Multimodal_Models/Multimodal_Architectures_2026|多模态架构]] — 3D 场景理解与多模态融合
+- [[../../05_大模型/10_Multimodal_Models/Multimodal_Architectures_2026|多模态架构]] — 3D 场景理解与多模态融合
 - [[../../概念/Vision/nerf|NeRF 概念卡]] — 神经辐射场的概念定义
-- [[../../深度学习/Generative_Models/Diffusion_Models_Deep_Dive|Diffusion 深度页]] — 生成式 3D 内容的底层技术
-- [[../../部署推理/Inference_Optimization/kv-cache-inference-optimization|推理优化]] — 3D 视觉模型部署优化
-- [[../../RAG系统/RAG_Fundamentals|RAG 基础]] — 3D 场景的知识增强检索
+- [[../../03_深度学习/04_Generative_Models/Diffusion_Models_Deep_Dive|Diffusion 深度页]] — 生成式 3D 内容的底层技术
+- [[../../10_部署推理/03_Inference_Optimization/kv-cache-inference-optimization|推理优化]] — 3D 视觉模型部署优化
+- [[../../14_RAG系统/RAG_Fundamentals|RAG 基础]] — 3D 场景的知识增强检索
 
 ---
 

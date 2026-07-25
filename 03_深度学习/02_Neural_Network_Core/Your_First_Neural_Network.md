@@ -436,8 +436,8 @@ class CNN(nn.Module):
 
 ## Related
 
-- [[数学基础/Python_for_AI_Basics]] — Python 语法基础
-- [[数学基础/Python_Data_Science_Toolkit]] — NumPy / Pandas
-- [[数学基础/AI_Development_Environment_Setup]] — GPU 环境配置
-- [[机器学习/Supervised_Learning/Your_First_ML_Model]] — 第一个传统 ML 模型
-- [[深度学习/Neural_Network_Core/Neural_Network_Core_for_dummy]] — 神经网络原理小白版
+- [[01_数学基础/Python_for_AI_Basics]] — Python 语法基础
+- [[01_数学基础/Python_Data_Science_Toolkit]] — NumPy / Pandas
+- [[01_数学基础/AI_Development_Environment_Setup]] — GPU 环境配置
+- [[02_机器学习/02_Supervised_Learning/Your_First_ML_Model]] — 第一个传统 ML 模型
+- [[03_深度学习/02_Neural_Network_Core/Neural_Network_Core_for_dummy]] — 神经网络原理小白版

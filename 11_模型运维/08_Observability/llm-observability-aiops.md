@@ -93,10 +93,10 @@ LLM 可观测性和 AIOps 的融合正在产生**三层统一观测架构**：
 
 ## Related
 
-- [[模型运维/Observability/LLM_Observability]]
-- [[运维/AIOps_Fundamentals/AIOps-in-nutshell.md]]
-- [[运维/AI_Ops_2026]]
-- [[模型运维/Observability/AI_Observability_Guide_2026]]
+- [[11_模型运维/08_Observability/LLM_Observability]]
+- [[13_运维/01_AIOps_Fundamentals/AIOps-in-nutshell.md]]
+- [[13_运维/AI_Ops_2026]]
+- [[11_模型运维/08_Observability/AI_Observability_Guide_2026]]
 - [[治理/mlops-monitoring-convergence]]
 
 ## MLOps核心流程对比
@@ -232,12 +232,12 @@ LLM 可观测性和 AIOps 的融合正在产生**三层统一观测架构**：
 
 | 关联主题 | 关系 | 参考路径 |
 |----------|------|----------|
-| 模型训练 | 上游输入 | 模型训练/ |
-| 模型评估 | 质量门禁 | 模型评估/ |
-| 部署推理 | 服务化交付 | 部署推理/ |
-| 架构基建 | 底层支撑 | 架构基建/ |
-| 测试 | 质量保障 | 测试/ |
-| 运维 | 通用运维实践 | 运维/ |
+| 模型训练 | 上游输入 | 07_模型训练/ |
+| 模型评估 | 质量门禁 | 08_模型评估/ |
+| 部署推理 | 服务化交付 | 10_部署推理/ |
+| 架构基建 | 底层支撑 | 12_架构基建/ |
+| 测试 | 质量保障 | 09_测试/ |
+| 运维 | 通用运维实践 | 13_运维/ |
 
 ## 快速自检清单
 

@@ -332,7 +332,7 @@ resources:
 | **关系** | HAMi 可利用 CDI 将设备规范注入容器 | CDI 可被 HAMi 消费 |
 | **解决的问题** | 异构设备共享与隔离 | 设备如何被容器运行时识别和挂载 |
 
-> 参考本库 [[架构基建/Hardware_Compute/CDI_Deep_Dive]]。
+> 参考本库 [[12_架构基建/07_Hardware_Compute/CDI_Deep_Dive]]。
 
 ### 8.2 HAMi vs DRA
 
@@ -345,7 +345,7 @@ resources:
 
 HAMi 新版同时支持两种模式，用户可按集群版本和团队能力选择。
 
-> 参考本库 [[架构基建/Hardware_Compute/DRA_Deep_Dive]]。
+> 参考本库 [[12_架构基建/07_Hardware_Compute/DRA_Deep_Dive]]。
 
 ### 8.3 HAMi vs NVIDIA GPU Operator
 
@@ -458,6 +458,6 @@ vLLM 看到的显存即为配额，可同时运行多个 vLLM 实例共卡。
 - [[概念/heterogeneous-gpu]] — 异构 GPU 集群
 - [[概念/cdi]] — CDI 容器设备接口
 - [[概念/dra]] — DRA 动态资源分配
-- [[架构基建/AI_Stack/HAMi_Operation_Guide]] — HAMi 运维指南
-- [[架构基建/AI_Stack/HAMi_for_dummy]] — HAMi 入门
-- [[运维/SRE_Reliability/HAMi_Troubleshooting_Guide]] — HAMi 问题排查
+- [[12_架构基建/03_AI_Stack/HAMi_Operation_Guide]] — HAMi 运维指南
+- [[12_架构基建/03_AI_Stack/HAMi_for_dummy]] — HAMi 入门
+- [[13_运维/02_SRE_Reliability/HAMi_Troubleshooting_Guide]] — HAMi 问题排查

@@ -170,9 +170,9 @@ response = client.chat.completions.create(
 |------|------|
 | 完整架构 | [AI_Gateway_2026.md](./AI_Gateway_2026.md) |
 | 入门指南 | [AI_Gateway_for_dummy.md](./AI_Gateway_for_dummy.md) |
-| SRE 实践 | [../AI_Ops/SRE_for_AI_Systems.md](运维/SRE_Reliability/SRE_for_AI_Systems.md) |
-| 可观测性 | [../AI_Ops/AI_Observability_Guide.md](../../模型运维/Observability/AI_Observability_Guide.md) |
-| 成本优化 | [../AI_Cost_Optimization_2026.md](架构基建/Architecture_Overview/AI_Cost_Optimization_2026.md) |
+| SRE 实践 | [../AI_Ops/SRE_for_AI_Systems.md](13_运维/02_SRE_Reliability/SRE_for_AI_Systems.md) |
+| 可观测性 | [../AI_Ops/AI_Observability_Guide.md](../../11_模型运维/08_Observability/AI_Observability_Guide.md) |
+| 成本优化 | [../AI_Cost_Optimization_2026.md](12_架构基建/02_Architecture_Overview/AI_Cost_Optimization_2026.md) |
 
 ---
 
@@ -180,16 +180,16 @@ response = client.chat.completions.create(
 
 ## Related
 
-- [[架构基建/AI_Gateway/AI_Gateway_for_dummy]] — AI Gateway 入门指南 (for Dummies) (共享: ai-gateway, api-management, litellm, routing)
-- [[架构基建/AI_Gateway/Kong_AI_Gateway_Deep_Dive]] — Kong AI Gateway 深度解析 (共享: ai-gateway, api-management, litellm, routing)
-- [[架构基建/AI_Gateway/README]] — AI Gateway (共享: ai-gateway, api-management, litellm, routing)
-- [[架构基建/AI_Gateway/Spring_AI_Gateway_Security]] — Spring AI 网关与安全 (共享: ai-gateway, api-management, litellm, routing)
+- [[12_架构基建/11_AI_Gateway/AI_Gateway_for_dummy]] — AI Gateway 入门指南 (for Dummies) (共享: ai-gateway, api-management, litellm, routing)
+- [[12_架构基建/11_AI_Gateway/Kong_AI_Gateway_Deep_Dive]] — Kong AI Gateway 深度解析 (共享: ai-gateway, api-management, litellm, routing)
+- [[12_架构基建/11_AI_Gateway/README]] — AI Gateway (共享: ai-gateway, api-management, litellm, routing)
+- [[12_架构基建/11_AI_Gateway/Spring_AI_Gateway_Security]] — Spring AI 网关与安全 (共享: ai-gateway, api-management, litellm, routing)
 
 ## 架构核心组件对比
 
 | 组件层 | 功能 | 关键技术 | 选型考量 |
 |--------|------|----------|----------|
-| 计算层 | 模型训练/推理 | GPU/TPU/NPU集群 | 算力需求+成本 |
+| 计算层 | 07_模型训练/推理 | GPU/TPU/NPU集群 | 算力需求+成本 |
 | 存储层 | 数据/模型/检查点 | 分布式存储/对象存储 | 容量+IOPS+成本 |
 | 网络层 | 节点间通信 | RDMA/RoCE/InfiniBand | 带宽+延迟 |
 | 调度层 | 资源编排 | K8s/Slurm/Ray | 弹性+效率 |

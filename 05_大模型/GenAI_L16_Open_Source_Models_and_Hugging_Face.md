@@ -353,26 +353,26 @@ MoE架构通过路由器将输入分配给最合适的专家模型，只有被�
 
 ## 扩展阅读
 
-- [[学习/courses/microsoft/microsoft_genai_for_beginners]] - 课程总览
-- [[大模型/LLM_Architectures/LLM_Architectures]] - LLM架构详解
-- [[大模型/Fine_tuning_Techniques]] - 微调技术
-- [[大模型/Global_LLM_Ecosystem/README]] - 全球LLM生态
-- [[智能体/GenAI_L17_AI_Agents]] - AI代理
+- [[90_学习/courses/microsoft/microsoft_genai_for_beginners]] - 课程总览
+- [[05_大模型/05_LLM_Architectures/LLM_Architectures]] - LLM架构详解
+- [[05_大模型/Fine_tuning_Techniques]] - 微调技术
+- [[05_大模型/14_Global_LLM_Ecosystem/README]] - 全球LLM生态
+- [[15_智能体/GenAI_L17_AI_Agents]] - AI代理
 
 ### 中国开源大模型生态
 
 中国开源大模型在 Hugging Face 生态中占据重要位置，以下是值得关注的代表：
 
-- [[大模型/Chinese_LLM_Ecosystem/README]] — 中国大模型生态全景（15家厂商）
-- [[大模型/Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive]] — DeepSeek（MLA+MoE，HuggingFace 下载量 1000 万+）
-- [[大模型/Chinese_LLM_Ecosystem/Qwen_Deep_Dive]] — 通义千问 Qwen（全尺寸开源，0.5B~72B）
-- [[大模型/Chinese_LLM_Ecosystem/GLM_Zhipu_Deep_Dive]] — 智谱 GLM（ChatGLM 系列开源先驱）
-- [[大模型/Chinese_LLM_Ecosystem/InternLM_Deep_Dive]] — 书生浦语 InternLM（上海 AI Lab 开源）
-- [[大模型/Chinese_LLM_Ecosystem/Yi_01AI_Deep_Dive]] — 零一万物 Yi（34B 模型曾在 HuggingFace 排行榜登顶）
-- [[大模型/Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]] — 全厂商开源模型对比
+- [[05_大模型/15_Chinese_LLM_Ecosystem/README]] — 中国大模型生态全景（15家厂商）
+- [[05_大模型/15_Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive]] — DeepSeek（MLA+MoE，HuggingFace 下载量 1000 万+）
+- [[05_大模型/15_Chinese_LLM_Ecosystem/Qwen_Deep_Dive]] — 通义千问 Qwen（全尺寸开源，0.5B~72B）
+- [[05_大模型/15_Chinese_LLM_Ecosystem/GLM_Zhipu_Deep_Dive]] — 智谱 GLM（ChatGLM 系列开源先驱）
+- [[05_大模型/15_Chinese_LLM_Ecosystem/InternLM_Deep_Dive]] — 书生浦语 InternLM（上海 AI Lab 开源）
+- [[05_大模型/15_Chinese_LLM_Ecosystem/Yi_01AI_Deep_Dive]] — 零一万物 Yi（34B 模型曾在 HuggingFace 排行榜登顶）
+- [[05_大模型/15_Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]] — 全厂商开源模型对比
 
 ## 课程导航
 
 | 上一课 | 下一课 |
 |--------|--------|
-| [[RAG系统/GenAI_L15_RAG_and_Vector_Databases|L15 RAG与向量数据库]] | [[智能体/GenAI_L17_AI_Agents|L17 AI代理]] |
+| [[14_RAG系统/GenAI_L15_RAG_and_Vector_Databases|L15 RAG与向量数据库]] | [[15_智能体/GenAI_L17_AI_Agents|L17 AI代理]] |

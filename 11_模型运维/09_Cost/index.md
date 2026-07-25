@@ -15,14 +15,14 @@ tags: [auto-index]
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[模型运维/Cost/Cost_Optimization_MLOps|Cost Optimization MLOps]] | MLOps cost optimization: spot instances, elastic scaling and model distillation | MLOps engineers / FinOps practitioners |
-| [[模型运维/Cost/LLM_Cost_Latency_SLO|LLM Cost Latency SLO]] | LLM cost-latency-SLO tradeoff: P99 latency control and token cost analysis | LLM platform engineers / SRE |
+| [[11_模型运维/09_Cost/Cost_Optimization_MLOps|Cost Optimization MLOps]] | MLOps cost optimization: spot instances, elastic scaling and model distillation | MLOps engineers / FinOps practitioners |
+| [[11_模型运维/09_Cost/LLM_Cost_Latency_SLO|LLM Cost Latency SLO]] | LLM cost-latency-SLO tradeoff: P99 latency control and token cost analysis | LLM platform engineers / SRE |
 
 ## Related
 
-- [[模型运维/Model_Serving/index|Model Serving]]
-- [[运维/Cost_Management/index|Cost Management]]
-- [[部署推理/Cost_index|部署推理 Cost]]
+- [[11_模型运维/07_Model_Serving/index|Model Serving]]
+- [[13_运维/05_Cost_Management/index|Cost Management]]
+- [[10_部署推理/Cost_index|部署推理 Cost]]
 
 ## MLOps核心流程对比
 
@@ -157,12 +157,12 @@ tags: [auto-index]
 
 | 关联主题 | 关系 | 参考路径 |
 |----------|------|----------|
-| 模型训练 | 上游输入 | 模型训练/ |
-| 模型评估 | 质量门禁 | 模型评估/ |
-| 部署推理 | 服务化交付 | 部署推理/ |
-| 架构基建 | 底层支撑 | 架构基建/ |
-| 测试 | 质量保障 | 测试/ |
-| 运维 | 通用运维实践 | 运维/ |
+| 模型训练 | 上游输入 | 07_模型训练/ |
+| 模型评估 | 质量门禁 | 08_模型评估/ |
+| 部署推理 | 服务化交付 | 10_部署推理/ |
+| 架构基建 | 底层支撑 | 12_架构基建/ |
+| 测试 | 质量保障 | 09_测试/ |
+| 运维 | 通用运维实践 | 13_运维/ |
 
 ## 快速自检清单
 

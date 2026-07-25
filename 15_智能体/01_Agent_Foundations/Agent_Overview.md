@@ -266,7 +266,7 @@ Agent 团队分工:
 | **Dify** | 低代码 | 快速原型 | Python |
 | **Coze** | 字节生态 | 中文场景 | Python |
 
-详见 [[智能体/Agent_Frameworks/README.md|Agent_Frameworks]]
+详见 [[15_智能体/02_Agent_Frameworks/README.md|Agent_Frameworks]]
 
 ### 4.2 选型指南
 
@@ -437,10 +437,10 @@ Agent 市场:
 
 ## 相关阅读
 
-- [[智能体/Agent_Foundations/index.md|Agent_Foundations]] — Agent 基础
-- [[智能体/Agent_Frameworks/README.md|Agent_Frameworks]] — Agent 框架
-- [[智能体/Agent_Protocols_index.md|Agent_Protocols]] — Agent 协议
-- [[智能体/Agent_Skills/README.md|Agent_Skills]] — Agent 技能
-- [[智能体/Agent_Workflow/index.md|Agent_Workflow]] — Agent 工作流
-- [[智能体/Agentic_Design_Patterns_AndrewNg]] — Agent 设计模式
-- [[强化学习/Multi_Agent_Systems]] — 多智能体系统
+- [[15_智能体/01_Agent_Foundations/index.md|Agent_Foundations]] — Agent 基础
+- [[15_智能体/02_Agent_Frameworks/README.md|Agent_Frameworks]] — Agent 框架
+- [[15_智能体/Agent_Protocols_index.md|Agent_Protocols]] — Agent 协议
+- [[15_智能体/05_Agent_Skills/README.md|Agent_Skills]] — Agent 技能
+- [[15_智能体/03_Agent_Workflow/index.md|Agent_Workflow]] — Agent 工作流
+- [[15_智能体/Agentic_Design_Patterns_AndrewNg]] — Agent 设计模式
+- [[06_强化学习/Multi_Agent_Systems]] — 多智能体系统

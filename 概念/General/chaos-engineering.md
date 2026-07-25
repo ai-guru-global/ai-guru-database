@@ -54,7 +54,7 @@ sources: []
 
 - [[概念/resilience|Resilience]]
 - [[概念/incident-response|Incident Response]]
-- [[运维/Chaos_Engineering_for_AI_Systems|AI 系统混沌工程]]
+- [[13_运维/Chaos_Engineering_for_AI_Systems|AI 系统混沌工程]]
 
 ---
 

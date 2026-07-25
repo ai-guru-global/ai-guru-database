@@ -277,21 +277,21 @@ AI导师 2025-2026:
 
 ## 扩展章节：跨行业关联
 
-- [行业对比分析](行业应用/Industry_Overview/Industry_Comparison_2026.md) — 全行业的横向对比
-- [行业速览](行业应用/Industry_Overview/Industry-in-nutshell.md) — 30 分钟了解所有行业 AI 应用
-- [机器学习](../../机器学习/README.md) — 基础算法与模型
-- [深度学习](../../深度学习/README.md) — 神经网络核心技术
-- [MLOps](../../模型运维/README.md) — 模型生产化部署
+- [行业对比分析](18_行业应用/01_Industry_Overview/Industry_Comparison_2026.md) — 全行业的横向对比
+- [行业速览](18_行业应用/01_Industry_Overview/Industry-in-nutshell.md) — 30 分钟了解所有行业 AI 应用
+- [机器学习](../../02_机器学习/README.md) — 基础算法与模型
+- [深度学习](../../03_深度学习/README.md) — 神经网络核心技术
+- [MLOps](../../11_模型运维/README.md) — 模型生产化部署
 
 ---
 
 ## Related
 
-- [[../../RAG系统/RAG_Fundamentals|RAG 基础]] — 教育知识库构建
-- [[../../智能体/Agent_Foundations|Agent 基础]] — 个性化学习 Agent
-- [[../../大模型/LLM_Fundamentals|LLM 基础]] — 教育场景大模型应用
-- [[../../模型评估/Human_Evaluation|人工评估]] — 教育效果评估方法
-- [[../../部署推理/Cost|推理成本]] — 教育普惠的成本优化
+- [[../../14_RAG系统/RAG_Fundamentals|RAG 基础]] — 教育知识库构建
+- [[../../15_智能体/Agent_Foundations|Agent 基础]] — 个性化学习 Agent
+- [[../../05_大模型/LLM_Fundamentals|LLM 基础]] — 教育场景大模型应用
+- [[../../08_模型评估/Human_Evaluation|人工评估]] — 教育效果评估方法
+- [[../../10_部署推理/Cost|推理成本]] — 教育普惠的成本优化
 
 ---
 

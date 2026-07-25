@@ -1,6 +1,6 @@
 ---
 title: Constitutional AI (宪法式 AI)
-category: 伦理安全/Constitutional_AI
+category: 17_伦理安全/Constitutional_AI
 tags: [ai-safety, alignment, constitutional-ai, rlaif, anthropic]
 summary: Anthropic 提出的基于宪法原则的 AI 对齐方法，通过 RLAIF 替代人类反馈实现安全对齐。
 ---
@@ -25,8 +25,8 @@ summary: Anthropic 提出的基于宪法原则的 AI 对齐方法，通过 RLAIF
 
 - [[../Value_Alignment/Value_Alignment_for_dummy|价值对齐入门]]
 - [[../Ethics_Fundamentals/AI_Ethics_And_Future|AI 伦理与未来]]
-- [[../模型训练/Alignment/GRPO_Deep_Dive|GRPO 深度解析]]
-- [[../论文精读/Alignment/DPO_Deep_Dive|DPO 论文精读]]
+- [[../07_模型训练/06_Alignment/GRPO_Deep_Dive|GRPO 深度解析]]
+- [[../20_论文精读/06_Alignment/DPO_Deep_Dive|DPO 论文精读]]
 
 ## 核心知识体系
 
@@ -137,9 +137,9 @@ summary: Anthropic 提出的基于宪法原则的 AI 对齐方法，通过 RLAIF
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

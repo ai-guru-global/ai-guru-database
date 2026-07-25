@@ -107,14 +107,14 @@ ACK 专有版 / 敏捷版
 1. PAI 控制台查看任务日志和事件
 2. ACK 查看对应 PyTorchJob / Pod 状态
 3. 检查是否为 OOM、NCCL、镜像拉取失败
-4. 参考 [[模型训练/Monitoring/LLM_Fine_Tuning_Job_Failure_Runbook_on_K8s|LLM 微调任务 K8s 失败排障]]
+4. 参考 [[07_模型训练/07_Monitoring/LLM_Fine_Tuning_Job_Failure_Runbook_on_K8s|LLM 微调任务 K8s 失败排障]]
 
 ### 场景 2：PAI-EAS 服务延迟高
 
 1. EAS 控制台查看 QPS、延迟、GPU 利用率
 2. ACK 查看 Pod 资源和 HPA 状态
 3. 检查 vLLM/SGLang 的 KV Cache、batch size
-4. 参考 [[运维/SRE_Reliability/LLM_Inference_Slow_Unavailable_Runbook|LLM 推理延迟/不可用 Runbook]]
+4. 参考 [[13_运维/02_SRE_Reliability/LLM_Inference_Slow_Unavailable_Runbook|LLM 推理延迟/不可用 Runbook]]
 
 ### 场景 3：PAI-DSW 无法启动
 
@@ -142,17 +142,17 @@ ACK 专有版 / 敏捷版
 - [[概念/pai|PAI]]
 - [[概念/ack|ACK]]
 - [[概念/alibaba-cloud|Alibaba Cloud]]
-- [[架构基建/Alibaba_Cloud_Proprietary_K8s_Context|阿里云专有云 K8s 上下文]]
-- [[模型训练/Monitoring/LLM_Fine_Tuning_Job_Failure_Runbook_on_K8s|LLM 微调任务 K8s 失败排障]]
-- [[运维/SRE_Reliability/LLM_Inference_Slow_Unavailable_Runbook|LLM 推理延迟/不可用 Runbook]]
+- [[12_架构基建/Alibaba_Cloud_Proprietary_K8s_Context|阿里云专有云 K8s 上下文]]
+- [[07_模型训练/07_Monitoring/LLM_Fine_Tuning_Job_Failure_Runbook_on_K8s|LLM 微调任务 K8s 失败排障]]
+- [[13_运维/02_SRE_Reliability/LLM_Inference_Slow_Unavailable_Runbook|LLM 推理延迟/不可用 Runbook]]
 
-- [[架构基建/README|架构与基础设施 (Architecture & Infrastructure)]]
+- [[12_架构基建/README|架构与基础设施 (Architecture & Infrastructure)]]
 
 ## 架构核心组件对比
 
 | 组件层 | 功能 | 关键技术 | 选型考量 |
 |--------|------|----------|----------|
-| 计算层 | 模型训练/推理 | GPU/TPU/NPU集群 | 算力需求+成本 |
+| 计算层 | 07_模型训练/推理 | GPU/TPU/NPU集群 | 算力需求+成本 |
 | 存储层 | 数据/模型/检查点 | 分布式存储/对象存储 | 容量+IOPS+成本 |
 | 网络层 | 节点间通信 | RDMA/RoCE/InfiniBand | 带宽+延迟 |
 | 调度层 | 资源编排 | K8s/Slurm/Ray | 弹性+效率 |

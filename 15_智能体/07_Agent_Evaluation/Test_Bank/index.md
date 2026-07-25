@@ -15,15 +15,15 @@ Agent 评估测试用例库（test case bank）的组织、覆盖与维护 — �
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[智能体/Agent_Evaluation/Test_Bank/Test_Bank_Overview|Test Bank Overview]] | Test bank overview: case classification, tag taxonomy and coverage matrix | evaluation engineers / QA |
-| [[智能体/Agent_Evaluation/Test_Bank/README|README]] | Test bank README usage guide | all users |
+| [[15_智能体/07_Agent_Evaluation/Test_Bank/Test_Bank_Overview|Test Bank Overview]] | Test bank overview: case classification, tag taxonomy and coverage matrix | evaluation engineers / QA |
+| [[15_智能体/07_Agent_Evaluation/Test_Bank/README|README]] | Test bank README usage guide | all users |
 
 ## Related
 
-- [[智能体/Agent_Evaluation/Testing_Methodologies/index|测试方法论]]
-- [[智能体/Agent_Evaluation/Corpus_Assessment/index|语料评估]]
-- [[智能体/Agent_Evaluation/Assessment/index|评估流程]]
-- [[智能体/Agent_Evaluation/index|← 返回智能体评估]]
+- [[15_智能体/07_Agent_Evaluation/Testing_Methodologies/index|测试方法论]]
+- [[15_智能体/07_Agent_Evaluation/Corpus_Assessment/index|语料评估]]
+- [[15_智能体/07_Agent_Evaluation/Assessment/index|评估流程]]
+- [[15_智能体/07_Agent_Evaluation/index|← 返回智能体评估]]
 
 ## Test_Bank 核心概念
 

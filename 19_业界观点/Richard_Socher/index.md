@@ -15,13 +15,13 @@ Richard Socher — Salesforce 首席科学家、you.com 创始人，NLP 与多�
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[业界观点/Richard_Socher/about|about]] | Profile: academic contributions and entrepreneurial journey | all readers interested in AI leaders |
-| [[业界观点/Richard_Socher/sayings|sayings]] | Collection of important quotes and public statements | all readers / researchers |
+| [[19_业界观点/Richard_Socher/about|about]] | Profile: academic contributions and entrepreneurial journey | all readers interested in AI leaders |
+| [[19_业界观点/Richard_Socher/sayings|sayings]] | Collection of important quotes and public statements | all readers / researchers |
 
 ## Related
 
-- [[业界观点/index|业界观点首页]]
-- [[大模型/index|大模型]]
+- [[19_业界观点/index|业界观点首页]]
+- [[05_大模型/index|大模型]]
 
 ## Richard Socher 核心观点
 

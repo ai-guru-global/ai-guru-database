@@ -282,9 +282,9 @@ def select_architecture(requirements: dict) -> str:
 
 ## 6. 交叉引用
 
-- [[大模型/LLM_Architectures/|LLM 架构]]
-- [[大模型/Architecture_Evolution/|架构演进]]
-- [[深度学习/State_Space_Models/|状态空间模型]]
-- [[深度学习/Attention_Mechanisms/|注意力机制]]
-- [[大模型/LLM_Inference/|LLM 推理]]
-- [[部署推理/|部署推理]]
+- [[05_大模型/05_LLM_Architectures/|LLM 架构]]
+- [[05_大模型/Architecture_Evolution/|架构演进]]
+- [[03_深度学习/State_Space_Models/|状态空间模型]]
+- [[03_深度学习/Attention_Mechanisms/|注意力机制]]
+- [[05_大模型/LLM_Inference/|LLM 推理]]
+- [[10_部署推理/|部署推理]]

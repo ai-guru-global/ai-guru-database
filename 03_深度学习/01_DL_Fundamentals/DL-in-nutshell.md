@@ -423,12 +423,12 @@ flowchart TB
 
 ## 🔗 相关主题
 
-- [AI 基础速成](数学基础/Math_Fundamentals/Fundamentals-in-nutshell.md) —— 线性代数、微积分、概率基础
-- [机器学习速成](机器学习/ML_Fundamentals/ML-in-nutshell.md) —— 传统 ML 方法
-- [计算机视觉速成](计算机视觉/CV_Fundamentals/CV-in-nutshell.md) —— CNN 和视觉 Transformer
-- [训练速成](模型训练/Training_Fundamentals/Model-Training-in-nutshell.md) —— 端到端训练实践
-- [神经网络核心](深度学习/Neural_Network_Core/Neural_Network_Core.md) —— 更深入的理论讲解
-- [优化详解](深度学习/Optimization/Optimization.md) —— 优化器与正则化深入
+- [AI 基础速成](01_数学基础/01_Math_Fundamentals/Fundamentals-in-nutshell.md) —— 线性代数、微积分、概率基础
+- [机器学习速成](02_机器学习/01_ML_Fundamentals/ML-in-nutshell.md) —— 传统 ML 方法
+- [计算机视觉速成](04_计算机视觉/01_CV_Fundamentals/CV-in-nutshell.md) —— CNN 和视觉 Transformer
+- [训练速成](07_模型训练/01_Training_Fundamentals/Model-Training-in-nutshell.md) —— 端到端训练实践
+- [神经网络核心](03_深度学习/02_Neural_Network_Core/Neural_Network_Core.md) —— 更深入的理论讲解
+- [优化详解](03_深度学习/03_Optimization/Optimization.md) —— 优化器与正则化深入
 
 ---
 
@@ -436,7 +436,7 @@ flowchart TB
 
 ## Related
 
-- [[深度学习/README]] — 03 深度学习基础 (Deep Learning Foundations) (共享: backpropagation, deep-learning, dl, neural-networks)
-- [[深度学习/World_Models/JEPA_Architecture_2026]] — JEPA 架构深度解析：LeCun 的世界模型之路 (共享: backpropagation, deep-learning, dl, neural-networks)
-- [[深度学习/World_Models/README]] — 世界模型 (World Models) (共享: backpropagation, deep-learning, dl, neural-networks)
-- [[深度学习/State_Space_Models_2026.md|State_Space_Models_2026]]
+- [[03_深度学习/README]] — 03 深度学习基础 (Deep Learning Foundations) (共享: backpropagation, deep-learning, dl, neural-networks)
+- [[03_深度学习/07_World_Models/JEPA_Architecture_2026]] — JEPA 架构深度解析：LeCun 的世界模型之路 (共享: backpropagation, deep-learning, dl, neural-networks)
+- [[03_深度学习/07_World_Models/README]] — 世界模型 (World Models) (共享: backpropagation, deep-learning, dl, neural-networks)
+- [[03_深度学习/State_Space_Models_2026.md|State_Space_Models_2026]]

@@ -41,8 +41,8 @@ Sam Altman 是当代 AI 产业最具影响力的掌舵者之一。他领导 Open
 
 | 文件 | 内容 | 适用人群 |
 |------|------|----------|
-| [[业界观点/Sam_Altman/about\|about]] | 完整人物简介：创业历程、OpenAI 发展、战略路线 | 所有想了解 AI 领袖的读者 |
-| [[业界观点/Sam_Altman/sayings\|sayings]] | 重要语录与公开声明合集 | 研究者 / 想把握其观点的人 |
+| [[19_业界观点/Sam_Altman/about\|about]] | 完整人物简介：创业历程、OpenAI 发展、战略路线 | 所有想了解 AI 领袖的读者 |
+| [[19_业界观点/Sam_Altman/sayings\|sayings]] | 重要语录与公开声明合集 | 研究者 / 想把握其观点的人 |
 
 ---
 
@@ -66,13 +66,13 @@ Sam Altman 是当代 AI 产业最具影响力的掌舵者之一。他领导 Open
 |------|------|------|
 | 2005 | 从斯坦福辍学创办 Loopt | 早期创业，位置社交应用 |
 | 2014 | 出任 Y Combinator 总裁 | 成为硅谷最有影响力的孵化者之一 |
-| 2015 | 联合创立 OpenAI（非营利）| 与 [[业界观点/Elon_Musk/about\|Musk]]、[[业界观点/Ilya_Sutskever/about\|Sutskever]] 共同发起 |
+| 2015 | 联合创立 OpenAI（非营利）| 与 [[19_业界观点/Elon_Musk/about\|Musk]]、[[19_业界观点/Ilya_Sutskever/about\|Sutskever]] 共同发起 |
 | 2019 | 出任 OpenAI CEO，转型"利润封顶" | 与微软合作，开启商业化 |
 | 2020 | GPT-3 发布 | 大模型时代开启 |
 | 2022.11 | ChatGPT 发布 | 史上增长最快的消费级应用 |
 | 2023.02 | "Planning for AGI and Beyond" 博文 | 定义 AGI 路线图 |
 | 2023.05 | 美国参议院 AI 听证 | 主动呼吁监管，提"类 FDA 的 AI 机构" |
-| 2023.11 | OpenAI 董事会危机，被解雇又复职 | [[业界观点/Mira_Murati/about\|Mira Murati]] 短暂任临时 CEO |
+| 2023.11 | OpenAI 董事会危机，被解雇又复职 | [[19_业界观点/Mira_Murati/about\|Mira Murati]] 短暂任临时 CEO |
 | 2024.01 | "What I Wish Someone Had Told Me" 博文 | 13 条创业人生建议，广泛传播 |
 | 2024-2025 | o1/o3 测试时计算路线 | 推理能力飞跃 |
 | 2026 | GPT-5 / Deep Research / Agent 推进 | 持续引领前沿 |
@@ -90,20 +90,20 @@ Sam Altman 是当代 AI 产业最具影响力的掌舵者之一。他领导 Open
 | 治理 | "建立一个类似 FDA 的 AI 机构可能是正确的方法" | 参议院听证 |
 | 平衡 | "更大的风险是不负责任地部署 AI，而不是部署太慢" | 2024 采访 |
 
-完整语录见 [[业界观点/Sam_Altman/sayings\|Sam Altman 语录]]。
+完整语录见 [[19_业界观点/Sam_Altman/sayings\|Sam Altman 语录]]。
 
 ---
 
 ## 技术立场详解
 
 ### Scaling vs 效率
-Altman 是"规模派"核心代表，坚信模型能力提升主要依赖更大参数量、更多训练数据和更强算力。2024-2025 年认可推理时计算扩展（Test-Time Compute，如 o1/o3）是新增长维度。参见 [[业界观点/Jensen_Huang/about\|Jensen Huang]] 对算力需求的呼应。
+Altman 是"规模派"核心代表，坚信模型能力提升主要依赖更大参数量、更多训练数据和更强算力。2024-2025 年认可推理时计算扩展（Test-Time Compute，如 o1/o3）是新增长维度。参见 [[19_业界观点/Jensen_Huang/about\|Jensen Huang]] 对算力需求的呼应。
 
 ### 开源 vs 闭源
-务实中间路线：前沿模型（frontier models）需谨慎管理，GPT-4 级别不应完全开源；但支持 API 开放和小模型开源。2025 年释放部分权重，被视为"延迟开源"策略。与 [[业界观点/Yann_LeCun/about\|Yann LeCun]] 的"开源是最佳防线"形成对比。
+务实中间路线：前沿模型（frontier models）需谨慎管理，GPT-4 级别不应完全开源；但支持 API 开放和小模型开源。2025 年释放部分权重，被视为"延迟开源"策略。与 [[19_业界观点/Yann_LeCun/about\|Yann LeCun]] 的"开源是最佳防线"形成对比。
 
 ### AI 安全与对齐
-"渐进式安全"——通过 Red Teaming、RLHF、Constitutional AI 等手段逐步提升安全性，同时与政府合作制定监管框架。反对"暂停 AI 开发"，认为暂停不切实际且导致地缘风险。与 [[业界观点/Dario_Amodei/about\|Dario Amodei]] 的"安全优先"理念存在张力。
+"渐进式安全"——通过 Red Teaming、RLHF、Constitutional AI 等手段逐步提升安全性，同时与政府合作制定监管框架。反对"暂停 AI 开发"，认为暂停不切实际且导致地缘风险。与 [[19_业界观点/Dario_Amodei/about\|Dario Amodei]] 的"安全优先"理念存在张力。
 
 ### AGI 时间线
 多次暗示 AGI 可能在 2025-2030 年实现，定义为"在大多数有经济价值的工作中超越人类的系统"。
@@ -114,12 +114,12 @@ Altman 是"规模派"核心代表，坚信模型能力提升主要依赖更大�
 
 | 派别 | 归属 | 与谁一致 |
 |------|------|----------|
-| 规模信仰派 | 核心 | [[业界观点/Dario_Amodei/about\|Amodei]]、[[业界观点/Ilya_Sutskever/about\|Sutskever]]、[[业界观点/Jensen_Huang/about\|黄仁勋]] |
-| 闭源/延迟开源派 | 代表 | [[业界观点/Dario_Amodei/about\|Amodei]]、[[业界观点/Demis_Hassabis/about\|Hassabis]] |
-| 安全务实派 | 核心 | [[业界观点/Bill_Gates/about\|Gates]] |
-| AGI 乐观派 | 代表 | [[业界观点/Dario_Amodei/about\|Amodei]] |
+| 规模信仰派 | 核心 | [[19_业界观点/Dario_Amodei/about\|Amodei]]、[[19_业界观点/Ilya_Sutskever/about\|Sutskever]]、[[19_业界观点/Jensen_Huang/about\|黄仁勋]] |
+| 闭源/延迟开源派 | 代表 | [[19_业界观点/Dario_Amodei/about\|Amodei]]、[[19_业界观点/Demis_Hassabis/about\|Hassabis]] |
+| 安全务实派 | 核心 | [[19_业界观点/Bill_Gates/about\|Gates]] |
+| AGI 乐观派 | 代表 | [[19_业界观点/Dario_Amodei/about\|Amodei]] |
 
-参见横向对比：[[业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026\|开源 vs 闭源之争]]、[[业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix\|AGI 时间表矩阵]]、[[业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix\|AI 安全立场矩阵]]。
+参见横向对比：[[19_业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026\|开源 vs 闭源之争]]、[[19_业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix\|AGI 时间表矩阵]]、[[19_业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix\|AI 安全立场矩阵]]。
 
 ---
 
@@ -127,12 +127,12 @@ Altman 是"规模派"核心代表，坚信模型能力提升主要依赖更大�
 
 | 关系 | 人物 |
 |------|------|
-| 联合创始人 / 前首席科学家 | [[业界观点/Ilya_Sutskever/about\|Ilya Sutskever]]（2024 离开创 SSI）|
-| OpenAI 前高管 | [[业界观点/Mira_Murati/about\|Mira Murati]]（2024 离开创 Thinking Machines）|
-| 合作伙伴 | [[业界观点/Satya_Nadella/about\|Satya Nadella]]（微软）|
-| 竞争对手 | [[业界观点/Dario_Amodei/about\|Dario Amodei]]（Anthropic）、[[业界观点/Demis_Hassabis/about\|Demis Hassabis]]（Google）|
-| 联合创立者（已离开）| [[业界观点/Elon_Musk/about\|Elon Musk]]（2018 离开，2024 起诉 OpenAI）|
-| 算力供应商 | [[业界观点/Jensen_Huang/about\|Jensen Huang]]（NVIDIA）|
+| 联合创始人 / 前首席科学家 | [[19_业界观点/Ilya_Sutskever/about\|Ilya Sutskever]]（2024 离开创 SSI）|
+| OpenAI 前高管 | [[19_业界观点/Mira_Murati/about\|Mira Murati]]（2024 离开创 Thinking Machines）|
+| 合作伙伴 | [[19_业界观点/Satya_Nadella/about\|Satya Nadella]]（微软）|
+| 竞争对手 | [[19_业界观点/Dario_Amodei/about\|Dario Amodei]]（Anthropic）、[[19_业界观点/Demis_Hassabis/about\|Demis Hassabis]]（Google）|
+| 联合创立者（已离开）| [[19_业界观点/Elon_Musk/about\|Elon Musk]]（2018 离开，2024 起诉 OpenAI）|
+| 算力供应商 | [[19_业界观点/Jensen_Huang/about\|Jensen Huang]]（NVIDIA）|
 
 ---
 
@@ -140,10 +140,10 @@ Altman 是"规模派"核心代表，坚信模型能力提升主要依赖更大�
 
 | 阶段 | 推荐内容 | 目标 |
 |------|----------|------|
-| 入门 | [[业界观点/Sam_Altman/about\|about]] 人物简介 | 了解背景 |
-| 进阶 | [[业界观点/Sam_Altman/sayings\|sayings]] 核心语录 | 理解观点 |
+| 入门 | [[19_业界观点/Sam_Altman/about\|about]] 人物简介 | 了解背景 |
+| 进阶 | [[19_业界观点/Sam_Altman/sayings\|sayings]] 核心语录 | 理解观点 |
 | 深入 | "Planning for AGI and Beyond" 博文 | AGI 路线哲学 |
-| 对比 | [[业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix\|AGI 时间表矩阵]] | 横向定位 |
+| 对比 | [[19_业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix\|AGI 时间表矩阵]] | 横向定位 |
 | 实践 | OpenAI API / GPTs 商店 | 体验其产品哲学 |
 
 ---
@@ -186,15 +186,15 @@ Altman 是"规模派"核心代表，坚信模型能力提升主要依赖更大�
 
 ## 关联导航
 
-- [[业界观点/Sam_Altman/about\|人物简介]] · [[业界观点/Sam_Altman/sayings\|核心语录]]
-- [[业界观点/Ilya_Sutskever/about\|Ilya Sutskever]] · [[业界观点/Mira_Murati/about\|Mira Murati]]
-- [[业界观点/Dario_Amodei/about\|Dario Amodei]] · [[业界观点/Demis_Hassabis/about\|Demis Hassabis]]
-- [[业界观点/Elon_Musk/about\|Elon Musk]] · [[业界观点/Satya_Nadella/about\|Satya Nadella]]
-- [[业界观点/Jensen_Huang/about\|Jensen Huang]]
-- [[业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026\|开源 vs 闭源]]
-- [[业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix\|AGI 时间表矩阵]]
-- [[业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix\|AI 安全立场矩阵]]
-- [[业界观点/index\|业界观点首页]]
+- [[19_业界观点/Sam_Altman/about\|人物简介]] · [[19_业界观点/Sam_Altman/sayings\|核心语录]]
+- [[19_业界观点/Ilya_Sutskever/about\|Ilya Sutskever]] · [[19_业界观点/Mira_Murati/about\|Mira Murati]]
+- [[19_业界观点/Dario_Amodei/about\|Dario Amodei]] · [[19_业界观点/Demis_Hassabis/about\|Demis Hassabis]]
+- [[19_业界观点/Elon_Musk/about\|Elon Musk]] · [[19_业界观点/Satya_Nadella/about\|Satya Nadella]]
+- [[19_业界观点/Jensen_Huang/about\|Jensen Huang]]
+- [[19_业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026\|开源 vs 闭源]]
+- [[19_业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix\|AGI 时间表矩阵]]
+- [[19_业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix\|AI 安全立场矩阵]]
+- [[19_业界观点/index\|业界观点首页]]
 
 ---
 

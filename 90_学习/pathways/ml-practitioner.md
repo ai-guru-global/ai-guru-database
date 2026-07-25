@@ -51,12 +51,12 @@ Phase 6: 完成端到端项目
 
 **🎯 目标**：补齐数学基础，理解为什么 AI 需要线性代数和概率统计。
 
-**📚 核心概念**：[Stage 1: 基础概念](学习/concepts/stage1_foundation.md)（重点关注损失函数、梯度下降相关概念）
+**📚 核心概念**：[Stage 1: 基础概念](90_学习/concepts/stage1_foundation.md)（重点关注损失函数、梯度下降相关概念）
 
 **🔗 深入阅读**：
-- [线性代数（小白版）](数学基础/Linear_Algebra/Linear_Algebra_for_dummy.md)
-- [概率统计（小白版）](数学基础/Probability_Statistics/Probability_Statistics_for_dummy.md)
-- [数据结构与算法（小白版）](数学基础/Data_Structures_Algorithms/Data_Structures_Algorithms_for_dummy.md)
+- [线性代数（小白版）](01_数学基础/02_Linear_Algebra/Linear_Algebra_for_dummy.md)
+- [概率统计（小白版）](01_数学基础/03_Probability_Statistics/Probability_Statistics_for_dummy.md)
+- [数据结构与算法（小白版）](01_数学基础/07_Data_Structures_Algorithms/Data_Structures_Algorithms_for_dummy.md)
 
 **💡 重点**：
 - 线性代数：向量、矩阵、点积（理解神经网络中的矩阵运算）
@@ -71,13 +71,13 @@ Phase 6: 完成端到端项目
 
 **🎯 目标**：掌握经典 ML 的三大范式：监督学习、无监督学习、特征工程。
 
-**📚 核心概念**：[Stage 1](学习/concepts/stage1_foundation.md) + [Stage 2 前半](学习/concepts/stage2_core_tech.md)
+**📚 核心概念**：[Stage 1](90_学习/concepts/stage1_foundation.md) + [Stage 2 前半](90_学习/concepts/stage2_core_tech.md)
 
 **🔗 深入阅读**：
-- [监督学习（小白版）](机器学习/Supervised_Learning/Supervised_Learning_for_dummy.md)
-- [无监督学习（小白版）](机器学习/Unsupervised_Learning/Unsupervised_Learning_for_dummy.md)
-- [特征工程（小白版）](机器学习/Feature_Engineering/Feature_Engineering_for_dummy.md)
-- [监督学习（完整版）](机器学习/Supervised_Learning/Supervised_Learning.md)
+- [监督学习（小白版）](02_机器学习/02_Supervised_Learning/Supervised_Learning_for_dummy.md)
+- [无监督学习（小白版）](02_机器学习/03_Unsupervised_Learning/Unsupervised_Learning_for_dummy.md)
+- [特征工程（小白版）](02_机器学习/05_Feature_Engineering/Feature_Engineering_for_dummy.md)
+- [监督学习（完整版）](02_机器学习/02_Supervised_Learning/Supervised_Learning.md)
 
 **💡 动手实践建议**：
 - 用 scikit-learn 跑一遍 Kaggle 入门比赛（如 Titanic 生存预测）
@@ -96,12 +96,12 @@ Phase 6: 完成端到端项目
 
 **🎯 目标**：理解神经网络、反向传播、CNN、Transformer 的工作原理。
 
-**📚 核心概念**：[Stage 2: 核心技术](学习/concepts/stage2_core_tech.md)
+**📚 核心概念**：[Stage 2: 核心技术](90_学习/concepts/stage2_core_tech.md)
 
 **🔗 深入阅读**：
-- [神经网络核心（小白版）](深度学习/Neural_Network_Core/Neural_Network_Core_for_dummy.md)
-- [优化（小白版）](模型训练/Optimization/Optimization_for_dummy.md)
-- [Transformer 革命（小白版）](大模型/Transformer_Revolution/Transformer_Revolution_for_dummy.md)
+- [神经网络核心（小白版）](03_深度学习/02_Neural_Network_Core/Neural_Network_Core_for_dummy.md)
+- [优化（小白版）](07_模型训练/03_Optimization/Optimization_for_dummy.md)
+- [Transformer 革命（小白版）](05_大模型/04_Transformer_Revolution/Transformer_Revolution_for_dummy.md)
 
 **💡 动手实践建议**：
 - 用 PyTorch 实现一个简单的手写数字识别（MNIST）
@@ -122,25 +122,25 @@ Phase 6: 完成端到端项目
 
 #### 方向 A: NLP / 大模型（推荐）
 
-- [序列模型（小白版）](大模型/Sequence_Models/Sequence_Models_for_dummy.md)
-- [LLM 架构（小白版）](大模型/LLM_Architectures/LLM_Architectures_for_dummy.md)
-- [微调技术（小白版）](大模型/Fine_tuning_Techniques/Fine_tuning_Techniques_for_dummy.md)
-- [提示词工程（小白版）](大模型/Prompt_Engineering/Prompt_Engineering_for_dummy.md)
+- [序列模型（小白版）](05_大模型/02_Sequence_Models/Sequence_Models_for_dummy.md)
+- [LLM 架构（小白版）](05_大模型/05_LLM_Architectures/LLM_Architectures_for_dummy.md)
+- [微调技术（小白版）](05_大模型/07_Fine_tuning_Techniques/Fine_tuning_Techniques_for_dummy.md)
+- [提示词工程（小白版）](05_大模型/08_Prompt_Engineering/Prompt_Engineering_for_dummy.md)
 
 **动手项目**：用 Hugging Face PEFT 库对 LLaMA 做 LoRA 微调
 
 #### 方向 B: 计算机视觉
 
-- [图像分类与检测（小白版）](计算机视觉/Image_Classification_Detection/Image_Classification_Detection_for_dummy.md)
-- [生成模型（小白版）](计算机视觉/Generative_Models/Generative_Models_for_dummy.md)
-- [多模态视觉（小白版）](计算机视觉/Multimodal_Vision/Multimodal_Vision_for_dummy.md)
+- [图像分类与检测（小白版）](04_计算机视觉/02_Image_Classification_Detection/Image_Classification_Detection_for_dummy.md)
+- [生成模型（小白版）](04_计算机视觉/06_Generative_Models/Generative_Models_for_dummy.md)
+- [多模态视觉（小白版）](04_计算机视觉/08_Multimodal_Vision/Multimodal_Vision_for_dummy.md)
 
 **动手项目**：用 diffusers 库跑一遍 Stable Diffusion 图像生成
 
 #### 方向 C: 强化学习 / Agent
 
-- [强化学习基础（小白版）](强化学习/RL_Foundations/RL_Foundations_for_dummy.md)
-- [AI Agent（小白版）](智能体/Agent_Foundations/AI_Agents_for_dummy.md)
+- [强化学习基础（小白版）](06_强化学习/01_RL_Foundations/RL_Foundations_for_dummy.md)
+- [AI Agent（小白版）](15_智能体/01_Agent_Foundations/AI_Agents_for_dummy.md)
 
 **动手项目**：用 LangGraph 构建一个能调用搜索工具的对话 Agent
 
@@ -150,14 +150,14 @@ Phase 6: 完成端到端项目
 
 **🎯 目标**：掌握将模型部署上线的完整工程能力。
 
-**📚 核心概念**：[Stage 3: 工程实践](学习/concepts/stage3_engineering.md)
+**📚 核心概念**：[Stage 3: 工程实践](90_学习/concepts/stage3_engineering.md)
 
 **🔗 深入阅读**：
-- [部署与推理（小白版）](部署推理/Deployment_Fundamentals/Deployment_Inference_for_dummy.md)
-- [RAG 系统（小白版）](RAG系统/RAG_Fundamentals/RAG_Systems_for_dummy.md)
-- [MLOps 流水线（小白版）](模型运维/MLOps_Fundamentals/MLOps_Pipeline_for_dummy.md)
-- [模型评估（小白版）](模型评估/Evaluation_Fundamentals/Model_Evaluation_for_dummy.md)
-- [AI 工作流（速查版）](智能体/Agent_Workflow/Workflow-in-nutshell.md)
+- [部署与推理（小白版）](10_部署推理/01_Deployment_Fundamentals/Deployment_Inference_for_dummy.md)
+- [RAG 系统（小白版）](14_RAG系统/01_RAG_Fundamentals/RAG_Systems_for_dummy.md)
+- [MLOps 流水线（小白版）](11_模型运维/01_MLOps_Fundamentals/MLOps_Pipeline_for_dummy.md)
+- [模型评估（小白版）](08_模型评估/01_Evaluation_Fundamentals/Model_Evaluation_for_dummy.md)
+- [AI 工作流（速查版）](15_智能体/03_Agent_Workflow/Workflow-in-nutshell.md)
 
 **💡 动手实践建议**：
 - 用 vLLM 部署一个开源 LLM（如 Qwen），测试其推理性能
@@ -191,15 +191,15 @@ Phase 6: 完成端到端项目
 
 ## 里程碑自测
 
-完成本路径后，请回顾 [milestones.md](学习/guides/milestones.md) 中 Stage 1-3 的自测题。
+完成本路径后，请回顾 [milestones.md](90_学习/guides/milestones.md) 中 Stage 1-3 的自测题。
 
 ## 下一步推荐
 
 | 你的打算 | 推荐去向 |
 |---------|---------|
-| 想专注 LLM 应用开发 | [LLM 工程师路径](学习/pathways/llm-engineer.md) |
-| 想做 AI 研究/读论文 | [AI 研究者路径](学习/pathways/ai-researcher.md) |
-| 想系统评估/测试 AI | [Agent 评估框架](../../智能体/Agent_Evaluation/README.md) |
+| 想专注 LLM 应用开发 | [LLM 工程师路径](90_学习/pathways/llm-engineer.md) |
+| 想做 AI 研究/读论文 | [AI 研究者路径](90_学习/pathways/ai-researcher.md) |
+| 想系统评估/测试 AI | [Agent 评估框架](../../15_智能体/07_Agent_Evaluation/README.md) |
 
 ---
 
@@ -207,7 +207,7 @@ Phase 6: 完成端到端项目
 
 ## Related
 
-- [[学习/guides/milestones]] — 里程碑自测 (共享: courses, education, learning, study-path)
-- [[学习/pathways/absolute-beginner]] — 零基础通识路径 (共享: courses, education, learning, study-path)
-- [[学习/pathways/ai-researcher]] — AI 研究者路径 (共享: courses, education, learning, study-path)
-- [[学习/pathways/java-developer]] — Java 开发者 AI 路径 (共享: courses, education, learning, study-path)
+- [[90_学习/guides/milestones]] — 里程碑自测 (共享: courses, education, learning, study-path)
+- [[90_学习/pathways/absolute-beginner]] — 零基础通识路径 (共享: courses, education, learning, study-path)
+- [[90_学习/pathways/ai-researcher]] — AI 研究者路径 (共享: courses, education, learning, study-path)
+- [[90_学习/pathways/java-developer]] — Java 开发者 AI 路径 (共享: courses, education, learning, study-path)

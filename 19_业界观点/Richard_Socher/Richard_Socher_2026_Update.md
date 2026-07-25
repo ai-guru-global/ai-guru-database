@@ -165,7 +165,7 @@ Socher 的核心信念：
 | 可定制 | 用户定义偏好 |
 | 反垄断 | 反对一家独大 |
 | 开源 | 支持但务实 |
-| 与 [[业界观点/Emad_Mostaque/index\|Mostaque]] | 立场接近 |
+| 与 [[19_业界观点/Emad_Mostaque/index\|Mostaque]] | 立场接近 |
 
 ### 关于 Scaling Laws
 
@@ -191,7 +191,7 @@ Socher 的核心信念：
 
 ### 与其他 AI 搜索领袖的对比
 
-| 维度 | Socher | [[业界观点/Sundar_Pichai/index\|Pichai]] | Perplexity（Aravind） |
+| 维度 | Socher | [[19_业界观点/Sundar_Pichai/index\|Pichai]] | Perplexity（Aravind） |
 |------|--------|---------|----------------------|
 | 公司 | You.com | Google | Perplexity |
 | 起点 | NLP 学术 | 搜索巨头 | AI 原生 |
@@ -201,7 +201,7 @@ Socher 的核心信念：
 
 ### 与 NLP 学术同行的对比
 
-| 维度 | Socher | [[业界观点/Andrej_Karpathy/index\|Karpathy]] | [[业界观点/Andrew_Ng/index\|Ng]] |
+| 维度 | Socher | [[19_业界观点/Andrej_Karpathy/index\|Karpathy]] | [[19_业界观点/Andrew_Ng/index\|Ng]] |
 |------|--------|---------|-----|
 | 学术背景 | Stanford NLP | Stanford CV | Stanford ML |
 | 博士导师 | Chris Manning | Fei-Fei Li | 多位 |
@@ -273,29 +273,29 @@ Socher 的影响呈现为三个层面：
 
 ### NLP 与搜索网络
 
-- [[业界观点/Richard_Socher/index]] -- 本页主人物
-- [[业界观点/Richard_Socher/about]] -- 详细简介
-- [[业界观点/Sundar_Pichai/index]] -- Google 搜索
-- [[业界观点/Satya_Nadella/index]] -- Bing/Copilot
+- [[19_业界观点/Richard_Socher/index]] -- 本页主人物
+- [[19_业界观点/Richard_Socher/about]] -- 详细简介
+- [[19_业界观点/Sundar_Pichai/index]] -- Google 搜索
+- [[19_业界观点/Satya_Nadella/index]] -- Bing/Copilot
 
 ### 学术同行
 
-- [[业界观点/Andrej_Karpathy/index]] -- Stanford 同行
-- [[业界观点/Andrew_Ng/index]] -- Stanford 同行
-- [[业界观点/Fei_Fei_Li/index]] -- Stanford 同行
+- [[19_业界观点/Andrej_Karpathy/index]] -- Stanford 同行
+- [[19_业界观点/Andrew_Ng/index]] -- Stanford 同行
+- [[19_业界观点/Fei_Fei_Li/index]] -- Stanford 同行
 
 ### 创业同行
 
-- [[业界观点/Emad_Mostaque/index]] -- 开源+创业
-- [[业界观点/Mira_Murati/index]] -- AI 创业
-- [[业界观点/Mustafa_Suleyman/index]] -- AI 创业
+- [[19_业界观点/Emad_Mostaque/index]] -- 开源+创业
+- [[19_业界观点/Mira_Murati/index]] -- AI 创业
+- [[19_业界观点/Mustafa_Suleyman/index]] -- AI 创业
 
 ### 技术与应用
 
-- [[大模型/README]] -- NLP 基础
+- [[05_大模型/README]] -- NLP 基础
 - [[应用/AI_Search]] -- AI 搜索
-- [[深度学习/README]] -- NLP 深度学习
-- [[入门/AI_Future_Trends]] -- 搜索未来
+- [[03_深度学习/README]] -- NLP 深度学习
+- [[00_入门/AI_Future_Trends]] -- 搜索未来
 
 ---
 

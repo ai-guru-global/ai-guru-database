@@ -17,13 +17,13 @@ tags: [auto-index]
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[面试岗位/Research_Scientist/Research_Scientist|Research Scientist]] | 岗位面试全攻略：论文阅读方法论、实验设计与学术写作要点 | research scientist candidates / PhD holders |
+| [[21_面试岗位/Research_Scientist/Research_Scientist|Research Scientist]] | 岗位面试全攻略：论文阅读方法论、实验设计与学术写作要点 | research scientist candidates / PhD holders |
 
 ## Related
 
-- [[面试岗位/AI_Research_Scientist/index|AI Research Scientist]]
-- [[面试岗位/Applied_Scientist/index|Applied Scientist]]
-- [[论文精读/index|论文精读]]
+- [[21_面试岗位/AI_Research_Scientist/index|AI Research Scientist]]
+- [[21_面试岗位/Applied_Scientist/index|Applied Scientist]]
+- [[20_论文精读/index|论文精读]]
 
 ## 岗位核心能力模型
 
@@ -40,7 +40,7 @@ tags: [auto-index]
 | 轮次 | 内容 | 时长 | 考察重点 |
 |------|------|------|----------|
 | 简历筛选 | HR初筛 | - | 背景匹配度 |
-| 技术笔试 | 编程/选择题 | 60-90min | 基础功底 |
+| 技术笔试 | 16_编程/选择题 | 60-90min | 基础功底 |
 | 技术一面 | 算法+项目 | 45-60min | 编码能力+项目深度 |
 | 技术二面 | 系统设计+深度 | 45-60min | 架构思维+技术广度 |
 | 技术三面 | 综合+前沿 | 30-45min | 技术视野+潜力 |

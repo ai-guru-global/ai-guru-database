@@ -177,7 +177,7 @@ graph TB
         D_KEY["dev-key<br/>limit: $50/月"]
     end
 
-    subgraph Testing["测试/CI"]
+    subgraph Testing["09_测试/CI"]
         T_KEY["test-key<br/>limit: $20/月<br/>:free models only"]
     end
 
@@ -367,7 +367,7 @@ client = OpenAI(
 | [11 - 安全与隐私](./11-openrouter-security-privacy.md) | 安全加固与合规 |
 | [topic-coding/03](../OpenCode/23-opencode-providers-models.md) | OpenCode 配置 OpenRouter Provider |
 | [topic-ai-agent](../topic-ai-agent/) | Agent CLI 统一 LLM 后端 |
-| [domain-11-ai-infra/17](../../部署推理/README.md) | LLM 推理服务层 |
+| [domain-11-ai-infra/17](../../10_部署推理/README.md) | LLM 推理服务层 |
 | [domain-40](../domain-40-cloud-native-api-gateway/) | 云原生 Gateway 模式 |
 
 ---
@@ -378,22 +378,22 @@ client = OpenAI(
 
 ## Obsidian 相关文档
 
-- [[编程/Tool_Comparison/MOC_OpenRouter_OpenCode.md|MOC]]
-- [[编程/Tool_Comparison/OpenRouter_OpenCode_Guide|AI 编程与 LLM 网关专题 — OpenRouter & OpenCode 全量指南]]
-- [[编程/OpenRouter/01-openrouter-overview-architecture|OpenRouter 概述与核心架构]]
-- [[编程/OpenRouter/02-openrouter-quickstart-setup|快速接入与环境配置]]
-- [[编程/OpenRouter/03-openrouter-models-providers|模型与 Provider 生态]]
-- [[编程/OpenRouter/04-openrouter-provider-routing|智能路由与 Provider 选择]]
-- [[编程/OpenRouter/05-openrouter-api-reference|API 参考与请求/响应规范]]
-- [[编程/OpenRouter/06-openrouter-structured-outputs-tools|Structured Outputs 与 Tool Calling]]
-- [[编程/OpenRouter/07-openrouter-plugins-web-search|插件体系与 Web Search]]
-- [[编程/OpenRouter/08-openrouter-prompt-caching-optimization|Prompt Caching 与成本优化]]
-- [[编程/OpenRouter/09-openrouter-frameworks-integrations|框架集成与生态系统]]
-- [[编程/OpenRouter/10-openrouter-streaming-multimedia|流式传输与多模态输入]]
+- [[16_编程/06_Tool_Comparison/MOC_OpenRouter_OpenCode.md|MOC]]
+- [[16_编程/06_Tool_Comparison/OpenRouter_OpenCode_Guide|AI 编程与 LLM 网关专题 — OpenRouter & OpenCode 全量指南]]
+- [[16_编程/08_OpenRouter/01-openrouter-overview-architecture|OpenRouter 概述与核心架构]]
+- [[16_编程/08_OpenRouter/02-openrouter-quickstart-setup|快速接入与环境配置]]
+- [[16_编程/08_OpenRouter/03-openrouter-models-providers|模型与 Provider 生态]]
+- [[16_编程/08_OpenRouter/04-openrouter-provider-routing|智能路由与 Provider 选择]]
+- [[16_编程/08_OpenRouter/05-openrouter-api-reference|API 参考与请求/响应规范]]
+- [[16_编程/08_OpenRouter/06-openrouter-structured-outputs-tools|Structured Outputs 与 Tool Calling]]
+- [[16_编程/08_OpenRouter/07-openrouter-plugins-web-search|插件体系与 Web Search]]
+- [[16_编程/08_OpenRouter/08-openrouter-prompt-caching-optimization|Prompt Caching 与成本优化]]
+- [[16_编程/08_OpenRouter/09-openrouter-frameworks-integrations|框架集成与生态系统]]
+- [[16_编程/08_OpenRouter/10-openrouter-streaming-multimedia|流式传输与多模态输入]]
 
 ## Related
 
-- [[编程/OpenCode/21-opencode-overview-architecture]] — 21-opencode-overview-architecture (共享: ai, ai-coding)
-- [[编程/OpenCode/22-opencode-installation-quickstart]] — 22-opencode-installation-quickstart (共享: ai, ai-coding)
-- [[编程/OpenCode/23-opencode-providers-models]] — 23-opencode-providers-models (共享: ai, ai-coding)
-- [[编程/OpenCode/24-opencode-agents-system]] — 24-opencode-agents-system (共享: ai, ai-coding)
+- [[16_编程/07_OpenCode/21-opencode-overview-architecture]] — 21-opencode-overview-architecture (共享: ai, ai-coding)
+- [[16_编程/07_OpenCode/22-opencode-installation-quickstart]] — 22-opencode-installation-quickstart (共享: ai, ai-coding)
+- [[16_编程/07_OpenCode/23-opencode-providers-models]] — 23-opencode-providers-models (共享: ai, ai-coding)
+- [[16_编程/07_OpenCode/24-opencode-agents-system]] — 24-opencode-agents-system (共享: ai, ai-coding)

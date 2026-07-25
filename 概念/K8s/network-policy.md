@@ -101,7 +101,7 @@ kubectl get pods -n default -l app=backend --show-labels
 | **多租户环境隔离** | 按 Namespace 划分默认拒绝规则，仅放行白名单 | 配合 RBAC 防止租户越权修改 |
 | **数据库访问收敛** | 仅允许 app Pod 访问 db Pod 的 3306/5432 | 同时限制 egress，防止数据外带 |
 | **Ingress/Egress 统一管控** | 默认 deny-all，再按需开放 | 需确认 CNI 已启用 NetworkPolicy 引擎 |
-| **运维/监控流量放行** | 通过 namespaceSelector 放行监控、日志采集 | 注意 `kube-system` DNS 也要放行 |
+| **13_运维/监控流量放行** | 通过 namespaceSelector 放行监控、日志采集 | 注意 `kube-system` DNS 也要放行 |
 
 ## 阿里云专有云关联
 

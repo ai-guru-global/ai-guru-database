@@ -14,7 +14,7 @@ relationships:
   - target: "概念/cuda-platform"
     type: related_to
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
 summary: "华为昇腾（Ascend）是华为自研的 AI 处理器系列，包括 910B/910C 训练推理芯片。AI Stack 原生支持 Ascend GPU，是国产算力的重要替代方案。"
 provenance:
   extracted: 0.45
@@ -173,7 +173,7 @@ FlashMLA 已被华为昇腾平台移植：
 - [[概念/apg-gpu]] — APG 自研加速卡
 - [[概念/cuda-platform]] — CUDA 计算平台
 - [[概念/flash-attention-kernels]] — FlashMLA 算子
-- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
 
 ---
 

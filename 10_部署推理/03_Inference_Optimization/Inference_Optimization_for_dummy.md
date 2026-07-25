@@ -179,9 +179,9 @@ TensorRT-LLM 就像给 NVIDIA GPU 请了一位“赛车调校师”：把普通�
 - [[概念/tensorrt-llm|TensorRT-LLM]]
 - [[概念/continuous-batching|Continuous Batching]]
 - [[概念/quantization|量化]]
-- [[部署推理/Inference_Engines/LLM_Inference_Engine_Selection_Guide|LLM 推理引擎选型指南]]
-- [[部署推理/Inference_Engines/SGLang_Deep_Dive|SGLang 深度解析]]
-- [[部署推理/Inference_Engines/TensorRT_LLM_Deep_Dive|TensorRT-LLM 深度解析]]
+- [[10_部署推理/02_Inference_Engines/LLM_Inference_Engine_Selection_Guide|LLM 推理引擎选型指南]]
+- [[10_部署推理/02_Inference_Engines/SGLang_Deep_Dive|SGLang 深度解析]]
+- [[10_部署推理/02_Inference_Engines/TensorRT_LLM_Deep_Dive|TensorRT-LLM 深度解析]]
 
 ## 核心知识体系
 

@@ -439,14 +439,14 @@ except openai.BadRequestError as err:
 
 ## 扩展阅读
 
-- [[学习/courses/microsoft/microsoft_genai_for_beginners]]
-- [[大模型/Multimodal_Models/Multimodal_Models_for_dummy]]
-- [[行业应用/GenAI_L10_Building_Low_Code_AI_Applications]]
-- [[RAG系统/Advanced_RAG/Multimodal_RAG_Architecture_2026]]
-- [[智能体/GenAI_L06_Text_Generation_Apps]]
+- [[90_学习/courses/microsoft/microsoft_genai_for_beginners]]
+- [[05_大模型/10_Multimodal_Models/Multimodal_Models_for_dummy]]
+- [[18_行业应用/GenAI_L10_Building_Low_Code_AI_Applications]]
+- [[14_RAG系统/04_Advanced_RAG/Multimodal_RAG_Architecture_2026]]
+- [[15_智能体/GenAI_L06_Text_Generation_Apps]]
 
 ## 课程导航
 
 | 上一课 | 下一课 |
 |--------|--------|
-| [[RAG系统/GenAI_L08_Building_Search_Applications|L08 构建搜索应用程序]] | [[行业应用/GenAI_L10_Building_Low_Code_AI_Applications|L10 构建低代码AI应用]] |
+| [[14_RAG系统/GenAI_L08_Building_Search_Applications|L08 构建搜索应用程序]] | [[18_行业应用/GenAI_L10_Building_Low_Code_AI_Applications|L10 构建低代码AI应用]] |

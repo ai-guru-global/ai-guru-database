@@ -10,8 +10,8 @@ relationships:
   - target: "概念/model-deployment"
     type: follows
 sources:
-  - 模型评估/Evaluation_Tools/Online_Evaluation.md
-  - 模型运维/LLM_Evaluation_Pipeline.md
+  - 08_模型评估/04_Evaluation_Tools/Online_Evaluation.md
+  - 11_模型运维/LLM_Evaluation_Pipeline.md
 summary: "在线评估是在真实用户环境中验证模型效果的方法。相比离线基准，它直接测量业务指标（转化率、留存、满意度），常用 A/B 测试、影子部署、金丝雀发布等手段。"
 provenance:
   extracted: 0.8
@@ -64,7 +64,7 @@ aliases:
 - [[概念/model-evaluation]] — 模型评估
 - [[概念/ab-testing-framework]] — A/B 测试框架
 - [[概念/model-deployment]] — 模型部署
-- [[模型评估/Evaluation_Tools/Online_Evaluation]] — 在线评估
+- [[08_模型评估/04_Evaluation_Tools/Online_Evaluation]] — 在线评估
 
 ---
 

@@ -38,8 +38,8 @@ Mira Murati 是 AI 产品工程化落地的标杆。作为 OpenAI CTO，她领�
 
 | 文件 | 内容 | 适用人群 |
 |------|------|----------|
-| [[业界观点/Mira_Murati/about\|about]] | 完整人物简介：OpenAI 产品、Thinking Machines | 所有读者 |
-| [[业界观点/Mira_Murati/sayings\|sayings]] | 重要语录合集 | 研究者 |
+| [[19_业界观点/Mira_Murati/about\|about]] | 完整人物简介：OpenAI 产品、Thinking Machines | 所有读者 |
+| [[19_业界观点/Mira_Murati/sayings\|sayings]] | 重要语录合集 | 研究者 |
 
 ---
 
@@ -79,7 +79,7 @@ Mira Murati 是 AI 产品工程化落地的标杆。作为 OpenAI CTO，她领�
 | 安全 | 产品级安全评估 |
 | 发布 | 渐进式发布哲学 |
 
-完整语录见 [[业界观点/Mira_Murati/sayings|Murati 语录]]。
+完整语录见 [[19_业界观点/Mira_Murati/sayings|Murati 语录]]。
 
 ---
 
@@ -90,7 +90,7 @@ Mira Murati 是 AI 产品工程化落地的标杆。作为 OpenAI CTO，她领�
 | 产品落地派 | 标杆 |
 | 工程化派 | 代表 |
 
-Murati 的独特之处是**站在研究与产品的交汇点**，把 [[业界观点/Ilya_Sutskever/about\|Sutskever]] 的研究成果转化为全球产品。参见 [[业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026|开源 vs 闭源]]。
+Murati 的独特之处是**站在研究与产品的交汇点**，把 [[19_业界观点/Ilya_Sutskever/about\|Sutskever]] 的研究成果转化为全球产品。参见 [[19_业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026|开源 vs 闭源]]。
 
 ---
 
@@ -98,8 +98,8 @@ Murati 的独特之处是**站在研究与产品的交汇点**，把 [[业界观
 
 | 关系 | 人物 |
 |------|------|
-| 前 OpenAI 同事 | [[业界观点/Sam_Altman/about\|Sam Altman]]、[[业界观点/Ilya_Sutskever/about\|Ilya Sutskever]] |
-| 2023 董事会危机相关 | [[业界观点/Sam_Altman/about\|Altman]] |
+| 前 OpenAI 同事 | [[19_业界观点/Sam_Altman/about\|Sam Altman]]、[[19_业界观点/Ilya_Sutskever/about\|Ilya Sutskever]] |
+| 2023 董事会危机相关 | [[19_业界观点/Sam_Altman/about\|Altman]] |
 
 ---
 
@@ -107,8 +107,8 @@ Murati 的独特之处是**站在研究与产品的交汇点**，把 [[业界观
 
 | 阶段 | 推荐内容 | 目标 |
 |------|----------|------|
-| 入门 | [[业界观点/Mira_Murati/about\|about]] | 了解产品工程化 |
-| 进阶 | [[业界观点/Mira_Murati/sayings\|sayings]] | 掌握产品哲学 |
+| 入门 | [[19_业界观点/Mira_Murati/about\|about]] | 了解产品工程化 |
+| 进阶 | [[19_业界观点/Mira_Murati/sayings\|sayings]] | 掌握产品哲学 |
 
 ---
 
@@ -145,9 +145,9 @@ Murati 的独特之处是**站在研究与产品的交汇点**，把 [[业界观
 
 ## 关联导航
 
-- [[业界观点/Mira_Murati/about\|人物简介]] · [[业界观点/Mira_Murati/sayings\|核心语录]]
-- [[业界观点/Sam_Altman/about\|Sam Altman]] · [[业界观点/Ilya_Sutskever/about\|Ilya Sutskever]]
-- [[业界观点/index\|业界观点首页]]
+- [[19_业界观点/Mira_Murati/about\|人物简介]] · [[19_业界观点/Mira_Murati/sayings\|核心语录]]
+- [[19_业界观点/Sam_Altman/about\|Sam Altman]] · [[19_业界观点/Ilya_Sutskever/about\|Ilya Sutskever]]
+- [[19_业界观点/index\|业界观点首页]]
 
 ---
 

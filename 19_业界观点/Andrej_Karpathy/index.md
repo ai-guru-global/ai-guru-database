@@ -22,7 +22,7 @@ sources:
 
 ## 人物定位
 
-Andrej Karpathy 是 AI 教育与实践的标杆。他在 [[业界观点/Fei_Fei_Li/about|Fei-Fei Li]] 指导下创建 Stanford CS231n 课程，成为全球深度学习教育标杆。担任 Tesla AI 总监期间领导自动驾驶视觉感知系统，推动纯视觉（Pure Vision）路线。他 2017 年提出"Software 2.0"概念（神经网络权重即新型源代码），深刻影响行业对 AI 工程化的认知。2025 年他提出"Vibe Coding"术语，描述用自然语言指挥 AI 编程的新范式，迅速成为行业热词。
+Andrej Karpathy 是 AI 教育与实践的标杆。他在 [[19_业界观点/Fei_Fei_Li/about|Fei-Fei Li]] 指导下创建 Stanford CS231n 课程，成为全球深度学习教育标杆。担任 Tesla AI 总监期间领导自动驾驶视觉感知系统，推动纯视觉（Pure Vision）路线。他 2017 年提出"Software 2.0"概念（神经网络权重即新型源代码），深刻影响行业对 AI 工程化的认知。2025 年他提出"Vibe Coding"术语，描述用自然语言指挥 AI 编程的新范式，迅速成为行业热词。
 
 | 维度 | 定位 |
 |------|------|
@@ -39,8 +39,8 @@ Andrej Karpathy 是 AI 教育与实践的标杆。他在 [[业界观点/Fei_Fei_
 
 | 文件 | 内容 | 适用人群 |
 |------|------|----------|
-| [[业界观点/Andrej_Karpathy/about\|about]] | 完整人物简介：Tesla、OpenAI、教育 | 所有读者 |
-| [[业界观点/Andrej_Karpathy/sayings\|sayings]] | 重要语录合集 | 研究者 |
+| [[19_业界观点/Andrej_Karpathy/about\|about]] | 完整人物简介：Tesla、OpenAI、教育 | 所有读者 |
+| [[19_业界观点/Andrej_Karpathy/sayings\|sayings]] | 重要语录合集 | 研究者 |
 
 ---
 
@@ -84,7 +84,7 @@ Andrej Karpathy 是 AI 教育与实践的标杆。他在 [[业界观点/Fei_Fei_
 | 开源 | "开源加速创新，降低准入门槛" | 多次 |
 | 教育 | "最好的学习方式是动手做项目" | 多次 |
 
-完整语录见 [[业界观点/Andrej_Karpathy/sayings|Karpathy 语录]]。
+完整语录见 [[19_业界观点/Andrej_Karpathy/sayings|Karpathy 语录]]。
 
 ---
 
@@ -96,7 +96,7 @@ Andrej Karpathy 是 AI 教育与实践的标杆。他在 [[业界观点/Fei_Fei_
 | 开源倡导派 | 成员 |
 | 实践工程派 | 代表 |
 
-Karpathy 的独特之处是**横跨研究、工程、教育三界**。参见 [[业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026|开源 vs 闭源]]。
+Karpathy 的独特之处是**横跨研究、工程、教育三界**。参见 [[19_业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026|开源 vs 闭源]]。
 
 ---
 
@@ -104,10 +104,10 @@ Karpathy 的独特之处是**横跨研究、工程、教育三界**。参见 [[�
 
 | 关系 | 人物 |
 |------|------|
-| 博士导师 | [[业界观点/Fei_Fei_Li/about\|Fei-Fei Li]] |
-| Tesla CEO | [[业界观点/Elon_Musk/about\|Elon Musk]] |
-| OpenAI 同事 | [[业界观点/Sam_Altman/about\|Sam Altman]]、[[业界观点/Ilya_Sutskever/about\|Ilya Sutskever]] |
-| 教育呼应 | [[业界观点/3Blue1Brown/about\|3Blue1Brown]]、[[业界观点/Andrew_Ng/about\|Andrew Ng]] |
+| 博士导师 | [[19_业界观点/Fei_Fei_Li/about\|Fei-Fei Li]] |
+| Tesla CEO | [[19_业界观点/Elon_Musk/about\|Elon Musk]] |
+| OpenAI 同事 | [[19_业界观点/Sam_Altman/about\|Sam Altman]]、[[19_业界观点/Ilya_Sutskever/about\|Ilya Sutskever]] |
+| 教育呼应 | [[19_业界观点/3Blue1Brown/about\|3Blue1Brown]]、[[19_业界观点/Andrew_Ng/about\|Andrew Ng]] |
 
 ---
 
@@ -115,8 +115,8 @@ Karpathy 的独特之处是**横跨研究、工程、教育三界**。参见 [[�
 
 | 阶段 | 推荐内容 | 目标 |
 |------|----------|------|
-| 入门 | [[业界观点/Andrej_Karpathy/about\|about]] | 了解多元角色 |
-| 进阶 | [[业界观点/Andrej_Karpathy/sayings\|sayings]] | 掌握 Software 2.0 |
+| 入门 | [[19_业界观点/Andrej_Karpathy/about\|about]] | 了解多元角色 |
+| 进阶 | [[19_业界观点/Andrej_Karpathy/sayings\|sayings]] | 掌握 Software 2.0 |
 | 实践 | nanoGPT / CS231n | 动手理解 LLM |
 
 ---
@@ -157,11 +157,11 @@ Karpathy 的独特之处是**横跨研究、工程、教育三界**。参见 [[�
 
 ## 关联导航
 
-- [[业界观点/Andrej_Karpathy/about\|人物简介]] · [[业界观点/Andrej_Karpathy/sayings\|核心语录]]
-- [[业界观点/Fei_Fei_Li/about\|Fei-Fei Li]] · [[业界观点/Elon_Musk/about\|Elon Musk]]
-- [[业界观点/Andrew_Ng/about\|Andrew Ng]] · [[业界观点/3Blue1Brown/about\|3Blue1Brown]]
-- [[业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026\|开源 vs 闭源]]
-- [[业界观点/index\|业界观点首页]]
+- [[19_业界观点/Andrej_Karpathy/about\|人物简介]] · [[19_业界观点/Andrej_Karpathy/sayings\|核心语录]]
+- [[19_业界观点/Fei_Fei_Li/about\|Fei-Fei Li]] · [[19_业界观点/Elon_Musk/about\|Elon Musk]]
+- [[19_业界观点/Andrew_Ng/about\|Andrew Ng]] · [[19_业界观点/3Blue1Brown/about\|3Blue1Brown]]
+- [[19_业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026\|开源 vs 闭源]]
+- [[19_业界观点/index\|业界观点首页]]
 
 ---
 

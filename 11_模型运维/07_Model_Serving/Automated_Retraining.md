@@ -277,14 +277,14 @@ def auto_gate(new_model, prod_model):
 ## 8. 相关文档
 
 ### 本章内
-- [[模型运维/MLOps_Pipeline]] — 全流水线（再训练是其闭环）
-- [[模型运维/Observability/Model_Monitoring_and_Drift_Detection_2026]] — 触发条件的来源
-- [[模型运维/CI_CD/ML_CI_CD]] — 流水线自动化基础
-- [[模型运维/MLOps_Maturity_Model]] — 自动化等级
-- [[模型运维/Orchestration/Data_Versioning_DVC_LakeFS]] — 重训数据版本化
+- [[11_模型运维/MLOps_Pipeline]] — 全流水线（再训练是其闭环）
+- [[11_模型运维/08_Observability/Model_Monitoring_and_Drift_Detection_2026]] — 触发条件的来源
+- [[11_模型运维/06_CI_CD/ML_CI_CD]] — 流水线自动化基础
+- [[11_模型运维/MLOps_Maturity_Model]] — 自动化等级
+- [[11_模型运维/05_Orchestration/Data_Versioning_DVC_LakeFS]] — 重训数据版本化
 
 ### 跨章
-- [[模型训练/README]] — 训练技术
+- [[07_模型训练/README]] — 训练技术
 - [[概念/mlops]] — MLOps 概念
 
 ---

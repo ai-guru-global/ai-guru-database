@@ -16,8 +16,8 @@ relationships:
   - target: "概念/multimodal-models"
     type: evolves_into
 sources:
-  - 架构基建/Google_Vertex_AI_Deep_Dive.md
-  - 大模型/Global_LLM_Ecosystem/Google_Gemini_Deep_Dive.md
+  - 12_架构基建/Google_Vertex_AI_Deep_Dive.md
+  - 05_大模型/14_Global_LLM_Ecosystem/Google_Gemini_Deep_Dive.md
 summary: "Gemini 是 Google DeepMind 于 2023 年底发布的多模态大模型系列（Nano / Flash / Pro / Ultra），原生支持文本/图像/视频/音频/代码多模态输入，是 Google Vertex AI 平台的旗舰模型。"
 lifecycle: reviewed
 tier: core
@@ -135,8 +135,8 @@ for chunk in model.generate_content(prompt, stream=True):
 
 - [[概念/LLM/foundation-model|基础模型]]
 - [[概念/LLM/multimodal-models|多模态模型]]
-- [[架构基建/Google_Vertex_AI_Deep_Dive|Vertex AI 深度解析]]
-- [[大模型/Global_LLM_Ecosystem/Google_Gemini_Deep_Dive|Google Gemini 深度解析]]
+- [[12_架构基建/Google_Vertex_AI_Deep_Dive|Vertex AI 深度解析]]
+- [[05_大模型/14_Global_LLM_Ecosystem/Google_Gemini_Deep_Dive|Google Gemini 深度解析]]
 
 ---
 

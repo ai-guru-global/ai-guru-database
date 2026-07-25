@@ -35,7 +35,7 @@ aliases:
 
 - **Word2Vec / GloVe（2013-2014）**: 静态词向量，每个词一个固定向量，无法处理一词多义
 - **ELMo（2018）**: 基于双向 LSTM 的上下文词向量，但 LSTM 限制了对长距离依赖的建模
-- **GPT-1（2018，详见 [[学习/References/Papers/GPT3_Reading]]）**: 用 Transformer 解码器做单向（左到右）预训练
+- **GPT-1（2018，详见 [[90_学习/References/Papers/GPT3_Reading]]）**: 用 Transformer 解码器做单向（左到右）预训练
 - **ULMFiT / Transformer**: 验证预训练 + 微调有效
 
 ### 要解决的问题
@@ -79,7 +79,7 @@ BERT 的核心问题：**能否设计一个真正双向的预训练目标，让�
 - 10% 替换为随机词（让模型不依赖 `[MASK]` 标记）
 - 10% 保持不变（让模型学会"有时候输入是对的"）
 
-**为什么双向有效**: 预测 `[MASK]` 时，Transformer 的 Self-Attention 让该位置同时关注左侧和右侧所有 Token（详见 [[学习/References/Papers/Attention_Is_All_You_Need_Reading]]），真正实现双向理解。
+**为什么双向有效**: 预测 `[MASK]` 时，Transformer 的 Self-Attention 让该位置同时关注左侧和右侧所有 Token（详见 [[90_学习/References/Papers/Attention_Is_All_You_Need_Reading]]），真正实现双向理解。
 
 ### 2. 下一句预测（Next Sentence Prediction, NSP）
 
@@ -176,8 +176,8 @@ BERT 在 SWAG 上也大幅超越基线。
 ### 直接影响
 
 1. **定义预训练 + 微调范式**: 此后数年，几乎所有 NLP 任务都采用"预训练 BERT 类模型 + 微调"
-2. **Hugging Face 生态崛起**: BERT 的开源加速了 `transformers` 库的普及（详见 [[学习/References/books/nlp-with-transformers]]）
-3. **检索与表示**: BERT 的嵌入成为语义搜索、RAG 的基础（详见 [[RAG系统/RAG_Systems]]）
+2. **Hugging Face 生态崛起**: BERT 的开源加速了 `transformers` 库的普及（详见 [[90_学习/References/books/nlp-with-transformers]]）
+3. **检索与表示**: BERT 的嵌入成为语义搜索、RAG 的基础（详见 [[14_RAG系统/RAG_Systems]]）
 4. **工业落地**: BERT 至今仍是搜索引擎（Google Search）、分类、NER 的主力
 
 ### 架构演进（编码器家族）
@@ -240,10 +240,10 @@ BERT 在 SWAG 上也大幅超越基线。
 
 ### 配套资源
 
-- **Hugging Face**: `bert-base-uncased` 直接试用（详见 [[学习/References/books/nlp-with-transformers]]）
+- **Hugging Face**: `bert-base-uncased` 直接试用（详见 [[90_学习/References/books/nlp-with-transformers]]）
 - **图解**: Jay Alammar《The Illustrated BERT》
-- **微调实战**: [[学习/References/books/hands-on-llms-alammar|Hands-On LLMs]] Ch 11
-- **代码**: [[学习/References/books/nlp-with-transformers|NLP with Transformers]] Ch 2
+- **微调实战**: [[90_学习/References/books/hands-on-llms-alammar|Hands-On LLMs]] Ch 11
+- **代码**: [[90_学习/References/books/nlp-with-transformers|NLP with Transformers]] Ch 2
 
 ### 动手验证
 
@@ -253,15 +253,15 @@ BERT 在 SWAG 上也大幅超越基线。
 
 ## 延伸阅读
 
-- [[学习/References/Papers/Attention_Is_All_You_Need_Reading|Transformer 论文]] — BERT 的架构基础
-- [[学习/References/Papers/GPT3_Reading|GPT-3 论文]] — 对比理解解码器路线
-- [[学习/References/Papers/ResNet_Reading|ResNet]] — 残差连接源头
-- [[学习/References/books/nlp-with-transformers|NLP with Transformers]] — HF 生态应用
-- [[学习/References/books/hands-on-llms-alammar|Hands-On LLMs]] — 图解 BERT 微调
-- [[学习/References/books/build-llm-from-scratch-raschka|Build LLM From Scratch]] — 理解 Transformer 内部
-- [[大模型/LLM_Fundamentals]] — LLM 基础
-- [[大模型/Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs]] — 微调技术
-- [[RAG系统/RAG_Systems]] — BERT 嵌入在检索中的应用
-- [[学习/concepts/stage2_core_tech|Stage 2: 核心技术]] — BERT 在学习路径中的位置
+- [[90_学习/References/Papers/Attention_Is_All_You_Need_Reading|Transformer 论文]] — BERT 的架构基础
+- [[90_学习/References/Papers/GPT3_Reading|GPT-3 论文]] — 对比理解解码器路线
+- [[90_学习/References/Papers/ResNet_Reading|ResNet]] — 残差连接源头
+- [[90_学习/References/books/nlp-with-transformers|NLP with Transformers]] — HF 生态应用
+- [[90_学习/References/books/hands-on-llms-alammar|Hands-On LLMs]] — 图解 BERT 微调
+- [[90_学习/References/books/build-llm-from-scratch-raschka|Build LLM From Scratch]] — 理解 Transformer 内部
+- [[05_大模型/LLM_Fundamentals]] — LLM 基础
+- [[05_大模型/07_Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs]] — 微调技术
+- [[14_RAG系统/RAG_Systems]] — BERT 嵌入在检索中的应用
+- [[90_学习/concepts/stage2_core_tech|Stage 2: 核心技术]] — BERT 在学习路径中的位置
 
-> **关联**: → [[学习/References/Papers/]] | [[学习/References/Papers/Attention_Is_All_You_Need_Reading|Transformer]] | [[学习/References/Papers/GPT3_Reading|GPT-3]] | [[大模型/LLM_Fundamentals]] | [[大模型/Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs]] | [[RAG系统/]]
+> **关联**: → [[90_学习/References/Papers/]] | [[90_学习/References/Papers/Attention_Is_All_You_Need_Reading|Transformer]] | [[90_学习/References/Papers/GPT3_Reading|GPT-3]] | [[05_大模型/LLM_Fundamentals]] | [[05_大模型/07_Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs]] | [[14_RAG系统/]]

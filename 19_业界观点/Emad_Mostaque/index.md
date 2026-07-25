@@ -15,13 +15,13 @@ Emad Mostaque — Stability AI 创始人，开源生成式 AI（open-source gene
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[业界观点/Emad_Mostaque/about|about]] | Profile: Stability AI founding and open-source AI ecosystem building | all readers interested in AI leaders |
-| [[业界观点/Emad_Mostaque/sayings|sayings]] | Collection of important quotes and public statements | all readers / researchers |
+| [[19_业界观点/Emad_Mostaque/about|about]] | Profile: Stability AI founding and open-source AI ecosystem building | all readers interested in AI leaders |
+| [[19_业界观点/Emad_Mostaque/sayings|sayings]] | Collection of important quotes and public statements | all readers / researchers |
 
 ## Related
 
-- [[业界观点/index|业界观点首页]]
-- [[计算机视觉/Generative_Models/index|Generative Models]]
+- [[19_业界观点/index|业界观点首页]]
+- [[04_计算机视觉/06_Generative_Models/index|Generative Models]]
 
 ## Emad Mostaque 核心观点
 

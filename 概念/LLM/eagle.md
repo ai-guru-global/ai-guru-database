@@ -14,7 +14,7 @@ relationships:
   - target: "概念/Inference/inference-performance"
     type: improves
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
   - "https://arxiv.org/abs/2401.15077"  # EAGLE paper
   - "https://arxiv.org/abs/2406.16858"  # EAGLE-2 paper
 summary: "EAGLE (Extrapolation Algorithm for Greater Language-model Efficiency) 是特征级推测解码方案，用轻量 Draft Head 预测目标模型的特征而非 Token，接受率达 80-90%，加速 2-3×。EAGLE-2 通过动态 Draft Tree 进一步提升至 3-4× 加速，是 2026 年自推测解码的主流方案。"
@@ -143,7 +143,7 @@ python -m sglang.launch_server \
 - [[概念/LLM/medusa]] — Medusa 多头推测解码
 - [[概念/Inference/flashinfer]] — FlashInfer 算子库
 - [[概念/Inference/inference-performance]] — 推理性能优化
-- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
 
 ## 2026 EAGLE 生态
 

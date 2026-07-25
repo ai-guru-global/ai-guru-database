@@ -782,8 +782,8 @@ groups:
 
 ## Related
 
-- [[架构基建/Architecture_Overview/AI_Infrastructure_2026|AI_Infrastructure_2026]]
-- [[架构基建/Architecture_Fundamentals/Architecture-in-nutshell.md|Architecture-in-nutshell]]
-- [[架构基建/Architecture_Fundamentals/Architecture_Infrastructure_for_dummy.md|Architecture_Infrastructure_for_dummy]]
-- [[架构基建/Architecture_Overview/Spring_AI_Architecture|Spring_AI_Architecture]]
+- [[12_架构基建/02_Architecture_Overview/AI_Infrastructure_2026|AI_Infrastructure_2026]]
+- [[12_架构基建/01_Architecture_Fundamentals/Architecture-in-nutshell.md|Architecture-in-nutshell]]
+- [[12_架构基建/01_Architecture_Fundamentals/Architecture_Infrastructure_for_dummy.md|Architecture_Infrastructure_for_dummy]]
+- [[12_架构基建/02_Architecture_Overview/Spring_AI_Architecture|Spring_AI_Architecture]]
 - [[概念/LLM/llm-infrastructure.md|llm-infrastructure]]

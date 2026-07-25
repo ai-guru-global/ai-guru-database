@@ -34,7 +34,7 @@ aliases:
 GPT-3 之前，NLP 的主流范式是**预训练 + 微调**：
 
 - **GPT-1**（2018）: 首次验证"Transformer + 无监督预训练 + 微调"有效
-- **BERT**（2018，详见 [[学习/References/Papers/BERT_Reading]]）: 双向预训练刷新 NLP 各项记录
+- **BERT**（2018，详见 [[90_学习/References/Papers/BERT_Reading]]）: 双向预训练刷新 NLP 各项记录
 - **GPT-2**（2019）: 15 亿参数，展示零样本（zero-shot）潜力，但能力仍有限
 
 这一范式的**痛点**是：每个下游任务都需要专门的标注数据和微调流程，成本高、泛化差。
@@ -66,7 +66,7 @@ GPT-3 之前，NLP 的主流范式是**预训练 + 微调**：
 
 ### 1. 模型架构与规模
 
-GPT-3 沿用 GPT-2 的**仅解码器 Transformer** 架构（详见 [[学习/References/Papers/Attention_Is_All_You_Need_Reading]]），主要变化是规模和训练细节：
+GPT-3 沿用 GPT-2 的**仅解码器 Transformer** 架构（详见 [[90_学习/References/Papers/Attention_Is_All_You_Need_Reading]]），主要变化是规模和训练细节：
 
 | 模型 | 参数量 | 层数 | d_model | 头数 | 训练 Token |
 |------|--------|------|---------|------|-----------|
@@ -170,7 +170,7 @@ GPT-3 论文对 In-Context Learning 的解释（也是后续研究的核心议�
 
 1. **催生 ChatGPT**: GPT-3 加上后续的 RLHF（基于人类反馈的强化学习）演化为 ChatGPT（2022），引爆全球 AI 浪潮
 2. **确立 Scaling Law 信仰**: "大力出奇迹"成为大模型时代的主导策略
-3. **定义提示工程（Prompt Engineering）**: Few-Shot / CoT 等技术成为 LLM 应用核心（详见 [[大模型/Prompt_Engineering/Prompt_Engineering]]）
+3. **定义提示工程（Prompt Engineering）**: Few-Shot / CoT 等技术成为 LLM 应用核心（详见 [[05_大模型/08_Prompt_Engineering/Prompt_Engineering]]）
 4. **API 商业化**: OpenAI 基于 GPT-3 推出 API，开创 LLM as a Service 模式
 
 ### 后续演进
@@ -188,7 +188,7 @@ GPT-3 论文对 In-Context Learning 的解释（也是后续研究的核心议�
 - **对齐研究**: RLHF、DPO、Constitutional AI
 - **效率研究**: 如何用更小参数达到类似能力（蒸馏、MoE）
 - **机制解释**: 为什么 In-Context Learning 有效
-- **规模极限**: 数据墙、边际收益递减（详见 [[学习/concepts/stage4_frontier]]）
+- **规模极限**: 数据墙、边际收益递减（详见 [[90_学习/concepts/stage4_frontier]]）
 
 ## 批判性思考
 
@@ -296,11 +296,11 @@ Loss ≈ A / N^α + B / D^β + C
 
 ## 与知识库其他内容的连接
 
-- [[学习/concepts/stage4_frontier|Scaling Law]] — 前沿探索中的核心概念
-- [[学习/References/Papers/Attention_Is_All_You_Need_Reading|Transformer 论文]] — 架构源头
-- [[大模型/Prompt_Engineering/Prompt_Engineering|Prompt Engineering]] — Few-Shot 是核心技巧
-- [[学习/concepts/stage2_core_tech|预训练 vs 微调]] — ICL 是"第三条路"
-- [[学习/References/books/hands-on-llms-alammar|Hands-On LLMs]] — 可视化理解 LLM
+- [[90_学习/concepts/stage4_frontier|Scaling Law]] — 前沿探索中的核心概念
+- [[90_学习/References/Papers/Attention_Is_All_You_Need_Reading|Transformer 论文]] — 架构源头
+- [[05_大模型/08_Prompt_Engineering/Prompt_Engineering|Prompt Engineering]] — Few-Shot 是核心技巧
+- [[90_学习/concepts/stage2_core_tech|预训练 vs 微调]] — ICL 是"第三条路"
+- [[90_学习/References/books/hands-on-llms-alammar|Hands-On LLMs]] — 可视化理解 LLM
 
 ## 如何精读这篇论文
 
@@ -317,8 +317,8 @@ Loss ≈ A / N^α + B / D^β + C
 
 - **API 实践**: OpenAI Playground 亲手体验 Few-Shot
 - **复现**: EleutherAI 的 GPT-Neo、Meta 的 LLaMA 是开源类似物
-- **图解**: [[学习/References/books/hands-on-llms-alammar|Hands-On LLMs]] 系列图解
-- **从零实现**: [[学习/References/books/build-llm-from-scratch-raschka|Build LLM From Scratch]] 理解架构
+- **图解**: [[90_学习/References/books/hands-on-llms-alammar|Hands-On LLMs]] 系列图解
+- **从零实现**: [[90_学习/References/books/build-llm-from-scratch-raschka|Build LLM From Scratch]] 理解架构
 
 ### 动手验证
 
@@ -327,15 +327,15 @@ Loss ≈ A / N^α + B / D^β + C
 
 ## 延伸阅读
 
-- [[学习/References/Papers/Attention_Is_All_You_Need_Reading|Transformer 论文]] — GPT 的架构基础
-- [[学习/References/Papers/BERT_Reading|BERT 论文]] — 同期编码器代表，对比理解
-- [[学习/References/Papers/ResNet_Reading|ResNet]] — 残差连接源头
-- [[学习/References/books/build-llm-from-scratch-raschka|Build LLM From Scratch]] — GPT 架构实现
-- [[学习/References/books/hands-on-llms-alammar|Hands-On LLMs]] — LLM 图解
-- [[学习/References/books/ai-engineering-huyen|AI Engineering]] — LLM 应用工程
-- [[大模型/LLM_Fundamentals]] — LLM 基础
-- [[大模型/Prompt_Engineering/Prompt_Engineering]] — 提示工程
-- [[学习/concepts/stage2_core_tech|Stage 2: 核心技术]] — LLM 在学习路径中的位置
-- [[学习/concepts/stage4_frontier|Stage 4: 前沿]] — Scaling Law 与数据墙
+- [[90_学习/References/Papers/Attention_Is_All_You_Need_Reading|Transformer 论文]] — GPT 的架构基础
+- [[90_学习/References/Papers/BERT_Reading|BERT 论文]] — 同期编码器代表，对比理解
+- [[90_学习/References/Papers/ResNet_Reading|ResNet]] — 残差连接源头
+- [[90_学习/References/books/build-llm-from-scratch-raschka|Build LLM From Scratch]] — GPT 架构实现
+- [[90_学习/References/books/hands-on-llms-alammar|Hands-On LLMs]] — LLM 图解
+- [[90_学习/References/books/ai-engineering-huyen|AI Engineering]] — LLM 应用工程
+- [[05_大模型/LLM_Fundamentals]] — LLM 基础
+- [[05_大模型/08_Prompt_Engineering/Prompt_Engineering]] — 提示工程
+- [[90_学习/concepts/stage2_core_tech|Stage 2: 核心技术]] — LLM 在学习路径中的位置
+- [[90_学习/concepts/stage4_frontier|Stage 4: 前沿]] — Scaling Law 与数据墙
 
-> **关联**: → [[学习/References/Papers/]] | [[学习/References/Papers/Attention_Is_All_You_Need_Reading|Transformer]] | [[学习/References/Papers/BERT_Reading|BERT]] | [[大模型/LLM_Fundamentals]] | [[大模型/Prompt_Engineering/Prompt_Engineering]] | [[学习/concepts/stage4_frontier|Stage 4 前沿]]
+> **关联**: → [[90_学习/References/Papers/]] | [[90_学习/References/Papers/Attention_Is_All_You_Need_Reading|Transformer]] | [[90_学习/References/Papers/BERT_Reading|BERT]] | [[05_大模型/LLM_Fundamentals]] | [[05_大模型/08_Prompt_Engineering/Prompt_Engineering]] | [[90_学习/concepts/stage4_frontier|Stage 4 前沿]]

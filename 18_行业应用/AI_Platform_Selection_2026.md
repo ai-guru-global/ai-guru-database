@@ -320,12 +320,12 @@ if __name__ == "__main__":
 
 ## 6. Related
 
-- [[行业应用/AI_Production_Architecture_2026|AI 生产架构 2026]] — 跨行业通用 AI 生产架构、模型治理与 FinOps
-- [[行业应用/AI_Applications_Industry|AI 应用与行业融合全景]] — 各行业 AI 应用现状与标杆案例
-- [[行业应用/Industry_Comparison_2026|AI 行业应用对比 2026]] — 10 大行业成熟度与场景矩阵
-- [[部署推理/Inference_Performance/index|LLM 推理性能优化]] — vLLM、TensorRT-LLM、量化与投机解码
-- [[模型运维/LLM_Guardrails_and_Safety_Ops_2026|LLM 护栏与安全 Ops 2026]] — 生产环境输入输出防护
-- [[运维/AI_Cost_Optimization_2026|AI 成本优化 2026]] — GPU/Token 成本治理与 FinOps
-- [[智能体/Agent_Production_Deployment_Runbook|Agent 生产部署 Runbook]] — Agent 系统上线工程实践
-- [[架构基建/AI_Gateway/LLM_Gateway_Deep_Dive|LLM Gateway 深度指南]] — 统一路由、限流、Fallback 与成本归因
-- [[伦理安全/AI_Security_2026/AI_Security_2026|AI 安全 2026]] — 等保、EU AI Act、HIPAA 落地 checklist
+- [[18_行业应用/AI_Production_Architecture_2026|AI 生产架构 2026]] — 跨行业通用 AI 生产架构、模型治理与 FinOps
+- [[18_行业应用/AI_Applications_Industry|AI 应用与行业融合全景]] — 各行业 AI 应用现状与标杆案例
+- [[18_行业应用/Industry_Comparison_2026|AI 行业应用对比 2026]] — 10 大行业成熟度与场景矩阵
+- [[10_部署推理/04_Inference_Performance/index|LLM 推理性能优化]] — vLLM、TensorRT-LLM、量化与投机解码
+- [[11_模型运维/LLM_Guardrails_and_Safety_Ops_2026|LLM 护栏与安全 Ops 2026]] — 生产环境输入输出防护
+- [[13_运维/AI_Cost_Optimization_2026|AI 成本优化 2026]] — GPU/Token 成本治理与 FinOps
+- [[15_智能体/Agent_Production_Deployment_Runbook|Agent 生产部署 Runbook]] — Agent 系统上线工程实践
+- [[12_架构基建/11_AI_Gateway/LLM_Gateway_Deep_Dive|LLM Gateway 深度指南]] — 统一路由、限流、Fallback 与成本归因
+- [[17_伦理安全/07_AI_Security_2026/AI_Security_2026|AI 安全 2026]] — 等保、EU AI Act、HIPAA 落地 checklist

@@ -1110,13 +1110,13 @@ flowchart TB
 
 ### 12.1 本知识库交叉引用
 
-- [[强化学习/RL_Foundations/RL_Foundations|强化学习基础]] — MDP/Bellman 方程，Sim2Real 的数学基础
-- [[强化学习/Deep_RL/Deep_RL|深度强化学习]] — PPO/SAC 等算法，Sim2Real 的主力训练算法
-- [[强化学习/Deep_RL/PPO_Deep_Dive|PPO 深度解读]] — 域随机化训练最常用的策略梯度算法
-- [[强化学习/Robotics_Embodied_AI/Embodied_AI_2026|具身智能 2026]] — Sim2Real 的主要应用场景
-- [[强化学习/Robotics_Embodied_AI/VLA_Embodied_AI_2026|VLA 具身智能]] — VLA 模型的 Sim-to-Real 流程
-- [[强化学习/Robotics_Embodied_AI/Robot_VLA_Training_Pipeline_2026|VLA 训练流水线]] — 完整的机器人训练包括 Sim2Real
-- [[强化学习/RL_Foundations/RL-in-nutshell|强化学习速览]] — RL 全栈知识图谱
+- [[06_强化学习/01_RL_Foundations/RL_Foundations|强化学习基础]] — MDP/Bellman 方程，Sim2Real 的数学基础
+- [[06_强化学习/02_Deep_RL/Deep_RL|深度强化学习]] — PPO/SAC 等算法，Sim2Real 的主力训练算法
+- [[06_强化学习/02_Deep_RL/PPO_Deep_Dive|PPO 深度解读]] — 域随机化训练最常用的策略梯度算法
+- [[06_强化学习/05_Robotics_Embodied_AI/Embodied_AI_2026|具身智能 2026]] — Sim2Real 的主要应用场景
+- [[06_强化学习/05_Robotics_Embodied_AI/VLA_Embodied_AI_2026|VLA 具身智能]] — VLA 模型的 Sim-to-Real 流程
+- [[06_强化学习/05_Robotics_Embodied_AI/Robot_VLA_Training_Pipeline_2026|VLA 训练流水线]] — 完整的机器人训练包括 Sim2Real
+- [[06_强化学习/01_RL_Foundations/RL-in-nutshell|强化学习速览]] — RL 全栈知识图谱
 
 ### 12.2 关键论文
 

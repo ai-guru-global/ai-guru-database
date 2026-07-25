@@ -997,7 +997,7 @@ class PromptVersionManager:
 - [Google SRE Book](https://sre.google/sre-book/table-of-contents/)
 - [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/)
 - [Microsoft Azure Architecture Center](https://docs.microsoft.com/en-us/azure/architecture/)
-- [Vibe Coding 生产实践](编程/Methodology/Vibe_Coding_Production_Practices.md) - AI 辅助编码的生产环境最佳实践
+- [Vibe Coding 生产实践](16_编程/03_Methodology/Vibe_Coding_Production_Practices.md) - AI 辅助编码的生产环境最佳实践
 
 ---
 
@@ -1005,7 +1005,7 @@ class PromptVersionManager:
 
 ## Related
 
-- [[智能体/Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
-- [[智能体/Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
-- [[智能体/Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
-- [[智能体/Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)
+- [[15_智能体/07_Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
+- [[15_智能体/07_Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[15_智能体/07_Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[15_智能体/07_Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)

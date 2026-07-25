@@ -15,14 +15,14 @@ AI 供应链安全（AI Supply Chain Security）— 模型投毒（model poisoni
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[伦理安全/AI_Supply_Chain_Security/AI_Supply_Chain_Security|AI Supply Chain Security]] | AI supply chain security knowledge system: model poisoning, backdoor detection and governance | security researchers / model security engineers |
-| [[伦理安全/AI_Supply_Chain_Security/AI_Supply_Chain_Security_for_dummy|AI Supply Chain Security for dummy]] | AI supply chain security beginner guide: Hugging Face model security practices | beginners / security learners |
+| [[17_伦理安全/08_AI_Supply_Chain_Security/AI_Supply_Chain_Security|AI Supply Chain Security]] | AI supply chain security knowledge system: model poisoning, backdoor detection and governance | security researchers / model security engineers |
+| [[17_伦理安全/08_AI_Supply_Chain_Security/AI_Supply_Chain_Security_for_dummy|AI Supply Chain Security for dummy]] | AI supply chain security beginner guide: Hugging Face model security practices | beginners / security learners |
 
 ## Related
 
-- [[伦理安全/index|伦理安全首页]]
-- [[面试岗位/AI_Security_Engineer/index|AI Security Engineer]]
-- [[架构基建/Security/index|架构基建 Security]]
+- [[17_伦理安全/index|伦理安全首页]]
+- [[21_面试岗位/AI_Security_Engineer/index|AI Security Engineer]]
+- [[12_架构基建/10_Security/index|架构基建 Security]]
 
 ## 核心知识体系
 
@@ -133,9 +133,9 @@ AI 供应链安全（AI Supply Chain Security）— 模型投毒（model poisoni
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

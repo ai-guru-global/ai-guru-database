@@ -8,7 +8,7 @@ relationships:
   - target: "概念/llm-quantization"
     type: related_to
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
 summary: "OpenVINO 是 Intel 开源的 AI 推理优化工具包——针对 Intel CPU/GPU/VPU 深度优化，支持模型量化、图优化和异构推理。是 Intel 硬件上 AI 推理的首选方案。"
 provenance:
   extracted: 0.20
@@ -242,4 +242,4 @@ pipe.generate("你好", streamer=lambda x: print(x, end=""))
 - [[概念/Inference/quantization|量化]] — OpenVINO 的模型量化能力
 - [[概念/Inference/triton-server|Triton Inference Server]] — 同类推理服务方案
 - [[概念/GPU/cuda|CUDA]] — 对标 Intel 方案的 NVIDIA 生态
-- [[大模型/Edge_LLM/Edge_LLM_Deep_Dive|端侧 LLM 深度解读]] — OpenVINO 在端侧推理的应用
+- [[05_大模型/12_Edge_LLM/Edge_LLM_Deep_Dive|端侧 LLM 深度解读]] — OpenVINO 在端侧推理的应用

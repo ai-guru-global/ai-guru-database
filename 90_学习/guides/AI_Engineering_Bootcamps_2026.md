@@ -133,7 +133,7 @@ sources:
 - 偏研究/理论，工程实战较少
 - 无证书
 
-**与知识库关联**: → [[强化学习/]] | [[模型训练/]] | [[学习/References/books/build-reasoning-model|Build a Reasoning Model]]
+**与知识库关联**: → [[06_强化学习/]] | [[07_模型训练/]] | [[90_学习/References/books/build-reasoning-model|Build a Reasoning Model]]
 
 ---
 
@@ -169,7 +169,7 @@ sources:
 - 学习曲线陡峭
 - 无结构化"训练营"体验（需自驱）
 
-**与知识库关联**: → [[机器学习/]] | [[深度学习/]] | [[大模型/]] | [[数学基础/]]
+**与知识库关联**: → [[02_机器学习/]] | [[03_深度学习/]] | [[05_大模型/]] | [[01_数学基础/]]
 
 ---
 
@@ -205,7 +205,7 @@ sources:
 - 部分短课程"浅尝辄止"
 - 证书含金量争议（见后文认证价值分析）
 
-**与知识库关联**: → [[入门/]] | [[大模型/Prompt_Engineering/Prompt_Engineering]] | [[RAG系统/]]
+**与知识库关联**: → [[00_入门/]] | [[05_大模型/08_Prompt_Engineering/Prompt_Engineering]] | [[14_RAG系统/]]
 
 ---
 
@@ -262,7 +262,7 @@ sources:
 
 选择训练营时，从以下 6 个维度评估：
 
-1. **当前水平**: 你的数学/编程/ML 基础如何？
+1. **当前水平**: 你的数学/16_编程/ML 基础如何？
 2. **学习目标**: 转型求职？技能提升？学术研究？兴趣探索？
 3. **时间预算**: 能投入多少时间（每周/总计）？
 4. **经济预算**: 能接受的成本范围？
@@ -276,42 +276,42 @@ sources:
 - **首选**: DeepLearning.AI Machine Learning Specialization
 - **路径**: ML 基础 → Deep Learning Specialization → 短课程探索方向
 - **理由**: 入门友好、循序渐进、有证书激励
-- **配套**: [[学习/References/books/hands-on-ml-geron|Hands-On ML]] + [[学习/References/books/dl-with-python-chollet|Deep Learning with Python]]
+- **配套**: [[90_学习/References/books/hands-on-ml-geron|Hands-On ML]] + [[90_学习/References/books/dl-with-python-chollet|Deep Learning with Python]]
 
 #### 场景 B: 开发者想转型 LLM 工程师
 
 - **首选**: Full Stack LLM Bootcamp
 - **路径**: LLM 基础 → RAG/微调实战 → 部署 → 综合项目
 - **理由**: 免费、全栈、实战强、紧跟前沿
-- **配套**: [[学习/References/books/ai-engineering-huyen|AI Engineering]] + [[学习/References/books/llm-engineers-handbook|LLM Engineer's Handbook]]
+- **配套**: [[90_学习/References/books/ai-engineering-huyen|AI Engineering]] + [[90_学习/References/books/llm-engineers-handbook|LLM Engineer's Handbook]]
 
 #### 场景 C: 想深入 RL / 推理模型训练
 
 - **首选**: Berkeley Deep RL Bootcamp
 - **路径**: RL 基础 → 策略梯度 → PPO → RLHF → 推理模型
 - **理由**: 学术权威、覆盖 RLHF 前沿
-- **配套**: [[学习/References/books/build-reasoning-model|Build a Reasoning Model]] + [[强化学习/]]
+- **配套**: [[90_学习/References/books/build-reasoning-model|Build a Reasoning Model]] + [[06_强化学习/]]
 
 #### 场景 D: 追求学术深度 / 研究导向
 
 - **首选**: Stanford CS229 / CS224N / CS336
 - **路径**: CS229（ML 理论）→ CS224N（NLP/LLM）→ CS336（LLM 从零）
 - **理由**: 学术深度顶尖、教授权威
-- **配套**: [[学习/References/books/deep-learning-goodfellow|Deep Learning (花书)]]
+- **配套**: [[90_学习/References/books/deep-learning-goodfellow|Deep Learning (花书)]]
 
 #### 场景 E: 需要就业支持 / 转行
 
 - **首选**: 商业训练营（含 Career Service）或 DeepLearning.AI + 求职辅导
 - **路径**: 系统课程 → 项目作品集 → 求职辅导 → 面试准备
 - **理由**: 就业导向、导师制、结构化
-- **配套**: [[面试岗位/]] + [[学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
+- **配套**: [[21_面试岗位/]] + [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
 
 #### 场景 F: 在职工程师技能提升
 
 - **首选**: Hugging Face 课程 + W&B 训练营 + 短课程
 - **路径**: 按需选择专题（RAG、Agent、评估、MLOps）
 - **理由**: 灵活、实战、紧贴工具生态
-- **配套**: [[学习/References/books/llms-in-production|LLMs in Production]]
+- **配套**: [[90_学习/References/books/llms-in-production|LLMs in Production]]
 
 ### 决策流程图
 
@@ -378,7 +378,7 @@ flowchart TD
 阶段 4 (Month 6+): 前沿研究
   - Stanford CS25 / CS336
   - 阅读论文 + 复现
-  - 配套: [[论文精读/]]
+  - 配套: [[20_论文精读/]]
 ```
 
 ### 路径 3: MLOps / AI 平台工程师（2-3 个月）
@@ -390,7 +390,7 @@ flowchart TD
 
 阶段 2 (Week 4-6): 实验与监控
   - W&B 训练营
-  - 配套: [[架构基建/]]
+  - 配套: [[12_架构基建/]]
 
 阶段 3 (Week 7-10): LLM 生产化
   - Full Stack LLM Bootcamp (部署部分)
@@ -413,14 +413,14 @@ flowchart TD
 - **多 Agent 系统**: 编排、通信、协作
 - **工具调用与 MCP**: Model Context Protocol 集成
 - **Agent 评估与可靠性**: 生产级 Agent 的挑战
-- **关联**: [[智能体/]] | [[学习/References/books/build-multi-agent-system|Build a Multi-Agent System]]
+- **关联**: [[15_智能体/]] | [[90_学习/References/books/build-multi-agent-system|Build a Multi-Agent System]]
 
 ### 趋势 2: 推理模型与 RL 训练实战化
 
 继 DeepSeek-R1、OpenAI o3 之后，推理模型训练从研究走向工程：
 - **GRPO/PPO 实战**: 用 TRL/OpenRLHF 训练推理模型
 - **奖励建模**: PRM/ORM 工程实践
-- **关联**: [[学习/References/books/build-reasoning-model|Build a Reasoning Model]] | [[强化学习/]]
+- **关联**: [[90_学习/References/books/build-reasoning-model|Build a Reasoning Model]] | [[06_强化学习/]]
 
 ### 趋势 3: 上下文工程取代提示工程
 
@@ -428,7 +428,7 @@ flowchart TD
 - 上下文组装与压缩
 - 长上下文管理
 - 多源信息融合
-- **关联**: [[大模型/Prompt_Engineering/Prompt_Engineering]]
+- **关联**: [[05_大模型/08_Prompt_Engineering/Prompt_Engineering]]
 
 ### 趋势 4: 垂直领域 AI 工程
 
@@ -436,7 +436,7 @@ flowchart TD
 - **AI for 金融**: 风控、量化、合规
 - **AI for 医疗**: 诊断辅助、药物发现
 - **AI for 法律**: 合同分析、案例检索
-- **关联**: [[行业应用/]]
+- **关联**: [[18_行业应用/]]
 
 ### 趋势 5: 企业级 AI 工程训练营
 
@@ -444,7 +444,7 @@ flowchart TD
 - 内部 LLM 平台搭建
 - 数据治理与合规
 - 成本优化与 ROI
-- **关联**: [[治理/]] | [[架构基建/]]
+- **关联**: [[治理/]] | [[12_架构基建/]]
 
 ### 趋势 6: 开源与社区驱动
 
@@ -503,7 +503,7 @@ flowchart TD
 ### 学习前
 
 - **明确目标**: 为什么学？学完要达成什么？
-- **评估基础**: 缺什么补什么（数学/编程/ML 基础）
+- **评估基础**: 缺什么补什么（数学/16_编程/ML 基础）
 - **预留时间**: 训练营需要持续投入，避免"注册即放弃"
 - **准备环境**: GPU 资源（Colab/Kaggle/云）、开发环境
 
@@ -521,24 +521,24 @@ flowchart TD
 - **写博客**: 输出倒逼输入，加深理解
 - **持续实践**: 训练营结束才是真正学习的开始
 - **加入社区**: 持续与同行交流，跟上技术迭代
-- **反哺知识库**: 把所学沉淀到 [[学习/]] 章节
+- **反哺知识库**: 把所学沉淀到 [[90_学习/]] 章节
 
 ---
 
 ## 与知识库的整合
 
-本指南是 [[学习/]] 章节的组成部分，与其他学习资源形成完整体系：
+本指南是 [[90_学习/]] 章节的组成部分，与其他学习资源形成完整体系：
 
 ### 学习资源矩阵
 
 | 资源类型 | 代表 | 作用 |
 |----------|------|------|
 | **训练营** | 本指南 | 结构化、高强度、社区 |
-| **书籍** | [[学习/References/books/index]] | 系统、深入、可反复 |
-| **学习路径** | [[学习/guides/learning_paths_2026]] | 角色化、序列化 |
-| **路线图** | [[学习/guides/ai_engineering_roadmap_2026]] | 全景、里程碑 |
-| **项目指南** | [[学习/guides/ai_project_guide]] | 实战、动手 |
-| **自我评估** | [[学习/guides/skills_self_assessment]] | 定位、查漏补缺 |
+| **书籍** | [[90_学习/References/books/index]] | 系统、深入、可反复 |
+| **学习路径** | [[90_学习/guides/learning_paths_2026]] | 角色化、序列化 |
+| **路线图** | [[90_学习/guides/ai_engineering_roadmap_2026]] | 全景、里程碑 |
+| **项目指南** | [[90_学习/guides/ai_project_guide]] | 实战、动手 |
+| **自我评估** | [[90_学习/guides/skills_self_assessment]] | 定位、查漏补缺 |
 
 ### 推荐组合
 
@@ -547,7 +547,7 @@ flowchart TD
 - **训练营 + 项目**: 训练营学方法，项目练能力
   - 例: Berkeley Deep RL + 复现一个推理模型
 - **训练营 + 知识库**: 训练营输入，知识库沉淀
-  - 例: 学完 RAG 训练营 → 完善 [[RAG系统/]] 章节
+  - 例: 学完 RAG 训练营 → 完善 [[14_RAG系统/]] 章节
 
 ---
 
@@ -571,7 +571,7 @@ flowchart TD
 
 ### Q5: 数学基础不好能学吗？
 
-**A**: 分情况。LLM 应用工程（Full Stack LLM、DeepLearning.AI）对数学要求不高，编程能力更重要；RL/研究（Berkeley Deep RL、Stanford CS229）需要扎实数学。数学薄弱者可先用 [[学习/References/books/why-machines-learn|Why Machines Learn]] 建立直觉，再补 [[数学基础/]]。
+**A**: 分情况。LLM 应用工程（Full Stack LLM、DeepLearning.AI）对数学要求不高，编程能力更重要；RL/研究（Berkeley Deep RL、Stanford CS229）需要扎实数学。数学薄弱者可先用 [[90_学习/References/books/why-machines-learn|Why Machines Learn]] 建立直觉，再补 [[01_数学基础/]]。
 
 ### Q6: 如何避免"训练营收集癖"？
 
@@ -583,7 +583,7 @@ flowchart TD
 
 2026 年的 AI 工程训练营生态空前繁荣，从免费顶尖课程（Berkeley、Stanford、Hugging Face）到付费商业训练营，选择丰富。关键不是"选最贵的"或"选最多的"，而是：
 
-1. **明确目标**: 你想成为什么角色？（参考 [[学习/guides/learning_paths_2026]]）
+1. **明确目标**: 你想成为什么角色？（参考 [[90_学习/guides/learning_paths_2026]]）
 2. **匹配基础**: 选难度适配的训练营
 3. **组合学习**: 训练营 + 书籍 + 项目 + 知识库
 4. **重在实践**: 产出项目作品集，而非收集证书
@@ -595,11 +595,11 @@ flowchart TD
 
 ## 延伸阅读
 
-- [[学习/guides/ai_engineering_roadmap_2026|AI 工程路线图 2026]] — 全景技能地图
-- [[学习/guides/learning_paths_2026|学习路径指南]] — 角色化学习路径
-- [[学习/guides/ai_project_guide|AI 项目指南]] — 实战项目
-- [[学习/guides/skills_self_assessment|技能自我评估]] — 定位与查漏
-- [[学习/References/books/index|书籍索引]] — 配套参考书
-- [[面试岗位/]] — 求职与面试
+- [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图 2026]] — 全景技能地图
+- [[90_学习/guides/learning_paths_2026|学习路径指南]] — 角色化学习路径
+- [[90_学习/guides/ai_project_guide|AI 项目指南]] — 实战项目
+- [[90_学习/guides/skills_self_assessment|技能自我评估]] — 定位与查漏
+- [[90_学习/References/books/index|书籍索引]] — 配套参考书
+- [[21_面试岗位/]] — 求职与面试
 
-> **关联**: → [[学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]] | [[学习/guides/learning_paths_2026|学习路径]] | [[学习/References/books/index|书籍索引]] | [[智能体/]] | [[强化学习/]]
+> **关联**: → [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]] | [[90_学习/guides/learning_paths_2026|学习路径]] | [[90_学习/References/books/index|书籍索引]] | [[15_智能体/]] | [[06_强化学习/]]

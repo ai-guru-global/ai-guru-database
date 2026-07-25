@@ -331,10 +331,10 @@ pip install jupyter notebook  # 交互式编程环境
 
 ## Related
 
-- [[数学基础/Python_for_AI_Basics]] — Python 语法基础
-- [[数学基础/AI_Development_Environment_Setup]] — Jupyter / Conda / GPU 环境
-- [[机器学习/Supervised_Learning/Your_First_ML_Model]] — 你的第一个 ML 模型实战
-- [[机器学习/ML_Algorithms_Cheatsheet]] — 经典算法速查表
+- [[01_数学基础/Python_for_AI_Basics]] — Python 语法基础
+- [[01_数学基础/AI_Development_Environment_Setup]] — Jupyter / Conda / GPU 环境
+- [[02_机器学习/02_Supervised_Learning/Your_First_ML_Model]] — 你的第一个 ML 模型实战
+- [[02_机器学习/ML_Algorithms_Cheatsheet]] — 经典算法速查表
 - [[治理/python-data-science-pipeline|Python × 数据科学]] — 从语法到实战
 - [[治理/python-first-ml-model|Python 基础 × 第一个 ML 模型]] — 从零到一的实战桥梁
-- [[可视化/Data_Visualization_Best_Practices|数据可视化最佳实践]] — 图表选择、配色与交互式可视化
+- [[94_可视化/Data_Visualization_Best_Practices|数据可视化最佳实践]] — 图表选择、配色与交互式可视化

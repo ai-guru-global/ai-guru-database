@@ -225,9 +225,9 @@ print(f"截断维度: {small_vectors.shape}")  # (2, 256)
 
 ## 下一步
 
-- 想深入技术细节？→ [[RAG系统/Embeddings/Matryoshka_Representation_Learning_Deep_Dive|Matryoshka Representation Learning 深度解析]]
-- 想了解 Embedding 模型怎么选？→ [[RAG系统/Embeddings/Embedding_Models_Guide|Embedding 模型选型与实践指南]]
-- 想了解 RAG 全流程？→ [[RAG系统/RAG_Systems_for_dummy|RAG 系统 — 小白版]]
+- 想深入技术细节？→ [[14_RAG系统/02_Embeddings/Matryoshka_Representation_Learning_Deep_Dive|Matryoshka Representation Learning 深度解析]]
+- 想了解 Embedding 模型怎么选？→ [[14_RAG系统/02_Embeddings/Embedding_Models_Guide|Embedding 模型选型与实践指南]]
+- 想了解 RAG 全流程？→ [[14_RAG系统/RAG_Systems_for_dummy|RAG 系统 — 小白版]]
 
 ---
 

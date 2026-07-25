@@ -48,7 +48,7 @@ sources: []
 
 - **核心要点**: 阐述 OpenAI 的 AGI 路线图——渐进式发布、安全对齐、广泛部署的三阶段策略
 - **来源**: [OpenAI Blog](https://openai.com/blog/planning-for-agi-and-beyond)
-- **影响**: 定义了 OpenAI 从研究到产品的过渡哲学，与 [[业界观点/Dario_Amodei/about]] 的 RSP 框架形成路线对比
+- **影响**: 定义了 OpenAI 从研究到产品的过渡哲学，与 [[19_业界观点/Dario_Amodei/about]] 的 RSP 框架形成路线对比
 
 ### 3. "What I Wish Someone Had Told Me" 博文 (2024.01)
 
@@ -65,15 +65,15 @@ sources: []
 
 ### Scaling vs 效率
 
-Sam Altman 是"规模派"的核心代表。他坚信 Scaling Laws 是通往 AGI 的最可靠路径，认为模型能力的提升主要依赖更大的参数量、更多的训练数据和更强的算力基础设施。在 2024-2025 年的多次访谈中，他明确表示"预训练的规模扩展仍未触顶"，同时认可推理时计算扩展（Test-Time Compute，如 o1/o3/R1 路线）是新的增长维度。参见 [[业界观点/Jensen_Huang/about]] 对算力需求的呼应。
+Sam Altman 是"规模派"的核心代表。他坚信 Scaling Laws 是通往 AGI 的最可靠路径，认为模型能力的提升主要依赖更大的参数量、更多的训练数据和更强的算力基础设施。在 2024-2025 年的多次访谈中，他明确表示"预训练的规模扩展仍未触顶"，同时认可推理时计算扩展（Test-Time Compute，如 o1/o3/R1 路线）是新的增长维度。参见 [[19_业界观点/Jensen_Huang/about]] 对算力需求的呼应。
 
 ### 开源 vs 闭源
 
-Altman 采取务实的中间路线。他认为前沿模型（frontier models）需要谨慎管理，GPT-4 级别的模型不应完全开源；但同时支持 API 开放和小模型的开源，认为"开放 API 生态"可以在保护安全的同时促进创新。OpenAI 在 2025 年释放了部分模型权重，被视为向"延迟开源"策略的转变。这与 [[业界观点/Yann_LeCun/about]] 的"开源是最佳防线"形成鲜明对比。
+Altman 采取务实的中间路线。他认为前沿模型（frontier models）需要谨慎管理，GPT-4 级别的模型不应完全开源；但同时支持 API 开放和小模型的开源，认为"开放 API 生态"可以在保护安全的同时促进创新。OpenAI 在 2025 年释放了部分模型权重，被视为向"延迟开源"策略的转变。这与 [[19_业界观点/Yann_LeCun/about]] 的"开源是最佳防线"形成鲜明对比。
 
 ### AI 安全与对齐
 
-Altman 的立场是"渐进式安全"——通过 Red Teaming、RLHF、Constitutional AI 等技术手段逐步提升模型安全性，同时与政府合作制定监管框架。他反对"暂停 AI 开发"的呼吁，认为暂停不切实际且可能导致地缘政治风险。此立场与 [[业界观点/Dario_Amodei/about]] 的"安全优先"理念存在张力。
+Altman 的立场是"渐进式安全"——通过 Red Teaming、RLHF、Constitutional AI 等技术手段逐步提升模型安全性，同时与政府合作制定监管框架。他反对"暂停 AI 开发"的呼吁，认为暂停不切实际且可能导致地缘政治风险。此立场与 [[19_业界观点/Dario_Amodei/about]] 的"安全优先"理念存在张力。
 
 ### AGI 时间线
 
@@ -125,18 +125,18 @@ Altman 的管理风格融合了硅谷创业文化与技术理想主义。他强�
 
 ## 交叉引用 (Cross-References)
 
-- [Talks 主题合成 2026](业界观点/Talks_Synthesis/Talks_Synthesis_2026.md) -- Scaling Laws、开源 vs 闭源、AI 安全、Agent 未来等主题中 Altman 的立场
-- [Sam Altman 金句集](业界观点/Jensen_Huang/sayings.md) -- 更多金句与权威来源链接
-- [AI 历史时间线](入门/Fundamentals/AI_History_Timeline.md) -- ChatGPT 发布与 AI 产业爆发
-- [AI 伦理与社会](入门/Ethics_and_Future/AI_Ethics_Society.md) -- Altman 参议院听证与 AI 监管讨论
-- [AI 未来趋势](入门/Ethics_and_Future/AI_Future_Trends.md) -- AGI 时间线与产业格局预判
-- [Agent 生产实践](../../智能体/README.md) -- OpenAI 的 Agent 生态与工具调用
-- [AI 伦理与安全](../../伦理安全/README.md) -- AI 对齐与安全部署策略
-- [LLM 基础](../../大模型/README.md) -- GPT 系列模型架构与演进
-- [Jensen Huang](业界观点/Jensen_Huang/about.md) -- 算力基础设施与 Scaling 共识
-- [Demis Hassabis](业界观点/Jensen_Huang/about.md) -- AGI 路线之争：产品化 vs 科学化
-- [Yann LeCun](业界观点/Jensen_Huang/about.md) -- 开源 vs 闭源路线的核心辩论
-- [Dario Amodei](业界观点/Jensen_Huang/about.md) -- 安全优先 vs 渐进式安全的对比
+- [Talks 主题合成 2026](19_业界观点/Talks_Synthesis/Talks_Synthesis_2026.md) -- Scaling Laws、开源 vs 闭源、AI 安全、Agent 未来等主题中 Altman 的立场
+- [Sam Altman 金句集](19_业界观点/Jensen_Huang/sayings.md) -- 更多金句与权威来源链接
+- [AI 历史时间线](00_入门/01_Fundamentals/AI_History_Timeline.md) -- ChatGPT 发布与 AI 产业爆发
+- [AI 伦理与社会](00_入门/04_Ethics_and_Future/AI_Ethics_Society.md) -- Altman 参议院听证与 AI 监管讨论
+- [AI 未来趋势](00_入门/04_Ethics_and_Future/AI_Future_Trends.md) -- AGI 时间线与产业格局预判
+- [Agent 生产实践](../../15_智能体/README.md) -- OpenAI 的 Agent 生态与工具调用
+- [AI 伦理与安全](../../17_伦理安全/README.md) -- AI 对齐与安全部署策略
+- [LLM 基础](../../05_大模型/README.md) -- GPT 系列模型架构与演进
+- [Jensen Huang](19_业界观点/Jensen_Huang/about.md) -- 算力基础设施与 Scaling 共识
+- [Demis Hassabis](19_业界观点/Jensen_Huang/about.md) -- AGI 路线之争：产品化 vs 科学化
+- [Yann LeCun](19_业界观点/Jensen_Huang/about.md) -- 开源 vs 闭源路线的核心辩论
+- [Dario Amodei](19_业界观点/Jensen_Huang/about.md) -- 安全优先 vs 渐进式安全的对比
 
 ---
 
@@ -154,13 +154,13 @@ Altman 的管理风格融合了硅谷创业文化与技术理想主义。他强�
 
 ## Related
 
-- [[业界观点/Sam_Altman/sayings]] -- Sam Altman 关于 AI 的观点 (Sam Altman on AI)
-- [[业界观点/Andrej_Karpathy/about]] -- Andrej Karpathy 简介 (共享: insights, leaders, speeches, talks)
-- [[业界观点/Andrew_Ng/about]] -- Andrew Ng 简介 (共享: insights, leaders, speeches, talks)
-- [[业界观点/Bill_Gates/about]] -- Bill Gates 简介 (共享: insights, leaders, speeches, talks)
-- [[业界观点/Ilya_Sutskever/about]] -- Ilya Sutskever 简介 (共享: insights, leaders, speeches, talks)
-- [[业界观点/Dario_Amodei/about]] -- Dario Amodei 简介 (共享: AI safety, alignment, frontier models)
-- [[业界观点/Demis_Hassabis/about]] -- Demis Hassabis 简介 (共享: AGI vision, industry leadership)
+- [[19_业界观点/Sam_Altman/sayings]] -- Sam Altman 关于 AI 的观点 (Sam Altman on AI)
+- [[19_业界观点/Andrej_Karpathy/about]] -- Andrej Karpathy 简介 (共享: insights, leaders, speeches, talks)
+- [[19_业界观点/Andrew_Ng/about]] -- Andrew Ng 简介 (共享: insights, leaders, speeches, talks)
+- [[19_业界观点/Bill_Gates/about]] -- Bill Gates 简介 (共享: insights, leaders, speeches, talks)
+- [[19_业界观点/Ilya_Sutskever/about]] -- Ilya Sutskever 简介 (共享: insights, leaders, speeches, talks)
+- [[19_业界观点/Dario_Amodei/about]] -- Dario Amodei 简介 (共享: AI safety, alignment, frontier models)
+- [[19_业界观点/Demis_Hassabis/about]] -- Demis Hassabis 简介 (共享: AGI vision, industry leadership)
 
 ## 附录：人物影响力评估
 

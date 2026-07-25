@@ -8,14 +8,14 @@ sources: []
 
 # Embeddings
 
-This page indexes the contents of `RAG系统/Embeddings`.
+This page indexes the contents of `14_RAG系统/Embeddings`.
 
 ## Files
 
-- [[RAG系统/Embeddings/Embedding_Models_Guide|Embedding Models Guide]]
-- [[RAG系统/Embeddings/HF_Datasets_Streaming|HF Datasets Streaming]]
-- [[RAG系统/Embeddings/Matryoshka_Representation_Learning_Deep_Dive|Matryoshka Representation Learning Deep Dive]]
-- [[RAG系统/Embeddings/Sentence_Transformers_Deep_Dive|Sentence Transformers Deep Dive]]
+- [[14_RAG系统/02_Embeddings/Embedding_Models_Guide|Embedding Models Guide]]
+- [[14_RAG系统/02_Embeddings/HF_Datasets_Streaming|HF Datasets Streaming]]
+- [[14_RAG系统/02_Embeddings/Matryoshka_Representation_Learning_Deep_Dive|Matryoshka Representation Learning Deep Dive]]
+- [[14_RAG系统/02_Embeddings/Sentence_Transformers_Deep_Dive|Sentence Transformers Deep Dive]]
 
 ## 进阶知识拓展
 
@@ -53,9 +53,9 @@ This page indexes the contents of `RAG系统/Embeddings`.
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

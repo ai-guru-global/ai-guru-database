@@ -55,7 +55,7 @@ validator.save_expectation_suite(discard_failed_expectations=False)
 - [[概念/data-validation|Data Validation]]
 - [[概念/pandera|Pandera]]
 - [[概念/mlops|MLOps]]
-- [[模型运维/Troubleshooting/Data_Validation_Failure_Runbook|数据验证失败 Runbook]]
+- [[11_模型运维/12_Troubleshooting/Data_Validation_Failure_Runbook|数据验证失败 Runbook]]
 
 ---
 
@@ -154,7 +154,7 @@ print(results)
 5. **基线管理**：建立数据质量基线
 6. **增量验证**：大数据集用增量验证
 7. **自定义 Expectation**：业务规则用自定义 Expectation
-8. **多环境支持**：开发/测试/生产环境分离
+8. **多环境支持**：开发/09_测试/生产环境分离
 9. **性能优化**：合理设置验证频率
 10. **团队协作**：Expectation Suite 团队共享
 

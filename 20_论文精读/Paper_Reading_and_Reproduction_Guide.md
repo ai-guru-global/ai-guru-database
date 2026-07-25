@@ -279,8 +279,8 @@ if __name__ == "__main__":
 
 截至 2026 年，AI 论文复现已从“个人手搓脚本”演变为**框架化、社区化、云端化**：
 
-- **训练框架**：[[模型训练/README|模型训练]] 生态中，Unsloth、Axolotl、LLaMA-Factory、verl、OpenRLHF 提供了大量 SOTA 论文的一键复现脚本。
-- **推理引擎**：[[部署推理/README|部署与推理]] 中的 vLLM、SGLang、TensorRT-LLM、llama.cpp 已将 FlashAttention、PagedAttention、Speculative Decoding 等论文方法产品化。
+- **训练框架**：[[07_模型训练/README|模型训练]] 生态中，Unsloth、Axolotl、LLaMA-Factory、verl、OpenRLHF 提供了大量 SOTA 论文的一键复现脚本。
+- **推理引擎**：[[10_部署推理/README|部署与推理]] 中的 vLLM、SGLang、TensorRT-LLM、llama.cpp 已将 FlashAttention、PagedAttention、Speculative Decoding 等论文方法产品化。
 - **评估工具**：lm-eval-harness、OpenCompass、RAGAS、SWE-bench、AgentBench 成为验证论文结论的事实标准。
 - **可复现平台**：Papers with Code、Hugging Face Papers、Replicate、Lambda Labs 提供预置环境与基准。
 
@@ -351,19 +351,19 @@ if __name__ == "__main__":
 
 ## 相关阅读
 
-- [[论文精读/README|22 经典与必读 AI 论文清单]] — 本知识库的核心论文入口
-- [[论文精读/Research_Template|课题研究模板]] — 标准化研究项目结构
-- [[深度学习/README|深度学习]] — 理解模型架构与优化基础
-- [[大模型/README|NLP 与大语言模型]] — LLM 论文的主要来源
-- [[强化学习/README|强化学习]] — RL、RLHF、GRPO 论文落地路径
-- [[模型训练/README|模型训练]] — 训练工程、分布式训练与 FinOps
-- [[模型评估/README|模型评估]] — 论文指标验证与基准测评
-- [[测试/README|AI 测试]] — 复现后的回归、A/B 与红队测试
-- [[部署推理/README|部署与推理]] — 论文方法产品化的最后一公里
-- [[模型运维/README|MLOps 流水线]] — 实验追踪、CI/CD 与模型治理
-- [[RAG系统/README|RAG 系统]] — 检索增强生成论文的工程化
-- [[智能体/README|Agent 生产]] — Agent 论文从原型到上线
-- [[伦理安全/README|AI 伦理与安全]] — 论文方法的安全合规评估
+- [[20_论文精读/README|22 经典与必读 AI 论文清单]] — 本知识库的核心论文入口
+- [[20_论文精读/Research_Template|课题研究模板]] — 标准化研究项目结构
+- [[03_深度学习/README|深度学习]] — 理解模型架构与优化基础
+- [[05_大模型/README|NLP 与大语言模型]] — LLM 论文的主要来源
+- [[06_强化学习/README|强化学习]] — RL、RLHF、GRPO 论文落地路径
+- [[07_模型训练/README|模型训练]] — 训练工程、分布式训练与 FinOps
+- [[08_模型评估/README|模型评估]] — 论文指标验证与基准测评
+- [[09_测试/README|AI 测试]] — 复现后的回归、A/B 与红队测试
+- [[10_部署推理/README|部署与推理]] — 论文方法产品化的最后一公里
+- [[11_模型运维/README|MLOps 流水线]] — 实验追踪、CI/CD 与模型治理
+- [[14_RAG系统/README|RAG 系统]] — 检索增强生成论文的工程化
+- [[15_智能体/README|Agent 生产]] — Agent 论文从原型到上线
+- [[17_伦理安全/README|AI 伦理与安全]] — 论文方法的安全合规评估
 
 ---
 

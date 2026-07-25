@@ -203,8 +203,8 @@ sources: []
 
 ## Related
 
-- [[面试岗位/AI_Product_Manager/AI_Product_Manager_2026|AI PM 2026]]
-- [[面试岗位/AI_Product_Manager/AI_Product_Manager|AI 产品经理面试全攻略]]
-- [[面试岗位/Interview_Guide/index|面试总指南]]
-- [[行业应用/index|行业应用]]
-- [[大模型/index|大模型]]
+- [[21_面试岗位/AI_Product_Manager/AI_Product_Manager_2026|AI PM 2026]]
+- [[21_面试岗位/AI_Product_Manager/AI_Product_Manager|AI 产品经理面试全攻略]]
+- [[21_面试岗位/Interview_Guide/index|面试总指南]]
+- [[18_行业应用/index|行业应用]]
+- [[05_大模型/index|大模型]]

@@ -3,11 +3,11 @@ title: "中国 vs 国际大模型全面对比 (Chinese vs Global LLM Comparison)
 category: -synthesis
 tags: ["synthesis", "chinese-llm", "global-llm", "comparison", "benchmark", "pricing", "moe", "open-source", "reasoning", "multimodal", "agent"]
 sources:
-  - "大模型/Chinese_LLM_Ecosystem"
-  - "大模型/Global_LLM_Ecosystem"
-  - "大模型/Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix"
-  - "大模型/LLM_Architectures"
-  - "大模型/Reasoning_Models"
+  - "05_大模型/Chinese_LLM_Ecosystem"
+  - "05_大模型/Global_LLM_Ecosystem"
+  - "05_大模型/15_Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix"
+  - "05_大模型/LLM_Architectures"
+  - "05_大模型/Reasoning_Models"
 summary: "横切合成文档：从技术路线、模型规模、Benchmark、定价、上下文、开源、推理、多模态、Agent、训练成本、安全对齐、生态系统 12 个维度，全面对比中国 15 家与国际 5 大巨头的大模型生态。"
 created: 2026-06-15
 updated: 2026-06-15
@@ -710,32 +710,32 @@ flowchart TD
 
 ### 中国大模型生态
 
-- [[大模型/Chinese_LLM_Ecosystem/README|中国大模型生态全景]]
-- [[大模型/Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix|中国大模型全厂商对比矩阵]]
-- [[大模型/Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive|DeepSeek 深度解析]]
-- [[大模型/Chinese_LLM_Ecosystem/Qwen_Deep_Dive|Qwen 深度解析]]
-- [[大模型/Chinese_LLM_Ecosystem/Kimi_Moonshot_Deep_Dive|Kimi 深度解析]]
-- [[大模型/Chinese_LLM_Ecosystem/GLM_Zhipu_Deep_Dive|GLM/智谱 深度解析]]
-- [[大模型/Chinese_LLM_Ecosystem/MiniMax_Deep_Dive|MiniMax 深度解析]]
-- [[大模型/Chinese_LLM_Ecosystem/Xiaomi_MiMo_Deep_Dive|小米 MiMo 深度解析]]
+- [[05_大模型/15_Chinese_LLM_Ecosystem/README|中国大模型生态全景]]
+- [[05_大模型/15_Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix|中国大模型全厂商对比矩阵]]
+- [[05_大模型/15_Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive|DeepSeek 深度解析]]
+- [[05_大模型/15_Chinese_LLM_Ecosystem/Qwen_Deep_Dive|Qwen 深度解析]]
+- [[05_大模型/15_Chinese_LLM_Ecosystem/Kimi_Moonshot_Deep_Dive|Kimi 深度解析]]
+- [[05_大模型/15_Chinese_LLM_Ecosystem/GLM_Zhipu_Deep_Dive|GLM/智谱 深度解析]]
+- [[05_大模型/15_Chinese_LLM_Ecosystem/MiniMax_Deep_Dive|MiniMax 深度解析]]
+- [[05_大模型/15_Chinese_LLM_Ecosystem/Xiaomi_MiMo_Deep_Dive|小米 MiMo 深度解析]]
 
 ### 国际大模型生态
 
-- [[大模型/Global_LLM_Ecosystem/README|国际大模型生态全景]]
-- [[大模型/Global_LLM_Ecosystem/OpenAI_Deep_Dive|OpenAI 深度解析]]
-- [[大模型/Global_LLM_Ecosystem/Google_Gemini_Deep_Dive|Google Gemini 深度解析]]
-- [[大模型/Global_LLM_Ecosystem/Anthropic_Claude_Deep_Dive|Anthropic Claude 深度解析]]
-- [[大模型/Global_LLM_Ecosystem/Meta_LLaMA_Deep_Dive|Meta LLaMA 深度解析]]
-- [[大模型/Global_LLM_Ecosystem/Mistral_AI_Deep_Dive|Mistral AI 深度解析]]
+- [[05_大模型/14_Global_LLM_Ecosystem/README|国际大模型生态全景]]
+- [[05_大模型/14_Global_LLM_Ecosystem/OpenAI_Deep_Dive|OpenAI 深度解析]]
+- [[05_大模型/14_Global_LLM_Ecosystem/Google_Gemini_Deep_Dive|Google Gemini 深度解析]]
+- [[05_大模型/14_Global_LLM_Ecosystem/Anthropic_Claude_Deep_Dive|Anthropic Claude 深度解析]]
+- [[05_大模型/14_Global_LLM_Ecosystem/Meta_LLaMA_Deep_Dive|Meta LLaMA 深度解析]]
+- [[05_大模型/14_Global_LLM_Ecosystem/Mistral_AI_Deep_Dive|Mistral AI 深度解析]]
 
 ### 相关论文
 
-- [[论文精读/Scaling/Scaling_Laws_Deep_Dive|Scaling Laws 深度解读]]
-- [[论文精读/Architecture/Mixture_of_Experts_Deep_Dive|MoE 深度解读]]
-- [[论文精读/DeepSeek_V3_Technical_Report|DeepSeek-V3 技术报告]]
-- [[论文精读/Alignment/RLHF_DPO_Deep_Dive|RLHF 与 DPO 深度解读]]
-- [[论文精读/Alignment/Chain_of_Thought_Deep_Dive|Chain-of-Thought 深度解读]]
-- [[论文精读/Scaling/Chinchilla_Deep_Dive|Chinchilla 深度解读]]
+- [[20_论文精读/03_Scaling/Scaling_Laws_Deep_Dive|Scaling Laws 深度解读]]
+- [[20_论文精读/02_Architecture/Mixture_of_Experts_Deep_Dive|MoE 深度解读]]
+- [[20_论文精读/DeepSeek_V3_Technical_Report|DeepSeek-V3 技术报告]]
+- [[20_论文精读/06_Alignment/RLHF_DPO_Deep_Dive|RLHF 与 DPO 深度解读]]
+- [[20_论文精读/06_Alignment/Chain_of_Thought_Deep_Dive|Chain-of-Thought 深度解读]]
+- [[20_论文精读/03_Scaling/Chinchilla_Deep_Dive|Chinchilla 深度解读]]
 
 ### 相关合成文档
 
@@ -749,12 +749,12 @@ flowchart TD
 
 ## Sources
 
-- [[大模型/Chinese_LLM_Ecosystem/README]] — 中国 15 家厂商技术数据
-- [[大模型/Global_LLM_Ecosystem/README]] — 国际 5 大巨头技术数据
-- [[大模型/Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]] — 中国厂商定价和 Benchmark
-- [[大模型/LLM_Architectures/LLM_Architectures]] — Transformer/MoE 架构基础
-- [[大模型/Reasoning_Models/o1_Class_Reasoning_Models]] — 推理模型技术分析
-- [[大模型/Reasoning_Models/DeepSeek_R1_Technical_Analysis]] — DeepSeek R1 技术分析
+- [[05_大模型/15_Chinese_LLM_Ecosystem/README]] — 中国 15 家厂商技术数据
+- [[05_大模型/14_Global_LLM_Ecosystem/README]] — 国际 5 大巨头技术数据
+- [[05_大模型/15_Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]] — 中国厂商定价和 Benchmark
+- [[05_大模型/05_LLM_Architectures/LLM_Architectures]] — Transformer/MoE 架构基础
+- [[05_大模型/09_Reasoning_Models/o1_Class_Reasoning_Models]] — 推理模型技术分析
+- [[05_大模型/09_Reasoning_Models/DeepSeek_R1_Technical_Analysis]] — DeepSeek R1 技术分析
 
 ---
 

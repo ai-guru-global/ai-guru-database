@@ -1616,8 +1616,8 @@ class VectorDBContract:
 
 ## Related
 
-- [[测试/Testing_Fundamentals/AI-Testing-in-nutshell.md|AI-Testing-in-nutshell]]
-- [[测试/Testing_Fundamentals/AI_Testing_for_dummy.md|AI_Testing_for_dummy]]
-- [[测试/Testing_Frameworks/Java_AI_Testing.md|Java_AI_Testing]]
-- [[测试/README.md|测试 README]]
-- [[智能体/Agent_Evaluation/Testing_Methodologies/Testing_Framework.md|Testing_Framework]]
+- [[09_测试/01_Testing_Fundamentals/AI-Testing-in-nutshell.md|AI-Testing-in-nutshell]]
+- [[09_测试/01_Testing_Fundamentals/AI_Testing_for_dummy.md|AI_Testing_for_dummy]]
+- [[09_测试/02_Testing_Frameworks/Java_AI_Testing.md|Java_AI_Testing]]
+- [[09_测试/README.md|测试 README]]
+- [[15_智能体/07_Agent_Evaluation/Testing_Methodologies/Testing_Framework.md|Testing_Framework]]

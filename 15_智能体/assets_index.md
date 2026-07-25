@@ -15,13 +15,13 @@ tags: [auto-index]
 
 ## 子目录
 
-- [[智能体/assets/the-anatomy-of-an-agent-harness.assets/index|The Anatomy of an Agent Harness Assets]] — Agent harness 架构配图（3 images: runtime, tool calling, loop control）
+- [[15_智能体/assets/the-anatomy-of-an-agent-harness.assets/index|The Anatomy of an Agent Harness Assets]] — Agent harness 架构配图（3 images: runtime, tool calling, loop control）
 
 ## Related
 
-- [[智能体/index|智能体首页]]
-- [[智能体/Agent_Foundations/index|Agent Foundations]]
-- [[智能体/Agent_Architecture/index|Agent Architecture]]
+- [[15_智能体/index|智能体首页]]
+- [[15_智能体/01_Agent_Foundations/index|Agent Foundations]]
+- [[15_智能体/Agent_Architecture/index|Agent Architecture]]
 
 ## assets 核心概念
 

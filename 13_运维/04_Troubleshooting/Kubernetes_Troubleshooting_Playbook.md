@@ -586,7 +586,7 @@ kubectl get nodes -o json | jq -r '
 - [[概念/cni|CNI]] — 容器网络接口
 - [[概念/csi|CSI]] — 容器存储接口
 - [[概念/persistent-volume-claim|PVC]] — 持久卷声明
-- [[架构基建/Kubernetes_Core_Components_Deep_Dive|Kubernetes 核心组件深度解析]]
-- [[架构基建/Kubernetes_Networking_Deep_Dive|Kubernetes 网络深度解析]]
-- [[架构基建/Kubernetes_Storage_Deep_Dive|Kubernetes 存储深度解析]]
-- [[运维/SRE_Reliability/AI_Incident_Response_Playbook|AI 事故响应 Playbook]]
+- [[12_架构基建/Kubernetes_Core_Components_Deep_Dive|Kubernetes 核心组件深度解析]]
+- [[12_架构基建/Kubernetes_Networking_Deep_Dive|Kubernetes 网络深度解析]]
+- [[12_架构基建/Kubernetes_Storage_Deep_Dive|Kubernetes 存储深度解析]]
+- [[13_运维/02_SRE_Reliability/AI_Incident_Response_Playbook|AI 事故响应 Playbook]]

@@ -137,13 +137,13 @@ sources: []
 
 ## 交叉引用 (Cross-References)
 
-- [Talks 主题合成 2026](业界观点/Talks_Synthesis/Talks_Synthesis_2026.md) — 查看 Fei-Fei Li 在各主题中的立场
-- [[业界观点/Andrej_Karpathy/about]] — Karpathy 是李飞飞的博士生
-- [[业界观点/Andrew_Ng/about]] — Ng 与李飞飞同为斯坦福教授，关注 AI 教育与社会影响
-- [[业界观点/Yann_LeCun/about]] — LeCun 与李飞飞在视觉 AI 方向有技术共鸣
-- [计算机视觉](../../计算机视觉/README.md) — ImageNet 与视觉识别发展
-- [AI 历史时间线](入门/Fundamentals/AI_History_Timeline.md) — ImageNet 革命
-- [AI 伦理与社会](入门/Ethics_and_Future/AI_Ethics_Society.md) — 以人为本 AI 与多样性
+- [Talks 主题合成 2026](19_业界观点/Talks_Synthesis/Talks_Synthesis_2026.md) — 查看 Fei-Fei Li 在各主题中的立场
+- [[19_业界观点/Andrej_Karpathy/about]] — Karpathy 是李飞飞的博士生
+- [[19_业界观点/Andrew_Ng/about]] — Ng 与李飞飞同为斯坦福教授，关注 AI 教育与社会影响
+- [[19_业界观点/Yann_LeCun/about]] — LeCun 与李飞飞在视觉 AI 方向有技术共鸣
+- [计算机视觉](../../04_计算机视觉/README.md) — ImageNet 与视觉识别发展
+- [AI 历史时间线](00_入门/01_Fundamentals/AI_History_Timeline.md) — ImageNet 革命
+- [AI 伦理与社会](00_入门/04_Ethics_and_Future/AI_Ethics_Society.md) — 以人为本 AI 与多样性
 
 ---
 
@@ -160,10 +160,10 @@ sources: []
 
 ## Related
 
-- [[业界观点/Andrej_Karpathy/about]] — Andrej Karpathy 简介 (Andrej Karpathy) (共享: insights, leaders, speeches, talks)
-- [[业界观点/Andrew_Ng/about]] — Andrew Ng 简介 (Andrew Ng) (共享: insights, leaders, speeches, talks)
-- [[业界观点/Andrew_Ng/sayings]] — Andrew Ng 关于 AI 的观点与格言 (共享: insights, leaders, speeches, talks)
-- [[业界观点/Bill_Gates/about]] — Bill Gates 简介 (Bill Gates) (共享: insights, leaders, speeches, talks)
+- [[19_业界观点/Andrej_Karpathy/about]] — Andrej Karpathy 简介 (Andrej Karpathy) (共享: insights, leaders, speeches, talks)
+- [[19_业界观点/Andrew_Ng/about]] — Andrew Ng 简介 (Andrew Ng) (共享: insights, leaders, speeches, talks)
+- [[19_业界观点/Andrew_Ng/sayings]] — Andrew Ng 关于 AI 的观点与格言 (共享: insights, leaders, speeches, talks)
+- [[19_业界观点/Bill_Gates/about]] — Bill Gates 简介 (Bill Gates) (共享: insights, leaders, speeches, talks)
 
 ## 附录：人物影响力评估
 

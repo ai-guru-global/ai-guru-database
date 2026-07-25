@@ -177,10 +177,10 @@ t0: [A, B, C] 进入 batch
 - [[概念/continuous-batching]] — Continuous Batching
 - [[概念/paged-attention]] — PagedAttention
 - [[概念/prefill-decode]] — Prefill / Decode 阶段
-- [[部署推理/Inference_Performance/README|推理性能专题]]
-- [[部署推理/Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]]
-- [[部署推理/Inference_Performance/Prefill_Decode_Disaggregation|Prefill-Decode 分离]]
-- [[部署推理/Inference_Engines/vLLM_Deep_Dive|vLLM Deep Dive]]
+- [[10_部署推理/04_Inference_Performance/README|推理性能专题]]
+- [[10_部署推理/04_Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]]
+- [[10_部署推理/04_Inference_Performance/Prefill_Decode_Disaggregation|Prefill-Decode 分离]]
+- [[10_部署推理/02_Inference_Engines/vLLM_Deep_Dive|vLLM Deep Dive]]
 
 ## 核心知识体系
 

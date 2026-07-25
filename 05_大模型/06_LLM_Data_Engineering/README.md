@@ -173,9 +173,9 @@ sources: []
 
 ## Related
 
-- [[大模型/LLM_Training_Deep_Dive|LLM Training]]
-- [[大模型/Fine_tuning_Techniques/index|Fine-tuning]]
-- [[大模型/index|大模型首页]]
+- [[05_大模型/LLM_Training_Deep_Dive|LLM Training]]
+- [[05_大模型/07_Fine_tuning_Techniques/index|Fine-tuning]]
+- [[05_大模型/index|大模型首页]]
 
 ## 附录：数据合规
 

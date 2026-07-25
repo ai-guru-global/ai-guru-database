@@ -10,8 +10,8 @@ relationships:
   - target: "概念/model-training"
     type: belongs_to
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
-  - 模型训练/Distributed_Training_2026.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
+  - 07_模型训练/Distributed_Training_2026.md
 summary: "Checkpoint 是分布式训练的容错机制，定期将模型参数、优化器状态、训练进度持久化到磁盘。GPU 故障时从最近 Checkpoint 恢复，避免数天训练成果丢失。"
 provenance:
   extracted: 0.45
@@ -143,7 +143,7 @@ AI Stack 容错层
 - [[概念/distributed-parallelism]] — 分布式并行策略
 - [[概念/model-training]] — 模型训练
 - [[概念/deepspeed]] — DeepSpeed（ZeRO Checkpoint）
-- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack（容错层）
+- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack（容错层）
 
 ---
 

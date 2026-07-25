@@ -443,7 +443,7 @@ AI辅助(U-Net):
 
 ## Related
 
-- [[计算机视觉/README]] — 05 计算机视觉 (Computer Vision) (共享: cnn, computer-vision, cv, image-processing)
-- [[计算机视觉/Video_Generation/README]] — AI视频生成 (Video Generation) (共享: cnn, computer-vision, cv, image-processing)
-- [[论文精读/Vision/ResNet_Deep_Dive]] — ResNet 深度解读 (Deep Residual Learning for Image Recognition) (共享: cnn, cv)
+- [[04_计算机视觉/README]] — 05 计算机视觉 (Computer Vision) (共享: cnn, computer-vision, cv, image-processing)
+- [[04_计算机视觉/07_Video_Generation/README]] — AI视频生成 (Video Generation) (共享: cnn, computer-vision, cv, image-processing)
+- [[20_论文精读/08_Vision/ResNet_Deep_Dive]] — ResNet 深度解读 (Deep Residual Learning for Image Recognition) (共享: cnn, cv)
 - [[概念/computer-vision]] — 计算机视觉 (共享: cnn, cv)

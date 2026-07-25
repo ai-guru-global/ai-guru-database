@@ -46,10 +46,10 @@ Agent 框架的灵活性往往是生产稳定性的敌人。LangGraph 的状态�
 ## Related
 
 - [[概念/ai-agents]]
-- [[智能体/Agent_Frameworks/README]]
-- [[智能体/Agent_Platforms/README]]
-- [[运维/AI_Observability_Guide]]
-- [[架构基建/Multi_Tenant_Architecture]]
+- [[15_智能体/02_Agent_Frameworks/README]]
+- [[15_智能体/09_Agent_Platforms/README]]
+- [[13_运维/AI_Observability_Guide]]
+- [[12_架构基建/Multi_Tenant_Architecture]]
 
 ## 附录：核心概念速查
 
@@ -179,14 +179,14 @@ Agent 框架的灵活性往往是生产稳定性的敌人。LangGraph 的状态�
 
 | 关联主题 | 关系 | 参考路径 |
 |----------|------|----------|
-| Agent基础理论 | 前置知识 | 智能体/Agent_Foundations/ |
-| 框架与工具 | 实现支撑 | 智能体/Agent_Frameworks/ |
-| 评估与测试 | 质量保障 | 智能体/Agent_Evaluation/ |
-| 协议与标准 | 互操作基础 | 智能体/Agent_Protocols/ |
-| 生产部署 | 运维实践 | 智能体/Enterprise_Agent/ |
-| 记忆系统 | 核心能力 | 智能体/Memory_Infrastructure/ |
-| 工作流编排 | 执行引擎 | 智能体/Agent_Workflow/ |
-| 技能扩展 | 能力增强 | 智能体/Agent_Skills/ |
+| Agent基础理论 | 前置知识 | 15_智能体/01_Agent_Foundations/ |
+| 框架与工具 | 实现支撑 | 15_智能体/02_Agent_Frameworks/ |
+| 评估与测试 | 质量保障 | 15_智能体/07_Agent_Evaluation/ |
+| 协议与标准 | 互操作基础 | 15_智能体/Agent_Protocols/ |
+| 生产部署 | 运维实践 | 15_智能体/10_Enterprise_Agent/ |
+| 记忆系统 | 核心能力 | 15_智能体/06_Memory_Infrastructure/ |
+| 工作流编排 | 执行引擎 | 15_智能体/03_Agent_Workflow/ |
+| 技能扩展 | 能力增强 | 15_智能体/05_Agent_Skills/ |
 
 ## 版本与更新记录
 

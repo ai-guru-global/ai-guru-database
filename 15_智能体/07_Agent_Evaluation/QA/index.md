@@ -15,15 +15,15 @@ Agent 系统的质量保证流程（QA process）与性能基准（performance b
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[智能体/Agent_Evaluation/QA/Quality_Assurance|Quality Assurance]] | Quality assurance system: test plans, defect management and release gates | QA engineers / evaluation engineers |
-| [[智能体/Agent_Evaluation/QA/Performance_Benchmarks|Performance Benchmarks]] | Performance benchmarks: latency, throughput and resource utilization standards | performance engineers |
+| [[15_智能体/07_Agent_Evaluation/QA/Quality_Assurance|Quality Assurance]] | Quality assurance system: test plans, defect management and release gates | QA engineers / evaluation engineers |
+| [[15_智能体/07_Agent_Evaluation/QA/Performance_Benchmarks|Performance Benchmarks]] | Performance benchmarks: latency, throughput and resource utilization standards | performance engineers |
 
 ## Related
 
-- [[智能体/Agent_Evaluation/Testing_Methodologies/index|测试方法论]]
-- [[智能体/Agent_Evaluation/Rubrics/index|评分规则]]
-- [[智能体/Agent_Evaluation/Assessment/index|评估流程]]
-- [[智能体/Agent_Evaluation/index|← 返回智能体评估]]
+- [[15_智能体/07_Agent_Evaluation/Testing_Methodologies/index|测试方法论]]
+- [[15_智能体/07_Agent_Evaluation/Rubrics/index|评分规则]]
+- [[15_智能体/07_Agent_Evaluation/Assessment/index|评估流程]]
+- [[15_智能体/07_Agent_Evaluation/index|← 返回智能体评估]]
 
 ## QA 核心概念
 

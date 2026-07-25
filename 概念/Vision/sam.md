@@ -13,7 +13,7 @@ relationships:
   - target: "[[概念/computer-vision]]"
     type: part_of
 sources:
-  - 计算机视觉/Segmentation/Segmentation.md
+  - 04_计算机视觉/03_Segmentation/Segmentation.md
 summary: SAM 是 Meta 发布的可提示图像分割基础模型，在 11M 图像、1B 掩码上训练，支持通过点、框、文本等提示实现零样本分割任意物体，是视觉基础模型的里程碑。
 provenance:
   extracted: 0.85
@@ -181,7 +181,7 @@ SAM 2 将能力扩展到**视频分割**，引入了流式记忆架构：
 
 ## 来源
 
-- 计算机视觉/Segmentation/Segmentation.md
+- 04_计算机视觉/03_Segmentation/Segmentation.md
 - Kirillov et al., "Segment Anything", ICCV 2023
 - Ravi et al., "SAM 2: Segment Anything in Images and Videos", 2024
 

@@ -27,7 +27,7 @@ sources: []
 |------|------|-----------|
 | 00_AI_Introduction | -/10 | `AI入门` 作为高校 AI 通识课教材导入章节已具备扎实骨架，概念、历史、工具、伦理、案例、实验覆盖较全，小白版与可运行实验是亮点；但面向企业生产环境的内容明显薄弱，RA... |
 | 01_Fundamentals | -/10 | 作为连接统计与机器学习的进阶数学基础，可与概率统计章节形成进阶路径。... |
-| 02_Machine_Learning | -/10 | 一句话结论：该章节在经典机器学习理论与核心算法上覆盖较全（尤其集成学习、推荐、时序、异常检测、AutoML 深度好），但严重偏向“学习/竞赛”视角，生产环境所需的 MLOps、部署、监控、特征平台、可... |
+| 02_Machine_Learning | -/10 | 一句话结论：该章节在经典机器学习理论与核心算法上覆盖较全（尤其集成学习、推荐、时序、异常检测、AutoML 深度好），但严重偏向“90_学习/竞赛”视角，生产环境所需的 MLOps、部署、监控、特征平台、可... |
 | 03_Deep_Learning | -/10 | `深度学习` 在神经网络基础、优化方法、前沿话题（SSM/GNN/SSL/World Models）上质量较高且覆盖较全，但作为深度学习章节的「主章节」，仍缺少 CNN/Tra... |
 | 04_Computer_Vision | -/10 | 一句话结论：`计算机视觉` 在概念教学、零基础入门和代码示例层面已相当扎实，但距离「企业生产级知识库」仍有明显缺口——缺少部署运维、成本安全、MLOps 数据管线、实时视频分... |
 | 05_NLP_LLMs | -/10 | `大模型` 在基础理论、模型生态、微调/提示词工程、数据工程方面覆盖扎实，中外大模型生态与 2026 推理/长上下文专题表现突出；但作为"生产环境必备"的 RAG、部署 Runbook... |
@@ -44,7 +44,7 @@ sources: []
 | 16_AI_Coding | -/10 | 一句话结论：骨架扎实、方法论领先，但工具指南深度参差不齐、企业生产级 Runbook 与合规治理不足、开源生态与多语言实践覆盖薄弱，亟需补齐 P0 级文件并清理重复文件。... |
 | 17_Ethics_Safety | -/10 | `伦理安全` 已经具备了从入门到进阶、从攻击面到防御架构、从对齐技术到治理合规的完整骨架，核心文档（AI Security 2026、Safety Evaluation、LLM... |
 | 18_AI_Applications_Industry | -/10 | 30. 开源/商业平台选型 — 缺 Hugging Face、NVIDIA AI Enterprise、Azure OpenAI、百度千帆等行业选型。... |
-| 19_Talks | -/10 | > 注：若保持「按人物组织」风格，可新建 `业界观点/Synthesis/` 子目录存放上述主题合成文件；若希望与人物目录同级，可直接放在 `业界观点/` 根目录。... |
+| 19_Talks | -/10 | > 注：若保持「按人物组织」风格，可新建 `19_业界观点/Synthesis/` 子目录存放上述主题合成文件；若希望与人物目录同级，可直接放在 `19_业界观点/` 根目录。... |
 | 20_Papers_and_Research | -/10 | 10. 论文阅读方法论与复现指南：如何读论文、复现 checklist、Baseline 调试、实验设计。... |
 | 21_Interviews | -/10 | 一句话结论：`面试岗位` 在「头部工程岗位（Infra/MLE/LLM Platform/NLP）」已具备可使用的题库骨架，但约 70% 的岗位仍停留在单文件骨架状态，且 Agent... |
 | 90_Learn | -/10 | 8. 量子机器学习概览 2026：量子计算对 ML 的潜在影响。... |
@@ -172,14 +172,14 @@ sources: []
 
 | 建议文件名 | 优先级 | 目标子目录 |
 |---|---|---|
-| ``ML_System_Architecture_and_Deployment.md`` | P0 | 根目录 `机器学习/` |
+| ``ML_System_Architecture_and_Deployment.md`` | P0 | 根目录 `02_机器学习/` |
 | ``Feature_Store_Design_Runbook.md`` | P0 | `Feature_Engineering/` |
-| ``Model_Monitoring_and_Drift_Detection_Runbook.md`` | P0 | 根目录 `机器学习/` |
-| ``ML_Pipeline_Orchestration_2026.md`` | P0 | 根目录 `机器学习/` |
-| ``Model_Interpretability_and_Explainability.md`` | P0 | 根目录 `机器学习/` |
-| ``AB_Testing_for_ML_Case_Study.md`` | P0 | 根目录 `机器学习/` |
-| ``ML_Data_Validation_Runbook.md`` | P0 | 根目录 `机器学习/` |
-| ``Modern_Tabular_Deep_Learning_2026.md`` | P1 | 根目录 `机器学习/` |
+| ``Model_Monitoring_and_Drift_Detection_Runbook.md`` | P0 | 根目录 `02_机器学习/` |
+| ``ML_Pipeline_Orchestration_2026.md`` | P0 | 根目录 `02_机器学习/` |
+| ``Model_Interpretability_and_Explainability.md`` | P0 | 根目录 `02_机器学习/` |
+| ``AB_Testing_for_ML_Case_Study.md`` | P0 | 根目录 `02_机器学习/` |
+| ``ML_Data_Validation_Runbook.md`` | P0 | 根目录 `02_机器学习/` |
+| ``Modern_Tabular_Deep_Learning_2026.md`` | P1 | 根目录 `02_机器学习/` |
 | ``Foundation_Models_for_Time_Series_2026.md`` | P1 | `Time_Series/` |
 | ``LLM_Based_Recommendation_Systems_2026.md`` | P1 | `Recommendation_Systems/` |
 
@@ -197,7 +197,7 @@ sources: []
 - 神经网络训练调试 Runbook：损失不下降/NaN/梯度爆炸/过拟合/欠拟合的系统化排查流程与 checklist。
 - 模型量化与压缩（框架层）：INT8/FP16/AWQ/GPTQ/动态量化在 PyTorch/ONNX/TensorRT 中的实践。
 - PyTorch 生产部署 Runbook：TorchScript、TorchExport、`torch.compile`、TorchServe、ONNX 导出、推理优化。
-- 分布式训练深度文档：虽然 `模型训练/Distributed_Training/` 存在，但 `深度学习` 作为框架层缺少 DDP/FSDP/DeepSpeed/Megatron 的入门与原理衔接。
+- 分布式训练深度文档：虽然 `07_模型训练/04_Distributed_Training/` 存在，但 `深度学习` 作为框架层缺少 DDP/FSDP/DeepSpeed/Megatron 的入门与原理衔接。
 - 生成模型深度文档（VAE/GAN/Diffusion）：仅在初学者文档中提及，缺少系统深度文档。
 
 #### P1 — 行业主流
@@ -286,16 +286,16 @@ sources: []
 
 | 建议文件名 | 优先级 | 目标子目录 |
 |---|---|---|
-| ``CV_Deployment_and_Inference_2026.md`` | P0 | `计算机视觉/` 根目录 |
-| ``CV_MLOps_Data_Pipeline_Runbook.md`` | P0 | `计算机视觉/` 根目录 |
-| ``CV_Security_and_Compliance_2026.md`` | P0 | `计算机视觉/` 根目录 |
-| ``Edge_CV_Deployment_Case_Study.md`` | P0 | `计算机视觉/` 根目录 |
-| ``Video_Analytics_Pipeline_Runbook.md`` | P0 | `计算机视觉/Video_Generation/` 或 |
-| ``VLM_Production_Architecture_2026.md`` | P0 | `计算机视觉/Multimodal_Vision/` |
-| ``CV_Cost_Optimization_Guide.md`` | P0 | `计算机视觉/` 根目录 |
-| ``Industrial_Quality_Inspection_Case_Study.md`` | P0 | `计算机视觉/Image_Classification |
-| ``SAM_2_Deep_Dive.md`` | P1 | `计算机视觉/Segmentation/` |
-| ``FLUX_Ecosystem_Deep_Dive.md`` | P1 | `计算机视觉/Generative_Models/` |
+| ``CV_Deployment_and_Inference_2026.md`` | P0 | `04_计算机视觉/` 根目录 |
+| ``CV_MLOps_Data_Pipeline_Runbook.md`` | P0 | `04_计算机视觉/` 根目录 |
+| ``CV_Security_and_Compliance_2026.md`` | P0 | `04_计算机视觉/` 根目录 |
+| ``Edge_CV_Deployment_Case_Study.md`` | P0 | `04_计算机视觉/` 根目录 |
+| ``Video_Analytics_Pipeline_Runbook.md`` | P0 | `04_计算机视觉/07_Video_Generation/` 或 |
+| ``VLM_Production_Architecture_2026.md`` | P0 | `04_计算机视觉/08_Multimodal_Vision/` |
+| ``CV_Cost_Optimization_Guide.md`` | P0 | `04_计算机视觉/` 根目录 |
+| ``Industrial_Quality_Inspection_Case_Study.md`` | P0 | `04_计算机视觉/Image_Classification |
+| ``SAM_2_Deep_Dive.md`` | P1 | `04_计算机视觉/03_Segmentation/` |
+| ``FLUX_Ecosystem_Deep_Dive.md`` | P1 | `04_计算机视觉/06_Generative_Models/` |
 
 ### 05_NLP_LLMs
 
@@ -388,16 +388,16 @@ sources: []
 
 | 建议文件名 | 优先级 | 目标子目录 |
 |---|---|---|
-| ``RL_Frameworks_and_Toolchain_2026.md`` | P0 | `强化学习/` |
-| ``RL_Production_Deployment_Runbook.md`` | P0 | `强化学习/` |
-| ``RLHF_Production_Runbook.md`` | P0 | `强化学习/` |
-| ``GRPO_Training_Deep_Dive.md`` | P0 | `强化学习/` |
-| ``Offline_RL_Deep_Dive.md`` | P0 | `强化学习/Deep_RL/` |
-| ``Multi_Agent_RL_Deep_Dive.md`` | P0 | `强化学习/Deep_RL/` |
-| ``Safe_RL_Deep_Dive.md`` | P0 | `强化学习/Deep_RL/` |
-| ``RL_for_Recommendations_Case_Study.md`` | P0 | `强化学习/` |
-| ``RL_MLOps_and_Experiment_Tracking_2026.md`` | P0 | `强化学习/` |
-| ``Sim_to_Real_Runbook.md`` | P0 | `强化学习/Robotics_Embo |
+| ``RL_Frameworks_and_Toolchain_2026.md`` | P0 | `06_强化学习/` |
+| ``RL_Production_Deployment_Runbook.md`` | P0 | `06_强化学习/` |
+| ``RLHF_Production_Runbook.md`` | P0 | `06_强化学习/` |
+| ``GRPO_Training_Deep_Dive.md`` | P0 | `06_强化学习/` |
+| ``Offline_RL_Deep_Dive.md`` | P0 | `06_强化学习/02_Deep_RL/` |
+| ``Multi_Agent_RL_Deep_Dive.md`` | P0 | `06_强化学习/02_Deep_RL/` |
+| ``Safe_RL_Deep_Dive.md`` | P0 | `06_强化学习/02_Deep_RL/` |
+| ``RL_for_Recommendations_Case_Study.md`` | P0 | `06_强化学习/` |
+| ``RL_MLOps_and_Experiment_Tracking_2026.md`` | P0 | `06_强化学习/` |
+| ``Sim_to_Real_Runbook.md`` | P0 | `06_强化学习/Robotics_Embo |
 
 ### 07_Model_Training
 
@@ -439,16 +439,16 @@ sources: []
 
 | 建议文件名 | 优先级 | 目标子目录 |
 |---|---|---|
-| ``Training_Cost_Optimization_and_FinOps_2026.md`` | P0 | `模型训练/Optimization/` |
-| ``Checkpoint_Management_and_Disaster_Recovery_Runbook.md`` | P0 | `模型训练/Monitoring/` |
-| ``Training_Resource_Scheduling_K8s_Slurm_2026.md`` | P0 | `模型训练/Distributed_Training/ |
-| ``Cloud_Training_Platforms_Guide_2026.md`` | P0 | `模型训练/Distributed_Training/ |
-| ``Training_Safety_and_Data_Compliance_2026.md`` | P0 | `模型训练/Data/` 或新建 `Security/ |
-| ``End_to_End_LLM_Pretraining_Case_Study.md`` | P0 | `模型训练/` 根目录 |
-| ``MoE_Training_Deep_Dive.md`` | P0 | `模型训练/Distributed_Training/ |
-| ``Long_Context_Training_2026.md`` | P0 | `模型训练/Optimization/` |
-| ``FP8_Training_Deep_Dive.md`` | P1 | `模型训练/Optimization/` |
-| ``Multimodal_Model_Training_2026.md`` | P1 | `模型训练/` 根目录或新建 `Multimodal/ |
+| ``Training_Cost_Optimization_and_FinOps_2026.md`` | P0 | `07_模型训练/03_Optimization/` |
+| ``Checkpoint_Management_and_Disaster_Recovery_Runbook.md`` | P0 | `07_模型训练/07_Monitoring/` |
+| ``Training_Resource_Scheduling_K8s_Slurm_2026.md`` | P0 | `07_模型训练/04_Distributed_Training/ |
+| ``Cloud_Training_Platforms_Guide_2026.md`` | P0 | `07_模型训练/04_Distributed_Training/ |
+| ``Training_Safety_and_Data_Compliance_2026.md`` | P0 | `07_模型训练/02_Data/` 或新建 `Security/ |
+| ``End_to_End_LLM_Pretraining_Case_Study.md`` | P0 | `07_模型训练/` 根目录 |
+| ``MoE_Training_Deep_Dive.md`` | P0 | `07_模型训练/04_Distributed_Training/ |
+| ``Long_Context_Training_2026.md`` | P0 | `07_模型训练/03_Optimization/` |
+| ``FP8_Training_Deep_Dive.md`` | P1 | `07_模型训练/03_Optimization/` |
+| ``Multimodal_Model_Training_2026.md`` | P1 | `07_模型训练/` 根目录或新建 `Multimodal/ |
 
 ### 08_Model_Evaluation
 
@@ -472,16 +472,16 @@ sources: []
 
 | 建议文件名 | 优先级 | 目标子目录 |
 |---|---|---|
-| ``RAG_Evaluation_Deep_Dive.md`` | P0 | `模型评估/` 根目录或新建 `RAG_Evalu |
-| ``Agent_Evaluation_Runbook.md`` | P0 | `模型评估/Evaluation_Tools/` |
-| ``Evaluation_Cost_Optimization.md`` | P0 | `模型评估/` |
-| ``Data_Contamination_Detection_Deep_Dive.md`` | P0 | `模型评估/` |
-| ``Model_Card_Template.md`` | P0 | `模型评估/` |
-| ``Calibration_Uncertainty_Evaluation.md`` | P0 | `模型评估/` |
-| ``Domain_Evaluation_Medical_Financial_Legal.md`` | P0 | `模型评估/` |
-| ``Safety_Red_Team_Evaluation_Deep_Dive.md`` | P0 | `模型评估/` |
-| ``Evaluation_Dataset_Constrution_Guide.md`` | P0 | `模型评估/` |
-| ``Evaluation_Monitoring_Runbook.md`` | P0 | `模型评估/` |
+| ``RAG_Evaluation_Deep_Dive.md`` | P0 | `08_模型评估/` 根目录或新建 `RAG_Evalu |
+| ``Agent_Evaluation_Runbook.md`` | P0 | `08_模型评估/04_Evaluation_Tools/` |
+| ``Evaluation_Cost_Optimization.md`` | P0 | `08_模型评估/` |
+| ``Data_Contamination_Detection_Deep_Dive.md`` | P0 | `08_模型评估/` |
+| ``Model_Card_Template.md`` | P0 | `08_模型评估/` |
+| ``Calibration_Uncertainty_Evaluation.md`` | P0 | `08_模型评估/` |
+| ``Domain_Evaluation_Medical_Financial_Legal.md`` | P0 | `08_模型评估/` |
+| ``Safety_Red_Team_Evaluation_Deep_Dive.md`` | P0 | `08_模型评估/` |
+| ``Evaluation_Dataset_Constrution_Guide.md`` | P0 | `08_模型评估/` |
+| ``Evaluation_Monitoring_Runbook.md`` | P0 | `08_模型评估/` |
 
 ### 09_Testing
 
@@ -491,7 +491,7 @@ sources: []
 
 #### P0 — 生产环境必备
 
-- Agent 评估方法论与工具：当前仅在 `in-nutshell` 中提及 Agent 指标，缺少系统性的 Agent 任务成功率、工具选择准确率、轨迹评估、Human-in-the-loop 评估实践（虽然 `智能体/Agent_Evaluation` 存在，但 `AI测试` 作为测试主章应独立成章）。
+- Agent 评估方法论与工具：当前仅在 `in-nutshell` 中提及 Agent 指标，缺少系统性的 Agent 任务成功率、工具选择准确率、轨迹评估、Human-in-the-loop 评估实践（虽然 `15_智能体/Agent_Evaluation` 存在，但 `AI测试` 作为测试主章应独立成章）。
 - LLM-as-Judge 的偏见控制与校准：现有文档多处使用 Judge LLM，但缺少位置偏差、自我偏好、verbosity bias 的识别与缓解方法。
 - 测试成本优化与 CI 预算管理：LLM 测试调用费用高昂，缺少按影响面选择测试子集、缓存策略、本地小模型预筛选、成本上限控制。
 - A/B 测试与影子测试（Shadow Testing）：生产环境模型切换缺少离线/在线 A/B、灰度、影子流量对比方法论。
@@ -720,16 +720,16 @@ sources: []
 
 | 建议文件名 | 优先级 | 目标子目录 |
 |---|---|---|
-| ``RAG_Production_Architecture_Deep_Dive.md`` | P0 | `RAG系统/Production_RAG/`（新建） |
-| ``RAG_Security_and_Compliance_Runbook.md`` | P0 | `RAG系统/Production_RAG/` |
-| ``RAG_Evaluation_Framework_Deep_Dive.md`` | P0 | `RAG系统/Production_RAG/` 或 `Adva |
-| ``RAG_Monitoring_and_Observability_Runbook.md`` | P0 | `RAG系统/Production_RAG/` |
-| ``RAG_Cost_Optimization_Deep_Dive.md`` | P0 | `RAG系统/Production_RAG/` |
-| ``Reranker_Deep_Dive.md`` | P0 | `RAG系统/Advanced_RAG/` |
-| ``Vector_DB_Production_Runbook.md`` | P0 | `RAG系统/Production_RAG/` |
-| ``Incremental_Indexing_and_Data_Pipeline_Runbook.md`` | P0 | `RAG系统/Production_RAG/` |
-| ``GraphRAG_Deep_Dive.md`` | P0 | `RAG系统/Advanced_RAG/` |
-| ``Pinecone_Deep_Dive.md`` | P1 | `RAG系统/Vector_Databases/` |
+| ``RAG_Production_Architecture_Deep_Dive.md`` | P0 | `14_RAG系统/Production_RAG/`（新建） |
+| ``RAG_Security_and_Compliance_Runbook.md`` | P0 | `14_RAG系统/Production_RAG/` |
+| ``RAG_Evaluation_Framework_Deep_Dive.md`` | P0 | `14_RAG系统/Production_RAG/` 或 `Adva |
+| ``RAG_Monitoring_and_Observability_Runbook.md`` | P0 | `14_RAG系统/Production_RAG/` |
+| ``RAG_Cost_Optimization_Deep_Dive.md`` | P0 | `14_RAG系统/Production_RAG/` |
+| ``Reranker_Deep_Dive.md`` | P0 | `14_RAG系统/04_Advanced_RAG/` |
+| ``Vector_DB_Production_Runbook.md`` | P0 | `14_RAG系统/Production_RAG/` |
+| ``Incremental_Indexing_and_Data_Pipeline_Runbook.md`` | P0 | `14_RAG系统/Production_RAG/` |
+| ``GraphRAG_Deep_Dive.md`` | P0 | `14_RAG系统/04_Advanced_RAG/` |
+| ``Pinecone_Deep_Dive.md`` | P1 | `14_RAG系统/03_Vector_Databases/` |
 
 ### 15_Agent_Production
 
@@ -1081,16 +1081,16 @@ sources: []
 
 | 建议文件名 | 优先级 | 目标子目录 |
 |---|---|---|
-| ``Agent_Engineer_2026.md`` | P0 | `面试岗位/Agent_Engineer/` |
-| ``Agent_Engineer_for_dummy.md`` | P0 | `面试岗位/Agent_Engineer/` |
-| ``Post_Training_Engineer_2026.md`` | P0 | `面试岗位/Post_Training_Engineer/` |
-| ``AI_Compiler_Engineer_2026.md`` | P0 | `面试岗位/AI_Compiler_Engineer/` |
-| ``Edge_AI_Engineer_2026.md`` | P0 | `面试岗位/Edge_AI_Engineer/` |
-| ``Multimodal_Engineer_2026.md`` | P0 | `面试岗位/Multimodal_Engineer/` |
-| ``AI_Data_Engineer_Runbook.md`` | P0 | `面试岗位/AI_Data_Engineer/` |
-| ``Behavioral_Interview_Case_Study.md`` | P0 | `面试岗位/` 根目录 |
-| ``System_Design_for_AI_Case_Study.md`` | P0 | `面试岗位/` 根目录 |
-| ``Resume_Project_STAR_Template.md`` | P0 | `面试岗位/` 根目录 |
+| ``Agent_Engineer_2026.md`` | P0 | `21_面试岗位/Agent_Engineer/` |
+| ``Agent_Engineer_for_dummy.md`` | P0 | `21_面试岗位/Agent_Engineer/` |
+| ``Post_Training_Engineer_2026.md`` | P0 | `21_面试岗位/Post_Training_Engineer/` |
+| ``AI_Compiler_Engineer_2026.md`` | P0 | `21_面试岗位/AI_Compiler_Engineer/` |
+| ``Edge_AI_Engineer_2026.md`` | P0 | `21_面试岗位/Edge_AI_Engineer/` |
+| ``Multimodal_Engineer_2026.md`` | P0 | `21_面试岗位/Multimodal_Engineer/` |
+| ``AI_Data_Engineer_Runbook.md`` | P0 | `21_面试岗位/AI_Data_Engineer/` |
+| ``Behavioral_Interview_Case_Study.md`` | P0 | `21_面试岗位/` 根目录 |
+| ``System_Design_for_AI_Case_Study.md`` | P0 | `21_面试岗位/` 根目录 |
+| ``Resume_Project_STAR_Template.md`` | P0 | `21_面试岗位/` 根目录 |
 
 ### 90_Learn
 

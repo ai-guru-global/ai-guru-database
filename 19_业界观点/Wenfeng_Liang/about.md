@@ -65,13 +65,13 @@ sources: []
 
 ### 效率优于规模
 
-梁文锋的核心信念是"不是谁的 GPU 多谁就赢，而是谁的算法更好"。DeepSeek 的全部技术路线（MoE/MLA/FP8/GRPO）都在证明：通过极致的工程优化和算法创新，可以用 1/10 甚至 1/20 的算力成本匹敌巨头。这一理念直接挑战了 [[业界观点/Sam_Altman/about]] 的"规模即一切"路线，与 [[业界观点/Junjie_Yan/about]] (MiniMax) 的效率优先策略呼应。这一理念在芯片制裁背景下具有特殊的战略意义——证明了"受限条件下也能创新"。
+梁文锋的核心信念是"不是谁的 GPU 多谁就赢，而是谁的算法更好"。DeepSeek 的全部技术路线（MoE/MLA/FP8/GRPO）都在证明：通过极致的工程优化和算法创新，可以用 1/10 甚至 1/20 的算力成本匹敌巨头。这一理念直接挑战了 [[19_业界观点/Sam_Altman/about]] 的"规模即一切"路线，与 [[19_业界观点/Junjie_Yan/about]] (MiniMax) 的效率优先策略呼应。这一理念在芯片制裁背景下具有特殊的战略意义——证明了"受限条件下也能创新"。
 
 ### 开源是最好的策略
 
 > *"开源让全世界帮你验证和改进，闭源是自我封闭。"*
 
-DeepSeek 的全面开源（权重 + 技术报告 + 训练方法 + 成本数据）被梁文锋视为"不是策略而是信念"。他认为最好的 AI 应该属于所有人，开源社区的力量远超任何单一公司。这一立场与 [[业界观点/Emad_Mostaque/about]] 的 Stability AI 理念一致，与 [[业界观点/Sam_Altman/about]] 的闭源前沿模型策略形成尖锐对立。
+DeepSeek 的全面开源（权重 + 技术报告 + 训练方法 + 成本数据）被梁文锋视为"不是策略而是信念"。他认为最好的 AI 应该属于所有人，开源社区的力量远超任何单一公司。这一立场与 [[19_业界观点/Emad_Mostaque/about]] 的 Stability AI 理念一致，与 [[19_业界观点/Sam_Altman/about]] 的闭源前沿模型策略形成尖锐对立。
 
 ### 量化基金思维
 
@@ -137,14 +137,14 @@ DeepSeek 的每篇技术报告都详细公布训练成本（GPU 小时、总美�
 
 ## 交叉引用 (Cross-References)
 
-- [DeepSeek 技术全景](大模型/Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive.md)
-- [MoE 案例研究](大模型/LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md)
-- [DeepSeek-R1 技术分析](大模型/Reasoning_Models/DeepSeek_R1_Technical_Analysis.md)
-- [[业界观点/Zhilin_Yang/about]] — Kimi 与 DeepSeek 在 RL 推理、开源策略上的竞合
-- [[业界观点/Jie_Tang/about]] — 智谱 GLM 与 DeepSeek 在中国开源生态中的并行
-- [[业界观点/Jinze_Bai/about]] — Qwen 与 DeepSeek 在 MoE 架构上的对比
-- [[业界观点/Emad_Mostaque/about]] — Stability AI 与 DeepSeek 共同的开源信念
-- [[业界观点/Sam_Altman/about]] — OpenAI 闭源 vs DeepSeek 开源的根本对立
+- [DeepSeek 技术全景](05_大模型/15_Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive.md)
+- [MoE 案例研究](05_大模型/05_LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md)
+- [DeepSeek-R1 技术分析](05_大模型/09_Reasoning_Models/DeepSeek_R1_Technical_Analysis.md)
+- [[19_业界观点/Zhilin_Yang/about]] — Kimi 与 DeepSeek 在 RL 推理、开源策略上的竞合
+- [[19_业界观点/Jie_Tang/about]] — 智谱 GLM 与 DeepSeek 在中国开源生态中的并行
+- [[19_业界观点/Jinze_Bai/about]] — Qwen 与 DeepSeek 在 MoE 架构上的对比
+- [[19_业界观点/Emad_Mostaque/about]] — Stability AI 与 DeepSeek 共同的开源信念
+- [[19_业界观点/Sam_Altman/about]] — OpenAI 闭源 vs DeepSeek 开源的根本对立
 
 ---
 
@@ -160,7 +160,7 @@ DeepSeek 的每篇技术报告都详细公布训练成本（GPU 小时、总美�
 
 *Last updated: 2026-07-11*
 
-- [[业界观点/README|AI 名人演讲与观点 (Talks)]]
+- [[19_业界观点/README|AI 名人演讲与观点 (Talks)]]
 
 ## 附录：人物影响力评估
 

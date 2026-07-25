@@ -449,7 +449,7 @@ Kimi-Linear-48B — 2025年12月发布
 | **SGLang** | ❌ | ✅ | ❌ | ❌ | ❌ |
 | **FlashMLA** | ❌ | ✅ 移植 | ❌ | ❌ | ❌ |
 
-> 详细芯片对比参见 [[数学基础/AI_Hardware/Chinese_AI_Chips_Deep_Dive]]
+> 详细芯片对比参见 [[01_数学基础/10_AI_Hardware/Chinese_AI_Chips_Deep_Dive]]
 
 ---
 
@@ -546,16 +546,16 @@ Kimi-Linear-48B — 2025年12月发布
 - OpenMOSS (复旦): https://github.com/OpenMOSS
 
 ### Wiki 内部参考
-- [[大模型/Chinese_LLM_Ecosystem/README]] — 中国大模型生态全景
-- [[大模型/Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]] — 全厂商对比矩阵
-- [[大模型/Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive]] — DeepSeek 深度解析
-- [[大模型/Chinese_LLM_Ecosystem/Qwen_Deep_Dive]] — 通义千问深度解析
-- [[大模型/Chinese_LLM_Ecosystem/GLM_Zhipu_Deep_Dive]] — 智谱 GLM 深度解析
-- [[大模型/Chinese_LLM_Ecosystem/Kimi_Moonshot_Deep_Dive]] — Kimi 深度解析
-- [[大模型/Chinese_LLM_Ecosystem/InternLM_Deep_Dive]] — 书生浦语深度解析
-- [[大模型/Chinese_LLM_Ecosystem/Chinese_LLM_Training_Inference_Platforms]] — 训推平台实战
-- [[大模型/GenAI_L16_Open_Source_Models_and_Hugging_Face]] — 开源模型与 Hugging Face
-- [[数学基础/AI_Hardware/Chinese_AI_Chips_Deep_Dive]] — 国产 AI 芯片
+- [[05_大模型/15_Chinese_LLM_Ecosystem/README]] — 中国大模型生态全景
+- [[05_大模型/15_Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]] — 全厂商对比矩阵
+- [[05_大模型/15_Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive]] — DeepSeek 深度解析
+- [[05_大模型/15_Chinese_LLM_Ecosystem/Qwen_Deep_Dive]] — 通义千问深度解析
+- [[05_大模型/15_Chinese_LLM_Ecosystem/GLM_Zhipu_Deep_Dive]] — 智谱 GLM 深度解析
+- [[05_大模型/15_Chinese_LLM_Ecosystem/Kimi_Moonshot_Deep_Dive]] — Kimi 深度解析
+- [[05_大模型/15_Chinese_LLM_Ecosystem/InternLM_Deep_Dive]] — 书生浦语深度解析
+- [[05_大模型/15_Chinese_LLM_Ecosystem/Chinese_LLM_Training_Inference_Platforms]] — 训推平台实战
+- [[05_大模型/GenAI_L16_Open_Source_Models_and_Hugging_Face]] — 开源模型与 Hugging Face
+- [[01_数学基础/10_AI_Hardware/Chinese_AI_Chips_Deep_Dive]] — 国产 AI 芯片
 
 ---
 

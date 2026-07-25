@@ -8,21 +8,21 @@ sources: []
 
 # Cloud Providers
 
-This page indexes the contents of `架构基建/Cloud_Providers`.
+This page indexes the contents of `12_架构基建/Cloud_Providers`.
 
 ## Files
 
-- [[架构基建/Cloud_Providers/Alibaba_Cloud_AI_Stack_Deep_Dive|Alibaba Cloud AI Stack Deep Dive]]
-- [[架构基建/Cloud_Providers/Alibaba_PAI_Deep_Dive|Alibaba PAI Deep Dive]]
-- [[架构基建/Cloud_Providers/AWS_Bedrock_Deep_Dive|AWS Bedrock Deep Dive]]
-- [[架构基建/Cloud_Providers/Azure_OpenAI_Deep_Dive|Azure Openai Deep Dive]]
-- [[架构基建/Cloud_Providers/Google_Vertex_AI_Deep_Dive|Google Vertex AI Deep Dive]]
+- [[12_架构基建/06_Cloud_Providers/Alibaba_Cloud_AI_Stack_Deep_Dive|Alibaba Cloud AI Stack Deep Dive]]
+- [[12_架构基建/06_Cloud_Providers/Alibaba_PAI_Deep_Dive|Alibaba PAI Deep Dive]]
+- [[12_架构基建/06_Cloud_Providers/AWS_Bedrock_Deep_Dive|AWS Bedrock Deep Dive]]
+- [[12_架构基建/06_Cloud_Providers/Azure_OpenAI_Deep_Dive|Azure Openai Deep Dive]]
+- [[12_架构基建/06_Cloud_Providers/Google_Vertex_AI_Deep_Dive|Google Vertex AI Deep Dive]]
 
 ## 架构核心组件对比
 
 | 组件层 | 功能 | 关键技术 | 选型考量 |
 |--------|------|----------|----------|
-| 计算层 | 模型训练/推理 | GPU/TPU/NPU集群 | 算力需求+成本 |
+| 计算层 | 07_模型训练/推理 | GPU/TPU/NPU集群 | 算力需求+成本 |
 | 存储层 | 数据/模型/检查点 | 分布式存储/对象存储 | 容量+IOPS+成本 |
 | 网络层 | 节点间通信 | RDMA/RoCE/InfiniBand | 带宽+延迟 |
 | 调度层 | 资源编排 | K8s/Slurm/Ray | 弹性+效率 |
@@ -170,14 +170,14 @@ This page indexes the contents of `架构基建/Cloud_Providers`.
 
 | 关联主题 | 关系类型 | 参考路径 |
 |----------|----------|----------|
-| GPU与计算硬件 | 核心算力基础 | 架构基建/Hardware_Compute/ |
-| 网络与通信 | 集群互联支撑 | 架构基建/Networking/ |
-| 存储系统 | 数据持久化 | 架构基建/Storage/ |
-| 云服务商 | 基础设施供给 | 架构基建/Cloud_Providers/ |
-| AI网关 | 流量入口管理 | 架构基建/AI_Gateway/ |
-| 安全体系 | 全栈安全保障 | 架构基建/Security/ |
-| 云原生AI | 容器化编排 | 架构基建/CNCF_Cloud_Native_AI/ |
-| SRE实践 | 可靠性工程 | 架构基建/AI_SRE/ |
+| GPU与计算硬件 | 核心算力基础 | 12_架构基建/07_Hardware_Compute/ |
+| 网络与通信 | 集群互联支撑 | 12_架构基建/08_Networking/ |
+| 存储系统 | 数据持久化 | 12_架构基建/09_Storage/ |
+| 云服务商 | 基础设施供给 | 12_架构基建/06_Cloud_Providers/ |
+| AI网关 | 流量入口管理 | 12_架构基建/11_AI_Gateway/ |
+| 安全体系 | 全栈安全保障 | 12_架构基建/10_Security/ |
+| 云原生AI | 容器化编排 | 12_架构基建/05_CNCF_Cloud_Native_AI/ |
+| SRE实践 | 可靠性工程 | 12_架构基建/AI_SRE/ |
 
 ## 版本与更新记录
 

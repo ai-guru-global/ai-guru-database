@@ -1,6 +1,6 @@
 ---
 title: AI SRE (站点可靠性工程)
-category: 架构基建/AI_SRE
+category: 12_架构基建/AI_SRE
 tags: [sre, reliability, slo, incident-response, ai-infrastructure]
 summary: AI 系统的站点可靠性工程实践，包括 SLO 管理、事故响应、容量规划和混沌工程。
 ---
@@ -24,14 +24,14 @@ summary: AI 系统的站点可靠性工程实践，包括 SLO 管理、事故响
 
 ## 边界说明
 
-> **AI SRE (本目录)** vs **运维/ (运维目录)**:
+> **AI SRE (本目录)** vs **13_运维/ (运维目录)**:
 > - 本目录聚焦**架构层面**的 SRE 设计原则和 SLO 体系
-> - [[../运维/SRE_Reliability/SRE_for_AI_Systems|运维 SRE]] 聚焦**执行层面**的 Runbook 和排障命令
+> - [[../13_运维/02_SRE_Reliability/SRE_for_AI_Systems|运维 SRE]] 聚焦**执行层面**的 Runbook 和排障命令
 
 ## Related
 
-- [[../运维/SRE_Reliability/SRE_for_AI_Systems|AI 系统 SRE 实践]]
-- [[../运维/Troubleshooting/K8s_Troubleshooting_Playbook|K8s 排障手册]]
+- [[../13_运维/02_SRE_Reliability/SRE_for_AI_Systems|AI 系统 SRE 实践]]
+- [[../13_运维/04_Troubleshooting/K8s_Troubleshooting_Playbook|K8s 排障手册]]
 - [[../Architecture_Overview/System_Architecture|系统架构]]
 - [[../CNCF_Cloud_Native_AI/|CNCF 云原生 AI]]
 
@@ -39,7 +39,7 @@ summary: AI 系统的站点可靠性工程实践，包括 SLO 管理、事故响
 
 | 组件层 | 功能 | 关键技术 | 选型考量 |
 |--------|------|----------|----------|
-| 计算层 | 模型训练/推理 | GPU/TPU/NPU集群 | 算力需求+成本 |
+| 计算层 | 07_模型训练/推理 | GPU/TPU/NPU集群 | 算力需求+成本 |
 | 存储层 | 数据/模型/检查点 | 分布式存储/对象存储 | 容量+IOPS+成本 |
 | 网络层 | 节点间通信 | RDMA/RoCE/InfiniBand | 带宽+延迟 |
 | 调度层 | 资源编排 | K8s/Slurm/Ray | 弹性+效率 |
@@ -187,14 +187,14 @@ summary: AI 系统的站点可靠性工程实践，包括 SLO 管理、事故响
 
 | 关联主题 | 关系类型 | 参考路径 |
 |----------|----------|----------|
-| GPU与计算硬件 | 核心算力基础 | 架构基建/Hardware_Compute/ |
-| 网络与通信 | 集群互联支撑 | 架构基建/Networking/ |
-| 存储系统 | 数据持久化 | 架构基建/Storage/ |
-| 云服务商 | 基础设施供给 | 架构基建/Cloud_Providers/ |
-| AI网关 | 流量入口管理 | 架构基建/AI_Gateway/ |
-| 安全体系 | 全栈安全保障 | 架构基建/Security/ |
-| 云原生AI | 容器化编排 | 架构基建/CNCF_Cloud_Native_AI/ |
-| SRE实践 | 可靠性工程 | 架构基建/AI_SRE/ |
+| GPU与计算硬件 | 核心算力基础 | 12_架构基建/07_Hardware_Compute/ |
+| 网络与通信 | 集群互联支撑 | 12_架构基建/08_Networking/ |
+| 存储系统 | 数据持久化 | 12_架构基建/09_Storage/ |
+| 云服务商 | 基础设施供给 | 12_架构基建/06_Cloud_Providers/ |
+| AI网关 | 流量入口管理 | 12_架构基建/11_AI_Gateway/ |
+| 安全体系 | 全栈安全保障 | 12_架构基建/10_Security/ |
+| 云原生AI | 容器化编排 | 12_架构基建/05_CNCF_Cloud_Native_AI/ |
+| SRE实践 | 可靠性工程 | 12_架构基建/AI_SRE/ |
 
 ## 版本与更新记录
 

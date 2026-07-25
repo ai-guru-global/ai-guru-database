@@ -2,7 +2,7 @@
 title: Spring AI RAG 深度解析
 category: 14-rag-systems
 tags: ["rag", "retrieval", "vector-database", "embedding"]
-summary: "> 📚 **Spring AI 基础**: 如果你还不熟悉 Spring AI 的核心概念，请先阅读 [Spring AI 深度解析](数学基础/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md)。"
+summary: "> 📚 **Spring AI 基础**: 如果你还不熟悉 Spring AI 的核心概念，请先阅读 [Spring AI 深度解析](01_数学基础/11_Java_Ecosystem_AI/Spring_AI_Deep_Dive.md)。"
 created: 2026-05-31
 updated: 2026-05-31
 tier: core
@@ -15,11 +15,11 @@ sources: []
 ---
 # Spring AI RAG 深度解析
 
-> 📚 **Spring AI 基础**: 如果你还不熟悉 Spring AI 的核心概念，请先阅读 [Spring AI 深度解析](数学基础/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md)。
+> 📚 **Spring AI 基础**: 如果你还不熟悉 Spring AI 的核心概念，请先阅读 [Spring AI 深度解析](01_数学基础/11_Java_Ecosystem_AI/Spring_AI_Deep_Dive.md)。
 >
 > **一句话理解**: Spring AI RAG 是用 Spring 的方式构建检索增强生成系统 —— 从文档加载、分块策略、向量存储到检索增强的完整 Pipeline，让 Java 企业应用拥有知识库问答能力。
 
-> **相关文档**: [Spring AI 深度解析](数学基础/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md) | [Spring AI 架构设计](架构基建/Architecture_Overview/Spring_AI_Architecture) | [Milvus 深度解析](RAG系统/Vector_Databases/Milvus_Deep_Dive.md) | [RAG 高级专题](RAG系统/Advanced_RAG/RAG_Advanced_2026.md) | [RAG 基础入门](RAG系统/RAG_Fundamentals/RAG_Systems_for_dummy.md)
+> **相关文档**: [Spring AI 深度解析](01_数学基础/11_Java_Ecosystem_AI/Spring_AI_Deep_Dive.md) | [Spring AI 架构设计](12_架构基建/02_Architecture_Overview/Spring_AI_Architecture) | [Milvus 深度解析](14_RAG系统/03_Vector_Databases/Milvus_Deep_Dive.md) | [RAG 高级专题](14_RAG系统/04_Advanced_RAG/RAG_Advanced_2026.md) | [RAG 基础入门](14_RAG系统/01_RAG_Fundamentals/RAG_Systems_for_dummy.md)
 
 ---
 
@@ -1399,11 +1399,11 @@ record SelfRagResult(String answer, String strategy, List<Document> sources, dou
 
 ## Related
 
-- [[RAG系统/RAG-in-nutshell]] — RAG (检索增强生成) 速成指南 (共享: embedding, rag, retrieval, vector-database)
-- [[RAG系统/RAG_Systems]] — RAG 系统 (RAG Systems) (共享: embedding, rag, retrieval, vector-database)
-- [[RAG系统/README_Advanced]] — RAG高级实践 2026 (共享: embedding, rag, retrieval, vector-database)
+- [[14_RAG系统/RAG-in-nutshell]] — RAG (检索增强生成) 速成指南 (共享: embedding, rag, retrieval, vector-database)
+- [[14_RAG系统/RAG_Systems]] — RAG 系统 (RAG Systems) (共享: embedding, rag, retrieval, vector-database)
+- [[14_RAG系统/README_Advanced]] — RAG高级实践 2026 (共享: embedding, rag, retrieval, vector-database)
 - [[治理/rag-vector-database]] — RAG 系统 × 向量数据库 (共享: embedding, rag, retrieval, vector-database)
-- [[RAG系统/RAG_Frameworks/Dify_Deep_Dive.md|Dify_Deep_Dive]]
-- [[RAG系统/Vector_Databases/Weaviate_Deep_Dive.md|Weaviate_Deep_Dive]]
-- [[RAG系统/RAG_Frameworks/Flowise_Deep_Dive.md|Flowise_Deep_Dive]]
-- [[RAG系统/RAG_Frameworks/LangFlow_Deep_Dive.md|LangFlow_Deep_Dive]]
+- [[14_RAG系统/06_RAG_Frameworks/Dify_Deep_Dive.md|Dify_Deep_Dive]]
+- [[14_RAG系统/03_Vector_Databases/Weaviate_Deep_Dive.md|Weaviate_Deep_Dive]]
+- [[14_RAG系统/06_RAG_Frameworks/Flowise_Deep_Dive.md|Flowise_Deep_Dive]]
+- [[14_RAG系统/06_RAG_Frameworks/LangFlow_Deep_Dive.md|LangFlow_Deep_Dive]]

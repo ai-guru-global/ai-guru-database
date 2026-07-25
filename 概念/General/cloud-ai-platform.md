@@ -7,10 +7,10 @@ aliases:
   - "MaaS"
 category: -concepts
 sources:
-  - 架构基建/AWS_Bedrock_Deep_Dive.md
-  - 架构基建/Azure_OpenAI_Deep_Dive.md
-  - 架构基建/Google_Vertex_AI_Deep_Dive.md
-  - 行业应用/Cloud_AI_Platforms_Comparison.md
+  - 12_架构基建/AWS_Bedrock_Deep_Dive.md
+  - 12_架构基建/Azure_OpenAI_Deep_Dive.md
+  - 12_架构基建/Google_Vertex_AI_Deep_Dive.md
+  - 18_行业应用/Cloud_AI_Platforms_Comparison.md
 relationships:
   - target: "概念/aws-bedrock"
     type: related_to
@@ -144,7 +144,7 @@ updated: 2026-07-21
 
 ---
 
-**参见**：[[AWS_Bedrock_Deep_Dive]] · [[Azure_OpenAI_Deep_Dive]] · [[Google_Vertex_AI_Deep_Dive]] · [[架构基建/README|架构基建]] · [[概念/aws-bedrock]] · [[概念/azure-openai]]
+**参见**：[[AWS_Bedrock_Deep_Dive]] · [[Azure_OpenAI_Deep_Dive]] · [[Google_Vertex_AI_Deep_Dive]] · [[12_架构基建/README|架构基建]] · [[概念/aws-bedrock]] · [[概念/azure-openai]]
 
 ---
 

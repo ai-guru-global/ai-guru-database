@@ -57,7 +57,7 @@ sources: []
 
 - **核心要点**: 回顾 AlphaFold 从 CASP 竞赛到诺贝尔奖的历程，展望 AI 在生物学、材料科学、药物设计中的未来应用
 - **来源**: [Nobel Prize Official](https://www.nobelprize.org/prizes/chemistry/2024/hassabis/lecture/)
-- **影响**: 标志着 AI 研究首次获得诺贝尔奖级别的认可，与 [[业界观点/Yann_LeCun/about]] 的"AI 需要科学导向"形成共鸣
+- **影响**: 标志着 AI 研究首次获得诺贝尔奖级别的认可，与 [[19_业界观点/Yann_LeCun/about]] 的"AI 需要科学导向"形成共鸣
 
 ---
 
@@ -65,7 +65,7 @@ sources: []
 
 ### AGI 路径：科学导向 vs 产品导向
 
-Hassabis 的独特之处在于他将 AGI 研究视为"基础科学问题"而非"产品竞赛"。他认为理解智能的本质比构建商业产品更重要，DeepMind 的研究方向包括神经科学启发的架构、多智能体系统、世界模型等，远超 LLM 的范畴。这一立场与 [[业界观点/Sam_Altman/about]] 的产品化路线形成鲜明对比。
+Hassabis 的独特之处在于他将 AGI 研究视为"基础科学问题"而非"产品竞赛"。他认为理解智能的本质比构建商业产品更重要，DeepMind 的研究方向包括神经科学启发的架构、多智能体系统、世界模型等，远超 LLM 的范畴。这一立场与 [[19_业界观点/Sam_Altman/about]] 的产品化路线形成鲜明对比。
 
 ### 多路径融合
 
@@ -73,7 +73,7 @@ Hassabis 的独特之处在于他将 AGI 研究视为"基础科学问题"而非"
 
 ### AI 安全与治理
 
-Hassabis 主张"负责任地推进"，支持前沿 AI 研究的全球治理合作。他在 FT 采访中明确表示"AI 治理需要合作"，但不支持暂停研究。他更倾向于通过技术手段（如可解释性、对齐研究）而非政策禁令来管理风险。此立场介于 [[业界观点/Dario_Amodei/about]] 的"安全优先"与 [[业界观点/Yann_LeCun/about]] 的"末日论荒谬"之间。
+Hassabis 主张"负责任地推进"，支持前沿 AI 研究的全球治理合作。他在 FT 采访中明确表示"AI 治理需要合作"，但不支持暂停研究。他更倾向于通过技术手段（如可解释性、对齐研究）而非政策禁令来管理风险。此立场介于 [[19_业界观点/Dario_Amodei/about]] 的"安全优先"与 [[19_业界观点/Yann_LeCun/about]] 的"末日论荒谬"之间。
 
 ### AI for Science
 
@@ -125,14 +125,14 @@ Hassabis 的学术背景横跨神经科学与计算机科学，这深刻影响�
 
 ## 交叉引用 (Cross-References)
 
-- [Talks 主题合成 2026](业界观点/Talks_Synthesis/Talks_Synthesis_2026.md) -- Scaling Laws、开源 vs 闭源、AI 安全、Agent 未来等主题中 Hassabis 的立场
+- [Talks 主题合成 2026](19_业界观点/Talks_Synthesis/Talks_Synthesis_2026.md) -- Scaling Laws、开源 vs 闭源、AI 安全、Agent 未来等主题中 Hassabis 的立场
 - [Demis Hassabis 金句集](./sayings.md) -- 更多金句与权威来源链接
-- [AI 历史时间线](入门/Fundamentals/AI_History_Timeline.md) -- AlphaGo、AlphaFold 里程碑事件
-- [AI 未来趋势](入门/Ethics_and_Future/AI_Future_Trends.md) -- AI for Science 与 AGI 研究路线
-- [AI 伦理与社会](入门/Ethics_and_Future/AI_Ethics_Society.md) -- AI 治理与国际合作
-- [强化学习](../../强化学习/README.md) -- AlphaGo/MuZero 的强化学习技术细节
-- [深度学习基础](../../深度学习/README.md) -- 深度神经网络与多模态架构
-- [LLM 基础](../../大模型/README.md) -- Gemini 系列模型架构
+- [AI 历史时间线](00_入门/01_Fundamentals/AI_History_Timeline.md) -- AlphaGo、AlphaFold 里程碑事件
+- [AI 未来趋势](00_入门/04_Ethics_and_Future/AI_Future_Trends.md) -- AI for Science 与 AGI 研究路线
+- [AI 伦理与社会](00_入门/04_Ethics_and_Future/AI_Ethics_Society.md) -- AI 治理与国际合作
+- [强化学习](../../06_强化学习/README.md) -- AlphaGo/MuZero 的强化学习技术细节
+- [深度学习基础](../../03_深度学习/README.md) -- 深度神经网络与多模态架构
+- [LLM 基础](../../05_大模型/README.md) -- Gemini 系列模型架构
 - [Sam Altman](../Elon_Musk/about.md) -- AGI 路线之争：科学化 vs 产品化
 - [Jensen Huang](../Elon_Musk/about.md) -- AI for Science 的算力基础设施支撑
 - [Dario Amodei](../Elon_Musk/about.md) -- AI 安全治理的不同侧重
@@ -153,13 +153,13 @@ Hassabis 的学术背景横跨神经科学与计算机科学，这深刻影响�
 
 ## Related
 
-- [[业界观点/Demis_Hassabis/sayings]] -- Demis Hassabis 关于 AI 的观点 (Demis Hassabis on AI)
-- [[业界观点/Sam_Altman/about]] -- Sam Altman 简介 (共享: AGI vision, industry competition)
-- [[业界观点/Dario_Amodei/about]] -- Dario Amodei 简介 (共享: AI safety, responsible deployment)
-- [[业界观点/Yann_LeCun/about]] -- Yann LeCun 简介 (共享: AGI research paths, world models)
-- [[业界观点/Andrej_Karpathy/about]] -- Andrej Karpathy 简介 (共享: insights, leaders, speeches, talks)
-- [[业界观点/Andrew_Ng/about]] -- Andrew Ng 简介 (共享: insights, leaders, speeches, talks)
-- [[业界观点/Bill_Gates/about]] -- Bill Gates 简介 (共享: insights, leaders, speeches, talks)
+- [[19_业界观点/Demis_Hassabis/sayings]] -- Demis Hassabis 关于 AI 的观点 (Demis Hassabis on AI)
+- [[19_业界观点/Sam_Altman/about]] -- Sam Altman 简介 (共享: AGI vision, industry competition)
+- [[19_业界观点/Dario_Amodei/about]] -- Dario Amodei 简介 (共享: AI safety, responsible deployment)
+- [[19_业界观点/Yann_LeCun/about]] -- Yann LeCun 简介 (共享: AGI research paths, world models)
+- [[19_业界观点/Andrej_Karpathy/about]] -- Andrej Karpathy 简介 (共享: insights, leaders, speeches, talks)
+- [[19_业界观点/Andrew_Ng/about]] -- Andrew Ng 简介 (共享: insights, leaders, speeches, talks)
+- [[19_业界观点/Bill_Gates/about]] -- Bill Gates 简介 (共享: insights, leaders, speeches, talks)
 
 ## 附录：人物影响力评估
 

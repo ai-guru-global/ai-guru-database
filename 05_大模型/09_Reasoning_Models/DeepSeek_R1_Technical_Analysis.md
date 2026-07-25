@@ -466,9 +466,9 @@ distilled_model = small_base_model.fine_tune(synthetic_data)
 
 ## Related
 
-- [[大模型/Reasoning_Models/o1_Class_Reasoning_Models]]
-- [[大模型/Reasoning_Models/Process_Reward_Models]]
-- [[强化学习/Deep_RL/Deep_RL]]
-- [[大模型/Prompt_Engineering/Prompt_Engineering|Prompt Engineering]]
-- [[模型训练/Optimization/Training_Optimization_2026]]
+- [[05_大模型/09_Reasoning_Models/o1_Class_Reasoning_Models]]
+- [[05_大模型/09_Reasoning_Models/Process_Reward_Models]]
+- [[06_强化学习/02_Deep_RL/Deep_RL]]
+- [[05_大模型/08_Prompt_Engineering/Prompt_Engineering|Prompt Engineering]]
+- [[07_模型训练/03_Optimization/Training_Optimization_2026]]
 - [[治理/reasoning-models-agents|推理模型 × Agent]] — DeepSeek R1 与 Agent 结合

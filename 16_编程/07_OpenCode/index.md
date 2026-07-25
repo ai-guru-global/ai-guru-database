@@ -12,18 +12,18 @@ This page indexes the contents of `AI编程/Tools/OpenCode`.
 
 ## Files
 
-- [[编程/OpenCode/21-opencode-overview-architecture|21 Opencode Overview Architecture]]
-- [[编程/OpenCode/22-opencode-installation-quickstart|22 Opencode Installation Quickstart]]
-- [[编程/OpenCode/23-opencode-providers-models|23 Opencode Providers Models]]
-- [[编程/OpenCode/24-opencode-agents-system|24 Opencode Agents System]]
-- [[编程/OpenCode/25-opencode-tools-permissions|25 Opencode Tools Permissions]]
-- [[编程/OpenCode/26-opencode-mcp-integration|26 Opencode Mcp Integration]]
-- [[编程/OpenCode/27-opencode-lsp-formatters|27 Opencode Lsp Formatters]]
-- [[编程/OpenCode/28-opencode-skills-commands|28 Opencode Skills Commands]]
-- [[编程/OpenCode/29-opencode-tui-customization|29 Opencode Tui Customization]]
-- [[编程/OpenCode/30-opencode-server-api|30 Opencode Server Api]]
-- [[编程/OpenCode/31-opencode-github-automation|31 Opencode Github Automation]]
-- [[编程/OpenCode/32-opencode-advanced-topics|32 Opencode Advanced Topics]]
+- [[16_编程/07_OpenCode/21-opencode-overview-architecture|21 Opencode Overview Architecture]]
+- [[16_编程/07_OpenCode/22-opencode-installation-quickstart|22 Opencode Installation Quickstart]]
+- [[16_编程/07_OpenCode/23-opencode-providers-models|23 Opencode Providers Models]]
+- [[16_编程/07_OpenCode/24-opencode-agents-system|24 Opencode Agents System]]
+- [[16_编程/07_OpenCode/25-opencode-tools-permissions|25 Opencode Tools Permissions]]
+- [[16_编程/07_OpenCode/26-opencode-mcp-integration|26 Opencode Mcp Integration]]
+- [[16_编程/07_OpenCode/27-opencode-lsp-formatters|27 Opencode Lsp Formatters]]
+- [[16_编程/07_OpenCode/28-opencode-skills-commands|28 Opencode Skills Commands]]
+- [[16_编程/07_OpenCode/29-opencode-tui-customization|29 Opencode Tui Customization]]
+- [[16_编程/07_OpenCode/30-opencode-server-api|30 Opencode Server Api]]
+- [[16_编程/07_OpenCode/31-opencode-github-automation|31 Opencode Github Automation]]
+- [[16_编程/07_OpenCode/32-opencode-advanced-topics|32 Opencode Advanced Topics]]
 
 ## 核心知识体系
 
@@ -134,9 +134,9 @@ This page indexes the contents of `AI编程/Tools/OpenCode`.
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

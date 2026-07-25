@@ -15,12 +15,12 @@ DeepLearning.AI 短课程（Short Courses）— Andrew Ng 团队的 LLM、生成
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[学习/Courses/deeplearning_ai/short_courses|short courses]] | DeepLearning.AI short courses collection notes and summaries | all AI learners |
+| [[90_学习/Courses/deeplearning_ai/short_courses|short courses]] | DeepLearning.AI short courses collection notes and summaries | all AI learners |
 
 ## Related
 
-- [[学习/Courses/index|课程总览]]
-- [[学习/Courses/coursera/index|Coursera]]
+- [[90_学习/Courses/index|课程总览]]
+- [[90_学习/Courses/coursera/index|Coursera]]
 
 ## 核心知识框架
 

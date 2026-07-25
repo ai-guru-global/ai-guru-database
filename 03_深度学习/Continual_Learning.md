@@ -372,8 +372,8 @@ class LoRAContinualLearner:
 
 ## 相关文档
 
-- [[深度学习/DL_Fundamentals/|深度学习基础]]
-- [[大模型/Fine_tuning_Techniques/|微调技术]] — LoRA/QLoRA
-- [[机器学习/Online_Learning/|在线学习]] — 流式更新
-- [[模型训练/Optimization/|优化方法]] — 正则化
-- [[大模型/LLM_Architectures/|LLM 架构]] — 模块化设计
+- [[03_深度学习/01_DL_Fundamentals/|深度学习基础]]
+- [[05_大模型/07_Fine_tuning_Techniques/|微调技术]] — LoRA/QLoRA
+- [[02_机器学习/Online_Learning/|在线学习]] — 流式更新
+- [[07_模型训练/03_Optimization/|优化方法]] — 正则化
+- [[05_大模型/05_LLM_Architectures/|LLM 架构]] — 模块化设计

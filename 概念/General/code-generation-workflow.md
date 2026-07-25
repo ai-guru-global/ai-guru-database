@@ -13,8 +13,8 @@ relationships:
     type: related_to
 sources:
   - AI编程/README.md
-  - 智能体/Agent_Workflow/README.md
-  - 模型运维/CI_CD/CI_CD_Pipeline_AI_2026.md
+  - 15_智能体/03_Agent_Workflow/README.md
+  - 11_模型运维/06_CI_CD/CI_CD_Pipeline_AI_2026.md
 summary: "代码生成工作流是把 AI 代码能力嵌入软件开发全流程的工程方法。它不只是让模型写一段代码，而是把需求理解、代码生成、静态检查、测试、审查、合并、部署串联成可重复、可审计的流水线。"
 provenance:
   extracted: 0.7
@@ -108,8 +108,8 @@ CI/CD 构建、部署
 - [[概念/ai-agents]] — AI Agent
 - [[概念/ci-cd]] — CI/CD
 - [[概念/mlops]] — MLOps
-- [[编程/README]] — AI 编程工具
-- [[模型运维/CI_CD/CI_CD_Pipeline_AI_2026]] — AI CI/CD 流水线 2026
+- [[16_编程/README]] — AI 编程工具
+- [[11_模型运维/06_CI_CD/CI_CD_Pipeline_AI_2026]] — AI CI/CD 流水线 2026
 
 ---
 

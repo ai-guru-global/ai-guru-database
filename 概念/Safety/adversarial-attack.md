@@ -83,7 +83,7 @@ Adversarial Attack 是通过对输入数据添加人眼难以察觉的扰动，�
 - [[概念/model-security|Model Security]]
 - [[概念/adversarial-training|Adversarial Training]]
 - [[概念/Safety/hallucination|Hallucination]] — 对抗攻击可诱发幻觉
-- [[架构基建/Security/AI_Security_Fundamentals|AI 安全基础]]
+- [[12_架构基建/10_Security/AI_Security_Fundamentals|AI 安全基础]]
 
 ## 对抗攻击技术演进
 
@@ -154,7 +154,7 @@ classifier.fit(adv_examples, labels)
 - [[概念/Safety/model-security|模型安全]] — 模型层安全防护
 - [[概念/Safety/hallucination|幻觉]] — 对抗攻击可诱发幻觉
 - [[概念/Safety/runtime-security|运行时安全]] — 运行时威胁检测
-- [[架构基建/Security/AI_Security_Fundamentals|AI 安全基础]] — 安全架构
+- [[12_架构基建/10_Security/AI_Security_Fundamentals|AI 安全基础]] — 安全架构
 
 > ℹ️ 对抗攻击是 AI 系统的持久威胁，需要持续红队测试和多层防护。
 
@@ -188,7 +188,7 @@ classifier.fit(adv_examples, labels)
 - [[概念/Safety/model-security|模型安全]] — 模型层安全防护
 - [[概念/Safety/hallucination|幻觉]] — 对抗攻击可诱发幻觉
 - [[概念/Safety/runtime-security|运行时安全]] — 运行时威胁检测
-- [[架构基建/Security/AI_Security_Fundamentals|AI 安全基础]] — 安全架构
+- [[12_架构基建/10_Security/AI_Security_Fundamentals|AI 安全基础]] — 安全架构
 
 > ℹ️ 对抗攻击是 AI 系统的持久威胁，需要持续红队测试和多层防护。
 > 生产环境建议每季度进行一次红队测试，并建立漏洞响应流程。

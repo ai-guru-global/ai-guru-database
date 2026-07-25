@@ -197,8 +197,8 @@ sources: []
 
 ## Related
 
-- [[面试岗位/Cloud_Ops_Engineer/Cloud_Ops_Engineer|云运维工程师]]
-- [[面试岗位/Interview_Guide/index|面试总指南]]
-- [[运维/index|运维]]
-- [[部署推理/index|部署推理]]
-- [[架构基建/Kubernetes_Core/index|Kubernetes核心]]
+- [[21_面试岗位/Cloud_Ops_Engineer/Cloud_Ops_Engineer|云运维工程师]]
+- [[21_面试岗位/Interview_Guide/index|面试总指南]]
+- [[13_运维/index|运维]]
+- [[10_部署推理/index|部署推理]]
+- [[12_架构基建/04_Kubernetes_Core/index|Kubernetes核心]]

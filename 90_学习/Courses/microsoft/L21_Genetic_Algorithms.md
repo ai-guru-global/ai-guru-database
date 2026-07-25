@@ -128,7 +128,7 @@ a + 2b + 3c + 4d = 30
   - 现代进阶变体，如遗传编程（Genetic Programming）、进化策略（Evolution Strategies, ES）、NEAT（NeuroEvolution of Augmenting Topologies）。
   - 与深度强化学习的系统对比（这是下一课 L22 的内容）。
 - **延伸**：
-  - 学完本课后可继续学习 [[强化学习/RL-in-nutshell]] 中的“基于演化策略的策略搜索”思想。
+  - 学完本课后可继续学习 [[06_强化学习/RL-in-nutshell]] 中的“基于演化策略的策略搜索”思想。
   - 在超参数优化与神经网络结构搜索（NAS）中，演化算法仍是一种重要的基线方法。
   - 推荐观看官方给出的 Super Mario 遗传算法+神经网络视频，直观感受“进化”如何训练游戏 AI。
 
@@ -136,10 +136,10 @@ a + 2b + 3c + 4d = 30
 
 ## 相关阅读
 
-- 课程索引：[[学习/courses/microsoft/microsoft_ai_for_beginners]]
+- 课程索引：[[90_学习/courses/microsoft/microsoft_ai_for_beginners]]
 - 本库相关页面：
-  - [[强化学习/RL-in-nutshell]]
-  - [[机器学习/ML-in-nutshell]]
+  - [[06_强化学习/RL-in-nutshell]]
+  - [[02_机器学习/ML-in-nutshell]]
 
 ## 核心知识框架
 

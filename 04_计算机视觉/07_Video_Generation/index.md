@@ -15,15 +15,15 @@ tags: [auto-index]
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[计算机视觉/Video_Generation/Video_Generation_2026|Video Generation 2026]] | Video generation 2026: Sora, Kling and open-source video generation models | generative AI researchers / video AI engineers |
-| [[计算机视觉/Video_Generation/Video_Generation_for_dummy|Video Generation for dummy]] | Video generation beginner guide: diffusion models and temporal consistency | beginners / generative AI learners |
-| [[计算机视觉/Video_Generation/README|README]] | Module README guide and reading order | all readers |
+| [[04_计算机视觉/07_Video_Generation/Video_Generation_2026|Video Generation 2026]] | Video generation 2026: Sora, Kling and open-source video generation models | generative AI researchers / video AI engineers |
+| [[04_计算机视觉/07_Video_Generation/Video_Generation_for_dummy|Video Generation for dummy]] | Video generation beginner guide: diffusion models and temporal consistency | beginners / generative AI learners |
+| [[04_计算机视觉/07_Video_Generation/README|README]] | Module README guide and reading order | all readers |
 
 ## Related
 
-- [[计算机视觉/index|计算机视觉首页]]
-- [[计算机视觉/Generative_Models/index|Generative Models]]
-- [[大模型/index|大模型]]
+- [[04_计算机视觉/index|计算机视觉首页]]
+- [[04_计算机视觉/06_Generative_Models/index|Generative Models]]
+- [[05_大模型/index|大模型]]
 
 ## 进阶知识拓展
 
@@ -61,9 +61,9 @@ tags: [auto-index]
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

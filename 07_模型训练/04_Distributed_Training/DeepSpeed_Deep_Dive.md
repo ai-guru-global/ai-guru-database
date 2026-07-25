@@ -385,5 +385,5 @@ resources:
 - [[概念/megatron-lm]] — Megatron-LM
 - [[概念/hami]] — HAMi GPU 虚拟化
 - [[概念/ray]] — Ray 分布式框架
-- [[模型训练/Distributed_Training/Ray_Deep_Dive]] — Ray
-- [[模型训练/Distributed_Training/Distributed_Training_2026]] — 分布式训练 2026
+- [[07_模型训练/04_Distributed_Training/Ray_Deep_Dive]] — Ray
+- [[07_模型训练/04_Distributed_Training/Distributed_Training_2026]] — 分布式训练 2026

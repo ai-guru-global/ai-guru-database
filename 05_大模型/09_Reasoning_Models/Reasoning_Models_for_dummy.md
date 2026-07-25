@@ -176,7 +176,7 @@ flowchart TB
 
 - [Prompt Engineering](../Prompt_Engineering/Prompt_Engineering.md) — 如何诱导普通模型做推理
 - [LLM 架构](../LLM_Architectures/LLM_Architectures.md) — 大模型基础
-- [Agent-in-nutshell](../../智能体/Agent_Foundations/Agent-in-nutshell.md) — Agent 也需要推理能力
+- [Agent-in-nutshell](../../15_智能体/01_Agent_Foundations/Agent-in-nutshell.md) — Agent 也需要推理能力
 
 ---
 
@@ -213,10 +213,10 @@ flowchart TB
 
 ## Related
 
-- [[大模型/Reasoning_Models/Reasoning_Models|推理模型总览]]
-- [[大模型/Reasoning_Models/o1_Class_Reasoning_Models|o1 类推理模型]]
-- [[大模型/Reasoning_Models/DeepSeek_R1_Technical_Analysis|DeepSeek-R1 技术分析]]
-- [[大模型/Prompt_Engineering/Prompt_Engineering|提示工程]]
+- [[05_大模型/09_Reasoning_Models/Reasoning_Models|推理模型总览]]
+- [[05_大模型/09_Reasoning_Models/o1_Class_Reasoning_Models|o1 类推理模型]]
+- [[05_大模型/09_Reasoning_Models/DeepSeek_R1_Technical_Analysis|DeepSeek-R1 技术分析]]
+- [[05_大模型/08_Prompt_Engineering/Prompt_Engineering|提示工程]]
 - [[概念/reasoning-models|推理模型概念]]
 
 ## 总结

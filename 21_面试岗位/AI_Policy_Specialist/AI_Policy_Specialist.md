@@ -469,12 +469,12 @@ AI Policy Specialist 的工作不同于传统的法律顾问或合规专员，�
 
 ## Related
 
-- [[面试岗位/README|AI 面试准备 (Interviews)]]
-- [[面试岗位/jobs|AI 相关岗位与工种清单]]
-- [[面试岗位/AI_Security_Engineer/AI_Security_Engineer|AI Security Engineer 面试指南]]
-- [[面试岗位/AI_Product_Manager/AI_Product_Manager|AI Product Manager 面试指南]]
-- [[面试岗位/AI_Evaluation_Engineer/AI_Evaluation_Engineer|AI Evaluation Engineer 面试指南]]
-- [[面试岗位/AI_Solutions_Architect/AI_Solutions_Architect|AI Solutions Architect 面试指南]]
+- [[21_面试岗位/README|AI 面试准备 (Interviews)]]
+- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/AI_Security_Engineer/AI_Security_Engineer|AI Security Engineer 面试指南]]
+- [[21_面试岗位/AI_Product_Manager/AI_Product_Manager|AI Product Manager 面试指南]]
+- [[21_面试岗位/AI_Evaluation_Engineer/AI_Evaluation_Engineer|AI Evaluation Engineer 面试指南]]
+- [[21_面试岗位/AI_Solutions_Architect/AI_Solutions_Architect|AI Solutions Architect 面试指南]]
 
 ---
 

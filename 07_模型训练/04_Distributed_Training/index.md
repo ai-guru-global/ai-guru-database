@@ -8,22 +8,22 @@ sources: []
 
 # Distributed Training
 
-This page indexes the contents of `模型训练/Distributed_Training`.
+This page indexes the contents of `07_模型训练/Distributed_Training`.
 
 ## Files
 
-- [[模型训练/Distributed_Training/Colossal_AI_Deep_Dive|Colossal AI Deep Dive]]
-- [[模型训练/Distributed_Training/DeepSpeed_Deep_Dive|Deepspeed Deep Dive]]
-- [[模型训练/Distributed_Training/DeepSpeed_for_dummy|Deepspeed For Dummy]]
-- [[模型训练/Distributed_Training/Distributed_Training_2026|Distributed Training 2026]]
-- [[模型训练/Distributed_Training/Distributed_Training_for_dummy|Distributed Training For Dummy]]
-- [[模型训练/Distributed_Training/Distributed_Training_Hang_Runbook|Distributed Training Hang Runbook]]
-- [[模型训练/Distributed_Training/FSDP_Deep_Dive|FSDP Deep Dive]]
-- [[模型训练/Distributed_Training/HF_Accelerate_DeepSpeed_Guide|HF Accelerate Deepspeed Guide]]
-- [[模型训练/Distributed_Training/Megatron_LM_Deep_Dive|Megatron LM Deep Dive]]
-- [[模型训练/Distributed_Training/ms_swift_Command_Line_Parameters|Ms Swift Command Line Parameters]]
-- [[模型训练/Distributed_Training/ms_swift_Deep_Dive|Ms Swift Deep Dive]]
-- [[模型训练/Distributed_Training/Ray_Deep_Dive|Ray Deep Dive]]
+- [[07_模型训练/04_Distributed_Training/Colossal_AI_Deep_Dive|Colossal AI Deep Dive]]
+- [[07_模型训练/04_Distributed_Training/DeepSpeed_Deep_Dive|Deepspeed Deep Dive]]
+- [[07_模型训练/04_Distributed_Training/DeepSpeed_for_dummy|Deepspeed For Dummy]]
+- [[07_模型训练/04_Distributed_Training/Distributed_Training_2026|Distributed Training 2026]]
+- [[07_模型训练/04_Distributed_Training/Distributed_Training_for_dummy|Distributed Training For Dummy]]
+- [[07_模型训练/04_Distributed_Training/Distributed_Training_Hang_Runbook|Distributed Training Hang Runbook]]
+- [[07_模型训练/04_Distributed_Training/FSDP_Deep_Dive|FSDP Deep Dive]]
+- [[07_模型训练/04_Distributed_Training/HF_Accelerate_DeepSpeed_Guide|HF Accelerate Deepspeed Guide]]
+- [[07_模型训练/04_Distributed_Training/Megatron_LM_Deep_Dive|Megatron LM Deep Dive]]
+- [[07_模型训练/04_Distributed_Training/ms_swift_Command_Line_Parameters|Ms Swift Command Line Parameters]]
+- [[07_模型训练/04_Distributed_Training/ms_swift_Deep_Dive|Ms Swift Deep Dive]]
+- [[07_模型训练/04_Distributed_Training/Ray_Deep_Dive|Ray Deep Dive]]
 
 ## 进阶知识拓展
 
@@ -61,9 +61,9 @@ This page indexes the contents of `模型训练/Distributed_Training`.
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

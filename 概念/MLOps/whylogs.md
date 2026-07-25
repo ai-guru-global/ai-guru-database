@@ -8,7 +8,7 @@ relationships:
   - target: "概念/langfuse"
     type: related_to
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
 summary: "开源的数据质量分析和 ML 可观测性库，通过轻量级数据画像（Profiling）实现数据漂移检测、分布监控和异常告警。"
 provenance:
   extracted: 0.55

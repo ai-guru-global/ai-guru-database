@@ -13,8 +13,8 @@ relationships:
     type: replaces
 sources:
   - AI入门/AI_New_Architectures.md
-  - 大模型/LLM_Architecture_Evolution.md
-  - 深度学习/State_Space_Models_2026.md
+  - 05_大模型/LLM_Architecture_Evolution.md
+  - 03_深度学习/State_Space_Models_2026.md
 summary: "RetNet 是微软提出的 Transformer 替代方案，用‘保留机制（Retention）’取代 Attention。它既能像 Transformer 一样并行训练，又能像 RNN 一样线性复杂度推理，并且完全不需要 KV Cache。"
 provenance:
   extracted: 0.7
@@ -189,8 +189,8 @@ class Retention(nn.Module):
 - [[概念/LLM/state-space-models|状态空间模型]]
 - [[概念/LLM/transformer-architecture|Transformer 架构详解]]
 - [[概念/Inference/kv-cache|KV Cache]]
-- [[深度学习/State_Space_Models_2026|状态空间模型 2026]]
-- [[大模型/LLM_Architecture_Evolution|LLM 架构演进]]
+- [[03_深度学习/State_Space_Models_2026|状态空间模型 2026]]
+- [[05_大模型/LLM_Architecture_Evolution|LLM 架构演进]]
 
 > **关键论文**: "Retentive Network: A Successor to Transformer for Large Language Models" (Sun et al., 2023, Microsoft Research)
 

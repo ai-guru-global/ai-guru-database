@@ -128,7 +128,7 @@ Anthropic 诞生的三大分歧
 4. **透明推理过程**: Extended Thinking 让用户看到模型的思考过程，不做"黑盒推理"
 5. **开放生态**: MCP 协议开源，让 AI 与工具的集成有统一标准
 
-> **相关文档**: 关于 AI 价值对齐方法的全面介绍，参见 [Value Alignment](伦理安全/Value_Alignment/Value_Alignment.md)
+> **相关文档**: 关于 AI 价值对齐方法的全面介绍，参见 [Value Alignment](17_伦理安全/02_Value_Alignment/Value_Alignment.md)
 
 ---
 
@@ -394,7 +394,7 @@ Constitutional AI 的已知挑战
    → Claude 4 引入了更细粒度的思考监控
 ```
 
-> **相关文档**: 关于 RLAIF 和其他价值对齐方法的对比分析，参见 [Value Alignment](伦理安全/Value_Alignment/Value_Alignment.md)
+> **相关文档**: 关于 RLAIF 和其他价值对齐方法的对比分析，参见 [Value Alignment](17_伦理安全/02_Value_Alignment/Value_Alignment.md)
 
 ---
 
@@ -1634,9 +1634,9 @@ for block in response.content:
 
 ### AI 安全与对齐
 
-- [Value Alignment (价值对齐)](伦理安全/Value_Alignment/Value_Alignment.md) — RLHF, DPO, RLAIF 等对齐方法的全面对比
-- [Safety Evaluation Framework](伦理安全/Safety_Evaluation_Framework.md) — AI 安全评估框架
-- [Mechanistic Interpretability](../../伦理安全/Mechanistic_Interpretability/) — 机械可解释性研究
+- [Value Alignment (价值对齐)](17_伦理安全/02_Value_Alignment/Value_Alignment.md) — RLHF, DPO, RLAIF 等对齐方法的全面对比
+- [Safety Evaluation Framework](17_伦理安全/Safety_Evaluation_Framework.md) — AI 安全评估框架
+- [Mechanistic Interpretability](../../17_伦理安全/05_Mechanistic_Interpretability/) — 机械可解释性研究
 
 ### 全球 LLM 生态
 
@@ -1655,10 +1655,10 @@ for block in response.content:
 
 ## 相关链接
 
-- [[大模型/Global_LLM_Ecosystem/README|国际大模型生态全景]] — 五大国际大模型厂商横向对比
-- [[大模型/Global_LLM_Ecosystem/OpenAI_Deep_Dive|OpenAI 技术深度解析]] — GPT 系列与 o1/o3 推理模型演进
-- [[大模型/Global_LLM_Ecosystem/Google_Gemini_Deep_Dive|Google Gemini 技术深度解析]] — Gemini 原生多模态与百万上下文
-- [[大模型/LLM_Products/claude_overview|Claude 产品概览]] — Claude 系列产品能力速览
+- [[05_大模型/14_Global_LLM_Ecosystem/README|国际大模型生态全景]] — 五大国际大模型厂商横向对比
+- [[05_大模型/14_Global_LLM_Ecosystem/OpenAI_Deep_Dive|OpenAI 技术深度解析]] — GPT 系列与 o1/o3 推理模型演进
+- [[05_大模型/14_Global_LLM_Ecosystem/Google_Gemini_Deep_Dive|Google Gemini 技术深度解析]] — Gemini 原生多模态与百万上下文
+- [[05_大模型/13_LLM_Products/claude_overview|Claude 产品概览]] — Claude 系列产品能力速览
 - [[概念/LLM/constitutional-ai|Constitutional AI]] — Anthropic 自监督对齐方法详解
 - [[概念/Agent/mcp|Model Context Protocol]] — Anthropic 开放的 Agent 协议
-- [[大模型/Reasoning_Models/o1_Class_Reasoning_Models|o1 类推理模型]] — Claude Extended Thinking 与同类推理模型对比
+- [[05_大模型/09_Reasoning_Models/o1_Class_Reasoning_Models|o1 类推理模型]] — Claude Extended Thinking 与同类推理模型对比

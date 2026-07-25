@@ -15,13 +15,13 @@ tags: [auto-index]
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[行业应用/AI_Agriculture_2026|AI Agriculture 2026]] | Agriculture AI landscape: from remote sensing to smart machinery, 2026 trends and practices | agricultural AI practitioners / agritech startups |
+| [[18_行业应用/AI_Agriculture_2026|AI Agriculture 2026]] | Agriculture AI landscape: from remote sensing to smart machinery, 2026 trends and practices | agricultural AI practitioners / agritech startups |
 
 ## Related
 
-- [[行业应用/Energy_Climate_index|Energy & Climate]]
-- [[行业应用/Manufacturing_index|Manufacturing]]
-- [[计算机视觉/index|计算机视觉]]
+- [[18_行业应用/Energy_Climate_index|Energy & Climate]]
+- [[18_行业应用/Manufacturing_index|Manufacturing]]
+- [[04_计算机视觉/index|计算机视觉]]
 
 ## 进阶知识拓展
 
@@ -59,9 +59,9 @@ tags: [auto-index]
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

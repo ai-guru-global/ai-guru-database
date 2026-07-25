@@ -10,7 +10,7 @@ relationships:
   - target: "概念/Inference/model-serving"
     type: related_to
 sources:
-  - 大模型/Edge_LLM
+  - 05_大模型/Edge_LLM
   - "https://github.com/ggerganov/llama.cpp"
 summary: "端侧 LLM 通过高效小模型设计 (Phi/Gemma/Qwen)、量化压缩 (GGUF Q4_K_M) 和端侧推理引擎 (llama.cpp/MLC-LLM/Apple MLX) 实现手机/PC/嵌入式上的离线 LLM 推理。2026 年 NPU 加速和 3B 以下模型质量提升使端侧 AI 助手成为现实。"
 provenance:
@@ -131,12 +131,12 @@ response = generate(model, tokenizer, prompt="解释机器学习", max_tokens=25
 
 ## Related
 
-- [[大模型/Edge_LLM/README]] — 端侧 LLM 深度解析
+- [[05_大模型/12_Edge_LLM/README]] — 端侧 LLM 深度解析
 - [[概念/LLM/llm-architectures]] — LLM 架构
 - [[概念/Inference/quantization]] — 量化
 - [[概念/Inference/model-serving]] — 模型服务
-- [[大模型/Edge_LLM/Edge_LLM_Deep_Dive|端侧 LLM 深度解析]]
-- [[大模型/LLM_Inference_Deep_Dive|LLM 推理深度解析]]
+- [[05_大模型/12_Edge_LLM/Edge_LLM_Deep_Dive|端侧 LLM 深度解析]]
+- [[05_大模型/LLM_Inference_Deep_Dive|LLM 推理深度解析]]
 
 ## 2026 端侧模型生态
 

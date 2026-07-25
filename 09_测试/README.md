@@ -21,8 +21,8 @@ sources: []
 |------|------|----------|
 | [AI_Test_Framework_2026](./Testing_Fundamentals/AI_Test_Framework_2026.md) | AI 测试框架全栈指南 | QA、开发者 |
 | [AI-Testing-in-nutshell](./Testing_Fundamentals/AI-Testing-in-nutshell.md) | AI 测试速查：核心概念快速掌握 | 快速入门 |
-| [Contract_Testing](测试/Contract_Testing.md) | LLM 契约测试：输入输出规范验证 | 开发者、QA |
-| [Test_Data_Management](测试/Test_Data_Management.md) | 测试数据管理：合成数据、边界案例 | 数据工程师 |
+| [Contract_Testing](09_测试/Contract_Testing.md) | LLM 契约测试：输入输出规范验证 | 开发者、QA |
+| [Test_Data_Management](09_测试/Test_Data_Management.md) | 测试数据管理：合成数据、边界案例 | 数据工程师 |
 
 ## Deep Dive 文档
 
@@ -31,9 +31,9 @@ sources: []
 | 文档 | 内容 | 适用角色 |
 |------|------|----------|
 | [Promptfoo Deep Dive](./Testing_Frameworks/Promptfoo_Deep_Dive.md) | Prompt 测试框架：批量测试、版本对比 | 开发者、Prompt 工程师 |
-| [RAGAS Deep Dive](测试/RAGAS_Deep_Dive.md) | RAG 评估框架：答案质量、召回率 | RAG 开发者 |
+| [RAGAS Deep Dive](09_测试/RAGAS_Deep_Dive.md) | RAG 评估框架：答案质量、召回率 | RAG 开发者 |
 | [DeepEval Deep Dive](./Testing_Frameworks/DeepEval_Deep_Dive.md) | LLM 评估框架：单元测试、集成测试 | 开发者、QA |
-| [Agent 评估深度解析](测试/Agent_Evaluation_Deep_Dive.md) | Agent 系统评估方法论、基准、LLM-as-Judge、成本约束 | Agent 开发者、QA |
+| [Agent 评估深度解析](09_测试/Agent_Evaluation_Deep_Dive.md) | Agent 系统评估方法论、基准、LLM-as-Judge、成本约束 | Agent 开发者、QA |
 
 ### 安全测试
 
@@ -46,13 +46,13 @@ sources: []
 
 | 文档 | 内容 | 适用角色 |
 |------|------|----------|
-| [Weights & Biases Deep Dive](测试/Weights_Biases_Deep_Dive.md) | 实验追踪与可视化 | 研究者、工程师 |
+| [Weights & Biases Deep Dive](09_测试/Weights_Biases_Deep_Dive.md) | 实验追踪与可视化 | 研究者、工程师 |
 
 ### 在线评估
 
 | 文档 | 内容 | 适用角色 |
 |------|------|----------|
-| [AI 系统 A/B 测试](测试/AB_Testing_AI_Systems.md) | 实验设计、流量分配、统计分析、AI 特殊考量 | 产品经理、工程师 |
+| [AI 系统 A/B 测试](09_测试/AB_Testing_AI_Systems.md) | 实验设计、流量分配、统计分析、AI 特殊考量 | 产品经理、工程师 |
 
 ## 测试类型
 
@@ -105,29 +105,29 @@ AI 测试类型
 
 ## 关联目录
 
-- [AI运维](../运维/) -- AI 运维与可观测性
-- [智能体/Agent_Evaluation](../智能体/Agent_Evaluation/) -- Agent 评估
+- [AI运维](../13_运维/) -- AI 运维与可观测性
+- [15_智能体/Agent_Evaluation](../15_智能体/07_Agent_Evaluation/) -- Agent 评估
 
 ---
 
 *Last updated: 2026-04-26*
 
 ## Related
-- [[测试/Testing_Fundamentals/AI_Test_Framework_2026|AI 系统测试框架 (AI Test Framework 2026)]]
-- [[测试/Testing_Fundamentals/AI-Testing-in-nutshell|AI 测试与评估速成指南]]
-- [[测试/Testing_Fundamentals/AI_Testing_for_dummy|AI 测试 - 小白版]]
-- [[测试/Testing_Frameworks/Promptfoo_Deep_Dive|Promptfoo: LLM Prompt 测试框架]]
-- [[测试/Testing_Frameworks/DeepEval_Deep_Dive|DeepEval: LLM 评估框架]]
-- [[测试/Testing_Frameworks/Regression_Testing_LLM_Deep_Dive|LLM 回归测试深度指南]]
-- [[测试/Testing_Frameworks/LLM_Safety_Testing_Deep_Dive|LLM 安全测试深度指南]]
-- [[测试/Testing_Frameworks/Java_AI_Testing|Java AI 测试实践]]
-- [[测试/RAGAS_Deep_Dive|RAGAS: RAG 评估框架]]
-- [[测试/Agent_Evaluation_Deep_Dive|Agent 评估深度解析]]
-- [[测试/Contract_Testing|契约测试 (Contract Testing for AI Systems)]]
-- [[测试/Test_Data_Management|测试数据管理 (Test Data Management)]]
-- [[测试/Weights_Biases_Deep_Dive|Weights & Biases: ML 实验追踪平台]]
-- [[测试/AB_Testing_AI_Systems|AI 系统 A/B 测试]]
-- [[测试/README_for_dummy|15 AI 测试 — 小白版 🧪]]
+- [[09_测试/01_Testing_Fundamentals/AI_Test_Framework_2026|AI 系统测试框架 (AI Test Framework 2026)]]
+- [[09_测试/01_Testing_Fundamentals/AI-Testing-in-nutshell|AI 测试与评估速成指南]]
+- [[09_测试/01_Testing_Fundamentals/AI_Testing_for_dummy|AI 测试 - 小白版]]
+- [[09_测试/02_Testing_Frameworks/Promptfoo_Deep_Dive|Promptfoo: LLM Prompt 测试框架]]
+- [[09_测试/02_Testing_Frameworks/DeepEval_Deep_Dive|DeepEval: LLM 评估框架]]
+- [[09_测试/02_Testing_Frameworks/Regression_Testing_LLM_Deep_Dive|LLM 回归测试深度指南]]
+- [[09_测试/02_Testing_Frameworks/LLM_Safety_Testing_Deep_Dive|LLM 安全测试深度指南]]
+- [[09_测试/02_Testing_Frameworks/Java_AI_Testing|Java AI 测试实践]]
+- [[09_测试/RAGAS_Deep_Dive|RAGAS: RAG 评估框架]]
+- [[09_测试/Agent_Evaluation_Deep_Dive|Agent 评估深度解析]]
+- [[09_测试/Contract_Testing|契约测试 (Contract Testing for AI Systems)]]
+- [[09_测试/Test_Data_Management|测试数据管理 (Test Data Management)]]
+- [[09_测试/Weights_Biases_Deep_Dive|Weights & Biases: ML 实验追踪平台]]
+- [[09_测试/AB_Testing_AI_Systems|AI 系统 A/B 测试]]
+- [[09_测试/README_for_dummy|15 AI 测试 — 小白版 🧪]]
 
 ## 测试工具全景
 

@@ -620,13 +620,13 @@ AI 生成初稿 → 自动化质检 → 人工审核 → 修改反馈 → AI 迭
 ## 相关概念
 
 > **关联**:
-> - [[行业应用/Content_Media_index|内容与媒体 AI]]
+> - [[18_行业应用/Content_Media_index|内容与媒体 AI]]
 > - [[多模态/README|多模态 AI]]
 > - [[LLM/README|大语言模型]]
-> - [[智能体/README|AI Agent]]
-> - [[强化学习/README|强化学习]]
-> - [[计算机视觉/README|计算机视觉]]
+> - [[15_智能体/README|AI Agent]]
+> - [[06_强化学习/README|强化学习]]
+> - [[04_计算机视觉/README|计算机视觉]]
 > - [[生成模型/README|生成模型]]
-> - [[伦理安全/README|伦理安全]]
-> - [[行业应用/Gaming_Entertainment/index|游戏娱乐 AI 目录]]
-> - [[行业应用/AI_Robotics_Industry_2026|AI 机器人]]
+> - [[17_伦理安全/README|伦理安全]]
+> - [[18_行业应用/Gaming_Entertainment/index|游戏娱乐 AI 目录]]
+> - [[18_行业应用/AI_Robotics_Industry_2026|AI 机器人]]

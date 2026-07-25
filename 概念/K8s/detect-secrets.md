@@ -8,7 +8,7 @@ relationships:
   - target: "概念/guardrails-ai"
     type: related_to
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
 summary: "Yelp 开源的密钥/凭证泄露检测工具，通过 Git pre-commit Hook 和 CI 扫描防止 API Key、Token、密码等敏感信息被提交到代码仓库。"
 provenance:
   extracted: 0.55

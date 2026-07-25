@@ -149,9 +149,9 @@ mpirun -np 64 ./all_reduce_perf -b 8 -e 1G -f 2 -g 8
 
 ## 6. 交叉引用
 
-- [[架构基建/|架构基建]]
-- [[模型训练/Training_Infrastructure/|训练基础设施]]
-- [[模型训练/Distributed_Training/|分布式训练]]
+- [[12_架构基建/|架构基建]]
+- [[07_模型训练/Training_Infrastructure/|训练基础设施]]
+- [[07_模型训练/04_Distributed_Training/|分布式训练]]
 - [[概念/General/infiniBand|InfiniBand]]
 - [[概念/General/rdma-roce|RDMA/RoCE]]
 
@@ -159,7 +159,7 @@ mpirun -np 64 ./all_reduce_perf -b 8 -e 1G -f 2 -g 8
 
 | 组件层 | 功能 | 关键技术 | 选型考量 |
 |--------|------|----------|----------|
-| 计算层 | 模型训练/推理 | GPU/TPU/NPU集群 | 算力需求+成本 |
+| 计算层 | 07_模型训练/推理 | GPU/TPU/NPU集群 | 算力需求+成本 |
 | 存储层 | 数据/模型/检查点 | 分布式存储/对象存储 | 容量+IOPS+成本 |
 | 网络层 | 节点间通信 | RDMA/RoCE/InfiniBand | 带宽+延迟 |
 | 调度层 | 资源编排 | K8s/Slurm/Ray | 弹性+效率 |

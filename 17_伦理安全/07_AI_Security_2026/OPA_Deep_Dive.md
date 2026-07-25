@@ -163,7 +163,7 @@ spec:
 - [[概念/kyverno]] — Kyverno
 - [[概念/falco]] — Falco
 - [[概念/kubernetes]] — Kubernetes
-- [[伦理安全/AI_Security_2026/AI_Security_2026]] — AI 安全 2026
+- [[17_伦理安全/07_AI_Security_2026/AI_Security_2026]] — AI 安全 2026
 
 ## 核心知识体系
 

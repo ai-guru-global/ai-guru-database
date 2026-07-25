@@ -202,8 +202,8 @@ FlashMLA 专门为 MLA 设计：
 - [[概念/kv-cache]] — KV Cache 优化
 - [[概念/paged-attention]] — PagedAttention
 - [[概念/multi-head-latent-attention]] — MLA
-- [[部署推理/Inference_Performance/README|推理性能专题]]
-- [[部署推理/Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]]
-- [[部署推理/Caching/KV_Cache_Deep_Dive|KV Cache Deep Dive]]
+- [[10_部署推理/04_Inference_Performance/README|推理性能专题]]
+- [[10_部署推理/04_Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]]
+- [[10_部署推理/06_Caching/KV_Cache_Deep_Dive|KV Cache Deep Dive]]
 
-- [[部署推理/README|模型部署与推理]]
+- [[10_部署推理/README|模型部署与推理]]

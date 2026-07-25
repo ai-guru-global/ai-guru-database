@@ -14,20 +14,20 @@ sources: []
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[智能体/Enterprise_Agent/Agent_Auth_Authorization|Agent Auth Authorization]] | Agent Auth Authorization | 开发者/学习者 |
-| [[智能体/Enterprise_Agent/Agent_Production_2026|Agent Production 2026]] | Agent Production 2026 | 开发者/学习者 |
-| [[智能体/Enterprise_Agent/Enterprise_Agent_Governance_2026|Enterprise Agent Governance 2026]] | Enterprise Agent Governance 2026 | 开发者/学习者 |
-| [[智能体/Enterprise_Agent/Hermes_Agent_Deep_Dive|Hermes Agent Deep Dive]] | Hermes Agent Deep Dive | 开发者/学习者 |
+| [[15_智能体/10_Enterprise_Agent/Agent_Auth_Authorization|Agent Auth Authorization]] | Agent Auth Authorization | 开发者/学习者 |
+| [[15_智能体/10_Enterprise_Agent/Agent_Production_2026|Agent Production 2026]] | Agent Production 2026 | 开发者/学习者 |
+| [[15_智能体/10_Enterprise_Agent/Enterprise_Agent_Governance_2026|Enterprise Agent Governance 2026]] | Enterprise Agent Governance 2026 | 开发者/学习者 |
+| [[15_智能体/10_Enterprise_Agent/Hermes_Agent_Deep_Dive|Hermes Agent Deep Dive]] | Hermes Agent Deep Dive | 开发者/学习者 |
 
 ## 入门
 
-- [[智能体/Enterprise_Agent/README|README]]
+- [[15_智能体/10_Enterprise_Agent/README|README]]
 
 ## Related
 
-- [[智能体/Agent_Foundations/index|Agent Foundations]]
-- [[智能体/Agent_Skills/index|Agent Skills]]
-- [[智能体/Agent_Workflow/index|Agent Workflow]]
+- [[15_智能体/01_Agent_Foundations/index|Agent Foundations]]
+- [[15_智能体/05_Agent_Skills/index|Agent Skills]]
+- [[15_智能体/03_Agent_Workflow/index|Agent Workflow]]
 
 ## Enterprise_Agent 核心概念
 

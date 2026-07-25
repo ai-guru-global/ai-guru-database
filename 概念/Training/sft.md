@@ -17,7 +17,7 @@ relationships:
   - target: "概念/lora-peft"
     type: related_to
 sources:
-  - 模型训练/Fine_tuning_Techniques/
+  - 07_模型训练/Fine_tuning_Techniques/
   - 概念/lora-qlora-sft-rlhf-dpo.md
 summary: "SFT（Supervised Fine-Tuning）是让预训练 LLM 学会"按指令回答"的关键步骤，用 (prompt, response) 对训练模型，是 RLHF / DPO 等对齐方法的前置阶段。"
 lifecycle: reviewed
@@ -180,7 +180,7 @@ llamafactory-cli train \
 - [[概念/fine-tuning-techniques]] — 微调技术
 - [[概念/lora-peft]] — LoRA / PEFT
 - [[概念/pre-training]] — 预训练（SFT 前置阶段）
-- [[模型训练/Fine_tuning_Techniques]] — 微调章节
+- [[07_模型训练/Fine_tuning_Techniques]] — 微调章节
 
 ---
 

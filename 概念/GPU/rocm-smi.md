@@ -10,7 +10,7 @@ relationships:
   - target: "概念/cuda-platform"
     type: related_to
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
 summary: "rocm-smi 是 AMD GPU 的系统管理 CLI 工具，对标 nvidia-smi。AI Stack 异构 GPU 集群中 AMD 节点的监控入口，支持 MI300X 等数据中心 GPU。"
 provenance:
   extracted: 0.30
@@ -196,8 +196,8 @@ rocm-smi --showtopo
 - [[概念/GPU/nvidia-smi|nvidia-smi]]
 - [[概念/GPU/ppu-smi|ppu-smi]]
 - [[概念/Inference/model-serving|模型服务]]
-- [[架构基建/AI_Stack_Deep_Dive|AI Stack 深度解析]]
-- [[运维/GPU_Monitoring|GPU 监控体系]]
+- [[12_架构基建/AI_Stack_Deep_Dive|AI Stack 深度解析]]
+- [[13_运维/GPU_Monitoring|GPU 监控体系]]
 
 ---
 

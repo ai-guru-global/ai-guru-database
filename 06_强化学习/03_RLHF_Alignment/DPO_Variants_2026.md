@@ -347,8 +347,8 @@ training_args = {
 
 ## 8. 交叉引用
 
-- [[强化学习/RLHF_Alignment/RLHF_DPO_GRPO_Deep_Dive|RLHF/DPO/GRPO 深度解析]]
-- [[强化学习/RLHF_Alignment/GRPO_Training_Deep_Dive|GRPO 训练实战]]
-- [[强化学习/RLHF_Alignment/Reward_Modeling_Deep_Dive|奖励模型训练]]
-- [[大模型/Fine_tuning_Techniques/|微调技术]]
-- [[强化学习/RL_Applications/RL_for_LLM_Reasoning|RL 驱动推理]]
+- [[06_强化学习/03_RLHF_Alignment/RLHF_DPO_GRPO_Deep_Dive|RLHF/DPO/GRPO 深度解析]]
+- [[06_强化学习/03_RLHF_Alignment/GRPO_Training_Deep_Dive|GRPO 训练实战]]
+- [[06_强化学习/03_RLHF_Alignment/Reward_Modeling_Deep_Dive|奖励模型训练]]
+- [[05_大模型/07_Fine_tuning_Techniques/|微调技术]]
+- [[06_强化学习/04_RL_Applications/RL_for_LLM_Reasoning|RL 驱动推理]]

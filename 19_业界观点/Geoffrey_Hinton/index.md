@@ -17,13 +17,13 @@ sources:
 
 # Geoffrey Hinton 人物索引
 
-> **一句话概括**: "深度学习教父"、2018 年图灵奖得主（与 [[业界观点/Yann_LeCun/about|LeCun]]、[[业界观点/Yoshua_Bengio/about|Bengio]] 共获）、多伦多大学荣休教授——反向传播算法的早期推广者、深度信念网络与 Capsule Network 的发明者，2023 年因对 AI 安全的深切担忧而从 Google 辞职，成为 AI 风险警告的标志性人物。
+> **一句话概括**: "深度学习教父"、2018 年图灵奖得主（与 [[19_业界观点/Yann_LeCun/about|LeCun]]、[[19_业界观点/Yoshua_Bengio/about|Bengio]] 共获）、多伦多大学荣休教授——反向传播算法的早期推广者、深度信念网络与 Capsule Network 的发明者，2023 年因对 AI 安全的深切担忧而从 Google 辞职，成为 AI 风险警告的标志性人物。
 
 ---
 
 ## 人物定位
 
-Geoffrey Hinton 是当代深度学习最重要的奠基人。他 1986 年与 Rumelhart、Williams 共同推广反向传播算法，2006 年提出深度信念网络推动深度学习复兴，2012 年指导学生 [[业界观点/Ilya_Sutskever/about|Sutskever]] 和 Alex Krizhevsky 构建 AlexNet 引爆深度学习革命。2023 年 5 月，他因"意识到数字智能可能优于生物智能"而从 Google 辞职，公开警告 AI 存在性风险，被誉为"AI 之父的离开"。
+Geoffrey Hinton 是当代深度学习最重要的奠基人。他 1986 年与 Rumelhart、Williams 共同推广反向传播算法，2006 年提出深度信念网络推动深度学习复兴，2012 年指导学生 [[19_业界观点/Ilya_Sutskever/about|Sutskever]] 和 Alex Krizhevsky 构建 AlexNet 引爆深度学习革命。2023 年 5 月，他因"意识到数字智能可能优于生物智能"而从 Google 辞职，公开警告 AI 存在性风险，被誉为"AI 之父的离开"。
 
 | 维度 | 定位 |
 |------|------|
@@ -40,8 +40,8 @@ Geoffrey Hinton 是当代深度学习最重要的奠基人。他 1986 年与 Rum
 
 | 文件 | 内容 | 适用人群 |
 |------|------|----------|
-| [[业界观点/Geoffrey_Hinton/about\|about]] | 完整人物简介：学术历程、核心贡献、安全转变 | 所有读者 |
-| [[业界观点/Geoffrey_Hinton/sayings\|sayings]] | 重要语录合集（反思、安全、技术前瞻）| 研究者 |
+| [[19_业界观点/Geoffrey_Hinton/about\|about]] | 完整人物简介：学术历程、核心贡献、安全转变 | 所有读者 |
+| [[19_业界观点/Geoffrey_Hinton/sayings\|sayings]] | 重要语录合集（反思、安全、技术前瞻）| 研究者 |
 
 ---
 
@@ -87,13 +87,13 @@ Geoffrey Hinton 是当代深度学习最重要的奠基人。他 1986 年与 Rum
 | 立场 | "我并不反对 AI——它有巨大益处。我只是希望我们谨慎行事" | 2024 |
 | 安全架构 | "Mortal Computation 可能比不朽数字智能更安全" | NeurIPS 2022 |
 
-完整语录见 [[业界观点/Geoffrey_Hinton/sayings|Hinton 语录]]。
+完整语录见 [[19_业界观点/Geoffrey_Hinton/sayings|Hinton 语录]]。
 
 ---
 
 ## 与 LeCun 的路线之争
 
-Hinton 与 [[业界观点/Yann_LeCun/about|LeCun]] 在三个问题上分歧明显：(1) LLM 是否是 AGI 路径；(2) AI 是否构成存在性风险；(3) 反向传播是否是终极算法。Hinton 倾向承认 LLM 能力但担忧后果，LeCun 则认为 LLM 不是 AGI 路径、需世界模型。完整对比见 [[业界观点/Talks_Synthesis/Hinton_vs_LeCun_World_Model_Debate|Hinton vs LeCun 世界模型之争]]。
+Hinton 与 [[19_业界观点/Yann_LeCun/about|LeCun]] 在三个问题上分歧明显：(1) LLM 是否是 AGI 路径；(2) AI 是否构成存在性风险；(3) 反向传播是否是终极算法。Hinton 倾向承认 LLM 能力但担忧后果，LeCun 则认为 LLM 不是 AGI 路径、需世界模型。完整对比见 [[19_业界观点/Talks_Synthesis/Hinton_vs_LeCun_World_Model_Debate|Hinton vs LeCun 世界模型之争]]。
 
 | 议题 | Hinton | LeCun |
 |------|--------|-------|
@@ -107,11 +107,11 @@ Hinton 与 [[业界观点/Yann_LeCun/about|LeCun]] 在三个问题上分歧明�
 
 | 派别 | 归属 |
 |------|------|
-| AI 安全警告派 | 旗手（与 [[业界观点/Yoshua_Bengio/about|Bengio]] 并列）|
+| AI 安全警告派 | 旗手（与 [[19_业界观点/Yoshua_Bengio/about|Bengio]] 并列）|
 | 深度学习元老 | 图灵奖三巨头之一 |
 | 架构探索派 | Mortal Computation |
 
-参见 [[业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix|AI 安全立场矩阵]] 把他放入完整光谱。
+参见 [[19_业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix|AI 安全立场矩阵]] 把他放入完整光谱。
 
 ---
 
@@ -119,11 +119,11 @@ Hinton 与 [[业界观点/Yann_LeCun/about|LeCun]] 在三个问题上分歧明�
 
 | 关系 | 人物 |
 |------|------|
-| 图灵奖共获者 | [[业界观点/Yann_LeCun/about|Yann LeCun]]、[[业界观点/Yoshua_Bengio/about|Yoshua Bengio]] |
-| 博士生 | [[业界观点/Ilya_Sutskever/about|Ilya Sutskever]]（AlexNet 共同作者）|
+| 图灵奖共获者 | [[19_业界观点/Yann_LeCun/about|Yann LeCun]]、[[19_业界观点/Yoshua_Bengio/about|Yoshua Bengio]] |
+| 博士生 | [[19_业界观点/Ilya_Sutskever/about|Ilya Sutskever]]（AlexNet 共同作者）|
 | 前雇主 | Google Brain |
-| 安全立场同盟 | [[业界观点/Yoshua_Bengio/about|Bengio]]、[[业界观点/Elon_Musk/about|Musk]] |
-| 路线争论对手 | [[业界观点/Yann_LeCun/about|LeCun]] |
+| 安全立场同盟 | [[19_业界观点/Yoshua_Bengio/about|Bengio]]、[[19_业界观点/Elon_Musk/about|Musk]] |
+| 路线争论对手 | [[19_业界观点/Yann_LeCun/about|LeCun]] |
 
 ---
 
@@ -131,10 +131,10 @@ Hinton 与 [[业界观点/Yann_LeCun/about|LeCun]] 在三个问题上分歧明�
 
 | 阶段 | 推荐内容 | 目标 |
 |------|----------|------|
-| 入门 | [[业界观点/Geoffrey_Hinton/about\|about]] | 了解学术历程 |
-| 进阶 | [[业界观点/Geoffrey_Hinton/sayings\|sayings]] | 掌握安全观点 |
+| 入门 | [[19_业界观点/Geoffrey_Hinton/about\|about]] | 了解学术历程 |
+| 进阶 | [[19_业界观点/Geoffrey_Hinton/sayings\|sayings]] | 掌握安全观点 |
 | 深入 | 1986 反向传播论文 / NeurIPS 2022 演讲 | 技术细节 |
-| 对比 | [[业界观点/Talks_Synthesis/Hinton_vs_LeCun_World_Model_Debate\|Hinton vs LeCun]] | 路线之争 |
+| 对比 | [[19_业界观点/Talks_Synthesis/Hinton_vs_LeCun_World_Model_Debate\|Hinton vs LeCun]] | 路线之争 |
 
 ---
 
@@ -175,13 +175,13 @@ Hinton 与 [[业界观点/Yann_LeCun/about|LeCun]] 在三个问题上分歧明�
 
 ## 关联导航
 
-- [[业界观点/Geoffrey_Hinton/about\|人物简介]] · [[业界观点/Geoffrey_Hinton/sayings\|核心语录]]
-- [[业界观点/Yann_LeCun/about\|Yann LeCun]] · [[业界观点/Yoshua_Bengio/about\|Yoshua Bengio]]
-- [[业界观点/Ilya_Sutskever/about\|Ilya Sutskever]]
-- [[业界观点/Talks_Synthesis/Hinton_vs_LeCun_World_Model_Debate\|Hinton vs LeCun 之争]]
-- [[业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix\|AI 安全立场矩阵]]
-- [[业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix\|AGI 时间表矩阵]]
-- [[业界观点/index\|业界观点首页]]
+- [[19_业界观点/Geoffrey_Hinton/about\|人物简介]] · [[19_业界观点/Geoffrey_Hinton/sayings\|核心语录]]
+- [[19_业界观点/Yann_LeCun/about\|Yann LeCun]] · [[19_业界观点/Yoshua_Bengio/about\|Yoshua Bengio]]
+- [[19_业界观点/Ilya_Sutskever/about\|Ilya Sutskever]]
+- [[19_业界观点/Talks_Synthesis/Hinton_vs_LeCun_World_Model_Debate\|Hinton vs LeCun 之争]]
+- [[19_业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix\|AI 安全立场矩阵]]
+- [[19_业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix\|AGI 时间表矩阵]]
+- [[19_业界观点/index\|业界观点首页]]
 
 ---
 

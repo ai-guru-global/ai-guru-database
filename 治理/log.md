@@ -9,17 +9,17 @@
 ### 阶段 A：目录结构治理（由主 agent 直接执行）
 
 1. **深度拉齐**：知识目录最深从 L5 压到 L3
-   - `大模型/Fine_tuning_Techniques/PEFT_2026/` → 扁平化
-   - `智能体/Course_Notes/{Learn_Claude_Code,Microsoft_AI_Agents}/` → 扁平化
-   - `智能体/Agent_Evaluation/demo/` → 迁出 `智能体/Agent_Evaluation/demo/`
-   - `智能体/Agent_Evaluation/docs/{architecture,guides,api,reports}/*.md` → 上提为 L2 知识页
+   - `05_大模型/07_Fine_tuning_Techniques/PEFT_2026/` → 扁平化
+   - `15_智能体/15_Course_Notes/{Learn_Claude_Code,Microsoft_AI_Agents}/` → 扁平化
+   - `15_智能体/07_Agent_Evaluation/demo/` → 迁出 `15_智能体/07_Agent_Evaluation/demo/`
+   - `15_智能体/07_Agent_Evaluation/docs/{architecture,guides,api,reports}/*.md` → 上提为 L2 知识页
 
 2. **7 项结构治理**
-   - P0：`可视化/atlas/`（226 MB Vite 工程）→ `前端应用/atlas/`
-   - P1：`AI运维/Observability/` 并入 `模型运维/Observability/`
-   - P1：`22_Research/` 并入 `20_Papers/` → 改名 `论文精读/`
-   - P2：`模型训练/Fine_tuning_Strategies.md` → `大模型/Fine_tuning_Techniques/`（LLM 专属）
-   - P2：`智能体/README.md` 加 4 分组索引（能力/评测/生态/工具与学习）
+   - P0：`94_可视化/atlas/`（226 MB Vite 工程）→ `前端应用/atlas/`
+   - P1：`AI运维/Observability/` 并入 `11_模型运维/08_Observability/`
+   - P1：`22_Research/` 并入 `20_Papers/` → 改名 `20_论文精读/`
+   - P2：`07_模型训练/Fine_tuning_Strategies.md` → `05_大模型/07_Fine_tuning_Techniques/`（LLM 专属）
+   - P2：`15_智能体/README.md` 加 4 分组索引（能力/评测/生态/工具与学习）
    - P2：`93_Tools/` 改名 `模板/`（消除与 `工具/` 和 `AI编程/Tools/` 的歧义）
    - P3：`91_Notes/` `92_Plan/` 归档到 `治理/notes/` `治理/plan/`
 
@@ -37,18 +37,18 @@
 ### 执行动作
 
 1. **知识类长文迁回对应知识章节**
-   - `模板/API_Templates/API_Design_for_AI.md` → `架构基建/AI_Gateway/API_Design_for_AI.md`
-   - `模板/LLM_Gateway/LLM_Gateway_Deep_Dive.md` → `架构基建/AI_Gateway/LLM_Gateway_Deep_Dive.md`
-   - `模板/API_Templates/Prompt_Management_Platform.md` → `模型运维/Prompt_Ops/Prompt_Management_Platform.md`
-   - `模板/API_Templates/Documentation_Automation.md` → `模型运维/Documentation_Automation.md`
+   - `模板/API_Templates/API_Design_for_AI.md` → `12_架构基建/11_AI_Gateway/API_Design_for_AI.md`
+   - `模板/LLM_Gateway/LLM_Gateway_Deep_Dive.md` → `12_架构基建/11_AI_Gateway/LLM_Gateway_Deep_Dive.md`
+   - `模板/API_Templates/Prompt_Management_Platform.md` → `11_模型运维/11_Prompt_Ops/Prompt_Management_Platform.md`
+   - `模板/API_Templates/Documentation_Automation.md` → `11_模型运维/Documentation_Automation.md`
 
 2. **可复用模板迁至实践场景旁边**
-   - `Model_Card_Template.md` → `模型运维/Experiment_Tracking/`
-   - `Evaluation_Report_Template.md` → `模型评估/Automation/`
-   - `Datasheet_Template.md` → `模型训练/Data/`
-   - `Deployment_Runbook_Template.md` → `模型运维/Model_Serving/`
-   - `Experiment_Tracking_Template.md` → `模型运维/Experiment_Tracking/`
-   - `AB_Testing_Template.md` → `模型评估/Automation/`
+   - `Model_Card_Template.md` → `11_模型运维/04_Experiment_Tracking/`
+   - `Evaluation_Report_Template.md` → `08_模型评估/05_Automation/`
+   - `Datasheet_Template.md` → `07_模型训练/02_Data/`
+   - `Deployment_Runbook_Template.md` → `11_模型运维/07_Model_Serving/`
+   - `Experiment_Tracking_Template.md` → `11_模型运维/04_Experiment_Tracking/`
+   - `AB_Testing_Template.md` → `08_模型评估/05_Automation/`
 
 3. **项目治理文件归拢到 `治理/`**
    - `模板/Meta/DOCUMENT_TEMPLATES.md` → `治理/Document_Templates.md`
@@ -58,7 +58,7 @@
 4. **索引与交叉引用更新**
    - 更新所有迁移文件的 frontmatter（category、tags、updated）
    - 更新目的地 README/index：架构基建、模型运维、模型评估、模型训练、治理
-   - 新建 `模型评估/Automation/index.md`、`模型运维/Prompt_Ops/index.md`、`模型运维/Model_Serving/index.md`
+   - 新建 `08_模型评估/05_Automation/index.md`、`11_模型运维/11_Prompt_Ops/index.md`、`11_模型运维/07_Model_Serving/index.md`
    - 更新其他章节中指向 `模板/` 的 wikilink 与相对链接（AI Gateway、部署推理、模型训练、概念、行业应用、治理 plan/notes 等）
 
 5. **清理**
@@ -75,8 +75,8 @@
 - 总页面 1225 · 已摄取源 37 · 摄取滞后 11 天
 - Token 足迹 ~4.5M（4 chars/token 启发式；`core` 占 74%）
 - Tier 分布：597 core / 577 supporting / 50 peripheral / 1 deep-dive（非标值）
-- 锚点页 Top 3：`面试岗位/README`(123)、`面试岗位/jobs`(110)、`智能体/.../Evaluation_Workflow`(69)
-- 桥页 Top 1：`学习/guides/ai_engineering_roadmap_2026.md`（跨 66 章）
+- 锚点页 Top 3：`21_面试岗位/README`(123)、`21_面试岗位/jobs`(110)、`15_智能体/.../Evaluation_Workflow`(69)
+- 桥页 Top 1：`90_学习/guides/ai_engineering_roadmap_2026.md`（跨 66 章）
 - 孤儿页 706（按章：05=101, 15=91, 21=90, 12=52, 19=31）
 - 陈旧核心页（updated ≥90 天 且 incoming ≥5）：0
 - `治理/` 目录当前 4 篇，治理/hot.md 引用 OK，但跨域综合扫描 overdue
@@ -212,9 +212,9 @@ _本文件作为 wiki 维护操作时间线 baseline，后续每次 `/wiki-lint`
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

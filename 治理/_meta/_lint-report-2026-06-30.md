@@ -74,8 +74,8 @@ Wikilinks pointing to pages that do not exist in the vault.
 | `AI运维/AI_Incident_Response_Playbook.md` | 17 | Moved/renamed during restructuring |
 | `arxiv` | 14 | External link used as wikilink (not a page) |
 | `机器学习` | 8 | Chapter-level link without README match |
-| `架构基建/AI_Infrastructure_2026.md` | 8 | Deleted or not yet created |
-| `架构基建/Spring_AI_Architecture.md` | 7 | Not yet created |
+| `12_架构基建/AI_Infrastructure_2026.md` | 8 | Deleted or not yet created |
+| `12_架构基建/Spring_AI_Architecture.md` | 7 | Not yet created |
 | `部署推理` | 6 | Chapter-level link without exact match |
 | `14_AI_Gateway/LiteLLM_Deep_Dive.md` | 5 | Moved to 12_Architecture_Infrastructure |
 | `14_AI_Gateway` | 4 | Chapter moved/merged |
@@ -86,10 +86,10 @@ Wikilinks pointing to pages that do not exist in the vault.
 | `14_AI_Gateway/AI_Gateway_2026.md` | 3 | Moved/merged into AI_Gateway_README |
 | `Agent` | 3 | Chapter-level link |
 | `AI测试` | 3 | Chapter-level link |
-| `大模型/Chinese_LLM_Ecosystem` | 3 | Subdirectory link without page match |
-| `深度学习/ApacheCN_PyTorch_Track` | 3 | Archived/removed |
-| `深度学习/ApacheCN_TensorFlow_Track` | 3 | Archived/removed |
-| `大模型/ApacheCN_NLP_Track` | 3 | Archived/removed |
+| `05_大模型/Chinese_LLM_Ecosystem` | 3 | Subdirectory link without page match |
+| `03_深度学习/ApacheCN_PyTorch_Track` | 3 | Archived/removed |
+| `03_深度学习/ApacheCN_TensorFlow_Track` | 3 | Archived/removed |
+| `05_大模型/ApacheCN_NLP_Track` | 3 | Archived/removed |
 | `模型训练` | 3 | Chapter-level link |
 
 **Pattern analysis**: ~30 broken links are chapter-level or directory-level references (e.g., `[[机器学习]]`) that don't resolve to a specific file. ~14 are `[[arxiv]]` references that should be external links. The remaining ~55 are genuine broken references to moved/deleted pages.
@@ -145,9 +145,9 @@ Pages with `summary_len = 0` (no summary in frontmatter).
 | 48 | `AI编程/Tools/OpenCode/22-opencode-installation-quickstart.md` | 安装部署与快速入门 |
 | 46 | `AI编程/Tools/OpenCode/24-opencode-agents-system.md` | Agent 系统深度指南 |
 | 22 | `AI编程/Tools/OpenRouter/11-openrouter-security-privacy.md` | 安全、隐私与数据治理 |
-| 12 | `智能体/Agent_Harness/The_Anatomy_of_an_Agent_Harness.md` | The Anatomy of an Agent Harness |
-| 10 | `大模型/LLM_For_Beginners.md` | 大语言模型入门 |
-| 6 | `大模型/LLM_Architectures/LLM_Internals_Inference.md` | 大模型推理与部署 |
+| 12 | `15_智能体/04_Agent_Harness/The_Anatomy_of_an_Agent_Harness.md` | The Anatomy of an Agent Harness |
+| 10 | `05_大模型/LLM_For_Beginners.md` | 大语言模型入门 |
+| 6 | `05_大模型/05_LLM_Architectures/LLM_Internals_Inference.md` | 大模型推理与部署 |
 
 **Key observation**: 47 of the 65 missing-summary pages (72%) are from the 16_AI_Coding OpenRouter/OpenCode batch ingest. These are high-traffic pages (48-50 incoming each) that urgently need summaries.
 
@@ -235,8 +235,8 @@ agent-evaluation-model-evaluation, agent-framework-production, agents-reinforcem
 
 1. **Fix 55 genuinely broken wikilinks** -- Update references to moved/renamed pages. Focus on:
    - `AI运维/AI_Incident_Response_Playbook.md` (17 refs) -- find the actual page path
-   - `架构基建/AI_Infrastructure_2026.md` (8 refs) -- create or redirect
-   - `架构基建/Spring_AI_Architecture.md` (7 refs) -- create or redirect
+   - `12_架构基建/AI_Infrastructure_2026.md` (8 refs) -- create or redirect
+   - `12_架构基建/Spring_AI_Architecture.md` (7 refs) -- create or redirect
    - `14_AI_Gateway/*` references (12 refs total) -- update to current paths
    - `arxiv` (14 refs) -- convert to external links `[arxiv](https://arxiv.org)`
    - Chapter-level `[[XX_Chapter]]` links (~30) -- point to `XX_Chapter/README.md`

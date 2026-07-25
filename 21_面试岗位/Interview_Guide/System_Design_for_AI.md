@@ -278,6 +278,6 @@ Tools:
 ## Related Topics
 
 - [[AI_Solutions_Architect]]: Solutions architect role
-- [[面试岗位/Machine_Learning_Engineer/question_bank]]: ML engineer interview prep
+- [[21_面试岗位/Machine_Learning_Engineer/question_bank]]: ML engineer interview prep
 - [[AI_Product_Manager]]: Product sense for AI
-- [[面试岗位/AI_Infrastructure_Engineer/question_bank]]: Infrastructure interview prep
+- [[21_面试岗位/AI_Infrastructure_Engineer/question_bank]]: Infrastructure interview prep

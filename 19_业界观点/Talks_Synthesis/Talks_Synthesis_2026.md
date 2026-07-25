@@ -220,10 +220,10 @@ flowchart TB
 
 ## 与其他章节的关联
 
-- [AI 历史](入门/Fundamentals/AI_History_Timeline.md) — 演讲者贡献与历史时间线
-- [AI 伦理](入门/Ethics_and_Future/AI_Ethics_Society.md) — AI 安全争议的深入分析
-- [AI 未来趋势](入门/Ethics_and_Future/AI_Future_Trends.md) — 行业前瞻判断的汇总
-- [Agent 生产](../智能体/README.md) — Agent 技术实现
+- [AI 历史](00_入门/01_Fundamentals/AI_History_Timeline.md) — 演讲者贡献与历史时间线
+- [AI 伦理](00_入门/04_Ethics_and_Future/AI_Ethics_Society.md) — AI 安全争议的深入分析
+- [AI 未来趋势](00_入门/04_Ethics_and_Future/AI_Future_Trends.md) — 行业前瞻判断的汇总
+- [Agent 生产](../15_智能体/README.md) — Agent 技术实现
 
 ---
 
@@ -231,8 +231,8 @@ flowchart TB
 
 ## Related
 
-- [[业界观点/Andrej_Karpathy/about.md|about]]
-- [[业界观点/Andrew_Ng/about.md|about]]
-- [[业界观点/Andrew_Ng/sayings.md|sayings]]
-- [[业界观点/Bill_Gates/about.md|about]]
-- [[业界观点/Bill_Gates/sayings.md|sayings]]
+- [[19_业界观点/Andrej_Karpathy/about.md|about]]
+- [[19_业界观点/Andrew_Ng/about.md|about]]
+- [[19_业界观点/Andrew_Ng/sayings.md|sayings]]
+- [[19_业界观点/Bill_Gates/about.md|about]]
+- [[19_业界观点/Bill_Gates/sayings.md|sayings]]

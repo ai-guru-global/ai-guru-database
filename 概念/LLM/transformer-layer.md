@@ -190,7 +190,7 @@ FFN 就像一个全连接神经网络，把 Attention 出来的结果再做一�
 - [[概念/LLM/multi-head-latent-attention|MLA]]
 - [[概念/LLM/rope|RoPE 位置编码]]
 - [[概念/LLM/flash-attention-kernels|Flash Attention]]
-- [[大模型/Transformer/Transformer_Architecture|Transformer 架构技术详解]]
+- [[05_大模型/03_Transformer/Transformer_Architecture|Transformer 架构技术详解]]
 
 ## 主流模型层数参考
 

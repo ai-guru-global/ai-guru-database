@@ -823,8 +823,8 @@ graph TB
 
 ## Related
 
-- [[大模型/Structured_Output_Guide|结构化输出完全指南]] — 上层视角的方案对比
-- [[大模型/Prompt_Engineering/Prompt_Engineering_Complete_Guide|提示词工程]] — 格式输出的提示技巧
-- [[智能体/GenAI_L11_Integrating_with_Function_Calling|Function Calling]] — 训练层结构化输出
-- [[大模型/LLM_Architectures/LLM_Internals_Inference|LLM 推理内部机制]] — 解码过程详解
-- [[学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]] — 整体技术图谱
+- [[05_大模型/Structured_Output_Guide|结构化输出完全指南]] — 上层视角的方案对比
+- [[05_大模型/08_Prompt_Engineering/Prompt_Engineering_Complete_Guide|提示词工程]] — 格式输出的提示技巧
+- [[15_智能体/GenAI_L11_Integrating_with_Function_Calling|Function Calling]] — 训练层结构化输出
+- [[05_大模型/05_LLM_Architectures/LLM_Internals_Inference|LLM 推理内部机制]] — 解码过程详解
+- [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]] — 整体技术图谱

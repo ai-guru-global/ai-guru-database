@@ -925,10 +925,10 @@ def train_wgan_gp_step(critic, generator, real_data,
 
 ## Related
 
-- [[深度学习/Generative_Models/VAE_Deep_Dive]] — VAE深度解析（生成模型对比）
-- [[深度学习/Generative_Models/Diffusion_Models_Deep_Dive]] — 扩散模型深度解析（当前SOTA生成模型）
-- [[深度学习/DL_Fundamentals/DL_Fundamentals]] — 深度学习基础
-- [[深度学习/Neural_Network_Core/Neural_Network_Core]] — 神经网络核心
-- [[深度学习/Optimization/Optimization]] — 优化方法
-- [[深度学习/Self_Supervised_Learning/Self_Supervised_Learning]] — 自监督学习
+- [[03_深度学习/04_Generative_Models/VAE_Deep_Dive]] — VAE深度解析（生成模型对比）
+- [[03_深度学习/04_Generative_Models/Diffusion_Models_Deep_Dive]] — 扩散模型深度解析（当前SOTA生成模型）
+- [[03_深度学习/01_DL_Fundamentals/DL_Fundamentals]] — 深度学习基础
+- [[03_深度学习/02_Neural_Network_Core/Neural_Network_Core]] — 神经网络核心
+- [[03_深度学习/03_Optimization/Optimization]] — 优化方法
+- [[03_深度学习/06_Self_Supervised_Learning/Self_Supervised_Learning]] — 自监督学习
 - [[概念/Safety/model-watermark]] — 模型水印（GAN生成内容检测）

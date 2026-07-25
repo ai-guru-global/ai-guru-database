@@ -14,7 +14,7 @@ relationships:
   - target: "概念/ray"
     type: related_to
 sources:
-  - 架构基建/CNCF_Cloud_Native_AI/Volcano_Deep_Dive.md
+  - 12_架构基建/05_CNCF_Cloud_Native_AI/Volcano_Deep_Dive.md
 summary: "Volcano 是 CNCF Incubating 的 Kubernetes 批处理调度器，专为大数据和 AI 工作负载设计，提供 Gang Scheduling、队列调度、Job 优先级、抢占等能力，广泛应用于分布式训练场景。"
 provenance:
   extracted: 0.8
@@ -91,7 +91,7 @@ aliases:
 
 ## Related
 
-- [[架构基建/CNCF_Cloud_Native_AI/Volcano_Deep_Dive]] — Volcano 深度解析
+- [[12_架构基建/05_CNCF_Cloud_Native_AI/Volcano_Deep_Dive]] — Volcano 深度解析
 - [[概念/kubernetes]] — Kubernetes
 - [[概念/distributed-training]] — 分布式训练
 - [[概念/kubeflow]] — Kubeflow

@@ -28,7 +28,7 @@ sources:
 AGI（通用人工智能，Artificial General Intelligence）何时实现，直接决定了三件事：
 
 1. **投资节奏**：如果 AGI 在 3-5 年内到来，现在的算力军备竞赛就是"最后一公里"，必须 all in；如果还要 30 年，投资回报模型完全不同。
-2. **安全紧迫性**：[[业界观点/Geoffrey_Hinton/about|Hinton]] 警告"AI 能力提升速度超出安全研究跟进速度"——AGI 越近，安全研究越紧迫。
+2. **安全紧迫性**：[[19_业界观点/Geoffrey_Hinton/about|Hinton]] 警告"AI 能力提升速度超出安全研究跟进速度"——AGI 越近，安全研究越紧迫。
 3. **政策框架**：各国 AI 立法（如欧盟 AI Act、美国行政令）的时间窗口设计，取决于 AGI 何时构成系统性风险。
 
 但这里有个根本困难：**没有人就"什么是 AGI"达成共识**。Altman 把它定义为"在大多数有经济价值的工作中超越人类的系统"；Hassabis 强调"解决智能以解决其他问题"；LeCun 则认为现在的 AI 连猫都不如。定义不同，预测自然南辕北辙。本篇在第二节的矩阵中明确标注每个人使用的定义。
@@ -41,18 +41,18 @@ AGI（通用人工智能，Artificial General Intelligence）何时实现，直�
 
 | 领袖 | AGI 定义 | 公开预测 | 距 2026 | 立场倾向 | 关键依据 |
 |------|----------|----------|---------|----------|----------|
-| [[业界观点/Elon_Musk/about|Elon Musk]] | "比最聪明的人更聪明" | 2025-2026 | 0-1 年 | 极乐观 | xAI 算力 + Grok 进展 |
-| [[业界观点/Sam_Altman/about|Sam Altman]] | "多数有经济价值工作超越人类" | 2025-2030 | 0-5 年 | 乐观 | Scaling Laws + Test-Time Compute |
-| [[业界观点/Dario_Amodei/about|Dario Amodei]] | "强大 AI" (Machines of Loving Grace) | 2026-2027 | 1-2 年 | 谨慎乐观 | Claude 能力曲线 + RSP |
-| [[业界观点/Jensen_Huang/about|黄仁勋]] | "具竞争力的人类水平 AI" | 5 年内（即 ~2030 前） | ~5 年 | 乐观 | 算力增长曲线 |
-| [[业界观点/Demis_Hassabis/about|Demis Hassabis]] | "通用智能，能跨领域学习" | "几年到十年" | 3-10 年 | 谨慎 | 世界模型 + 强化学习 |
-| [[业界观点/Ilya_Sutskever/about|Ilya Sutskever]] | "超级智能" (Superintelligence) | "这个十年" | ~5 年 | 乐观但聚焦安全 | GPT 路线 + SSI 使命 |
-| [[业界观点/Geoffrey_Hinton/about|Geoffrey Hinton]] | "超越人类一般智能" | 5-20 年 | 5-20 年 | 担忧为主 | 数字智能可共享知识 |
-| [[业界观点/Sundar_Pichai/about|Sundar Pichai]] | "比火或电更深远的 技术" | 不给具体年份 | 不定 | 务实 | Google 全栈布局 |
-| [[业界观点/Bill_Gates/about|Bill Gates]] | "GUI 级别的革命性技术" | 不给具体年份 | 不定 | 务实乐观 | 关注应用而非时间 |
-| [[业界观点/Andrew_Ng/about|Andrew Ng]] | "多项人类任务超越人类" | "还有几十年" | ~30 年 | 谨慎 | 反对炒作 |
-| [[业界观点/Yann_LeCun/about|Yann LeCun]] | "像人一样理解和规划" | "离我们还很远" | 数十年 | 怀疑 | LLM 不是路径，需世界模型 |
-| [[业界观点/Yoshua_Bengio/about|Yoshua Bengio]] | "超越人类能力的系统" | "不确定但可能比想象快" | 5-30 年 | 担忧 | LawZero 安全研究 |
+| [[19_业界观点/Elon_Musk/about|Elon Musk]] | "比最聪明的人更聪明" | 2025-2026 | 0-1 年 | 极乐观 | xAI 算力 + Grok 进展 |
+| [[19_业界观点/Sam_Altman/about|Sam Altman]] | "多数有经济价值工作超越人类" | 2025-2030 | 0-5 年 | 乐观 | Scaling Laws + Test-Time Compute |
+| [[19_业界观点/Dario_Amodei/about|Dario Amodei]] | "强大 AI" (Machines of Loving Grace) | 2026-2027 | 1-2 年 | 谨慎乐观 | Claude 能力曲线 + RSP |
+| [[19_业界观点/Jensen_Huang/about|黄仁勋]] | "具竞争力的人类水平 AI" | 5 年内（即 ~2030 前） | ~5 年 | 乐观 | 算力增长曲线 |
+| [[19_业界观点/Demis_Hassabis/about|Demis Hassabis]] | "通用智能，能跨领域学习" | "几年到十年" | 3-10 年 | 谨慎 | 世界模型 + 强化学习 |
+| [[19_业界观点/Ilya_Sutskever/about|Ilya Sutskever]] | "超级智能" (Superintelligence) | "这个十年" | ~5 年 | 乐观但聚焦安全 | GPT 路线 + SSI 使命 |
+| [[19_业界观点/Geoffrey_Hinton/about|Geoffrey Hinton]] | "超越人类一般智能" | 5-20 年 | 5-20 年 | 担忧为主 | 数字智能可共享知识 |
+| [[19_业界观点/Sundar_Pichai/about|Sundar Pichai]] | "比火或电更深远的 技术" | 不给具体年份 | 不定 | 务实 | Google 全栈布局 |
+| [[19_业界观点/Bill_Gates/about|Bill Gates]] | "GUI 级别的革命性技术" | 不给具体年份 | 不定 | 务实乐观 | 关注应用而非时间 |
+| [[19_业界观点/Andrew_Ng/about|Andrew Ng]] | "多项人类任务超越人类" | "还有几十年" | ~30 年 | 谨慎 | 反对炒作 |
+| [[19_业界观点/Yann_LeCun/about|Yann LeCun]] | "像人一样理解和规划" | "离我们还很远" | 数十年 | 怀疑 | LLM 不是路径，需世界模型 |
+| [[19_业界观点/Yoshua_Bengio/about|Yoshua Bengio]] | "超越人类能力的系统" | "不确定但可能比想象快" | 5-30 年 | 担忧 | LawZero 安全研究 |
 
 > 注：Musk 的预测最激进且最不稳定——他多次声称"明年实现 AGI"（从 2023 推迟到 2024 再到 2025-2026），其预测需打折看待。Altman 拒绝给精确定义和日期，但反复暗示"我们可能离 AGI 只有几年之遥"。
 
@@ -64,21 +64,21 @@ AGI（通用人工智能，Artificial General Intelligence）何时实现，直�
 
 核心逻辑：**只要继续扩大模型、数据、算力，智能就会涌现**。
 
-- [[业界观点/Sam_Altman/about|Altman]] 在 2024-2025 访谈中表示"预训练的规模扩展仍未触顶"，同时认可推理时计算扩展（Test-Time Compute，如 o1/o3/R1）是新的增长维度。他把 AGI 定义为"在大多数有经济价值的工作中超越人类的系统"，这是一个相对可操作的定义。
-- [[业界观点/Dario_Amodei/about|Amodei]] 在 "Machines of Loving Grace" (2024) 中提出"强大 AI"可能在 2026-2027 到来，能消除贫困、治愈疾病，但也可能是"最危险的技术"。
-- [[业界观点/Ilya_Sutskever/about|Sutskever]] 作为 GPT 路线灵魂人物，2024 年离开 OpenAI 创立 Safe Superintelligence Inc. (SSI)，名字本身就宣示了对"超级智能即将到来"的信念，同时把全部精力转向如何让它安全。
+- [[19_业界观点/Sam_Altman/about|Altman]] 在 2024-2025 访谈中表示"预训练的规模扩展仍未触顶"，同时认可推理时计算扩展（Test-Time Compute，如 o1/o3/R1）是新的增长维度。他把 AGI 定义为"在大多数有经济价值的工作中超越人类的系统"，这是一个相对可操作的定义。
+- [[19_业界观点/Dario_Amodei/about|Amodei]] 在 "Machines of Loving Grace" (2024) 中提出"强大 AI"可能在 2026-2027 到来，能消除贫困、治愈疾病，但也可能是"最危险的技术"。
+- [[19_业界观点/Ilya_Sutskever/about|Sutskever]] 作为 GPT 路线灵魂人物，2024 年离开 OpenAI 创立 Safe Superintelligence Inc. (SSI)，名字本身就宣示了对"超级智能即将到来"的信念，同时把全部精力转向如何让它安全。
 
 > **关键引述**："We might be only a few years away from AGI."（Altman）——我们可能离 AGI 只有几年之遥。
 
 ### 2. 算力推演派（黄仁勋）
 
-[[业界观点/Jensen_Huang/about|Jensen Huang]] 的逻辑最"硬件化"：他根据 GPU 性能增长曲线（每代提升数倍，加上集群规模扩大）推算"AI 算力每两年提升一个数量级"，认为在当前轨迹下 5 年内（~2030 前）可实现具竞争力的人类水平 AI。他的立场天然乐观——因为 NVIDIA 是这场军备竞赛的最大受益者。
+[[19_业界观点/Jensen_Huang/about|Jensen Huang]] 的逻辑最"硬件化"：他根据 GPU 性能增长曲线（每代提升数倍，加上集群规模扩大）推算"AI 算力每两年提升一个数量级"，认为在当前轨迹下 5 年内（~2030 前）可实现具竞争力的人类水平 AI。他的立场天然乐观——因为 NVIDIA 是这场军备竞赛的最大受益者。
 
 > **关键引述**："Accelerated computing and generative AI mark a new industrial revolution."（黄仁勋，GTC 2023）
 
 ### 3. 工程进度派（Musk）
 
-[[业界观点/Elon_Musk/about|Musk]] 的预测最激进但也最不可靠——他多次声称"明年 AGI"。其依据是 xAI 的 Colossus 超算（Memphis）和 Grok 模型的快速迭代。外界普遍认为 Musk 的预测带有营销和股价驱动成分。
+[[19_业界观点/Elon_Musk/about|Musk]] 的预测最激进但也最不可靠——他多次声称"明年 AGI"。其依据是 xAI 的 Colossus 超算（Memphis）和 Grok 模型的快速迭代。外界普遍认为 Musk 的预测带有营销和股价驱动成分。
 
 ---
 
@@ -86,7 +86,7 @@ AGI（通用人工智能，Artificial General Intelligence）何时实现，直�
 
 ### 1. 架构怀疑派（LeCun）
 
-[[业界观点/Yann_LeCun/about|LeCun]] 是最坚定的"AGI 还远"派。他的核心论点：
+[[19_业界观点/Yann_LeCun/about|LeCun]] 是最坚定的"AGI 还远"派。他的核心论点：
 
 - **LLM 不是 AGI 路径**：自回归模型缺少世界理解、持久记忆、规划能力。
 - **AI 至今不如猫**：在 2026 India AI Impact Summit 演讲中他说"AI 至今连像 17 岁孩子那样学开车都做不到……我们漏掉了什么大东西"。
@@ -97,15 +97,15 @@ AGI（通用人工智能，Artificial General Intelligence）何时实现，直�
 
 ### 2. 务实派（Andrew Ng）
 
-[[业界观点/Andrew_Ng/about|Andrew Ng]] 反对 AGI 炒作。他多次公开表示"AGI 还有几十年"，认为当前 LLM 的能力被夸大，真正的通用智能需要多项根本性突破。他主张把注意力放在"狭义 AI 的工业落地"上，而不是追逐遥远的 AGI。他的 DeepLearning.AI 和 Landing AI 都聚焦于制造业等传统行业的 AI 应用，而非 AGI 研究。
+[[19_业界观点/Andrew_Ng/about|Andrew Ng]] 反对 AGI 炒作。他多次公开表示"AGI 还有几十年"，认为当前 LLM 的能力被夸大，真正的通用智能需要多项根本性突破。他主张把注意力放在"狭义 AI 的工业落地"上，而不是追逐遥远的 AGI。他的 DeepLearning.AI 和 Landing AI 都聚焦于制造业等传统行业的 AI 应用，而非 AGI 研究。
 
 ### 3. 安全驱动的谨慎派（Bengio / Hinton）
 
-[[业界观点/Yoshua_Bengio/about|Bengio]] 和 [[业界观点/Geoffrey_Hinton/about|Hinton]] 的预测范围较宽（5-30 年），但其立场特点不是"乐观或悲观"，而是**安全紧迫性**——无论 AGI 何时到来，安全研究现在就必须 Scaling，否则会落后于能力研究。Hinton 在 2023 年说"数字智能可能优于生物智能"，暗示他认为 AGI 可能比想象中快，因此更担忧。Bengio 创立 LawZero 基金会，正是为了"在 AI 达到或超越人类能力之前确保安全"。
+[[19_业界观点/Yoshua_Bengio/about|Bengio]] 和 [[19_业界观点/Geoffrey_Hinton/about|Hinton]] 的预测范围较宽（5-30 年），但其立场特点不是"乐观或悲观"，而是**安全紧迫性**——无论 AGI 何时到来，安全研究现在就必须 Scaling，否则会落后于能力研究。Hinton 在 2023 年说"数字智能可能优于生物智能"，暗示他认为 AGI 可能比想象中快，因此更担忧。Bengio 创立 LawZero 基金会，正是为了"在 AI 达到或超越人类能力之前确保安全"。
 
 ### 4. 务实观察派（Gates / Pichai）
 
-[[业界观点/Bill_Gates/about|Gates]] 和 [[业界观点/Sundar_Pichai/about|Pichai]] 都拒绝给出具体 AGI 日期。Gates 把 AI 称为"GUI 级别的革命性技术"，关注应用而非时间；Pichai 称 AI"比火或电更深远"，但强调长期布局。两人的共同点是**不参与 AGI 日期炒作，专注把 AI 做成基础设施**。
+[[19_业界观点/Bill_Gates/about|Gates]] 和 [[19_业界观点/Sundar_Pichai/about|Pichai]] 都拒绝给出具体 AGI 日期。Gates 把 AI 称为"GUI 级别的革命性技术"，关注应用而非时间；Pichai 称 AI"比火或电更深远"，但强调长期布局。两人的共同点是**不参与 AGI 日期炒作，专注把 AI 做成基础设施**。
 
 ### 预测准确度历史回测
 
@@ -178,7 +178,7 @@ Musk、Altman、黄仁勋的乐观预测与他们的公司利益高度相关（�
 - 担忧派（Hinton、Bengio）无论预测快慢都主张强监管。
 - 怀疑派（LeCun、Andrew Ng）认为风险被高估，反对暂停。
 
-完整的安全立场光谱见 [[业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix|AI 安全立场矩阵]]。
+完整的安全立场光谱见 [[19_业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix|AI 安全立场矩阵]]。
 
 ---
 
@@ -188,13 +188,13 @@ Musk、Altman、黄仁勋的乐观预测与他们的公司利益高度相关（�
 
 | 领袖 | 机构 | AGI 预测 | 备注 |
 |------|------|----------|------|
-| [[业界观点/Wenfeng_Liang/about|梁文锋]] | DeepSeek | 不公开具体年份 | 强调"效率比规模重要"，暗示架构突破是关键变量 |
-| [[业界观点/Zhilin_Yang/about|杨植麟]] | 月之暗面 | 坚信长上下文是 AGI 关键 | 技术路线专注，不给日期 |
-| [[业界观点/Jie_Tang/about|唐杰]] | 智谱 GLM | 产学研渐进 | 强调学术底蕴 |
-| [[业界观点/Junjie_Yan/about|闫俊杰]] | MiniMax | 全模态 + C 端 | 产品导向，不谈日期 |
-| [[业界观点/Jinze_Bai/about|白金泽]] | 阿里 Qwen | 不公开 | 多语言生态扩张 |
+| [[19_业界观点/Wenfeng_Liang/about|梁文锋]] | DeepSeek | 不公开具体年份 | 强调"效率比规模重要"，暗示架构突破是关键变量 |
+| [[19_业界观点/Zhilin_Yang/about|杨植麟]] | 月之暗面 | 坚信长上下文是 AGI 关键 | 技术路线专注，不给日期 |
+| [[19_业界观点/Jie_Tang/about|唐杰]] | 智谱 GLM | 产学研渐进 | 强调学术底蕴 |
+| [[19_业界观点/Junjie_Yan/about|闫俊杰]] | MiniMax | 全模态 + C 端 | 产品导向，不谈日期 |
+| [[19_业界观点/Jinze_Bai/about|白金泽]] | 阿里 Qwen | 不公开 | 多语言生态扩张 |
 
-中国领袖的共同特点是**更关注工程落地而非 AGI 日期**——这与美国领袖热衷于公开预测形成对比。一个解释是：美国领袖的预测常服务于融资和股价（Altman、Musk、黄仁勋），而中国领袖的叙事更内敛。完整中美竞赛分析见 [[业界观点/Talks_Synthesis/China_US_AI_Race_Leaders_Views|中美 AI 竞赛领袖观点]]。
+中国领袖的共同特点是**更关注工程落地而非 AGI 日期**——这与美国领袖热衷于公开预测形成对比。一个解释是：美国领袖的预测常服务于融资和股价（Altman、Musk、黄仁勋），而中国领袖的叙事更内敛。完整中美竞赛分析见 [[19_业界观点/Talks_Synthesis/China_US_AI_Race_Leaders_Views|中美 AI 竞赛领袖观点]]。
 
 ---
 
@@ -342,16 +342,16 @@ AGI 预测不是静态的，它会随技术突破而剧烈波动。下表展示�
 
 ## 十七、关联导航
 
-- [[业界观点/Sam_Altman/about|Altman 简介]] · [[业界观点/Dario_Amodei/about|Amodei 简介]]
-- [[业界观点/Yann_LeCun/about|LeCun 简介]] · [[业界观点/Demis_Hassabis/about|Hassabis 简介]]
-- [[业界观点/Jensen_Huang/about|黄仁勋 简介]] · [[业界观点/Elon_Musk/about|Musk 简介]]
-- [[业界观点/Geoffrey_Hinton/about|Hinton 简介]] · [[业界观点/Yoshua_Bengio/about|Bengio 简介]]
-- [[业界观点/Andrew_Ng/about|Andrew Ng 简介]]
-- [[业界观点/Ilya_Sutskever/about|Sutskever 简介]]
-- [[业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix|AI 安全立场矩阵]]
-- [[业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026|开源 vs 闭源之争]]
-- [[业界观点/Talks_Synthesis/Hinton_vs_LeCun_World_Model_Debate|Hinton vs LeCun 之争]]
-- [[业界观点/index|业界观点首页]]
+- [[19_业界观点/Sam_Altman/about|Altman 简介]] · [[19_业界观点/Dario_Amodei/about|Amodei 简介]]
+- [[19_业界观点/Yann_LeCun/about|LeCun 简介]] · [[19_业界观点/Demis_Hassabis/about|Hassabis 简介]]
+- [[19_业界观点/Jensen_Huang/about|黄仁勋 简介]] · [[19_业界观点/Elon_Musk/about|Musk 简介]]
+- [[19_业界观点/Geoffrey_Hinton/about|Hinton 简介]] · [[19_业界观点/Yoshua_Bengio/about|Bengio 简介]]
+- [[19_业界观点/Andrew_Ng/about|Andrew Ng 简介]]
+- [[19_业界观点/Ilya_Sutskever/about|Sutskever 简介]]
+- [[19_业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix|AI 安全立场矩阵]]
+- [[19_业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026|开源 vs 闭源之争]]
+- [[19_业界观点/Talks_Synthesis/Hinton_vs_LeCun_World_Model_Debate|Hinton vs LeCun 之争]]
+- [[19_业界观点/index|业界观点首页]]
 
 ---
 

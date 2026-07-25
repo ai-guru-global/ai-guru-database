@@ -4,9 +4,9 @@ category: -synthesis
 tags: [llm-infrastructure, ai-infrastructure, system-design, gpu, serving, architecture]
 sources:
   - "[[概念/llm-infrastructure]]"
-  - "[[架构基建/Architecture_Overview/AI_Infrastructure_2026]]"
-  - "[[架构基建/AI_System_Architecture_2026]]"
-  - "[[架构基建/AI_Stack_Deep_Dive]]"
+  - "[[12_架构基建/02_Architecture_Overview/AI_Infrastructure_2026]]"
+  - "[[12_架构基建/AI_System_Architecture_2026]]"
+  - "[[12_架构基建/AI_Stack_Deep_Dive]]"
 created: 2026-06-05
 updated: 2026-06-05
 summary: "传统系统架构（微服务、负载均衡、数据库）的哪些经验能迁移到 LLM 基础设施，哪些需要彻底重写？从 Web 服务架构师到 AI 基础设施工程师的认知迁移指南。"
@@ -68,18 +68,18 @@ LLM 基础设施不是从零发明的——它大量借鉴了传统 Web 服务�
 ## Related
 
 - [[概念/llm-infrastructure]] — LLM 基础设施概念
-- [[架构基建/Architecture_Overview/AI_Infrastructure_2026]] — AI 基础设施 2026
-- [[架构基建/AI_System_Architecture_2026]] — AI 系统架构
-- [[架构基建/AI_Stack_Deep_Dive]] — AI 技术栈深度解读
-- [[部署推理/Inference_Engines/vLLM_Deep_Dive]] — vLLM 推理引擎
-- [[架构基建/AI_Gateway/AI_Gateway_2026]] — AI Gateway 2026
+- [[12_架构基建/02_Architecture_Overview/AI_Infrastructure_2026]] — AI 基础设施 2026
+- [[12_架构基建/AI_System_Architecture_2026]] — AI 系统架构
+- [[12_架构基建/AI_Stack_Deep_Dive]] — AI 技术栈深度解读
+- [[10_部署推理/02_Inference_Engines/vLLM_Deep_Dive]] — vLLM 推理引擎
+- [[12_架构基建/11_AI_Gateway/AI_Gateway_2026]] — AI Gateway 2026
 - [[治理/serving-deployment]] — 服务化 × 部署
 
 ## 架构核心组件对比
 
 | 组件层 | 功能 | 关键技术 | 选型考量 |
 |--------|------|----------|----------|
-| 计算层 | 模型训练/推理 | GPU/TPU/NPU集群 | 算力需求+成本 |
+| 计算层 | 07_模型训练/推理 | GPU/TPU/NPU集群 | 算力需求+成本 |
 | 存储层 | 数据/模型/检查点 | 分布式存储/对象存储 | 容量+IOPS+成本 |
 | 网络层 | 节点间通信 | RDMA/RoCE/InfiniBand | 带宽+延迟 |
 | 调度层 | 资源编排 | K8s/Slurm/Ray | 弹性+效率 |

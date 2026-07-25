@@ -17,7 +17,7 @@ sources: []
 
 > **一句话理解**: HolmesGPT 是 CNCF 沙箱级的「AI 事故调查员」——被告警触发后，它会主动去拉日志/指标、执行 kubectl 命令和 Runbook、关联多源可观测数据，产出根因+证据+修复建议，和 K8sGPT 的「扫集群」互补。
 
-> 📐 **概念方法论**: 理解 HolmesGPT 的关键是抓住「调查 (Investigate)」这个动词。它不是被动罗列异常的扫描器（那是 [[CNCF_Cloud_Native_AI/K8sGPT_Deep_Dive]] 的职责），而是被告警驱动后，像 oncall 工程师那样**主动去查**——计划要看什么、调用工具取证、观察结果、再推理下一步，直到形成根因假设。这与 [[运维/SRE_Reliability/AI_Incident_Response_Playbook]] 中「告警 → 分诊 → 取证 → 根因 → 修复建议」流程完全同构：HolmesGPT 把这条人工流程 LLM Agent 化了。
+> 📐 **概念方法论**: 理解 HolmesGPT 的关键是抓住「调查 (Investigate)」这个动词。它不是被动罗列异常的扫描器（那是 [[CNCF_Cloud_Native_AI/K8sGPT_Deep_Dive]] 的职责），而是被告警驱动后，像 oncall 工程师那样**主动去查**——计划要看什么、调用工具取证、观察结果、再推理下一步，直到形成根因假设。这与 [[13_运维/02_SRE_Reliability/AI_Incident_Response_Playbook]] 中「告警 → 分诊 → 取证 → 根因 → 修复建议」流程完全同构：HolmesGPT 把这条人工流程 LLM Agent 化了。
 
 ---
 
@@ -682,5 +682,5 @@ K8sGPT 是"扫集群找问题"（主动、广度），HolmesGPT 是"被告警叫
 - [[CNCF_Cloud_Native_AI/README]] — CNCF 云原生 AI 项目总览
 - [[CNCF_Cloud_Native_AI/K8sGPT_Deep_Dive]] — AI 集群扫描器（主动巡检，与 HolmesGPT 互补）
 - [[CNCF_Cloud_Native_AI/kagent_Deep_Dive]] — 多 Agent 框架，可承载更复杂的多步运维 Agent
-- [[运维/SRE_Reliability/AI_Incident_Response_Playbook]] — AI 事故响应流程，HolmesGPT 是其 Agent 化实现
-- [[运维/SRE_for_AI_Systems]] — AI 系统的 SRE 实践，HolmesGPT 同样适用于 LLM 服务事故调查
+- [[13_运维/02_SRE_Reliability/AI_Incident_Response_Playbook]] — AI 事故响应流程，HolmesGPT 是其 Agent 化实现
+- [[13_运维/SRE_for_AI_Systems]] — AI 系统的 SRE 实践，HolmesGPT 同样适用于 LLM 服务事故调查

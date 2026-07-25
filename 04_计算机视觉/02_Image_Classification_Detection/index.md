@@ -14,15 +14,15 @@ sources: []
 
 | 文件 | 说明 |
 |------|------|
-| [[计算机视觉/Image_Classification_Detection/Image_Classification_Detection|分类与检测]] | 核心方法与技术综述 |
-| [[计算机视觉/Image_Classification_Detection/Image_Classification_Detection_for_dummy|入门版]] | 零基础图像分类与检测入门 |
-| [[计算机视觉/Image_Classification_Detection/Object_Detection_Deep_Dive|目标检测深度指南]] | 目标检测深度实践 |
-| [[计算机视觉/Image_Classification_Detection/Object_Detection_Complete_Guide|目标检测完全指南]] | 目标检测完整教程 |
+| [[04_计算机视觉/02_Image_Classification_Detection/Image_Classification_Detection|分类与检测]] | 核心方法与技术综述 |
+| [[04_计算机视觉/02_Image_Classification_Detection/Image_Classification_Detection_for_dummy|入门版]] | 零基础图像分类与检测入门 |
+| [[04_计算机视觉/02_Image_Classification_Detection/Object_Detection_Deep_Dive|目标检测深度指南]] | 目标检测深度实践 |
+| [[04_计算机视觉/02_Image_Classification_Detection/Object_Detection_Complete_Guide|目标检测完全指南]] | 目标检测完整教程 |
 
 ## Related
 
-- [[计算机视觉/Segmentation/index|Segmentation]]
-- [[计算机视觉/3D_Vision/index|3D Vision]]
+- [[04_计算机视觉/03_Segmentation/index|Segmentation]]
+- [[04_计算机视觉/05_3D_Vision/index|3D Vision]]
 
 ## 进阶知识拓展
 
@@ -60,9 +60,9 @@ sources: []
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

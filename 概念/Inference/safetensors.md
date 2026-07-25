@@ -10,7 +10,7 @@ relationships:
   - target: "概念/git-lfs"
     type: related_to
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
 summary: "Safetensors 是 HuggingFace 推出的安全模型序列化格式，替代 pickle 避免任意代码执行风险。已成为 HuggingFace Hub 的默认模型权重格式。"
 provenance:
   extracted: 0.20
@@ -168,7 +168,7 @@ save_file(state_dict, 'model.safetensors')
 - [[概念/Inference/model-formats|模型格式全景]]
 - [[概念/Inference/gguf|GGUF 格式]]
 - [[概念/Inference/quantization|量化]]
-- [[架构基建/AI_Stack_Deep_Dive|AI Stack 深度解析]]
+- [[12_架构基建/AI_Stack_Deep_Dive|AI Stack 深度解析]]
 
 ## SafeTensors vs 其他格式
 

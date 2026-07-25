@@ -22,7 +22,7 @@ sources: []
 
 ### 融合趋势
 
-传统上，MLOps（[[模型运维/README]]）和 AI 运维监控（[[运维/README]]）是两个独立领域。但在 2024-2026 年间，两者正在快速融合：
+传统上，MLOps（[[11_模型运维/README]]）和 AI 运维监控（[[13_运维/README]]）是两个独立领域。但在 2024-2026 年间，两者正在快速融合：
 
 ```
 传统模式:
@@ -35,9 +35,9 @@ sources: []
 
 ### 融合的三个维度
 
-1. **数据漂移 + 特征存储**: 特征存储（[[模型运维/Experiment_Tracking/Feature_Store_Deep_Dive]]）检测到特征分布变化时，自动通知监控系统
-2. **模型漂移 + 实验追踪**: 监控发现模型性能下降时，自动触发实验追踪（[[模型运维/Experiment_Tracking/Experiment_Tracking_Deep_Dive]]）中的重训练流程
-3. **推理监控 + 模型注册**: 推理延迟/错误率异常时，自动从模型注册表（[[模型运维/Experiment_Tracking/Model_Registry_and_Cards_Deep_Dive]]）回滚到上一个稳定版本
+1. **数据漂移 + 特征存储**: 特征存储（[[11_模型运维/04_Experiment_Tracking/Feature_Store_Deep_Dive]]）检测到特征分布变化时，自动通知监控系统
+2. **模型漂移 + 实验追踪**: 监控发现模型性能下降时，自动触发实验追踪（[[11_模型运维/04_Experiment_Tracking/Experiment_Tracking_Deep_Dive]]）中的重训练流程
+3. **推理监控 + 模型注册**: 推理延迟/错误率异常时，自动从模型注册表（[[11_模型运维/04_Experiment_Tracking/Model_Registry_and_Cards_Deep_Dive]]）回滚到上一个稳定版本
 
 ### 2026 工具格局
 
@@ -61,11 +61,11 @@ sources: []
 
 ## 相关页面
 
-- [[模型运维/MLOps_Pipeline]] — MLOps 流水线
-- [[模型运维/Observability/Model_Monitoring_and_Drift_Detection_2026]] — 模型监控与漂移检测
-- [[运维/AI_Observability_Deep_Dive]] — AI 可观测性
-- [[运维/Incident_Response_for_AI_Systems]] — AI 系统故障响应
-- [[智能体/Agent_Evaluation/Agent_Harness_Deep_Dive]] — Agent 评估体系
+- [[11_模型运维/MLOps_Pipeline]] — MLOps 流水线
+- [[11_模型运维/08_Observability/Model_Monitoring_and_Drift_Detection_2026]] — 模型监控与漂移检测
+- [[13_运维/AI_Observability_Deep_Dive]] — AI 可观测性
+- [[13_运维/Incident_Response_for_AI_Systems]] — AI 系统故障响应
+- [[15_智能体/07_Agent_Evaluation/Agent_Harness_Deep_Dive]] — Agent 评估体系
 
 ## MLOps核心流程对比
 
@@ -200,12 +200,12 @@ sources: []
 
 | 关联主题 | 关系 | 参考路径 |
 |----------|------|----------|
-| 模型训练 | 上游输入 | 模型训练/ |
-| 模型评估 | 质量门禁 | 模型评估/ |
-| 部署推理 | 服务化交付 | 部署推理/ |
-| 架构基建 | 底层支撑 | 架构基建/ |
-| 测试 | 质量保障 | 测试/ |
-| 运维 | 通用运维实践 | 运维/ |
+| 模型训练 | 上游输入 | 07_模型训练/ |
+| 模型评估 | 质量门禁 | 08_模型评估/ |
+| 部署推理 | 服务化交付 | 10_部署推理/ |
+| 架构基建 | 底层支撑 | 12_架构基建/ |
+| 测试 | 质量保障 | 09_测试/ |
+| 运维 | 通用运维实践 | 13_运维/ |
 
 ## 快速自检清单
 

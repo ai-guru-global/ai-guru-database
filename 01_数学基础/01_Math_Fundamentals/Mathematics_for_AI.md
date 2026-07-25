@@ -15,7 +15,7 @@ sources: []
 ---
 # AI 数学手册 (Mathematics for AI Reference)
 
-> **速查手册**: 本文是公式级参考，每个公式配一行 AI 应用说明。需要系统学习请移步 [[数学基础/Math_Foundations]]。
+> **速查手册**: 本文是公式级参考，每个公式配一行 AI 应用说明。需要系统学习请移步 [[01_数学基础/Math_Foundations]]。
 
 ---
 
@@ -169,10 +169,10 @@ sources: []
 
 ## 快速导航
 
-- [[数学基础/Math_Foundations]] — 数学基础概览与学习路线
-- [[数学基础/Linear_Algebra/Linear_Algebra]] — 线性代数完整教程
-- [[数学基础/Probability_Statistics/Probability_Statistics]] — 概率统计完整教程
-- [[数学基础/Information_Theory/Information_Theory_Fundamentals]] — 信息论深入
+- [[01_数学基础/Math_Foundations]] — 数学基础概览与学习路线
+- [[01_数学基础/02_Linear_Algebra/Linear_Algebra]] — 线性代数完整教程
+- [[01_数学基础/03_Probability_Statistics/Probability_Statistics]] — 概率统计完整教程
+- [[01_数学基础/04_Information_Theory/Information_Theory_Fundamentals]] — 信息论深入
 
 ---
 
@@ -214,9 +214,9 @@ sources: []
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

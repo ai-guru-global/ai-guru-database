@@ -18,8 +18,8 @@ relationships:
   - target: "概念/kto"
     type: alternative
 sources:
-  - 模型训练/Alignment/TRL_RLHF_DPO_Guide.md
-  - 模型训练/Alignment/GRPO_and_New_Alignment_Methods.md
+  - 07_模型训练/06_Alignment/TRL_RLHF_DPO_Guide.md
+  - 07_模型训练/06_Alignment/GRPO_and_New_Alignment_Methods.md
 summary: "DPO（Direct Preference Optimization）是 Rafailov et al. 2023 提出的简化对齐方法，将 PPO 的两阶段（SFT + RM + PPO）合并为单阶段，直接用偏好数据训练，无需训练 Reward Model 和 Critic。"
 lifecycle: reviewed
 tier: core
@@ -179,7 +179,7 @@ llamafactory-cli train \
 - [[概念/grpo]] — GRPO（DeepSeek-R1 路线）
 - [[概念/preference-learning]] — 偏好学习总览
 - [[概念/simpo]] — SimPO（无参考模型）
-- [[模型训练/Alignment/TRL_RLHF_DPO_Guide]] — DPO 深度
+- [[07_模型训练/06_Alignment/TRL_RLHF_DPO_Guide]] — DPO 深度
 
 ---
 

@@ -8,7 +8,7 @@ relationships:
   - target: "概念/opik"
     type: related_to
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
 summary: "LiteLLM 是开源的统一 LLM API 代理——用 OpenAI 格式调用 100+ LLM 提供商（OpenAI/Anthropic/Azure/Bedrock/Ollama 等），内置负载均衡、成本追踪和 Fallback 机制。是 LLM Gateway 的轻量级方案。"
 provenance:
   extracted: 0.20
@@ -214,6 +214,6 @@ response = client.chat.completions.create(
 
 - [[概念/Inference/model-gateway|模型网关]] — LiteLLM 作为轻量级网关
 - [[概念/General/openai|OpenAI]] — LiteLLM 统一调用的主要提供商
-- [[架构基建/AI_Gateway/index|AI Gateway 索引]] — 网关架构总览
+- [[12_架构基建/11_AI_Gateway/index|AI Gateway 索引]] — 网关架构总览
 - [[概念/Inference/model-routing|模型路由]] — LiteLLM 的路由能力
 - [[概念/Inference/inference-autoscaling|推理自动扩缩容]] — 网关配合的扩缩容

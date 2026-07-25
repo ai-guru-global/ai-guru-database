@@ -10,7 +10,7 @@ relationships:
   - target: "概念/lm-eval-harness"
     type: related_to
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
 summary: "开源的 AI 模型测试与评估平台，提供自动化漏洞扫描（偏见、幻觉、注入等）和 LLM-as-a-Judge 评估，覆盖 ML 模型到 LLM 应用的全链路质量保障。"
 provenance:
   extracted: 0.55

@@ -11,7 +11,7 @@ relationships:
     type: uses
 sources:
   - AI运维/Cost_Optimization_AI_Deep_Dive.md
-  - 部署推理/README.md
+  - 10_部署推理/README.md
 summary: "模型路由是根据请求难度自动选择合适模型（简单→小模型，复杂→大模型）的成本优化技术。规则路由简单可靠，ML 路由更精准，级联路由（先试小的再升级）兼顾成本与质量，通常能把推理成本降低 60-80%。"
 provenance:
   extracted: 0.7
@@ -142,8 +142,8 @@ def route_model(prompt, history=None):
 - [[概念/Inference/model-serving|模型服务]]
 - [[概念/Inference/continuous-batching|连续批处理]]
 - [[概念/Inference/inference-cluster-scheduling|推理集群调度]]
-- [[运维/Cost_Optimization_AI_Deep_Dive|成本优化]]
-- [[架构基建/AI_Gateway/AI_Gateway_2026|AI Gateway]]
+- [[13_运维/Cost_Optimization_AI_Deep_Dive|成本优化]]
+- [[12_架构基建/11_AI_Gateway/AI_Gateway_2026|AI Gateway]]
 
 ## 模型路由策略全景
 

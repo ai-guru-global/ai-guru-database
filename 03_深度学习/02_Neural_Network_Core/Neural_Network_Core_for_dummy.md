@@ -606,13 +606,13 @@ Tanh(拉伸版Sigmoid):
 ### 🔗 相关主题:
 
 **前置知识**:
-- [线性代数小白版](数学基础/Linear_Algebra/Linear_Algebra_for_dummy.md) - 理解矩阵计算(可选)
-- [机器学习小白版](../../机器学习/README_for_dummy.md) - 对比传统方法
+- [线性代数小白版](01_数学基础/02_Linear_Algebra/Linear_Algebra_for_dummy.md) - 理解矩阵计算(可选)
+- [机器学习小白版](../../02_机器学习/README_for_dummy.md) - 对比传统方法
 
 **进阶学习**:
-- [卷积神经网络(CNN)](../../计算机视觉/README_for_dummy.md) - 专门处理图像的神经网络
-- [循环神经网络(RNN)](../../大模型/README_for_dummy.md) - 处理文字和序列数据
-- [Transformer](../../大模型/README_for_dummy.md) - ChatGPT 的核心技术
+- [卷积神经网络(CNN)](../../04_计算机视觉/README_for_dummy.md) - 专门处理图像的神经网络
+- [循环神经网络(RNN)](../../05_大模型/README_for_dummy.md) - 处理文字和序列数据
+- [Transformer](../../05_大模型/README_for_dummy.md) - ChatGPT 的核心技术
 
 ### 🎯 实战建议:
 
@@ -694,9 +694,9 @@ Tanh(拉伸版Sigmoid):
 
 ## 相关链接
 
-- [[深度学习/Neural_Network_Core/Neural_Network_Core|神经网络核心 (完整版)]] — 本篇小白版对应的详细版
-- [[深度学习/Neural_Network_Core/index|神经网络核心索引]] — 神经网络核心主题导览
-- [[深度学习/DL_Fundamentals/DL_Fundamentals|深度学习基础]] — 深度学习基础知识
+- [[03_深度学习/02_Neural_Network_Core/Neural_Network_Core|神经网络核心 (完整版)]] — 本篇小白版对应的详细版
+- [[03_深度学习/02_Neural_Network_Core/index|神经网络核心索引]] — 神经网络核心主题导览
+- [[03_深度学习/01_DL_Fundamentals/DL_Fundamentals|深度学习基础]] — 深度学习基础知识
 - [[概念/Math/neural-networks|神经网络]] — 神经网络概念卡片
-- [[深度学习/Neural_Network_Core/Your_First_Neural_Network|你的第一个神经网络]] — 入门实践
-- [[深度学习/Optimization/Optimization_for_dummy|训练优化 (小白版)]] — 神经网络训练的优化方法
+- [[03_深度学习/02_Neural_Network_Core/Your_First_Neural_Network|你的第一个神经网络]] — 入门实践
+- [[03_深度学习/03_Optimization/Optimization_for_dummy|训练优化 (小白版)]] — 神经网络训练的优化方法

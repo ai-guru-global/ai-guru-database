@@ -922,9 +922,9 @@ distances, indices = index.search(query, k=10)
 - [[Convolutional_Architectures_Evolution]] — CNN 特征作为视觉嵌入
 - [[Normalization_Techniques_Deep_Dive]] — 嵌入后的归一化处理
 - [[Mixture_of_Experts_Theory]] — MoE 中的嵌入路由
-- [[深度学习/Self_Supervised_Learning/index|自监督学习]] — 对比学习嵌入
-- [[深度学习/Transfer_Learning/index|迁移学习]] — 预训练嵌入的迁移
-- [[深度学习/Generative_Models/index|生成模型]] — 潜在空间嵌入
+- [[03_深度学习/06_Self_Supervised_Learning/index|自监督学习]] — 对比学习嵌入
+- [[03_深度学习/Transfer_Learning/index|迁移学习]] — 预训练嵌入的迁移
+- [[03_深度学习/04_Generative_Models/index|生成模型]] — 潜在空间嵌入
 
 ---
 

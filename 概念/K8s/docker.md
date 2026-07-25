@@ -62,8 +62,8 @@ Docker 的关键组件协同工作，把镜像转化为运行中的容器：
 - [[概念/container-security|Container Security]] — 容器安全实践
 - [[概念/model-serving|Model Serving]] — 模型服务化部署
 - [[概念/ci-cd|CI/CD]] — 持续集成与持续交付
-- [[架构基建/Networking/Docker_Containerization_for_AI|Docker Containerization for AI]] — AI 场景下的 Docker 容器化
-- [[架构基建/AI_Stack/AI_Stack_Container_Runtime_Guide|AI Stack Container Runtime Guide]] — AI Stack 容器运行时指南
+- [[12_架构基建/08_Networking/Docker_Containerization_for_AI|Docker Containerization for AI]] — AI 场景下的 Docker 容器化
+- [[12_架构基建/03_AI_Stack/AI_Stack_Container_Runtime_Guide|AI Stack Container Runtime Guide]] — AI Stack 容器运行时指南
 
 ---
 

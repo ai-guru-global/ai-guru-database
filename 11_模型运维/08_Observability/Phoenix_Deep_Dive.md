@@ -20,7 +20,7 @@ sources: []
 
 > **一句话理解**: Phoenix 是 Arize AI 的开源可观测性工具——追踪 LLM 应用从 Prompt 到 Response 的完整链路，帮你发现和修复问题。
 
-> 📐 **概念与选型方法论**: LLM 可观测性见 [[模型运维/Observability/LLM_Observability]]，ML 系统 SLO/SLI 见 [[模型运维/Observability/ML_Observability_SLO]]。本文聚焦 Phoenix 工具用法。
+> 📐 **概念与选型方法论**: LLM 可观测性见 [[11_模型运维/08_Observability/LLM_Observability]]，ML 系统 SLO/SLI 见 [[11_模型运维/08_Observability/ML_Observability_SLO]]。本文聚焦 Phoenix 工具用法。
 
 ---
 
@@ -359,8 +359,8 @@ Phoenix Metrics
 
 ## Related
 
-- [[运维/AIOps_Fundamentals/AIOps-in-nutshell.md|AIOps-in-nutshell]]
-- [[运维/SRE_Reliability/AI_Incident_Response_Playbook|AI_Incident_Response_Playbook]]
-- [[运维/AIOps_Fundamentals/AI_Ops_for_dummy.md|AI_Ops_for_dummy]]
-- [[运维/README.md|运维 README]]
-- [[运维/README_for_dummy.md|README_for_dummy]]
+- [[13_运维/01_AIOps_Fundamentals/AIOps-in-nutshell.md|AIOps-in-nutshell]]
+- [[13_运维/02_SRE_Reliability/AI_Incident_Response_Playbook|AI_Incident_Response_Playbook]]
+- [[13_运维/01_AIOps_Fundamentals/AI_Ops_for_dummy.md|AI_Ops_for_dummy]]
+- [[13_运维/README.md|运维 README]]
+- [[13_运维/README_for_dummy.md|README_for_dummy]]

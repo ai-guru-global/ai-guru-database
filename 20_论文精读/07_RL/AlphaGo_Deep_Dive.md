@@ -380,4 +380,4 @@ flowchart TB
 - [[概念/deep-reinforcement-learning]] — 深度强化学习
 - [[概念/ai-agents]] — AI 智能体
 
-- [[论文精读/README|22 经典与必读 AI 论文清单 (Essential AI Papers)]]
+- [[20_论文精读/README|22 经典与必读 AI 论文清单 (Essential AI Papers)]]

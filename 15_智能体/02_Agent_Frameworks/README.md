@@ -60,23 +60,23 @@ sources: []
 *Last updated: 2026-04-14*
 
 ## Related
-- [[智能体/Agent_Frameworks/AutoGPT_Deep_Dive|AutoGPT: 自主任务执行 Agent]]
-- [[智能体/Agent_Frameworks/Transformers_Agents_Deep_Dive|Transformers Agents: HuggingFace Agent 框架]]
-- [[智能体/Agent_Frameworks/CrewAI_Deep_Dive|CrewAI: 多 Agent 协作框架]]
-- [[智能体/Agent_Frameworks/SmolAgents_Deep_Dive|SmolAgents: 轻量级 Agent 框架]]
-- [[智能体/Agent_Frameworks/AutoGen_CrewAI_LangGraph_Dive|多 Agent 开发框架: AutoGen / CrewAI / LangGraph]]
-- [[智能体/Agent_Frameworks/AutoGen_Deep_Dive|AutoGen: 微软多 Agent 框架]]
-- [[智能体/Agent_Frameworks/Agno_Deep_Dive|agno: 现代 AI Agent 框架]]
-- [[智能体/Agent_Frameworks/AgentScope_Deep_Dive|AgentScope: 阿里巴巴多智能体开发平台]]
-- [[智能体/Agent_Frameworks/LangChain_Deep_Dive|LangChain: LLM 应用开发框架]]
+- [[15_智能体/02_Agent_Frameworks/AutoGPT_Deep_Dive|AutoGPT: 自主任务执行 Agent]]
+- [[15_智能体/02_Agent_Frameworks/Transformers_Agents_Deep_Dive|Transformers Agents: HuggingFace Agent 框架]]
+- [[15_智能体/02_Agent_Frameworks/CrewAI_Deep_Dive|CrewAI: 多 Agent 协作框架]]
+- [[15_智能体/02_Agent_Frameworks/SmolAgents_Deep_Dive|SmolAgents: 轻量级 Agent 框架]]
+- [[15_智能体/02_Agent_Frameworks/AutoGen_CrewAI_LangGraph_Dive|多 Agent 开发框架: AutoGen / CrewAI / LangGraph]]
+- [[15_智能体/02_Agent_Frameworks/AutoGen_Deep_Dive|AutoGen: 微软多 Agent 框架]]
+- [[15_智能体/02_Agent_Frameworks/Agno_Deep_Dive|agno: 现代 AI Agent 框架]]
+- [[15_智能体/02_Agent_Frameworks/AgentScope_Deep_Dive|AgentScope: 阿里巴巴多智能体开发平台]]
+- [[15_智能体/02_Agent_Frameworks/LangChain_Deep_Dive|LangChain: LLM 应用开发框架]]
 
-- [[智能体/Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
-- [[智能体/Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
-- [[智能体/Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
-- [[智能体/Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)
+- [[15_智能体/07_Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
+- [[15_智能体/07_Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[15_智能体/07_Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[15_智能体/07_Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)
 
 
-- [[智能体/README|Agent 生产部署 (Agent Production)]]
+- [[15_智能体/README|Agent 生产部署 (Agent Production)]]
 
 ## 附录：核心概念速查
 
@@ -197,14 +197,14 @@ sources: []
 
 | 关联主题 | 关系 | 参考路径 |
 |----------|------|----------|
-| Agent基础理论 | 前置知识 | 智能体/Agent_Foundations/ |
-| 框架与工具 | 实现支撑 | 智能体/Agent_Frameworks/ |
-| 评估与测试 | 质量保障 | 智能体/Agent_Evaluation/ |
-| 协议与标准 | 互操作基础 | 智能体/Agent_Protocols/ |
-| 生产部署 | 运维实践 | 智能体/Enterprise_Agent/ |
-| 记忆系统 | 核心能力 | 智能体/Memory_Infrastructure/ |
-| 工作流编排 | 执行引擎 | 智能体/Agent_Workflow/ |
-| 技能扩展 | 能力增强 | 智能体/Agent_Skills/ |
+| Agent基础理论 | 前置知识 | 15_智能体/01_Agent_Foundations/ |
+| 框架与工具 | 实现支撑 | 15_智能体/02_Agent_Frameworks/ |
+| 评估与测试 | 质量保障 | 15_智能体/07_Agent_Evaluation/ |
+| 协议与标准 | 互操作基础 | 15_智能体/Agent_Protocols/ |
+| 生产部署 | 运维实践 | 15_智能体/10_Enterprise_Agent/ |
+| 记忆系统 | 核心能力 | 15_智能体/06_Memory_Infrastructure/ |
+| 工作流编排 | 执行引擎 | 15_智能体/03_Agent_Workflow/ |
+| 技能扩展 | 能力增强 | 15_智能体/05_Agent_Skills/ |
 
 ## 版本与更新记录
 

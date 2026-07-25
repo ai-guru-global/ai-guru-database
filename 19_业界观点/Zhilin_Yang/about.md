@@ -68,11 +68,11 @@ sources: []
 
 ### 长上下文是 AGI 关键
 
-杨植麟的核心技术信念是"长上下文 (long context) 是通往 AGI 的最关键维度"。他认为"如果你给模型足够长的上下文，它就能记住所有需要的知识，不需要复杂的外部检索 (RAG)"。Kimi 从最初就以"200K 超长上下文"为核心卖点，正是这一信念的产品化。这一立场与 RAG（检索增强生成）路线形成竞争——杨植麟认为 RAM (Retrieval-Augmented Models) 只是长上下文能力的过渡替代品。参见 [[业界观点/Junjie_Yan/about]] 的 Lightning Attention 在超长上下文方面的类似追求。
+杨植麟的核心技术信念是"长上下文 (long context) 是通往 AGI 的最关键维度"。他认为"如果你给模型足够长的上下文，它就能记住所有需要的知识，不需要复杂的外部检索 (RAG)"。Kimi 从最初就以"200K 超长上下文"为核心卖点，正是这一信念的产品化。这一立场与 RAG（检索增强生成）路线形成竞争——杨植麟认为 RAM (Retrieval-Augmented Models) 只是长上下文能力的过渡替代品。参见 [[19_业界观点/Junjie_Yan/about]] 的 Lightning Attention 在超长上下文方面的类似追求。
 
 ### RL 优于搜索
 
-Kimi k1.5 的工作证明，不需要 MCTS（蒙特卡洛树搜索）、value function 等复杂搜索方法，纯 RL scaling（强化学习规模扩展）即可达到顶级推理能力。杨植麟强调"RL 是推理能力的核心驱动力，搜索只是锦上添花"。这与 [[业界观点/Sam_Altman/about]] 领导 OpenAI o1/o3 的 RL 路线一致，也与 [[业界观点/Wenfeng_Liang/about]] 的 DeepSeek-R1 的 GRPO 方法形成呼应。
+Kimi k1.5 的工作证明，不需要 MCTS（蒙特卡洛树搜索）、value function 等复杂搜索方法，纯 RL scaling（强化学习规模扩展）即可达到顶级推理能力。杨植麟强调"RL 是推理能力的核心驱动力，搜索只是锦上添花"。这与 [[19_业界观点/Sam_Altman/about]] 领导 OpenAI o1/o3 的 RL 路线一致，也与 [[19_业界观点/Wenfeng_Liang/about]] 的 DeepSeek-R1 的 GRPO 方法形成呼应。
 
 ### 中国 AI 独立路线
 
@@ -123,7 +123,7 @@ Kimi k1.5 的工作证明，不需要 MCTS（蒙特卡洛树搜索）、value fu
 
 ## 学术背景
 
-- 清华大学计算机系本科（2011-2015），师从唐杰（[[业界观点/Jie_Tang/about]]）
+- 清华大学计算机系本科（2011-2015），师从唐杰（[[19_业界观点/Jie_Tang/about]]）
 - CMU Language Technologies Institute (LTI) 博士，导师 Graham Neubig
 - Google Brain 实习 (Transformer-XL 合作)
 - 博士期间发表 Transformer-XL、XLNet 等里程碑论文，被视为 NLP 领域最有影响力的青年研究者之一
@@ -133,14 +133,14 @@ Kimi k1.5 的工作证明，不需要 MCTS（蒙特卡洛树搜索）、value fu
 
 ## 交叉引用 (Cross-References)
 
-- [Kimi/Moonshot AI 技术全景](大模型/Chinese_LLM_Ecosystem/Kimi_Moonshot_Deep_Dive.md)
-- [中国大模型生态全景](大模型/Chinese_LLM_Ecosystem/README.md)
-- [Reasoning Models 2026](大模型/LLM_Architectures/Reasoning_Models_2026.md)
-- [[业界观点/Jie_Tang/about]] — 师生关系，清华 KEG 实验室 → 月之暗面
-- [[业界观点/Wenfeng_Liang/about]] — DeepSeek 与 Kimi 在开源、RL 推理方面的竞合关系
-- [[业界观点/Junjie_Yan/about]] — MiniMax 与 Kimi 在长上下文方面的技术竞赛
-- [[业界观点/Jinze_Bai/about]] — Qwen 与 Kimi 在中国市场的竞争
-- [[业界观点/Sam_Altman/about]] — OpenAI o1 vs Kimi k1.5 的 RL 推理路线对比
+- [Kimi/Moonshot AI 技术全景](05_大模型/15_Chinese_LLM_Ecosystem/Kimi_Moonshot_Deep_Dive.md)
+- [中国大模型生态全景](05_大模型/15_Chinese_LLM_Ecosystem/README.md)
+- [Reasoning Models 2026](05_大模型/05_LLM_Architectures/Reasoning_Models_2026.md)
+- [[19_业界观点/Jie_Tang/about]] — 师生关系，清华 KEG 实验室 → 月之暗面
+- [[19_业界观点/Wenfeng_Liang/about]] — DeepSeek 与 Kimi 在开源、RL 推理方面的竞合关系
+- [[19_业界观点/Junjie_Yan/about]] — MiniMax 与 Kimi 在长上下文方面的技术竞赛
+- [[19_业界观点/Jinze_Bai/about]] — Qwen 与 Kimi 在中国市场的竞争
+- [[19_业界观点/Sam_Altman/about]] — OpenAI o1 vs Kimi k1.5 的 RL 推理路线对比
 
 ---
 
@@ -156,7 +156,7 @@ Kimi k1.5 的工作证明，不需要 MCTS（蒙特卡洛树搜索）、value fu
 
 *Last updated: 2026-07-11*
 
-- [[业界观点/README|AI 名人演讲与观点 (Talks)]]
+- [[19_业界观点/README|AI 名人演讲与观点 (Talks)]]
 
 ## 附录：人物影响力评估
 

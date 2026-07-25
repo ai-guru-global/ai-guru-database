@@ -138,7 +138,7 @@ Gates 创立的 Breakthrough Energy 在 2026 年投资多个 AI 驱动的气候�
 | Copilot 愿景 | 早期倡导者 |
 | 战略顾问 | 非正式角色 |
 | 公开支持 | 多次为微软 AI 背书 |
-| 与 [[业界观点/Satya_Nadella/index\|Nadella]] 关系 | 密切合作 |
+| 与 [[19_业界观点/Satya_Nadella/index\|Nadella]] 关系 | 密切合作 |
 
 ---
 
@@ -174,7 +174,7 @@ Gates 的中间偏乐观立场：
 - 但反对"末日论"
 - 认为技术进步的净效果通常正面
 - 主张"治理+创新"并重
-- 介于 [[业界观点/Andrew_Ng/index\|Ng]]（乐观）和 [[业界观点/Geoffrey_Hinton/index\|Hinton]]（悲观）之间
+- 介于 [[19_业界观点/Andrew_Ng/index\|Ng]]（乐观）和 [[19_业界观点/Geoffrey_Hinton/index\|Hinton]]（悲观）之间
 
 ### 关于 AI 监管
 
@@ -201,7 +201,7 @@ Gates 最持久的关注：
 
 ### 与其他科技领袖的对比
 
-| 维度 | Gates | [[业界观点/Sundar_Pichai/index\|Pichai]] | [[业界观点/Satya_Nadella/index\|Nadella]] |
+| 维度 | Gates | [[19_业界观点/Sundar_Pichai/index\|Pichai]] | [[19_业界观点/Satya_Nadella/index\|Nadella]] |
 |------|-------|---------|---------|
 | 2026 角色 | 慈善+AI 布道 | Google CEO | Microsoft CEO |
 | AI 焦点 | 全球健康/教育 | Gemini/TPU | Copilot/Azure |
@@ -211,7 +211,7 @@ Gates 最持久的关注：
 
 ### 与风险派的对比
 
-| 维度 | Gates | [[业界观点/Geoffrey_Hinton/index\|Hinton]] | [[业界观点/Elon_Musk/index\|Musk]] |
+| 维度 | Gates | [[19_业界观点/Geoffrey_Hinton/index\|Hinton]] | [[19_业界观点/Elon_Musk/index\|Musk]] |
 |------|-------|---------|------|
 | 对 AI 风险 | 承认但乐观 | 严重担忧 | 末日论 |
 | 对末日论 | 保留 | 支持 | 强烈支持 |
@@ -246,7 +246,7 @@ Gates 的影响呈现为三个层面：
 - 反垄断历史仍被提及
 - 对微软 AI 垄断的担忧
 - "慈善洗白"的批评
-- 与 [[业界观点/Sam_Altman/index\|Altman]] 的关系被质疑
+- 与 [[19_业界观点/Sam_Altman/index\|Altman]] 的关系被质疑
 
 ### 慈善方式的有效性
 
@@ -317,12 +317,12 @@ Gates 的影响呈现为三个层面：
 
 | 人物 | 关系 | 2026 互动 |
 |------|------|-----------|
-| [[业界观点/Satya_Nadella/index\|Nadella]] | 继任者 | 微软战略顾问 |
-| [[业界观点/Sam_Altman/index\|Altman]] | 合作者 | OpenAI 牵线 |
-| [[业界观点/Sundar_Pichai/index\|Pichai]] | 行业同行 | 偶有交流 |
-| [[业界观点/Andrew_Ng/index\|Ng]] | 教育同行 | AI 教育共鸣 |
-| [[业界观点/Warren_Buffett/index\|Buffett]] | 慈善同盟 | Giving Pledge |
-| [[业界观点/Fei_Fei_Li/index\|Fei-Fei Li]] | AI 领袖 | 人本 AI 共鸣 |
+| [[19_业界观点/Satya_Nadella/index\|Nadella]] | 继任者 | 微软战略顾问 |
+| [[19_业界观点/Sam_Altman/index\|Altman]] | 合作者 | OpenAI 牵线 |
+| [[19_业界观点/Sundar_Pichai/index\|Pichai]] | 行业同行 | 偶有交流 |
+| [[19_业界观点/Andrew_Ng/index\|Ng]] | 教育同行 | AI 教育共鸣 |
+| [[19_业界观点/Warren_Buffett/index\|Buffett]] | 慈善同盟 | Giving Pledge |
+| [[19_业界观点/Fei_Fei_Li/index\|Fei-Fei Li]] | AI 领袖 | 人本 AI 共鸣 |
 
 ### Gates 在 2026 年的重大公开活动
 
@@ -359,27 +359,27 @@ Gates 在 2026 年持续通过 GatesNotes 推荐 AI 相关书籍：
 
 ### 慈善与公益网络
 
-- [[业界观点/Bill_Gates/index]] -- 本页主人物
-- [[业界观点/Bill_Gates/about]] -- 详细简介
-- [[业界观点/Fei_Fei_Li/index]] -- AI4ALL 平权共鸣
-- [[业界观点/Andrew_Ng/index]] -- AI 教育共鸣
+- [[19_业界观点/Bill_Gates/index]] -- 本页主人物
+- [[19_业界观点/Bill_Gates/about]] -- 详细简介
+- [[19_业界观点/Fei_Fei_Li/index]] -- AI4ALL 平权共鸣
+- [[19_业界观点/Andrew_Ng/index]] -- AI 教育共鸣
 
 ### 微软/科技网络
 
-- [[业界观点/Satya_Nadella/index]] -- 微软 CEO
-- [[业界观点/Sam_Altman/index]] -- OpenAI 合作者
-- [[业界观点/Sundar_Pichai/index]] -- Google CEO
+- [[19_业界观点/Satya_Nadella/index]] -- 微软 CEO
+- [[19_业界观点/Sam_Altman/index]] -- OpenAI 合作者
+- [[19_业界观点/Sundar_Pichai/index]] -- Google CEO
 
 ### 乐观派网络
 
-- [[业界观点/Andrew_Ng/index]] -- 务实乐观
-- [[业界观点/Yann_LeCun/index]] -- 技术乐观
-- [[业界观点/Fei_Fei_Li/index]] -- 人本乐观
+- [[19_业界观点/Andrew_Ng/index]] -- 务实乐观
+- [[19_业界观点/Yann_LeCun/index]] -- 技术乐观
+- [[19_业界观点/Fei_Fei_Li/index]] -- 人本乐观
 
 ### 应用与议题
 
-- [[入门/AI_Future_Trends]] -- AI 时代愿景
-- [[入门/AI_Ethics_Society]] -- AI 与不平等
+- [[00_入门/AI_Future_Trends]] -- AI 时代愿景
+- [[00_入门/AI_Ethics_Society]] -- AI 与不平等
 - [[应用/AI_Healthcare]] -- AI 医疗
 - [[应用/AI_Education]] -- AI 教育
 

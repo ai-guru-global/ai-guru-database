@@ -8,16 +8,16 @@ sources: []
 
 # Optimization
 
-This page indexes the contents of `模型训练/Optimization`.
+This page indexes the contents of `07_模型训练/Optimization`.
 
 ## Files
 
-- [[模型训练/Optimization/Hyperparameter_Tuning|Hyperparameter Tuning]]
-- [[模型训练/Optimization/Mixed_Precision_Training|Mixed Precision Training]]
-- [[模型训练/Optimization/Optimization_for_dummy|Optimization For Dummy]]
-- [[模型训练/Optimization/Optimizer_Advanced_2026|Optimizer Advanced 2026]]
-- [[模型训练/Optimization/Scaling_Laws_and_Training_Dynamics|Scaling Laws And Training Dynamics]]
-- [[模型训练/Optimization/Training_Optimization_2026|Training Optimization 2026]]
+- [[07_模型训练/03_Optimization/Hyperparameter_Tuning|Hyperparameter Tuning]]
+- [[07_模型训练/03_Optimization/Mixed_Precision_Training|Mixed Precision Training]]
+- [[07_模型训练/03_Optimization/Optimization_for_dummy|Optimization For Dummy]]
+- [[07_模型训练/03_Optimization/Optimizer_Advanced_2026|Optimizer Advanced 2026]]
+- [[07_模型训练/03_Optimization/Scaling_Laws_and_Training_Dynamics|Scaling Laws And Training Dynamics]]
+- [[07_模型训练/03_Optimization/Training_Optimization_2026|Training Optimization 2026]]
 
 ## 进阶知识拓展
 
@@ -55,9 +55,9 @@ This page indexes the contents of `模型训练/Optimization`.
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

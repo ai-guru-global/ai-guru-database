@@ -15,15 +15,15 @@ tags: [auto-index]
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[模型训练/Compression/Model_Compression_Complete_Guide|Model Compression Complete Guide]] | Model compression complete guide: pruning, distillation, quantization and low-rank decomposition | deployment engineers / model optimization practitioners |
-| [[模型训练/Compression/Pruning_and_Knowledge_Distillation|Pruning and Knowledge Distillation]] | Pruning and knowledge distillation: structured pruning strategies and teacher-student networks | ML engineers / researchers |
-| [[模型训练/Compression/README|README]] | Module README guide and reading order | all readers |
+| [[07_模型训练/05_Compression/Model_Compression_Complete_Guide|Model Compression Complete Guide]] | Model compression complete guide: pruning, distillation, quantization and low-rank decomposition | deployment engineers / model optimization practitioners |
+| [[07_模型训练/05_Compression/Pruning_and_Knowledge_Distillation|Pruning and Knowledge Distillation]] | Pruning and knowledge distillation: structured pruning strategies and teacher-student networks | ML engineers / researchers |
+| [[07_模型训练/05_Compression/README|README]] | Module README guide and reading order | all readers |
 
 ## Related
 
-- [[模型训练/index|模型训练首页]]
-- [[部署推理/Quantization/index|Quantization]]
-- [[论文精读/Efficiency/index|Efficiency]]
+- [[07_模型训练/index|模型训练首页]]
+- [[10_部署推理/05_Quantization/index|Quantization]]
+- [[20_论文精读/04_Efficiency/index|Efficiency]]
 
 ## 进阶知识拓展
 
@@ -61,9 +61,9 @@ tags: [auto-index]
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

@@ -84,7 +84,7 @@ flowchart LR
     C[Client] --> GW[AI Gateway]
     GW --> R{Router}
     R -->|简单任务| M1[小模型/API]
-    R -->|复杂任务| M2[大模型/API]
+    R -->|复杂任务| M2[05_大模型/API]
     R -->|超时fallback| M3[备用模型]
     GW --> AC[Auth/限流/计费]
     GW --> CA[语义缓存]
@@ -325,12 +325,12 @@ R:
 
 ## Related
 
-- [[面试岗位/AI_Solutions_Architect/question_bank|AI Solutions Architect 题库]]
-- [[面试岗位/AI_Solutions_Architect/company_level_question_bank|AI Solutions Architect 按公司/级别区分的题库]]
-- [[面试岗位/AI_Solutions_Architect/index|AI Solutions Architect 首页]]
-- [[架构基建/index|架构基建]]
-- [[架构基建/AI_Gateway/index|AI Gateway]]
-- [[部署推理/index|部署推理]]
-- [[RAG系统/index|RAG 系统]]
-- [[面试岗位/Interview_Guide/System_Design_for_AI|AI 系统设计面试]]
-- [[面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/AI_Solutions_Architect/question_bank|AI Solutions Architect 题库]]
+- [[21_面试岗位/AI_Solutions_Architect/company_level_question_bank|AI Solutions Architect 按公司/级别区分的题库]]
+- [[21_面试岗位/AI_Solutions_Architect/index|AI Solutions Architect 首页]]
+- [[12_架构基建/index|架构基建]]
+- [[12_架构基建/11_AI_Gateway/index|AI Gateway]]
+- [[10_部署推理/index|部署推理]]
+- [[14_RAG系统/index|RAG 系统]]
+- [[21_面试岗位/Interview_Guide/System_Design_for_AI|AI 系统设计面试]]
+- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]

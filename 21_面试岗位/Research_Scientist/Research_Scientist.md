@@ -17,7 +17,7 @@ sources: []
 
 > **一句话理解**: Research Scientist 是 AI 领域的知识开拓者——通过严谨的科学方法，发现新的原理、设计新的算法、推动领域前沿，在 NeurIPS/ICML/ICLR 等顶级会议上发表有影响力的研究成果。
 
-> **与相关岗位的关系**: 本岗位侧重**基础理论研究**，适合追求学术深度和原创性发现的候选人。如果更关注 AI 技术的业务落地，请参考 [[面试岗位/Applied_Scientist/Applied_Scientist|Applied Scientist 面试指南]]；如果更关注研究系统的工程实现，请参考 [[面试岗位/AI_Research_Engineer/AI_Research_Engineer|AI Research Engineer 面试指南]]；如果更关注 AI 领域的前沿算法研究，请参考 [[面试岗位/AI_Research_Scientist/AI_Research_Scientist|AI Research Scientist 面试指南]]。四个岗位有重叠但侧重点不同，本指南侧重通用研究方法论和理论基础。
+> **与相关岗位的关系**: 本岗位侧重**基础理论研究**，适合追求学术深度和原创性发现的候选人。如果更关注 AI 技术的业务落地，请参考 [[21_面试岗位/Applied_Scientist/Applied_Scientist|Applied Scientist 面试指南]]；如果更关注研究系统的工程实现，请参考 [[21_面试岗位/AI_Research_Engineer/AI_Research_Engineer|AI Research Engineer 面试指南]]；如果更关注 AI 领域的前沿算法研究，请参考 [[21_面试岗位/AI_Research_Scientist/AI_Research_Scientist|AI Research Scientist 面试指南]]。四个岗位有重叠但侧重点不同，本指南侧重通用研究方法论和理论基础。
 
 ---
 
@@ -626,13 +626,13 @@ class SAM(Optimizer):
 
 ## Related
 
-- [[面试岗位/README|AI 面试准备 (Interviews)]]
-- [[面试岗位/jobs|AI 相关岗位与工种清单]]
-- [[面试岗位/AI_Research_Scientist/AI_Research_Scientist|AI Research Scientist 面试指南]]
-- [[面试岗位/AI_Research_Engineer/AI_Research_Engineer|AI Research Engineer 面试指南]]
-- [[面试岗位/Applied_Scientist/Applied_Scientist|Applied Scientist 面试指南]]
-- [[面试岗位/Machine_Learning_Engineer/question_bank|Machine Learning Engineer 题库]]
-- [[面试岗位/Computer_Vision_Engineer/question_bank|Computer Vision Engineer 题库]]
+- [[21_面试岗位/README|AI 面试准备 (Interviews)]]
+- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/AI_Research_Scientist/AI_Research_Scientist|AI Research Scientist 面试指南]]
+- [[21_面试岗位/AI_Research_Engineer/AI_Research_Engineer|AI Research Engineer 面试指南]]
+- [[21_面试岗位/Applied_Scientist/Applied_Scientist|Applied Scientist 面试指南]]
+- [[21_面试岗位/Machine_Learning_Engineer/question_bank|Machine Learning Engineer 题库]]
+- [[21_面试岗位/Computer_Vision_Engineer/question_bank|Computer Vision Engineer 题库]]
 
 ---
 

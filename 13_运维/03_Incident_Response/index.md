@@ -15,15 +15,15 @@ tags: [auto-index]
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[运维/Incident_Response/AI_Incident_Response_Framework|AI Incident Response Framework]] | AI incident response framework: severity levels, escalation and automated mitigation | SRE / on-call engineers |
-| [[运维/Incident_Response/On_Call_Runbook_Template|On Call Runbook Template]] | On-call runbook template: common fault handling SOP | on-call engineers / ops |
-| [[运维/Incident_Response/Post_Mortem_Template|Post Mortem Template]] | Post-mortem template: blameless post-mortem format and best practices | all engineers / engineering managers |
+| [[13_运维/03_Incident_Response/AI_Incident_Response_Framework|AI Incident Response Framework]] | AI incident response framework: severity levels, escalation and automated mitigation | SRE / on-call engineers |
+| [[13_运维/03_Incident_Response/On_Call_Runbook_Template|On Call Runbook Template]] | On-call runbook template: common fault handling SOP | on-call engineers / ops |
+| [[13_运维/03_Incident_Response/Post_Mortem_Template|Post Mortem Template]] | Post-mortem template: blameless post-mortem format and best practices | all engineers / engineering managers |
 
 ## Related
 
-- [[运维/index|运维首页]]
-- [[运维/Observability_index|Observability]]
-- [[运维/Chaos_Engineering_index|Chaos Engineering]]
+- [[13_运维/index|运维首页]]
+- [[13_运维/Observability_index|Observability]]
+- [[13_运维/Chaos_Engineering_index|Chaos Engineering]]
 
 ## 进阶知识拓展
 
@@ -61,9 +61,9 @@ tags: [auto-index]
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

@@ -554,9 +554,9 @@ flowchart LR
 
 ## 11. Related
 
-- [[编程/Security/AI_Code_Security_Audit_Runbook]] — AI 代码安全审计 Runbook (共享: security, ai-coding, vulnerabilities)
-- [[编程/Security/SAST_SCA_for_AI_Code]] — SAST/SCA 在 AI 编程中的应用 (共享: security, sast, sca, dependencies)
-- [[编程/Security/Secure_Prompt_Engineering]] — 安全提示工程 (共享: prompt-injection, security)
-- [[编程/Security/AI_Code_Review_Security]] — AI 代码审查安全实践 (共享: code-review, security, checklist)
+- [[16_编程/09_Security/AI_Code_Security_Audit_Runbook]] — AI 代码安全审计 Runbook (共享: security, ai-coding, vulnerabilities)
+- [[16_编程/09_Security/SAST_SCA_for_AI_Code]] — SAST/SCA 在 AI 编程中的应用 (共享: security, sast, sca, dependencies)
+- [[16_编程/09_Security/Secure_Prompt_Engineering]] — 安全提示工程 (共享: prompt-injection, security)
+- [[16_编程/09_Security/AI_Code_Review_Security]] — AI 代码审查安全实践 (共享: code-review, security, checklist)
 - [[概念/LLM/prompt-injection]] — Prompt 注入 (共享: injection, llm-security)
 - [[概念/LLM/llm-safety]] — LLM 安全 (共享: ai-safety, security)

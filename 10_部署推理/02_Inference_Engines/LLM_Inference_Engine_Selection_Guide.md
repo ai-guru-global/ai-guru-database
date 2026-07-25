@@ -515,17 +515,17 @@ LLM 推理引擎选型 Checklist
 
 ## 参考资源
 
-- [[部署推理/Inference_Engines/vLLM_Deep_Dive|vLLM 深度解析]]
-- [[部署推理/Inference_Engines/SGLang_Deep_Dive|SGLang 深度解析]]
-- [[部署推理/Inference_Engines/TensorRT_LLM_Deep_Dive|TensorRT-LLM 深度解析]]
-- [[部署推理/Inference_Engines/llama_cpp_Deep_Dive|llama.cpp 深度解析]]
-- [[部署推理/Inference_Engines/TGI_Deep_Dive|TGI 深度解析]]
-- [[部署推理/Inference_Engines/Groq_Deep_Dive|Groq 深度解析]]
-- [[部署推理/Inference_Engines/Ollama_Deep_Dive|Ollama 深度解析]]
-- [[部署推理/Inference_Engines/LMDeploy_Deep_Dive|LMDeploy 深度解析]]
-- [[部署推理/Inference_Engines/BentoML_Deep_Dive|BentoML 深度解析]]
-- [[部署推理/Inference_Engines/LiteRT_Deep_Dive|LiteRT 深度解析]]
-- [[架构基建/AI_Gateway/LiteLLM_Deep_Dive|LiteLLM 深度解析]]
+- [[10_部署推理/02_Inference_Engines/vLLM_Deep_Dive|vLLM 深度解析]]
+- [[10_部署推理/02_Inference_Engines/SGLang_Deep_Dive|SGLang 深度解析]]
+- [[10_部署推理/02_Inference_Engines/TensorRT_LLM_Deep_Dive|TensorRT-LLM 深度解析]]
+- [[10_部署推理/02_Inference_Engines/llama_cpp_Deep_Dive|llama.cpp 深度解析]]
+- [[10_部署推理/02_Inference_Engines/TGI_Deep_Dive|TGI 深度解析]]
+- [[10_部署推理/02_Inference_Engines/Groq_Deep_Dive|Groq 深度解析]]
+- [[10_部署推理/02_Inference_Engines/Ollama_Deep_Dive|Ollama 深度解析]]
+- [[10_部署推理/02_Inference_Engines/LMDeploy_Deep_Dive|LMDeploy 深度解析]]
+- [[10_部署推理/02_Inference_Engines/BentoML_Deep_Dive|BentoML 深度解析]]
+- [[10_部署推理/02_Inference_Engines/LiteRT_Deep_Dive|LiteRT 深度解析]]
+- [[12_架构基建/11_AI_Gateway/LiteLLM_Deep_Dive|LiteLLM 深度解析]]
 
 ---
 
@@ -534,7 +534,7 @@ LLM 推理引擎选型 Checklist
 
 ## Related
 
-- [[部署推理/README|模型部署与推理目录]]
-- [[部署推理/Deployment_Inference_2026|部署推理 2026 趋势]]
-- [[部署推理/LLM_Cost_Optimization|LLM 成本优化]]
-- [[架构基建/AI_Gateway/AI_Gateway_2026|AI Gateway 2026]]
+- [[10_部署推理/README|模型部署与推理目录]]
+- [[10_部署推理/Deployment_Inference_2026|部署推理 2026 趋势]]
+- [[10_部署推理/LLM_Cost_Optimization|LLM 成本优化]]
+- [[12_架构基建/11_AI_Gateway/AI_Gateway_2026|AI Gateway 2026]]

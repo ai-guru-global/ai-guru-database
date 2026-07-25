@@ -40,8 +40,8 @@ Yann LeCun 是计算机视觉与深度学习的奠基人。1989 年提出 LeNet�
 
 | 文件 | 内容 | 适用人群 |
 |------|------|----------|
-| [[业界观点/Yann_LeCun/about\|about]] | 完整人物简介：CNN 缔造、世界模型、开源战略 | 所有读者 |
-| [[业界观点/Yann_LeCun/sayings\|sayings]] | 重要语录合集 | 研究者 |
+| [[19_业界观点/Yann_LeCun/about\|about]] | 完整人物简介：CNN 缔造、世界模型、开源战略 | 所有读者 |
+| [[19_业界观点/Yann_LeCun/sayings\|sayings]] | 重要语录合集 | 研究者 |
 
 ---
 
@@ -87,13 +87,13 @@ Yann LeCun 是计算机视觉与深度学习的奠基人。1989 年提出 LeNet�
 | 开源安全 | "开源是安全的，因为更多眼睛可以发现漏洞" | 多次 |
 | 行业 | "LLaMA 开源让 Meta 成为行业标准" | 2023 |
 
-完整语录见 [[业界观点/Yann_LeCun/sayings|LeCun 语录]]。
+完整语录见 [[19_业界观点/Yann_LeCun/sayings|LeCun 语录]]。
 
 ---
 
 ## 与 Hinton 的路线之争
 
-LeCun 与 [[业界观点/Geoffrey_Hinton/about|Hinton]] 在 LLM 路径、AGI 风险、反向传播地位上分歧明显。LeCun 认为必须换架构（JEPA），Hinton 倾向承认 LLM 能力但担忧后果。完整对比见 [[业界观点/Talks_Synthesis/Hinton_vs_LeCun_World_Model_Debate|Hinton vs LeCun 世界模型之争]]。
+LeCun 与 [[19_业界观点/Geoffrey_Hinton/about|Hinton]] 在 LLM 路径、AGI 风险、反向传播地位上分歧明显。LeCun 认为必须换架构（JEPA），Hinton 倾向承认 LLM 能力但担忧后果。完整对比见 [[19_业界观点/Talks_Synthesis/Hinton_vs_LeCun_World_Model_Debate|Hinton vs LeCun 世界模型之争]]。
 
 | 议题 | LeCun | Hinton |
 |------|-------|--------|
@@ -115,9 +115,9 @@ LeCun 的自主 AI 系统包含六个可微模块：配置器、感知、世界�
 |------|------|
 | 架构创新派 | 旗手 |
 | 风险被高估派 | 旗手 |
-| 开源倡导派 | 核心（与 [[业界观点/Mark_Zuckerberg/about|Zuckerberg]]）|
+| 开源倡导派 | 核心（与 [[19_业界观点/Mark_Zuckerberg/about|Zuckerberg]]）|
 
-参见 [[业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix|AI 安全立场矩阵]]、[[业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026|开源 vs 闭源之争]]。
+参见 [[19_业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix|AI 安全立场矩阵]]、[[19_业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026|开源 vs 闭源之争]]。
 
 ---
 
@@ -125,10 +125,10 @@ LeCun 的自主 AI 系统包含六个可微模块：配置器、感知、世界�
 
 | 关系 | 人物 |
 |------|------|
-| 图灵奖共获者 | [[业界观点/Geoffrey_Hinton/about|Hinton]]、[[业界观点/Yoshua_Bengio/about|Bengio]] |
-| Meta 同事 | [[业界观点/Mark_Zuckerberg/about|Mark Zuckerberg]] |
-| 路线争论对手 | [[业界观点/Geoffrey_Hinton/about|Hinton]] |
-| Scaling 派对手 | [[业界观点/Sam_Altman/about|Altman]]、[[业界观点/Ilya_Sutskever/about|Sutskever]] |
+| 图灵奖共获者 | [[19_业界观点/Geoffrey_Hinton/about|Hinton]]、[[19_业界观点/Yoshua_Bengio/about|Bengio]] |
+| Meta 同事 | [[19_业界观点/Mark_Zuckerberg/about|Mark Zuckerberg]] |
+| 路线争论对手 | [[19_业界观点/Geoffrey_Hinton/about|Hinton]] |
+| Scaling 派对手 | [[19_业界观点/Sam_Altman/about|Altman]]、[[19_业界观点/Ilya_Sutskever/about|Sutskever]] |
 
 ---
 
@@ -136,10 +136,10 @@ LeCun 的自主 AI 系统包含六个可微模块：配置器、感知、世界�
 
 | 阶段 | 推荐内容 | 目标 |
 |------|----------|------|
-| 入门 | [[业界观点/Yann_LeCun/about\|about]] | 了解 CNN 与世界模型 |
-| 进阶 | [[业界观点/Yann_LeCun/sayings\|sayings]] | 掌握反末日论立场 |
+| 入门 | [[19_业界观点/Yann_LeCun/about\|about]] | 了解 CNN 与世界模型 |
+| 进阶 | [[19_业界观点/Yann_LeCun/sayings\|sayings]] | 掌握反末日论立场 |
 | 深入 | 2022 OpenReview 论文 | JEPA 技术细节 |
-| 对比 | [[业界观点/Talks_Synthesis/Hinton_vs_LeCun_World_Model_Debate\|Hinton vs LeCun]] | 路线之争 |
+| 对比 | [[19_业界观点/Talks_Synthesis/Hinton_vs_LeCun_World_Model_Debate\|Hinton vs LeCun]] | 路线之争 |
 
 ---
 
@@ -180,13 +180,13 @@ LeCun 的自主 AI 系统包含六个可微模块：配置器、感知、世界�
 
 ## 关联导航
 
-- [[业界观点/Yann_LeCun/about\|人物简介]] · [[业界观点/Yann_LeCun/sayings\|核心语录]]
-- [[业界观点/Geoffrey_Hinton/about\|Geoffrey Hinton]] · [[业界观点/Yoshua_Bengio/about\|Yoshua Bengio]]
-- [[业界观点/Mark_Zuckerberg/about\|Mark Zuckerberg]]
-- [[业界观点/Talks_Synthesis/Hinton_vs_LeCun_World_Model_Debate\|Hinton vs LeCun 之争]]
-- [[业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026\|开源 vs 闭源]]
-- [[业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix\|AI 安全立场矩阵]]
-- [[业界观点/index\|业界观点首页]]
+- [[19_业界观点/Yann_LeCun/about\|人物简介]] · [[19_业界观点/Yann_LeCun/sayings\|核心语录]]
+- [[19_业界观点/Geoffrey_Hinton/about\|Geoffrey Hinton]] · [[19_业界观点/Yoshua_Bengio/about\|Yoshua Bengio]]
+- [[19_业界观点/Mark_Zuckerberg/about\|Mark Zuckerberg]]
+- [[19_业界观点/Talks_Synthesis/Hinton_vs_LeCun_World_Model_Debate\|Hinton vs LeCun 之争]]
+- [[19_业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026\|开源 vs 闭源]]
+- [[19_业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix\|AI 安全立场矩阵]]
+- [[19_业界观点/index\|业界观点首页]]
 
 ---
 

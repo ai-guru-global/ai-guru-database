@@ -21,15 +21,15 @@ LLM 产品概览索引，覆盖主流 AI 助手、结构化输出工具和 AI �
 
 ## Files
 
-- [[大模型/LLM_Products/chatgpt_overview|Chatgpt Overview]]
-- [[大模型/LLM_Products/claude_overview|Claude Overview]]
-- [[大模型/LLM_Products/deepseek_overview|Deepseek Overview]]
-- [[大模型/LLM_Products/gemini_overview|Gemini Overview]]
-- [[大模型/LLM_Products/god-tier-prompts_overview|God Tier Prompts Overview]]
-- [[大模型/LLM_Products/instructor_overview|Instructor Overview]]
-- [[大模型/LLM_Products/outlines_overview|Outlines Overview]]
-- [[大模型/LLM_Products/perplexity_overview|Perplexity Overview]]
-- [[大模型/LLM_Products/README|README]]
+- [[05_大模型/13_LLM_Products/chatgpt_overview|Chatgpt Overview]]
+- [[05_大模型/13_LLM_Products/claude_overview|Claude Overview]]
+- [[05_大模型/13_LLM_Products/deepseek_overview|Deepseek Overview]]
+- [[05_大模型/13_LLM_Products/gemini_overview|Gemini Overview]]
+- [[05_大模型/13_LLM_Products/god-tier-prompts_overview|God Tier Prompts Overview]]
+- [[05_大模型/13_LLM_Products/instructor_overview|Instructor Overview]]
+- [[05_大模型/13_LLM_Products/outlines_overview|Outlines Overview]]
+- [[05_大模型/13_LLM_Products/perplexity_overview|Perplexity Overview]]
+- [[05_大模型/13_LLM_Products/README|README]]
 
 ## 产品对比矩阵
 
@@ -71,8 +71,8 @@ LLM 产品概览索引，覆盖主流 AI 助手、结构化输出工具和 AI �
 
 ## 相关概念
 
-- [[大模型/Global_LLM_Ecosystem|全球 LLM 生态]]
-- [[大模型/Prompt_Engineering|提示词工程]]
+- [[05_大模型/Global_LLM_Ecosystem|全球 LLM 生态]]
+- [[05_大模型/Prompt_Engineering|提示词工程]]
 - [[概念/structured-output|结构化输出]]
 
 ## 统计
@@ -197,7 +197,7 @@ LLM 产品概览索引，覆盖主流 AI 助手、结构化输出工具和 AI �
 
 ## 快速导航
 
-- 想了解 AI 助手？→ [[大模型/LLM_Products/chatgpt_overview|ChatGPT 概览]]
-- 需要结构化输出？→ [[大模型/LLM_Products/instructor_overview|Instructor 概览]]
-- 做研究调研？→ [[大模型/LLM_Products/perplexity_overview|Perplexity 概览]]
-- 学提示词工程？→ [[大模型/LLM_Products/god-tier-prompts_overview|God Tier Prompts]]
+- 想了解 AI 助手？→ [[05_大模型/13_LLM_Products/chatgpt_overview|ChatGPT 概览]]
+- 需要结构化输出？→ [[05_大模型/13_LLM_Products/instructor_overview|Instructor 概览]]
+- 做研究调研？→ [[05_大模型/13_LLM_Products/perplexity_overview|Perplexity 概览]]
+- 学提示词工程？→ [[05_大模型/13_LLM_Products/god-tier-prompts_overview|God Tier Prompts]]

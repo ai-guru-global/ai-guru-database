@@ -12,25 +12,25 @@ This page indexes the contents of `模型评估`.
 
 ## Subdirectories
 
-- [[模型评估/Automation/index|Automation]]
-- [[模型评估/Benchmarks/index|Benchmarks]]
-- [[模型评估/Evaluation_Tools/index|Evaluation Tools]]
+- [[08_模型评估/05_Automation/index|Automation]]
+- [[08_模型评估/02_Benchmarks/index|Benchmarks]]
+- [[08_模型评估/04_Evaluation_Tools/index|Evaluation Tools]]
 
 ## Files
 
-- [[模型评估/Evaluation-in-nutshell|Evaluation In Nutshell]]
-- [[模型评估/Automation/AB_Testing_Template|A/B 测试方案模板]]
-- [[模型评估/Automation/Evaluation_Report_Template|模型评估报告模板]]
-- [[模型评估/Evaluation_Automation_2026|Evaluation Automation 2026]]
-- [[模型评估/Evaluation_Metrics|Evaluation Metrics]]
-- [[模型评估/Fairness_Evaluation_for_dummy|Fairness Evaluation For Dummy]]
-- [[模型评估/LLM_Evaluation_2026|LLM Evaluation 2026]]
-- [[模型评估/Model_Evaluation|Model Evaluation]]
-- [[模型评估/Model_Evaluation_for_dummy|Model Evaluation For Dummy]]
-- [[模型评估/README|README]]
-- [[模型评估/README_for_dummy|README For Dummy]]
-- [[模型评估/Statistical_Evaluation_Methods|Statistical Evaluation Methods]]
-- [[模型评估/Unified_Benchmark_Comparison|Unified Benchmark Comparison]]
+- [[08_模型评估/Evaluation-in-nutshell|Evaluation In Nutshell]]
+- [[08_模型评估/05_Automation/AB_Testing_Template|A/B 测试方案模板]]
+- [[08_模型评估/05_Automation/Evaluation_Report_Template|模型评估报告模板]]
+- [[08_模型评估/Evaluation_Automation_2026|Evaluation Automation 2026]]
+- [[08_模型评估/Evaluation_Metrics|Evaluation Metrics]]
+- [[08_模型评估/Fairness_Evaluation_for_dummy|Fairness Evaluation For Dummy]]
+- [[08_模型评估/LLM_Evaluation_2026|LLM Evaluation 2026]]
+- [[08_模型评估/Model_Evaluation|Model Evaluation]]
+- [[08_模型评估/Model_Evaluation_for_dummy|Model Evaluation For Dummy]]
+- [[08_模型评估/README|README]]
+- [[08_模型评估/README_for_dummy|README For Dummy]]
+- [[08_模型评估/Statistical_Evaluation_Methods|Statistical Evaluation Methods]]
+- [[08_模型评估/Unified_Benchmark_Comparison|Unified Benchmark Comparison]]
 
 ## 进阶知识拓展
 
@@ -68,9 +68,9 @@ This page indexes the contents of `模型评估`.
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

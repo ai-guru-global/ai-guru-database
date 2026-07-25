@@ -377,9 +377,9 @@ flowchart LR
 ## 🔗 想深入了解？
 
 - [AI 架构速成指南](./Architecture-in-nutshell.md) —— 技术细节版
-- [RAG 速成指南](RAG系统/RAG_Fundamentals/RAG-in-nutshell.md) —— 知识库怎么搭
-- [推理速成指南](部署推理/Deployment_Fundamentals/Inference-in-nutshell.md) —— 模型怎么跑
-- [MLOps 速成指南](模型运维/MLOps_Fundamentals/MLOps-in-nutshell.md) —— 自动化运维
+- [RAG 速成指南](14_RAG系统/01_RAG_Fundamentals/RAG-in-nutshell.md) —— 知识库怎么搭
+- [推理速成指南](10_部署推理/01_Deployment_Fundamentals/Inference-in-nutshell.md) —— 模型怎么跑
+- [MLOps 速成指南](11_模型运维/01_MLOps_Fundamentals/MLOps-in-nutshell.md) —— 自动化运维
 
 ---
 
@@ -387,8 +387,8 @@ flowchart LR
 
 ## Related
 
-- [[架构基建/Architecture_Overview/AI_Infrastructure_2026]] — AI Infrastructure 2026 完全指南 (共享: architecture, high-availability, infrastructure, kubernetes)
-- [[架构基建/Architecture-in-nutshell]] — AI 架构速成指南 (共享: architecture, high-availability, infrastructure, kubernetes)
-- [[架构基建/Architecture_Overview/Spring_AI_Architecture]] — Spring AI 系统架构设计 (共享: architecture, high-availability, infrastructure, kubernetes)
+- [[12_架构基建/02_Architecture_Overview/AI_Infrastructure_2026]] — AI Infrastructure 2026 完全指南 (共享: architecture, high-availability, infrastructure, kubernetes)
+- [[12_架构基建/Architecture-in-nutshell]] — AI 架构速成指南 (共享: architecture, high-availability, infrastructure, kubernetes)
+- [[12_架构基建/02_Architecture_Overview/Spring_AI_Architecture]] — Spring AI 系统架构设计 (共享: architecture, high-availability, infrastructure, kubernetes)
 - [[AI_Cost_Optimization_2026|AI_Cost_Optimization_2026]]
 - [[High_Availability_2026|High_Availability_2026]]

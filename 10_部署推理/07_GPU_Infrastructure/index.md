@@ -15,14 +15,14 @@ GPU 基础设施（GPU Infrastructure）— GPU 集群管理（cluster managemen
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[部署推理/GPU_Infrastructure/GPUStack_Deep_Dive|GPUStack Deep Dive]] | GPUStack deep dive: heterogeneous GPU management and inference scheduling | infrastructure engineers / GPU cluster operators |
-| [[部署推理/GPU_Infrastructure/GPUStack_for_dummy|GPUStack for dummy]] | GPUStack beginner guide: quickly setting up GPU inference clusters | DevOps engineers / beginners |
+| [[10_部署推理/07_GPU_Infrastructure/GPUStack_Deep_Dive|GPUStack Deep Dive]] | GPUStack deep dive: heterogeneous GPU management and inference scheduling | infrastructure engineers / GPU cluster operators |
+| [[10_部署推理/07_GPU_Infrastructure/GPUStack_for_dummy|GPUStack for dummy]] | GPUStack beginner guide: quickly setting up GPU inference clusters | DevOps engineers / beginners |
 
 ## Related
 
-- [[部署推理/index|部署推理首页]]
-- [[部署推理/Hardware/index|Hardware]]
-- [[运维/Capacity_Planning_index|Capacity Planning]]
+- [[10_部署推理/index|部署推理首页]]
+- [[10_部署推理/08_Hardware/index|Hardware]]
+- [[13_运维/Capacity_Planning_index|Capacity Planning]]
 
 ## 核心知识体系
 
@@ -133,9 +133,9 @@ GPU 基础设施（GPU Infrastructure）— GPU 集群管理（cluster managemen
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

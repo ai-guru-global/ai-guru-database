@@ -40,8 +40,8 @@ Jensen Huang 是 AI 算力时代的核心人物。2006 年他推出 CUDA 平台�
 
 | 文件 | 内容 | 适用人群 |
 |------|------|----------|
-| [[业界观点/Jensen_Huang/about\|about]] | 完整人物简介：CUDA、AI 工厂、Physical AI | 所有读者 |
-| [[业界观点/Jensen_Huang/sayings\|sayings]] | 重要语录合集 | 研究者 |
+| [[19_业界观点/Jensen_Huang/about\|about]] | 完整人物简介：CUDA、AI 工厂、Physical AI | 所有读者 |
+| [[19_业界观点/Jensen_Huang/sayings\|sayings]] | 重要语录合集 | 研究者 |
 
 ---
 
@@ -84,7 +84,7 @@ Jensen Huang 是 AI 算力时代的核心人物。2006 年他推出 CUDA 平台�
 | 时间表 | 5 年内实现具竞争力的人类水平 AI | 多次 |
 | 中国 | "中国 AI 进展迅速，全球需合作而非脱钩" | 反对芯片管制 |
 
-完整语录见 [[业界观点/Jensen_Huang/sayings|黄仁勋语录]]。
+完整语录见 [[19_业界观点/Jensen_Huang/sayings|黄仁勋语录]]。
 
 ---
 
@@ -96,7 +96,7 @@ Jensen Huang 是 AI 算力时代的核心人物。2006 年他推出 CUDA 平台�
 | 规模信仰派（算力）| 核心 |
 | 反芯片管制派 | 代表 |
 
-黄仁勋的独特之处是**对所有 AI 路线都受益**——无论你走 LLM Scaling 还是世界模型，都需要 NVIDIA 算力。他推动的 Cosmos 世界基础模型同时服务了 [[业界观点/Yann_LeCun/about|LeCun]] 派（世界模型）和 [[业界观点/Geoffrey_Hinton/about|Hinton]] 派（安全评估）。参见 [[业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix|AI 安全立场矩阵]]、[[业界观点/Talks_Synthesis/China_US_AI_Race_Leaders_Views|中美 AI 竞赛]]。
+黄仁勋的独特之处是**对所有 AI 路线都受益**——无论你走 LLM Scaling 还是世界模型，都需要 NVIDIA 算力。他推动的 Cosmos 世界基础模型同时服务了 [[19_业界观点/Yann_LeCun/about|LeCun]] 派（世界模型）和 [[19_业界观点/Geoffrey_Hinton/about|Hinton]] 派（安全评估）。参见 [[19_业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix|AI 安全立场矩阵]]、[[19_业界观点/Talks_Synthesis/China_US_AI_Race_Leaders_Views|中美 AI 竞赛]]。
 
 ---
 
@@ -104,10 +104,10 @@ Jensen Huang 是 AI 算力时代的核心人物。2006 年他推出 CUDA 平台�
 
 | 关系 | 人物 |
 |------|------|
-| 算力客户 | [[业界观点/Sam_Altman/about|Altman]]、[[业界观点/Dario_Amodei/about|Amodei]]、[[业界观点/Demis_Hassabis/about|Hassabis]] |
-| 开源合作 | [[业界观点/Mark_Zuckerberg/about|Zuckerberg]]（Meta 60 万 GPU）|
-| 反管制同盟 | [[业界观点/Bill_Gates/about|Bill Gates]] |
-| 安全立场对立 | [[业界观点/Yoshua_Bengio/about|Bengio]]、[[业界观点/Geoffrey_Hinton/about|Hinton]] |
+| 算力客户 | [[19_业界观点/Sam_Altman/about|Altman]]、[[19_业界观点/Dario_Amodei/about|Amodei]]、[[19_业界观点/Demis_Hassabis/about|Hassabis]] |
+| 开源合作 | [[19_业界观点/Mark_Zuckerberg/about|Zuckerberg]]（Meta 60 万 GPU）|
+| 反管制同盟 | [[19_业界观点/Bill_Gates/about|Bill Gates]] |
+| 安全立场对立 | [[19_业界观点/Yoshua_Bengio/about|Bengio]]、[[19_业界观点/Geoffrey_Hinton/about|Hinton]] |
 
 ---
 
@@ -115,10 +115,10 @@ Jensen Huang 是 AI 算力时代的核心人物。2006 年他推出 CUDA 平台�
 
 | 阶段 | 推荐内容 | 目标 |
 |------|----------|------|
-| 入门 | [[业界观点/Jensen_Huang/about\|about]] | 了解 CUDA 与 AI 工厂 |
-| 进阶 | [[业界观点/Jensen_Huang/sayings\|sayings]] | 掌握加速主义立场 |
+| 入门 | [[19_业界观点/Jensen_Huang/about\|about]] | 了解 CUDA 与 AI 工厂 |
+| 进阶 | [[19_业界观点/Jensen_Huang/sayings\|sayings]] | 掌握加速主义立场 |
 | 深入 | GTC 主题演讲 | 硬件路线图 |
-| 对比 | [[业界观点/Talks_Synthesis/China_US_AI_Race_Leaders_Views\|中美竞赛]] | 地缘立场 |
+| 对比 | [[19_业界观点/Talks_Synthesis/China_US_AI_Race_Leaders_Views\|中美竞赛]] | 地缘立场 |
 
 ---
 
@@ -159,13 +159,13 @@ Jensen Huang 是 AI 算力时代的核心人物。2006 年他推出 CUDA 平台�
 
 ## 关联导航
 
-- [[业界观点/Jensen_Huang/about\|人物简介]] · [[业界观点/Jensen_Huang/sayings\|核心语录]]
-- [[业界观点/Sam_Altman/about\|Sam Altman]] · [[业界观点/Dario_Amodei/about\|Dario Amodei]]
-- [[业界观点/Mark_Zuckerberg/about\|Mark Zuckerberg]]
-- [[业界观点/Talks_Synthesis/China_US_AI_Race_Leaders_Views\|中美 AI 竞赛]]
-- [[业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix\|AI 安全立场矩阵]]
-- [[业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix\|AGI 时间表矩阵]]
-- [[业界观点/index\|业界观点首页]]
+- [[19_业界观点/Jensen_Huang/about\|人物简介]] · [[19_业界观点/Jensen_Huang/sayings\|核心语录]]
+- [[19_业界观点/Sam_Altman/about\|Sam Altman]] · [[19_业界观点/Dario_Amodei/about\|Dario Amodei]]
+- [[19_业界观点/Mark_Zuckerberg/about\|Mark Zuckerberg]]
+- [[19_业界观点/Talks_Synthesis/China_US_AI_Race_Leaders_Views\|中美 AI 竞赛]]
+- [[19_业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix\|AI 安全立场矩阵]]
+- [[19_业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix\|AGI 时间表矩阵]]
+- [[19_业界观点/index\|业界观点首页]]
 
 ---
 

@@ -12,24 +12,24 @@ This page indexes the contents of `深度学习`.
 
 ## Subdirectories
 
-- [[深度学习/DL_Frameworks/index|DL Frameworks]]
-- [[深度学习/Graph_Neural_Networks/index|Graph Neural Networks]]
-- [[深度学习/Neural_Network_Core/index|Neural Network Core]]
-- [[深度学习/Optimization/index|Optimization]]
-- [[深度学习/Self_Supervised_Learning/index|Self Supervised Learning]]
-- [[深度学习/World_Models/index|World Models]]
+- [[03_深度学习/08_DL_Frameworks/index|DL Frameworks]]
+- [[03_深度学习/05_Graph_Neural_Networks/index|Graph Neural Networks]]
+- [[03_深度学习/02_Neural_Network_Core/index|Neural Network Core]]
+- [[03_深度学习/03_Optimization/index|Optimization]]
+- [[03_深度学习/06_Self_Supervised_Learning/index|Self Supervised Learning]]
+- [[03_深度学习/07_World_Models/index|World Models]]
 
 ## Files
 
-- [[深度学习/Deep_Learning_For_Beginners|Deep Learning For Beginners]]
-- [[深度学习/DL-in-nutshell|DL In Nutshell]]
-- [[深度学习/DL_Fundamentals|DL Fundamentals]]
-- [[深度学习/DL_Overview|DL Overview]]
-- [[深度学习/README|README]]
-- [[深度学习/README_for_dummy|README For Dummy]]
-- [[深度学习/State_Space_Models_2026|State Space Models 2026]]
-- [[深度学习/Transfer_Learning|Transfer Learning]]
-- [[深度学习/Transfer_Learning_Guide|Transfer Learning Guide]]
+- [[03_深度学习/Deep_Learning_For_Beginners|Deep Learning For Beginners]]
+- [[03_深度学习/DL-in-nutshell|DL In Nutshell]]
+- [[03_深度学习/DL_Fundamentals|DL Fundamentals]]
+- [[03_深度学习/DL_Overview|DL Overview]]
+- [[03_深度学习/README|README]]
+- [[03_深度学习/README_for_dummy|README For Dummy]]
+- [[03_深度学习/State_Space_Models_2026|State Space Models 2026]]
+- [[03_深度学习/Transfer_Learning|Transfer Learning]]
+- [[03_深度学习/Transfer_Learning_Guide|Transfer Learning Guide]]
 
 ## 进阶知识拓展
 
@@ -67,9 +67,9 @@ This page indexes the contents of `深度学习`.
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

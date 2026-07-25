@@ -251,8 +251,8 @@ FINETUNE_CURRICULUM = {
 
 ## 6. 交叉引用
 
-- [[模型训练/Optimization/|优化器]]
-- [[模型训练/Distributed_Training/|分布式训练]]
-- [[模型训练/Pretraining_Playbook/|预训练手册]]
-- [[强化学习/RL_Applications/RL_for_LLM_Reasoning|推理 RL]]
-- [[大模型/Reasoning_Models/Reasoning_RL_Training_Pipeline|推理训练流水线]]
+- [[07_模型训练/03_Optimization/|优化器]]
+- [[07_模型训练/04_Distributed_Training/|分布式训练]]
+- [[07_模型训练/Pretraining_Playbook/|预训练手册]]
+- [[06_强化学习/04_RL_Applications/RL_for_LLM_Reasoning|推理 RL]]
+- [[05_大模型/09_Reasoning_Models/Reasoning_RL_Training_Pipeline|推理训练流水线]]

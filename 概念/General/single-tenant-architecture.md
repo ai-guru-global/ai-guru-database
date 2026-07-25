@@ -10,7 +10,7 @@ relationships:
   - target: "概念/model-gateway"
     type: related_to
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
 summary: "单租户架构将所有硬件资源与软件服务栈归属单一用户，提供物理级隔离。AI Stack 采用此架构保障政企数据安全，与 SaaS 多租户架构形成对比。"
 provenance:
   extracted: 0.55
@@ -112,7 +112,7 @@ AI Stack 单租户架构
 - [[概念/rbac]] — RBAC 访问控制（单租户内部权限管理）
 - [[概念/ai-architecture]] — AI 架构（架构选型）
 - [[概念/model-gateway]] — 模型网关（单租户 API 管理）
-- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack（单租户实现）
+- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack（单租户实现）
 
 ---
 

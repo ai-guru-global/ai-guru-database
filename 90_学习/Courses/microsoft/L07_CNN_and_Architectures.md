@@ -140,10 +140,10 @@ model = keras.Sequential([
 
 ## 相关阅读
 
-- 课程索引：[[学习/courses/microsoft/microsoft_ai_for_beginners]]
+- 课程索引：[[90_学习/courses/microsoft/microsoft_ai_for_beginners]]
 - 本库相关页面：
-  - [[计算机视觉/Image_Classification_Detection/Image_Classification_Detection]]
-  - [[计算机视觉/CV-in-nutshell]]
+  - [[04_计算机视觉/02_Image_Classification_Detection/Image_Classification_Detection]]
+  - [[04_计算机视觉/CV-in-nutshell]]
 
 ## 核心知识框架
 

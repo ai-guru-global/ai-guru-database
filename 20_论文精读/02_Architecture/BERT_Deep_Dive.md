@@ -841,19 +841,19 @@ flowchart TB
 ## 10. 与其他章节的关联
 
 ### 前置知识
-- [Attention Is All You Need 深度解读](论文精读/Architecture/Attention_Is_All_You_Need_Deep_Dive.md) — Transformer 架构基础
-- [Transformer 革命](../大模型/Transformer_Revolution/) — Self-Attention 机制详解
-- [深度学习优化](深度学习/Optimization/Optimization.md) — 预训练与微调的优化策略
+- [Attention Is All You Need 深度解读](20_论文精读/02_Architecture/Attention_Is_All_You_Need_Deep_Dive.md) — Transformer 架构基础
+- [Transformer 革命](../05_大模型/04_Transformer_Revolution/) — Self-Attention 机制详解
+- [深度学习优化](03_深度学习/03_Optimization/Optimization.md) — 预训练与微调的优化策略
 
 ### 横向关联
-- [GPT-3 深度解读](论文精读/Scaling/GPT3_Deep_Dive.md) — Encoder-only vs Decoder-only 的对比
-- [NLP 与 LLMs](../../大模型/README.md) — NLP 任务全景
-- [LLM 架构](../大模型/LLM_Architectures/) — 现代大模型架构设计
+- [GPT-3 深度解读](20_论文精读/03_Scaling/GPT3_Deep_Dive.md) — Encoder-only vs Decoder-only 的对比
+- [NLP 与 LLMs](../../05_大模型/README.md) — NLP 任务全景
+- [LLM 架构](../05_大模型/05_LLM_Architectures/) — 现代大模型架构设计
 
 ### 进阶方向
-- [Fine-tuning 技术](../大模型/Fine_tuning_Techniques/) — 参数高效微调方法
-- [RLHF 与 DPO 深度解读](论文精读/Alignment/RLHF_DPO_Deep_Dive.md) — 从 BERT 微调到 RLHF 对齐
-- [Mixture of Experts 深度解读](论文精读/Architecture/Mixture_of_Experts_Deep_Dive.md) — 稀疏 MoE 架构
+- [Fine-tuning 技术](../05_大模型/07_Fine_tuning_Techniques/) — 参数高效微调方法
+- [RLHF 与 DPO 深度解读](20_论文精读/06_Alignment/RLHF_DPO_Deep_Dive.md) — 从 BERT 微调到 RLHF 对齐
+- [Mixture of Experts 深度解读](20_论文精读/02_Architecture/Mixture_of_Experts_Deep_Dive.md) — 稀疏 MoE 架构
 
 ---
 
@@ -861,7 +861,7 @@ flowchart TB
 
 ## Related
 
-- [[大模型/Fine_tuning_Techniques/PEFT_2026]] — PEFT 2026 (参数高效微调) (共享: bert, nlp, transformer)
-- [[大模型/Fine_tuning_Techniques/README]] — 微调技术 (Fine-tuning Techniques) (共享: bert, nlp, transformer)
-- [[大模型/LLM_Architectures/LLM-Basics-in-nutshell]] — 大语言模型基础速成指南 (共享: bert, nlp, transformer)
-- [[大模型/Multimodal_Models/Multimodal_Architectures_2026]] — 多模态模型架构 2026：从 GPT-4V 到原生多模态 AGI (共享: bert, nlp, transformer)
+- [[05_大模型/07_Fine_tuning_Techniques/PEFT_2026]] — PEFT 2026 (参数高效微调) (共享: bert, nlp, transformer)
+- [[05_大模型/07_Fine_tuning_Techniques/README]] — 微调技术 (Fine-tuning Techniques) (共享: bert, nlp, transformer)
+- [[05_大模型/05_LLM_Architectures/LLM-Basics-in-nutshell]] — 大语言模型基础速成指南 (共享: bert, nlp, transformer)
+- [[05_大模型/10_Multimodal_Models/Multimodal_Architectures_2026]] — 多模态模型架构 2026：从 GPT-4V 到原生多模态 AGI (共享: bert, nlp, transformer)

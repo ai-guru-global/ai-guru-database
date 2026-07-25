@@ -15,14 +15,14 @@ tags: [auto-index]
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[入门/Ethics_and_Future/AI_Ethics_Society|AI Ethics Society]] | AI ethics and society: bias, fairness, accountability and governance frameworks | all readers / ethics researchers |
-| [[入门/Ethics_and_Future/AI_Future_Trends|AI Future Trends]] | AI future trends: AGI path, multimodal fusion and embodied intelligence | all readers / futurists |
-| [[入门/Ethics_and_Future/AI_Classic_Cases|AI Classic Cases]] | AI classic cases: AlphaGo, ChatGPT, AlphaFold and other milestones | all readers / AI history enthusiasts |
+| [[00_入门/04_Ethics_and_Future/AI_Ethics_Society|AI Ethics Society]] | AI ethics and society: bias, fairness, accountability and governance frameworks | all readers / ethics researchers |
+| [[00_入门/04_Ethics_and_Future/AI_Future_Trends|AI Future Trends]] | AI future trends: AGI path, multimodal fusion and embodied intelligence | all readers / futurists |
+| [[00_入门/04_Ethics_and_Future/AI_Classic_Cases|AI Classic Cases]] | AI classic cases: AlphaGo, ChatGPT, AlphaFold and other milestones | all readers / AI history enthusiasts |
 
 ## Related
 
-- [[入门/index|入门首页]]
-- [[伦理安全/index|伦理安全]]
+- [[00_入门/index|入门首页]]
+- [[17_伦理安全/index|伦理安全]]
 
 ## 核心议题
 
@@ -168,9 +168,9 @@ tags: [auto-index]
 | 阶段 | 推荐内容 | 目标 |
 |------|----------|------|
 | 入门 | AI Ethics Society | 理解基本伦理问题 |
-| 进阶 | 伦理安全/Governance | 掌握治理框架 |
-| 深入 | 伦理安全/Value_Alignment | 理解对齐技术 |
-| 实践 | 伦理安全/AI_Safety_RedTeaming | 安全测试实践 |
+| 进阶 | 17_伦理安全/Governance | 掌握治理框架 |
+| 深入 | 17_伦理安全/Value_Alignment | 理解对齐技术 |
+| 实践 | 17_伦理安全/AI_Safety_RedTeaming | 安全测试实践 |
 
 ## 附录：推荐书籍与资源
 

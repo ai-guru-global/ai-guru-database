@@ -156,11 +156,11 @@ aliases:
 - **RAG 系统**:
   - 检索增强生成架构
   - 向量数据库（Qdrant、Pinecone）
-  - 检索优化（详见 [[RAG系统/RAG_Systems]]）
+  - 检索优化（详见 [[14_RAG系统/RAG_Systems]]）
 - **Agent 架构**:
   - 工具调用
   - 多步推理
-  - 详见 [[智能体/]]
+  - 详见 [[15_智能体/]]
 - **聊天界面**:
   - 对话管理
   - 上下文维护
@@ -278,14 +278,14 @@ LoRA 通常可将微调成本降至全量微调的 10-20%
 
 | 本书章节 | 知识库主题 | 关联说明 |
 |----------|------------|----------|
-| Ch 1 概览 | [[大模型/LLM_Fundamentals]] | LLM 生态 |
-| Ch 2 数据工程 | [[机器学习/]] | 数据管道 |
-| Ch 3 训练 | [[模型训练/]] 、 [[大模型/Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs]] | SFT、LoRA |
-| Ch 4 评估 | [[模型评估/]] | 自动评估、LLM-as-Judge |
-| Ch 5 推理 | [[部署推理/]] | 推理引擎、部署 |
-| Ch 6 应用 | [[RAG系统/]] 、 [[智能体/]] | RAG、Agent |
-| Ch 7 MLOps | [[架构基建/]] | 工具链、CI/CD |
-| Ch 8 生产化 | [[运维/]] 、 [[模型运维/]] | 监控、成本管理 |
+| Ch 1 概览 | [[05_大模型/LLM_Fundamentals]] | LLM 生态 |
+| Ch 2 数据工程 | [[02_机器学习/]] | 数据管道 |
+| Ch 3 训练 | [[07_模型训练/]] 、 [[05_大模型/07_Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs]] | SFT、LoRA |
+| Ch 4 评估 | [[08_模型评估/]] | 自动评估、LLM-as-Judge |
+| Ch 5 推理 | [[10_部署推理/]] | 推理引擎、部署 |
+| Ch 6 应用 | [[14_RAG系统/]] 、 [[15_智能体/]] | RAG、Agent |
+| Ch 7 MLOps | [[12_架构基建/]] | 工具链、CI/CD |
+| Ch 8 生产化 | [[13_运维/]] 、 [[11_模型运维/]] | 监控、成本管理 |
 
 ### 与相关书籍的关系
 
@@ -412,12 +412,12 @@ LoRA 通常可将微调成本降至全量微调的 10-20%
 
 ## 延伸阅读
 
-- [[学习/References/books/ai-engineering-huyen|AI Engineering]] — 配套（架构设计）
-- [[学习/References/books/llms-in-production|LLMs in Production]] — 配套（生产运维）
-- [[学习/References/books/build-llm-from-scratch-raschka|Build LLM from Scratch]] — 模型底层
-- [[架构基建/]] — MLOps 与基础设施
-- [[部署推理/]] — 推理部署
-- [[模型训练/]] — 训练方法
-- [[学习/guides/ai_engineering_roadmap_2026|AI 工程路线图 2026]]
+- [[90_学习/References/books/ai-engineering-huyen|AI Engineering]] — 配套（架构设计）
+- [[90_学习/References/books/llms-in-production|LLMs in Production]] — 配套（生产运维）
+- [[90_学习/References/books/build-llm-from-scratch-raschka|Build LLM from Scratch]] — 模型底层
+- [[12_架构基建/]] — MLOps 与基础设施
+- [[10_部署推理/]] — 推理部署
+- [[07_模型训练/]] — 训练方法
+- [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图 2026]]
 
-> **关联**: → [[学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]] | [[架构基建/]] | [[部署推理/]] | [[模型训练/]]
+> **关联**: → [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]] | [[12_架构基建/]] | [[10_部署推理/]] | [[07_模型训练/]]

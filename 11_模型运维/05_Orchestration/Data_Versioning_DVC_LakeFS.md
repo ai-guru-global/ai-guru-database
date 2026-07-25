@@ -284,15 +284,15 @@ jobs:
 ## 7. 相关文档
 
 ### 本章内
-- [[模型运维/MLOps_Pipeline]] — 全流水线（数据版本是其基础环节）
-- [[模型运维/Experiment_Tracking/Feature_Store_Deep_Dive]] — 特征存储（数据版本的特征视角）
-- [[模型运维/Experiment_Tracking/Experiment_Tracking_Deep_Dive]] — 实验追踪（数据版本是其输入）
-- [[模型运维/Orchestration/Data_Pipeline_Orchestration]] — 数据编排
-- [[模型运维/Experiment_Tracking/Model_Registry_and_Cards_Deep_Dive]] — 模型注册（三元组的模型侧）
+- [[11_模型运维/MLOps_Pipeline]] — 全流水线（数据版本是其基础环节）
+- [[11_模型运维/04_Experiment_Tracking/Feature_Store_Deep_Dive]] — 特征存储（数据版本的特征视角）
+- [[11_模型运维/04_Experiment_Tracking/Experiment_Tracking_Deep_Dive]] — 实验追踪（数据版本是其输入）
+- [[11_模型运维/05_Orchestration/Data_Pipeline_Orchestration]] — 数据编排
+- [[11_模型运维/04_Experiment_Tracking/Model_Registry_and_Cards_Deep_Dive]] — 模型注册（三元组的模型侧）
 
 ### 跨章
 - [[概念/mlops]] — MLOps 概念
-- [[测试/Test_Data_Management]] — 测试数据管理
+- [[09_测试/Test_Data_Management]] — 测试数据管理
 
 ---
 

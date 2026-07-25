@@ -62,9 +62,9 @@ MiniMax 的核心架构创新是 **Lightning Attention**，突破传统 Softmax 
 | 推理外推 | 受限 | **可达 4M** |
 | 核心思想 | 全局 softmax 注意力 | 线性化注意力近似 |
 
-Lightning Attention 使 MiniMax 模型能够处理百万级 token 的超长上下文，在长上下文赛道与 [[业界观点/Zhilin_Yang/Zhilin_Yang_2026_Update|Kimi]] 形成直接竞争（Kimi 走产品级长文本，MiniMax 走效率型线性注意力）。
+Lightning Attention 使 MiniMax 模型能够处理百万级 token 的超长上下文，在长上下文赛道与 [[19_业界观点/Zhilin_Yang/Zhilin_Yang_2026_Update|Kimi]] 形成直接竞争（Kimi 走产品级长文本，MiniMax 走效率型线性注意力）。
 
-线性注意力属于 State Space Model / 线性注意力家族，关联 [[深度学习/State_Space_Models_2026|状态空间模型]] 与 [[论文精读/Architecture/Mamba_SSM_Paper_Deep_Dive|Mamba 论文]]。
+线性注意力属于 State Space Model / 线性注意力家族，关联 [[03_深度学习/State_Space_Models_2026|状态空间模型]] 与 [[20_论文精读/02_Architecture/Mamba_SSM_Paper_Deep_Dive|Mamba 论文]]。
 
 ### 海螺 AI（Hailuo）：视频生成
 
@@ -77,7 +77,7 @@ Lightning Attention 使 MiniMax 模型能够处理百万级 token 的超长上�
 | 竞争对手 | OpenAI Sora、Runway、Pika、可灵（快手） |
 | 定位 | 中国视频生成代表之一 |
 
-视频生成是 2025-2026 年最热的多模态赛道，关联 [[计算机视觉/index|计算机视觉]] 的生成模型方向。
+视频生成是 2025-2026 年最热的多模态赛道，关联 [[04_计算机视觉/index|计算机视觉]] 的生成模型方向。
 
 ### Talkie：C 端出海标杆
 
@@ -133,9 +133,9 @@ MiniMax 的差异化在于"全模态"——不只是文本，而是覆盖：
 | 公司 | 创始人 | 核心战略 | 差异化 |
 |------|--------|----------|--------|
 | **MiniMax** | 闫俊杰 | 全模态 + C 端出海 | **唯一出海 C 端** |
-| [[业界观点/Wenfeng_Liang/Wenfeng_Liang_2026_Update\|DeepSeek]] | 梁文锋 | 效率 + 开源 | 开源效率标杆 |
-| [[业界观点/Zhilin_Yang/Zhilin_Yang_2026_Update\|月之暗面]] | 杨植麟 | 长上下文 C 端 | 长文本心智 |
-| [[业界观点/Jie_Tang/Jie_Tang_2026_Update\|智谱]] | 唐杰 | 产学研 + 开源 | 学术底蕴 |
+| [[19_业界观点/Wenfeng_Liang/Wenfeng_Liang_2026_Update\|DeepSeek]] | 梁文锋 | 效率 + 开源 | 开源效率标杆 |
+| [[19_业界观点/Zhilin_Yang/Zhilin_Yang_2026_Update\|月之暗面]] | 杨植麟 | 长上下文 C 端 | 长文本心智 |
+| [[19_业界观点/Jie_Tang/Jie_Tang_2026_Update\|智谱]] | 唐杰 | 产学研 + 开源 | 学术底蕴 |
 
 ### 对行业的影响
 
@@ -167,23 +167,23 @@ Talkie 用户规模大，但角色扮演类 AI 应用的长期留存、付费转
 ## 关联与延伸
 
 ### 人物关联
-- [[业界观点/Junjie_Yan/about|闫俊杰 概述]]
-- [[业界观点/Junjie_Yan/index|闫俊杰 主页]]
-- [[业界观点/Junjie_Yan/sayings|闫俊杰 语录]]
+- [[19_业界观点/Junjie_Yan/about|闫俊杰 概述]]
+- [[19_业界观点/Junjie_Yan/index|闫俊杰 主页]]
+- [[19_业界观点/Junjie_Yan/sayings|闫俊杰 语录]]
 
 ### 中国 AI 六小龙
-- [[业界观点/Wenfeng_Liang/Wenfeng_Liang_2026_Update|梁文锋（DeepSeek）]]
-- [[业界观点/Zhilin_Yang/Zhilin_Yang_2026_Update|杨植麟（月之暗面）]]
-- [[业界观点/Jie_Tang/Jie_Tang_2026_Update|唐杰（智谱 AI）]]
-- [[业界观点/Jinze_Bai/about|白辰甲（阶跃星辰）]]
+- [[19_业界观点/Wenfeng_Liang/Wenfeng_Liang_2026_Update|梁文锋（DeepSeek）]]
+- [[19_业界观点/Zhilin_Yang/Zhilin_Yang_2026_Update|杨植麟（月之暗面）]]
+- [[19_业界观点/Jie_Tang/Jie_Tang_2026_Update|唐杰（智谱 AI）]]
+- [[19_业界观点/Jinze_Bai/about|白辰甲（阶跃星辰）]]
 
 ### 技术关联
-- [[深度学习/State_Space_Models_2026|状态空间模型]]（线性注意力家族）
-- [[论文精读/Architecture/Mamba_SSM_Paper_Deep_Dive|Mamba 论文]]
-- [[计算机视觉/index|计算机视觉]]（视频生成）
-- [[部署推理/Inference_Performance/Long_Context_Inference_2026|长上下文推理]]
-- [[大模型/index|大模型生态]]
-- [[业界观点/Talks_Synthesis/China_US_AI_Race_Leaders_Views|中美 AI 竞赛观点]]
+- [[03_深度学习/State_Space_Models_2026|状态空间模型]]（线性注意力家族）
+- [[20_论文精读/02_Architecture/Mamba_SSM_Paper_Deep_Dive|Mamba 论文]]
+- [[04_计算机视觉/index|计算机视觉]]（视频生成）
+- [[10_部署推理/04_Inference_Performance/Long_Context_Inference_2026|长上下文推理]]
+- [[05_大模型/index|大模型生态]]
+- [[19_业界观点/Talks_Synthesis/China_US_AI_Race_Leaders_Views|中美 AI 竞赛观点]]
 
 ---
 
@@ -197,4 +197,4 @@ Talkie 用户规模大，但角色扮演类 AI 应用的长期留存、付费转
 
 ---
 
-*本文为 AI Guru 知识库内容，2026-07-23 更新。关联 [[业界观点/index|业界观点]] 与 [[大模型/Chinese_LLM_Ecosystem|中国大模型生态]]。*
+*本文为 AI Guru 知识库内容，2026-07-23 更新。关联 [[19_业界观点/index|业界观点]] 与 [[05_大模型/Chinese_LLM_Ecosystem|中国大模型生态]]。*

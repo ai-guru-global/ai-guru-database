@@ -366,14 +366,14 @@ print(f"覆盖度: {label_model.score(L_train, tie_break_policy='random'):.2%}")
 
 ## Related
 
-- [[模型运维/Orchestration/Data_Quality_Management]] — 数据质量管理
-- [[模型运维/Orchestration/Data_Pipeline_Orchestration]] — 数据管道编排
-- [[模型运维/Automated_Retraining]] — 自动化重训
-- [[大模型/LLM_Data_Engineering/README]] — LLM 数据工程
+- [[11_模型运维/05_Orchestration/Data_Quality_Management]] — 数据质量管理
+- [[11_模型运维/05_Orchestration/Data_Pipeline_Orchestration]] — 数据管道编排
+- [[11_模型运维/Automated_Retraining]] — 自动化重训
+- [[05_大模型/06_LLM_Data_Engineering/README]] — LLM 数据工程
 
 ---
 
 *Last updated: 2026-06-25*
 *Version: 1.0.0*
 
-- [[模型运维/README|MLOps 流水线 (MLOps Pipeline)]]
+- [[11_模型运维/README|MLOps 流水线 (MLOps Pipeline)]]

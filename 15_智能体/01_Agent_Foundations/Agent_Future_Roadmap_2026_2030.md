@@ -572,7 +572,7 @@ class SelfImprovingAgent:
 
 ## Related
 
-- [[强化学习/AI_Agents/AI_Agents_for_dummy]] — AI 智能体 - 小白版 🤖 (共享: agent, ai-agents, mdp, reinforcement-learning, rl)
-- [[强化学习/AI_Agents/Agent-in-nutshell]] — AI 智能体速成指南 (共享: agent, ai-agents, mdp, reinforcement-learning, rl)
-- [[强化学习/AI_Agents/Agent_Protocols_Detail]] — AI Agent 协议详解：MCP、A2A、UCP (共享: agent, ai-agents, mdp, reinforcement-learning, rl)
-- [[强化学习/README]] — 06 强化学习与智能体 (Reinforcement Learning & Agents) (共享: agent, mdp, reinforcement-learning, rl)
+- [[06_强化学习/AI_Agents/AI_Agents_for_dummy]] — AI 智能体 - 小白版 🤖 (共享: agent, ai-agents, mdp, reinforcement-learning, rl)
+- [[06_强化学习/AI_Agents/Agent-in-nutshell]] — AI 智能体速成指南 (共享: agent, ai-agents, mdp, reinforcement-learning, rl)
+- [[06_强化学习/AI_Agents/Agent_Protocols_Detail]] — AI Agent 协议详解：MCP、A2A、UCP (共享: agent, ai-agents, mdp, reinforcement-learning, rl)
+- [[06_强化学习/README]] — 06 强化学习与智能体 (Reinforcement Learning & Agents) (共享: agent, mdp, reinforcement-learning, rl)

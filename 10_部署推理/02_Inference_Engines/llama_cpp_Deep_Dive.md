@@ -675,11 +675,11 @@ llama.cpp 性能优化 checklist
 
 ## Related
 
-- [[部署推理/Deployment_Fundamentals/Deployment_Inference.md|Deployment_Inference]]
-- [[部署推理/Deployment_Fundamentals/Deployment_Inference_2026.md|Deployment_Inference_2026]]
-- [[部署推理/Deployment_Fundamentals/Deployment_Inference_for_dummy.md|Deployment_Inference_for_dummy]]
-- [[部署推理/Deployment_Fundamentals/Inference-in-nutshell.md|Inference-in-nutshell]]
-- [[部署推理/Inference_Engines/Ollama_Deep_Dive.md|Ollama_Deep_Dive]]
-- [[部署推理/Inference_Engines/vLLM_Deep_Dive.md|vLLM_Deep_Dive]]
-- [[部署推理/Inference_Engines/SGLang_Deep_Dive.md|SGLang_Deep_Dive]]
-- [[部署推理/Inference_Engines/TensorRT_LLM_Deep_Dive.md|TensorRT_LLM_Deep_Dive]]
+- [[10_部署推理/01_Deployment_Fundamentals/Deployment_Inference.md|Deployment_Inference]]
+- [[10_部署推理/01_Deployment_Fundamentals/Deployment_Inference_2026.md|Deployment_Inference_2026]]
+- [[10_部署推理/01_Deployment_Fundamentals/Deployment_Inference_for_dummy.md|Deployment_Inference_for_dummy]]
+- [[10_部署推理/01_Deployment_Fundamentals/Inference-in-nutshell.md|Inference-in-nutshell]]
+- [[10_部署推理/02_Inference_Engines/Ollama_Deep_Dive.md|Ollama_Deep_Dive]]
+- [[10_部署推理/02_Inference_Engines/vLLM_Deep_Dive.md|vLLM_Deep_Dive]]
+- [[10_部署推理/02_Inference_Engines/SGLang_Deep_Dive.md|SGLang_Deep_Dive]]
+- [[10_部署推理/02_Inference_Engines/TensorRT_LLM_Deep_Dive.md|TensorRT_LLM_Deep_Dive]]

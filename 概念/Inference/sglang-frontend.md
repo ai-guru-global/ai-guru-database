@@ -10,7 +10,7 @@ relationships:
   - target: "概念/flash-attn"
     type: related_to
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
 summary: "SGLang 推理引擎的 API 服务层，提供 OpenAI 兼容接口、流式输出、Function Calling 等前端能力，将底层高性能推理暴露为生产可用服务。"
 provenance:
   extracted: 0.55

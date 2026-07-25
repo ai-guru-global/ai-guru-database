@@ -745,18 +745,18 @@ print(f"英语: {english}")
 ## 10. 与其他章节的关联
 
 ### 前置知识
-- [LLM 架构](大模型/LLM_Architectures/LLM_Architectures.md) — 理解 Decoder-only 架构和 Scaling Laws
-- [Transformer 革命](../大模型/Transformer_Revolution/) — Self-Attention 机制详解
-- [提示工程](大模型/Prompt_Engineering/Prompt_Engineering.md) — Few-Shot 和 Zero-Shot 提示设计
+- [LLM 架构](05_大模型/05_LLM_Architectures/LLM_Architectures.md) — 理解 Decoder-only 架构和 Scaling Laws
+- [Transformer 革命](../05_大模型/04_Transformer_Revolution/) — Self-Attention 机制详解
+- [提示工程](05_大模型/08_Prompt_Engineering/Prompt_Engineering.md) — Few-Shot 和 Zero-Shot 提示设计
 
 ### 横向关联
-- [序列模型](../大模型/Sequence_Models/) — 语言建模基础
-- [模型训练](模型训练/Training_Fundamentals/Model-Training-in-nutshell.md) — 分布式训练与优化策略
+- [序列模型](../05_大模型/02_Sequence_Models/) — 语言建模基础
+- [模型训练](07_模型训练/01_Training_Fundamentals/Model-Training-in-nutshell.md) — 分布式训练与优化策略
 
 ### 进阶方向
-- [分布式训练](模型训练/Distributed_Training/Distributed_Training_2026.md) — GPT-3 级别的模型如何分布式训练
-- [Fine-tuning 技术](../大模型/Fine_tuning_Techniques/) — 从 GPT-3 到 InstructGPT 的 RLHF
-- [AI 智能体](../强化学习/AI_Agents/) — GPT-3 作为 Agent 大脑的应用
+- [分布式训练](07_模型训练/04_Distributed_Training/Distributed_Training_2026.md) — GPT-3 级别的模型如何分布式训练
+- [Fine-tuning 技术](../05_大模型/07_Fine_tuning_Techniques/) — 从 GPT-3 到 InstructGPT 的 RLHF
+- [AI 智能体](../06_强化学习/AI_Agents/) — GPT-3 作为 Agent 大脑的应用
 
 ---
 
@@ -764,7 +764,7 @@ print(f"英语: {english}")
 
 ## Related
 
-- [[大模型/Fine_tuning_Techniques/PEFT_2026]] — PEFT 2026 (参数高效微调) (共享: gpt, llm, nlp)
-- [[大模型/Fine_tuning_Techniques/README]] — 微调技术 (Fine-tuning Techniques) (共享: gpt, llm, nlp)
-- [[大模型/LLM_Architectures/LLM-Basics-in-nutshell]] — 大语言模型基础速成指南 (共享: gpt, llm, nlp)
-- [[大模型/Multimodal_Models/Multimodal_Architectures_2026]] — 多模态模型架构 2026：从 GPT-4V 到原生多模态 AGI (共享: gpt, llm, nlp)
+- [[05_大模型/07_Fine_tuning_Techniques/PEFT_2026]] — PEFT 2026 (参数高效微调) (共享: gpt, llm, nlp)
+- [[05_大模型/07_Fine_tuning_Techniques/README]] — 微调技术 (Fine-tuning Techniques) (共享: gpt, llm, nlp)
+- [[05_大模型/05_LLM_Architectures/LLM-Basics-in-nutshell]] — 大语言模型基础速成指南 (共享: gpt, llm, nlp)
+- [[05_大模型/10_Multimodal_Models/Multimodal_Architectures_2026]] — 多模态模型架构 2026：从 GPT-4V 到原生多模态 AGI (共享: gpt, llm, nlp)

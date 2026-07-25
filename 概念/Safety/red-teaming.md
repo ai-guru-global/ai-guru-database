@@ -13,8 +13,8 @@ relationships:
   - target: "[[概念/Safety/adversarial-attack]]"
     type: methodology_for
 sources:
-  - 伦理安全/Safety_Evaluation_Framework.md
-  - 伦理安全/LLM_Security_Defense_Guide.md
+  - 17_伦理安全/Safety_Evaluation_Framework.md
+  - 17_伦理安全/LLM_Security_Defense_Guide.md
 summary: "红队测试是系统化的AI安全评估方法论：由攻击方（红队）使用对抗性技术主动发现AI系统的安全漏洞，由防守方（蓝队）修复，形成持续的安全改进循环。涵盖自动化测试、人工测试和AI辅助测试。"
 provenance:
   extracted: 0.78
@@ -652,8 +652,8 @@ class RedTeamFramework:
 - [[概念/Safety/model-watermark]] — 模型水印（模型溯源）
 - [[概念/model-evaluation]] — 模型评估
 - [[概念/llm-safety]] — LLM安全
-- [[伦理安全/LLM_Security_Defense_Guide]] — LLM安全防御指南
-- [[伦理安全/Safety_Evaluation_Framework]] — 安全评估框架
+- [[17_伦理安全/LLM_Security_Defense_Guide]] — LLM安全防御指南
+- [[17_伦理安全/Safety_Evaluation_Framework]] — 安全评估框架
 
 ---
 

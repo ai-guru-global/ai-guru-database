@@ -12,7 +12,7 @@ relationships:
   - target: "概念/pissa"
     type: related_to
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
 summary: "PEFT 是 HuggingFace 官方的参数高效微调库——统一封装了 LoRA、Prefix Tuning、Prompt Tuning、IA³ 等主流 PEFT 方法。是大模型微调的标准入口，一行代码即可将全参微调转换为高效微调。"
 provenance:
   extracted: 0.25

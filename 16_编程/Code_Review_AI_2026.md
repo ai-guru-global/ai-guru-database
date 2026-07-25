@@ -263,8 +263,8 @@ REVIEW_METRICS = {
 
 ## 5. 交叉引用
 
-- [[编程/AI_IDE_Landscape_2026|AI IDE 全景]]
-- [[编程/Testing_with_AI/|AI 辅助测试]]
-- [[编程/Security/|编程安全]]
-- [[测试/|测试]]
-- [[运维/|运维]]
+- [[16_编程/AI_IDE_Landscape_2026|AI IDE 全景]]
+- [[16_编程/Testing_with_AI/|AI 辅助测试]]
+- [[16_编程/09_Security/|编程安全]]
+- [[09_测试/|测试]]
+- [[13_运维/|运维]]

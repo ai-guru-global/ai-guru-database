@@ -122,8 +122,8 @@ scheduler = get_cosine_schedule_with_warmup(
 
 - [[概念/Training/gradient-checkpointing|梯度检查点]] — 训练显存优化
 - [[概念/Training/distributed-training|分布式训练]] — 多卡并行训练
-- [[深度学习/Deep_Learning_For_Beginners|深度学习入门]] — 神经网络基础
-- [[大模型/LLM_Architectures/LLM_Internals_Training|大模型训练内幕]] — 优化器与 学习率调度
+- [[03_深度学习/Deep_Learning_For_Beginners|深度学习入门]] — 神经网络基础
+- [[05_大模型/05_LLM_Architectures/LLM_Internals_Training|大模型训练内幕]] — 优化器与 学习率调度
 
 ## 2026 梯度下降生态现状
 
@@ -159,7 +159,7 @@ scheduler = get_cosine_schedule_with_warmup(
 - [[概念/Training/mixed-precision|Mixed Precision]] — 混合精度
 - [[概念/Training/deepspeed|DeepSpeed]] — 分布式训练
 - [[概念/Training/fsdp|FSDP]] — PyTorch 全分片
-- [[深度学习/Deep_Learning_For_Beginners|深度学习入门]] — 神经网络基础
+- [[03_深度学习/Deep_Learning_For_Beginners|深度学习入门]] — 神经网络基础
 
 > ℹ️ 梯度下降是深度学习的核心优化算法，2026年 AdamW 仍是主流，Lion/Sophia 是前沿 选择，学习率调优是关键。
 

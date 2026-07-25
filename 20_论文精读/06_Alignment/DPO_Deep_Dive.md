@@ -691,12 +691,12 @@ flowchart TB
 
 | 相关文档 | 关系 | 详见 |
 |---------|------|------|
-| RLHF & DPO Deep Dive | 本论文的综述级解读 | [RLHF_DPO_Deep_Dive.md](论文精读/Alignment/RLHF_DPO_Deep_Dive.md) |
-| GRPO 与新对齐方法 | DPO 之后的演进 | [../模型训练/GRPO_and_New_Alignment_Methods.md](模型训练/Alignment/GRPO_and_New_Alignment_Methods.md) |
-| GPT-4 Deep Dive | RLHF at Scale 的实践 | [GPT4_Deep_Dive.md](论文精读/Scaling/GPT4_Deep_Dive.md) |
-| LLaMA Deep Dive | DPO 对齐的典型基座模型 | [LLaMA_Deep_Dive.md](论文精读/Architecture/LLaMA_Deep_Dive.md) |
-| LoRA Deep Dive | DPO 常与 LoRA 结合使用 | [LoRA_Deep_Dive.md](论文精读/Efficiency/LoRA_Deep_Dive.md) |
-| 分布式训练 | 大模型 DPO 训练基础设施 | [../模型训练/Distributed_Training_2026.md](模型训练/Distributed_Training/Distributed_Training_2026.md) |
+| RLHF & DPO Deep Dive | 本论文的综述级解读 | [RLHF_DPO_Deep_Dive.md](20_论文精读/06_Alignment/RLHF_DPO_Deep_Dive.md) |
+| GRPO 与新对齐方法 | DPO 之后的演进 | [../07_模型训练/GRPO_and_New_Alignment_Methods.md](07_模型训练/06_Alignment/GRPO_and_New_Alignment_Methods.md) |
+| GPT-4 Deep Dive | RLHF at Scale 的实践 | [GPT4_Deep_Dive.md](20_论文精读/03_Scaling/GPT4_Deep_Dive.md) |
+| LLaMA Deep Dive | DPO 对齐的典型基座模型 | [LLaMA_Deep_Dive.md](20_论文精读/02_Architecture/LLaMA_Deep_Dive.md) |
+| LoRA Deep Dive | DPO 常与 LoRA 结合使用 | [LoRA_Deep_Dive.md](20_论文精读/04_Efficiency/LoRA_Deep_Dive.md) |
+| 分布式训练 | 大模型 DPO 训练基础设施 | [../07_模型训练/Distributed_Training_2026.md](07_模型训练/04_Distributed_Training/Distributed_Training_2026.md) |
 
 ---
 
@@ -756,11 +756,11 @@ flowchart TB
 
 ## Related
 
-- [[../../大模型/Fine_tuning_Techniques|微调技术]] — DPO 与 RLHF 微调方法对比
-- [[../../大模型/LLM_Architectures/LLM_Internals_Training|LLM 训练内部机制]] — 对齐训练技术细节
+- [[../../05_大模型/Fine_tuning_Techniques|微调技术]] — DPO 与 RLHF 微调方法对比
+- [[../../05_大模型/05_LLM_Architectures/LLM_Internals_Training|LLM 训练内部机制]] — 对齐训练技术细节
 - [[../../概念/LLM/decoding-strategies|解码策略概念卡]] — 偏好优化对生成的影响
-- [[../../深度学习/Optimization/Optimization|优化方法]] — 损失函数与优化理论
-- [[../../模型评估/Human_Evaluation|人工评估]] — 偏好数据质量评估
+- [[../../03_深度学习/03_Optimization/Optimization|优化方法]] — 损失函数与优化理论
+- [[../../08_模型评估/Human_Evaluation|人工评估]] — 偏好数据质量评估
 
 ---
 

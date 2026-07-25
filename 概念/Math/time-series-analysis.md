@@ -136,9 +136,9 @@ Facebook 开发的可加模型：$y(t) = g(t) + s(t) + h(t) + \epsilon_t$
 
 - [[概念/Math/supervised-learning.md|supervised-learning]]
 - [[概念/Math/unsupervised-learning.md|unsupervised-learning]]
-- [[机器学习/Anomaly_Detection/Anomaly_Detection.md|Anomaly_Detection]]
-- [[机器学习/Anomaly_Detection/Anomaly_Detection_for_dummy.md|Anomaly_Detection_for_dummy]]
-- [[机器学习/AutoML/AutoML.md|AutoML]]
+- [[02_机器学习/08_Anomaly_Detection/Anomaly_Detection.md|Anomaly_Detection]]
+- [[02_机器学习/08_Anomaly_Detection/Anomaly_Detection_for_dummy.md|Anomaly_Detection_for_dummy]]
+- [[02_机器学习/11_AutoML/AutoML.md|AutoML]]
 
 ---
 
@@ -211,4 +211,4 @@ forecast = model.predict(future)
 - [[概念/Math/neural-networks|神经网络]] — 深度时序
 - [[概念/MLOps/monitoring|监控]] — 时序监控
 
-> ℹ️ 时序分析是金融/运维/IoT 的核心，Transformer 预训练模型是新趋势。
+> ℹ️ 时序分析是金融/13_运维/IoT 的核心，Transformer 预训练模型是新趋势。

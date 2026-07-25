@@ -261,4 +261,4 @@ Azure OpenAI 提供四层内容过滤：
 - [[概念/aws-bedrock]] — AWS Bedrock
 - [[概念/vertex-ai]] — Google Vertex AI
 - [[概念/cloud-ai-platform]] — 云 AI 平台
-- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析

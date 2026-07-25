@@ -23,13 +23,13 @@ sources: []
 
 | 文件 | 说明 |
 |------|------|
-| [[大模型/Reasoning_Models/o1_Class_Reasoning_Models|o1 推理模型]] | OpenAI o1 类推理模型技术解析 |
-| [[大模型/Reasoning_Models/Reasoning_Models_for_dummy|入门版]] | 零基础推理模型入门 |
-| [[大模型/Reasoning_Models/Test_Time_Compute_2026|测试时计算]] | Test-Time Compute 扩展 |
-| [[大模型/Reasoning_Models/Process_Reward_Models|过程奖励模型]] | PRM 推理过程优化 |
-| [[大模型/Reasoning_Models/DeepSeek_R1_Technical_Analysis|DeepSeek R1]] | DeepSeek R1 技术分析 |
-| [[大模型/Reasoning_Models/Neuro_Symbolic_and_Formal_Verification_2026|神经符号与形式验证]] | 神经符号推理方法 |
-| [[大模型/Reasoning_Models/README|README]] | 目录说明 |
+| [[05_大模型/09_Reasoning_Models/o1_Class_Reasoning_Models|o1 推理模型]] | OpenAI o1 类推理模型技术解析 |
+| [[05_大模型/09_Reasoning_Models/Reasoning_Models_for_dummy|入门版]] | 零基础推理模型入门 |
+| [[05_大模型/09_Reasoning_Models/Test_Time_Compute_2026|测试时计算]] | Test-Time Compute 扩展 |
+| [[05_大模型/09_Reasoning_Models/Process_Reward_Models|过程奖励模型]] | PRM 推理过程优化 |
+| [[05_大模型/09_Reasoning_Models/DeepSeek_R1_Technical_Analysis|DeepSeek R1]] | DeepSeek R1 技术分析 |
+| [[05_大模型/09_Reasoning_Models/Neuro_Symbolic_and_Formal_Verification_2026|神经符号与形式验证]] | 神经符号推理方法 |
+| [[05_大模型/09_Reasoning_Models/README|README]] | 目录说明 |
 
 ## 核心概念速查
 
@@ -71,9 +71,9 @@ sources: []
 
 ## Related
 
-- [[论文精读/Alignment/index|论文精读·对齐]]
-- [[论文精读/RL/index|论文精读·强化学习]]
-- [[大模型/index|大模型首页]]
+- [[20_论文精读/06_Alignment/index|论文精读·对齐]]
+- [[20_论文精读/07_RL/index|论文精读·强化学习]]
+- [[05_大模型/index|大模型首页]]
 - [[概念/reasoning-models|推理模型概念]]
 
 ## 统计

@@ -15,15 +15,15 @@ tags: [auto-index]
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[计算机视觉/Multimodal_Vision/Multimodal_Vision|Multimodal Vision]] | Multimodal vision knowledge system: CLIP, BLIP to GPT-4V | multimodal AI researchers / CV engineers |
-| [[计算机视觉/Multimodal_Vision/Multimodal_Vision_for_dummy|Multimodal Vision for dummy]] | Multimodal vision beginner guide: image-text alignment and visual understanding | beginners / multimodal AI learners |
-| [[计算机视觉/Multimodal_Vision/CLIP_Deep_Dive|CLIP Deep Dive]] | CLIP deep dive: contrastive learning and zero-shot transfer | researchers / senior CV engineers |
+| [[04_计算机视觉/08_Multimodal_Vision/Multimodal_Vision|Multimodal Vision]] | Multimodal vision knowledge system: CLIP, BLIP to GPT-4V | multimodal AI researchers / CV engineers |
+| [[04_计算机视觉/08_Multimodal_Vision/Multimodal_Vision_for_dummy|Multimodal Vision for dummy]] | Multimodal vision beginner guide: image-text alignment and visual understanding | beginners / multimodal AI learners |
+| [[04_计算机视觉/08_Multimodal_Vision/CLIP_Deep_Dive|CLIP Deep Dive]] | CLIP deep dive: contrastive learning and zero-shot transfer | researchers / senior CV engineers |
 
 ## Related
 
-- [[计算机视觉/index|计算机视觉首页]]
-- [[计算机视觉/Generative_Models/index|Generative Models]]
-- [[大模型/index|大模型]]
+- [[04_计算机视觉/index|计算机视觉首页]]
+- [[04_计算机视觉/06_Generative_Models/index|Generative Models]]
+- [[05_大模型/index|大模型]]
 
 ## 进阶知识拓展
 
@@ -61,9 +61,9 @@ tags: [auto-index]
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

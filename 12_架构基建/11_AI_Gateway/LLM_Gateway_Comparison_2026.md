@@ -86,14 +86,14 @@ response = completion(
 | 大型企业 | Kong AI Gateway (企业级管控) |
 | 已有 API 网关 | 在现有网关上加 LLM 插件 |
 
-> **关联**: -> [[架构基建/AI_Gateway/index|AI 网关]] | [[架构基建/AI_Gateway/LiteLLM_Deep_Dive|LiteLLM]] | [[架构基建/AI_Gateway/Portkey_Deep_Dive|Portkey]] | [[架构基建/AI_Gateway/Kong_AI_Gateway_Deep_Dive|Kong]]
+> **关联**: -> [[12_架构基建/11_AI_Gateway/index|AI 网关]] | [[12_架构基建/11_AI_Gateway/LiteLLM_Deep_Dive|LiteLLM]] | [[12_架构基建/11_AI_Gateway/Portkey_Deep_Dive|Portkey]] | [[12_架构基建/11_AI_Gateway/Kong_AI_Gateway_Deep_Dive|Kong]]
 
 
 ## 架构核心组件对比
 
 | 组件层 | 功能 | 关键技术 | 选型考量 |
 |--------|------|----------|----------|
-| 计算层 | 模型训练/推理 | GPU/TPU/NPU集群 | 算力需求+成本 |
+| 计算层 | 07_模型训练/推理 | GPU/TPU/NPU集群 | 算力需求+成本 |
 | 存储层 | 数据/模型/检查点 | 分布式存储/对象存储 | 容量+IOPS+成本 |
 | 网络层 | 节点间通信 | RDMA/RoCE/InfiniBand | 带宽+延迟 |
 | 调度层 | 资源编排 | K8s/Slurm/Ray | 弹性+效率 |

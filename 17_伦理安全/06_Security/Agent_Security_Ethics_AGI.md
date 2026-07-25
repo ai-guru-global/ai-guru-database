@@ -150,13 +150,13 @@ L1 输入验证 → L2 模型鲁棒性 → L3 应用护栏 → L4 执行隔离 �
 - [[LLM_Security_Complete_Guide]] — LLM 安全完整指南
 - [[Agent_RAG_Security]] — Agent/RAG 安全
 - [[Constitutional_AI_Deep_Dive]] — 宪法 AI 深入
-- [[伦理安全/Value_Alignment/Value_Alignment]] — 价值对齐深入
+- [[17_伦理安全/02_Value_Alignment/Value_Alignment]] — 价值对齐深入
 - [[AI_Red_Teaming_Guide]] — 红队测试指南
 - [[Agentic_AI_Complete_Guide]] — 智能体 AI 完整指南
 
 ## Related
 
-- [[伦理安全/README|08 AI 伦理、安全与对齐 (Ethics, Safety & Alignment)]]
+- [[17_伦理安全/README|08 AI 伦理、安全与对齐 (Ethics, Safety & Alignment)]]
 
 ## 核心知识体系
 

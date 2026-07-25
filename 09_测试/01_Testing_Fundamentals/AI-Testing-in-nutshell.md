@@ -839,16 +839,16 @@ flowchart TB
 
 ## 🔗 相关主题
 
-- [Prompt Engineering](大模型/Prompt_Engineering/Prompt-Engineering-in-nutshell.md) - 测试提示词效果
-- [RAG 系统](../../RAG系统/RAG_Fundamentals/RAG-in-nutshell.md) - RAG 评估方法
-- [AI 智能体](../../智能体/Agent_Foundations/Agent-in-nutshell.md) - Agent 测试策略
-- [AI 工作流](../../智能体/Agent_Workflow/Workflow-in-nutshell.md) - 测试流水线集成
+- [Prompt Engineering](05_大模型/08_Prompt_Engineering/Prompt-Engineering-in-nutshell.md) - 测试提示词效果
+- [RAG 系统](../../14_RAG系统/01_RAG_Fundamentals/RAG-in-nutshell.md) - RAG 评估方法
+- [AI 智能体](../../15_智能体/01_Agent_Foundations/Agent-in-nutshell.md) - Agent 测试策略
+- [AI 工作流](../../15_智能体/03_Agent_Workflow/Workflow-in-nutshell.md) - 测试流水线集成
 
 ## Related
 
-- [[测试/Testing_Fundamentals/AI_Testing_for_dummy]] — AI 测试 - 小白版 (共享: ai-testing, evaluation, prompt-testing, testing)
-- [[测试/Testing_Frameworks/Java_AI_Testing]] — Java AI 测试实践 (共享: ai-testing, evaluation, prompt-testing, testing)
-- [[测试/README]] — AI 测试与评估 (AI Testing) (共享: ai-testing, evaluation, prompt-testing, testing)
-- [[测试/Testing_Frameworks/Promptfoo_Deep_Dive.md|Promptfoo_Deep_Dive]]
-- [[测试/Testing_Frameworks/DeepEval_Deep_Dive.md|DeepEval_Deep_Dive]]
-- [[测试/Testing_Fundamentals/AI_Test_Framework_2026.md|AI_Test_Framework_2026]]
+- [[09_测试/01_Testing_Fundamentals/AI_Testing_for_dummy]] — AI 测试 - 小白版 (共享: ai-testing, evaluation, prompt-testing, testing)
+- [[09_测试/02_Testing_Frameworks/Java_AI_Testing]] — Java AI 测试实践 (共享: ai-testing, evaluation, prompt-testing, testing)
+- [[09_测试/README]] — AI 测试与评估 (AI Testing) (共享: ai-testing, evaluation, prompt-testing, testing)
+- [[09_测试/02_Testing_Frameworks/Promptfoo_Deep_Dive.md|Promptfoo_Deep_Dive]]
+- [[09_测试/02_Testing_Frameworks/DeepEval_Deep_Dive.md|DeepEval_Deep_Dive]]
+- [[09_测试/01_Testing_Fundamentals/AI_Test_Framework_2026.md|AI_Test_Framework_2026]]

@@ -8,8 +8,8 @@ relationships:
   - target: "概念/transformer-architecture"
     type: builds_on
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
-  - 部署推理/Caching/Speculative_Decoding_Advanced_2026.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
+  - 10_部署推理/06_Caching/Speculative_Decoding_Advanced_2026.md
 summary: Speculative Decoding 用小模型(draft)快速生成候选 token，大模型(target)一次前向传播并行验证，接受率 >85%，实现 2-3× 延迟降低且不改变输出分布。DeepSeek MTP 变体无需外部 draft model，用内置辅助头实现投机解码。
 provenance:
   extracted: 0.85
@@ -136,8 +136,8 @@ DeepSeek-V3 的 MTP 在训练时增加辅助预测头，推理时天然作为 dr
 - [[概念/LLM/medusa|Medusa]]
 - [[概念/LLM/mtp|Multi-Token Prediction]]
 - [[概念/Inference/kv-cache|KV Cache]]
-- [[部署推理/Caching/Speculative_Decoding_Advanced_2026|投机解码高级技术]]
-- [[大模型/Sequence_Models/Text_Generation_Decoding_Strategies|文本生成解码策略]]
+- [[10_部署推理/06_Caching/Speculative_Decoding_Advanced_2026|投机解码高级技术]]
+- [[05_大模型/02_Sequence_Models/Text_Generation_Decoding_Strategies|文本生成解码策略]]
 
 ## 2026 推测解码生态
 

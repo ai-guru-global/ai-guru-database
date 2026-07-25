@@ -10,7 +10,7 @@ relationships:
   - target: "概念/ragflow"
     type: related_to
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
 summary: "Flowise 是基于 LangChain.js 的可视化 LLM 应用构建工具——拖拽式界面 + Node.js 后端，零代码/低代码搭建 AI 工作流。开源、可自托管，是快速构建 LLM 应用原型的利器。"
 provenance:
   extracted: 0.15

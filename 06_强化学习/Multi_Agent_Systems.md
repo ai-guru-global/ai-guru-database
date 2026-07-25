@@ -331,9 +331,9 @@ LLM Agent 团队:
 
 ## 相关阅读
 
-- [[强化学习/RL_Foundations/RL_Foundations]] — 强化学习基础
-- [[强化学习/Deep_RL/Deep_RL]] — 深度强化学习
-- [[强化学习/Deep_RL/PPO_Deep_Dive]] — PPO 算法
-- [[智能体/Agent_Foundations/index]] — Agent 基础
-- [[智能体/Agent_Frameworks/README]] — Agent 框架
-- [[强化学习/Robotics_Embodied_AI/Embodied_AI_2026]] — 具身智能
+- [[06_强化学习/01_RL_Foundations/RL_Foundations]] — 强化学习基础
+- [[06_强化学习/02_Deep_RL/Deep_RL]] — 深度强化学习
+- [[06_强化学习/02_Deep_RL/PPO_Deep_Dive]] — PPO 算法
+- [[15_智能体/01_Agent_Foundations/index]] — Agent 基础
+- [[15_智能体/02_Agent_Frameworks/README]] — Agent 框架
+- [[06_强化学习/05_Robotics_Embodied_AI/Embodied_AI_2026]] — 具身智能

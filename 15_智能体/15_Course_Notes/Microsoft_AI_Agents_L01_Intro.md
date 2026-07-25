@@ -111,10 +111,10 @@ Agent 并非万能。课程指出三种最适合使用 Agent 的场景：
 ## 关联阅读
 
 - [[概念/ai-agents]] — AI 智能体核心概念
-- [[智能体/GenAI_L17_AI_Agents]] — Microsoft GenAI 课程中的 AI 代理
-- [[智能体/Agent_Frameworks/README]] — 主流 Agent 框架概览
-- [[智能体/Course_Notes/Microsoft_AI_Agents_L04_Tool_Use]] — 工具使用设计模式
-- [[智能体/Course_Notes/Microsoft_AI_Agents_L02_Frameworks]] — MAF 与 Azure AI Agent Service 框架选型
+- [[15_智能体/GenAI_L17_AI_Agents]] — Microsoft GenAI 课程中的 AI 代理
+- [[15_智能体/02_Agent_Frameworks/README]] — 主流 Agent 框架概览
+- [[15_智能体/15_Course_Notes/Microsoft_AI_Agents_L04_Tool_Use]] — 工具使用设计模式
+- [[15_智能体/15_Course_Notes/Microsoft_AI_Agents_L02_Frameworks]] — MAF 与 Azure AI Agent Service 框架选型
 
 ## 附录：核心概念速查
 

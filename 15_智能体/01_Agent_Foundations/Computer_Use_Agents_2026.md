@@ -780,15 +780,15 @@ Computer Use Agent 成本模型 (每100步操作):
 
 ## 7. 相关概念 (Related)
 
-- [[智能体/Agent_Foundations/Agent_Overview|AI Agent 全景概览]] — Computer Use是Agent的重要能力
-- [[智能体/Agent_Foundations/Voice_Agents_Deep_Dive_2026|语音智能体]] — 语音+GUI多模态Agent
-- [[智能体/Agent_Foundations/Agent_State_Management|Agent状态管理]] — 多步骤任务状态追踪
-- [[智能体/Agent_Foundations/MCP_Implementation_Guide|MCP实现指南]] — Agent工具调用协议
-- [[智能体/Agent_Workflow/Agentic_Workflow_Design_Patterns_2026|Agentic Workflow设计模式]] — 任务规划与分解
-- [[智能体/Course_Notes/Microsoft_AI_Agents_L15_Browser_Use|Browser Use]] — 浏览器级Agent
-- [[智能体/Agent_Foundations/Agent_Safety_Evaluation_for_dummy|Agent安全评估]] — 安全沙箱设计
-- [[智能体/Agent_Foundations/Agent_Production_Deployment_Runbook|Agent生产部署]] — 部署运维实践
-- [[计算机视觉/VLM|视觉语言模型]] — 屏幕理解基础
+- [[15_智能体/01_Agent_Foundations/Agent_Overview|AI Agent 全景概览]] — Computer Use是Agent的重要能力
+- [[15_智能体/01_Agent_Foundations/Voice_Agents_Deep_Dive_2026|语音智能体]] — 语音+GUI多模态Agent
+- [[15_智能体/01_Agent_Foundations/Agent_State_Management|Agent状态管理]] — 多步骤任务状态追踪
+- [[15_智能体/01_Agent_Foundations/MCP_Implementation_Guide|MCP实现指南]] — Agent工具调用协议
+- [[15_智能体/03_Agent_Workflow/Agentic_Workflow_Design_Patterns_2026|Agentic Workflow设计模式]] — 任务规划与分解
+- [[15_智能体/15_Course_Notes/Microsoft_AI_Agents_L15_Browser_Use|Browser Use]] — 浏览器级Agent
+- [[15_智能体/01_Agent_Foundations/Agent_Safety_Evaluation_for_dummy|Agent安全评估]] — 安全沙箱设计
+- [[15_智能体/01_Agent_Foundations/Agent_Production_Deployment_Runbook|Agent生产部署]] — 部署运维实践
+- [[04_计算机视觉/VLM|视觉语言模型]] — 屏幕理解基础
 - [[工具/Playwright|Playwright]] — Web自动化基础
 
 ---

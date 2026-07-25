@@ -11,9 +11,9 @@ relationships:
   - target: "概念/ai-agents"
     type: related_to
 sources:
-  - 强化学习/Deep_RL/Deep_RL.md
-  - 强化学习/Deep_RL/DQN_Deep_Dive.md
-  - 强化学习/Deep_RL/PPO_Deep_Dive.md
+  - 06_强化学习/02_Deep_RL/Deep_RL.md
+  - 06_强化学习/02_Deep_RL/DQN_Deep_Dive.md
+  - 06_强化学习/02_Deep_RL/PPO_Deep_Dive.md
 summary: 深度强化学习用神经网络近似值函数或策略，DQN开创先河，PPO成为工业标准，是rlhf和游戏AI的核心算法。
 provenance:
   extracted: 0.85
@@ -99,16 +99,16 @@ ChatGPT rlhf（PPO优化奖励模型）、AlphaGo（MCTS+Deep RL）、OpenAI Fiv
 
 ## 来源
 
-- 强化学习/Deep_RL/Deep_RL.md
-- 强化学习/Deep_RL/DQN_Deep_Dive.md
-- 强化学习/Deep_RL/PPO_Deep_Dive.md
+- 06_强化学习/02_Deep_RL/Deep_RL.md
+- 06_强化学习/02_Deep_RL/DQN_Deep_Dive.md
+- 06_强化学习/02_Deep_RL/PPO_Deep_Dive.md
 
 ## Related
 
-- [[论文精读/RL/DQN_Deep_Dive]] — DQN 深度解读 (Playing Atari with Deep Reinforcement Learning) (共享: deep-rl, dqn, rl)
-- [[强化学习/AI_Agents/AI_Agents_for_dummy]] — AI智能体 - 小白版 🤖 (共享: reinforcement-learning, rl)
-- [[强化学习/AI_Agents/Agent-in-nutshell]] — AI 智能体速成指南 (共享: reinforcement-learning, rl)
-- [[强化学习/AI_Agents/Agent_Future_Roadmap_2026_2030]] — Agent 未来发展路线图 2026-2030 (共享: reinforcement-learning, rl)
+- [[20_论文精读/07_RL/DQN_Deep_Dive]] — DQN 深度解读 (Playing Atari with Deep Reinforcement Learning) (共享: deep-rl, dqn, rl)
+- [[06_强化学习/AI_Agents/AI_Agents_for_dummy]] — AI智能体 - 小白版 🤖 (共享: reinforcement-learning, rl)
+- [[06_强化学习/AI_Agents/Agent-in-nutshell]] — AI 智能体速成指南 (共享: reinforcement-learning, rl)
+- [[06_强化学习/AI_Agents/Agent_Future_Roadmap_2026_2030]] — Agent 未来发展路线图 2026-2030 (共享: reinforcement-learning, rl)
 
 ---
 

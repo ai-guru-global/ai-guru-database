@@ -159,10 +159,10 @@ Prefill 产生的 KV Cache 可能非常大：
 
 - [[概念/prefill-decode]] — Prefill / Decode 阶段
 - [[概念/kv-cache]] — KV Cache 优化
-- [[部署推理/Inference_Performance/README|推理性能专题]]
-- [[部署推理/Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]]
-- [[部署推理/Inference_Engines/vLLM_Deep_Dive|vLLM Deep Dive]]
-- [[部署推理/Inference_Engines/SGLang_Deep_Dive|SGLang Deep Dive]]
+- [[10_部署推理/04_Inference_Performance/README|推理性能专题]]
+- [[10_部署推理/04_Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]]
+- [[10_部署推理/02_Inference_Engines/vLLM_Deep_Dive|vLLM Deep Dive]]
+- [[10_部署推理/02_Inference_Engines/SGLang_Deep_Dive|SGLang Deep Dive]]
 
 ## 核心知识体系
 

@@ -882,9 +882,9 @@ AI代码额外检查:
 
 ## 相关链接
 
-- [[编程/Methodology/Vibe_Coding_Methodology|Vibe Coding 方法论]] — 方法论基础
-- [[编程/Methodology/index|编程方法论索引]] — 方法论主题导览
-- [[编程/Practice/Vibe_Coding_Real_World_Cases|Vibe Coding 真实案例]] — 生产案例
-- [[编程/Security/AI_Code_Security_Audit_Runbook|AI 代码安全审计 Runbook]] — 生产安全实践
-- [[编程/Code_Review_AI_2026|AI 代码审查 2026]] — 生产代码审查
-- [[编程/Testing_with_AI_2026|AI 测试 2026]] — 生产测试实践
+- [[16_编程/03_Methodology/Vibe_Coding_Methodology|Vibe Coding 方法论]] — 方法论基础
+- [[16_编程/03_Methodology/index|编程方法论索引]] — 方法论主题导览
+- [[16_编程/04_Practice/Vibe_Coding_Real_World_Cases|Vibe Coding 真实案例]] — 生产案例
+- [[16_编程/09_Security/AI_Code_Security_Audit_Runbook|AI 代码安全审计 Runbook]] — 生产安全实践
+- [[16_编程/Code_Review_AI_2026|AI 代码审查 2026]] — 生产代码审查
+- [[16_编程/Testing_with_AI_2026|AI 测试 2026]] — 生产测试实践

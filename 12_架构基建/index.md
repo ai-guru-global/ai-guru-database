@@ -12,35 +12,35 @@ This page indexes the contents of `架构基建`.
 
 ## Subdirectories
 
-- [[架构基建/AI_Gateway/index|AI Gateway]]
-- [[架构基建/AI_Stack/index|AI Stack]]
-- [[架构基建/Architecture_Overview/index|Architecture Overview]]
-- [[架构基建/Cloud_Providers/index|Cloud Providers]]
-- [[架构基建/CNCF_Cloud_Native_AI/index|CNCF Cloud Native AI]]
-- [[架构基建/Hardware_Compute/index|Hardware Compute]]
-- [[架构基建/Networking/index|Networking]]
-- [[架构基建/Security/index|Security]]
-- [[架构基建/Storage/index|Storage]]
+- [[12_架构基建/11_AI_Gateway/index|AI Gateway]]
+- [[12_架构基建/03_AI_Stack/index|AI Stack]]
+- [[12_架构基建/02_Architecture_Overview/index|Architecture Overview]]
+- [[12_架构基建/06_Cloud_Providers/index|Cloud Providers]]
+- [[12_架构基建/05_CNCF_Cloud_Native_AI/index|CNCF Cloud Native AI]]
+- [[12_架构基建/07_Hardware_Compute/index|Hardware Compute]]
+- [[12_架构基建/08_Networking/index|Networking]]
+- [[12_架构基建/10_Security/index|Security]]
+- [[12_架构基建/09_Storage/index|Storage]]
 
 ## Files
 
-- [[架构基建/AI_SRE_Runbook|AI SRE Runbook]]
-- [[架构基建/AI_Stack_Deep_Dive|AI Stack Deep Dive]]
-- [[架构基建/Alibaba_Cloud_Proprietary_K8s_Context|Alibaba Cloud Proprietary K8s Context]]
-- [[架构基建/Architecture-in-nutshell|Architecture In Nutshell]]
-- [[架构基建/Architecture_Infrastructure_for_dummy|Architecture Infrastructure For Dummy]]
-- [[架构基建/Kubernetes_Core_Components_Deep_Dive|Kubernetes Core Components Deep Dive]]
-- [[架构基建/Kubernetes_Networking_Deep_Dive|Kubernetes Networking Deep Dive]]
-- [[架构基建/Kubernetes_Observability_Stack|Kubernetes Observability Stack]]
-- [[架构基建/Kubernetes_Storage_Deep_Dive|Kubernetes Storage Deep Dive]]
-- [[架构基建/README|README]]
-- [[架构基建/README_for_dummy|README For Dummy]]
+- [[12_架构基建/AI_SRE_Runbook|AI SRE Runbook]]
+- [[12_架构基建/AI_Stack_Deep_Dive|AI Stack Deep Dive]]
+- [[12_架构基建/Alibaba_Cloud_Proprietary_K8s_Context|Alibaba Cloud Proprietary K8s Context]]
+- [[12_架构基建/Architecture-in-nutshell|Architecture In Nutshell]]
+- [[12_架构基建/Architecture_Infrastructure_for_dummy|Architecture Infrastructure For Dummy]]
+- [[12_架构基建/Kubernetes_Core_Components_Deep_Dive|Kubernetes Core Components Deep Dive]]
+- [[12_架构基建/Kubernetes_Networking_Deep_Dive|Kubernetes Networking Deep Dive]]
+- [[12_架构基建/Kubernetes_Observability_Stack|Kubernetes Observability Stack]]
+- [[12_架构基建/Kubernetes_Storage_Deep_Dive|Kubernetes Storage Deep Dive]]
+- [[12_架构基建/README|README]]
+- [[12_架构基建/README_for_dummy|README For Dummy]]
 
 ## 架构核心组件对比
 
 | 组件层 | 功能 | 关键技术 | 选型考量 |
 |--------|------|----------|----------|
-| 计算层 | 模型训练/推理 | GPU/TPU/NPU集群 | 算力需求+成本 |
+| 计算层 | 07_模型训练/推理 | GPU/TPU/NPU集群 | 算力需求+成本 |
 | 存储层 | 数据/模型/检查点 | 分布式存储/对象存储 | 容量+IOPS+成本 |
 | 网络层 | 节点间通信 | RDMA/RoCE/InfiniBand | 带宽+延迟 |
 | 调度层 | 资源编排 | K8s/Slurm/Ray | 弹性+效率 |
@@ -188,14 +188,14 @@ This page indexes the contents of `架构基建`.
 
 | 关联主题 | 关系类型 | 参考路径 |
 |----------|----------|----------|
-| GPU与计算硬件 | 核心算力基础 | 架构基建/Hardware_Compute/ |
-| 网络与通信 | 集群互联支撑 | 架构基建/Networking/ |
-| 存储系统 | 数据持久化 | 架构基建/Storage/ |
-| 云服务商 | 基础设施供给 | 架构基建/Cloud_Providers/ |
-| AI网关 | 流量入口管理 | 架构基建/AI_Gateway/ |
-| 安全体系 | 全栈安全保障 | 架构基建/Security/ |
-| 云原生AI | 容器化编排 | 架构基建/CNCF_Cloud_Native_AI/ |
-| SRE实践 | 可靠性工程 | 架构基建/AI_SRE/ |
+| GPU与计算硬件 | 核心算力基础 | 12_架构基建/07_Hardware_Compute/ |
+| 网络与通信 | 集群互联支撑 | 12_架构基建/08_Networking/ |
+| 存储系统 | 数据持久化 | 12_架构基建/09_Storage/ |
+| 云服务商 | 基础设施供给 | 12_架构基建/06_Cloud_Providers/ |
+| AI网关 | 流量入口管理 | 12_架构基建/11_AI_Gateway/ |
+| 安全体系 | 全栈安全保障 | 12_架构基建/10_Security/ |
+| 云原生AI | 容器化编排 | 12_架构基建/05_CNCF_Cloud_Native_AI/ |
+| SRE实践 | 可靠性工程 | 12_架构基建/AI_SRE/ |
 
 ## 版本与更新记录
 

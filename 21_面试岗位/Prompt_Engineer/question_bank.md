@@ -14,7 +14,7 @@ sources: []
 > **难度标注**: ⭐ Basic | ⭐⭐ Intermediate | ⭐⭐⭐ Advanced
 > **频率标注**: 🔴 高频 | 🟡 中频 | 🟢 低频
 
-> 提示工程（Prompt Engineering）是大模型时代最关键的应用层技能之一。本题库围绕"如何用语言高效地驱动 LLM 产出可靠输出"展开，既考查对 in-context learning、CoT、ReAct 等机制的理解，也考查在 RAG、Agent、结构化输出等真实系统中的工程落地能力。相关背景见 [[大模型/Prompt_Engineering/index|提示工程]]。
+> 提示工程（Prompt Engineering）是大模型时代最关键的应用层技能之一。本题库围绕"如何用语言高效地驱动 LLM 产出可靠输出"展开，既考查对 in-context learning、CoT、ReAct 等机制的理解，也考查在 RAG、Agent、结构化输出等真实系统中的工程落地能力。相关背景见 [[05_大模型/08_Prompt_Engineering/index|提示工程]]。
 
 ---
 
@@ -65,7 +65,7 @@ sources: []
 | 27 | 多步推理 Prompt 中如何控制中间步骤的格式与可验证性？ | ⭐⭐⭐ | 🟡 |
 | 28 | 结构化输出（JSON / JSON Schema / 函数调用）如何稳定保证？常见失败模式有哪些？ | ⭐⭐ | 🔴 |
 | 29 | 约束生成（Constraint Generation）如何保证输出满足长度/格式/合规约束？ | ⭐⭐⭐ | 🟡 |
-| 30 | "Prompt 即软编程"——你如何看待把 Prompt 当作代码来管理（版本/测试/CI）？ | ⭐⭐ | 🟡 |
+| 30 | "Prompt 即软编程"——你如何看待把 Prompt 当作代码来管理（版本/09_测试/CI）？ | ⭐⭐ | 🟡 |
 
 ---
 
@@ -203,8 +203,8 @@ sources: []
 
 ## Related
 
-- [[面试岗位/Prompt_Engineer/Prompt_Engineer_2026|提示工程师2026]]
-- [[面试岗位/Interview_Guide/index|面试总指南]]
-- [[大模型/Prompt_Engineering/index|提示工程]]
-- [[智能体/index|智能体]]
-- [[RAG系统/index|RAG系统]]
+- [[21_面试岗位/Prompt_Engineer/Prompt_Engineer_2026|提示工程师2026]]
+- [[21_面试岗位/Interview_Guide/index|面试总指南]]
+- [[05_大模型/08_Prompt_Engineering/index|提示工程]]
+- [[15_智能体/index|智能体]]
+- [[14_RAG系统/index|RAG系统]]

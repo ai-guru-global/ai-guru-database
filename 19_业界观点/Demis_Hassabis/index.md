@@ -40,8 +40,8 @@ Demis Hassabis 是"科学导向 AGI 研究"的代表。他领导 DeepMind 开发
 
 | 文件 | 内容 | 适用人群 |
 |------|------|----------|
-| [[业界观点/Demis_Hassabis/about\|about]] | 完整人物简介：AlphaGo、AlphaFold、Gemini | 所有读者 |
-| [[业界观点/Demis_Hassabis/sayings\|sayings]] | 重要语录合集 | 研究者 |
+| [[19_业界观点/Demis_Hassabis/about\|about]] | 完整人物简介：AlphaGo、AlphaFold、Gemini | 所有读者 |
+| [[19_业界观点/Demis_Hassabis/sayings\|sayings]] | 重要语录合集 | 研究者 |
 
 ---
 
@@ -86,7 +86,7 @@ Demis Hassabis 是"科学导向 AGI 研究"的代表。他领导 DeepMind 开发
 | Agent | "Agent 需要世界模型和长期规划能力" | 多次 |
 | 科学 | 智能是通用工具，可攻克科学难题 | Nature |
 
-完整语录见 [[业界观点/Demis_Hassabis/sayings|Hassabis 语录]]。
+完整语录见 [[19_业界观点/Demis_Hassabis/sayings|Hassabis 语录]]。
 
 ---
 
@@ -98,7 +98,7 @@ Demis Hassabis 是"科学导向 AGI 研究"的代表。他领导 DeepMind 开发
 | 闭源负责任部署派 | 成员 |
 | 规模信仰派 | 成员（Gemini 也 Scaling）|
 
-Hassabis 的独特之处是**同时追求科学突破和商业部署**——AlphaFold 推动科学，Gemini 参与商业竞赛。他认同世界模型重要性（DeepMind 的 Genie/Dreamer 系列），是世界模型研究的另一支主力。参见 [[业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix|AGI 时间表矩阵]]、[[业界观点/Talks_Synthesis/Hinton_vs_LeCun_World_Model_Debate|Hinton vs LeCun 之争]]。
+Hassabis 的独特之处是**同时追求科学突破和商业部署**——AlphaFold 推动科学，Gemini 参与商业竞赛。他认同世界模型重要性（DeepMind 的 Genie/Dreamer 系列），是世界模型研究的另一支主力。参见 [[19_业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix|AGI 时间表矩阵]]、[[19_业界观点/Talks_Synthesis/Hinton_vs_LeCun_World_Model_Debate|Hinton vs LeCun 之争]]。
 
 ---
 
@@ -106,9 +106,9 @@ Hassabis 的独特之处是**同时追求科学突破和商业部署**——Alph
 
 | 关系 | 人物 |
 |------|------|
-| Google 同事 | [[业界观点/Sundar_Pichai/about|Sundar Pichai]] |
-| 闭源同盟 | [[业界观点/Dario_Amodei/about|Amodei]]、[[业界观点/Sam_Altman/about|Altman]] |
-| 世界模型呼应 | [[业界观点/Yann_LeCun/about|LeCun]] |
+| Google 同事 | [[19_业界观点/Sundar_Pichai/about|Sundar Pichai]] |
+| 闭源同盟 | [[19_业界观点/Dario_Amodei/about|Amodei]]、[[19_业界观点/Sam_Altman/about|Altman]] |
+| 世界模型呼应 | [[19_业界观点/Yann_LeCun/about|LeCun]] |
 | AI for Science 先驱 | 共获诺奖的 John Jumper |
 
 ---
@@ -117,10 +117,10 @@ Hassabis 的独特之处是**同时追求科学突破和商业部署**——Alph
 
 | 阶段 | 推荐内容 | 目标 |
 |------|----------|------|
-| 入门 | [[业界观点/Demis_Hassabis/about\|about]] | 了解 AlphaGo/AlphaFold |
-| 进阶 | [[业界观点/Demis_Hassabis/sayings\|sayings]] | 掌握 AGI 哲学 |
+| 入门 | [[19_业界观点/Demis_Hassabis/about\|about]] | 了解 AlphaGo/AlphaFold |
+| 进阶 | [[19_业界观点/Demis_Hassabis/sayings\|sayings]] | 掌握 AGI 哲学 |
 | 深入 | AlphaFold 论文 / Nature 访谈 | 科学突破 |
-| 对比 | [[业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix\|时间表]] | 路线定位 |
+| 对比 | [[19_业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix\|时间表]] | 路线定位 |
 
 ---
 
@@ -160,13 +160,13 @@ Hassabis 的独特之处是**同时追求科学突破和商业部署**——Alph
 
 ## 关联导航
 
-- [[业界观点/Demis_Hassabis/about\|人物简介]] · [[业界观点/Demis_Hassabis/sayings\|核心语录]]
-- [[业界观点/Sundar_Pichai/about\|Sundar Pichai]] · [[业界观点/Dario_Amodei/about\|Dario Amodei]]
-- [[业界观点/Yann_LeCun/about\|Yann LeCun]]（世界模型呼应）
-- [[业界观点/Talks_Synthesis/Hinton_vs_LeCun_World_Model_Debate\|Hinton vs LeCun]]
-- [[业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix\|AGI 时间表矩阵]]
-- [[业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix\|AI 安全立场矩阵]]
-- [[业界观点/index\|业界观点首页]]
+- [[19_业界观点/Demis_Hassabis/about\|人物简介]] · [[19_业界观点/Demis_Hassabis/sayings\|核心语录]]
+- [[19_业界观点/Sundar_Pichai/about\|Sundar Pichai]] · [[19_业界观点/Dario_Amodei/about\|Dario Amodei]]
+- [[19_业界观点/Yann_LeCun/about\|Yann LeCun]]（世界模型呼应）
+- [[19_业界观点/Talks_Synthesis/Hinton_vs_LeCun_World_Model_Debate\|Hinton vs LeCun]]
+- [[19_业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix\|AGI 时间表矩阵]]
+- [[19_业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix\|AI 安全立场矩阵]]
+- [[19_业界观点/index\|业界观点首页]]
 
 ---
 

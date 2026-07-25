@@ -257,13 +257,13 @@ Llama 开源战略对行业的深远影响：
 - **创新爆发**: 10万+ 微调模型覆盖各种垂直场景
 - **竞争压力**: 迫使闭源公司降低价格、提升服务
 - **全球标准**: Llama 成为事实上的开源AI标准
-- **中国影响**: 中国AI公司大量基于 Llama 微调（如 [[业界观点/Wang_Huiwen/about|王慧文]] 提到的"应用驱动"路径）
+- **中国影响**: 中国AI公司大量基于 Llama 微调（如 [[19_业界观点/Wang_Huiwen/about|王慧文]] 提到的"应用驱动"路径）
 
 ### 批评与争议
 
 开源战略也面临批评：
 
-- **安全担忧**: [[业界观点/Dario_Amodei/Amodei_2026_Update|Dario Amodei]] 等人认为前沿模型开源存在安全风险
+- **安全担忧**: [[19_业界观点/Dario_Amodei/Amodei_2026_Update|Dario Amodei]] 等人认为前沿模型开源存在安全风险
 - **搭便车问题**: 竞争对手利用开源模型获利但不贡献
 - **质量控制**: 微调模型的质量参差不齐
 - **地缘政治**: 开源模型可能被对手国家利用
@@ -461,18 +461,18 @@ AI 民主化也面临质疑：
 
 ## 交叉引用 (Cross-References)
 
-- [[业界观点/Mark_Zuckerberg/about]] -- Mark Zuckerberg 简介与核心贡献
-- [[业界观点/Mark_Zuckerberg/sayings]] -- Mark Zuckerberg 金句集
-- [[业界观点/Sam_Altman/about]] -- OpenAI CEO（共享: AI竞争、开源vs闭源）
-- [[业界观点/Dario_Amodei/Amodei_2026_Update]] -- Anthropic CEO（共享: 开源vs闭源辩论、AI安全）
-- [[业界观点/Demis_Hassabis/Hassabis_2026_Update]] -- DeepMind CEO（共享: 多模态AI、AGI）
-- [[业界观点/Jensen_Huang/GTC_2026_Keynote_Deep_Dive]] -- NVIDIA GTC 2026（共享: AI基础设施、GPU）
-- [[业界观点/Wang_Huiwen/about]] -- 王慧文（共享: AI产品化、开源生态）
-- [[业界观点/Yann_LeCun/about]] -- Yann LeCun（共享: Meta AI研究、开源AI）
-- [[业界观点/Elon_Musk/about]] -- Elon Musk（共享: AI硬件、AI竞争）
-- [[大模型/README]] -- 大语言模型技术
-- [[部署推理/README]] -- 模型部署与推理
-- [[入门/AI_Future_Trends]] -- AI未来趋势
+- [[19_业界观点/Mark_Zuckerberg/about]] -- Mark Zuckerberg 简介与核心贡献
+- [[19_业界观点/Mark_Zuckerberg/sayings]] -- Mark Zuckerberg 金句集
+- [[19_业界观点/Sam_Altman/about]] -- OpenAI CEO（共享: AI竞争、开源vs闭源）
+- [[19_业界观点/Dario_Amodei/Amodei_2026_Update]] -- Anthropic CEO（共享: 开源vs闭源辩论、AI安全）
+- [[19_业界观点/Demis_Hassabis/Hassabis_2026_Update]] -- DeepMind CEO（共享: 多模态AI、AGI）
+- [[19_业界观点/Jensen_Huang/GTC_2026_Keynote_Deep_Dive]] -- NVIDIA GTC 2026（共享: AI基础设施、GPU）
+- [[19_业界观点/Wang_Huiwen/about]] -- 王慧文（共享: AI产品化、开源生态）
+- [[19_业界观点/Yann_LeCun/about]] -- Yann LeCun（共享: Meta AI研究、开源AI）
+- [[19_业界观点/Elon_Musk/about]] -- Elon Musk（共享: AI硬件、AI竞争）
+- [[05_大模型/README]] -- 大语言模型技术
+- [[10_部署推理/README]] -- 模型部署与推理
+- [[00_入门/AI_Future_Trends]] -- AI未来趋势
 
 ---
 
@@ -553,13 +553,13 @@ Zuckerberg 的表态：
 
 ## Related
 
-- [[业界观点/Mark_Zuckerberg/about]] -- Mark Zuckerberg 简介 (本页扩展)
-- [[业界观点/Mark_Zuckerberg/sayings]] -- Mark Zuckerberg 金句集
-- [[业界观点/Sam_Altman/about]] -- Sam Altman 简介 (共享: AI competition, open vs closed)
-- [[业界观点/Dario_Amodei/about]] -- Dario Amodei 简介 (共享: open-source debate, AI safety)
-- [[业界观点/Demis_Hassabis/about]] -- Demis Hassabis 简介 (共享: multimodal AI, AGI)
-- [[业界观点/Jensen_Huang/about]] -- Jensen Huang 简介 (共享: AI infrastructure, GPU)
-- [[业界观点/Wang_Huiwen/about]] -- 王慧文简介 (共享: AI产品化, 开源生态)
-- [[业界观点/Yann_LeCun/about]] -- Yann LeCun 简介 (共享: Meta AI research, open-source)
-- [[业界观点/Elon_Musk/about]] -- Elon Musk 简介 (共享: AI hardware, competition)
-- [[业界观点/Andrej_Karpathy/about]] -- Andrej Karpathy 简介 (共享: AI技术趋势)
+- [[19_业界观点/Mark_Zuckerberg/about]] -- Mark Zuckerberg 简介 (本页扩展)
+- [[19_业界观点/Mark_Zuckerberg/sayings]] -- Mark Zuckerberg 金句集
+- [[19_业界观点/Sam_Altman/about]] -- Sam Altman 简介 (共享: AI competition, open vs closed)
+- [[19_业界观点/Dario_Amodei/about]] -- Dario Amodei 简介 (共享: open-source debate, AI safety)
+- [[19_业界观点/Demis_Hassabis/about]] -- Demis Hassabis 简介 (共享: multimodal AI, AGI)
+- [[19_业界观点/Jensen_Huang/about]] -- Jensen Huang 简介 (共享: AI infrastructure, GPU)
+- [[19_业界观点/Wang_Huiwen/about]] -- 王慧文简介 (共享: AI产品化, 开源生态)
+- [[19_业界观点/Yann_LeCun/about]] -- Yann LeCun 简介 (共享: Meta AI research, open-source)
+- [[19_业界观点/Elon_Musk/about]] -- Elon Musk 简介 (共享: AI hardware, competition)
+- [[19_业界观点/Andrej_Karpathy/about]] -- Andrej Karpathy 简介 (共享: AI技术趋势)

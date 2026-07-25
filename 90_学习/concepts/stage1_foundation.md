@@ -43,7 +43,7 @@ sources:
 |------|---|
 | 包含核心概念 | 10 个 |
 | 预计学习时间 | 5-8 小时 |
-| 前置依赖 | [[学习/concepts/stage0_awakening|Stage 0: AI 觉醒]] |
+| 前置依赖 | [[90_学习/concepts/stage0_awakening|Stage 0: AI 觉醒]] |
 | 适合人群 | 准备进入技术细节的学习者 |
 
 ---
@@ -294,10 +294,10 @@ graph TD
 
 | 类型 | 资源 | 说明 |
 |------|------|------|
-| 书籍 | [[学习/References/books/hands-on-ml-geron\|Hands-On ML]] Ch 1-4 | ML 全景、端到端项目、分类、训练 |
-| 书籍 | [[学习/References/books/why-machines-learn\|Why Machines Learn]] | 数学科普直觉 |
+| 书籍 | [[90_学习/References/books/hands-on-ml-geron\|Hands-On ML]] Ch 1-4 | ML 全景、端到端项目、分类、训练 |
+| 书籍 | [[90_学习/References/books/why-machines-learn\|Why Machines Learn]] | 数学科普直觉 |
 | 课程 | [Google ML Crash Course](https://developers.google.com/machine-learning/crash-course) | 免费速成 |
-| 课程 | [[学习/Courses/microsoft/microsoft_ai_for_beginners\|Microsoft AI for Beginners]] | 免费 12 周 |
+| 课程 | [[90_学习/Courses/microsoft/microsoft_ai_for_beginners\|Microsoft AI for Beginners]] | 免费 12 周 |
 | 实战 | Kaggle 入门竞赛 | 动手练习 |
 
 ## 学完本层的标志
@@ -313,28 +313,28 @@ graph TD
 ## 下一步
 
 完成 Stage 1 后：
-- **进入技术核心** → [[学习/concepts/stage2_core_tech|Stage 2: 核心技术]]
-- **补充数学基础** → [[数学基础/README_for_dummy|数学基础]]（线性代数、概率统计）
-- **回看全景** → [[学习/concepts/index|概念分阶索引]]
+- **进入技术核心** → [[90_学习/concepts/stage2_core_tech|Stage 2: 核心技术]]
+- **补充数学基础** → [[01_数学基础/README_for_dummy|数学基础]]（线性代数、概率统计）
+- **回看全景** → [[90_学习/concepts/index|概念分阶索引]]
 
 ## Related
 
-- [[学习/concepts/index|概念分阶索引]]
-- [[学习/concepts/stage0_awakening|Stage 0: 觉醒]]
-- [[学习/concepts/stage2_core_tech|Stage 2: 核心技术]]
-- [[学习/pathways/index|学习路径]]
-- [[机器学习/]] — ML 知识章节
-- [[数学基础/]] — 数学基础章节
-- [[模型评估/]] — 评估指标详解
-- [[深度学习/Optimization/Optimization_for_dummy|优化入门]]
+- [[90_学习/concepts/index|概念分阶索引]]
+- [[90_学习/concepts/stage0_awakening|Stage 0: 觉醒]]
+- [[90_学习/concepts/stage2_core_tech|Stage 2: 核心技术]]
+- [[90_学习/pathways/index|学习路径]]
+- [[02_机器学习/]] — ML 知识章节
+- [[01_数学基础/]] — 数学基础章节
+- [[08_模型评估/]] — 评估指标详解
+- [[03_深度学习/03_Optimization/Optimization_for_dummy|优化入门]]
 
-> **关联**: → [[学习/concepts/index|概念分阶]] | [[学习/concepts/stage2_core_tech|Stage 2 核心技术]] | [[机器学习/]] | [[数学基础/]] | [[模型评估/]]
+> **关联**: → [[90_学习/concepts/index|概念分阶]] | [[90_学习/concepts/stage2_core_tech|Stage 2 核心技术]] | [[02_机器学习/]] | [[01_数学基础/]] | [[08_模型评估/]]
 
 ## 相关链接
 
-- [[学习/concepts/index|学习概念索引]] — 学习阶段主题导览
-- [[学习/concepts/stage0_awakening|Stage 0: AI 觉醒]] — 前置阶段
-- [[学习/concepts/stage2_core_tech|Stage 2: 核心技术]] — 下一阶段
+- [[90_学习/concepts/index|学习概念索引]] — 学习阶段主题导览
+- [[90_学习/concepts/stage0_awakening|Stage 0: AI 觉醒]] — 前置阶段
+- [[90_学习/concepts/stage2_core_tech|Stage 2: 核心技术]] — 下一阶段
 - [[概念/General/ai-fundamentals|AI 基础]] — 基础概念卡片
-- [[学习/index|学习首页]] — 学习路径总览
-- [[学习/pathways/absolute-beginner|零基础学习路径]] — 对应的路径规划
+- [[90_学习/index|学习首页]] — 学习路径总览
+- [[90_学习/pathways/absolute-beginner|零基础学习路径]] — 对应的路径规划

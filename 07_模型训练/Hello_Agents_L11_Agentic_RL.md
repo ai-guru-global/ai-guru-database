@@ -125,11 +125,11 @@ Agentic RL 旨在赋予 LLM Agent 以下能力 ^[extracted]：
 
 ## 6. 关联阅读
 
-- [[模型训练/Alignment/GRPO_and_New_Alignment_Methods]] — GRPO 与新对齐方法
-- [[模型训练/Alignment/TRL_RLHF_DPO_Guide]] — TRL RLHF/DPO 实战
-- [[强化学习/RL_Fundamentals]] — 强化学习基础
-- [[强化学习/Deep_RL/README]] — 深度强化学习
-- [[智能体/Hello_Agents_L04_ReAct]] — ReAct 多步推理范式
+- [[07_模型训练/06_Alignment/GRPO_and_New_Alignment_Methods]] — GRPO 与新对齐方法
+- [[07_模型训练/06_Alignment/TRL_RLHF_DPO_Guide]] — TRL RLHF/DPO 实战
+- [[06_强化学习/RL_Fundamentals]] — 强化学习基础
+- [[06_强化学习/02_Deep_RL/README]] — 深度强化学习
+- [[15_智能体/Hello_Agents_L04_ReAct]] — ReAct 多步推理范式
 
 ## 进阶知识拓展
 
@@ -167,9 +167,9 @@ Agentic RL 旨在赋予 LLM Agent 以下能力 ^[extracted]：
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

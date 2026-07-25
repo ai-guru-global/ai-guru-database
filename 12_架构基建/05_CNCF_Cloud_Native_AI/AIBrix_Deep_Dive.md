@@ -17,7 +17,7 @@ sources: []
 
 > **一句话理解**: AIBrix 不是又一个推理平台，而是一组「即插即用」的 GenAI 推理基础设施组件——智能路由、前缀缓存、GPU 弹性、Token 级监控，专为在 vLLM/SGLang 之上加'运营能力'而设计。
 
-> 📐 **概念方法论**: 理解 AIBrix 要先理解它「不做」什么——它不替代推理引擎，而是把生产化运营所需的「路由 / 缓存 / 弹性 / 观测」做成可拆分的乐高块。这与 [[部署推理/Inference_Engines/vLLM_Deep_Dive]] 的「引擎层」和 [[CNCF_Cloud_Native_AI/KServe_Deep_Dive]] 的「平台层」形成互补的三层关系：引擎负责算，平台负责托管，AIBrix 负责把多个引擎实例「编排」成高性价比的服务。
+> 📐 **概念方法论**: 理解 AIBrix 要先理解它「不做」什么——它不替代推理引擎，而是把生产化运营所需的「路由 / 缓存 / 弹性 / 观测」做成可拆分的乐高块。这与 [[10_部署推理/02_Inference_Engines/vLLM_Deep_Dive]] 的「引擎层」和 [[CNCF_Cloud_Native_AI/KServe_Deep_Dive]] 的「平台层」形成互补的三层关系：引擎负责算，平台负责托管，AIBrix 负责把多个引擎实例「编排」成高性价比的服务。
 
 ---
 
@@ -381,7 +381,7 @@ kubectl --namespace aibrix-system logs -l app=aibrix-gateway \
 | `prefix-aware` | RAG/多轮/固定 system prompt | 按前缀 hash 选 Pod，最大化缓存命中 |
 | `least-connections` | 通用兜底 | 选当前活跃连接最少的 Pod |
 | `round-robin` | 均匀、无状态流量 | 轮询，最简单 |
-| `random` | 测试/压测 | 随机，用于建立基线 |
+| `random` | 09_测试/压测 | 随机，用于建立基线 |
 | `token-aware` | 输入长度差异大 | 按预估 token 负载均衡，避免长 prompt 堆积 |
 
 ### 6.3 弹性伸缩阈值
@@ -683,5 +683,5 @@ A: AIBrix 的隔离粒度在 InferencePool 层——每个模型/租户建议声
 - [[CNCF_Cloud_Native_AI/README]] — CNCF 云原生 LLM 项目全景，AIBrix 在「推理服务层」
 - [[CNCF_Cloud_Native_AI/KServe_Deep_Dive]] — 端到端推理平台，与 AIBrix 互补
 - [[CNCF_Cloud_Native_AI/llm-d_Deep_Dive]] — 分布式推理引擎层，另一种推理运营思路
-- [[部署推理/Inference_Engines/vLLM_Deep_Dive]] — AIBrix 的「地基」推理引擎
-- [[架构基建/AI_Gateway/LiteLLM_Deep_Dive]] — 多厂商 API 代理，对比理解 AIBrix Gateway 的定位
+- [[10_部署推理/02_Inference_Engines/vLLM_Deep_Dive]] — AIBrix 的「地基」推理引擎
+- [[12_架构基建/11_AI_Gateway/LiteLLM_Deep_Dive]] — 多厂商 API 代理，对比理解 AIBrix Gateway 的定位

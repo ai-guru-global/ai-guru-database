@@ -10,7 +10,7 @@ relationships:
   - target: "概念/crewai-tools"
     type: related_to
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
 summary: "HuggingFace 开源的轻量级 Agent 框架，核心创新是 CodeAgent（用代码代替 JSON 调用工具），代码量仅 ~1000 行，支持多 Agent 编排。"
 provenance:
   extracted: 0.55

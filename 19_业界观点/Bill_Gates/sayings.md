@@ -97,12 +97,12 @@ sources: []
 
 ## Related
 
-- [[业界观点/Andrej_Karpathy/about]] — Andrej Karpathy 简介 (Andrej Karpathy) (共享: insights, leaders, speeches, talks)
-- [[业界观点/Andrew_Ng/about]] — Andrew Ng 简介 (Andrew Ng) (共享: insights, leaders, speeches, talks)
-- [[业界观点/Andrew_Ng/sayings]] — Andrew Ng 关于 AI 的观点与格言 (共享: insights, leaders, speeches, talks)
-- [[业界观点/Bill_Gates/about]] — Bill Gates 简介 (Bill Gates) (共享: insights, leaders, speeches, talks)
+- [[19_业界观点/Andrej_Karpathy/about]] — Andrej Karpathy 简介 (Andrej Karpathy) (共享: insights, leaders, speeches, talks)
+- [[19_业界观点/Andrew_Ng/about]] — Andrew Ng 简介 (Andrew Ng) (共享: insights, leaders, speeches, talks)
+- [[19_业界观点/Andrew_Ng/sayings]] — Andrew Ng 关于 AI 的观点与格言 (共享: insights, leaders, speeches, talks)
+- [[19_业界观点/Bill_Gates/about]] — Bill Gates 简介 (Bill Gates) (共享: insights, leaders, speeches, talks)
 
-- [[业界观点/README|AI 名人演讲与观点 (Talks)]]
+- [[19_业界观点/README|AI 名人演讲与观点 (Talks)]]
 
 ## 观点影响力评估
 
@@ -165,7 +165,7 @@ sources: []
 | 安全伦理 | 对齐/监管/风险 | #安全 |
 | 商业洞察 | 市场/竞争/战略 | #商业 |
 | 社会影响 | 就业/教育/公平 | #社会 |
-| 个人成长 | 学习/思维/习惯 | #成长 |
+| 个人成长 | 90_学习/思维/习惯 | #成长 |
 
 ## 附录：引用指南
 

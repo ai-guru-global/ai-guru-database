@@ -12,9 +12,9 @@ relationships:
   - target: "概念/continuous-batching"
     type: uses
 sources:
-  - 部署推理/Inference_Engines/TensorRT_LLM_Deep_Dive.md
-  - 部署推理/Inference_Engines/LLM_Inference_Engine_Selection_Guide.md
-  - 架构基建/AI_Stack_Inference_Serving_Guide.md
+  - 10_部署推理/02_Inference_Engines/TensorRT_LLM_Deep_Dive.md
+  - 10_部署推理/02_Inference_Engines/LLM_Inference_Engine_Selection_Guide.md
+  - 12_架构基建/AI_Stack_Inference_Serving_Guide.md
 summary: "TensorRT-LLM 是 NVIDIA 推出的 LLM 推理优化引擎。它把模型编译成高度优化的 GPU 执行图，支持 FP8/INT8 量化、Continuous Batching、PagedAttention、多 GPU 并行，是 NVIDIA GPU 上追求极致性能的首选。"
 provenance:
   extracted: 0.8
@@ -180,8 +180,8 @@ spec:
 - [[概念/Inference/quantization|量化]]
 - [[概念/Inference/continuous-batching|Continuous Batching]]
 - [[概念/Inference/sglang|SGLang]]
-- [[部署推理/Inference_Engines/TensorRT_LLM_Deep_Dive|TensorRT-LLM 深度解析]]
-- [[部署推理/Inference_Engines/LLM_Inference_Engine_Selection_Guide|推理引擎选型指南]]
+- [[10_部署推理/02_Inference_Engines/TensorRT_LLM_Deep_Dive|TensorRT-LLM 深度解析]]
+- [[10_部署推理/02_Inference_Engines/LLM_Inference_Engine_Selection_Guide|推理引擎选型指南]]
 
 ## TensorRT-LLM vs vLLM vs SGLang
 

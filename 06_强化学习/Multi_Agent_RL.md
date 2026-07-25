@@ -295,5 +295,5 @@ class IntersectionMARL:
 
 - [[RL_Foundations]]: Single-agent RL fundamentals
 - [[RLHF_DPO_GRPO_Deep_Dive]]: RL for LLM alignment
-- [[强化学习/Robotics_Embodied_AI/Embodied_AI_2026]]: Multi-robot systems
-- [[智能体/Agent_Frameworks/README]]: Multi-agent AI frameworks
+- [[06_强化学习/05_Robotics_Embodied_AI/Embodied_AI_2026]]: Multi-robot systems
+- [[15_智能体/02_Agent_Frameworks/README]]: Multi-agent AI frameworks

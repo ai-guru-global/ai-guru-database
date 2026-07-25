@@ -11,7 +11,7 @@ relationships:
   - target: "[[概念/Vision/image-segmentation]]"
     type: related_to
 sources:
-  - 计算机视觉/Optical_Flow_and_Video.md
+  - 04_计算机视觉/Optical_Flow_and_Video.md
 summary: 光流是连续视频帧之间每个像素的运动向量场，描述场景中的运动模式。从 Horn-Schunck 经典方法到 RAFT 端到端学习，光流是视频理解、动作识别和视频压缩的基础技术。
 provenance:
   extracted: 0.78
@@ -237,7 +237,7 @@ Two-Stream Network:
 
 ## 来源
 
-- 计算机视觉/Optical_Flow_and_Video.md
+- 04_计算机视觉/Optical_Flow_and_Video.md
 - Horn & Schunck, "Determining optical flow", Artificial Intelligence 1981
 - Teed & Deng, "RAFT: Recurrent All-Pairs Field Transforms for Optical Flow", ECCV 2020
 - Xu et al., "GMFlow: Learning Optical Flow via Global Matching", CVPR 2022

@@ -68,10 +68,10 @@ aliases:
 
 ## Related
 
-- [[模型运维/Observability/Prometheus_Grafana_Deep_Dive]] — Prometheus + Grafana 深度解析
+- [[11_模型运维/08_Observability/Prometheus_Grafana_Deep_Dive]] — Prometheus + Grafana 深度解析
 - [[概念/prometheus]] — Prometheus 监控系统
 - [[概念/observability]] — 可观测性
-- [[运维/AI_Observability_Guide_2026]] — AI 可观测指南 2026
+- [[13_运维/AI_Observability_Guide_2026]] — AI 可观测指南 2026
 
 ---
 

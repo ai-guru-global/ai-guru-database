@@ -13,7 +13,7 @@ sources: []
 
 > **评估日期**: 2026-06-15
 > **基线对照**: [[_project-evaluation|2026-06-03 评估]] (492 文档 / 683 万字)
-> **评估范围**: 核心知识库（排除 `原始/`、`归档/`、`可视化/`、`前端应用/node_modules/`、`.venv/`）
+> **评估范围**: 核心知识库（排除 `原始/`、`归档/`、`94_可视化/`、`前端应用/node_modules/`、`.venv/`）
 
 ---
 
@@ -96,7 +96,7 @@ sources: []
 | 00–09 (核心) | ✅ 全 | ✅ 全 | ✅ 全 | ✅ |
 | 10_MLOps | ✅ | ✅ | ✅ | ⚠️ 偏少 |
 | 11–20 (工程) | ✅ 全 | ✅ 全 | 7/10 | ✅ |
-| 业界观点/论文精读/23_Interviews | ✅ 全 | ✅ 全 | ❌ 全缺 | — (按体裁合理) |
+| 19_业界观点/20_论文精读/23_Interviews | ✅ 全 | ✅ 全 | ❌ 全缺 | — (按体裁合理) |
 | 90_Learn/治理/notes | ✅ | ✅ | ❌ | — |
 | 治理/plan/93_Templates/94_Visualization | ✅ 全 | ✅ 全 | ❌ | — |
 
@@ -165,7 +165,7 @@ sources: []
 |---|------|------|---------|------|
 | 4 | 给 778 个未分级页面批量补 `tier:`（先按目录启发式） | 全库 | 4h | 高 |
 | 5 | 扩充 `MLOps`：新增 4 篇核心长文 | 10 | 8h | 高 |
-| 6 | 把 `智能体/src|tests|config` 迁出到独立 `智能体/_code/` 或外移 | 13 | 1h | 中 |
+| 6 | 把 `15_智能体/src|tests|config` 迁出到独立 `15_智能体/_code/` 或外移 | 13 | 1h | 中 |
 | 7 | 选 10 篇 `治理/` 扩写到 >1000 词，加入跨域结论 | synthesis | 6h | 中 |
 | 8 | 清理 `原始/` 中已 promote 的源文件（对照 manifest） | `原始/` | 2h | 中 |
 
@@ -174,7 +174,7 @@ sources: []
 | # | 动作 | 章节 | 预计工时 | 影响 |
 |---|------|------|---------|------|
 | 9 | 给 `参考/` 选 5-10 篇做 annotated bibliography | references | 4h | 中 |
-| 10 | 业界观点/22_Papers 每篇补"核心洞察 100 词"段 | 21/22 | 4h | 低 |
+| 10 | 19_业界观点/22_Papers 每篇补"核心洞察 100 词"段 | 21/22 | 4h | 低 |
 | 11 | 给 11 个缺 in-nutshell 的应用/资源章节补 1 页速览 | 20/21/22/23 | 4h | 低 |
 | 12 | 建立 `工具/count_words.py` CI hook 自动更新 README badge | CI | 2h | 中 |
 
@@ -211,15 +211,15 @@ sources: []
 | 文件 | 字数 |
 |------|------|
 | 治理/notes/AI_Concept_Knowledge_Graph.md | 7,918 |
-| 部署推理/Quantization/Quantization_Techniques_2026.md | 6,859 |
-| 模型训练/Data/Tokenizer_Design_2026.md | 6,769 |
-| 大模型/Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive.md | 6,761 |
-| 模型训练/Data/Data_Curation_and_Mixture_2026.md | 6,695 |
-| 大模型/Global_LLM_Ecosystem/OpenAI_Deep_Dive.md | 6,694 |
-| 数学基础/AI_Hardware/NVIDIA_AMD_GPU_Deep_Dive.md | 6,612 |
+| 10_部署推理/05_Quantization/Quantization_Techniques_2026.md | 6,859 |
+| 07_模型训练/02_Data/Tokenizer_Design_2026.md | 6,769 |
+| 05_大模型/15_Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive.md | 6,761 |
+| 07_模型训练/02_Data/Data_Curation_and_Mixture_2026.md | 6,695 |
+| 05_大模型/14_Global_LLM_Ecosystem/OpenAI_Deep_Dive.md | 6,694 |
+| 01_数学基础/10_AI_Hardware/NVIDIA_AMD_GPU_Deep_Dive.md | 6,612 |
 | 治理/notes/AI_Full_Stack_Concepts.md | 6,514 |
-| 模型训练/Alignment/GRPO_and_New_Alignment_Methods.md | 5,895 |
-| 大模型/Global_LLM_Ecosystem/Anthropic_Claude_Deep_Dive.md | 5,824 |
+| 07_模型训练/06_Alignment/GRPO_and_New_Alignment_Methods.md | 5,895 |
+| 05_大模型/14_Global_LLM_Ecosystem/Anthropic_Claude_Deep_Dive.md | 5,824 |
 
 ---
 

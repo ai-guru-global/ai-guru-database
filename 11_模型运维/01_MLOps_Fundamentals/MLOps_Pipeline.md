@@ -712,21 +712,21 @@ METRICS = {
 | **观测** | LangSmith, Langfuse | Agent 追踪、成本监控 |
 | **网关** | Portkey, Kong AI | 统一入口、治理 |
 
-**参考**: [AI Infrastructure 2026](../架构基建/Architecture_Overview/AI_Infrastructure_2026)
+**参考**: [AI Infrastructure 2026](../12_架构基建/02_Architecture_Overview/AI_Infrastructure_2026)
 
 ---
 
 ## 8. 与其他主题的关联 (Connections)
 
 ### 前置知识
-- [监督学习](机器学习/Supervised_Learning/Supervised_Learning.md) — 理解模型训练流程
-- [特征工程](机器学习/Feature_Engineering/Feature_Engineering.md) — Feature Store 的基础
-- [分布式系统](数学基础/Distributed_Systems/Distributed_Systems.md) — 分布式训练基础设施
+- [监督学习](02_机器学习/02_Supervised_Learning/Supervised_Learning.md) — 理解模型训练流程
+- [特征工程](02_机器学习/05_Feature_Engineering/Feature_Engineering.md) — Feature Store 的基础
+- [分布式系统](01_数学基础/09_Distributed_Systems/Distributed_Systems.md) — 分布式训练基础设施
 
 ### 进阶方向
-- [模型部署与推理](部署推理/Deployment_Fundamentals/Deployment_Inference.md) — MLOps 的推理服务层
-- [模型评估](模型评估/Evaluation_Fundamentals/Model_Evaluation.md) — Pipeline 中的评估环节
-- [RAG 系统](RAG系统/RAG_Fundamentals/RAG_Systems.md) — LLMOps 中 RAG Pipeline 的管理
+- [模型部署与推理](10_部署推理/01_Deployment_Fundamentals/Deployment_Inference.md) — MLOps 的推理服务层
+- [模型评估](08_模型评估/01_Evaluation_Fundamentals/Model_Evaluation.md) — Pipeline 中的评估环节
+- [RAG 系统](14_RAG系统/01_RAG_Fundamentals/RAG_Systems.md) — LLMOps 中 RAG Pipeline 的管理
 
 ---
 
@@ -773,6 +773,6 @@ METRICS = {
 
 ## Related
 
-- [[模型运维/Orchestration/Data_Pipeline_Orchestration.md|Data_Pipeline_Orchestration]]
-- [[模型运维/MLOps_Fundamentals/MLOps-in-nutshell.md|MLOps-in-nutshell]]
+- [[11_模型运维/05_Orchestration/Data_Pipeline_Orchestration.md|Data_Pipeline_Orchestration]]
+- [[11_模型运维/01_MLOps_Fundamentals/MLOps-in-nutshell.md|MLOps-in-nutshell]]
 - [[概念/MLOps/mlops.md|mlops]]

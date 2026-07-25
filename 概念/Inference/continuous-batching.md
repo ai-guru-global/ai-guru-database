@@ -14,8 +14,8 @@ relationships:
   - target: "概念/tensorrt-llm"
     type: used_by
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
-  - 部署推理/Inference_Engines/vLLM_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
+  - 10_部署推理/02_Inference_Engines/vLLM_Deep_Dive.md
 summary: Continuous Batching（连续批处理）由 Orca (OSDI'22) 提出，在迭代级别动态调度请求——新请求插入正在运行的 batch，已完成请求立即释放资源。相比静态 batching 吞吐提升 2-4×，是 2026 年高吞吐推理的标配技术。
 provenance:
   extracted: 0.9
@@ -140,7 +140,7 @@ llm = LLM(
 - [[概念/Inference/model-serving|模型服务]]
 - [[概念/Inference/sglang|SGLang]]
 - [[概念/Inference/tensorrt-llm|TensorRT-LLM]]
-- [[部署推理/Inference_Engines/vLLM_Deep_Dive|vLLM 深度解析]]
+- [[10_部署推理/02_Inference_Engines/vLLM_Deep_Dive|vLLM 深度解析]]
 
 ## Continuous Batching vs Static Batching
 

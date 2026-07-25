@@ -60,7 +60,7 @@ aliases:
 在知识库的书籍谱系中：
 - 上承 [[nlp-with-transformers]]（高层抽象的 Transformer 应用）
 - 平行 [[hands-on-llms-alammar]]（图解式 LLM 教程，互补）
-- 是 [[大模型/LLM_Fundamentals]] 的**深度实践配套**
+- 是 [[05_大模型/LLM_Fundamentals]] 的**深度实践配套**
 
 ## 核心内容
 
@@ -147,7 +147,7 @@ gelu(x) = 0.5 * x * (1 + tanh(sqrt(2/pi) * (x + 0.044715 * x^3)))
 
 **残差连接（Residual）的作用**:
 - 缓解梯度消失（梯度可直接流过 shortcut）
-- 让深层网络可训练（源自 ResNet，详见 [[学习/References/Papers/ResNet_Reading]]）
+- 让深层网络可训练（源自 ResNet，详见 [[90_学习/References/Papers/ResNet_Reading]]）
 
 **TransformerBlock 的完整数据流**:
 ```
@@ -328,13 +328,13 @@ GPT-2 small (124M):
 
 | 本书章节 | 本书概念 | 知识库主题 | 关联说明 |
 |----------|----------|------------|----------|
-| Ch 1 LLM 概览 | GPT 发展史 | [[大模型/LLM_Fundamentals]] | LLM 基础 |
-| Ch 2 文本处理 | BPE 分词 | [[大模型/LLM_Fundamentals]] | Tokenizer |
-| Ch 3 注意力 | Self/Multi-Head Attention | [[深度学习/]] | 注意力机制 |
-| Ch 4 GPT 实现 | Transformer Block | [[大模型/LLM_Fundamentals]] | 架构实现 |
-| Ch 5 预训练 | 训练循环、损失 | [[模型训练/]] | 预训练流程 |
-| Ch 6-7 微调 | SFT 分类/指令 | [[大模型/Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs]] | 微调技术 |
-| 全书 | 从零实现 | [[学习/References/Papers/Attention_Is_All_You_Need_Reading]] | Transformer 论文导读 |
+| Ch 1 LLM 概览 | GPT 发展史 | [[05_大模型/LLM_Fundamentals]] | LLM 基础 |
+| Ch 2 文本处理 | BPE 分词 | [[05_大模型/LLM_Fundamentals]] | Tokenizer |
+| Ch 3 注意力 | Self/Multi-Head Attention | [[03_深度学习/]] | 注意力机制 |
+| Ch 4 GPT 实现 | Transformer Block | [[05_大模型/LLM_Fundamentals]] | 架构实现 |
+| Ch 5 预训练 | 训练循环、损失 | [[07_模型训练/]] | 预训练流程 |
+| Ch 6-7 微调 | SFT 分类/指令 | [[05_大模型/07_Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs]] | 微调技术 |
+| 全书 | 从零实现 | [[90_学习/References/Papers/Attention_Is_All_You_Need_Reading]] | Transformer 论文导读 |
 
 ## 适合人群
 
@@ -376,9 +376,9 @@ GPT-2 small (124M):
 
 ### 路径 B: 配合论文
 
-1. 读 [[学习/References/Papers/Attention_Is_All_You_Need_Reading]] 理解原始架构
+1. 读 [[90_学习/References/Papers/Attention_Is_All_You_Need_Reading]] 理解原始架构
 2. 本书 Ch 3-4 实现一遍
-3. 读 [[学习/References/Papers/GPT3_Reading]] 理解规模化
+3. 读 [[90_学习/References/Papers/GPT3_Reading]] 理解规模化
 
 ### 路径 C: 面试速通
 
@@ -428,12 +428,12 @@ GPT-2 small (124M):
 | 加载权重失败 | 参数名映射错 | 对照 OpenAI 权重名逐层核对 |
 | 显存不足 | batch/序列太长 | 减小 batch 或用梯度累积 |
 
-- [[学习/References/books/nlp-with-transformers|NLP with Transformers]] — 高层抽象互补
-- [[学习/References/books/hands-on-llms-alammar|Hands-On LLMs]] — 图解式概念互补
-- [[学习/References/Papers/Attention_Is_All_You_Need_Reading|Attention Is All You Need 导读]] — 架构源头
-- [[学习/References/Papers/GPT3_Reading|GPT-3 论文导读]] — 规模化方向
-- [[大模型/LLM_Fundamentals]] — 知识库 LLM 基础章节
-- [[深度学习/]] — 神经网络基础
-- [[学习/guides/ai_engineering_roadmap_2026|AI 工程路线图 2026]]
+- [[90_学习/References/books/nlp-with-transformers|NLP with Transformers]] — 高层抽象互补
+- [[90_学习/References/books/hands-on-llms-alammar|Hands-On LLMs]] — 图解式概念互补
+- [[90_学习/References/Papers/Attention_Is_All_You_Need_Reading|Attention Is All You Need 导读]] — 架构源头
+- [[90_学习/References/Papers/GPT3_Reading|GPT-3 论文导读]] — 规模化方向
+- [[05_大模型/LLM_Fundamentals]] — 知识库 LLM 基础章节
+- [[03_深度学习/]] — 神经网络基础
+- [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图 2026]]
 
-> **关联**: → [[学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]] | [[大模型/LLM_Fundamentals]] | [[深度学习/]] | [[学习/References/Papers/]]
+> **关联**: → [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]] | [[05_大模型/LLM_Fundamentals]] | [[03_深度学习/]] | [[90_学习/References/Papers/]]

@@ -69,20 +69,20 @@ sources: []
 
 | 论文深度解读 | 内容亮点 |
 |-------------|---------|
-| [Attention Is All You Need](论文精读/Architecture/Attention_Is_All_You_Need_Deep_Dive.md) | Transformer 的完整技术剖析 |
-| [ResNet](论文精读/Vision/ResNet_Deep_Dive.md) | 残差学习的数学直觉与工程实现 |
-| [GPT-3](论文精读/Scaling/GPT3_Deep_Dive.md) | 规模化、上下文学习与涌现能力 |
-| [BERT](论文精读/Architecture/BERT_Deep_Dive.md) | 双向编码、MLM/NSP 与预训练-微调范式 |
-| [LLaMA](论文精读/Architecture/LLaMA_Deep_Dive.md) | 开源 LLM 革命、RoPE/SwiGLU/RMSNorm |
+| [Attention Is All You Need](20_论文精读/02_Architecture/Attention_Is_All_You_Need_Deep_Dive.md) | Transformer 的完整技术剖析 |
+| [ResNet](20_论文精读/08_Vision/ResNet_Deep_Dive.md) | 残差学习的数学直觉与工程实现 |
+| [GPT-3](20_论文精读/03_Scaling/GPT3_Deep_Dive.md) | 规模化、上下文学习与涌现能力 |
+| [BERT](20_论文精读/02_Architecture/BERT_Deep_Dive.md) | 双向编码、MLM/NSP 与预训练-微调范式 |
+| [LLaMA](20_论文精读/02_Architecture/LLaMA_Deep_Dive.md) | 开源 LLM 革命、RoPE/SwiGLU/RMSNorm |
 | [Diffusion Models](./Vision/Diffusion_Models_Deep_Dive.md) | 从 DDPM 到 Stable Diffusion 再到 DiT |
-| [RLHF 与 DPO](论文精读/Alignment/RLHF_DPO_Deep_Dive.md) | InstructGPT 三阶段训练、DPO 数学推导 |
-| [Mixture of Experts](论文精读/Architecture/Mixture_of_Experts_Deep_Dive.md) | Switch Transformer、Mixtral、DeepSeek MoE |
+| [RLHF 与 DPO](20_论文精读/06_Alignment/RLHF_DPO_Deep_Dive.md) | InstructGPT 三阶段训练、DPO 数学推导 |
+| [Mixture of Experts](20_论文精读/02_Architecture/Mixture_of_Experts_Deep_Dive.md) | Switch Transformer、Mixtral、DeepSeek MoE |
 
 ## 开始之前你需要知道
 
 **必备基础** (建议先看这些):
-- [神经网络核心 - 小白版](深度学习/Neural_Network_Core/Neural_Network_Core_for_dummy.md) - 理解 AI 大脑的工作原理
-- [深度学习优化 - 小白版](深度学习/Optimization/Optimization_for_dummy.md) - 理解训练过程
+- [神经网络核心 - 小白版](03_深度学习/02_Neural_Network_Core/Neural_Network_Core_for_dummy.md) - 理解 AI 大脑的工作原理
+- [深度学习优化 - 小白版](03_深度学习/03_Optimization/Optimization_for_dummy.md) - 理解训练过程
 
 **不需要的基础**:
 - ❌ 不需要会写论文
@@ -131,9 +131,9 @@ sources: []
 ## 下一步
 
 学完这章后，你可以：
-- 去 [大模型](../大模型/README.md) 深入学习 LLM 技术
-- 去 [计算机视觉](../计算机视觉/README.md) 深入学习计算机视觉
-- 去 [强化学习](../强化学习/README.md) 深入学习强化学习
+- 去 [大模型](../05_大模型/README.md) 深入学习 LLM 技术
+- 去 [计算机视觉](../04_计算机视觉/README.md) 深入学习计算机视觉
+- 去 [强化学习](../06_强化学习/README.md) 深入学习强化学习
 
 ---
 
@@ -141,7 +141,7 @@ sources: []
 
 ## Related
 
-- [[论文精读/README]] — 10 经典与必读 AI 论文清单 (Essential AI Papers) (共享: deep-dive, paper)
+- [[20_论文精读/README]] — 10 经典与必读 AI 论文清单 (Essential AI Papers) (共享: deep-dive, paper)
 
 ## 进阶知识拓展
 
@@ -179,9 +179,9 @@ sources: []
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

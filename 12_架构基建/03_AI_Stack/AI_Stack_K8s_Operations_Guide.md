@@ -131,18 +131,18 @@ helm show values gpustack/gpustack
 
 ## Related
 
-- [[架构基建/AI_Stack_Production_Toolchain|AI Stack 生产工具链总览]]
-- [[架构基建/AI_Stack_Container_Runtime_Guide|AI Stack 容器与运行时指南]]
-- [[架构基建/AI_Stack_Exclusive_Tools_Guide|AI Stack 专属运维工具指南]]
-- [[架构基建/Hardware_Compute/CDI_Deep_Dive|CDI: 容器设备接口标准]]
-- [[架构基建/Hardware_Compute/DRA_Deep_Dive|DRA: 动态资源分配]]
-- [[运维/AI_Ops_2026|AI Ops 2026: 智能运维体系与实践]]
+- [[12_架构基建/AI_Stack_Production_Toolchain|AI Stack 生产工具链总览]]
+- [[12_架构基建/AI_Stack_Container_Runtime_Guide|AI Stack 容器与运行时指南]]
+- [[12_架构基建/AI_Stack_Exclusive_Tools_Guide|AI Stack 专属运维工具指南]]
+- [[12_架构基建/07_Hardware_Compute/CDI_Deep_Dive|CDI: 容器设备接口标准]]
+- [[12_架构基建/07_Hardware_Compute/DRA_Deep_Dive|DRA: 动态资源分配]]
+- [[13_运维/AI_Ops_2026|AI Ops 2026: 智能运维体系与实践]]
 
 ## 架构核心组件对比
 
 | 组件层 | 功能 | 关键技术 | 选型考量 |
 |--------|------|----------|----------|
-| 计算层 | 模型训练/推理 | GPU/TPU/NPU集群 | 算力需求+成本 |
+| 计算层 | 07_模型训练/推理 | GPU/TPU/NPU集群 | 算力需求+成本 |
 | 存储层 | 数据/模型/检查点 | 分布式存储/对象存储 | 容量+IOPS+成本 |
 | 网络层 | 节点间通信 | RDMA/RoCE/InfiniBand | 带宽+延迟 |
 | 调度层 | 资源编排 | K8s/Slurm/Ray | 弹性+效率 |

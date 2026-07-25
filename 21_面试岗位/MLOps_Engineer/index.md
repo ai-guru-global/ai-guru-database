@@ -15,13 +15,13 @@ MLOps 工程师 — 构建 ML 生命周期管线（ML lifecycle pipeline），�
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[面试岗位/MLOps_Engineer/MLOps_Engineer|MLOps Engineer]] | 岗位面试全攻略：MLOps 成熟度模型、CI/CD 管线与生产级最佳实践 | MLOps engineer candidates / platform engineers |
+| [[21_面试岗位/MLOps_Engineer/MLOps_Engineer|MLOps Engineer]] | 岗位面试全攻略：MLOps 成熟度模型、CI/CD 管线与生产级最佳实践 | MLOps engineer candidates / platform engineers |
 
 ## Related
 
-- [[面试岗位/Cloud_Ops_Engineer/index|Cloud Ops Engineer]]
-- [[面试岗位/Data_Engineer/index|Data Engineer]]
-- [[模型运维/CI_CD/index|CI/CD]]
+- [[21_面试岗位/Cloud_Ops_Engineer/index|Cloud Ops Engineer]]
+- [[21_面试岗位/Data_Engineer/index|Data Engineer]]
+- [[11_模型运维/06_CI_CD/index|CI/CD]]
 
 ## 岗位核心能力模型
 
@@ -38,7 +38,7 @@ MLOps 工程师 — 构建 ML 生命周期管线（ML lifecycle pipeline），�
 | 轮次 | 内容 | 时长 | 考察重点 |
 |------|------|------|----------|
 | 简历筛选 | HR初筛 | - | 背景匹配度 |
-| 技术笔试 | 编程/选择题 | 60-90min | 基础功底 |
+| 技术笔试 | 16_编程/选择题 | 60-90min | 基础功底 |
 | 技术一面 | 算法+项目 | 45-60min | 编码能力+项目深度 |
 | 技术二面 | 系统设计+深度 | 45-60min | 架构思维+技术广度 |
 | 技术三面 | 综合+前沿 | 30-45min | 技术视野+潜力 |

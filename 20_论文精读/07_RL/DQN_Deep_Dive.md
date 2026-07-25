@@ -878,7 +878,7 @@ DQN 的成功直接启发了 AlphaGo（2016）：
 | **自我对弈训练** | 经验回放 | 自我对弈生成棋谱 |
 | **蒙特卡洛方法** | — | MCTS + 深度网络 |
 
-> **详见**: [[论文精读/RL/AlphaGo_Deep_Dive]]
+> **详见**: [[20_论文精读/07_RL/AlphaGo_Deep_Dive]]
 
 ### 8.3 影响 PPO 和现代 RL
 
@@ -985,11 +985,11 @@ DQN 的"一句话哲学":
 
 ## Related
 
-- [[论文精读/RL/PPO_Deep_Dive]] — PPO: DQN 之后 RL 领域的另一里程碑，策略梯度方法
-- [[论文精读/RL/AlphaGo_Deep_Dive]] — AlphaGo: 受 DQN 启发的围棋 AI
-- [[论文精读/Alignment/DPO_Deep_Dive]] — DPO: RLHF 中 PPO 的替代方案
-- [[论文精读/Vision/AlexNet_Deep_Dive]] — AlexNet: DQN CNN 架构的灵感来源
-- [[论文精读/Architecture/Attention_Is_All_You_Need_Deep_Dive]] — 注意力机制: 与 DQN 的 CNN 形成对比
+- [[20_论文精读/07_RL/PPO_Deep_Dive]] — PPO: DQN 之后 RL 领域的另一里程碑，策略梯度方法
+- [[20_论文精读/07_RL/AlphaGo_Deep_Dive]] — AlphaGo: 受 DQN 启发的围棋 AI
+- [[20_论文精读/06_Alignment/DPO_Deep_Dive]] — DPO: RLHF 中 PPO 的替代方案
+- [[20_论文精读/08_Vision/AlexNet_Deep_Dive]] — AlexNet: DQN CNN 架构的灵感来源
+- [[20_论文精读/02_Architecture/Attention_Is_All_You_Need_Deep_Dive]] — 注意力机制: 与 DQN 的 CNN 形成对比
 - [[概念/Training/experience-replay]] — 经验回放技术详解
 - [[概念/Training/target-network]] — 目标网络详解
 - [[概念/General/q-learning]] — Q-Learning 基础

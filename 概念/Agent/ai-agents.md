@@ -185,16 +185,16 @@ level_3_enterprise:
 
 ## 来源
 
-- 强化学习/AI_Agents/AI_Agents.md
+- 06_强化学习/AI_Agents/AI_Agents.md
 
 ## Related
 
 - [[治理/agents-reinforcement-learning]] — AI 智能体 × 强化学习 (共享: ai-agents, mcp, planning, react, rl, tool-use)
-- [[强化学习/AI_Agents/AI_Agents_for_dummy]] — AI智能体 - 小白版 🤖 (共享: ai-agents, rl)
-- [[强化学习/AI_Agents/Agent-in-nutshell]] — AI 智能体速成指南 (共享: ai-agents, rl)
-- [[强化学习/AI_Agents/Agent_Future_Roadmap_2026_2030]] — Agent 未来发展路线图 2026-2030 (共享: ai-agents, rl)
+- [[06_强化学习/AI_Agents/AI_Agents_for_dummy]] — AI智能体 - 小白版 🤖 (共享: ai-agents, rl)
+- [[06_强化学习/AI_Agents/Agent-in-nutshell]] — AI 智能体速成指南 (共享: ai-agents, rl)
+- [[06_强化学习/AI_Agents/Agent_Future_Roadmap_2026_2030]] — Agent 未来发展路线图 2026-2030 (共享: ai-agents, rl)
 - [[概念/tool-calling]] — 工具调用
 - [[概念/tool-calling-safety]] — 工具调用安全
 - [[概念/agent-evaluation-benchmarks]] — Agent 评估基准
 - [[概念/agentic-rag]] — Agentic RAG
-- [[智能体/Agent_Safety_Evaluation_for_dummy]] — Agent 安全与评估大白话
+- [[15_智能体/Agent_Safety_Evaluation_for_dummy]] — Agent 安全与评估大白话

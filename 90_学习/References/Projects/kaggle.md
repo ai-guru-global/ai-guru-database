@@ -38,7 +38,7 @@ aliases:
 | House Prices | 入门 | 回归(房价预测) |
 | Digit Recognizer | 入门 | 图像分类(手写数字) |
 
-> **关联**: -> [[机器学习|机器学习]] | [[学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[机器学习|机器学习]] | [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
 
 
 ## 核心知识框架

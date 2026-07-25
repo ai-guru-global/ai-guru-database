@@ -154,26 +154,26 @@ PluginRegistry
 
 | 类别 | 文件 | 完整路径 |
 |------|------|----------|
-| 入口 | run_evaluation.py | `智能体/Agent_Evaluation/demo/run_evaluation.py` |
-| 配置 | config.yaml | `智能体/Agent_Evaluation/demo/config.yaml` |
-| 核心 | core.py | `智能体/Agent_Evaluation/demo/evaluator/core.py` |
-| 指标 | metrics.py | `智能体/Agent_Evaluation/demo/evaluator/metrics.py` |
-| 评分 | scorer.py | `智能体/Agent_Evaluation/demo/evaluator/scorer.py` |
-| LLM | llm_judge.py | `智能体/Agent_Evaluation/demo/evaluator/llm_judge.py` |
-| 安全 | safety_checker.py | `智能体/Agent_Evaluation/demo/evaluator/safety_checker.py` |
-| 插件 | base.py | `智能体/Agent_Evaluation/demo/plugins/base.py` |
-| 阿里云 | aliyun_plugin.py | `智能体/Agent_Evaluation/demo/plugins/aliyun_plugin.py` |
-| OpenAI | openai_plugin.py | `智能体/Agent_Evaluation/demo/plugins/openai_plugin.py` |
+| 入口 | run_evaluation.py | `15_智能体/07_Agent_Evaluation/demo/run_evaluation.py` |
+| 配置 | config.yaml | `15_智能体/07_Agent_Evaluation/demo/config.yaml` |
+| 核心 | core.py | `15_智能体/07_Agent_Evaluation/demo/evaluator/core.py` |
+| 指标 | metrics.py | `15_智能体/07_Agent_Evaluation/demo/evaluator/metrics.py` |
+| 评分 | scorer.py | `15_智能体/07_Agent_Evaluation/demo/evaluator/scorer.py` |
+| LLM | llm_judge.py | `15_智能体/07_Agent_Evaluation/demo/evaluator/llm_judge.py` |
+| 安全 | safety_checker.py | `15_智能体/07_Agent_Evaluation/demo/evaluator/safety_checker.py` |
+| 插件 | base.py | `15_智能体/07_Agent_Evaluation/demo/plugins/base.py` |
+| 阿里云 | aliyun_plugin.py | `15_智能体/07_Agent_Evaluation/demo/plugins/aliyun_plugin.py` |
+| OpenAI | openai_plugin.py | `15_智能体/07_Agent_Evaluation/demo/plugins/openai_plugin.py` |
 | 排行榜 | leaderboard.tsx | `前端应用/src/pages/leaderboard.tsx` |
 | 雷达图 | RadarChart.tsx | `前端应用/src/components/leaderboard/RadarChart.tsx` |
 | 数据 | leaderboardData.ts | `前端应用/src/data/leaderboardData.ts` |
 
 ## Related
 
-- [[智能体/Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
-- [[智能体/Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
-- [[智能体/Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
-- [[智能体/Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)
+- [[15_智能体/07_Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
+- [[15_智能体/07_Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[15_智能体/07_Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[15_智能体/07_Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)
 
 ## 附录：核心概念速查
 

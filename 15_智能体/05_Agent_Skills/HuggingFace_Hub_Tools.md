@@ -151,9 +151,9 @@ hf_tool = HuggingFaceHubTool(
 ---
 
 ## 相关阅读
-- [[智能体/Agent_Frameworks/SmolAgents_Practical_Guide]]
-- [[智能体/Agent_Skills/Agent_Skills_Practical_Guide]]
-- [[智能体/Agent_Workflow/LangGraph_Deep_Dive]]
+- [[15_智能体/02_Agent_Frameworks/SmolAgents_Practical_Guide]]
+- [[15_智能体/05_Agent_Skills/Agent_Skills_Practical_Guide]]
+- [[15_智能体/03_Agent_Workflow/LangGraph_Deep_Dive]]
 
 ## 附录：核心概念速查
 

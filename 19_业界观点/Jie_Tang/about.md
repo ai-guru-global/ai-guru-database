@@ -66,7 +66,7 @@ sources: []
 
 ### 学术驱动创业
 
-唐杰的核心理念是"好的研究自然会产生好的产品，智谱的根在清华"。智谱 AI 从清华大学 KEG 实验室孵化，保留了浓厚的学术研究文化——每篇技术报告都力求学术级别的严谨和可复现性。这种"学术驱动"模式与 DeepSeek 的"效率驱动"和月之暗面的"产品驱动"形成鲜明对比。参见 [[业界观点/Wenfeng_Liang/about]] 和 [[业界观点/Zhilin_Yang/about]] 的不同路径。
+唐杰的核心理念是"好的研究自然会产生好的产品，智谱的根在清华"。智谱 AI 从清华大学 KEG 实验室孵化，保留了浓厚的学术研究文化——每篇技术报告都力求学术级别的严谨和可复现性。这种"学术驱动"模式与 DeepSeek 的"效率驱动"和月之暗面的"产品驱动"形成鲜明对比。参见 [[19_业界观点/Wenfeng_Liang/about]] 和 [[19_业界观点/Zhilin_Yang/about]] 的不同路径。
 
 ### GLM 框架统一性
 
@@ -80,13 +80,13 @@ sources: []
 
 ### 开源 + 商业并行
 
-智谱的策略是"开源 ChatGLM 获取社区影响力，商业 API 获取收入"。ChatGLM-6B 的开源使其迅速成为中国最受欢迎的开源中文 LLM，同时 GLM API 服务为企业客户提供更强的闭源模型。这一"双轨制"平衡了开源社区和商业可持续性。参见 [[业界观点/Jinze_Bai/about]] 的 Qwen 在开源方面的类似策略。
+智谱的策略是"开源 ChatGLM 获取社区影响力，商业 API 获取收入"。ChatGLM-6B 的开源使其迅速成为中国最受欢迎的开源中文 LLM，同时 GLM API 服务为企业客户提供更强的闭源模型。这一"双轨制"平衡了开源社区和商业可持续性。参见 [[19_业界观点/Jinze_Bai/about]] 的 Qwen 在开源方面的类似策略。
 
 ---
 
 ## 对 AI 领域的影响力评估 (Impact Assessment)
 
-唐杰的影响力是学术深度和产业广度的罕见结合。在学术层面，他发表论文 500+ 篇，h-index 100+，是中国计算机科学最具影响力的学者之一；AMiner 学术搜索平台是全球最大的学术图谱系统之一。在产业层面，GLM-130B 是中国进入大模型时代的标志，ChatGLM-6B 的开源则催生了整个中国开源 LLM 生态。智谱 AI 是中国 AI 六小龙中最具"清华基因"的公司，代表了"产学研一体化"的最佳实践。GLM-5.2 的发布进一步证明，学术驱动的公司同样能在万亿参数时代做出全球顶尖的模型。唐杰还培养了大批 AI 人才，[[业界观点/Zhilin_Yang/about]] (杨植麟) 就是他的学生。
+唐杰的影响力是学术深度和产业广度的罕见结合。在学术层面，他发表论文 500+ 篇，h-index 100+，是中国计算机科学最具影响力的学者之一；AMiner 学术搜索平台是全球最大的学术图谱系统之一。在产业层面，GLM-130B 是中国进入大模型时代的标志，ChatGLM-6B 的开源则催生了整个中国开源 LLM 生态。智谱 AI 是中国 AI 六小龙中最具"清华基因"的公司，代表了"产学研一体化"的最佳实践。GLM-5.2 的发布进一步证明，学术驱动的公司同样能在万亿参数时代做出全球顶尖的模型。唐杰还培养了大批 AI 人才，[[19_业界观点/Zhilin_Yang/about]] (杨植麟) 就是他的学生。
 
 ---
 
@@ -127,20 +127,20 @@ sources: []
 - 国家杰出青年基金获得者
 - 研究兴趣: 社交网络、知识图谱、大语言模型
 - ACM/IEEE Fellow
-- 培养了 [[业界观点/Zhilin_Yang/about]]（杨植麟）等众多 AI 领域杰出人才
+- 培养了 [[19_业界观点/Zhilin_Yang/about]]（杨植麟）等众多 AI 领域杰出人才
 
 ---
 
 ## 交叉引用 (Cross-References)
 
-- [GLM/智谱 AI 技术全景](大模型/Chinese_LLM_Ecosystem/GLM_Zhipu_Deep_Dive.md)
-- [中国大模型生态全景](大模型/Chinese_LLM_Ecosystem/README.md)
-- [Multimodal Architectures](大模型/Multimodal_Models/Multimodal_Architectures_2026.md)
-- [[业界观点/Zhilin_Yang/about]] — 师生关系，清华 KEG → 月之暗面
-- [[业界观点/Wenfeng_Liang/about]] — DeepSeek 与智谱在中国开源生态中的竞合
-- [[业界观点/Junjie_Yan/about]] — MiniMax 与智谱的全模态竞争
-- [[业界观点/Jinze_Bai/about]] — Qwen 与 GLM 在开源策略上的对比
-- [[业界观点/Andrew_Ng/about]] — 同为学术驱动创业的标杆人物
+- [GLM/智谱 AI 技术全景](05_大模型/15_Chinese_LLM_Ecosystem/GLM_Zhipu_Deep_Dive.md)
+- [中国大模型生态全景](05_大模型/15_Chinese_LLM_Ecosystem/README.md)
+- [Multimodal Architectures](05_大模型/10_Multimodal_Models/Multimodal_Architectures_2026.md)
+- [[19_业界观点/Zhilin_Yang/about]] — 师生关系，清华 KEG → 月之暗面
+- [[19_业界观点/Wenfeng_Liang/about]] — DeepSeek 与智谱在中国开源生态中的竞合
+- [[19_业界观点/Junjie_Yan/about]] — MiniMax 与智谱的全模态竞争
+- [[19_业界观点/Jinze_Bai/about]] — Qwen 与 GLM 在开源策略上的对比
+- [[19_业界观点/Andrew_Ng/about]] — 同为学术驱动创业的标杆人物
 
 ---
 
@@ -156,7 +156,7 @@ sources: []
 
 *Last updated: 2026-07-11*
 
-- [[业界观点/README|AI 名人演讲与观点 (Talks)]]
+- [[19_业界观点/README|AI 名人演讲与观点 (Talks)]]
 
 ## 附录：人物影响力评估
 

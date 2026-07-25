@@ -12,7 +12,7 @@ relationships:
   - target: "概念/inference-autoscaling"
     type: integrates_with
 sources:
-  - 部署推理/Inference_Engines/
+  - 10_部署推理/02_Inference_Engines/
 summary: "LLM Inference Engine（推理引擎）是优化 LLM 推理性能与吞吐的服务系统，通过 PagedAttention、连续批处理、推测解码等技术将吞吐量提升数倍到数十倍，是 LLM 生产部署的核心组件。"
 lifecycle: reviewed
 tier: core
@@ -114,15 +114,15 @@ updated: 2026-07-21
 - [[概念/vllm]] — vLLM（最流行）
 - [[概念/inference-autoscaling]] — 推理扩缩容
 - [[概念/observability]] — 推理可观测性
-- [[部署推理/Inference_Engines/index]] — 推理引擎章节- [[概念/cuda-graph]] — Cuda Graph
+- [[10_部署推理/02_Inference_Engines/index]] — 推理引擎章节- [[概念/cuda-graph]] — Cuda Graph
 - [[概念/inference-performance-gaps]] — Inference Performance Gaps
 - [[概念/model-routing]] — Model Routing
 - [[概念/request-scheduling]] — Request Scheduling
 
 ## See Also (深度专题)
 
-- [[../../大模型/LLM_Inference/LLM_Inference_Deep_Dive|LLM 推理深度解析]] — vLLM/TensorRT-LLM/SGLang 等推理引擎的架构与优化
-- [[../../大模型/LLM_Deployment/LLM_Production_Deployment_Runbook|LLM 生产部署 Runbook]] — 推理引擎的生产环境选型与运维
+- [[../../05_大模型/LLM_Inference/LLM_Inference_Deep_Dive|LLM 推理深度解析]] — vLLM/TensorRT-LLM/SGLang 等推理引擎的架构与优化
+- [[../../05_大模型/LLM_Deployment/LLM_Production_Deployment_Runbook|LLM 生产部署 Runbook]] — 推理引擎的生产环境选型与运维
 
 ---
 
@@ -189,8 +189,8 @@ updated: 2026-07-21
 - [[概念/LLM/tensorrt-llm|TensorRT-LLM]]
 - [[概念/LLM/llm-inference-checklist|推理上线检查清单]]
 - [[概念/LLM/llm-inference-cost-optimization|推理成本优化]]
-- [[部署推理/Inference_Engines|推理引擎专题]]
-- [[部署推理/Inference_Performance|推理性能优化]]
+- [[10_部署推理/Inference_Engines|推理引擎专题]]
+- [[10_部署推理/Inference_Performance|推理性能优化]]
 
 ## 性能基准参考 (7B 模型, H100)
 

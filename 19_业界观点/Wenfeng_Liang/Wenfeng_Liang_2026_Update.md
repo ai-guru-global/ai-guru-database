@@ -73,7 +73,7 @@ MLA:        每层缓存 latent c → 维度 = d_c (压缩维度) × seq_len
             推理时从 c 解投影恢复 K, V
 ```
 
-这一创新使 DeepSeek-V3 在同等上下文长度下的 KV Cache 显存占用比 LLaMA 等稠密模型低约一个数量级，直接关联 [[部署推理/Inference_Optimization/kv-cache-inference-optimization|KV Cache 优化]]。
+这一创新使 DeepSeek-V3 在同等上下文长度下的 KV Cache 显存占用比 LLaMA 等稠密模型低约一个数量级，直接关联 [[10_部署推理/03_Inference_Optimization/kv-cache-inference-optimization|KV Cache 优化]]。
 
 #### DeepSeekMoE：细粒度专家
 
@@ -88,7 +88,7 @@ DeepSeek-R1 是 DeepSeek 对推理模型（类 o1）的回应，其关键是 **G
 - **R1 = 冷启动 SFT + RL**: 在 R1-Zero 基础上加入少量长 CoT 冷启动数据，提升可读性和稳定性
 - **蒸馏传播**: 将 R1 的推理能力蒸馏到 1.5B-70B 的稠密小模型，开源可用
 
-这一路径与 [[论文精读/Alignment/GRPO_Paper_Deep_Dive|GRPO 论文]] 直接对应，参见 [[模型训练/Alignment/RLHF_at_Scale_2026|大规模 RLHF]]。
+这一路径与 [[20_论文精读/06_Alignment/GRPO_Paper_Deep_Dive|GRPO 论文]] 直接对应，参见 [[07_模型训练/06_Alignment/RLHF_at_Scale_2026|大规模 RLHF]]。
 
 ### 训练效率的工程哲学
 
@@ -131,11 +131,11 @@ DeepSeek-V3 最引发讨论的是其训练成本——公开报告约 $5.6M（�
 | 公司 | 创始人 | 核心技术标签 | 2026 定位 |
 |------|--------|-------------|-----------|
 | **DeepSeek** | 梁文锋 | MLA/MoE/效率/开源 | 开源效率标杆 |
-| [[业界观点/Zhilin_Yang/about\|月之暗面]] | 杨植麟 | 长上下文/Kimi | C 端长文本 |
-| [[业界观点/Junjie_Yan/about\|MiniMax]] | 闫俊杰 | Lightning Attention/全模态 | 全模态 C 端 |
-| [[业界观点/Jie_Tang/about\|智谱 AI]] | 唐杰 | GLM/学术底蕴 | 产学研标杆 |
+| [[19_业界观点/Zhilin_Yang/about\|月之暗面]] | 杨植麟 | 长上下文/Kimi | C 端长文本 |
+| [[19_业界观点/Junjie_Yan/about\|MiniMax]] | 闫俊杰 | Lightning Attention/全模态 | 全模态 C 端 |
+| [[19_业界观点/Jie_Tang/about\|智谱 AI]] | 唐杰 | GLM/学术底蕴 | 产学研标杆 |
 | 百川智能 | 王小川 | 搜索增强/医疗 | 垂直应用 |
-| 阶跃星辰 | [[业界观点/Jinze_Bai/about\|白辰甲等]] | 多模态 | 多模态探索 |
+| 阶跃星辰 | [[19_业界观点/Jinze_Bai/about\|白辰甲等]] | 多模态 | 多模态探索 |
 
 ### 对全球 AI 格局的影响
 
@@ -170,24 +170,24 @@ DeepSeek-V3 在部分基准上接近顶级闭源模型，但真实场景（复�
 ## 关联与延伸
 
 ### 人物关联
-- [[业界观点/Wenfeng_Liang/about|梁文锋 概述]]
-- [[业界观点/Wenfeng_Liang/index|梁文锋 主页]]
-- [[业界观点/Wenfeng_Liang/sayings|梁文锋 语录]]
+- [[19_业界观点/Wenfeng_Liang/about|梁文锋 概述]]
+- [[19_业界观点/Wenfeng_Liang/index|梁文锋 主页]]
+- [[19_业界观点/Wenfeng_Liang/sayings|梁文锋 语录]]
 
 ### 中国 AI 六小龙
-- [[业界观点/Zhilin_Yang/about|杨植麟（月之暗面）]]
-- [[业界观点/Junjie_Yan/about|闫俊杰（MiniMax）]]
-- [[业界观点/Jie_Tang/about|唐杰（智谱 AI）]]
-- [[业界观点/Jinze_Bai/about|白辰甲（阶跃星辰）]]
+- [[19_业界观点/Zhilin_Yang/about|杨植麟（月之暗面）]]
+- [[19_业界观点/Junjie_Yan/about|闫俊杰（MiniMax）]]
+- [[19_业界观点/Jie_Tang/about|唐杰（智谱 AI）]]
+- [[19_业界观点/Jinze_Bai/about|白辰甲（阶跃星辰）]]
 
 ### 技术关联
-- [[部署推理/Inference_Optimization/kv-cache-inference-optimization|KV Cache 优化]]（MLA 的应用场景）
-- [[部署推理/Quantization/index|量化]]（FP8 训练与推理）
-- [[论文精读/Alignment/GRPO_Paper_Deep_Dive|GRPO 论文精读]]
-- [[模型训练/Alignment/RLHF_at_Scale_2026|大规模 RLHF]]
-- [[大模型/index|大模型生态]]
-- [[业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026|开源 vs 闭源之争]]
-- [[业界观点/Talks_Synthesis/China_US_AI_Race_Leaders_Views|中美 AI 竞赛观点]]
+- [[10_部署推理/03_Inference_Optimization/kv-cache-inference-optimization|KV Cache 优化]]（MLA 的应用场景）
+- [[10_部署推理/05_Quantization/index|量化]]（FP8 训练与推理）
+- [[20_论文精读/06_Alignment/GRPO_Paper_Deep_Dive|GRPO 论文精读]]
+- [[07_模型训练/06_Alignment/RLHF_at_Scale_2026|大规模 RLHF]]
+- [[05_大模型/index|大模型生态]]
+- [[19_业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026|开源 vs 闭源之争]]
+- [[19_业界观点/Talks_Synthesis/China_US_AI_Race_Leaders_Views|中美 AI 竞赛观点]]
 
 ---
 
@@ -201,4 +201,4 @@ DeepSeek-V3 在部分基准上接近顶级闭源模型，但真实场景（复�
 
 ---
 
-*本文为 AI Guru 知识库内容，2026-07-23 更新。关联 [[业界观点/index|业界观点]] 章节与 [[大模型/Chinese_LLM_Ecosystem|中国大模型生态]]。*
+*本文为 AI Guru 知识库内容，2026-07-23 更新。关联 [[19_业界观点/index|业界观点]] 章节与 [[05_大模型/Chinese_LLM_Ecosystem|中国大模型生态]]。*

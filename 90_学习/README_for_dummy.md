@@ -135,15 +135,15 @@ Stage 0: AI 觉醒 ─── AI 定义 · 三大类型 · 能力边界 · 经典
 
 ## Related
 
-- [[学习/README|Learn — AI Guru 概念入门路径]]
-- [[学习/guides/learning_paths_2026|AI Guru 学习路径指南]]
-- [[学习/guides/ai_engineering_roadmap_2026|AI 工程学习路线图 2026]]
-- [[学习/guides/milestones|里程碑自测]]
-- [[学习/概念/stage0_awakening|Stage 0: AI 觉醒]]
-- [[学习/概念/stage1_foundation|Stage 1: 基础概念]]
-- [[学习/概念/stage2_core_tech|Stage 2: 核心技术]]
-- [[学习/概念/stage3_engineering|Stage 3: 工程实践]]
-- [[学习/概念/stage4_frontier|Stage 4: 前沿探索]]
+- [[90_学习/README|Learn — AI Guru 概念入门路径]]
+- [[90_学习/guides/learning_paths_2026|AI Guru 学习路径指南]]
+- [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程学习路线图 2026]]
+- [[90_学习/guides/milestones|里程碑自测]]
+- [[90_学习/概念/stage0_awakening|Stage 0: AI 觉醒]]
+- [[90_学习/概念/stage1_foundation|Stage 1: 基础概念]]
+- [[90_学习/概念/stage2_core_tech|Stage 2: 核心技术]]
+- [[90_学习/概念/stage3_engineering|Stage 3: 工程实践]]
+- [[90_学习/概念/stage4_frontier|Stage 4: 前沿探索]]
 
 ## 核心知识框架
 

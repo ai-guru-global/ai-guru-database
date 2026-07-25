@@ -247,7 +247,7 @@ Thing（可数物体）:   人、车、建筑 → 实例标签
 
 ## 来源
 
-- 计算机视觉/Segmentation/Segmentation.md
+- 04_计算机视觉/03_Segmentation/Segmentation.md
 - Ronneberger et al., "U-Net: Convolutional Networks for Biomedical Image Segmentation", MICCAI 2015
 - Kirillov et al., "Segment Anything" (SAM), ICCV 2023
 

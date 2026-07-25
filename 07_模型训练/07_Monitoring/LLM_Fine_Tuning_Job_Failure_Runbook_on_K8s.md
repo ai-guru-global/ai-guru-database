@@ -169,7 +169,7 @@ kubectl exec -it <pod> -n <ns> -- ls -l /data
 - `Connection refused by rank 0`
 - `TIMEOUT`
 
-**详细排查见**：[[模型训练/Distributed_Training/Distributed_Training_Hang_Runbook|分布式训练 Hang 排障 Runbook]]
+**详细排查见**：[[07_模型训练/04_Distributed_Training/Distributed_Training_Hang_Runbook|分布式训练 Hang 排障 Runbook]]
 
 ### 3.5 镜像拉取失败
 
@@ -272,15 +272,15 @@ kubectl get pod <pod> -n <ns> -o jsonpath='{.spec.containers[*].resources}'
 
 ## Related
 
-- [[模型训练/Distributed_Training/Distributed_Training_Hang_Runbook|分布式训练 Hang 排障 Runbook]]
-- [[模型训练/Monitoring/Training_Job_Diagnosis_Workflow|训练任务诊断工作流]]
-- [[运维/SRE_Reliability/GPU_OOM_Troubleshooting_Guide|GPU OOM 排障指南]]
-- [[运维/SRE_Reliability/K8s_AI_Troubleshooting_Cheat_Sheet|K8s for AI 排查速查表]]
+- [[07_模型训练/04_Distributed_Training/Distributed_Training_Hang_Runbook|分布式训练 Hang 排障 Runbook]]
+- [[07_模型训练/07_Monitoring/Training_Job_Diagnosis_Workflow|训练任务诊断工作流]]
+- [[13_运维/02_SRE_Reliability/GPU_OOM_Troubleshooting_Guide|GPU OOM 排障指南]]
+- [[13_运维/02_SRE_Reliability/K8s_AI_Troubleshooting_Cheat_Sheet|K8s for AI 排查速查表]]
 - [[概念/lora-peft|LoRA / PEFT]]
 - [[概念/qlora|QLoRA]]
 - [[概念/deepspeed|DeepSpeed]]
 - [[概念/fsdp|FSDP]]
 - [[概念/gradient-checkpointing|Gradient Checkpointing]]
 - [[概念/nccl|NCCL]]
-- [[架构基建/Alibaba_Cloud_Proprietary_K8s_Context|阿里云专有云 K8s 上下文]]
-- [[运维/Kubernetes_Troubleshooting_Playbook|Kubernetes 运维排障 Playbook]]
+- [[12_架构基建/Alibaba_Cloud_Proprietary_K8s_Context|阿里云专有云 K8s 上下文]]
+- [[13_运维/Kubernetes_Troubleshooting_Playbook|Kubernetes 运维排障 Playbook]]

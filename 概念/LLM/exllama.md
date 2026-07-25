@@ -10,7 +10,7 @@ relationships:
   - target: "概念/tensorrt-llm"
     type: related_to
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
 summary: "ExLlamaV2 是专为量化 LLM 设计的高性能推理引擎——支持 EXL2 量化格式（2-8 bit 混合精度），在单 GPU 上实现接近 FP16 的推理质量。是消费级 GPU 运行大模型的首选引擎之一。"
 provenance:
   extracted: 0.15
@@ -200,4 +200,4 @@ convert_model(
 - [[概念/LLM/vllm|vLLM]]
 - [[概念/LLM/llm-quantization|LLM 量化]]
 - [[概念/LLM/gptq|GPTQ]]
-- [[部署推理/Quantization/ExLlamaV2_Deep_Dive|ExLlamaV2 深度解析]]
+- [[10_部署推理/05_Quantization/ExLlamaV2_Deep_Dive|ExLlamaV2 深度解析]]

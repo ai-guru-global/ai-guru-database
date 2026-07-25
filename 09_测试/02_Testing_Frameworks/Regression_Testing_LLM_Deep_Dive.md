@@ -394,11 +394,11 @@ Tier 3: 深度评估（200-500 题，每周/版本前跑）
 
 ## Related
 
-- [[测试/Testing_Fundamentals/AI_Test_Framework_2026|AI 测试框架 2026]] — 测试全栈框架
-- [[测试/Testing_Frameworks/Promptfoo_Deep_Dive|Promptfoo]] — 回归测试主力工具
-- [[测试/Testing_Frameworks/LLM_Safety_Testing_Deep_Dive|LLM 安全测试]] — 安全回归测试
-- [[测试/Contract_Testing|契约测试]] — API 格式稳定性
-- [[运维/AI_Ops_2026|AI 运维]] — 线上质量监控
+- [[09_测试/01_Testing_Fundamentals/AI_Test_Framework_2026|AI 测试框架 2026]] — 测试全栈框架
+- [[09_测试/02_Testing_Frameworks/Promptfoo_Deep_Dive|Promptfoo]] — 回归测试主力工具
+- [[09_测试/02_Testing_Frameworks/LLM_Safety_Testing_Deep_Dive|LLM 安全测试]] — 安全回归测试
+- [[09_测试/Contract_Testing|契约测试]] — API 格式稳定性
+- [[13_运维/AI_Ops_2026|AI 运维]] — 线上质量监控
 - [[概念/ci-integrated-evaluation|CI 集成评估]] — 概念卡
 
 ---
@@ -410,4 +410,4 @@ Tier 3: 深度评估（200-500 题，每周/版本前跑）
 > - DeepEval: Pytest for LLMs
 > - "Evaluating LLMs is Hard" (Ham et al., 2024)
 
-- [[测试/README|AI 测试与评估 (AI Testing)]]
+- [[09_测试/README|AI 测试与评估 (AI Testing)]]

@@ -354,16 +354,16 @@ YOLO: 只能识别物体("这是一个人")
 - 🔗 YOLO 在线 Demo - 上传图片实时检测
 
 **相关主题**:
-- 🔙 [神经网络核心 - 小白版](深度学习/Neural_Network_Core/Neural_Network_Core_for_dummy.md) - 理解 CNN 的基础
+- 🔙 [神经网络核心 - 小白版](03_深度学习/02_Neural_Network_Core/Neural_Network_Core_for_dummy.md) - 理解 CNN 的基础
 - 🔜 [多模态视觉 - 小白版](../Multimodal_Vision/Multimodal_Vision_for_dummy.md) - 让 AI 同时理解图片和文字
 
 ## Related
 
-- [[../../大模型/Multimodal_Models/Multimodal_Architectures_2026|多模态架构]] — 图像分类与语言理解的融合
+- [[../../05_大模型/10_Multimodal_Models/Multimodal_Architectures_2026|多模态架构]] — 图像分类与语言理解的融合
 - [[../../概念/Vision/object-detection|目标检测概念卡]] — 检测算法的概念定义
-- [[../../深度学习/Neural_Network_Core|神经网络核心]] — CNN 底层原理
-- [[../../部署推理/Deployment_Fundamentals|部署基础]] — CV 模型边缘部署
-- [[../../RAG系统/RAG_Fundamentals|视觉 RAG]] — 图像特征检索
+- [[../../03_深度学习/Neural_Network_Core|神经网络核心]] — CNN 底层原理
+- [[../../10_部署推理/Deployment_Fundamentals|部署基础]] — CV 模型边缘部署
+- [[../../14_RAG系统/RAG_Fundamentals|视觉 RAG]] — 图像特征检索
 
 ---
 

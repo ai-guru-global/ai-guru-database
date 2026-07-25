@@ -323,13 +323,13 @@ Claude Code 安全配置
 - [Claude Code 官网](https://claude.ai/code)
 - [Anthropic API 文档](https://docs.anthropic.com/)
 - [OpenCode Deep Dive](./OpenCode_Deep_Dive.md)
-- [Vibe Coding 方法论](编程/Methodology/Vibe_Coding_Methodology.md) — 如何系统化地使用 Claude Code 进行 Vibe Coding
+- [Vibe Coding 方法论](16_编程/03_Methodology/Vibe_Coding_Methodology.md) — 如何系统化地使用 Claude Code 进行 Vibe Coding
 
 ## 相关链接
 
-- [[智能体/Agentic_Coding_Tools/Agentic_Coding_Tools_Overview|Agentic Coding 工具概览]] — 工具全景对比
-- [[智能体/Agentic_Coding_Tools/Aider_Deep_Dive|Aider 深度解析]] — 同类开源 CLI 工具对比
-- [[智能体/Agentic_Coding_Tools/Windsurf_Cursor_Devin_Dive|Windsurf/Cursor/Devin 对比]] — IDE 类工具对比
-- [[智能体/Course_Notes/Learn_Claude_Code_L01_Agent_Loop|Claude Code L01: Agent Loop]] — Claude Code 课程笔记
-- [[大模型/Global_LLM_Ecosystem/Anthropic_Claude_Deep_Dive|Anthropic Claude 技术深度解析]] — Claude Code 背后的模型
-- [[智能体/Agentic_Coding_Tools/index|Agentic Coding 索引]] — 工具主题导览
+- [[15_智能体/08_Agentic_Coding_Tools/Agentic_Coding_Tools_Overview|Agentic Coding 工具概览]] — 工具全景对比
+- [[15_智能体/08_Agentic_Coding_Tools/Aider_Deep_Dive|Aider 深度解析]] — 同类开源 CLI 工具对比
+- [[15_智能体/08_Agentic_Coding_Tools/Windsurf_Cursor_Devin_Dive|Windsurf/Cursor/Devin 对比]] — IDE 类工具对比
+- [[15_智能体/15_Course_Notes/Learn_Claude_Code_L01_Agent_Loop|Claude Code L01: Agent Loop]] — Claude Code 课程笔记
+- [[05_大模型/14_Global_LLM_Ecosystem/Anthropic_Claude_Deep_Dive|Anthropic Claude 技术深度解析]] — Claude Code 背后的模型
+- [[15_智能体/08_Agentic_Coding_Tools/index|Agentic Coding 索引]] — 工具主题导览

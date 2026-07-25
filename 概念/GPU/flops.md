@@ -7,10 +7,10 @@ relationships:
     type: builds_on
   - target: "概念/prefill-decode"
     type: related_to
-  - target: "部署推理/Inference_Performance/Inference_Terms_for_dummy"
+  - target: "10_部署推理/04_Inference_Performance/Inference_Terms_for_dummy"
     type: simplified_by
 sources:
-  - 部署推理/Inference_Performance/Inference_Terms_for_dummy.md
+  - 10_部署推理/04_Inference_Performance/Inference_Terms_for_dummy.md
 summary: FLOPS 衡量 GPU 每秒能执行多少次浮点运算，是 prefill 阶段算力瓶颈的关键指标，但高 FLOPS 不直接等于推理快，还受显存带宽和数据搬运限制。
 lifecycle: reviewed
 tier: core
@@ -96,7 +96,7 @@ FLOPS（Floating Point Operations Per Second）衡量处理器每秒执行的浮
 - [[概念/prefill-decode]] — Prefill / Decode 阶段
 - [[概念/GPU/expert-parallelism|Expert Parallelism]] — 并行效率度量
 - [[概念/Inference/ttft|TTFT]] — Prefill 速度直接影响首 token 延迟
-- [[部署推理/Inference_Performance/Inference_Terms_for_dummy|推理性能术语大白话解释]]
+- [[10_部署推理/04_Inference_Performance/Inference_Terms_for_dummy|推理性能术语大白话解释]]
 
 ## 2026 GPU FLOPS 对比
 

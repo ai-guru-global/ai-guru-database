@@ -17,18 +17,18 @@ sources: []
 
 ## 页面列表
 
-- [[大模型/Reasoning_Models/o1_Class_Reasoning_Models|o1-Class Reasoning Models]]
-- [[大模型/Reasoning_Models/DeepSeek_R1_Technical_Analysis|DeepSeek R1 Technical Analysis]]
-- [[大模型/Reasoning_Models/Process_Reward_Models|Process Reward Models]]
-- [[大模型/Reasoning_Models/Neuro_Symbolic_and_Formal_Verification_2026|Neuro-symbolic and Formal Verification]]
+- [[05_大模型/09_Reasoning_Models/o1_Class_Reasoning_Models|o1-Class Reasoning Models]]
+- [[05_大模型/09_Reasoning_Models/DeepSeek_R1_Technical_Analysis|DeepSeek R1 Technical Analysis]]
+- [[05_大模型/09_Reasoning_Models/Process_Reward_Models|Process Reward Models]]
+- [[05_大模型/09_Reasoning_Models/Neuro_Symbolic_and_Formal_Verification_2026|Neuro-symbolic and Formal Verification]]
 
 ## 相关页面
 
-- [[大模型/Reasoning_Models/README|推理模型目录]]
+- [[05_大模型/09_Reasoning_Models/README|推理模型目录]]
 
 ## Related
 
-- [[大模型/README|04 自然语言处理与大模型 (NLP & LLMs)]]
+- [[05_大模型/README|04 自然语言处理与大模型 (NLP & LLMs)]]
 
 ## 推理模型对比
 
@@ -171,8 +171,8 @@ sources: []
 
 ## Related
 
-- [[大模型/Prompt_Engineering/index|Prompt Engineering]]
-- [[大模型/index|大模型首页]]
+- [[05_大模型/08_Prompt_Engineering/index|Prompt Engineering]]
+- [[05_大模型/index|大模型首页]]
 - [[概念/reasoning|推理概念]]
 
 ## 附录：推理能力评估

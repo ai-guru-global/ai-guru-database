@@ -228,8 +228,8 @@ def apply_2_4_sparsity(weight):
 
 ## 相关文档
 
-- [[数学基础/Numerical_Methods/Numerical_Methods|数值方法总论]]
-- [[数学基础/Linear_Algebra/Linear_Algebra|线性代数]] — 矩阵运算基础
-- [[大模型/LLM_Architectures/|LLM 架构]] — MoE 稀疏激活
-- [[深度学习/Neural_Architecture_Search/|NAS]] — 稀疏架构搜索
-- [[部署推理/Model_Compression/|模型压缩]] — 剪枝与稀疏化
+- [[01_数学基础/05_Numerical_Methods/Numerical_Methods|数值方法总论]]
+- [[01_数学基础/02_Linear_Algebra/Linear_Algebra|线性代数]] — 矩阵运算基础
+- [[05_大模型/05_LLM_Architectures/|LLM 架构]] — MoE 稀疏激活
+- [[03_深度学习/Neural_Architecture_Search/|NAS]] — 稀疏架构搜索
+- [[10_部署推理/Model_Compression/|模型压缩]] — 剪枝与稀疏化

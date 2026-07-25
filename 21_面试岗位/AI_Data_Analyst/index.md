@@ -14,16 +14,16 @@ AI 数据分析师 — 利用 AI 工具与统计学方法进行数据分析、�
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[面试岗位/AI_Data_Analyst/question_bank|question_bank]] | 面试题库总览，按知识点分类 | 所有备考者 |
-| [[面试岗位/AI_Data_Analyst/company_level_question_bank|company_level_question_bank]] | 按公司/难度分级的真题集 | 有明确目标公司的候选人 |
-| [[面试岗位/AI_Data_Analyst/interview_answers|interview_answers]] | 高频面试题参考答案与解析 | 需要参考思路的备考者 |
-| [[面试岗位/AI_Data_Analyst/interview_preparing|interview_preparing]] | 备考策略与时间规划指南 | 首次面试 / 转岗求职者 |
+| [[21_面试岗位/AI_Data_Analyst/question_bank|question_bank]] | 面试题库总览，按知识点分类 | 所有备考者 |
+| [[21_面试岗位/AI_Data_Analyst/company_level_question_bank|company_level_question_bank]] | 按公司/难度分级的真题集 | 有明确目标公司的候选人 |
+| [[21_面试岗位/AI_Data_Analyst/interview_answers|interview_answers]] | 高频面试题参考答案与解析 | 需要参考思路的备考者 |
+| [[21_面试岗位/AI_Data_Analyst/interview_preparing|interview_preparing]] | 备考策略与时间规划指南 | 首次面试 / 转岗求职者 |
 
 ## Related
 
-- [[面试岗位/Data_Scientist/index|Data Scientist]]
-- [[面试岗位/Data_Engineer/index|Data Engineer]]
-- [[面试岗位/AI_Product_Manager/index|AI Product Manager]]
+- [[21_面试岗位/Data_Scientist/index|Data Scientist]]
+- [[21_面试岗位/Data_Engineer/index|Data Engineer]]
+- [[21_面试岗位/AI_Product_Manager/index|AI Product Manager]]
 
 ## 岗位核心能力模型
 
@@ -40,7 +40,7 @@ AI 数据分析师 — 利用 AI 工具与统计学方法进行数据分析、�
 | 轮次 | 内容 | 时长 | 考察重点 |
 |------|------|------|----------|
 | 简历筛选 | HR初筛 | - | 背景匹配度 |
-| 技术笔试 | 编程/选择题 | 60-90min | 基础功底 |
+| 技术笔试 | 16_编程/选择题 | 60-90min | 基础功底 |
 | 技术一面 | 算法+项目 | 45-60min | 编码能力+项目深度 |
 | 技术二面 | 系统设计+深度 | 45-60min | 架构思维+技术广度 |
 | 技术三面 | 综合+前沿 | 30-45min | 技术视野+潜力 |

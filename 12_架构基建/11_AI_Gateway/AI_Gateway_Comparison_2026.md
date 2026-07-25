@@ -711,17 +711,17 @@ Phase 4: 高级功能
 
 ### 相关文档
 
-- [Kong AI Gateway 深度解析](架构基建/AI_Gateway/Kong_AI_Gateway_Deep_Dive.md)
-- [Portkey 深度解析](架构基建/AI_Gateway/Portkey_Deep_Dive.md)
-- [LiteLLM 深度解析](架构基建/AI_Gateway/LiteLLM_Deep_Dive.md)
-- [AI Gateway 2026 概述](架构基建/AI_Gateway/AI_Gateway_2026.md)
+- [Kong AI Gateway 深度解析](12_架构基建/11_AI_Gateway/Kong_AI_Gateway_Deep_Dive.md)
+- [Portkey 深度解析](12_架构基建/11_AI_Gateway/Portkey_Deep_Dive.md)
+- [LiteLLM 深度解析](12_架构基建/11_AI_Gateway/LiteLLM_Deep_Dive.md)
+- [AI Gateway 2026 概述](12_架构基建/11_AI_Gateway/AI_Gateway_2026.md)
 - [API 设计 for AI](./API_Design_for_AI.md)
-- [部署推理 2026](../../部署推理/Deployment_Fundamentals/Deployment_Inference_2026.md)
+- [部署推理 2026](../../10_部署推理/01_Deployment_Fundamentals/Deployment_Inference_2026.md)
 
 ## Related
 
-- [[架构基建/AI_Gateway/AI_Gateway_2026.md|AI_Gateway_2026]]
-- [[架构基建/AI_Gateway/AI_Gateway_for_dummy.md|AI_Gateway_for_dummy]]
-- [[架构基建/AI_Gateway/Cohere_Deep_Dive.md|Cohere_Deep_Dive]]
-- [[架构基建/AI_Gateway/Gateway-in-nutshell.md|Gateway-in-nutshell]]
-- [[架构基建/AI_Gateway/Kong_AI_Gateway_Deep_Dive.md|Kong_AI_Gateway_Deep_Dive]]
+- [[12_架构基建/11_AI_Gateway/AI_Gateway_2026.md|AI_Gateway_2026]]
+- [[12_架构基建/11_AI_Gateway/AI_Gateway_for_dummy.md|AI_Gateway_for_dummy]]
+- [[12_架构基建/11_AI_Gateway/Cohere_Deep_Dive.md|Cohere_Deep_Dive]]
+- [[12_架构基建/11_AI_Gateway/Gateway-in-nutshell.md|Gateway-in-nutshell]]
+- [[12_架构基建/11_AI_Gateway/Kong_AI_Gateway_Deep_Dive.md|Kong_AI_Gateway_Deep_Dive]]

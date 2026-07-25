@@ -8,15 +8,15 @@ sources: []
 
 # AI Security 2026
 
-This page indexes the contents of `伦理安全/AI_Security_2026`.
+This page indexes the contents of `17_伦理安全/AI_Security_2026`.
 
 ## Files
 
-- [[伦理安全/AI_Security_2026/AI_Security_2026|AI Security 2026]]
-- [[伦理安全/AI_Security_2026/Falco_Deep_Dive|Falco Deep Dive]]
-- [[伦理安全/AI_Security_2026/Kyverno_Deep_Dive|Kyverno Deep Dive]]
-- [[伦理安全/AI_Security_2026/OPA_Deep_Dive|OPA Deep Dive]]
-- [[伦理安全/AI_Security_2026/README|README]]
+- [[17_伦理安全/07_AI_Security_2026/AI_Security_2026|AI Security 2026]]
+- [[17_伦理安全/07_AI_Security_2026/Falco_Deep_Dive|Falco Deep Dive]]
+- [[17_伦理安全/07_AI_Security_2026/Kyverno_Deep_Dive|Kyverno Deep Dive]]
+- [[17_伦理安全/07_AI_Security_2026/OPA_Deep_Dive|OPA Deep Dive]]
+- [[17_伦理安全/07_AI_Security_2026/README|README]]
 
 ## 核心知识体系
 
@@ -127,9 +127,9 @@ This page indexes the contents of `伦理安全/AI_Security_2026`.
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

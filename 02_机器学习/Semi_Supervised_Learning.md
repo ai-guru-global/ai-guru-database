@@ -298,8 +298,8 @@ def llm_pseudo_labeling(texts, model="gpt-4o", few_shot_examples=None):
 
 ## 相关文档
 
-- [[机器学习/Supervised_Learning/Supervised_Learning|监督学习]]
-- [[机器学习/Unsupervised_Learning/Unsupervised_Learning|无监督学习]]
-- [[深度学习/Self_Supervised_Learning/|自监督学习]]
-- [[大模型/Fine_tuning_Techniques/|微调技术]] — 少样本学习
-- [[模型评估/Evaluation_Datasets/|评估数据集]] — 标注质量
+- [[02_机器学习/02_Supervised_Learning/Supervised_Learning|监督学习]]
+- [[02_机器学习/03_Unsupervised_Learning/Unsupervised_Learning|无监督学习]]
+- [[03_深度学习/06_Self_Supervised_Learning/|自监督学习]]
+- [[05_大模型/07_Fine_tuning_Techniques/|微调技术]] — 少样本学习
+- [[08_模型评估/Evaluation_Datasets/|评估数据集]] — 标注质量

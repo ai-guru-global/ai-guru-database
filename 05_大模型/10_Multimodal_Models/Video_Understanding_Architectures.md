@@ -465,8 +465,8 @@ OpenAI 的 Sora 表明：**能生成逼真视频的模型，必然理解了物�
 
 ## Related
 
-- [[大模型/Multimodal_Models/Native_Multimodal_Architectures]]
-- [[大模型/Multimodal_Models/Modality_Fusion_Mechanisms]]
-- [[大模型/Multimodal_Models/Multimodal_Architectures_2026]]
+- [[05_大模型/10_Multimodal_Models/Native_Multimodal_Architectures]]
+- [[05_大模型/10_Multimodal_Models/Modality_Fusion_Mechanisms]]
+- [[05_大模型/10_Multimodal_Models/Multimodal_Architectures_2026]]
 - [[概念/multimodal-models]]
-- [[计算机视觉/Video_Generation/README]]
+- [[04_计算机视觉/07_Video_Generation/README]]

@@ -8,7 +8,7 @@ relationships:
   - target: "概念/agent-evaluation"
     type: related_to
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
 summary: "Weights & Biases (W&B) 是最流行的 ML 实验追踪和可视化平台——以精美的仪表盘、强大的可视化和 Sweeps 超参搜索著称。是 AI 研究领域的首选实验管理工具。"
 provenance:
   extracted: 0.20

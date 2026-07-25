@@ -21,7 +21,7 @@ AI 可视化知识体系（Visualization Knowledge Base）涵盖训练监控（t
 |------|------|
 | **解决什么问题** | 训练发散看不见、评估指标读不懂、系统黑盒难排查、图表误导决策 |
 | **核心方法** | 训练曲线分析、注意力/降维可视化、架构图与仪表盘、图表设计原则 |
-| **与谁协作** | [[模型训练/index\|模型训练]]、[[模型评估/index\|模型评估]]、[[架构基建/index\|架构基建]]、[[模型运维/index\|模型运维]] |
+| **与谁协作** | [[07_模型训练/index\|模型训练]]、[[08_模型评估/index\|模型评估]]、[[12_架构基建/index\|架构基建]]、[[11_模型运维/index\|模型运维]] |
 | **工具栈** | TensorBoard / Weights & Biases / Plotly / D3.js / ECharts / t-SNE / UMAP |
 
 ---
@@ -30,10 +30,10 @@ AI 可视化知识体系（Visualization Knowledge Base）涵盖训练监控（t
 
 | 子域 | 关注点 | 典型问题 | 入口 |
 |------|--------|----------|------|
-| **训练可视化** | 训练过程可观测 | Loss 为何不降？梯度是否爆炸？ | [[可视化/Training_Viz/index\|Training Viz]] |
-| **评估可视化** | 模型质量可解读 | 哪些样本错？注意力看哪里？嵌入如何分布？ | [[可视化/Evaluation_Viz/index\|Evaluation Viz]] |
-| **系统可视化** | 系统运行可观测 | 延迟/P95 多少？知识图谱长啥样？ | [[可视化/System_Viz/index\|System Viz]] |
-| **最佳实践** | 图表设计有章法 | 选什么图？怎么配色？如何叙事？ | [[可视化/Best_Practices/index\|Best Practices]] |
+| **训练可视化** | 训练过程可观测 | Loss 为何不降？梯度是否爆炸？ | [[94_可视化/Training_Viz/index\|Training Viz]] |
+| **评估可视化** | 模型质量可解读 | 哪些样本错？注意力看哪里？嵌入如何分布？ | [[94_可视化/Evaluation_Viz/index\|Evaluation Viz]] |
+| **系统可视化** | 系统运行可观测 | 延迟/P95 多少？知识图谱长啥样？ | [[94_可视化/System_Viz/index\|System Viz]] |
+| **最佳实践** | 图表设计有章法 | 选什么图？怎么配色？如何叙事？ | [[94_可视化/Best_Practices/index\|Best Practices]] |
 
 ---
 
@@ -43,45 +43,45 @@ AI 可视化知识体系（Visualization Knowledge Base）涵盖训练监控（t
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[可视化/README\|README]] | Visualization module overview and knowledge map | all readers |
-| [[可视化/README_for_dummy\|README for dummy]] | Visualization beginner guide and quick start | newcomers / beginners |
-| [[可视化/Best_Practices/Visualization_for_dummy\|Visualization for dummy]] | 工具选择与常见陷阱 | beginners |
+| [[94_可视化/README\|README]] | Visualization module overview and knowledge map | all readers |
+| [[94_可视化/README_for_dummy\|README for dummy]] | Visualization beginner guide and quick start | newcomers / beginners |
+| [[94_可视化/Best_Practices/Visualization_for_dummy\|Visualization for dummy]] | 工具选择与常见陷阱 | beginners |
 
 ### 训练可视化（Training Viz）
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[可视化/Training_Viz/Training_Monitoring_Visualization\|Training Monitoring Visualization]] | Loss/梯度/激活实时跟踪 | ML 工程师 |
-| [[可视化/Training_Viz/Training_Curves_Analysis\|Training Curves Analysis]] | 训练曲线分析（损失/梯度/学习率） | ML 工程师 / 深度学习实践者 |
-| [[可视化/Training_Viz/Embedding_Visualization_Guide\|Embedding Visualization Guide]] | 嵌入空间可视化 | DL 研究员 |
-| [[可视化/Training_Viz/Neural_Network_Visualization_Guide\|Neural Network Visualization Guide]] | 神经网络结构与特征可视化 | DL 研究员 |
-| [[可视化/Training_Viz/Experiment_Tracking_Visualization\|Experiment Tracking Visualization]] | 实验对比与追踪 | ML 工程师 |
-| [[可视化/Training_Viz/Data_Pipeline_Feature_Visualization\|Data Pipeline & Feature Visualization]] | 数据管道与特征可视化 | 数据工程师 |
+| [[94_可视化/Training_Viz/Training_Monitoring_Visualization\|Training Monitoring Visualization]] | Loss/梯度/激活实时跟踪 | ML 工程师 |
+| [[94_可视化/Training_Viz/Training_Curves_Analysis\|Training Curves Analysis]] | 训练曲线分析（损失/梯度/学习率） | ML 工程师 / 深度学习实践者 |
+| [[94_可视化/Training_Viz/Embedding_Visualization_Guide\|Embedding Visualization Guide]] | 嵌入空间可视化 | DL 研究员 |
+| [[94_可视化/Training_Viz/Neural_Network_Visualization_Guide\|Neural Network Visualization Guide]] | 神经网络结构与特征可视化 | DL 研究员 |
+| [[94_可视化/Training_Viz/Experiment_Tracking_Visualization\|Experiment Tracking Visualization]] | 实验对比与追踪 | ML 工程师 |
+| [[94_可视化/Training_Viz/Data_Pipeline_Feature_Visualization\|Data Pipeline & Feature Visualization]] | 数据管道与特征可视化 | 数据工程师 |
 
 ### 评估可视化（Evaluation Viz）
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[可视化/Evaluation_Viz/Evaluation_Visualization_Guide\|Evaluation Visualization Guide]] | 混淆矩阵/ROC/PR/雷达图 | ML 工程师 |
-| [[可视化/Evaluation_Viz/Attention_Visualization\|Attention Visualization]] | 注意力可视化（注意力图/热力图） | NLP/CV 研究员 |
-| [[可视化/Evaluation_Viz/Model_Interpretability_Visualization\|Model Interpretability Visualization]] | SHAP/LIME/可解释性 | 可解释性研究员 |
-| [[可视化/Evaluation_Viz/Dimensionality_Reduction_Viz\|Dimensionality Reduction Viz]] | t-SNE/UMAP/PCA 降维可视化 | DL 研究员 |
+| [[94_可视化/Evaluation_Viz/Evaluation_Visualization_Guide\|Evaluation Visualization Guide]] | 混淆矩阵/ROC/PR/雷达图 | ML 工程师 |
+| [[94_可视化/Evaluation_Viz/Attention_Visualization\|Attention Visualization]] | 注意力可视化（注意力图/热力图） | NLP/CV 研究员 |
+| [[94_可视化/Evaluation_Viz/Model_Interpretability_Visualization\|Model Interpretability Visualization]] | SHAP/LIME/可解释性 | 可解释性研究员 |
+| [[94_可视化/Evaluation_Viz/Dimensionality_Reduction_Viz\|Dimensionality Reduction Viz]] | t-SNE/UMAP/PCA 降维可视化 | DL 研究员 |
 
 ### 系统可视化（System Viz）
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[可视化/System_Viz/AI_System_Dashboard\|AI System Dashboard]] | 监控/告警/运维仪表盘 | 平台工程师 |
-| [[可视化/System_Viz/Inference_Serving_Visualization\|Inference Serving Visualization]] | 推理服务可视化 | 推理工程师 |
-| [[可视化/System_Viz/Knowledge_Graph_Visualization\|Knowledge Graph Visualization]] | 知识图谱布局与交互 | 图谱工程师 |
-| [[可视化/System_Viz/Model_Architecture_Viz\|Model Architecture Viz]] | 模型架构可视化 | 架构师 / 研究员 |
+| [[94_可视化/System_Viz/AI_System_Dashboard\|AI System Dashboard]] | 监控/告警/运维仪表盘 | 平台工程师 |
+| [[94_可视化/System_Viz/Inference_Serving_Visualization\|Inference Serving Visualization]] | 推理服务可视化 | 推理工程师 |
+| [[94_可视化/System_Viz/Knowledge_Graph_Visualization\|Knowledge Graph Visualization]] | 知识图谱布局与交互 | 图谱工程师 |
+| [[94_可视化/System_Viz/Model_Architecture_Viz\|Model Architecture Viz]] | 模型架构可视化 | 架构师 / 研究员 |
 
 ### 最佳实践（Best Practices）
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[可视化/Best_Practices/Data_Visualization_Best_Practices\|Data Visualization Best Practices]] | 图表选择/配色/标注 | 全体实践者 |
-| [[可视化/Best_Practices/Data_Viz_Best_Practices\|Data Viz Best Practices]] | 数据可视化最佳实践（深度版） | 数据分析师 |
+| [[94_可视化/Best_Practices/Data_Visualization_Best_Practices\|Data Visualization Best Practices]] | 图表选择/配色/标注 | 全体实践者 |
+| [[94_可视化/Best_Practices/Data_Viz_Best_Practices\|Data Viz Best Practices]] | 数据可视化最佳实践（深度版） | 数据分析师 |
 
 ---
 
@@ -125,12 +125,12 @@ flowchart LR
 
 | 工具 | 强项 | 适用场景 | 关联 |
 |------|------|----------|------|
-| TensorBoard | 训练日志原生支持 | 训练曲线/嵌入 | [[可视化/Training_Viz/index\|Training Viz]] |
-| Weights & Biases | 实验追踪/协作 | 多实验对比 | [[测试/Weights_Biases_Deep_Dive\|Weights & Biases]] |
-| Plotly / Dash | 交互式图表 | 评估图表/仪表盘 | [[可视化/Evaluation_Viz/index\|Evaluation Viz]] |
-| ECharts / D3.js | Web 可视化 | 系统仪表盘 | [[可视化/System_Viz/index\|System Viz]] |
-| t-SNE / UMAP | 降维投影 | 嵌入/特征 | [[可视化/Evaluation_Viz/Dimensionality_Reduction_Viz\|降维可视化]] |
-| Captum / SHAP | 可解释性 | 归因/注意力 | [[可视化/Evaluation_Viz/Model_Interpretability_Visualization\|可解释性]] |
+| TensorBoard | 训练日志原生支持 | 训练曲线/嵌入 | [[94_可视化/Training_Viz/index\|Training Viz]] |
+| Weights & Biases | 实验追踪/协作 | 多实验对比 | [[09_测试/Weights_Biases_Deep_Dive\|Weights & Biases]] |
+| Plotly / Dash | 交互式图表 | 评估图表/仪表盘 | [[94_可视化/Evaluation_Viz/index\|Evaluation Viz]] |
+| ECharts / D3.js | Web 可视化 | 系统仪表盘 | [[94_可视化/System_Viz/index\|System Viz]] |
+| t-SNE / UMAP | 降维投影 | 嵌入/特征 | [[94_可视化/Evaluation_Viz/Dimensionality_Reduction_Viz\|降维可视化]] |
+| Captum / SHAP | 可解释性 | 归因/注意力 | [[94_可视化/Evaluation_Viz/Model_Interpretability_Visualization\|可解释性]] |
 
 ---
 
@@ -138,12 +138,12 @@ flowchart LR
 
 | 陷阱 | 表现 | 正确做法 | 关联 |
 |------|------|----------|------|
-| 截断 y 轴 | 夸大差异 | 柱状图 y 轴从 0 起 | [[可视化/Best_Practices/Data_Viz_Best_Practices\|最佳实践]] |
-| 用饼图比微小占比 | 难以辨别 | 改用条形图 | [[可视化/Best_Practices/Data_Visualization_Best_Practices\|图表选择]] |
-| 颜色过多/红绿混用 | 色盲不友好 | 限 5 色+色盲安全调色板 | [[可视化/Best_Practices/Data_Viz_Best_Practices\|配色]] |
-| 训练曲线只看最终值 | 误判收敛 | 看趋势+方差+学习率 | [[可视化/Training_Viz/Training_Curves_Analysis\|曲线分析]] |
-| t-SNE 误解为距离 | 过度解读簇间距 | 结合局部/全局+多随机种子 | [[可视化/Evaluation_Viz/Dimensionality_Reduction_Viz\|降维]] |
-| 注意力≠因果 | 把权重当解释 | 配合归因方法交叉验证 | [[可视化/Evaluation_Viz/Attention_Visualization\|注意力]] |
+| 截断 y 轴 | 夸大差异 | 柱状图 y 轴从 0 起 | [[94_可视化/Best_Practices/Data_Viz_Best_Practices\|最佳实践]] |
+| 用饼图比微小占比 | 难以辨别 | 改用条形图 | [[94_可视化/Best_Practices/Data_Visualization_Best_Practices\|图表选择]] |
+| 颜色过多/红绿混用 | 色盲不友好 | 限 5 色+色盲安全调色板 | [[94_可视化/Best_Practices/Data_Viz_Best_Practices\|配色]] |
+| 训练曲线只看最终值 | 误判收敛 | 看趋势+方差+学习率 | [[94_可视化/Training_Viz/Training_Curves_Analysis\|曲线分析]] |
+| t-SNE 误解为距离 | 过度解读簇间距 | 结合局部/全局+多随机种子 | [[94_可视化/Evaluation_Viz/Dimensionality_Reduction_Viz\|降维]] |
+| 注意力≠因果 | 把权重当解释 | 配合归因方法交叉验证 | [[94_可视化/Evaluation_Viz/Attention_Visualization\|注意力]] |
 
 ---
 
@@ -191,12 +191,12 @@ flowchart LR
 
 ## 关联
 
-- [[模型训练/index|模型训练]] — 可视化的训练侧来源
-- [[模型评估/index|模型评估]] — 可视化的评估侧来源
-- [[架构基建/index|架构基建]] — 系统可视化的架构基础
-- [[模型运维/index|模型运维]] — 仪表盘与告警的运维上下文
-- [[测试/Weights_Biases_Deep_Dive|Weights & Biases]] — 实验追踪工具
-- [[深度学习/index|深度学习]] — 注意力/嵌入/降维的理论基础
+- [[07_模型训练/index|模型训练]] — 可视化的训练侧来源
+- [[08_模型评估/index|模型评估]] — 可视化的评估侧来源
+- [[12_架构基建/index|架构基建]] — 系统可视化的架构基础
+- [[11_模型运维/index|模型运维]] — 仪表盘与告警的运维上下文
+- [[09_测试/Weights_Biases_Deep_Dive|Weights & Biases]] — 实验追踪工具
+- [[03_深度学习/index|深度学习]] — 注意力/嵌入/降维的理论基础
 - [[治理/Best_Practices|治理最佳实践]] — 跨章节最佳实践参考
 
 ---

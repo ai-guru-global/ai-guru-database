@@ -250,5 +250,5 @@ model, optimizer, criterion, dataloader, lr_scheduler = booster.boost(
 - [[概念/deepspeed]] — DeepSpeed
 - [[概念/megatron-lm]] — Megatron-LM
 - [[概念/fsdp]] — FSDP
-- [[模型训练/Distributed_Training/DeepSpeed_Deep_Dive]] — DeepSpeed 深度解析
-- [[模型训练/Distributed_Training/Megatron_LM_Deep_Dive]] — Megatron-LM 深度解析
+- [[07_模型训练/04_Distributed_Training/DeepSpeed_Deep_Dive]] — DeepSpeed 深度解析
+- [[07_模型训练/04_Distributed_Training/Megatron_LM_Deep_Dive]] — Megatron-LM 深度解析

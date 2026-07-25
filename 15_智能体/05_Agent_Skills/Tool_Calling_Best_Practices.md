@@ -371,8 +371,8 @@ async def search_products(query: str, limit: int = 10) -> list[TextContent]:
 
 ## 相关阅读
 
-- [[智能体/Agent_Skills/Agent_Skills_Practical_Guide]] — Agent Skills 实战
-- [[智能体/Agent_Frameworks/SmolAgents_Practical_Guide]] — SmolAgents 实战
-- [[强化学习/AI_Agents/MCP_Implementation_Guide]] — MCP 实现指南
-- [[强化学习/AI_Agents/Agent_Protocols_Comparison_2026]] — Agent 协议对比
-- [[智能体/Agent_Workflow/Agentic_Workflow_Design_Patterns_2026]] — Agent 工作流设计模式
+- [[15_智能体/05_Agent_Skills/Agent_Skills_Practical_Guide]] — Agent Skills 实战
+- [[15_智能体/02_Agent_Frameworks/SmolAgents_Practical_Guide]] — SmolAgents 实战
+- [[06_强化学习/AI_Agents/MCP_Implementation_Guide]] — MCP 实现指南
+- [[06_强化学习/AI_Agents/Agent_Protocols_Comparison_2026]] — Agent 协议对比
+- [[15_智能体/03_Agent_Workflow/Agentic_Workflow_Design_Patterns_2026]] — Agent 工作流设计模式

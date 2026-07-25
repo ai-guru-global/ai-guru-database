@@ -150,15 +150,15 @@ response = client.chat.completions.create(
 
 ## Related
 
-- [[大模型/README]]
+- [[05_大模型/README]]
 - [[概念/transformer-architecture]]
 - [[概念/llm-architectures]]
-- [[论文精读/Architecture/BERT_Deep_Dive]]
-- [[论文精读/Scaling/GPT3_Deep_Dive]]
+- [[20_论文精读/02_Architecture/BERT_Deep_Dive]]
+- [[20_论文精读/03_Scaling/GPT3_Deep_Dive]]
 - [[概念/tokenization]]
 - [[概念/prompt-engineering]]
-- [[大模型/LLM_Fundamentals/ApacheCN_NLP_Track|ApacheCN NLP 学习路径]]
-- [[大模型/RAG_Frameworks/RAG_Frameworks|RAG 框架]]
+- [[05_大模型/01_LLM_Fundamentals/ApacheCN_NLP_Track|ApacheCN NLP 学习路径]]
+- [[05_大模型/RAG_Frameworks/RAG_Frameworks|RAG 框架]]
 
 ## 总结
 

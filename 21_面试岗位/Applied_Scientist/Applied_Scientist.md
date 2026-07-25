@@ -689,15 +689,15 @@ class SimpleRAG:
 
 ## Related
 
-- [[面试岗位/README|AI 面试准备 (Interviews)]]
-- [[面试岗位/jobs|AI 相关岗位与工种清单]]
-- [[面试岗位/Research_Scientist/Research_Scientist|Research Scientist 面试指南]]
-- [[面试岗位/AI_Research_Scientist/AI_Research_Scientist|AI Research Scientist 面试指南]]
-- [[面试岗位/AI_Research_Engineer/AI_Research_Engineer|AI Research Engineer 面试指南]]
-- [[面试岗位/Machine_Learning_Engineer/question_bank|Machine Learning Engineer 题库]]
-- [[面试岗位/Agent_Engineer/Agent_Engineer_2026|Agent Engineer 面试指南]]
-- [[面试岗位/AI_Product_Manager/AI_Product_Manager|AI Product Manager 面试指南]]
-- [[面试岗位/Data_Scientist/question_bank|Data Scientist 题库]]
+- [[21_面试岗位/README|AI 面试准备 (Interviews)]]
+- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/Research_Scientist/Research_Scientist|Research Scientist 面试指南]]
+- [[21_面试岗位/AI_Research_Scientist/AI_Research_Scientist|AI Research Scientist 面试指南]]
+- [[21_面试岗位/AI_Research_Engineer/AI_Research_Engineer|AI Research Engineer 面试指南]]
+- [[21_面试岗位/Machine_Learning_Engineer/question_bank|Machine Learning Engineer 题库]]
+- [[21_面试岗位/Agent_Engineer/Agent_Engineer_2026|Agent Engineer 面试指南]]
+- [[21_面试岗位/AI_Product_Manager/AI_Product_Manager|AI Product Manager 面试指南]]
+- [[21_面试岗位/Data_Scientist/question_bank|Data Scientist 题库]]
 
 ---
 

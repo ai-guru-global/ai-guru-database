@@ -10,8 +10,8 @@ relationships:
   - target: "概念/kubernetes"
     type: builds_on
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
-  - 架构基建/Architecture_Overview/AI_Infrastructure_2026
+  - 12_架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/02_Architecture_Overview/AI_Infrastructure_2026
 summary: "飞天企业版（Apsara Stack）是阿里云面向大型企业的私有云平台，提供完整云服务能力。AI Stack 可被飞天企业版纳管，形成云边一体的完整 AI 解决方案。"
 provenance:
   extracted: 0.55
@@ -126,8 +126,8 @@ updated: 2026-07-21
 - [[概念/ai-architecture]] — AI 架构（企业 AI 平台选型）
 - [[概念/single-tenant-architecture]] — 单租户架构
 - [[概念/kubernetes]] — Kubernetes（飞天企业版底层编排）
-- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack（与飞天企业版关系）
-- [[架构基建/Architecture_Overview/AI_Infrastructure_2026]] — AI 基础设施全景
+- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack（与飞天企业版关系）
+- [[12_架构基建/02_Architecture_Overview/AI_Infrastructure_2026]] — AI 基础设施全景
 
 ---
 

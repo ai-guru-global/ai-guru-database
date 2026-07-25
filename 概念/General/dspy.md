@@ -10,7 +10,7 @@ relationships:
   - target: "概念/humanloop"
     type: related_to
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
 summary: "Stanford NLP 开发的 LLM 编程框架，用声明式 Module 替代手写 Prompt，通过编译器自动优化 Prompt 和 Pipeline，是 Prompt Engineering 的范式革新。"
 provenance:
   extracted: 0.55

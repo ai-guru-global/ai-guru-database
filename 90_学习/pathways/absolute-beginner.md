@@ -58,8 +58,8 @@ Stage 1: 基础概念（轻量浏览，重点理解概念名称）
 **📚 核心概念**：[Stage 0: AI 觉醒](../concepts/stage0_awakening.md)
 
 **🔗 深入阅读**：
-- [AI 基础概念入门](入门/Fundamentals/AI_Fundamentals.md) — 最推荐的起点
-- [AI 历史与发展时间线](入门/Fundamentals/AI_History_Timeline.md) — 建立时间线感
+- [AI 基础概念入门](00_入门/01_Fundamentals/AI_Fundamentals.md) — 最推荐的起点
+- [AI 历史与发展时间线](00_入门/01_Fundamentals/AI_History_Timeline.md) — 建立时间线感
 
 **✅ 学会标志**：
 - 能用自己的话解释 AI 是什么
@@ -77,7 +77,7 @@ Stage 1: 基础概念（轻量浏览，重点理解概念名称）
 
 **🔗 深入阅读**：
 - [README_for_dummy.md](../.README_for_dummy.md) — 新手导航，章节级别的概览
-- [AI 技术全景概览](入门/Technology_Overview/AI_Technology_Landscape.md) — 技术栈全貌
+- [AI 技术全景概览](00_入门/02_Technology_Overview/AI_Technology_Landscape.md) — 技术栈全貌
 
 **💡 重点理解的概念**（只需要"知道"，不需要"会用"）：
 - 模型是什么（类比：经验丰富的老师傅）
@@ -103,10 +103,10 @@ Stage 1: 基础概念（轻量浏览，重点理解概念名称）
 **🎯 目标**：理解 ChatGPT、Claude 为什么能对话，它们背后的 Transformer 是什么。
 
 **🔗 深入阅读**：
-- [自然语言处理与大模型（小白版）](../../大模型/README_for_dummy.md)
-- [Transformer 革命（小白版）](大模型/Transformer_Revolution/Transformer_Revolution_for_dummy.md)
-- [提示词工程（小白版）](大模型/Prompt_Engineering/Prompt_Engineering_for_dummy.md)
-- [大语言模型架构（小白版）](大模型/LLM_Architectures/LLM_Architectures_for_dummy.md)
+- [自然语言处理与大模型（小白版）](../../05_大模型/README_for_dummy.md)
+- [Transformer 革命（小白版）](05_大模型/04_Transformer_Revolution/Transformer_Revolution_for_dummy.md)
+- [提示词工程（小白版）](05_大模型/08_Prompt_Engineering/Prompt_Engineering_for_dummy.md)
+- [大语言模型架构（小白版）](05_大模型/05_LLM_Architectures/LLM_Architectures_for_dummy.md)
 
 **✅ 学会标志**：
 - 能解释 Transformer 的核心思想（Attention 机制）
@@ -121,9 +121,9 @@ Stage 1: 基础概念（轻量浏览，重点理解概念名称）
 **🎯 目标**：理解 AI 怎么看图片和视频，为什么它能认出照片里的人脸。
 
 **🔗 深入阅读**：
-- [计算机视觉（小白版）](../../计算机视觉/README_for_dummy.md)
-- [图像分类与检测（小白版）](计算机视觉/Image_Classification_Detection/Image_Classification_Detection_for_dummy.md)
-- [生成模型（小白版）](计算机视觉/Generative_Models/Generative_Models_for_dummy.md)
+- [计算机视觉（小白版）](../../04_计算机视觉/README_for_dummy.md)
+- [图像分类与检测（小白版）](04_计算机视觉/02_Image_Classification_Detection/Image_Classification_Detection_for_dummy.md)
+- [生成模型（小白版）](04_计算机视觉/06_Generative_Models/Generative_Models_for_dummy.md)
 
 **✅ 学会标志**：
 - 能解释 CNN 的核心思想（卷积核扫描图像）
@@ -137,10 +137,10 @@ Stage 1: 基础概念（轻量浏览，重点理解概念名称）
 **🎯 目标**：理解 AI 对社会的影响，知道 AI 能做什么、不能做什么，以及我们应该如何应对。
 
 **🔗 深入阅读**：
-- [AI 伦理与社会影响](入门/Ethics_and_Future/AI_Ethics_Society.md)
-- [AI 经典案例分析集](入门/Ethics_and_Future/AI_Classic_Cases.md)
-- [价值对齐（小白版）](伦理安全/Value_Alignment/Value_Alignment_for_dummy.md)
-- [AI 安全与红队（小白版）](伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming_for_dummy.md)
+- [AI 伦理与社会影响](00_入门/04_Ethics_and_Future/AI_Ethics_Society.md)
+- [AI 经典案例分析集](00_入门/04_Ethics_and_Future/AI_Classic_Cases.md)
+- [价值对齐（小白版）](17_伦理安全/02_Value_Alignment/Value_Alignment_for_dummy.md)
+- [AI 安全与红队（小白版）](17_伦理安全/04_AI_Safety_RedTeaming/AI_Safety_RedTeaming_for_dummy.md)
 
 **✅ 学会标志**：
 - 能列出至少 3 个 AI 伦理问题并说出各方观点
@@ -154,9 +154,9 @@ Stage 1: 基础概念（轻量浏览，重点理解概念名称）
 **🎯 目标**：了解 AI 的未来走向，知道接下来可以关注什么。
 
 **🔗 深入阅读**：
-- [AI 未来趋势展望](入门/Ethics_and_Future/AI_Future_Trends.md)
-- [AI 学习资源与方法论](入门/Learning_Path/AI_Learning_Resources.md)
-- [AI 术语表与概念词典](入门/Fundamentals/AI_Glossary.md) — 遇到不懂的词随时查阅
+- [AI 未来趋势展望](00_入门/04_Ethics_and_Future/AI_Future_Trends.md)
+- [AI 学习资源与方法论](00_入门/03_Learning_Path/AI_Learning_Resources.md)
+- [AI 术语表与概念词典](00_入门/01_Fundamentals/AI_Glossary.md) — 遇到不懂的词随时查阅
 
 **✅ 学会标志**：
 - 能说出 AGI 是什么，当前距离 AGI 还有多远
@@ -177,7 +177,7 @@ Stage 1: 基础概念（轻量浏览，重点理解概念名称）
 | 想学点编程，动手做 AI 项目 | [ML 从业者路径](./ml-practitioner.md) |
 | 只想深入了解大模型技术 | [LLM 工程师路径](./llm-engineer.md)（前置部分） |
 | 想把 AI 用在工作中 | [AI 产品经理路径](./product-manager.md) |
-| 还想继续通识学习 | [AI 经典案例分析集](入门/Ethics_and_Future/AI_Classic_Cases.md) + [行业应用](行业应用/Industry_Overview/AI_Applications_Industry.md) |
+| 还想继续通识学习 | [AI 经典案例分析集](00_入门/04_Ethics_and_Future/AI_Classic_Cases.md) + [行业应用](18_行业应用/01_Industry_Overview/AI_Applications_Industry.md) |
 
 ---
 
@@ -185,10 +185,10 @@ Stage 1: 基础概念（轻量浏览，重点理解概念名称）
 
 ## Related
 
-- [[学习/guides/milestones]] — 里程碑自测 (共享: courses, education, learning, study-path)
-- [[学习/pathways/ai-researcher]] — AI 研究者路径 (共享: courses, education, learning, study-path)
-- [[学习/pathways/java-developer]] — Java 开发者 AI 路径 (共享: courses, education, learning, study-path)
-- [[学习/pathways/llm-engineer]] — LLM 工程师路径 (共享: courses, education, learning, study-path)
+- [[90_学习/guides/milestones]] — 里程碑自测 (共享: courses, education, learning, study-path)
+- [[90_学习/pathways/ai-researcher]] — AI 研究者路径 (共享: courses, education, learning, study-path)
+- [[90_学习/pathways/java-developer]] — Java 开发者 AI 路径 (共享: courses, education, learning, study-path)
+- [[90_学习/pathways/llm-engineer]] — LLM 工程师路径 (共享: courses, education, learning, study-path)
 
 ## 核心知识框架
 

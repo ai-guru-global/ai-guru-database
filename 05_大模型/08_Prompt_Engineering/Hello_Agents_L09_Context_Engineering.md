@@ -141,11 +141,11 @@ aliases:
 
 ## 7. 关联阅读
 
-- [[大模型/Prompt_Engineering/Prompt_Engineering]] — 提示工程基础
-- [[大模型/Prompt_Engineering/Prompt_Engineering_Principles_Ng]] — Ng 提示工程原则
-- [[智能体/Hello_Agents_L08_Memory_RAG]] — 记忆与 RAG
-- [[智能体/Agent_Workflow/Workflow-in-nutshell]] — Agent 工作流总览
-- [[大模型/Prompt_Engineering/Hello_Agents_L04_ReAct|ReAct 模式]]
+- [[05_大模型/08_Prompt_Engineering/Prompt_Engineering]] — 提示工程基础
+- [[05_大模型/08_Prompt_Engineering/Prompt_Engineering_Principles_Ng]] — Ng 提示工程原则
+- [[15_智能体/Hello_Agents_L08_Memory_RAG]] — 记忆与 RAG
+- [[15_智能体/03_Agent_Workflow/Workflow-in-nutshell]] — Agent 工作流总览
+- [[05_大模型/08_Prompt_Engineering/Hello_Agents_L04_ReAct|ReAct 模式]]
 
 ## 8. 代码示例：ContextBuilder
 

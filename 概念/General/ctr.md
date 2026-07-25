@@ -8,7 +8,7 @@ relationships:
   - target: "概念/container-runtime"
     type: related_to
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
 summary: "ctr 是 containerd 自带的原生命令行工具，用于直接与 containerd 守护进程交互——管理容器、镜像、快照、任务等。与 crictl 互补，是 AI Stack 底层容器调试的重要工具。"
 provenance:
   extracted: 0.20

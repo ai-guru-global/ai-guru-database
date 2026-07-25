@@ -52,8 +52,8 @@ sources: []
 - [[概念/alibaba-cloud|Alibaba Cloud]]
 - [[概念/ack|ACK]]
 - [[概念/mlops|MLOps]]
-- [[架构基建/Cloud_Providers/Alibaba_PAI_Deep_Dive|阿里云 PAI 深度解析]]
-- [[架构基建/Alibaba_Cloud_Proprietary_K8s_Context|阿里云专有云 K8s 上下文]]
+- [[12_架构基建/06_Cloud_Providers/Alibaba_PAI_Deep_Dive|阿里云 PAI 深度解析]]
+- [[12_架构基建/Alibaba_Cloud_Proprietary_K8s_Context|阿里云专有云 K8s 上下文]]
 
 ---
 

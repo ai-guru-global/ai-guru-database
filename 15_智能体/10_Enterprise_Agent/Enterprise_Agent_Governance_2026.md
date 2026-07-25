@@ -117,16 +117,16 @@ graph TD
 
 ## Related
 
-- [[架构基建/AI_Gateway/AI_Gateway_2026]] — 治理逻辑的物理落地层
-- [[智能体/Enterprise_Agent/Agent_Production_2026]] — 生产级部署
-- [[伦理安全/AI_Regulatory_Engineering_2026]] — 外部法律与内部治理的对接
-- [[模型运维/MLOps_Maturity_Model]] — 治理成熟度评估
+- [[12_架构基建/11_AI_Gateway/AI_Gateway_2026]] — 治理逻辑的物理落地层
+- [[15_智能体/10_Enterprise_Agent/Agent_Production_2026]] — 生产级部署
+- [[17_伦理安全/AI_Regulatory_Engineering_2026]] — 外部法律与内部治理的对接
+- [[11_模型运维/MLOps_Maturity_Model]] — 治理成熟度评估
 
 ---
 
 *Last updated: 2026-06-04*
 
-- [[智能体/README|Agent 生产部署 (Agent Production)]]
+- [[15_智能体/README|Agent 生产部署 (Agent Production)]]
 
 ## 附录：核心概念速查
 

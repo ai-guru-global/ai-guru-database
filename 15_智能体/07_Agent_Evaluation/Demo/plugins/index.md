@@ -15,14 +15,14 @@ tags: [auto-index]
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[智能体/Agent_Evaluation/Demo/plugins/base|base]] | Plugin base class and interface definition | plugin developers |
-| [[智能体/Agent_Evaluation/Demo/plugins/aliyun_plugin|aliyun plugin]] | Aliyun model API adapter plugin | integration engineers |
-| [[智能体/Agent_Evaluation/Demo/plugins/openai_plugin|openai plugin]] | OpenAI model API adapter plugin | integration engineers |
-| [[智能体/Agent_Evaluation/Demo/plugins/__init__|  init  ]] | Module initialization file | developers |
+| [[15_智能体/07_Agent_Evaluation/Demo/plugins/base|base]] | Plugin base class and interface definition | plugin developers |
+| [[15_智能体/07_Agent_Evaluation/Demo/plugins/aliyun_plugin|aliyun plugin]] | Aliyun model API adapter plugin | integration engineers |
+| [[15_智能体/07_Agent_Evaluation/Demo/plugins/openai_plugin|openai plugin]] | OpenAI model API adapter plugin | integration engineers |
+| [[15_智能体/07_Agent_Evaluation/Demo/plugins/__init__|  init  ]] | Module initialization file | developers |
 
 ## Related
 
-- [[智能体/Agent_Evaluation/Demo/index|Demo 首页]]
+- [[15_智能体/07_Agent_Evaluation/Demo/index|Demo 首页]]
 
 ## plugins 核心概念
 

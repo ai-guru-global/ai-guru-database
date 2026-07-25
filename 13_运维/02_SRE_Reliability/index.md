@@ -8,23 +8,23 @@ sources: []
 
 # SRE Reliability
 
-This page indexes the contents of `运维/SRE_Reliability`.
+This page indexes the contents of `13_运维/SRE_Reliability`.
 
 ## Files
 
-- [[运维/SRE_Reliability/AI_Incident_Response_Playbook|AI Incident Response Playbook]]
-- [[运维/SRE_Reliability/Chaos_Engineering_AI|Chaos Engineering AI]]
-- [[运维/SRE_Reliability/Cost_Optimization_AI_Deep_Dive|Cost Optimization AI Deep Dive]]
-- [[运维/SRE_Reliability/GPU_OOM_Troubleshooting_Guide|GPU OOM Troubleshooting Guide]]
-- [[运维/SRE_Reliability/GPU_Troubleshooting_Cheat_Sheet|GPU Troubleshooting Cheat Sheet]]
-- [[运维/SRE_Reliability/Guardrails_Deep_Dive|Guardrails Deep Dive]]
-- [[运维/SRE_Reliability/HAMi_Troubleshooting_Guide|HAMi Troubleshooting Guide]]
-- [[运维/SRE_Reliability/Incident_Response_for_AI_Systems|Incident Response For AI Systems]]
-- [[运维/SRE_Reliability/K8s_AI_Troubleshooting_Cheat_Sheet|K8s AI Troubleshooting Cheat Sheet]]
-- [[运维/SRE_Reliability/LLM_Inference_SLO_Guide|LLM Inference SLO Guide]]
-- [[运维/SRE_Reliability/LLM_Inference_Slow_Unavailable_Runbook|LLM Inference Slow Unavailable Runbook]]
-- [[运维/SRE_Reliability/SLO_Error_Budget_AI_Deep_Dive|SLO Error Budget AI Deep Dive]]
-- [[运维/SRE_Reliability/SRE_for_AI_Systems|SRE For AI Systems]]
+- [[13_运维/02_SRE_Reliability/AI_Incident_Response_Playbook|AI Incident Response Playbook]]
+- [[13_运维/02_SRE_Reliability/Chaos_Engineering_AI|Chaos Engineering AI]]
+- [[13_运维/02_SRE_Reliability/Cost_Optimization_AI_Deep_Dive|Cost Optimization AI Deep Dive]]
+- [[13_运维/02_SRE_Reliability/GPU_OOM_Troubleshooting_Guide|GPU OOM Troubleshooting Guide]]
+- [[13_运维/02_SRE_Reliability/GPU_Troubleshooting_Cheat_Sheet|GPU Troubleshooting Cheat Sheet]]
+- [[13_运维/02_SRE_Reliability/Guardrails_Deep_Dive|Guardrails Deep Dive]]
+- [[13_运维/02_SRE_Reliability/HAMi_Troubleshooting_Guide|HAMi Troubleshooting Guide]]
+- [[13_运维/02_SRE_Reliability/Incident_Response_for_AI_Systems|Incident Response For AI Systems]]
+- [[13_运维/02_SRE_Reliability/K8s_AI_Troubleshooting_Cheat_Sheet|K8s AI Troubleshooting Cheat Sheet]]
+- [[13_运维/02_SRE_Reliability/LLM_Inference_SLO_Guide|LLM Inference SLO Guide]]
+- [[13_运维/02_SRE_Reliability/LLM_Inference_Slow_Unavailable_Runbook|LLM Inference Slow Unavailable Runbook]]
+- [[13_运维/02_SRE_Reliability/SLO_Error_Budget_AI_Deep_Dive|SLO Error Budget AI Deep Dive]]
+- [[13_运维/02_SRE_Reliability/SRE_for_AI_Systems|SRE For AI Systems]]
 
 ## 进阶知识拓展
 
@@ -62,9 +62,9 @@ This page indexes the contents of `运维/SRE_Reliability`.
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

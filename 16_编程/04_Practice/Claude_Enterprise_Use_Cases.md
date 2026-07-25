@@ -176,7 +176,7 @@ CI 失败 2000 行日志 → 过滤 Info/Warn
 
 ## Related
 
-- [[编程/README|编程 (AI Coding)]]
+- [[16_编程/README|编程 (AI Coding)]]
 
 ## 核心知识体系
 

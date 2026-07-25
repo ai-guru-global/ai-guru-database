@@ -73,9 +73,9 @@ sources: []
 
 - [[概念/chaos-engineering|Chaos Engineering]]
 - [[概念/resilience|Resilience]]
-- [[运维/Incident_Response/AI_Incident_Response_Framework|AI 事故响应框架]]
+- [[13_运维/03_Incident_Response/AI_Incident_Response_Framework|AI 事故响应框架]]
 
-- [[运维/README|AI 运维与可观测性 (AI Ops)]]
+- [[13_运维/README|AI 运维与可观测性 (AI Ops)]]
 
 ## 进阶知识拓展
 
@@ -113,9 +113,9 @@ sources: []
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

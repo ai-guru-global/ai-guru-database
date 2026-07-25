@@ -360,7 +360,7 @@ spec:
           nvidia.com/gpucores: 50
 ```
 
-> 需要节点已安装 HAMi，且 `schedulerName` 设为 `hami-scheduler`。详见 [[架构基建/AI_Stack/HAMi_Operation_Guide]]。
+> 需要节点已安装 HAMi，且 `schedulerName` 设为 `hami-scheduler`。详见 [[12_架构基建/03_AI_Stack/HAMi_Operation_Guide]]。
 
 ---
 
@@ -454,8 +454,8 @@ kubectl logs <predictor-pod>
 - [[概念/model-serving]] — 模型服务
 - [[概念/vllm]] — vLLM 推理引擎
 - [[概念/hami]] — HAMi GPU 虚拟化
-- [[部署推理/Inference_Engines/BentoML_Deep_Dive]] — BentoML
-- [[部署推理/Inference_Engines/TGI_Deep_Dive]] — TGI
-- [[架构基建/CNCF_Cloud_Native_AI/README]] — CNCF 云原生大模型全景
+- [[10_部署推理/02_Inference_Engines/BentoML_Deep_Dive]] — BentoML
+- [[10_部署推理/02_Inference_Engines/TGI_Deep_Dive]] — TGI
+- [[12_架构基建/05_CNCF_Cloud_Native_AI/README]] — CNCF 云原生大模型全景
 
-- [[部署推理/README|模型部署与推理]]
+- [[10_部署推理/README|模型部署与推理]]

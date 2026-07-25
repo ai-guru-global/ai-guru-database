@@ -197,4 +197,4 @@ def execute_with_replan(plan, executor, max_replans=3):
 - [[概念/Agent/agent-reflection|Agent 反思]] — 规划失败时的自我修正
 - [[概念/Agent/agent-memory-systems|Agent 记忆]] — 规划依赖记忆中的经验
 - [[概念/LLM/reasoning-models|推理模型]] — 内化规划的新范式
-- [[智能体/Agent_Foundations/AI_Agents|AI Agents 详解]]
+- [[15_智能体/01_Agent_Foundations/AI_Agents|AI Agents 详解]]

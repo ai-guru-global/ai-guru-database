@@ -225,9 +225,9 @@ MRL 可以被看作一种**渐进式信息释放**：
 
 ## 9. 与本书其他内容的关系
 
-- [[RAG系统/Embeddings/Matryoshka_Representation_Learning_Deep_Dive|Matryoshka Representation Learning 深度解析]] — 主章节深度专题
+- [[14_RAG系统/02_Embeddings/Matryoshka_Representation_Learning_Deep_Dive|Matryoshka Representation Learning 深度解析]] — 主章节深度专题
 - [[概念/matryoshka-representation-learning]] — 概念卡片
-- [[RAG系统/Embeddings/Embedding_Models_Guide|Embedding 模型选型]] — MRL 支持的模型选型
+- [[14_RAG系统/02_Embeddings/Embedding_Models_Guide|Embedding 模型选型]] — MRL 支持的模型选型
 - [[概念/vector-database]] — 向量库存储维度策略
 - [[概念/model-compression]] — 与模型压缩的关系
 

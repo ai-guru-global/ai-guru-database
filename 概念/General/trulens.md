@@ -10,7 +10,7 @@ relationships:
   - target: "概念/opik"
     type: related_to
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
 summary: "TruLens 是 Snowflake 开源的 LLM 评估框架——以 Feedback Functions（反馈函数）为核心，支持自定义评估逻辑，覆盖 RAG、Agent、安全等多维度评估。追踪与评估一体化。"
 provenance:
   extracted: 0.15

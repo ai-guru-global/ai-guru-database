@@ -15,13 +15,13 @@ tags: [auto-index]
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[面试岗位/Prompt_Engineer/Prompt_Engineer|Prompt Engineer]] | 岗位面试全攻略：提示词模式、评估方法论与生产级 Prompt 管理 | prompt engineer candidates / LLM application developers |
+| [[21_面试岗位/Prompt_Engineer/Prompt_Engineer|Prompt Engineer]] | 岗位面试全攻略：提示词模式、评估方法论与生产级 Prompt 管理 | prompt engineer candidates / LLM application developers |
 
 ## Related
 
-- [[面试岗位/AI_Evaluation_Engineer/index|AI Evaluation Engineer]]
-- [[模型运维/Prompt_Ops/index|Prompt Ops]]
-- [[大模型/Sequence_Models/index|Sequence Models]]
+- [[21_面试岗位/AI_Evaluation_Engineer/index|AI Evaluation Engineer]]
+- [[11_模型运维/11_Prompt_Ops/index|Prompt Ops]]
+- [[05_大模型/02_Sequence_Models/index|Sequence Models]]
 
 ## 岗位核心能力模型
 
@@ -38,7 +38,7 @@ tags: [auto-index]
 | 轮次 | 内容 | 时长 | 考察重点 |
 |------|------|------|----------|
 | 简历筛选 | HR初筛 | - | 背景匹配度 |
-| 技术笔试 | 编程/选择题 | 60-90min | 基础功底 |
+| 技术笔试 | 16_编程/选择题 | 60-90min | 基础功底 |
 | 技术一面 | 算法+项目 | 45-60min | 编码能力+项目深度 |
 | 技术二面 | 系统设计+深度 | 45-60min | 架构思维+技术广度 |
 | 技术三面 | 综合+前沿 | 30-45min | 技术视野+潜力 |

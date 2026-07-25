@@ -1421,7 +1421,7 @@ KV Cache for 10M tokens 需要巨大内存
 
 ### 11.1 关联文档
 
-- **LLaMA 论文深度解读** → [../../论文精读/LLaMA_Deep_Dive.md](论文精读/Architecture/LLaMA_Deep_Dive.md)
+- **LLaMA 论文深度解读** → [../../20_论文精读/LLaMA_Deep_Dive.md](20_论文精读/02_Architecture/LLaMA_Deep_Dive.md)
  - LLaMA 1/2/3 论文的核心技术细节、训练方法和实验分析
 
 - **LLM 架构综述** → [../LLM_Architectures/LLM_Architectures.md](../LLM_Architectures/LLM_Architectures.md)
@@ -1550,10 +1550,10 @@ LLaMA 模型选择指南
 
 ## 相关链接
 
-- [[大模型/Global_LLM_Ecosystem/README|国际大模型生态全景]] — 五大国际大模型厂商横向对比
-- [[大模型/Global_LLM_Ecosystem/Mistral_AI_Deep_Dive|Mistral AI 技术深度解析]] — 同为开源 LLM 旗手的技术路线对比
-- [[大模型/LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral|MoE 案例：DeepSeek 与 Mixtral]] — LLaMA MoE 与 Mixtral 架构对比
-- [[大模型/Chinese_LLM_Ecosystem/Qwen_Deep_Dive|Qwen 深度解析]] — 开源生态中的另一强力竞争者
-- [[大模型/Edge_LLM/Edge_LLM_Deep_Dive|端侧 LLM 深度解读]] — LLaMA 在端侧部署中的应用
+- [[05_大模型/14_Global_LLM_Ecosystem/README|国际大模型生态全景]] — 五大国际大模型厂商横向对比
+- [[05_大模型/14_Global_LLM_Ecosystem/Mistral_AI_Deep_Dive|Mistral AI 技术深度解析]] — 同为开源 LLM 旗手的技术路线对比
+- [[05_大模型/05_LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral|MoE 案例：DeepSeek 与 Mixtral]] — LLaMA MoE 与 Mixtral 架构对比
+- [[05_大模型/15_Chinese_LLM_Ecosystem/Qwen_Deep_Dive|Qwen 深度解析]] — 开源生态中的另一强力竞争者
+- [[05_大模型/12_Edge_LLM/Edge_LLM_Deep_Dive|端侧 LLM 深度解读]] — LLaMA 在端侧部署中的应用
 - [[概念/LLM/llama-series|LLaMA 系列]] — LLaMA 模型家族概念卡片
 - [[概念/LLM/llama-cpp|llama.cpp]] — LLaMA 主流端侧推理引擎

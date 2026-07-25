@@ -120,11 +120,11 @@ sources: []
 | `missing_reference` | 6 | `参考/X` 引用缺失 | 单独治理（资料整理）|
 
 **Top 5 热点**：
-- `学习/guides/learning_paths_2026.md` (32 条)
+- `90_学习/guides/learning_paths_2026.md` (32 条)
 - `模板/DOCUMENT_TEMPLATES.md` (21 条)
-- `学习/Courses/apachecn/ailearning_guide.md` (9 条)
-- `智能体/Agent_Foundations/AI_Agents.md` (7 条)
-- `强化学习/Deep_RL/Deep_RL.md` (7 条)
+- `90_学习/Courses/apachecn/ailearning_guide.md` (9 条)
+- `15_智能体/01_Agent_Foundations/AI_Agents.md` (7 条)
+- `06_强化学习/02_Deep_RL/Deep_RL.md` (7 条)
 
 ---
 

@@ -73,15 +73,15 @@ sources: []
 
 ## Related
 
-- [[业界观点/Wenfeng_Liang/about]] — 梁文锋简介
-- [[大模型/Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive]] — DeepSeek 深度解析
-- [[论文精读/Scaling/Scaling_Laws_Deep_Dive]] — Scaling Laws 论文解读
+- [[19_业界观点/Wenfeng_Liang/about]] — 梁文锋简介
+- [[05_大模型/15_Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive]] — DeepSeek 深度解析
+- [[20_论文精读/03_Scaling/Scaling_Laws_Deep_Dive]] — Scaling Laws 论文解读
 
 ---
 
 *Last updated: 2026-06-24*
 
-- [[业界观点/README|AI 名人演讲与观点 (Talks)]]
+- [[19_业界观点/README|AI 名人演讲与观点 (Talks)]]
 
 ## 观点影响力评估
 
@@ -144,7 +144,7 @@ sources: []
 | 安全伦理 | 对齐/监管/风险 | #安全 |
 | 商业洞察 | 市场/竞争/战略 | #商业 |
 | 社会影响 | 就业/教育/公平 | #社会 |
-| 个人成长 | 学习/思维/习惯 | #成长 |
+| 个人成长 | 90_学习/思维/习惯 | #成长 |
 
 ## 附录：引用指南
 

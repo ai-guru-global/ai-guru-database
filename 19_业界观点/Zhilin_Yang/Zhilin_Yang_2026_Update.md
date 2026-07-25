@@ -43,7 +43,7 @@ sources: []
 - **产品迭代者**: Kimi 从"长文本助手"进化为"长程推理 + Agent"平台
 - **架构升级者**: Kimi K2 采用万亿参数 MoE，平衡能力与成本
 - **学术底色创业者**: 始终从第一性原理出发，强调长上下文的理论价值
-- **中国 AI 六小龙之一**: 与 [[业界观点/Wenfeng_Liang/about|梁文锋]]（DeepSeek）、[[业界观点/Junjie_Yan/about|闫俊杰]]（MiniMax）等并列
+- **中国 AI 六小龙之一**: 与 [[19_业界观点/Wenfeng_Liang/about|梁文锋]]（DeepSeek）、[[19_业界观点/Junjie_Yan/about|闫俊杰]]（MiniMax）等并列
 
 ---
 
@@ -84,7 +84,7 @@ Kimi K2 标志着月之暗面从"稠密模型"转向 MoE 架构：
 | 目标 | C 端长文本助手 | 全栈（C 端 + 推理 + Agent） |
 | 效率 | 稠密推理成本高 | MoE 降低单位 token 成本 |
 
-MoE 转型是大模型行业的共同趋势，参见 [[业界观点/Wenfeng_Liang/Wenfeng_Liang_2026_Update|DeepSeek]] 与 [[业界观点/Mark_Zuckerberg/Zuckerberg_AI_Pivot_2026|Llama 4]] 均采用 MoE。
+MoE 转型是大模型行业的共同趋势，参见 [[19_业界观点/Wenfeng_Liang/Wenfeng_Liang_2026_Update|DeepSeek]] 与 [[19_业界观点/Mark_Zuckerberg/Zuckerberg_AI_Pivot_2026|Llama 4]] 均采用 MoE。
 
 ### 从 C 端向 ToB/Agent 延伸
 
@@ -107,7 +107,7 @@ MoE 转型是大模型行业的共同趋势，参见 [[业界观点/Wenfeng_Lian
 
 ### 对 Scaling Law 的看法
 
-杨植麟认同 Scaling Law 的方向，但强调"**有效上下文**"比"理论窗口"更重要——长上下文的质量（能否真正利用长程信息，而非在开头结尾 attend）是核心挑战，这关联 [[部署推理/Inference_Performance/Long_Context_Inference_2026|长上下文推理]]。
+杨植麟认同 Scaling Law 的方向，但强调"**有效上下文**"比"理论窗口"更重要——长上下文的质量（能否真正利用长程信息，而非在开头结尾 attend）是核心挑战，这关联 [[10_部署推理/04_Inference_Performance/Long_Context_Inference_2026|长上下文推理]]。
 
 ### 创业即做研究
 
@@ -122,7 +122,7 @@ MoE 转型是大模型行业的共同趋势，参见 [[业界观点/Wenfeng_Lian
 | 玩家 | 上下文策略 | 2026 定位 |
 |------|-----------|-----------|
 | **Kimi（月之暗面）** | 极致产品级长上下文（200 万字） | 中文长文本心智第一 |
-| [[业界观点/Junjie_Yan/about\|MiniMax]] | Lightning Attention 线性复杂度，4M 推理外推 | 效率型长上下文 |
+| [[19_业界观点/Junjie_Yan/about\|MiniMax]] | Lightning Attention 线性复杂度，4M 推理外推 | 效率型长上下文 |
 | Google Gemini | 原生长上下文（百万 token） | 全球长上下文标杆 |
 | OpenAI | 上下文 + 推理模型结合 | 通用标杆 |
 
@@ -156,22 +156,22 @@ Kimi 用户量大但付费转化与 ARPU 面临中国 C 端 AI 应用的普遍�
 ## 关联与延伸
 
 ### 人物关联
-- [[业界观点/Zhilin_Yang/about|杨植麟 概述]]
-- [[业界观点/Zhilin_Yang/index|杨植麟 主页]]
-- [[业界观点/Zhilin_Yang/sayings|杨植麟 语录]]
+- [[19_业界观点/Zhilin_Yang/about|杨植麟 概述]]
+- [[19_业界观点/Zhilin_Yang/index|杨植麟 主页]]
+- [[19_业界观点/Zhilin_Yang/sayings|杨植麟 语录]]
 
 ### 中国 AI 六小龙
-- [[业界观点/Wenfeng_Liang/Wenfeng_Liang_2026_Update|梁文锋（DeepSeek）]]
-- [[业界观点/Junjie_Yan/about|闫俊杰（MiniMax）]]
-- [[业界观点/Jie_Tang/about|唐杰（智谱 AI）]]
-- [[业界观点/Jinze_Bai/about|白辰甲（阶跃星辰）]]
+- [[19_业界观点/Wenfeng_Liang/Wenfeng_Liang_2026_Update|梁文锋（DeepSeek）]]
+- [[19_业界观点/Junjie_Yan/about|闫俊杰（MiniMax）]]
+- [[19_业界观点/Jie_Tang/about|唐杰（智谱 AI）]]
+- [[19_业界观点/Jinze_Bai/about|白辰甲（阶跃星辰）]]
 
 ### 技术关联
-- [[部署推理/Inference_Performance/Long_Context_Inference_2026|长上下文推理]]
-- [[部署推理/Inference_Optimization/kv-cache-inference-optimization|KV Cache 优化]]
-- [[深度学习/Attention_Mechanisms|注意力机制]]（Transformer-XL 的基础）
-- [[大模型/index|大模型生态]]
-- [[业界观点/Talks_Synthesis/China_US_AI_Race_Leaders_Views|中美 AI 竞赛观点]]
+- [[10_部署推理/04_Inference_Performance/Long_Context_Inference_2026|长上下文推理]]
+- [[10_部署推理/03_Inference_Optimization/kv-cache-inference-optimization|KV Cache 优化]]
+- [[03_深度学习/Attention_Mechanisms|注意力机制]]（Transformer-XL 的基础）
+- [[05_大模型/index|大模型生态]]
+- [[19_业界观点/Talks_Synthesis/China_US_AI_Race_Leaders_Views|中美 AI 竞赛观点]]
 
 ---
 
@@ -185,4 +185,4 @@ Kimi 用户量大但付费转化与 ARPU 面临中国 C 端 AI 应用的普遍�
 
 ---
 
-*本文为 AI Guru 知识库内容，2026-07-23 更新。关联 [[业界观点/index|业界观点]] 与 [[大模型/Chinese_LLM_Ecosystem|中国大模型生态]]。*
+*本文为 AI Guru 知识库内容，2026-07-23 更新。关联 [[19_业界观点/index|业界观点]] 与 [[05_大模型/Chinese_LLM_Ecosystem|中国大模型生态]]。*

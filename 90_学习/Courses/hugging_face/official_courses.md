@@ -92,9 +92,9 @@ PPO 引入了一个**比值因子 (Ratio)** 来衡量新策略和旧策略的差
 ---
 
 ## 相关阅读
-- [[强化学习/RL_Fundamentals]]
-- [[数学基础/Mathematics_for_AI]]
-- [[大模型/Transformer_Revolution/Self_Attention_Mechanism]]
+- [[06_强化学习/RL_Fundamentals]]
+- [[01_数学基础/Mathematics_for_AI]]
+- [[05_大模型/04_Transformer_Revolution/Self_Attention_Mechanism]]
 
 ## 核心知识框架
 

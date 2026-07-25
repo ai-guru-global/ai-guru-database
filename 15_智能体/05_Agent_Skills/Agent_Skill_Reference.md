@@ -10,7 +10,7 @@ sources: []
 
 # Agent Skill 通用参考规范
 
-本规范为 `智能体/Agent_Skills/` 下的 Skill 文档提供统一的文件结构、元数据、引用约定与最佳实践，确保 Skill 定义可被 Agent 框架、自动化工具与人工审阅一致地解析和使用。
+本规范为 `15_智能体/05_Agent_Skills/` 下的 Skill 文档提供统一的文件结构、元数据、引用约定与最佳实践，确保 Skill 定义可被 Agent 框架、自动化工具与人工审阅一致地解析和使用。
 
 ## 文件结构
 
@@ -51,7 +51,7 @@ Frontmatter 字段应保持一致：
 
 ## 引用约定
 
-- 引用知识库内部页面使用 Obsidian wikilink：`[[智能体/Agent_Skills/README|Agent Skills]]`。
+- 引用知识库内部页面使用 Obsidian wikilink：`[[15_智能体/05_Agent_Skills/README|Agent Skills]]`。
 - 引用外部资源使用 Markdown 标准链接，并注明访问日期：`[OpenAI API](https://platform.openai.com/docs) (访问于 2026-07-02)`。
 - 引用其他 Skill 时使用相对路径或 wikilink，确保在移动文件后不中断。
 - 避免使用裸 URL，统一用链接文本描述目标内容。
@@ -83,11 +83,11 @@ status: stable
 
 ## Related
 
-- [[智能体/Agent_Skills/README|Agent Skills]]
-- [[学习/References/index|References Index]]
-- [[智能体/Agent_Skills/Common_Field_Types|Common Field Types]]
-- [[数学基础/Probability_Statistics/Skill_Statistics_Cheatsheet|Statistics]]
-- [[智能体/Agent_Skills/Skill_Migration_v1_to_v2|Migration v1 to v2]]
+- [[15_智能体/05_Agent_Skills/README|Agent Skills]]
+- [[90_学习/References/index|References Index]]
+- [[15_智能体/05_Agent_Skills/Common_Field_Types|Common Field Types]]
+- [[01_数学基础/03_Probability_Statistics/Skill_Statistics_Cheatsheet|Statistics]]
+- [[15_智能体/05_Agent_Skills/Skill_Migration_v1_to_v2|Migration v1 to v2]]
 
 ## 附录：核心概念速查
 

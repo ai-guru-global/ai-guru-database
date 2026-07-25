@@ -12,37 +12,37 @@ This page indexes the contents of `面试岗位`.
 
 ## Subdirectories
 
-- [[面试岗位/AI_Data_Analyst/index|AI Data Analyst]]
-- [[面试岗位/AI_Evaluation_Engineer/index|AI Evaluation Engineer]]
-- [[面试岗位/AI_Infrastructure_Engineer/index|AI Infrastructure Engineer]]
-- [[面试岗位/AI_Policy_Specialist/index|AI Policy Specialist]]
-- [[面试岗位/AI_Product_Manager/index|AI Product Manager]]
-- [[面试岗位/AI_Reliability_Engineer/index|AI Reliability Engineer]]
-- [[面试岗位/AI_Research_Engineer/index|AI Research Engineer]]
-- [[面试岗位/AI_Research_Scientist/index|AI Research Scientist]]
-- [[面试岗位/AI_Security_Engineer/index|AI Security Engineer]]
-- [[面试岗位/AI_Solutions_Architect/index|AI Solutions Architect]]
-- [[面试岗位/Applied_Scientist/index|Applied Scientist]]
-- [[面试岗位/Cloud_Ops_Engineer/index|Cloud Ops Engineer]]
-- [[面试岗位/Computer_Vision_Engineer/index|Computer Vision Engineer]]
-- [[面试岗位/Data_Engineer/index|Data Engineer]]
-- [[面试岗位/Data_Scientist/index|Data Scientist]]
-- [[面试岗位/LLM_Platform_Engineer/index|LLM Platform Engineer]]
-- [[面试岗位/Machine_Learning_Engineer/index|Machine Learning Engineer]]
-- [[面试岗位/MLOps_Engineer/index|Mlops Engineer]]
-- [[面试岗位/NLP_Engineer/index|NLP Engineer]]
-- [[面试岗位/Prompt_Engineer/index|Prompt Engineer]]
-- [[面试岗位/Research_Scientist/index|Research Scientist]]
-- [[面试岗位/Robotics_Engineer/index|Robotics Engineer]]
+- [[21_面试岗位/AI_Data_Analyst/index|AI Data Analyst]]
+- [[21_面试岗位/AI_Evaluation_Engineer/index|AI Evaluation Engineer]]
+- [[21_面试岗位/AI_Infrastructure_Engineer/index|AI Infrastructure Engineer]]
+- [[21_面试岗位/AI_Policy_Specialist/index|AI Policy Specialist]]
+- [[21_面试岗位/AI_Product_Manager/index|AI Product Manager]]
+- [[21_面试岗位/AI_Reliability_Engineer/index|AI Reliability Engineer]]
+- [[21_面试岗位/AI_Research_Engineer/index|AI Research Engineer]]
+- [[21_面试岗位/AI_Research_Scientist/index|AI Research Scientist]]
+- [[21_面试岗位/AI_Security_Engineer/index|AI Security Engineer]]
+- [[21_面试岗位/AI_Solutions_Architect/index|AI Solutions Architect]]
+- [[21_面试岗位/Applied_Scientist/index|Applied Scientist]]
+- [[21_面试岗位/Cloud_Ops_Engineer/index|Cloud Ops Engineer]]
+- [[21_面试岗位/Computer_Vision_Engineer/index|Computer Vision Engineer]]
+- [[21_面试岗位/Data_Engineer/index|Data Engineer]]
+- [[21_面试岗位/Data_Scientist/index|Data Scientist]]
+- [[21_面试岗位/LLM_Platform_Engineer/index|LLM Platform Engineer]]
+- [[21_面试岗位/Machine_Learning_Engineer/index|Machine Learning Engineer]]
+- [[21_面试岗位/MLOps_Engineer/index|Mlops Engineer]]
+- [[21_面试岗位/NLP_Engineer/index|NLP Engineer]]
+- [[21_面试岗位/Prompt_Engineer/index|Prompt Engineer]]
+- [[21_面试岗位/Research_Scientist/index|Research Scientist]]
+- [[21_面试岗位/Robotics_Engineer/index|Robotics Engineer]]
 
 ## Files
 
-- [[面试岗位/interview_notes_template|Interview Notes Template]]
-- [[面试岗位/Interviews_for_dummy|Interviews For Dummy]]
-- [[面试岗位/jobs|Jobs]]
-- [[面试岗位/README|README]]
-- [[面试岗位/README_for_dummy|README For Dummy]]
-- [[面试岗位/System_Design_for_AI|System Design For AI]]
+- [[21_面试岗位/interview_notes_template|Interview Notes Template]]
+- [[21_面试岗位/Interviews_for_dummy|Interviews For Dummy]]
+- [[21_面试岗位/jobs|Jobs]]
+- [[21_面试岗位/README|README]]
+- [[21_面试岗位/README_for_dummy|README For Dummy]]
+- [[21_面试岗位/System_Design_for_AI|System Design For AI]]
 
 ## 岗位核心能力模型
 
@@ -59,7 +59,7 @@ This page indexes the contents of `面试岗位`.
 | 轮次 | 内容 | 时长 | 考察重点 |
 |------|------|------|----------|
 | 简历筛选 | HR初筛 | - | 背景匹配度 |
-| 技术笔试 | 编程/选择题 | 60-90min | 基础功底 |
+| 技术笔试 | 16_编程/选择题 | 60-90min | 基础功底 |
 | 技术一面 | 算法+项目 | 45-60min | 编码能力+项目深度 |
 | 技术二面 | 系统设计+深度 | 45-60min | 架构思维+技术广度 |
 | 技术三面 | 综合+前沿 | 30-45min | 技术视野+潜力 |

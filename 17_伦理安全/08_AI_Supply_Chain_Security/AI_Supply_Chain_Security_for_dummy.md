@@ -157,9 +157,9 @@ flowchart TB
 
 ## 🔗 相关主题
 
-- [AI 安全红队测试](伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming.md) — 主动发现安全漏洞
-- [AI 治理合规](伦理安全/Governance/AI_Governance_Compliance_2026.md) — 法规要求
-- [Value Alignment](伦理安全/Value_Alignment/Value_Alignment.md) — 模型价值观对齐
+- [AI 安全红队测试](17_伦理安全/04_AI_Safety_RedTeaming/AI_Safety_RedTeaming.md) — 主动发现安全漏洞
+- [AI 治理合规](17_伦理安全/03_Governance/AI_Governance_Compliance_2026.md) — 法规要求
+- [Value Alignment](17_伦理安全/02_Value_Alignment/Value_Alignment.md) — 模型价值观对齐
 
 ---
 
@@ -240,8 +240,8 @@ flowchart TB
 
 ## 相关链接
 
-- [[伦理安全/AI_Supply_Chain_Security/AI_Supply_Chain_Security|AI 供应链安全 (完整版)]] — 本篇小白版对应的详细版
-- [[伦理安全/AI_Supply_Chain_Security/index|AI 供应链安全索引]] — 主题导览
+- [[17_伦理安全/08_AI_Supply_Chain_Security/AI_Supply_Chain_Security|AI 供应链安全 (完整版)]] — 本篇小白版对应的详细版
+- [[17_伦理安全/08_AI_Supply_Chain_Security/index|AI 供应链安全索引]] — 主题导览
 - [[概念/Safety/supply-chain-security|供应链安全]] — 概念卡片
 - [[概念/K8s/trivy|Trivy]] — 容器镜像漏洞扫描
 - [[概念/K8s/detect-secrets|detect-secrets]] — 密钥泄露检测

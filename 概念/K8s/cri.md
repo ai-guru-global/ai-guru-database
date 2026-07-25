@@ -87,7 +87,7 @@ runc / crun (实际容器进程)
 - [[概念/containerd]] — containerd（CRI 主流实现）
 - [[概念/oci-runtime]] — OCI 运行时标准
 - [[概念/docker]] — Docker 容器平台
-- [[架构基建/AI_Stack_Container_Runtime_Guide]] — 容器运行时实践
+- [[12_架构基建/AI_Stack_Container_Runtime_Guide]] — 容器运行时实践
 
 ---
 

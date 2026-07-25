@@ -17,7 +17,7 @@ sources: []
 
 > **一句话理解**: AI Research Engineer 是研究想法的工程实现者——将科学家的理论构想转化为可运行、可扩展、可复现的实验系统，精通分布式训练、性能优化和大规模实验管理，是前沿 AI 研究不可或缺的工程力量。
 
-> **与相关岗位的关系**: 本岗位侧重**研究系统的工程实现**。如果侧重纯理论研究，请参考 [[面试岗位/Research_Scientist/Research_Scientist|Research Scientist 面试指南]]；如果侧重 AI 算法研究本身，请参考 [[面试岗位/AI_Research_Scientist/AI_Research_Scientist|AI Research Scientist 面试指南]]；如果侧重业务落地，请参考 [[面试岗位/Applied_Scientist/Applied_Scientist|Applied Scientist 面试指南]]。
+> **与相关岗位的关系**: 本岗位侧重**研究系统的工程实现**。如果侧重纯理论研究，请参考 [[21_面试岗位/Research_Scientist/Research_Scientist|Research Scientist 面试指南]]；如果侧重 AI 算法研究本身，请参考 [[21_面试岗位/AI_Research_Scientist/AI_Research_Scientist|AI Research Scientist 面试指南]]；如果侧重业务落地，请参考 [[21_面试岗位/Applied_Scientist/Applied_Scientist|Applied Scientist 面试指南]]。
 
 ---
 
@@ -718,13 +718,13 @@ class MoELayer(nn.Module):
 
 ## Related
 
-- [[面试岗位/README|AI 面试准备 (Interviews)]]
-- [[面试岗位/jobs|AI 相关岗位与工种清单]]
-- [[面试岗位/Research_Scientist/Research_Scientist|Research Scientist 面试指南]]
-- [[面试岗位/AI_Research_Scientist/AI_Research_Scientist|AI Research Scientist 面试指南]]
-- [[面试岗位/AI_Infrastructure_Engineer/question_bank|AI Infrastructure Engineer 题库]]
-- [[面试岗位/Machine_Learning_Engineer/question_bank|Machine Learning Engineer 题库]]
-- [[面试岗位/Applied_Scientist/Applied_Scientist|Applied Scientist 面试指南]]
+- [[21_面试岗位/README|AI 面试准备 (Interviews)]]
+- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/Research_Scientist/Research_Scientist|Research Scientist 面试指南]]
+- [[21_面试岗位/AI_Research_Scientist/AI_Research_Scientist|AI Research Scientist 面试指南]]
+- [[21_面试岗位/AI_Infrastructure_Engineer/question_bank|AI Infrastructure Engineer 题库]]
+- [[21_面试岗位/Machine_Learning_Engineer/question_bank|Machine Learning Engineer 题库]]
+- [[21_面试岗位/Applied_Scientist/Applied_Scientist|Applied Scientist 面试指南]]
 
 ---
 

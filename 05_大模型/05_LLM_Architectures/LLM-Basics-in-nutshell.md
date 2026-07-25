@@ -585,13 +585,13 @@ flowchart TB
 ## 🔗 相关主题
 
 - [Prompt Engineering](../Prompt_Engineering/Prompt-Engineering-in-nutshell.md) - 如何写好提示词
-- [模型推理](部署推理/Deployment_Fundamentals/Inference-in-nutshell.md) - 部署和优化
-- [RAG 系统](RAG系统/RAG_Fundamentals/RAG-in-nutshell.md) - 让 LLM 访问你的数据
-- [AI 智能体](../../智能体/Agent_Foundations/Agent-in-nutshell.md) - LLM + 工具 + 记忆
+- [模型推理](10_部署推理/01_Deployment_Fundamentals/Inference-in-nutshell.md) - 部署和优化
+- [RAG 系统](14_RAG系统/01_RAG_Fundamentals/RAG-in-nutshell.md) - 让 LLM 访问你的数据
+- [AI 智能体](../../15_智能体/01_Agent_Foundations/Agent-in-nutshell.md) - LLM + 工具 + 记忆
 
 ## Related
 
-- [[大模型/Fine_tuning_Techniques/PEFT_2026]] — PEFT 2026 (参数高效微调) (共享: bert, gpt, llm, nlp, transformer)
-- [[大模型/Fine_tuning_Techniques/README]] — 微调技术 (Fine-tuning Techniques) (共享: bert, gpt, llm, nlp, transformer)
-- [[大模型/Multimodal_Models/Multimodal_Architectures_2026]] — 多模态模型架构 2026：从 GPT-4V 到原生多模态 AGI (共享: bert, gpt, llm, nlp, transformer)
-- [[大模型/Prompt_Engineering/Prompt-Engineering-in-nutshell]] — Prompt Engineering 速成指南 (共享: bert, gpt, llm, nlp, transformer)
+- [[05_大模型/07_Fine_tuning_Techniques/PEFT_2026]] — PEFT 2026 (参数高效微调) (共享: bert, gpt, llm, nlp, transformer)
+- [[05_大模型/07_Fine_tuning_Techniques/README]] — 微调技术 (Fine-tuning Techniques) (共享: bert, gpt, llm, nlp, transformer)
+- [[05_大模型/10_Multimodal_Models/Multimodal_Architectures_2026]] — 多模态模型架构 2026：从 GPT-4V 到原生多模态 AGI (共享: bert, gpt, llm, nlp, transformer)
+- [[05_大模型/08_Prompt_Engineering/Prompt-Engineering-in-nutshell]] — Prompt Engineering 速成指南 (共享: bert, gpt, llm, nlp, transformer)

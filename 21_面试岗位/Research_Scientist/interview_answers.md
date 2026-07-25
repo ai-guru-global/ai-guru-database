@@ -318,12 +318,12 @@ def elbo_loss(x, recon_x, mu, logvar):
 
 ## Related
 
-- [[面试岗位/Research_Scientist/question_bank|Research Scientist 题库]]
-- [[面试岗位/Research_Scientist/company_level_question_bank|Research Scientist 按公司/级别区分的题库]]
-- [[面试岗位/Research_Scientist/index|Research Scientist 首页]]
-- [[大模型/index|大模型]]
-- [[深度学习/index|深度学习]]
-- [[数学基础/index|数学基础]]
-- [[论文精读/index|论文精读]]
-- [[面试岗位/AI_Research_Scientist/index|AI Research Scientist]]
-- [[面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/Research_Scientist/question_bank|Research Scientist 题库]]
+- [[21_面试岗位/Research_Scientist/company_level_question_bank|Research Scientist 按公司/级别区分的题库]]
+- [[21_面试岗位/Research_Scientist/index|Research Scientist 首页]]
+- [[05_大模型/index|大模型]]
+- [[03_深度学习/index|深度学习]]
+- [[01_数学基础/index|数学基础]]
+- [[20_论文精读/index|论文精读]]
+- [[21_面试岗位/AI_Research_Scientist/index|AI Research Scientist]]
+- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]

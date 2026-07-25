@@ -15,15 +15,15 @@ tags: [auto-index]
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[论文精读/Alignment/RLHF_DPO_Deep_Dive|RLHF DPO Deep Dive]] | RLHF and DPO paper deep dive: human feedback RL and direct preference optimization | alignment researchers / LLM engineers |
-| [[论文精读/Alignment/DPO_Deep_Dive|DPO Deep Dive]] | DPO paper deep dive: preference alignment without reinforcement learning | alignment researchers |
-| [[论文精读/Alignment/Chain_of_Thought_Deep_Dive|Chain of Thought Deep Dive]] | Chain-of-Thought paper deep dive: reasoning chain emergence in large models | reasoning researchers / LLM engineers |
+| [[20_论文精读/06_Alignment/RLHF_DPO_Deep_Dive|RLHF DPO Deep Dive]] | RLHF and DPO paper deep dive: human feedback RL and direct preference optimization | alignment researchers / LLM engineers |
+| [[20_论文精读/06_Alignment/DPO_Deep_Dive|DPO Deep Dive]] | DPO paper deep dive: preference alignment without reinforcement learning | alignment researchers |
+| [[20_论文精读/06_Alignment/Chain_of_Thought_Deep_Dive|Chain of Thought Deep Dive]] | Chain-of-Thought paper deep dive: reasoning chain emergence in large models | reasoning researchers / LLM engineers |
 
 ## Related
 
-- [[论文精读/index|论文精读首页]]
-- [[模型训练/Alignment/index|Alignment]]
-- [[伦理安全/Value_Alignment/index|Value Alignment]]
+- [[20_论文精读/index|论文精读首页]]
+- [[07_模型训练/06_Alignment/index|Alignment]]
+- [[17_伦理安全/02_Value_Alignment/index|Value Alignment]]
 
 ## 进阶知识拓展
 
@@ -61,9 +61,9 @@ tags: [auto-index]
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

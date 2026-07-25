@@ -47,8 +47,8 @@ AI Stack 可与阿里云专有云 ACK 集成，作为私有化 AI 底座；也�
 
 - [[概念/alibaba-cloud|Alibaba Cloud]]
 - [[概念/ack|ACK]]
-- [[架构基建/AI_Stack_Deep_Dive|AI Stack Deep Dive]]
-- [[架构基建/AI_Stack/AI_Stack_MLOps_Reference_Architecture|AI Stack MLOps 参考 架构]]
+- [[12_架构基建/AI_Stack_Deep_Dive|AI Stack Deep Dive]]
+- [[12_架构基建/03_AI_Stack/AI_Stack_MLOps_Reference_Architecture|AI Stack MLOps 参考 架构]]
 
 ---
 

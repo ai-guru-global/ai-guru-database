@@ -16,9 +16,9 @@ relationships:
   - target: "概念/Inference/prefix-caching"
     type: implements
 sources:
-  - 部署推理/Inference_Engines/SGLang_Deep_Dive.md
-  - 部署推理/Inference_Engines/LLM_Inference_Engine_Selection_Guide.md
-  - 架构基建/AI_Stack_Inference_Serving_Guide.md
+  - 10_部署推理/02_Inference_Engines/SGLang_Deep_Dive.md
+  - 10_部署推理/02_Inference_Engines/LLM_Inference_Engine_Selection_Guide.md
+  - 12_架构基建/AI_Stack_Inference_Serving_Guide.md
   - "https://arxiv.org/abs/2312.07104"
 summary: "SGLang 是由 LMSYS/UC Berkeley 开发的高性能 LLM 推理框架。通过 RadixAttention（基数树前缀缓存）、零开销调度、压缩有限状态机结构化生成三大核心技术，在多轮对话、Agent 工作流、结构化输出场景下吞吐量领先 vLLM 1.2-2×。2026 年已成为 Agent 系统和结构化生成的首选引擎。"
 provenance:
@@ -184,8 +184,8 @@ curl http://localhost:30000/v1/chat/completions \
 - [[概念/Inference/paged-attention]] — PagedAttention
 - [[概念/Inference/flashinfer]] — FlashInfer 算子库
 - [[概念/Inference/prefix-caching]] — 前缀缓存
-- [[部署推理/Inference_Engines/SGLang_Deep_Dive]] — SGLang 深度解析
-- [[部署推理/Inference_Engines/LLM_Inference_Engine_Selection_Guide]] — LLM 推理引擎选型指南
+- [[10_部署推理/02_Inference_Engines/SGLang_Deep_Dive]] — SGLang 深度解析
+- [[10_部署推理/02_Inference_Engines/LLM_Inference_Engine_Selection_Guide]] — LLM 推理引擎选型指南
 
 ## SGLang vs vLLM 对比
 

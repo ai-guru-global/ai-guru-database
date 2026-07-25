@@ -52,19 +52,19 @@ aliases:
 
 ## 与本库关联
 
-- 本库机器学习总览 → [[机器学习/README]]
-- 速成指南 → [[机器学习/ML-in-nutshell]]
-- 监督学习 → [[机器学习/Supervised_Learning/Supervised_Learning]]
-- 集成学习 → [[机器学习/Ensemble_Learning/Ensemble_Learning]]
-- 无监督学习 → [[机器学习/Unsupervised_Learning/Unsupervised_Learning]]
-- 特征工程 → [[机器学习/Feature_Engineering/Feature_Engineering]]
-- 推荐系统 → [[机器学习/Recommendation_Systems/Recommendation_Systems]]
+- 本库机器学习总览 → [[02_机器学习/README]]
+- 速成指南 → [[02_机器学习/ML-in-nutshell]]
+- 监督学习 → [[02_机器学习/02_Supervised_Learning/Supervised_Learning]]
+- 集成学习 → [[02_机器学习/04_Ensemble_Learning/Ensemble_Learning]]
+- 无监督学习 → [[02_机器学习/03_Unsupervised_Learning/Unsupervised_Learning]]
+- 特征工程 → [[02_机器学习/05_Feature_Engineering/Feature_Engineering]]
+- 推荐系统 → [[02_机器学习/10_Recommendation_Systems/Recommendation_Systems]]
 
 ## 参考
 
 - 仓库主线入口：`原始/github-sources/ailearning/docs/ml/`
-- 上级指南：[[学习/courses/apachecn/ailearning_guide]]
-- 引用索引：[[学习/Courses/apachecn/ailearning_guide]]
+- 上级指南：[[90_学习/courses/apachecn/ailearning_guide]]
+- 引用索引：[[90_学习/Courses/apachecn/ailearning_guide]]
 
 ## 进阶知识拓展
 
@@ -102,9 +102,9 @@ aliases:
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

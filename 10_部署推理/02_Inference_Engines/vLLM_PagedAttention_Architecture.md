@@ -94,14 +94,14 @@ Block Table: A→[1,5,8]  B→[2,6]  C→[3,7]
 
 ## Related
 
-- [[部署推理/Inference_Engines/vLLM_Deep_Dive|vLLM 深度解析]]
-- [[部署推理/Inference_Engines/vLLM_for_dummy|vLLM 大白话解释]]
-- [[部署推理/Inference_Engines/LLM_Inference_Engine_Selection_Guide|LLM 推理引擎选型指南]]
+- [[10_部署推理/02_Inference_Engines/vLLM_Deep_Dive|vLLM 深度解析]]
+- [[10_部署推理/02_Inference_Engines/vLLM_for_dummy|vLLM 大白话解释]]
+- [[10_部署推理/02_Inference_Engines/LLM_Inference_Engine_Selection_Guide|LLM 推理引擎选型指南]]
 - [[概念/paged-attention|PagedAttention 概念卡片]]
 - [[概念/kv-cache|KV Cache 概念卡片]]
 - [[概念/continuous-batching|Continuous Batching 概念卡片]]
 
-- [[部署推理/README|模型部署与推理]]
+- [[10_部署推理/README|模型部署与推理]]
 
 ## 核心知识体系
 
@@ -212,9 +212,9 @@ Block Table: A→[1,5,8]  B→[2,6]  C→[3,7]
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

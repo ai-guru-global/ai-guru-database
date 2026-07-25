@@ -395,10 +395,10 @@ degradation = (text_perplexity_after - text_perplexity_before) / text_perplexity
 
 ## Related
 
-- [[大模型/Multimodal_Models/Native_Multimodal_Architectures]]
-- [[大模型/Multimodal_Models/Video_Understanding_Architectures]]
+- [[05_大模型/10_Multimodal_Models/Native_Multimodal_Architectures]]
+- [[05_大模型/10_Multimodal_Models/Video_Understanding_Architectures]]
 - [[概念/multimodal-models]]
-- [[大模型/Multimodal_Models/Multimodal_Architectures_2026]]
-- [[论文精读/Architecture/Attention_Is_All_You_Need_Deep_Dive]]
+- [[05_大模型/10_Multimodal_Models/Multimodal_Architectures_2026]]
+- [[20_论文精读/02_Architecture/Attention_Is_All_You_Need_Deep_Dive]]
 - [[概念/transformer-architecture]]
 - [[治理/multimodal-rag|多模态 × RAG]] — 跨模态嵌入与检索

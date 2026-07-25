@@ -28,7 +28,7 @@ sources:
 
 ## 一、为什么这场争论值得读
 
-Geoffrey Hinton 与 Yann LeCun 是当代深度学习最重要的两位奠基人：前者推广了反向传播 (Backpropagation)、发明了深度信念网络 (Deep Belief Networks) 与 Capsule Network；后者缔造了卷积神经网络 (CNN) 的 LeNet 家族、推动了自监督学习 (Self-Supervised Learning) 与世界模型 (World Models) 范式。两人与 [[业界观点/Yoshua_Bengio/about|Yoshua Bengio]] 于 2018 年共享图灵奖，并曾在 2015 年合著被引用超 10 万次的 Nature 综述 "Deep Learning"——这是深度学习领域最权威的系统性总结。
+Geoffrey Hinton 与 Yann LeCun 是当代深度学习最重要的两位奠基人：前者推广了反向传播 (Backpropagation)、发明了深度信念网络 (Deep Belief Networks) 与 Capsule Network；后者缔造了卷积神经网络 (CNN) 的 LeNet 家族、推动了自监督学习 (Self-Supervised Learning) 与世界模型 (World Models) 范式。两人与 [[19_业界观点/Yoshua_Bengio/about|Yoshua Bengio]] 于 2018 年共享图灵奖，并曾在 2015 年合著被引用超 10 万次的 Nature 综述 "Deep Learning"——这是深度学习领域最权威的系统性总结。
 
 然而在 2022 年之后，这两位"深度学习教父"在三个关键问题上出现了明显的分歧：
 
@@ -42,12 +42,12 @@ Geoffrey Hinton 与 Yann LeCun 是当代深度学习最重要的两位奠基人�
 
 ## 二、人物与立场速览
 
-| 维度 | [[业界观点/Geoffrey_Hinton/about|Geoffrey Hinton]] | [[业界观点/Yann_LeCun/about|Yann LeCun]] |
+| 维度 | [[19_业界观点/Geoffrey_Hinton/about|Geoffrey Hinton]] | [[19_业界观点/Yann_LeCun/about|Yann LeCun]] |
 |------|--------------------------------------------------|------------------------------------------|
 | 现任 | 多伦多大学荣休教授、前 Google Brain 资深研究员 | Meta 首席 AI 科学家、NYU Silver 教授 |
 | 桂冠 | 2018 图灵奖、反向传播奠基推广、AlexNet 导师 | 2018 图灵奖、CNN 之父 (LeNet)、JEPA 提出者 |
 | 旗舰论文 | Learning representations by back-propagating errors (1986) | A Path Towards Autonomous Machine Intelligence (2022) |
-| 学术传承 | 学生含 [[业界观点/Ilya_Sutskever/about|Sutskever]]、Alex Krizhevsky | 学生遍布 FAIR 与 NYU |
+| 学术传承 | 学生含 [[19_业界观点/Ilya_Sutskever/about|Sutskever]]、Alex Krizhevsky | 学生遍布 FAIR 与 NYU |
 | 核心技术主张 | 反向传播仍是最好的算法，但需研究"终有一死的计算" | 反向传播不等于智能；LLM 不是 AGI 路径，需世界模型 |
 | 对 LLM 评价 | 能力惊人，是其贡献的延伸，也是其担忧的来源 | "有用但只是记忆机器"，缺少世界理解 |
 | AGI 风险立场 | 高声警告，2023 年从 Google 离职 | 反对"末日论"，认为风险被过度放大 |
@@ -60,7 +60,7 @@ Geoffrey Hinton 与 Yann LeCun 是当代深度学习最重要的两位奠基人�
 
 ### Hinton 的立场：LLM 是其毕生工作的延伸，但危险
 
-Hinton 并不否认 LLM 的能力——他指导的学生 [[业界观点/Ilya_Sutskever/about|Ilya Sutskever]] 是 AlexNet 的共同作者、GPT 路线的灵魂人物。Hinton 对 LLM 的态度是矛盾的：
+Hinton 并不否认 LLM 的能力——他指导的学生 [[19_业界观点/Ilya_Sutskever/about|Ilya Sutskever]] 是 AlexNet 的共同作者、GPT 路线的灵魂人物。Hinton 对 LLM 的态度是矛盾的：
 
 - **承认能力**：他认为基于反向传播训练的大模型已经展现出"理解"的早期迹象，数字智能之所以可能优于生物智能，正是因为"知识可以瞬间在不同模型间共享"（而人脑不行）。
 - **担忧失控**：在 2023 年 BBC 与 NYT 采访中，他说："这些系统可能比人更聪明，也可能决定接管一切。"他担心 AI 发展出"次级目标" (sub-goals)，在追求目标时与人类利益冲突。
@@ -68,7 +68,7 @@ Hinton 并不否认 LLM 的能力——他指导的学生 [[业界观点/Ilya_Su
 
 > **关键引述**："The flip came when I realized that digital intelligence might be better than biological intelligence."（Hinton，2023）——我的转变发生在意识到数字智能可能优于生物智能之时。
 
-参见 [[业界观点/Geoffrey_Hinton/sayings|Hinton 语录]] 第 4 条。
+参见 [[19_业界观点/Geoffrey_Hinton/sayings|Hinton 语录]] 第 4 条。
 
 ### LeCun 的立场：LLM 是"记忆机器"，缺少世界理解
 
@@ -81,7 +81,7 @@ LeCun 对 LLM 的批评比 Hinton 直接得多。他在 2022 年 OpenReview 论�
 
 > **关键引述**："Current LLMs are not the path to AGI. We need world models."（LeCun，2022）——当前的 LLM 不是通往 AGI 的路径，我们需要世界模型。
 
-参见 [[业界观点/Yann_LeCun/sayings|LeCun 语录]]。
+参见 [[19_业界观点/Yann_LeCun/sayings|LeCun 语录]]。
 
 ### 两者分歧的本质
 
@@ -92,7 +92,7 @@ LeCun 对 LLM 的批评比 Hinton 直接得多。他在 2022 年 OpenReview 论�
 | 下一步是扩大 LLM 还是换架构？ | 二者并行，安全优先 | 必须换架构（JEPA / 世界模型）|
 | 谁更接近 AGI——Sutskever 的 SSI 还是 Meta 的 JEPA？ | 不公开站队 | 显然是 JEPA 路线 |
 
-一个值得注意的细节：Hinton 的学生 [[业界观点/Ilya_Sutskever/about|Sutskever]] 是 GPT Scaling 路线的核心推手，而 LeCun 的"世界模型"在 2024-2025 年间逐渐被 Meta、DeepMind 与部分学术界接受，V-JEPA 系列成为世界模型研究的代表工作。
+一个值得注意的细节：Hinton 的学生 [[19_业界观点/Ilya_Sutskever/about|Sutskever]] 是 GPT Scaling 路线的核心推手，而 LeCun 的"世界模型"在 2024-2025 年间逐渐被 Meta、DeepMind 与部分学术界接受，V-JEPA 系列成为世界模型研究的代表工作。
 
 ---
 
@@ -133,9 +133,9 @@ Hinton 的技术主张走的是另一条路。他在 NeurIPS 2022 演讲 "The Fo
 
 | 路线 | 代表 | 核心机制 | 是否追求生物 plausible | 安全含义 |
 |------|------|----------|------------------------|----------|
-| 自回归 LLM Scaling | [[业界观点/Sam_Altman/about|Altman]] / [[业界观点/Ilya_Sutskever/about|Sutskever]] | 预测下一个 token + 扩大 | 否 | 能力强但难对齐 |
-| JEPA / 世界模型 | [[业界观点/Yann_LeCun/about|LeCun]] | 表征空间联合嵌入预测 + 可微记忆 | 部分 | 强调理解与规划 |
-| 终有一死的计算 | [[业界观点/Geoffrey_Hinton/about|Hinton]] | 知识绑定硬件、Forward-Forward | 是 | 从结构上限制复制 |
+| 自回归 LLM Scaling | [[19_业界观点/Sam_Altman/about|Altman]] / [[19_业界观点/Ilya_Sutskever/about|Sutskever]] | 预测下一个 token + 扩大 | 否 | 能力强但难对齐 |
+| JEPA / 世界模型 | [[19_业界观点/Yann_LeCun/about|LeCun]] | 表征空间联合嵌入预测 + 可微记忆 | 部分 | 强调理解与规划 |
+| 终有一死的计算 | [[19_业界观点/Geoffrey_Hinton/about|Hinton]] | 知识绑定硬件、Forward-Forward | 是 | 从结构上限制复制 |
 
 值得注意的是，Hinton 的"终有一死的计算"是一种**安全导向**的架构主张，而 LeCun 的 JEPA 是一种**能力导向**的架构主张——两者的动机完全不同。Hinton 担心的是"如何让智能不危险"，LeCun 担心的是"如何让智能真正聪明"。
 
@@ -153,7 +153,7 @@ Hinton 是深度学习领域内部最高声警告 AI 风险的人物：
 - 他认为 AI 能力提升的速度**超出了安全研究跟进的速度**——这是核心问题。
 - 他特别担忧 AI 被恶意行为者利用（操纵选举、制造冲突），并呼吁建立类似联合国原子能机构 (IAEA) 的国际 AI 监管机构。
 - 他担忧"数字智能可能优于生物智能"——因为知识可瞬间在不同模型间共享（人脑不行），数字智能一旦超越人类，差距会迅速扩大。
-- 他在 2023 年的精神（虽未直接署名 Pause 信）与 [[业界观点/Yoshua_Bengio/about|Bengio]]、[[业界观点/Elon_Musk/about|Musk]] 的立场一致。
+- 他在 2023 年的精神（虽未直接署名 Pause 信）与 [[19_业界观点/Yoshua_Bengio/about|Bengio]]、[[19_业界观点/Elon_Musk/about|Musk]] 的立场一致。
 
 > **关键引述**："We're entering a period of huge uncertainty and change, and I want to speak freely about the risks."（Hinton，2023）——我们正进入一个充满不确定性和变革的时期，我想自由地谈论风险。
 
@@ -165,7 +165,7 @@ LeCun 是 AI "末日论" (doomerism) 最直言不讳的反对者：
 - 他主张 AI 安全应该通过**技术迭代**解决，而不是**暂停研究**——暂停既不现实，也会让坏人领先。
 - 他坚信**开源是安全的最佳防线**：更多眼睛可以发现漏洞，垄断反而更危险。
 - 他把前沿实验室的"安全叙事"斥为"伪装成责任的商业护城河"。
-- 他多次在 X (Twitter) 上与"末日论者" (doomers) 公开辩论，立场接近 [[业界观点/Jensen_Huang/about|Jensen Huang]] 的"用技术解决技术问题"派。
+- 他多次在 X (Twitter) 上与"末日论者" (doomers) 公开辩论，立场接近 [[19_业界观点/Jensen_Huang/about|Jensen Huang]] 的"用技术解决技术问题"派。
 
 > **关键引述**："担忧被过度夸大，现在的 AI 连猫都不如。"（LeCun，多次公开表态）
 
@@ -173,12 +173,12 @@ LeCun 是 AI "末日论" (doomerism) 最直言不讳的反对者：
 
 | 阵营 | 代表人物 | 核心主张 | 行动建议 |
 |------|----------|----------|----------|
-| 高风险/暂停派 | [[业界观点/Yoshua_Bengio/about|Bengio]]、[[业界观点/Elon_Musk/about|Musk]] | 立即暂停大型实验 | 6 个月暂停 + 强监管 |
-| 高风险/谨慎派 | **[[业界观点/Geoffrey_Hinton/about|Hinton]]**、[[业界观点/Dario_Amodei/about|Amodei]] | 风险真实，需立即治理 | 国际机构 + 负责任扩展 |
-| 中间务实派 | [[业界观点/Sam_Altman/about|Altman]]、[[业界观点/Bill_Gates/about|Gates]] | 风险与收益并存 | 分级监管 + 渐进部署 |
-| 风险被高估派 | **[[业界观点/Yann_LeCun/about|LeCun]]**、[[业界观点/Jensen_Huang/about|Huang]] | 末日论有害 | 技术迭代 + 开源透明 |
+| 高风险/暂停派 | [[19_业界观点/Yoshua_Bengio/about|Bengio]]、[[19_业界观点/Elon_Musk/about|Musk]] | 立即暂停大型实验 | 6 个月暂停 + 强监管 |
+| 高风险/谨慎派 | **[[19_业界观点/Geoffrey_Hinton/about|Hinton]]**、[[19_业界观点/Dario_Amodei/about|Amodei]] | 风险真实，需立即治理 | 国际机构 + 负责任扩展 |
+| 中间务实派 | [[19_业界观点/Sam_Altman/about|Altman]]、[[19_业界观点/Bill_Gates/about|Gates]] | 风险与收益并存 | 分级监管 + 渐进部署 |
+| 风险被高估派 | **[[19_业界观点/Yann_LeCun/about|LeCun]]**、[[19_业界观点/Jensen_Huang/about|Huang]] | 末日论有害 | 技术迭代 + 开源透明 |
 
-> 关联阅读：完整的领袖安全立场矩阵见 [[业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix|AI 安全立场矩阵]]。
+> 关联阅读：完整的领袖安全立场矩阵见 [[19_业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix|AI 安全立场矩阵]]。
 
 ---
 
@@ -231,9 +231,9 @@ flowchart TB
 
 尽管两人在公众面前的分歧被放大，2026 年的研究前沿其实出现了若干汇合点：
 
-1. **世界模型成为共识方向**：Hinton 虽未公开支持 JEPA，但承认"纯 LLM 不够"；[[业界观点/Demis_Hassabis/about|Demis Hassabis]] 在 Nature 访谈中也指出"Agent 需要世界模型和长期规划能力"。世界模型 (World Models) 在 2024-2026 年从 LeCun 的一家之言变成了多家实验室的共识——DeepMind 的 Genie、Dreamer 系列，NVIDIA 的 Cosmos 世界基础模型，都是世界模型研究的代表。
-2. **测试时计算 (Test-Time Compute) 的崛起**：o1/R1 系列证明了"推理时扩展计算"是新的增长维度，这某种意义上是 LeCun"行动者搜索最优行动序列"思想的工程化体现。[[业界观点/Wenfeng_Liang/about|梁文锋]] 的 DeepSeek-R1 更是把这一能力开源化。
-3. **安全研究的同步 Scaling**：Hinton 主张的安全研究必须跟上能力研究，这一思想被 [[业界观点/Dario_Amodei/about|Dario Amodei]] 的 Responsible Scaling Policy (RSP) 与 ASL 分级制度化。
+1. **世界模型成为共识方向**：Hinton 虽未公开支持 JEPA，但承认"纯 LLM 不够"；[[19_业界观点/Demis_Hassabis/about|Demis Hassabis]] 在 Nature 访谈中也指出"Agent 需要世界模型和长期规划能力"。世界模型 (World Models) 在 2024-2026 年从 LeCun 的一家之言变成了多家实验室的共识——DeepMind 的 Genie、Dreamer 系列，NVIDIA 的 Cosmos 世界基础模型，都是世界模型研究的代表。
+2. **测试时计算 (Test-Time Compute) 的崛起**：o1/R1 系列证明了"推理时扩展计算"是新的增长维度，这某种意义上是 LeCun"行动者搜索最优行动序列"思想的工程化体现。[[19_业界观点/Wenfeng_Liang/about|梁文锋]] 的 DeepSeek-R1 更是把这一能力开源化。
+3. **安全研究的同步 Scaling**：Hinton 主张的安全研究必须跟上能力研究，这一思想被 [[19_业界观点/Dario_Amodei/about|Dario Amodei]] 的 Responsible Scaling Policy (RSP) 与 ASL 分级制度化。
 
 ### 仍未弥合的分歧
 
@@ -253,23 +253,23 @@ flowchart TB
 
 ### Ilya Sutskever：Hinton 的学生，但走 Scaling 路线
 
-[[业界观点/Ilya_Sutskever/about|Sutskever]] 是 Hinton 的博士生、AlexNet 共同作者，后来成为 OpenAI 联合创始人兼首席科学家，是 GPT Scaling 路线的核心推手。他在 2024 年离开 OpenAI 创立 Safe Superintelligence Inc. (SSI)，名字本身就呼应了"安全 + 超级智能"的双重关切——某种意义上，SSI 是 Hinton 安全担忧与 Scaling 信仰的结合体。参见 [[业界观点/Ilya_Sutskever/sayings|Sutskever 语录]]。
+[[19_业界观点/Ilya_Sutskever/about|Sutskever]] 是 Hinton 的博士生、AlexNet 共同作者，后来成为 OpenAI 联合创始人兼首席科学家，是 GPT Scaling 路线的核心推手。他在 2024 年离开 OpenAI 创立 Safe Superintelligence Inc. (SSI)，名字本身就呼应了"安全 + 超级智能"的双重关切——某种意义上，SSI 是 Hinton 安全担忧与 Scaling 信仰的结合体。参见 [[19_业界观点/Ilya_Sutskever/sayings|Sutskever 语录]]。
 
 ### Demis Hassabis：科学导向的中间派
 
-[[业界观点/Demis_Hassabis/about|Hassabis]] (Google DeepMind CEO，2024 诺贝尔化学奖得主) 提出"AGI 不是造机器人，而是解决智能以解决其他问题"。他认同世界模型的重要性（DeepMind 的 Genie、Dreamer 系列是世界模型研究的另一支主力），但同时也积极投入 Gemini 大模型的 Scaling 竞赛，是一个"既要也要"的实践派。
+[[19_业界观点/Demis_Hassabis/about|Hassabis]] (Google DeepMind CEO，2024 诺贝尔化学奖得主) 提出"AGI 不是造机器人，而是解决智能以解决其他问题"。他认同世界模型的重要性（DeepMind 的 Genie、Dreamer 系列是世界模型研究的另一支主力），但同时也积极投入 Gemini 大模型的 Scaling 竞赛，是一个"既要也要"的实践派。
 
 ### Yoshua Bengio：第三位图灵奖共获者，安全立场接近 Hinton
 
-[[业界观点/Yoshua_Bengio/about|Bengio]] 在 2023 年签署 Pause 信，2025 年创立 LawZero 基金会专注 AI 安全，其立场明显更接近 Hinton。Bengio 与 Hinton、LeCun 的三角关系是理解图灵奖三巨头内部分化的关键。
+[[19_业界观点/Yoshua_Bengio/about|Bengio]] 在 2023 年签署 Pause 信，2025 年创立 LawZero 基金会专注 AI 安全，其立场明显更接近 Hinton。Bengio 与 Hinton、LeCun 的三角关系是理解图灵奖三巨头内部分化的关键。
 
 ### Jensen Huang：算力派的旁观者
 
-[[业界观点/Jensen_Huang/about|Jensen Huang]] 的立场是"买更多 GPU"——无论你走 LLM Scaling 还是世界模型，都需要算力。他推动的 NVIDIA Cosmos 世界基础模型 (World Foundation Model) 试图为世界模型研究提供算力与数据基础设施，某种意义上同时服务了 Hinton 派（用算力做安全评估）和 LeCun 派（用算力训练 JEPA）。
+[[19_业界观点/Jensen_Huang/about|Jensen Huang]] 的立场是"买更多 GPU"——无论你走 LLM Scaling 还是世界模型，都需要算力。他推动的 NVIDIA Cosmos 世界基础模型 (World Foundation Model) 试图为世界模型研究提供算力与数据基础设施，某种意义上同时服务了 Hinton 派（用算力做安全评估）和 LeCun 派（用算力训练 JEPA）。
 
 ### Sam Altman：Scaling 派的旗手
 
-[[业界观点/Sam_Altman/about|Altman]] 是 LeCun 批评的主要对象——他坚定支持"规模即智能"路线，认为 Scaling Laws 是通往 AGI 的最可靠路径。Hinton 虽未公开反对 Altman，但其安全担忧与 Altman 的加速主义形成张力。
+[[19_业界观点/Sam_Altman/about|Altman]] 是 LeCun 批评的主要对象——他坚定支持"规模即智能"路线，认为 Scaling Laws 是通往 AGI 的最可靠路径。Hinton 虽未公开反对 Altman，但其安全担忧与 Altman 的加速主义形成张力。
 
 ---
 
@@ -286,7 +286,7 @@ flowchart TB
 | 开源 | （谨慎） | "开源是安全的最佳防线" |
 | 未来计算 | "Mortal Computation 更安全" | "需要世界模型 + JEPA" |
 
-完整语录见 [[业界观点/Geoffrey_Hinton/sayings|Hinton 语录]] 与 [[业界观点/Yann_LeCun/sayings|LeCun 语录]]。
+完整语录见 [[19_业界观点/Geoffrey_Hinton/sayings|Hinton 语录]] 与 [[19_业界观点/Yann_LeCun/sayings|LeCun 语录]]。
 
 ---
 
@@ -296,13 +296,13 @@ flowchart TB
 
 | 阅读阶段 | 推荐材料 | 目标 |
 |----------|----------|------|
-| 第 1 步 | [[业界观点/Geoffrey_Hinton/about|Hinton 简介]] + [[业界观点/Yann_LeCun/about|LeCun 简介]] | 了解两人背景 |
-| 第 2 步 | [[业界观点/Geoffrey_Hinton/sayings|Hinton 语录]] + [[业界观点/Yann_LeCun/sayings|LeCun 语录]] | 掌握核心观点 |
+| 第 1 步 | [[19_业界观点/Geoffrey_Hinton/about|Hinton 简介]] + [[19_业界观点/Yann_LeCun/about|LeCun 简介]] | 了解两人背景 |
+| 第 2 步 | [[19_业界观点/Geoffrey_Hinton/sayings|Hinton 语录]] + [[19_业界观点/Yann_LeCun/sayings|LeCun 语录]] | 掌握核心观点 |
 | 第 3 步 | LeCun 2022 OpenReview 论文 | 理解 JEPA 技术细节 |
 | 第 4 步 | Hinton NeurIPS 2022 "Forward-Forward" 演讲 | 理解 Mortal Computation |
-| 第 5 步 | [[业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix|AGI 时间表矩阵]] | 把争论放入时间框架 |
-| 第 6 步 | [[业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix|AI 安全立场矩阵]] | 把争论放入安全光谱 |
-| 第 7 步 | [[业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026|开源 vs 闭源]] | 理解开源分歧的延伸 |
+| 第 5 步 | [[19_业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix|AGI 时间表矩阵]] | 把争论放入时间框架 |
+| 第 6 步 | [[19_业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix|AI 安全立场矩阵]] | 把争论放入安全光谱 |
+| 第 7 步 | [[19_业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026|开源 vs 闭源]] | 理解开源分歧的延伸 |
 
 ### 常见误区
 
@@ -426,17 +426,17 @@ Mortal Computation 目前仍是 Hinton 个人的探索性主张，未被主流�
 
 ## 十六、关联导航
 
-- [[业界观点/Geoffrey_Hinton/about|Hinton 人物简介]] · [[业界观点/Geoffrey_Hinton/sayings|Hinton 语录]]
-- [[业界观点/Yann_LeCun/about|LeCun 人物简介]] · [[业界观点/Yann_LeCun/sayings|LeCun 语录]]
-- [[业界观点/Ilya_Sutskever/about|Ilya Sutskever 简介]] — Hinton 的学生，SSI 创始人
-- [[业界观点/Demis_Hassabis/about|Demis Hassabis 简介]] — 世界模型的另一支研究力量
-- [[业界观点/Yoshua_Bengio/about|Yoshua Bengio 简介]] — 第三位图灵奖共获者，安全立场接近 Hinton
-- [[业界观点/Sam_Altman/about|Sam Altman 简介]] — Scaling 派旗手，LeCun 批评对象
-- [[业界观点/Jensen_Huang/about|黄仁勋 简介]] — 算力派旁观者，Cosmos 世界基础模型推动者
-- [[业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix|AI 安全立场矩阵]] — 把两人的风险分歧放入完整光谱
-- [[业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix|AGI 时间表预测矩阵]] — 两人的 AGI 预测对比
-- [[业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026|开源 vs 闭源之争]] — 开源分歧的延伸
-- [[业界观点/index|业界观点首页]]
+- [[19_业界观点/Geoffrey_Hinton/about|Hinton 人物简介]] · [[19_业界观点/Geoffrey_Hinton/sayings|Hinton 语录]]
+- [[19_业界观点/Yann_LeCun/about|LeCun 人物简介]] · [[19_业界观点/Yann_LeCun/sayings|LeCun 语录]]
+- [[19_业界观点/Ilya_Sutskever/about|Ilya Sutskever 简介]] — Hinton 的学生，SSI 创始人
+- [[19_业界观点/Demis_Hassabis/about|Demis Hassabis 简介]] — 世界模型的另一支研究力量
+- [[19_业界观点/Yoshua_Bengio/about|Yoshua Bengio 简介]] — 第三位图灵奖共获者，安全立场接近 Hinton
+- [[19_业界观点/Sam_Altman/about|Sam Altman 简介]] — Scaling 派旗手，LeCun 批评对象
+- [[19_业界观点/Jensen_Huang/about|黄仁勋 简介]] — 算力派旁观者，Cosmos 世界基础模型推动者
+- [[19_业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix|AI 安全立场矩阵]] — 把两人的风险分歧放入完整光谱
+- [[19_业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix|AGI 时间表预测矩阵]] — 两人的 AGI 预测对比
+- [[19_业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026|开源 vs 闭源之争]] — 开源分歧的延伸
+- [[19_业界观点/index|业界观点首页]]
 
 ---
 

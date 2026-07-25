@@ -112,9 +112,9 @@ AI 正在解决电动汽车和储能系统的核心痛点。
 
 ## Related
 
-- [[行业应用/AI_for_Science/Protein_Folding_and_Drug_Discovery_2026]] — 生物医药领域的 AI4S
-- [[深度学习/Graph_Neural_Networks/Graph_Neural_Networks_Deep_Dive]] — 材料建模的核心算法
-- [[行业应用/AI_Energy_Climate_2026]] — 宏观层面的能源管理
+- [[18_行业应用/02_AI_for_Science/Protein_Folding_and_Drug_Discovery_2026]] — 生物医药领域的 AI4S
+- [[03_深度学习/05_Graph_Neural_Networks/Graph_Neural_Networks_Deep_Dive]] — 材料建模的核心算法
+- [[18_行业应用/AI_Energy_Climate_2026]] — 宏观层面的能源管理
 - [[概念/crystal-lattice]] — 晶体点阵基础概念
 
 ---
@@ -157,9 +157,9 @@ AI 正在解决电动汽车和储能系统的核心痛点。
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

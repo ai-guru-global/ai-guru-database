@@ -39,8 +39,8 @@ Andrew Ng 是 AI 教育民主化的旗手。2011 年他在斯坦福开设免费�
 
 | 文件 | 内容 | 适用人群 |
 |------|------|----------|
-| [[业界观点/Andrew_Ng/about\|about]] | 完整人物简介：教育、百度、Landing AI | 所有读者 |
-| [[业界观点/Andrew_Ng/sayings\|sayings]] | 重要语录合集 | 研究者 |
+| [[19_业界观点/Andrew_Ng/about\|about]] | 完整人物简介：教育、百度、Landing AI | 所有读者 |
+| [[19_业界观点/Andrew_Ng/sayings\|sayings]] | 重要语录合集 | 研究者 |
 
 ---
 
@@ -82,7 +82,7 @@ Andrew Ng 是 AI 教育民主化的旗手。2011 年他在斯坦福开设免费�
 | 数据 | Data-Centric AI——改进数据质量胜过改进模型 | Landing AI |
 | 教育 | "AI 素养应该像数学一样普及" | 多次 |
 
-完整语录见 [[业界观点/Andrew_Ng/sayings|Andrew Ng 语录]]。
+完整语录见 [[19_业界观点/Andrew_Ng/sayings|Andrew Ng 语录]]。
 
 ---
 
@@ -94,7 +94,7 @@ Andrew Ng 是 AI 教育民主化的旗手。2011 年他在斯坦福开设免费�
 | 工业落地派 | 代表 |
 | AGI 怀疑派 | 成员 |
 
-Ng 的独特之处是**专注狭义 AI 的工业落地而非追逐 AGI**。参见 [[业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix|AGI 时间表矩阵]]、[[业界观点/Talks_Synthesis/China_US_AI_Race_Leaders_Views|中美 AI 竞赛]]（百度经历）。
+Ng 的独特之处是**专注狭义 AI 的工业落地而非追逐 AGI**。参见 [[19_业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix|AGI 时间表矩阵]]、[[19_业界观点/Talks_Synthesis/China_US_AI_Race_Leaders_Views|中美 AI 竞赛]]（百度经历）。
 
 ---
 
@@ -102,8 +102,8 @@ Ng 的独特之处是**专注狭义 AI 的工业落地而非追逐 AGI**。参�
 
 | 关系 | 人物 |
 |------|------|
-| 教育呼应 | [[业界观点/Andrej_Karpathy/about\|Karpathy]]、[[业界观点/Sebastian_Thrun/about\|Thrun]]、[[业界观点/3Blue1Brown/about\|3Blue1Brown]] |
-| 中美桥梁 | [[业界观点/Fei_Fei_Li/about\|Fei-Fei Li]] |
+| 教育呼应 | [[19_业界观点/Andrej_Karpathy/about\|Karpathy]]、[[19_业界观点/Sebastian_Thrun/about\|Thrun]]、[[19_业界观点/3Blue1Brown/about\|3Blue1Brown]] |
+| 中美桥梁 | [[19_业界观点/Fei_Fei_Li/about\|Fei-Fei Li]] |
 | Stanford 同事 | 多位 |
 
 ---
@@ -112,8 +112,8 @@ Ng 的独特之处是**专注狭义 AI 的工业落地而非追逐 AGI**。参�
 
 | 阶段 | 推荐内容 | 目标 |
 |------|----------|------|
-| 入门 | [[业界观点/Andrew_Ng/about\|about]] | 了解教育与工业 |
-| 进阶 | [[业界观点/Andrew_Ng/sayings\|sayings]] | 掌握新电力类比 |
+| 入门 | [[19_业界观点/Andrew_Ng/about\|about]] | 了解教育与工业 |
+| 进阶 | [[19_业界观点/Andrew_Ng/sayings\|sayings]] | 掌握新电力类比 |
 | 实践 | DeepLearning.AI 课程 | 动手学 |
 
 ---
@@ -153,12 +153,12 @@ Ng 的独特之处是**专注狭义 AI 的工业落地而非追逐 AGI**。参�
 
 ## 关联导航
 
-- [[业界观点/Andrew_Ng/about\|人物简介]] · [[业界观点/Andrew_Ng/sayings\|核心语录]]
-- [[业界观点/Andrej_Karpathy/about\|Andrej Karpathy]] · [[业界观点/Fei_Fei_Li/about\|Fei-Fei Li]]
-- [[业界观点/Sebastian_Thrun/about\|Sebastian Thrun]] · [[业界观点/3Blue1Brown/about\|3Blue1Brown]]
-- [[业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix\|AGI 时间表矩阵]]
-- [[业界观点/Talks_Synthesis/China_US_AI_Race_Leaders_Views\|中美 AI 竞赛]]
-- [[业界观点/index\|业界观点首页]]
+- [[19_业界观点/Andrew_Ng/about\|人物简介]] · [[19_业界观点/Andrew_Ng/sayings\|核心语录]]
+- [[19_业界观点/Andrej_Karpathy/about\|Andrej Karpathy]] · [[19_业界观点/Fei_Fei_Li/about\|Fei-Fei Li]]
+- [[19_业界观点/Sebastian_Thrun/about\|Sebastian Thrun]] · [[19_业界观点/3Blue1Brown/about\|3Blue1Brown]]
+- [[19_业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix\|AGI 时间表矩阵]]
+- [[19_业界观点/Talks_Synthesis/China_US_AI_Race_Leaders_Views\|中美 AI 竞赛]]
+- [[19_业界观点/index\|业界观点首页]]
 
 ---
 

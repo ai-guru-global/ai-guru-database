@@ -14,15 +14,15 @@ sources: []
 
 | 文件 | 说明 |
 |------|------|
-| [[机器学习/Supervised_Learning/Supervised_Learning|监督学习]] | 核心算法与理论综述 |
-| [[机器学习/Supervised_Learning/Supervised_Learning_for_dummy|入门版]] | 零基础监督学习入门 |
-| [[机器学习/Supervised_Learning/EDA_Quick_Start|EDA 快速入门]] | 探索性数据分析实战 |
-| [[机器学习/Supervised_Learning/Your_First_ML_Model|第一个 ML 模型]] | 从零搭建机器学习模型 |
+| [[02_机器学习/02_Supervised_Learning/Supervised_Learning|监督学习]] | 核心算法与理论综述 |
+| [[02_机器学习/02_Supervised_Learning/Supervised_Learning_for_dummy|入门版]] | 零基础监督学习入门 |
+| [[02_机器学习/02_Supervised_Learning/EDA_Quick_Start|EDA 快速入门]] | 探索性数据分析实战 |
+| [[02_机器学习/02_Supervised_Learning/Your_First_ML_Model|第一个 ML 模型]] | 从零搭建机器学习模型 |
 
 ## Related
 
-- [[机器学习/Ensemble_Learning/index|Ensemble Learning]]
-- [[机器学习/Unsupervised_Learning/index|Unsupervised Learning]]
+- [[02_机器学习/04_Ensemble_Learning/index|Ensemble Learning]]
+- [[02_机器学习/03_Unsupervised_Learning/index|Unsupervised Learning]]
 
 ## 进阶知识拓展
 
@@ -60,9 +60,9 @@ sources: []
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

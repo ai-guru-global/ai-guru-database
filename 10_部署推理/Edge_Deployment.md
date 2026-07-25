@@ -247,9 +247,9 @@ EDGE_OPTIMIZATION_CHECKLIST = {
 
 ## 6. 交叉引用
 
-- [[部署推理/Inference_Engines/|推理引擎]]
-- [[部署推理/Quantization/|量化]]
-- [[部署推理/Model_Compression/|模型压缩]]
-- [[大模型/Edge_LLM/|边缘 LLM]]
-- [[架构基建/|架构基建]]
-- [[部署推理/Serving_Architecture/|服务架构]]
+- [[10_部署推理/02_Inference_Engines/|推理引擎]]
+- [[10_部署推理/05_Quantization/|量化]]
+- [[10_部署推理/Model_Compression/|模型压缩]]
+- [[05_大模型/12_Edge_LLM/|边缘 LLM]]
+- [[12_架构基建/|架构基建]]
+- [[10_部署推理/Serving_Architecture/|服务架构]]

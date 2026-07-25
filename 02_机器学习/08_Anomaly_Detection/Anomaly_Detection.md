@@ -1045,7 +1045,7 @@ graph TD
 ## Related
 
 - [[概念/anomaly-detection]] — 异常检测概念总览
-- [[机器学习/Unsupervised_Learning/Unsupervised_Learning]] — 无监督学习：聚类与降维
-- [[机器学习/Ensemble_Learning/Ensemble_Learning]] — 集成学习：Isolation Forest 的理论基础
-- [[深度学习/Self_Supervised_Learning/Self_Supervised_Learning_Deep_Dive]] — 自编码器与自监督异常检测
-- [[机器学习/Feature_Engineering/Feature_Engineering]] — 特征工程：异常检测中的关键特征构造
+- [[02_机器学习/03_Unsupervised_Learning/Unsupervised_Learning]] — 无监督学习：聚类与降维
+- [[02_机器学习/04_Ensemble_Learning/Ensemble_Learning]] — 集成学习：Isolation Forest 的理论基础
+- [[03_深度学习/06_Self_Supervised_Learning/Self_Supervised_Learning_Deep_Dive]] — 自编码器与自监督异常检测
+- [[02_机器学习/05_Feature_Engineering/Feature_Engineering]] — 特征工程：异常检测中的关键特征构造

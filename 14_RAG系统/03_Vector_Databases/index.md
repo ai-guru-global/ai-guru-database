@@ -8,15 +8,15 @@ sources: []
 
 # Vector Databases
 
-This page indexes the contents of `RAG系统/Vector_Databases`.
+This page indexes the contents of `14_RAG系统/Vector_Databases`.
 
 ## Files
 
-- [[RAG系统/Vector_Databases/Chroma_Deep_Dive|Chroma Deep Dive]]
-- [[RAG系统/Vector_Databases/Milvus_Deep_Dive|Milvus Deep Dive]]
-- [[RAG系统/Vector_Databases/Qdrant_Deep_Dive|Qdrant Deep Dive]]
-- [[RAG系统/Vector_Databases/Typesense_Deep_Dive|Typesense Deep Dive]]
-- [[RAG系统/Vector_Databases/Weaviate_Deep_Dive|Weaviate Deep Dive]]
+- [[14_RAG系统/03_Vector_Databases/Chroma_Deep_Dive|Chroma Deep Dive]]
+- [[14_RAG系统/03_Vector_Databases/Milvus_Deep_Dive|Milvus Deep Dive]]
+- [[14_RAG系统/03_Vector_Databases/Qdrant_Deep_Dive|Qdrant Deep Dive]]
+- [[14_RAG系统/03_Vector_Databases/Typesense_Deep_Dive|Typesense Deep Dive]]
+- [[14_RAG系统/03_Vector_Databases/Weaviate_Deep_Dive|Weaviate Deep Dive]]
 
 ## 进阶知识拓展
 
@@ -54,9 +54,9 @@ This page indexes the contents of `RAG系统/Vector_Databases`.
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

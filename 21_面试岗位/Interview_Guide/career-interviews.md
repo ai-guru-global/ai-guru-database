@@ -45,10 +45,10 @@ sources: []
 
 ## Related
 
-- [[面试岗位/README]]
+- [[21_面试岗位/README]]
 - [[概念/ai-fundamentals]]
-- [[入门/AI_Learning_Resources]]
-- [[编程/AI_Coding_for_dummy]]
+- [[00_入门/AI_Learning_Resources]]
+- [[16_编程/AI_Coding_for_dummy]]
 
 ## 面试核心知识框架
 

@@ -352,11 +352,11 @@ R:
 
 ## Related
 
-- [[面试岗位/AI_Security_Engineer/question_bank|AI Security Engineer 题库]]
-- [[面试岗位/AI_Security_Engineer/company_level_question_bank|AI Security Engineer 按公司/级别区分的题库]]
-- [[面试岗位/AI_Security_Engineer/index|AI Security Engineer 首页]]
-- [[伦理安全/index|伦理安全]]
-- [[架构基建/AI_Gateway/index|AI Gateway]]
-- [[面试岗位/AI_Safety_Engineer/index|AI Safety Engineer]]
-- [[面试岗位/Interview_Guide/System_Design_for_AI|AI 系统设计面试]]
-- [[面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/AI_Security_Engineer/question_bank|AI Security Engineer 题库]]
+- [[21_面试岗位/AI_Security_Engineer/company_level_question_bank|AI Security Engineer 按公司/级别区分的题库]]
+- [[21_面试岗位/AI_Security_Engineer/index|AI Security Engineer 首页]]
+- [[17_伦理安全/index|伦理安全]]
+- [[12_架构基建/11_AI_Gateway/index|AI Gateway]]
+- [[21_面试岗位/AI_Safety_Engineer/index|AI Safety Engineer]]
+- [[21_面试岗位/Interview_Guide/System_Design_for_AI|AI 系统设计面试]]
+- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]

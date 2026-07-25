@@ -340,8 +340,8 @@ AI 应用:
 
 ## 相关文档
 
-- [[数学基础/Game_Theory/Game_Theory_AI_Alignment|博弈论与 AI 对齐]]
-- [[强化学习/Multi_Agent_RL/|多智能体强化学习]]
-- [[智能体/Agent_Foundations/Multi_Agent_Systems_Guide|多智能体系统指南]]
-- [[伦理安全/Value_Alignment/|价值对齐]]
-- [[深度学习/Generative_Models/|生成模型]] — GAN 博弈
+- [[01_数学基础/06_Game_Theory/Game_Theory_AI_Alignment|博弈论与 AI 对齐]]
+- [[06_强化学习/Multi_Agent_RL/|多智能体强化学习]]
+- [[15_智能体/01_Agent_Foundations/Multi_Agent_Systems_Guide|多智能体系统指南]]
+- [[17_伦理安全/02_Value_Alignment/|价值对齐]]
+- [[03_深度学习/04_Generative_Models/|生成模型]] — GAN 博弈

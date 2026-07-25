@@ -12,7 +12,7 @@ relationships:
   - target: "概念/Inference/kv-cache"
     type: optimizes
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
   - "https://arxiv.org/abs/2305.13245"  # GQA
   - "https://arxiv.org/abs/2405.04434"  # MLA (DeepSeek-V2)
 summary: 注意力架构从 MHA → MQA → GQA → MLA 演进，核心目标是用更少的 KV 头数/维度压缩 KV Cache。GQA（4-8× 压缩）是 2024-2026 默认架构（Llama 3/Qwen 2/Mistral），MLA（7-28×）是 DeepSeek 的极致压缩，SWA（恒定内存）适合局部推理。

@@ -100,15 +100,15 @@ securityContext:
 
 - [[概念/supply-chain-security|Supply Chain Security]]
 - [[概念/container-security|Container Security]]
-- [[架构基建/Security/AI_Security_Fundamentals|AI 安全基础]]
+- [[12_架构基建/10_Security/AI_Security_Fundamentals|AI 安全基础]]
 
-- [[架构基建/README|架构与基础设施 (Architecture & Infrastructure)]]
+- [[12_架构基建/README|架构与基础设施 (Architecture & Infrastructure)]]
 
 ## 架构核心组件对比
 
 | 组件层 | 功能 | 关键技术 | 选型考量 |
 |--------|------|----------|----------|
-| 计算层 | 模型训练/推理 | GPU/TPU/NPU集群 | 算力需求+成本 |
+| 计算层 | 07_模型训练/推理 | GPU/TPU/NPU集群 | 算力需求+成本 |
 | 存储层 | 数据/模型/检查点 | 分布式存储/对象存储 | 容量+IOPS+成本 |
 | 网络层 | 节点间通信 | RDMA/RoCE/InfiniBand | 带宽+延迟 |
 | 调度层 | 资源编排 | K8s/Slurm/Ray | 弹性+效率 |

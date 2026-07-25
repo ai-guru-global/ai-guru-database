@@ -584,9 +584,9 @@ $ / 1M tokens = input_price × input_tokens + output_price × output_tokens
 
 ## Related
 
-- [[部署推理/Inference_Engines/LLM_Inference_Engine_Selection_Guide|LLM_Inference_Engine_Selection_Guide]]
-- [[部署推理/Inference_Engines/LLM_Inference_Engine_Migration_Guide|LLM_Inference_Engine_Migration_Guide]]
-- [[部署推理/Inference_Engines/vLLM_Deep_Dive|vLLM_Deep_Dive]]
-- [[部署推理/Inference_Engines/SGLang_Deep_Dive|SGLang_Deep_Dive]]
-- [[部署推理/Inference_Engines/TensorRT_LLM_Deep_Dive|TensorRT_LLM_Deep_Dive]]
-- [[部署推理/Deployment_Inference_2026|Deployment_Inference_2026]]
+- [[10_部署推理/02_Inference_Engines/LLM_Inference_Engine_Selection_Guide|LLM_Inference_Engine_Selection_Guide]]
+- [[10_部署推理/02_Inference_Engines/LLM_Inference_Engine_Migration_Guide|LLM_Inference_Engine_Migration_Guide]]
+- [[10_部署推理/02_Inference_Engines/vLLM_Deep_Dive|vLLM_Deep_Dive]]
+- [[10_部署推理/02_Inference_Engines/SGLang_Deep_Dive|SGLang_Deep_Dive]]
+- [[10_部署推理/02_Inference_Engines/TensorRT_LLM_Deep_Dive|TensorRT_LLM_Deep_Dive]]
+- [[10_部署推理/Deployment_Inference_2026|Deployment_Inference_2026]]

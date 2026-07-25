@@ -251,8 +251,8 @@ def debug_precision(model, input_tensor):
 
 ## 相关文档
 
-- [[数学基础/Numerical_Methods/Numerical_Methods|数值方法总论]]
-- [[数学基础/GPU_Programming/|GPU 编程]] — Tensor Core 与精度
-- [[模型训练/Distributed_Training/|分布式训练]] — 多卡混合精度
-- [[部署推理/Inference_Engines/|推理引擎]] — 量化推理
-- [[大模型/Fine_tuning_Techniques/|微调技术]] — LoRA 精度选择
+- [[01_数学基础/05_Numerical_Methods/Numerical_Methods|数值方法总论]]
+- [[01_数学基础/GPU_Programming/|GPU 编程]] — Tensor Core 与精度
+- [[07_模型训练/04_Distributed_Training/|分布式训练]] — 多卡混合精度
+- [[10_部署推理/02_Inference_Engines/|推理引擎]] — 量化推理
+- [[05_大模型/07_Fine_tuning_Techniques/|微调技术]] — LoRA 精度选择

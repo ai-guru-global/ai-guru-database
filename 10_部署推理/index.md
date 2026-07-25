@@ -12,28 +12,28 @@ This page indexes the contents of `部署推理`.
 
 ## Subdirectories
 
-- [[部署推理/Caching/index|Caching]]
-- [[部署推理/Cost_index|Cost]]
-- [[部署推理/GPU_Infrastructure/index|GPU Infrastructure]]
-- [[部署推理/Hardware/index|Hardware]]
-- [[部署推理/Inference_Engines/index|Inference Engines]]
-- [[部署推理/Inference_Optimization/index|Inference Optimization]]
-- [[部署推理/Inference_Performance/index|Inference Performance]]
-- [[部署推理/Quantization/index|Quantization]]
+- [[10_部署推理/06_Caching/index|Caching]]
+- [[10_部署推理/Cost_index|Cost]]
+- [[10_部署推理/07_GPU_Infrastructure/index|GPU Infrastructure]]
+- [[10_部署推理/08_Hardware/index|Hardware]]
+- [[10_部署推理/02_Inference_Engines/index|Inference Engines]]
+- [[10_部署推理/03_Inference_Optimization/index|Inference Optimization]]
+- [[10_部署推理/04_Inference_Performance/index|Inference Performance]]
+- [[10_部署推理/05_Quantization/index|Quantization]]
 
 ## Files
 
-- [[部署推理/Blue_Green_Canary_Deployment|Blue Green Canary Deployment]]
-- [[部署推理/Deployment_Inference|Deployment Inference]]
-- [[部署推理/Deployment_Inference_2026|Deployment Inference 2026]]
-- [[部署推理/Deployment_Inference_for_dummy|Deployment Inference For Dummy]]
-- [[部署推理/Inference-in-nutshell|Inference In Nutshell]]
-- [[部署推理/Inference_Optimization_for_dummy|Inference Optimization For Dummy]]
-- [[部署推理/Inference_Tuning_Cheat_Sheet|Inference Tuning Cheat Sheet]]
-- [[部署推理/Model_Hot_Reload_and_Rollback_Runbook|Model Hot Reload And Rollback Runbook]]
-- [[部署推理/Model_Registry|Model Registry]]
-- [[部署推理/README|README]]
-- [[部署推理/README_for_dummy|README For Dummy]]
+- [[10_部署推理/Blue_Green_Canary_Deployment|Blue Green Canary Deployment]]
+- [[10_部署推理/Deployment_Inference|Deployment Inference]]
+- [[10_部署推理/Deployment_Inference_2026|Deployment Inference 2026]]
+- [[10_部署推理/Deployment_Inference_for_dummy|Deployment Inference For Dummy]]
+- [[10_部署推理/Inference-in-nutshell|Inference In Nutshell]]
+- [[10_部署推理/Inference_Optimization_for_dummy|Inference Optimization For Dummy]]
+- [[10_部署推理/Inference_Tuning_Cheat_Sheet|Inference Tuning Cheat Sheet]]
+- [[10_部署推理/Model_Hot_Reload_and_Rollback_Runbook|Model Hot Reload And Rollback Runbook]]
+- [[10_部署推理/Model_Registry|Model Registry]]
+- [[10_部署推理/README|README]]
+- [[10_部署推理/README_for_dummy|README For Dummy]]
 
 ## 核心知识体系
 
@@ -144,9 +144,9 @@ This page indexes the contents of `部署推理`.
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

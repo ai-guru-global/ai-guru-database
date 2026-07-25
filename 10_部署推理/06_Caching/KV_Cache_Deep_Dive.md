@@ -237,7 +237,7 @@ kv_size = 2 * 32 * 8 * 128 * 128000 * 16 * 2  # ≈ 256 GB
 - 支持共享前缀（Copy-on-Write）
 - 支持动态增长
 
-更多细节见：[[概念/paged-attention|PagedAttention 概念卡]]、[[部署推理/Inference_Engines/vLLM_Deep_Dive|vLLM 深度解析]]。
+更多细节见：[[概念/paged-attention|PagedAttention 概念卡]]、[[10_部署推理/02_Inference_Engines/vLLM_Deep_Dive|vLLM 深度解析]]。
 
 ### 4.2 Prefix Caching / Prompt Caching
 
@@ -251,7 +251,7 @@ kv_size = 2 * 32 * 8 * 128 * 128000 * 16 * 2  # ≈ 256 GB
 
 效果：命中时首 token 延迟降低 5–10×，长文档 RAG 场景成本降低 80–95%。
 
-深入解析：[[部署推理/Caching/Prompt_Caching_and_KV_Cache_Optimization|Prompt Caching 与 KV Cache 优化深度解析]]。
+深入解析：[[10_部署推理/06_Caching/Prompt_Caching_and_KV_Cache_Optimization|Prompt Caching 与 KV Cache 优化深度解析]]。
 
 ### 4.3 Continuous Batching
 
@@ -362,7 +362,7 @@ $$
 - 与 RoPE 的交互复杂
 - 社区正在研究 MHA/GQA → MLA 的迁移（MHA2MLA、TransMLA）
 
-更多：[[概念/multi-head-latent-attention|MLA 概念卡]]、[[大模型/Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive|DeepSeek 深度解析]]。
+更多：[[概念/multi-head-latent-attention|MLA 概念卡]]、[[05_大模型/15_Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive|DeepSeek 深度解析]]。
 
 ### 5.6 架构对比表
 
@@ -699,11 +699,11 @@ MQA 压缩太激进，质量损失明显。GQA 在压缩比和质量之间取得
 - [[概念/multi-head-latent-attention|MLA 概念卡]]
 - [[概念/prefill-decode|Prefill / Decode 概念卡]]
 - [[概念/attention-variants|Attention 变体概念卡]]
-- [[部署推理/Inference_Engines/vLLM_Deep_Dive|vLLM 深度解析]]
-- [[部署推理/Caching/Prompt_Caching_and_KV_Cache_Optimization|Prompt Caching 与 KV Cache 优化]]
-- [[部署推理/Caching/Speculative_Decoding_Advanced_2026|投机解码前沿技术]]
-- [[部署推理/Quantization/Quantization_Techniques_2026|量化技术 2026]]
-- [[大模型/LLM_Architectures/Transformer_Alternatives|Transformer 替代架构]]
+- [[10_部署推理/02_Inference_Engines/vLLM_Deep_Dive|vLLM 深度解析]]
+- [[10_部署推理/06_Caching/Prompt_Caching_and_KV_Cache_Optimization|Prompt Caching 与 KV Cache 优化]]
+- [[10_部署推理/06_Caching/Speculative_Decoding_Advanced_2026|投机解码前沿技术]]
+- [[10_部署推理/05_Quantization/Quantization_Techniques_2026|量化技术 2026]]
+- [[05_大模型/05_LLM_Architectures/Transformer_Alternatives|Transformer 替代架构]]
 
 ---
 

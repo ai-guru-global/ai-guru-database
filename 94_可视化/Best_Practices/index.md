@@ -31,9 +31,9 @@ tags: [best-practices, index, navigation]
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[可视化/Best_Practices/Data_Visualization_Best_Practices\|Data Visualization Best Practices]] | 图表选择、配色与标注原则 | 全体实践者 / 数据分析师 |
-| [[可视化/Best_Practices/Data_Viz_Best_Practices\|Data Viz Best Practices]] | 数据可视化最佳实践（深度版） | 数据分析师 / 数据故事讲述者 |
-| [[可视化/Best_Practices/Visualization_for_dummy\|Visualization for dummy]] | 工具选择与常见陷阱 | 初学者 / 数据可视化学习者 |
+| [[94_可视化/Best_Practices/Data_Visualization_Best_Practices\|Data Visualization Best Practices]] | 图表选择、配色与标注原则 | 全体实践者 / 数据分析师 |
+| [[94_可视化/Best_Practices/Data_Viz_Best_Practices\|Data Viz Best Practices]] | 数据可视化最佳实践（深度版） | 数据分析师 / 数据故事讲述者 |
+| [[94_可视化/Best_Practices/Visualization_for_dummy\|Visualization for dummy]] | 工具选择与常见陷阱 | 初学者 / 数据可视化学习者 |
 
 ---
 
@@ -191,12 +191,12 @@ tags: [best-practices, index, navigation]
 
 ## 关联
 
-- [[可视化/index|可视化首页]]
-- [[可视化/Training_Viz/index|Training Viz]]
-- [[可视化/Evaluation_Viz/index|Evaluation Viz]]
-- [[可视化/System_Viz/index|System Viz]]
-- [[模型评估/index|模型评估]]
-- [[机器学习/index|机器学习]]
+- [[94_可视化/index|可视化首页]]
+- [[94_可视化/Training_Viz/index|Training Viz]]
+- [[94_可视化/Evaluation_Viz/index|Evaluation Viz]]
+- [[94_可视化/System_Viz/index|System Viz]]
+- [[08_模型评估/index|模型评估]]
+- [[02_机器学习/index|机器学习]]
 - [[治理/index|项目治理]]
 
 ---

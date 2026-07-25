@@ -360,10 +360,10 @@ spec:
 
 ## Related
 
-- [[模型运维/CI_CD/ML_CI_CD]] — ML CI/CD 流水线
-- [[模型运维/CI_CD/CI_CD_Pipeline_AI_2026]] — AI 系统 CI/CD
-- [[部署推理/Inference_Engines/KServe_Deep_Dive]] — KServe 部署
-- [[模型运维/Observability/Model_Monitoring_and_Drift_Detection_2026]] — 模型监控
+- [[11_模型运维/06_CI_CD/ML_CI_CD]] — ML CI/CD 流水线
+- [[11_模型运维/06_CI_CD/CI_CD_Pipeline_AI_2026]] — AI 系统 CI/CD
+- [[10_部署推理/02_Inference_Engines/KServe_Deep_Dive]] — KServe 部署
+- [[11_模型运维/08_Observability/Model_Monitoring_and_Drift_Detection_2026]] — 模型监控
 
 ---
 

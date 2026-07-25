@@ -10,7 +10,7 @@ relationships:
   - target: "概念/modelscope"
     type: related_to
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
 summary: "huggingface-cli 是 Hugging Face Hub 的官方命令行工具，用于模型/数据集下载、上传、管理。AI Stack 模型下载工具链中作为获取开源模型的标准方式。"
 provenance:
   extracted: 0.30
@@ -168,7 +168,7 @@ AI Stack 模型获取流程
 - [[概念/model-registry]] — 模型仓库
 - [[概念/modelscope]] — ModelScope 魔搭
 - [[概念/git-lfs]] — Git LFS 大文件存储
-- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
 
 ---
 

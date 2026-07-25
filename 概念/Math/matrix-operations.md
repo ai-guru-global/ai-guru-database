@@ -153,7 +153,7 @@ sources: []
 
 ## 来源
 
-- 数学基础/Linear_Algebra/Linear_Algebra.md
+- 01_数学基础/02_Linear_Algebra/Linear_Algebra.md
 - 当前对话中关于矩阵运算的白话解释
 
 ---

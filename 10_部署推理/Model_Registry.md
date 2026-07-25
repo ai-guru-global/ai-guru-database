@@ -306,9 +306,9 @@ model = mlflow.pyfunc.load_model(
 
 ## 相关阅读
 
-- [[模型运维/MLOps_Pipeline]] — MLOps 流水线
-- [[模型运维/Experiment_Tracking/README|实验跟踪]] — 实验跟踪
-- [[模型运维/CI_CD/README|CI/CD]] — CI/CD
-- [[部署推理/Deployment_Inference]] — 部署与推理
-- [[模型运维/Model_Serving_Patterns]] — 模型服务模式
-- [[模型运维/Data_Engineering/README|数据工程]] — 数据工程
+- [[11_模型运维/MLOps_Pipeline]] — MLOps 流水线
+- [[11_模型运维/04_Experiment_Tracking/README|实验跟踪]] — 实验跟踪
+- [[11_模型运维/06_CI_CD/README|CI/CD]] — CI/CD
+- [[10_部署推理/Deployment_Inference]] — 部署与推理
+- [[11_模型运维/Model_Serving_Patterns]] — 模型服务模式
+- [[11_模型运维/02_Data_Engineering/README|数据工程]] — 数据工程

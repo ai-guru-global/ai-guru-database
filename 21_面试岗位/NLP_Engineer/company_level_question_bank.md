@@ -132,11 +132,11 @@ sources: []
 
 ## Related
 
-- [[面试岗位/NLP_Engineer/interview_answers|NLP Engineer 面试题实例答案]]
-- [[面试岗位/NLP_Engineer/interview_preparing|NLP Engineer 面试准备]]
-- [[面试岗位/NLP_Engineer/question_bank|NLP Engineer 题库]]
-- [[面试岗位/README|AI 面试准备 (Interviews)]]
-- [[面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/NLP_Engineer/interview_answers|NLP Engineer 面试题实例答案]]
+- [[21_面试岗位/NLP_Engineer/interview_preparing|NLP Engineer 面试准备]]
+- [[21_面试岗位/NLP_Engineer/question_bank|NLP Engineer 题库]]
+- [[21_面试岗位/README|AI 面试准备 (Interviews)]]
+- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]
 ---
 title: NLP Engineer 按公司/级别区分的题库
 category: 21-interviews-nlp-engineer
@@ -190,11 +190,11 @@ aliases:
 
 ## Related
 
-- [[面试岗位/NLP_Engineer/interview_answers|NLP Engineer 面试题实例答案]]
-- [[面试岗位/NLP_Engineer/interview_preparing|NLP Engineer 面试准备]]
-- [[面试岗位/NLP_Engineer/question_bank|NLP Engineer 题库]]
-- [[面试岗位/README|AI 面试准备 (Interviews)]]
-- [[面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/NLP_Engineer/interview_answers|NLP Engineer 面试题实例答案]]
+- [[21_面试岗位/NLP_Engineer/interview_preparing|NLP Engineer 面试准备]]
+- [[21_面试岗位/NLP_Engineer/question_bank|NLP Engineer 题库]]
+- [[21_面试岗位/README|AI 面试准备 (Interviews)]]
+- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]
 
 ## 面试核心知识框架
 

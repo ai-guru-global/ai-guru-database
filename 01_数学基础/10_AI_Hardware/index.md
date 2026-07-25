@@ -8,18 +8,18 @@ sources: []
 
 # AI Hardware
 
-This page indexes the contents of `数学基础/AI_Hardware`.
+This page indexes the contents of `01_数学基础/AI_Hardware`.
 
 ## Files
 
-- [[数学基础/AI_Hardware/AI_Hardware_2026|AI Hardware 2026]]
-- [[数学基础/AI_Hardware/AI_Hardware_Quantum_for_Beginners|AI Hardware Quantum For Beginners]]
-- [[数学基础/AI_Hardware/Chinese_AI_Chips_Deep_Dive|Chinese AI Chips Deep Dive]]
-- [[数学基础/AI_Hardware/Google_TPU_Deep_Dive|Google TPU Deep Dive]]
-- [[数学基础/AI_Hardware/NVIDIA_AMD_GPU_Deep_Dive|NVIDIA AMD GPU Deep Dive]]
-- [[数学基础/AI_Hardware/README|README]]
-- [[数学基础/AI_Hardware/T_Head_PPU_Deep_Dive|T Head PPU Deep Dive]]
-- [[数学基础/AI_Hardware/T_Head_PPU_for_dummy|T Head PPU For Dummy]]
+- [[01_数学基础/10_AI_Hardware/AI_Hardware_2026|AI Hardware 2026]]
+- [[01_数学基础/10_AI_Hardware/AI_Hardware_Quantum_for_Beginners|AI Hardware Quantum For Beginners]]
+- [[01_数学基础/10_AI_Hardware/Chinese_AI_Chips_Deep_Dive|Chinese AI Chips Deep Dive]]
+- [[01_数学基础/10_AI_Hardware/Google_TPU_Deep_Dive|Google TPU Deep Dive]]
+- [[01_数学基础/10_AI_Hardware/NVIDIA_AMD_GPU_Deep_Dive|NVIDIA AMD GPU Deep Dive]]
+- [[01_数学基础/10_AI_Hardware/README|README]]
+- [[01_数学基础/10_AI_Hardware/T_Head_PPU_Deep_Dive|T Head PPU Deep Dive]]
+- [[01_数学基础/10_AI_Hardware/T_Head_PPU_for_dummy|T Head PPU For Dummy]]
 
 ## 进阶知识拓展
 
@@ -57,9 +57,9 @@ This page indexes the contents of `数学基础/AI_Hardware`.
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

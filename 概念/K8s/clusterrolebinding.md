@@ -87,7 +87,7 @@ kubectl delete clusterrolebinding read-nodes-binding  # ⚠️ HIGH-RISK — 删
 - [[概念/rbac]] — RBAC 基于角色的访问控制
 - [[概念/clusterrole]] — ClusterRole
 - [[概念/serviceaccount]] — ServiceAccount
-- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 安全架构
+- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack 安全架构
 
 ---
 
@@ -161,7 +161,7 @@ kubectl describe clusterrolebinding <name>
 1. **最小权限**：优先用 RoleBinding，必要时才用 ClusterRoleBinding
 2. **定期审计**：检查 cluster-admin 绑定，移除不必要的权限
 3. **专用 ServiceAccount**：避免使用 default ServiceAccount
-4. **权限分离**：开发/测试/生产环境分离授权
+4. **权限分离**：开发/09_测试/生产环境分离授权
 5. **自动化审计**：使用 Kyverno/OPA 策略检测过度授权
 
 ## 权限过大检测

@@ -572,14 +572,14 @@ METRICS = {
 
 - [OpenRouter 官网](https://openrouter.ai)
 - [OpenRouter 文档](https://openrouter.ai/docs)
-- [Agent Gateway 架构](../../架构基建/AI_Gateway/)
+- [Agent Gateway 架构](../../12_架构基建/11_AI_Gateway/)
 - [多模型 Agent 协作](../Agent_Evaluation/Multi_Agent_Evaluation_2026.md)
 
 ## 相关链接
 
 - [[概念/LLM/litellm|LiteLLM]] — 同类统一 LLM 网关对比
-- [[架构基建/AI_Gateway/index|AI Gateway 索引]] — 网关架构总览
+- [[12_架构基建/11_AI_Gateway/index|AI Gateway 索引]] — 网关架构总览
 - [[概念/Inference/model-gateway|模型网关]] — 网关概念卡片
-- [[智能体/Agent_Platforms/index|Agent 平台索引]] — Agent 平台导览
-- [[智能体/Agent_Platforms/Dify_Coze_MLServe_Dive|Dify/Coze/MLServe 对比]] — 同类平台对比
+- [[15_智能体/09_Agent_Platforms/index|Agent 平台索引]] — Agent 平台导览
+- [[15_智能体/09_Agent_Platforms/Dify_Coze_MLServe_Dive|Dify/Coze/MLServe 对比]] — 同类平台对比
 - [[概念/Inference/model-routing|模型路由]] — OpenRouter 的智能路由能力

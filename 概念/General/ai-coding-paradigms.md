@@ -122,8 +122,8 @@ Agent 编程区别于补全/编辑的核心：
 - [[概念/code-generation|代码生成]] — 基础概念
 - [[概念/code-generation-workflow|代码生成工作流]] — 工程实践
 - [[概念/ai-agents|AI Agent]] — Agent 编程的基础
-- [[编程/README|AI 编程]] — 章节主页
-- [[编程/README|AI 编程]] — 范式理论
+- [[16_编程/README|AI 编程]] — 章节主页
+- [[16_编程/README|AI 编程]] — 范式理论
 
 ---
 

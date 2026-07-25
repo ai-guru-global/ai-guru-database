@@ -12,33 +12,33 @@ This page indexes the contents of `行业应用`.
 
 ## Subdirectories
 
-- [[行业应用/Agriculture_index|Agriculture]]
-- [[行业应用/AI_for_Science/index|AI For Science]]
-- [[行业应用/Autonomous_Driving_index|Autonomous Driving]]
-- [[行业应用/Code_Generation_index|Code Generation]]
-- [[行业应用/Content_Media_index|Content Media]]
-- [[行业应用/Education/index|Education]]
-- [[行业应用/Energy_Climate_index|Energy Climate]]
-- [[行业应用/Finance/index|Finance]]
-- [[行业应用/Healthcare/index|Healthcare]]
-- [[行业应用/HR_Recruitment_index|HR Recruitment]]
-- [[行业应用/Legal_Government_index|Legal Government]]
-- [[行业应用/Manufacturing_index|Manufacturing]]
-- [[行业应用/Retail_Ecommerce_index|Retail Ecommerce]]
-- [[行业应用/Security_Cybersecurity_index|Security Cybersecurity]]
-- [[行业应用/Supply_Chain_Logistics_index|Supply Chain Logistics]]
+- [[18_行业应用/Agriculture_index|Agriculture]]
+- [[18_行业应用/02_AI_for_Science/index|AI For Science]]
+- [[18_行业应用/Autonomous_Driving_index|Autonomous Driving]]
+- [[18_行业应用/Code_Generation_index|Code Generation]]
+- [[18_行业应用/Content_Media_index|Content Media]]
+- [[18_行业应用/05_Education/index|Education]]
+- [[18_行业应用/Energy_Climate_index|Energy Climate]]
+- [[18_行业应用/04_Finance/index|Finance]]
+- [[18_行业应用/03_Healthcare/index|Healthcare]]
+- [[18_行业应用/HR_Recruitment_index|HR Recruitment]]
+- [[18_行业应用/Legal_Government_index|Legal Government]]
+- [[18_行业应用/Manufacturing_index|Manufacturing]]
+- [[18_行业应用/Retail_Ecommerce_index|Retail Ecommerce]]
+- [[18_行业应用/Security_Cybersecurity_index|Security Cybersecurity]]
+- [[18_行业应用/Supply_Chain_Logistics_index|Supply Chain Logistics]]
 
 ## Files
 
-- [[行业应用/AI_Applications_Industry|AI Applications Industry]]
-- [[行业应用/AI_Applications_Industry_for_dummy|AI Applications Industry For Dummy]]
-- [[行业应用/GenAI_L10_Building_Low_Code_AI_Applications|Genai L10 Building Low Code AI Applications]]
-- [[行业应用/Industry-in-nutshell|Industry In Nutshell]]
-- [[行业应用/Industry_Applications-in-nutshell|Industry Applications In Nutshell]]
-- [[行业应用/Industry_Comparison_2026|Industry Comparison 2026]]
-- [[行业应用/Logistics_Supply_Chain|Logistics Supply Chain]]
-- [[行业应用/README|README]]
-- [[行业应用/README_for_dummy|README For Dummy]]
+- [[18_行业应用/AI_Applications_Industry|AI Applications Industry]]
+- [[18_行业应用/AI_Applications_Industry_for_dummy|AI Applications Industry For Dummy]]
+- [[18_行业应用/GenAI_L10_Building_Low_Code_AI_Applications|Genai L10 Building Low Code AI Applications]]
+- [[18_行业应用/Industry-in-nutshell|Industry In Nutshell]]
+- [[18_行业应用/Industry_Applications-in-nutshell|Industry Applications In Nutshell]]
+- [[18_行业应用/Industry_Comparison_2026|Industry Comparison 2026]]
+- [[18_行业应用/Logistics_Supply_Chain|Logistics Supply Chain]]
+- [[18_行业应用/README|README]]
+- [[18_行业应用/README_for_dummy|README For Dummy]]
 
 ## 进阶知识拓展
 
@@ -76,9 +76,9 @@ This page indexes the contents of `行业应用`.
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

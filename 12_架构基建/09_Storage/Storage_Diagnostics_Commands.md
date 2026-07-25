@@ -119,14 +119,14 @@ time sync
 
 ## Related
 
-- [[架构基建/Storage/AI_Storage_Patterns|AI 存储模式]]
-- [[架构基建/Storage/Checkpoint_and_Model_Storage|Checkpoint 与模型存储]]
+- [[12_架构基建/09_Storage/AI_Storage_Patterns|AI 存储模式]]
+- [[12_架构基建/09_Storage/Checkpoint_and_Model_Storage|Checkpoint 与模型存储]]
 
 ## 架构核心组件对比
 
 | 组件层 | 功能 | 关键技术 | 选型考量 |
 |--------|------|----------|----------|
-| 计算层 | 模型训练/推理 | GPU/TPU/NPU集群 | 算力需求+成本 |
+| 计算层 | 07_模型训练/推理 | GPU/TPU/NPU集群 | 算力需求+成本 |
 | 存储层 | 数据/模型/检查点 | 分布式存储/对象存储 | 容量+IOPS+成本 |
 | 网络层 | 节点间通信 | RDMA/RoCE/InfiniBand | 带宽+延迟 |
 | 调度层 | 资源编排 | K8s/Slurm/Ray | 弹性+效率 |

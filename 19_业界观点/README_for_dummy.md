@@ -138,8 +138,8 @@ sources: []
 
 ## 下一步
 
-- 想学技术？→ 从 [90_Learn/README.md](../学习/README_for_dummy.md) 开始
-- 想看论文？→ [论文精读/README_for_dummy.md](../论文精读/README_for_dummy.md)
+- 想学技术？→ 从 [90_Learn/README.md](../90_学习/README_for_dummy.md) 开始
+- 想看论文？→ [20_论文精读/README_for_dummy.md](../20_论文精读/README_for_dummy.md)
 
 ---
 
@@ -147,11 +147,11 @@ sources: []
 
 ## Related
 
-- [[业界观点/Andrej_Karpathy/about.md|about]]
-- [[业界观点/Andrew_Ng/about.md|about]]
-- [[业界观点/Andrew_Ng/sayings.md|sayings]]
-- [[业界观点/Bill_Gates/about.md|about]]
-- [[业界观点/Bill_Gates/sayings.md|sayings]]
+- [[19_业界观点/Andrej_Karpathy/about.md|about]]
+- [[19_业界观点/Andrew_Ng/about.md|about]]
+- [[19_业界观点/Andrew_Ng/sayings.md|sayings]]
+- [[19_业界观点/Bill_Gates/about.md|about]]
+- [[19_业界观点/Bill_Gates/sayings.md|sayings]]
 
 ## 小白常见问题
 

@@ -22,7 +22,7 @@ sources: []
 
 ### 背景回顾
 
-Mustafa Suleyman（1984 年生于英国伦敦，叙利亚裔英国人），牛津大学肄业（19 岁退学从事社会工作）。DeepMind 联合创始人（2010，与 [[业界观点/Demis_Hassabis/index\|Hassabis]]、Shane Legg），负责 Applied AI 和 DeepMind Health。2014 年 Google 收购 DeepMind 后转任 Google VP（AI 产品管理，2019-2022）。2022 年联合创立 Inflection AI，推出 Pi 个人助手（"有情商的 AI"）。2023 年出版《The Coming Wave》。2024 年 3 月加入 Microsoft，出任 Microsoft AI CEO，负责 Copilot 和消费者 AI 战略。
+Mustafa Suleyman（1984 年生于英国伦敦，叙利亚裔英国人），牛津大学肄业（19 岁退学从事社会工作）。DeepMind 联合创始人（2010，与 [[19_业界观点/Demis_Hassabis/index\|Hassabis]]、Shane Legg），负责 Applied AI 和 DeepMind Health。2014 年 Google 收购 DeepMind 后转任 Google VP（AI 产品管理，2019-2022）。2022 年联合创立 Inflection AI，推出 Pi 个人助手（"有情商的 AI"）。2023 年出版《The Coming Wave》。2024 年 3 月加入 Microsoft，出任 Microsoft AI CEO，负责 Copilot 和消费者 AI 战略。
 
 #### Suleyman 2026 关键时间线
 
@@ -161,8 +161,8 @@ Suleyman 的核心论点：
 | 风险 | 必须遏制 |
 | 方法 | 多层面 |
 | 速度 | 管理而非阻止 |
-| 与 [[业界观点/Yoshua_Bengio/index\|Bengio]] | 共鸣（治理派） |
-| 与 [[业界观点/Andrew_Ng/index\|Ng]] | 对立（务实派） |
+| 与 [[19_业界观点/Yoshua_Bengio/index\|Bengio]] | 共鸣（治理派） |
+| 与 [[19_业界观点/Andrew_Ng/index\|Ng]] | 对立（务实派） |
 
 ### 关于全球监管
 
@@ -207,7 +207,7 @@ Suleyman 从 Inflection 带来的理念：
 | 时间线 | 5-15 年 |
 | 态度 | 谨慎追求 |
 | 安全 | 前置 |
-| 与 [[业界观点/Sam_Altman/index\|Altman]] | 接近但更谨慎 |
+| 与 [[19_业界观点/Sam_Altman/index\|Altman]] | 接近但更谨慎 |
 
 ---
 
@@ -215,7 +215,7 @@ Suleyman 从 Inflection 带来的理念：
 
 ### 与其他 AI 治理派的对比
 
-| 维度 | Suleyman | [[业界观点/Yoshua_Bengio/index\|Bengio]] | [[业界观点/Geoffrey_Hinton/index\|Hinton]] |
+| 维度 | Suleyman | [[19_业界观点/Yoshua_Bengio/index\|Bengio]] | [[19_业界观点/Geoffrey_Hinton/index\|Hinton]] |
 |------|----------|---------|---------|
 | 方法 | "遏制"框架 | "红绿灯"框架 | 公众警示 |
 | 立场 | 治理+商业 | 治理优先 | 风险优先 |
@@ -225,7 +225,7 @@ Suleyman 从 Inflection 带来的理念：
 
 ### 与其他科技领袖的对比
 
-| 维度 | Suleyman | [[业界观点/Sam_Altman/index\|Altman]] | [[业界观点/Demis_Hassabis/index\|Hassabis]] |
+| 维度 | Suleyman | [[19_业界观点/Sam_Altman/index\|Altman]] | [[19_业界观点/Demis_Hassabis/index\|Hassabis]] |
 |------|----------|---------|---------|
 | 2026 角色 | Microsoft AI CEO | OpenAI CEO | Google DeepMind CEO |
 | 背景 | DeepMind 联合创始人 | OpenAI 联合创始人 | DeepMind 联合创始人 |
@@ -288,7 +288,7 @@ Suleyman 从 Inflection 带来的理念：
 
 ### Microsoft 内部的张力
 
-- 与 [[业界观点/Satya_Nadella/index\|Nadella]] 的关系
+- 与 [[19_业界观点/Satya_Nadella/index\|Nadella]] 的关系
 - 消费者 AI vs 企业 AI 的资源分配
 - 与 OpenAI 的复杂关系
 - Copilot 与 ChatGPT 的竞争
@@ -348,13 +348,13 @@ Suleyman 从 Inflection 带来的理念：
 
 | 人物 | 关系 | 2026 互动 |
 |------|------|-----------|
-| [[业界观点/Satya_Nadella/index\|Nadella]] | 顶头上司 | 紧密合作 |
-| [[业界观点/Demis_Hassabis/index\|Hassabis]] | DeepMind 联合创始人 | 前合伙人 |
-| [[业界观点/Sam_Altman/index\|Altman]] | 竞争对手 | Copilot vs ChatGPT |
-| [[业界观点/Yoshua_Bengio/index\|Bengio]] | 治理同盟 | 遏制+红绿灯 |
-| [[业界观点/Andrew_Ng/index\|Ng]] | 立场对立 | 务实 vs 遏制 |
-| [[业界观点/Mira_Murati/index\|Murati]] | 行业同行 | 安全+产品 |
-| [[业界观点/Elon_Musk/index\|Musk]] | 复杂关系 | 多线交叉 |
+| [[19_业界观点/Satya_Nadella/index\|Nadella]] | 顶头上司 | 紧密合作 |
+| [[19_业界观点/Demis_Hassabis/index\|Hassabis]] | DeepMind 联合创始人 | 前合伙人 |
+| [[19_业界观点/Sam_Altman/index\|Altman]] | 竞争对手 | Copilot vs ChatGPT |
+| [[19_业界观点/Yoshua_Bengio/index\|Bengio]] | 治理同盟 | 遏制+红绿灯 |
+| [[19_业界观点/Andrew_Ng/index\|Ng]] | 立场对立 | 务实 vs 遏制 |
+| [[19_业界观点/Mira_Murati/index\|Murati]] | 行业同行 | 安全+产品 |
+| [[19_业界观点/Elon_Musk/index\|Musk]] | 复杂关系 | 多线交叉 |
 
 ### Suleyman 在 2026 年的重大演讲
 
@@ -373,29 +373,29 @@ Suleyman 从 Inflection 带来的理念：
 
 ### Microsoft 系网络
 
-- [[业界观点/Mustafa_Suleyman/index]] -- 本页主人物
-- [[业界观点/Mustafa_Suleyman/about]] -- 详细简介
-- [[业界观点/Satya_Nadella/index]] -- Microsoft CEO
-- [[业界观点/Sam_Altman/index]] -- OpenAI，复杂关系
+- [[19_业界观点/Mustafa_Suleyman/index]] -- 本页主人物
+- [[19_业界观点/Mustafa_Suleyman/about]] -- 详细简介
+- [[19_业界观点/Satya_Nadella/index]] -- Microsoft CEO
+- [[19_业界观点/Sam_Altman/index]] -- OpenAI，复杂关系
 
 ### DeepMind 系网络
 
-- [[业界观点/Demis_Hassabis/index]] -- DeepMind 联合创始人
-- [[业界观点/Sundar_Pichai/index]] -- Google/Alphabet CEO
-- [[业界观点/Ilya_Sutskever/index]] -- 安全派共鸣
+- [[19_业界观点/Demis_Hassabis/index]] -- DeepMind 联合创始人
+- [[19_业界观点/Sundar_Pichai/index]] -- Google/Alphabet CEO
+- [[19_业界观点/Ilya_Sutskever/index]] -- 安全派共鸣
 
 ### 治理派网络
 
-- [[业界观点/Yoshua_Bengio/index]] -- "红绿灯"框架
-- [[业界观点/Geoffrey_Hinton/index]] -- 公众警示
-- [[业界观点/Mira_Murati/index]] -- 安全工程化
+- [[19_业界观点/Yoshua_Bengio/index]] -- "红绿灯"框架
+- [[19_业界观点/Geoffrey_Hinton/index]] -- 公众警示
+- [[19_业界观点/Mira_Murati/index]] -- 安全工程化
 
 ### 技术与治理
 
-- [[伦理安全/README]] -- AI 安全与对齐
-- [[入门/AI_Ethics_Society]] -- AI 治理
-- [[入门/AI_Future_Trends]] -- 技术浪潮
-- [[大模型/README]] -- Copilot 技术
+- [[17_伦理安全/README]] -- AI 安全与对齐
+- [[00_入门/AI_Ethics_Society]] -- AI 治理
+- [[00_入门/AI_Future_Trends]] -- 技术浪潮
+- [[05_大模型/README]] -- Copilot 技术
 
 ---
 

@@ -15,13 +15,13 @@ AI 安全工程师 — 防御对抗攻击（adversarial attack）、Prompt 注�
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[面试岗位/AI_Security_Engineer/AI_Security_Engineer|AI Security Engineer]] | 岗位面试全攻略：对抗鲁棒性、模型安全审计与 AI 红队测试 | AI security engineer candidates |
+| [[21_面试岗位/AI_Security_Engineer/AI_Security_Engineer|AI Security Engineer]] | 岗位面试全攻略：对抗鲁棒性、模型安全审计与 AI 红队测试 | AI security engineer candidates |
 
 ## Related
 
-- [[面试岗位/AI_Policy_Specialist/index|AI Policy Specialist]]
-- [[模型评估/Red_Team_Evaluation_index|Red Team Evaluation]]
-- [[伦理安全/AI_Supply_Chain_Security/index|AI Supply Chain Security]]
+- [[21_面试岗位/AI_Policy_Specialist/index|AI Policy Specialist]]
+- [[08_模型评估/Red_Team_Evaluation_index|Red Team Evaluation]]
+- [[17_伦理安全/08_AI_Supply_Chain_Security/index|AI Supply Chain Security]]
 
 ## 岗位核心能力模型
 
@@ -38,7 +38,7 @@ AI 安全工程师 — 防御对抗攻击（adversarial attack）、Prompt 注�
 | 轮次 | 内容 | 时长 | 考察重点 |
 |------|------|------|----------|
 | 简历筛选 | HR初筛 | - | 背景匹配度 |
-| 技术笔试 | 编程/选择题 | 60-90min | 基础功底 |
+| 技术笔试 | 16_编程/选择题 | 60-90min | 基础功底 |
 | 技术一面 | 算法+项目 | 45-60min | 编码能力+项目深度 |
 | 技术二面 | 系统设计+深度 | 45-60min | 架构思维+技术广度 |
 | 技术三面 | 综合+前沿 | 30-45min | 技术视野+潜力 |

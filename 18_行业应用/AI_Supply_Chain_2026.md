@@ -231,9 +231,9 @@ AI 层:
 
 ## 相关阅读
 
-- [[行业应用/AI_Applications_Industry]] — AI 行业应用
-- [[行业应用/AI_Manufacturing_2026]] — AI 制造业
-- [[行业应用/AI_Retail_Ecommerce_2026]] — AI 零售
-- [[机器学习/Time_Series/Time_Series_Analysis]] — 时间序列分析
-- [[机器学习/Recommendation_Systems/Recommendation_Systems]] — 推荐系统
-- [[行业应用/AI_Energy_Climate_2026]] — AI 能源气候
+- [[18_行业应用/AI_Applications_Industry]] — AI 行业应用
+- [[18_行业应用/AI_Manufacturing_2026]] — AI 制造业
+- [[18_行业应用/AI_Retail_Ecommerce_2026]] — AI 零售
+- [[02_机器学习/09_Time_Series/Time_Series_Analysis]] — 时间序列分析
+- [[02_机器学习/10_Recommendation_Systems/Recommendation_Systems]] — 推荐系统
+- [[18_行业应用/AI_Energy_Climate_2026]] — AI 能源气候

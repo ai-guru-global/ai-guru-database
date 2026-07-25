@@ -749,18 +749,18 @@ groups:
 
 ## 🔗 相关主题
 
-- [SRE for AI Systems](运维/SRE_Reliability/SRE_for_AI_Systems.md) — SLI/SLO 设计与错误预算
-- [事故响应手册](运维/SRE_Reliability/AI_Incident_Response_Playbook) — Runbook 与事故处理
-- [AI Ops 2026](运维/AIOps_Fundamentals/AI_Ops_2026.md) — 智能运维完整体系
-- [部署与推理](部署推理/Deployment_Fundamentals/Inference-in-nutshell.md) — 推理性能优化
-- [AI 成本优化](架构基建/Architecture_Overview/AI_Cost_Optimization_2026.md) — Token 经济学与 FinOps
+- [SRE for AI Systems](13_运维/02_SRE_Reliability/SRE_for_AI_Systems.md) — SLI/SLO 设计与错误预算
+- [事故响应手册](13_运维/02_SRE_Reliability/AI_Incident_Response_Playbook) — Runbook 与事故处理
+- [AI Ops 2026](13_运维/01_AIOps_Fundamentals/AI_Ops_2026.md) — 智能运维完整体系
+- [部署与推理](10_部署推理/01_Deployment_Fundamentals/Inference-in-nutshell.md) — 推理性能优化
+- [AI 成本优化](12_架构基建/02_Architecture_Overview/AI_Cost_Optimization_2026.md) — Token 经济学与 FinOps
 
 > 📅 **最后更新**：2026-04-11 | **方法论**：OpenTelemetry + Google SRE + AI 生产实践
 
 ## Related
 
-- [[运维/AIOps_Fundamentals/AIOps-in-nutshell.md|AIOps-in-nutshell]]
-- [[运维/SRE_Reliability/AI_Incident_Response_Playbook|AI_Incident_Response_Playbook]]
-- [[运维/AIOps_Fundamentals/AI_Ops_for_dummy.md|AI_Ops_for_dummy]]
-- [[运维/README.md|运维 README]]
-- [[运维/README_for_dummy.md|README_for_dummy]]
+- [[13_运维/01_AIOps_Fundamentals/AIOps-in-nutshell.md|AIOps-in-nutshell]]
+- [[13_运维/02_SRE_Reliability/AI_Incident_Response_Playbook|AI_Incident_Response_Playbook]]
+- [[13_运维/01_AIOps_Fundamentals/AI_Ops_for_dummy.md|AI_Ops_for_dummy]]
+- [[13_运维/README.md|运维 README]]
+- [[13_运维/README_for_dummy.md|README_for_dummy]]

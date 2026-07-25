@@ -252,7 +252,7 @@ Copilot Workspace (预览):
    ├── 快速脚本 → Windsurf
    ├── 自动化工作流 → Hermes Agent (Cron+子代理)
    ├── 浏览器相关 → Hermes Agent (浏览器自动化)
-   └── 学习/练习 → 任意
+   └── 90_学习/练习 → 任意
 
 4. 团队规模?
    ├── 个人 → 任意
@@ -480,4 +480,4 @@ https://codeium.com/windsurf
 
 ## Related
 
-- [[编程/README.md|README]]
+- [[16_编程/README.md|README]]

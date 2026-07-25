@@ -12,9 +12,9 @@ relationships:
   - target: "概念/tensorrt-llm"
     type: used_by
 sources:
-  - 部署推理/Quantization/Quantization_Techniques_2026.md
-  - 部署推理/Quantization/Quantization_Precision_Deep_Dive.md
-  - 部署推理/Inference_Engines/TensorRT_LLM_Deep_Dive.md
+  - 10_部署推理/05_Quantization/Quantization_Techniques_2026.md
+  - 10_部署推理/05_Quantization/Quantization_Precision_Deep_Dive.md
+  - 10_部署推理/02_Inference_Engines/TensorRT_LLM_Deep_Dive.md
 summary: "SmoothQuant 是一种让大模型 INT8 量化更稳定的技术。它通过把权重和激活值之间的‘波动’重新分配，让两者都更容易用 8 位整数表示，从而在几乎不损失精度的情况下把推理速度提升 1.5-2 倍。"
 provenance:
   extracted: 0.7
@@ -101,8 +101,8 @@ Y = (X / s) · (W × s)
 - [[概念/model-precision]] — 模型精度
 - [[概念/tensorrt-llm]] — TensorRT-LLM
 - [[概念/awq]] — AWQ 激活感知量化
-- [[部署推理/Quantization/Quantization_Techniques_2026]] — 量化技术 2026
-- [[部署推理/Inference_Engines/TensorRT_LLM_Deep_Dive]] — TensorRT-LLM 深度解析
+- [[10_部署推理/05_Quantization/Quantization_Techniques_2026]] — 量化技术 2026
+- [[10_部署推理/02_Inference_Engines/TensorRT_LLM_Deep_Dive]] — TensorRT-LLM 深度解析
 
 ---
 

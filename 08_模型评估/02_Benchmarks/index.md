@@ -8,16 +8,16 @@ sources: []
 
 # Benchmarks
 
-This page indexes the contents of `模型评估/Benchmarks`.
+This page indexes the contents of `08_模型评估/Benchmarks`.
 
 ## Files
 
-- [[模型评估/Benchmarks/Agentic_Benchmark_Guide|Agentic Benchmark Guide]]
-- [[模型评估/Benchmarks/HF_Leaderboard_Eval_Guide|HF Leaderboard Eval Guide]]
-- [[模型评估/Benchmarks/LLM_Benchmark_Suite_2026|LLM Benchmark Suite 2026]]
-- [[模型评估/Benchmarks/LLM_Benchmarks_for_dummy|LLM Benchmarks For Dummy]]
-- [[模型评估/Benchmarks/Long_Context_Evaluation|Long Context Evaluation]]
-- [[模型评估/Benchmarks/Multimodal_Evaluation_Benchmarks|Multimodal Evaluation Benchmarks]]
+- [[08_模型评估/02_Benchmarks/Agentic_Benchmark_Guide|Agentic Benchmark Guide]]
+- [[08_模型评估/02_Benchmarks/HF_Leaderboard_Eval_Guide|HF Leaderboard Eval Guide]]
+- [[08_模型评估/02_Benchmarks/LLM_Benchmark_Suite_2026|LLM Benchmark Suite 2026]]
+- [[08_模型评估/02_Benchmarks/LLM_Benchmarks_for_dummy|LLM Benchmarks For Dummy]]
+- [[08_模型评估/02_Benchmarks/Long_Context_Evaluation|Long Context Evaluation]]
+- [[08_模型评估/02_Benchmarks/Multimodal_Evaluation_Benchmarks|Multimodal Evaluation Benchmarks]]
 
 ## 进阶知识拓展
 
@@ -55,9 +55,9 @@ This page indexes the contents of `模型评估/Benchmarks`.
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

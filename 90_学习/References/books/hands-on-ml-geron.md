@@ -57,7 +57,7 @@ aliases:
 - **而是**讲"ML/DL 全景 + 端到端工程"的实战圣经
 
 在知识库的书籍谱系中，本书处于基础核心位置：
-- 是 [[深度学习/]] 和 [[机器学习/]] 的**首选入门配套**
+- 是 [[03_深度学习/]] 和 [[02_机器学习/]] 的**首选入门配套**
 - 上承 [[why-machines-learn]]（数学科普，建立直觉）
 - 平行 [[dl-with-python-chollet]]（Chollet 的 DL 入门，偏 Keras/哲学）
 - 是 [[nlp-with-transformers]]、[[build-llm-from-scratch-raschka]] 的**前置基础**
@@ -127,7 +127,7 @@ Ch 11 是 DL 实战最重要的章节之一，解决"深层网络怎么训练"�
 - 合理初始化（Xavier / He 初始化）
 - 用 ReLU 家族激活函数（避免 Sigmoid 的饱和）
 - Batch Normalization（归一化每层输入）
-- 残差连接（源自 ResNet，详见 [[学习/References/Papers/ResNet_Reading]]）
+- 残差连接（源自 ResNet，详见 [[90_学习/References/Papers/ResNet_Reading]]）
 
 **优化器演进**:
 ```
@@ -150,7 +150,7 @@ Adam 是目前最常用的，结合了动量（方向）和自适应学习率（
 **经典架构演进**:
 - LeNet-5 (1998): 手写数字，第一个成功 CNN
 - AlexNet (2012): ImageNet 突破，开启深度学习时代
-- ResNet (2015): 残差连接，训练 152 层（详见 [[学习/References/Papers/ResNet_Reading]]）
+- ResNet (2015): 残差连接，训练 152 层（详见 [[90_学习/References/Papers/ResNet_Reading]]）
 
 ### Transformer 章节（Ch 16，第 3 版新增）
 
@@ -162,7 +162,7 @@ Adam 是目前最常用的，结合了动量（方向）和自适应学习率（
 - 多头注意力的并行
 - 位置编码的必要性
 
-**与 [[学习/References/Papers/Attention_Is_All_You_Need_Reading|原始论文]] 的关系**:
+**与 [[90_学习/References/Papers/Attention_Is_All_You_Need_Reading|原始论文]] 的关系**:
 Géron 用更通俗的方式讲解同一架构，适合作为论文的前置阅读。
 
 
@@ -371,16 +371,16 @@ Transformer = 完全基于 Attention，抛弃 RNN
 
 | 本书章节 | 本书概念 | 知识库主题 | 关联说明 |
 |----------|----------|------------|----------|
-| Part 1 全部 | 经典 ML | [[机器学习/]] | ML 基础全集 |
-| Ch 2 端到端项目 | ML 流程 | [[机器学习/]] | 工程方法论 |
-| Ch 3 分类 | 评估指标 | [[模型评估/]] | 分类评估 |
-| Ch 4-5 训练/SVM | 优化 | [[数学基础/]] | 数学基础 |
-| Ch 6-7 树/集成 | 树模型 | [[机器学习/]] | 经典算法 |
-| Ch 10-11 神经网络 | DL 基础 | [[深度学习/]] | 神经网络核心 |
-| Ch 14 CNN | 卷积网络 | [[计算机视觉/]] | CV 基础 |
-| Ch 15-16 RNN/Transformer | 序列模型 | [[大模型/LLM_Fundamentals]] | 序列处理 |
-| Ch 16 Transformer | Attention | [[学习/References/Papers/Attention_Is_All_You_Need_Reading]] | 架构源头 |
-| Ch 19 部署 | TF Serving | [[部署推理/]] | 模型部署 |
+| Part 1 全部 | 经典 ML | [[02_机器学习/]] | ML 基础全集 |
+| Ch 2 端到端项目 | ML 流程 | [[02_机器学习/]] | 工程方法论 |
+| Ch 3 分类 | 评估指标 | [[08_模型评估/]] | 分类评估 |
+| Ch 4-5 训练/SVM | 优化 | [[01_数学基础/]] | 数学基础 |
+| Ch 6-7 树/集成 | 树模型 | [[02_机器学习/]] | 经典算法 |
+| Ch 10-11 神经网络 | DL 基础 | [[03_深度学习/]] | 神经网络核心 |
+| Ch 14 CNN | 卷积网络 | [[04_计算机视觉/]] | CV 基础 |
+| Ch 15-16 RNN/Transformer | 序列模型 | [[05_大模型/LLM_Fundamentals]] | 序列处理 |
+| Ch 16 Transformer | Attention | [[90_学习/References/Papers/Attention_Is_All_You_Need_Reading]] | 架构源头 |
+| Ch 19 部署 | TF Serving | [[10_部署推理/]] | 模型部署 |
 
 ## 适合人群
 
@@ -453,13 +453,13 @@ Transformer = 完全基于 Attention，抛弃 RNN
 
 ## 延伸阅读
 
-- [[学习/References/books/dl-with-python-chollet|Deep Learning with Python]] — DL 哲学深入
-- [[学习/References/books/deep-learning-goodfellow|Deep Learning（花书）]] — 理论攻坚
-- [[学习/References/books/why-machines-learn|Why Machines Learn]] — 数学科普
-- [[学习/References/books/nlp-with-transformers|NLP with Transformers]] — Transformer 应用进阶
-- [[学习/References/books/build-llm-from-scratch-raschka|Build LLM From Scratch]] — LLM 底层实现
-- [[机器学习/]] — 知识库 ML 章节
-- [[深度学习/]] — 知识库 DL 章节
-- [[学习/guides/ai_engineering_roadmap_2026|AI 工程路线图 2026]]
+- [[90_学习/References/books/dl-with-python-chollet|Deep Learning with Python]] — DL 哲学深入
+- [[90_学习/References/books/deep-learning-goodfellow|Deep Learning（花书）]] — 理论攻坚
+- [[90_学习/References/books/why-machines-learn|Why Machines Learn]] — 数学科普
+- [[90_学习/References/books/nlp-with-transformers|NLP with Transformers]] — Transformer 应用进阶
+- [[90_学习/References/books/build-llm-from-scratch-raschka|Build LLM From Scratch]] — LLM 底层实现
+- [[02_机器学习/]] — 知识库 ML 章节
+- [[03_深度学习/]] — 知识库 DL 章节
+- [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图 2026]]
 
-> **关联**: → [[学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]] | [[机器学习/]] | [[深度学习/]] | [[模型评估/]] | [[数学基础/]]
+> **关联**: → [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]] | [[02_机器学习/]] | [[03_深度学习/]] | [[08_模型评估/]] | [[01_数学基础/]]

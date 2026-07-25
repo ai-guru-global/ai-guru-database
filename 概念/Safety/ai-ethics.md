@@ -186,7 +186,7 @@ AI对就业的三重效应：
 
 - [[概念/Safety/hallucination|幻觉]] — LLM 可靠性挑战
 - [[概念/Safety/model-security|模型安全]] — 模型安全防护
-- [[伦理安全/README|伦理安全]] — 安全章节总览
+- [[17_伦理安全/README|伦理安全]] — 安全章节总览
 - [[概念/LLM/llmops|LLMOps]] — LLM 运维体系
 
 > ℹ️ AI 伦理是负责任 AI 开发的基石，需要技术、流程、文化多维度协同。

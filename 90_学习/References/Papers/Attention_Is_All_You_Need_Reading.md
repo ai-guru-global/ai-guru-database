@@ -138,7 +138,7 @@ PE(pos, 2i+1) = cos(pos / 10000^(2i/d))
 ```
 
 **关键组件**:
-- **残差连接（Residual）**: 缓解深层网络梯度消失，灵感来自 ResNet（详见 [[学习/References/Papers/ResNet_Reading]]）
+- **残差连接（Residual）**: 缓解深层网络梯度消失，灵感来自 ResNet（详见 [[90_学习/References/Papers/ResNet_Reading]]）
 - **LayerNorm**: 逐位置归一化，稳定训练
 - **FFN**: 两层全连接，中间用 ReLU 激活，扩展维度 4 倍——这是模型容量（参数量）的主要来源
 
@@ -173,9 +173,9 @@ Transformer 还在结构化输出任务上取得好成绩，证明其通用性�
 这篇论文是**现代 AI 的分水岭**。它直接催生了：
 
 - **GPT 系列**（OpenAI）: 只用 Transformer 的解码器，规模化预训练
-- **BERT**（Google, 2018，详见 [[学习/References/Papers/BERT_Reading]]）: 只用编码器，双向理解
+- **BERT**（Google, 2018，详见 [[90_学习/References/Papers/BERT_Reading]]）: 只用编码器，双向理解
 - **T5 / BART**: 编码器-解码器，统一文本到文本框架
-- **GPT-3**（OpenAI, 2020，详见 [[学习/References/Papers/GPT3_Reading]]）: 1750 亿参数，验证 Scaling Law
+- **GPT-3**（OpenAI, 2020，详见 [[90_学习/References/Papers/GPT3_Reading]]）: 1750 亿参数，验证 Scaling Law
 
 ### 架构演进
 
@@ -329,11 +329,11 @@ class MultiHeadAttention(nn.Module):
 
 ## 与知识库其他内容的连接
 
-- [[学习/concepts/stage2_core_tech|Transformer]] — 概念分阶中的核心概念
-- [[大模型/Transformer|Transformer 详解]] — 知识库的架构章节
-- [[学习/References/Papers/BERT_Reading|BERT 论文]] — Encoder 方向的延伸
-- [[学习/References/Papers/GPT3_Reading|GPT-3 论文]] — Decoder 方向的延伸
-- [[学习/References/books/build-llm-from-scratch-raschka|Raschka 实现 LLM]] — 从零实现 Transformer
+- [[90_学习/concepts/stage2_core_tech|Transformer]] — 概念分阶中的核心概念
+- [[05_大模型/Transformer|Transformer 详解]] — 知识库的架构章节
+- [[90_学习/References/Papers/BERT_Reading|BERT 论文]] — Encoder 方向的延伸
+- [[90_学习/References/Papers/GPT3_Reading|GPT-3 论文]] — Decoder 方向的延伸
+- [[90_学习/References/books/build-llm-from-scratch-raschka|Raschka 实现 LLM]] — 从零实现 Transformer
 
 ## 如何精读这篇论文
 
@@ -347,25 +347,25 @@ class MultiHeadAttention(nn.Module):
 
 ### 配套资源
 
-- **图解**: Jay Alammar 的《The Illustrated Transformer》（[[学习/References/books/hands-on-llms-alammar|Hands-On LLMs]] 作者）
-- **代码实现**: [[学习/References/books/build-llm-from-scratch-raschka|Build LLM From Scratch]] Ch 3 逐行实现
+- **图解**: Jay Alammar 的《The Illustrated Transformer》（[[90_学习/References/books/hands-on-llms-alammar|Hands-On LLMs]] 作者）
+- **代码实现**: [[90_学习/References/books/build-llm-from-scratch-raschka|Build LLM From Scratch]] Ch 3 逐行实现
 - **Harvard Annotated Transformer**: 带详细注释的 PyTorch 实现
 
 ### 动手验证
 
-- 用 [[学习/References/books/build-llm-from-scratch-raschka|Build LLM From Scratch]] 的代码手写一遍 Multi-Head Attention
+- 用 [[90_学习/References/books/build-llm-from-scratch-raschka|Build LLM From Scratch]] 的代码手写一遍 Multi-Head Attention
 - 可视化一个训练好的模型的注意力热力图，观察学到的模式
 
 ## 延伸阅读
 
-- [[学习/References/Papers/BERT_Reading|BERT 论文导读]] — 编码器方向的里程碑
-- [[学习/References/Papers/GPT3_Reading|GPT-3 论文导读]] — 解码器 + 规模化
-- [[学习/References/Papers/ResNet_Reading|ResNet 论文导读]] — 残差连接的源头
-- [[学习/References/books/build-llm-from-scratch-raschka|Build LLM From Scratch]] — 逐行实现 Transformer
-- [[学习/References/books/nlp-with-transformers|NLP with Transformers]] — HF 生态应用
-- [[学习/References/books/hands-on-llms-alammar|Hands-On LLMs]] — 图解 Transformer 内部
-- [[大模型/LLM_Fundamentals]] — 知识库 LLM 基础
-- [[深度学习/]] — 深度学习章节
-- [[学习/concepts/stage2_core_tech|Stage 2: 核心技术]] — Transformer 在学习路径中的位置
+- [[90_学习/References/Papers/BERT_Reading|BERT 论文导读]] — 编码器方向的里程碑
+- [[90_学习/References/Papers/GPT3_Reading|GPT-3 论文导读]] — 解码器 + 规模化
+- [[90_学习/References/Papers/ResNet_Reading|ResNet 论文导读]] — 残差连接的源头
+- [[90_学习/References/books/build-llm-from-scratch-raschka|Build LLM From Scratch]] — 逐行实现 Transformer
+- [[90_学习/References/books/nlp-with-transformers|NLP with Transformers]] — HF 生态应用
+- [[90_学习/References/books/hands-on-llms-alammar|Hands-On LLMs]] — 图解 Transformer 内部
+- [[05_大模型/LLM_Fundamentals]] — 知识库 LLM 基础
+- [[03_深度学习/]] — 深度学习章节
+- [[90_学习/concepts/stage2_core_tech|Stage 2: 核心技术]] — Transformer 在学习路径中的位置
 
-> **关联**: → [[学习/References/Papers/]] | [[学习/References/Papers/BERT_Reading|BERT]] | [[学习/References/Papers/GPT3_Reading|GPT-3]] | [[大模型/LLM_Fundamentals]] | [[学习/References/books/build-llm-from-scratch-raschka|从零实现]]
+> **关联**: → [[90_学习/References/Papers/]] | [[90_学习/References/Papers/BERT_Reading|BERT]] | [[90_学习/References/Papers/GPT3_Reading|GPT-3]] | [[05_大模型/LLM_Fundamentals]] | [[90_学习/References/books/build-llm-from-scratch-raschka|从零实现]]

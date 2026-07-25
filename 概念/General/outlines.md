@@ -8,7 +8,7 @@ relationships:
   - target: "概念/lm-format-enforcer"
     type: related_to
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
 summary: "Outlines 是结构化 LLM 生成的开源库——通过正则表达式和 JSON Schema 约束 LLM 输出，保证生成结果严格符合指定格式。是 LLM 应用工程化的关键工具。"
 provenance:
   extracted: 0.15
@@ -221,8 +221,8 @@ sentiment = choice_gen("这部电影太棒了！")
 
 ## 相关链接
 
-- [[大模型/Prompt_Engineering/Outlines_Deep_Dive|Outlines 深度解析]] — Outlines 框架深度剖析
-- [[大模型/Constrained_Decoding_2026|约束解码 2026]] — Outlines 实现的约束解码
-- [[大模型/Structured_Output_Guide|结构化输出指南]] — 结构化输出方法总览
+- [[05_大模型/08_Prompt_Engineering/Outlines_Deep_Dive|Outlines 深度解析]] — Outlines 框架深度剖析
+- [[05_大模型/Constrained_Decoding_2026|约束解码 2026]] — Outlines 实现的约束解码
+- [[05_大模型/Structured_Output_Guide|结构化输出指南]] — 结构化输出方法总览
 - [[概念/LLM/decoding-strategies|解码策略]] — Outlines 的解码机制
-- [[大模型/LLM_Products/outlines_overview|Outlines 产品概览]] — Outlines 产品速览
+- [[05_大模型/13_LLM_Products/outlines_overview|Outlines 产品概览]] — Outlines 产品速览

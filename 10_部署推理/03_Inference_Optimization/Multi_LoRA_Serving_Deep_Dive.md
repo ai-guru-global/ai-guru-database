@@ -67,7 +67,7 @@ LoRA:        h = W·x + ΔW·x
 例：d=4096, r=8 → 压缩比 ≈ 16/4096 ≈ 0.4%，即只训练 0.4% 的参数。
 ```
 
-LoRA / PEFT 的训练侧细节见 [[模型训练/Compression/index|模型压缩]]。
+LoRA / PEFT 的训练侧细节见 [[07_模型训练/05_Compression/index|模型压缩]]。
 
 ### 1.2 企业场景：为什么需要 Multi-LoRA
 
@@ -504,7 +504,7 @@ max_loras = min(活跃租户数, 显存池能容纳的 LoRA 数)
 - 新语言/强领域 → rank 64–128（但 Multi-LoRA 开销上升）。
 
 **Q4：Multi-LoRA 和 PD 分离能结合吗？**
-可以。基座做 PD 分离，LoRA 增量在 prefill/decode 两侧分别算。LoRA 增量很小，对 PD 分离的迁移开销几乎无影响。见 [[部署推理/Inference_Performance/Disaggregated_Serving_2026|Disaggregated Serving 2026]]。
+可以。基座做 PD 分离，LoRA 增量在 prefill/decode 两侧分别算。LoRA 增量很小，对 PD 分离的迁移开销几乎无影响。见 [[10_部署推理/04_Inference_Performance/Disaggregated_Serving_2026|Disaggregated Serving 2026]]。
 
 **Q5：不同请求用不同 LoRA，KV Cache 怎么处理？**
 - 基座前缀（系统提示等）的 KV 可跨 LoRA 共享。
@@ -518,13 +518,13 @@ max_loras = min(活跃租户数, 显存池能容纳的 LoRA 数)
 
 ## 相关知识
 
-- [[部署推理/index|部署推理]] — 部署推理总索引
-- [[模型训练/Compression/index|模型压缩]] — LoRA / PEFT 训练侧原理
-- [[模型训练/index|模型训练]] — 模型训练总索引
-- [[部署推理/Inference_Engines/vLLM_Deep_Dive|vLLM]] — vLLM 引擎（含 LoRA 支持）
-- [[部署推理/Inference_Engines/SGLang_Deep_Dive|SGLang]] — SGLang 引擎（含 LoRA + RadixAttention）
-- [[部署推理/Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]] — 吞吐/延迟/显存基础
-- [[大模型/index|大模型]] — 大模型总索引
+- [[10_部署推理/index|部署推理]] — 部署推理总索引
+- [[07_模型训练/05_Compression/index|模型压缩]] — LoRA / PEFT 训练侧原理
+- [[07_模型训练/index|模型训练]] — 模型训练总索引
+- [[10_部署推理/02_Inference_Engines/vLLM_Deep_Dive|vLLM]] — vLLM 引擎（含 LoRA 支持）
+- [[10_部署推理/02_Inference_Engines/SGLang_Deep_Dive|SGLang]] — SGLang 引擎（含 LoRA + RadixAttention）
+- [[10_部署推理/04_Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]] — 吞吐/延迟/显存基础
+- [[05_大模型/index|大模型]] — 大模型总索引
 
 ---
 

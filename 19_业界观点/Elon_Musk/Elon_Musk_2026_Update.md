@@ -109,7 +109,7 @@ xAI 在孟菲斯建设的 Colossus 集群在 2026 年完成二期扩容：
 | 自研芯片 | Tesla Dojo 与 xAI 协同 |
 | 与 Tesla 共享 | Optimus 与 FSD 训练共享算力 |
 
-Colossus 的规模虽不及 [[业界观点/Sam_Altman/Sam_Altman_2026_Update\|Stargate]]，但建设速度和效率震惊行业。
+Colossus 的规模虽不及 [[19_业界观点/Sam_Altman/Sam_Altman_2026_Update\|Stargate]]，但建设速度和效率震惊行业。
 
 ### Tesla 转型为具身智能公司
 
@@ -163,7 +163,7 @@ Musk 的核心论断：
 
 #### Robotaxi vs Waymo 路线对比
 
-Tesla Robotaxi 与 Waymo（[[业界观点/Sebastian_Thrun/index\|Thrun]] 系）代表两条自动驾驶路线：
+Tesla Robotaxi 与 Waymo（[[19_业界观点/Sebastian_Thrun/index\|Thrun]] 系）代表两条自动驾驶路线：
 
 | 维度 | Tesla（Musk 路线） | Waymo（Google 路线） |
 |------|---------------------|----------------------|
@@ -209,7 +209,7 @@ DOGE 引发的争议远超 AI 本身：
 
 ### 对 OpenAI 的诉讼
 
-Musk 对 OpenAI 和 [[业界观点/Sam_Altman/Sam_Altman_2026_Update\|Sam Altman]] 的诉讼在 2026 年进入关键阶段。
+Musk 对 OpenAI 和 [[19_业界观点/Sam_Altman/Sam_Altman_2026_Update\|Sam Altman]] 的诉讼在 2026 年进入关键阶段。
 
 #### 诉讼核心主张
 
@@ -225,7 +225,7 @@ Musk 对 OpenAI 和 [[业界观点/Sam_Altman/Sam_Altman_2026_Update\|Sam Altman
 
 - 加速公众对"AI 公司治理"的关注
 - 推动多州审查非营利转营利的合规性
-- 引发 [[业界观点/Geoffrey_Hinton/index\|Hinton]]、[[业界观点/Yoshua_Bengio/index\|Bengio]] 等学者表态
+- 引发 [[19_业界观点/Geoffrey_Hinton/index\|Hinton]]、[[19_业界观点/Yoshua_Bengio/index\|Bengio]] 等学者表态
 - 让 OpenAI 的 PBC 转型增加政治阻力
 
 ---
@@ -255,7 +255,7 @@ Musk 的立场复杂且矛盾：
 - 离开后批评 OpenAI 闭源化
 - xAI 的 Grok-1 开源权重，Grok 2/3/4 部分开源
 - 但前沿模型完全开源有安全顾虑
-- 与 [[业界观点/Yann_LeCun/index\|Yann LeCun]]（激进开源）和 [[业界观点/Mark_Zuckerberg/Zuckerberg_AI_Pivot_2026\|Zuckerberg]]（Llama 开源）形成复杂关系
+- 与 [[19_业界观点/Yann_LeCun/index\|Yann LeCun]]（激进开源）和 [[19_业界观点/Mark_Zuckerberg/Zuckerberg_AI_Pivot_2026\|Zuckerberg]]（Llama 开源）形成复杂关系
 
 ### 关于具身智能的赌注
 
@@ -273,7 +273,7 @@ Musk 的算力投入（Colossus 50 万卡）显示他仍是 Scaling 派：
 - 相信更大模型+更多算力仍是核心路径
 - 通过 X 平台获取独家数据优势
 - 强调"数据+算力+人才"的三重押注
-- 与 [[业界观点/Wenfeng_Liang/index\|梁文锋]]（效率优先）路线形成对比
+- 与 [[19_业界观点/Wenfeng_Liang/index\|梁文锋]]（效率优先）路线形成对比
 
 ### 关于 AGI 与人类的融合
 
@@ -304,7 +304,7 @@ Musk 将 X 平台全面 AI 化：
 
 ### 与主要 AI 巨头的 2026 对比
 
-| 维度 | Elon Musk | [[业界观点/Sam_Altman/Sam_Altman_2026_Update\|Sam Altman]] | [[业界观点/Mark_Zuckerberg/Zuckerberg_AI_Pivot_2026\|Mark Zuckerberg]] | [[业界观点/Wenfeng_Liang/index\|梁文锋]] |
+| 维度 | Elon Musk | [[19_业界观点/Sam_Altman/Sam_Altman_2026_Update\|Sam Altman]] | [[19_业界观点/Mark_Zuckerberg/Zuckerberg_AI_Pivot_2026\|Mark Zuckerberg]] | [[19_业界观点/Wenfeng_Liang/index\|梁文锋]] |
 |------|-----------|---------|---------|---------|
 | 模型 | Grok 4 | GPT-5 | Llama 5 | DeepSeek V4 |
 | 算力 | Colossus 50 万卡 | Stargate | $100B+ | 2048 H800 |
@@ -341,7 +341,7 @@ Musk 在 2026 年的影响呈现为三条平行颠覆线：
 - X 平台从"公共广场"转向"Musk 个人媒体"
 - Grok 改变用户获取信息的方式
 - AI 生成内容在 X 上的泛滥与治理难题
-- 与 Meta（[[业界观点/Mark_Zuckerberg/Zuckerberg_AI_Pivot_2026\|Zuckerberg]]）的 Threads 竞争
+- 与 Meta（[[19_业界观点/Mark_Zuckerberg/Zuckerberg_AI_Pivot_2026\|Zuckerberg]]）的 Threads 竞争
 
 ## 经典语录与关键数据
 
@@ -435,33 +435,33 @@ Musk 同时管理 6+ 公司引发精力分散质疑：
 
 ### Musk 商业帝国网络
 
-- [[业界观点/Elon_Musk/index]] -- 本页主人物
-- [[业界观点/Elon_Musk/about]] -- 详细简介
-- [[业界观点/Andrej_Karpathy/index]] -- 前 Tesla AI 总监，Musk 麾下
-- [[业界观点/Mira_Murati/index]] -- 前 Tesla 员工，后转 OpenAI
+- [[19_业界观点/Elon_Musk/index]] -- 本页主人物
+- [[19_业界观点/Elon_Musk/about]] -- 详细简介
+- [[19_业界观点/Andrej_Karpathy/index]] -- 前 Tesla AI 总监，Musk 麾下
+- [[19_业界观点/Mira_Murati/index]] -- 前 Tesla 员工，后转 OpenAI
 
 ### 竞争对手网络
 
-- [[业界观点/Sam_Altman/Sam_Altman_2026_Update]] -- OpenAI CEO，最大诉讼对象
-- [[业界观点/Sundar_Pichai/index]] -- Google CEO，Waymo vs Robotaxi
-- [[业界观点/Mark_Zuckerberg/Zuckerberg_AI_Pivot_2026]] -- Meta CEO，AI 硬件竞争
-- [[业界观点/Dario_Amodei/Amodei_2026_Update]] -- Anthropic CEO，安全路线对手
-- [[业界观点/Demis_Hassabis/Hassabis_2026_Update]] -- DeepMind CEO，AGI 路线对比
+- [[19_业界观点/Sam_Altman/Sam_Altman_2026_Update]] -- OpenAI CEO，最大诉讼对象
+- [[19_业界观点/Sundar_Pichai/index]] -- Google CEO，Waymo vs Robotaxi
+- [[19_业界观点/Mark_Zuckerberg/Zuckerberg_AI_Pivot_2026]] -- Meta CEO，AI 硬件竞争
+- [[19_业界观点/Dario_Amodei/Amodei_2026_Update]] -- Anthropic CEO，安全路线对手
+- [[19_业界观点/Demis_Hassabis/Hassabis_2026_Update]] -- DeepMind CEO，AGI 路线对比
 
 ### 中国对应人物
 
-- [[业界观点/Wenfeng_Liang/index]] -- DeepSeek，效率路线对比
-- [[业界观点/Junjie_Yan/index]] -- MiniMax，多模态产品对比
-- [[业界观点/Jie_Tang/index]] -- 智谱 AI，开源路线对比
+- [[19_业界观点/Wenfeng_Liang/index]] -- DeepSeek，效率路线对比
+- [[19_业界观点/Junjie_Yan/index]] -- MiniMax，多模态产品对比
+- [[19_业界观点/Jie_Tang/index]] -- 智谱 AI，开源路线对比
 
 ### 技术与基础设施
 
-- [[大模型/xAI]] -- xAI 模型技术全景
-- [[大模型/Reasoning_Models]] -- 推理模型路线
-- [[部署推理/GPU_Infrastructure]] -- Colossus 算力基建
-- [[入门/AI_Future_Trends]] -- 具身智能与 AGI 讨论
-- [[伦理安全/README]] -- AI 治理与监管
-- [[入门/AI_Ethics_Society]] -- AI 伦理与社会影响
+- [[05_大模型/xAI]] -- xAI 模型技术全景
+- [[05_大模型/Reasoning_Models]] -- 推理模型路线
+- [[10_部署推理/GPU_Infrastructure]] -- Colossus 算力基建
+- [[00_入门/AI_Future_Trends]] -- 具身智能与 AGI 讨论
+- [[17_伦理安全/README]] -- AI 治理与监管
+- [[00_入门/AI_Ethics_Society]] -- AI 伦理与社会影响
 
 ---
 

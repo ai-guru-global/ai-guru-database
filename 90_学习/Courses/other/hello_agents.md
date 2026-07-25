@@ -64,42 +64,42 @@ aliases:
 
 | 章号 | 章节名称 | 关键概念 | 本库建议配合阅读 | 页面链接 |
 |------|----------|----------|------------------|----------|
-| 01 | 初识智能体 | 智能体定义、传感器/执行器、自主性、反射/基于模型/基于目标/基于效用/学习型智能体、反应式/规划式/混合式、符号主义/连接主义 | [[入门/AI_Fundamentals]]、[[智能体/GenAI_L17_AI_Agents]] | [[智能体/GenAI_L17_AI_Agents]] |
-| 02 | 智能体发展史 | 物理符号系统假说、专家系统、MYCIN、SHRDLU、符号主义瓶颈、连接主义、强化学习、AlphaGo、LLM 驱动智能体 | [[入门/AI_History_Timeline]]、[[强化学习/RL_Fundamentals]] | [[入门/AI_History_Timeline]] |
-| 03 | 大语言模型基础 | N-gram、神经网络语言模型、Transformer、自注意力、提示工程、主流 LLM、能力边界 | [[大模型/LLM_Architectures/LLM_Architectures]]、[[大模型/Prompt_Engineering/Prompt_Engineering]] | [[大模型/LLM_Architectures/LLM_Architectures]] |
+| 01 | 初识智能体 | 智能体定义、传感器/执行器、自主性、反射/基于模型/基于目标/基于效用/学习型智能体、反应式/规划式/混合式、符号主义/连接主义 | [[00_入门/AI_Fundamentals]]、[[15_智能体/GenAI_L17_AI_Agents]] | [[15_智能体/GenAI_L17_AI_Agents]] |
+| 02 | 智能体发展史 | 物理符号系统假说、专家系统、MYCIN、SHRDLU、符号主义瓶颈、连接主义、强化学习、AlphaGo、LLM 驱动智能体 | [[00_入门/AI_History_Timeline]]、[[06_强化学习/RL_Fundamentals]] | [[00_入门/AI_History_Timeline]] |
+| 03 | 大语言模型基础 | N-gram、神经网络语言模型、Transformer、自注意力、提示工程、主流 LLM、能力边界 | [[05_大模型/05_LLM_Architectures/LLM_Architectures]]、[[05_大模型/08_Prompt_Engineering/Prompt_Engineering]] | [[05_大模型/05_LLM_Architectures/LLM_Architectures]] |
 
 ### 第二部分：构建你的大语言模型智能体
 
 | 章号 | 章节名称 | 关键概念 | 本库建议配合阅读 | 页面链接 |
 |------|----------|----------|------------------|----------|
-| 04 | 智能体经典范式构建 | ReAct、Plan-and-Solve、Reflection、Thought-Action-Observation 循环、工具调用、HelloAgentsLLM | [[大模型/Prompt_Engineering/Prompt_Engineering]]、[[智能体/Agent_Workflow/Workflow-in-nutshell]] | [[大模型/Prompt_Engineering/Hello_Agents_L04_ReAct]] |
-| 05 | 基于低代码平台的智能体搭建 | Coze、Dify、FastGPT、n8n、插件/工作流/知识库、每日 AI 简报 | [[智能体/Agent_Platforms/Dify_Coze_MLServe_Dive]]、[[RAG系统/RAG_Frameworks/Dify_Deep_Dive]] | [[智能体/Agent_Platforms/Dify_Coze_MLServe_Dive]] |
-| 06 | 框架开发实践 | AutoGen 0.7.4、AgentScope、CAMEL 角色扮演、LangGraph 图执行、多智能体协作 | [[智能体/Agent_Frameworks/AutoGen_Deep_Dive]]、[[智能体/Agent_Frameworks/AutoGen_CrewAI_LangGraph_Dive]]、[[智能体/Agent_Frameworks/AgentScope_Deep_Dive]] | [[智能体/Hello_Agents_L06_Frameworks_AutoGen_LangGraph]] |
-| 07 | 构建你的 Agent 框架 | HelloAgents 框架、Agent 基类、消息系统、工具系统、ReActAgent / SimpleAgent / ReflectionAgent / PlanAndSolveAgent | [[智能体/Agent_Frameworks/README]]、[[智能体/Agent_Skills/Agent_Skills_Deep_Dive]] | [[智能体/Agent_Frameworks/README]] |
+| 04 | 智能体经典范式构建 | ReAct、Plan-and-Solve、Reflection、Thought-Action-Observation 循环、工具调用、HelloAgentsLLM | [[05_大模型/08_Prompt_Engineering/Prompt_Engineering]]、[[15_智能体/03_Agent_Workflow/Workflow-in-nutshell]] | [[05_大模型/08_Prompt_Engineering/Hello_Agents_L04_ReAct]] |
+| 05 | 基于低代码平台的智能体搭建 | Coze、Dify、FastGPT、n8n、插件/工作流/知识库、每日 AI 简报 | [[15_智能体/09_Agent_Platforms/Dify_Coze_MLServe_Dive]]、[[14_RAG系统/06_RAG_Frameworks/Dify_Deep_Dive]] | [[15_智能体/09_Agent_Platforms/Dify_Coze_MLServe_Dive]] |
+| 06 | 框架开发实践 | AutoGen 0.7.4、AgentScope、CAMEL 角色扮演、LangGraph 图执行、多智能体协作 | [[15_智能体/02_Agent_Frameworks/AutoGen_Deep_Dive]]、[[15_智能体/02_Agent_Frameworks/AutoGen_CrewAI_LangGraph_Dive]]、[[15_智能体/02_Agent_Frameworks/AgentScope_Deep_Dive]] | [[15_智能体/Hello_Agents_L06_Frameworks_AutoGen_LangGraph]] |
+| 07 | 构建你的 Agent 框架 | HelloAgents 框架、Agent 基类、消息系统、工具系统、ReActAgent / SimpleAgent / ReflectionAgent / PlanAndSolveAgent | [[15_智能体/02_Agent_Frameworks/README]]、[[15_智能体/05_Agent_Skills/Agent_Skills_Deep_Dive]] | [[15_智能体/02_Agent_Frameworks/README]] |
 
 ### 第三部分：高级知识扩展
 
 | 章号 | 章节名称 | 关键概念 | 本库建议配合阅读 | 页面链接 |
 |------|----------|----------|------------------|----------|
-| 08 | 记忆与检索 | 感觉/工作/长期记忆、情景/语义/程序性记忆、MemoryManager、RAG Pipeline、Qdrant、Neo4j、SQLite | [[RAG系统/RAG_Systems]]、[[RAG系统/GenAI_L15_RAG_and_Vector_Databases]]、[[RAG系统/Vector_Databases/Qdrant_Deep_Dive]] | [[智能体/Hello_Agents_L08_Memory_RAG]] |
-| 09 | 上下文工程 | Prompt Engineering vs Context Engineering、上下文腐蚀、JIT 上下文、GSSC 流水线、压缩整合、结构化笔记、子代理架构 | [[大模型/Prompt_Engineering/Prompt_Engineering]]、[[智能体/Agent_Workflow/Workflow-in-nutshell]] | [[大模型/Prompt_Engineering/Hello_Agents_L09_Context_Engineering]] |
-| 10 | 智能体通信协议 | MCP、A2A、ANP、FastMCP、a2a-sdk、服务发现、去中心化网络 | [[智能体/A2A_Protocol_Deep_Dive]]、[[学习/References/Articles/awesome-mcp-servers]] | [[智能体/Hello_Agents_L10_Agent_Protocols]] |
-| 11 | Agentic-RL | 预训练、SFT、奖励建模、PPO、RLHF/RLAIF、Agentic RL、MDP、GRPO、推理与工具使用训练 | [[模型训练/Alignment/GRPO_and_New_Alignment_Methods]]、[[模型训练/Alignment/TRL_RLHF_DPO_Guide]]、[[强化学习/RL_Fundamentals]] | [[模型训练/Hello_Agents_L11_Agentic_RL]] |
-| 12 | 智能体性能评估 | BFCL、GAIA、ToolBench、API-Bank、AgentBench、WebArena、LLM Judge、准精确匹配、Win Rate | [[模型评估/Benchmarks/Agentic_Benchmark_Guide]]、[[模型评估/Evaluation_Tools/LLM_as_Judge_Guide]]、[[模型评估/Benchmarks/LLM_Benchmark_Suite_2026]] | [[模型评估/Benchmarks/Agentic_Benchmark_Guide]] |
+| 08 | 记忆与检索 | 感觉/工作/长期记忆、情景/语义/程序性记忆、MemoryManager、RAG Pipeline、Qdrant、Neo4j、SQLite | [[14_RAG系统/RAG_Systems]]、[[14_RAG系统/GenAI_L15_RAG_and_Vector_Databases]]、[[14_RAG系统/03_Vector_Databases/Qdrant_Deep_Dive]] | [[15_智能体/Hello_Agents_L08_Memory_RAG]] |
+| 09 | 上下文工程 | Prompt Engineering vs Context Engineering、上下文腐蚀、JIT 上下文、GSSC 流水线、压缩整合、结构化笔记、子代理架构 | [[05_大模型/08_Prompt_Engineering/Prompt_Engineering]]、[[15_智能体/03_Agent_Workflow/Workflow-in-nutshell]] | [[05_大模型/08_Prompt_Engineering/Hello_Agents_L09_Context_Engineering]] |
+| 10 | 智能体通信协议 | MCP、A2A、ANP、FastMCP、a2a-sdk、服务发现、去中心化网络 | [[15_智能体/A2A_Protocol_Deep_Dive]]、[[90_学习/References/Articles/awesome-mcp-servers]] | [[15_智能体/Hello_Agents_L10_Agent_Protocols]] |
+| 11 | Agentic-RL | 预训练、SFT、奖励建模、PPO、RLHF/RLAIF、Agentic RL、MDP、GRPO、推理与工具使用训练 | [[07_模型训练/06_Alignment/GRPO_and_New_Alignment_Methods]]、[[07_模型训练/06_Alignment/TRL_RLHF_DPO_Guide]]、[[06_强化学习/RL_Fundamentals]] | [[07_模型训练/Hello_Agents_L11_Agentic_RL]] |
+| 12 | 智能体性能评估 | BFCL、GAIA、ToolBench、API-Bank、AgentBench、WebArena、LLM Judge、准精确匹配、Win Rate | [[08_模型评估/02_Benchmarks/Agentic_Benchmark_Guide]]、[[08_模型评估/04_Evaluation_Tools/LLM_as_Judge_Guide]]、[[08_模型评估/02_Benchmarks/LLM_Benchmark_Suite_2026]] | [[08_模型评估/02_Benchmarks/Agentic_Benchmark_Guide]] |
 
 ### 第四部分：综合案例进阶
 
 | 章号 | 章节名称 | 关键概念 | 本库建议配合阅读 | 页面链接 |
 |------|----------|----------|------------------|----------|
-| 13 | 智能旅行助手 | 多智能体协作、MCP、FastAPI、Vue3、高德地图 API、行程规划、预算计算、地图可视化 | [[智能体/GenAI_L17_AI_Agents]]、[[智能体/A2A_Protocol_Deep_Dive]] | [[智能体/Hello_Agents_L13_Travel_Assistant]] |
-| 14 | 自动化深度研究智能体 | DeepResearch、TODO Planner、Task Summarizer、Report Writer、SearchTool、NoteTool、SSE 流式 | [[智能体/Agent_Workflow/Workflow-in-nutshell]]、[[RAG系统/Advanced_RAG/Agentic_RAG_Guide]] | [[RAG系统/Advanced_RAG/Agentic_RAG_Guide]] |
-| 15 | 构建赛博小镇 | Godot 游戏引擎、AI NPC、记忆与好感度系统、2D 像素办公室、情感分析、社会动态模拟 | [[智能体/GenAI_L17_AI_Agents]]、[[智能体/Hello_Agents_L08_Memory_RAG]] | [[智能体/Hello_Agents_L15_Cyber_Town]] |
+| 13 | 智能旅行助手 | 多智能体协作、MCP、FastAPI、Vue3、高德地图 API、行程规划、预算计算、地图可视化 | [[15_智能体/GenAI_L17_AI_Agents]]、[[15_智能体/A2A_Protocol_Deep_Dive]] | [[15_智能体/Hello_Agents_L13_Travel_Assistant]] |
+| 14 | 自动化深度研究智能体 | DeepResearch、TODO Planner、Task Summarizer、Report Writer、SearchTool、NoteTool、SSE 流式 | [[15_智能体/03_Agent_Workflow/Workflow-in-nutshell]]、[[14_RAG系统/04_Advanced_RAG/Agentic_RAG_Guide]] | [[14_RAG系统/04_Advanced_RAG/Agentic_RAG_Guide]] |
+| 15 | 构建赛博小镇 | Godot 游戏引擎、AI NPC、记忆与好感度系统、2D 像素办公室、情感分析、社会动态模拟 | [[15_智能体/GenAI_L17_AI_Agents]]、[[15_智能体/Hello_Agents_L08_Memory_RAG]] | [[15_智能体/Hello_Agents_L15_Cyber_Town]] |
 
 ### 第五部分：毕业设计及未来展望
 
 | 章号 | 章节名称 | 关键概念 | 本库建议配合阅读 | 页面链接 |
 |------|----------|----------|------------------|----------|
-| 16 | 毕业设计 | 开源项目提交、选题原则、生产力/学习/创意/数据分析/生活服务类项目、PR 流程 | [[智能体/README]]、[[编程/AI_Coding_2026_Guide]] | [[智能体/README]] |
+| 16 | 毕业设计 | 开源项目提交、选题原则、生产力/90_学习/创意/数据分析/生活服务类项目、PR 流程 | [[15_智能体/README]]、[[16_编程/AI_Coding_2026_Guide]] | [[15_智能体/README]] |
 
 ---
 
@@ -107,27 +107,27 @@ aliases:
 
 | 编号 | 名称 | 关键内容 | 相关页面 |
 |------|------|----------|----------|
-| Extra01 | Agent 面试题总结 + 参考答案 | 岗位相关面试问题与答案 | [[智能体/README_for_dummy]] |
-| Extra02 | 上下文工程补充知识 | 上下文工程内容扩展 | [[大模型/Prompt_Engineering/Hello_Agents_L09_Context_Engineering]] |
-| Extra03 | Dify 智能体创建保姆级教程 | Dify 实操流程 | [[RAG系统/RAG_Frameworks/Dify_Deep_Dive]]、[[智能体/Agent_Platforms/Dify_Coze_MLServe_Dive]] |
-| Extra04 | Hello-Agents 课程常见问题 | FAQ | [[学习/Courses/other/hello_agents]] |
-| Extra05 | Agent Skills 与 MCP 对比解读 | Agent Skills vs MCP | [[智能体/Agent_Skills/Agent_Skills_Deep_Dive]]、[[学习/References/Articles/awesome-mcp-servers]] |
-| Extra06 | GUI Agent 科普与实战 | GUI Agent 多场景实战 | [[智能体/OpenClaw_Ecosystem/Manus_My_Computer]] |
-| Extra07 | 环境配置 | 本地环境配置 | [[数学基础/AI_Development_Environment_Setup]] |
-| Extra08 | 如何写出好的 Skill | Skill 写作最佳实践 | [[智能体/Agent_Skills/Agent_Skills_Practical_Guide]] |
-| Extra09 | Agent 应用开发实践踩坑与经验分享 | Code Agent 踩坑总结 | [[智能体/README]] |
-| Extra10 | Agent Self-Evolution 智能体自进化 | 自进化四类闭环与代表项目 | [[智能体/Agentic_Design_Patterns_AndrewNg]] |
-| Extra11 | WebAgent 科普与实战 | Web Agent 原理与反爬实战 | [[智能体/OpenClaw_Ecosystem/README]] |
-| Extra12 | 旅行助手后训练实战 | 旅行助手 Demo 打磨成 Planner | [[智能体/Hello_Agents_L13_Travel_Assistant]] |
-| Extra13 | Hello-Agents 视频课录制共创 | 视频课程共创资源 | [[学习/Courses/other/hello_agents]] |
+| Extra01 | Agent 面试题总结 + 参考答案 | 岗位相关面试问题与答案 | [[15_智能体/README_for_dummy]] |
+| Extra02 | 上下文工程补充知识 | 上下文工程内容扩展 | [[05_大模型/08_Prompt_Engineering/Hello_Agents_L09_Context_Engineering]] |
+| Extra03 | Dify 智能体创建保姆级教程 | Dify 实操流程 | [[14_RAG系统/06_RAG_Frameworks/Dify_Deep_Dive]]、[[15_智能体/09_Agent_Platforms/Dify_Coze_MLServe_Dive]] |
+| Extra04 | Hello-Agents 课程常见问题 | FAQ | [[90_学习/Courses/other/hello_agents]] |
+| Extra05 | Agent Skills 与 MCP 对比解读 | Agent Skills vs MCP | [[15_智能体/05_Agent_Skills/Agent_Skills_Deep_Dive]]、[[90_学习/References/Articles/awesome-mcp-servers]] |
+| Extra06 | GUI Agent 科普与实战 | GUI Agent 多场景实战 | [[15_智能体/11_OpenClaw_Ecosystem/Manus_My_Computer]] |
+| Extra07 | 环境配置 | 本地环境配置 | [[01_数学基础/AI_Development_Environment_Setup]] |
+| Extra08 | 如何写出好的 Skill | Skill 写作最佳实践 | [[15_智能体/05_Agent_Skills/Agent_Skills_Practical_Guide]] |
+| Extra09 | Agent 应用开发实践踩坑与经验分享 | Code Agent 踩坑总结 | [[15_智能体/README]] |
+| Extra10 | Agent Self-Evolution 智能体自进化 | 自进化四类闭环与代表项目 | [[15_智能体/Agentic_Design_Patterns_AndrewNg]] |
+| Extra11 | WebAgent 科普与实战 | Web Agent 原理与反爬实战 | [[15_智能体/11_OpenClaw_Ecosystem/README]] |
+| Extra12 | 旅行助手后训练实战 | 旅行助手 Demo 打磨成 Planner | [[15_智能体/Hello_Agents_L13_Travel_Assistant]] |
+| Extra13 | Hello-Agents 视频课录制共创 | 视频课程共创资源 | [[90_学习/Courses/other/hello_agents]] |
 
 ---
 
 ## 学习路径建议
 
-1. **快速体验**: 阅读 [[学习/Courses/other/hello_agents]] 了解项目背景，直接跳到 [[智能体/Hello_Agents_L13_Travel_Assistant]] 看完整项目效果。
-2. **系统学习**: 按 01 → 03 → 04 → 06 → 07 → 08 → 09 → 10 → 11 → 12 → 13 的顺序阅读，配合 [[学习/guides/ai_engineering_roadmap_2026]] 查漏补缺。
-3. **工程实战**: 重点看 [[智能体/Hello_Agents_L06_Frameworks_AutoGen_LangGraph]]、[[智能体/Hello_Agents_L10_Agent_Protocols]]、[[智能体/Hello_Agents_L13_Travel_Assistant]]，并结合 [[智能体/Agent_Frameworks/AutoGen_Deep_Dive]]、[[RAG系统/RAG_Frameworks/Dify_Deep_Dive]] 做项目迁移。
+1. **快速体验**: 阅读 [[90_学习/Courses/other/hello_agents]] 了解项目背景，直接跳到 [[15_智能体/Hello_Agents_L13_Travel_Assistant]] 看完整项目效果。
+2. **系统学习**: 按 01 → 03 → 04 → 06 → 07 → 08 → 09 → 10 → 11 → 12 → 13 的顺序阅读，配合 [[90_学习/guides/ai_engineering_roadmap_2026]] 查漏补缺。
+3. **工程实战**: 重点看 [[15_智能体/Hello_Agents_L06_Frameworks_AutoGen_LangGraph]]、[[15_智能体/Hello_Agents_L10_Agent_Protocols]]、[[15_智能体/Hello_Agents_L13_Travel_Assistant]]，并结合 [[15_智能体/02_Agent_Frameworks/AutoGen_Deep_Dive]]、[[14_RAG系统/06_RAG_Frameworks/Dify_Deep_Dive]] 做项目迁移。
 
 ## 核心知识框架
 

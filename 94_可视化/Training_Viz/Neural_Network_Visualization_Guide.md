@@ -344,10 +344,10 @@ def visualize_embeddings(embeddings, labels, method='tsne'):
 - [[Model_Interpretability_Explainability]]: 模型可解释性
 - [[Training_Monitoring_Visualization]]: 训练监控可视化
 - [[AI_System_Dashboard]]: AI 系统仪表盘
-- [[../../模型训练/Monitoring/Training_Monitoring_2026|训练监控 2026]] — 训练可视化在生产中的实践
-- [[../../模型运维/Observability/LLM_Observability|LLM 可观测性]] — 推理监控可视化
-- [[../../模型评估/Benchmarks/HF_Leaderboard_Eval_Guide|排行榜评估]] — 评估结果可视化
-- [[../../计算机视觉/CV_Fundamentals/ViT_Deep_Dive|ViT 深度页]] — 视觉模型可视化
+- [[../../07_模型训练/07_Monitoring/Training_Monitoring_2026|训练监控 2026]] — 训练可视化在生产中的实践
+- [[../../11_模型运维/08_Observability/LLM_Observability|LLM 可观测性]] — 推理监控可视化
+- [[../../08_模型评估/02_Benchmarks/HF_Leaderboard_Eval_Guide|排行榜评估]] — 评估结果可视化
+- [[../../04_计算机视觉/01_CV_Fundamentals/ViT_Deep_Dive|ViT 深度页]] — 视觉模型可视化
 
 ---
 

@@ -151,15 +151,15 @@ Input → LayerNorm → Multi-Head Attention (Causal) → Residual
 
 ## Related
 
-- [[大模型/Fine_tuning_Techniques/PEFT_2026]] — PEFT 2026
-- [[大模型/Fine_tuning_Techniques/README]] — 微调技术
-- [[大模型/LLM_Architectures/LLM-Basics-in-nutshell]] — 大语言模型基础速成指南
-- [[大模型/Multimodal_Models/Multimodal_Architectures_2026]] — 多模态模型架构 2026
+- [[05_大模型/07_Fine_tuning_Techniques/PEFT_2026]] — PEFT 2026
+- [[05_大模型/07_Fine_tuning_Techniques/README]] — 微调技术
+- [[05_大模型/05_LLM_Architectures/LLM-Basics-in-nutshell]] — 大语言模型基础速成指南
+- [[05_大模型/10_Multimodal_Models/Multimodal_Architectures_2026]] — 多模态模型架构 2026
 - [[概念/transformer-architecture]] — Transformer 架构
 - [[概念/mixture-of-experts]] — MoE 混合专家
 - [[概念/kv-cache]] — KV Cache
-- [[大模型/Transformer_Revolution/Self_Attention_Mechanism|自注意力机制]]
-- [[大模型/LLM_Architectures/LLM_Architectures|LLM 架构总览]]
+- [[05_大模型/04_Transformer_Revolution/Self_Attention_Mechanism|自注意力机制]]
+- [[05_大模型/05_LLM_Architectures/LLM_Architectures|LLM 架构总览]]
 
 ## 总结
 

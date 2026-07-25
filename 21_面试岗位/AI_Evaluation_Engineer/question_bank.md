@@ -119,10 +119,10 @@ sources: []
 
 ## Related
 
-- [[面试岗位/AI_Evaluation_Engineer/interview_answers|AI Evaluation Engineer 面试题实例答案]]
-- [[面试岗位/AI_Evaluation_Engineer/company_level_question_bank|AI Evaluation Engineer 按公司/级别区分的题库]]
-- [[面试岗位/AI_Evaluation_Engineer/index|AI Evaluation Engineer 首页]]
-- [[模型评估/index|模型评估]]
-- [[测试/Agent_Evaluation_index|Agent 评测]]
-- [[面试岗位/Interview_Guide/System_Design_for_AI|AI 系统设计面试]]
-- [[面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/AI_Evaluation_Engineer/interview_answers|AI Evaluation Engineer 面试题实例答案]]
+- [[21_面试岗位/AI_Evaluation_Engineer/company_level_question_bank|AI Evaluation Engineer 按公司/级别区分的题库]]
+- [[21_面试岗位/AI_Evaluation_Engineer/index|AI Evaluation Engineer 首页]]
+- [[08_模型评估/index|模型评估]]
+- [[09_测试/Agent_Evaluation_index|Agent 评测]]
+- [[21_面试岗位/Interview_Guide/System_Design_for_AI|AI 系统设计面试]]
+- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]

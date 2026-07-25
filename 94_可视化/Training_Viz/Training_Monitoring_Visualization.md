@@ -1038,12 +1038,12 @@ W&B 适合:
 
 ## 相关阅读
 
-- [模型可解释性可视化](可视化/Evaluation_Viz/Model_Interpretability_Visualization.md) - 深入理解模型内部
-- [AI 系统仪表盘](可视化/System_Viz/AI_System_Dashboard.md) - 生产环境监控
-- [可视化入门](可视化/Best_Practices/Visualization_for_dummy.md) - 可视化基础概念
-- [模型训练 - 小白版](模型训练/Training_Fundamentals/Model_Training_for_dummy.md) - 训练基础
-- [模型评估 - 小白版](模型评估/Evaluation_Fundamentals/Model_Evaluation_for_dummy.md) - 评估指标
-- [Training Monitoring 2026](模型训练/Monitoring/Training_Monitoring_2026.md) - 训练监控进阶
+- [模型可解释性可视化](94_可视化/Evaluation_Viz/Model_Interpretability_Visualization.md) - 深入理解模型内部
+- [AI 系统仪表盘](94_可视化/System_Viz/AI_System_Dashboard.md) - 生产环境监控
+- [可视化入门](94_可视化/Best_Practices/Visualization_for_dummy.md) - 可视化基础概念
+- [模型训练 - 小白版](07_模型训练/01_Training_Fundamentals/Model_Training_for_dummy.md) - 训练基础
+- [模型评估 - 小白版](08_模型评估/01_Evaluation_Fundamentals/Model_Evaluation_for_dummy.md) - 评估指标
+- [Training Monitoring 2026](07_模型训练/07_Monitoring/Training_Monitoring_2026.md) - 训练监控进阶
 
 ---
 
@@ -1051,8 +1051,8 @@ W&B 适合:
 
 ## Related
 
-- [[可视化/README.md|94_Visualization README]]
+- [[94_可视化/README.md|94_Visualization README]]
 - [[前端应用/atlas/README.md|atlas README]]
 - [[前端应用/atlas/docs/performance.md|performance]]
-- [[模型训练/Distributed_Training/Distributed_Training_2026.md|Distributed_Training_2026]]
-- [[模型训练/Distributed_Training/Distributed_Training_for_dummy.md|Distributed_Training_for_dummy]]
+- [[07_模型训练/04_Distributed_Training/Distributed_Training_2026.md|Distributed_Training_2026]]
+- [[07_模型训练/04_Distributed_Training/Distributed_Training_for_dummy.md|Distributed_Training_for_dummy]]

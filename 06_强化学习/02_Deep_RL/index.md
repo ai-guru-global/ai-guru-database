@@ -15,19 +15,19 @@ tags: [auto-index]
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[强化学习/Deep_RL/Deep_RL|Deep RL]] | Deep RL knowledge system: value function, policy gradient and Actor-Critic methods | RL researchers / students |
-| [[强化学习/Deep_RL/Deep_RL_for_dummy|Deep RL for dummy]] | Deep RL beginner guide: from MDP to PPO | beginners / RL learners |
-| [[强化学习/Deep_RL/DQN_Deep_Dive|DQN Deep Dive]] | DQN deep dive: experience replay, target network and Rainbow extensions | RL researchers / students |
-| [[强化学习/Deep_RL/PPO_Deep_Dive|PPO Deep Dive]] | PPO deep dive: clipped objective, GAE and implementation details | RL engineers / RLHF practitioners |
-| [[强化学习/Deep_RL/SAC_Deep_Dive|SAC Deep Dive]] | SAC deep dive: maximum entropy RL and temperature auto-tuning | RL researchers |
-| [[强化学习/Deep_RL/Model_Based_RL_Deep_Dive|Model Based RL Deep Dive]] | Model-based RL deep dive: world model and planning algorithms | RL researchers / robotics engineers |
-| [[强化学习/Deep_RL/Offline_RL_Deep_Dive|Offline RL Deep Dive]] | Offline RL deep dive: offline data, distribution shift and conservative constraints | RL researchers / applied scientists |
+| [[06_强化学习/02_Deep_RL/Deep_RL|Deep RL]] | Deep RL knowledge system: value function, policy gradient and Actor-Critic methods | RL researchers / students |
+| [[06_强化学习/02_Deep_RL/Deep_RL_for_dummy|Deep RL for dummy]] | Deep RL beginner guide: from MDP to PPO | beginners / RL learners |
+| [[06_强化学习/02_Deep_RL/DQN_Deep_Dive|DQN Deep Dive]] | DQN deep dive: experience replay, target network and Rainbow extensions | RL researchers / students |
+| [[06_强化学习/02_Deep_RL/PPO_Deep_Dive|PPO Deep Dive]] | PPO deep dive: clipped objective, GAE and implementation details | RL engineers / RLHF practitioners |
+| [[06_强化学习/02_Deep_RL/SAC_Deep_Dive|SAC Deep Dive]] | SAC deep dive: maximum entropy RL and temperature auto-tuning | RL researchers |
+| [[06_强化学习/02_Deep_RL/Model_Based_RL_Deep_Dive|Model Based RL Deep Dive]] | Model-based RL deep dive: world model and planning algorithms | RL researchers / robotics engineers |
+| [[06_强化学习/02_Deep_RL/Offline_RL_Deep_Dive|Offline RL Deep Dive]] | Offline RL deep dive: offline data, distribution shift and conservative constraints | RL researchers / applied scientists |
 
 ## Related
 
-- [[强化学习/index|强化学习首页]]
-- [[论文精读/RL/index|RL 论文]]
-- [[业界观点/Demis_Hassabis/index|Demis Hassabis]]
+- [[06_强化学习/index|强化学习首页]]
+- [[20_论文精读/07_RL/index|RL 论文]]
+- [[19_业界观点/Demis_Hassabis/index|Demis Hassabis]]
 
 ## 核心概念
 

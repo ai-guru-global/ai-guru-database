@@ -63,7 +63,7 @@ Error Budget = 1 - SLO，是服务在给定时间窗口内允许的最大不可�
 - [[概念/slo|SLO]]
 - [[概念/General/sli|SLI]]
 - [[概念/General/sla|SLA]]
-- [[运维/SRE_Reliability/LLM_Inference_SLO_Guide|LLM 推理 SLO 实践指南]]
+- [[13_运维/02_SRE_Reliability/LLM_Inference_SLO_Guide|LLM 推理 SLO 实践指南]]
 
 ---
 

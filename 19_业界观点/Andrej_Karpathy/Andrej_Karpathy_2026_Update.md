@@ -22,7 +22,7 @@ sources: []
 
 ### 背景回顾
 
-Andrej Karpathy（1985 年生于前捷克斯洛伐克），斯坦福大学计算机科学博士（2015，师从 [[业界观点/Fei_Fei_Li/index\|Fei-Fei Li]]），OpenAI 创始成员（2015-2017）、Tesla AI 总监（2017-2022，主导 Autopilot 纯视觉方案）、OpenAI 短暂回归（2023-2024）。2024 年创立 Eureka Labs，专注 AI 教育。他是"Software 2.0"（2017）概念提出者、"Vibe Coding"（2025）术语首创者、Stanford CS231n 课程缔造者、nanoGPT/llm.c 作者。被业界公认为"AI 领域最好的老师"。
+Andrej Karpathy（1985 年生于前捷克斯洛伐克），斯坦福大学计算机科学博士（2015，师从 [[19_业界观点/Fei_Fei_Li/index\|Fei-Fei Li]]），OpenAI 创始成员（2015-2017）、Tesla AI 总监（2017-2022，主导 Autopilot 纯视觉方案）、OpenAI 短暂回归（2023-2024）。2024 年创立 Eureka Labs，专注 AI 教育。他是"Software 2.0"（2017）概念提出者、"Vibe Coding"（2025）术语首创者、Stanford CS231n 课程缔造者、nanoGPT/llm.c 作者。被业界公认为"AI 领域最好的老师"。
 
 #### Karpathy 2026 关键时间线
 
@@ -201,7 +201,7 @@ Karpathy 的教育哲学：
 Karpathy 的中间立场：
 
 - 承认 AI 风险，但不接受"末日论"
-- 介于 [[业界观点/Yann_LeCun/index\|LeCun]]（乐观）和 [[业界观点/Geoffrey_Hinton/index\|Hinton]]（悲观）之间
+- 介于 [[19_业界观点/Yann_LeCun/index\|LeCun]]（乐观）和 [[19_业界观点/Geoffrey_Hinton/index\|Hinton]]（悲观）之间
 - 认为教育是缓解风险的关键
 - 关注"AI 素养"而非"AI 恐慌"
 
@@ -220,7 +220,7 @@ Karpathy 的判断（2026 更新）：
 
 ### 与其他 AI 教育者的对比
 
-| 维度 | Karpathy | [[业界观点/Andrew_Ng/index\|Andrew Ng]] | [[业界观点/Josh_Starmer/index\|Josh Starmer]] |
+| 维度 | Karpathy | [[19_业界观点/Andrew_Ng/index\|Andrew Ng]] | [[19_业界观点/Josh_Starmer/index\|Josh Starmer]] |
 |------|----------|---------|-------------|
 | 背景 | 工程实践 | 学术+创业 | 统计教育 |
 | 风格 | 从零构建 | 系统课程 | 故事化讲解 |
@@ -233,9 +233,9 @@ Karpathy 的判断（2026 更新）：
 
 | 雇主 | 关系 | 2026 互动 |
 |------|------|-----------|
-| Tesla（[[业界观点/Elon_Musk/index\|Musk]]） | 前员工 | 偶尔回顾 Autopilot |
-| OpenAI（[[业界观点/Sam_Altman/index\|Altman]]） | 创始成员 | 保持友好，不站队 |
-| Stanford（[[业界观点/Fei_Fei_Li/index\|Fei-Fei Li]]） | 校友 | 学术合作 |
+| Tesla（[[19_业界观点/Elon_Musk/index\|Musk]]） | 前员工 | 偶尔回顾 Autopilot |
+| OpenAI（[[19_业界观点/Sam_Altman/index\|Altman]]） | 创始成员 | 保持友好，不站队 |
+| Stanford（[[19_业界观点/Fei_Fei_Li/index\|Fei-Fei Li]]） | 校友 | 学术合作 |
 
 ### 对产业格局的影响
 
@@ -366,26 +366,26 @@ Karpathy 在 Tesla 的工作在 2026 年持续被重新评估：
 
 ### 教育与思想网络
 
-- [[业界观点/Andrej_Karpathy/index]] -- 本页主人物
-- [[业界观点/Andrej_Karpathy/about]] -- 详细简介
-- [[业界观点/Fei_Fei_Li/index]] -- 博士导师
-- [[业界观点/Andrew_Ng/index]] -- 教育同行
-- [[业界观点/Josh_Starmer/index]] -- 教育同行
-- [[业界观点/3Blue1Brown/index]] -- 教育同行
+- [[19_业界观点/Andrej_Karpathy/index]] -- 本页主人物
+- [[19_业界观点/Andrej_Karpathy/about]] -- 详细简介
+- [[19_业界观点/Fei_Fei_Li/index]] -- 博士导师
+- [[19_业界观点/Andrew_Ng/index]] -- 教育同行
+- [[19_业界观点/Josh_Starmer/index]] -- 教育同行
+- [[19_业界观点/3Blue1Brown/index]] -- 教育同行
 
 ### 前雇主网络
 
-- [[业界观点/Elon_Musk/index]] -- 前 Tesla CEO
-- [[业界观点/Sam_Altman/index]] -- OpenAI 创始同事
-- [[业界观点/Mira_Murati/index]] -- 前 OpenAI 同事
+- [[19_业界观点/Elon_Musk/index]] -- 前 Tesla CEO
+- [[19_业界观点/Sam_Altman/index]] -- OpenAI 创始同事
+- [[19_业界观点/Mira_Murati/index]] -- 前 OpenAI 同事
 
 ### 技术与思想
 
-- [[业界观点/Yann_LeCun/index]] -- 端到端哲学共鸣
-- [[大模型/README]] -- nanoGPT 与 GPT 架构
-- [[编程/Methodology/Vibe_Coding_Methodology]] -- Vibe Coding 方法论
-- [[入门/AI_Future_Trends]] -- Software 2.0/3.0
-- [[深度学习/README]] -- CS231n 遗产
+- [[19_业界观点/Yann_LeCun/index]] -- 端到端哲学共鸣
+- [[05_大模型/README]] -- nanoGPT 与 GPT 架构
+- [[16_编程/03_Methodology/Vibe_Coding_Methodology]] -- Vibe Coding 方法论
+- [[00_入门/AI_Future_Trends]] -- Software 2.0/3.0
+- [[03_深度学习/README]] -- CS231n 遗产
 
 ---
 

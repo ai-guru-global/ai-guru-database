@@ -164,20 +164,20 @@ swift dpo \
 
 ## Related
 
-- [[架构基建/AI_Stack_Production_Toolchain|AI Stack 生产工具链总览]]
-- [[架构基建/AI_Stack_GPU_Monitoring_Guide|AI Stack GPU 监控指南]]
-- [[架构基建/AI_Stack_Model_Management_Guide|AI Stack 模型下载与管理指南]]
-- [[模型训练/Distributed_Training/Distributed_Training_2026|分布式训练 2026]]
-- [[模型训练/Distributed_Training/HF_Accelerate_DeepSpeed_Guide|HF Accelerate & DeepSpeed 指南]]
-- [[模型训练/Distributed_Training/ms_swift_Deep_Dive|ms-swift 深度解析]]
-- [[模型训练/Monitoring/Training_Monitoring_2026|训练监控与实验追踪 2026]]
+- [[12_架构基建/AI_Stack_Production_Toolchain|AI Stack 生产工具链总览]]
+- [[12_架构基建/AI_Stack_GPU_Monitoring_Guide|AI Stack GPU 监控指南]]
+- [[12_架构基建/AI_Stack_Model_Management_Guide|AI Stack 模型下载与管理指南]]
+- [[07_模型训练/04_Distributed_Training/Distributed_Training_2026|分布式训练 2026]]
+- [[07_模型训练/04_Distributed_Training/HF_Accelerate_DeepSpeed_Guide|HF Accelerate & DeepSpeed 指南]]
+- [[07_模型训练/04_Distributed_Training/ms_swift_Deep_Dive|ms-swift 深度解析]]
+- [[07_模型训练/07_Monitoring/Training_Monitoring_2026|训练监控与实验追踪 2026]]
 - [[概念/distributed-parallelism|分布式并行策略]]
 
 ## 架构核心组件对比
 
 | 组件层 | 功能 | 关键技术 | 选型考量 |
 |--------|------|----------|----------|
-| 计算层 | 模型训练/推理 | GPU/TPU/NPU集群 | 算力需求+成本 |
+| 计算层 | 07_模型训练/推理 | GPU/TPU/NPU集群 | 算力需求+成本 |
 | 存储层 | 数据/模型/检查点 | 分布式存储/对象存储 | 容量+IOPS+成本 |
 | 网络层 | 节点间通信 | RDMA/RoCE/InfiniBand | 带宽+延迟 |
 | 调度层 | 资源编排 | K8s/Slurm/Ray | 弹性+效率 |

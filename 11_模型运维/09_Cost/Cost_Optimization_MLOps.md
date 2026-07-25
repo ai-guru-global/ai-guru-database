@@ -210,7 +210,7 @@ spec:
 | **LoRA / QLoRA** | 90%（微调） | 微小 |
 | **早停** | 10–30% | 无 |
 
-详见 [[模型训练/Optimization/Mixed_Precision_Training]]、[[大模型/Fine_tuning_Techniques/Fine_tuning_Strategies]]。
+详见 [[07_模型训练/03_Optimization/Mixed_Precision_Training]]、[[05_大模型/07_Fine_tuning_Techniques/Fine_tuning_Strategies]]。
 
 ---
 
@@ -229,11 +229,11 @@ graph TD
 
 | 手段 | 成本节省 | 详见 |
 |------|---------|------|
-| **量化（INT8/INT4）** | 50–75% 显存 | [[部署推理/Quantization/Quantization_Techniques_2026]] |
-| **动态批处理** | 3–5x 吞吐 | [[部署推理/Inference_Engines/vLLM_Deep_Dive]] |
-| **知识蒸馏** | 小模型替代大模型 | [[模型训练/Compression/Pruning_and_Knowledge_Distillation]] |
-| **投机解码** | 2x 速度 | [[部署推理/Caching/Speculative_Decoding_Advanced_2026]] |
-| **Prompt 缓存** | 50% 延迟 | [[部署推理/Caching/Prompt_Caching_Advanced]] |
+| **量化（INT8/INT4）** | 50–75% 显存 | [[10_部署推理/05_Quantization/Quantization_Techniques_2026]] |
+| **动态批处理** | 3–5x 吞吐 | [[10_部署推理/02_Inference_Engines/vLLM_Deep_Dive]] |
+| **知识蒸馏** | 小模型替代大模型 | [[07_模型训练/05_Compression/Pruning_and_Knowledge_Distillation]] |
+| **投机解码** | 2x 速度 | [[10_部署推理/06_Caching/Speculative_Decoding_Advanced_2026]] |
+| **Prompt 缓存** | 50% 延迟 | [[10_部署推理/06_Caching/Prompt_Caching_Advanced]] |
 
 ---
 
@@ -277,16 +277,16 @@ def detect_cost_anomaly():
 ## 8. 相关文档
 
 ### 本章内
-- [[模型运维/Cost/LLM_Cost_Latency_SLO]] — LLM Token 成本与缓存
-- [[模型运维/Observability/ML_Observability_SLO]] — GPU 利用率监控
-- [[模型运维/MLOps_Maturity_Model]] — 成熟度
+- [[11_模型运维/09_Cost/LLM_Cost_Latency_SLO]] — LLM Token 成本与缓存
+- [[11_模型运维/08_Observability/ML_Observability_SLO]] — GPU 利用率监控
+- [[11_模型运维/MLOps_Maturity_Model]] — 成熟度
 
 ### 跨章
-- [[模型训练/Optimization/Training_Optimization_2026]] — 训练优化
-- [[模型训练/Optimization/Mixed_Precision_Training]] — 混合精度
-- [[部署推理/LLM_Cost_Optimization]] — LLM 推理成本
-- [[部署推理/Quantization/Quantization_Techniques_2026]] — 量化
-- [[架构基建/AI_Cost_Optimization_2026]] — 架构层成本
+- [[07_模型训练/03_Optimization/Training_Optimization_2026]] — 训练优化
+- [[07_模型训练/03_Optimization/Mixed_Precision_Training]] — 混合精度
+- [[10_部署推理/LLM_Cost_Optimization]] — LLM 推理成本
+- [[10_部署推理/05_Quantization/Quantization_Techniques_2026]] — 量化
+- [[12_架构基建/AI_Cost_Optimization_2026]] — 架构层成本
 - [[概念/mlops]] — MLOps 概念
 
 ---

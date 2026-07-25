@@ -135,12 +135,12 @@ Reflection 可视为在 ReAct 循环之上增加了一层**元认知（Metacogni
 
 ## 6. 关联阅读
 
-- [[智能体/Agent_Frameworks/AutoGen_Deep_Dive]] — AutoGen 多 Agent 框架
-- [[智能体/Agent_Workflow/Workflow-in-nutshell]] — Agent 工作流总览
-- [[大模型/Prompt_Engineering/Prompt_Engineering]] — 提示工程基础
-- [[大模型/Prompt_Engineering/GenAI_L05_Advanced_Prompts]] — 高级提示技术
-- [[智能体/Hello_Agents_L06_Frameworks_AutoGen_LangGraph]] — 主流框架实践
-- [[大模型/Prompt_Engineering/Hello_Agents_L09_Context_Engineering|上下文工程]]
+- [[15_智能体/02_Agent_Frameworks/AutoGen_Deep_Dive]] — AutoGen 多 Agent 框架
+- [[15_智能体/03_Agent_Workflow/Workflow-in-nutshell]] — Agent 工作流总览
+- [[05_大模型/08_Prompt_Engineering/Prompt_Engineering]] — 提示工程基础
+- [[05_大模型/08_Prompt_Engineering/GenAI_L05_Advanced_Prompts]] — 高级提示技术
+- [[15_智能体/Hello_Agents_L06_Frameworks_AutoGen_LangGraph]] — 主流框架实践
+- [[05_大模型/08_Prompt_Engineering/Hello_Agents_L09_Context_Engineering|上下文工程]]
 
 ## 7. 代码示例：ReAct 实现
 

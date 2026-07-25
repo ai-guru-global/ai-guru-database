@@ -1,6 +1,6 @@
 ---
 title: 强化学习应用
-category: 强化学习/RL_Applications
+category: 06_强化学习/RL_Applications
 tags: [rl, applications, game, recommendation]
 summary: 强化学习在游戏 AI、推荐系统和自动驾驶等领域的应用。
 ---
@@ -40,7 +40,7 @@ summary: 强化学习在游戏 AI、推荐系统和自动驾驶等领域的应�
 - [[RL_Applications/RL_Applications_Guide|RL 应用全景指南]]
 - [[../RLHF_Alignment/RLHF_DPO_GRPO_Deep_Dive|RLHF/DPO/GRPO 深度解读]]
 - [[../Sim_to_Real/index|Sim2Real 迁移]]
-- [[../../行业应用/index|行业应用]]
+- [[../../18_行业应用/index|行业应用]]
 
 ## 学习路径建议
 

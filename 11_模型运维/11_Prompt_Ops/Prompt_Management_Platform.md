@@ -1186,9 +1186,9 @@ async def rollback_prompt(name: str, version: int):
 
 ### 相关文档
 
-- [AI Gateway 对比 2026](../../架构基建/AI_Gateway/AI_Gateway_Comparison_2026.md) - 网关层 prompt 管理
-- [API 设计 for AI](../../架构基建/AI_Gateway/API_Design_for_AI.md) - API 层面的 prompt 集成
-- [部署推理 2026](../../部署推理/Deployment_Fundamentals/Deployment_Inference_2026.md) - 生产部署最佳实践
+- [AI Gateway 对比 2026](../../12_架构基建/11_AI_Gateway/AI_Gateway_Comparison_2026.md) - 网关层 prompt 管理
+- [API 设计 for AI](../../12_架构基建/11_AI_Gateway/API_Design_for_AI.md) - API 层面的 prompt 集成
+- [部署推理 2026](../../10_部署推理/01_Deployment_Fundamentals/Deployment_Inference_2026.md) - 生产部署最佳实践
 - [Langfuse 官方文档](https://langfuse.com/docs)
 - [Promptfoo 官方文档](https://promptfoo.dev/docs)
 
@@ -1197,4 +1197,4 @@ async def rollback_prompt(name: str, version: int):
 - [[治理/Document_Templates|文档模板规范]]
 - [[治理/Import_Guide|导入指南]]
 - [[治理/index|项目治理]]
-- [[入门/Learning_Path/AI_Tools_Practical_Guide.md|AI_Tools_Practical_Guide]]
+- [[00_入门/03_Learning_Path/AI_Tools_Practical_Guide.md|AI_Tools_Practical_Guide]]

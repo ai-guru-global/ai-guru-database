@@ -261,10 +261,10 @@ FRAMEWORKS = {
 
 ## 6. 交叉引用
 
-- [[模型训练/Distributed_Training/|分布式训练]]
-- [[模型训练/Mixed_Precision_Training/|混合精度训练]]
-- [[模型训练/Training_Infrastructure/|训练基础设施]]
-- [[模型训练/Curriculum_Learning/|课程学习]]
-- [[模型训练/Data/|数据工程]]
-- [[模型训练/Optimization/|优化器]]
-- [[大模型/LLM_Training/|LLM 训练]]
+- [[07_模型训练/04_Distributed_Training/|分布式训练]]
+- [[07_模型训练/Mixed_Precision_Training/|混合精度训练]]
+- [[07_模型训练/Training_Infrastructure/|训练基础设施]]
+- [[07_模型训练/Curriculum_Learning/|课程学习]]
+- [[07_模型训练/02_Data/|数据工程]]
+- [[07_模型训练/03_Optimization/|优化器]]
+- [[05_大模型/LLM_Training/|LLM 训练]]

@@ -10,7 +10,7 @@ relationships:
   - target: "概念/embedding-models"
     type: related_to
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
 summary: "ModelScope 魔搭是阿里巴巴推出的开源模型社区平台，提供模型下载、数据集、推理工具链。是国内 AI Stack 部署场景下替代 Hugging Face 的主要方案。"
 provenance:
   extracted: 0.50
@@ -148,7 +148,7 @@ swift sft --model_type qwen3-235b-a22b \
 - [[概念/model-registry]] — 模型仓库（ModelScope 是公有模型仓库）
 - [[概念/embedding-models]] — 嵌入模型（ModelScope 托管嵌入模型）
 - [[概念/lora-peft]] — LoRA/PEFT（SWIFT 微调框架）
-- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack（模型下载）
+- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack（模型下载）
 
 ---
 

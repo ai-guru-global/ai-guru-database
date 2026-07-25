@@ -83,7 +83,7 @@ sources: []
 - `Learn_Claude_Code_L06/L13/L15/L17`（8 篇）——Claude Code 课程
 - `Hello_Agents_L06/L13`（5 篇）
 
-这些**课程文件**散落在章节各处，与原创 Deep Dive 混杂，影响检索与维护。建议归入 `学习/Courses/` 或章节内建 `Course_Notes/` 子目录。
+这些**课程文件**散落在章节各处，与原创 Deep Dive 混杂，影响检索与维护。建议归入 `90_学习/Courses/` 或章节内建 `Course_Notes/` 子目录。
 
 ---
 
@@ -100,8 +100,8 @@ sources: []
 ### 3.3 主题归属合理性 ⭐⭐⭐⭐
 
 抽查无明显"放错章节"的文件。少数边界案例：
-- `强化学习/RLHF_DPO_GRPO_Deep_Dive.md` —— 与 `模型训练` 的对齐训练有交叉，但放 RL 章（算法视角）合理
-- `大模型/Prompt_Engineering/Context_Engineering_Guide.md` —— 与 `概念/context-engineering` 有重叠，但章节版更详细，合理
+- `06_强化学习/RLHF_DPO_GRPO_Deep_Dive.md` —— 与 `模型训练` 的对齐训练有交叉，但放 RL 章（算法视角）合理
+- `05_大模型/08_Prompt_Engineering/Context_Engineering_Guide.md` —— 与 `概念/context-engineering` 有重叠，但章节版更详细，合理
 
 ---
 

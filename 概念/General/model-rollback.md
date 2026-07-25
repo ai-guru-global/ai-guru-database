@@ -46,8 +46,8 @@ sources: []
 - [[概念/model-registry|Model Registry]]
 - [[概念/kserve|KServe]]
 - [[概念/mlflow|MLflow]]
-- [[部署推理/Model_Hot_Reload_and_Rollback_Runbook|LLM 模型热加载与回滚 Runbook]]
-- [[模型运维/Troubleshooting/Model_Version_Rollback_Playbook|模型版本回滚 Playbook]]
+- [[10_部署推理/Model_Hot_Reload_and_Rollback_Runbook|LLM 模型热加载与回滚 Runbook]]
+- [[11_模型运维/12_Troubleshooting/Model_Version_Rollback_Playbook|模型版本回滚 Playbook]]
 
 ---
 

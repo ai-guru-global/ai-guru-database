@@ -15,15 +15,15 @@ tags: [auto-index]
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[模型运维/CI_CD/ML_CI_CD|ML CI CD]] | ML CI/CD best practices: data validation, model packaging and automated deployment | MLOps engineers / DevOps |
-| [[模型运维/CI_CD/CI_CD_Pipeline_AI_2026|CI CD Pipeline AI 2026]] | AI CI/CD pipeline landscape: toolchain selection and pipeline orchestration | platform engineers |
-| [[模型运维/CI_CD/Deployment_Strategies|Deployment Strategies]] | Deployment strategies: blue-green, canary and shadow deployment for ML systems | DevOps engineers / SRE |
+| [[11_模型运维/06_CI_CD/ML_CI_CD|ML CI CD]] | ML CI/CD best practices: data validation, model packaging and automated deployment | MLOps engineers / DevOps |
+| [[11_模型运维/06_CI_CD/CI_CD_Pipeline_AI_2026|CI CD Pipeline AI 2026]] | AI CI/CD pipeline landscape: toolchain selection and pipeline orchestration | platform engineers |
+| [[11_模型运维/06_CI_CD/Deployment_Strategies|Deployment Strategies]] | Deployment strategies: blue-green, canary and shadow deployment for ML systems | DevOps engineers / SRE |
 
 ## Related
 
-- [[模型运维/Model_Serving/index|Model Serving]]
-- [[模型运维/Evaluation_index|Evaluation]]
-- [[面试岗位/MLOps_Engineer/index|MLOps Engineer]]
+- [[11_模型运维/07_Model_Serving/index|Model Serving]]
+- [[11_模型运维/Evaluation_index|Evaluation]]
+- [[21_面试岗位/MLOps_Engineer/index|MLOps Engineer]]
 
 ## MLOps核心流程对比
 
@@ -158,12 +158,12 @@ tags: [auto-index]
 
 | 关联主题 | 关系 | 参考路径 |
 |----------|------|----------|
-| 模型训练 | 上游输入 | 模型训练/ |
-| 模型评估 | 质量门禁 | 模型评估/ |
-| 部署推理 | 服务化交付 | 部署推理/ |
-| 架构基建 | 底层支撑 | 架构基建/ |
-| 测试 | 质量保障 | 测试/ |
-| 运维 | 通用运维实践 | 运维/ |
+| 模型训练 | 上游输入 | 07_模型训练/ |
+| 模型评估 | 质量门禁 | 08_模型评估/ |
+| 部署推理 | 服务化交付 | 10_部署推理/ |
+| 架构基建 | 底层支撑 | 12_架构基建/ |
+| 测试 | 质量保障 | 09_测试/ |
+| 运维 | 通用运维实践 | 13_运维/ |
 
 ## 快速自检清单
 

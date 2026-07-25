@@ -762,11 +762,11 @@ mindmap
 
 ## Related
 
-- [[论文精读/Architecture/Attention_Is_All_You_Need_Deep_Dive]] — 注意力机制的原始论文，理解 FlashAttention 的前提
-- [[论文精读/Efficiency/LoRA_Deep_Dive]] — 另一种效率优化方法，从参数维度减少开销
-- [[论文精读/Architecture/Mixture_of_Experts_Deep_Dive]] — MoE 与 FlashAttention 常结合使用
-- [[论文精读/Scaling/GPT4_Deep_Dive]] — GPT-4 的长上下文能力依赖 FlashAttention 类技术
-- [[论文精读/DeepSeek_V3_Technical_Report]] — 现代大模型的注意力实现
+- [[20_论文精读/02_Architecture/Attention_Is_All_You_Need_Deep_Dive]] — 注意力机制的原始论文，理解 FlashAttention 的前提
+- [[20_论文精读/04_Efficiency/LoRA_Deep_Dive]] — 另一种效率优化方法，从参数维度减少开销
+- [[20_论文精读/02_Architecture/Mixture_of_Experts_Deep_Dive]] — MoE 与 FlashAttention 常结合使用
+- [[20_论文精读/03_Scaling/GPT4_Deep_Dive]] — GPT-4 的长上下文能力依赖 FlashAttention 类技术
+- [[20_论文精读/DeepSeek_V3_Technical_Report]] — 现代大模型的注意力实现
 - [[概念/GPU/sram-vs-hbm]] — GPU 内存层级详解
 - [[概念/Training/kernel-fusion]] — Kernel Fusion 技术原理
 - [[概念/Inference/kv-cache]] — KV Cache 与 FlashAttention 的关系

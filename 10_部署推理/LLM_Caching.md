@@ -274,9 +274,9 @@ PREFIX_CACHING = {
 
 ## 6. 交叉引用
 
-- [[部署推理/Serving_Architecture/|服务架构]]
-- [[部署推理/Inference_Engines/|推理引擎]]
+- [[10_部署推理/Serving_Architecture/|服务架构]]
+- [[10_部署推理/02_Inference_Engines/|推理引擎]]
 - [[概念/LLM/kv-cache|KV Cache 概念]]
 - [[概念/LLM/prefix-caching|前缀缓存]]
-- [[部署推理/Inference_Performance/|推理性能]]
-- [[部署推理/Caching/|缓存]]
+- [[10_部署推理/04_Inference_Performance/|推理性能]]
+- [[10_部署推理/06_Caching/|缓存]]

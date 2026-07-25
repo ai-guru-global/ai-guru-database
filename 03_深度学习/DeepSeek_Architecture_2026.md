@@ -528,13 +528,13 @@ vllm serve deepseek-ai/DeepSeek-V3 \
 
 ## 6. 相关阅读
 
-- [[大模型/LLM_Products/deepseek_overview|DeepSeek 深度解析]] — DeepSeek 全貌与 API 使用
-- [[大模型/Reasoning_Models/DeepSeek_R1_Technical_Analysis|DeepSeek-R1 技术深度解析]] — R1 训练流程与 GRPO 细节
-- [[大模型/LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral|MoE 案例研究：DeepSeek-MoE 与 Mixtral]] — MoE 路由与专家设计对比
-- [[深度学习/Neural_Network_Core/Attention_Mechanisms_Deep_Dive|注意力机制深度解析]] — 标准 MHA / GQA / MLA 的关系
-- [[大模型/LLM_Architectures/LLM_Architectures|大模型架构全景]] — LLM 架构演进路线
-- [[模型训练/Optimization/Mixed_Precision_Training|混合精度训练]] — FP16/BF16/FP8 原理
-- [[模型训练/Distributed_Training/Distributed_Training_2026|分布式训练 2026]] — 训练并行策略
-- [[部署推理/Inference_Engines/vLLM_Deep_Dive|vLLM 深度解析]] — DeepSeek 推理部署首选引擎
-- [[部署推理/Inference_Performance/Prefill_Decode_Disaggregation|Prefill-Decode 分离]] — 推理性能优化
-- [[架构基建/AI_SRE_Runbook|AI SRE Runbook]] — 生产上线与事故响应
+- [[05_大模型/13_LLM_Products/deepseek_overview|DeepSeek 深度解析]] — DeepSeek 全貌与 API 使用
+- [[05_大模型/09_Reasoning_Models/DeepSeek_R1_Technical_Analysis|DeepSeek-R1 技术深度解析]] — R1 训练流程与 GRPO 细节
+- [[05_大模型/05_LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral|MoE 案例研究：DeepSeek-MoE 与 Mixtral]] — MoE 路由与专家设计对比
+- [[03_深度学习/02_Neural_Network_Core/Attention_Mechanisms_Deep_Dive|注意力机制深度解析]] — 标准 MHA / GQA / MLA 的关系
+- [[05_大模型/05_LLM_Architectures/LLM_Architectures|大模型架构全景]] — LLM 架构演进路线
+- [[07_模型训练/03_Optimization/Mixed_Precision_Training|混合精度训练]] — FP16/BF16/FP8 原理
+- [[07_模型训练/04_Distributed_Training/Distributed_Training_2026|分布式训练 2026]] — 训练并行策略
+- [[10_部署推理/02_Inference_Engines/vLLM_Deep_Dive|vLLM 深度解析]] — DeepSeek 推理部署首选引擎
+- [[10_部署推理/04_Inference_Performance/Prefill_Decode_Disaggregation|Prefill-Decode 分离]] — 推理性能优化
+- [[12_架构基建/AI_SRE_Runbook|AI SRE Runbook]] — 生产上线与事故响应

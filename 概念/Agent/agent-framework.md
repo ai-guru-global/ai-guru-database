@@ -18,8 +18,8 @@ relationships:
   - target: "概念/multi-agent"
     type: enables
 sources:
-  - 智能体/Agent_Foundations/Agentic_AI_Complete_Guide.md
-  - 智能体/Agent_Foundations/Multi_Agent_Systems_Guide.md
+  - 15_智能体/01_Agent_Foundations/Agentic_AI_Complete_Guide.md
+  - 15_智能体/01_Agent_Foundations/Multi_Agent_Systems_Guide.md
 summary: "AI Agent 框架是一组让开发者构建 LLM 驱动的自主智能体的工具库，提供 Agent Loop（ReAct/Plan-and-Execute）、工具调用、记忆、多 Agent 协作等核心抽象。"
 lifecycle: reviewed
 tier: core
@@ -202,4 +202,4 @@ result = crew.kickoff(inputs={"topic": "AI Agent"})
 - [[概念/multi-agent]] — 多 Agent 系统
 - [[概念/langchain]] — LangChain
 - [[概念/autogen]] — AutoGen
-- [[智能体/Agentic_AI_Complete_Guide]] — Agent 完整指南- [[概念/multi-agent-orchestration]] — Multi Agent Orchestration
+- [[15_智能体/Agentic_AI_Complete_Guide]] — Agent 完整指南- [[概念/multi-agent-orchestration]] — Multi Agent Orchestration

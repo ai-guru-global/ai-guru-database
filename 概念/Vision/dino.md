@@ -13,7 +13,7 @@ relationships:
   - target: "[[概念/computer-vision]]"
     type: part_of
 sources:
-  - 计算机视觉/Self_Supervised_Learning.md
+  - 04_计算机视觉/Self_Supervised_Learning.md
 summary: DINOv2 是 Meta 提出的自监督视觉基础模型，融合自蒸馏（DINO）和掩码图像建模（iBOT），在 142M 图像上训练出通用密集视觉特征，无需标注即可作为各种视觉任务的即插即用特征提取器。
 provenance:
   extracted: 0.80
@@ -192,7 +192,7 @@ DINOv2 引入了两个额外的训练稳定技术：
 
 ## 来源
 
-- 计算机视觉/Self_Supervised_Learning.md
+- 04_计算机视觉/Self_Supervised_Learning.md
 - Caron et al., "Emerging Properties in Self-Supervised Vision Transformers" (DINO), ICCV 2021
 - Oquab et al., "DINOv2: Learning Robust Visual Features without Supervision", TMLR 2024
 

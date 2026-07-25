@@ -131,7 +131,7 @@ Stage 0: AI 觉醒 ────────────────────�
 | [里程碑自测](./guides/milestones.md) | 每个 Stage 的自测问题与检查点 |
 | [概念知识图谱](../治理/notes/AI_Concept_Knowledge_Graph.md) | 800+ 概念的完整依赖关系图 |
 | [新手导航（章节版）](.README_for_dummy.md) | 按章节组织的入门指南 |
-| [500+ AI Projects](学习/References/Projects/500-ai-projects.md) | 500+ AI/ML/DL/CV/NLP 实战项目合集索引 |
+| [500+ AI Projects](90_学习/References/Projects/500-ai-projects.md) | 500+ AI/ML/DL/CV/NLP 实战项目合集索引 |
 
 ---
 
@@ -139,24 +139,24 @@ Stage 0: AI 觉醒 ────────────────────�
 
 ## Related
 
-- [[学习/guides/learning_paths_2026|AI Guru 学习路径指南]] — 五大 AI 职业角色学习路径全景指南
-- [[学习/guides/ai_engineering_roadmap_2026|AI 工程学习路线图 2026(免费资源精选)]]
-- [[学习/README_for_dummy|90 Learn — 小白版]]
-- [[学习/guides/milestones|里程碑自测]]
-- [[学习/概念/stage0_awakening]] — Stage 0: AI 觉醒
-- [[学习/概念/stage1_foundation]] — Stage 1: 基础概念
-- [[学习/概念/stage2_core_tech]] — Stage 2: 核心技术
-- [[学习/概念/stage3_engineering]] — Stage 3: 工程实践
-- [[学习/概念/stage4_frontier]] — Stage 4: 前沿探索
-- [[学习/pathways/absolute-beginner]] — 零基础通识路径
-- [[学习/pathways/ml-practitioner]] — ML 从业者路径
-- [[学习/pathways/llm-engineer]] — LLM 工程师路径
-- [[学习/pathways/ai-researcher]] — AI 研究者路径
-- [[学习/pathways/product-manager]] — AI 产品经理路径
-- [[学习/pathways/java-developer]] — Java 开发者 AI 路径
-- [[学习/pathways/data-scientist|数据科学家学习路径]] — 数据科学家成长路径
-- [[学习/guides/skills_self_assessment|AI 技能自评清单]] — 定位水平与学习缺口
-- [[学习/guides/ai_project_guide|AI 实战项目指南]] — 端到端实战项目指引
+- [[90_学习/guides/learning_paths_2026|AI Guru 学习路径指南]] — 五大 AI 职业角色学习路径全景指南
+- [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程学习路线图 2026(免费资源精选)]]
+- [[90_学习/README_for_dummy|90 Learn — 小白版]]
+- [[90_学习/guides/milestones|里程碑自测]]
+- [[90_学习/概念/stage0_awakening]] — Stage 0: AI 觉醒
+- [[90_学习/概念/stage1_foundation]] — Stage 1: 基础概念
+- [[90_学习/概念/stage2_core_tech]] — Stage 2: 核心技术
+- [[90_学习/概念/stage3_engineering]] — Stage 3: 工程实践
+- [[90_学习/概念/stage4_frontier]] — Stage 4: 前沿探索
+- [[90_学习/pathways/absolute-beginner]] — 零基础通识路径
+- [[90_学习/pathways/ml-practitioner]] — ML 从业者路径
+- [[90_学习/pathways/llm-engineer]] — LLM 工程师路径
+- [[90_学习/pathways/ai-researcher]] — AI 研究者路径
+- [[90_学习/pathways/product-manager]] — AI 产品经理路径
+- [[90_学习/pathways/java-developer]] — Java 开发者 AI 路径
+- [[90_学习/pathways/data-scientist|数据科学家学习路径]] — 数据科学家成长路径
+- [[90_学习/guides/skills_self_assessment|AI 技能自评清单]] — 定位水平与学习缺口
+- [[90_学习/guides/ai_project_guide|AI 实战项目指南]] — 端到端实战项目指引
 
 ## 核心知识框架
 

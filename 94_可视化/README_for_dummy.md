@@ -116,8 +116,8 @@ AI 说："这笔交易有风险"
 ## 下一步
 
 - 想深入技术？→ 查看各子目录的具体文档
-- 想学深度学习？→ [深度学习/README_for_dummy.md](./深度学习/README_for_dummy.md)
-- 想学模型评估？→ [模型评估/README_for_dummy.md](../模型评估/README_for_dummy.md)
+- 想学深度学习？→ [03_深度学习/README_for_dummy.md](./03_深度学习/README_for_dummy.md)
+- 想学模型评估？→ [08_模型评估/README_for_dummy.md](../08_模型评估/README_for_dummy.md)
 
 ---
 
@@ -125,10 +125,10 @@ AI 说："这笔交易有风险"
 
 ## Related
 
-- [[../模型评估/Benchmarks/LLM_Benchmark_Suite_2026|LLM 评估基准]] — 评估可视化数据来源
-- [[../模型运维/Observability/AI_Observability_Guide_2026|AI 可观测性]] — 运维仪表盘可视化
-- [[../模型训练/Monitoring/Training_Monitoring_2026|训练监控]] — 训练过程可视化
-- [[../计算机视觉/Multimodal_Vision/Multimodal_Vision_for_dummy|多模态视觉]] — CV 可视化场景
-- [[可视化/README.md|94_Visualization README]]
+- [[../08_模型评估/02_Benchmarks/LLM_Benchmark_Suite_2026|LLM 评估基准]] — 评估可视化数据来源
+- [[../11_模型运维/08_Observability/AI_Observability_Guide_2026|AI 可观测性]] — 运维仪表盘可视化
+- [[../07_模型训练/07_Monitoring/Training_Monitoring_2026|训练监控]] — 训练过程可视化
+- [[../04_计算机视觉/08_Multimodal_Vision/Multimodal_Vision_for_dummy|多模态视觉]] — CV 可视化场景
+- [[94_可视化/README.md|94_Visualization README]]
 - [[前端应用/atlas/README.md|atlas README]]
 - [[前端应用/atlas/docs/performance.md|performance]]

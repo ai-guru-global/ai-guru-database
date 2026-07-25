@@ -583,18 +583,18 @@ flowchart TB
 
 ## 🔗 相关主题
 
-- [推理](部署推理/Deployment_Fundamentals/Inference-in-nutshell.md) - 运行大模型部分
-- [智能体](智能体/Agent_Foundations/Agent-in-nutshell.md) - RAG + 动作
-- [工作流](智能体/Agent_Workflow/Workflow-in-nutshell.md) - 生产环境中的 RAG
+- [推理](10_部署推理/01_Deployment_Fundamentals/Inference-in-nutshell.md) - 运行大模型部分
+- [智能体](15_智能体/01_Agent_Foundations/Agent-in-nutshell.md) - RAG + 动作
+- [工作流](15_智能体/03_Agent_Workflow/Workflow-in-nutshell.md) - 生产环境中的 RAG
 
 ## Related
 
-- [[RAG系统/RAG_Systems]] — RAG 系统 (RAG Systems) (共享: embedding, rag, retrieval, vector-database)
-- [[RAG系统/README_Advanced]] — RAG高级实践 2026 (共享: embedding, rag, retrieval, vector-database)
-- [[RAG系统/RAG_Frameworks/Spring_AI_RAG_Deep_Dive]] — Spring AI RAG 深度解析 (共享: embedding, rag, retrieval, vector-database)
+- [[14_RAG系统/RAG_Systems]] — RAG 系统 (RAG Systems) (共享: embedding, rag, retrieval, vector-database)
+- [[14_RAG系统/README_Advanced]] — RAG高级实践 2026 (共享: embedding, rag, retrieval, vector-database)
+- [[14_RAG系统/06_RAG_Frameworks/Spring_AI_RAG_Deep_Dive]] — Spring AI RAG 深度解析 (共享: embedding, rag, retrieval, vector-database)
 - [[治理/rag-vector-database]] — RAG 系统 × 向量数据库 (共享: embedding, rag, retrieval, vector-database)
-- [[RAG系统/RAG_Frameworks/Haystack_Deep_Dive.md|Haystack_Deep_Dive]]
-- [[RAG系统/Vector_Databases/Milvus_Deep_Dive.md|Milvus_Deep_Dive]]
-- [[RAG系统/Vector_Databases/Typesense_Deep_Dive.md|Typesense_Deep_Dive]]
-- [[RAG系统/RAG_Frameworks/LlamaIndex_Deep_Dive.md|LlamaIndex_Deep_Dive]]
-- [[RAG系统/Embeddings/Sentence_Transformers_Deep_Dive.md|Sentence_Transformers_Deep_Dive]]
+- [[14_RAG系统/06_RAG_Frameworks/Haystack_Deep_Dive.md|Haystack_Deep_Dive]]
+- [[14_RAG系统/03_Vector_Databases/Milvus_Deep_Dive.md|Milvus_Deep_Dive]]
+- [[14_RAG系统/03_Vector_Databases/Typesense_Deep_Dive.md|Typesense_Deep_Dive]]
+- [[14_RAG系统/06_RAG_Frameworks/LlamaIndex_Deep_Dive.md|LlamaIndex_Deep_Dive]]
+- [[14_RAG系统/02_Embeddings/Sentence_Transformers_Deep_Dive.md|Sentence_Transformers_Deep_Dive]]

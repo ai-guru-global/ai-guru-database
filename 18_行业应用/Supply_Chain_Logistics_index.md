@@ -15,13 +15,13 @@ tags: [auto-index]
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[行业应用/AI_Supply_Chain_2026|AI Supply Chain 2026]] | Supply chain logistics AI landscape: smart scheduling, inventory optimization and end-to-end visibility | supply chain engineers / logistics AI practitioners |
+| [[18_行业应用/AI_Supply_Chain_2026|AI Supply Chain 2026]] | Supply chain logistics AI landscape: smart scheduling, inventory optimization and end-to-end visibility | supply chain engineers / logistics AI practitioners |
 
 ## Related
 
-- [[行业应用/Retail_Ecommerce_index|Retail & E-commerce]]
-- [[行业应用/Manufacturing_index|Manufacturing]]
-- [[机器学习/Time_Series/index|Time Series]]
+- [[18_行业应用/Retail_Ecommerce_index|Retail & E-commerce]]
+- [[18_行业应用/Manufacturing_index|Manufacturing]]
+- [[02_机器学习/09_Time_Series/index|Time Series]]
 
 ## 进阶知识拓展
 
@@ -59,9 +59,9 @@ tags: [auto-index]
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

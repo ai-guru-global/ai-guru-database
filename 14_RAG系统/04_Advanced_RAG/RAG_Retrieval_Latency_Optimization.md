@@ -199,6 +199,6 @@ resources:
 - [[概念/cross-encoder|Cross-Encoder]]
 - [[概念/embedding-models|Embedding Models]]
 - [[概念/vector-database|Vector Database]]
-- [[RAG系统/RAG_Systems|RAG 系统]]
+- [[14_RAG系统/RAG_Systems|RAG 系统]]
 
-- [[RAG系统/README|RAG 系统 (RAG Systems)]]
+- [[14_RAG系统/README|RAG 系统 (RAG Systems)]]

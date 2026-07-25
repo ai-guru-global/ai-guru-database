@@ -185,11 +185,11 @@ RAG系统 → 智能体 → 行业应用
 
 ### 5.2 独特知识资产
 
-1. **Agent 评估体系** (智能体/Agent_Evaluation): 63 篇文件，完整评估框架
+1. **Agent 评估体系** (15_智能体/Agent_Evaluation): 63 篇文件，完整评估框架
 2. **CNCF 云原生 AI** (架构基建): 18 个项目五层架构系统梳理
 3. **推理引擎百科** (部署推理): 20+ 引擎深度解析，含国产化（昇腾/寒武纪/海光）
 4. **LLM_Inference_Research** (论文精读): 学校类比体系串联 19 个推理概念
-5. **Cloud_Ops_Agent** (模型运维): 独立深度子项目（架构/开发/测试/语料）
+5. **Cloud_Ops_Agent** (模型运维): 独立深度子项目（架构/开发/09_测试/语料）
 6. **563 张概念卡片** (概念): 原子化知识单元，覆盖 AI 全领域
 
 ### 5.3 三级内容体系
@@ -224,7 +224,7 @@ for_dummy (小白) → in-nutshell (速成) → Deep Dive (深度) → 2026 专�
 |---|-------|----------|----------------|
 | 1 | 概念/K8s 过度膨胀 (68 文件，多为非 AI 工具简介) | 概念/ | 精简至 25-30 个 AI 相关概念 |
 | 2 | 100+ auto-generated index.md stubs | 全库 | 批量清理或充实为真正导航页 |
-| 3 | 学习/References/books 12 本书全 stub | 学习/ | 补充章节摘要 + 知识映射 |
+| 3 | 90_学习/References/books 12 本书全 stub | 90_学习/ | 补充章节摘要 + 知识映射 |
 | 4 | 工具目录缺使用文档 | 工具/ | 添加 README + 用法示例 |
 | 5 | 前端应用 node_modules 占 1.4GB | 前端应用/ | 确认 .gitignore 生效，考虑 git filter-branch 清理历史 |
 
@@ -257,7 +257,7 @@ for_dummy (小白) → in-nutshell (速成) → Deep Dive (深度) → 2026 专�
 | 2026-07-11 (v1 initial) | 4.2 | 首次评估：10 空目录、14 壳文件、结构冗余 |
 | 2026-07-11 (v1 post-fix) | 4.5 | P0/P1 全修复：+25,000 行、5 合并、33 新文件 |
 | 2026-07-19 (v2 pre) | 4.6 | 目录中文化重构、结构精简、wikilink 全量重写 |
-| 2026-07-19 (v2 Round 1) | 4.7 | +31 篇：RL/DL/可视化/评估/智能体/RAG/行业 |
+| 2026-07-19 (v2 Round 1) | 4.7 | +31 篇：RL/DL/94_可视化/评估/15_智能体/RAG/行业 |
 | 2026-07-19 (v2 final) | 4.8 | 三轮合计 +73 篇：16 目录全面加强，Tier 3 近乎清零 |
 | **2026-07-24 (v3 满分冲刺)** | **5.0** | 6 并行 agent：业界观点+34 文件、面试+35、学习+7、RL/DL/可视化深度页、**153 孤立文件全部补链至 0**、Tier 3 清零 |
 
@@ -312,7 +312,7 @@ for_dummy (小白) → in-nutshell (速成) → Deep Dive (深度) → 2026 专�
 | # | Action | Effort | Impact |
 |---|--------|--------|--------|
 | 9 | 仓库瘦身 (git filter-branch 清理 node_modules 历史) | 8h | 性能 |
-| 10 | 强化学习/深度学习内容补全 | 16h | 覆盖 |
+| 10 | 06_强化学习/深度学习内容补全 | 16h | 覆盖 |
 | 11 | 概念卡片 tier 标记 | 8h | 质量分层 |
 | 12 | 探索国际化 (核心章节英文化) | 40h+ | 影响力 |
 
@@ -366,11 +366,11 @@ for_dummy (小白) → in-nutshell (速成) → Deep Dive (深度) → 2026 专�
 
 | 文件 | 行数 | 主题 |
 |------|------|------|
-| `智能体/Agent_Foundations/Voice_Agents_Deep_Dive_2026.md` | 859 | 语音智能体 |
-| `智能体/Agent_Foundations/Computer_Use_Agents_2026.md` | 796 | 计算机使用智能体 |
-| `RAG系统/Advanced_RAG/Code_RAG_Architecture.md` | 790 | 代码 RAG 架构 |
-| `RAG系统/Advanced_RAG/Long_Context_vs_RAG_2026.md` | 782 | 长上下文 vs RAG |
-| `RAG系统/RAG_Production/RAG_Cost_Optimization.md` | 920 | RAG 成本优化 |
+| `15_智能体/01_Agent_Foundations/Voice_Agents_Deep_Dive_2026.md` | 859 | 语音智能体 |
+| `15_智能体/01_Agent_Foundations/Computer_Use_Agents_2026.md` | 796 | 计算机使用智能体 |
+| `14_RAG系统/04_Advanced_RAG/Code_RAG_Architecture.md` | 790 | 代码 RAG 架构 |
+| `14_RAG系统/04_Advanced_RAG/Long_Context_vs_RAG_2026.md` | 782 | 长上下文 vs RAG |
+| `14_RAG系统/05_RAG_Production/RAG_Cost_Optimization.md` | 920 | RAG 成本优化 |
 
 ### 行业应用 (+6 篇, 3,795 行)
 
@@ -463,19 +463,19 @@ for_dummy (小白) → in-nutshell (速成) → Deep Dive (深度) → 2026 专�
 
 | 文件 | 行数 | 主题 |
 |------|------|------|
-| `运维/SRE_Reliability/GPU_Cluster_Operations_2026.md` | 880 | GPU 集群运维 |
-| `运维/SRE_Reliability/Model_Serving_SLA_Management.md` | 819 | 模型服务 SLA |
-| `编程/Coding_Fundamentals/Python_for_AI_2026.md` | 894 | Python for AI 2026 |
-| `编程/Coding_Fundamentals/Rust_for_AI_Infrastructure.md` | 804 | Rust for AI |
-| `编程/Practice/MLOps_Coding_Patterns.md` | 896 | MLOps 编码模式 |
+| `13_运维/02_SRE_Reliability/GPU_Cluster_Operations_2026.md` | 880 | GPU 集群运维 |
+| `13_运维/02_SRE_Reliability/Model_Serving_SLA_Management.md` | 819 | 模型服务 SLA |
+| `16_编程/01_Coding_Fundamentals/Python_for_AI_2026.md` | 894 | Python for AI 2026 |
+| `16_编程/01_Coding_Fundamentals/Rust_for_AI_Infrastructure.md` | 804 | Rust for AI |
+| `16_编程/04_Practice/MLOps_Coding_Patterns.md` | 896 | MLOps 编码模式 |
 
 ### 三轮合计
 
 | 轮次 | 新增/扩充 | 行数 | 覆盖目录 |
 |------|----------|------|----------|
-| Round 1 | 31 篇 | ~25,000 | 强化学习/深度学习/可视化/模型评估/智能体/RAG/行业应用 |
-| Round 2 | 27 篇 | ~19,000 | 计算机视觉/模型训练/论文精读/业界观点/学习/数学基础 |
-| Round 3 | 15 篇 | ~11,700 | 面试岗位/伦理安全/机器学习/运维/编程 |
+| Round 1 | 31 篇 | ~25,000 | 06_强化学习/03_深度学习/94_可视化/08_模型评估/15_智能体/RAG/行业应用 |
+| Round 2 | 27 篇 | ~19,000 | 04_计算机视觉/07_模型训练/20_论文精读/19_业界观点/90_学习/数学基础 |
+| Round 3 | 15 篇 | ~11,700 | 21_面试岗位/17_伦理安全/02_机器学习/13_运维/编程 |
 | **合计** | **73 篇** | **~55,700** | **16 个目录** |
 
 ---

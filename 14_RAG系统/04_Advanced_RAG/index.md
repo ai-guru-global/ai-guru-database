@@ -8,18 +8,18 @@ sources: []
 
 # Advanced RAG
 
-This page indexes the contents of `RAG系统/Advanced_RAG`.
+This page indexes the contents of `14_RAG系统/Advanced_RAG`.
 
 ## Files
 
-- [[RAG系统/Advanced_RAG/Advanced_RAG_DLAI_Practices|Advanced RAG DLAI Practices]]
-- [[RAG系统/Advanced_RAG/Agentic_RAG_Guide|Agentic RAG Guide]]
-- [[RAG系统/Advanced_RAG/Data_Ingestion_Pipeline|Data Ingestion Pipeline]]
-- [[RAG系统/Advanced_RAG/Graph_RAG_Architecture|Graph RAG Architecture]]
-- [[RAG系统/Advanced_RAG/Multimodal_RAG_Architecture_2026|Multimodal RAG Architecture 2026]]
-- [[RAG系统/Advanced_RAG/RAG_Advanced_2026|RAG Advanced 2026]]
-- [[RAG系统/Advanced_RAG/RAG_Debugging_Cheat_Sheet|RAG Debugging Cheat Sheet]]
-- [[RAG系统/Advanced_RAG/RAG_Retrieval_Latency_Optimization|RAG Retrieval Latency Optimization]]
+- [[14_RAG系统/04_Advanced_RAG/Advanced_RAG_DLAI_Practices|Advanced RAG DLAI Practices]]
+- [[14_RAG系统/04_Advanced_RAG/Agentic_RAG_Guide|Agentic RAG Guide]]
+- [[14_RAG系统/04_Advanced_RAG/Data_Ingestion_Pipeline|Data Ingestion Pipeline]]
+- [[14_RAG系统/04_Advanced_RAG/Graph_RAG_Architecture|Graph RAG Architecture]]
+- [[14_RAG系统/04_Advanced_RAG/Multimodal_RAG_Architecture_2026|Multimodal RAG Architecture 2026]]
+- [[14_RAG系统/04_Advanced_RAG/RAG_Advanced_2026|RAG Advanced 2026]]
+- [[14_RAG系统/04_Advanced_RAG/RAG_Debugging_Cheat_Sheet|RAG Debugging Cheat Sheet]]
+- [[14_RAG系统/04_Advanced_RAG/RAG_Retrieval_Latency_Optimization|RAG Retrieval Latency Optimization]]
 
 ## 进阶知识拓展
 
@@ -57,9 +57,9 @@ This page indexes the contents of `RAG系统/Advanced_RAG`.
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

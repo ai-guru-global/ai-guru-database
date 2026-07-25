@@ -437,9 +437,9 @@ TRAINING_METRICS = {
 
 ## 7. 交叉引用
 
-- [[强化学习/RL_Applications/RL_for_LLM_Reasoning|RL 驱动 LLM 推理]]
-- [[强化学习/RLHF_Alignment/GRPO_Training_Deep_Dive|GRPO 训练]]
-- [[强化学习/RLHF_Alignment/DPO_Variants_2026|DPO 变体]]
-- [[大模型/Reasoning_Models/|推理模型]]
-- [[大模型/Test_Time_Compute/|推理时计算]]
-- [[大模型/Fine_tuning_Techniques/|微调技术]]
+- [[06_强化学习/04_RL_Applications/RL_for_LLM_Reasoning|RL 驱动 LLM 推理]]
+- [[06_强化学习/03_RLHF_Alignment/GRPO_Training_Deep_Dive|GRPO 训练]]
+- [[06_强化学习/03_RLHF_Alignment/DPO_Variants_2026|DPO 变体]]
+- [[05_大模型/09_Reasoning_Models/|推理模型]]
+- [[05_大模型/Test_Time_Compute/|推理时计算]]
+- [[05_大模型/07_Fine_tuning_Techniques/|微调技术]]

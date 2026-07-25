@@ -43,11 +43,11 @@ sources: []
 
 ## Related
 
-- [[面试岗位/Machine_Learning_Engineer/company_level_question_bank|Machine Learning Engineer 按公司/级别区分的题库]]
-- [[面试岗位/Machine_Learning_Engineer/interview_answers|Machine Learning Engineer 面试题实例答案]]
-- [[面试岗位/Machine_Learning_Engineer/question_bank|Machine Learning Engineer 题库]]
-- [[面试岗位/README|AI 面试准备 (Interviews)]]
-- [[面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/Machine_Learning_Engineer/company_level_question_bank|Machine Learning Engineer 按公司/级别区分的题库]]
+- [[21_面试岗位/Machine_Learning_Engineer/interview_answers|Machine Learning Engineer 面试题实例答案]]
+- [[21_面试岗位/Machine_Learning_Engineer/question_bank|Machine Learning Engineer 题库]]
+- [[21_面试岗位/README|AI 面试准备 (Interviews)]]
+- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]
 
 ## 面试准备核心策略
 

@@ -298,13 +298,13 @@ G: 生成器, 生成以假乱真的样本
 
 | 本书章节 | 知识库主题 | 关联说明 |
 |----------|------------|----------|
-| Part 1 数学基础 | [[数学基础/Math_Foundations]] | 线代、概率、优化 |
-| Ch 5-6 反向传播/前馈网络 | [[深度学习/]] | 神经网络原理 |
-| Ch 7 正则化 | [[模型训练/]] | 过拟合对策 |
-| Ch 8 优化算法 | [[模型训练/]] | Adam、SGD |
-| Ch 9 CNN | [[计算机视觉/]] | 卷积网络 |
-| Ch 10 RNN | [[大模型/LLM_Fundamentals]] | 序列建模 |
-| Ch 16 生成模型 | [[大模型/]] | VAE、GAN |
+| Part 1 数学基础 | [[01_数学基础/Math_Foundations]] | 线代、概率、优化 |
+| Ch 5-6 反向传播/前馈网络 | [[03_深度学习/]] | 神经网络原理 |
+| Ch 7 正则化 | [[07_模型训练/]] | 过拟合对策 |
+| Ch 8 优化算法 | [[07_模型训练/]] | Adam、SGD |
+| Ch 9 CNN | [[04_计算机视觉/]] | 卷积网络 |
+| Ch 10 RNN | [[05_大模型/LLM_Fundamentals]] | 序列建模 |
+| Ch 16 生成模型 | [[05_大模型/]] | VAE、GAN |
 
 ### 与相关书籍的关系
 
@@ -416,11 +416,11 @@ Ch 1 线代 → Ch 2 概率 → Ch 3 数值计算 → Ch 4 ML 基础
 
 ## 延伸阅读
 
-- [[学习/References/books/why-machines-learn|Why Machines Learn]] — 配套直觉读物
-- [[学习/References/books/dl-with-python-chollet|Deep Learning with Python]] — 代码实践
-- [[学习/References/books/hands-on-ml-geron|Hands-On ML]] — 工程实战
-- [[数学基础/Math_Foundations]] — 知识库数学基础
-- [[深度学习/]] — 深度学习知识库章节
-- [[学习/guides/ai_engineering_roadmap_2026|AI 工程路线图 2026]]
+- [[90_学习/References/books/why-machines-learn|Why Machines Learn]] — 配套直觉读物
+- [[90_学习/References/books/dl-with-python-chollet|Deep Learning with Python]] — 代码实践
+- [[90_学习/References/books/hands-on-ml-geron|Hands-On ML]] — 工程实战
+- [[01_数学基础/Math_Foundations]] — 知识库数学基础
+- [[03_深度学习/]] — 深度学习知识库章节
+- [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图 2026]]
 
-> **关联**: → [[学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]] | [[深度学习/]] | [[数学基础/]] | [[模型训练/]]
+> **关联**: → [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]] | [[03_深度学习/]] | [[01_数学基础/]] | [[07_模型训练/]]

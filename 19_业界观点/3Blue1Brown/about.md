@@ -57,7 +57,7 @@ sources: []
 
 ### 直觉优先于公式
 
-Sanderson 的核心理念是"数学教育的最大问题是过早引入公式而牺牲直觉"。他认为传统的数学教学顺序——定义→定理→证明→例题——与人类理解事物的自然顺序（直觉→图形→抽象→形式化）恰好相反。3Blue1Brown 的每一集都遵循"先看到，再理解，最后形式化"的结构。参见 [[业界观点/Josh_Starmer/about]] 的类似理念。
+Sanderson 的核心理念是"数学教育的最大问题是过早引入公式而牺牲直觉"。他认为传统的数学教学顺序——定义→定理→证明→例题——与人类理解事物的自然顺序（直觉→图形→抽象→形式化）恰好相反。3Blue1Brown 的每一集都遵循"先看到，再理解，最后形式化"的结构。参见 [[19_业界观点/Josh_Starmer/about]] 的类似理念。
 
 ### Manim 哲学
 
@@ -68,7 +68,7 @@ Sanderson 认为制作数学动画的过程本身就是深化理解的途径—�
 
 ### AI 与数学的关系
 
-Sanderson 在多个视频中强调"理解神经网络的关键不是记住反向传播公式，而是看到梯度如何在损失地形 (loss landscape) 上流动"。他认为 AI 教育中"黑箱使用"和"底层理解"之间存在巨大鸿沟，而他的工作正是填补这一鸿沟。这与 [[业界观点/Andrej_Karpathy/about]] 的"工程师必须理解底层"理念高度共鸣。
+Sanderson 在多个视频中强调"理解神经网络的关键不是记住反向传播公式，而是看到梯度如何在损失地形 (loss landscape) 上流动"。他认为 AI 教育中"黑箱使用"和"底层理解"之间存在巨大鸿沟，而他的工作正是填补这一鸿沟。这与 [[19_业界观点/Andrej_Karpathy/about]] 的"工程师必须理解底层"理念高度共鸣。
 
 ### 对 AI 未来的态度
 
@@ -78,7 +78,7 @@ Sanderson 相对克制，不热衷于"AGI 即将到来"的炒作。他更关注"
 
 ## 对 AI 领域的影响力评估 (Impact Assessment)
 
-Sanderson 的影响力是独特而深远的——他不是 AI 研究者，却深刻地影响了无数 AI 从业者的学习路径。"Essence of Linear Algebra"和"Neural Networks"系列几乎是全球 AI 学习者的"公共前必修课"。无数进入深度学习领域的人表示"看 3Blue1Brown 的视频是真正理解神经网络的转折点"。Manim 引擎的开源则催生了整个数学可视化教育社区。在 AI 领域，他与 [[业界观点/Andrej_Karpathy/about]]（底层技术教育）和 [[业界观点/Josh_Starmer/about]]（统计学教育）并称为 AI 自学社区的"教育三巨头"。
+Sanderson 的影响力是独特而深远的——他不是 AI 研究者，却深刻地影响了无数 AI 从业者的学习路径。"Essence of Linear Algebra"和"Neural Networks"系列几乎是全球 AI 学习者的"公共前必修课"。无数进入深度学习领域的人表示"看 3Blue1Brown 的视频是真正理解神经网络的转折点"。Manim 引擎的开源则催生了整个数学可视化教育社区。在 AI 领域，他与 [[19_业界观点/Andrej_Karpathy/about]]（底层技术教育）和 [[19_业界观点/Josh_Starmer/about]]（统计学教育）并称为 AI 自学社区的"教育三巨头"。
 
 ---
 
@@ -123,22 +123,22 @@ Sanderson 的影响力是独特而深远的——他不是 AI 研究者，却深
 
 | 系列 | 对应知识库章节 | 学习价值 |
 |------|---------------|---------|
-| Linear Algebra | [[数学基础/Linear_Algebra]] | 理解向量/矩阵/特征分解 |
-| Neural Networks | [[深度学习/Neural_Network_Core]] | 直觉理解反向传播 |
-| Attention/Transformer | [[大模型/Transformer_Revolution]] | 可视化 Q/K/V 机制 |
-| Calculus | [[数学基础/Math_Foundations]] | 梯度下降的数学直觉 |
+| Linear Algebra | [[01_数学基础/Linear_Algebra]] | 理解向量/矩阵/特征分解 |
+| Neural Networks | [[03_深度学习/Neural_Network_Core]] | 直觉理解反向传播 |
+| Attention/Transformer | [[05_大模型/Transformer_Revolution]] | 可视化 Q/K/V 机制 |
+| Calculus | [[01_数学基础/Math_Foundations]] | 梯度下降的数学直觉 |
 
 ---
 
 ## 交叉引用 (Cross-References)
 
-- [[业界观点/3Blue1Brown/youtube_channel]] — 3Blue1Brown 必看系列
-- [[数学基础/Linear_Algebra]] — 线性代数知识库
-- [[深度学习/Neural_Network_Core]] — 神经网络核心
-- [[学习/guides/ai_engineering_roadmap_2026]] — AI 工程学习路线
-- [[业界观点/Andrej_Karpathy/about]] — 底层 AI 技术教育的同行者
-- [[业界观点/Josh_Starmer/about]] — 统计学可视化的教育同侪
-- [[业界观点/Andrew_Ng/about]] — 同为 AI 教育领域的标杆人物
+- [[19_业界观点/3Blue1Brown/youtube_channel]] — 3Blue1Brown 必看系列
+- [[01_数学基础/Linear_Algebra]] — 线性代数知识库
+- [[03_深度学习/Neural_Network_Core]] — 神经网络核心
+- [[90_学习/guides/ai_engineering_roadmap_2026]] — AI 工程学习路线
+- [[19_业界观点/Andrej_Karpathy/about]] — 底层 AI 技术教育的同行者
+- [[19_业界观点/Josh_Starmer/about]] — 统计学可视化的教育同侪
+- [[19_业界观点/Andrew_Ng/about]] — 同为 AI 教育领域的标杆人物
 
 ---
 
@@ -155,7 +155,7 @@ Sanderson 的影响力是独特而深远的——他不是 AI 研究者，却深
 
 ## Related
 
-- [[业界观点/README|AI 名人演讲与观点]]
+- [[19_业界观点/README|AI 名人演讲与观点]]
 
 ## 附录：人物影响力评估
 

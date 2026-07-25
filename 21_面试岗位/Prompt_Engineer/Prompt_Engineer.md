@@ -90,11 +90,11 @@ INTERVIEW_TOPICS = {
 
 ## 5. 交叉引用
 
-- [[面试岗位/|面试岗位]]
-- [[大模型/Prompt_Engineering/|Prompt Engineering]]
-- [[入门/AI_Career_Guide|AI 职业指南]]
-- [[面试岗位/Interview_Preparation/|面试准备]]
-- [[测试/|测试 (Prompt 评估)]]
+- [[21_面试岗位/|面试岗位]]
+- [[05_大模型/08_Prompt_Engineering/|Prompt Engineering]]
+- [[00_入门/AI_Career_Guide|AI 职业指南]]
+- [[21_面试岗位/Interview_Preparation/|面试准备]]
+- [[09_测试/|测试 (Prompt 评估)]]
 
 ## 面试核心知识框架
 

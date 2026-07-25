@@ -58,24 +58,24 @@ python -m http.server 8080
 ## 与其他章节的关联
 
 - [治理/notes](../治理/notes/AI_Concept_Knowledge_Graph.md) — 概念知识图谱的数据来源
-- [90_Learn](../学习/README.md) — 学习路径的可视化呈现
+- [90_Learn](../90_学习/README.md) — 学习路径的可视化呈现
 
 ---
 
 *本章节为可视化工具，不直接包含学习内容。建议在学完基础概念后，使用可视化工具探索知识关联。*
 
 ## Related
-- [[可视化/Training_Monitoring_Visualization|训练监控可视化 (Training Monitoring Visualization)]]
-- [[可视化/Visualization_for_dummy|AI 可视化 - 小白版]]
-- [[可视化/AI_System_Dashboard|AI 系统监控仪表盘]]
-- [[可视化/README_for_dummy|94 Visualization — 小白版 📊]]
-- [[可视化/Model_Interpretability_Visualization|模型可解释性可视化]]
+- [[94_可视化/Training_Monitoring_Visualization|训练监控可视化 (Training Monitoring Visualization)]]
+- [[94_可视化/Visualization_for_dummy|AI 可视化 - 小白版]]
+- [[94_可视化/AI_System_Dashboard|AI 系统监控仪表盘]]
+- [[94_可视化/README_for_dummy|94 Visualization — 小白版 📊]]
+- [[94_可视化/Model_Interpretability_Visualization|模型可解释性可视化]]
 
 - [[前端应用/atlas/README]] — AI Guru Knowledge Atlas（D3） (共享: charts, dashboards, data-viz, visualization)
 - [[前端应用/atlas/docs/performance]] — 性能审计报告（Lighthouse） (共享: charts, dashboards, data-viz, visualization)
-- [[可视化/Training_Viz/Training_Monitoring_Visualization.md|Training_Monitoring_Visualization]]
-- [[可视化/Best_Practices/Visualization_for_dummy.md|Visualization_for_dummy]]
-- [[可视化/System_Viz/AI_System_Dashboard.md|AI_System_Dashboard]]
-- [[可视化/README_for_dummy.md|README_for_dummy]]
-- [[可视化/Evaluation_Viz/Model_Interpretability_Visualization.md|Model_Interpretability_Visualization]]
+- [[94_可视化/Training_Viz/Training_Monitoring_Visualization.md|Training_Monitoring_Visualization]]
+- [[94_可视化/Best_Practices/Visualization_for_dummy.md|Visualization_for_dummy]]
+- [[94_可视化/System_Viz/AI_System_Dashboard.md|AI_System_Dashboard]]
+- [[94_可视化/README_for_dummy.md|README_for_dummy]]
+- [[94_可视化/Evaluation_Viz/Model_Interpretability_Visualization.md|Model_Interpretability_Visualization]]
 

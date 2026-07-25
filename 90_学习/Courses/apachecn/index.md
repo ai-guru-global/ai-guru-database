@@ -15,12 +15,12 @@ ApacheCN 中文 AI 学习资源 — 社区翻译的机器学习（ML）、深度
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[学习/Courses/apachecn/ailearning_guide|ailearning guide]] | ApacheCN AI learning guide and course index | Chinese-speaking AI learners |
+| [[90_学习/Courses/apachecn/ailearning_guide|ailearning guide]] | ApacheCN AI learning guide and course index | Chinese-speaking AI learners |
 
 ## Related
 
-- [[学习/Courses/index|课程总览]]
-- [[学习/index|学习首页]]
+- [[90_学习/Courses/index|课程总览]]
+- [[90_学习/index|学习首页]]
 
 ## 核心知识框架
 

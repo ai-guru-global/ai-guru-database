@@ -16,7 +16,7 @@ sources: []
 ## orphan: 281
 - 14_AI_Gateway/AI_Gateway_Comparison_2026.md
 - 14_AI_Gateway/LiteLLM_Deep_Dive.md
-- 深度学习/State_Space_Models_2026.md
+- 03_深度学习/State_Space_Models_2026.md
 - AI测试/Testing_Frameworks/Promptfoo_Deep_Dive.md
 - AI测试/Weights_Biases_Deep_Dive.md
 - AI测试/Testing_Frameworks/DeepEval_Deep_Dive.md
@@ -24,7 +24,7 @@ sources: []
 - AI测试/Contract_Testing.md
 - AI测试/AI_Test_Framework_2026.md
 - AI测试/RAGAS_Deep_Dive.md
-- 模型运维/Cloud_Ops_Agent/Mobile_AI_Ops_Design.md
+- 11_模型运维/Cloud_Ops_Agent/Mobile_AI_Ops_Design.md
 - _projects/Cloud_Ops_Agent/Cloud_Product_Ops_2026.md
 - _projects/Cloud_Ops_Agent/docs/product/index.md
 - _projects/Cloud_Ops_Agent/docs/operations/index.md
@@ -140,9 +140,9 @@ sources: []
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

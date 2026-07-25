@@ -166,9 +166,9 @@ flowchart TB
 
 ## 🔗 相关主题
 
-- [Value Alignment](伦理安全/Value_Alignment/Value_Alignment.md) — AI 价值观对齐
-- [AI 安全红队测试](伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming.md) — 主动发现风险
-- [AI Governance](伦理安全/Governance/AI_Governance_Compliance_2026.md) — AI 治理框架
+- [Value Alignment](17_伦理安全/02_Value_Alignment/Value_Alignment.md) — AI 价值观对齐
+- [AI 安全红队测试](17_伦理安全/04_AI_Safety_RedTeaming/AI_Safety_RedTeaming.md) — 主动发现风险
+- [AI Governance](17_伦理安全/03_Governance/AI_Governance_Compliance_2026.md) — AI 治理框架
 
 ---
 
@@ -249,8 +249,8 @@ flowchart TB
 
 ## 相关链接
 
-- [[伦理安全/Mechanistic_Interpretability/Mechanistic_Interpretability|机制可解释性 (完整版)]] — 本篇小白版对应的详细版
-- [[伦理安全/Mechanistic_Interpretability/index|机制可解释性索引]] — 主题导览
+- [[17_伦理安全/05_Mechanistic_Interpretability/Mechanistic_Interpretability|机制可解释性 (完整版)]] — 本篇小白版对应的详细版
+- [[17_伦理安全/05_Mechanistic_Interpretability/index|机制可解释性索引]] — 主题导览
 - [[概念/Safety/explainable-ai|可解释 AI]] — 可解释性概念卡片
-- [[伦理安全/index|伦理安全首页]] — 伦理安全知识总览
-- [[伦理安全/Value_Alignment/Value_Alignment|价值对齐]] — 可解释性辅助对齐
+- [[17_伦理安全/index|伦理安全首页]] — 伦理安全知识总览
+- [[17_伦理安全/02_Value_Alignment/Value_Alignment|价值对齐]] — 可解释性辅助对齐

@@ -265,4 +265,4 @@ python pretrain_gpt.py \
 - [[概念/fsdp]] — FSDP
 - [[概念/tensor-parallelism]] — 张量并行
 - [[概念/pipeline-parallelism]] — 流水线并行
-- [[模型训练/Distributed_Training/DeepSpeed_Deep_Dive]] — DeepSpeed 深度解析
+- [[07_模型训练/04_Distributed_Training/DeepSpeed_Deep_Dive]] — DeepSpeed 深度解析

@@ -379,9 +379,9 @@ class DriftMonitor:
 
 ## 相关文档
 
-- [[模型运维/README|MLOps 流水线]]
-- [[模型运维/LLM_Production_Pipeline_2026|LLM 生产流水线]]
-- [[测试/AB_Testing/|AB 测试]]
-- [[运维/README|AI 运维]]
-- [[架构基建/README|架构与基础设施]]
-- [[面试岗位/Machine_Learning_Engineer/|ML 工程师面试]]
+- [[11_模型运维/README|MLOps 流水线]]
+- [[11_模型运维/LLM_Production_Pipeline_2026|LLM 生产流水线]]
+- [[09_测试/AB_Testing/|AB 测试]]
+- [[13_运维/README|AI 运维]]
+- [[12_架构基建/README|架构与基础设施]]
+- [[21_面试岗位/Machine_Learning_Engineer/|ML 工程师面试]]

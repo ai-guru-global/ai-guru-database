@@ -149,11 +149,11 @@ RAG_SECURITY_MONITORING = {
 
 ## 5. 交叉引用
 
-- [[RAG系统/|RAG 系统]]
-- [[伦理安全/|伦理安全]]
-- [[伦理安全/AI_Watermarking/|AI 水印]]
-- [[智能体/Agent_Evaluation/Agent_Evaluation|Agent 安全评估]]
-- [[运维/Incident_Management|事故管理]]
+- [[14_RAG系统/|RAG 系统]]
+- [[17_伦理安全/|伦理安全]]
+- [[17_伦理安全/AI_Watermarking/|AI 水印]]
+- [[15_智能体/07_Agent_Evaluation/Agent_Evaluation|Agent 安全评估]]
+- [[13_运维/Incident_Management|事故管理]]
 
 ## 进阶知识拓展
 
@@ -191,9 +191,9 @@ RAG_SECURITY_MONITORING = {
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

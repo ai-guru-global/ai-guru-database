@@ -75,7 +75,7 @@ GLM-5.2 是智谱 2026 年的旗舰模型，采用 MoE 架构：
 | 开源 | 开源权重（智谱开源策略） |
 | 定位 | 对标国际旗舰，中文场景领先 |
 
-> 详见 [[大模型/Chinese_LLM_Ecosystem/GLM_Zhipu_Deep_Dive|GLM/智谱深度解析]]。
+> 详见 [[05_大模型/15_Chinese_LLM_Ecosystem/GLM_Zhipu_Deep_Dive|GLM/智谱深度解析]]。
 
 ### 多模态布局：CogVLM 与 GLM-4V
 
@@ -88,7 +88,7 @@ GLM-5.2 是智谱 2026 年的旗舰模型，采用 MoE 架构：
 | CogView | 文本生成图像 | 生成式多模态 |
 | CogVideo | 文本生成视频 | 视频生成 |
 
-多模态是 2025-2026 年的行业核心赛道，参见 [[计算机视觉/Multimodal_Vision/Vision_Language_Models_2026|视觉语言模型 2026]]。
+多模态是 2025-2026 年的行业核心赛道，参见 [[04_计算机视觉/08_Multimodal_Vision/Vision_Language_Models_2026|视觉语言模型 2026]]。
 
 ### AMiner：学术基础设施
 
@@ -108,7 +108,7 @@ GLM-5.2 是智谱 2026 年的旗舰模型，采用 MoE 架构：
 
 > "开源让我们获得真实的用户反馈和社区贡献，这是闭源无法替代的。"
 
-这与 [[业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026|开源 vs 闭源之争]] 中 Meta/DeepSeek 的立场一致。
+这与 [[19_业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026|开源 vs 闭源之争]] 中 Meta/DeepSeek 的立场一致。
 
 ### 长期主义与基础研究
 
@@ -123,9 +123,9 @@ GLM-5.2 是智谱 2026 年的旗舰模型，采用 MoE 架构：
 | 公司 | 创始人背景 | 核心优势 | 2026 定位 |
 |------|-----------|----------|-----------|
 | **智谱 AI** | 唐杰（清华教授） | 学术底蕴 + 开源生态 | 产学研标杆 |
-| [[业界观点/Wenfeng_Liang/Wenfeng_Liang_2026_Update\|DeepSeek]] | 梁文锋（量化） | 效率 + 架构创新 | 开源效率标杆 |
-| [[业界观点/Zhilin_Yang/Zhilin_Yang_2026_Update\|月之暗面]] | 杨植麟（CMU 博士） | 长上下文产品 | C 端长文本 |
-| [[业界观点/Junjie_Yan/about\|MiniMax]] | 闫俊杰（商汤） | 全模态 C 端 | 多模态 |
+| [[19_业界观点/Wenfeng_Liang/Wenfeng_Liang_2026_Update\|DeepSeek]] | 梁文锋（量化） | 效率 + 架构创新 | 开源效率标杆 |
+| [[19_业界观点/Zhilin_Yang/Zhilin_Yang_2026_Update\|月之暗面]] | 杨植麟（CMU 博士） | 长上下文产品 | C 端长文本 |
+| [[19_业界观点/Junjie_Yan/about\|MiniMax]] | 闫俊杰（商汤） | 全模态 C 端 | 多模态 |
 
 ### 对行业的影响
 
@@ -157,23 +157,23 @@ GLM 的"统一填空"框架在理论上优雅，但在 GPT 式自回归 + SFT/RL
 ## 关联与延伸
 
 ### 人物关联
-- [[业界观点/Jie_Tang/about|唐杰 概述]]
-- [[业界观点/Jie_Tang/index|唐杰 主页]]
-- [[业界观点/Jie_Tang/sayings|唐杰 语录]]
+- [[19_业界观点/Jie_Tang/about|唐杰 概述]]
+- [[19_业界观点/Jie_Tang/index|唐杰 主页]]
+- [[19_业界观点/Jie_Tang/sayings|唐杰 语录]]
 
 ### 中国 AI 六小龙
-- [[业界观点/Wenfeng_Liang/Wenfeng_Liang_2026_Update|梁文锋（DeepSeek）]]
-- [[业界观点/Zhilin_Yang/Zhilin_Yang_2026_Update|杨植麟（月之暗面）]]
-- [[业界观点/Junjie_Yan/about|闫俊杰（MiniMax）]]
-- [[业界观点/Jinze_Bai/about|白辰甲（阶跃星辰）]]
+- [[19_业界观点/Wenfeng_Liang/Wenfeng_Liang_2026_Update|梁文锋（DeepSeek）]]
+- [[19_业界观点/Zhilin_Yang/Zhilin_Yang_2026_Update|杨植麟（月之暗面）]]
+- [[19_业界观点/Junjie_Yan/about|闫俊杰（MiniMax）]]
+- [[19_业界观点/Jinze_Bai/about|白辰甲（阶跃星辰）]]
 
 ### 技术关联
-- [[大模型/Chinese_LLM_Ecosystem/GLM_Zhipu_Deep_Dive|GLM/智谱深度解析]]
-- [[大模型/Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix|中国大模型对比矩阵]]
-- [[计算机视觉/Multimodal_Vision/Vision_Language_Models_2026|视觉语言模型 2026]]
-- [[模型训练/index|模型训练]]
-- [[业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026|开源 vs 闭源之争]]
-- [[业界观点/Talks_Synthesis/China_US_AI_Race_Leaders_Views|中美 AI 竞赛观点]]
+- [[05_大模型/15_Chinese_LLM_Ecosystem/GLM_Zhipu_Deep_Dive|GLM/智谱深度解析]]
+- [[05_大模型/15_Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix|中国大模型对比矩阵]]
+- [[04_计算机视觉/08_Multimodal_Vision/Vision_Language_Models_2026|视觉语言模型 2026]]
+- [[07_模型训练/index|模型训练]]
+- [[19_业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026|开源 vs 闭源之争]]
+- [[19_业界观点/Talks_Synthesis/China_US_AI_Race_Leaders_Views|中美 AI 竞赛观点]]
 
 ---
 
@@ -187,4 +187,4 @@ GLM 的"统一填空"框架在理论上优雅，但在 GPT 式自回归 + SFT/RL
 
 ---
 
-*本文为 AI Guru 知识库内容，2026-07-23 更新。关联 [[业界观点/index|业界观点]] 与 [[大模型/Chinese_LLM_Ecosystem|中国大模型生态]]。*
+*本文为 AI Guru 知识库内容，2026-07-23 更新。关联 [[19_业界观点/index|业界观点]] 与 [[05_大模型/Chinese_LLM_Ecosystem|中国大模型生态]]。*

@@ -37,11 +37,11 @@ sources: []
 
 ## 跨域连接
 
-- [[模型评估/Benchmarks/LLM_Benchmark_Suite_2026|LLM 评测基准套件 2026]] — 最新基准全景
-- [[模型评估/Evaluation_Tools/LLM_as_Judge_Deep_Dive|LLM-as-Judge 深度解读]] — 自动化评测的核心方法
-- [[模型评估/Benchmarks/Agentic_Benchmark_Guide|Agent 评测指南]] — 从静态到动态的评测演进
-- [[模型评估/Evaluation_Tools/Online_Evaluation|在线评测]] — 生产环境的实时评估
-- [[伦理安全/Safety_Evaluation_Framework|安全评测框架]] — 安全维度的专项评估
+- [[08_模型评估/02_Benchmarks/LLM_Benchmark_Suite_2026|LLM 评测基准套件 2026]] — 最新基准全景
+- [[08_模型评估/04_Evaluation_Tools/LLM_as_Judge_Deep_Dive|LLM-as-Judge 深度解读]] — 自动化评测的核心方法
+- [[08_模型评估/02_Benchmarks/Agentic_Benchmark_Guide|Agent 评测指南]] — 从静态到动态的评测演进
+- [[08_模型评估/04_Evaluation_Tools/Online_Evaluation|在线评测]] — 生产环境的实时评估
+- [[17_伦理安全/Safety_Evaluation_Framework|安全评测框架]] — 安全维度的专项评估
 - [[治理/safety-evaluation-red-teaming|安全评测 × 红队测试]] — 对抗式安全评估
 
 ## 前沿方向
@@ -91,9 +91,9 @@ sources: []
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

@@ -10,7 +10,7 @@ relationships:
   - target: "概念/deepgemm"
     type: related_to
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
 summary: "3FS (Fire-Flyer File System) 是 DeepSeek 开源的高性能分布式文件系统，专为 AI 训练数据加载优化。利用 SSD 集群和客户端缓存，实现每秒 TB 级吞吐，是 DeepSeek-V3 训练的数据底座。"
 provenance:
   extracted: 0.30
@@ -107,7 +107,7 @@ tier: supporting
 - [[概念/deepseek-models]] — DeepSeek 模型系列
 - [[概念/dualpipe]] — DualPipe 双向流水线
 - [[概念/deepgemm]] — DeepGEMM FP8 算子库
-- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
 
 ---
 

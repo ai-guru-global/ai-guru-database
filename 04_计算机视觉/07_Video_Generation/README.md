@@ -65,12 +65,12 @@ sources: []
 
 ## Related
 
-- [[计算机视觉/README]] — 05 计算机视觉 (Computer Vision) (共享: cnn, computer-vision, cv, image-processing)
-- [[计算机视觉/Segmentation/Segmentation_for_dummy]] — 图像分割 - 小白版 ✂️ (共享: cnn, computer-vision, cv, image-processing)
-- [[论文精读/Vision/ResNet_Deep_Dive]] — ResNet 深度解读 (Deep Residual Learning for Image Recognition) (共享: cnn, cv)
+- [[04_计算机视觉/README]] — 05 计算机视觉 (Computer Vision) (共享: cnn, computer-vision, cv, image-processing)
+- [[04_计算机视觉/03_Segmentation/Segmentation_for_dummy]] — 图像分割 - 小白版 ✂️ (共享: cnn, computer-vision, cv, image-processing)
+- [[20_论文精读/08_Vision/ResNet_Deep_Dive]] — ResNet 深度解读 (Deep Residual Learning for Image Recognition) (共享: cnn, cv)
 - [[概念/computer-vision]] — 计算机视觉 (共享: cnn, cv)
-- [[计算机视觉/CV_Fundamentals/ViT_Deep_Dive.md|ViT_Deep_Dive]]
-- [[计算机视觉/README_for_dummy.md|README_for_dummy]]
+- [[04_计算机视觉/01_CV_Fundamentals/ViT_Deep_Dive.md|ViT_Deep_Dive]]
+- [[04_计算机视觉/README_for_dummy.md|README_for_dummy]]
 
 ## 进阶知识拓展
 
@@ -108,9 +108,9 @@ sources: []
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

@@ -137,11 +137,11 @@ aliases:
 
 ## 6. 延伸阅读
 
-- 想深入了解技术规格和部署案例：[[数学基础/AI_Hardware/T_Head_PPU_Deep_Dive|平头哥真武 PPU 深度解析]]
-- 想了解 FP32/FP16/FP8/FP4 精度具体是什么意思：见 [[概念/model-precision|模型精度概念详解]] 或 [[数学基础/AI_Hardware/T_Head_PPU_Deep_Dive#32-真武-m890|深度解析中的真武 M890 精度说明]]
-- 国产 AI 芯片全面对比：[[数学基础/AI_Hardware/Chinese_AI_Chips_Deep_Dive|国产 AI 芯片深度解析]]
+- 想深入了解技术规格和部署案例：[[01_数学基础/10_AI_Hardware/T_Head_PPU_Deep_Dive|平头哥真武 PPU 深度解析]]
+- 想了解 FP32/FP16/FP8/FP4 精度具体是什么意思：见 [[概念/model-precision|模型精度概念详解]] 或 [[01_数学基础/10_AI_Hardware/T_Head_PPU_Deep_Dive#32-真武-m890|深度解析中的真武 M890 精度说明]]
+- 国产 AI 芯片全面对比：[[01_数学基础/10_AI_Hardware/Chinese_AI_Chips_Deep_Dive|国产 AI 芯片深度解析]]
 
-> **关联**: -> [[数学基础/AI_Hardware/README|AI 硬件基础设施]] | [[数学基础/AI_Hardware/Chinese_AI_Chips_Deep_Dive|国产 AI 芯片]] | [[大模型/Chinese_LLM_Ecosystem/README|中国大模型生态]]
+> **关联**: -> [[01_数学基础/10_AI_Hardware/README|AI 硬件基础设施]] | [[01_数学基础/10_AI_Hardware/Chinese_AI_Chips_Deep_Dive|国产 AI 芯片]] | [[05_大模型/15_Chinese_LLM_Ecosystem/README|中国大模型生态]]
 
 ## 进阶知识拓展
 
@@ -179,9 +179,9 @@ aliases:
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

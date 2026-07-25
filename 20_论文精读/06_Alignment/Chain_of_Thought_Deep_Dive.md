@@ -250,7 +250,7 @@ CoT Prompting (2022)
 ## Related
 
 - [[../../概念/LLM/cot-react-reasoning-prompt|CoT 推理概念卡]] — 思维链的概念定义
-- [[../../大模型/Reasoning_Models|推理模型]] — 推理增强 LLM 架构
-- [[../../大模型/LLM_Architectures/LLM_Internals_Inference|LLM 推理内部机制]] — 推理阶段技术细节
-- [[../../深度学习/Optimization/Optimization|优化方法]] — 推理优化与解码策略
-- [[../../智能体/Agent_Foundations|Agent 基础]] — CoT 在 Agent 推理中的应用
+- [[../../05_大模型/Reasoning_Models|推理模型]] — 推理增强 LLM 架构
+- [[../../05_大模型/05_LLM_Architectures/LLM_Internals_Inference|LLM 推理内部机制]] — 推理阶段技术细节
+- [[../../03_深度学习/03_Optimization/Optimization|优化方法]] — 推理优化与解码策略
+- [[../../15_智能体/Agent_Foundations|Agent 基础]] — CoT 在 Agent 推理中的应用

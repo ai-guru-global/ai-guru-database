@@ -21,7 +21,7 @@ tags: [auto-index]
 
 ## Related
 
-- [[智能体/assets_index|Assets 首页]]
+- [[15_智能体/assets_index|Assets 首页]]
 
 ## the-anatomy-of-an-agent-harness.assets 核心概念
 

@@ -409,9 +409,9 @@ def get_model_version(user_id):
 
 ## 相关阅读
 
-- [[部署推理/Deployment_Inference]] — 部署与推理
-- [[部署推理/Model_Registry]] — 模型注册中心
-- [[模型运维/CI_CD/index]] — CI/CD
-- [[测试/AB_Testing_AI_Systems]] — A/B 测试
-- [[模型运维/Observability/Observability]] — 可观测性
-- [[模型运维/Model_Serving_Patterns]] — 模型服务模式
+- [[10_部署推理/Deployment_Inference]] — 部署与推理
+- [[10_部署推理/Model_Registry]] — 模型注册中心
+- [[11_模型运维/06_CI_CD/index]] — CI/CD
+- [[09_测试/AB_Testing_AI_Systems]] — A/B 测试
+- [[11_模型运维/08_Observability/Observability]] — 可观测性
+- [[11_模型运维/Model_Serving_Patterns]] — 模型服务模式

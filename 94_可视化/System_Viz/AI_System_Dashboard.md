@@ -1118,10 +1118,10 @@ if __name__ == "__main__":
 
 ## Related
 
-- [[../../模型运维/Observability/AI_Observability_Guide_2026|AI 可观测性指南]] — 系统监控指标定义
-- [[../../模型评估/Benchmarks/LLM_Benchmark_Suite_2026|LLM 评估基准]] — 仪表盘数据来源
-- [[../../模型训练/Monitoring/Training_Monitoring_2026|训练监控]] — 训练指标可视化
-- [[../../计算机视觉/Multimodal_Vision/Multimodal_Vision_for_dummy|多模态视觉]] — CV 系统可视化需求
-- [[可视化/README.md|94_Visualization README]]
+- [[../../11_模型运维/08_Observability/AI_Observability_Guide_2026|AI 可观测性指南]] — 系统监控指标定义
+- [[../../08_模型评估/02_Benchmarks/LLM_Benchmark_Suite_2026|LLM 评估基准]] — 仪表盘数据来源
+- [[../../07_模型训练/07_Monitoring/Training_Monitoring_2026|训练监控]] — 训练指标可视化
+- [[../../04_计算机视觉/08_Multimodal_Vision/Multimodal_Vision_for_dummy|多模态视觉]] — CV 系统可视化需求
+- [[94_可视化/README.md|94_Visualization README]]
 - [[前端应用/atlas/README.md|atlas README]]
 - [[前端应用/atlas/docs/performance.md|performance]]

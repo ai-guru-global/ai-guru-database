@@ -83,7 +83,7 @@ Embedding 是将文本转换为高维向量的模型,语义相似的文本在向
 - **过长截断**: 超过最大 token 的文本会被截断
 - **归一化**: 有些模型需要 L2 归一化才能正确计算相似度
 
-> **关联**: -> [[RAG系统/README|RAG 系统]] | [[RAG系统/Embeddings/Sentence_Transformers_Deep_Dive|Sentence Transformers]] | [[RAG系统/Vector_Database_for_dummy|向量数据库]]
+> **关联**: -> [[14_RAG系统/README|RAG 系统]] | [[14_RAG系统/02_Embeddings/Sentence_Transformers_Deep_Dive|Sentence Transformers]] | [[14_RAG系统/Vector_Database_for_dummy|向量数据库]]
 
 
 ## 进阶知识拓展
@@ -122,9 +122,9 @@ Embedding 是将文本转换为高维向量的模型,语义相似的文本在向
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

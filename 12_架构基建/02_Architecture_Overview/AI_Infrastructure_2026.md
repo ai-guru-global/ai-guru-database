@@ -209,7 +209,7 @@ nerdctl run --device nvidia.com/gpu=0 vllm/vllm-openai:latest
 
 > 在 K8s 中，CDI 是设备插件（旧）与 DRA 动态资源分配（新，1.32+ beta）**共同脚下的地基**——无论上层用哪种分配机制，最终都翻译成 CDI 设备名交给运行时。
 
-> 详见 [[架构基建/Hardware_Compute/CDI_Deep_Dive|CDI 容器设备接口标准深度解析]]。
+> 详见 [[12_架构基建/07_Hardware_Compute/CDI_Deep_Dive|CDI 容器设备接口标准深度解析]]。
 
 ---
 
@@ -972,10 +972,10 @@ Static Fallback
 
 ## Related
 
-- [[架构基建/Architecture-in-nutshell]] — AI 架构速成指南 (共享: architecture, high-availability, infrastructure, kubernetes)
-- [[架构基建/Architecture_Infrastructure_for_dummy]] — AI 架构基础设施 - 小白版 (共享: architecture, high-availability, infrastructure, kubernetes)
-- [[架构基建/Architecture_Overview/Spring_AI_Architecture]] — Spring AI 系统架构设计 (共享: architecture, high-availability, infrastructure, kubernetes)
+- [[12_架构基建/Architecture-in-nutshell]] — AI 架构速成指南 (共享: architecture, high-availability, infrastructure, kubernetes)
+- [[12_架构基建/Architecture_Infrastructure_for_dummy]] — AI 架构基础设施 - 小白版 (共享: architecture, high-availability, infrastructure, kubernetes)
+- [[12_架构基建/02_Architecture_Overview/Spring_AI_Architecture]] — Spring AI 系统架构设计 (共享: architecture, high-availability, infrastructure, kubernetes)
 - [[Multi_Tenant_Architecture|Multi_Tenant_Architecture]]
-- [[架构基建/README_for_dummy.md|README_for_dummy]]
+- [[12_架构基建/README_for_dummy.md|README_for_dummy]]
 - [[治理/llm-infrastructure-system-design|LLM 基础设施 × 传统系统架构]] — 从 Web 服务到 Token 工厂
-- [[数学基础/AI_Hardware/Chinese_AI_Chips_Deep_Dive]] — 国产 AI 芯片12家厂商深度解析 (昇腾/寒武纪/海光/壁仞等)
+- [[01_数学基础/10_AI_Hardware/Chinese_AI_Chips_Deep_Dive]] — 国产 AI 芯片12家厂商深度解析 (昇腾/寒武纪/海光/壁仞等)

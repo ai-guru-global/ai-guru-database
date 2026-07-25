@@ -46,30 +46,30 @@ AI 编程 — AI 辅助编程工具、最佳实践
 
 | # | 文档 | 难度 | 标签 | 估计阅读时间 |
 |---|---|---|---|---|
-| 1 | [[编程/OpenRouter/01-openrouter-overview-architecture|OpenRouter 概述与核心架构]] | | ai, ai-coding, deep-dive | |
-| 2 | [[编程/OpenRouter/02-openrouter-quickstart-setup.md|快速接入与环境配置]] | | ai, ai-coding, configuration | |
-| 3 | [[编程/OpenRouter/03-openrouter-models-providers.md|模型与 Provider 生态]] | | ai, ai-coding | |
-| 4 | [[编程/OpenRouter/04-openrouter-provider-routing.md|智能路由与 Provider 选择]] | | ai, ai-coding | |
-| 5 | [[编程/OpenRouter/05-openrouter-api-reference.md|API 参考与请求/响应规范]] | | ai, ai-coding, reference | |
-| 6 | [[编程/OpenRouter/06-openrouter-structured-outputs-tools.md|Structured Outputs 与 Tool Calling]] | | ai, ai-coding | |
-| 7 | [[编程/OpenRouter/07-openrouter-plugins-web-search.md|插件体系与 Web Search]] | | ai, ai-coding | |
-| 8 | [[编程/OpenRouter/08-openrouter-prompt-caching-optimization|Prompt Caching 与成本优化]] | | ai, ai-coding | |
-| 9 | [[编程/OpenRouter/09-openrouter-frameworks-integrations.md|框架集成与生态系统]] | | ai, ai-coding | |
-| 10 | [[编程/OpenRouter/10-openrouter-streaming-multimedia.md|流式传输与多模态输入]] | | ai, ai-coding | |
-| 11 | [[编程/OpenRouter/11-openrouter-security-privacy.md|安全、隐私与数据治理]] | | ai, ai-coding, security | |
-| 12 | [[编程/OpenRouter/12-openrouter-enterprise-advanced.md|企业级高级实践]] | | ai, ai-coding | |
-| 13 | [[编程/OpenCode/21-opencode-overview-architecture|OpenCode 概述与核心架构]] | | ai, ai-coding, deep-dive | |
-| 14 | [[编程/OpenCode/22-opencode-installation-quickstart|安装部署与快速入门]] | | ai, ai-coding, configuration | |
-| 15 | [[编程/OpenCode/23-opencode-providers-models|Provider 与模型管理]] | | ai, ai-coding | |
-| 16 | [[编程/OpenCode/24-opencode-agents-system|Agent 系统深度指南]] | | ai, ai-coding | |
-| 17 | [[编程/OpenCode/25-opencode-tools-permissions|工具体系与权限模型]] | | ai, ai-coding | |
-| 18 | [[编程/OpenCode/26-opencode-mcp-integration|MCP 协议集成指南]] | | ai, ai-coding | |
-| 19 | [[编程/OpenCode/27-opencode-lsp-formatters|LSP 代码智能与 Formatter]] | | ai, ai-coding | |
-| 20 | [[编程/OpenCode/28-opencode-skills-commands|Agent Skill 与自定义命令]] | | ai, ai-coding, daily-ops | |
-| 21 | [[编程/OpenCode/29-opencode-tui-customization|TUI 定制：快捷键、主题与界面]] | | ai, ai-coding | |
-| 22 | [[编程/OpenCode/30-opencode-server-api|Server 模式与 HTTP API]] | | ai, ai-coding | |
-| 23 | [[编程/OpenCode/31-opencode-github-automation|GitHub 集成与 CI/CD 自动化]] | | ai, ai-coding | |
-| 24 | [[编程/OpenCode/32-opencode-advanced-topics|进阶话题与生产最佳实践]] | | ai, ai-coding | |
+| 1 | [[16_编程/08_OpenRouter/01-openrouter-overview-architecture|OpenRouter 概述与核心架构]] | | ai, ai-coding, deep-dive | |
+| 2 | [[16_编程/08_OpenRouter/02-openrouter-quickstart-setup.md|快速接入与环境配置]] | | ai, ai-coding, configuration | |
+| 3 | [[16_编程/08_OpenRouter/03-openrouter-models-providers.md|模型与 Provider 生态]] | | ai, ai-coding | |
+| 4 | [[16_编程/08_OpenRouter/04-openrouter-provider-routing.md|智能路由与 Provider 选择]] | | ai, ai-coding | |
+| 5 | [[16_编程/08_OpenRouter/05-openrouter-api-reference.md|API 参考与请求/响应规范]] | | ai, ai-coding, reference | |
+| 6 | [[16_编程/08_OpenRouter/06-openrouter-structured-outputs-tools.md|Structured Outputs 与 Tool Calling]] | | ai, ai-coding | |
+| 7 | [[16_编程/08_OpenRouter/07-openrouter-plugins-web-search.md|插件体系与 Web Search]] | | ai, ai-coding | |
+| 8 | [[16_编程/08_OpenRouter/08-openrouter-prompt-caching-optimization|Prompt Caching 与成本优化]] | | ai, ai-coding | |
+| 9 | [[16_编程/08_OpenRouter/09-openrouter-frameworks-integrations.md|框架集成与生态系统]] | | ai, ai-coding | |
+| 10 | [[16_编程/08_OpenRouter/10-openrouter-streaming-multimedia.md|流式传输与多模态输入]] | | ai, ai-coding | |
+| 11 | [[16_编程/08_OpenRouter/11-openrouter-security-privacy.md|安全、隐私与数据治理]] | | ai, ai-coding, security | |
+| 12 | [[16_编程/08_OpenRouter/12-openrouter-enterprise-advanced.md|企业级高级实践]] | | ai, ai-coding | |
+| 13 | [[16_编程/07_OpenCode/21-opencode-overview-architecture|OpenCode 概述与核心架构]] | | ai, ai-coding, deep-dive | |
+| 14 | [[16_编程/07_OpenCode/22-opencode-installation-quickstart|安装部署与快速入门]] | | ai, ai-coding, configuration | |
+| 15 | [[16_编程/07_OpenCode/23-opencode-providers-models|Provider 与模型管理]] | | ai, ai-coding | |
+| 16 | [[16_编程/07_OpenCode/24-opencode-agents-system|Agent 系统深度指南]] | | ai, ai-coding | |
+| 17 | [[16_编程/07_OpenCode/25-opencode-tools-permissions|工具体系与权限模型]] | | ai, ai-coding | |
+| 18 | [[16_编程/07_OpenCode/26-opencode-mcp-integration|MCP 协议集成指南]] | | ai, ai-coding | |
+| 19 | [[16_编程/07_OpenCode/27-opencode-lsp-formatters|LSP 代码智能与 Formatter]] | | ai, ai-coding | |
+| 20 | [[16_编程/07_OpenCode/28-opencode-skills-commands|Agent Skill 与自定义命令]] | | ai, ai-coding, daily-ops | |
+| 21 | [[16_编程/07_OpenCode/29-opencode-tui-customization|TUI 定制：快捷键、主题与界面]] | | ai, ai-coding | |
+| 22 | [[16_编程/07_OpenCode/30-opencode-server-api|Server 模式与 HTTP API]] | | ai, ai-coding | |
+| 23 | [[16_编程/07_OpenCode/31-opencode-github-automation|GitHub 集成与 CI/CD 自动化]] | | ai, ai-coding | |
+| 24 | [[16_编程/07_OpenCode/32-opencode-advanced-topics|进阶话题与生产最佳实践]] | | ai, ai-coding | |
 
 ---
 
@@ -89,7 +89,7 @@ AI 编程 — AI 辅助编程工具、最佳实践
 - [[概念/ai-fundamentals]] — AI 基础概念 (共享: ai)
 - [[概念/ai-future-trends]] — AI 未来趋势 (共享: ai)
 - [[概念/ai-history]] — AI 历史 (共享: ai)
-- [[编程/Tool_Comparison/OpenRouter_OpenCode_Guide.md|OpenRouter_OpenCode_Guide]]
+- [[16_编程/06_Tool_Comparison/OpenRouter_OpenCode_Guide.md|OpenRouter_OpenCode_Guide]]
 
 ## 核心知识体系
 
@@ -200,9 +200,9 @@ AI 编程 — AI 辅助编程工具、最佳实践
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

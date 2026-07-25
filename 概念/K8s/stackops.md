@@ -10,7 +10,7 @@ relationships:
   - target: "概念/nerdctl"
     type: related_to
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
 summary: "stackops/aioController 是 AI Stack 一体机的专属运维工具集。stackops 提供一键部署/升级/诊断，aioController 是底层 K8s 控制器。区别于通用 K8s 工具的 AI Stack 专属层。"
 provenance:
   extracted: 0.30
@@ -114,7 +114,7 @@ aioController 是运行在 K8s 集群中的 **Controller**，负责：
 - [[概念/nerdctl]] — nerdctl 容器管理
 - [[概念/crictl]] — crictl 容器调试
 - [[概念/helm]] — Helm 包管理
-- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
 
 ---
 

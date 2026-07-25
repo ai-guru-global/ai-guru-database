@@ -192,8 +192,8 @@ flowchart TD
 - **必修**: [../LLM_Architectures/LLM_Architectures.md](../LLM_Architectures/LLM_Architectures.md) — Transformer、MoE、GQA 基础
 - **推荐**: [../Reasoning_Models/o1_Class_Reasoning_Models.md](../Reasoning_Models/o1_Class_Reasoning_Models.md) — 推理模型原理
 - **推荐**: [../LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md](../LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md) — MoE 架构详解
-- **可选**: [../../论文精读/GPT3_Deep_Dive.md](论文精读/Scaling/GPT3_Deep_Dive.md) — GPT-3 论文解读
-- **可选**: [../../论文精读/LLaMA_Deep_Dive.md](论文精读/Architecture/LLaMA_Deep_Dive.md) — LLaMA 论文解读
+- **可选**: [../../20_论文精读/GPT3_Deep_Dive.md](20_论文精读/03_Scaling/GPT3_Deep_Dive.md) — GPT-3 论文解读
+- **可选**: [../../20_论文精读/LLaMA_Deep_Dive.md](20_论文精读/02_Architecture/LLaMA_Deep_Dive.md) — LLaMA 论文解读
 
 ---
 
@@ -217,9 +217,9 @@ flowchart TD
 
 ## 相关链接
 
-- [[大模型/Global_LLM_Ecosystem/OpenAI_Deep_Dive|OpenAI 技术深度解析]] — GPT 系列与 o1/o3 推理模型
-- [[大模型/Global_LLM_Ecosystem/Anthropic_Claude_Deep_Dive|Anthropic Claude 技术深度解析]] — Claude 与 Constitutional AI
-- [[大模型/Global_LLM_Ecosystem/Google_Gemini_Deep_Dive|Google Gemini 技术深度解析]] — Gemini 原生多模态
-- [[大模型/Global_LLM_Ecosystem/Meta_LLaMA_Deep_Dive|Meta LLaMA 深度解析]] — 开源 LLM 旗手
-- [[大模型/Chinese_LLM_Ecosystem/README|中文大模型生态全景]] — 国产大模型生态对标
-- [[大模型/index|大模型首页]] — 大模型领域知识总览
+- [[05_大模型/14_Global_LLM_Ecosystem/OpenAI_Deep_Dive|OpenAI 技术深度解析]] — GPT 系列与 o1/o3 推理模型
+- [[05_大模型/14_Global_LLM_Ecosystem/Anthropic_Claude_Deep_Dive|Anthropic Claude 技术深度解析]] — Claude 与 Constitutional AI
+- [[05_大模型/14_Global_LLM_Ecosystem/Google_Gemini_Deep_Dive|Google Gemini 技术深度解析]] — Gemini 原生多模态
+- [[05_大模型/14_Global_LLM_Ecosystem/Meta_LLaMA_Deep_Dive|Meta LLaMA 深度解析]] — 开源 LLM 旗手
+- [[05_大模型/15_Chinese_LLM_Ecosystem/README|中文大模型生态全景]] — 国产大模型生态对标
+- [[05_大模型/index|大模型首页]] — 大模型领域知识总览

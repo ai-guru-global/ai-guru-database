@@ -40,8 +40,8 @@ aliases:
 | **GitHub 仓库** | [shareAI-lab/learn-claude-code](https://github.com/shareAI-lab/learn-claude-code) |
 | **本地克隆** | `原始/github-sources/learn-claude-code` |
 | **课时数量** | 20 课 + 综合章 |
-| **前置要求** | Python 基础、Anthropic API key；建议先了解 [[智能体/GenAI_L17_AI_Agents|AI 代理基础]] |
-| **外部引用** | [[学习/Courses/share_ai/learn_claude_code]] |
+| **前置要求** | Python 基础、Anthropic API key；建议先了解 [[15_智能体/GenAI_L17_AI_Agents|AI 代理基础]] |
+| **外部引用** | [[90_学习/Courses/share_ai/learn_claude_code]] |
 
 ---
 
@@ -51,51 +51,51 @@ aliases:
 
 | 课号 | 课程名称 | 引入的 Harness 机制 | 本库相关概念/页面 |
 |------|----------|---------------------|-------------------|
-| s01 | Agent Loop | 最小 `while True` 循环；`stop_reason == "tool_use"` 决定是否继续 | [[智能体/Course_Notes/Learn_Claude_Code_L01_Agent_Loop|L01 笔记]], [[智能体/GenAI_L17_AI_Agents|AI 代理]], [[智能体/Agent_Harness/The_Anatomy_of_an_Agent_Harness|Harness 解剖]] |
-| s02 | Tool Use | 工具定义 + `TOOL_HANDLERS` 分发映射；多工具并发安全 | [[智能体/GenAI_L11_Integrating_with_Function_Calling|函数调用]], [[智能体/Agent_Skills/Tool_Calling_Best_Practices|工具调用最佳实践]] |
-| s03 | Permission | 三道权限闸门：硬拒绝、规则匹配、用户审批 | [[智能体/Course_Notes/Learn_Claude_Code_L03_Permission_System|L03 笔记]], [[智能体/Enterprise_Agent/Agent_Production_2026|Agent 生产治理]] |
-| s04 | Hooks | 循环扩展点：`UserPromptSubmit` / `PreToolUse` / `PostToolUse` / `Stop` | [[智能体/Agent_Harness/Agent_Harness_Architecture_2026|Harness 架构]] |
+| s01 | Agent Loop | 最小 `while True` 循环；`stop_reason == "tool_use"` 决定是否继续 | [[15_智能体/15_Course_Notes/Learn_Claude_Code_L01_Agent_Loop|L01 笔记]], [[15_智能体/GenAI_L17_AI_Agents|AI 代理]], [[15_智能体/04_Agent_Harness/The_Anatomy_of_an_Agent_Harness|Harness 解剖]] |
+| s02 | Tool Use | 工具定义 + `TOOL_HANDLERS` 分发映射；多工具并发安全 | [[15_智能体/GenAI_L11_Integrating_with_Function_Calling|函数调用]], [[15_智能体/05_Agent_Skills/Tool_Calling_Best_Practices|工具调用最佳实践]] |
+| s03 | Permission | 三道权限闸门：硬拒绝、规则匹配、用户审批 | [[15_智能体/15_Course_Notes/Learn_Claude_Code_L03_Permission_System|L03 笔记]], [[15_智能体/10_Enterprise_Agent/Agent_Production_2026|Agent 生产治理]] |
+| s04 | Hooks | 循环扩展点：`UserPromptSubmit` / `PreToolUse` / `PostToolUse` / `Stop` | [[15_智能体/04_Agent_Harness/Agent_Harness_Architecture_2026|Harness 架构]] |
 
 ### 第二阶段：复杂任务处理（s05-s08）
 
 | 课号 | 课程名称 | 引入的 Harness 机制 | 本库相关概念/页面 |
 |------|----------|---------------------|-------------------|
-| s05 | TodoWrite | `todo_write` 计划工具 + nag reminder，先列清单再执行 | [[智能体/Agent_Workflow/Workflow-in-nutshell|工作流概述]], [[智能体/Agentic_Design_Patterns_AndrewNg|代理设计模式]] |
-| s06 | Subagent | 子 Agent：独立 `messages[]`、只回传结论、禁止递归 | [[智能体/Course_Notes/Learn_Claude_Code_L06_Subagent|L06 笔记]] |
-| s07 | Skill Loading | 技能两级加载：SYSTEM 放目录，`load_skill` 按需注入完整内容 | [[智能体/Learn_Claude_Code_L07_Skill_Loading|L07 笔记]], [[智能体/Agent_Skills/Skills-in-nutshell|Agent Skills 速览]] |
-| s08 | Context Compact | 四层压缩管线：snip / micro / budget / LLM 摘要 + reactive 应急 | [[智能体/Course_Notes/Learn_Claude_Code_L08_Context_Compact|L08 笔记]] |
+| s05 | TodoWrite | `todo_write` 计划工具 + nag reminder，先列清单再执行 | [[15_智能体/03_Agent_Workflow/Workflow-in-nutshell|工作流概述]], [[15_智能体/Agentic_Design_Patterns_AndrewNg|代理设计模式]] |
+| s06 | Subagent | 子 Agent：独立 `messages[]`、只回传结论、禁止递归 | [[15_智能体/15_Course_Notes/Learn_Claude_Code_L06_Subagent|L06 笔记]] |
+| s07 | Skill Loading | 技能两级加载：SYSTEM 放目录，`load_skill` 按需注入完整内容 | [[15_智能体/Learn_Claude_Code_L07_Skill_Loading|L07 笔记]], [[15_智能体/05_Agent_Skills/Skills-in-nutshell|Agent Skills 速览]] |
+| s08 | Context Compact | 四层压缩管线：snip / micro / budget / LLM 摘要 + reactive 应急 | [[15_智能体/15_Course_Notes/Learn_Claude_Code_L08_Context_Compact|L08 笔记]] |
 
 ### 第三阶段：记忆与恢复（s09-s11）
 
 | 课号 | 课程名称 | 引入的 Harness 机制 | 本库相关概念/页面 |
 |------|----------|---------------------|-------------------|
-| s09 | Memory | 跨会话记忆：`.memory/` Markdown 文件 + `MEMORY.md` 索引 + 每轮提取/整理 | [[智能体/Course_Notes/Learn_Claude_Code_L09_Memory_System|L09 笔记]], [[智能体/Memory_Infrastructure/Agent_Memory_Systems_2026|Agent 记忆系统 2026]] |
-| s10 | System Prompt | system prompt 分段定义、按真实状态运行时组装、缓存 | [[智能体/Agent_Harness/Agent_Harness_Architecture_2026|Harness 架构]], [[大模型/Prompt_Engineering/Prompt_Engineering|提示工程]] |
-| s11 | Error Recovery | 错误恢复：输出截断升级、上下文超限 reactive compact、429/529 指数退避与 fallback 模型 | [[智能体/Agent_Harness/Harness-in-nutshell|Harness 速览]] |
+| s09 | Memory | 跨会话记忆：`.memory/` Markdown 文件 + `MEMORY.md` 索引 + 每轮提取/整理 | [[15_智能体/15_Course_Notes/Learn_Claude_Code_L09_Memory_System|L09 笔记]], [[15_智能体/06_Memory_Infrastructure/Agent_Memory_Systems_2026|Agent 记忆系统 2026]] |
+| s10 | System Prompt | system prompt 分段定义、按真实状态运行时组装、缓存 | [[15_智能体/04_Agent_Harness/Agent_Harness_Architecture_2026|Harness 架构]], [[05_大模型/08_Prompt_Engineering/Prompt_Engineering|提示工程]] |
+| s11 | Error Recovery | 错误恢复：输出截断升级、上下文超限 reactive compact、429/529 指数退避与 fallback 模型 | [[15_智能体/04_Agent_Harness/Harness-in-nutshell|Harness 速览]] |
 
 ### 第四阶段：长期运行与调度（s12-s14）
 
 | 课号 | 课程名称 | 引入的 Harness 机制 | 本库相关概念/页面 |
 |------|----------|---------------------|-------------------|
-| s12 | Task System | 文件持久化任务图：`blockedBy` 依赖、`claim` / `complete` 状态机 | [[智能体/Course_Notes/Learn_Claude_Code_L12_Task_System|L12 笔记]] |
-| s13 | Background Tasks | 慢操作后台线程 + `<task_notification>` 注入，主循环不阻塞 | [[智能体/Agent_Harness/Agent_Harness_Architecture_2026|Harness 架构]] |
-| s14 | Cron Scheduler | 独立调度线程 + `cron_queue` + queue processor，支持 durable / session-only 任务 | [[智能体/Agent_Harness/Harness-in-nutshell|Harness 速览]], [[模型运维/CI_CD/ML_CI_CD|ML CI/CD]] |
+| s12 | Task System | 文件持久化任务图：`blockedBy` 依赖、`claim` / `complete` 状态机 | [[15_智能体/15_Course_Notes/Learn_Claude_Code_L12_Task_System|L12 笔记]] |
+| s13 | Background Tasks | 慢操作后台线程 + `<task_notification>` 注入，主循环不阻塞 | [[15_智能体/04_Agent_Harness/Agent_Harness_Architecture_2026|Harness 架构]] |
+| s14 | Cron Scheduler | 独立调度线程 + `cron_queue` + queue processor，支持 durable / session-only 任务 | [[15_智能体/04_Agent_Harness/Harness-in-nutshell|Harness 速览]], [[11_模型运维/06_CI_CD/ML_CI_CD|ML CI/CD]] |
 
 ### 第五阶段：多 Agent 协作（s15-s18）
 
 | 课号 | 课程名称 | 引入的 Harness 机制 | 本库相关概念/页面 |
 |------|----------|---------------------|-------------------|
-| s15 | Agent Teams | `MessageBus` 文件收件箱；Lead + 持久队友线程并行工作 | [[智能体/Course_Notes/Learn_Claude_Code_L15_Agent_Teams|L15 笔记]], [[智能体/Agent_Frameworks/AutoGen_CrewAI_LangGraph_Dive|多 Agent 框架对比]] |
-| s16 | Team Protocols | 结构化请求-响应协议：`request_id` 关联、`shutdown` / `plan_approval` 握手 | [[智能体/A2A_Protocol_Deep_Dive|A2A 协议]] |
-| s17 | Autonomous Agents | 队友自组织：`idle_poll` 轮询收件箱 + 任务板自动认领 | [[智能体/Course_Notes/Learn_Claude_Code_L17_Autonomous_Agents|L17 笔记]], [[智能体/Agentic_Design_Patterns_AndrewNg|代理设计模式]] |
-| s18 | Worktree Isolation | 任务绑定 git worktree，队友在独立目录并行执行 | [[智能体/Agentic_Coding_Tools/Claude_Code_Deep_Dive|Claude Code 深度解析]] |
+| s15 | Agent Teams | `MessageBus` 文件收件箱；Lead + 持久队友线程并行工作 | [[15_智能体/15_Course_Notes/Learn_Claude_Code_L15_Agent_Teams|L15 笔记]], [[15_智能体/02_Agent_Frameworks/AutoGen_CrewAI_LangGraph_Dive|多 Agent 框架对比]] |
+| s16 | Team Protocols | 结构化请求-响应协议：`request_id` 关联、`shutdown` / `plan_approval` 握手 | [[15_智能体/A2A_Protocol_Deep_Dive|A2A 协议]] |
+| s17 | Autonomous Agents | 队友自组织：`idle_poll` 轮询收件箱 + 任务板自动认领 | [[15_智能体/15_Course_Notes/Learn_Claude_Code_L17_Autonomous_Agents|L17 笔记]], [[15_智能体/Agentic_Design_Patterns_AndrewNg|代理设计模式]] |
+| s18 | Worktree Isolation | 任务绑定 git worktree，队友在独立目录并行执行 | [[15_智能体/08_Agentic_Coding_Tools/Claude_Code_Deep_Dive|Claude Code 深度解析]] |
 
 ### 第六阶段：外部能力与综合（s19-s20）
 
 | 课号 | 课程名称 | 引入的 Harness 机制 | 本库相关概念/页面 |
 |------|----------|---------------------|-------------------|
-| s19 | MCP Plugin | MCP 外部工具发现与调用：`mcp__server__tool` 命名空间、动态工具池 | [[智能体/Learn_Claude_Code_L19_MCP_Plugin|L19 笔记]], [[学习/References/Articles/awesome-mcp-servers|Awesome MCP Servers]] |
-| s20 | Comprehensive Agent | 把 s01-s19 的机制挂回同一个循环，展示完整 harness 数据流 | [[学习/Courses/share_ai/learn_claude_code|仓库引用]], [[智能体/Agent_Harness/The_Anatomy_of_an_Agent_Harness|Harness 解剖]] |
+| s19 | MCP Plugin | MCP 外部工具发现与调用：`mcp__server__tool` 命名空间、动态工具池 | [[15_智能体/Learn_Claude_Code_L19_MCP_Plugin|L19 笔记]], [[90_学习/References/Articles/awesome-mcp-servers|Awesome MCP Servers]] |
+| s20 | Comprehensive Agent | 把 s01-s19 的机制挂回同一个循环，展示完整 harness 数据流 | [[90_学习/Courses/share_ai/learn_claude_code|仓库引用]], [[15_智能体/04_Agent_Harness/The_Anatomy_of_an_Agent_Harness|Harness 解剖]] |
 
 ---
 
@@ -104,19 +104,19 @@ aliases:
 1. **先通读 s01-s04**：理解“循环不变、机制外挂”的设计哲学，再看后续章节会更清晰。
 2. **重点突破 s08、s09、s12**：上下文压缩、记忆、任务图是长期运行 Agent 的三大支柱。
 3. **多 Agent 部分按顺序读**：s15（团队邮箱）→ s16（协议）→ s17（自治）→ s18（隔离），每层解决一个真实协作问题。
-4. **配合本库阅读**：遇到通用概念（如 [[智能体/Agent_Harness/The_Anatomy_of_an_Agent_Harness|Harness 解剖]]、[[智能体/Memory_Infrastructure/Agent_Memory_Systems_2026|记忆系统 2026]]）可跳转加深理解。
+4. **配合本库阅读**：遇到通用概念（如 [[15_智能体/04_Agent_Harness/The_Anatomy_of_an_Agent_Harness|Harness 解剖]]、[[15_智能体/06_Memory_Infrastructure/Agent_Memory_Systems_2026|记忆系统 2026]]）可跳转加深理解。
 
 ---
 
 ## 相关页面
 
-- [[学习/Courses/share_ai/learn_claude_code]] — 仓库外部源引用索引
-- [[智能体/Agent_Harness/The_Anatomy_of_an_Agent_Harness]] — Harness 工程定义
-- [[智能体/Agentic_Coding_Tools/Claude_Code_Deep_Dive]] — Claude Code 产品解析
-- [[学习/guides/ai_engineering_roadmap_2026]] — AI 工程师学习路线
-- [[学习/guides/learning_paths_2026]] — 本库 6 条学习路径总览
-- [[智能体/Course_Notes/Learn_Claude_Code_L07_Skill_Loading]] — L07: Skill 两级加载机制
-- [[智能体/Course_Notes/Learn_Claude_Code_L19_MCP_Plugin]] — L19: MCP Plugin 工具发现
+- [[90_学习/Courses/share_ai/learn_claude_code]] — 仓库外部源引用索引
+- [[15_智能体/04_Agent_Harness/The_Anatomy_of_an_Agent_Harness]] — Harness 工程定义
+- [[15_智能体/08_Agentic_Coding_Tools/Claude_Code_Deep_Dive]] — Claude Code 产品解析
+- [[90_学习/guides/ai_engineering_roadmap_2026]] — AI 工程师学习路线
+- [[90_学习/guides/learning_paths_2026]] — 本库 6 条学习路径总览
+- [[15_智能体/15_Course_Notes/Learn_Claude_Code_L07_Skill_Loading]] — L07: Skill 两级加载机制
+- [[15_智能体/15_Course_Notes/Learn_Claude_Code_L19_MCP_Plugin]] — L19: MCP Plugin 工具发现
 
 ## 核心知识框架
 

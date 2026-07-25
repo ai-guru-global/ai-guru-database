@@ -48,7 +48,7 @@ sources: []
 
 ## 2. 昇腾 Ascend
 
-详见：[[部署推理/Hardware/Ascend_NPU_Inference_Guide|昇腾 NPU LLM 推理部署指南]]
+详见：[[10_部署推理/08_Hardware/Ascend_NPU_Inference_Guide|昇腾 NPU LLM 推理部署指南]]
 
 **特点**：
 - 全栈自研，生态最完整
@@ -167,11 +167,11 @@ mt-transformer inference \
 
 ## Related
 
-- [[部署推理/Hardware/Ascend_NPU_Inference_Guide|昇腾 NPU LLM 推理部署指南]]
+- [[10_部署推理/08_Hardware/Ascend_NPU_Inference_Guide|昇腾 NPU LLM 推理部署指南]]
 - [[概念/ascend-npu|Ascend NPU]]
 - [[概念/hami|HAMi]]
-- [[数学基础/AI_Hardware/Chinese_AI_Chips_Deep_Dive|国产 AI 芯片深度解析]]
-- [[架构基建/AI_Stack/HAMi_Deep_Dive|HAMi 深度解析]]
+- [[01_数学基础/10_AI_Hardware/Chinese_AI_Chips_Deep_Dive|国产 AI 芯片深度解析]]
+- [[12_架构基建/03_AI_Stack/HAMi_Deep_Dive|HAMi 深度解析]]
 
 ## 核心知识体系
 

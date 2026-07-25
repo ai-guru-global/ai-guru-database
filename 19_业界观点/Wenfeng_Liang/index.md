@@ -14,15 +14,15 @@ sources: []
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[业界观点/Wenfeng_Liang/about|about]] | 人物简介 | 所有读者 |
-| [[业界观点/Wenfeng_Liang/sayings|sayings]] | 金句语录 | 需要引用/了解观点者 |
+| [[19_业界观点/Wenfeng_Liang/about|about]] | 人物简介 | 所有读者 |
+| [[19_业界观点/Wenfeng_Liang/sayings|sayings]] | 金句语录 | 需要引用/了解观点者 |
 
 ## Related
 
-- [[业界观点/Zhilin_Yang/index|Zhilin Yang]]
-- [[业界观点/Jinze_Bai/index|Jinze Bai]]
-- [[业界观点/Junjie_Yan/index|Junjie Yan]]
-- [[业界观点/Jie_Tang/index|Jie Tang]]
+- [[19_业界观点/Zhilin_Yang/index|Zhilin Yang]]
+- [[19_业界观点/Jinze_Bai/index|Jinze Bai]]
+- [[19_业界观点/Junjie_Yan/index|Junjie Yan]]
+- [[19_业界观点/Jie_Tang/index|Jie Tang]]
 
 ## Wenfeng Liang 核心观点
 

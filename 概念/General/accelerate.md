@@ -14,7 +14,7 @@ relationships:
   - target: "概念/mixed-precision"
     type: related_to
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
 summary: "Accelerate 是 Hugging Face 的分布式训练抽象层，用最少代码改动实现多 GPU/多节点训练、混合精度、FSDP/DeepSpeed 集成。AI Stack 训练启动器工具链中的核心组件。"
 provenance:
   extracted: 0.30
@@ -180,7 +180,7 @@ accelerate launch --mixed_precision fp8 train.py
 - [[概念/deepspeed]] — DeepSpeed 框架
 - [[概念/mixed-precision]] — 混合精度
 - [[概念/huggingface]] — Hugging Face 平台
-- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
 
 ---
 

@@ -6,7 +6,7 @@ summary: "> **一句话理解**: Prompt 不是文案，是代码——任何一�
 created: 2026-06-15
 updated: 2026-06-15
 tier: supporting
-parent: "[[模型运维/LLMOps_2026]]"
+parent: "[[11_模型运维/LLMOps_2026]]"
 aliases:
   - "Prompt Engineering Ops"
   - Prompt_Engineering_Ops
@@ -17,7 +17,7 @@ sources: []
 
 > **一句话理解**: Prompt 不是文案，是代码——任何一行改动都可能让线上 LLM 应用从 95 分掉到 40 分，必须用工程化方式版本化、测试、灰度。
 
-本文是 [[LLMOps_2026]] §3「Prompt 工程化运维」的深扩专题，专注于 Prompt 作为可变更更单元的全生命周期管理。Prompt 的写作技巧见 [[大模型/Prompt_Engineering/README]]。
+本文是 [[LLMOps_2026]] §3「Prompt 工程化运维」的深扩专题，专注于 Prompt 作为可变更更单元的全生命周期管理。Prompt 的写作技巧见 [[05_大模型/08_Prompt_Engineering/README]]。
 
 ---
 
@@ -340,7 +340,7 @@ def detect_prompt_leakage(user_input: str, model_output: str) -> bool:
     return False
 ```
 
-详见 [[伦理安全/AI_Security_2026/README]]。
+详见 [[17_伦理安全/07_AI_Security_2026/README]]。
 
 ---
 
@@ -388,24 +388,24 @@ optimized = dspy.BootstrapFewShot().compile(RAGModule(), trainset=trainset)
 
 本文讲 Prompt 工程化的**方法论**。具体 Prompt 管理工具的用法：
 
-- [[运维/PromptLayer_Deep_Dive]] — PromptLayer：Prompt 版本管理与追踪
-- [[测试/Testing_Frameworks/Promptfoo_Deep_Dive]] — Promptfoo：Prompt 对比与红队
+- [[13_运维/PromptLayer_Deep_Dive]] — PromptLayer：Prompt 版本管理与追踪
+- [[09_测试/02_Testing_Frameworks/Promptfoo_Deep_Dive]] — Promptfoo：Prompt 对比与红队
 
 ---
 
 ## 8. 相关文档
 
 ### 本章内
-- [[模型运维/LLMOps_2026]] — 本系列主线（§3 是本文的概览版）
-- [[模型运维/LLM_Evaluation_Pipeline]] — 本文 §4 回归测试的评估方法深扩
-- [[模型运维/CI_CD/ML_CI_CD]] — 传统 ML CI/CD，本文是其 Prompt 时代的扩展
-- [[模型运维/MLOps_Maturity_Model]] — 成熟度模型
+- [[11_模型运维/LLMOps_2026]] — 本系列主线（§3 是本文的概览版）
+- [[11_模型运维/LLM_Evaluation_Pipeline]] — 本文 §4 回归测试的评估方法深扩
+- [[11_模型运维/06_CI_CD/ML_CI_CD]] — 传统 ML CI/CD，本文是其 Prompt 时代的扩展
+- [[11_模型运维/MLOps_Maturity_Model]] — 成熟度模型
 
 ### 跨章
-- [[大模型/Prompt_Engineering/README]] — Prompt 写作技巧（本文是工程化，那章是艺术化）
-- [[大模型/Prompt_Engineering/Prompt_Engineering_for_dummy]] — Prompt 入门
-- [[测试/Testing_Frameworks/Promptfoo_Deep_Dive]] — Promptfoo 工具详解
-- [[伦理安全/AI_Security_2026/README]] — Prompt 安全与红队
+- [[05_大模型/08_Prompt_Engineering/README]] — Prompt 写作技巧（本文是工程化，那章是艺术化）
+- [[05_大模型/08_Prompt_Engineering/Prompt_Engineering_for_dummy]] — Prompt 入门
+- [[09_测试/02_Testing_Frameworks/Promptfoo_Deep_Dive]] — Promptfoo 工具详解
+- [[17_伦理安全/07_AI_Security_2026/README]] — Prompt 安全与红队
 - [[概念/mlops]] — MLOps 概念页
 
 ---

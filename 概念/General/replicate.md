@@ -12,7 +12,7 @@ relationships:
   - target: "概念/huggingface"
     type: related_to
 sources:
-  - 部署推理/Replicate_Deep_Dive.md
+  - 10_部署推理/Replicate_Deep_Dive.md
 summary: "Replicate 是开源模型托管与 API 平台，允许开发者上传模型并通过 HTTP API 调用，提供自动扩缩容、按秒计费和多语言 SDK，是快速上线开源模型的热门选择。"
 provenance:
   extracted: 0.75

@@ -51,10 +51,10 @@ RAG（检索增强生成）的直觉很简单：LLM 记不住所有知识，所�
 
 ## Related
 
-- [[RAG系统/RAG-in-nutshell]] — RAG (检索增强生成) 速成指南 (共享: embedding, rag, retrieval, vector-database)
-- [[RAG系统/RAG_Systems]] — RAG 系统 (RAG Systems) (共享: embedding, rag, retrieval, vector-database)
-- [[RAG系统/README_Advanced]] — RAG高级实践 2026 (共享: embedding, rag, retrieval, vector-database)
-- [[RAG系统/RAG_Frameworks/Spring_AI_RAG_Deep_Dive]] — Spring AI RAG 深度解析 (共享: embedding, rag, retrieval, vector-database)
+- [[14_RAG系统/RAG-in-nutshell]] — RAG (检索增强生成) 速成指南 (共享: embedding, rag, retrieval, vector-database)
+- [[14_RAG系统/RAG_Systems]] — RAG 系统 (RAG Systems) (共享: embedding, rag, retrieval, vector-database)
+- [[14_RAG系统/README_Advanced]] — RAG高级实践 2026 (共享: embedding, rag, retrieval, vector-database)
+- [[14_RAG系统/06_RAG_Frameworks/Spring_AI_RAG_Deep_Dive]] — Spring AI RAG 深度解析 (共享: embedding, rag, retrieval, vector-database)
 
 ## 进阶知识拓展
 
@@ -92,9 +92,9 @@ RAG（检索增强生成）的直觉很简单：LLM 记不住所有知识，所�
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

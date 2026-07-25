@@ -129,12 +129,12 @@ Sutskever 认为：
 
 ## 交叉引用 (Cross-References)
 
-- [Talks 主题合成 2026](业界观点/Talks_Synthesis/Talks_Synthesis_2026.md) — 查看 Sutskever 在 Scaling Laws、开源 vs 闭源、AI 安全等主题中的立场
-- [[业界观点/Geoffrey_Hinton/about]] — Hinton 是 Sutskever 的博士导师，两人共同开发 AlexNet
-- [[业界观点/Mira_Murati/about]] — Murati 与 Sutskever 同为 OpenAI 核心领导层
-- [大模型基础](../../大模型/README.md) — GPT 系列与 Scaling Laws
-- [AI 历史时间线](入门/Fundamentals/AI_History_Timeline.md) — AlexNet、Seq2Seq、GPT 的发展
-- [AI 伦理与社会](入门/Ethics_and_Future/AI_Ethics_Society.md) — 对齐研究与 AI 安全
+- [Talks 主题合成 2026](19_业界观点/Talks_Synthesis/Talks_Synthesis_2026.md) — 查看 Sutskever 在 Scaling Laws、开源 vs 闭源、AI 安全等主题中的立场
+- [[19_业界观点/Geoffrey_Hinton/about]] — Hinton 是 Sutskever 的博士导师，两人共同开发 AlexNet
+- [[19_业界观点/Mira_Murati/about]] — Murati 与 Sutskever 同为 OpenAI 核心领导层
+- [大模型基础](../../05_大模型/README.md) — GPT 系列与 Scaling Laws
+- [AI 历史时间线](00_入门/01_Fundamentals/AI_History_Timeline.md) — AlexNet、Seq2Seq、GPT 的发展
+- [AI 伦理与社会](00_入门/04_Ethics_and_Future/AI_Ethics_Society.md) — 对齐研究与 AI 安全
 
 ---
 
@@ -152,10 +152,10 @@ Sutskever 认为：
 
 ## Related
 
-- [[业界观点/Andrej_Karpathy/about]] — Andrej Karpathy 简介 (Andrej Karpathy) (共享: insights, leaders, speeches, talks)
-- [[业界观点/Andrew_Ng/about]] — Andrew Ng 简介 (Andrew Ng) (共享: insights, leaders, speeches, talks)
-- [[业界观点/Andrew_Ng/sayings]] — Andrew Ng 关于 AI 的观点与格言 (共享: insights, leaders, speeches, talks)
-- [[业界观点/Bill_Gates/about]] — Bill Gates 简介 (Bill Gates) (共享: insights, leaders, speeches, talks)
+- [[19_业界观点/Andrej_Karpathy/about]] — Andrej Karpathy 简介 (Andrej Karpathy) (共享: insights, leaders, speeches, talks)
+- [[19_业界观点/Andrew_Ng/about]] — Andrew Ng 简介 (Andrew Ng) (共享: insights, leaders, speeches, talks)
+- [[19_业界观点/Andrew_Ng/sayings]] — Andrew Ng 关于 AI 的观点与格言 (共享: insights, leaders, speeches, talks)
+- [[19_业界观点/Bill_Gates/about]] — Bill Gates 简介 (Bill Gates) (共享: insights, leaders, speeches, talks)
 
 ## 附录：人物影响力评估
 

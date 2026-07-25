@@ -15,12 +15,12 @@ tags: [auto-index]
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[智能体/Agent_Evaluation/Demo/results/k8s_evaluation_results|k8s evaluation results]] | K8s scenario evaluation results JSON | evaluation engineers |
-| [[智能体/Agent_Evaluation/Demo/results/sample_results|sample results]] | Sample evaluation results JSON | developers |
+| [[15_智能体/07_Agent_Evaluation/Demo/results/k8s_evaluation_results|k8s evaluation results]] | K8s scenario evaluation results JSON | evaluation engineers |
+| [[15_智能体/07_Agent_Evaluation/Demo/results/sample_results|sample results]] | Sample evaluation results JSON | developers |
 
 ## Related
 
-- [[智能体/Agent_Evaluation/Demo/index|Demo 首页]]
+- [[15_智能体/07_Agent_Evaluation/Demo/index|Demo 首页]]
 
 ## results 核心概念
 

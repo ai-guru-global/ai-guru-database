@@ -389,7 +389,7 @@ def cai_rl_training(sl_model, constitution):
 
 ## 相关链接
 
-- [[大模型/Global_LLM_Ecosystem/Anthropic_Claude_Deep_Dive|Anthropic Claude 技术深度解析]] — Constitutional AI 的开创者
+- [[05_大模型/14_Global_LLM_Ecosystem/Anthropic_Claude_Deep_Dive|Anthropic Claude 技术深度解析]] — Constitutional AI 的开创者
 - [[概念/Training/rlhf|RLHF]] — Constitutional AI 的基础对齐方法
 - [[概念/Safety/ai-alignment|AI 对齐]] — 对齐技术总览
 - [[概念/LLM/self-rewarding|Self-Rewarding]] — 同类自监督对齐方法

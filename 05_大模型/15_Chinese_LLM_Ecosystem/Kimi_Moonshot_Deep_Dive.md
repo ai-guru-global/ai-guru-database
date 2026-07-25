@@ -1442,9 +1442,9 @@ Kimi 平台提供灵活的定价方案，详情参见定价与促销门户 (plat
 - Moonshot AI 官方博客: https://www.moonshot.cn
 
 ### Wiki 内部参考
-- [[大模型/Chinese_LLM_Ecosystem/README]] — 中国大模型生态全景
-- [[大模型/Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]] — 全厂商对比矩阵
-- [[大模型/Chinese_LLM_Ecosystem/Chinese_LLM_Training_Inference_Platforms]] — 训推平台实战
+- [[05_大模型/15_Chinese_LLM_Ecosystem/README]] — 中国大模型生态全景
+- [[05_大模型/15_Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]] — 全厂商对比矩阵
+- [[05_大模型/15_Chinese_LLM_Ecosystem/Chinese_LLM_Training_Inference_Platforms]] — 训推平台实战
 
 ---
 *Last updated: 2026-06-01*

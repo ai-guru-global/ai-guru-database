@@ -15,17 +15,17 @@ AI 运维知识体系（Ops Knowledge Base）— 涵盖可观测性、事件响�
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[运维/README|README]] | Ops module overview and knowledge map | all readers |
-| [[运维/README_for_dummy|README for dummy]] | Ops beginner guide and quick start | newcomers / junior ops engineers |
+| [[13_运维/README|README]] | Ops module overview and knowledge map | all readers |
+| [[13_运维/README_for_dummy|README for dummy]] | Ops beginner guide and quick start | newcomers / junior ops engineers |
 
 ## Related
 
-- [[运维/Observability_index|Observability]]
-- [[运维/Incident_Response/index|Incident Response]]
-- [[运维/Chaos_Engineering_index|Chaos Engineering]]
-- [[运维/Capacity_Planning_index|Capacity Planning]]
-- [[运维/Cost_Management/index|Cost Management]]
-- [[模型运维/index|模型运维]]
+- [[13_运维/Observability_index|Observability]]
+- [[13_运维/03_Incident_Response/index|Incident Response]]
+- [[13_运维/Chaos_Engineering_index|Chaos Engineering]]
+- [[13_运维/Capacity_Planning_index|Capacity Planning]]
+- [[13_运维/05_Cost_Management/index|Cost Management]]
+- [[11_模型运维/index|模型运维]]
 
 ## 进阶知识拓展
 
@@ -63,9 +63,9 @@ AI 运维知识体系（Ops Knowledge Base）— 涵盖可观测性、事件响�
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

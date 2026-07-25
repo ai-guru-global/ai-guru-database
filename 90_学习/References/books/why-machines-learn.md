@@ -227,13 +227,13 @@ P(假设 | 数据) = P(数据 | 假设) × P(假设) / P(数据)
 
 | 本书章节 | 知识库主题 | 关联说明 |
 |----------|------------|----------|
-| Ch 1-2 最小二乘/拟合 | [[数学基础/Math_Foundations]] | 回归与优化基础 |
-| Ch 3-4 线性代数/PCA | [[数学基础/Math_Foundations]] | 向量空间与降维 |
-| Ch 5-6 概率/贝叶斯 | [[数学基础/Math_Foundations]] | 概率论基础 |
-| Ch 7-8 神经网络/反向传播 | [[深度学习/]] | 神经网络原理 |
-| Ch 9 SVM/核方法 | [[机器学习/]] | 经典 ML 算法 |
-| Ch 10 深度学习 | [[深度学习/]] | CNN、表示学习 |
-| Ch 11 生成模型 | [[大模型/]] | VAE、GAN、扩散 |
+| Ch 1-2 最小二乘/拟合 | [[01_数学基础/Math_Foundations]] | 回归与优化基础 |
+| Ch 3-4 线性代数/PCA | [[01_数学基础/Math_Foundations]] | 向量空间与降维 |
+| Ch 5-6 概率/贝叶斯 | [[01_数学基础/Math_Foundations]] | 概率论基础 |
+| Ch 7-8 神经网络/反向传播 | [[03_深度学习/]] | 神经网络原理 |
+| Ch 9 SVM/核方法 | [[02_机器学习/]] | 经典 ML 算法 |
+| Ch 10 深度学习 | [[03_深度学习/]] | CNN、表示学习 |
+| Ch 11 生成模型 | [[05_大模型/]] | VAE、GAN、扩散 |
 
 ### 与相关书籍的关系
 
@@ -261,7 +261,7 @@ P(假设 | 数据) = P(数据 | 假设) × P(假设) / P(数据)
 
 ### 路径 C: 数学补强路径
 
-1. 本书建立直觉 → [[数学基础/Math_Foundations]] 系统补数学 → 花书深入理论
+1. 本书建立直觉 → [[01_数学基础/Math_Foundations]] 系统补数学 → 花书深入理论
 2. 适合数学基础薄弱但想深入 ML 的工程师
 
 ## 亮点与局限
@@ -397,10 +397,10 @@ P(假设 | 数据) = P(数据 | 假设) × P(假设) / P(数据)
 
 ## 延伸阅读
 
-- [[学习/References/books/deep-learning-goodfellow|Deep Learning (花书)]] — 进阶理论
-- [[学习/References/books/dl-with-python-chollet|Deep Learning with Python]] — 代码实践
-- [[数学基础/Math_Foundations]] — 知识库数学基础章节
-- [[深度学习/]] — 深度学习知识库章节
-- [[学习/guides/ai_engineering_roadmap_2026|AI 工程路线图 2026]]
+- [[90_学习/References/books/deep-learning-goodfellow|Deep Learning (花书)]] — 进阶理论
+- [[90_学习/References/books/dl-with-python-chollet|Deep Learning with Python]] — 代码实践
+- [[01_数学基础/Math_Foundations]] — 知识库数学基础章节
+- [[03_深度学习/]] — 深度学习知识库章节
+- [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图 2026]]
 
-> **关联**: → [[学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]] | [[数学基础/]] | [[深度学习/]] | [[机器学习/]]
+> **关联**: → [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]] | [[01_数学基础/]] | [[03_深度学习/]] | [[02_机器学习/]]

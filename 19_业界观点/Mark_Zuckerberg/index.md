@@ -28,7 +28,7 @@ Mark Zuckerberg 是开源 AI 战略的总指挥。他将 LLaMA 开源确立为 M
 |------|------|
 | 现任 | Meta 创始人兼 CEO（2004-）|
 | 核心信念 | 开源是安全最佳防线 + 生态主导 |
-| 安全立场 | 务实（与 [[业界观点/Yann_LeCun/about|LeCun]] 一致）|
+| 安全立场 | 务实（与 [[19_业界观点/Yann_LeCun/about|LeCun]] 一致）|
 | 开源立场 | 坚决支持（权重完全开源）|
 | AGI 时间表 | 不公开具体年份 |
 | 独特贡献 | LLaMA 开源生态 + VR/AR Metaverse |
@@ -39,8 +39,8 @@ Mark Zuckerberg 是开源 AI 战略的总指挥。他将 LLaMA 开源确立为 M
 
 | 文件 | 内容 | 适用人群 |
 |------|------|----------|
-| [[业界观点/Mark_Zuckerberg/about\|about]] | 完整人物简介：LLaMA、Metaverse、开源战略 | 所有读者 |
-| [[业界观点/Mark_Zuckerberg/sayings\|sayings]] | 重要语录合集 | 研究者 |
+| [[19_业界观点/Mark_Zuckerberg/about\|about]] | 完整人物简介：LLaMA、Metaverse、开源战略 | 所有读者 |
+| [[19_业界观点/Mark_Zuckerberg/sayings\|sayings]] | 重要语录合集 | 研究者 |
 
 ---
 
@@ -85,7 +85,7 @@ Mark Zuckerberg 是开源 AI 战略的总指挥。他将 LLaMA 开源确立为 M
 | Metaverse | "AI 将成为 Metaverse 的核心" | Meta Connect |
 | 算力 | 宣布 Meta 将拥有 60 万+ GPU | 2024 |
 
-完整语录见 [[业界观点/Mark_Zuckerberg/sayings|Zuckerberg 语录]]。
+完整语录见 [[19_业界观点/Mark_Zuckerberg/sayings|Zuckerberg 语录]]。
 
 ---
 
@@ -93,11 +93,11 @@ Mark Zuckerberg 是开源 AI 战略的总指挥。他将 LLaMA 开源确立为 M
 
 | 派别 | 归属 |
 |------|------|
-| 开源倡导派 | 旗手（与 [[业界观点/Yann_LeCun/about|LeCun]]）|
+| 开源倡导派 | 旗手（与 [[19_业界观点/Yann_LeCun/about|LeCun]]）|
 | 平台生态派 | 代表（Android 式战略）|
 | Metaverse 派 | 旗手 |
 
-Zuckerberg 的开源战略与 [[业界观点/Sam_Altman/about|Altman]] 的闭源形成直接对立。参见 [[业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026|开源 vs 闭源之争]]。
+Zuckerberg 的开源战略与 [[19_业界观点/Sam_Altman/about|Altman]] 的闭源形成直接对立。参见 [[19_业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026|开源 vs 闭源之争]]。
 
 ---
 
@@ -105,10 +105,10 @@ Zuckerberg 的开源战略与 [[业界观点/Sam_Altman/about|Altman]] 的闭源
 
 | 关系 | 人物 |
 |------|------|
-| Meta 首席 AI 科学家 | [[业界观点/Yann_LeCun/about|Yann LeCun]] |
-| 闭源对手 | [[业界观点/Sam_Altman/about|Altman]]、[[业界观点/Demis_Hassabis/about|Hassabis]] |
-| 算力供应商 | [[业界观点/Jensen_Huang/about|Jensen Huang]] |
-| 开源呼应（中国）| [[业界观点/Wenfeng_Liang/about|梁文锋]]、[[业界观点/Jinze_Bai/about|白金泽]] |
+| Meta 首席 AI 科学家 | [[19_业界观点/Yann_LeCun/about|Yann LeCun]] |
+| 闭源对手 | [[19_业界观点/Sam_Altman/about|Altman]]、[[19_业界观点/Demis_Hassabis/about|Hassabis]] |
+| 算力供应商 | [[19_业界观点/Jensen_Huang/about|Jensen Huang]] |
+| 开源呼应（中国）| [[19_业界观点/Wenfeng_Liang/about|梁文锋]]、[[19_业界观点/Jinze_Bai/about|白金泽]] |
 
 ---
 
@@ -116,9 +116,9 @@ Zuckerberg 的开源战略与 [[业界观点/Sam_Altman/about|Altman]] 的闭源
 
 | 阶段 | 推荐内容 | 目标 |
 |------|----------|------|
-| 入门 | [[业界观点/Mark_Zuckerberg/about\|about]] | 了解开源战略 |
-| 进阶 | [[业界观点/Mark_Zuckerberg/sayings\|sayings]] | 掌握开源论据 |
-| 对比 | [[业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026\|开源 vs 闭源]] | 立场定位 |
+| 入门 | [[19_业界观点/Mark_Zuckerberg/about\|about]] | 了解开源战略 |
+| 进阶 | [[19_业界观点/Mark_Zuckerberg/sayings\|sayings]] | 掌握开源论据 |
+| 对比 | [[19_业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026\|开源 vs 闭源]] | 立场定位 |
 
 ---
 
@@ -158,12 +158,12 @@ Zuckerberg 的开源战略与 [[业界观点/Sam_Altman/about|Altman]] 的闭源
 
 ## 关联导航
 
-- [[业界观点/Mark_Zuckerberg/about\|人物简介]] · [[业界观点/Mark_Zuckerberg/sayings\|核心语录]]
-- [[业界观点/Yann_LeCun/about\|Yann LeCun]] · [[业界观点/Sam_Altman/about\|Sam Altman]]
-- [[业界观点/Jensen_Huang/about\|Jensen Huang]]
-- [[业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026\|开源 vs 闭源]]
-- [[业界观点/Talks_Synthesis/China_US_AI_Race_Leaders_Views\|中美 AI 竞赛]]
-- [[业界观点/index\|业界观点首页]]
+- [[19_业界观点/Mark_Zuckerberg/about\|人物简介]] · [[19_业界观点/Mark_Zuckerberg/sayings\|核心语录]]
+- [[19_业界观点/Yann_LeCun/about\|Yann LeCun]] · [[19_业界观点/Sam_Altman/about\|Sam Altman]]
+- [[19_业界观点/Jensen_Huang/about\|Jensen Huang]]
+- [[19_业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026\|开源 vs 闭源]]
+- [[19_业界观点/Talks_Synthesis/China_US_AI_Race_Leaders_Views\|中美 AI 竞赛]]
+- [[19_业界观点/index\|业界观点首页]]
 
 ---
 

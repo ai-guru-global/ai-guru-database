@@ -15,15 +15,15 @@ tags: [auto-index]
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[论文精读/Efficiency/FlashAttention_Deep_Dive|FlashAttention Deep Dive]] | FlashAttention: IO-aware exact attention acceleration paper deep dive | LLM researchers / system engineers |
-| [[论文精读/Efficiency/LoRA_Deep_Dive|LoRA Deep Dive]] | LoRA: Low-Rank Adaptation for parameter-efficient fine-tuning paper deep dive | LLM engineers / researchers |
-| [[论文精读/Efficiency/Matryoshka_Representation_Learning_Deep_Dive|Matryoshka Representation Learning Deep Dive]] | Matryoshka Representation Learning: multi-granularity embedding paper deep dive | representation learning researchers |
+| [[20_论文精读/04_Efficiency/FlashAttention_Deep_Dive|FlashAttention Deep Dive]] | FlashAttention: IO-aware exact attention acceleration paper deep dive | LLM researchers / system engineers |
+| [[20_论文精读/04_Efficiency/LoRA_Deep_Dive|LoRA Deep Dive]] | LoRA: Low-Rank Adaptation for parameter-efficient fine-tuning paper deep dive | LLM engineers / researchers |
+| [[20_论文精读/04_Efficiency/Matryoshka_Representation_Learning_Deep_Dive|Matryoshka Representation Learning Deep Dive]] | Matryoshka Representation Learning: multi-granularity embedding paper deep dive | representation learning researchers |
 
 ## Related
 
-- [[论文精读/index|论文精读首页]]
-- [[部署推理/Quantization/index|Quantization]]
-- [[模型训练/Compression/index|Compression]]
+- [[20_论文精读/index|论文精读首页]]
+- [[10_部署推理/05_Quantization/index|Quantization]]
+- [[07_模型训练/05_Compression/index|Compression]]
 
 ## 进阶知识拓展
 
@@ -61,9 +61,9 @@ tags: [auto-index]
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

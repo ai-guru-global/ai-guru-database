@@ -73,7 +73,7 @@ $$
 \text{Arithmetic Intensity}_{\text{decode}} = \frac{2 \cdot \text{params}}{\text{params} \cdot \text{bytes/param}} \approx \frac{2}{\text{bytes/param}}
 $$
 
-FP16 下算术强度约 1 FLOP/byte，远低于 H100 的拐点（~150 FLOP/byte），所以 decode 是纯带宽瓶颈。因此推理优化的核心是**减少访存**——算子融合（少读写）、定制算子（高效访存模式），比堆算力更有效。参见 [[部署推理/Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]] 的 Roofline 分析。
+FP16 下算术强度约 1 FLOP/byte，远低于 H100 的拐点（~150 FLOP/byte），所以 decode 是纯带宽瓶颈。因此推理优化的核心是**减少访存**——算子融合（少读写）、定制算子（高效访存模式），比堆算力更有效。参见 [[10_部署推理/04_Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]] 的 Roofline 分析。
 
 ### 1.3 编译器与算子的分工
 
@@ -260,11 +260,11 @@ Pipeline:           多缓冲 (multi-stage) 隐藏访存延迟
 
 ### 4.3 Grouped GEMM 与 MoE
 
-MoE 推理中，每个专家处理不同数量的 token，需要 **Grouped GEMM**（一次处理多个不同大小的矩阵乘）。CUTLASS 的 Grouped GEMM 把多个专家的 GEMM 打包成一次 kernel 启动，避免逐专家单独 GEMM 的 kernel launch 开销，显著提升 MoE 吞吐。关联 [[部署推理/Inference_Performance/MoE_Inference_Optimization|MoE 推理优化]]。
+MoE 推理中，每个专家处理不同数量的 token，需要 **Grouped GEMM**（一次处理多个不同大小的矩阵乘）。CUTLASS 的 Grouped GEMM 把多个专家的 GEMM 打包成一次 kernel 启动，避免逐专家单独 GEMM 的 kernel launch 开销，显著提升 MoE 吞吐。关联 [[10_部署推理/04_Inference_Performance/MoE_Inference_Optimization|MoE 推理优化]]。
 
 ### 4.4 FP8 GEMM
 
-H100 的 FP8 Tensor Core 算力是 FP16 的 2 倍。CUTLASS 提供 FP8 GEMM 模板，是 FP8 量化推理（如 TensorRT-LLM 的 FP8 路径）的底层。参见 [[部署推理/Quantization/index|量化]]。
+H100 的 FP8 Tensor Core 算力是 FP16 的 2 倍。CUTLASS 提供 FP8 GEMM 模板，是 FP8 量化推理（如 TensorRT-LLM 的 FP8 路径）的底层。参见 [[10_部署推理/05_Quantization/index|量化]]。
 
 ---
 
@@ -325,7 +325,7 @@ $$
 
 ## 6. FlashAttention 原理
 
-**FlashAttention** 是 LLM 推理/训练最重要的算子优化之一，通过分块（tiling）和在线 softmax 避免实例化完整 attention 矩阵。这里讲清原理，完整 kernel 族见 [[部署推理/Inference_Performance/Flash_Kernels_Deep_Dive|Flash Kernels]]。
+**FlashAttention** 是 LLM 推理/训练最重要的算子优化之一，通过分块（tiling）和在线 softmax 避免实例化完整 attention 矩阵。这里讲清原理，完整 kernel 族见 [[10_部署推理/04_Inference_Performance/Flash_Kernels_Deep_Dive|Flash Kernels]]。
 
 ### 6.1 标准 Attention 的问题
 
@@ -384,13 +384,13 @@ $$
 | 速度 | 慢（访存瓶颈） | 快 2-4×（计算密集化） |
 | 反向传播 | 存 $N \2 N$ 重算 | 用 forward 的统计量重算 |
 
-FlashAttention 把 attention 从访存密集变成计算密集，是长上下文推理/训练能跑起来的前提。详见 [[部署推理/Inference_Performance/Flash_Kernels_Deep_Dive|Flash Kernels]]（含 FlashDecoding/FlashInfer/FlashMLA 变体）。
+FlashAttention 把 attention 从访存密集变成计算密集，是长上下文推理/训练能跑起来的前提。详见 [[10_部署推理/04_Inference_Performance/Flash_Kernels_Deep_Dive|Flash Kernels]]（含 FlashDecoding/FlashInfer/FlashMLA 变体）。
 
 ---
 
 ## 7. KV Cache 算子
 
-KV Cache 是自回归推理的核心，其算子优化直接影响 decode 性能。详见 [[部署推理/Inference_Optimization/kv-cache-inference-optimization|KV Cache 优化]]，这里聚焦 kernel 层面。
+KV Cache 是自回归推理的核心，其算子优化直接影响 decode 性能。详见 [[10_部署推理/03_Inference_Optimization/kv-cache-inference-optimization|KV Cache 优化]]，这里聚焦 kernel 层面。
 
 ### 7.1 PagedAttention kernel
 
@@ -427,7 +427,7 @@ KV 切成 G 组:
 增加 decode 并行度, 提升带宽利用率, 降低 TPOT
 ```
 
-详见 [[部署推理/Inference_Performance/Flash_Kernels_Deep_Dive|Flash Kernels]] 的 FlashDecoding 章节。
+详见 [[10_部署推理/04_Inference_Performance/Flash_Kernels_Deep_Dive|Flash Kernels]] 的 FlashDecoding 章节。
 
 ### 7.3 KV Cache append 融合
 
@@ -617,19 +617,19 @@ nsys profile -t cuda,nvtx -o infer_profile python inference.py
 
 ## Related
 
-- [[部署推理/Inference_Performance/Flash_Kernels_Deep_Dive|Flash Kernels]]
-- [[部署推理/Inference_Performance/Communication_Systems_Deep_Dive|通信系统]]（通信与算子的边界）
-- [[部署推理/Inference_Optimization/kv-cache-inference-optimization|KV Cache 优化]]
-- [[部署推理/Inference_Optimization/kv-cache-paged-attention|PagedAttention]]
-- [[部署推理/Quantization/index|量化]]
-- [[部署推理/index|部署推理]]
-- [[深度学习/index|深度学习]]
-- [[架构基建/index|架构基建]]
-- [[架构基建/Hardware_Compute/index|硬件计算]]
-- [[部署推理/Inference_Performance/MoE_Inference_Optimization|MoE 推理优化]]
-- [[部署推理/Inference_Engines/vLLM_Deep_Dive|vLLM]]
-- [[部署推理/Inference_Engines/TensorRT_LLM_Deep_Dive|TensorRT-LLM]]
-- [[部署推理/README|模型部署与推理]]
+- [[10_部署推理/04_Inference_Performance/Flash_Kernels_Deep_Dive|Flash Kernels]]
+- [[10_部署推理/04_Inference_Performance/Communication_Systems_Deep_Dive|通信系统]]（通信与算子的边界）
+- [[10_部署推理/03_Inference_Optimization/kv-cache-inference-optimization|KV Cache 优化]]
+- [[10_部署推理/03_Inference_Optimization/kv-cache-paged-attention|PagedAttention]]
+- [[10_部署推理/05_Quantization/index|量化]]
+- [[10_部署推理/index|部署推理]]
+- [[03_深度学习/index|深度学习]]
+- [[12_架构基建/index|架构基建]]
+- [[12_架构基建/07_Hardware_Compute/index|硬件计算]]
+- [[10_部署推理/04_Inference_Performance/MoE_Inference_Optimization|MoE 推理优化]]
+- [[10_部署推理/02_Inference_Engines/vLLM_Deep_Dive|vLLM]]
+- [[10_部署推理/02_Inference_Engines/TensorRT_LLM_Deep_Dive|TensorRT-LLM]]
+- [[10_部署推理/README|模型部署与推理]]
 
 ## 术语速查表
 

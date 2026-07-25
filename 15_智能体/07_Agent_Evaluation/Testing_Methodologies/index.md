@@ -15,15 +15,15 @@ Agent 测试框架与测试套件设计方法论（test suite design methodology
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[智能体/Agent_Evaluation/Testing_Methodologies/Test_Suites|Test Suites]] | Test suite design: case organization, coverage and regression strategy | evaluation engineers / QA |
-| [[智能体/Agent_Evaluation/Testing_Methodologies/Testing_Framework|Testing Framework]] | Testing framework selection and setup: pytest, mock and integration testing | evaluation engineers / QA |
+| [[15_智能体/07_Agent_Evaluation/Testing_Methodologies/Test_Suites|Test Suites]] | Test suite design: case organization, coverage and regression strategy | evaluation engineers / QA |
+| [[15_智能体/07_Agent_Evaluation/Testing_Methodologies/Testing_Framework|Testing Framework]] | Testing framework selection and setup: pytest, mock and integration testing | evaluation engineers / QA |
 
 ## Related
 
-- [[智能体/Agent_Evaluation/Test_Bank/index|题库管理]]
-- [[智能体/Agent_Evaluation/QA/index|质量保证]]
-- [[智能体/Agent_Evaluation/Assessment/index|评估流程]]
-- [[智能体/Agent_Evaluation/index|← 返回智能体评估]]
+- [[15_智能体/07_Agent_Evaluation/Test_Bank/index|题库管理]]
+- [[15_智能体/07_Agent_Evaluation/QA/index|质量保证]]
+- [[15_智能体/07_Agent_Evaluation/Assessment/index|评估流程]]
+- [[15_智能体/07_Agent_Evaluation/index|← 返回智能体评估]]
 
 ## Testing_Methodologies 核心概念
 

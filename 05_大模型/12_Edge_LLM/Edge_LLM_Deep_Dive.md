@@ -354,8 +354,8 @@ Android:
 
 ## 相关链接
 
-- [[大模型/Edge_LLM/README|端侧 LLM 概览]] — 端侧 LLM 主题导览
-- [[大模型/Edge_LLM/GenAI_L19_Building_with_SLMs|GenAI L19: 构建小语言模型应用]] — SLM 实战课程
+- [[05_大模型/12_Edge_LLM/README|端侧 LLM 概览]] — 端侧 LLM 主题导览
+- [[05_大模型/12_Edge_LLM/GenAI_L19_Building_with_SLMs|GenAI L19: 构建小语言模型应用]] — SLM 实战课程
 - [[概念/LLM/edge-llm|Edge LLM]] — 端侧 LLM 概念卡片
 - [[概念/LLM/phi-series|Phi 系列]] — 微软 Phi 小模型概念卡片
 - [[概念/LLM/gemma-series|Gemma 系列]] — Google Gemma 小模型概念卡片

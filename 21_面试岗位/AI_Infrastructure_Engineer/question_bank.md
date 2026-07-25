@@ -132,11 +132,11 @@ sources: []
 
 ## Related
 
-- [[面试岗位/AI_Infrastructure_Engineer/company_level_question_bank|AI Infrastructure Engineer 按公司/级别区分的题库]]
-- [[面试岗位/AI_Infrastructure_Engineer/interview_answers|AI Infrastructure Engineer 面试题实例答案]]
-- [[面试岗位/AI_Infrastructure_Engineer/interview_preparing|AI Infrastructure Engineer 面试准备]]
-- [[面试岗位/README|AI 面试准备 (Interviews)]]
-- [[面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/AI_Infrastructure_Engineer/company_level_question_bank|AI Infrastructure Engineer 按公司/级别区分的题库]]
+- [[21_面试岗位/AI_Infrastructure_Engineer/interview_answers|AI Infrastructure Engineer 面试题实例答案]]
+- [[21_面试岗位/AI_Infrastructure_Engineer/interview_preparing|AI Infrastructure Engineer 面试准备]]
+- [[21_面试岗位/README|AI 面试准备 (Interviews)]]
+- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]
 ---
 title: AI Infrastructure Engineer 题库
 category: 21-interviews-ai-infrastructure-engineer
@@ -178,11 +178,11 @@ aliases:
 
 ## Related
 
-- [[面试岗位/AI_Infrastructure_Engineer/company_level_question_bank|AI Infrastructure Engineer 按公司/级别区分的题库]]
-- [[面试岗位/AI_Infrastructure_Engineer/interview_answers|AI Infrastructure Engineer 面试题实例答案]]
-- [[面试岗位/AI_Infrastructure_Engineer/interview_preparing|AI Infrastructure Engineer 面试准备]]
-- [[面试岗位/README|AI 面试准备 (Interviews)]]
-- [[面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/AI_Infrastructure_Engineer/company_level_question_bank|AI Infrastructure Engineer 按公司/级别区分的题库]]
+- [[21_面试岗位/AI_Infrastructure_Engineer/interview_answers|AI Infrastructure Engineer 面试题实例答案]]
+- [[21_面试岗位/AI_Infrastructure_Engineer/interview_preparing|AI Infrastructure Engineer 面试准备]]
+- [[21_面试岗位/README|AI 面试准备 (Interviews)]]
+- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]
 
 ## 面试核心知识框架
 

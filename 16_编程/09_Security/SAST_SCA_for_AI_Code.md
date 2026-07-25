@@ -73,7 +73,7 @@ flowchart LR
 |------|------|---------|---------|---------|-------------|
 | **SAST** | Static AST | 源码静态分析 | 提交/CI | 代码逻辑漏洞 | **核心** |
 | **SCA** | Software Composition Analysis | 依赖清单分析 | 提交/CI | 第三方依赖 CVE | **核心** |
-| DAST | Dynamic AST | 运行时探测 | 测试/预发布 | 运行时漏洞 | 补充 |
+| DAST | Dynamic AST | 运行时探测 | 09_测试/预发布 | 运行时漏洞 | 补充 |
 | IAST | Interactive AST | 运行时插桩 | 测试中 | 代码+运行时 | 补充 |
 | Secret Scan | 密钥扫描 | 模式匹配 | 提交/CI | 硬编码密钥 | **核心** |
 
@@ -610,7 +610,7 @@ flowchart LR
 
 ## 11. Related
 
-- [[编程/Security/AI_Code_Security_Audit_Runbook]] — AI 代码安全审计 Runbook (共享: security, sast, sca, ci-cd)
-- [[编程/Security/AI_Code_Vulnerabilities]] — AI 代码漏洞类型 (共享: vulnerabilities, security)
-- [[编程/Security/AI_Code_Review_Security]] — AI 代码审查安全实践 (共享: code-review, security, sast)
-- [[编程/Security/Secure_Prompt_Engineering]] — 安全提示工程 (共享: security, ai-coding)
+- [[16_编程/09_Security/AI_Code_Security_Audit_Runbook]] — AI 代码安全审计 Runbook (共享: security, sast, sca, ci-cd)
+- [[16_编程/09_Security/AI_Code_Vulnerabilities]] — AI 代码漏洞类型 (共享: vulnerabilities, security)
+- [[16_编程/09_Security/AI_Code_Review_Security]] — AI 代码审查安全实践 (共享: code-review, security, sast)
+- [[16_编程/09_Security/Secure_Prompt_Engineering]] — 安全提示工程 (共享: security, ai-coding)

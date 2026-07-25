@@ -296,7 +296,7 @@ Markdown body 包含 Skill 指令，没有格式限制。推荐章节：
 引用其他文件时，使用**从 Skill 根目录的相对路径**：
 
 ```markdown
-See [the reference guide](智能体/Agent_Skills/Agent_Skill_Reference.md) for details.
+See [the reference guide](15_智能体/05_Agent_Skills/Agent_Skill_Reference.md) for details.
 
 Run the extraction script:
 `scripts/extract.py`
@@ -1007,7 +1007,7 @@ description: Use this skill when: the user asks about PDFs
 | **Factory** | 平台 | AI 原生开发平台 |
 | **Databricks** | 数据平台 | 数据工程 Agent |
 | **Snowflake** | 数据平台 | Cortex Code Agent |
-| **Spring AI** | 框架 | Java AI 应用框架 → [深度解析](数学基础/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md) |
+| **Spring AI** | 框架 | Java AI 应用框架 → [深度解析](01_数学基础/11_Java_Ecosystem_AI/Spring_AI_Deep_Dive.md) |
 | **Goose** | CLI | Block 开源 Agent |
 | **Letta** | 平台 | 有状态记忆 Agent |
 | **Laravel Boost** | 框架 | Laravel 最佳实践 |
@@ -1131,7 +1131,7 @@ ML 工作流全链路：
 | 团队 | Skills 数量 | 重点领域 |
 |------|------------|---------|
 | **Google Workspace** | 17 | Drive/Gmail/Calendar/Docs/Sheets/Slides/Chat |
-| **HashiCorp** | 11 | Terraform Provider 开发/测试/模块化 |
+| **HashiCorp** | 11 | Terraform Provider 开发/09_测试/模块化 |
 | **Expo** | 11 | 原生 UI/API 路由/CI-CD/部署 |
 | **Netlify** | 12 | Functions/Edge/Blobs/DB/Image CDN/Forms |
 | **Better Auth** | 7 | 认证最佳实践/错误解释/OAuth/2FA |
@@ -1381,9 +1381,9 @@ skills-ref validate .agents/skills/my-skill
 
 ## Related
 
-- [[智能体/Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
-- [[智能体/Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
-- [[智能体/Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
-- [[智能体/Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)
-- [[智能体/Agent_Skills/Agent_Skill_Reference|Agent Skill 通用参考规范]] — Skill 文档结构与元数据约定
-- [[智能体/Agent_Skills/Skill_Mapping_Guide|地理空间数据映射指南]] — Skill 中地理/空间数据建模参考
+- [[15_智能体/07_Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
+- [[15_智能体/07_Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[15_智能体/07_Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[15_智能体/07_Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)
+- [[15_智能体/05_Agent_Skills/Agent_Skill_Reference|Agent Skill 通用参考规范]] — Skill 文档结构与元数据约定
+- [[15_智能体/05_Agent_Skills/Skill_Mapping_Guide|地理空间数据映射指南]] — Skill 中地理/空间数据建模参考

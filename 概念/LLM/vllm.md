@@ -6,10 +6,10 @@ aliases:
   - "vllm-engine"
 category: -concepts
 sources:
-  - 部署推理/Inference_Engines/vLLM_Deep_Dive.md
-  - 部署推理/Inference_Engines/TGI_Deep_Dive.md
-  - 部署推理/Inference_Engines/Modal_Deep_Dive.md
-  - 部署推理/Inference_Engines/KServe_Deep_Dive.md
+  - 10_部署推理/02_Inference_Engines/vLLM_Deep_Dive.md
+  - 10_部署推理/02_Inference_Engines/TGI_Deep_Dive.md
+  - 10_部署推理/02_Inference_Engines/Modal_Deep_Dive.md
+  - 10_部署推理/02_Inference_Engines/KServe_Deep_Dive.md
 relationships:
   - target: "概念/llm-inference-engine"
     type: related_to
@@ -171,7 +171,7 @@ vllm serve meta-llama/Llama-3-70B-Instruct \
 
 ---
 
-**参见**：[[vLLM_Deep_Dive]] · [[LLM_Inference_Deep_Dive]] · [[部署推理/Inference_Engines/README]] · [[部署推理/README|部署推理]]
+**参见**：[[vLLM_Deep_Dive]] · [[LLM_Inference_Deep_Dive]] · [[10_部署推理/02_Inference_Engines/README]] · [[10_部署推理/README|部署推理]]
 
 ---
 
@@ -201,4 +201,4 @@ vllm serve meta-llama/Llama-3-70B-Instruct \
 - [[概念/Inference/paged-attention|PagedAttention]]
 - [[概念/Inference/continuous-batching|Continuous Batching]]
 - [[概念/LLM/exllama|ExLlamaV2]]
-- [[部署推理/Inference_Engines/vLLM_Deep_Dive|vLLM 深度解析]]
+- [[10_部署推理/02_Inference_Engines/vLLM_Deep_Dive|vLLM 深度解析]]

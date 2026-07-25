@@ -163,8 +163,8 @@ AI 分析:
 ## 下一步
 
 - 想学监控？→ 查看子目录具体文档
-- 想学 DevOps？→ [MLOps/README_for_dummy.md](../模型运维/README_for_dummy.md)
-- 想学云运维？→ [_projects/Cloud_Ops_Agent/README_for_dummy.md](../模型运维/README_for_dummy.md)
+- 想学 DevOps？→ [MLOps/README_for_dummy.md](../11_模型运维/README_for_dummy.md)
+- 想学云运维？→ [_projects/Cloud_Ops_Agent/README_for_dummy.md](../11_模型运维/README_for_dummy.md)
 
 ---
 
@@ -172,12 +172,12 @@ AI 分析:
 
 ## Related
 
-- [[运维/AIOps_Fundamentals/AIOps-in-nutshell]] — AI Ops 速成指南 (共享: ai-ops, incident-response, monitoring, observability)
-- [[运维/SRE_Reliability/AI_Incident_Response_Playbook]] — AI 系统事故响应手册 (共享: ai-ops, incident-response, monitoring, observability)
-- [[运维/AIOps_Fundamentals/AI_Ops_for_dummy]] — AI Ops 入门指南 (for Dummies) (共享: ai-ops, incident-response, monitoring, observability)
-- [[运维/README]] — AI 运维与可观测性 (AI Ops) (共享: ai-ops, incident-response, monitoring, observability)
+- [[13_运维/01_AIOps_Fundamentals/AIOps-in-nutshell]] — AI Ops 速成指南 (共享: ai-ops, incident-response, monitoring, observability)
+- [[13_运维/02_SRE_Reliability/AI_Incident_Response_Playbook]] — AI 系统事故响应手册 (共享: ai-ops, incident-response, monitoring, observability)
+- [[13_运维/01_AIOps_Fundamentals/AI_Ops_for_dummy]] — AI Ops 入门指南 (for Dummies) (共享: ai-ops, incident-response, monitoring, observability)
+- [[13_运维/README]] — AI 运维与可观测性 (AI Ops) (共享: ai-ops, incident-response, monitoring, observability)
 - [[Chaos_Engineering_AI|Chaos_Engineering_AI]]
-- [[运维/AIOps_Fundamentals/AI_Ops_2026.md|AI_Ops_2026]]
+- [[13_运维/01_AIOps_Fundamentals/AI_Ops_2026.md|AI_Ops_2026]]
 - [[Kubeflow_Deep_Dive|Kubeflow_Deep_Dive]]
 - [[Guardrails_Deep_Dive|Guardrails_Deep_Dive]]
 
@@ -217,9 +217,9 @@ AI 分析:
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

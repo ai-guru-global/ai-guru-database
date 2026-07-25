@@ -57,7 +57,7 @@ sources: []
 
 ### 清晰优于简洁 (Clarity over Brevity)
 
-Starmer 的核心理念是"宁可花 20 分钟把一个概念讲透彻，也不要用 5 分钟只给出公式"。他认为大多数教育内容的失败在于"以简洁为名牺牲了清晰"。StatQuest 的视频往往很长（30-60 分钟），但每个步骤都有动画和直觉解释。这种"慢即是快"的理念与 [[业界观点/3Blue1Brown/about]] 的"直觉优先于公式"形成呼应，也呼应 Feynman 的"如果你不能简单解释它，你就没真正理解它"。
+Starmer 的核心理念是"宁可花 20 分钟把一个概念讲透彻，也不要用 5 分钟只给出公式"。他认为大多数教育内容的失败在于"以简洁为名牺牲了清晰"。StatQuest 的视频往往很长（30-60 分钟），但每个步骤都有动画和直觉解释。这种"慢即是快"的理念与 [[19_业界观点/3Blue1Brown/about]] 的"直觉优先于公式"形成呼应，也呼应 Feynman 的"如果你不能简单解释它，你就没真正理解它"。
 
 ### BAM! 哲学
 
@@ -69,7 +69,7 @@ Starmer 反复强调"不理解 p-value、置信区间、偏差-方差权衡的�
 
 ### 反对黑箱使用
 
-Starmer 强烈反对"只调 API 不理解原理"的 AI 实践。他认为"理解算法内部机制比直接调用 API 更重要"，因为只有理解了原理才能正确诊断问题、选择合适的模型、避免常见陷阱。这一立场与 [[业界观点/Andrej_Karpathy/about]] 的"工程师必须理解底层"理念一致。
+Starmer 强烈反对"只调 API 不理解原理"的 AI 实践。他认为"理解算法内部机制比直接调用 API 更重要"，因为只有理解了原理才能正确诊断问题、选择合适的模型、避免常见陷阱。这一立场与 [[19_业界观点/Andrej_Karpathy/about]] 的"工程师必须理解底层"理念一致。
 
 ### 生物学背景的跨学科价值
 
@@ -129,23 +129,23 @@ Starmer 的影响力在于他填补了 AI 教育金字塔的"中间层"——3Bl
 
 | 系列 | 对应知识库章节 | 学习价值 |
 |------|---------------|---------|
-| Statistics Fundamentals | [[数学基础/Probability_Statistics]] | p-value/贝叶斯/假设检验 |
-| PCA / SVD | [[数学基础/Linear_Algebra]] | 降维与特征分解 |
-| ML Algorithms | [[机器学习/README|机器学习]] | SVM/RF/XGBoost 直觉理解 |
-| Neural Networks | [[深度学习/Neural_Network_Core]] | 反向传播与梯度 |
-| Transformers/Attention | [[大模型/Transformer_Revolution]] | 注意力机制拆解 |
+| Statistics Fundamentals | [[01_数学基础/Probability_Statistics]] | p-value/贝叶斯/假设检验 |
+| PCA / SVD | [[01_数学基础/Linear_Algebra]] | 降维与特征分解 |
+| ML Algorithms | [[02_机器学习/README|机器学习]] | SVM/RF/XGBoost 直觉理解 |
+| Neural Networks | [[03_深度学习/Neural_Network_Core]] | 反向传播与梯度 |
+| Transformers/Attention | [[05_大模型/Transformer_Revolution]] | 注意力机制拆解 |
 
 ---
 
 ## 交叉引用 (Cross-References)
 
-- [[业界观点/Josh_Starmer/youtube_channel]] — StatQuest 必看系列
-- [[数学基础/Probability_Statistics]] — 概率统计知识库
-- [[机器学习/README|机器学习]] — 机器学习知识库
-- [[学习/Courses/other/statquest.md]] — StatQuest 课程笔记
-- [[业界观点/3Blue1Brown/about]] — 同为 AI 数学可视化教育的前驱者
-- [[业界观点/Andrej_Karpathy/about]] — 底层 AI 技术教育的同行者
-- [[业界观点/Andrew_Ng/about]] — 同为 AI 教育领域的标杆人物
+- [[19_业界观点/Josh_Starmer/youtube_channel]] — StatQuest 必看系列
+- [[01_数学基础/Probability_Statistics]] — 概率统计知识库
+- [[02_机器学习/README|机器学习]] — 机器学习知识库
+- [[90_学习/Courses/other/statquest.md]] — StatQuest 课程笔记
+- [[19_业界观点/3Blue1Brown/about]] — 同为 AI 数学可视化教育的前驱者
+- [[19_业界观点/Andrej_Karpathy/about]] — 底层 AI 技术教育的同行者
+- [[19_业界观点/Andrew_Ng/about]] — 同为 AI 教育领域的标杆人物
 
 ---
 
@@ -160,7 +160,7 @@ Starmer 的影响力在于他填补了 AI 教育金字塔的"中间层"——3Bl
 
 *Last updated: 2026-07-11*
 
-- [[业界观点/README|AI 名人演讲与观点 (Talks)]]
+- [[19_业界观点/README|AI 名人演讲与观点 (Talks)]]
 
 ## 附录：人物影响力评估
 

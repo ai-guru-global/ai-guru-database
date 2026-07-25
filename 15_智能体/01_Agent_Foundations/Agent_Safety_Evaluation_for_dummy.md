@@ -130,8 +130,8 @@ Agent 开发
 - [[概念/ai-agents|AI Agent]]
 - [[概念/tool-calling|工具调用]]
 - [[概念/red-teaming|红队测试]]
-- [[智能体/Agent_Evaluation/README|Agent 评估]]
-- [[伦理安全/LLM_Security_Defense_Guide|LLM 安全防御指南]]
+- [[15_智能体/07_Agent_Evaluation/README|Agent 评估]]
+- [[17_伦理安全/LLM_Security_Defense_Guide|LLM 安全防御指南]]
 
 ## 附录：核心概念速查
 

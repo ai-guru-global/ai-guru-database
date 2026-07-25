@@ -16,7 +16,7 @@ sources: []
 
 > **一句话理解**: LLM 生产环境的护栏不是「加个 Moderation API」就能了事，而是一套覆盖输入检测、输出过滤、编排策略、版本化、审计留痕的完整工程体系——Guardrails as Code 是 2026 年企业落地的最低门槛。
 
-本文面向已经或将要把 LLM 应用推入生产环境的团队，聚焦护栏的**工程化落地**，而非安全理论研究。越狱攻击原理、红队方法论详见 [[伦理安全/AI_Security_2026/README]]，模型评估见 [[模型运维/LLM_Evaluation_Pipeline.md]]，可观测性见 [[模型运维/Observability/LLM_Observability.md]]。
+本文面向已经或将要把 LLM 应用推入生产环境的团队，聚焦护栏的**工程化落地**，而非安全理论研究。越狱攻击原理、红队方法论详见 [[17_伦理安全/07_AI_Security_2026/README]]，模型评估见 [[11_模型运维/LLM_Evaluation_Pipeline.md]]，可观测性见 [[11_模型运维/08_Observability/LLM_Observability.md]]。
 
 ---
 
@@ -620,15 +620,15 @@ ORDER BY risk_score DESC;
 ## 10. 相关文档
 
 ### 本章内
-- [[模型运维/LLMOps/LLMOps_2026.md|LLMOps 2026：大模型时代的 MLOps 升级]] — 本文的上下文与主线
-- [[模型运维/LLM_Evaluation_Pipeline.md|LLM 评估流水线]] — 护栏效果的量化评估方法
-- [[模型运维/Observability/LLM_Observability.md|LLM 可观测性]] — Trace、监控与告警落地
-- [[模型运维/Prompt_Ops/Prompt_Engineering_Ops.md|Prompt 工程化运维]] — Prompt 版本化与 A/B 测试
-- [[模型运维/CI_CD/ML_CI_CD.md|ML CI/CD 流水线]] — 本文 CI 集成的基础流程
+- [[11_模型运维/10_LLMOps/LLMOps_2026.md|LLMOps 2026：大模型时代的 MLOps 升级]] — 本文的上下文与主线
+- [[11_模型运维/LLM_Evaluation_Pipeline.md|LLM 评估流水线]] — 护栏效果的量化评估方法
+- [[11_模型运维/08_Observability/LLM_Observability.md|LLM 可观测性]] — Trace、监控与告警落地
+- [[11_模型运维/11_Prompt_Ops/Prompt_Engineering_Ops.md|Prompt 工程化运维]] — Prompt 版本化与 A/B 测试
+- [[11_模型运维/06_CI_CD/ML_CI_CD.md|ML CI/CD 流水线]] — 本文 CI 集成的基础流程
 
 ### 跨章
-- [[伦理安全/AI_Security_2026/README|AI 安全与红队 2026]] — 越狱攻击原理与红队方法论
-- [[RAG系统/RAG_Production/RAG_Production_Architecture_Deep_Dive.md|RAG 生产架构深度指南]] — RAG 场景下的注入与事实性风险
+- [[17_伦理安全/07_AI_Security_2026/README|AI 安全与红队 2026]] — 越狱攻击原理与红队方法论
+- [[14_RAG系统/05_RAG_Production/RAG_Production_Architecture_Deep_Dive.md|RAG 生产架构深度指南]] — RAG 场景下的注入与事实性风险
 
 ---
 
@@ -638,9 +638,9 @@ ORDER BY risk_score DESC;
 
 ## Related
 
-- [[模型运维/LLMOps/LLMOps_2026.md|LLMOps 2026]]
-- [[模型运维/Observability/LLM_Observability.md|LLM 可观测性]]
-- [[模型运维/LLM_Evaluation_Pipeline.md|LLM 评估流水线]]
-- [[模型运维/Prompt_Ops/Prompt_Engineering_Ops.md|Prompt 工程化运维]]
-- [[伦理安全/AI_Security_2026/README|AI 安全与红队 2026]]
-- [[RAG系统/RAG_Production/RAG_Production_Architecture_Deep_Dive.md|RAG 生产架构深度指南]]
+- [[11_模型运维/10_LLMOps/LLMOps_2026.md|LLMOps 2026]]
+- [[11_模型运维/08_Observability/LLM_Observability.md|LLM 可观测性]]
+- [[11_模型运维/LLM_Evaluation_Pipeline.md|LLM 评估流水线]]
+- [[11_模型运维/11_Prompt_Ops/Prompt_Engineering_Ops.md|Prompt 工程化运维]]
+- [[17_伦理安全/07_AI_Security_2026/README|AI 安全与红队 2026]]
+- [[14_RAG系统/05_RAG_Production/RAG_Production_Architecture_Deep_Dive.md|RAG 生产架构深度指南]]

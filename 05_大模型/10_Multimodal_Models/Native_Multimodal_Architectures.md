@@ -326,11 +326,11 @@ L_total = λ₁·L_next_token_text + λ₂·L_next_token_image + λ₃·L_cross_
 
 ## Related
 
-- [[大模型/Multimodal_Models/Multimodal_Architectures_2026]]
-- [[大模型/Multimodal_Models/Modality_Fusion_Mechanisms]]
-- [[大模型/Multimodal_Models/Video_Understanding_Architectures]]
+- [[05_大模型/10_Multimodal_Models/Multimodal_Architectures_2026]]
+- [[05_大模型/10_Multimodal_Models/Modality_Fusion_Mechanisms]]
+- [[05_大模型/10_Multimodal_Models/Video_Understanding_Architectures]]
 - [[概念/multimodal-models]]
 - [[概念/transformer-architecture]]
-- [[大模型/LLM_Architectures/LLM_Architectures]]
-- [[论文精读/Architecture/Attention_Is_All_You_Need_Deep_Dive]]
+- [[05_大模型/05_LLM_Architectures/LLM_Architectures]]
+- [[20_论文精读/02_Architecture/Attention_Is_All_You_Need_Deep_Dive]]
 - [[治理/multimodal-rag|多模态 × RAG]] — 多模态内容与 RAG 系统的融合

@@ -243,7 +243,7 @@ Quality Score = w1×正确性 + w2×格式合规 + w3×安全性 + w4×简洁性
 | **应用开发者** | Part 1-3 | 快速掌握实用提示技术 |
 | **产品经理** | Ch 1-2, 9 | 理解 LLM 能力边界与风险 |
 | **AI 安全工程师** | Ch 9 | 注入攻防与护栏设计 |
-| **测试/QA 工程师** | Ch 8 | LLM 输出的测试方法 |
+| **09_测试/QA 工程师** | Ch 8 | LLM 输出的测试方法 |
 
 ### 前置知识
 
@@ -263,12 +263,12 @@ Quality Score = w1×正确性 + w2×格式合规 + w3×安全性 + w4×简洁性
 
 | 本书章节 | 知识库主题 | 关联说明 |
 |----------|------------|----------|
-| Ch 1-3 提示基础 | [[大模型/Prompt_Engineering/Prompt_Engineering]] | 提示模式与技巧 |
-| Ch 4-5 推理技术 | [[大模型/Prompt_Engineering/Prompt_Engineering]] | CoT、ToT、ReAct |
-| Ch 6 工具调用 | [[智能体/]] | Function Calling、Agent |
-| Ch 7 RAG 提示 | [[RAG系统/RAG_Systems]] | 检索增强的提示策略 |
-| Ch 8 提示测试 | [[模型评估/]] | 自动化评估 |
-| Ch 9 提示安全 | [[伦理安全/]] | Prompt Injection 攻防 |
+| Ch 1-3 提示基础 | [[05_大模型/08_Prompt_Engineering/Prompt_Engineering]] | 提示模式与技巧 |
+| Ch 4-5 推理技术 | [[05_大模型/08_Prompt_Engineering/Prompt_Engineering]] | CoT、ToT、ReAct |
+| Ch 6 工具调用 | [[15_智能体/]] | Function Calling、Agent |
+| Ch 7 RAG 提示 | [[14_RAG系统/RAG_Systems]] | 检索增强的提示策略 |
+| Ch 8 提示测试 | [[08_模型评估/]] | 自动化评估 |
+| Ch 9 提示安全 | [[17_伦理安全/]] | Prompt Injection 攻防 |
 
 ### 与相关书籍的关系
 
@@ -453,11 +453,11 @@ Level 5: 可治理 — 版本管理 + 安全审查 + 成本监控
 
 ## 延伸阅读
 
-- [[学习/References/books/ai-engineering-huyen|AI Engineering]] — 提示工程在系统架构中的位置
-- [[学习/References/books/build-reasoning-model|Build a Reasoning Model]] — 从提示 CoT 到训练推理
-- [[大模型/Prompt_Engineering/Prompt_Engineering]] — 知识库提示工程章节
-- [[智能体/]] — Agent 与工具调用
-- [[伦理安全/]] — AI 安全专题
-- [[学习/guides/ai_engineering_roadmap_2026|AI 工程路线图 2026]]
+- [[90_学习/References/books/ai-engineering-huyen|AI Engineering]] — 提示工程在系统架构中的位置
+- [[90_学习/References/books/build-reasoning-model|Build a Reasoning Model]] — 从提示 CoT 到训练推理
+- [[05_大模型/08_Prompt_Engineering/Prompt_Engineering]] — 知识库提示工程章节
+- [[15_智能体/]] — Agent 与工具调用
+- [[17_伦理安全/]] — AI 安全专题
+- [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图 2026]]
 
-> **关联**: → [[学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]] | [[大模型/Prompt_Engineering/Prompt_Engineering]] | [[智能体/]] | [[伦理安全/]]
+> **关联**: → [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]] | [[05_大模型/08_Prompt_Engineering/Prompt_Engineering]] | [[15_智能体/]] | [[17_伦理安全/]]

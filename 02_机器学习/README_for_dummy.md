@@ -43,18 +43,18 @@ sources: []
 
 ## 学完之后
 
-接下来去 [第3章：深度学习](./深度学习/README_for_dummy.md)，了解模仿人脑的"神经网络"是怎么工作的。
+接下来去 [第3章：深度学习](./03_深度学习/README_for_dummy.md)，了解模仿人脑的"神经网络"是怎么工作的。
 
 ---
 *本文是 [README.md](README.md) 的简化版，适合零基础读者。*
 
 ## Related
 
-- [[机器学习/ML_Fundamentals/ML-in-nutshell.md|ML-in-nutshell]]
-- [[机器学习/README.md|机器学习 README]]
-- [[机器学习/Anomaly_Detection/Anomaly_Detection.md|Anomaly_Detection]]
-- [[机器学习/Anomaly_Detection/Anomaly_Detection_for_dummy.md|Anomaly_Detection_for_dummy]]
-- [[机器学习/AutoML/AutoML.md|AutoML]]
+- [[02_机器学习/01_ML_Fundamentals/ML-in-nutshell.md|ML-in-nutshell]]
+- [[02_机器学习/README.md|机器学习 README]]
+- [[02_机器学习/08_Anomaly_Detection/Anomaly_Detection.md|Anomaly_Detection]]
+- [[02_机器学习/08_Anomaly_Detection/Anomaly_Detection_for_dummy.md|Anomaly_Detection_for_dummy]]
+- [[02_机器学习/11_AutoML/AutoML.md|AutoML]]
 
 ## 进阶知识拓展
 
@@ -92,9 +92,9 @@ sources: []
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

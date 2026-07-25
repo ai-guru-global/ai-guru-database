@@ -47,7 +47,7 @@ sources: []
 - [[概念/runtime-security|Runtime Security]]
 - [[概念/adversarial-attack|Adversarial Attack]]
 - [[概念/prompt-injection|Prompt Injection]]
-- [[架构基建/Security/AI_Security_Fundamentals|AI 安全基础]]
+- [[12_架构基建/10_Security/AI_Security_Fundamentals|AI 安全基础]]
 
 ---
 

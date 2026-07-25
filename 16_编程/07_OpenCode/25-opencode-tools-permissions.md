@@ -370,29 +370,29 @@ export default tool({
 
 ## Obsidian 相关文档
 
-- [[编程/Tool_Comparison/MOC_OpenRouter_OpenCode.md|MOC]]
-- [[编程/Tool_Comparison/OpenRouter_OpenCode_Guide|AI 编程与  网关专题 — OpenRouter & OpenCode 全量指南]]
-- [[编程/OpenRouter/01-openrouter-overview-architecture|OpenRouter 概述与核心架构]]
-- [[编程/OpenRouter/02-openrouter-quickstart-setup|快速接入与环境配置]]
-- [[编程/OpenRouter/03-openrouter-models-providers|模型与 Provider 生态]]
-- [[编程/OpenRouter/04-openrouter-provider-routing|智能路由与 Provider 选择]]
-- [[编程/OpenRouter/05-openrouter-api-reference|API 参考与请求/响应规范]]
-- [[编程/OpenRouter/06-openrouter-structured-outputs-tools|Structured Outputs 与 Tool Calling]]
-- [[编程/OpenRouter/07-openrouter-plugins-web-search|插件体系与 Web Search]]
-- [[编程/OpenRouter/08-openrouter-prompt-caching-optimization|Prompt Caching 与成本优化]]
-- [[编程/OpenRouter/09-openrouter-frameworks-integrations|框架集成与生态系统]]
-- [[编程/OpenRouter/10-openrouter-streaming-multimedia|流式传输与多模态输入]]
+- [[16_编程/06_Tool_Comparison/MOC_OpenRouter_OpenCode.md|MOC]]
+- [[16_编程/06_Tool_Comparison/OpenRouter_OpenCode_Guide|AI 编程与  网关专题 — OpenRouter & OpenCode 全量指南]]
+- [[16_编程/08_OpenRouter/01-openrouter-overview-architecture|OpenRouter 概述与核心架构]]
+- [[16_编程/08_OpenRouter/02-openrouter-quickstart-setup|快速接入与环境配置]]
+- [[16_编程/08_OpenRouter/03-openrouter-models-providers|模型与 Provider 生态]]
+- [[16_编程/08_OpenRouter/04-openrouter-provider-routing|智能路由与 Provider 选择]]
+- [[16_编程/08_OpenRouter/05-openrouter-api-reference|API 参考与请求/响应规范]]
+- [[16_编程/08_OpenRouter/06-openrouter-structured-outputs-tools|Structured Outputs 与 Tool Calling]]
+- [[16_编程/08_OpenRouter/07-openrouter-plugins-web-search|插件体系与 Web Search]]
+- [[16_编程/08_OpenRouter/08-openrouter-prompt-caching-optimization|Prompt Caching 与成本优化]]
+- [[16_编程/08_OpenRouter/09-openrouter-frameworks-integrations|框架集成与生态系统]]
+- [[16_编程/08_OpenRouter/10-openrouter-streaming-multimedia|流式传输与多模态输入]]
 
 ## Related
 
-- [[编程/OpenCode/21-opencode-overview-architecture]] — 21-opencode-overview-architecture (共享: ai, ai-coding)
-- [[编程/OpenCode/22-opencode-installation-quickstart]] — 22-opencode-installation-quickstart (共享: ai, ai-coding)
-- [[编程/OpenCode/23-opencode-providers-models]] — 23-opencode-providers-models (共享: ai, ai-coding)
-- [[编程/OpenCode/24-opencode-agents-system]] — 24-opencode-agents-system (共享: ai, ai-coding)
-- [[编程/OpenCode/26-opencode-mcp-integration.md|26-opencode-mcp-integration]]
-- [[编程/OpenCode/27-opencode-lsp-formatters.md|27-opencode-lsp-formatters]]
-- [[编程/OpenCode/30-opencode-server-api.md|30-opencode-server-api]]
-- [[编程/OpenCode/29-opencode-tui-customization.md|29-opencode-tui-customization]]
-- [[编程/OpenCode/32-opencode-advanced-topics.md|32-opencode-advanced-topics]]
-- [[编程/OpenCode/31-opencode-github-automation.md|31-opencode-github-automation]]
-- [[编程/OpenCode/28-opencode-skills-commands.md|28-opencode-skills-commands]]
+- [[16_编程/07_OpenCode/21-opencode-overview-architecture]] — 21-opencode-overview-architecture (共享: ai, ai-coding)
+- [[16_编程/07_OpenCode/22-opencode-installation-quickstart]] — 22-opencode-installation-quickstart (共享: ai, ai-coding)
+- [[16_编程/07_OpenCode/23-opencode-providers-models]] — 23-opencode-providers-models (共享: ai, ai-coding)
+- [[16_编程/07_OpenCode/24-opencode-agents-system]] — 24-opencode-agents-system (共享: ai, ai-coding)
+- [[16_编程/07_OpenCode/26-opencode-mcp-integration.md|26-opencode-mcp-integration]]
+- [[16_编程/07_OpenCode/27-opencode-lsp-formatters.md|27-opencode-lsp-formatters]]
+- [[16_编程/07_OpenCode/30-opencode-server-api.md|30-opencode-server-api]]
+- [[16_编程/07_OpenCode/29-opencode-tui-customization.md|29-opencode-tui-customization]]
+- [[16_编程/07_OpenCode/32-opencode-advanced-topics.md|32-opencode-advanced-topics]]
+- [[16_编程/07_OpenCode/31-opencode-github-automation.md|31-opencode-github-automation]]
+- [[16_编程/07_OpenCode/28-opencode-skills-commands.md|28-opencode-skills-commands]]

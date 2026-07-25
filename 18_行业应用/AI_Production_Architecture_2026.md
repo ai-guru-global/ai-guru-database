@@ -322,13 +322,13 @@ AI 生产系统的成本往往呈现“非线性爆炸”：GPU 训练、推理�
 
 ## Related
 
-- [[行业应用/AI_Applications_Industry|AI 应用与行业融合全景]]
-- [[行业应用/Finance/AI_Finance_2026|金融 AI 应用 2026]]
-- [[行业应用/Healthcare/AI_Healthcare_2026|医疗 AI 应用 2026]]
-- [[行业应用/AI_Retail_Ecommerce_2026|零售电商 AI 应用 2026]]
-- [[行业应用/AI_Manufacturing_2026|智能制造 AI 应用 2026]]
-- [[行业应用/AI_Autonomous_Driving_2026|自动驾驶 AI 应用 2026]]
-- [[部署推理/README|推理与部署]]
-- [[智能体/README|Agent 生产部署]]
-- [[模型运维/README|MLOps 流水线]]
-- [[架构基建/AI_SRE_Runbook|AI SRE Runbook]]
+- [[18_行业应用/AI_Applications_Industry|AI 应用与行业融合全景]]
+- [[18_行业应用/04_Finance/AI_Finance_2026|金融 AI 应用 2026]]
+- [[18_行业应用/03_Healthcare/AI_Healthcare_2026|医疗 AI 应用 2026]]
+- [[18_行业应用/AI_Retail_Ecommerce_2026|零售电商 AI 应用 2026]]
+- [[18_行业应用/AI_Manufacturing_2026|智能制造 AI 应用 2026]]
+- [[18_行业应用/AI_Autonomous_Driving_2026|自动驾驶 AI 应用 2026]]
+- [[10_部署推理/README|推理与部署]]
+- [[15_智能体/README|Agent 生产部署]]
+- [[11_模型运维/README|MLOps 流水线]]
+- [[12_架构基建/AI_SRE_Runbook|AI SRE Runbook]]

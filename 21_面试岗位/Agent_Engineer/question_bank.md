@@ -11,7 +11,7 @@ sources: []
 
 # Agent Engineer 题库
 
-> 覆盖 LLM Agent 工程化的核心知识点。关联 [[面试岗位/Agent_Engineer/Agent_Engineer_2026|Agent Engineer 2026]] 与 [[智能体/index|智能体]] 章节。
+> 覆盖 LLM Agent 工程化的核心知识点。关联 [[21_面试岗位/Agent_Engineer/Agent_Engineer_2026|Agent Engineer 2026]] 与 [[15_智能体/index|智能体]] 章节。
 
 ---
 
@@ -106,7 +106,7 @@ sources: []
 63. 团队对 Agent 架构有分歧（如多 Agent vs 单 Agent），你如何推动决策？
 64. 你如何跟上 Agent 领域快速演进（论文/框架几乎每周更新）？
 
-## 编程/实操题方向 (4 题)
+## 16_编程/实操题方向 (4 题)
 
 65. 用 LangGraph（或选定的框架）实现一个 ReAct Agent，能调用计算器和搜索两个工具。
 66. 实现一个带向量记忆的对话 Agent，支持跨会话记忆检索。
@@ -117,12 +117,12 @@ sources: []
 
 ## Related
 
-- [[面试岗位/Agent_Engineer/Agent_Engineer_2026|Agent Engineer 2026 指南]]
-- [[面试岗位/Interview_Guide/index|面试总指南]]
-- [[智能体/index|智能体章节]]
-- [[智能体/Agent_Frameworks/index|Agent 框架]]
-- [[部署推理/index|部署推理]]（Agent 底层依赖推理服务）
-- [[RAG系统/index|RAG 系统]]（Agent 记忆的基础）
+- [[21_面试岗位/Agent_Engineer/Agent_Engineer_2026|Agent Engineer 2026 指南]]
+- [[21_面试岗位/Interview_Guide/index|面试总指南]]
+- [[15_智能体/index|智能体章节]]
+- [[15_智能体/02_Agent_Frameworks/index|Agent 框架]]
+- [[10_部署推理/index|部署推理]]（Agent 底层依赖推理服务）
+- [[14_RAG系统/index|RAG 系统]]（Agent 记忆的基础）
 
 ---
 

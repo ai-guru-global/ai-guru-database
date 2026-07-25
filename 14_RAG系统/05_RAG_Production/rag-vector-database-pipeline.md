@@ -323,7 +323,7 @@ BM25 的优势:
 - [[治理/rag-agents]] -- RAG x Agents
 - [[治理/multimodal-rag]] -- 多模态 RAG
 - [[治理/finetuning-rag-decision]] -- 微调 vs RAG 决策
-- [[RAG系统/RAG_Systems]] -- RAG 系统完整技术体系
-- [[RAG系统/Advanced_RAG/RAG_Advanced_2026]] -- RAG 高级实践 2026
-- [[RAG系统/Vector_Databases/Milvus_Deep_Dive]] -- Milvus 深度解析
-- [[RAG系统/Vector_Databases/Qdrant_Deep_Dive]] -- Qdrant 深度解析
+- [[14_RAG系统/RAG_Systems]] -- RAG 系统完整技术体系
+- [[14_RAG系统/04_Advanced_RAG/RAG_Advanced_2026]] -- RAG 高级实践 2026
+- [[14_RAG系统/03_Vector_Databases/Milvus_Deep_Dive]] -- Milvus 深度解析
+- [[14_RAG系统/03_Vector_Databases/Qdrant_Deep_Dive]] -- Qdrant 深度解析

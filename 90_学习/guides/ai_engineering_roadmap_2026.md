@@ -59,7 +59,7 @@ flowchart TB
 | [Statistics Fundamentals - Josh Starmer](https://www.youtube.com/playlist?list=PLblh5JKOoLUK0FLuzwntyYI10UQFUhsY9) | 视频 | 统计学核心概念 |
 | [Mathematics for ML Specialization](https://www.coursera.org/specializations/mathematics-machine-learning) | 课程 | Coursera 吴恩达数学专项 |
 
-> **关联**: → [[数学基础/Math_Foundations|数学基础]]
+> **关联**: → [[01_数学基础/Math_Foundations|数学基础]]
 
 ---
 
@@ -90,7 +90,7 @@ flowchart TB
 | [LightGBM](https://lightgbm.readthedocs.io/en/stable/) | 微软高性能 GBDT |
 | [CatBoost](https://catboost.ai/) | Yandex 出品，支持类别特征 |
 
-> **关联**: → [[机器学习/ML_Fundamentals|机器学习基础]]
+> **关联**: → [[02_机器学习/ML_Fundamentals|机器学习基础]]
 
 ---
 
@@ -111,7 +111,7 @@ flowchart TB
 | [TensorFlow](https://www.tensorflow.org/) | Google 生产框架 |
 | [Keras](https://keras.io/) | 高层 API |
 
-> **关联**: → [[深度学习/DL_Fundamentals|深度学习基础]]
+> **关联**: → [[03_深度学习/DL_Fundamentals|深度学习基础]]
 
 ---
 
@@ -119,16 +119,16 @@ flowchart TB
 
 ### 计算机视觉
 - [DL for CV - Stanford CS231n](https://cs231n.stanford.edu/) — 斯坦福经典 CV 课程
-- **关联**: → [[计算机视觉/CV_Fundamentals|计算机视觉基础]]
+- **关联**: → [[04_计算机视觉/CV_Fundamentals|计算机视觉基础]]
 
 ### NLP
 - [NLP Specialization - Coursera](https://www.coursera.org/specializations/natural-language-processing)
-- **关联**: → [[大模型/NLP_Fundamentals|NLP 基础]]
+- **关联**: → [[05_大模型/NLP_Fundamentals|NLP 基础]]
 
 ### 强化学习
 - [Deep RL Course - Hugging Face](https://huggingface.co/learn/deep-rl-course/unit0/introduction)
 - [Deep RL Bootcamp - UC Berkeley](https://sites.google.com/view/deep-rl-bootcamp/lectures)
-- **关联**: → [[强化学习/RL_Fundamentals|强化学习基础]]
+- **关联**: → [[06_强化学习/RL_Fundamentals|强化学习基础]]
 
 ---
 
@@ -193,7 +193,7 @@ flowchart TB
 | [Gemini API](https://ai.google.dev/gemini-api/docs) | Google Gemini |
 | [Groq](https://groq.com/) | 高速推理 |
 
-> **关联**: → [[大模型/LLM_Fundamentals|LLM 基础]] · [[论文精读/Architecture/Attention_Is_All_You_Need_Deep_Dive|Attention 论文]] · [[论文精读/Scaling/GPT3_Deep_Dive|GPT-3 论文]]
+> **关联**: → [[05_大模型/LLM_Fundamentals|LLM 基础]] · [[20_论文精读/02_Architecture/Attention_Is_All_You_Need_Deep_Dive|Attention 论文]] · [[20_论文精读/03_Scaling/GPT3_Deep_Dive|GPT-3 论文]]
 
 ---
 
@@ -222,7 +222,7 @@ flowchart TB
 | [Claude Code](https://code.claude.com/docs/en/overview) | Anthropic CLI Agent |
 | [Codex](https://openai.com/codex/) | OpenAI 编程 Agent |
 
-> **关联**: → [[编程/Tools|AI 编程工具]]
+> **关联**: → [[16_编程/Tools|AI 编程工具]]
 
 ---
 
@@ -237,7 +237,7 @@ flowchart TB
 | [Getting Structured LLM Output](https://www.deeplearning.ai/short-courses/getting-structured-llm-output/) | 课程 | 结构化输出 |
 | [God Tier Prompts](https://www.godtierprompts.com/) | 工具 | 高质量提示词库 |
 
-> **关联**: → [[大模型/Prompt_Engineering|提示词工程]]
+> **关联**: → [[05_大模型/Prompt_Engineering|提示词工程]]
 
 ---
 
@@ -248,7 +248,7 @@ flowchart TB
 | [Introduction to RAG - Coursera](https://www.coursera.org/projects/introduction-to-rag) | 课程 | RAG 入门实践 |
 | [RAG Techniques](https://github.com/NirDiamant/RAG_Techniques) | GitHub | ⭐ RAG 技术大全 |
 
-> **关联**: → [[RAG系统/RAG_Fundamentals|RAG 基础]] · [[论文精读/RAG_Deep_Dive|RAG 论文]]
+> **关联**: → [[14_RAG系统/RAG_Fundamentals|RAG 基础]] · [[20_论文精读/RAG_Deep_Dive|RAG 论文]]
 
 ---
 
@@ -263,7 +263,7 @@ flowchart TB
 | [GenAI Agents](https://github.com/NirDiamant/GenAI_Agents) | GitHub | ⭐ Agent 实现集合 |
 | [AI Agents in Action (2nd Ed)](https://www.manning.com/books/ai-agents-in-action-second-edition) | 书籍 | Manning 出版 |
 
-> **关联**: → [[智能体/README|Agent 生产]]
+> **关联**: → [[15_智能体/README|Agent 生产]]
 
 ---
 
@@ -293,7 +293,7 @@ flowchart TB
 | [Streamlit](https://streamlit.io/) | 快速构建 ML Web 应用 |
 | [MLflow](https://mlflow.org/docs/latest/index.html) | ML 生命周期管理 |
 
-> **关联**: → [[模型运维/README|MLOps 流水线]] · [[部署推理/README|部署推理]]
+> **关联**: → [[11_模型运维/README|MLOps 流水线]] · [[10_部署推理/README|部署推理]]
 
 ---
 
@@ -358,12 +358,12 @@ flowchart TB
 
 | 论文 | 年份 | Wiki 深度解读 |
 |------|------|---------------|
-| [Attention Is All You Need](https://arxiv.org/pdf/1706.03762) | 2017 | → [[论文精读/Architecture/Attention_Is_All_You_Need_Deep_Dive]] |
-| [Generative Adversarial Networks](https://arxiv.org/abs/1406.2661) | 2014 | → [[论文精读/Vision/GAN_Deep_Dive]] |
+| [Attention Is All You Need](https://arxiv.org/pdf/1706.03762) | 2017 | → [[20_论文精读/02_Architecture/Attention_Is_All_You_Need_Deep_Dive]] |
+| [Generative Adversarial Networks](https://arxiv.org/abs/1406.2661) | 2014 | → [[20_论文精读/08_Vision/GAN_Deep_Dive]] |
 | [GPT: Improving Language Understanding](https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf) | 2018 | — |
-| [GPT-3: Few-Shot Learners](https://arxiv.org/abs/2005.14165) | 2020 | → [[论文精读/Scaling/GPT3_Deep_Dive]] |
-| [BERT](https://arxiv.org/abs/1810.04805) | 2018 | → [[论文精读/Architecture/BERT_Deep_Dive]] |
-| [Chain-of-Thought Prompting](https://arxiv.org/abs/2201.11903) | 2022 | → [[论文精读/Alignment/Chain_of_Thought_Deep_Dive]] |
+| [GPT-3: Few-Shot Learners](https://arxiv.org/abs/2005.14165) | 2020 | → [[20_论文精读/03_Scaling/GPT3_Deep_Dive]] |
+| [BERT](https://arxiv.org/abs/1810.04805) | 2018 | → [[20_论文精读/02_Architecture/BERT_Deep_Dive]] |
+| [Chain-of-Thought Prompting](https://arxiv.org/abs/2201.11903) | 2022 | → [[20_论文精读/06_Alignment/Chain_of_Thought_Deep_Dive]] |
 
 ---
 
@@ -382,104 +382,104 @@ flowchart TB
 
 | 路线图主题 | AI Guru 对应章节 |
 |-----------|-----------------|
-| 数学基础 | [[数学基础/README]] |
-| ML 基础 | [[机器学习/README]] |
-| 深度学习 | [[深度学习/README]] |
-| NLP / LLM | [[大模型/README]] |
-| 计算机视觉 | [[计算机视觉/README]] |
-| 强化学习 | [[强化学习/README]] |
-| 模型训练 | [[模型训练/README]] |
-| 模型评估 | [[模型评估/README]] |
-| 部署推理 | [[部署推理/README]] |
-| MLOps | [[模型运维/README]] |
-| RAG | [[RAG系统/README]] |
-| 架构基础 | [[架构基建/README]] |
-| Agent 生产 | [[智能体/README]] |
-| AI 网关 | [[架构基建/AI_Gateway/README|AI 网关]] |
-| 测试 | [[测试/README]] |
-| AI Ops | [[运维/README]] |
-| AI 编程 | [[编程/README]] |
-| 论文精读 | [[论文精读/README]] |
-| 学习路径 | [[学习/guides/learning_paths_2026|AI Guru 学习路径]] |
+| 数学基础 | [[01_数学基础/README]] |
+| ML 基础 | [[02_机器学习/README]] |
+| 深度学习 | [[03_深度学习/README]] |
+| NLP / LLM | [[05_大模型/README]] |
+| 计算机视觉 | [[04_计算机视觉/README]] |
+| 强化学习 | [[06_强化学习/README]] |
+| 模型训练 | [[07_模型训练/README]] |
+| 模型评估 | [[08_模型评估/README]] |
+| 部署推理 | [[10_部署推理/README]] |
+| MLOps | [[11_模型运维/README]] |
+| RAG | [[14_RAG系统/README]] |
+| 架构基础 | [[12_架构基建/README]] |
+| Agent 生产 | [[15_智能体/README]] |
+| AI 网关 | [[12_架构基建/11_AI_Gateway/README|AI 网关]] |
+| 测试 | [[09_测试/README]] |
+| AI Ops | [[13_运维/README]] |
+| AI 编程 | [[16_编程/README]] |
+| 论文精读 | [[20_论文精读/README]] |
+| 学习路径 | [[90_学习/guides/learning_paths_2026|AI Guru 学习路径]] |
 
 ---
 
 ## Wiki 页面索引（本路线图导入的页面）
 
 ### GitHub 仓库
-- [[学习/References/Courses/llm-course-mlabonne|MLabonne LLM 课程 (80k)]]
-- [[学习/References/Courses/rag-techniques-nirdiamant|RAG 技术大全 (27.9k)]]
-- [[学习/References/Courses/genai-agents-nirdiamant|GenAI Agent 实现集合 (22.5k)]]
-- [[学习/Courses/microsoft/microsoft_genai_for_beginners|微软生成式 AI 入门 (75k)]]
-- [[学习/References/Courses/prompt-engineering-nirdiamant|Prompt 工程技术大全 (5k)]]
-- [[学习/References/Articles/awesome-mcp-servers|Awesome MCP Servers (15k)]]
-- [[学习/References/Courses/anthropic-courses|Anthropic 官方教程]]
-- [[学习/References/Articles/awesome-llm-apps|Awesome LLM Apps (10k)]]
+- [[90_学习/References/Courses/llm-course-mlabonne|MLabonne LLM 课程 (80k)]]
+- [[90_学习/References/Courses/rag-techniques-nirdiamant|RAG 技术大全 (27.9k)]]
+- [[90_学习/References/Courses/genai-agents-nirdiamant|GenAI Agent 实现集合 (22.5k)]]
+- [[90_学习/Courses/microsoft/microsoft_genai_for_beginners|微软生成式 AI 入门 (75k)]]
+- [[90_学习/References/Courses/prompt-engineering-nirdiamant|Prompt 工程技术大全 (5k)]]
+- [[90_学习/References/Articles/awesome-mcp-servers|Awesome MCP Servers (15k)]]
+- [[90_学习/References/Courses/anthropic-courses|Anthropic 官方教程]]
+- [[90_学习/References/Articles/awesome-llm-apps|Awesome LLM Apps (10k)]]
 
 ### 在线课程
-- [[学习/courses/coursera/coursera_ml_specialization|吴恩达机器学习专项]]
-- [[学习/courses/coursera/coursera_deep_learning_specialization|吴恩达深度学习专项]]
-- [[学习/courses/coursera/coursera_math_for_ml|Mathematics for ML]]
-- [[学习/courses/coursera/coursera_nlp_specialization|NLP 专项课程]]
-- [[学习/courses/coursera/coursera_rag_intro|RAG 入门实践]]
-- [[学习/courses/other/fastai_practical_dl|Fast.ai 实战深度学习]]
-- [[学习/courses/other/stanford_cs231n|斯坦福 CS231n]]
-- [[学习/courses/hugging_face/deep_rl_course|HF 深度 RL 课程]]
-- [[学习/courses/hugging_face/agents_course|HF AI Agent 课程]]
+- [[90_学习/courses/coursera/coursera_ml_specialization|吴恩达机器学习专项]]
+- [[90_学习/courses/coursera/coursera_deep_learning_specialization|吴恩达深度学习专项]]
+- [[90_学习/courses/coursera/coursera_math_for_ml|Mathematics for ML]]
+- [[90_学习/courses/coursera/coursera_nlp_specialization|NLP 专项课程]]
+- [[90_学习/courses/coursera/coursera_rag_intro|RAG 入门实践]]
+- [[90_学习/courses/other/fastai_practical_dl|Fast.ai 实战深度学习]]
+- [[90_学习/courses/other/stanford_cs231n|斯坦福 CS231n]]
+- [[90_学习/courses/hugging_face/deep_rl_course|HF 深度 RL 课程]]
+- [[90_学习/courses/hugging_face/agents_course|HF AI Agent 课程]]
 
 ### 技术文章
-- [[学习/References/Articles/illustrated-transformer|图解 Transformer]]
-- [[学习/References/Courses/sebastian-raschka-articles|Sebastian Raschka LLM 系列]]
-- [[学习/References/Articles/maarten-grootendorst-visual-guides|Maarten Grootendorst 图解系列]]
-- [[学习/References/Articles/chip-huyen-agents-article|Chip Huyen Agent 深度解析]]
+- [[90_学习/References/Articles/illustrated-transformer|图解 Transformer]]
+- [[90_学习/References/Courses/sebastian-raschka-articles|Sebastian Raschka LLM 系列]]
+- [[90_学习/References/Articles/maarten-grootendorst-visual-guides|Maarten Grootendorst 图解系列]]
+- [[90_学习/References/Articles/chip-huyen-agents-article|Chip Huyen Agent 深度解析]]
 
 ### 推荐书籍 (15 本)
-- [[学习/References/books/hands-on-ml-geron|Hands-On Machine Learning]]
-- [[学习/References/books/deep-learning-goodfellow|Deep Learning (花书)]]
-- [[学习/References/books/dl-with-python-chollet|Deep Learning with Python]]
-- [[学习/References/books/designing-ml-systems-huyen|Designing ML Systems]]
-- [[学习/References/books/ai-engineering-huyen|AI Engineering]]
-- [[学习/References/books/build-llm-from-scratch-raschka|Build a LLM from Scratch]]
-- [[学习/References/books/llm-engineers-handbook|LLM Engineer's Handbook]]
-- [[学习/References/books/nlp-with-transformers|NLP with Transformers]]
+- [[90_学习/References/books/hands-on-ml-geron|Hands-On Machine Learning]]
+- [[90_学习/References/books/deep-learning-goodfellow|Deep Learning (花书)]]
+- [[90_学习/References/books/dl-with-python-chollet|Deep Learning with Python]]
+- [[90_学习/References/books/designing-ml-systems-huyen|Designing ML Systems]]
+- [[90_学习/References/books/ai-engineering-huyen|AI Engineering]]
+- [[90_学习/References/books/build-llm-from-scratch-raschka|Build a LLM from Scratch]]
+- [[90_学习/References/books/llm-engineers-handbook|LLM Engineer's Handbook]]
+- [[90_学习/References/books/nlp-with-transformers|NLP with Transformers]]
 - 更多书籍见 参考/books/ 目录
 
 ### YouTube 频道
-- [[业界观点/Andrej_Karpathy/youtube_channel|Andrej Karpathy]]
-- [[业界观点/3Blue1Brown/youtube_channel|3Blue1Brown]]
-- [[业界观点/Josh_Starmer/youtube_channel|StatQuest Josh Starmer]]
+- [[19_业界观点/Andrej_Karpathy/youtube_channel|Andrej Karpathy]]
+- [[19_业界观点/3Blue1Brown/youtube_channel|3Blue1Brown]]
+- [[19_业界观点/Josh_Starmer/youtube_channel|StatQuest Josh Starmer]]
 
 ### ML/DL 框架
-- [[机器学习/ML_Frameworks/scikit-learn_overview|Scikit-learn]]
-- [[机器学习/ML_Frameworks/xgboost_overview|XGBoost]]
-- [[机器学习/ML_Frameworks/lightgbm_overview|LightGBM]]
-- [[机器学习/ML_Frameworks/catboost_overview|CatBoost]]
-- [[深度学习/DL_Frameworks/pytorch_overview|PyTorch]]
-- [[深度学习/DL_Frameworks/tensorflow_overview|TensorFlow]]
-- [[深度学习/DL_Frameworks/keras_overview|Keras]]
+- [[02_机器学习/12_ML_Frameworks/scikit-learn_overview|Scikit-learn]]
+- [[02_机器学习/12_ML_Frameworks/xgboost_overview|XGBoost]]
+- [[02_机器学习/12_ML_Frameworks/lightgbm_overview|LightGBM]]
+- [[02_机器学习/12_ML_Frameworks/catboost_overview|CatBoost]]
+- [[03_深度学习/08_DL_Frameworks/pytorch_overview|PyTorch]]
+- [[03_深度学习/08_DL_Frameworks/tensorflow_overview|TensorFlow]]
+- [[03_深度学习/08_DL_Frameworks/keras_overview|Keras]]
 
 ### 高级主题
-- [[智能体/A2A_Protocol_Deep_Dive|A2A 协议]]
-- [[大模型/Structured_Output_Guide|结构化输出指南]]
-- [[模型评估/Evaluation_Tools/LLM_as_Judge_Guide|LLM-as-Judge 评估]]
+- [[15_智能体/A2A_Protocol_Deep_Dive|A2A 协议]]
+- [[05_大模型/Structured_Output_Guide|结构化输出指南]]
+- [[08_模型评估/04_Evaluation_Tools/LLM_as_Judge_Guide|LLM-as-Judge 评估]]
 - [[概念/long-context-vs-rag|长上下文 vs RAG]]
-- [[编程/AI_Coding_2026_Guide|AI 编程 2026 全景]]
-- [[部署推理/Caching/Prompt_Caching_Advanced|Prompt 缓存高级]]
-- [[RAG系统/Advanced_RAG/Agentic_RAG_Guide|Agentic RAG]]
-- [[伦理安全/Guardrails_Production_Guide|AI 护栏实践]]
-- [[运维/AI_Observability_Guide_2026|AI 可观测性]]
-- [[伦理安全/AI_Red_Teaming_Guide|AI 红队测试]]
-- [[架构基建/AI_Gateway/LLM_Gateway_Comparison_2026|LLM 网关对比]]
-- [[RAG系统/Embeddings/Embedding_Models_Guide|Embedding 模型选型]]
-- [[智能体/Memory_Infrastructure/Agent_Memory_Techniques|Agent 记忆技术]]
-- [[部署推理/LLM_Cost_Optimization|LLM 成本优化]]
+- [[16_编程/AI_Coding_2026_Guide|AI 编程 2026 全景]]
+- [[10_部署推理/06_Caching/Prompt_Caching_Advanced|Prompt 缓存高级]]
+- [[14_RAG系统/04_Advanced_RAG/Agentic_RAG_Guide|Agentic RAG]]
+- [[17_伦理安全/Guardrails_Production_Guide|AI 护栏实践]]
+- [[13_运维/AI_Observability_Guide_2026|AI 可观测性]]
+- [[17_伦理安全/AI_Red_Teaming_Guide|AI 红队测试]]
+- [[12_架构基建/11_AI_Gateway/LLM_Gateway_Comparison_2026|LLM 网关对比]]
+- [[14_RAG系统/02_Embeddings/Embedding_Models_Guide|Embedding 模型选型]]
+- [[15_智能体/06_Memory_Infrastructure/Agent_Memory_Techniques|Agent 记忆技术]]
+- [[10_部署推理/LLM_Cost_Optimization|LLM 成本优化]]
 
 ### 应用场景
-- [[行业应用/AI_Code_Generation_2026|AI 代码生成]]
-- [[行业应用/Finance/AI_Finance_Applications_2026|AI 金融应用]]
-- [[行业应用/Education/AI_Education_Applications_2026|AI 教育应用]]
-- [[行业应用/Healthcare/AI_Healthcare_Applications_2026|AI 医疗应用]]
+- [[18_行业应用/AI_Code_Generation_2026|AI 代码生成]]
+- [[18_行业应用/04_Finance/AI_Finance_Applications_2026|AI 金融应用]]
+- [[18_行业应用/05_Education/AI_Education_Applications_2026|AI 教育应用]]
+- [[18_行业应用/03_Healthcare/AI_Healthcare_Applications_2026|AI 医疗应用]]
 
 ### 平台
-- [[学习/References/Projects/papers-with-code|Papers with Code]]
-- [[学习/References/Projects/kaggle|Kaggle]]
+- [[90_学习/References/Projects/papers-with-code|Papers with Code]]
+- [[90_学习/References/Projects/kaggle|Kaggle]]

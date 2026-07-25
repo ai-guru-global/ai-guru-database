@@ -131,14 +131,14 @@ LeCun 认为监督学习受限于标注数据的规模和成本，而自监督�
 
 ## 交叉引用 (Cross-References)
 
-- [Talks 主题合成 2026](业界观点/Talks_Synthesis/Talks_Synthesis_2026.md) -- Scaling Laws、开源 vs 闭源、AI 安全等主题中 LeCun 的立场
+- [Talks 主题合成 2026](19_业界观点/Talks_Synthesis/Talks_Synthesis_2026.md) -- Scaling Laws、开源 vs 闭源、AI 安全等主题中 LeCun 的立场
 - [Yann LeCun 金句集](./sayings.md) -- 更多金句与权威来源链接
-- [AI 历史时间线](入门/Fundamentals/AI_History_Timeline.md) -- CNN 的发明与深度学习革命
-- [AI 伦理与社会](入门/Ethics_and_Future/AI_Ethics_Society.md) -- 开源 vs 闭源、AI 安全争论
-- [AI 未来趋势](入门/Ethics_and_Future/AI_Future_Trends.md) -- 世界模型与后 LLM 架构
-- [深度学习基础](../../深度学习/README.md) -- CNN 架构与自监督学习理论
-- [计算机视觉](../../计算机视觉/README.md) -- LeNet 到现代视觉模型的演进
-- [LLM 基础](../../大模型/README.md) -- LLaMA 开源模型与 LLM 局限性讨论
+- [AI 历史时间线](00_入门/01_Fundamentals/AI_History_Timeline.md) -- CNN 的发明与深度学习革命
+- [AI 伦理与社会](00_入门/04_Ethics_and_Future/AI_Ethics_Society.md) -- 开源 vs 闭源、AI 安全争论
+- [AI 未来趋势](00_入门/04_Ethics_and_Future/AI_Future_Trends.md) -- 世界模型与后 LLM 架构
+- [深度学习基础](../../03_深度学习/README.md) -- CNN 架构与自监督学习理论
+- [计算机视觉](../../04_计算机视觉/README.md) -- LeNet 到现代视觉模型的演进
+- [LLM 基础](../../05_大模型/README.md) -- LLaMA 开源模型与 LLM 局限性讨论
 
 ---
 
@@ -156,14 +156,14 @@ LeCun 认为监督学习受限于标注数据的规模和成本，而自监督�
 
 ## Related
 
-- [[业界观点/Yann_LeCun/sayings]] -- Yann LeCun 关于 AI 的观点 (Yann LeCun on AI)
-- [[业界观点/Geoffrey_Hinton/about]] -- Geoffrey Hinton 简介 (共享: deep learning pioneers, Turing Award, AI safety debate)
-- [[业界观点/Yoshua_Bengio/about]] -- Yoshua Bengio 简介 (共享: deep learning pioneers, Turing Award, scaling concerns)
-- [[业界观点/Sam_Altman/about]] -- Sam Altman 简介 (共享: open vs closed AI debate)
-- [[业界观点/Dario_Amodei/about]] -- Dario Amodei 简介 (共享: AI safety debate — urgency vs practicality)
-- [[业界观点/Mark_Zuckerberg/about]] -- Mark Zuckerberg 简介 (共享: Meta AI strategy, LLaMA open source)
-- [[业界观点/Andrej_Karpathy/about]] -- Andrej Karpathy 简介 (共享: insights, leaders, speeches, talks)
-- [[业界观点/Andrew_Ng/about]] -- Andrew Ng 简介 (共享: insights, leaders, speeches, talks)
+- [[19_业界观点/Yann_LeCun/sayings]] -- Yann LeCun 关于 AI 的观点 (Yann LeCun on AI)
+- [[19_业界观点/Geoffrey_Hinton/about]] -- Geoffrey Hinton 简介 (共享: deep learning pioneers, Turing Award, AI safety debate)
+- [[19_业界观点/Yoshua_Bengio/about]] -- Yoshua Bengio 简介 (共享: deep learning pioneers, Turing Award, scaling concerns)
+- [[19_业界观点/Sam_Altman/about]] -- Sam Altman 简介 (共享: open vs closed AI debate)
+- [[19_业界观点/Dario_Amodei/about]] -- Dario Amodei 简介 (共享: AI safety debate — urgency vs practicality)
+- [[19_业界观点/Mark_Zuckerberg/about]] -- Mark Zuckerberg 简介 (共享: Meta AI strategy, LLaMA open source)
+- [[19_业界观点/Andrej_Karpathy/about]] -- Andrej Karpathy 简介 (共享: insights, leaders, speeches, talks)
+- [[19_业界观点/Andrew_Ng/about]] -- Andrew Ng 简介 (共享: insights, leaders, speeches, talks)
 
 ## 附录：人物影响力评估
 

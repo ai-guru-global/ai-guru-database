@@ -10,9 +10,9 @@ relationships:
   - target: "概念/scaling-laws"
     type: influences
 sources:
-  - 模型训练/Data/Data_Curation_and_Mixture_2026.md
-  - 大模型/LLM_Data_Engineering.md
-  - 模型训练/README.md
+  - 07_模型训练/02_Data/Data_Curation_and_Mixture_2026.md
+  - 05_大模型/LLM_Data_Engineering.md
+  - 07_模型训练/README.md
 summary: "数据清洗 Pipeline 就像给 AI 准备‘干净食材’的中央厨房：把从网上抓来的原始数据，经过去重、去噪、格式统一、质量打分、毒性过滤等步骤，变成适合训练大模型的高质量语料。"
 provenance:
   extracted: 0.75
@@ -96,8 +96,8 @@ aliases:
 - [[概念/llm-data-engineering]] — 大模型数据工程
 - [[概念/model-training]] — 模型训练
 - [[概念/synthetic-data]] — 合成数据
-- [[模型训练/Data/Data_Curation_and_Mixture_2026]] — 数据策展与配比 2026
-- [[大模型/LLM_Data_Engineering/README]] — 大模型数据工程
+- [[07_模型训练/02_Data/Data_Curation_and_Mixture_2026]] — 数据策展与配比 2026
+- [[05_大模型/06_LLM_Data_Engineering/README]] — 大模型数据工程
 
 ---
 

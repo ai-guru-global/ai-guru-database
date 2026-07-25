@@ -98,7 +98,7 @@ sources: []
 |------|------|------|------|
 | `.github/ISSUE_TEMPLATE/*` | 3 | 模板，本就该短 | 保留 |
 | `参考/books/*` | ~12 | 书籍引用卡，短属正常 | 保留 |
-| `学习/Courses/*` | ~8 | 课程映射卡，短属正常 | 保留 |
+| `90_学习/Courses/*` | ~8 | 课程映射卡，短属正常 | 保留 |
 | `*_overview.md`（框架概述） | ~5 | **疑似占位**（pytorch/tensorflow/keras/xgboost 概述仅 660B） | 🔴 需扩充 |
 | `god-tier-prompts_overview.md` | 1 | 575B 疑似占位 | 🔴 需扩充或删 |
 

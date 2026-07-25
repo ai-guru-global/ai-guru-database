@@ -625,8 +625,8 @@ CAIO (Chief AI Compliance Officer) 职责:
 
 ## Related
 
-- [[伦理安全/Ethics_Fundamentals/Ethics-in-nutshell.md|Ethics-in-nutshell]]
-- [[伦理安全/README.md|伦理安全 README]]
-- [[伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming.md|AI_Safety_RedTeaming]]
-- [[伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming_for_dummy.md|AI_Safety_RedTeaming_for_dummy]]
-- [[伦理安全/AI_Security_2026/AI_Security_2026.md|AI_Security_2026]]
+- [[17_伦理安全/01_Ethics_Fundamentals/Ethics-in-nutshell.md|Ethics-in-nutshell]]
+- [[17_伦理安全/README.md|伦理安全 README]]
+- [[17_伦理安全/04_AI_Safety_RedTeaming/AI_Safety_RedTeaming.md|AI_Safety_RedTeaming]]
+- [[17_伦理安全/04_AI_Safety_RedTeaming/AI_Safety_RedTeaming_for_dummy.md|AI_Safety_RedTeaming_for_dummy]]
+- [[17_伦理安全/07_AI_Security_2026/AI_Security_2026.md|AI_Security_2026]]

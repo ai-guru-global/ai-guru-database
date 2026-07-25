@@ -12,9 +12,9 @@ relationships:
   - target: "概念/kv-cache"
     type: manages
 sources:
-  - 部署推理/Inference_Performance/Request_Scheduling_for_LLMs.md
-  - 部署推理/Inference_Engines/vLLM_Deep_Dive.md
-  - 部署推理/Inference_Engines/SGLang_Deep_Dive.md
+  - 10_部署推理/04_Inference_Performance/Request_Scheduling_for_LLMs.md
+  - 10_部署推理/02_Inference_Engines/vLLM_Deep_Dive.md
+  - 10_部署推理/02_Inference_Engines/SGLang_Deep_Dive.md
 summary: "动态批调度是推理引擎在每个生成步骤后重新安排请求的策略：新请求随时插入，完成请求随时退出，让 GPU 一直处于满负荷运转，避免‘等一个慢请求拖垮整批’的浪费。"
 provenance:
   extracted: 0.75
@@ -100,8 +100,8 @@ Step 4: A 完成退出，F 加入 → D + E + F
 - [[概念/paged-attention]] — PagedAttention
 - [[概念/model-serving]] — 模型服务
 - [[概念/inference-performance]] — 推理性能
-- [[部署推理/Inference_Performance/Request_Scheduling_for_LLMs]] — LLM 请求调度
-- [[部署推理/Inference_Engines/vLLM_Deep_Dive]] — vLLM 深度解析
+- [[10_部署推理/04_Inference_Performance/Request_Scheduling_for_LLMs]] — LLM 请求调度
+- [[10_部署推理/02_Inference_Engines/vLLM_Deep_Dive]] — vLLM 深度解析
 
 ---
 

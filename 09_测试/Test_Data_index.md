@@ -15,12 +15,12 @@ tags: [auto-index]
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[测试/Test_Data_Management|Test Data Management]] | Test data management: synthetic data generation, data cards and privacy anonymization | QA engineers / data engineers |
+| [[09_测试/Test_Data_Management|Test Data Management]] | Test data management: synthetic data generation, data cards and privacy anonymization | QA engineers / data engineers |
 
 ## Related
 
-- [[测试/index|测试首页]]
-- [[模型运维/Data_Engineering/index|Data Engineering]]
+- [[09_测试/index|测试首页]]
+- [[11_模型运维/02_Data_Engineering/index|Data Engineering]]
 
 ## 核心概念
 

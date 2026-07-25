@@ -202,10 +202,10 @@ flowchart TB
 |------|------|
 | 完整架构 | [Cloud_Product_Ops_2026.md](./Cloud_Product_Ops_2026.md) |
 | 入门指南 | [Cloud_Product_Ops_for_dummy.md](./Cloud_Product_Ops_for_dummy.md) |
-| Agent Harness | [Ops_Agent_Harness_2026.md](智能体/Agent_Evaluation/Ops_Agent_Harness_2026.md) |
-| SRE 实践 | [../AI_Ops/SRE_for_AI_Systems.md](运维/SRE_Reliability/SRE_for_AI_Systems.md) |
-| 事故响应 | [../AI_Ops/AI_Incident_Response_Playbook.md](运维/SRE_Reliability/AI_Incident_Response_Playbook.md) |
-| 可观测性 | [../AI_Ops/AI_Observability_Guide.md](模型运维/Observability/AI_Observability_Guide.md) |
+| Agent Harness | [Ops_Agent_Harness_2026.md](15_智能体/07_Agent_Evaluation/Ops_Agent_Harness_2026.md) |
+| SRE 实践 | [../AI_Ops/SRE_for_AI_Systems.md](13_运维/02_SRE_Reliability/SRE_for_AI_Systems.md) |
+| 事故响应 | [../AI_Ops/AI_Incident_Response_Playbook.md](13_运维/02_SRE_Reliability/AI_Incident_Response_Playbook.md) |
+| 可观测性 | [../AI_Ops/AI_Observability_Guide.md](11_模型运维/08_Observability/AI_Observability_Guide.md) |
 
 ---
 

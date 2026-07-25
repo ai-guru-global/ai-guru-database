@@ -11,7 +11,7 @@ sources: []
 
 # AI Safety Engineer 题库
 
-> 覆盖 AI 安全工程的核心知识。关联 [[面试岗位/AI_Safety_Engineer/AI_Safety_Engineer_2026|AI Safety Engineer 2026]] 与 [[伦理安全/index|伦理安全]] 章节。
+> 覆盖 AI 安全工程的核心知识。关联 [[21_面试岗位/AI_Safety_Engineer/AI_Safety_Engineer_2026|AI Safety Engineer 2026]] 与 [[17_伦理安全/index|伦理安全]] 章节。
 
 ---
 
@@ -101,7 +101,7 @@ sources: []
 58. 你如何跟上快速演进的攻击手法（几乎每周有新越狱）？
 59. 你如何看待 AGI 的存在性风险（existential risk）？作为安全工程师的责任？
 
-## 编程/实操题 (3 题)
+## 16_编程/实操题 (3 题)
 
 60. 实现一个基于规则 + 分类器的双层内容安全过滤器，并评估其 precision/recall。
 61. 用 LLM-as-Judge 实现一个自动化红队评估脚本，对给定模型跑一组攻击并打分。
@@ -111,12 +111,12 @@ sources: []
 
 ## Related
 
-- [[面试岗位/AI_Safety_Engineer/AI_Safety_Engineer_2026|AI Safety Engineer 2026 指南]]
-- [[面试岗位/Interview_Guide/index|面试总指南]]
-- [[伦理安全/index|伦理安全章节]]
-- [[伦理安全/Ethics_Fundamentals/index|伦理基础]]
-- [[模型训练/Alignment/RLHF_at_Scale_2026|大规模 RLHF]]
-- [[论文精读/Alignment/Constitutional_AI_Paper_Deep_Dive|Constitutional AI 论文]]
+- [[21_面试岗位/AI_Safety_Engineer/AI_Safety_Engineer_2026|AI Safety Engineer 2026 指南]]
+- [[21_面试岗位/Interview_Guide/index|面试总指南]]
+- [[17_伦理安全/index|伦理安全章节]]
+- [[17_伦理安全/01_Ethics_Fundamentals/index|伦理基础]]
+- [[07_模型训练/06_Alignment/RLHF_at_Scale_2026|大规模 RLHF]]
+- [[20_论文精读/06_Alignment/Constitutional_AI_Paper_Deep_Dive|Constitutional AI 论文]]
 - [[治理/index|治理]]（合规框架）
 
 ---

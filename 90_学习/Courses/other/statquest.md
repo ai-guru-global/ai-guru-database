@@ -22,8 +22,8 @@ sources: []
 
 ## Related
 
-- [[学习/Courses/other/hello_agents|Hello Agents]]
-- [[学习/README|学习资源]]
+- [[90_学习/Courses/other/hello_agents|Hello Agents]]
+- [[90_学习/README|学习资源]]
 
 ---
 *Last updated: 2026-07-02*

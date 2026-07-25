@@ -39,8 +39,8 @@ Satya Nadella 是微软复兴的缔造者。他 2014 年接任 CEO 后推行"云
 
 | 文件 | 内容 | 适用人群 |
 |------|------|----------|
-| [[业界观点/Satya_Nadella/about\|about]] | 完整人物简介：Azure、OpenAI 合作、Copilot | 所有读者 |
-| [[业界观点/Satya_Nadella/sayings\|sayings]] | 重要语录合集 | 研究者 |
+| [[19_业界观点/Satya_Nadella/about\|about]] | 完整人物简介：Azure、OpenAI 合作、Copilot | 所有读者 |
+| [[19_业界观点/Satya_Nadella/sayings\|sayings]] | 重要语录合集 | 研究者 |
 
 ---
 
@@ -53,7 +53,7 @@ Satya Nadella 是微软复兴的缔造者。他 2014 年接任 CEO 后推行"云
 | Copilot 系列 | 2023- | 企业 AI 统一入口 |
 | GitHub Copilot | 2021 | AI 编程普及 |
 | 收购 GitHub / Activision | —— | 开发者 + 游戏生态 |
-| Microsoft AI（[[业界观点/Mustafa_Suleyman/about\|Suleyman]]）| 2024 | 整合 Consumer AI |
+| Microsoft AI（[[19_业界观点/Mustafa_Suleyman/about\|Suleyman]]）| 2024 | 整合 Consumer AI |
 
 ---
 
@@ -69,8 +69,8 @@ Satya Nadella 是微软复兴的缔造者。他 2014 年接任 CEO 后推行"云
 | 2021 | GitHub Copilot | AI 编程 |
 | 2023 | Copilot 全系（Bing/Office/Windows）| AI 作为操作系统 |
 | 2023 | OpenAI 增资（累计超百亿）| 深化合作 |
-| 2023.11 | OpenAI 董事会危机中介入 | 支持 [[业界观点/Sam_Altman/about\|Altman]] |
-| 2024 | 聘 [[业界观点/Mustafa_Suleyman/about\|Suleyman]] 领导 Microsoft AI | Consumer AI 整合 |
+| 2023.11 | OpenAI 董事会危机中介入 | 支持 [[19_业界观点/Sam_Altman/about\|Altman]] |
+| 2024 | 聘 [[19_业界观点/Mustafa_Suleyman/about\|Suleyman]] 领导 Microsoft AI | Consumer AI 整合 |
 | 2025-2026 | Copilot 持续演进 | 企业 AI 入口 |
 
 ---
@@ -84,7 +84,7 @@ Satya Nadella 是微软复兴的缔造者。他 2014 年接任 CEO 后推行"云
 | 合作 | 与 OpenAI 的历史性合作 | 多次 |
 | 企业 | 企业级负责任部署 | Microsoft 实践 |
 
-完整语录见 [[业界观点/Satya_Nadella/sayings|Nadella 语录]]。
+完整语录见 [[19_业界观点/Satya_Nadella/sayings|Nadella 语录]]。
 
 ---
 
@@ -96,7 +96,7 @@ Satya Nadella 是微软复兴的缔造者。他 2014 年接任 CEO 后推行"云
 | 企业 AI 派 | 旗手 |
 | 务实合作派 | 代表 |
 
-Nadella 的独特之处是**通过合作而非自研占据 AI 战略高地**——微软投资 OpenAI 而非自建前沿实验室，是 AI 时代最精明的商业决策。参见 [[业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026|开源 vs 闭源]]。
+Nadella 的独特之处是**通过合作而非自研占据 AI 战略高地**——微软投资 OpenAI 而非自建前沿实验室，是 AI 时代最精明的商业决策。参见 [[19_业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026|开源 vs 闭源]]。
 
 ---
 
@@ -104,10 +104,10 @@ Nadella 的独特之处是**通过合作而非自研占据 AI 战略高地**—�
 
 | 关系 | 人物 |
 |------|------|
-| 合作伙伴 | [[业界观点/Sam_Altman/about|Sam Altman]]（OpenAI）|
-| 微软顾问 | [[业界观点/Bill_Gates/about\|Bill Gates]] |
-| Microsoft AI 负责人 | [[业界观点/Mustafa_Suleyman/about\|Mustafa Suleyman]] |
-| 竞争对手 | [[业界观点/Sundar_Pichai/about\|Sundar Pichai]]（Google）|
+| 合作伙伴 | [[19_业界观点/Sam_Altman/about|Sam Altman]]（OpenAI）|
+| 微软顾问 | [[19_业界观点/Bill_Gates/about\|Bill Gates]] |
+| Microsoft AI 负责人 | [[19_业界观点/Mustafa_Suleyman/about\|Mustafa Suleyman]] |
+| 竞争对手 | [[19_业界观点/Sundar_Pichai/about\|Sundar Pichai]]（Google）|
 
 ---
 
@@ -115,9 +115,9 @@ Nadella 的独特之处是**通过合作而非自研占据 AI 战略高地**—�
 
 | 阶段 | 推荐内容 | 目标 |
 |------|----------|------|
-| 入门 | [[业界观点/Satya_Nadella/about\|about]] | 了解微软 AI 战略 |
-| 进阶 | [[业界观点/Satya_Nadella/sayings\|sayings]] | 掌握 Copilot 愿景 |
-| 对比 | [[业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026\|开源 vs 闭源]] | 商业模式 |
+| 入门 | [[19_业界观点/Satya_Nadella/about\|about]] | 了解微软 AI 战略 |
+| 进阶 | [[19_业界观点/Satya_Nadella/sayings\|sayings]] | 掌握 Copilot 愿景 |
+| 对比 | [[19_业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026\|开源 vs 闭源]] | 商业模式 |
 
 ---
 
@@ -156,11 +156,11 @@ Nadella 的独特之处是**通过合作而非自研占据 AI 战略高地**—�
 
 ## 关联导航
 
-- [[业界观点/Satya_Nadella/about\|人物简介]] · [[业界观点/Satya_Nadella/sayings\|核心语录]]
-- [[业界观点/Sam_Altman/about\|Sam Altman]] · [[业界观点/Bill_Gates/about\|Bill Gates]]
-- [[业界观点/Mustafa_Suleyman/about\|Mustafa Suleyman]] · [[业界观点/Sundar_Pichai/about\|Sundar Pichai]]
-- [[业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026\|开源 vs 闭源]]
-- [[业界观点/index\|业界观点首页]]
+- [[19_业界观点/Satya_Nadella/about\|人物简介]] · [[19_业界观点/Satya_Nadella/sayings\|核心语录]]
+- [[19_业界观点/Sam_Altman/about\|Sam Altman]] · [[19_业界观点/Bill_Gates/about\|Bill Gates]]
+- [[19_业界观点/Mustafa_Suleyman/about\|Mustafa Suleyman]] · [[19_业界观点/Sundar_Pichai/about\|Sundar Pichai]]
+- [[19_业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026\|开源 vs 闭源]]
+- [[19_业界观点/index\|业界观点首页]]
 
 ---
 

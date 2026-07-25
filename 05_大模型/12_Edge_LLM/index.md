@@ -24,9 +24,9 @@ tags: [auto-index]
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[大模型/Edge_LLM/Edge_LLM_Deep_Dive|Edge LLM Deep Dive]] | Edge LLM deep dive: quantization, distillation and on-device inference | edge AI engineers / mobile developers |
-| [[大模型/Edge_LLM/GenAI_L19_Building_with_SLMs|GenAI L19 Building with SLMs]] | Building with Small Language Models (GenAI Lecture 19) | all AI practitioners |
-| [[大模型/Edge_LLM/README|README]] | Module README guide and reading order | all readers |
+| [[05_大模型/12_Edge_LLM/Edge_LLM_Deep_Dive|Edge LLM Deep Dive]] | Edge LLM deep dive: quantization, distillation and on-device inference | edge AI engineers / mobile developers |
+| [[05_大模型/12_Edge_LLM/GenAI_L19_Building_with_SLMs|GenAI L19 Building with SLMs]] | Building with Small Language Models (GenAI Lecture 19) | all AI practitioners |
+| [[05_大模型/12_Edge_LLM/README|README]] | Module README guide and reading order | all readers |
 
 ## 核心概念速查
 
@@ -69,9 +69,9 @@ tags: [auto-index]
 
 ## Related
 
-- [[大模型/index|大模型首页]]
-- [[部署推理/Quantization/index|Quantization]]
-- [[部署推理/Hardware/index|Hardware]]
+- [[05_大模型/index|大模型首页]]
+- [[10_部署推理/05_Quantization/index|Quantization]]
+- [[10_部署推理/08_Hardware/index|Hardware]]
 - [[概念/model-compression|模型压缩]]
 
 ## 统计

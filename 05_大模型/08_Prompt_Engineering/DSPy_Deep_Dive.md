@@ -407,8 +407,8 @@ class CompressedRAG(dspy.Module):
 
 ## Related
 
-- [[大模型/Prompt_Engineering/Outlines_Deep_Dive.md|Outlines_Deep_Dive]]
-- [[大模型/Prompt_Engineering/Prompt-Engineering-in-nutshell.md|Prompt-Engineering-in-nutshell]]
-- [[大模型/Prompt_Engineering/Prompt_Engineering.md|Prompt_Engineering]]
-- [[大模型/Prompt_Engineering/Prompt_Engineering_for_dummy.md|Prompt_Engineering_for_dummy]]
-- [[大模型/Fine_tuning_Techniques/Axolotl_Deep_Dive.md|Axolotl_Deep_Dive]]
+- [[05_大模型/08_Prompt_Engineering/Outlines_Deep_Dive.md|Outlines_Deep_Dive]]
+- [[05_大模型/08_Prompt_Engineering/Prompt-Engineering-in-nutshell.md|Prompt-Engineering-in-nutshell]]
+- [[05_大模型/08_Prompt_Engineering/Prompt_Engineering.md|Prompt_Engineering]]
+- [[05_大模型/08_Prompt_Engineering/Prompt_Engineering_for_dummy.md|Prompt_Engineering_for_dummy]]
+- [[05_大模型/07_Fine_tuning_Techniques/Axolotl_Deep_Dive.md|Axolotl_Deep_Dive]]

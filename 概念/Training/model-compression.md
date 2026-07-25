@@ -26,10 +26,10 @@ relationships:
   type: exemplified_by
 sources:
 - 09_model-deployment_Inference/Deployment_Inference.md
-- 部署推理/Deployment_Fundamentals/Deployment_Inference_2026.md
-- 部署推理/Inference_Engines/vLLM_Deep_Dive.md
-- 部署推理/Inference_Engines/llama_cpp_Deep_Dive.md
-- 模型训练/Fine_fine-tuning-techniques_Strategies.md
+- 10_部署推理/01_Deployment_Fundamentals/Deployment_Inference_2026.md
+- 10_部署推理/02_Inference_Engines/vLLM_Deep_Dive.md
+- 10_部署推理/02_Inference_Engines/llama_cpp_Deep_Dive.md
+- 07_模型训练/Fine_fine-tuning-techniques_Strategies.md
 summary: "此页面已合并至主卡片。"
 provenance:
   extracted: 0.85

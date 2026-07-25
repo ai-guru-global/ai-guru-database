@@ -532,13 +532,13 @@ $$
 
 ### 前置知识
 - **[线性代数](../Linear_Algebra/Linear_Algebra.md)**: 协方差矩阵、多元高斯分布
-- **[微积分](数学基础/Calculus_Optimization.md)**: 期望（积分）、最大化（求导）
+- **[微积分](01_数学基础/Calculus_Optimization.md)**: 期望（积分）、最大化（求导）
 
 ### 进阶推荐
-- **[机器学习基础](../../机器学习/README.md)**: MLE/MAP 在具体算法中的应用
-- **[优化方法](深度学习/Optimization/Optimization.md)**: 随机优化的概率视角
-- **[贝叶斯深度学习](机器学习/Bayesian_Methods/Bayesian_Methods_Deep_Dive.md)**: 不确定性量化
-- **[生成模型](计算机视觉/Generative_Models/Generative_Models.md)**: VAE、GAN 的概率基础
+- **[机器学习基础](../../02_机器学习/README.md)**: MLE/MAP 在具体算法中的应用
+- **[优化方法](03_深度学习/03_Optimization/Optimization.md)**: 随机优化的概率视角
+- **[贝叶斯深度学习](02_机器学习/06_Bayesian_Methods/Bayesian_Methods_Deep_Dive.md)**: 不确定性量化
+- **[生成模型](04_计算机视觉/06_Generative_Models/Generative_Models.md)**: VAE、GAN 的概率基础
 
 ---
 
@@ -636,9 +636,9 @@ $$
 
 ## 相关链接
 
-- [[数学基础/Probability_Statistics/Probability_Statistics_for_dummy|概率统计 (小白版)]] — 本篇的零基础版本
-- [[数学基础/Probability_Statistics/index|概率统计索引]] — 主题导览
+- [[01_数学基础/03_Probability_Statistics/Probability_Statistics_for_dummy|概率统计 (小白版)]] — 本篇的零基础版本
+- [[01_数学基础/03_Probability_Statistics/index|概率统计索引]] — 主题导览
 - [[概念/Math/probability-statistics|概率统计]] — 概念卡片
-- [[数学基础/Probability_Statistics/Skill_Statistics_Cheatsheet|统计速查表]] — 统计速查
-- [[数学基础/Information_Theory/Information_Theory_Fundamentals|信息论基础]] — 概率与信息的关联
+- [[01_数学基础/03_Probability_Statistics/Skill_Statistics_Cheatsheet|统计速查表]] — 统计速查
+- [[01_数学基础/04_Information_Theory/Information_Theory_Fundamentals|信息论基础]] — 概率与信息的关联
 - [[概念/Math/bayesian-methods|贝叶斯方法]] — 概率统计的重要分支

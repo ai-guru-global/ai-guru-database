@@ -766,16 +766,16 @@ class CachedLongContextCost:
 
 ## 7. 相关概念 (Related)
 
-- [[RAG系统/Advanced_RAG/RAG_Advanced_2026|RAG高级实践2026]] — RAG核心优化技术
-- [[RAG系统/Advanced_RAG/Code_RAG_Architecture|代码RAG架构]] — 代码场景的RAG
-- [[RAG系统/Advanced_RAG/Agentic_RAG_Guide|Agentic RAG指南]] — Agent驱动的自适应RAG
-- [[RAG系统/RAG_Production/RAG_Cost_Optimization|RAG成本优化]] — 成本优化实践
-- [[RAG系统/Advanced_RAG/RAG_Retrieval_Latency_Optimization|RAG检索延迟优化]] — 延迟优化
-- [[RAG系统/Embeddings/Embedding_Models_Guide|嵌入模型指南]] — 嵌入模型选型
-- [[RAG系统/Advanced_RAG/Graph_RAG_Architecture|Graph RAG架构]] — 图结构增强检索
-- [[RAG系统/RAG_Fundamentals/RAG_Systems|RAG系统基础]] — RAG基础概念
-- [[大模型/Gemini|Gemini]] — 长上下文模型代表
-- [[智能体/Agent_Foundations/Agent_Overview|AI Agent全景]] — Agentic RAG基础
+- [[14_RAG系统/04_Advanced_RAG/RAG_Advanced_2026|RAG高级实践2026]] — RAG核心优化技术
+- [[14_RAG系统/04_Advanced_RAG/Code_RAG_Architecture|代码RAG架构]] — 代码场景的RAG
+- [[14_RAG系统/04_Advanced_RAG/Agentic_RAG_Guide|Agentic RAG指南]] — Agent驱动的自适应RAG
+- [[14_RAG系统/05_RAG_Production/RAG_Cost_Optimization|RAG成本优化]] — 成本优化实践
+- [[14_RAG系统/04_Advanced_RAG/RAG_Retrieval_Latency_Optimization|RAG检索延迟优化]] — 延迟优化
+- [[14_RAG系统/02_Embeddings/Embedding_Models_Guide|嵌入模型指南]] — 嵌入模型选型
+- [[14_RAG系统/04_Advanced_RAG/Graph_RAG_Architecture|Graph RAG架构]] — 图结构增强检索
+- [[14_RAG系统/01_RAG_Fundamentals/RAG_Systems|RAG系统基础]] — RAG基础概念
+- [[05_大模型/Gemini|Gemini]] — 长上下文模型代表
+- [[15_智能体/01_Agent_Foundations/Agent_Overview|AI Agent全景]] — Agentic RAG基础
 
 ---
 

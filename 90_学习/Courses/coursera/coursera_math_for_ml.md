@@ -41,7 +41,7 @@ aliases:
 - 想从直觉理解线性代数的工程师
 - 需要补课数学基础再学 ML 的开发者
 
-> **关联**: -> [[数学基础/README|数学基础]] | [[学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[01_数学基础/README|数学基础]] | [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
 
 
 ## 核心知识框架

@@ -168,7 +168,7 @@ Stable Diffusion 中 UNet 的 cross-attention（text→image）揭示每个 prom
 
 | 情况 | 建议 |
 |------|------|
-| 需要严格归因 | 用 [[可视化/Evaluation_Viz/Model_Interpretability_Visualization\|SHAP/积分梯度]] 为主，注意力为辅 |
+| 需要严格归因 | 用 [[94_可视化/Evaluation_Viz/Model_Interpretability_Visualization\|SHAP/积分梯度]] 为主，注意力为辅 |
 | 探索性理解 | 注意力图直观有效 |
 | 报告/论文 | 明确声明"注意力是相关性而非因果" |
 | 对比模型 | 注意力差异需结合性能差异 |
@@ -449,14 +449,14 @@ fig.show()
 
 ## 关联
 
-- [[可视化/index|可视化首页]]
-- [[可视化/Evaluation_Viz/index|Evaluation Viz]]
-- [[可视化/Evaluation_Viz/Model_Interpretability_Visualization|模型可解释性可视化]]
-- [[深度学习/index|深度学习]]
-- [[深度学习/Attention_Mechanisms/Attention_Mechanisms|注意力机制]]
-- [[大模型/index|大模型]]
-- [[计算机视觉/index|计算机视觉]]
-- [[伦理安全/index|伦理安全]]
+- [[94_可视化/index|可视化首页]]
+- [[94_可视化/Evaluation_Viz/index|Evaluation Viz]]
+- [[94_可视化/Evaluation_Viz/Model_Interpretability_Visualization|模型可解释性可视化]]
+- [[03_深度学习/index|深度学习]]
+- [[03_深度学习/Attention_Mechanisms/Attention_Mechanisms|注意力机制]]
+- [[05_大模型/index|大模型]]
+- [[04_计算机视觉/index|计算机视觉]]
+- [[17_伦理安全/index|伦理安全]]
 
 ---
 

@@ -334,8 +334,8 @@ A: 基础使用 1-2 周，熟练使用 1-2 月，精通 3-6 月。
 
 ## Related
 
-- [[编程/Theory/AI_Coding_Theory.md|AI_Coding_Theory]]
-- [[编程/Tools/AI_Coding_Assistants_2026.md|AI_Coding_Assistants_2026]]
-- [[编程/Tools/CodeBuddy_Guide.md|CodeBuddy_Guide]]
-- [[编程/Tools/Comate_Guide.md|Comate_Guide]]
-- [[编程/Tools/Coze_Guide.md|Coze_Guide]]
+- [[16_编程/02_Theory/AI_Coding_Theory.md|AI_Coding_Theory]]
+- [[16_编程/05_Tools/AI_Coding_Assistants_2026.md|AI_Coding_Assistants_2026]]
+- [[16_编程/05_Tools/CodeBuddy_Guide.md|CodeBuddy_Guide]]
+- [[16_编程/05_Tools/Comate_Guide.md|Comate_Guide]]
+- [[16_编程/05_Tools/Coze_Guide.md|Coze_Guide]]

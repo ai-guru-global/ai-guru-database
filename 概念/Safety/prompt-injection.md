@@ -13,7 +13,7 @@ relationships:
   - target: "[[概念/Safety/adversarial-attack]]"
     type: subtype_of
 sources:
-  - 伦理安全/LLM_Security_Defense_Guide.md
+  - 17_伦理安全/LLM_Security_Defense_Guide.md
 summary: "Prompt注入攻击是通过在用户输入或外部数据中夹带恶意指令，劫持LLM行为使其偏离原始系统指令的安全威胁。分为直接注入和间接注入两种形式，是LLM应用面临的最严重安全风险之一。"
 provenance:
   extracted: 0.75
@@ -487,7 +487,7 @@ define flow block injection
 - [[概念/Safety/adversarial-attack]] — 对抗攻击（更广泛的对抗威胁）
 - [[概念/Safety/runtime-security]] — 运行时安全
 - [[概念/Safety/ai-alignment]] — AI对齐（从训练层面增强安全）
-- [[伦理安全/LLM_Security_Defense_Guide]] — LLM安全防御指南
+- [[17_伦理安全/LLM_Security_Defense_Guide]] — LLM安全防御指南
 
 ---
 

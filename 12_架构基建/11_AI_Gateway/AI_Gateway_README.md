@@ -48,44 +48,44 @@ sources: []
 
 ## 关联目录
 
-- [部署推理](../部署推理/) -- 推理引擎 (vLLM, SGLang)
-- [LLM 推理引擎选型指南](部署推理/Inference_Engines/LLM_Inference_Engine_Selection_Guide.md) -- 网关后端模型/推理引擎选型
-- [LLM 推理引擎迁移指南](部署推理/Inference_Engines/LLM_Inference_Engine_Migration_Guide.md) -- 多引擎切换与灰度策略
-- [RAG系统](../RAG系统/) -- RAG 系统
-- [AI运维](../运维/) -- AI 运维
+- [部署推理](../10_部署推理/) -- 推理引擎 (vLLM, SGLang)
+- [LLM 推理引擎选型指南](10_部署推理/02_Inference_Engines/LLM_Inference_Engine_Selection_Guide.md) -- 网关后端模型/推理引擎选型
+- [LLM 推理引擎迁移指南](10_部署推理/02_Inference_Engines/LLM_Inference_Engine_Migration_Guide.md) -- 多引擎切换与灰度策略
+- [RAG系统](../14_RAG系统/) -- RAG 系统
+- [AI运维](../13_运维/) -- AI 运维
 
 ---
 
 *Last updated: 2026-04-24*
 
 ## Related
-- [[架构基建/AI_Gateway/AI_Gateway_Comparison_2026|AI Gateway 对比 2026]]
-- [[架构基建/AI_Gateway/LiteLLM_Deep_Dive|LiteLLM: 多模型统一 API 代理]]
-- [[架构基建/AI_Gateway/README_for_dummy|14 AI Gateway — 小白版 🚪]]
-- [[部署推理/Inference_Engines/LLM_Inference_Engine_Selection_Guide|LLM 推理引擎选型指南]]
-- [[部署推理/Inference_Engines/LLM_Inference_Engine_Migration_Guide|LLM 推理引擎迁移指南]]
-- [[部署推理/Inference_Engines/vLLM_Deep_Dive|vLLM 深度解析]]
-- [[部署推理/Inference_Engines/SGLang_Deep_Dive|SGLang 深度解析]]
+- [[12_架构基建/11_AI_Gateway/AI_Gateway_Comparison_2026|AI Gateway 对比 2026]]
+- [[12_架构基建/11_AI_Gateway/LiteLLM_Deep_Dive|LiteLLM: 多模型统一 API 代理]]
+- [[12_架构基建/11_AI_Gateway/README_for_dummy|14 AI Gateway — 小白版 🚪]]
+- [[10_部署推理/02_Inference_Engines/LLM_Inference_Engine_Selection_Guide|LLM 推理引擎选型指南]]
+- [[10_部署推理/02_Inference_Engines/LLM_Inference_Engine_Migration_Guide|LLM 推理引擎迁移指南]]
+- [[10_部署推理/02_Inference_Engines/vLLM_Deep_Dive|vLLM 深度解析]]
+- [[10_部署推理/02_Inference_Engines/SGLang_Deep_Dive|SGLang 深度解析]]
 
-- [[架构基建/AI_Gateway/AI_Gateway_for_dummy]] — AI Gateway 入门指南 (for Dummies) (共享: ai-gateway, api-management, litellm, routing)
-- [[架构基建/AI_Gateway/Gateway-in-nutshell]] — AI 网关速成指南 (共享: ai-gateway, api-management, litellm, routing)
-- [[架构基建/AI_Gateway/Kong_AI_Gateway_Deep_Dive]] — Kong AI Gateway 深度解析 (共享: ai-gateway, api-management, litellm, routing)
-- [[架构基建/AI_Gateway/Spring_AI_Gateway_Security]] — Spring AI 网关与安全 (共享: ai-gateway, api-management, litellm, routing)
-- [[架构基建/AI_Gateway/AI_Gateway_Comparison_2026.md|AI_Gateway_Comparison_2026]]
-- [[智能体/Agent_Evaluation/README_for_dummy|README_for_dummy]]
+- [[12_架构基建/11_AI_Gateway/AI_Gateway_for_dummy]] — AI Gateway 入门指南 (for Dummies) (共享: ai-gateway, api-management, litellm, routing)
+- [[12_架构基建/11_AI_Gateway/Gateway-in-nutshell]] — AI 网关速成指南 (共享: ai-gateway, api-management, litellm, routing)
+- [[12_架构基建/11_AI_Gateway/Kong_AI_Gateway_Deep_Dive]] — Kong AI Gateway 深度解析 (共享: ai-gateway, api-management, litellm, routing)
+- [[12_架构基建/11_AI_Gateway/Spring_AI_Gateway_Security]] — Spring AI 网关与安全 (共享: ai-gateway, api-management, litellm, routing)
+- [[12_架构基建/11_AI_Gateway/AI_Gateway_Comparison_2026.md|AI_Gateway_Comparison_2026]]
+- [[15_智能体/07_Agent_Evaluation/README_for_dummy|README_for_dummy]]
 
-- [[架构基建/AI_Gateway/AI_Gateway_Comparison_2026|AI Gateway 对比 2026]]
-- [[架构基建/AI_Gateway/LiteLLM_Deep_Dive|LiteLLM: 多模型统一 API 代理]]
-- [[架构基建/AI_Gateway/README_for_dummy|14 AI Gateway — 小白版 🚪]]
+- [[12_架构基建/11_AI_Gateway/AI_Gateway_Comparison_2026|AI Gateway 对比 2026]]
+- [[12_架构基建/11_AI_Gateway/LiteLLM_Deep_Dive|LiteLLM: 多模型统一 API 代理]]
+- [[12_架构基建/11_AI_Gateway/README_for_dummy|14 AI Gateway — 小白版 🚪]]
 
 
-- [[架构基建/README|架构与基础设施 (Architecture & Infrastructure)]]
+- [[12_架构基建/README|架构与基础设施 (Architecture & Infrastructure)]]
 
 ## 架构核心组件对比
 
 | 组件层 | 功能 | 关键技术 | 选型考量 |
 |--------|------|----------|----------|
-| 计算层 | 模型训练/推理 | GPU/TPU/NPU集群 | 算力需求+成本 |
+| 计算层 | 07_模型训练/推理 | GPU/TPU/NPU集群 | 算力需求+成本 |
 | 存储层 | 数据/模型/检查点 | 分布式存储/对象存储 | 容量+IOPS+成本 |
 | 网络层 | 节点间通信 | RDMA/RoCE/InfiniBand | 带宽+延迟 |
 | 调度层 | 资源编排 | K8s/Slurm/Ray | 弹性+效率 |

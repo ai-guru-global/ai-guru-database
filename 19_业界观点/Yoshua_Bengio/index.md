@@ -17,7 +17,7 @@ sources:
 
 # Yoshua Bengio 人物索引
 
-> **一句话概括**: 蒙特利尔大学教授、Mila 魁北克 AI 研究院创始人与科学主任、2018 年图灵奖得主（与 [[业界观点/Geoffrey_Hinton/about|Hinton]]、[[业界观点/Yann_LeCun/about|LeCun]] 共获）——深度学习理论与序列建模的奠基人之一，培养了大批顶尖学者。近年来成为全球 AI 安全与治理最积极的倡导者之一，2025 年创立 LawZero 基金会，专注 AI 安全研究。
+> **一句话概括**: 蒙特利尔大学教授、Mila 魁北克 AI 研究院创始人与科学主任、2018 年图灵奖得主（与 [[19_业界观点/Geoffrey_Hinton/about|Hinton]]、[[19_业界观点/Yann_LeCun/about|LeCun]] 共获）——深度学习理论与序列建模的奠基人之一，培养了大批顶尖学者。近年来成为全球 AI 安全与治理最积极的倡导者之一，2025 年创立 LawZero 基金会，专注 AI 安全研究。
 
 ---
 
@@ -40,8 +40,8 @@ Yoshua Bengio 是深度学习理论的奠基人。他在 2000 年代初发表了
 
 | 文件 | 内容 | 适用人群 |
 |------|------|----------|
-| [[业界观点/Yoshua_Bengio/about\|about]] | 完整人物简介：学术贡献、安全转变 | 所有读者 |
-| [[业界观点/Yoshua_Bengio/sayings\|sayings]] | 重要语录合集 | 研究者 |
+| [[19_业界观点/Yoshua_Bengio/about\|about]] | 完整人物简介：学术贡献、安全转变 | 所有读者 |
+| [[19_业界观点/Yoshua_Bengio/sayings\|sayings]] | 重要语录合集 | 研究者 |
 
 ---
 
@@ -85,7 +85,7 @@ Yoshua Bengio 是深度学习理论的奠基人。他在 2000 年代初发表了
 | 风险 | AI 可能比想象中更快达到危险能力 |
 | 治理 | 需要国际条约与监管框架 |
 
-完整语录见 [[业界观点/Yoshua_Bengio/sayings|Bengio 语录]]。
+完整语录见 [[19_业界观点/Yoshua_Bengio/sayings|Bengio 语录]]。
 
 ---
 
@@ -93,11 +93,11 @@ Yoshua Bengio 是深度学习理论的奠基人。他在 2000 年代初发表了
 
 | 派别 | 归属 |
 |------|------|
-| AI 安全暂停派 | 旗手（与 [[业界观点/Elon_Musk/about|Musk]]）|
+| AI 安全暂停派 | 旗手（与 [[19_业界观点/Elon_Musk/about|Musk]]）|
 | 深度学习元老 | 图灵奖三巨头之一 |
 | 学术公益派 | LawZero |
 
-参见 [[业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix|AI 安全立场矩阵]]。Bengio 立场明显接近 [[业界观点/Geoffrey_Hinton/about|Hinton]]，与 [[业界观点/Yann_LeCun/about|LeCun]] 的反末日论形成对比——这构成了图灵奖三巨头的内部分化。
+参见 [[19_业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix|AI 安全立场矩阵]]。Bengio 立场明显接近 [[19_业界观点/Geoffrey_Hinton/about|Hinton]]，与 [[19_业界观点/Yann_LeCun/about|LeCun]] 的反末日论形成对比——这构成了图灵奖三巨头的内部分化。
 
 ---
 
@@ -105,10 +105,10 @@ Yoshua Bengio 是深度学习理论的奠基人。他在 2000 年代初发表了
 
 | 关系 | 人物 |
 |------|------|
-| 图灵奖共获者 | [[业界观点/Geoffrey_Hinton/about|Hinton]]、[[业界观点/Yann_LeCun/about|LeCun]] |
+| 图灵奖共获者 | [[19_业界观点/Geoffrey_Hinton/about|Hinton]]、[[19_业界观点/Yann_LeCun/about|LeCun]] |
 | 学生 | Ian Goodfellow（GAN 发明者）|
-| 安全立场同盟 | [[业界观点/Geoffrey_Hinton/about|Hinton]]、[[业界观点/Elon_Musk/about|Musk]] |
-| 立场对立 | [[业界观点/Yann_LeCun/about|LeCun]]（反末日论）|
+| 安全立场同盟 | [[19_业界观点/Geoffrey_Hinton/about|Hinton]]、[[19_业界观点/Elon_Musk/about|Musk]] |
+| 立场对立 | [[19_业界观点/Yann_LeCun/about|LeCun]]（反末日论）|
 
 ---
 
@@ -116,10 +116,10 @@ Yoshua Bengio 是深度学习理论的奠基人。他在 2000 年代初发表了
 
 | 阶段 | 推荐内容 | 目标 |
 |------|----------|------|
-| 入门 | [[业界观点/Yoshua_Bengio/about\|about]] | 了解学术贡献 |
-| 进阶 | [[业界观点/Yoshua_Bengio/sayings\|sayings]] | 掌握安全立场 |
+| 入门 | [[19_业界观点/Yoshua_Bengio/about\|about]] | 了解学术贡献 |
+| 进阶 | [[19_业界观点/Yoshua_Bengio/sayings\|sayings]] | 掌握安全立场 |
 | 深入 | 2015 Nature 综述 | 深度学习理论 |
-| 对比 | [[业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix\|AI 安全矩阵]] | 三巨头分化 |
+| 对比 | [[19_业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix\|AI 安全矩阵]] | 三巨头分化 |
 
 ---
 
@@ -159,12 +159,12 @@ Yoshua Bengio 是深度学习理论的奠基人。他在 2000 年代初发表了
 
 ## 关联导航
 
-- [[业界观点/Yoshua_Bengio/about\|人物简介]] · [[业界观点/Yoshua_Bengio/sayings\|核心语录]]
-- [[业界观点/Geoffrey_Hinton/about\|Geoffrey Hinton]] · [[业界观点/Yann_LeCun/about\|Yann LeCun]]
-- [[业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix\|AI 安全立场矩阵]]
-- [[业界观点/Talks_Synthesis/Hinton_vs_LeCun_World_Model_Debate\|Hinton vs LeCun 之争]]
-- [[业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix\|AGI 时间表矩阵]]
-- [[业界观点/index\|业界观点首页]]
+- [[19_业界观点/Yoshua_Bengio/about\|人物简介]] · [[19_业界观点/Yoshua_Bengio/sayings\|核心语录]]
+- [[19_业界观点/Geoffrey_Hinton/about\|Geoffrey Hinton]] · [[19_业界观点/Yann_LeCun/about\|Yann LeCun]]
+- [[19_业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix\|AI 安全立场矩阵]]
+- [[19_业界观点/Talks_Synthesis/Hinton_vs_LeCun_World_Model_Debate\|Hinton vs LeCun 之争]]
+- [[19_业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix\|AGI 时间表矩阵]]
+- [[19_业界观点/index\|业界观点首页]]
 
 ---
 

@@ -223,9 +223,9 @@ NVIDIA Isaac 仿真-部署管线:
 
 ### 相关文档
 
-- [[强化学习/Robotics_Embodied_AI/Humanoid_Robot_2026]] - 人形机器人平台
+- [[06_强化学习/05_Robotics_Embodied_AI/Humanoid_Robot_2026]] - 人形机器人平台
 - [[概念/teleoperation]] - 遥操作数据采集
-- [[强化学习/AI_Agents/AI_Agents]] - AI Agent 通用架构
+- [[06_强化学习/AI_Agents/AI_Agents]] - AI Agent 通用架构
 
 ### 论文与资源
 

@@ -172,19 +172,19 @@ offline eval → deploy → online monitor → 收集新失败案例
 
 ## 与其他课的衔接
 
-- 本课是 [[智能体/Course_Notes/Microsoft_AI_Agents_L09_Metacognition]] 的生产化版本——元认知在生产中靠**评估闭环**实现
-- 与 [[模型运维/GenAI_L14_GenAI_Application_Lifecycle]] 互补：那节讲 GenAI 应用通用生命周期，本节专攻 Agent 可观测性
+- 本课是 [[15_智能体/15_Course_Notes/Microsoft_AI_Agents_L09_Metacognition]] 的生产化版本——元认知在生产中靠**评估闭环**实现
+- 与 [[11_模型运维/GenAI_L14_GenAI_Application_Lifecycle]] 互补：那节讲 GenAI 应用通用生命周期，本节专攻 Agent 可观测性
 
 ---
 
 ## 关联阅读
 
-- [[智能体/Course_Notes/Microsoft_AI_Agents_L09_Metacognition]] — 上一课：元认知
-- [[智能体/Course_Notes/Microsoft_AI_Agents_L11_Agentic_Protocols]] — 下一课：Agentic 协议
-- [[智能体/Course_Notes/Microsoft_AI_Agents_L06_Trustworthy_Agents]] — L06 可信 Agent（审计与 HITL）
-- [[模型运维/GenAI_L14_GenAI_Application_Lifecycle]] — GenAI 应用生命周期
-- [[运维/README]] — 本仓库 AI Ops 主题（如有）
-- [[学习/courses/microsoft/microsoft_ai_agents_for_beginners]] — 课程总览
+- [[15_智能体/15_Course_Notes/Microsoft_AI_Agents_L09_Metacognition]] — 上一课：元认知
+- [[15_智能体/15_Course_Notes/Microsoft_AI_Agents_L11_Agentic_Protocols]] — 下一课：Agentic 协议
+- [[15_智能体/15_Course_Notes/Microsoft_AI_Agents_L06_Trustworthy_Agents]] — L06 可信 Agent（审计与 HITL）
+- [[11_模型运维/GenAI_L14_GenAI_Application_Lifecycle]] — GenAI 应用生命周期
+- [[13_运维/README]] — 本仓库 AI Ops 主题（如有）
+- [[90_学习/courses/microsoft/microsoft_ai_agents_for_beginners]] — 课程总览
 
 ## 附录：核心概念速查
 

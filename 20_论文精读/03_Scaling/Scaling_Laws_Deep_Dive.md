@@ -654,11 +654,11 @@ flowchart TB
 
 | 相关文档 | 关系 | 详见 |
 |---------|------|------|
-| Chinchilla 深度解读 | 修正了 Kaplan 的最优分配 | [Chinchilla_Deep_Dive.md](论文精读/Scaling/Chinchilla_Deep_Dive.md) |
-| GPT-3 深度解读 | 首次大规模应用 Scaling Laws | [GPT3_Deep_Dive.md](论文精读/Scaling/GPT3_Deep_Dive.md) |
-| Scaling Laws 与训练动力学 | 系统性综述所有 Scaling Laws 工作 | [../模型训练/Scaling_Laws_and_Training_Dynamics.md](模型训练/Optimization/Scaling_Laws_and_Training_Dynamics.md) |
-| LLaMA 深度解读 | Chinchilla Scaling Laws 的开源实践 | [LLaMA_Deep_Dive.md](论文精读/Architecture/LLaMA_Deep_Dive.md) |
-| DeepSeek-V3 深度解读 | 低成本验证 Scaling Laws 精神 | [DeepSeek_V3_Technical_Report.md](论文精读/DeepSeek_V3_Technical_Report.md) |
+| Chinchilla 深度解读 | 修正了 Kaplan 的最优分配 | [Chinchilla_Deep_Dive.md](20_论文精读/03_Scaling/Chinchilla_Deep_Dive.md) |
+| GPT-3 深度解读 | 首次大规模应用 Scaling Laws | [GPT3_Deep_Dive.md](20_论文精读/03_Scaling/GPT3_Deep_Dive.md) |
+| Scaling Laws 与训练动力学 | 系统性综述所有 Scaling Laws 工作 | [../07_模型训练/Scaling_Laws_and_Training_Dynamics.md](07_模型训练/03_Optimization/Scaling_Laws_and_Training_Dynamics.md) |
+| LLaMA 深度解读 | Chinchilla Scaling Laws 的开源实践 | [LLaMA_Deep_Dive.md](20_论文精读/02_Architecture/LLaMA_Deep_Dive.md) |
+| DeepSeek-V3 深度解读 | 低成本验证 Scaling Laws 精神 | [DeepSeek_V3_Technical_Report.md](20_论文精读/DeepSeek_V3_Technical_Report.md) |
 
 ---
 
@@ -708,11 +708,11 @@ flowchart TB
 
 ## Related
 
-- [[../../大模型/LLM_Training|LLM 训练]] — Scaling Laws 指导的训练实践
-- [[../../大模型/LLM_Architectures/LLM_Internals_Training|LLM 训练内部机制]] — 训练计算最优策略
-- [[../../模型训练/Training_Fundamentals|训练基础]] — 计算资源与训练规模
+- [[../../05_大模型/LLM_Training|LLM 训练]] — Scaling Laws 指导的训练实践
+- [[../../05_大模型/05_LLM_Architectures/LLM_Internals_Training|LLM 训练内部机制]] — 训练计算最优策略
+- [[../../07_模型训练/Training_Fundamentals|训练基础]] — 计算资源与训练规模
 - [[../../概念/LLM/context-window|上下文窗口概念卡]] — 规模与上下文长度关系
-- [[../../深度学习/Optimization/Optimization|优化方法]] — 大规模优化的理论基础
+- [[../../03_深度学习/03_Optimization/Optimization|优化方法]] — 大规模优化的理论基础
 
 ---
 

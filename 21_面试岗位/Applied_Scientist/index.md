@@ -15,13 +15,13 @@ tags: [auto-index]
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[面试岗位/Applied_Scientist/Applied_Scientist|Applied Scientist]] | 岗位面试全攻略：从论文到产品的转化路径、实验驱动决策与跨团队协作 | applied scientist candidates / industry researchers |
+| [[21_面试岗位/Applied_Scientist/Applied_Scientist|Applied Scientist]] | 岗位面试全攻略：从论文到产品的转化路径、实验驱动决策与跨团队协作 | applied scientist candidates / industry researchers |
 
 ## Related
 
-- [[面试岗位/AI_Research_Scientist/index|AI Research Scientist]]
-- [[面试岗位/AI_Solutions_Architect/index|AI Solutions Architect]]
-- [[行业应用/index|行业应用]]
+- [[21_面试岗位/AI_Research_Scientist/index|AI Research Scientist]]
+- [[21_面试岗位/AI_Solutions_Architect/index|AI Solutions Architect]]
+- [[18_行业应用/index|行业应用]]
 
 ## 岗位核心能力模型
 
@@ -38,7 +38,7 @@ tags: [auto-index]
 | 轮次 | 内容 | 时长 | 考察重点 |
 |------|------|------|----------|
 | 简历筛选 | HR初筛 | - | 背景匹配度 |
-| 技术笔试 | 编程/选择题 | 60-90min | 基础功底 |
+| 技术笔试 | 16_编程/选择题 | 60-90min | 基础功底 |
 | 技术一面 | 算法+项目 | 45-60min | 编码能力+项目深度 |
 | 技术二面 | 系统设计+深度 | 45-60min | 架构思维+技术广度 |
 | 技术三面 | 综合+前沿 | 30-45min | 技术视野+潜力 |

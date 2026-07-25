@@ -432,7 +432,7 @@ flowchart TB
 | **模仿学习 + RL** | 人类示范 → RL 微调 | 主流，VLA 模型标配 |
 | **VLA 端到端** | 视觉+语言→动作 | 爆发期，RT-2/π0/GR00T |
 
-> 更多 VLA 细节参见 [[强化学习/Robotics_Embodied_AI/VLA_Embodied_AI_2026|VLA 具身智能]]
+> 更多 VLA 细节参见 [[06_强化学习/05_Robotics_Embodied_AI/VLA_Embodied_AI_2026|VLA 具身智能]]
 
 ### 4.3 步态控制 (Locomotion)
 
@@ -497,7 +497,7 @@ flowchart LR
 
 ### 5.2 三大对齐方法对比
 
-> 详细技术解析参见 [[强化学习/RLHF_Alignment/RLHF_DPO_GRPO_Deep_Dive|RLHF/DPO/GRPO 深度解读]]
+> 详细技术解析参见 [[06_强化学习/03_RLHF_Alignment/RLHF_DPO_GRPO_Deep_Dive|RLHF/DPO/GRPO 深度解读]]
 
 | 维度 | RLHF (PPO) | DPO | GRPO |
 |------|-----------|-----|------|
@@ -548,7 +548,7 @@ RLHF (2022)  →  DPO (2023)  →  GRPO (2024)  →  RLVR (2025)  →  ?
 重工程           简单           简单+强          简单+强+客观
 ```
 
-> 推理 RL 更多细节参见 [[强化学习/RL_Foundations/RL-in-nutshell|强化学习速览]] 中的"推理 RL"章节
+> 推理 RL 更多细节参见 [[06_强化学习/01_RL_Foundations/RL-in-nutshell|强化学习速览]] 中的"推理 RL"章节
 
 ---
 
@@ -880,7 +880,7 @@ flowchart LR
     style ACT2 fill:#c8e6c9
 ```
 
-> Agent 架构更多细节参见 [[智能体/Agent_Foundations/Agent-in-nutshell|Agent 速览]]
+> Agent 架构更多细节参见 [[15_智能体/01_Agent_Foundations/Agent-in-nutshell|Agent 速览]]
 
 ---
 
@@ -1104,26 +1104,26 @@ class RecommendationEnv(gym.Env):
 ### 11.1 本知识库交叉引用
 
 #### RL 基础与算法
-- [[强化学习/RL_Foundations/RL_Foundations|强化学习基础]] — MDP/Bellman 方程，所有应用的理论基础
-- [[强化学习/RL_Foundations/RL-in-nutshell|强化学习速览]] — RL 全栈知识图谱速览
-- [[强化学习/Deep_RL/Deep_RL|深度强化学习]] — DQN/PPO/SAC 等核心算法
-- [[强化学习/Deep_RL/PPO_Deep_Dive|PPO 深度解读]] — 最常用的 RL 应用算法
-- [[强化学习/Deep_RL/DQN_Deep_Dive|DQN 深度解读]] — 离散动作 RL 的基础
+- [[06_强化学习/01_RL_Foundations/RL_Foundations|强化学习基础]] — MDP/Bellman 方程，所有应用的理论基础
+- [[06_强化学习/01_RL_Foundations/RL-in-nutshell|强化学习速览]] — RL 全栈知识图谱速览
+- [[06_强化学习/02_Deep_RL/Deep_RL|深度强化学习]] — DQN/PPO/SAC 等核心算法
+- [[06_强化学习/02_Deep_RL/PPO_Deep_Dive|PPO 深度解读]] — 最常用的 RL 应用算法
+- [[06_强化学习/02_Deep_RL/DQN_Deep_Dive|DQN 深度解读]] — 离散动作 RL 的基础
 
 #### LLM 对齐与推理
-- [[强化学习/RLHF_Alignment/RLHF_DPO_GRPO_Deep_Dive|RLHF/DPO/GRPO 深度解读]] — 大模型对齐三大范式
-- [[强化学习/RL_Foundations/RL-in-nutshell|强化学习速览]] — 含推理 RL（o1/R1）章节
+- [[06_强化学习/03_RLHF_Alignment/RLHF_DPO_GRPO_Deep_Dive|RLHF/DPO/GRPO 深度解读]] — 大模型对齐三大范式
+- [[06_强化学习/01_RL_Foundations/RL-in-nutshell|强化学习速览]] — 含推理 RL（o1/R1）章节
 
 #### 机器人与具身智能
-- [[强化学习/Robotics_Embodied_AI/Embodied_AI_2026|具身智能 2026]] — 机器人 RL 的应用场景
-- [[强化学习/Robotics_Embodied_AI/VLA_Embodied_AI_2026|VLA 具身智能]] — VLA 模型与 RL
-- [[强化学习/Robotics_Embodied_AI/Robot_VLA_Training_Pipeline_2026|VLA 训练流水线]] — 端到端机器人训练
+- [[06_强化学习/05_Robotics_Embodied_AI/Embodied_AI_2026|具身智能 2026]] — 机器人 RL 的应用场景
+- [[06_强化学习/05_Robotics_Embodied_AI/VLA_Embodied_AI_2026|VLA 具身智能]] — VLA 模型与 RL
+- [[06_强化学习/05_Robotics_Embodied_AI/Robot_VLA_Training_Pipeline_2026|VLA 训练流水线]] — 端到端机器人训练
 
 #### Sim2Real
-- [[强化学习/Sim_to_Real_Transfer_Guide|Sim2Real 迁移指南]] — 仿真到现实迁移（机器人/自动驾驶 RL 的关键）
+- [[06_强化学习/Sim_to_Real_Transfer_Guide|Sim2Real 迁移指南]] — 仿真到现实迁移（机器人/自动驾驶 RL 的关键）
 
 #### 智能体
-- [[智能体/Agent_Foundations/Agent-in-nutshell|Agent 速览]] — Agent RL 的架构基础
+- [[15_智能体/01_Agent_Foundations/Agent-in-nutshell|Agent 速览]] — Agent RL 的架构基础
 
 ### 11.2 关键论文
 

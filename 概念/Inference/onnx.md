@@ -8,7 +8,7 @@ relationships:
   - target: "概念/tensorrt-llm"
     type: related_to
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
 summary: "ONNX 是开放的神经网络模型交换格式——让模型在 PyTorch、TensorFlow、ONNX Runtime 等框架间自由迁移。ONNX Runtime 提供跨平台高性能推理，是 AI 模型部署的重要中间格式。"
 provenance:
   extracted: 0.20
@@ -225,4 +225,4 @@ quantizer.quantize(save_dir="./quantized-model", quantization_config=qconfig)
 - [[概念/Inference/triton-server|Triton Inference Server]] — 支持 ONNX 后端的推理服务器
 - [[概念/Inference/openvino|OpenVINO]] — 同类跨平台推理优化方案
 - [[概念/Inference/inference-performance|推理性能]] — ONNX Runtime 的性能优化
-- [[大模型/Edge_LLM/Edge_LLM_Deep_Dive|端侧 LLM 深度解读]] — ONNX 在端侧推理中的应用
+- [[05_大模型/12_Edge_LLM/Edge_LLM_Deep_Dive|端侧 LLM 深度解读]] — ONNX 在端侧推理中的应用

@@ -279,11 +279,11 @@ GRPO 数据格式（需配 reward function）：
 
 ## Related
 
-- [[强化学习/Deep_RL/PPO_Deep_Dive|PPO 深度解读]] — RLHF 和 GRPO 的基础算法
+- [[06_强化学习/02_Deep_RL/PPO_Deep_Dive|PPO 深度解读]] — RLHF 和 GRPO 的基础算法
 - [[概念/rlhf|RLHF 概念]] — 概念卡速查
-- [[智能体/Agent_Evaluation/README|Agent 评估]] — 评估对齐效果的方法
-- [[模型训练/README|模型训练]] — SFT 与对齐训练的工程实践
-- [[模型评估/README|模型评估]] — 对齐模型的评估基准
+- [[15_智能体/07_Agent_Evaluation/README|Agent 评估]] — 评估对齐效果的方法
+- [[07_模型训练/README|模型训练]] — SFT 与对齐训练的工程实践
+- [[08_模型评估/README|模型评估]] — 对齐模型的评估基准
 
 ---
 

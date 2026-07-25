@@ -149,7 +149,7 @@ def sampling_decode(model, prompt, max_length):
 1. **任务匹配参数**：事实任务 temperature=0-0.3，创意任务 0.7-1.0，代码生成 0-0.2
 2. **Top-p + Top-k 组合**：生产环境推荐 top_p=0.9 + top_k=50，平衡多样性与质量
 3. **重复惩罚必配**：设置 repetition_penalty=1.05-1.2，避免循环重复
-4. **Seed 固定**：测试/评估场景固定 seed 保证可复现性
+4. **Seed 固定**：09_测试/评估场景固定 seed 保证可复现性
 5. **A/B 测试参数**：不同采样参数进行 A/B 测试，找到最优配置
 6. **监控输出质量**：跟踪重复率、连贯性、用户满意度
 7. **降级方案**：采样质量不稳定时回退到贪心
@@ -207,4 +207,4 @@ print(tokenizer.decode(outputs[0]))
 - [[概念/LLM/top-p-sampling|Top-p 采样]]
 - [[概念/LLM/temperature-scaling|Temperature 缩放]]
 - [[概念/LLM/repetition-penalty|重复惩罚]]
-- [[大模型/Sequence_Models/Text_Generation_Decoding_Strategies|解码策略详解]]
+- [[05_大模型/02_Sequence_Models/Text_Generation_Decoding_Strategies|解码策略详解]]

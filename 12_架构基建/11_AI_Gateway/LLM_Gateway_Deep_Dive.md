@@ -557,16 +557,16 @@ serviceMonitor:
 
 ## Related
 
-- [[架构基建/AI_Gateway/API_Design_for_AI|AI API 设计指南]] — Gateway 暴露的统一 API 设计参考
-- [[模型运维/Prompt_Ops/Prompt_Management_Platform|Prompt 管理平台]] — 与 Gateway 协同的 Prompt 版本与评估管理
+- [[12_架构基建/11_AI_Gateway/API_Design_for_AI|AI API 设计指南]] — Gateway 暴露的统一 API 设计参考
+- [[11_模型运维/11_Prompt_Ops/Prompt_Management_Platform|Prompt 管理平台]] — 与 Gateway 协同的 Prompt 版本与评估管理
 - [[治理/Document_Templates|文档模板规范]] — 本项目文档写作规范
-- [[大模型/LLM_Production_Deployment_Runbook|LLM 生产部署 Runbook]] — 模型服务化与推理优化
-- [[架构基建/AI_SRE_Runbook|AI SRE Runbook]] — AI 服务可靠性工程与事故响应
-- [[智能体/Agent_Production_Deployment_Runbook|Agent 生产部署 Runbook]] — Agent 系统的 Gateway 集成与流量治理
-- [[模型运维/LLM_Guardrails_and_Safety_Ops_2026|LLM 护栏与安全运维]] — Gateway 与输入输出护栏的协同
-- [[部署推理/Deployment_Inference_2026|部署与推理 2026]] — 推理服务化与 Gateway 上下游架构
-- [[运维/AI_Ops_2026|AI Ops 2026]] — AI 系统运维、可观测性与 FinOps 实践
-- [[RAG系统/RAG_Production_Architecture_Deep_Dive|RAG 生产架构深度实战]] — RAG 系统的 Gateway、检索与生成链路
+- [[05_大模型/LLM_Production_Deployment_Runbook|LLM 生产部署 Runbook]] — 模型服务化与推理优化
+- [[12_架构基建/AI_SRE_Runbook|AI SRE Runbook]] — AI 服务可靠性工程与事故响应
+- [[15_智能体/Agent_Production_Deployment_Runbook|Agent 生产部署 Runbook]] — Agent 系统的 Gateway 集成与流量治理
+- [[11_模型运维/LLM_Guardrails_and_Safety_Ops_2026|LLM 护栏与安全运维]] — Gateway 与输入输出护栏的协同
+- [[10_部署推理/Deployment_Inference_2026|部署与推理 2026]] — 推理服务化与 Gateway 上下游架构
+- [[13_运维/AI_Ops_2026|AI Ops 2026]] — AI 系统运维、可观测性与 FinOps 实践
+- [[14_RAG系统/RAG_Production_Architecture_Deep_Dive|RAG 生产架构深度实战]] — RAG 系统的 Gateway、检索与生成链路
 
 ---
 

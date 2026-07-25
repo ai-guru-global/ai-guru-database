@@ -15,14 +15,14 @@ tags: [auto-index]
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[行业应用/Healthcare/AI_Healthcare_2026|AI Healthcare 2026]] | Healthcare AI landscape: imaging diagnostics, drug discovery and precision medicine trends | healthcare AI practitioners / medical researchers |
-| [[行业应用/Healthcare/AI_Healthcare_Applications_2026|AI Healthcare Applications 2026]] | Healthcare AI case studies: from assisted diagnosis to intelligent patient follow-up | clinical AI engineers / product managers |
+| [[18_行业应用/03_Healthcare/AI_Healthcare_2026|AI Healthcare 2026]] | Healthcare AI landscape: imaging diagnostics, drug discovery and precision medicine trends | healthcare AI practitioners / medical researchers |
+| [[18_行业应用/03_Healthcare/AI_Healthcare_Applications_2026|AI Healthcare Applications 2026]] | Healthcare AI case studies: from assisted diagnosis to intelligent patient follow-up | clinical AI engineers / product managers |
 
 ## Related
 
-- [[行业应用/Education/index|Education]]
-- [[计算机视觉/index|计算机视觉]]
-- [[伦理安全/Privacy_Preserving_AI/index|Privacy Preserving AI]]
+- [[18_行业应用/05_Education/index|Education]]
+- [[04_计算机视觉/index|计算机视觉]]
+- [[17_伦理安全/10_Privacy_Preserving_AI/index|Privacy Preserving AI]]
 
 ## 进阶知识拓展
 
@@ -60,9 +60,9 @@ tags: [auto-index]
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

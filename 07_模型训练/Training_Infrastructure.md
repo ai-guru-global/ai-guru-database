@@ -260,9 +260,9 @@ TRAINING_MONITORING = {
 
 ## 6. 交叉引用
 
-- [[模型训练/Distributed_Training/|分布式训练]]
-- [[模型训练/Mixed_Precision_Training/|混合精度训练]]
-- [[模型训练/Pretraining_Playbook/|预训练手册]]
-- [[架构基建/|架构基建]]
-- [[运维/|运维]]
-- [[模型训练/Monitoring/|训练监控]]
+- [[07_模型训练/04_Distributed_Training/|分布式训练]]
+- [[07_模型训练/Mixed_Precision_Training/|混合精度训练]]
+- [[07_模型训练/Pretraining_Playbook/|预训练手册]]
+- [[12_架构基建/|架构基建]]
+- [[13_运维/|运维]]
+- [[07_模型训练/07_Monitoring/|训练监控]]

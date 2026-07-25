@@ -624,10 +624,10 @@ flowchart TB
 
 ## 11. Related
 
-- [[编程/Security/AI_Code_Vulnerabilities]] — AI 代码漏洞类型 (共享: prompt-injection, vulnerabilities)
-- [[编程/Security/AI_Code_Review_Security]] — AI 代码审查安全实践 (共享: code-review, output-filtering)
-- [[编程/Security/SAST_SCA_for_AI_Code]] — SAST/SCA 在 AI 编程中的应用 (共享: output-filtering, security)
-- [[编程/Security/AI_Code_Security_Audit_Runbook]] — AI 代码安全审计 Runbook (共享: security, prompt-safety)
+- [[16_编程/09_Security/AI_Code_Vulnerabilities]] — AI 代码漏洞类型 (共享: prompt-injection, vulnerabilities)
+- [[16_编程/09_Security/AI_Code_Review_Security]] — AI 代码审查安全实践 (共享: code-review, output-filtering)
+- [[16_编程/09_Security/SAST_SCA_for_AI_Code]] — SAST/SCA 在 AI 编程中的应用 (共享: output-filtering, security)
+- [[16_编程/09_Security/AI_Code_Security_Audit_Runbook]] — AI 代码安全审计 Runbook (共享: security, prompt-safety)
 - [[概念/LLM/prompt-injection]] — Prompt 注入 (共享: prompt-injection, llm-security)
 - [[概念/LLM/prompt-engineering]] — 提示工程 (共享: prompt, engineering)
 - [[概念/LLM/llm-safety]] — LLM 安全 (共享: llm-safety, security)

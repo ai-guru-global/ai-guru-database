@@ -202,5 +202,5 @@ Agent 之间通过 `Command(goto="agent_b")` 直接转移控制权，无需中�
 - [[概念/Agent/multi-agent-orchestration|多 Agent 编排]] — 多 Agent 协作模式
 - [[概念/Agent/agent-loop|Agent Loop]] — Agent 执行循环
 - [[概念/Agent/ai-agents|AI Agent]] — 单 Agent 基础概念
-- [[智能体/Agent_Frameworks/AutoGen_CrewAI_LangGraph_Dive|多 Agent 开发框架对比]] — 横向对比
+- [[15_智能体/02_Agent_Frameworks/AutoGen_CrewAI_LangGraph_Dive|多 Agent 开发框架对比]] — 横向对比
 - [[概念/Agent/crewai|CrewAI]] — 角色驱动的多 Agent 框架

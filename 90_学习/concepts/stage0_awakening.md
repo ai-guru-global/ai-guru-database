@@ -129,7 +129,7 @@ graph TD
 | 案例 | 年份 | 代表意义 | 关联技术 |
 |------|------|---------|---------|
 | Deep Blue 击败卡斯帕罗夫 | 1997 | AI 在封闭规则领域超越人类 | 搜索 + 评估函数 |
-| ImageNet 分类超越人类 | 2015 | 深度学习在视觉上的突破 | CNN（详见 [[学习/References/Papers/ResNet_Reading]]） |
+| ImageNet 分类超越人类 | 2015 | 深度学习在视觉上的突破 | CNN（详见 [[90_学习/References/Papers/ResNet_Reading]]） |
 | AlphaGo 击败李世石 | 2016 | RL + 深度学习的结合 | 强化学习 + 策略网络 |
 | GPT-3 / ChatGPT | 2020-2022 | 大语言模型的涌现能力 | Transformer + 预训练 |
 | Sora 视频生成 | 2024 | 扩散模型在视频生成上的突破 | Diffusion + Transformer |
@@ -153,11 +153,11 @@ graph TD
 
 | 类别 | 代表工具 | 用途 | 关联知识库 |
 |------|---------|------|-----------|
-| 对话型 LLM | ChatGPT (GPT-5.2)、Claude (4.5)、Gemini | 对话、写作、分析、编程 | [[大模型/]] |
-| 编程助手 | Cursor、Claude Code、Windsurf、Devin | 代码生成、调试、重构 | [[智能体/]] |
-| 图像生成 | Midjourney、DALL-E、Stable Diffusion | 图片创作、设计 | [[计算机视觉/]] |
-| Agent 平台 | Dify、Coze、LangGraph | 构建 AI Agent 工作流 | [[智能体/]] |
-| 开源框架 | PyTorch、Hugging Face、vLLM | 模型训练与部署 | [[部署推理/]] |
+| 对话型 LLM | ChatGPT (GPT-5.2)、Claude (4.5)、Gemini | 对话、写作、分析、编程 | [[05_大模型/]] |
+| 编程助手 | Cursor、Claude Code、Windsurf、Devin | 代码生成、调试、重构 | [[15_智能体/]] |
+| 图像生成 | Midjourney、DALL-E、Stable Diffusion | 图片创作、设计 | [[04_计算机视觉/]] |
+| Agent 平台 | Dify、Coze、LangGraph | 构建 AI Agent 工作流 | [[15_智能体/]] |
+| 开源框架 | PyTorch、Hugging Face、vLLM | 模型训练与部署 | [[10_部署推理/]] |
 
 ### 8. AI 伦理与社会影响
 
@@ -168,7 +168,7 @@ graph TD
   - **就业影响**: 自动化对劳动力市场的冲击
   - **信息生态**: 深假 (Deepfake)、虚假信息、信息茧房
   - **AI 治理与法规**: EU AI Act、各国 AI 监管框架
-- **延伸**: [[伦理安全/Value_Alignment/Value_Alignment_for_dummy]]、[[伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming_for_dummy]]
+- **延伸**: [[17_伦理安全/02_Value_Alignment/Value_Alignment_for_dummy]]、[[17_伦理安全/04_AI_Safety_RedTeaming/AI_Safety_RedTeaming_for_dummy]]
 
 ---
 
@@ -181,7 +181,7 @@ graph TD
 | "AI 会取代所有人" | AI 替代的是"任务"而非"职业"；会用 AI 的人将淘汰不会用的人 |
 | "AI 是魔法" | AI 本质是数学（统计学习 + 优化），可解释、可复现 |
 | "AI 不会有偏见" | AI 会继承甚至放大训练数据中的偏见，公平性是重要议题 |
-| "大模型 = AGI" | 即使 GPT-5.2 也只是 ANI，距离 AGI 仍有显著差距（详见 [[学习/concepts/stage4_frontier]]） |
+| "大模型 = AGI" | 即使 GPT-5.2 也只是 ANI，距离 AGI 仍有显著差距（详见 [[90_学习/concepts/stage4_frontier]]） |
 
 ## AI 能力边界的快速判断框架
 
@@ -230,10 +230,10 @@ graph TD
 
 | 类型 | 资源 | 说明 |
 |------|------|------|
-| 书籍 | [[学习/References/books/why-machines-learn\|Why Machines Learn]] | 数学科普，建立直觉 |
-| 书籍 | [[学习/References/books/hands-on-ml-geron\|Hands-On ML]] 前两章 | ML 全景与端到端项目 |
-| 课程 | [[学习/Courses/microsoft/microsoft_ai_for_beginners\|Microsoft AI for Beginners]] | 免费 12 周入门 |
-| 课程 | [[学习/Courses/microsoft/L01_Introduction_and_History_of_AI\|AI 历史与导论]] | 微软 AI 课程第 1 课 |
+| 书籍 | [[90_学习/References/books/why-machines-learn\|Why Machines Learn]] | 数学科普，建立直觉 |
+| 书籍 | [[90_学习/References/books/hands-on-ml-geron\|Hands-On ML]] 前两章 | ML 全景与端到端项目 |
+| 课程 | [[90_学习/Courses/microsoft/microsoft_ai_for_beginners\|Microsoft AI for Beginners]] | 免费 12 周入门 |
+| 课程 | [[90_学习/Courses/microsoft/L01_Introduction_and_History_of_AI\|AI 历史与导论]] | 微软 AI 课程第 1 课 |
 | 工具 | ChatGPT / Claude / Gemini | 亲手使用，建立感性认识 |
 
 ## 学完本层的标志
@@ -247,18 +247,18 @@ graph TD
 ## 下一步
 
 完成 Stage 0 后：
-- **想系统学技术** → 进入 [[学习/concepts/stage1_foundation|Stage 1: 基础概念]]
-- **只想通识了解** → 进入 [[学习/pathways/absolute-beginner|零基础通识路径]]
-- **想做产品/管理** → 进入 [[学习/pathways/product-manager|AI 产品经理路径]]
-- **想看全景** → 回到 [[学习/concepts/index|概念分阶索引]]
+- **想系统学技术** → 进入 [[90_学习/concepts/stage1_foundation|Stage 1: 基础概念]]
+- **只想通识了解** → 进入 [[90_学习/pathways/absolute-beginner|零基础通识路径]]
+- **想做产品/管理** → 进入 [[90_学习/pathways/product-manager|AI 产品经理路径]]
+- **想看全景** → 回到 [[90_学习/concepts/index|概念分阶索引]]
 
 ## Related
 
-- [[学习/concepts/index|概念分阶索引]]
-- [[学习/concepts/stage1_foundation|Stage 1: 基础概念]]
-- [[学习/pathways/index|学习路径]]
-- [[大模型/]] — 大模型知识章节
-- [[伦理安全/Value_Alignment/Value_Alignment_for_dummy|价值对齐]]
-- [[入门/Learning_Path/AI_Learning_Resources.md|AI_Learning_Resources]]
+- [[90_学习/concepts/index|概念分阶索引]]
+- [[90_学习/concepts/stage1_foundation|Stage 1: 基础概念]]
+- [[90_学习/pathways/index|学习路径]]
+- [[05_大模型/]] — 大模型知识章节
+- [[17_伦理安全/02_Value_Alignment/Value_Alignment_for_dummy|价值对齐]]
+- [[00_入门/03_Learning_Path/AI_Learning_Resources.md|AI_Learning_Resources]]
 
-> **关联**: → [[学习/concepts/index|概念分阶]] | [[学习/concepts/stage1_foundation|Stage 1 基础]] | [[学习/pathways/absolute-beginner|零基础路径]] | [[大模型/]] | [[伦理安全/]]
+> **关联**: → [[90_学习/concepts/index|概念分阶]] | [[90_学习/concepts/stage1_foundation|Stage 1 基础]] | [[90_学习/pathways/absolute-beginner|零基础路径]] | [[05_大模型/]] | [[17_伦理安全/]]

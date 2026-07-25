@@ -736,10 +736,10 @@ AI治理支柱:
 
 ## 相关链接
 
-- [[伦理安全/AI_Security_2026/index|AI 安全 2026 索引]] — 主题导览
-- [[伦理安全/Security/LLM_Security_Complete_Guide|LLM 安全完全指南]] — LLM 安全深度解析
-- [[伦理安全/Security/Agent_RAG_Security|Agent 与 RAG 安全]] — Agent 安全专项
+- [[17_伦理安全/07_AI_Security_2026/index|AI 安全 2026 索引]] — 主题导览
+- [[17_伦理安全/06_Security/LLM_Security_Complete_Guide|LLM 安全完全指南]] — LLM 安全深度解析
+- [[17_伦理安全/06_Security/Agent_RAG_Security|Agent 与 RAG 安全]] — Agent 安全专项
 - [[概念/Safety/prompt-injection|提示注入]] — 核心安全威胁
-- [[伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming|AI 安全与红队测试]] — 安全评估方法
+- [[17_伦理安全/04_AI_Safety_RedTeaming/AI_Safety_RedTeaming|AI 安全与红队测试]] — 安全评估方法
 - [[概念/K8s/guardrails|Guardrails]] — 安全防护工具
 - [[概念/Agent/tool-calling-safety|工具调用安全]] — Agent 安全专题

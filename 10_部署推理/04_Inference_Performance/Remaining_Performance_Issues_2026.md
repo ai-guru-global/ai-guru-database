@@ -216,9 +216,9 @@ sources: []
 ## Related
 
 - [[概念/inference-performance]] — 推理性能概念卡
-- [[部署推理/Inference_Performance/README|推理性能专题]]
-- [[部署推理/Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]]
-- [[部署推理/Inference_Performance/Inference_Speed_Factors_for_dummy|决定模型推理速度的要素]]
-- [[部署推理/Inference_Performance/Inference_Terms_for_dummy|推理性能术语大白话解释]]
+- [[10_部署推理/04_Inference_Performance/README|推理性能专题]]
+- [[10_部署推理/04_Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]]
+- [[10_部署推理/04_Inference_Performance/Inference_Speed_Factors_for_dummy|决定模型推理速度的要素]]
+- [[10_部署推理/04_Inference_Performance/Inference_Terms_for_dummy|推理性能术语大白话解释]]
 
-- [[部署推理/README|模型部署与推理]]
+- [[10_部署推理/README|模型部署与推理]]

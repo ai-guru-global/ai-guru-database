@@ -157,9 +157,9 @@ This reference was generated from the repository cloned locally at `原始/githu
 
 ## Related
 
-- [[学习/guides/learning_paths_2026|2026 AI Learning Paths]]
-- [[学习/guides/ai_engineering_roadmap_2026|AI Engineering Roadmap 2026]]
-- [[学习/References/Projects/papers-with-code|Papers with Code]]
+- [[90_学习/guides/learning_paths_2026|2026 AI Learning Paths]]
+- [[90_学习/guides/ai_engineering_roadmap_2026|AI Engineering Roadmap 2026]]
+- [[90_学习/References/Projects/papers-with-code|Papers with Code]]
 
 ## 核心知识框架
 

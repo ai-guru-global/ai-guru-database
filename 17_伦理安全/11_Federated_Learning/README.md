@@ -137,9 +137,9 @@ sources: []
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 
@@ -220,8 +220,8 @@ sources: []
 
 ## 相关链接
 
-- [[伦理安全/Federated_Learning/Federated_Learning_Deep_Dive|联邦学习深度解读]] — 联邦学习深入解析
-- [[伦理安全/Federated_Learning/index|联邦学习索引]] — 联邦学习索引
-- [[伦理安全/Privacy_Preserving_AI/Privacy_Preserving_AI|隐私保护 AI]] — 联邦学习的隐私目标
+- [[17_伦理安全/11_Federated_Learning/Federated_Learning_Deep_Dive|联邦学习深度解读]] — 联邦学习深入解析
+- [[17_伦理安全/11_Federated_Learning/index|联邦学习索引]] — 联邦学习索引
+- [[17_伦理安全/10_Privacy_Preserving_AI/Privacy_Preserving_AI|隐私保护 AI]] — 联邦学习的隐私目标
 - [[概念/General/federated-learning|联邦学习]] — 联邦学习概念卡片
-- [[伦理安全/index|伦理安全首页]] — 伦理安全知识总览
+- [[17_伦理安全/index|伦理安全首页]] — 伦理安全知识总览

@@ -92,10 +92,10 @@ sources: []
 
 ## Related
 
-- [[模型运维/Experiment_Tracking/Feature_Store_Deep_Dive]] — Feature Store 深度解析
-- [[模型运维/Experiment_Tracking/Feast_Deep_Dive]] — Feast 框架深度解析
+- [[11_模型运维/04_Experiment_Tracking/Feature_Store_Deep_Dive]] — Feature Store 深度解析
+- [[11_模型运维/04_Experiment_Tracking/Feast_Deep_Dive]] — Feast 框架深度解析
 - [[概念/experiment-tracking]] — 实验追踪概念
-- [[RAG系统/Vector_Databases/index]] — 向量数据库（非结构化特征存储）
+- [[14_RAG系统/03_Vector_Databases/index]] — 向量数据库（非结构化特征存储）
 
 ---
 

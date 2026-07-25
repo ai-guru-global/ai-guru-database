@@ -378,7 +378,7 @@ AI Solutions Architect（AI 解决方案架构师）是连接 AI 技术能力与
 **场景**: 在白板上设计一个包含以下组件的完整 AI 方案架构图：
 - 多源数据采集
 - 数据处理管道
-- 模型训练/微调
+- 07_模型训练/微调
 - 推理服务
 - 监控告警
 - 安全防护
@@ -481,13 +481,13 @@ AI Solutions Architect（AI 解决方案架构师）是连接 AI 技术能力与
 
 ## Related
 
-- [[面试岗位/README|AI 面试准备 (Interviews)]]
-- [[面试岗位/jobs|AI 相关岗位与工种清单]]
-- [[面试岗位/AI_Infrastructure_Engineer/question_bank|AI Infrastructure Engineer 题库]]
-- [[面试岗位/MLOps_Engineer/MLOps_Engineer|MLOps Engineer 面试指南]]
-- [[面试岗位/Data_Engineer/Data_Engineer|Data Engineer 面试指南]]
-- [[面试岗位/AI_Product_Manager/AI_Product_Manager|AI Product Manager 面试指南]]
-- [[面试岗位/AI_Reliability_Engineer/AI_Reliability_Engineer|AI Reliability Engineer 面试指南]]
+- [[21_面试岗位/README|AI 面试准备 (Interviews)]]
+- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/AI_Infrastructure_Engineer/question_bank|AI Infrastructure Engineer 题库]]
+- [[21_面试岗位/MLOps_Engineer/MLOps_Engineer|MLOps Engineer 面试指南]]
+- [[21_面试岗位/Data_Engineer/Data_Engineer|Data Engineer 面试指南]]
+- [[21_面试岗位/AI_Product_Manager/AI_Product_Manager|AI Product Manager 面试指南]]
+- [[21_面试岗位/AI_Reliability_Engineer/AI_Reliability_Engineer|AI Reliability Engineer 面试指南]]
 
 ---
 

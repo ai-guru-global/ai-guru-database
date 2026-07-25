@@ -10,7 +10,7 @@ relationships:
     type: related_to
   - target: "概念/state-space-models"
     type: related_to
-sources: [03_Deep_unsupervised-learning/Neural_Network_Core/Neural_Network_Core.md, 深度学习/README.md]
+sources: [03_Deep_unsupervised-learning/Neural_Network_Core/Neural_Network_Core.md, 03_深度学习/README.md]
 summary: 基于自注意力机制的序列建模架构，摒弃循环和卷积实现并行计算，是 BERT/GPT 等大模型的基础，但也面临 O(n²) 复杂度瓶颈。
 provenance:
   extracted: 0.75
@@ -129,7 +129,7 @@ Transformer 训练 的标配配置：
 
 ## 来源
 
-- 深度学习/Neural_Network_Core/Neural_Network_Core.md（3.4 节自注意力机制）
+- 03_深度学习/02_Neural_Network_Core/Neural_Network_Core.md（3.4 节自注意力机制）
 - Vaswani et al. (2017) "Attention Is All You Need"
 - Devlin et al. (2018) BERT, Radford et al. (2019) GPT-2
 
@@ -143,17 +143,17 @@ Transformer 训练 的标配配置：
 - [[概念/rope|RoPE]]
 - [[概念/alibi|ALiBi]]
 - [[治理/transformer-llm-architecture]] — Transformer 架构 × LLM 架构 (共享: attention, bert, gpt, nlp, transformer)
-- [[大模型/Fine_tuning_Techniques/PEFT_2026]] — PEFT 2026 (参数高效微调) (共享: bert, gpt, nlp, transformer)
-- [[大模型/Fine_tuning_Techniques/README]] — 微调技术 (Fine-tuning Techniques) (共享: bert, gpt, nlp, transformer)
-- [[大模型/LLM_Architectures/LLM-Basics-in-nutshell]] — 大语言模型基础速成指南 (共享: bert, gpt, nlp, transformer)
+- [[05_大模型/07_Fine_tuning_Techniques/PEFT_2026]] — PEFT 2026 (参数高效微调) (共享: bert, gpt, nlp, transformer)
+- [[05_大模型/07_Fine_tuning_Techniques/README]] — 微调技术 (Fine-tuning Techniques) (共享: bert, gpt, nlp, transformer)
+- [[05_大模型/05_LLM_Architectures/LLM-Basics-in-nutshell]] — 大语言模型基础速成指南 (共享: bert, gpt, nlp, transformer)
 - [[概念/Vision/multimodal-models.md|multimodal-models]]
 - [[治理/llm-nlp]]
 
 ## See Also (深度专题)
 
-- [[../../大模型/Transformer/Transformer_Architecture|Transformer 架构深度解析]] — Self-Attention / Multi-Head / FFN 的数学推导与实现
-- [[../../大模型/Transformer/Transformer_Deep_Dive|Transformer 深度解读]] — 编码器-解码器、位置编码、归一化策略的技术细节
-- [[../../大模型/Transformer_Revolution/Self_Attention_Mechanism|自注意力机制]] — Attention 的工程优化 (Flash Attention 等)
+- [[../../05_大模型/03_Transformer/Transformer_Architecture|Transformer 架构深度解析]] — Self-Attention / Multi-Head / FFN 的数学推导与实现
+- [[../../05_大模型/03_Transformer/Transformer_Deep_Dive|Transformer 深度解读]] — 编码器-解码器、位置编码、归一化策略的技术细节
+- [[../../05_大模型/04_Transformer_Revolution/Self_Attention_Mechanism|自注意力机制]] — Attention 的工程优化 (Flash Attention 等)
 
 ---
 
@@ -183,7 +183,7 @@ Transformer 训练 的标配配置：
 - [[概念/LLM/attention-variants|注意力变体]]
 - [[概念/LLM/grouped-query-attention|GQA]]
 - [[概念/LLM/mamba|Mamba (SSM)]]
-- [[大模型/LLM_Architectures/LLM-Basics-in-nutshell|大语言模型基础速成]]
+- [[05_大模型/05_LLM_Architectures/LLM-Basics-in-nutshell|大语言模型基础速成]]
 
 ## Transformer 架构演进
 

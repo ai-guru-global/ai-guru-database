@@ -21,7 +21,7 @@ sources: []
 - **Data Scientist (数据科学家)**: 统计建模、实验设计、业务指标与洞察。
 - **Research Scientist (研究科学家)**: 前沿算法研究、论文产出与学术影响。
 - **Applied Scientist (应用科学家)**: 研究成果落地、模型性能到业务指标的桥梁。
-- **MLOps Engineer (机器学习运维工程师)**: 模型训练/发布流水线、监控与稳定性。
+- **MLOps Engineer (机器学习运维工程师)**: 07_模型训练/发布流水线、监控与稳定性。
 - **Data Engineer (数据工程师)**: 数据管道、数据质量、离线/实时特征建设。
 - **NLP Engineer (自然语言处理工程师)**: LLM 应用、RAG、文本模型与评测。
 - **Computer Vision Engineer (计算机视觉工程师)**: 视觉模型训练、检测/分割/生成。
@@ -50,22 +50,22 @@ sources: []
 
 ## Related
 
-- [[面试岗位/AI_Data_Analyst/company_level_question_bank]] — AI Data Analyst 按公司/级别区分的题库 (共享: career, experience, interviews, practitioners)
-- [[面试岗位/AI_Evaluation_Engineer/AI_Evaluation_Engineer]] — AI Evaluation Engineer 面试指南（评测方法论/LLM-as-Judge/RAG 评测）
-- [[面试岗位/AI_Policy_Specialist/AI_Policy_Specialist]] — AI Policy Specialist 面试指南（AI 治理/合规/政策）
-- [[面试岗位/AI_Product_Manager/AI_Product_Manager]] — AI Product Manager 面试指南（产品策略/用户洞察）
-- [[面试岗位/AI_Reliability_Engineer/AI_Reliability_Engineer]] — AI Reliability Engineer 面试指南（模型监控/SLO/故障恢复）
-- [[面试岗位/AI_Research_Engineer/AI_Research_Engineer]] — AI Research Engineer 面试指南（算法实现/实验设计）
-- [[面试岗位/AI_Research_Scientist/AI_Research_Scientist]] — AI Research Scientist 面试指南（前沿研究/论文发表）
-- [[面试岗位/AI_Security_Engineer/AI_Security_Engineer]] — AI Security Engineer 面试指南（对抗攻击/红队测试）
-- [[面试岗位/AI_Solutions_Architect/AI_Solutions_Architect]] — AI Solutions Architect 面试指南（方案设计/技术选型）
-- [[面试岗位/Applied_Scientist/Applied_Scientist]] — Applied Scientist 面试指南（业务建模/算法优化）
-- [[面试岗位/Data_Engineer/Data_Engineer]] — Data Engineer 面试指南（数据管道/ETL/数据仓库）
-- [[面试岗位/MLOps_Engineer/MLOps_Engineer]] — MLOps Engineer 面试指南（流水线/CI-CD/模型监控）
-- [[面试岗位/Prompt_Engineer/Prompt_Engineer]] — Prompt Engineer 面试指南（Prompt 设计/评估优化）
-- [[面试岗位/Research_Scientist/Research_Scientist]] — Research Scientist 面试指南（基础理论/学术影响力）
-- [[面试岗位/Robotics_Engineer/Robotics_Engineer]] — Robotics Engineer 面试指南（感知/规划/控制/仿真）
-- [[面试岗位/Cloud_Ops_Engineer/Cloud_Ops_Engineer]] — Cloud Ops Engineer 面试指南（K8s/GPU 运维/事故响应）
+- [[21_面试岗位/AI_Data_Analyst/company_level_question_bank]] — AI Data Analyst 按公司/级别区分的题库 (共享: career, experience, interviews, practitioners)
+- [[21_面试岗位/AI_Evaluation_Engineer/AI_Evaluation_Engineer]] — AI Evaluation Engineer 面试指南（评测方法论/LLM-as-Judge/RAG 评测）
+- [[21_面试岗位/AI_Policy_Specialist/AI_Policy_Specialist]] — AI Policy Specialist 面试指南（AI 治理/合规/政策）
+- [[21_面试岗位/AI_Product_Manager/AI_Product_Manager]] — AI Product Manager 面试指南（产品策略/用户洞察）
+- [[21_面试岗位/AI_Reliability_Engineer/AI_Reliability_Engineer]] — AI Reliability Engineer 面试指南（模型监控/SLO/故障恢复）
+- [[21_面试岗位/AI_Research_Engineer/AI_Research_Engineer]] — AI Research Engineer 面试指南（算法实现/实验设计）
+- [[21_面试岗位/AI_Research_Scientist/AI_Research_Scientist]] — AI Research Scientist 面试指南（前沿研究/论文发表）
+- [[21_面试岗位/AI_Security_Engineer/AI_Security_Engineer]] — AI Security Engineer 面试指南（对抗攻击/红队测试）
+- [[21_面试岗位/AI_Solutions_Architect/AI_Solutions_Architect]] — AI Solutions Architect 面试指南（方案设计/技术选型）
+- [[21_面试岗位/Applied_Scientist/Applied_Scientist]] — Applied Scientist 面试指南（业务建模/算法优化）
+- [[21_面试岗位/Data_Engineer/Data_Engineer]] — Data Engineer 面试指南（数据管道/ETL/数据仓库）
+- [[21_面试岗位/MLOps_Engineer/MLOps_Engineer]] — MLOps Engineer 面试指南（流水线/CI-CD/模型监控）
+- [[21_面试岗位/Prompt_Engineer/Prompt_Engineer]] — Prompt Engineer 面试指南（Prompt 设计/评估优化）
+- [[21_面试岗位/Research_Scientist/Research_Scientist]] — Research Scientist 面试指南（基础理论/学术影响力）
+- [[21_面试岗位/Robotics_Engineer/Robotics_Engineer]] — Robotics Engineer 面试指南（感知/规划/控制/仿真）
+- [[21_面试岗位/Cloud_Ops_Engineer/Cloud_Ops_Engineer]] — Cloud Ops Engineer 面试指南（K8s/GPU 13_运维/事故响应）
 
 ## 面试核心知识框架
 

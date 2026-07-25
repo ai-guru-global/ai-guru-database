@@ -207,9 +207,9 @@ PPO → PPO2 → Generalized PPO
 *原始论文: [arXiv:1707.06347](https://arxiv.org/abs/1707.06347)*
 ## 相关链接
 
-- [[强化学习/Deep_RL/Deep_RL|深度强化学习]] — PPO 所属领域
-- [[强化学习/Deep_RL/index|深度强化学习索引]] — 主题导览
-- [[强化学习/Deep_RL/DQN_Deep_Dive|DQN 深度解析]] — 同类主流算法对比
-- [[强化学习/RLHF_Alignment/RLHF_DPO_GRPO_Deep_Dive|RLHF/DPO/GRPO 深度解析]] — PPO 在 RLHF 中的应用
+- [[06_强化学习/02_Deep_RL/Deep_RL|深度强化学习]] — PPO 所属领域
+- [[06_强化学习/02_Deep_RL/index|深度强化学习索引]] — 主题导览
+- [[06_强化学习/02_Deep_RL/DQN_Deep_Dive|DQN 深度解析]] — 同类主流算法对比
+- [[06_强化学习/03_RLHF_Alignment/RLHF_DPO_GRPO_Deep_Dive|RLHF/DPO/GRPO 深度解析]] — PPO 在 RLHF 中的应用
 - [[概念/Training/ppo|PPO]] — PPO 概念卡片
-- [[强化学习/Deep_RL/SAC_Deep_Dive|SAC 深度解析]] — 同类策略梯度算法
+- [[06_强化学习/02_Deep_RL/SAC_Deep_Dive|SAC 深度解析]] — 同类策略梯度算法

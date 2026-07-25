@@ -104,9 +104,9 @@ sources: []
 | 创业者 | 背景 | AI 路径 |
 |--------|------|---------|
 | **王慧文** | 美团联合创始人 | All-in（光年之外） |
-| [[业界观点/Junjie_Yan/about\|闫俊杰]] | 商汤 VP | MiniMax |
-| [[业界观点/Wenfeng_Liang/about\|梁文锋]] | 量化基金 | DeepSeek |
-| [[业界观点/Zhilin_Yang/about\|杨植麟]] | 学术 | 月之暗面 |
+| [[19_业界观点/Junjie_Yan/about\|闫俊杰]] | 商汤 VP | MiniMax |
+| [[19_业界观点/Wenfeng_Liang/about\|梁文锋]] | 量化基金 | DeepSeek |
+| [[19_业界观点/Zhilin_Yang/about\|杨植麟]] | 学术 | 月之暗面 |
 
 王慧文代表了"互联网老兵转型 AI"的独特路径，区别于学术派和产业派。
 
@@ -114,11 +114,11 @@ sources: []
 
 ## 关联与延伸
 
-- [[业界观点/Wang_Huiwen/about|王慧文 概述]]
-- [[业界观点/Wang_Huiwen/index|王慧文 主页]]
-- [[业界观点/Junjie_Yan/about|闫俊杰（MiniMax）]]
-- [[业界观点/Talks_Synthesis/China_US_AI_Race_Leaders_Views|中美 AI 竞赛观点]]
-- [[业界观点/Talks_Synthesis/index|业界观点合成]]
+- [[19_业界观点/Wang_Huiwen/about|王慧文 概述]]
+- [[19_业界观点/Wang_Huiwen/index|王慧文 主页]]
+- [[19_业界观点/Junjie_Yan/about|闫俊杰（MiniMax）]]
+- [[19_业界观点/Talks_Synthesis/China_US_AI_Race_Leaders_Views|中美 AI 竞赛观点]]
+- [[19_业界观点/Talks_Synthesis/index|业界观点合成]]
 
 > **说明**: 王慧文已离开 AI 一线，本文为 2026 年回看视角的总结，聚焦其历史影响与行业遗产。
 

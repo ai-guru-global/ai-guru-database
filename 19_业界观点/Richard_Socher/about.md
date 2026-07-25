@@ -60,7 +60,7 @@ sources: []
 
 ### 搜索的对话化革命
 
-Socher 的核心信念是"搜索的下一个十年是 AI 对话"。他认为传统的"10 个蓝色链接"搜索范式已经过时，用户需要的是"一个理解你意图、能多轮对话、能直接给出答案的 AI 搜索助手"。You.com 的产品理念正是这一信念的实践——将 LLM、搜索索引、应用集成（App Mode）融合到一个统一的对话界面中。这与 [[业界观点/Sundar_Pichai/about]] 的 Google Bard/Gemini 策略和 Perplexity AI 的路径形成直接竞争。
+Socher 的核心信念是"搜索的下一个十年是 AI 对话"。他认为传统的"10 个蓝色链接"搜索范式已经过时，用户需要的是"一个理解你意图、能多轮对话、能直接给出答案的 AI 搜索助手"。You.com 的产品理念正是这一信念的实践——将 LLM、搜索索引、应用集成（App Mode）融合到一个统一的对话界面中。这与 [[19_业界观点/Sundar_Pichai/about]] 的 Google Bard/Gemini 策略和 Perplexity AI 的路径形成直接竞争。
 
 ### 开源与开放搜索
 
@@ -112,12 +112,12 @@ Socher 的影响力主要体现在三个层面：**学术研究**（SST、RNTN�
 
 ## 交叉引用 (Cross-References)
 
-- [Talks 主题合成 2026](业界观点/Talks_Synthesis/Talks_Synthesis_2026.md) — 查看 Richard Socher 在 Scaling Laws、开源 vs 闭源、AI 安全等主题中的立场
-- [AI 历史时间线](入门/Fundamentals/AI_History_Timeline.md) — 深度学习进入 NLP 的关键时期
-- [AI 未来趋势](入门/Ethics_and_Future/AI_Future_Trends.md) — 搜索对话化的行业前瞻
-- [[业界观点/Sundar_Pichai/about]] — Google 搜索与 AI 集成的路线对比
-- [[业界观点/Satya_Nadella/about]] — 微软 Bing+Copilot 搜索策略的竞品视角
-- [[业界观点/Andrew_Ng/about]] — 同为 Stanford AI 博士背景的技术领袖
+- [Talks 主题合成 2026](19_业界观点/Talks_Synthesis/Talks_Synthesis_2026.md) — 查看 Richard Socher 在 Scaling Laws、开源 vs 闭源、AI 安全等主题中的立场
+- [AI 历史时间线](00_入门/01_Fundamentals/AI_History_Timeline.md) — 深度学习进入 NLP 的关键时期
+- [AI 未来趋势](00_入门/04_Ethics_and_Future/AI_Future_Trends.md) — 搜索对话化的行业前瞻
+- [[19_业界观点/Sundar_Pichai/about]] — Google 搜索与 AI 集成的路线对比
+- [[19_业界观点/Satya_Nadella/about]] — 微软 Bing+Copilot 搜索策略的竞品视角
+- [[19_业界观点/Andrew_Ng/about]] — 同为 Stanford AI 博士背景的技术领袖
 
 ---
 
@@ -134,10 +134,10 @@ Socher 的影响力主要体现在三个层面：**学术研究**（SST、RNTN�
 
 ## Related
 
-- [[业界观点/Andrej_Karpathy/about]] — Andrej Karpathy 简介 (共享: insights, leaders, speeches, talks)
-- [[业界观点/Andrew_Ng/about]] — Andrew Ng 简介 (共享: insights, leaders, speeches, talks)
-- [[业界观点/Andrew_Ng/sayings]] — Andrew Ng 关于 AI 的观点与格言 (共享: insights, leaders, speeches, talks)
-- [[业界观点/Bill_Gates/about]] — Bill Gates 简介 (共享: insights, leaders, speeches, talks)
+- [[19_业界观点/Andrej_Karpathy/about]] — Andrej Karpathy 简介 (共享: insights, leaders, speeches, talks)
+- [[19_业界观点/Andrew_Ng/about]] — Andrew Ng 简介 (共享: insights, leaders, speeches, talks)
+- [[19_业界观点/Andrew_Ng/sayings]] — Andrew Ng 关于 AI 的观点与格言 (共享: insights, leaders, speeches, talks)
+- [[19_业界观点/Bill_Gates/about]] — Bill Gates 简介 (共享: insights, leaders, speeches, talks)
 
 ## 附录：人物影响力评估
 

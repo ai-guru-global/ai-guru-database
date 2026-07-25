@@ -170,7 +170,7 @@ ResNet 作为骨干网络，在目标检测任务上也大幅超越 VGG 基线�
 ### 残差思想的扩散
 
 残差连接是**通用的深度学习组件**，被几乎所有后续架构采纳：
-- **Transformer**（2017）: 每个 Attention/FFN 块都用 Add & Norm（残差 + LayerNorm），详见 [[学习/References/Papers/Attention_Is_All_You_Need_Reading]]
+- **Transformer**（2017）: 每个 Attention/FFN 块都用 Add & Norm（残差 + LayerNorm），详见 [[90_学习/References/Papers/Attention_Is_All_You_Need_Reading]]
 - **BERT / GPT**: 全程使用残差连接
 - **U-Net**: 用于图像分割的跳跃连接
 - **DenseNet**: 更激进的密集连接
@@ -311,11 +311,11 @@ class BasicBlock(nn.Module):
 
 ## 与知识库其他内容的连接
 
-- [[学习/concepts/stage1_foundation|深度学习基础]] — 概念分阶
-- [[学习/References/Papers/Attention_Is_All_You_Need_Reading|Transformer]] — 残差连接在新架构中的应用
-- [[学习/References/books/hands-on-ml-geron|Hands-On ML]] — 第 14 章 CNN 详解
-- [[计算机视觉/]] — ResNet 是 CV 的基石
-- [[学习/concepts/stage0_awakening|Stage 0]] — AI 的第三次浪潮起点
+- [[90_学习/concepts/stage1_foundation|深度学习基础]] — 概念分阶
+- [[90_学习/References/Papers/Attention_Is_All_You_Need_Reading|Transformer]] — 残差连接在新架构中的应用
+- [[90_学习/References/books/hands-on-ml-geron|Hands-On ML]] — 第 14 章 CNN 详解
+- [[04_计算机视觉/]] — ResNet 是 CV 的基石
+- [[90_学习/concepts/stage0_awakening|Stage 0]] — AI 的第三次浪潮起点
 
 ## 如何精读这篇论文
 
@@ -331,7 +331,7 @@ class BasicBlock(nn.Module):
 
 - **代码实现**: PyTorch torchvision 中的 `resnet50` 等
 - **可视化**: 理解残差块的数据流图
-- **动手**: 用 [[学习/References/books/hands-on-ml-geron|Hands-On ML]] Ch 14 的 CNN 章节实践
+- **动手**: 用 [[90_学习/References/books/hands-on-ml-geron|Hands-On ML]] Ch 14 的 CNN 章节实践
 
 ### 动手验证
 
@@ -340,12 +340,12 @@ class BasicBlock(nn.Module):
 
 ## 延伸阅读
 
-- [[学习/References/Papers/Attention_Is_All_You_Need_Reading|Attention Is All You Need]] — 残差思想在 Transformer 中的应用
-- [[学习/References/Papers/BERT_Reading|BERT]] — 残差在编码器中的应用
-- [[学习/References/Papers/GPT3_Reading|GPT-3]] — 残差在解码器中的应用
-- [[学习/References/books/hands-on-ml-geron|Hands-On ML]] Ch 14 — CNN 实战
-- [[计算机视觉/]] — 知识库 CV 章节
-- [[深度学习/]] — 深度学习章节
-- [[学习/concepts/stage2_core_tech|Stage 2: 核心技术]] — CNN 在学习路径中的位置
+- [[90_学习/References/Papers/Attention_Is_All_You_Need_Reading|Attention Is All You Need]] — 残差思想在 Transformer 中的应用
+- [[90_学习/References/Papers/BERT_Reading|BERT]] — 残差在编码器中的应用
+- [[90_学习/References/Papers/GPT3_Reading|GPT-3]] — 残差在解码器中的应用
+- [[90_学习/References/books/hands-on-ml-geron|Hands-On ML]] Ch 14 — CNN 实战
+- [[04_计算机视觉/]] — 知识库 CV 章节
+- [[03_深度学习/]] — 深度学习章节
+- [[90_学习/concepts/stage2_core_tech|Stage 2: 核心技术]] — CNN 在学习路径中的位置
 
-> **关联**: → [[学习/References/Papers/]] | [[学习/References/Papers/Attention_Is_All_You_Need_Reading|Transformer]] | [[计算机视觉/]] | [[深度学习/]] | [[学习/References/books/hands-on-ml-geron|Hands-On ML]]
+> **关联**: → [[90_学习/References/Papers/]] | [[90_学习/References/Papers/Attention_Is_All_You_Need_Reading|Transformer]] | [[04_计算机视觉/]] | [[03_深度学习/]] | [[90_学习/References/books/hands-on-ml-geron|Hands-On ML]]

@@ -82,16 +82,16 @@ Microsoft AI For Beginners（微软 AI 入门）的“第 0 课”聚焦**学习
 
 ## 本课不覆盖与延伸
 
-- **不覆盖**：本课不讲解 Python 基础、Git 使用、深度学习数学原理，也不会部署模型到云端。这些内容可分别参考本库 [[数学基础/AI_Development_Environment_Setup]] 与相关基础章节。
+- **不覆盖**：本课不讲解 Python 基础、Git 使用、深度学习数学原理，也不会部署模型到云端。这些内容可分别参考本库 [[01_数学基础/AI_Development_Environment_Setup]] 与相关基础章节。
 - **延伸**：
-  - 想系统了解课程全貌 → [[学习/courses/microsoft/microsoft_ai_for_beginners]]
-  - 想准备本地开发环境 → [[数学基础/AI_Development_Environment_Setup]]
+  - 想系统了解课程全貌 → [[90_学习/courses/microsoft/microsoft_ai_for_beginners]]
+  - 想准备本地开发环境 → [[01_数学基础/AI_Development_Environment_Setup]]
   - 想学习如何运行 GitHub 上的 Notebook → 官方 [`how-to-run.md`](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/0-course-setup/how-to-run.md)
 
 ## 相关阅读
 
-- 课程索引：[[学习/courses/microsoft/microsoft_ai_for_beginners]]
-- 本库相关页面：[[数学基础/AI_Development_Environment_Setup]]
+- 课程索引：[[90_学习/courses/microsoft/microsoft_ai_for_beginners]]
+- 本库相关页面：[[01_数学基础/AI_Development_Environment_Setup]]
 - 官方运行说明：[how-to-run.md](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/0-course-setup/how-to-run.md)
 - 教师指南：[for-teachers.md](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/0-course-setup/for-teachers.md)
 

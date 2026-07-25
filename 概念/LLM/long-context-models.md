@@ -16,7 +16,7 @@ sources: []
 ## Related
 
 - [[long-context-llm|长上下文 LLM (主卡片)]]
-- [[../../大模型/LLM_Architectures/Long_Context_Models_2026|长上下文模型 2026 (深度专题 1413行)]]
+- [[../../05_大模型/05_LLM_Architectures/Long_Context_Models_2026|长上下文模型 2026 (深度专题 1413行)]]
 - [[rope|RoPE 旋转位置编码]]
 - [[kv-cache|KV Cache]]
 

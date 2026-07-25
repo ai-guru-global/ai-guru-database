@@ -7,10 +7,10 @@ relationships:
     type: builds_on
   - target: "概念/distributed-parallelism"
     type: related_to
-  - target: "部署推理/Inference_Performance/MoE_Inference_Optimization"
+  - target: "10_部署推理/04_Inference_Performance/MoE_Inference_Optimization"
     type: deepened_by
 sources:
-  - 部署推理/Inference_Performance/MoE_Inference_Optimization.md
+  - 10_部署推理/04_Inference_Performance/MoE_Inference_Optimization.md
 summary: Expert Parallelism 把 MoE 模型的不同专家分布到不同 GPU，以减少单卡显存压力；代价是引入 All-to-All 通信，需要与负载均衡策略配合。
 lifecycle: reviewed
 tier: core
@@ -110,7 +110,7 @@ All-to-All Combine（结果聚合回原 GPU）
 
 - [[概念/mixture-of-experts]] — 混合专家模型
 - [[概念/distributed-parallelism]] — 分布式并行策略
-- [[部署推理/Inference_Performance/MoE_Inference_Optimization|MoE 推理优化]]
+- [[10_部署推理/04_Inference_Performance/MoE_Inference_Optimization|MoE 推理优化]]
 - [[概念/GPU/flops|FLOPS 计算]] — 并行效率度量
 - [[概念/Inference/vllm|vLLM]] — 原生 EP 支持的推理引擎
 

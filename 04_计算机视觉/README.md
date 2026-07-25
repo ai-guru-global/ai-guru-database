@@ -58,7 +58,7 @@ sources: []
 
 | 论文 | 内容 | 文档链接 |
 |------|------|---------|
-| ViT (Vision Transformer) | 将 Transformer 引入视觉，图像即 16×16 tokens | [ViT_Deep_Dive.md](计算机视觉/CV_Fundamentals/ViT_Deep_Dive.md) |
+| ViT (Vision Transformer) | 将 Transformer 引入视觉，图像即 16×16 tokens | [ViT_Deep_Dive.md](04_计算机视觉/01_CV_Fundamentals/ViT_Deep_Dive.md) |
 | CLIP | 多模态学习里程碑，zero-shot 图像分类 | [CLIP_Deep_Dive.md](./Multimodal_Vision/CLIP_Deep_Dive.md) |
 
 ### 小白版入门 (for_dummy)
@@ -74,10 +74,10 @@ sources: []
 
 ## 前置知识 (Prerequisites)
 
-- **必修**: [神经网络核心](深度学习/Neural_Network_Core/Neural_Network_Core.md)（理解 CNN 架构）
-- **必修**: [优化与正则化](深度学习/Optimization/Optimization.md)（训练视觉模型）
-- **推荐**: [Transformer 革命](大模型/Transformer_Revolution/Transformer_Revolution.md)（理解 ViT 和多模态）
-- **可选**: [概率统计](数学基础/Probability_Statistics/Probability_Statistics.md)（理解扩散模型）
+- **必修**: [神经网络核心](03_深度学习/02_Neural_Network_Core/Neural_Network_Core.md)（理解 CNN 架构）
+- **必修**: [优化与正则化](03_深度学习/03_Optimization/Optimization.md)（训练视觉模型）
+- **推荐**: [Transformer 革命](05_大模型/04_Transformer_Revolution/Transformer_Revolution.md)（理解 ViT 和多模态）
+- **可选**: [概率统计](01_数学基础/03_Probability_Statistics/Probability_Statistics.md)（理解扩散模型）
 
 ## 关键术语速查 (Key Terms)
 
@@ -96,28 +96,28 @@ sources: []
 *Last updated: 2026-02-10*
 
 ## Related
-- [[计算机视觉/ViT_Deep_Dive|Vision Transformer (ViT) 深度解读]]
-- [[计算机视觉/README_for_dummy|05 计算机视觉 - 小白版 🖼️]]
-- [[计算机视觉/CV-in-nutshell|计算机视觉速成指南 (Computer Vision in a Nutshell)]]
+- [[04_计算机视觉/ViT_Deep_Dive|Vision Transformer (ViT) 深度解读]]
+- [[04_计算机视觉/README_for_dummy|05 计算机视觉 - 小白版 🖼️]]
+- [[04_计算机视觉/CV-in-nutshell|计算机视觉速成指南 (Computer Vision in a Nutshell)]]
 
-- [[计算机视觉/Segmentation/Segmentation_for_dummy]] — 图像分割 - 小白版 ✂️ (共享: cnn, computer-vision, cv, image-processing)
-- [[计算机视觉/Video_Generation/README]] — AI视频生成 (Video Generation) (共享: cnn, computer-vision, cv, image-processing)
-- [[论文精读/Vision/ResNet_Deep_Dive]] — ResNet 深度解读 (Deep Residual Learning for Image Recognition) (共享: cnn, cv)
-- [[计算机视觉/3D_Vision/3D_Vision]] — 3D_Vision
-- [[计算机视觉/3D_Vision/3D_Vision_for_dummy]] — 3D_Vision_for_dummy
-- [[计算机视觉/Segmentation/Segmentation]] — Segmentation
-- [[计算机视觉/OCR_Text_Recognition/OCR_for_dummy]] — OCR_for_dummy
-- [[计算机视觉/OCR_Text_Recognition/OCR_Text_Recognition]] — OCR_Text_Recognition
-- [[计算机视觉/Video_Generation/Video_Generation_for_dummy]] — Video_Generation_for_dummy
-- [[计算机视觉/Video_Generation/Video_Generation_2026]] — Video_Generation_2026
-- [[计算机视觉/Multimodal_Vision/CLIP_Deep_Dive]] — CLIP_Deep_Dive
-- [[计算机视觉/Multimodal_Vision/Multimodal_Vision_for_dummy]] — Multimodal_Vision_for_dummy
-- [[计算机视觉/Multimodal_Vision/Multimodal_Vision]] — Multimodal_Vision
-- [[计算机视觉/Image_Classification_Detection/Image_Classification_Detection_for_dummy]] — Image_Classification_Detection_for_dummy
-- [[计算机视觉/Image_Classification_Detection/Image_Classification_Detection]] — Image_Classification_Detection
-- [[计算机视觉/Generative_Models/Generative_Models]] — Generative_Models
-- [[计算机视觉/Generative_Models/Generative_Models_for_dummy]] — Generative_Models_for_dummy
-- [[计算机视觉/CV_Fundamentals/CV-in-nutshell.md|CV-in-nutshell]]
+- [[04_计算机视觉/03_Segmentation/Segmentation_for_dummy]] — 图像分割 - 小白版 ✂️ (共享: cnn, computer-vision, cv, image-processing)
+- [[04_计算机视觉/07_Video_Generation/README]] — AI视频生成 (Video Generation) (共享: cnn, computer-vision, cv, image-processing)
+- [[20_论文精读/08_Vision/ResNet_Deep_Dive]] — ResNet 深度解读 (Deep Residual Learning for Image Recognition) (共享: cnn, cv)
+- [[04_计算机视觉/05_3D_Vision/3D_Vision]] — 3D_Vision
+- [[04_计算机视觉/05_3D_Vision/3D_Vision_for_dummy]] — 3D_Vision_for_dummy
+- [[04_计算机视觉/03_Segmentation/Segmentation]] — Segmentation
+- [[04_计算机视觉/04_OCR_Text_Recognition/OCR_for_dummy]] — OCR_for_dummy
+- [[04_计算机视觉/04_OCR_Text_Recognition/OCR_Text_Recognition]] — OCR_Text_Recognition
+- [[04_计算机视觉/07_Video_Generation/Video_Generation_for_dummy]] — Video_Generation_for_dummy
+- [[04_计算机视觉/07_Video_Generation/Video_Generation_2026]] — Video_Generation_2026
+- [[04_计算机视觉/08_Multimodal_Vision/CLIP_Deep_Dive]] — CLIP_Deep_Dive
+- [[04_计算机视觉/08_Multimodal_Vision/Multimodal_Vision_for_dummy]] — Multimodal_Vision_for_dummy
+- [[04_计算机视觉/08_Multimodal_Vision/Multimodal_Vision]] — Multimodal_Vision
+- [[04_计算机视觉/02_Image_Classification_Detection/Image_Classification_Detection_for_dummy]] — Image_Classification_Detection_for_dummy
+- [[04_计算机视觉/02_Image_Classification_Detection/Image_Classification_Detection]] — Image_Classification_Detection
+- [[04_计算机视觉/06_Generative_Models/Generative_Models]] — Generative_Models
+- [[04_计算机视觉/06_Generative_Models/Generative_Models_for_dummy]] — Generative_Models_for_dummy
+- [[04_计算机视觉/01_CV_Fundamentals/CV-in-nutshell.md|CV-in-nutshell]]
 - [[概念/Vision/multimodal-vision.md|multimodal-vision]]
 - [[治理/cv-deep-learning|Cv Deep Learning]]
 
@@ -161,9 +161,9 @@ sources: []
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

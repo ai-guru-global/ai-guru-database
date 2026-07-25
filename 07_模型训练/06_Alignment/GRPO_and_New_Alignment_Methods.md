@@ -587,7 +587,7 @@ def grpo_loss(
 
 ### 4.6 GRPO 在 DeepSeek-R1 中的应用
 
-GRPO 是 DeepSeek-R1 训练流程的核心算法（详见 [DeepSeek-R1 技术分析](大模型/Reasoning_Models/DeepSeek_R1_Technical_Analysis.md)）：
+GRPO 是 DeepSeek-R1 训练流程的核心算法（详见 [DeepSeek-R1 技术分析](05_大模型/09_Reasoning_Models/DeepSeek_R1_Technical_Analysis.md)）：
 
 ```mermaid
 flowchart LR
@@ -831,7 +831,7 @@ $$
 
 ### 6.3 Rejection Sampling 在 DeepSeek-R1 中的应用
 
-在 DeepSeek-R1 的训练流程中，Rejection Sampling 扮演了关键的第三阶段角色（详见 [DeepSeek 深度解析](大模型/Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive.md)）：
+在 DeepSeek-R1 的训练流程中，Rejection Sampling 扮演了关键的第三阶段角色（详见 [DeepSeek 深度解析](05_大模型/15_Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive.md)）：
 
 ```mermaid
 flowchart LR
@@ -1207,7 +1207,7 @@ def hybrid_reward(prompt, response, alpha=0.4):
     return alpha * orm_score + (1 - alpha) * prm_score
 ```
 
-> **延伸阅读**: 更多关于 PRM 和 ORM 的详细技术分析，参见 [Process Reward Models 深度解析](大模型/Reasoning_Models/Process_Reward_Models.md)。
+> **延伸阅读**: 更多关于 PRM 和 ORM 的详细技术分析，参见 [Process Reward Models 深度解析](05_大模型/09_Reasoning_Models/Process_Reward_Models.md)。
 
 ---
 
@@ -1568,20 +1568,20 @@ flowchart TB
 ## 12. 与其他章节的关联
 
 ### 前置知识
-- [RLHF 与 DPO 深度解读](论文精读/Alignment/RLHF_DPO_Deep_Dive.md) — InstructGPT、DPO 原始论文的详细解读
-- [深度学习基础](../../深度学习/README.md) — 反向传播、优化器、损失函数
-- [强化学习基础](../强化学习/) — PPO、REINFORCE、Actor-Critic 等 RL 算法
+- [RLHF 与 DPO 深度解读](20_论文精读/06_Alignment/RLHF_DPO_Deep_Dive.md) — InstructGPT、DPO 原始论文的详细解读
+- [深度学习基础](../../03_深度学习/README.md) — 反向传播、优化器、损失函数
+- [强化学习基础](../06_强化学习/) — PPO、REINFORCE、Actor-Critic 等 RL 算法
 
 ### 进阶内容
-- [DeepSeek-R1 技术深度解析](大模型/Reasoning_Models/DeepSeek_R1_Technical_Analysis.md) — GRPO 在 R1 四阶段训练中的详细应用
-- [Process Reward Models 深度解析](大模型/Reasoning_Models/Process_Reward_Models.md) — PRM/ORM 的架构、训练方法和信用分配
-- [DeepSeek 深度解析](大模型/Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive.md) — DeepSeek 全系列产品和技术分析
-- [o1 类推理模型](大模型/Reasoning_Models/o1_Class_Reasoning_Models.md) — OpenAI o1 系列推理模型分析
+- [DeepSeek-R1 技术深度解析](05_大模型/09_Reasoning_Models/DeepSeek_R1_Technical_Analysis.md) — GRPO 在 R1 四阶段训练中的详细应用
+- [Process Reward Models 深度解析](05_大模型/09_Reasoning_Models/Process_Reward_Models.md) — PRM/ORM 的架构、训练方法和信用分配
+- [DeepSeek 深度解析](05_大模型/15_Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive.md) — DeepSeek 全系列产品和技术分析
+- [o1 类推理模型](05_大模型/09_Reasoning_Models/o1_Class_Reasoning_Models.md) — OpenAI o1 系列推理模型分析
 
 ### 相关训练技术
-- [微调策略完全指南](大模型/Fine_tuning_Techniques/Fine_tuning_Strategies.md) — SFT、LoRA、QLoRA 等微调方法
-- [分布式训练](模型训练/Distributed_Training/Distributed_Training_2026.md) — ZeRO、FSDP、张量并行等分布式策略
-- [混合精度训练](模型训练/Optimization/Mixed_Precision_Training.md) — BF16/FP16 训练优化
+- [微调策略完全指南](05_大模型/07_Fine_tuning_Techniques/Fine_tuning_Strategies.md) — SFT、LoRA、QLoRA 等微调方法
+- [分布式训练](07_模型训练/04_Distributed_Training/Distributed_Training_2026.md) — ZeRO、FSDP、张量并行等分布式策略
+- [混合精度训练](07_模型训练/03_Optimization/Mixed_Precision_Training.md) — BF16/FP16 训练优化
 
 ---
 
@@ -1604,10 +1604,10 @@ flowchart TB
 
 ## 相关链接
 
-- [[模型训练/Alignment/index|对齐索引]] — 对齐主题导览
-- [[模型训练/Alignment/RLHF_at_Scale_2026|大规模 RLHF 2026]] — GRPO 的对比方法
-- [[强化学习/RLHF_Alignment/GRPO_Training_Deep_Dive|GRPO 训练深度解析]] — GRPO 训练实践
+- [[07_模型训练/06_Alignment/index|对齐索引]] — 对齐主题导览
+- [[07_模型训练/06_Alignment/RLHF_at_Scale_2026|大规模 RLHF 2026]] — GRPO 的对比方法
+- [[06_强化学习/03_RLHF_Alignment/GRPO_Training_Deep_Dive|GRPO 训练深度解析]] — GRPO 训练实践
 - [[概念/Training/grpo|GRPO]] — GRPO 概念卡片
 - [[概念/Training/dpo|DPO]] — 同类对齐方法
 - [[概念/LLM/rlvr|RLVR]] — GRPO 在推理模型中的应用
-- [[大模型/Reasoning_Models/Reasoning_RL_Training_Pipeline|推理模型 RL 训练流水线]] — GRPO 训练推理模型
+- [[05_大模型/09_Reasoning_Models/Reasoning_RL_Training_Pipeline|推理模型 RL 训练流水线]] — GRPO 训练推理模型

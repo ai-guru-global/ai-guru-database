@@ -521,8 +521,8 @@ result.save("controlnet_output.png")
 
 ### 前置知识
 - [卷积神经网络](../Image_Classification_Detection/Image_Classification_Detection.md): U-Net 基础
-- [自编码器](深度学习/Neural_Network_Core/Neural_Network_Core.md): VAE 原理
-- [Transformer](大模型/Transformer_Revolution/Transformer_Revolution.md): CLIP, Attention 机制
+- [自编码器](03_深度学习/02_Neural_Network_Core/Neural_Network_Core.md): VAE 原理
+- [Transformer](05_大模型/04_Transformer_Revolution/Transformer_Revolution.md): CLIP, Attention 机制
 
 ### 后续推荐
 - [多模态视觉](../Multimodal_Vision/Multimodal_Vision.md): CLIP, BLIP
@@ -530,7 +530,7 @@ result.save("controlnet_output.png")
 - [3D 视觉](../3D_Vision/3D_Vision.md): NeRF, 3D 生成
 
 ### 跨领域应用
-- [强化学习](../../强化学习/README.md): RLHF 对齐生成模型
+- [强化学习](../../06_强化学习/README.md): RLHF 对齐生成模型
 
 ---
 
@@ -640,11 +640,11 @@ result.save("controlnet_output.png")
 
 ## Related
 
-- [[../../大模型/Multimodal_Models/Multimodal_Architectures_2026|多模态架构]] — 视觉语言模型的架构基础
-- [[../../深度学习/Generative_Models/Diffusion_Models_Deep_Dive|Diffusion 深度页]] — 扩散模型技术细节
-- [[../../深度学习/Generative_Models/GAN_Deep_Dive|GAN 深度页]] — 对抗生成网络详解
+- [[../../05_大模型/10_Multimodal_Models/Multimodal_Architectures_2026|多模态架构]] — 视觉语言模型的架构基础
+- [[../../03_深度学习/04_Generative_Models/Diffusion_Models_Deep_Dive|Diffusion 深度页]] — 扩散模型技术细节
+- [[../../03_深度学习/04_Generative_Models/GAN_Deep_Dive|GAN 深度页]] — 对抗生成网络详解
 - [[../../概念/Vision/generative-vision-models|生成式视觉模型概念卡]] — 概念定义与分类
-- [[../../RAG系统/RAG_Production|视觉 RAG]] — 图像生成与检索增强结合
+- [[../../14_RAG系统/RAG_Production|视觉 RAG]] — 图像生成与检索增强结合
 
 ---
 

@@ -9,7 +9,7 @@ relationships:
     type: alternative_to
   - target: "概念/reasoning-models"
     type: enables
-sources: [大模型/Prompt_Engineering/Prompt_Engineering.md]
+sources: [05_大模型/08_Prompt_Engineering/Prompt_Engineering.md]
 summary: 提示工程是设计和优化输入提示词以引导LLM产生期望输出的技术，不需要修改模型参数。核心技术从Zero-shot、Few-shot到思维链（CoT）和思维树（ToT），是使用LLM最低成本、最高效的优化手段。
 provenance:
   extracted: 0.85
@@ -135,17 +135,17 @@ Prefix Caching缓存共享的System Prompt前缀；LLMLingua等工具压缩长Pr
 - 推理模型：CoT/ToT是推理模型的核心策略
 ## Related
 
-- [[论文精读/Architecture/BERT_Deep_Dive.md]] — BERT 深度解读
-- [[论文精读/Scaling/GPT3_Deep_Dive.md]] — GPT-3 深度解读
-- [[入门/Learning_Path/AI_Practical_Labs.md]] — AI 实践实验室
-- [[入门/Learning_Path/AI_Tools_Practical_Guide.md]] — AI 工具实战指南
+- [[20_论文精读/02_Architecture/BERT_Deep_Dive.md]] — BERT 深度解读
+- [[20_论文精读/03_Scaling/GPT3_Deep_Dive.md]] — GPT-3 深度解读
+- [[00_入门/03_Learning_Path/AI_Practical_Labs.md]] — AI 实践实验室
+- [[00_入门/03_Learning_Path/AI_Tools_Practical_Guide.md]] — AI 工具实战指南
 - [[概念/LLM/sequence-models.md|sequence-models]]
 
 ## See Also (深度专题)
 
-- [[../../大模型/Prompt_Engineering/Prompt_Engineering|提示工程完全指南]] — CoT/Few-shot/ReAct 等策略的系统性方法论
-- [[../../大模型/Prompt_Engineering/Context_Engineering_Guide|上下文工程指南]] — 从 Prompt Engineering 到 Context Engineering 的演进
-- [[../../大模型/Prompt_Engineering/DSPy_Deep_Dive|DSPy 深度解析]] — 编程化提示 优化框架
+- [[../../05_大模型/08_Prompt_Engineering/Prompt_Engineering|提示工程完全指南]] — CoT/Few-shot/ReAct 等策略的系统性方法论
+- [[../../05_大模型/08_Prompt_Engineering/Context_Engineering_Guide|上下文工程指南]] — 从 Prompt Engineering 到 Context Engineering 的演进
+- [[../../05_大模型/08_Prompt_Engineering/DSPy_Deep_Dive|DSPy 深度解析]] — 编程化提示 优化框架
 
 ---
 
@@ -185,7 +185,7 @@ Prefix Caching缓存共享的System Prompt前缀；LLMLingua等工具压缩长Pr
 - [[概念/LLM/context-engineering|上下文工程]]
 - [[概念/LLM/promptfoo|Promptfoo 测试]]
 - [[概念/Agent/react-agent|ReAct Agent]]
-- [[大模型/Prompt_Engineering/Prompt_Engineering_Guide_2026|Prompt 工程指南 2026]]
+- [[05_大模型/08_Prompt_Engineering/Prompt_Engineering_Guide_2026|Prompt 工程指南 2026]]
 
 ## Prompt 模板示例
 

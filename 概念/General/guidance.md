@@ -10,7 +10,7 @@ relationships:
   - target: "概念/promptfoo"
     type: related_to
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
 summary: "Microsoft 开源的 LLM 结构化生成库，通过模板语法将 Prompt 工程与输出约束融合，支持条件分支、循环与工具调用编排。"
 provenance:
   extracted: 0.55

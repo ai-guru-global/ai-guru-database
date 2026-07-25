@@ -9,11 +9,11 @@ relationships:
     type: complements
   - target: "概念/kv-cache"
     type: related
-  - target: "数学基础/AI_Hardware/T_Head_PPU_Deep_Dive"
+  - target: "01_数学基础/10_AI_Hardware/T_Head_PPU_Deep_Dive"
     type: applies_to
-  - target: "架构基建/AI_Stack_Deep_Dive"
+  - target: "12_架构基建/AI_Stack_Deep_Dive"
     type: applies_to
-  - target: "部署推理/Inference_Engines/vLLM_Deep_Dive"
+  - target: "10_部署推理/02_Inference_Engines/vLLM_Deep_Dive"
     type: used_by
 sources:
   - https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__GRAPH.html
@@ -174,7 +174,7 @@ V1 Engine（vLLM 0.8+）将调度器从 Python 移到 C++ 层，减少了 CPU �
 
 ## 关联概念
 
-> **关联**: -> [[概念/paged-attention|PagedAttention]] | [[概念/continuous-batching|Continuous Batching]] | [[概念/kv-cache|KV Cache]] | [[概念/prefill-decode|Prefill/Decode 阶段]] | [[概念/flash-attention-kernels|Flash Attention 算子]] | [[部署推理/Inference_Engines/vLLM_Deep_Dive|vLLM 深度解析]] | [[数学基础/AI_Hardware/T_Head_PPU_Deep_Dive|平头哥 PPU 深度解析]] | [[架构基建/AI_Stack_Deep_Dive|AI Stack 深度解析]]
+> **关联**: -> [[概念/paged-attention|PagedAttention]] | [[概念/continuous-batching|Continuous Batching]] | [[概念/kv-cache|KV Cache]] | [[概念/prefill-decode|Prefill/Decode 阶段]] | [[概念/flash-attention-kernels|Flash Attention 算子]] | [[10_部署推理/02_Inference_Engines/vLLM_Deep_Dive|vLLM 深度解析]] | [[01_数学基础/10_AI_Hardware/T_Head_PPU_Deep_Dive|平头哥 PPU 深度解析]] | [[12_架构基建/AI_Stack_Deep_Dive|AI Stack 深度解析]]
 
 ---
 

@@ -29,7 +29,7 @@ God Tier Prompts 是一个社区驱动的提示词（Prompt）分享与投票平
 
 | 功能 | 说明 |
 |------|------|
-| **提示词库** | 分类整理（写作/编程/分析/创意/营销等）的精选提示词 |
+| **提示词库** | 分类整理（写作/16_编程/分析/创意/营销等）的精选提示词 |
 | **社区投票** | 类 Reddit 机制，社区票选最佳提示词，质量可筛选 |
 | **模板化** | 可直接复制使用的提示词模板（含变量占位符） |
 | **场景标签** | 每个提示词标注适用场景与模型（GPT/Claude/Gemini） |
@@ -48,7 +48,7 @@ God Tier Prompts 是一个社区驱动的提示词（Prompt）分享与投票平
   学原理      学方法      直接拿来用
 ```
 
-God Tier Prompts 处于"实践模板"端——适合**快速获得可用提示词**，但若要理解原理（为什么这样写有效），应结合知识库的 [[大模型/Prompt_Engineering|提示词工程]] 系统学习。
+God Tier Prompts 处于"实践模板"端——适合**快速获得可用提示词**，但若要理解原理（为什么这样写有效），应结合知识库的 [[05_大模型/Prompt_Engineering|提示词工程]] 系统学习。
 
 ## 使用建议
 
@@ -151,12 +151,12 @@ God Tier Prompts 处于"实践模板"端——适合**快速获得可用提示�
 
 ## Related
 
-- [[大模型/Prompt_Engineering|提示词工程]] — 系统学习提示词原理与方法
-- [[学习/References/Courses/prompt-engineering-nirdiamant|Prompt 工程技术大全]] — 综合技术参考
-- [[大模型/Prompt_Engineering/README|God Tier Prompts 索引]] — 详细条目
+- [[05_大模型/Prompt_Engineering|提示词工程]] — 系统学习提示词原理与方法
+- [[90_学习/References/Courses/prompt-engineering-nirdiamant|Prompt 工程技术大全]] — 综合技术参考
+- [[05_大模型/08_Prompt_Engineering/README|God Tier Prompts 索引]] — 详细条目
 - [[概念/prompt-engineering|提示工程概念卡片]]
 - [[概念/dspy|DSPy 自动提示优化]]
-- [[大模型/Prompt_Engineering/Prompt_Engineering_Principles_Ng|Ng 提示工程原则]]
+- [[05_大模型/08_Prompt_Engineering/Prompt_Engineering_Principles_Ng|Ng 提示工程原则]]
 
 ## 总结
 

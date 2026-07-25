@@ -129,19 +129,19 @@ pmon | sort -k4 -n
 
 ## Related
 
-- [[架构基建/AI_Stack_Production_Toolchain|AI Stack 生产工具链总览]]
-- [[架构基建/AI_Stack_Container_Runtime_Guide|AI Stack 容器与运行时指南]]
-- [[架构基建/AI_Stack_Inference_Serving_Guide|AI Stack 推理服务指南]]
-- [[架构基建/AI_Stack_Training_Launchers_Guide|AI Stack 训练启动器指南]]
-- [[部署推理/Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]]
-- [[模型训练/Monitoring/Training_Monitoring_2026|训练监控与实验追踪 2026]]
+- [[12_架构基建/AI_Stack_Production_Toolchain|AI Stack 生产工具链总览]]
+- [[12_架构基建/AI_Stack_Container_Runtime_Guide|AI Stack 容器与运行时指南]]
+- [[12_架构基建/AI_Stack_Inference_Serving_Guide|AI Stack 推理服务指南]]
+- [[12_架构基建/AI_Stack_Training_Launchers_Guide|AI Stack 训练启动器指南]]
+- [[10_部署推理/04_Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]]
+- [[07_模型训练/07_Monitoring/Training_Monitoring_2026|训练监控与实验追踪 2026]]
 - [[概念/gpu-operator|GPU Operator]]
 
 ## 架构核心组件对比
 
 | 组件层 | 功能 | 关键技术 | 选型考量 |
 |--------|------|----------|----------|
-| 计算层 | 模型训练/推理 | GPU/TPU/NPU集群 | 算力需求+成本 |
+| 计算层 | 07_模型训练/推理 | GPU/TPU/NPU集群 | 算力需求+成本 |
 | 存储层 | 数据/模型/检查点 | 分布式存储/对象存储 | 容量+IOPS+成本 |
 | 网络层 | 节点间通信 | RDMA/RoCE/InfiniBand | 带宽+延迟 |
 | 调度层 | 资源编排 | K8s/Slurm/Ray | 弹性+效率 |

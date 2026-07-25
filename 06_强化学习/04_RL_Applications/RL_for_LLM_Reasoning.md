@@ -517,9 +517,9 @@ trainer.train()
 
 ## 7. 交叉引用
 
-- [[强化学习/RLHF_Alignment/GRPO_Training_Deep_Dive|GRPO 训练深度解析]]
-- [[强化学习/RLHF_Alignment/DPO_Variants_2026|DPO 变体]]
-- [[强化学习/RLHF_Alignment/Reward_Modeling_Deep_Dive|奖励模型]]
-- [[大模型/Reasoning_Models/|推理模型]]
-- [[深度学习/Continual_Learning/|持续学习]]
-- [[强化学习/Deep_RL/Decision_Transformer|Decision Transformer]]
+- [[06_强化学习/03_RLHF_Alignment/GRPO_Training_Deep_Dive|GRPO 训练深度解析]]
+- [[06_强化学习/03_RLHF_Alignment/DPO_Variants_2026|DPO 变体]]
+- [[06_强化学习/03_RLHF_Alignment/Reward_Modeling_Deep_Dive|奖励模型]]
+- [[05_大模型/09_Reasoning_Models/|推理模型]]
+- [[03_深度学习/Continual_Learning/|持续学习]]
+- [[06_强化学习/02_Deep_RL/Decision_Transformer|Decision Transformer]]

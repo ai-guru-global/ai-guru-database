@@ -252,7 +252,7 @@ Eval 数据集本身也是代码资产，必须版本化：
 | **LangSmith** | 商业 | 全栈（数据集+Judge+Trace） | 与 LangChain 深度集成 | LangChain 用户 |
 | **Arize Phoenix** | 商业 | 可观测+评估一体 | 开源版功能完整 | 重度可观测需求 |
 
-详见 [[测试/RAGAS_Deep_Dive]]、[[测试/Testing_Frameworks/DeepEval_Deep_Dive]]、[[测试/Testing_Frameworks/Promptfoo_Deep_Dive]]。
+详见 [[09_测试/RAGAS_Deep_Dive]]、[[09_测试/02_Testing_Frameworks/DeepEval_Deep_Dive]]、[[09_测试/02_Testing_Frameworks/Promptfoo_Deep_Dive]]。
 
 ---
 
@@ -317,13 +317,13 @@ def cascade(query: str):
 | 租户月预算 | > 80% | 告警 + 降级到便宜模型 |
 | 全局日 Token | > 日均 3 倍 | P0 告警 + 自动熔断 |
 
-详见 [[部署推理/LLM_Cost_Optimization]]。
+详见 [[10_部署推理/LLM_Cost_Optimization]]。
 
 ---
 
 ## 6. RAG 流水线运维
 
-RAG 系统的 Ops 比"推理 Ops"更复杂，因为它包含**可变的知识库**。本节侧重 Ops 视角，RAG 架构详见 [[RAG系统/README]]。
+RAG 系统的 Ops 比"推理 Ops"更复杂，因为它包含**可变的知识库**。本节侧重 Ops 视角，RAG 架构详见 [[14_RAG系统/README]]。
 
 ### 6.1 RAG 的四个版本维度
 
@@ -477,21 +477,21 @@ def rag_answer(question):
 ## 11. 相关文档
 
 ### 本章内
-- [[模型运维/MLOps_Pipeline]] — 传统 MLOps 全景（本文是其 LLM 时代的升级）
-- [[模型运维/CI_CD/ML_CI_CD]] — ML CI/CD 基础，本文 §3 在其上扩展 Prompt CI
-- [[模型运维/Observability/Model_Monitoring_and_Drift_Detection_2026]] — 漂移检测理论，本文 §7 在其上扩展语义监控
-- [[模型运维/Experiment_Tracking/Experiment_Tracking_Deep_Dive]] — 实验追踪，Prompt 实验是其延伸
+- [[11_模型运维/MLOps_Pipeline]] — 传统 MLOps 全景（本文是其 LLM 时代的升级）
+- [[11_模型运维/06_CI_CD/ML_CI_CD]] — ML CI/CD 基础，本文 §3 在其上扩展 Prompt CI
+- [[11_模型运维/08_Observability/Model_Monitoring_and_Drift_Detection_2026]] — 漂移检测理论，本文 §7 在其上扩展语义监控
+- [[11_模型运维/04_Experiment_Tracking/Experiment_Tracking_Deep_Dive]] — 实验追踪，Prompt 实验是其延伸
 
 ### 跨章
 - [[概念/mlops]] — MLOps 概念页（含 LLMOps 简述）
-- [[部署推理/LLM_Cost_Optimization]] — 成本优化细节
-- [[部署推理/Caching/Prompt_Caching_Advanced]] — Prompt 缓存工程实现
-- [[RAG系统/README]] — RAG 系统架构（本文 §6 侧重其 Ops）
-- [[测试/Testing_Frameworks/Promptfoo_Deep_Dive]] — Prompt 红队与测试
-- [[测试/RAGAS_Deep_Dive]] — RAG 评估事实标准
-- [[运维/README]] — AI 系统运维（基础设施层）
-- [[伦理安全/AI_Security_2026/README]] — 安全与红队
-- [[架构基建/AI_Gateway/README]] — AI 网关（路由/限流/计费）
+- [[10_部署推理/LLM_Cost_Optimization]] — 成本优化细节
+- [[10_部署推理/06_Caching/Prompt_Caching_Advanced]] — Prompt 缓存工程实现
+- [[14_RAG系统/README]] — RAG 系统架构（本文 §6 侧重其 Ops）
+- [[09_测试/02_Testing_Frameworks/Promptfoo_Deep_Dive]] — Prompt 红队与测试
+- [[09_测试/RAGAS_Deep_Dive]] — RAG 评估事实标准
+- [[13_运维/README]] — AI 系统运维（基础设施层）
+- [[17_伦理安全/07_AI_Security_2026/README]] — 安全与红队
+- [[12_架构基建/11_AI_Gateway/README]] — AI 网关（路由/限流/计费）
 
 ---
 

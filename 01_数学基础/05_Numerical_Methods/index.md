@@ -26,14 +26,14 @@ AI 系统的底层是数值计算。本模块覆盖浮点运算、稀疏矩阵�
 ## 前置知识
 
 - **必修**: [线性代数](../Linear_Algebra/Linear_Algebra.md)（矩阵运算基础）
-- **必修**: [微积分与优化](数学基础/Calculus_Optimization.md)（梯度计算）
+- **必修**: [微积分与优化](01_数学基础/Calculus_Optimization.md)（梯度计算）
 - **推荐**: [GPU 编程](../GPU_Programming/)（硬件浮点实现）
 
 ## 与其他模块的关联
 
-- [[模型训练/Mixed_Precision_Training/|混合精度训练]] — FP16/BF16/FP8 实战
-- [[部署推理/Model_Compression/|模型压缩与量化]] — INT8/INT4 量化中的精度损失
-- [[大模型/LLM_Architectures/LLM_Internals_Inference|推理内幕]] — KV Cache 数值精度
+- [[07_模型训练/Mixed_Precision_Training/|混合精度训练]] — FP16/BF16/FP8 实战
+- [[10_部署推理/Model_Compression/|模型压缩与量化]] — INT8/INT4 量化中的精度损失
+- [[05_大模型/05_LLM_Architectures/LLM_Internals_Inference|推理内幕]] — KV Cache 数值精度
 
 ## 进阶知识拓展
 
@@ -71,9 +71,9 @@ AI 系统的底层是数值计算。本模块覆盖浮点运算、稀疏矩阵�
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

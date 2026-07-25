@@ -136,7 +136,7 @@ OpenAI 是闭源大模型领域的绝对领跑者。GPT-3 开创了 In-context L
 5. **推理新范式**: o 系列证明了"让模型多想想"可以指数级提升复杂任务性能
 6. **安全研究并行**: System Cards、红队测试、超级对齐团队 (后解散)，能力与安全并行推进
 
-> **相关文档**: 关于 LLM 架构范式的基础介绍，参见 [LLM Architectures](大模型/LLM_Architectures/LLM_Architectures.md)
+> **相关文档**: 关于 LLM 架构范式的基础介绍，参见 [LLM Architectures](05_大模型/05_LLM_Architectures/LLM_Architectures.md)
 
 ---
 
@@ -305,7 +305,7 @@ Few-shot (少样本):
 关键洞察: 模型没有更新权重！它只是在 context 中"理解"了任务。
 ```
 
-> **相关文档**: GPT-3 的详细论文分析，参见 [GPT-3 Deep Dive](论文精读/Scaling/GPT3_Deep_Dive.md)
+> **相关文档**: GPT-3 的详细论文分析，参见 [GPT-3 Deep Dive](20_论文精读/03_Scaling/GPT3_Deep_Dive.md)
 
 ### 3.2 GPT-3.5 / ChatGPT: AI 革命的引爆点 (2022)
 
@@ -417,7 +417,7 @@ graph TB
 | 训练成本 | ~$5M | ~$100M |
 | 显存需求 | ~350 GB (FP16) | ~3.5 TB (FP16) |
 
-> **相关文档**: MoE 架构的详细技术分析，参见 [Mixture of Experts Deep Dive](论文精读/Architecture/Mixture_of_Experts_Deep_Dive.md)
+> **相关文档**: MoE 架构的详细技术分析，参见 [Mixture of Experts Deep Dive](20_论文精读/02_Architecture/Mixture_of_Experts_Deep_Dive.md)
 
 #### 3.3.3 GPT-4 能力突破
 
@@ -570,7 +570,7 @@ OpenAI 的 o 系列推理模型代表了 LLM 领域的范式转变——从直�
   → 输出: "6"
 ```
 
-> **相关文档**: o 系列推理模型的深入技术分析，参见 [o1-Class Reasoning Models](大模型/Reasoning_Models/o1_Class_Reasoning_Models.md)
+> **相关文档**: o 系列推理模型的深入技术分析，参见 [o1-Class Reasoning Models](05_大模型/09_Reasoning_Models/o1_Class_Reasoning_Models.md)
 
 ### 4.2 o1: 推理模型的开山之作 (2024.09 / 2024.12)
 
@@ -612,7 +612,7 @@ o1 的 RL 训练流程 (推测)
    ↓
 2. 推理数据冷启动
    - 高质量人工标注的思维链数据
-   - 数学/编程/科学推理步骤
+   - 数学/16_编程/科学推理步骤
    ↓
 3. RL 强化学习 (核心!)
    - 奖励模型: 评估推理步骤质量
@@ -1011,7 +1011,7 @@ Reward Model 训练:
        y_l = 人类不偏好的回复 (loser)
 ```
 
-> **相关文档**: RLHF 和 DPO 的详细技术对比，参见 [RLHF & DPO Deep Dive](论文精读/Alignment/RLHF_DPO_Deep_Dive.md)
+> **相关文档**: RLHF 和 DPO 的详细技术对比，参见 [RLHF & DPO Deep Dive](20_论文精读/06_Alignment/RLHF_DPO_Deep_Dive.md)
 
 ### 6.2 In-context Learning: 上下文学习
 
@@ -1689,39 +1689,39 @@ API 调用:
 
 ### 架构基础
 
-- [LLM Architectures (大语言模型架构)](大模型/LLM_Architectures/LLM_Architectures.md) — Transformer, GPT, BERT, MoE 等核心架构的全面介绍
-- [Mixture of Experts Deep Dive](论文精读/Architecture/Mixture_of_Experts_Deep_Dive.md) — MoE 从理论到实践的完整剖析
-- [MoE Case Studies: DeepSeek & Mixtral](大模型/LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md) — MoE 路由策略与专家专业化分析
-- [MoE Routing and Load Balancing](大模型/LLM_Architectures/MoE_Routing_and_Load_Balancing.md) — MoE 负载均衡技术详解
+- [LLM Architectures (大语言模型架构)](05_大模型/05_LLM_Architectures/LLM_Architectures.md) — Transformer, GPT, BERT, MoE 等核心架构的全面介绍
+- [Mixture of Experts Deep Dive](20_论文精读/02_Architecture/Mixture_of_Experts_Deep_Dive.md) — MoE 从理论到实践的完整剖析
+- [MoE Case Studies: DeepSeek & Mixtral](05_大模型/05_LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md) — MoE 路由策略与专家专业化分析
+- [MoE Routing and Load Balancing](05_大模型/05_LLM_Architectures/MoE_Routing_and_Load_Balancing.md) — MoE 负载均衡技术详解
 
 ### 推理模型
 
-- [o1-Class Reasoning Models (o 系列推理模型)](大模型/Reasoning_Models/o1_Class_Reasoning_Models.md) — OpenAI o1/o3 类推理模型的深度技术分析
-- [DeepSeek-R1 Technical Analysis](大模型/Reasoning_Models/DeepSeek_R1_Technical_Analysis.md) — DeepSeek-R1 的 GRPO 训练和推理自进化机制
-- [Reasoning Models for Dummy (推理模型小白指南)](大模型/Reasoning_Models/Reasoning_Models_for_dummy.md) — 推理模型基础概念入门
-- [Test-Time Compute (测试时计算)](大模型/Reasoning_Models/Test_Time_Compute_2026.md) — 测试时计算扩展的理论与实践
-- [Process Reward Models (过程奖励模型)](大模型/Reasoning_Models/Process_Reward_Models.md) — 过程奖励模型详解
+- [o1-Class Reasoning Models (o 系列推理模型)](05_大模型/09_Reasoning_Models/o1_Class_Reasoning_Models.md) — OpenAI o1/o3 类推理模型的深度技术分析
+- [DeepSeek-R1 Technical Analysis](05_大模型/09_Reasoning_Models/DeepSeek_R1_Technical_Analysis.md) — DeepSeek-R1 的 GRPO 训练和推理自进化机制
+- [Reasoning Models for Dummy (推理模型小白指南)](05_大模型/09_Reasoning_Models/Reasoning_Models_for_dummy.md) — 推理模型基础概念入门
+- [Test-Time Compute (测试时计算)](05_大模型/09_Reasoning_Models/Test_Time_Compute_2026.md) — 测试时计算扩展的理论与实践
+- [Process Reward Models (过程奖励模型)](05_大模型/09_Reasoning_Models/Process_Reward_Models.md) — 过程奖励模型详解
 
 ### 核心论文
 
-- [GPT-3 Deep Dive](论文精读/Scaling/GPT3_Deep_Dive.md) — GPT-3 论文的深度解析, Scaling Laws 与 In-context Learning
-- [RLHF & DPO Deep Dive](论文精读/Alignment/RLHF_DPO_Deep_Dive.md) — 人类反馈强化学习与直接偏好优化的技术对比
-- [Attention Is All You Need Deep Dive](论文精读/Architecture/Attention_Is_All_You_Need_Deep_Dive.md) — Transformer 架构原始论文解析
+- [GPT-3 Deep Dive](20_论文精读/03_Scaling/GPT3_Deep_Dive.md) — GPT-3 论文的深度解析, Scaling Laws 与 In-context Learning
+- [RLHF & DPO Deep Dive](20_论文精读/06_Alignment/RLHF_DPO_Deep_Dive.md) — 人类反馈强化学习与直接偏好优化的技术对比
+- [Attention Is All You Need Deep Dive](20_论文精读/02_Architecture/Attention_Is_All_You_Need_Deep_Dive.md) — Transformer 架构原始论文解析
 
 ### 多模态
 
-- [Multimodal Architectures 2026](大模型/Multimodal_Models/Multimodal_Architectures_2026.md) — 多模态模型架构全景
-- [Native Multimodal Architectures](大模型/Multimodal_Models/Native_Multimodal_Architectures.md) — 原生多模态模型的技术细节
-- [Video Understanding Architectures](大模型/Multimodal_Models/Video_Understanding_Architectures.md) — 视频理解与生成模型架构
+- [Multimodal Architectures 2026](05_大模型/10_Multimodal_Models/Multimodal_Architectures_2026.md) — 多模态模型架构全景
+- [Native Multimodal Architectures](05_大模型/10_Multimodal_Models/Native_Multimodal_Architectures.md) — 原生多模态模型的技术细节
+- [Video Understanding Architectures](05_大模型/10_Multimodal_Models/Video_Understanding_Architectures.md) — 视频理解与生成模型架构
 
 ### 全球 LLM 生态
 
-- [DeepSeek Deep Dive (深度求索技术深度解析)](大模型/Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive.md) — DeepSeek 完整技术演进
-- [Qwen Deep Dive (通义千问技术深度解析)](大模型/Chinese_LLM_Ecosystem/Qwen_Deep_Dive.md) — 阿里 Qwen 系列全面分析
+- [DeepSeek Deep Dive (深度求索技术深度解析)](05_大模型/15_Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive.md) — DeepSeek 完整技术演进
+- [Qwen Deep Dive (通义千问技术深度解析)](05_大模型/15_Chinese_LLM_Ecosystem/Qwen_Deep_Dive.md) — 阿里 Qwen 系列全面分析
 
 ### 训练与微调
 
-- [Fine-tuning Techniques (微调技术)](大模型/Fine_tuning_Techniques/Fine_tuning_Techniques.md) — LoRA, QLoRA, PEFT 等微调方法
+- [Fine-tuning Techniques (微调技术)](05_大模型/07_Fine_tuning_Techniques/Fine_tuning_Techniques.md) — LoRA, QLoRA, PEFT 等微调方法
 
 ---
 
@@ -1729,10 +1729,10 @@ API 调用:
 
 ## 相关链接
 
-- [[大模型/Global_LLM_Ecosystem/README|国际大模型生态全景]] — 五大国际大模型厂商横向对比
-- [[大模型/Global_LLM_Ecosystem/Anthropic_Claude_Deep_Dive|Anthropic Claude 技术深度解析]] — 同期竞争者技术路线
-- [[大模型/Global_LLM_Ecosystem/Google_Gemini_Deep_Dive|Google Gemini 技术深度解析]] — 原生多模态与推理模型对标
-- [[大模型/LLM_Products/chatgpt_overview|ChatGPT 产品概览]] — ChatGPT 产品能力速览
-- [[大模型/Reasoning_Models/o1_Class_Reasoning_Models|o1 类推理模型]] — o1/o3 推理模型架构解析
+- [[05_大模型/14_Global_LLM_Ecosystem/README|国际大模型生态全景]] — 五大国际大模型厂商横向对比
+- [[05_大模型/14_Global_LLM_Ecosystem/Anthropic_Claude_Deep_Dive|Anthropic Claude 技术深度解析]] — 同期竞争者技术路线
+- [[05_大模型/14_Global_LLM_Ecosystem/Google_Gemini_Deep_Dive|Google Gemini 技术深度解析]] — 原生多模态与推理模型对标
+- [[05_大模型/13_LLM_Products/chatgpt_overview|ChatGPT 产品概览]] — ChatGPT 产品能力速览
+- [[05_大模型/09_Reasoning_Models/o1_Class_Reasoning_Models|o1 类推理模型]] — o1/o3 推理模型架构解析
 - [[概念/LLM/gpt-series-evolution|GPT 系列演进]] — GPT 模型家族概念卡片
 - [[概念/LLM/test-time-compute|Test-Time Compute]] — o 系列模型核心机制

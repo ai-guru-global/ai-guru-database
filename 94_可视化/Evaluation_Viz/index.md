@@ -31,10 +31,10 @@ tags: [evaluation-visualization, index, navigation]
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[可视化/Evaluation_Viz/Evaluation_Visualization_Guide\|Evaluation Visualization Guide]] | 混淆矩阵、ROC/PR 曲线、雷达图 | ML 工程师 / 数据可视化实践者 |
-| [[可视化/Evaluation_Viz/Attention_Visualization\|Attention Visualization]] | 注意力图、注意力热力图与头分析 | NLP/CV 研究员 |
-| [[可视化/Evaluation_Viz/Model_Interpretability_Visualization\|Model Interpretability Visualization]] | SHAP、LIME、归因方法 | ML 工程师 / 可解释性研究员 |
-| [[可视化/Evaluation_Viz/Dimensionality_Reduction_Viz\|Dimensionality Reduction Viz]] | t-SNE/UMAP/PCA 降维投影 | DL 研究员 |
+| [[94_可视化/Evaluation_Viz/Evaluation_Visualization_Guide\|Evaluation Visualization Guide]] | 混淆矩阵、ROC/PR 曲线、雷达图 | ML 工程师 / 数据可视化实践者 |
+| [[94_可视化/Evaluation_Viz/Attention_Visualization\|Attention Visualization]] | 注意力图、注意力热力图与头分析 | NLP/CV 研究员 |
+| [[94_可视化/Evaluation_Viz/Model_Interpretability_Visualization\|Model Interpretability Visualization]] | SHAP、LIME、归因方法 | ML 工程师 / 可解释性研究员 |
+| [[94_可视化/Evaluation_Viz/Dimensionality_Reduction_Viz\|Dimensionality Reduction Viz]] | t-SNE/UMAP/PCA 降维投影 | DL 研究员 |
 
 ---
 
@@ -52,11 +52,11 @@ tags: [evaluation-visualization, index, navigation]
 
 ### 3.2 注意力与可解释性
 
-详见 [[可视化/Evaluation_Viz/Attention_Visualization|注意力可视化]] 与 [[可视化/Evaluation_Viz/Model_Interpretability_Visualization|可解释性可视化]]。
+详见 [[94_可视化/Evaluation_Viz/Attention_Visualization|注意力可视化]] 与 [[94_可视化/Evaluation_Viz/Model_Interpretability_Visualization|可解释性可视化]]。
 
 ### 3.3 降维投影
 
-详见 [[可视化/Evaluation_Viz/Dimensionality_Reduction_Viz|降维可视化]]。
+详见 [[94_可视化/Evaluation_Viz/Dimensionality_Reduction_Viz|降维可视化]]。
 
 ---
 
@@ -188,13 +188,13 @@ flowchart TD
 
 ## 关联
 
-- [[可视化/index|可视化首页]]
-- [[可视化/Best_Practices/index|Best Practices]]
-- [[可视化/Training_Viz/index|Training Viz]]
-- [[模型评估/index|模型评估]]
-- [[深度学习/index|深度学习]]
-- [[大模型/index|大模型]]
-- [[伦理安全/index|伦理安全]]
+- [[94_可视化/index|可视化首页]]
+- [[94_可视化/Best_Practices/index|Best Practices]]
+- [[94_可视化/Training_Viz/index|Training Viz]]
+- [[08_模型评估/index|模型评估]]
+- [[03_深度学习/index|深度学习]]
+- [[05_大模型/index|大模型]]
+- [[17_伦理安全/index|伦理安全]]
 
 ---
 

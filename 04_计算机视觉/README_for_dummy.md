@@ -59,8 +59,8 @@ sources: []
 ## 开始之前你需要知道
 
 **必备基础** (建议先看这些):
-- [神经网络核心 - 小白版](深度学习/Neural_Network_Core/Neural_Network_Core_for_dummy.md) - 理解 AI 大脑的基本工作原理
-- [优化方法 - 小白版](深度学习/Optimization/Optimization_for_dummy.md) - 理解 AI 怎么从错误中学习
+- [神经网络核心 - 小白版](03_深度学习/02_Neural_Network_Core/Neural_Network_Core_for_dummy.md) - 理解 AI 大脑的基本工作原理
+- [优化方法 - 小白版](03_深度学习/03_Optimization/Optimization_for_dummy.md) - 理解 AI 怎么从错误中学习
 
 **不需要的基础**:
 - ❌ 不需要会编程(我们用生活例子解释)
@@ -128,11 +128,11 @@ sources: []
 
 ## Related
 
-- [[计算机视觉/README.md|计算机视觉 README]]
-- [[计算机视觉/3D_Vision/3D_Vision.md|3D_Vision]]
-- [[计算机视觉/3D_Vision/3D_Vision_for_dummy.md|3D_Vision_for_dummy]]
-- [[计算机视觉/Generative_Models/Generative_Models.md|Generative_Models]]
-- [[计算机视觉/Generative_Models/Generative_Models_for_dummy.md|Generative_Models_for_dummy]]
+- [[04_计算机视觉/README.md|计算机视觉 README]]
+- [[04_计算机视觉/05_3D_Vision/3D_Vision.md|3D_Vision]]
+- [[04_计算机视觉/05_3D_Vision/3D_Vision_for_dummy.md|3D_Vision_for_dummy]]
+- [[04_计算机视觉/06_Generative_Models/Generative_Models.md|Generative_Models]]
+- [[04_计算机视觉/06_Generative_Models/Generative_Models_for_dummy.md|Generative_Models_for_dummy]]
 
 ## 进阶知识拓展
 
@@ -170,9 +170,9 @@ sources: []
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

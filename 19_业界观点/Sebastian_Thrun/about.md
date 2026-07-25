@@ -58,11 +58,11 @@ sources: []
 
 ### 自动驾驶的安全性
 
-Thrun 的核心信念是"机器比人更安全"。他将自动驾驶视为一个公共卫生问题而非纯粹的技术问题，认为交通致死是"可预防的流行病"。这与 [[业界观点/Elon_Musk/about]] 的 FSD（全自动驾驶）路线形成对比——Thrun 更早强调激光雷达与高精地图的融合方案，而 Musk 坚持纯视觉路线。
+Thrun 的核心信念是"机器比人更安全"。他将自动驾驶视为一个公共卫生问题而非纯粹的技术问题，认为交通致死是"可预防的流行病"。这与 [[19_业界观点/Elon_Musk/about]] 的 FSD（全自动驾驶）路线形成对比——Thrun 更早强调激光雷达与高精地图的融合方案，而 Musk 坚持纯视觉路线。
 
 ### AI 教育的民主化
 
-Thrun 认为 AI 的最大社会价值不在于替代人类劳动，而在于教育和赋能人类。Udacity 的纳米学位模式试图将前沿 AI 技能以低门槛、高效率的方式传递给全球学习者。他将这种理念称为"pedagogy at scale"（规模化教学法），与 [[业界观点/Andrew_Ng/about]] 的 Coursera/DeepLearning.AI 形成教育赛道的呼应。
+Thrun 认为 AI 的最大社会价值不在于替代人类劳动，而在于教育和赋能人类。Udacity 的纳米学位模式试图将前沿 AI 技能以低门槛、高效率的方式传递给全球学习者。他将这种理念称为"pedagogy at scale"（规模化教学法），与 [[19_业界观点/Andrew_Ng/about]] 的 Coursera/DeepLearning.AI 形成教育赛道的呼应。
 
 ### AGI 态度
 
@@ -70,7 +70,7 @@ Thrun 对 AGI 持谨慎乐观态度。他认为"我们距离真正的通用智�
 
 ### 对 AI 监管的立场
 
-Thrun 倾向于"在应用中监管"而非"在研究中限制"。他主张针对具体应用场景（如自动驾驶、医疗诊断）制定行业安全标准，反对一刀切地限制 AI 研究。这一立场与 [[业界观点/Sam_Altman/about]] 的"主动寻求监管"和 [[业界观点/Dario_Amodei/about]] 的"安全优先"形成差异化。
+Thrun 倾向于"在应用中监管"而非"在研究中限制"。他主张针对具体应用场景（如自动驾驶、医疗诊断）制定行业安全标准，反对一刀切地限制 AI 研究。这一立场与 [[19_业界观点/Sam_Altman/about]] 的"主动寻求监管"和 [[19_业界观点/Dario_Amodei/about]] 的"安全优先"形成差异化。
 
 ---
 
@@ -110,13 +110,13 @@ Thrun 的影响力横跨三个维度：**学术研究**（概率机器人学、S
 
 ## 交叉引用 (Cross-References)
 
-- [Talks 主题合成 2026](业界观点/Talks_Synthesis/Talks_Synthesis_2026.md) — 查看 Sebastian Thrun 在 Scaling Laws、开源 vs 闭源、AI 安全等主题中的立场
-- [AI 历史时间线](入门/Fundamentals/AI_History_Timeline.md) — DARPA 大挑战赛与自动驾驶产业起源
-- [AI 未来趋势](入门/Ethics_and_Future/AI_Future_Trends.md) — 自动驾驶与教育科技的前瞻判断
-- [[业界观点/Andrew_Ng/about]] — 同为 MOOC 教育先驱，Coursera vs Udacity 路线对比
-- [[业界观点/Andrej_Karpathy/about]] — 同为斯坦福 AI 教育体系出身的技术领袖
-- [[业界观点/Elon_Musk/about]] — 自动驾驶路线之争：激光雷达 vs 纯视觉
-- [[业界观点/Sam_Altman/about]] — AI 监管立场对比：应用层监管 vs 全面监管
+- [Talks 主题合成 2026](19_业界观点/Talks_Synthesis/Talks_Synthesis_2026.md) — 查看 Sebastian Thrun 在 Scaling Laws、开源 vs 闭源、AI 安全等主题中的立场
+- [AI 历史时间线](00_入门/01_Fundamentals/AI_History_Timeline.md) — DARPA 大挑战赛与自动驾驶产业起源
+- [AI 未来趋势](00_入门/04_Ethics_and_Future/AI_Future_Trends.md) — 自动驾驶与教育科技的前瞻判断
+- [[19_业界观点/Andrew_Ng/about]] — 同为 MOOC 教育先驱，Coursera vs Udacity 路线对比
+- [[19_业界观点/Andrej_Karpathy/about]] — 同为斯坦福 AI 教育体系出身的技术领袖
+- [[19_业界观点/Elon_Musk/about]] — 自动驾驶路线之争：激光雷达 vs 纯视觉
+- [[19_业界观点/Sam_Altman/about]] — AI 监管立场对比：应用层监管 vs 全面监管
 
 ---
 
@@ -133,10 +133,10 @@ Thrun 的影响力横跨三个维度：**学术研究**（概率机器人学、S
 
 ## Related
 
-- [[业界观点/Andrej_Karpathy/about]] — Andrej Karpathy 简介 (共享: insights, leaders, speeches, talks)
-- [[业界观点/Andrew_Ng/about]] — Andrew Ng 简介 (共享: insights, leaders, speeches, talks)
-- [[业界观点/Andrew_Ng/sayings]] — Andrew Ng 关于 AI 的观点与格言 (共享: insights, leaders, speeches, talks)
-- [[业界观点/Bill_Gates/about]] — Bill Gates 简介 (共享: insights, leaders, speeches, talks)
+- [[19_业界观点/Andrej_Karpathy/about]] — Andrej Karpathy 简介 (共享: insights, leaders, speeches, talks)
+- [[19_业界观点/Andrew_Ng/about]] — Andrew Ng 简介 (共享: insights, leaders, speeches, talks)
+- [[19_业界观点/Andrew_Ng/sayings]] — Andrew Ng 关于 AI 的观点与格言 (共享: insights, leaders, speeches, talks)
+- [[19_业界观点/Bill_Gates/about]] — Bill Gates 简介 (共享: insights, leaders, speeches, talks)
 
 ## 附录：人物影响力评估
 

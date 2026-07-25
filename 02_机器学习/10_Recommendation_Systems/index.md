@@ -15,14 +15,14 @@ tags: [auto-index]
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[机器学习/Recommendation_Systems/Recommendation_Systems|Recommendation Systems]] | Recommendation system knowledge: recall, ranking, re-ranking and multi-objective optimization | ML engineers / recommendation system developers |
-| [[机器学习/Recommendation_Systems/Recommendation_Systems_for_dummy|Recommendation Systems for dummy]] | Recommendation systems beginner guide: from matrix factorization to two-tower models | beginners / ML learners |
+| [[02_机器学习/10_Recommendation_Systems/Recommendation_Systems|Recommendation Systems]] | Recommendation system knowledge: recall, ranking, re-ranking and multi-objective optimization | ML engineers / recommendation system developers |
+| [[02_机器学习/10_Recommendation_Systems/Recommendation_Systems_for_dummy|Recommendation Systems for dummy]] | Recommendation systems beginner guide: from matrix factorization to two-tower models | beginners / ML learners |
 
 ## Related
 
-- [[机器学习/Ensemble_Learning/index|Ensemble Learning]]
-- [[行业应用/Retail_Ecommerce_index|Retail & E-commerce]]
-- [[大模型/Sequence_Models/index|Sequence Models]]
+- [[02_机器学习/04_Ensemble_Learning/index|Ensemble Learning]]
+- [[18_行业应用/Retail_Ecommerce_index|Retail & E-commerce]]
+- [[05_大模型/02_Sequence_Models/index|Sequence Models]]
 
 ## 进阶知识拓展
 
@@ -60,9 +60,9 @@ tags: [auto-index]
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

@@ -15,13 +15,13 @@ tags: [auto-index]
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[行业应用/AI_Energy_Climate_2026|AI Energy Climate 2026]] | Energy climate AI landscape: smart grid, carbon tracking and extreme weather prediction | energy sector engineers / climate AI researchers |
+| [[18_行业应用/AI_Energy_Climate_2026|AI Energy Climate 2026]] | Energy climate AI landscape: smart grid, carbon tracking and extreme weather prediction | energy sector engineers / climate AI researchers |
 
 ## Related
 
-- [[行业应用/Agriculture_index|Agriculture]]
-- [[行业应用/Manufacturing_index|Manufacturing]]
-- [[机器学习/Time_Series/index|Time Series]]
+- [[18_行业应用/Agriculture_index|Agriculture]]
+- [[18_行业应用/Manufacturing_index|Manufacturing]]
+- [[02_机器学习/09_Time_Series/index|Time Series]]
 
 ## 进阶知识拓展
 
@@ -59,9 +59,9 @@ tags: [auto-index]
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

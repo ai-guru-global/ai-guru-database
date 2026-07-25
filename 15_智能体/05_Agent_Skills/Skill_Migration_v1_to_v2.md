@@ -118,11 +118,11 @@ my-skill/
 
 ## Related
 
-- [[智能体/Agent_Skills/README|Agent Skills]]
-- [[学习/References/index|References Index]]
-- [[智能体/Agent_Skills/Skills-in-nutshell|Agent Skills 书写速览]]
-- [[智能体/Agent_Skills/Skill_Versioning_Guide|Skill 版本管理与团队治理]]
-- [[智能体/Agent_Skills/Agent_Skills_Deep_Dive|Agent Skills 深度解析]]
+- [[15_智能体/05_Agent_Skills/README|Agent Skills]]
+- [[90_学习/References/index|References Index]]
+- [[15_智能体/05_Agent_Skills/Skills-in-nutshell|Agent Skills 书写速览]]
+- [[15_智能体/05_Agent_Skills/Skill_Versioning_Guide|Skill 版本管理与团队治理]]
+- [[15_智能体/05_Agent_Skills/Agent_Skills_Deep_Dive|Agent Skills 深度解析]]
 
 ## 附录：核心概念速查
 

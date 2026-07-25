@@ -431,7 +431,7 @@ MoE = 虽然有很多"专家"(参数),但每次只用一部分,省计算量!
 
 - **前置知识**: [Transformer 革命 (小白版)](../Transformer_Revolution/Transformer_Revolution_for_dummy.md)
 - **实战技能**: [提示词工程 (小白版)](../Prompt_Engineering/Prompt_Engineering_for_dummy.md)
-- **进阶主题**: [RAG 系统 (小白版)](RAG系统/RAG_Fundamentals/RAG_Systems_for_dummy.md)
+- **进阶主题**: [RAG 系统 (小白版)](14_RAG系统/01_RAG_Fundamentals/RAG_Systems_for_dummy.md)
 
 ---
 
@@ -464,8 +464,8 @@ MoE = 虽然有很多"专家"(参数),但每次只用一部分,省计算量!
 
 ## 相关链接
 
-- [[大模型/LLM_Architectures/LLM_Architectures|大语言模型架构 (完整版)]] — 本篇小白版对应的详细版
-- [[大模型/LLM_Architectures/index|LLM 架构索引]] — LLM 架构主题导览
-- [[大模型/Transformer_Revolution/Transformer_Revolution_for_dummy|Transformer 革命 (小白版)]] — LLM 的底层架构
+- [[05_大模型/05_LLM_Architectures/LLM_Architectures|大语言模型架构 (完整版)]] — 本篇小白版对应的详细版
+- [[05_大模型/05_LLM_Architectures/index|LLM 架构索引]] — LLM 架构主题导览
+- [[05_大模型/04_Transformer_Revolution/Transformer_Revolution_for_dummy|Transformer 革命 (小白版)]] — LLM 的底层架构
 - [[概念/LLM/llm-architectures|LLM 架构]] — LLM 架构概念卡片
-- [[大模型/LLM_Architectures/LLM-Basics-in-nutshell|LLM 基础速成]] — LLM 基础知识速览
+- [[05_大模型/05_LLM_Architectures/LLM-Basics-in-nutshell|LLM 基础速成]] — LLM 基础知识速览

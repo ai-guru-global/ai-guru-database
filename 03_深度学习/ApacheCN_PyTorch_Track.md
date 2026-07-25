@@ -25,15 +25,15 @@ sources: []
 
 ## 前置知识
 
-- [[数学基础/Linear_Algebra/Linear_Algebra|线性代数]]
-- [[数学基础/Probability_Statistics/Probability_Statistics|概率统计]]
-- [[深度学习/Neural_Network_Core/Neural_Network_Core|神经网络核心]]
+- [[01_数学基础/02_Linear_Algebra/Linear_Algebra|线性代数]]
+- [[01_数学基础/03_Probability_Statistics/Probability_Statistics|概率统计]]
+- [[03_深度学习/02_Neural_Network_Core/Neural_Network_Core|神经网络核心]]
 
 ## Related
 
-- [[深度学习/README|深度学习]]
-- [[深度学习/DL_Frameworks/README|深度学习框架]]
-- [[学习/Courses/apachecn/ailearning_guide|ApacheCN AILearning]]
+- [[03_深度学习/README|深度学习]]
+- [[03_深度学习/08_DL_Frameworks/README|深度学习框架]]
+- [[90_学习/Courses/apachecn/ailearning_guide|ApacheCN AILearning]]
 
 ---
 *Last updated: 2026-07-02*
@@ -74,9 +74,9 @@ sources: []
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

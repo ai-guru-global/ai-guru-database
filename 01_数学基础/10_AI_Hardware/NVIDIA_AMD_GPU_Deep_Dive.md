@@ -1084,4 +1084,4 @@ AMD 已公布 CDNA 架构路线图, 但 MI400/MI500 系列尚未正式发布:
 
 **结论**: MI350X 在性价比上全面领先, 但 B200 生态更成熟
 
-> **关联**: -> [[数学基础/AI_Hardware/Chinese_AI_Chips_Deep_Dive|国产 AI 芯片]] | [[模型训练/README|模型训练]] | [[部署推理/README|部署推理]] | [[学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[01_数学基础/10_AI_Hardware/Chinese_AI_Chips_Deep_Dive|国产 AI 芯片]] | [[07_模型训练/README|模型训练]] | [[10_部署推理/README|部署推理]] | [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]]

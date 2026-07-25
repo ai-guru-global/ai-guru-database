@@ -13,7 +13,7 @@ relationships:
   - target: "[[概念/Vision/sam]]"
     type: related_to
 sources:
-  - 计算机视觉/CV_Fundamentals/ViT_Deep_Dive.md
+  - 04_计算机视觉/01_CV_Fundamentals/ViT_Deep_Dive.md
 summary: Vision Transformer 将图像切分为固定大小的 Patch 序列，经线性嵌入和位置编码后送入标准 Transformer Encoder，用极少的归纳偏置在大规模数据上超越 CNN，开启了视觉领域的 Transformer 时代。
 provenance:
   extracted: 0.85
@@ -169,7 +169,7 @@ ViT 的注意力图可以通过 Attention Rollout 技术可视化：逐层累积
 
 ## 来源
 
-- 计算机视觉/CV_Fundamentals/ViT_Deep_Dive.md
+- 04_计算机视觉/01_CV_Fundamentals/ViT_Deep_Dive.md
 - Dosovitskiy et al., "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale", ICLR 2021
 
 ## Related

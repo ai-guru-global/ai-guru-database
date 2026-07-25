@@ -2,7 +2,7 @@
 title: JVM AI 部署与推理
 category: 10-deployment-inference
 tags: ["deployment", "inference", "serving", "vllm", "model-deployment"]
-summary: "> 📚 **Spring AI 基础**: 如果你还不熟悉 Spring AI 的核心概念，请先阅读 [Spring AI 深度解析](数学基础/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md)。"
+summary: "> 📚 **Spring AI 基础**: 如果你还不熟悉 Spring AI 的核心概念，请先阅读 [Spring AI 深度解析](01_数学基础/11_Java_Ecosystem_AI/Spring_AI_Deep_Dive.md)。"
 created: 2026-05-31
 updated: 2026-05-31
 tier: supporting
@@ -19,11 +19,11 @@ sources: []
 <!-- op-safety-banner v1 -->
 # JVM AI 部署与推理
 
-> 📚 **Spring AI 基础**: 如果你还不熟悉 Spring AI 的核心概念，请先阅读 [Spring AI 深度解析](数学基础/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md)。
+> 📚 **Spring AI 基础**: 如果你还不熟悉 Spring AI 的核心概念，请先阅读 [Spring AI 深度解析](01_数学基础/11_Java_Ecosystem_AI/Spring_AI_Deep_Dive.md)。
 >
 > **一句话理解**: JVM 平台的 AI 推理部署 —— 从 Spring Boot 容器化到 GraalVM Native Image，从本地模型推理到 Kubernetes 弹性伸缩，覆盖 Java AI 应用的完整部署生命周期。
 
-> **相关文档**: [部署与推理概述](部署推理/Deployment_Fundamentals/Deployment_Inference.md) | [Spring AI 架构设计](架构基建/Architecture_Overview/Spring_AI_Architecture) | [高可用设计](架构基建/Architecture_Overview/High_Availability_2026.md) | [Java 生态 AI 概览](数学基础/Java_Ecosystem_AI/Java_Ecosystem_AI_Overview.md)
+> **相关文档**: [部署与推理概述](10_部署推理/01_Deployment_Fundamentals/Deployment_Inference.md) | [Spring AI 架构设计](12_架构基建/02_Architecture_Overview/Spring_AI_Architecture) | [高可用设计](12_架构基建/02_Architecture_Overview/High_Availability_2026.md) | [Java 生态 AI 概览](01_数学基础/11_Java_Ecosystem_AI/Java_Ecosystem_AI_Overview.md)
 
 ---
 
@@ -1235,9 +1235,9 @@ spec:
 
 ## Related
 
-- [[部署推理/Deployment_Inference]] — 模型部署与推理加速 (Deployment & Inference) (共享: deployment, inference, model-deployment, serving, vllm)
-- [[部署推理/Deployment_Inference_2026]] — 部署推理 2026 趋势 (共享: deployment, inference, model-deployment, serving, vllm)
-- [[部署推理/Deployment_Inference_for_dummy]] — 模型部署与推理加速 - 小白版 (共享: deployment, inference, model-deployment, serving, vllm)
-- [[部署推理/Inference-in-nutshell]] — 模型推理速成指南 (共享: deployment, inference, serving, vllm)
-- [[部署推理/Inference_Engines/LiteRT_Deep_Dive.md|LiteRT_Deep_Dive]]
-- [[部署推理/Inference_Engines/Ollama_Deep_Dive.md|Ollama_Deep_Dive]]
+- [[10_部署推理/Deployment_Inference]] — 模型部署与推理加速 (Deployment & Inference) (共享: deployment, inference, model-deployment, serving, vllm)
+- [[10_部署推理/Deployment_Inference_2026]] — 部署推理 2026 趋势 (共享: deployment, inference, model-deployment, serving, vllm)
+- [[10_部署推理/Deployment_Inference_for_dummy]] — 模型部署与推理加速 - 小白版 (共享: deployment, inference, model-deployment, serving, vllm)
+- [[10_部署推理/Inference-in-nutshell]] — 模型推理速成指南 (共享: deployment, inference, serving, vllm)
+- [[10_部署推理/02_Inference_Engines/LiteRT_Deep_Dive.md|LiteRT_Deep_Dive]]
+- [[10_部署推理/02_Inference_Engines/Ollama_Deep_Dive.md|Ollama_Deep_Dive]]

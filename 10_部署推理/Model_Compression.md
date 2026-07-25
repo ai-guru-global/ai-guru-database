@@ -237,9 +237,9 @@ COMPRESSION_PIPELINE_2026 = {
 
 ## 7. 交叉引用
 
-- [[部署推理/Quantization/|量化]]
-- [[部署推理/Edge_Deployment/|边缘部署]]
-- [[深度学习/Knowledge_Distillation/|知识蒸馏]]
-- [[模型训练/Compression/|训练压缩]]
-- [[部署推理/Inference_Engines/|推理引擎]]
-- [[部署推理/Serving_Architecture/|服务架构]]
+- [[10_部署推理/05_Quantization/|量化]]
+- [[10_部署推理/Edge_Deployment/|边缘部署]]
+- [[03_深度学习/Knowledge_Distillation/|知识蒸馏]]
+- [[07_模型训练/05_Compression/|训练压缩]]
+- [[10_部署推理/02_Inference_Engines/|推理引擎]]
+- [[10_部署推理/Serving_Architecture/|服务架构]]

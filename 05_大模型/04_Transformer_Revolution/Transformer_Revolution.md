@@ -433,8 +433,8 @@ Transformer 的计算复杂度为 $O(n^2 d)$,内存复杂度为 $O(n^2)$,在长�
 ## 7. 与其他主题的关联 (Connections)
 
 ### 前置知识
-- [深度学习基础](深度学习/Neural_Network_Core/Neural_Network_Core.md): 反向传播、优化器
-- [注意力机制](大模型/Transformer_Revolution/Transformer_Revolution.md): Seq2Seq Attention
+- [深度学习基础](03_深度学习/02_Neural_Network_Core/Neural_Network_Core.md): 反向传播、优化器
+- [注意力机制](05_大模型/04_Transformer_Revolution/Transformer_Revolution.md): Seq2Seq Attention
 
 ### 后续推荐
 - [大语言模型架构](../LLM_Architectures/LLM_Architectures.md): GPT/BERT/T5 详解
@@ -443,8 +443,8 @@ Transformer 的计算复杂度为 $O(n^2 d)$,内存复杂度为 $O(n^2)$,在长�
 - [提示工程](../Prompt_Engineering/Prompt_Engineering.md): Few-shot, CoT
 
 ### 跨领域应用
-- [Vision Transformer](计算机视觉/CV_Fundamentals/ViT_Deep_Dive.md): Transformer 在 CV 的应用
-- [多模态模型](计算机视觉/Multimodal_Vision/Multimodal_Vision.md): CLIP, Flamingo
+- [Vision Transformer](04_计算机视觉/01_CV_Fundamentals/ViT_Deep_Dive.md): Transformer 在 CV 的应用
+- [多模态模型](04_计算机视觉/08_Multimodal_Vision/Multimodal_Vision.md): CLIP, Flamingo
 
 ---
 
@@ -538,9 +538,9 @@ Transformer 的计算复杂度为 $O(n^2 d)$,内存复杂度为 $O(n^2)$,在长�
 
 ## 相关链接
 
-- [[大模型/Transformer_Revolution/Transformer_Revolution_for_dummy|Transformer 革命 (小白版)]] — 本篇的零基础版本
-- [[大模型/Transformer_Revolution/index|Transformer 革命索引]] — Transformer 主题导览
-- [[大模型/Transformer_Revolution/Self_Attention_Mechanism|自注意力机制]] — Transformer 核心机制深入
-- [[大模型/LLM_Architectures/LLM_Architectures|大语言模型架构]] — 基于 Transformer 的 LLM 架构
-- [[大模型/Transformer/Transformer_Deep_Dive|Transformer 深度解析]] — Transformer 架构深度剖析
+- [[05_大模型/04_Transformer_Revolution/Transformer_Revolution_for_dummy|Transformer 革命 (小白版)]] — 本篇的零基础版本
+- [[05_大模型/04_Transformer_Revolution/index|Transformer 革命索引]] — Transformer 主题导览
+- [[05_大模型/04_Transformer_Revolution/Self_Attention_Mechanism|自注意力机制]] — Transformer 核心机制深入
+- [[05_大模型/05_LLM_Architectures/LLM_Architectures|大语言模型架构]] — 基于 Transformer 的 LLM 架构
+- [[05_大模型/03_Transformer/Transformer_Deep_Dive|Transformer 深度解析]] — Transformer 架构深度剖析
 - [[概念/LLM/transformer-architecture|Transformer 架构]] — Transformer 架构概念卡片

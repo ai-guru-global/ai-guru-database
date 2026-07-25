@@ -382,8 +382,8 @@ print(f"在线准确率: {accuracy.get():.2%}")
 
 ## 相关文档
 
-- [[机器学习/Supervised_Learning/Supervised_Learning|监督学习]]
-- [[强化学习/RL_Foundations/RL_Foundations|强化学习基础]] — Bandit 与 RL
-- [[机器学习/Time_Series/|时间序列]] — 流式时序
-- [[机器学习/Anomaly_Detection/|异常检测]] — 流式异常
-- [[行业应用/Finance/|金融 AI]] — 实时风控
+- [[02_机器学习/02_Supervised_Learning/Supervised_Learning|监督学习]]
+- [[06_强化学习/01_RL_Foundations/RL_Foundations|强化学习基础]] — Bandit 与 RL
+- [[02_机器学习/09_Time_Series/|时间序列]] — 流式时序
+- [[02_机器学习/08_Anomaly_Detection/|异常检测]] — 流式异常
+- [[18_行业应用/04_Finance/|金融 AI]] — 实时风控

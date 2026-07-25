@@ -114,9 +114,9 @@ graph LR
 
 ## Related
 
-- [[伦理安全/Safety_Evaluation_Framework]] — 具体的安全评估指标
-- [[模型运维/CI_CD/ML_CI_CD]] — 如何将合规集成到流水线
-- [[大模型/Reasoning_Models/Neuro_Symbolic_and_Formal_Verification_2026]] — 形式化验证的技术底层
+- [[17_伦理安全/Safety_Evaluation_Framework]] — 具体的安全评估指标
+- [[11_模型运维/06_CI_CD/ML_CI_CD]] — 如何将合规集成到流水线
+- [[05_大模型/09_Reasoning_Models/Neuro_Symbolic_and_Formal_Verification_2026]] — 形式化验证的技术底层
 - [[概念/ai-ethics]] — 伦理基础理论
 
 ---
@@ -232,9 +232,9 @@ graph LR
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

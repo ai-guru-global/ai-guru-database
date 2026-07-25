@@ -24,8 +24,8 @@ tags: [auto-index]
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[大模型/Speech_Audio_AI/Speech_Audio_AI_Deep_Dive|Speech Audio AI Deep Dive]] | Speech AI deep dive: Whisper, VALL-E and voice cloning technology | speech AI engineers / audio researchers |
-| [[大模型/Speech_Audio_AI/README|README]] | Module README guide and reading order | all readers |
+| [[05_大模型/11_Speech_Audio_AI/Speech_Audio_AI_Deep_Dive|Speech Audio AI Deep Dive]] | Speech AI deep dive: Whisper, VALL-E and voice cloning technology | speech AI engineers / audio researchers |
+| [[05_大模型/11_Speech_Audio_AI/README|README]] | Module README guide and reading order | all readers |
 
 ## 核心概念速查
 
@@ -58,8 +58,8 @@ tags: [auto-index]
 
 ## Related
 
-- [[大模型/index|大模型首页]]
-- [[大模型/Sequence_Models/index|Sequence Models]]
+- [[05_大模型/index|大模型首页]]
+- [[05_大模型/02_Sequence_Models/index|Sequence Models]]
 - [[概念/speech-recognition|语音识别]]
 
 ## 统计

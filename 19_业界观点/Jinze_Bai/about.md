@@ -23,7 +23,7 @@ sources: []
 
 - **Qwen 模型家族**: 从 Qwen-7B (2023.8) 到 Qwen3.7-Max (2026)，覆盖 0.6B 到 235B+ 全尺寸。Qwen 是全球唯一提供如此完整尺寸梯度的开源模型家族——从可在手机端运行的 0.6B 到旗舰 235B MoE，让任何规模的应用都能找到合适的模型。
 - **119 种语言覆盖**: Qwen3 覆盖全球 119 种语言和方言，是覆盖语言最多的大模型。白金泽强调"AI 不应该只服务英语使用者，119 种语言是我们的承诺"。这使得 Qwen 在东南亚、中东、非洲等非英语市场具有独特优势。
-- **Hybrid Thinking 架构**: Qwen3 引入"思考/直答双模式"——用户可动态切换深度推理（thinking mode）和快速回答（non-thinking mode）。这一设计尊重了不同场景下的计算预算需求，与 [[业界观点/Jinze_Bai/about]] 强调的"用户应能控制计算预算"理念一致。
+- **Hybrid Thinking 架构**: Qwen3 引入"思考/直答双模式"——用户可动态切换深度推理（thinking mode）和快速回答（non-thinking mode）。这一设计尊重了不同场景下的计算预算需求，与 [[19_业界观点/Jinze_Bai/about]] 强调的"用户应能控制计算预算"理念一致。
 - **MoE 架构实践**: Qwen3-235B-A22B（128 专家，Top-8 路由，22B 激活参数），在保持 235B 总参数的同时仅激活 22B，大幅降低推理成本。
 - **全面开源 (Apache 2.0)**: 100+ 模型在 HuggingFace 和 ModelScope 开源，涵盖语言、视觉 (Qwen-VL)、音频 (Qwen-Audio)、编程 (Qwen-Coder)、数学 (Qwen-Math) 全模态专业模型。Qwen 是中国大公司中开源力度最大的团队。
 - **Qwen-Agent 生态**: 发布 Qwen-Agent 框架，支持 Function Calling、工具调用、多轮对话和自主 Agent 开发，构建了围绕 Qwen 的开发者生态。
@@ -67,7 +67,7 @@ sources: []
 
 > *"Apache 2.0 不是慈善，是让全球开发者帮我们验证和改进。"*
 
-白金泽坚信开源是最有效的生态构建策略。通过 Apache 2.0 许可（而非限制性许可），Qwen 让全球开发者无后顾之忧地使用、微调和部署，形成了强大的社区飞轮。Qwen 在 HuggingFace 上的下载量长期位居中国模型第一。这一策略与 [[业界观点/Wenfeng_Liang/about]] (DeepSeek) 的开源理念一致，与 [[业界观点/Jie_Tang/about]] (智谱) 早期的部分限制性许可形成对比。
+白金泽坚信开源是最有效的生态构建策略。通过 Apache 2.0 许可（而非限制性许可），Qwen 让全球开发者无后顾之忧地使用、微调和部署，形成了强大的社区飞轮。Qwen 在 HuggingFace 上的下载量长期位居中国模型第一。这一策略与 [[19_业界观点/Wenfeng_Liang/about]] (DeepSeek) 的开源理念一致，与 [[19_业界观点/Jie_Tang/about]] (智谱) 早期的部分限制性许可形成对比。
 
 ### 多语言是使命
 
@@ -91,7 +91,7 @@ Hybrid Thinking 模式让用户通过简单的标签（`<think>` / `<no-think>`)
 
 > *"阿里云支持 Qwen 开源，因为我们相信 AI 基础设施的价值大于模型本身的价值。"* 
 
-白金泽认为 Qwen 的开源不是成本，而是对阿里云 AI 基础设施（PAI、ModelScope、DashScope）的战略投资。模型免费，但算力、平台和服务收费——这是"云+AI"的商业模式。参见 [[业界观点/Satya_Nadella/about]] 微软 Azure OpenAI 的类似逻辑。
+白金泽认为 Qwen 的开源不是成本，而是对阿里云 AI 基础设施（PAI、ModelScope、DashScope）的战略投资。模型免费，但算力、平台和服务收费——这是"云+AI"的商业模式。参见 [[19_业界观点/Satya_Nadella/about]] 微软 Azure OpenAI 的类似逻辑。
 
 ---
 
@@ -141,15 +141,15 @@ Hybrid Thinking 模式让用户通过简单的标签（`<think>` / `<no-think>`)
 
 ## 交叉引用 (Cross-References)
 
-- [Qwen 技术全景](大模型/Chinese_LLM_Ecosystem/Qwen_Deep_Dive.md)
-- [中国大模型生态全景](大模型/Chinese_LLM_Ecosystem/README.md)
-- [MoE 案例研究](大模型/LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md)
-- [ModelScope Qwen 模型索引](../../大模型/Chinese_LLM_Ecosystem/ModelScope_Model_Index_Qwen.md)
-- [[业界观点/Wenfeng_Liang/about]] — DeepSeek 与 Qwen 在 MoE 和开源策略上的竞合
-- [[业界观点/Jie_Tang/about]] — GLM 与 Qwen 在中国开源生态中的并行
-- [[业界观点/Zhilin_Yang/about]] — Kimi 与 Qwen 在长上下文和多语言方面的竞争
-- [[业界观点/Junjie_Yan/about]] — MiniMax 与 Qwen 的全栈产品线对比
-- [[业界观点/Satya_Nadella/about]] — 阿里云 Qwen 与微软 Azure OpenAI 的"云+开源模型"策略对比
+- [Qwen 技术全景](05_大模型/15_Chinese_LLM_Ecosystem/Qwen_Deep_Dive.md)
+- [中国大模型生态全景](05_大模型/15_Chinese_LLM_Ecosystem/README.md)
+- [MoE 案例研究](05_大模型/05_LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md)
+- [ModelScope Qwen 模型索引](../../05_大模型/15_Chinese_LLM_Ecosystem/ModelScope_Model_Index_Qwen.md)
+- [[19_业界观点/Wenfeng_Liang/about]] — DeepSeek 与 Qwen 在 MoE 和开源策略上的竞合
+- [[19_业界观点/Jie_Tang/about]] — GLM 与 Qwen 在中国开源生态中的并行
+- [[19_业界观点/Zhilin_Yang/about]] — Kimi 与 Qwen 在长上下文和多语言方面的竞争
+- [[19_业界观点/Junjie_Yan/about]] — MiniMax 与 Qwen 的全栈产品线对比
+- [[19_业界观点/Satya_Nadella/about]] — 阿里云 Qwen 与微软 Azure OpenAI 的"云+开源模型"策略对比
 
 ---
 
@@ -165,7 +165,7 @@ Hybrid Thinking 模式让用户通过简单的标签（`<think>` / `<no-think>`)
 
 *Last updated: 2026-07-11*
 
-- [[业界观点/README|AI 名人演讲与观点 (Talks)]]
+- [[19_业界观点/README|AI 名人演讲与观点 (Talks)]]
 
 ## 附录：人物影响力评估
 

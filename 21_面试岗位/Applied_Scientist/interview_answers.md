@@ -316,11 +316,11 @@ R:
 
 ## Related
 
-- [[面试岗位/Applied_Scientist/question_bank|Applied Scientist 题库]]
-- [[面试岗位/Applied_Scientist/company_level_question_bank|Applied Scientist 按公司/级别区分的题库]]
-- [[面试岗位/Applied_Scientist/index|Applied Scientist 首页]]
-- [[机器学习/index|机器学习]]
-- [[模型评估/index|模型评估]]
-- [[测试/AB_Testing/index|A/B 测试]]
-- [[面试岗位/Research_Scientist/index|Research Scientist]]
-- [[面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/Applied_Scientist/question_bank|Applied Scientist 题库]]
+- [[21_面试岗位/Applied_Scientist/company_level_question_bank|Applied Scientist 按公司/级别区分的题库]]
+- [[21_面试岗位/Applied_Scientist/index|Applied Scientist 首页]]
+- [[02_机器学习/index|机器学习]]
+- [[08_模型评估/index|模型评估]]
+- [[09_测试/AB_Testing/index|A/B 测试]]
+- [[21_面试岗位/Research_Scientist/index|Research Scientist]]
+- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]

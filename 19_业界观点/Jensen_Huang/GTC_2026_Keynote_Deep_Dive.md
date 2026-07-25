@@ -353,17 +353,17 @@ Blackwell Ultra 延续了 Blackwell 的双 die 设计，但在以下方面进行
 
 ## 交叉引用 (Cross-References)
 
-- [[业界观点/Jensen_Huang/about]] -- Jensen Huang 简介与核心贡献
-- [[业界观点/Jensen_Huang/sayings]] -- Jensen Huang 金句集
-- [[业界观点/Sam_Altman/about]] -- OpenAI CEO（共享: AI基础设施需求、Scaling Laws）
-- [[业界观点/Demis_Hassabis/Hassabis_2026_Update]] -- DeepMind（共享: AI for Science、GPU算力）
-- [[业界观点/Mark_Zuckerberg/Zuckerberg_AI_Pivot_2026]] -- Meta AI（共享: AI基础设施投资、开源模型）
-- [[业界观点/Dario_Amodei/Amodei_2026_Update]] -- Anthropic（共享: AI安全、算力需求）
-- [[业界观点/Wang_Huiwen/about]] -- 王慧文（共享: AI产业格局、中国AI生态）
-- [[架构基建/README]] -- AI计算架构与数据中心
-- [[模型训练/README]] -- 大规模分布式训练
-- [[部署推理/README]] -- 推理优化与部署
-- [[入门/AI_Future_Trends]] -- AI未来趋势
+- [[19_业界观点/Jensen_Huang/about]] -- Jensen Huang 简介与核心贡献
+- [[19_业界观点/Jensen_Huang/sayings]] -- Jensen Huang 金句集
+- [[19_业界观点/Sam_Altman/about]] -- OpenAI CEO（共享: AI基础设施需求、Scaling Laws）
+- [[19_业界观点/Demis_Hassabis/Hassabis_2026_Update]] -- DeepMind（共享: AI for Science、GPU算力）
+- [[19_业界观点/Mark_Zuckerberg/Zuckerberg_AI_Pivot_2026]] -- Meta AI（共享: AI基础设施投资、开源模型）
+- [[19_业界观点/Dario_Amodei/Amodei_2026_Update]] -- Anthropic（共享: AI安全、算力需求）
+- [[19_业界观点/Wang_Huiwen/about]] -- 王慧文（共享: AI产业格局、中国AI生态）
+- [[12_架构基建/README]] -- AI计算架构与数据中心
+- [[07_模型训练/README]] -- 大规模分布式训练
+- [[10_部署推理/README]] -- 推理优化与部署
+- [[00_入门/AI_Future_Trends]] -- AI未来趋势
 
 ---
 
@@ -445,11 +445,11 @@ GTC 2026 的发布在中国AI产业引发复杂反响：
 - 维持中国研发团队和生态合作
 - 在合规前提下最大化中国市场参与
 
-### 对 [[业界观点/Wang_Huiwen/about|王慧文]] 等中国AI创业者的启示
+### 对 [[19_业界观点/Wang_Huiwen/about|王慧文]] 等中国AI创业者的启示
 
 - 算力受限倒逼架构创新和应用创新
 - "用更少的算力做更好的产品"成为中国AI创业的核心命题
-- 开源模型（如 [[业界观点/Mark_Zuckerberg/Zuckerberg_AI_Pivot_2026|Llama 4]]）成为中国AI生态的重要基础
+- 开源模型（如 [[19_业界观点/Mark_Zuckerberg/Zuckerberg_AI_Pivot_2026|Llama 4]]）成为中国AI生态的重要基础
 - 中国AI的差异化路径：应用驱动 > 模型驱动
 
 ---
@@ -495,11 +495,11 @@ GTC 2026 的发布在中国AI产业引发复杂反响：
 
 ## Related
 
-- [[业界观点/Jensen_Huang/about]] -- Jensen Huang 简介 (本页扩展)
-- [[业界观点/Jensen_Huang/sayings]] -- Jensen Huang 金句集
-- [[业界观点/Sam_Altman/about]] -- Sam Altman 简介 (共享: AI infrastructure, scaling)
-- [[业界观点/Demis_Hassabis/about]] -- Demis Hassabis 简介 (共享: AI for Science)
-- [[业界观点/Mark_Zuckerberg/about]] -- Mark Zuckerberg 简介 (共享: AI infrastructure investment)
-- [[业界观点/Dario_Amodei/about]] -- Dario Amodei 简介 (共享: AI compute demand)
-- [[业界观点/Wang_Huiwen/about]] -- 王慧文简介 (共享: AI产业格局)
-- [[业界观点/Andrej_Karpathy/about]] -- Andrej Karpathy 简介 (共享: AI技术趋势)
+- [[19_业界观点/Jensen_Huang/about]] -- Jensen Huang 简介 (本页扩展)
+- [[19_业界观点/Jensen_Huang/sayings]] -- Jensen Huang 金句集
+- [[19_业界观点/Sam_Altman/about]] -- Sam Altman 简介 (共享: AI infrastructure, scaling)
+- [[19_业界观点/Demis_Hassabis/about]] -- Demis Hassabis 简介 (共享: AI for Science)
+- [[19_业界观点/Mark_Zuckerberg/about]] -- Mark Zuckerberg 简介 (共享: AI infrastructure investment)
+- [[19_业界观点/Dario_Amodei/about]] -- Dario Amodei 简介 (共享: AI compute demand)
+- [[19_业界观点/Wang_Huiwen/about]] -- 王慧文简介 (共享: AI产业格局)
+- [[19_业界观点/Andrej_Karpathy/about]] -- Andrej Karpathy 简介 (共享: AI技术趋势)

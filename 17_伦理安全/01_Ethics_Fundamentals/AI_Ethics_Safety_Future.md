@@ -97,11 +97,11 @@ Cuéllar、Dean、Patterson 等提出的 18 个里程碑（arXiv:2412.02730）�
 - [[AI_Ethics_And_Future_For_Beginners]] — 现有入门版
 - [[LLM_Security_Complete_Guide]] — LLM 安全系统指南
 - [[Constitutional_AI_Deep_Dive]] — 宪法 AI 深入
-- [[伦理安全/Value_Alignment/Value_Alignment]] — 价值对齐
+- [[17_伦理安全/02_Value_Alignment/Value_Alignment]] — 价值对齐
 
 ## Related
 
-- [[伦理安全/README|08 AI 伦理、安全与对齐 (Ethics, Safety & Alignment)]]
+- [[17_伦理安全/README|08 AI 伦理、安全与对齐 (Ethics, Safety & Alignment)]]
 
 ## 核心知识体系
 
@@ -212,9 +212,9 @@ Cuéllar、Dean、Patterson 等提出的 18 个里程碑（arXiv:2412.02730）�
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

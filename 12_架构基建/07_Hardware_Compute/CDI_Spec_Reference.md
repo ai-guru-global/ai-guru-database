@@ -18,7 +18,7 @@ aliases:
 ---
 # CDI 规范 (Container Device Interface Spec) — 官方源引用
 
-> 本页是 CDI 规范**官方源头**的引用索引;深度技术解析见本地 [[架构基建/Hardware_Compute/CDI_Deep_Dive|CDI 深度解析]]。
+> 本页是 CDI 规范**官方源头**的引用索引;深度技术解析见本地 [[12_架构基建/07_Hardware_Compute/CDI_Deep_Dive|CDI 深度解析]]。
 
 ## 官方源头
 
@@ -71,14 +71,14 @@ vendor.com/class=unique_name
 
 ## 与本地文档的关联
 
-- 深度解析 → [[架构基建/Hardware_Compute/CDI_Deep_Dive|CDI 深度解析]](含 spec 结构、工作原理、训练/推理定位、常见问题)
-- 入门 → [[架构基建/CDI_for_dummy|CDI 小白版]]
+- 深度解析 → [[12_架构基建/07_Hardware_Compute/CDI_Deep_Dive|CDI 深度解析]](含 spec 结构、工作原理、训练/推理定位、常见问题)
+- 入门 → [[12_架构基建/CDI_for_dummy|CDI 小白版]]
 - 概念卡 → [[概念/cdi|CDI 概念卡片]]
 - 配套生态 → [[概念/dra|DRA]]、[[概念/gpu-operator|GPU Operator]]、[[概念/oci-runtime|OCI Runtime Spec]]
 
 ## Related
 
-- [[架构基建/Hardware_Compute/CDI_Deep_Dive]]
+- [[12_架构基建/07_Hardware_Compute/CDI_Deep_Dive]]
 - [[概念/cdi]]
 - [[概念/dra]]
 - [[概念/gpu-operator]]
@@ -88,7 +88,7 @@ vendor.com/class=unique_name
 
 | 组件层 | 功能 | 关键技术 | 选型考量 |
 |--------|------|----------|----------|
-| 计算层 | 模型训练/推理 | GPU/TPU/NPU集群 | 算力需求+成本 |
+| 计算层 | 07_模型训练/推理 | GPU/TPU/NPU集群 | 算力需求+成本 |
 | 存储层 | 数据/模型/检查点 | 分布式存储/对象存储 | 容量+IOPS+成本 |
 | 网络层 | 节点间通信 | RDMA/RoCE/InfiniBand | 带宽+延迟 |
 | 调度层 | 资源编排 | K8s/Slurm/Ray | 弹性+效率 |

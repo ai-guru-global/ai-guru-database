@@ -24,9 +24,9 @@ tags: [auto-index]
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[大模型/Sequence_Models/Sequence_Models|Sequence Models]] | Sequence models knowledge system: RNN, LSTM, GRU to Transformer | NLP engineers / ML researchers |
-| [[大模型/Sequence_Models/Sequence_Models_for_dummy|Sequence Models for dummy]] | Sequence models beginner guide: from word embeddings to attention | beginners / NLP learners |
-| [[大模型/Sequence_Models/Text_Generation_Decoding_Strategies|Text Generation Decoding Strategies]] | Text generation decoding strategies: greedy, beam search, top-k and top-p sampling | LLM engineers / NLP practitioners |
+| [[05_大模型/02_Sequence_Models/Sequence_Models|Sequence Models]] | Sequence models knowledge system: RNN, LSTM, GRU to Transformer | NLP engineers / ML researchers |
+| [[05_大模型/02_Sequence_Models/Sequence_Models_for_dummy|Sequence Models for dummy]] | Sequence models beginner guide: from word embeddings to attention | beginners / NLP learners |
+| [[05_大模型/02_Sequence_Models/Text_Generation_Decoding_Strategies|Text Generation Decoding Strategies]] | Text generation decoding strategies: greedy, beam search, top-k and top-p sampling | LLM engineers / NLP practitioners |
 
 ## 核心概念速查
 
@@ -69,9 +69,9 @@ tags: [auto-index]
 
 ## Related
 
-- [[大模型/index|大模型首页]]
-- [[大模型/Transformer_Revolution/index|Transformer Revolution]]
-- [[模型训练/Alignment/index|Alignment]]
+- [[05_大模型/index|大模型首页]]
+- [[05_大模型/04_Transformer_Revolution/index|Transformer Revolution]]
+- [[07_模型训练/06_Alignment/index|Alignment]]
 - [[概念/sequence-models|序列模型概念]]
 
 ## 统计

@@ -10,7 +10,7 @@ relationships:
   - target: "概念/model-serving"
     type: feeds_into
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
 summary: "模型仓库是管理、版本控制和分发 AI 模型的中心系统。AI Stack 内置模型仓库，预置系统模型并支持自定义模型上传与一键部署。"
 provenance:
   extracted: 0.50
@@ -118,7 +118,7 @@ AI Stack 内置模型仓库，提供预置模型和自定义模型管理：
 - [[概念/model-serving]] — 模型服务（从仓库到服务）
 - [[概念/huggingface]] — Hugging Face（最大的开源模型社区）
 - [[概念/modelscope]] — ModelScope 魔搭（中文模型生态）
-- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack（内置模型仓库）
+- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack（内置模型仓库）
 
 ---
 

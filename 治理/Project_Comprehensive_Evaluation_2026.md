@@ -53,7 +53,7 @@ sources: []
 #### 整改方案
 
 **1. 新增 Agent 状态管理模块**
-- 文件: `强化学习/AI_Agents/Agent_State_Management.md`
+- 文件: `06_强化学习/AI_Agents/Agent_State_Management.md`
 - 内容:
  - 状态持久化机制 (Checkpoint/Resume)
  - 长任务断点续传
@@ -61,7 +61,7 @@ sources: []
  - 状态回滚策略
 
 **2. 新增 Agent 调试与可观测性**
-- 文件: `强化学习/AI_Agents/Agent_Observability_2026.md`
+- 文件: `06_强化学习/AI_Agents/Agent_Observability_2026.md`
 - 内容:
  - 执行链路追踪 (OpenTelemetry)
  - 思考过程可视化
@@ -69,7 +69,7 @@ sources: []
  - 性能剖析工具
 
 **3. 补充协议实现示例**
-- 文件: `强化学习/AI_Agents/MCP_Implementation_Guide.md`
+- 文件: `06_强化学习/AI_Agents/MCP_Implementation_Guide.md`
 - 内容:
  - Python/TypeScript SDK 实战
  - Server 开发最佳实践
@@ -77,7 +77,7 @@ sources: []
  - 错误处理与重试策略
 
 **4. 新增 Agent 性能基准测试**
-- 文件: `智能体/Agent_Evaluation/Performance_Benchmarks/`
+- 文件: `15_智能体/07_Agent_Evaluation/Performance_Benchmarks/`
 - 内容:
  - 延迟基准 (首 token/总耗时)
  - 吞吐量测试 (QPS/TPS)
@@ -110,7 +110,7 @@ sources: []
 #### 整改方案
 
 **1. 扩展长上下文技术专题**
-- 文件: `大模型/LLM_Architectures/Long_Context_Models_2026.md`
+- 文件: `05_大模型/05_LLM_Architectures/Long_Context_Models_2026.md`
 - 扩展内容:
   - Ring Attention / Striped Attention
   - 上下文压缩技术 (H2O, StreamingLLM)
@@ -118,7 +118,7 @@ sources: []
   - 长文本评估基准 (LongBench, L-Eval)
 
 **2. 新增测试时计算专题**
-- 文件: `大模型/Reasoning_Models/Test_Time_Compute_2026.md`
+- 文件: `05_大模型/09_Reasoning_Models/Test_Time_Compute_2026.md`
 - 内容:
   - Chain-of-Thought 优化
   - Self-Consistency / Majority Voting
@@ -126,7 +126,7 @@ sources: []
   - 计算-性能权衡曲线
 
 **3. 新增多模态 LLM 专题**
-- 文件: `大模型/Multimodal_Models/Multimodal_LLMs_2026.md`
+- 文件: `05_大模型/10_Multimodal_Models/Multimodal_LLMs_2026.md`
 - 内容:
   - Vision Encoder 集成 (CLIP/SigLIP)
   - 投影层设计 (Q-Former/MLP)
@@ -134,7 +134,7 @@ sources: []
   - 视觉指令微调
 
 **4. 补充模型合并技术**
-- 文件: `大模型/Fine_tuning_Techniques/Model_Merging_2026.md`
+- 文件: `05_大模型/07_Fine_tuning_Techniques/Model_Merging_2026.md`
 - 内容:
   - SLERP / TIES / DARE
   - MergeKit 实战
@@ -167,7 +167,7 @@ sources: []
 #### 整改方案
 
 **1. 新增系统架构全景图**
-- 文件: `架构基建/AI_System_Architecture_2026.md`
+- 文件: `12_架构基建/AI_System_Architecture_2026.md`
 - 内容:
   ```
   ┌─────────────────────────────────────────────────────┐
@@ -194,7 +194,7 @@ sources: []
   ```
 
 **2. 新增容量规划指南**
-- 文件: `架构基建/Capacity_Planning_2026.md`
+- 文件: `12_架构基建/Capacity_Planning_2026.md`
 - 内容:
  - QPS/并发模型计算
  - GPU 显存需求估算
@@ -202,7 +202,7 @@ sources: []
  - 成本预测模型
 
 **3. 新增高可用架构**
-- 文件: `架构基建/High_Availability_2026.md`
+- 文件: `12_架构基建/High_Availability_2026.md`
 - 内容:
  - 多活架构设计
  - 故障转移机制
@@ -210,7 +210,7 @@ sources: []
  - 灾难恢复演练
 
 **4. 新增多租户架构**
-- 文件: `架构基建/Multi_Tenant_Architecture.md`
+- 文件: `12_架构基建/Multi_Tenant_Architecture.md`
 - 内容:
  - 租户隔离策略 (Namespace/集群)
  - 资源配额管理

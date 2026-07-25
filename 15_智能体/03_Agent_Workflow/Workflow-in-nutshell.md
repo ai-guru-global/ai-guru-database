@@ -55,7 +55,7 @@ flowchart LR
 ```mermaid
 flowchart TB
     subgraph AI工作流
-        Trigger[触发器<br/>定时/事件/API/队列] --> Steps[步骤<br/>任务/智能体/模型/技能]
+        Trigger[触发器<br/>定时/事件/API/队列] --> Steps[步骤<br/>任务/15_智能体/模型/技能]
         Steps --> Router[路由器<br/>条件判断/分支]
         Router --> Output[输出<br/>存储/通知/API]
         
@@ -1019,12 +1019,12 @@ flowchart TB
 
 - [智能体](../Agent_Foundations/Agent-in-nutshell.md) - 智能体工作流
 - [技能](../Agent_Skills/Skills-in-nutshell.md) - 构建工作流组件
-- [MLOps](../../模型运维/) - ML 专用流水线
-- [模型训练](模型训练/Training_Fundamentals/Model-Training-in-nutshell.md) - 训练工作流
+- [MLOps](../../11_模型运维/) - ML 专用流水线
+- [模型训练](07_模型训练/01_Training_Fundamentals/Model-Training-in-nutshell.md) - 训练工作流
 
 ## Related
 
-- [[智能体/Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
-- [[智能体/Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
-- [[智能体/Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
-- [[智能体/Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)
+- [[15_智能体/07_Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
+- [[15_智能体/07_Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[15_智能体/07_Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[15_智能体/07_Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)

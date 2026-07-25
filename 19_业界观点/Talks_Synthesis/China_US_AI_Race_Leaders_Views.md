@@ -28,7 +28,7 @@ sources:
 中美 AI 竞赛在 2026 年呈现三个新特征，与 2022-2023 年的叙事截然不同：
 
 1. **中国已进入第一梯队**：DeepSeek、Qwen、GLM、Kimi 在多项基准上逼近甚至局部超越美国闭源前沿模型。"中国只会复制"的旧叙事被打破。
-2. **芯片管制倒逼架构创新**：美国对华 H100/H200/B200 出口管制，反而逼迫中国在 MoE（混合专家）、MLA（多头潜在注意力）、GRPO、投机解码、FP8 训练等"效率优先"方向取得突破。[[业界观点/Wenfeng_Liang/about|梁文锋]] 的 DeepSeek-V3 用不到 $6M 训练 671B 参数模型，就是这种"倒逼创新"的标志性案例。
+2. **芯片管制倒逼架构创新**：美国对华 H100/H200/B200 出口管制，反而逼迫中国在 MoE（混合专家）、MLA（多头潜在注意力）、GRPO、投机解码、FP8 训练等"效率优先"方向取得突破。[[19_业界观点/Wenfeng_Liang/about|梁文锋]] 的 DeepSeek-V3 用不到 $6M 训练 671B 参数模型，就是这种"倒逼创新"的标志性案例。
 3. **开源成为中国的战略武器**：DeepSeek、Qwen、GLM 全面开源，与 Meta LLaMA 形成全球开源双引擎，使美国闭源阵营（OpenAI/Anthropic/Google）的技术护城河被持续侵蚀。
 
 这场竞赛已不再是简单的"谁领先几个季度"，而是两种创新模式的较量——**算力堆叠（美国）vs 算法效率（中国）**。
@@ -41,18 +41,18 @@ sources:
 
 | 领袖 | 国别/机构 | 核心判断 | 政策主张 |
 |------|-----------|----------|----------|
-| [[业界观点/Jensen_Huang/about|黄仁勋]] | 美 / NVIDIA | "中国 AI 进展迅速，全球需合作而非脱钩" | 反对芯片管制 |
-| [[业界观点/Bill_Gates/about|Bill Gates]] | 美 / 微软 | "技术封锁适得其反，会加速中国自研" | 反对封锁 |
-| [[业界观点/Sam_Altman/about|Sam Altman]] | 美 / OpenAI | "美国需保持领先，但应允许受控出口" | 中间路线 |
-| [[业界观点/Sundar_Pichai/about|Sundar Pichai]] | 美 / Google | 务实，强调全球部署与本地化 | 不公开表态 |
+| [[19_业界观点/Jensen_Huang/about|黄仁勋]] | 美 / NVIDIA | "中国 AI 进展迅速，全球需合作而非脱钩" | 反对芯片管制 |
+| [[19_业界观点/Bill_Gates/about|Bill Gates]] | 美 / 微软 | "技术封锁适得其反，会加速中国自研" | 反对封锁 |
+| [[19_业界观点/Sam_Altman/about|Sam Altman]] | 美 / OpenAI | "美国需保持领先，但应允许受控出口" | 中间路线 |
+| [[19_业界观点/Sundar_Pichai/about|Sundar Pichai]] | 美 / Google | 务实，强调全球部署与本地化 | 不公开表态 |
 | 美国政界 | 美 / 政府 | "AI 芯片出口管制是必要安全措施" | 强化管制 |
-| [[业界观点/Wenfeng_Liang/about|梁文锋]] | 中 / DeepSeek | "效率比规模更重要，开源推动全行业" | 用开源换影响力 |
-| [[业界观点/Jinze_Bai/about|白金泽]] | 中 / 阿里 Qwen | "开源 + 多语言服务全球" | 生态扩张 |
-| [[业界观点/Jie_Tang/about|唐杰]] | 中 / 智谱 GLM | "产学研结合，学术底蕴是中国优势" | 走学术路线 |
-| [[业界观点/Junjie_Yan/about|闫俊杰]] | 中 / MiniMax | "全模态 + C 端产品是差异化" | 产品导向 |
-| [[业界观点/Zhilin_Yang/about|杨植麟]] | 中 / 月之暗面 | "长上下文是 AGI 关键" | 技术路线专注 |
-| [[业界观点/Fei_Fei_Li/about|李飞飞]] | 中美桥梁 | "AI 应以人为本，跨国合作" | 推动全球合作 |
-| [[业界观点/Andrew_Ng/about|Andrew Ng]] | 中美桥梁 | "中国 AI 落地能力强，曾任职百度" | 反对脱钩 |
+| [[19_业界观点/Wenfeng_Liang/about|梁文锋]] | 中 / DeepSeek | "效率比规模更重要，开源推动全行业" | 用开源换影响力 |
+| [[19_业界观点/Jinze_Bai/about|白金泽]] | 中 / 阿里 Qwen | "开源 + 多语言服务全球" | 生态扩张 |
+| [[19_业界观点/Jie_Tang/about|唐杰]] | 中 / 智谱 GLM | "产学研结合，学术底蕴是中国优势" | 走学术路线 |
+| [[19_业界观点/Junjie_Yan/about|闫俊杰]] | 中 / MiniMax | "全模态 + C 端产品是差异化" | 产品导向 |
+| [[19_业界观点/Zhilin_Yang/about|杨植麟]] | 中 / 月之暗面 | "长上下文是 AGI 关键" | 技术路线专注 |
+| [[19_业界观点/Fei_Fei_Li/about|李飞飞]] | 中美桥梁 | "AI 应以人为本，跨国合作" | 推动全球合作 |
+| [[19_业界观点/Andrew_Ng/about|Andrew Ng]] | 中美桥梁 | "中国 AI 落地能力强，曾任职百度" | 反对脱钩 |
 
 ---
 
@@ -60,7 +60,7 @@ sources:
 
 ### 黄仁勋：反对脱钩，主张合作
 
-[[业界观点/Jensen_Huang/about|黄仁勋]] 是最直言不讳反对芯片管制的美国科技领袖。他的逻辑：
+[[19_业界观点/Jensen_Huang/about|黄仁勋]] 是最直言不讳反对芯片管制的美国科技领袖。他的逻辑：
 
 - **市场逻辑**：NVIDIA 一大块营收来自中国，管制直接损害其商业利益。
 - **技术逻辑**：他认为封锁只会逼迫中国自研替代品（如华为昇腾），长远看反而培育了竞争对手——"技术封锁适得其反，会加速中国自研"。
@@ -71,15 +71,15 @@ sources:
 
 ### Bill Gates：封锁适得其反
 
-[[业界观点/Bill_Gates/about|Bill Gates]] 与黄仁勋立场接近。他在 GatesNotes 多篇文章中暗示，对中国的技术封锁不仅难以奏效，还会促使中国加速自主研发，最终削弱美国的技术领导地位。他更关注 AI 在全球健康、教育中的应用，认为应让 AI 惠及发展中国家而非武器化。Gates 的视角更长远——他经历过微软反垄断和科技冷战，深知"封锁催生竞争者"的历史规律。
+[[19_业界观点/Bill_Gates/about|Bill Gates]] 与黄仁勋立场接近。他在 GatesNotes 多篇文章中暗示，对中国的技术封锁不仅难以奏效，还会促使中国加速自主研发，最终削弱美国的技术领导地位。他更关注 AI 在全球健康、教育中的应用，认为应让 AI 惠及发展中国家而非武器化。Gates 的视角更长远——他经历过微软反垄断和科技冷战，深知"封锁催生竞争者"的历史规律。
 
 ### Sam Altman：中间路线
 
-[[业界观点/Sam_Altman/about|Altman]] 的立场更微妙——他主张美国保持前沿领先，但同时支持"受控出口"和与盟友合作。他在 2023 参议院听证中既强调国家安全，也警告过度管制会削弱竞争力。OpenAI 的策略是不直接进入中国市场，但通过 API 和合作伙伴间接影响，保持"技术领先但不挑衅"的姿态。
+[[19_业界观点/Sam_Altman/about|Altman]] 的立场更微妙——他主张美国保持前沿领先，但同时支持"受控出口"和与盟友合作。他在 2023 参议院听证中既强调国家安全，也警告过度管制会削弱竞争力。OpenAI 的策略是不直接进入中国市场，但通过 API 和合作伙伴间接影响，保持"技术领先但不挑衅"的姿态。
 
 ### Sundar Pichai：务实低调
 
-[[业界观点/Sundar_Pichai/about|Sundar Pichai]] (Google/Alphabet CEO) 在中美议题上保持低调，强调"AI 是人类最深远的技术"。Google 的策略是在中国境外（如印度、东南亚）扩张 Gemini 部署，同时维持开源研究（虽 Gemini 闭源，但 TensorFlow、JAX 等工具开源）。Pichai 避免公开政治表态，专注全球部署与本地化。
+[[19_业界观点/Sundar_Pichai/about|Sundar Pichai]] (Google/Alphabet CEO) 在中美议题上保持低调，强调"AI 是人类最深远的技术"。Google 的策略是在中国境外（如印度、东南亚）扩张 Gemini 部署，同时维持开源研究（虽 Gemini 闭源，但 TensorFlow、JAX 等工具开源）。Pichai 避免公开政治表态，专注全球部署与本地化。
 
 ### 美国政界：管制派
 
@@ -99,7 +99,7 @@ sources:
 
 ### 黄仁勋：反对脱钩，主张合作
 
-[[业界观点/Jensen_Huang/about|黄仁勋]] 是最直言不讳反对芯片管制的美国科技领袖。他的逻辑：
+[[19_业界观点/Jensen_Huang/about|黄仁勋]] 是最直言不讳反对芯片管制的美国科技领袖。他的逻辑：
 
 - **市场逻辑**：NVIDIA 一大块营收来自中国，管制直接损害其商业利益。
 - **技术逻辑**：他认为封锁只会逼迫中国自研替代品（如华为昇腾），长远看反而培育了竞争对手——"技术封锁适得其反，会加速中国自研"。
@@ -109,11 +109,11 @@ sources:
 
 ### Bill Gates：封锁适得其反
 
-[[业界观点/Bill_Gates/about|Bill Gates]] 与黄仁勋立场接近。他在 GatesNotes 多篇文章中暗示，对中国的技术封锁不仅难以奏效，还会促使中国加速自主研发，最终削弱美国的技术领导地位。他更关注 AI 在全球健康、教育中的应用，认为应让 AI 惠及发展中国家而非武器化。
+[[19_业界观点/Bill_Gates/about|Bill Gates]] 与黄仁勋立场接近。他在 GatesNotes 多篇文章中暗示，对中国的技术封锁不仅难以奏效，还会促使中国加速自主研发，最终削弱美国的技术领导地位。他更关注 AI 在全球健康、教育中的应用，认为应让 AI 惠及发展中国家而非武器化。
 
 ### Sam Altman：中间路线
 
-[[业界观点/Sam_Altman/about|Altman]] 的立场更微妙——他主张美国保持前沿领先，但同时支持"受控出口"和与盟友合作。他在 2023 参议院听证中既强调国家安全，也警告过度管制会削弱竞争力。
+[[19_业界观点/Sam_Altman/about|Altman]] 的立场更微妙——他主张美国保持前沿领先，但同时支持"受控出口"和与盟友合作。他在 2023 参议院听证中既强调国家安全，也警告过度管制会削弱竞争力。
 
 ### 美国政界：管制派
 
@@ -125,29 +125,29 @@ sources:
 
 ### 梁文锋（DeepSeek）：效率+开源的中国旗帜
 
-[[业界观点/Wenfeng_Liang/about|梁文锋]] 是 2026 年全球最受关注的中国 AI 人物。他从量化交易巨头（幻方）转身 AI 创业，用不到 $6M 训练 671B 参数的 DeepSeek-V3，全面开源（MLA、MoE、GRPO、FP8 训练细节公开），证明"效率比规模更重要"。DeepSeek-R1 的开源直接把"测试时计算"能力开源化，被《华尔街日报》《Nature》等媒体视为"动摇美国 AI 优势叙事"的事件。
+[[19_业界观点/Wenfeng_Liang/about|梁文锋]] 是 2026 年全球最受关注的中国 AI 人物。他从量化交易巨头（幻方）转身 AI 创业，用不到 $6M 训练 671B 参数的 DeepSeek-V3，全面开源（MLA、MoE、GRPO、FP8 训练细节公开），证明"效率比规模更重要"。DeepSeek-R1 的开源直接把"测试时计算"能力开源化，被《华尔街日报》《Nature》等媒体视为"动摇美国 AI 优势叙事"的事件。
 
 他的路线代表了一种典型的中国式创新：**在算力受限下，用算法和架构创新绕过算力墙**。
 
 ### 白金泽（Qwen）：开源生态扩张
 
-[[业界观点/Jinze_Bai/about|白金泽]] 领导阿里云 Qwen 团队，从 Qwen-7B 到 Qwen3-Max（1M 上下文 + 256K 思考预算），以 Apache 2.0 许可 + 119 种语言覆盖，打造全球最活跃的开源大模型生态之一。Qwen 的战略是"用开源为阿里云生态引流"，把中国科技巨头的云能力推向全球。
+[[19_业界观点/Jinze_Bai/about|白金泽]] 领导阿里云 Qwen 团队，从 Qwen-7B 到 Qwen3-Max（1M 上下文 + 256K 思考预算），以 Apache 2.0 许可 + 119 种语言覆盖，打造全球最活跃的开源大模型生态之一。Qwen 的战略是"用开源为阿里云生态引流"，把中国科技巨头的云能力推向全球。
 
 ### 唐杰（智谱 GLM）：产学研典范
 
-[[业界观点/Jie_Tang/about|唐杰]] 是清华大学教授、智谱 AI 联合创始人，从 GLM-130B 到 GLM-5.2 (744B MoE)，打造了中国最具学术底蕴的大模型生态。他的路线强调"从论文到产品"的产学研结合，是中国 AI 六小龙中最具学术基因的公司。
+[[19_业界观点/Jie_Tang/about|唐杰]] 是清华大学教授、智谱 AI 联合创始人，从 GLM-130B 到 GLM-5.2 (744B MoE)，打造了中国最具学术底蕴的大模型生态。他的路线强调"从论文到产品"的产学研结合，是中国 AI 六小龙中最具学术基因的公司。
 
 ### 闫俊杰（MiniMax）：全模态 + C 端
 
-[[业界观点/Junjie_Yan/about|闫俊杰]]（前商汤 VP）创立的 MiniMax 用 Lightning Attention 实现百万 Token 上下文，打造覆盖文本/视频/语音/音乐的全模态产品线（Talkie、海螺 AI）。这是中国六小龙中唯一以 C 端产品起家并以全模态为核心战略的公司。
+[[19_业界观点/Junjie_Yan/about|闫俊杰]]（前商汤 VP）创立的 MiniMax 用 Lightning Attention 实现百万 Token 上下文，打造覆盖文本/视频/语音/音乐的全模态产品线（Talkie、海螺 AI）。这是中国六小龙中唯一以 C 端产品起家并以全模态为核心战略的公司。
 
 ### 杨植麟（月之暗面）：长上下文信仰
 
-[[业界观点/Zhilin_Yang/about|杨植麟]] 是 Transformer-XL、XLNet 共同发明人，29 岁创办月之暗面，坚信"长上下文是 AGI 关键"，打造了 Kimi 这款改变中国 AI 格局的产品。他是中国六小龙中最年轻的创始人，也是学术界最具影响力的青年 AI 研究者之一。
+[[19_业界观点/Zhilin_Yang/about|杨植麟]] 是 Transformer-XL、XLNet 共同发明人，29 岁创办月之暗面，坚信"长上下文是 AGI 关键"，打造了 Kimi 这款改变中国 AI 格局的产品。他是中国六小龙中最年轻的创始人，也是学术界最具影响力的青年 AI 研究者之一。
 
 ### 李飞飞 / Andrew Ng：跨国桥梁
 
-[[业界观点/Fei_Fei_Li/about|李飞飞]]（斯坦福 HAI 联合主任、ImageNet 发起人）和 [[业界观点/Andrew_Ng/about|Andrew Ng]]（前百度首席科学家 2014-2017）是中美 AI 交流的关键桥梁。李飞飞倡导"以人为本 AI"，主张跨国合作；Andrew Ng 在百度期间证明了中国公司可以与硅谷竞争，他反对脱钩，认为 AI 应是全球公共产品。
+[[19_业界观点/Fei_Fei_Li/about|李飞飞]]（斯坦福 HAI 联合主任、ImageNet 发起人）和 [[19_业界观点/Andrew_Ng/about|Andrew Ng]]（前百度首席科学家 2014-2017）是中美 AI 交流的关键桥梁。李飞飞倡导"以人为本 AI"，主张跨国合作；Andrew Ng 在百度期间证明了中国公司可以与硅谷竞争，他反对脱钩，认为 AI 应是全球公共产品。
 
 ---
 
@@ -198,15 +198,15 @@ flowchart TB
 
 ### 议题 1：开源 vs 闭源与地缘的交织
 
-中国的开源战略（DeepSeek/Qwen）与 [[业界观点/Mark_Zuckerberg/about|Zuckerberg]] 的 LLaMA 开源形成了奇妙的合力——两者都通过开源挑战美国闭源阵营。完整分析见 [[业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026|开源 vs 闭源之争]]。
+中国的开源战略（DeepSeek/Qwen）与 [[19_业界观点/Mark_Zuckerberg/about|Zuckerberg]] 的 LLaMA 开源形成了奇妙的合力——两者都通过开源挑战美国闭源阵营。完整分析见 [[19_业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026|开源 vs 闭源之争]]。
 
 ### 议题 2：AI 安全与地缘的交织
 
-[[业界观点/Geoffrey_Hinton/about|Hinton]] 呼吁的国际 AI 监管机构（类 IAEA）若成立，必然涉及中美协调——而地缘紧张使这种协调极难。安全议题与地缘议题深度纠缠，见 [[业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix|AI 安全立场矩阵]]。
+[[19_业界观点/Geoffrey_Hinton/about|Hinton]] 呼吁的国际 AI 监管机构（类 IAEA）若成立，必然涉及中美协调——而地缘紧张使这种协调极难。安全议题与地缘议题深度纠缠，见 [[19_业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix|AI 安全立场矩阵]]。
 
 ### 议题 3：AGI 时间表与竞赛节奏
 
-竞赛节奏取决于双方对 AGI 何时到来的判断——若很近，军备竞赛会加速；若远，可能缓和。见 [[业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix|AGI 时间表预测矩阵]]。
+竞赛节奏取决于双方对 AGI 何时到来的判断——若很近，军备竞赛会加速；若远，可能缓和。见 [[19_业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix|AGI 时间表预测矩阵]]。
 
 ---
 
@@ -216,11 +216,11 @@ flowchart TB
 
 | 公司 | 领袖 | 技术路线 | 差异化 | 开放程度 |
 |------|------|----------|--------|----------|
-| DeepSeek | [[业界观点/Wenfeng_Liang/about|梁文锋]] | MoE + MLA + GRPO 效率 | 极致效率 + 全开源 | 完全开源 |
-| 阿里 Qwen | [[业界观点/Jinze_Bai/about|白金泽]] | 全尺寸 + 多语言 | 119 语言生态 | Apache 2.0 |
-| 智谱 GLM | [[业界观点/Jie_Tang/about|唐杰]] | GLM 架构 + 产学研 | 学术底蕴 | 部分开源 |
-| MiniMax | [[业界观点/Junjie_Yan/about|闫俊杰]] | Lightning Attention + 全模态 | C 端产品 (Talkie/海螺) | 部分开源 |
-| 月之暗面 | [[业界观点/Zhilin_Yang/about|杨植麟]] | 长上下文 (Kimi) | 超长上下文信仰 | 部分闭源 |
+| DeepSeek | [[19_业界观点/Wenfeng_Liang/about|梁文锋]] | MoE + MLA + GRPO 效率 | 极致效率 + 全开源 | 完全开源 |
+| 阿里 Qwen | [[19_业界观点/Jinze_Bai/about|白金泽]] | 全尺寸 + 多语言 | 119 语言生态 | Apache 2.0 |
+| 智谱 GLM | [[19_业界观点/Jie_Tang/about|唐杰]] | GLM 架构 + 产学研 | 学术底蕴 | 部分开源 |
+| MiniMax | [[19_业界观点/Junjie_Yan/about|闫俊杰]] | Lightning Attention + 全模态 | C 端产品 (Talkie/海螺) | 部分开源 |
+| 月之暗面 | [[19_业界观点/Zhilin_Yang/about|杨植麟]] | 长上下文 (Kimi) | 超长上下文信仰 | 部分闭源 |
 | 百川 | 王小川 | 通用 LLM | 搜索基因 | 部分开源 |
 
 六小龙的共同策略是**用开源/效率对抗美国算力优势**，但各自切入点不同——DeepSeek 走效率极致，Qwen 走多语言生态，GLM 走学术路线，MiniMax 走全模态产品，月之暗面走长上下文，百川走搜索融合。
@@ -280,7 +280,7 @@ flowchart TB
 | 顶尖大学 | 斯坦福/MIT/伯克利 | 清华/北大/上海交大 |
 | 顶尖华人学者 | 大量（李飞飞/吴恩达等） | 部分回流 |
 | 人才流向 | 吸引全球（H1B） | 海归潮 + 本土培养 |
-| AI 教育普及 | [[业界观点/Andrew_Ng/about|Ng]]/[[业界观点/Andrej_Karpathy/about|Karpathy]] 等在线课程 | 高校 + 企业内训 |
+| AI 教育普及 | [[19_业界观点/Andrew_Ng/about|Ng]]/[[19_业界观点/Andrej_Karpathy/about|Karpathy]] 等在线课程 | 高校 + 企业内训 |
 | 科研产出 | 论文质量领先 | 论文数量领先，质量追赶 |
 | 工程人才储备 | 相对短缺 | 庞大，工程能力强 |
 
@@ -351,16 +351,16 @@ flowchart TB
 
 ## 十八、关联导航
 
-- [[业界观点/Wenfeng_Liang/about|梁文锋 简介]] · [[业界观点/Jinze_Bai/about|白金泽 简介]]
-- [[业界观点/Jie_Tang/about|唐杰 简介]] · [[业界观点/Junjie_Yan/about|闫俊杰 简介]]
-- [[业界观点/Zhilin_Yang/about|杨植麟 简介]] · [[业界观点/Fei_Fei_Li/about|李飞飞 简介]]
-- [[业界观点/Andrew_Ng/about|Andrew Ng 简介]] · [[业界观点/Jensen_Huang/about|黄仁勋 简介]]
-- [[业界观点/Bill_Gates/about|Bill Gates 简介]] · [[业界观点/Sam_Altman/about|Altman 简介]]
-- [[业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026|开源 vs 闭源之争]]
-- [[业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix|AI 安全立场矩阵]]
-- [[业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix|AGI 时间表预测矩阵]]
-- [[业界观点/Talks_Synthesis/Hinton_vs_LeCun_World_Model_Debate|Hinton vs LeCun 之争]]
-- [[业界观点/index|业界观点首页]]
+- [[19_业界观点/Wenfeng_Liang/about|梁文锋 简介]] · [[19_业界观点/Jinze_Bai/about|白金泽 简介]]
+- [[19_业界观点/Jie_Tang/about|唐杰 简介]] · [[19_业界观点/Junjie_Yan/about|闫俊杰 简介]]
+- [[19_业界观点/Zhilin_Yang/about|杨植麟 简介]] · [[19_业界观点/Fei_Fei_Li/about|李飞飞 简介]]
+- [[19_业界观点/Andrew_Ng/about|Andrew Ng 简介]] · [[19_业界观点/Jensen_Huang/about|黄仁勋 简介]]
+- [[19_业界观点/Bill_Gates/about|Bill Gates 简介]] · [[19_业界观点/Sam_Altman/about|Altman 简介]]
+- [[19_业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026|开源 vs 闭源之争]]
+- [[19_业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix|AI 安全立场矩阵]]
+- [[19_业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix|AGI 时间表预测矩阵]]
+- [[19_业界观点/Talks_Synthesis/Hinton_vs_LeCun_World_Model_Debate|Hinton vs LeCun 之争]]
+- [[19_业界观点/index|业界观点首页]]
 
 ---
 

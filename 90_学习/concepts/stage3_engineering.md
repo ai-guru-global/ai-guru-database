@@ -47,7 +47,7 @@ sources:
 |------|---|
 | 包含核心概念 | 10 个 |
 | 预计学习时间 | 8-12 小时 |
-| 前置依赖 | [[学习/concepts/stage2_core_tech|Stage 2: 核心技术]] |
+| 前置依赖 | [[90_学习/concepts/stage2_core_tech|Stage 2: 核心技术]] |
 | 适合人群 | 准备将 AI 落地的工程师、产品经理 |
 
 ---
@@ -265,14 +265,14 @@ AI 项目上线前的关键检查项：
 
 | 类型 | 资源 | 说明 |
 |------|------|------|
-| 书籍 | [[学习/References/books/ai-engineering-huyen\|AI Engineering]] | AI 工程全景（强烈推荐） |
-| 书籍 | [[学习/References/books/designing-ml-systems-huyen\|Designing ML Systems]] | ML 系统设计 |
-| 书籍 | [[学习/References/books/llm-engineers-handbook\|LLM Engineer's Handbook]] | 工程实现 |
-| 书籍 | [[学习/References/books/llms-in-production\|LLMs in Production]] | 生产运维 |
-| 书籍 | [[学习/References/books/ai-agents-in-action\|AI Agents in Action]] | Agent 实战 |
-| 书籍 | [[学习/References/books/prompt-engineering-for-llms\|Prompt Engineering for LLMs]] | 提示工程 |
-| 课程 | [[学习/References/Courses/rag-techniques-nirdiamant\|RAG Techniques]] | RAG 技术集 |
-| 课程 | [[学习/References/Courses/genai-agents-nirdiamant\|GenAI Agents]] | Agent 技术 |
+| 书籍 | [[90_学习/References/books/ai-engineering-huyen\|AI Engineering]] | AI 工程全景（强烈推荐） |
+| 书籍 | [[90_学习/References/books/designing-ml-systems-huyen\|Designing ML Systems]] | ML 系统设计 |
+| 书籍 | [[90_学习/References/books/llm-engineers-handbook\|LLM Engineer's Handbook]] | 工程实现 |
+| 书籍 | [[90_学习/References/books/llms-in-production\|LLMs in Production]] | 生产运维 |
+| 书籍 | [[90_学习/References/books/ai-agents-in-action\|AI Agents in Action]] | Agent 实战 |
+| 书籍 | [[90_学习/References/books/prompt-engineering-for-llms\|Prompt Engineering for LLMs]] | 提示工程 |
+| 课程 | [[90_学习/References/Courses/rag-techniques-nirdiamant\|RAG Techniques]] | RAG 技术集 |
+| 课程 | [[90_学习/References/Courses/genai-agents-nirdiamant\|GenAI Agents]] | Agent 技术 |
 
 ## 学完本层的标志
 
@@ -288,21 +288,21 @@ AI 项目上线前的关键检查项：
 ## 下一步
 
 完成 Stage 3 后：
-- **想深入前沿方向** → [[学习/concepts/stage4_frontier|Stage 4: 前沿探索]]
-- **专注 LLM 应用开发** → [[学习/pathways/llm-engineer|LLM 工程师路径]]
-- **全面覆盖工程全链路** → [[学习/pathways/ml-practitioner|ML 从业者路径]]
-- **走向职业化** → [[学习/concepts/stage5_professional|Stage 5: 职业化]]
-- **回看全景** → [[学习/concepts/index|概念分阶索引]]
+- **想深入前沿方向** → [[90_学习/concepts/stage4_frontier|Stage 4: 前沿探索]]
+- **专注 LLM 应用开发** → [[90_学习/pathways/llm-engineer|LLM 工程师路径]]
+- **全面覆盖工程全链路** → [[90_学习/pathways/ml-practitioner|ML 从业者路径]]
+- **走向职业化** → [[90_学习/concepts/stage5_professional|Stage 5: 职业化]]
+- **回看全景** → [[90_学习/concepts/index|概念分阶索引]]
 
 ## Related
 
-- [[学习/concepts/index|概念分阶索引]]
-- [[学习/concepts/stage2_core_tech|Stage 2: 核心技术]]
-- [[学习/concepts/stage4_frontier|Stage 4: 前沿]]
-- [[学习/pathways/index|学习路径]]
-- [[智能体/]] — Agent 知识章节
-- [[RAG系统/RAG_Systems]] — RAG 专题
-- [[部署推理/]] — 部署推理章节
-- [[架构基建/]] — 架构基建章节
+- [[90_学习/concepts/index|概念分阶索引]]
+- [[90_学习/concepts/stage2_core_tech|Stage 2: 核心技术]]
+- [[90_学习/concepts/stage4_frontier|Stage 4: 前沿]]
+- [[90_学习/pathways/index|学习路径]]
+- [[15_智能体/]] — Agent 知识章节
+- [[14_RAG系统/RAG_Systems]] — RAG 专题
+- [[10_部署推理/]] — 部署推理章节
+- [[12_架构基建/]] — 架构基建章节
 
-> **关联**: → [[学习/concepts/index|概念分阶]] | [[学习/concepts/stage4_frontier|Stage 4 前沿]] | [[智能体/]] | [[RAG系统/]] | [[部署推理/]] | [[架构基建/]]
+> **关联**: → [[90_学习/concepts/index|概念分阶]] | [[90_学习/concepts/stage4_frontier|Stage 4 前沿]] | [[15_智能体/]] | [[14_RAG系统/]] | [[10_部署推理/]] | [[12_架构基建/]]

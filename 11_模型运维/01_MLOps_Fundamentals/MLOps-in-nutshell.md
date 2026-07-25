@@ -361,10 +361,10 @@ flowchart TB
 |------|------|
 | 完整架构 | [MLOps_Pipeline.md](./MLOps_Pipeline.md) |
 | 入门指南 | [MLOps_Pipeline_for_dummy.md](./MLOps_Pipeline_for_dummy.md) |
-| 部署推理 | [../Deployment_Inference/Inference-in-nutshell.md](部署推理/Deployment_Fundamentals/Inference-in-nutshell.md) |
-| AI Ops | [../AI_Ops/AI_Ops_2026.md](运维/AIOps_Fundamentals/AI_Ops_2026.md) |
-| SRE 实践 | [../AI_Ops/SRE_for_AI_Systems.md](运维/SRE_Reliability/SRE_for_AI_Systems.md) |
-| 成本优化 | [../AI_Cost_Optimization_2026.md](架构基建/Architecture_Overview/AI_Cost_Optimization_2026.md) |
+| 部署推理 | [../Deployment_Inference/Inference-in-nutshell.md](10_部署推理/01_Deployment_Fundamentals/Inference-in-nutshell.md) |
+| AI Ops | [../AI_Ops/AI_Ops_2026.md](13_运维/01_AIOps_Fundamentals/AI_Ops_2026.md) |
+| SRE 实践 | [../AI_Ops/SRE_for_AI_Systems.md](13_运维/02_SRE_Reliability/SRE_for_AI_Systems.md) |
+| 成本优化 | [../AI_Cost_Optimization_2026.md](12_架构基建/02_Architecture_Overview/AI_Cost_Optimization_2026.md) |
 
 ---
 
@@ -372,8 +372,8 @@ flowchart TB
 
 ## Related
 
-- [[模型运维/Orchestration/Data_Pipeline_Orchestration]] — 数据流水线编排 (Data Pipeline Orchestration) (共享: ci-cd, feature-store, mlops, pipeline)
-- [[模型运维/README.md|README]]
-- [[模型运维/README_for_dummy.md|README_for_dummy]]
-- [[模型运维/Experiment_Tracking/Experiment_Tracking_Deep_Dive.md|Experiment_Tracking_Deep_Dive]]
-- [[模型运维/Experiment_Tracking/Feature_Store_Deep_Dive.md|Feature_Store_Deep_Dive]]
+- [[11_模型运维/05_Orchestration/Data_Pipeline_Orchestration]] — 数据流水线编排 (Data Pipeline Orchestration) (共享: ci-cd, feature-store, mlops, pipeline)
+- [[11_模型运维/README.md|README]]
+- [[11_模型运维/README_for_dummy.md|README_for_dummy]]
+- [[11_模型运维/04_Experiment_Tracking/Experiment_Tracking_Deep_Dive.md|Experiment_Tracking_Deep_Dive]]
+- [[11_模型运维/04_Experiment_Tracking/Feature_Store_Deep_Dive.md|Feature_Store_Deep_Dive]]

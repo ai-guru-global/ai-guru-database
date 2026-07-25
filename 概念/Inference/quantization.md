@@ -9,10 +9,10 @@ relationships:
     type: optimizes
   - target: "概念/Inference/tensorrt"
     type: used_by
-  - target: "部署推理/Quantization/Quantization_Techniques_2026"
+  - target: "10_部署推理/05_Quantization/Quantization_Techniques_2026"
     type: deepened_by
 sources:
-  - 部署推理/Inference_Performance/Inference_Terms_for_dummy.md
+  - 10_部署推理/04_Inference_Performance/Inference_Terms_for_dummy.md
   - "https://arxiv.org/abs/2210.17323"  # GPTQ
   - "https://arxiv.org/abs/2306.00978"  # AWQ
 summary: 量化通过降低模型权重和激活的数值精度，减少显存占用和数据搬运量，从而加速推理；常用 FP8/INT8/INT4/GPTQ/AWQ。
@@ -139,7 +139,7 @@ model.save_quantized("./qwen2.5-7b-awq-4bit")
 - [[概念/Inference/model-compression|模型压缩]]
 - [[概念/Inference/kv-cache|KV Cache]]
 - [[概念/Inference/tensorrt|TensorRT]]
-- [[部署推理/Quantization/Quantization_Techniques_2026|Quantization Techniques 2026]]
+- [[10_部署推理/05_Quantization/Quantization_Techniques_2026|Quantization Techniques 2026]]
 - [[概念/Inference/inference-performance|推理性能]]
 
 ## 量化方案对比 (2026)

@@ -77,10 +77,10 @@ sources: []
 
 ## Related
 
-- [[伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming]] — AI 安全与红队 (AI Safety & Red Teaming) (共享: ai-ethics, alignment, red-teaming, safety)
-- [[伦理安全/AI_Supply_Chain_Security/AI_Supply_Chain_Security]] — AI 供应链安全 2026 (共享: ai-ethics, alignment, red-teaming, safety)
-- [[伦理安全/Ethics-in-nutshell]] — AI 伦理与安全速成指南 (共享: ai-ethics, alignment, red-teaming, safety)
-- [[伦理安全/README]] — 08 AI 伦理、安全与对齐 (Ethics, Safety & Alignment) (共享: ai-ethics, alignment, red-teaming, safety)
+- [[17_伦理安全/04_AI_Safety_RedTeaming/AI_Safety_RedTeaming]] — AI 安全与红队 (AI Safety & Red Teaming) (共享: ai-ethics, alignment, red-teaming, safety)
+- [[17_伦理安全/08_AI_Supply_Chain_Security/AI_Supply_Chain_Security]] — AI 供应链安全 2026 (共享: ai-ethics, alignment, red-teaming, safety)
+- [[17_伦理安全/Ethics-in-nutshell]] — AI 伦理与安全速成指南 (共享: ai-ethics, alignment, red-teaming, safety)
+- [[17_伦理安全/README]] — 08 AI 伦理、安全与对齐 (Ethics, Safety & Alignment) (共享: ai-ethics, alignment, red-teaming, safety)
 
 ## 核心知识体系
 
@@ -191,9 +191,9 @@ sources: []
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

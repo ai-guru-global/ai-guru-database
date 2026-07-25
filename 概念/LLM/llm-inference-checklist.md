@@ -45,7 +45,7 @@ LLM 推理服务上线前，需要从**解码效果**、**性能**、**稳定性
 - [ ] 配置 `repetition_penalty` 或 `frequency_penalty` 减少重复
 - [ ] 设置 `max_new_tokens` 上限，防止超长生成
 - [ ] 确认 `eos_token_id` 和停止词（stop sequences）
-- [ ] 是否固定 `seed` 以保证可复现性（测试/基准场景）
+- [ ] 是否固定 `seed` 以保证可复现性（09_测试/基准场景）
 
 ---
 
@@ -199,4 +199,4 @@ LLM 推理服务上线前，需要从**解码效果**、**性能**、**稳定性
 - [[概念/LLM/llm-inference-engine|LLM 推理引擎]]
 - [[概念/LLM/llm-production-deployment|LLM 生产部署]]
 - [[概念/LLM/llm-inference-cost-optimization|推理成本优化]]
-- [[部署推理/Inference_Engines|推理引擎专题]]
+- [[10_部署推理/Inference_Engines|推理引擎专题]]

@@ -15,13 +15,13 @@ AI 学习中心（Learning Center）— 课程笔记、学习路径（learning p
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[学习/README|README]] | Learning module overview and knowledge map | all learners |
-| [[学习/README_for_dummy|README for dummy]] | Beginner guide and quick start for the learning module | newcomers / beginners |
+| [[90_学习/README|README]] | Learning module overview and knowledge map | all learners |
+| [[90_学习/README_for_dummy|README for dummy]] | Beginner guide and quick start for the learning module | newcomers / beginners |
 
 ## Related
 
-- [[学习/Courses/index|课程]]
-- [[学习/index|← 返回首页]]
+- [[90_学习/Courses/index|课程]]
+- [[90_学习/index|← 返回首页]]
 
 ## 核心知识框架
 

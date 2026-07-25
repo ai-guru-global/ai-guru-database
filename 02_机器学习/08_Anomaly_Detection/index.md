@@ -15,15 +15,15 @@ tags: [auto-index]
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[机器学习/Anomaly_Detection/Anomaly_Detection|Anomaly Detection]] | Anomaly detection knowledge system: algorithms, evaluation methods and applications | ML engineers / data scientists |
-| [[机器学习/Anomaly_Detection/Anomaly_Detection_for_dummy|Anomaly Detection for dummy]] | Anomaly detection beginner guide: from concepts to practical implementation | beginners / ML learners |
-| [[机器学习/Anomaly_Detection/anomaly-detection-automl|anomaly-detection-automl]] | Anomaly detection with AutoML: automated anomaly detection pipeline | data scientists / AutoML users |
+| [[02_机器学习/08_Anomaly_Detection/Anomaly_Detection|Anomaly Detection]] | Anomaly detection knowledge system: algorithms, evaluation methods and applications | ML engineers / data scientists |
+| [[02_机器学习/08_Anomaly_Detection/Anomaly_Detection_for_dummy|Anomaly Detection for dummy]] | Anomaly detection beginner guide: from concepts to practical implementation | beginners / ML learners |
+| [[02_机器学习/08_Anomaly_Detection/anomaly-detection-automl|anomaly-detection-automl]] | Anomaly detection with AutoML: automated anomaly detection pipeline | data scientists / AutoML users |
 
 ## Related
 
-- [[机器学习/Unsupervised_Learning/index|Unsupervised Learning]]
-- [[机器学习/Time_Series/index|Time Series]]
-- [[行业应用/Finance/index|Finance]]
+- [[02_机器学习/03_Unsupervised_Learning/index|Unsupervised Learning]]
+- [[02_机器学习/09_Time_Series/index|Time Series]]
+- [[18_行业应用/04_Finance/index|Finance]]
 
 ## 进阶知识拓展
 
@@ -61,9 +61,9 @@ tags: [auto-index]
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

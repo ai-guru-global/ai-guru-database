@@ -777,16 +777,16 @@ print(response["result"])
 
 ### Wiki 内部链接
 
-- [[大模型/Chinese_LLM_Ecosystem/README]] — 中国大模型生态总览
-- [[大模型/Chinese_LLM_Ecosystem/Qwen_Deep_Dive]] — 通义千问深度解析
-- [[大模型/Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive]] — DeepSeek 深度解析
-- [[大模型/Chinese_LLM_Ecosystem/GLM_Zhipu_Deep_Dive]] — 智谱 GLM 深度解析
-- [[大模型/Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]] — 国产模型对比矩阵
-- [[大模型/Prompt_Engineering/GenAI_L04_Prompt_Engineering_Fundamentals]] — 提示工程基础
-- [[大模型/Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs]] — LLM 微调技术
-- [[RAG系统/GenAI_L15_RAG_and_Vector_Databases]] — RAG 与向量数据库
-- [[智能体/GenAI_L17_AI_Agents]] — AI Agent 概述
-- [[学习/courses/microsoft/microsoft_genai_for_beginners]] — 生成式 AI 入门课程
+- [[05_大模型/15_Chinese_LLM_Ecosystem/README]] — 中国大模型生态总览
+- [[05_大模型/15_Chinese_LLM_Ecosystem/Qwen_Deep_Dive]] — 通义千问深度解析
+- [[05_大模型/15_Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive]] — DeepSeek 深度解析
+- [[05_大模型/15_Chinese_LLM_Ecosystem/GLM_Zhipu_Deep_Dive]] — 智谱 GLM 深度解析
+- [[05_大模型/15_Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]] — 国产模型对比矩阵
+- [[05_大模型/08_Prompt_Engineering/GenAI_L04_Prompt_Engineering_Fundamentals]] — 提示工程基础
+- [[05_大模型/07_Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs]] — LLM 微调技术
+- [[14_RAG系统/GenAI_L15_RAG_and_Vector_Databases]] — RAG 与向量数据库
+- [[15_智能体/GenAI_L17_AI_Agents]] — AI Agent 概述
+- [[90_学习/courses/microsoft/microsoft_genai_for_beginners]] — 生成式 AI 入门课程
 
 ---
 

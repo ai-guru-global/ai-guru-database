@@ -8,22 +8,22 @@ sources: []
 
 # Observability
 
-This page indexes the contents of `模型运维/Observability`.
+This page indexes the contents of `11_模型运维/Observability`.
 
 ## Files
 
-- [[模型运维/Observability/AI_Observability_Deep_Dive|AI Observability Deep Dive]]
-- [[模型运维/Observability/AI_Observability_Guide|AI Observability Guide]]
-- [[模型运维/Observability/AI_Observability_Guide_2026|AI Observability Guide 2026]]
-- [[模型运维/Observability/Braintrust_Deep_Dive|Braintrust Deep Dive]]
-- [[模型运维/Observability/Helicone_Deep_Dive|Helicone Deep Dive]]
-- [[模型运维/Observability/LangSmith_Deep_Dive|Langsmith Deep Dive]]
-- [[模型运维/Observability/LLM_Observability|LLM Observability]]
-- [[模型运维/Observability/ML_Observability_SLO|ML Observability SLO]]
-- [[模型运维/Observability/Model_Monitoring_and_Drift_Detection_2026|Model Monitoring And Drift Detection 2026]]
-- [[模型运维/Observability/Phoenix_Deep_Dive|Phoenix Deep Dive]]
-- [[模型运维/Observability/Prometheus_Grafana_Deep_Dive|Prometheus Grafana Deep Dive]]
-- [[模型运维/Observability/PromptLayer_Deep_Dive|Promptlayer Deep Dive]]
+- [[11_模型运维/08_Observability/AI_Observability_Deep_Dive|AI Observability Deep Dive]]
+- [[11_模型运维/08_Observability/AI_Observability_Guide|AI Observability Guide]]
+- [[11_模型运维/08_Observability/AI_Observability_Guide_2026|AI Observability Guide 2026]]
+- [[11_模型运维/08_Observability/Braintrust_Deep_Dive|Braintrust Deep Dive]]
+- [[11_模型运维/08_Observability/Helicone_Deep_Dive|Helicone Deep Dive]]
+- [[11_模型运维/08_Observability/LangSmith_Deep_Dive|Langsmith Deep Dive]]
+- [[11_模型运维/08_Observability/LLM_Observability|LLM Observability]]
+- [[11_模型运维/08_Observability/ML_Observability_SLO|ML Observability SLO]]
+- [[11_模型运维/08_Observability/Model_Monitoring_and_Drift_Detection_2026|Model Monitoring And Drift Detection 2026]]
+- [[11_模型运维/08_Observability/Phoenix_Deep_Dive|Phoenix Deep Dive]]
+- [[11_模型运维/08_Observability/Prometheus_Grafana_Deep_Dive|Prometheus Grafana Deep Dive]]
+- [[11_模型运维/08_Observability/PromptLayer_Deep_Dive|Promptlayer Deep Dive]]
 
 ## MLOps核心流程对比
 
@@ -158,12 +158,12 @@ This page indexes the contents of `模型运维/Observability`.
 
 | 关联主题 | 关系 | 参考路径 |
 |----------|------|----------|
-| 模型训练 | 上游输入 | 模型训练/ |
-| 模型评估 | 质量门禁 | 模型评估/ |
-| 部署推理 | 服务化交付 | 部署推理/ |
-| 架构基建 | 底层支撑 | 架构基建/ |
-| 测试 | 质量保障 | 测试/ |
-| 运维 | 通用运维实践 | 运维/ |
+| 模型训练 | 上游输入 | 07_模型训练/ |
+| 模型评估 | 质量门禁 | 08_模型评估/ |
+| 部署推理 | 服务化交付 | 10_部署推理/ |
+| 架构基建 | 底层支撑 | 12_架构基建/ |
+| 测试 | 质量保障 | 09_测试/ |
+| 运维 | 通用运维实践 | 13_运维/ |
 
 ## 快速自检清单
 

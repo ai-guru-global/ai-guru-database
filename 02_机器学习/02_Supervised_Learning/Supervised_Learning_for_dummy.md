@@ -208,7 +208,7 @@ A: 当然有用！对于表格数据（电商交易数据、银行风控数据�
 ## 想深入了解？
 
 - 专业版: [监督学习完整版](./Supervised_Learning.md)
-- 前置知识: [概率统计小白版](数学基础/Probability_Statistics/Probability_Statistics_for_dummy.md)
+- 前置知识: [概率统计小白版](01_数学基础/03_Probability_Statistics/Probability_Statistics_for_dummy.md)
 - 下一站: [特征工程小白版](../Feature_Engineering/Feature_Engineering_for_dummy.md)
 
 ---
@@ -216,8 +216,8 @@ A: 当然有用！对于表格数据（电商交易数据、银行风控数据�
 
 ## Related
 
-- [[../../数学基础/Probability_Statistics/Probability_Statistics_for_dummy|概率统计]] — 监督学习的数学基础
-- [[../../深度学习/DL_Fundamentals|深度学习基础]] — 从监督学习到深度学习
-- [[../../模型评估/Evaluation_Fundamentals|评估基础]] — 分类/回归评估指标
+- [[../../01_数学基础/03_Probability_Statistics/Probability_Statistics_for_dummy|概率统计]] — 监督学习的数学基础
+- [[../../03_深度学习/DL_Fundamentals|深度学习基础]] — 从监督学习到深度学习
+- [[../../08_模型评估/Evaluation_Fundamentals|评估基础]] — 分类/回归评估指标
 - [[../../概念/Math/feature-engineering|特征工程概念卡]] — 监督学习的特征处理
-- [[../../计算机视觉/Image_Classification_Detection/Image_Classification_Detection_for_dummy|图像分类]] — 监督学习在 CV 中的应用
+- [[../../04_计算机视觉/02_Image_Classification_Detection/Image_Classification_Detection_for_dummy|图像分类]] — 监督学习在 CV 中的应用

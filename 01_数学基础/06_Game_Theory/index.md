@@ -22,15 +22,15 @@ sources: []
 ## 前置知识
 
 - **必修**: [概率统计](../Probability_Statistics/Probability_Statistics.md)（期望计算）
-- **必修**: [微积分与优化](数学基础/Calculus_Optimization.md)（最优响应）
-- **推荐**: [强化学习基础](强化学习/RL_Foundations/RL_Foundations.md)（MDP 与博弈的关系）
+- **必修**: [微积分与优化](01_数学基础/Calculus_Optimization.md)（最优响应）
+- **推荐**: [强化学习基础](06_强化学习/01_RL_Foundations/RL_Foundations.md)（MDP 与博弈的关系）
 
 ## 与其他模块的关联
 
-- [[强化学习/Multi_Agent_RL/|多智能体强化学习]] — 多 Agent 博弈
-- [[智能体/Agent_Foundations/Multi_Agent_Systems_Guide|多智能体系统]] — 协作与竞争
-- [[伦理安全/Value_Alignment/|价值对齐]] — AI 安全中的博弈
-- [[行业应用/Finance/|金融 AI]] — 拍卖与机制设计
+- [[06_强化学习/Multi_Agent_RL/|多智能体强化学习]] — 多 Agent 博弈
+- [[15_智能体/01_Agent_Foundations/Multi_Agent_Systems_Guide|多智能体系统]] — 协作与竞争
+- [[17_伦理安全/02_Value_Alignment/|价值对齐]] — AI 安全中的博弈
+- [[18_行业应用/04_Finance/|金融 AI]] — 拍卖与机制设计
 
 ## 进阶知识拓展
 
@@ -68,9 +68,9 @@ sources: []
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

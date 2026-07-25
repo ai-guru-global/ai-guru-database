@@ -14,16 +14,16 @@ sources: []
 
 | 文件 | 说明 |
 |------|------|
-| [[模型训练/Data/Data_Curation_and_Mixture_2026|数据筛选与配比]] | 预训练数据筛选与混合策略 |
-| [[模型训练/Data/Data_Augmentation|数据增强]] | 训练数据增强方法 |
-| [[模型训练/Data/pretraining-synthetic-data|合成数据]] | 合成数据预训练实践 |
-| [[模型训练/Data/Tokenizer_Design_2026|分词器设计]] | Tokenizer 设计与优化 |
-| [[模型训练/Data/Datasheet_Template|数据表模板]] | 数据集文档模板 |
+| [[07_模型训练/02_Data/Data_Curation_and_Mixture_2026|数据筛选与配比]] | 预训练数据筛选与混合策略 |
+| [[07_模型训练/02_Data/Data_Augmentation|数据增强]] | 训练数据增强方法 |
+| [[07_模型训练/02_Data/pretraining-synthetic-data|合成数据]] | 合成数据预训练实践 |
+| [[07_模型训练/02_Data/Tokenizer_Design_2026|分词器设计]] | Tokenizer 设计与优化 |
+| [[07_模型训练/02_Data/Datasheet_Template|数据表模板]] | 数据集文档模板 |
 
 ## Related
 
-- [[大模型/LLM_Data_Engineering/index|LLM Data Engineering]]
-- [[模型运维/Data_Engineering/index|Data Engineering]]
+- [[05_大模型/06_LLM_Data_Engineering/index|LLM Data Engineering]]
+- [[11_模型运维/02_Data_Engineering/index|Data Engineering]]
 
 ## 进阶知识拓展
 
@@ -61,9 +61,9 @@ sources: []
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

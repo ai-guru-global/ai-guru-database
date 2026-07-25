@@ -242,9 +242,9 @@ def create_publication_figure(data, filename='figure.png'):
 - [[Training_Monitoring_Visualization]]: 训练监控
 - [[Evaluation_Visualization_Guide]]: 评估可视化
 - [[Model_Interpretability_Visualization]]: 可解释性可视化
-- [[../../模型评估/Benchmarks/LLM_Benchmarks_for_dummy|LLM 基准测试]] — 可视化最佳实践的数据源
-- [[../../模型运维/Observability/AI_Observability_Deep_Dive|可观测性深度页]] — 运维可视化最佳实践
-- [[../../模型训练/Monitoring/Training_Job_Diagnosis_Workflow|训练诊断]] — 训练可视化故障排查
+- [[../../08_模型评估/02_Benchmarks/LLM_Benchmarks_for_dummy|LLM 基准测试]] — 可视化最佳实践的数据源
+- [[../../11_模型运维/08_Observability/AI_Observability_Deep_Dive|可观测性深度页]] — 运维可视化最佳实践
+- [[../../07_模型训练/07_Monitoring/Training_Job_Diagnosis_Workflow|训练诊断]] — 训练可视化故障排查
 
 ---
 

@@ -26,7 +26,7 @@ sources: []
 3. **"I just vibe code." / "我就是氛围编程。" (Vibe Coding 概念首创)** 
  - **含义**: 开发者用自然语言描述意图，AI 生成代码，开发者基于直觉和经验审查——核心是从"编写代码"转变为"导演代码"。
  - **来源**: [Karpathy 在 X/Twitter，2025 年 2 月](https://x.com/karpathy/status/1886192184808213008)
- - **延伸阅读**: [Vibe Coding 方法论](编程/Methodology/Vibe_Coding_Methodology.md) — 基于这一概念发展的完整方法论体系
+ - **延伸阅读**: [Vibe Coding 方法论](16_编程/03_Methodology/Vibe_Coding_Methodology.md) — 基于这一概念发展的完整方法论体系
 
 ## 2. LLM 能力与局限 (LLM Capabilities & Limits)
 
@@ -108,11 +108,11 @@ sources: []
 
 ## Related
 
-- [[业界观点/Andrej_Karpathy/about.md|about]]
-- [[业界观点/Andrew_Ng/about.md|about]]
-- [[业界观点/Andrew_Ng/sayings.md|sayings]]
-- [[业界观点/Bill_Gates/about.md|about]]
-- [[业界观点/Bill_Gates/sayings.md|sayings]]
+- [[19_业界观点/Andrej_Karpathy/about.md|about]]
+- [[19_业界观点/Andrew_Ng/about.md|about]]
+- [[19_业界观点/Andrew_Ng/sayings.md|sayings]]
+- [[19_业界观点/Bill_Gates/about.md|about]]
+- [[19_业界观点/Bill_Gates/sayings.md|sayings]]
 
 ## 观点影响力评估
 
@@ -175,7 +175,7 @@ sources: []
 | 安全伦理 | 对齐/监管/风险 | #安全 |
 | 商业洞察 | 市场/竞争/战略 | #商业 |
 | 社会影响 | 就业/教育/公平 | #社会 |
-| 个人成长 | 学习/思维/习惯 | #成长 |
+| 个人成长 | 90_学习/思维/习惯 | #成长 |
 
 ## 附录：引用指南
 

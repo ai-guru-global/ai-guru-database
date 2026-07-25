@@ -292,13 +292,13 @@ best_mask = masks[scores.argmax()]  # 取最高分的掩码
 
 ### 前置知识
 - [图像分类与检测](../Image_Classification_Detection/Image_Classification_Detection.md) — CNN 基础和目标检测概念
-- [神经网络核心](深度学习/Neural_Network_Core/Neural_Network_Core.md) — 卷积操作、反向传播
-- [Transformer 革命](大模型/Transformer_Revolution/Transformer_Revolution.md) — ViT 在分割中的应用（SAM）
+- [神经网络核心](03_深度学习/02_Neural_Network_Core/Neural_Network_Core.md) — 卷积操作、反向传播
+- [Transformer 革命](05_大模型/04_Transformer_Revolution/Transformer_Revolution.md) — ViT 在分割中的应用（SAM）
 
 ### 进阶方向
 - [生成模型](../Generative_Models/Generative_Models.md) — 分割掩码可用于引导图像生成（ControlNet）
 - [多模态视觉](../Multimodal_Vision/Multimodal_Vision.md) — 文本引导的开放词汇分割
-- [模型部署与推理](部署推理/Deployment_Fundamentals/Deployment_Inference.md) — 分割模型的实时部署优化
+- [模型部署与推理](10_部署推理/01_Deployment_Fundamentals/Deployment_Inference.md) — 分割模型的实时部署优化
 
 ---
 
@@ -345,9 +345,9 @@ best_mask = masks[scores.argmax()]  # 取最高分的掩码
 
 ## 相关链接
 
-- [[计算机视觉/Segmentation/Segmentation_for_dummy|图像分割 (小白版)]] — 本篇的零基础版本
-- [[计算机视觉/Segmentation/index|图像分割索引]] — 主题导览
-- [[计算机视觉/Image_Classification_Detection/Object_Detection_Deep_Dive|目标检测深度解析]] — 分割与检测的关系
+- [[04_计算机视觉/03_Segmentation/Segmentation_for_dummy|图像分割 (小白版)]] — 本篇的零基础版本
+- [[04_计算机视觉/03_Segmentation/index|图像分割索引]] — 主题导览
+- [[04_计算机视觉/02_Image_Classification_Detection/Object_Detection_Deep_Dive|目标检测深度解析]] — 分割与检测的关系
 - [[概念/Vision/image-segmentation|图像分割]] — 概念卡片
 - [[概念/Vision/sam|SAM]] — 分割代表模型
-- [[计算机视觉/CV_Fundamentals/CV_Fundamentals|计算机视觉基础]] — CV 基础知识
+- [[04_计算机视觉/01_CV_Fundamentals/CV_Fundamentals|计算机视觉基础]] — CV 基础知识

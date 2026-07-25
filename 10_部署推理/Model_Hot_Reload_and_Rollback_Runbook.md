@@ -206,6 +206,6 @@ kubectl patch inferenceservice <name> -n <ns> --type=merge -p '
 - [[概念/kserve|KServe]]
 - [[概念/lora-peft|LoRA / PEFT]]
 - [[概念/quantization|Quantization]]
-- [[模型运维/Troubleshooting/Model_Version_Rollback_Playbook|模型版本回滚 Playbook]]
-- [[架构基建/Alibaba_Cloud_Proprietary_K8s_Context|阿里云专有云 K8s 上下文]]
+- [[11_模型运维/12_Troubleshooting/Model_Version_Rollback_Playbook|模型版本回滚 Playbook]]
+- [[12_架构基建/Alibaba_Cloud_Proprietary_K8s_Context|阿里云专有云 K8s 上下文]]
 - [[model-weights-plain]]

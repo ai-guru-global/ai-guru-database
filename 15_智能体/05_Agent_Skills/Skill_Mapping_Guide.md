@@ -144,11 +144,11 @@ boundary:
 
 ## Related
 
-- [[智能体/Agent_Skills/README|Agent Skills]]
-- [[学习/References/index|References Index]]
-- [[数学基础/Probability_Statistics/Skill_Statistics_Cheatsheet|Skill 中常用统计方法速查]]
-- [[智能体/Agent_Skills/Common_Field_Types|常见 Skill 字段类型与命名约定]]
-- [[智能体/Agent_Skills/Skill_Versioning_Guide|Skill 版本管理指南]]
+- [[15_智能体/05_Agent_Skills/README|Agent Skills]]
+- [[90_学习/References/index|References Index]]
+- [[01_数学基础/03_Probability_Statistics/Skill_Statistics_Cheatsheet|Skill 中常用统计方法速查]]
+- [[15_智能体/05_Agent_Skills/Common_Field_Types|常见 Skill 字段类型与命名约定]]
+- [[15_智能体/05_Agent_Skills/Skill_Versioning_Guide|Skill 版本管理指南]]
 
 ## 附录：核心概念速查
 

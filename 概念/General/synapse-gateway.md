@@ -12,7 +12,7 @@ relationships:
   - target: "概念/single-tenant-architecture"
     type: related_to
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
 summary: "Synapse 是 AI Stack 内置模型网关的代号，提供推理服务负载均衡（轮询/IP哈希/最少连接/随机）和 API-Key 鉴权，是 AI Stack 流量调度的核心组件。"
 provenance:
   extracted: 0.75
@@ -157,7 +157,7 @@ curl -X POST http://<ai-stack-ip>:<gateway-port>/v1/chat/completions \
 - [[概念/rbac]] — RBAC 访问控制
 - [[概念/single-tenant-architecture]] — 单租户架构
 - [[概念/model-serving]] — 模型服务
-- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
 
 ---
 

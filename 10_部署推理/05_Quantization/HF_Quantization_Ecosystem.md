@@ -131,14 +131,14 @@ model = AutoModelForCausalLM.from_pretrained(
 ---
 
 ## 相关阅读
-- [[部署推理/Inference_Engines/TGI_Deep_Dive]]
-- [[部署推理/Inference_Engines/vLLM_Deep_Dive]]
-- [[大模型/Fine_tuning_Techniques/PEFT_Advanced_2026]]
-- [[数学基础/AI_Hardware/AI_Hardware_2026]]
+- [[10_部署推理/02_Inference_Engines/TGI_Deep_Dive]]
+- [[10_部署推理/02_Inference_Engines/vLLM_Deep_Dive]]
+- [[05_大模型/07_Fine_tuning_Techniques/PEFT_Advanced_2026]]
+- [[01_数学基础/10_AI_Hardware/AI_Hardware_2026]]
 
 ## Related
 
-- [[部署推理/README|模型部署与推理]]
+- [[10_部署推理/README|模型部署与推理]]
 
 ## 核心知识体系
 

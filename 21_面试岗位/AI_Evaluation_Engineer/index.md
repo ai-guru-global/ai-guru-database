@@ -15,13 +15,13 @@ AI 评估工程师 — 设计与执行模型评估方案，涵盖离线指标（
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[面试岗位/AI_Evaluation_Engineer/AI_Evaluation_Engineer|AI Evaluation Engineer]] | 岗位面试全攻略：评估指标体系、Benchmark 选型与评测平台工程 | evaluation engineer candidates |
+| [[21_面试岗位/AI_Evaluation_Engineer/AI_Evaluation_Engineer|AI Evaluation Engineer]] | 岗位面试全攻略：评估指标体系、Benchmark 选型与评测平台工程 | evaluation engineer candidates |
 
 ## Related
 
-- [[模型评估/index|模型评估]]
-- [[测试/Agent_Evaluation_index|Agent Evaluation]]
-- [[面试岗位/MLOps_Engineer/index|MLOps Engineer]]
+- [[08_模型评估/index|模型评估]]
+- [[09_测试/Agent_Evaluation_index|Agent Evaluation]]
+- [[21_面试岗位/MLOps_Engineer/index|MLOps Engineer]]
 
 ## 岗位核心能力模型
 
@@ -38,7 +38,7 @@ AI 评估工程师 — 设计与执行模型评估方案，涵盖离线指标（
 | 轮次 | 内容 | 时长 | 考察重点 |
 |------|------|------|----------|
 | 简历筛选 | HR初筛 | - | 背景匹配度 |
-| 技术笔试 | 编程/选择题 | 60-90min | 基础功底 |
+| 技术笔试 | 16_编程/选择题 | 60-90min | 基础功底 |
 | 技术一面 | 算法+项目 | 45-60min | 编码能力+项目深度 |
 | 技术二面 | 系统设计+深度 | 45-60min | 架构思维+技术广度 |
 | 技术三面 | 综合+前沿 | 30-45min | 技术视野+潜力 |

@@ -11,7 +11,7 @@ relationships:
   - target: "[[概念/Safety/adversarial-attack]]"
     type: defended_by
 sources:
-  - 伦理安全/LLM_Security_Defense_Guide.md
+  - 17_伦理安全/LLM_Security_Defense_Guide.md
 summary: "模型水印是在AI模型或其生成内容中嵌入可检测但不可感知的标识信息，用于版权保护、溯源追踪、深度伪造检测和模型窃取识别。分为训练时水印（权重嵌入）和推理时水印（输出嵌入）两大类。"
 provenance:
   extracted: 0.72

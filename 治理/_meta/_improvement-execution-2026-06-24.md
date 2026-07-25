@@ -77,11 +77,11 @@ sources: []
 
 ## 三、P1 — 重要改进（100% 完成）
 
-### ✅ P1-1：学习/guides/ai_engineering_roadmap_2026.md 断链治理
+### ✅ P1-1：90_学习/guides/ai_engineering_roadmap_2026.md 断链治理
 
 - 21 条断链 → 0 条
 - 导航表中 18 条章节级 `[[XX_Pillar]]` 转换为 `[[XX_Pillar/README]]`
-- 6 条 `14_AI_Gateway/*` 重写为 `架构基建/AI_Gateway/*`（章节已迁移）
+- 6 条 `14_AI_Gateway/*` 重写为 `12_架构基建/11_AI_Gateway/*`（章节已迁移）
 
 ### ✅ P1-2：tier / aliases 字段批量扩展
 
@@ -198,7 +198,7 @@ python3 工具/check_links.py . --json report.json # 输出 JSON
 |------|----------|------|
 | 00-21 主章节 | ~1100 | 主要是 tier/aliases frontmatter 字段添加 |
 | 90_Learn | ~80 | 路径修复 + aliases |
-| 91-94 学习/笔记/工具 | ~30 | tier/aliases |
+| 91-94 90_学习/笔记/工具 | ~30 | tier/aliases |
 | 概念 | 195 | 新增 5 个 + 2 个 alias + 188 个 tier/aliases |
 | 治理/cheatsheets | 8 | 5 新增 + 3 已有 |
 | 治理 报告 | 2 | 本次新增 |
@@ -221,11 +221,11 @@ python3 工具/check_links.py . --json report.json # 输出 JSON
 
 | 文件 | 残留断链 | 备注 |
 |------|---------|------|
-| `学习/guides/learning_paths_2026.md` | 32 | 引用已废弃的 `X.md`（被 `概念/X` 替代）|
+| `90_学习/guides/learning_paths_2026.md` | 32 | 引用已废弃的 `X.md`（被 `概念/X` 替代）|
 | `模板/DOCUMENT_TEMPLATES.md` | 21 | 模板内部引用 |
-| `学习/Courses/apachecn/ailearning_guide.md` | 9 | 课程指南类 |
-| `智能体/Agent_Foundations/AI_Agents.md` | 7 | 大文件、内容迭代中 |
-| `强化学习/Deep_RL/Deep_RL.md` | 7 | 同上 |
+| `90_学习/Courses/apachecn/ailearning_guide.md` | 9 | 课程指南类 |
+| `15_智能体/01_Agent_Foundations/AI_Agents.md` | 7 | 大文件、内容迭代中 |
+| `06_强化学习/02_Deep_RL/Deep_RL.md` | 7 | 同上 |
 | AI编程/Tools/OpenCode/* | 16 (4+4+4+4) | OpenCode 系列教程 |
 
 **剩余断链特征**：大部分是 **预存引用**（不是本次改进引入），指向从未创建的"应该存在的文件"。需要后续按章节单独治理（每章节 5-15 分钟）。
@@ -292,7 +292,7 @@ python3 工具/check_links.py . --json report.json # 输出 JSON
 
 **重点关注**：
 1. 剩余 371 条断链治理（按章节分批）
-2. 学习/guides/learning_paths_2026.md 中 32 条 stale 引用清理
+2. 90_学习/guides/learning_paths_2026.md 中 32 条 stale 引用清理
 3. `参考/` 缺失文件补全
 4. Web/ 前端 vitest 修复
 5. 分支合并到 main 后验证

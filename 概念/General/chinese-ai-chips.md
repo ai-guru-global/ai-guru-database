@@ -50,8 +50,8 @@ sources: []
 - [[概念/cambricon|Cambricon]]
 - [[概念/hygon|Hygon]]
 - [[概念/mthreads|Moore Threads]]
-- [[部署推理/Hardware/Chinese_AI_Chip_Inference_Matrix|国产芯片推理矩阵]]
-- [[数学基础/AI_Hardware/Chinese_AI_Chips_Deep_Dive|国产 AI 芯片深度解析]]
+- [[10_部署推理/08_Hardware/Chinese_AI_Chip_Inference_Matrix|国产芯片推理矩阵]]
+- [[01_数学基础/10_AI_Hardware/Chinese_AI_Chips_Deep_Dive|国产 AI 芯片深度解析]]
 
 ---
 

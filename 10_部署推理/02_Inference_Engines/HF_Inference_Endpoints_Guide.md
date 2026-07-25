@@ -138,13 +138,13 @@ print(response.choices[0].message.content)
 ---
 
 ## 相关阅读
-- [[部署推理/Inference_Engines/TGI_Deep_Dive]]
-- [[架构基建/Architecture_Overview/Capacity_Planning_2026]]
-- [[架构基建/AI_Gateway/AI_Gateway_2026]]
+- [[10_部署推理/02_Inference_Engines/TGI_Deep_Dive]]
+- [[12_架构基建/02_Architecture_Overview/Capacity_Planning_2026]]
+- [[12_架构基建/11_AI_Gateway/AI_Gateway_2026]]
 
 ## Related
 
-- [[部署推理/README|模型部署与推理]]
+- [[10_部署推理/README|模型部署与推理]]
 
 ## 核心知识体系
 

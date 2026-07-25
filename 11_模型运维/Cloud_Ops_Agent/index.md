@@ -8,22 +8,22 @@ sources: []
 
 # Cloud Ops Agent
 
-This page indexes the contents of `模型运维/Cloud_Ops_Agent`.
+This page indexes the contents of `11_模型运维/Cloud_Ops_Agent`.
 
 ## Subdirectories
 
-- [[模型运维/Cloud_Ops_Agent/docs/index|Docs]]
-- [[模型运维/Cloud_Ops_Agent/scripts/index|Scripts]]
+- [[11_模型运维/Cloud_Ops_Agent/docs/index|Docs]]
+- [[11_模型运维/Cloud_Ops_Agent/scripts/index|Scripts]]
 
 ## Files
 
-- [[模型运维/Cloud_Ops_Agent/Cloud_Product_Ops_2026|Cloud Product Ops 2026]]
-- [[模型运维/Cloud_Ops_Agent/Cloud_Product_Ops_for_dummy|Cloud Product Ops For Dummy]]
-- [[模型运维/Cloud_Ops_Agent/CloudOps-in-nutshell|Cloudops In Nutshell]]
-- [[模型运维/Cloud_Ops_Agent/Java_Cloud_SDK_Guide|Java Cloud SDK Guide]]
-- [[模型运维/Cloud_Ops_Agent/Mobile_AI_Ops_Design|Mobile AI Ops Design]]
-- [[模型运维/Cloud_Ops_Agent/README|README]]
-- [[模型运维/Cloud_Ops_Agent/README_for_dummy|README For Dummy]]
+- [[11_模型运维/Cloud_Ops_Agent/Cloud_Product_Ops_2026|Cloud Product Ops 2026]]
+- [[11_模型运维/Cloud_Ops_Agent/Cloud_Product_Ops_for_dummy|Cloud Product Ops For Dummy]]
+- [[11_模型运维/Cloud_Ops_Agent/CloudOps-in-nutshell|Cloudops In Nutshell]]
+- [[11_模型运维/Cloud_Ops_Agent/Java_Cloud_SDK_Guide|Java Cloud SDK Guide]]
+- [[11_模型运维/Cloud_Ops_Agent/Mobile_AI_Ops_Design|Mobile AI Ops Design]]
+- [[11_模型运维/Cloud_Ops_Agent/README|README]]
+- [[11_模型运维/Cloud_Ops_Agent/README_for_dummy|README For Dummy]]
 
 ## MLOps核心流程对比
 
@@ -158,12 +158,12 @@ This page indexes the contents of `模型运维/Cloud_Ops_Agent`.
 
 | 关联主题 | 关系 | 参考路径 |
 |----------|------|----------|
-| 模型训练 | 上游输入 | 模型训练/ |
-| 模型评估 | 质量门禁 | 模型评估/ |
-| 部署推理 | 服务化交付 | 部署推理/ |
-| 架构基建 | 底层支撑 | 架构基建/ |
-| 测试 | 质量保障 | 测试/ |
-| 运维 | 通用运维实践 | 运维/ |
+| 模型训练 | 上游输入 | 07_模型训练/ |
+| 模型评估 | 质量门禁 | 08_模型评估/ |
+| 部署推理 | 服务化交付 | 10_部署推理/ |
+| 架构基建 | 底层支撑 | 12_架构基建/ |
+| 测试 | 质量保障 | 09_测试/ |
+| 运维 | 通用运维实践 | 13_运维/ |
 
 ## 快速自检清单
 

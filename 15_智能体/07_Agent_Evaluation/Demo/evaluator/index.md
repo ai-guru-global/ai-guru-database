@@ -15,17 +15,17 @@ tags: [auto-index]
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[智能体/Agent_Evaluation/Demo/evaluator/core|core]] | Core evaluation dispatcher logic | evaluation engineers |
-| [[智能体/Agent_Evaluation/Demo/evaluator/llm_judge|llm judge]] | LLM-based automatic evaluation module | evaluation engineers |
-| [[智能体/Agent_Evaluation/Demo/evaluator/metrics|metrics]] | Evaluation metrics calculation module | evaluation engineers |
-| [[智能体/Agent_Evaluation/Demo/evaluator/safety_checker|safety checker]] | Safety compliance checking module | security engineers |
-| [[智能体/Agent_Evaluation/Demo/evaluator/scorer|scorer]] | Score aggregation and ranking module | evaluation engineers |
-| [[智能体/Agent_Evaluation/Demo/evaluator/__init__|  init  ]] | Module initialization file | developers |
+| [[15_智能体/07_Agent_Evaluation/Demo/evaluator/core|core]] | Core evaluation dispatcher logic | evaluation engineers |
+| [[15_智能体/07_Agent_Evaluation/Demo/evaluator/llm_judge|llm judge]] | LLM-based automatic evaluation module | evaluation engineers |
+| [[15_智能体/07_Agent_Evaluation/Demo/evaluator/metrics|metrics]] | Evaluation metrics calculation module | evaluation engineers |
+| [[15_智能体/07_Agent_Evaluation/Demo/evaluator/safety_checker|safety checker]] | Safety compliance checking module | security engineers |
+| [[15_智能体/07_Agent_Evaluation/Demo/evaluator/scorer|scorer]] | Score aggregation and ranking module | evaluation engineers |
+| [[15_智能体/07_Agent_Evaluation/Demo/evaluator/__init__|  init  ]] | Module initialization file | developers |
 
 ## Related
 
-- [[智能体/Agent_Evaluation/Demo/index|Demo 首页]]
-- [[智能体/Agent_Evaluation/Rubrics/index|评分规则]]
+- [[15_智能体/07_Agent_Evaluation/Demo/index|Demo 首页]]
+- [[15_智能体/07_Agent_Evaluation/Rubrics/index|评分规则]]
 
 ## evaluator 核心概念
 

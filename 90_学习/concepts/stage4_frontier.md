@@ -47,7 +47,7 @@ sources:
 |------|---|
 | 包含核心概念 | 8 个 |
 | 预计学习时间 | 5-8 小时 |
-| 前置依赖 | [[学习/concepts/stage3_engineering|Stage 3: 工程实践]] |
+| 前置依赖 | [[90_学习/concepts/stage3_engineering|Stage 3: 工程实践]] |
 | 适合人群 | 想把握 AI 发展方向的研究者/工程师/战略决策者 |
 
 ---
@@ -142,7 +142,7 @@ graph TD
 ### 7. Scaling Law 与规模法则
 
 - **一句话定义**：描述模型性能如何随参数规模、训练数据量、算力增加而变化的规律。
-- **为什么重要**：Scaling Law 是 2020 年后大模型爆发的基础理论。它预测：只要增加规模，模型能力就会持续提升（详见 [[学习/References/Papers/GPT3_Reading]]）。
+- **为什么重要**：Scaling Law 是 2020 年后大模型爆发的基础理论。它预测：只要增加规模，模型能力就会持续提升（详见 [[90_学习/References/Papers/GPT3_Reading]]）。
 - **核心发现**：幂律关系（Loss 与计算/数据/参数呈幂律下降）、涌现能力（规模超阈值后突然出现）、数据质量更重要。
 - **2026 年的新变化**：
   - **数据墙 (Data Wall)**：高质量文本数据接近耗尽，合成数据和多模态数据成为新燃料
@@ -233,13 +233,13 @@ Level 5: 鲁棒（抵抗对抗攻击）       → 仍脆弱
 
 | 类型 | 资源 | 说明 |
 |------|------|------|
-| 书籍 | [[学习/References/books/build-reasoning-model\|Build Reasoning Model]] | 推理模型前沿 |
-| 论文 | [[学习/References/Papers/Attention_Is_All_You_Need_Reading\|Attention Is All You Need]] | 现代架构源头 |
-| 论文 | [[学习/References/Papers/GPT3_Reading\|GPT-3]] | Scaling Law 实证 |
-| 论文 | [[学习/References/Papers/BERT_Reading\|BERT]] | 编码器方向里程碑 |
-| 论文 | [[学习/References/Papers/ResNet_Reading\|ResNet]] | 深度网络与残差连接 |
-| 课程 | [[学习/References/Courses/sebastian-raschka-articles\|Raschka Articles]] | 前沿技术深度文章 |
-| 文章 | [[学习/References/Articles/maarten-grootendorst-visual-guides\|Visual Guides]] | 前沿可视化指南（Mamba/MoE/量化） |
+| 书籍 | [[90_学习/References/books/build-reasoning-model\|Build Reasoning Model]] | 推理模型前沿 |
+| 论文 | [[90_学习/References/Papers/Attention_Is_All_You_Need_Reading\|Attention Is All You Need]] | 现代架构源头 |
+| 论文 | [[90_学习/References/Papers/GPT3_Reading\|GPT-3]] | Scaling Law 实证 |
+| 论文 | [[90_学习/References/Papers/BERT_Reading\|BERT]] | 编码器方向里程碑 |
+| 论文 | [[90_学习/References/Papers/ResNet_Reading\|ResNet]] | 深度网络与残差连接 |
+| 课程 | [[90_学习/References/Courses/sebastian-raschka-articles\|Raschka Articles]] | 前沿技术深度文章 |
+| 文章 | [[90_学习/References/Articles/maarten-grootendorst-visual-guides\|Visual Guides]] | 前沿可视化指南（Mamba/MoE/量化） |
 
 ## 前沿面试 FAQ
 
@@ -283,21 +283,21 @@ Level 5: 鲁棒（抵抗对抗攻击）       → 仍脆弱
 ## 下一步
 
 完成 Stage 4 后，你已经具备了完整的 AI 认知框架。建议：
-- **深入某个方向** → 选择对应的专业路径继续深耕（见 [[学习/pathways/index|学习路径]]）
-- **走向职业化** → [[学习/concepts/stage5_professional|Stage 5: 职业化]]
-- **准备面试/述职** → 回顾 [[学习/guides/milestones.md|milestones]] 自测
-- **关注最新进展** → 订阅 [[学习/README.md|AI Guru 知识库]] 的更新
-- **回看全景** → [[学习/concepts/index|概念分阶索引]]
+- **深入某个方向** → 选择对应的专业路径继续深耕（见 [[90_学习/pathways/index|学习路径]]）
+- **走向职业化** → [[90_学习/concepts/stage5_professional|Stage 5: 职业化]]
+- **准备面试/述职** → 回顾 [[90_学习/guides/milestones.md|milestones]] 自测
+- **关注最新进展** → 订阅 [[90_学习/README.md|AI Guru 知识库]] 的更新
+- **回看全景** → [[90_学习/concepts/index|概念分阶索引]]
 
 ## Related
 
-- [[学习/concepts/index|概念分阶索引]]
-- [[学习/concepts/stage3_engineering|Stage 3: 工程]]
-- [[学习/concepts/stage5_professional|Stage 5: 职业化]]
-- [[学习/pathways/index|学习路径]]
-- [[学习/References/Papers/]] — 经典论文导读
-- [[大模型/]] — 大模型知识章节
-- [[伦理安全/]] — AI 安全与对齐
-- [[计算机视觉/]] — 多模态与视觉
+- [[90_学习/concepts/index|概念分阶索引]]
+- [[90_学习/concepts/stage3_engineering|Stage 3: 工程]]
+- [[90_学习/concepts/stage5_professional|Stage 5: 职业化]]
+- [[90_学习/pathways/index|学习路径]]
+- [[90_学习/References/Papers/]] — 经典论文导读
+- [[05_大模型/]] — 大模型知识章节
+- [[17_伦理安全/]] — AI 安全与对齐
+- [[04_计算机视觉/]] — 多模态与视觉
 
-> **关联**: → [[学习/concepts/index|概念分阶]] | [[学习/concepts/stage5_professional|Stage 5 职业化]] | [[学习/References/Papers/]] | [[大模型/]] | [[伦理安全/]] | [[计算机视觉/]]
+> **关联**: → [[90_学习/concepts/index|概念分阶]] | [[90_学习/concepts/stage5_professional|Stage 5 职业化]] | [[90_学习/References/Papers/]] | [[05_大模型/]] | [[17_伦理安全/]] | [[04_计算机视觉/]]

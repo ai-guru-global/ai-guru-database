@@ -59,7 +59,7 @@ Grant Sanderson 自研的 **Manim** 是其内容质量的核心壁垒：
 | 影响 | 全球数学教育者广泛使用 |
 | 价值 | 让复杂数学变化过程可视化、可追踪 |
 
-Manim 体现了"用工程能力赋能教育"的思路，关联 [[学习/index|学习]] 与 [[可视化/index|可视化]] 章节。
+Manim 体现了"用工程能力赋能教育"的思路，关联 [[90_学习/index|学习]] 与 [[94_可视化/index|可视化]] 章节。
 
 ### 神经网络系列：AI 教育里程碑
 
@@ -95,7 +95,7 @@ Manim 体现了"用工程能力赋能教育"的思路，关联 [[学习/index|�
 | 微积分本质 | 导数/链式法则 | 微积分直觉 |
 | 概率 | 贝叶斯/分布 | 概率直觉 |
 
-这些是 [[数学基础/index|数学基础]] 章节的重要学习资源。
+这些是 [[01_数学基础/index|数学基础]] 章节的重要学习资源。
 
 ---
 
@@ -120,9 +120,9 @@ Grant Sanderson 强调"**真正的理解来自几何直觉，而非符号运算*
 | 教育者 | 强项 | 与 3B1B 互补点 |
 |--------|------|----------------|
 | **3Blue1Brown** | 数学直觉 + 动画美学 | — |
-| [[业界观点/Josh_Starner/Josh_Starner_2026_Update\|StatQuest]] | 统计/ML 全谱系入门 | Josh 更全谱系，3B1B 更美学 |
-| [[业界观点/Andrej_Karpathy/about\|Karpathy]] | 代码 + 第一性原理 | Karpathy 重实现，3B1B 重直觉 |
-| [[业界观点/Andrew_Ng/about\|吴恩达]] | 系统课程 | 吴恩达重体系 |
+| [[19_业界观点/Josh_Starner/Josh_Starner_2026_Update\|StatQuest]] | 统计/ML 全谱系入门 | Josh 更全谱系，3B1B 更美学 |
+| [[19_业界观点/Andrej_Karpathy/about\|Karpathy]] | 代码 + 第一性原理 | Karpathy 重实现，3B1B 重直觉 |
+| [[19_业界观点/Andrew_Ng/about\|吴恩达]] | 系统课程 | 吴恩达重体系 |
 
 ### 对 AI 教育的影响
 
@@ -132,14 +132,14 @@ Grant Sanderson 强调"**真正的理解来自几何直觉，而非符号运算*
 
 ## 关联与延伸
 
-- [[业界观点/3Blue1Brown/about|3Blue1Brown 概述]]
-- [[业界观点/3Blue1Brown/index|3Blue1Brown 主页]]
-- [[学习/index|学习章节]]
-- [[学习/References/books/index|学习资源]]
-- [[数学基础/index|数学基础]]
-- [[可视化/index|可视化]]
-- [[业界观点/Josh_Starner/Josh_Starner_2026_Update|Josh Starmer（StatQuest）]]
-- [[业界观点/Andrej_Karpathy/about|Andrej Karpathy]]
+- [[19_业界观点/3Blue1Brown/about|3Blue1Brown 概述]]
+- [[19_业界观点/3Blue1Brown/index|3Blue1Brown 主页]]
+- [[90_学习/index|学习章节]]
+- [[90_学习/References/books/index|学习资源]]
+- [[01_数学基础/index|数学基础]]
+- [[94_可视化/index|可视化]]
+- [[19_业界观点/Josh_Starner/Josh_Starner_2026_Update|Josh Starmer（StatQuest）]]
+- [[19_业界观点/Andrej_Karpathy/about|Andrej Karpathy]]
 
 ---
 

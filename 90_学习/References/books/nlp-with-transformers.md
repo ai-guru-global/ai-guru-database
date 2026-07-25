@@ -66,7 +66,7 @@ aliases:
 在知识库的书籍谱系中：
 - 上承 [[hands-on-ml-geron]]（ML/DL 基础）
 - 平行 [[hands-on-llms-alammar]]（图解式概念）、[[build-llm-from-scratch-raschka]]（底层实现）
-- 是 [[大模型/LLM_Fundamentals]] 的**应用层配套**
+- 是 [[05_大模型/LLM_Fundamentals]] 的**应用层配套**
 
 ## 核心内容
 
@@ -348,16 +348,16 @@ Student（小模型，如 DistilBERT）
 
 | 本书章节 | 本书概念 | 知识库主题 | 关联说明 |
 |----------|----------|------------|----------|
-| Ch 1 Transformer 概览 | 三大架构族 | [[大模型/LLM_Fundamentals]] | LLM 基础 |
-| Ch 2 分类 | BERT 微调 | [[大模型/Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs]] | 微调实战 |
-| Ch 3 剖析 | Attention 实现 | [[深度学习/]] | 架构原理 |
-| Ch 4 NER | 序列标注 | [[机器学习/]] | 标注任务 |
-| Ch 5 生成 | 采样策略 | [[大模型/Prompt_Engineering/Prompt_Engineering]] | 解码控制 |
-| Ch 6 摘要/翻译 | Seq2Seq | [[大模型/LLM_Fundamentals]] | 生成任务 |
-| Ch 7 问答 | 抽取式 QA | [[RAG系统/RAG_Systems]] | QA 衔接 RAG |
-| Ch 8 高效化 | 蒸馏/量化 | [[部署推理/]] | 模型压缩 |
-| Ch 9 少样本 | 数据增强 | [[机器学习/]] | 数据策略 |
-| Ch 10 从头训练 | 预训练 | [[模型训练/]] | 训练流程 |
+| Ch 1 Transformer 概览 | 三大架构族 | [[05_大模型/LLM_Fundamentals]] | LLM 基础 |
+| Ch 2 分类 | BERT 微调 | [[05_大模型/07_Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs]] | 微调实战 |
+| Ch 3 剖析 | Attention 实现 | [[03_深度学习/]] | 架构原理 |
+| Ch 4 NER | 序列标注 | [[02_机器学习/]] | 标注任务 |
+| Ch 5 生成 | 采样策略 | [[05_大模型/08_Prompt_Engineering/Prompt_Engineering]] | 解码控制 |
+| Ch 6 摘要/翻译 | Seq2Seq | [[05_大模型/LLM_Fundamentals]] | 生成任务 |
+| Ch 7 问答 | 抽取式 QA | [[14_RAG系统/RAG_Systems]] | QA 衔接 RAG |
+| Ch 8 高效化 | 蒸馏/量化 | [[10_部署推理/]] | 模型压缩 |
+| Ch 9 少样本 | 数据增强 | [[02_机器学习/]] | 数据策略 |
+| Ch 10 从头训练 | 预训练 | [[07_模型训练/]] | 训练流程 |
 
 ## 适合人群
 
@@ -400,7 +400,7 @@ Student（小模型，如 DistilBERT）
 
 - **做分类/NER**: Ch 2, 4
 - **做生成/对话**: Ch 5, 6
-- **做问答/RAG**: Ch 7 + [[RAG系统/RAG_Systems]]
+- **做问答/RAG**: Ch 7 + [[14_RAG系统/RAG_Systems]]
 - **做模型优化**: Ch 8
 - **做预训练**: Ch 10
 
@@ -409,7 +409,7 @@ Student（小模型，如 DistilBERT）
 1. [[hands-on-llms-alammar]] Ch 3 建立注意力直觉
 2. 本书 Ch 3 深入架构剖析
 3. [[build-llm-from-scratch-raschka]] 手动实现验证
-4. [[学习/References/Papers/BERT_Reading]] 理解 BERT 原始论文
+4. [[90_学习/References/Papers/BERT_Reading]] 理解 BERT 原始论文
 
 ## 亮点与局限
 
@@ -430,13 +430,13 @@ Student（小模型，如 DistilBERT）
 
 ## 延伸阅读
 
-- [[学习/References/books/hands-on-llms-alammar|Hands-On LLMs]] — 图解概念互补
-- [[学习/References/books/build-llm-from-scratch-raschka|Build LLM From Scratch]] — 底层实现
-- [[学习/References/books/ai-engineering-huyen|AI Engineering]] — LLM 应用工程全景
-- [[学习/References/Papers/Attention_Is_All_You_Need_Reading|Attention 论文导读]] — 架构源头
-- [[学习/References/Papers/BERT_Reading|BERT 论文导读]] — 编码器代表
-- [[学习/References/Papers/GPT3_Reading|GPT-3 论文导读]] — 解码器代表
-- [[大模型/LLM_Fundamentals]] — 知识库 LLM 基础
-- [[学习/guides/ai_engineering_roadmap_2026|AI 工程路线图 2026]]
+- [[90_学习/References/books/hands-on-llms-alammar|Hands-On LLMs]] — 图解概念互补
+- [[90_学习/References/books/build-llm-from-scratch-raschka|Build LLM From Scratch]] — 底层实现
+- [[90_学习/References/books/ai-engineering-huyen|AI Engineering]] — LLM 应用工程全景
+- [[90_学习/References/Papers/Attention_Is_All_You_Need_Reading|Attention 论文导读]] — 架构源头
+- [[90_学习/References/Papers/BERT_Reading|BERT 论文导读]] — 编码器代表
+- [[90_学习/References/Papers/GPT3_Reading|GPT-3 论文导读]] — 解码器代表
+- [[05_大模型/LLM_Fundamentals]] — 知识库 LLM 基础
+- [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图 2026]]
 
-> **关联**: → [[学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]] | [[大模型/LLM_Fundamentals]] | [[深度学习/]] | [[部署推理/]] | [[学习/References/Papers/]]
+> **关联**: → [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]] | [[05_大模型/LLM_Fundamentals]] | [[03_深度学习/]] | [[10_部署推理/]] | [[90_学习/References/Papers/]]

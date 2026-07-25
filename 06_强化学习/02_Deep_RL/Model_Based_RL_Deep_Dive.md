@@ -1151,18 +1151,18 @@ flowchart TB
   → 最终目标: 通用的、可迁移的世界模型
 ```
 
-> 参见 [[深度学习/World_Models/World_Models_2026]]。
+> 参见 [[03_深度学习/07_World_Models/World_Models_2026]]。
 
 ---
 
 ## Related
 
-- [[强化学习/Deep_RL/Deep_RL]] — 深度强化学习（总览）
-- [[强化学习/Deep_RL/SAC_Deep_Dive]] — SAC（无模型对比）
-- [[强化学习/Deep_RL/Offline_RL_Deep_Dive]] — 离线RL（模型可用于离线数据增强）
-- [[强化学习/RL_Foundations/RL_Foundations]] — RL基础（MDP/规划）
-- [[强化学习/Multi_Agent_RL]] — 多智能体RL（建模其他智能体）
-- [[强化学习/Sim_to_Real/Sim_to_Real]] — Sim-to-Real（模型=simulator）
-- [[深度学习/World_Models/World_Models_2026]] — 世界模型（JEPA/Sora）
-- [[深度学习/DL_Fundamentals/DL_Fundamentals]] — 深度学习基础
+- [[06_强化学习/02_Deep_RL/Deep_RL]] — 深度强化学习（总览）
+- [[06_强化学习/02_Deep_RL/SAC_Deep_Dive]] — SAC（无模型对比）
+- [[06_强化学习/02_Deep_RL/Offline_RL_Deep_Dive]] — 离线RL（模型可用于离线数据增强）
+- [[06_强化学习/01_RL_Foundations/RL_Foundations]] — RL基础（MDP/规划）
+- [[06_强化学习/Multi_Agent_RL]] — 多智能体RL（建模其他智能体）
+- [[06_强化学习/Sim_to_Real/Sim_to_Real]] — Sim-to-Real（模型=simulator）
+- [[03_深度学习/07_World_Models/World_Models_2026]] — 世界模型（JEPA/Sora）
+- [[03_深度学习/01_DL_Fundamentals/DL_Fundamentals]] — 深度学习基础
 - [[概念/Safety/ai-alignment]] — AI对齐（安全规划）

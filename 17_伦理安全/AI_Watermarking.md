@@ -158,11 +158,11 @@ DEEPFAKE_DETECTION = {
 
 ## 6. 交叉引用
 
-- [[伦理安全/|伦理安全]]
-- [[伦理安全/Model_Card_Documentation/|模型卡]]
-- [[RAG系统/RAG_Security|RAG 安全]]
-- [[大模型/|大模型 (生成内容)]]
-- [[行业应用/Public_Safety/|公共安全 (Deepfake)]]
+- [[17_伦理安全/|伦理安全]]
+- [[17_伦理安全/Model_Card_Documentation/|模型卡]]
+- [[14_RAG系统/RAG_Security|RAG 安全]]
+- [[05_大模型/|大模型 (生成内容)]]
+- [[18_行业应用/Public_Safety/|公共安全 (Deepfake)]]
 
 ## 核心知识体系
 

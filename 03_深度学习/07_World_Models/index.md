@@ -15,15 +15,15 @@ tags: [auto-index]
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[深度学习/World_Models/World_Models_2026|World Models 2026]] | World models 2026: from Dreamer to JEPA evolution | RL researchers / world model researchers |
-| [[深度学习/World_Models/JEPA_Architecture_2026|JEPA Architecture 2026]] | JEPA architecture analysis: LeCun's Joint Embedding Predictive Architecture | researchers / senior practitioners |
-| [[深度学习/World_Models/README|README]] | Module README guide and reading order | all readers |
+| [[03_深度学习/07_World_Models/World_Models_2026|World Models 2026]] | World models 2026: from Dreamer to JEPA evolution | RL researchers / world model researchers |
+| [[03_深度学习/07_World_Models/JEPA_Architecture_2026|JEPA Architecture 2026]] | JEPA architecture analysis: LeCun's Joint Embedding Predictive Architecture | researchers / senior practitioners |
+| [[03_深度学习/07_World_Models/README|README]] | Module README guide and reading order | all readers |
 
 ## Related
 
-- [[深度学习/index|深度学习首页]]
-- [[强化学习/Deep_RL/index|Deep RL]]
-- [[业界观点/Yann_LeCun/index|Yann LeCun]]
+- [[03_深度学习/index|深度学习首页]]
+- [[06_强化学习/02_Deep_RL/index|Deep RL]]
+- [[19_业界观点/Yann_LeCun/index|Yann LeCun]]
 
 ## 进阶知识拓展
 
@@ -61,9 +61,9 @@ tags: [auto-index]
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

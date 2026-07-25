@@ -288,10 +288,10 @@ Hassabis 对 AGI 有独特的定义，强调"科学发现能力"：
 | 人物 | AGI 定义 | 时间预测 | 路径 |
 |------|----------|----------|------|
 | **Hassabis** | 科学发现能力 | 2027-2030 | AI for Science |
-| **[[业界观点/Sam_Altman/about\|Sam Altman]]** | 经济价值创造 | 2025-2027 | Scaling + Agent |
-| **[[业界观点/Dario_Amodei/Amodei_2026_Update\|Dario Amodei]]** | 诺贝尔级AI | 2026-2028 | 安全Scaling |
-| **[[业界观点/Jensen_Huang/GTC_2026_Keynote_Deep_Dive\|Jensen Huang]]** | 智能基础设施 | 渐进式 | 算力Scaling |
-| **[[业界观点/Wang_Huiwen/about\|王慧文]]** | 经济替代 | 2026-2028 | 应用驱动 |
+| **[[19_业界观点/Sam_Altman/about\|Sam Altman]]** | 经济价值创造 | 2025-2027 | Scaling + Agent |
+| **[[19_业界观点/Dario_Amodei/Amodei_2026_Update\|Dario Amodei]]** | 诺贝尔级AI | 2026-2028 | 安全Scaling |
+| **[[19_业界观点/Jensen_Huang/GTC_2026_Keynote_Deep_Dive\|Jensen Huang]]** | 智能基础设施 | 渐进式 | 算力Scaling |
+| **[[19_业界观点/Wang_Huiwen/about\|王慧文]]** | 经济替代 | 2026-2028 | 应用驱动 |
 
 ---
 
@@ -371,17 +371,17 @@ Hassabis 对 AGI 有独特的定义，强调"科学发现能力"：
 
 ## 交叉引用 (Cross-References)
 
-- [[业界观点/Demis_Hassabis/about]] -- Demis Hassabis 简介与核心贡献
-- [[业界观点/Demis_Hassabis/sayings]] -- Demis Hassabis 金句集
-- [[业界观点/Sam_Altman/about]] -- OpenAI CEO（共享: AGI竞赛、Scaling）
-- [[业界观点/Dario_Amodei/Amodei_2026_Update]] -- Anthropic CEO（共享: AI安全、AGI路线图）
-- [[业界观点/Jensen_Huang/GTC_2026_Keynote_Deep_Dive]] -- NVIDIA GTC 2026（共享: AI基础设施、GPU算力）
-- [[业界观点/Mark_Zuckerberg/Zuckerberg_AI_Pivot_2026]] -- Meta AI（共享: 开源AI、多模态）
-- [[业界观点/Wang_Huiwen/about]] -- 王慧文（共享: AGI思考、AI产品化）
-- [[业界观点/Geoffrey_Hinton/about]] -- Geoffrey Hinton（共享: DeepMind历史、AI安全）
-- [[大模型/README]] -- 大语言模型技术基础
-- [[入门/AI_Future_Trends]] -- AI未来趋势与AGI
-- [[伦理安全/README]] -- AI伦理与安全
+- [[19_业界观点/Demis_Hassabis/about]] -- Demis Hassabis 简介与核心贡献
+- [[19_业界观点/Demis_Hassabis/sayings]] -- Demis Hassabis 金句集
+- [[19_业界观点/Sam_Altman/about]] -- OpenAI CEO（共享: AGI竞赛、Scaling）
+- [[19_业界观点/Dario_Amodei/Amodei_2026_Update]] -- Anthropic CEO（共享: AI安全、AGI路线图）
+- [[19_业界观点/Jensen_Huang/GTC_2026_Keynote_Deep_Dive]] -- NVIDIA GTC 2026（共享: AI基础设施、GPU算力）
+- [[19_业界观点/Mark_Zuckerberg/Zuckerberg_AI_Pivot_2026]] -- Meta AI（共享: 开源AI、多模态）
+- [[19_业界观点/Wang_Huiwen/about]] -- 王慧文（共享: AGI思考、AI产品化）
+- [[19_业界观点/Geoffrey_Hinton/about]] -- Geoffrey Hinton（共享: DeepMind历史、AI安全）
+- [[05_大模型/README]] -- 大语言模型技术基础
+- [[00_入门/AI_Future_Trends]] -- AI未来趋势与AGI
+- [[17_伦理安全/README]] -- AI伦理与安全
 
 ---
 
@@ -505,7 +505,7 @@ Hassabis 和 DeepMind 的"AI for Science"模式对中国有重要启示：
 | **数学推理** | 多家AI公司 | 2-3 年 |
 | **药物发现** | 多家Biotech+AI | 2-3 年 |
 
-### [[业界观点/Wang_Huiwen/about|王慧文]] 视角的补充
+### [[19_业界观点/Wang_Huiwen/about|王慧文]] 视角的补充
 
 王慧文曾评论 AI for Science：
 
@@ -517,12 +517,12 @@ Hassabis 和 DeepMind 的"AI for Science"模式对中国有重要启示：
 
 ## Related
 
-- [[业界观点/Demis_Hassabis/about]] -- Demis Hassabis 简介 (本页扩展)
-- [[业界观点/Demis_Hassabis/sayings]] -- Demis Hassabis 金句集
-- [[业界观点/Sam_Altman/about]] -- Sam Altman 简介 (共享: AGI race, frontier labs)
-- [[业界观点/Dario_Amodei/about]] -- Dario Amodei 简介 (共享: AI safety, AGI timeline)
-- [[业界观点/Jensen_Huang/about]] -- Jensen Huang 简介 (共享: AI compute, infrastructure)
-- [[业界观点/Mark_Zuckerberg/about]] -- Mark Zuckerberg 简介 (共享: open-source AI, multimodal)
-- [[业界观点/Wang_Huiwen/about]] -- 王慧文简介 (共享: AGI思考, AI产品)
-- [[业界观点/Geoffrey_Hinton/about]] -- Geoffrey Hinton 简介 (共享: DeepMind history, AI risk)
-- [[业界观点/Yann_LeCun/about]] -- Yann LeCun 简介 (共享: AI architecture debate)
+- [[19_业界观点/Demis_Hassabis/about]] -- Demis Hassabis 简介 (本页扩展)
+- [[19_业界观点/Demis_Hassabis/sayings]] -- Demis Hassabis 金句集
+- [[19_业界观点/Sam_Altman/about]] -- Sam Altman 简介 (共享: AGI race, frontier labs)
+- [[19_业界观点/Dario_Amodei/about]] -- Dario Amodei 简介 (共享: AI safety, AGI timeline)
+- [[19_业界观点/Jensen_Huang/about]] -- Jensen Huang 简介 (共享: AI compute, infrastructure)
+- [[19_业界观点/Mark_Zuckerberg/about]] -- Mark Zuckerberg 简介 (共享: open-source AI, multimodal)
+- [[19_业界观点/Wang_Huiwen/about]] -- 王慧文简介 (共享: AGI思考, AI产品)
+- [[19_业界观点/Geoffrey_Hinton/about]] -- Geoffrey Hinton 简介 (共享: DeepMind history, AI risk)
+- [[19_业界观点/Yann_LeCun/about]] -- Yann LeCun 简介 (共享: AI architecture debate)

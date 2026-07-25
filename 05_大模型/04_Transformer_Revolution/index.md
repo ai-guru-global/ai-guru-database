@@ -24,9 +24,9 @@ Transformer 革命（Transformer Revolution）— Attention 机制、Transformer
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[大模型/Transformer_Revolution/Transformer_Revolution|Transformer Revolution]] | Transformer knowledge system: architecture evolution, scaling laws and emergence | LLM researchers / NLP engineers |
-| [[大模型/Transformer_Revolution/Transformer_Revolution_for_dummy|Transformer Revolution for dummy]] | Transformer beginner guide: from attention to GPT | beginners / NLP learners |
-| [[大模型/Transformer_Revolution/Self_Attention_Mechanism|Self Attention Mechanism]] | Self-attention mechanism detailed analysis: QKV, multi-head and scaled dot-product | researchers / senior practitioners |
+| [[05_大模型/04_Transformer_Revolution/Transformer_Revolution|Transformer Revolution]] | Transformer knowledge system: architecture evolution, scaling laws and emergence | LLM researchers / NLP engineers |
+| [[05_大模型/04_Transformer_Revolution/Transformer_Revolution_for_dummy|Transformer Revolution for dummy]] | Transformer beginner guide: from attention to GPT | beginners / NLP learners |
+| [[05_大模型/04_Transformer_Revolution/Self_Attention_Mechanism|Self Attention Mechanism]] | Self-attention mechanism detailed analysis: QKV, multi-head and scaled dot-product | researchers / senior practitioners |
 
 ## 核心概念速查
 
@@ -70,9 +70,9 @@ Transformer 革命（Transformer Revolution）— Attention 机制、Transformer
 
 ## Related
 
-- [[大模型/index|大模型首页]]
-- [[大模型/Sequence_Models/index|Sequence Models]]
-- [[深度学习/index|深度学习]]
+- [[05_大模型/index|大模型首页]]
+- [[05_大模型/02_Sequence_Models/index|Sequence Models]]
+- [[03_深度学习/index|深度学习]]
 - [[概念/transformer-architecture|Transformer 架构]]
 
 ## 统计

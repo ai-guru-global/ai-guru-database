@@ -944,12 +944,12 @@ Day 7: Reporting
 - [Implementation/API Integration Guide](../Implementation/API_Integration_Guide.md) - Agent API对接
 - [Implementation/LLM as Judge Templates](../Implementation/LLM_as_Judge_Templates.md) - LLM评估模板
 - [Corpus Assessment](../Corpus_Assessment/README.md) - 语料库评估
-- [[智能体/Agent_Evaluation/Test_Bank/Test_Bank_Overview.md|Test_Bank_Overview]]
+- [[15_智能体/07_Agent_Evaluation/Test_Bank/Test_Bank_Overview.md|Test_Bank_Overview]]
 
 ## Related
 
-- [[智能体/Agent_Evaluation/Cloud_Agent_Evaluation/README]] — Cloud Agent Evaluation (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
-- [[智能体/Agent_Evaluation/Cloud_Agent_Evaluation_System_2026]] — Cloud Agent Evaluation System 2026 (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
-- [[智能体/Agent_Evaluation/Metrics/Evaluation_Metrics]] — Evaluation Metrics (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
-- [[智能体/Agent_Evaluation/Multi_Agent_Evaluation_2026]] — Multi-Agent System Evaluation Framework 2026 (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
+- [[15_智能体/07_Agent_Evaluation/Cloud_Agent_Evaluation/README]] — Cloud Agent Evaluation (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
+- [[15_智能体/07_Agent_Evaluation/Cloud_Agent_Evaluation_System_2026]] — Cloud Agent Evaluation System 2026 (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
+- [[15_智能体/07_Agent_Evaluation/Metrics/Evaluation_Metrics]] — Evaluation Metrics (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
+- [[15_智能体/07_Agent_Evaluation/Multi_Agent_Evaluation_2026]] — Multi-Agent System Evaluation Framework 2026 (共享: agent-framework, ai-agents, langgraph, model-evaluation, pro)
 - [[治理/agent-evaluation-model-evaluation|Agent 评估 × 模型评估]] — 从指标到行为的评估范式迁移

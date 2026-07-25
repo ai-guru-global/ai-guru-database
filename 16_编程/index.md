@@ -15,16 +15,16 @@ AI 编程知识体系（AI Coding Knowledge Base）— 涵盖编程基础、方�
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[编程/README|README]] | Coding module overview and knowledge map | all readers |
-| [[编程/README_for_dummy|README for dummy]] | Coding beginner guide and quick start | newcomers / beginners |
+| [[16_编程/README|README]] | Coding module overview and knowledge map | all readers |
+| [[16_编程/README_for_dummy|README for dummy]] | Coding beginner guide and quick start | newcomers / beginners |
 
 ## Related
 
-- [[编程/Theory/index|Theory]]
-- [[编程/Tools/index|Tools]]
-- [[编程/Methodology/index|Methodology]]
-- [[编程/Practice/index|Practice]]
-- [[行业应用/Code_Generation_index|Code Generation]]
+- [[16_编程/02_Theory/index|Theory]]
+- [[16_编程/05_Tools/index|Tools]]
+- [[16_编程/03_Methodology/index|Methodology]]
+- [[16_编程/04_Practice/index|Practice]]
+- [[18_行业应用/Code_Generation_index|Code Generation]]
 
 ## 核心知识体系
 
@@ -135,9 +135,9 @@ AI 编程知识体系（AI Coding Knowledge Base）— 涵盖编程基础、方�
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

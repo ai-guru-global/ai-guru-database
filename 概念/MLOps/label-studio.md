@@ -8,7 +8,7 @@ relationships:
   - target: "概念/giskard"
     type: related_to
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
 summary: "HumanSignal 开源的多模态数据标注平台，支持图像/文本/音频/视频标注，内置主动学习和 ML 辅助标注，是 ML 数据流水线的核心工具。"
 provenance:
   extracted: 0.55

@@ -356,8 +356,8 @@ model = FastLanguageModel.get_peft_model(
 *Version: 1.0.0*
 ## 相关链接
 
-- [[大模型/Fine_tuning_Techniques/README|微调技术概览]] — 微调技术主题导览
-- [[大模型/Fine_tuning_Techniques/PEFT_2026|PEFT 2026 完全指南]] — Unsloth 实现的 PEFT 方法
-- [[大模型/Fine_tuning_Techniques/Axolotl_Deep_Dive|Axolotl 深度解析]] — 同类主流微调框架对比
-- [[大模型/Fine_tuning_Techniques/LoRA_QLoRA_SFT_RLHF_DPO_in_Detail|LoRA/QLoRA/SFT/RLHF/DPO 详解]] — Unsloth 支持的核心方法
+- [[05_大模型/07_Fine_tuning_Techniques/README|微调技术概览]] — 微调技术主题导览
+- [[05_大模型/07_Fine_tuning_Techniques/PEFT_2026|PEFT 2026 完全指南]] — Unsloth 实现的 PEFT 方法
+- [[05_大模型/07_Fine_tuning_Techniques/Axolotl_Deep_Dive|Axolotl 深度解析]] — 同类主流微调框架对比
+- [[05_大模型/07_Fine_tuning_Techniques/LoRA_QLoRA_SFT_RLHF_DPO_in_Detail|LoRA/QLoRA/SFT/RLHF/DPO 详解]] — Unsloth 支持的核心方法
 - [[概念/Training/lora-peft|LoRA/PEFT]] — Unsloth 主要加速的方法族

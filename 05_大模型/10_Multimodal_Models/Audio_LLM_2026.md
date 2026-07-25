@@ -348,9 +348,9 @@ class VoiceAgent:
 
 ## 6. 交叉引用
 
-- [[大模型/Multimodal_Models/|多模态模型]]
-- [[大模型/Speech_Audio_AI/|语音音频 AI]]
-- [[大模型/LLM_Inference/|LLM 推理]]
-- [[智能体/|智能体系统]]
-- [[部署推理/|部署推理]]
-- [[大模型/Multimodal_Models/Video_Generation_2026|视频生成]]
+- [[05_大模型/10_Multimodal_Models/|多模态模型]]
+- [[05_大模型/11_Speech_Audio_AI/|语音音频 AI]]
+- [[05_大模型/LLM_Inference/|LLM 推理]]
+- [[15_智能体/|智能体系统]]
+- [[10_部署推理/|部署推理]]
+- [[05_大模型/10_Multimodal_Models/Video_Generation_2026|视频生成]]

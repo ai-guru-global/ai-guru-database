@@ -8,15 +8,15 @@ sources: []
 
 # Evaluation Tools
 
-This page indexes the contents of `模型评估/Evaluation_Tools`.
+This page indexes the contents of `08_模型评估/Evaluation_Tools`.
 
 ## Files
 
-- [[模型评估/Evaluation_Tools/LLM_as_Judge_Deep_Dive|LLM As Judge Deep Dive]]
-- [[模型评估/Evaluation_Tools/LLM_as_Judge_Guide|LLM As Judge Guide]]
-- [[模型评估/Evaluation_Tools/LM_Evaluation_Harness_Deep_Dive|LM Evaluation Harness Deep Dive]]
-- [[模型评估/Evaluation_Tools/Online_Evaluation|Online Evaluation]]
-- [[模型评估/Evaluation_Tools/OpenCompass_Deep_Dive|Opencompass Deep Dive]]
+- [[08_模型评估/04_Evaluation_Tools/LLM_as_Judge_Deep_Dive|LLM As Judge Deep Dive]]
+- [[08_模型评估/04_Evaluation_Tools/LLM_as_Judge_Guide|LLM As Judge Guide]]
+- [[08_模型评估/04_Evaluation_Tools/LM_Evaluation_Harness_Deep_Dive|LM Evaluation Harness Deep Dive]]
+- [[08_模型评估/04_Evaluation_Tools/Online_Evaluation|Online Evaluation]]
+- [[08_模型评估/04_Evaluation_Tools/OpenCompass_Deep_Dive|Opencompass Deep Dive]]
 
 ## 进阶知识拓展
 
@@ -54,9 +54,9 @@ This page indexes the contents of `模型评估/Evaluation_Tools`.
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

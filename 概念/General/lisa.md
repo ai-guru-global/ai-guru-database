@@ -10,7 +10,7 @@ relationships:
   - target: "概念/colossalai"
     type: related_to
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
 summary: "通过随机采样模型层级进行梯度更新，以极低显存开销实现全参数微调效果的 LLM 微调方法，无需 LoRA 等额外参数。"
 provenance:
   extracted: 0.50

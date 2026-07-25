@@ -1352,14 +1352,14 @@ flowchart TD
 ## 9. 与其他主题的关联 (Connections)
 
 ### 前置知识
-- [模型训练](模型训练/Training_Fundamentals/Model-Training-in-nutshell.md) — 理解训练过程对评估的影响
-- [模型评估基础](模型评估/Evaluation_Fundamentals/Model_Evaluation.md) — 评估指标与方法论
+- [模型训练](07_模型训练/01_Training_Fundamentals/Model-Training-in-nutshell.md) — 理解训练过程对评估的影响
+- [模型评估基础](08_模型评估/01_Evaluation_Fundamentals/Model_Evaluation.md) — 评估指标与方法论
 
 ### 进阶方向
-- [AI 测试框架](../测试/README.md) — 测试框架与评估工具链
-- [MLOps 流水线](模型运维/MLOps_Fundamentals/MLOps_Pipeline.md) — CI/CD 集成与模型生命周期
-- [AI Ops 监控](运维/AIOps_Fundamentals/AI_Ops_2026.md) — 生产环境模型监控与自动告警
-- [在线评估](模型评估/Evaluation_Tools/Online_Evaluation.md) — 上线后的真实效果评估
+- [AI 测试框架](../09_测试/README.md) — 测试框架与评估工具链
+- [MLOps 流水线](11_模型运维/01_MLOps_Fundamentals/MLOps_Pipeline.md) — CI/CD 集成与模型生命周期
+- [AI Ops 监控](13_运维/01_AIOps_Fundamentals/AI_Ops_2026.md) — 生产环境模型监控与自动告警
+- [在线评估](08_模型评估/04_Evaluation_Tools/Online_Evaluation.md) — 上线后的真实效果评估
 
 ---
 
@@ -1392,8 +1392,8 @@ flowchart TD
 
 ## Related
 
-- [[模型评估/Evaluation_Fundamentals/Model_Evaluation.md|Model_Evaluation]]
-- [[模型评估/README.md|模型评估 README]]
-- [[智能体/Agent_Evaluation/Assessment/Evaluation_Workflow.md|Evaluation_Workflow]]
-- [[智能体/Agent_Evaluation/Cloud_Agent_Evaluation/README.md|Cloud_Agent_Evaluation README]]
-- [[智能体/Agent_Evaluation/Cloud_Agent_Evaluation_System_2026.md|Cloud_Agent_Evaluation_System_2026]]
+- [[08_模型评估/01_Evaluation_Fundamentals/Model_Evaluation.md|Model_Evaluation]]
+- [[08_模型评估/README.md|模型评估 README]]
+- [[15_智能体/07_Agent_Evaluation/Assessment/Evaluation_Workflow.md|Evaluation_Workflow]]
+- [[15_智能体/07_Agent_Evaluation/Cloud_Agent_Evaluation/README.md|Cloud_Agent_Evaluation README]]
+- [[15_智能体/07_Agent_Evaluation/Cloud_Agent_Evaluation_System_2026.md|Cloud_Agent_Evaluation_System_2026]]

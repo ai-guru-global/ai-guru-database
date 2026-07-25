@@ -820,9 +820,9 @@ LayerNorm 的反向传播:
 - [[Attention_Mechanisms_Deep_Dive]] — 注意力机制中 QK-Norm 的应用
 - [[Neural_Network_Core]] — 神经网络核心架构总览
 - [[Optimization]] — 归一化对优化景观的影响
-- [[深度学习/DL_Fundamentals/index|深度学习基础]] — 梯度流与训练稳定性
-- [[深度学习/Generative_Models/index|生成模型]] — Diffusion 中的归一化选择
-- [[深度学习/State_Space_Models/index|状态空间模型]] — Mamba 中的归一化策略
+- [[03_深度学习/01_DL_Fundamentals/index|深度学习基础]] — 梯度流与训练稳定性
+- [[03_深度学习/04_Generative_Models/index|生成模型]] — Diffusion 中的归一化选择
+- [[03_深度学习/State_Space_Models/index|状态空间模型]] — Mamba 中的归一化策略
 
 ---
 

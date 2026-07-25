@@ -468,9 +468,9 @@ class RecommendationBandit:
 
 ## 6. 交叉引用
 
-- [[强化学习/RL_Foundations/RL_Foundations|强化学习基础]]
-- [[强化学习/RL_Foundations/RL_Foundations_for_dummy|RL 入门]]
-- [[强化学习/Deep_RL/Exploration_Strategies_Deep_Dive|探索策略]]
-- [[机器学习/Online_Learning|在线学习]]
-- [[数学基础/Probability_Statistics/|概率统计]]
-- [[智能体/|智能体决策]]
+- [[06_强化学习/01_RL_Foundations/RL_Foundations|强化学习基础]]
+- [[06_强化学习/01_RL_Foundations/RL_Foundations_for_dummy|RL 入门]]
+- [[06_强化学习/02_Deep_RL/Exploration_Strategies_Deep_Dive|探索策略]]
+- [[02_机器学习/Online_Learning|在线学习]]
+- [[01_数学基础/03_Probability_Statistics/|概率统计]]
+- [[15_智能体/|智能体决策]]

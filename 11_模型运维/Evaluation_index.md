@@ -15,13 +15,13 @@ tags: [auto-index]
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[模型运维/LLM_Evaluation_Pipeline|LLM Evaluation Pipeline]] | LLM evaluation pipeline: dataset management, automated scoring and result reporting | evaluation engineers / MLOps |
+| [[11_模型运维/LLM_Evaluation_Pipeline|LLM Evaluation Pipeline]] | LLM evaluation pipeline: dataset management, automated scoring and result reporting | evaluation engineers / MLOps |
 
 ## Related
 
-- [[模型运维/Model_Serving/index|Model Serving]]
-- [[模型评估/index|模型评估]]
-- [[测试/index|测试]]
+- [[11_模型运维/07_Model_Serving/index|Model Serving]]
+- [[08_模型评估/index|模型评估]]
+- [[09_测试/index|测试]]
 
 ## MLOps核心流程对比
 
@@ -156,12 +156,12 @@ tags: [auto-index]
 
 | 关联主题 | 关系 | 参考路径 |
 |----------|------|----------|
-| 模型训练 | 上游输入 | 模型训练/ |
-| 模型评估 | 质量门禁 | 模型评估/ |
-| 部署推理 | 服务化交付 | 部署推理/ |
-| 架构基建 | 底层支撑 | 架构基建/ |
-| 测试 | 质量保障 | 测试/ |
-| 运维 | 通用运维实践 | 运维/ |
+| 模型训练 | 上游输入 | 07_模型训练/ |
+| 模型评估 | 质量门禁 | 08_模型评估/ |
+| 部署推理 | 服务化交付 | 10_部署推理/ |
+| 架构基建 | 底层支撑 | 12_架构基建/ |
+| 测试 | 质量保障 | 09_测试/ |
+| 运维 | 通用运维实践 | 13_运维/ |
 
 ## 快速自检清单
 

@@ -15,13 +15,13 @@ tags: [auto-index]
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[部署推理/LLM_Cost_Optimization|LLM Cost Optimization]] | LLM inference cost optimization: KV-Cache, speculative decoding and batching | LLM platform engineers / cost optimization practitioners |
+| [[10_部署推理/LLM_Cost_Optimization|LLM Cost Optimization]] | LLM inference cost optimization: KV-Cache, speculative decoding and batching | LLM platform engineers / cost optimization practitioners |
 
 ## Related
 
-- [[部署推理/index|部署推理首页]]
-- [[部署推理/Quantization/index|Quantization]]
-- [[模型运维/Cost/index|模型运维 Cost]]
+- [[10_部署推理/index|部署推理首页]]
+- [[10_部署推理/05_Quantization/index|Quantization]]
+- [[11_模型运维/09_Cost/index|模型运维 Cost]]
 
 ## 核心知识体系
 
@@ -132,9 +132,9 @@ tags: [auto-index]
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

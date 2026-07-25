@@ -763,7 +763,7 @@ receivers:
 | OpenSLO | SLO 管理 | SLO 定义/Budget 追踪 | 中大规模 |
 | Sloth | SLO 管理 | Prometheus SLO 生成器 | K8s 环境 |
 | KEDA | 扩缩容 | 事件驱动自动扩缩 | K8s 环境 |
-| Istio | 流量管理 | A/B 测试/金丝雀/熔断 | 服务网格 |
+| Istio | 流量管理 | A/B 09_测试/金丝雀/熔断 | 服务网格 |
 | Envoy | 代理 | 负载均衡/限流/路由 | 高性能网关 |
 | vLLM | 推理引擎 | 高吞吐推理/连续批处理 | GPU 推理 |
 | Triton | 推理服务 | 多模型服务/动态批处理 | 多模型 |

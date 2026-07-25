@@ -15,14 +15,14 @@ tags: [auto-index]
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[部署推理/Hardware/Chinese_AI_Chip_Inference_Matrix|Chinese AI Chip Inference Matrix]] | Chinese AI chip inference matrix: Ascend, Cambricon, Biren and others compared | infrastructure engineers / hardware evaluators |
-| [[部署推理/Hardware/Ascend_NPU_Inference_Guide|Ascend NPU Inference Guide]] | Huawei Ascend NPU inference deployment guide: CANN and MindIE | deployment engineers / Huawei ecosystem developers |
+| [[10_部署推理/08_Hardware/Chinese_AI_Chip_Inference_Matrix|Chinese AI Chip Inference Matrix]] | Chinese AI chip inference matrix: Ascend, Cambricon, Biren and others compared | infrastructure engineers / hardware evaluators |
+| [[10_部署推理/08_Hardware/Ascend_NPU_Inference_Guide|Ascend NPU Inference Guide]] | Huawei Ascend NPU inference deployment guide: CANN and MindIE | deployment engineers / Huawei ecosystem developers |
 
 ## Related
 
-- [[部署推理/index|部署推理首页]]
-- [[部署推理/GPU_Infrastructure/index|GPU Infrastructure]]
-- [[大模型/Edge_LLM/index|Edge LLM]]
+- [[10_部署推理/index|部署推理首页]]
+- [[10_部署推理/07_GPU_Infrastructure/index|GPU Infrastructure]]
+- [[05_大模型/12_Edge_LLM/index|Edge LLM]]
 
 ## 核心知识体系
 
@@ -133,9 +133,9 @@ tags: [auto-index]
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

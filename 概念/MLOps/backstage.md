@@ -123,7 +123,7 @@ catalog:
 - [[概念/MLOps/mlops|MLOps]] — MLOps 总览
 - [[概念/K8s/kubernetes|Kubernetes]] — 容器编排
 - [[概念/MLOps/argo-rollouts|Argo Rollouts]] — 渐进式交付
-- [[概念/架构基建/DevOps|DevOps]] — 开发运维
+- [[概念/12_架构基建/DevOps|DevOps]] — 开发运维
 
 > ℹ️ Backstage 是开发者门户的标准，统一服务目录和自助服务。
 
@@ -168,7 +168,7 @@ docker run -p 7007:7007 backstage
 - [[概念/MLOps/mlops|MLOps]] — MLOps 总览
 - [[概念/K8s/kubernetes|Kubernetes]] — 容器编排
 - [[概念/MLOps/argo-rollouts|Argo Rollouts]] — 渐进式交付
-- [[概念/架构基建/DevOps|DevOps]] — 开发运维
+- [[概念/12_架构基建/DevOps|DevOps]] — 开发运维
 
 > ℹ️ Backstage 是开发者门户的标准，统一服务目录和自助服务。
 

@@ -29,9 +29,9 @@ sources: []
 
 ## Related
 
-- [[智能体/Agent_Skills/Skills-in-nutshell|Agent Skills 速览]]
-- [[智能体/Course_Notes/Learn_Claude_Code_L08_Context_Compact|L08 Context Compact]]
-- [[智能体/Course_Notes/Learn_Claude_Code_L06_Subagent|L06 Subagent]]
+- [[15_智能体/05_Agent_Skills/Skills-in-nutshell|Agent Skills 速览]]
+- [[15_智能体/15_Course_Notes/Learn_Claude_Code_L08_Context_Compact|L08 Context Compact]]
+- [[15_智能体/15_Course_Notes/Learn_Claude_Code_L06_Subagent|L06 Subagent]]
 
 ---
 *Last updated: 2026-07-02*
@@ -175,14 +175,14 @@ sources: []
 
 | 关联主题 | 关系 | 参考路径 |
 |----------|------|----------|
-| Agent基础理论 | 前置知识 | 智能体/Agent_Foundations/ |
-| 框架与工具 | 实现支撑 | 智能体/Agent_Frameworks/ |
-| 评估与测试 | 质量保障 | 智能体/Agent_Evaluation/ |
-| 协议与标准 | 互操作基础 | 智能体/Agent_Protocols/ |
-| 生产部署 | 运维实践 | 智能体/Enterprise_Agent/ |
-| 记忆系统 | 核心能力 | 智能体/Memory_Infrastructure/ |
-| 工作流编排 | 执行引擎 | 智能体/Agent_Workflow/ |
-| 技能扩展 | 能力增强 | 智能体/Agent_Skills/ |
+| Agent基础理论 | 前置知识 | 15_智能体/01_Agent_Foundations/ |
+| 框架与工具 | 实现支撑 | 15_智能体/02_Agent_Frameworks/ |
+| 评估与测试 | 质量保障 | 15_智能体/07_Agent_Evaluation/ |
+| 协议与标准 | 互操作基础 | 15_智能体/Agent_Protocols/ |
+| 生产部署 | 运维实践 | 15_智能体/10_Enterprise_Agent/ |
+| 记忆系统 | 核心能力 | 15_智能体/06_Memory_Infrastructure/ |
+| 工作流编排 | 执行引擎 | 15_智能体/03_Agent_Workflow/ |
+| 技能扩展 | 能力增强 | 15_智能体/05_Agent_Skills/ |
 
 ## 版本与更新记录
 

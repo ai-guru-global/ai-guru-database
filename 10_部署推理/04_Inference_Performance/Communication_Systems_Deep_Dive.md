@@ -88,7 +88,7 @@ LLM 通信栈:
 ─────────────────────────────────────────────
 ```
 
-本页自底向上展开：物理层 → 拓扑 → 原语 → 算法 → NCCL → 优化。通信是并行的"代价"——并行度越高切得越细通信越多，参见 [[部署推理/Inference_Optimization/Parallel_Strategies_Deep_Dive|并行策略全景]]。
+本页自底向上展开：物理层 → 拓扑 → 原语 → 算法 → NCCL → 优化。通信是并行的"代价"——并行度越高切得越细通信越多，参见 [[10_部署推理/03_Inference_Optimization/Parallel_Strategies_Deep_Dive|并行策略全景]]。
 
 ---
 
@@ -493,7 +493,7 @@ GPU2:       [F0][F1]──recv──►[F2]──send──►[B0]
 
 ### 7.3 EP 的 All-to-All 重叠
 
-MoE 层的 dispatch 和 compute 可流水化：前一批 token 的专家计算与后一批的 dispatch 重叠，详见 [[部署推理/Inference_Performance/MoE_Inference_Optimization|MoE 推理优化]]。
+MoE 层的 dispatch 和 compute 可流水化：前一批 token 的专家计算与后一批的 dispatch 重叠，详见 [[10_部署推理/04_Inference_Performance/MoE_Inference_Optimization|MoE 推理优化]]。
 
 ### 7.4 重叠的实现要点
 
@@ -606,7 +606,7 @@ ncu --set communication --kernel-name "nccl" \
 
 ### 10.3 Roofline 视角与关键指标
 
-用 Roofline 模型判断瓶颈：性能 = min(峰值算力, 峰值带宽 × 算术强度)，算术强度 = FLOPs / 字节（含通信）。decode 算术强度低则带宽/通信主导，大矩阵 prefill 算力主导。参见 [[部署推理/Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]]。
+用 Roofline 模型判断瓶颈：性能 = min(峰值算力, 峰值带宽 × 算术强度)，算术强度 = FLOPs / 字节（含通信）。decode 算术强度低则带宽/通信主导，大矩阵 prefill 算力主导。参见 [[10_部署推理/04_Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]]。
 
 | 指标 | 含义 | 健康值 |
 |------|------|--------|
@@ -670,18 +670,18 @@ CXL 是 CPU-GPU/加速器间的高速缓存一致性互连，允许多设备共�
 
 ## Related
 
-- [[部署推理/index|部署推理]]
-- [[部署推理/Inference_Optimization/Parallel_Strategies_Deep_Dive|并行策略全景]]
-- [[部署推理/Inference_Performance/MoE_Inference_Optimization|MoE 推理优化]]
-- [[部署推理/Inference_Performance/Long_Context_Inference_2026|长上下文推理]]
-- [[部署推理/Inference_Engines/vLLM_Deep_Dive|vLLM]]
-- [[架构基建/Hardware_Compute/index|硬件计算]]
-- [[架构基建/Networking/index|AI 网络]]
-- [[部署推理/Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]]
-- [[部署推理/Inference_Performance/Prefill_Decode_Disaggregation|Prefill-Decode 分离]]
-- [[部署推理/Inference_Performance/Disaggregated_Serving_2026|2026 PD 分离前沿]]（KV Cache 跨节点迁移依赖 GPUDirect RDMA）
-- [[部署推理/Inference_Optimization/Compiler_and_Kernel_Deep_Dive|编译器与算子优化]]
-- [[部署推理/README|模型部署与推理]]
+- [[10_部署推理/index|部署推理]]
+- [[10_部署推理/03_Inference_Optimization/Parallel_Strategies_Deep_Dive|并行策略全景]]
+- [[10_部署推理/04_Inference_Performance/MoE_Inference_Optimization|MoE 推理优化]]
+- [[10_部署推理/04_Inference_Performance/Long_Context_Inference_2026|长上下文推理]]
+- [[10_部署推理/02_Inference_Engines/vLLM_Deep_Dive|vLLM]]
+- [[12_架构基建/07_Hardware_Compute/index|硬件计算]]
+- [[12_架构基建/08_Networking/index|AI 网络]]
+- [[10_部署推理/04_Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]]
+- [[10_部署推理/04_Inference_Performance/Prefill_Decode_Disaggregation|Prefill-Decode 分离]]
+- [[10_部署推理/04_Inference_Performance/Disaggregated_Serving_2026|2026 PD 分离前沿]]（KV Cache 跨节点迁移依赖 GPUDirect RDMA）
+- [[10_部署推理/03_Inference_Optimization/Compiler_and_Kernel_Deep_Dive|编译器与算子优化]]
+- [[10_部署推理/README|模型部署与推理]]
 
 ## 术语速查表
 

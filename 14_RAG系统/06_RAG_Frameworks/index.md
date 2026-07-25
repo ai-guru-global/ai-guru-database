@@ -8,16 +8,16 @@ sources: []
 
 # RAG Frameworks
 
-This page indexes the contents of `RAG系统/RAG_Frameworks`.
+This page indexes the contents of `14_RAG系统/RAG_Frameworks`.
 
 ## Files
 
-- [[RAG系统/RAG_Frameworks/Dify_Deep_Dive|Dify Deep Dive]]
-- [[RAG系统/RAG_Frameworks/Flowise_Deep_Dive|Flowise Deep Dive]]
-- [[RAG系统/RAG_Frameworks/Haystack_Deep_Dive|Haystack Deep Dive]]
-- [[RAG系统/RAG_Frameworks/LangFlow_Deep_Dive|Langflow Deep Dive]]
-- [[RAG系统/RAG_Frameworks/LlamaIndex_Deep_Dive|Llamaindex Deep Dive]]
-- [[RAG系统/RAG_Frameworks/Spring_AI_RAG_Deep_Dive|Spring AI RAG Deep Dive]]
+- [[14_RAG系统/06_RAG_Frameworks/Dify_Deep_Dive|Dify Deep Dive]]
+- [[14_RAG系统/06_RAG_Frameworks/Flowise_Deep_Dive|Flowise Deep Dive]]
+- [[14_RAG系统/06_RAG_Frameworks/Haystack_Deep_Dive|Haystack Deep Dive]]
+- [[14_RAG系统/06_RAG_Frameworks/LangFlow_Deep_Dive|Langflow Deep Dive]]
+- [[14_RAG系统/06_RAG_Frameworks/LlamaIndex_Deep_Dive|Llamaindex Deep Dive]]
+- [[14_RAG系统/06_RAG_Frameworks/Spring_AI_RAG_Deep_Dive|Spring AI RAG Deep Dive]]
 
 ## 进阶知识拓展
 
@@ -55,9 +55,9 @@ This page indexes the contents of `RAG系统/RAG_Frameworks`.
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

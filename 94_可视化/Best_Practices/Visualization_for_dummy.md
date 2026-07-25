@@ -638,15 +638,15 @@ tensorboard --logdir=runs
 ## 想深入了解?
 
 ### 📄 进阶阅读
-- [训练监控可视化](可视化/Training_Viz/Training_Monitoring_Visualization.md) - TensorBoard/W&B 深度教程
-- [模型可解释性可视化](可视化/Evaluation_Viz/Model_Interpretability_Visualization.md) - 注意力/SHAP/Grad-CAM
-- [AI 系统仪表盘](可视化/System_Viz/AI_System_Dashboard.md) - RAG/Agent/成本看板
+- [训练监控可视化](94_可视化/Training_Viz/Training_Monitoring_Visualization.md) - TensorBoard/W&B 深度教程
+- [模型可解释性可视化](94_可视化/Evaluation_Viz/Model_Interpretability_Visualization.md) - 注意力/SHAP/Grad-CAM
+- [AI 系统仪表盘](94_可视化/System_Viz/AI_System_Dashboard.md) - RAG/Agent/成本看板
 
 ### 🎓 相关知识
-- [模型训练 - 小白版](模型训练/Training_Fundamentals/Model_Training_for_dummy.md) - 训练基础概念
-- [模型评估 - 小白版](模型评估/Evaluation_Fundamentals/Model_Evaluation_for_dummy.md) - 评估指标详解
-- [RAG 系统 - 小白版](RAG系统/RAG_Fundamentals/RAG_Systems_for_dummy.md) - RAG 原理入门
-- [深度学习核心 - 小白版](深度学习/Neural_Network_Core/Neural_Network_Core_for_dummy.md) - 神经网络基础
+- [模型训练 - 小白版](07_模型训练/01_Training_Fundamentals/Model_Training_for_dummy.md) - 训练基础概念
+- [模型评估 - 小白版](08_模型评估/01_Evaluation_Fundamentals/Model_Evaluation_for_dummy.md) - 评估指标详解
+- [RAG 系统 - 小白版](14_RAG系统/01_RAG_Fundamentals/RAG_Systems_for_dummy.md) - RAG 原理入门
+- [深度学习核心 - 小白版](03_深度学习/02_Neural_Network_Core/Neural_Network_Core_for_dummy.md) - 神经网络基础
 
 ---
 
@@ -654,9 +654,9 @@ tensorboard --logdir=runs
 
 ## Related
 
-- [[可视化/README.md|94_Visualization README]]
+- [[94_可视化/README.md|94_Visualization README]]
 - [[前端应用/atlas/README.md|atlas README]]
 - [[前端应用/atlas/docs/performance.md|performance]]
-- [[可视化/Data_Visualization_Best_Practices|数据可视化最佳实践]] — 图表选择与配色指南
-- [[可视化/Knowledge_Graph_Visualization|知识图谱可视化]] — 实体关系可视化工具
-- [[可视化/Neural_Network_Visualization_Guide|神经网络可视化指南]] — 特征图、注意力热力图
+- [[94_可视化/Data_Visualization_Best_Practices|数据可视化最佳实践]] — 图表选择与配色指南
+- [[94_可视化/Knowledge_Graph_Visualization|知识图谱可视化]] — 实体关系可视化工具
+- [[94_可视化/Neural_Network_Visualization_Guide|神经网络可视化指南]] — 特征图、注意力热力图

@@ -10,7 +10,7 @@ relationships:
   - target: "概念/neural-networks"
     type: builds_on
 sources:
-  - 行业应用/AI_for_Science
+  - 18_行业应用/AI_for_Science
 summary: "AI for Science 用深度学习解决自然科学核心问题——蛋白质结构预测(AlphaFold)、药物发现、气象预测(GraphCast)、材料设计(GNoMe)、分子动力学模拟。"
 provenance:
   extracted: 0.40
@@ -179,7 +179,7 @@ AI 加速后:
 
 ## Related
 
-- [[行业应用/AI_for_Science/README]] — AI for Science 深度解析
+- [[18_行业应用/02_AI_for_Science/README]] — AI for Science 深度解析
 - [[概念/graph-neural-networks]] — GNN（AlphaFold/GNoMe 核心技术）
 - [[概念/generative-vision-models]] — 生成模型（扩散模型在分子生成中的应用）
 - [[概念/neural-networks]] — 神经网络基础

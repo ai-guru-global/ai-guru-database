@@ -40,8 +40,8 @@ Dario Amodei 是 AI 安全领域的制度化代表。2021 年他与姐姐 Daniel
 
 | 文件 | 内容 | 适用人群 |
 |------|------|----------|
-| [[业界观点/Dario_Amodei/about\|about]] | 完整人物简介：Anthropic、CAI、RSP | 所有读者 |
-| [[业界观点/Dario_Amodei/sayings\|sayings]] | 重要语录合集 | 研究者 |
+| [[19_业界观点/Dario_Amodei/about\|about]] | 完整人物简介：Anthropic、CAI、RSP | 所有读者 |
+| [[19_业界观点/Dario_Amodei/sayings\|sayings]] | 重要语录合集 | 研究者 |
 
 ---
 
@@ -81,7 +81,7 @@ Dario Amodei 是 AI 安全领域的制度化代表。2021 年他与姐姐 Daniel
 | 对齐 | Constitutional AI——用原则自我修正 | 2022 论文 |
 | 强大 AI | 可能在 2026-2027 到来 | 博文 |
 
-完整语录见 [[业界观点/Dario_Amodei/sayings|Amodei 语录]]。
+完整语录见 [[19_业界观点/Dario_Amodei/sayings|Amodei 语录]]。
 
 ---
 
@@ -98,10 +98,10 @@ Dario Amodei 是 AI 安全领域的制度化代表。2021 年他与姐姐 Daniel
 | 派别 | 归属 |
 |------|------|
 | 对齐/负责任扩展派 | 制度化代表 |
-| 闭源安全派 | 旗手（与 [[业界观点/Demis_Hassabis/about|Hassabis]]）|
+| 闭源安全派 | 旗手（与 [[19_业界观点/Demis_Hassabis/about|Hassabis]]）|
 | 规模信仰派 | 成员（Claude 也走 Scaling）|
 
-Amodei 的独特之处是**同时是 Scaling 派和安全派**——他相信强大 AI 即将到来，但用制度（RSP/ASL）而非暂停来管理。参见 [[业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix|AI 安全立场矩阵]]、[[业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026|开源 vs 闭源之争]]。
+Amodei 的独特之处是**同时是 Scaling 派和安全派**——他相信强大 AI 即将到来，但用制度（RSP/ASL）而非暂停来管理。参见 [[19_业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix|AI 安全立场矩阵]]、[[19_业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026|开源 vs 闭源之争]]。
 
 ---
 
@@ -110,9 +110,9 @@ Amodei 的独特之处是**同时是 Scaling 派和安全派**——他相信强
 | 关系 | 人物 |
 |------|------|
 | 联合创始人 | Daniela Amodei（姐姐）|
-| 前雇主 | OpenAI（与 [[业界观点/Sam_Altman/about|Altman]] 分歧离开）|
-| 闭源同盟 | [[业界观点/Demis_Hassabis/about|Hassabis]] |
-| 安全立场呼应 | [[业界观点/Geoffrey_Hinton/about|Hinton]] |
+| 前雇主 | OpenAI（与 [[19_业界观点/Sam_Altman/about|Altman]] 分歧离开）|
+| 闭源同盟 | [[19_业界观点/Demis_Hassabis/about|Hassabis]] |
+| 安全立场呼应 | [[19_业界观点/Geoffrey_Hinton/about|Hinton]] |
 
 ---
 
@@ -120,10 +120,10 @@ Amodei 的独特之处是**同时是 Scaling 派和安全派**——他相信强
 
 | 阶段 | 推荐内容 | 目标 |
 |------|----------|------|
-| 入门 | [[业界观点/Dario_Amodei/about\|about]] | 了解 Anthropic 与 CAI |
-| 进阶 | [[业界观点/Dario_Amodei/sayings\|sayings]] | 掌握安全立场 |
+| 入门 | [[19_业界观点/Dario_Amodei/about\|about]] | 了解 Anthropic 与 CAI |
+| 进阶 | [[19_业界观点/Dario_Amodei/sayings\|sayings]] | 掌握安全立场 |
 | 深入 | "Machines of Loving Grace" 博文 | 系统论述 |
-| 对比 | [[业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix\|安全矩阵]] | 派别定位 |
+| 对比 | [[19_业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix\|安全矩阵]] | 派别定位 |
 
 ---
 
@@ -163,12 +163,12 @@ Amodei 的独特之处是**同时是 Scaling 派和安全派**——他相信强
 
 ## 关联导航
 
-- [[业界观点/Dario_Amodei/about\|人物简介]] · [[业界观点/Dario_Amodei/sayings\|核心语录]]
-- [[业界观点/Sam_Altman/about\|Sam Altman]] · [[业界观点/Demis_Hassabis/about\|Demis Hassabis]]
-- [[业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix\|AI 安全立场矩阵]]
-- [[业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026\|开源 vs 闭源]]
-- [[业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix\|AGI 时间表矩阵]]
-- [[业界观点/index\|业界观点首页]]
+- [[19_业界观点/Dario_Amodei/about\|人物简介]] · [[19_业界观点/Dario_Amodei/sayings\|核心语录]]
+- [[19_业界观点/Sam_Altman/about\|Sam Altman]] · [[19_业界观点/Demis_Hassabis/about\|Demis Hassabis]]
+- [[19_业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix\|AI 安全立场矩阵]]
+- [[19_业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026\|开源 vs 闭源]]
+- [[19_业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix\|AGI 时间表矩阵]]
+- [[19_业界观点/index\|业界观点首页]]
 
 ---
 

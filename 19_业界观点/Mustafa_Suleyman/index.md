@@ -37,8 +37,8 @@ Mustafa Suleyman 的职业轨迹横跨 AI 安全与商业前沿。他 2010 年�
 
 | 文件 | 内容 | 适用人群 |
 |------|------|----------|
-| [[业界观点/Mustafa_Suleyman/about\|about]] | 完整人物简介：DeepMind、Inflection、Microsoft AI | 所有读者 |
-| [[业界观点/Mustafa_Suleyman/sayings\|sayings]] | 重要语录合集 | 研究者 |
+| [[19_业界观点/Mustafa_Suleyman/about\|about]] | 完整人物简介：DeepMind、Inflection、Microsoft AI | 所有读者 |
+| [[19_业界观点/Mustafa_Suleyman/sayings\|sayings]] | 重要语录合集 | 研究者 |
 
 ---
 
@@ -75,7 +75,7 @@ Mustafa Suleyman 的职业轨迹横跨 AI 安全与商业前沿。他 2010 年�
 | 治理 | 需要全球治理框架 | 多次 |
 | 扩散 | 技术扩散不可避免 | 多次 |
 
-完整语录见 [[业界观点/Mustafa_Suleyman/sayings|Suleyman 语录]]。
+完整语录见 [[19_业界观点/Mustafa_Suleyman/sayings|Suleyman 语录]]。
 
 ---
 
@@ -86,7 +86,7 @@ Mustafa Suleyman 的职业轨迹横跨 AI 安全与商业前沿。他 2010 年�
 | 遏制派 | 代表 |
 | 治理派 | 成员 |
 
-Suleyman 的独特之处是**从安全先锋转型为商业负责人**，立场介于加速与谨慎之间。参见 [[业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix|AI 安全立场矩阵]]。
+Suleyman 的独特之处是**从安全先锋转型为商业负责人**，立场介于加速与谨慎之间。参见 [[19_业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix|AI 安全立场矩阵]]。
 
 ---
 
@@ -94,9 +94,9 @@ Suleyman 的独特之处是**从安全先锋转型为商业负责人**，立场�
 
 | 关系 | 人物 |
 |------|------|
-| DeepMind 联合创始人 | [[业界观点/Demis_Hassabis/about\|Demis Hassabis]] |
-| Microsoft CEO | [[业界观点/Satya_Nadella/about\|Satya Nadella]] |
-| 微软顾问 | [[业界观点/Bill_Gates/about\|Bill Gates]] |
+| DeepMind 联合创始人 | [[19_业界观点/Demis_Hassabis/about\|Demis Hassabis]] |
+| Microsoft CEO | [[19_业界观点/Satya_Nadella/about\|Satya Nadella]] |
+| 微软顾问 | [[19_业界观点/Bill_Gates/about\|Bill Gates]] |
 
 ---
 
@@ -104,8 +104,8 @@ Suleyman 的独特之处是**从安全先锋转型为商业负责人**，立场�
 
 | 阶段 | 推荐内容 | 目标 |
 |------|----------|------|
-| 入门 | [[业界观点/Mustafa_Suleyman/about\|about]] | 了解多元轨迹 |
-| 进阶 | [[业界观点/Mustafa_Suleyman/sayings\|sayings]] | 掌握遏制哲学 |
+| 入门 | [[19_业界观点/Mustafa_Suleyman/about\|about]] | 了解多元轨迹 |
+| 进阶 | [[19_业界观点/Mustafa_Suleyman/sayings\|sayings]] | 掌握遏制哲学 |
 | 深入 | 《The Coming Wave》| 系统论述 |
 
 ---
@@ -143,11 +143,11 @@ Suleyman 的独特之处是**从安全先锋转型为商业负责人**，立场�
 
 ## 关联导航
 
-- [[业界观点/Mustafa_Suleyman/about\|人物简介]] · [[业界观点/Mustafa_Suleyman/sayings\|核心语录]]
-- [[业界观点/Demis_Hassabis/about\|Demis Hassabis]] · [[业界观点/Satya_Nadella/about\|Satya Nadella]]
-- [[业界观点/Bill_Gates/about\|Bill Gates]]
-- [[业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix\|AI 安全立场矩阵]]
-- [[业界观点/index\|业界观点首页]]
+- [[19_业界观点/Mustafa_Suleyman/about\|人物简介]] · [[19_业界观点/Mustafa_Suleyman/sayings\|核心语录]]
+- [[19_业界观点/Demis_Hassabis/about\|Demis Hassabis]] · [[19_业界观点/Satya_Nadella/about\|Satya Nadella]]
+- [[19_业界观点/Bill_Gates/about\|Bill Gates]]
+- [[19_业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix\|AI 安全立场矩阵]]
+- [[19_业界观点/index\|业界观点首页]]
 
 ---
 

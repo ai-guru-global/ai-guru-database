@@ -257,6 +257,6 @@ spec:
 - [[概念/hami]] -- HAMi GPU 虚拟化
 - [[概念/helm]] -- Helm 包管理器
 - [[治理/serving-deployment]] -- 模型服务 x 模型部署
-- [[架构基建/Kubernetes_Core_Components_Deep_Dive]] -- K8s 核心组件深度解析
-- [[运维/Kubernetes_Troubleshooting_Playbook]] -- K8s 运维排障 Playbook
+- [[12_架构基建/Kubernetes_Core_Components_Deep_Dive]] -- K8s 核心组件深度解析
+- [[13_运维/Kubernetes_Troubleshooting_Playbook]] -- K8s 运维排障 Playbook
 - [[概念/model-deployment]] -- 模型部署全景

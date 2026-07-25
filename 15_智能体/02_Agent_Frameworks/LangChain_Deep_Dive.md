@@ -501,8 +501,8 @@ add_routes(app, chain, path="/chain")
 
 ## Related
 
-- [[智能体/Agent_Evaluation/Implementation/LLM_as_Judge_Templates.md|LLM_as_Judge_Templates]]
-- [[智能体/Agent_Evaluation/Agent_Harness_Complete_2026.md|Agent_Harness_Complete_2026]]
-- [[智能体/Agent_Evaluation/Agent_Red_Teaming_2026.md|Agent_Red_Teaming_2026]]
-- [[智能体/Agent_Evaluation/Assessment/Evaluation_Workflow.md|Evaluation_Workflow]]
-- [[智能体/Agent_Evaluation/Assessment/Production_Assessment.md|Production_Assessment]]
+- [[15_智能体/07_Agent_Evaluation/Implementation/LLM_as_Judge_Templates.md|LLM_as_Judge_Templates]]
+- [[15_智能体/07_Agent_Evaluation/Agent_Harness_Complete_2026.md|Agent_Harness_Complete_2026]]
+- [[15_智能体/07_Agent_Evaluation/Agent_Red_Teaming_2026.md|Agent_Red_Teaming_2026]]
+- [[15_智能体/07_Agent_Evaluation/Assessment/Evaluation_Workflow.md|Evaluation_Workflow]]
+- [[15_智能体/07_Agent_Evaluation/Assessment/Production_Assessment.md|Production_Assessment]]

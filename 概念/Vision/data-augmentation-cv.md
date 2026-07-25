@@ -11,7 +11,7 @@ relationships:
   - target: "[[概念/Vision/object-detection]]"
     type: related_to
 sources:
-  - 计算机视觉/Data_Augmentation.md
+  - 04_计算机视觉/Data_Augmentation.md
 summary: 计算机视觉数据增强通过对训练图像施加几何/光度/混合变换，在不收集新数据的前提下提升模型泛化能力。MixUp、CutMix、RandAugment 等方法已成为现代 CV 训练流水线的标配组件。
 provenance:
   extracted: 0.85
@@ -291,7 +291,7 @@ def cutmix_data(x, y, alpha=1.0):
 
 ## 来源
 
-- 计算机视觉/Data_Augmentation.md
+- 04_计算机视觉/Data_Augmentation.md
 - Zhang et al., "mixup: Beyond Empirical Risk Minimization", ICLR 2018
 - Cubuk et al., "RandAugment: Practical automated data augmentation", NeurIPS 2020
 

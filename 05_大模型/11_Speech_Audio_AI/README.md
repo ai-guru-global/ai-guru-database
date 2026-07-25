@@ -22,7 +22,7 @@ sources: []
 ## 前置知识
 
 - [[LLM_Architectures]] — LLM 架构基础
-- [[大模型/Multimodal_Models/Native_Multimodal_Architectures|多模态模型]] — 多模态模型
+- [[05_大模型/10_Multimodal_Models/Native_Multimodal_Architectures|多模态模型]] — 多模态模型
 
 ## ASR 模型对比
 
@@ -129,9 +129,9 @@ sources: []
 
 ## Related
 
-- [[大模型/Multimodal_Models/index|Multimodal Models]]
-- [[大模型/index|大模型首页]]
-- [[计算机视觉/index|计算机视觉]]
+- [[05_大模型/10_Multimodal_Models/index|Multimodal Models]]
+- [[05_大模型/index|大模型首页]]
+- [[04_计算机视觉/index|计算机视觉]]
 
 ## 附录：开源工具
 

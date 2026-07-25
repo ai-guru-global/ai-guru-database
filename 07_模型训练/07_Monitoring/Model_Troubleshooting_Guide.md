@@ -628,13 +628,13 @@ python -m vllm.entrypoints.openai.api_server \
 
 ## 相关文档
 
-- [分布式训练](模型训练/Distributed_Training/Distributed_Training_2026.md) — ZeRO、TP/PP 详细配置
-- [混合精度训练](模型训练/Optimization/Mixed_Precision_Training.md) — FP16/BF16/FP8 深度解析
-- [PEFT/LoRA 详解](大模型/Fine_tuning_Techniques/PEFT_2026.md) — LoRA/QLoRA/DoRA 全面指南
-- [量化技术](部署推理/Quantization/Quantization_Techniques_2026.md) — GPTQ/AWQ/GGUF 量化深度解析
-- [vLLM 深度解析](部署推理/Inference_Engines/vLLM_Deep_Dive.md) — vLLM 配置与优化
-- [llama.cpp 深度解析](部署推理/Inference_Engines/llama_cpp_Deep_Dive.md) — llama.cpp 使用指南
-- [投机解码](部署推理/Caching/Speculative_Decoding_Advanced_2026.md) — 推理加速方案
+- [分布式训练](07_模型训练/04_Distributed_Training/Distributed_Training_2026.md) — ZeRO、TP/PP 详细配置
+- [混合精度训练](07_模型训练/03_Optimization/Mixed_Precision_Training.md) — FP16/BF16/FP8 深度解析
+- [PEFT/LoRA 详解](05_大模型/07_Fine_tuning_Techniques/PEFT_2026.md) — LoRA/QLoRA/DoRA 全面指南
+- [量化技术](10_部署推理/05_Quantization/Quantization_Techniques_2026.md) — GPTQ/AWQ/GGUF 量化深度解析
+- [vLLM 深度解析](10_部署推理/02_Inference_Engines/vLLM_Deep_Dive.md) — vLLM 配置与优化
+- [llama.cpp 深度解析](10_部署推理/02_Inference_Engines/llama_cpp_Deep_Dive.md) — llama.cpp 使用指南
+- [投机解码](10_部署推理/06_Caching/Speculative_Decoding_Advanced_2026.md) — 推理加速方案
 
 ---
 
@@ -642,9 +642,9 @@ python -m vllm.entrypoints.openai.api_server \
 
 ## 相关链接
 
-- [[模型训练/Monitoring/index|监控索引]] — 训练监控主题导览
-- [[模型训练/Monitoring/Training_Monitoring_2026|训练监控 2026]] — 监控实践
-- [[模型训练/Monitoring/Training_Job_Diagnosis_Workflow|训练任务诊断流程]] — 诊断方法论
-- [[模型训练/Monitoring/LLM_Fine_Tuning_Job_Failure_Runbook_on_K8s|K8s 微调任务故障 Runbook]] — 故障排查手册
-- [[模型训练/Distributed_Training/Distributed_Training_Hang_Runbook|分布式训练卡死 Runbook]] — 分布式训练故障
+- [[07_模型训练/07_Monitoring/index|监控索引]] — 训练监控主题导览
+- [[07_模型训练/07_Monitoring/Training_Monitoring_2026|训练监控 2026]] — 监控实践
+- [[07_模型训练/07_Monitoring/Training_Job_Diagnosis_Workflow|训练任务诊断流程]] — 诊断方法论
+- [[07_模型训练/07_Monitoring/LLM_Fine_Tuning_Job_Failure_Runbook_on_K8s|K8s 微调任务故障 Runbook]] — 故障排查手册
+- [[07_模型训练/04_Distributed_Training/Distributed_Training_Hang_Runbook|分布式训练卡死 Runbook]] — 分布式训练故障
 - [[概念/GPU/gpu-oom|GPU OOM]] — 常见训练故障

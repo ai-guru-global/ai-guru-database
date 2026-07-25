@@ -31,12 +31,12 @@ tags: [training-visualization, index, navigation]
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[可视化/Training_Viz/Training_Monitoring_Visualization\|Training Monitoring Visualization]] | Loss/梯度/激活的实时跟踪与告警 | ML 工程师 / 深度学习实践者 |
-| [[可视化/Training_Viz/Training_Curves_Analysis\|Training Curves Analysis]] | 训练曲线深度分析（损失/梯度/学习率诊断） | ML 工程师 / 调参者 |
-| [[可视化/Training_Viz/Embedding_Visualization_Guide\|Embedding Visualization Guide]] | 嵌入空间投影与聚类可视化 | DL 研究员 |
-| [[可视化/Training_Viz/Neural_Network_Visualization_Guide\|Neural Network Visualization Guide]] | 网络结构、特征图与神经元可视化 | DL 研究员 |
-| [[可视化/Training_Viz/Experiment_Tracking_Visualization\|Experiment Tracking Visualization]] | 多实验对比、超参搜索与追踪 | ML 工程师 |
-| [[可视化/Training_Viz/Data_Pipeline_Feature_Visualization\|Data Pipeline & Feature Visualization]] | 数据分布、特征统计与管道健康度 | 数据工程师 |
+| [[94_可视化/Training_Viz/Training_Monitoring_Visualization\|Training Monitoring Visualization]] | Loss/梯度/激活的实时跟踪与告警 | ML 工程师 / 深度学习实践者 |
+| [[94_可视化/Training_Viz/Training_Curves_Analysis\|Training Curves Analysis]] | 训练曲线深度分析（损失/梯度/学习率诊断） | ML 工程师 / 调参者 |
+| [[94_可视化/Training_Viz/Embedding_Visualization_Guide\|Embedding Visualization Guide]] | 嵌入空间投影与聚类可视化 | DL 研究员 |
+| [[94_可视化/Training_Viz/Neural_Network_Visualization_Guide\|Neural Network Visualization Guide]] | 网络结构、特征图与神经元可视化 | DL 研究员 |
+| [[94_可视化/Training_Viz/Experiment_Tracking_Visualization\|Experiment Tracking Visualization]] | 多实验对比、超参搜索与追踪 | ML 工程师 |
+| [[94_可视化/Training_Viz/Data_Pipeline_Feature_Visualization\|Data Pipeline & Feature Visualization]] | 数据分布、特征统计与管道健康度 | 数据工程师 |
 
 ---
 
@@ -52,7 +52,7 @@ tags: [training-visualization, index, navigation]
 | 学习率 | step | lr | 调度策略是否合理 |
 | 指标曲线 | step | accuracy/F1 | 性能走势 |
 
-详见 [[可视化/Training_Viz/Training_Curves_Analysis|训练曲线分析]]。
+详见 [[94_可视化/Training_Viz/Training_Curves_Analysis|训练曲线分析]]。
 
 ### 3.2 权重与梯度分布
 
@@ -64,7 +64,7 @@ tags: [training-visualization, index, navigation]
 
 ### 3.3 嵌入与网络结构
 
-详见 [[可视化/Training_Viz/Embedding_Visualization_Guide|嵌入可视化]] 与 [[可视化/Training_Viz/Neural_Network_Visualization_Guide|网络可视化]]。
+详见 [[94_可视化/Training_Viz/Embedding_Visualization_Guide|嵌入可视化]] 与 [[94_可视化/Training_Viz/Neural_Network_Visualization_Guide|网络可视化]]。
 
 ---
 
@@ -89,7 +89,7 @@ flowchart TD
 | 工具 | 训练可视化强项 | 关联 |
 |------|----------------|------|
 | TensorBoard | 原生曲线/直方图/嵌入投影 | 训练监控 |
-| Weights & Biases | 实验对比/超参搜索/协作 | [[测试/Weights_Biases_Deep_Dive\|W&B]] |
+| Weights & Biases | 实验对比/超参搜索/协作 | [[09_测试/Weights_Biases_Deep_Dive\|W&B]] |
 | MLflow | 实验追踪/模型注册 | 实验追踪 |
 | ClearML / Comet | 实验管理 | 实验追踪 |
 | 自建 Dashboard | 定制化监控 | ECharts/Plotly |
@@ -187,13 +187,13 @@ flowchart TD
 
 ## 关联
 
-- [[可视化/index|可视化首页]]
-- [[可视化/Best_Practices/index|Best Practices]]
-- [[可视化/Evaluation_Viz/index|Evaluation Viz]]
-- [[模型训练/index|模型训练]]
-- [[测试/Weights_Biases_Deep_Dive|Weights & Biases]]
-- [[深度学习/index|深度学习]]
-- [[模型运维/index|模型运维]]
+- [[94_可视化/index|可视化首页]]
+- [[94_可视化/Best_Practices/index|Best Practices]]
+- [[94_可视化/Evaluation_Viz/index|Evaluation Viz]]
+- [[07_模型训练/index|模型训练]]
+- [[09_测试/Weights_Biases_Deep_Dive|Weights & Biases]]
+- [[03_深度学习/index|深度学习]]
+- [[11_模型运维/index|模型运维]]
 
 ---
 

@@ -298,10 +298,10 @@ flowchart TB
 
 ## 6. 与其他章节的关联
 
-- [Fine-tuning 策略](大模型/Fine_tuning_Techniques/Fine_tuning_Strategies.md) — 模型合并 vs 参数高效微调
-- [LLaMA 模型](../../大模型/LLM_Architectures/) — 最常用的合并基础模型
-- [模型评估](../../模型评估/) — 合并后如何评估模型质量
-- [开源项目概览](智能体/Agent_Foundations/AI_OpenSource_Projects_Overview.md) — 开源社区的热门合并模型
+- [Fine-tuning 策略](05_大模型/07_Fine_tuning_Techniques/Fine_tuning_Strategies.md) — 模型合并 vs 参数高效微调
+- [LLaMA 模型](../../05_大模型/05_LLM_Architectures/) — 最常用的合并基础模型
+- [模型评估](../../08_模型评估/) — 合并后如何评估模型质量
+- [开源项目概览](15_智能体/01_Agent_Foundations/AI_OpenSource_Projects_Overview.md) — 开源社区的热门合并模型
 
 ---
 
@@ -309,8 +309,8 @@ flowchart TB
 
 ## 相关链接
 
-- [[大模型/Fine_tuning_Techniques/README|微调技术概览]] — 微调技术主题导览
-- [[大模型/Fine_tuning_Techniques/PEFT_2026|PEFT 2026 完全指南]] — 参数高效微调（合并常用基础）
-- [[大模型/Fine_tuning_Techniques/Fine_tuning_Techniques|微调技术]] — 微调技术完整版
+- [[05_大模型/07_Fine_tuning_Techniques/README|微调技术概览]] — 微调技术主题导览
+- [[05_大模型/07_Fine_tuning_Techniques/PEFT_2026|PEFT 2026 完全指南]] — 参数高效微调（合并常用基础）
+- [[05_大模型/07_Fine_tuning_Techniques/Fine_tuning_Techniques|微调技术]] — 微调技术完整版
 - [[概念/Training/lora-peft|LoRA/PEFT]] — 合并通常基于 LoRA 适配器
 - [[概念/LLM/llama-series|LLaMA 系列]] — 合并生态最活跃的开源模型族

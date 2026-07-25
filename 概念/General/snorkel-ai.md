@@ -8,7 +8,7 @@ relationships:
   - target: "概念/feast"
     type: related_to
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
 summary: "斯坦福开源的数据编程平台，通过弱监督学习（Weak Supervision）自动生成训练标签，减少 90% 的人工标注需求，企业版支持 LLM 数据工程。"
 provenance:
   extracted: 0.50

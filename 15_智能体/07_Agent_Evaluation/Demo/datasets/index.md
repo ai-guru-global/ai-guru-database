@@ -15,17 +15,17 @@ tags: [auto-index]
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[智能体/Agent_Evaluation/Demo/datasets/k8s_qa_benchmark|k8s qa benchmark]] | K8s QA benchmark test dataset | evaluation engineers |
-| [[智能体/Agent_Evaluation/Demo/datasets/k8s_corpus_coverage|k8s corpus coverage]] | K8s corpus coverage test dataset | evaluation engineers |
-| [[智能体/Agent_Evaluation/Demo/datasets/cloud_knowledge_qa|cloud knowledge qa]] | Cloud knowledge QA dataset | evaluation engineers |
-| [[智能体/Agent_Evaluation/Demo/datasets/task_completion|task completion]] | Task completion evaluation dataset | evaluation engineers |
-| [[智能体/Agent_Evaluation/Demo/datasets/interaction_quality|interaction quality]] | Interaction quality assessment dataset | evaluation engineers |
-| [[智能体/Agent_Evaluation/Demo/datasets/safety_test|safety test]] | Safety boundary test dataset | security engineers |
+| [[15_智能体/07_Agent_Evaluation/Demo/datasets/k8s_qa_benchmark|k8s qa benchmark]] | K8s QA benchmark test dataset | evaluation engineers |
+| [[15_智能体/07_Agent_Evaluation/Demo/datasets/k8s_corpus_coverage|k8s corpus coverage]] | K8s corpus coverage test dataset | evaluation engineers |
+| [[15_智能体/07_Agent_Evaluation/Demo/datasets/cloud_knowledge_qa|cloud knowledge qa]] | Cloud knowledge QA dataset | evaluation engineers |
+| [[15_智能体/07_Agent_Evaluation/Demo/datasets/task_completion|task completion]] | Task completion evaluation dataset | evaluation engineers |
+| [[15_智能体/07_Agent_Evaluation/Demo/datasets/interaction_quality|interaction quality]] | Interaction quality assessment dataset | evaluation engineers |
+| [[15_智能体/07_Agent_Evaluation/Demo/datasets/safety_test|safety test]] | Safety boundary test dataset | security engineers |
 
 ## Related
 
-- [[智能体/Agent_Evaluation/Demo/index|Demo 首页]]
-- [[智能体/Agent_Evaluation/Test_Bank/index|题库管理]]
+- [[15_智能体/07_Agent_Evaluation/Demo/index|Demo 首页]]
+- [[15_智能体/07_Agent_Evaluation/Test_Bank/index|题库管理]]
 
 ## datasets 核心概念
 

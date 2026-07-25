@@ -268,7 +268,7 @@ model = mlflow.pyfunc.load_model("models:/qwen2-7b-sft/Production")
 
 ### 9.1 MLflow Tracking Server 不可达
 
-参考 [[模型运维/Troubleshooting/MLflow_Tracking_Server_Unreachable|MLflow Tracking Server 不可达排障]]。
+参考 [[11_模型运维/12_Troubleshooting/MLflow_Tracking_Server_Unreachable|MLflow Tracking Server 不可达排障]]。
 
 ### 9.2 训练任务 Pod Pending
 
@@ -279,7 +279,7 @@ model = mlflow.pyfunc.load_model("models:/qwen2-7b-sft/Production")
 
 ### 9.3 推理服务延迟高
 
-参考 [[运维/SRE_Reliability/LLM_Inference_Slow_Unavailable_Runbook|LLM 推理延迟/不可用 Runbook]]。
+参考 [[13_运维/02_SRE_Reliability/LLM_Inference_Slow_Unavailable_Runbook|LLM 推理延迟/不可用 Runbook]]。
 
 ---
 
@@ -304,8 +304,8 @@ model = mlflow.pyfunc.load_model("models:/qwen2-7b-sft/Production")
 - [[概念/mlflow|MLflow]]
 - [[概念/mlops|MLOps]]
 - [[概念/kserve|KServe]]
-- [[模型运维/Troubleshooting/MLflow_Tracking_Server_Unreachable|MLflow Tracking Server 不可达排障]]
-- [[架构基建/AI_Stack_Production_Toolchain|AI Stack 生产工具链总览]]
-- [[架构基建/AI_Stack_Training_Launchers_Guide|AI Stack 训练启动器指南]]
+- [[11_模型运维/12_Troubleshooting/MLflow_Tracking_Server_Unreachable|MLflow Tracking Server 不可达排障]]
+- [[12_架构基建/AI_Stack_Production_Toolchain|AI Stack 生产工具链总览]]
+- [[12_架构基建/AI_Stack_Training_Launchers_Guide|AI Stack 训练启动器指南]]
 
-- [[架构基建/README|架构与基础设施 (Architecture & Infrastructure)]]
+- [[12_架构基建/README|架构与基础设施 (Architecture & Infrastructure)]]

@@ -618,13 +618,13 @@ ROI = (年节省成本 - 年运营成本) / 总投资成本
 ## 相关概念
 
 > **关联**:
-> - [[行业应用/Manufacturing_index|制造业 AI]]
-> - [[行业应用/Healthcare/AI_Healthcare_Applications_2026|医疗 AI]]
-> - [[强化学习/README|强化学习]]
+> - [[18_行业应用/Manufacturing_index|制造业 AI]]
+> - [[18_行业应用/03_Healthcare/AI_Healthcare_Applications_2026|医疗 AI]]
+> - [[06_强化学习/README|强化学习]]
 > - [[多模态/README|多模态 AI]]
 > - [[LLM/README|大语言模型]]
-> - [[智能体/README|AI Agent]]
-> - [[计算机视觉/README|计算机视觉]]
-> - [[行业应用/Autonomous_Driving_index|自动驾驶]]
-> - [[行业应用/Robotics/index|机器人 AI 目录]]
-> - [[行业应用/AI_Gaming_Entertainment_2026|游戏娱乐 AI]]
+> - [[15_智能体/README|AI Agent]]
+> - [[04_计算机视觉/README|计算机视觉]]
+> - [[18_行业应用/Autonomous_Driving_index|自动驾驶]]
+> - [[18_行业应用/Robotics/index|机器人 AI 目录]]
+> - [[18_行业应用/AI_Gaming_Entertainment_2026|游戏娱乐 AI]]

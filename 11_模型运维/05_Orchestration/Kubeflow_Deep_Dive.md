@@ -20,7 +20,7 @@ sources: []
 
 > **一句话理解**: Kubeflow 是云原生机器学习平台——在 K8s 上运行 ML 工作流、分布式训练、超参数调优、模型服务，开源 ML Platform。
 
-> 📐 **概念与选型方法论**: 流水线编排的原理、Kubeflow vs Airflow vs Prefect 选型，见 [[模型运维/Orchestration/Data_Pipeline_Orchestration]]。本文聚焦 Kubeflow 工具用法。
+> 📐 **概念与选型方法论**: 流水线编排的原理、Kubeflow vs Airflow vs Prefect 选型，见 [[11_模型运维/05_Orchestration/Data_Pipeline_Orchestration]]。本文聚焦 Kubeflow 工具用法。
 
 ---
 
@@ -383,8 +383,8 @@ if __name__ == "__main__":
 
 ## Related
 
-- [[运维/AIOps_Fundamentals/AIOps-in-nutshell.md|AIOps-in-nutshell]]
-- [[运维/SRE_Reliability/AI_Incident_Response_Playbook|AI_Incident_Response_Playbook]]
-- [[运维/AIOps_Fundamentals/AI_Ops_for_dummy.md|AI_Ops_for_dummy]]
-- [[运维/README.md|运维 README]]
-- [[运维/README_for_dummy.md|README_for_dummy]]
+- [[13_运维/01_AIOps_Fundamentals/AIOps-in-nutshell.md|AIOps-in-nutshell]]
+- [[13_运维/02_SRE_Reliability/AI_Incident_Response_Playbook|AI_Incident_Response_Playbook]]
+- [[13_运维/01_AIOps_Fundamentals/AI_Ops_for_dummy.md|AI_Ops_for_dummy]]
+- [[13_运维/README.md|运维 README]]
+- [[13_运维/README_for_dummy.md|README_for_dummy]]

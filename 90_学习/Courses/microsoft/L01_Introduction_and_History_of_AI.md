@@ -50,7 +50,7 @@ sources: []
   模仿大脑中大量简单神经元（Neurons）的连接与学习机制。通过提供训练数据（Training Data），人工神经网络（Artificial Neural Network）可以从示例中自动调整权重并学会任务，更接近婴儿通过观察学习世界的方式。
 
 - **机器学习（Machine Learning, ML）**
-  AI 的一个子领域，让计算机基于数据学习解决问题。本课程主要聚焦神经网络与深度学习，经典 ML（如决策树、SVM）可参考微软 [ML-For-Beginners](https://github.com/microsoft/ML-For-Beginners) 或本库 [[机器学习/README]]。
+  AI 的一个子领域，让计算机基于数据学习解决问题。本课程主要聚焦神经网络与深度学习，经典 ML（如决策树、SVM）可参考微软 [ML-For-Beginners](https://github.com/microsoft/ML-For-Beginners) 或本库 [[02_机器学习/README]]。
 
 ## 关键知识点
 
@@ -94,18 +94,18 @@ sources: []
 
 - **不覆盖**：
   - 如何具体实现神经网络训练（后续 L03–L05 逐步展开）。
-  - 经典机器学习算法细节（推荐配合 [[机器学习/README]] 或 ML-For-Beginners 课程）。
+  - 经典机器学习算法细节（推荐配合 [[02_机器学习/README]] 或 ML-For-Beginners 课程）。
   - AI 伦理与负责任 AI（L24 专门讨论）。
 - **延伸**：
-  - 想深入 AI 发展时间线：[[入门/AI_History_Timeline]]
-  - 想巩固 AI 基础概念：[[入门/AI_Fundamentals]]
-  - 想了解神经网络核心机制：[[深度学习/Neural_Network_Core/Neural_Network_Core]]
-  - 想了解现代深度学习爆发背景：[[大模型/LLM_Architectures/LLM_Architectures]]、[[计算机视觉/README]]
+  - 想深入 AI 发展时间线：[[00_入门/AI_History_Timeline]]
+  - 想巩固 AI 基础概念：[[00_入门/AI_Fundamentals]]
+  - 想了解神经网络核心机制：[[03_深度学习/02_Neural_Network_Core/Neural_Network_Core]]
+  - 想了解现代深度学习爆发背景：[[05_大模型/05_LLM_Architectures/LLM_Architectures]]、[[04_计算机视觉/README]]
 
 ## 相关阅读
 
-- 课程索引：[[学习/courses/microsoft/microsoft_ai_for_beginners]]
-- 本库相关页面：[[入门/AI_Fundamentals]]、[[入门/AI_History_Timeline]]
+- 课程索引：[[90_学习/courses/microsoft/microsoft_ai_for_beginners]]
+- 本库相关页面：[[00_入门/AI_Fundamentals]]、[[00_入门/AI_History_Timeline]]
 
 ## 核心知识框架
 

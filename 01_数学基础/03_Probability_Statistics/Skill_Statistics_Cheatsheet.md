@@ -85,11 +85,11 @@ Skill 的 A/B 测试能力通常需要以下统计支撑。
 
 ## Related
 
-- [[智能体/Agent_Skills/README|Agent Skills]]
-- [[学习/References/index|References Index]]
-- [[测试/AB_Testing_AI_Systems|A/B Testing AI Systems]]
-- [[模型评估/Evaluation_Metrics|Evaluation Metrics]]
-- [[机器学习/Probability_Statistics/index|Probability and Statistics]]
+- [[15_智能体/05_Agent_Skills/README|Agent Skills]]
+- [[90_学习/References/index|References Index]]
+- [[09_测试/AB_Testing_AI_Systems|A/B Testing AI Systems]]
+- [[08_模型评估/Evaluation_Metrics|Evaluation Metrics]]
+- [[02_机器学习/Probability_Statistics/index|Probability and Statistics]]
 
 ## 进阶知识拓展
 
@@ -127,9 +127,9 @@ Skill 的 A/B 测试能力通常需要以下统计支撑。
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

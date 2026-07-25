@@ -33,20 +33,20 @@ sources: []
 
 ### 融合的三个层面
 
-1. **RAG 作为 Agent 工具** ([[RAG系统/Advanced_RAG/RAG_Advanced_2026]]):
+1. **RAG 作为 Agent 工具** ([[14_RAG系统/04_Advanced_RAG/RAG_Advanced_2026]]):
    - Agent 将 RAG 检索作为一个 Tool Calling 动作
    - 决定何时检索、检索什么、如何使用结果
-   - 参考: [[智能体/Agent_Skills/Tool_Calling_Best_Practices]]
+   - 参考: [[15_智能体/05_Agent_Skills/Tool_Calling_Best_Practices]]
 
-2. **Agent 增强 RAG** ([[强化学习/AI_Agents/AI_Agents]]):
+2. **Agent 增强 RAG** ([[06_强化学习/AI_Agents/AI_Agents]]):
    - Agent 自主优化检索策略（选择数据库、调整查询）
    - 多步检索 + 推理循环（ReAct 模式）
    - 自我验证检索结果的相关性
 
 3. **统一架构**:
-   - LangGraph 实现 RAG + Agent 工作流 ([[智能体/Agent_Workflow/LangGraph_Deep_Dive]])
-   - 数据摄入管道自动化 ([[RAG系统/Advanced_RAG/Data_Ingestion_Pipeline]])
-   - 评估体系统一 ([[模型评估/Evaluation_Metrics]])
+   - LangGraph 实现 RAG + Agent 工作流 ([[15_智能体/03_Agent_Workflow/LangGraph_Deep_Dive]])
+   - 数据摄入管道自动化 ([[14_RAG系统/04_Advanced_RAG/Data_Ingestion_Pipeline]])
+   - 评估体系统一 ([[08_模型评估/Evaluation_Metrics]])
 
 ### 关键挑战
 
@@ -70,11 +70,11 @@ sources: []
 
 ## 相关页面
 
-- [[RAG系统/RAG_Systems]] — RAG 系统全景
-- [[RAG系统/Advanced_RAG/RAG_Advanced_2026]] — RAG 高级实践
-- [[智能体/README]] — Agent 生产部署
-- [[智能体/Agent_Workflow/Agentic_Workflow_Design_Patterns_2026]] — Agentic 工作流设计模式
-- [[智能体/Agent_Skills/Tool_Calling_Best_Practices]] — Tool Calling 最佳实践
+- [[14_RAG系统/RAG_Systems]] — RAG 系统全景
+- [[14_RAG系统/04_Advanced_RAG/RAG_Advanced_2026]] — RAG 高级实践
+- [[15_智能体/README]] — Agent 生产部署
+- [[15_智能体/03_Agent_Workflow/Agentic_Workflow_Design_Patterns_2026]] — Agentic 工作流设计模式
+- [[15_智能体/05_Agent_Skills/Tool_Calling_Best_Practices]] — Tool Calling 最佳实践
 
 ## 附录：核心概念速查
 
@@ -195,14 +195,14 @@ sources: []
 
 | 关联主题 | 关系 | 参考路径 |
 |----------|------|----------|
-| Agent基础理论 | 前置知识 | 智能体/Agent_Foundations/ |
-| 框架与工具 | 实现支撑 | 智能体/Agent_Frameworks/ |
-| 评估与测试 | 质量保障 | 智能体/Agent_Evaluation/ |
-| 协议与标准 | 互操作基础 | 智能体/Agent_Protocols/ |
-| 生产部署 | 运维实践 | 智能体/Enterprise_Agent/ |
-| 记忆系统 | 核心能力 | 智能体/Memory_Infrastructure/ |
-| 工作流编排 | 执行引擎 | 智能体/Agent_Workflow/ |
-| 技能扩展 | 能力增强 | 智能体/Agent_Skills/ |
+| Agent基础理论 | 前置知识 | 15_智能体/01_Agent_Foundations/ |
+| 框架与工具 | 实现支撑 | 15_智能体/02_Agent_Frameworks/ |
+| 评估与测试 | 质量保障 | 15_智能体/07_Agent_Evaluation/ |
+| 协议与标准 | 互操作基础 | 15_智能体/Agent_Protocols/ |
+| 生产部署 | 运维实践 | 15_智能体/10_Enterprise_Agent/ |
+| 记忆系统 | 核心能力 | 15_智能体/06_Memory_Infrastructure/ |
+| 工作流编排 | 执行引擎 | 15_智能体/03_Agent_Workflow/ |
+| 技能扩展 | 能力增强 | 15_智能体/05_Agent_Skills/ |
 
 ## 版本与更新记录
 

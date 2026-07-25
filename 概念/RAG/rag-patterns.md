@@ -10,8 +10,8 @@ relationships:
   - target: "概念/long-context-vs-rag"
     type: compares_with
 sources:
-  - RAG系统/README.md
-  - RAG系统/Advanced_RAG/RAG_Advanced_2026.md
+  - 14_RAG系统/README.md
+  - 14_RAG系统/04_Advanced_RAG/RAG_Advanced_2026.md
 summary: "RAG 模式分类把检索增强生成按架构复杂度分为四级：Naive RAG（检索-拼接）、Advanced/Modular RAG（查询改写+重排序）、Agentic RAG（自主检索迭代）、Graph RAG（知识图谱检索）。从简单到复杂，按任务难度选型。"
 provenance:
   extracted: 0.75
@@ -100,7 +100,7 @@ Level 4: Graph / Structured RAG（图结构 RAG）
 - [[概念/long-context-vs-rag|长上下文 vs RAG]] — 选型对比
 - [[概念/vector-database|向量数据库]] — RAG 存储基础
 - [[概念/reranker|Reranker]] — 重排序模型
-- [[RAG系统/README|RAG 系统]] — 章节主页
+- [[14_RAG系统/README|RAG 系统]] — 章节主页
 - [[概念/rag-production-architecture|RAG 生产架构]] — 从模式到生产落地的工程体系
 
 ---

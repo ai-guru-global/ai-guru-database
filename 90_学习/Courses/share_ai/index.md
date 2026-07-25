@@ -15,11 +15,11 @@ Share AI 课程 — 国内外 AI 实战课程与分享，聚焦工具使用（to
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[学习/Courses/share_ai/learn_claude_code|learn claude code]] | Claude Code usage tutorial and best practices | developer tool users |
+| [[90_学习/Courses/share_ai/learn_claude_code|learn claude code]] | Claude Code usage tutorial and best practices | developer tool users |
 
 ## Related
 
-- [[学习/Courses/index|课程总览]]
+- [[90_学习/Courses/index|课程总览]]
 
 ## 核心知识框架
 

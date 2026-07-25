@@ -40,9 +40,9 @@ sources: []
 - 视频理解架构：时空注意力、帧采样策略
 
 **建议新建页面**:
-- ✅ `大模型/Multimodal_Models/Native_Multimodal_Architectures.md` — 已创建 (12.8 KB)
-- ✅ `大模型/Multimodal_Models/Modality_Fusion_Mechanisms.md` — 已创建 (14.2 KB)
-- ✅ `大模型/Multimodal_Models/Video_Understanding_Architectures.md` — 已创建 (15.9 KB)
+- ✅ `05_大模型/10_Multimodal_Models/Native_Multimodal_Architectures.md` — 已创建 (12.8 KB)
+- ✅ `05_大模型/10_Multimodal_Models/Modality_Fusion_Mechanisms.md` — 已创建 (14.2 KB)
+- ✅ `05_大模型/10_Multimodal_Models/Video_Understanding_Architectures.md` — 已创建 (15.9 KB)
 
 ---
 
@@ -59,8 +59,8 @@ sources: []
 - MoE 的通信开销与 All-to-All 优化
 
 **建议新建页面**:
-- ✅ `大模型/LLM_Architectures/MoE_Routing_and_Load_Balancing.md` — 已创建 (15.1 KB)
-- ✅ `大模型/LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md` — 已创建 (11.1 KB)
+- ✅ `05_大模型/05_LLM_Architectures/MoE_Routing_and_Load_Balancing.md` — 已创建 (15.1 KB)
+- ✅ `05_大模型/05_LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral.md` — 已创建 (11.1 KB)
 
 ---
 
@@ -77,8 +77,8 @@ sources: []
 - 多模态幻觉评测：POPE、MMHal-Bench
 
 **建议新建页面**:
-- ✅ `模型评估/Benchmarks/Multimodal_Evaluation_Benchmarks.md` — 已创建 (11.7 KB)
-- ✅ `模型评估/Benchmarks/Long_Context_Evaluation.md` — 已创建 (12.9 KB)
+- ✅ `08_模型评估/02_Benchmarks/Multimodal_Evaluation_Benchmarks.md` — 已创建 (11.7 KB)
+- ✅ `08_模型评估/02_Benchmarks/Long_Context_Evaluation.md` — 已创建 (12.9 KB)
 
 ---
 
@@ -94,8 +94,8 @@ sources: []
 - 何时选择替代架构？长序列、低延迟、内存受限场景
 
 **建议新建页面**:
-- ✅ `深度学习/State_Space_Models_2026.md` — 已扩充 RWKV/RetNet
-- ✅ `大模型/LLM_Architectures/Transformer_Alternatives.md` — 已创建 (13.7 KB)
+- ✅ `03_深度学习/State_Space_Models_2026.md` — 已扩充 RWKV/RetNet
+- ✅ `05_大模型/05_LLM_Architectures/Transformer_Alternatives.md` — 已创建 (13.7 KB)
 
 ---
 
@@ -112,8 +112,8 @@ sources: []
 -  prefix caching 在多轮对话中的收益分析
 
 **建议新建页面**:
-- ✅ `部署推理/Caching/Speculative_Decoding_Advanced_2026.md` — 已创建 (14.8 KB)
-- ✅ `部署推理/Caching/Prompt_Caching_and_KV_Cache_Optimization.md` — 已创建 (15.2 KB)
+- ✅ `10_部署推理/06_Caching/Speculative_Decoding_Advanced_2026.md` — 已创建 (14.8 KB)
+- ✅ `10_部署推理/06_Caching/Prompt_Caching_and_KV_Cache_Optimization.md` — 已创建 (15.2 KB)
 
 ---
 
@@ -130,9 +130,9 @@ sources: []
 - 推理模型的评测：Beyond accuracy — 推理过程可追溯性
 
 **建议新建页面**:
-- ✅ `大模型/Reasoning_Models/o1_Class_Reasoning_Models.md` — 已创建 (13.7 KB)
-- ✅ `大模型/Reasoning_Models/DeepSeek_R1_Technical_Analysis.md` — 已创建 (13.5 KB)
-- ✅ `大模型/Reasoning_Models/Process_Reward_Models.md` — 已创建 (7.0 KB)
+- ✅ `05_大模型/09_Reasoning_Models/o1_Class_Reasoning_Models.md` — 已创建 (13.7 KB)
+- ✅ `05_大模型/09_Reasoning_Models/DeepSeek_R1_Technical_Analysis.md` — 已创建 (13.5 KB)
+- ✅ `05_大模型/09_Reasoning_Models/Process_Reward_Models.md` — 已创建 (7.0 KB)
 
 ---
 

@@ -1323,9 +1323,9 @@ Agent → MCP Client → Server A
 
 ## 相关链接
 
-- [[智能体/Agent_Foundations/Agent_Protocols_2026|Agent 协议栈 2026]] — MCP 在协议栈中的位置
+- [[15_智能体/01_Agent_Foundations/Agent_Protocols_2026|Agent 协议栈 2026]] — MCP 在协议栈中的位置
 - [[概念/Agent/mcp|Model Context Protocol]] — MCP 概念卡片
 - [[概念/Agent/tool-calling|工具调用]] — MCP 的工具调用机制
 - [[概念/Agent/function-calling|Function Calling]] — MCP 底层机制
-- [[智能体/Agent_Skills/Tool_Calling_Best_Practices|工具调用最佳实践]] — MCP 工具调用实践
-- [[大模型/Fine_tuning_Techniques/Tool_Use_and_Agent_Fine_Tuning|Tool Use 与 Agent 微调]] — MCP 训练相关
+- [[15_智能体/05_Agent_Skills/Tool_Calling_Best_Practices|工具调用最佳实践]] — MCP 工具调用实践
+- [[05_大模型/07_Fine_tuning_Techniques/Tool_Use_and_Agent_Fine_Tuning|Tool Use 与 Agent 微调]] — MCP 训练相关

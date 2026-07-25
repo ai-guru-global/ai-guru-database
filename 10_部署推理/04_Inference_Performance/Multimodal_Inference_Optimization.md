@@ -135,11 +135,11 @@ VLM 的 prefill 阶段特别重，因为：
 - [[概念/multimodal-models]] — 多模态模型
 - [[概念/prefill-decode]] — Prefill / Decode 阶段
 - [[概念/prefix-caching]] — 前缀缓存
-- [[部署推理/Inference_Performance/README|推理性能专题]]
-- [[部署推理/Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]]
-- [[部署推理/Inference_Performance/Prefill_Decode_Disaggregation|Prefill-Decode 分离]]
+- [[10_部署推理/04_Inference_Performance/README|推理性能专题]]
+- [[10_部署推理/04_Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]]
+- [[10_部署推理/04_Inference_Performance/Prefill_Decode_Disaggregation|Prefill-Decode 分离]]
 
-- [[部署推理/README|模型部署与推理]]
+- [[10_部署推理/README|模型部署与推理]]
 
 ## 核心知识体系
 

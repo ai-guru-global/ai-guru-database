@@ -136,7 +136,7 @@ SSI 在 2026 年的融资节奏打破硅谷纪录。
 
 ### 与 OpenAI 的路线分流
 
-Sutskever 与 OpenAI（[[业界观点/Sam_Altman/Sam_Altman_2026_Update\|Sam Altman]]）在 2026 年的路线分歧彻底公开化。
+Sutskever 与 OpenAI（[[19_业界观点/Sam_Altman/Sam_Altman_2026_Update\|Sam Altman]]）在 2026 年的路线分歧彻底公开化。
 
 #### 路线对比表
 
@@ -205,7 +205,7 @@ Sutskever 在 2026 年做出的几个关键预言：
 
 ### 与学界的安全对话
 
-Sutskever 在 2026 年与学界的安全派（[[业界观点/Geoffrey_Hinton/index\|Hinton]]、[[业界观点/Yoshua_Bengio/index\|Bengio]]）保持密切对话。
+Sutskever 在 2026 年与学界的安全派（[[19_业界观点/Geoffrey_Hinton/index\|Hinton]]、[[19_业界观点/Yoshua_Bengio/index\|Bengio]]）保持密切对话。
 
 #### 安全派系谱
 
@@ -216,7 +216,7 @@ Sutskever 在 2026 年与学界的安全派（[[业界观点/Geoffrey_Hinton/ind
 | 治理优先派 | Bengio（LawZero） | 国际治理框架 |
 | 警告派 | Hinton | 公众警示+放缓 |
 | 暂停派 | Elon Musk（早期） | 暂停前沿训练 |
-| 乐观派 | [[业界观点/Yann_LeCun/index\|LeCun]] | 末日论荒谬 |
+| 乐观派 | [[19_业界观点/Yann_LeCun/index\|LeCun]] | 末日论荒谬 |
 
 Sutskever 的"数学安全派"介于经验安全派与治理优先派之间，强调技术而非政策。
 
@@ -241,7 +241,7 @@ Sutskever 的立场：
 - 但完全闭源会加剧垄断
 - SSI 不发布模型，避免任何滥用风险
 - 支持安全研究的方法论开源（如对齐算法）
-- 与 [[业界观点/Yann_LeCun/index\|LeCun]]（激进开源）和 [[业界观点/Wenfeng_Liang/index\|梁文锋]]（全面开源）立场对立
+- 与 [[19_业界观点/Yann_LeCun/index\|LeCun]]（激进开源）和 [[19_业界观点/Wenfeng_Liang/index\|梁文锋]]（全面开源）立场对立
 
 ### 关于对齐研究的方法
 
@@ -268,7 +268,7 @@ Sutskever 对 Agent 持谨慎态度：
 
 ### 与主要 AI 安全玩家的对比
 
-| 维度 | Sutskever (SSI) | [[业界观点/Dario_Amodei/Amodei_2026_Update\|Dario Amodei]] (Anthropic) | [[业界观点/Yoshua_Bengio/index\|Bengio]] (LawZero) | [[业界观点/Sam_Altman/Sam_Altman_2026_Update\|Altman]] (OpenAI) |
+| 维度 | Sutskever (SSI) | [[19_业界观点/Dario_Amodei/Amodei_2026_Update\|Dario Amodei]] (Anthropic) | [[19_业界观点/Yoshua_Bengio/index\|Bengio]] (LawZero) | [[19_业界观点/Sam_Altman/Sam_Altman_2026_Update\|Altman]] (OpenAI) |
 |------|-----------------|-----------|---------|---------|
 | 组织形态 | 公司 | 公司 | 非营利基金会 | 公司（PBC） |
 | 商业化 | 不做 | API+订阅 | 不做 | 全栈商业化 |
@@ -290,7 +290,7 @@ Sutskever 的影响呈现为三个层面：
 - 激活了一批理论安全研究者的资金支持
 - 推动"形式化方法"在 AI 中的应用
 - 让"安全 AI"成为可独立的学科方向
-- 与 [[业界观点/Geoffrey_Hinton/index\|Hinton]] 的警示形成互补
+- 与 [[19_业界观点/Geoffrey_Hinton/index\|Hinton]] 的警示形成互补
 
 ### 对风险投资逻辑的改变
 
@@ -311,7 +311,7 @@ SSI 现象强化了硅谷的"创始人神话"——一个人的声誉足以支�
 - Sutskever 的 AlexNet+Seq2Seq+GPT 履历是无可替代的资产
 - 投资者承认"我们在赌一个人，不是一家公司"
 - 引发 AI 顶级研究员的"个人 IP 资本化"浪潮
-- 让 [[业界观点/Mira_Murati/index\|Mira Murati]]、[[业界观点/Andrej_Karpathy/index\|Karpathy]] 等也获得高估值
+- 让 [[19_业界观点/Mira_Murati/index\|Mira Murati]]、[[19_业界观点/Andrej_Karpathy/index\|Karpathy]] 等也获得高估值
 
 ### 对"加速主义 vs 末日论"二元叙事的超越
 
@@ -319,8 +319,8 @@ SSI 的存在让 AI 辩论不再只是"加速 vs 暂停"：
 
 - Sutskever 证明可以"既加速又安全"
 - "安全加速派"成为新的中间路线
-- 与 [[业界观点/Elon_Musk/index\|Musk]] 的"加速+警告"形成不同路径
-- 与 [[业界观点/Geoffrey_Hinton/index\|Hinton]] 的"暂停+警示"形成互补
+- 与 [[19_业界观点/Elon_Musk/index\|Musk]] 的"加速+警告"形成不同路径
+- 与 [[19_业界观点/Geoffrey_Hinton/index\|Hinton]] 的"暂停+警示"形成互补
 
 ### 对人才流动的影响
 
@@ -414,36 +414,36 @@ Sutskever 在 2023 年 11 月 OpenAI 董事会事件中的角色仍被讨论：
 
 ### OpenAI 系网络
 
-- [[业界观点/Ilya_Sutskever/index]] -- 本页主人物
-- [[业界观点/Ilya_Sutskever/about]] -- 详细简介
-- [[业界观点/Sam_Altman/Sam_Altman_2026_Update]] -- OpenAI CEO，前搭档
-- [[业界观点/Mira_Murati/index]] -- 前 CTO，OpenAI 系创业者
-- [[业界观点/Andrej_Karpathy/index]] -- OpenAI 创始成员
+- [[19_业界观点/Ilya_Sutskever/index]] -- 本页主人物
+- [[19_业界观点/Ilya_Sutskever/about]] -- 详细简介
+- [[19_业界观点/Sam_Altman/Sam_Altman_2026_Update]] -- OpenAI CEO，前搭档
+- [[19_业界观点/Mira_Murati/index]] -- 前 CTO，OpenAI 系创业者
+- [[19_业界观点/Andrej_Karpathy/index]] -- OpenAI 创始成员
 
 ### 学术师承网络
 
-- [[业界观点/Geoffrey_Hinton/index]] -- 博士导师，共同开发 AlexNet
-- [[业界观点/Yoshua_Bengio/index]] -- 同为深度学习先驱，安全派同盟
-- [[业界观点/Yann_LeCun/index]] -- 图灵奖同事，路线分歧
+- [[19_业界观点/Geoffrey_Hinton/index]] -- 博士导师，共同开发 AlexNet
+- [[19_业界观点/Yoshua_Bengio/index]] -- 同为深度学习先驱，安全派同盟
+- [[19_业界观点/Yann_LeCun/index]] -- 图灵奖同事，路线分歧
 
 ### 安全派同盟
 
-- [[业界观点/Dario_Amodei/Amodei_2026_Update]] -- Anthropic CEO，安全路线盟友
-- [[业界观点/Mustafa_Suleyman/index]] -- Microsoft AI，《The Coming Wave》作者
-- [[业界观点/Elon_Musk/index]] -- 早期安全呼吁者，立场复杂
+- [[19_业界观点/Dario_Amodei/Amodei_2026_Update]] -- Anthropic CEO，安全路线盟友
+- [[19_业界观点/Mustafa_Suleyman/index]] -- Microsoft AI，《The Coming Wave》作者
+- [[19_业界观点/Elon_Musk/index]] -- 早期安全呼吁者，立场复杂
 
 ### 中国对应人物
 
-- [[业界观点/Wenfeng_Liang/index]] -- DeepSeek，效率路线 vs 安全路线
-- [[业界观点/Jie_Tang/index]] -- 智谱 AI，学术驱动路线
+- [[19_业界观点/Wenfeng_Liang/index]] -- DeepSeek，效率路线 vs 安全路线
+- [[19_业界观点/Jie_Tang/index]] -- 智谱 AI，学术驱动路线
 
 ### 技术与理论
 
-- [[大模型/OpenAI]] -- GPT 系列技术路线
-- [[大模型/Reasoning_Models]] -- 推理模型与对齐
-- [[伦理安全/README]] -- AI 安全与对齐
-- [[入门/AI_Future_Trends]] -- AGI 时间线
-- [[入门/AI_Ethics_Society]] -- AI 伦理与社会
+- [[05_大模型/OpenAI]] -- GPT 系列技术路线
+- [[05_大模型/Reasoning_Models]] -- 推理模型与对齐
+- [[17_伦理安全/README]] -- AI 安全与对齐
+- [[00_入门/AI_Future_Trends]] -- AGI 时间线
+- [[00_入门/AI_Ethics_Society]] -- AI 伦理与社会
 
 ---
 

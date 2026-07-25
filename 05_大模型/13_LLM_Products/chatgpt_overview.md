@@ -167,12 +167,12 @@ print(f"{weather.city}: {weather.temperature}°C, {weather.condition}")
 
 ## 相关概念
 
-- [[大模型/LLM_Fundamentals|LLM 基础]]
-- [[大模型/Global_LLM_Ecosystem/README|全球 LLM 生态]]
+- [[05_大模型/LLM_Fundamentals|LLM 基础]]
+- [[05_大模型/14_Global_LLM_Ecosystem/README|全球 LLM 生态]]
 - [[概念/openai|OpenAI]]
 - [[概念/prompt-engineering|提示工程]]
-- [[大模型/LLM_Products/perplexity_overview|Perplexity 概览]]
-- [[大模型/Prompt_Engineering/Prompt_Engineering|提示工程指南]]
+- [[05_大模型/13_LLM_Products/perplexity_overview|Perplexity 概览]]
+- [[05_大模型/08_Prompt_Engineering/Prompt_Engineering|提示工程指南]]
 
 ## 总结
 

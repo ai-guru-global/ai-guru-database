@@ -357,7 +357,7 @@ TGI 暴露 Prometheus 指标：
 - [[概念/vllm]] — vLLM 推理引擎
 - [[概念/model-serving]] — 模型服务
 - [[概念/hami]] — HAMi GPU 虚拟化
-- [[部署推理/Inference_Engines/KServe_Deep_Dive]] — KServe
-- [[部署推理/Inference_Engines/vLLM_Deep_Dive]] — vLLM
-- [[架构基建/CNCF_Cloud_Native_AI/README]] — CNCF 云原生大模型全景
+- [[10_部署推理/02_Inference_Engines/KServe_Deep_Dive]] — KServe
+- [[10_部署推理/02_Inference_Engines/vLLM_Deep_Dive]] — vLLM
+- [[12_架构基建/05_CNCF_Cloud_Native_AI/README]] — CNCF 云原生大模型全景
 - [[治理/chinese-chips-inference|国产 AI 芯片 × 推理引擎: 硬件约束下的推理软件栈适配]]

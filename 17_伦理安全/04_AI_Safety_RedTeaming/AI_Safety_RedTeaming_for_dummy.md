@@ -833,7 +833,7 @@ AI 生成回答后:
 ### 📄 进阶阅读
 - [AI 安全与红队(完整版)](./AI_Safety_RedTeaming.md) - 技术细节和防御算法
 - [价值对齐 - 小白版](../Value_Alignment/Value_Alignment_for_dummy.md) - 安全的基础
-- [RAG 系统 - 小白版](RAG系统/RAG_Fundamentals/RAG_Systems_for_dummy.md) - 间接注入的高发场景
+- [RAG 系统 - 小白版](14_RAG系统/01_RAG_Fundamentals/RAG_Systems_for_dummy.md) - 间接注入的高发场景
 
 ### 🛠️ 动手实践
 - [Llama Guard 快速开始](https://github.com/facebookresearch/PurpleLlama/tree/main/Llama-Guard)
@@ -841,8 +841,8 @@ AI 生成回答后:
 - [Garak(红队测试工具)](https://github.com/leondz/garak)
 
 ### 🎓 相关知识
-- [Prompt 工程 - 小白版](大模型/Prompt_Engineering/Prompt_Engineering_for_dummy.md)
-- [模型部署 - 小白版](部署推理/Deployment_Fundamentals/Deployment_Inference_for_dummy.md)
+- [Prompt 工程 - 小白版](05_大模型/08_Prompt_Engineering/Prompt_Engineering_for_dummy.md)
+- [模型部署 - 小白版](10_部署推理/01_Deployment_Fundamentals/Deployment_Inference_for_dummy.md)
 
 ### 📚 安全资源
 - [OWASP Top 10 for LLM](https://owasp.org/www-project-top-10-for-large-language-model-applications/)
@@ -854,9 +854,9 @@ AI 生成回答后:
 
 ## 相关链接
 
-- [[伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming|AI 安全与红队测试 (完整版)]] — 本篇小白版对应的详细版
-- [[伦理安全/AI_Safety_RedTeaming/index|AI 安全与红队测试索引]] — 主题导览
+- [[17_伦理安全/04_AI_Safety_RedTeaming/AI_Safety_RedTeaming|AI 安全与红队测试 (完整版)]] — 本篇小白版对应的详细版
+- [[17_伦理安全/04_AI_Safety_RedTeaming/index|AI 安全与红队测试索引]] — 主题导览
 - [[概念/Safety/red-teaming|红队测试]] — 红队测试概念卡片
 - [[概念/Safety/jailbreak|越狱攻击]] — 红队测试的核心攻击手法
 - [[概念/Safety/prompt-injection|提示注入]] — 红队测试重点防御对象
-- [[伦理安全/AI_Security_2026/AI_Security_2026|AI 安全 2026 完全指南]] — 安全工程总览
+- [[17_伦理安全/07_AI_Security_2026/AI_Security_2026|AI 安全 2026 完全指南]] — 安全工程总览

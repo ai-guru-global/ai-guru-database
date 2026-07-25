@@ -12,29 +12,29 @@ This page indexes the contents of `数学基础`.
 
 ## Subdirectories
 
-- [[数学基础/AI_Hardware/index|AI Hardware]]
-- [[数学基础/Data_Structures_Algorithms/index|Data Structures Algorithms]]
-- [[数学基础/Distributed_Systems/index|Distributed Systems]]
-- [[数学基础/Information_Theory/index|Information Theory]]
-- [[数学基础/Java_Ecosystem_AI/index|Java Ecosystem AI]]
-- [[数学基础/Linear_Algebra/index|Linear Algebra]]
-- [[数学基础/Probability_Statistics/index|Probability Statistics]]
+- [[01_数学基础/10_AI_Hardware/index|AI Hardware]]
+- [[01_数学基础/07_Data_Structures_Algorithms/index|Data Structures Algorithms]]
+- [[01_数学基础/09_Distributed_Systems/index|Distributed Systems]]
+- [[01_数学基础/04_Information_Theory/index|Information Theory]]
+- [[01_数学基础/11_Java_Ecosystem_AI/index|Java Ecosystem AI]]
+- [[01_数学基础/02_Linear_Algebra/index|Linear Algebra]]
+- [[01_数学基础/03_Probability_Statistics/index|Probability Statistics]]
 
 ## Files
 
-- [[数学基础/AI_Development_Environment_Setup|AI Development Environment Setup]]
-- [[数学基础/ApacheCN_Data_Analysis_Track|Apachecn Data Analysis Track]]
-- [[数学基础/ApacheCN_Linear_Algebra_Track|Apachecn Linear Algebra Track]]
-- [[数学基础/Calculus_Optimization|Calculus Optimization]]
-- [[数学基础/Fundamentals-in-nutshell|Fundamentals In Nutshell]]
-- [[数学基础/GenAI_L00_Course_Setup|Genai L00 Course Setup]]
-- [[数学基础/GPU_Programming_CUDA_Basics|GPU Programming CUDA Basics]]
-- [[数学基础/Math_Foundations|Math Foundations]]
-- [[数学基础/Mathematics_for_AI|Mathematics For AI]]
-- [[数学基础/Python_Data_Science_Toolkit|Python Data Science Toolkit]]
-- [[数学基础/Python_for_AI_Basics|Python For AI Basics]]
-- [[数学基础/README|README]]
-- [[数学基础/README_for_dummy|README For Dummy]]
+- [[01_数学基础/AI_Development_Environment_Setup|AI Development Environment Setup]]
+- [[01_数学基础/ApacheCN_Data_Analysis_Track|Apachecn Data Analysis Track]]
+- [[01_数学基础/ApacheCN_Linear_Algebra_Track|Apachecn Linear Algebra Track]]
+- [[01_数学基础/Calculus_Optimization|Calculus Optimization]]
+- [[01_数学基础/Fundamentals-in-nutshell|Fundamentals In Nutshell]]
+- [[01_数学基础/GenAI_L00_Course_Setup|Genai L00 Course Setup]]
+- [[01_数学基础/GPU_Programming_CUDA_Basics|GPU Programming CUDA Basics]]
+- [[01_数学基础/Math_Foundations|Math Foundations]]
+- [[01_数学基础/Mathematics_for_AI|Mathematics For AI]]
+- [[01_数学基础/Python_Data_Science_Toolkit|Python Data Science Toolkit]]
+- [[01_数学基础/Python_for_AI_Basics|Python For AI Basics]]
+- [[01_数学基础/README|README]]
+- [[01_数学基础/README_for_dummy|README For Dummy]]
 
 ## 进阶知识拓展
 
@@ -72,9 +72,9 @@ This page indexes the contents of `数学基础`.
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

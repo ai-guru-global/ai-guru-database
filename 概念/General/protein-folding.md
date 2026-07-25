@@ -16,8 +16,8 @@ provenance:
   ambiguous: 0.05
 base_confidence: 0.8
 sources:
-  - 行业应用/AI_for_Science/Protein_Folding_and_Drug_Discovery_2026.md
-  - 行业应用/AI_for_Science/AI_for_Science_Deep_Dive.md
+  - 18_行业应用/02_AI_for_Science/Protein_Folding_and_Drug_Discovery_2026.md
+  - 18_行业应用/02_AI_for_Science/AI_for_Science_Deep_Dive.md
 relationships:
   - target: "概念/ai-for-science"
     type: related_to
@@ -56,8 +56,8 @@ relationships:
 
 ## 相关阅读
 
-- [[行业应用/AI_for_Science/Protein_Folding_and_Drug_Discovery_2026]] — AI 蛋白质折叠与药物发现
-- [[行业应用/AI_for_Science/AI_for_Science_Deep_Dive]] — AI for Science 深度解读
+- [[18_行业应用/02_AI_for_Science/Protein_Folding_and_Drug_Discovery_2026]] — AI 蛋白质折叠与药物发现
+- [[18_行业应用/02_AI_for_Science/AI_for_Science_Deep_Dive]] — AI for Science 深度解读
 
 ---
 

@@ -208,9 +208,9 @@ EVALUATION_BEST_PRACTICES = {
 
 ## 6. 交叉引用
 
-- [[模型评估/Benchmarks/|基准测试]]
-- [[模型评估/LLM_Evaluation/|LLM 评估]]
-- [[模型评估/Agent_Evaluation/|Agent 评估]]
-- [[强化学习/RL_Applications/RL_for_LLM_Reasoning|推理 RL]]
-- [[大模型/Reasoning_Models/|推理模型]]
-- [[测试/|测试]]
+- [[08_模型评估/02_Benchmarks/|基准测试]]
+- [[08_模型评估/03_LLM_Evaluation/|LLM 评估]]
+- [[08_模型评估/Agent_Evaluation/|Agent 评估]]
+- [[06_强化学习/04_RL_Applications/RL_for_LLM_Reasoning|推理 RL]]
+- [[05_大模型/09_Reasoning_Models/|推理模型]]
+- [[09_测试/|测试]]

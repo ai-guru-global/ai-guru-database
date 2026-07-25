@@ -35,7 +35,7 @@ sources: []
   - `successfulJobHistoryLimit` / `failedJobHistoryLimit`: 保留成功/失败 Job 的历史数量，避免资源堆积。
   - `suspend`: 暂停 CronJob，停止创建新 Job。
 - **调度可靠性**: CronJob 由 kube-controller-manager 的 CronJob Controller 负责解析 cron 表达式并触发 Job；在 K8s 1.21+ 中 CronJob 升级到 v1 稳定版，控制器更可靠。
-- **适用任务类型**: 数据备份、日志/镜像清理、定时报表、批量 ETL、模型评估/重训触发、证书轮转等。
+- **适用任务类型**: 数据备份、日志/镜像清理、定时报表、批量 ETL、08_模型评估/重训触发、证书轮转等。
 
 ## 典型 YAML / 命令示例
 

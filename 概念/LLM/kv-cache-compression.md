@@ -14,9 +14,9 @@ relationships:
   - target: "概念/LLM/attention-variants"
     type: related_to
 sources:
-  - 大模型/LLM_Architecture_Evolution.md
-  - 部署推理/Caching/KV_Cache_Deep_Dive.md
-  - 部署推理/Inference_Performance/Long_Context_Inference_2026.md
+  - 05_大模型/LLM_Architecture_Evolution.md
+  - 10_部署推理/06_Caching/KV_Cache_Deep_Dive.md
+  - 10_部署推理/04_Inference_Performance/Long_Context_Inference_2026.md
 summary: "KV Cache 压缩通过量化、稀疏化、低秩近似、共享注意力头等技术减少显存占用，让长上下文推理和多轮对话更便宜、更快。2026 年 GQA+FP8 是标配，MLA+INT4 可将 1M 上下文 KV Cache 从 135GB 压缩至 4GB。"
 provenance:
   extracted: 0.75
@@ -137,8 +137,8 @@ GQA/MLA：直接减少需要保存的 KV 数量
 - [[概念/LLM/multi-head-latent-attention]] — Multi-head Latent Attention (MLA)
 - [[概念/Inference/quantization]] — 模型量化
 - [[概念/LLM/attention-variants]] — 注意力变体
-- [[部署推理/Caching/KV_Cache_Deep_Dive]] — KV Cache 深度研究
-- [[部署推理/Inference_Performance/Long_Context_Inference_2026]] — 长上下文推理 2026
+- [[10_部署推理/06_Caching/KV_Cache_Deep_Dive]] — KV Cache 深度研究
+- [[10_部署推理/04_Inference_Performance/Long_Context_Inference_2026]] — 长上下文推理 2026
 
 ## 2026 KV Cache 压缩技术全景
 

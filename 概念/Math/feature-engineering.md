@@ -121,9 +121,9 @@ updated: 2026-07-21T00:00:00Z
 
 - [[概念/Math/supervised-learning.md|supervised-learning]]
 - [[概念/Math/unsupervised-learning.md|unsupervised-learning]]
-- [[机器学习/Anomaly_Detection/Anomaly_Detection.md|Anomaly_Detection]]
-- [[机器学习/Anomaly_Detection/Anomaly_Detection_for_dummy.md|Anomaly_Detection_for_dummy]]
-- [[机器学习/AutoML/AutoML.md|AutoML]]
+- [[02_机器学习/08_Anomaly_Detection/Anomaly_Detection.md|Anomaly_Detection]]
+- [[02_机器学习/08_Anomaly_Detection/Anomaly_Detection_for_dummy.md|Anomaly_Detection_for_dummy]]
+- [[02_机器学习/11_AutoML/AutoML.md|AutoML]]
 
 ---
 

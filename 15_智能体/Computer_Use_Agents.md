@@ -154,11 +154,11 @@ COMPUTER_USE_SAFETY = {
 
 ## 4. 交叉引用
 
-- [[智能体/|智能体系统]]
-- [[智能体/Voice_Agents/|语音 Agent]]
-- [[大模型/Multimodal_Models/|多模态模型]]
-- [[编程/AI_IDE_Landscape_2026|AI IDE]]
-- [[伦理安全/|伦理安全]]
+- [[15_智能体/|智能体系统]]
+- [[15_智能体/Voice_Agents/|语音 Agent]]
+- [[05_大模型/10_Multimodal_Models/|多模态模型]]
+- [[16_编程/AI_IDE_Landscape_2026|AI IDE]]
+- [[17_伦理安全/|伦理安全]]
 
 ## 附录：核心概念速查
 

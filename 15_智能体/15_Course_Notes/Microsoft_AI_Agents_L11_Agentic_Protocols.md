@@ -163,11 +163,11 @@ MCP 连 LLM 与工具，**A2A 进一步让不同 Agent 互相通信与协作**�
 
 ## 关联阅读
 
-- [[智能体/Course_Notes/Microsoft_AI_Agents_L10_Production]] — 上一课：生产化
-- [[智能体/Course_Notes/Microsoft_AI_Agents_L12_Context_Engineering]] — 下一课：上下文工程
-- [[智能体/Agent_Protocols/README]] — 本仓库协议主题总览
-- [[智能体/Hello_Agents_L10_Agent_Protocols]] — Hello-Agents 课程的协议视角
-- [[学习/courses/microsoft/microsoft_ai_agents_for_beginners]] — 课程总览
+- [[15_智能体/15_Course_Notes/Microsoft_AI_Agents_L10_Production]] — 上一课：生产化
+- [[15_智能体/15_Course_Notes/Microsoft_AI_Agents_L12_Context_Engineering]] — 下一课：上下文工程
+- [[15_智能体/Agent_Protocols/README]] — 本仓库协议主题总览
+- [[15_智能体/Hello_Agents_L10_Agent_Protocols]] — Hello-Agents 课程的协议视角
+- [[90_学习/courses/microsoft/microsoft_ai_agents_for_beginners]] — 课程总览
 
 ## 附录：核心概念速查
 

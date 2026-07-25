@@ -393,8 +393,8 @@ predicted_class = outputs.logits.argmax(-1)
 
 ## Related
 
-- [[计算机视觉/README.md|计算机视觉 README]]
-- [[计算机视觉/3D_Vision/3D_Vision.md|3D_Vision]]
-- [[计算机视觉/3D_Vision/3D_Vision_for_dummy.md|3D_Vision_for_dummy]]
-- [[计算机视觉/Generative_Models/Generative_Models.md|Generative_Models]]
-- [[计算机视觉/Generative_Models/Generative_Models_for_dummy.md|Generative_Models_for_dummy]]
+- [[04_计算机视觉/README.md|计算机视觉 README]]
+- [[04_计算机视觉/05_3D_Vision/3D_Vision.md|3D_Vision]]
+- [[04_计算机视觉/05_3D_Vision/3D_Vision_for_dummy.md|3D_Vision_for_dummy]]
+- [[04_计算机视觉/06_Generative_Models/Generative_Models.md|Generative_Models]]
+- [[04_计算机视觉/06_Generative_Models/Generative_Models_for_dummy.md|Generative_Models_for_dummy]]

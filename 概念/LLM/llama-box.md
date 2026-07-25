@@ -12,7 +12,7 @@ relationships:
   - target: "概念/model-serving"
     type: related_to
 sources:
-  - 部署推理/Inference_Engines/llama_cpp_Deep_Dive.md
+  - 10_部署推理/02_Inference_Engines/llama_cpp_Deep_Dive.md
 summary: "llama-box 是基于 llama.cpp 构建的大模型推理后端/服务框架，负责加载 GGUF 量化模型、接收请求并执行推理。常用于 PPU 等特定硬件或运行环境，让 llama.cpp 的能力以服务端形式对外提供。"
 provenance:
   extracted: 0.10
@@ -112,7 +112,7 @@ llama.cpp 本身是一个推理引擎库，直接调用需要写 C/C++ 代码或
 - [[概念/gguf]] — GGUF 模型格式
 - [[概念/edge-llm]] — 边缘 LLM
 - [[概念/model-serving]] — 模型服务
-- [[部署推理/Inference_Engines/llama_cpp_Deep_Dive]] — llama.cpp 深度解析
+- [[10_部署推理/02_Inference_Engines/llama_cpp_Deep_Dive]] — llama.cpp 深度解析
 
 ---
 
@@ -180,7 +180,7 @@ services:
 - [[概念/LLM/llm-quantization|LLM 量化]]
 - [[概念/LLM/edge-llm|端侧 LLM]]
 - [[概念/Inference/model-serving|模型服务]]
-- [[部署推理/Inference_Engines/llama_cpp_Deep_Dive|llama.cpp 深度解析]]
+- [[10_部署推理/02_Inference_Engines/llama_cpp_Deep_Dive|llama.cpp 深度解析]]
 
 ## 常见问题排查
 

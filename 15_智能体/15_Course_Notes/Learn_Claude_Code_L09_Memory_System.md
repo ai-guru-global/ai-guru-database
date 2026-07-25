@@ -61,10 +61,10 @@ s08 的 autoCompact 会把当前目标写进摘要，但细节会丢失（如“
 
 ## 关联阅读
 
-- [[学习/courses/share_ai/learn_claude_code]] — 完整 20 课映射
-- [[学习/Courses/share_ai/learn_claude_code]] — 仓库引用索引
-- [[智能体/Course_Notes/Learn_Claude_Code_L08_Context_Compact]] — 上下文压缩
-- [[智能体/Memory_Infrastructure/Agent_Memory_Systems_2026]] — Agent 记忆系统 2026
+- [[90_学习/courses/share_ai/learn_claude_code]] — 完整 20 课映射
+- [[90_学习/Courses/share_ai/learn_claude_code]] — 仓库引用索引
+- [[15_智能体/15_Course_Notes/Learn_Claude_Code_L08_Context_Compact]] — 上下文压缩
+- [[15_智能体/06_Memory_Infrastructure/Agent_Memory_Systems_2026]] — Agent 记忆系统 2026
 
 ## 附录：核心概念速查
 

@@ -183,7 +183,7 @@ Ng 的务实立场：
 
 Ng 与"末日派"的根本分歧：
 
-| 维度 | Ng（务实派） | [[业界观点/Geoffrey_Hinton/index\|Hinton]]/[[业界观点/Yoshua_Bengio/index\|Bengio]]（风险派） |
+| 维度 | Ng（务实派） | [[19_业界观点/Geoffrey_Hinton/index\|Hinton]]/[[19_业界观点/Yoshua_Bengio/index\|Bengio]]（风险派） |
 |------|--------------|----------------------|
 | 焦点 | 近期应用 | 远期风险 |
 | 态度 | 务实推进 | 谨慎警示 |
@@ -223,7 +223,7 @@ Ng 对就业冲击的务实观点：
 
 ### 与其他 AI 教育者的对比
 
-| 维度 | Ng | [[业界观点/Andrej_Karpathy/index\|Karpathy]] | [[业界观点/Josh_Starmer/index\|Starmer]] |
+| 维度 | Ng | [[19_业界观点/Andrej_Karpathy/index\|Karpathy]] | [[19_业界观点/Josh_Starmer/index\|Starmer]] |
 |------|-----|---------|---------|
 | 背景 | 学术+工业+投资 | 工程实践 | 统计教育 |
 | 风格 | 系统课程 | 从零构建 | 故事化 |
@@ -235,7 +235,7 @@ Ng 对就业冲击的务实观点：
 
 ### 与风险派的对比
 
-| 维度 | Ng | [[业界观点/Geoffrey_Hinton/index\|Hinton]] | [[业界观点/Yoshua_Bengio/index\|Bengio]] |
+| 维度 | Ng | [[19_业界观点/Geoffrey_Hinton/index\|Hinton]] | [[19_业界观点/Yoshua_Bengio/index\|Bengio]] |
 |------|-----|---------|---------|
 | 2026 角色 | 务实布道者 | 公众警示者 | 治理设计师 |
 | 对 Scaling | 不参与竞赛 | 担忧放缓 | 担忧放缓 |
@@ -271,8 +271,8 @@ Ng 的影响呈现为四个层面：
 
 | 批评来源 | 批评内容 | Ng 回应 |
 |----------|----------|---------|
-| [[业界观点/Geoffrey_Hinton/index\|Hinton]] | "忽视长期风险" | "近期风险更紧迫" |
-| [[业界观点/Yoshua_Bengio/index\|Bengio]] | "反对监管不负责任" | "过度监管扼杀创新" |
+| [[19_业界观点/Geoffrey_Hinton/index\|Hinton]] | "忽视长期风险" | "近期风险更紧迫" |
+| [[19_业界观点/Yoshua_Bengio/index\|Bengio]] | "反对监管不负责任" | "过度监管扼杀创新" |
 | 安全派 | "为商业利益淡化风险" | "务实不等于否认" |
 | 末日派 | "火星比喻轻浮" | "比例失调的担忧" |
 
@@ -296,7 +296,7 @@ Ng 的影响呈现为四个层面：
 
 2026 年 Ng 在政策辩论中持续与风险派交锋：
 
-| 议题 | Ng 立场 | [[业界观点/Yoshua_Bengio/index\|Bengio]] 立场 |
+| 议题 | Ng 立场 | [[19_业界观点/Yoshua_Bengio/index\|Bengio]] 立场 |
 |------|---------|-------------|
 | 模型许可制 | 反对 | 支持 |
 | 算力门槛 | 反对一刀切 | 支持 |
@@ -351,31 +351,31 @@ Ng 的影响呈现为四个层面：
 
 ### 教育与思想网络
 
-- [[业界观点/Andrew_Ng/index]] -- 本页主人物
-- [[业界观点/Andrew_Ng/about]] -- 详细简介
-- [[业界观点/Andrej_Karpathy/index]] -- 教育同行
-- [[业界观点/Josh_Starmer/index]] -- 教育同行
-- [[业界观点/3Blue1Brown/index]] -- 教育同行
-- [[业界观点/Fei_Fei_Li/index]] -- 斯坦福同事
+- [[19_业界观点/Andrew_Ng/index]] -- 本页主人物
+- [[19_业界观点/Andrew_Ng/about]] -- 详细简介
+- [[19_业界观点/Andrej_Karpathy/index]] -- 教育同行
+- [[19_业界观点/Josh_Starmer/index]] -- 教育同行
+- [[19_业界观点/3Blue1Brown/index]] -- 教育同行
+- [[19_业界观点/Fei_Fei_Li/index]] -- 斯坦福同事
 
 ### 务实派网络
 
-- [[业界观点/Yann_LeCun/index]] -- 乐观派共鸣
-- [[业界观点/Sundar_Pichai/index]] -- Google Brain 渊源
-- [[业界观点/Satya_Nadella/index]] -- 务实商业派
+- [[19_业界观点/Yann_LeCun/index]] -- 乐观派共鸣
+- [[19_业界观点/Sundar_Pichai/index]] -- Google Brain 渊源
+- [[19_业界观点/Satya_Nadella/index]] -- 务实商业派
 
 ### 对立派
 
-- [[业界观点/Geoffrey_Hinton/index]] -- 风险派对手
-- [[业界观点/Yoshua_Bengio/index]] -- 治理派对手
-- [[业界观点/Elon_Musk/index]] -- 末日派（早期）
+- [[19_业界观点/Geoffrey_Hinton/index]] -- 风险派对手
+- [[19_业界观点/Yoshua_Bengio/index]] -- 治理派对手
+- [[19_业界观点/Elon_Musk/index]] -- 末日派（早期）
 
 ### 技术与产业
 
-- [[大模型/README]] -- 模型应用
+- [[05_大模型/README]] -- 模型应用
 - [[MLOps/README]] -- 机器学习运维
-- [[入门/AI_Future_Trends]] -- AI 民主化
-- [[编程/Methodology/Vibe_Coding_Methodology]] -- Agentic 与 Vibe Coding 关系
+- [[00_入门/AI_Future_Trends]] -- AI 民主化
+- [[16_编程/03_Methodology/Vibe_Coding_Methodology]] -- Agentic 与 Vibe Coding 关系
 
 ---
 

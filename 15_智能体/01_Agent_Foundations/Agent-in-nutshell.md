@@ -754,13 +754,13 @@ async def call_tool(name, arguments):
 
 ## 🔗 相关主题
 
-- [RAG](RAG系统/RAG_Fundamentals/RAG-in-nutshell.md) - 带知识检索的智能体
-- [技能](../../智能体/Agent_Skills/Skills-in-nutshell.md) - 构建智能体能力
-- [工作流](../../智能体/Agent_Workflow/Workflow-in-nutshell.md) - 智能体编排
+- [RAG](14_RAG系统/01_RAG_Fundamentals/RAG-in-nutshell.md) - 带知识检索的智能体
+- [技能](../../15_智能体/05_Agent_Skills/Skills-in-nutshell.md) - 构建智能体能力
+- [工作流](../../15_智能体/03_Agent_Workflow/Workflow-in-nutshell.md) - 智能体编排
 
 ## Related
 
-- [[强化学习/AI_Agents/AI_Agents_for_dummy]] — AI智能体 - 小白版 🤖 (共享: agent, ai-agents, mdp, reinforcement-learning, rl)
-- [[强化学习/AI_Agents/Agent_Future_Roadmap_2026_2030]] — Agent 未来发展路线图 2026-2030 (共享: agent, ai-agents, mdp, reinforcement-learning, rl)
-- [[强化学习/AI_Agents/Agent_Protocols_Detail]] — AI Agent 协议详解：MCP、A2A、UCP (共享: agent, ai-agents, mdp, reinforcement-learning, rl)
-- [[强化学习/README]] — 06 强化学习与智能体 (Reinforcement Learning & Agents) (共享: agent, mdp, reinforcement-learning, rl)
+- [[06_强化学习/AI_Agents/AI_Agents_for_dummy]] — AI智能体 - 小白版 🤖 (共享: agent, ai-agents, mdp, reinforcement-learning, rl)
+- [[06_强化学习/AI_Agents/Agent_Future_Roadmap_2026_2030]] — Agent 未来发展路线图 2026-2030 (共享: agent, ai-agents, mdp, reinforcement-learning, rl)
+- [[06_强化学习/AI_Agents/Agent_Protocols_Detail]] — AI Agent 协议详解：MCP、A2A、UCP (共享: agent, ai-agents, mdp, reinforcement-learning, rl)
+- [[06_强化学习/README]] — 06 强化学习与智能体 (Reinforcement Learning & Agents) (共享: agent, mdp, reinforcement-learning, rl)

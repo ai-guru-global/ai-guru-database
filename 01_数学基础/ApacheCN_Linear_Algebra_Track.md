@@ -41,18 +41,18 @@ aliases:
 
 ## 与本库关联
 
-- 本库线性代数核心页 → [[数学基础/Linear_Algebra/Linear_Algebra]]
-- 概率统计基础 → [[数学基础/Probability_Statistics/Probability_Statistics]]
-- 神经网络中的矩阵运算 → [[深度学习/Neural_Network_Core/Neural_Network_Core]]
-- 优化理论（Hessian、正定） → [[深度学习/Optimization/Optimization]]
-- PCA/SVD 在机器学习中的应用 → [[机器学习/Unsupervised_Learning/Unsupervised_Learning]]
+- 本库线性代数核心页 → [[01_数学基础/02_Linear_Algebra/Linear_Algebra]]
+- 概率统计基础 → [[01_数学基础/03_Probability_Statistics/Probability_Statistics]]
+- 神经网络中的矩阵运算 → [[03_深度学习/02_Neural_Network_Core/Neural_Network_Core]]
+- 优化理论（Hessian、正定） → [[03_深度学习/03_Optimization/Optimization]]
+- PCA/SVD 在机器学习中的应用 → [[02_机器学习/03_Unsupervised_Learning/Unsupervised_Learning]]
 
 ## 参考
 
 - 仓库主线入口：`原始/github-sources/ailearning/docs/linalg/`
 - 在线阅读：https://linalg.apachecn.org
-- 上级指南：[[学习/courses/apachecn/ailearning_guide]]
-- 引用索引：[[学习/Courses/apachecn/ailearning_guide]]
+- 上级指南：[[90_学习/courses/apachecn/ailearning_guide]]
+- 引用索引：[[90_学习/Courses/apachecn/ailearning_guide]]
 
 ## 进阶知识拓展
 
@@ -90,9 +90,9 @@ aliases:
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

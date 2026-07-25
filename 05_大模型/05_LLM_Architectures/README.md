@@ -17,17 +17,17 @@ sources: []
 
 ## 页面列表
 
-- [[大模型/LLM_Architectures/MoE_Routing_and_Load_Balancing|MoE Routing and Load Balancing]]
-- [[大模型/LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral|MoE Case Studies: DeepSeek and Mixtral]]
-- [[大模型/LLM_Architectures/Transformer_Alternatives|Transformer Alternatives: RWKV, RetNet, Mamba, and Beyond]]
+- [[05_大模型/05_LLM_Architectures/MoE_Routing_and_Load_Balancing|MoE Routing and Load Balancing]]
+- [[05_大模型/05_LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral|MoE Case Studies: DeepSeek and Mixtral]]
+- [[05_大模型/05_LLM_Architectures/Transformer_Alternatives|Transformer Alternatives: RWKV, RetNet, Mamba, and Beyond]]
 
 ## 相关页面
 
-- [[大模型/LLM_Architectures/README|LLM 架构目录]]
+- [[05_大模型/05_LLM_Architectures/README|LLM 架构目录]]
 
 ## Related
 
-- [[大模型/README|04 自然语言处理与大模型 (NLP & LLMs)]]
+- [[05_大模型/README|04 自然语言处理与大模型 (NLP & LLMs)]]
 
 ## 架构类型对比
 
@@ -188,9 +188,9 @@ sources: []
 
 ## 相关域
 
-- [[大模型/Transformer_Revolution/index|Transformer Revolution]]
-- [[大模型/Sequence_Models/index|Sequence Models]]
-- [[部署推理/index|部署推理]]
+- [[05_大模型/04_Transformer_Revolution/index|Transformer Revolution]]
+- [[05_大模型/02_Sequence_Models/index|Sequence Models]]
+- [[10_部署推理/index|部署推理]]
 
 > 💡 架构是 LLM 的基石，理解架构设计是深入理解大模型的关键。
 

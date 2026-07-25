@@ -10,7 +10,7 @@ relationships:
   - target: "概念/ascend-npu"
     type: related_to
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
 summary: "ppu-smi 是阿里云 APG 自研加速卡的监控 CLI 工具，对标 nvidia-smi，提供 GPU 利用率/显存/温度/功耗等实时监控。AI Stack APG 节点的专属监控入口。"
 provenance:
   extracted: 0.30
@@ -117,7 +117,7 @@ AI Stack GPU 监控体系
 - [[概念/apg-gpu]] — APG 自研加速卡
 - [[概念/nvidia-smi]] — nvidia-smi GPU 监控
 - [[概念/ascend-npu]] — 华为昇腾 NPU
-- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
 
 ---
 
@@ -176,9 +176,9 @@ AI Stack GPU 监控体系
 - [[概念/GPU/nvidia-smi|nvidia-smi]]
 - [[概念/GPU/rocm-smi|rocm-smi]]
 - [[概念/LLM/llm-infrastructure|LLM 基础设施]]
-- [[架构基建/AI_Stack_Deep_Dive|AI Stack 深度解析]]
-- [[运维/GPU_Monitoring|GPU 监控体系]]
-- [[架构基建/GPU_Cluster_Management|GPU 集群管理]]
+- [[12_架构基建/AI_Stack_Deep_Dive|AI Stack 深度解析]]
+- [[13_运维/GPU_Monitoring|GPU 监控体系]]
+- [[12_架构基建/GPU_Cluster_Management|GPU 集群管理]]
 
 ## 常见运维场景
 

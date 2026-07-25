@@ -17,13 +17,13 @@ sources:
 
 # Ilya Sutskever 人物索引
 
-> **一句话概括**: OpenAI 联合创始人兼前首席科学家（2015-2024）、Safe Superintelligence Inc. (SSI) 创始人——AlexNet 共同作者、Seq2Seq 学习的先驱、GPT 系列大语言模型的技术灵魂，被 [[业界观点/Geoffrey_Hinton/about|Geoffrey Hinton]] 誉为"我最好的学生"，是推动深度学习从学术研究走向 AGI 工程化的核心人物。
+> **一句话概括**: OpenAI 联合创始人兼前首席科学家（2015-2024）、Safe Superintelligence Inc. (SSI) 创始人——AlexNet 共同作者、Seq2Seq 学习的先驱、GPT 系列大语言模型的技术灵魂，被 [[19_业界观点/Geoffrey_Hinton/about|Geoffrey Hinton]] 誉为"我最好的学生"，是推动深度学习从学术研究走向 AGI 工程化的核心人物。
 
 ---
 
 ## 人物定位
 
-Ilya Sutskever 是连接深度学习学术突破与大规模工程化落地的关键人物。作为 [[业界观点/Geoffrey_Hinton/about|Hinton]] 的博士生，他共同设计并实现 AlexNet（2012），引爆深度学习革命。在 Google 期间提出 Seq2Seq 学习（2014），奠定现代序列建模基础。作为 OpenAI 首席科学家，他领导 GPT-1 到 GPT-4 全系列研发，坚定推动 Scaling Laws 路线。2024 年他离开 OpenAI 创立 Safe Superintelligence Inc. (SSI)，名字本身呼应了"安全 + 超级智能"的双重关切。
+Ilya Sutskever 是连接深度学习学术突破与大规模工程化落地的关键人物。作为 [[19_业界观点/Geoffrey_Hinton/about|Hinton]] 的博士生，他共同设计并实现 AlexNet（2012），引爆深度学习革命。在 Google 期间提出 Seq2Seq 学习（2014），奠定现代序列建模基础。作为 OpenAI 首席科学家，他领导 GPT-1 到 GPT-4 全系列研发，坚定推动 Scaling Laws 路线。2024 年他离开 OpenAI 创立 Safe Superintelligence Inc. (SSI)，名字本身呼应了"安全 + 超级智能"的双重关切。
 
 | 维度 | 定位 |
 |------|------|
@@ -40,8 +40,8 @@ Ilya Sutskever 是连接深度学习学术突破与大规模工程化落地的�
 
 | 文件 | 内容 | 适用人群 |
 |------|------|----------|
-| [[业界观点/Ilya_Sutskever/about\|about]] | 完整人物简介：学术历程、GPT 路线、SSI | 所有读者 |
-| [[业界观点/Ilya_Sutskever/sayings\|sayings]] | 重要语录合集 | 研究者 |
+| [[19_业界观点/Ilya_Sutskever/about\|about]] | 完整人物简介：学术历程、GPT 路线、SSI | 所有读者 |
+| [[19_业界观点/Ilya_Sutskever/sayings\|sayings]] | 重要语录合集 | 研究者 |
 
 ---
 
@@ -67,7 +67,7 @@ Ilya Sutskever 是连接深度学习学术突破与大规模工程化落地的�
 | 2012 | AlexNet 夺冠 ImageNet | 深度学习革命 |
 | 2013-2015 | Google 研究 | Seq2Seq 等工作 |
 | 2014 | Seq2Seq 论文 | 序列建模奠基 |
-| 2015 | 联合创立 OpenAI | 与 [[业界观点/Sam_Altman/about|Altman]]、[[业界观点/Elon_Musk/about|Musk]] |
+| 2015 | 联合创立 OpenAI | 与 [[19_业界观点/Sam_Altman/about|Altman]]、[[19_业界观点/Elon_Musk/about|Musk]] |
 | 2018 | GPT-1 | 自回归预训练路线 |
 | 2020 | GPT-3 | 大模型时代 |
 | 2022 | 领导组建 Alignment 团队 | 对齐研究 |
@@ -88,7 +88,7 @@ Ilya Sutskever 是连接深度学习学术突破与大规模工程化落地的�
 | 安全 | Superalignment——如何控制比自己聪明的系统 |
 | 超级智能 | 必然到来，必须安全 |
 
-完整语录见 [[业界观点/Ilya_Sutskever/sayings|Sutskever 语录]]。
+完整语录见 [[19_业界观点/Ilya_Sutskever/sayings|Sutskever 语录]]。
 
 ---
 
@@ -96,11 +96,11 @@ Ilya Sutskever 是连接深度学习学术突破与大规模工程化落地的�
 
 | 派别 | 归属 |
 |------|------|
-| 规模信仰派 | 核心（与 [[业界观点/Sam_Altman/about|Altman]]、[[业界观点/Dario_Amodei/about|Amodei]]）|
+| 规模信仰派 | 核心（与 [[19_业界观点/Sam_Altman/about|Altman]]、[[19_业界观点/Dario_Amodei/about|Amodei]]）|
 | 对齐派 | 核心（SSI 使命）|
 | 超级智能派 | 代表 |
 
-Sutskever 的独特之处是**同时是 Scaling 派和对齐派**——他相信超级智能即将到来（Scaling），但全部精力转向如何让它安全（对齐）。参见 [[业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix|AI 安全立场矩阵]]、[[业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix|AGI 时间表矩阵]]。
+Sutskever 的独特之处是**同时是 Scaling 派和对齐派**——他相信超级智能即将到来（Scaling），但全部精力转向如何让它安全（对齐）。参见 [[19_业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix|AI 安全立场矩阵]]、[[19_业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix|AGI 时间表矩阵]]。
 
 ---
 
@@ -108,8 +108,8 @@ Sutskever 的独特之处是**同时是 Scaling 派和对齐派**——他相信
 
 | 关系 | 人物 |
 |------|------|
-| 博士导师 | [[业界观点/Geoffrey_Hinton/about|Geoffrey Hinton]] |
-| OpenAI 联合创始人 | [[业界观点/Sam_Altman/about|Altman]]、[[业界观点/Elon_Musk/about|Musk]] |
+| 博士导师 | [[19_业界观点/Geoffrey_Hinton/about|Geoffrey Hinton]] |
+| OpenAI 联合创始人 | [[19_业界观点/Sam_Altman/about|Altman]]、[[19_业界观点/Elon_Musk/about|Musk]] |
 | AlexNet 共同作者 | Alex Krizhevsky |
 | Seq2Seq 共同作者 | Oriol Vinyals、Quoc Le |
 
@@ -119,10 +119,10 @@ Sutskever 的独特之处是**同时是 Scaling 派和对齐派**——他相信
 
 | 阶段 | 推荐内容 | 目标 |
 |------|----------|------|
-| 入门 | [[业界观点/Ilya_Sutskever/about\|about]] | 了解学术历程 |
-| 进阶 | [[业界观点/Ilya_Sutskever/sayings\|sayings]] | 掌握 Scaling + 对齐 |
+| 入门 | [[19_业界观点/Ilya_Sutskever/about\|about]] | 了解学术历程 |
+| 进阶 | [[19_业界观点/Ilya_Sutskever/sayings\|sayings]] | 掌握 Scaling + 对齐 |
 | 深入 | AlexNet / Seq2Seq 论文 | 技术细节 |
-| 对比 | [[业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix\|AGI 时间表]] | 路线定位 |
+| 对比 | [[19_业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix\|AGI 时间表]] | 路线定位 |
 
 ---
 
@@ -133,7 +133,7 @@ Sutskever 的独特之处是**同时是 Scaling 派和对齐派**——他相信
 | Sutskever 为何离开 OpenAI？ | 创立 SSI，专注安全超级智能 |
 | SSI 是什么？ | Safe Superintelligence Inc.，安全+超级智能 |
 | 他在 GPT 中角色？ | 首席科学家，技术路线灵魂 |
-| 他的导师是谁？ | [[业界观点/Geoffrey_Hinton/about|Geoffrey Hinton]] |
+| 他的导师是谁？ | [[19_业界观点/Geoffrey_Hinton/about|Geoffrey Hinton]] |
 
 ---
 
@@ -162,13 +162,13 @@ Sutskever 的独特之处是**同时是 Scaling 派和对齐派**——他相信
 
 ## 关联导航
 
-- [[业界观点/Ilya_Sutskever/about\|人物简介]] · [[业界观点/Ilya_Sutskever/sayings\|核心语录]]
-- [[业界观点/Geoffrey_Hinton/about\|Geoffrey Hinton]]（导师）
-- [[业界观点/Sam_Altman/about\|Sam Altman]] · [[业界观点/Dario_Amodei/about\|Dario Amodei]]
-- [[业界观点/Talks_Synthesis/Hinton_vs_LeCun_World_Model_Debate\|Hinton vs LeCun 之争]]
-- [[业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix\|AGI 时间表矩阵]]
-- [[业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix\|AI 安全立场矩阵]]
-- [[业界观点/index\|业界观点首页]]
+- [[19_业界观点/Ilya_Sutskever/about\|人物简介]] · [[19_业界观点/Ilya_Sutskever/sayings\|核心语录]]
+- [[19_业界观点/Geoffrey_Hinton/about\|Geoffrey Hinton]]（导师）
+- [[19_业界观点/Sam_Altman/about\|Sam Altman]] · [[19_业界观点/Dario_Amodei/about\|Dario Amodei]]
+- [[19_业界观点/Talks_Synthesis/Hinton_vs_LeCun_World_Model_Debate\|Hinton vs LeCun 之争]]
+- [[19_业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix\|AGI 时间表矩阵]]
+- [[19_业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix\|AI 安全立场矩阵]]
+- [[19_业界观点/index\|业界观点首页]]
 
 ---
 

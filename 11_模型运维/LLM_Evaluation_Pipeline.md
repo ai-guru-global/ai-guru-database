@@ -6,7 +6,7 @@ summary: "> **一句话理解**: 没有自动化评估，LLM 应用的每一次�
 created: 2026-06-15
 updated: 2026-06-15
 tier: supporting
-parent: "[[模型运维/LLMOps_2026]]"
+parent: "[[11_模型运维/LLMOps_2026]]"
 aliases:
   - "Llm Evaluation Pipeline"
   - "LLM Evaluation Pipeline"
@@ -18,7 +18,7 @@ sources: []
 
 > **一句话理解**: 没有自动化评估，LLM 应用的每一次改动都是赌博——评估流水线是把「靠感觉发版」变成「靠数据发版」的唯一途径。
 
-本文是 [[LLMOps_2026]] §4「LLM 评估流水线」的深扩专题。工具细节见 [[测试/RAGAS_Deep_Dive]]、[[测试/Testing_Frameworks/DeepEval_Deep_Dive]]、[[测试/Testing_Frameworks/Promptfoo_Deep_Dive]]。
+本文是 [[LLMOps_2026]] §4「LLM 评估流水线」的深扩专题。工具细节见 [[09_测试/RAGAS_Deep_Dive]]、[[09_测试/02_Testing_Frameworks/DeepEval_Deep_Dive]]、[[09_测试/02_Testing_Frameworks/Promptfoo_Deep_Dive]]。
 
 ---
 
@@ -407,28 +407,28 @@ graph LR
 
 - [[Braintrust_Deep_Dive]] — Braintrust：开源 LLM 评估平台
 - [[LangSmith_Deep_Dive]] — LangSmith：LLM 调试与评估
-- [[测试/RAGAS_Deep_Dive]] — Ragas：RAG 评估事实标准
-- [[测试/Testing_Frameworks/DeepEval_Deep_Dive]] — DeepEval：pytest 风格 LLM 测试
-- [[测试/Testing_Frameworks/Promptfoo_Deep_Dive]] — Promptfoo：Prompt 对比与红队
+- [[09_测试/RAGAS_Deep_Dive]] — Ragas：RAG 评估事实标准
+- [[09_测试/02_Testing_Frameworks/DeepEval_Deep_Dive]] — DeepEval：pytest 风格 LLM 测试
+- [[09_测试/02_Testing_Frameworks/Promptfoo_Deep_Dive]] — Promptfoo：Prompt 对比与红队
 
 ---
 
 ## 10. 相关文档
 
 ### 本章内
-- [[模型运维/LLMOps_2026]] — 本系列主线（§4 是本文的概览版）
-- [[模型运维/Prompt_Engineering_Ops]] — Prompt CI 门禁依赖本文的评估方法
-- [[模型运维/Orchestration/RAG_Pipeline_Ops]] — RAG 检索质量评估是本文的应用场景
-- [[模型运维/MLOps_Maturity_Model]] — 成熟度模型
+- [[11_模型运维/LLMOps_2026]] — 本系列主线（§4 是本文的概览版）
+- [[11_模型运维/Prompt_Engineering_Ops]] — Prompt CI 门禁依赖本文的评估方法
+- [[11_模型运维/05_Orchestration/RAG_Pipeline_Ops]] — RAG 检索质量评估是本文的应用场景
+- [[11_模型运维/MLOps_Maturity_Model]] — 成熟度模型
 
 ### 跨章
-- [[测试/README]] — 测试章节（本文侧重评估流水线，那章侧重测试工具）
-- [[测试/RAGAS_Deep_Dive]] — Ragas 工具详解
-- [[测试/Testing_Frameworks/DeepEval_Deep_Dive]] — DeepEval 工具详解
-- [[测试/Testing_Frameworks/Promptfoo_Deep_Dive]] — Promptfoo 工具详解
-- [[模型评估/README]] — 传统模型评估（本文是其 LLM 时代的扩展）
-- [[大模型/Reasoning_Models/README]] — Reasoning 模型评估的特殊性
-- [[智能体/Agent_Evaluation/README]] — Agent 评估（多步调用链）
+- [[09_测试/README]] — 测试章节（本文侧重评估流水线，那章侧重测试工具）
+- [[09_测试/RAGAS_Deep_Dive]] — Ragas 工具详解
+- [[09_测试/02_Testing_Frameworks/DeepEval_Deep_Dive]] — DeepEval 工具详解
+- [[09_测试/02_Testing_Frameworks/Promptfoo_Deep_Dive]] — Promptfoo 工具详解
+- [[08_模型评估/README]] — 传统模型评估（本文是其 LLM 时代的扩展）
+- [[05_大模型/09_Reasoning_Models/README]] — Reasoning 模型评估的特殊性
+- [[15_智能体/07_Agent_Evaluation/README]] — Agent 评估（多步调用链）
 
 ---
 

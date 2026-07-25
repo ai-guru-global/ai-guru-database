@@ -462,7 +462,7 @@ npx skills-ref validate .agents/skills/my-skill
 引用其他文件时，使用**从 Skill 根目录的相对路径**：
 
 ```markdown
-See [the reference guide](智能体/Agent_Skills/Agent_Skill_Reference.md) for details.
+See [the reference guide](15_智能体/05_Agent_Skills/Agent_Skill_Reference.md) for details.
 
 Run the extraction script:
 `scripts/extract.py`
@@ -683,9 +683,9 @@ description: React + Next.js performance optimization...
 
 ## Related
 
-- [[智能体/Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
-- [[智能体/Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
-- [[智能体/Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
-- [[智能体/Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)
-- [[智能体/Agent_Skills/Agent_Skill_Reference|Agent Skill 参考规范]] — Skill 文档标准与书写约定
-- [[智能体/Course_Notes/Learn_Claude_Code_L07_Skill_Loading|L07 Skill Loading]] — Skill 两级加载机制笔记
+- [[15_智能体/07_Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
+- [[15_智能体/07_Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[15_智能体/07_Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[15_智能体/07_Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)
+- [[15_智能体/05_Agent_Skills/Agent_Skill_Reference|Agent Skill 参考规范]] — Skill 文档标准与书写约定
+- [[15_智能体/15_Course_Notes/Learn_Claude_Code_L07_Skill_Loading|L07 Skill Loading]] — Skill 两级加载机制笔记

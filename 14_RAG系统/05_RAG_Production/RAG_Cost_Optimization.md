@@ -904,16 +904,16 @@ RAG成本优化检查清单 (按优先级):
 
 ## 6. 相关概念 (Related)
 
-- [[RAG系统/Advanced_RAG/RAG_Advanced_2026|RAG高级实践2026]] — RAG核心优化技术
-- [[RAG系统/Advanced_RAG/Long_Context_vs_RAG_2026|长上下文vs RAG]] — 架构选择与成本
-- [[RAG系统/Advanced_RAG/Code_RAG_Architecture|代码RAG架构]] — 代码场景成本
-- [[RAG系统/Advanced_RAG/RAG_Retrieval_Latency_Optimization|RAG检索延迟优化]] — 延迟与成本权衡
-- [[RAG系统/Embeddings/Embedding_Models_Guide|嵌入模型指南]] — 嵌入成本选型
-- [[RAG系统/Embeddings/Matryoshka_Representation_Learning_Deep_Dive|Matryoshka表示学习]] — 降维节约
-- [[RAG系统/Vector_Databases/Qdrant_Deep_Dive|Qdrant深度解析]] — 向量数据库成本
-- [[RAG系统/RAG_Production/RAG_Production_Architecture_Deep_Dive|RAG生产架构]] — 生产部署
-- [[RAG系统/RAG_Monitoring_and_Observability|RAG监控与可观测性]] — 成本监控
-- [[RAG系统/Advanced_RAG/Agentic_RAG_Guide|Agentic RAG指南]] — 自适应检索
+- [[14_RAG系统/04_Advanced_RAG/RAG_Advanced_2026|RAG高级实践2026]] — RAG核心优化技术
+- [[14_RAG系统/04_Advanced_RAG/Long_Context_vs_RAG_2026|长上下文vs RAG]] — 架构选择与成本
+- [[14_RAG系统/04_Advanced_RAG/Code_RAG_Architecture|代码RAG架构]] — 代码场景成本
+- [[14_RAG系统/04_Advanced_RAG/RAG_Retrieval_Latency_Optimization|RAG检索延迟优化]] — 延迟与成本权衡
+- [[14_RAG系统/02_Embeddings/Embedding_Models_Guide|嵌入模型指南]] — 嵌入成本选型
+- [[14_RAG系统/02_Embeddings/Matryoshka_Representation_Learning_Deep_Dive|Matryoshka表示学习]] — 降维节约
+- [[14_RAG系统/03_Vector_Databases/Qdrant_Deep_Dive|Qdrant深度解析]] — 向量数据库成本
+- [[14_RAG系统/05_RAG_Production/RAG_Production_Architecture_Deep_Dive|RAG生产架构]] — 生产部署
+- [[14_RAG系统/RAG_Monitoring_and_Observability|RAG监控与可观测性]] — 成本监控
+- [[14_RAG系统/04_Advanced_RAG/Agentic_RAG_Guide|Agentic RAG指南]] — 自适应检索
 
 ---
 

@@ -33,7 +33,7 @@ aliases:
 - 结构化输出
 - 提示优化与迭代
 
-> **关联**: -> [[大模型/Prompt_Engineering|提示词工程]] | [[学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[05_大模型/Prompt_Engineering|提示词工程]] | [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
 
 
 ## 核心知识框架

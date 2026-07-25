@@ -3,9 +3,9 @@ title: "HAMi × CDI × DRA: 异构 GPU 共享与设备注入的协作关系"
 category: -synthesis
 tags: ["hami", "cdi", "dra", "gpu-virtualization", "kubernetes", "heterogeneous-computing", "synthesis"]
 sources:
-  - "架构基建/AI_Stack/HAMi_Deep_Dive"
-  - "架构基建/Hardware_Compute/CDI_Deep_Dive"
-  - "架构基建/Hardware_Compute/DRA_Deep_Dive"
+  - "12_架构基建/03_AI_Stack/HAMi_Deep_Dive"
+  - "12_架构基建/07_Hardware_Compute/CDI_Deep_Dive"
+  - "12_架构基建/07_Hardware_Compute/DRA_Deep_Dive"
   - "概念/hami"
   - "概念/cdi"
   - "概念/dra"
@@ -95,9 +95,9 @@ aliases:
 
 ## Related
 
-- [[架构基建/AI_Stack/HAMi_Deep_Dive]] — HAMi 深度解析
-- [[架构基建/Hardware_Compute/CDI_Deep_Dive]] — CDI 容器设备接口标准
-- [[架构基建/Hardware_Compute/DRA_Deep_Dive]] — DRA 动态资源分配
+- [[12_架构基建/03_AI_Stack/HAMi_Deep_Dive]] — HAMi 深度解析
+- [[12_架构基建/07_Hardware_Compute/CDI_Deep_Dive]] — CDI 容器设备接口标准
+- [[12_架构基建/07_Hardware_Compute/DRA_Deep_Dive]] — DRA 动态资源分配
 - [[概念/hami]] — HAMi 概念卡片
 - [[概念/cdi]] — CDI 概念卡片
 - [[概念/dra]] — DRA 概念卡片
@@ -106,7 +106,7 @@ aliases:
 
 | 组件层 | 功能 | 关键技术 | 选型考量 |
 |--------|------|----------|----------|
-| 计算层 | 模型训练/推理 | GPU/TPU/NPU集群 | 算力需求+成本 |
+| 计算层 | 07_模型训练/推理 | GPU/TPU/NPU集群 | 算力需求+成本 |
 | 存储层 | 数据/模型/检查点 | 分布式存储/对象存储 | 容量+IOPS+成本 |
 | 网络层 | 节点间通信 | RDMA/RoCE/InfiniBand | 带宽+延迟 |
 | 调度层 | 资源编排 | K8s/Slurm/Ray | 弹性+效率 |

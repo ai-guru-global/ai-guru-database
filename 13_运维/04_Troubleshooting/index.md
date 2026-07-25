@@ -14,17 +14,17 @@ sources: []
 
 | 文件 | 说明 |
 |------|------|
-| [[运维/Troubleshooting/Kubernetes_Troubleshooting_Playbook|K8s 排查手册]] | Kubernetes 故障排查 Playbook |
-| [[运维/Troubleshooting/diagnosis-gpu-ai-workload-failure|GPU 故障诊断]] | AI 负载 GPU 故障诊断 |
-| [[运维/Troubleshooting/diagnosis-k8s-pod-failure|Pod 故障诊断]] | K8s Pod 故障诊断 |
-| [[运维/Troubleshooting/diagnosis-k8s-network-failure|网络故障诊断]] | K8s 网络故障诊断 |
-| [[运维/Troubleshooting/diagnosis-k8s-storage-failure|存储故障诊断]] | K8s 存储故障诊断 |
-| [[运维/Troubleshooting/diagnosis-work-order-hub|工单中心]] | 故障工单汇总 |
+| [[13_运维/04_Troubleshooting/Kubernetes_Troubleshooting_Playbook|K8s 排查手册]] | Kubernetes 故障排查 Playbook |
+| [[13_运维/04_Troubleshooting/diagnosis-gpu-ai-workload-failure|GPU 故障诊断]] | AI 负载 GPU 故障诊断 |
+| [[13_运维/04_Troubleshooting/diagnosis-k8s-pod-failure|Pod 故障诊断]] | K8s Pod 故障诊断 |
+| [[13_运维/04_Troubleshooting/diagnosis-k8s-network-failure|网络故障诊断]] | K8s 网络故障诊断 |
+| [[13_运维/04_Troubleshooting/diagnosis-k8s-storage-failure|存储故障诊断]] | K8s 存储故障诊断 |
+| [[13_运维/04_Troubleshooting/diagnosis-work-order-hub|工单中心]] | 故障工单汇总 |
 
 ## Related
 
-- [[运维/Incident_Response/index|Incident Response]]
-- [[运维/Observability_index|Observability]]
+- [[13_运维/03_Incident_Response/index|Incident Response]]
+- [[13_运维/Observability_index|Observability]]
 
 ## 进阶知识拓展
 
@@ -62,9 +62,9 @@ sources: []
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

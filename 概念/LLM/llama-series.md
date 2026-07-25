@@ -142,7 +142,7 @@ LLaMA 系列均采用以下设计：
 
 ## See Also (深度专题)
 
-- [[../../大模型/Global_LLM_Ecosystem/Meta_LLaMA_Deep_Dive|Meta LLaMA 深度解析]] — LLaMA 系列架构演进、GQA 优化与开源生态影响
+- [[../../05_大模型/14_Global_LLM_Ecosystem/Meta_LLaMA_Deep_Dive|Meta LLaMA 深度解析]] — LLaMA 系列架构演进、GQA 优化与开源生态影响
 
 ---
 
@@ -181,7 +181,7 @@ LLaMA 系列均采用以下设计：
 
 - [[概念/LLM/qwen-series|Qwen 系列]]
 - [[概念/LLM/gpt-series-evolution|GPT 系列演进]]
-- [[大模型/Open_Source_LLM/Llama_Family_Complete_Guide|Llama 家族完整指南]]
+- [[05_大模型/Open_Source_LLM/Llama_Family_Complete_Guide|Llama 家族完整指南]]
 
 ## 模型选择指南
 

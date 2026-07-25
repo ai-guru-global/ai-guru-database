@@ -46,18 +46,18 @@ sources: []
 
 ## 学完之后
 
-恭喜你打好了地基！接下来去 [第2章：机器学习](./机器学习/README_for_dummy.md) 看看 AI 是怎么从数据中学习的。
+恭喜你打好了地基！接下来去 [第2章：机器学习](./02_机器学习/README_for_dummy.md) 看看 AI 是怎么从数据中学习的。
 
 ---
 *本文是 [README.md](README.md) 的简化版，适合零基础读者。*
 
 ## Related
 
-- [[数学基础/Math_Fundamentals/Fundamentals-in-nutshell.md|Fundamentals-in-nutshell]]
-- [[数学基础/README.md|数学基础 README]]
-- [[数学基础/AI_Hardware/AI_Hardware_2026.md|AI_Hardware_2026]]
-- [[数学基础/AI_Hardware/README.md|AI_Hardware README]]
-- [[数学基础/Data_Structures_Algorithms/Data_Structures_Algorithms.md|Data_Structures_Algorithms]]
+- [[01_数学基础/01_Math_Fundamentals/Fundamentals-in-nutshell.md|Fundamentals-in-nutshell]]
+- [[01_数学基础/README.md|数学基础 README]]
+- [[01_数学基础/10_AI_Hardware/AI_Hardware_2026.md|AI_Hardware_2026]]
+- [[01_数学基础/10_AI_Hardware/README.md|AI_Hardware README]]
+- [[01_数学基础/07_Data_Structures_Algorithms/Data_Structures_Algorithms.md|Data_Structures_Algorithms]]
 
 ## 进阶知识拓展
 
@@ -95,9 +95,9 @@ sources: []
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

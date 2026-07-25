@@ -196,6 +196,6 @@ flowchart TD
 
 - [[概念/LLM/llm-arena|LLM Arena]]
 - [[概念/LLM/llm-as-judge|LLM-as-Judge]]
-- [[模型评估/Benchmarks/LLM_Benchmark_Suite_2026|LLM 基准套件 2026]]
+- [[08_模型评估/02_Benchmarks/LLM_Benchmark_Suite_2026|LLM 基准套件 2026]]
 
 > ℹ️ Benchmark 只是参考，最终决策应结合业务测试集和实际体验。

@@ -129,7 +129,7 @@ sources: []
 2. AI 技术全景概览
 3. AI 工具与实践指南
 4. AI 学习资源与方法论
-→ 然后进入 [数学基础](../数学基础/) 深入学习
+→ 然后进入 [数学基础](../01_数学基础/) 深入学习
 
 **应用导向路径**
 1. AI 基础概念入门
@@ -210,12 +210,12 @@ sources: []
 *Last updated: 2026-04-01*
 
 ## Related
-- [[入门/Technology_Overview/AI_Technology_Landscape|AI技术全景概览]]
-- [[入门/Learning_Path/AI_Practical_Labs|AI课堂实验与实践指导]]
-- [[入门/Learning_Path/AI_Tools_Practical_Guide|AI工具与实践指南]]
+- [[00_入门/02_Technology_Overview/AI_Technology_Landscape|AI技术全景概览]]
+- [[00_入门/03_Learning_Path/AI_Practical_Labs|AI课堂实验与实践指导]]
+- [[00_入门/03_Learning_Path/AI_Tools_Practical_Guide|AI工具与实践指南]]
 
-- [[入门/Fundamentals/AI_Fundamentals]] — AI基础概念入门 (共享: ai, introduction)
-- [[入门/Fundamentals/AI_Fundamentals_for_dummy]] — AI 基础入门 - 小白版 (共享: ai, introduction)
-- [[入门/README_for_dummy]] — 00 AI 简介与历史 — 小白版 🚀 (共享: ai, introduction)
+- [[00_入门/01_Fundamentals/AI_Fundamentals]] — AI基础概念入门 (共享: ai, introduction)
+- [[00_入门/01_Fundamentals/AI_Fundamentals_for_dummy]] — AI 基础入门 - 小白版 (共享: ai, introduction)
+- [[00_入门/README_for_dummy]] — 00 AI 简介与历史 — 小白版 🚀 (共享: ai, introduction)
 
-- [[入门/Learning_Path/Hands_On_Experiments_Guide|AI 知识库配套实验指南]]
+- [[00_入门/03_Learning_Path/Hands_On_Experiments_Guide|AI 知识库配套实验指南]]

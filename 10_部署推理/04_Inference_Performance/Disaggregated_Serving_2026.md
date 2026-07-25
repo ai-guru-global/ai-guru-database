@@ -22,7 +22,7 @@ sources:
 
 > **一句话概括**：2026 年 LLM 推理服务从前缀共享 / 连续批处理演进到 **Prefill-Decode 分离、Chunked Prefill、Decode 池化** 的 disaggregated 架构——用一个基座模型拆出两个物理资源池，靠 KV Cache 跨节点迁移把"算力"和"带宽"两类瓶颈彻底解耦。
 
-本文是 [[部署推理/Inference_Performance/Prefill_Decode_Disaggregation|PD分离基础]] 的 2026 工程化升级版，聚焦 **Chunked Prefill、DistServe / Mooncake / Splitwise 的真实系统设计、KV Cache 迁移建模与单池 vs 双池的取舍**。
+本文是 [[10_部署推理/04_Inference_Performance/Prefill_Decode_Disaggregation|PD分离基础]] 的 2026 工程化升级版，聚焦 **Chunked Prefill、DistServe / Mooncake / Splitwise 的真实系统设计、KV Cache 迁移建模与单池 vs 双池的取舍**。
 
 ---
 
@@ -54,11 +54,11 @@ LLM 推理的两个阶段在 **计算特性上几乎正交**，这是 disaggrega
 
 这两类工作的"理想硬件配置"完全不同：Prefill 喜欢 **高算力密度**（FLOPS/$、FLOPS/W），Decode 喜欢 **高显存带宽**（HBM TB/s、大容量缓存）。把它们塞进同一个 GPU 池、同一个连续 batch，就会出现第 2 节的"干扰问题"。
 
-> 2024-2026 的演进主线：**prefix caching → continuous batching → Chunked Prefill（单池消干扰）→ Disaggregated PD（双池解耦）→ Decode 池化 + KV Cache 中心化存储**。基础概念见 [[部署推理/Inference_Performance/Prefill_Decode_Disaggregation|PD分离基础]]。
+> 2024-2026 的演进主线：**prefix caching → continuous batching → Chunked Prefill（单池消干扰）→ Disaggregated PD（双池解耦）→ Decode 池化 + KV Cache 中心化存储**。基础概念见 [[10_部署推理/04_Inference_Performance/Prefill_Decode_Disaggregation|PD分离基础]]。
 
 ### 1.1 2026 的现实约束
 
-- 上下文窗口从 32K → 1M（参见 [[部署推理/Inference_Performance/Long_Context_Inference_2026|长上下文推理]]），prefill 单次成本爆炸。
+- 上下文窗口从 32K → 1M（参见 [[10_部署推理/04_Inference_Performance/Long_Context_Inference_2026|长上下文推理]]），prefill 单次成本爆炸。
 - MoE 模型（DeepSeek-V3 / Kimi K2 / Qwen3-MoE）让 prefill 更算力密集、decode 更访存密集，分离收益放大。
 - 企业 SLO 把 **TTFT（首 token 延迟）** 和 **TPOT（每 token 延迟）** 分开约束，混池几乎不可能同时满足两者。
 
@@ -70,7 +70,7 @@ LLM 推理的两个阶段在 **计算特性上几乎正交**，这是 disaggrega
 
 ### 2.1 Prefill 与 Decode 的资源需求对比
 
-用 Roofline 模型量化（详见 [[部署推理/Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]]）：
+用 Roofline 模型量化（详见 [[10_部署推理/04_Inference_Performance/Inference_Performance_Fundamentals|推理性能基础]]）：
 
 ```
 算术强度 = FLOPs / Bytes
@@ -118,7 +118,7 @@ t: 0   1   2   3   4   5   6   7   8   9  10 11 12 13 14
 | **Decode 占满带宽拖慢 Prefill** | 大量并发 decode | TTFT 上升 | 限并发、提前 prefill | PD 分离 |
 | **Prefill 与 Decode 互相抢占** | 显存不足触发 preemption | TTFT + TPOT 双抖动 | 增大显存、换出 KV | Decode 池化 + KV offload |
 
-> 关联：抢占机制本身的代价见 [[部署推理/Inference_Performance/Request_Scheduling_for_LLMs|请求调度]] 第 4 节。混池本质上让"调度"承担了它不该承担的"资源隔离"职责。
+> 关联：抢占机制本身的代价见 [[10_部署推理/04_Inference_Performance/Request_Scheduling_for_LLMs|请求调度]] 第 4 节。混池本质上让"调度"承担了它不该承担的"资源隔离"职责。
 
 ---
 
@@ -225,7 +225,7 @@ Chunked（chunk_size = 512）：
 现代引擎（vLLM、SGLang）用 **PagedAttention** 把 KV Cache 组织成固定大小的 block/page（通常 16 token/block）。迁移的天然单位就是 **block**：
 
 - 不需要迁整个序列，可以 **增量迁移**（prefill 算完一段就传一段）。
-- 支持前缀共享：相同前缀的 block 只传一次（见 [[部署推理/Caching/KV_Cache_Deep_Dive|KV Cache 深度]] 的 paging 部分）。
+- 支持前缀共享：相同前缀的 block 只传一次（见 [[10_部署推理/06_Caching/KV_Cache_Deep_Dive|KV Cache 深度]] 的 paging 部分）。
 
 ### 5.2 怎么传：RDMA / GPU Direct / NVLink
 
@@ -237,7 +237,7 @@ Chunked（chunk_size = 512）：
 | **NVLink / NVSwitch** | 300–900 GB/s | 极低 | 同节点内多 GPU |
 | **PCIe + 主机内存中转** | 32–64 GB/s | 中 | 无 RDMA 的降级方案 |
 
-传输链路指标与 AI 集群网络设计强相关，参见 [[架构基建/Networking/index|AI网络]]。
+传输链路指标与 AI 集群网络设计强相关，参见 [[12_架构基建/08_Networking/index|AI网络]]。
 
 ### 5.3 迁移延迟建模
 
@@ -319,7 +319,7 @@ max_seqs_in_decode_pool ≈ (GPU_HBM - model_weights) / per_seq_KV
 用 GQA/MLA 压缩 + KV FP8 后，可提升到几十到上百条/卡。
 ```
 
-这就是为什么 decode 池化必须配合 [[部署推理/Caching/KV_Cache_Deep_Dive|KV Cache 深度]] 里的 GQA/MLA/量化一起做。
+这就是为什么 decode 池化必须配合 [[10_部署推理/06_Caching/KV_Cache_Deep_Dive|KV Cache 深度]] 里的 GQA/MLA/量化一起做。
 
 ---
 
@@ -527,27 +527,27 @@ Mooncake（Moonshot AI）把 KV Cache 当作 **一等公民**，全局调度围�
 会，如果迁移没优化。但配合 pipeline 传输 + 量化 + 前缀复用，迁移延迟可被隐藏到 prefill 时间之内，净收益为正。关键是别让 `T_transfer > T_prefill`。
 
 **Q3：PD 分离对 MoE 模型有什么额外好处？**
-MoE 模型 prefill 时专家负载波动大，分离后 prefill 池可专门做专家负载均衡；decode 池则可按热专家做缓存优化。见 [[部署推理/Inference_Performance/MoE_Inference_Optimization|MoE 推理优化]]。
+MoE 模型 prefill 时专家负载波动大，分离后 prefill 池可专门做专家负载均衡；decode 池则可按热专家做缓存优化。见 [[10_部署推理/04_Inference_Performance/MoE_Inference_Optimization|MoE 推理优化]]。
 
 **Q4：小团队/单机能上 disaggregated serving 吗？**
 不建议。单机资源不够拆两个池，迁移开销也不划算。单机用 Chunked Prefill 即可。
 
 **Q5：PD 分离和 speculative decoding 冲突吗？**
-不冲突，可叠加。Speculative decoding 在 decode 池内加速，PD 分离在外层解耦。见 [[部署推理/Caching/Speculative_Decoding_Advanced_2026|Speculative Decoding 2026]]。
+不冲突，可叠加。Speculative decoding 在 decode 池内加速，PD 分离在外层解耦。见 [[10_部署推理/06_Caching/Speculative_Decoding_Advanced_2026|Speculative Decoding 2026]]。
 
 ---
 
 ## 相关知识
 
-- [[部署推理/Inference_Performance/Prefill_Decode_Disaggregation|PD分离基础]] — 本页的基础概念版
-- [[部署推理/Inference_Optimization/Parallel_Strategies_Deep_Dive|并行策略]] — 双池如何与 TP/PP 组合
-- [[部署推理/Inference_Performance/Request_Scheduling_for_LLMs|请求调度]] — 连续批处理、抢占、优先级
-- [[部署推理/Inference_Performance/Long_Context_Inference_2026|长上下文推理]] — 长上下文为何放大 PD 分离收益
-- [[部署推理/Caching/KV_Cache_Deep_Dive|KV Cache 深度]] — paging、GQA/MLA、量化（迁移的基础）
-- [[部署推理/Inference_Performance/index|推理性能]] — 性能专题索引
-- [[部署推理/index|部署推理]] — 部署推理总索引
-- [[架构基建/Networking/index|AI网络]] — RDMA/InfiniBand 与迁移链路
-- [[大模型/index|大模型]] — 大模型总索引
+- [[10_部署推理/04_Inference_Performance/Prefill_Decode_Disaggregation|PD分离基础]] — 本页的基础概念版
+- [[10_部署推理/03_Inference_Optimization/Parallel_Strategies_Deep_Dive|并行策略]] — 双池如何与 TP/PP 组合
+- [[10_部署推理/04_Inference_Performance/Request_Scheduling_for_LLMs|请求调度]] — 连续批处理、抢占、优先级
+- [[10_部署推理/04_Inference_Performance/Long_Context_Inference_2026|长上下文推理]] — 长上下文为何放大 PD 分离收益
+- [[10_部署推理/06_Caching/KV_Cache_Deep_Dive|KV Cache 深度]] — paging、GQA/MLA、量化（迁移的基础）
+- [[10_部署推理/04_Inference_Performance/index|推理性能]] — 性能专题索引
+- [[10_部署推理/index|部署推理]] — 部署推理总索引
+- [[12_架构基建/08_Networking/index|AI网络]] — RDMA/InfiniBand 与迁移链路
+- [[05_大模型/index|大模型]] — 大模型总索引
 
 ---
 

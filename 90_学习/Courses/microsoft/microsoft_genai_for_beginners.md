@@ -37,7 +37,7 @@ sources: []
 | **课时数量** | 21 节课 + 环境设置 |
 | **编程语言** | Python、TypeScript |
 | **支持平台** | Azure OpenAI 服务、GitHub Marketplace 模型目录、OpenAI API |
-| **前置要求** | 基础 Python 或 TypeScript；建议具备 [[数学基础/Python_for_AI_Basics]] 基础 |
+| **前置要求** | 基础 Python 或 TypeScript；建议具备 [[01_数学基础/Python_for_AI_Basics]] 基础 |
 | **社区支持** | [Azure AI Foundry Discord](https://discord.gg/nTYy5BXMWG) |
 
 ---
@@ -60,58 +60,58 @@ sources: []
 
 | 课号 | 课程名称 | 本库建议配合阅读 | 页面链接 |
 |------|----------|------------------|----------|
-| 00 | 课程设置 | [[数学基础/AI_Development_Environment_Setup]] | [[数学基础/GenAI_L00_Course_Setup]] |
-| 01 | 生成式 AI 与大型语言模型简介 | [[入门/AI_Fundamentals]]、[[大模型/LLM_Architectures/LLM_Architectures]] | [[入门/GenAI_L01_Intro_to_GenAI_and_LLMs]] |
-| 02 | 探索与比较不同的 LLM | [[大模型/LLM_Architectures/LLM_Architectures]]、[[大模型/Global_LLM_Ecosystem/README]] | [[大模型/GenAI_L02_Exploring_and_Comparing_LLMs]] |
-| 03 | 负责任地使用生成式 AI | [[伦理安全/Ethics-in-nutshell]]、[[伦理安全/AI_Governance_Compliance_2026]] | [[伦理安全/GenAI_L03_Using_GenAI_Responsibly]] |
+| 00 | 课程设置 | [[01_数学基础/AI_Development_Environment_Setup]] | [[01_数学基础/GenAI_L00_Course_Setup]] |
+| 01 | 生成式 AI 与大型语言模型简介 | [[00_入门/AI_Fundamentals]]、[[05_大模型/05_LLM_Architectures/LLM_Architectures]] | [[00_入门/GenAI_L01_Intro_to_GenAI_and_LLMs]] |
+| 02 | 探索与比较不同的 LLM | [[05_大模型/05_LLM_Architectures/LLM_Architectures]]、[[05_大模型/14_Global_LLM_Ecosystem/README]] | [[05_大模型/GenAI_L02_Exploring_and_Comparing_LLMs]] |
+| 03 | 负责任地使用生成式 AI | [[17_伦理安全/Ethics-in-nutshell]]、[[17_伦理安全/AI_Governance_Compliance_2026]] | [[17_伦理安全/GenAI_L03_Using_GenAI_Responsibly]] |
 
 ### 提示工程（L04-L05）
 
 | 课号 | 课程名称 | 本库建议配合阅读 | 页面链接 |
 |------|----------|------------------|----------|
-| 04 | 理解提示工程基础 | [[大模型/Prompt_Engineering/Prompt_Engineering]]、[[大模型/Prompt_Engineering/Prompt_Engineering_Principles_Ng]] | [[大模型/Prompt_Engineering/GenAI_L04_Prompt_Engineering_Fundamentals]] |
-| 05 | 创建高级提示 | [[大模型/Prompt_Engineering/Prompt_Engineering]]、[[大模型/LLM_Products/god-tier-prompts_overview]] | [[大模型/Prompt_Engineering/GenAI_L05_Advanced_Prompts]] |
+| 04 | 理解提示工程基础 | [[05_大模型/08_Prompt_Engineering/Prompt_Engineering]]、[[05_大模型/08_Prompt_Engineering/Prompt_Engineering_Principles_Ng]] | [[05_大模型/08_Prompt_Engineering/GenAI_L04_Prompt_Engineering_Fundamentals]] |
+| 05 | 创建高级提示 | [[05_大模型/08_Prompt_Engineering/Prompt_Engineering]]、[[05_大模型/13_LLM_Products/god-tier-prompts_overview]] | [[05_大模型/08_Prompt_Engineering/GenAI_L05_Advanced_Prompts]] |
 
 ### 应用构建（L06-L11）
 
 | 课号 | 课程名称 | 本库建议配合阅读 | 页面链接 |
 |------|----------|------------------|----------|
-| 06 | 构建文本生成应用 | [[智能体/README]]、[[大模型/LLM_Products/chatgpt_overview]] | [[智能体/GenAI_L06_Text_Generation_Apps]] |
-| 07 | 构建聊天应用 | [[智能体/README]]、[[智能体/Agent_Frameworks/README]] | [[智能体/GenAI_L07_Building_Chat_Applications]] |
-| 08 | 构建搜索和向量数据库应用 | [[RAG系统/RAG_Systems]]、[[RAG系统/Vector_Database_for_dummy]] | [[RAG系统/GenAI_L08_Building_Search_Applications]] |
-| 09 | 构建图像生成应用 | [[大模型/Multimodal_Models/Multimodal_Models_for_dummy]] | [[大模型/Multimodal_Models/GenAI_L09_Building_Image_Applications]] |
-| 10 | 构建低代码 AI 应用 | [[行业应用/README]] | [[行业应用/GenAI_L10_Building_Low_Code_AI_Applications]] |
-| 11 | 使用函数调用集成外部应用 | [[智能体/Agent_Frameworks/README]]、[[智能体/Agent_Workflow/Workflow-in-nutshell]] | [[智能体/GenAI_L11_Integrating_with_Function_Calling]] |
+| 06 | 构建文本生成应用 | [[15_智能体/README]]、[[05_大模型/13_LLM_Products/chatgpt_overview]] | [[15_智能体/GenAI_L06_Text_Generation_Apps]] |
+| 07 | 构建聊天应用 | [[15_智能体/README]]、[[15_智能体/02_Agent_Frameworks/README]] | [[15_智能体/GenAI_L07_Building_Chat_Applications]] |
+| 08 | 构建搜索和向量数据库应用 | [[14_RAG系统/RAG_Systems]]、[[14_RAG系统/Vector_Database_for_dummy]] | [[14_RAG系统/GenAI_L08_Building_Search_Applications]] |
+| 09 | 构建图像生成应用 | [[05_大模型/10_Multimodal_Models/Multimodal_Models_for_dummy]] | [[05_大模型/10_Multimodal_Models/GenAI_L09_Building_Image_Applications]] |
+| 10 | 构建低代码 AI 应用 | [[18_行业应用/README]] | [[18_行业应用/GenAI_L10_Building_Low_Code_AI_Applications]] |
+| 11 | 使用函数调用集成外部应用 | [[15_智能体/02_Agent_Frameworks/README]]、[[15_智能体/03_Agent_Workflow/Workflow-in-nutshell]] | [[15_智能体/GenAI_L11_Integrating_with_Function_Calling]] |
 
 ### 设计与运维（L12-L14）
 
 | 课号 | 课程名称 | 本库建议配合阅读 | 页面链接 |
 |------|----------|------------------|----------|
-| 12 | 设计 AI 应用的用户体验 | [[智能体/README]]、[[智能体/Agentic_Design_Patterns_AndrewNg]] | [[智能体/GenAI_L12_Designing_UX_for_AI_Applications]] |
-| 13 | 保障生成式 AI 应用安全 | [[伦理安全/AI_Security_2026/README]]、[[伦理安全/Ethics-in-nutshell]] | [[伦理安全/GenAI_L13_Securing_AI_Applications]] |
-| 14 | 生成式 AI 应用生命周期 | [[模型运维/MLOps_Pipeline]]、[[模型运维/MLOps_Maturity_Model]] | [[模型运维/GenAI_L14_GenAI_Application_Lifecycle]] |
+| 12 | 设计 AI 应用的用户体验 | [[15_智能体/README]]、[[15_智能体/Agentic_Design_Patterns_AndrewNg]] | [[15_智能体/GenAI_L12_Designing_UX_for_AI_Applications]] |
+| 13 | 保障生成式 AI 应用安全 | [[17_伦理安全/07_AI_Security_2026/README]]、[[17_伦理安全/Ethics-in-nutshell]] | [[17_伦理安全/GenAI_L13_Securing_AI_Applications]] |
+| 14 | 生成式 AI 应用生命周期 | [[11_模型运维/MLOps_Pipeline]]、[[11_模型运维/MLOps_Maturity_Model]] | [[11_模型运维/GenAI_L14_GenAI_Application_Lifecycle]] |
 
 ### RAG 与开源（L15-L16）
 
 | 课号 | 课程名称 | 本库建议配合阅读 | 页面链接 |
 |------|----------|------------------|----------|
-| 15 | 检索增强生成（RAG）与向量数据库 | [[RAG系统/RAG_Systems]]、[[RAG系统/Advanced_RAG/RAG_Advanced_2026]] | [[RAG系统/GenAI_L15_RAG_and_Vector_Databases]] |
-| 16 | 开源模型与 Hugging Face | [[大模型/Global_LLM_Ecosystem/README]]、[[学习/courses/hugging_face/official_courses]] | [[大模型/GenAI_L16_Open_Source_Models_and_Hugging_Face]] |
+| 15 | 检索增强生成（RAG）与向量数据库 | [[14_RAG系统/RAG_Systems]]、[[14_RAG系统/04_Advanced_RAG/RAG_Advanced_2026]] | [[14_RAG系统/GenAI_L15_RAG_and_Vector_Databases]] |
+| 16 | 开源模型与 Hugging Face | [[05_大模型/14_Global_LLM_Ecosystem/README]]、[[90_学习/courses/hugging_face/official_courses]] | [[05_大模型/GenAI_L16_Open_Source_Models_and_Hugging_Face]] |
 
 ### AI 代理（L17）
 
 | 课号 | 课程名称 | 本库建议配合阅读 | 页面链接 |
 |------|----------|------------------|----------|
-| 17 | AI 代理 | [[智能体/Agent_Frameworks/README]]、[[智能体/Agentic_Design_Patterns_AndrewNg]] | [[智能体/GenAI_L17_AI_Agents]] |
+| 17 | AI 代理 | [[15_智能体/02_Agent_Frameworks/README]]、[[15_智能体/Agentic_Design_Patterns_AndrewNg]] | [[15_智能体/GenAI_L17_AI_Agents]] |
 
 ### 微调与模型家族（L18-L21）
 
 | 课号 | 课程名称 | 本库建议配合阅读 | 页面链接 |
 |------|----------|------------------|----------|
-| 18 | 微调大型语言模型 | [[大模型/Fine_tuning_Techniques/Fine_tuning_Techniques]]、[[大模型/Fine_tuning_Techniques/Fine_tuning_Strategies]] | [[大模型/Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs]] |
-| 19 | 使用小型语言模型构建 | [[大模型/Edge_LLM/Edge_LLM_Deep_Dive]] | [[大模型/Edge_LLM/GenAI_L19_Building_with_SLMs]] |
-| 20 | 使用 Mistral 模型构建 | [[大模型/Global_LLM_Ecosystem/Mistral_AI_Deep_Dive]] | [[大模型/Global_LLM_Ecosystem/GenAI_L20_Building_with_Mistral]] |
-| 21 | 使用 Meta 模型构建 | [[大模型/Global_LLM_Ecosystem/Meta_LLaMA_Deep_Dive]] | [[大模型/Global_LLM_Ecosystem/GenAI_L21_Building_with_Meta]] |
+| 18 | 微调大型语言模型 | [[05_大模型/07_Fine_tuning_Techniques/Fine_tuning_Techniques]]、[[05_大模型/07_Fine_tuning_Techniques/Fine_tuning_Strategies]] | [[05_大模型/07_Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs]] |
+| 19 | 使用小型语言模型构建 | [[05_大模型/12_Edge_LLM/Edge_LLM_Deep_Dive]] | [[05_大模型/12_Edge_LLM/GenAI_L19_Building_with_SLMs]] |
+| 20 | 使用 Mistral 模型构建 | [[05_大模型/14_Global_LLM_Ecosystem/Mistral_AI_Deep_Dive]] | [[05_大模型/14_Global_LLM_Ecosystem/GenAI_L20_Building_with_Mistral]] |
+| 21 | 使用 Meta 模型构建 | [[05_大模型/14_Global_LLM_Ecosystem/Meta_LLaMA_Deep_Dive]] | [[05_大模型/14_Global_LLM_Ecosystem/GenAI_L21_Building_with_Meta]] |
 
 ---
 
@@ -119,15 +119,15 @@ sources: []
 
 1. **从基础开始**：按 L00→L05 的顺序学习基础概念与提示工程，建立扎实的知识框架。
 2. **边学边做**：L06→L11 是应用构建课，建议配合本库对应章节的实际代码库动手实践。
-3. **深入 RAG 与代理**：L15（RAG）和 L17（AI 代理）是当前最热门的方向，建议重点学习并结合本库 [[RAG系统/RAG_Systems]] 和 [[智能体/README]] 深入。
-4. **模型选型**：L18→L21 介绍不同模型家族，结合 [[大模型/Global_LLM_Ecosystem/README]] 理解模型差异与选型策略。
+3. **深入 RAG 与代理**：L15（RAG）和 L17（AI 代理）是当前最热门的方向，建议重点学习并结合本库 [[14_RAG系统/RAG_Systems]] 和 [[15_智能体/README]] 深入。
+4. **模型选型**：L18→L21 介绍不同模型家族，结合 [[05_大模型/14_Global_LLM_Ecosystem/README]] 理解模型差异与选型策略。
 5. **完成课后挑战**：每课附带的代码示例（Python / TypeScript）是巩固理解的关键。
 
 ---
 
 ## 与 Microsoft AI For Beginners 的关系
 
-> 本课程（Generative AI for Beginners）专注于 **生成式 AI**，是 [[学习/courses/microsoft/microsoft_ai_for_beginners]]（12 周 AI 基础课程）的姊妹篇。两门课程互补：
+> 本课程（Generative AI for Beginners）专注于 **生成式 AI**，是 [[90_学习/courses/microsoft/microsoft_ai_for_beginners]]（12 周 AI 基础课程）的姊妹篇。两门课程互补：
 >
 > | 维度 | AI For Beginners | Generative AI For Beginners |
 > |------|------------------|---------------------------|
@@ -142,12 +142,12 @@ sources: []
 
 ## 相关阅读
 
-- [[学习/courses/microsoft/microsoft_ai_for_beginners]] — Microsoft 12 周 AI 基础课程映射
-- [[学习/guides/ai_engineering_roadmap_2026]] — AI 工程师学习路线
-- [[学习/guides/learning_paths_2026]] — 本库 6 条学习路径总览
-- [[学习/courses/hugging_face/official_courses]] — Hugging Face 官方课程
-- [[学习/courses/deeplearning_ai/short_courses]] — DeepLearning.AI 前沿短课程
-- [[学习/Courses/microsoft/microsoft_genai_for_beginners]] — 外部源引用索引
+- [[90_学习/courses/microsoft/microsoft_ai_for_beginners]] — Microsoft 12 周 AI 基础课程映射
+- [[90_学习/guides/ai_engineering_roadmap_2026]] — AI 工程师学习路线
+- [[90_学习/guides/learning_paths_2026]] — 本库 6 条学习路径总览
+- [[90_学习/courses/hugging_face/official_courses]] — Hugging Face 官方课程
+- [[90_学习/courses/deeplearning_ai/short_courses]] — DeepLearning.AI 前沿短课程
+- [[90_学习/Courses/microsoft/microsoft_genai_for_beginners]] — 外部源引用索引
 
 ## 核心知识框架
 

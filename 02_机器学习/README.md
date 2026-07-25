@@ -46,7 +46,7 @@ sources: []
 | 监督学习 (Supervised Learning) | 入门 | 分类、回归、集成学习（XGBoost/LightGBM），掌握有标签数据建模 | [Supervised_Learning.md](./Supervised_Learning/Supervised_Learning.md) |
 | 特征工程 (Feature Engineering) | 进阶 | 特征选择、特征构造、特征编码，提升模型性能的关键技能 | [Feature_Engineering/](./Feature_Engineering/) |
 | 无监督学习 (Unsupervised Learning) | 进阶 | 聚类（K-Means/DBSCAN）、降维（PCA/t-SNE），挖掘无标签数据 | [Unsupervised_Learning.md](./Unsupervised_Learning/Unsupervised_Learning.md) |
-| **经典算法速查表** | **入门** | **12 个经典 ML 算法对比，用类比建立算法选择直觉** | **[ML_Algorithms_Cheatsheet.md](机器学习/ML_Fundamentals/ML_Algorithms_Cheatsheet.md)** |
+| **经典算法速查表** | **入门** | **12 个经典 ML 算法对比，用类比建立算法选择直觉** | **[ML_Algorithms_Cheatsheet.md](02_机器学习/01_ML_Fundamentals/ML_Algorithms_Cheatsheet.md)** |
 
 ### 进阶主题
 
@@ -73,9 +73,9 @@ sources: []
 
 ## 前置知识 (Prerequisites)
 
-- **必修**: [线性代数](数学基础/Linear_Algebra/Linear_Algebra.md)、[概率统计](数学基础/Probability_Statistics/Probability_Statistics.md)
+- **必修**: [线性代数](01_数学基础/02_Linear_Algebra/Linear_Algebra.md)、[概率统计](01_数学基础/03_Probability_Statistics/Probability_Statistics.md)
 - **推荐**: Python 数据分析库（Pandas、Scikit-learn）
-- **可选**: [数据结构与算法](数学基础/Data_Structures_Algorithms/Data_Structures_Algorithms.md)（理解树模型）
+- **可选**: [数据结构与算法](01_数学基础/07_Data_Structures_Algorithms/Data_Structures_Algorithms.md)（理解树模型）
 
 ## 关键术语速查 (Key Terms)
 
@@ -94,33 +94,33 @@ sources: []
 *Last updated: 2026-02-10*
 
 ## Related
-- [[机器学习/README_for_dummy|经典机器学习 - 新手导航]]
+- [[02_机器学习/README_for_dummy|经典机器学习 - 新手导航]]
 
-- [[机器学习/Ensemble_Learning/Ensemble_Learning]] — 集成学习 (Ensemble Learning) - 完全指南 (共享: machine-learning, ml, supervised, unsupervised)
-- [[机器学习/Feature_Engineering/Feature_Engineering]] — 特征工程 (Feature Engineering) (共享: machine-learning, ml, supervised, unsupervised)
-- [[机器学习/Feature_Engineering/Feature_Engineering_for_dummy]] — 特征工程 - 小白版 (共享: machine-learning, ml, supervised, unsupervised)
-- [[机器学习/ML-in-nutshell]] — 机器学习速成指南 (共享: machine-learning, ml, supervised, unsupervised)
-- [[机器学习/Anomaly_Detection/Anomaly_Detection_for_dummy]] — Anomaly_Detection_for_dummy
-- [[机器学习/Anomaly_Detection/Anomaly_Detection]] — Anomaly_Detection
-- [[机器学习/Recommendation_Systems/Recommendation_Systems]] — Recommendation_Systems
-- [[机器学习/Recommendation_Systems/Recommendation_Systems_for_dummy]] — Recommendation_Systems_for_dummy
-- [[机器学习/AutoML/AutoML]] — AutoML
-- [[机器学习/AutoML/AutoML_for_dummy]] — AutoML_for_dummy
-- [[机器学习/Unsupervised_Learning/Unsupervised_Learning]] — Unsupervised_Learning
-- [[机器学习/Unsupervised_Learning/Unsupervised_Learning_for_dummy]] — 无监督学习 - 小白版
-- [[机器学习/Time_Series/Time_Series_for_dummy]] — Time_Series_for_dummy
-- [[机器学习/Time_Series/Time_Series_Analysis]] — 时间序列分析 (Time Series Analysis) - 完全指南
-- [[机器学习/Supervised_Learning/Supervised_Learning_for_dummy]] — Supervised_Learning_for_dummy
-- [[机器学习/Supervised_Learning/Supervised_Learning]] — Supervised_Learning
-- [[机器学习/Ensemble_Learning/Ensemble_Learning_for_dummy]] — Ensemble_Learning_for_dummy
-- [[机器学习/README_for_dummy.md|README_for_dummy]]
+- [[02_机器学习/04_Ensemble_Learning/Ensemble_Learning]] — 集成学习 (Ensemble Learning) - 完全指南 (共享: machine-learning, ml, supervised, unsupervised)
+- [[02_机器学习/05_Feature_Engineering/Feature_Engineering]] — 特征工程 (Feature Engineering) (共享: machine-learning, ml, supervised, unsupervised)
+- [[02_机器学习/05_Feature_Engineering/Feature_Engineering_for_dummy]] — 特征工程 - 小白版 (共享: machine-learning, ml, supervised, unsupervised)
+- [[02_机器学习/ML-in-nutshell]] — 机器学习速成指南 (共享: machine-learning, ml, supervised, unsupervised)
+- [[02_机器学习/08_Anomaly_Detection/Anomaly_Detection_for_dummy]] — Anomaly_Detection_for_dummy
+- [[02_机器学习/08_Anomaly_Detection/Anomaly_Detection]] — Anomaly_Detection
+- [[02_机器学习/10_Recommendation_Systems/Recommendation_Systems]] — Recommendation_Systems
+- [[02_机器学习/10_Recommendation_Systems/Recommendation_Systems_for_dummy]] — Recommendation_Systems_for_dummy
+- [[02_机器学习/11_AutoML/AutoML]] — AutoML
+- [[02_机器学习/11_AutoML/AutoML_for_dummy]] — AutoML_for_dummy
+- [[02_机器学习/03_Unsupervised_Learning/Unsupervised_Learning]] — Unsupervised_Learning
+- [[02_机器学习/03_Unsupervised_Learning/Unsupervised_Learning_for_dummy]] — 无监督学习 - 小白版
+- [[02_机器学习/09_Time_Series/Time_Series_for_dummy]] — Time_Series_for_dummy
+- [[02_机器学习/09_Time_Series/Time_Series_Analysis]] — 时间序列分析 (Time Series Analysis) - 完全指南
+- [[02_机器学习/02_Supervised_Learning/Supervised_Learning_for_dummy]] — Supervised_Learning_for_dummy
+- [[02_机器学习/02_Supervised_Learning/Supervised_Learning]] — Supervised_Learning
+- [[02_机器学习/04_Ensemble_Learning/Ensemble_Learning_for_dummy]] — Ensemble_Learning_for_dummy
+- [[02_机器学习/README_for_dummy.md|README_for_dummy]]
 - [[概念/Math/feature-engineering.md|feature-engineering]]
 
 ## 相关页面
-- [[机器学习/Bayesian_Methods/Bayesian_Methods_Deep_Dive|贝叶斯方法深度解读: 从贝叶斯定理到概率编程]]
-- [[机器学习/Bayesian_Methods/README|贝叶斯方法 (Bayesian Methods)]]
-- [[机器学习/Causal_Inference/Causal_Inference_Deep_Dive|因果推断深度解读: 从相关到因果的 AI 新范式]]
-- [[机器学习/Causal_Inference/README|因果推断 (Causal Inference)]]
+- [[02_机器学习/06_Bayesian_Methods/Bayesian_Methods_Deep_Dive|贝叶斯方法深度解读: 从贝叶斯定理到概率编程]]
+- [[02_机器学习/06_Bayesian_Methods/README|贝叶斯方法 (Bayesian Methods)]]
+- [[02_机器学习/07_Causal_Inference/Causal_Inference_Deep_Dive|因果推断深度解读: 从相关到因果的 AI 新范式]]
+- [[02_机器学习/07_Causal_Inference/README|因果推断 (Causal Inference)]]
 
 - [[概念/recommendation-systems|Recommendation Systems]]
 
@@ -134,11 +134,11 @@ sources: []
 
 ## 相关资源
 
-- [[机器学习/ML_Frameworks/scikit-learn_overview|Scikit-learn]]
-- [[机器学习/ML_Frameworks/xgboost_overview|XGBoost]]
-- [[机器学习/ML_Frameworks/lightgbm_overview|LightGBM]]
-- [[机器学习/ML_Frameworks/catboost_overview|CatBoost]]
-- [[机器学习/kaggle_overview|Kaggle 数据科学竞赛平台概览]]
+- [[02_机器学习/12_ML_Frameworks/scikit-learn_overview|Scikit-learn]]
+- [[02_机器学习/12_ML_Frameworks/xgboost_overview|XGBoost]]
+- [[02_机器学习/12_ML_Frameworks/lightgbm_overview|LightGBM]]
+- [[02_机器学习/12_ML_Frameworks/catboost_overview|CatBoost]]
+- [[02_机器学习/kaggle_overview|Kaggle 数据科学竞赛平台概览]]
 
 ## 进阶知识拓展
 
@@ -176,9 +176,9 @@ sources: []
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

@@ -31,7 +31,7 @@ sources:
 
 1. **安全含义**：开源权重意味着任何人（包括恶意行为者）都可以移除安全微调 (safety fine-tuning)，使模型"越狱"。这是闭源阵营（OpenAI、Anthropic）拒绝开源前沿模型的核心论据。
 2. **地缘含义**：开源模型让无法获得最先进芯片的国家和公司也能获得接近前沿的能力。DeepSeek-V3 的开源被视为对芯片管制的回应。
-3. **垄断含义**：开源是反垄断的天然武器。Meta 用 LLaMA 开源挑战 OpenAI/Google 的双寡头，[[业界观点/Mark_Zuckerberg/about|Zuckerberg]] 称之为"开源让 Meta 成为行业标准"。
+3. **垄断含义**：开源是反垄断的天然武器。Meta 用 LLaMA 开源挑战 OpenAI/Google 的双寡头，[[19_业界观点/Mark_Zuckerberg/about|Zuckerberg]] 称之为"开源让 Meta 成为行业标准"。
 
 因此，"开不开源"不再只是技术偏好，而是 2026 年 AI 治理、地缘政治和商业模式三重博弈的交汇点。
 
@@ -43,20 +43,20 @@ sources:
 
 | 领袖 | 机构 | 旗舰模型 | 开放程度 | 公开理由 | 商业/战略动机 |
 |------|------|----------|----------|----------|---------------|
-| [[业界观点/Mark_Zuckerberg/about|Zuckerberg]] | Meta | LLaMA 2/3/4 | 权重完全开源 | "开放是构建安全 AI 的最佳方式" | 用开源建生态，对抗 OpenAI/Google 垄断 |
-| [[业界观点/Yann_LeCun/about|LeCun]] | Meta FAIR | LLaMA / JEPA | 权重完全开源 | "开源是安全的，更多眼睛发现漏洞" | 学术信念 + 实证主义 |
-| [[业界观点/Wenfeng_Liang/about|梁文锋]] | DeepSeek | DeepSeek-V3/R1 | 权重完全开源 | "效率比规模更重要，开源推动全行业" | 用开源换影响力，绕开芯片管制 |
-| [[业界观点/Jinze_Bai/about|白金泽]] | 阿里云 | Qwen 系列 | 权重完全开源 (Apache 2.0) | "开源 + 119 种语言覆盖服务全球" | 云生态引流，ModelScope 平台 |
-| [[业界观点/Emad_Mostaque/about|Mostaque]] | Stability AI | Stable Diffusion | 权重完全开源 | "去中心化生成 AI，人人可用" | 用开源撼动闭源图像生成垄断 |
-| [[业界观点/Andrej_Karpathy/about|Karpathy]] | (独立) | nanoGPT / llm.c | 代码+权重开源 | "开源加速创新，降低准入门槛" | 教育信念，传播 AI 知识 |
-| [[业界观点/Sam_Altman/about|Altman]] | OpenAI | GPT-4o / o3 | 延迟开源 + API 开放 | "前沿模型需谨慎管理" | 商业护城河 + 安全叙事 |
-| [[业界观点/Dario_Amodei/about|Amodei]] | Anthropic | Claude 4 | 完全闭源 + API | "闭源是为了安全可控地释放能力" | 安全使命 + RSP 框架 |
-| [[业界观点/Demis_Hassabis/about|Hassabis]] | Google DeepMind | Gemini 2.5 | 完全闭源 + API | "前沿研究需负责任部署" | Google 云商业护城河 |
-| [[业界观点/Elon_Musk/about|Musk]] | xAI | Grok | 部分开源 (Grok-1 开源) | "OpenAI 背叛了开源初衷" | 差异化竞争 + 政治叙事 |
+| [[19_业界观点/Mark_Zuckerberg/about|Zuckerberg]] | Meta | LLaMA 2/3/4 | 权重完全开源 | "开放是构建安全 AI 的最佳方式" | 用开源建生态，对抗 OpenAI/Google 垄断 |
+| [[19_业界观点/Yann_LeCun/about|LeCun]] | Meta FAIR | LLaMA / JEPA | 权重完全开源 | "开源是安全的，更多眼睛发现漏洞" | 学术信念 + 实证主义 |
+| [[19_业界观点/Wenfeng_Liang/about|梁文锋]] | DeepSeek | DeepSeek-V3/R1 | 权重完全开源 | "效率比规模更重要，开源推动全行业" | 用开源换影响力，绕开芯片管制 |
+| [[19_业界观点/Jinze_Bai/about|白金泽]] | 阿里云 | Qwen 系列 | 权重完全开源 (Apache 2.0) | "开源 + 119 种语言覆盖服务全球" | 云生态引流，ModelScope 平台 |
+| [[19_业界观点/Emad_Mostaque/about|Mostaque]] | Stability AI | Stable Diffusion | 权重完全开源 | "去中心化生成 AI，人人可用" | 用开源撼动闭源图像生成垄断 |
+| [[19_业界观点/Andrej_Karpathy/about|Karpathy]] | (独立) | nanoGPT / llm.c | 代码+权重开源 | "开源加速创新，降低准入门槛" | 教育信念，传播 AI 知识 |
+| [[19_业界观点/Sam_Altman/about|Altman]] | OpenAI | GPT-4o / o3 | 延迟开源 + API 开放 | "前沿模型需谨慎管理" | 商业护城河 + 安全叙事 |
+| [[19_业界观点/Dario_Amodei/about|Amodei]] | Anthropic | Claude 4 | 完全闭源 + API | "闭源是为了安全可控地释放能力" | 安全使命 + RSP 框架 |
+| [[19_业界观点/Demis_Hassabis/about|Hassabis]] | Google DeepMind | Gemini 2.5 | 完全闭源 + API | "前沿研究需负责任部署" | Google 云商业护城河 |
+| [[19_业界观点/Elon_Musk/about|Musk]] | xAI | Grok | 部分开源 (Grok-1 开源) | "OpenAI 背叛了开源初衷" | 差异化竞争 + 政治叙事 |
 
 > 注：Musk 的立场最矛盾——他是 OpenAI 联合创始人（2015 最初承诺开源），2018 因方向分歧离开，2024 起诉 OpenAI"背叛开源使命"，但同时 xAI 的 Grok-2/3 又走向闭源 API，被外界批评为"选择性开源"。
 
-补充：开源阵营还有一支重要力量——Mistral（法国），由前 DeepMind/Meta 研究者创立，坚持 Apache 2.0 开源，是欧洲开源 AI 的旗帜。[[业界观点/Richard_Socher/about|Richard Socher]] 的 You.com 则走"对话式搜索 + LLM"的产品路线，模型策略偏务实。
+补充：开源阵营还有一支重要力量——Mistral（法国），由前 DeepMind/Meta 研究者创立，坚持 Apache 2.0 开源，是欧洲开源 AI 的旗帜。[[19_业界观点/Richard_Socher/about|Richard Socher]] 的 You.com 则走"对话式搜索 + LLM"的产品路线，模型策略偏务实。
 
 ---
 
@@ -66,27 +66,27 @@ sources:
 
 **1. 安全论（开源更安全）**
 
-[[业界观点/Yann_LeCun/about|LeCun]] 反复论证：开源让更多研究者审查模型，发现偏见、后门与漏洞，比闭源的"黑箱"更安全。他把闭源前沿实验室的"安全叙事"斥为"伪装成责任的商业护城河"。
+[[19_业界观点/Yann_LeCun/about|LeCun]] 反复论证：开源让更多研究者审查模型，发现偏见、后门与漏洞，比闭源的"黑箱"更安全。他把闭源前沿实验室的"安全叙事"斥为"伪装成责任的商业护城河"。
 
 > **关键引述**："开源是安全的，因为更多眼睛可以发现漏洞。"（LeCun）
 
 **2. 创新论（开源加速创新）**
 
-[[业界观点/Andrej_Karpathy/about|Karpathy]] 认为，LLaMA 开源直接催生了 Alpaca、Vicuna、Mistral 等整个开源生态，把最先进的能力"民主化"到每个研究者和创业公司，降低了准入门槛。[[业界观点/Emad_Mostaque/about|Mostaque]] 的 Stable Diffusion 让图像生成从闭源 API（如 Midjourney、DALL·E）走向人人可本地运行的开源工具，催生了整个 AIGC 创业潮。
+[[19_业界观点/Andrej_Karpathy/about|Karpathy]] 认为，LLaMA 开源直接催生了 Alpaca、Vicuna、Mistral 等整个开源生态，把最先进的能力"民主化"到每个研究者和创业公司，降低了准入门槛。[[19_业界观点/Emad_Mostaque/about|Mostaque]] 的 Stable Diffusion 让图像生成从闭源 API（如 Midjourney、DALL·E）走向人人可本地运行的开源工具，催生了整个 AIGC 创业潮。
 
 **3. 反垄断论（开源打破寡头）**
 
-[[业界观点/Mark_Zuckerberg/about|Zuckerberg]] 的战略最务实——Meta 在 LLM 领域无法直接靠 API 收费与 OpenAI 竞争，但通过开源 LLaMA，Meta 可以让整个行业依赖 Meta 的底座模型，从而确立生态主导权（类似 Google 用 Android 开源对抗 iOS）。他宣布 Meta 将拥有超过 60 万块 GPU 的算力，并把成果开源。
+[[19_业界观点/Mark_Zuckerberg/about|Zuckerberg]] 的战略最务实——Meta 在 LLM 领域无法直接靠 API 收费与 OpenAI 竞争，但通过开源 LLaMA，Meta 可以让整个行业依赖 Meta 的底座模型，从而确立生态主导权（类似 Google 用 Android 开源对抗 iOS）。他宣布 Meta 将拥有超过 60 万块 GPU 的算力，并把成果开源。
 
 **4. 效率/地缘论（开源绕过封锁）**
 
-[[业界观点/Wenfeng_Liang/about|梁文锋]] 的 DeepSeek 是这条路线的极致代表——用不到 $6M 训练 671B 参数的 DeepSeek-V3，证明"效率比规模更重要"，并用全面开源（MLA、MoE、GRPO、FP8 训练细节全部公开）震撼全球。[[业界观点/Jinze_Bai/about|白金泽]] 领导的 Qwen 则以 Apache 2.0 许可 + 119 种语言覆盖，成为中国科技巨头开源 AI 的标杆。两人的开源都带有"绕开芯片管制、用创新换影响力"的地缘色彩。
+[[19_业界观点/Wenfeng_Liang/about|梁文锋]] 的 DeepSeek 是这条路线的极致代表——用不到 $6M 训练 671B 参数的 DeepSeek-V3，证明"效率比规模更重要"，并用全面开源（MLA、MoE、GRPO、FP8 训练细节全部公开）震撼全球。[[19_业界观点/Jinze_Bai/about|白金泽]] 领导的 Qwen 则以 Apache 2.0 许可 + 119 种语言覆盖，成为中国科技巨头开源 AI 的标杆。两人的开源都带有"绕开芯片管制、用创新换影响力"的地缘色彩。
 
 **5. 学术/教育论（开源传播知识）**
 
-[[业界观点/Andrej_Karpathy/about|Karpathy]] 的 nanoGPT（约 300 行的 GPT 实现）和 llm.c（纯 C/CUDA 训练代码）是教育性开源的代表，让大众能理解大模型内部原理。[[业界观点/3Blue1Brown/about|3Blue1Brown]] 和 [[业界观点/Josh_Starmer/about|Josh Starmer]] 虽不开源模型，但用可视化教学内容呼应了开源精神。
+[[19_业界观点/Andrej_Karpathy/about|Karpathy]] 的 nanoGPT（约 300 行的 GPT 实现）和 llm.c（纯 C/CUDA 训练代码）是教育性开源的代表，让大众能理解大模型内部原理。[[19_业界观点/3Blue1Brown/about|3Blue1Brown]] 和 [[19_业界观点/Josh_Starmer/about|Josh Starmer]] 虽不开源模型，但用可视化教学内容呼应了开源精神。
 
-> 关联阅读：中美 AI 竞赛的完整视角见 [[业界观点/Talks_Synthesis/China_US_AI_Race_Leaders_Views|中美 AI 竞赛领袖观点]]。
+> 关联阅读：中美 AI 竞赛的完整视角见 [[19_业界观点/Talks_Synthesis/China_US_AI_Race_Leaders_Views|中美 AI 竞赛领袖观点]]。
 
 ---
 
@@ -96,17 +96,17 @@ sources:
 
 **1. 安全可控论**
 
-[[业界观点/Dario_Amodei/about|Amodei]] 的论点最系统化。Anthropic 推出业界首个 Responsible Scaling Policy (RSP)，将模型按能力分为 ASL 1-5 级，每个级别有对应的安全评估要求和部署限制。他认为开源权重等于让任何人都能移除安全微调，这在模型能力达到"生物武器辅助、网络攻击自动化"级别时是不可接受的风险。
+[[19_业界观点/Dario_Amodei/about|Amodei]] 的论点最系统化。Anthropic 推出业界首个 Responsible Scaling Policy (RSP)，将模型按能力分为 ASL 1-5 级，每个级别有对应的安全评估要求和部署限制。他认为开源权重等于让任何人都能移除安全微调，这在模型能力达到"生物武器辅助、网络攻击自动化"级别时是不可接受的风险。
 
 > **关键引述**："Anthropic 选择闭源是为了安全可控地释放能力。"（Amodei）
 
 **2. 谨慎管理论**
 
-[[业界观点/Sam_Altman/about|Altman]] 采取务实中间路线：GPT-4 级别的模型不应完全开源，但 OpenAI 释放了部分较小模型的权重（如 2025 年的部分开放），被视为"延迟开源"策略——先闭源保护商业利益，待模型不再前沿后再开放旧版本。这与 OpenAI 2015 年"完全开源"的初衷形成鲜明对比，也是 Musk 起诉 OpenAI 的核心依据。
+[[19_业界观点/Sam_Altman/about|Altman]] 采取务实中间路线：GPT-4 级别的模型不应完全开源，但 OpenAI 释放了部分较小模型的权重（如 2025 年的部分开放），被视为"延迟开源"策略——先闭源保护商业利益，待模型不再前沿后再开放旧版本。这与 OpenAI 2015 年"完全开源"的初衷形成鲜明对比，也是 Musk 起诉 OpenAI 的核心依据。
 
 **3. 负责任部署论**
 
-[[业界观点/Demis_Hassabis/about|Hassabis]] 的 Google DeepMind 走的是"科学负责任"路线——Gemini 系列完全闭源，仅通过 API 和 Google 云提供服务。Google 的动机是商业护城河，但叙事是"前沿研究需要负责任地部署"。
+[[19_业界观点/Demis_Hassabis/about|Hassabis]] 的 Google DeepMind 走的是"科学负责任"路线——Gemini 系列完全闭源，仅通过 API 和 Google 云提供服务。Google 的动机是商业护城河，但叙事是"前沿研究需要负责任地部署"。
 
 **4. 工程投入回报论**
 
@@ -181,7 +181,7 @@ flowchart LR
 
 这个现象使争论更复杂——**开源确实让去安全更容易，但闭源也无法完全防止越狱**。LeCun 的反驳是：闭源黑箱让外部研究者无法审查偏见和漏洞，反而更危险；真正的安全应靠架构层面对齐，而非依赖可被移除的微调层。
 
-> 关联阅读：完整安全立场见 [[业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix|AI 安全立场矩阵]]。
+> 关联阅读：完整安全立场见 [[19_业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix|AI 安全立场矩阵]]。
 
 ---
 
@@ -228,7 +228,7 @@ flowchart LR
 | **闭源锁定** | 前沿能力因安全/管制被少数实验室垄断 | 中 | Amodei / Hassabis |
 | **分级监管** | 政府按能力等级强制要求开源/闭源策略 | 中 | Altman（呼吁类似 FDA 的 AI 机构）|
 
-> 关联阅读：AGI 何时到来会显著影响这场争论——若 AGI 在 2-5 年内实现，闭源锁定可能性上升；若更远，开源主导更可能。见 [[业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix|AGI 时间表预测矩阵]]。
+> 关联阅读：AGI 何时到来会显著影响这场争论——若 AGI 在 2-5 年内实现，闭源锁定可能性上升；若更远，开源主导更可能。见 [[19_业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix|AGI 时间表预测矩阵]]。
 
 ---
 
@@ -236,18 +236,18 @@ flowchart LR
 
 | 人物 | 与本主题的关系 |
 |------|----------------|
-| [[业界观点/Mark_Zuckerberg/about|Zuckerberg]] | 开源战略总指挥，LLaMA 系列发布者 |
-| [[业界观点/Yann_LeCun/about|LeCun]] | 开源安全论的理论旗手 |
-| [[业界观点/Wenfeng_Liang/about|梁文锋]] | 用效率+开源撼动全球的中国代表 |
-| [[业界观点/Jinze_Bai/about|白金泽]] | Qwen 开源生态负责人 |
-| [[业界观点/Jie_Tang/about|唐杰]] | GLM 部分开源推动者 |
-| [[业界观点/Emad_Mostaque/about|Mostaque]] | Stable Diffusion 开源推动者 |
-| [[业界观点/Andrej_Karpathy/about|Karpathy]] | 开源教育布道者（nanoGPT） |
-| [[业界观点/Sam_Altman/about|Altman]] | "延迟开源"策略代表 |
-| [[业界观点/Dario_Amodei/about|Amodei]] | 闭源安全论代表 |
-| [[业界观点/Demis_Hassabis/about|Hassabis]] | 科学负责任部署代表 |
-| [[业界观点/Elon_Musk/about|Musk]] | 选择性开源的矛盾人物 |
-| [[业界观点/Richard_Socher/about|Socher]] | 搜索+LLM 务实派 |
+| [[19_业界观点/Mark_Zuckerberg/about|Zuckerberg]] | 开源战略总指挥，LLaMA 系列发布者 |
+| [[19_业界观点/Yann_LeCun/about|LeCun]] | 开源安全论的理论旗手 |
+| [[19_业界观点/Wenfeng_Liang/about|梁文锋]] | 用效率+开源撼动全球的中国代表 |
+| [[19_业界观点/Jinze_Bai/about|白金泽]] | Qwen 开源生态负责人 |
+| [[19_业界观点/Jie_Tang/about|唐杰]] | GLM 部分开源推动者 |
+| [[19_业界观点/Emad_Mostaque/about|Mostaque]] | Stable Diffusion 开源推动者 |
+| [[19_业界观点/Andrej_Karpathy/about|Karpathy]] | 开源教育布道者（nanoGPT） |
+| [[19_业界观点/Sam_Altman/about|Altman]] | "延迟开源"策略代表 |
+| [[19_业界观点/Dario_Amodei/about|Amodei]] | 闭源安全论代表 |
+| [[19_业界观点/Demis_Hassabis/about|Hassabis]] | 科学负责任部署代表 |
+| [[19_业界观点/Elon_Musk/about|Musk]] | 选择性开源的矛盾人物 |
+| [[19_业界观点/Richard_Socher/about|Socher]] | 搜索+LLM 务实派 |
 
 ---
 
@@ -378,17 +378,17 @@ flowchart LR
 
 ## 十九、关联导航
 
-- [[业界观点/Mark_Zuckerberg/about|Zuckerberg 简介]] · [[业界观点/Yann_LeCun/about|LeCun 简介]]
-- [[业界观点/Wenfeng_Liang/about|梁文锋 简介]] · [[业界观点/Jinze_Bai/about|白金泽 简介]]
-- [[业界观点/Jie_Tang/about|唐杰 简介]] · [[业界观点/Emad_Mostaque/about|Mostaque 简介]]
-- [[业界观点/Sam_Altman/about|Altman 简介]] · [[业界观点/Dario_Amodei/about|Amodei 简介]]
-- [[业界观点/Demis_Hassabis/about|Hassabis 简介]] · [[业界观点/Elon_Musk/about|Musk 简介]]
-- [[业界观点/Andrej_Karpathy/about|Karpathy 简介]] · [[业界观点/Richard_Socher/about|Socher 简介]]
-- [[业界观点/Talks_Synthesis/China_US_AI_Race_Leaders_Views|中美 AI 竞赛领袖观点]]
-- [[业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix|AI 安全立场矩阵]]
-- [[业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix|AGI 时间表预测矩阵]]
-- [[业界观点/Talks_Synthesis/Hinton_vs_LeCun_World_Model_Debate|Hinton vs LeCun 之争]]
-- [[业界观点/index|业界观点首页]]
+- [[19_业界观点/Mark_Zuckerberg/about|Zuckerberg 简介]] · [[19_业界观点/Yann_LeCun/about|LeCun 简介]]
+- [[19_业界观点/Wenfeng_Liang/about|梁文锋 简介]] · [[19_业界观点/Jinze_Bai/about|白金泽 简介]]
+- [[19_业界观点/Jie_Tang/about|唐杰 简介]] · [[19_业界观点/Emad_Mostaque/about|Mostaque 简介]]
+- [[19_业界观点/Sam_Altman/about|Altman 简介]] · [[19_业界观点/Dario_Amodei/about|Amodei 简介]]
+- [[19_业界观点/Demis_Hassabis/about|Hassabis 简介]] · [[19_业界观点/Elon_Musk/about|Musk 简介]]
+- [[19_业界观点/Andrej_Karpathy/about|Karpathy 简介]] · [[19_业界观点/Richard_Socher/about|Socher 简介]]
+- [[19_业界观点/Talks_Synthesis/China_US_AI_Race_Leaders_Views|中美 AI 竞赛领袖观点]]
+- [[19_业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix|AI 安全立场矩阵]]
+- [[19_业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix|AGI 时间表预测矩阵]]
+- [[19_业界观点/Talks_Synthesis/Hinton_vs_LeCun_World_Model_Debate|Hinton vs LeCun 之争]]
+- [[19_业界观点/index|业界观点首页]]
 
 ---
 

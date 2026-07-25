@@ -10,7 +10,7 @@ relationships:
   - target: "概念/agentic-rag"
     type: related_to
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
 summary: "Reranker（重排序模型）是 RAG 流水线的第二阶段——对检索返回的候选文档进行精排，显著提升最终答案质量。AI Stack 预置 BAAI bge-reranker-v2-m3。"
 provenance:
   extracted: 0.30
@@ -128,7 +128,7 @@ AI Stack 知识库 RAG 流水线
 - [[概念/agentic-rag]] — Agentic RAG
 - [[概念/vector-database]] — 向量数据库
 - [[概念/rag-production-architecture|RAG 生产架构]] — 生产级 RAG 设计
-- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
 
 ---
 

@@ -7,10 +7,10 @@ relationships:
     type: related_to
   - target: "概念/Inference/model-serving"
     type: related_to
-  - target: "部署推理/Inference_Performance/Remaining_Performance_Issues_2026"
+  - target: "10_部署推理/04_Inference_Performance/Remaining_Performance_Issues_2026"
     type: deepened_by
 sources:
-  - 部署推理/Inference_Performance/Remaining_Performance_Issues_2026.md
+  - 10_部署推理/04_Inference_Performance/Remaining_Performance_Issues_2026.md
 summary: 当前推理性能专题已覆盖核心优化技术，但边缘/端侧、异构/国产芯片、能耗、多租户隔离、编译启动开销、tokenizer、网络尾延迟、多层缓存等缺口仍需补充。
 lifecycle: draft
 tier: core
@@ -143,7 +143,7 @@ aliases:
 - [[概念/Inference/inference-autoscaling|推理扩缩容]]
 - [[概念/Inference/prefix-caching|Prefix Caching]]
 - [[概念/Inference/model-serving|模型服务]]
-- [[部署推理/Inference_Performance/Remaining_Performance_Issues_2026|推理性能未 解问题与缺口评估]]
+- [[10_部署推理/04_Inference_Performance/Remaining_Performance_Issues_2026|推理性能未 解问题与缺口评估]]
 
 ## 性能缺口优先级矩阵
 

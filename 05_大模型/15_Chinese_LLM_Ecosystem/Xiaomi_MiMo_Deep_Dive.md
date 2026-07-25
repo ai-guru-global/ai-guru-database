@@ -126,7 +126,7 @@ MiMo (Mind in Motion) 就像小米为 AI 时代打造的一台"智能发动机"�
 └──────────────────────────────────────────────────────┘
 ```
 
-MiMo 是中国大模型赛道的"后来者"，但选择了差异化路线：**不做通用对话模型的竞争，而是聚焦 Agent 场景的基础设施**。这一策略让 MiMo 避开了与 [[大模型/Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive|DeepSeek]]、[[大模型/Chinese_LLM_Ecosystem/Qwen_Deep_Dive|Qwen]] 在通用能力上的正面交锋，开辟了 "Agent-First" 的独特定位。
+MiMo 是中国大模型赛道的"后来者"，但选择了差异化路线：**不做通用对话模型的竞争，而是聚焦 Agent 场景的基础设施**。这一策略让 MiMo 避开了与 [[05_大模型/15_Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive|DeepSeek]]、[[05_大模型/15_Chinese_LLM_Ecosystem/Qwen_Deep_Dive|Qwen]] 在通用能力上的正面交锋，开辟了 "Agent-First" 的独特定位。
 
 > **相关文档**: 关于中国 LLM 生态的全面介绍，参见 [Qwen Deep Dive](./Qwen_Deep_Dive.md) 和 [DeepSeek Deep Dive](./DeepSeek_Deep_Dive.md)
 
@@ -1292,9 +1292,9 @@ MiMo 未来路线图 (推测)
 - 小米澎湃 OS: https://hyperos.mi.com
 
 ### Wiki 内部参考
-- [[大模型/Chinese_LLM_Ecosystem/README]] — 中国大模型生态全景
-- [[大模型/Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]] — 全厂商对比矩阵
-- [[大模型/Chinese_LLM_Ecosystem/Chinese_LLM_Training_Inference_Platforms]] — 训推平台实战
+- [[05_大模型/15_Chinese_LLM_Ecosystem/README]] — 中国大模型生态全景
+- [[05_大模型/15_Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]] — 全厂商对比矩阵
+- [[05_大模型/15_Chinese_LLM_Ecosystem/Chinese_LLM_Training_Inference_Platforms]] — 训推平台实战
 
 ---
 *Last updated: 2026-06-12*

@@ -10,7 +10,7 @@ relationships:
     type: related_to
   - target: "概念/anomaly-detection"
     type: related_to
-sources: [机器学习/Unsupervised_Learning/Unsupervised_Learning.md]
+sources: [02_机器学习/03_Unsupervised_Learning/Unsupervised_Learning.md]
 summary: 从无标签数据中发现潜在结构和模式，包括聚类、降维、密度估计等核心任务。
 provenance:
   extracted: 0.80
@@ -86,7 +86,7 @@ updated: 2026-07-21T00:00:00Z
 |------|-----|-------|------|
 | 线性性 | 线性 | 非线性 | 非线性 |
 | 可逆性 | 可逆 | 不可逆 | 支持转换 |
-| 用途 | 特征提取/压缩 | 可视化 | 可视化/特征 |
+| 用途 | 特征提取/压缩 | 可视化 | 94_可视化/特征 |
 | 速度 | 快 | 慢 | 快 |
 
 ### 聚类评估指标
@@ -109,10 +109,10 @@ updated: 2026-07-21T00:00:00Z
 
 ## Related
 
-- [[机器学习/Ensemble_Learning/Ensemble_Learning]] — 集成学习 (Ensemble Learning) - 完全指南 (共享: ml, unsupervised)
-- [[机器学习/Feature_Engineering/Feature_Engineering]] — 特征工程 (Feature Engineering) (共享: ml, unsupervised)
-- [[机器学习/Feature_Engineering/Feature_Engineering_for_dummy]] — 特征工程 - 小白版 (共享: ml, unsupervised)
-- [[机器学习/ML-in-nutshell]] — 机器学习速成指南 (共享: ml, unsupervised)
+- [[02_机器学习/04_Ensemble_Learning/Ensemble_Learning]] — 集成学习 (Ensemble Learning) - 完全指南 (共享: ml, unsupervised)
+- [[02_机器学习/05_Feature_Engineering/Feature_Engineering]] — 特征工程 (Feature Engineering) (共享: ml, unsupervised)
+- [[02_机器学习/05_Feature_Engineering/Feature_Engineering_for_dummy]] — 特征工程 - 小白版 (共享: ml, unsupervised)
+- [[02_机器学习/ML-in-nutshell]] — 机器学习速成指南 (共享: ml, unsupervised)
 - [[概念/Math/time-series-analysis.md|time-series-analysis]]
 - [[概念/General/automl.md|automl]]
 - [[概念/Math/ensemble-learning.md|ensemble-learning]]

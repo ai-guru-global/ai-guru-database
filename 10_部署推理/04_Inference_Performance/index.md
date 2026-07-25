@@ -8,26 +8,26 @@ sources: []
 
 # Inference Performance
 
-This page indexes the contents of `部署推理/Inference_Performance`.
+This page indexes the contents of `10_部署推理/Inference_Performance`.
 
 ## Files
 
-- [[部署推理/Inference_Performance/Communication_Systems_Deep_Dive|通信系统全景 (Communication Systems)]]
-- [[部署推理/Inference_Performance/Disaggregated_Serving_2026|2026 PD 分离前沿架构 (Disaggregated Serving)]]
-- [[部署推理/Inference_Performance/Embedding_Model_Serving|Embedding Model Serving]]
-- [[部署推理/Inference_Performance/Flash_Kernels_Deep_Dive|Flash Kernels Deep Dive]]
-- [[部署推理/Inference_Performance/Inference_Autoscaling_and_Load_Balancing|Inference Autoscaling And Load Balancing]]
-- [[部署推理/Inference_Performance/Inference_Performance_Fundamentals|Inference Performance Fundamentals]]
-- [[部署推理/Inference_Performance/Inference_Speed_Factors_for_dummy|Inference Speed Factors For Dummy]]
-- [[部署推理/Inference_Performance/Inference_Terms_for_dummy|Inference Terms For Dummy]]
-- [[部署推理/Inference_Performance/LLM_Inference_Profiling_and_Benchmarking|LLM Inference Profiling And Benchmarking]]
-- [[部署推理/Inference_Performance/Long_Context_Inference_2026|Long Context Inference 2026]]
-- [[部署推理/Inference_Performance/MoE_Inference_Optimization|Moe Inference Optimization]]
-- [[部署推理/Inference_Performance/Multimodal_Inference_Optimization|Multimodal Inference Optimization]]
-- [[部署推理/Inference_Performance/Prefill_Decode_Disaggregation|Prefill Decode Disaggregation]]
-- [[部署推理/Inference_Performance/README|README]]
-- [[部署推理/Inference_Performance/Remaining_Performance_Issues_2026|Remaining Performance Issues 2026]]
-- [[部署推理/Inference_Performance/Request_Scheduling_for_LLMs|Request Scheduling For Llms]]
+- [[10_部署推理/04_Inference_Performance/Communication_Systems_Deep_Dive|通信系统全景 (Communication Systems)]]
+- [[10_部署推理/04_Inference_Performance/Disaggregated_Serving_2026|2026 PD 分离前沿架构 (Disaggregated Serving)]]
+- [[10_部署推理/04_Inference_Performance/Embedding_Model_Serving|Embedding Model Serving]]
+- [[10_部署推理/04_Inference_Performance/Flash_Kernels_Deep_Dive|Flash Kernels Deep Dive]]
+- [[10_部署推理/04_Inference_Performance/Inference_Autoscaling_and_Load_Balancing|Inference Autoscaling And Load Balancing]]
+- [[10_部署推理/04_Inference_Performance/Inference_Performance_Fundamentals|Inference Performance Fundamentals]]
+- [[10_部署推理/04_Inference_Performance/Inference_Speed_Factors_for_dummy|Inference Speed Factors For Dummy]]
+- [[10_部署推理/04_Inference_Performance/Inference_Terms_for_dummy|Inference Terms For Dummy]]
+- [[10_部署推理/04_Inference_Performance/LLM_Inference_Profiling_and_Benchmarking|LLM Inference Profiling And Benchmarking]]
+- [[10_部署推理/04_Inference_Performance/Long_Context_Inference_2026|Long Context Inference 2026]]
+- [[10_部署推理/04_Inference_Performance/MoE_Inference_Optimization|Moe Inference Optimization]]
+- [[10_部署推理/04_Inference_Performance/Multimodal_Inference_Optimization|Multimodal Inference Optimization]]
+- [[10_部署推理/04_Inference_Performance/Prefill_Decode_Disaggregation|Prefill Decode Disaggregation]]
+- [[10_部署推理/04_Inference_Performance/README|README]]
+- [[10_部署推理/04_Inference_Performance/Remaining_Performance_Issues_2026|Remaining Performance Issues 2026]]
+- [[10_部署推理/04_Inference_Performance/Request_Scheduling_for_LLMs|Request Scheduling For Llms]]
 
 ## 核心知识体系
 
@@ -138,9 +138,9 @@ This page indexes the contents of `部署推理/Inference_Performance`.
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

@@ -85,7 +85,7 @@ sources: []
 
 ### 1.3 通信是并行的代价
 
-每多一个并行维度，就多一种通信开销。粗略地，各维度的关键通信：DP 用 All-Reduce 聚合梯度（每步）、TP 用 All-Reduce 传每层激活（极高带宽敏感）、PP 用点对点传激活（可重叠）、EP 用 All-to-All 路由 token、SP 用 All-Gather/Reduce-Scatter、CP 用环形 P2P 或 All-to-All 切 attention 序列。通信系统的细节见 [[部署推理/Inference_Performance/Communication_Systems_Deep_Dive|通信系统全景]]。
+每多一个并行维度，就多一种通信开销。粗略地，各维度的关键通信：DP 用 All-Reduce 聚合梯度（每步）、TP 用 All-Reduce 传每层激活（极高带宽敏感）、PP 用点对点传激活（可重叠）、EP 用 All-to-All 路由 token、SP 用 All-Gather/Reduce-Scatter、CP 用环形 P2P 或 All-to-All 切 attention 序列。通信系统的细节见 [[10_部署推理/04_Inference_Performance/Communication_Systems_Deep_Dive|通信系统全景]]。
 
 ---
 
@@ -255,7 +255,7 @@ Megatron MLP (TP=n):
 
 > **经验法则**：TP 一般不超过单节点 GPU 数（通常 8）。跨节点用 PP/DP 而非 TP，因为 All-Reduce 对延迟极敏感。
 
-推理时 TP 同样切权重，但有特殊优化：All-Reduce 可换成更轻的通信（如 vLLM 的自定义 allreduce kernel，针对 NVLink 拓扑优化）；TP + KV Cache 分片时每卡只存自己 head 的 KV，无需复制。注意 TP 在 decode 阶段（batch=1）时通信占比高，需谨慎选择 TP 度。详见 [[部署推理/Inference_Engines/vLLM_Deep_Dive|vLLM]] 中 tensor-parallel 部署章节。
+推理时 TP 同样切权重，但有特殊优化：All-Reduce 可换成更轻的通信（如 vLLM 的自定义 allreduce kernel，针对 NVLink 拓扑优化）；TP + KV Cache 分片时每卡只存自己 head 的 KV，无需复制。注意 TP 在 decode 阶段（batch=1）时通信占比高，需谨慎选择 TP 度。详见 [[10_部署推理/02_Inference_Engines/vLLM_Deep_Dive|vLLM]] 中 tensor-parallel 部署章节。
 
 ---
 
@@ -395,7 +395,7 @@ TP 矩阵乘 + All-Reduce 结束后:
 - **SP（Megatron SP）**：切 LayerNorm/Dropout 等**元素层激活**，针对 TP 的通信优化，切分维度是序列但语义上是减少 TP 冗余。
 - **CP（Context Parallelism）**：切 **Attention 的序列维度**，解决长上下文 attention 的 $O(N^2)$ 显存，是真正的"分布式注意力"。
 
-详见第 6 节和 [[部署推理/Inference_Performance/Long_Context_Inference_2026|长上下文推理]]。
+详见第 6 节和 [[10_部署推理/04_Inference_Performance/Long_Context_Inference_2026|长上下文推理]]。
 
 ---
 
@@ -470,7 +470,7 @@ CP 和 SP 都切序列维，但 CP 切 attention 的序列（需要环形/All-to
 
 ## 7. 专家并行 EP
 
-专家并行（Expert Parallelism）专为 MoE 模型设计：把不同的**专家**放到不同 GPU 上，token 按路由结果跨卡分发。详见 [[部署推理/Inference_Performance/MoE_Inference_Optimization|MoE 推理优化]]，这里聚焦与其它并行的组合。
+专家并行（Expert Parallelism）专为 MoE 模型设计：把不同的**专家**放到不同 GPU 上，token 按路由结果跨卡分发。详见 [[10_部署推理/04_Inference_Performance/MoE_Inference_Optimization|MoE 推理优化]]，这里聚焦与其它并行的组合。
 
 ### 7.1 EP 的基本通信：All-to-All
 
@@ -507,7 +507,7 @@ EP 度 $e$ 与专家数 $E$ 的关系：通常 $e \leq E$（每卡至少 1 个�
 
 - 若 token 路由不均，某些卡的专家被打爆（热点），其他卡空闲。
 - 训练用 auxiliary loss 鼓励均衡；推理用 expert duplication（复制热专家）或 dynamic routing。
-- 详见 [[部署推理/Inference_Performance/MoE_Inference_Optimization|MoE 推理优化]] 第 4 节。
+- 详见 [[10_部署推理/04_Inference_Performance/MoE_Inference_Optimization|MoE 推理优化]] 第 4 节。
 
 ---
 
@@ -623,7 +623,7 @@ $$
 - **EP 用于 MoE 推理**：DeepSeek-V3 推理用 EP，配合 expert duplication 均衡负载。
 - **CP / Ring Attention**：长上下文推理（100K+）用 CP 切 attention。
 - **PP 少用**：推理流水线气泡直接转化为用户感知的延迟，一般避免；除非超大模型（405B+）显存不够才用。
-- **PD 分离**：Prefill 和 Decode 用不同并行配置（如 prefill 高 TP、decode 高 EP），见 [[部署推理/Inference_Performance/Prefill_Decode_Disaggregation|Prefill-Decode 分离]]。
+- **PD 分离**：Prefill 和 Decode 用不同并行配置（如 prefill 高 TP、decode 高 EP），见 [[10_部署推理/04_Inference_Performance/Prefill_Decode_Disaggregation|Prefill-Decode 分离]]。
 
 decode 阶段（batch 小、计算少）通信占比尤其高：单步计算 $O(N \times d)$，而 TP 通信 $O(d)$ 与计算同量级，decode 时 TP 通信可能占 30%+ 时间。vLLM 等引擎用自定义 allreduce kernel（针对 NVLink 拓扑）优化。
 
@@ -671,7 +671,7 @@ decode 阶段（batch 小、计算少）通信占比尤其高：单步计算 $O(
 - [ ] 长上下文 → 启用 CP（Ring 或 Ulysses）
 - [ ] MoE → EP + 负载均衡
 - [ ] 梯度通信慢 → FSDP + 梯度压缩/FP8 通信
-- [ ] 通信占比高 → 用 nsys/ncu profile，见 [[部署推理/Inference_Performance/Communication_Systems_Deep_Dive|通信系统全景]]
+- [ ] 通信占比高 → 用 nsys/ncu profile，见 [[10_部署推理/04_Inference_Performance/Communication_Systems_Deep_Dive|通信系统全景]]
 
 ### 12.2 一句话总结
 
@@ -681,13 +681,13 @@ decode 阶段（batch 小、计算少）通信占比尤其高：单步计算 $O(
 
 ## Related
 
-- [[部署推理/index|部署推理]]
-- [[部署推理/Inference_Performance/MoE_Inference_Optimization|MoE 推理优化]]
-- [[部署推理/Inference_Performance/Long_Context_Inference_2026|长上下文推理]]
-- [[部署推理/Inference_Performance/Communication_Systems_Deep_Dive|通信系统全景]]
-- [[部署推理/Inference_Engines/vLLM_Deep_Dive|vLLM]]
-- [[部署推理/Inference_Performance/Prefill_Decode_Disaggregation|Prefill-Decode 分离]]
-- [[架构基建/Hardware_Compute/index|硬件计算]]
-- [[架构基建/Networking/index|AI 网络]]
-- [[大模型/index|大模型]]
-- [[部署推理/README|模型部署与推理]]
+- [[10_部署推理/index|部署推理]]
+- [[10_部署推理/04_Inference_Performance/MoE_Inference_Optimization|MoE 推理优化]]
+- [[10_部署推理/04_Inference_Performance/Long_Context_Inference_2026|长上下文推理]]
+- [[10_部署推理/04_Inference_Performance/Communication_Systems_Deep_Dive|通信系统全景]]
+- [[10_部署推理/02_Inference_Engines/vLLM_Deep_Dive|vLLM]]
+- [[10_部署推理/04_Inference_Performance/Prefill_Decode_Disaggregation|Prefill-Decode 分离]]
+- [[12_架构基建/07_Hardware_Compute/index|硬件计算]]
+- [[12_架构基建/08_Networking/index|AI 网络]]
+- [[05_大模型/index|大模型]]
+- [[10_部署推理/README|模型部署与推理]]

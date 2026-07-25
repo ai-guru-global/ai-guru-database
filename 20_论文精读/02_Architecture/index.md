@@ -14,16 +14,16 @@ sources: []
 
 | 文件 | 说明 |
 |------|------|
-| [[论文精读/Architecture/Word2Vec_Deep_Dive|Word2Vec]] | 词嵌入开创性工作 |
-| [[论文精读/Architecture/Attention_Is_All_You_Need_Deep_Dive|Attention Is All You Need]] | Transformer 架构奠基论文 |
-| [[论文精读/Architecture/BERT_Deep_Dive|BERT]] | 双向预训练语言模型 |
-| [[论文精读/Architecture/LLaMA_Deep_Dive|LLaMA]] | 开源高效大语言模型系列 |
-| [[论文精读/Architecture/Mixture_of_Experts_Deep_Dive|Mixture of Experts]] | 混合专家稀疏激活架构 |
+| [[20_论文精读/02_Architecture/Word2Vec_Deep_Dive|Word2Vec]] | 词嵌入开创性工作 |
+| [[20_论文精读/02_Architecture/Attention_Is_All_You_Need_Deep_Dive|Attention Is All You Need]] | Transformer 架构奠基论文 |
+| [[20_论文精读/02_Architecture/BERT_Deep_Dive|BERT]] | 双向预训练语言模型 |
+| [[20_论文精读/02_Architecture/LLaMA_Deep_Dive|LLaMA]] | 开源高效大语言模型系列 |
+| [[20_论文精读/02_Architecture/Mixture_of_Experts_Deep_Dive|Mixture of Experts]] | 混合专家稀疏激活架构 |
 
 ## Related
 
-- [[论文精读/Scaling/index|Scaling]]
-- [[论文精读/Efficiency/index|Efficiency]]
+- [[20_论文精读/03_Scaling/index|Scaling]]
+- [[20_论文精读/04_Efficiency/index|Efficiency]]
 
 ## 进阶知识拓展
 
@@ -61,9 +61,9 @@ sources: []
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

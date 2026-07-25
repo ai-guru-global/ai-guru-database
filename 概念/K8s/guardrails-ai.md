@@ -10,7 +10,7 @@ relationships:
   - target: "概念/helicone"
     type: related_to
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
 summary: "开源的 LLM 安全防护框架，通过 Guard 和 Validator 机制对输入/输出进行多维度校验，防止有害内容、PII 泄露和格式错误。"
 provenance:
   extracted: 0.55

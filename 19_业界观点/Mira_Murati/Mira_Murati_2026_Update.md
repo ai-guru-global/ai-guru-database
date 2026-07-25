@@ -186,7 +186,7 @@ Murati 在 Thinking Machines 的核心差异化：
 | 目标 | 可解释决策 |
 | 方法 | 可解释性研究 |
 | 价值 | 信任+安全 |
-| 与 [[业界观点/Ilya_Sutskever/index\|SSI]] | 不同路线（SSI 追求数学证明） |
+| 与 [[19_业界观点/Ilya_Sutskever/index\|SSI]] | 不同路线（SSI 追求数学证明） |
 
 ### 关于 AGI
 
@@ -196,7 +196,7 @@ Murati 在 Thinking Machines 的核心差异化：
 | 前提 | 安全+可理解 |
 | 时间线 | 5-10 年 |
 | 路径 | 多模态+理解 |
-| 与 [[业界观点/Sam_Altman/index\|Altman]] | 接近但更注重可理解性 |
+| 与 [[19_业界观点/Sam_Altman/index\|Altman]] | 接近但更注重可理解性 |
 
 ### 关于 AI 监管
 
@@ -214,7 +214,7 @@ Murati 在 Thinking Machines 的核心差异化：
 
 ### 与其他 AI 创业领袖的对比
 
-| 维度 | Murati | [[业界观点/Ilya_Sutskever/index\|Sutskever]]（SSI） | [[业界观点/Fei_Fei_Li/index\|Fei-Fei Li]]（World Labs） |
+| 维度 | Murati | [[19_业界观点/Ilya_Sutskever/index\|Sutskever]]（SSI） | [[19_业界观点/Fei_Fei_Li/index\|Fei-Fei Li]]（World Labs） |
 |------|--------|---------|---------|
 | 2026 公司 | Thinking Machines | SSI | World Labs |
 | 估值 | $100B | $50B | $10B |
@@ -225,7 +225,7 @@ Murati 在 Thinking Machines 的核心差异化：
 
 ### 与前 OpenAI 同事的对比
 
-| 维度 | Murati | [[业界观点/Sam_Altman/index\|Altman]] | [[业界观点/Ilya_Sutskever/index\|Sutskever]] |
+| 维度 | Murati | [[19_业界观点/Sam_Altman/index\|Altman]] | [[19_业界观点/Ilya_Sutskever/index\|Sutskever]] |
 |------|--------|---------|---------|
 | OpenAI 角色 | CTO | CEO | 首席科学家 |
 | 离开时间 | 2024.09 | 留任 | 2024 |
@@ -361,29 +361,29 @@ Murati 的影响呈现为三个层面：
 
 ### OpenAI 校友网络
 
-- [[业界观点/Mira_Murati/index]] -- 本页主人物
-- [[业界观点/Mira_Murati/about]] -- 详细简介
-- [[业界观点/Sam_Altman/index]] -- 前 CEO
-- [[业界观点/Ilya_Sutskever/index]] -- 前首席科学家
+- [[19_业界观点/Mira_Murati/index]] -- 本页主人物
+- [[19_业界观点/Mira_Murati/about]] -- 详细简介
+- [[19_业界观点/Sam_Altman/index]] -- 前 CEO
+- [[19_业界观点/Ilya_Sutskever/index]] -- 前首席科学家
 
 ### AI 创业网络
 
-- [[业界观点/Fei_Fei_Li/index]] -- World Labs
-- [[业界观点/Mustafa_Suleyman/index]] -- Microsoft AI
-- [[业界观点/Emad_Mostaque/index]] -- 前 Stability
+- [[19_业界观点/Fei_Fei_Li/index]] -- World Labs
+- [[19_业界观点/Mustafa_Suleyman/index]] -- Microsoft AI
+- [[19_业界观点/Emad_Mostaque/index]] -- 前 Stability
 
 ### 安全与产品
 
-- [[业界观点/Mustafa_Suleyman/index]] -- 安全+产品
-- [[业界观点/Geoffrey_Hinton/index]] -- 安全先驱
-- [[业界观点/Andrej_Karpathy/index]] -- 产品+教育
+- [[19_业界观点/Mustafa_Suleyman/index]] -- 安全+产品
+- [[19_业界观点/Geoffrey_Hinton/index]] -- 安全先驱
+- [[19_业界观点/Andrej_Karpathy/index]] -- 产品+教育
 
 ### 技术与应用
 
-- [[大模型/README]] -- 多模态模型
-- [[大模型/Multimodal]] -- 多模态架构
-- [[伦理安全/README]] -- AI 安全工程化
-- [[入门/AI_Future_Trends]] -- 可理解 AI
+- [[05_大模型/README]] -- 多模态模型
+- [[05_大模型/Multimodal]] -- 多模态架构
+- [[17_伦理安全/README]] -- AI 安全工程化
+- [[00_入门/AI_Future_Trends]] -- 可理解 AI
 
 ---
 

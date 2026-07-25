@@ -117,11 +117,11 @@ aliases:
 
 ## 8. 关联阅读
 
-- [[智能体/Agent_Frameworks/AutoGen_Deep_Dive]] — AutoGen 深度解析
-- [[智能体/Agent_Frameworks/AgentScope_Deep_Dive]] — AgentScope 深度解析
-- [[智能体/Agent_Frameworks/AutoGen_CrewAI_LangGraph_Dive]] — AutoGen / CrewAI / LangGraph 对比
-- [[智能体/Agent_Workflow/Workflow-in-nutshell]] — Agent 工作流总览
-- [[大模型/Prompt_Engineering/Hello_Agents_L04_ReAct]] — 经典范式实现
+- [[15_智能体/02_Agent_Frameworks/AutoGen_Deep_Dive]] — AutoGen 深度解析
+- [[15_智能体/02_Agent_Frameworks/AgentScope_Deep_Dive]] — AgentScope 深度解析
+- [[15_智能体/02_Agent_Frameworks/AutoGen_CrewAI_LangGraph_Dive]] — AutoGen / CrewAI / LangGraph 对比
+- [[15_智能体/03_Agent_Workflow/Workflow-in-nutshell]] — Agent 工作流总览
+- [[05_大模型/08_Prompt_Engineering/Hello_Agents_L04_ReAct]] — 经典范式实现
 
 ## 附录：核心概念速查
 

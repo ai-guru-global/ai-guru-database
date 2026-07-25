@@ -39,8 +39,8 @@ Bill Gates 是 AI 应用领域的务实乐观派。他在 2023 年 GatesNotes �
 
 | 文件 | 内容 | 适用人群 |
 |------|------|----------|
-| [[业界观点/Bill_Gates/about\|about]] | 完整人物简介：微软、基金会、AI 愿景 | 所有读者 |
-| [[业界观点/Bill_Gates/sayings\|sayings]] | 重要语录合集 | 研究者 |
+| [[19_业界观点/Bill_Gates/about\|about]] | 完整人物简介：微软、基金会、AI 愿景 | 所有读者 |
+| [[19_业界观点/Bill_Gates/sayings\|sayings]] | 重要语录合集 | 研究者 |
 
 ---
 
@@ -81,7 +81,7 @@ Bill Gates 是 AI 应用领域的务实乐观派。他在 2023 年 GatesNotes �
 | 健康 | AI 加速药物发现与诊断 | 基金会 |
 | 封锁 | "技术封锁适得其反，会加速中国自研" | 多次 |
 
-完整语录见 [[业界观点/Bill_Gates/sayings|Gates 语录]]。
+完整语录见 [[19_业界观点/Bill_Gates/sayings|Gates 语录]]。
 
 ---
 
@@ -89,11 +89,11 @@ Bill Gates 是 AI 应用领域的务实乐观派。他在 2023 年 GatesNotes �
 
 | 派别 | 归属 |
 |------|------|
-| 务实乐观派 | 代表（与 [[业界观点/Sam_Altman/about|Altman]]）|
+| 务实乐观派 | 代表（与 [[19_业界观点/Sam_Altman/about|Altman]]）|
 | AI for Good 派 | 旗手 |
-| 反技术封锁派 | 代表（与 [[业界观点/Jensen_Huang/about|黄仁勋]]）|
+| 反技术封锁派 | 代表（与 [[19_业界观点/Jensen_Huang/about|黄仁勋]]）|
 
-Gates 的独特之处是**关注 AI 的全球公益应用而非商业竞争**。参见 [[业界观点/Talks_Synthesis/China_US_AI_Race_Leaders_Views|中美 AI 竞赛]]、[[业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix|AI 安全立场矩阵]]。
+Gates 的独特之处是**关注 AI 的全球公益应用而非商业竞争**。参见 [[19_业界观点/Talks_Synthesis/China_US_AI_Race_Leaders_Views|中美 AI 竞赛]]、[[19_业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix|AI 安全立场矩阵]]。
 
 ---
 
@@ -101,9 +101,9 @@ Gates 的独特之处是**关注 AI 的全球公益应用而非商业竞争**。
 
 | 关系 | 人物 |
 |------|------|
-| 微软继任 | [[业界观点/Satya_Nadella/about|Satya Nadella]] |
-| 合作伙伴 | [[业界观点/Sam_Altman/about|Sam Altman]]（OpenAI）|
-| 反封锁同盟 | [[业界观点/Jensen_Huang/about|Jensen Huang]] |
+| 微软继任 | [[19_业界观点/Satya_Nadella/about|Satya Nadella]] |
+| 合作伙伴 | [[19_业界观点/Sam_Altman/about|Sam Altman]]（OpenAI）|
+| 反封锁同盟 | [[19_业界观点/Jensen_Huang/about|Jensen Huang]] |
 | 慈善同行 | (全球健康领域) |
 
 ---
@@ -112,8 +112,8 @@ Gates 的独特之处是**关注 AI 的全球公益应用而非商业竞争**。
 
 | 阶段 | 推荐内容 | 目标 |
 |------|----------|------|
-| 入门 | [[业界观点/Bill_Gates/about\|about]] | 了解基金会与 AI 愿景 |
-| 进阶 | [[业界观点/Bill_Gates/sayings\|sayings]] | 掌握乐观立场 |
+| 入门 | [[19_业界观点/Bill_Gates/about\|about]] | 了解基金会与 AI 愿景 |
+| 进阶 | [[19_业界观点/Bill_Gates/sayings\|sayings]] | 掌握乐观立场 |
 | 深入 | "The Age of AI Has Begun" | 系统论述 |
 
 ---
@@ -153,12 +153,12 @@ Gates 的独特之处是**关注 AI 的全球公益应用而非商业竞争**。
 
 ## 关联导航
 
-- [[业界观点/Bill_Gates/about\|人物简介]] · [[业界观点/Bill_Gates/sayings\|核心语录]]
-- [[业界观点/Satya_Nadella/about\|Satya Nadella]] · [[业界观点/Sam_Altman/about\|Sam Altman]]
-- [[业界观点/Jensen_Huang/about\|Jensen Huang]]
-- [[业界观点/Talks_Synthesis/China_US_AI_Race_Leaders_Views\|中美 AI 竞赛]]
-- [[业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix\|AI 安全立场矩阵]]
-- [[业界观点/index\|业界观点首页]]
+- [[19_业界观点/Bill_Gates/about\|人物简介]] · [[19_业界观点/Bill_Gates/sayings\|核心语录]]
+- [[19_业界观点/Satya_Nadella/about\|Satya Nadella]] · [[19_业界观点/Sam_Altman/about\|Sam Altman]]
+- [[19_业界观点/Jensen_Huang/about\|Jensen Huang]]
+- [[19_业界观点/Talks_Synthesis/China_US_AI_Race_Leaders_Views\|中美 AI 竞赛]]
+- [[19_业界观点/Talks_Synthesis/AI_Safety_Stance_Matrix\|AI 安全立场矩阵]]
+- [[19_业界观点/index\|业界观点首页]]
 
 ---
 

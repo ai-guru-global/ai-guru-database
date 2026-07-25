@@ -171,8 +171,8 @@ sources: []
 ## 下一步
 
 - 想深入某个行业？→ 查看对应子目录
-- 想学技术？→ 从 [AI入门](../入门/README_for_dummy.md) 开始
-- 想找工作？→ [面试岗位/Interviews_for_dummy.md](面试岗位/Interview_Guide/Interviews_for_dummy.md)
+- 想学技术？→ 从 [AI入门](../00_入门/README_for_dummy.md) 开始
+- 想找工作？→ [21_面试岗位/Interviews_for_dummy.md](21_面试岗位/Interview_Guide/Interviews_for_dummy.md)
 
 ---
 
@@ -180,9 +180,9 @@ sources: []
 
 ## Related
 
-- [[行业应用/AI_Energy_Climate_2026]] — AI 能源与气候行业应用 (2025-2026) (共享: ai-applications, finance, healthcare, industry)
-- [[行业应用/Industry_Comparison_2026]] — AI 行业应用对比 2026 (Industry Comparison) (共享: ai-applications, finance, healthcare, industry)
-- [[行业应用/README]] — 13 - AI应用与行业融合 (共享: ai-applications, finance, healthcare, industry)
+- [[18_行业应用/AI_Energy_Climate_2026]] — AI 能源与气候行业应用 (2025-2026) (共享: ai-applications, finance, healthcare, industry)
+- [[18_行业应用/Industry_Comparison_2026]] — AI 行业应用对比 2026 (Industry Comparison) (共享: ai-applications, finance, healthcare, industry)
+- [[18_行业应用/README]] — 13 - AI应用与行业融合 (共享: ai-applications, finance, healthcare, industry)
 
 ## 进阶知识拓展
 
@@ -220,9 +220,9 @@ sources: []
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

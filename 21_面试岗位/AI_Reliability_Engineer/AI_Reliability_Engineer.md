@@ -685,12 +685,12 @@ class InferenceCostMonitor:
 
 ## Related
 
-- [[面试岗位/README|AI 面试准备 (Interviews)]]
-- [[面试岗位/jobs|AI 相关岗位与工种清单]]
-- [[面试岗位/MLOps_Engineer/MLOps_Engineer|MLOps Engineer 面试指南]]
-- [[面试岗位/AI_Infrastructure_Engineer/question_bank|AI Infrastructure Engineer 题库]]
-- [[面试岗位/AI_Evaluation_Engineer/AI_Evaluation_Engineer|AI Evaluation Engineer 面试指南]]
-- [[面试岗位/AI_Security_Engineer/AI_Security_Engineer|AI Security Engineer 面试指南]]
+- [[21_面试岗位/README|AI 面试准备 (Interviews)]]
+- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/MLOps_Engineer/MLOps_Engineer|MLOps Engineer 面试指南]]
+- [[21_面试岗位/AI_Infrastructure_Engineer/question_bank|AI Infrastructure Engineer 题库]]
+- [[21_面试岗位/AI_Evaluation_Engineer/AI_Evaluation_Engineer|AI Evaluation Engineer 面试指南]]
+- [[21_面试岗位/AI_Security_Engineer/AI_Security_Engineer|AI Security Engineer 面试指南]]
 
 ---
 

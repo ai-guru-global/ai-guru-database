@@ -605,13 +605,13 @@ CT/MRI 数据 → [AI 分割] → [3D 重建] → [手术规划] → [模拟验�
 ## 相关概念
 
 > **关联**:
-> - [[行业应用/Healthcare/index|医疗 AI]]
-> - [[行业应用/AI_for_Science/Protein_Folding_and_Drug_Discovery_2026|蛋白质折叠]]
-> - [[伦理安全/README|伦理安全]]
+> - [[18_行业应用/03_Healthcare/index|医疗 AI]]
+> - [[18_行业应用/02_AI_for_Science/Protein_Folding_and_Drug_Discovery_2026|蛋白质折叠]]
+> - [[17_伦理安全/README|伦理安全]]
 > - [[LLM/README|大语言模型]]
 > - [[多模态/README|多模态 AI]]
-> - [[智能体/README|AI Agent]]
-> - [[计算机视觉/README|计算机视觉]]
-> - [[强化学习/README|强化学习]]
+> - [[15_智能体/README|AI Agent]]
+> - [[04_计算机视觉/README|计算机视觉]]
+> - [[06_强化学习/README|强化学习]]
 > - [[知识图谱/README|知识图谱]]
-> - [[行业应用/AI_Robotics_Industry_2026|AI 机器人]]
+> - [[18_行业应用/AI_Robotics_Industry_2026|AI 机器人]]

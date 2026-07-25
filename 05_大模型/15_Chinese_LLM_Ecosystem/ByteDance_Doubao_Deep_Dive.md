@@ -509,16 +509,16 @@ response = client.chat(
 
 ## 14. 扩展阅读
 
-- [[大模型/Chinese_LLM_Ecosystem/README]] — 中国大模型生态总览
-- [[大模型/Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive]] — DeepSeek 深度解析
-- [[大模型/Chinese_LLM_Ecosystem/Qwen_Deep_Dive]] — 通义千问深度解析
-- [[大模型/Chinese_LLM_Ecosystem/GLM_Zhipu_Deep_Dive]] — 智谱 GLM 深度解析
-- [[大模型/Chinese_LLM_Ecosystem/Baidu_ERNIE_Deep_Dive]] — 百度文心深度解析
-- [[大模型/Chinese_LLM_Ecosystem/Tencent_Hunyuan_Deep_Dive]] — 腾讯混元深度解析
-- [[大模型/Chinese_LLM_Ecosystem/Kimi_Moonshot_Deep_Dive]] — Kimi 月之暗面
-- [[大模型/Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]] — 国产模型对比矩阵
-- [[智能体/GenAI_L17_AI_Agents]] — AI Agent 概述
-- [[学习/courses/microsoft/microsoft_genai_for_beginners]] — 生成式 AI 入门课程
+- [[05_大模型/15_Chinese_LLM_Ecosystem/README]] — 中国大模型生态总览
+- [[05_大模型/15_Chinese_LLM_Ecosystem/DeepSeek_Deep_Dive]] — DeepSeek 深度解析
+- [[05_大模型/15_Chinese_LLM_Ecosystem/Qwen_Deep_Dive]] — 通义千问深度解析
+- [[05_大模型/15_Chinese_LLM_Ecosystem/GLM_Zhipu_Deep_Dive]] — 智谱 GLM 深度解析
+- [[05_大模型/15_Chinese_LLM_Ecosystem/Baidu_ERNIE_Deep_Dive]] — 百度文心深度解析
+- [[05_大模型/15_Chinese_LLM_Ecosystem/Tencent_Hunyuan_Deep_Dive]] — 腾讯混元深度解析
+- [[05_大模型/15_Chinese_LLM_Ecosystem/Kimi_Moonshot_Deep_Dive]] — Kimi 月之暗面
+- [[05_大模型/15_Chinese_LLM_Ecosystem/Chinese_LLM_Comparison_Matrix]] — 国产模型对比矩阵
+- [[15_智能体/GenAI_L17_AI_Agents]] — AI Agent 概述
+- [[90_学习/courses/microsoft/microsoft_genai_for_beginners]] — 生成式 AI 入门课程
 
 ---
 

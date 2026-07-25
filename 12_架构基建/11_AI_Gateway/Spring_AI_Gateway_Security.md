@@ -2,7 +2,7 @@
 title: Spring AI 网关与安全
 category: 12-architecture-infrastructure-ai-gateway
 tags: ["ai-gateway", "api-management", "routing", "litellm"]
-summary: "> 📚 **Spring AI 基础**: 如果你还不熟悉 Spring AI 的核心概念，请先阅读 [Spring AI 深度解析](数学基础/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md)。"
+summary: "> 📚 **Spring AI 基础**: 如果你还不熟悉 Spring AI 的核心概念，请先阅读 [Spring AI 深度解析](01_数学基础/11_Java_Ecosystem_AI/Spring_AI_Deep_Dive.md)。"
 created: 2026-05-31
 updated: 2026-05-31
 tier: supporting
@@ -19,11 +19,11 @@ sources: []
 <!-- op-safety-banner v1 -->
 # Spring AI 网关与安全
 
-> 📚 **Spring AI 基础**: 如果你还不熟悉 Spring AI 的核心概念，请先阅读 [Spring AI 深度解析](数学基础/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md)。
+> 📚 **Spring AI 基础**: 如果你还不熟悉 Spring AI 的核心概念，请先阅读 [Spring AI 深度解析](01_数学基础/11_Java_Ecosystem_AI/Spring_AI_Deep_Dive.md)。
 >
 > **一句话理解**: Spring Security + Spring AI Gateway 是 Java 企业级 AI 应用的安全基石 —— 认证授权、Prompt 注入防御、API 密钥管理、限流熔断，全面保障 AI 服务的安全可控。
 
-> **相关文档**: [AI Gateway 概述](./AI_Gateway_2026.md) | [Spring AI 深度解析](数学基础/Java_Ecosystem_AI/Spring_AI_Deep_Dive.md) | [Spring AI 架构设计](../Architecture_Overview/Spring_AI_Architecture.md) | [AI 安全红队测试](伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming_for_dummy.md)
+> **相关文档**: [AI Gateway 概述](./AI_Gateway_2026.md) | [Spring AI 深度解析](01_数学基础/11_Java_Ecosystem_AI/Spring_AI_Deep_Dive.md) | [Spring AI 架构设计](../Architecture_Overview/Spring_AI_Architecture.md) | [AI 安全红队测试](17_伦理安全/04_AI_Safety_RedTeaming/AI_Safety_RedTeaming_for_dummy.md)
 
 ---
 
@@ -1364,7 +1364,7 @@ record ComplianceReport(UUID traceId, boolean compliant,
 
 ## Related
 
-- [[架构基建/AI_Gateway/AI_Gateway_for_dummy]] — AI Gateway 入门指南 (for Dummies) (共享: ai-gateway, api-management, litellm, routing)
-- [[架构基建/AI_Gateway/Gateway-in-nutshell]] — AI 网关速成指南 (共享: ai-gateway, api-management, litellm, routing)
-- [[架构基建/AI_Gateway/Kong_AI_Gateway_Deep_Dive]] — Kong AI Gateway 深度解析 (共享: ai-gateway, api-management, litellm, routing)
-- [[架构基建/AI_Gateway/README]] — AI Gateway (共享: ai-gateway, api-management, litellm, routing)
+- [[12_架构基建/11_AI_Gateway/AI_Gateway_for_dummy]] — AI Gateway 入门指南 (for Dummies) (共享: ai-gateway, api-management, litellm, routing)
+- [[12_架构基建/11_AI_Gateway/Gateway-in-nutshell]] — AI 网关速成指南 (共享: ai-gateway, api-management, litellm, routing)
+- [[12_架构基建/11_AI_Gateway/Kong_AI_Gateway_Deep_Dive]] — Kong AI Gateway 深度解析 (共享: ai-gateway, api-management, litellm, routing)
+- [[12_架构基建/11_AI_Gateway/README]] — AI Gateway (共享: ai-gateway, api-management, litellm, routing)

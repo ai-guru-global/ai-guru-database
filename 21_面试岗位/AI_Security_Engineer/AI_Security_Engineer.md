@@ -831,13 +831,13 @@ AI 回复: {response}
 
 ## Related
 
-- [[面试岗位/README|AI 面试准备 (Interviews)]]
-- [[面试岗位/jobs|AI 相关岗位与工种清单]]
-- [[面试岗位/AI_Evaluation_Engineer/AI_Evaluation_Engineer|AI Evaluation Engineer 面试指南]]
-- [[面试岗位/AI_Reliability_Engineer/AI_Reliability_Engineer|AI Reliability Engineer 面试指南]]
-- [[面试岗位/AI_Policy_Specialist/AI_Policy_Specialist|AI Policy Specialist 面试指南]]
-- [[面试岗位/Agent_Engineer/Agent_Engineer_2026|Agent Engineer 面试指南]]
-- [[面试岗位/MLOps_Engineer/MLOps_Engineer|MLOps Engineer 面试指南]]
+- [[21_面试岗位/README|AI 面试准备 (Interviews)]]
+- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/AI_Evaluation_Engineer/AI_Evaluation_Engineer|AI Evaluation Engineer 面试指南]]
+- [[21_面试岗位/AI_Reliability_Engineer/AI_Reliability_Engineer|AI Reliability Engineer 面试指南]]
+- [[21_面试岗位/AI_Policy_Specialist/AI_Policy_Specialist|AI Policy Specialist 面试指南]]
+- [[21_面试岗位/Agent_Engineer/Agent_Engineer_2026|Agent Engineer 面试指南]]
+- [[21_面试岗位/MLOps_Engineer/MLOps_Engineer|MLOps Engineer 面试指南]]
 
 ---
 

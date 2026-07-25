@@ -97,7 +97,7 @@ sources: []
 
 > "Scaling Laws是过去几年AI进步的最大功臣，但我认为单纯靠Scale的边际收益在递减。下一步突破需要新的架构或新的学习范式。"
 
-这一立场介于 [[业界观点/Jensen_Huang/about]] 的"算力信仰"和 [[业界观点/Yann_LeCun/about]] 的"架构革命"之间。
+这一立场介于 [[19_业界观点/Jensen_Huang/about]] 的"算力信仰"和 [[19_业界观点/Yann_LeCun/about]] 的"架构革命"之间。
 
 ---
 
@@ -218,7 +218,7 @@ sources: []
 ```
 
 他认为：
-- Layer 1 是巨头的游戏（OpenAI、Google、[[业界观点/Mark_Zuckerberg/Zuckerberg_AI_Pivot_2026|Meta]]）
+- Layer 1 是巨头的游戏（OpenAI、Google、[[19_业界观点/Mark_Zuckerberg/Zuckerberg_AI_Pivot_2026|Meta]]）
 - Layer 2 是现有互联网公司的机会（美团、字节、阿里）
 - Layer 3 是创业者的最大机会——"新品类意味着新巨头"
 
@@ -265,16 +265,16 @@ sources: []
 
 ## 交叉引用 (Cross-References)
 
-- [[业界观点/Sam_Altman/about]] -- OpenAI CEO，AI创业生态的全球标杆（共享: AI创业、AGI思考）
-- [[业界观点/Jensen_Huang/about]] -- NVIDIA CEO，AI基础设施视角（共享: AI产业格局、Scaling Laws）
-- [[业界观点/Mark_Zuckerberg/Zuckerberg_AI_Pivot_2026]] -- Meta AI战略（共享: AI产品化、开源vs闭源）
-- [[业界观点/Dario_Amodei/Amodei_2026_Update]] -- Anthropic CEO（共享: AI安全、商业化路径）
-- [[业界观点/Demis_Hassabis/Hassabis_2026_Update]] -- DeepMind CEO（共享: AGI路线图、AI for Science）
-- [[业界观点/Yann_LeCun/about]] -- Meta首席AI科学家（共享: AI架构未来、开源AI）
-- [[业界观点/Andrew_Ng/about]] -- AI教育者（共享: AI民主化、应用驱动）
-- [[大模型/README]] -- 大语言模型技术基础
-- [[入门/AI_Future_Trends]] -- AI未来趋势与AGI讨论
-- [[伦理安全/README]] -- AI伦理与安全治理
+- [[19_业界观点/Sam_Altman/about]] -- OpenAI CEO，AI创业生态的全球标杆（共享: AI创业、AGI思考）
+- [[19_业界观点/Jensen_Huang/about]] -- NVIDIA CEO，AI基础设施视角（共享: AI产业格局、Scaling Laws）
+- [[19_业界观点/Mark_Zuckerberg/Zuckerberg_AI_Pivot_2026]] -- Meta AI战略（共享: AI产品化、开源vs闭源）
+- [[19_业界观点/Dario_Amodei/Amodei_2026_Update]] -- Anthropic CEO（共享: AI安全、商业化路径）
+- [[19_业界观点/Demis_Hassabis/Hassabis_2026_Update]] -- DeepMind CEO（共享: AGI路线图、AI for Science）
+- [[19_业界观点/Yann_LeCun/about]] -- Meta首席AI科学家（共享: AI架构未来、开源AI）
+- [[19_业界观点/Andrew_Ng/about]] -- AI教育者（共享: AI民主化、应用驱动）
+- [[05_大模型/README]] -- 大语言模型技术基础
+- [[00_入门/AI_Future_Trends]] -- AI未来趋势与AGI讨论
+- [[17_伦理安全/README]] -- AI伦理与安全治理
 
 ---
 
@@ -515,11 +515,11 @@ sources: []
 
 ## Related
 
-- [[业界观点/Wang_Huiwen/about]] -- 王慧文简介（本页）
-- [[业界观点/Sam_Altman/about]] -- Sam Altman 简介 (共享: AI创业生态、AGI竞赛)
-- [[业界观点/Jensen_Huang/about]] -- Jensen Huang 简介 (共享: AI基础设施、产业格局)
-- [[业界观点/Mark_Zuckerberg/about]] -- Mark Zuckerberg 简介 (共享: AI产品化、平台战略)
-- [[业界观点/Dario_Amodei/about]] -- Dario Amodei 简介 (共享: AI安全、商业化)
-- [[业界观点/Demis_Hassabis/about]] -- Demis Hassabis 简介 (共享: AGI路线图)
-- [[业界观点/Yann_LeCun/about]] -- Yann LeCun 简介 (共享: AI架构、开源)
-- [[业界观点/Andrew_Ng/about]] -- Andrew Ng 简介 (共享: AI教育、应用驱动)
+- [[19_业界观点/Wang_Huiwen/about]] -- 王慧文简介（本页）
+- [[19_业界观点/Sam_Altman/about]] -- Sam Altman 简介 (共享: AI创业生态、AGI竞赛)
+- [[19_业界观点/Jensen_Huang/about]] -- Jensen Huang 简介 (共享: AI基础设施、产业格局)
+- [[19_业界观点/Mark_Zuckerberg/about]] -- Mark Zuckerberg 简介 (共享: AI产品化、平台战略)
+- [[19_业界观点/Dario_Amodei/about]] -- Dario Amodei 简介 (共享: AI安全、商业化)
+- [[19_业界观点/Demis_Hassabis/about]] -- Demis Hassabis 简介 (共享: AGI路线图)
+- [[19_业界观点/Yann_LeCun/about]] -- Yann LeCun 简介 (共享: AI架构、开源)
+- [[19_业界观点/Andrew_Ng/about]] -- Andrew Ng 简介 (共享: AI教育、应用驱动)

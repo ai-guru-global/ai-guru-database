@@ -244,5 +244,5 @@ print(task.artifacts[0].parts[0].text)
 - [[概念/Agent/mcp|MCP]] — 工具连接协议，与 A2A 互补
 - [[概念/Agent/multi-agent-orchestration|多 Agent 编排]] — A2A 赋能的协作模式
 - [[概念/Agent/agent-framework|Agent 框架]] — A2A 的框架集成
-- [[智能体/Agent_Protocols/MCP_Deep_Dive|MCP 深度解析]] — 协议对比参考
+- [[15_智能体/Agent_Protocols/MCP_Deep_Dive|MCP 深度解析]] — 协议对比参考
 - [[概念/Agent/agentic-rag|Agentic RAG]] — 多 Agent 协作检索

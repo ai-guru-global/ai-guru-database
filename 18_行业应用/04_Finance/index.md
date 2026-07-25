@@ -15,14 +15,14 @@ tags: [auto-index]
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[行业应用/Finance/AI_Finance_2026|AI Finance 2026]] | Finance AI landscape: risk modeling, quantitative strategies and RegTech trends | FinTech engineers / quantitative analysts |
-| [[行业应用/Finance/AI_Finance_Applications_2026|AI Finance Applications 2026]] | Finance AI case studies: anti-fraud, credit scoring and robo-advisors | financial AI product managers |
+| [[18_行业应用/04_Finance/AI_Finance_2026|AI Finance 2026]] | Finance AI landscape: risk modeling, quantitative strategies and RegTech trends | FinTech engineers / quantitative analysts |
+| [[18_行业应用/04_Finance/AI_Finance_Applications_2026|AI Finance Applications 2026]] | Finance AI case studies: anti-fraud, credit scoring and robo-advisors | financial AI product managers |
 
 ## Related
 
-- [[行业应用/Legal_Government_index|Legal & Government]]
-- [[行业应用/Security_Cybersecurity_index|Security & Cybersecurity]]
-- [[机器学习/Anomaly_Detection/index|Anomaly Detection]]
+- [[18_行业应用/Legal_Government_index|Legal & Government]]
+- [[18_行业应用/Security_Cybersecurity_index|Security & Cybersecurity]]
+- [[02_机器学习/08_Anomaly_Detection/index|Anomaly Detection]]
 
 ## 进阶知识拓展
 
@@ -60,9 +60,9 @@ tags: [auto-index]
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

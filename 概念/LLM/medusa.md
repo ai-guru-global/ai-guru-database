@@ -12,7 +12,7 @@ relationships:
   - target: "概念/Inference/inference-performance"
     type: improves
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
   - "https://arxiv.org/abs/2401.10774"  # Medusa paper
 summary: "Medusa 是自推测解码方案——在目标模型上添加多个轻量预测头，同时预测未来多个 Token，无需独立 Draft 模型。通过 Tree Attention 并行验证，加速 2-3× 且无额外模型显存开销。2026 年已被 EAGLE-2 和 MTP 逐步替代，但仍是理解自推测解码的重要基础。"
 provenance:
@@ -203,4 +203,4 @@ medusa_config = {
 - [[概念/LLM/eagle]] — EAGLE 推测解码
 - [[概念/LLM/mtp]] — Multi-Token Prediction
 - [[概念/Inference/inference-performance]] — 推理性能优化
-- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析

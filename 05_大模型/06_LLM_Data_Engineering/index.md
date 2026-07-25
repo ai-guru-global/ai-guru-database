@@ -24,8 +24,8 @@ LLM 数据工程（LLM Data Engineering）— 预训练数据清洗（data clean
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[大模型/LLM_Data_Engineering/LLM_Data_Engineering_Deep_Dive|LLM Data Engineering Deep Dive]] | LLM data engineering deep dive: cleaning pipeline, deduplication and data mixture | LLM engineers / data engineers |
-| [[大模型/LLM_Data_Engineering/README|README]] | Module README guide and reading order | all readers |
+| [[05_大模型/06_LLM_Data_Engineering/LLM_Data_Engineering_Deep_Dive|LLM Data Engineering Deep Dive]] | LLM data engineering deep dive: cleaning pipeline, deduplication and data mixture | LLM engineers / data engineers |
+| [[05_大模型/06_LLM_Data_Engineering/README|README]] | Module README guide and reading order | all readers |
 
 ## 核心概念速查
 
@@ -70,8 +70,8 @@ LLM 数据工程（LLM Data Engineering）— 预训练数据清洗（data clean
 
 ## 相关概念
 
-- [[大模型/index|大模型首页]]
-- [[模型运维/Data_Engineering/index|Data Engineering]]
+- [[05_大模型/index|大模型首页]]
+- [[11_模型运维/02_Data_Engineering/index|Data Engineering]]
 - [[概念/data-engineering|数据工程概念]]
 
 ## 统计
@@ -196,6 +196,6 @@ LLM 数据工程（LLM Data Engineering）— 预训练数据清洗（data clean
 
 ## 快速导航
 
-- 想了解数据清洗？→ [[大模型/LLM_Data_Engineering/LLM_Data_Engineering_Deep_Dive|数据工程深度解析]]
-- 想了解数据工程？→ [[模型运维/Data_Engineering/index|Data Engineering]]
-- 返回大模型首页 → [[大模型/index|大模型首页]]
+- 想了解数据清洗？→ [[05_大模型/06_LLM_Data_Engineering/LLM_Data_Engineering_Deep_Dive|数据工程深度解析]]
+- 想了解数据工程？→ [[11_模型运维/02_Data_Engineering/index|Data Engineering]]
+- 返回大模型首页 → [[05_大模型/index|大模型首页]]

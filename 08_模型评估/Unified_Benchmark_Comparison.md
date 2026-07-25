@@ -316,8 +316,8 @@ graph LR
 
 ## Related
 
-- [[模型评估/Benchmarks/LLM_Benchmark_Suite_2026|LLM Benchmark Suite 2026]] — LLM 专项基准详解
-- [[模型评估/Benchmarks/Agentic_Benchmark_Guide|Agentic Benchmark Guide]] — Agent 评测全景
-- [[模型评估/Benchmarks/Multimodal_Evaluation_Benchmarks|Multimodal Benchmarks]] — 多模态评测基准
-- [[模型评估/README|模型评估]] — 评估方法论
-- [[模型评估/README|模型评估概览]]
+- [[08_模型评估/02_Benchmarks/LLM_Benchmark_Suite_2026|LLM Benchmark Suite 2026]] — LLM 专项基准详解
+- [[08_模型评估/02_Benchmarks/Agentic_Benchmark_Guide|Agentic Benchmark Guide]] — Agent 评测全景
+- [[08_模型评估/02_Benchmarks/Multimodal_Evaluation_Benchmarks|Multimodal Benchmarks]] — 多模态评测基准
+- [[08_模型评估/README|模型评估]] — 评估方法论
+- [[08_模型评估/README|模型评估概览]]

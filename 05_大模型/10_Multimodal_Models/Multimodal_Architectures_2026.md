@@ -909,9 +909,9 @@ image = model('audio', 'image', audio_waveform)
 
 ## Related
 
-- [[大模型/Fine_tuning_Techniques/PEFT_2026]] — PEFT 2026 (参数高效微调) (共享: bert, gpt, llm, nlp, transformer)
-- [[大模型/Fine_tuning_Techniques/README]] — 微调技术 (Fine-tuning Techniques) (共享: bert, gpt, llm, nlp, transformer)
-- [[大模型/LLM_Architectures/LLM-Basics-in-nutshell]] — 大语言模型基础速成指南 (共享: bert, gpt, llm, nlp, transformer)
-- [[大模型/Prompt_Engineering/Prompt-Engineering-in-nutshell]] — Prompt Engineering 速成指南 (共享: bert, gpt, llm, nlp, transformer)
-- [[大模型/Multimodal_Models/Multimodal_Models_for_dummy.md|Multimodal_Models_for_dummy]]
-- [[大模型/Multimodal_Models/LLaVA_Deep_Dive.md|LLaVA_Deep_Dive]]
+- [[05_大模型/07_Fine_tuning_Techniques/PEFT_2026]] — PEFT 2026 (参数高效微调) (共享: bert, gpt, llm, nlp, transformer)
+- [[05_大模型/07_Fine_tuning_Techniques/README]] — 微调技术 (Fine-tuning Techniques) (共享: bert, gpt, llm, nlp, transformer)
+- [[05_大模型/05_LLM_Architectures/LLM-Basics-in-nutshell]] — 大语言模型基础速成指南 (共享: bert, gpt, llm, nlp, transformer)
+- [[05_大模型/08_Prompt_Engineering/Prompt-Engineering-in-nutshell]] — Prompt Engineering 速成指南 (共享: bert, gpt, llm, nlp, transformer)
+- [[05_大模型/10_Multimodal_Models/Multimodal_Models_for_dummy.md|Multimodal_Models_for_dummy]]
+- [[05_大模型/10_Multimodal_Models/LLaVA_Deep_Dive.md|LLaVA_Deep_Dive]]

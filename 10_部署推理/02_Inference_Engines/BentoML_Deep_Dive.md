@@ -715,12 +715,12 @@ class ObservableService:
 
 ## Related
 
-- [[部署推理/Inference_Engines/vLLM_Deep_Dive.md|vLLM_Deep_Dive]]
-- [[部署推理/Inference_Engines/TGI_Deep_Dive.md|TGI_Deep_Dive]]
-- [[部署推理/Inference_Engines/TensorRT_LLM_Deep_Dive.md|TensorRT_LLM_Deep_Dive]]
-- [[部署推理/Deployment_Fundamentals/Deployment_Inference.md|Deployment_Inference]]
-- [[部署推理/Deployment_Fundamentals/Deployment_Inference_2026.md|Deployment_Inference_2026]]
-- [[部署推理/Deployment_Fundamentals/Deployment_Inference_for_dummy.md|Deployment_Inference_for_dummy]]
-- [[部署推理/Deployment_Fundamentals/Inference-in-nutshell.md|Inference-in-nutshell]]
-- [[部署推理/Inference_Engines/LLM_Inference_Engine_Selection_Guide.md|LLM_Inference_Engine_Selection_Guide]]
-- [[架构基建/AI_Gateway/LiteLLM_Deep_Dive|LiteLLM_Deep_Dive]]
+- [[10_部署推理/02_Inference_Engines/vLLM_Deep_Dive.md|vLLM_Deep_Dive]]
+- [[10_部署推理/02_Inference_Engines/TGI_Deep_Dive.md|TGI_Deep_Dive]]
+- [[10_部署推理/02_Inference_Engines/TensorRT_LLM_Deep_Dive.md|TensorRT_LLM_Deep_Dive]]
+- [[10_部署推理/01_Deployment_Fundamentals/Deployment_Inference.md|Deployment_Inference]]
+- [[10_部署推理/01_Deployment_Fundamentals/Deployment_Inference_2026.md|Deployment_Inference_2026]]
+- [[10_部署推理/01_Deployment_Fundamentals/Deployment_Inference_for_dummy.md|Deployment_Inference_for_dummy]]
+- [[10_部署推理/01_Deployment_Fundamentals/Inference-in-nutshell.md|Inference-in-nutshell]]
+- [[10_部署推理/02_Inference_Engines/LLM_Inference_Engine_Selection_Guide.md|LLM_Inference_Engine_Selection_Guide]]
+- [[12_架构基建/11_AI_Gateway/LiteLLM_Deep_Dive|LiteLLM_Deep_Dive]]

@@ -3,9 +3,9 @@ title: "安全评测 × 红队测试: 构建 AI 安全的攻防闭环"
 category: -synthesis
 tags: ["ai-safety", "red-teaming", "evaluation", "jailbreak", "harmbench", "synthesis"]
 sources:
-  - "伦理安全/Safety_Evaluation_Framework"
-  - "伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming"
-  - "模型评估/Model_Evaluation"
+  - "17_伦理安全/Safety_Evaluation_Framework"
+  - "17_伦理安全/04_AI_Safety_RedTeaming/AI_Safety_RedTeaming"
+  - "08_模型评估/Model_Evaluation"
   - "AI测试/Testing_Frameworks/DeepEval_Deep_Dive"
 created: 2026-06-01
 updated: 2026-06-01
@@ -91,10 +91,10 @@ AI 安全有两个经典问题：
 
 ## Related
 
-- [[伦理安全/Safety_Evaluation_Framework]]
-- [[伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming]]
-- [[模型评估/Model_Evaluation]]
-- [[测试/Testing_Frameworks/DeepEval_Deep_Dive]]
+- [[17_伦理安全/Safety_Evaluation_Framework]]
+- [[17_伦理安全/04_AI_Safety_RedTeaming/AI_Safety_RedTeaming]]
+- [[08_模型评估/Model_Evaluation]]
+- [[09_测试/02_Testing_Frameworks/DeepEval_Deep_Dive]]
 - [[治理/ai-ethics-future]]
 
 ## 核心知识体系
@@ -206,9 +206,9 @@ AI 安全有两个经典问题：
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

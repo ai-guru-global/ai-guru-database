@@ -9,20 +9,20 @@ tags: [auto-index, inference-optimization]
 
 # Inference Optimization
 
-本页索引 `部署推理/Inference_Optimization` 的内容，聚焦 LLM 推理的优化技术——从 KV Cache 与分页注意力，到并行策略、算子编译与 Multi-LoRA 服务。
+本页索引 `10_部署推理/Inference_Optimization` 的内容，聚焦 LLM 推理的优化技术——从 KV Cache 与分页注意力，到并行策略、算子编译与 Multi-LoRA 服务。
 
 ## 文件导航
 
 | 文件 | 说明 | 类型 |
 |------|------|------|
-| [[部署推理/Inference_Optimization/kv-cache-inference-optimization\|KV Cache 推理优化]] | KV Cache 原理、压缩与显存优化 | 核心 |
-| [[部署推理/Inference_Optimization/kv-cache-paged-attention\|KV Cache × PagedAttention]] | 分页注意力与 KV Cache 的协同 | 核心 |
-| [[部署推理/Inference_Optimization/paged-attention-continuous-batching\|PagedAttention × Continuous Batching]] | 内存效率与动态调度的双重引擎 | 合成 |
-| [[部署推理/Inference_Optimization/Parallel_Strategies_Deep_Dive\|并行策略全景]] | TP/PP/EP/SP/CP/Ring-Attention 多维并行 | 深度 |
-| [[部署推理/Inference_Optimization/Compiler_and_Kernel_Deep_Dive\|编译器与算子优化]] | torch.compile/Triton/CUTLASS/算子融合 | 深度 |
-| [[部署推理/Inference_Optimization/Multi_LoRA_Serving_Deep_Dive\|Multi-LoRA 推理服务]] | 单基座多适配器高效服务（S-LoRA/Punica） | 深度 |
-| [[部署推理/Inference_Optimization/Inference_Optimization_for_dummy\|推理优化小白指南]] | 零基础入门 | 入门 |
-| [[部署推理/Inference_Optimization/Inference_Tuning_Cheat_Sheet\|推理调优速查表]] | 实战调优 checklist | 速查 |
+| [[10_部署推理/03_Inference_Optimization/kv-cache-inference-optimization\|KV Cache 推理优化]] | KV Cache 原理、压缩与显存优化 | 核心 |
+| [[10_部署推理/03_Inference_Optimization/kv-cache-paged-attention\|KV Cache × PagedAttention]] | 分页注意力与 KV Cache 的协同 | 核心 |
+| [[10_部署推理/03_Inference_Optimization/paged-attention-continuous-batching\|PagedAttention × Continuous Batching]] | 内存效率与动态调度的双重引擎 | 合成 |
+| [[10_部署推理/03_Inference_Optimization/Parallel_Strategies_Deep_Dive\|并行策略全景]] | TP/PP/EP/SP/CP/Ring-Attention 多维并行 | 深度 |
+| [[10_部署推理/03_Inference_Optimization/Compiler_and_Kernel_Deep_Dive\|编译器与算子优化]] | torch.compile/Triton/CUTLASS/算子融合 | 深度 |
+| [[10_部署推理/03_Inference_Optimization/Multi_LoRA_Serving_Deep_Dive\|Multi-LoRA 推理服务]] | 单基座多适配器高效服务（S-LoRA/Punica） | 深度 |
+| [[10_部署推理/03_Inference_Optimization/Inference_Optimization_for_dummy\|推理优化小白指南]] | 零基础入门 | 入门 |
+| [[10_部署推理/03_Inference_Optimization/Inference_Tuning_Cheat_Sheet\|推理调优速查表]] | 实战调优 checklist | 速查 |
 
 ## 核心知识体系
 
@@ -36,11 +36,11 @@ tags: [auto-index, inference-optimization]
 
 ## 关联章节
 
-- [[部署推理/index|部署推理 总览]]
-- [[部署推理/Inference_Performance/index|推理性能]]
-- [[部署推理/Inference_Engines/index|推理引擎]]
-- [[部署推理/Caching/index|缓存]]
-- [[部署推理/Quantization/index|量化]]
-- [[架构基建/Hardware_Compute/index|硬件计算]]
-- [[架构基建/AI_Networking/index|AI 网络]]
-- [[模型训练/Compression/index|模型压缩]]
+- [[10_部署推理/index|部署推理 总览]]
+- [[10_部署推理/04_Inference_Performance/index|推理性能]]
+- [[10_部署推理/02_Inference_Engines/index|推理引擎]]
+- [[10_部署推理/06_Caching/index|缓存]]
+- [[10_部署推理/05_Quantization/index|量化]]
+- [[12_架构基建/07_Hardware_Compute/index|硬件计算]]
+- [[12_架构基建/AI_Networking/index|AI 网络]]
+- [[07_模型训练/05_Compression/index|模型压缩]]

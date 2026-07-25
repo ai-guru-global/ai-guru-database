@@ -438,6 +438,6 @@ L1 数学基础 (深度)
 ## Related
 
 - [[概念/README|概念卡片索引]] — 所有概念卡片列表
-- [[学习/concepts/stage0_awakening|学习路径 Stage 0-4]] — 按阶段的学习路径
-- [[论文精读/README|论文清单]] — 论文与概念的关联
-- [[可视化/Knowledge_Graph_Visualization|知识图谱可视化]] — 图谱可视化工具与实践
+- [[90_学习/concepts/stage0_awakening|学习路径 Stage 0-4]] — 按阶段的学习路径
+- [[20_论文精读/README|论文清单]] — 论文与概念的关联
+- [[94_可视化/Knowledge_Graph_Visualization|知识图谱可视化]] — 图谱可视化工具与实践

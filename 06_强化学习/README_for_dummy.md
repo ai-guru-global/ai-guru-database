@@ -50,15 +50,15 @@ sources: []
 
 | 主题 | 难度 | 你会学到什么 | 文档链接 |
 |------|------|------------|---------|
-| 强化学习基础 | ⭐⭐ | AI 如何像训狗一样通过奖惩学习,探索与利用的平衡 | [点这里](强化学习/RL_Foundations/RL_Foundations_for_dummy.md) |
-| 深度强化学习 | ⭐⭐⭐ | DQN 如何玩 Atari,PPO 如何训练 ChatGPT | [点这里](强化学习/Deep_RL/Deep_RL_for_dummy.md) |
-| AI 智能体 | ⭐⭐⭐⭐ | 像员工一样工作的 AI,能规划、记忆、用工具 | [点这里](智能体/Agent_Foundations/AI_Agents_for_dummy.md) |
+| 强化学习基础 | ⭐⭐ | AI 如何像训狗一样通过奖惩学习,探索与利用的平衡 | [点这里](06_强化学习/01_RL_Foundations/RL_Foundations_for_dummy.md) |
+| 深度强化学习 | ⭐⭐⭐ | DQN 如何玩 Atari,PPO 如何训练 ChatGPT | [点这里](06_强化学习/02_Deep_RL/Deep_RL_for_dummy.md) |
+| AI 智能体 | ⭐⭐⭐⭐ | 像员工一样工作的 AI,能规划、记忆、用工具 | [点这里](15_智能体/01_Agent_Foundations/AI_Agents_for_dummy.md) |
 
 ## 开始之前你需要知道
 
 **必备基础** (建议先看这些):
-- [神经网络核心 - 小白版](深度学习/Neural_Network_Core/Neural_Network_Core_for_dummy.md) - 理解 AI 的大脑
-- [概率统计 - 小白版](数学基础/Probability_Statistics/Probability_Statistics_for_dummy.md) - 理解奖励和期望
+- [神经网络核心 - 小白版](03_深度学习/02_Neural_Network_Core/Neural_Network_Core_for_dummy.md) - 理解 AI 的大脑
+- [概率统计 - 小白版](01_数学基础/03_Probability_Statistics/Probability_Statistics_for_dummy.md) - 理解奖励和期望
 
 **不需要的基础**:
 - ❌ 不需要会编程
@@ -149,11 +149,11 @@ AI: "我学到了:往右走好,往左走不好"
 
 ## Related
 
-- [[强化学习/README.md|强化学习 README]]
-- [[智能体/Agent_Foundations/AI_Agents.md|AI_Agents]]
-- [[智能体/Agent_Foundations/AI_Agents_for_dummy.md|AI_Agents_for_dummy]]
-- [[智能体/Agent_Foundations/Agent-in-nutshell.md|Agent-in-nutshell]]
-- [[智能体/Agent_Foundations/Agent_Future_Roadmap_2026_2030.md|Agent_Future_Roadmap_2026_2030]]
+- [[06_强化学习/README.md|强化学习 README]]
+- [[15_智能体/01_Agent_Foundations/AI_Agents.md|AI_Agents]]
+- [[15_智能体/01_Agent_Foundations/AI_Agents_for_dummy.md|AI_Agents_for_dummy]]
+- [[15_智能体/01_Agent_Foundations/Agent-in-nutshell.md|Agent-in-nutshell]]
+- [[15_智能体/01_Agent_Foundations/Agent_Future_Roadmap_2026_2030.md|Agent_Future_Roadmap_2026_2030]]
 
 ## 强化学习术语小白对照表
 

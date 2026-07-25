@@ -342,5 +342,5 @@ curl -s https://api.example.com/health
 
 - [[AI_Stack_Deep_Dive]]: AI infrastructure stack
 - [[Kubernetes_Core_Components_Deep_Dive]]: K8s fundamentals
-- [[架构基建/Cloud_Providers/README]]: Provider-specific guides
+- [[12_架构基建/06_Cloud_Providers/README]]: Provider-specific guides
 - [[Capacity_Planning_2026]]: Resource planning

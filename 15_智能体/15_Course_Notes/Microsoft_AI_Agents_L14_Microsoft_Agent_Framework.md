@@ -188,7 +188,7 @@ async def logging_chat_middleware(context: ChatContext, next):
 
 ## 五、核心概念四：Agent Memory（记忆）
 
-三种实现（详见 [[智能体/Course_Notes/Microsoft_AI_Agents_L13_Agent_Memory]]）：
+三种实现（详见 [[15_智能体/15_Course_Notes/Microsoft_AI_Agents_L13_Agent_Memory]]）：
 
 | 类型 | 用途 | API |
 |------|------|-----|
@@ -226,25 +226,25 @@ async def logging_chat_middleware(context: ChatContext, next):
 
 1. **Middleware Composition** —— 串联 logging / auth / rate-limit
 2. **Workflow Checkpointing** —— 用 events + serialization 保存长流程
-3. **Dynamic Tool Selection** —— RAG over tool descriptions + MAF tool registration（呼应 [[智能体/Course_Notes/Microsoft_AI_Agents_L12_Context_Engineering]] 的 Tool Loadout Management）
+3. **Dynamic Tool Selection** —— RAG over tool descriptions + MAF tool registration（呼应 [[15_智能体/15_Course_Notes/Microsoft_AI_Agents_L12_Context_Engineering]] 的 Tool Loadout Management）
 4. **Multi-Agent Handoff** —— workflow edges + conditional routing 编排移交
 
 ---
 
 ## 与其他课的衔接
 
-- 本课是 [[智能体/Course_Notes/Microsoft_AI_Agents_L00_Course_Setup]] 起所有课的"技术收口"——前面学的概念（Planner / Multi-Agent / Memory / Observability）都在 MAF 中有具体 API
-- Workflows 的 Magentic 模式呼应 [[智能体/Course_Notes/Microsoft_AI_Agents_L07_Planning_Design]] 中的 Magentic-One
-- 中间件 + Observability 是 [[智能体/Course_Notes/Microsoft_AI_Agents_L10_Production]] 的工程实现
+- 本课是 [[15_智能体/15_Course_Notes/Microsoft_AI_Agents_L00_Course_Setup]] 起所有课的"技术收口"——前面学的概念（Planner / Multi-Agent / Memory / Observability）都在 MAF 中有具体 API
+- Workflows 的 Magentic 模式呼应 [[15_智能体/15_Course_Notes/Microsoft_AI_Agents_L07_Planning_Design]] 中的 Magentic-One
+- 中间件 + Observability 是 [[15_智能体/15_Course_Notes/Microsoft_AI_Agents_L10_Production]] 的工程实现
 
 ---
 
 ## 关联阅读
 
-- [[智能体/Course_Notes/Microsoft_AI_Agents_L13_Agent_Memory]] — 上一课：记忆
-- [[智能体/Course_Notes/Microsoft_AI_Agents_L15_Browser_Use]] — 下一课：浏览器使用
-- [[智能体/Course_Notes/Microsoft_AI_Agents_L02_Frameworks]] — L02：MAF 与其他框架选型对比
-- [[智能体/Agent_Frameworks/README]] — 主流 Agent 框架总览
-- [[智能体/Agent_Workflow/README]] — 工作流编排总览
-- [[智能体/Course_Notes/Microsoft_AI_Agents_L10_Production]] — L10：可观测性（OTel）
-- [[学习/courses/microsoft/microsoft_ai_agents_for_beginners]] — 课程总览
+- [[15_智能体/15_Course_Notes/Microsoft_AI_Agents_L13_Agent_Memory]] — 上一课：记忆
+- [[15_智能体/15_Course_Notes/Microsoft_AI_Agents_L15_Browser_Use]] — 下一课：浏览器使用
+- [[15_智能体/15_Course_Notes/Microsoft_AI_Agents_L02_Frameworks]] — L02：MAF 与其他框架选型对比
+- [[15_智能体/02_Agent_Frameworks/README]] — 主流 Agent 框架总览
+- [[15_智能体/03_Agent_Workflow/README]] — 工作流编排总览
+- [[15_智能体/15_Course_Notes/Microsoft_AI_Agents_L10_Production]] — L10：可观测性（OTel）
+- [[90_学习/courses/microsoft/microsoft_ai_agents_for_beginners]] — 课程总览

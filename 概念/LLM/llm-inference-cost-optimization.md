@@ -198,4 +198,4 @@ python -m vllm.entrypoints.openai.api_server \
 - [[概念/LLM/llm-quantization|LLM 量化]]
 - [[概念/LLM/speculative-decoding|推测解码]]
 - [[概念/Inference/continuous-batching|Continuous Batching]]
-- [[部署推理/Inference_Performance/LLM_Inference_Cost_Optimization_2026|推理成本优化 2026]]
+- [[10_部署推理/04_Inference_Performance/LLM_Inference_Cost_Optimization_2026|推理成本优化 2026]]

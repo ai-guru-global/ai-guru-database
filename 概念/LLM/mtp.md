@@ -10,7 +10,7 @@ relationships:
   - target: "概念/flash-attention-kernels"
     type: related_to
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
 summary: "MTP (Multi-Token Prediction) 是 DeepSeek-V3 引入的推理加速技术——模型在训练时预测多个未来 Token，推理时用 Draft-Verify 机制一次性生成多个 Token，加速 2-3 倍。"
 provenance:
   extracted: 0.30
@@ -127,7 +127,7 @@ DeepSeek-V3 MTP 架构
 - [[概念/deepseek-models]] — DeepSeek 模型系列
 - [[概念/flash-attention-kernels]] — FlashAttention 算子
 - [[概念/prefill-decode]] — Prefill/Decode 推理阶段
-- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
 
 ---
 
@@ -188,7 +188,7 @@ MTP (N=2):
 - [[概念/LLM/eagle|EAGLE]]
 - [[概念/LLM/medusa|Medusa]]
 - [[概念/Inference/inference-performance|推理性能优化]]
-- [[部署推理/Caching/Speculative_Decoding_Advanced_2026|投机解码高级技术]]
+- [[10_部署推理/06_Caching/Speculative_Decoding_Advanced_2026|投机解码高级技术]]
 
 ## 配置示例 (SGLang)
 

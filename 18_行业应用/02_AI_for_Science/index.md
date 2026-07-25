@@ -14,15 +14,15 @@ AI for Science — AI 驱动的科学发现，涵盖蛋白质折叠、药物发�
 
 | 文件 | 说明 |
 |------|------|
-| [[行业应用/AI_for_Science/AI_for_Science_Deep_Dive|深度指南]] | AI for Science 方法论全景 |
-| [[行业应用/AI_for_Science/Protein_Folding_and_Drug_Discovery_2026|蛋白质折叠与药物发现]] | AlphaFold 与 AI 药物研发 |
-| [[行业应用/AI_for_Science/Materials_Science_and_Energy_2026|材料科学与能源]] | AI 材料发现与能源应用 |
-| [[行业应用/AI_for_Science/README|README]] | 目录说明 |
+| [[18_行业应用/02_AI_for_Science/AI_for_Science_Deep_Dive|深度指南]] | AI for Science 方法论全景 |
+| [[18_行业应用/02_AI_for_Science/Protein_Folding_and_Drug_Discovery_2026|蛋白质折叠与药物发现]] | AlphaFold 与 AI 药物研发 |
+| [[18_行业应用/02_AI_for_Science/Materials_Science_and_Energy_2026|材料科学与能源]] | AI 材料发现与能源应用 |
+| [[18_行业应用/02_AI_for_Science/README|README]] | 目录说明 |
 
 ## Related
 
-- [[行业应用/Healthcare/index|Healthcare]]
-- [[行业应用/Energy_Climate_index|Energy & Climate]]
+- [[18_行业应用/03_Healthcare/index|Healthcare]]
+- [[18_行业应用/Energy_Climate_index|Energy & Climate]]
 
 ## 进阶知识拓展
 
@@ -60,9 +60,9 @@ AI for Science — AI 驱动的科学发现，涵盖蛋白质折叠、药物发�
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

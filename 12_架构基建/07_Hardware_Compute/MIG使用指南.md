@@ -244,8 +244,8 @@ CUDA_VISIBLE_DEVICES=4,2,MIG-${UUID},3,PPU-${UUID}          # 选择使用PPU4,P
 ```
 ## 相关链接
 
-- [[架构基建/Hardware_Compute/MIG_Deep_Dive|MIG 深度解析]] — MIG 技术深度剖析
-- [[架构基建/Hardware_Compute/index|硬件算力索引]] — 硬件主题导览
+- [[12_架构基建/07_Hardware_Compute/MIG_Deep_Dive|MIG 深度解析]] — MIG 技术深度剖析
+- [[12_架构基建/07_Hardware_Compute/index|硬件算力索引]] — 硬件主题导览
 - [[概念/GPU/mig|MIG]] — MIG 概念卡片
 - [[概念/K8s/gpu-sharing|GPU 共享]] — MIG 的共享机制
 - [[概念/GPU/nvidia-gpu|NVIDIA GPU]] — MIG 支持的硬件

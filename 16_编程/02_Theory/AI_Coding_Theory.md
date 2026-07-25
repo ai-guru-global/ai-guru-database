@@ -448,7 +448,7 @@ AI编程使用风险评估:
 1. 业务影响度 (Impact)
    ├── 高: 支付/交易/用户数据/安全认证
    ├── 中: 业务逻辑/数据处理/外部集成
-   └── 低: 内部工具/文档/测试/配置
+   └── 低: 内部工具/文档/09_测试/配置
 
 2. AI 适合度 (Suitability)
    ├── A: 标准模式、大量训练数据覆盖
@@ -479,7 +479,7 @@ AI编程使用风险评估:
 - [AI编程助手对比](../Tools/AI_Coding_Assistants_2026.md) — 主流工具能力对比
 - [Vibe Coding 方法论](../Methodology/Vibe_Coding_Methodology.md) — DGRV 模型与实践框架
 - [Agentic Coding 方法论](../Methodology/Agentic_Coding_Methodology.md) — 多 Agent 协作开发
-- [Prompt Engineering 专题](大模型/Prompt_Engineering/Prompt_Engineering.md) — 提示工程理论基础
+- [Prompt Engineering 专题](05_大模型/08_Prompt_Engineering/Prompt_Engineering.md) — 提示工程理论基础
 
 ---
 
@@ -487,8 +487,8 @@ AI编程使用风险评估:
 
 ## Related
 
-- [[编程/Tools/CodeBuddy_Guide]] — CodeBuddy / WorkBuddy 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
-- [[编程/Tools/Comate_Guide]] — Comate 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
-- [[编程/Tools/Coze_Guide]] — Coze 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
-- [[编程/Tools/Cursor_Guide]] — Cursor 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
-- [[编程/Coding_Fundamentals/AI_Coding-in-nutshell.md|AI_Coding-in-nutshell]]
+- [[16_编程/05_Tools/CodeBuddy_Guide]] — CodeBuddy / WorkBuddy 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
+- [[16_编程/05_Tools/Comate_Guide]] — Comate 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
+- [[16_编程/05_Tools/Coze_Guide]] — Coze 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
+- [[16_编程/05_Tools/Cursor_Guide]] — Cursor 使用指南 (共享: ai-coding, code-generation, cursor, github-copilot)
+- [[16_编程/01_Coding_Fundamentals/AI_Coding-in-nutshell.md|AI_Coding-in-nutshell]]

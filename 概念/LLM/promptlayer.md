@@ -10,7 +10,7 @@ relationships:
   - target: "概念/promptfoo"
     type: related_to
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
 summary: "Prompt 版本管理与测试平台，提供 Prompt 的 Git-like 版本控制、自动追踪 LLM 调用和结构化评估，是 Prompt 工程的标准工具之一。"
 provenance:
   extracted: 0.55
@@ -176,7 +176,7 @@ result = client.chat.completions.create(
 - [[概念/LLM/llmops|LLMOps]]
 - [[概念/LLM/llm-as-judge|LLM-as-Judge]]
 - [[概念/LLM/promptfoo|Promptfoo]]
-- [[模型运维/LLM_Observability|LLM 可观测性]]
+- [[11_模型运维/LLM_Observability|LLM 可观测性]]
 
 ## 典型工作流
 

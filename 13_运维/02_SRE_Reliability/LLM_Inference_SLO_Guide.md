@@ -111,10 +111,10 @@ sources: []
 - [[概念/slo|SLO]]
 - [[概念/sli|SLI]]
 - [[概念/error-budget|Error Budget]]
-- [[运维/SRE_Reliability/SLO_Error_Budget_AI_Deep_Dive|SLO 与错误预算]]
-- [[模型运维/LLM_Inference_Observability_Stack|LLM 推理可观测性栈]]
+- [[13_运维/02_SRE_Reliability/SLO_Error_Budget_AI_Deep_Dive|SLO 与错误预算]]
+- [[11_模型运维/LLM_Inference_Observability_Stack|LLM 推理可观测性栈]]
 
-- [[运维/README|AI 运维与可观测性 (AI Ops)]]
+- [[13_运维/README|AI 运维与可观测性 (AI Ops)]]
 
 ## 进阶知识拓展
 
@@ -152,9 +152,9 @@ sources: []
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

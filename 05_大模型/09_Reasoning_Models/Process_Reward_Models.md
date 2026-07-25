@@ -179,7 +179,7 @@ Sweet spot: 13B-34B
 通用 PRM vs 专用 PRM:
   通用 PRM: 跨领域推理，准确率中等
   数学专用 PRM: 代数/几何/微积分，准确率高
-  代码专用 PRM: 编程/算法，准确率高
+  代码专用 PRM: 16_编程/算法，准确率高
   科学专用 PRM: 物理/化学/生物，准确率高
 
 建议: 如果资源允许，为每个主要领域训练专用 PRM。
@@ -237,8 +237,8 @@ PRM 对步骤 3 的评估困境:
 
 ## Related
 
-- [[大模型/Reasoning_Models/o1_Class_Reasoning_Models]]
-- [[大模型/Reasoning_Models/DeepSeek_R1_Technical_Analysis]]
-- [[强化学习/Deep_RL/Deep_RL]]
+- [[05_大模型/09_Reasoning_Models/o1_Class_Reasoning_Models]]
+- [[05_大模型/09_Reasoning_Models/DeepSeek_R1_Technical_Analysis]]
+- [[06_强化学习/02_Deep_RL/Deep_RL]]
 - [[概念/rlhf]]
-- [[模型训练/Optimization/Training_Optimization_2026]]
+- [[07_模型训练/03_Optimization/Training_Optimization_2026]]

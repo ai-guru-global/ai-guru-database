@@ -100,7 +100,7 @@ Thrun 作为自动驾驶先驱，在 2026 年回顾产业成熟。
 | 公司 | 技术 | 商业化 |
 |------|------|--------|
 | Waymo | L4 激光雷达 | 规模化运营 |
-| Tesla（[[业界观点/Elon_Musk/index\|Musk]]） | L2-L3 纯视觉 | FSD 推广 |
+| Tesla（[[19_业界观点/Elon_Musk/index\|Musk]]） | L2-L3 纯视觉 | FSD 推广 |
 | Cruise | L4（重启） | 有限运营 |
 | 百度 Apollo | L4 | 中国运营 |
 | Zoox | L4 | 试点 |
@@ -121,7 +121,7 @@ Thrun 作为自动驾驶先驱，在 2026 年回顾产业成熟。
 | 路线 | 代表 | 优势 | 劣势 |
 |------|------|------|------|
 | 激光雷达+高精地图 | Waymo（Thrun 影响） | 安全冗余 | 成本高 |
-| 纯视觉端到端 | Tesla（[[业界观点/Andrej_Karpathy/index\|Karpathy]] 影响） | 成本低 | 泛化难 |
+| 纯视觉端到端 | Tesla（[[19_业界观点/Andrej_Karpathy/index\|Karpathy]] 影响） | 成本低 | 泛化难 |
 | 混合方案 | 多数厂商 | 平衡 | 复杂 |
 
 > "When I started the Google self-driving car project in 2009, people thought I was crazy. Today, Waymo drives millions of miles safely. The dream is becoming reality, but slower than I hoped."
@@ -181,7 +181,7 @@ Thrun 的核心信念：
 | 核心信念 | "机器比人更安全" |
 | 车祸 | "可预防的流行病" |
 | 技术路线 | 激光雷达+高精地图 |
-| 与 [[业界观点/Elon_Musk/index\|Musk]] | 路线分歧 |
+| 与 [[19_业界观点/Elon_Musk/index\|Musk]] | 路线分歧 |
 | 现状 | 谨慎乐观 |
 
 ### 关于 AI 教育
@@ -191,7 +191,7 @@ Thrun 的核心信念：
 | 最大价值 | 教育和赋能人类 |
 | 理念 | "pedagogy at scale" |
 | 方法 | 纳米学位+实战 |
-| 与 [[业界观点/Andrew_Ng/index\|Ng]] | 教育赛道呼应 |
+| 与 [[19_业界观点/Andrew_Ng/index\|Ng]] | 教育赛道呼应 |
 | 2026 焦点 | 企业内嵌教育 |
 
 ### 关于 AGI
@@ -210,8 +210,8 @@ Thrun 的核心信念：
 | 方法 | "在应用中监管" |
 | 反对 | 一刀切限制研究 |
 | 支持 | 行业安全标准 |
-| 与 [[业界观点/Sam_Altman/index\|Altman]] | 差异化 |
-| 与 [[业界观点/Yoshua_Bengio/index\|Bengio]] | 不完全一致 |
+| 与 [[19_业界观点/Sam_Altman/index\|Altman]] | 差异化 |
+| 与 [[19_业界观点/Yoshua_Bengio/index\|Bengio]] | 不完全一致 |
 
 ### 关于登月创新
 
@@ -229,7 +229,7 @@ Thrun 的核心信念：
 
 ### 与其他 AI 教育者的对比
 
-| 维度 | Thrun | [[业界观点/Andrew_Ng/index\|Ng]] | [[业界观点/Andrej_Karpathy/index\|Karpathy]] |
+| 维度 | Thrun | [[19_业界观点/Andrew_Ng/index\|Ng]] | [[19_业界观点/Andrej_Karpathy/index\|Karpathy]] |
 |------|-------|-----|---------|
 | 平台 | Udacity | Coursera | Eureka Labs |
 | 模式 | 纳米学位 | 专项课程 | 从零构建 |
@@ -239,7 +239,7 @@ Thrun 的核心信念：
 
 ### 与自动驾驶领袖的对比
 
-| 维度 | Thrun | [[业界观点/Elon_Musk/index\|Musk]] | [[业界观点/Andrej_Karpathy/index\|Karpathy]] |
+| 维度 | Thrun | [[19_业界观点/Elon_Musk/index\|Musk]] | [[19_业界观点/Andrej_Karpathy/index\|Karpathy]] |
 |------|-------|------|---------|
 | 公司 | Google/Waymo | Tesla | Tesla（前） |
 | 路线 | 激光雷达 | 纯视觉 | 纯视觉（继承） |
@@ -360,11 +360,11 @@ Thrun 为 Google X 设定的项目标准：
 
 | 人物 | 关系 | 2026 互动 |
 |------|------|-----------|
-| [[业界观点/Elon_Musk/index\|Musk]] | 自动驾驶路线分歧 | 隔空辩论 |
-| [[业界观点/Andrej_Karpathy/index\|Karpathy]] | Stanford 传承 | 学术共鸣 |
-| [[业界观点/Andrew_Ng/index\|Ng]] | 教育同行 | MOOC 呼应 |
-| [[业界观点/Sundar_Pichai/index\|Pichai]] | 前 Google 同事 | 保持联系 |
-| [[业界观点/Fei_Fei_Li/index\|Fei-Fei Li]] | Stanford 同事 | 学术交流 |
+| [[19_业界观点/Elon_Musk/index\|Musk]] | 自动驾驶路线分歧 | 隔空辩论 |
+| [[19_业界观点/Andrej_Karpathy/index\|Karpathy]] | Stanford 传承 | 学术共鸣 |
+| [[19_业界观点/Andrew_Ng/index\|Ng]] | 教育同行 | MOOC 呼应 |
+| [[19_业界观点/Sundar_Pichai/index\|Pichai]] | 前 Google 同事 | 保持联系 |
+| [[19_业界观点/Fei_Fei_Li/index\|Fei-Fei Li]] | Stanford 同事 | 学术交流 |
 
 ### Thrun 在 2026 年的重大活动
 
@@ -382,30 +382,30 @@ Thrun 为 Google X 设定的项目标准：
 
 ### 自动驾驶与机器人网络
 
-- [[业界观点/Sebastian_Thrun/index]] -- 本页主人物
-- [[业界观点/Sebastian_Thrun/about]] -- 详细简介
-- [[业界观点/Elon_Musk/index]] -- Tesla FSD 路线对比
-- [[业界观点/Andrej_Karpathy/index]] -- Tesla Autopilot 继承
+- [[19_业界观点/Sebastian_Thrun/index]] -- 本页主人物
+- [[19_业界观点/Sebastian_Thrun/about]] -- 详细简介
+- [[19_业界观点/Elon_Musk/index]] -- Tesla FSD 路线对比
+- [[19_业界观点/Andrej_Karpathy/index]] -- Tesla Autopilot 继承
 
 ### AI 教育网络
 
-- [[业界观点/Andrew_Ng/index]] -- Coursera 教育同行
-- [[业界观点/Andrej_Karpathy/index]] -- Eureka Labs
-- [[业界观点/Josh_Starmer/index]] -- StatQuest
-- [[业界观点/3Blue1Brown/index]] -- 数学教育
+- [[19_业界观点/Andrew_Ng/index]] -- Coursera 教育同行
+- [[19_业界观点/Andrej_Karpathy/index]] -- Eureka Labs
+- [[19_业界观点/Josh_Starmer/index]] -- StatQuest
+- [[19_业界观点/3Blue1Brown/index]] -- 数学教育
 
 ### Google 系网络
 
-- [[业界观点/Sundar_Pichai/index]] -- Google CEO
-- [[业界观点/Andrew_Ng/index]] -- Google Brain
-- [[业界观点/Fei_Fei_Li/index]] -- Stanford 同行
+- [[19_业界观点/Sundar_Pichai/index]] -- Google CEO
+- [[19_业界观点/Andrew_Ng/index]] -- Google Brain
+- [[19_业界观点/Fei_Fei_Li/index]] -- Stanford 同行
 
 ### 技术与教育
 
-- [[计算机视觉/README]] -- 自动驾驶视觉
+- [[04_计算机视觉/README]] -- 自动驾驶视觉
 - [[机器人/README]] -- 概率机器人学
-- [[入门/AI_History_Timeline]] -- DARPA 挑战赛
-- [[入门/AI_Future_Trends]] -- 自动驾驶未来
+- [[00_入门/AI_History_Timeline]] -- DARPA 挑战赛
+- [[00_入门/AI_Future_Trends]] -- 自动驾驶未来
 
 ---
 

@@ -90,9 +90,9 @@ GPU 虽然强大，但并非为 LLM 的串行 Token 生成设计的。
 
 ## Related
 
-- [[架构基建/Architecture_Overview/AI_Infrastructure_2026]] — 基础设施现状
-- [[部署推理/Quantization/Quantization_Techniques_2026]] — 软件量化如何配合硬件优化
-- [[行业应用/AI_for_Science/Materials_Science_and_Energy_2026]] — AI 如何反哺新一代半导体材料研发
+- [[12_架构基建/02_Architecture_Overview/AI_Infrastructure_2026]] — 基础设施现状
+- [[10_部署推理/05_Quantization/Quantization_Techniques_2026]] — 软件量化如何配合硬件优化
+- [[18_行业应用/02_AI_for_Science/Materials_Science_and_Energy_2026]] — AI 如何反哺新一代半导体材料研发
 - [[概念/computer-architecture]] — 计算机体系结构基础
 
 ---
@@ -103,7 +103,7 @@ GPU 虽然强大，但并非为 LLM 的串行 Token 生成设计的。
 
 | 组件层 | 功能 | 关键技术 | 选型考量 |
 |--------|------|----------|----------|
-| 计算层 | 模型训练/推理 | GPU/TPU/NPU集群 | 算力需求+成本 |
+| 计算层 | 07_模型训练/推理 | GPU/TPU/NPU集群 | 算力需求+成本 |
 | 存储层 | 数据/模型/检查点 | 分布式存储/对象存储 | 容量+IOPS+成本 |
 | 网络层 | 节点间通信 | RDMA/RoCE/InfiniBand | 带宽+延迟 |
 | 调度层 | 资源编排 | K8s/Slurm/Ray | 弹性+效率 |

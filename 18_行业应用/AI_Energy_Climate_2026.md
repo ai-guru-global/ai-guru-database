@@ -296,11 +296,11 @@ AI能源消耗 2025-2026:
 
 ## 扩展章节：跨行业关联
 
-- [行业对比分析](行业应用/Industry_Overview/Industry_Comparison_2026.md) — 全行业的横向对比
-- [行业速览](行业应用/Industry_Overview/Industry-in-nutshell.md) — 30 分钟了解所有行业 AI 应用
-- [机器学习](../机器学习/README.md) — 基础算法与模型
-- [深度学习](../深度学习/README.md) — 神经网络核心技术
-- [MLOps](../模型运维/README.md) — 模型生产化部署
+- [行业对比分析](18_行业应用/01_Industry_Overview/Industry_Comparison_2026.md) — 全行业的横向对比
+- [行业速览](18_行业应用/01_Industry_Overview/Industry-in-nutshell.md) — 30 分钟了解所有行业 AI 应用
+- [机器学习](../02_机器学习/README.md) — 基础算法与模型
+- [深度学习](../03_深度学习/README.md) — 神经网络核心技术
+- [MLOps](../11_模型运维/README.md) — 模型生产化部署
 
 ---
 
@@ -308,6 +308,6 @@ AI能源消耗 2025-2026:
 
 ## Related
 
-- [[行业应用/Industry_Comparison_2026]] — AI 行业应用对比 2026 (Industry Comparison) (共享: ai-applications, finance, healthcare, industry)
-- [[行业应用/README]] — 13 - AI应用与行业融合 (共享: ai-applications, finance, healthcare, industry)
-- [[行业应用/README_for_dummy]] — AI 行业应用 — 小白版 🏭 (共享: ai-applications, finance, healthcare, industry)
+- [[18_行业应用/Industry_Comparison_2026]] — AI 行业应用对比 2026 (Industry Comparison) (共享: ai-applications, finance, healthcare, industry)
+- [[18_行业应用/README]] — 13 - AI应用与行业融合 (共享: ai-applications, finance, healthcare, industry)
+- [[18_行业应用/README_for_dummy]] — AI 行业应用 — 小白版 🏭 (共享: ai-applications, finance, healthcare, industry)

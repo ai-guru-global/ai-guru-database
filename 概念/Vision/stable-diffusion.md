@@ -13,7 +13,7 @@ relationships:
   - target: "[[概念/computer-vision]]"
     type: related_to
 sources:
-  - 计算机视觉/Diffusion_Models.md
+  - 04_计算机视觉/Diffusion_Models.md
 summary: Stable Diffusion 是基于潜在空间去噪扩散的概率生成模型，通过在 VAE 压缩的潜空间中执行迭代去噪，结合 CLIP 文本引导，实现高效高质量的文本到图像生成，是开源 AI 绘画的里程碑。
 provenance:
   extracted: 0.85
@@ -204,7 +204,7 @@ L = E_{z_0, ε, t} [ ||ε - ε_θ(z_t, t, c)||² ]
 
 ## 来源
 
-- 计算机视觉/Diffusion_Models.md
+- 04_计算机视觉/Diffusion_Models.md
 - Rombach et al., "High-Resolution Image Synthesis with Latent Diffusion Models", CVPR 2022
 - Ho et al., "Denoising Diffusion Probabilistic Models" (DDPM), NeurIPS 2020
 

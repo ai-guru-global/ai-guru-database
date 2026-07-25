@@ -37,7 +37,7 @@ aliases:
 
 Chip Huyen 是知名 ML 工程师和作家,《Designing Machine Learning Systems》和《AI Engineering》的作者。
 
-> **关联**: -> [[Agent|Agent 生产]] | [[学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[Agent|Agent 生产]] | [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
 
 
 ## 核心知识框架

@@ -199,15 +199,15 @@ Int8量化：q = round((x-z)/s)，x ≈ s·q + z
 
 ## 来源
 
-- 数学基础/Data_Structures_Algorithms/Data_Structures_Algorithms.md
+- 01_数学基础/07_Data_Structures_Algorithms/Data_Structures_Algorithms.md
 - Automatic Differentiation in Machine unsupervised-learning: a Survey (arXiv:1502.05767)
 - HNSW原始论文 (arXiv:1603.09320)
 - Flash Attention (arXiv:2205.14135)
 
 ## Related
 
-- [[数学基础/AI_Hardware/AI_Hardware_2026.md|AI_Hardware_2026]]
-- [[数学基础/AI_Hardware/README.md|AI_Hardware README]]
-- [[数学基础/Data_Structures_Algorithms/Data_Structures_Algorithms.md|Data_Structures_Algorithms]]
-- [[数学基础/Data_Structures_Algorithms/Data_Structures_Algorithms_for_dummy.md|Data_Structures_Algorithms_for_dummy]]
-- [[数学基础/Distributed_Systems/Distributed_Systems.md|Distributed_Systems]]
+- [[01_数学基础/10_AI_Hardware/AI_Hardware_2026.md|AI_Hardware_2026]]
+- [[01_数学基础/10_AI_Hardware/README.md|AI_Hardware README]]
+- [[01_数学基础/07_Data_Structures_Algorithms/Data_Structures_Algorithms.md|Data_Structures_Algorithms]]
+- [[01_数学基础/07_Data_Structures_Algorithms/Data_Structures_Algorithms_for_dummy.md|Data_Structures_Algorithms_for_dummy]]
+- [[01_数学基础/09_Distributed_Systems/Distributed_Systems.md|Distributed_Systems]]

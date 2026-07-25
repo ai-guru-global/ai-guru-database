@@ -532,8 +532,8 @@ kubectl exec -it <pod> -- cat /etc/ld.so.preload
 ## Related
 
 - [[概念/hami]] — HAMi 概念卡片
-- [[架构基建/AI_Stack/HAMi_Deep_Dive]] — HAMi 深度解析
-- [[架构基建/AI_Stack/HAMi_for_dummy]] — HAMi 入门
-- [[架构基建/AI_Stack/HAMi_Operation_Guide]] — HAMi 运维指南
+- [[12_架构基建/03_AI_Stack/HAMi_Deep_Dive]] — HAMi 深度解析
+- [[12_架构基建/03_AI_Stack/HAMi_for_dummy]] — HAMi 入门
+- [[12_架构基建/03_AI_Stack/HAMi_Operation_Guide]] — HAMi 运维指南
 - [[概念/gpu-virtualization]] — GPU 虚拟化
 - [[概念/heterogeneous-gpu]] — 异构 GPU 集群

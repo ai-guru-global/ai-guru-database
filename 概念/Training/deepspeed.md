@@ -14,7 +14,7 @@ relationships:
   - target: "概念/ray"
     type: related_to
 sources:
-  - 模型训练/Distributed_Training/DeepSpeed_Deep_Dive.md
+  - 07_模型训练/04_Distributed_Training/DeepSpeed_Deep_Dive.md
 summary: "DeepSpeed 是微软开源的深度学习训练与推理优化库，以 ZeRO 显存优化、DeepSpeed-Inference、MoE 训练和 ZeRO-Inference 著称，广泛用于千亿参数大模型的预训练与微调。"
 provenance:
   extracted: 0.8
@@ -111,7 +111,7 @@ Data Parallel Group
 
 ## Related
 
-- [[模型训练/Distributed_Training/DeepSpeed_Deep_Dive]] — DeepSpeed 深度解析
+- [[07_模型训练/04_Distributed_Training/DeepSpeed_Deep_Dive]] — DeepSpeed 深度解析
 - [[概念/distributed-training]] — 分布式训练
 - [[概念/fsdp]] — PyTorch FSDP
 - [[概念/megatron-lm]] — Megatron-LM

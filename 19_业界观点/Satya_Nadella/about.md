@@ -69,11 +69,11 @@ sources: []
 
 ### "AI 是新运行时" (AI as the Runtime)
 
-Nadella 提出了 AI 发展的核心论断："AI 不是独立产品，而是所有产品的基础运行时"。这意味着 AI 将像电力一样渗透到计算栈的每一层——从底层芯片（Maia/Silicon）到云基础设施（Azure），再到应用层（Microsoft 365/Dynamics）和交互层（Copilot）。他将此比作"AI 是新的操作系统"。参见 [[业界观点/Sam_Altman/about]] 的 Agent 生态理念，二者从不同角度描述了 AI 平台化趋势。
+Nadella 提出了 AI 发展的核心论断："AI 不是独立产品，而是所有产品的基础运行时"。这意味着 AI 将像电力一样渗透到计算栈的每一层——从底层芯片（Maia/Silicon）到云基础设施（Azure），再到应用层（Microsoft 365/Dynamics）和交互层（Copilot）。他将此比作"AI 是新的操作系统"。参见 [[19_业界观点/Sam_Altman/about]] 的 Agent 生态理念，二者从不同角度描述了 AI 平台化趋势。
 
 ### 企业 AI 的务实路线
 
-Nadella 强调企业 AI 的关键不同于消费级 AI——企业需要"可信赖、可治理、可集成"。微软的 Azure OpenAI Service 提供私有部署、数据隔离、合规审计，正是为满足企业需求。这与 [[业界观点/Sam_Altman/about]] 的 ChatGPT 消费级路线形成互补。
+Nadella 强调企业 AI 的关键不同于消费级 AI——企业需要"可信赖、可治理、可集成"。微软的 Azure OpenAI Service 提供私有部署、数据隔离、合规审计，正是为满足企业需求。这与 [[19_业界观点/Sam_Altman/about]] 的 ChatGPT 消费级路线形成互补。
 
 ### 开源与闭源的平衡
 
@@ -127,13 +127,13 @@ Nadella 的核心影响力在于他是"将 GPT 推向全球企业的人"。OpenA
 
 ## 交叉引用 (Cross-References)
 
-- [Talks 主题合成 2026](业界观点/Talks_Synthesis/Talks_Synthesis_2026.md) — 查看 Satya Nadella 在 Scaling Laws、开源 vs 闭源、AI 安全等主题中的立场
-- [AI 历史时间线](入门/Fundamentals/AI_History_Timeline.md) — 微软 × OpenAI 合作的关键节点
-- [AI 未来趋势](入门/Ethics_and_Future/AI_Future_Trends.md) — 企业 AI 的普及趋势
-- [[业界观点/Sam_Altman/about]] — OpenAI 与微软的战略伙伴关系
-- [[业界观点/Sundar_Pichai/about]] — Google vs 微软的 AI 竞赛
-- [[业界观点/Jensen_Huang/about]] — NVIDIA 算力与微软云基础设施的协同
-- [[业界观点/Bill_Gates/about]] — 微软的文化传承与变革
+- [Talks 主题合成 2026](19_业界观点/Talks_Synthesis/Talks_Synthesis_2026.md) — 查看 Satya Nadella 在 Scaling Laws、开源 vs 闭源、AI 安全等主题中的立场
+- [AI 历史时间线](00_入门/01_Fundamentals/AI_History_Timeline.md) — 微软 × OpenAI 合作的关键节点
+- [AI 未来趋势](00_入门/04_Ethics_and_Future/AI_Future_Trends.md) — 企业 AI 的普及趋势
+- [[19_业界观点/Sam_Altman/about]] — OpenAI 与微软的战略伙伴关系
+- [[19_业界观点/Sundar_Pichai/about]] — Google vs 微软的 AI 竞赛
+- [[19_业界观点/Jensen_Huang/about]] — NVIDIA 算力与微软云基础设施的协同
+- [[19_业界观点/Bill_Gates/about]] — 微软的文化传承与变革
 
 ---
 
@@ -150,10 +150,10 @@ Nadella 的核心影响力在于他是"将 GPT 推向全球企业的人"。OpenA
 
 ## Related
 
-- [[业界观点/Andrej_Karpathy/about]] — Andrej Karpathy 简介 (共享: insights, leaders, speeches, talks)
-- [[业界观点/Andrew_Ng/about]] — Andrew Ng 简介 (共享: insights, leaders, speeches, talks)
-- [[业界观点/Andrew_Ng/sayings]] — Andrew Ng 关于 AI 的观点与格言 (共享: insights, leaders, speeches, talks)
-- [[业界观点/Bill_Gates/about]] — Bill Gates 简介 (共享: insights, leaders, speeches, talks)
+- [[19_业界观点/Andrej_Karpathy/about]] — Andrej Karpathy 简介 (共享: insights, leaders, speeches, talks)
+- [[19_业界观点/Andrew_Ng/about]] — Andrew Ng 简介 (共享: insights, leaders, speeches, talks)
+- [[19_业界观点/Andrew_Ng/sayings]] — Andrew Ng 关于 AI 的观点与格言 (共享: insights, leaders, speeches, talks)
+- [[19_业界观点/Bill_Gates/about]] — Bill Gates 简介 (共享: insights, leaders, speeches, talks)
 
 ## 附录：人物影响力评估
 

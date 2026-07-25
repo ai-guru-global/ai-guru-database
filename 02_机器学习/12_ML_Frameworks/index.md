@@ -14,16 +14,16 @@ sources: []
 
 | 文件 | 说明 |
 |------|------|
-| [[机器学习/ML_Frameworks/ML_Frameworks|框架总览]] | ML 框架对比与选型指南 |
-| [[机器学习/ML_Frameworks/scikit-learn_overview|scikit-learn]] | scikit-learn 核心用法 |
-| [[机器学习/ML_Frameworks/xgboost_overview|XGBoost]] | XGBoost 梯度提升框架 |
-| [[机器学习/ML_Frameworks/lightgbm_overview|LightGBM]] | LightGBM 高效梯度提升 |
-| [[机器学习/ML_Frameworks/catboost_overview|CatBoost]] | CatBoost 类别特征优化 |
+| [[02_机器学习/12_ML_Frameworks/ML_Frameworks|框架总览]] | ML 框架对比与选型指南 |
+| [[02_机器学习/12_ML_Frameworks/scikit-learn_overview|scikit-learn]] | scikit-learn 核心用法 |
+| [[02_机器学习/12_ML_Frameworks/xgboost_overview|XGBoost]] | XGBoost 梯度提升框架 |
+| [[02_机器学习/12_ML_Frameworks/lightgbm_overview|LightGBM]] | LightGBM 高效梯度提升 |
+| [[02_机器学习/12_ML_Frameworks/catboost_overview|CatBoost]] | CatBoost 类别特征优化 |
 
 ## Related
 
-- [[深度学习/DL_Frameworks/index|DL Frameworks]]
-- [[机器学习/Ensemble_Learning/index|Ensemble Learning]]
+- [[03_深度学习/08_DL_Frameworks/index|DL Frameworks]]
+- [[02_机器学习/04_Ensemble_Learning/index|Ensemble Learning]]
 
 ## 进阶知识拓展
 
@@ -61,9 +61,9 @@ sources: []
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

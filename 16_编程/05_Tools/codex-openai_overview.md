@@ -63,11 +63,11 @@ brew install --cask codex
 | 云执行 | Codex Web | 无 | 无 |
 | 定价 | ChatGPT 订阅/API | 按 token | 免费额度大 |
 
-> **关联**: -> [[编程/README|AI 编程]] | [[编程/Coding_Fundamentals/AI_Coding_2026_Guide|AI 编程 2026 全景指南]]
+> **关联**: -> [[16_编程/README|AI 编程]] | [[16_编程/01_Coding_Fundamentals/AI_Coding_2026_Guide|AI 编程 2026 全景指南]]
 
 ## Related
 
-- [[编程/README|编程 (AI Coding)]]
+- [[16_编程/README|编程 (AI Coding)]]
 
 ## 核心知识体系
 
@@ -178,9 +178,9 @@ brew install --cask codex
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

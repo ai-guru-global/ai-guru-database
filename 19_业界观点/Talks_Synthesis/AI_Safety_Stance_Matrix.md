@@ -25,7 +25,7 @@ sources:
 
 ## 一、为什么 AI 安全是 2026 年最分裂的话题
 
-在 2023 年 ChatGPT 引爆全球之前，AI 安全还是一个相对小众的学术话题。但 2023 年 3 月 "Pause Giant AI Experiments" 公开信（[[业界观点/Yoshua_Bengio/about|Bengio]]、[[业界观点/Elon_Musk/about|Musk]] 等签署）和 5 月 [[业界观点/Geoffrey_Hinton/about|Hinton]] 从 Google 离职，把"AI 是否威胁人类生存"推上了全球议程。到 2026 年，这场争论不仅没有平息，反而随 Agent、自主武器、Deep Research 的普及愈演愈烈。
+在 2023 年 ChatGPT 引爆全球之前，AI 安全还是一个相对小众的学术话题。但 2023 年 3 月 "Pause Giant AI Experiments" 公开信（[[19_业界观点/Yoshua_Bengio/about|Bengio]]、[[19_业界观点/Elon_Musk/about|Musk]] 等签署）和 5 月 [[19_业界观点/Geoffrey_Hinton/about|Hinton]] 从 Google 离职，把"AI 是否威胁人类生存"推上了全球议程。到 2026 年，这场争论不仅没有平息，反而随 Agent、自主武器、Deep Research 的普及愈演愈烈。
 
 分歧的核心不在"AI 安全是否重要"——几乎所有人都同意重要——而在四个子问题：
 
@@ -44,17 +44,17 @@ sources:
 
 | 领袖 | 阵营 | 风险评估 | 监管立场 | 开源立场 | 代表行动 |
 |------|------|----------|----------|----------|----------|
-| [[业界观点/Yoshua_Bengio/about|Bengio]] | 暂停派 | 高，迫在眉睫 | 强监管 + 国际条约 | 谨慎 | 签 Pause 信，创 LawZero |
-| [[业界观点/Geoffrey_Hinton/about|Hinton]] | 谨慎/警告派 | 高 | 国际机构 (类 IAEA) | 谨慎 | 从 Google 离职 |
-| [[业界观点/Elon_Musk/about|Musk]] | 警告 + 矛盾派 | 高（存在性） | 先发制人监管 | 选择性开源 | 签 Pause 信，起诉 OpenAI |
-| [[业界观点/Dario_Amodei/about|Amodei]] | 对齐/负责任扩展派 | 中-高 | 行业自律 + 评估 | 反对开源前沿 | RSP / ASL 分级 |
-| [[业界观点/Ilya_Sutskever/about|Sutskever]] | 对齐派（聚焦） | 中-高 | 聚焦技术对齐 | 中立 | 创 SSI |
-| [[业界观点/Sam_Altman/about|Altman]] | 务实/渐进派 | 中 | 分级监管 (类 FDA) | 延迟开源 | 参议院听证，呼吁监管 |
-| [[业界观点/Bill_Gates/about|Gates]] | 务实乐观派 | 中 | 行业自律 + 轻监管 | 中立 | 关注应用而非限制 |
-| [[业界观点/Mustafa_Suleyman/about|Suleyman]] | 遏制 (containment) 派 | 中-高 | 全球治理 | 谨慎 | 《The Coming Wave》 |
-| [[业界观点/Jensen_Huang/about|黄仁勋]] | 加速/技术解决派 | 中-低 | 技术迭代优先 | 中立 | "用技术解决技术问题" |
-| [[业界观点/Yann_LeCun/about|LeCun]] | 风险被高估派 | 低 | 反对暂停 | 坚决支持开源 | 公开反对末日论 |
-| [[业界观点/Demis_Hassabis/about|Hassabis]] | 科学责任派 | 中 | 负责任部署 | 反对开源前沿 | Gemini 闭源 + 安全评估 |
+| [[19_业界观点/Yoshua_Bengio/about|Bengio]] | 暂停派 | 高，迫在眉睫 | 强监管 + 国际条约 | 谨慎 | 签 Pause 信，创 LawZero |
+| [[19_业界观点/Geoffrey_Hinton/about|Hinton]] | 谨慎/警告派 | 高 | 国际机构 (类 IAEA) | 谨慎 | 从 Google 离职 |
+| [[19_业界观点/Elon_Musk/about|Musk]] | 警告 + 矛盾派 | 高（存在性） | 先发制人监管 | 选择性开源 | 签 Pause 信，起诉 OpenAI |
+| [[19_业界观点/Dario_Amodei/about|Amodei]] | 对齐/负责任扩展派 | 中-高 | 行业自律 + 评估 | 反对开源前沿 | RSP / ASL 分级 |
+| [[19_业界观点/Ilya_Sutskever/about|Sutskever]] | 对齐派（聚焦） | 中-高 | 聚焦技术对齐 | 中立 | 创 SSI |
+| [[19_业界观点/Sam_Altman/about|Altman]] | 务实/渐进派 | 中 | 分级监管 (类 FDA) | 延迟开源 | 参议院听证，呼吁监管 |
+| [[19_业界观点/Bill_Gates/about|Gates]] | 务实乐观派 | 中 | 行业自律 + 轻监管 | 中立 | 关注应用而非限制 |
+| [[19_业界观点/Mustafa_Suleyman/about|Suleyman]] | 遏制 (containment) 派 | 中-高 | 全球治理 | 谨慎 | 《The Coming Wave》 |
+| [[19_业界观点/Jensen_Huang/about|黄仁勋]] | 加速/技术解决派 | 中-低 | 技术迭代优先 | 中立 | "用技术解决技术问题" |
+| [[19_业界观点/Yann_LeCun/about|LeCun]] | 风险被高估派 | 低 | 反对暂停 | 坚决支持开源 | 公开反对末日论 |
+| [[19_业界观点/Demis_Hassabis/about|Hassabis]] | 科学责任派 | 中 | 负责任部署 | 反对开源前沿 | Gemini 闭源 + 安全评估 |
 
 ---
 
@@ -62,7 +62,7 @@ sources:
 
 ### 1. 暂停派 (Pause)
 
-**代表**：[[业界观点/Yoshua_Bengio/about|Bengio]]、[[业界观点/Elon_Musk/about|Musk]]（2023 年时）
+**代表**：[[19_业界观点/Yoshua_Bengio/about|Bengio]]、[[19_业界观点/Elon_Musk/about|Musk]]（2023 年时）
 
 **核心主张**：在解决对齐问题之前，应暂停超大型模型的训练。2023 年 3 月的 "Pause Giant AI Experiments" 公开信呼吁暂停 6 个月，签署者包括 Bengio、Musk、Steve Wozniak 等。
 
@@ -74,47 +74,47 @@ sources:
 
 ### 2. 谨慎/警告派 (Warning)
 
-**代表**：[[业界观点/Geoffrey_Hinton/about|Hinton]]
+**代表**：[[19_业界观点/Geoffrey_Hinton/about|Hinton]]
 
-Hinton 的独特之处：他不主张硬性暂停，但认为 AI 能力提升速度超出安全研究跟进速度。2023 年从 Google 离职是为了"自由地谈论风险"而不受商业利益束缚。他呼吁建立类似联合国原子能机构 (IAEA) 的国际 AI 监管机构，并研究"Mortal Computation"（终有一死的计算）从架构层面降低滥用风险。参见 [[业界观点/Geoffrey_Hinton/sayings|Hinton 语录]]。
+Hinton 的独特之处：他不主张硬性暂停，但认为 AI 能力提升速度超出安全研究跟进速度。2023 年从 Google 离职是为了"自由地谈论风险"而不受商业利益束缚。他呼吁建立类似联合国原子能机构 (IAEA) 的国际 AI 监管机构，并研究"Mortal Computation"（终有一死的计算）从架构层面降低滥用风险。参见 [[19_业界观点/Geoffrey_Hinton/sayings|Hinton 语录]]。
 
 ### 3. 对齐/负责任扩展派 (Alignment / RSP)
 
-**代表**：[[业界观点/Dario_Amodei/about|Amodei]]、[[业界观点/Ilya_Sutskever/about|Sutskever]]
+**代表**：[[19_业界观点/Dario_Amodei/about|Amodei]]、[[19_业界观点/Ilya_Sutskever/about|Sutskever]]
 
 这一派的核心是"继续研发，但用制度和技术保证安全"。
 
-- **Amodei 的 RSP**：Anthropic 推出业界首个 Responsible Scaling Policy，将模型按能力分为 ASL 1-5 级，每个级别有对应的安全评估要求。开创了 Constitutional AI（宪法式 AI）对齐范式——通过一组原则让 AI 自我修正。参见 [[业界观点/Dario_Amodei/sayings|Amodei 语录]]。
+- **Amodei 的 RSP**：Anthropic 推出业界首个 Responsible Scaling Policy，将模型按能力分为 ASL 1-5 级，每个级别有对应的安全评估要求。开创了 Constitutional AI（宪法式 AI）对齐范式——通过一组原则让 AI 自我修正。参见 [[19_业界观点/Dario_Amodei/sayings|Amodei 语录]]。
 - **Sutskever 的 SSI**：2024 年离开 OpenAI 创立 Safe Superintelligence Inc.，专注"安全 + 超级智能"——相信超级智能即将到来，全部精力转向如何让它安全。
 
 > **关键引述**："Frontier models carry systemic risk; we need evaluations before deployment."（Amodei）——前沿模型带系统性风险，部署前需要评估。
 
 ### 4. 务实/渐进派 (Pragmatic)
 
-**代表**：[[业界观点/Sam_Altman/about|Altman]]、[[业界观点/Bill_Gates/about|Gates]]
+**代表**：[[19_业界观点/Sam_Altman/about|Altman]]、[[19_业界观点/Bill_Gates/about|Gates]]
 
-- **Altman** 在 2023 年参议院听证会上主动呼吁监管，提出"类似 FDA 的 AI 机构"和 AI 安全许可制度。他的立场是"渐进式安全"——通过 Red Teaming、RLHF 等技术手段逐步提升安全性，反对暂停。见 [[业界观点/Sam_Altman/sayings|Altman 语录]]。
+- **Altman** 在 2023 年参议院听证会上主动呼吁监管，提出"类似 FDA 的 AI 机构"和 AI 安全许可制度。他的立场是"渐进式安全"——通过 Red Teaming、RLHF 等技术手段逐步提升安全性，反对暂停。见 [[19_业界观点/Sam_Altman/sayings|Altman 语录]]。
 - **Gates** 关注 AI 在全球健康、教育、气候中的应用，认为"风险真实但收益更大，关键是管理而非禁止"。
 
 > **关键引述**："The bigger risk is deploying AI irresponsibly, not deploying it too slowly."（Altman）——更大的风险是不负责任地部署，而不是部署太慢。
 
 ### 5. 遏制派 (Containment)
 
-**代表**：[[业界观点/Mustafa_Suleyman/about|Mustafa Suleyman]]
+**代表**：[[19_业界观点/Mustafa_Suleyman/about|Mustafa Suleyman]]
 
-[[业界观点/Mustafa_Suleyman/about|Suleyman]] (Microsoft AI CEO、DeepMind 联合创始人) 在《The Coming Wave》中提出，AI 治理的核心挑战是"遏制" (containment)——如何在推动技术扩散的同时保持对其风险的控制。他主张全球治理框架，但承认遏立在技术上极难。
+[[19_业界观点/Mustafa_Suleyman/about|Suleyman]] (Microsoft AI CEO、DeepMind 联合创始人) 在《The Coming Wave》中提出，AI 治理的核心挑战是"遏制" (containment)——如何在推动技术扩散的同时保持对其风险的控制。他主张全球治理框架，但承认遏立在技术上极难。
 
 ### 6. 加速/技术解决派 (e/acc / Technical)
 
-**代表**：[[业界观点/Jensen_Huang/about|黄仁勋]]、e/acc 运动
+**代表**：[[19_业界观点/Jensen_Huang/about|黄仁勋]]、e/acc 运动
 
 黄仁勋主张"AI 安全应该通过技术迭代解决，不是暂停"。e/acc（effective accelerationism，有效加速主义）运动更激进，认为加速技术进步本身就能解决其带来的问题，反对任何形式的减速。这一派在硅谷有强大影响力，但被 Bengio/Hinton 批评为"不负责任"。
 
 ### 7. 风险被高估派 (Skeptic)
 
-**代表**：[[业界观点/Yann_LeCun/about|LeCun]]
+**代表**：[[19_业界观点/Yann_LeCun/about|LeCun]]
 
-LeCun 是 AI 末日论最直言不讳的反对者。他认为当前 AI 连猫都不如，讨论"AI 接管世界"为时过早；主张开源是安全的最佳防线（更多眼睛审查）；认为暂停既不现实也会让坏人领先。他多次在 X 上与末日论者公开辩论。见 [[业界观点/Yann_LeCun/sayings|LeCun 语录]]。
+LeCun 是 AI 末日论最直言不讳的反对者。他认为当前 AI 连猫都不如，讨论"AI 接管世界"为时过早；主张开源是安全的最佳防线（更多眼睛审查）；认为暂停既不现实也会让坏人领先。他多次在 X 上与末日论者公开辩论。见 [[19_业界观点/Yann_LeCun/sayings|LeCun 语录]]。
 
 ---
 
@@ -168,7 +168,7 @@ flowchart LR
 | 延迟开源 | Altman |
 | 谨慎 | Bengio、Hinton |
 
-> 完整开源 vs 闭源矩阵见 [[业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026|开源 vs 闭源之争]]。
+> 完整开源 vs 闭源矩阵见 [[19_业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026|开源 vs 闭源之争]]。
 
 ### 子问题 4：是否暂停
 
@@ -257,7 +257,7 @@ flowchart LR
 | 市场 | 自由市场最优 | 市场失灵需干预 |
 | AGI | 欢迎尽快到来 | 需先解决对齐 |
 
-e/acc 的代表人物包括部分硅谷投资人（如 Marc Andreessen，《The Techno-Optimist Manifesto》作者）和创业者，与 [[业界观点/Jensen_Huang/about|黄仁勋]] 的"用技术解决技术问题"立场共鸣。但它被 Bengio/Hinton 批评为"不负责任的鲁莽"。
+e/acc 的代表人物包括部分硅谷投资人（如 Marc Andreessen，《The Techno-Optimist Manifesto》作者）和创业者，与 [[19_业界观点/Jensen_Huang/about|黄仁勋]] 的"用技术解决技术问题"立场共鸣。但它被 Bengio/Hinton 批评为"不负责任的鲁莽"。
 
 **与领袖立场的关联**：e/acc 不是单一领袖的运动，而是一种文化思潮。理解它有助于解释为什么硅谷对 AI 监管有强烈抵触——这不只是商业利益，也是深层的技术信仰。
 
@@ -308,12 +308,12 @@ AI 安全立场演变与几个关键公共事件紧密相关：
 | 技术 | 提出者/代表 | 核心机制 | 局限 |
 |------|-------------|----------|------|
 | RLHF | OpenAI 早期 | 人类反馈强化学习 | 人类标注有偏见 |
-| Constitutional AI | [[业界观点/Dario_Amodei/about|Amodei]] / Anthropic | 用"宪法"原则自我修正 | 依赖原则设计 |
+| Constitutional AI | [[19_业界观点/Dario_Amodei/about|Amodei]] / Anthropic | 用"宪法"原则自我修正 | 依赖原则设计 |
 | Red Teaming | 全行业 | 主动攻击发现漏洞 | 永远滞后于新攻击 |
-| Superalignment | [[业界观点/Ilya_Sutskever/about|Sutskever]] / OpenAI | 用 AI 监督 AI | 早期，未验证 |
+| Superalignment | [[19_业界观点/Ilya_Sutskever/about|Sutskever]] / OpenAI | 用 AI 监督 AI | 早期，未验证 |
 | Mechanistic Interpretability | Anthropic 等 | 理解模型内部机制 | 工程难度极高 |
-| Mortal Computation | [[业界观点/Geoffrey_Hinton/about|Hinton]] | 架构层面限制复制 | 探索性，未工程化 |
-| RSP / ASL 分级 | [[业界观点/Dario_Amodei/about|Amodei]] | 按能力分级管理 | 自律性，无强制力 |
+| Mortal Computation | [[19_业界观点/Geoffrey_Hinton/about|Hinton]] | 架构层面限制复制 | 探索性，未工程化 |
+| RSP / ASL 分级 | [[19_业界观点/Dario_Amodei/about|Amodei]] | 按能力分级管理 | 自律性，无强制力 |
 
 ---
 
@@ -382,16 +382,16 @@ AI 安全立场演变与几个关键公共事件紧密相关：
 
 ## 十六、关联导航
 
-- [[业界观点/Geoffrey_Hinton/about|Hinton 简介]] · [[业界观点/Yoshua_Bengio/about|Bengio 简介]]
-- [[业界观点/Dario_Amodei/about|Amodei 简介]] · [[业界观点/Sam_Altman/about|Altman 简介]]
-- [[业界观点/Elon_Musk/about|Musk 简介]] · [[业界观点/Yann_LeCun/about|LeCun 简介]]
-- [[业界观点/Ilya_Sutskever/about|Sutskever 简介]] · [[业界观点/Mustafa_Suleyman/about|Suleyman 简介]]
-- [[业界观点/Jensen_Huang/about|黄仁勋 简介]] · [[业界观点/Demis_Hassabis/about|Hassabis 简介]]
-- [[业界观点/Talks_Synthesis/Hinton_vs_LeCun_World_Model_Debate|Hinton vs LeCun 之争]]
-- [[业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026|开源 vs 闭源之争]]
-- [[业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix|AGI 时间表预测矩阵]]
-- [[业界观点/Talks_Synthesis/China_US_AI_Race_Leaders_Views|中美 AI 竞赛领袖观点]]
-- [[业界观点/index|业界观点首页]]
+- [[19_业界观点/Geoffrey_Hinton/about|Hinton 简介]] · [[19_业界观点/Yoshua_Bengio/about|Bengio 简介]]
+- [[19_业界观点/Dario_Amodei/about|Amodei 简介]] · [[19_业界观点/Sam_Altman/about|Altman 简介]]
+- [[19_业界观点/Elon_Musk/about|Musk 简介]] · [[19_业界观点/Yann_LeCun/about|LeCun 简介]]
+- [[19_业界观点/Ilya_Sutskever/about|Sutskever 简介]] · [[19_业界观点/Mustafa_Suleyman/about|Suleyman 简介]]
+- [[19_业界观点/Jensen_Huang/about|黄仁勋 简介]] · [[19_业界观点/Demis_Hassabis/about|Hassabis 简介]]
+- [[19_业界观点/Talks_Synthesis/Hinton_vs_LeCun_World_Model_Debate|Hinton vs LeCun 之争]]
+- [[19_业界观点/Talks_Synthesis/Open_Source_vs_Closed_Source_AI_2026|开源 vs 闭源之争]]
+- [[19_业界观点/Talks_Synthesis/AGI_Timeline_Predictions_Matrix|AGI 时间表预测矩阵]]
+- [[19_业界观点/Talks_Synthesis/China_US_AI_Race_Leaders_Views|中美 AI 竞赛领袖观点]]
+- [[19_业界观点/index|业界观点首页]]
 
 ---
 

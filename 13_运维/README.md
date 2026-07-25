@@ -18,13 +18,13 @@ sources: []
 ## 📍 与 10_MLOps_Pipeline 的边界
 
 > **本章专注「AI 系统运维」（Run-time），10 章 focus「ML 流水线建设」（Build-time，含工具实现）。**
-> 2026-06-15 起，工具深度解析（DVC/Feast/MLflow/Kubeflow/LangSmith 等 16 篇）已迁入 [[模型运维/README]]。
-> 完整边界声明见 [[模型运维/Boundary_with_16]]。
+> 2026-06-15 起，工具深度解析（DVC/Feast/MLflow/Kubeflow/LangSmith 等 16 篇）已迁入 [[11_模型运维/README]]。
+> 完整边界声明见 [[11_模型运维/Boundary_with_16]]。
 
 | 想了解 | 去哪 |
 |--------|------|
-| 工具怎么用（DVC/Feast/MLflow/LangSmith…） | [[模型运维/README]] — 工具深度解析已迁入 |
-| 概念与方法论（特征存储/实验追踪/评估…） | [[模型运维/README]] — 概念页 |
+| 工具怎么用（DVC/Feast/MLflow/LangSmith…） | [[11_模型运维/README]] — 工具深度解析已迁入 |
+| 概念与方法论（特征存储/实验追踪/评估…） | [[11_模型运维/README]] — 概念页 |
 | 事故响应 / SRE / 混沌工程 | 本章（10 不涉及运维） |
 | 线上监控 / 告警 / Runbook | 本章 |
 
@@ -47,7 +47,7 @@ sources: []
 | [GPU_OOM_Troubleshooting_Guide](./SRE_Reliability/GPU_OOM_Troubleshooting_Guide.md) | 区分四类 GPU OOM 并给出修复阶梯 | AI 训练/推理 SRE |
 | [LLM_Inference_Slow_Unavailable_Runbook](./SRE_Reliability/LLM_Inference_Slow_Unavailable_Runbook.md) | LLM 推理延迟/不可用分层排障 | 推理 SRE |
 | [LLM_Inference_SLO_Guide](./SRE_Reliability/LLM_Inference_SLO_Guide.md) | LLM 推理 SLO、SLI、错误预算与发布门控 | SRE |
-| [LLM_Inference_Observability_Stack](运维/LLM_Inference_Observability_Stack.md) | TTFT/TPOT/KV Cache 指标与 Prometheus/Grafana | 可观测性工程师 |
+| [LLM_Inference_Observability_Stack](13_运维/LLM_Inference_Observability_Stack.md) | TTFT/TPOT/KV Cache 指标与 Prometheus/Grafana | 可观测性工程师 |
 
 ## 事故响应 (Incident Response)
 
@@ -79,7 +79,7 @@ sources: []
 
 | 文档 | 内容 | 适用角色 |
 |------|------|----------|
-| [AI 系统混沌工程](运维/Chaos_Engineering_for_AI_Systems.md) | AI 平台故障注入实验设计与工具 | 可靠性工程师 |
+| [AI 系统混沌工程](13_运维/Chaos_Engineering_for_AI_Systems.md) | AI 平台故障注入实验设计与工具 | 可靠性工程师 |
 | [Chaos_Engineering_AI](./SRE_Reliability/Chaos_Engineering_AI.md) | AI 系统混沌工程：故障注入、韧性测试 | 可靠性工程师 |
 
 ## 成本治理
@@ -94,11 +94,11 @@ sources: []
 
 | 文档 | 内容 | 适用角色 |
 |------|------|----------|
-| [Prometheus + Grafana Deep Dive](../模型运维/Observability/Prometheus_Grafana_Deep_Dive.md) | AI 系统监控与可视化基座：GPU/推理/训练指标 | SRE、平台工程师 |
+| [Prometheus + Grafana Deep Dive](../11_模型运维/08_Observability/Prometheus_Grafana_Deep_Dive.md) | AI 系统监控与可视化基座：GPU/推理/训练指标 | SRE、平台工程师 |
 | [Guardrails Deep Dive](./SRE_Reliability/Guardrails_Deep_Dive.md) | LLM 输入/输出安全护栏 | 安全工程师 |
-| [PromptLayer Deep Dive](模型运维/Observability/PromptLayer_Deep_Dive.md) | Prompt 版本管理与追踪 | Prompt 工程师 |
+| [PromptLayer Deep Dive](11_模型运维/08_Observability/PromptLayer_Deep_Dive.md) | Prompt 版本管理与追踪 | Prompt 工程师 |
 
-> 其余工具深度解析（DVC/LakeFS/Feast/MLflow/ClearML/Kubeflow/Prefect/LangSmith/Helicone/Phoenix/Braintrust + 3 篇 Observability + CI_CD_Pipeline + LLM_Production_Pipeline）已迁入 [[模型运维/README]]。
+> 其余工具深度解析（DVC/LakeFS/Feast/MLflow/ClearML/Kubeflow/Prefect/LangSmith/Helicone/Phoenix/Braintrust + 3 篇 Observability + CI_CD_Pipeline + LLM_Production_Pipeline）已迁入 [[11_模型运维/README]]。
 
 ## AI Stack 运维工具
 
@@ -106,11 +106,11 @@ sources: []
 
 | 文档 | 内容 | 适用角色 |
 |------|------|----------|
-| [AI Stack 生产工具链总览](架构基建/AI_Stack/AI_Stack_Production_Toolchain.md) | AI Stack 工具全景与生命周期 | 所有 AI Stack 用户 |
-| [AI Stack 容器与运行时](架构基建/AI_Stack/AI_Stack_Container_Runtime_Guide.md) | nerdctl / crictl / ctr / docker / podman | SRE、平台工程师 |
-| [AI Stack GPU 监控](架构基建/AI_Stack/AI_Stack_GPU_Monitoring_Guide.md) | nvidia-smi / ppu-smi / rocm-smi / pmon | 运维、SRE |
-| [AI Stack K8s 编排](架构基建/AI_Stack/AI_Stack_K8s_Operations_Guide.md) | kubectl / helm 排障与包管理 | K8s 工程师 |
-| [AI Stack 专属工具](架构基建/AI_Stack/AI_Stack_Exclusive_Tools_Guide.md) | stackops / aioController | AI Stack 运维 |
+| [AI Stack 生产工具链总览](12_架构基建/03_AI_Stack/AI_Stack_Production_Toolchain.md) | AI Stack 工具全景与生命周期 | 所有 AI Stack 用户 |
+| [AI Stack 容器与运行时](12_架构基建/03_AI_Stack/AI_Stack_Container_Runtime_Guide.md) | nerdctl / crictl / ctr / docker / podman | SRE、平台工程师 |
+| [AI Stack GPU 监控](12_架构基建/03_AI_Stack/AI_Stack_GPU_Monitoring_Guide.md) | nvidia-smi / ppu-smi / rocm-smi / pmon | 运维、SRE |
+| [AI Stack K8s 编排](12_架构基建/03_AI_Stack/AI_Stack_K8s_Operations_Guide.md) | kubectl / helm 排障与包管理 | K8s 工程师 |
+| [AI Stack 专属工具](12_架构基建/03_AI_Stack/AI_Stack_Exclusive_Tools_Guide.md) | stackops / aioController | AI Stack 运维 |
 
 ---
 
@@ -127,12 +127,12 @@ sources: []
 
 ## 关联目录
 
-- [MLOps](../模型运维/) — ML 流水线建设（概念 + 工具实现，工具深度解析已迁入此章）
-- [部署推理](../部署推理/) — 推理引擎 (vLLM, SGLang)
-- [架构基建/AI_Gateway](../架构基建/AI_Gateway/) — AI 网关与路由
-- [AI测试](../测试/) — AI 测试框架
+- [MLOps](../11_模型运维/) — ML 流水线建设（概念 + 工具实现，工具深度解析已迁入此章）
+- [部署推理](../10_部署推理/) — 推理引擎 (vLLM, SGLang)
+- [12_架构基建/AI_Gateway](../12_架构基建/11_AI_Gateway/) — AI 网关与路由
+- [AI测试](../09_测试/) — AI 测试框架
 
-> 边界声明详见 [[模型运维/Boundary_with_16]]。
+> 边界声明详见 [[11_模型运维/Boundary_with_16]]。
 
 ---
 
@@ -140,30 +140,30 @@ sources: []
 
 ## Related
 
-- [[模型运维/Boundary_with_16]] — 10 与 16 边界声明 📐
-- [[运维/AIOps_Fundamentals/AI_Ops_2026]] — AI Ops 2026: 智能运维体系与实践
-- [[运维/SRE_Reliability/AI_Incident_Response_Playbook]] — AI 系统事故响应手册
-- [[运维/SRE_Reliability/Incident_Response_for_AI_Systems]] — AI 系统事件响应
-- [[运维/SRE_Reliability/SRE_for_AI_Systems]] — AI 系统的 SRE 实践指南
-- [[运维/SRE_Reliability/Chaos_Engineering_AI]] — AI 系统混沌工程实践
-- [[运维/SRE_Reliability/Guardrails_Deep_Dive]] — Guardrails AI: LLM 安全护栏
-- [[模型运维/Observability/PromptLayer_Deep_Dive]] — PromptLayer: 提示词管理与追踪
-- [[运维/AIOps_Fundamentals/AIOps-in-nutshell]] — AI Ops 速成指南
-- [[运维/AIOps_Fundamentals/AI_Ops_for_dummy]] — AI Ops 入门指南
-- [[运维/README_for_dummy]] — 16 AI Ops — 小白版 📡
-- [[架构基建/AI_Stack_Production_Toolchain]] — AI Stack 生产工具链总览
-- [[架构基建/AI_Stack_Container_Runtime_Guide]] — AI Stack 容器与运行时指南
-- [[架构基建/AI_Stack_GPU_Monitoring_Guide]] — AI Stack GPU 监控指南
-- [[架构基建/AI_Stack_K8s_Operations_Guide]] — AI Stack K8s 编排指南
-- [[架构基建/AI_Stack_Exclusive_Tools_Guide]] — AI Stack 专属运维工具指南
+- [[11_模型运维/Boundary_with_16]] — 10 与 16 边界声明 📐
+- [[13_运维/01_AIOps_Fundamentals/AI_Ops_2026]] — AI Ops 2026: 智能运维体系与实践
+- [[13_运维/02_SRE_Reliability/AI_Incident_Response_Playbook]] — AI 系统事故响应手册
+- [[13_运维/02_SRE_Reliability/Incident_Response_for_AI_Systems]] — AI 系统事件响应
+- [[13_运维/02_SRE_Reliability/SRE_for_AI_Systems]] — AI 系统的 SRE 实践指南
+- [[13_运维/02_SRE_Reliability/Chaos_Engineering_AI]] — AI 系统混沌工程实践
+- [[13_运维/02_SRE_Reliability/Guardrails_Deep_Dive]] — Guardrails AI: LLM 安全护栏
+- [[11_模型运维/08_Observability/PromptLayer_Deep_Dive]] — PromptLayer: 提示词管理与追踪
+- [[13_运维/01_AIOps_Fundamentals/AIOps-in-nutshell]] — AI Ops 速成指南
+- [[13_运维/01_AIOps_Fundamentals/AI_Ops_for_dummy]] — AI Ops 入门指南
+- [[13_运维/README_for_dummy]] — 16 AI Ops — 小白版 📡
+- [[12_架构基建/AI_Stack_Production_Toolchain]] — AI Stack 生产工具链总览
+- [[12_架构基建/AI_Stack_Container_Runtime_Guide]] — AI Stack 容器与运行时指南
+- [[12_架构基建/AI_Stack_GPU_Monitoring_Guide]] — AI Stack GPU 监控指南
+- [[12_架构基建/AI_Stack_K8s_Operations_Guide]] — AI Stack K8s 编排指南
+- [[12_架构基建/AI_Stack_Exclusive_Tools_Guide]] — AI Stack 专属运维工具指南
 
-- [[运维/Chaos_Engineering_for_AI_Systems|AI 系统混沌工程]]
-- [[运维/Incident_Response/On_Call_Runbook_Template|On-Call Runbook 模板]]
-- [[运维/SRE_Reliability/LLM_Inference_SLO_Guide|LLM 推理 SLO 实践指南]]
+- [[13_运维/Chaos_Engineering_for_AI_Systems|AI 系统混沌工程]]
+- [[13_运维/03_Incident_Response/On_Call_Runbook_Template|On-Call Runbook 模板]]
+- [[13_运维/02_SRE_Reliability/LLM_Inference_SLO_Guide|LLM 推理 SLO 实践指南]]
 
 ## 工单诊断入口
 
-- [[运维/Troubleshooting/diagnosis-work-order-hub]] — 工单智能体远程诊断知识枢纽（Pod/网络/存储/GPU 四大决策树）
+- [[13_运维/04_Troubleshooting/diagnosis-work-order-hub]] — 工单智能体远程诊断知识枢纽（Pod/网络/存储/GPU 四大决策树）
 
 ## 进阶知识拓展
 
@@ -201,9 +201,9 @@ sources: []
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

@@ -1104,7 +1104,7 @@ flowchart TD
 
 ## Related
 
-- [[可视化/README.md|94_Visualization README]]
+- [[94_可视化/README.md|94_Visualization README]]
 - [[前端应用/atlas/README.md|atlas README]]
 - [[前端应用/atlas/docs/performance.md|performance]]
-- [[可视化/Neural_Network_Visualization_Guide|神经网络可视化指南]] — 架构图、特征图与注意力可视化
+- [[94_可视化/Neural_Network_Visualization_Guide|神经网络可视化指南]] — 架构图、特征图与注意力可视化

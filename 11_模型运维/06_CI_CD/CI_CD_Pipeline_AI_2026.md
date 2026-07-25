@@ -77,7 +77,7 @@ flowchart TB
 flowchart LR
     A[触发] --> B[数据验证]
     B --> C[代码测试]
-    C --> D[模型训练/再训练]
+    C --> D[07_模型训练/再训练]
     D --> E[模型评估]
     E --> F[质量门禁]
     F --> G[模型注册]
@@ -374,10 +374,10 @@ git tag -a data-v2.1 -m "Training data version 2.1"
 ## 7. 与其他章节的关联
 
 - [MLOps 流水线](.README.md) — 训练到部署的完整流程
-- [模型评估](../../模型评估/README.md) — 质量门禁的评估方法
-- [部署推理](../../部署推理/README.md) — 模型服务化技术
-- [混沌工程](运维/SRE_Reliability/Chaos_Engineering_AI.md) — 故障注入测试
-- [AI Ops 概述](运维/AIOps_Fundamentals/AI_Ops_2026.md) — 运维监控体系
+- [模型评估](../../08_模型评估/README.md) — 质量门禁的评估方法
+- [部署推理](../../10_部署推理/README.md) — 模型服务化技术
+- [混沌工程](13_运维/02_SRE_Reliability/Chaos_Engineering_AI.md) — 故障注入测试
+- [AI Ops 概述](13_运维/01_AIOps_Fundamentals/AI_Ops_2026.md) — 运维监控体系
 
 ---
 
@@ -385,10 +385,10 @@ git tag -a data-v2.1 -m "Training data version 2.1"
 
 ## Related
 
-- [[运维/AIOps_Fundamentals/AIOps-in-nutshell.md|AIOps-in-nutshell]]
-- [[运维/SRE_Reliability/AI_Incident_Response_Playbook|AI_Incident_Response_Playbook]]
-- [[运维/AIOps_Fundamentals/AI_Ops_for_dummy.md|AI_Ops_for_dummy]]
-- [[运维/README.md|运维 README]]
-- [[运维/README_for_dummy.md|README_for_dummy]]
+- [[13_运维/01_AIOps_Fundamentals/AIOps-in-nutshell.md|AIOps-in-nutshell]]
+- [[13_运维/02_SRE_Reliability/AI_Incident_Response_Playbook|AI_Incident_Response_Playbook]]
+- [[13_运维/01_AIOps_Fundamentals/AI_Ops_for_dummy.md|AI_Ops_for_dummy]]
+- [[13_运维/README.md|运维 README]]
+- [[13_运维/README_for_dummy.md|README_for_dummy]]
 - [[tekton]]
 - [[argo-rollouts]]

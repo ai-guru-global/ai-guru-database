@@ -424,7 +424,7 @@ FSDP 是 PyTorch 版本的 ZeRO-3
 你已经了解了分布式训练的基础知识！🎉
 
 建议接下来：
-1. **了解训练基础**：阅读 [模型训练入门](模型训练/Training_Fundamentals/Model_Training_for_dummy.md)
+1. **了解训练基础**：阅读 [模型训练入门](07_模型训练/01_Training_Fundamentals/Model_Training_for_dummy.md)
 2. **深入学习**：阅读 [分布式训练专业版](./Distributed_Training_2026.md)
 3. **动手实践**：用 Hugging Face `accelerate` 库体验简单的分布式训练
 
@@ -436,8 +436,8 @@ FSDP 是 PyTorch 版本的 ZeRO-3
 
 ## Related
 
-- [[模型训练/Distributed_Training/Distributed_Training_2026]] — Distributed Training 2026 (共享: distributed-training, fsdp, model-training, optimization)
-- [[模型训练/Optimization/Mixed_Precision_Training]] — 混合精度训练 (Mixed Precision Training) (共享: distributed-training, fsdp, model-training, optimization)
-- [[模型训练/Model-Training-in-nutshell]] — 模型训练速成指南 (共享: distributed-training, fsdp, model-training, optimization)
-- [[模型训练/Model_Training_for_dummy]] — 模型训练小白指南 (共享: distributed-training, fsdp, model-training, optimization)
-- [[模型训练/README.md|README]]
+- [[07_模型训练/04_Distributed_Training/Distributed_Training_2026]] — Distributed Training 2026 (共享: distributed-training, fsdp, model-training, optimization)
+- [[07_模型训练/03_Optimization/Mixed_Precision_Training]] — 混合精度训练 (Mixed Precision Training) (共享: distributed-training, fsdp, model-training, optimization)
+- [[07_模型训练/Model-Training-in-nutshell]] — 模型训练速成指南 (共享: distributed-training, fsdp, model-training, optimization)
+- [[07_模型训练/Model_Training_for_dummy]] — 模型训练小白指南 (共享: distributed-training, fsdp, model-training, optimization)
+- [[07_模型训练/README.md|README]]

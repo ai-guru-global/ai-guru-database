@@ -248,7 +248,7 @@ AI需要同时理解:
 ## 下一步
 
 - 想深入技术原理？→ [Video_Generation_2026.md](./Video_Generation_2026.md)
-- 想学其他 AI 技术？→ [计算机视觉总览](计算机视觉/CV_Fundamentals/CV-in-nutshell.md)
+- 想学其他 AI 技术？→ [计算机视觉总览](04_计算机视觉/01_CV_Fundamentals/CV-in-nutshell.md)
 - 想学 AI 画画？→ [生成模型 - 小白版](../Generative_Models/Generative_Models_for_dummy.md)
 
 ---
@@ -256,8 +256,8 @@ AI需要同时理解:
 *本文是 [Video_Generation_2026.md](./Video_Generation_2026.md) 的简化版，适合零基础读者。准备好当AI视频导演了吗？* 🎬
 ## 相关链接
 
-- [[计算机视觉/Video_Generation/Video_Generation_2026|AI 视频生成 2026 (完整版)]] — 本篇小白版对应的详细版
-- [[计算机视觉/Video_Generation/index|视频生成索引]] — 主题导览
-- [[计算机视觉/Generative_Models/Generative_Models_for_dummy|生成模型 (小白版)]] — 视频生成的底层技术
+- [[04_计算机视觉/07_Video_Generation/Video_Generation_2026|AI 视频生成 2026 (完整版)]] — 本篇小白版对应的详细版
+- [[04_计算机视觉/07_Video_Generation/index|视频生成索引]] — 主题导览
+- [[04_计算机视觉/06_Generative_Models/Generative_Models_for_dummy|生成模型 (小白版)]] — 视频生成的底层技术
 - [[概念/Vision/video-generation|视频生成]] — 概念卡片
-- [[计算机视觉/CV_Fundamentals/CV_Fundamentals|计算机视觉基础]] — CV 基础知识
+- [[04_计算机视觉/01_CV_Fundamentals/CV_Fundamentals|计算机视觉基础]] — CV 基础知识

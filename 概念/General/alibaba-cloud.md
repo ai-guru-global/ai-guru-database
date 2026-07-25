@@ -52,7 +52,7 @@ sources: []
 - [[概念/ack|ACK]]
 - [[概念/pai|PAI]]
 - [[概念/apsara-stack|Apsara Stack]]
-- [[架构基建/Cloud_Providers/Alibaba_PAI_Deep_Dive|阿里云 PAI 深度解析]]
+- [[12_架构基建/06_Cloud_Providers/Alibaba_PAI_Deep_Dive|阿里云 PAI 深度解析]]
 
 ---
 

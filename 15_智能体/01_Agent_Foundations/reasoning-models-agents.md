@@ -3,10 +3,10 @@ title: "推理模型 × Agent: 当慢思考遇上自主行动"
 category: -synthesis
 tags: ["reasoning", "agent", "o1", "deepseek-r1", "mcts", "planning", "synthesis"]
 sources:
-  - "大模型/Reasoning_Models/o1_Class_Reasoning_Models"
-  - "大模型/Reasoning_Models/DeepSeek_R1_Technical_Analysis"
-  - "智能体/Agent_Frameworks/LangChain_Agents_Deep_Dive"
-  - "智能体/Agent_Workflow/Workflow-in-nutshell"
+  - "05_大模型/09_Reasoning_Models/o1_Class_Reasoning_Models"
+  - "05_大模型/09_Reasoning_Models/DeepSeek_R1_Technical_Analysis"
+  - "15_智能体/02_Agent_Frameworks/LangChain_Agents_Deep_Dive"
+  - "15_智能体/03_Agent_Workflow/Workflow-in-nutshell"
 created: 2026-06-01
 updated: 2026-06-01
 summary: "推理模型（o1-class / DeepSeek R1）与 AI Agent 的结合正在重塑自主系统——从快速反应到深度规划，让 Agent 具备'先思考再行动'的能力。"
@@ -86,10 +86,10 @@ DeepSeek R1 的开源使得第二条路径尤其可行——开发者可以在�
 
 ## Related
 
-- [[大模型/Reasoning_Models/o1_Class_Reasoning_Models]]
-- [[大模型/Reasoning_Models/DeepSeek_R1_Technical_Analysis]]
-- [[智能体/Agent_Frameworks/LangChain_Agents_Deep_Dive]]
-- [[智能体/Agent_Workflow/Workflow-in-nutshell]]
+- [[05_大模型/09_Reasoning_Models/o1_Class_Reasoning_Models]]
+- [[05_大模型/09_Reasoning_Models/DeepSeek_R1_Technical_Analysis]]
+- [[15_智能体/02_Agent_Frameworks/LangChain_Agents_Deep_Dive]]
+- [[15_智能体/03_Agent_Workflow/Workflow-in-nutshell]]
 - [[治理/agents-reinforcement-learning]]
 
 ## 附录：核心概念速查

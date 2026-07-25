@@ -17,12 +17,12 @@ tags: [auto-index]
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[智能体/tests/validate_markdown.sh|validate markdown.sh]] | Markdown format validation script | CI/CD pipeline / knowledge base maintainers |
+| [[15_智能体/tests/validate_markdown.sh|validate markdown.sh]] | Markdown format validation script | CI/CD pipeline / knowledge base maintainers |
 
 ## Related
 
-- [[智能体/index|智能体首页]]
-- [[测试/index|测试]]
+- [[15_智能体/index|智能体首页]]
+- [[09_测试/index|测试]]
 
 ## tests 核心概念
 

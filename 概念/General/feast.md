@@ -8,7 +8,7 @@ relationships:
   - target: "概念/whylogs"
     type: related_to
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
 summary: "Tecton 开源的特征存储（Feature Store）平台，统一管理 ML 模型的特征定义、计算、存储和服务，支持离线批量和在线实时两种模式。"
 provenance:
   extracted: 0.55

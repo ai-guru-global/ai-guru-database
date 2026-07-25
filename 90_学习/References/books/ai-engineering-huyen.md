@@ -136,7 +136,7 @@ aliases:
 
 - **RAG 架构**:
   - 索引（Indexing）→ 检索（Retrieval）→ 生成（Generation）
-  - 详见 [[RAG系统/RAG_Systems]]
+  - 详见 [[14_RAG系统/RAG_Systems]]
 - **分块策略（Chunking）**:
   - 固定大小 vs 语义分块
   - 重叠与边界处理
@@ -164,7 +164,7 @@ aliases:
 
 #### Ch 8: AI 智能体（Agent）与工具调用
 
-- **Agent 基础**: 感知-思考-行动循环（详见 [[智能体/]]）
+- **Agent 基础**: 感知-思考-行动循环（详见 [[15_智能体/]]）
 - **工具调用（Function Calling）**: 让 LLM 使用外部工具
 - **规划与推理**: ReAct、Plan-and-Execute
 - **记忆系统**: 短期记忆 + 长期记忆
@@ -278,15 +278,15 @@ MRR (Mean Reciprocal Rank) = 1/第一个相关结果的排名
 
 | 本书章节 | 知识库主题 | 关联说明 |
 |----------|------------|----------|
-| Ch 1-2 基础模型 | [[大模型/LLM_Fundamentals]] | 模型原理与选型 |
-| Ch 3-4 推理优化 | [[部署推理/]] | 量化、推测解码、推理引擎 |
-| Ch 5 提示/上下文工程 | [[大模型/Prompt_Engineering/Prompt_Engineering]] | 提示技术 |
-| Ch 6 RAG | [[RAG系统/RAG_Systems]] | 检索增强生成 |
-| Ch 7 微调 | [[大模型/Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs]] | LoRA/PEFT |
-| Ch 8 Agent | [[智能体/]] | Agent 与工具调用 |
-| Ch 9 评估 | [[模型评估/]] | LLM 评估方法 |
-| Ch 10 安全 | [[伦理安全/]] | 护栏与对齐 |
-| Ch 11 架构 | [[架构基建/]] | 系统架构与生产化 |
+| Ch 1-2 基础模型 | [[05_大模型/LLM_Fundamentals]] | 模型原理与选型 |
+| Ch 3-4 推理优化 | [[10_部署推理/]] | 量化、推测解码、推理引擎 |
+| Ch 5 提示/上下文工程 | [[05_大模型/08_Prompt_Engineering/Prompt_Engineering]] | 提示技术 |
+| Ch 6 RAG | [[14_RAG系统/RAG_Systems]] | 检索增强生成 |
+| Ch 7 微调 | [[05_大模型/07_Fine_tuning_Techniques/GenAI_L18_Fine_Tuning_LLMs]] | LoRA/PEFT |
+| Ch 8 Agent | [[15_智能体/]] | Agent 与工具调用 |
+| Ch 9 评估 | [[08_模型评估/]] | LLM 评估方法 |
+| Ch 10 安全 | [[17_伦理安全/]] | 护栏与对齐 |
+| Ch 11 架构 | [[12_架构基建/]] | 系统架构与生产化 |
 
 ### 与相关书籍的关系
 
@@ -395,12 +395,12 @@ MRR (Mean Reciprocal Rank) = 1/第一个相关结果的排名
 
 ## 延伸阅读
 
-- [[学习/References/books/designing-ml-systems-huyen|Designing ML Systems]] — 前置阅读（系统设计思维）
-- [[学习/References/books/llm-engineers-handbook|LLM Engineer's Handbook]] — 配套（工程实现）
-- [[学习/References/books/llms-in-production|LLMs in Production]] — 配套（生产运维）
-- [[大模型/]] — 知识库大模型章节
-- [[RAG系统/RAG_Systems]] — RAG 系统专题
-- [[智能体/]] — Agent 专题
-- [[学习/guides/ai_engineering_roadmap_2026|AI 工程路线图 2026]]
+- [[90_学习/References/books/designing-ml-systems-huyen|Designing ML Systems]] — 前置阅读（系统设计思维）
+- [[90_学习/References/books/llm-engineers-handbook|LLM Engineer's Handbook]] — 配套（工程实现）
+- [[90_学习/References/books/llms-in-production|LLMs in Production]] — 配套（生产运维）
+- [[05_大模型/]] — 知识库大模型章节
+- [[14_RAG系统/RAG_Systems]] — RAG 系统专题
+- [[15_智能体/]] — Agent 专题
+- [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图 2026]]
 
-> **关联**: → [[学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]] | [[大模型/]] | [[RAG系统/]] | [[智能体/]] | [[部署推理/]]
+> **关联**: → [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]] | [[05_大模型/]] | [[14_RAG系统/]] | [[15_智能体/]] | [[10_部署推理/]]

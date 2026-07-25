@@ -504,12 +504,12 @@ lora_config = LoraConfig(
 ### 前置知识
 - [Transformer 革命](../Transformer_Revolution/Transformer_Revolution.md): 理解模型架构
 - [大语言模型架构](../LLM_Architectures/LLM_Architectures.md): GPT/LLaMA 原理
-- [优化算法](深度学习/Optimization/Optimization.md): Adam, SGD
+- [优化算法](03_深度学习/03_Optimization/Optimization.md): Adam, SGD
 
 ### 后续推荐
 - [提示工程](../Prompt_Engineering/Prompt_Engineering.md): 微调的替代方案
-- [模型评估](模型评估/Evaluation_Fundamentals/Model_Evaluation.md): 如何评估微调效果
-- [推理部署](部署推理/Deployment_Fundamentals/Deployment_Inference.md): INT8/INT4 量化与部署
+- [模型评估](08_模型评估/01_Evaluation_Fundamentals/Model_Evaluation.md): 如何评估微调效果
+- [推理部署](10_部署推理/01_Deployment_Fundamentals/Deployment_Inference.md): INT8/INT4 量化与部署
 
 ---
 
@@ -610,10 +610,10 @@ lora_config = LoraConfig(
 
 ## 相关链接
 
-- [[大模型/Fine_tuning_Techniques/Fine_tuning_Techniques_for_dummy|微调技术 (小白版)]] — 本篇的零基础版本
-- [[大模型/Fine_tuning_Techniques/README|微调技术概览]] — 微调技术主题导览
-- [[大模型/Fine_tuning_Techniques/LoRA_QLoRA_SFT_RLHF_DPO_in_Detail|LoRA/QLoRA/SFT/RLHF/DPO 详解]] — 主流微调方法详解
-- [[大模型/Fine_tuning_Techniques/PEFT_2026|PEFT 2026 完全指南]] — 参数高效微调最新进展
-- [[大模型/Fine_tuning_Techniques/Fine_tuning_Strategies|微调策略]] — 微调策略选择指南
+- [[05_大模型/07_Fine_tuning_Techniques/Fine_tuning_Techniques_for_dummy|微调技术 (小白版)]] — 本篇的零基础版本
+- [[05_大模型/07_Fine_tuning_Techniques/README|微调技术概览]] — 微调技术主题导览
+- [[05_大模型/07_Fine_tuning_Techniques/LoRA_QLoRA_SFT_RLHF_DPO_in_Detail|LoRA/QLoRA/SFT/RLHF/DPO 详解]] — 主流微调方法详解
+- [[05_大模型/07_Fine_tuning_Techniques/PEFT_2026|PEFT 2026 完全指南]] — 参数高效微调最新进展
+- [[05_大模型/07_Fine_tuning_Techniques/Fine_tuning_Strategies|微调策略]] — 微调策略选择指南
 - [[概念/Training/fine-tuning-techniques|微调技术]] — 微调技术概念卡片
-- [[大模型/Fine_tuning_Techniques/Axolotl_Deep_Dive|Axolotl 深度解析]] — 主流微调框架
+- [[05_大模型/07_Fine_tuning_Techniques/Axolotl_Deep_Dive|Axolotl 深度解析]] — 主流微调框架

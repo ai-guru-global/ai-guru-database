@@ -12,7 +12,7 @@ relationships:
     type: related_to
 sources:
   - 05_computer-vision_Vision/Multimodal_Vision/Multimodal_Vision.md
-  - 计算机视觉/Multimodal_Vision/CLIP_deep-reinforcement-learning_Dive.md
+  - 04_计算机视觉/08_Multimodal_Vision/CLIP_deep-reinforcement-learning_Dive.md
 summary: "此页面已合并至主卡片。"
 provenance:
   extracted: '0.80'

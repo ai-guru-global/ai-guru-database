@@ -45,7 +45,7 @@ sources:
 |------|---|
 | 包含核心概念 | 10 个 |
 | 预计学习时间 | 10-15 小时 |
-| 前置依赖 | [[学习/concepts/stage1_foundation|Stage 1: 基础概念]] |
+| 前置依赖 | [[90_学习/concepts/stage1_foundation|Stage 1: 基础概念]] |
 | 适合人群 | 想深入理解 AI 原理的开发者/研究者 |
 
 ---
@@ -115,7 +115,7 @@ graph TD
 - **一句话定义**：专门处理网格化数据（如图像）的神经网络——通过"卷积核"扫描图像提取局部特征。
 - **为什么重要**：CNN 是计算机视觉的基石，让 AI 第一次在图像识别上超越人类。它让图像识别从"手工设计特征"进化到"自动学习特征"。
 - **核心机制**：卷积核（一个小矩阵）在图像上滑动，每滑动一次做一次"局部特征提取"。多个卷积层叠加，从浅层的"边缘/纹理"到深层的"物体部件/整体"。
-- **典型应用**：图像分类（ResNet，详见 [[学习/References/Papers/ResNet_Reading]]）、目标检测（YOLO）、图像分割（U-Net）
+- **典型应用**：图像分类（ResNet，详见 [[90_学习/References/Papers/ResNet_Reading]]）、目标检测（YOLO）、图像分割（U-Net）
 - **通俗类比**：CNN 像用放大镜在不同位置观察一幅画——每次只看一小块，先找线条，再找形状，最后理解画面内容。
 
 ### 4. RNN / LSTM — 序列模型
@@ -137,7 +137,7 @@ graph TD
 ### 6. Transformer 架构
 
 - **一句话定义**：完全基于 Attention 机制的序列处理架构——丢弃 RNN，用 Self-Attention + 前馈网络处理序列，训练速度大幅提升。
-- **为什么重要**：Transformer 是 2017 年 Google 提出的（详见 [[学习/References/Papers/Attention_Is_All_You_Need_Reading]]），它是 GPT、BERT、ChatGPT、Sora 等所有大模型的底层架构。可以说没有 Transformer，就没有 2020 年后的大模型爆发。
+- **为什么重要**：Transformer 是 2017 年 Google 提出的（详见 [[90_学习/References/Papers/Attention_Is_All_You_Need_Reading]]），它是 GPT、BERT、ChatGPT、Sora 等所有大模型的底层架构。可以说没有 Transformer，就没有 2020 年后的大模型爆发。
 - **三大关键创新**：
   1. **Self-Attention**：序列内任意两个位置可以直接交互（无 RNN 的递归约束）
   2. **多头注意力 (Multi-Head Attention)**：多个 Attention 并行，关注不同类型的关系
@@ -252,14 +252,14 @@ Attention 是本阶段最核心也最常考的概念。完整推导：
 
 | 类型 | 资源 | 说明 |
 |------|------|------|
-| 书籍 | [[学习/References/books/hands-on-ml-geron\|Hands-On ML]] Part 2 | DL 全栈实战 |
-| 书籍 | [[学习/References/books/hands-on-llms-alammar\|Hands-On LLMs]] | 图解 LLM 内部机制 |
-| 书籍 | [[学习/References/books/nlp-with-transformers\|NLP with Transformers]] | HF 生态 Transformer 应用 |
-| 书籍 | [[学习/References/books/build-llm-from-scratch-raschka\|Build LLM From Scratch]] | 从零实现 GPT |
-| 论文 | [[学习/References/Papers/Attention_Is_All_You_Need_Reading\|Attention Is All You Need]] | Transformer 原始论文 |
-| 论文 | [[学习/References/Papers/ResNet_Reading\|ResNet]] | 残差连接与深度网络 |
-| 论文 | [[学习/References/Papers/BERT_Reading\|BERT]] | 编码器代表 |
-| 论文 | [[学习/References/Papers/GPT3_Reading\|GPT-3]] | 解码器与规模法则 |
+| 书籍 | [[90_学习/References/books/hands-on-ml-geron\|Hands-On ML]] Part 2 | DL 全栈实战 |
+| 书籍 | [[90_学习/References/books/hands-on-llms-alammar\|Hands-On LLMs]] | 图解 LLM 内部机制 |
+| 书籍 | [[90_学习/References/books/nlp-with-transformers\|NLP with Transformers]] | HF 生态 Transformer 应用 |
+| 书籍 | [[90_学习/References/books/build-llm-from-scratch-raschka\|Build LLM From Scratch]] | 从零实现 GPT |
+| 论文 | [[90_学习/References/Papers/Attention_Is_All_You_Need_Reading\|Attention Is All You Need]] | Transformer 原始论文 |
+| 论文 | [[90_学习/References/Papers/ResNet_Reading\|ResNet]] | 残差连接与深度网络 |
+| 论文 | [[90_学习/References/Papers/BERT_Reading\|BERT]] | 编码器代表 |
+| 论文 | [[90_学习/References/Papers/GPT3_Reading\|GPT-3]] | 解码器与规模法则 |
 
 ## 学完本层的标志
 
@@ -275,28 +275,28 @@ Attention 是本阶段最核心也最常考的概念。完整推导：
 ## 下一步
 
 完成 Stage 2 后：
-- **想做工程落地** → [[学习/concepts/stage3_engineering|Stage 3: 工程实践]]
-- **想深入 LLM / Agent** → [[学习/pathways/llm-engineer|LLM 工程师路径]]
-- **想读论文做研究** → [[学习/pathways/ai-researcher|AI 研究者路径]]
-- **回看全景** → [[学习/concepts/index|概念分阶索引]]
+- **想做工程落地** → [[90_学习/concepts/stage3_engineering|Stage 3: 工程实践]]
+- **想深入 LLM / Agent** → [[90_学习/pathways/llm-engineer|LLM 工程师路径]]
+- **想读论文做研究** → [[90_学习/pathways/ai-researcher|AI 研究者路径]]
+- **回看全景** → [[90_学习/concepts/index|概念分阶索引]]
 
 ## Related
 
-- [[学习/concepts/index|概念分阶索引]]
-- [[学习/concepts/stage1_foundation|Stage 1: 基础]]
-- [[学习/concepts/stage3_engineering|Stage 3: 工程]]
-- [[学习/pathways/index|学习路径]]
-- [[大模型/LLM_Fundamentals]] — LLM 基础
-- [[深度学习/]] — 深度学习章节
-- [[计算机视觉/]] — CV 章节
+- [[90_学习/concepts/index|概念分阶索引]]
+- [[90_学习/concepts/stage1_foundation|Stage 1: 基础]]
+- [[90_学习/concepts/stage3_engineering|Stage 3: 工程]]
+- [[90_学习/pathways/index|学习路径]]
+- [[05_大模型/LLM_Fundamentals]] — LLM 基础
+- [[03_深度学习/]] — 深度学习章节
+- [[04_计算机视觉/]] — CV 章节
 
-> **关联**: → [[学习/concepts/index|概念分阶]] | [[学习/concepts/stage3_engineering|Stage 3 工程]] | [[大模型/LLM_Fundamentals]] | [[深度学习/]] | [[学习/References/Papers/]]
+> **关联**: → [[90_学习/concepts/index|概念分阶]] | [[90_学习/concepts/stage3_engineering|Stage 3 工程]] | [[05_大模型/LLM_Fundamentals]] | [[03_深度学习/]] | [[90_学习/References/Papers/]]
 
 ## 相关链接
 
-- [[学习/concepts/index|学习概念索引]] — 学习阶段主题导览
-- [[学习/concepts/stage1_foundation|Stage 1: 基础概念]] — 前置阶段
-- [[学习/concepts/stage3_engineering|Stage 3: 工程实践]] — 下一阶段
-- [[大模型/Transformer_Revolution/Transformer_Revolution|Transformer 革命]] — 核心技术代表
-- [[深度学习/Neural_Network_Core/Neural_Network_Core|神经网络核心]] — 核心技术基础
-- [[学习/index|学习首页]] — 学习路径总览
+- [[90_学习/concepts/index|学习概念索引]] — 学习阶段主题导览
+- [[90_学习/concepts/stage1_foundation|Stage 1: 基础概念]] — 前置阶段
+- [[90_学习/concepts/stage3_engineering|Stage 3: 工程实践]] — 下一阶段
+- [[05_大模型/04_Transformer_Revolution/Transformer_Revolution|Transformer 革命]] — 核心技术代表
+- [[03_深度学习/02_Neural_Network_Core/Neural_Network_Core|神经网络核心]] — 核心技术基础
+- [[90_学习/index|学习首页]] — 学习路径总览

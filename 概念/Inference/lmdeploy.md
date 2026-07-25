@@ -12,7 +12,7 @@ relationships:
   - target: "概念/Inference/continuous-batching"
     type: implements
 sources:
-  - 部署推理/Inference_Engines/LMDeploy_Deep_Dive.md
+  - 10_部署推理/02_Inference_Engines/LMDeploy_Deep_Dive.md
   - "https://github.com/InternLM/lmdeploy"
 summary: "LMDeploy 是 OpenMMLab 开源的国产 LLM 推理部署工具，提供 TurboMind（C++/CUDA）高性能引擎与 PyTorch 双后端，支持 W4A16/W8A8 量化、多模态 VLM、国产芯片适配和 OpenAI 兼容 API。2026 年在中文模型部署和国产算力场景占据主导地位。"
 provenance:
@@ -178,7 +178,7 @@ print(response[0].text)
 
 ## Related
 
-- [[部署推理/Inference_Engines/LMDeploy_Deep_Dive]] — LMDeploy 深度解析
+- [[10_部署推理/02_Inference_Engines/LMDeploy_Deep_Dive]] — LMDeploy 深度解析
 - [[概念/Inference/model-serving]] — 模型服务
 - [[概念/Inference/vllm]] — vLLM 推理引擎
 - [[概念/Inference/quantization]] — 量化

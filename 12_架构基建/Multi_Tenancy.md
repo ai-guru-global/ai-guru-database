@@ -133,16 +133,16 @@ BILLING_MODELS = {
 
 ## 5. 交叉引用
 
-- [[架构基建/|架构基建]]
-- [[运维/Cost_Operations/|成本运营]]
-- [[部署推理/Serving_Architecture/|服务架构]]
+- [[12_架构基建/|架构基建]]
+- [[13_运维/Cost_Operations/|成本运营]]
+- [[10_部署推理/Serving_Architecture/|服务架构]]
 - [[概念/General/single-tenant-architecture|单租户架构]]
 
 ## 架构核心组件对比
 
 | 组件层 | 功能 | 关键技术 | 选型考量 |
 |--------|------|----------|----------|
-| 计算层 | 模型训练/推理 | GPU/TPU/NPU集群 | 算力需求+成本 |
+| 计算层 | 07_模型训练/推理 | GPU/TPU/NPU集群 | 算力需求+成本 |
 | 存储层 | 数据/模型/检查点 | 分布式存储/对象存储 | 容量+IOPS+成本 |
 | 网络层 | 节点间通信 | RDMA/RoCE/InfiniBand | 带宽+延迟 |
 | 调度层 | 资源编排 | K8s/Slurm/Ray | 弹性+效率 |

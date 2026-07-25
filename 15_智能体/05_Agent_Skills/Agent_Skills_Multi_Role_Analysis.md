@@ -418,7 +418,7 @@ flowchart LR
 | 维度 | 关注内容 | 衡量指标 | 行业基准 |
 |------|---------|---------|---------|
 | **市场规模** | 451+ Skills, 30+ Agent 产品 | 生态增长率 | 月均新增 ~20 Skills |
-| **用户画像** | 开发者/运维/分析师/设计师 | 按角色分布 | 开发者占 70%+ |
+| **用户画像** | 开发者/13_运维/分析师/设计师 | 按角色分布 | 开发者占 70%+ |
 | **激活漏斗** | 发现→安装→触发→成功 | 各步骤转化率 | 触发成功率目标 >80% |
 | **留存分析** | 日活 Skill 使用频率 | DAU/MAU 比 | >30% 为健康 |
 | **竞品分析** | MCP vs Agent Skills vs 自建 | 功能覆盖/开发效率 | — |
@@ -739,7 +739,7 @@ flowchart TB
 
 ## Related
 
-- [[智能体/Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
-- [[智能体/Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
-- [[智能体/Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
-- [[智能体/Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)
+- [[15_智能体/07_Agent_Evaluation/Agent_Harness_Complete_2026]] — Agent Harness 完整指南：生产级 Agent 评估框架 (共享: agent-framework, ai-agents, langgraph, production)
+- [[15_智能体/07_Agent_Evaluation/Agent_Red_Teaming_2026]] — Agent Red Teaming Framework 2026 (共享: agent-framework, ai-agents, langgraph, production)
+- [[15_智能体/07_Agent_Evaluation/Assessment/Evaluation_Workflow]] — Evaluation Workflow (共享: agent-framework, ai-agents, langgraph, production)
+- [[15_智能体/07_Agent_Evaluation/Assessment/Production_Assessment]] — Production Assessment (共享: agent-framework, ai-agents, langgraph, production)

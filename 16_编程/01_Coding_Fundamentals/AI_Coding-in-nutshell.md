@@ -533,9 +533,9 @@ flowchart TD
 | 提示词模板库 | [Vibe_Coding_Prompt_Templates.md](.././Practice/Vibe_Coding_Prompt_Templates.md) | STAR 框架、8 大场景模板 |
 | Agentic Coding 方法论 | [Agentic_Coding_Methodology.md](.././Methodology/Agentic_Coding_Methodology.md) | 多 Agent 协作架构与编排 |
 | 生产实践 | [Vibe_Coding_Production_Practices.md](.././Methodology/Vibe_Coding_Production_Practices.md) | 安全工程、质量监控、技术债管理 |
-| Prompt Engineering 速览 | [大模型/Prompt_Engineering/Prompt-Engineering-in-nutshell.md](大模型/Prompt_Engineering/Prompt-Engineering-in-nutshell.md) | 通用提示工程方法论 |
-| AI Agent 速览 | [../强化学习/AI_Agents/Agent-in-nutshell.md](../../智能体/Agent_Foundations/Agent-in-nutshell.md) | Agent 架构与能力概述 |
-| RAG 系统速览 | [../../RAG系统/RAG_Fundamentals/RAG-in-nutshell.md](../../RAG系统/RAG_Fundamentals/RAG-in-nutshell.md) | 检索增强生成，AI 编程中的文档检索基础 |
+| Prompt Engineering 速览 | [05_大模型/08_Prompt_Engineering/Prompt-Engineering-in-nutshell.md](05_大模型/08_Prompt_Engineering/Prompt-Engineering-in-nutshell.md) | 通用提示工程方法论 |
+| AI Agent 速览 | [../06_强化学习/AI_Agents/Agent-in-nutshell.md](../../15_智能体/01_Agent_Foundations/Agent-in-nutshell.md) | Agent 架构与能力概述 |
+| RAG 系统速览 | [../../14_RAG系统/01_RAG_Fundamentals/RAG-in-nutshell.md](../../14_RAG系统/01_RAG_Fundamentals/RAG-in-nutshell.md) | 检索增强生成，AI 编程中的文档检索基础 |
 | Hermes Agent 指南 | [./Tools/Hermes_Agent_2026.md](.././Tools/Hermes_Agent_2026.md) | 17+ Provider 全平台开源 Agent |
 | Qoder 使用指南 | [./Tools/Qoder_Guide.md](.././Tools/Qoder_Guide.md) | Qoder / QoderWork / QoderWake 详解 |
 
@@ -600,9 +600,9 @@ flowchart TD
 
 ## 相关链接
 
-- [[编程/Coding_Fundamentals/AI_Coding_2026_Guide|AI 编程 2026 指南]] — 详细指南
-- [[编程/Coding_Fundamentals/AI_Coding_for_dummy|AI 编程 (小白版)]] — 零基础版本
-- [[编程/index|编程索引]] — AI 编程主题导览
-- [[编程/Methodology/Vibe_Coding_Methodology|Vibe Coding 方法论]] — AI 编程方法论
-- [[智能体/Agentic_Coding_Tools/Agentic_Coding_Tools_Overview|Agentic Coding 工具概览]] — 编程工具全景
-- [[编程/Tools/AI_Coding_Assistants_2026|AI 编程助手 2026]] — 编程助手对比
+- [[16_编程/01_Coding_Fundamentals/AI_Coding_2026_Guide|AI 编程 2026 指南]] — 详细指南
+- [[16_编程/01_Coding_Fundamentals/AI_Coding_for_dummy|AI 编程 (小白版)]] — 零基础版本
+- [[16_编程/index|编程索引]] — AI 编程主题导览
+- [[16_编程/03_Methodology/Vibe_Coding_Methodology|Vibe Coding 方法论]] — AI 编程方法论
+- [[15_智能体/08_Agentic_Coding_Tools/Agentic_Coding_Tools_Overview|Agentic Coding 工具概览]] — 编程工具全景
+- [[16_编程/05_Tools/AI_Coding_Assistants_2026|AI 编程助手 2026]] — 编程助手对比

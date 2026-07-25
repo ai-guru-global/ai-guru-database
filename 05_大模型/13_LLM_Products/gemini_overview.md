@@ -300,9 +300,9 @@ Android:
 
 ## 相关阅读
 
-- [[大模型/Global_LLM_Ecosystem/Google_Gemini_Deep_Dive]] — Google Gemini 深度解析
-- [[大模型/LLM_Products/claude_overview]] — Claude 概览
-- [[大模型/LLM_Products/chatgpt_overview]] — ChatGPT 概览
-- [[大模型/Multimodal_Models/README]] — 多模态模型
-- [[大模型/LLM_Architectures/Long_Context_Models_2026]] — 长上下文模型
-- [[智能体/Agent_Frameworks/README]] — Agent 框架
+- [[05_大模型/14_Global_LLM_Ecosystem/Google_Gemini_Deep_Dive]] — Google Gemini 深度解析
+- [[05_大模型/13_LLM_Products/claude_overview]] — Claude 概览
+- [[05_大模型/13_LLM_Products/chatgpt_overview]] — ChatGPT 概览
+- [[05_大模型/10_Multimodal_Models/README]] — 多模态模型
+- [[05_大模型/05_LLM_Architectures/Long_Context_Models_2026]] — 长上下文模型
+- [[15_智能体/02_Agent_Frameworks/README]] — Agent 框架

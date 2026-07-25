@@ -41,7 +41,7 @@ aliases:
 - 想系统学习 NLP 的工程师
 - 有 Python/ML 基础想进入 NLP 领域的开发者
 
-> **关联**: -> [[大模型/README|NLP/LLM]] | [[学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[05_大模型/README|NLP/LLM]] | [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
 
 
 ## 核心知识框架

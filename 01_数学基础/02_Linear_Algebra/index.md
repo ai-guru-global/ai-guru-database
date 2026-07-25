@@ -15,13 +15,13 @@ tags: [auto-index]
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[数学基础/Linear_Algebra/Linear_Algebra|Linear Algebra]] | Linear algebra knowledge system: matrix operations, decomposition and gradient geometry | ML engineers / DL researchers / students |
-| [[数学基础/Linear_Algebra/Linear_Algebra_for_dummy|Linear Algebra for dummy]] | Linear algebra beginner guide: core concepts for deep learning | beginners / DL learners |
+| [[01_数学基础/02_Linear_Algebra/Linear_Algebra|Linear Algebra]] | Linear algebra knowledge system: matrix operations, decomposition and gradient geometry | ML engineers / DL researchers / students |
+| [[01_数学基础/02_Linear_Algebra/Linear_Algebra_for_dummy|Linear Algebra for dummy]] | Linear algebra beginner guide: core concepts for deep learning | beginners / DL learners |
 
 ## Related
 
-- [[数学基础/index|数学基础首页]]
-- [[深度学习/index|深度学习]]
+- [[01_数学基础/index|数学基础首页]]
+- [[03_深度学习/index|深度学习]]
 
 ## 进阶知识拓展
 
@@ -59,9 +59,9 @@ tags: [auto-index]
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

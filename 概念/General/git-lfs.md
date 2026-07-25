@@ -10,7 +10,7 @@ relationships:
   - target: "概念/huggingface-cli"
     type: related_to
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
 summary: "Git LFS (Large File Storage) 是 Git 的大文件扩展，用指针替代大文件存储。AI Stack 模型下载工具链中用于管理模型权重等大文件的版本控制。"
 provenance:
   extracted: 0.25
@@ -160,7 +160,7 @@ AI Stack 模型获取方式
 - [[概念/huggingface]] — Hugging Face 平台
 - [[概念/huggingface-cli]] — HuggingFace CLI
 - [[概念/modelscope]] — ModelScope 魔搭
-- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
 
 ---
 

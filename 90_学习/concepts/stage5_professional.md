@@ -46,7 +46,7 @@ sources:
 |------|---|
 | 包含核心概念 | 8 个 |
 | 预计学习时间 | 持续（伴随职业成长） |
-| 前置依赖 | [[学习/concepts/stage3_engineering|Stage 3: 工程实践]] 及以上 |
+| 前置依赖 | [[90_学习/concepts/stage3_engineering|Stage 3: 工程实践]] 及以上 |
 | 适合人群 | AI 工程师进阶为 Tech Lead / 架构师 / 技术管理者 |
 
 ---
@@ -96,7 +96,7 @@ graph TD
 | 产品经理 | 功能可行性、ROI、排期 | 技术评估、风险清单、MVP 范围 |
 | 业务方 | 效果、成本、上线时间 | 业务指标对齐、成本模型 |
 | 设计师 | 交互边界、异常体验 | 失败模式、延迟预期、降级方案 |
-| 运维/SRE | 稳定性、可观测性 | 监控、告警、容量规划 |
+| 13_运维/SRE | 稳定性、可观测性 | 监控、告警、容量规划 |
 | 法务/合规 | 合规、隐私、风险 | 数据流向、模型行为说明 |
 
 - **实践要点**: 建立"AI 项目画布"——用一页纸讲清楚问题定义、成功指标、数据来源、模型方案、风险与降级。
@@ -202,13 +202,13 @@ graph TD
 
 | 类型 | 资源 | 说明 |
 |------|------|------|
-| 书籍 | [[学习/References/books/ai-engineering-huyen\|AI Engineering]] Ch 11 | 团队协作与系统架构 |
-| 书籍 | [[学习/References/books/designing-ml-systems-huyen\|Designing ML Systems]] | ML 系统全生命周期 |
-| 书籍 | [[学习/References/books/llms-in-production\|LLMs in Production]] | 生产化与团队实践 |
-| 指南 | [[学习/guides/ai_engineering_roadmap_2026\|AI 工程路线图 2026]] | 技术战略参考 |
-| 指南 | [[学习/guides/milestones\|milestones]] | 职业里程碑自测 |
-| 文章 | [[学习/References/Articles/chip-huyen-agents-article\|Chip Huyen Agents]] | 行业视角 |
-| 实践 | [[学习/References/Projects/500-ai-projects\|500 AI Projects]] | 项目经验积累 |
+| 书籍 | [[90_学习/References/books/ai-engineering-huyen\|AI Engineering]] Ch 11 | 团队协作与系统架构 |
+| 书籍 | [[90_学习/References/books/designing-ml-systems-huyen\|Designing ML Systems]] | ML 系统全生命周期 |
+| 书籍 | [[90_学习/References/books/llms-in-production\|LLMs in Production]] | 生产化与团队实践 |
+| 指南 | [[90_学习/guides/ai_engineering_roadmap_2026\|AI 工程路线图 2026]] | 技术战略参考 |
+| 指南 | [[90_学习/guides/milestones\|milestones]] | 职业里程碑自测 |
+| 文章 | [[90_学习/References/Articles/chip-huyen-agents-article\|Chip Huyen Agents]] | 行业视角 |
+| 实践 | [[90_学习/References/Projects/500-ai-projects\|500 AI Projects]] | 项目经验积累 |
 
 ## 技术影响力建设路径
 
@@ -297,20 +297,20 @@ Proposed / Accepted / Deprecated / Superseded
 ## 下一步
 
 完成 Stage 5 是一个持续过程，没有"终点"。建议：
-- **持续深化技术**: 回顾 [[学习/concepts/stage4_frontier|Stage 4: 前沿]] 跟踪趋势
-- **指导他人**: 成为 [[学习/pathways/index|学习路径]] 的导师
-- **回看全景**: [[学习/concepts/index|概念分阶索引]]
-- **关注治理**: 深入 [[伦理安全/]] 的合规与对齐内容
+- **持续深化技术**: 回顾 [[90_学习/concepts/stage4_frontier|Stage 4: 前沿]] 跟踪趋势
+- **指导他人**: 成为 [[90_学习/pathways/index|学习路径]] 的导师
+- **回看全景**: [[90_学习/concepts/index|概念分阶索引]]
+- **关注治理**: 深入 [[17_伦理安全/]] 的合规与对齐内容
 
 ## Related
 
-- [[学习/concepts/index|概念分阶索引]]
-- [[学习/concepts/stage3_engineering|Stage 3: 工程]]
-- [[学习/concepts/stage4_frontier|Stage 4: 前沿]]
-- [[学习/pathways/index|学习路径]]
-- [[学习/guides/ai_engineering_roadmap_2026|AI 工程路线图 2026]]
-- [[架构基建/]] — 架构与系统设计
-- [[伦理安全/]] — AI 治理与合规
-- [[模型运维/]] — MLOps 与团队实践
+- [[90_学习/concepts/index|概念分阶索引]]
+- [[90_学习/concepts/stage3_engineering|Stage 3: 工程]]
+- [[90_学习/concepts/stage4_frontier|Stage 4: 前沿]]
+- [[90_学习/pathways/index|学习路径]]
+- [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图 2026]]
+- [[12_架构基建/]] — 架构与系统设计
+- [[17_伦理安全/]] — AI 治理与合规
+- [[11_模型运维/]] — MLOps 与团队实践
 
-> **关联**: → [[学习/concepts/index|概念分阶]] | [[学习/concepts/stage4_frontier|Stage 4 前沿]] | [[学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]] | [[架构基建/]] | [[伦理安全/]] | [[模型运维/]]
+> **关联**: → [[90_学习/concepts/index|概念分阶]] | [[90_学习/concepts/stage4_frontier|Stage 4 前沿]] | [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]] | [[12_架构基建/]] | [[17_伦理安全/]] | [[11_模型运维/]]

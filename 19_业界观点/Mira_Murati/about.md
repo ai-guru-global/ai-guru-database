@@ -144,12 +144,12 @@ Murati 的核心立场：
 
 ## 交叉引用 (Cross-References)
 
-- [Talks 主题合成 2026](业界观点/Talks_Synthesis/Talks_Synthesis_2026.md) — 查看 Murati 在各主题中的立场
-- [[业界观点/Ilya_Sutskever/about]] — Sutskever 与 Murati 同为 OpenAI 核心领导层
-- [[业界观点/Mustafa_Suleyman/about]] — Suleyman (Microsoft AI) 与 Murati 在 AI 产品化领域有共鸣
-- [[业界观点/Sundar_Pichai/about]] — Pichai (Google) 与 Murati 同样关注渐进式 AI 部署
-- [AI 伦理与社会](入门/Ethics_and_Future/AI_Ethics_Society.md) — AI 安全评估与渐进式发布
-- [大模型基础](../../大模型/README.md) — GPT 系列、ChatGPT 与 DALL·E
+- [Talks 主题合成 2026](19_业界观点/Talks_Synthesis/Talks_Synthesis_2026.md) — 查看 Murati 在各主题中的立场
+- [[19_业界观点/Ilya_Sutskever/about]] — Sutskever 与 Murati 同为 OpenAI 核心领导层
+- [[19_业界观点/Mustafa_Suleyman/about]] — Suleyman (Microsoft AI) 与 Murati 在 AI 产品化领域有共鸣
+- [[19_业界观点/Sundar_Pichai/about]] — Pichai (Google) 与 Murati 同样关注渐进式 AI 部署
+- [AI 伦理与社会](00_入门/04_Ethics_and_Future/AI_Ethics_Society.md) — AI 安全评估与渐进式发布
+- [大模型基础](../../05_大模型/README.md) — GPT 系列、ChatGPT 与 DALL·E
 
 ---
 
@@ -166,10 +166,10 @@ Murati 的核心立场：
 
 ## Related
 
-- [[业界观点/Andrej_Karpathy/about]] — Andrej Karpathy 简介 (Andrej Karpathy) (共享: insights, leaders, speeches, talks)
-- [[业界观点/Andrew_Ng/about]] — Andrew Ng 简介 (Andrew Ng) (共享: insights, leaders, speeches, talks)
-- [[业界观点/Andrew_Ng/sayings]] — Andrew Ng 关于 AI 的观点与格言 (共享: insights, leaders, speeches, talks)
-- [[业界观点/Bill_Gates/about]] — Bill Gates 简介 (Bill Gates) (共享: insights, leaders, speeches, talks)
+- [[19_业界观点/Andrej_Karpathy/about]] — Andrej Karpathy 简介 (Andrej Karpathy) (共享: insights, leaders, speeches, talks)
+- [[19_业界观点/Andrew_Ng/about]] — Andrew Ng 简介 (Andrew Ng) (共享: insights, leaders, speeches, talks)
+- [[19_业界观点/Andrew_Ng/sayings]] — Andrew Ng 关于 AI 的观点与格言 (共享: insights, leaders, speeches, talks)
+- [[19_业界观点/Bill_Gates/about]] — Bill Gates 简介 (Bill Gates) (共享: insights, leaders, speeches, talks)
 
 ## 附录：人物影响力评估
 

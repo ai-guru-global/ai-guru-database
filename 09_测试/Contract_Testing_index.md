@@ -15,12 +15,12 @@ tags: [auto-index]
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[测试/Contract_Testing|Contract Testing]] | Contract testing practice: Pact, schema validation and API compatibility checking | backend engineers / QA engineers |
+| [[09_测试/Contract_Testing|Contract Testing]] | Contract testing practice: Pact, schema validation and API compatibility checking | backend engineers / QA engineers |
 
 ## Related
 
-- [[测试/index|测试首页]]
-- [[测试/Testing_Fundamentals/index|Testing Fundamentals]]
+- [[09_测试/index|测试首页]]
+- [[09_测试/01_Testing_Fundamentals/index|Testing Fundamentals]]
 
 ## 核心概念
 

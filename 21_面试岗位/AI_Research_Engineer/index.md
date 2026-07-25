@@ -15,13 +15,13 @@ AI 研究工程师 — 介于研究与工程之间，兼顾算法创新与系统
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[面试岗位/AI_Research_Engineer/AI_Research_Engineer|AI Research Engineer]] | 岗位面试全攻略：分布式训练、实验管理与算法工程化最佳实践 | research engineer candidates / ML infra engineers |
+| [[21_面试岗位/AI_Research_Engineer/AI_Research_Engineer|AI Research Engineer]] | 岗位面试全攻略：分布式训练、实验管理与算法工程化最佳实践 | research engineer candidates / ML infra engineers |
 
 ## Related
 
-- [[面试岗位/AI_Research_Scientist/index|AI Research Scientist]]
-- [[面试岗位/MLOps_Engineer/index|MLOps Engineer]]
-- [[模型运维/index|模型运维]]
+- [[21_面试岗位/AI_Research_Scientist/index|AI Research Scientist]]
+- [[21_面试岗位/MLOps_Engineer/index|MLOps Engineer]]
+- [[11_模型运维/index|模型运维]]
 
 ## 岗位核心能力模型
 
@@ -38,7 +38,7 @@ AI 研究工程师 — 介于研究与工程之间，兼顾算法创新与系统
 | 轮次 | 内容 | 时长 | 考察重点 |
 |------|------|------|----------|
 | 简历筛选 | HR初筛 | - | 背景匹配度 |
-| 技术笔试 | 编程/选择题 | 60-90min | 基础功底 |
+| 技术笔试 | 16_编程/选择题 | 60-90min | 基础功底 |
 | 技术一面 | 算法+项目 | 45-60min | 编码能力+项目深度 |
 | 技术二面 | 系统设计+深度 | 45-60min | 架构思维+技术广度 |
 | 技术三面 | 综合+前沿 | 30-45min | 技术视野+潜力 |

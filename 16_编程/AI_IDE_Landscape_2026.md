@@ -283,9 +283,9 @@ BEST_PRACTICES = {
 
 ## 6. 交叉引用
 
-- [[编程/Tools/|编程工具]]
-- [[编程/Tool_Comparison/|工具对比]]
-- [[编程/Code_Review_AI/|AI 代码审查]]
-- [[编程/Testing_with_AI/|AI 辅助测试]]
-- [[智能体/|智能体系统]]
-- [[大模型/LLM_Products/|LLM 产品]]
+- [[16_编程/05_Tools/|编程工具]]
+- [[16_编程/06_Tool_Comparison/|工具对比]]
+- [[16_编程/Code_Review_AI/|AI 代码审查]]
+- [[16_编程/Testing_with_AI/|AI 辅助测试]]
+- [[15_智能体/|智能体系统]]
+- [[05_大模型/13_LLM_Products/|LLM 产品]]

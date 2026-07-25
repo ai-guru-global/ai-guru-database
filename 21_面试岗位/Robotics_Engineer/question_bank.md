@@ -14,7 +14,7 @@ sources: []
 > **难度标注**: ⭐ Basic | ⭐⭐ Intermediate | ⭐⭐⭐ Advanced
 > **频率标注**: 🔴 高频 | 🟡 中频 | 🟢 低频
 
-> 机器人工程师（AI 方向）处于传统机器人学与具身智能（Embodied AI）的交汇点，既要懂运动学/动力学/控制等经典内容，又要掌握 SLAM、VLA、sim-to-real 等新范式。本题库兼顾传统工程与现代 AI，重点考查"能否把模型部署到真实硬件并稳定运行"。相关背景见 [[强化学习/Robotics_Embodied_AI/index|机器人具身智能]]。
+> 机器人工程师（AI 方向）处于传统机器人学与具身智能（Embodied AI）的交汇点，既要懂运动学/动力学/控制等经典内容，又要掌握 SLAM、VLA、sim-to-real 等新范式。本题库兼顾传统工程与现代 AI，重点考查"能否把模型部署到真实硬件并稳定运行"。相关背景见 [[06_强化学习/05_Robotics_Embodied_AI/index|机器人具身智能]]。
 
 ---
 
@@ -202,8 +202,8 @@ sources: []
 
 ## Related
 
-- [[面试岗位/Robotics_Engineer/Robotics_Engineer|机器人工程师]]
-- [[面试岗位/Interview_Guide/index|面试总指南]]
-- [[强化学习/Robotics_Embodied_AI/index|机器人具身智能]]
-- [[计算机视觉/index|计算机视觉]]
-- [[强化学习/index|强化学习]]
+- [[21_面试岗位/Robotics_Engineer/Robotics_Engineer|机器人工程师]]
+- [[21_面试岗位/Interview_Guide/index|面试总指南]]
+- [[06_强化学习/05_Robotics_Embodied_AI/index|机器人具身智能]]
+- [[04_计算机视觉/index|计算机视觉]]
+- [[06_强化学习/index|强化学习]]

@@ -8,39 +8,39 @@ sources: []
 
 # Inference Engines
 
-This page indexes the contents of `部署推理/Inference_Engines`.
+This page indexes the contents of `10_部署推理/Inference_Engines`.
 
 ## Files
 
-- [[部署推理/Inference_Engines/Batch_API_Comparison_2026|Batch API Comparison 2026]]
-- [[部署推理/Inference_Engines/BentoML_Deep_Dive|Bentoml Deep Dive]]
-- [[部署推理/Inference_Engines/CTranslate2_Deep_Dive|Ctranslate2 Deep Dive]]
-- [[部署推理/Inference_Engines/DeepSpeed_MII_Deep_Dive|Deepspeed MII Deep Dive]]
-- [[部署推理/Inference_Engines/Fireworks_AI_Deep_Dive|Fireworks AI Deep Dive]]
-- [[部署推理/Inference_Engines/Groq_Deep_Dive|Groq Deep Dive]]
-- [[部署推理/Inference_Engines/HF_Inference_Endpoints_Guide|HF Inference Endpoints Guide]]
-- [[部署推理/Inference_Engines/JVM_AI_Deployment|JVM AI Deployment]]
-- [[部署推理/Inference_Engines/KServe_Deep_Dive|Kserve Deep Dive]]
-- [[部署推理/Inference_Engines/LiteRT_Deep_Dive|Litert Deep Dive]]
-- [[部署推理/Inference_Engines/llama_cpp_Deep_Dive|Llama Cpp Deep Dive]]
-- [[部署推理/Inference_Engines/LLM_API_Design_Patterns|LLM API Design Patterns]]
-- [[部署推理/Inference_Engines/LLM_Inference_Benchmarking_Guide|LLM Inference Benchmarking Guide]]
-- [[部署推理/Inference_Engines/LLM_Inference_Engine_Migration_Guide|LLM Inference Engine Migration Guide]]
-- [[部署推理/Inference_Engines/LLM_Inference_Engine_Selection_Guide|LLM Inference Engine Selection Guide]]
-- [[部署推理/Inference_Engines/LMDeploy_Deep_Dive|Lmdeploy Deep Dive]]
-- [[部署推理/Inference_Engines/MLC_LLM_Deep_Dive|MLC LLM Deep Dive]]
-- [[部署推理/Inference_Engines/Modal_Deep_Dive|Modal Deep Dive]]
-- [[部署推理/Inference_Engines/Novita_AI_Deep_Dive|Novita AI Deep Dive]]
-- [[部署推理/Inference_Engines/Ollama_Deep_Dive|Ollama Deep Dive]]
-- [[部署推理/Inference_Engines/SGLang_Deep_Dive|Sglang Deep Dive]]
-- [[部署推理/Inference_Engines/streamlit_overview|Streamlit Overview]]
-- [[部署推理/Inference_Engines/TensorRT_LLM_Deep_Dive|Tensorrt LLM Deep Dive]]
-- [[部署推理/Inference_Engines/TGI_Deep_Dive|TGI Deep Dive]]
-- [[部署推理/Inference_Engines/Together_AI_Deep_Dive|Together AI Deep Dive]]
-- [[部署推理/Inference_Engines/Triton_Inference_Server_Deep_Dive|Triton Inference Server Deep Dive]]
-- [[部署推理/Inference_Engines/vLLM_Deep_Dive|Vllm Deep Dive]]
-- [[部署推理/Inference_Engines/vLLM_for_dummy|Vllm For Dummy]]
-- [[部署推理/Inference_Engines/vLLM_PagedAttention_Architecture|Vllm Pagedattention Architecture]]
+- [[10_部署推理/02_Inference_Engines/Batch_API_Comparison_2026|Batch API Comparison 2026]]
+- [[10_部署推理/02_Inference_Engines/BentoML_Deep_Dive|Bentoml Deep Dive]]
+- [[10_部署推理/02_Inference_Engines/CTranslate2_Deep_Dive|Ctranslate2 Deep Dive]]
+- [[10_部署推理/02_Inference_Engines/DeepSpeed_MII_Deep_Dive|Deepspeed MII Deep Dive]]
+- [[10_部署推理/02_Inference_Engines/Fireworks_AI_Deep_Dive|Fireworks AI Deep Dive]]
+- [[10_部署推理/02_Inference_Engines/Groq_Deep_Dive|Groq Deep Dive]]
+- [[10_部署推理/02_Inference_Engines/HF_Inference_Endpoints_Guide|HF Inference Endpoints Guide]]
+- [[10_部署推理/02_Inference_Engines/JVM_AI_Deployment|JVM AI Deployment]]
+- [[10_部署推理/02_Inference_Engines/KServe_Deep_Dive|Kserve Deep Dive]]
+- [[10_部署推理/02_Inference_Engines/LiteRT_Deep_Dive|Litert Deep Dive]]
+- [[10_部署推理/02_Inference_Engines/llama_cpp_Deep_Dive|Llama Cpp Deep Dive]]
+- [[10_部署推理/02_Inference_Engines/LLM_API_Design_Patterns|LLM API Design Patterns]]
+- [[10_部署推理/02_Inference_Engines/LLM_Inference_Benchmarking_Guide|LLM Inference Benchmarking Guide]]
+- [[10_部署推理/02_Inference_Engines/LLM_Inference_Engine_Migration_Guide|LLM Inference Engine Migration Guide]]
+- [[10_部署推理/02_Inference_Engines/LLM_Inference_Engine_Selection_Guide|LLM Inference Engine Selection Guide]]
+- [[10_部署推理/02_Inference_Engines/LMDeploy_Deep_Dive|Lmdeploy Deep Dive]]
+- [[10_部署推理/02_Inference_Engines/MLC_LLM_Deep_Dive|MLC LLM Deep Dive]]
+- [[10_部署推理/02_Inference_Engines/Modal_Deep_Dive|Modal Deep Dive]]
+- [[10_部署推理/02_Inference_Engines/Novita_AI_Deep_Dive|Novita AI Deep Dive]]
+- [[10_部署推理/02_Inference_Engines/Ollama_Deep_Dive|Ollama Deep Dive]]
+- [[10_部署推理/02_Inference_Engines/SGLang_Deep_Dive|Sglang Deep Dive]]
+- [[10_部署推理/02_Inference_Engines/streamlit_overview|Streamlit Overview]]
+- [[10_部署推理/02_Inference_Engines/TensorRT_LLM_Deep_Dive|Tensorrt LLM Deep Dive]]
+- [[10_部署推理/02_Inference_Engines/TGI_Deep_Dive|TGI Deep Dive]]
+- [[10_部署推理/02_Inference_Engines/Together_AI_Deep_Dive|Together AI Deep Dive]]
+- [[10_部署推理/02_Inference_Engines/Triton_Inference_Server_Deep_Dive|Triton Inference Server Deep Dive]]
+- [[10_部署推理/02_Inference_Engines/vLLM_Deep_Dive|Vllm Deep Dive]]
+- [[10_部署推理/02_Inference_Engines/vLLM_for_dummy|Vllm For Dummy]]
+- [[10_部署推理/02_Inference_Engines/vLLM_PagedAttention_Architecture|Vllm Pagedattention Architecture]]
 
 ## 核心知识体系
 
@@ -151,9 +151,9 @@ This page indexes the contents of `部署推理/Inference_Engines`.
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

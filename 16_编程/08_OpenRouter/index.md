@@ -12,18 +12,18 @@ This page indexes the contents of `AI编程/Tools/OpenRouter`.
 
 ## Files
 
-- [[编程/OpenRouter/01-openrouter-overview-architecture|01 Openrouter Overview Architecture]]
-- [[编程/OpenRouter/02-openrouter-quickstart-setup|02 Openrouter Quickstart Setup]]
-- [[编程/OpenRouter/03-openrouter-models-providers|03 Openrouter Models Providers]]
-- [[编程/OpenRouter/04-openrouter-provider-routing|04 Openrouter Provider Routing]]
-- [[编程/OpenRouter/05-openrouter-api-reference|05 Openrouter Api Reference]]
-- [[编程/OpenRouter/06-openrouter-structured-outputs-tools|06 Openrouter Structured Outputs Tools]]
-- [[编程/OpenRouter/07-openrouter-plugins-web-search|07 Openrouter Plugins Web Search]]
-- [[编程/OpenRouter/08-openrouter-prompt-caching-optimization|08 Openrouter Prompt Caching Optimization]]
-- [[编程/OpenRouter/09-openrouter-frameworks-integrations|09 Openrouter Frameworks Integrations]]
-- [[编程/OpenRouter/10-openrouter-streaming-multimedia|10 Openrouter Streaming Multimedia]]
-- [[编程/OpenRouter/11-openrouter-security-privacy|11 Openrouter Security Privacy]]
-- [[编程/OpenRouter/12-openrouter-enterprise-advanced|12 Openrouter Enterprise Advanced]]
+- [[16_编程/08_OpenRouter/01-openrouter-overview-architecture|01 Openrouter Overview Architecture]]
+- [[16_编程/08_OpenRouter/02-openrouter-quickstart-setup|02 Openrouter Quickstart Setup]]
+- [[16_编程/08_OpenRouter/03-openrouter-models-providers|03 Openrouter Models Providers]]
+- [[16_编程/08_OpenRouter/04-openrouter-provider-routing|04 Openrouter Provider Routing]]
+- [[16_编程/08_OpenRouter/05-openrouter-api-reference|05 Openrouter Api Reference]]
+- [[16_编程/08_OpenRouter/06-openrouter-structured-outputs-tools|06 Openrouter Structured Outputs Tools]]
+- [[16_编程/08_OpenRouter/07-openrouter-plugins-web-search|07 Openrouter Plugins Web Search]]
+- [[16_编程/08_OpenRouter/08-openrouter-prompt-caching-optimization|08 Openrouter Prompt Caching Optimization]]
+- [[16_编程/08_OpenRouter/09-openrouter-frameworks-integrations|09 Openrouter Frameworks Integrations]]
+- [[16_编程/08_OpenRouter/10-openrouter-streaming-multimedia|10 Openrouter Streaming Multimedia]]
+- [[16_编程/08_OpenRouter/11-openrouter-security-privacy|11 Openrouter Security Privacy]]
+- [[16_编程/08_OpenRouter/12-openrouter-enterprise-advanced|12 Openrouter Enterprise Advanced]]
 
 ## 核心知识体系
 
@@ -134,9 +134,9 @@ This page indexes the contents of `AI编程/Tools/OpenRouter`.
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

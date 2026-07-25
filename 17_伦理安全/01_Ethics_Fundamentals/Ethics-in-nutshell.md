@@ -472,7 +472,7 @@ flowchart TB
 
 - [AI 安全与红队](AI_Safety_RedTeaming/) —— 深入红队方法论
 - [隐私保护 AI](Privacy_Preserving_AI/) —— 联邦学习、差分隐私详解
-- [AI 治理合规](伦理安全/Governance/AI_Governance_Compliance_2026.md) —— 法规与合规实践
+- [AI 治理合规](17_伦理安全/03_Governance/AI_Governance_Compliance_2026.md) —— 法规与合规实践
 - [价值对齐](Value_Alignment/) —— 对齐技术深入
 - [AI 供应链安全](AI_Supply_Chain_Security/) —— 供应链风险
 - [伦理安全 - 小白版](README_for_dummy.md) —— 零基础入门
@@ -483,7 +483,7 @@ flowchart TB
 
 ## Related
 
-- [[伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming]] — AI 安全与红队 (AI Safety & Red Teaming) (共享: ai-ethics, alignment, red-teaming, safety)
-- [[伦理安全/AI_Security_2026/README]] — AI安全 2026 (AI Security) (共享: ai-ethics, alignment, red-teaming, safety)
-- [[伦理安全/AI_Supply_Chain_Security/AI_Supply_Chain_Security]] — AI 供应链安全 2026 (共享: ai-ethics, alignment, red-teaming, safety)
-- [[伦理安全/README]] — 08 AI 伦理、安全与对齐 (Ethics, Safety & Alignment) (共享: ai-ethics, alignment, red-teaming, safety)
+- [[17_伦理安全/04_AI_Safety_RedTeaming/AI_Safety_RedTeaming]] — AI 安全与红队 (AI Safety & Red Teaming) (共享: ai-ethics, alignment, red-teaming, safety)
+- [[17_伦理安全/07_AI_Security_2026/README]] — AI安全 2026 (AI Security) (共享: ai-ethics, alignment, red-teaming, safety)
+- [[17_伦理安全/08_AI_Supply_Chain_Security/AI_Supply_Chain_Security]] — AI 供应链安全 2026 (共享: ai-ethics, alignment, red-teaming, safety)
+- [[17_伦理安全/README]] — 08 AI 伦理、安全与对齐 (Ethics, Safety & Alignment) (共享: ai-ethics, alignment, red-teaming, safety)

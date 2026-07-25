@@ -10,7 +10,7 @@ relationships:
   - target: "概念/opik"
     type: related_to
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
 summary: "专注于 AI Agent 的可观测性与评估平台，追踪 Agent 的决策链路、工具调用、成本和性能，是 Agent 生产环境的监控基础设施。"
 provenance:
   extracted: 0.55

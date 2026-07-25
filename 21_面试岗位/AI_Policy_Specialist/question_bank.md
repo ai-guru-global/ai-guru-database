@@ -119,11 +119,11 @@ sources: []
 
 ## Related
 
-- [[面试岗位/AI_Policy_Specialist/interview_answers|AI Policy Specialist 面试题实例答案]]
-- [[面试岗位/AI_Policy_Specialist/company_level_question_bank|AI Policy Specialist 按公司/级别区分的题库]]
-- [[面试岗位/AI_Policy_Specialist/index|AI Policy Specialist 首页]]
+- [[21_面试岗位/AI_Policy_Specialist/interview_answers|AI Policy Specialist 面试题实例答案]]
+- [[21_面试岗位/AI_Policy_Specialist/company_level_question_bank|AI Policy Specialist 按公司/级别区分的题库]]
+- [[21_面试岗位/AI_Policy_Specialist/index|AI Policy Specialist 首页]]
 - [[治理/index|AI 治理]]
-- [[伦理安全/index|伦理安全]]
-- [[面试岗位/AI_Safety_Engineer/index|AI Safety Engineer]]
-- [[面试岗位/Interview_Guide/career-interviews|面试职业指南]]
-- [[面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[17_伦理安全/index|伦理安全]]
+- [[21_面试岗位/AI_Safety_Engineer/index|AI Safety Engineer]]
+- [[21_面试岗位/Interview_Guide/career-interviews|面试职业指南]]
+- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]

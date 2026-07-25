@@ -471,9 +471,9 @@ print(f"RMSE: {rmse:.1f}")
 
 ## 相关链接
 
-- [[机器学习/Time_Series/Time_Series_Analysis|时间序列分析 (完整版)]] — 本篇小白版对应的详细版
-- [[机器学习/Time_Series/index|时间序列索引]] — 主题导览
+- [[02_机器学习/09_Time_Series/Time_Series_Analysis|时间序列分析 (完整版)]] — 本篇小白版对应的详细版
+- [[02_机器学习/09_Time_Series/index|时间序列索引]] — 主题导览
 - [[概念/Math/time-series-analysis|时间序列分析]] — 概念卡片
-- [[机器学习/ML_Fundamentals/ML_Fundamentals|机器学习基础]] — ML 基础知识
-- [[机器学习/Anomaly_Detection/Anomaly_Detection|异常检测]] — 时序异常检测应用
-- [[机器学习/index|机器学习首页]] — 机器学习知识总览
+- [[02_机器学习/01_ML_Fundamentals/ML_Fundamentals|机器学习基础]] — ML 基础知识
+- [[02_机器学习/08_Anomaly_Detection/Anomaly_Detection|异常检测]] — 时序异常检测应用
+- [[02_机器学习/index|机器学习首页]] — 机器学习知识总览

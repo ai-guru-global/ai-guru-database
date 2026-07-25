@@ -10,7 +10,7 @@ relationships:
   - target: "概念/heterogeneous-gpu"
     type: related_to
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
 summary: "GPU 虚拟化将单块物理 GPU 切分为多个虚拟实例，支持多租户共享。主要方案包括 NVIDIA MIG（硬件级）、vGPU（驱动级）、算力/显存隔离（软件级）和时间分片。"
 provenance:
   extracted: 0.55
@@ -157,8 +157,8 @@ GPU 共享模式决策树
 - [[概念/dra]] — DRA 动态资源分配（MIG 切片的属性化调度）
 - [[概念/gpu-operator]] — NVIDIA GPU Operator（MIG 经其动态管理）
 - [[概念/hami]] — HAMi（Kubernetes 异构 GPU 虚拟化中间件）
-- [[架构基建/AI_Stack/HAMi_Deep_Dive]] — HAMi 深度解析
-- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack（GPU 共享模式）
+- [[12_架构基建/03_AI_Stack/HAMi_Deep_Dive]] — HAMi 深度解析
+- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack（GPU 共享模式）
 
 ---
 

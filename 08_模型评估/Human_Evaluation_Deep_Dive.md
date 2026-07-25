@@ -152,7 +152,7 @@ flowchart TB
 ```
 
 > [!tip] 最佳实践
-> 不是所有评估都需要人工。正确策略是：**用 LLM-as-Judge 做大规模筛选，用人工评估做关键校准和深度分析**。详见 [[模型评估/Evaluation_Tools/LLM_as_Judge_Deep_Dive|LLM-as-Judge 深度解析]]。
+> 不是所有评估都需要人工。正确策略是：**用 LLM-as-Judge 做大规模筛选，用人工评估做关键校准和深度分析**。详见 [[08_模型评估/04_Evaluation_Tools/LLM_as_Judge_Deep_Dive|LLM-as-Judge 深度解析]]。
 
 ---
 
@@ -943,7 +943,7 @@ print("聚合标签:", model.predict())
 ```
 
 > [!tip] 聚合方法选择
-> 简单任务用 **多数投票 (Majority Vote)** 足矣；标注者能力差异大时，**Dawid-Skene** 更准确。详见 [[模型评估/Human_Evaluation_Deep_Dive#6.6|众包数据聚合]]。
+> 简单任务用 **多数投票 (Majority Vote)** 足矣；标注者能力差异大时，**Dawid-Skene** 更准确。详见 [[08_模型评估/Human_Evaluation_Deep_Dive#6.6|众包数据聚合]]。
 
 ---
 
@@ -1289,7 +1289,7 @@ class HybridEvaluationPipeline:
 ```
 
 > [!important] 关键洞察
-> LLM-as-Judge 不是人工评估的替代品，而是**放大器**——用少量高质量人工标注校准后，可以扩展到大规模评估。详见 [[模型评估/Evaluation_Tools/LLM_as_Judge_Deep_Dive|LLM-as-Judge 深度解析]]。
+> LLM-as-Judge 不是人工评估的替代品，而是**放大器**——用少量高质量人工标注校准后，可以扩展到大规模评估。详见 [[08_模型评估/04_Evaluation_Tools/LLM_as_Judge_Deep_Dive|LLM-as-Judge 深度解析]]。
 
 ---
 
@@ -1950,14 +1950,14 @@ flowchart LR
 
 ## Related
 
-- [[模型评估/Evaluation_Fundamentals/Model_Evaluation|模型评估]] — 评估方法论全景，本文件的母文档
-- [[模型评估/Evaluation_Tools/LLM_as_Judge_Deep_Dive|LLM-as-Judge 深度解析]] — 用 AI 模拟人工评估，本文的对照方案
-- [[模型评估/LLM_Evaluation/RAG_Evaluation_Deep_Dive|RAG 系统评估深度解析]] — RAG 场景下的人工评估应用
-- [[模型评估/Evaluation_Tools/Online_Evaluation|在线评估]] — A/B 测试与线上监控，人工评估的生产延伸
-- [[模型评估/Fairness|公平性评估]] — 偏见检测与缓解，与人工评估偏见管理紧密相关
-- [[模型评估/Red_Team_Evaluation|红队评估]] — 安全性人工测试，人工评估的高风险特例
-- [[模型评估/Benchmark_Comparison|基准对比]] — 标准基准与人工评估的结合使用
-- [[模型评估/Automation|评估自动化]] — CI/CD 评估流水线中人工评估的集成点
+- [[08_模型评估/01_Evaluation_Fundamentals/Model_Evaluation|模型评估]] — 评估方法论全景，本文件的母文档
+- [[08_模型评估/04_Evaluation_Tools/LLM_as_Judge_Deep_Dive|LLM-as-Judge 深度解析]] — 用 AI 模拟人工评估，本文的对照方案
+- [[08_模型评估/03_LLM_Evaluation/RAG_Evaluation_Deep_Dive|RAG 系统评估深度解析]] — RAG 场景下的人工评估应用
+- [[08_模型评估/04_Evaluation_Tools/Online_Evaluation|在线评估]] — A/B 测试与线上监控，人工评估的生产延伸
+- [[08_模型评估/Fairness|公平性评估]] — 偏见检测与缓解，与人工评估偏见管理紧密相关
+- [[08_模型评估/Red_Team_Evaluation|红队评估]] — 安全性人工测试，人工评估的高风险特例
+- [[08_模型评估/Benchmark_Comparison|基准对比]] — 标准基准与人工评估的结合使用
+- [[08_模型评估/Automation|评估自动化]] — CI/CD 评估流水线中人工评估的集成点
 
 ---
 

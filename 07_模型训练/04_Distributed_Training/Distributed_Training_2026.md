@@ -1510,11 +1510,11 @@ if rank == 0:
 
 ### 交叉引用
 
-- 神经网络基础与反向传播原理，请参阅 [`../深度学习/README.md`](../../深度学习/README.md)
-- 模型推理优化与部署，请参阅 [`.部署推理/README.md`](../../部署推理/README.md)
-- GPU 集群硬件配置与网络拓扑，请参阅 [`../架构基建/Architecture_Overview/AI_Infrastructure_2026`](架构基建/Architecture_Overview/AI_Infrastructure_2026)
-- 模型评估方法，请参阅 [`模型评估/Evaluation_Fundamentals/Model_Evaluation.md`](模型评估/Evaluation_Fundamentals/Model_Evaluation.md)
-- MLOps 训练流水线，请参阅 [`模型运维/MLOps_Fundamentals/MLOps_Pipeline.md`](模型运维/MLOps_Fundamentals/MLOps_Pipeline.md)
+- 神经网络基础与反向传播原理，请参阅 [`../03_深度学习/README.md`](../../03_深度学习/README.md)
+- 模型推理优化与部署，请参阅 [`.10_部署推理/README.md`](../../10_部署推理/README.md)
+- GPU 集群硬件配置与网络拓扑，请参阅 [`../12_架构基建/02_Architecture_Overview/AI_Infrastructure_2026`](12_架构基建/02_Architecture_Overview/AI_Infrastructure_2026)
+- 模型评估方法，请参阅 [`08_模型评估/01_Evaluation_Fundamentals/Model_Evaluation.md`](08_模型评估/01_Evaluation_Fundamentals/Model_Evaluation.md)
+- MLOps 训练流水线，请参阅 [`11_模型运维/01_MLOps_Fundamentals/MLOps_Pipeline.md`](11_模型运维/01_MLOps_Fundamentals/MLOps_Pipeline.md)
 
 ### 核心论文
 
@@ -1540,8 +1540,8 @@ if rank == 0:
 
 ## Related
 
-- [[模型训练/Distributed_Training/Distributed_Training_for_dummy]] — 分布式训练 - 小白版 (共享: distributed-training, fsdp, model-training, optimization)
-- [[模型训练/Optimization/Mixed_Precision_Training]] — 混合精度训练 (Mixed Precision Training) (共享: distributed-training, fsdp, model-training, optimization)
-- [[模型训练/Model-Training-in-nutshell]] — 模型训练速成指南 (共享: distributed-training, fsdp, model-training, optimization)
-- [[模型训练/Model_Training_for_dummy]] — 模型训练小白指南 (共享: distributed-training, fsdp, model-training, optimization)
-- [[模型训练/Optimization/Training_Optimization_2026.md|Training_Optimization_2026]]
+- [[07_模型训练/04_Distributed_Training/Distributed_Training_for_dummy]] — 分布式训练 - 小白版 (共享: distributed-training, fsdp, model-training, optimization)
+- [[07_模型训练/03_Optimization/Mixed_Precision_Training]] — 混合精度训练 (Mixed Precision Training) (共享: distributed-training, fsdp, model-training, optimization)
+- [[07_模型训练/Model-Training-in-nutshell]] — 模型训练速成指南 (共享: distributed-training, fsdp, model-training, optimization)
+- [[07_模型训练/Model_Training_for_dummy]] — 模型训练小白指南 (共享: distributed-training, fsdp, model-training, optimization)
+- [[07_模型训练/03_Optimization/Training_Optimization_2026.md|Training_Optimization_2026]]

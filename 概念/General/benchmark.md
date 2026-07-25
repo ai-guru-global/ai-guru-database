@@ -14,7 +14,7 @@ relationships:
   - target: "概念/llm-as-judge"
     type: complementary
 sources:
-  - 模型评估/
+  - 08_模型评估/
   - 概念/lm-evaluation-harness.md
   - 概念/opencompass.md
 summary: "Benchmark（基准测试）是用标准化任务集评估 LLM 能力的方法；2026 年 LLM 评测已从单一基准（MMLU）演进到多维矩阵（推理/代码/Agent/安全/多模态），单一分数已无法反映真实能力。"
@@ -124,7 +124,7 @@ updated: 2026-07-21
 - [[概念/opencompass]] — OpenCompass
 - [[概念/llm-as-judge]] — LLM-as-Judge
 - [[治理/cheatsheets/cheatsheet-evaluation]] — 评测速查表
-- [[模型评估/README|模型评估]] — 评测章节
+- [[08_模型评估/README|模型评估]] — 评测章节
 
 ---
 

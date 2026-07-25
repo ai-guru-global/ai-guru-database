@@ -8,18 +8,18 @@ sources: []
 
 # Experiment Tracking
 
-This page indexes the contents of `模型运维/Experiment_Tracking`.
+This page indexes the contents of `11_模型运维/Experiment_Tracking`.
 
 ## Files
 
-- [[模型运维/Experiment_Tracking/ClearML_Deep_Dive|Clearml Deep Dive]]
-- [[模型运维/Experiment_Tracking/Experiment_Tracking_Deep_Dive|Experiment Tracking Deep Dive]]
-- [[模型运维/Experiment_Tracking/Feast_Deep_Dive|Feast Deep Dive]]
-- [[模型运维/Experiment_Tracking/Feature_Store_Deep_Dive|Feature Store Deep Dive]]
-- [[模型运维/Experiment_Tracking/MLflow_Deep_Dive|Mlflow Deep Dive]]
-- [[模型运维/Experiment_Tracking/Experiment_Tracking_Template|实验跟踪记录模板]]
-- [[模型运维/Experiment_Tracking/Model_Card_Template|Model Card 模型卡片模板]]
-- [[模型运维/Experiment_Tracking/Model_Registry_and_Cards_Deep_Dive|Model Registry And Cards Deep Dive]]
+- [[11_模型运维/04_Experiment_Tracking/ClearML_Deep_Dive|Clearml Deep Dive]]
+- [[11_模型运维/04_Experiment_Tracking/Experiment_Tracking_Deep_Dive|Experiment Tracking Deep Dive]]
+- [[11_模型运维/04_Experiment_Tracking/Feast_Deep_Dive|Feast Deep Dive]]
+- [[11_模型运维/04_Experiment_Tracking/Feature_Store_Deep_Dive|Feature Store Deep Dive]]
+- [[11_模型运维/04_Experiment_Tracking/MLflow_Deep_Dive|Mlflow Deep Dive]]
+- [[11_模型运维/04_Experiment_Tracking/Experiment_Tracking_Template|实验跟踪记录模板]]
+- [[11_模型运维/04_Experiment_Tracking/Model_Card_Template|Model Card 模型卡片模板]]
+- [[11_模型运维/04_Experiment_Tracking/Model_Registry_and_Cards_Deep_Dive|Model Registry And Cards Deep Dive]]
 
 ## MLOps核心流程对比
 
@@ -154,12 +154,12 @@ This page indexes the contents of `模型运维/Experiment_Tracking`.
 
 | 关联主题 | 关系 | 参考路径 |
 |----------|------|----------|
-| 模型训练 | 上游输入 | 模型训练/ |
-| 模型评估 | 质量门禁 | 模型评估/ |
-| 部署推理 | 服务化交付 | 部署推理/ |
-| 架构基建 | 底层支撑 | 架构基建/ |
-| 测试 | 质量保障 | 测试/ |
-| 运维 | 通用运维实践 | 运维/ |
+| 模型训练 | 上游输入 | 07_模型训练/ |
+| 模型评估 | 质量门禁 | 08_模型评估/ |
+| 部署推理 | 服务化交付 | 10_部署推理/ |
+| 架构基建 | 底层支撑 | 12_架构基建/ |
+| 测试 | 质量保障 | 09_测试/ |
+| 运维 | 通用运维实践 | 13_运维/ |
 
 ## 快速自检清单
 

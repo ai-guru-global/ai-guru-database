@@ -1455,9 +1455,9 @@ grep '"event_type":"step_end"' agent.log | jq -r '.message'
 
 ## 相关链接
 
-- [[智能体/Agent_Workflow/AgentOps_Production_Guide|AgentOps 生产指南]] — 可观测性的生产实践
+- [[15_智能体/03_Agent_Workflow/AgentOps_Production_Guide|AgentOps 生产指南]] — 可观测性的生产实践
 - [[概念/Agent/agentops|AgentOps]] — Agent 可观测性概念卡片
 - [[概念/MLOps/observability|可观测性]] — 可观测性总览
 - [[概念/RAG/langfuse|Langfuse]] — 主流 Agent 可观测性工具
-- [[智能体/Agent_Foundations/index|Agent 基础索引]] — Agent 基础主题导览
+- [[15_智能体/01_Agent_Foundations/index|Agent 基础索引]] — Agent 基础主题导览
 - [[概念/Agent/agent-loop|Agent Loop]] — 可观测性记录的执行循环

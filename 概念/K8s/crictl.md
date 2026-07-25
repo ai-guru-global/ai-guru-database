@@ -10,7 +10,7 @@ relationships:
   - target: "概念/ascend-npu"
     type: related_to
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
 summary: "crictl 是 CRI (Container Runtime Interface) 标准的容器调试 CLI，直接对接 containerd。AI Stack K8s 集群中用于底层容器排查，比 nerdctl/docker 更底层。"
 provenance:
   extracted: 0.30
@@ -111,7 +111,7 @@ AI Stack 容器工具层级
 - [[概念/kubectl]] — kubectl Kubernetes CLI
 - [[概念/containerd]] — containerd 容器运行时
 - [[概念/cri]] — CRI 容器运行时接口
-- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
 
 ---
 

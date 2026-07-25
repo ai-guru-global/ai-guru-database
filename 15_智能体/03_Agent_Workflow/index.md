@@ -14,17 +14,17 @@ sources: []
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[智能体/Agent_Workflow/AgentOps_Production_Guide|AgentOps Production Guide]] | AgentOps Production Guide | 开发者/学习者 |
-| [[智能体/Agent_Workflow/Agentic_UI_UX_Design_2026|Agentic UI UX Design 2026]] | Agentic UI UX Design 2026 | 开发者/学习者 |
-| [[智能体/Agent_Workflow/Agentic_Workflow_Design_Patterns_2026|Agentic Workflow Design Patterns 2026]] | Agentic Workflow Design Patterns 2026 | 开发者/学习者 |
-| [[智能体/Agent_Workflow/LangGraph_Deep_Dive|LangGraph Deep Dive]] | LangGraph Deep Dive | 开发者/学习者 |
-| [[智能体/Agent_Workflow/Workflow-in-nutshell|Workflow-in-nutshell]] | Workflow-in-nutshell | 开发者/学习者 |
+| [[15_智能体/03_Agent_Workflow/AgentOps_Production_Guide|AgentOps Production Guide]] | AgentOps Production Guide | 开发者/学习者 |
+| [[15_智能体/03_Agent_Workflow/Agentic_UI_UX_Design_2026|Agentic UI UX Design 2026]] | Agentic UI UX Design 2026 | 开发者/学习者 |
+| [[15_智能体/03_Agent_Workflow/Agentic_Workflow_Design_Patterns_2026|Agentic Workflow Design Patterns 2026]] | Agentic Workflow Design Patterns 2026 | 开发者/学习者 |
+| [[15_智能体/03_Agent_Workflow/LangGraph_Deep_Dive|LangGraph Deep Dive]] | LangGraph Deep Dive | 开发者/学习者 |
+| [[15_智能体/03_Agent_Workflow/Workflow-in-nutshell|Workflow-in-nutshell]] | Workflow-in-nutshell | 开发者/学习者 |
 
 ## Related
 
-- [[智能体/Agent_Foundations/index|Agent Foundations]]
-- [[智能体/Agent_Frameworks/index|Agent Frameworks]]
-- [[智能体/Agent_Skills/index|Agent Skills]]
+- [[15_智能体/01_Agent_Foundations/index|Agent Foundations]]
+- [[15_智能体/02_Agent_Frameworks/index|Agent Frameworks]]
+- [[15_智能体/05_Agent_Skills/index|Agent Skills]]
 
 ## Agent_Workflow 核心概念
 

@@ -15,13 +15,13 @@ A/B 测试 — AI 系统的在线实验设计（experiment design）、统计显
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[测试/AB_Testing_AI_Systems|AB Testing AI Systems]] | AI systems A/B testing: experiment design, sample size calculation and pitfall avoidance | data scientists / product analysts |
+| [[09_测试/AB_Testing_AI_Systems|AB Testing AI Systems]] | AI systems A/B testing: experiment design, sample size calculation and pitfall avoidance | data scientists / product analysts |
 
 ## Related
 
-- [[测试/index|测试首页]]
-- [[机器学习/Causal_Inference/index|Causal Inference]]
-- [[模型评估/Online_Evaluation_index|Online Evaluation]]
+- [[09_测试/index|测试首页]]
+- [[02_机器学习/07_Causal_Inference/index|Causal Inference]]
+- [[08_模型评估/Online_Evaluation_index|Online Evaluation]]
 
 ## 核心概念
 

@@ -122,7 +122,7 @@ Q4-P2 (已完成 ✅)
 
 | 章节 | 关系 |
 |------|------|
-| [90_Learn](../学习/README.md) | 学习路径规划 |
+| [90_Learn](../90_学习/README.md) | 学习路径规划 |
 | [治理/Import_Guide](../Import_Guide.md) | 项目导入指南 |
 | [治理/Document_Templates](../Document_Templates.md) | 文档模板规范 |
 | [治理/notes](../notes/README.md) | 知识库元数据 |
@@ -130,7 +130,7 @@ Q4-P2 (已完成 ✅)
 ## 下一步
 
 - 想贡献内容？→ 查看 [治理/Import_Guide.md](../Import_Guide.md)
-- 想学习？→ 查看 [90_Learn/README.md](../学习/README.md)
+- 想学习？→ 查看 [90_Learn/README.md](../90_学习/README.md)
 - 想了解整体结构？→ 查看 [治理/notes/KNOWLEDGE_BASE.md](治理/notes/KNOWLEDGE_BASE.md)
 
 ---
@@ -143,7 +143,7 @@ Q4-P2 (已完成 ✅)
 - [[治理/plan/README|项目规划]]
 - [[治理/Project_Comprehensive_Evaluation_2026.md|Project_Comprehensive_Evaluation_2026]]
 - [[治理/Project_Structure_Evaluation_2026.md|Project_Structure_Evaluation_2026]]
-- [[智能体/Agent_Foundations/agents-reinforcement-learning.md|agents-reinforcement-learning]]
+- [[15_智能体/01_Agent_Foundations/agents-reinforcement-learning.md|agents-reinforcement-learning]]
 
 ## 核心知识体系
 

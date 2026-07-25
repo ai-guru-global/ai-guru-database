@@ -77,13 +77,13 @@ sources: []
 - [[概念/checkpoint|Checkpoint]]
 - [[概念/safetensors|Safetensors]]
 - [[概念/mlflow|MLflow]]
-- [[模型运维/Troubleshooting/Model_Version_Rollback_Playbook|模型版本回滚 Runbook]]
+- [[11_模型运维/12_Troubleshooting/Model_Version_Rollback_Playbook|模型版本回滚 Runbook]]
 
 ## 架构核心组件对比
 
 | 组件层 | 功能 | 关键技术 | 选型考量 |
 |--------|------|----------|----------|
-| 计算层 | 模型训练/推理 | GPU/TPU/NPU集群 | 算力需求+成本 |
+| 计算层 | 07_模型训练/推理 | GPU/TPU/NPU集群 | 算力需求+成本 |
 | 存储层 | 数据/模型/检查点 | 分布式存储/对象存储 | 容量+IOPS+成本 |
 | 网络层 | 节点间通信 | RDMA/RoCE/InfiniBand | 带宽+延迟 |
 | 调度层 | 资源编排 | K8s/Slurm/Ray | 弹性+效率 |

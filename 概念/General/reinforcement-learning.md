@@ -11,7 +11,7 @@ relationships:
   - target: "概念/ai-agents"
     type: related_to
 sources:
-  - 强化学习/RL_Foundations/RL_Foundations.md
+  - 06_强化学习/01_RL_Foundations/RL_Foundations.md
 summary: 强化学习通过智能体与环境交互试错学习最优策略，MDP是其数学基础，Q-Learning和策略梯度是两大算法族。
 provenance:
   extracted: 0.85
@@ -98,14 +98,14 @@ Offline RL（从固定数据集学习，BCQ/CQL）、Meta-RL（快速适应新�
 
 ## 来源
 
-- 强化学习/RL_Foundations/RL_Foundations.md
+- 06_强化学习/01_RL_Foundations/RL_Foundations.md
 
 ## Related
 
-- [[强化学习/AI_Agents/AI_Agents_for_dummy]] — AI智能体 - 小白版 🤖 (共享: mdp, reinforcement-learning, rl)
-- [[强化学习/AI_Agents/Agent-in-nutshell]] — AI 智能体速成指南 (共享: mdp, reinforcement-learning, rl)
-- [[强化学习/AI_Agents/Agent_Future_Roadmap_2026_2030]] — Agent 未来发展路线图 2026-2030 (共享: mdp, reinforcement-learning, rl)
-- [[强化学习/AI_Agents/Agent_Protocols_Detail]] — AI Agent 协议详解：MCP、A2A、UCP (共享: mdp, reinforcement-learning, rl)
+- [[06_强化学习/AI_Agents/AI_Agents_for_dummy]] — AI智能体 - 小白版 🤖 (共享: mdp, reinforcement-learning, rl)
+- [[06_强化学习/AI_Agents/Agent-in-nutshell]] — AI 智能体速成指南 (共享: mdp, reinforcement-learning, rl)
+- [[06_强化学习/AI_Agents/Agent_Future_Roadmap_2026_2030]] — Agent 未来发展路线图 2026-2030 (共享: mdp, reinforcement-learning, rl)
+- [[06_强化学习/AI_Agents/Agent_Protocols_Detail]] — AI Agent 协议详解：MCP、A2A、UCP (共享: mdp, reinforcement-learning, rl)
 
 ---
 

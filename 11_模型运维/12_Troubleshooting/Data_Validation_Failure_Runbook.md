@@ -145,8 +145,8 @@ Step 7: 记录 incident 与数据质量报告
 - [[概念/great-expectations|Great Expectations]]
 - [[概念/pandera|Pandera]]
 - [[概念/evidently|Evidently]]
-- [[模型运维/CI_CD/ML_CI_CD|ML CI/CD]]
-- [[模型训练/Data/Data_Curation_and_Mixture_2026|数据策展与混合]]
+- [[11_模型运维/06_CI_CD/ML_CI_CD|ML CI/CD]]
+- [[07_模型训练/02_Data/Data_Curation_and_Mixture_2026|数据策展与混合]]
 
 ## MLOps核心流程对比
 

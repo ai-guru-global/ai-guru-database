@@ -22,7 +22,7 @@ sources: []
 
 ### 背景回顾
 
-Geoffrey Hinton（1947 年生于英国伦敦），"深度学习教父"、2018 年图灵奖得主（与 [[业界观点/Yann_LeCun/index\|LeCun]]、[[业界观点/Yoshua_Bengio/index\|Bengio]] 共获）、多伦多大学荣休教授、前 Google Brain 资深研究员。反向传播算法的奠基推广者、深度信念网络与 Capsule Network 的发明者、AlexNet 的指导者（与 Ilya Sutskever 等共同开发）。2023 年 5 月因 AI 安全担忧从 Google 辞职，成为 AI 风险警告的标志性人物。2024 年因神经网络基础工作获诺贝尔物理学奖，是 AI 研究者首次获此殊荣。
+Geoffrey Hinton（1947 年生于英国伦敦），"深度学习教父"、2018 年图灵奖得主（与 [[19_业界观点/Yann_LeCun/index\|LeCun]]、[[19_业界观点/Yoshua_Bengio/index\|Bengio]] 共获）、多伦多大学荣休教授、前 Google Brain 资深研究员。反向传播算法的奠基推广者、深度信念网络与 Capsule Network 的发明者、AlexNet 的指导者（与 Ilya Sutskever 等共同开发）。2023 年 5 月因 AI 安全担忧从 Google 辞职，成为 AI 风险警告的标志性人物。2024 年因神经网络基础工作获诺贝尔物理学奖，是 AI 研究者首次获此殊荣。
 
 #### Hinton 2026 关键时间线
 
@@ -63,7 +63,7 @@ Geoffrey Hinton（1947 年生于英国伦敦），"深度学习教父"、2018 �
 | 学术层面 | AI 基础研究获得物理学最高认可 |
 | 公众层面 | AI 从"工程"上升为"基础科学" |
 | 政策层面 | Hinton 的安全警告获得超强公信力 |
-| 历史层面 | 与 [[业界观点/Demis_Hassabis/index\|Hassabis]] 的化学奖并列，AI 全面进入诺奖体系 |
+| 历史层面 | 与 [[19_业界观点/Demis_Hassabis/index\|Hassabis]] 的化学奖并列，AI 全面进入诺奖体系 |
 | 伦理层面 | "AI 之父"开始反思，引发全球讨论 |
 
 #### Hinton 的诺奖演讲核心论点
@@ -130,7 +130,7 @@ Hinton 在 2026 年与多国政府互动，核心建议：
 
 ### 与学界同盟的深化
 
-Hinton 在 2026 年与安全派同盟（[[业界观点/Yoshua_Bengio/index\|Bengio]]、[[业界观点/Ilya_Sutskever/index\|Sutskever]]）的关系更加紧密。
+Hinton 在 2026 年与安全派同盟（[[19_业界观点/Yoshua_Bengio/index\|Bengio]]、[[19_业界观点/Ilya_Sutskever/index\|Sutskever]]）的关系更加紧密。
 
 #### 安全派分工
 
@@ -144,7 +144,7 @@ Hinton 在 2026 年与安全派同盟（[[业界观点/Yoshua_Bengio/index\|Beng
 
 #### 与 LeCun 的公开分歧
 
-Hinton 与 [[业界观点/Yann_LeCun/index\|LeCun]] 在 2026 年的分歧更加公开：
+Hinton 与 [[19_业界观点/Yann_LeCun/index\|LeCun]] 在 2026 年的分歧更加公开：
 
 - LeCun 称"末日论荒谬"
 - Hinton 回应"LeCun 的乐观是不负责任的"
@@ -172,9 +172,9 @@ Hinton 与 [[业界观点/Yann_LeCun/index\|LeCun]] 在 2026 年的分歧更加�
 | 机构 | 创始人 | 角色 |
 |------|--------|------|
 | Hinton Institute | Hinton | 公众警示+政策倡导 |
-| LawZero | [[业界观点/Yoshua_Bengio/index\|Bengio]] | 治理框架+学术研究 |
-| SSI | [[业界观点/Ilya_Sutskever/index\|Sutskever]] | 技术路线（可证明安全） |
-| Anthropic | [[业界观点/Dario_Amodei/Amodei_2026_Update\|Amodei]] | 公司化安全实践 |
+| LawZero | [[19_业界观点/Yoshua_Bengio/index\|Bengio]] | 治理框架+学术研究 |
+| SSI | [[19_业界观点/Ilya_Sutskever/index\|Sutskever]] | 技术路线（可证明安全） |
+| Anthropic | [[19_业界观点/Dario_Amodei/Amodei_2026_Update\|Amodei]] | 公司化安全实践 |
 | CAIS | Dan Hendrycks | 政策倡导+红队 |
 
 ### "AI 时代的奥本海默"叙事
@@ -211,7 +211,7 @@ Hinton 的立场经历明显演变：
 | 2021-2023 | 渐生担忧 |
 | 2023 | 离开 Google 公开警告 |
 | 2024 | 主张"暂停或放缓前沿训练" |
-| 2025 | 支持 [[业界观点/Yoshua_Bengio/index\|Bengio]] 的治理框架 |
+| 2025 | 支持 [[19_业界观点/Yoshua_Bengio/index\|Bengio]] 的治理框架 |
 | 2026 | 强调"能力提升速度远超安全研究" |
 
 ### 关于开源 vs 闭源
@@ -221,8 +221,8 @@ Hinton 的立场偏保守：
 - 反对完全开源前沿模型
 - 支持小模型和工具的开源
 - 担忧开源模型被恶意行为者利用
-- 与 [[业界观点/Yann_LeCun/index\|LeCun]]（激进开源）尖锐对立
-- 与 [[业界观点/Wenfeng_Liang/index\|梁文锋]]（全面开源）有根本分歧
+- 与 [[19_业界观点/Yann_LeCun/index\|LeCun]]（激进开源）尖锐对立
+- 与 [[19_业界观点/Wenfeng_Liang/index\|梁文锋]]（全面开源）有根本分歧
 
 ### 关于 AGI 时间线
 
@@ -252,7 +252,7 @@ Hinton 在 2026 年罕见地触及 AI 意识这一哲学议题：
 
 ### 与图灵奖三巨头的对比
 
-| 维度 | Hinton | [[业界观点/Yann_LeCun/index\|LeCun]] | [[业界观点/Yoshua_Bengio/index\|Bengio]] |
+| 维度 | Hinton | [[19_业界观点/Yann_LeCun/index\|LeCun]] | [[19_业界观点/Yoshua_Bengio/index\|Bengio]] |
 |------|--------|---------|---------|
 | 2026 角色 | 安全倡导者 | 技术乐观派 | 治理框架派 |
 | 主要机构 | Hinton Institute | Meta AI | LawZero |
@@ -263,7 +263,7 @@ Hinton 在 2026 年罕见地触及 AI 意识这一哲学议题：
 
 ### 与诺贝尔奖得主 Hassabis 的对比
 
-| 维度 | Hinton | [[业界观点/Demis_Hassabis/index\|Hassabis]] |
+| 维度 | Hinton | [[19_业界观点/Demis_Hassabis/index\|Hassabis]] |
 |------|--------|---------|
 | 诺奖领域 | 物理学（2024） | 化学（2024） |
 | 2026 角色 | 安全倡导者 | AI for Science 推进者 |
@@ -305,7 +305,7 @@ Hinton 在 2026 年仍是 AI 教育的核心人物：
 - 反向传播算法是所有深度学习课程的必修
 - 他早期的 Coursera 讲座视频仍是经典
 - "深度学习教父"形象被纳入中小学 AI 启蒙教材
-- 与 [[业界观点/Andrej_Karpathy/index\|Karpathy]]、[[业界观点/Andrew_Ng/index\|Andrew Ng]] 形成"教育三巨头"
+- 与 [[19_业界观点/Andrej_Karpathy/index\|Karpathy]]、[[19_业界观点/Andrew_Ng/index\|Andrew Ng]] 形成"教育三巨头"
 
 ### 对科学哲学的辐射
 
@@ -321,10 +321,10 @@ Hinton 2026 年的言论触及科学哲学层面：
 | 时间 | 事件 |
 |------|------|
 | 2023.05 | Hinton 离开 Google 警告风险 |
-| 2023.06 | [[业界观点/Yann_LeCun/index\|LeCun]] 称"末日论荒谬" |
+| 2023.06 | [[19_业界观点/Yann_LeCun/index\|LeCun]] 称"末日论荒谬" |
 | 2024.10 | Hinton 获诺贝尔奖 |
 | 2025.03 | LeCun 重申"LLM 不是 AGI 路径" |
-| 2025.06 | Hinton 与 [[业界观点/Yoshua_Bengio/index\|Bengio]] 联合呼吁治理 |
+| 2025.06 | Hinton 与 [[19_业界观点/Yoshua_Bengio/index\|Bengio]] 联合呼吁治理 |
 | 2026.02 | Hinton 与 LeCun 在 X 平台公开交锋 |
 | 2026.06 | 三巨头路线彻底分流 |
 
@@ -367,8 +367,8 @@ Hinton 2026 年的言论触及科学哲学层面：
 
 Hinton 的风险警示面临多方面批评：
 
-- **[[业界观点/Yann_LeCun/index\|LeCun]] 批评**: "末日论荒谬"，是"对技术的无知"
-- **[[业界观点/Andrew_Ng/index\|Andrew Ng]] 批评**: "担心火星人口过剩"
+- **[[19_业界观点/Yann_LeCun/index\|LeCun]] 批评**: "末日论荒谬"，是"对技术的无知"
+- **[[19_业界观点/Andrew_Ng/index\|Andrew Ng]] 批评**: "担心火星人口过剩"
 - **企业批评**: 担忧过度监管扼杀创新
 - **左翼批评**: 担忧"存在性风险"叙事分散对"现实危害"（偏见、就业）的关注
 
@@ -397,42 +397,42 @@ Hinton 的风险警示面临多方面批评：
 
 ### 图灵奖三巨头网络
 
-- [[业界观点/Geoffrey_Hinton/index]] -- 本页主人物
-- [[业界观点/Geoffrey_Hinton/about]] -- 详细简介
-- [[业界观点/Yann_LeCun/index]] -- 乐观派代表
-- [[业界观点/Yoshua_Bengio/index]] -- 治理派代表
+- [[19_业界观点/Geoffrey_Hinton/index]] -- 本页主人物
+- [[19_业界观点/Geoffrey_Hinton/about]] -- 详细简介
+- [[19_业界观点/Yann_LeCun/index]] -- 乐观派代表
+- [[19_业界观点/Yoshua_Bengio/index]] -- 治理派代表
 
 ### 学术师承网络
 
-- [[业界观点/Ilya_Sutskever/index]] -- 博士生，共同开发 AlexNet
-- [[业界观点/Andrej_Karpathy/index]] -- 深度学习教育者
-- [[业界观点/Fei_Fei_Li/index]] -- ImageNet 推动者，Hinton 模型的数据基础
+- [[19_业界观点/Ilya_Sutskever/index]] -- 博士生，共同开发 AlexNet
+- [[19_业界观点/Andrej_Karpathy/index]] -- 深度学习教育者
+- [[19_业界观点/Fei_Fei_Li/index]] -- ImageNet 推动者，Hinton 模型的数据基础
 
 ### 安全派同盟
 
-- [[业界观点/Yoshua_Bengio/index]] -- LawZero 创始人
-- [[业界观点/Ilya_Sutskever/index]] -- SSI 创始人
-- [[业界观点/Dario_Amodei/Amodei_2026_Update]] -- Anthropic CEO
-- [[业界观点/Mustafa_Suleyman/index]] -- 《The Coming Wave》作者
+- [[19_业界观点/Yoshua_Bengio/index]] -- LawZero 创始人
+- [[19_业界观点/Ilya_Sutskever/index]] -- SSI 创始人
+- [[19_业界观点/Dario_Amodei/Amodei_2026_Update]] -- Anthropic CEO
+- [[19_业界观点/Mustafa_Suleyman/index]] -- 《The Coming Wave》作者
 
 ### 商业与政策
 
-- [[业界观点/Sam_Altman/Sam_Altman_2026_Update]] -- OpenAI CEO，被 Hinton 批评
-- [[业界观点/Elon_Musk/index]] -- 共同呼吁 AI 监管
-- [[业界观点/Bill_Gates/index]] -- AI 社会影响共鸣
+- [[19_业界观点/Sam_Altman/Sam_Altman_2026_Update]] -- OpenAI CEO，被 Hinton 批评
+- [[19_业界观点/Elon_Musk/index]] -- 共同呼吁 AI 监管
+- [[19_业界观点/Bill_Gates/index]] -- AI 社会影响共鸣
 
 ### 中国对应
 
-- [[业界观点/Jie_Tang/index]] -- 智谱 AI，学术驱动对标
-- [[业界观点/Fei_Fei_Li/index]] -- 华人 AI 领袖，以人为本 AI
+- [[19_业界观点/Jie_Tang/index]] -- 智谱 AI，学术驱动对标
+- [[19_业界观点/Fei_Fei_Li/index]] -- 华人 AI 领袖，以人为本 AI
 
 ### 技术与理论
 
-- [[大模型/README]] -- 深度学习与大模型
-- [[入门/AI_History_Timeline]] -- 反向传播与深度学习复兴
-- [[伦理安全/README]] -- AI 安全与对齐
-- [[入门/AI_Ethics_Society]] -- AI 伦理与社会影响
-- [[入门/AI_Future_Trends]] -- AGI 时间线与风险
+- [[05_大模型/README]] -- 深度学习与大模型
+- [[00_入门/AI_History_Timeline]] -- 反向传播与深度学习复兴
+- [[17_伦理安全/README]] -- AI 安全与对齐
+- [[00_入门/AI_Ethics_Society]] -- AI 伦理与社会影响
+- [[00_入门/AI_Future_Trends]] -- AGI 时间线与风险
 
 ---
 

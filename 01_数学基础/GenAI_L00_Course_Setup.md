@@ -548,8 +548,8 @@ OPENAI_API_KEY=sk-你的OpenAI密钥
 
 ## 扩展阅读
 
-- [[学习/courses/microsoft/microsoft_genai_for_beginners]] — 课程总览与章节映射
-- [[入门/GenAI_L01_Intro_to_GenAI_and_LLMs]] — 第 1 课：生成式 AI 与 LLM 简介
-- [[数学基础/AI_Development_Environment_Setup]] — AI 开发环境搭建深度指南
-- [[数学基础/Python_for_AI_Basics]] — Python AI 编程基础
-- [[入门/AI_Tools_Practical_Guide]] — AI 工具实践指南
+- [[90_学习/courses/microsoft/microsoft_genai_for_beginners]] — 课程总览与章节映射
+- [[00_入门/GenAI_L01_Intro_to_GenAI_and_LLMs]] — 第 1 课：生成式 AI 与 LLM 简介
+- [[01_数学基础/AI_Development_Environment_Setup]] — AI 开发环境搭建深度指南
+- [[01_数学基础/Python_for_AI_Basics]] — Python AI 编程基础
+- [[00_入门/AI_Tools_Practical_Guide]] — AI 工具实践指南

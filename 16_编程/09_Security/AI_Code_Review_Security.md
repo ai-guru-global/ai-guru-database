@@ -738,9 +738,9 @@ flowchart LR
 
 ## 11. Related
 
-- [[编程/Security/AI_Code_Security_Audit_Runbook]] — AI 代码安全审计 Runbook (共享: security, code-review, ci-cd)
-- [[编程/Security/AI_Code_Vulnerabilities]] — AI 代码漏洞类型 (共享: vulnerabilities, security, audit)
-- [[编程/Security/SAST_SCA_for_AI_Code]] — SAST/SCA 在 AI 编程中的应用 (共享: sast, sca, code-review)
-- [[编程/Security/Secure_Prompt_Engineering]] — 安全提示工程 (共享: prompt-security, output-filtering)
-- [[编程/Methodology/Vibe_Coding_Production_Practices]] — Vibe Coding 生产实践 (共享: security, production)
-- [[编程/Methodology/Vibe_Coding_Methodology]] — Vibe Coding 方法论 (共享: quality, workflow)
+- [[16_编程/09_Security/AI_Code_Security_Audit_Runbook]] — AI 代码安全审计 Runbook (共享: security, code-review, ci-cd)
+- [[16_编程/09_Security/AI_Code_Vulnerabilities]] — AI 代码漏洞类型 (共享: vulnerabilities, security, audit)
+- [[16_编程/09_Security/SAST_SCA_for_AI_Code]] — SAST/SCA 在 AI 编程中的应用 (共享: sast, sca, code-review)
+- [[16_编程/09_Security/Secure_Prompt_Engineering]] — 安全提示工程 (共享: prompt-security, output-filtering)
+- [[16_编程/03_Methodology/Vibe_Coding_Production_Practices]] — Vibe Coding 生产实践 (共享: security, production)
+- [[16_编程/03_Methodology/Vibe_Coding_Methodology]] — Vibe Coding 方法论 (共享: quality, workflow)

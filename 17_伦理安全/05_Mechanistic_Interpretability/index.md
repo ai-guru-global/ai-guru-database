@@ -15,13 +15,13 @@ tags: [auto-index]
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[伦理安全/Mechanistic_Interpretability/Mechanistic_Interpretability|Mechanistic Interpretability]] | Mechanistic interpretability knowledge system: superposition, circuits and activation patching | interpretability researchers |
-| [[伦理安全/Mechanistic_Interpretability/Mechanistic_Interpretability_for_dummy|Mechanistic Interpretability for dummy]] | Mechanistic interpretability beginner guide: from probes to sparse autoencoders | beginners / interpretability learners |
+| [[17_伦理安全/05_Mechanistic_Interpretability/Mechanistic_Interpretability|Mechanistic Interpretability]] | Mechanistic interpretability knowledge system: superposition, circuits and activation patching | interpretability researchers |
+| [[17_伦理安全/05_Mechanistic_Interpretability/Mechanistic_Interpretability_for_dummy|Mechanistic Interpretability for dummy]] | Mechanistic interpretability beginner guide: from probes to sparse autoencoders | beginners / interpretability learners |
 
 ## Related
 
-- [[伦理安全/index|伦理安全首页]]
-- [[大模型/index|大模型]]
+- [[17_伦理安全/index|伦理安全首页]]
+- [[05_大模型/index|大模型]]
 
 ## 核心知识体系
 
@@ -132,9 +132,9 @@ tags: [auto-index]
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

@@ -18,7 +18,7 @@ relationships:
   - target: "概念/kserve"
     type: runs_on
 sources:
-  - 架构基建/Architecture_Overview/AI_Infrastructure_2026
+  - 12_架构基建/02_Architecture_Overview/AI_Infrastructure_2026
 summary: "Kubernetes 是 CNCF Graduated 的容器编排平台，提供自动化部署、扩缩容、负载均衡和自愈能力，是云原生 AI 工作负载（训练、推理、MLOps）的事实标准运行基座。"
 provenance:
   extracted: 0.8
@@ -116,11 +116,11 @@ Worker Node
 - [[概念/cni]] — CNI
 - [[概念/csi]] — CSI
 - [[概念/rbac]] — RBAC
-- [[架构基建/Architecture_Overview/AI_Infrastructure_2026]] — AI 基础设施 2026
-- [[架构基建/Kubernetes_Core_Components_Deep_Dive]] — K8s 核心组件深度解析
-- [[架构基建/Kubernetes_Networking_Deep_Dive]] — K8s 网络深度解析
-- [[架构基建/Kubernetes_Storage_Deep_Dive]] — K8s 存储深度解析
-- [[运维/Kubernetes_Troubleshooting_Playbook]] — K8s 运维排障 Playbook
+- [[12_架构基建/02_Architecture_Overview/AI_Infrastructure_2026]] — AI 基础设施 2026
+- [[12_架构基建/Kubernetes_Core_Components_Deep_Dive]] — K8s 核心组件深度解析
+- [[12_架构基建/Kubernetes_Networking_Deep_Dive]] — K8s 网络深度解析
+- [[12_架构基建/Kubernetes_Storage_Deep_Dive]] — K8s 存储深度解析
+- [[13_运维/Kubernetes_Troubleshooting_Playbook]] — K8s 运维排障 Playbook
 
 ---
 
@@ -158,7 +158,7 @@ Worker Node
 
 | 发行版 | 厂商 | 特点 | 适用场景 |
 |------|------|------|------|
-| 上游 K8s | CNCF | 标准 | 学习/定制 |
+| 上游 K8s | CNCF | 标准 | 90_学习/定制 |
 | EKS | AWS | 托管 | 云上生产 |
 | GKE | GCP | 托管 | 云上生产 |
 | AKS | Azure | 托管 | 云上生产 |

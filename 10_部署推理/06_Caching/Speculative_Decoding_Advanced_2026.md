@@ -618,9 +618,9 @@ Node 1 (2× A100): 运行 Draft 模型
 
 ## Related
 
-- [[部署推理/Inference_Engines/vLLM_Deep_Dive]]
-- [[部署推理/Caching/Prompt_Caching_and_KV_Cache_Optimization]]
+- [[10_部署推理/02_Inference_Engines/vLLM_Deep_Dive]]
+- [[10_部署推理/06_Caching/Prompt_Caching_and_KV_Cache_Optimization]]
 - [[概念/model-serving]]
-- [[大模型/LLM_Architectures/LLM_Architectures]]
-- [[部署推理/Deployment_Inference_2026]]
+- [[05_大模型/05_LLM_Architectures/LLM_Architectures]]
+- [[10_部署推理/Deployment_Inference_2026]]
 - [[治理/moe-inference-optimization|MoE × 推理优化]] — 投机解码与 MoE 结合

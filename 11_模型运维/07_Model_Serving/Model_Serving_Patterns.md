@@ -16,7 +16,7 @@ sources: []
 
 > **一句话理解**: 选择正确的服务模式是 ML 系统架构的核心决策——在线实时追求低延迟，批量离线追求高吞吐，流式处理追求实时性。多模型路由则进一步优化成本和质量。
 
-> **与 `部署推理/Inference_Engines/` 的边界**: 本文件聚焦 MLOps 视角的**架构模式与决策**，推理引擎目录聚焦具体引擎的**实现细节与调优**。
+> **与 `10_部署推理/02_Inference_Engines/` 的边界**: 本文件聚焦 MLOps 视角的**架构模式与决策**，推理引擎目录聚焦具体引擎的**实现细节与调优**。
 
 ---
 
@@ -443,15 +443,15 @@ Kafka partition 内保证顺序。使用用户 ID 作为 partition key 确保同
 
 ## Related
 
-- [[部署推理/Inference_Engines/LLM_Inference_Engine_Selection_Guide]] — 推理引擎选型
-- [[部署推理/Inference_Engines/vLLM_Deep_Dive]] — vLLM 动态 Batching
-- [[模型运维/CI_CD/Deployment_Strategies]] — 部署策略
-- [[模型运维/Cost/Cost_Optimization_MLOps]] — MLOps 成本优化
-- [[架构基建/AI_Gateway/README]] — AI Gateway 多模型路由
+- [[10_部署推理/02_Inference_Engines/LLM_Inference_Engine_Selection_Guide]] — 推理引擎选型
+- [[10_部署推理/02_Inference_Engines/vLLM_Deep_Dive]] — vLLM 动态 Batching
+- [[11_模型运维/06_CI_CD/Deployment_Strategies]] — 部署策略
+- [[11_模型运维/09_Cost/Cost_Optimization_MLOps]] — MLOps 成本优化
+- [[12_架构基建/11_AI_Gateway/README]] — AI Gateway 多模型路由
 
 ---
 
 *Last updated: 2026-06-25*
 *Version: 1.0.0*
 
-- [[模型运维/README|MLOps 流水线 (MLOps Pipeline)]]
+- [[11_模型运维/README|MLOps 流水线 (MLOps Pipeline)]]

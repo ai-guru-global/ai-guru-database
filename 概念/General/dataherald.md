@@ -8,7 +8,7 @@ relationships:
   - target: "概念/langchain"
     type: related_to
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
 summary: "开源的自然语言转 SQL 引擎，让非技术人员通过自然语言查询数据库，支持多数据库后端和 Schema 理解。"
 provenance:
   extracted: 0.55

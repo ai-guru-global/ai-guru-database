@@ -15,15 +15,15 @@ tags: [auto-index]
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[模型训练/Alignment/alignment-rlhf|alignment-rlhf]] | RLHF alignment practice: reward modeling and PPO training | alignment engineers / LLM researchers |
-| [[模型训练/Alignment/GRPO_and_New_Alignment_Methods|GRPO and New Alignment Methods]] | GRPO and new alignment methods: DeepSeek's innovative approach | alignment researchers / LLM engineers |
-| [[模型训练/Alignment/TRL_RLHF_DPO_Guide|TRL RLHF DPO Guide]] | TRL library hands-on guide: RLHF, DPO and PPO training | LLM practitioners / alignment engineers |
+| [[07_模型训练/06_Alignment/alignment-rlhf|alignment-rlhf]] | RLHF alignment practice: reward modeling and PPO training | alignment engineers / LLM researchers |
+| [[07_模型训练/06_Alignment/GRPO_and_New_Alignment_Methods|GRPO and New Alignment Methods]] | GRPO and new alignment methods: DeepSeek's innovative approach | alignment researchers / LLM engineers |
+| [[07_模型训练/06_Alignment/TRL_RLHF_DPO_Guide|TRL RLHF DPO Guide]] | TRL library hands-on guide: RLHF, DPO and PPO training | LLM practitioners / alignment engineers |
 
 ## Related
 
-- [[模型训练/index|模型训练首页]]
-- [[伦理安全/Value_Alignment/index|Value Alignment]]
-- [[论文精读/Alignment/index|Alignment 论文]]
+- [[07_模型训练/index|模型训练首页]]
+- [[17_伦理安全/02_Value_Alignment/index|Value Alignment]]
+- [[20_论文精读/06_Alignment/index|Alignment 论文]]
 
 ## 进阶知识拓展
 
@@ -61,9 +61,9 @@ tags: [auto-index]
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

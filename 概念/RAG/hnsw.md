@@ -152,8 +152,8 @@ results = collection.search(
 - [[概念/RAG/ivf|IVF]] — 另一种向量索引
 - [[概念/RAG/vector-database|Vector Database]] — 向量数据库
 - [[概念/RAG/bm25|BM25]] — 关键词检索（互补）
-- [[RAG系统/Vector_Databases/Vector_Databases|向量数据库专题]]
-- [[RAG系统/Advanced_RAG/RAG_Retrieval_Latency_Optimization|检索延迟优化]]
+- [[14_RAG系统/03_Vector_Databases/Vector_Databases|向量数据库专题]]
+- [[14_RAG系统/04_Advanced_RAG/RAG_Retrieval_Latency_Optimization|检索延迟优化]]
 
 ## 2026 HNSW 生态现状
 

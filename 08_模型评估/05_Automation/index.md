@@ -14,15 +14,15 @@ sources: []
 
 | 文件 | 说明 |
 |------|------|
-| [[模型评估/Automation/Evaluation_Automation_2026|评估自动化 2026]] | 自动化评估体系全景 |
-| [[模型评估/Automation/Statistical_Evaluation_Methods|统计评估方法]] | 评估中的统计学方法 |
-| [[模型评估/Automation/Evaluation_Report_Template|评估报告模板]] | 模型评估报告标准模板 |
-| [[模型评估/Automation/AB_Testing_Template|A/B 测试模板]] | 在线 A/B 测试标准模板 |
+| [[08_模型评估/05_Automation/Evaluation_Automation_2026|评估自动化 2026]] | 自动化评估体系全景 |
+| [[08_模型评估/05_Automation/Statistical_Evaluation_Methods|统计评估方法]] | 评估中的统计学方法 |
+| [[08_模型评估/05_Automation/Evaluation_Report_Template|评估报告模板]] | 模型评估报告标准模板 |
+| [[08_模型评估/05_Automation/AB_Testing_Template|A/B 测试模板]] | 在线 A/B 测试标准模板 |
 
 ## Related
 
-- [[模型评估/Online_Evaluation_index|Online Evaluation]]
-- [[测试/Testing_Frameworks/index|Testing Frameworks]]
+- [[08_模型评估/Online_Evaluation_index|Online Evaluation]]
+- [[09_测试/02_Testing_Frameworks/index|Testing Frameworks]]
 
 ## 进阶知识拓展
 
@@ -60,9 +60,9 @@ sources: []
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

@@ -15,13 +15,13 @@ Agent 评估（Agent Evaluation）— 智能体系统的端到端评估方法论
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[测试/Agent_Evaluation_Deep_Dive|Agent Evaluation Deep Dive]] | Agent evaluation deep dive: trajectory evaluation, tool calling correctness and task completion | agent developers / evaluation engineers |
+| [[09_测试/Agent_Evaluation_Deep_Dive|Agent Evaluation Deep Dive]] | Agent evaluation deep dive: trajectory evaluation, tool calling correctness and task completion | agent developers / evaluation engineers |
 
 ## Related
 
-- [[测试/index|测试首页]]
-- [[智能体/Agent_Evaluation/index|智能体 Agent Evaluation]]
-- [[模型评估/index|模型评估]]
+- [[09_测试/index|测试首页]]
+- [[15_智能体/07_Agent_Evaluation/index|智能体 Agent Evaluation]]
+- [[08_模型评估/index|模型评估]]
 
 ## 核心概念
 

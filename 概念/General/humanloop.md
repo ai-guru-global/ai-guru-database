@@ -10,7 +10,7 @@ relationships:
   - target: "概念/promptfoo"
     type: related_to
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
 summary: "面向企业的 LLM Prompt 工程与评估平台，提供 Prompt 版本管理、A/B 测试、人类反馈收集和自动化评估的全流程工具。"
 provenance:
   extracted: 0.55

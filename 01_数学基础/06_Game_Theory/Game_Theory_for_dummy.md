@@ -208,6 +208,6 @@ GPU 集群分配:
 
 ## 下一步学习
 
-- 想了解数学细节？→ [[数学基础/Game_Theory/Game_Theory|博弈论总论]]
-- 想了解 AI 对齐？→ [[数学基础/Game_Theory/Game_Theory_AI_Alignment|博弈论与 AI 对齐]]
-- 想了解多 Agent？→ [[强化学习/Multi_Agent_RL/|多智能体强化学习]]
+- 想了解数学细节？→ [[01_数学基础/06_Game_Theory/Game_Theory|博弈论总论]]
+- 想了解 AI 对齐？→ [[01_数学基础/06_Game_Theory/Game_Theory_AI_Alignment|博弈论与 AI 对齐]]
+- 想了解多 Agent？→ [[06_强化学习/Multi_Agent_RL/|多智能体强化学习]]

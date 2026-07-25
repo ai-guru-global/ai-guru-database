@@ -10,7 +10,7 @@ relationships:
   - target: "概念/langgraph"
     type: related_to
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
 summary: "基于 MemGPT 论文开发的有状态 Agent 框架，通过分层记忆管理让 LLM 突破上下文窗口限制，实现自主式长期交互。"
 provenance:
   extracted: 0.55

@@ -36,8 +36,8 @@ tier: core
 created: 2026-06-25
 updated: 2026-07-21
 sources:
-  - 部署推理/Inference_Performance/Long_Context_Inference_2026.md
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 10_部署推理/04_Inference_Performance/Long_Context_Inference_2026.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
 ---
 
 # TTFT（Time To First Token）

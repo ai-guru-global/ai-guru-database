@@ -11,11 +11,11 @@ relationships:
     type: related_to
   - target: "概念/heterogeneous-gpu"
     type: related_to
-  - target: "部署推理/Inference_Performance/Inference_Terms_for_dummy"
+  - target: "10_部署推理/04_Inference_Performance/Inference_Terms_for_dummy"
     type: simplified_by
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
-  - 部署推理/Inference_Performance/Inference_Terms_for_dummy.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
+  - 10_部署推理/04_Inference_Performance/Inference_Terms_for_dummy.md
 summary: "GPU 互联是分布式训练/推理的通信瓶颈。NVLink 5.0 达 1.8 TB/s 双向带宽，是 PCIe 5.0 的 14 倍。AI Stack APG 卡间互联达 700 GB/s，机间 1.6T。"
 provenance:
   extracted: 0.55
@@ -191,7 +191,7 @@ NVSwitch 优势：
 - [[概念/distributed-parallelism]] — 分布式并行策略（互联是基础）
 - [[概念/rdma-roce]] — RDMA/RoCE（机间网络通信）
 - [[概念/heterogeneous-gpu]] — 异构 GPU（国产互联挑战）
-- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack（APG 互联架构）
+- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack（APG 互联架构）
 
 ---
 

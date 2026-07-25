@@ -94,9 +94,9 @@ ColPali (ColBERT + PaliGemma) 是目前的 SOTA 方案。
 
 ## Related
 
-- [[RAG系统/Advanced_RAG/RAG_Advanced_2026]] — 传统 RAG 的高级优化技术
-- [[大模型/Multimodal_Models/Native_Multimodal_Architectures]] — 底层多模态模型架构
-- [[计算机视觉/Video_Generation/Video_Generation_2026]] — 视频理解与生成的互逆过程
+- [[14_RAG系统/04_Advanced_RAG/RAG_Advanced_2026]] — 传统 RAG 的高级优化技术
+- [[05_大模型/10_Multimodal_Models/Native_Multimodal_Architectures]] — 底层多模态模型架构
+- [[04_计算机视觉/07_Video_Generation/Video_Generation_2026]] — 视频理解与生成的互逆过程
 - [[概念/vector-database]] — 向量数据库基础
 
 ---
@@ -139,9 +139,9 @@ ColPali (ColBERT + PaliGemma) 是目前的 SOTA 方案。
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

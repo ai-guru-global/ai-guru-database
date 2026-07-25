@@ -231,8 +231,8 @@ def numerical_health_check(model, loss, grad_norm):
 
 ## 相关文档
 
-- [[数学基础/Numerical_Methods/Floating_Point_Precision|浮点精度详解]]
-- [[数学基础/Numerical_Methods/Sparse_Matrix_Computation|稀疏矩阵计算]]
-- [[数学基础/Numerical_Methods/Numerical_Stability|数值稳定性]]
-- [[模型训练/Distributed_Training/|分布式训练]] — 大规模数值计算实践
-- [[部署推理/Inference_Engines/|推理引擎]] — 推理中的数值优化
+- [[01_数学基础/05_Numerical_Methods/Floating_Point_Precision|浮点精度详解]]
+- [[01_数学基础/05_Numerical_Methods/Sparse_Matrix_Computation|稀疏矩阵计算]]
+- [[01_数学基础/05_Numerical_Methods/Numerical_Stability|数值稳定性]]
+- [[07_模型训练/04_Distributed_Training/|分布式训练]] — 大规模数值计算实践
+- [[10_部署推理/02_Inference_Engines/|推理引擎]] — 推理中的数值优化

@@ -49,7 +49,7 @@ sources: []
 
 ### 1.2 本篇定位
 
-本篇是可视化最佳实践的**深度版**，与 [[可视化/Best_Practices/Data_Visualization_Best_Practices|速查版]] 互补，提供更完整的方法论、反模式与实现指引。
+本篇是可视化最佳实践的**深度版**，与 [[94_可视化/Best_Practices/Data_Visualization_Best_Practices|速查版]] 互补，提供更完整的方法论、反模式与实现指引。
 
 ---
 
@@ -441,15 +441,15 @@ plt.show()
 
 ## 关联
 
-- [[可视化/index|可视化首页]]
-- [[可视化/Best_Practices/index|Best Practices]]
-- [[可视化/Best_Practices/Data_Visualization_Best_Practices|数据可视化最佳实践（速查）]]
-- [[可视化/Best_Practices/Visualization_for_dummy|Visualization for dummy]]
-- [[可视化/Training_Viz/index|Training Viz]]
-- [[可视化/Evaluation_Viz/index|Evaluation Viz]]
-- [[模型评估/index|模型评估]]
-- [[机器学习/index|机器学习]]
-- [[行业应用/index|行业应用]]
+- [[94_可视化/index|可视化首页]]
+- [[94_可视化/Best_Practices/index|Best Practices]]
+- [[94_可视化/Best_Practices/Data_Visualization_Best_Practices|数据可视化最佳实践（速查）]]
+- [[94_可视化/Best_Practices/Visualization_for_dummy|Visualization for dummy]]
+- [[94_可视化/Training_Viz/index|Training Viz]]
+- [[94_可视化/Evaluation_Viz/index|Evaluation Viz]]
+- [[08_模型评估/index|模型评估]]
+- [[02_机器学习/index|机器学习]]
+- [[18_行业应用/index|行业应用]]
 
 ---
 

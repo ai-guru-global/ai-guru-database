@@ -19,7 +19,7 @@ sources: []
 
 ## 本课概览
 
-本课是 Microsoft AI For Beginners 第五模块（自然语言处理，NLP）的第 5 课，紧接 [[学习/courses/microsoft/L16_Recurrent_Neural_Networks|L16 循环神经网络]]，专注于**生成式序列建模**。前面我们主要用 RNN 做判别任务（如文本分类），本课则把它当成**语言模型（Language Model）**：给定已出现的字符序列，预测下一个字符的概率分布。通过反复自回归采样，RNN 可以逐字生成新文本。
+本课是 Microsoft AI For Beginners 第五模块（自然语言处理，NLP）的第 5 课，紧接 [[90_学习/courses/microsoft/L16_Recurrent_Neural_Networks|L16 循环神经网络]]，专注于**生成式序列建模**。前面我们主要用 RNN 做判别任务（如文本分类），本课则把它当成**语言模型（Language Model）**：给定已出现的字符序列，预测下一个字符的概率分布。通过反复自回归采样，RNN 可以逐字生成新文本。
 
 为了降低复杂度，本课采用**字符级分词（character-level tokenization）**：把文本拆成单个字符/字母，而不是单词。这样做词汇表极小、容易训练，且能直观展示 RNN 如何捕捉拼写、标点和短词模式。课程还介绍了**温度采样（temperature sampling）**这一控制生成多样性的关键技巧，并提供了 PyTorch 与 TensorFlow/Keras 双版本可运行 Notebook。
 
@@ -140,15 +140,15 @@ def generate(model, prompt, n_chars=200, temperature=1.0):
   - 评估生成文本质量的定量指标，如困惑度（Perplexity）、BLEU、ROUGE。
 
 - **延伸**：
-  - 想深入序列建模基础 → [[大模型/Sequence_Models/Sequence_Models]]
-  - 想了解 Transformer 与 BERT → 本课程 [[学习/courses/microsoft/L18_Transformers_and_BERT|L18 Transformer 与 BERT]] 或 [[大模型/Transformer_Revolution/Transformer_Revolution]]
-  - 想了解现代大语言模型与提示工程 → [[大模型/LLM_Architectures/LLM_Architectures]]、[[大模型/Prompt_Engineering/Prompt_Engineering]]
-  - 想动手做机器翻译或图像描述 → 关注 sequence-to-sequence 与注意力机制，参阅 [[大模型/Sequence_Models/Sequence_Models]] 中的编码器-解码器部分
+  - 想深入序列建模基础 → [[05_大模型/02_Sequence_Models/Sequence_Models]]
+  - 想了解 Transformer 与 BERT → 本课程 [[90_学习/courses/microsoft/L18_Transformers_and_BERT|L18 Transformer 与 BERT]] 或 [[05_大模型/04_Transformer_Revolution/Transformer_Revolution]]
+  - 想了解现代大语言模型与提示工程 → [[05_大模型/05_LLM_Architectures/LLM_Architectures]]、[[05_大模型/08_Prompt_Engineering/Prompt_Engineering]]
+  - 想动手做机器翻译或图像描述 → 关注 sequence-to-sequence 与注意力机制，参阅 [[05_大模型/02_Sequence_Models/Sequence_Models]] 中的编码器-解码器部分
 
 ## 相关阅读
 
-- 课程索引：[[学习/courses/microsoft/microsoft_ai_for_beginners]]
-- 本库相关页面：[[大模型/Sequence_Models/Sequence_Models]]
+- 课程索引：[[90_学习/courses/microsoft/microsoft_ai_for_beginners]]
+- 本库相关页面：[[05_大模型/02_Sequence_Models/Sequence_Models]]
 
 ## 核心知识框架
 

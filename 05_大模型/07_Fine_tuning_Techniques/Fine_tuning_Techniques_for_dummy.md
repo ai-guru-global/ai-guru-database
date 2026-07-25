@@ -478,7 +478,7 @@ ChatGPT: "抱歉,我不能提供非法活动的指导。
 
 - **前置知识**: [大语言模型架构 (小白版)](../LLM_Architectures/LLM_Architectures_for_dummy.md)
 - **替代方案**: [提示词工程 (小白版)](../Prompt_Engineering/Prompt_Engineering_for_dummy.md)
-- **进阶应用**: [RAG 系统 (小白版)](RAG系统/RAG_Fundamentals/RAG_Systems_for_dummy.md)
+- **进阶应用**: [RAG 系统 (小白版)](14_RAG系统/01_RAG_Fundamentals/RAG_Systems_for_dummy.md)
 
 ---
 
@@ -511,9 +511,9 @@ ChatGPT: "抱歉,我不能提供非法活动的指导。
 
 ## 相关链接
 
-- [[大模型/Fine_tuning_Techniques/Fine_tuning_Techniques|微调技术 (完整版)]] — 本篇的小白版对应的详细版
-- [[大模型/Fine_tuning_Techniques/README|微调技术概览]] — 微调技术主题导览
+- [[05_大模型/07_Fine_tuning_Techniques/Fine_tuning_Techniques|微调技术 (完整版)]] — 本篇的小白版对应的详细版
+- [[05_大模型/07_Fine_tuning_Techniques/README|微调技术概览]] — 微调技术主题导览
 - [[概念/Training/fine-tuning-techniques|微调技术]] — 微调技术概念卡片
 - [[概念/Training/lora-qlora-sft-rlhf-dpo|LoRA/QLoRA/SFT/RLHF/DPO]] — 微调方法串讲
-- [[大模型/Fine_tuning_Techniques/LoRA_QLoRA_SFT_RLHF_DPO_in_Detail|LoRA/QLoRA/SFT/RLHF/DPO 详解]] — 各微调方法详解
-- [[大模型/Fine_tuning_Techniques/PEFT_2026|PEFT 2026 完全指南]] — 参数高效微调最新进展
+- [[05_大模型/07_Fine_tuning_Techniques/LoRA_QLoRA_SFT_RLHF_DPO_in_Detail|LoRA/QLoRA/SFT/RLHF/DPO 详解]] — 各微调方法详解
+- [[05_大模型/07_Fine_tuning_Techniques/PEFT_2026|PEFT 2026 完全指南]] — 参数高效微调最新进展

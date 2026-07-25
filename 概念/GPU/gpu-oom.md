@@ -67,7 +67,7 @@ kubectl logs <pod> -n <ns> --previous | grep -i "out of memory"
 - [[概念/qlora|QLoRA]]
 - [[概念/hami|HAMi]]
 - [[概念/vllm|vLLM]]
-- [[运维/SRE_Reliability/GPU_OOM_Troubleshooting_Guide|GPU OOM 排障指南]]
+- [[13_运维/02_SRE_Reliability/GPU_OOM_Troubleshooting_Guide|GPU OOM 排障指南]]
 
 ---
 

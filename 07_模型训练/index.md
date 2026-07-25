@@ -12,22 +12,22 @@ This page indexes the contents of `模型训练`.
 
 ## Subdirectories
 
-- [[模型训练/Alignment/index|Alignment]]
-- [[模型训练/Compression/index|Compression]]
-- [[模型训练/Data/index|Data]]
-- [[模型训练/Distributed_Training/index|Distributed Training]]
-- [[模型训练/Monitoring/index|Monitoring]]
-- [[模型训练/Optimization/index|Optimization]]
+- [[07_模型训练/06_Alignment/index|Alignment]]
+- [[07_模型训练/05_Compression/index|Compression]]
+- [[07_模型训练/02_Data/index|Data]]
+- [[07_模型训练/04_Distributed_Training/index|Distributed Training]]
+- [[07_模型训练/07_Monitoring/index|Monitoring]]
+- [[07_模型训练/03_Optimization/index|Optimization]]
 
 ## Files
 
-- [[模型训练/Data_and_FineTuning_for_dummy|Data And Finetuning For Dummy]]
-- [[模型训练/Hello_Agents_L11_Agentic_RL|Hello Agents L11 Agentic RL]]
-- [[模型训练/Model-Training-in-nutshell|Model Training In Nutshell]]
-- [[模型训练/Model_Training_for_dummy|Model Training For Dummy]]
-- [[模型训练/README|README]]
-- [[模型训练/README_for_dummy|README For Dummy]]
-- [[模型训练/Training_Cost_Optimization_and_FinOps_2026|Training Cost Optimization And Finops 2026]]
+- [[07_模型训练/Data_and_FineTuning_for_dummy|Data And Finetuning For Dummy]]
+- [[07_模型训练/Hello_Agents_L11_Agentic_RL|Hello Agents L11 Agentic RL]]
+- [[07_模型训练/Model-Training-in-nutshell|Model Training In Nutshell]]
+- [[07_模型训练/Model_Training_for_dummy|Model Training For Dummy]]
+- [[07_模型训练/README|README]]
+- [[07_模型训练/README_for_dummy|README For Dummy]]
+- [[07_模型训练/Training_Cost_Optimization_and_FinOps_2026|Training Cost Optimization And Finops 2026]]
 
 ## 进阶知识拓展
 
@@ -65,9 +65,9 @@ This page indexes the contents of `模型训练`.
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

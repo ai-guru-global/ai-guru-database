@@ -263,15 +263,15 @@ print(answer)
 
 ### 前置知识
 - [图像分类与检测](../Image_Classification_Detection/Image_Classification_Detection.md) — CNN/ViT 视觉编码器基础
-- [Transformer 革命](大模型/Transformer_Revolution/Transformer_Revolution.md) — 注意力机制和 ViT
-- [大语言模型架构](大模型/LLM_Architectures/LLM_Architectures.md) — LLM 作为多模态模型的"大脑"
+- [Transformer 革命](05_大模型/04_Transformer_Revolution/Transformer_Revolution.md) — 注意力机制和 ViT
+- [大语言模型架构](05_大模型/05_LLM_Architectures/LLM_Architectures.md) — LLM 作为多模态模型的"大脑"
 
 ### 进阶方向
 - [图像分割](../Segmentation/Segmentation.md) — SAM 的多模态分割能力
 - [生成模型](../Generative_Models/Generative_Models.md) — 文本引导的图像生成（DALL-E、SD）
-- [AI 智能体](../../智能体/Agent_Foundations/AI_Agents.md) — 多模态 Agent 的视觉感知能力
-- [具身智能](强化学习/Robotics_Embodied_AI/Embodied_AI_2026.md) — VLA 模型: 视觉-语言-动作端到端机器人控制
-- [微调技术](大模型/Fine_tuning_Techniques/Fine_tuning_Techniques.md) — 多模态模型的微调方法
+- [AI 智能体](../../15_智能体/01_Agent_Foundations/AI_Agents.md) — 多模态 Agent 的视觉感知能力
+- [具身智能](06_强化学习/05_Robotics_Embodied_AI/Embodied_AI_2026.md) — VLA 模型: 视觉-语言-动作端到端机器人控制
+- [微调技术](05_大模型/07_Fine_tuning_Techniques/Fine_tuning_Techniques.md) — 多模态模型的微调方法
 
 ---
 
@@ -316,9 +316,9 @@ print(answer)
 
 ## 相关链接
 
-- [[计算机视觉/Multimodal_Vision/Multimodal_Vision_for_dummy|多模态视觉 (小白版)]] — 本篇的零基础版本
-- [[计算机视觉/Multimodal_Vision/index|多模态视觉索引]] — 主题导览
-- [[计算机视觉/Multimodal_Vision/CLIP_Deep_Dive|CLIP 深度解析]] — 多模态视觉里程碑模型
-- [[计算机视觉/Multimodal_Vision/Vision_Language_Models_2026|视觉语言模型 2026]] — VLM 前沿
-- [[大模型/Multimodal_Models/Multimodal_Architectures_2026|多模态架构 2026]] — 多模态架构
+- [[04_计算机视觉/08_Multimodal_Vision/Multimodal_Vision_for_dummy|多模态视觉 (小白版)]] — 本篇的零基础版本
+- [[04_计算机视觉/08_Multimodal_Vision/index|多模态视觉索引]] — 主题导览
+- [[04_计算机视觉/08_Multimodal_Vision/CLIP_Deep_Dive|CLIP 深度解析]] — 多模态视觉里程碑模型
+- [[04_计算机视觉/08_Multimodal_Vision/Vision_Language_Models_2026|视觉语言模型 2026]] — VLM 前沿
+- [[05_大模型/10_Multimodal_Models/Multimodal_Architectures_2026|多模态架构 2026]] — 多模态架构
 - [[概念/Vision/multimodal-vision|多模态视觉]] — 概念卡片

@@ -173,8 +173,8 @@ curl -X POST http://<service>/predict \
 - [[概念/mlflow|MLflow]]
 - [[概念/kserve|KServe]]
 - [[概念/model-rollback|Model Rollback]]
-- [[部署推理/Model_Hot_Reload_and_Rollback_Runbook|LLM 模型热加载与回滚 Runbook]]
-- [[模型运维/Experiment_Tracking/Model_Registry_and_Cards_Deep_Dive|模型注册与模型卡]]
+- [[10_部署推理/Model_Hot_Reload_and_Rollback_Runbook|LLM 模型热加载与回滚 Runbook]]
+- [[11_模型运维/04_Experiment_Tracking/Model_Registry_and_Cards_Deep_Dive|模型注册与模型卡]]
 
 ## MLOps核心流程对比
 

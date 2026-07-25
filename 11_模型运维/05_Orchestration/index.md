@@ -8,20 +8,20 @@ sources: []
 
 # Orchestration
 
-This page indexes the contents of `模型运维/Orchestration`.
+This page indexes the contents of `11_模型运维/Orchestration`.
 
 ## Files
 
-- [[模型运维/Orchestration/Annotation_Pipeline|Annotation Pipeline]]
-- [[模型运维/Orchestration/Data_Pipeline_Orchestration|Data Pipeline Orchestration]]
-- [[模型运维/Orchestration/Data_Quality_Management|Data Quality Management]]
-- [[模型运维/Orchestration/Data_Versioning_DVC_LakeFS|Data Versioning DVC Lakefs]]
-- [[模型运维/Orchestration/DVC_Deep_Dive|DVC Deep Dive]]
-- [[模型运维/Orchestration/Kubeflow_Deep_Dive|Kubeflow Deep Dive]]
-- [[模型运维/Orchestration/LakeFS_Deep_Dive|Lakefs Deep Dive]]
-- [[模型运维/Orchestration/Prefect_Deep_Dive|Prefect Deep Dive]]
-- [[模型运维/Orchestration/Privacy_Compliance_Pipeline|Privacy Compliance Pipeline]]
-- [[模型运维/Orchestration/RAG_Pipeline_Ops|RAG Pipeline Ops]]
+- [[11_模型运维/05_Orchestration/Annotation_Pipeline|Annotation Pipeline]]
+- [[11_模型运维/05_Orchestration/Data_Pipeline_Orchestration|Data Pipeline Orchestration]]
+- [[11_模型运维/05_Orchestration/Data_Quality_Management|Data Quality Management]]
+- [[11_模型运维/05_Orchestration/Data_Versioning_DVC_LakeFS|Data Versioning DVC Lakefs]]
+- [[11_模型运维/05_Orchestration/DVC_Deep_Dive|DVC Deep Dive]]
+- [[11_模型运维/05_Orchestration/Kubeflow_Deep_Dive|Kubeflow Deep Dive]]
+- [[11_模型运维/05_Orchestration/LakeFS_Deep_Dive|Lakefs Deep Dive]]
+- [[11_模型运维/05_Orchestration/Prefect_Deep_Dive|Prefect Deep Dive]]
+- [[11_模型运维/05_Orchestration/Privacy_Compliance_Pipeline|Privacy Compliance Pipeline]]
+- [[11_模型运维/05_Orchestration/RAG_Pipeline_Ops|RAG Pipeline Ops]]
 
 ## MLOps核心流程对比
 
@@ -156,12 +156,12 @@ This page indexes the contents of `模型运维/Orchestration`.
 
 | 关联主题 | 关系 | 参考路径 |
 |----------|------|----------|
-| 模型训练 | 上游输入 | 模型训练/ |
-| 模型评估 | 质量门禁 | 模型评估/ |
-| 部署推理 | 服务化交付 | 部署推理/ |
-| 架构基建 | 底层支撑 | 架构基建/ |
-| 测试 | 质量保障 | 测试/ |
-| 运维 | 通用运维实践 | 运维/ |
+| 模型训练 | 上游输入 | 07_模型训练/ |
+| 模型评估 | 质量门禁 | 08_模型评估/ |
+| 部署推理 | 服务化交付 | 10_部署推理/ |
+| 架构基建 | 底层支撑 | 12_架构基建/ |
+| 测试 | 质量保障 | 09_测试/ |
+| 运维 | 通用运维实践 | 13_运维/ |
 
 ## 快速自检清单
 

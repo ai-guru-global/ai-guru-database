@@ -130,7 +130,7 @@ sources: []
 
 - **Read/Write/Edit**:文件操作
 - **Glob/Grep**:代码搜索
-- **Bash**:终端命令(测试/构建/git)
+- **Bash**:终端命令(09_测试/构建/git)
 - **WebFetch**:HTTP 请求(查文档/API)
 - **MCP Server**:对接 GitHub/Slack/Linear/Jira
 - **Code Search**:Tree-sitter/AST 搜索

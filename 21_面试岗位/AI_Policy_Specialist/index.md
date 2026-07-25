@@ -15,12 +15,12 @@ AI 政策专家 — 关注 AI 监管框架、伦理治理（ethics governance）
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[面试岗位/AI_Policy_Specialist/AI_Policy_Specialist|AI Policy Specialist]] | 岗位面试全攻略：全球 AI 法规对比、伦理原则与治理框架 | policy / governance candidates |
+| [[21_面试岗位/AI_Policy_Specialist/AI_Policy_Specialist|AI Policy Specialist]] | 岗位面试全攻略：全球 AI 法规对比、伦理原则与治理框架 | policy / governance candidates |
 
 ## Related
 
-- [[面试岗位/AI_Security_Engineer/index|AI Security Engineer]]
-- [[伦理安全/Value_Alignment/index|Value Alignment]]
+- [[21_面试岗位/AI_Security_Engineer/index|AI Security Engineer]]
+- [[17_伦理安全/02_Value_Alignment/index|Value Alignment]]
 - [[治理/plan/index|治理 Plan]]
 
 ## 岗位核心能力模型
@@ -38,7 +38,7 @@ AI 政策专家 — 关注 AI 监管框架、伦理治理（ethics governance）
 | 轮次 | 内容 | 时长 | 考察重点 |
 |------|------|------|----------|
 | 简历筛选 | HR初筛 | - | 背景匹配度 |
-| 技术笔试 | 编程/选择题 | 60-90min | 基础功底 |
+| 技术笔试 | 16_编程/选择题 | 60-90min | 基础功底 |
 | 技术一面 | 算法+项目 | 45-60min | 编码能力+项目深度 |
 | 技术二面 | 系统设计+深度 | 45-60min | 架构思维+技术广度 |
 | 技术三面 | 综合+前沿 | 30-45min | 技术视野+潜力 |

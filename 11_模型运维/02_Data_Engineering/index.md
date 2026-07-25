@@ -15,14 +15,14 @@ tags: [auto-index]
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[模型运维/Data_Engineering/Data_Pipeline_for_ML|Data Pipeline for ML]] | ML data pipeline: ETL, feature extraction and data version management | data engineers / MLOps |
-| [[模型运维/Data_Engineering/Data_Validation_and_Quality|Data Validation and Quality]] | Data validation and quality: schema checking, anomaly detection and data lineage | data engineers / data quality teams |
+| [[11_模型运维/02_Data_Engineering/Data_Pipeline_for_ML|Data Pipeline for ML]] | ML data pipeline: ETL, feature extraction and data version management | data engineers / MLOps |
+| [[11_模型运维/02_Data_Engineering/Data_Validation_and_Quality|Data Validation and Quality]] | Data validation and quality: schema checking, anomaly detection and data lineage | data engineers / data quality teams |
 
 ## Related
 
-- [[模型运维/Feature_Store/index|Feature Store]]
-- [[模型运维/CI_CD/index|CI/CD]]
-- [[面试岗位/Data_Engineer/index|Data Engineer]]
+- [[11_模型运维/03_Feature_Store/index|Feature Store]]
+- [[11_模型运维/06_CI_CD/index|CI/CD]]
+- [[21_面试岗位/Data_Engineer/index|Data Engineer]]
 
 ## MLOps核心流程对比
 
@@ -157,12 +157,12 @@ tags: [auto-index]
 
 | 关联主题 | 关系 | 参考路径 |
 |----------|------|----------|
-| 模型训练 | 上游输入 | 模型训练/ |
-| 模型评估 | 质量门禁 | 模型评估/ |
-| 部署推理 | 服务化交付 | 部署推理/ |
-| 架构基建 | 底层支撑 | 架构基建/ |
-| 测试 | 质量保障 | 测试/ |
-| 运维 | 通用运维实践 | 运维/ |
+| 模型训练 | 上游输入 | 07_模型训练/ |
+| 模型评估 | 质量门禁 | 08_模型评估/ |
+| 部署推理 | 服务化交付 | 10_部署推理/ |
+| 架构基建 | 底层支撑 | 12_架构基建/ |
+| 测试 | 质量保障 | 09_测试/ |
+| 运维 | 通用运维实践 | 13_运维/ |
 
 ## 快速自检清单
 

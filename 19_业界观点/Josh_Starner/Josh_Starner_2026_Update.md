@@ -59,7 +59,7 @@ Josh Starmer 的核心方法论是"**直觉优先于数学**"：
 | 鼓励式语气 | "Bam!"、轻松幽默，降低焦虑 |
 | 循序渐进 | 从 1 分钟概念到 30 分钟深度讲解 |
 
-这种方法论对 AI 教育（尤其降低入门门槛）有重要启发，关联 [[学习/index|学习]] 章节的教学法讨论。
+这种方法论对 AI 教育（尤其降低入门门槛）有重要启发，关联 [[90_学习/index|学习]] 章节的教学法讨论。
 
 ### 2026 年内容版图
 
@@ -81,7 +81,7 @@ StatQuest 在 AI 教育生态中扮演独特角色：
 |------|------------------|
 | 受众 | 零基础到中级学习者 |
 | 差异化 | 直觉 + 可视化，非数学推导 |
-| 补充性 | 与 [[业界观点/Andrew_Ng/about|吴恩达]]（系统课程）、3Blue1Brown（数学直觉）互补 |
+| 补充性 | 与 [[19_业界观点/Andrew_Ng/about|吴恩达]]（系统课程）、3Blue1Brown（数学直觉）互补 |
 | 影响 | 数百万学习者通过 StatQuest 入门 AI/统计 |
 
 ---
@@ -105,20 +105,20 @@ Josh Starmer 坚信复杂技术不应是精英特权，任何人都能通过正�
 | 教育者 | 风格 | 强项 |
 |--------|------|------|
 | **Josh Starmer** | 幽默 + 直觉 + 可视化 | 统计/ML/DL 全谱系入门 |
-| [[业界观点/Andrew_Ng/about\|吴恩达]] | 系统 + 工程 | 课程体系化、实战 |
-| [[业界观点/3Blue1Brown/about\|3Blue1Brown]] | 数学美学 + 动画 | 线代/微积分/神经网络直觉 |
-| [[业界观点/Andrej_Karpathy/about\|Karpathy]] | 代码 + 第一性原理 | 从零实现 |
+| [[19_业界观点/Andrew_Ng/about\|吴恩达]] | 系统 + 工程 | 课程体系化、实战 |
+| [[19_业界观点/3Blue1Brown/about\|3Blue1Brown]] | 数学美学 + 动画 | 线代/微积分/神经网络直觉 |
+| [[19_业界观点/Andrej_Karpathy/about\|Karpathy]] | 代码 + 第一性原理 | 从零实现 |
 
 ---
 
 ## 关联与延伸
 
-- [[业界观点/Josh_Starmer/about|Josh Starmer 概述]]
-- [[业界观点/Josh_Starner/index|Josh Starmer 主页]]
-- [[学习/index|学习章节]]
-- [[学习/concepts/index|学习概念]]
-- [[业界观点/Andrew_Ng/about|吴恩达]]
-- [[业界观点/3Blue1Brown/about|3Blue1Brown]]
+- [[19_业界观点/Josh_Starmer/about|Josh Starmer 概述]]
+- [[19_业界观点/Josh_Starner/index|Josh Starmer 主页]]
+- [[90_学习/index|学习章节]]
+- [[90_学习/concepts/index|学习概念]]
+- [[19_业界观点/Andrew_Ng/about|吴恩达]]
+- [[19_业界观点/3Blue1Brown/about|3Blue1Brown]]
 
 ---
 

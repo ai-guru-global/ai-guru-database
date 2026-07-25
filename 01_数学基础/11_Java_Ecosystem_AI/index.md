@@ -14,14 +14,14 @@ Java AI 生态 — Java 生态中的 AI 开发实践，包括 Spring AI 和 JVM 
 
 | 文件 | 说明 |
 |------|------|
-| [[数学基础/Java_Ecosystem_AI/Java_Ecosystem_AI_Overview|Java AI 总览]] | Java 生态 AI 开发全景 |
-| [[数学基础/Java_Ecosystem_AI/Java_Ecosystem_AI_for_dummy|入门版]] | 零基础 Java AI 入门 |
-| [[数学基础/Java_Ecosystem_AI/Spring_AI_Deep_Dive|Spring AI]] | Spring AI 框架深度实践 |
+| [[01_数学基础/11_Java_Ecosystem_AI/Java_Ecosystem_AI_Overview|Java AI 总览]] | Java 生态 AI 开发全景 |
+| [[01_数学基础/11_Java_Ecosystem_AI/Java_Ecosystem_AI_for_dummy|入门版]] | 零基础 Java AI 入门 |
+| [[01_数学基础/11_Java_Ecosystem_AI/Spring_AI_Deep_Dive|Spring AI]] | Spring AI 框架深度实践 |
 
 ## Related
 
-- [[学习/pathways/java-developer|Java 开发者路径]]
-- [[测试/Testing_Frameworks/Java_AI_Testing|Java AI 测试]]
+- [[90_学习/pathways/java-developer|Java 开发者路径]]
+- [[09_测试/02_Testing_Frameworks/Java_AI_Testing|Java AI 测试]]
 
 ## 进阶知识拓展
 
@@ -59,9 +59,9 @@ Java AI 生态 — Java 生态中的 AI 开发实践，包括 Spring AI 和 JVM 
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

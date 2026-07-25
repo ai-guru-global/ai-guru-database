@@ -459,9 +459,9 @@ def preprocess_trajectories(dataset, discount=1.0):
 
 ## 7. 交叉引用
 
-- [[强化学习/Deep_RL/Deep_RL|深度强化学习总论]]
-- [[强化学习/Deep_RL/Offline_RL_Deep_Dive|离线强化学习]]
-- [[强化学习/Deep_RL/PPO_Deep_Dive|PPO 算法]]
-- [[强化学习/RL_Applications/RL_for_LLM_Reasoning|RL 驱动 LLM 推理]]
-- [[深度学习/Attention_Mechanisms|注意力机制]]
-- [[智能体/|智能体系统]]
+- [[06_强化学习/02_Deep_RL/Deep_RL|深度强化学习总论]]
+- [[06_强化学习/02_Deep_RL/Offline_RL_Deep_Dive|离线强化学习]]
+- [[06_强化学习/02_Deep_RL/PPO_Deep_Dive|PPO 算法]]
+- [[06_强化学习/04_RL_Applications/RL_for_LLM_Reasoning|RL 驱动 LLM 推理]]
+- [[03_深度学习/Attention_Mechanisms|注意力机制]]
+- [[15_智能体/|智能体系统]]

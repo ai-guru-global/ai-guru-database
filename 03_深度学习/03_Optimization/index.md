@@ -15,13 +15,13 @@ tags: [auto-index]
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[深度学习/Optimization/Optimization|Optimization]] | Optimization algorithm knowledge system: gradient descent, momentum and adaptive learning rate | DL engineers / researchers |
-| [[深度学习/Optimization/Optimization_for_dummy|Optimization for dummy]] | Optimization beginner guide: from SGD to Lion optimizer | beginners / DL learners |
+| [[03_深度学习/03_Optimization/Optimization|Optimization]] | Optimization algorithm knowledge system: gradient descent, momentum and adaptive learning rate | DL engineers / researchers |
+| [[03_深度学习/03_Optimization/Optimization_for_dummy|Optimization for dummy]] | Optimization beginner guide: from SGD to Lion optimizer | beginners / DL learners |
 
 ## Related
 
-- [[深度学习/index|深度学习首页]]
-- [[数学基础/index|数学基础]]
+- [[03_深度学习/index|深度学习首页]]
+- [[01_数学基础/index|数学基础]]
 
 ## 进阶知识拓展
 
@@ -59,9 +59,9 @@ tags: [auto-index]
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

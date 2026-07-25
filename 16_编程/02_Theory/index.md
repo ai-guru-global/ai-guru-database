@@ -15,14 +15,14 @@ tags: [auto-index]
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[编程/Theory/AI_Coding_Theory|AI Coding Theory]] | AI coding theory: how LLM transforms software development paradigm | all developers / AI coding practitioners |
-| [[编程/Theory/Claude_Agent_Architecture|Claude Agent Architecture]] | Claude agent architecture analysis: tool calling and task decomposition | agent developers / tool engineers |
-| [[编程/Theory/Claude_Cost_Optimization|Claude Cost Optimization]] | Claude cost optimization: token management, caching and model selection | Claude users / cost-conscious developers |
+| [[16_编程/02_Theory/AI_Coding_Theory|AI Coding Theory]] | AI coding theory: how LLM transforms software development paradigm | all developers / AI coding practitioners |
+| [[16_编程/02_Theory/Claude_Agent_Architecture|Claude Agent Architecture]] | Claude agent architecture analysis: tool calling and task decomposition | agent developers / tool engineers |
+| [[16_编程/02_Theory/Claude_Cost_Optimization|Claude Cost Optimization]] | Claude cost optimization: token management, caching and model selection | Claude users / cost-conscious developers |
 
 ## Related
 
-- [[编程/index|编程首页]]
-- [[智能体/index|智能体]]
+- [[16_编程/index|编程首页]]
+- [[15_智能体/index|智能体]]
 
 ## 核心知识体系
 
@@ -133,9 +133,9 @@ tags: [auto-index]
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

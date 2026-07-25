@@ -15,15 +15,15 @@ tags: [auto-index]
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[计算机视觉/Generative_Models/Generative_Models|Generative Models]] | Generative models knowledge system: DDPM, Stable Diffusion and DALL-E | generative AI researchers / CV engineers |
-| [[计算机视觉/Generative_Models/Generative_Models_for_dummy|Generative Models for dummy]] | Generative models beginner guide: from GAN to Diffusion | beginners / generative AI learners |
-| [[计算机视觉/Generative_Models/Diffusion_Models_Deep_Dive|Diffusion Models Deep Dive]] | Diffusion models deep dive: math foundations, sampling acceleration and applications | researchers / senior practitioners |
+| [[04_计算机视觉/06_Generative_Models/Generative_Models|Generative Models]] | Generative models knowledge system: DDPM, Stable Diffusion and DALL-E | generative AI researchers / CV engineers |
+| [[04_计算机视觉/06_Generative_Models/Generative_Models_for_dummy|Generative Models for dummy]] | Generative models beginner guide: from GAN to Diffusion | beginners / generative AI learners |
+| [[04_计算机视觉/06_Generative_Models/Diffusion_Models_Deep_Dive|Diffusion Models Deep Dive]] | Diffusion models deep dive: math foundations, sampling acceleration and applications | researchers / senior practitioners |
 
 ## Related
 
-- [[计算机视觉/index|计算机视觉首页]]
-- [[计算机视觉/Multimodal_Vision/index|Multimodal Vision]]
-- [[计算机视觉/Video_Generation/index|Video Generation]]
+- [[04_计算机视觉/index|计算机视觉首页]]
+- [[04_计算机视觉/08_Multimodal_Vision/index|Multimodal Vision]]
+- [[04_计算机视觉/07_Video_Generation/index|Video Generation]]
 
 ## 进阶知识拓展
 
@@ -61,9 +61,9 @@ tags: [auto-index]
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

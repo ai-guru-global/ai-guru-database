@@ -451,7 +451,7 @@ def adaptive_reasoning(question, budget=10000):
 **1. 推理与知识分离**:
 ```
 小模型负责推理 (System 2)
-大模型/RAG 负责知识检索 (System 1 的知识库)
+05_大模型/RAG 负责知识检索 (System 1 的知识库)
 → 组合获得最佳性价比
 ```
 
@@ -476,12 +476,12 @@ def adaptive_reasoning(question, budget=10000):
 
 ## Related
 
-- [[大模型/Reasoning_Models/DeepSeek_R1_Technical_Analysis]]
-- [[大模型/Reasoning_Models/Process_Reward_Models]]
-- [[大模型/Reasoning_Models/Reasoning_Models_for_dummy|Reasoning Models]]
+- [[05_大模型/09_Reasoning_Models/DeepSeek_R1_Technical_Analysis]]
+- [[05_大模型/09_Reasoning_Models/Process_Reward_Models]]
+- [[05_大模型/09_Reasoning_Models/Reasoning_Models_for_dummy|Reasoning Models]]
 - [[概念/ai-agents]]
-- [[强化学习/Deep_RL/Deep_RL]]
-- [[大模型/Prompt_Engineering/Prompt_Engineering|Prompt Engineering]]
+- [[06_强化学习/02_Deep_RL/Deep_RL]]
+- [[05_大模型/08_Prompt_Engineering/Prompt_Engineering|Prompt Engineering]]
 - [[治理/reasoning-models-agents|推理模型 × Agent]] — 推理增强的智能体
 
 - [[治理/alignment-rlhf|价值对齐 × RLHF：从人类反馈到可扩展监督]]

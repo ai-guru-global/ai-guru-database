@@ -69,9 +69,9 @@ sources: []
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 
@@ -210,9 +210,9 @@ sources: []
 
 ## 相关链接
 
-- [[深度学习/Self_Supervised_Learning/Self_Supervised_Learning_Deep_Dive|自监督学习深度解读]] — 对比学习与掩码建模深入
-- [[深度学习/Self_Supervised_Learning/index|自监督学习索引]] — 自监督学习主题导览
+- [[03_深度学习/06_Self_Supervised_Learning/Self_Supervised_Learning_Deep_Dive|自监督学习深度解读]] — 对比学习与掩码建模深入
+- [[03_深度学习/06_Self_Supervised_Learning/index|自监督学习索引]] — 自监督学习主题导览
 - [[概念/Math/self-supervised-learning|自监督学习]] — 自监督学习概念卡片
-- [[深度学习/Transfer_Learning|迁移学习]] — 自监督预训练的下游应用
+- [[03_深度学习/Transfer_Learning|迁移学习]] — 自监督预训练的下游应用
 - [[概念/Training/pre-training|预训练]] — 自监督学习的预训练范式
-- [[计算机视觉/Multimodal_Vision/CLIP_Deep_Dive|CLIP 深度解析]] — 对比学习代表模型
+- [[04_计算机视觉/08_Multimodal_Vision/CLIP_Deep_Dive|CLIP 深度解析]] — 对比学习代表模型

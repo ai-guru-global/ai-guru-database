@@ -817,8 +817,8 @@ class HybridBlock(nn.Module):
 - [[Normalization_Techniques_Deep_Dive]] — CNN 中的 BatchNorm vs Transformer 中的 LayerNorm
 - [[Neural_Architecture_Search]] — EfficientNet 的 NAS 搜索
 - [[Optimization]] — 深度 CNN 训练的优化策略
-- [[深度学习/State_Space_Models/index|状态空间模型]] — Mamba 对 CNN 的潜在替代
-- [[深度学习/Generative_Models/index|生成模型]] — CNN 在 Diffusion 中的角色
+- [[03_深度学习/State_Space_Models/index|状态空间模型]] — Mamba 对 CNN 的潜在替代
+- [[03_深度学习/04_Generative_Models/index|生成模型]] — CNN 在 Diffusion 中的角色
 - [[Embedding_Representation_Learning]] — CNN 特征作为视觉嵌入
 
 ---

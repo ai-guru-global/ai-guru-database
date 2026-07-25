@@ -17,8 +17,8 @@ relationships:
 - target: '概念/model-evaluation'
   type: follows
 sources:
-- 部署推理/Deployment_Fundamentals/Deployment_Inference.md
-- 部署推理/Deployment_Fundamentals/Deployment_Inference_2026.md
+- 10_部署推理/01_Deployment_Fundamentals/Deployment_Inference.md
+- 10_部署推理/01_Deployment_Fundamentals/Deployment_Inference_2026.md
 summary: 模型部署将训练好的AI模型转化为高效稳定的生产服务，涵盖推理性能优化（KV Cache/PagedAttention/推测解码）、部署架构（K8s编排/Serverless/边缘部署）和成本优化策略。2026年推理引擎三强鼎立：vLLM（高吞吐）、TensorRT-LLM（低延迟）、SGLang（结构化生成）。
 provenance:
   extracted: 0.85

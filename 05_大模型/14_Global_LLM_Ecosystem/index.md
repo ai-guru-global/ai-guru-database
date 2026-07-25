@@ -22,14 +22,14 @@ sources: []
 
 ## Files
 
-- [[大模型/Global_LLM_Ecosystem/Anthropic_Claude_Deep_Dive|Anthropic Claude Deep Dive]]
-- [[大模型/Global_LLM_Ecosystem/GenAI_L20_Building_with_Mistral|Genai L20 Building With Mistral]]
-- [[大模型/Global_LLM_Ecosystem/GenAI_L21_Building_with_Meta|Genai L21 Building With Meta]]
-- [[大模型/Global_LLM_Ecosystem/Google_Gemini_Deep_Dive|Google Gemini Deep Dive]]
-- [[大模型/Global_LLM_Ecosystem/Meta_LLaMA_Deep_Dive|Meta Llama Deep Dive]]
-- [[大模型/Global_LLM_Ecosystem/Mistral_AI_Deep_Dive|Mistral AI Deep Dive]]
-- [[大模型/Global_LLM_Ecosystem/OpenAI_Deep_Dive|Openai Deep Dive]]
-- [[大模型/Global_LLM_Ecosystem/README|README]]
+- [[05_大模型/14_Global_LLM_Ecosystem/Anthropic_Claude_Deep_Dive|Anthropic Claude Deep Dive]]
+- [[05_大模型/14_Global_LLM_Ecosystem/GenAI_L20_Building_with_Mistral|Genai L20 Building With Mistral]]
+- [[05_大模型/14_Global_LLM_Ecosystem/GenAI_L21_Building_with_Meta|Genai L21 Building With Meta]]
+- [[05_大模型/14_Global_LLM_Ecosystem/Google_Gemini_Deep_Dive|Google Gemini Deep Dive]]
+- [[05_大模型/14_Global_LLM_Ecosystem/Meta_LLaMA_Deep_Dive|Meta Llama Deep Dive]]
+- [[05_大模型/14_Global_LLM_Ecosystem/Mistral_AI_Deep_Dive|Mistral AI Deep Dive]]
+- [[05_大模型/14_Global_LLM_Ecosystem/OpenAI_Deep_Dive|Openai Deep Dive]]
+- [[05_大模型/14_Global_LLM_Ecosystem/README|README]]
 
 ## 学习路径建议
 
@@ -60,8 +60,8 @@ sources: []
 
 ## 相关概念
 
-- [[大模型/Chinese_LLM_Ecosystem|中国 LLM 生态]]
-- [[大模型/LLM_Products|LLM 产品]]
+- [[05_大模型/Chinese_LLM_Ecosystem|中国 LLM 生态]]
+- [[05_大模型/LLM_Products|LLM 产品]]
 - [[概念/llm-architectures|LLM 架构]]
 
 ## 统计
@@ -165,10 +165,10 @@ sources: []
 
 ## 相关域
 
-- [[大模型/Chinese_LLM_Ecosystem|中国 LLM 生态]] — 国内大模型厂商
-- [[大模型/LLM_Architectures|LLM 架构]] — 技术架构详解
-- [[大模型/LLM_Products|LLM 产品]] — 产品概览
-- [[部署推理/README|部署推理]] — 模型部署技术
+- [[05_大模型/Chinese_LLM_Ecosystem|中国 LLM 生态]] — 国内大模型厂商
+- [[05_大模型/LLM_Architectures|LLM 架构]] — 技术架构详解
+- [[05_大模型/LLM_Products|LLM 产品]] — 产品概览
+- [[10_部署推理/README|部署推理]] — 模型部署技术
 
 ---
 *Last updated: 2026-07-21*

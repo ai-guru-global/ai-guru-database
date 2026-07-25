@@ -725,9 +725,9 @@ graph TD
 
 ### 架构与技术关联
 
-- [[../../大模型/Multimodal_Models/Video_Understanding_Architectures|视频理解架构]] — 视频理解（输入侧）与视频生成（输出侧）的架构对照
-- [[../../大模型/Multimodal_Models/Native_Multimodal_Architectures|原生多模态架构]] — Veo 3 音视频统一生成的理论基础
-- [[../../大模型/Multimodal_Models/Modality_Fusion_Mechanisms|模态融合机制]] — Seedance 12 种多模态输入的技术基础
+- [[../../05_大模型/10_Multimodal_Models/Video_Understanding_Architectures|视频理解架构]] — 视频理解（输入侧）与视频生成（输出侧）的架构对照
+- [[../../05_大模型/10_Multimodal_Models/Native_Multimodal_Architectures|原生多模态架构]] — Veo 3 音视频统一生成的理论基础
+- [[../../05_大模型/10_Multimodal_Models/Modality_Fusion_Mechanisms|模态融合机制]] — Seedance 12 种多模态输入的技术基础
 
 ### 评估与基准关联
 

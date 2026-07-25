@@ -206,9 +206,9 @@ sources: []
 
 ## 相关链接
 
-- [[学习/guides/index|学习指南索引]] — 学习指南主题导览
-- [[学习/guides/ai_project_guide|AI 实战项目指南]] — 自评后的项目实践
-- [[学习/guides/ai_engineering_roadmap_2026|AI 工程师路线图 2026]] — 工程师成长路径
-- [[学习/guides/milestones|学习里程碑]] — 学习里程碑规划
-- [[学习/pathways/index|学习路径索引]] — 各角色学习路径
-- [[学习/index|学习首页]] — 学习路径总览
+- [[90_学习/guides/index|学习指南索引]] — 学习指南主题导览
+- [[90_学习/guides/ai_project_guide|AI 实战项目指南]] — 自评后的项目实践
+- [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程师路线图 2026]] — 工程师成长路径
+- [[90_学习/guides/milestones|学习里程碑]] — 学习里程碑规划
+- [[90_学习/pathways/index|学习路径索引]] — 各角色学习路径
+- [[90_学习/index|学习首页]] — 学习路径总览

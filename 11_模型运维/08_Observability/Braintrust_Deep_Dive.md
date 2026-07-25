@@ -20,7 +20,7 @@ sources: []
 
 > **一句话理解**: Braintrust 是开源 LLM 评估平台——evals 数据集、A/B 测试、回归检测、成本追踪，开源的 LLM 质量保障工具。
 
-> 📐 **概念与选型方法论**: LLM 评估流水线（LLM-as-Judge/人审/Eval-Driven）见 [[模型运维/LLM_Evaluation_Pipeline]]。本文聚焦 Braintrust 工具用法。
+> 📐 **概念与选型方法论**: LLM 评估流水线（LLM-as-Judge/人审/Eval-Driven）见 [[11_模型运维/LLM_Evaluation_Pipeline]]。本文聚焦 Braintrust 工具用法。
 
 ---
 
@@ -304,8 +304,8 @@ def sentiment_task(input):
 
 ## Related
 
-- [[运维/AIOps_Fundamentals/AIOps-in-nutshell.md|AIOps-in-nutshell]]
-- [[运维/SRE_Reliability/AI_Incident_Response_Playbook|AI_Incident_Response_Playbook]]
-- [[运维/AIOps_Fundamentals/AI_Ops_for_dummy.md|AI_Ops_for_dummy]]
-- [[运维/README.md|运维 README]]
-- [[运维/README_for_dummy.md|README_for_dummy]]
+- [[13_运维/01_AIOps_Fundamentals/AIOps-in-nutshell.md|AIOps-in-nutshell]]
+- [[13_运维/02_SRE_Reliability/AI_Incident_Response_Playbook|AI_Incident_Response_Playbook]]
+- [[13_运维/01_AIOps_Fundamentals/AI_Ops_for_dummy.md|AI_Ops_for_dummy]]
+- [[13_运维/README.md|运维 README]]
+- [[13_运维/README_for_dummy.md|README_for_dummy]]

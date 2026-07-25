@@ -87,14 +87,14 @@ sources: []
 
 ## 推荐阅读
 
-- [[模型训练/Training_Cost_Optimization_and_FinOps_2026.md|大模型训练成本优化与 FinOps 实践 2026]] — 完整落地指南与生产 Checklist
-- [[模型训练/Distributed_Training/DeepSpeed_Deep_Dive.md|DeepSpeed 深度解析：微软大模型训练与推理优化库]] — ZeRO 与显存优化细节
-- [[模型训练/Distributed_Training/FSDP_Deep_Dive.md|FSDP Deep Dive]] — PyTorch 原生分布式训练方案
-- [[模型训练/Monitoring/Training_Monitoring_2026.md|Training Monitoring & Experiment Tracking 2026]] — 训练监控与实验指标
-- [[模型训练/Compression/Pruning_and_Knowledge_Distillation.md|剪枝与知识蒸馏]] — 模型压缩与训练后优化
-- [[架构基建/AI_SRE_Runbook.md|AI SRE Runbook]] — AI 基础设施稳定性与故障恢复
-- [[行业应用/AI_Platform_Selection_2026.md|AI 平台选型 2026]] — 云厂商训练平台成本对比
-- [[行业应用/AI_Production_Architecture_2026.md|AI 生产架构 2026]] — 从训练到部署的整体架构视角
+- [[07_模型训练/Training_Cost_Optimization_and_FinOps_2026.md|大模型训练成本优化与 FinOps 实践 2026]] — 完整落地指南与生产 Checklist
+- [[07_模型训练/04_Distributed_Training/DeepSpeed_Deep_Dive.md|DeepSpeed 深度解析：微软大模型训练与推理优化库]] — ZeRO 与显存优化细节
+- [[07_模型训练/04_Distributed_Training/FSDP_Deep_Dive.md|FSDP Deep Dive]] — PyTorch 原生分布式训练方案
+- [[07_模型训练/07_Monitoring/Training_Monitoring_2026.md|Training Monitoring & Experiment Tracking 2026]] — 训练监控与实验指标
+- [[07_模型训练/05_Compression/Pruning_and_Knowledge_Distillation.md|剪枝与知识蒸馏]] — 模型压缩与训练后优化
+- [[12_架构基建/AI_SRE_Runbook.md|AI SRE Runbook]] — AI 基础设施稳定性与故障恢复
+- [[18_行业应用/AI_Platform_Selection_2026.md|AI 平台选型 2026]] — 云厂商训练平台成本对比
+- [[18_行业应用/AI_Production_Architecture_2026.md|AI 生产架构 2026]] — 从训练到部署的整体架构视角
 - [[概念/General/finops.md|FinOps]] — 云成本治理基础概念
 
 ---

@@ -10,7 +10,7 @@ relationships:
   - target: "概念/transformer-architecture"
     type: builds_on
 sources:
-  - 大模型/Speech_Audio_AI
+  - 05_大模型/Speech_Audio_AI
 summary: "语音AI覆盖自动语音识别(ASR/Whisper)、语音合成(TTS/CosyVoice)、音频理解(AudioLM)、音乐生成(MusicGen/Suno)、实时语音对话(GPT-4o/Moshi)。"
 provenance:
   extracted: 0.40
@@ -173,7 +173,7 @@ aliases:
 
 ## Related
 
-- [[大模型/Speech_Audio_AI/README]] — 语音与音频 AI 深度解析
+- [[05_大模型/11_Speech_Audio_AI/README]] — 语音与音频 AI 深度解析
 - [[概念/llm-architectures]] — LLM 架构（语音 LLM 基础）
 - [[概念/multimodal-models]] — 多模态模型（音频多模态）
 - [[概念/transformer-architecture]] — Transformer（语音模型基础架构）

@@ -235,7 +235,7 @@ Nadella 的平衡策略：
 | 追求 | 务实，不追求标签 |
 | 关注点 | 真实世界影响力 |
 | 时间线 | 不急于定义 |
-| 与 [[业界观点/Sam_Altman/index\|Altman]] | 互补关系 |
+| 与 [[19_业界观点/Sam_Altman/index\|Altman]] | 互补关系 |
 
 ### 关于 AI 治理
 
@@ -253,7 +253,7 @@ Nadella 的平衡策略：
 
 ### 与其他科技 CEO 的对比
 
-| 维度 | Nadella | [[业界观点/Sundar_Pichai/index\|Pichai]] | [[业界观点/Sam_Altman/index\|Altman]] |
+| 维度 | Nadella | [[19_业界观点/Sundar_Pichai/index\|Pichai]] | [[19_业界观点/Sam_Altman/index\|Altman]] |
 |------|---------|--------|---------|
 | 2026 角色 | Microsoft CEO | Google CEO | OpenAI CEO |
 | AI 旗舰 | Copilot | Gemini | GPT-5 |
@@ -364,12 +364,12 @@ Nadella 2017 年的著作在 2026 年仍是领导力经典：
 
 | 人物 | 关系 | 2026 互动 |
 |------|------|-----------|
-| [[业界观点/Sam_Altman/index\|Altman]] | 合作者 | 复杂竞合 |
-| [[业界观点/Sundar_Pichai/index\|Pichai]] | 竞争对手 | 云+AI 竞争 |
-| [[业界观点/Bill_Gates/index\|Gates]] | 前任 | 微软顾问 |
-| [[业界观点/Mustafa_Suleyman/index\|Suleyman]] | 下属 | Microsoft AI CEO |
-| [[业界观点/Elon_Musk/index\|Musk]] | 竞争对手 | 多线 |
-| [[业界观点/Andrew_Ng/index\|Ng]] | 行业同行 | 偶有交流 |
+| [[19_业界观点/Sam_Altman/index\|Altman]] | 合作者 | 复杂竞合 |
+| [[19_业界观点/Sundar_Pichai/index\|Pichai]] | 竞争对手 | 云+AI 竞争 |
+| [[19_业界观点/Bill_Gates/index\|Gates]] | 前任 | 微软顾问 |
+| [[19_业界观点/Mustafa_Suleyman/index\|Suleyman]] | 下属 | Microsoft AI CEO |
+| [[19_业界观点/Elon_Musk/index\|Musk]] | 竞争对手 | 多线 |
+| [[19_业界观点/Andrew_Ng/index\|Ng]] | 行业同行 | 偶有交流 |
 
 ---
 
@@ -377,30 +377,30 @@ Nadella 2017 年的著作在 2026 年仍是领导力经典：
 
 ### 微软系网络
 
-- [[业界观点/Satya_Nadella/index]] -- 本页主人物
-- [[业界观点/Satya_Nadella/about]] -- 详细简介
-- [[业界观点/Sam_Altman/index]] -- OpenAI 合作者
-- [[业界观点/Bill_Gates/index]] -- 前微软 CEO
+- [[19_业界观点/Satya_Nadella/index]] -- 本页主人物
+- [[19_业界观点/Satya_Nadella/about]] -- 详细简介
+- [[19_业界观点/Sam_Altman/index]] -- OpenAI 合作者
+- [[19_业界观点/Bill_Gates/index]] -- 前微软 CEO
 
 ### AI 大战网络
 
-- [[业界观点/Sundar_Pichai/index]] -- Google 竞争对手
-- [[业界观点/Elon_Musk/index]] -- xAI 竞争对手
-- [[业界观点/Yann_LeCun/index]] -- Meta 竞争对手
-- [[业界观点/Andrew_Ng/index]] -- 教育同行
+- [[19_业界观点/Sundar_Pichai/index]] -- Google 竞争对手
+- [[19_业界观点/Elon_Musk/index]] -- xAI 竞争对手
+- [[19_业界观点/Yann_LeCun/index]] -- Meta 竞争对手
+- [[19_业界观点/Andrew_Ng/index]] -- 教育同行
 
 ### 企业 AI 生态
 
-- [[业界观点/Mustafa_Suleyman/index]] -- Microsoft AI CEO
-- [[业界观点/Mira_Murati/index]] -- 前 OpenAI
-- [[业界观点/Andrej_Karpathy/index]] -- GitHub Copilot 相关
+- [[19_业界观点/Mustafa_Suleyman/index]] -- Microsoft AI CEO
+- [[19_业界观点/Mira_Murati/index]] -- 前 OpenAI
+- [[19_业界观点/Andrej_Karpathy/index]] -- GitHub Copilot 相关
 
 ### 技术与应用
 
-- [[大模型/README]] -- GPT/Copilot 技术
+- [[05_大模型/README]] -- GPT/Copilot 技术
 - [[应用/AI_Enterprise]] -- 企业 AI
-- [[编程/README]] -- GitHub Copilot
-- [[入门/AI_Future_Trends]] -- AI 平台化
+- [[16_编程/README]] -- GitHub Copilot
+- [[00_入门/AI_Future_Trends]] -- AI 平台化
 
 ---
 

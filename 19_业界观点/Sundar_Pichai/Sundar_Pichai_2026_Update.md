@@ -211,7 +211,7 @@ Pichai 的立场：
 - 不回避 AGI 话题
 - 强调"负责任地"追求
 - Gemini 是通往 AGI 的步骤
-- 比 [[业界观点/Sam_Altman/index\|Altman]] 更谨慎，比 [[业界观点/Geoffrey_Hinton/index\|Hinton]] 更乐观
+- 比 [[19_业界观点/Sam_Altman/index\|Altman]] 更谨慎，比 [[19_业界观点/Geoffrey_Hinton/index\|Hinton]] 更乐观
 
 ### 关于竞争
 
@@ -229,7 +229,7 @@ Pichai 的立场：
 
 ### 与其他科技 CEO 的对比
 
-| 维度 | Pichai | [[业界观点/Satya_Nadella/index\|Nadella]] | [[业界观点/Sam_Altman/index\|Altman]] |
+| 维度 | Pichai | [[19_业界观点/Satya_Nadella/index\|Nadella]] | [[19_业界观点/Sam_Altman/index\|Altman]] |
 |------|--------|---------|---------|
 | 2026 角色 | Google/Alphabet CEO | Microsoft CEO | OpenAI CEO |
 | 旗舰 AI | Gemini 3 | Copilot+GPT-5 | GPT-5 |
@@ -322,13 +322,13 @@ Pichai 的影响呈现为四个层面：
 
 | 人物 | 关系 | 2026 互动 |
 |------|------|-----------|
-| [[业界观点/Demis_Hassabis/index\|Hassabis]] | 下属（DeepMind） | 紧密合作 |
-| [[业界观点/Sam_Altman/index\|Altman]] | 竞争对手 | 正面竞争 |
-| [[业界观点/Satya_Nadella/index\|Nadella]] | 竞争对手 | 云+AI 竞争 |
-| [[业界观点/Elon_Musk/index\|Musk]] | 竞争对手 | 多线竞争 |
-| [[业界观点/Fei_Fei_Li/index\|Fei-Fei Li]] | 前同事 | 保持联系 |
-| [[业界观点/Andrew_Ng/index\|Ng]] | 前 Google Brain | 保持友好 |
-| [[业界观点/Bill_Gates/index\|Gates]] | 行业同行 | 偶有交流 |
+| [[19_业界观点/Demis_Hassabis/index\|Hassabis]] | 下属（DeepMind） | 紧密合作 |
+| [[19_业界观点/Sam_Altman/index\|Altman]] | 竞争对手 | 正面竞争 |
+| [[19_业界观点/Satya_Nadella/index\|Nadella]] | 竞争对手 | 云+AI 竞争 |
+| [[19_业界观点/Elon_Musk/index\|Musk]] | 竞争对手 | 多线竞争 |
+| [[19_业界观点/Fei_Fei_Li/index\|Fei-Fei Li]] | 前同事 | 保持联系 |
+| [[19_业界观点/Andrew_Ng/index\|Ng]] | 前 Google Brain | 保持友好 |
+| [[19_业界观点/Bill_Gates/index\|Gates]] | 行业同行 | 偶有交流 |
 | Tim Cook（Apple） | 合作+竞争 | Gemini in iPhone |
 
 ### Pichai 在 2026 年的重大演讲
@@ -373,30 +373,30 @@ Pichai 的影响呈现为四个层面：
 
 ### Google 系网络
 
-- [[业界观点/Sundar_Pichai/index]] -- 本页主人物
-- [[业界观点/Sundar_Pichai/about]] -- 详细简介
-- [[业界观点/Demis_Hassabis/index]] -- DeepMind CEO
-- [[业界观点/Fei_Fei_Li/index]] -- 前 Google Cloud 同事
+- [[19_业界观点/Sundar_Pichai/index]] -- 本页主人物
+- [[19_业界观点/Sundar_Pichai/about]] -- 详细简介
+- [[19_业界观点/Demis_Hassabis/index]] -- DeepMind CEO
+- [[19_业界观点/Fei_Fei_Li/index]] -- 前 Google Cloud 同事
 
 ### AI 大战网络
 
-- [[业界观点/Sam_Altman/index]] -- OpenAI 竞争对手
-- [[业界观点/Satya_Nadella/index]] -- Microsoft 竞争对手
-- [[业界观点/Elon_Musk/index]] -- xAI 竞争对手
-- [[业界观点/Yann_LeCun/index]] -- Meta 竞争对手
+- [[19_业界观点/Sam_Altman/index]] -- OpenAI 竞争对手
+- [[19_业界观点/Satya_Nadella/index]] -- Microsoft 竞争对手
+- [[19_业界观点/Elon_Musk/index]] -- xAI 竞争对手
+- [[19_业界观点/Yann_LeCun/index]] -- Meta 竞争对手
 
 ### 合作与治理
 
-- [[业界观点/Bill_Gates/index]] -- 前微软 CEO，行业同行
-- [[业界观点/Andrew_Ng/index]] -- Google Brain 创始人
-- [[业界观点/Sebastian_Thrun/index]] -- 前 Google X
+- [[19_业界观点/Bill_Gates/index]] -- 前微软 CEO，行业同行
+- [[19_业界观点/Andrew_Ng/index]] -- Google Brain 创始人
+- [[19_业界观点/Sebastian_Thrun/index]] -- 前 Google X
 
 ### 技术与应用
 
-- [[大模型/README]] -- Gemini 技术
-- [[大模型/MoE]] -- Gemini MoE 架构
+- [[05_大模型/README]] -- Gemini 技术
+- [[05_大模型/MoE]] -- Gemini MoE 架构
 - [[应用/AI_Search]] -- AI 搜索
-- [[入门/AI_Future_Trends]] -- AI 平台化
+- [[00_入门/AI_Future_Trends]] -- AI 平台化
 
 ---
 

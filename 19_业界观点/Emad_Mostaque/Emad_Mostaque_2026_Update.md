@@ -173,11 +173,11 @@ Mostaque 的三大核心论点：
 
 | 阵营 | 代表 | 立场 |
 |------|------|------|
-| 激进开源 | Mostaque、[[业界观点/Yann_LeCun/index\|LeCun]] | 全面开源 |
-| 谨慎开源 | [[业界观点/Andrej_Karpathy/index\|Karpathy]] | 实用主义 |
-| 分层闭源 | [[业界观点/Sam_Altman/index\|Altman]] | 前沿闭源 |
+| 激进开源 | Mostaque、[[19_业界观点/Yann_LeCun/index\|LeCun]] | 全面开源 |
+| 谨慎开源 | [[19_业界观点/Andrej_Karpathy/index\|Karpathy]] | 实用主义 |
+| 分层闭源 | [[19_业界观点/Sam_Altman/index\|Altman]] | 前沿闭源 |
 | 全面闭源 | 传统安全派 | 反对开源 |
-| 中国开源 | [[业界观点/Wenfeng_Liang/index\|梁文锋]] | 全面开源 |
+| 中国开源 | [[19_业界观点/Wenfeng_Liang/index\|梁文锋]] | 全面开源 |
 
 ### 关于去中心化
 
@@ -226,7 +226,7 @@ Mostaque 的边缘 AI 预测：
 
 ### 与其他开源 AI 倡导者的对比
 
-| 维度 | Mostaque | [[业界观点/Yann_LeCun/index\|LeCun]] | [[业界观点/Wenfeng_Liang/index\|梁文锋]] |
+| 维度 | Mostaque | [[19_业界观点/Yann_LeCun/index\|LeCun]] | [[19_业界观点/Wenfeng_Liang/index\|梁文锋]] |
 |------|----------|---------|---------|
 | 阵营 | 激进开源 | 激进开源 | 全面开源 |
 | 平台 | Stability AI（前） | Meta AI | DeepSeek |
@@ -346,11 +346,11 @@ Mostaque 通过 Stable Diffusion 对行业产生深远影响：
 
 | 人物 | 关系 | 2026 互动 |
 |------|------|-----------|
-| [[业界观点/Yann_LeCun/index\|LeCun]] | 开源同盟 | 立场一致 |
-| [[业界观点/Sam_Altman/index\|Altman]] | 闭源对手 | 路线对立 |
-| [[业界观点/Wenfeng_Liang/index\|梁文锋]] | 开源共鸣 | 互相欣赏 |
-| [[业界观点/Andrej_Karpathy/index\|Karpathy]] | 开源同行 | 立场接近 |
-| [[业界观点/Mira_Murati/index\|Murati]] | 生成 AI 同行 | DALL·E vs SD |
+| [[19_业界观点/Yann_LeCun/index\|LeCun]] | 开源同盟 | 立场一致 |
+| [[19_业界观点/Sam_Altman/index\|Altman]] | 闭源对手 | 路线对立 |
+| [[19_业界观点/Wenfeng_Liang/index\|梁文锋]] | 开源共鸣 | 互相欣赏 |
+| [[19_业界观点/Andrej_Karpathy/index\|Karpathy]] | 开源同行 | 立场接近 |
+| [[19_业界观点/Mira_Murati/index\|Murati]] | 生成 AI 同行 | DALL·E vs SD |
 
 ### Mostaque 在 2026 年的活动
 
@@ -368,30 +368,30 @@ Mostaque 通过 Stable Diffusion 对行业产生深远影响：
 
 ### 开源 AI 网络
 
-- [[业界观点/Emad_Mostaque/index]] -- 本页主人物
-- [[业界观点/Emad_Mostaque/about]] -- 详细简介
-- [[业界观点/Yann_LeCun/index]] -- 开源同盟（Meta）
-- [[业界观点/Wenfeng_Liang/index]] -- 开源同盟（DeepSeek）
-- [[业界观点/Jie_Tang/index]] -- 开源实践（智谱）
+- [[19_业界观点/Emad_Mostaque/index]] -- 本页主人物
+- [[19_业界观点/Emad_Mostaque/about]] -- 详细简介
+- [[19_业界观点/Yann_LeCun/index]] -- 开源同盟（Meta）
+- [[19_业界观点/Wenfeng_Liang/index]] -- 开源同盟（DeepSeek）
+- [[19_业界观点/Jie_Tang/index]] -- 开源实践（智谱）
 
 ### 闭源对手
 
-- [[业界观点/Sam_Altman/index]] -- OpenAI 闭源
-- [[业界观点/Sundar_Pichai/index]] -- Google 谨慎
-- [[业界观点/Mira_Murati/index]] -- 前 OpenAI
+- [[19_业界观点/Sam_Altman/index]] -- OpenAI 闭源
+- [[19_业界观点/Sundar_Pichai/index]] -- Google 谨慎
+- [[19_业界观点/Mira_Murati/index]] -- 前 OpenAI
 
 ### 生成 AI 网络
 
-- [[业界观点/Mira_Murati/index]] -- DALL·E
-- [[业界观点/Fei_Fei_Li/index]] -- 空间智能
-- [[业界观点/Demis_Hassabis/index]] -- AlphaFold
+- [[19_业界观点/Mira_Murati/index]] -- DALL·E
+- [[19_业界观点/Fei_Fei_Li/index]] -- 空间智能
+- [[19_业界观点/Demis_Hassabis/index]] -- AlphaFold
 
 ### 技术与生态
 
-- [[大模型/README]] -- Stable Diffusion 技术
+- [[05_大模型/README]] -- Stable Diffusion 技术
 - [[应用/Generative_AI]] -- 生成 AI
-- [[入门/AI_Future_Trends]] -- 去中心化 AI
-- [[伦理安全/README]] -- 开源 vs 安全
+- [[00_入门/AI_Future_Trends]] -- 去中心化 AI
+- [[17_伦理安全/README]] -- 开源 vs 安全
 
 ---
 

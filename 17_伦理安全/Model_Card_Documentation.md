@@ -130,11 +130,11 @@ COMPLIANCE_REQUIREMENTS = {
 
 ## 5. 交叉引用
 
-- [[伦理安全/|伦理安全]]
-- [[伦理安全/AI_Watermarking|AI 水印]]
-- [[伦理安全/Bias_Fairness_Testing/|偏见公平测试]]
-- [[伦理安全/AI_Liability/|AI 责任]]
-- [[模型评估/|模型评估]]
+- [[17_伦理安全/|伦理安全]]
+- [[17_伦理安全/AI_Watermarking|AI 水印]]
+- [[17_伦理安全/Bias_Fairness_Testing/|偏见公平测试]]
+- [[17_伦理安全/AI_Liability/|AI 责任]]
+- [[08_模型评估/|模型评估]]
 
 ## 核心知识体系
 

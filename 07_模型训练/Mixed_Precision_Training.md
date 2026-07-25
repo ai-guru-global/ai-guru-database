@@ -254,9 +254,9 @@ MIXED_PRECISION_BEST_PRACTICES = {
 
 ## 6. 交叉引用
 
-- [[模型训练/Distributed_Training/|分布式训练]]
-- [[模型训练/Optimization/|优化器]]
-- [[模型训练/Training_Infrastructure/|训练基础设施]]
+- [[07_模型训练/04_Distributed_Training/|分布式训练]]
+- [[07_模型训练/03_Optimization/|优化器]]
+- [[07_模型训练/Training_Infrastructure/|训练基础设施]]
 - [[概念/Training/mixed-precision|混合精度概念]]
 - [[概念/Training/fp8|FP8]]
-- [[架构基建/|架构基建]]
+- [[12_架构基建/|架构基建]]

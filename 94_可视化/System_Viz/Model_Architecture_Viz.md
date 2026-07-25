@@ -212,7 +212,7 @@ torchinfo.summary(model, input_size=(1,3,224,224))
 
 ### 7.3 与训练监控联动
 
-把架构图与 [[可视化/Training_Viz/Training_Monitoring_Visualization|训练监控]] 联动：点击某层查看其梯度/激活直方图。
+把架构图与 [[94_可视化/Training_Viz/Training_Monitoring_Visualization|训练监控]] 联动：点击某层查看其梯度/激活直方图。
 
 ---
 
@@ -455,13 +455,13 @@ flowchart TD
 
 ## 关联
 
-- [[可视化/index|可视化首页]]
-- [[可视化/System_Viz/index|System Viz]]
-- [[可视化/Training_Viz/Neural_Network_Visualization_Guide|神经网络可视化]]
-- [[深度学习/index|深度学习]]
-- [[架构基建/index|架构基建]]
-- [[部署推理/index|部署推理]]
-- [[模型训练/index|模型训练]]
+- [[94_可视化/index|可视化首页]]
+- [[94_可视化/System_Viz/index|System Viz]]
+- [[94_可视化/Training_Viz/Neural_Network_Visualization_Guide|神经网络可视化]]
+- [[03_深度学习/index|深度学习]]
+- [[12_架构基建/index|架构基建]]
+- [[10_部署推理/index|部署推理]]
+- [[07_模型训练/index|模型训练]]
 - [[工具/index|工具]]
 
 ---

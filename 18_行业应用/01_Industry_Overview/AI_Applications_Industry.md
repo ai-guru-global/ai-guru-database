@@ -624,8 +624,8 @@ AI平台化趋势:
 
 ## Related
 
-- [[行业应用/Industry_Overview/Industry_Comparison_2026.md|Industry_Comparison_2026]]
-- [[行业应用/README.md|行业应用 README]]
-- [[行业应用/README_for_dummy.md|README_for_dummy]]
-- [[行业应用/AI_Agriculture_2026.md|AI_Agriculture_2026]]
-- [[行业应用/AI_Autonomous_Driving_2026.md|AI_Autonomous_Driving_2026]]
+- [[18_行业应用/01_Industry_Overview/Industry_Comparison_2026.md|Industry_Comparison_2026]]
+- [[18_行业应用/README.md|行业应用 README]]
+- [[18_行业应用/README_for_dummy.md|README_for_dummy]]
+- [[18_行业应用/AI_Agriculture_2026.md|AI_Agriculture_2026]]
+- [[18_行业应用/AI_Autonomous_Driving_2026.md|AI_Autonomous_Driving_2026]]

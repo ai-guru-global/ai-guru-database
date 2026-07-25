@@ -145,12 +145,12 @@ Pichai 的核心判断：
 
 ## 交叉引用 (Cross-References)
 
-- [Talks 主题合成 2026](业界观点/Talks_Synthesis/Talks_Synthesis_2026.md) — 查看 Pichai 在各主题中的立场
-- [[业界观点/Bill_Gates/about]] — Gates 与 Pichai 同样强调 AI 的革命性和社会影响
-- [[业界观点/Mark_Zuckerberg/about]] — Zuckerberg (Meta) 与 Pichai 在 AI 商业化和开源策略上有差异
-- [[业界观点/Mustafa_Suleyman/about]] — Suleyman 是前 Google/DeepMind 成员
-- [AI 伦理与社会](入门/Ethics_and_Future/AI_Ethics_Society.md) — Responsible AI 框架
-- [大模型基础](../../大模型/README.md) — Gemini 系列与 Transformer 演进
+- [Talks 主题合成 2026](19_业界观点/Talks_Synthesis/Talks_Synthesis_2026.md) — 查看 Pichai 在各主题中的立场
+- [[19_业界观点/Bill_Gates/about]] — Gates 与 Pichai 同样强调 AI 的革命性和社会影响
+- [[19_业界观点/Mark_Zuckerberg/about]] — Zuckerberg (Meta) 与 Pichai 在 AI 商业化和开源策略上有差异
+- [[19_业界观点/Mustafa_Suleyman/about]] — Suleyman 是前 Google/DeepMind 成员
+- [AI 伦理与社会](00_入门/04_Ethics_and_Future/AI_Ethics_Society.md) — Responsible AI 框架
+- [大模型基础](../../05_大模型/README.md) — Gemini 系列与 Transformer 演进
 
 ---
 
@@ -168,10 +168,10 @@ Pichai 的核心判断：
 
 ## Related
 
-- [[业界观点/Andrej_Karpathy/about]] — Andrej Karpathy 简介 (Andrej Karpathy) (共享: insights, leaders, speeches, talks)
-- [[业界观点/Andrew_Ng/about]] — Andrew Ng 简介 (Andrew Ng) (共享: insights, leaders, speeches, talks)
-- [[业界观点/Andrew_Ng/sayings]] — Andrew Ng 关于 AI 的观点与格言 (共享: insights, leaders, speeches, talks)
-- [[业界观点/Bill_Gates/about]] — Bill Gates 简介 (Bill Gates) (共享: insights, leaders, speeches, talks)
+- [[19_业界观点/Andrej_Karpathy/about]] — Andrej Karpathy 简介 (Andrej Karpathy) (共享: insights, leaders, speeches, talks)
+- [[19_业界观点/Andrew_Ng/about]] — Andrew Ng 简介 (Andrew Ng) (共享: insights, leaders, speeches, talks)
+- [[19_业界观点/Andrew_Ng/sayings]] — Andrew Ng 关于 AI 的观点与格言 (共享: insights, leaders, speeches, talks)
+- [[19_业界观点/Bill_Gates/about]] — Bill Gates 简介 (Bill Gates) (共享: insights, leaders, speeches, talks)
 
 ## 附录：人物影响力评估
 

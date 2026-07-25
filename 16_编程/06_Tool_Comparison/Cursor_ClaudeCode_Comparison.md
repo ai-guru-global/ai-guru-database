@@ -279,8 +279,8 @@ Claude Code 流程:
 
 ## 相关阅读
 
-- [[编程/Tools/Cursor_Guide]] — Cursor 详细指南
-- [[编程/Coding_Fundamentals/AI_Coding_for_dummy]] — AI 编程入门
-- [[编程/Tools/AI_Coding_Assistants_2026]] — 2026 AI 编程助手全景
-- [[智能体/Agent_Skills/Tool_Calling_Best_Practices]] — Tool Calling 最佳实践
-- [[智能体/Agent_Workflow/LangGraph_Deep_Dive]] — LangGraph 深度解读
+- [[16_编程/05_Tools/Cursor_Guide]] — Cursor 详细指南
+- [[16_编程/01_Coding_Fundamentals/AI_Coding_for_dummy]] — AI 编程入门
+- [[16_编程/05_Tools/AI_Coding_Assistants_2026]] — 2026 AI 编程助手全景
+- [[15_智能体/05_Agent_Skills/Tool_Calling_Best_Practices]] — Tool Calling 最佳实践
+- [[15_智能体/03_Agent_Workflow/LangGraph_Deep_Dive]] — LangGraph 深度解读

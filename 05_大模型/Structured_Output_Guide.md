@@ -150,7 +150,7 @@ flowchart TD
     H -->|是| I["输出: 100% 合规结果"]
 ```
 
-> **深入**: → [[大模型/Constrained_Decoding_2026]] 详解约束解码的工程实现。
+> **深入**: → [[05_大模型/Constrained_Decoding_2026]] 详解约束解码的工程实现。
 
 ## Instructor 详解
 
@@ -490,4 +490,4 @@ async def robust_extract(text: str) -> OutputModel | None:
 9. **缓存 DFA 编译**: Outlines/lm-format-enforcer 的编译结果可复用
 10. **监控首次合规率**: 这是衡量整个结构化输出管道健康度的核心指标
 
-> **关联**: → [[大模型/Constrained_Decoding_2026|约束解码深度指南]] | → [[大模型/Prompt_Engineering/Prompt_Engineering_Complete_Guide|提示词工程]] | → [[智能体/GenAI_L11_Integrating_with_Function_Calling|Function Calling]] | → [[学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
+> **关联**: → [[05_大模型/Constrained_Decoding_2026|约束解码深度指南]] | → [[05_大模型/08_Prompt_Engineering/Prompt_Engineering_Complete_Guide|提示词工程]] | → [[15_智能体/GenAI_L11_Integrating_with_Function_Calling|Function Calling]] | → [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]]

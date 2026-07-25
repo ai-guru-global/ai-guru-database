@@ -62,8 +62,8 @@ aliases:
 ## 相关
 
 - [[概念/gradient-descent]] — 训练神经网络时优化权重与偏置的核心算法
-- [[深度学习/Deep_Learning_For_Beginners]] — 深度学习入门：神经网络、梯度下降与主流架构
-- [[大模型/LLM_For_Beginners]] — 大语言模型入门：预训练、微调与推理基础
+- [[03_深度学习/Deep_Learning_For_Beginners]] — 深度学习入门：神经网络、梯度下降与主流架构
+- [[05_大模型/LLM_For_Beginners]] — 大语言模型入门：预训练、微调与推理基础
 
 ---
 

@@ -68,7 +68,7 @@ tier: supporting
 
 - [[概念/Safety/ai-governance]] — AI 治理 (共享: governance, transparency)
 - [[概念/Safety/bias-detection]] — 偏见检测 (共享: fairness, explainability)
-- [[伦理安全/Mechanistic_Interpretability]] — 机制可解释性专题
+- [[17_伦理安全/Mechanistic_Interpretability]] — 机制可解释性专题
 
 ## 核心知识框架
 

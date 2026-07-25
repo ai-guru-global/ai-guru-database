@@ -132,7 +132,7 @@ ArgoCD / Flux（监听变化）
 - [[概念/argocd]] — ArgoCD（GitOps 工具）
 - [[概念/policy-as-code]] — Policy as Code 集成
 - [[概念/code-generation-workflow]] — AI 代码生成工作流
-- [[模型运维/CI_CD/index]] — MLOps CI/CD 章节
+- [[11_模型运维/06_CI_CD/index]] — MLOps CI/CD 章节
 - [[治理/cheatsheets/cheatsheet-mlops]] — LLMOps 速查表
 
 ---
@@ -149,7 +149,7 @@ ArgoCD / Flux（监听变化）
 
 ## 生产最佳实践
 
-1. **自动化必用**：所有构建/测试/部署必须自动化
+1. **自动化必用**：所有构建/09_测试/部署必须自动化
 2. **快速反馈**：CI 流水线尽快反馈，<10分钟
 3. **测试覆盖**：单元测试 + 集成测试 + E2E 测试
 4. **GitOps 部署**：用 ArgoCD 实现 GitOps 部署

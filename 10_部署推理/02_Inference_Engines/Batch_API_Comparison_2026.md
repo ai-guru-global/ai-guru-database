@@ -242,7 +242,7 @@ client = openai.OpenAI(
 | **SGLang** | RadixAttention + 连续批处理 | 结构化生成优化 |
 | **TensorRT-LLM** | In-flight batching | NVIDIA 极致优化 |
 
-> **关联**: 自建 batch 服务的详细方案参见 [[部署推理/Inference_Engines/vLLM_Deep_Dive|vLLM 深度解析]] 和 [[部署推理/Inference_Engines/TGI_Deep_Dive|TGI 深度解析]]
+> **关联**: 自建 batch 服务的详细方案参见 [[10_部署推理/02_Inference_Engines/vLLM_Deep_Dive|vLLM 深度解析]] 和 [[10_部署推理/02_Inference_Engines/TGI_Deep_Dive|TGI 深度解析]]
 
 ---
 
@@ -800,7 +800,7 @@ print(estimate_batch_cost(
 | **适用规模** | 中小规模 | 大规模持续运行 |
 | **盈亏平衡点** | - | ~50M tokens/天 |
 
-> **关联**: 自建推理的成本分析参见 [[部署推理/LLM_Cost_Optimization|LLM 成本优化完全指南]]
+> **关联**: 自建推理的成本分析参见 [[10_部署推理/LLM_Cost_Optimization|LLM 成本优化完全指南]]
 
 ---
 
@@ -876,8 +876,8 @@ Q1: 数据是否可以出境?
 
 ## 相关页面
 
-- [[部署推理/LLM_Cost_Optimization|LLM 成本优化完全指南]] — Batch API 是成本优化的核心策略之一
-- [[部署推理/Inference_Engines/vLLM_Deep_Dive|vLLM 深度解析]] — 自建 Batch 服务的首选推理引擎
-- [[部署推理/Deployment_Inference_2026|部署推理 2026 趋势]] — 整体推理部署趋势与技术选型
-- [[部署推理/Inference_Engines/TGI_Deep_Dive|TGI 深度解析]] — HuggingFace 生态的 Batch 推理方案
-- [[部署推理/Caching/Prompt_Caching_and_KV_Cache_Optimization|Prompt Caching]] — 与 Batch API 互补的成本优化手段
+- [[10_部署推理/LLM_Cost_Optimization|LLM 成本优化完全指南]] — Batch API 是成本优化的核心策略之一
+- [[10_部署推理/02_Inference_Engines/vLLM_Deep_Dive|vLLM 深度解析]] — 自建 Batch 服务的首选推理引擎
+- [[10_部署推理/Deployment_Inference_2026|部署推理 2026 趋势]] — 整体推理部署趋势与技术选型
+- [[10_部署推理/02_Inference_Engines/TGI_Deep_Dive|TGI 深度解析]] — HuggingFace 生态的 Batch 推理方案
+- [[10_部署推理/06_Caching/Prompt_Caching_and_KV_Cache_Optimization|Prompt Caching]] — 与 Batch API 互补的成本优化手段

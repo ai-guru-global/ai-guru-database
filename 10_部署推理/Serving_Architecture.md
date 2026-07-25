@@ -280,9 +280,9 @@ HIGH_AVAILABILITY = {
 
 ## 6. 交叉引用
 
-- [[部署推理/Inference_Engines/|推理引擎]]
-- [[部署推理/LLM_Caching/|LLM 缓存]]
-- [[部署推理/Edge_Deployment/|边缘部署]]
-- [[架构基建/|架构基建]]
-- [[运维/|运维]]
-- [[部署推理/Inference_Performance/|推理性能]]
+- [[10_部署推理/02_Inference_Engines/|推理引擎]]
+- [[10_部署推理/LLM_Caching/|LLM 缓存]]
+- [[10_部署推理/Edge_Deployment/|边缘部署]]
+- [[12_架构基建/|架构基建]]
+- [[13_运维/|运维]]
+- [[10_部署推理/04_Inference_Performance/|推理性能]]

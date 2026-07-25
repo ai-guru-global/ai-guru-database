@@ -811,8 +811,8 @@ class LLMDrivenNAS:
 - [[Optimization]] — NAS 中的双层优化
 - [[Convolutional_Architectures_Evolution]] — CNN 架构演进与 NAS
 - [[Mixture_of_Experts_Theory]] — MoE 架构的自动搜索
-- [[深度学习/DL_Frameworks/index|深度学习框架]] — NNI, AutoKeras 等 NAS 工具
-- [[深度学习/Optimization/index|优化]] — 超参数优化与 NAS 的关系
+- [[03_深度学习/08_DL_Frameworks/index|深度学习框架]] — NNI, AutoKeras 等 NAS 工具
+- [[03_深度学习/03_Optimization/index|优化]] — 超参数优化与 NAS 的关系
 
 ---
 

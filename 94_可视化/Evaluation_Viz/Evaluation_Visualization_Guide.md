@@ -323,10 +323,10 @@ plot_llm_benchmark_radar(benchmark_results)
 - [[Evaluation_Report_Template]]: 评估报告模板
 - [[Unified_Benchmark_Comparison]]: 基准测试对比
 - [[AI_System_Dashboard]]: 系统仪表盘
-- [[../../模型评估/Benchmarks/LLM_Benchmark_Suite_2026|LLM 基准套件]] — 评估可视化数据来源
-- [[../../模型评估/LLM_Evaluation|LLM 评估]] — 评估方法论
-- [[../../模型运维/Observability/ML_Observability_SLO|ML 可观测性 SLO]] — 运维指标可视化
-- [[../../计算机视觉/README_for_dummy|CV 入门]] — CV 评估可视化场景
+- [[../../08_模型评估/02_Benchmarks/LLM_Benchmark_Suite_2026|LLM 基准套件]] — 评估可视化数据来源
+- [[../../08_模型评估/LLM_Evaluation|LLM 评估]] — 评估方法论
+- [[../../11_模型运维/08_Observability/ML_Observability_SLO|ML 可观测性 SLO]] — 运维指标可视化
+- [[../../04_计算机视觉/README_for_dummy|CV 入门]] — CV 评估可视化场景
 
 ---
 

@@ -15,14 +15,14 @@ tags: [auto-index]
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[论文精读/RL/AlphaGo_Deep_Dive|AlphaGo Deep Dive]] | AlphaGo paper deep dive: MCTS plus deep reinforcement learning | RL researchers / game AI engineers |
-| [[论文精读/RL/DQN_Deep_Dive|DQN Deep Dive]] | DQN paper deep dive: deep Q-network and experience replay | RL researchers / students |
-| [[论文精读/RL/PPO_Deep_Dive|PPO Deep Dive]] | PPO paper deep dive: proximal policy optimization algorithm | RL researchers / RLHF engineers |
+| [[20_论文精读/07_RL/AlphaGo_Deep_Dive|AlphaGo Deep Dive]] | AlphaGo paper deep dive: MCTS plus deep reinforcement learning | RL researchers / game AI engineers |
+| [[20_论文精读/07_RL/DQN_Deep_Dive|DQN Deep Dive]] | DQN paper deep dive: deep Q-network and experience replay | RL researchers / students |
+| [[20_论文精读/07_RL/PPO_Deep_Dive|PPO Deep Dive]] | PPO paper deep dive: proximal policy optimization algorithm | RL researchers / RLHF engineers |
 
 ## Related
 
-- [[论文精读/index|论文精读首页]]
-- [[强化学习/Deep_RL/index|Deep RL]]
+- [[20_论文精读/index|论文精读首页]]
+- [[06_强化学习/02_Deep_RL/index|Deep RL]]
 
 ## 进阶知识拓展
 
@@ -60,9 +60,9 @@ tags: [auto-index]
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

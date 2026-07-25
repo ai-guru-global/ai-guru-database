@@ -200,6 +200,6 @@ response = query_engine.query("关于跨部门协同的绩效考核细则。")
 ---
 
 ## 相关阅读
-- [[RAG系统/RAG_Frameworks/LlamaIndex_Deep_Dive]]
-- [[架构基建/Airgapped_Offline_Deployment_2026]] (离线加载大模型的必备知识)
-- [[模型评估/Evaluation_Metrics]]
+- [[14_RAG系统/06_RAG_Frameworks/LlamaIndex_Deep_Dive]]
+- [[12_架构基建/Airgapped_Offline_Deployment_2026]] (离线加载大模型的必备知识)
+- [[08_模型评估/Evaluation_Metrics]]

@@ -152,9 +152,9 @@ flowchart TB
 
 ## 🔗 相关主题
 
-- [AI 安全红队测试](伦理安全/AI_Safety_RedTeaming/AI_Safety_RedTeaming.md) — 主动测试 AI 安全
-- [AI 治理合规](伦理安全/Governance/AI_Governance_Compliance_2026.md) — 法律法规
-- [Privacy Preserving AI](伦理安全/Privacy_Preserving_AI/Privacy_Preserving_AI.md) — 保护个人数据
+- [AI 安全红队测试](17_伦理安全/04_AI_Safety_RedTeaming/AI_Safety_RedTeaming.md) — 主动测试 AI 安全
+- [AI 治理合规](17_伦理安全/03_Governance/AI_Governance_Compliance_2026.md) — 法律法规
+- [Privacy Preserving AI](17_伦理安全/10_Privacy_Preserving_AI/Privacy_Preserving_AI.md) — 保护个人数据
 
 ---
 
@@ -235,9 +235,9 @@ flowchart TB
 
 ## 相关链接
 
-- [[伦理安全/Deepfake_Security/Deepfake_Security|Deepfake 安全 (完整版)]] — 本篇小白版对应的详细版
-- [[伦理安全/Deepfake_Security/index|Deepfake 安全索引]] — 主题导览
-- [[伦理安全/AI_Watermarking|AI 水印]] — Deepfake 防御的溯源手段
+- [[17_伦理安全/09_Deepfake_Security/Deepfake_Security|Deepfake 安全 (完整版)]] — 本篇小白版对应的详细版
+- [[17_伦理安全/09_Deepfake_Security/index|Deepfake 安全索引]] — 主题导览
+- [[17_伦理安全/AI_Watermarking|AI 水印]] — Deepfake 防御的溯源手段
 - [[概念/Vision/video-generation|视频生成]] — Deepfake 背后的生成技术
-- [[计算机视觉/Video_Generation/Video_Generation_2026|AI 视频生成 2026]] — 视频生成技术全景
+- [[04_计算机视觉/07_Video_Generation/Video_Generation_2026|AI 视频生成 2026]] — 视频生成技术全景
 - [[概念/Safety/model-watermark|模型水印]] — 内容溯源技术

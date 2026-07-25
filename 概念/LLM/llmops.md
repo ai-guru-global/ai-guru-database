@@ -16,7 +16,7 @@ relationships:
   - target: "概念/Agent/agent-evaluation-benchmarks"
     type: related_to
 sources:
-  - 模型运维/LLMOps/LLMOps_2026.md
+  - 11_模型运维/10_LLMOps/LLMOps_2026.md
 
 ---
 # LLMOps
@@ -178,12 +178,12 @@ Ragas 评估 → 发现问题 → 优化检索/Chunking → 重新评估
 
 ## Related
 
-- [[模型运维/LLMOps_2026]] — LLMOps 全景深度解析
+- [[11_模型运维/LLMOps_2026]] — LLMOps 全景深度解析
 - [[概念/Inference/model-serving]] — 模型服务
-- [[模型运维/LLM_Evaluation_Pipeline]] — LLM 评估流水线
-- [[模型运维/Observability/LLM_Observability]] — LLM 可观测性
-- [[大模型/LLM_Production_Deployment_Runbook|LLM 生产部署 Runbook]]
-- [[大模型/LLM_Inference_Deep_Dive|LLM 推理深度解析]]
+- [[11_模型运维/LLM_Evaluation_Pipeline]] — LLM 评估流水线
+- [[11_模型运维/08_Observability/LLM_Observability]] — LLM 可观测性
+- [[05_大模型/LLM_Production_Deployment_Runbook|LLM 生产部署 Runbook]]
+- [[05_大模型/LLM_Inference_Deep_Dive|LLM 推理深度解析]]
 
 ## LLMOps 工具链全景 (2026)
 

@@ -170,11 +170,11 @@ AGENT_MONITORING = {
 
 ## 7. 交叉引用
 
-- [[智能体/|智能体系统]]
-- [[智能体/Agent_Evaluation/Agent_Evaluation|Agent 评估]]
-- [[部署推理/Serving_Architecture|服务架构]]
-- [[运维/Incident_Management|事故管理]]
-- [[架构基建/Multi_Tenancy|多租户]]
+- [[15_智能体/|智能体系统]]
+- [[15_智能体/07_Agent_Evaluation/Agent_Evaluation|Agent 评估]]
+- [[10_部署推理/Serving_Architecture|服务架构]]
+- [[13_运维/Incident_Management|事故管理]]
+- [[12_架构基建/Multi_Tenancy|多租户]]
 
 ## 附录：核心概念速查
 

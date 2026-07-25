@@ -165,8 +165,8 @@ Gateway 能力:
 ## 下一步
 
 - 想深入技术？→ 查看子目录具体文档
-- 想学架构？→ [架构基建/README_for_dummy.md](伦理安全/README_for_dummy.md)
-- 想学部署？→ [部署推理/README_for_dummy.md](伦理安全/README_for_dummy.md)
+- 想学架构？→ [12_架构基建/README_for_dummy.md](17_伦理安全/README_for_dummy.md)
+- 想学部署？→ [10_部署推理/README_for_dummy.md](17_伦理安全/README_for_dummy.md)
 
 ---
 
@@ -174,19 +174,19 @@ Gateway 能力:
 
 ## Related
 
-- [[架构基建/AI_Gateway/AI_Gateway_2026.md|AI_Gateway_2026]]
-- [[架构基建/AI_Gateway/AI_Gateway_for_dummy.md|AI_Gateway_for_dummy]]
-- [[架构基建/AI_Gateway/Cohere_Deep_Dive.md|Cohere_Deep_Dive]]
-- [[架构基建/AI_Gateway/Gateway-in-nutshell.md|Gateway-in-nutshell]]
-- [[架构基建/AI_Gateway/Kong_AI_Gateway_Deep_Dive.md|Kong_AI_Gateway_Deep_Dive]]
+- [[12_架构基建/11_AI_Gateway/AI_Gateway_2026.md|AI_Gateway_2026]]
+- [[12_架构基建/11_AI_Gateway/AI_Gateway_for_dummy.md|AI_Gateway_for_dummy]]
+- [[12_架构基建/11_AI_Gateway/Cohere_Deep_Dive.md|Cohere_Deep_Dive]]
+- [[12_架构基建/11_AI_Gateway/Gateway-in-nutshell.md|Gateway-in-nutshell]]
+- [[12_架构基建/11_AI_Gateway/Kong_AI_Gateway_Deep_Dive.md|Kong_AI_Gateway_Deep_Dive]]
 
-- [[架构基建/README|架构与基础设施 (Architecture & Infrastructure)]]
+- [[12_架构基建/README|架构与基础设施 (Architecture & Infrastructure)]]
 
 ## 架构核心组件对比
 
 | 组件层 | 功能 | 关键技术 | 选型考量 |
 |--------|------|----------|----------|
-| 计算层 | 模型训练/推理 | GPU/TPU/NPU集群 | 算力需求+成本 |
+| 计算层 | 07_模型训练/推理 | GPU/TPU/NPU集群 | 算力需求+成本 |
 | 存储层 | 数据/模型/检查点 | 分布式存储/对象存储 | 容量+IOPS+成本 |
 | 网络层 | 节点间通信 | RDMA/RoCE/InfiniBand | 带宽+延迟 |
 | 调度层 | 资源编排 | K8s/Slurm/Ray | 弹性+效率 |

@@ -333,11 +333,11 @@ R:
 
 ## Related
 
-- [[面试岗位/MLOps_Engineer/question_bank|MLOps Engineer 题库]]
-- [[面试岗位/MLOps_Engineer/company_level_question_bank|MLOps Engineer 按公司/级别区分的题库]]
-- [[面试岗位/MLOps_Engineer/index|MLOps Engineer 首页]]
-- [[模型运维/index|模型运维]]
-- [[部署推理/index|部署推理]]
-- [[模型运维/CI_CD/index|CI/CD for ML]]
-- [[面试岗位/Interview_Guide/System_Design_for_AI|AI 系统设计面试]]
-- [[面试岗位/jobs|AI 相关岗位与工种清单]]
+- [[21_面试岗位/MLOps_Engineer/question_bank|MLOps Engineer 题库]]
+- [[21_面试岗位/MLOps_Engineer/company_level_question_bank|MLOps Engineer 按公司/级别区分的题库]]
+- [[21_面试岗位/MLOps_Engineer/index|MLOps Engineer 首页]]
+- [[11_模型运维/index|模型运维]]
+- [[10_部署推理/index|部署推理]]
+- [[11_模型运维/06_CI_CD/index|CI/CD for ML]]
+- [[21_面试岗位/Interview_Guide/System_Design_for_AI|AI 系统设计面试]]
+- [[21_面试岗位/jobs|AI 相关岗位与工种清单]]

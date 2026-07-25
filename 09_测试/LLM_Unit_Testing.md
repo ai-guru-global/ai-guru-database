@@ -220,8 +220,8 @@ jobs:
 
 ## 6. 交叉引用
 
-- [[测试/Testing_Frameworks/|测试框架]]
-- [[测试/RAGAS/|RAGAS]]
-- [[编程/Testing_with_AI/|AI 辅助测试]]
-- [[模型评估/|模型评估]]
-- [[测试/CI_CD_for_ML/|ML CI/CD]]
+- [[09_测试/02_Testing_Frameworks/|测试框架]]
+- [[09_测试/RAGAS/|RAGAS]]
+- [[16_编程/Testing_with_AI/|AI 辅助测试]]
+- [[08_模型评估/|模型评估]]
+- [[09_测试/CI_CD_for_ML/|ML CI/CD]]

@@ -236,10 +236,10 @@ model = deepspeed.init_inference(
 
 ## 9. 进阶学习路径
 
-1. 想深入原理 → [[模型训练/Distributed_Training/DeepSpeed_Deep_Dive]]
-2. 想看分布式训练全景 → [[模型训练/Distributed_Training/Distributed_Training_2026]]
-3. 想零基础了解训练 → [[模型训练/Model_Training_for_dummy]]
-4. 想配合 Hugging Face 使用 → [[模型训练/Distributed_Training/HF_Accelerate_DeepSpeed_Guide]]
+1. 想深入原理 → [[07_模型训练/04_Distributed_Training/DeepSpeed_Deep_Dive]]
+2. 想看分布式训练全景 → [[07_模型训练/04_Distributed_Training/Distributed_Training_2026]]
+3. 想零基础了解训练 → [[07_模型训练/Model_Training_for_dummy]]
+4. 想配合 Hugging Face 使用 → [[07_模型训练/04_Distributed_Training/HF_Accelerate_DeepSpeed_Guide]]
 5. 想快速查阅 → [[概念/deepspeed]]
 
 ---
@@ -247,10 +247,10 @@ model = deepspeed.init_inference(
 ## Related
 
 - [[概念/deepspeed]] — DeepSpeed 概念卡片
-- [[模型训练/Distributed_Training/DeepSpeed_Deep_Dive]] — DeepSpeed 深度解析
-- [[模型训练/Distributed_Training/Distributed_Training_2026]] — 分布式训练全景
-- [[模型训练/Model_Training_for_dummy]] — 模型训练入门
-- [[模型训练/Distributed_Training/HF_Accelerate_DeepSpeed_Guide]] — Accelerate + DeepSpeed 极简指南
+- [[07_模型训练/04_Distributed_Training/DeepSpeed_Deep_Dive]] — DeepSpeed 深度解析
+- [[07_模型训练/04_Distributed_Training/Distributed_Training_2026]] — 分布式训练全景
+- [[07_模型训练/Model_Training_for_dummy]] — 模型训练入门
+- [[07_模型训练/04_Distributed_Training/HF_Accelerate_DeepSpeed_Guide]] — Accelerate + DeepSpeed 极简指南
 - [[概念/hami]] — HAMi GPU 虚拟化
 
-- [[模型训练/README|模型训练 (Model Training)]]
+- [[07_模型训练/README|模型训练 (Model Training)]]

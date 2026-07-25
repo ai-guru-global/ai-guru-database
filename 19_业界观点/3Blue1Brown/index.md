@@ -14,15 +14,15 @@ Grant Sanderson 是 3Blue1Brown 创始人，用 Manim 动画引擎创造了全�
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[业界观点/3Blue1Brown/about|about]] | 人物简介 | 所有读者 |
-| [[业界观点/3Blue1Brown/youtube_channel|youtube_channel]] | YouTube 频道 | 视频学习者 |
+| [[19_业界观点/3Blue1Brown/about|about]] | 人物简介 | 所有读者 |
+| [[19_业界观点/3Blue1Brown/youtube_channel|youtube_channel]] | YouTube 频道 | 视频学习者 |
 
 ## Related
 
-- [[业界观点/Andrej_Karpathy/index|Andrej Karpathy]]
-- [[业界观点/Andrew_Ng/index|Andrew Ng]]
-- [[业界观点/Josh_Starmer/index|Josh Starmer]]
-- [[业界观点/Sebastian_Thrun/index|Sebastian Thrun]]
+- [[19_业界观点/Andrej_Karpathy/index|Andrej Karpathy]]
+- [[19_业界观点/Andrew_Ng/index|Andrew Ng]]
+- [[19_业界观点/Josh_Starmer/index|Josh Starmer]]
+- [[19_业界观点/Sebastian_Thrun/index|Sebastian Thrun]]
 
 ## 3Blue1Brown 核心观点
 

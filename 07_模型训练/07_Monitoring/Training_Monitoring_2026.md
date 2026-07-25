@@ -851,8 +851,8 @@ loss_tensor = all_reduce_average(loss_tensor)
 ## 相关章节
 
 - **分布式训练监控**: 详见 [./Distributed_Training_2026.md](../Distributed_Training/Distributed_Training_2026.md)
-- **MLOps 流水线集成**: 详见 [../MLOps/](../模型运维/)
-- **生产环境可观测性**: 详见 [../AI运维/AI_Observability_Guide.md](../../模型运维/Observability/AI_Observability_Guide.md)
+- **MLOps 流水线集成**: 详见 [../MLOps/](../11_模型运维/)
+- **生产环境可观测性**: 详见 [../AI运维/AI_Observability_Guide.md](../../11_模型运维/08_Observability/AI_Observability_Guide.md)
 
 ---
 
@@ -860,8 +860,8 @@ loss_tensor = all_reduce_average(loss_tensor)
 
 ## Related
 
-- [[模型训练/Distributed_Training/Distributed_Training_2026.md|Distributed_Training_2026]]
-- [[模型训练/Distributed_Training/Distributed_Training_for_dummy.md|Distributed_Training_for_dummy]]
-- [[模型训练/Optimization/Mixed_Precision_Training.md|Mixed_Precision_Training]]
-- [[模型训练/Training_Fundamentals/Model-Training-in-nutshell.md|Model-Training-in-nutshell]]
-- [[模型训练/Training_Fundamentals/Model_Training_for_dummy.md|Model_Training_for_dummy]]
+- [[07_模型训练/04_Distributed_Training/Distributed_Training_2026.md|Distributed_Training_2026]]
+- [[07_模型训练/04_Distributed_Training/Distributed_Training_for_dummy.md|Distributed_Training_for_dummy]]
+- [[07_模型训练/03_Optimization/Mixed_Precision_Training.md|Mixed_Precision_Training]]
+- [[07_模型训练/01_Training_Fundamentals/Model-Training-in-nutshell.md|Model-Training-in-nutshell]]
+- [[07_模型训练/01_Training_Fundamentals/Model_Training_for_dummy.md|Model_Training_for_dummy]]

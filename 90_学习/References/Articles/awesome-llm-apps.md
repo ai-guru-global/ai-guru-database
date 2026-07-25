@@ -32,7 +32,7 @@ aliases:
 - 多模态应用(图像、音频)
 - 工具集成(搜索、数据库)
 
-> **关联**: -> [[大模型|NLP/LLM]] | [[Agent|Agent 生产]] | [[学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
+> **关联**: -> [[大模型|NLP/LLM]] | [[Agent|Agent 生产]] | [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]]
 
 
 ## 核心知识框架

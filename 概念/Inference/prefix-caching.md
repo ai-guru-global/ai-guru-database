@@ -12,7 +12,7 @@ relationships:
   - target: "概念/Inference/inference-performance"
     type: improves
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
   - "https://arxiv.org/abs/2312.07104"  # SGLang RadixAttention
 summary: 前缀缓存通过复用多个请求共享的 prompt prefix 的 KV Cache 状态，避免重复 prefill 计算。命中率 60-85% 时每次调用成本降低 5-12×，是 2026 年推理侧最高杠杆的应用层优化。
 provenance:
@@ -147,7 +147,7 @@ response = client.messages.create(
 - [[概念/Inference/radix-attention|RadixAttention]]
 - [[概念/Inference/paged-attention|PagedAttention]]
 - [[概念/Inference/inference-performance|推理性能]]
-- [[部署推理/Caching/Prompt_Caching_and_KV_Cache_Optimization|Prompt Caching 全 景]]
+- [[10_部署推理/06_Caching/Prompt_Caching_and_KV_Cache_Optimization|Prompt Caching 全 景]]
 
 ## 前缀缓存技术对比
 

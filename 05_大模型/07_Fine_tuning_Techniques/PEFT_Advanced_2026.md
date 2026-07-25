@@ -163,10 +163,10 @@ print("PiSSA 模型准备就绪。")
 ---
 
 ## 相关阅读
-- [[模型训练/Alignment/TRL_RLHF_DPO_Guide]]
-- [[大模型/Fine_tuning_Techniques/PEFT_2026]]
-- [[深度学习/Optimization/Optimization_for_dummy]]
-- [[大模型/Fine_tuning_Techniques/Fine_tuning_Techniques|微调技术总览]]
+- [[07_模型训练/06_Alignment/TRL_RLHF_DPO_Guide]]
+- [[05_大模型/07_Fine_tuning_Techniques/PEFT_2026]]
+- [[03_深度学习/03_Optimization/Optimization_for_dummy]]
+- [[05_大模型/07_Fine_tuning_Techniques/Fine_tuning_Techniques|微调技术总览]]
 - [[概念/lora|LoRA 概念]]
 
 ## 总结

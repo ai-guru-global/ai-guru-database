@@ -776,14 +776,14 @@ APD = mean(||x_adv - x_orig||_p)
 
 ### 前置知识
 
-- [价值对齐](伦理安全/Value_Alignment/Value_Alignment.md) - 对齐是安全的基础
-- [Prompt 工程](大模型/Prompt_Engineering/Prompt_Engineering.md) - 理解提示机制才能防御注入
-- [RAG 系统](RAG系统/RAG_Fundamentals/RAG_Systems.md) - 间接注入攻击的高发场景
+- [价值对齐](17_伦理安全/02_Value_Alignment/Value_Alignment.md) - 对齐是安全的基础
+- [Prompt 工程](05_大模型/08_Prompt_Engineering/Prompt_Engineering.md) - 理解提示机制才能防御注入
+- [RAG 系统](14_RAG系统/01_RAG_Fundamentals/RAG_Systems.md) - 间接注入攻击的高发场景
 
 ### 进阶推荐
 
-- [模型部署与推理](部署推理/Deployment_Fundamentals/Deployment_Inference.md) - 生产环境安全加固
-- [分布式系统](数学基础/Distributed_Systems/Distributed_Systems.md) - 理解系统层面的攻击面
+- [模型部署与推理](10_部署推理/01_Deployment_Fundamentals/Deployment_Inference.md) - 生产环境安全加固
+- [分布式系统](01_数学基础/09_Distributed_Systems/Distributed_Systems.md) - 理解系统层面的攻击面
 
 ## 8. 面试高频问题 (Interview FAQs)
 
@@ -982,11 +982,11 @@ FRR = (误拒合法请求次数) / (合法请求总数)
 
 ## Related
 
-- [[伦理安全/AI_Security_2026/README]] — AI安全 2026 (AI Security) (共享: ai-ethics, alignment, red-teaming, safety)
-- [[伦理安全/AI_Supply_Chain_Security/AI_Supply_Chain_Security]] — AI 供应链安全 2026 (共享: ai-ethics, alignment, red-teaming, safety)
-- [[伦理安全/Ethics-in-nutshell]] — AI 伦理与安全速成指南 (共享: ai-ethics, alignment, red-teaming, safety)
-- [[伦理安全/README]] — 08 AI 伦理、安全与对齐 (Ethics, Safety & Alignment) (共享: ai-ethics, alignment, red-teaming, safety)
-- [[伦理安全/Safety_Evaluation_Framework|AI 安全评测框架]] — 安全评测基准与红队测试方法论
+- [[17_伦理安全/07_AI_Security_2026/README]] — AI安全 2026 (AI Security) (共享: ai-ethics, alignment, red-teaming, safety)
+- [[17_伦理安全/08_AI_Supply_Chain_Security/AI_Supply_Chain_Security]] — AI 供应链安全 2026 (共享: ai-ethics, alignment, red-teaming, safety)
+- [[17_伦理安全/Ethics-in-nutshell]] — AI 伦理与安全速成指南 (共享: ai-ethics, alignment, red-teaming, safety)
+- [[17_伦理安全/README]] — 08 AI 伦理、安全与对齐 (Ethics, Safety & Alignment) (共享: ai-ethics, alignment, red-teaming, safety)
+- [[17_伦理安全/Safety_Evaluation_Framework|AI 安全评测框架]] — 安全评测基准与红队测试方法论
 - [[治理/safety-evaluation-red-teaming|安全评测 × 红队]] — 评测与攻击的迭代
 
 - [[治理/alignment-rlhf|价值对齐 × RLHF：从人类反馈到可扩展监督]]

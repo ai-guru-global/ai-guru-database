@@ -27,7 +27,7 @@ This directory contains overviews of major LLM products and tools in the ecosyst
 
 ## Related Directories
 
-- [[大模型/Global_LLM_Ecosystem/README]]: LLM provider deep dives
+- [[05_大模型/14_Global_LLM_Ecosystem/README]]: LLM provider deep dives
 - [[LLM_Architectures]]: Technical architecture details
 - [[Prompt_Engineering]]: How to use these products effectively
 
@@ -127,9 +127,9 @@ This directory contains overviews of major LLM products and tools in the ecosyst
 
 ## Related
 
-- [[大模型/Global_LLM_Ecosystem/index|Global LLM Ecosystem]]
-- [[大模型/Chinese_LLM_Ecosystem/index|Chinese LLM Ecosystem]]
-- [[大模型/index|大模型首页]]
+- [[05_大模型/14_Global_LLM_Ecosystem/index|Global LLM Ecosystem]]
+- [[05_大模型/15_Chinese_LLM_Ecosystem/index|Chinese LLM Ecosystem]]
+- [[05_大模型/index|大模型首页]]
 
 ## 附录：模型能力对比
 
@@ -181,9 +181,9 @@ This directory contains overviews of major LLM products and tools in the ecosyst
 
 ## 相关域
 
-- [[大模型/Prompt_Engineering/index|Prompt Engineering]]
-- [[大模型/Reasoning_Models/index|Reasoning Models]]
-- [[部署推理/index|部署推理]]
+- [[05_大模型/08_Prompt_Engineering/index|Prompt Engineering]]
+- [[05_大模型/09_Reasoning_Models/index|Reasoning Models]]
+- [[10_部署推理/index|部署推理]]
 
 ## 附录：选择决策树
 

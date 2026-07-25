@@ -344,9 +344,9 @@ def dp_fedavg_gradient(gradient, clip_norm=1.0, noise_scale=0.1):
 
 ## 相关链接
 
-- [[伦理安全/Federated_Learning/README|联邦学习概览]] — 联邦学习主题导览
-- [[伦理安全/Federated_Learning/index|联邦学习索引]] — 联邦学习索引
-- [[伦理安全/Privacy_Preserving_AI/Privacy_Preserving_AI|隐私保护 AI]] — 联邦学习的隐私目标
+- [[17_伦理安全/11_Federated_Learning/README|联邦学习概览]] — 联邦学习主题导览
+- [[17_伦理安全/11_Federated_Learning/index|联邦学习索引]] — 联邦学习索引
+- [[17_伦理安全/10_Privacy_Preserving_AI/Privacy_Preserving_AI|隐私保护 AI]] — 联邦学习的隐私目标
 - [[概念/General/federated-learning|联邦学习]] — 联邦学习概念卡片
 - [[概念/Training/distributed-training|分布式训练]] — 联邦学习的分布式基础
-- [[大模型/Fine_tuning_Techniques/PEFT_2026|PEFT 2026 完全指南]] — 联邦 LLM 微调的 PEFT 方法
+- [[05_大模型/07_Fine_tuning_Techniques/PEFT_2026|PEFT 2026 完全指南]] — 联邦 LLM 微调的 PEFT 方法

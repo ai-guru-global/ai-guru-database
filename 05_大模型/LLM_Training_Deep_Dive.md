@@ -33,11 +33,11 @@ sources: []
 
 ## 关联文档
 
-- [[大模型/Transformer_Deep_Dive]] — Transformer 核心架构
-- [[大模型/LLM_Inference_Deep_Dive]] — 推理优化
-- [[大模型/LLM_Architecture_Evolution]] — 架构演进
-- [[大模型/Fine_tuning_Techniques/LoRA_QLoRA_SFT_RLHF_DPO_in_Detail]] — LoRA/RLHF/DPO 实战
-- [[大模型/Fine_tuning_Techniques/PEFT_Advanced_2026]] — PEFT 前沿
+- [[05_大模型/Transformer_Deep_Dive]] — Transformer 核心架构
+- [[05_大模型/LLM_Inference_Deep_Dive]] — 推理优化
+- [[05_大模型/LLM_Architecture_Evolution]] — 架构演进
+- [[05_大模型/07_Fine_tuning_Techniques/LoRA_QLoRA_SFT_RLHF_DPO_in_Detail]] — LoRA/RLHF/DPO 实战
+- [[05_大模型/07_Fine_tuning_Techniques/PEFT_Advanced_2026]] — PEFT 前沿
 
 ---
 

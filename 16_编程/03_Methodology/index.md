@@ -14,14 +14,14 @@ AI 编程方法论 — Agentic Coding、Vibe Coding 等新型 AI 辅助编程范
 
 | 文件 | 说明 |
 |------|------|
-| [[编程/Methodology/Agentic_Coding_Methodology|Agentic Coding]] | 智能体编程方法论 |
-| [[编程/Methodology/Vibe_Coding_Methodology|Vibe Coding 方法论]] | Vibe Coding 编程理念 |
-| [[编程/Methodology/Vibe_Coding_Production_Practices|Vibe Coding 生产实践]] | Vibe Coding 生产环境实践 |
+| [[16_编程/03_Methodology/Agentic_Coding_Methodology|Agentic Coding]] | 智能体编程方法论 |
+| [[16_编程/03_Methodology/Vibe_Coding_Methodology|Vibe Coding 方法论]] | Vibe Coding 编程理念 |
+| [[16_编程/03_Methodology/Vibe_Coding_Production_Practices|Vibe Coding 生产实践]] | Vibe Coding 生产环境实践 |
 
 ## Related
 
-- [[编程/Theory/index|编程理论]]
-- [[编程/Practice/index|编程实践]]
+- [[16_编程/02_Theory/index|编程理论]]
+- [[16_编程/04_Practice/index|编程实践]]
 
 ## 核心知识体系
 
@@ -132,9 +132,9 @@ AI 编程方法论 — Agentic Coding、Vibe Coding 等新型 AI 辅助编程范
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

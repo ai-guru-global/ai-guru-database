@@ -239,8 +239,8 @@ flowchart TD
 
 ## Related
 
-- [[../../数学基础/Probability_Statistics/Probability_Statistics_for_dummy|概率统计]] — AutoML 的前置数学
-- [[../../深度学习/Optimization/Optimization_for_dummy|优化入门]] — 超参数搜索的数学基础
-- [[../../模型评估/Evaluation_Fundamentals|评估基础]] — AutoML 的模型评估方法
+- [[../../01_数学基础/03_Probability_Statistics/Probability_Statistics_for_dummy|概率统计]] — AutoML 的前置数学
+- [[../../03_深度学习/03_Optimization/Optimization_for_dummy|优化入门]] — 超参数搜索的数学基础
+- [[../../08_模型评估/Evaluation_Fundamentals|评估基础]] — AutoML 的模型评估方法
 - [[../../概念/Math/anomaly-detection|异常检测概念卡]] — AutoML 在异常检测中的应用
-- [[../../部署推理/Cost|推理成本]] — AutoML 模型部署成本考量
+- [[../../10_部署推理/Cost|推理成本]] — AutoML 模型部署成本考量

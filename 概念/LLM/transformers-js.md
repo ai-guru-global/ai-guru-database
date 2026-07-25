@@ -10,7 +10,7 @@ relationships:
   - target: "概念/safetensors"
     type: related_to
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
 summary: "Hugging Face 出品的浏览器端 AI 推理库，基于 ONNX Runtime Web 在浏览器/Node.js/Edge Runtime 中直接运行 Transformer 模型，无需后端服务器。"
 provenance:
   extracted: 0.55

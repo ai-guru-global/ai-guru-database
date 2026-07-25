@@ -3,10 +3,10 @@ title: "MoE × 推理优化: 专家混合架构的推理加速挑战"
 category: -synthesis
 tags: ["moe", "inference-optimization", "deepseek", "speculative-decoding", "routing", "synthesis", "vllm", "sglang", "tensorrt-llm", "expert-offloading", "expert-batching"]
 sources:
-  - "大模型/LLM_Architectures/MoE_Routing_and_Load_Balancing"
-  - "大模型/LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral"
-  - "部署推理/Caching/Speculative_Decoding_Advanced_2026"
-  - "部署推理/Caching/Prompt_Caching_and_KV_Cache_Optimization"
+  - "05_大模型/05_LLM_Architectures/MoE_Routing_and_Load_Balancing"
+  - "05_大模型/05_LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral"
+  - "10_部署推理/06_Caching/Speculative_Decoding_Advanced_2026"
+  - "10_部署推理/06_Caching/Prompt_Caching_and_KV_Cache_Optimization"
   - "https://github.com/vllm-project/vllm/blob/main/docs/source/features/moe.md"
   - "https://github.com/sgl-project/sglang"
   - "https://github.com/NVIDIA/TensorRT-LLM"
@@ -517,9 +517,9 @@ DeepSeek-V3 的共享专家设计让 SGLang 的 RadixAttention 命中率达到 7
 
 ## Related
 
-- [[大模型/LLM_Architectures/MoE_Routing_and_Load_Balancing]]
-- [[大模型/LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral]]
-- [[大模型/LLM_Architectures/LLM_Internals_Inference]]
-- [[部署推理/Caching/Speculative_Decoding_Advanced_2026]]
-- [[部署推理/Caching/Prompt_Caching_and_KV_Cache_Optimization]]
-- [[大模型/Structured_Output_Guide|结构化输出指南]]
+- [[05_大模型/05_LLM_Architectures/MoE_Routing_and_Load_Balancing]]
+- [[05_大模型/05_LLM_Architectures/MoE_Case_Studies_DeepSeek_Mixtral]]
+- [[05_大模型/05_LLM_Architectures/LLM_Internals_Inference]]
+- [[10_部署推理/06_Caching/Speculative_Decoding_Advanced_2026]]
+- [[10_部署推理/06_Caching/Prompt_Caching_and_KV_Cache_Optimization]]
+- [[05_大模型/Structured_Output_Guide|结构化输出指南]]

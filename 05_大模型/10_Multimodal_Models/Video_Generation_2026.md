@@ -386,8 +386,8 @@ class InteractiveVideoGen:
 
 ## 6. 交叉引用
 
-- [[大模型/Multimodal_Models/|多模态模型]]
-- [[深度学习/Generative_Models/|生成模型]]
-- [[深度学习/Attention_Mechanisms/|注意力机制]]
-- [[大模型/LLM_Architectures/|LLM 架构]]
-- [[行业应用/|行业应用]]
+- [[05_大模型/10_Multimodal_Models/|多模态模型]]
+- [[03_深度学习/04_Generative_Models/|生成模型]]
+- [[03_深度学习/Attention_Mechanisms/|注意力机制]]
+- [[05_大模型/05_LLM_Architectures/|LLM 架构]]
+- [[18_行业应用/|行业应用]]

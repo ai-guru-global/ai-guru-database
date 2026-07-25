@@ -3,10 +3,10 @@ title: "国产 AI 芯片 × 推理引擎: 硬件约束下的推理软件栈适�
 category: -synthesis
 tags: ["ai-chip", "inference-optimization", "chinese-chip", "huawei-ascend", "software-stack", "cuda-alternative", "synthesis"]
 sources:
-  - "数学基础/AI_Hardware/Chinese_AI_Chips_Deep_Dive"
-  - "部署推理/Inference_Engines/TGI_Deep_Dive"
-  - "部署推理/Inference_Engines/TensorRT_LLM_Deep_Dive"
-  - "部署推理/Inference_Engines/vLLM_Deep_Dive"
+  - "01_数学基础/10_AI_Hardware/Chinese_AI_Chips_Deep_Dive"
+  - "10_部署推理/02_Inference_Engines/TGI_Deep_Dive"
+  - "10_部署推理/02_Inference_Engines/TensorRT_LLM_Deep_Dive"
+  - "10_部署推理/02_Inference_Engines/vLLM_Deep_Dive"
 created: 2026-06-30
 updated: 2026-06-30
 summary: "推理引擎的优化策略与底层芯片架构深度耦合——当 NVIDIA CUDA 生态不再是唯一选项，推理软件栈必须针对国产芯片的算子库、显存管理和互联拓扑做重新设计。"
@@ -98,10 +98,10 @@ TensorRT-LLM 的张量并行（Tensor Parallelism）依赖 NVLink 的 900GB/s �
 
 ## Related
 
-- [[数学基础/AI_Hardware/Chinese_AI_Chips_Deep_Dive]]
-- [[部署推理/Inference_Engines/TGI_Deep_Dive]]
-- [[部署推理/Inference_Engines/TensorRT_LLM_Deep_Dive]]
-- [[部署推理/Inference_Engines/vLLM_Deep_Dive]]
+- [[01_数学基础/10_AI_Hardware/Chinese_AI_Chips_Deep_Dive]]
+- [[10_部署推理/02_Inference_Engines/TGI_Deep_Dive]]
+- [[10_部署推理/02_Inference_Engines/TensorRT_LLM_Deep_Dive]]
+- [[10_部署推理/02_Inference_Engines/vLLM_Deep_Dive]]
 - [[治理/moe-inference-optimization]]
 - [[治理/llm-infrastructure-system-design]]
 
@@ -109,7 +109,7 @@ TensorRT-LLM 的张量并行（Tensor Parallelism）依赖 NVLink 的 900GB/s �
 
 | 组件层 | 功能 | 关键技术 | 选型考量 |
 |--------|------|----------|----------|
-| 计算层 | 模型训练/推理 | GPU/TPU/NPU集群 | 算力需求+成本 |
+| 计算层 | 07_模型训练/推理 | GPU/TPU/NPU集群 | 算力需求+成本 |
 | 存储层 | 数据/模型/检查点 | 分布式存储/对象存储 | 容量+IOPS+成本 |
 | 网络层 | 节点间通信 | RDMA/RoCE/InfiniBand | 带宽+延迟 |
 | 调度层 | 资源编排 | K8s/Slurm/Ray | 弹性+效率 |

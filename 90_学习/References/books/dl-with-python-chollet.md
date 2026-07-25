@@ -263,13 +263,13 @@ GAN:           min_G max_D [E log D(x) + E log(1 - D(G(z)))]
 
 | 本书章节 | 知识库主题 | 关联说明 |
 |----------|------------|----------|
-| Ch 2-3 神经网络基础 | [[深度学习/]] | 张量、反向传播 |
-| Ch 4 机器学习基础 | [[机器学习/]] | ML 工作流、过拟合 |
-| Ch 5 计算机视觉 | [[计算机视觉/]] | CNN、迁移学习 |
-| Ch 6 文本与序列 | [[大模型/LLM_Fundamentals]] | 词向量、RNN |
-| Ch 8 生成模型 | [[大模型/]] | VAE、GAN |
-| Ch 9 Transformer | [[大模型/]] | 注意力机制 |
-| Ch 10-11 部署 | [[部署推理/]] | 模型部署 |
+| Ch 2-3 神经网络基础 | [[03_深度学习/]] | 张量、反向传播 |
+| Ch 4 机器学习基础 | [[02_机器学习/]] | ML 工作流、过拟合 |
+| Ch 5 计算机视觉 | [[04_计算机视觉/]] | CNN、迁移学习 |
+| Ch 6 文本与序列 | [[05_大模型/LLM_Fundamentals]] | 词向量、RNN |
+| Ch 8 生成模型 | [[05_大模型/]] | VAE、GAN |
+| Ch 9 Transformer | [[05_大模型/]] | 注意力机制 |
+| Ch 10-11 部署 | [[10_部署推理/]] | 模型部署 |
 
 ### 与相关书籍的关系
 
@@ -356,7 +356,7 @@ GAN:           min_G max_D [E log D(x) + E log(1 - D(G(z)))]
 2. **改一个变量观察效果**: 如改层数、改激活函数，建立直觉
 3. **换自己的数据集**: 把方法迁移到真实问题
 4. **记录实验**: 用 TensorBoard 或笔记本记录每次实验
-5. **写总结**: 把学到的沉淀到 [[深度学习/]] 知识库
+5. **写总结**: 把学到的沉淀到 [[03_深度学习/]] 知识库
 
 ## Keras 核心 API 速查
 
@@ -411,11 +411,11 @@ model = keras.models.load_model('my_model.keras')
 
 ## 延伸阅读
 
-- [[学习/References/books/deep-learning-goodfellow|Deep Learning (花书)]] — 理论深入
-- [[学习/References/books/hands-on-ml-geron|Hands-On ML]] — 更全面的 ML/DL 实战
-- [[学习/References/books/nlp-with-transformers|NLP with Transformers]] — Transformer 深入
-- [[深度学习/]] — 知识库深度学习章节
-- [[计算机视觉/]] — 计算机视觉专题
-- [[学习/guides/ai_engineering_roadmap_2026|AI 工程路线图 2026]]
+- [[90_学习/References/books/deep-learning-goodfellow|Deep Learning (花书)]] — 理论深入
+- [[90_学习/References/books/hands-on-ml-geron|Hands-On ML]] — 更全面的 ML/DL 实战
+- [[90_学习/References/books/nlp-with-transformers|NLP with Transformers]] — Transformer 深入
+- [[03_深度学习/]] — 知识库深度学习章节
+- [[04_计算机视觉/]] — 计算机视觉专题
+- [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图 2026]]
 
-> **关联**: → [[学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]] | [[深度学习/]] | [[大模型/]] | [[计算机视觉/]]
+> **关联**: → [[90_学习/guides/ai_engineering_roadmap_2026|AI 工程路线图]] | [[03_深度学习/]] | [[05_大模型/]] | [[04_计算机视觉/]]

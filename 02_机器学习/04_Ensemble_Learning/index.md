@@ -15,13 +15,13 @@ tags: [auto-index]
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[机器学习/Ensemble_Learning/Ensemble_Learning|Ensemble Learning]] | Ensemble learning knowledge system: bias-variance decomposition and combination strategies | ML engineers / data scientists |
-| [[机器学习/Ensemble_Learning/Ensemble_Learning_for_dummy|Ensemble Learning for dummy]] | Ensemble learning beginner guide: from voting to gradient boosting | beginners / ML learners |
+| [[02_机器学习/04_Ensemble_Learning/Ensemble_Learning|Ensemble Learning]] | Ensemble learning knowledge system: bias-variance decomposition and combination strategies | ML engineers / data scientists |
+| [[02_机器学习/04_Ensemble_Learning/Ensemble_Learning_for_dummy|Ensemble Learning for dummy]] | Ensemble learning beginner guide: from voting to gradient boosting | beginners / ML learners |
 
 ## Related
 
-- [[机器学习/Recommendation_Systems/index|Recommendation Systems]]
-- [[机器学习/AutoML/index|AutoML]]
+- [[02_机器学习/10_Recommendation_Systems/index|Recommendation Systems]]
+- [[02_机器学习/11_AutoML/index|AutoML]]
 
 ## 进阶知识拓展
 
@@ -59,9 +59,9 @@ tags: [auto-index]
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

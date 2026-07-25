@@ -83,7 +83,7 @@ Inform（可视化）→ Optimize（优化）→ Operate（运营）
 - [[概念/finops|FinOps]]
 - [[概念/gpu-sharing|GPU Sharing]]
 - [[概念/GPU/flops|FLOPS]] — 算力与成本的关系
-- [[运维/Cost_Management/GPU_Cost_Optimization|GPU 成本优化]]
+- [[13_运维/05_Cost_Management/GPU_Cost_Optimization|GPU 成本优化]]
 
 ---
 

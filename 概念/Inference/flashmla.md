@@ -12,7 +12,7 @@ relationships:
   - target: "概念/Inference/flashinfer"
     type: related_to
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
   - "https://github.com/deepseek-ai/FlashMLA"
 summary: "FlashMLA 是 DeepSeek 开源的 MLA 注意力加速内核，专为 Multi-head Latent Attention 架构优化。支持 Hopper Tensor Core、FP8 KV Cache 和华为昇腾 NPU，H800 峰值 660 TFLOPS。为 DeepSeek-V3/R1 推理提速 2-3×，是 MLA 架构的唯一专用算子库。"
 provenance:
@@ -158,7 +158,7 @@ K,V: [B, d_c]    →  压缩为 latent vector (d_c << d)
 - [[概念/LLM/deepseek-models]] — DeepSeek 模型系列
 - [[概念/Inference/flashinfer]] — FlashInfer 算子库
 - [[概念/LLM/attention-variants]] — 注意力变体
-- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
 
 ## FlashMLA vs FlashAttention
 

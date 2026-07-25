@@ -14,7 +14,7 @@ relationships:
   - target: "概念/gpu-interconnect"
     type: related_to
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
 summary: "APG 是阿里云自研的 AI 加速卡，是 AI Stack 的首选 GPU。高度兼容 CUDA API，卡间互联带宽达 700 GB/s，16 卡旗舰版提供 1.5+ TB 超大显存。"
 provenance:
   extracted: 0.70
@@ -151,7 +151,7 @@ AI Stack 异构 GPU 架构
 - [[概念/heterogeneous-gpu]] — 异构 GPU 纳管
 - [[概念/gpu-interconnect]] — GPU 互联
 - [[概念/ascend-npu]] — 华为昇腾 NPU
-- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
 
 ---
 

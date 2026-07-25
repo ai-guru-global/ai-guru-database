@@ -538,11 +538,11 @@ router_settings:
 
 ## Related
 
-- [[部署推理/Inference_Engines/LLM_Inference_Engine_Selection_Guide|LLM_Inference_Engine_Selection_Guide]]
-- [[部署推理/Inference_Engines/LLM_Inference_Benchmarking_Guide|LLM_Inference_Benchmarking_Guide]]
-- [[部署推理/Inference_Engines/vLLM_Deep_Dive|vLLM_Deep_Dive]]
-- [[部署推理/Inference_Engines/SGLang_Deep_Dive|SGLang_Deep_Dive]]
-- [[部署推理/Inference_Engines/TGI_Deep_Dive|TGI_Deep_Dive]]
-- [[部署推理/Inference_Engines/TensorRT_LLM_Deep_Dive|TensorRT_LLM_Deep_Dive]]
-- [[部署推理/Inference_Engines/Groq_Deep_Dive|Groq_Deep_Dive]]
-- [[架构基建/AI_Gateway/LiteLLM_Deep_Dive|LiteLLM_Deep_Dive]]
+- [[10_部署推理/02_Inference_Engines/LLM_Inference_Engine_Selection_Guide|LLM_Inference_Engine_Selection_Guide]]
+- [[10_部署推理/02_Inference_Engines/LLM_Inference_Benchmarking_Guide|LLM_Inference_Benchmarking_Guide]]
+- [[10_部署推理/02_Inference_Engines/vLLM_Deep_Dive|vLLM_Deep_Dive]]
+- [[10_部署推理/02_Inference_Engines/SGLang_Deep_Dive|SGLang_Deep_Dive]]
+- [[10_部署推理/02_Inference_Engines/TGI_Deep_Dive|TGI_Deep_Dive]]
+- [[10_部署推理/02_Inference_Engines/TensorRT_LLM_Deep_Dive|TensorRT_LLM_Deep_Dive]]
+- [[10_部署推理/02_Inference_Engines/Groq_Deep_Dive|Groq_Deep_Dive]]
+- [[12_架构基建/11_AI_Gateway/LiteLLM_Deep_Dive|LiteLLM_Deep_Dive]]

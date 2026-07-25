@@ -94,11 +94,11 @@ TOOL_SELECTION_GUIDE = {
 
 ## 4. 交叉引用
 
-- [[入门/|入门]]
-- [[入门/AI_Career_Guide|AI 职业指南]]
-- [[编程/AI_IDE_Landscape_2026|AI IDE 全景]]
-- [[大模型/|大模型]]
-- [[智能体/|智能体]]
+- [[00_入门/|入门]]
+- [[00_入门/AI_Career_Guide|AI 职业指南]]
+- [[16_编程/AI_IDE_Landscape_2026|AI IDE 全景]]
+- [[05_大模型/|大模型]]
+- [[15_智能体/|智能体]]
 
 ## 5. AI 工具分类全景
 

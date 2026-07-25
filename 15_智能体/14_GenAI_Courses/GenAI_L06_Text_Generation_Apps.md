@@ -515,14 +515,14 @@ completion = client.chat.completions.create(model=deployment, messages=messages,
 
 ## 扩展阅读
 
-- [[学习/courses/microsoft/microsoft_genai_for_beginners]]
-- [[智能体/GenAI_L07_Building_Chat_Applications]]
-- [[智能体/GenAI_L11_Integrating_with_Function_Calling]]
-- [[智能体/Agentic_Design_Patterns_AndrewNg]]
-- [[大模型/Multimodal_Models/Multimodal_Models_for_dummy]]
+- [[90_学习/courses/microsoft/microsoft_genai_for_beginners]]
+- [[15_智能体/GenAI_L07_Building_Chat_Applications]]
+- [[15_智能体/GenAI_L11_Integrating_with_Function_Calling]]
+- [[15_智能体/Agentic_Design_Patterns_AndrewNg]]
+- [[05_大模型/10_Multimodal_Models/Multimodal_Models_for_dummy]]
 
 ## 课程导航
 
 | 上一课 | 下一课 |
 |--------|--------|
-| [[大模型/Prompt_Engineering/GenAI_L05_Advanced_Prompts|L05 高级提示技术]] | [[智能体/GenAI_L07_Building_Chat_Applications|L07 构建聊天应用]] |
+| [[05_大模型/08_Prompt_Engineering/GenAI_L05_Advanced_Prompts|L05 高级提示技术]] | [[15_智能体/GenAI_L07_Building_Chat_Applications|L07 构建聊天应用]] |

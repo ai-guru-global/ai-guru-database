@@ -7,7 +7,7 @@ relationships:
     type: evolves_to
   - target: "概念/llm-architectures"
     type: related_to
-sources: [大模型/Sequence_world-models-jepa/Sequence_Models.md]
+sources: [05_大模型/Sequence_world-models-jepa/Sequence_Models.md]
 summary: 序列模型（neural-networks/LSTM/GRU）是处理有序数据的神经网络架构，通过隐藏状态记忆历史信息。虽然已被transformer-architecture取代，但在流式推理、时间序列预测和边缘设备场景中仍有应用价值。
 provenance:
   extracted: 0.85
@@ -127,7 +127,7 @@ Bahdanau et al.（2015）提出注意力机制，允许解码器在每步"回看
 - [[概念/LLM/retnet|RetNet]]
 - [[概念/LLM/transformer-architecture-plain|Transformer 大白话]]
 - [[概念/LLM/llm-architectures|LLM 架构]]
-- [[大模型/Sequence_Models/Sequence_Models|序列模型深度解析]]
+- [[05_大模型/02_Sequence_Models/Sequence_Models|序列模型深度解析]]
 
 ---
 
@@ -191,8 +191,8 @@ Bahdanau et al.（2015）提出注意力机制，允许解码器在每步"回看
 - [[概念/LLM/retnet|RetNet]]
 - [[概念/LLM/state-space-models|状态空间模型]]
 - [[概念/LLM/attention-variants|注意力变体]]
-- [[深度学习/State_Space_Models_2026|状态空间模型 2026]]
-- [[大模型/Sequence_Models/Sequence_Models|序列模型深度解析]]
+- [[03_深度学习/State_Space_Models_2026|状态空间模型 2026]]
+- [[05_大模型/02_Sequence_Models/Sequence_Models|序列模型深度解析]]
 
 ## 关键论文
 

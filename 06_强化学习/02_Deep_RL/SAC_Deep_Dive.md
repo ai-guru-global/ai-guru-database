@@ -896,10 +896,10 @@ PPO           | ~2000       | ~2400  | ~2000    | ~1500
 
 ## Related
 
-- [[强化学习/Deep_RL/Deep_RL]] — 深度强化学习（总览）
-- [[强化学习/Deep_RL/PPO_Deep_Dive]] — PPO深度解析（on-policy对比）
-- [[强化学习/Deep_RL/DQN_Deep_Dive]] — DQN深度解析（值函数方法）
-- [[强化学习/Deep_RL/Offline_RL_Deep_Dive]] — 离线RL（与off-policy相关）
-- [[强化学习/Deep_RL/Model_Based_RL_Deep_Dive]] — 基于模型的RL（模型方法对比）
-- [[强化学习/RL_Foundations/RL_Foundations]] — RL基础（MDP/贝尔曼方程）
-- [[强化学习/RLHF_Alignment/RLHF_Alignment]] — RLHF对齐（PPO在RLHF中的应用）
+- [[06_强化学习/02_Deep_RL/Deep_RL]] — 深度强化学习（总览）
+- [[06_强化学习/02_Deep_RL/PPO_Deep_Dive]] — PPO深度解析（on-policy对比）
+- [[06_强化学习/02_Deep_RL/DQN_Deep_Dive]] — DQN深度解析（值函数方法）
+- [[06_强化学习/02_Deep_RL/Offline_RL_Deep_Dive]] — 离线RL（与off-policy相关）
+- [[06_强化学习/02_Deep_RL/Model_Based_RL_Deep_Dive]] — 基于模型的RL（模型方法对比）
+- [[06_强化学习/01_RL_Foundations/RL_Foundations]] — RL基础（MDP/贝尔曼方程）
+- [[06_强化学习/03_RLHF_Alignment/RLHF_Alignment]] — RLHF对齐（PPO在RLHF中的应用）

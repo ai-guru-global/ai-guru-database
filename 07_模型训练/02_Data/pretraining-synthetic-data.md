@@ -51,9 +51,9 @@ sources: []
 
 ## 跨域连接
 
-- [[模型训练/Data/Data_Curation_and_Mixture_2026|数据策展与混合 2026]] — 数据混合比例的最新研究
-- [[模型训练/Optimization/Scaling_Laws_and_Training_Dynamics|Scaling Laws 与训练动态]] — 数据规模的数学规律
-- [[大模型/LLM_Data_Engineering/LLM_Data_Engineering_Deep_Dive|LLM 数据工程深度解读]] — 数据工程全流程
+- [[07_模型训练/02_Data/Data_Curation_and_Mixture_2026|数据策展与混合 2026]] — 数据混合比例的最新研究
+- [[07_模型训练/03_Optimization/Scaling_Laws_and_Training_Dynamics|Scaling Laws 与训练动态]] — 数据规模的数学规律
+- [[05_大模型/06_LLM_Data_Engineering/LLM_Data_Engineering_Deep_Dive|LLM 数据工程深度解读]] — 数据工程全流程
 - [[概念/llm-data-engineering|LLM 数据工程]] — 数据策展的核心理论
 
 ## 前沿方向
@@ -103,9 +103,9 @@ sources: []
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

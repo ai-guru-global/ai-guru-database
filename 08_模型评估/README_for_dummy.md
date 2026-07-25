@@ -232,9 +232,9 @@ BIG-Bench:
 
 ## 下一步
 
-- 想学模型训练？→ [模型训练/README_for_dummy.md](../模型训练/README_for_dummy.md)
-- 想学深度学习？→ [深度学习/README_for_dummy.md](./深度学习/README_for_dummy.md)
-- 想学测试？→ [AI测试/README_for_dummy.md](../测试/README_for_dummy.md)
+- 想学模型训练？→ [07_模型训练/README_for_dummy.md](../07_模型训练/README_for_dummy.md)
+- 想学深度学习？→ [03_深度学习/README_for_dummy.md](./03_深度学习/README_for_dummy.md)
+- 想学测试？→ [AI测试/README_for_dummy.md](../09_测试/README_for_dummy.md)
 
 ---
 
@@ -242,8 +242,8 @@ BIG-Bench:
 
 ## Related
 
-- [[模型评估/Evaluation_Fundamentals/Model_Evaluation.md|Model_Evaluation]]
-- [[模型评估/README.md|模型评估 README]]
-- [[智能体/Agent_Evaluation/Assessment/Evaluation_Workflow.md|Evaluation_Workflow]]
-- [[智能体/Agent_Evaluation/Cloud_Agent_Evaluation/README.md|Cloud_Agent_Evaluation README]]
-- [[智能体/Agent_Evaluation/Cloud_Agent_Evaluation_System_2026.md|Cloud_Agent_Evaluation_System_2026]]
+- [[08_模型评估/01_Evaluation_Fundamentals/Model_Evaluation.md|Model_Evaluation]]
+- [[08_模型评估/README.md|模型评估 README]]
+- [[15_智能体/07_Agent_Evaluation/Assessment/Evaluation_Workflow.md|Evaluation_Workflow]]
+- [[15_智能体/07_Agent_Evaluation/Cloud_Agent_Evaluation/README.md|Cloud_Agent_Evaluation README]]
+- [[15_智能体/07_Agent_Evaluation/Cloud_Agent_Evaluation_System_2026.md|Cloud_Agent_Evaluation_System_2026]]

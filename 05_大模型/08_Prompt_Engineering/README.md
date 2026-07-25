@@ -67,26 +67,26 @@ sources: []
 ## 关联目录
 
 - [微调技术](../Fine_tuning_Techniques/) -- LoRA/QLoRA 微调框架
-- [RAG 系统](../../RAG系统/) -- RAG 与提示词结合
-- [Agent 框架](../../智能体/Agent_Frameworks/) -- Agent 中的提示词设计
+- [RAG 系统](../../14_RAG系统/) -- RAG 与提示词结合
+- [Agent 框架](../../15_智能体/02_Agent_Frameworks/) -- Agent 中的提示词设计
 
 ---
 
 *Last updated: 2026-04-26*
 
 ## Related
-- [[大模型/Prompt_Engineering/README|提示词工程与结构化输出 (Prompt Engineering & Structured Output)]]
-- [[大模型/Prompt_Engineering/Guidance_Deep_Dive|Guidance: 结构化生成控制语言]]
-- [[大模型/Prompt_Engineering/DSPy_Deep_Dive|DSPy: 可编程的 Prompt 优化框架]]
-- [[大模型/Prompt_Engineering/Instructor_Deep_Dive|Instructor: 结构化输出框架]]
+- [[05_大模型/08_Prompt_Engineering/README|提示词工程与结构化输出 (Prompt Engineering & Structured Output)]]
+- [[05_大模型/08_Prompt_Engineering/Guidance_Deep_Dive|Guidance: 结构化生成控制语言]]
+- [[05_大模型/08_Prompt_Engineering/DSPy_Deep_Dive|DSPy: 可编程的 Prompt 优化框架]]
+- [[05_大模型/08_Prompt_Engineering/Instructor_Deep_Dive|Instructor: 结构化输出框架]]
 
-- [[大模型/Fine_tuning_Techniques/PEFT_2026]] — PEFT 2026 (参数高效微调) (共享: bert, gpt, llm, nlp, transformer)
-- [[大模型/Fine_tuning_Techniques/README]] — 微调技术 (Fine-tuning Techniques) (共享: bert, gpt, llm, nlp, transformer)
-- [[大模型/LLM_Architectures/LLM-Basics-in-nutshell]] — 大语言模型基础速成指南 (共享: bert, gpt, llm, nlp, transformer)
-- [[大模型/Multimodal_Models/Multimodal_Architectures_2026]] — 多模态模型架构 2026：从 GPT-4V 到原生多模态 AGI (共享: bert, gpt, llm, nlp, transformer)
+- [[05_大模型/07_Fine_tuning_Techniques/PEFT_2026]] — PEFT 2026 (参数高效微调) (共享: bert, gpt, llm, nlp, transformer)
+- [[05_大模型/07_Fine_tuning_Techniques/README]] — 微调技术 (Fine-tuning Techniques) (共享: bert, gpt, llm, nlp, transformer)
+- [[05_大模型/05_LLM_Architectures/LLM-Basics-in-nutshell]] — 大语言模型基础速成指南 (共享: bert, gpt, llm, nlp, transformer)
+- [[05_大模型/10_Multimodal_Models/Multimodal_Architectures_2026]] — 多模态模型架构 2026：从 GPT-4V 到原生多模态 AGI (共享: bert, gpt, llm, nlp, transformer)
 
 
-- [[大模型/README|04 自然语言处理与大模型 (NLP & LLMs)]]
+- [[05_大模型/README|04 自然语言处理与大模型 (NLP & LLMs)]]
 
 ## 提示技术对比
 
@@ -184,9 +184,9 @@ sources: []
 
 ## Related
 
-- [[大模型/Reasoning_Models/index|Reasoning Models]]
-- [[大模型/LLM_Products/index|LLM Products]]
-- [[大模型/index|大模型首页]]
+- [[05_大模型/09_Reasoning_Models/index|Reasoning Models]]
+- [[05_大模型/13_LLM_Products/index|LLM Products]]
+- [[05_大模型/index|大模型首页]]
 
 ## 附录：提示检查清单
 

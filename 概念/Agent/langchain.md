@@ -14,7 +14,7 @@ relationships:
   - target: "概念/Agent/mcp"
     type: related_to
 sources:
-  - 智能体/Agent_Frameworks/LangChain_Deep_Dive.md
+  - 15_智能体/02_Agent_Frameworks/LangChain_Deep_Dive.md
   - "https://github.com/langchain-ai/langchain"
 summary: "LangChain 是最流行的 LLM 应用开发框架之一，提供 Chain、Agent、Tool、Memory、RAG 等抽象，帮助开发者快速构建基于大模型的应用和工作流。"
 provenance:
@@ -193,7 +193,7 @@ add_routes(app, chain, path="/my-chain")
 
 ## Related
 
-- [[智能体/Agent_Frameworks/LangChain_Deep_Dive|LangChain 深度解析]]
+- [[15_智能体/02_Agent_Frameworks/LangChain_Deep_Dive|LangChain 深度解析]]
 - [[概念/Agent/agent-framework|Agent 框架]]
 - [[概念/Agent/langgraph|LangGraph]]
 - [[概念/RAG/rag-patterns|RAG]]

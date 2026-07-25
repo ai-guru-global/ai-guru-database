@@ -194,10 +194,10 @@ level_3_enterprise:
 
 ## 深入阅读
 
-- [[智能体/Agent_Harness/Harness_Engineering_Complete_Guide.md]] -- Harness 完整架构与五大设计原则
-- [[智能体/Agent_Harness/Harness_Core_Subsystems.md]] -- 四大核心子系统的工程实现细节
-- [[智能体/Agent_Workflow/AgentOps_Production_Guide.md]] -- Harness 在生产中的故障模式与反模式
-- [[编程/Theory/Claude_Agent_Architecture.md]] -- Claude Code 的 Harness 设计模式
+- [[15_智能体/04_Agent_Harness/Harness_Engineering_Complete_Guide.md]] -- Harness 完整架构与五大设计原则
+- [[15_智能体/04_Agent_Harness/Harness_Core_Subsystems.md]] -- 四大核心子系统的工程实现细节
+- [[15_智能体/03_Agent_Workflow/AgentOps_Production_Guide.md]] -- Harness 在生产中的故障模式与反模式
+- [[16_编程/02_Theory/Claude_Agent_Architecture.md]] -- Claude Code 的 Harness 设计模式
 - [[概念/agent-production-deployment]] -- Agent 生产部署系统工程
 - [[概念/Agent/agentops|AgentOps]] — Agent 可观测性平台
 - [[概念/Agent/agent-framework|Agent 框架总览]] — 主流框架对比

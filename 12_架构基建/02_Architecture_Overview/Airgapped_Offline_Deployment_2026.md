@@ -176,15 +176,15 @@ agent = CodeAgent(tools=[InternalKBSearchTool()], model=model)
 
 ---
 ## 相关阅读
-- [[部署推理/Inference_Engines/TGI_Deep_Dive]]
-- [[智能体/Agent_Frameworks/SmolAgents_Practical_Guide]]
-- [[RAG系统/Embeddings/HF_Datasets_Streaming]]
+- [[10_部署推理/02_Inference_Engines/TGI_Deep_Dive]]
+- [[15_智能体/02_Agent_Frameworks/SmolAgents_Practical_Guide]]
+- [[14_RAG系统/02_Embeddings/HF_Datasets_Streaming]]
 
 ## 架构核心组件对比
 
 | 组件层 | 功能 | 关键技术 | 选型考量 |
 |--------|------|----------|----------|
-| 计算层 | 模型训练/推理 | GPU/TPU/NPU集群 | 算力需求+成本 |
+| 计算层 | 07_模型训练/推理 | GPU/TPU/NPU集群 | 算力需求+成本 |
 | 存储层 | 数据/模型/检查点 | 分布式存储/对象存储 | 容量+IOPS+成本 |
 | 网络层 | 节点间通信 | RDMA/RoCE/InfiniBand | 带宽+延迟 |
 | 调度层 | 资源编排 | K8s/Slurm/Ray | 弹性+效率 |

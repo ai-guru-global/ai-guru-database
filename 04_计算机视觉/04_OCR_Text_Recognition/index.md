@@ -15,13 +15,13 @@ OCR 与文字识别（Text Recognition）— 场景文字检测与识别（scene
 
 | 文件 | 说明 | 适用人群 |
 |------|------|----------|
-| [[计算机视觉/OCR_Text_Recognition/OCR_Text_Recognition|OCR Text Recognition]] | OCR knowledge system: CRNN, CTC and Transformer-based OCR | CV engineers / document AI developers |
-| [[计算机视觉/OCR_Text_Recognition/OCR_for_dummy|OCR for dummy]] | OCR beginner guide: from traditional methods to vision-language models | beginners / CV learners |
+| [[04_计算机视觉/04_OCR_Text_Recognition/OCR_Text_Recognition|OCR Text Recognition]] | OCR knowledge system: CRNN, CTC and Transformer-based OCR | CV engineers / document AI developers |
+| [[04_计算机视觉/04_OCR_Text_Recognition/OCR_for_dummy|OCR for dummy]] | OCR beginner guide: from traditional methods to vision-language models | beginners / CV learners |
 
 ## Related
 
-- [[计算机视觉/index|计算机视觉首页]]
-- [[计算机视觉/Multimodal_Vision/index|Multimodal Vision]]
+- [[04_计算机视觉/index|计算机视觉首页]]
+- [[04_计算机视觉/08_Multimodal_Vision/index|Multimodal Vision]]
 
 ## 进阶知识拓展
 
@@ -59,9 +59,9 @@ OCR 与文字识别（Text Recognition）— 场景文字检测与识别（scene
 |----------|----------|----------|
 | 基础理论 | 前置依赖 | 相关基础目录 |
 | 工具实践 | 实现支撑 | 工具/编程相关 |
-| 应用场景 | 价值体现 | 行业应用/ |
-| 前沿研究 | 发展方向 | 论文精读/ |
-| 工程方法 | 质量保障 | 测试/运维/ |
+| 应用场景 | 价值体现 | 18_行业应用/ |
+| 前沿研究 | 发展方向 | 20_论文精读/ |
+| 工程方法 | 质量保障 | 09_测试/13_运维/ |
 
 ## 版本更新记录
 

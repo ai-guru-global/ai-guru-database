@@ -14,7 +14,7 @@ relationships:
   - target: "概念/Inference/prefix-caching"
     type: enables
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
   - "https://arxiv.org/abs/2501.01005"  # FlashInfer paper
 summary: "FlashInfer 是面向 LLM Serving 的高性能注意力算子库，MLSys 2025 Best Paper。为 SGLang 提供底层 PagedAttention/Cascade Attention 算子，支持 KV Cache 共享、推测解码、变长批处理，是 2026 年推理引擎的核心算子基础设施。"
 provenance:
@@ -197,4 +197,4 @@ output = flashinfer.merge_state(output_shared, output_local)
 - [[概念/Inference/continuous-batching]] — Continuous Batching
 - [[概念/Inference/sglang]] — SGLang 推理引擎
 - [[概念/Inference/prefix-caching]] — 前缀缓存
-- [[架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析
+- [[12_架构基建/AI_Stack_Deep_Dive]] — AI Stack 深度解析

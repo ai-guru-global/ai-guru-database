@@ -451,14 +451,14 @@ parametric UMAP 支持新数据映射，适合流式场景。
 
 ## 关联
 
-- [[可视化/index|可视化首页]]
-- [[可视化/Evaluation_Viz/index|Evaluation Viz]]
-- [[可视化/Training_Viz/Embedding_Visualization_Guide|嵌入可视化指南]]
-- [[深度学习/index|深度学习]]
-- [[机器学习/index|机器学习]]
-- [[数学基础/index|数学基础]]
-- [[模型评估/index|模型评估]]
-- [[大模型/index|大模型]]
+- [[94_可视化/index|可视化首页]]
+- [[94_可视化/Evaluation_Viz/index|Evaluation Viz]]
+- [[94_可视化/Training_Viz/Embedding_Visualization_Guide|嵌入可视化指南]]
+- [[03_深度学习/index|深度学习]]
+- [[02_机器学习/index|机器学习]]
+- [[01_数学基础/index|数学基础]]
+- [[08_模型评估/index|模型评估]]
+- [[05_大模型/index|大模型]]
 
 ---
 

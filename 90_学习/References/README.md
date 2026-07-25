@@ -17,14 +17,14 @@ sources: []
 
 | 资源 | 类型 | 映射 |
 |------|------|------|
-| [[学习/courses/microsoft/microsoft_ai_for_beginners\|Microsoft AI For Beginners]] | 课程 | 课程映射 |
+| [[90_学习/courses/microsoft/microsoft_ai_for_beginners\|Microsoft AI For Beginners]] | 课程 | 课程映射 |
 
 ## 规划中的资源索引
 
 | 资源 | 类型 | 预计映射 |
 |------|------|----------|
-| DeepLearning.AI Short Courses | 课程 | → [[学习/courses/deeplearning_ai/short_courses]] |
-| Hugging Face NLP Course | 课程 | → [[学习/courses/hugging_face/official_courses]] |
+| DeepLearning.AI Short Courses | 课程 | → [[90_学习/courses/deeplearning_ai/short_courses]] |
+| Hugging Face NLP Course | 课程 | → [[90_学习/courses/hugging_face/official_courses]] |
 | Stanford CS229 | 课程 | 机器学习基础 |
 | Stanford CS231n | 课程 | 计算机视觉 |
 | Stanford CS224n | 课程 | NLP 与深度学习 |
@@ -46,9 +46,9 @@ internal_mappings: 映射到的内部章节列表
 
 ## 相关目录
 
-- [[论文精读/README]] — 必读论文
-- [[学习/README]] — 学习路径
-- [[入门/AI_Learning_Resources]] — AI 学习资源
+- [[20_论文精读/README]] — 必读论文
+- [[90_学习/README]] — 学习路径
+- [[00_入门/AI_Learning_Resources]] — AI 学习资源
 
 ## 核心知识框架
 

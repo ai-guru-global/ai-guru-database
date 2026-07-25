@@ -10,7 +10,7 @@ relationships:
   - target: "概念/helicone"
     type: related_to
 sources:
-  - 架构基建/AI_Stack_Deep_Dive.md
+  - 12_架构基建/AI_Stack_Deep_Dive.md
 summary: "开源的 LLM 可观测性与评估平台，提供 Tracing、评估、Prompt 管理和数据集管理，可自托管，是 LangSmith 的开源替代方案。"
 provenance:
   extracted: 0.55

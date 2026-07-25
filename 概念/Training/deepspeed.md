@@ -23,7 +23,7 @@ provenance:
 base_confidence: 0.9
 lifecycle: reviewed
 tier: core
-updated: 2026-07-21
+updated: 2026-07-25
 created: 2026-06-16
 updated: 2026-06-16
 aliases:
@@ -204,3 +204,9 @@ Data Parallel Group
 | ZeRO-1 | 45% | 4x | 多卡 |
 | ZeRO-2 | 42% | 8x | 大模型 |
 | ZeRO-3 | 38% | 线性 | 超大模型 |
+
+## 源码级洞察（v0.19.3）
+
+- ZeRO-1/2 在 `deepspeed/runtime/zero/stage_1_and_2.py`（`DeepSpeedZeroOptimizer`），ZeRO-3 在 `stage3.py`（`DeepSpeedZeroOptimizer_Stage3`），由 `zero_optimization.stage` 配置直接选型。
+- ZeRO-3 的"参数从未完整存在于单卡"源于 `zero.Init` hook 模块 `__init__`（`partition_parameters.py`）+ 前向按需 all-gather（`partitioned_param_coordinator.py`）。
+- 源码归档：`code/llm-frameworks/DeepSpeed-v0.19.3/`，详见 [[07_模型训练/04_Distributed_Training/DeepSpeed_Deep_Dive|DeepSpeed 深度解析]] 第 13 节。

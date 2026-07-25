@@ -19,7 +19,7 @@ provenance:
 base_confidence: 0.85
 lifecycle: reviewed
 created: 2026-06-12
-updated: 2026-07-21
+updated: 2026-07-25
 tier: supporting
 aliases:
   - "Colossal-AI"
@@ -237,3 +237,9 @@ model = auto_parallelize(
 - [[概念/Training/megatron-lm|Megatron-LM]] — 同类大模型训练框架
 - [[概念/Training/fsdp|FSDP]] — ColossalAI 支持的并行方案
 - [[概念/GPU/model-parallelism|模型并行]] — ColossalAI 的并行机制
+
+## 源码级洞察（v0.5.1）
+
+- 统一入口是 Booster + Plugin 模式：`colossalai/booster/plugin/` 下 `GeminiPlugin`（ZeRO-3+异构内存）、`HybridParallelPlugin`（TP+PP+DP+SP）、`LowLevelZeroPlugin`（ZeRO-1/2）换插件即换策略。
+- Gemini 的实现主体是 Chunk 机制（`zero/gemini/chunk/`）+ 放置策略（`placement_policy.py` 的 Static/Auto 驱逐）；ShardFormer（`shardformer/policies/`）对 HuggingFace 模型做声明式 TP。
+- 源码归档：`code/llm-frameworks/ColossalAI-v0.5.1/`，详见 [[07_模型训练/04_Distributed_Training/Colossal_AI_Deep_Dive|Colossal-AI 深度解析]] 第 12 节。

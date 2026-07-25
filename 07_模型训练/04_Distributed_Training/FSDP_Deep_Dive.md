@@ -4,7 +4,7 @@ category: "07-model-training"
 tags: ["fsdp", "pytorch", "distributed-training", "zero", "sharding", "llm", "training", "offload"]
 summary: "> **一句话理解**: FSDP 是 PyTorch 原生的全分片数据并行框架，相当于 PyTorch 内置的 ZeRO-3，通过把参数、梯度和优化器状态分片到多 GPU，让 PyTorch 项目以最小改动训练大模型。"
 created: "2026-06-16"
-updated: "2026-06-16"
+updated: "2026-07-25"
 tier: supporting
 aliases:
   - "Fsdp Deep Dive"
@@ -259,6 +259,49 @@ torchrun --nproc_per_node=8 --nnodes=4 --node_rank=$RANK --master_addr=$MASTER_A
 - **官方教程**: https://pytorch.org/tutorials/intermediate/FSDP_tutorial.html
 - **API 文档**: https://pytorch.org/docs/stable/fsdp.html
 - **HuggingFace 集成**: https://huggingface.co/docs/transformers/main/en/fsdp
+
+---
+
+## 11. 源码级实现解析（基于 Accelerate v1.14.0）
+
+> FSDP 本体在 PyTorch 内部，但工程落地普遍通过 HuggingFace Accelerate。本节基于本仓库归档源码 `code/llm-frameworks/accelerate-v1.14.0/src/accelerate/`，剖析 FSDP1/FSDP2 的集成实现。
+
+### 11.1 架构设计：Plugin 抽象屏蔽 FSDP1/FSDP2 差异
+
+所有 FSDP 配置收敛到 `FullyShardedDataParallelPlugin`（`utils/dataclasses.py` L1584），其 `fsdp_version` 字段（L1657，默认 1）是全局分叉点：
+
+| 维度 | FSDP1（version=1） | FSDP2（version=2） |
+|---|---|---|
+| 分片策略 | `sharding_strategy: str`（FULL_SHARD/SHARD_GRAD_OP...） | `reshard_after_forward: bool`（L1596） |
+| 混合精度 | `MixedPrecision` | `torch.distributed.fsdp.MixedPrecisionPolicy`（L1605） |
+| CPU Offload | `CPUOffload` | `CPUOffloadPolicy`（L1615） |
+| 包装方式 | `FullyShardedDataParallel` 类包装 | `fully_shard` 函数式改写（DTensor） |
+
+`utils/fsdp_utils.py` 中大量 `if fsdp_plugin.fsdp_version == 2:` 分支（L90/L122/L253 等）证明 Accelerate 用同一套 save/load API 同时兼容两代实现。
+
+### 11.2 关键技术实现：FSDP2 准备流程
+
+`fsdp2_prepare_model`（`utils/fsdp_utils.py` L645）是 FSDP2 接管模型的完整流程，每步都有明确工程动机：
+
+1. **幂等检查**：若模型已是 `FSDPModule`（含 torch.compile 包装情况）直接返回（L657-661）。
+2. **自动包装策略**：`fsdp2_plugin.set_auto_wrap_policy(model)` 按 transformer 层类名确定分片边界（L665）。
+3. **DeviceMesh 接入**：从 `accelerator.torch_device_mesh` 取 `fsdp_dim_names` 子网格（L674）——这是 FSDP2 能与 TP/CP 组合成 HSDP/多维并行的入口（配合 `parallelism_config.py`）。
+4. **量化兼容**：非浮点冻结 `Params4bit`（bitsandbytes）会被加入 `ignored_params` 排除分片，因为 uint8 quant_storage 无法存活于 `fully_shard` 的 DTensor 转换（L689-698）。
+5. **主权重上提**：混合精度下把可训参数统一 upcast 到 fp32 主权重，计算精度交给 `MixedPrecisionPolicy.param_dtype`（L707-714）——FSDP2 要求同组参数 dtype 一致。
+
+配套的 `fsdp2_load_full_state_dict`（L467）实现 rank0 广播式加载，`fsdp2_switch_optimizer_parameters`（L563）在参数被替换为 DTensor 后原地修复优化器引用。
+
+### 11.3 性能与内存优化机制
+
+- **RAM 高效加载**：`enable_fsdp_ram_efficient_loading`（L39）设置环境变量让 transformers 只在 rank0 加载完整权重，其余 rank 用 meta device，避免 N 卡节点 N 份完整模型的内存峰值；FSDP1 路径下要求 `sync_module_states=True` 配合（L187）。
+- **检查点类型分流**：`save_fsdp_model`（L103）按 `StateDictType`（FULL/SHARDED_STATE_DICT）分流：FULL 在 rank0 聚合便于分发，SHARDED 各 rank 写自己分片支持快速恢复。
+- **reshard_after_forward 权衡**：FSDP2 下设为 `False` 等价于 FSDP1 的 SHARD_GRAD_OP（前向后保留全参数，省去反向重新 all-gather，以显存换通信）。
+
+### 11.4 配置与部署要点（源码印证）
+
+- 启动器通过环境变量 `FSDP_VERSION` 传递版本选择（`utils/launch.py` L309），`accelerate config` 生成的 yaml 与之一一对应。
+- 新项目建议直接 `fsdp_version: 2`：DTensor 基座、可组合 device mesh、量化兼容性更好；FSDP1 仍是默认值仅为向后兼容。
+- QLoRA + FSDP2 时将 `bnb_4bit_quant_storage` 设为浮点类型（如 bf16），否则 4-bit 权重会被整体排除在分片外（源码 L700-705 的 warning 即为此场景）。
 
 ---
 

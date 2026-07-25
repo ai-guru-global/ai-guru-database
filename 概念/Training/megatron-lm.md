@@ -23,7 +23,7 @@ provenance:
 base_confidence: 0.88
 lifecycle: reviewed
 tier: core
-updated: 2026-07-21
+updated: 2026-07-25
 created: 2026-06-16
 updated: 2026-06-16
 aliases:
@@ -199,3 +199,9 @@ aliases:
 - [ ] 数据管道已优化
 
 > ℹ️ Megatron-LM 3D 并行是超大规模训练的事实标准。
+
+## 源码级洞察（core_v0.18.2）
+
+- 并行中枢：所有进程组由 `megatron/core/parallel_state.py` 全局单例统一建立（TP/PP/DP/CP/EP 互相正交）。
+- TP 落地在 `tensor_parallel/layers.py` 的 `ColumnParallelLinear`/`RowParallelLinear`；PP 调度在 `pipeline_parallel/schedules.py`（interleaved 1F1B）。
+- 源码归档：`code/llm-frameworks/Megatron-LM-core_v0.18.2/`，详见 [[07_模型训练/04_Distributed_Training/Megatron_LM_Deep_Dive|Megatron-LM 深度解析]] 第 11 节。

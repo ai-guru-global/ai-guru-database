@@ -1,0 +1,22 @@
+{
+  "exclude": [
+    "**/node_modules",
+    "**/__pycache__",
+    "**/.venv",
+    "**/venv",
+    "**/dist",
+    "**/build",
+    "code",
+    "前端应用",
+    "原始",
+    "release",
+    "归档",
+    ".obsidian",
+    ".qoder",
+    ".claude",
+    "docs",
+    "94_可视化"
+  ],
+  "typeCheckingMode": "basic",
+  "reportMissingImports": "warning"
+}

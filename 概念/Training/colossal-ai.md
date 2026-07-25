@@ -209,3 +209,9 @@ sources: []
 - [ ] 质量意识已建立
 - [ ] 持续学习习惯已养成
 - [ ] 技术视野持续拓展
+
+## 源码级洞察（v0.5.1）
+
+- Booster + Plugin 是统一入口：`GeminiPlugin`/`HybridParallelPlugin`/`LowLevelZeroPlugin`（`colossalai/booster/plugin/`）对应不同并行策略，换插件即换方案。
+- Gemini 异构内存 = Chunk 打包（`zero/gemini/chunk/`）+ 运行时放置策略（`placement_policy.py`），`AutoPlacementPolicy` 根据内存画像动态驱逐 chunk 到 CPU。
+- 源码归档：`code/llm-frameworks/ColossalAI-v0.5.1/`，详见 [[07_模型训练/04_Distributed_Training/Colossal_AI_Deep_Dive|Colossal-AI 深度解析]] 第 12 节。

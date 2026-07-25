@@ -4,7 +4,7 @@ category: "10-deployment-inference"
 tags: ["deployment", "inference", "serving", "sglang", "llm", "radix-attention", "prefix-caching"]
 summary: "> **一句话理解**: SGLang 是 LMSYS 出品的高性能 LLM 推理框架——RadixAttention 前缀缓存 + SGLang Runtime，多轮对话与 RAG 场景性能领先。"
 created: "2026-05-31"
-updated: "2026-06-15"
+updated: "2026-07-25"
 tier: core
 aliases:
   - "Sglang Deep Dive"
@@ -33,6 +33,7 @@ sources: []
 6. [高级特性](#6-高级特性)
 7. [生产调优](#7-生产调优)
 8. [对比与选择](#8-对比与选择)
+9. [源码级实现解析（基于 0.5.9）](#9-源码级实现解析基于-059)
 
 ---
 
@@ -640,6 +641,41 @@ client = OpenAI(base_url="http://localhost:30000/v1", api_key="not-needed")
 
 ---
 
+## 9. 源码级实现解析（基于 0.5.9）
+
+> 本节基于本仓库归档源码 `code/sglang-0.5.9/python/sglang/`（发布版源码）的实际实现，给出证据文件与关键类。
+
+### 9.1 架构设计：三进程流水线
+
+| 进程 | 证据文件 | 关键类 |
+|---|---|---|
+| Tokenizer 进程 | `srt/managers/tokenizer_manager.py` | `TokenizerManager`（L188） |
+| 调度进程 | `srt/managers/scheduler.py` | `Scheduler`（L253，多 Mixin 组合） |
+| TP Worker | `srt/managers/tp_worker.py` | `TpModelWorker`（L206） |
+
+设计要点：与 vLLM V1 同构的进程解耦——tokenize/detokenize 与 GPU 执行分离，调度进程通过 ZMQ 收发请求；`Scheduler` 用 Mixin 拆分职责（输出处理/更新权重/性能分析各一个 Mixin），主循环保持精简。
+
+### 9.2 关键技术实现：RadixAttention 前缀缓存
+
+前缀缓存抽象层次（`srt/mem_cache/`）：
+
+- `base_prefix_cache.py`：`BasePrefixCache` 抽象基类（L114），定义 `match_prefix/cache_finished_req` 等接口。
+- `radix_cache.py`：`TreeNode`（L97）+ `RadixCache(BasePrefixCache)`（L261）——基数树节点按 token 序列分裂/合并，命中即复用 KV，LRU 驱逐叶子节点。与 vLLM 的 block 哈希表相比，基数树支持**任意长度**前缀匹配（不要求 block 对齐），多轮对话命中率更高。
+- `chunk_cache.py`：`ChunkCache(BasePrefixCache)`（L29）——禁用前缀缓存时的降级实现，接口兼容。
+
+### 9.3 性能优化机制（源码印证）
+
+- **cache-aware 调度**：`Scheduler` 构造批次时先用 `RadixCache.match_prefix` 评估每个请求的命中长度，优先调度高命中请求（longest-prefix-first），最大化 KV 复用。
+- **overlap scheduling**：调度与 GPU 执行异步重叠（默认开启），CPU 准备下一批时 GPU 正在算当前批。
+- **结构化输出加速**：`srt/constrained/` 目录实现 grammar backend（xgrammar 等），约束解码与 jump-forward 跳跃生成。
+
+### 9.4 配置与部署要点（源码印证）
+
+- `--disable-radix-cache` 实际就是把 `RadixCache` 换成 `ChunkCache`（接口同构，零侵入切换）。
+- `--tp-size` 由 `TpModelWorker` 层展开，调度进程对 TP 透明；多轮对话/RAG 场景务必保持前缀缓存开启，这是 SGLang 相对优势的来源。
+
+---
+
 ## 参考资源
 
 - [SGLang GitHub](https://github.com/sgl-project/sglang)
@@ -649,8 +685,8 @@ client = OpenAI(base_url="http://localhost:30000/v1", api_key="not-needed")
 
 ---
 
-*Last updated: 2026-06-15*
-*Version: 2.0.0*
+*Last updated: 2026-07-25*
+*Version: 2.1.0*
 
 ## Related
 

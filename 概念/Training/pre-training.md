@@ -28,7 +28,7 @@ summary: 大模型预训练是在大规模无标注文本上进行自监督学�
 lifecycle: reviewed
 tier: core
 created: 2026-06-25
-updated: 2026-07-21
+updated: 2026-07-25
 sources: []
 ---
 
@@ -203,3 +203,9 @@ L = - sum_t log P(t_t | t_1, t_2, ..., t_{t-1}; θ)
 - [[概念/Training/fsdp|FSDP]] — 全分片数据并行
 
 > ℹ️ 预训练是 LLM 能力的基石，2026年趋势：数据质量 > 数据数量，MoE 架构成主流，FP8 训练加速普及。
+
+## 源码级洞察（预训练技术栈实现证据）
+
+- **FP8 训练已有一等公民实现**：Megatron core_v0.18.2 内置 `megatron/core/fp8_utils.py` 甚至 `fp4_utils.py`，配合 Transformer Engine 在 Hopper/Blackwell 上生效。
+- **数据管道工程化**：NeMo v2.7.3 的 `PreTrainingDataModule`（`collections/llm/gpt/data/pre_training.py`）封装 Megatron bin-idx mmap 数据集，按并行拓扑切分样本；预训练超参直接取自官方 Recipe（`collections/llm/recipes/`，100+ 模型规格）。
+- **显存预算的三条技术路线**在源码层面清晰可对照：Megatron 靠并行切分（TP/PP/CP）、DeepSpeed 靠 ZeRO 分片+Offload、ColossalAI 靠 Chunk 异构内存，详见 [[07_模型训练/04_Distributed_Training/NeMo_Deep_Dive|NeMo 深度解析]] 与各框架 Deep Dive 源码章节。

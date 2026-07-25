@@ -257,6 +257,50 @@ python pretrain_gpt.py \
 
 ---
 
+## 11. 源码级实现解析（基于 core_v0.18.2）
+
+> 本节基于本仓库归档源码 `code/llm-frameworks/Megatron-LM-core_v0.18.2/` 的实际实现，逐层给出证据文件与关键符号，便于源码走读与验证。
+
+### 11.1 架构设计：并行状态是整个框架的中枢
+
+Megatron-core 的一切并行都由全局单例 `megatron/core/parallel_state.py`（约 2239 行）统一管理。它把 world 内的 rank 切分成一组互相正交的进程组，全部以模块级全局变量持有：
+
+| 进程组变量 | 并行维度 | 作用 |
+|---|---|---|
+| `_TENSOR_MODEL_PARALLEL_GROUP` | TP（层内） | 单层权重按行/列切分 |
+| `_PIPELINE_MODEL_PARALLEL_GROUP` | PP（层间） | 不同层放到不同 stage |
+| `_DATA_PARALLEL_GROUP` / `_DATA_PARALLEL_GROUP_GLOO` | DP | 复制模型、切分数据 |
+| `_CONTEXT_PARALLEL_GROUP` | CP（序列维） | 长序列在序列维切分，交换 KV/dKV |
+| `_EXPERT_MODEL_PARALLEL_GROUP` / `_EXPERT_TENSOR_PARALLEL_GROUP` / `_EXPERT_DATA_PARALLEL_GROUP` | MoE 专家并行 | 专家切分 / 专家内 TP / 专家权重 DP |
+| `_VIRTUAL_PIPELINE_MODEL_PARALLEL_RANK` | 虚拟流水线（interleaved） | 一个物理 stage 承载多个模型 chunk，降低 bubble |
+
+源码在注释中明确了 MoE 命名约定（`parallel_state.py` L46-L72）：`_EXPERT_MODEL` 切分专家数量、`_EXPERT_TENSOR` 切专家内张量、`_EXPERT_DATA` 复制专家权重。这种“把并行拓扑显式建模为进程组”的设计模式，是 Megatron 能把 TP×PP×DP×CP×EP 任意组合成 5D 并行的根基。
+
+### 11.2 关键技术实现
+
+**张量并行（`tensor_parallel/`）**：`layers.py` 提供 `ColumnParallelLinear` / `RowParallelLinear`；`mappings.py` 实现前向/反向对偶的通信原语（列切分前向 identity、反向 all-reduce；行切分前向 all-reduce、反向 identity），即经典的 `f`/`g` 算子。`cross_entropy.py` 实现词表并行的交叉熵，避免在词表维度聚合全量 logits。
+
+**流水线并行（`pipeline_parallel/schedules.py`）**：入口 `get_forward_backward_func()`（L48）按 `pp_size`/`vp_size` 分派三种调度：
+- `forward_backward_no_pipelining`（L600）：无 PP 时的单 stage 路径；
+- 1F1B 稳态调度；
+- `forward_backward_pipelining_with_interleaving`（L912）：交错式 1F1B，模型切成多个 chunk（对应 `_VIRTUAL_PIPELINE_*`），显著降低 pipeline bubble；
+- `combined_1f1b.py` 进一步把通信与计算融合。
+
+**梯度通信与显存缓冲（`distributed/param_and_grad_buffer.py`）**：核心类 `_ParamAndGradBucket` / `_ParamAndGradBuffer` 把参数与梯度打包成连续大 buffer，`shard_buffer()`（L60）按 DP world size 切片；通过 `torch.distributed.reduce_scatter_tensor` / `all_gather_into_tensor`（L39-L46）做梯度规约。桶化（bucketing）让通信与反向计算重叠。
+
+### 11.3 性能优化机制
+
+- **通信-计算重叠**：DDP（`distributed/distributed_data_parallel.py`）在反向过程中当一个 bucket 填满即触发异步 reduce-scatter，与后续层反向重叠。
+- **原生 FSDP**：`distributed/fsdp/` 与 `torch_fully_sharded_data_parallel.py` 提供 Megatron 自研 FSDP 及 PyTorch FSDP2 适配，可与 TP/PP 叠加。
+- **FP8/FP4 与融合算子**：`fp8_utils.py`、`fp4_utils.py`、`fusions/` 提供低精度与融合 kernel；`full_cuda_graph.py` 支持 CUDA Graph 降低 launch 开销。
+- **重计算**：`recompute.py` 实现选择性激活重计算，用算力换显存。
+
+### 11.4 配置与部署
+
+并行度通过 `model_parallel_config.py` 与 `parallel_state.initialize_model_parallel(...)` 配置：需满足 `world_size = TP × PP × DP`（含 CP/EP 时再乘对应维度）。`dist_checkpointing/` 提供与并行度解耦的分布式检查点，支持改变并行拓扑后 resharding（配合 `resharding/`）。上层由 NeMo 封装为声明式 YAML。
+
+---
+
 ## Related
 
 - [[概念/megatron-lm]] — Megatron-LM 概念卡片

@@ -3,6 +3,7 @@ title: "大模型推理与部署：从解码到生产引擎"
 tags: [llm, inference, kv-cache, flash-attention, quantization, speculative-decoding, vllm, serving]
 source: yeasy/llm_internals
 created: 2026-06-19
+updated: 2026-07-25
 tier: peripheral
 aliases:
   - "Llm Internals Inference"
@@ -256,3 +257,25 @@ Flash Attention 系列的演进揭示：**算法设计必须与硬件架构协�
 - **成本优化**：量化降低显存、前缀缓存减少重复计算、分离式架构匹配负载
 
 > 推理系统的演进方向：从单体引擎 → 类微服务的分布式系统（Prefill/Decode 分离、专家分布、异构 TP、缓存感知路由）。理解访存瓶颈、KV 缓存、批处理三大主线，是设计高效 LLM 服务的基础。
+
+## 4. 源码级实现印证
+
+本节把上述原理落到本仓库归档的四大引擎发布版源码，证据详见各 Deep Dive 的「源码级实现解析」章节：
+
+| 原理（本文章节） | 源码落点 | 归档 |
+|---|---|---|
+| 连续批处理（3.2） | vLLM `Scheduler.schedule()` 统一 token 预算；TGI `batching_task` 每轮增删请求 | `code/vllm-0.9.1`、`code/llm-frameworks/text-generation-inference-v3.3.7` |
+| PagedAttention（3.2） | vLLM `BlockPool` + `KVCacheManager`；TRT-LLM C++ `BlockManager`/`WindowBlockManager` | `code/vllm-0.9.1`、`code/llm-frameworks/TensorRT-LLM-v1.3.0rc22` |
+| 缓存感知路由（3.2） | SGLang `RadixCache` + longest-prefix-first 调度；TRT-LLM `KVCacheAwareADPRouter` | `code/sglang-0.5.9`、`code/llm-frameworks/TensorRT-LLM-v1.3.0rc22` |
+| Prefill/Decode 分离（3.3） | TRT-LLM `cacheTransceiver.cpp`/`dataTransceiver.cpp`（KV 跨节点传输） | `code/llm-frameworks/TensorRT-LLM-v1.3.0rc22` |
+| 投机解码（2） | TRT-LLM `_torch/speculative/`（eagle3/mtp/ngram）；TGI `layers/medusa.py` | 同上 |
+
+印证结论：四大引擎在「进程解耦 + continuous batching + paged KV + CUDA Graph」上已完全收敛，工程差异集中在前缀缓存数据结构（block 哈希 vs 基数树）与调度语言栈（Python/C++/Rust）。
+
+## Related
+
+- [[10_部署推理/02_Inference_Engines/vLLM_Deep_Dive|vLLM 深度解析]]
+- [[10_部署推理/02_Inference_Engines/SGLang_Deep_Dive|SGLang 深度解析]]
+- [[10_部署推理/02_Inference_Engines/TensorRT_LLM_Deep_Dive|TensorRT-LLM 深度解析]]
+- [[10_部署推理/02_Inference_Engines/TGI_Deep_Dive|TGI 深度解析]]
+- [[10_部署推理/02_Inference_Engines/LLM_Inference_Engine_Selection_Guide|LLM 推理引擎选型指南]]

@@ -4,7 +4,7 @@ category: "07-model-training"
 tags: ["colossal-ai", "distributed-training", "parallelism", "llm", "training", "inference", "gemini", "optimization", "hpc"]
 summary: "> **一句话理解**: Colossal-AI 是潞晨科技开源的统一分布式 AI 系统，整合数据并行、张量并行、流水线并行、序列并行、ZeRO 和 Gemini 内存管理等技术，目标是降低大模型训练、微调和推理成本。"
 created: "2026-06-16"
-updated: "2026-06-16"
+updated: "2026-07-25"
 tier: supporting
 aliases:
   - "Colossal Ai Deep Dive"
@@ -34,6 +34,7 @@ sources: []
 9. [生产最佳实践](#9-生产最佳实践)
 10. [常见问题与排查](#10-常见问题与排查)
 11. [官方资源](#11-官方资源)
+12. [源码级实现解析（基于 v0.5.1）](#12-源码级实现解析基于-v051)
 
 ---
 
@@ -240,6 +241,49 @@ model, optimizer, criterion, dataloader, lr_scheduler = booster.boost(
 - **GitHub**: https://github.com/hpcaitech/ColossalAI
 - **文档**: https://colossalai.org/docs/
 - **云平台**: https://platform.luchentech.com
+
+---
+
+## 12. 源码级实现解析（基于 v0.5.1）
+
+> 本节基于本仓库归档源码 `code/llm-frameworks/ColossalAI-v0.5.1/colossalai/` 的实际实现，给出证据文件与关键类/函数。
+
+### 12.1 架构设计：Booster + Plugin 插件体系
+
+Colossal-AI 的统一入口是 **Booster + Plugin** 模式：用户只调用 `booster.boost(model, optimizer, ...)`，具体并行策略由插件决定（`colossalai/booster/plugin/` 目录）：
+
+| 插件 | 证据文件 | 能力 |
+|---|---|---|
+| `GeminiPlugin` | `gemini_plugin.py` L369（继承 `DPPluginBase`） | ZeRO-3 + 异构内存管理 |
+| `HybridParallelPlugin` | `hybrid_parallel_plugin.py` L928（继承 `PipelinePluginBase`） | TP+PP+DP+SP 混合并行 |
+| `LowLevelZeroPlugin` | `low_level_zero_plugin.py` | ZeRO-1/2 |
+| `TorchFSDPPlugin` / `TorchDDPPlugin` | 同目录 | 对接 PyTorch 原生方案 |
+
+这种设计把"并行策略选择"降级为"换插件"，与 DeepSpeed 的 JSON 配置驱动形成对比：Colossal-AI 用 Python 对象组合表达策略。
+
+### 12.2 关键技术实现
+
+**Gemini 异构内存管理（`zero/gemini/`）**：
+
+1. **Chunk 机制**：参数被打包进定长 `Chunk`（`chunk/chunk.py` L59），由 `ChunkManager`（`chunk/manager.py` L14）统一分配/释放——以 chunk 而非单参数为粒度做通信和迁移，解决小参数碎片化问题。
+2. **运行时 Hook**：`GeminiDDP`（`gemini_ddp.py` L56，继承 `ModelWrapper`）通过 `GeminiZeROHook`（`gemini_hook.py` L20，`ColoParamOpHook` 子类）在每个算子访问参数前触发 chunk 的换入，等价于 ZeRO-3 的按需 all-gather。
+3. **放置策略**：`placement_policy.py` 定义 `PlacementPolicy` 抽象基类（L17），`StaticPlacementPolicy`（L47）按固定比例切分 GPU/CPU，`AutoPlacementPolicy`（L128）根据 memory_tracer 的运行时统计动态驱逐（`evict_tensors`）chunk 到 CPU——这就是"Gemini 自动异构内存"的实现主体，每步由 `gemini_mgr.py` L98 `adjust_layout` 重新排布。
+
+**ZeRO-1/2（`zero/low_level/low_level_optim.py`）**：`LowLevelZeroOptimizer`（L74）提供 `reduce_bucket_size`（L90）、`overlap_communication`（L92）、`overlap_allgather`（L99）参数，配合 `BucketStore` 实现梯度桶化与通信重叠，思路与 DeepSpeed IPG bucket 同源。
+
+**ShardFormer 自动张量并行（`shardformer/`）**：`ShardFormer`（`shard/shardformer.py` L14）按 `policies/` 目录中的模型策略（LLaMA、GPT2、BERT 等数十个）把 HuggingFace 模型的 Linear/Embedding 替换为 `layer/` 中的并行算子——对用户而言 TP 是"声明式"的，无需改模型代码，这是与 Megatron（需用其自定义模型类）最大的工程差异。
+
+### 12.3 性能优化机制
+
+- **Chunk 粒度通信**：小参数合并成大 chunk 后再 all-gather/reduce-scatter，提升带宽利用率（`ChunkManager` 负责分组）。
+- **运行时内存画像**：`zero/gemini/memory_tracer/` 采集每步非模型内存峰值，`AutoPlacementPolicy` 据此决定保留多少 chunk 在 GPU，在 OOM 风险与 PCIe 流量之间动态权衡。
+- **重叠开关细化**：ZeRO 层面同时提供反向 reduce 重叠与前向 all-gather 重叠（`overlap_allgather`）两个独立开关，可按网络条件分别启用。
+
+### 12.4 配置与部署要点（源码印证）
+
+- `GeminiPlugin(placement_policy="static"|"auto")` 直接对应 `PlacementPolicyFactory`（`placement_policy.py` L261）的两种策略；显存充裕选 static + 高 GPU 比例，显存紧张选 auto。
+- `HybridParallelPlugin(tp_size, pp_size, zero_stage, sp_size)` 在一个构造函数里组合 4 维并行，内部复用 ShardFormer 做 TP、`colossalai/pipeline/` 做 PP。
+- 模型能否自动 TP 取决于 `shardformer/policies/` 是否有对应策略文件；自定义模型需自写 Policy，这是落地前必须核实的兼容性检查项。
 
 ---
 

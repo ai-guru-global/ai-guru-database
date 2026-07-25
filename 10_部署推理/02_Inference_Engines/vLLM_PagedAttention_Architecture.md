@@ -4,7 +4,7 @@ category: "10-deployment-inference"
 tags: ["vllm", "paged-attention", "kv-cache", "architecture", "diagram"]
 summary: "> **一句话秒懂**: 一张图看懂 vLLM 怎么用 PagedAttention 把 GPU 显存榨干，从而同时服务更多请求、生成更快。"
 created: "2026-06-15"
-updated: "2026-06-15"
+updated: "2026-07-25"
 tier: supporting
 aliases:
   - "Vllm Pagedattention Architecture"
@@ -84,13 +84,28 @@ Block Table: A→[1,5,8]  B→[2,6]  C→[3,7]
 
 ---
 
+## 源码落点速查（基于 v0.9.1）
+
+> 上面每个抽象角色在 `code/vllm-0.9.1/` 归档源码中都有对应实体：
+
+| 图中角色 | 源码实体 | 证据文件 |
+|------|------|------|
+| 拼桌调度 | `Scheduler.schedule()`（L158） | `vllm/v1/core/sched/scheduler.py` |
+| 仓库管理员 | `KVCacheManager`（L67） | `vllm/v1/core/kv_cache_manager.py` |
+| 物理小块池 | `BlockPool`（L19） | `vllm/v1/core/block_pool.py` |
+| 共享客厅的钥匙 | `hash_block_tokens()`（L414，链式前缀哈希） | `vllm/v1/core/kv_cache_utils.py` |
+
+前缀共享的实现细节：每个 block 的哈希 = hash(父块哈希, 本块 token)，所以只要两个请求前缀相同，它们的 block 哈希链就相同，`get_computed_blocks()`（kv_cache_manager.py L133）入队时直接命中复用。
+
+---
+
 ## 一句话总结
 
 > **vLLM 用 PagedAttention 把 KV Cache 从"大套房"改成"小单间"，按需入住、共享客厅，于是同样的 GPU 能塞进更多请求，大家排队时间少了，生成速度就更快。**
 
 ---
 
-*Last updated: 2026-06-15*
+*Last updated: 2026-07-25*
 
 ## Related
 

@@ -21,7 +21,7 @@ base_confidence: 0.92
 lifecycle: reviewed
 tier: core
 created: 2026-06-04
-updated: 2026-07-21
+updated: 2026-07-25
 aliases:
   - "Distributed Parallelism"
   - "distributed parallelism"
@@ -220,3 +220,16 @@ Experts 0-85    Experts 86-170   Experts 171-255
 3. **监控指标**：关注 MFU、通信/计算比、显存峰值
 4. **框架选择**：PyTorch 生态用 FSDP，复杂场景用 DeepSpeed/Megatron
 5. **负载均衡**：MoE 模型需注意专家负载均衡
+
+## 源码级洞察（四大框架实现对照）
+
+同一套并行理论在各框架源码中的落点（均已归档于 `code/llm-frameworks/`）：
+
+| 能力 | Megatron core_v0.18.2 | DeepSpeed v0.19.3 | ColossalAI v0.5.1 | Accelerate v1.14.0 |
+|---|---|---|---|---|
+| 进程组/拓扑 | `core/parallel_state.py` | Engine 内部 | `HybridParallelPlugin` | `parallelism_config.py` + DeviceMesh |
+| 参数分片 | `distributed/param_and_grad_buffer.py` | `zero/stage3.py` | `zero/gemini/`（Chunk） | `fsdp_utils.py`（fully_shard） |
+| TP | `tensor_parallel/layers.py` | 借助 Megatron | `shardformer/` | 交给 torch TP |
+| PP 调度 | `pipeline_parallel/schedules.py` | `runtime/pipe/` | `colossalai/pipeline/` | 不提供 |
+
+详见各 Deep Dive 的"源码级实现解析"章节：[[07_模型训练/04_Distributed_Training/Megatron_LM_Deep_Dive|Megatron]]、[[07_模型训练/04_Distributed_Training/DeepSpeed_Deep_Dive|DeepSpeed]]、[[07_模型训练/04_Distributed_Training/Colossal_AI_Deep_Dive|Colossal-AI]]、[[07_模型训练/04_Distributed_Training/FSDP_Deep_Dive|FSDP]]。

@@ -4,7 +4,7 @@ category: "10-deployment-inference"
 tags: ["deployment", "inference", "serving", "llm", "selection", "decision-guide", "vllm", "sglang", "tensorrt-llm"]
 summary: "> **一句话理解**: 面向生产环境的 LLM 推理引擎选型指南——通过统一对比维度、场景决策树和成本模型，帮助你在 vLLM、SGLang、TensorRT-LLM、TGI、Groq、llama.cpp 等引擎中做出最优选择。"
 created: "2026-06-15"
-updated: "2026-06-15"
+updated: "2026-07-25"
 tier: core
 aliases:
   - "Llm Inference Engine Selection Guide"
@@ -31,6 +31,7 @@ sources: []
 8. [最终推荐速查表](#8-最终推荐速查表)
 9. [选型工作表](#9-选型工作表)
 10. [最终推荐速查表](#10-最终推荐速查表)
+11. [源码级机制对比](#11-源码级机制对比)
 
 ---
 
@@ -513,6 +514,36 @@ LLM 推理引擎选型 Checklist
 
 ---
 
+## 11. 源码级机制对比
+
+> 基于本仓库归档源码（`code/vllm-0.9.1`、`code/sglang-0.5.9`、`code/llm-frameworks/TensorRT-LLM-v1.3.0rc22`、`code/llm-frameworks/text-generation-inference-v3.3.7`）的实现对比，证据详见各 Deep Dive 的「源码级实现解析」章节。
+
+### 11.1 调度器实现对比
+
+| 引擎 | 调度实体 | 语言 | 特点 |
+|---|---|---|---|
+| vLLM 0.9.1 | `v1/core/sched/scheduler.py` `Scheduler` | Python | 统一 token 预算（不分 prefill/decode），chunked prefill 原生化 |
+| SGLang 0.5.9 | `srt/managers/scheduler.py` `Scheduler` | Python | cache-aware（longest-prefix-first），优先高命中请求 |
+| TensorRT-LLM 1.3 | `batch_manager/capacityScheduler.h`（C++）+ Python 绑定 | C++ | 双策略：GuaranteedNoEvict / MaxUtilization |
+| TGI 3.3.7 | `backends/v3/src/backend.rs` `batching_task` | Rust | 参数校验前置（`Validation`），调度零 GC 停顿 |
+
+### 11.2 KV 缓存 / 前缀复用实现对比
+
+| 引擎 | 机制 | 关键实体 | 匹配粒度 |
+|---|---|---|---|
+| vLLM | block 链式哈希 | `hash_block_tokens` + `KVCacheManager.get_computed_blocks` | block 对齐（16 token） |
+| SGLang | 基数树 | `RadixCache`/`TreeNode`（Python 执行侧） | 任意长度前缀 |
+| TensorRT-LLM | 分窗口 block 重用 + LRU | `WindowBlockManager` + `LRUEvictionPolicy`（C++） | block 对齐，支持变长窗口 |
+| TGI | 基数树 | `RadixAllocator`/`RadixTrie`（Rust 调度侧） | 任意长度前缀 |
+
+### 11.3 选型启示
+
+- 多轮对话/RAG（前缀重复高）：基数树方案（SGLang/TGI）命中率优于 block 哈希（vLLM）；四者都支持，但 SGLang 连调度顺序都为命中率优化。
+- 极致延迟/MoE 大集群：TensorRT-LLM 的 C++ 热路径 + ADP 路由（`adp_router.py`）更适合；代价是栈深、排障需跨 Python/C++。
+- 四大引擎已收敛的共识：进程解耦（tokenize 与 GPU 分离）、continuous batching、CUDA Graph decode、paged KV——选型差异在前缀缓存策略、调度语言栈与生态适配，而非基础机制。
+
+---
+
 ## 参考资源
 
 - [[10_部署推理/02_Inference_Engines/vLLM_Deep_Dive|vLLM 深度解析]]
@@ -529,8 +560,8 @@ LLM 推理引擎选型 Checklist
 
 ---
 
-*Last updated: 2026-06-15*
-*Version: 1.0.0*
+*Last updated: 2026-07-25*
+*Version: 1.1.0*
 
 ## Related
 

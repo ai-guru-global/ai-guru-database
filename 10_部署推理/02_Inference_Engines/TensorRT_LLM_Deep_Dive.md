@@ -4,7 +4,7 @@ category: "10-deployment-inference"
 tags: ["deployment", "inference", "serving", "tensorrt-llm", "nvidia", "llm", "fp8", "triton"]
 summary: "> **一句话理解**: TensorRT-LLM 是 NVIDIA 的高性能 LLM 推理库——TensorRT 加速 + 定制 kernel，单请求延迟最低，H100/H200 推理性能标杆。"
 created: "2026-05-31"
-updated: "2026-06-15"
+updated: "2026-07-25"
 tier: core
 aliases:
   - "Tensorrt Llm Deep Dive"
@@ -33,6 +33,7 @@ sources: []
 6. [高级特性](#6-高级特性)
 7. [监控与运维](#7-监控与运维)
 8. [对比与选择](#8-对比与选择)
+9. [源码级实现解析（基于 v1.3.0rc22）](#9-源码级实现解析基于-v130rc22)
 
 ---
 
@@ -619,6 +620,46 @@ trtllm-build \
 
 ---
 
+## 9. 源码级实现解析（基于 v1.3.0rc22）
+
+> 本节基于本仓库归档源码 `code/llm-frameworks/TensorRT-LLM-v1.3.0rc22/`（sparse checkout：`tensorrt_llm/` Python 包 + `cpp/tensorrt_llm/batch_manager`、`cpp/tensorrt_llm/runtime`、`cpp/include`）的实际实现。
+
+### 9.1 架构设计：PyTorch 后端（_torch）+ C++ batch_manager 双层
+
+1.x 版本的重大变化：默认运行时从「TensorRT 引擎编译」转向 **PyTorch 后端**（`tensorrt_llm/_torch/`），不再必须离线 build engine：
+
+| 层次 | 证据文件 | 关键类/函数 |
+|---|---|---|
+| Python 执行器 | `tensorrt_llm/_torch/pyexecutor/py_executor.py` | `PyExecutor`（L501），`_executor_loop`（L3942）/`_executor_loop_overlap`（L4411） |
+| 模型引擎 | `tensorrt_llm/_torch/pyexecutor/model_engine.py` | `ModelEngine(ABC)`（L94）、`PyTorchModelEngine`（L271） |
+| 资源管理 | `tensorrt_llm/_torch/pyexecutor/resource_manager.py` | `KVCacheManager(BaseResourceManager)`（L266）、`ResourceManager`（L2533） |
+| Python 调度 | `tensorrt_llm/_torch/pyexecutor/scheduler/scheduler.py` | `ScheduledRequests`（L119）、`BindCapacityScheduler`（L309）、`MicroBatchScheduler`（L358） |
+| C++ 容量调度 | `cpp/include/tensorrt_llm/batch_manager/capacityScheduler.h` | `MaxUtilizationScheduler`（L95）、`GuaranteedNoEvictScheduler`（L121）、`StaticBatchScheduler`（L148） |
+| C++ KV 管理 | `cpp/include/tensorrt_llm/batch_manager/kvCacheManager.h` | `WindowBlockManager`（L866）、`BlockManager`（L1464）、`KVCacheManager`（L2261） |
+
+设计要点：Python 侧 `BindCapacityScheduler` 是 C++ 调度器的绑定包装（nanobind）——调度/KV 管理的热路径在 C++（`batch_manager/`），灵活性需求（新模型接入/采样）在 Python，两层各取所长。
+
+### 9.2 关键技术实现
+
+- **容量调度双策略**：`GuaranteedNoEvictScheduler`（保证不驱逐，保守但稳定）vs `MaxUtilizationScheduler`（最大化利用率，允许抢占），对应配置项 `capacity_scheduler_policy`。
+- **分窗口 KV 管理**：`WindowBlockManager` 按 attention window 分组管理 block（支持 sliding window / 变长窗口混合模型），`evictionPolicy.h` 的 `LRUEvictionPolicy`（L71）实现可重用 block 的 LRU 驱逐（即 KV cache reuse，TRT-LLM 版前缀缓存）。
+- **投机解码全家族**：`_torch/speculative/` 下 eagle3、mtp（DeepSeek Multi-Token Prediction）、ngram、draft_target 等 10+ 实现，工厂化接入 drafter。
+- **attention 后端可插拔**：`_torch/attention_backend/` 提供 trtllm（自研 FMHA kernel）/flashinfer/vanilla 三套后端，接口统一在 `interface.py`。
+
+### 9.3 性能优化机制（源码印证）
+
+- **overlap scheduling**：`PyExecutor._executor_loop_overlap`（L4411）把第 i 步调度与第 i-1 步 GPU 执行重叠，默认开启（对应 `disable_overlap_scheduler` 开关）。
+- **CUDA Graph**：`cuda_graph_runner.py` 的 `CUDAGraphRunner`（L116）按 batch 形状捕获/回放 decode 图，配合 `cuda_graph_config` 的 padding 机制提升命中率。
+- **ADP 负载均衡**：`scheduler/adp_router.py` 的 `KVCacheAwareADPRouter`（L482）等在 Attention-DP 分组间按 KV 占用路由请求——大规模 MoE 部署（DeepSeek 类）的关键组件。
+- **disaggregated serving**：`batch_manager/` 的 `cacheTransceiver.cpp`/`dataTransceiver.cpp` 实现 prefill/decode 分离时的 KV 跨节点传输。
+
+### 9.4 配置与部署要点（源码印证）
+
+- 1.x 推荐入口是 `LLM` API + PyTorch 后端（`tensorrt_llm/_torch/llm.py`），无需预编译引擎；传统 TensorRT 引擎路径仍保留但不再是默认。
+- sparse 归档提示：本归档未包含 `examples/` 与 kernel 实现全量（`cpp/tensorrt_llm/kernels` 未纳入），查阅 kernel 细节需参考官方仓库同 tag。
+
+---
+
 ## 参考资源
 
 - [TensorRT-LLM GitHub](https://github.com/NVIDIA/TensorRT-LLM)
@@ -629,8 +670,8 @@ trtllm-build \
 
 ---
 
-*Last updated: 2026-06-15*
-*Version: 2.0.0*
+*Last updated: 2026-07-25*
+*Version: 2.1.0*
 
 ## Related
 

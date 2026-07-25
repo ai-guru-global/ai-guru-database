@@ -4,7 +4,7 @@ category: 05-training
 tags: ["pretraining", "llm-training", "from-scratch", "data-pipeline", "scaling-laws"]
 summary: "从零训练 LLM 完整实战手册：数据准备、架构选择、超参数配置、训练阶段、Scaling Laws、常见问题排查与 2026 最佳实践。"
 created: 2026-07-21
-updated: 2026-07-21
+updated: 2026-07-25
 tier: supporting
 sources: []
 
@@ -268,3 +268,13 @@ FRAMEWORKS = {
 - [[07_模型训练/02_Data/|数据工程]]
 - [[07_模型训练/03_Optimization/|优化器]]
 - [[05_大模型/LLM_Training/|LLM 训练]]
+
+## 7. 源码级实现要点（基于 code/llm-frameworks/ 归档）
+
+预训练工程决策可直接对照源码验证，避免经验主义配置：
+
+- **并行布局不靠试错**：NeMo v2.7.3 `collections/llm/recipes/` 收录 100+ 模型规格的官方调优配方（TP/PP/CP/batch/lr），新集群从同规模 recipe 拷贝起步。
+- **数据管道基准实现**：Megatron bin-idx mmap 数据集 + NeMo `PreTrainingDataModule`（`gpt/data/pre_training.py`）按全局 batch 与并行拓扑切分样本，是生产级预训练数据加载的参考实现。
+- **显存预算公式的源码对应**：ZeRO 各阶段节省比例对应 DeepSpeed `zero/stage_1_and_2.py`（状态/梯度分区）与 `stage3.py`（参数分区 + prefetch 预算 `stage3_prefetch_bucket_size`）；调参时先调 bucket/prefetch 再考虑 offload。
+- **FP8 落地前提**：Megatron `core/fp8_utils.py` 依赖 Transformer Engine，仅 Hopper+ 架构生效；集群含 Ampere 时需回退 BF16 路径。
+- 详见 [[07_模型训练/04_Distributed_Training/NeMo_Deep_Dive|NeMo 深度解析]]、[[07_模型训练/04_Distributed_Training/Megatron_LM_Deep_Dive|Megatron-LM 深度解析]] 的源码章节。

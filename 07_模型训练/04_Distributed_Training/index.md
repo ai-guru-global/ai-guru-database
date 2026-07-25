@@ -2,7 +2,7 @@
 title: Distributed Training
 type: index
 created: 2026-07-02
-updated: 2026-07-02
+updated: 2026-07-25
 sources: []
 ---
 
@@ -23,6 +23,7 @@ This page indexes the contents of `07_模型训练/04_Distributed_Training`.
 - [[07_模型训练/04_Distributed_Training/Megatron_LM_Deep_Dive|Megatron LM Deep Dive]]
 - [[07_模型训练/04_Distributed_Training/ms_swift_Command_Line_Parameters|Ms Swift Command Line Parameters]]
 - [[07_模型训练/04_Distributed_Training/ms_swift_Deep_Dive|Ms Swift Deep Dive]]
+- [[07_模型训练/04_Distributed_Training/NeMo_Deep_Dive|NeMo Deep Dive]]
 - [[07_模型训练/04_Distributed_Training/Ray_Deep_Dive|Ray Deep Dive]]
 
 ## 进阶知识拓展

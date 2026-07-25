@@ -5,7 +5,7 @@ tags: ["pretraining", "autoregressive-LM", "masked-LM", "scaling-laws", "distrib
 summary: "> 从预训练目标（自回归/掩码 LM）到规模定律，从分布式训练四维并行（数据/张量/流水线/ZeRO）到混合精度与激活检查点，再到对齐三阶段（SFT→RLHF→DPO）与参数高效微调（LoRA/QLoRA），系统覆盖 LLM 训练全链路。"
 source: "来源/yeasy/llm_internals/ (Ch5-8)"
 created: 2026-06-17
-updated: 2026-06-17
+updated: 2026-07-25
 tier: supporting
 aliases:
   - "Llm Training Deep Dive"
@@ -228,6 +228,24 @@ $$W = W_0 + \Delta W = W_0 + BA, \quad B \in \mathbb{R}^{d \times r}, A \in \mat
 | QLoRA | ~0.1% | 极低 | 接近 LoRA |
 
 **生产实践**: LoRA 合并（部署时无额外开销）、多 LoRA 服务（同一基础模型动态切换 adapter）、LoRA 堆叠（知识 + 风格组合）。
+
+---
+
+## 5. 源码级实现印证（基于 code/llm-frameworks/ 归档）
+
+本文的理论机制在主流框架源码中均可找到对应实现（版本：Megatron core_v0.18.2 / DeepSpeed v0.19.3 / ColossalAI v0.5.1 / Accelerate v1.14.0）：
+
+| 本文章节 | 理论机制 | 源码证据 |
+|---|---|---|
+| 2.1 数据并行 | 梯度桶化+重叠 | Megatron `distributed/param_and_grad_buffer.py`（`shard_buffer`） |
+| 2.2 ZeRO | 三阶段分片 | DeepSpeed `zero/stage_1_and_2.py` / `stage3.py`；参数"用完即弃"由 `partitioned_param_coordinator.py` 的 fetch/release 实现 |
+| 2.3 张量并行 | 一列一行成对切分 | Megatron `tensor_parallel/layers.py`（`ColumnParallelLinear`/`RowParallelLinear`） |
+| 2.4 流水线并行 | 1F1B/interleaved 调度 | Megatron `pipeline_parallel/schedules.py`（`forward_backward_pipelining_with_interleaving`） |
+| 2.5 3D/5D 并行 | 正交进程组 | Megatron `core/parallel_state.py`；产品化封装见 NeMo `MegatronStrategy` |
+| 2.6 激活重计算 | 选择性重算 | Megatron `core/recompute.py`；DeepSpeed `runtime/activation_checkpointing/` |
+| 2.7 混合精度 | FP8/主权重 | Megatron `core/fp8_utils.py`；FSDP2 主权重上提见 Accelerate `fsdp_utils.py` |
+
+逐框架详解见：[[07_模型训练/04_Distributed_Training/Megatron_LM_Deep_Dive|Megatron]]、[[07_模型训练/04_Distributed_Training/DeepSpeed_Deep_Dive|DeepSpeed]]、[[07_模型训练/04_Distributed_Training/Colossal_AI_Deep_Dive|Colossal-AI]]、[[07_模型训练/04_Distributed_Training/FSDP_Deep_Dive|FSDP]]、[[07_模型训练/04_Distributed_Training/NeMo_Deep_Dive|NeMo]] 的"源码级实现解析"章节。
 
 ---
 

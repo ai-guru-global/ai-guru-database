@@ -4,7 +4,7 @@ category: "10-deployment-inference"
 tags: ["deployment", "inference", "serving", "vllm", "llm", "paged-attention", "continuous-batching"]
 summary: "> **一句话理解**: vLLM 是 UC Berkeley 出品的生产级 LLM 推理引擎——PagedAttention 技术让显存利用率从 20% 提升到 90%+，吞吐量行业标杆。"
 created: "2026-05-31"
-updated: "2026-06-15"
+updated: "2026-07-25"
 tier: core
 aliases:
   - "Vllm Deep Dive"
@@ -33,6 +33,7 @@ sources: []
 6. [高级特性](#6-高级特性)
 7. [生产调优](#7-生产调优)
 8. [对比与选择](#8-对比与选择)
+9. [源码级实现解析（基于 v0.9.1）](#9-源码级实现解析基于-v091)
 
 ---
 
@@ -563,6 +564,42 @@ Decode 节点:  高显存带宽，专注 token 生成
 
 ---
 
+## 9. 源码级实现解析（基于 v0.9.1）
+
+> 本节基于本仓库归档源码 `code/vllm-0.9.1/`（发布版源码，已剥离 git 历史）的实际实现，给出证据文件与关键类。
+
+### 9.1 架构设计：V1 引擎的三层进程模型
+
+| 层次 | 证据文件 | 关键类 |
+|---|---|---|
+| API 前端 | `vllm/v1/engine/async_llm.py` | `AsyncLLM(EngineClient)`（L46） |
+| 同步引擎 | `vllm/v1/engine/llm_engine.py` | `LLMEngine`（L41） |
+| 引擎核心 | `vllm/v1/engine/core.py` | `EngineCore`（L55）、`EngineCoreProc(EngineCore)`（L358） |
+| 调度器 | `vllm/v1/core/sched/scheduler.py` | `Scheduler(SchedulerInterface)`（L38） |
+| 模型执行 | `vllm/v1/worker/gpu_model_runner.py` | `GPUModelRunner(LoRAModelRunnerMixin)`（L77） |
+
+设计要点：V1 引擎把 tokenize/detokenize 留在前端进程，`EngineCoreProc` 通过 ZMQ 在独立进程中跑「调度→执行」紧循环，CPU 开销与 GPU 前向解耦——这是 V1 相对 V0 吞吐提升的结构性原因。
+
+### 9.2 关键技术实现：PagedAttention 的工程落地
+
+- **块池**：`vllm/v1/core/block_pool.py` 的 `BlockPool`（L19）统一管理全部 KV block，free list + 引用计数实现跨请求共享。
+- **KV 缓存管理**：`vllm/v1/core/kv_cache_manager.py` 的 `KVCacheManager`（L67），`get_computed_blocks()`（L133）在请求入队时先查前缀缓存命中，命中的 block 直接复用不再计算。
+- **前缀缓存哈希**：`vllm/v1/core/kv_cache_utils.py` 的 `hash_block_tokens()`（L414）——按 block 粒度对 token 序列做链式哈希（父块哈希+本块 token），这是 vLLM 前缀缓存能跨请求匹配的核心机制。
+- **统一调度**：`Scheduler.schedule()`（scheduler.py L158）不再区分 prefill/decode 两阶段，而是按 token 预算统一分配（chunked prefill 原生化），输出 `SchedulerOutput` 驱动 worker。
+
+### 9.3 性能优化机制（源码印证）
+
+- **continuous batching**：调度器每步动态增删请求，`Scheduler` 内部维护 waiting/running 双队列，配合 `KVCacheManager` 的按需分配实现无空泡批处理。
+- **CUDA Graph**：`GPUModelRunner` 对 decode 阶段按 batch size 分桶捕获 CUDA graph，消除小 kernel 启动开销。
+- **零显存浪费**：block 粒度分配（默认 16 token/block），配合 `BlockPool` 的 LRU 驱逐，显存利用率从朴素预分配的 ~20% 提升到 90%+。
+
+### 9.4 配置与部署要点（源码印证）
+
+- `gpu_memory_utilization`、`max_num_batched_tokens`、`enable_prefix_caching` 等关键参数最终都作用于 `KVCacheManager`/`Scheduler` 的预算计算。
+- V1 引擎（`VLLM_USE_V1=1`，0.9.x 已默认）与 V0 代码路径完全独立（`vllm/v1/` 目录自成体系），排障时注意区分。
+
+---
+
 ## 参考资源
 
 - [vLLM GitHub](https://github.com/vllm-project/vllm)
@@ -572,8 +609,8 @@ Decode 节点:  高显存带宽，专注 token 生成
 
 ---
 
-*Last updated: 2026-06-15*
-*Version: 2.0.0*
+*Last updated: 2026-07-25*
+*Version: 2.1.0*
 
 ## Related
 

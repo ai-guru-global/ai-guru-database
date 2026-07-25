@@ -22,7 +22,7 @@ base_confidence: 0.9
 lifecycle: reviewed
 tier: core
 created: 2026-06-16
-updated: 2026-07-21
+updated: 2026-07-25
 aliases:
   - Fsdp
 
@@ -207,3 +207,9 @@ model = FSDP(model, **fsdp_config)
 | 7B | 56 GB | 56 GB | 14 GB | 75% |
 | 13B | 104 GB | OOM | 26 GB | - |
 | 70B | OOM | OOM | 140 GB | - |
+
+## 源码级洞察（Accelerate v1.14.0）
+
+- 工程落地经 HuggingFace Accelerate：`FullyShardedDataParallelPlugin`（`utils/dataclasses.py`）的 `fsdp_version` 字段统一屏蔽 FSDP1（类包装）与 FSDP2（`fully_shard` 函数式 + DTensor）。
+- FSDP2 接管流程见 `fsdp2_prepare_model`（`utils/fsdp_utils.py`）：自动包装→DeviceMesh 接入（可组合 TP/CP）→量化参数兼容→fp32 主权重上提。
+- 源码归档：`code/llm-frameworks/accelerate-v1.14.0/`，详见 [[07_模型训练/04_Distributed_Training/FSDP_Deep_Dive|FSDP 深度解析]] 第 11 节。
